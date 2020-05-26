@@ -1,0 +1,50 @@
+{
+    "name": "tencent-ad/marketing-api-php-sdk",
+    "description": "Tencent Ad PHP SDK",
+    "authors": [
+        {
+            "name": "tencent_ad_developer",
+            "email": "tencent_ad_developer@tencent.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^6.2",
+        "monolog/monolog": "^1.25"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://mirrors.cloud.tencent.com/composer/"
+        },
+        {
+            "packagist": false
+        }
+    ],
+    "config": {
+        "secure-http": false
+    },
+    "autoload": {
+        "psr-4": {
+            "TencentAds\\": "src/TencentAds/"
+        }
+    },
+    "require-dev": {
+        "pds/skeleton": "^1.0",
+        "friendsofphp/php-cs-fixer": "^2.15",
+        "mockery/mockery": "^1.2.3",
+        "phpunit/phpunit": "^4.8"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TencentAds\\Tests\\": "test/"
+        }
+    },
+    "scripts": {
+        "phpcs": "vendor/bin/php-cs-fixer fix",
+        "test": "vendor/bin/phpunit"
+    }
+}
