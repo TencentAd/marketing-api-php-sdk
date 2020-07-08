@@ -6,6 +6,7 @@ use TencentAds\Container\AdDiagnosisApiContainer;
 use TencentAds\Container\AdcreativePreviewsApiContainer;
 use TencentAds\Container\AdcreativeTemplateDetailApiContainer;
 use TencentAds\Container\AdcreativeTemplatePreviewApiContainer;
+use TencentAds\Container\AdcreativeTemplatePreviewsApiContainer;
 use TencentAds\Container\AdcreativeTemplatesApiContainer;
 use TencentAds\Container\AdcreativesApiContainer;
 use TencentAds\Container\AdcreativesRelatedCapabilityApiContainer;
@@ -13,11 +14,13 @@ use TencentAds\Container\AdgroupsApiContainer;
 use TencentAds\Container\AdsApiContainer;
 use TencentAds\Container\AdvertiserApiContainer;
 use TencentAds\Container\AndroidChannelPackagesApiContainer;
+use TencentAds\Container\AndroidUnionChannelPackagesApiContainer;
 use TencentAds\Container\AssetPermissionsApiContainer;
+use TencentAds\Container\AsyncReportFilesApiContainer;
+use TencentAds\Container\AsyncReportsApiContainer;
 use TencentAds\Container\AsyncTaskFilesApiContainer;
 use TencentAds\Container\AsyncTasksApiContainer;
 use TencentAds\Container\AudienceGrantRelationsApiContainer;
-use TencentAds\Container\AudienceLaunchesApiContainer;
 use TencentAds\Container\AuthorizationApiContainer;
 use TencentAds\Container\BatchOperationApiContainer;
 use TencentAds\Container\BatchRequestsApiContainer;
@@ -26,26 +29,25 @@ use TencentAds\Container\BusinessManagerRelationsApiContainer;
 use TencentAds\Container\CampaignsApiContainer;
 use TencentAds\Container\CapabilitiesApiContainer;
 use TencentAds\Container\ComplianceValidationApiContainer;
+use TencentAds\Container\ConversionsApiContainer;
 use TencentAds\Container\CustomAudienceEstimationsApiContainer;
 use TencentAds\Container\CustomAudienceFilesApiContainer;
 use TencentAds\Container\CustomAudienceInsightsApiContainer;
 use TencentAds\Container\CustomAudienceReportsApiContainer;
 use TencentAds\Container\CustomAudiencesApiContainer;
 use TencentAds\Container\CustomDataSaltApiContainer;
-use TencentAds\Container\CustomFeatureClassProjectGrantsApiContainer;
-use TencentAds\Container\CustomFeatureClassesApiContainer;
 use TencentAds\Container\CustomFeaturesApiContainer;
 use TencentAds\Container\CustomTagFilesApiContainer;
 use TencentAds\Container\CustomTagsApiContainer;
 use TencentAds\Container\DailyCostApiContainer;
 use TencentAds\Container\DailyReportsApiContainer;
+use TencentAds\Container\DiagnosisApiContainer;
 use TencentAds\Container\DynamicAdImagesApiContainer;
 use TencentAds\Container\DynamicAdTemplatesApiContainer;
 use TencentAds\Container\DynamicAdVideoApiContainer;
 use TencentAds\Container\DynamicCreativesApiContainer;
 use TencentAds\Container\EcommerceOrderApiContainer;
 use TencentAds\Container\EstimationApiContainer;
-use TencentAds\Container\FeatureDataFilesApiContainer;
 use TencentAds\Container\FundStatementsDailyApiContainer;
 use TencentAds\Container\FundStatementsDetailedApiContainer;
 use TencentAds\Container\FundTransferApiContainer;
@@ -55,8 +57,10 @@ use TencentAds\Container\ImageProcessingApiContainer;
 use TencentAds\Container\ImagesApiContainer;
 use TencentAds\Container\LabelAudiencesApiContainer;
 use TencentAds\Container\LabelsApiContainer;
+use TencentAds\Container\LeadCluesApiContainer;
 use TencentAds\Container\LeadsApiContainer;
 use TencentAds\Container\OauthApiContainer;
+use TencentAds\Container\OptimizationGoalPermissionsApiContainer;
 use TencentAds\Container\PagesApiContainer;
 use TencentAds\Container\PlayablePagesApiContainer;
 use TencentAds\Container\ProductCatalogsApiContainer;
@@ -85,11 +89,16 @@ use TencentAds\Container\WechatAdFollowersApiContainer;
 use TencentAds\Container\WechatAdLabelsApiContainer;
 use TencentAds\Container\WechatAdvertiserApiContainer;
 use TencentAds\Container\WechatAdvertiserDetailApiContainer;
+use TencentAds\Container\WechatAdvertiserSpecificationApiContainer;
 use TencentAds\Container\WechatAgencyApiContainer;
+use TencentAds\Container\WechatDailyCostApiContainer;
 use TencentAds\Container\WechatFundStatementsDetailedApiContainer;
 use TencentAds\Container\WechatFundsApiContainer;
 use TencentAds\Container\WechatLeadsApiContainer;
 use TencentAds\Container\WechatPagesApiContainer;
+use TencentAds\Container\XijingPageApiContainer;
+use TencentAds\Container\XijingPageByComponentsApiContainer;
+use TencentAds\Container\XijingTemplateApiContainer;
 
 class App
 {
@@ -107,6 +116,9 @@ class App
 
     /** @var AdcreativeTemplatePreviewApiContainer */
     public $adcreativeTemplatePreviewApiContainer;
+
+    /** @var AdcreativeTemplatePreviewsApiContainer */
+    public $adcreativeTemplatePreviewsApiContainer;
 
     /** @var AdcreativeTemplatesApiContainer */
     public $adcreativeTemplatesApiContainer;
@@ -129,8 +141,17 @@ class App
     /** @var AndroidChannelPackagesApiContainer */
     public $androidChannelPackagesApiContainer;
 
+    /** @var AndroidUnionChannelPackagesApiContainer */
+    public $androidUnionChannelPackagesApiContainer;
+
     /** @var AssetPermissionsApiContainer */
     public $assetPermissionsApiContainer;
+
+    /** @var AsyncReportFilesApiContainer */
+    public $asyncReportFilesApiContainer;
+
+    /** @var AsyncReportsApiContainer */
+    public $asyncReportsApiContainer;
 
     /** @var AsyncTaskFilesApiContainer */
     public $asyncTaskFilesApiContainer;
@@ -140,9 +161,6 @@ class App
 
     /** @var AudienceGrantRelationsApiContainer */
     public $audienceGrantRelationsApiContainer;
-
-    /** @var AudienceLaunchesApiContainer */
-    public $audienceLaunchesApiContainer;
 
     /** @var AuthorizationApiContainer */
     public $authorizationApiContainer;
@@ -168,6 +186,9 @@ class App
     /** @var ComplianceValidationApiContainer */
     public $complianceValidationApiContainer;
 
+    /** @var ConversionsApiContainer */
+    public $conversionsApiContainer;
+
     /** @var CustomAudienceEstimationsApiContainer */
     public $customAudienceEstimationsApiContainer;
 
@@ -186,12 +207,6 @@ class App
     /** @var CustomDataSaltApiContainer */
     public $customDataSaltApiContainer;
 
-    /** @var CustomFeatureClassProjectGrantsApiContainer */
-    public $customFeatureClassProjectGrantsApiContainer;
-
-    /** @var CustomFeatureClassesApiContainer */
-    public $customFeatureClassesApiContainer;
-
     /** @var CustomFeaturesApiContainer */
     public $customFeaturesApiContainer;
 
@@ -206,6 +221,9 @@ class App
 
     /** @var DailyReportsApiContainer */
     public $dailyReportsApiContainer;
+
+    /** @var DiagnosisApiContainer */
+    public $diagnosisApiContainer;
 
     /** @var DynamicAdImagesApiContainer */
     public $dynamicAdImagesApiContainer;
@@ -224,9 +242,6 @@ class App
 
     /** @var EstimationApiContainer */
     public $estimationApiContainer;
-
-    /** @var FeatureDataFilesApiContainer */
-    public $featureDataFilesApiContainer;
 
     /** @var FundStatementsDailyApiContainer */
     public $fundStatementsDailyApiContainer;
@@ -255,11 +270,17 @@ class App
     /** @var LabelsApiContainer */
     public $labelsApiContainer;
 
+    /** @var LeadCluesApiContainer */
+    public $leadCluesApiContainer;
+
     /** @var LeadsApiContainer */
     public $leadsApiContainer;
 
     /** @var OauthApiContainer */
     public $oauthApiContainer;
+
+    /** @var OptimizationGoalPermissionsApiContainer */
+    public $optimizationGoalPermissionsApiContainer;
 
     /** @var PagesApiContainer */
     public $pagesApiContainer;
@@ -345,8 +366,14 @@ class App
     /** @var WechatAdvertiserDetailApiContainer */
     public $wechatAdvertiserDetailApiContainer;
 
+    /** @var WechatAdvertiserSpecificationApiContainer */
+    public $wechatAdvertiserSpecificationApiContainer;
+
     /** @var WechatAgencyApiContainer */
     public $wechatAgencyApiContainer;
+
+    /** @var WechatDailyCostApiContainer */
+    public $wechatDailyCostApiContainer;
 
     /** @var WechatFundStatementsDetailedApiContainer */
     public $wechatFundStatementsDetailedApiContainer;
@@ -359,6 +386,15 @@ class App
 
     /** @var WechatPagesApiContainer */
     public $wechatPagesApiContainer;
+
+    /** @var XijingPageApiContainer */
+    public $xijingPageApiContainer;
+
+    /** @var XijingPageByComponentsApiContainer */
+    public $xijingPageByComponentsApiContainer;
+
+    /** @var XijingTemplateApiContainer */
+    public $xijingTemplateApiContainer;
 
 
     /**
@@ -426,6 +462,20 @@ class App
             $this->adcreativeTemplatePreviewApiContainer = $container;
         }
         return $this->adcreativeTemplatePreviewApiContainer;
+    }
+
+
+    /**
+     * @return AdcreativeTemplatePreviewsApiContainer
+     */
+    public function adcreativeTemplatePreviews()
+    {
+        if (empty($this->adcreativeTemplatePreviewsApiContainer)) {
+            $container = new AdcreativeTemplatePreviewsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->adcreativeTemplatePreviewsApiContainer = $container;
+        }
+        return $this->adcreativeTemplatePreviewsApiContainer;
     }
 
 
@@ -528,6 +578,20 @@ class App
 
 
     /**
+     * @return AndroidUnionChannelPackagesApiContainer
+     */
+    public function androidUnionChannelPackages()
+    {
+        if (empty($this->androidUnionChannelPackagesApiContainer)) {
+            $container = new AndroidUnionChannelPackagesApiContainer();
+            $container->init($this, $this->getClient());
+            $this->androidUnionChannelPackagesApiContainer = $container;
+        }
+        return $this->androidUnionChannelPackagesApiContainer;
+    }
+
+
+    /**
      * @return AssetPermissionsApiContainer
      */
     public function assetPermissions()
@@ -538,6 +602,34 @@ class App
             $this->assetPermissionsApiContainer = $container;
         }
         return $this->assetPermissionsApiContainer;
+    }
+
+
+    /**
+     * @return AsyncReportFilesApiContainer
+     */
+    public function asyncReportFiles()
+    {
+        if (empty($this->asyncReportFilesApiContainer)) {
+            $container = new AsyncReportFilesApiContainer();
+            $container->init($this, $this->getClient());
+            $this->asyncReportFilesApiContainer = $container;
+        }
+        return $this->asyncReportFilesApiContainer;
+    }
+
+
+    /**
+     * @return AsyncReportsApiContainer
+     */
+    public function asyncReports()
+    {
+        if (empty($this->asyncReportsApiContainer)) {
+            $container = new AsyncReportsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->asyncReportsApiContainer = $container;
+        }
+        return $this->asyncReportsApiContainer;
     }
 
 
@@ -580,20 +672,6 @@ class App
             $this->audienceGrantRelationsApiContainer = $container;
         }
         return $this->audienceGrantRelationsApiContainer;
-    }
-
-
-    /**
-     * @return AudienceLaunchesApiContainer
-     */
-    public function audienceLaunches()
-    {
-        if (empty($this->audienceLaunchesApiContainer)) {
-            $container = new AudienceLaunchesApiContainer();
-            $container->init($this, $this->getClient());
-            $this->audienceLaunchesApiContainer = $container;
-        }
-        return $this->audienceLaunchesApiContainer;
     }
 
 
@@ -710,6 +788,20 @@ class App
 
 
     /**
+     * @return ConversionsApiContainer
+     */
+    public function conversions()
+    {
+        if (empty($this->conversionsApiContainer)) {
+            $container = new ConversionsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->conversionsApiContainer = $container;
+        }
+        return $this->conversionsApiContainer;
+    }
+
+
+    /**
      * @return CustomAudienceEstimationsApiContainer
      */
     public function customAudienceEstimations()
@@ -794,34 +886,6 @@ class App
 
 
     /**
-     * @return CustomFeatureClassProjectGrantsApiContainer
-     */
-    public function customFeatureClassProjectGrants()
-    {
-        if (empty($this->customFeatureClassProjectGrantsApiContainer)) {
-            $container = new CustomFeatureClassProjectGrantsApiContainer();
-            $container->init($this, $this->getClient());
-            $this->customFeatureClassProjectGrantsApiContainer = $container;
-        }
-        return $this->customFeatureClassProjectGrantsApiContainer;
-    }
-
-
-    /**
-     * @return CustomFeatureClassesApiContainer
-     */
-    public function customFeatureClasses()
-    {
-        if (empty($this->customFeatureClassesApiContainer)) {
-            $container = new CustomFeatureClassesApiContainer();
-            $container->init($this, $this->getClient());
-            $this->customFeatureClassesApiContainer = $container;
-        }
-        return $this->customFeatureClassesApiContainer;
-    }
-
-
-    /**
      * @return CustomFeaturesApiContainer
      */
     public function customFeatures()
@@ -888,6 +952,20 @@ class App
             $this->dailyReportsApiContainer = $container;
         }
         return $this->dailyReportsApiContainer;
+    }
+
+
+    /**
+     * @return DiagnosisApiContainer
+     */
+    public function diagnosis()
+    {
+        if (empty($this->diagnosisApiContainer)) {
+            $container = new DiagnosisApiContainer();
+            $container->init($this, $this->getClient());
+            $this->diagnosisApiContainer = $container;
+        }
+        return $this->diagnosisApiContainer;
     }
 
 
@@ -972,20 +1050,6 @@ class App
             $this->estimationApiContainer = $container;
         }
         return $this->estimationApiContainer;
-    }
-
-
-    /**
-     * @return FeatureDataFilesApiContainer
-     */
-    public function featureDataFiles()
-    {
-        if (empty($this->featureDataFilesApiContainer)) {
-            $container = new FeatureDataFilesApiContainer();
-            $container->init($this, $this->getClient());
-            $this->featureDataFilesApiContainer = $container;
-        }
-        return $this->featureDataFilesApiContainer;
     }
 
 
@@ -1116,6 +1180,20 @@ class App
 
 
     /**
+     * @return LeadCluesApiContainer
+     */
+    public function leadClues()
+    {
+        if (empty($this->leadCluesApiContainer)) {
+            $container = new LeadCluesApiContainer();
+            $container->init($this, $this->getClient());
+            $this->leadCluesApiContainer = $container;
+        }
+        return $this->leadCluesApiContainer;
+    }
+
+
+    /**
      * @return LeadsApiContainer
      */
     public function leads()
@@ -1140,6 +1218,20 @@ class App
             $this->oauthApiContainer = $container;
         }
         return $this->oauthApiContainer;
+    }
+
+
+    /**
+     * @return OptimizationGoalPermissionsApiContainer
+     */
+    public function optimizationGoalPermissions()
+    {
+        if (empty($this->optimizationGoalPermissionsApiContainer)) {
+            $container = new OptimizationGoalPermissionsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->optimizationGoalPermissionsApiContainer = $container;
+        }
+        return $this->optimizationGoalPermissionsApiContainer;
     }
 
 
@@ -1536,6 +1628,20 @@ class App
 
 
     /**
+     * @return WechatAdvertiserSpecificationApiContainer
+     */
+    public function wechatAdvertiserSpecification()
+    {
+        if (empty($this->wechatAdvertiserSpecificationApiContainer)) {
+            $container = new WechatAdvertiserSpecificationApiContainer();
+            $container->init($this, $this->getClient());
+            $this->wechatAdvertiserSpecificationApiContainer = $container;
+        }
+        return $this->wechatAdvertiserSpecificationApiContainer;
+    }
+
+
+    /**
      * @return WechatAgencyApiContainer
      */
     public function wechatAgency()
@@ -1546,6 +1652,20 @@ class App
             $this->wechatAgencyApiContainer = $container;
         }
         return $this->wechatAgencyApiContainer;
+    }
+
+
+    /**
+     * @return WechatDailyCostApiContainer
+     */
+    public function wechatDailyCost()
+    {
+        if (empty($this->wechatDailyCostApiContainer)) {
+            $container = new WechatDailyCostApiContainer();
+            $container->init($this, $this->getClient());
+            $this->wechatDailyCostApiContainer = $container;
+        }
+        return $this->wechatDailyCostApiContainer;
     }
 
 
@@ -1602,5 +1722,47 @@ class App
             $this->wechatPagesApiContainer = $container;
         }
         return $this->wechatPagesApiContainer;
+    }
+
+
+    /**
+     * @return XijingPageApiContainer
+     */
+    public function xijingPage()
+    {
+        if (empty($this->xijingPageApiContainer)) {
+            $container = new XijingPageApiContainer();
+            $container->init($this, $this->getClient());
+            $this->xijingPageApiContainer = $container;
+        }
+        return $this->xijingPageApiContainer;
+    }
+
+
+    /**
+     * @return XijingPageByComponentsApiContainer
+     */
+    public function xijingPageByComponents()
+    {
+        if (empty($this->xijingPageByComponentsApiContainer)) {
+            $container = new XijingPageByComponentsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->xijingPageByComponentsApiContainer = $container;
+        }
+        return $this->xijingPageByComponentsApiContainer;
+    }
+
+
+    /**
+     * @return XijingTemplateApiContainer
+     */
+    public function xijingTemplate()
+    {
+        if (empty($this->xijingTemplateApiContainer)) {
+            $container = new XijingTemplateApiContainer();
+            $container->init($this, $this->getClient());
+            $this->xijingTemplateApiContainer = $container;
+        }
+        return $this->xijingTemplateApiContainer;
     }
 }

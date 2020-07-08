@@ -10,14 +10,9 @@ use TencentAds\Exception\TencentAdsSDKException;
 class GetAdcreativeTemplatePreviews
 {
     public static $tads;
-    public static $ACCESS_TOKEN           = 'YOUR ACCESS TOKEN';
-    public static $ACCOUNT_ID             = 'YOUR ACCOUNT ID';
-    public static $PROMOTED_OBJECT_TYPE   = 'PROMOTED_OBJECT_TYPE_LINK_WECHAT'; // 网页（微信推广）
-    public static $SITE_SET               = 'SITE_SET_WECHAT'; // 投放QQ空间流量
-    public static $ADCREATIVE_TEMPLATE_ID = 133; // 单图文
-    public static $IMAGE_ID               = 'YOUR AD IMAGE ID'; // 主图ID，133规格要求：582x166, <50K, jpg/png
-    public static $PAGE_TYPE              = 'PAGE_TYPE_DEFAULT'; // 默认落地页类型
-    public static $PAGE_URL               = 'YOUR AD PAGE URL'; // 广告落地页地址
+    public static $ACCESS_TOKEN = 'YOUR ACCESS TOKEN';
+    public static $ACCOUNT_ID   = 'YOUR ACCOUNT ID';
+    public static $ADGROUP_ID   = 'YOUR ADGROUP ID'; // 广告组ID
 
     public function init()
     {
@@ -37,25 +32,14 @@ class GetAdcreativeTemplatePreviews
             /* @var TencentAds $tads */
             $tads = static::$tads;
 
-            $previewSpec = [
-                'adcreative_template_id' => static::$ADCREATIVE_TEMPLATE_ID,
-                'site_set'               => [static::$SITE_SET],
-                'promoted_object_type'   => static::$PROMOTED_OBJECT_TYPE,
-                'adcreative_elements'    => [
-                    'image' => static::$IMAGE_ID,
-                ],
-                'page_type'              => static::$PAGE_TYPE,
-                'page_spec'              => [
-                    'page_url' => static::$PAGE_URL,
-                ],
-            ];
-            $response = $tads->adcreativeTemplatePreview()
+            $response = $tads->adcreativeTemplatePreviews()
                              ->get([
-                                 'account_id'   => static::$ACCOUNT_ID,
-                                 'preview_spec' => $previewSpec,
+                                 'account_id' => static::$ACCOUNT_ID,
+                                 'adgroup_id'  => static::$ADGROUP_ID,
                              ]);
+            //echo $response->getPreviewUrl();
 
-            return $response;
+            return $response->getPreviewUrl();
         } catch (TencentAdsResponseException $e) {
             // When Api returns an error
             echo 'Tencent ads returned an error: ' . $e->getMessage() . PHP_EOL;

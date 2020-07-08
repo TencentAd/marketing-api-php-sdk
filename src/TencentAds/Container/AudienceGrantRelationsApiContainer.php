@@ -64,7 +64,7 @@ class AudienceGrantRelationsApiContainer extends ApiContainer
     /**
      * Handle AudienceGrantRelationsApi audienceGrantRelationsGet function
      * @param array params
-     * @return \TencentAds\Model\AudienceGrantRelationsListData
+     * @return \TencentAds\Model\AudienceGrantRelationsGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

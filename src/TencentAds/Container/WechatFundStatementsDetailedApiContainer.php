@@ -30,7 +30,7 @@ class WechatFundStatementsDetailedApiContainer extends ApiContainer
     /**
      * Handle WechatFundStatementsDetailedApi wechatFundStatementsDetailedGet function
      * @param array params
-     * @return \TencentAds\Model\WechatFundStatementsDetailedListData
+     * @return \TencentAds\Model\WechatFundStatementsDetailedGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

@@ -98,7 +98,7 @@ class UnionPositionPackagesApiContainer extends ApiContainer
     /**
      * Handle UnionPositionPackagesApi unionPositionPackagesGet function
      * @param array params
-     * @return \TencentAds\Model\UnionPositionPackagesListData
+     * @return \TencentAds\Model\UnionPositionPackagesGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

@@ -64,7 +64,7 @@ class AdcreativePreviewsApiContainer extends ApiContainer
     /**
      * Handle AdcreativePreviewsApi adcreativePreviewsGet function
      * @param array params
-     * @return \TencentAds\Model\AdcreativePreviewsListData
+     * @return \TencentAds\Model\AdcreativePreviewsGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

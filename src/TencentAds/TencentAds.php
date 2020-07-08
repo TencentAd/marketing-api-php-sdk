@@ -35,13 +35,13 @@ class TencentAds extends App
      * SDK version
      * @var string
      */
-    protected $version = '1.1.2';
+    protected $version = '1.1.3';
 
     /**
      * SDK version
      * @var string
      */
-    protected $apiVersion = 'v1.1';
+    protected $apiVersion = 'v1.3';
 
     /**
      * @var string access token
@@ -414,7 +414,7 @@ class TencentAds extends App
             list($uri, $params) = $item;
             if (!empty($interfaceMap[$uri])) {
                 $interfaceInfo = $interfaceMap[$uri];
-                $versionUri = $this->apiVersion . '/' . $uri;
+                $versionUri = 'v1.1' . '/' . $uri; // 暂不支持$this->apiVersion对应版本号
                 if (empty($params['account_id'])) {
                     $params['account_id'] = $accountId;
                 }

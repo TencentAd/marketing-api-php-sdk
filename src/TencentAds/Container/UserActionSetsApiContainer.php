@@ -64,7 +64,7 @@ class UserActionSetsApiContainer extends ApiContainer
     /**
      * Handle UserActionSetsApi userActionSetsGet function
      * @param array params
-     * @return \TencentAds\Model\UserActionSetsListData
+     * @return \TencentAds\Model\UserActionSetsGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

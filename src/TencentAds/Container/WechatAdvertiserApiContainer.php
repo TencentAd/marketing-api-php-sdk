@@ -30,7 +30,7 @@ class WechatAdvertiserApiContainer extends ApiContainer
     /**
      * Handle WechatAdvertiserApi wechatAdvertiserGet function
      * @param array params
-     * @return \TencentAds\Model\WechatAdvertiserListData
+     * @return \TencentAds\Model\WechatAdvertiserGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

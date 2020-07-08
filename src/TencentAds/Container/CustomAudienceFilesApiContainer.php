@@ -43,8 +43,9 @@ class CustomAudienceFilesApiContainer extends ApiContainer
             $userIdType = isset($params['user_id_type']) ? $params['user_id_type'] : null;
             $file = isset($params['file']) ? $params['file'] : null;
             $operationType = isset($params['operation_type']) ? $params['operation_type'] : null;
+            $openAppId = isset($params['open_app_id']) ? $params['open_app_id'] : null;
             $saltId = isset($params['salt_id']) ? $params['salt_id'] : null;
-            $response = $this->apiInstance->customAudienceFilesAdd($accountId, $audienceId, $userIdType, $file, $operationType, $saltId);
+            $response = $this->apiInstance->customAudienceFilesAdd($accountId, $audienceId, $userIdType, $file, $operationType, $openAppId, $saltId);
             return $this->handleResponse($response);
         });
     }
@@ -64,8 +65,9 @@ class CustomAudienceFilesApiContainer extends ApiContainer
             $userIdType = isset($params['user_id_type']) ? $params['user_id_type'] : null;
             $file = isset($params['file']) ? $params['file'] : null;
             $operationType = isset($params['operation_type']) ? $params['operation_type'] : null;
+            $openAppId = isset($params['open_app_id']) ? $params['open_app_id'] : null;
             $saltId = isset($params['salt_id']) ? $params['salt_id'] : null;
-            $response = $this->apiInstance->customAudienceFilesAddAsync($accountId, $audienceId, $userIdType, $file, $operationType, $saltId);
+            $response = $this->apiInstance->customAudienceFilesAddAsync($accountId, $audienceId, $userIdType, $file, $operationType, $openAppId, $saltId);
             return $response;
         });
     }
@@ -74,7 +76,7 @@ class CustomAudienceFilesApiContainer extends ApiContainer
     /**
      * Handle CustomAudienceFilesApi customAudienceFilesGet function
      * @param array params
-     * @return \TencentAds\Model\CustomAudienceFilesListData
+     * @return \TencentAds\Model\CustomAudienceFilesGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

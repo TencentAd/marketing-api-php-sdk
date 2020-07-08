@@ -30,7 +30,7 @@ class ProductItemsDetailApiContainer extends ApiContainer
     /**
      * Handle ProductItemsDetailApi productItemsDetailGet function
      * @param array params
-     * @return \TencentAds\Model\ProductItemsDetailListData
+     * @return \TencentAds\Model\ProductItemsDetailGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

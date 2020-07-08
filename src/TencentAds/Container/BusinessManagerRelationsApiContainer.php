@@ -30,7 +30,7 @@ class BusinessManagerRelationsApiContainer extends ApiContainer
     /**
      * Handle BusinessManagerRelationsApi businessManagerRelationsGet function
      * @param array params
-     * @return \TencentAds\Model\BusinessManagerRelationsListData
+     * @return \TencentAds\Model\BusinessManagerRelationsGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

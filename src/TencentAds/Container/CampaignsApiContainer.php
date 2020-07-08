@@ -64,7 +64,7 @@ class CampaignsApiContainer extends ApiContainer
     /**
      * Handle CampaignsApi campaignsDelete function
      * @param array params
-     * @return \TencentAds\Model\CampaignsAddResponseData
+     * @return \TencentAds\Model\CampaignsDeleteResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -98,7 +98,7 @@ class CampaignsApiContainer extends ApiContainer
     /**
      * Handle CampaignsApi campaignsGet function
      * @param array params
-     * @return \TencentAds\Model\CampaignsListData
+     * @return \TencentAds\Model\CampaignsGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -142,7 +142,7 @@ class CampaignsApiContainer extends ApiContainer
     /**
      * Handle CampaignsApi campaignsUpdate function
      * @param array params
-     * @return \TencentAds\Model\CampaignsAddResponseData
+     * @return \TencentAds\Model\CampaignsUpdateResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -168,6 +168,74 @@ class CampaignsApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $data = $params;
             $response = $this->apiInstance->campaignsUpdateAsync($data);
+            return $response;
+        });
+    }
+
+
+    /**
+     * Handle CampaignsApi campaignsUpdateConfiguredStatus function
+     * @param array params
+     * @return \TencentAds\Model\CampaignsUpdateConfiguredStatusResponseData
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function updateConfiguredStatus(array $params = [])
+    {
+        return $this->handleMiddleware('updateConfiguredStatus', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->campaignsUpdateConfiguredStatus($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle CampaignsApi campaignsUpdateConfiguredStatusAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function updateConfiguredStatusAsync(array $params = [])
+    {
+        return $this->handleMiddleware('updateConfiguredStatus', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->campaignsUpdateConfiguredStatusAsync($data);
+            return $response;
+        });
+    }
+
+
+    /**
+     * Handle CampaignsApi campaignsUpdateDailyBudget function
+     * @param array params
+     * @return \TencentAds\Model\CampaignsUpdateDailyBudgetResponseData
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function updateDailyBudget(array $params = [])
+    {
+        return $this->handleMiddleware('updateDailyBudget', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->campaignsUpdateDailyBudget($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle CampaignsApi campaignsUpdateDailyBudgetAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function updateDailyBudgetAsync(array $params = [])
+    {
+        return $this->handleMiddleware('updateDailyBudget', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->campaignsUpdateDailyBudgetAsync($data);
             return $response;
         });
     }

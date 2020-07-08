@@ -43,7 +43,8 @@ class ImagesApiContainer extends ApiContainer
             $signature = isset($params['signature']) ? $params['signature'] : null;
             $file = isset($params['file']) ? $params['file'] : null;
             $bytes = isset($params['bytes']) ? $params['bytes'] : null;
-            $response = $this->apiInstance->imagesAdd($accountId, $uploadType, $signature, $file, $bytes);
+            $description = isset($params['description']) ? $params['description'] : null;
+            $response = $this->apiInstance->imagesAdd($accountId, $uploadType, $signature, $file, $bytes, $description);
             return $this->handleResponse($response);
         });
     }
@@ -63,7 +64,8 @@ class ImagesApiContainer extends ApiContainer
             $signature = isset($params['signature']) ? $params['signature'] : null;
             $file = isset($params['file']) ? $params['file'] : null;
             $bytes = isset($params['bytes']) ? $params['bytes'] : null;
-            $response = $this->apiInstance->imagesAddAsync($accountId, $uploadType, $signature, $file, $bytes);
+            $description = isset($params['description']) ? $params['description'] : null;
+            $response = $this->apiInstance->imagesAddAsync($accountId, $uploadType, $signature, $file, $bytes, $description);
             return $response;
         });
     }
@@ -72,7 +74,7 @@ class ImagesApiContainer extends ApiContainer
     /**
      * Handle ImagesApi imagesGet function
      * @param array params
-     * @return \TencentAds\Model\ImagesListData
+     * @return \TencentAds\Model\ImagesGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

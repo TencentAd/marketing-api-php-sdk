@@ -30,7 +30,7 @@ class DailyCostApiContainer extends ApiContainer
     /**
      * Handle DailyCostApi dailyCostGet function
      * @param array params
-     * @return \TencentAds\Model\DailyCostListData
+     * @return \TencentAds\Model\DailyCostGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

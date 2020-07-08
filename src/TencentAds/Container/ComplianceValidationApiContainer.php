@@ -30,7 +30,7 @@ class ComplianceValidationApiContainer extends ApiContainer
     /**
      * Handle ComplianceValidationApi complianceValidationGet function
      * @param array params
-     * @return \TencentAds\Model\ComplianceValidationListData
+     * @return \TencentAds\Model\ComplianceValidationGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

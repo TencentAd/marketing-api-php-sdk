@@ -30,7 +30,7 @@ class CustomAudienceReportsApiContainer extends ApiContainer
     /**
      * Handle CustomAudienceReportsApi customAudienceReportsGet function
      * @param array params
-     * @return \TencentAds\Model\CustomAudienceReportsListData
+     * @return \TencentAds\Model\CustomAudienceReportsGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

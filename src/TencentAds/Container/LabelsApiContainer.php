@@ -30,7 +30,7 @@ class LabelsApiContainer extends ApiContainer
     /**
      * Handle LabelsApi labelsGet function
      * @param array params
-     * @return \TencentAds\Model\LabelsListData
+     * @return \TencentAds\Model\LabelsGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

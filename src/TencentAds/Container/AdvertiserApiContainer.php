@@ -64,7 +64,7 @@ class AdvertiserApiContainer extends ApiContainer
     /**
      * Handle AdvertiserApi advertiserGet function
      * @param array params
-     * @return \TencentAds\Model\AdvertiserListData
+     * @return \TencentAds\Model\AdvertiserGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -132,6 +132,40 @@ class AdvertiserApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $data = $params;
             $response = $this->apiInstance->advertiserUpdateAsync($data);
+            return $response;
+        });
+    }
+
+
+    /**
+     * Handle AdvertiserApi advertiserUpdateDailyBudget function
+     * @param array params
+     * @return \TencentAds\Model\AdvertiserUpdateDailyBudgetResponseData
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function updateDailyBudget(array $params = [])
+    {
+        return $this->handleMiddleware('updateDailyBudget', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->advertiserUpdateDailyBudget($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle AdvertiserApi advertiserUpdateDailyBudgetAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function updateDailyBudgetAsync(array $params = [])
+    {
+        return $this->handleMiddleware('updateDailyBudget', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->advertiserUpdateDailyBudgetAsync($data);
             return $response;
         });
     }

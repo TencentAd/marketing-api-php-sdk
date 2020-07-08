@@ -30,7 +30,7 @@ class EstimationApiContainer extends ApiContainer
     /**
      * Handle EstimationApi estimationGet function
      * @param array params
-     * @return \TencentAds\Model\EstimationsListData
+     * @return \TencentAds\Model\EstimationGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

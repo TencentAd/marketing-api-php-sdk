@@ -8,8 +8,7 @@
 2. 使用SDK需要先拥有API的访问权限，所有SDK的使用与应用拥有的权限组相关联
 3. PHP SDK 需要依赖 PHP 5.5 及以上
 
-# 如何安装
-
+## 如何安装
 1. 修改composer.json文件，添加如下内容
 
 ```json
@@ -22,7 +21,7 @@
 
 2. 执行如下命令安装
 
-```shell\
+```shell
 composer install --no-dev
 ```
 
@@ -56,7 +55,6 @@ $tads->setAccessToken($token->getAccessToken());
 ```php
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
-
 use TencentAds\TencentAds;
 
 $tads = TencentAds::init([
@@ -66,7 +64,8 @@ $tads = TencentAds::init([
 ### 调用API接口
 ```php
 <?php
-require_once __DIR__ . '/vendor/autoload.php'; 
+require_once __DIR__ . '/vendor/autoload.php';
+
 use TencentAds\TencentAds;
 use TencentAds\Exception\TencentAdsResponseException;
 use TencentAds\Exception\TencentAdsSDKException;
@@ -120,7 +119,7 @@ $tads = TencentAds::init([
 ###### 目前SDK上报信息为您的服务器版本和PHP版本信息，为了帮助您更好地定位使用上的问题，建议开启上报，如需关闭请参考如下配置。
 ```php
 <?php
-require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php'; 
 
 use TencentAds\TencentAds;
 
@@ -128,6 +127,22 @@ $tads = TencentAds::init([
     'access_token' => '{access-token}',
     'is_monitor'   => false,
 ]);
+```
+
+### 设置返回数组
+```php
+<?php
+require_once __DIR__ . '/vendor/autoload.php'; 
+
+use TencentAds\TencentAds;
+use TencentAds\Kernel\SerializerHandler;
+
+$tads = TencentAds::init([
+    'access_token' => '{access-token}',
+    'is_monitor'   => false,
+]);
+
+$tads->setSerializerType(SerializerHandler::SERIALIZER_TYPE_ARRAY);
 ```
 
 ## 问题建议与反馈

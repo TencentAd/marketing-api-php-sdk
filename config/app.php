@@ -12,6 +12,11 @@ return [
             'url' => 'https://dl.e.qq.com/v1.1',
         ],
     ],
+    'TencentAds\Api\AsyncReportFilesApi'                => [
+        'get' => [
+            'url' => 'https://dl.e.qq.com/v1.1',
+        ],
+    ],
     'TencentAds\Api\OauthApi'                           => [
         'token'     => [
             'url' => 'https://api.e.qq.com',
@@ -23,11 +28,6 @@ return [
     'TencentAds\Api\AuthorizationApi'                   => [
         'wechatBind' => [
             'url' => 'https://developers.e.qq.com',
-        ],
-    ],
-    'TencentAds\Api\AdDiagnosisApi'                     => [
-        'get' => [
-            'skip_middleware' => [\TencentAds\Middleware\EncodeArrayMiddleware::class],
         ],
     ],
     'TencentAds\Api\AudienceGrantRelationsApi'          => [
@@ -93,6 +93,42 @@ return [
     ],
     'TencentAds\Api\UserPropertiesApi'                  => [
         'add' => [
+            'skip_middleware' => [\TencentAds\Middleware\EncodeArrayMiddleware::class],
+        ],
+    ],
+    'TencentAds\Api\LocalStoresApi'                     => [
+        'add'    => [
+            'skip_middleware' => [\TencentAds\Middleware\EncodeArrayMiddleware::class],
+        ],
+        'delete' => [
+            'skip_middleware' => [\TencentAds\Middleware\EncodeArrayMiddleware::class],
+        ],
+    ],
+    'TencentAds\Api\LocalStoresAddressParsingResultApi' => [
+        'get' => [
+            'skip_middleware' => [\TencentAds\Middleware\EncodeArrayMiddleware::class],
+        ],
+    ],
+    'TencentAds\Api\AdDiagnosisApi'                     => [
+        'get' => [
+            'skip_middleware' => [\TencentAds\Middleware\EncodeArrayMiddleware::class],
+        ],
+    ],
+    'TencentAds\Api\XijingPageApi'                      => [
+        'add' => [
+            'skip_middleware' => [\TencentAds\Middleware\EncodeArrayMiddleware::class],
+        ],
+    ],
+    'TencentAds\Api\XijingPageByComponentsApi'          => [
+        'add' => [
+            'skip_middleware' => [\TencentAds\Middleware\EncodeArrayMiddleware::class],
+        ],
+    ],
+    'TencentAds\Api\LeadCluesApi'                       => [
+        'get'    => [
+            'skip_middleware' => [\TencentAds\Middleware\EncodeArrayMiddleware::class],
+        ],
+        'update' => [
             'skip_middleware' => [\TencentAds\Middleware\EncodeArrayMiddleware::class],
         ],
     ],

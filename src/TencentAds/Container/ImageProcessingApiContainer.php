@@ -30,7 +30,7 @@ class ImageProcessingApiContainer extends ApiContainer
     /**
      * Handle ImageProcessingApi imageProcessingAdd function
      * @param array params
-     * @return \TencentAds\Model\DynamicAdImagesAddResponseData
+     * @return \TencentAds\Model\ImageProcessingAddResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

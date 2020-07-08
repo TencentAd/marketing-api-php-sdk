@@ -64,7 +64,7 @@ class PromotedObjectsApiContainer extends ApiContainer
     /**
      * Handle PromotedObjectsApi promotedObjectsGet function
      * @param array params
-     * @return \TencentAds\Model\PromotedObjectsListData
+     * @return \TencentAds\Model\PromotedObjectsGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -106,7 +106,7 @@ class PromotedObjectsApiContainer extends ApiContainer
     /**
      * Handle PromotedObjectsApi promotedObjectsUpdate function
      * @param array params
-     * @return \TencentAds\Model\PromotedObjectsAddResponseData
+     * @return \TencentAds\Model\PromotedObjectsUpdateResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

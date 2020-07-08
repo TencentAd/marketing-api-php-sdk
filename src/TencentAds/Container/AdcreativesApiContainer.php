@@ -30,7 +30,7 @@ class AdcreativesApiContainer extends ApiContainer
     /**
      * Handle AdcreativesApi adcreativesAdd function
      * @param array params
-     * @return \TencentAds\Model\AdCreativesAddResponseData
+     * @return \TencentAds\Model\AdcreativesAddResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class AdcreativesApiContainer extends ApiContainer
     /**
      * Handle AdcreativesApi adcreativesDelete function
      * @param array params
-     * @return \TencentAds\Model\AdCreativesAddResponseData
+     * @return \TencentAds\Model\AdcreativesDeleteResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -98,7 +98,7 @@ class AdcreativesApiContainer extends ApiContainer
     /**
      * Handle AdcreativesApi adcreativesGet function
      * @param array params
-     * @return \TencentAds\Model\AdCreativesListData
+     * @return \TencentAds\Model\AdcreativesGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -142,7 +142,7 @@ class AdcreativesApiContainer extends ApiContainer
     /**
      * Handle AdcreativesApi adcreativesUpdate function
      * @param array params
-     * @return \TencentAds\Model\AdCreativesAddResponseData
+     * @return \TencentAds\Model\AdcreativesUpdateResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

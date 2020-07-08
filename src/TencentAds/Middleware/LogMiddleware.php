@@ -8,6 +8,7 @@
 namespace TencentAds\Middleware;
 
 use Closure;
+use TencentAds\Exception\TencentAdsResponseException;
 use TencentAds\Kernel\Log;
 use TencentAds\Kernel\SerializerHandler;
 use TencentAds\Middleware\Model\MiddlewareRequest;
@@ -47,6 +48,10 @@ class LogMiddleware implements MiddlewareInterface
                 'code' => $code,
                 'message' => $e->getMessage(),
             ];
+            if ($e instanceof TencentAdsResponseException) {
+                $data['message_cn'] = $e->getMessageCn();
+                $data['errors'] = SerializerHandler::sanitizeForSerializationToArray($e->getErrors());
+            }
             Log::debug('Error:', $data);
             if ($code == 0) {
                 // 内部错误，sdk 的异常打印 trace

@@ -64,7 +64,7 @@ class AdsApiContainer extends ApiContainer
     /**
      * Handle AdsApi adsDelete function
      * @param array params
-     * @return \TencentAds\Model\AdsAddResponseData
+     * @return \TencentAds\Model\AdsDeleteResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -98,7 +98,7 @@ class AdsApiContainer extends ApiContainer
     /**
      * Handle AdsApi adsGet function
      * @param array params
-     * @return \TencentAds\Model\AdsListData
+     * @return \TencentAds\Model\AdsGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -142,7 +142,7 @@ class AdsApiContainer extends ApiContainer
     /**
      * Handle AdsApi adsUpdate function
      * @param array params
-     * @return \TencentAds\Model\AdsAddResponseData
+     * @return \TencentAds\Model\AdsUpdateResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -168,6 +168,40 @@ class AdsApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $data = $params;
             $response = $this->apiInstance->adsUpdateAsync($data);
+            return $response;
+        });
+    }
+
+
+    /**
+     * Handle AdsApi adsUpdateConfiguredStatus function
+     * @param array params
+     * @return \TencentAds\Model\AdsUpdateConfiguredStatusResponseData
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function updateConfiguredStatus(array $params = [])
+    {
+        return $this->handleMiddleware('updateConfiguredStatus', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->adsUpdateConfiguredStatus($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle AdsApi adsUpdateConfiguredStatusAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function updateConfiguredStatusAsync(array $params = [])
+    {
+        return $this->handleMiddleware('updateConfiguredStatus', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->adsUpdateConfiguredStatusAsync($data);
             return $response;
         });
     }

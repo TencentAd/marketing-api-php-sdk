@@ -44,7 +44,8 @@ class OauthApiContainer extends ApiContainer
             $scope = isset($params['scope']) ? $params['scope'] : null;
             $accountType = isset($params['account_type']) ? $params['account_type'] : null;
             $accountDisplayNumber = isset($params['account_display_number']) ? $params['account_display_number'] : null;
-            $response = $this->apiInstance->oauthAuthorize($clientId, $redirectUri, $state, $scope, $accountType, $accountDisplayNumber);
+            $fields = isset($params['fields']) ? $params['fields'] : null;
+            $response = $this->apiInstance->oauthAuthorize($clientId, $redirectUri, $state, $scope, $accountType, $accountDisplayNumber, $fields);
             return $response;
         });
     }
@@ -65,7 +66,8 @@ class OauthApiContainer extends ApiContainer
             $scope = isset($params['scope']) ? $params['scope'] : null;
             $accountType = isset($params['account_type']) ? $params['account_type'] : null;
             $accountDisplayNumber = isset($params['account_display_number']) ? $params['account_display_number'] : null;
-            $response = $this->apiInstance->oauthAuthorizeAsync($clientId, $redirectUri, $state, $scope, $accountType, $accountDisplayNumber);
+            $fields = isset($params['fields']) ? $params['fields'] : null;
+            $response = $this->apiInstance->oauthAuthorizeAsync($clientId, $redirectUri, $state, $scope, $accountType, $accountDisplayNumber, $fields);
             return $response;
         });
     }

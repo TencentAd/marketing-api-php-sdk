@@ -30,7 +30,7 @@ class SplitTestsApiContainer extends ApiContainer
     /**
      * Handle SplitTestsApi splitTestsAdd function
      * @param array params
-     * @return \TencentAds\Model\SplitTestAddResponseData
+     * @return \TencentAds\Model\SplitTestsAddResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class SplitTestsApiContainer extends ApiContainer
     /**
      * Handle SplitTestsApi splitTestsDelete function
      * @param array params
-     * @return \TencentAds\Model\SplitTestAddResponseData
+     * @return \TencentAds\Model\SplitTestsDeleteResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -98,7 +98,7 @@ class SplitTestsApiContainer extends ApiContainer
     /**
      * Handle SplitTestsApi splitTestsGet function
      * @param array params
-     * @return \TencentAds\Model\SplitTestListData
+     * @return \TencentAds\Model\SplitTestsGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -140,7 +140,7 @@ class SplitTestsApiContainer extends ApiContainer
     /**
      * Handle SplitTestsApi splitTestsUpdate function
      * @param array params
-     * @return \TencentAds\Model\SplitTestAddResponseData
+     * @return \TencentAds\Model\SplitTestsUpdateResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

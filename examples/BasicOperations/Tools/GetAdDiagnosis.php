@@ -32,12 +32,6 @@ class GetAdDiagnosis
             /* @var TencentAds $tads */
             $tads = static::$tads;
 
-            $fields = [
-                'adgroup_id', 'diagnose_time', 'operate_suggestion', 'learning_status', 'cost_guarantee_status',
-                'cost_guarantee_money', 'exposure_compete_score', 'exposure_raise_rate', 'cpa_bias_today',
-                'cpa_bias_overall', 'is_ocpx', 'conclusion_description', 'operate_suggestion_desc',
-                'learning_status_desc', 'exposure_compete_score_desc', 'detail',
-            ]; // 需要返回的字段
             $detail_fields = [
                 'funnel', 'target_detail', 'compete_detail', 'exposure_detail', 'click_detail', 'conversion_detail',
                 'cpa_detail', 'operation_log', 'optimization',
@@ -47,7 +41,6 @@ class GetAdDiagnosis
                                  'account_id'      => static::$ACCOUNT_ID,
                                  'adgroup_id_list' => [static::$ADGROUP_ID],
                                  'detail_fields'   => $detail_fields,
-                                 'fields'          => $fields,
                              ]);
 
             // 从返回里获得Ad diagnosis信息

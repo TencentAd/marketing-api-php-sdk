@@ -30,7 +30,7 @@ class ProductsSystemStatusApiContainer extends ApiContainer
     /**
      * Handle ProductsSystemStatusApi productsSystemStatusGet function
      * @param array params
-     * @return \TencentAds\Model\ProductsSystemStatusListData
+     * @return \TencentAds\Model\ProductsSystemStatusGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

@@ -64,7 +64,7 @@ class WechatPagesApiContainer extends ApiContainer
     /**
      * Handle WechatPagesApi wechatPagesDelete function
      * @param array params
-     * @return \TencentAds\Model\WechatPagesAddResponseData
+     * @return \TencentAds\Model\WechatPagesDeleteResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -98,7 +98,7 @@ class WechatPagesApiContainer extends ApiContainer
     /**
      * Handle WechatPagesApi wechatPagesGet function
      * @param array params
-     * @return \TencentAds\Model\WechatPagesListData
+     * @return \TencentAds\Model\WechatPagesGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

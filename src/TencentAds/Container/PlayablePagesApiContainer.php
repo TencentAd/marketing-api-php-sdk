@@ -30,7 +30,7 @@ class PlayablePagesApiContainer extends ApiContainer
     /**
      * Handle PlayablePagesApi playablePagesAdd function
      * @param array params
-     * @return \TencentAds\Model\PlayablePageAddResponseData
+     * @return \TencentAds\Model\PlayablePagesAddResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -68,7 +68,7 @@ class PlayablePagesApiContainer extends ApiContainer
     /**
      * Handle PlayablePagesApi playablePagesGet function
      * @param array params
-     * @return \TencentAds\Model\PlayablePageListData
+     * @return \TencentAds\Model\PlayablePagesGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

@@ -64,7 +64,7 @@ class DynamicAdImagesApiContainer extends ApiContainer
     /**
      * Handle DynamicAdImagesApi dynamicAdImagesGet function
      * @param array params
-     * @return \TencentAds\Model\DynamicAdImagesListData
+     * @return \TencentAds\Model\DynamicAdImagesGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

@@ -12,7 +12,6 @@ class GetCustomTagFiles
     public static $tads;
     public static $ACCESS_TOKEN = 'YOUR ACCESS TOKEN';
     public static $ACCOUNT_ID   = 'YOUR ACCOUNT ID';
-    public static $TAG_ID       = 'YOUR TAG ID'; // 标签ID
 
     public function init()
     {
@@ -40,7 +39,6 @@ class GetCustomTagFiles
             $response = $tads->customTagFiles()
                              ->get([
                                  'account_id' => static::$ACCOUNT_ID,
-                                 'tag_id'     => static::$TAG_ID,
                                  'fields'     => $fields,
                              ]);
 

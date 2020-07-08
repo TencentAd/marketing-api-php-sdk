@@ -64,7 +64,7 @@ class AsyncTasksApiContainer extends ApiContainer
     /**
      * Handle AsyncTasksApi asyncTasksGet function
      * @param array params
-     * @return \TencentAds\Model\AsyncTasksListData
+     * @return \TencentAds\Model\AsyncTasksGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

@@ -30,7 +30,7 @@ class AdcreativeTemplatesApiContainer extends ApiContainer
     /**
      * Handle AdcreativeTemplatesApi adcreativeTemplatesGet function
      * @param array params
-     * @return \TencentAds\Model\AdcreativeTemplatesListData
+     * @return \TencentAds\Model\AdcreativeTemplatesGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

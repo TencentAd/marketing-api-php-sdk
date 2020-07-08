@@ -30,7 +30,7 @@ class TargetingTagReportsApiContainer extends ApiContainer
     /**
      * Handle TargetingTagReportsApi targetingTagReportsGet function
      * @param array params
-     * @return \TencentAds\Model\TargetingTagReportsListData
+     * @return \TencentAds\Model\TargetingTagReportsGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

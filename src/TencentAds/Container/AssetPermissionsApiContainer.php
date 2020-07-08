@@ -30,7 +30,7 @@ class AssetPermissionsApiContainer extends ApiContainer
     /**
      * Handle AssetPermissionsApi assetPermissionsAdd function
      * @param array params
-     * @return \TencentAds\Model\AssetPermissionsAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class AssetPermissionsApiContainer extends ApiContainer
     /**
      * Handle AssetPermissionsApi assetPermissionsDelete function
      * @param array params
-     * @return \TencentAds\Model\AssetPermissionsAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

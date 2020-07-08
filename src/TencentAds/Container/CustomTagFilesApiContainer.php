@@ -74,7 +74,7 @@ class CustomTagFilesApiContainer extends ApiContainer
     /**
      * Handle CustomTagFilesApi customTagFilesGet function
      * @param array params
-     * @return \TencentAds\Model\CustomTagFilesListData
+     * @return \TencentAds\Model\CustomTagFilesGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

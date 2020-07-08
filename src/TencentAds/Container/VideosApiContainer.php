@@ -72,7 +72,7 @@ class VideosApiContainer extends ApiContainer
     /**
      * Handle VideosApi videosGet function
      * @param array params
-     * @return \TencentAds\Model\VideosListData
+     * @return \TencentAds\Model\VideosGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

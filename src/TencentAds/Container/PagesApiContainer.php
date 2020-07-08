@@ -30,7 +30,7 @@ class PagesApiContainer extends ApiContainer
     /**
      * Handle PagesApi pagesGet function
      * @param array params
-     * @return \TencentAds\Model\PagesListData
+     * @return \TencentAds\Model\PagesGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

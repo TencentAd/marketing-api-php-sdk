@@ -64,7 +64,7 @@ class TargetingsApiContainer extends ApiContainer
     /**
      * Handle TargetingsApi targetingsDelete function
      * @param array params
-     * @return \TencentAds\Model\TargetingsAddResponseData
+     * @return \TencentAds\Model\TargetingsDeleteResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -98,7 +98,7 @@ class TargetingsApiContainer extends ApiContainer
     /**
      * Handle TargetingsApi targetingsGet function
      * @param array params
-     * @return \TencentAds\Model\TargetingsListData
+     * @return \TencentAds\Model\TargetingsGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -140,7 +140,7 @@ class TargetingsApiContainer extends ApiContainer
     /**
      * Handle TargetingsApi targetingsUpdate function
      * @param array params
-     * @return \TencentAds\Model\TargetingsAddResponseData
+     * @return \TencentAds\Model\TargetingsUpdateResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

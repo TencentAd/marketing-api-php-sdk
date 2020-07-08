@@ -71,7 +71,7 @@ class GetFundStatementsDetailed
 
 if (basename($_SERVER['PHP_SELF']) == basename(__FILE__)) {
     try {
-        $example = new GetFundStatementsDaily();
+        $example = new GetFundStatementsDetailed();
         $example->init();
         $example->main();
     } catch (\Exception $e) {

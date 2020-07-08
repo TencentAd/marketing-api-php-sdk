@@ -154,8 +154,9 @@ class ApiContainer
             throw new TencentAdsResponseException("API response has not code field.");
         }
         if ($response['code'] != 0) {
+            $errors = empty($response['errors']) ? [] : $response['errors'];
             throw new TencentAdsResponseException(
-                $response['message'], $response['code'], [], null, $response['message_cn']
+                $response['message'], $response['code'], [], null, $response['message_cn'], $errors
             );
         }
         if (isset($response['data'])) {

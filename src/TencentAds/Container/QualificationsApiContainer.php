@@ -64,7 +64,7 @@ class QualificationsApiContainer extends ApiContainer
     /**
      * Handle QualificationsApi qualificationsDelete function
      * @param array params
-     * @return \TencentAds\Model\QualificationsAddResponseData
+     * @return \TencentAds\Model\QualificationsDeleteResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -98,7 +98,7 @@ class QualificationsApiContainer extends ApiContainer
     /**
      * Handle QualificationsApi qualificationsGet function
      * @param array params
-     * @return \TencentAds\Model\QualificationsListData
+     * @return \TencentAds\Model\QualificationsGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -138,7 +138,7 @@ class QualificationsApiContainer extends ApiContainer
     /**
      * Handle QualificationsApi qualificationsUpdate function
      * @param array params
-     * @return \TencentAds\Model\QualificationsAddResponseData
+     * @return \TencentAds\Model\QualificationsUpdateResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

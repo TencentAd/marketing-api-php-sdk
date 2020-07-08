@@ -30,7 +30,7 @@ class UserActionSetReportsApiContainer extends ApiContainer
     /**
      * Handle UserActionSetReportsApi userActionSetReportsGet function
      * @param array params
-     * @return \TencentAds\Model\UserActionSetReportsListData
+     * @return \TencentAds\Model\UserActionSetReportsGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

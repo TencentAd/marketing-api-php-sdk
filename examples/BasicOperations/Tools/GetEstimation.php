@@ -39,12 +39,7 @@ class GetEstimation
                 'age'    => [['max' => static::$TARGETING_AGE_MAX, 'min' => static::$TARGETING_AGE_MIN]],
                 'gender' => [static::$TARGETING_GENDER],
             ];
-            $fields = [
-                'max_active_user_count', 'approximate_count', 'impression', 'min_bid_amount', 'max_bid_amount',
-                'suggest_min_bid_amount', 'suggest_max_bid_amount', 'suggest_bid_content_ocpa',
-                'min_users_daily', 'max_users_daily', 'min_exposure_daily', 'max_exposure_daily',
-                'targeting_status', 'suggest_targeting', 'is_real_exposure_supported',
-            ]; // 需要返回的字段
+
             $response = $tads->estimation()
                              ->get([
                                  'account_id'    => static::$ACCOUNT_ID,
@@ -52,7 +47,6 @@ class GetEstimation
                                  'campaign_spec' => [
                                      'campaign_id' => static::$CAMPAIGN_ID,
                                  ],
-                                 'fields'        => $fields,
                              ]);
 
             return $response;

@@ -30,7 +30,7 @@ class EcommerceOrderApiContainer extends ApiContainer
     /**
      * Handle EcommerceOrderApi ecommerceOrderGet function
      * @param array params
-     * @return \TencentAds\Model\EcommerceOrderListData
+     * @return \TencentAds\Model\EcommerceOrderGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

@@ -64,7 +64,7 @@ class UserPropertySetsApiContainer extends ApiContainer
     /**
      * Handle UserPropertySetsApi userPropertySetsGet function
      * @param array params
-     * @return \TencentAds\Model\UserPropertySetsListData
+     * @return \TencentAds\Model\UserPropertySetsGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

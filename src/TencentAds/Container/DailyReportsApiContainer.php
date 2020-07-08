@@ -30,7 +30,7 @@ class DailyReportsApiContainer extends ApiContainer
     /**
      * Handle DailyReportsApi dailyReportsGet function
      * @param array params
-     * @return \TencentAds\Model\DailyReportsListData
+     * @return \TencentAds\Model\DailyReportsGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

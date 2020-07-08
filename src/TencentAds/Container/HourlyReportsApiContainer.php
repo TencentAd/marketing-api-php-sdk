@@ -30,7 +30,7 @@ class HourlyReportsApiContainer extends ApiContainer
     /**
      * Handle HourlyReportsApi hourlyReportsGet function
      * @param array params
-     * @return \TencentAds\Model\HourlyReportsListData
+     * @return \TencentAds\Model\HourlyReportsGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

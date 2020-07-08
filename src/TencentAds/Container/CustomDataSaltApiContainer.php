@@ -30,7 +30,7 @@ class CustomDataSaltApiContainer extends ApiContainer
     /**
      * Handle CustomDataSaltApi customDataSaltGet function
      * @param array params
-     * @return \TencentAds\Model\CustomDataSaltGetSalt[]
+     * @return \TencentAds\Model\CustomDataSaltGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

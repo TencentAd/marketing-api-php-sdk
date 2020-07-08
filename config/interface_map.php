@@ -8,7 +8,7 @@
 return [
     'campaigns/get'                      => [
         'method'         => 'GET',
-        'response_class' => \TencentAds\Model\CampaignsListData::class,
+        'response_class' => \TencentAds\Model\CampaignsGetResponseData::class,
     ],
     'campaigns/add'                      => [
         'method'         => 'POST',
@@ -24,7 +24,7 @@ return [
     ],
     'adgroups/get'                       => [
         'method'         => 'GET',
-        'response_class' => \TencentAds\Model\AdgroupsListData::class,
+        'response_class' => \TencentAds\Model\AdgroupsGetResponseData::class,
     ],
     'adgroups/add'                       => [
         'method'         => 'POST',
@@ -40,7 +40,7 @@ return [
     ],
     'advertiser/get'                     => [
         'method'         => 'GET',
-        'response_class' => \TencentAds\Model\AdvertiserListData::class,
+        'response_class' => \TencentAds\Model\AdvertiserGetResponseData::class,
     ],
     'advertiser/add'                     => [
         'method'         => 'POST',
@@ -52,6 +52,6 @@ return [
     ],
     'adcreatives_related_capability/get' => [
         'method'         => 'GET',
-        'response_class' => \TencentAds\Model\AdcreativesRelatedCapabilityListData::class,
+        'response_class' => \TencentAds\Model\AdcreativesRelatedCapabilityGetResponseData::class,
     ],
 ];

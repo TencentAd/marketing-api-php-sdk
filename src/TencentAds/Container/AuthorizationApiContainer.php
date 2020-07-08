@@ -42,7 +42,8 @@ class AuthorizationApiContainer extends ApiContainer
             $redirectUri = isset($params['redirect_uri']) ? $params['redirect_uri'] : null;
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $wechatAccountId = isset($params['wechat_account_id']) ? $params['wechat_account_id'] : null;
-            $response = $this->apiInstance->authorizationWechatBind($accessToken, $redirectUri, $accountId, $wechatAccountId);
+            $fields = isset($params['fields']) ? $params['fields'] : null;
+            $response = $this->apiInstance->authorizationWechatBind($accessToken, $redirectUri, $accountId, $wechatAccountId, $fields);
             return $response;
         });
     }
@@ -61,7 +62,8 @@ class AuthorizationApiContainer extends ApiContainer
             $redirectUri = isset($params['redirect_uri']) ? $params['redirect_uri'] : null;
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $wechatAccountId = isset($params['wechat_account_id']) ? $params['wechat_account_id'] : null;
-            $response = $this->apiInstance->authorizationWechatBindAsync($accessToken, $redirectUri, $accountId, $wechatAccountId);
+            $fields = isset($params['fields']) ? $params['fields'] : null;
+            $response = $this->apiInstance->authorizationWechatBindAsync($accessToken, $redirectUri, $accountId, $wechatAccountId, $fields);
             return $response;
         });
     }

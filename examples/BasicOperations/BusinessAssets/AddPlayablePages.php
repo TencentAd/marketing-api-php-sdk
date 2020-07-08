@@ -32,7 +32,7 @@ class AddPlayablePages
             /* @var TencentAds $tads */
             $tads = static::$tads;
 
-            $playablePageName = 'SDK试玩' . uniqid();
+            $playablePageName = 'SDK' . uniqid();
 
             $response = $tads->playablePages()
                              ->add([

@@ -68,7 +68,7 @@ class BrandApiContainer extends ApiContainer
     /**
      * Handle BrandApi brandGet function
      * @param array params
-     * @return \TencentAds\Model\BrandListData
+     * @return \TencentAds\Model\BrandGetResponseData
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
