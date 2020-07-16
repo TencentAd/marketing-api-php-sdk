@@ -260,7 +260,48 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'scanFollowCount' => 'int',
         'webCartAmount' => 'int',
         'appOrderAmount' => 'int',
-        'webOrderAmount' => 'int'
+        'webOrderAmount' => 'int',
+        'accountId' => 'int',
+        'campaignId' => 'int',
+        'adgroupId' => 'int',
+        'adId' => 'int',
+        'audienceId' => 'int',
+        'promotedObjectType' => 'string',
+        'promotedObjectId' => 'string',
+        'platformPageViewRate' => 'double',
+        'valuableClickRate' => 'double',
+        'videoPlayCount' => 'int',
+        'clickImageCount' => 'int',
+        'videoInnerPlayCount' => 'int',
+        'lanButtonClickCount' => 'int',
+        'lanButtonClickCost' => 'int',
+        'cpnClickButtonCount' => 'int',
+        'cpnClickButtonUv' => 'int',
+        'keyPageUv' => 'int',
+        'specialPageExpUv' => 'int',
+        'specialPageExpCost' => 'int',
+        'viewCommodityPageUv' => 'int',
+        'effectLeadsPurchaseCount' => 'int',
+        'overallLeadsPurchaseCount' => 'int',
+        'leadsPurchaseCount' => 'int',
+        'leadsPurchaseRate' => 'double',
+        'leadsPurchaseCost' => 'int',
+        'leadsPurchaseUv' => 'int',
+        'phoneCallUv' => 'int',
+        'validPhoneUv' => 'int',
+        'potentialCustomerPhoneUv' => 'int',
+        'webRegisterUv' => 'int',
+        'webApplyUv' => 'int',
+        'webCreditUv' => 'int',
+        'appApplyUv' => 'int',
+        'appPreCreditUv' => 'int',
+        'appCreditUv' => 'int',
+        'appWithdrawUv' => 'int',
+        'wechatAppRegisterUv' => 'int',
+        'noInterestCount' => 'int',
+        'firstDayOrderCount' => 'int',
+        'firstDayOrderAmount' => 'int',
+        'addWishlistCount' => 'int'
     ];
 
     /**
@@ -471,7 +512,48 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'scanFollowCount' => 'int64',
         'webCartAmount' => 'int64',
         'appOrderAmount' => 'int64',
-        'webOrderAmount' => 'int64'
+        'webOrderAmount' => 'int64',
+        'accountId' => 'int64',
+        'campaignId' => 'int64',
+        'adgroupId' => 'int64',
+        'adId' => 'int64',
+        'audienceId' => 'int64',
+        'promotedObjectType' => null,
+        'promotedObjectId' => null,
+        'platformPageViewRate' => 'double',
+        'valuableClickRate' => 'double',
+        'videoPlayCount' => 'int64',
+        'clickImageCount' => 'int64',
+        'videoInnerPlayCount' => 'int64',
+        'lanButtonClickCount' => 'int64',
+        'lanButtonClickCost' => 'int64',
+        'cpnClickButtonCount' => 'int64',
+        'cpnClickButtonUv' => 'int64',
+        'keyPageUv' => 'int64',
+        'specialPageExpUv' => 'int64',
+        'specialPageExpCost' => 'int64',
+        'viewCommodityPageUv' => 'int64',
+        'effectLeadsPurchaseCount' => 'int64',
+        'overallLeadsPurchaseCount' => 'int64',
+        'leadsPurchaseCount' => 'int64',
+        'leadsPurchaseRate' => 'double',
+        'leadsPurchaseCost' => 'int64',
+        'leadsPurchaseUv' => 'int64',
+        'phoneCallUv' => 'int64',
+        'validPhoneUv' => 'int64',
+        'potentialCustomerPhoneUv' => 'int64',
+        'webRegisterUv' => 'int64',
+        'webApplyUv' => 'int64',
+        'webCreditUv' => 'int64',
+        'appApplyUv' => 'int64',
+        'appPreCreditUv' => 'int64',
+        'appCreditUv' => 'int64',
+        'appWithdrawUv' => 'int64',
+        'wechatAppRegisterUv' => 'int64',
+        'noInterestCount' => 'int64',
+        'firstDayOrderCount' => 'int64',
+        'firstDayOrderAmount' => 'int64',
+        'addWishlistCount' => 'int64'
     ];
 
     /**
@@ -703,7 +785,48 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'scanFollowCount' => 'scan_follow_count',
         'webCartAmount' => 'web_cart_amount',
         'appOrderAmount' => 'app_order_amount',
-        'webOrderAmount' => 'web_order_amount'
+        'webOrderAmount' => 'web_order_amount',
+        'accountId' => 'account_id',
+        'campaignId' => 'campaign_id',
+        'adgroupId' => 'adgroup_id',
+        'adId' => 'ad_id',
+        'audienceId' => 'audience_id',
+        'promotedObjectType' => 'promoted_object_type',
+        'promotedObjectId' => 'promoted_object_id',
+        'platformPageViewRate' => 'platform_page_view_rate',
+        'valuableClickRate' => 'valuable_click_rate',
+        'videoPlayCount' => 'video_play_count',
+        'clickImageCount' => 'click_image_count',
+        'videoInnerPlayCount' => 'video_inner_play_count',
+        'lanButtonClickCount' => 'lan_button_click_count',
+        'lanButtonClickCost' => 'lan_button_click_cost',
+        'cpnClickButtonCount' => 'cpn_click_button_count',
+        'cpnClickButtonUv' => 'cpn_click_button_uv',
+        'keyPageUv' => 'key_page_uv',
+        'specialPageExpUv' => 'special_page_exp_uv',
+        'specialPageExpCost' => 'special_page_exp_cost',
+        'viewCommodityPageUv' => 'view_commodity_page_uv',
+        'effectLeadsPurchaseCount' => 'effect_leads_purchase_count',
+        'overallLeadsPurchaseCount' => 'overall_leads_purchase_count',
+        'leadsPurchaseCount' => 'leads_purchase_count',
+        'leadsPurchaseRate' => 'leads_purchase_rate',
+        'leadsPurchaseCost' => 'leads_purchase_cost',
+        'leadsPurchaseUv' => 'leads_purchase_uv',
+        'phoneCallUv' => 'phone_call_uv',
+        'validPhoneUv' => 'valid_phone_uv',
+        'potentialCustomerPhoneUv' => 'potential_customer_phone_uv',
+        'webRegisterUv' => 'web_register_uv',
+        'webApplyUv' => 'web_apply_uv',
+        'webCreditUv' => 'web_credit_uv',
+        'appApplyUv' => 'app_apply_uv',
+        'appPreCreditUv' => 'app_pre_credit_uv',
+        'appCreditUv' => 'app_credit_uv',
+        'appWithdrawUv' => 'app_withdraw_uv',
+        'wechatAppRegisterUv' => 'wechat_app_register_uv',
+        'noInterestCount' => 'no_interest_count',
+        'firstDayOrderCount' => 'first_day_order_count',
+        'firstDayOrderAmount' => 'first_day_order_amount',
+        'addWishlistCount' => 'add_wishlist_count'
     ];
 
     /**
@@ -914,7 +1037,48 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'scanFollowCount' => 'setScanFollowCount',
         'webCartAmount' => 'setWebCartAmount',
         'appOrderAmount' => 'setAppOrderAmount',
-        'webOrderAmount' => 'setWebOrderAmount'
+        'webOrderAmount' => 'setWebOrderAmount',
+        'accountId' => 'setAccountId',
+        'campaignId' => 'setCampaignId',
+        'adgroupId' => 'setAdgroupId',
+        'adId' => 'setAdId',
+        'audienceId' => 'setAudienceId',
+        'promotedObjectType' => 'setPromotedObjectType',
+        'promotedObjectId' => 'setPromotedObjectId',
+        'platformPageViewRate' => 'setPlatformPageViewRate',
+        'valuableClickRate' => 'setValuableClickRate',
+        'videoPlayCount' => 'setVideoPlayCount',
+        'clickImageCount' => 'setClickImageCount',
+        'videoInnerPlayCount' => 'setVideoInnerPlayCount',
+        'lanButtonClickCount' => 'setLanButtonClickCount',
+        'lanButtonClickCost' => 'setLanButtonClickCost',
+        'cpnClickButtonCount' => 'setCpnClickButtonCount',
+        'cpnClickButtonUv' => 'setCpnClickButtonUv',
+        'keyPageUv' => 'setKeyPageUv',
+        'specialPageExpUv' => 'setSpecialPageExpUv',
+        'specialPageExpCost' => 'setSpecialPageExpCost',
+        'viewCommodityPageUv' => 'setViewCommodityPageUv',
+        'effectLeadsPurchaseCount' => 'setEffectLeadsPurchaseCount',
+        'overallLeadsPurchaseCount' => 'setOverallLeadsPurchaseCount',
+        'leadsPurchaseCount' => 'setLeadsPurchaseCount',
+        'leadsPurchaseRate' => 'setLeadsPurchaseRate',
+        'leadsPurchaseCost' => 'setLeadsPurchaseCost',
+        'leadsPurchaseUv' => 'setLeadsPurchaseUv',
+        'phoneCallUv' => 'setPhoneCallUv',
+        'validPhoneUv' => 'setValidPhoneUv',
+        'potentialCustomerPhoneUv' => 'setPotentialCustomerPhoneUv',
+        'webRegisterUv' => 'setWebRegisterUv',
+        'webApplyUv' => 'setWebApplyUv',
+        'webCreditUv' => 'setWebCreditUv',
+        'appApplyUv' => 'setAppApplyUv',
+        'appPreCreditUv' => 'setAppPreCreditUv',
+        'appCreditUv' => 'setAppCreditUv',
+        'appWithdrawUv' => 'setAppWithdrawUv',
+        'wechatAppRegisterUv' => 'setWechatAppRegisterUv',
+        'noInterestCount' => 'setNoInterestCount',
+        'firstDayOrderCount' => 'setFirstDayOrderCount',
+        'firstDayOrderAmount' => 'setFirstDayOrderAmount',
+        'addWishlistCount' => 'setAddWishlistCount'
     ];
 
     /**
@@ -1125,7 +1289,48 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'scanFollowCount' => 'getScanFollowCount',
         'webCartAmount' => 'getWebCartAmount',
         'appOrderAmount' => 'getAppOrderAmount',
-        'webOrderAmount' => 'getWebOrderAmount'
+        'webOrderAmount' => 'getWebOrderAmount',
+        'accountId' => 'getAccountId',
+        'campaignId' => 'getCampaignId',
+        'adgroupId' => 'getAdgroupId',
+        'adId' => 'getAdId',
+        'audienceId' => 'getAudienceId',
+        'promotedObjectType' => 'getPromotedObjectType',
+        'promotedObjectId' => 'getPromotedObjectId',
+        'platformPageViewRate' => 'getPlatformPageViewRate',
+        'valuableClickRate' => 'getValuableClickRate',
+        'videoPlayCount' => 'getVideoPlayCount',
+        'clickImageCount' => 'getClickImageCount',
+        'videoInnerPlayCount' => 'getVideoInnerPlayCount',
+        'lanButtonClickCount' => 'getLanButtonClickCount',
+        'lanButtonClickCost' => 'getLanButtonClickCost',
+        'cpnClickButtonCount' => 'getCpnClickButtonCount',
+        'cpnClickButtonUv' => 'getCpnClickButtonUv',
+        'keyPageUv' => 'getKeyPageUv',
+        'specialPageExpUv' => 'getSpecialPageExpUv',
+        'specialPageExpCost' => 'getSpecialPageExpCost',
+        'viewCommodityPageUv' => 'getViewCommodityPageUv',
+        'effectLeadsPurchaseCount' => 'getEffectLeadsPurchaseCount',
+        'overallLeadsPurchaseCount' => 'getOverallLeadsPurchaseCount',
+        'leadsPurchaseCount' => 'getLeadsPurchaseCount',
+        'leadsPurchaseRate' => 'getLeadsPurchaseRate',
+        'leadsPurchaseCost' => 'getLeadsPurchaseCost',
+        'leadsPurchaseUv' => 'getLeadsPurchaseUv',
+        'phoneCallUv' => 'getPhoneCallUv',
+        'validPhoneUv' => 'getValidPhoneUv',
+        'potentialCustomerPhoneUv' => 'getPotentialCustomerPhoneUv',
+        'webRegisterUv' => 'getWebRegisterUv',
+        'webApplyUv' => 'getWebApplyUv',
+        'webCreditUv' => 'getWebCreditUv',
+        'appApplyUv' => 'getAppApplyUv',
+        'appPreCreditUv' => 'getAppPreCreditUv',
+        'appCreditUv' => 'getAppCreditUv',
+        'appWithdrawUv' => 'getAppWithdrawUv',
+        'wechatAppRegisterUv' => 'getWechatAppRegisterUv',
+        'noInterestCount' => 'getNoInterestCount',
+        'firstDayOrderCount' => 'getFirstDayOrderCount',
+        'firstDayOrderAmount' => 'getFirstDayOrderAmount',
+        'addWishlistCount' => 'getAddWishlistCount'
     ];
 
     /**
@@ -1391,6 +1596,47 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['webCartAmount'] = isset($data['webCartAmount']) ? $data['webCartAmount'] : null;
         $this->container['appOrderAmount'] = isset($data['appOrderAmount']) ? $data['appOrderAmount'] : null;
         $this->container['webOrderAmount'] = isset($data['webOrderAmount']) ? $data['webOrderAmount'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
+        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
+        $this->container['adId'] = isset($data['adId']) ? $data['adId'] : null;
+        $this->container['audienceId'] = isset($data['audienceId']) ? $data['audienceId'] : null;
+        $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
+        $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
+        $this->container['platformPageViewRate'] = isset($data['platformPageViewRate']) ? $data['platformPageViewRate'] : null;
+        $this->container['valuableClickRate'] = isset($data['valuableClickRate']) ? $data['valuableClickRate'] : null;
+        $this->container['videoPlayCount'] = isset($data['videoPlayCount']) ? $data['videoPlayCount'] : null;
+        $this->container['clickImageCount'] = isset($data['clickImageCount']) ? $data['clickImageCount'] : null;
+        $this->container['videoInnerPlayCount'] = isset($data['videoInnerPlayCount']) ? $data['videoInnerPlayCount'] : null;
+        $this->container['lanButtonClickCount'] = isset($data['lanButtonClickCount']) ? $data['lanButtonClickCount'] : null;
+        $this->container['lanButtonClickCost'] = isset($data['lanButtonClickCost']) ? $data['lanButtonClickCost'] : null;
+        $this->container['cpnClickButtonCount'] = isset($data['cpnClickButtonCount']) ? $data['cpnClickButtonCount'] : null;
+        $this->container['cpnClickButtonUv'] = isset($data['cpnClickButtonUv']) ? $data['cpnClickButtonUv'] : null;
+        $this->container['keyPageUv'] = isset($data['keyPageUv']) ? $data['keyPageUv'] : null;
+        $this->container['specialPageExpUv'] = isset($data['specialPageExpUv']) ? $data['specialPageExpUv'] : null;
+        $this->container['specialPageExpCost'] = isset($data['specialPageExpCost']) ? $data['specialPageExpCost'] : null;
+        $this->container['viewCommodityPageUv'] = isset($data['viewCommodityPageUv']) ? $data['viewCommodityPageUv'] : null;
+        $this->container['effectLeadsPurchaseCount'] = isset($data['effectLeadsPurchaseCount']) ? $data['effectLeadsPurchaseCount'] : null;
+        $this->container['overallLeadsPurchaseCount'] = isset($data['overallLeadsPurchaseCount']) ? $data['overallLeadsPurchaseCount'] : null;
+        $this->container['leadsPurchaseCount'] = isset($data['leadsPurchaseCount']) ? $data['leadsPurchaseCount'] : null;
+        $this->container['leadsPurchaseRate'] = isset($data['leadsPurchaseRate']) ? $data['leadsPurchaseRate'] : null;
+        $this->container['leadsPurchaseCost'] = isset($data['leadsPurchaseCost']) ? $data['leadsPurchaseCost'] : null;
+        $this->container['leadsPurchaseUv'] = isset($data['leadsPurchaseUv']) ? $data['leadsPurchaseUv'] : null;
+        $this->container['phoneCallUv'] = isset($data['phoneCallUv']) ? $data['phoneCallUv'] : null;
+        $this->container['validPhoneUv'] = isset($data['validPhoneUv']) ? $data['validPhoneUv'] : null;
+        $this->container['potentialCustomerPhoneUv'] = isset($data['potentialCustomerPhoneUv']) ? $data['potentialCustomerPhoneUv'] : null;
+        $this->container['webRegisterUv'] = isset($data['webRegisterUv']) ? $data['webRegisterUv'] : null;
+        $this->container['webApplyUv'] = isset($data['webApplyUv']) ? $data['webApplyUv'] : null;
+        $this->container['webCreditUv'] = isset($data['webCreditUv']) ? $data['webCreditUv'] : null;
+        $this->container['appApplyUv'] = isset($data['appApplyUv']) ? $data['appApplyUv'] : null;
+        $this->container['appPreCreditUv'] = isset($data['appPreCreditUv']) ? $data['appPreCreditUv'] : null;
+        $this->container['appCreditUv'] = isset($data['appCreditUv']) ? $data['appCreditUv'] : null;
+        $this->container['appWithdrawUv'] = isset($data['appWithdrawUv']) ? $data['appWithdrawUv'] : null;
+        $this->container['wechatAppRegisterUv'] = isset($data['wechatAppRegisterUv']) ? $data['wechatAppRegisterUv'] : null;
+        $this->container['noInterestCount'] = isset($data['noInterestCount']) ? $data['noInterestCount'] : null;
+        $this->container['firstDayOrderCount'] = isset($data['firstDayOrderCount']) ? $data['firstDayOrderCount'] : null;
+        $this->container['firstDayOrderAmount'] = isset($data['firstDayOrderAmount']) ? $data['firstDayOrderAmount'] : null;
+        $this->container['addWishlistCount'] = isset($data['addWishlistCount']) ? $data['addWishlistCount'] : null;
     }
 
     /**
@@ -6285,6 +6531,990 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setWebOrderAmount($webOrderAmount)
     {
         $this->container['webOrderAmount'] = $webOrderAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets accountId
+     *
+     * @return int
+     */
+    public function getAccountId()
+    {
+        return $this->container['accountId'];
+    }
+
+    /**
+     * Sets accountId
+     *
+     * @param int $accountId accountId
+     *
+     * @return $this
+     */
+    public function setAccountId($accountId)
+    {
+        $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets campaignId
+     *
+     * @return int
+     */
+    public function getCampaignId()
+    {
+        return $this->container['campaignId'];
+    }
+
+    /**
+     * Sets campaignId
+     *
+     * @param int $campaignId campaignId
+     *
+     * @return $this
+     */
+    public function setCampaignId($campaignId)
+    {
+        $this->container['campaignId'] = $campaignId;
+
+        return $this;
+    }
+
+    /**
+     * Gets adgroupId
+     *
+     * @return int
+     */
+    public function getAdgroupId()
+    {
+        return $this->container['adgroupId'];
+    }
+
+    /**
+     * Sets adgroupId
+     *
+     * @param int $adgroupId adgroupId
+     *
+     * @return $this
+     */
+    public function setAdgroupId($adgroupId)
+    {
+        $this->container['adgroupId'] = $adgroupId;
+
+        return $this;
+    }
+
+    /**
+     * Gets adId
+     *
+     * @return int
+     */
+    public function getAdId()
+    {
+        return $this->container['adId'];
+    }
+
+    /**
+     * Sets adId
+     *
+     * @param int $adId adId
+     *
+     * @return $this
+     */
+    public function setAdId($adId)
+    {
+        $this->container['adId'] = $adId;
+
+        return $this;
+    }
+
+    /**
+     * Gets audienceId
+     *
+     * @return int
+     */
+    public function getAudienceId()
+    {
+        return $this->container['audienceId'];
+    }
+
+    /**
+     * Sets audienceId
+     *
+     * @param int $audienceId audienceId
+     *
+     * @return $this
+     */
+    public function setAudienceId($audienceId)
+    {
+        $this->container['audienceId'] = $audienceId;
+
+        return $this;
+    }
+
+    /**
+     * Gets promotedObjectType
+     *
+     * @return string
+     */
+    public function getPromotedObjectType()
+    {
+        return $this->container['promotedObjectType'];
+    }
+
+    /**
+     * Sets promotedObjectType
+     *
+     * @param string $promotedObjectType promotedObjectType
+     *
+     * @return $this
+     */
+    public function setPromotedObjectType($promotedObjectType)
+    {
+        $this->container['promotedObjectType'] = $promotedObjectType;
+
+        return $this;
+    }
+
+    /**
+     * Gets promotedObjectId
+     *
+     * @return string
+     */
+    public function getPromotedObjectId()
+    {
+        return $this->container['promotedObjectId'];
+    }
+
+    /**
+     * Sets promotedObjectId
+     *
+     * @param string $promotedObjectId promotedObjectId
+     *
+     * @return $this
+     */
+    public function setPromotedObjectId($promotedObjectId)
+    {
+        $this->container['promotedObjectId'] = $promotedObjectId;
+
+        return $this;
+    }
+
+    /**
+     * Gets platformPageViewRate
+     *
+     * @return double
+     */
+    public function getPlatformPageViewRate()
+    {
+        return $this->container['platformPageViewRate'];
+    }
+
+    /**
+     * Sets platformPageViewRate
+     *
+     * @param double $platformPageViewRate platformPageViewRate
+     *
+     * @return $this
+     */
+    public function setPlatformPageViewRate($platformPageViewRate)
+    {
+        $this->container['platformPageViewRate'] = $platformPageViewRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets valuableClickRate
+     *
+     * @return double
+     */
+    public function getValuableClickRate()
+    {
+        return $this->container['valuableClickRate'];
+    }
+
+    /**
+     * Sets valuableClickRate
+     *
+     * @param double $valuableClickRate valuableClickRate
+     *
+     * @return $this
+     */
+    public function setValuableClickRate($valuableClickRate)
+    {
+        $this->container['valuableClickRate'] = $valuableClickRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoPlayCount
+     *
+     * @return int
+     */
+    public function getVideoPlayCount()
+    {
+        return $this->container['videoPlayCount'];
+    }
+
+    /**
+     * Sets videoPlayCount
+     *
+     * @param int $videoPlayCount videoPlayCount
+     *
+     * @return $this
+     */
+    public function setVideoPlayCount($videoPlayCount)
+    {
+        $this->container['videoPlayCount'] = $videoPlayCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets clickImageCount
+     *
+     * @return int
+     */
+    public function getClickImageCount()
+    {
+        return $this->container['clickImageCount'];
+    }
+
+    /**
+     * Sets clickImageCount
+     *
+     * @param int $clickImageCount clickImageCount
+     *
+     * @return $this
+     */
+    public function setClickImageCount($clickImageCount)
+    {
+        $this->container['clickImageCount'] = $clickImageCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoInnerPlayCount
+     *
+     * @return int
+     */
+    public function getVideoInnerPlayCount()
+    {
+        return $this->container['videoInnerPlayCount'];
+    }
+
+    /**
+     * Sets videoInnerPlayCount
+     *
+     * @param int $videoInnerPlayCount videoInnerPlayCount
+     *
+     * @return $this
+     */
+    public function setVideoInnerPlayCount($videoInnerPlayCount)
+    {
+        $this->container['videoInnerPlayCount'] = $videoInnerPlayCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets lanButtonClickCount
+     *
+     * @return int
+     */
+    public function getLanButtonClickCount()
+    {
+        return $this->container['lanButtonClickCount'];
+    }
+
+    /**
+     * Sets lanButtonClickCount
+     *
+     * @param int $lanButtonClickCount lanButtonClickCount
+     *
+     * @return $this
+     */
+    public function setLanButtonClickCount($lanButtonClickCount)
+    {
+        $this->container['lanButtonClickCount'] = $lanButtonClickCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets lanButtonClickCost
+     *
+     * @return int
+     */
+    public function getLanButtonClickCost()
+    {
+        return $this->container['lanButtonClickCost'];
+    }
+
+    /**
+     * Sets lanButtonClickCost
+     *
+     * @param int $lanButtonClickCost lanButtonClickCost
+     *
+     * @return $this
+     */
+    public function setLanButtonClickCost($lanButtonClickCost)
+    {
+        $this->container['lanButtonClickCost'] = $lanButtonClickCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets cpnClickButtonCount
+     *
+     * @return int
+     */
+    public function getCpnClickButtonCount()
+    {
+        return $this->container['cpnClickButtonCount'];
+    }
+
+    /**
+     * Sets cpnClickButtonCount
+     *
+     * @param int $cpnClickButtonCount cpnClickButtonCount
+     *
+     * @return $this
+     */
+    public function setCpnClickButtonCount($cpnClickButtonCount)
+    {
+        $this->container['cpnClickButtonCount'] = $cpnClickButtonCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets cpnClickButtonUv
+     *
+     * @return int
+     */
+    public function getCpnClickButtonUv()
+    {
+        return $this->container['cpnClickButtonUv'];
+    }
+
+    /**
+     * Sets cpnClickButtonUv
+     *
+     * @param int $cpnClickButtonUv cpnClickButtonUv
+     *
+     * @return $this
+     */
+    public function setCpnClickButtonUv($cpnClickButtonUv)
+    {
+        $this->container['cpnClickButtonUv'] = $cpnClickButtonUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets keyPageUv
+     *
+     * @return int
+     */
+    public function getKeyPageUv()
+    {
+        return $this->container['keyPageUv'];
+    }
+
+    /**
+     * Sets keyPageUv
+     *
+     * @param int $keyPageUv keyPageUv
+     *
+     * @return $this
+     */
+    public function setKeyPageUv($keyPageUv)
+    {
+        $this->container['keyPageUv'] = $keyPageUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets specialPageExpUv
+     *
+     * @return int
+     */
+    public function getSpecialPageExpUv()
+    {
+        return $this->container['specialPageExpUv'];
+    }
+
+    /**
+     * Sets specialPageExpUv
+     *
+     * @param int $specialPageExpUv specialPageExpUv
+     *
+     * @return $this
+     */
+    public function setSpecialPageExpUv($specialPageExpUv)
+    {
+        $this->container['specialPageExpUv'] = $specialPageExpUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets specialPageExpCost
+     *
+     * @return int
+     */
+    public function getSpecialPageExpCost()
+    {
+        return $this->container['specialPageExpCost'];
+    }
+
+    /**
+     * Sets specialPageExpCost
+     *
+     * @param int $specialPageExpCost specialPageExpCost
+     *
+     * @return $this
+     */
+    public function setSpecialPageExpCost($specialPageExpCost)
+    {
+        $this->container['specialPageExpCost'] = $specialPageExpCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets viewCommodityPageUv
+     *
+     * @return int
+     */
+    public function getViewCommodityPageUv()
+    {
+        return $this->container['viewCommodityPageUv'];
+    }
+
+    /**
+     * Sets viewCommodityPageUv
+     *
+     * @param int $viewCommodityPageUv viewCommodityPageUv
+     *
+     * @return $this
+     */
+    public function setViewCommodityPageUv($viewCommodityPageUv)
+    {
+        $this->container['viewCommodityPageUv'] = $viewCommodityPageUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets effectLeadsPurchaseCount
+     *
+     * @return int
+     */
+    public function getEffectLeadsPurchaseCount()
+    {
+        return $this->container['effectLeadsPurchaseCount'];
+    }
+
+    /**
+     * Sets effectLeadsPurchaseCount
+     *
+     * @param int $effectLeadsPurchaseCount effectLeadsPurchaseCount
+     *
+     * @return $this
+     */
+    public function setEffectLeadsPurchaseCount($effectLeadsPurchaseCount)
+    {
+        $this->container['effectLeadsPurchaseCount'] = $effectLeadsPurchaseCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets overallLeadsPurchaseCount
+     *
+     * @return int
+     */
+    public function getOverallLeadsPurchaseCount()
+    {
+        return $this->container['overallLeadsPurchaseCount'];
+    }
+
+    /**
+     * Sets overallLeadsPurchaseCount
+     *
+     * @param int $overallLeadsPurchaseCount overallLeadsPurchaseCount
+     *
+     * @return $this
+     */
+    public function setOverallLeadsPurchaseCount($overallLeadsPurchaseCount)
+    {
+        $this->container['overallLeadsPurchaseCount'] = $overallLeadsPurchaseCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsPurchaseCount
+     *
+     * @return int
+     */
+    public function getLeadsPurchaseCount()
+    {
+        return $this->container['leadsPurchaseCount'];
+    }
+
+    /**
+     * Sets leadsPurchaseCount
+     *
+     * @param int $leadsPurchaseCount leadsPurchaseCount
+     *
+     * @return $this
+     */
+    public function setLeadsPurchaseCount($leadsPurchaseCount)
+    {
+        $this->container['leadsPurchaseCount'] = $leadsPurchaseCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsPurchaseRate
+     *
+     * @return double
+     */
+    public function getLeadsPurchaseRate()
+    {
+        return $this->container['leadsPurchaseRate'];
+    }
+
+    /**
+     * Sets leadsPurchaseRate
+     *
+     * @param double $leadsPurchaseRate leadsPurchaseRate
+     *
+     * @return $this
+     */
+    public function setLeadsPurchaseRate($leadsPurchaseRate)
+    {
+        $this->container['leadsPurchaseRate'] = $leadsPurchaseRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsPurchaseCost
+     *
+     * @return int
+     */
+    public function getLeadsPurchaseCost()
+    {
+        return $this->container['leadsPurchaseCost'];
+    }
+
+    /**
+     * Sets leadsPurchaseCost
+     *
+     * @param int $leadsPurchaseCost leadsPurchaseCost
+     *
+     * @return $this
+     */
+    public function setLeadsPurchaseCost($leadsPurchaseCost)
+    {
+        $this->container['leadsPurchaseCost'] = $leadsPurchaseCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsPurchaseUv
+     *
+     * @return int
+     */
+    public function getLeadsPurchaseUv()
+    {
+        return $this->container['leadsPurchaseUv'];
+    }
+
+    /**
+     * Sets leadsPurchaseUv
+     *
+     * @param int $leadsPurchaseUv leadsPurchaseUv
+     *
+     * @return $this
+     */
+    public function setLeadsPurchaseUv($leadsPurchaseUv)
+    {
+        $this->container['leadsPurchaseUv'] = $leadsPurchaseUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets phoneCallUv
+     *
+     * @return int
+     */
+    public function getPhoneCallUv()
+    {
+        return $this->container['phoneCallUv'];
+    }
+
+    /**
+     * Sets phoneCallUv
+     *
+     * @param int $phoneCallUv phoneCallUv
+     *
+     * @return $this
+     */
+    public function setPhoneCallUv($phoneCallUv)
+    {
+        $this->container['phoneCallUv'] = $phoneCallUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets validPhoneUv
+     *
+     * @return int
+     */
+    public function getValidPhoneUv()
+    {
+        return $this->container['validPhoneUv'];
+    }
+
+    /**
+     * Sets validPhoneUv
+     *
+     * @param int $validPhoneUv validPhoneUv
+     *
+     * @return $this
+     */
+    public function setValidPhoneUv($validPhoneUv)
+    {
+        $this->container['validPhoneUv'] = $validPhoneUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets potentialCustomerPhoneUv
+     *
+     * @return int
+     */
+    public function getPotentialCustomerPhoneUv()
+    {
+        return $this->container['potentialCustomerPhoneUv'];
+    }
+
+    /**
+     * Sets potentialCustomerPhoneUv
+     *
+     * @param int $potentialCustomerPhoneUv potentialCustomerPhoneUv
+     *
+     * @return $this
+     */
+    public function setPotentialCustomerPhoneUv($potentialCustomerPhoneUv)
+    {
+        $this->container['potentialCustomerPhoneUv'] = $potentialCustomerPhoneUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets webRegisterUv
+     *
+     * @return int
+     */
+    public function getWebRegisterUv()
+    {
+        return $this->container['webRegisterUv'];
+    }
+
+    /**
+     * Sets webRegisterUv
+     *
+     * @param int $webRegisterUv webRegisterUv
+     *
+     * @return $this
+     */
+    public function setWebRegisterUv($webRegisterUv)
+    {
+        $this->container['webRegisterUv'] = $webRegisterUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets webApplyUv
+     *
+     * @return int
+     */
+    public function getWebApplyUv()
+    {
+        return $this->container['webApplyUv'];
+    }
+
+    /**
+     * Sets webApplyUv
+     *
+     * @param int $webApplyUv webApplyUv
+     *
+     * @return $this
+     */
+    public function setWebApplyUv($webApplyUv)
+    {
+        $this->container['webApplyUv'] = $webApplyUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets webCreditUv
+     *
+     * @return int
+     */
+    public function getWebCreditUv()
+    {
+        return $this->container['webCreditUv'];
+    }
+
+    /**
+     * Sets webCreditUv
+     *
+     * @param int $webCreditUv webCreditUv
+     *
+     * @return $this
+     */
+    public function setWebCreditUv($webCreditUv)
+    {
+        $this->container['webCreditUv'] = $webCreditUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets appApplyUv
+     *
+     * @return int
+     */
+    public function getAppApplyUv()
+    {
+        return $this->container['appApplyUv'];
+    }
+
+    /**
+     * Sets appApplyUv
+     *
+     * @param int $appApplyUv appApplyUv
+     *
+     * @return $this
+     */
+    public function setAppApplyUv($appApplyUv)
+    {
+        $this->container['appApplyUv'] = $appApplyUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets appPreCreditUv
+     *
+     * @return int
+     */
+    public function getAppPreCreditUv()
+    {
+        return $this->container['appPreCreditUv'];
+    }
+
+    /**
+     * Sets appPreCreditUv
+     *
+     * @param int $appPreCreditUv appPreCreditUv
+     *
+     * @return $this
+     */
+    public function setAppPreCreditUv($appPreCreditUv)
+    {
+        $this->container['appPreCreditUv'] = $appPreCreditUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets appCreditUv
+     *
+     * @return int
+     */
+    public function getAppCreditUv()
+    {
+        return $this->container['appCreditUv'];
+    }
+
+    /**
+     * Sets appCreditUv
+     *
+     * @param int $appCreditUv appCreditUv
+     *
+     * @return $this
+     */
+    public function setAppCreditUv($appCreditUv)
+    {
+        $this->container['appCreditUv'] = $appCreditUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets appWithdrawUv
+     *
+     * @return int
+     */
+    public function getAppWithdrawUv()
+    {
+        return $this->container['appWithdrawUv'];
+    }
+
+    /**
+     * Sets appWithdrawUv
+     *
+     * @param int $appWithdrawUv appWithdrawUv
+     *
+     * @return $this
+     */
+    public function setAppWithdrawUv($appWithdrawUv)
+    {
+        $this->container['appWithdrawUv'] = $appWithdrawUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatAppRegisterUv
+     *
+     * @return int
+     */
+    public function getWechatAppRegisterUv()
+    {
+        return $this->container['wechatAppRegisterUv'];
+    }
+
+    /**
+     * Sets wechatAppRegisterUv
+     *
+     * @param int $wechatAppRegisterUv wechatAppRegisterUv
+     *
+     * @return $this
+     */
+    public function setWechatAppRegisterUv($wechatAppRegisterUv)
+    {
+        $this->container['wechatAppRegisterUv'] = $wechatAppRegisterUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets noInterestCount
+     *
+     * @return int
+     */
+    public function getNoInterestCount()
+    {
+        return $this->container['noInterestCount'];
+    }
+
+    /**
+     * Sets noInterestCount
+     *
+     * @param int $noInterestCount noInterestCount
+     *
+     * @return $this
+     */
+    public function setNoInterestCount($noInterestCount)
+    {
+        $this->container['noInterestCount'] = $noInterestCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstDayOrderCount
+     *
+     * @return int
+     */
+    public function getFirstDayOrderCount()
+    {
+        return $this->container['firstDayOrderCount'];
+    }
+
+    /**
+     * Sets firstDayOrderCount
+     *
+     * @param int $firstDayOrderCount firstDayOrderCount
+     *
+     * @return $this
+     */
+    public function setFirstDayOrderCount($firstDayOrderCount)
+    {
+        $this->container['firstDayOrderCount'] = $firstDayOrderCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstDayOrderAmount
+     *
+     * @return int
+     */
+    public function getFirstDayOrderAmount()
+    {
+        return $this->container['firstDayOrderAmount'];
+    }
+
+    /**
+     * Sets firstDayOrderAmount
+     *
+     * @param int $firstDayOrderAmount firstDayOrderAmount
+     *
+     * @return $this
+     */
+    public function setFirstDayOrderAmount($firstDayOrderAmount)
+    {
+        $this->container['firstDayOrderAmount'] = $firstDayOrderAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets addWishlistCount
+     *
+     * @return int
+     */
+    public function getAddWishlistCount()
+    {
+        return $this->container['addWishlistCount'];
+    }
+
+    /**
+     * Sets addWishlistCount
+     *
+     * @param int $addWishlistCount addWishlistCount
+     *
+     * @return $this
+     */
+    public function setAddWishlistCount($addWishlistCount)
+    {
+        $this->container['addWishlistCount'] = $addWishlistCount;
 
         return $this;
     }

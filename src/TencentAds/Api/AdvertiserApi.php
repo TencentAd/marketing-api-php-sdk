@@ -90,7 +90,7 @@ class AdvertiserApi
     /**
      * Operation advertiserAdd
      *
-     * 添加服务商子客户
+     * 添加腾讯广告服务商子客
      *
      * @param  \TencentAds\Model\AdvertiserAddRequest $data data (required)
      *
@@ -107,7 +107,7 @@ class AdvertiserApi
     /**
      * Operation advertiserAddWithHttpInfo
      *
-     * 添加服务商子客户
+     * 添加腾讯广告服务商子客
      *
      * @param  \TencentAds\Model\AdvertiserAddRequest $data (required)
      *
@@ -182,7 +182,7 @@ class AdvertiserApi
     /**
      * Operation advertiserAddAsync
      *
-     * 添加服务商子客户
+     * 添加腾讯广告服务商子客
      *
      * @param  \TencentAds\Model\AdvertiserAddRequest $data (required)
      *
@@ -202,7 +202,7 @@ class AdvertiserApi
     /**
      * Operation advertiserAddAsyncWithHttpInfo
      *
-     * 添加服务商子客户
+     * 添加腾讯广告服务商子客
      *
      * @param  \TencentAds\Model\AdvertiserAddRequest $data (required)
      *
@@ -369,7 +369,7 @@ class AdvertiserApi
     /**
      * Operation advertiserGet
      *
-     * 获取广告主信息
+     * 查询腾讯广告广告主信息
      *
      * @param  int $accountId accountId (optional)
      * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
@@ -390,7 +390,7 @@ class AdvertiserApi
     /**
      * Operation advertiserGetWithHttpInfo
      *
-     * 获取广告主信息
+     * 查询腾讯广告广告主信息
      *
      * @param  int $accountId (optional)
      * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
@@ -469,7 +469,7 @@ class AdvertiserApi
     /**
      * Operation advertiserGetAsync
      *
-     * 获取广告主信息
+     * 查询腾讯广告广告主信息
      *
      * @param  int $accountId (optional)
      * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
@@ -493,7 +493,7 @@ class AdvertiserApi
     /**
      * Operation advertiserGetAsyncWithHttpInfo
      *
-     * 获取广告主信息
+     * 查询腾讯广告广告主信息
      *
      * @param  int $accountId (optional)
      * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
@@ -685,7 +685,7 @@ class AdvertiserApi
     /**
      * Operation advertiserUpdate
      *
-     * 更新广告主信息
+     * 更新腾讯广告广告主信息
      *
      * @param  \TencentAds\Model\AdvertiserUpdateRequest $data data (required)
      *
@@ -702,7 +702,7 @@ class AdvertiserApi
     /**
      * Operation advertiserUpdateWithHttpInfo
      *
-     * 更新广告主信息
+     * 更新腾讯广告广告主信息
      *
      * @param  \TencentAds\Model\AdvertiserUpdateRequest $data (required)
      *
@@ -777,7 +777,7 @@ class AdvertiserApi
     /**
      * Operation advertiserUpdateAsync
      *
-     * 更新广告主信息
+     * 更新腾讯广告广告主信息
      *
      * @param  \TencentAds\Model\AdvertiserUpdateRequest $data (required)
      *
@@ -797,7 +797,7 @@ class AdvertiserApi
     /**
      * Operation advertiserUpdateAsyncWithHttpInfo
      *
-     * 更新广告主信息
+     * 更新腾讯广告广告主信息
      *
      * @param  \TencentAds\Model\AdvertiserUpdateRequest $data (required)
      *

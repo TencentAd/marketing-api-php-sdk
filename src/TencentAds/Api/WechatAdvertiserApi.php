@@ -90,7 +90,7 @@ class WechatAdvertiserApi
     /**
      * Operation wechatAdvertiserGet
      *
-     * 获取微信广告主信息
+     * 查询微信公众平台广告主基础信息
      *
      * @param  int $page page (optional)
      * @param  int $pageSize pageSize (optional)
@@ -109,7 +109,7 @@ class WechatAdvertiserApi
     /**
      * Operation wechatAdvertiserGetWithHttpInfo
      *
-     * 获取微信广告主信息
+     * 查询微信公众平台广告主基础信息
      *
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
@@ -186,7 +186,7 @@ class WechatAdvertiserApi
     /**
      * Operation wechatAdvertiserGetAsync
      *
-     * 获取微信广告主信息
+     * 查询微信公众平台广告主基础信息
      *
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
@@ -208,7 +208,7 @@ class WechatAdvertiserApi
     /**
      * Operation wechatAdvertiserGetAsyncWithHttpInfo
      *
-     * 获取微信广告主信息
+     * 查询微信公众平台广告主基础信息
      *
      * @param  int $page (optional)
      * @param  int $pageSize (optional)

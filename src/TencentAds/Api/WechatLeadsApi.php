@@ -90,7 +90,7 @@ class WechatLeadsApi
     /**
      * Operation wechatLeadsGet
      *
-     * 获取销售线索
+     * 获取销售线索(待废弃)
      *
      * @param  \TencentAds\Model\DateRange $dateRange dateRange (optional)
      * @param  \TencentAds\Model\TimeRange $timeRange timeRange (optional)
@@ -112,7 +112,7 @@ class WechatLeadsApi
     /**
      * Operation wechatLeadsGetWithHttpInfo
      *
-     * 获取销售线索
+     * 获取销售线索(待废弃)
      *
      * @param  \TencentAds\Model\DateRange $dateRange (optional)
      * @param  \TencentAds\Model\TimeRange $timeRange (optional)
@@ -192,7 +192,7 @@ class WechatLeadsApi
     /**
      * Operation wechatLeadsGetAsync
      *
-     * 获取销售线索
+     * 获取销售线索(待废弃)
      *
      * @param  \TencentAds\Model\DateRange $dateRange (optional)
      * @param  \TencentAds\Model\TimeRange $timeRange (optional)
@@ -217,7 +217,7 @@ class WechatLeadsApi
     /**
      * Operation wechatLeadsGetAsyncWithHttpInfo
      *
-     * 获取销售线索
+     * 获取销售线索(待废弃)
      *
      * @param  \TencentAds\Model\DateRange $dateRange (optional)
      * @param  \TencentAds\Model\TimeRange $timeRange (optional)

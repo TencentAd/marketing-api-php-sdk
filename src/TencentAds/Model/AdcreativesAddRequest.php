@@ -69,6 +69,8 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'linkPageSpec' => '\TencentAds\Model\LinkPageSpec',
         'qqMiniGameTrackingQueryString' => 'string',
         'deepLinkUrl' => 'string',
+        'androidDeepLinkAppId' => 'string',
+        'iosDeepLinkAppId' => 'string',
         'universalLinkUrl' => 'string',
         'promotedObjectId' => 'string',
         'profileId' => 'int',
@@ -105,6 +107,8 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'linkPageSpec' => null,
         'qqMiniGameTrackingQueryString' => null,
         'deepLinkUrl' => null,
+        'androidDeepLinkAppId' => null,
+        'iosDeepLinkAppId' => null,
         'universalLinkUrl' => null,
         'promotedObjectId' => null,
         'profileId' => 'int64',
@@ -162,6 +166,8 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'linkPageSpec' => 'link_page_spec',
         'qqMiniGameTrackingQueryString' => 'qq_mini_game_tracking_query_string',
         'deepLinkUrl' => 'deep_link_url',
+        'androidDeepLinkAppId' => 'android_deep_link_app_id',
+        'iosDeepLinkAppId' => 'ios_deep_link_app_id',
         'universalLinkUrl' => 'universal_link_url',
         'promotedObjectId' => 'promoted_object_id',
         'profileId' => 'profile_id',
@@ -198,6 +204,8 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'linkPageSpec' => 'setLinkPageSpec',
         'qqMiniGameTrackingQueryString' => 'setQqMiniGameTrackingQueryString',
         'deepLinkUrl' => 'setDeepLinkUrl',
+        'androidDeepLinkAppId' => 'setAndroidDeepLinkAppId',
+        'iosDeepLinkAppId' => 'setIosDeepLinkAppId',
         'universalLinkUrl' => 'setUniversalLinkUrl',
         'promotedObjectId' => 'setPromotedObjectId',
         'profileId' => 'setProfileId',
@@ -234,6 +242,8 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'linkPageSpec' => 'getLinkPageSpec',
         'qqMiniGameTrackingQueryString' => 'getQqMiniGameTrackingQueryString',
         'deepLinkUrl' => 'getDeepLinkUrl',
+        'androidDeepLinkAppId' => 'getAndroidDeepLinkAppId',
+        'iosDeepLinkAppId' => 'getIosDeepLinkAppId',
         'universalLinkUrl' => 'getUniversalLinkUrl',
         'promotedObjectId' => 'getPromotedObjectId',
         'profileId' => 'getProfileId',
@@ -324,6 +334,8 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         $this->container['linkPageSpec'] = isset($data['linkPageSpec']) ? $data['linkPageSpec'] : null;
         $this->container['qqMiniGameTrackingQueryString'] = isset($data['qqMiniGameTrackingQueryString']) ? $data['qqMiniGameTrackingQueryString'] : null;
         $this->container['deepLinkUrl'] = isset($data['deepLinkUrl']) ? $data['deepLinkUrl'] : null;
+        $this->container['androidDeepLinkAppId'] = isset($data['androidDeepLinkAppId']) ? $data['androidDeepLinkAppId'] : null;
+        $this->container['iosDeepLinkAppId'] = isset($data['iosDeepLinkAppId']) ? $data['iosDeepLinkAppId'] : null;
         $this->container['universalLinkUrl'] = isset($data['universalLinkUrl']) ? $data['universalLinkUrl'] : null;
         $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
         $this->container['profileId'] = isset($data['profileId']) ? $data['profileId'] : null;
@@ -650,6 +662,54 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     public function setDeepLinkUrl($deepLinkUrl)
     {
         $this->container['deepLinkUrl'] = $deepLinkUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets androidDeepLinkAppId
+     *
+     * @return string
+     */
+    public function getAndroidDeepLinkAppId()
+    {
+        return $this->container['androidDeepLinkAppId'];
+    }
+
+    /**
+     * Sets androidDeepLinkAppId
+     *
+     * @param string $androidDeepLinkAppId androidDeepLinkAppId
+     *
+     * @return $this
+     */
+    public function setAndroidDeepLinkAppId($androidDeepLinkAppId)
+    {
+        $this->container['androidDeepLinkAppId'] = $androidDeepLinkAppId;
+
+        return $this;
+    }
+
+    /**
+     * Gets iosDeepLinkAppId
+     *
+     * @return string
+     */
+    public function getIosDeepLinkAppId()
+    {
+        return $this->container['iosDeepLinkAppId'];
+    }
+
+    /**
+     * Sets iosDeepLinkAppId
+     *
+     * @param string $iosDeepLinkAppId iosDeepLinkAppId
+     *
+     * @return $this
+     */
+    public function setIosDeepLinkAppId($iosDeepLinkAppId)
+    {
+        $this->container['iosDeepLinkAppId'] = $iosDeepLinkAppId;
 
         return $this;
     }

@@ -90,7 +90,7 @@ class BusinessManagerRelationsApi
     /**
      * Operation businessManagerRelationsGet
      *
-     * 获取商务管家代理的广告主列表
+     * 查询商务管家账号下广告主信息
      *
      * @param  int $page page (optional)
      * @param  int $pageSize pageSize (optional)
@@ -109,7 +109,7 @@ class BusinessManagerRelationsApi
     /**
      * Operation businessManagerRelationsGetWithHttpInfo
      *
-     * 获取商务管家代理的广告主列表
+     * 查询商务管家账号下广告主信息
      *
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
@@ -186,7 +186,7 @@ class BusinessManagerRelationsApi
     /**
      * Operation businessManagerRelationsGetAsync
      *
-     * 获取商务管家代理的广告主列表
+     * 查询商务管家账号下广告主信息
      *
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
@@ -208,7 +208,7 @@ class BusinessManagerRelationsApi
     /**
      * Operation businessManagerRelationsGetAsyncWithHttpInfo
      *
-     * 获取商务管家代理的广告主列表
+     * 查询商务管家账号下广告主信息
      *
      * @param  int $page (optional)
      * @param  int $pageSize (optional)

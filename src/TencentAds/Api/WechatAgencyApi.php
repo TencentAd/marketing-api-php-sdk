@@ -90,7 +90,7 @@ class WechatAgencyApi
     /**
      * Operation wechatAgencyGet
      *
-     * 获取微信服务商信息
+     * 查询微信公众平台服务商详情信息
      *
      * @param  int $accountId accountId (required)
      * @param  string[] $fields 返回参数的字段列表 (optional)
@@ -108,7 +108,7 @@ class WechatAgencyApi
     /**
      * Operation wechatAgencyGetWithHttpInfo
      *
-     * 获取微信服务商信息
+     * 查询微信公众平台服务商详情信息
      *
      * @param  int $accountId (required)
      * @param  string[] $fields 返回参数的字段列表 (optional)
@@ -184,7 +184,7 @@ class WechatAgencyApi
     /**
      * Operation wechatAgencyGetAsync
      *
-     * 获取微信服务商信息
+     * 查询微信公众平台服务商详情信息
      *
      * @param  int $accountId (required)
      * @param  string[] $fields 返回参数的字段列表 (optional)
@@ -205,7 +205,7 @@ class WechatAgencyApi
     /**
      * Operation wechatAgencyGetAsyncWithHttpInfo
      *
-     * 获取微信服务商信息
+     * 查询微信公众平台服务商详情信息
      *
      * @param  int $accountId (required)
      * @param  string[] $fields 返回参数的字段列表 (optional)

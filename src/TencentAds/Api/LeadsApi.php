@@ -90,7 +90,7 @@ class LeadsApi
     /**
      * Operation leadsGet
      *
-     * 获取销售线索
+     * 获取销售线索(待废弃)
      *
      * @param  int $accountId accountId (required)
      * @param  \TencentAds\Model\TimeRange $timeRange timeRange (required)
@@ -113,7 +113,7 @@ class LeadsApi
     /**
      * Operation leadsGetWithHttpInfo
      *
-     * 获取销售线索
+     * 获取销售线索(待废弃)
      *
      * @param  int $accountId (required)
      * @param  \TencentAds\Model\TimeRange $timeRange (required)
@@ -194,7 +194,7 @@ class LeadsApi
     /**
      * Operation leadsGetAsync
      *
-     * 获取销售线索
+     * 获取销售线索(待废弃)
      *
      * @param  int $accountId (required)
      * @param  \TencentAds\Model\TimeRange $timeRange (required)
@@ -220,7 +220,7 @@ class LeadsApi
     /**
      * Operation leadsGetAsyncWithHttpInfo
      *
-     * 获取销售线索
+     * 获取销售线索(待废弃)
      *
      * @param  int $accountId (required)
      * @param  \TencentAds\Model\TimeRange $timeRange (required)

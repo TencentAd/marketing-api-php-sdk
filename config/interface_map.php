@@ -54,4 +54,20 @@ return [
         'method'         => 'GET',
         'response_class' => \TencentAds\Model\AdcreativesRelatedCapabilityGetResponseData::class,
     ],
+    'ads/add'                            => [
+        'method'         => 'POST',
+        'response_class' => \TencentAds\Model\AdsAddResponseData::class,
+    ],
+    'ads/delete'                         => [
+        'method'         => 'POST',
+        'response_class' => \TencentAds\Model\AdsDeleteResponseData::class,
+    ],
+    'ads/update'                         => [
+        'method'         => 'POST',
+        'response_class' => \TencentAds\Model\AdsUpdateResponseData::class,
+    ],
+    'adcreatives/add'                    => [
+        'method'         => 'POST',
+        'response_class' => \TencentAds\Model\AdcreativesAddResponseData::class,
+    ],
 ];

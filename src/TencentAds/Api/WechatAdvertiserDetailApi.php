@@ -90,7 +90,7 @@ class WechatAdvertiserDetailApi
     /**
      * Operation wechatAdvertiserDetailGet
      *
-     * 【待废弃，请使用新接口wechat_advertiser_specification/get】获取微信广告主信息
+     * 【待废弃，请使用新接口wechat_advertiser_specification/get】查询微信公众平台广告主详情信息
      *
      * @param  int $accountId accountId (optional)
      * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
@@ -111,7 +111,7 @@ class WechatAdvertiserDetailApi
     /**
      * Operation wechatAdvertiserDetailGetWithHttpInfo
      *
-     * 【待废弃，请使用新接口wechat_advertiser_specification/get】获取微信广告主信息
+     * 【待废弃，请使用新接口wechat_advertiser_specification/get】查询微信公众平台广告主详情信息
      *
      * @param  int $accountId (optional)
      * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
@@ -190,7 +190,7 @@ class WechatAdvertiserDetailApi
     /**
      * Operation wechatAdvertiserDetailGetAsync
      *
-     * 【待废弃，请使用新接口wechat_advertiser_specification/get】获取微信广告主信息
+     * 【待废弃，请使用新接口wechat_advertiser_specification/get】查询微信公众平台广告主详情信息
      *
      * @param  int $accountId (optional)
      * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
@@ -214,7 +214,7 @@ class WechatAdvertiserDetailApi
     /**
      * Operation wechatAdvertiserDetailGetAsyncWithHttpInfo
      *
-     * 【待废弃，请使用新接口wechat_advertiser_specification/get】获取微信广告主信息
+     * 【待废弃，请使用新接口wechat_advertiser_specification/get】查询微信公众平台广告主详情信息
      *
      * @param  int $accountId (optional)
      * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)

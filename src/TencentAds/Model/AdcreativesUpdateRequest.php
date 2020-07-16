@@ -66,6 +66,8 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'linkPageSpec' => '\TencentAds\Model\LinkPageSpec',
         'qqMiniGameTrackingQueryString' => 'string',
         'deepLinkUrl' => 'string',
+        'androidDeepLinkAppId' => 'string',
+        'iosDeepLinkAppId' => 'string',
         'universalLinkUrl' => 'string',
         'shareContentSpec' => '\TencentAds\Model\ShareContentSpec',
         'multiShareOptimizationEnabled' => 'bool',
@@ -98,6 +100,8 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'linkPageSpec' => null,
         'qqMiniGameTrackingQueryString' => null,
         'deepLinkUrl' => null,
+        'androidDeepLinkAppId' => null,
+        'iosDeepLinkAppId' => null,
         'universalLinkUrl' => null,
         'shareContentSpec' => null,
         'multiShareOptimizationEnabled' => null,
@@ -151,6 +155,8 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'linkPageSpec' => 'link_page_spec',
         'qqMiniGameTrackingQueryString' => 'qq_mini_game_tracking_query_string',
         'deepLinkUrl' => 'deep_link_url',
+        'androidDeepLinkAppId' => 'android_deep_link_app_id',
+        'iosDeepLinkAppId' => 'ios_deep_link_app_id',
         'universalLinkUrl' => 'universal_link_url',
         'shareContentSpec' => 'share_content_spec',
         'multiShareOptimizationEnabled' => 'multi_share_optimization_enabled',
@@ -183,6 +189,8 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'linkPageSpec' => 'setLinkPageSpec',
         'qqMiniGameTrackingQueryString' => 'setQqMiniGameTrackingQueryString',
         'deepLinkUrl' => 'setDeepLinkUrl',
+        'androidDeepLinkAppId' => 'setAndroidDeepLinkAppId',
+        'iosDeepLinkAppId' => 'setIosDeepLinkAppId',
         'universalLinkUrl' => 'setUniversalLinkUrl',
         'shareContentSpec' => 'setShareContentSpec',
         'multiShareOptimizationEnabled' => 'setMultiShareOptimizationEnabled',
@@ -215,6 +223,8 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'linkPageSpec' => 'getLinkPageSpec',
         'qqMiniGameTrackingQueryString' => 'getQqMiniGameTrackingQueryString',
         'deepLinkUrl' => 'getDeepLinkUrl',
+        'androidDeepLinkAppId' => 'getAndroidDeepLinkAppId',
+        'iosDeepLinkAppId' => 'getIosDeepLinkAppId',
         'universalLinkUrl' => 'getUniversalLinkUrl',
         'shareContentSpec' => 'getShareContentSpec',
         'multiShareOptimizationEnabled' => 'getMultiShareOptimizationEnabled',
@@ -301,6 +311,8 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['linkPageSpec'] = isset($data['linkPageSpec']) ? $data['linkPageSpec'] : null;
         $this->container['qqMiniGameTrackingQueryString'] = isset($data['qqMiniGameTrackingQueryString']) ? $data['qqMiniGameTrackingQueryString'] : null;
         $this->container['deepLinkUrl'] = isset($data['deepLinkUrl']) ? $data['deepLinkUrl'] : null;
+        $this->container['androidDeepLinkAppId'] = isset($data['androidDeepLinkAppId']) ? $data['androidDeepLinkAppId'] : null;
+        $this->container['iosDeepLinkAppId'] = isset($data['iosDeepLinkAppId']) ? $data['iosDeepLinkAppId'] : null;
         $this->container['universalLinkUrl'] = isset($data['universalLinkUrl']) ? $data['universalLinkUrl'] : null;
         $this->container['shareContentSpec'] = isset($data['shareContentSpec']) ? $data['shareContentSpec'] : null;
         $this->container['multiShareOptimizationEnabled'] = isset($data['multiShareOptimizationEnabled']) ? $data['multiShareOptimizationEnabled'] : null;
@@ -554,6 +566,54 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setDeepLinkUrl($deepLinkUrl)
     {
         $this->container['deepLinkUrl'] = $deepLinkUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets androidDeepLinkAppId
+     *
+     * @return string
+     */
+    public function getAndroidDeepLinkAppId()
+    {
+        return $this->container['androidDeepLinkAppId'];
+    }
+
+    /**
+     * Sets androidDeepLinkAppId
+     *
+     * @param string $androidDeepLinkAppId androidDeepLinkAppId
+     *
+     * @return $this
+     */
+    public function setAndroidDeepLinkAppId($androidDeepLinkAppId)
+    {
+        $this->container['androidDeepLinkAppId'] = $androidDeepLinkAppId;
+
+        return $this;
+    }
+
+    /**
+     * Gets iosDeepLinkAppId
+     *
+     * @return string
+     */
+    public function getIosDeepLinkAppId()
+    {
+        return $this->container['iosDeepLinkAppId'];
+    }
+
+    /**
+     * Sets iosDeepLinkAppId
+     *
+     * @param string $iosDeepLinkAppId iosDeepLinkAppId
+     *
+     * @return $this
+     */
+    public function setIosDeepLinkAppId($iosDeepLinkAppId)
+    {
+        $this->container['iosDeepLinkAppId'] = $iosDeepLinkAppId;
 
         return $this;
     }

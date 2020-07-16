@@ -78,6 +78,9 @@ class SiteSetDefinition
     const KANDIAN = 'SITE_SET_KANDIAN';
     const QQ_MUSIC_GAME = 'SITE_SET_QQ_MUSIC_GAME';
     const MOMENTS = 'SITE_SET_MOMENTS';
+    const MINI_GAME_WECHAT = 'SITE_SET_MINI_GAME_WECHAT';
+    const MINI_GAME_QQ = 'SITE_SET_MINI_GAME_QQ';
+    const MOBILE_GAME = 'SITE_SET_MOBILE_GAME';
     
     /**
      * Gets allowable values of the enum
@@ -120,6 +123,9 @@ class SiteSetDefinition
             self::KANDIAN,
             self::QQ_MUSIC_GAME,
             self::MOMENTS,
+            self::MINI_GAME_WECHAT,
+            self::MINI_GAME_QQ,
+            self::MOBILE_GAME,
         ];
     }
 }

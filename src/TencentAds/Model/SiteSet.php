@@ -77,6 +77,9 @@ class SiteSet
     const QQ_MUSIC_GAME = 'SITE_SET_QQ_MUSIC_GAME';
     const KUAISHOU = 'SITE_SET_KUAISHOU';
     const PCQQ = 'SITE_SET_PCQQ';
+    const MINI_GAME_WECHAT = 'SITE_SET_MINI_GAME_WECHAT';
+    const MINI_GAME_QQ = 'SITE_SET_MINI_GAME_QQ';
+    const MOBILE_GAME = 'SITE_SET_MOBILE_GAME';
     
     /**
      * Gets allowable values of the enum
@@ -118,6 +121,9 @@ class SiteSet
             self::QQ_MUSIC_GAME,
             self::KUAISHOU,
             self::PCQQ,
+            self::MINI_GAME_WECHAT,
+            self::MINI_GAME_QQ,
+            self::MOBILE_GAME,
         ];
     }
 }

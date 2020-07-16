@@ -10,11 +10,8 @@ namespace TencentAds;
 use GuzzleHttp\Client;
 use Monolog\Logger;
 use TencentAds\Exception\TencentAdsSDKException;
-use TencentAds\Helper\Url;
-use TencentAds\Kernel\App;
-use TencentAds\Kernel\BatchHandler;
-use TencentAds\Kernel\BatchResponse;
 use TencentAds\Kernel\Log;
+use TencentAds\Kernel\Tools;
 use TencentAds\Middleware\AuthMiddleware;
 use TencentAds\Middleware\DiffHostMiddleware;
 use TencentAds\Middleware\EncodeArrayMiddleware;
@@ -24,7 +21,7 @@ use TencentAds\Middleware\LogMiddleware;
  * Class TencentAds
  * @package TencentAds
  */
-class TencentAds extends App
+class TencentAds extends Tools
 {
     /**
      * @var TencentAds 实例
@@ -35,7 +32,7 @@ class TencentAds extends App
      * SDK version
      * @var string
      */
-    protected $version = '1.1.3';
+    protected $version = '1.1.4';
 
     /**
      * SDK version
@@ -58,10 +55,6 @@ class TencentAds extends App
      */
     protected $globalConfig = [];
 
-    /**
-     * @var array
-     */
-    protected $batchRequests = [];
 
     /**
      * @var array middleware list
@@ -107,7 +100,7 @@ class TencentAds extends App
         $rootPath = dirname(dirname(__DIR__));
         $configKeys = ['app', 'interface_map'];
         foreach ($configKeys as $configKey) {
-            $instance->globalConfig[$configKey] = require_once $rootPath . '/config/' . $configKey . '.php';
+            $instance->globalConfig[$configKey] = require($rootPath . '/config/' . $configKey . '.php');
         }
         $instance->globalConfig['is_monitor'] = $isMonitor;
         return $instance;
@@ -273,6 +266,14 @@ class TencentAds extends App
     }
 
     /**
+     * @return string
+     */
+    public function getApiVersion(): string
+    {
+        return $this->apiVersion;
+    }
+
+    /**
      * Get instance
      * @return TencentAds
      */
@@ -375,69 +376,5 @@ class TencentAds extends App
     public function getMiddlewareInstance()
     {
         return $this->middlewareInstance;
-    }
-
-    /**
-     * Send batch request
-     *
-     * @param $accountId
-     * @param $batchRequest
-     * @return BatchResponse[]
-     * @throws ApiException
-     * @throws Exception\TencentAdsResponseException
-     * @throws TencentAdsSDKException
-     */
-    public function sendBatchRequest($accountId, $batchRequest)
-    {
-        $batchRequestSpec = $this->buildBatchRequest($accountId, $batchRequest);
-        $data = $this->batchRequests()->add([
-            'batch_request_spec' => $batchRequestSpec,
-            'account_id' => $accountId,
-        ]);
-        $responses = $data->getList();
-        $batchHandler = BatchHandler::getInstance();
-        return $batchHandler->getResponses($batchRequest, $responses);
-    }
-
-    /**
-     * Build batch request spec param
-     * @param $accountId
-     * @param $batchRequest
-     * @return array
-     * @throws TencentAdsSDKException
-     */
-    protected function buildBatchRequest($accountId, $batchRequest)
-    {
-        $interfaceMap = $this->globalConfig['interface_map'];
-        $batchRequestSpec = [];
-        foreach ($batchRequest as $item) {
-            list($uri, $params) = $item;
-            if (!empty($interfaceMap[$uri])) {
-                $interfaceInfo = $interfaceMap[$uri];
-                $versionUri = 'v1.1' . '/' . $uri; // 暂不支持$this->apiVersion对应版本号
-                if (empty($params['account_id'])) {
-                    $params['account_id'] = $accountId;
-                }
-                $query = Url::buildQuery($params);
-                switch ($interfaceInfo['method']) {
-                    case 'GET':
-                        $batchRequestSpec[] = [
-                            'relative_path' => $versionUri . (empty($query) ? '' : '?') . $query
-                        ];
-                        break;
-                    case 'POST':
-                        $batchRequestSpec[] = [
-                            'relative_path' => $versionUri,
-                            'body' => $query
-                        ];
-                        break;
-                    default:
-                        throw new TencentAdsSDKException("Batch request not support this interface method");
-                }
-            } else {
-                throw new TencentAdsSDKException("Batch request not support this interface");
-            }
-        }
-        return $batchRequestSpec;
     }
 }
