@@ -65,7 +65,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
         'versionName' => 'string',
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
-        'systemStatus' => '\TencentAds\Model\SysStatus',
+        'systemStatus' => '\TencentAds\Model\UnionPackageSysStatus',
         'systemMessage' => 'string'
     ];
 
@@ -424,7 +424,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Gets systemStatus
      *
-     * @return \TencentAds\Model\SysStatus
+     * @return \TencentAds\Model\UnionPackageSysStatus
      */
     public function getSystemStatus()
     {
@@ -434,7 +434,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Sets systemStatus
      *
-     * @param \TencentAds\Model\SysStatus $systemStatus systemStatus
+     * @param \TencentAds\Model\UnionPackageSysStatus $systemStatus systemStatus
      *
      * @return $this
      */

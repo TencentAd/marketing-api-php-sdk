@@ -60,6 +60,7 @@ class UserIdType
     const SALTED_HASH_IMEI = 'SALTED_HASH_IMEI';
     const SALTED_HASH_IDFA = 'SALTED_HASH_IDFA';
     const OAID = 'OAID';
+    const HASH_OAID = 'HASH_OAID';
     
     /**
      * Gets allowable values of the enum
@@ -84,6 +85,7 @@ class UserIdType
             self::SALTED_HASH_IMEI,
             self::SALTED_HASH_IDFA,
             self::OAID,
+            self::HASH_OAID,
         ];
     }
 }

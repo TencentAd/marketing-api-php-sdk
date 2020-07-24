@@ -1,6 +1,6 @@
 <?php
 /**
- * BusinessManagerRelationsGetListStruct
+ * ProductCategoriesListGetResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * BusinessManagerRelationsGetListStruct Class Doc Comment
+ * ProductCategoriesListGetResponseData Class Doc Comment
  *
  * @category Class
- * @description 返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class BusinessManagerRelationsGetListStruct implements ModelInterface, ArrayAccess
+class ProductCategoriesListGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class BusinessManagerRelationsGetListStruct implements ModelInterface, ArrayAcce
       *
       * @var string
       */
-    protected static $swaggerModelName = 'BusinessManagerRelationsGetListStruct';
+    protected static $swaggerModelName = 'ProductCategoriesListGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,7 @@ class BusinessManagerRelationsGetListStruct implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'corporationName' => 'string',
-        'fundType' => '\TencentAds\Model\BMAccountType'
+        'list' => '\TencentAds\Model\CategoryItem[]'
     ];
 
     /**
@@ -69,9 +66,7 @@ class BusinessManagerRelationsGetListStruct implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'corporationName' => null,
-        'fundType' => null
+        'list' => null
     ];
 
     /**
@@ -101,9 +96,7 @@ class BusinessManagerRelationsGetListStruct implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'corporationName' => 'corporation_name',
-        'fundType' => 'fund_type'
+        'list' => 'list'
     ];
 
     /**
@@ -112,9 +105,7 @@ class BusinessManagerRelationsGetListStruct implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'corporationName' => 'setCorporationName',
-        'fundType' => 'setFundType'
+        'list' => 'setList'
     ];
 
     /**
@@ -123,9 +114,7 @@ class BusinessManagerRelationsGetListStruct implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'corporationName' => 'getCorporationName',
-        'fundType' => 'getFundType'
+        'list' => 'getList'
     ];
 
     /**
@@ -188,9 +177,7 @@ class BusinessManagerRelationsGetListStruct implements ModelInterface, ArrayAcce
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['corporationName'] = isset($data['corporationName']) ? $data['corporationName'] : null;
-        $this->container['fundType'] = isset($data['fundType']) ? $data['fundType'] : null;
+        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
     }
 
     /**
@@ -218,73 +205,25 @@ class BusinessManagerRelationsGetListStruct implements ModelInterface, ArrayAcce
 
 
     /**
-     * Gets accountId
+     * Gets list
      *
-     * @return int
+     * @return \TencentAds\Model\CategoryItem[]
      */
-    public function getAccountId()
+    public function getList()
     {
-        return $this->container['accountId'];
+        return $this->container['list'];
     }
 
     /**
-     * Sets accountId
+     * Sets list
      *
-     * @param int $accountId accountId
+     * @param \TencentAds\Model\CategoryItem[] $list list
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setList($list)
     {
-        $this->container['accountId'] = $accountId;
-
-        return $this;
-    }
-
-    /**
-     * Gets corporationName
-     *
-     * @return string
-     */
-    public function getCorporationName()
-    {
-        return $this->container['corporationName'];
-    }
-
-    /**
-     * Sets corporationName
-     *
-     * @param string $corporationName corporationName
-     *
-     * @return $this
-     */
-    public function setCorporationName($corporationName)
-    {
-        $this->container['corporationName'] = $corporationName;
-
-        return $this;
-    }
-
-    /**
-     * Gets fundType
-     *
-     * @return \TencentAds\Model\BMAccountType
-     */
-    public function getFundType()
-    {
-        return $this->container['fundType'];
-    }
-
-    /**
-     * Sets fundType
-     *
-     * @param \TencentAds\Model\BMAccountType $fundType fundType
-     *
-     * @return $this
-     */
-    public function setFundType($fundType)
-    {
-        $this->container['fundType'] = $fundType;
+        $this->container['list'] = $list;
 
         return $this;
     }

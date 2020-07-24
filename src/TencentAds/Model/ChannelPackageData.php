@@ -65,7 +65,7 @@ class ChannelPackageData implements ModelInterface, ArrayAccess
         'versionName' => 'string',
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
-        'systemStatus' => '\TencentAds\Model\SysStatus',
+        'systemStatus' => '\TencentAds\Model\PackageSysStatus',
         'auditStatus' => '\TencentAds\Model\PackageAuditStatus'
     ];
 
@@ -424,7 +424,7 @@ class ChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Gets systemStatus
      *
-     * @return \TencentAds\Model\SysStatus
+     * @return \TencentAds\Model\PackageSysStatus
      */
     public function getSystemStatus()
     {
@@ -434,7 +434,7 @@ class ChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Sets systemStatus
      *
-     * @param \TencentAds\Model\SysStatus $systemStatus systemStatus
+     * @param \TencentAds\Model\PackageSysStatus $systemStatus systemStatus
      *
      * @return $this
      */

@@ -655,15 +655,16 @@ class AdcreativesApi
      * @param  int $page page (optional)
      * @param  int $pageSize pageSize (optional)
      * @param  bool $isDeleted isDeleted (optional)
+     * @param  bool $linkPageTypeCompatible linkPageTypeCompatible (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\AdcreativesGetResponse
      */
-    public function adcreativesGet($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function adcreativesGet($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $linkPageTypeCompatible = null, $fields = null)
     {
-        list($response) = $this->adcreativesGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+        list($response) = $this->adcreativesGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $linkPageTypeCompatible, $fields);
         return $response;
     }
 
@@ -677,16 +678,17 @@ class AdcreativesApi
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
      * @param  bool $isDeleted (optional)
+     * @param  bool $linkPageTypeCompatible (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\AdcreativesGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function adcreativesGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function adcreativesGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $linkPageTypeCompatible = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\AdcreativesGetResponse';
-        $request = $this->adcreativesGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+        $request = $this->adcreativesGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $linkPageTypeCompatible, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -757,14 +759,15 @@ class AdcreativesApi
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
      * @param  bool $isDeleted (optional)
+     * @param  bool $linkPageTypeCompatible (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function adcreativesGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function adcreativesGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $linkPageTypeCompatible = null, $fields = null)
     {
-        return $this->adcreativesGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $fields)
+        return $this->adcreativesGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $linkPageTypeCompatible, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -782,15 +785,16 @@ class AdcreativesApi
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
      * @param  bool $isDeleted (optional)
+     * @param  bool $linkPageTypeCompatible (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function adcreativesGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function adcreativesGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $linkPageTypeCompatible = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\AdcreativesGetResponse';
-        $request = $this->adcreativesGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+        $request = $this->adcreativesGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $linkPageTypeCompatible, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -837,12 +841,13 @@ class AdcreativesApi
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
      * @param  bool $isDeleted (optional)
+     * @param  bool $linkPageTypeCompatible (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function adcreativesGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    protected function adcreativesGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $linkPageTypeCompatible = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -880,6 +885,10 @@ class AdcreativesApi
         // query params
         if ($isDeleted !== null) {
             $queryParams['is_deleted'] = ObjectSerializer::toQueryValue($isDeleted);
+        }
+        // query params
+        if ($linkPageTypeCompatible !== null) {
+            $queryParams['link_page_type_compatible'] = ObjectSerializer::toQueryValue($linkPageTypeCompatible);
         }
         // query params
         if (is_array($fields)) {

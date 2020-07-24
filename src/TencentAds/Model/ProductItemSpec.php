@@ -93,7 +93,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'discount' => 'double',
         'salePrice' => 'double',
         'startTime' => 'string',
-        'endTime' => 'int',
+        'endTime' => 'string',
         'salesVolume' => 'int',
         'stockVolume' => 'int',
         'slogan' => 'string',
@@ -172,7 +172,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'discount' => 'double',
         'salePrice' => 'double',
         'startTime' => null,
-        'endTime' => 'int64',
+        'endTime' => null,
         'salesVolume' => 'int64',
         'stockVolume' => 'int64',
         'slogan' => null,
@@ -1468,7 +1468,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets endTime
      *
-     * @return int
+     * @return string
      */
     public function getEndTime()
     {
@@ -1478,7 +1478,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets endTime
      *
-     * @param int $endTime endTime
+     * @param string $endTime endTime
      *
      * @return $this
      */

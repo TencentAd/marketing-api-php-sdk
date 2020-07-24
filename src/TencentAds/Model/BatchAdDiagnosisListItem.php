@@ -64,13 +64,13 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
         'learningStatus' => '\TencentAds\Model\LearningStatus',
         'costGuaranteeStatus' => '\TencentAds\Model\CostGuaranteeStatus',
         'costGuaranteeMoney' => 'int',
-        'exposureCompeteScore' => 'int',
-        'exposureRaiseRate' => 'double',
-        'cpaBiasToday' => 'double',
-        'cpaBiasOverall' => 'double',
+        'exposureCompeteScore' => 'string',
+        'exposureRaiseRate' => 'string',
+        'cpaBiasToday' => 'string',
+        'cpaBiasOverall' => 'string',
         'isOcpx' => 'bool',
-        'optimizationGoal' => 'int',
-        'deepOptimizationGoal' => 'int',
+        'optimizationGoal' => 'string',
+        'deepOptimizationGoal' => 'string',
         'conclusionDescription' => 'string',
         'hasDiagnoseDetail' => 'bool',
         'operateSuggestionDesc' => 'string',
@@ -91,13 +91,13 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
         'learningStatus' => null,
         'costGuaranteeStatus' => null,
         'costGuaranteeMoney' => 'int64',
-        'exposureCompeteScore' => 'int64',
-        'exposureRaiseRate' => 'double',
-        'cpaBiasToday' => 'double',
-        'cpaBiasOverall' => 'double',
+        'exposureCompeteScore' => null,
+        'exposureRaiseRate' => null,
+        'cpaBiasToday' => null,
+        'cpaBiasOverall' => null,
         'isOcpx' => null,
-        'optimizationGoal' => 'int64',
-        'deepOptimizationGoal' => 'int64',
+        'optimizationGoal' => null,
+        'deepOptimizationGoal' => null,
         'conclusionDescription' => null,
         'hasDiagnoseDetail' => null,
         'operateSuggestionDesc' => null,
@@ -460,7 +460,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets exposureCompeteScore
      *
-     * @return int
+     * @return string
      */
     public function getExposureCompeteScore()
     {
@@ -470,7 +470,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets exposureCompeteScore
      *
-     * @param int $exposureCompeteScore exposureCompeteScore
+     * @param string $exposureCompeteScore exposureCompeteScore
      *
      * @return $this
      */
@@ -484,7 +484,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets exposureRaiseRate
      *
-     * @return double
+     * @return string
      */
     public function getExposureRaiseRate()
     {
@@ -494,7 +494,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets exposureRaiseRate
      *
-     * @param double $exposureRaiseRate exposureRaiseRate
+     * @param string $exposureRaiseRate exposureRaiseRate
      *
      * @return $this
      */
@@ -508,7 +508,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets cpaBiasToday
      *
-     * @return double
+     * @return string
      */
     public function getCpaBiasToday()
     {
@@ -518,7 +518,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets cpaBiasToday
      *
-     * @param double $cpaBiasToday cpaBiasToday
+     * @param string $cpaBiasToday cpaBiasToday
      *
      * @return $this
      */
@@ -532,7 +532,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets cpaBiasOverall
      *
-     * @return double
+     * @return string
      */
     public function getCpaBiasOverall()
     {
@@ -542,7 +542,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets cpaBiasOverall
      *
-     * @param double $cpaBiasOverall cpaBiasOverall
+     * @param string $cpaBiasOverall cpaBiasOverall
      *
      * @return $this
      */
@@ -580,7 +580,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets optimizationGoal
      *
-     * @return int
+     * @return string
      */
     public function getOptimizationGoal()
     {
@@ -590,7 +590,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets optimizationGoal
      *
-     * @param int $optimizationGoal optimizationGoal
+     * @param string $optimizationGoal optimizationGoal
      *
      * @return $this
      */
@@ -604,7 +604,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets deepOptimizationGoal
      *
-     * @return int
+     * @return string
      */
     public function getDeepOptimizationGoal()
     {
@@ -614,7 +614,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets deepOptimizationGoal
      *
-     * @param int $deepOptimizationGoal deepOptimizationGoal
+     * @param string $deepOptimizationGoal deepOptimizationGoal
      *
      * @return $this
      */

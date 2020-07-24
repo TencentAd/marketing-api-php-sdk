@@ -1,6 +1,6 @@
 <?php
 /**
- * AsyncReportsAddRequest
+ * CategoryItem
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AsyncReportsAddRequest Class Doc Comment
+ * CategoryItem Class Doc Comment
  *
  * @category Class
+ * @description 商品类目
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
+class CategoryItem implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'AsyncReportsAddRequest';
+    protected static $swaggerModelName = 'category_item';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,14 +58,10 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'taskName' => 'string',
-        'reportFields' => 'string[]',
-        'level' => '\TencentAds\Model\AsyncReportLevel',
-        'timeLine' => '\TencentAds\Model\TimeLine',
-        'groupBy' => 'string[]',
-        'granularity' => '\TencentAds\Model\TimeGranularity',
-        'date' => 'string'
+        'categoryId' => 'int',
+        'categoryName' => 'string',
+        'parentCategoryId' => 'int',
+        'level' => 'int'
     ];
 
     /**
@@ -73,14 +70,10 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'taskName' => null,
-        'reportFields' => null,
-        'level' => null,
-        'timeLine' => null,
-        'groupBy' => null,
-        'granularity' => null,
-        'date' => null
+        'categoryId' => 'int64',
+        'categoryName' => null,
+        'parentCategoryId' => 'int64',
+        'level' => 'int64'
     ];
 
     /**
@@ -110,14 +103,10 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'taskName' => 'task_name',
-        'reportFields' => 'report_fields',
-        'level' => 'level',
-        'timeLine' => 'time_line',
-        'groupBy' => 'group_by',
-        'granularity' => 'granularity',
-        'date' => 'date'
+        'categoryId' => 'category_id',
+        'categoryName' => 'category_name',
+        'parentCategoryId' => 'parent_category_id',
+        'level' => 'level'
     ];
 
     /**
@@ -126,14 +115,10 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'taskName' => 'setTaskName',
-        'reportFields' => 'setReportFields',
-        'level' => 'setLevel',
-        'timeLine' => 'setTimeLine',
-        'groupBy' => 'setGroupBy',
-        'granularity' => 'setGranularity',
-        'date' => 'setDate'
+        'categoryId' => 'setCategoryId',
+        'categoryName' => 'setCategoryName',
+        'parentCategoryId' => 'setParentCategoryId',
+        'level' => 'setLevel'
     ];
 
     /**
@@ -142,14 +127,10 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'taskName' => 'getTaskName',
-        'reportFields' => 'getReportFields',
-        'level' => 'getLevel',
-        'timeLine' => 'getTimeLine',
-        'groupBy' => 'getGroupBy',
-        'granularity' => 'getGranularity',
-        'date' => 'getDate'
+        'categoryId' => 'getCategoryId',
+        'categoryName' => 'getCategoryName',
+        'parentCategoryId' => 'getParentCategoryId',
+        'level' => 'getLevel'
     ];
 
     /**
@@ -212,14 +193,10 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['taskName'] = isset($data['taskName']) ? $data['taskName'] : null;
-        $this->container['reportFields'] = isset($data['reportFields']) ? $data['reportFields'] : null;
+        $this->container['categoryId'] = isset($data['categoryId']) ? $data['categoryId'] : null;
+        $this->container['categoryName'] = isset($data['categoryName']) ? $data['categoryName'] : null;
+        $this->container['parentCategoryId'] = isset($data['parentCategoryId']) ? $data['parentCategoryId'] : null;
         $this->container['level'] = isset($data['level']) ? $data['level'] : null;
-        $this->container['timeLine'] = isset($data['timeLine']) ? $data['timeLine'] : null;
-        $this->container['groupBy'] = isset($data['groupBy']) ? $data['groupBy'] : null;
-        $this->container['granularity'] = isset($data['granularity']) ? $data['granularity'] : null;
-        $this->container['date'] = isset($data['date']) ? $data['date'] : null;
     }
 
     /**
@@ -247,73 +224,73 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets accountId
+     * Gets categoryId
      *
      * @return int
      */
-    public function getAccountId()
+    public function getCategoryId()
     {
-        return $this->container['accountId'];
+        return $this->container['categoryId'];
     }
 
     /**
-     * Sets accountId
+     * Sets categoryId
      *
-     * @param int $accountId accountId
+     * @param int $categoryId categoryId
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setCategoryId($categoryId)
     {
-        $this->container['accountId'] = $accountId;
+        $this->container['categoryId'] = $categoryId;
 
         return $this;
     }
 
     /**
-     * Gets taskName
+     * Gets categoryName
      *
      * @return string
      */
-    public function getTaskName()
+    public function getCategoryName()
     {
-        return $this->container['taskName'];
+        return $this->container['categoryName'];
     }
 
     /**
-     * Sets taskName
+     * Sets categoryName
      *
-     * @param string $taskName taskName
+     * @param string $categoryName categoryName
      *
      * @return $this
      */
-    public function setTaskName($taskName)
+    public function setCategoryName($categoryName)
     {
-        $this->container['taskName'] = $taskName;
+        $this->container['categoryName'] = $categoryName;
 
         return $this;
     }
 
     /**
-     * Gets reportFields
+     * Gets parentCategoryId
      *
-     * @return string[]
+     * @return int
      */
-    public function getReportFields()
+    public function getParentCategoryId()
     {
-        return $this->container['reportFields'];
+        return $this->container['parentCategoryId'];
     }
 
     /**
-     * Sets reportFields
+     * Sets parentCategoryId
      *
-     * @param string[] $reportFields reportFields
+     * @param int $parentCategoryId parentCategoryId
      *
      * @return $this
      */
-    public function setReportFields($reportFields)
+    public function setParentCategoryId($parentCategoryId)
     {
-        $this->container['reportFields'] = $reportFields;
+        $this->container['parentCategoryId'] = $parentCategoryId;
 
         return $this;
     }
@@ -321,7 +298,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets level
      *
-     * @return \TencentAds\Model\AsyncReportLevel
+     * @return int
      */
     public function getLevel()
     {
@@ -331,109 +308,13 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets level
      *
-     * @param \TencentAds\Model\AsyncReportLevel $level level
+     * @param int $level level
      *
      * @return $this
      */
     public function setLevel($level)
     {
         $this->container['level'] = $level;
-
-        return $this;
-    }
-
-    /**
-     * Gets timeLine
-     *
-     * @return \TencentAds\Model\TimeLine
-     */
-    public function getTimeLine()
-    {
-        return $this->container['timeLine'];
-    }
-
-    /**
-     * Sets timeLine
-     *
-     * @param \TencentAds\Model\TimeLine $timeLine timeLine
-     *
-     * @return $this
-     */
-    public function setTimeLine($timeLine)
-    {
-        $this->container['timeLine'] = $timeLine;
-
-        return $this;
-    }
-
-    /**
-     * Gets groupBy
-     *
-     * @return string[]
-     */
-    public function getGroupBy()
-    {
-        return $this->container['groupBy'];
-    }
-
-    /**
-     * Sets groupBy
-     *
-     * @param string[] $groupBy groupBy
-     *
-     * @return $this
-     */
-    public function setGroupBy($groupBy)
-    {
-        $this->container['groupBy'] = $groupBy;
-
-        return $this;
-    }
-
-    /**
-     * Gets granularity
-     *
-     * @return \TencentAds\Model\TimeGranularity
-     */
-    public function getGranularity()
-    {
-        return $this->container['granularity'];
-    }
-
-    /**
-     * Sets granularity
-     *
-     * @param \TencentAds\Model\TimeGranularity $granularity granularity
-     *
-     * @return $this
-     */
-    public function setGranularity($granularity)
-    {
-        $this->container['granularity'] = $granularity;
-
-        return $this;
-    }
-
-    /**
-     * Gets date
-     *
-     * @return string
-     */
-    public function getDate()
-    {
-        return $this->container['date'];
-    }
-
-    /**
-     * Sets date
-     *
-     * @param string $date date
-     *
-     * @return $this
-     */
-    public function setDate($date)
-    {
-        $this->container['date'] = $date;
 
         return $this;
     }

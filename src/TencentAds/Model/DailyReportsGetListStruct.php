@@ -260,6 +260,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'specialPageExpCost' => 'int',
         'viewCommodityPageUv' => 'int',
         'effectLeadsPurchaseCount' => 'int',
+        'reservationUv' => 'int',
         'overallLeadsPurchaseCount' => 'int',
         'leadsPurchaseCount' => 'int',
         'leadsPurchaseRate' => 'double',
@@ -281,6 +282,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'firstDayOrderCount' => 'int',
         'firstDayOrderAmount' => 'int',
         'addWishlistCount' => 'int',
+        'videoOuterPlay10Count' => 'int',
+        'videoOuterPlay25Count' => 'int',
+        'videoOuterPlay50Count' => 'int',
+        'videoOuterPlay75Count' => 'int',
+        'videoOuterPlay95Count' => 'int',
+        'videoOuterPlay100Count' => 'int',
         'videoOuterPlayCount' => 'int',
         'campaignId' => 'int',
         'adgroupId' => 'int',
@@ -288,10 +295,19 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectType' => 'string',
         'promotedObjectId' => 'string',
         'unionPositionId' => 'int',
+        'industryParentName' => 'string',
+        'placementName' => 'string',
         'templateId' => 'int',
         'addToCartCost' => 'int',
         'webAddToCartRate' => 'double',
         'appAddToCartRate' => 'double',
+        'videoOuterPlayTimeCount' => 'double',
+        'videoOuterPlayTimeAvgRate' => 'double',
+        'videoOuterPlayRate' => 'double',
+        'videoOuterPlayCost' => 'int',
+        'videoOuterPlay3sCount' => 'int',
+        'videoOuterPlay5sCount' => 'int',
+        'videoOuterPlay7sCount' => 'int',
         'isExpandTargeting' => 'bool',
         'wechatAccountId' => 'string',
         'wechatAgencyId' => 'string',
@@ -362,16 +378,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'forwardUserCount' => 'int',
         'videoOuterPlayUserCount' => 'int',
         'videoInnerPlayUserCount' => 'int',
-        'videoOuterPlay10Count' => 'int',
-        'videoOuterPlay25Count' => 'int',
-        'videoOuterPlay50Count' => 'int',
-        'videoOuterPlay75Count' => 'int',
-        'videoOuterPlay95Count' => 'int',
-        'videoOuterPlay100Count' => 'int',
-        'videoOuterPlayTimeCount' => 'double',
-        'videoOuterPlayTimeAvgRate' => 'double',
-        'videoOuterPlayRate' => 'double',
-        'videoOuterPlayCost' => 'int'
+        'siteSet' => 'string',
+        'materialId' => 'int',
+        'signature' => 'string'
     ];
 
     /**
@@ -582,6 +591,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'specialPageExpCost' => 'int64',
         'viewCommodityPageUv' => 'int64',
         'effectLeadsPurchaseCount' => 'int64',
+        'reservationUv' => 'int64',
         'overallLeadsPurchaseCount' => 'int64',
         'leadsPurchaseCount' => 'int64',
         'leadsPurchaseRate' => 'double',
@@ -603,6 +613,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'firstDayOrderCount' => 'int64',
         'firstDayOrderAmount' => 'int64',
         'addWishlistCount' => 'int64',
+        'videoOuterPlay10Count' => 'int64',
+        'videoOuterPlay25Count' => 'int64',
+        'videoOuterPlay50Count' => 'int64',
+        'videoOuterPlay75Count' => 'int64',
+        'videoOuterPlay95Count' => 'int64',
+        'videoOuterPlay100Count' => 'int64',
         'videoOuterPlayCount' => 'int64',
         'campaignId' => 'int64',
         'adgroupId' => 'int64',
@@ -610,10 +626,19 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectType' => null,
         'promotedObjectId' => null,
         'unionPositionId' => 'int64',
+        'industryParentName' => null,
+        'placementName' => null,
         'templateId' => 'int64',
         'addToCartCost' => 'int64',
         'webAddToCartRate' => 'double',
         'appAddToCartRate' => 'double',
+        'videoOuterPlayTimeCount' => 'double',
+        'videoOuterPlayTimeAvgRate' => 'double',
+        'videoOuterPlayRate' => 'double',
+        'videoOuterPlayCost' => 'int64',
+        'videoOuterPlay3sCount' => 'int64',
+        'videoOuterPlay5sCount' => 'int64',
+        'videoOuterPlay7sCount' => 'int64',
         'isExpandTargeting' => null,
         'wechatAccountId' => null,
         'wechatAgencyId' => null,
@@ -684,16 +709,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'forwardUserCount' => 'int64',
         'videoOuterPlayUserCount' => 'int64',
         'videoInnerPlayUserCount' => 'int64',
-        'videoOuterPlay10Count' => 'int64',
-        'videoOuterPlay25Count' => 'int64',
-        'videoOuterPlay50Count' => 'int64',
-        'videoOuterPlay75Count' => 'int64',
-        'videoOuterPlay95Count' => 'int64',
-        'videoOuterPlay100Count' => 'int64',
-        'videoOuterPlayTimeCount' => 'double',
-        'videoOuterPlayTimeAvgRate' => 'double',
-        'videoOuterPlayRate' => 'double',
-        'videoOuterPlayCost' => 'int64'
+        'siteSet' => null,
+        'materialId' => 'int64',
+        'signature' => null
     ];
 
     /**
@@ -925,6 +943,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'specialPageExpCost' => 'special_page_exp_cost',
         'viewCommodityPageUv' => 'view_commodity_page_uv',
         'effectLeadsPurchaseCount' => 'effect_leads_purchase_count',
+        'reservationUv' => 'reservation_uv',
         'overallLeadsPurchaseCount' => 'overall_leads_purchase_count',
         'leadsPurchaseCount' => 'leads_purchase_count',
         'leadsPurchaseRate' => 'leads_purchase_rate',
@@ -946,6 +965,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'firstDayOrderCount' => 'first_day_order_count',
         'firstDayOrderAmount' => 'first_day_order_amount',
         'addWishlistCount' => 'add_wishlist_count',
+        'videoOuterPlay10Count' => 'video_outer_play10_count',
+        'videoOuterPlay25Count' => 'video_outer_play25_count',
+        'videoOuterPlay50Count' => 'video_outer_play50_count',
+        'videoOuterPlay75Count' => 'video_outer_play75_count',
+        'videoOuterPlay95Count' => 'video_outer_play95_count',
+        'videoOuterPlay100Count' => 'video_outer_play100_count',
         'videoOuterPlayCount' => 'video_outer_play_count',
         'campaignId' => 'campaign_id',
         'adgroupId' => 'adgroup_id',
@@ -953,10 +978,19 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectType' => 'promoted_object_type',
         'promotedObjectId' => 'promoted_object_id',
         'unionPositionId' => 'union_position_id',
+        'industryParentName' => 'industry_parent_name',
+        'placementName' => 'placement_name',
         'templateId' => 'template_id',
         'addToCartCost' => 'add_to_cart_cost',
         'webAddToCartRate' => 'web_add_to_cart_rate',
         'appAddToCartRate' => 'app_add_to_cart_rate',
+        'videoOuterPlayTimeCount' => 'video_outer_play_time_count',
+        'videoOuterPlayTimeAvgRate' => 'video_outer_play_time_avg_rate',
+        'videoOuterPlayRate' => 'video_outer_play_rate',
+        'videoOuterPlayCost' => 'video_outer_play_cost',
+        'videoOuterPlay3sCount' => 'video_outer_play3s_count',
+        'videoOuterPlay5sCount' => 'video_outer_play5s_count',
+        'videoOuterPlay7sCount' => 'video_outer_play7s_count',
         'isExpandTargeting' => 'is_expand_targeting',
         'wechatAccountId' => 'wechat_account_id',
         'wechatAgencyId' => 'wechat_agency_id',
@@ -1027,16 +1061,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'forwardUserCount' => 'forward_user_count',
         'videoOuterPlayUserCount' => 'video_outer_play_user_count',
         'videoInnerPlayUserCount' => 'video_inner_play_user_count',
-        'videoOuterPlay10Count' => 'video_outer_play10_count',
-        'videoOuterPlay25Count' => 'video_outer_play25_count',
-        'videoOuterPlay50Count' => 'video_outer_play50_count',
-        'videoOuterPlay75Count' => 'video_outer_play75_count',
-        'videoOuterPlay95Count' => 'video_outer_play95_count',
-        'videoOuterPlay100Count' => 'video_outer_play100_count',
-        'videoOuterPlayTimeCount' => 'video_outer_play_time_count',
-        'videoOuterPlayTimeAvgRate' => 'video_outer_play_time_avg_rate',
-        'videoOuterPlayRate' => 'video_outer_play_rate',
-        'videoOuterPlayCost' => 'video_outer_play_cost'
+        'siteSet' => 'site_set',
+        'materialId' => 'material_id',
+        'signature' => 'signature'
     ];
 
     /**
@@ -1247,6 +1274,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'specialPageExpCost' => 'setSpecialPageExpCost',
         'viewCommodityPageUv' => 'setViewCommodityPageUv',
         'effectLeadsPurchaseCount' => 'setEffectLeadsPurchaseCount',
+        'reservationUv' => 'setReservationUv',
         'overallLeadsPurchaseCount' => 'setOverallLeadsPurchaseCount',
         'leadsPurchaseCount' => 'setLeadsPurchaseCount',
         'leadsPurchaseRate' => 'setLeadsPurchaseRate',
@@ -1268,6 +1296,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'firstDayOrderCount' => 'setFirstDayOrderCount',
         'firstDayOrderAmount' => 'setFirstDayOrderAmount',
         'addWishlistCount' => 'setAddWishlistCount',
+        'videoOuterPlay10Count' => 'setVideoOuterPlay10Count',
+        'videoOuterPlay25Count' => 'setVideoOuterPlay25Count',
+        'videoOuterPlay50Count' => 'setVideoOuterPlay50Count',
+        'videoOuterPlay75Count' => 'setVideoOuterPlay75Count',
+        'videoOuterPlay95Count' => 'setVideoOuterPlay95Count',
+        'videoOuterPlay100Count' => 'setVideoOuterPlay100Count',
         'videoOuterPlayCount' => 'setVideoOuterPlayCount',
         'campaignId' => 'setCampaignId',
         'adgroupId' => 'setAdgroupId',
@@ -1275,10 +1309,19 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectType' => 'setPromotedObjectType',
         'promotedObjectId' => 'setPromotedObjectId',
         'unionPositionId' => 'setUnionPositionId',
+        'industryParentName' => 'setIndustryParentName',
+        'placementName' => 'setPlacementName',
         'templateId' => 'setTemplateId',
         'addToCartCost' => 'setAddToCartCost',
         'webAddToCartRate' => 'setWebAddToCartRate',
         'appAddToCartRate' => 'setAppAddToCartRate',
+        'videoOuterPlayTimeCount' => 'setVideoOuterPlayTimeCount',
+        'videoOuterPlayTimeAvgRate' => 'setVideoOuterPlayTimeAvgRate',
+        'videoOuterPlayRate' => 'setVideoOuterPlayRate',
+        'videoOuterPlayCost' => 'setVideoOuterPlayCost',
+        'videoOuterPlay3sCount' => 'setVideoOuterPlay3sCount',
+        'videoOuterPlay5sCount' => 'setVideoOuterPlay5sCount',
+        'videoOuterPlay7sCount' => 'setVideoOuterPlay7sCount',
         'isExpandTargeting' => 'setIsExpandTargeting',
         'wechatAccountId' => 'setWechatAccountId',
         'wechatAgencyId' => 'setWechatAgencyId',
@@ -1349,16 +1392,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'forwardUserCount' => 'setForwardUserCount',
         'videoOuterPlayUserCount' => 'setVideoOuterPlayUserCount',
         'videoInnerPlayUserCount' => 'setVideoInnerPlayUserCount',
-        'videoOuterPlay10Count' => 'setVideoOuterPlay10Count',
-        'videoOuterPlay25Count' => 'setVideoOuterPlay25Count',
-        'videoOuterPlay50Count' => 'setVideoOuterPlay50Count',
-        'videoOuterPlay75Count' => 'setVideoOuterPlay75Count',
-        'videoOuterPlay95Count' => 'setVideoOuterPlay95Count',
-        'videoOuterPlay100Count' => 'setVideoOuterPlay100Count',
-        'videoOuterPlayTimeCount' => 'setVideoOuterPlayTimeCount',
-        'videoOuterPlayTimeAvgRate' => 'setVideoOuterPlayTimeAvgRate',
-        'videoOuterPlayRate' => 'setVideoOuterPlayRate',
-        'videoOuterPlayCost' => 'setVideoOuterPlayCost'
+        'siteSet' => 'setSiteSet',
+        'materialId' => 'setMaterialId',
+        'signature' => 'setSignature'
     ];
 
     /**
@@ -1569,6 +1605,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'specialPageExpCost' => 'getSpecialPageExpCost',
         'viewCommodityPageUv' => 'getViewCommodityPageUv',
         'effectLeadsPurchaseCount' => 'getEffectLeadsPurchaseCount',
+        'reservationUv' => 'getReservationUv',
         'overallLeadsPurchaseCount' => 'getOverallLeadsPurchaseCount',
         'leadsPurchaseCount' => 'getLeadsPurchaseCount',
         'leadsPurchaseRate' => 'getLeadsPurchaseRate',
@@ -1590,6 +1627,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'firstDayOrderCount' => 'getFirstDayOrderCount',
         'firstDayOrderAmount' => 'getFirstDayOrderAmount',
         'addWishlistCount' => 'getAddWishlistCount',
+        'videoOuterPlay10Count' => 'getVideoOuterPlay10Count',
+        'videoOuterPlay25Count' => 'getVideoOuterPlay25Count',
+        'videoOuterPlay50Count' => 'getVideoOuterPlay50Count',
+        'videoOuterPlay75Count' => 'getVideoOuterPlay75Count',
+        'videoOuterPlay95Count' => 'getVideoOuterPlay95Count',
+        'videoOuterPlay100Count' => 'getVideoOuterPlay100Count',
         'videoOuterPlayCount' => 'getVideoOuterPlayCount',
         'campaignId' => 'getCampaignId',
         'adgroupId' => 'getAdgroupId',
@@ -1597,10 +1640,19 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectType' => 'getPromotedObjectType',
         'promotedObjectId' => 'getPromotedObjectId',
         'unionPositionId' => 'getUnionPositionId',
+        'industryParentName' => 'getIndustryParentName',
+        'placementName' => 'getPlacementName',
         'templateId' => 'getTemplateId',
         'addToCartCost' => 'getAddToCartCost',
         'webAddToCartRate' => 'getWebAddToCartRate',
         'appAddToCartRate' => 'getAppAddToCartRate',
+        'videoOuterPlayTimeCount' => 'getVideoOuterPlayTimeCount',
+        'videoOuterPlayTimeAvgRate' => 'getVideoOuterPlayTimeAvgRate',
+        'videoOuterPlayRate' => 'getVideoOuterPlayRate',
+        'videoOuterPlayCost' => 'getVideoOuterPlayCost',
+        'videoOuterPlay3sCount' => 'getVideoOuterPlay3sCount',
+        'videoOuterPlay5sCount' => 'getVideoOuterPlay5sCount',
+        'videoOuterPlay7sCount' => 'getVideoOuterPlay7sCount',
         'isExpandTargeting' => 'getIsExpandTargeting',
         'wechatAccountId' => 'getWechatAccountId',
         'wechatAgencyId' => 'getWechatAgencyId',
@@ -1671,16 +1723,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'forwardUserCount' => 'getForwardUserCount',
         'videoOuterPlayUserCount' => 'getVideoOuterPlayUserCount',
         'videoInnerPlayUserCount' => 'getVideoInnerPlayUserCount',
-        'videoOuterPlay10Count' => 'getVideoOuterPlay10Count',
-        'videoOuterPlay25Count' => 'getVideoOuterPlay25Count',
-        'videoOuterPlay50Count' => 'getVideoOuterPlay50Count',
-        'videoOuterPlay75Count' => 'getVideoOuterPlay75Count',
-        'videoOuterPlay95Count' => 'getVideoOuterPlay95Count',
-        'videoOuterPlay100Count' => 'getVideoOuterPlay100Count',
-        'videoOuterPlayTimeCount' => 'getVideoOuterPlayTimeCount',
-        'videoOuterPlayTimeAvgRate' => 'getVideoOuterPlayTimeAvgRate',
-        'videoOuterPlayRate' => 'getVideoOuterPlayRate',
-        'videoOuterPlayCost' => 'getVideoOuterPlayCost'
+        'siteSet' => 'getSiteSet',
+        'materialId' => 'getMaterialId',
+        'signature' => 'getSignature'
     ];
 
     /**
@@ -1945,6 +1990,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['specialPageExpCost'] = isset($data['specialPageExpCost']) ? $data['specialPageExpCost'] : null;
         $this->container['viewCommodityPageUv'] = isset($data['viewCommodityPageUv']) ? $data['viewCommodityPageUv'] : null;
         $this->container['effectLeadsPurchaseCount'] = isset($data['effectLeadsPurchaseCount']) ? $data['effectLeadsPurchaseCount'] : null;
+        $this->container['reservationUv'] = isset($data['reservationUv']) ? $data['reservationUv'] : null;
         $this->container['overallLeadsPurchaseCount'] = isset($data['overallLeadsPurchaseCount']) ? $data['overallLeadsPurchaseCount'] : null;
         $this->container['leadsPurchaseCount'] = isset($data['leadsPurchaseCount']) ? $data['leadsPurchaseCount'] : null;
         $this->container['leadsPurchaseRate'] = isset($data['leadsPurchaseRate']) ? $data['leadsPurchaseRate'] : null;
@@ -1966,6 +2012,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['firstDayOrderCount'] = isset($data['firstDayOrderCount']) ? $data['firstDayOrderCount'] : null;
         $this->container['firstDayOrderAmount'] = isset($data['firstDayOrderAmount']) ? $data['firstDayOrderAmount'] : null;
         $this->container['addWishlistCount'] = isset($data['addWishlistCount']) ? $data['addWishlistCount'] : null;
+        $this->container['videoOuterPlay10Count'] = isset($data['videoOuterPlay10Count']) ? $data['videoOuterPlay10Count'] : null;
+        $this->container['videoOuterPlay25Count'] = isset($data['videoOuterPlay25Count']) ? $data['videoOuterPlay25Count'] : null;
+        $this->container['videoOuterPlay50Count'] = isset($data['videoOuterPlay50Count']) ? $data['videoOuterPlay50Count'] : null;
+        $this->container['videoOuterPlay75Count'] = isset($data['videoOuterPlay75Count']) ? $data['videoOuterPlay75Count'] : null;
+        $this->container['videoOuterPlay95Count'] = isset($data['videoOuterPlay95Count']) ? $data['videoOuterPlay95Count'] : null;
+        $this->container['videoOuterPlay100Count'] = isset($data['videoOuterPlay100Count']) ? $data['videoOuterPlay100Count'] : null;
         $this->container['videoOuterPlayCount'] = isset($data['videoOuterPlayCount']) ? $data['videoOuterPlayCount'] : null;
         $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
@@ -1973,10 +2025,19 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
         $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
         $this->container['unionPositionId'] = isset($data['unionPositionId']) ? $data['unionPositionId'] : null;
+        $this->container['industryParentName'] = isset($data['industryParentName']) ? $data['industryParentName'] : null;
+        $this->container['placementName'] = isset($data['placementName']) ? $data['placementName'] : null;
         $this->container['templateId'] = isset($data['templateId']) ? $data['templateId'] : null;
         $this->container['addToCartCost'] = isset($data['addToCartCost']) ? $data['addToCartCost'] : null;
         $this->container['webAddToCartRate'] = isset($data['webAddToCartRate']) ? $data['webAddToCartRate'] : null;
         $this->container['appAddToCartRate'] = isset($data['appAddToCartRate']) ? $data['appAddToCartRate'] : null;
+        $this->container['videoOuterPlayTimeCount'] = isset($data['videoOuterPlayTimeCount']) ? $data['videoOuterPlayTimeCount'] : null;
+        $this->container['videoOuterPlayTimeAvgRate'] = isset($data['videoOuterPlayTimeAvgRate']) ? $data['videoOuterPlayTimeAvgRate'] : null;
+        $this->container['videoOuterPlayRate'] = isset($data['videoOuterPlayRate']) ? $data['videoOuterPlayRate'] : null;
+        $this->container['videoOuterPlayCost'] = isset($data['videoOuterPlayCost']) ? $data['videoOuterPlayCost'] : null;
+        $this->container['videoOuterPlay3sCount'] = isset($data['videoOuterPlay3sCount']) ? $data['videoOuterPlay3sCount'] : null;
+        $this->container['videoOuterPlay5sCount'] = isset($data['videoOuterPlay5sCount']) ? $data['videoOuterPlay5sCount'] : null;
+        $this->container['videoOuterPlay7sCount'] = isset($data['videoOuterPlay7sCount']) ? $data['videoOuterPlay7sCount'] : null;
         $this->container['isExpandTargeting'] = isset($data['isExpandTargeting']) ? $data['isExpandTargeting'] : null;
         $this->container['wechatAccountId'] = isset($data['wechatAccountId']) ? $data['wechatAccountId'] : null;
         $this->container['wechatAgencyId'] = isset($data['wechatAgencyId']) ? $data['wechatAgencyId'] : null;
@@ -2047,16 +2108,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['forwardUserCount'] = isset($data['forwardUserCount']) ? $data['forwardUserCount'] : null;
         $this->container['videoOuterPlayUserCount'] = isset($data['videoOuterPlayUserCount']) ? $data['videoOuterPlayUserCount'] : null;
         $this->container['videoInnerPlayUserCount'] = isset($data['videoInnerPlayUserCount']) ? $data['videoInnerPlayUserCount'] : null;
-        $this->container['videoOuterPlay10Count'] = isset($data['videoOuterPlay10Count']) ? $data['videoOuterPlay10Count'] : null;
-        $this->container['videoOuterPlay25Count'] = isset($data['videoOuterPlay25Count']) ? $data['videoOuterPlay25Count'] : null;
-        $this->container['videoOuterPlay50Count'] = isset($data['videoOuterPlay50Count']) ? $data['videoOuterPlay50Count'] : null;
-        $this->container['videoOuterPlay75Count'] = isset($data['videoOuterPlay75Count']) ? $data['videoOuterPlay75Count'] : null;
-        $this->container['videoOuterPlay95Count'] = isset($data['videoOuterPlay95Count']) ? $data['videoOuterPlay95Count'] : null;
-        $this->container['videoOuterPlay100Count'] = isset($data['videoOuterPlay100Count']) ? $data['videoOuterPlay100Count'] : null;
-        $this->container['videoOuterPlayTimeCount'] = isset($data['videoOuterPlayTimeCount']) ? $data['videoOuterPlayTimeCount'] : null;
-        $this->container['videoOuterPlayTimeAvgRate'] = isset($data['videoOuterPlayTimeAvgRate']) ? $data['videoOuterPlayTimeAvgRate'] : null;
-        $this->container['videoOuterPlayRate'] = isset($data['videoOuterPlayRate']) ? $data['videoOuterPlayRate'] : null;
-        $this->container['videoOuterPlayCost'] = isset($data['videoOuterPlayCost']) ? $data['videoOuterPlayCost'] : null;
+        $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
+        $this->container['materialId'] = isset($data['materialId']) ? $data['materialId'] : null;
+        $this->container['signature'] = isset($data['signature']) ? $data['signature'] : null;
     }
 
     /**
@@ -6932,6 +6986,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets reservationUv
+     *
+     * @return int
+     */
+    public function getReservationUv()
+    {
+        return $this->container['reservationUv'];
+    }
+
+    /**
+     * Sets reservationUv
+     *
+     * @param int $reservationUv reservationUv
+     *
+     * @return $this
+     */
+    public function setReservationUv($reservationUv)
+    {
+        $this->container['reservationUv'] = $reservationUv;
+
+        return $this;
+    }
+
+    /**
      * Gets overallLeadsPurchaseCount
      *
      * @return int
@@ -7436,6 +7514,150 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets videoOuterPlay10Count
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay10Count()
+    {
+        return $this->container['videoOuterPlay10Count'];
+    }
+
+    /**
+     * Sets videoOuterPlay10Count
+     *
+     * @param int $videoOuterPlay10Count videoOuterPlay10Count
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay10Count($videoOuterPlay10Count)
+    {
+        $this->container['videoOuterPlay10Count'] = $videoOuterPlay10Count;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay25Count
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay25Count()
+    {
+        return $this->container['videoOuterPlay25Count'];
+    }
+
+    /**
+     * Sets videoOuterPlay25Count
+     *
+     * @param int $videoOuterPlay25Count videoOuterPlay25Count
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay25Count($videoOuterPlay25Count)
+    {
+        $this->container['videoOuterPlay25Count'] = $videoOuterPlay25Count;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay50Count
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay50Count()
+    {
+        return $this->container['videoOuterPlay50Count'];
+    }
+
+    /**
+     * Sets videoOuterPlay50Count
+     *
+     * @param int $videoOuterPlay50Count videoOuterPlay50Count
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay50Count($videoOuterPlay50Count)
+    {
+        $this->container['videoOuterPlay50Count'] = $videoOuterPlay50Count;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay75Count
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay75Count()
+    {
+        return $this->container['videoOuterPlay75Count'];
+    }
+
+    /**
+     * Sets videoOuterPlay75Count
+     *
+     * @param int $videoOuterPlay75Count videoOuterPlay75Count
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay75Count($videoOuterPlay75Count)
+    {
+        $this->container['videoOuterPlay75Count'] = $videoOuterPlay75Count;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay95Count
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay95Count()
+    {
+        return $this->container['videoOuterPlay95Count'];
+    }
+
+    /**
+     * Sets videoOuterPlay95Count
+     *
+     * @param int $videoOuterPlay95Count videoOuterPlay95Count
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay95Count($videoOuterPlay95Count)
+    {
+        $this->container['videoOuterPlay95Count'] = $videoOuterPlay95Count;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay100Count
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay100Count()
+    {
+        return $this->container['videoOuterPlay100Count'];
+    }
+
+    /**
+     * Sets videoOuterPlay100Count
+     *
+     * @param int $videoOuterPlay100Count videoOuterPlay100Count
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay100Count($videoOuterPlay100Count)
+    {
+        $this->container['videoOuterPlay100Count'] = $videoOuterPlay100Count;
+
+        return $this;
+    }
+
+    /**
      * Gets videoOuterPlayCount
      *
      * @return int
@@ -7604,6 +7826,54 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets industryParentName
+     *
+     * @return string
+     */
+    public function getIndustryParentName()
+    {
+        return $this->container['industryParentName'];
+    }
+
+    /**
+     * Sets industryParentName
+     *
+     * @param string $industryParentName industryParentName
+     *
+     * @return $this
+     */
+    public function setIndustryParentName($industryParentName)
+    {
+        $this->container['industryParentName'] = $industryParentName;
+
+        return $this;
+    }
+
+    /**
+     * Gets placementName
+     *
+     * @return string
+     */
+    public function getPlacementName()
+    {
+        return $this->container['placementName'];
+    }
+
+    /**
+     * Sets placementName
+     *
+     * @param string $placementName placementName
+     *
+     * @return $this
+     */
+    public function setPlacementName($placementName)
+    {
+        $this->container['placementName'] = $placementName;
+
+        return $this;
+    }
+
+    /**
      * Gets templateId
      *
      * @return int
@@ -7695,6 +7965,174 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setAppAddToCartRate($appAddToCartRate)
     {
         $this->container['appAddToCartRate'] = $appAddToCartRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlayTimeCount
+     *
+     * @return double
+     */
+    public function getVideoOuterPlayTimeCount()
+    {
+        return $this->container['videoOuterPlayTimeCount'];
+    }
+
+    /**
+     * Sets videoOuterPlayTimeCount
+     *
+     * @param double $videoOuterPlayTimeCount videoOuterPlayTimeCount
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlayTimeCount($videoOuterPlayTimeCount)
+    {
+        $this->container['videoOuterPlayTimeCount'] = $videoOuterPlayTimeCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlayTimeAvgRate
+     *
+     * @return double
+     */
+    public function getVideoOuterPlayTimeAvgRate()
+    {
+        return $this->container['videoOuterPlayTimeAvgRate'];
+    }
+
+    /**
+     * Sets videoOuterPlayTimeAvgRate
+     *
+     * @param double $videoOuterPlayTimeAvgRate videoOuterPlayTimeAvgRate
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlayTimeAvgRate($videoOuterPlayTimeAvgRate)
+    {
+        $this->container['videoOuterPlayTimeAvgRate'] = $videoOuterPlayTimeAvgRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlayRate
+     *
+     * @return double
+     */
+    public function getVideoOuterPlayRate()
+    {
+        return $this->container['videoOuterPlayRate'];
+    }
+
+    /**
+     * Sets videoOuterPlayRate
+     *
+     * @param double $videoOuterPlayRate videoOuterPlayRate
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlayRate($videoOuterPlayRate)
+    {
+        $this->container['videoOuterPlayRate'] = $videoOuterPlayRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlayCost
+     *
+     * @return int
+     */
+    public function getVideoOuterPlayCost()
+    {
+        return $this->container['videoOuterPlayCost'];
+    }
+
+    /**
+     * Sets videoOuterPlayCost
+     *
+     * @param int $videoOuterPlayCost videoOuterPlayCost
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlayCost($videoOuterPlayCost)
+    {
+        $this->container['videoOuterPlayCost'] = $videoOuterPlayCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay3sCount
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay3sCount()
+    {
+        return $this->container['videoOuterPlay3sCount'];
+    }
+
+    /**
+     * Sets videoOuterPlay3sCount
+     *
+     * @param int $videoOuterPlay3sCount videoOuterPlay3sCount
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay3sCount($videoOuterPlay3sCount)
+    {
+        $this->container['videoOuterPlay3sCount'] = $videoOuterPlay3sCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay5sCount
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay5sCount()
+    {
+        return $this->container['videoOuterPlay5sCount'];
+    }
+
+    /**
+     * Sets videoOuterPlay5sCount
+     *
+     * @param int $videoOuterPlay5sCount videoOuterPlay5sCount
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay5sCount($videoOuterPlay5sCount)
+    {
+        $this->container['videoOuterPlay5sCount'] = $videoOuterPlay5sCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay7sCount
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay7sCount()
+    {
+        return $this->container['videoOuterPlay7sCount'];
+    }
+
+    /**
+     * Sets videoOuterPlay7sCount
+     *
+     * @param int $videoOuterPlay7sCount videoOuterPlay7sCount
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay7sCount($videoOuterPlay7sCount)
+    {
+        $this->container['videoOuterPlay7sCount'] = $videoOuterPlay7sCount;
 
         return $this;
     }
@@ -9380,241 +9818,73 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets videoOuterPlay10Count
+     * Gets siteSet
+     *
+     * @return string
+     */
+    public function getSiteSet()
+    {
+        return $this->container['siteSet'];
+    }
+
+    /**
+     * Sets siteSet
+     *
+     * @param string $siteSet siteSet
+     *
+     * @return $this
+     */
+    public function setSiteSet($siteSet)
+    {
+        $this->container['siteSet'] = $siteSet;
+
+        return $this;
+    }
+
+    /**
+     * Gets materialId
      *
      * @return int
      */
-    public function getVideoOuterPlay10Count()
+    public function getMaterialId()
     {
-        return $this->container['videoOuterPlay10Count'];
+        return $this->container['materialId'];
     }
 
     /**
-     * Sets videoOuterPlay10Count
+     * Sets materialId
      *
-     * @param int $videoOuterPlay10Count videoOuterPlay10Count
+     * @param int $materialId materialId
      *
      * @return $this
      */
-    public function setVideoOuterPlay10Count($videoOuterPlay10Count)
+    public function setMaterialId($materialId)
     {
-        $this->container['videoOuterPlay10Count'] = $videoOuterPlay10Count;
+        $this->container['materialId'] = $materialId;
 
         return $this;
     }
 
     /**
-     * Gets videoOuterPlay25Count
+     * Gets signature
      *
-     * @return int
+     * @return string
      */
-    public function getVideoOuterPlay25Count()
+    public function getSignature()
     {
-        return $this->container['videoOuterPlay25Count'];
+        return $this->container['signature'];
     }
 
     /**
-     * Sets videoOuterPlay25Count
+     * Sets signature
      *
-     * @param int $videoOuterPlay25Count videoOuterPlay25Count
+     * @param string $signature signature
      *
      * @return $this
      */
-    public function setVideoOuterPlay25Count($videoOuterPlay25Count)
+    public function setSignature($signature)
     {
-        $this->container['videoOuterPlay25Count'] = $videoOuterPlay25Count;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlay50Count
-     *
-     * @return int
-     */
-    public function getVideoOuterPlay50Count()
-    {
-        return $this->container['videoOuterPlay50Count'];
-    }
-
-    /**
-     * Sets videoOuterPlay50Count
-     *
-     * @param int $videoOuterPlay50Count videoOuterPlay50Count
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlay50Count($videoOuterPlay50Count)
-    {
-        $this->container['videoOuterPlay50Count'] = $videoOuterPlay50Count;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlay75Count
-     *
-     * @return int
-     */
-    public function getVideoOuterPlay75Count()
-    {
-        return $this->container['videoOuterPlay75Count'];
-    }
-
-    /**
-     * Sets videoOuterPlay75Count
-     *
-     * @param int $videoOuterPlay75Count videoOuterPlay75Count
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlay75Count($videoOuterPlay75Count)
-    {
-        $this->container['videoOuterPlay75Count'] = $videoOuterPlay75Count;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlay95Count
-     *
-     * @return int
-     */
-    public function getVideoOuterPlay95Count()
-    {
-        return $this->container['videoOuterPlay95Count'];
-    }
-
-    /**
-     * Sets videoOuterPlay95Count
-     *
-     * @param int $videoOuterPlay95Count videoOuterPlay95Count
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlay95Count($videoOuterPlay95Count)
-    {
-        $this->container['videoOuterPlay95Count'] = $videoOuterPlay95Count;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlay100Count
-     *
-     * @return int
-     */
-    public function getVideoOuterPlay100Count()
-    {
-        return $this->container['videoOuterPlay100Count'];
-    }
-
-    /**
-     * Sets videoOuterPlay100Count
-     *
-     * @param int $videoOuterPlay100Count videoOuterPlay100Count
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlay100Count($videoOuterPlay100Count)
-    {
-        $this->container['videoOuterPlay100Count'] = $videoOuterPlay100Count;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlayTimeCount
-     *
-     * @return double
-     */
-    public function getVideoOuterPlayTimeCount()
-    {
-        return $this->container['videoOuterPlayTimeCount'];
-    }
-
-    /**
-     * Sets videoOuterPlayTimeCount
-     *
-     * @param double $videoOuterPlayTimeCount videoOuterPlayTimeCount
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlayTimeCount($videoOuterPlayTimeCount)
-    {
-        $this->container['videoOuterPlayTimeCount'] = $videoOuterPlayTimeCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlayTimeAvgRate
-     *
-     * @return double
-     */
-    public function getVideoOuterPlayTimeAvgRate()
-    {
-        return $this->container['videoOuterPlayTimeAvgRate'];
-    }
-
-    /**
-     * Sets videoOuterPlayTimeAvgRate
-     *
-     * @param double $videoOuterPlayTimeAvgRate videoOuterPlayTimeAvgRate
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlayTimeAvgRate($videoOuterPlayTimeAvgRate)
-    {
-        $this->container['videoOuterPlayTimeAvgRate'] = $videoOuterPlayTimeAvgRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlayRate
-     *
-     * @return double
-     */
-    public function getVideoOuterPlayRate()
-    {
-        return $this->container['videoOuterPlayRate'];
-    }
-
-    /**
-     * Sets videoOuterPlayRate
-     *
-     * @param double $videoOuterPlayRate videoOuterPlayRate
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlayRate($videoOuterPlayRate)
-    {
-        $this->container['videoOuterPlayRate'] = $videoOuterPlayRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlayCost
-     *
-     * @return int
-     */
-    public function getVideoOuterPlayCost()
-    {
-        return $this->container['videoOuterPlayCost'];
-    }
-
-    /**
-     * Sets videoOuterPlayCost
-     *
-     * @param int $videoOuterPlayCost videoOuterPlayCost
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlayCost($videoOuterPlayCost)
-    {
-        $this->container['videoOuterPlayCost'] = $videoOuterPlayCost;
+        $this->container['signature'] = $signature;
 
         return $this;
     }

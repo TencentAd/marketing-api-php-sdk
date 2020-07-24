@@ -1,6 +1,6 @@
 <?php
 /**
- * AsyncReportsAddRequest
+ * ProductCategoriesListGetResponse
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AsyncReportsAddRequest Class Doc Comment
+ * ProductCategoriesListGetResponse Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
+class ProductCategoriesListGetResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'AsyncReportsAddRequest';
+    protected static $swaggerModelName = 'ProductCategoriesListGetResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,14 +57,11 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'taskName' => 'string',
-        'reportFields' => 'string[]',
-        'level' => '\TencentAds\Model\AsyncReportLevel',
-        'timeLine' => '\TencentAds\Model\TimeLine',
-        'groupBy' => 'string[]',
-        'granularity' => '\TencentAds\Model\TimeGranularity',
-        'date' => 'string'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\ProductCategoriesListGetResponseData'
     ];
 
     /**
@@ -73,14 +70,11 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'taskName' => null,
-        'reportFields' => null,
-        'level' => null,
-        'timeLine' => null,
-        'groupBy' => null,
-        'granularity' => null,
-        'date' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -110,14 +104,11 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'taskName' => 'task_name',
-        'reportFields' => 'report_fields',
-        'level' => 'level',
-        'timeLine' => 'time_line',
-        'groupBy' => 'group_by',
-        'granularity' => 'granularity',
-        'date' => 'date'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -126,14 +117,11 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'taskName' => 'setTaskName',
-        'reportFields' => 'setReportFields',
-        'level' => 'setLevel',
-        'timeLine' => 'setTimeLine',
-        'groupBy' => 'setGroupBy',
-        'granularity' => 'setGranularity',
-        'date' => 'setDate'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -142,14 +130,11 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'taskName' => 'getTaskName',
-        'reportFields' => 'getReportFields',
-        'level' => 'getLevel',
-        'timeLine' => 'getTimeLine',
-        'groupBy' => 'getGroupBy',
-        'granularity' => 'getGranularity',
-        'date' => 'getDate'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -212,14 +197,11 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['taskName'] = isset($data['taskName']) ? $data['taskName'] : null;
-        $this->container['reportFields'] = isset($data['reportFields']) ? $data['reportFields'] : null;
-        $this->container['level'] = isset($data['level']) ? $data['level'] : null;
-        $this->container['timeLine'] = isset($data['timeLine']) ? $data['timeLine'] : null;
-        $this->container['groupBy'] = isset($data['groupBy']) ? $data['groupBy'] : null;
-        $this->container['granularity'] = isset($data['granularity']) ? $data['granularity'] : null;
-        $this->container['date'] = isset($data['date']) ? $data['date'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -247,193 +229,121 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets accountId
+     * Gets code
      *
      * @return int
      */
-    public function getAccountId()
+    public function getCode()
     {
-        return $this->container['accountId'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets accountId
+     * Sets code
      *
-     * @param int $accountId accountId
+     * @param int $code code
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setCode($code)
     {
-        $this->container['accountId'] = $accountId;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets taskName
+     * Gets message
      *
      * @return string
      */
-    public function getTaskName()
+    public function getMessage()
     {
-        return $this->container['taskName'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets taskName
+     * Sets message
      *
-     * @param string $taskName taskName
+     * @param string $message message
      *
      * @return $this
      */
-    public function setTaskName($taskName)
+    public function setMessage($message)
     {
-        $this->container['taskName'] = $taskName;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets reportFields
-     *
-     * @return string[]
-     */
-    public function getReportFields()
-    {
-        return $this->container['reportFields'];
-    }
-
-    /**
-     * Sets reportFields
-     *
-     * @param string[] $reportFields reportFields
-     *
-     * @return $this
-     */
-    public function setReportFields($reportFields)
-    {
-        $this->container['reportFields'] = $reportFields;
-
-        return $this;
-    }
-
-    /**
-     * Gets level
-     *
-     * @return \TencentAds\Model\AsyncReportLevel
-     */
-    public function getLevel()
-    {
-        return $this->container['level'];
-    }
-
-    /**
-     * Sets level
-     *
-     * @param \TencentAds\Model\AsyncReportLevel $level level
-     *
-     * @return $this
-     */
-    public function setLevel($level)
-    {
-        $this->container['level'] = $level;
-
-        return $this;
-    }
-
-    /**
-     * Gets timeLine
-     *
-     * @return \TencentAds\Model\TimeLine
-     */
-    public function getTimeLine()
-    {
-        return $this->container['timeLine'];
-    }
-
-    /**
-     * Sets timeLine
-     *
-     * @param \TencentAds\Model\TimeLine $timeLine timeLine
-     *
-     * @return $this
-     */
-    public function setTimeLine($timeLine)
-    {
-        $this->container['timeLine'] = $timeLine;
-
-        return $this;
-    }
-
-    /**
-     * Gets groupBy
-     *
-     * @return string[]
-     */
-    public function getGroupBy()
-    {
-        return $this->container['groupBy'];
-    }
-
-    /**
-     * Sets groupBy
-     *
-     * @param string[] $groupBy groupBy
-     *
-     * @return $this
-     */
-    public function setGroupBy($groupBy)
-    {
-        $this->container['groupBy'] = $groupBy;
-
-        return $this;
-    }
-
-    /**
-     * Gets granularity
-     *
-     * @return \TencentAds\Model\TimeGranularity
-     */
-    public function getGranularity()
-    {
-        return $this->container['granularity'];
-    }
-
-    /**
-     * Sets granularity
-     *
-     * @param \TencentAds\Model\TimeGranularity $granularity granularity
-     *
-     * @return $this
-     */
-    public function setGranularity($granularity)
-    {
-        $this->container['granularity'] = $granularity;
-
-        return $this;
-    }
-
-    /**
-     * Gets date
+     * Gets messageCn
      *
      * @return string
      */
-    public function getDate()
+    public function getMessageCn()
     {
-        return $this->container['date'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets date
+     * Sets messageCn
      *
-     * @param string $date date
+     * @param string $messageCn messageCn
      *
      * @return $this
      */
-    public function setDate($date)
+    public function setMessageCn($messageCn)
     {
-        $this->container['date'] = $date;
+        $this->container['messageCn'] = $messageCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets errors
+     *
+     * @return \TencentAds\Model\ApiErrorStruct[]
+     */
+    public function getErrors()
+    {
+        return $this->container['errors'];
+    }
+
+    /**
+     * Sets errors
+     *
+     * @param \TencentAds\Model\ApiErrorStruct[] $errors errors
+     *
+     * @return $this
+     */
+    public function setErrors($errors)
+    {
+        $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\ProductCategoriesListGetResponseData
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\ProductCategoriesListGetResponseData $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }

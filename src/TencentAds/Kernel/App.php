@@ -65,6 +65,7 @@ use TencentAds\Container\PagesApiContainer;
 use TencentAds\Container\PlayablePagesApiContainer;
 use TencentAds\Container\ProductCatalogsApiContainer;
 use TencentAds\Container\ProductCatalogsReportsApiContainer;
+use TencentAds\Container\ProductCategoriesListApiContainer;
 use TencentAds\Container\ProductItemsApiContainer;
 use TencentAds\Container\ProductItemsDetailApiContainer;
 use TencentAds\Container\ProductsSystemStatusApiContainer;
@@ -293,6 +294,9 @@ class App
 
     /** @var ProductCatalogsReportsApiContainer */
     public $productCatalogsReportsApiContainer;
+
+    /** @var ProductCategoriesListApiContainer */
+    public $productCategoriesListApiContainer;
 
     /** @var ProductItemsApiContainer */
     public $productItemsApiContainer;
@@ -1288,6 +1292,20 @@ class App
             $this->productCatalogsReportsApiContainer = $container;
         }
         return $this->productCatalogsReportsApiContainer;
+    }
+
+
+    /**
+     * @return ProductCategoriesListApiContainer
+     */
+    public function productCategoriesList()
+    {
+        if (empty($this->productCategoriesListApiContainer)) {
+            $container = new ProductCategoriesListApiContainer();
+            $container->init($this, $this->getClient());
+            $this->productCategoriesListApiContainer = $container;
+        }
+        return $this->productCategoriesListApiContainer;
     }
 
 

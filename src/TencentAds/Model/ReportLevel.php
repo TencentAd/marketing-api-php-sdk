@@ -1,6 +1,6 @@
 <?php
 /**
- * AsyncReportLevel
+ * ReportLevel
  *
  * PHP version 5
  *
@@ -31,29 +31,34 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AsyncReportLevel Class Doc Comment
+ * ReportLevel Class Doc Comment
  *
  * @category Class
- * @description 异步报表类型级别
+ * @description 获取报表类型级别
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AsyncReportLevel
+class ReportLevel
 {
     /**
      * Possible values of this enum
      */
-    const ADGROUP_WECHAT = 'REPORT_LEVEL_ADGROUP_WECHAT';
-    const AD_WECHAT = 'REPORT_LEVEL_AD_WECHAT';
-    const POI_WECHAT = 'REPORT_LEVEL_POI_WECHAT';
-    const AD = 'REPORT_LEVEL_AD';
     const ADVERTISER = 'REPORT_LEVEL_ADVERTISER';
     const CAMPAIGN = 'REPORT_LEVEL_CAMPAIGN';
     const ADGROUP = 'REPORT_LEVEL_ADGROUP';
+    const AD = 'REPORT_LEVEL_AD';
+    const PROMOTED_OBJECT = 'REPORT_LEVEL_PROMOTED_OBJECT';
+    const UNION_POSITION = 'REPORT_LEVEL_UNION_POSITION';
+    const CREATIVE_TEMPLATE = 'REPORT_LEVEL_CREATIVE_TEMPLATE';
+    const DEEPLINK_ADGROUP = 'REPORT_LEVEL_DEEPLINK_ADGROUP';
+    const EXPAND_TARGETING_ADGROUP = 'REPORT_LEVEL_EXPAND_TARGETING_ADGROUP';
     const MATERIAL_VIDEO = 'REPORT_LEVEL_MATERIAL_VIDEO';
     const MATERIAL_IMAGE = 'REPORT_LEVEL_MATERIAL_IMAGE';
-    const PROMOTED_OBJECT = 'REPORT_LEVEL_PROMOTED_OBJECT';
+    const ADVERTISER_WECHAT = 'REPORT_LEVEL_ADVERTISER_WECHAT';
+    const CAMPAIGN_WECHAT = 'REPORT_LEVEL_CAMPAIGN_WECHAT';
+    const ADGROUP_WECHAT = 'REPORT_LEVEL_ADGROUP_WECHAT';
+    const AD_WECHAT = 'REPORT_LEVEL_AD_WECHAT';
     
     /**
      * Gets allowable values of the enum
@@ -62,16 +67,21 @@ class AsyncReportLevel
     public static function getAllowableEnumValues()
     {
         return [
-            self::ADGROUP_WECHAT,
-            self::AD_WECHAT,
-            self::POI_WECHAT,
-            self::AD,
             self::ADVERTISER,
             self::CAMPAIGN,
             self::ADGROUP,
+            self::AD,
+            self::PROMOTED_OBJECT,
+            self::UNION_POSITION,
+            self::CREATIVE_TEMPLATE,
+            self::DEEPLINK_ADGROUP,
+            self::EXPAND_TARGETING_ADGROUP,
             self::MATERIAL_VIDEO,
             self::MATERIAL_IMAGE,
-            self::PROMOTED_OBJECT,
+            self::ADVERTISER_WECHAT,
+            self::CAMPAIGN_WECHAT,
+            self::ADGROUP_WECHAT,
+            self::AD_WECHAT,
         ];
     }
 }

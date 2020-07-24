@@ -68,7 +68,7 @@ class WechatAdvertiserDetailGetListStruct implements ModelInterface, ArrayAccess
         'agencyIdList' => 'int[]',
         'staffWechatIdList' => 'string[]',
         'dailyBudget' => 'int',
-        'fundType' => '\TencentAds\Model\AccountTypeMap'
+        'fundType' => '\TencentAds\Model\WechatAdvertiserAccountType'
     ];
 
     /**
@@ -508,7 +508,7 @@ class WechatAdvertiserDetailGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets fundType
      *
-     * @return \TencentAds\Model\AccountTypeMap
+     * @return \TencentAds\Model\WechatAdvertiserAccountType
      */
     public function getFundType()
     {
@@ -518,7 +518,7 @@ class WechatAdvertiserDetailGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets fundType
      *
-     * @param \TencentAds\Model\AccountTypeMap $fundType fundType
+     * @param \TencentAds\Model\WechatAdvertiserAccountType $fundType fundType
      *
      * @return $this
      */

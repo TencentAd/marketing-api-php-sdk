@@ -282,6 +282,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'specialPageExpCost' => 'int',
         'viewCommodityPageUv' => 'int',
         'effectLeadsPurchaseCount' => 'int',
+        'reservationUv' => 'int',
         'overallLeadsPurchaseCount' => 'int',
         'leadsPurchaseCount' => 'int',
         'leadsPurchaseRate' => 'double',
@@ -534,6 +535,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'specialPageExpCost' => 'int64',
         'viewCommodityPageUv' => 'int64',
         'effectLeadsPurchaseCount' => 'int64',
+        'reservationUv' => 'int64',
         'overallLeadsPurchaseCount' => 'int64',
         'leadsPurchaseCount' => 'int64',
         'leadsPurchaseRate' => 'double',
@@ -807,6 +809,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'specialPageExpCost' => 'special_page_exp_cost',
         'viewCommodityPageUv' => 'view_commodity_page_uv',
         'effectLeadsPurchaseCount' => 'effect_leads_purchase_count',
+        'reservationUv' => 'reservation_uv',
         'overallLeadsPurchaseCount' => 'overall_leads_purchase_count',
         'leadsPurchaseCount' => 'leads_purchase_count',
         'leadsPurchaseRate' => 'leads_purchase_rate',
@@ -1059,6 +1062,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'specialPageExpCost' => 'setSpecialPageExpCost',
         'viewCommodityPageUv' => 'setViewCommodityPageUv',
         'effectLeadsPurchaseCount' => 'setEffectLeadsPurchaseCount',
+        'reservationUv' => 'setReservationUv',
         'overallLeadsPurchaseCount' => 'setOverallLeadsPurchaseCount',
         'leadsPurchaseCount' => 'setLeadsPurchaseCount',
         'leadsPurchaseRate' => 'setLeadsPurchaseRate',
@@ -1311,6 +1315,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'specialPageExpCost' => 'getSpecialPageExpCost',
         'viewCommodityPageUv' => 'getViewCommodityPageUv',
         'effectLeadsPurchaseCount' => 'getEffectLeadsPurchaseCount',
+        'reservationUv' => 'getReservationUv',
         'overallLeadsPurchaseCount' => 'getOverallLeadsPurchaseCount',
         'leadsPurchaseCount' => 'getLeadsPurchaseCount',
         'leadsPurchaseRate' => 'getLeadsPurchaseRate',
@@ -1617,6 +1622,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['specialPageExpCost'] = isset($data['specialPageExpCost']) ? $data['specialPageExpCost'] : null;
         $this->container['viewCommodityPageUv'] = isset($data['viewCommodityPageUv']) ? $data['viewCommodityPageUv'] : null;
         $this->container['effectLeadsPurchaseCount'] = isset($data['effectLeadsPurchaseCount']) ? $data['effectLeadsPurchaseCount'] : null;
+        $this->container['reservationUv'] = isset($data['reservationUv']) ? $data['reservationUv'] : null;
         $this->container['overallLeadsPurchaseCount'] = isset($data['overallLeadsPurchaseCount']) ? $data['overallLeadsPurchaseCount'] : null;
         $this->container['leadsPurchaseCount'] = isset($data['leadsPurchaseCount']) ? $data['leadsPurchaseCount'] : null;
         $this->container['leadsPurchaseRate'] = isset($data['leadsPurchaseRate']) ? $data['leadsPurchaseRate'] : null;
@@ -7035,6 +7041,30 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setEffectLeadsPurchaseCount($effectLeadsPurchaseCount)
     {
         $this->container['effectLeadsPurchaseCount'] = $effectLeadsPurchaseCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets reservationUv
+     *
+     * @return int
+     */
+    public function getReservationUv()
+    {
+        return $this->container['reservationUv'];
+    }
+
+    /**
+     * Sets reservationUv
+     *
+     * @param int $reservationUv reservationUv
+     *
+     * @return $this
+     */
+    public function setReservationUv($reservationUv)
+    {
+        $this->container['reservationUv'] = $reservationUv;
 
         return $this;
     }

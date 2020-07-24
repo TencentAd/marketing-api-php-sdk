@@ -65,58 +65,58 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
         'firstCategoryId' => 'int',
         'secondCategoryId' => 'int',
         'thirdCategoryId' => 'int',
-        'viewCount' => 'double',
-        'validClickCount' => 'double',
+        'viewCount' => 'int',
+        'validClickCount' => 'int',
         'ctr' => 'double',
-        'cpc' => 'double',
-        'thousandDisplayPrice' => 'double',
-        'cost' => 'double',
-        'activatedCount' => 'double',
-        'activatedCost' => 'double',
+        'cpc' => 'int',
+        'thousandDisplayPrice' => 'int',
+        'cost' => 'int',
+        'activatedCount' => 'int',
+        'activatedCost' => 'int',
         'activatedRate' => 'double',
-        'webKeyPageViewCost' => 'double',
-        'webCommodityPageViewCount' => 'double',
-        'webCommodityPageViewCost' => 'double',
-        'webRegisterCount' => 'double',
-        'pagePhoneCallDirectCount' => 'double',
-        'ownPageNavigationCount' => 'double',
+        'webKeyPageViewCost' => 'int',
+        'webCommodityPageViewCount' => 'int',
+        'webCommodityPageViewCost' => 'int',
+        'webRegisterCount' => 'int',
+        'pagePhoneCallDirectCount' => 'int',
+        'ownPageNavigationCount' => 'int',
         'ownPageNavigationCost' => 'int',
-        'webApplicationCount' => 'double',
-        'webApplicationCost' => 'double',
-        'webOrderCount' => 'double',
+        'webApplicationCount' => 'int',
+        'webApplicationCost' => 'int',
+        'webOrderCount' => 'int',
         'webOrderRate' => 'double',
         'appOrderRate' => 'double',
-        'webOrderCost' => 'double',
-        'webCheckoutAmount' => 'double',
-        'webCheckoutCount' => 'double',
-        'webCheckoutCost' => 'double',
+        'webOrderCost' => 'int',
+        'webCheckoutAmount' => 'int',
+        'webCheckoutCount' => 'int',
+        'webCheckoutCost' => 'int',
         'downloadRate' => 'double',
-        'downloadCost' => 'double',
-        'installCost' => 'double',
+        'downloadCost' => 'int',
+        'installCost' => 'int',
         'clickActivatedRate' => 'double',
-        'retentionCount' => 'double',
+        'retentionCount' => 'int',
         'retentionRate' => 'double',
-        'retentionCost' => 'double',
-        'appKeyPageViewCount' => 'double',
-        'webKeyPageViewCount' => 'double',
-        'appCommodityPageViewCount' => 'double',
+        'retentionCost' => 'int',
+        'appKeyPageViewCount' => 'int',
+        'webKeyPageViewCount' => 'int',
+        'appCommodityPageViewCount' => 'int',
         'appCommodityPageViewRate' => 'double',
         'webCommodityPageViewRate' => 'double',
-        'appCommodityPageViewCost' => 'double',
-        'appRegisterCount' => 'double',
-        'appRegisterCost' => 'double',
-        'appApplicationCount' => 'double',
-        'appApplicationCost' => 'double',
-        'appOrderCount' => 'double',
-        'appOrderCost' => 'double',
-        'followCost' => 'double',
-        'forwardCost' => 'double',
-        'readCost' => 'double',
-        'praiseCount' => 'double',
-        'praiseCost' => 'double',
-        'commentCount' => 'double',
-        'likeOrComment' => 'double',
-        'commentCost' => 'double',
+        'appCommodityPageViewCost' => 'int',
+        'appRegisterCount' => 'int',
+        'appRegisterCost' => 'int',
+        'appApplicationCount' => 'int',
+        'appApplicationCost' => 'int',
+        'appOrderCount' => 'int',
+        'appOrderCost' => 'int',
+        'followCost' => 'int',
+        'forwardCost' => 'int',
+        'readCost' => 'int',
+        'praiseCount' => 'int',
+        'praiseCost' => 'int',
+        'commentCount' => 'int',
+        'likeOrComment' => 'int',
+        'commentCost' => 'int',
         'appCheckoutRate' => 'double',
         'appRegisterRate' => 'double',
         'impression' => 'int',
@@ -147,58 +147,58 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
         'firstCategoryId' => 'int64',
         'secondCategoryId' => 'int64',
         'thirdCategoryId' => 'int64',
-        'viewCount' => 'double',
-        'validClickCount' => 'double',
+        'viewCount' => 'int64',
+        'validClickCount' => 'int64',
         'ctr' => 'double',
-        'cpc' => 'double',
-        'thousandDisplayPrice' => 'double',
-        'cost' => 'double',
-        'activatedCount' => 'double',
-        'activatedCost' => 'double',
+        'cpc' => 'int64',
+        'thousandDisplayPrice' => 'int64',
+        'cost' => 'int64',
+        'activatedCount' => 'int64',
+        'activatedCost' => 'int64',
         'activatedRate' => 'double',
-        'webKeyPageViewCost' => 'double',
-        'webCommodityPageViewCount' => 'double',
-        'webCommodityPageViewCost' => 'double',
-        'webRegisterCount' => 'double',
-        'pagePhoneCallDirectCount' => 'double',
-        'ownPageNavigationCount' => 'double',
+        'webKeyPageViewCost' => 'int64',
+        'webCommodityPageViewCount' => 'int64',
+        'webCommodityPageViewCost' => 'int64',
+        'webRegisterCount' => 'int64',
+        'pagePhoneCallDirectCount' => 'int64',
+        'ownPageNavigationCount' => 'int64',
         'ownPageNavigationCost' => 'int64',
-        'webApplicationCount' => 'double',
-        'webApplicationCost' => 'double',
-        'webOrderCount' => 'double',
+        'webApplicationCount' => 'int64',
+        'webApplicationCost' => 'int64',
+        'webOrderCount' => 'int64',
         'webOrderRate' => 'double',
         'appOrderRate' => 'double',
-        'webOrderCost' => 'double',
-        'webCheckoutAmount' => 'double',
-        'webCheckoutCount' => 'double',
-        'webCheckoutCost' => 'double',
+        'webOrderCost' => 'int64',
+        'webCheckoutAmount' => 'int64',
+        'webCheckoutCount' => 'int64',
+        'webCheckoutCost' => 'int64',
         'downloadRate' => 'double',
-        'downloadCost' => 'double',
-        'installCost' => 'double',
+        'downloadCost' => 'int64',
+        'installCost' => 'int64',
         'clickActivatedRate' => 'double',
-        'retentionCount' => 'double',
+        'retentionCount' => 'int64',
         'retentionRate' => 'double',
-        'retentionCost' => 'double',
-        'appKeyPageViewCount' => 'double',
-        'webKeyPageViewCount' => 'double',
-        'appCommodityPageViewCount' => 'double',
+        'retentionCost' => 'int64',
+        'appKeyPageViewCount' => 'int64',
+        'webKeyPageViewCount' => 'int64',
+        'appCommodityPageViewCount' => 'int64',
         'appCommodityPageViewRate' => 'double',
         'webCommodityPageViewRate' => 'double',
-        'appCommodityPageViewCost' => 'double',
-        'appRegisterCount' => 'double',
-        'appRegisterCost' => 'double',
-        'appApplicationCount' => 'double',
-        'appApplicationCost' => 'double',
-        'appOrderCount' => 'double',
-        'appOrderCost' => 'double',
-        'followCost' => 'double',
-        'forwardCost' => 'double',
-        'readCost' => 'double',
-        'praiseCount' => 'double',
-        'praiseCost' => 'double',
-        'commentCount' => 'double',
-        'likeOrComment' => 'double',
-        'commentCost' => 'double',
+        'appCommodityPageViewCost' => 'int64',
+        'appRegisterCount' => 'int64',
+        'appRegisterCost' => 'int64',
+        'appApplicationCount' => 'int64',
+        'appApplicationCost' => 'int64',
+        'appOrderCount' => 'int64',
+        'appOrderCost' => 'int64',
+        'followCost' => 'int64',
+        'forwardCost' => 'int64',
+        'readCost' => 'int64',
+        'praiseCount' => 'int64',
+        'praiseCost' => 'int64',
+        'commentCount' => 'int64',
+        'likeOrComment' => 'int64',
+        'commentCost' => 'int64',
         'appCheckoutRate' => 'double',
         'appRegisterRate' => 'double',
         'impression' => 'int64',
@@ -814,7 +814,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets viewCount
      *
-     * @return double
+     * @return int
      */
     public function getViewCount()
     {
@@ -824,7 +824,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets viewCount
      *
-     * @param double $viewCount viewCount
+     * @param int $viewCount viewCount
      *
      * @return $this
      */
@@ -838,7 +838,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets validClickCount
      *
-     * @return double
+     * @return int
      */
     public function getValidClickCount()
     {
@@ -848,7 +848,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets validClickCount
      *
-     * @param double $validClickCount validClickCount
+     * @param int $validClickCount validClickCount
      *
      * @return $this
      */
@@ -886,7 +886,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cpc
      *
-     * @return double
+     * @return int
      */
     public function getCpc()
     {
@@ -896,7 +896,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cpc
      *
-     * @param double $cpc cpc
+     * @param int $cpc cpc
      *
      * @return $this
      */
@@ -910,7 +910,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets thousandDisplayPrice
      *
-     * @return double
+     * @return int
      */
     public function getThousandDisplayPrice()
     {
@@ -920,7 +920,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets thousandDisplayPrice
      *
-     * @param double $thousandDisplayPrice thousandDisplayPrice
+     * @param int $thousandDisplayPrice thousandDisplayPrice
      *
      * @return $this
      */
@@ -934,7 +934,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cost
      *
-     * @return double
+     * @return int
      */
     public function getCost()
     {
@@ -944,7 +944,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cost
      *
-     * @param double $cost cost
+     * @param int $cost cost
      *
      * @return $this
      */
@@ -958,7 +958,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activatedCount
      *
-     * @return double
+     * @return int
      */
     public function getActivatedCount()
     {
@@ -968,7 +968,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets activatedCount
      *
-     * @param double $activatedCount activatedCount
+     * @param int $activatedCount activatedCount
      *
      * @return $this
      */
@@ -982,7 +982,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activatedCost
      *
-     * @return double
+     * @return int
      */
     public function getActivatedCost()
     {
@@ -992,7 +992,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets activatedCost
      *
-     * @param double $activatedCost activatedCost
+     * @param int $activatedCost activatedCost
      *
      * @return $this
      */
@@ -1030,7 +1030,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webKeyPageViewCost
      *
-     * @return double
+     * @return int
      */
     public function getWebKeyPageViewCost()
     {
@@ -1040,7 +1040,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webKeyPageViewCost
      *
-     * @param double $webKeyPageViewCost webKeyPageViewCost
+     * @param int $webKeyPageViewCost webKeyPageViewCost
      *
      * @return $this
      */
@@ -1054,7 +1054,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCommodityPageViewCount
      *
-     * @return double
+     * @return int
      */
     public function getWebCommodityPageViewCount()
     {
@@ -1064,7 +1064,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webCommodityPageViewCount
      *
-     * @param double $webCommodityPageViewCount webCommodityPageViewCount
+     * @param int $webCommodityPageViewCount webCommodityPageViewCount
      *
      * @return $this
      */
@@ -1078,7 +1078,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCommodityPageViewCost
      *
-     * @return double
+     * @return int
      */
     public function getWebCommodityPageViewCost()
     {
@@ -1088,7 +1088,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webCommodityPageViewCost
      *
-     * @param double $webCommodityPageViewCost webCommodityPageViewCost
+     * @param int $webCommodityPageViewCost webCommodityPageViewCost
      *
      * @return $this
      */
@@ -1102,7 +1102,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webRegisterCount
      *
-     * @return double
+     * @return int
      */
     public function getWebRegisterCount()
     {
@@ -1112,7 +1112,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webRegisterCount
      *
-     * @param double $webRegisterCount webRegisterCount
+     * @param int $webRegisterCount webRegisterCount
      *
      * @return $this
      */
@@ -1126,7 +1126,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pagePhoneCallDirectCount
      *
-     * @return double
+     * @return int
      */
     public function getPagePhoneCallDirectCount()
     {
@@ -1136,7 +1136,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pagePhoneCallDirectCount
      *
-     * @param double $pagePhoneCallDirectCount pagePhoneCallDirectCount
+     * @param int $pagePhoneCallDirectCount pagePhoneCallDirectCount
      *
      * @return $this
      */
@@ -1150,7 +1150,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ownPageNavigationCount
      *
-     * @return double
+     * @return int
      */
     public function getOwnPageNavigationCount()
     {
@@ -1160,7 +1160,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets ownPageNavigationCount
      *
-     * @param double $ownPageNavigationCount ownPageNavigationCount
+     * @param int $ownPageNavigationCount ownPageNavigationCount
      *
      * @return $this
      */
@@ -1198,7 +1198,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webApplicationCount
      *
-     * @return double
+     * @return int
      */
     public function getWebApplicationCount()
     {
@@ -1208,7 +1208,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webApplicationCount
      *
-     * @param double $webApplicationCount webApplicationCount
+     * @param int $webApplicationCount webApplicationCount
      *
      * @return $this
      */
@@ -1222,7 +1222,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webApplicationCost
      *
-     * @return double
+     * @return int
      */
     public function getWebApplicationCost()
     {
@@ -1232,7 +1232,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webApplicationCost
      *
-     * @param double $webApplicationCost webApplicationCost
+     * @param int $webApplicationCost webApplicationCost
      *
      * @return $this
      */
@@ -1246,7 +1246,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webOrderCount
      *
-     * @return double
+     * @return int
      */
     public function getWebOrderCount()
     {
@@ -1256,7 +1256,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webOrderCount
      *
-     * @param double $webOrderCount webOrderCount
+     * @param int $webOrderCount webOrderCount
      *
      * @return $this
      */
@@ -1318,7 +1318,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webOrderCost
      *
-     * @return double
+     * @return int
      */
     public function getWebOrderCost()
     {
@@ -1328,7 +1328,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webOrderCost
      *
-     * @param double $webOrderCost webOrderCost
+     * @param int $webOrderCost webOrderCost
      *
      * @return $this
      */
@@ -1342,7 +1342,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCheckoutAmount
      *
-     * @return double
+     * @return int
      */
     public function getWebCheckoutAmount()
     {
@@ -1352,7 +1352,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webCheckoutAmount
      *
-     * @param double $webCheckoutAmount webCheckoutAmount
+     * @param int $webCheckoutAmount webCheckoutAmount
      *
      * @return $this
      */
@@ -1366,7 +1366,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCheckoutCount
      *
-     * @return double
+     * @return int
      */
     public function getWebCheckoutCount()
     {
@@ -1376,7 +1376,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webCheckoutCount
      *
-     * @param double $webCheckoutCount webCheckoutCount
+     * @param int $webCheckoutCount webCheckoutCount
      *
      * @return $this
      */
@@ -1390,7 +1390,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCheckoutCost
      *
-     * @return double
+     * @return int
      */
     public function getWebCheckoutCost()
     {
@@ -1400,7 +1400,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webCheckoutCost
      *
-     * @param double $webCheckoutCost webCheckoutCost
+     * @param int $webCheckoutCost webCheckoutCost
      *
      * @return $this
      */
@@ -1438,7 +1438,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets downloadCost
      *
-     * @return double
+     * @return int
      */
     public function getDownloadCost()
     {
@@ -1448,7 +1448,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets downloadCost
      *
-     * @param double $downloadCost downloadCost
+     * @param int $downloadCost downloadCost
      *
      * @return $this
      */
@@ -1462,7 +1462,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets installCost
      *
-     * @return double
+     * @return int
      */
     public function getInstallCost()
     {
@@ -1472,7 +1472,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets installCost
      *
-     * @param double $installCost installCost
+     * @param int $installCost installCost
      *
      * @return $this
      */
@@ -1510,7 +1510,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets retentionCount
      *
-     * @return double
+     * @return int
      */
     public function getRetentionCount()
     {
@@ -1520,7 +1520,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets retentionCount
      *
-     * @param double $retentionCount retentionCount
+     * @param int $retentionCount retentionCount
      *
      * @return $this
      */
@@ -1558,7 +1558,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets retentionCost
      *
-     * @return double
+     * @return int
      */
     public function getRetentionCost()
     {
@@ -1568,7 +1568,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets retentionCost
      *
-     * @param double $retentionCost retentionCost
+     * @param int $retentionCost retentionCost
      *
      * @return $this
      */
@@ -1582,7 +1582,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appKeyPageViewCount
      *
-     * @return double
+     * @return int
      */
     public function getAppKeyPageViewCount()
     {
@@ -1592,7 +1592,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appKeyPageViewCount
      *
-     * @param double $appKeyPageViewCount appKeyPageViewCount
+     * @param int $appKeyPageViewCount appKeyPageViewCount
      *
      * @return $this
      */
@@ -1606,7 +1606,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webKeyPageViewCount
      *
-     * @return double
+     * @return int
      */
     public function getWebKeyPageViewCount()
     {
@@ -1616,7 +1616,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webKeyPageViewCount
      *
-     * @param double $webKeyPageViewCount webKeyPageViewCount
+     * @param int $webKeyPageViewCount webKeyPageViewCount
      *
      * @return $this
      */
@@ -1630,7 +1630,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appCommodityPageViewCount
      *
-     * @return double
+     * @return int
      */
     public function getAppCommodityPageViewCount()
     {
@@ -1640,7 +1640,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appCommodityPageViewCount
      *
-     * @param double $appCommodityPageViewCount appCommodityPageViewCount
+     * @param int $appCommodityPageViewCount appCommodityPageViewCount
      *
      * @return $this
      */
@@ -1702,7 +1702,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appCommodityPageViewCost
      *
-     * @return double
+     * @return int
      */
     public function getAppCommodityPageViewCost()
     {
@@ -1712,7 +1712,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appCommodityPageViewCost
      *
-     * @param double $appCommodityPageViewCost appCommodityPageViewCost
+     * @param int $appCommodityPageViewCost appCommodityPageViewCost
      *
      * @return $this
      */
@@ -1726,7 +1726,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appRegisterCount
      *
-     * @return double
+     * @return int
      */
     public function getAppRegisterCount()
     {
@@ -1736,7 +1736,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appRegisterCount
      *
-     * @param double $appRegisterCount appRegisterCount
+     * @param int $appRegisterCount appRegisterCount
      *
      * @return $this
      */
@@ -1750,7 +1750,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appRegisterCost
      *
-     * @return double
+     * @return int
      */
     public function getAppRegisterCost()
     {
@@ -1760,7 +1760,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appRegisterCost
      *
-     * @param double $appRegisterCost appRegisterCost
+     * @param int $appRegisterCost appRegisterCost
      *
      * @return $this
      */
@@ -1774,7 +1774,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appApplicationCount
      *
-     * @return double
+     * @return int
      */
     public function getAppApplicationCount()
     {
@@ -1784,7 +1784,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appApplicationCount
      *
-     * @param double $appApplicationCount appApplicationCount
+     * @param int $appApplicationCount appApplicationCount
      *
      * @return $this
      */
@@ -1798,7 +1798,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appApplicationCost
      *
-     * @return double
+     * @return int
      */
     public function getAppApplicationCost()
     {
@@ -1808,7 +1808,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appApplicationCost
      *
-     * @param double $appApplicationCost appApplicationCost
+     * @param int $appApplicationCost appApplicationCost
      *
      * @return $this
      */
@@ -1822,7 +1822,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appOrderCount
      *
-     * @return double
+     * @return int
      */
     public function getAppOrderCount()
     {
@@ -1832,7 +1832,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appOrderCount
      *
-     * @param double $appOrderCount appOrderCount
+     * @param int $appOrderCount appOrderCount
      *
      * @return $this
      */
@@ -1846,7 +1846,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appOrderCost
      *
-     * @return double
+     * @return int
      */
     public function getAppOrderCost()
     {
@@ -1856,7 +1856,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appOrderCost
      *
-     * @param double $appOrderCost appOrderCost
+     * @param int $appOrderCost appOrderCost
      *
      * @return $this
      */
@@ -1870,7 +1870,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets followCost
      *
-     * @return double
+     * @return int
      */
     public function getFollowCost()
     {
@@ -1880,7 +1880,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets followCost
      *
-     * @param double $followCost followCost
+     * @param int $followCost followCost
      *
      * @return $this
      */
@@ -1894,7 +1894,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets forwardCost
      *
-     * @return double
+     * @return int
      */
     public function getForwardCost()
     {
@@ -1904,7 +1904,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets forwardCost
      *
-     * @param double $forwardCost forwardCost
+     * @param int $forwardCost forwardCost
      *
      * @return $this
      */
@@ -1918,7 +1918,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets readCost
      *
-     * @return double
+     * @return int
      */
     public function getReadCost()
     {
@@ -1928,7 +1928,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets readCost
      *
-     * @param double $readCost readCost
+     * @param int $readCost readCost
      *
      * @return $this
      */
@@ -1942,7 +1942,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets praiseCount
      *
-     * @return double
+     * @return int
      */
     public function getPraiseCount()
     {
@@ -1952,7 +1952,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets praiseCount
      *
-     * @param double $praiseCount praiseCount
+     * @param int $praiseCount praiseCount
      *
      * @return $this
      */
@@ -1966,7 +1966,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets praiseCost
      *
-     * @return double
+     * @return int
      */
     public function getPraiseCost()
     {
@@ -1976,7 +1976,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets praiseCost
      *
-     * @param double $praiseCost praiseCost
+     * @param int $praiseCost praiseCost
      *
      * @return $this
      */
@@ -1990,7 +1990,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets commentCount
      *
-     * @return double
+     * @return int
      */
     public function getCommentCount()
     {
@@ -2000,7 +2000,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets commentCount
      *
-     * @param double $commentCount commentCount
+     * @param int $commentCount commentCount
      *
      * @return $this
      */
@@ -2014,7 +2014,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets likeOrComment
      *
-     * @return double
+     * @return int
      */
     public function getLikeOrComment()
     {
@@ -2024,7 +2024,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets likeOrComment
      *
-     * @param double $likeOrComment likeOrComment
+     * @param int $likeOrComment likeOrComment
      *
      * @return $this
      */
@@ -2038,7 +2038,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets commentCost
      *
-     * @return double
+     * @return int
      */
     public function getCommentCost()
     {
@@ -2048,7 +2048,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets commentCost
      *
-     * @param double $commentCost commentCost
+     * @param int $commentCost commentCost
      *
      * @return $this
      */

@@ -86,7 +86,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'imageDurationMillisecond' => 'int',
         'audioDurationMillisecond' => 'int',
         'sourceType' => '\TencentAds\Model\MediaSourceType',
-        'productCatalogId' => 'int',
+        'productCatalogId' => 'string',
         'productOuterId' => 'string'
     ];
 
@@ -124,7 +124,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'imageDurationMillisecond' => 'int64',
         'audioDurationMillisecond' => 'int64',
         'sourceType' => null,
-        'productCatalogId' => 'int64',
+        'productCatalogId' => null,
         'productOuterId' => null
     ];
 
@@ -1054,7 +1054,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productCatalogId
      *
-     * @return int
+     * @return string
      */
     public function getProductCatalogId()
     {
@@ -1064,7 +1064,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productCatalogId
      *
-     * @param int $productCatalogId productCatalogId
+     * @param string $productCatalogId productCatalogId
      *
      * @return $this
      */

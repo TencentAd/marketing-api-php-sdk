@@ -51,6 +51,7 @@ class SiteSetDefinition
     const QQCOM = 'SITE_SET_QQCOM';
     const WECHAT = 'SITE_SET_WECHAT';
     const MOBILE_MYAPP = 'SITE_SET_MOBILE_MYAPP';
+    const MOBILE_YYB = 'SITE_SET_MOBILE_YYB';
     const MOBILE_INNER = 'SITE_SET_MOBILE_INNER';
     const TENCENT_NEWS = 'SITE_SET_TENCENT_NEWS';
     const TENCENT_VIDEO = 'SITE_SET_TENCENT_VIDEO';
@@ -96,6 +97,7 @@ class SiteSetDefinition
             self::QQCOM,
             self::WECHAT,
             self::MOBILE_MYAPP,
+            self::MOBILE_YYB,
             self::MOBILE_INNER,
             self::TENCENT_NEWS,
             self::TENCENT_VIDEO,

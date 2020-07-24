@@ -60,7 +60,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'wechatAccountId' => 'string',
         'wechatAccountName' => 'string',
-        'systemStatus' => '\TencentAds\Model\SysStatus',
+        'systemStatus' => '\TencentAds\Model\WechatCustomerSystemStatus',
         'industryName' => 'string',
         'contactPerson' => 'string',
         'contactPersonTelephone' => 'string',
@@ -328,7 +328,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Gets systemStatus
      *
-     * @return \TencentAds\Model\SysStatus
+     * @return \TencentAds\Model\WechatCustomerSystemStatus
      */
     public function getSystemStatus()
     {
@@ -338,7 +338,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Sets systemStatus
      *
-     * @param \TencentAds\Model\SysStatus $systemStatus systemStatus
+     * @param \TencentAds\Model\WechatCustomerSystemStatus $systemStatus systemStatus
      *
      * @return $this
      */

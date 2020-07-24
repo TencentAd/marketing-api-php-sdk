@@ -66,7 +66,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
         'wechatCampaignId' => 'int',
         'modelId' => 'int',
         'audiencePredictTaskId' => 'int',
-        'actionType' => '\TencentAds\Model\ActionType',
+        'actionType' => '\TencentAds\Model\AdActionType',
         'cost' => 'int',
         'actionCount' => 'int',
         'userCount' => 'int'
@@ -466,7 +466,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Gets actionType
      *
-     * @return \TencentAds\Model\ActionType
+     * @return \TencentAds\Model\AdActionType
      */
     public function getActionType()
     {
@@ -476,7 +476,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Sets actionType
      *
-     * @param \TencentAds\Model\ActionType $actionType actionType
+     * @param \TencentAds\Model\AdActionType $actionType actionType
      *
      * @return $this
      */

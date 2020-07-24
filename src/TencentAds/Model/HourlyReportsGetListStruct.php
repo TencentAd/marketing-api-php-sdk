@@ -258,6 +258,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'specialPageExpCost' => 'int',
         'viewCommodityPageUv' => 'int',
         'effectLeadsPurchaseCount' => 'int',
+        'reservationUv' => 'int',
         'overallLeadsPurchaseCount' => 'int',
         'leadsPurchaseCount' => 'int',
         'leadsPurchaseRate' => 'double',
@@ -279,6 +280,12 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'firstDayOrderCount' => 'int',
         'firstDayOrderAmount' => 'int',
         'addWishlistCount' => 'int',
+        'videoOuterPlay10Count' => 'int',
+        'videoOuterPlay25Count' => 'int',
+        'videoOuterPlay50Count' => 'int',
+        'videoOuterPlay75Count' => 'int',
+        'videoOuterPlay95Count' => 'int',
+        'videoOuterPlay100Count' => 'int',
         'videoOuterPlayCount' => 'int',
         'campaignId' => 'int',
         'webAddToCartCount' => 'int',
@@ -564,6 +571,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'specialPageExpCost' => 'int64',
         'viewCommodityPageUv' => 'int64',
         'effectLeadsPurchaseCount' => 'int64',
+        'reservationUv' => 'int64',
         'overallLeadsPurchaseCount' => 'int64',
         'leadsPurchaseCount' => 'int64',
         'leadsPurchaseRate' => 'double',
@@ -585,6 +593,12 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'firstDayOrderCount' => 'int64',
         'firstDayOrderAmount' => 'int64',
         'addWishlistCount' => 'int64',
+        'videoOuterPlay10Count' => 'int64',
+        'videoOuterPlay25Count' => 'int64',
+        'videoOuterPlay50Count' => 'int64',
+        'videoOuterPlay75Count' => 'int64',
+        'videoOuterPlay95Count' => 'int64',
+        'videoOuterPlay100Count' => 'int64',
         'videoOuterPlayCount' => 'int64',
         'campaignId' => 'int64',
         'webAddToCartCount' => 'int64',
@@ -891,6 +905,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'specialPageExpCost' => 'special_page_exp_cost',
         'viewCommodityPageUv' => 'view_commodity_page_uv',
         'effectLeadsPurchaseCount' => 'effect_leads_purchase_count',
+        'reservationUv' => 'reservation_uv',
         'overallLeadsPurchaseCount' => 'overall_leads_purchase_count',
         'leadsPurchaseCount' => 'leads_purchase_count',
         'leadsPurchaseRate' => 'leads_purchase_rate',
@@ -912,6 +927,12 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'firstDayOrderCount' => 'first_day_order_count',
         'firstDayOrderAmount' => 'first_day_order_amount',
         'addWishlistCount' => 'add_wishlist_count',
+        'videoOuterPlay10Count' => 'video_outer_play10_count',
+        'videoOuterPlay25Count' => 'video_outer_play25_count',
+        'videoOuterPlay50Count' => 'video_outer_play50_count',
+        'videoOuterPlay75Count' => 'video_outer_play75_count',
+        'videoOuterPlay95Count' => 'video_outer_play95_count',
+        'videoOuterPlay100Count' => 'video_outer_play100_count',
         'videoOuterPlayCount' => 'video_outer_play_count',
         'campaignId' => 'campaign_id',
         'webAddToCartCount' => 'web_add_to_cart_count',
@@ -1197,6 +1218,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'specialPageExpCost' => 'setSpecialPageExpCost',
         'viewCommodityPageUv' => 'setViewCommodityPageUv',
         'effectLeadsPurchaseCount' => 'setEffectLeadsPurchaseCount',
+        'reservationUv' => 'setReservationUv',
         'overallLeadsPurchaseCount' => 'setOverallLeadsPurchaseCount',
         'leadsPurchaseCount' => 'setLeadsPurchaseCount',
         'leadsPurchaseRate' => 'setLeadsPurchaseRate',
@@ -1218,6 +1240,12 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'firstDayOrderCount' => 'setFirstDayOrderCount',
         'firstDayOrderAmount' => 'setFirstDayOrderAmount',
         'addWishlistCount' => 'setAddWishlistCount',
+        'videoOuterPlay10Count' => 'setVideoOuterPlay10Count',
+        'videoOuterPlay25Count' => 'setVideoOuterPlay25Count',
+        'videoOuterPlay50Count' => 'setVideoOuterPlay50Count',
+        'videoOuterPlay75Count' => 'setVideoOuterPlay75Count',
+        'videoOuterPlay95Count' => 'setVideoOuterPlay95Count',
+        'videoOuterPlay100Count' => 'setVideoOuterPlay100Count',
         'videoOuterPlayCount' => 'setVideoOuterPlayCount',
         'campaignId' => 'setCampaignId',
         'webAddToCartCount' => 'setWebAddToCartCount',
@@ -1503,6 +1531,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'specialPageExpCost' => 'getSpecialPageExpCost',
         'viewCommodityPageUv' => 'getViewCommodityPageUv',
         'effectLeadsPurchaseCount' => 'getEffectLeadsPurchaseCount',
+        'reservationUv' => 'getReservationUv',
         'overallLeadsPurchaseCount' => 'getOverallLeadsPurchaseCount',
         'leadsPurchaseCount' => 'getLeadsPurchaseCount',
         'leadsPurchaseRate' => 'getLeadsPurchaseRate',
@@ -1524,6 +1553,12 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'firstDayOrderCount' => 'getFirstDayOrderCount',
         'firstDayOrderAmount' => 'getFirstDayOrderAmount',
         'addWishlistCount' => 'getAddWishlistCount',
+        'videoOuterPlay10Count' => 'getVideoOuterPlay10Count',
+        'videoOuterPlay25Count' => 'getVideoOuterPlay25Count',
+        'videoOuterPlay50Count' => 'getVideoOuterPlay50Count',
+        'videoOuterPlay75Count' => 'getVideoOuterPlay75Count',
+        'videoOuterPlay95Count' => 'getVideoOuterPlay95Count',
+        'videoOuterPlay100Count' => 'getVideoOuterPlay100Count',
         'videoOuterPlayCount' => 'getVideoOuterPlayCount',
         'campaignId' => 'getCampaignId',
         'webAddToCartCount' => 'getWebAddToCartCount',
@@ -1863,6 +1898,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['specialPageExpCost'] = isset($data['specialPageExpCost']) ? $data['specialPageExpCost'] : null;
         $this->container['viewCommodityPageUv'] = isset($data['viewCommodityPageUv']) ? $data['viewCommodityPageUv'] : null;
         $this->container['effectLeadsPurchaseCount'] = isset($data['effectLeadsPurchaseCount']) ? $data['effectLeadsPurchaseCount'] : null;
+        $this->container['reservationUv'] = isset($data['reservationUv']) ? $data['reservationUv'] : null;
         $this->container['overallLeadsPurchaseCount'] = isset($data['overallLeadsPurchaseCount']) ? $data['overallLeadsPurchaseCount'] : null;
         $this->container['leadsPurchaseCount'] = isset($data['leadsPurchaseCount']) ? $data['leadsPurchaseCount'] : null;
         $this->container['leadsPurchaseRate'] = isset($data['leadsPurchaseRate']) ? $data['leadsPurchaseRate'] : null;
@@ -1884,6 +1920,12 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['firstDayOrderCount'] = isset($data['firstDayOrderCount']) ? $data['firstDayOrderCount'] : null;
         $this->container['firstDayOrderAmount'] = isset($data['firstDayOrderAmount']) ? $data['firstDayOrderAmount'] : null;
         $this->container['addWishlistCount'] = isset($data['addWishlistCount']) ? $data['addWishlistCount'] : null;
+        $this->container['videoOuterPlay10Count'] = isset($data['videoOuterPlay10Count']) ? $data['videoOuterPlay10Count'] : null;
+        $this->container['videoOuterPlay25Count'] = isset($data['videoOuterPlay25Count']) ? $data['videoOuterPlay25Count'] : null;
+        $this->container['videoOuterPlay50Count'] = isset($data['videoOuterPlay50Count']) ? $data['videoOuterPlay50Count'] : null;
+        $this->container['videoOuterPlay75Count'] = isset($data['videoOuterPlay75Count']) ? $data['videoOuterPlay75Count'] : null;
+        $this->container['videoOuterPlay95Count'] = isset($data['videoOuterPlay95Count']) ? $data['videoOuterPlay95Count'] : null;
+        $this->container['videoOuterPlay100Count'] = isset($data['videoOuterPlay100Count']) ? $data['videoOuterPlay100Count'] : null;
         $this->container['videoOuterPlayCount'] = isset($data['videoOuterPlayCount']) ? $data['videoOuterPlayCount'] : null;
         $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
         $this->container['webAddToCartCount'] = isset($data['webAddToCartCount']) ? $data['webAddToCartCount'] : null;
@@ -6788,6 +6830,30 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets reservationUv
+     *
+     * @return int
+     */
+    public function getReservationUv()
+    {
+        return $this->container['reservationUv'];
+    }
+
+    /**
+     * Sets reservationUv
+     *
+     * @param int $reservationUv reservationUv
+     *
+     * @return $this
+     */
+    public function setReservationUv($reservationUv)
+    {
+        $this->container['reservationUv'] = $reservationUv;
+
+        return $this;
+    }
+
+    /**
      * Gets overallLeadsPurchaseCount
      *
      * @return int
@@ -7287,6 +7353,150 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setAddWishlistCount($addWishlistCount)
     {
         $this->container['addWishlistCount'] = $addWishlistCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay10Count
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay10Count()
+    {
+        return $this->container['videoOuterPlay10Count'];
+    }
+
+    /**
+     * Sets videoOuterPlay10Count
+     *
+     * @param int $videoOuterPlay10Count videoOuterPlay10Count
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay10Count($videoOuterPlay10Count)
+    {
+        $this->container['videoOuterPlay10Count'] = $videoOuterPlay10Count;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay25Count
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay25Count()
+    {
+        return $this->container['videoOuterPlay25Count'];
+    }
+
+    /**
+     * Sets videoOuterPlay25Count
+     *
+     * @param int $videoOuterPlay25Count videoOuterPlay25Count
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay25Count($videoOuterPlay25Count)
+    {
+        $this->container['videoOuterPlay25Count'] = $videoOuterPlay25Count;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay50Count
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay50Count()
+    {
+        return $this->container['videoOuterPlay50Count'];
+    }
+
+    /**
+     * Sets videoOuterPlay50Count
+     *
+     * @param int $videoOuterPlay50Count videoOuterPlay50Count
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay50Count($videoOuterPlay50Count)
+    {
+        $this->container['videoOuterPlay50Count'] = $videoOuterPlay50Count;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay75Count
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay75Count()
+    {
+        return $this->container['videoOuterPlay75Count'];
+    }
+
+    /**
+     * Sets videoOuterPlay75Count
+     *
+     * @param int $videoOuterPlay75Count videoOuterPlay75Count
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay75Count($videoOuterPlay75Count)
+    {
+        $this->container['videoOuterPlay75Count'] = $videoOuterPlay75Count;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay95Count
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay95Count()
+    {
+        return $this->container['videoOuterPlay95Count'];
+    }
+
+    /**
+     * Sets videoOuterPlay95Count
+     *
+     * @param int $videoOuterPlay95Count videoOuterPlay95Count
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay95Count($videoOuterPlay95Count)
+    {
+        $this->container['videoOuterPlay95Count'] = $videoOuterPlay95Count;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay100Count
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay100Count()
+    {
+        return $this->container['videoOuterPlay100Count'];
+    }
+
+    /**
+     * Sets videoOuterPlay100Count
+     *
+     * @param int $videoOuterPlay100Count videoOuterPlay100Count
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay100Count($videoOuterPlay100Count)
+    {
+        $this->container['videoOuterPlay100Count'] = $videoOuterPlay100Count;
 
         return $this;
     }
