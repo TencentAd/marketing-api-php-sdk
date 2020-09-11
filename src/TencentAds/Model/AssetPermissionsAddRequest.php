@@ -60,7 +60,8 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'int',
         'assetType' => '\TencentAds\Model\AssetType',
         'assetPermissionSpec' => '\TencentAds\Model\AssetPermissionSpecStruct[]',
-        'licensingAccountIdList' => 'int[]'
+        'licensingAccountIdList' => 'int[]',
+        'licensingIdType' => '\TencentAds\Model\AssetAccountType'
     ];
 
     /**
@@ -72,7 +73,8 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'int64',
         'assetType' => null,
         'assetPermissionSpec' => null,
-        'licensingAccountIdList' => 'int64'
+        'licensingAccountIdList' => 'int64',
+        'licensingIdType' => null
     ];
 
     /**
@@ -105,7 +107,8 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'account_id',
         'assetType' => 'asset_type',
         'assetPermissionSpec' => 'asset_permission_spec',
-        'licensingAccountIdList' => 'licensing_account_id_list'
+        'licensingAccountIdList' => 'licensing_account_id_list',
+        'licensingIdType' => 'licensing_id_type'
     ];
 
     /**
@@ -117,7 +120,8 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'setAccountId',
         'assetType' => 'setAssetType',
         'assetPermissionSpec' => 'setAssetPermissionSpec',
-        'licensingAccountIdList' => 'setLicensingAccountIdList'
+        'licensingAccountIdList' => 'setLicensingAccountIdList',
+        'licensingIdType' => 'setLicensingIdType'
     ];
 
     /**
@@ -129,7 +133,8 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'getAccountId',
         'assetType' => 'getAssetType',
         'assetPermissionSpec' => 'getAssetPermissionSpec',
-        'licensingAccountIdList' => 'getLicensingAccountIdList'
+        'licensingAccountIdList' => 'getLicensingAccountIdList',
+        'licensingIdType' => 'getLicensingIdType'
     ];
 
     /**
@@ -196,6 +201,7 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
         $this->container['assetType'] = isset($data['assetType']) ? $data['assetType'] : null;
         $this->container['assetPermissionSpec'] = isset($data['assetPermissionSpec']) ? $data['assetPermissionSpec'] : null;
         $this->container['licensingAccountIdList'] = isset($data['licensingAccountIdList']) ? $data['licensingAccountIdList'] : null;
+        $this->container['licensingIdType'] = isset($data['licensingIdType']) ? $data['licensingIdType'] : null;
     }
 
     /**
@@ -314,6 +320,30 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
     public function setLicensingAccountIdList($licensingAccountIdList)
     {
         $this->container['licensingAccountIdList'] = $licensingAccountIdList;
+
+        return $this;
+    }
+
+    /**
+     * Gets licensingIdType
+     *
+     * @return \TencentAds\Model\AssetAccountType
+     */
+    public function getLicensingIdType()
+    {
+        return $this->container['licensingIdType'];
+    }
+
+    /**
+     * Sets licensingIdType
+     *
+     * @param \TencentAds\Model\AssetAccountType $licensingIdType licensingIdType
+     *
+     * @return $this
+     */
+    public function setLicensingIdType($licensingIdType)
+    {
+        $this->container['licensingIdType'] = $licensingIdType;
 
         return $this;
     }

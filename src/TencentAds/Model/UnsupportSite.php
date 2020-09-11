@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * UnsupportSite Class Doc Comment
  *
  * @category Class
- * @description 不支持的站点
+ * @description 不支持的版位
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

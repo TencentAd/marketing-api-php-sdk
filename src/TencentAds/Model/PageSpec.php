@@ -61,7 +61,8 @@ class PageSpec implements ModelInterface, ArrayAccess
         'pageId' => 'int',
         'pageUrl' => 'string',
         'miniProgramSpec' => '\TencentAds\Model\AdcreativeMiniProgramSpec',
-        'miniGameSpec' => '\TencentAds\Model\MiniGameSpec'
+        'miniGameSpec' => '\TencentAds\Model\MiniGameSpec',
+        'overrideCanvasHeadOption' => '\TencentAds\Model\OverrideCanvasHeadOption'
     ];
 
     /**
@@ -73,7 +74,8 @@ class PageSpec implements ModelInterface, ArrayAccess
         'pageId' => 'int64',
         'pageUrl' => null,
         'miniProgramSpec' => null,
-        'miniGameSpec' => null
+        'miniGameSpec' => null,
+        'overrideCanvasHeadOption' => null
     ];
 
     /**
@@ -106,7 +108,8 @@ class PageSpec implements ModelInterface, ArrayAccess
         'pageId' => 'page_id',
         'pageUrl' => 'page_url',
         'miniProgramSpec' => 'mini_program_spec',
-        'miniGameSpec' => 'mini_game_spec'
+        'miniGameSpec' => 'mini_game_spec',
+        'overrideCanvasHeadOption' => 'override_canvas_head_option'
     ];
 
     /**
@@ -118,7 +121,8 @@ class PageSpec implements ModelInterface, ArrayAccess
         'pageId' => 'setPageId',
         'pageUrl' => 'setPageUrl',
         'miniProgramSpec' => 'setMiniProgramSpec',
-        'miniGameSpec' => 'setMiniGameSpec'
+        'miniGameSpec' => 'setMiniGameSpec',
+        'overrideCanvasHeadOption' => 'setOverrideCanvasHeadOption'
     ];
 
     /**
@@ -130,7 +134,8 @@ class PageSpec implements ModelInterface, ArrayAccess
         'pageId' => 'getPageId',
         'pageUrl' => 'getPageUrl',
         'miniProgramSpec' => 'getMiniProgramSpec',
-        'miniGameSpec' => 'getMiniGameSpec'
+        'miniGameSpec' => 'getMiniGameSpec',
+        'overrideCanvasHeadOption' => 'getOverrideCanvasHeadOption'
     ];
 
     /**
@@ -197,6 +202,7 @@ class PageSpec implements ModelInterface, ArrayAccess
         $this->container['pageUrl'] = isset($data['pageUrl']) ? $data['pageUrl'] : null;
         $this->container['miniProgramSpec'] = isset($data['miniProgramSpec']) ? $data['miniProgramSpec'] : null;
         $this->container['miniGameSpec'] = isset($data['miniGameSpec']) ? $data['miniGameSpec'] : null;
+        $this->container['overrideCanvasHeadOption'] = isset($data['overrideCanvasHeadOption']) ? $data['overrideCanvasHeadOption'] : null;
     }
 
     /**
@@ -315,6 +321,30 @@ class PageSpec implements ModelInterface, ArrayAccess
     public function setMiniGameSpec($miniGameSpec)
     {
         $this->container['miniGameSpec'] = $miniGameSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets overrideCanvasHeadOption
+     *
+     * @return \TencentAds\Model\OverrideCanvasHeadOption
+     */
+    public function getOverrideCanvasHeadOption()
+    {
+        return $this->container['overrideCanvasHeadOption'];
+    }
+
+    /**
+     * Sets overrideCanvasHeadOption
+     *
+     * @param \TencentAds\Model\OverrideCanvasHeadOption $overrideCanvasHeadOption overrideCanvasHeadOption
+     *
+     * @return $this
+     */
+    public function setOverrideCanvasHeadOption($overrideCanvasHeadOption)
+    {
+        $this->container['overrideCanvasHeadOption'] = $overrideCanvasHeadOption;
 
         return $this;
     }

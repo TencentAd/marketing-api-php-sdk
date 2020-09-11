@@ -57,7 +57,8 @@ class ProductCategoriesListGetResponseData implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'list' => '\TencentAds\Model\CategoryItem[]'
+        'list' => '\TencentAds\Model\CategoryItem[]',
+        'pageInfo' => '\TencentAds\Model\Conf'
     ];
 
     /**
@@ -66,7 +67,8 @@ class ProductCategoriesListGetResponseData implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'list' => null
+        'list' => null,
+        'pageInfo' => null
     ];
 
     /**
@@ -96,7 +98,8 @@ class ProductCategoriesListGetResponseData implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $attributeMap = [
-        'list' => 'list'
+        'list' => 'list',
+        'pageInfo' => 'page_info'
     ];
 
     /**
@@ -105,7 +108,8 @@ class ProductCategoriesListGetResponseData implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $setters = [
-        'list' => 'setList'
+        'list' => 'setList',
+        'pageInfo' => 'setPageInfo'
     ];
 
     /**
@@ -114,7 +118,8 @@ class ProductCategoriesListGetResponseData implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $getters = [
-        'list' => 'getList'
+        'list' => 'getList',
+        'pageInfo' => 'getPageInfo'
     ];
 
     /**
@@ -178,6 +183,7 @@ class ProductCategoriesListGetResponseData implements ModelInterface, ArrayAcces
     public function __construct(array $data = null)
     {
         $this->container['list'] = isset($data['list']) ? $data['list'] : null;
+        $this->container['pageInfo'] = isset($data['pageInfo']) ? $data['pageInfo'] : null;
     }
 
     /**
@@ -224,6 +230,30 @@ class ProductCategoriesListGetResponseData implements ModelInterface, ArrayAcces
     public function setList($list)
     {
         $this->container['list'] = $list;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageInfo
+     *
+     * @return \TencentAds\Model\Conf
+     */
+    public function getPageInfo()
+    {
+        return $this->container['pageInfo'];
+    }
+
+    /**
+     * Sets pageInfo
+     *
+     * @param \TencentAds\Model\Conf $pageInfo pageInfo
+     *
+     * @return $this
+     */
+    public function setPageInfo($pageInfo)
+    {
+        $this->container['pageInfo'] = $pageInfo;
 
         return $this;
     }

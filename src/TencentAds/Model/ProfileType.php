@@ -46,6 +46,7 @@ class ProfileType
      */
     const DEFINITION = 'PROFILE_TYPE_DEFINITION';
     const AUTO_GENERATE = 'PROFILE_TYPE_AUTO_GENERATE';
+    const WEAPP = 'PROFILE_TYPE_WEAPP';
     
     /**
      * Gets allowable values of the enum
@@ -56,6 +57,7 @@ class ProfileType
         return [
             self::DEFINITION,
             self::AUTO_GENERATE,
+            self::WEAPP,
         ];
     }
 }

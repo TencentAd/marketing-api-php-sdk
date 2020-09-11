@@ -60,7 +60,7 @@ class GrantInfo implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'audienceId' => 'int',
         'grantType' => '\TencentAds\Model\AudienceGrantType',
-        'grantSpec' => '\TencentAds\Model\GrantSpec'
+        'grantSpec' => '\TencentAds\Model\AudienceGrantRelationsGetGrantSpec'
     ];
 
     /**
@@ -268,7 +268,7 @@ class GrantInfo implements ModelInterface, ArrayAccess
     /**
      * Gets grantSpec
      *
-     * @return \TencentAds\Model\GrantSpec
+     * @return \TencentAds\Model\AudienceGrantRelationsGetGrantSpec
      */
     public function getGrantSpec()
     {
@@ -278,7 +278,7 @@ class GrantInfo implements ModelInterface, ArrayAccess
     /**
      * Sets grantSpec
      *
-     * @param \TencentAds\Model\GrantSpec $grantSpec grantSpec
+     * @param \TencentAds\Model\AudienceGrantRelationsGetGrantSpec $grantSpec grantSpec
      *
      * @return $this
      */

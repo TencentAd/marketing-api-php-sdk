@@ -1,6 +1,6 @@
 <?php
 /**
- * PagesStruct
+ * BidSimulateResultItem
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PagesStruct Class Doc Comment
+ * BidSimulateResultItem Class Doc Comment
  *
  * @category Class
- * @description 落地页配置结构
+ * @description 出价模拟结果
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PagesStruct implements ModelInterface, ArrayAccess
+class BidSimulateResultItem implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class PagesStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'pages_struct';
+    protected static $swaggerModelName = 'bid_simulate_result_item';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,13 +58,10 @@ class PagesStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pageType' => '\TencentAds\Model\ComponentsPageType',
-        'pageName' => 'string',
-        'pageTitle' => 'string',
-        'mobileAppId' => 'string',
-        'bgColor' => 'string',
-        'bgImageId' => 'string',
-        'componentSpecList' => 'string[]'
+        'bid' => 'int',
+        'exposeCnt' => 'int',
+        'clickCnt' => 'int',
+        'conversionCnt' => 'int'
     ];
 
     /**
@@ -73,13 +70,10 @@ class PagesStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'pageType' => null,
-        'pageName' => null,
-        'pageTitle' => null,
-        'mobileAppId' => null,
-        'bgColor' => null,
-        'bgImageId' => null,
-        'componentSpecList' => null
+        'bid' => 'int64',
+        'exposeCnt' => 'int64',
+        'clickCnt' => 'int64',
+        'conversionCnt' => 'int64'
     ];
 
     /**
@@ -109,13 +103,10 @@ class PagesStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'pageType' => 'page_type',
-        'pageName' => 'page_name',
-        'pageTitle' => 'page_title',
-        'mobileAppId' => 'mobile_app_id',
-        'bgColor' => 'bg_color',
-        'bgImageId' => 'bg_image_id',
-        'componentSpecList' => 'component_spec_list'
+        'bid' => 'bid',
+        'exposeCnt' => 'expose_cnt',
+        'clickCnt' => 'click_cnt',
+        'conversionCnt' => 'conversion_cnt'
     ];
 
     /**
@@ -124,13 +115,10 @@ class PagesStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'pageType' => 'setPageType',
-        'pageName' => 'setPageName',
-        'pageTitle' => 'setPageTitle',
-        'mobileAppId' => 'setMobileAppId',
-        'bgColor' => 'setBgColor',
-        'bgImageId' => 'setBgImageId',
-        'componentSpecList' => 'setComponentSpecList'
+        'bid' => 'setBid',
+        'exposeCnt' => 'setExposeCnt',
+        'clickCnt' => 'setClickCnt',
+        'conversionCnt' => 'setConversionCnt'
     ];
 
     /**
@@ -139,13 +127,10 @@ class PagesStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'pageType' => 'getPageType',
-        'pageName' => 'getPageName',
-        'pageTitle' => 'getPageTitle',
-        'mobileAppId' => 'getMobileAppId',
-        'bgColor' => 'getBgColor',
-        'bgImageId' => 'getBgImageId',
-        'componentSpecList' => 'getComponentSpecList'
+        'bid' => 'getBid',
+        'exposeCnt' => 'getExposeCnt',
+        'clickCnt' => 'getClickCnt',
+        'conversionCnt' => 'getConversionCnt'
     ];
 
     /**
@@ -208,13 +193,10 @@ class PagesStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
-        $this->container['pageName'] = isset($data['pageName']) ? $data['pageName'] : null;
-        $this->container['pageTitle'] = isset($data['pageTitle']) ? $data['pageTitle'] : null;
-        $this->container['mobileAppId'] = isset($data['mobileAppId']) ? $data['mobileAppId'] : null;
-        $this->container['bgColor'] = isset($data['bgColor']) ? $data['bgColor'] : null;
-        $this->container['bgImageId'] = isset($data['bgImageId']) ? $data['bgImageId'] : null;
-        $this->container['componentSpecList'] = isset($data['componentSpecList']) ? $data['componentSpecList'] : null;
+        $this->container['bid'] = isset($data['bid']) ? $data['bid'] : null;
+        $this->container['exposeCnt'] = isset($data['exposeCnt']) ? $data['exposeCnt'] : null;
+        $this->container['clickCnt'] = isset($data['clickCnt']) ? $data['clickCnt'] : null;
+        $this->container['conversionCnt'] = isset($data['conversionCnt']) ? $data['conversionCnt'] : null;
     }
 
     /**
@@ -242,169 +224,97 @@ class PagesStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets pageType
+     * Gets bid
      *
-     * @return \TencentAds\Model\ComponentsPageType
+     * @return int
      */
-    public function getPageType()
+    public function getBid()
     {
-        return $this->container['pageType'];
+        return $this->container['bid'];
     }
 
     /**
-     * Sets pageType
+     * Sets bid
      *
-     * @param \TencentAds\Model\ComponentsPageType $pageType pageType
+     * @param int $bid bid
      *
      * @return $this
      */
-    public function setPageType($pageType)
+    public function setBid($bid)
     {
-        $this->container['pageType'] = $pageType;
+        $this->container['bid'] = $bid;
 
         return $this;
     }
 
     /**
-     * Gets pageName
+     * Gets exposeCnt
      *
-     * @return string
+     * @return int
      */
-    public function getPageName()
+    public function getExposeCnt()
     {
-        return $this->container['pageName'];
+        return $this->container['exposeCnt'];
     }
 
     /**
-     * Sets pageName
+     * Sets exposeCnt
      *
-     * @param string $pageName pageName
+     * @param int $exposeCnt exposeCnt
      *
      * @return $this
      */
-    public function setPageName($pageName)
+    public function setExposeCnt($exposeCnt)
     {
-        $this->container['pageName'] = $pageName;
+        $this->container['exposeCnt'] = $exposeCnt;
 
         return $this;
     }
 
     /**
-     * Gets pageTitle
+     * Gets clickCnt
      *
-     * @return string
+     * @return int
      */
-    public function getPageTitle()
+    public function getClickCnt()
     {
-        return $this->container['pageTitle'];
+        return $this->container['clickCnt'];
     }
 
     /**
-     * Sets pageTitle
+     * Sets clickCnt
      *
-     * @param string $pageTitle pageTitle
+     * @param int $clickCnt clickCnt
      *
      * @return $this
      */
-    public function setPageTitle($pageTitle)
+    public function setClickCnt($clickCnt)
     {
-        $this->container['pageTitle'] = $pageTitle;
+        $this->container['clickCnt'] = $clickCnt;
 
         return $this;
     }
 
     /**
-     * Gets mobileAppId
+     * Gets conversionCnt
      *
-     * @return string
+     * @return int
      */
-    public function getMobileAppId()
+    public function getConversionCnt()
     {
-        return $this->container['mobileAppId'];
+        return $this->container['conversionCnt'];
     }
 
     /**
-     * Sets mobileAppId
+     * Sets conversionCnt
      *
-     * @param string $mobileAppId mobileAppId
+     * @param int $conversionCnt conversionCnt
      *
      * @return $this
      */
-    public function setMobileAppId($mobileAppId)
+    public function setConversionCnt($conversionCnt)
     {
-        $this->container['mobileAppId'] = $mobileAppId;
-
-        return $this;
-    }
-
-    /**
-     * Gets bgColor
-     *
-     * @return string
-     */
-    public function getBgColor()
-    {
-        return $this->container['bgColor'];
-    }
-
-    /**
-     * Sets bgColor
-     *
-     * @param string $bgColor bgColor
-     *
-     * @return $this
-     */
-    public function setBgColor($bgColor)
-    {
-        $this->container['bgColor'] = $bgColor;
-
-        return $this;
-    }
-
-    /**
-     * Gets bgImageId
-     *
-     * @return string
-     */
-    public function getBgImageId()
-    {
-        return $this->container['bgImageId'];
-    }
-
-    /**
-     * Sets bgImageId
-     *
-     * @param string $bgImageId bgImageId
-     *
-     * @return $this
-     */
-    public function setBgImageId($bgImageId)
-    {
-        $this->container['bgImageId'] = $bgImageId;
-
-        return $this;
-    }
-
-    /**
-     * Gets componentSpecList
-     *
-     * @return string[]
-     */
-    public function getComponentSpecList()
-    {
-        return $this->container['componentSpecList'];
-    }
-
-    /**
-     * Sets componentSpecList
-     *
-     * @param string[] $componentSpecList componentSpecList
-     *
-     * @return $this
-     */
-    public function setComponentSpecList($componentSpecList)
-    {
-        $this->container['componentSpecList'] = $componentSpecList;
+        $this->container['conversionCnt'] = $conversionCnt;
 
         return $this;
     }

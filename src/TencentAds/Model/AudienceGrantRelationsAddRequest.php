@@ -60,7 +60,7 @@ class AudienceGrantRelationsAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'int',
         'audienceIdList' => 'int[]',
         'grantType' => '\TencentAds\Model\AudienceGrantType',
-        'grantSpec' => '\TencentAds\Model\GrantSpec'
+        'grantSpec' => '\TencentAds\Model\AudienceGrantRelationsAddGrantSpec'
     ];
 
     /**
@@ -297,7 +297,7 @@ class AudienceGrantRelationsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets grantSpec
      *
-     * @return \TencentAds\Model\GrantSpec
+     * @return \TencentAds\Model\AudienceGrantRelationsAddGrantSpec
      */
     public function getGrantSpec()
     {
@@ -307,7 +307,7 @@ class AudienceGrantRelationsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets grantSpec
      *
-     * @param \TencentAds\Model\GrantSpec $grantSpec grantSpec
+     * @param \TencentAds\Model\AudienceGrantRelationsAddGrantSpec $grantSpec grantSpec
      *
      * @return $this
      */

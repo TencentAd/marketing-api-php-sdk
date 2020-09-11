@@ -101,7 +101,10 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'deepConversionBehaviorBid' => 'int',
         'deepConversionWorthRate' => 'double',
         'androidChannelPackageAuditMessage' => 'string',
-        'systemStatus' => '\TencentAds\Model\AdgroupSysStatus'
+        'systemStatus' => '\TencentAds\Model\AdgroupSysStatus',
+        'bidMode' => '\TencentAds\Model\BidMode',
+        'status' => '\TencentAds\Model\CalcStatus',
+        'bidAdjustment' => '\TencentAds\Model\BidAdjustment'
     ];
 
     /**
@@ -153,7 +156,10 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'deepConversionBehaviorBid' => 'int64',
         'deepConversionWorthRate' => 'double',
         'androidChannelPackageAuditMessage' => null,
-        'systemStatus' => null
+        'systemStatus' => null,
+        'bidMode' => null,
+        'status' => null,
+        'bidAdjustment' => null
     ];
 
     /**
@@ -226,7 +232,10 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'deepConversionBehaviorBid' => 'deep_conversion_behavior_bid',
         'deepConversionWorthRate' => 'deep_conversion_worth_rate',
         'androidChannelPackageAuditMessage' => 'android_channel_package_audit_message',
-        'systemStatus' => 'system_status'
+        'systemStatus' => 'system_status',
+        'bidMode' => 'bid_mode',
+        'status' => 'status',
+        'bidAdjustment' => 'bid_adjustment'
     ];
 
     /**
@@ -278,7 +287,10 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'deepConversionBehaviorBid' => 'setDeepConversionBehaviorBid',
         'deepConversionWorthRate' => 'setDeepConversionWorthRate',
         'androidChannelPackageAuditMessage' => 'setAndroidChannelPackageAuditMessage',
-        'systemStatus' => 'setSystemStatus'
+        'systemStatus' => 'setSystemStatus',
+        'bidMode' => 'setBidMode',
+        'status' => 'setStatus',
+        'bidAdjustment' => 'setBidAdjustment'
     ];
 
     /**
@@ -330,7 +342,10 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'deepConversionBehaviorBid' => 'getDeepConversionBehaviorBid',
         'deepConversionWorthRate' => 'getDeepConversionWorthRate',
         'androidChannelPackageAuditMessage' => 'getAndroidChannelPackageAuditMessage',
-        'systemStatus' => 'getSystemStatus'
+        'systemStatus' => 'getSystemStatus',
+        'bidMode' => 'getBidMode',
+        'status' => 'getStatus',
+        'bidAdjustment' => 'getBidAdjustment'
     ];
 
     /**
@@ -437,6 +452,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['deepConversionWorthRate'] = isset($data['deepConversionWorthRate']) ? $data['deepConversionWorthRate'] : null;
         $this->container['androidChannelPackageAuditMessage'] = isset($data['androidChannelPackageAuditMessage']) ? $data['androidChannelPackageAuditMessage'] : null;
         $this->container['systemStatus'] = isset($data['systemStatus']) ? $data['systemStatus'] : null;
+        $this->container['bidMode'] = isset($data['bidMode']) ? $data['bidMode'] : null;
+        $this->container['status'] = isset($data['status']) ? $data['status'] : null;
+        $this->container['bidAdjustment'] = isset($data['bidAdjustment']) ? $data['bidAdjustment'] : null;
     }
 
     /**
@@ -1515,6 +1533,78 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setSystemStatus($systemStatus)
     {
         $this->container['systemStatus'] = $systemStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets bidMode
+     *
+     * @return \TencentAds\Model\BidMode
+     */
+    public function getBidMode()
+    {
+        return $this->container['bidMode'];
+    }
+
+    /**
+     * Sets bidMode
+     *
+     * @param \TencentAds\Model\BidMode $bidMode bidMode
+     *
+     * @return $this
+     */
+    public function setBidMode($bidMode)
+    {
+        $this->container['bidMode'] = $bidMode;
+
+        return $this;
+    }
+
+    /**
+     * Gets status
+     *
+     * @return \TencentAds\Model\CalcStatus
+     */
+    public function getStatus()
+    {
+        return $this->container['status'];
+    }
+
+    /**
+     * Sets status
+     *
+     * @param \TencentAds\Model\CalcStatus $status status
+     *
+     * @return $this
+     */
+    public function setStatus($status)
+    {
+        $this->container['status'] = $status;
+
+        return $this;
+    }
+
+    /**
+     * Gets bidAdjustment
+     *
+     * @return \TencentAds\Model\BidAdjustment
+     */
+    public function getBidAdjustment()
+    {
+        return $this->container['bidAdjustment'];
+    }
+
+    /**
+     * Sets bidAdjustment
+     *
+     * @param \TencentAds\Model\BidAdjustment $bidAdjustment bidAdjustment
+     *
+     * @return $this
+     */
+    public function setBidAdjustment($bidAdjustment)
+    {
+        $this->container['bidAdjustment'] = $bidAdjustment;
 
         return $this;
     }

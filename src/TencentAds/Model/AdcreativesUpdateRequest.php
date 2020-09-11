@@ -64,6 +64,8 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'linkPageType' => '\TencentAds\Model\LinkPageType',
         'linkNameType' => '\TencentAds\Model\LinkNameTypeMP',
         'linkPageSpec' => '\TencentAds\Model\LinkPageSpec',
+        'conversionDataType' => '\TencentAds\Model\ConversionDataType',
+        'conversionTargetType' => '\TencentAds\Model\ConversionTargetType',
         'qqMiniGameTrackingQueryString' => 'string',
         'deepLinkUrl' => 'string',
         'androidDeepLinkAppId' => 'string',
@@ -81,6 +83,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'playablePageMaterialId' => 'string',
         'videoEndPage' => '\TencentAds\Model\VideoEndPageSpec',
         'feedsVideoCommentSwitch' => 'bool',
+        'floatingZone' => '\TencentAds\Model\FloatingZone',
         'accountId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsMp'
     ];
@@ -98,6 +101,8 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'linkPageType' => null,
         'linkNameType' => null,
         'linkPageSpec' => null,
+        'conversionDataType' => null,
+        'conversionTargetType' => null,
         'qqMiniGameTrackingQueryString' => null,
         'deepLinkUrl' => null,
         'androidDeepLinkAppId' => null,
@@ -115,6 +120,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'playablePageMaterialId' => null,
         'videoEndPage' => null,
         'feedsVideoCommentSwitch' => null,
+        'floatingZone' => null,
         'accountId' => 'int64',
         'adcreativeElements' => null
     ];
@@ -153,6 +159,8 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'linkPageType' => 'link_page_type',
         'linkNameType' => 'link_name_type',
         'linkPageSpec' => 'link_page_spec',
+        'conversionDataType' => 'conversion_data_type',
+        'conversionTargetType' => 'conversion_target_type',
         'qqMiniGameTrackingQueryString' => 'qq_mini_game_tracking_query_string',
         'deepLinkUrl' => 'deep_link_url',
         'androidDeepLinkAppId' => 'android_deep_link_app_id',
@@ -170,6 +178,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'playablePageMaterialId' => 'playable_page_material_id',
         'videoEndPage' => 'video_end_page',
         'feedsVideoCommentSwitch' => 'feeds_video_comment_switch',
+        'floatingZone' => 'floating_zone',
         'accountId' => 'account_id',
         'adcreativeElements' => 'adcreative_elements'
     ];
@@ -187,6 +196,8 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'linkPageType' => 'setLinkPageType',
         'linkNameType' => 'setLinkNameType',
         'linkPageSpec' => 'setLinkPageSpec',
+        'conversionDataType' => 'setConversionDataType',
+        'conversionTargetType' => 'setConversionTargetType',
         'qqMiniGameTrackingQueryString' => 'setQqMiniGameTrackingQueryString',
         'deepLinkUrl' => 'setDeepLinkUrl',
         'androidDeepLinkAppId' => 'setAndroidDeepLinkAppId',
@@ -204,6 +215,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'playablePageMaterialId' => 'setPlayablePageMaterialId',
         'videoEndPage' => 'setVideoEndPage',
         'feedsVideoCommentSwitch' => 'setFeedsVideoCommentSwitch',
+        'floatingZone' => 'setFloatingZone',
         'accountId' => 'setAccountId',
         'adcreativeElements' => 'setAdcreativeElements'
     ];
@@ -221,6 +233,8 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'linkPageType' => 'getLinkPageType',
         'linkNameType' => 'getLinkNameType',
         'linkPageSpec' => 'getLinkPageSpec',
+        'conversionDataType' => 'getConversionDataType',
+        'conversionTargetType' => 'getConversionTargetType',
         'qqMiniGameTrackingQueryString' => 'getQqMiniGameTrackingQueryString',
         'deepLinkUrl' => 'getDeepLinkUrl',
         'androidDeepLinkAppId' => 'getAndroidDeepLinkAppId',
@@ -238,6 +252,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'playablePageMaterialId' => 'getPlayablePageMaterialId',
         'videoEndPage' => 'getVideoEndPage',
         'feedsVideoCommentSwitch' => 'getFeedsVideoCommentSwitch',
+        'floatingZone' => 'getFloatingZone',
         'accountId' => 'getAccountId',
         'adcreativeElements' => 'getAdcreativeElements'
     ];
@@ -309,6 +324,8 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['linkPageType'] = isset($data['linkPageType']) ? $data['linkPageType'] : null;
         $this->container['linkNameType'] = isset($data['linkNameType']) ? $data['linkNameType'] : null;
         $this->container['linkPageSpec'] = isset($data['linkPageSpec']) ? $data['linkPageSpec'] : null;
+        $this->container['conversionDataType'] = isset($data['conversionDataType']) ? $data['conversionDataType'] : null;
+        $this->container['conversionTargetType'] = isset($data['conversionTargetType']) ? $data['conversionTargetType'] : null;
         $this->container['qqMiniGameTrackingQueryString'] = isset($data['qqMiniGameTrackingQueryString']) ? $data['qqMiniGameTrackingQueryString'] : null;
         $this->container['deepLinkUrl'] = isset($data['deepLinkUrl']) ? $data['deepLinkUrl'] : null;
         $this->container['androidDeepLinkAppId'] = isset($data['androidDeepLinkAppId']) ? $data['androidDeepLinkAppId'] : null;
@@ -326,6 +343,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['playablePageMaterialId'] = isset($data['playablePageMaterialId']) ? $data['playablePageMaterialId'] : null;
         $this->container['videoEndPage'] = isset($data['videoEndPage']) ? $data['videoEndPage'] : null;
         $this->container['feedsVideoCommentSwitch'] = isset($data['feedsVideoCommentSwitch']) ? $data['feedsVideoCommentSwitch'] : null;
+        $this->container['floatingZone'] = isset($data['floatingZone']) ? $data['floatingZone'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
     }
@@ -518,6 +536,54 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setLinkPageSpec($linkPageSpec)
     {
         $this->container['linkPageSpec'] = $linkPageSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets conversionDataType
+     *
+     * @return \TencentAds\Model\ConversionDataType
+     */
+    public function getConversionDataType()
+    {
+        return $this->container['conversionDataType'];
+    }
+
+    /**
+     * Sets conversionDataType
+     *
+     * @param \TencentAds\Model\ConversionDataType $conversionDataType conversionDataType
+     *
+     * @return $this
+     */
+    public function setConversionDataType($conversionDataType)
+    {
+        $this->container['conversionDataType'] = $conversionDataType;
+
+        return $this;
+    }
+
+    /**
+     * Gets conversionTargetType
+     *
+     * @return \TencentAds\Model\ConversionTargetType
+     */
+    public function getConversionTargetType()
+    {
+        return $this->container['conversionTargetType'];
+    }
+
+    /**
+     * Sets conversionTargetType
+     *
+     * @param \TencentAds\Model\ConversionTargetType $conversionTargetType conversionTargetType
+     *
+     * @return $this
+     */
+    public function setConversionTargetType($conversionTargetType)
+    {
+        $this->container['conversionTargetType'] = $conversionTargetType;
 
         return $this;
     }
@@ -926,6 +992,30 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setFeedsVideoCommentSwitch($feedsVideoCommentSwitch)
     {
         $this->container['feedsVideoCommentSwitch'] = $feedsVideoCommentSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets floatingZone
+     *
+     * @return \TencentAds\Model\FloatingZone
+     */
+    public function getFloatingZone()
+    {
+        return $this->container['floatingZone'];
+    }
+
+    /**
+     * Sets floatingZone
+     *
+     * @param \TencentAds\Model\FloatingZone $floatingZone floatingZone
+     *
+     * @return $this
+     */
+    public function setFloatingZone($floatingZone)
+    {
+        $this->container['floatingZone'] = $floatingZone;
 
         return $this;
     }

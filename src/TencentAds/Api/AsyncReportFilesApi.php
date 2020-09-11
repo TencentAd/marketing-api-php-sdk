@@ -99,7 +99,7 @@ class AsyncReportFilesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AsyncReportFilesGetResponse
+     * @return string
      */
     public function asyncReportFilesGet($accountId, $taskId, $fileId, $fields = null)
     {
@@ -119,11 +119,11 @@ class AsyncReportFilesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \TencentAds\Model\AsyncReportFilesGetResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
     public function asyncReportFilesGetWithHttpInfo($accountId, $taskId, $fileId, $fields = null)
     {
-        $returnType = '\TencentAds\Model\AsyncReportFilesGetResponse';
+        $returnType = 'string';
         $request = $this->asyncReportFilesGetRequest($accountId, $taskId, $fileId, $fields);
 
         try {
@@ -175,7 +175,7 @@ class AsyncReportFilesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\TencentAds\Model\AsyncReportFilesGetResponse',
+                        'string',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class AsyncReportFilesApi
      */
     public function asyncReportFilesGetAsyncWithHttpInfo($accountId, $taskId, $fileId, $fields = null)
     {
-        $returnType = '\TencentAds\Model\AsyncReportFilesGetResponse';
+        $returnType = 'string';
         $request = $this->asyncReportFilesGetRequest($accountId, $taskId, $fileId, $fields);
 
         return $this->client
@@ -326,6 +326,9 @@ class AsyncReportFilesApi
         // body params
         $_tempBody = null;
 
+        if (in_array('multipart/form-data', ['text/plain'])) {
+            $multipart = true;
+        }
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
                 ['application/json']

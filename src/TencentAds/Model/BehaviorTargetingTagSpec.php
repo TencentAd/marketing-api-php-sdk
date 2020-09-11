@@ -59,7 +59,7 @@ class BehaviorTargetingTagSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'queryMode' => '\TencentAds\Model\TargetingTagQueryMode',
-        'querySpec' => '\TencentAds\Model\QuerySpec'
+        'querySpec' => '\TencentAds\Model\TargetingTagsGetQuerySpec'
     ];
 
     /**
@@ -238,7 +238,7 @@ class BehaviorTargetingTagSpec implements ModelInterface, ArrayAccess
     /**
      * Gets querySpec
      *
-     * @return \TencentAds\Model\QuerySpec
+     * @return \TencentAds\Model\TargetingTagsGetQuerySpec
      */
     public function getQuerySpec()
     {
@@ -248,7 +248,7 @@ class BehaviorTargetingTagSpec implements ModelInterface, ArrayAccess
     /**
      * Sets querySpec
      *
-     * @param \TencentAds\Model\QuerySpec $querySpec querySpec
+     * @param \TencentAds\Model\TargetingTagsGetQuerySpec $querySpec querySpec
      *
      * @return $this
      */

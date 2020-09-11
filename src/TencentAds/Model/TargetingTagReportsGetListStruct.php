@@ -261,6 +261,10 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'webCartAmount' => 'int',
         'appOrderAmount' => 'int',
         'webOrderAmount' => 'int',
+        'creWebCost' => 'int',
+        'creAppCost' => 'int',
+        'preCreWebCost' => 'int',
+        'preCreAppCost' => 'int',
         'accountId' => 'int',
         'campaignId' => 'int',
         'adgroupId' => 'int',
@@ -302,7 +306,18 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'noInterestCount' => 'int',
         'firstDayOrderCount' => 'int',
         'firstDayOrderAmount' => 'int',
-        'addWishlistCount' => 'int'
+        'addWishlistCount' => 'int',
+        'effectLeadsPurchaseCost' => 'int',
+        'incomeRoi1' => 'double',
+        'incomeRoi3' => 'double',
+        'incomeRoi7' => 'double',
+        'incomeRoi14' => 'double',
+        'firstDayPayCount' => 'int',
+        'firstDayPayCost' => 'int',
+        'firstDayFirstPayCost' => 'int',
+        'firstDayFirstPayCount' => 'int',
+        'firstDayPayAmount' => 'int',
+        'firstDayFirstPayRate' => 'double'
     ];
 
     /**
@@ -514,6 +529,10 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'webCartAmount' => 'int64',
         'appOrderAmount' => 'int64',
         'webOrderAmount' => 'int64',
+        'creWebCost' => 'int64',
+        'creAppCost' => 'int64',
+        'preCreWebCost' => 'int64',
+        'preCreAppCost' => 'int64',
         'accountId' => 'int64',
         'campaignId' => 'int64',
         'adgroupId' => 'int64',
@@ -555,7 +574,18 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'noInterestCount' => 'int64',
         'firstDayOrderCount' => 'int64',
         'firstDayOrderAmount' => 'int64',
-        'addWishlistCount' => 'int64'
+        'addWishlistCount' => 'int64',
+        'effectLeadsPurchaseCost' => 'int64',
+        'incomeRoi1' => 'double',
+        'incomeRoi3' => 'double',
+        'incomeRoi7' => 'double',
+        'incomeRoi14' => 'double',
+        'firstDayPayCount' => 'int64',
+        'firstDayPayCost' => 'int64',
+        'firstDayFirstPayCost' => 'int64',
+        'firstDayFirstPayCount' => 'int64',
+        'firstDayPayAmount' => 'int64',
+        'firstDayFirstPayRate' => 'double'
     ];
 
     /**
@@ -788,6 +818,10 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'webCartAmount' => 'web_cart_amount',
         'appOrderAmount' => 'app_order_amount',
         'webOrderAmount' => 'web_order_amount',
+        'creWebCost' => 'cre_web_cost',
+        'creAppCost' => 'cre_app_cost',
+        'preCreWebCost' => 'pre_cre_web_cost',
+        'preCreAppCost' => 'pre_cre_app_cost',
         'accountId' => 'account_id',
         'campaignId' => 'campaign_id',
         'adgroupId' => 'adgroup_id',
@@ -829,7 +863,18 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'noInterestCount' => 'no_interest_count',
         'firstDayOrderCount' => 'first_day_order_count',
         'firstDayOrderAmount' => 'first_day_order_amount',
-        'addWishlistCount' => 'add_wishlist_count'
+        'addWishlistCount' => 'add_wishlist_count',
+        'effectLeadsPurchaseCost' => 'effect_leads_purchase_cost',
+        'incomeRoi1' => 'income_roi_1',
+        'incomeRoi3' => 'income_roi_3',
+        'incomeRoi7' => 'income_roi_7',
+        'incomeRoi14' => 'income_roi_14',
+        'firstDayPayCount' => 'first_day_pay_count',
+        'firstDayPayCost' => 'first_day_pay_cost',
+        'firstDayFirstPayCost' => 'first_day_first_pay_cost',
+        'firstDayFirstPayCount' => 'first_day_first_pay_count',
+        'firstDayPayAmount' => 'first_day_pay_amount',
+        'firstDayFirstPayRate' => 'first_day_first_pay_rate'
     ];
 
     /**
@@ -1041,6 +1086,10 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'webCartAmount' => 'setWebCartAmount',
         'appOrderAmount' => 'setAppOrderAmount',
         'webOrderAmount' => 'setWebOrderAmount',
+        'creWebCost' => 'setCreWebCost',
+        'creAppCost' => 'setCreAppCost',
+        'preCreWebCost' => 'setPreCreWebCost',
+        'preCreAppCost' => 'setPreCreAppCost',
         'accountId' => 'setAccountId',
         'campaignId' => 'setCampaignId',
         'adgroupId' => 'setAdgroupId',
@@ -1082,7 +1131,18 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'noInterestCount' => 'setNoInterestCount',
         'firstDayOrderCount' => 'setFirstDayOrderCount',
         'firstDayOrderAmount' => 'setFirstDayOrderAmount',
-        'addWishlistCount' => 'setAddWishlistCount'
+        'addWishlistCount' => 'setAddWishlistCount',
+        'effectLeadsPurchaseCost' => 'setEffectLeadsPurchaseCost',
+        'incomeRoi1' => 'setIncomeRoi1',
+        'incomeRoi3' => 'setIncomeRoi3',
+        'incomeRoi7' => 'setIncomeRoi7',
+        'incomeRoi14' => 'setIncomeRoi14',
+        'firstDayPayCount' => 'setFirstDayPayCount',
+        'firstDayPayCost' => 'setFirstDayPayCost',
+        'firstDayFirstPayCost' => 'setFirstDayFirstPayCost',
+        'firstDayFirstPayCount' => 'setFirstDayFirstPayCount',
+        'firstDayPayAmount' => 'setFirstDayPayAmount',
+        'firstDayFirstPayRate' => 'setFirstDayFirstPayRate'
     ];
 
     /**
@@ -1294,6 +1354,10 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'webCartAmount' => 'getWebCartAmount',
         'appOrderAmount' => 'getAppOrderAmount',
         'webOrderAmount' => 'getWebOrderAmount',
+        'creWebCost' => 'getCreWebCost',
+        'creAppCost' => 'getCreAppCost',
+        'preCreWebCost' => 'getPreCreWebCost',
+        'preCreAppCost' => 'getPreCreAppCost',
         'accountId' => 'getAccountId',
         'campaignId' => 'getCampaignId',
         'adgroupId' => 'getAdgroupId',
@@ -1335,7 +1399,18 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'noInterestCount' => 'getNoInterestCount',
         'firstDayOrderCount' => 'getFirstDayOrderCount',
         'firstDayOrderAmount' => 'getFirstDayOrderAmount',
-        'addWishlistCount' => 'getAddWishlistCount'
+        'addWishlistCount' => 'getAddWishlistCount',
+        'effectLeadsPurchaseCost' => 'getEffectLeadsPurchaseCost',
+        'incomeRoi1' => 'getIncomeRoi1',
+        'incomeRoi3' => 'getIncomeRoi3',
+        'incomeRoi7' => 'getIncomeRoi7',
+        'incomeRoi14' => 'getIncomeRoi14',
+        'firstDayPayCount' => 'getFirstDayPayCount',
+        'firstDayPayCost' => 'getFirstDayPayCost',
+        'firstDayFirstPayCost' => 'getFirstDayFirstPayCost',
+        'firstDayFirstPayCount' => 'getFirstDayFirstPayCount',
+        'firstDayPayAmount' => 'getFirstDayPayAmount',
+        'firstDayFirstPayRate' => 'getFirstDayFirstPayRate'
     ];
 
     /**
@@ -1601,6 +1676,10 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['webCartAmount'] = isset($data['webCartAmount']) ? $data['webCartAmount'] : null;
         $this->container['appOrderAmount'] = isset($data['appOrderAmount']) ? $data['appOrderAmount'] : null;
         $this->container['webOrderAmount'] = isset($data['webOrderAmount']) ? $data['webOrderAmount'] : null;
+        $this->container['creWebCost'] = isset($data['creWebCost']) ? $data['creWebCost'] : null;
+        $this->container['creAppCost'] = isset($data['creAppCost']) ? $data['creAppCost'] : null;
+        $this->container['preCreWebCost'] = isset($data['preCreWebCost']) ? $data['preCreWebCost'] : null;
+        $this->container['preCreAppCost'] = isset($data['preCreAppCost']) ? $data['preCreAppCost'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
@@ -1643,6 +1722,17 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['firstDayOrderCount'] = isset($data['firstDayOrderCount']) ? $data['firstDayOrderCount'] : null;
         $this->container['firstDayOrderAmount'] = isset($data['firstDayOrderAmount']) ? $data['firstDayOrderAmount'] : null;
         $this->container['addWishlistCount'] = isset($data['addWishlistCount']) ? $data['addWishlistCount'] : null;
+        $this->container['effectLeadsPurchaseCost'] = isset($data['effectLeadsPurchaseCost']) ? $data['effectLeadsPurchaseCost'] : null;
+        $this->container['incomeRoi1'] = isset($data['incomeRoi1']) ? $data['incomeRoi1'] : null;
+        $this->container['incomeRoi3'] = isset($data['incomeRoi3']) ? $data['incomeRoi3'] : null;
+        $this->container['incomeRoi7'] = isset($data['incomeRoi7']) ? $data['incomeRoi7'] : null;
+        $this->container['incomeRoi14'] = isset($data['incomeRoi14']) ? $data['incomeRoi14'] : null;
+        $this->container['firstDayPayCount'] = isset($data['firstDayPayCount']) ? $data['firstDayPayCount'] : null;
+        $this->container['firstDayPayCost'] = isset($data['firstDayPayCost']) ? $data['firstDayPayCost'] : null;
+        $this->container['firstDayFirstPayCost'] = isset($data['firstDayFirstPayCost']) ? $data['firstDayFirstPayCost'] : null;
+        $this->container['firstDayFirstPayCount'] = isset($data['firstDayFirstPayCount']) ? $data['firstDayFirstPayCount'] : null;
+        $this->container['firstDayPayAmount'] = isset($data['firstDayPayAmount']) ? $data['firstDayPayAmount'] : null;
+        $this->container['firstDayFirstPayRate'] = isset($data['firstDayFirstPayRate']) ? $data['firstDayFirstPayRate'] : null;
     }
 
     /**
@@ -6542,6 +6632,102 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets creWebCost
+     *
+     * @return int
+     */
+    public function getCreWebCost()
+    {
+        return $this->container['creWebCost'];
+    }
+
+    /**
+     * Sets creWebCost
+     *
+     * @param int $creWebCost creWebCost
+     *
+     * @return $this
+     */
+    public function setCreWebCost($creWebCost)
+    {
+        $this->container['creWebCost'] = $creWebCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets creAppCost
+     *
+     * @return int
+     */
+    public function getCreAppCost()
+    {
+        return $this->container['creAppCost'];
+    }
+
+    /**
+     * Sets creAppCost
+     *
+     * @param int $creAppCost creAppCost
+     *
+     * @return $this
+     */
+    public function setCreAppCost($creAppCost)
+    {
+        $this->container['creAppCost'] = $creAppCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets preCreWebCost
+     *
+     * @return int
+     */
+    public function getPreCreWebCost()
+    {
+        return $this->container['preCreWebCost'];
+    }
+
+    /**
+     * Sets preCreWebCost
+     *
+     * @param int $preCreWebCost preCreWebCost
+     *
+     * @return $this
+     */
+    public function setPreCreWebCost($preCreWebCost)
+    {
+        $this->container['preCreWebCost'] = $preCreWebCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets preCreAppCost
+     *
+     * @return int
+     */
+    public function getPreCreAppCost()
+    {
+        return $this->container['preCreAppCost'];
+    }
+
+    /**
+     * Sets preCreAppCost
+     *
+     * @param int $preCreAppCost preCreAppCost
+     *
+     * @return $this
+     */
+    public function setPreCreAppCost($preCreAppCost)
+    {
+        $this->container['preCreAppCost'] = $preCreAppCost;
+
+        return $this;
+    }
+
+    /**
      * Gets accountId
      *
      * @return int
@@ -7545,6 +7731,270 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setAddWishlistCount($addWishlistCount)
     {
         $this->container['addWishlistCount'] = $addWishlistCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets effectLeadsPurchaseCost
+     *
+     * @return int
+     */
+    public function getEffectLeadsPurchaseCost()
+    {
+        return $this->container['effectLeadsPurchaseCost'];
+    }
+
+    /**
+     * Sets effectLeadsPurchaseCost
+     *
+     * @param int $effectLeadsPurchaseCost effectLeadsPurchaseCost
+     *
+     * @return $this
+     */
+    public function setEffectLeadsPurchaseCost($effectLeadsPurchaseCost)
+    {
+        $this->container['effectLeadsPurchaseCost'] = $effectLeadsPurchaseCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets incomeRoi1
+     *
+     * @return double
+     */
+    public function getIncomeRoi1()
+    {
+        return $this->container['incomeRoi1'];
+    }
+
+    /**
+     * Sets incomeRoi1
+     *
+     * @param double $incomeRoi1 incomeRoi1
+     *
+     * @return $this
+     */
+    public function setIncomeRoi1($incomeRoi1)
+    {
+        $this->container['incomeRoi1'] = $incomeRoi1;
+
+        return $this;
+    }
+
+    /**
+     * Gets incomeRoi3
+     *
+     * @return double
+     */
+    public function getIncomeRoi3()
+    {
+        return $this->container['incomeRoi3'];
+    }
+
+    /**
+     * Sets incomeRoi3
+     *
+     * @param double $incomeRoi3 incomeRoi3
+     *
+     * @return $this
+     */
+    public function setIncomeRoi3($incomeRoi3)
+    {
+        $this->container['incomeRoi3'] = $incomeRoi3;
+
+        return $this;
+    }
+
+    /**
+     * Gets incomeRoi7
+     *
+     * @return double
+     */
+    public function getIncomeRoi7()
+    {
+        return $this->container['incomeRoi7'];
+    }
+
+    /**
+     * Sets incomeRoi7
+     *
+     * @param double $incomeRoi7 incomeRoi7
+     *
+     * @return $this
+     */
+    public function setIncomeRoi7($incomeRoi7)
+    {
+        $this->container['incomeRoi7'] = $incomeRoi7;
+
+        return $this;
+    }
+
+    /**
+     * Gets incomeRoi14
+     *
+     * @return double
+     */
+    public function getIncomeRoi14()
+    {
+        return $this->container['incomeRoi14'];
+    }
+
+    /**
+     * Sets incomeRoi14
+     *
+     * @param double $incomeRoi14 incomeRoi14
+     *
+     * @return $this
+     */
+    public function setIncomeRoi14($incomeRoi14)
+    {
+        $this->container['incomeRoi14'] = $incomeRoi14;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstDayPayCount
+     *
+     * @return int
+     */
+    public function getFirstDayPayCount()
+    {
+        return $this->container['firstDayPayCount'];
+    }
+
+    /**
+     * Sets firstDayPayCount
+     *
+     * @param int $firstDayPayCount firstDayPayCount
+     *
+     * @return $this
+     */
+    public function setFirstDayPayCount($firstDayPayCount)
+    {
+        $this->container['firstDayPayCount'] = $firstDayPayCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstDayPayCost
+     *
+     * @return int
+     */
+    public function getFirstDayPayCost()
+    {
+        return $this->container['firstDayPayCost'];
+    }
+
+    /**
+     * Sets firstDayPayCost
+     *
+     * @param int $firstDayPayCost firstDayPayCost
+     *
+     * @return $this
+     */
+    public function setFirstDayPayCost($firstDayPayCost)
+    {
+        $this->container['firstDayPayCost'] = $firstDayPayCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstDayFirstPayCost
+     *
+     * @return int
+     */
+    public function getFirstDayFirstPayCost()
+    {
+        return $this->container['firstDayFirstPayCost'];
+    }
+
+    /**
+     * Sets firstDayFirstPayCost
+     *
+     * @param int $firstDayFirstPayCost firstDayFirstPayCost
+     *
+     * @return $this
+     */
+    public function setFirstDayFirstPayCost($firstDayFirstPayCost)
+    {
+        $this->container['firstDayFirstPayCost'] = $firstDayFirstPayCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstDayFirstPayCount
+     *
+     * @return int
+     */
+    public function getFirstDayFirstPayCount()
+    {
+        return $this->container['firstDayFirstPayCount'];
+    }
+
+    /**
+     * Sets firstDayFirstPayCount
+     *
+     * @param int $firstDayFirstPayCount firstDayFirstPayCount
+     *
+     * @return $this
+     */
+    public function setFirstDayFirstPayCount($firstDayFirstPayCount)
+    {
+        $this->container['firstDayFirstPayCount'] = $firstDayFirstPayCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstDayPayAmount
+     *
+     * @return int
+     */
+    public function getFirstDayPayAmount()
+    {
+        return $this->container['firstDayPayAmount'];
+    }
+
+    /**
+     * Sets firstDayPayAmount
+     *
+     * @param int $firstDayPayAmount firstDayPayAmount
+     *
+     * @return $this
+     */
+    public function setFirstDayPayAmount($firstDayPayAmount)
+    {
+        $this->container['firstDayPayAmount'] = $firstDayPayAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstDayFirstPayRate
+     *
+     * @return double
+     */
+    public function getFirstDayFirstPayRate()
+    {
+        return $this->container['firstDayFirstPayRate'];
+    }
+
+    /**
+     * Sets firstDayFirstPayRate
+     *
+     * @param double $firstDayFirstPayRate firstDayFirstPayRate
+     *
+     * @return $this
+     */
+    public function setFirstDayFirstPayRate($firstDayFirstPayRate)
+    {
+        $this->container['firstDayFirstPayRate'] = $firstDayFirstPayRate;
 
         return $this;
     }

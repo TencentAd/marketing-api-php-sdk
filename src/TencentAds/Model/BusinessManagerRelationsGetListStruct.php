@@ -60,7 +60,7 @@ class BusinessManagerRelationsGetListStruct implements ModelInterface, ArrayAcce
     protected static $swaggerTypes = [
         'accountId' => 'int',
         'corporationName' => 'string',
-        'fundType' => '\TencentAds\Model\BMAccountType'
+        'accountType' => '\TencentAds\Model\BMAccountType'
     ];
 
     /**
@@ -71,7 +71,7 @@ class BusinessManagerRelationsGetListStruct implements ModelInterface, ArrayAcce
     protected static $swaggerFormats = [
         'accountId' => 'int64',
         'corporationName' => null,
-        'fundType' => null
+        'accountType' => null
     ];
 
     /**
@@ -103,7 +103,7 @@ class BusinessManagerRelationsGetListStruct implements ModelInterface, ArrayAcce
     protected static $attributeMap = [
         'accountId' => 'account_id',
         'corporationName' => 'corporation_name',
-        'fundType' => 'fund_type'
+        'accountType' => 'account_type'
     ];
 
     /**
@@ -114,7 +114,7 @@ class BusinessManagerRelationsGetListStruct implements ModelInterface, ArrayAcce
     protected static $setters = [
         'accountId' => 'setAccountId',
         'corporationName' => 'setCorporationName',
-        'fundType' => 'setFundType'
+        'accountType' => 'setAccountType'
     ];
 
     /**
@@ -125,7 +125,7 @@ class BusinessManagerRelationsGetListStruct implements ModelInterface, ArrayAcce
     protected static $getters = [
         'accountId' => 'getAccountId',
         'corporationName' => 'getCorporationName',
-        'fundType' => 'getFundType'
+        'accountType' => 'getAccountType'
     ];
 
     /**
@@ -190,7 +190,7 @@ class BusinessManagerRelationsGetListStruct implements ModelInterface, ArrayAcce
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['corporationName'] = isset($data['corporationName']) ? $data['corporationName'] : null;
-        $this->container['fundType'] = isset($data['fundType']) ? $data['fundType'] : null;
+        $this->container['accountType'] = isset($data['accountType']) ? $data['accountType'] : null;
     }
 
     /**
@@ -266,25 +266,25 @@ class BusinessManagerRelationsGetListStruct implements ModelInterface, ArrayAcce
     }
 
     /**
-     * Gets fundType
+     * Gets accountType
      *
      * @return \TencentAds\Model\BMAccountType
      */
-    public function getFundType()
+    public function getAccountType()
     {
-        return $this->container['fundType'];
+        return $this->container['accountType'];
     }
 
     /**
-     * Sets fundType
+     * Sets accountType
      *
-     * @param \TencentAds\Model\BMAccountType $fundType fundType
+     * @param \TencentAds\Model\BMAccountType $accountType accountType
      *
      * @return $this
      */
-    public function setFundType($fundType)
+    public function setAccountType($accountType)
     {
-        $this->container['fundType'] = $fundType;
+        $this->container['accountType'] = $accountType;
 
         return $this;
     }

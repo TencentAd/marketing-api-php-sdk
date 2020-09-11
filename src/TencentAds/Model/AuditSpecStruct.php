@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * AuditSpecStruct Class Doc Comment
  *
  * @category Class
- * @description 多站点的审核结果信息
+ * @description 多版位的审核结果信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

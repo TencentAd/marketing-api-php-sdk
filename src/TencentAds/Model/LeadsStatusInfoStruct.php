@@ -60,7 +60,8 @@ class LeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'leadsId' => 'int',
         'leadsConvertType' => '\TencentAds\Model\LeadCluesLeadsConvertType',
-        'leadsIneffectReason' => 'string'
+        'leadsIneffectReason' => '\TencentAds\Model\LeadCluesLeadsIneffectReason',
+        'leadsIntentionScore' => '\TencentAds\Model\LeadCluesLeadsIntentionScore'
     ];
 
     /**
@@ -71,7 +72,8 @@ class LeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'leadsId' => 'int64',
         'leadsConvertType' => null,
-        'leadsIneffectReason' => null
+        'leadsIneffectReason' => null,
+        'leadsIntentionScore' => null
     ];
 
     /**
@@ -103,7 +105,8 @@ class LeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'leadsId' => 'leads_id',
         'leadsConvertType' => 'leads_convert_type',
-        'leadsIneffectReason' => 'leads_ineffect_reason'
+        'leadsIneffectReason' => 'leads_ineffect_reason',
+        'leadsIntentionScore' => 'leads_intention_score'
     ];
 
     /**
@@ -114,7 +117,8 @@ class LeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     protected static $setters = [
         'leadsId' => 'setLeadsId',
         'leadsConvertType' => 'setLeadsConvertType',
-        'leadsIneffectReason' => 'setLeadsIneffectReason'
+        'leadsIneffectReason' => 'setLeadsIneffectReason',
+        'leadsIntentionScore' => 'setLeadsIntentionScore'
     ];
 
     /**
@@ -125,7 +129,8 @@ class LeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     protected static $getters = [
         'leadsId' => 'getLeadsId',
         'leadsConvertType' => 'getLeadsConvertType',
-        'leadsIneffectReason' => 'getLeadsIneffectReason'
+        'leadsIneffectReason' => 'getLeadsIneffectReason',
+        'leadsIntentionScore' => 'getLeadsIntentionScore'
     ];
 
     /**
@@ -191,6 +196,7 @@ class LeadsStatusInfoStruct implements ModelInterface, ArrayAccess
         $this->container['leadsId'] = isset($data['leadsId']) ? $data['leadsId'] : null;
         $this->container['leadsConvertType'] = isset($data['leadsConvertType']) ? $data['leadsConvertType'] : null;
         $this->container['leadsIneffectReason'] = isset($data['leadsIneffectReason']) ? $data['leadsIneffectReason'] : null;
+        $this->container['leadsIntentionScore'] = isset($data['leadsIntentionScore']) ? $data['leadsIntentionScore'] : null;
     }
 
     /**
@@ -268,7 +274,7 @@ class LeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsIneffectReason
      *
-     * @return string
+     * @return \TencentAds\Model\LeadCluesLeadsIneffectReason
      */
     public function getLeadsIneffectReason()
     {
@@ -278,13 +284,37 @@ class LeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsIneffectReason
      *
-     * @param string $leadsIneffectReason leadsIneffectReason
+     * @param \TencentAds\Model\LeadCluesLeadsIneffectReason $leadsIneffectReason leadsIneffectReason
      *
      * @return $this
      */
     public function setLeadsIneffectReason($leadsIneffectReason)
     {
         $this->container['leadsIneffectReason'] = $leadsIneffectReason;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsIntentionScore
+     *
+     * @return \TencentAds\Model\LeadCluesLeadsIntentionScore
+     */
+    public function getLeadsIntentionScore()
+    {
+        return $this->container['leadsIntentionScore'];
+    }
+
+    /**
+     * Sets leadsIntentionScore
+     *
+     * @param \TencentAds\Model\LeadCluesLeadsIntentionScore $leadsIntentionScore leadsIntentionScore
+     *
+     * @return $this
+     */
+    public function setLeadsIntentionScore($leadsIntentionScore)
+    {
+        $this->container['leadsIntentionScore'] = $leadsIntentionScore;
 
         return $this;
     }

@@ -49,6 +49,8 @@ class TaskStatus
     const EXPIRED = 'TASK_STATUS_EXPIRED';
     const COMPLETED = 'TASK_STATUS_COMPLETED';
     const CANCELLED = 'TASK_STATUS_CANCELLED';
+    const FAIL = 'TASK_STATUS_FAIL';
+    const DELETED = 'TASK_STATUS_DELETED';
     
     /**
      * Gets allowable values of the enum
@@ -62,6 +64,8 @@ class TaskStatus
             self::EXPIRED,
             self::COMPLETED,
             self::CANCELLED,
+            self::FAIL,
+            self::DELETED,
         ];
     }
 }

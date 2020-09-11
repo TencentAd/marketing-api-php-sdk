@@ -61,6 +61,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
         'taskName' => 'string',
         'reportFields' => 'string[]',
         'level' => '\TencentAds\Model\AsyncReportLevel',
+        'filtering' => '\TencentAds\Model\AsyncReportsFilteringStruct[]',
         'timeLine' => '\TencentAds\Model\TimeLine',
         'groupBy' => 'string[]',
         'granularity' => '\TencentAds\Model\TimeGranularity',
@@ -77,6 +78,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
         'taskName' => null,
         'reportFields' => null,
         'level' => null,
+        'filtering' => null,
         'timeLine' => null,
         'groupBy' => null,
         'granularity' => null,
@@ -114,6 +116,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
         'taskName' => 'task_name',
         'reportFields' => 'report_fields',
         'level' => 'level',
+        'filtering' => 'filtering',
         'timeLine' => 'time_line',
         'groupBy' => 'group_by',
         'granularity' => 'granularity',
@@ -130,6 +133,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
         'taskName' => 'setTaskName',
         'reportFields' => 'setReportFields',
         'level' => 'setLevel',
+        'filtering' => 'setFiltering',
         'timeLine' => 'setTimeLine',
         'groupBy' => 'setGroupBy',
         'granularity' => 'setGranularity',
@@ -146,6 +150,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
         'taskName' => 'getTaskName',
         'reportFields' => 'getReportFields',
         'level' => 'getLevel',
+        'filtering' => 'getFiltering',
         'timeLine' => 'getTimeLine',
         'groupBy' => 'getGroupBy',
         'granularity' => 'getGranularity',
@@ -216,6 +221,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
         $this->container['taskName'] = isset($data['taskName']) ? $data['taskName'] : null;
         $this->container['reportFields'] = isset($data['reportFields']) ? $data['reportFields'] : null;
         $this->container['level'] = isset($data['level']) ? $data['level'] : null;
+        $this->container['filtering'] = isset($data['filtering']) ? $data['filtering'] : null;
         $this->container['timeLine'] = isset($data['timeLine']) ? $data['timeLine'] : null;
         $this->container['groupBy'] = isset($data['groupBy']) ? $data['groupBy'] : null;
         $this->container['granularity'] = isset($data['granularity']) ? $data['granularity'] : null;
@@ -338,6 +344,30 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
     public function setLevel($level)
     {
         $this->container['level'] = $level;
+
+        return $this;
+    }
+
+    /**
+     * Gets filtering
+     *
+     * @return \TencentAds\Model\AsyncReportsFilteringStruct[]
+     */
+    public function getFiltering()
+    {
+        return $this->container['filtering'];
+    }
+
+    /**
+     * Sets filtering
+     *
+     * @param \TencentAds\Model\AsyncReportsFilteringStruct[] $filtering filtering
+     *
+     * @return $this
+     */
+    public function setFiltering($filtering)
+    {
+        $this->container['filtering'] = $filtering;
 
         return $this;
     }

@@ -61,7 +61,7 @@ class PromotedObjectsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectName' => 'string',
         'promotedObjectId' => 'string',
         'promotedObjectType' => '\TencentAds\Model\ProductPromotedObjectTypeSelect',
-        'promotedObjectSpec' => '\TencentAds\Model\PromotedObjectSpec',
+        'promotedObjectSpec' => '\TencentAds\Model\PromotedObjectGetSpec',
         'createdTime' => 'int',
         'lastModifiedTime' => 'int'
     ];
@@ -310,7 +310,7 @@ class PromotedObjectsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectSpec
      *
-     * @return \TencentAds\Model\PromotedObjectSpec
+     * @return \TencentAds\Model\PromotedObjectGetSpec
      */
     public function getPromotedObjectSpec()
     {
@@ -320,7 +320,7 @@ class PromotedObjectsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectSpec
      *
-     * @param \TencentAds\Model\PromotedObjectSpec $promotedObjectSpec promotedObjectSpec
+     * @param \TencentAds\Model\PromotedObjectGetSpec $promotedObjectSpec promotedObjectSpec
      *
      * @return $this
      */

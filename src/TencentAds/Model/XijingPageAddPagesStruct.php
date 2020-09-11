@@ -1,6 +1,6 @@
 <?php
 /**
- * GrantToBusinessSpec
+ * XijingPageAddPagesStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * GrantToBusinessSpec Class Doc Comment
+ * XijingPageAddPagesStruct Class Doc Comment
  *
  * @category Class
- * @description 授权给商务管家账号认领的账号的授权信息
+ * @description 落地页配置结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class GrantToBusinessSpec implements ModelInterface, ArrayAccess
+class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class GrantToBusinessSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'grant_to_business_spec';
+    protected static $swaggerModelName = 'XijingPageAddPagesStruct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +58,12 @@ class GrantToBusinessSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'grantBusinessId' => 'int',
-        'grantScopeType' => '\TencentAds\Model\AudienceGrantScopeType',
-        'grantBusinessPermission' => '\TencentAds\Model\GrantBusinessPermission',
-        'grantAccountPermission' => '\TencentAds\Model\GrantAccountPermission'
+        'pageType' => '\TencentAds\Model\TemplatesPageType',
+        'pageName' => 'string',
+        'pageTitle' => 'string',
+        'mobileAppId' => 'string',
+        'pageTemplateId' => 'string',
+        'componentSpecList' => 'string[]'
     ];
 
     /**
@@ -70,10 +72,12 @@ class GrantToBusinessSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'grantBusinessId' => 'int64',
-        'grantScopeType' => null,
-        'grantBusinessPermission' => null,
-        'grantAccountPermission' => null
+        'pageType' => null,
+        'pageName' => null,
+        'pageTitle' => null,
+        'mobileAppId' => null,
+        'pageTemplateId' => null,
+        'componentSpecList' => null
     ];
 
     /**
@@ -103,10 +107,12 @@ class GrantToBusinessSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'grantBusinessId' => 'grant_business_id',
-        'grantScopeType' => 'grant_scope_type',
-        'grantBusinessPermission' => 'grant_business_permission',
-        'grantAccountPermission' => 'grant_account_permission'
+        'pageType' => 'page_type',
+        'pageName' => 'page_name',
+        'pageTitle' => 'page_title',
+        'mobileAppId' => 'mobile_app_id',
+        'pageTemplateId' => 'page_template_id',
+        'componentSpecList' => 'component_spec_list'
     ];
 
     /**
@@ -115,10 +121,12 @@ class GrantToBusinessSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'grantBusinessId' => 'setGrantBusinessId',
-        'grantScopeType' => 'setGrantScopeType',
-        'grantBusinessPermission' => 'setGrantBusinessPermission',
-        'grantAccountPermission' => 'setGrantAccountPermission'
+        'pageType' => 'setPageType',
+        'pageName' => 'setPageName',
+        'pageTitle' => 'setPageTitle',
+        'mobileAppId' => 'setMobileAppId',
+        'pageTemplateId' => 'setPageTemplateId',
+        'componentSpecList' => 'setComponentSpecList'
     ];
 
     /**
@@ -127,10 +135,12 @@ class GrantToBusinessSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'grantBusinessId' => 'getGrantBusinessId',
-        'grantScopeType' => 'getGrantScopeType',
-        'grantBusinessPermission' => 'getGrantBusinessPermission',
-        'grantAccountPermission' => 'getGrantAccountPermission'
+        'pageType' => 'getPageType',
+        'pageName' => 'getPageName',
+        'pageTitle' => 'getPageTitle',
+        'mobileAppId' => 'getMobileAppId',
+        'pageTemplateId' => 'getPageTemplateId',
+        'componentSpecList' => 'getComponentSpecList'
     ];
 
     /**
@@ -193,10 +203,12 @@ class GrantToBusinessSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['grantBusinessId'] = isset($data['grantBusinessId']) ? $data['grantBusinessId'] : null;
-        $this->container['grantScopeType'] = isset($data['grantScopeType']) ? $data['grantScopeType'] : null;
-        $this->container['grantBusinessPermission'] = isset($data['grantBusinessPermission']) ? $data['grantBusinessPermission'] : null;
-        $this->container['grantAccountPermission'] = isset($data['grantAccountPermission']) ? $data['grantAccountPermission'] : null;
+        $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
+        $this->container['pageName'] = isset($data['pageName']) ? $data['pageName'] : null;
+        $this->container['pageTitle'] = isset($data['pageTitle']) ? $data['pageTitle'] : null;
+        $this->container['mobileAppId'] = isset($data['mobileAppId']) ? $data['mobileAppId'] : null;
+        $this->container['pageTemplateId'] = isset($data['pageTemplateId']) ? $data['pageTemplateId'] : null;
+        $this->container['componentSpecList'] = isset($data['componentSpecList']) ? $data['componentSpecList'] : null;
     }
 
     /**
@@ -224,97 +236,145 @@ class GrantToBusinessSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets grantBusinessId
+     * Gets pageType
      *
-     * @return int
+     * @return \TencentAds\Model\TemplatesPageType
      */
-    public function getGrantBusinessId()
+    public function getPageType()
     {
-        return $this->container['grantBusinessId'];
+        return $this->container['pageType'];
     }
 
     /**
-     * Sets grantBusinessId
+     * Sets pageType
      *
-     * @param int $grantBusinessId grantBusinessId
+     * @param \TencentAds\Model\TemplatesPageType $pageType pageType
      *
      * @return $this
      */
-    public function setGrantBusinessId($grantBusinessId)
+    public function setPageType($pageType)
     {
-        $this->container['grantBusinessId'] = $grantBusinessId;
+        $this->container['pageType'] = $pageType;
 
         return $this;
     }
 
     /**
-     * Gets grantScopeType
+     * Gets pageName
      *
-     * @return \TencentAds\Model\AudienceGrantScopeType
+     * @return string
      */
-    public function getGrantScopeType()
+    public function getPageName()
     {
-        return $this->container['grantScopeType'];
+        return $this->container['pageName'];
     }
 
     /**
-     * Sets grantScopeType
+     * Sets pageName
      *
-     * @param \TencentAds\Model\AudienceGrantScopeType $grantScopeType grantScopeType
+     * @param string $pageName pageName
      *
      * @return $this
      */
-    public function setGrantScopeType($grantScopeType)
+    public function setPageName($pageName)
     {
-        $this->container['grantScopeType'] = $grantScopeType;
+        $this->container['pageName'] = $pageName;
 
         return $this;
     }
 
     /**
-     * Gets grantBusinessPermission
+     * Gets pageTitle
      *
-     * @return \TencentAds\Model\GrantBusinessPermission
+     * @return string
      */
-    public function getGrantBusinessPermission()
+    public function getPageTitle()
     {
-        return $this->container['grantBusinessPermission'];
+        return $this->container['pageTitle'];
     }
 
     /**
-     * Sets grantBusinessPermission
+     * Sets pageTitle
      *
-     * @param \TencentAds\Model\GrantBusinessPermission $grantBusinessPermission grantBusinessPermission
+     * @param string $pageTitle pageTitle
      *
      * @return $this
      */
-    public function setGrantBusinessPermission($grantBusinessPermission)
+    public function setPageTitle($pageTitle)
     {
-        $this->container['grantBusinessPermission'] = $grantBusinessPermission;
+        $this->container['pageTitle'] = $pageTitle;
 
         return $this;
     }
 
     /**
-     * Gets grantAccountPermission
+     * Gets mobileAppId
      *
-     * @return \TencentAds\Model\GrantAccountPermission
+     * @return string
      */
-    public function getGrantAccountPermission()
+    public function getMobileAppId()
     {
-        return $this->container['grantAccountPermission'];
+        return $this->container['mobileAppId'];
     }
 
     /**
-     * Sets grantAccountPermission
+     * Sets mobileAppId
      *
-     * @param \TencentAds\Model\GrantAccountPermission $grantAccountPermission grantAccountPermission
+     * @param string $mobileAppId mobileAppId
      *
      * @return $this
      */
-    public function setGrantAccountPermission($grantAccountPermission)
+    public function setMobileAppId($mobileAppId)
     {
-        $this->container['grantAccountPermission'] = $grantAccountPermission;
+        $this->container['mobileAppId'] = $mobileAppId;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageTemplateId
+     *
+     * @return string
+     */
+    public function getPageTemplateId()
+    {
+        return $this->container['pageTemplateId'];
+    }
+
+    /**
+     * Sets pageTemplateId
+     *
+     * @param string $pageTemplateId pageTemplateId
+     *
+     * @return $this
+     */
+    public function setPageTemplateId($pageTemplateId)
+    {
+        $this->container['pageTemplateId'] = $pageTemplateId;
+
+        return $this;
+    }
+
+    /**
+     * Gets componentSpecList
+     *
+     * @return string[]
+     */
+    public function getComponentSpecList()
+    {
+        return $this->container['componentSpecList'];
+    }
+
+    /**
+     * Sets componentSpecList
+     *
+     * @param string[] $componentSpecList componentSpecList
+     *
+     * @return $this
+     */
+    public function setComponentSpecList($componentSpecList)
+    {
+        $this->container['componentSpecList'] = $componentSpecList;
 
         return $this;
     }

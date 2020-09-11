@@ -91,6 +91,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'conversionId' => 'int',
         'deepConversionBehaviorBid' => 'int',
         'deepConversionWorthRate' => 'double',
+        'bidMode' => '\TencentAds\Model\BidMode',
+        'bidAdjustment' => '\TencentAds\Model\BidAdjustment',
         'accountId' => 'int'
     ];
 
@@ -134,6 +136,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'conversionId' => 'int64',
         'deepConversionBehaviorBid' => 'int64',
         'deepConversionWorthRate' => 'double',
+        'bidMode' => null,
+        'bidAdjustment' => null,
         'accountId' => 'int64'
     ];
 
@@ -198,6 +202,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'conversionId' => 'conversion_id',
         'deepConversionBehaviorBid' => 'deep_conversion_behavior_bid',
         'deepConversionWorthRate' => 'deep_conversion_worth_rate',
+        'bidMode' => 'bid_mode',
+        'bidAdjustment' => 'bid_adjustment',
         'accountId' => 'account_id'
     ];
 
@@ -241,6 +247,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'conversionId' => 'setConversionId',
         'deepConversionBehaviorBid' => 'setDeepConversionBehaviorBid',
         'deepConversionWorthRate' => 'setDeepConversionWorthRate',
+        'bidMode' => 'setBidMode',
+        'bidAdjustment' => 'setBidAdjustment',
         'accountId' => 'setAccountId'
     ];
 
@@ -284,6 +292,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'conversionId' => 'getConversionId',
         'deepConversionBehaviorBid' => 'getDeepConversionBehaviorBid',
         'deepConversionWorthRate' => 'getDeepConversionWorthRate',
+        'bidMode' => 'getBidMode',
+        'bidAdjustment' => 'getBidAdjustment',
         'accountId' => 'getAccountId'
     ];
 
@@ -381,6 +391,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['conversionId'] = isset($data['conversionId']) ? $data['conversionId'] : null;
         $this->container['deepConversionBehaviorBid'] = isset($data['deepConversionBehaviorBid']) ? $data['deepConversionBehaviorBid'] : null;
         $this->container['deepConversionWorthRate'] = isset($data['deepConversionWorthRate']) ? $data['deepConversionWorthRate'] : null;
+        $this->container['bidMode'] = isset($data['bidMode']) ? $data['bidMode'] : null;
+        $this->container['bidAdjustment'] = isset($data['bidAdjustment']) ? $data['bidAdjustment'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1220,6 +1232,54 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setDeepConversionWorthRate($deepConversionWorthRate)
     {
         $this->container['deepConversionWorthRate'] = $deepConversionWorthRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets bidMode
+     *
+     * @return \TencentAds\Model\BidMode
+     */
+    public function getBidMode()
+    {
+        return $this->container['bidMode'];
+    }
+
+    /**
+     * Sets bidMode
+     *
+     * @param \TencentAds\Model\BidMode $bidMode bidMode
+     *
+     * @return $this
+     */
+    public function setBidMode($bidMode)
+    {
+        $this->container['bidMode'] = $bidMode;
+
+        return $this;
+    }
+
+    /**
+     * Gets bidAdjustment
+     *
+     * @return \TencentAds\Model\BidAdjustment
+     */
+    public function getBidAdjustment()
+    {
+        return $this->container['bidAdjustment'];
+    }
+
+    /**
+     * Sets bidAdjustment
+     *
+     * @param \TencentAds\Model\BidAdjustment $bidAdjustment bidAdjustment
+     *
+     * @return $this
+     */
+    public function setBidAdjustment($bidAdjustment)
+    {
+        $this->container['bidAdjustment'] = $bidAdjustment;
 
         return $this;
     }

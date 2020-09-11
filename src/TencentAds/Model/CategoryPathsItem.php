@@ -1,6 +1,6 @@
 <?php
 /**
- * GrantAccountPermission
+ * CategoryPathsItem
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * GrantAccountPermission Class Doc Comment
+ * CategoryPathsItem Class Doc Comment
  *
  * @category Class
- * @description 授权给指定账号结构
+ * @description 类目路径
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class GrantAccountPermission implements ModelInterface, ArrayAccess
+class CategoryPathsItem implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class GrantAccountPermission implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'grant_account_permission';
+    protected static $swaggerModelName = 'category_paths_item';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,9 @@ class GrantAccountPermission implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'grantPermissionTypeList' => 'string[]'
+        'categoryId' => 'int',
+        'categoryName' => 'string',
+        'level' => 'int'
     ];
 
     /**
@@ -68,8 +69,9 @@ class GrantAccountPermission implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'grantPermissionTypeList' => null
+        'categoryId' => 'int64',
+        'categoryName' => null,
+        'level' => 'int64'
     ];
 
     /**
@@ -99,8 +101,9 @@ class GrantAccountPermission implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'grantPermissionTypeList' => 'grant_permission_type_list'
+        'categoryId' => 'category_id',
+        'categoryName' => 'category_name',
+        'level' => 'level'
     ];
 
     /**
@@ -109,8 +112,9 @@ class GrantAccountPermission implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'grantPermissionTypeList' => 'setGrantPermissionTypeList'
+        'categoryId' => 'setCategoryId',
+        'categoryName' => 'setCategoryName',
+        'level' => 'setLevel'
     ];
 
     /**
@@ -119,8 +123,9 @@ class GrantAccountPermission implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'grantPermissionTypeList' => 'getGrantPermissionTypeList'
+        'categoryId' => 'getCategoryId',
+        'categoryName' => 'getCategoryName',
+        'level' => 'getLevel'
     ];
 
     /**
@@ -183,8 +188,9 @@ class GrantAccountPermission implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['grantPermissionTypeList'] = isset($data['grantPermissionTypeList']) ? $data['grantPermissionTypeList'] : null;
+        $this->container['categoryId'] = isset($data['categoryId']) ? $data['categoryId'] : null;
+        $this->container['categoryName'] = isset($data['categoryName']) ? $data['categoryName'] : null;
+        $this->container['level'] = isset($data['level']) ? $data['level'] : null;
     }
 
     /**
@@ -212,49 +218,73 @@ class GrantAccountPermission implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets accountId
+     * Gets categoryId
      *
      * @return int
      */
-    public function getAccountId()
+    public function getCategoryId()
     {
-        return $this->container['accountId'];
+        return $this->container['categoryId'];
     }
 
     /**
-     * Sets accountId
+     * Sets categoryId
      *
-     * @param int $accountId accountId
+     * @param int $categoryId categoryId
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setCategoryId($categoryId)
     {
-        $this->container['accountId'] = $accountId;
+        $this->container['categoryId'] = $categoryId;
 
         return $this;
     }
 
     /**
-     * Gets grantPermissionTypeList
+     * Gets categoryName
      *
-     * @return string[]
+     * @return string
      */
-    public function getGrantPermissionTypeList()
+    public function getCategoryName()
     {
-        return $this->container['grantPermissionTypeList'];
+        return $this->container['categoryName'];
     }
 
     /**
-     * Sets grantPermissionTypeList
+     * Sets categoryName
      *
-     * @param string[] $grantPermissionTypeList grantPermissionTypeList
+     * @param string $categoryName categoryName
      *
      * @return $this
      */
-    public function setGrantPermissionTypeList($grantPermissionTypeList)
+    public function setCategoryName($categoryName)
     {
-        $this->container['grantPermissionTypeList'] = $grantPermissionTypeList;
+        $this->container['categoryName'] = $categoryName;
+
+        return $this;
+    }
+
+    /**
+     * Gets level
+     *
+     * @return int
+     */
+    public function getLevel()
+    {
+        return $this->container['level'];
+    }
+
+    /**
+     * Sets level
+     *
+     * @param int $level level
+     *
+     * @return $this
+     */
+    public function setLevel($level)
+    {
+        $this->container['level'] = $level;
 
         return $this;
     }

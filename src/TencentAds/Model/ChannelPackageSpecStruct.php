@@ -1,6 +1,6 @@
 <?php
 /**
- * QuerySpec
+ * ChannelPackageSpecStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * QuerySpec Class Doc Comment
+ * ChannelPackageSpecStruct Class Doc Comment
  *
  * @category Class
- * @description 查询条件
+ * @description 渠道包详细信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class QuerySpec implements ModelInterface, ArrayAccess
+class ChannelPackageSpecStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class QuerySpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'query_spec';
+    protected static $swaggerModelName = 'channel_package_spec_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,8 @@ class QuerySpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'wechatLinkAd' => '\TencentAds\Model\WechatLinkAd',
-        'wechatOcpa' => '\TencentAds\Model\WechatOcpa'
+        'appAndroidChannelPackageId' => 'string',
+        'packageName' => 'string'
     ];
 
     /**
@@ -68,8 +68,8 @@ class QuerySpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'wechatLinkAd' => null,
-        'wechatOcpa' => null
+        'appAndroidChannelPackageId' => null,
+        'packageName' => null
     ];
 
     /**
@@ -99,8 +99,8 @@ class QuerySpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'wechatLinkAd' => 'wechat_link_ad',
-        'wechatOcpa' => 'wechat_ocpa'
+        'appAndroidChannelPackageId' => 'app_android_channel_package_id',
+        'packageName' => 'package_name'
     ];
 
     /**
@@ -109,8 +109,8 @@ class QuerySpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'wechatLinkAd' => 'setWechatLinkAd',
-        'wechatOcpa' => 'setWechatOcpa'
+        'appAndroidChannelPackageId' => 'setAppAndroidChannelPackageId',
+        'packageName' => 'setPackageName'
     ];
 
     /**
@@ -119,8 +119,8 @@ class QuerySpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'wechatLinkAd' => 'getWechatLinkAd',
-        'wechatOcpa' => 'getWechatOcpa'
+        'appAndroidChannelPackageId' => 'getAppAndroidChannelPackageId',
+        'packageName' => 'getPackageName'
     ];
 
     /**
@@ -183,8 +183,8 @@ class QuerySpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['wechatLinkAd'] = isset($data['wechatLinkAd']) ? $data['wechatLinkAd'] : null;
-        $this->container['wechatOcpa'] = isset($data['wechatOcpa']) ? $data['wechatOcpa'] : null;
+        $this->container['appAndroidChannelPackageId'] = isset($data['appAndroidChannelPackageId']) ? $data['appAndroidChannelPackageId'] : null;
+        $this->container['packageName'] = isset($data['packageName']) ? $data['packageName'] : null;
     }
 
     /**
@@ -212,49 +212,49 @@ class QuerySpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets wechatLinkAd
+     * Gets appAndroidChannelPackageId
      *
-     * @return \TencentAds\Model\WechatLinkAd
+     * @return string
      */
-    public function getWechatLinkAd()
+    public function getAppAndroidChannelPackageId()
     {
-        return $this->container['wechatLinkAd'];
+        return $this->container['appAndroidChannelPackageId'];
     }
 
     /**
-     * Sets wechatLinkAd
+     * Sets appAndroidChannelPackageId
      *
-     * @param \TencentAds\Model\WechatLinkAd $wechatLinkAd wechatLinkAd
+     * @param string $appAndroidChannelPackageId appAndroidChannelPackageId
      *
      * @return $this
      */
-    public function setWechatLinkAd($wechatLinkAd)
+    public function setAppAndroidChannelPackageId($appAndroidChannelPackageId)
     {
-        $this->container['wechatLinkAd'] = $wechatLinkAd;
+        $this->container['appAndroidChannelPackageId'] = $appAndroidChannelPackageId;
 
         return $this;
     }
 
     /**
-     * Gets wechatOcpa
+     * Gets packageName
      *
-     * @return \TencentAds\Model\WechatOcpa
+     * @return string
      */
-    public function getWechatOcpa()
+    public function getPackageName()
     {
-        return $this->container['wechatOcpa'];
+        return $this->container['packageName'];
     }
 
     /**
-     * Sets wechatOcpa
+     * Sets packageName
      *
-     * @param \TencentAds\Model\WechatOcpa $wechatOcpa wechatOcpa
+     * @param string $packageName packageName
      *
      * @return $this
      */
-    public function setWechatOcpa($wechatOcpa)
+    public function setPackageName($packageName)
     {
-        $this->container['wechatOcpa'] = $wechatOcpa;
+        $this->container['packageName'] = $packageName;
 
         return $this;
     }

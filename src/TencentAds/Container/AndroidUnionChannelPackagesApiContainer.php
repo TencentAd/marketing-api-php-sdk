@@ -101,4 +101,38 @@ class AndroidUnionChannelPackagesApiContainer extends ApiContainer
             return $response;
         });
     }
+
+
+    /**
+     * Handle AndroidUnionChannelPackagesApi androidUnionChannelPackagesUpdate function
+     * @param array params
+     * @return \TencentAds\Model\AndroidUnionChannelPackagesUpdateResponseData
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function update(array $params = [])
+    {
+        return $this->handleMiddleware('update', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->androidUnionChannelPackagesUpdate($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle AndroidUnionChannelPackagesApi androidUnionChannelPackagesUpdateAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function updateAsync(array $params = [])
+    {
+        return $this->handleMiddleware('update', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->androidUnionChannelPackagesUpdateAsync($data);
+            return $response;
+        });
+    }
 }

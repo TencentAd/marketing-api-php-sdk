@@ -90,7 +90,8 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'behaviorOrInterest' => '\TencentAds\Model\BehaviorOrInterest',
         'wechatOfficialAccountCategory' => 'int[]',
         'mobileUnionCategory' => 'int[]',
-        'miniGameQqStatus' => 'string[]'
+        'miniGameQqStatus' => 'string[]',
+        'excludedConvertedAudience' => '\TencentAds\Model\ExcludedConvertedAudience'
     ];
 
     /**
@@ -131,7 +132,8 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'behaviorOrInterest' => null,
         'wechatOfficialAccountCategory' => 'int64',
         'mobileUnionCategory' => 'int64',
-        'miniGameQqStatus' => null
+        'miniGameQqStatus' => null,
+        'excludedConvertedAudience' => null
     ];
 
     /**
@@ -193,7 +195,8 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'behaviorOrInterest' => 'behavior_or_interest',
         'wechatOfficialAccountCategory' => 'wechat_official_account_category',
         'mobileUnionCategory' => 'mobile_union_category',
-        'miniGameQqStatus' => 'mini_game_qq_status'
+        'miniGameQqStatus' => 'mini_game_qq_status',
+        'excludedConvertedAudience' => 'excluded_converted_audience'
     ];
 
     /**
@@ -234,7 +237,8 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'behaviorOrInterest' => 'setBehaviorOrInterest',
         'wechatOfficialAccountCategory' => 'setWechatOfficialAccountCategory',
         'mobileUnionCategory' => 'setMobileUnionCategory',
-        'miniGameQqStatus' => 'setMiniGameQqStatus'
+        'miniGameQqStatus' => 'setMiniGameQqStatus',
+        'excludedConvertedAudience' => 'setExcludedConvertedAudience'
     ];
 
     /**
@@ -275,7 +279,8 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'behaviorOrInterest' => 'getBehaviorOrInterest',
         'wechatOfficialAccountCategory' => 'getWechatOfficialAccountCategory',
         'mobileUnionCategory' => 'getMobileUnionCategory',
-        'miniGameQqStatus' => 'getMiniGameQqStatus'
+        'miniGameQqStatus' => 'getMiniGameQqStatus',
+        'excludedConvertedAudience' => 'getExcludedConvertedAudience'
     ];
 
     /**
@@ -371,6 +376,7 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         $this->container['wechatOfficialAccountCategory'] = isset($data['wechatOfficialAccountCategory']) ? $data['wechatOfficialAccountCategory'] : null;
         $this->container['mobileUnionCategory'] = isset($data['mobileUnionCategory']) ? $data['mobileUnionCategory'] : null;
         $this->container['miniGameQqStatus'] = isset($data['miniGameQqStatus']) ? $data['miniGameQqStatus'] : null;
+        $this->container['excludedConvertedAudience'] = isset($data['excludedConvertedAudience']) ? $data['excludedConvertedAudience'] : null;
     }
 
     /**
@@ -1185,6 +1191,30 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     public function setMiniGameQqStatus($miniGameQqStatus)
     {
         $this->container['miniGameQqStatus'] = $miniGameQqStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets excludedConvertedAudience
+     *
+     * @return \TencentAds\Model\ExcludedConvertedAudience
+     */
+    public function getExcludedConvertedAudience()
+    {
+        return $this->container['excludedConvertedAudience'];
+    }
+
+    /**
+     * Sets excludedConvertedAudience
+     *
+     * @param \TencentAds\Model\ExcludedConvertedAudience $excludedConvertedAudience excludedConvertedAudience
+     *
+     * @return $this
+     */
+    public function setExcludedConvertedAudience($excludedConvertedAudience)
+    {
+        $this->container['excludedConvertedAudience'] = $excludedConvertedAudience;
 
         return $this;
     }

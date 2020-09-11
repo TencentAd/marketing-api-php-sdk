@@ -1,6 +1,6 @@
 <?php
 /**
- * GrantSpec
+ * ControlListItemDetailData
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * GrantSpec Class Doc Comment
+ * ControlListItemDetailData Class Doc Comment
  *
  * @category Class
- * @description 人群授权信息
+ * @description 表单项
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class GrantSpec implements ModelInterface, ArrayAccess
+class ControlListItemDetailData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class GrantSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'grant_spec';
+    protected static $swaggerModelName = 'control_list_item_detail_data';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,7 +58,10 @@ class GrantSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'grantToBusinessSpec' => '\TencentAds\Model\GrantToBusinessSpec'
+        'itemName' => 'string',
+        'itemType' => '\TencentAds\Model\ItemType',
+        'placeholder' => 'string',
+        'selectElements' => 'string'
     ];
 
     /**
@@ -67,7 +70,10 @@ class GrantSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'grantToBusinessSpec' => null
+        'itemName' => null,
+        'itemType' => null,
+        'placeholder' => null,
+        'selectElements' => null
     ];
 
     /**
@@ -97,7 +103,10 @@ class GrantSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'grantToBusinessSpec' => 'grant_to_business_spec'
+        'itemName' => 'item_name',
+        'itemType' => 'item_type',
+        'placeholder' => 'placeholder',
+        'selectElements' => 'select_elements'
     ];
 
     /**
@@ -106,7 +115,10 @@ class GrantSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'grantToBusinessSpec' => 'setGrantToBusinessSpec'
+        'itemName' => 'setItemName',
+        'itemType' => 'setItemType',
+        'placeholder' => 'setPlaceholder',
+        'selectElements' => 'setSelectElements'
     ];
 
     /**
@@ -115,7 +127,10 @@ class GrantSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'grantToBusinessSpec' => 'getGrantToBusinessSpec'
+        'itemName' => 'getItemName',
+        'itemType' => 'getItemType',
+        'placeholder' => 'getPlaceholder',
+        'selectElements' => 'getSelectElements'
     ];
 
     /**
@@ -178,7 +193,10 @@ class GrantSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['grantToBusinessSpec'] = isset($data['grantToBusinessSpec']) ? $data['grantToBusinessSpec'] : null;
+        $this->container['itemName'] = isset($data['itemName']) ? $data['itemName'] : null;
+        $this->container['itemType'] = isset($data['itemType']) ? $data['itemType'] : null;
+        $this->container['placeholder'] = isset($data['placeholder']) ? $data['placeholder'] : null;
+        $this->container['selectElements'] = isset($data['selectElements']) ? $data['selectElements'] : null;
     }
 
     /**
@@ -206,25 +224,97 @@ class GrantSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets grantToBusinessSpec
+     * Gets itemName
      *
-     * @return \TencentAds\Model\GrantToBusinessSpec
+     * @return string
      */
-    public function getGrantToBusinessSpec()
+    public function getItemName()
     {
-        return $this->container['grantToBusinessSpec'];
+        return $this->container['itemName'];
     }
 
     /**
-     * Sets grantToBusinessSpec
+     * Sets itemName
      *
-     * @param \TencentAds\Model\GrantToBusinessSpec $grantToBusinessSpec grantToBusinessSpec
+     * @param string $itemName itemName
      *
      * @return $this
      */
-    public function setGrantToBusinessSpec($grantToBusinessSpec)
+    public function setItemName($itemName)
     {
-        $this->container['grantToBusinessSpec'] = $grantToBusinessSpec;
+        $this->container['itemName'] = $itemName;
+
+        return $this;
+    }
+
+    /**
+     * Gets itemType
+     *
+     * @return \TencentAds\Model\ItemType
+     */
+    public function getItemType()
+    {
+        return $this->container['itemType'];
+    }
+
+    /**
+     * Sets itemType
+     *
+     * @param \TencentAds\Model\ItemType $itemType itemType
+     *
+     * @return $this
+     */
+    public function setItemType($itemType)
+    {
+        $this->container['itemType'] = $itemType;
+
+        return $this;
+    }
+
+    /**
+     * Gets placeholder
+     *
+     * @return string
+     */
+    public function getPlaceholder()
+    {
+        return $this->container['placeholder'];
+    }
+
+    /**
+     * Sets placeholder
+     *
+     * @param string $placeholder placeholder
+     *
+     * @return $this
+     */
+    public function setPlaceholder($placeholder)
+    {
+        $this->container['placeholder'] = $placeholder;
+
+        return $this;
+    }
+
+    /**
+     * Gets selectElements
+     *
+     * @return string
+     */
+    public function getSelectElements()
+    {
+        return $this->container['selectElements'];
+    }
+
+    /**
+     * Sets selectElements
+     *
+     * @param string $selectElements selectElements
+     *
+     * @return $this
+     */
+    public function setSelectElements($selectElements)
+    {
+        $this->container['selectElements'] = $selectElements;
 
         return $this;
     }

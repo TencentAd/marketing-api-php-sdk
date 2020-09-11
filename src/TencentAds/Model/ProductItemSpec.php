@@ -128,7 +128,8 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'forwardCount' => 'int',
         'commentCount' => 'int',
         'authorFansCount' => 'int',
-        'semanticLabels' => 'string[]'
+        'semanticLabels' => 'string[]',
+        'detailImg' => 'string[]'
     ];
 
     /**
@@ -207,7 +208,8 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'forwardCount' => 'int64',
         'commentCount' => 'int64',
         'authorFansCount' => 'int64',
-        'semanticLabels' => null
+        'semanticLabels' => null,
+        'detailImg' => null
     ];
 
     /**
@@ -307,7 +309,8 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'forwardCount' => 'forward_count',
         'commentCount' => 'comment_count',
         'authorFansCount' => 'author_fans_count',
-        'semanticLabels' => 'semantic_labels'
+        'semanticLabels' => 'semantic_labels',
+        'detailImg' => 'detail_img'
     ];
 
     /**
@@ -386,7 +389,8 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'forwardCount' => 'setForwardCount',
         'commentCount' => 'setCommentCount',
         'authorFansCount' => 'setAuthorFansCount',
-        'semanticLabels' => 'setSemanticLabels'
+        'semanticLabels' => 'setSemanticLabels',
+        'detailImg' => 'setDetailImg'
     ];
 
     /**
@@ -465,7 +469,8 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'forwardCount' => 'getForwardCount',
         'commentCount' => 'getCommentCount',
         'authorFansCount' => 'getAuthorFansCount',
-        'semanticLabels' => 'getSemanticLabels'
+        'semanticLabels' => 'getSemanticLabels',
+        'detailImg' => 'getDetailImg'
     ];
 
     /**
@@ -599,6 +604,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         $this->container['commentCount'] = isset($data['commentCount']) ? $data['commentCount'] : null;
         $this->container['authorFansCount'] = isset($data['authorFansCount']) ? $data['authorFansCount'] : null;
         $this->container['semanticLabels'] = isset($data['semanticLabels']) ? $data['semanticLabels'] : null;
+        $this->container['detailImg'] = isset($data['detailImg']) ? $data['detailImg'] : null;
     }
 
     /**
@@ -2325,6 +2331,30 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     public function setSemanticLabels($semanticLabels)
     {
         $this->container['semanticLabels'] = $semanticLabels;
+
+        return $this;
+    }
+
+    /**
+     * Gets detailImg
+     *
+     * @return string[]
+     */
+    public function getDetailImg()
+    {
+        return $this->container['detailImg'];
+    }
+
+    /**
+     * Sets detailImg
+     *
+     * @param string[] $detailImg detailImg
+     *
+     * @return $this
+     */
+    public function setDetailImg($detailImg)
+    {
+        $this->container['detailImg'] = $detailImg;
 
         return $this;
     }

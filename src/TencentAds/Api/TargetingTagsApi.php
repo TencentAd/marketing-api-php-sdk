@@ -314,6 +314,9 @@ class TargetingTagsApi
         // body params
         $_tempBody = null;
 
+        if (in_array('multipart/form-data', ['text/plain'])) {
+            $multipart = true;
+        }
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
                 ['application/json']

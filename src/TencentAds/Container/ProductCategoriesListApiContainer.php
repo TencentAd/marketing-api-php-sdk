@@ -40,8 +40,13 @@ class ProductCategoriesListApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $productCatalogId = isset($params['product_catalog_id']) ? $params['product_catalog_id'] : null;
+            $page = isset($params['page']) ? $params['page'] : null;
+            $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $level = isset($params['level']) ? $params['level'] : null;
+            $categoryId = isset($params['category_id']) ? $params['category_id'] : null;
+            $categoryName = isset($params['category_name']) ? $params['category_name'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->productCategoriesListGet($accountId, $productCatalogId, $fields);
+            $response = $this->apiInstance->productCategoriesListGet($accountId, $productCatalogId, $page, $pageSize, $level, $categoryId, $categoryName, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -58,8 +63,13 @@ class ProductCategoriesListApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $productCatalogId = isset($params['product_catalog_id']) ? $params['product_catalog_id'] : null;
+            $page = isset($params['page']) ? $params['page'] : null;
+            $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $level = isset($params['level']) ? $params['level'] : null;
+            $categoryId = isset($params['category_id']) ? $params['category_id'] : null;
+            $categoryName = isset($params['category_name']) ? $params['category_name'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->productCategoriesListGetAsync($accountId, $productCatalogId, $fields);
+            $response = $this->apiInstance->productCategoriesListGetAsync($accountId, $productCatalogId, $page, $pageSize, $level, $categoryId, $categoryName, $fields);
             return $response;
         });
     }

@@ -283,6 +283,9 @@ class LeadCluesApi
             $_tempBody = $data;
         }
 
+        if (in_array('multipart/form-data', ['application/json', 'application/xml'])) {
+            $multipart = true;
+        }
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
                 ['application/json']
@@ -562,6 +565,9 @@ class LeadCluesApi
             $_tempBody = $data;
         }
 
+        if (in_array('multipart/form-data', ['application/json', 'application/xml'])) {
+            $multipart = true;
+        }
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
                 ['application/json']

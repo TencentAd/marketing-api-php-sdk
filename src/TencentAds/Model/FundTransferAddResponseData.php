@@ -59,6 +59,7 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'amount' => 'int',
         'externalBillNo' => 'string',
+        'transTime' => 'int',
         'fundType' => '\TencentAds\Model\AccountTypeMap',
         'isRepeated' => 'bool'
     ];
@@ -71,6 +72,7 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'amount' => 'int64',
         'externalBillNo' => null,
+        'transTime' => 'int64',
         'fundType' => null,
         'isRepeated' => null
     ];
@@ -104,6 +106,7 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'amount' => 'amount',
         'externalBillNo' => 'external_bill_no',
+        'transTime' => 'trans_time',
         'fundType' => 'fund_type',
         'isRepeated' => 'is_repeated'
     ];
@@ -116,6 +119,7 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     protected static $setters = [
         'amount' => 'setAmount',
         'externalBillNo' => 'setExternalBillNo',
+        'transTime' => 'setTransTime',
         'fundType' => 'setFundType',
         'isRepeated' => 'setIsRepeated'
     ];
@@ -128,6 +132,7 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     protected static $getters = [
         'amount' => 'getAmount',
         'externalBillNo' => 'getExternalBillNo',
+        'transTime' => 'getTransTime',
         'fundType' => 'getFundType',
         'isRepeated' => 'getIsRepeated'
     ];
@@ -194,6 +199,7 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     {
         $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
         $this->container['externalBillNo'] = isset($data['externalBillNo']) ? $data['externalBillNo'] : null;
+        $this->container['transTime'] = isset($data['transTime']) ? $data['transTime'] : null;
         $this->container['fundType'] = isset($data['fundType']) ? $data['fundType'] : null;
         $this->container['isRepeated'] = isset($data['isRepeated']) ? $data['isRepeated'] : null;
     }
@@ -266,6 +272,30 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     public function setExternalBillNo($externalBillNo)
     {
         $this->container['externalBillNo'] = $externalBillNo;
+
+        return $this;
+    }
+
+    /**
+     * Gets transTime
+     *
+     * @return int
+     */
+    public function getTransTime()
+    {
+        return $this->container['transTime'];
+    }
+
+    /**
+     * Sets transTime
+     *
+     * @param int $transTime transTime
+     *
+     * @return $this
+     */
+    public function setTransTime($transTime)
+    {
+        $this->container['transTime'] = $transTime;
 
         return $this;
     }

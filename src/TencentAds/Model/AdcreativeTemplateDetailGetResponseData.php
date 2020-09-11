@@ -57,7 +57,7 @@ class AdcreativeTemplateDetailGetResponseData implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'list' => '\TencentAds\Model\AdcreativeTemplateListStruct[]'
+        'list' => '\TencentAds\Model\AdcreativeTemplateDetailGetAdcreativeTemplateListStruct[]'
     ];
 
     /**
@@ -207,7 +207,7 @@ class AdcreativeTemplateDetailGetResponseData implements ModelInterface, ArrayAc
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\AdcreativeTemplateListStruct[]
+     * @return \TencentAds\Model\AdcreativeTemplateDetailGetAdcreativeTemplateListStruct[]
      */
     public function getList()
     {
@@ -217,7 +217,7 @@ class AdcreativeTemplateDetailGetResponseData implements ModelInterface, ArrayAc
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\AdcreativeTemplateListStruct[] $list list
+     * @param \TencentAds\Model\AdcreativeTemplateDetailGetAdcreativeTemplateListStruct[] $list list
      *
      * @return $this
      */

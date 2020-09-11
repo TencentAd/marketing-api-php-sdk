@@ -97,7 +97,8 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'deprecatedCustomAudience' => 'int[]',
         'deprecatedExcludedCustomAudience' => 'int[]',
         'deprecatedRegion' => 'int[]',
-        'miniGameQqStatus' => 'string[]'
+        'miniGameQqStatus' => 'string[]',
+        'excludedConvertedAudience' => '\TencentAds\Model\ExcludedConvertedAudience'
     ];
 
     /**
@@ -145,7 +146,8 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'deprecatedCustomAudience' => 'int64',
         'deprecatedExcludedCustomAudience' => 'int64',
         'deprecatedRegion' => 'int64',
-        'miniGameQqStatus' => null
+        'miniGameQqStatus' => null,
+        'excludedConvertedAudience' => null
     ];
 
     /**
@@ -214,7 +216,8 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'deprecatedCustomAudience' => 'deprecated_custom_audience',
         'deprecatedExcludedCustomAudience' => 'deprecated_excluded_custom_audience',
         'deprecatedRegion' => 'deprecated_region',
-        'miniGameQqStatus' => 'mini_game_qq_status'
+        'miniGameQqStatus' => 'mini_game_qq_status',
+        'excludedConvertedAudience' => 'excluded_converted_audience'
     ];
 
     /**
@@ -262,7 +265,8 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'deprecatedCustomAudience' => 'setDeprecatedCustomAudience',
         'deprecatedExcludedCustomAudience' => 'setDeprecatedExcludedCustomAudience',
         'deprecatedRegion' => 'setDeprecatedRegion',
-        'miniGameQqStatus' => 'setMiniGameQqStatus'
+        'miniGameQqStatus' => 'setMiniGameQqStatus',
+        'excludedConvertedAudience' => 'setExcludedConvertedAudience'
     ];
 
     /**
@@ -310,7 +314,8 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'deprecatedCustomAudience' => 'getDeprecatedCustomAudience',
         'deprecatedExcludedCustomAudience' => 'getDeprecatedExcludedCustomAudience',
         'deprecatedRegion' => 'getDeprecatedRegion',
-        'miniGameQqStatus' => 'getMiniGameQqStatus'
+        'miniGameQqStatus' => 'getMiniGameQqStatus',
+        'excludedConvertedAudience' => 'getExcludedConvertedAudience'
     ];
 
     /**
@@ -413,6 +418,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         $this->container['deprecatedExcludedCustomAudience'] = isset($data['deprecatedExcludedCustomAudience']) ? $data['deprecatedExcludedCustomAudience'] : null;
         $this->container['deprecatedRegion'] = isset($data['deprecatedRegion']) ? $data['deprecatedRegion'] : null;
         $this->container['miniGameQqStatus'] = isset($data['miniGameQqStatus']) ? $data['miniGameQqStatus'] : null;
+        $this->container['excludedConvertedAudience'] = isset($data['excludedConvertedAudience']) ? $data['excludedConvertedAudience'] : null;
     }
 
     /**
@@ -1395,6 +1401,30 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     public function setMiniGameQqStatus($miniGameQqStatus)
     {
         $this->container['miniGameQqStatus'] = $miniGameQqStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets excludedConvertedAudience
+     *
+     * @return \TencentAds\Model\ExcludedConvertedAudience
+     */
+    public function getExcludedConvertedAudience()
+    {
+        return $this->container['excludedConvertedAudience'];
+    }
+
+    /**
+     * Sets excludedConvertedAudience
+     *
+     * @param \TencentAds\Model\ExcludedConvertedAudience $excludedConvertedAudience excludedConvertedAudience
+     *
+     * @return $this
+     */
+    public function setExcludedConvertedAudience($excludedConvertedAudience)
+    {
+        $this->container['excludedConvertedAudience'] = $excludedConvertedAudience;
 
         return $this;
     }

@@ -62,13 +62,13 @@ class WechatAdvertiserDetailGetListStruct implements ModelInterface, ArrayAccess
         'wechatAccountName' => 'string',
         'systemIndustryId' => 'int',
         'wechatAccountId' => 'string',
+        'accountType' => '\TencentAds\Model\WechatAdvertiserAccountType',
         'corporationName' => 'string',
         'authStatus' => '\TencentAds\Model\WechatAuthStatus',
         'authTime' => 'int',
         'agencyIdList' => 'int[]',
         'staffWechatIdList' => 'string[]',
-        'dailyBudget' => 'int',
-        'fundType' => '\TencentAds\Model\WechatAdvertiserAccountType'
+        'dailyBudget' => 'int'
     ];
 
     /**
@@ -81,13 +81,13 @@ class WechatAdvertiserDetailGetListStruct implements ModelInterface, ArrayAccess
         'wechatAccountName' => null,
         'systemIndustryId' => 'int64',
         'wechatAccountId' => null,
+        'accountType' => null,
         'corporationName' => null,
         'authStatus' => null,
         'authTime' => 'int64',
         'agencyIdList' => 'int64',
         'staffWechatIdList' => null,
-        'dailyBudget' => 'int64',
-        'fundType' => null
+        'dailyBudget' => 'int64'
     ];
 
     /**
@@ -121,13 +121,13 @@ class WechatAdvertiserDetailGetListStruct implements ModelInterface, ArrayAccess
         'wechatAccountName' => 'wechat_account_name',
         'systemIndustryId' => 'system_industry_id',
         'wechatAccountId' => 'wechat_account_id',
+        'accountType' => 'account_type',
         'corporationName' => 'corporation_name',
         'authStatus' => 'auth_status',
         'authTime' => 'auth_time',
         'agencyIdList' => 'agency_id_list',
         'staffWechatIdList' => 'staff_wechat_id_list',
-        'dailyBudget' => 'daily_budget',
-        'fundType' => 'fund_type'
+        'dailyBudget' => 'daily_budget'
     ];
 
     /**
@@ -140,13 +140,13 @@ class WechatAdvertiserDetailGetListStruct implements ModelInterface, ArrayAccess
         'wechatAccountName' => 'setWechatAccountName',
         'systemIndustryId' => 'setSystemIndustryId',
         'wechatAccountId' => 'setWechatAccountId',
+        'accountType' => 'setAccountType',
         'corporationName' => 'setCorporationName',
         'authStatus' => 'setAuthStatus',
         'authTime' => 'setAuthTime',
         'agencyIdList' => 'setAgencyIdList',
         'staffWechatIdList' => 'setStaffWechatIdList',
-        'dailyBudget' => 'setDailyBudget',
-        'fundType' => 'setFundType'
+        'dailyBudget' => 'setDailyBudget'
     ];
 
     /**
@@ -159,13 +159,13 @@ class WechatAdvertiserDetailGetListStruct implements ModelInterface, ArrayAccess
         'wechatAccountName' => 'getWechatAccountName',
         'systemIndustryId' => 'getSystemIndustryId',
         'wechatAccountId' => 'getWechatAccountId',
+        'accountType' => 'getAccountType',
         'corporationName' => 'getCorporationName',
         'authStatus' => 'getAuthStatus',
         'authTime' => 'getAuthTime',
         'agencyIdList' => 'getAgencyIdList',
         'staffWechatIdList' => 'getStaffWechatIdList',
-        'dailyBudget' => 'getDailyBudget',
-        'fundType' => 'getFundType'
+        'dailyBudget' => 'getDailyBudget'
     ];
 
     /**
@@ -232,13 +232,13 @@ class WechatAdvertiserDetailGetListStruct implements ModelInterface, ArrayAccess
         $this->container['wechatAccountName'] = isset($data['wechatAccountName']) ? $data['wechatAccountName'] : null;
         $this->container['systemIndustryId'] = isset($data['systemIndustryId']) ? $data['systemIndustryId'] : null;
         $this->container['wechatAccountId'] = isset($data['wechatAccountId']) ? $data['wechatAccountId'] : null;
+        $this->container['accountType'] = isset($data['accountType']) ? $data['accountType'] : null;
         $this->container['corporationName'] = isset($data['corporationName']) ? $data['corporationName'] : null;
         $this->container['authStatus'] = isset($data['authStatus']) ? $data['authStatus'] : null;
         $this->container['authTime'] = isset($data['authTime']) ? $data['authTime'] : null;
         $this->container['agencyIdList'] = isset($data['agencyIdList']) ? $data['agencyIdList'] : null;
         $this->container['staffWechatIdList'] = isset($data['staffWechatIdList']) ? $data['staffWechatIdList'] : null;
         $this->container['dailyBudget'] = isset($data['dailyBudget']) ? $data['dailyBudget'] : null;
-        $this->container['fundType'] = isset($data['fundType']) ? $data['fundType'] : null;
     }
 
     /**
@@ -357,6 +357,30 @@ class WechatAdvertiserDetailGetListStruct implements ModelInterface, ArrayAccess
     public function setWechatAccountId($wechatAccountId)
     {
         $this->container['wechatAccountId'] = $wechatAccountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets accountType
+     *
+     * @return \TencentAds\Model\WechatAdvertiserAccountType
+     */
+    public function getAccountType()
+    {
+        return $this->container['accountType'];
+    }
+
+    /**
+     * Sets accountType
+     *
+     * @param \TencentAds\Model\WechatAdvertiserAccountType $accountType accountType
+     *
+     * @return $this
+     */
+    public function setAccountType($accountType)
+    {
+        $this->container['accountType'] = $accountType;
 
         return $this;
     }
@@ -501,30 +525,6 @@ class WechatAdvertiserDetailGetListStruct implements ModelInterface, ArrayAccess
     public function setDailyBudget($dailyBudget)
     {
         $this->container['dailyBudget'] = $dailyBudget;
-
-        return $this;
-    }
-
-    /**
-     * Gets fundType
-     *
-     * @return \TencentAds\Model\WechatAdvertiserAccountType
-     */
-    public function getFundType()
-    {
-        return $this->container['fundType'];
-    }
-
-    /**
-     * Sets fundType
-     *
-     * @param \TencentAds\Model\WechatAdvertiserAccountType $fundType fundType
-     *
-     * @return $this
-     */
-    public function setFundType($fundType)
-    {
-        $this->container['fundType'] = $fundType;
 
         return $this;
     }

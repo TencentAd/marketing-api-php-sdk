@@ -90,7 +90,7 @@ class ProductCatalogsReportsApi
     /**
      * Operation productCatalogsReportsGet
      *
-     * 获取商品库报表
+     * 获取商品库报表(待废弃)
      *
      * @param  int $accountId accountId (required)
      * @param  int $productCatalogId productCatalogId (required)
@@ -113,7 +113,7 @@ class ProductCatalogsReportsApi
     /**
      * Operation productCatalogsReportsGetWithHttpInfo
      *
-     * 获取商品库报表
+     * 获取商品库报表(待废弃)
      *
      * @param  int $accountId (required)
      * @param  int $productCatalogId (required)
@@ -194,7 +194,7 @@ class ProductCatalogsReportsApi
     /**
      * Operation productCatalogsReportsGetAsync
      *
-     * 获取商品库报表
+     * 获取商品库报表(待废弃)
      *
      * @param  int $accountId (required)
      * @param  int $productCatalogId (required)
@@ -220,7 +220,7 @@ class ProductCatalogsReportsApi
     /**
      * Operation productCatalogsReportsGetAsyncWithHttpInfo
      *
-     * 获取商品库报表
+     * 获取商品库报表(待废弃)
      *
      * @param  int $accountId (required)
      * @param  int $productCatalogId (required)
@@ -362,6 +362,9 @@ class ProductCatalogsReportsApi
         // body params
         $_tempBody = null;
 
+        if (in_array('multipart/form-data', ['text/plain'])) {
+            $multipart = true;
+        }
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
                 ['application/json']

@@ -1,6 +1,6 @@
 <?php
 /**
- * AdcreativeTemplateListStruct
+ * AdcreativeTemplateDetailGetAdcreativeTemplateListStruct
  *
  * PHP version 5
  *
@@ -33,7 +33,7 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AdcreativeTemplateListStruct Class Doc Comment
+ * AdcreativeTemplateDetailGetAdcreativeTemplateListStruct Class Doc Comment
  *
  * @category Class
  * @description 创意规格和投放权限数据结构
@@ -41,7 +41,7 @@ use \TencentAds\ObjectSerializer;
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AdcreativeTemplateListStruct implements ModelInterface, ArrayAccess
+class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class AdcreativeTemplateListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'adcreative_template_list_struct';
+    protected static $swaggerModelName = 'AdcreativeTemplateDetailGetAdcreativeTemplateListStruct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -73,7 +73,9 @@ class AdcreativeTemplateListStruct implements ModelInterface, ArrayAccess
         'unsupportAdAttributesSpecList' => '\TencentAds\Model\UnsupportSpec[]',
         'unsupportAdcreativeAttributesSpecList' => '\TencentAds\Model\UnsupportSpec[]',
         'unsupportSitesetDetailSpec' => '\TencentAds\Model\UnsupportSite[]',
-        'supportDynamicAbilitySpecList' => '\TencentAds\Model\SupportDynamicAbilitySpecList'
+        'supportDynamicAbilitySpecList' => '\TencentAds\Model\SupportDynamicAbilitySpecList',
+        'supportBidModeList' => 'string[]',
+        'unsupportBidModeList' => '\TencentAds\Model\UnsupportBidModeStruct[]'
     ];
 
     /**
@@ -97,7 +99,9 @@ class AdcreativeTemplateListStruct implements ModelInterface, ArrayAccess
         'unsupportAdAttributesSpecList' => null,
         'unsupportAdcreativeAttributesSpecList' => null,
         'unsupportSitesetDetailSpec' => null,
-        'supportDynamicAbilitySpecList' => null
+        'supportDynamicAbilitySpecList' => null,
+        'supportBidModeList' => null,
+        'unsupportBidModeList' => null
     ];
 
     /**
@@ -142,7 +146,9 @@ class AdcreativeTemplateListStruct implements ModelInterface, ArrayAccess
         'unsupportAdAttributesSpecList' => 'unsupport_ad_attributes_spec_list',
         'unsupportAdcreativeAttributesSpecList' => 'unsupport_adcreative_attributes_spec_list',
         'unsupportSitesetDetailSpec' => 'unsupport_siteset_detail_spec',
-        'supportDynamicAbilitySpecList' => 'support_dynamic_ability_spec_list'
+        'supportDynamicAbilitySpecList' => 'support_dynamic_ability_spec_list',
+        'supportBidModeList' => 'support_bid_mode_list',
+        'unsupportBidModeList' => 'unsupport_bid_mode_list'
     ];
 
     /**
@@ -166,7 +172,9 @@ class AdcreativeTemplateListStruct implements ModelInterface, ArrayAccess
         'unsupportAdAttributesSpecList' => 'setUnsupportAdAttributesSpecList',
         'unsupportAdcreativeAttributesSpecList' => 'setUnsupportAdcreativeAttributesSpecList',
         'unsupportSitesetDetailSpec' => 'setUnsupportSitesetDetailSpec',
-        'supportDynamicAbilitySpecList' => 'setSupportDynamicAbilitySpecList'
+        'supportDynamicAbilitySpecList' => 'setSupportDynamicAbilitySpecList',
+        'supportBidModeList' => 'setSupportBidModeList',
+        'unsupportBidModeList' => 'setUnsupportBidModeList'
     ];
 
     /**
@@ -190,7 +198,9 @@ class AdcreativeTemplateListStruct implements ModelInterface, ArrayAccess
         'unsupportAdAttributesSpecList' => 'getUnsupportAdAttributesSpecList',
         'unsupportAdcreativeAttributesSpecList' => 'getUnsupportAdcreativeAttributesSpecList',
         'unsupportSitesetDetailSpec' => 'getUnsupportSitesetDetailSpec',
-        'supportDynamicAbilitySpecList' => 'getSupportDynamicAbilitySpecList'
+        'supportDynamicAbilitySpecList' => 'getSupportDynamicAbilitySpecList',
+        'supportBidModeList' => 'getSupportBidModeList',
+        'unsupportBidModeList' => 'getUnsupportBidModeList'
     ];
 
     /**
@@ -269,6 +279,8 @@ class AdcreativeTemplateListStruct implements ModelInterface, ArrayAccess
         $this->container['unsupportAdcreativeAttributesSpecList'] = isset($data['unsupportAdcreativeAttributesSpecList']) ? $data['unsupportAdcreativeAttributesSpecList'] : null;
         $this->container['unsupportSitesetDetailSpec'] = isset($data['unsupportSitesetDetailSpec']) ? $data['unsupportSitesetDetailSpec'] : null;
         $this->container['supportDynamicAbilitySpecList'] = isset($data['supportDynamicAbilitySpecList']) ? $data['supportDynamicAbilitySpecList'] : null;
+        $this->container['supportBidModeList'] = isset($data['supportBidModeList']) ? $data['supportBidModeList'] : null;
+        $this->container['unsupportBidModeList'] = isset($data['unsupportBidModeList']) ? $data['unsupportBidModeList'] : null;
     }
 
     /**
@@ -675,6 +687,54 @@ class AdcreativeTemplateListStruct implements ModelInterface, ArrayAccess
     public function setSupportDynamicAbilitySpecList($supportDynamicAbilitySpecList)
     {
         $this->container['supportDynamicAbilitySpecList'] = $supportDynamicAbilitySpecList;
+
+        return $this;
+    }
+
+    /**
+     * Gets supportBidModeList
+     *
+     * @return string[]
+     */
+    public function getSupportBidModeList()
+    {
+        return $this->container['supportBidModeList'];
+    }
+
+    /**
+     * Sets supportBidModeList
+     *
+     * @param string[] $supportBidModeList supportBidModeList
+     *
+     * @return $this
+     */
+    public function setSupportBidModeList($supportBidModeList)
+    {
+        $this->container['supportBidModeList'] = $supportBidModeList;
+
+        return $this;
+    }
+
+    /**
+     * Gets unsupportBidModeList
+     *
+     * @return \TencentAds\Model\UnsupportBidModeStruct[]
+     */
+    public function getUnsupportBidModeList()
+    {
+        return $this->container['unsupportBidModeList'];
+    }
+
+    /**
+     * Sets unsupportBidModeList
+     *
+     * @param \TencentAds\Model\UnsupportBidModeStruct[] $unsupportBidModeList unsupportBidModeList
+     *
+     * @return $this
+     */
+    public function setUnsupportBidModeList($unsupportBidModeList)
+    {
+        $this->container['unsupportBidModeList'] = $unsupportBidModeList;
 
         return $this;
     }

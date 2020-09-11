@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * WebsiteReadStruct Class Doc Comment
  *
  * @category Class
- * @description 推广站点结构
+ * @description 推广版位结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

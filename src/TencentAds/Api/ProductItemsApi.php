@@ -283,6 +283,9 @@ class ProductItemsApi
             $_tempBody = $data;
         }
 
+        if (in_array('multipart/form-data', ['application/json', 'application/xml'])) {
+            $multipart = true;
+        }
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
                 ['application/json']
@@ -602,6 +605,9 @@ class ProductItemsApi
         // body params
         $_tempBody = null;
 
+        if (in_array('multipart/form-data', ['text/plain'])) {
+            $multipart = true;
+        }
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
                 ['application/json']
@@ -881,6 +887,9 @@ class ProductItemsApi
             $_tempBody = $data;
         }
 
+        if (in_array('multipart/form-data', ['application/json', 'application/xml'])) {
+            $multipart = true;
+        }
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
                 ['application/json']

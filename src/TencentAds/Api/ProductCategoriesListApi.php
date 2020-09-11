@@ -94,15 +94,20 @@ class ProductCategoriesListApi
      *
      * @param  int $accountId accountId (required)
      * @param  int $productCatalogId productCatalogId (required)
+     * @param  int $page page (required)
+     * @param  int $pageSize pageSize (required)
+     * @param  int $level level (optional)
+     * @param  int $categoryId categoryId (optional)
+     * @param  string $categoryName categoryName (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\ProductCategoriesListGetResponse
      */
-    public function productCategoriesListGet($accountId, $productCatalogId, $fields = null)
+    public function productCategoriesListGet($accountId, $productCatalogId, $page, $pageSize, $level = null, $categoryId = null, $categoryName = null, $fields = null)
     {
-        list($response) = $this->productCategoriesListGetWithHttpInfo($accountId, $productCatalogId, $fields);
+        list($response) = $this->productCategoriesListGetWithHttpInfo($accountId, $productCatalogId, $page, $pageSize, $level, $categoryId, $categoryName, $fields);
         return $response;
     }
 
@@ -113,16 +118,21 @@ class ProductCategoriesListApi
      *
      * @param  int $accountId (required)
      * @param  int $productCatalogId (required)
+     * @param  int $page (required)
+     * @param  int $pageSize (required)
+     * @param  int $level (optional)
+     * @param  int $categoryId (optional)
+     * @param  string $categoryName (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\ProductCategoriesListGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function productCategoriesListGetWithHttpInfo($accountId, $productCatalogId, $fields = null)
+    public function productCategoriesListGetWithHttpInfo($accountId, $productCatalogId, $page, $pageSize, $level = null, $categoryId = null, $categoryName = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\ProductCategoriesListGetResponse';
-        $request = $this->productCategoriesListGetRequest($accountId, $productCatalogId, $fields);
+        $request = $this->productCategoriesListGetRequest($accountId, $productCatalogId, $page, $pageSize, $level, $categoryId, $categoryName, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -190,14 +200,19 @@ class ProductCategoriesListApi
      *
      * @param  int $accountId (required)
      * @param  int $productCatalogId (required)
+     * @param  int $page (required)
+     * @param  int $pageSize (required)
+     * @param  int $level (optional)
+     * @param  int $categoryId (optional)
+     * @param  string $categoryName (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function productCategoriesListGetAsync($accountId, $productCatalogId, $fields = null)
+    public function productCategoriesListGetAsync($accountId, $productCatalogId, $page, $pageSize, $level = null, $categoryId = null, $categoryName = null, $fields = null)
     {
-        return $this->productCategoriesListGetAsyncWithHttpInfo($accountId, $productCatalogId, $fields)
+        return $this->productCategoriesListGetAsyncWithHttpInfo($accountId, $productCatalogId, $page, $pageSize, $level, $categoryId, $categoryName, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -212,15 +227,20 @@ class ProductCategoriesListApi
      *
      * @param  int $accountId (required)
      * @param  int $productCatalogId (required)
+     * @param  int $page (required)
+     * @param  int $pageSize (required)
+     * @param  int $level (optional)
+     * @param  int $categoryId (optional)
+     * @param  string $categoryName (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function productCategoriesListGetAsyncWithHttpInfo($accountId, $productCatalogId, $fields = null)
+    public function productCategoriesListGetAsyncWithHttpInfo($accountId, $productCatalogId, $page, $pageSize, $level = null, $categoryId = null, $categoryName = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\ProductCategoriesListGetResponse';
-        $request = $this->productCategoriesListGetRequest($accountId, $productCatalogId, $fields);
+        $request = $this->productCategoriesListGetRequest($accountId, $productCatalogId, $page, $pageSize, $level, $categoryId, $categoryName, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -264,12 +284,17 @@ class ProductCategoriesListApi
      *
      * @param  int $accountId (required)
      * @param  int $productCatalogId (required)
+     * @param  int $page (required)
+     * @param  int $pageSize (required)
+     * @param  int $level (optional)
+     * @param  int $categoryId (optional)
+     * @param  string $categoryName (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function productCategoriesListGetRequest($accountId, $productCatalogId, $fields = null)
+    protected function productCategoriesListGetRequest($accountId, $productCatalogId, $page, $pageSize, $level = null, $categoryId = null, $categoryName = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -281,6 +306,18 @@ class ProductCategoriesListApi
         if ($productCatalogId === null || (is_array($productCatalogId) && count($productCatalogId) === 0)) {
             throw new \InvalidArgumentException(
                 'Missing the required parameter $productCatalogId when calling productCategoriesListGet'
+            );
+        }
+        // verify the required parameter 'page' is set
+        if ($page === null || (is_array($page) && count($page) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $page when calling productCategoriesListGet'
+            );
+        }
+        // verify the required parameter 'pageSize' is set
+        if ($pageSize === null || (is_array($pageSize) && count($pageSize) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $pageSize when calling productCategoriesListGet'
             );
         }
 
@@ -300,6 +337,26 @@ class ProductCategoriesListApi
             $queryParams['product_catalog_id'] = ObjectSerializer::toQueryValue($productCatalogId);
         }
         // query params
+        if ($page !== null) {
+            $queryParams['page'] = ObjectSerializer::toQueryValue($page);
+        }
+        // query params
+        if ($pageSize !== null) {
+            $queryParams['page_size'] = ObjectSerializer::toQueryValue($pageSize);
+        }
+        // query params
+        if ($level !== null) {
+            $queryParams['level'] = ObjectSerializer::toQueryValue($level);
+        }
+        // query params
+        if ($categoryId !== null) {
+            $queryParams['category_id'] = ObjectSerializer::toQueryValue($categoryId);
+        }
+        // query params
+        if ($categoryName !== null) {
+            $queryParams['category_name'] = ObjectSerializer::toQueryValue($categoryName);
+        }
+        // query params
         if (is_array($fields)) {
             $queryParams['fields'] = $fields;
         } else
@@ -311,6 +368,9 @@ class ProductCategoriesListApi
         // body params
         $_tempBody = null;
 
+        if (in_array('multipart/form-data', ['text/plain'])) {
+            $multipart = true;
+        }
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
                 ['application/json']

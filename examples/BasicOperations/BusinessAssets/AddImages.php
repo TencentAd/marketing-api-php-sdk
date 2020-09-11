@@ -43,7 +43,18 @@ class AddImages
                              ]);
             $imageId = $response->getImageId();
 
-            return $imageId;
+            // UPLOAD BY BYTES
+            $response = $tads->images()
+                             ->add([
+                                 'account_id'  => static::$ACCOUNT_ID,
+                                 'upload_type' => 'UPLOAD_TYPE_BYTES',
+                                 'bytes'       => base64_encode(file_get_contents(static::$IMAGE_FILE)),
+                                 'signature'   => $signature,
+                             ]);
+            $imageId2 = $response->getImageId();
+            // $imageId2 should be the same as $imageId
+
+            return [$imageId, $imageId2];
         } catch (TencentAdsResponseException $e) {
             // When Api returns an error
             echo 'Tencent ads returned an error: ' . $e->getMessage() . PHP_EOL;

@@ -64,6 +64,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
         'promotedObjectId' => 'string',
+        'productCatalogId' => 'int',
         'pageType' => '\TencentAds\Model\DestinationTypeRead'
     ];
 
@@ -79,6 +80,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'int64',
         'lastModifiedTime' => 'int64',
         'promotedObjectId' => null,
+        'productCatalogId' => 'int64',
         'pageType' => null
     ];
 
@@ -115,6 +117,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'created_time',
         'lastModifiedTime' => 'last_modified_time',
         'promotedObjectId' => 'promoted_object_id',
+        'productCatalogId' => 'product_catalog_id',
         'pageType' => 'page_type'
     ];
 
@@ -130,6 +133,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'setCreatedTime',
         'lastModifiedTime' => 'setLastModifiedTime',
         'promotedObjectId' => 'setPromotedObjectId',
+        'productCatalogId' => 'setProductCatalogId',
         'pageType' => 'setPageType'
     ];
 
@@ -145,6 +149,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'getCreatedTime',
         'lastModifiedTime' => 'getLastModifiedTime',
         'promotedObjectId' => 'getPromotedObjectId',
+        'productCatalogId' => 'getProductCatalogId',
         'pageType' => 'getPageType'
     ];
 
@@ -214,6 +219,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
         $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
+        $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
         $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
     }
 
@@ -381,6 +387,30 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     public function setPromotedObjectId($promotedObjectId)
     {
         $this->container['promotedObjectId'] = $promotedObjectId;
+
+        return $this;
+    }
+
+    /**
+     * Gets productCatalogId
+     *
+     * @return int
+     */
+    public function getProductCatalogId()
+    {
+        return $this->container['productCatalogId'];
+    }
+
+    /**
+     * Sets productCatalogId
+     *
+     * @param int $productCatalogId productCatalogId
+     *
+     * @return $this
+     */
+    public function setProductCatalogId($productCatalogId)
+    {
+        $this->container['productCatalogId'] = $productCatalogId;
 
         return $this;
     }

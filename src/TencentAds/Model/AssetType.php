@@ -44,7 +44,10 @@ class AssetType
     /**
      * Possible values of this enum
      */
-    const ASSET_TYPE_CANVAS_WECHAT = 'ASSET_TYPE_CANVAS_WECHAT';
+    const XIJING = 'ASSET_TYPE_XIJING';
+    const CANVAS_WECHAT = 'ASSET_TYPE_CANVAS_WECHAT';
+    const CANVAS_IMAGE = 'ASSET_TYPE_CANVAS_IMAGE';
+    const CANVAS_VIDEO = 'ASSET_TYPE_CANVAS_VIDEO';
     
     /**
      * Gets allowable values of the enum
@@ -53,7 +56,10 @@ class AssetType
     public static function getAllowableEnumValues()
     {
         return [
-            self::ASSET_TYPE_CANVAS_WECHAT,
+            self::XIJING,
+            self::CANVAS_WECHAT,
+            self::CANVAS_IMAGE,
+            self::CANVAS_VIDEO,
         ];
     }
 }

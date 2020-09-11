@@ -84,6 +84,8 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
         'playablePageMaterialId' => 'string',
         'videoEndPage' => '\TencentAds\Model\VideoEndPageSpec',
         'feedsVideoCommentSwitch' => 'bool',
+        'conversionDataType' => '\TencentAds\Model\ConversionDataType',
+        'conversionTargetType' => '\TencentAds\Model\ConversionTargetType',
         'adcreativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElements'
     ];
@@ -120,6 +122,8 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
         'playablePageMaterialId' => null,
         'videoEndPage' => null,
         'feedsVideoCommentSwitch' => null,
+        'conversionDataType' => null,
+        'conversionTargetType' => null,
         'adcreativeTemplateId' => 'int64',
         'adcreativeElements' => null
     ];
@@ -177,6 +181,8 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
         'playablePageMaterialId' => 'playable_page_material_id',
         'videoEndPage' => 'video_end_page',
         'feedsVideoCommentSwitch' => 'feeds_video_comment_switch',
+        'conversionDataType' => 'conversion_data_type',
+        'conversionTargetType' => 'conversion_target_type',
         'adcreativeTemplateId' => 'adcreative_template_id',
         'adcreativeElements' => 'adcreative_elements'
     ];
@@ -213,6 +219,8 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
         'playablePageMaterialId' => 'setPlayablePageMaterialId',
         'videoEndPage' => 'setVideoEndPage',
         'feedsVideoCommentSwitch' => 'setFeedsVideoCommentSwitch',
+        'conversionDataType' => 'setConversionDataType',
+        'conversionTargetType' => 'setConversionTargetType',
         'adcreativeTemplateId' => 'setAdcreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements'
     ];
@@ -249,6 +257,8 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
         'playablePageMaterialId' => 'getPlayablePageMaterialId',
         'videoEndPage' => 'getVideoEndPage',
         'feedsVideoCommentSwitch' => 'getFeedsVideoCommentSwitch',
+        'conversionDataType' => 'getConversionDataType',
+        'conversionTargetType' => 'getConversionTargetType',
         'adcreativeTemplateId' => 'getAdcreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements'
     ];
@@ -339,6 +349,8 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
         $this->container['playablePageMaterialId'] = isset($data['playablePageMaterialId']) ? $data['playablePageMaterialId'] : null;
         $this->container['videoEndPage'] = isset($data['videoEndPage']) ? $data['videoEndPage'] : null;
         $this->container['feedsVideoCommentSwitch'] = isset($data['feedsVideoCommentSwitch']) ? $data['feedsVideoCommentSwitch'] : null;
+        $this->container['conversionDataType'] = isset($data['conversionDataType']) ? $data['conversionDataType'] : null;
+        $this->container['conversionTargetType'] = isset($data['conversionTargetType']) ? $data['conversionTargetType'] : null;
         $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
     }
@@ -987,6 +999,54 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     public function setFeedsVideoCommentSwitch($feedsVideoCommentSwitch)
     {
         $this->container['feedsVideoCommentSwitch'] = $feedsVideoCommentSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets conversionDataType
+     *
+     * @return \TencentAds\Model\ConversionDataType
+     */
+    public function getConversionDataType()
+    {
+        return $this->container['conversionDataType'];
+    }
+
+    /**
+     * Sets conversionDataType
+     *
+     * @param \TencentAds\Model\ConversionDataType $conversionDataType conversionDataType
+     *
+     * @return $this
+     */
+    public function setConversionDataType($conversionDataType)
+    {
+        $this->container['conversionDataType'] = $conversionDataType;
+
+        return $this;
+    }
+
+    /**
+     * Gets conversionTargetType
+     *
+     * @return \TencentAds\Model\ConversionTargetType
+     */
+    public function getConversionTargetType()
+    {
+        return $this->container['conversionTargetType'];
+    }
+
+    /**
+     * Sets conversionTargetType
+     *
+     * @param \TencentAds\Model\ConversionTargetType $conversionTargetType conversionTargetType
+     *
+     * @return $this
+     */
+    public function setConversionTargetType($conversionTargetType)
+    {
+        $this->container['conversionTargetType'] = $conversionTargetType;
 
         return $this;
     }

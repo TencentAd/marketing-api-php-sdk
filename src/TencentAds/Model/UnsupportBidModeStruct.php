@@ -1,6 +1,6 @@
 <?php
 /**
- * AsyncReportFilesGetResponse
+ * UnsupportBidModeStruct
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AsyncReportFilesGetResponse Class Doc Comment
+ * UnsupportBidModeStruct Class Doc Comment
  *
  * @category Class
+ * @description 不支持的出价方式
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AsyncReportFilesGetResponse implements ModelInterface, ArrayAccess
+class UnsupportBidModeStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class AsyncReportFilesGetResponse implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'AsyncReportFilesGetResponse';
+    protected static $swaggerModelName = 'unsupport_bid_mode_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,10 +58,8 @@ class AsyncReportFilesGetResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'code' => 'int',
-        'message' => 'string',
-        'messageCn' => 'string',
-        'errors' => '\TencentAds\Model\ApiErrorStruct[]'
+        'siteSet' => 'string[]',
+        'bidModeList' => 'string[]'
     ];
 
     /**
@@ -69,10 +68,8 @@ class AsyncReportFilesGetResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'code' => 'int64',
-        'message' => null,
-        'messageCn' => null,
-        'errors' => null
+        'siteSet' => null,
+        'bidModeList' => null
     ];
 
     /**
@@ -102,10 +99,8 @@ class AsyncReportFilesGetResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'code' => 'code',
-        'message' => 'message',
-        'messageCn' => 'message_cn',
-        'errors' => 'errors'
+        'siteSet' => 'site_set',
+        'bidModeList' => 'bid_mode_list'
     ];
 
     /**
@@ -114,10 +109,8 @@ class AsyncReportFilesGetResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'code' => 'setCode',
-        'message' => 'setMessage',
-        'messageCn' => 'setMessageCn',
-        'errors' => 'setErrors'
+        'siteSet' => 'setSiteSet',
+        'bidModeList' => 'setBidModeList'
     ];
 
     /**
@@ -126,10 +119,8 @@ class AsyncReportFilesGetResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'code' => 'getCode',
-        'message' => 'getMessage',
-        'messageCn' => 'getMessageCn',
-        'errors' => 'getErrors'
+        'siteSet' => 'getSiteSet',
+        'bidModeList' => 'getBidModeList'
     ];
 
     /**
@@ -192,10 +183,8 @@ class AsyncReportFilesGetResponse implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
-        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
-        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
-        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
+        $this->container['bidModeList'] = isset($data['bidModeList']) ? $data['bidModeList'] : null;
     }
 
     /**
@@ -223,97 +212,49 @@ class AsyncReportFilesGetResponse implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets code
+     * Gets siteSet
      *
-     * @return int
+     * @return string[]
      */
-    public function getCode()
+    public function getSiteSet()
     {
-        return $this->container['code'];
+        return $this->container['siteSet'];
     }
 
     /**
-     * Sets code
+     * Sets siteSet
      *
-     * @param int $code code
+     * @param string[] $siteSet siteSet
      *
      * @return $this
      */
-    public function setCode($code)
+    public function setSiteSet($siteSet)
     {
-        $this->container['code'] = $code;
+        $this->container['siteSet'] = $siteSet;
 
         return $this;
     }
 
     /**
-     * Gets message
+     * Gets bidModeList
      *
-     * @return string
+     * @return string[]
      */
-    public function getMessage()
+    public function getBidModeList()
     {
-        return $this->container['message'];
+        return $this->container['bidModeList'];
     }
 
     /**
-     * Sets message
+     * Sets bidModeList
      *
-     * @param string $message message
+     * @param string[] $bidModeList bidModeList
      *
      * @return $this
      */
-    public function setMessage($message)
+    public function setBidModeList($bidModeList)
     {
-        $this->container['message'] = $message;
-
-        return $this;
-    }
-
-    /**
-     * Gets messageCn
-     *
-     * @return string
-     */
-    public function getMessageCn()
-    {
-        return $this->container['messageCn'];
-    }
-
-    /**
-     * Sets messageCn
-     *
-     * @param string $messageCn messageCn
-     *
-     * @return $this
-     */
-    public function setMessageCn($messageCn)
-    {
-        $this->container['messageCn'] = $messageCn;
-
-        return $this;
-    }
-
-    /**
-     * Gets errors
-     *
-     * @return \TencentAds\Model\ApiErrorStruct[]
-     */
-    public function getErrors()
-    {
-        return $this->container['errors'];
-    }
-
-    /**
-     * Sets errors
-     *
-     * @param \TencentAds\Model\ApiErrorStruct[] $errors errors
-     *
-     * @return $this
-     */
-    public function setErrors($errors)
-    {
-        $this->container['errors'] = $errors;
+        $this->container['bidModeList'] = $bidModeList;
 
         return $this;
     }

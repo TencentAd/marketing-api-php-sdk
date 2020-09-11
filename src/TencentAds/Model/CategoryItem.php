@@ -61,7 +61,8 @@ class CategoryItem implements ModelInterface, ArrayAccess
         'categoryId' => 'int',
         'categoryName' => 'string',
         'parentCategoryId' => 'int',
-        'level' => 'int'
+        'level' => 'int',
+        'categoryPath' => '\TencentAds\Model\CategoryPathsItem[]'
     ];
 
     /**
@@ -73,7 +74,8 @@ class CategoryItem implements ModelInterface, ArrayAccess
         'categoryId' => 'int64',
         'categoryName' => null,
         'parentCategoryId' => 'int64',
-        'level' => 'int64'
+        'level' => 'int64',
+        'categoryPath' => null
     ];
 
     /**
@@ -106,7 +108,8 @@ class CategoryItem implements ModelInterface, ArrayAccess
         'categoryId' => 'category_id',
         'categoryName' => 'category_name',
         'parentCategoryId' => 'parent_category_id',
-        'level' => 'level'
+        'level' => 'level',
+        'categoryPath' => 'category_path'
     ];
 
     /**
@@ -118,7 +121,8 @@ class CategoryItem implements ModelInterface, ArrayAccess
         'categoryId' => 'setCategoryId',
         'categoryName' => 'setCategoryName',
         'parentCategoryId' => 'setParentCategoryId',
-        'level' => 'setLevel'
+        'level' => 'setLevel',
+        'categoryPath' => 'setCategoryPath'
     ];
 
     /**
@@ -130,7 +134,8 @@ class CategoryItem implements ModelInterface, ArrayAccess
         'categoryId' => 'getCategoryId',
         'categoryName' => 'getCategoryName',
         'parentCategoryId' => 'getParentCategoryId',
-        'level' => 'getLevel'
+        'level' => 'getLevel',
+        'categoryPath' => 'getCategoryPath'
     ];
 
     /**
@@ -197,6 +202,7 @@ class CategoryItem implements ModelInterface, ArrayAccess
         $this->container['categoryName'] = isset($data['categoryName']) ? $data['categoryName'] : null;
         $this->container['parentCategoryId'] = isset($data['parentCategoryId']) ? $data['parentCategoryId'] : null;
         $this->container['level'] = isset($data['level']) ? $data['level'] : null;
+        $this->container['categoryPath'] = isset($data['categoryPath']) ? $data['categoryPath'] : null;
     }
 
     /**
@@ -315,6 +321,30 @@ class CategoryItem implements ModelInterface, ArrayAccess
     public function setLevel($level)
     {
         $this->container['level'] = $level;
+
+        return $this;
+    }
+
+    /**
+     * Gets categoryPath
+     *
+     * @return \TencentAds\Model\CategoryPathsItem[]
+     */
+    public function getCategoryPath()
+    {
+        return $this->container['categoryPath'];
+    }
+
+    /**
+     * Sets categoryPath
+     *
+     * @param \TencentAds\Model\CategoryPathsItem[] $categoryPath categoryPath
+     *
+     * @return $this
+     */
+    public function setCategoryPath($categoryPath)
+    {
+        $this->container['categoryPath'] = $categoryPath;
 
         return $this;
     }

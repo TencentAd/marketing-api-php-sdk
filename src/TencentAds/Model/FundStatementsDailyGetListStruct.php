@@ -59,6 +59,7 @@ class FundStatementsDailyGetListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'tradeType' => '\TencentAds\Model\TradeType',
+        'transTime' => 'int',
         'amount' => 'int',
         'description' => 'string',
         'fundType' => '\TencentAds\Model\AccountTypeMap'
@@ -71,6 +72,7 @@ class FundStatementsDailyGetListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'tradeType' => null,
+        'transTime' => 'int64',
         'amount' => 'int64',
         'description' => null,
         'fundType' => null
@@ -104,6 +106,7 @@ class FundStatementsDailyGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'tradeType' => 'trade_type',
+        'transTime' => 'trans_time',
         'amount' => 'amount',
         'description' => 'description',
         'fundType' => 'fund_type'
@@ -116,6 +119,7 @@ class FundStatementsDailyGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'tradeType' => 'setTradeType',
+        'transTime' => 'setTransTime',
         'amount' => 'setAmount',
         'description' => 'setDescription',
         'fundType' => 'setFundType'
@@ -128,6 +132,7 @@ class FundStatementsDailyGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'tradeType' => 'getTradeType',
+        'transTime' => 'getTransTime',
         'amount' => 'getAmount',
         'description' => 'getDescription',
         'fundType' => 'getFundType'
@@ -194,6 +199,7 @@ class FundStatementsDailyGetListStruct implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['tradeType'] = isset($data['tradeType']) ? $data['tradeType'] : null;
+        $this->container['transTime'] = isset($data['transTime']) ? $data['transTime'] : null;
         $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
         $this->container['fundType'] = isset($data['fundType']) ? $data['fundType'] : null;
@@ -243,6 +249,30 @@ class FundStatementsDailyGetListStruct implements ModelInterface, ArrayAccess
     public function setTradeType($tradeType)
     {
         $this->container['tradeType'] = $tradeType;
+
+        return $this;
+    }
+
+    /**
+     * Gets transTime
+     *
+     * @return int
+     */
+    public function getTransTime()
+    {
+        return $this->container['transTime'];
+    }
+
+    /**
+     * Sets transTime
+     *
+     * @param int $transTime transTime
+     *
+     * @return $this
+     */
+    public function setTransTime($transTime)
+    {
+        $this->container['transTime'] = $transTime;
 
         return $this;
     }

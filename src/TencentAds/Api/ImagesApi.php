@@ -342,6 +342,9 @@ class ImagesApi
         // body params
         $_tempBody = null;
 
+        if (in_array('multipart/form-data', ['multipart/form-data'])) {
+            $multipart = true;
+        }
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
                 ['application/json']
@@ -664,6 +667,9 @@ class ImagesApi
         // body params
         $_tempBody = null;
 
+        if (in_array('multipart/form-data', ['text/plain'])) {
+            $multipart = true;
+        }
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
                 ['application/json']

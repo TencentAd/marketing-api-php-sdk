@@ -1,6 +1,6 @@
 <?php
 /**
- * ProductItemDisplayQuantity
+ * ConversionDataType
  *
  * PHP version 5
  *
@@ -31,21 +31,24 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ProductItemDisplayQuantity Class Doc Comment
+ * ConversionDataType Class Doc Comment
  *
  * @category Class
- * @description 模板上的商品数量
+ * @description 数据展示数据类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ProductItemDisplayQuantity
+class ConversionDataType
 {
     /**
      * Possible values of this enum
      */
-    const SINGLE = 'SINGLE';
-    const MULTIPLE = 'MULTIPLE';
+    const _DEFAULT = 'CONVERSION_DATA_DEFAULT';
+    const FRIEND_PLAY = 'CONVERSION_DATA_FRIEND_PLAY';
+    const APP_DOWNLOAD = 'CONVERSION_DATA_APP_DOWNLOAD';
+    const ONSHOP = 'CONVERSION_DATA_ONSHOP';
+    const ADMETRIC = 'CONVERSION_DATA_ADMETRIC';
     
     /**
      * Gets allowable values of the enum
@@ -54,8 +57,11 @@ class ProductItemDisplayQuantity
     public static function getAllowableEnumValues()
     {
         return [
-            self::SINGLE,
-            self::MULTIPLE,
+            self::_DEFAULT,
+            self::FRIEND_PLAY,
+            self::APP_DOWNLOAD,
+            self::ONSHOP,
+            self::ADMETRIC,
         ];
     }
 }

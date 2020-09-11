@@ -24,6 +24,7 @@ use TencentAds\Container\AudienceGrantRelationsApiContainer;
 use TencentAds\Container\AuthorizationApiContainer;
 use TencentAds\Container\BatchOperationApiContainer;
 use TencentAds\Container\BatchRequestsApiContainer;
+use TencentAds\Container\BidSimulationApiContainer;
 use TencentAds\Container\BrandApiContainer;
 use TencentAds\Container\BusinessManagerRelationsApiContainer;
 use TencentAds\Container\CampaignsApiContainer;
@@ -59,6 +60,8 @@ use TencentAds\Container\LabelAudiencesApiContainer;
 use TencentAds\Container\LabelsApiContainer;
 use TencentAds\Container\LeadCluesApiContainer;
 use TencentAds\Container\LeadsApiContainer;
+use TencentAds\Container\LeadsFormApiContainer;
+use TencentAds\Container\LeadsFormListApiContainer;
 use TencentAds\Container\OauthApiContainer;
 use TencentAds\Container\OptimizationGoalPermissionsApiContainer;
 use TencentAds\Container\PagesApiContainer;
@@ -68,6 +71,7 @@ use TencentAds\Container\ProductCatalogsReportsApiContainer;
 use TencentAds\Container\ProductCategoriesListApiContainer;
 use TencentAds\Container\ProductItemsApiContainer;
 use TencentAds\Container\ProductItemsDetailApiContainer;
+use TencentAds\Container\ProductItemsListApiContainer;
 use TencentAds\Container\ProductsSystemStatusApiContainer;
 use TencentAds\Container\ProfilesApiContainer;
 use TencentAds\Container\PromotedObjectsApiContainer;
@@ -99,6 +103,7 @@ use TencentAds\Container\WechatLeadsApiContainer;
 use TencentAds\Container\WechatPagesApiContainer;
 use TencentAds\Container\XijingPageApiContainer;
 use TencentAds\Container\XijingPageByComponentsApiContainer;
+use TencentAds\Container\XijingPageListApiContainer;
 use TencentAds\Container\XijingTemplateApiContainer;
 
 class App
@@ -171,6 +176,9 @@ class App
 
     /** @var BatchRequestsApiContainer */
     public $batchRequestsApiContainer;
+
+    /** @var BidSimulationApiContainer */
+    public $bidSimulationApiContainer;
 
     /** @var BrandApiContainer */
     public $brandApiContainer;
@@ -277,6 +285,12 @@ class App
     /** @var LeadsApiContainer */
     public $leadsApiContainer;
 
+    /** @var LeadsFormApiContainer */
+    public $leadsFormApiContainer;
+
+    /** @var LeadsFormListApiContainer */
+    public $leadsFormListApiContainer;
+
     /** @var OauthApiContainer */
     public $oauthApiContainer;
 
@@ -303,6 +317,9 @@ class App
 
     /** @var ProductItemsDetailApiContainer */
     public $productItemsDetailApiContainer;
+
+    /** @var ProductItemsListApiContainer */
+    public $productItemsListApiContainer;
 
     /** @var ProductsSystemStatusApiContainer */
     public $productsSystemStatusApiContainer;
@@ -396,6 +413,9 @@ class App
 
     /** @var XijingPageByComponentsApiContainer */
     public $xijingPageByComponentsApiContainer;
+
+    /** @var XijingPageListApiContainer */
+    public $xijingPageListApiContainer;
 
     /** @var XijingTemplateApiContainer */
     public $xijingTemplateApiContainer;
@@ -718,6 +738,20 @@ class App
             $this->batchRequestsApiContainer = $container;
         }
         return $this->batchRequestsApiContainer;
+    }
+
+
+    /**
+     * @return BidSimulationApiContainer
+     */
+    public function bidSimulation()
+    {
+        if (empty($this->bidSimulationApiContainer)) {
+            $container = new BidSimulationApiContainer();
+            $container->init($this, $this->getClient());
+            $this->bidSimulationApiContainer = $container;
+        }
+        return $this->bidSimulationApiContainer;
     }
 
 
@@ -1212,6 +1246,34 @@ class App
 
 
     /**
+     * @return LeadsFormApiContainer
+     */
+    public function leadsForm()
+    {
+        if (empty($this->leadsFormApiContainer)) {
+            $container = new LeadsFormApiContainer();
+            $container->init($this, $this->getClient());
+            $this->leadsFormApiContainer = $container;
+        }
+        return $this->leadsFormApiContainer;
+    }
+
+
+    /**
+     * @return LeadsFormListApiContainer
+     */
+    public function leadsFormList()
+    {
+        if (empty($this->leadsFormListApiContainer)) {
+            $container = new LeadsFormListApiContainer();
+            $container->init($this, $this->getClient());
+            $this->leadsFormListApiContainer = $container;
+        }
+        return $this->leadsFormListApiContainer;
+    }
+
+
+    /**
      * @return OauthApiContainer
      */
     public function oauth()
@@ -1334,6 +1396,20 @@ class App
             $this->productItemsDetailApiContainer = $container;
         }
         return $this->productItemsDetailApiContainer;
+    }
+
+
+    /**
+     * @return ProductItemsListApiContainer
+     */
+    public function productItemsList()
+    {
+        if (empty($this->productItemsListApiContainer)) {
+            $container = new ProductItemsListApiContainer();
+            $container->init($this, $this->getClient());
+            $this->productItemsListApiContainer = $container;
+        }
+        return $this->productItemsListApiContainer;
     }
 
 
@@ -1768,6 +1844,20 @@ class App
             $this->xijingPageByComponentsApiContainer = $container;
         }
         return $this->xijingPageByComponentsApiContainer;
+    }
+
+
+    /**
+     * @return XijingPageListApiContainer
+     */
+    public function xijingPageList()
+    {
+        if (empty($this->xijingPageListApiContainer)) {
+            $container = new XijingPageListApiContainer();
+            $container->init($this, $this->getClient());
+            $this->xijingPageListApiContainer = $container;
+        }
+        return $this->xijingPageListApiContainer;
     }
 
 

@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * AssetPermissionGrantType Class Doc Comment
  *
  * @category Class
- * @description 资产权限授予类型
+ * @description 资产权限授予类型，素材授权功能目前白名单灰度中，若要使用可联系运营开通
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -44,7 +44,8 @@ class AssetPermissionGrantType
     /**
      * Possible values of this enum
      */
-    const ASSET_PERMISSION_GRANT_TYPE_ASSET = 'ASSET_PERMISSION_GRANT_TYPE_ASSET';
+    const ASSET = 'ASSET_PERMISSION_GRANT_TYPE_ASSET';
+    const ACCOUNT = 'ASSET_PERMISSION_GRANT_TYPE_ACCOUNT';
     
     /**
      * Gets allowable values of the enum
@@ -53,7 +54,8 @@ class AssetPermissionGrantType
     public static function getAllowableEnumValues()
     {
         return [
-            self::ASSET_PERMISSION_GRANT_TYPE_ASSET,
+            self::ASSET,
+            self::ACCOUNT,
         ];
     }
 }

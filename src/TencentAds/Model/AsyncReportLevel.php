@@ -54,6 +54,18 @@ class AsyncReportLevel
     const MATERIAL_VIDEO = 'REPORT_LEVEL_MATERIAL_VIDEO';
     const MATERIAL_IMAGE = 'REPORT_LEVEL_MATERIAL_IMAGE';
     const PROMOTED_OBJECT = 'REPORT_LEVEL_PROMOTED_OBJECT';
+    const CREATIVE_TEMPLATE = 'REPORT_LEVEL_CREATIVE_TEMPLATE';
+    const PRODUCT_CATELOG = 'REPORT_LEVEL_PRODUCT_CATELOG';
+    const AGE = 'REPORT_LEVEL_AGE';
+    const GENDER = 'REPORT_LEVEL_GENDER';
+    const REGION_RECENTLY_IN = 'REPORT_LEVEL_REGION_RECENTLY_IN';
+    const REGION_VISITED_IN = 'REPORT_LEVEL_REGION_VISITED_IN';
+    const REGION_LIVE_IN = 'REPORT_LEVEL_REGION_LIVE_IN';
+    const REGION_TRAVEL_IN = 'REPORT_LEVEL_REGION_TRAVEL_IN';
+    const CITY_RECENTLY_IN = 'REPORT_LEVEL_CITY_RECENTLY_IN';
+    const CITY_VISITED_IN = 'REPORT_LEVEL_CITY_VISITED_IN';
+    const CITY_LIVE_IN = 'REPORT_LEVEL_CITY_LIVE_IN';
+    const CITY_TRAVEL_IN = 'REPORT_LEVEL_CITY_TRAVEL_IN';
     
     /**
      * Gets allowable values of the enum
@@ -72,6 +84,18 @@ class AsyncReportLevel
             self::MATERIAL_VIDEO,
             self::MATERIAL_IMAGE,
             self::PROMOTED_OBJECT,
+            self::CREATIVE_TEMPLATE,
+            self::PRODUCT_CATELOG,
+            self::AGE,
+            self::GENDER,
+            self::REGION_RECENTLY_IN,
+            self::REGION_VISITED_IN,
+            self::REGION_LIVE_IN,
+            self::REGION_TRAVEL_IN,
+            self::CITY_RECENTLY_IN,
+            self::CITY_VISITED_IN,
+            self::CITY_LIVE_IN,
+            self::CITY_TRAVEL_IN,
         ];
     }
 }

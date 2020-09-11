@@ -61,7 +61,8 @@ class AssetPermissionsDeleteRequest implements ModelInterface, ArrayAccess
         'licensingAccountId' => 'int',
         'assetType' => '\TencentAds\Model\AssetType',
         'assetPermissionGrantType' => '\TencentAds\Model\AssetPermissionGrantType',
-        'assetId' => 'int'
+        'assetId' => 'int',
+        'licensingIdType' => '\TencentAds\Model\AssetAccountType'
     ];
 
     /**
@@ -74,7 +75,8 @@ class AssetPermissionsDeleteRequest implements ModelInterface, ArrayAccess
         'licensingAccountId' => 'int64',
         'assetType' => null,
         'assetPermissionGrantType' => null,
-        'assetId' => 'int64'
+        'assetId' => 'int64',
+        'licensingIdType' => null
     ];
 
     /**
@@ -108,7 +110,8 @@ class AssetPermissionsDeleteRequest implements ModelInterface, ArrayAccess
         'licensingAccountId' => 'licensing_account_id',
         'assetType' => 'asset_type',
         'assetPermissionGrantType' => 'asset_permission_grant_type',
-        'assetId' => 'asset_id'
+        'assetId' => 'asset_id',
+        'licensingIdType' => 'licensing_id_type'
     ];
 
     /**
@@ -121,7 +124,8 @@ class AssetPermissionsDeleteRequest implements ModelInterface, ArrayAccess
         'licensingAccountId' => 'setLicensingAccountId',
         'assetType' => 'setAssetType',
         'assetPermissionGrantType' => 'setAssetPermissionGrantType',
-        'assetId' => 'setAssetId'
+        'assetId' => 'setAssetId',
+        'licensingIdType' => 'setLicensingIdType'
     ];
 
     /**
@@ -134,7 +138,8 @@ class AssetPermissionsDeleteRequest implements ModelInterface, ArrayAccess
         'licensingAccountId' => 'getLicensingAccountId',
         'assetType' => 'getAssetType',
         'assetPermissionGrantType' => 'getAssetPermissionGrantType',
-        'assetId' => 'getAssetId'
+        'assetId' => 'getAssetId',
+        'licensingIdType' => 'getLicensingIdType'
     ];
 
     /**
@@ -202,6 +207,7 @@ class AssetPermissionsDeleteRequest implements ModelInterface, ArrayAccess
         $this->container['assetType'] = isset($data['assetType']) ? $data['assetType'] : null;
         $this->container['assetPermissionGrantType'] = isset($data['assetPermissionGrantType']) ? $data['assetPermissionGrantType'] : null;
         $this->container['assetId'] = isset($data['assetId']) ? $data['assetId'] : null;
+        $this->container['licensingIdType'] = isset($data['licensingIdType']) ? $data['licensingIdType'] : null;
     }
 
     /**
@@ -344,6 +350,30 @@ class AssetPermissionsDeleteRequest implements ModelInterface, ArrayAccess
     public function setAssetId($assetId)
     {
         $this->container['assetId'] = $assetId;
+
+        return $this;
+    }
+
+    /**
+     * Gets licensingIdType
+     *
+     * @return \TencentAds\Model\AssetAccountType
+     */
+    public function getLicensingIdType()
+    {
+        return $this->container['licensingIdType'];
+    }
+
+    /**
+     * Sets licensingIdType
+     *
+     * @param \TencentAds\Model\AssetAccountType $licensingIdType licensingIdType
+     *
+     * @return $this
+     */
+    public function setLicensingIdType($licensingIdType)
+    {
+        $this->container['licensingIdType'] = $licensingIdType;
 
         return $this;
     }

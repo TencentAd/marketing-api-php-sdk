@@ -132,4 +132,9 @@ return [
             'skip_middleware' => [\TencentAds\Middleware\EncodeArrayMiddleware::class],
         ],
     ],
+    'TencentAds\Api\BatchAsyncRequestsApi'              => [
+        'add' => [
+            'skip_middleware' => [\TencentAds\Middleware\EncodeArrayMiddleware::class],
+        ],
+    ],
 ];

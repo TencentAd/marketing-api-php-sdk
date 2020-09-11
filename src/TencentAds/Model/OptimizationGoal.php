@@ -97,6 +97,10 @@ class OptimizationGoal
     const MOBILE_APP_ACCREDIT = 'OPTIMIZATIONGOAL_MOBILE_APP_ACCREDIT';
     const PURCHASE_MEMBER_CARD = 'OPTIMIZATIONGOAL_PURCHASE_MEMBER_CARD';
     const PAGE_CONFIRM_EFFECTIVE_LEADS = 'OPTIMIZATIONGOAL_PAGE_CONFIRM_EFFECTIVE_LEADS';
+    const ADD_DESKTOP = 'OPTIMIZATIONGOAL_ADD_DESKTOP';
+    const RESERVATION = 'OPTIMIZATIONGOAL_RESERVATION';
+    const FIRST_ECOMMERCE_ORDER = 'OPTIMIZATIONGOAL_FIRST_ECOMMERCE_ORDER';
+    const LIKE = 'OPTIMIZATIONGOAL_LIKE';
     
     /**
      * Gets allowable values of the enum
@@ -158,6 +162,10 @@ class OptimizationGoal
             self::MOBILE_APP_ACCREDIT,
             self::PURCHASE_MEMBER_CARD,
             self::PAGE_CONFIRM_EFFECTIVE_LEADS,
+            self::ADD_DESKTOP,
+            self::RESERVATION,
+            self::FIRST_ECOMMERCE_ORDER,
+            self::LIKE,
         ];
     }
 }

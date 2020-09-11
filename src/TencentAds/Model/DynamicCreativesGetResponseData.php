@@ -58,7 +58,7 @@ class DynamicCreativesGetResponseData implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'list' => '\TencentAds\Model\DynamicCreativesGetListStruct[]',
-        'pageInfo' => '\TencentAds\Model\Conf'
+        'pageInfo' => '\TencentAds\Model\ConfPageSize500'
     ];
 
     /**
@@ -237,7 +237,7 @@ class DynamicCreativesGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets pageInfo
      *
-     * @return \TencentAds\Model\Conf
+     * @return \TencentAds\Model\ConfPageSize500
      */
     public function getPageInfo()
     {
@@ -247,7 +247,7 @@ class DynamicCreativesGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets pageInfo
      *
-     * @param \TencentAds\Model\Conf $pageInfo pageInfo
+     * @param \TencentAds\Model\ConfPageSize500 $pageInfo pageInfo
      *
      * @return $this
      */

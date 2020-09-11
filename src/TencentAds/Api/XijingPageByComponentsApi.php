@@ -90,7 +90,7 @@ class XijingPageByComponentsApi
     /**
      * Operation xijingPageByComponentsAdd
      *
-     * 基于组件创建落地页
+     * 蹊径-基于组件创建落地页
      *
      * @param  \TencentAds\Model\XijingPageByComponentsAddRequest $data data (required)
      *
@@ -107,7 +107,7 @@ class XijingPageByComponentsApi
     /**
      * Operation xijingPageByComponentsAddWithHttpInfo
      *
-     * 基于组件创建落地页
+     * 蹊径-基于组件创建落地页
      *
      * @param  \TencentAds\Model\XijingPageByComponentsAddRequest $data (required)
      *
@@ -182,7 +182,7 @@ class XijingPageByComponentsApi
     /**
      * Operation xijingPageByComponentsAddAsync
      *
-     * 基于组件创建落地页
+     * 蹊径-基于组件创建落地页
      *
      * @param  \TencentAds\Model\XijingPageByComponentsAddRequest $data (required)
      *
@@ -202,7 +202,7 @@ class XijingPageByComponentsApi
     /**
      * Operation xijingPageByComponentsAddAsyncWithHttpInfo
      *
-     * 基于组件创建落地页
+     * 蹊径-基于组件创建落地页
      *
      * @param  \TencentAds\Model\XijingPageByComponentsAddRequest $data (required)
      *
@@ -283,6 +283,9 @@ class XijingPageByComponentsApi
             $_tempBody = $data;
         }
 
+        if (in_array('multipart/form-data', ['application/json', 'application/xml'])) {
+            $multipart = true;
+        }
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
                 ['application/json']

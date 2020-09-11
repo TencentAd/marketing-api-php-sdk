@@ -60,7 +60,21 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'productOuterId' => 'string',
         'productName' => 'string',
-        'productImageUrl' => 'string'
+        'productImageUrl' => 'string',
+        'productShortName' => 'string',
+        'price' => 'double',
+        'firstCategoryId' => 'int',
+        'firstCategoryName' => 'string',
+        'secondCategoryId' => 'int',
+        'secondCategoryName' => 'string',
+        'thirdCategoryId' => 'int',
+        'thirdCategoryName' => 'string',
+        'fourthCategoryId' => 'int',
+        'fourthCategoryName' => 'string',
+        'brandName' => 'string',
+        'brandId' => 'int',
+        'description' => 'string',
+        'customData' => 'string'
     ];
 
     /**
@@ -71,7 +85,21 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'productOuterId' => null,
         'productName' => null,
-        'productImageUrl' => null
+        'productImageUrl' => null,
+        'productShortName' => null,
+        'price' => 'double',
+        'firstCategoryId' => 'int64',
+        'firstCategoryName' => null,
+        'secondCategoryId' => 'int64',
+        'secondCategoryName' => null,
+        'thirdCategoryId' => 'int64',
+        'thirdCategoryName' => null,
+        'fourthCategoryId' => 'int64',
+        'fourthCategoryName' => null,
+        'brandName' => null,
+        'brandId' => 'int64',
+        'description' => null,
+        'customData' => null
     ];
 
     /**
@@ -103,7 +131,21 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'productOuterId' => 'product_outer_id',
         'productName' => 'product_name',
-        'productImageUrl' => 'product_image_url'
+        'productImageUrl' => 'product_image_url',
+        'productShortName' => 'product_short_name',
+        'price' => 'price',
+        'firstCategoryId' => 'first_category_id',
+        'firstCategoryName' => 'first_category_name',
+        'secondCategoryId' => 'second_category_id',
+        'secondCategoryName' => 'second_category_name',
+        'thirdCategoryId' => 'third_category_id',
+        'thirdCategoryName' => 'third_category_name',
+        'fourthCategoryId' => 'fourth_category_id',
+        'fourthCategoryName' => 'fourth_category_name',
+        'brandName' => 'brand_name',
+        'brandId' => 'brand_id',
+        'description' => 'description',
+        'customData' => 'custom_data'
     ];
 
     /**
@@ -114,7 +156,21 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     protected static $setters = [
         'productOuterId' => 'setProductOuterId',
         'productName' => 'setProductName',
-        'productImageUrl' => 'setProductImageUrl'
+        'productImageUrl' => 'setProductImageUrl',
+        'productShortName' => 'setProductShortName',
+        'price' => 'setPrice',
+        'firstCategoryId' => 'setFirstCategoryId',
+        'firstCategoryName' => 'setFirstCategoryName',
+        'secondCategoryId' => 'setSecondCategoryId',
+        'secondCategoryName' => 'setSecondCategoryName',
+        'thirdCategoryId' => 'setThirdCategoryId',
+        'thirdCategoryName' => 'setThirdCategoryName',
+        'fourthCategoryId' => 'setFourthCategoryId',
+        'fourthCategoryName' => 'setFourthCategoryName',
+        'brandName' => 'setBrandName',
+        'brandId' => 'setBrandId',
+        'description' => 'setDescription',
+        'customData' => 'setCustomData'
     ];
 
     /**
@@ -125,7 +181,21 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     protected static $getters = [
         'productOuterId' => 'getProductOuterId',
         'productName' => 'getProductName',
-        'productImageUrl' => 'getProductImageUrl'
+        'productImageUrl' => 'getProductImageUrl',
+        'productShortName' => 'getProductShortName',
+        'price' => 'getPrice',
+        'firstCategoryId' => 'getFirstCategoryId',
+        'firstCategoryName' => 'getFirstCategoryName',
+        'secondCategoryId' => 'getSecondCategoryId',
+        'secondCategoryName' => 'getSecondCategoryName',
+        'thirdCategoryId' => 'getThirdCategoryId',
+        'thirdCategoryName' => 'getThirdCategoryName',
+        'fourthCategoryId' => 'getFourthCategoryId',
+        'fourthCategoryName' => 'getFourthCategoryName',
+        'brandName' => 'getBrandName',
+        'brandId' => 'getBrandId',
+        'description' => 'getDescription',
+        'customData' => 'getCustomData'
     ];
 
     /**
@@ -191,6 +261,20 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['productOuterId'] = isset($data['productOuterId']) ? $data['productOuterId'] : null;
         $this->container['productName'] = isset($data['productName']) ? $data['productName'] : null;
         $this->container['productImageUrl'] = isset($data['productImageUrl']) ? $data['productImageUrl'] : null;
+        $this->container['productShortName'] = isset($data['productShortName']) ? $data['productShortName'] : null;
+        $this->container['price'] = isset($data['price']) ? $data['price'] : null;
+        $this->container['firstCategoryId'] = isset($data['firstCategoryId']) ? $data['firstCategoryId'] : null;
+        $this->container['firstCategoryName'] = isset($data['firstCategoryName']) ? $data['firstCategoryName'] : null;
+        $this->container['secondCategoryId'] = isset($data['secondCategoryId']) ? $data['secondCategoryId'] : null;
+        $this->container['secondCategoryName'] = isset($data['secondCategoryName']) ? $data['secondCategoryName'] : null;
+        $this->container['thirdCategoryId'] = isset($data['thirdCategoryId']) ? $data['thirdCategoryId'] : null;
+        $this->container['thirdCategoryName'] = isset($data['thirdCategoryName']) ? $data['thirdCategoryName'] : null;
+        $this->container['fourthCategoryId'] = isset($data['fourthCategoryId']) ? $data['fourthCategoryId'] : null;
+        $this->container['fourthCategoryName'] = isset($data['fourthCategoryName']) ? $data['fourthCategoryName'] : null;
+        $this->container['brandName'] = isset($data['brandName']) ? $data['brandName'] : null;
+        $this->container['brandId'] = isset($data['brandId']) ? $data['brandId'] : null;
+        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
+        $this->container['customData'] = isset($data['customData']) ? $data['customData'] : null;
     }
 
     /**
@@ -285,6 +369,342 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     public function setProductImageUrl($productImageUrl)
     {
         $this->container['productImageUrl'] = $productImageUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets productShortName
+     *
+     * @return string
+     */
+    public function getProductShortName()
+    {
+        return $this->container['productShortName'];
+    }
+
+    /**
+     * Sets productShortName
+     *
+     * @param string $productShortName productShortName
+     *
+     * @return $this
+     */
+    public function setProductShortName($productShortName)
+    {
+        $this->container['productShortName'] = $productShortName;
+
+        return $this;
+    }
+
+    /**
+     * Gets price
+     *
+     * @return double
+     */
+    public function getPrice()
+    {
+        return $this->container['price'];
+    }
+
+    /**
+     * Sets price
+     *
+     * @param double $price price
+     *
+     * @return $this
+     */
+    public function setPrice($price)
+    {
+        $this->container['price'] = $price;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstCategoryId
+     *
+     * @return int
+     */
+    public function getFirstCategoryId()
+    {
+        return $this->container['firstCategoryId'];
+    }
+
+    /**
+     * Sets firstCategoryId
+     *
+     * @param int $firstCategoryId firstCategoryId
+     *
+     * @return $this
+     */
+    public function setFirstCategoryId($firstCategoryId)
+    {
+        $this->container['firstCategoryId'] = $firstCategoryId;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstCategoryName
+     *
+     * @return string
+     */
+    public function getFirstCategoryName()
+    {
+        return $this->container['firstCategoryName'];
+    }
+
+    /**
+     * Sets firstCategoryName
+     *
+     * @param string $firstCategoryName firstCategoryName
+     *
+     * @return $this
+     */
+    public function setFirstCategoryName($firstCategoryName)
+    {
+        $this->container['firstCategoryName'] = $firstCategoryName;
+
+        return $this;
+    }
+
+    /**
+     * Gets secondCategoryId
+     *
+     * @return int
+     */
+    public function getSecondCategoryId()
+    {
+        return $this->container['secondCategoryId'];
+    }
+
+    /**
+     * Sets secondCategoryId
+     *
+     * @param int $secondCategoryId secondCategoryId
+     *
+     * @return $this
+     */
+    public function setSecondCategoryId($secondCategoryId)
+    {
+        $this->container['secondCategoryId'] = $secondCategoryId;
+
+        return $this;
+    }
+
+    /**
+     * Gets secondCategoryName
+     *
+     * @return string
+     */
+    public function getSecondCategoryName()
+    {
+        return $this->container['secondCategoryName'];
+    }
+
+    /**
+     * Sets secondCategoryName
+     *
+     * @param string $secondCategoryName secondCategoryName
+     *
+     * @return $this
+     */
+    public function setSecondCategoryName($secondCategoryName)
+    {
+        $this->container['secondCategoryName'] = $secondCategoryName;
+
+        return $this;
+    }
+
+    /**
+     * Gets thirdCategoryId
+     *
+     * @return int
+     */
+    public function getThirdCategoryId()
+    {
+        return $this->container['thirdCategoryId'];
+    }
+
+    /**
+     * Sets thirdCategoryId
+     *
+     * @param int $thirdCategoryId thirdCategoryId
+     *
+     * @return $this
+     */
+    public function setThirdCategoryId($thirdCategoryId)
+    {
+        $this->container['thirdCategoryId'] = $thirdCategoryId;
+
+        return $this;
+    }
+
+    /**
+     * Gets thirdCategoryName
+     *
+     * @return string
+     */
+    public function getThirdCategoryName()
+    {
+        return $this->container['thirdCategoryName'];
+    }
+
+    /**
+     * Sets thirdCategoryName
+     *
+     * @param string $thirdCategoryName thirdCategoryName
+     *
+     * @return $this
+     */
+    public function setThirdCategoryName($thirdCategoryName)
+    {
+        $this->container['thirdCategoryName'] = $thirdCategoryName;
+
+        return $this;
+    }
+
+    /**
+     * Gets fourthCategoryId
+     *
+     * @return int
+     */
+    public function getFourthCategoryId()
+    {
+        return $this->container['fourthCategoryId'];
+    }
+
+    /**
+     * Sets fourthCategoryId
+     *
+     * @param int $fourthCategoryId fourthCategoryId
+     *
+     * @return $this
+     */
+    public function setFourthCategoryId($fourthCategoryId)
+    {
+        $this->container['fourthCategoryId'] = $fourthCategoryId;
+
+        return $this;
+    }
+
+    /**
+     * Gets fourthCategoryName
+     *
+     * @return string
+     */
+    public function getFourthCategoryName()
+    {
+        return $this->container['fourthCategoryName'];
+    }
+
+    /**
+     * Sets fourthCategoryName
+     *
+     * @param string $fourthCategoryName fourthCategoryName
+     *
+     * @return $this
+     */
+    public function setFourthCategoryName($fourthCategoryName)
+    {
+        $this->container['fourthCategoryName'] = $fourthCategoryName;
+
+        return $this;
+    }
+
+    /**
+     * Gets brandName
+     *
+     * @return string
+     */
+    public function getBrandName()
+    {
+        return $this->container['brandName'];
+    }
+
+    /**
+     * Sets brandName
+     *
+     * @param string $brandName brandName
+     *
+     * @return $this
+     */
+    public function setBrandName($brandName)
+    {
+        $this->container['brandName'] = $brandName;
+
+        return $this;
+    }
+
+    /**
+     * Gets brandId
+     *
+     * @return int
+     */
+    public function getBrandId()
+    {
+        return $this->container['brandId'];
+    }
+
+    /**
+     * Sets brandId
+     *
+     * @param int $brandId brandId
+     *
+     * @return $this
+     */
+    public function setBrandId($brandId)
+    {
+        $this->container['brandId'] = $brandId;
+
+        return $this;
+    }
+
+    /**
+     * Gets description
+     *
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->container['description'];
+    }
+
+    /**
+     * Sets description
+     *
+     * @param string $description description
+     *
+     * @return $this
+     */
+    public function setDescription($description)
+    {
+        $this->container['description'] = $description;
+
+        return $this;
+    }
+
+    /**
+     * Gets customData
+     *
+     * @return string
+     */
+    public function getCustomData()
+    {
+        return $this->container['customData'];
+    }
+
+    /**
+     * Sets customData
+     *
+     * @param string $customData customData
+     *
+     * @return $this
+     */
+    public function setCustomData($customData)
+    {
+        $this->container['customData'] = $customData;
 
         return $this;
     }

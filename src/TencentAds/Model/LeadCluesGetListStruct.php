@@ -96,7 +96,8 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'bundle' => 'string',
         'posType' => 'int',
         'leadsCreateTime' => 'string',
-        'leadsActionTime' => 'string'
+        'leadsActionTime' => 'string',
+        'leadsTags' => 'string'
     ];
 
     /**
@@ -143,7 +144,8 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'bundle' => null,
         'posType' => 'int64',
         'leadsCreateTime' => null,
-        'leadsActionTime' => null
+        'leadsActionTime' => null,
+        'leadsTags' => null
     ];
 
     /**
@@ -211,7 +213,8 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'bundle' => 'bundle',
         'posType' => 'pos_type',
         'leadsCreateTime' => 'leads_create_time',
-        'leadsActionTime' => 'leads_action_time'
+        'leadsActionTime' => 'leads_action_time',
+        'leadsTags' => 'leads_tags'
     ];
 
     /**
@@ -258,7 +261,8 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'bundle' => 'setBundle',
         'posType' => 'setPosType',
         'leadsCreateTime' => 'setLeadsCreateTime',
-        'leadsActionTime' => 'setLeadsActionTime'
+        'leadsActionTime' => 'setLeadsActionTime',
+        'leadsTags' => 'setLeadsTags'
     ];
 
     /**
@@ -305,7 +309,8 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'bundle' => 'getBundle',
         'posType' => 'getPosType',
         'leadsCreateTime' => 'getLeadsCreateTime',
-        'leadsActionTime' => 'getLeadsActionTime'
+        'leadsActionTime' => 'getLeadsActionTime',
+        'leadsTags' => 'getLeadsTags'
     ];
 
     /**
@@ -407,6 +412,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['posType'] = isset($data['posType']) ? $data['posType'] : null;
         $this->container['leadsCreateTime'] = isset($data['leadsCreateTime']) ? $data['leadsCreateTime'] : null;
         $this->container['leadsActionTime'] = isset($data['leadsActionTime']) ? $data['leadsActionTime'] : null;
+        $this->container['leadsTags'] = isset($data['leadsTags']) ? $data['leadsTags'] : null;
     }
 
     /**
@@ -1365,6 +1371,30 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     public function setLeadsActionTime($leadsActionTime)
     {
         $this->container['leadsActionTime'] = $leadsActionTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsTags
+     *
+     * @return string
+     */
+    public function getLeadsTags()
+    {
+        return $this->container['leadsTags'];
+    }
+
+    /**
+     * Sets leadsTags
+     *
+     * @param string $leadsTags leadsTags
+     *
+     * @return $this
+     */
+    public function setLeadsTags($leadsTags)
+    {
+        $this->container['leadsTags'] = $leadsTags;
 
         return $this;
     }

@@ -90,11 +90,11 @@ class CapabilitiesApi
     /**
      * Operation capabilitiesGet
      *
-     * 查询广告相关权限
+     * 查询广告相关权限（待废弃）
      *
      * @param  int $accountId accountId (required)
      * @param  string $capability capability (required)
-     * @param  \TencentAds\Model\QuerySpec $querySpec querySpec (optional)
+     * @param  \TencentAds\Model\CapabilitiesGetQuerySpec $querySpec querySpec (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
@@ -110,11 +110,11 @@ class CapabilitiesApi
     /**
      * Operation capabilitiesGetWithHttpInfo
      *
-     * 查询广告相关权限
+     * 查询广告相关权限（待废弃）
      *
      * @param  int $accountId (required)
      * @param  string $capability (required)
-     * @param  \TencentAds\Model\QuerySpec $querySpec (optional)
+     * @param  \TencentAds\Model\CapabilitiesGetQuerySpec $querySpec (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
@@ -188,11 +188,11 @@ class CapabilitiesApi
     /**
      * Operation capabilitiesGetAsync
      *
-     * 查询广告相关权限
+     * 查询广告相关权限（待废弃）
      *
      * @param  int $accountId (required)
      * @param  string $capability (required)
-     * @param  \TencentAds\Model\QuerySpec $querySpec (optional)
+     * @param  \TencentAds\Model\CapabilitiesGetQuerySpec $querySpec (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
@@ -211,11 +211,11 @@ class CapabilitiesApi
     /**
      * Operation capabilitiesGetAsyncWithHttpInfo
      *
-     * 查询广告相关权限
+     * 查询广告相关权限（待废弃）
      *
      * @param  int $accountId (required)
      * @param  string $capability (required)
-     * @param  \TencentAds\Model\QuerySpec $querySpec (optional)
+     * @param  \TencentAds\Model\CapabilitiesGetQuerySpec $querySpec (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
@@ -268,7 +268,7 @@ class CapabilitiesApi
      *
      * @param  int $accountId (required)
      * @param  string $capability (required)
-     * @param  \TencentAds\Model\QuerySpec $querySpec (optional)
+     * @param  \TencentAds\Model\CapabilitiesGetQuerySpec $querySpec (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
@@ -320,6 +320,9 @@ class CapabilitiesApi
         // body params
         $_tempBody = null;
 
+        if (in_array('multipart/form-data', ['text/plain'])) {
+            $multipart = true;
+        }
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
                 ['application/json']

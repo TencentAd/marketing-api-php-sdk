@@ -59,7 +59,7 @@ class XijingPageAddRequest implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'accountId' => 'int',
         'isAutoSubmit' => 'int',
-        'pages' => '\TencentAds\Model\PagesStruct[]'
+        'pages' => '\TencentAds\Model\XijingPageAddPagesStruct[]'
     ];
 
     /**
@@ -267,7 +267,7 @@ class XijingPageAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets pages
      *
-     * @return \TencentAds\Model\PagesStruct[]
+     * @return \TencentAds\Model\XijingPageAddPagesStruct[]
      */
     public function getPages()
     {
@@ -277,7 +277,7 @@ class XijingPageAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets pages
      *
-     * @param \TencentAds\Model\PagesStruct[] $pages pages
+     * @param \TencentAds\Model\XijingPageAddPagesStruct[] $pages pages
      *
      * @return $this
      */
