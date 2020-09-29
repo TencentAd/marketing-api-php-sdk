@@ -1,6 +1,6 @@
 <?php
 /**
- * ProductItemsListGetResponse
+ * ListStruct
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ProductItemsListGetResponse Class Doc Comment
+ * ListStruct Class Doc Comment
  *
  * @category Class
+ * @description 返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ProductItemsListGetResponse implements ModelInterface, ArrayAccess
+class ListStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class ProductItemsListGetResponse implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'ProductItemsListGetResponse';
+    protected static $swaggerModelName = 'list_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,11 +58,11 @@ class ProductItemsListGetResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'code' => 'int',
-        'message' => 'string',
-        'messageCn' => 'string',
-        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
-        'data' => '\TencentAds\Model\ProductItemsListGetResponseData'
+        'wechatQualificationName' => 'string',
+        'wechatQualificationUrl' => 'string',
+        'wechatQualificationId' => 'int',
+        'reviewStatus' => 'string',
+        'auditMessage' => 'string'
     ];
 
     /**
@@ -70,11 +71,11 @@ class ProductItemsListGetResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'code' => 'int64',
-        'message' => null,
-        'messageCn' => null,
-        'errors' => null,
-        'data' => null
+        'wechatQualificationName' => null,
+        'wechatQualificationUrl' => null,
+        'wechatQualificationId' => 'int64',
+        'reviewStatus' => null,
+        'auditMessage' => null
     ];
 
     /**
@@ -104,11 +105,11 @@ class ProductItemsListGetResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'code' => 'code',
-        'message' => 'message',
-        'messageCn' => 'message_cn',
-        'errors' => 'errors',
-        'data' => 'data'
+        'wechatQualificationName' => 'wechat_qualification_name',
+        'wechatQualificationUrl' => 'wechat_qualification_url',
+        'wechatQualificationId' => 'wechat_qualification_id',
+        'reviewStatus' => 'review_status',
+        'auditMessage' => 'audit_message'
     ];
 
     /**
@@ -117,11 +118,11 @@ class ProductItemsListGetResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'code' => 'setCode',
-        'message' => 'setMessage',
-        'messageCn' => 'setMessageCn',
-        'errors' => 'setErrors',
-        'data' => 'setData'
+        'wechatQualificationName' => 'setWechatQualificationName',
+        'wechatQualificationUrl' => 'setWechatQualificationUrl',
+        'wechatQualificationId' => 'setWechatQualificationId',
+        'reviewStatus' => 'setReviewStatus',
+        'auditMessage' => 'setAuditMessage'
     ];
 
     /**
@@ -130,11 +131,11 @@ class ProductItemsListGetResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'code' => 'getCode',
-        'message' => 'getMessage',
-        'messageCn' => 'getMessageCn',
-        'errors' => 'getErrors',
-        'data' => 'getData'
+        'wechatQualificationName' => 'getWechatQualificationName',
+        'wechatQualificationUrl' => 'getWechatQualificationUrl',
+        'wechatQualificationId' => 'getWechatQualificationId',
+        'reviewStatus' => 'getReviewStatus',
+        'auditMessage' => 'getAuditMessage'
     ];
 
     /**
@@ -197,11 +198,11 @@ class ProductItemsListGetResponse implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
-        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
-        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
-        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
-        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
+        $this->container['wechatQualificationName'] = isset($data['wechatQualificationName']) ? $data['wechatQualificationName'] : null;
+        $this->container['wechatQualificationUrl'] = isset($data['wechatQualificationUrl']) ? $data['wechatQualificationUrl'] : null;
+        $this->container['wechatQualificationId'] = isset($data['wechatQualificationId']) ? $data['wechatQualificationId'] : null;
+        $this->container['reviewStatus'] = isset($data['reviewStatus']) ? $data['reviewStatus'] : null;
+        $this->container['auditMessage'] = isset($data['auditMessage']) ? $data['auditMessage'] : null;
     }
 
     /**
@@ -229,121 +230,121 @@ class ProductItemsListGetResponse implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets code
+     * Gets wechatQualificationName
+     *
+     * @return string
+     */
+    public function getWechatQualificationName()
+    {
+        return $this->container['wechatQualificationName'];
+    }
+
+    /**
+     * Sets wechatQualificationName
+     *
+     * @param string $wechatQualificationName wechatQualificationName
+     *
+     * @return $this
+     */
+    public function setWechatQualificationName($wechatQualificationName)
+    {
+        $this->container['wechatQualificationName'] = $wechatQualificationName;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatQualificationUrl
+     *
+     * @return string
+     */
+    public function getWechatQualificationUrl()
+    {
+        return $this->container['wechatQualificationUrl'];
+    }
+
+    /**
+     * Sets wechatQualificationUrl
+     *
+     * @param string $wechatQualificationUrl wechatQualificationUrl
+     *
+     * @return $this
+     */
+    public function setWechatQualificationUrl($wechatQualificationUrl)
+    {
+        $this->container['wechatQualificationUrl'] = $wechatQualificationUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatQualificationId
      *
      * @return int
      */
-    public function getCode()
+    public function getWechatQualificationId()
     {
-        return $this->container['code'];
+        return $this->container['wechatQualificationId'];
     }
 
     /**
-     * Sets code
+     * Sets wechatQualificationId
      *
-     * @param int $code code
+     * @param int $wechatQualificationId wechatQualificationId
      *
      * @return $this
      */
-    public function setCode($code)
+    public function setWechatQualificationId($wechatQualificationId)
     {
-        $this->container['code'] = $code;
+        $this->container['wechatQualificationId'] = $wechatQualificationId;
 
         return $this;
     }
 
     /**
-     * Gets message
+     * Gets reviewStatus
      *
      * @return string
      */
-    public function getMessage()
+    public function getReviewStatus()
     {
-        return $this->container['message'];
+        return $this->container['reviewStatus'];
     }
 
     /**
-     * Sets message
+     * Sets reviewStatus
      *
-     * @param string $message message
+     * @param string $reviewStatus reviewStatus
      *
      * @return $this
      */
-    public function setMessage($message)
+    public function setReviewStatus($reviewStatus)
     {
-        $this->container['message'] = $message;
+        $this->container['reviewStatus'] = $reviewStatus;
 
         return $this;
     }
 
     /**
-     * Gets messageCn
+     * Gets auditMessage
      *
      * @return string
      */
-    public function getMessageCn()
+    public function getAuditMessage()
     {
-        return $this->container['messageCn'];
+        return $this->container['auditMessage'];
     }
 
     /**
-     * Sets messageCn
+     * Sets auditMessage
      *
-     * @param string $messageCn messageCn
+     * @param string $auditMessage auditMessage
      *
      * @return $this
      */
-    public function setMessageCn($messageCn)
+    public function setAuditMessage($auditMessage)
     {
-        $this->container['messageCn'] = $messageCn;
-
-        return $this;
-    }
-
-    /**
-     * Gets errors
-     *
-     * @return \TencentAds\Model\ApiErrorStruct[]
-     */
-    public function getErrors()
-    {
-        return $this->container['errors'];
-    }
-
-    /**
-     * Sets errors
-     *
-     * @param \TencentAds\Model\ApiErrorStruct[] $errors errors
-     *
-     * @return $this
-     */
-    public function setErrors($errors)
-    {
-        $this->container['errors'] = $errors;
-
-        return $this;
-    }
-
-    /**
-     * Gets data
-     *
-     * @return \TencentAds\Model\ProductItemsListGetResponseData
-     */
-    public function getData()
-    {
-        return $this->container['data'];
-    }
-
-    /**
-     * Sets data
-     *
-     * @param \TencentAds\Model\ProductItemsListGetResponseData $data data
-     *
-     * @return $this
-     */
-    public function setData($data)
-    {
-        $this->container['data'] = $data;
+        $this->container['auditMessage'] = $auditMessage;
 
         return $this;
     }

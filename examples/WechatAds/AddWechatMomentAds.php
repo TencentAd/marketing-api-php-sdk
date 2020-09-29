@@ -14,8 +14,15 @@ class AddWechatMomentAds
     public static $ACCOUNT_ID             = 'YOUR ACCOUNT ID';
     public static $IOS_APP_ID             = 'YOUR APP ID'; // 这里放被推广的iOS App的ID，即App Store的数字ID
     public static $ADCREATIVE_TEMPLATE_ID = 310; // 单图规格
+    public static $PROMOTED_OBJECT_TYPE   = 'PROMOTED_OBJECT_TYPE_APP_IOS'; // 推广IOS App
     public static $IMAGE_PATH             = 'YOUR AD IMAGE PATH'; // 广告主图文件路径，310规格要求：640x800, <300K, png/jpg
+    public static $IMAGE_PROFILE_PATH     = 'YOUR AD IMAGE PATH'; // 如果未创建Profile的，提供Profile图片文件路径，200x200, <300K, png/jpg
+    public static $PROFILE_ID             = ''; // 如果已经创建Profile的，可提供Profile ID
     public static $AD_TITLE               = 'YOUR AD TEXT'; // 广告文案，310规格要求：字数：1~40
+    public static $PAGE_TYPE              = 'PAGE_TYPE_MOMENTS_SIMPLE_NATIVE_WECHAT'; // 外层落地页：简版原生页
+    public static $WEBVIEW_URL            = 'YOUR WEBVIEW URL'; // 简版原生页内嵌页链接
+    public static $LINK_PAGE_TYPE         = 'LINK_PAGE_TYPE_DEFAULT'; // 行动按钮跳转落地页：ios应用下载页
+    public static $LINK_NAME_TYPE         = 'DOWNLOAD_APP'; // 行动按钮：下载应用
 
     public function init()
     {
@@ -36,8 +43,8 @@ class AddWechatMomentAds
             $tads = static::$tads;
 
             // 第一步，创建推广计划
-            $campaignType = 'CAMPAIGN_TYPE_WECHAT_MOMENTS'; // 朋友圈广告
-            $promotedObjectType = 'PROMOTED_OBJECT_TYPE_APP_IOS'; // 推广IOS App
+            $campaignType = 'CAMPAIGN_TYPE_NORMAL';
+            $promotedObjectType = static::$PROMOTED_OBJECT_TYPE;
             $campaignId = $this->AddCampaign($tads, $campaignType, $promotedObjectType);
             // echo 'Campaign ID: ' . $campaignId . PHP_EOL;
 
@@ -46,17 +53,25 @@ class AddWechatMomentAds
             // echo 'Promoted object ID: ' . $promotedObjectId . PHP_EOL;
 
             // 第三步，创建广告组，不允许使用定向包，因此在广告组里创建定向
-            $siteSet = ['SITE_SET_WECHAT']; // 投放微信流量
+            $siteSet = ['SITE_SET_MOMENTS']; // 投放朋友圈流量
             $adgroupId = $this->AddAdgroup($tads, $campaignId, $promotedObjectType, $promotedObjectId, $siteSet);
             // echo 'Adgroup ID: ' . $adgroupId . PHP_EOL;
 
             // 第四步，上传素材
             $imageId = $this->AddImage($tads, static::$IMAGE_PATH);
             // echo 'Image ID: ' . $imageId . PHP_EOL;
+            if (empty(static::$PROFILE_ID)) {
+                $imageIdLeads = $this->AddImage($tads, static::$IMAGE_PROFILE_PATH);
+                // echo 'Image ID: ' . $imageIdLeads . PHP_EOL;
+                $profileId = $this->AddProfile($tads, $promotedObjectType, $imageIdLeads);
+                // echo 'Profile ID: ' . $profileId . PHP_EOL;
+            } else {
+                $profileId = static::$PROFILE_ID;
+            }
 
             // 第五步，创建创意
             $adcreativeId = $this->AddAdcreative($tads, static::$ADCREATIVE_TEMPLATE_ID, $campaignId,
-                $promotedObjectType, $promotedObjectId, $siteSet, $imageId, static::$AD_TITLE);
+                $promotedObjectType, $promotedObjectId, $siteSet, $imageId, static::$AD_TITLE, $profileId);
             // echo 'Adcreative ID: ' . $adcreativeId . PHP_EOL;
 
             // 第六步，创建广告
@@ -144,7 +159,8 @@ class AddWechatMomentAds
         $adgroupName = 'SDK sample adgroup ' . uniqid();
         $beginDate = date('Y-m-d', strtotime('+1 day')); // 开始投放日期
         $endDate = date('Y-m-d', strtotime('+10 day')); // 结束投放日期
-        $billingEvent = 'BILLINGEVENT_IMPRESSION'; // CPM
+        $bidMode = 'BID_MODE_OCPM'; // CPM
+        $bidStrategy = 'BID_STRATEGY_AVERAGE_COST'; // 稳定拿量
         $bidAmount = 20000; // 200元（单位为分）
         $optimizationGoal = 'OPTIMIZATIONGOAL_APP_ACTIVATE'; // 优化目标APP激活
         $timeSeries = str_repeat('1', 48 * 7); // 全天投放
@@ -176,7 +192,8 @@ class AddWechatMomentAds
                             'promoted_object_type' => $promotedObjectType,
                             'begin_date'           => $beginDate,
                             'end_date'             => $endDate,
-                            'billing_event'        => $billingEvent,
+                            'bid_mode'             => $bidMode,
+                            'bid_strategy'         => $bidStrategy,
                             'bid_amount'           => $bidAmount,
                             'optimization_goal'    => $optimizationGoal,
                             'time_series'          => $timeSeries,
@@ -209,6 +226,22 @@ class AddWechatMomentAds
         return $imageId;
     }
 
+    // 创建profile
+    protected function AddProfile(TencentAds $tads, $promotedObjectType, $imageId)
+    {
+        $profile = $tads->profiles()
+                        ->add([
+                            'account_id'           => static::$ACCOUNT_ID,
+                            'profile_name'         => 'SDK用例' . uniqid(),
+                            'profile_type'         => 'PROFILE_TYPE_DEFINITION',
+                            'promoted_object_type' => $promotedObjectType,
+                            'head_image_id'        => $imageId,
+                            'description'          => 'SDK sample',
+                        ]);
+
+        return $profile->getProfileId();
+    }
+
     // 创建创意
     private function AddAdcreative(
         TencentAds $tads,
@@ -218,17 +251,18 @@ class AddWechatMomentAds
         $promotedObjectId,
         $siteSet,
         $imageId,
-        $adTitle
+        $adTitle,
+        $profileId
     ) {
         $adcreativeName = 'SDK sample adcreative ' . uniqid();
-        $linkNameType = 'VIEW_DETAILS';
         $adcreativeElements = [
-            'image_list'     => [intval($imageId)],
-            'title'          => $adTitle,
-            'link_name_type' => $linkNameType,
+            'image_list' => [$imageId],
+            'title'      => $adTitle,
         ];
-        $pageType = 'PAGE_TYPE_DEFAULT'; //'PAGE_TYPE_FULL_SCREEN_WECHAT';
-        $linkPageType = 'LANK_PAGE_TYPE_IOS_APP_WECHAT';
+        $shareContentSpec = [
+            'share_title'       => '分享',
+            'share_description' => '分享详情',
+        ];
 
         $adcreative = $tads->adcreatives()
                            ->add([
@@ -238,12 +272,16 @@ class AddWechatMomentAds
                                'adcreative_template_id' => $adcreativeTemplateId,
                                'adcreative_elements'    => $adcreativeElements,
                                'promoted_object_type'   => $promotedObjectType,
-                               'page_type'              => $pageType,
-                               'page_spec'              => [],
+                               'page_type'              => static::$PAGE_TYPE,
+                               //'page_spec'              => [],
                                'site_set'               => $siteSet,
                                'promoted_object_id'     => $promotedObjectId,
-                               //'link_page_type'         => $linkPageType,
-                               //'link_name_type'         => $linkNameType,
+                               'link_page_type'         => static::$LINK_PAGE_TYPE,
+                               'link_name_type'         => static::$LINK_NAME_TYPE,
+                               //'link_page_spec'         => [],
+                               'profile_id'             => $profileId,
+                               'webview_url'            => static::$WEBVIEW_URL,
+                               'share_content_spec'     => $shareContentSpec,
                            ]);
         $adcreativeId = $adcreative->getAdcreativeId();
 

@@ -49,6 +49,8 @@ class DestinationTypeRead
     const CANVAS_WECHAT = 'PAGE_TYPE_CANVAS_WECHAT';
     const UNSUPPORTED = 'PAGE_TYPE_UNSUPPORTED';
     const FENGYE_ECOMMERCE = 'PAGE_TYPE_FENGYE_ECOMMERCE';
+    const YUEBAO_QUICKAPP = 'PAGE_TYPE_YUEBAO_QUICKAPP';
+    const YUEBAO_OFFICIAL_ACCOUNT_ARTICLE = 'PAGE_TYPE_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE';
     
     /**
      * Gets allowable values of the enum
@@ -62,6 +64,8 @@ class DestinationTypeRead
             self::CANVAS_WECHAT,
             self::UNSUPPORTED,
             self::FENGYE_ECOMMERCE,
+            self::YUEBAO_QUICKAPP,
+            self::YUEBAO_OFFICIAL_ACCOUNT_ARTICLE,
         ];
     }
 }

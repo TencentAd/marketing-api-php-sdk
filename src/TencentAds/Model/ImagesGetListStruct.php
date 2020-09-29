@@ -59,6 +59,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'imageId' => 'string',
+        'description' => 'string',
         'sourceSignature' => 'string',
         'previewUrl' => 'string',
         'sourceType' => '\TencentAds\Model\ImageSourceType',
@@ -80,6 +81,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'imageId' => null,
+        'description' => null,
         'sourceSignature' => null,
         'previewUrl' => null,
         'sourceType' => null,
@@ -122,6 +124,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'imageId' => 'image_id',
+        'description' => 'description',
         'sourceSignature' => 'source_signature',
         'previewUrl' => 'preview_url',
         'sourceType' => 'source_type',
@@ -143,6 +146,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'imageId' => 'setImageId',
+        'description' => 'setDescription',
         'sourceSignature' => 'setSourceSignature',
         'previewUrl' => 'setPreviewUrl',
         'sourceType' => 'setSourceType',
@@ -164,6 +168,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'imageId' => 'getImageId',
+        'description' => 'getDescription',
         'sourceSignature' => 'getSourceSignature',
         'previewUrl' => 'getPreviewUrl',
         'sourceType' => 'getSourceType',
@@ -239,6 +244,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['imageId'] = isset($data['imageId']) ? $data['imageId'] : null;
+        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
         $this->container['sourceSignature'] = isset($data['sourceSignature']) ? $data['sourceSignature'] : null;
         $this->container['previewUrl'] = isset($data['previewUrl']) ? $data['previewUrl'] : null;
         $this->container['sourceType'] = isset($data['sourceType']) ? $data['sourceType'] : null;
@@ -297,6 +303,30 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     public function setImageId($imageId)
     {
         $this->container['imageId'] = $imageId;
+
+        return $this;
+    }
+
+    /**
+     * Gets description
+     *
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->container['description'];
+    }
+
+    /**
+     * Sets description
+     *
+     * @param string $description description
+     *
+     * @return $this
+     */
+    public function setDescription($description)
+    {
+        $this->container['description'] = $description;
 
         return $this;
     }

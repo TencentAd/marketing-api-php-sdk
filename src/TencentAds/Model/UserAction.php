@@ -65,6 +65,8 @@ class UserAction implements ModelInterface, ArrayAccess
         'customAction' => 'string',
         'trace' => '\TencentAds\Model\Trace',
         'url' => 'string',
+        'productInform' => '\TencentAds\Model\ProductInform',
+        'channel' => '\TencentAds\Model\ActionChannelType',
         'externalActionId' => 'string'
     ];
 
@@ -81,6 +83,8 @@ class UserAction implements ModelInterface, ArrayAccess
         'customAction' => null,
         'trace' => null,
         'url' => null,
+        'productInform' => null,
+        'channel' => null,
         'externalActionId' => null
     ];
 
@@ -118,6 +122,8 @@ class UserAction implements ModelInterface, ArrayAccess
         'customAction' => 'custom_action',
         'trace' => 'trace',
         'url' => 'url',
+        'productInform' => 'product_inform',
+        'channel' => 'channel',
         'externalActionId' => 'external_action_id'
     ];
 
@@ -134,6 +140,8 @@ class UserAction implements ModelInterface, ArrayAccess
         'customAction' => 'setCustomAction',
         'trace' => 'setTrace',
         'url' => 'setUrl',
+        'productInform' => 'setProductInform',
+        'channel' => 'setChannel',
         'externalActionId' => 'setExternalActionId'
     ];
 
@@ -150,6 +158,8 @@ class UserAction implements ModelInterface, ArrayAccess
         'customAction' => 'getCustomAction',
         'trace' => 'getTrace',
         'url' => 'getUrl',
+        'productInform' => 'getProductInform',
+        'channel' => 'getChannel',
         'externalActionId' => 'getExternalActionId'
     ];
 
@@ -220,6 +230,8 @@ class UserAction implements ModelInterface, ArrayAccess
         $this->container['customAction'] = isset($data['customAction']) ? $data['customAction'] : null;
         $this->container['trace'] = isset($data['trace']) ? $data['trace'] : null;
         $this->container['url'] = isset($data['url']) ? $data['url'] : null;
+        $this->container['productInform'] = isset($data['productInform']) ? $data['productInform'] : null;
+        $this->container['channel'] = isset($data['channel']) ? $data['channel'] : null;
         $this->container['externalActionId'] = isset($data['externalActionId']) ? $data['externalActionId'] : null;
     }
 
@@ -411,6 +423,54 @@ class UserAction implements ModelInterface, ArrayAccess
     public function setUrl($url)
     {
         $this->container['url'] = $url;
+
+        return $this;
+    }
+
+    /**
+     * Gets productInform
+     *
+     * @return \TencentAds\Model\ProductInform
+     */
+    public function getProductInform()
+    {
+        return $this->container['productInform'];
+    }
+
+    /**
+     * Sets productInform
+     *
+     * @param \TencentAds\Model\ProductInform $productInform productInform
+     *
+     * @return $this
+     */
+    public function setProductInform($productInform)
+    {
+        $this->container['productInform'] = $productInform;
+
+        return $this;
+    }
+
+    /**
+     * Gets channel
+     *
+     * @return \TencentAds\Model\ActionChannelType
+     */
+    public function getChannel()
+    {
+        return $this->container['channel'];
+    }
+
+    /**
+     * Sets channel
+     *
+     * @param \TencentAds\Model\ActionChannelType $channel channel
+     *
+     * @return $this
+     */
+    public function setChannel($channel)
+    {
+        $this->container['channel'] = $channel;
 
         return $this;
     }

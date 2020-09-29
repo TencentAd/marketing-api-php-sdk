@@ -1,6 +1,6 @@
 <?php
 /**
- * Sort
+ * WechatLocalBusinessQualificationType
  *
  * PHP version 5
  *
@@ -31,21 +31,23 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * Sort Class Doc Comment
+ * WechatLocalBusinessQualificationType Class Doc Comment
  *
  * @category Class
- * @description 排序方式
+ * @description 资质类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class Sort
+class WechatLocalBusinessQualificationType
 {
     /**
      * Possible values of this enum
      */
-    const DESC = 'DESC';
-    const ASC = 'ASC';
+    const BUSINESS_LICENSE = 'STUFF_BUSINESS_LICENSE';
+    const ID_CARD_FRONT = 'STUFF_ID_CARD_FRONT';
+    const ID_CARD_REVERSE = 'STUFF_ID_CARD_REVERSE';
+    const INDUSTRY_QUALIFICATION = 'STUFF_INDUSTRY_QUALIFICATION';
     
     /**
      * Gets allowable values of the enum
@@ -54,8 +56,10 @@ class Sort
     public static function getAllowableEnumValues()
     {
         return [
-            self::DESC,
-            self::ASC,
+            self::BUSINESS_LICENSE,
+            self::ID_CARD_FRONT,
+            self::ID_CARD_REVERSE,
+            self::INDUSTRY_QUALIFICATION,
         ];
     }
 }

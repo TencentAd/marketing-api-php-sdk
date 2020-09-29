@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * BidAdjustment Class Doc Comment
  *
  * @category Class
- * @description 调价设置内容
+ * @description 出价系数设置内容，仅当投放oCPC、oCPM广告时可使用
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

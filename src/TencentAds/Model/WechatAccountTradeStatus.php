@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * WechatAccountTradeStatus Class Doc Comment
  *
  * @category Class
- * @description 账户交易状态，当trade_type为ADVERTISER_TRANSFER时，此字段会返回
+ * @description 账户交易状态
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

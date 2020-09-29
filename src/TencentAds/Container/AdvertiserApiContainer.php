@@ -74,10 +74,10 @@ class AdvertiserApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
+            $fields = isset($params['fields']) ? $params['fields'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
-            $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->advertiserGet($accountId, $filtering, $page, $pageSize, $fields);
+            $response = $this->apiInstance->advertiserGet($accountId, $filtering, $fields, $page, $pageSize);
             return $this->handleResponse($response);
         });
     }
@@ -94,10 +94,10 @@ class AdvertiserApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
+            $fields = isset($params['fields']) ? $params['fields'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
-            $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->advertiserGetAsync($accountId, $filtering, $page, $pageSize, $fields);
+            $response = $this->apiInstance->advertiserGetAsync($accountId, $filtering, $fields, $page, $pageSize);
             return $response;
         });
     }

@@ -96,6 +96,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'videoEndPage' => '\TencentAds\Model\VideoEndPageSpec',
         'feedsVideoCommentSwitch' => 'bool',
         'floatingZone' => '\TencentAds\Model\FloatingZone',
+        'marketingPendantImageId' => 'string',
         'adcreativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsReadMp'
     ];
@@ -144,6 +145,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'videoEndPage' => null,
         'feedsVideoCommentSwitch' => null,
         'floatingZone' => null,
+        'marketingPendantImageId' => null,
         'adcreativeTemplateId' => 'int64',
         'adcreativeElements' => null
     ];
@@ -213,6 +215,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'videoEndPage' => 'video_end_page',
         'feedsVideoCommentSwitch' => 'feeds_video_comment_switch',
         'floatingZone' => 'floating_zone',
+        'marketingPendantImageId' => 'marketing_pendant_image_id',
         'adcreativeTemplateId' => 'adcreative_template_id',
         'adcreativeElements' => 'adcreative_elements'
     ];
@@ -261,6 +264,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'videoEndPage' => 'setVideoEndPage',
         'feedsVideoCommentSwitch' => 'setFeedsVideoCommentSwitch',
         'floatingZone' => 'setFloatingZone',
+        'marketingPendantImageId' => 'setMarketingPendantImageId',
         'adcreativeTemplateId' => 'setAdcreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements'
     ];
@@ -309,6 +313,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'videoEndPage' => 'getVideoEndPage',
         'feedsVideoCommentSwitch' => 'getFeedsVideoCommentSwitch',
         'floatingZone' => 'getFloatingZone',
+        'marketingPendantImageId' => 'getMarketingPendantImageId',
         'adcreativeTemplateId' => 'getAdcreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements'
     ];
@@ -411,6 +416,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['videoEndPage'] = isset($data['videoEndPage']) ? $data['videoEndPage'] : null;
         $this->container['feedsVideoCommentSwitch'] = isset($data['feedsVideoCommentSwitch']) ? $data['feedsVideoCommentSwitch'] : null;
         $this->container['floatingZone'] = isset($data['floatingZone']) ? $data['floatingZone'] : null;
+        $this->container['marketingPendantImageId'] = isset($data['marketingPendantImageId']) ? $data['marketingPendantImageId'] : null;
         $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
     }
@@ -1347,6 +1353,30 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setFloatingZone($floatingZone)
     {
         $this->container['floatingZone'] = $floatingZone;
+
+        return $this;
+    }
+
+    /**
+     * Gets marketingPendantImageId
+     *
+     * @return string
+     */
+    public function getMarketingPendantImageId()
+    {
+        return $this->container['marketingPendantImageId'];
+    }
+
+    /**
+     * Sets marketingPendantImageId
+     *
+     * @param string $marketingPendantImageId marketingPendantImageId
+     *
+     * @return $this
+     */
+    public function setMarketingPendantImageId($marketingPendantImageId)
+    {
+        $this->container['marketingPendantImageId'] = $marketingPendantImageId;
 
         return $this;
     }

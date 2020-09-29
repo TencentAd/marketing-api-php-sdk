@@ -376,15 +376,16 @@ class UserActionSetsApi
      *
      * @param  int $accountId accountId (required)
      * @param  int $userActionSetId userActionSetId (optional)
+     * @param  string[] $type type (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\UserActionSetsGetResponse
      */
-    public function userActionSetsGet($accountId, $userActionSetId = null, $fields = null)
+    public function userActionSetsGet($accountId, $userActionSetId = null, $type = null, $fields = null)
     {
-        list($response) = $this->userActionSetsGetWithHttpInfo($accountId, $userActionSetId, $fields);
+        list($response) = $this->userActionSetsGetWithHttpInfo($accountId, $userActionSetId, $type, $fields);
         return $response;
     }
 
@@ -395,16 +396,17 @@ class UserActionSetsApi
      *
      * @param  int $accountId (required)
      * @param  int $userActionSetId (optional)
+     * @param  string[] $type (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\UserActionSetsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function userActionSetsGetWithHttpInfo($accountId, $userActionSetId = null, $fields = null)
+    public function userActionSetsGetWithHttpInfo($accountId, $userActionSetId = null, $type = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\UserActionSetsGetResponse';
-        $request = $this->userActionSetsGetRequest($accountId, $userActionSetId, $fields);
+        $request = $this->userActionSetsGetRequest($accountId, $userActionSetId, $type, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -472,14 +474,15 @@ class UserActionSetsApi
      *
      * @param  int $accountId (required)
      * @param  int $userActionSetId (optional)
+     * @param  string[] $type (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function userActionSetsGetAsync($accountId, $userActionSetId = null, $fields = null)
+    public function userActionSetsGetAsync($accountId, $userActionSetId = null, $type = null, $fields = null)
     {
-        return $this->userActionSetsGetAsyncWithHttpInfo($accountId, $userActionSetId, $fields)
+        return $this->userActionSetsGetAsyncWithHttpInfo($accountId, $userActionSetId, $type, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -494,15 +497,16 @@ class UserActionSetsApi
      *
      * @param  int $accountId (required)
      * @param  int $userActionSetId (optional)
+     * @param  string[] $type (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function userActionSetsGetAsyncWithHttpInfo($accountId, $userActionSetId = null, $fields = null)
+    public function userActionSetsGetAsyncWithHttpInfo($accountId, $userActionSetId = null, $type = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\UserActionSetsGetResponse';
-        $request = $this->userActionSetsGetRequest($accountId, $userActionSetId, $fields);
+        $request = $this->userActionSetsGetRequest($accountId, $userActionSetId, $type, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -546,12 +550,13 @@ class UserActionSetsApi
      *
      * @param  int $accountId (required)
      * @param  int $userActionSetId (optional)
+     * @param  string[] $type (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function userActionSetsGetRequest($accountId, $userActionSetId = null, $fields = null)
+    protected function userActionSetsGetRequest($accountId, $userActionSetId = null, $type = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -574,6 +579,13 @@ class UserActionSetsApi
         // query params
         if ($userActionSetId !== null) {
             $queryParams['user_action_set_id'] = ObjectSerializer::toQueryValue($userActionSetId);
+        }
+        // query params
+        if (is_array($type)) {
+            $queryParams['type'] = $type;
+        } else
+        if ($type !== null) {
+            $queryParams['type'] = ObjectSerializer::toQueryValue($type);
         }
         // query params
         if (is_array($fields)) {

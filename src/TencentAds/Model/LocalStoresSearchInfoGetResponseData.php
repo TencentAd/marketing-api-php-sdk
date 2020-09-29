@@ -1,6 +1,6 @@
 <?php
 /**
- * PlayerConsuptStruct
+ * LocalStoresSearchInfoGetResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PlayerConsuptStruct Class Doc Comment
+ * LocalStoresSearchInfoGetResponseData Class Doc Comment
  *
  * @category Class
- * @description 游戏用户消费能力信息结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PlayerConsuptStruct implements ModelInterface, ArrayAccess
+class LocalStoresSearchInfoGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class PlayerConsuptStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'player_consupt_struct';
+    protected static $swaggerModelName = 'LocalStoresSearchInfoGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,8 @@ class PlayerConsuptStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'min' => 'int',
-        'max' => 'int'
+        'list' => '\TencentAds\Model\LocalStoresSearchInfoGetListStruct[]',
+        'pageInfo' => '\TencentAds\Model\Conf'
     ];
 
     /**
@@ -68,8 +67,8 @@ class PlayerConsuptStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'min' => 'int64',
-        'max' => 'int64'
+        'list' => null,
+        'pageInfo' => null
     ];
 
     /**
@@ -99,8 +98,8 @@ class PlayerConsuptStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'min' => 'min',
-        'max' => 'max'
+        'list' => 'list',
+        'pageInfo' => 'page_info'
     ];
 
     /**
@@ -109,8 +108,8 @@ class PlayerConsuptStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'min' => 'setMin',
-        'max' => 'setMax'
+        'list' => 'setList',
+        'pageInfo' => 'setPageInfo'
     ];
 
     /**
@@ -119,8 +118,8 @@ class PlayerConsuptStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'min' => 'getMin',
-        'max' => 'getMax'
+        'list' => 'getList',
+        'pageInfo' => 'getPageInfo'
     ];
 
     /**
@@ -183,8 +182,8 @@ class PlayerConsuptStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['min'] = isset($data['min']) ? $data['min'] : null;
-        $this->container['max'] = isset($data['max']) ? $data['max'] : null;
+        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
+        $this->container['pageInfo'] = isset($data['pageInfo']) ? $data['pageInfo'] : null;
     }
 
     /**
@@ -212,49 +211,49 @@ class PlayerConsuptStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets min
+     * Gets list
      *
-     * @return int
+     * @return \TencentAds\Model\LocalStoresSearchInfoGetListStruct[]
      */
-    public function getMin()
+    public function getList()
     {
-        return $this->container['min'];
+        return $this->container['list'];
     }
 
     /**
-     * Sets min
+     * Sets list
      *
-     * @param int $min min
+     * @param \TencentAds\Model\LocalStoresSearchInfoGetListStruct[] $list list
      *
      * @return $this
      */
-    public function setMin($min)
+    public function setList($list)
     {
-        $this->container['min'] = $min;
+        $this->container['list'] = $list;
 
         return $this;
     }
 
     /**
-     * Gets max
+     * Gets pageInfo
      *
-     * @return int
+     * @return \TencentAds\Model\Conf
      */
-    public function getMax()
+    public function getPageInfo()
     {
-        return $this->container['max'];
+        return $this->container['pageInfo'];
     }
 
     /**
-     * Sets max
+     * Sets pageInfo
      *
-     * @param int $max max
+     * @param \TencentAds\Model\Conf $pageInfo pageInfo
      *
      * @return $this
      */
-    public function setMax($max)
+    public function setPageInfo($pageInfo)
     {
-        $this->container['max'] = $max;
+        $this->container['pageInfo'] = $pageInfo;
 
         return $this;
     }

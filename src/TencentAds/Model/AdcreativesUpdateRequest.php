@@ -84,6 +84,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'videoEndPage' => '\TencentAds\Model\VideoEndPageSpec',
         'feedsVideoCommentSwitch' => 'bool',
         'floatingZone' => '\TencentAds\Model\FloatingZone',
+        'marketingPendantImageId' => 'string',
         'accountId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsMp'
     ];
@@ -121,6 +122,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'videoEndPage' => null,
         'feedsVideoCommentSwitch' => null,
         'floatingZone' => null,
+        'marketingPendantImageId' => null,
         'accountId' => 'int64',
         'adcreativeElements' => null
     ];
@@ -179,6 +181,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'videoEndPage' => 'video_end_page',
         'feedsVideoCommentSwitch' => 'feeds_video_comment_switch',
         'floatingZone' => 'floating_zone',
+        'marketingPendantImageId' => 'marketing_pendant_image_id',
         'accountId' => 'account_id',
         'adcreativeElements' => 'adcreative_elements'
     ];
@@ -216,6 +219,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'videoEndPage' => 'setVideoEndPage',
         'feedsVideoCommentSwitch' => 'setFeedsVideoCommentSwitch',
         'floatingZone' => 'setFloatingZone',
+        'marketingPendantImageId' => 'setMarketingPendantImageId',
         'accountId' => 'setAccountId',
         'adcreativeElements' => 'setAdcreativeElements'
     ];
@@ -253,6 +257,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'videoEndPage' => 'getVideoEndPage',
         'feedsVideoCommentSwitch' => 'getFeedsVideoCommentSwitch',
         'floatingZone' => 'getFloatingZone',
+        'marketingPendantImageId' => 'getMarketingPendantImageId',
         'accountId' => 'getAccountId',
         'adcreativeElements' => 'getAdcreativeElements'
     ];
@@ -344,6 +349,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['videoEndPage'] = isset($data['videoEndPage']) ? $data['videoEndPage'] : null;
         $this->container['feedsVideoCommentSwitch'] = isset($data['feedsVideoCommentSwitch']) ? $data['feedsVideoCommentSwitch'] : null;
         $this->container['floatingZone'] = isset($data['floatingZone']) ? $data['floatingZone'] : null;
+        $this->container['marketingPendantImageId'] = isset($data['marketingPendantImageId']) ? $data['marketingPendantImageId'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
     }
@@ -1016,6 +1022,30 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setFloatingZone($floatingZone)
     {
         $this->container['floatingZone'] = $floatingZone;
+
+        return $this;
+    }
+
+    /**
+     * Gets marketingPendantImageId
+     *
+     * @return string
+     */
+    public function getMarketingPendantImageId()
+    {
+        return $this->container['marketingPendantImageId'];
+    }
+
+    /**
+     * Sets marketingPendantImageId
+     *
+     * @param string $marketingPendantImageId marketingPendantImageId
+     *
+     * @return $this
+     */
+    public function setMarketingPendantImageId($marketingPendantImageId)
+    {
+        $this->container['marketingPendantImageId'] = $marketingPendantImageId;
 
         return $this;
     }

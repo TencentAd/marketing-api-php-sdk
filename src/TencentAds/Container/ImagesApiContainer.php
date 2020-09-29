@@ -111,4 +111,38 @@ class ImagesApiContainer extends ApiContainer
             return $response;
         });
     }
+
+
+    /**
+     * Handle ImagesApi imagesUpdate function
+     * @param array params
+     * @return \TencentAds\Model\ImagesUpdateResponseData
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function update(array $params = [])
+    {
+        return $this->handleMiddleware('update', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->imagesUpdate($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle ImagesApi imagesUpdateAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function updateAsync(array $params = [])
+    {
+        return $this->handleMiddleware('update', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->imagesUpdateAsync($data);
+            return $response;
+        });
+    }
 }

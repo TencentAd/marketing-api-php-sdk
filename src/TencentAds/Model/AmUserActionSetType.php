@@ -48,6 +48,9 @@ class AmUserActionSetType
     const ANDROID = 'ANDROID';
     const IOS = 'IOS';
     const OFFLINE = 'OFFLINE';
+    const WECHAT = 'WECHAT';
+    const WECHAT_MINI_PROGRAM = 'WECHAT_MINI_PROGRAM';
+    const WECHAT_MINI_GAME = 'WECHAT_MINI_GAME';
     const MARKETING = 'MARKETING';
     
     /**
@@ -61,6 +64,9 @@ class AmUserActionSetType
             self::ANDROID,
             self::IOS,
             self::OFFLINE,
+            self::WECHAT,
+            self::WECHAT_MINI_PROGRAM,
+            self::WECHAT_MINI_GAME,
             self::MARKETING,
         ];
     }

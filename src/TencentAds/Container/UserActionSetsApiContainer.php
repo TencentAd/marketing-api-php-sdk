@@ -74,8 +74,9 @@ class UserActionSetsApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $userActionSetId = isset($params['user_action_set_id']) ? $params['user_action_set_id'] : null;
+            $type = isset($params['type']) ? $params['type'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->userActionSetsGet($accountId, $userActionSetId, $fields);
+            $response = $this->apiInstance->userActionSetsGet($accountId, $userActionSetId, $type, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -92,8 +93,9 @@ class UserActionSetsApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $userActionSetId = isset($params['user_action_set_id']) ? $params['user_action_set_id'] : null;
+            $type = isset($params['type']) ? $params['type'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->userActionSetsGetAsync($accountId, $userActionSetId, $fields);
+            $response = $this->apiInstance->userActionSetsGetAsync($accountId, $userActionSetId, $type, $fields);
             return $response;
         });
     }

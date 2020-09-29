@@ -31,6 +31,7 @@ use TencentAds\Container\CampaignsApiContainer;
 use TencentAds\Container\CapabilitiesApiContainer;
 use TencentAds\Container\ComplianceValidationApiContainer;
 use TencentAds\Container\ConversionsApiContainer;
+use TencentAds\Container\CreativetoolsTextApiContainer;
 use TencentAds\Container\CustomAudienceEstimationsApiContainer;
 use TencentAds\Container\CustomAudienceFilesApiContainer;
 use TencentAds\Container\CustomAudienceInsightsApiContainer;
@@ -62,6 +63,11 @@ use TencentAds\Container\LeadCluesApiContainer;
 use TencentAds\Container\LeadsApiContainer;
 use TencentAds\Container\LeadsFormApiContainer;
 use TencentAds\Container\LeadsFormListApiContainer;
+use TencentAds\Container\LocalEndadsmanuallyApiContainer;
+use TencentAds\Container\LocalEstimatedamountApiContainer;
+use TencentAds\Container\LocalStoresAddressParsingResultApiContainer;
+use TencentAds\Container\LocalStoresApiContainer;
+use TencentAds\Container\LocalStoresSearchInfoApiContainer;
 use TencentAds\Container\OauthApiContainer;
 use TencentAds\Container\OptimizationGoalPermissionsApiContainer;
 use TencentAds\Container\PagesApiContainer;
@@ -71,7 +77,6 @@ use TencentAds\Container\ProductCatalogsReportsApiContainer;
 use TencentAds\Container\ProductCategoriesListApiContainer;
 use TencentAds\Container\ProductItemsApiContainer;
 use TencentAds\Container\ProductItemsDetailApiContainer;
-use TencentAds\Container\ProductItemsListApiContainer;
 use TencentAds\Container\ProductsSystemStatusApiContainer;
 use TencentAds\Container\ProfilesApiContainer;
 use TencentAds\Container\PromotedObjectsApiContainer;
@@ -94,13 +99,16 @@ use TencentAds\Container\WechatAdFollowersApiContainer;
 use TencentAds\Container\WechatAdLabelsApiContainer;
 use TencentAds\Container\WechatAdvertiserApiContainer;
 use TencentAds\Container\WechatAdvertiserDetailApiContainer;
+use TencentAds\Container\WechatAdvertiserLocalBusinessApiContainer;
 use TencentAds\Container\WechatAdvertiserSpecificationApiContainer;
 use TencentAds\Container\WechatAgencyApiContainer;
 use TencentAds\Container\WechatDailyCostApiContainer;
 use TencentAds\Container\WechatFundStatementsDetailedApiContainer;
+use TencentAds\Container\WechatFundTransferApiContainer;
 use TencentAds\Container\WechatFundsApiContainer;
 use TencentAds\Container\WechatLeadsApiContainer;
 use TencentAds\Container\WechatPagesApiContainer;
+use TencentAds\Container\WechatQualificationsApiContainer;
 use TencentAds\Container\XijingPageApiContainer;
 use TencentAds\Container\XijingPageByComponentsApiContainer;
 use TencentAds\Container\XijingPageListApiContainer;
@@ -198,6 +206,9 @@ class App
     /** @var ConversionsApiContainer */
     public $conversionsApiContainer;
 
+    /** @var CreativetoolsTextApiContainer */
+    public $creativetoolsTextApiContainer;
+
     /** @var CustomAudienceEstimationsApiContainer */
     public $customAudienceEstimationsApiContainer;
 
@@ -291,6 +302,21 @@ class App
     /** @var LeadsFormListApiContainer */
     public $leadsFormListApiContainer;
 
+    /** @var LocalEndadsmanuallyApiContainer */
+    public $localEndadsmanuallyApiContainer;
+
+    /** @var LocalEstimatedamountApiContainer */
+    public $localEstimatedamountApiContainer;
+
+    /** @var LocalStoresAddressParsingResultApiContainer */
+    public $localStoresAddressParsingResultApiContainer;
+
+    /** @var LocalStoresApiContainer */
+    public $localStoresApiContainer;
+
+    /** @var LocalStoresSearchInfoApiContainer */
+    public $localStoresSearchInfoApiContainer;
+
     /** @var OauthApiContainer */
     public $oauthApiContainer;
 
@@ -317,9 +343,6 @@ class App
 
     /** @var ProductItemsDetailApiContainer */
     public $productItemsDetailApiContainer;
-
-    /** @var ProductItemsListApiContainer */
-    public $productItemsListApiContainer;
 
     /** @var ProductsSystemStatusApiContainer */
     public $productsSystemStatusApiContainer;
@@ -387,6 +410,9 @@ class App
     /** @var WechatAdvertiserDetailApiContainer */
     public $wechatAdvertiserDetailApiContainer;
 
+    /** @var WechatAdvertiserLocalBusinessApiContainer */
+    public $wechatAdvertiserLocalBusinessApiContainer;
+
     /** @var WechatAdvertiserSpecificationApiContainer */
     public $wechatAdvertiserSpecificationApiContainer;
 
@@ -399,6 +425,9 @@ class App
     /** @var WechatFundStatementsDetailedApiContainer */
     public $wechatFundStatementsDetailedApiContainer;
 
+    /** @var WechatFundTransferApiContainer */
+    public $wechatFundTransferApiContainer;
+
     /** @var WechatFundsApiContainer */
     public $wechatFundsApiContainer;
 
@@ -407,6 +436,9 @@ class App
 
     /** @var WechatPagesApiContainer */
     public $wechatPagesApiContainer;
+
+    /** @var WechatQualificationsApiContainer */
+    public $wechatQualificationsApiContainer;
 
     /** @var XijingPageApiContainer */
     public $xijingPageApiContainer;
@@ -836,6 +868,20 @@ class App
             $this->conversionsApiContainer = $container;
         }
         return $this->conversionsApiContainer;
+    }
+
+
+    /**
+     * @return CreativetoolsTextApiContainer
+     */
+    public function creativetoolsText()
+    {
+        if (empty($this->creativetoolsTextApiContainer)) {
+            $container = new CreativetoolsTextApiContainer();
+            $container->init($this, $this->getClient());
+            $this->creativetoolsTextApiContainer = $container;
+        }
+        return $this->creativetoolsTextApiContainer;
     }
 
 
@@ -1274,6 +1320,76 @@ class App
 
 
     /**
+     * @return LocalEndadsmanuallyApiContainer
+     */
+    public function localEndadsmanually()
+    {
+        if (empty($this->localEndadsmanuallyApiContainer)) {
+            $container = new LocalEndadsmanuallyApiContainer();
+            $container->init($this, $this->getClient());
+            $this->localEndadsmanuallyApiContainer = $container;
+        }
+        return $this->localEndadsmanuallyApiContainer;
+    }
+
+
+    /**
+     * @return LocalEstimatedamountApiContainer
+     */
+    public function localEstimatedamount()
+    {
+        if (empty($this->localEstimatedamountApiContainer)) {
+            $container = new LocalEstimatedamountApiContainer();
+            $container->init($this, $this->getClient());
+            $this->localEstimatedamountApiContainer = $container;
+        }
+        return $this->localEstimatedamountApiContainer;
+    }
+
+
+    /**
+     * @return LocalStoresAddressParsingResultApiContainer
+     */
+    public function localStoresAddressParsingResult()
+    {
+        if (empty($this->localStoresAddressParsingResultApiContainer)) {
+            $container = new LocalStoresAddressParsingResultApiContainer();
+            $container->init($this, $this->getClient());
+            $this->localStoresAddressParsingResultApiContainer = $container;
+        }
+        return $this->localStoresAddressParsingResultApiContainer;
+    }
+
+
+    /**
+     * @return LocalStoresApiContainer
+     */
+    public function localStores()
+    {
+        if (empty($this->localStoresApiContainer)) {
+            $container = new LocalStoresApiContainer();
+            $container->init($this, $this->getClient());
+            $this->localStoresApiContainer = $container;
+        }
+        return $this->localStoresApiContainer;
+    }
+
+
+    /**
+     * @return LocalStoresSearchInfoApiContainer
+     */
+    public function localStoresSearchInfo()
+    {
+        if (empty($this->localStoresSearchInfoApiContainer)) {
+            $container = new LocalStoresSearchInfoApiContainer();
+            $container->init($this, $this->getClient());
+            $this->localStoresSearchInfoApiContainer = $container;
+        }
+        return $this->localStoresSearchInfoApiContainer;
+    }
+
+
+    /**
      * @return OauthApiContainer
      */
     public function oauth()
@@ -1396,20 +1512,6 @@ class App
             $this->productItemsDetailApiContainer = $container;
         }
         return $this->productItemsDetailApiContainer;
-    }
-
-
-    /**
-     * @return ProductItemsListApiContainer
-     */
-    public function productItemsList()
-    {
-        if (empty($this->productItemsListApiContainer)) {
-            $container = new ProductItemsListApiContainer();
-            $container->init($this, $this->getClient());
-            $this->productItemsListApiContainer = $container;
-        }
-        return $this->productItemsListApiContainer;
     }
 
 
@@ -1722,6 +1824,20 @@ class App
 
 
     /**
+     * @return WechatAdvertiserLocalBusinessApiContainer
+     */
+    public function wechatAdvertiserLocalBusiness()
+    {
+        if (empty($this->wechatAdvertiserLocalBusinessApiContainer)) {
+            $container = new WechatAdvertiserLocalBusinessApiContainer();
+            $container->init($this, $this->getClient());
+            $this->wechatAdvertiserLocalBusinessApiContainer = $container;
+        }
+        return $this->wechatAdvertiserLocalBusinessApiContainer;
+    }
+
+
+    /**
      * @return WechatAdvertiserSpecificationApiContainer
      */
     public function wechatAdvertiserSpecification()
@@ -1778,6 +1894,20 @@ class App
 
 
     /**
+     * @return WechatFundTransferApiContainer
+     */
+    public function wechatFundTransfer()
+    {
+        if (empty($this->wechatFundTransferApiContainer)) {
+            $container = new WechatFundTransferApiContainer();
+            $container->init($this, $this->getClient());
+            $this->wechatFundTransferApiContainer = $container;
+        }
+        return $this->wechatFundTransferApiContainer;
+    }
+
+
+    /**
      * @return WechatFundsApiContainer
      */
     public function wechatFunds()
@@ -1816,6 +1946,20 @@ class App
             $this->wechatPagesApiContainer = $container;
         }
         return $this->wechatPagesApiContainer;
+    }
+
+
+    /**
+     * @return WechatQualificationsApiContainer
+     */
+    public function wechatQualifications()
+    {
+        if (empty($this->wechatQualificationsApiContainer)) {
+            $container = new WechatQualificationsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->wechatQualificationsApiContainer = $container;
+        }
+        return $this->wechatQualificationsApiContainer;
     }
 
 

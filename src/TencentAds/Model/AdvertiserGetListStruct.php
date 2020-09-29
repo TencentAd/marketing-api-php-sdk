@@ -72,6 +72,8 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'contactPersonMobile' => 'string',
         'wechatSpec' => '\TencentAds\Model\MpInfoRead',
         'websites' => '\TencentAds\Model\WebsiteReadStruct[]',
+        'agencyAccountId' => 'int',
+        'operators' => '\TencentAds\Model\AdvertiserOperatorStruct[]',
         'accountId' => 'int',
         'adQualificationImage' => 'string[]',
         'certificationImage' => 'string',
@@ -105,6 +107,8 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'contactPersonMobile' => null,
         'wechatSpec' => null,
         'websites' => null,
+        'agencyAccountId' => 'int64',
+        'operators' => null,
         'accountId' => 'int64',
         'adQualificationImage' => null,
         'certificationImage' => null,
@@ -159,6 +163,8 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'contactPersonMobile' => 'contact_person_mobile',
         'wechatSpec' => 'wechat_spec',
         'websites' => 'websites',
+        'agencyAccountId' => 'agency_account_id',
+        'operators' => 'operators',
         'accountId' => 'account_id',
         'adQualificationImage' => 'ad_qualification_image',
         'certificationImage' => 'certification_image',
@@ -192,6 +198,8 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'contactPersonMobile' => 'setContactPersonMobile',
         'wechatSpec' => 'setWechatSpec',
         'websites' => 'setWebsites',
+        'agencyAccountId' => 'setAgencyAccountId',
+        'operators' => 'setOperators',
         'accountId' => 'setAccountId',
         'adQualificationImage' => 'setAdQualificationImage',
         'certificationImage' => 'setCertificationImage',
@@ -225,6 +233,8 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'contactPersonMobile' => 'getContactPersonMobile',
         'wechatSpec' => 'getWechatSpec',
         'websites' => 'getWebsites',
+        'agencyAccountId' => 'getAgencyAccountId',
+        'operators' => 'getOperators',
         'accountId' => 'getAccountId',
         'adQualificationImage' => 'getAdQualificationImage',
         'certificationImage' => 'getCertificationImage',
@@ -312,6 +322,8 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         $this->container['contactPersonMobile'] = isset($data['contactPersonMobile']) ? $data['contactPersonMobile'] : null;
         $this->container['wechatSpec'] = isset($data['wechatSpec']) ? $data['wechatSpec'] : null;
         $this->container['websites'] = isset($data['websites']) ? $data['websites'] : null;
+        $this->container['agencyAccountId'] = isset($data['agencyAccountId']) ? $data['agencyAccountId'] : null;
+        $this->container['operators'] = isset($data['operators']) ? $data['operators'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['adQualificationImage'] = isset($data['adQualificationImage']) ? $data['adQualificationImage'] : null;
         $this->container['certificationImage'] = isset($data['certificationImage']) ? $data['certificationImage'] : null;
@@ -681,6 +693,54 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     public function setWebsites($websites)
     {
         $this->container['websites'] = $websites;
+
+        return $this;
+    }
+
+    /**
+     * Gets agencyAccountId
+     *
+     * @return int
+     */
+    public function getAgencyAccountId()
+    {
+        return $this->container['agencyAccountId'];
+    }
+
+    /**
+     * Sets agencyAccountId
+     *
+     * @param int $agencyAccountId agencyAccountId
+     *
+     * @return $this
+     */
+    public function setAgencyAccountId($agencyAccountId)
+    {
+        $this->container['agencyAccountId'] = $agencyAccountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets operators
+     *
+     * @return \TencentAds\Model\AdvertiserOperatorStruct[]
+     */
+    public function getOperators()
+    {
+        return $this->container['operators'];
+    }
+
+    /**
+     * Sets operators
+     *
+     * @param \TencentAds\Model\AdvertiserOperatorStruct[] $operators operators
+     *
+     * @return $this
+     */
+    public function setOperators($operators)
+    {
+        $this->container['operators'] = $operators;
 
         return $this;
     }

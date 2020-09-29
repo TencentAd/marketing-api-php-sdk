@@ -65,7 +65,10 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'qaid' => 'string',
         'hashAndroidId' => 'string',
         'hashMac' => 'string',
-        'oaid' => 'string'
+        'oaid' => 'string',
+        'wechatOpenid' => 'string',
+        'wechatUnionid' => 'string',
+        'wechatAppId' => 'string'
     ];
 
     /**
@@ -81,7 +84,10 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'qaid' => null,
         'hashAndroidId' => null,
         'hashMac' => null,
-        'oaid' => null
+        'oaid' => null,
+        'wechatOpenid' => null,
+        'wechatUnionid' => null,
+        'wechatAppId' => null
     ];
 
     /**
@@ -118,7 +124,10 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'qaid' => 'qaid',
         'hashAndroidId' => 'hash_android_id',
         'hashMac' => 'hash_mac',
-        'oaid' => 'oaid'
+        'oaid' => 'oaid',
+        'wechatOpenid' => 'wechat_openid',
+        'wechatUnionid' => 'wechat_unionid',
+        'wechatAppId' => 'wechat_app_id'
     ];
 
     /**
@@ -134,7 +143,10 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'qaid' => 'setQaid',
         'hashAndroidId' => 'setHashAndroidId',
         'hashMac' => 'setHashMac',
-        'oaid' => 'setOaid'
+        'oaid' => 'setOaid',
+        'wechatOpenid' => 'setWechatOpenid',
+        'wechatUnionid' => 'setWechatUnionid',
+        'wechatAppId' => 'setWechatAppId'
     ];
 
     /**
@@ -150,7 +162,10 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'qaid' => 'getQaid',
         'hashAndroidId' => 'getHashAndroidId',
         'hashMac' => 'getHashMac',
-        'oaid' => 'getOaid'
+        'oaid' => 'getOaid',
+        'wechatOpenid' => 'getWechatOpenid',
+        'wechatUnionid' => 'getWechatUnionid',
+        'wechatAppId' => 'getWechatAppId'
     ];
 
     /**
@@ -221,6 +236,9 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         $this->container['hashAndroidId'] = isset($data['hashAndroidId']) ? $data['hashAndroidId'] : null;
         $this->container['hashMac'] = isset($data['hashMac']) ? $data['hashMac'] : null;
         $this->container['oaid'] = isset($data['oaid']) ? $data['oaid'] : null;
+        $this->container['wechatOpenid'] = isset($data['wechatOpenid']) ? $data['wechatOpenid'] : null;
+        $this->container['wechatUnionid'] = isset($data['wechatUnionid']) ? $data['wechatUnionid'] : null;
+        $this->container['wechatAppId'] = isset($data['wechatAppId']) ? $data['wechatAppId'] : null;
     }
 
     /**
@@ -435,6 +453,78 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     public function setOaid($oaid)
     {
         $this->container['oaid'] = $oaid;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatOpenid
+     *
+     * @return string
+     */
+    public function getWechatOpenid()
+    {
+        return $this->container['wechatOpenid'];
+    }
+
+    /**
+     * Sets wechatOpenid
+     *
+     * @param string $wechatOpenid wechatOpenid
+     *
+     * @return $this
+     */
+    public function setWechatOpenid($wechatOpenid)
+    {
+        $this->container['wechatOpenid'] = $wechatOpenid;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatUnionid
+     *
+     * @return string
+     */
+    public function getWechatUnionid()
+    {
+        return $this->container['wechatUnionid'];
+    }
+
+    /**
+     * Sets wechatUnionid
+     *
+     * @param string $wechatUnionid wechatUnionid
+     *
+     * @return $this
+     */
+    public function setWechatUnionid($wechatUnionid)
+    {
+        $this->container['wechatUnionid'] = $wechatUnionid;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatAppId
+     *
+     * @return string
+     */
+    public function getWechatAppId()
+    {
+        return $this->container['wechatAppId'];
+    }
+
+    /**
+     * Sets wechatAppId
+     *
+     * @param string $wechatAppId wechatAppId
+     *
+     * @return $this
+     */
+    public function setWechatAppId($wechatAppId)
+    {
+        $this->container['wechatAppId'] = $wechatAppId;
 
         return $this;
     }

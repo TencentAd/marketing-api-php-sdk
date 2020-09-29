@@ -1,6 +1,6 @@
 <?php
 /**
- * ProductItemsListApi
+ * WechatFundTransferApi
  * PHP version 5
  *
  * @category Class
@@ -40,14 +40,14 @@ use TencentAds\HeaderSelector;
 use TencentAds\ObjectSerializer;
 
 /**
- * ProductItemsListApi Class Doc Comment
+ * WechatFundTransferApi Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ProductItemsListApi
+class WechatFundTransferApi
 {
     /**
      * @var ClientInterface
@@ -88,49 +88,37 @@ class ProductItemsListApi
     }
 
     /**
-     * Operation productItemsListGet
+     * Operation wechatFundTransferAdd
      *
-     * 商品列表
+     * 微信服务商子客之间转账
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $productCatalogId productCatalogId (required)
-     * @param  int $pageSize pageSize (required)
-     * @param  int $page page (required)
-     * @param  string $sortByProductLastModTime sortByProductLastModTime (optional)
-     * @param  string $sortByProductName sortByProductName (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  \TencentAds\Model\WechatFundTransferAddRequest $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ProductItemsListGetResponse
+     * @return \TencentAds\Model\WechatFundTransferAddResponse
      */
-    public function productItemsListGet($accountId, $productCatalogId, $pageSize, $page, $sortByProductLastModTime = null, $sortByProductName = null, $fields = null)
+    public function wechatFundTransferAdd($data)
     {
-        list($response) = $this->productItemsListGetWithHttpInfo($accountId, $productCatalogId, $pageSize, $page, $sortByProductLastModTime, $sortByProductName, $fields);
+        list($response) = $this->wechatFundTransferAddWithHttpInfo($data);
         return $response;
     }
 
     /**
-     * Operation productItemsListGetWithHttpInfo
+     * Operation wechatFundTransferAddWithHttpInfo
      *
-     * 商品列表
+     * 微信服务商子客之间转账
      *
-     * @param  int $accountId (required)
-     * @param  int $productCatalogId (required)
-     * @param  int $pageSize (required)
-     * @param  int $page (required)
-     * @param  string $sortByProductLastModTime (optional)
-     * @param  string $sortByProductName (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  \TencentAds\Model\WechatFundTransferAddRequest $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \TencentAds\Model\ProductItemsListGetResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TencentAds\Model\WechatFundTransferAddResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function productItemsListGetWithHttpInfo($accountId, $productCatalogId, $pageSize, $page, $sortByProductLastModTime = null, $sortByProductName = null, $fields = null)
+    public function wechatFundTransferAddWithHttpInfo($data)
     {
-        $returnType = '\TencentAds\Model\ProductItemsListGetResponse';
-        $request = $this->productItemsListGetRequest($accountId, $productCatalogId, $pageSize, $page, $sortByProductLastModTime, $sortByProductName, $fields);
+        $returnType = '\TencentAds\Model\WechatFundTransferAddResponse';
+        $request = $this->wechatFundTransferAddRequest($data);
 
         try {
             $options = $this->createHttpClientOption();
@@ -181,7 +169,7 @@ class ProductItemsListApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\TencentAds\Model\ProductItemsListGetResponse',
+                        '\TencentAds\Model\WechatFundTransferAddResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -192,24 +180,18 @@ class ProductItemsListApi
     }
 
     /**
-     * Operation productItemsListGetAsync
+     * Operation wechatFundTransferAddAsync
      *
-     * 商品列表
+     * 微信服务商子客之间转账
      *
-     * @param  int $accountId (required)
-     * @param  int $productCatalogId (required)
-     * @param  int $pageSize (required)
-     * @param  int $page (required)
-     * @param  string $sortByProductLastModTime (optional)
-     * @param  string $sortByProductName (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  \TencentAds\Model\WechatFundTransferAddRequest $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function productItemsListGetAsync($accountId, $productCatalogId, $pageSize, $page, $sortByProductLastModTime = null, $sortByProductName = null, $fields = null)
+    public function wechatFundTransferAddAsync($data)
     {
-        return $this->productItemsListGetAsyncWithHttpInfo($accountId, $productCatalogId, $pageSize, $page, $sortByProductLastModTime, $sortByProductName, $fields)
+        return $this->wechatFundTransferAddAsyncWithHttpInfo($data)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -218,25 +200,19 @@ class ProductItemsListApi
     }
 
     /**
-     * Operation productItemsListGetAsyncWithHttpInfo
+     * Operation wechatFundTransferAddAsyncWithHttpInfo
      *
-     * 商品列表
+     * 微信服务商子客之间转账
      *
-     * @param  int $accountId (required)
-     * @param  int $productCatalogId (required)
-     * @param  int $pageSize (required)
-     * @param  int $page (required)
-     * @param  string $sortByProductLastModTime (optional)
-     * @param  string $sortByProductName (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  \TencentAds\Model\WechatFundTransferAddRequest $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function productItemsListGetAsyncWithHttpInfo($accountId, $productCatalogId, $pageSize, $page, $sortByProductLastModTime = null, $sortByProductName = null, $fields = null)
+    public function wechatFundTransferAddAsyncWithHttpInfo($data)
     {
-        $returnType = '\TencentAds\Model\ProductItemsListGetResponse';
-        $request = $this->productItemsListGetRequest($accountId, $productCatalogId, $pageSize, $page, $sortByProductLastModTime, $sortByProductName, $fields);
+        $returnType = '\TencentAds\Model\WechatFundTransferAddResponse';
+        $request = $this->wechatFundTransferAddRequest($data);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -276,90 +252,38 @@ class ProductItemsListApi
     }
 
     /**
-     * Create request for operation 'productItemsListGet'
+     * Create request for operation 'wechatFundTransferAdd'
      *
-     * @param  int $accountId (required)
-     * @param  int $productCatalogId (required)
-     * @param  int $pageSize (required)
-     * @param  int $page (required)
-     * @param  string $sortByProductLastModTime (optional)
-     * @param  string $sortByProductName (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  \TencentAds\Model\WechatFundTransferAddRequest $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function productItemsListGetRequest($accountId, $productCatalogId, $pageSize, $page, $sortByProductLastModTime = null, $sortByProductName = null, $fields = null)
+    protected function wechatFundTransferAddRequest($data)
     {
-        // verify the required parameter 'accountId' is set
-        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
+        // verify the required parameter 'data' is set
+        if ($data === null || (is_array($data) && count($data) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $accountId when calling productItemsListGet'
-            );
-        }
-        // verify the required parameter 'productCatalogId' is set
-        if ($productCatalogId === null || (is_array($productCatalogId) && count($productCatalogId) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $productCatalogId when calling productItemsListGet'
-            );
-        }
-        // verify the required parameter 'pageSize' is set
-        if ($pageSize === null || (is_array($pageSize) && count($pageSize) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $pageSize when calling productItemsListGet'
-            );
-        }
-        // verify the required parameter 'page' is set
-        if ($page === null || (is_array($page) && count($page) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $page when calling productItemsListGet'
+                'Missing the required parameter $data when calling wechatFundTransferAdd'
             );
         }
 
-        $resourcePath = '/product_items_list/get';
+        $resourcePath = '/wechat_fund_transfer/add';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
         $httpBody = '';
         $multipart = false;
 
-        // query params
-        if ($accountId !== null) {
-            $queryParams['account_id'] = ObjectSerializer::toQueryValue($accountId);
-        }
-        // query params
-        if ($productCatalogId !== null) {
-            $queryParams['product_catalog_id'] = ObjectSerializer::toQueryValue($productCatalogId);
-        }
-        // query params
-        if ($pageSize !== null) {
-            $queryParams['page_size'] = ObjectSerializer::toQueryValue($pageSize);
-        }
-        // query params
-        if ($page !== null) {
-            $queryParams['page'] = ObjectSerializer::toQueryValue($page);
-        }
-        // query params
-        if ($sortByProductLastModTime !== null) {
-            $queryParams['sort_by_product_last_mod_time'] = ObjectSerializer::toQueryValue($sortByProductLastModTime);
-        }
-        // query params
-        if ($sortByProductName !== null) {
-            $queryParams['sort_by_product_name'] = ObjectSerializer::toQueryValue($sortByProductName);
-        }
-        // query params
-        if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
-        } else
-        if ($fields !== null) {
-            $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);
-        }
 
 
         // body params
         $_tempBody = null;
+        if (isset($data)) {
+            $_tempBody = $data;
+        }
 
-        if (in_array('multipart/form-data', ['text/plain'])) {
+        if (in_array('multipart/form-data', ['application/json', 'application/xml'])) {
             $multipart = true;
         }
         if ($multipart) {
@@ -369,7 +293,7 @@ class ProductItemsListApi
         } else {
             $headers = $this->headerSelector->selectHeaders(
                 ['application/json'],
-                ['text/plain']
+                ['application/json', 'application/xml']
             );
         }
 
@@ -438,7 +362,7 @@ class ProductItemsListApi
 
         $query = \GuzzleHttp\Psr7\build_query($queryParams);
         return new Request(
-            'GET',
+            'POST',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
             $headers,
             $httpBody

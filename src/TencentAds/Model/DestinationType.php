@@ -57,6 +57,8 @@ class DestinationType
     const ARTICAL_WECHAT = 'PAGE_TYPE_ARTICAL_WECHAT';
     const MOMENTS_SIMPLE_NATIVE_WECHAT = 'PAGE_TYPE_MOMENTS_SIMPLE_NATIVE_WECHAT';
     const FULL_SCREEN_WECHAT = 'PAGE_TYPE_FULL_SCREEN_WECHAT';
+    const YUEBAO_QUICKAPP = 'PAGE_TYPE_YUEBAO_QUICKAPP';
+    const YUEBAO_OFFICIAL_ACCOUNT_ARTICLE = 'PAGE_TYPE_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE';
     
     /**
      * Gets allowable values of the enum
@@ -78,6 +80,8 @@ class DestinationType
             self::ARTICAL_WECHAT,
             self::MOMENTS_SIMPLE_NATIVE_WECHAT,
             self::FULL_SCREEN_WECHAT,
+            self::YUEBAO_QUICKAPP,
+            self::YUEBAO_OFFICIAL_ACCOUNT_ARTICLE,
         ];
     }
 }

@@ -76,6 +76,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'isIncludeUnsupportedTargeting' => 'bool',
         'sceneSpec' => '\TencentAds\Model\SceneTargeting',
         'beginDate' => 'string',
+        'firstDayBeginTime' => 'string',
         'endDate' => 'string',
         'timeSeries' => 'string',
         'configuredStatus' => '\TencentAds\Model\AdStatus',
@@ -104,7 +105,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'systemStatus' => '\TencentAds\Model\AdgroupSysStatus',
         'bidMode' => '\TencentAds\Model\BidMode',
         'status' => '\TencentAds\Model\CalcStatus',
-        'bidAdjustment' => '\TencentAds\Model\BidAdjustment'
+        'bidAdjustment' => '\TencentAds\Model\BidAdjustment',
+        'autoAcquisitionEnabled' => 'bool',
+        'autoAcquisitionBudget' => 'int'
     ];
 
     /**
@@ -131,6 +134,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'isIncludeUnsupportedTargeting' => null,
         'sceneSpec' => null,
         'beginDate' => null,
+        'firstDayBeginTime' => null,
         'endDate' => null,
         'timeSeries' => null,
         'configuredStatus' => null,
@@ -159,7 +163,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'systemStatus' => null,
         'bidMode' => null,
         'status' => null,
-        'bidAdjustment' => null
+        'bidAdjustment' => null,
+        'autoAcquisitionEnabled' => null,
+        'autoAcquisitionBudget' => 'int64'
     ];
 
     /**
@@ -207,6 +213,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'isIncludeUnsupportedTargeting' => 'is_include_unsupported_targeting',
         'sceneSpec' => 'scene_spec',
         'beginDate' => 'begin_date',
+        'firstDayBeginTime' => 'first_day_begin_time',
         'endDate' => 'end_date',
         'timeSeries' => 'time_series',
         'configuredStatus' => 'configured_status',
@@ -235,7 +242,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'systemStatus' => 'system_status',
         'bidMode' => 'bid_mode',
         'status' => 'status',
-        'bidAdjustment' => 'bid_adjustment'
+        'bidAdjustment' => 'bid_adjustment',
+        'autoAcquisitionEnabled' => 'auto_acquisition_enabled',
+        'autoAcquisitionBudget' => 'auto_acquisition_budget'
     ];
 
     /**
@@ -262,6 +271,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'isIncludeUnsupportedTargeting' => 'setIsIncludeUnsupportedTargeting',
         'sceneSpec' => 'setSceneSpec',
         'beginDate' => 'setBeginDate',
+        'firstDayBeginTime' => 'setFirstDayBeginTime',
         'endDate' => 'setEndDate',
         'timeSeries' => 'setTimeSeries',
         'configuredStatus' => 'setConfiguredStatus',
@@ -290,7 +300,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'systemStatus' => 'setSystemStatus',
         'bidMode' => 'setBidMode',
         'status' => 'setStatus',
-        'bidAdjustment' => 'setBidAdjustment'
+        'bidAdjustment' => 'setBidAdjustment',
+        'autoAcquisitionEnabled' => 'setAutoAcquisitionEnabled',
+        'autoAcquisitionBudget' => 'setAutoAcquisitionBudget'
     ];
 
     /**
@@ -317,6 +329,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'isIncludeUnsupportedTargeting' => 'getIsIncludeUnsupportedTargeting',
         'sceneSpec' => 'getSceneSpec',
         'beginDate' => 'getBeginDate',
+        'firstDayBeginTime' => 'getFirstDayBeginTime',
         'endDate' => 'getEndDate',
         'timeSeries' => 'getTimeSeries',
         'configuredStatus' => 'getConfiguredStatus',
@@ -345,7 +358,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'systemStatus' => 'getSystemStatus',
         'bidMode' => 'getBidMode',
         'status' => 'getStatus',
-        'bidAdjustment' => 'getBidAdjustment'
+        'bidAdjustment' => 'getBidAdjustment',
+        'autoAcquisitionEnabled' => 'getAutoAcquisitionEnabled',
+        'autoAcquisitionBudget' => 'getAutoAcquisitionBudget'
     ];
 
     /**
@@ -426,6 +441,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['isIncludeUnsupportedTargeting'] = isset($data['isIncludeUnsupportedTargeting']) ? $data['isIncludeUnsupportedTargeting'] : null;
         $this->container['sceneSpec'] = isset($data['sceneSpec']) ? $data['sceneSpec'] : null;
         $this->container['beginDate'] = isset($data['beginDate']) ? $data['beginDate'] : null;
+        $this->container['firstDayBeginTime'] = isset($data['firstDayBeginTime']) ? $data['firstDayBeginTime'] : null;
         $this->container['endDate'] = isset($data['endDate']) ? $data['endDate'] : null;
         $this->container['timeSeries'] = isset($data['timeSeries']) ? $data['timeSeries'] : null;
         $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
@@ -455,6 +471,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['bidMode'] = isset($data['bidMode']) ? $data['bidMode'] : null;
         $this->container['status'] = isset($data['status']) ? $data['status'] : null;
         $this->container['bidAdjustment'] = isset($data['bidAdjustment']) ? $data['bidAdjustment'] : null;
+        $this->container['autoAcquisitionEnabled'] = isset($data['autoAcquisitionEnabled']) ? $data['autoAcquisitionEnabled'] : null;
+        $this->container['autoAcquisitionBudget'] = isset($data['autoAcquisitionBudget']) ? $data['autoAcquisitionBudget'] : null;
     }
 
     /**
@@ -909,6 +927,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setBeginDate($beginDate)
     {
         $this->container['beginDate'] = $beginDate;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstDayBeginTime
+     *
+     * @return string
+     */
+    public function getFirstDayBeginTime()
+    {
+        return $this->container['firstDayBeginTime'];
+    }
+
+    /**
+     * Sets firstDayBeginTime
+     *
+     * @param string $firstDayBeginTime firstDayBeginTime
+     *
+     * @return $this
+     */
+    public function setFirstDayBeginTime($firstDayBeginTime)
+    {
+        $this->container['firstDayBeginTime'] = $firstDayBeginTime;
 
         return $this;
     }
@@ -1605,6 +1647,54 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setBidAdjustment($bidAdjustment)
     {
         $this->container['bidAdjustment'] = $bidAdjustment;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoAcquisitionEnabled
+     *
+     * @return bool
+     */
+    public function getAutoAcquisitionEnabled()
+    {
+        return $this->container['autoAcquisitionEnabled'];
+    }
+
+    /**
+     * Sets autoAcquisitionEnabled
+     *
+     * @param bool $autoAcquisitionEnabled autoAcquisitionEnabled
+     *
+     * @return $this
+     */
+    public function setAutoAcquisitionEnabled($autoAcquisitionEnabled)
+    {
+        $this->container['autoAcquisitionEnabled'] = $autoAcquisitionEnabled;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoAcquisitionBudget
+     *
+     * @return int
+     */
+    public function getAutoAcquisitionBudget()
+    {
+        return $this->container['autoAcquisitionBudget'];
+    }
+
+    /**
+     * Sets autoAcquisitionBudget
+     *
+     * @param int $autoAcquisitionBudget autoAcquisitionBudget
+     *
+     * @return $this
+     */
+    public function setAutoAcquisitionBudget($autoAcquisitionBudget)
+    {
+        $this->container['autoAcquisitionBudget'] = $autoAcquisitionBudget;
 
         return $this;
     }

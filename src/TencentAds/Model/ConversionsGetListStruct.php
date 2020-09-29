@@ -68,6 +68,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepBehaviorOptimizationGoal' => '\TencentAds\Model\IntOptimizationGoal',
         'deepWorthOptimizationGoal' => '\TencentAds\Model\ConversionOptimizationGoal',
         'userActionSetId' => 'int',
+        'userActionSetKey' => 'string',
         'siteSetEnable' => 'bool',
         'isDeleted' => 'bool',
         'accessStatus' => '\TencentAds\Model\AccessStatus'
@@ -89,6 +90,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepBehaviorOptimizationGoal' => null,
         'deepWorthOptimizationGoal' => null,
         'userActionSetId' => 'int64',
+        'userActionSetKey' => null,
         'siteSetEnable' => null,
         'isDeleted' => null,
         'accessStatus' => null
@@ -131,6 +133,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepBehaviorOptimizationGoal' => 'deep_behavior_optimization_goal',
         'deepWorthOptimizationGoal' => 'deep_worth_optimization_goal',
         'userActionSetId' => 'user_action_set_id',
+        'userActionSetKey' => 'user_action_set_key',
         'siteSetEnable' => 'site_set_enable',
         'isDeleted' => 'is_deleted',
         'accessStatus' => 'access_status'
@@ -152,6 +155,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepBehaviorOptimizationGoal' => 'setDeepBehaviorOptimizationGoal',
         'deepWorthOptimizationGoal' => 'setDeepWorthOptimizationGoal',
         'userActionSetId' => 'setUserActionSetId',
+        'userActionSetKey' => 'setUserActionSetKey',
         'siteSetEnable' => 'setSiteSetEnable',
         'isDeleted' => 'setIsDeleted',
         'accessStatus' => 'setAccessStatus'
@@ -173,6 +177,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepBehaviorOptimizationGoal' => 'getDeepBehaviorOptimizationGoal',
         'deepWorthOptimizationGoal' => 'getDeepWorthOptimizationGoal',
         'userActionSetId' => 'getUserActionSetId',
+        'userActionSetKey' => 'getUserActionSetKey',
         'siteSetEnable' => 'getSiteSetEnable',
         'isDeleted' => 'getIsDeleted',
         'accessStatus' => 'getAccessStatus'
@@ -248,6 +253,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['deepBehaviorOptimizationGoal'] = isset($data['deepBehaviorOptimizationGoal']) ? $data['deepBehaviorOptimizationGoal'] : null;
         $this->container['deepWorthOptimizationGoal'] = isset($data['deepWorthOptimizationGoal']) ? $data['deepWorthOptimizationGoal'] : null;
         $this->container['userActionSetId'] = isset($data['userActionSetId']) ? $data['userActionSetId'] : null;
+        $this->container['userActionSetKey'] = isset($data['userActionSetKey']) ? $data['userActionSetKey'] : null;
         $this->container['siteSetEnable'] = isset($data['siteSetEnable']) ? $data['siteSetEnable'] : null;
         $this->container['isDeleted'] = isset($data['isDeleted']) ? $data['isDeleted'] : null;
         $this->container['accessStatus'] = isset($data['accessStatus']) ? $data['accessStatus'] : null;
@@ -513,6 +519,30 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     public function setUserActionSetId($userActionSetId)
     {
         $this->container['userActionSetId'] = $userActionSetId;
+
+        return $this;
+    }
+
+    /**
+     * Gets userActionSetKey
+     *
+     * @return string
+     */
+    public function getUserActionSetKey()
+    {
+        return $this->container['userActionSetKey'];
+    }
+
+    /**
+     * Sets userActionSetKey
+     *
+     * @param string $userActionSetKey userActionSetKey
+     *
+     * @return $this
+     */
+    public function setUserActionSetKey($userActionSetKey)
+    {
+        $this->container['userActionSetKey'] = $userActionSetKey;
 
         return $this;
     }

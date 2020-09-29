@@ -60,7 +60,8 @@ class PromotedObjectSpec implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'jdItem' => '\TencentAds\Model\EcInfo',
         'jdShop' => '\TencentAds\Model\EcInfo',
-        'dianpingShop' => '\TencentAds\Model\ProductTypeDianpingShop'
+        'dianpingShop' => '\TencentAds\Model\ProductTypeDianpingShop',
+        'productTypeLinkJd' => '\TencentAds\Model\LinkJdInfo'
     ];
 
     /**
@@ -71,7 +72,8 @@ class PromotedObjectSpec implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'jdItem' => null,
         'jdShop' => null,
-        'dianpingShop' => null
+        'dianpingShop' => null,
+        'productTypeLinkJd' => null
     ];
 
     /**
@@ -103,7 +105,8 @@ class PromotedObjectSpec implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'jdItem' => 'jd_item',
         'jdShop' => 'jd_shop',
-        'dianpingShop' => 'dianping_shop'
+        'dianpingShop' => 'dianping_shop',
+        'productTypeLinkJd' => 'product_type_link_jd'
     ];
 
     /**
@@ -114,7 +117,8 @@ class PromotedObjectSpec implements ModelInterface, ArrayAccess
     protected static $setters = [
         'jdItem' => 'setJdItem',
         'jdShop' => 'setJdShop',
-        'dianpingShop' => 'setDianpingShop'
+        'dianpingShop' => 'setDianpingShop',
+        'productTypeLinkJd' => 'setProductTypeLinkJd'
     ];
 
     /**
@@ -125,7 +129,8 @@ class PromotedObjectSpec implements ModelInterface, ArrayAccess
     protected static $getters = [
         'jdItem' => 'getJdItem',
         'jdShop' => 'getJdShop',
-        'dianpingShop' => 'getDianpingShop'
+        'dianpingShop' => 'getDianpingShop',
+        'productTypeLinkJd' => 'getProductTypeLinkJd'
     ];
 
     /**
@@ -191,6 +196,7 @@ class PromotedObjectSpec implements ModelInterface, ArrayAccess
         $this->container['jdItem'] = isset($data['jdItem']) ? $data['jdItem'] : null;
         $this->container['jdShop'] = isset($data['jdShop']) ? $data['jdShop'] : null;
         $this->container['dianpingShop'] = isset($data['dianpingShop']) ? $data['dianpingShop'] : null;
+        $this->container['productTypeLinkJd'] = isset($data['productTypeLinkJd']) ? $data['productTypeLinkJd'] : null;
     }
 
     /**
@@ -285,6 +291,30 @@ class PromotedObjectSpec implements ModelInterface, ArrayAccess
     public function setDianpingShop($dianpingShop)
     {
         $this->container['dianpingShop'] = $dianpingShop;
+
+        return $this;
+    }
+
+    /**
+     * Gets productTypeLinkJd
+     *
+     * @return \TencentAds\Model\LinkJdInfo
+     */
+    public function getProductTypeLinkJd()
+    {
+        return $this->container['productTypeLinkJd'];
+    }
+
+    /**
+     * Sets productTypeLinkJd
+     *
+     * @param \TencentAds\Model\LinkJdInfo $productTypeLinkJd productTypeLinkJd
+     *
+     * @return $this
+     */
+    public function setProductTypeLinkJd($productTypeLinkJd)
+    {
+        $this->container['productTypeLinkJd'] = $productTypeLinkJd;
 
         return $this;
     }

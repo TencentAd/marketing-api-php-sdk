@@ -59,8 +59,8 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'amount' => 'int',
         'externalBillNo' => 'string',
-        'transTime' => 'int',
         'fundType' => '\TencentAds\Model\AccountTypeMap',
+        'time' => 'int',
         'isRepeated' => 'bool'
     ];
 
@@ -72,8 +72,8 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'amount' => 'int64',
         'externalBillNo' => null,
-        'transTime' => 'int64',
         'fundType' => null,
+        'time' => 'int64',
         'isRepeated' => null
     ];
 
@@ -106,8 +106,8 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'amount' => 'amount',
         'externalBillNo' => 'external_bill_no',
-        'transTime' => 'trans_time',
         'fundType' => 'fund_type',
+        'time' => 'time',
         'isRepeated' => 'is_repeated'
     ];
 
@@ -119,8 +119,8 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     protected static $setters = [
         'amount' => 'setAmount',
         'externalBillNo' => 'setExternalBillNo',
-        'transTime' => 'setTransTime',
         'fundType' => 'setFundType',
+        'time' => 'setTime',
         'isRepeated' => 'setIsRepeated'
     ];
 
@@ -132,8 +132,8 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     protected static $getters = [
         'amount' => 'getAmount',
         'externalBillNo' => 'getExternalBillNo',
-        'transTime' => 'getTransTime',
         'fundType' => 'getFundType',
+        'time' => 'getTime',
         'isRepeated' => 'getIsRepeated'
     ];
 
@@ -199,8 +199,8 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     {
         $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
         $this->container['externalBillNo'] = isset($data['externalBillNo']) ? $data['externalBillNo'] : null;
-        $this->container['transTime'] = isset($data['transTime']) ? $data['transTime'] : null;
         $this->container['fundType'] = isset($data['fundType']) ? $data['fundType'] : null;
+        $this->container['time'] = isset($data['time']) ? $data['time'] : null;
         $this->container['isRepeated'] = isset($data['isRepeated']) ? $data['isRepeated'] : null;
     }
 
@@ -277,30 +277,6 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets transTime
-     *
-     * @return int
-     */
-    public function getTransTime()
-    {
-        return $this->container['transTime'];
-    }
-
-    /**
-     * Sets transTime
-     *
-     * @param int $transTime transTime
-     *
-     * @return $this
-     */
-    public function setTransTime($transTime)
-    {
-        $this->container['transTime'] = $transTime;
-
-        return $this;
-    }
-
-    /**
      * Gets fundType
      *
      * @return \TencentAds\Model\AccountTypeMap
@@ -320,6 +296,30 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     public function setFundType($fundType)
     {
         $this->container['fundType'] = $fundType;
+
+        return $this;
+    }
+
+    /**
+     * Gets time
+     *
+     * @return int
+     */
+    public function getTime()
+    {
+        return $this->container['time'];
+    }
+
+    /**
+     * Sets time
+     *
+     * @param int $time time
+     *
+     * @return $this
+     */
+    public function setTime($time)
+    {
+        $this->container['time'] = $time;
 
         return $this;
     }

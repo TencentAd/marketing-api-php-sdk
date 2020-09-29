@@ -5,14 +5,14 @@ use TencentAds\Exception\TencentAdsResponseException;
 use TencentAds\Exception\TencentAdsSDKException;
 
 /*****
- * 本文件提供了一个获取商品(Product item)列表的简单示例
+ * 本文件提供了一个获取表单组件(Leads form)的简单示例
  */
-class GetProductItemList
+class GetLeadsFormList
 {
     public static $tads;
-    public static $ACCESS_TOKEN       = 'YOUR ACCESS TOKEN';
-    public static $ACCOUNT_ID         = 'YOUR ACCOUNT ID';
-    public static $PRODUCT_CATALOG_ID = 'YOUR PRODUCT CATALOG ID'; // 商品库ID
+    public static $ACCESS_TOKEN = 'YOUR ACCESS TOKEN';
+    public static $ACCOUNT_ID   = 'YOUR ACCOUNT ID';
+    public static $COMPONENT_ID = 'YOUR COMPONENT ID';
 
     public function init()
     {
@@ -32,22 +32,14 @@ class GetProductItemList
             /* @var TencentAds $tads */
             $tads = static::$tads;
 
-            $fields = [
-                'product_outer_id', 'product_name', 'image_url',
-            ]; // 需要返回的字段
-
-            $response = $tads->productItemsList()
+            $response = $tads->leadsFormList()
                              ->get([
-                                 'account_id'         => static::$ACCOUNT_ID,
-                                 'product_catalog_id' => static::$PRODUCT_CATALOG_ID,
-                                 'fields'             => $fields,
-                                 'page_size'          => 10,
-                                 'page'               => 1,
+                                 'account_id' => static::$ACCOUNT_ID,
+                                 'fields'     => ['component_name', 'component_id', 'created_time'],
                              ]);
-
-            // 从返回里获得Product信息
-            foreach ($response->getList() as $productItem) {
-                // echo $productItem . PHP_EOL;
+            // 从返回里获得Components信息
+            foreach ($response->getList() as $componentInfo) {
+                // echo $componentInfo . PHP_EOL;
             }
 
             return $response;
@@ -68,7 +60,7 @@ class GetProductItemList
 
 if (basename($_SERVER['PHP_SELF']) == basename(__FILE__)) {
     try {
-        $example = new GetProductItemList();
+        $example = new GetLeadsFormList();
         $example->init();
         $example->main();
     } catch (\Exception $e) {

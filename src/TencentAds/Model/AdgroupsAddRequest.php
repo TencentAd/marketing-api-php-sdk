@@ -61,6 +61,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'adgroupName' => 'string',
         'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
         'beginDate' => 'string',
+        'firstDayBeginTime' => 'string',
         'endDate' => 'string',
         'billingEvent' => '\TencentAds\Model\BillingEvent',
         'bidAmount' => 'int',
@@ -93,6 +94,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'deepConversionWorthRate' => 'double',
         'bidMode' => '\TencentAds\Model\BidMode',
         'bidAdjustment' => '\TencentAds\Model\BidAdjustment',
+        'autoAcquisitionEnabled' => 'bool',
+        'autoAcquisitionBudget' => 'int',
         'accountId' => 'int'
     ];
 
@@ -106,6 +109,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'adgroupName' => null,
         'promotedObjectType' => null,
         'beginDate' => null,
+        'firstDayBeginTime' => null,
         'endDate' => null,
         'billingEvent' => null,
         'bidAmount' => 'int64',
@@ -138,6 +142,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'deepConversionWorthRate' => 'double',
         'bidMode' => null,
         'bidAdjustment' => null,
+        'autoAcquisitionEnabled' => null,
+        'autoAcquisitionBudget' => 'int64',
         'accountId' => 'int64'
     ];
 
@@ -172,6 +178,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'adgroupName' => 'adgroup_name',
         'promotedObjectType' => 'promoted_object_type',
         'beginDate' => 'begin_date',
+        'firstDayBeginTime' => 'first_day_begin_time',
         'endDate' => 'end_date',
         'billingEvent' => 'billing_event',
         'bidAmount' => 'bid_amount',
@@ -204,6 +211,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'deepConversionWorthRate' => 'deep_conversion_worth_rate',
         'bidMode' => 'bid_mode',
         'bidAdjustment' => 'bid_adjustment',
+        'autoAcquisitionEnabled' => 'auto_acquisition_enabled',
+        'autoAcquisitionBudget' => 'auto_acquisition_budget',
         'accountId' => 'account_id'
     ];
 
@@ -217,6 +226,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'adgroupName' => 'setAdgroupName',
         'promotedObjectType' => 'setPromotedObjectType',
         'beginDate' => 'setBeginDate',
+        'firstDayBeginTime' => 'setFirstDayBeginTime',
         'endDate' => 'setEndDate',
         'billingEvent' => 'setBillingEvent',
         'bidAmount' => 'setBidAmount',
@@ -249,6 +259,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'deepConversionWorthRate' => 'setDeepConversionWorthRate',
         'bidMode' => 'setBidMode',
         'bidAdjustment' => 'setBidAdjustment',
+        'autoAcquisitionEnabled' => 'setAutoAcquisitionEnabled',
+        'autoAcquisitionBudget' => 'setAutoAcquisitionBudget',
         'accountId' => 'setAccountId'
     ];
 
@@ -262,6 +274,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'adgroupName' => 'getAdgroupName',
         'promotedObjectType' => 'getPromotedObjectType',
         'beginDate' => 'getBeginDate',
+        'firstDayBeginTime' => 'getFirstDayBeginTime',
         'endDate' => 'getEndDate',
         'billingEvent' => 'getBillingEvent',
         'bidAmount' => 'getBidAmount',
@@ -294,6 +307,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'deepConversionWorthRate' => 'getDeepConversionWorthRate',
         'bidMode' => 'getBidMode',
         'bidAdjustment' => 'getBidAdjustment',
+        'autoAcquisitionEnabled' => 'getAutoAcquisitionEnabled',
+        'autoAcquisitionBudget' => 'getAutoAcquisitionBudget',
         'accountId' => 'getAccountId'
     ];
 
@@ -361,6 +376,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
         $this->container['beginDate'] = isset($data['beginDate']) ? $data['beginDate'] : null;
+        $this->container['firstDayBeginTime'] = isset($data['firstDayBeginTime']) ? $data['firstDayBeginTime'] : null;
         $this->container['endDate'] = isset($data['endDate']) ? $data['endDate'] : null;
         $this->container['billingEvent'] = isset($data['billingEvent']) ? $data['billingEvent'] : null;
         $this->container['bidAmount'] = isset($data['bidAmount']) ? $data['bidAmount'] : null;
@@ -393,6 +409,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['deepConversionWorthRate'] = isset($data['deepConversionWorthRate']) ? $data['deepConversionWorthRate'] : null;
         $this->container['bidMode'] = isset($data['bidMode']) ? $data['bidMode'] : null;
         $this->container['bidAdjustment'] = isset($data['bidAdjustment']) ? $data['bidAdjustment'] : null;
+        $this->container['autoAcquisitionEnabled'] = isset($data['autoAcquisitionEnabled']) ? $data['autoAcquisitionEnabled'] : null;
+        $this->container['autoAcquisitionBudget'] = isset($data['autoAcquisitionBudget']) ? $data['autoAcquisitionBudget'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -512,6 +530,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setBeginDate($beginDate)
     {
         $this->container['beginDate'] = $beginDate;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstDayBeginTime
+     *
+     * @return string
+     */
+    public function getFirstDayBeginTime()
+    {
+        return $this->container['firstDayBeginTime'];
+    }
+
+    /**
+     * Sets firstDayBeginTime
+     *
+     * @param string $firstDayBeginTime firstDayBeginTime
+     *
+     * @return $this
+     */
+    public function setFirstDayBeginTime($firstDayBeginTime)
+    {
+        $this->container['firstDayBeginTime'] = $firstDayBeginTime;
 
         return $this;
     }
@@ -1280,6 +1322,54 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setBidAdjustment($bidAdjustment)
     {
         $this->container['bidAdjustment'] = $bidAdjustment;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoAcquisitionEnabled
+     *
+     * @return bool
+     */
+    public function getAutoAcquisitionEnabled()
+    {
+        return $this->container['autoAcquisitionEnabled'];
+    }
+
+    /**
+     * Sets autoAcquisitionEnabled
+     *
+     * @param bool $autoAcquisitionEnabled autoAcquisitionEnabled
+     *
+     * @return $this
+     */
+    public function setAutoAcquisitionEnabled($autoAcquisitionEnabled)
+    {
+        $this->container['autoAcquisitionEnabled'] = $autoAcquisitionEnabled;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoAcquisitionBudget
+     *
+     * @return int
+     */
+    public function getAutoAcquisitionBudget()
+    {
+        return $this->container['autoAcquisitionBudget'];
+    }
+
+    /**
+     * Sets autoAcquisitionBudget
+     *
+     * @param int $autoAcquisitionBudget autoAcquisitionBudget
+     *
+     * @return $this
+     */
+    public function setAutoAcquisitionBudget($autoAcquisitionBudget)
+    {
+        $this->container['autoAcquisitionBudget'] = $autoAcquisitionBudget;
 
         return $this;
     }

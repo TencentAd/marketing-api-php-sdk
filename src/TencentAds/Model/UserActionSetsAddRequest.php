@@ -60,8 +60,10 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'int',
         'type' => '\TencentAds\Model\AmUserActionSetType',
         'mobileAppId' => 'int',
+        'wechatAppId' => 'string',
         'name' => 'string',
-        'description' => 'string'
+        'description' => 'string',
+        'usages' => 'string[]'
     ];
 
     /**
@@ -73,8 +75,10 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'int64',
         'type' => null,
         'mobileAppId' => 'int64',
+        'wechatAppId' => null,
         'name' => null,
-        'description' => null
+        'description' => null,
+        'usages' => null
     ];
 
     /**
@@ -107,8 +111,10 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'account_id',
         'type' => 'type',
         'mobileAppId' => 'mobile_app_id',
+        'wechatAppId' => 'wechat_app_id',
         'name' => 'name',
-        'description' => 'description'
+        'description' => 'description',
+        'usages' => 'usages'
     ];
 
     /**
@@ -120,8 +126,10 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'setAccountId',
         'type' => 'setType',
         'mobileAppId' => 'setMobileAppId',
+        'wechatAppId' => 'setWechatAppId',
         'name' => 'setName',
-        'description' => 'setDescription'
+        'description' => 'setDescription',
+        'usages' => 'setUsages'
     ];
 
     /**
@@ -133,8 +141,10 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'getAccountId',
         'type' => 'getType',
         'mobileAppId' => 'getMobileAppId',
+        'wechatAppId' => 'getWechatAppId',
         'name' => 'getName',
-        'description' => 'getDescription'
+        'description' => 'getDescription',
+        'usages' => 'getUsages'
     ];
 
     /**
@@ -200,8 +210,10 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['type'] = isset($data['type']) ? $data['type'] : null;
         $this->container['mobileAppId'] = isset($data['mobileAppId']) ? $data['mobileAppId'] : null;
+        $this->container['wechatAppId'] = isset($data['wechatAppId']) ? $data['wechatAppId'] : null;
         $this->container['name'] = isset($data['name']) ? $data['name'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
+        $this->container['usages'] = isset($data['usages']) ? $data['usages'] : null;
     }
 
     /**
@@ -301,6 +313,30 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets wechatAppId
+     *
+     * @return string
+     */
+    public function getWechatAppId()
+    {
+        return $this->container['wechatAppId'];
+    }
+
+    /**
+     * Sets wechatAppId
+     *
+     * @param string $wechatAppId wechatAppId
+     *
+     * @return $this
+     */
+    public function setWechatAppId($wechatAppId)
+    {
+        $this->container['wechatAppId'] = $wechatAppId;
+
+        return $this;
+    }
+
+    /**
      * Gets name
      *
      * @return string
@@ -344,6 +380,30 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
     public function setDescription($description)
     {
         $this->container['description'] = $description;
+
+        return $this;
+    }
+
+    /**
+     * Gets usages
+     *
+     * @return string[]
+     */
+    public function getUsages()
+    {
+        return $this->container['usages'];
+    }
+
+    /**
+     * Sets usages
+     *
+     * @param string[] $usages usages
+     *
+     * @return $this
+     */
+    public function setUsages($usages)
+    {
+        $this->container['usages'] = $usages;
 
         return $this;
     }

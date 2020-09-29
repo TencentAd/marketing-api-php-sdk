@@ -137,4 +137,14 @@ return [
             'skip_middleware' => [\TencentAds\Middleware\EncodeArrayMiddleware::class],
         ],
     ],
+    'TencentAds\Api\LeadsFormApi'                       => [
+        'add' => [
+            'skip_middleware' => [\TencentAds\Middleware\EncodeArrayMiddleware::class],
+        ],
+    ],
+    'TencentAds\Api\BidSimulationApi'                   => [
+        'get' => [
+            'skip_middleware' => [\TencentAds\Middleware\EncodeArrayMiddleware::class],
+        ],
+    ],
 ];

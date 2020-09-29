@@ -5,7 +5,7 @@ use TencentAds\Exception\TencentAdsResponseException;
 use TencentAds\Exception\TencentAdsSDKException;
 
 /*****
- * 本文件提供了一个创建一个微信推广小游戏的小程序Banner广告的示例
+ * 本文件提供了一个微信公众账号创建一个微信推广小游戏的小程序Banner广告的示例
  */
 class AddMiniProgramBannerAds
 {

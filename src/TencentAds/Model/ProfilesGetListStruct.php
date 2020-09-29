@@ -63,6 +63,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
         'promotedObjectId' => 'string',
         'headImageId' => 'string',
+        'headImageUrl' => 'string',
         'profileName' => 'string',
         'description' => 'string',
         'createdTime' => 'int',
@@ -82,6 +83,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectType' => null,
         'promotedObjectId' => null,
         'headImageId' => null,
+        'headImageUrl' => null,
         'profileName' => null,
         'description' => null,
         'createdTime' => 'int64',
@@ -122,6 +124,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectType' => 'promoted_object_type',
         'promotedObjectId' => 'promoted_object_id',
         'headImageId' => 'head_image_id',
+        'headImageUrl' => 'head_image_url',
         'profileName' => 'profile_name',
         'description' => 'description',
         'createdTime' => 'created_time',
@@ -141,6 +144,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectType' => 'setPromotedObjectType',
         'promotedObjectId' => 'setPromotedObjectId',
         'headImageId' => 'setHeadImageId',
+        'headImageUrl' => 'setHeadImageUrl',
         'profileName' => 'setProfileName',
         'description' => 'setDescription',
         'createdTime' => 'setCreatedTime',
@@ -160,6 +164,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectType' => 'getPromotedObjectType',
         'promotedObjectId' => 'getPromotedObjectId',
         'headImageId' => 'getHeadImageId',
+        'headImageUrl' => 'getHeadImageUrl',
         'profileName' => 'getProfileName',
         'description' => 'getDescription',
         'createdTime' => 'getCreatedTime',
@@ -233,6 +238,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
         $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
         $this->container['headImageId'] = isset($data['headImageId']) ? $data['headImageId'] : null;
+        $this->container['headImageUrl'] = isset($data['headImageUrl']) ? $data['headImageUrl'] : null;
         $this->container['profileName'] = isset($data['profileName']) ? $data['profileName'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
@@ -381,6 +387,30 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     public function setHeadImageId($headImageId)
     {
         $this->container['headImageId'] = $headImageId;
+
+        return $this;
+    }
+
+    /**
+     * Gets headImageUrl
+     *
+     * @return string
+     */
+    public function getHeadImageUrl()
+    {
+        return $this->container['headImageUrl'];
+    }
+
+    /**
+     * Sets headImageUrl
+     *
+     * @param string $headImageUrl headImageUrl
+     *
+     * @return $this
+     */
+    public function setHeadImageUrl($headImageUrl)
+    {
+        $this->container['headImageUrl'] = $headImageUrl;
 
         return $this;
     }

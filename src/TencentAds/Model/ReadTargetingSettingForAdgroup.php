@@ -79,7 +79,6 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'airQualityIndex' => 'string[]',
         'appInstallStatus' => 'string[]',
         'consumptionStatus' => 'string[]',
-        'gamerConsumptionAbility' => '\TencentAds\Model\PlayerConsuptStruct[]',
         'gameConsumptionLevel' => 'string[]',
         'residentialCommunityPrice' => '\TencentAds\Model\ResidentialCommunityPriceStruct[]',
         'financialSituation' => 'string[]',
@@ -98,7 +97,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'deprecatedExcludedCustomAudience' => 'int[]',
         'deprecatedRegion' => 'int[]',
         'miniGameQqStatus' => 'string[]',
-        'excludedConvertedAudience' => '\TencentAds\Model\ExcludedConvertedAudience'
+        'excludedConvertedAudience' => '\TencentAds\Model\ExcludedConvertedAudienceStruct'
     ];
 
     /**
@@ -128,7 +127,6 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'airQualityIndex' => null,
         'appInstallStatus' => null,
         'consumptionStatus' => null,
-        'gamerConsumptionAbility' => null,
         'gameConsumptionLevel' => null,
         'residentialCommunityPrice' => null,
         'financialSituation' => null,
@@ -198,7 +196,6 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'airQualityIndex' => 'air_quality_index',
         'appInstallStatus' => 'app_install_status',
         'consumptionStatus' => 'consumption_status',
-        'gamerConsumptionAbility' => 'gamer_consumption_ability',
         'gameConsumptionLevel' => 'game_consumption_level',
         'residentialCommunityPrice' => 'residential_community_price',
         'financialSituation' => 'financial_situation',
@@ -247,7 +244,6 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'airQualityIndex' => 'setAirQualityIndex',
         'appInstallStatus' => 'setAppInstallStatus',
         'consumptionStatus' => 'setConsumptionStatus',
-        'gamerConsumptionAbility' => 'setGamerConsumptionAbility',
         'gameConsumptionLevel' => 'setGameConsumptionLevel',
         'residentialCommunityPrice' => 'setResidentialCommunityPrice',
         'financialSituation' => 'setFinancialSituation',
@@ -296,7 +292,6 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'airQualityIndex' => 'getAirQualityIndex',
         'appInstallStatus' => 'getAppInstallStatus',
         'consumptionStatus' => 'getConsumptionStatus',
-        'gamerConsumptionAbility' => 'getGamerConsumptionAbility',
         'gameConsumptionLevel' => 'getGameConsumptionLevel',
         'residentialCommunityPrice' => 'getResidentialCommunityPrice',
         'financialSituation' => 'getFinancialSituation',
@@ -399,7 +394,6 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         $this->container['airQualityIndex'] = isset($data['airQualityIndex']) ? $data['airQualityIndex'] : null;
         $this->container['appInstallStatus'] = isset($data['appInstallStatus']) ? $data['appInstallStatus'] : null;
         $this->container['consumptionStatus'] = isset($data['consumptionStatus']) ? $data['consumptionStatus'] : null;
-        $this->container['gamerConsumptionAbility'] = isset($data['gamerConsumptionAbility']) ? $data['gamerConsumptionAbility'] : null;
         $this->container['gameConsumptionLevel'] = isset($data['gameConsumptionLevel']) ? $data['gameConsumptionLevel'] : null;
         $this->container['residentialCommunityPrice'] = isset($data['residentialCommunityPrice']) ? $data['residentialCommunityPrice'] : null;
         $this->container['financialSituation'] = isset($data['financialSituation']) ? $data['financialSituation'] : null;
@@ -950,30 +944,6 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets gamerConsumptionAbility
-     *
-     * @return \TencentAds\Model\PlayerConsuptStruct[]
-     */
-    public function getGamerConsumptionAbility()
-    {
-        return $this->container['gamerConsumptionAbility'];
-    }
-
-    /**
-     * Sets gamerConsumptionAbility
-     *
-     * @param \TencentAds\Model\PlayerConsuptStruct[] $gamerConsumptionAbility gamerConsumptionAbility
-     *
-     * @return $this
-     */
-    public function setGamerConsumptionAbility($gamerConsumptionAbility)
-    {
-        $this->container['gamerConsumptionAbility'] = $gamerConsumptionAbility;
-
-        return $this;
-    }
-
-    /**
      * Gets gameConsumptionLevel
      *
      * @return string[]
@@ -1408,7 +1378,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets excludedConvertedAudience
      *
-     * @return \TencentAds\Model\ExcludedConvertedAudience
+     * @return \TencentAds\Model\ExcludedConvertedAudienceStruct
      */
     public function getExcludedConvertedAudience()
     {
@@ -1418,7 +1388,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Sets excludedConvertedAudience
      *
-     * @param \TencentAds\Model\ExcludedConvertedAudience $excludedConvertedAudience excludedConvertedAudience
+     * @param \TencentAds\Model\ExcludedConvertedAudienceStruct $excludedConvertedAudience excludedConvertedAudience
      *
      * @return $this
      */

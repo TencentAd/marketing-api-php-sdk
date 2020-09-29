@@ -376,17 +376,17 @@ class AdvertiserApi
      *
      * @param  int $accountId accountId (optional)
      * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
+     * @param  string[] $fields fields (optional)
      * @param  int $page page (optional)
      * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\AdvertiserGetResponse
      */
-    public function advertiserGet($accountId = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function advertiserGet($accountId = null, $filtering = null, $fields = null, $page = null, $pageSize = null)
     {
-        list($response) = $this->advertiserGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $fields);
+        list($response) = $this->advertiserGetWithHttpInfo($accountId, $filtering, $fields, $page, $pageSize);
         return $response;
     }
 
@@ -397,18 +397,18 @@ class AdvertiserApi
      *
      * @param  int $accountId (optional)
      * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
+     * @param  string[] $fields (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\AdvertiserGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function advertiserGetWithHttpInfo($accountId = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function advertiserGetWithHttpInfo($accountId = null, $filtering = null, $fields = null, $page = null, $pageSize = null)
     {
         $returnType = '\TencentAds\Model\AdvertiserGetResponse';
-        $request = $this->advertiserGetRequest($accountId, $filtering, $page, $pageSize, $fields);
+        $request = $this->advertiserGetRequest($accountId, $filtering, $fields, $page, $pageSize);
 
         try {
             $options = $this->createHttpClientOption();
@@ -476,16 +476,16 @@ class AdvertiserApi
      *
      * @param  int $accountId (optional)
      * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
+     * @param  string[] $fields (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function advertiserGetAsync($accountId = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function advertiserGetAsync($accountId = null, $filtering = null, $fields = null, $page = null, $pageSize = null)
     {
-        return $this->advertiserGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $fields)
+        return $this->advertiserGetAsyncWithHttpInfo($accountId, $filtering, $fields, $page, $pageSize)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -500,17 +500,17 @@ class AdvertiserApi
      *
      * @param  int $accountId (optional)
      * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
+     * @param  string[] $fields (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function advertiserGetAsyncWithHttpInfo($accountId = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function advertiserGetAsyncWithHttpInfo($accountId = null, $filtering = null, $fields = null, $page = null, $pageSize = null)
     {
         $returnType = '\TencentAds\Model\AdvertiserGetResponse';
-        $request = $this->advertiserGetRequest($accountId, $filtering, $page, $pageSize, $fields);
+        $request = $this->advertiserGetRequest($accountId, $filtering, $fields, $page, $pageSize);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -554,14 +554,14 @@ class AdvertiserApi
      *
      * @param  int $accountId (optional)
      * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
+     * @param  string[] $fields (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function advertiserGetRequest($accountId = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    protected function advertiserGetRequest($accountId = null, $filtering = null, $fields = null, $page = null, $pageSize = null)
     {
 
         $resourcePath = '/advertiser/get';
@@ -583,19 +583,19 @@ class AdvertiserApi
             $queryParams['filtering'] = ObjectSerializer::toQueryValue($filtering);
         }
         // query params
+        if (is_array($fields)) {
+            $queryParams['fields'] = $fields;
+        } else
+        if ($fields !== null) {
+            $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);
+        }
+        // query params
         if ($page !== null) {
             $queryParams['page'] = ObjectSerializer::toQueryValue($page);
         }
         // query params
         if ($pageSize !== null) {
             $queryParams['page_size'] = ObjectSerializer::toQueryValue($pageSize);
-        }
-        // query params
-        if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
-        } else
-        if ($fields !== null) {
-            $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);
         }
 
 

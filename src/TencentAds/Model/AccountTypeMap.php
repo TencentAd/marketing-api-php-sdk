@@ -60,6 +60,8 @@ class AccountTypeMap
     const INTERNAL_QUOTA = 'FUND_TYPE_INTERNAL_QUOTA';
     const TEST_VIRTUAL = 'FUND_TYPE_TEST_VIRTUAL';
     const UNSUPPORTED = 'FUND_TYPE_UNSUPPORTED';
+    const JD_PRIVILEGE = 'FUND_TYPE_JD_PRIVILEGE';
+    const JD_WIRELESS_CASH = 'FUND_TYPE_JD_WIRELESS_CASH';
     
     /**
      * Gets allowable values of the enum
@@ -84,6 +86,8 @@ class AccountTypeMap
             self::INTERNAL_QUOTA,
             self::TEST_VIRTUAL,
             self::UNSUPPORTED,
+            self::JD_PRIVILEGE,
+            self::JD_WIRELESS_CASH,
         ];
     }
 }

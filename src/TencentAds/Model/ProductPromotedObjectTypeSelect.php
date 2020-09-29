@@ -54,6 +54,7 @@ class ProductPromotedObjectTypeSelect
     const DIANPING_SHOP = 'PROMOTED_OBJECT_TYPE_DIANPING_SHOP';
     const UNSUPPORTED = 'PROMOTED_OBJECT_TYPE_UNSUPPORTED';
     const MINI_GAME_QQ = 'PROMOTED_OBJECT_TYPE_MINI_GAME_QQ';
+    const JD = 'PROMOTED_OBJECT_TYPE_JD';
     
     /**
      * Gets allowable values of the enum
@@ -72,6 +73,7 @@ class ProductPromotedObjectTypeSelect
             self::DIANPING_SHOP,
             self::UNSUPPORTED,
             self::MINI_GAME_QQ,
+            self::JD,
         ];
     }
 }

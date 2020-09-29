@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * WechatMpOpenFundType Class Doc Comment
  *
  * @category Class
- * @description 资金账户类型，当trade_type为AGENCY_CREDIT_REPAY时，此字段不返回
+ * @description 资金账户类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -45,15 +45,20 @@ class WechatMpOpenFundType
      * Possible values of this enum
      */
     const UNSUPPORTED = 'FUND_TYPE_UNSUPPORTED';
+    const UNKNOWN = 'FUND_TYPE_UNKNOWN';
     const CASH = 'FUND_TYPE_CASH';
     const GIFT = 'FUND_TYPE_GIFT';
+    const INNER = 'FUND_TYPE_INNER';
     const CREDIT = 'FUND_TYPE_CREDIT';
-    const SPECIAL_PROMOTION = 'FUND_TYPE_SPECIAL_PROMOTION';
-    const PAYMENT_DUE = 'FUND_TYPE_PAYMENT_DUE';
+    const DEBT_TEMP = 'FUND_TYPE_DEBT_TEMP';
+    const DEBT_FIXED = 'FUND_TYPE_DEBT_FIXED';
+    const TCC_GIFT = 'FUND_TYPE_TCC_GIFT';
     const UNSUPPPORTED = 'FUND_TYPE_UNSUPPPORTED';
     const CREDIT_ROLL = 'FUND_TYPE_CREDIT_ROLL';
     const CREDIT_TEMPORARY = 'FUND_TYPE_CREDIT_TEMPORARY';
+    const SPECIAL_PROMOTION = 'FUND_TYPE_SPECIAL_PROMOTION';
     const MINIPROGRAM = 'FUND_TYPE_MINIPROGRAM';
+    const PAYMENT_DUE = 'FUND_TYPE_PAYMENT_DUE';
     
     /**
      * Gets allowable values of the enum
@@ -63,15 +68,20 @@ class WechatMpOpenFundType
     {
         return [
             self::UNSUPPORTED,
+            self::UNKNOWN,
             self::CASH,
             self::GIFT,
+            self::INNER,
             self::CREDIT,
-            self::SPECIAL_PROMOTION,
-            self::PAYMENT_DUE,
+            self::DEBT_TEMP,
+            self::DEBT_FIXED,
+            self::TCC_GIFT,
             self::UNSUPPPORTED,
             self::CREDIT_ROLL,
             self::CREDIT_TEMPORARY,
+            self::SPECIAL_PROMOTION,
             self::MINIPROGRAM,
+            self::PAYMENT_DUE,
         ];
     }
 }

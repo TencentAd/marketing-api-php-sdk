@@ -80,7 +80,6 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
         'appInstallStatus' => 'string[]',
         'miniGameQqStatus' => 'string[]',
         'consumptionStatus' => 'string[]',
-        'gamerConsumptionAbility' => '\TencentAds\Model\PlayerConsuptStruct[]',
         'gameConsumptionLevel' => 'string[]',
         'residentialCommunityPrice' => '\TencentAds\Model\ResidentialCommunityPriceStruct[]',
         'financialSituation' => 'string[]',
@@ -128,7 +127,6 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
         'appInstallStatus' => null,
         'miniGameQqStatus' => null,
         'consumptionStatus' => null,
-        'gamerConsumptionAbility' => null,
         'gameConsumptionLevel' => null,
         'residentialCommunityPrice' => null,
         'financialSituation' => null,
@@ -197,7 +195,6 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
         'appInstallStatus' => 'app_install_status',
         'miniGameQqStatus' => 'mini_game_qq_status',
         'consumptionStatus' => 'consumption_status',
-        'gamerConsumptionAbility' => 'gamer_consumption_ability',
         'gameConsumptionLevel' => 'game_consumption_level',
         'residentialCommunityPrice' => 'residential_community_price',
         'financialSituation' => 'financial_situation',
@@ -245,7 +242,6 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
         'appInstallStatus' => 'setAppInstallStatus',
         'miniGameQqStatus' => 'setMiniGameQqStatus',
         'consumptionStatus' => 'setConsumptionStatus',
-        'gamerConsumptionAbility' => 'setGamerConsumptionAbility',
         'gameConsumptionLevel' => 'setGameConsumptionLevel',
         'residentialCommunityPrice' => 'setResidentialCommunityPrice',
         'financialSituation' => 'setFinancialSituation',
@@ -293,7 +289,6 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
         'appInstallStatus' => 'getAppInstallStatus',
         'miniGameQqStatus' => 'getMiniGameQqStatus',
         'consumptionStatus' => 'getConsumptionStatus',
-        'gamerConsumptionAbility' => 'getGamerConsumptionAbility',
         'gameConsumptionLevel' => 'getGameConsumptionLevel',
         'residentialCommunityPrice' => 'getResidentialCommunityPrice',
         'financialSituation' => 'getFinancialSituation',
@@ -395,7 +390,6 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
         $this->container['appInstallStatus'] = isset($data['appInstallStatus']) ? $data['appInstallStatus'] : null;
         $this->container['miniGameQqStatus'] = isset($data['miniGameQqStatus']) ? $data['miniGameQqStatus'] : null;
         $this->container['consumptionStatus'] = isset($data['consumptionStatus']) ? $data['consumptionStatus'] : null;
-        $this->container['gamerConsumptionAbility'] = isset($data['gamerConsumptionAbility']) ? $data['gamerConsumptionAbility'] : null;
         $this->container['gameConsumptionLevel'] = isset($data['gameConsumptionLevel']) ? $data['gameConsumptionLevel'] : null;
         $this->container['residentialCommunityPrice'] = isset($data['residentialCommunityPrice']) ? $data['residentialCommunityPrice'] : null;
         $this->container['financialSituation'] = isset($data['financialSituation']) ? $data['financialSituation'] : null;
@@ -963,30 +957,6 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
     public function setConsumptionStatus($consumptionStatus)
     {
         $this->container['consumptionStatus'] = $consumptionStatus;
-
-        return $this;
-    }
-
-    /**
-     * Gets gamerConsumptionAbility
-     *
-     * @return \TencentAds\Model\PlayerConsuptStruct[]
-     */
-    public function getGamerConsumptionAbility()
-    {
-        return $this->container['gamerConsumptionAbility'];
-    }
-
-    /**
-     * Sets gamerConsumptionAbility
-     *
-     * @param \TencentAds\Model\PlayerConsuptStruct[] $gamerConsumptionAbility gamerConsumptionAbility
-     *
-     * @return $this
-     */
-    public function setGamerConsumptionAbility($gamerConsumptionAbility)
-    {
-        $this->container['gamerConsumptionAbility'] = $gamerConsumptionAbility;
 
         return $this;
     }

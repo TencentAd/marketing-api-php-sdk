@@ -106,6 +106,10 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'secondCategoryName' => 'string',
         'thirdCategoryName' => 'string',
         'fourthCategoryName' => 'string',
+        'firstCategoryUrl' => 'string',
+        'secondCategoryUrl' => 'string',
+        'thirdCategoryUrl' => 'string',
+        'fourthCategoryUrl' => 'string',
         'brandId' => 'int',
         'brandName' => 'string',
         'brandUrl' => 'string',
@@ -129,7 +133,13 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'commentCount' => 'int',
         'authorFansCount' => 'int',
         'semanticLabels' => 'string[]',
-        'detailImg' => 'string[]'
+        'detailImg' => 'string[]',
+        'showCount' => 'int',
+        'playRate' => 'double',
+        'makeMoneyOnline' => 'string',
+        'liveBroadcast' => 'string',
+        'platformAttribute' => 'string',
+        'customData' => 'string'
     ];
 
     /**
@@ -186,6 +196,10 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'secondCategoryName' => null,
         'thirdCategoryName' => null,
         'fourthCategoryName' => null,
+        'firstCategoryUrl' => null,
+        'secondCategoryUrl' => null,
+        'thirdCategoryUrl' => null,
+        'fourthCategoryUrl' => null,
         'brandId' => 'int64',
         'brandName' => null,
         'brandUrl' => null,
@@ -209,7 +223,13 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'commentCount' => 'int64',
         'authorFansCount' => 'int64',
         'semanticLabels' => null,
-        'detailImg' => null
+        'detailImg' => null,
+        'showCount' => 'int64',
+        'playRate' => 'double',
+        'makeMoneyOnline' => null,
+        'liveBroadcast' => null,
+        'platformAttribute' => null,
+        'customData' => null
     ];
 
     /**
@@ -287,6 +307,10 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'secondCategoryName' => 'second_category_name',
         'thirdCategoryName' => 'third_category_name',
         'fourthCategoryName' => 'fourth_category_name',
+        'firstCategoryUrl' => 'first_category_url',
+        'secondCategoryUrl' => 'second_category_url',
+        'thirdCategoryUrl' => 'third_category_url',
+        'fourthCategoryUrl' => 'fourth_category_url',
         'brandId' => 'brand_id',
         'brandName' => 'brand_name',
         'brandUrl' => 'brand_url',
@@ -310,7 +334,13 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'commentCount' => 'comment_count',
         'authorFansCount' => 'author_fans_count',
         'semanticLabels' => 'semantic_labels',
-        'detailImg' => 'detail_img'
+        'detailImg' => 'detail_img',
+        'showCount' => 'show_count',
+        'playRate' => 'play_rate',
+        'makeMoneyOnline' => 'make_money_online',
+        'liveBroadcast' => 'live_broadcast',
+        'platformAttribute' => 'platform_attribute',
+        'customData' => 'custom_data'
     ];
 
     /**
@@ -367,6 +397,10 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'secondCategoryName' => 'setSecondCategoryName',
         'thirdCategoryName' => 'setThirdCategoryName',
         'fourthCategoryName' => 'setFourthCategoryName',
+        'firstCategoryUrl' => 'setFirstCategoryUrl',
+        'secondCategoryUrl' => 'setSecondCategoryUrl',
+        'thirdCategoryUrl' => 'setThirdCategoryUrl',
+        'fourthCategoryUrl' => 'setFourthCategoryUrl',
         'brandId' => 'setBrandId',
         'brandName' => 'setBrandName',
         'brandUrl' => 'setBrandUrl',
@@ -390,7 +424,13 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'commentCount' => 'setCommentCount',
         'authorFansCount' => 'setAuthorFansCount',
         'semanticLabels' => 'setSemanticLabels',
-        'detailImg' => 'setDetailImg'
+        'detailImg' => 'setDetailImg',
+        'showCount' => 'setShowCount',
+        'playRate' => 'setPlayRate',
+        'makeMoneyOnline' => 'setMakeMoneyOnline',
+        'liveBroadcast' => 'setLiveBroadcast',
+        'platformAttribute' => 'setPlatformAttribute',
+        'customData' => 'setCustomData'
     ];
 
     /**
@@ -447,6 +487,10 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'secondCategoryName' => 'getSecondCategoryName',
         'thirdCategoryName' => 'getThirdCategoryName',
         'fourthCategoryName' => 'getFourthCategoryName',
+        'firstCategoryUrl' => 'getFirstCategoryUrl',
+        'secondCategoryUrl' => 'getSecondCategoryUrl',
+        'thirdCategoryUrl' => 'getThirdCategoryUrl',
+        'fourthCategoryUrl' => 'getFourthCategoryUrl',
         'brandId' => 'getBrandId',
         'brandName' => 'getBrandName',
         'brandUrl' => 'getBrandUrl',
@@ -470,7 +514,13 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'commentCount' => 'getCommentCount',
         'authorFansCount' => 'getAuthorFansCount',
         'semanticLabels' => 'getSemanticLabels',
-        'detailImg' => 'getDetailImg'
+        'detailImg' => 'getDetailImg',
+        'showCount' => 'getShowCount',
+        'playRate' => 'getPlayRate',
+        'makeMoneyOnline' => 'getMakeMoneyOnline',
+        'liveBroadcast' => 'getLiveBroadcast',
+        'platformAttribute' => 'getPlatformAttribute',
+        'customData' => 'getCustomData'
     ];
 
     /**
@@ -581,6 +631,10 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         $this->container['secondCategoryName'] = isset($data['secondCategoryName']) ? $data['secondCategoryName'] : null;
         $this->container['thirdCategoryName'] = isset($data['thirdCategoryName']) ? $data['thirdCategoryName'] : null;
         $this->container['fourthCategoryName'] = isset($data['fourthCategoryName']) ? $data['fourthCategoryName'] : null;
+        $this->container['firstCategoryUrl'] = isset($data['firstCategoryUrl']) ? $data['firstCategoryUrl'] : null;
+        $this->container['secondCategoryUrl'] = isset($data['secondCategoryUrl']) ? $data['secondCategoryUrl'] : null;
+        $this->container['thirdCategoryUrl'] = isset($data['thirdCategoryUrl']) ? $data['thirdCategoryUrl'] : null;
+        $this->container['fourthCategoryUrl'] = isset($data['fourthCategoryUrl']) ? $data['fourthCategoryUrl'] : null;
         $this->container['brandId'] = isset($data['brandId']) ? $data['brandId'] : null;
         $this->container['brandName'] = isset($data['brandName']) ? $data['brandName'] : null;
         $this->container['brandUrl'] = isset($data['brandUrl']) ? $data['brandUrl'] : null;
@@ -605,6 +659,12 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         $this->container['authorFansCount'] = isset($data['authorFansCount']) ? $data['authorFansCount'] : null;
         $this->container['semanticLabels'] = isset($data['semanticLabels']) ? $data['semanticLabels'] : null;
         $this->container['detailImg'] = isset($data['detailImg']) ? $data['detailImg'] : null;
+        $this->container['showCount'] = isset($data['showCount']) ? $data['showCount'] : null;
+        $this->container['playRate'] = isset($data['playRate']) ? $data['playRate'] : null;
+        $this->container['makeMoneyOnline'] = isset($data['makeMoneyOnline']) ? $data['makeMoneyOnline'] : null;
+        $this->container['liveBroadcast'] = isset($data['liveBroadcast']) ? $data['liveBroadcast'] : null;
+        $this->container['platformAttribute'] = isset($data['platformAttribute']) ? $data['platformAttribute'] : null;
+        $this->container['customData'] = isset($data['customData']) ? $data['customData'] : null;
     }
 
     /**
@@ -1784,6 +1844,102 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets firstCategoryUrl
+     *
+     * @return string
+     */
+    public function getFirstCategoryUrl()
+    {
+        return $this->container['firstCategoryUrl'];
+    }
+
+    /**
+     * Sets firstCategoryUrl
+     *
+     * @param string $firstCategoryUrl firstCategoryUrl
+     *
+     * @return $this
+     */
+    public function setFirstCategoryUrl($firstCategoryUrl)
+    {
+        $this->container['firstCategoryUrl'] = $firstCategoryUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets secondCategoryUrl
+     *
+     * @return string
+     */
+    public function getSecondCategoryUrl()
+    {
+        return $this->container['secondCategoryUrl'];
+    }
+
+    /**
+     * Sets secondCategoryUrl
+     *
+     * @param string $secondCategoryUrl secondCategoryUrl
+     *
+     * @return $this
+     */
+    public function setSecondCategoryUrl($secondCategoryUrl)
+    {
+        $this->container['secondCategoryUrl'] = $secondCategoryUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets thirdCategoryUrl
+     *
+     * @return string
+     */
+    public function getThirdCategoryUrl()
+    {
+        return $this->container['thirdCategoryUrl'];
+    }
+
+    /**
+     * Sets thirdCategoryUrl
+     *
+     * @param string $thirdCategoryUrl thirdCategoryUrl
+     *
+     * @return $this
+     */
+    public function setThirdCategoryUrl($thirdCategoryUrl)
+    {
+        $this->container['thirdCategoryUrl'] = $thirdCategoryUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets fourthCategoryUrl
+     *
+     * @return string
+     */
+    public function getFourthCategoryUrl()
+    {
+        return $this->container['fourthCategoryUrl'];
+    }
+
+    /**
+     * Sets fourthCategoryUrl
+     *
+     * @param string $fourthCategoryUrl fourthCategoryUrl
+     *
+     * @return $this
+     */
+    public function setFourthCategoryUrl($fourthCategoryUrl)
+    {
+        $this->container['fourthCategoryUrl'] = $fourthCategoryUrl;
+
+        return $this;
+    }
+
+    /**
      * Gets brandId
      *
      * @return int
@@ -2355,6 +2511,150 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     public function setDetailImg($detailImg)
     {
         $this->container['detailImg'] = $detailImg;
+
+        return $this;
+    }
+
+    /**
+     * Gets showCount
+     *
+     * @return int
+     */
+    public function getShowCount()
+    {
+        return $this->container['showCount'];
+    }
+
+    /**
+     * Sets showCount
+     *
+     * @param int $showCount showCount
+     *
+     * @return $this
+     */
+    public function setShowCount($showCount)
+    {
+        $this->container['showCount'] = $showCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets playRate
+     *
+     * @return double
+     */
+    public function getPlayRate()
+    {
+        return $this->container['playRate'];
+    }
+
+    /**
+     * Sets playRate
+     *
+     * @param double $playRate playRate
+     *
+     * @return $this
+     */
+    public function setPlayRate($playRate)
+    {
+        $this->container['playRate'] = $playRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets makeMoneyOnline
+     *
+     * @return string
+     */
+    public function getMakeMoneyOnline()
+    {
+        return $this->container['makeMoneyOnline'];
+    }
+
+    /**
+     * Sets makeMoneyOnline
+     *
+     * @param string $makeMoneyOnline makeMoneyOnline
+     *
+     * @return $this
+     */
+    public function setMakeMoneyOnline($makeMoneyOnline)
+    {
+        $this->container['makeMoneyOnline'] = $makeMoneyOnline;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveBroadcast
+     *
+     * @return string
+     */
+    public function getLiveBroadcast()
+    {
+        return $this->container['liveBroadcast'];
+    }
+
+    /**
+     * Sets liveBroadcast
+     *
+     * @param string $liveBroadcast liveBroadcast
+     *
+     * @return $this
+     */
+    public function setLiveBroadcast($liveBroadcast)
+    {
+        $this->container['liveBroadcast'] = $liveBroadcast;
+
+        return $this;
+    }
+
+    /**
+     * Gets platformAttribute
+     *
+     * @return string
+     */
+    public function getPlatformAttribute()
+    {
+        return $this->container['platformAttribute'];
+    }
+
+    /**
+     * Sets platformAttribute
+     *
+     * @param string $platformAttribute platformAttribute
+     *
+     * @return $this
+     */
+    public function setPlatformAttribute($platformAttribute)
+    {
+        $this->container['platformAttribute'] = $platformAttribute;
+
+        return $this;
+    }
+
+    /**
+     * Gets customData
+     *
+     * @return string
+     */
+    public function getCustomData()
+    {
+        return $this->container['customData'];
+    }
+
+    /**
+     * Sets customData
+     *
+     * @param string $customData customData
+     *
+     * @return $this
+     */
+    public function setCustomData($customData)
+    {
+        $this->container['customData'] = $customData;
 
         return $this;
     }
