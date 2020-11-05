@@ -747,7 +747,7 @@ class VideosApi
     /**
      * Operation videosUpdate
      *
-     * 修改视频文件名称
+     * 修改视频信息
      *
      * @param  \TencentAds\Model\VideosUpdateRequest $data data (required)
      *
@@ -764,7 +764,7 @@ class VideosApi
     /**
      * Operation videosUpdateWithHttpInfo
      *
-     * 修改视频文件名称
+     * 修改视频信息
      *
      * @param  \TencentAds\Model\VideosUpdateRequest $data (required)
      *
@@ -839,7 +839,7 @@ class VideosApi
     /**
      * Operation videosUpdateAsync
      *
-     * 修改视频文件名称
+     * 修改视频信息
      *
      * @param  \TencentAds\Model\VideosUpdateRequest $data (required)
      *
@@ -859,7 +859,7 @@ class VideosApi
     /**
      * Operation videosUpdateAsyncWithHttpInfo
      *
-     * 修改视频文件名称
+     * 修改视频信息
      *
      * @param  \TencentAds\Model\VideosUpdateRequest $data (required)
      *

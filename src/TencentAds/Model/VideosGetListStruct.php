@@ -87,7 +87,8 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'audioDurationMillisecond' => 'int',
         'sourceType' => '\TencentAds\Model\MediaSourceType',
         'productCatalogId' => 'string',
-        'productOuterId' => 'string'
+        'productOuterId' => 'string',
+        'sourceReferenceId' => 'string'
     ];
 
     /**
@@ -125,7 +126,8 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'audioDurationMillisecond' => 'int64',
         'sourceType' => null,
         'productCatalogId' => null,
-        'productOuterId' => null
+        'productOuterId' => null,
+        'sourceReferenceId' => null
     ];
 
     /**
@@ -184,7 +186,8 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'audioDurationMillisecond' => 'audio_duration_millisecond',
         'sourceType' => 'source_type',
         'productCatalogId' => 'product_catalog_id',
-        'productOuterId' => 'product_outer_id'
+        'productOuterId' => 'product_outer_id',
+        'sourceReferenceId' => 'source_reference_id'
     ];
 
     /**
@@ -222,7 +225,8 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'audioDurationMillisecond' => 'setAudioDurationMillisecond',
         'sourceType' => 'setSourceType',
         'productCatalogId' => 'setProductCatalogId',
-        'productOuterId' => 'setProductOuterId'
+        'productOuterId' => 'setProductOuterId',
+        'sourceReferenceId' => 'setSourceReferenceId'
     ];
 
     /**
@@ -260,7 +264,8 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'audioDurationMillisecond' => 'getAudioDurationMillisecond',
         'sourceType' => 'getSourceType',
         'productCatalogId' => 'getProductCatalogId',
-        'productOuterId' => 'getProductOuterId'
+        'productOuterId' => 'getProductOuterId',
+        'sourceReferenceId' => 'getSourceReferenceId'
     ];
 
     /**
@@ -353,6 +358,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         $this->container['sourceType'] = isset($data['sourceType']) ? $data['sourceType'] : null;
         $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
         $this->container['productOuterId'] = isset($data['productOuterId']) ? $data['productOuterId'] : null;
+        $this->container['sourceReferenceId'] = isset($data['sourceReferenceId']) ? $data['sourceReferenceId'] : null;
     }
 
     /**
@@ -1095,6 +1101,30 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     public function setProductOuterId($productOuterId)
     {
         $this->container['productOuterId'] = $productOuterId;
+
+        return $this;
+    }
+
+    /**
+     * Gets sourceReferenceId
+     *
+     * @return string
+     */
+    public function getSourceReferenceId()
+    {
+        return $this->container['sourceReferenceId'];
+    }
+
+    /**
+     * Sets sourceReferenceId
+     *
+     * @param string $sourceReferenceId sourceReferenceId
+     *
+     * @return $this
+     */
+    public function setSourceReferenceId($sourceReferenceId)
+    {
+        $this->container['sourceReferenceId'] = $sourceReferenceId;
 
         return $this;
     }

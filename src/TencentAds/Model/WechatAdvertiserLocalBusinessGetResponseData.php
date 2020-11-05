@@ -69,7 +69,9 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
         'businessContent' => 'string',
         'industryId' => 'int',
         'accountId' => 'int',
-        'businessId' => 'string'
+        'businessId' => 'string',
+        'rejectMessage' => 'string',
+        'reviewStatus' => '\TencentAds\Model\WechatLocalBusinessReviewStatus'
     ];
 
     /**
@@ -90,7 +92,9 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
         'businessContent' => null,
         'industryId' => 'int64',
         'accountId' => 'int64',
-        'businessId' => null
+        'businessId' => null,
+        'rejectMessage' => null,
+        'reviewStatus' => null
     ];
 
     /**
@@ -132,7 +136,9 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
         'businessContent' => 'business_content',
         'industryId' => 'industry_id',
         'accountId' => 'account_id',
-        'businessId' => 'business_id'
+        'businessId' => 'business_id',
+        'rejectMessage' => 'reject_message',
+        'reviewStatus' => 'review_status'
     ];
 
     /**
@@ -153,7 +159,9 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
         'businessContent' => 'setBusinessContent',
         'industryId' => 'setIndustryId',
         'accountId' => 'setAccountId',
-        'businessId' => 'setBusinessId'
+        'businessId' => 'setBusinessId',
+        'rejectMessage' => 'setRejectMessage',
+        'reviewStatus' => 'setReviewStatus'
     ];
 
     /**
@@ -174,7 +182,9 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
         'businessContent' => 'getBusinessContent',
         'industryId' => 'getIndustryId',
         'accountId' => 'getAccountId',
-        'businessId' => 'getBusinessId'
+        'businessId' => 'getBusinessId',
+        'rejectMessage' => 'getRejectMessage',
+        'reviewStatus' => 'getReviewStatus'
     ];
 
     /**
@@ -250,6 +260,8 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
         $this->container['industryId'] = isset($data['industryId']) ? $data['industryId'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['businessId'] = isset($data['businessId']) ? $data['businessId'] : null;
+        $this->container['rejectMessage'] = isset($data['rejectMessage']) ? $data['rejectMessage'] : null;
+        $this->container['reviewStatus'] = isset($data['reviewStatus']) ? $data['reviewStatus'] : null;
     }
 
     /**
@@ -584,6 +596,54 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     public function setBusinessId($businessId)
     {
         $this->container['businessId'] = $businessId;
+
+        return $this;
+    }
+
+    /**
+     * Gets rejectMessage
+     *
+     * @return string
+     */
+    public function getRejectMessage()
+    {
+        return $this->container['rejectMessage'];
+    }
+
+    /**
+     * Sets rejectMessage
+     *
+     * @param string $rejectMessage rejectMessage
+     *
+     * @return $this
+     */
+    public function setRejectMessage($rejectMessage)
+    {
+        $this->container['rejectMessage'] = $rejectMessage;
+
+        return $this;
+    }
+
+    /**
+     * Gets reviewStatus
+     *
+     * @return \TencentAds\Model\WechatLocalBusinessReviewStatus
+     */
+    public function getReviewStatus()
+    {
+        return $this->container['reviewStatus'];
+    }
+
+    /**
+     * Sets reviewStatus
+     *
+     * @param \TencentAds\Model\WechatLocalBusinessReviewStatus $reviewStatus reviewStatus
+     *
+     * @return $this
+     */
+    public function setReviewStatus($reviewStatus)
+    {
+        $this->container['reviewStatus'] = $reviewStatus;
 
         return $this;
     }

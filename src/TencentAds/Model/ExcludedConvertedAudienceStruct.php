@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * ExcludedConvertedAudienceStruct Class Doc Comment
  *
  * @category Class
- * @description 排除已转化用户定向，（该定向灰度开放中）
+ * @description 排除已转化用户定向
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

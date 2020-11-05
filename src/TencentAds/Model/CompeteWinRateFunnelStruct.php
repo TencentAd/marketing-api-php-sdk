@@ -62,6 +62,7 @@ class CompeteWinRateFunnelStruct implements ModelInterface, ArrayAccess
         'score' => 'int',
         'scoreDesc' => 'string',
         'rankCategory' => 'int',
+        'rankSecondCategory' => 'int',
         'rankOverall' => 'int'
     ];
 
@@ -75,6 +76,7 @@ class CompeteWinRateFunnelStruct implements ModelInterface, ArrayAccess
         'score' => 'int64',
         'scoreDesc' => null,
         'rankCategory' => 'int64',
+        'rankSecondCategory' => 'int64',
         'rankOverall' => 'int64'
     ];
 
@@ -109,6 +111,7 @@ class CompeteWinRateFunnelStruct implements ModelInterface, ArrayAccess
         'score' => 'score',
         'scoreDesc' => 'score_desc',
         'rankCategory' => 'rank_category',
+        'rankSecondCategory' => 'rank_second_category',
         'rankOverall' => 'rank_overall'
     ];
 
@@ -122,6 +125,7 @@ class CompeteWinRateFunnelStruct implements ModelInterface, ArrayAccess
         'score' => 'setScore',
         'scoreDesc' => 'setScoreDesc',
         'rankCategory' => 'setRankCategory',
+        'rankSecondCategory' => 'setRankSecondCategory',
         'rankOverall' => 'setRankOverall'
     ];
 
@@ -135,6 +139,7 @@ class CompeteWinRateFunnelStruct implements ModelInterface, ArrayAccess
         'score' => 'getScore',
         'scoreDesc' => 'getScoreDesc',
         'rankCategory' => 'getRankCategory',
+        'rankSecondCategory' => 'getRankSecondCategory',
         'rankOverall' => 'getRankOverall'
     ];
 
@@ -202,6 +207,7 @@ class CompeteWinRateFunnelStruct implements ModelInterface, ArrayAccess
         $this->container['score'] = isset($data['score']) ? $data['score'] : null;
         $this->container['scoreDesc'] = isset($data['scoreDesc']) ? $data['scoreDesc'] : null;
         $this->container['rankCategory'] = isset($data['rankCategory']) ? $data['rankCategory'] : null;
+        $this->container['rankSecondCategory'] = isset($data['rankSecondCategory']) ? $data['rankSecondCategory'] : null;
         $this->container['rankOverall'] = isset($data['rankOverall']) ? $data['rankOverall'] : null;
     }
 
@@ -321,6 +327,30 @@ class CompeteWinRateFunnelStruct implements ModelInterface, ArrayAccess
     public function setRankCategory($rankCategory)
     {
         $this->container['rankCategory'] = $rankCategory;
+
+        return $this;
+    }
+
+    /**
+     * Gets rankSecondCategory
+     *
+     * @return int
+     */
+    public function getRankSecondCategory()
+    {
+        return $this->container['rankSecondCategory'];
+    }
+
+    /**
+     * Sets rankSecondCategory
+     *
+     * @param int $rankSecondCategory rankSecondCategory
+     *
+     * @return $this
+     */
+    public function setRankSecondCategory($rankSecondCategory)
+    {
+        $this->container['rankSecondCategory'] = $rankSecondCategory;
 
         return $this;
     }

@@ -219,8 +219,11 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'withdrDepAppVal' => 'int',
         'firstPayCost' => 'int',
         'landingPageClickCount' => 'int',
-        'scanFollowCount' => 'int',
         'webCartAmount' => 'int',
+        'scanFollowCount' => 'int',
+        'scanFollowUserCount' => 'int',
+        'scanFollowUserCost' => 'int',
+        'scanFollowUserRate' => 'double',
         'appOrderAmount' => 'int',
         'webOrderAmount' => 'int',
         'phoneConsultCount' => 'int',
@@ -252,6 +255,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'clickPoiCount' => 'int',
         'videoInnerPlayCount' => 'int',
         'lanButtonClickCount' => 'int',
+        'lanJumpButtonClickers' => 'int',
         'lanButtonClickCost' => 'int',
         'cpnClickButtonCount' => 'int',
         'cpnClickButtonUv' => 'int',
@@ -565,8 +569,11 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'withdrDepAppVal' => 'int64',
         'firstPayCost' => 'int64',
         'landingPageClickCount' => 'int64',
-        'scanFollowCount' => 'int64',
         'webCartAmount' => 'int64',
+        'scanFollowCount' => 'int64',
+        'scanFollowUserCount' => 'int64',
+        'scanFollowUserCost' => 'int64',
+        'scanFollowUserRate' => 'double',
         'appOrderAmount' => 'int64',
         'webOrderAmount' => 'int64',
         'phoneConsultCount' => 'int64',
@@ -598,6 +605,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'clickPoiCount' => 'int64',
         'videoInnerPlayCount' => 'int64',
         'lanButtonClickCount' => 'int64',
+        'lanJumpButtonClickers' => 'int64',
         'lanButtonClickCost' => 'int64',
         'cpnClickButtonCount' => 'int64',
         'cpnClickButtonUv' => 'int64',
@@ -932,8 +940,11 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'withdrDepAppVal' => 'withdr_dep_app_val',
         'firstPayCost' => 'first_pay_cost',
         'landingPageClickCount' => 'landing_page_click_count',
-        'scanFollowCount' => 'scan_follow_count',
         'webCartAmount' => 'web_cart_amount',
+        'scanFollowCount' => 'scan_follow_count',
+        'scanFollowUserCount' => 'scan_follow_user_count',
+        'scanFollowUserCost' => 'scan_follow_user_cost',
+        'scanFollowUserRate' => 'scan_follow_user_rate',
         'appOrderAmount' => 'app_order_amount',
         'webOrderAmount' => 'web_order_amount',
         'phoneConsultCount' => 'phone_consult_count',
@@ -965,6 +976,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'clickPoiCount' => 'click_poi_count',
         'videoInnerPlayCount' => 'video_inner_play_count',
         'lanButtonClickCount' => 'lan_button_click_count',
+        'lanJumpButtonClickers' => 'lan_jump_button_clickers',
         'lanButtonClickCost' => 'lan_button_click_cost',
         'cpnClickButtonCount' => 'cpn_click_button_count',
         'cpnClickButtonUv' => 'cpn_click_button_uv',
@@ -1278,8 +1290,11 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'withdrDepAppVal' => 'setWithdrDepAppVal',
         'firstPayCost' => 'setFirstPayCost',
         'landingPageClickCount' => 'setLandingPageClickCount',
-        'scanFollowCount' => 'setScanFollowCount',
         'webCartAmount' => 'setWebCartAmount',
+        'scanFollowCount' => 'setScanFollowCount',
+        'scanFollowUserCount' => 'setScanFollowUserCount',
+        'scanFollowUserCost' => 'setScanFollowUserCost',
+        'scanFollowUserRate' => 'setScanFollowUserRate',
         'appOrderAmount' => 'setAppOrderAmount',
         'webOrderAmount' => 'setWebOrderAmount',
         'phoneConsultCount' => 'setPhoneConsultCount',
@@ -1311,6 +1326,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'clickPoiCount' => 'setClickPoiCount',
         'videoInnerPlayCount' => 'setVideoInnerPlayCount',
         'lanButtonClickCount' => 'setLanButtonClickCount',
+        'lanJumpButtonClickers' => 'setLanJumpButtonClickers',
         'lanButtonClickCost' => 'setLanButtonClickCost',
         'cpnClickButtonCount' => 'setCpnClickButtonCount',
         'cpnClickButtonUv' => 'setCpnClickButtonUv',
@@ -1624,8 +1640,11 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'withdrDepAppVal' => 'getWithdrDepAppVal',
         'firstPayCost' => 'getFirstPayCost',
         'landingPageClickCount' => 'getLandingPageClickCount',
-        'scanFollowCount' => 'getScanFollowCount',
         'webCartAmount' => 'getWebCartAmount',
+        'scanFollowCount' => 'getScanFollowCount',
+        'scanFollowUserCount' => 'getScanFollowUserCount',
+        'scanFollowUserCost' => 'getScanFollowUserCost',
+        'scanFollowUserRate' => 'getScanFollowUserRate',
         'appOrderAmount' => 'getAppOrderAmount',
         'webOrderAmount' => 'getWebOrderAmount',
         'phoneConsultCount' => 'getPhoneConsultCount',
@@ -1657,6 +1676,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'clickPoiCount' => 'getClickPoiCount',
         'videoInnerPlayCount' => 'getVideoInnerPlayCount',
         'lanButtonClickCount' => 'getLanButtonClickCount',
+        'lanJumpButtonClickers' => 'getLanJumpButtonClickers',
         'lanButtonClickCost' => 'getLanButtonClickCost',
         'cpnClickButtonCount' => 'getCpnClickButtonCount',
         'cpnClickButtonUv' => 'getCpnClickButtonUv',
@@ -2024,8 +2044,11 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['withdrDepAppVal'] = isset($data['withdrDepAppVal']) ? $data['withdrDepAppVal'] : null;
         $this->container['firstPayCost'] = isset($data['firstPayCost']) ? $data['firstPayCost'] : null;
         $this->container['landingPageClickCount'] = isset($data['landingPageClickCount']) ? $data['landingPageClickCount'] : null;
-        $this->container['scanFollowCount'] = isset($data['scanFollowCount']) ? $data['scanFollowCount'] : null;
         $this->container['webCartAmount'] = isset($data['webCartAmount']) ? $data['webCartAmount'] : null;
+        $this->container['scanFollowCount'] = isset($data['scanFollowCount']) ? $data['scanFollowCount'] : null;
+        $this->container['scanFollowUserCount'] = isset($data['scanFollowUserCount']) ? $data['scanFollowUserCount'] : null;
+        $this->container['scanFollowUserCost'] = isset($data['scanFollowUserCost']) ? $data['scanFollowUserCost'] : null;
+        $this->container['scanFollowUserRate'] = isset($data['scanFollowUserRate']) ? $data['scanFollowUserRate'] : null;
         $this->container['appOrderAmount'] = isset($data['appOrderAmount']) ? $data['appOrderAmount'] : null;
         $this->container['webOrderAmount'] = isset($data['webOrderAmount']) ? $data['webOrderAmount'] : null;
         $this->container['phoneConsultCount'] = isset($data['phoneConsultCount']) ? $data['phoneConsultCount'] : null;
@@ -2057,6 +2080,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['clickPoiCount'] = isset($data['clickPoiCount']) ? $data['clickPoiCount'] : null;
         $this->container['videoInnerPlayCount'] = isset($data['videoInnerPlayCount']) ? $data['videoInnerPlayCount'] : null;
         $this->container['lanButtonClickCount'] = isset($data['lanButtonClickCount']) ? $data['lanButtonClickCount'] : null;
+        $this->container['lanJumpButtonClickers'] = isset($data['lanJumpButtonClickers']) ? $data['lanJumpButtonClickers'] : null;
         $this->container['lanButtonClickCost'] = isset($data['lanButtonClickCost']) ? $data['lanButtonClickCost'] : null;
         $this->container['cpnClickButtonCount'] = isset($data['cpnClickButtonCount']) ? $data['cpnClickButtonCount'] : null;
         $this->container['cpnClickButtonUv'] = isset($data['cpnClickButtonUv']) ? $data['cpnClickButtonUv'] : null;
@@ -6092,6 +6116,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets webCartAmount
+     *
+     * @return int
+     */
+    public function getWebCartAmount()
+    {
+        return $this->container['webCartAmount'];
+    }
+
+    /**
+     * Sets webCartAmount
+     *
+     * @param int $webCartAmount webCartAmount
+     *
+     * @return $this
+     */
+    public function setWebCartAmount($webCartAmount)
+    {
+        $this->container['webCartAmount'] = $webCartAmount;
+
+        return $this;
+    }
+
+    /**
      * Gets scanFollowCount
      *
      * @return int
@@ -6116,25 +6164,73 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets webCartAmount
+     * Gets scanFollowUserCount
      *
      * @return int
      */
-    public function getWebCartAmount()
+    public function getScanFollowUserCount()
     {
-        return $this->container['webCartAmount'];
+        return $this->container['scanFollowUserCount'];
     }
 
     /**
-     * Sets webCartAmount
+     * Sets scanFollowUserCount
      *
-     * @param int $webCartAmount webCartAmount
+     * @param int $scanFollowUserCount scanFollowUserCount
      *
      * @return $this
      */
-    public function setWebCartAmount($webCartAmount)
+    public function setScanFollowUserCount($scanFollowUserCount)
     {
-        $this->container['webCartAmount'] = $webCartAmount;
+        $this->container['scanFollowUserCount'] = $scanFollowUserCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets scanFollowUserCost
+     *
+     * @return int
+     */
+    public function getScanFollowUserCost()
+    {
+        return $this->container['scanFollowUserCost'];
+    }
+
+    /**
+     * Sets scanFollowUserCost
+     *
+     * @param int $scanFollowUserCost scanFollowUserCost
+     *
+     * @return $this
+     */
+    public function setScanFollowUserCost($scanFollowUserCost)
+    {
+        $this->container['scanFollowUserCost'] = $scanFollowUserCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets scanFollowUserRate
+     *
+     * @return double
+     */
+    public function getScanFollowUserRate()
+    {
+        return $this->container['scanFollowUserRate'];
+    }
+
+    /**
+     * Sets scanFollowUserRate
+     *
+     * @param double $scanFollowUserRate scanFollowUserRate
+     *
+     * @return $this
+     */
+    public function setScanFollowUserRate($scanFollowUserRate)
+    {
+        $this->container['scanFollowUserRate'] = $scanFollowUserRate;
 
         return $this;
     }
@@ -6879,6 +6975,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setLanButtonClickCount($lanButtonClickCount)
     {
         $this->container['lanButtonClickCount'] = $lanButtonClickCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets lanJumpButtonClickers
+     *
+     * @return int
+     */
+    public function getLanJumpButtonClickers()
+    {
+        return $this->container['lanJumpButtonClickers'];
+    }
+
+    /**
+     * Sets lanJumpButtonClickers
+     *
+     * @param int $lanJumpButtonClickers lanJumpButtonClickers
+     *
+     * @return $this
+     */
+    public function setLanJumpButtonClickers($lanJumpButtonClickers)
+    {
+        $this->container['lanJumpButtonClickers'] = $lanJumpButtonClickers;
 
         return $this;
     }

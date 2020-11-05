@@ -83,6 +83,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'customizedCategory' => 'string',
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
+        'adCount' => 'int',
         'dynamicAdSpec' => '\TencentAds\Model\DynamicAdSpec',
         'userActionSets' => '\TencentAds\Model\UserActionSetStruct[]',
         'additionalUserActionSets' => '\TencentAds\Model\UserActionSetStruct[]',
@@ -141,6 +142,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'customizedCategory' => null,
         'createdTime' => 'int64',
         'lastModifiedTime' => 'int64',
+        'adCount' => 'int64',
         'dynamicAdSpec' => null,
         'userActionSets' => null,
         'additionalUserActionSets' => null,
@@ -220,6 +222,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'customizedCategory' => 'customized_category',
         'createdTime' => 'created_time',
         'lastModifiedTime' => 'last_modified_time',
+        'adCount' => 'ad_count',
         'dynamicAdSpec' => 'dynamic_ad_spec',
         'userActionSets' => 'user_action_sets',
         'additionalUserActionSets' => 'additional_user_action_sets',
@@ -278,6 +281,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'customizedCategory' => 'setCustomizedCategory',
         'createdTime' => 'setCreatedTime',
         'lastModifiedTime' => 'setLastModifiedTime',
+        'adCount' => 'setAdCount',
         'dynamicAdSpec' => 'setDynamicAdSpec',
         'userActionSets' => 'setUserActionSets',
         'additionalUserActionSets' => 'setAdditionalUserActionSets',
@@ -336,6 +340,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'customizedCategory' => 'getCustomizedCategory',
         'createdTime' => 'getCreatedTime',
         'lastModifiedTime' => 'getLastModifiedTime',
+        'adCount' => 'getAdCount',
         'dynamicAdSpec' => 'getDynamicAdSpec',
         'userActionSets' => 'getUserActionSets',
         'additionalUserActionSets' => 'getAdditionalUserActionSets',
@@ -448,6 +453,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['customizedCategory'] = isset($data['customizedCategory']) ? $data['customizedCategory'] : null;
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
+        $this->container['adCount'] = isset($data['adCount']) ? $data['adCount'] : null;
         $this->container['dynamicAdSpec'] = isset($data['dynamicAdSpec']) ? $data['dynamicAdSpec'] : null;
         $this->container['userActionSets'] = isset($data['userActionSets']) ? $data['userActionSets'] : null;
         $this->container['additionalUserActionSets'] = isset($data['additionalUserActionSets']) ? $data['additionalUserActionSets'] : null;
@@ -1095,6 +1101,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setLastModifiedTime($lastModifiedTime)
     {
         $this->container['lastModifiedTime'] = $lastModifiedTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets adCount
+     *
+     * @return int
+     */
+    public function getAdCount()
+    {
+        return $this->container['adCount'];
+    }
+
+    /**
+     * Sets adCount
+     *
+     * @param int $adCount adCount
+     *
+     * @return $this
+     */
+    public function setAdCount($adCount)
+    {
+        $this->container['adCount'] = $adCount;
 
         return $this;
     }

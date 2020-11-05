@@ -14,7 +14,7 @@ class AddWechatMomentAdsWithLinkPage
     public static $ACCOUNT_ID             = 'YOUR ACCOUNT ID';
     public static $ANDROID_APP_ID         = 'YOUR APP ID'; // 这里放被推广的Android App的ID，即应用宝ID
     public static $ADCREATIVE_TEMPLATE_ID = 310; // 单图规格
-    public static $PROMOTED_OBJECT_TYPE   = 'PROMOTED_OBJECT_TYPE_APP_ANDROID'; // 推广IOS App
+    public static $PROMOTED_OBJECT_TYPE   = 'PROMOTED_OBJECT_TYPE_APP_ANDROID'; // 推广Android App
     public static $IMAGE_PATH             = 'YOUR AD IMAGE PATH'; // 广告主图文件路径，310规格要求：640x800, <300K, png/jpg
     public static $IMAGE_ID               = ''; // 如果已经有图片的，可提供Image ID
     public static $IMAGE_PROFILE_PATH     = 'YOUR AD IMAGE PATH'; // 如果未创建Profile的，提供Profile图片文件路径，200x200, <300K, png/jpg
@@ -120,7 +120,7 @@ class AddWechatMomentAdsWithLinkPage
         return $campaignId;
     }
 
-    // 创建iOS App推广目标
+    // 创建Android App推广目标
     private function AddPromotedObject(TencentAds $tads, $promotedObjectType, $promotedObjectId)
     {
         $promotedObjects = $tads->promotedObjects()
@@ -188,7 +188,7 @@ class AddWechatMomentAdsWithLinkPage
                                 'location_types' => ['LIVE_IN'],
                                 'regions'        => $regionIds,
             ],
-            'user_os'      => ['IOS'], // 操作系统定向
+            'user_os'      => ['ANDROID'], // 操作系统定向
         ];
 
         $adgroup = $tads->adgroups()

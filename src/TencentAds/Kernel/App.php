@@ -22,6 +22,8 @@ use TencentAds\Container\AsyncTaskFilesApiContainer;
 use TencentAds\Container\AsyncTasksApiContainer;
 use TencentAds\Container\AudienceGrantRelationsApiContainer;
 use TencentAds\Container\AuthorizationApiContainer;
+use TencentAds\Container\BatchAsyncRequestSpecificationApiContainer;
+use TencentAds\Container\BatchAsyncRequestsApiContainer;
 use TencentAds\Container\BatchOperationApiContainer;
 use TencentAds\Container\BatchRequestsApiContainer;
 use TencentAds\Container\BidSimulationApiContainer;
@@ -29,9 +31,11 @@ use TencentAds\Container\BrandApiContainer;
 use TencentAds\Container\BusinessManagerRelationsApiContainer;
 use TencentAds\Container\CampaignsApiContainer;
 use TencentAds\Container\CapabilitiesApiContainer;
+use TencentAds\Container\ChannelsApiContainer;
 use TencentAds\Container\ComplianceValidationApiContainer;
 use TencentAds\Container\ConversionsApiContainer;
 use TencentAds\Container\CreativetoolsTextApiContainer;
+use TencentAds\Container\CreativevideoLabelApiContainer;
 use TencentAds\Container\CustomAudienceEstimationsApiContainer;
 use TencentAds\Container\CustomAudienceFilesApiContainer;
 use TencentAds\Container\CustomAudienceInsightsApiContainer;
@@ -63,6 +67,7 @@ use TencentAds\Container\LeadCluesApiContainer;
 use TencentAds\Container\LeadsApiContainer;
 use TencentAds\Container\LeadsFormApiContainer;
 use TencentAds\Container\LeadsFormListApiContainer;
+use TencentAds\Container\LocalApiContainer;
 use TencentAds\Container\LocalEndadsmanuallyApiContainer;
 use TencentAds\Container\LocalEstimatedamountApiContainer;
 use TencentAds\Container\LocalStoresAddressParsingResultApiContainer;
@@ -77,11 +82,13 @@ use TencentAds\Container\ProductCatalogsReportsApiContainer;
 use TencentAds\Container\ProductCategoriesListApiContainer;
 use TencentAds\Container\ProductItemsApiContainer;
 use TencentAds\Container\ProductItemsDetailApiContainer;
+use TencentAds\Container\ProductItemsVerticalsApiContainer;
 use TencentAds\Container\ProductsSystemStatusApiContainer;
 use TencentAds\Container\ProfilesApiContainer;
 use TencentAds\Container\PromotedObjectsApiContainer;
 use TencentAds\Container\QualificationsApiContainer;
 use TencentAds\Container\RealtimeCostApiContainer;
+use TencentAds\Container\ShopApiContainer;
 use TencentAds\Container\SplitTestsApiContainer;
 use TencentAds\Container\SystemStatusApiContainer;
 use TencentAds\Container\TargetingTagReportsApiContainer;
@@ -179,6 +186,12 @@ class App
     /** @var AuthorizationApiContainer */
     public $authorizationApiContainer;
 
+    /** @var BatchAsyncRequestSpecificationApiContainer */
+    public $batchAsyncRequestSpecificationApiContainer;
+
+    /** @var BatchAsyncRequestsApiContainer */
+    public $batchAsyncRequestsApiContainer;
+
     /** @var BatchOperationApiContainer */
     public $batchOperationApiContainer;
 
@@ -200,6 +213,9 @@ class App
     /** @var CapabilitiesApiContainer */
     public $capabilitiesApiContainer;
 
+    /** @var ChannelsApiContainer */
+    public $channelsApiContainer;
+
     /** @var ComplianceValidationApiContainer */
     public $complianceValidationApiContainer;
 
@@ -208,6 +224,9 @@ class App
 
     /** @var CreativetoolsTextApiContainer */
     public $creativetoolsTextApiContainer;
+
+    /** @var CreativevideoLabelApiContainer */
+    public $creativevideoLabelApiContainer;
 
     /** @var CustomAudienceEstimationsApiContainer */
     public $customAudienceEstimationsApiContainer;
@@ -302,6 +321,9 @@ class App
     /** @var LeadsFormListApiContainer */
     public $leadsFormListApiContainer;
 
+    /** @var LocalApiContainer */
+    public $localApiContainer;
+
     /** @var LocalEndadsmanuallyApiContainer */
     public $localEndadsmanuallyApiContainer;
 
@@ -344,6 +366,9 @@ class App
     /** @var ProductItemsDetailApiContainer */
     public $productItemsDetailApiContainer;
 
+    /** @var ProductItemsVerticalsApiContainer */
+    public $productItemsVerticalsApiContainer;
+
     /** @var ProductsSystemStatusApiContainer */
     public $productsSystemStatusApiContainer;
 
@@ -358,6 +383,9 @@ class App
 
     /** @var RealtimeCostApiContainer */
     public $realtimeCostApiContainer;
+
+    /** @var ShopApiContainer */
+    public $shopApiContainer;
 
     /** @var SplitTestsApiContainer */
     public $splitTestsApiContainer;
@@ -746,6 +774,34 @@ class App
 
 
     /**
+     * @return BatchAsyncRequestSpecificationApiContainer
+     */
+    public function batchAsyncRequestSpecification()
+    {
+        if (empty($this->batchAsyncRequestSpecificationApiContainer)) {
+            $container = new BatchAsyncRequestSpecificationApiContainer();
+            $container->init($this, $this->getClient());
+            $this->batchAsyncRequestSpecificationApiContainer = $container;
+        }
+        return $this->batchAsyncRequestSpecificationApiContainer;
+    }
+
+
+    /**
+     * @return BatchAsyncRequestsApiContainer
+     */
+    public function batchAsyncRequests()
+    {
+        if (empty($this->batchAsyncRequestsApiContainer)) {
+            $container = new BatchAsyncRequestsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->batchAsyncRequestsApiContainer = $container;
+        }
+        return $this->batchAsyncRequestsApiContainer;
+    }
+
+
+    /**
      * @return BatchOperationApiContainer
      */
     public function batchOperation()
@@ -844,6 +900,20 @@ class App
 
 
     /**
+     * @return ChannelsApiContainer
+     */
+    public function channels()
+    {
+        if (empty($this->channelsApiContainer)) {
+            $container = new ChannelsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->channelsApiContainer = $container;
+        }
+        return $this->channelsApiContainer;
+    }
+
+
+    /**
      * @return ComplianceValidationApiContainer
      */
     public function complianceValidation()
@@ -882,6 +952,20 @@ class App
             $this->creativetoolsTextApiContainer = $container;
         }
         return $this->creativetoolsTextApiContainer;
+    }
+
+
+    /**
+     * @return CreativevideoLabelApiContainer
+     */
+    public function creativevideoLabel()
+    {
+        if (empty($this->creativevideoLabelApiContainer)) {
+            $container = new CreativevideoLabelApiContainer();
+            $container->init($this, $this->getClient());
+            $this->creativevideoLabelApiContainer = $container;
+        }
+        return $this->creativevideoLabelApiContainer;
     }
 
 
@@ -1320,6 +1404,20 @@ class App
 
 
     /**
+     * @return LocalApiContainer
+     */
+    public function local()
+    {
+        if (empty($this->localApiContainer)) {
+            $container = new LocalApiContainer();
+            $container->init($this, $this->getClient());
+            $this->localApiContainer = $container;
+        }
+        return $this->localApiContainer;
+    }
+
+
+    /**
      * @return LocalEndadsmanuallyApiContainer
      */
     public function localEndadsmanually()
@@ -1516,6 +1614,20 @@ class App
 
 
     /**
+     * @return ProductItemsVerticalsApiContainer
+     */
+    public function productItemsVerticals()
+    {
+        if (empty($this->productItemsVerticalsApiContainer)) {
+            $container = new ProductItemsVerticalsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->productItemsVerticalsApiContainer = $container;
+        }
+        return $this->productItemsVerticalsApiContainer;
+    }
+
+
+    /**
      * @return ProductsSystemStatusApiContainer
      */
     public function productsSystemStatus()
@@ -1582,6 +1694,20 @@ class App
             $this->realtimeCostApiContainer = $container;
         }
         return $this->realtimeCostApiContainer;
+    }
+
+
+    /**
+     * @return ShopApiContainer
+     */
+    public function shop()
+    {
+        if (empty($this->shopApiContainer)) {
+            $container = new ShopApiContainer();
+            $container->init($this, $this->getClient());
+            $this->shopApiContainer = $container;
+        }
+        return $this->shopApiContainer;
     }
 
 

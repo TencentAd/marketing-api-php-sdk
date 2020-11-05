@@ -61,7 +61,7 @@ class ListStruct implements ModelInterface, ArrayAccess
         'wechatQualificationName' => 'string',
         'wechatQualificationUrl' => 'string',
         'wechatQualificationId' => 'int',
-        'reviewStatus' => 'string',
+        'reviewStatus' => '\TencentAds\Model\LocalBusinessQualificationReviewStatus',
         'auditMessage' => 'string'
     ];
 
@@ -304,7 +304,7 @@ class ListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets reviewStatus
      *
-     * @return string
+     * @return \TencentAds\Model\LocalBusinessQualificationReviewStatus
      */
     public function getReviewStatus()
     {
@@ -314,7 +314,7 @@ class ListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets reviewStatus
      *
-     * @param string $reviewStatus reviewStatus
+     * @param \TencentAds\Model\LocalBusinessQualificationReviewStatus $reviewStatus reviewStatus
      *
      * @return $this
      */

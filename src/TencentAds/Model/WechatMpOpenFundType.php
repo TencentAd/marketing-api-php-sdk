@@ -48,17 +48,14 @@ class WechatMpOpenFundType
     const UNKNOWN = 'FUND_TYPE_UNKNOWN';
     const CASH = 'FUND_TYPE_CASH';
     const GIFT = 'FUND_TYPE_GIFT';
-    const INNER = 'FUND_TYPE_INNER';
-    const CREDIT = 'FUND_TYPE_CREDIT';
-    const DEBT_TEMP = 'FUND_TYPE_DEBT_TEMP';
-    const DEBT_FIXED = 'FUND_TYPE_DEBT_FIXED';
+    const SPECIAL_PROMOTION = 'FUND_TYPE_SPECIAL_PROMOTION';
+    const PAYMENT_DUE = 'FUND_TYPE_PAYMENT_DUE';
+    const CREDIT_TEMPORARY = 'FUND_TYPE_CREDIT_TEMPORARY';
+    const CREDIT_ROLL = 'FUND_TYPE_CREDIT_ROLL';
     const TCC_GIFT = 'FUND_TYPE_TCC_GIFT';
     const UNSUPPPORTED = 'FUND_TYPE_UNSUPPPORTED';
-    const CREDIT_ROLL = 'FUND_TYPE_CREDIT_ROLL';
-    const CREDIT_TEMPORARY = 'FUND_TYPE_CREDIT_TEMPORARY';
-    const SPECIAL_PROMOTION = 'FUND_TYPE_SPECIAL_PROMOTION';
     const MINIPROGRAM = 'FUND_TYPE_MINIPROGRAM';
-    const PAYMENT_DUE = 'FUND_TYPE_PAYMENT_DUE';
+    const CREDIT = 'FUND_TYPE_CREDIT';
     
     /**
      * Gets allowable values of the enum
@@ -71,17 +68,14 @@ class WechatMpOpenFundType
             self::UNKNOWN,
             self::CASH,
             self::GIFT,
-            self::INNER,
-            self::CREDIT,
-            self::DEBT_TEMP,
-            self::DEBT_FIXED,
+            self::SPECIAL_PROMOTION,
+            self::PAYMENT_DUE,
+            self::CREDIT_TEMPORARY,
+            self::CREDIT_ROLL,
             self::TCC_GIFT,
             self::UNSUPPPORTED,
-            self::CREDIT_ROLL,
-            self::CREDIT_TEMPORARY,
-            self::SPECIAL_PROMOTION,
             self::MINIPROGRAM,
-            self::PAYMENT_DUE,
+            self::CREDIT,
         ];
     }
 }

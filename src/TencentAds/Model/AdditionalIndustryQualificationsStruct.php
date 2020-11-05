@@ -64,6 +64,7 @@ class AdditionalIndustryQualificationsStruct implements ModelInterface, ArrayAcc
         'qualificationCode' => 'string',
         'imageIdList' => 'string[]',
         'qualificationStatus' => '\TencentAds\Model\QualificationStatus',
+        'expiredDate' => 'string',
         'rejectMessage' => 'string',
         'createdTime' => 'int',
         'lastModifiedTime' => 'int'
@@ -81,6 +82,7 @@ class AdditionalIndustryQualificationsStruct implements ModelInterface, ArrayAcc
         'qualificationCode' => null,
         'imageIdList' => null,
         'qualificationStatus' => null,
+        'expiredDate' => null,
         'rejectMessage' => null,
         'createdTime' => 'int64',
         'lastModifiedTime' => 'int64'
@@ -119,6 +121,7 @@ class AdditionalIndustryQualificationsStruct implements ModelInterface, ArrayAcc
         'qualificationCode' => 'qualification_code',
         'imageIdList' => 'image_id_list',
         'qualificationStatus' => 'qualification_status',
+        'expiredDate' => 'expired_date',
         'rejectMessage' => 'reject_message',
         'createdTime' => 'created_time',
         'lastModifiedTime' => 'last_modified_time'
@@ -136,6 +139,7 @@ class AdditionalIndustryQualificationsStruct implements ModelInterface, ArrayAcc
         'qualificationCode' => 'setQualificationCode',
         'imageIdList' => 'setImageIdList',
         'qualificationStatus' => 'setQualificationStatus',
+        'expiredDate' => 'setExpiredDate',
         'rejectMessage' => 'setRejectMessage',
         'createdTime' => 'setCreatedTime',
         'lastModifiedTime' => 'setLastModifiedTime'
@@ -153,6 +157,7 @@ class AdditionalIndustryQualificationsStruct implements ModelInterface, ArrayAcc
         'qualificationCode' => 'getQualificationCode',
         'imageIdList' => 'getImageIdList',
         'qualificationStatus' => 'getQualificationStatus',
+        'expiredDate' => 'getExpiredDate',
         'rejectMessage' => 'getRejectMessage',
         'createdTime' => 'getCreatedTime',
         'lastModifiedTime' => 'getLastModifiedTime'
@@ -224,6 +229,7 @@ class AdditionalIndustryQualificationsStruct implements ModelInterface, ArrayAcc
         $this->container['qualificationCode'] = isset($data['qualificationCode']) ? $data['qualificationCode'] : null;
         $this->container['imageIdList'] = isset($data['imageIdList']) ? $data['imageIdList'] : null;
         $this->container['qualificationStatus'] = isset($data['qualificationStatus']) ? $data['qualificationStatus'] : null;
+        $this->container['expiredDate'] = isset($data['expiredDate']) ? $data['expiredDate'] : null;
         $this->container['rejectMessage'] = isset($data['rejectMessage']) ? $data['rejectMessage'] : null;
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
@@ -393,6 +399,30 @@ class AdditionalIndustryQualificationsStruct implements ModelInterface, ArrayAcc
     public function setQualificationStatus($qualificationStatus)
     {
         $this->container['qualificationStatus'] = $qualificationStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets expiredDate
+     *
+     * @return string
+     */
+    public function getExpiredDate()
+    {
+        return $this->container['expiredDate'];
+    }
+
+    /**
+     * Sets expiredDate
+     *
+     * @param string $expiredDate expiredDate
+     *
+     * @return $this
+     */
+    public function setExpiredDate($expiredDate)
+    {
+        $this->container['expiredDate'] = $expiredDate;
 
         return $this;
     }

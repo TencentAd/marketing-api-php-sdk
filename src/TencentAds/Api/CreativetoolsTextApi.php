@@ -97,7 +97,7 @@ class CreativetoolsTextApi
      * @param  int $categoryFirstLevel categoryFirstLevel (optional)
      * @param  int $categorySecondLevel categorySecondLevel (optional)
      * @param  string $keyword keyword (optional)
-     * @param  int $filtering filtering (optional)
+     * @param  int[] $filtering filtering (optional)
      * @param  int $number number (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
@@ -121,7 +121,7 @@ class CreativetoolsTextApi
      * @param  int $categoryFirstLevel (optional)
      * @param  int $categorySecondLevel (optional)
      * @param  string $keyword (optional)
-     * @param  int $filtering (optional)
+     * @param  int[] $filtering (optional)
      * @param  int $number (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
@@ -203,7 +203,7 @@ class CreativetoolsTextApi
      * @param  int $categoryFirstLevel (optional)
      * @param  int $categorySecondLevel (optional)
      * @param  string $keyword (optional)
-     * @param  int $filtering (optional)
+     * @param  int[] $filtering (optional)
      * @param  int $number (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
@@ -230,7 +230,7 @@ class CreativetoolsTextApi
      * @param  int $categoryFirstLevel (optional)
      * @param  int $categorySecondLevel (optional)
      * @param  string $keyword (optional)
-     * @param  int $filtering (optional)
+     * @param  int[] $filtering (optional)
      * @param  int $number (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
@@ -287,7 +287,7 @@ class CreativetoolsTextApi
      * @param  int $categoryFirstLevel (optional)
      * @param  int $categorySecondLevel (optional)
      * @param  string $keyword (optional)
-     * @param  int $filtering (optional)
+     * @param  int[] $filtering (optional)
      * @param  int $number (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
@@ -337,6 +337,9 @@ class CreativetoolsTextApi
             $queryParams['keyword'] = ObjectSerializer::toQueryValue($keyword);
         }
         // query params
+        if (is_array($filtering)) {
+            $queryParams['filtering'] = $filtering;
+        } else
         if ($filtering !== null) {
             $queryParams['filtering'] = ObjectSerializer::toQueryValue($filtering);
         }

@@ -67,6 +67,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'int',
         'productCatalogId' => 'int',
         'productOuterId' => 'string',
+        'sourceReferenceId' => 'string',
         'width' => 'int',
         'height' => 'int',
         'fileSize' => 'int',
@@ -89,6 +90,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'int64',
         'productCatalogId' => 'int64',
         'productOuterId' => null,
+        'sourceReferenceId' => null,
         'width' => 'int64',
         'height' => 'int64',
         'fileSize' => 'int64',
@@ -132,6 +134,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'last_modified_time',
         'productCatalogId' => 'product_catalog_id',
         'productOuterId' => 'product_outer_id',
+        'sourceReferenceId' => 'source_reference_id',
         'width' => 'width',
         'height' => 'height',
         'fileSize' => 'file_size',
@@ -154,6 +157,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'setLastModifiedTime',
         'productCatalogId' => 'setProductCatalogId',
         'productOuterId' => 'setProductOuterId',
+        'sourceReferenceId' => 'setSourceReferenceId',
         'width' => 'setWidth',
         'height' => 'setHeight',
         'fileSize' => 'setFileSize',
@@ -176,6 +180,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'getLastModifiedTime',
         'productCatalogId' => 'getProductCatalogId',
         'productOuterId' => 'getProductOuterId',
+        'sourceReferenceId' => 'getSourceReferenceId',
         'width' => 'getWidth',
         'height' => 'getHeight',
         'fileSize' => 'getFileSize',
@@ -252,6 +257,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
         $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
         $this->container['productOuterId'] = isset($data['productOuterId']) ? $data['productOuterId'] : null;
+        $this->container['sourceReferenceId'] = isset($data['sourceReferenceId']) ? $data['sourceReferenceId'] : null;
         $this->container['width'] = isset($data['width']) ? $data['width'] : null;
         $this->container['height'] = isset($data['height']) ? $data['height'] : null;
         $this->container['fileSize'] = isset($data['fileSize']) ? $data['fileSize'] : null;
@@ -495,6 +501,30 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     public function setProductOuterId($productOuterId)
     {
         $this->container['productOuterId'] = $productOuterId;
+
+        return $this;
+    }
+
+    /**
+     * Gets sourceReferenceId
+     *
+     * @return string
+     */
+    public function getSourceReferenceId()
+    {
+        return $this->container['sourceReferenceId'];
+    }
+
+    /**
+     * Sets sourceReferenceId
+     *
+     * @param string $sourceReferenceId sourceReferenceId
+     *
+     * @return $this
+     */
+    public function setSourceReferenceId($sourceReferenceId)
+    {
+        $this->container['sourceReferenceId'] = $sourceReferenceId;
 
         return $this;
     }

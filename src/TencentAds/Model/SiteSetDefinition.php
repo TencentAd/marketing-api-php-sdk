@@ -52,6 +52,7 @@ class SiteSetDefinition
     const WECHAT = 'SITE_SET_WECHAT';
     const MOBILE_MYAPP = 'SITE_SET_MOBILE_MYAPP';
     const MOBILE_YYB = 'SITE_SET_MOBILE_YYB';
+    const QQSHOPPING = 'SITE_SET_QQSHOPPING';
     const MOBILE_INNER = 'SITE_SET_MOBILE_INNER';
     const TENCENT_NEWS = 'SITE_SET_TENCENT_NEWS';
     const TENCENT_VIDEO = 'SITE_SET_TENCENT_VIDEO';
@@ -82,6 +83,7 @@ class SiteSetDefinition
     const MINI_GAME_WECHAT = 'SITE_SET_MINI_GAME_WECHAT';
     const MINI_GAME_QQ = 'SITE_SET_MINI_GAME_QQ';
     const MOBILE_GAME = 'SITE_SET_MOBILE_GAME';
+    const TENCENT_VIDEO_OTT = 'SITE_SET_TENCENT_VIDEO_OTT';
     
     /**
      * Gets allowable values of the enum
@@ -98,6 +100,7 @@ class SiteSetDefinition
             self::WECHAT,
             self::MOBILE_MYAPP,
             self::MOBILE_YYB,
+            self::QQSHOPPING,
             self::MOBILE_INNER,
             self::TENCENT_NEWS,
             self::TENCENT_VIDEO,
@@ -128,6 +131,7 @@ class SiteSetDefinition
             self::MINI_GAME_WECHAT,
             self::MINI_GAME_QQ,
             self::MOBILE_GAME,
+            self::TENCENT_VIDEO_OTT,
         ];
     }
 }

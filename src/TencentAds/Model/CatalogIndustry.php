@@ -44,7 +44,9 @@ class CatalogIndustry
     /**
      * Possible values of this enum
      */
-    const INDUSTRY_TYPE_ECOMMERCE = 'INDUSTRY_TYPE_ECOMMERCE';
+    const ECOMMERCE = 'INDUSTRY_TYPE_ECOMMERCE';
+    const READING = 'INDUSTRY_TYPE_READING';
+    const EDUCATION = 'INDUSTRY_TYPE_EDUCATION';
     
     /**
      * Gets allowable values of the enum
@@ -53,7 +55,9 @@ class CatalogIndustry
     public static function getAllowableEnumValues()
     {
         return [
-            self::INDUSTRY_TYPE_ECOMMERCE,
+            self::ECOMMERCE,
+            self::READING,
+            self::EDUCATION,
         ];
     }
 }

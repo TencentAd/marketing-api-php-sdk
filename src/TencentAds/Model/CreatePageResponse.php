@@ -58,8 +58,8 @@ class CreatePageResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pageId' => 'int',
-        'pageServiceId' => 'string',
+        'landingPageId' => 'int',
+        'id' => 'string',
         'code' => 'int',
         'message' => 'string'
     ];
@@ -70,8 +70,8 @@ class CreatePageResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'pageId' => 'int64',
-        'pageServiceId' => null,
+        'landingPageId' => 'int64',
+        'id' => null,
         'code' => 'int64',
         'message' => null
     ];
@@ -103,8 +103,8 @@ class CreatePageResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'pageId' => 'page_id',
-        'pageServiceId' => 'page_service_id',
+        'landingPageId' => 'landingPageId',
+        'id' => 'id',
         'code' => 'code',
         'message' => 'message'
     ];
@@ -115,8 +115,8 @@ class CreatePageResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'pageId' => 'setPageId',
-        'pageServiceId' => 'setPageServiceId',
+        'landingPageId' => 'setLandingPageId',
+        'id' => 'setId',
         'code' => 'setCode',
         'message' => 'setMessage'
     ];
@@ -127,8 +127,8 @@ class CreatePageResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'pageId' => 'getPageId',
-        'pageServiceId' => 'getPageServiceId',
+        'landingPageId' => 'getLandingPageId',
+        'id' => 'getId',
         'code' => 'getCode',
         'message' => 'getMessage'
     ];
@@ -193,8 +193,8 @@ class CreatePageResponse implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['pageId'] = isset($data['pageId']) ? $data['pageId'] : null;
-        $this->container['pageServiceId'] = isset($data['pageServiceId']) ? $data['pageServiceId'] : null;
+        $this->container['landingPageId'] = isset($data['landingPageId']) ? $data['landingPageId'] : null;
+        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
         $this->container['code'] = isset($data['code']) ? $data['code'] : null;
         $this->container['message'] = isset($data['message']) ? $data['message'] : null;
     }
@@ -224,49 +224,49 @@ class CreatePageResponse implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets pageId
+     * Gets landingPageId
      *
      * @return int
      */
-    public function getPageId()
+    public function getLandingPageId()
     {
-        return $this->container['pageId'];
+        return $this->container['landingPageId'];
     }
 
     /**
-     * Sets pageId
+     * Sets landingPageId
      *
-     * @param int $pageId pageId
+     * @param int $landingPageId landingPageId
      *
      * @return $this
      */
-    public function setPageId($pageId)
+    public function setLandingPageId($landingPageId)
     {
-        $this->container['pageId'] = $pageId;
+        $this->container['landingPageId'] = $landingPageId;
 
         return $this;
     }
 
     /**
-     * Gets pageServiceId
+     * Gets id
      *
      * @return string
      */
-    public function getPageServiceId()
+    public function getId()
     {
-        return $this->container['pageServiceId'];
+        return $this->container['id'];
     }
 
     /**
-     * Sets pageServiceId
+     * Sets id
      *
-     * @param string $pageServiceId pageServiceId
+     * @param string $id id
      *
      * @return $this
      */
-    public function setPageServiceId($pageServiceId)
+    public function setId($id)
     {
-        $this->container['pageServiceId'] = $pageServiceId;
+        $this->container['id'] = $id;
 
         return $this;
     }

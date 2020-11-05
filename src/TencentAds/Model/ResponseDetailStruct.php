@@ -65,6 +65,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
         'clickDetail' => '\TencentAds\Model\ClickDetailStruct',
         'conversionDetail' => '\TencentAds\Model\ConversionDetailStruct',
         'cpaDetail' => '\TencentAds\Model\DetailCpaDetailStruct',
+        'creativeDetail' => '\TencentAds\Model\DetailCreativeDetailStruct',
         'optimization' => '\TencentAds\Model\OptimizeContentMainStruct'
     ];
 
@@ -81,6 +82,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
         'clickDetail' => null,
         'conversionDetail' => null,
         'cpaDetail' => null,
+        'creativeDetail' => null,
         'optimization' => null
     ];
 
@@ -118,6 +120,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
         'clickDetail' => 'click_detail',
         'conversionDetail' => 'conversion_detail',
         'cpaDetail' => 'cpa_detail',
+        'creativeDetail' => 'creative_detail',
         'optimization' => 'optimization'
     ];
 
@@ -134,6 +137,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
         'clickDetail' => 'setClickDetail',
         'conversionDetail' => 'setConversionDetail',
         'cpaDetail' => 'setCpaDetail',
+        'creativeDetail' => 'setCreativeDetail',
         'optimization' => 'setOptimization'
     ];
 
@@ -150,6 +154,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
         'clickDetail' => 'getClickDetail',
         'conversionDetail' => 'getConversionDetail',
         'cpaDetail' => 'getCpaDetail',
+        'creativeDetail' => 'getCreativeDetail',
         'optimization' => 'getOptimization'
     ];
 
@@ -220,6 +225,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
         $this->container['clickDetail'] = isset($data['clickDetail']) ? $data['clickDetail'] : null;
         $this->container['conversionDetail'] = isset($data['conversionDetail']) ? $data['conversionDetail'] : null;
         $this->container['cpaDetail'] = isset($data['cpaDetail']) ? $data['cpaDetail'] : null;
+        $this->container['creativeDetail'] = isset($data['creativeDetail']) ? $data['creativeDetail'] : null;
         $this->container['optimization'] = isset($data['optimization']) ? $data['optimization'] : null;
     }
 
@@ -411,6 +417,30 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
     public function setCpaDetail($cpaDetail)
     {
         $this->container['cpaDetail'] = $cpaDetail;
+
+        return $this;
+    }
+
+    /**
+     * Gets creativeDetail
+     *
+     * @return \TencentAds\Model\DetailCreativeDetailStruct
+     */
+    public function getCreativeDetail()
+    {
+        return $this->container['creativeDetail'];
+    }
+
+    /**
+     * Sets creativeDetail
+     *
+     * @param \TencentAds\Model\DetailCreativeDetailStruct $creativeDetail creativeDetail
+     *
+     * @return $this
+     */
+    public function setCreativeDetail($creativeDetail)
+    {
+        $this->container['creativeDetail'] = $creativeDetail;
 
         return $this;
     }

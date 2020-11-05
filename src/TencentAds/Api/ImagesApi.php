@@ -756,7 +756,7 @@ class ImagesApi
     /**
      * Operation imagesUpdate
      *
-     * 修改图片名称
+     * 修改图片信息
      *
      * @param  \TencentAds\Model\ImagesUpdateRequest $data data (required)
      *
@@ -773,7 +773,7 @@ class ImagesApi
     /**
      * Operation imagesUpdateWithHttpInfo
      *
-     * 修改图片名称
+     * 修改图片信息
      *
      * @param  \TencentAds\Model\ImagesUpdateRequest $data (required)
      *
@@ -848,7 +848,7 @@ class ImagesApi
     /**
      * Operation imagesUpdateAsync
      *
-     * 修改图片名称
+     * 修改图片信息
      *
      * @param  \TencentAds\Model\ImagesUpdateRequest $data (required)
      *
@@ -868,7 +868,7 @@ class ImagesApi
     /**
      * Operation imagesUpdateAsyncWithHttpInfo
      *
-     * 修改图片名称
+     * 修改图片信息
      *
      * @param  \TencentAds\Model\ImagesUpdateRequest $data (required)
      *

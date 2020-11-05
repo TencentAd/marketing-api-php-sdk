@@ -68,6 +68,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
         'pageType' => '\TencentAds\Model\PageTypeRead',
         'sourceType' => '\TencentAds\Model\WechatPageSourceType',
         'videoResourceStatus' => '\TencentAds\Model\WechatPageResourceStatus',
+        'canvasType' => '\TencentAds\Model\CanvasType',
         'pageElementsSpecList' => '\TencentAds\Model\PageElementsStruct[]'
     ];
 
@@ -87,6 +88,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
         'pageType' => null,
         'sourceType' => null,
         'videoResourceStatus' => null,
+        'canvasType' => null,
         'pageElementsSpecList' => null
     ];
 
@@ -127,6 +129,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
         'pageType' => 'page_type',
         'sourceType' => 'source_type',
         'videoResourceStatus' => 'video_resource_status',
+        'canvasType' => 'canvas_type',
         'pageElementsSpecList' => 'page_elements_spec_list'
     ];
 
@@ -146,6 +149,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
         'pageType' => 'setPageType',
         'sourceType' => 'setSourceType',
         'videoResourceStatus' => 'setVideoResourceStatus',
+        'canvasType' => 'setCanvasType',
         'pageElementsSpecList' => 'setPageElementsSpecList'
     ];
 
@@ -165,6 +169,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
         'pageType' => 'getPageType',
         'sourceType' => 'getSourceType',
         'videoResourceStatus' => 'getVideoResourceStatus',
+        'canvasType' => 'getCanvasType',
         'pageElementsSpecList' => 'getPageElementsSpecList'
     ];
 
@@ -238,6 +243,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
         $this->container['sourceType'] = isset($data['sourceType']) ? $data['sourceType'] : null;
         $this->container['videoResourceStatus'] = isset($data['videoResourceStatus']) ? $data['videoResourceStatus'] : null;
+        $this->container['canvasType'] = isset($data['canvasType']) ? $data['canvasType'] : null;
         $this->container['pageElementsSpecList'] = isset($data['pageElementsSpecList']) ? $data['pageElementsSpecList'] : null;
     }
 
@@ -501,6 +507,30 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     public function setVideoResourceStatus($videoResourceStatus)
     {
         $this->container['videoResourceStatus'] = $videoResourceStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets canvasType
+     *
+     * @return \TencentAds\Model\CanvasType
+     */
+    public function getCanvasType()
+    {
+        return $this->container['canvasType'];
+    }
+
+    /**
+     * Sets canvasType
+     *
+     * @param \TencentAds\Model\CanvasType $canvasType canvasType
+     *
+     * @return $this
+     */
+    public function setCanvasType($canvasType)
+    {
+        $this->container['canvasType'] = $canvasType;
 
         return $this;
     }

@@ -67,6 +67,7 @@ class DeepConversionBehaviorGoal
     const PURCHASE_MEMBER_CARD = 'OPTIMIZATIONGOAL_PURCHASE_MEMBER_CARD';
     const CONFIRM_EFFECTIVE_LEADS_RESERVATION = 'OPTIMIZATIONGOAL_CONFIRM_EFFECTIVE_LEADS_RESERVATION';
     const LEADS_COLLECT = 'OPTIMIZATIONGOAL_LEADS_COLLECT';
+    const PROMOTION_VIEW_KEY_PAGE = 'OPTIMIZATIONGOAL_PROMOTION_VIEW_KEY_PAGE';
     
     /**
      * Gets allowable values of the enum
@@ -98,6 +99,7 @@ class DeepConversionBehaviorGoal
             self::PURCHASE_MEMBER_CARD,
             self::CONFIRM_EFFECTIVE_LEADS_RESERVATION,
             self::LEADS_COLLECT,
+            self::PROMOTION_VIEW_KEY_PAGE,
         ];
     }
 }

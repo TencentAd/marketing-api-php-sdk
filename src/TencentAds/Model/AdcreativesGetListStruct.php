@@ -95,6 +95,8 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'playablePageMaterialId' => 'string',
         'videoEndPage' => '\TencentAds\Model\VideoEndPageSpec',
         'feedsVideoCommentSwitch' => 'bool',
+        'webviewUrl' => 'string',
+        'simpleCanvasSubType' => '\TencentAds\Model\SimpleCanvasSubType',
         'floatingZone' => '\TencentAds\Model\FloatingZone',
         'marketingPendantImageId' => 'string',
         'adcreativeTemplateId' => 'int',
@@ -144,6 +146,8 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'playablePageMaterialId' => null,
         'videoEndPage' => null,
         'feedsVideoCommentSwitch' => null,
+        'webviewUrl' => null,
+        'simpleCanvasSubType' => null,
         'floatingZone' => null,
         'marketingPendantImageId' => null,
         'adcreativeTemplateId' => 'int64',
@@ -214,6 +218,8 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'playablePageMaterialId' => 'playable_page_material_id',
         'videoEndPage' => 'video_end_page',
         'feedsVideoCommentSwitch' => 'feeds_video_comment_switch',
+        'webviewUrl' => 'webview_url',
+        'simpleCanvasSubType' => 'simple_canvas_sub_type',
         'floatingZone' => 'floating_zone',
         'marketingPendantImageId' => 'marketing_pendant_image_id',
         'adcreativeTemplateId' => 'adcreative_template_id',
@@ -263,6 +269,8 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'playablePageMaterialId' => 'setPlayablePageMaterialId',
         'videoEndPage' => 'setVideoEndPage',
         'feedsVideoCommentSwitch' => 'setFeedsVideoCommentSwitch',
+        'webviewUrl' => 'setWebviewUrl',
+        'simpleCanvasSubType' => 'setSimpleCanvasSubType',
         'floatingZone' => 'setFloatingZone',
         'marketingPendantImageId' => 'setMarketingPendantImageId',
         'adcreativeTemplateId' => 'setAdcreativeTemplateId',
@@ -312,6 +320,8 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'playablePageMaterialId' => 'getPlayablePageMaterialId',
         'videoEndPage' => 'getVideoEndPage',
         'feedsVideoCommentSwitch' => 'getFeedsVideoCommentSwitch',
+        'webviewUrl' => 'getWebviewUrl',
+        'simpleCanvasSubType' => 'getSimpleCanvasSubType',
         'floatingZone' => 'getFloatingZone',
         'marketingPendantImageId' => 'getMarketingPendantImageId',
         'adcreativeTemplateId' => 'getAdcreativeTemplateId',
@@ -415,6 +425,8 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['playablePageMaterialId'] = isset($data['playablePageMaterialId']) ? $data['playablePageMaterialId'] : null;
         $this->container['videoEndPage'] = isset($data['videoEndPage']) ? $data['videoEndPage'] : null;
         $this->container['feedsVideoCommentSwitch'] = isset($data['feedsVideoCommentSwitch']) ? $data['feedsVideoCommentSwitch'] : null;
+        $this->container['webviewUrl'] = isset($data['webviewUrl']) ? $data['webviewUrl'] : null;
+        $this->container['simpleCanvasSubType'] = isset($data['simpleCanvasSubType']) ? $data['simpleCanvasSubType'] : null;
         $this->container['floatingZone'] = isset($data['floatingZone']) ? $data['floatingZone'] : null;
         $this->container['marketingPendantImageId'] = isset($data['marketingPendantImageId']) ? $data['marketingPendantImageId'] : null;
         $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
@@ -1329,6 +1341,54 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setFeedsVideoCommentSwitch($feedsVideoCommentSwitch)
     {
         $this->container['feedsVideoCommentSwitch'] = $feedsVideoCommentSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets webviewUrl
+     *
+     * @return string
+     */
+    public function getWebviewUrl()
+    {
+        return $this->container['webviewUrl'];
+    }
+
+    /**
+     * Sets webviewUrl
+     *
+     * @param string $webviewUrl webviewUrl
+     *
+     * @return $this
+     */
+    public function setWebviewUrl($webviewUrl)
+    {
+        $this->container['webviewUrl'] = $webviewUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets simpleCanvasSubType
+     *
+     * @return \TencentAds\Model\SimpleCanvasSubType
+     */
+    public function getSimpleCanvasSubType()
+    {
+        return $this->container['simpleCanvasSubType'];
+    }
+
+    /**
+     * Sets simpleCanvasSubType
+     *
+     * @param \TencentAds\Model\SimpleCanvasSubType $simpleCanvasSubType simpleCanvasSubType
+     *
+     * @return $this
+     */
+    public function setSimpleCanvasSubType($simpleCanvasSubType)
+    {
+        $this->container['simpleCanvasSubType'] = $simpleCanvasSubType;
 
         return $this;
     }

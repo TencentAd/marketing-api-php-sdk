@@ -48,6 +48,9 @@ class AssetType
     const CANVAS_WECHAT = 'ASSET_TYPE_CANVAS_WECHAT';
     const CANVAS_IMAGE = 'ASSET_TYPE_CANVAS_IMAGE';
     const CANVAS_VIDEO = 'ASSET_TYPE_CANVAS_VIDEO';
+    const FENGYE = 'ASSET_TYPE_FENGYE';
+    const DYNAMIC_AD_TEMPLATE = 'ASSET_TYPE_DYNAMIC_AD_TEMPLATE';
+    const AD_QUALIFICATION = 'ASSET_TYPE_AD_QUALIFICATION';
     
     /**
      * Gets allowable values of the enum
@@ -60,6 +63,9 @@ class AssetType
             self::CANVAS_WECHAT,
             self::CANVAS_IMAGE,
             self::CANVAS_VIDEO,
+            self::FENGYE,
+            self::DYNAMIC_AD_TEMPLATE,
+            self::AD_QUALIFICATION,
         ];
     }
 }

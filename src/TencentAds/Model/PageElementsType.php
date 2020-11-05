@@ -55,6 +55,7 @@ class PageElementsType
     const SHELF = 'SHELF';
     const FLOAT_BUTTON = 'FLOAT_BUTTON';
     const GOODS = 'GOODS';
+    const COMMON_COMPONENT = 'COMMON_COMPONENT';
     
     /**
      * Gets allowable values of the enum
@@ -74,6 +75,7 @@ class PageElementsType
             self::SHELF,
             self::FLOAT_BUTTON,
             self::GOODS,
+            self::COMMON_COMPONENT,
         ];
     }
 }

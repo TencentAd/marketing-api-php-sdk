@@ -53,6 +53,18 @@ class ConversionTargetType
     const CONSULT = 'CONVERSION_TARGET_CONSULT';
     const DOWNLOAD = 'CONVERSION_TARGET_DOWNLOAD';
     const PLAYING = 'CONVERSION_TARGET_PLAYING';
+    const CLICK = 'CONVERSION_TARGET_CLICK';
+    const SEE = 'CONVERSION_TARGET_SEE';
+    const INVOLVE = 'CONVERSION_TARGET_INVOLVE';
+    const OPEN = 'CONVERSION_TARGET_OPEN';
+    const PURCHASE = 'CONVERSION_TARGET_PURCHASE';
+    const BROWSE = 'CONVERSION_TARGET_BROWSE';
+    const _TRY = 'CONVERSION_TARGET_TRY';
+    const DRIVE = 'CONVERSION_TARGET_DRIVE';
+    const ENTER = 'CONVERSION_TARGET_ENTER';
+    const READ = 'CONVERSION_TARGET_READ';
+    const FOLLOW = 'CONVERSION_TARGET_FOLLOW';
+    const _USE = 'CONVERSION_TARGET_USE';
     
     /**
      * Gets allowable values of the enum
@@ -70,6 +82,18 @@ class ConversionTargetType
             self::CONSULT,
             self::DOWNLOAD,
             self::PLAYING,
+            self::CLICK,
+            self::SEE,
+            self::INVOLVE,
+            self::OPEN,
+            self::PURCHASE,
+            self::BROWSE,
+            self::_TRY,
+            self::DRIVE,
+            self::ENTER,
+            self::READ,
+            self::FOLLOW,
+            self::_USE,
         ];
     }
 }
