@@ -65,6 +65,7 @@ class PromotedObjectGetSpec implements ModelInterface, ArrayAccess
         'appAndroidUnionSpec' => '\TencentAds\Model\AppAndroidUnionSpec',
         'appAndroidMyappSpec' => '\TencentAds\Model\AppAndroidMyappSpec',
         'dianpingShop' => '\TencentAds\Model\ProductTypeDianpingShop',
+        'miniGameWechatSpec' => '\TencentAds\Model\MiniGameWechatSpec',
         'qqBrowserMiniProgram' => '\TencentAds\Model\QqBrowserMiniProgram',
         'localAdsSpec' => '\TencentAds\Model\LocalAdsSpec'
     ];
@@ -82,6 +83,7 @@ class PromotedObjectGetSpec implements ModelInterface, ArrayAccess
         'appAndroidUnionSpec' => null,
         'appAndroidMyappSpec' => null,
         'dianpingShop' => null,
+        'miniGameWechatSpec' => null,
         'qqBrowserMiniProgram' => null,
         'localAdsSpec' => null
     ];
@@ -120,6 +122,7 @@ class PromotedObjectGetSpec implements ModelInterface, ArrayAccess
         'appAndroidUnionSpec' => 'app_android_union_spec',
         'appAndroidMyappSpec' => 'app_android_myapp_spec',
         'dianpingShop' => 'dianping_shop',
+        'miniGameWechatSpec' => 'mini_game_wechat_spec',
         'qqBrowserMiniProgram' => 'qq_browser_mini_program',
         'localAdsSpec' => 'local_ads_spec'
     ];
@@ -137,6 +140,7 @@ class PromotedObjectGetSpec implements ModelInterface, ArrayAccess
         'appAndroidUnionSpec' => 'setAppAndroidUnionSpec',
         'appAndroidMyappSpec' => 'setAppAndroidMyappSpec',
         'dianpingShop' => 'setDianpingShop',
+        'miniGameWechatSpec' => 'setMiniGameWechatSpec',
         'qqBrowserMiniProgram' => 'setQqBrowserMiniProgram',
         'localAdsSpec' => 'setLocalAdsSpec'
     ];
@@ -154,6 +158,7 @@ class PromotedObjectGetSpec implements ModelInterface, ArrayAccess
         'appAndroidUnionSpec' => 'getAppAndroidUnionSpec',
         'appAndroidMyappSpec' => 'getAppAndroidMyappSpec',
         'dianpingShop' => 'getDianpingShop',
+        'miniGameWechatSpec' => 'getMiniGameWechatSpec',
         'qqBrowserMiniProgram' => 'getQqBrowserMiniProgram',
         'localAdsSpec' => 'getLocalAdsSpec'
     ];
@@ -225,6 +230,7 @@ class PromotedObjectGetSpec implements ModelInterface, ArrayAccess
         $this->container['appAndroidUnionSpec'] = isset($data['appAndroidUnionSpec']) ? $data['appAndroidUnionSpec'] : null;
         $this->container['appAndroidMyappSpec'] = isset($data['appAndroidMyappSpec']) ? $data['appAndroidMyappSpec'] : null;
         $this->container['dianpingShop'] = isset($data['dianpingShop']) ? $data['dianpingShop'] : null;
+        $this->container['miniGameWechatSpec'] = isset($data['miniGameWechatSpec']) ? $data['miniGameWechatSpec'] : null;
         $this->container['qqBrowserMiniProgram'] = isset($data['qqBrowserMiniProgram']) ? $data['qqBrowserMiniProgram'] : null;
         $this->container['localAdsSpec'] = isset($data['localAdsSpec']) ? $data['localAdsSpec'] : null;
     }
@@ -417,6 +423,30 @@ class PromotedObjectGetSpec implements ModelInterface, ArrayAccess
     public function setDianpingShop($dianpingShop)
     {
         $this->container['dianpingShop'] = $dianpingShop;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameWechatSpec
+     *
+     * @return \TencentAds\Model\MiniGameWechatSpec
+     */
+    public function getMiniGameWechatSpec()
+    {
+        return $this->container['miniGameWechatSpec'];
+    }
+
+    /**
+     * Sets miniGameWechatSpec
+     *
+     * @param \TencentAds\Model\MiniGameWechatSpec $miniGameWechatSpec miniGameWechatSpec
+     *
+     * @return $this
+     */
+    public function setMiniGameWechatSpec($miniGameWechatSpec)
+    {
+        $this->container['miniGameWechatSpec'] = $miniGameWechatSpec;
 
         return $this;
     }

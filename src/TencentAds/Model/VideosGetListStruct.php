@@ -88,7 +88,8 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'sourceType' => '\TencentAds\Model\MediaSourceType',
         'productCatalogId' => 'string',
         'productOuterId' => 'string',
-        'sourceReferenceId' => 'string'
+        'sourceReferenceId' => 'string',
+        'ownerAccountId' => 'string'
     ];
 
     /**
@@ -127,7 +128,8 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'sourceType' => null,
         'productCatalogId' => null,
         'productOuterId' => null,
-        'sourceReferenceId' => null
+        'sourceReferenceId' => null,
+        'ownerAccountId' => null
     ];
 
     /**
@@ -187,7 +189,8 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'sourceType' => 'source_type',
         'productCatalogId' => 'product_catalog_id',
         'productOuterId' => 'product_outer_id',
-        'sourceReferenceId' => 'source_reference_id'
+        'sourceReferenceId' => 'source_reference_id',
+        'ownerAccountId' => 'owner_account_id'
     ];
 
     /**
@@ -226,7 +229,8 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'sourceType' => 'setSourceType',
         'productCatalogId' => 'setProductCatalogId',
         'productOuterId' => 'setProductOuterId',
-        'sourceReferenceId' => 'setSourceReferenceId'
+        'sourceReferenceId' => 'setSourceReferenceId',
+        'ownerAccountId' => 'setOwnerAccountId'
     ];
 
     /**
@@ -265,7 +269,8 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'sourceType' => 'getSourceType',
         'productCatalogId' => 'getProductCatalogId',
         'productOuterId' => 'getProductOuterId',
-        'sourceReferenceId' => 'getSourceReferenceId'
+        'sourceReferenceId' => 'getSourceReferenceId',
+        'ownerAccountId' => 'getOwnerAccountId'
     ];
 
     /**
@@ -359,6 +364,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
         $this->container['productOuterId'] = isset($data['productOuterId']) ? $data['productOuterId'] : null;
         $this->container['sourceReferenceId'] = isset($data['sourceReferenceId']) ? $data['sourceReferenceId'] : null;
+        $this->container['ownerAccountId'] = isset($data['ownerAccountId']) ? $data['ownerAccountId'] : null;
     }
 
     /**
@@ -1125,6 +1131,30 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     public function setSourceReferenceId($sourceReferenceId)
     {
         $this->container['sourceReferenceId'] = $sourceReferenceId;
+
+        return $this;
+    }
+
+    /**
+     * Gets ownerAccountId
+     *
+     * @return string
+     */
+    public function getOwnerAccountId()
+    {
+        return $this->container['ownerAccountId'];
+    }
+
+    /**
+     * Sets ownerAccountId
+     *
+     * @param string $ownerAccountId ownerAccountId
+     *
+     * @return $this
+     */
+    public function setOwnerAccountId($ownerAccountId)
+    {
+        $this->container['ownerAccountId'] = $ownerAccountId;
 
         return $this;
     }

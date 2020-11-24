@@ -56,6 +56,8 @@ class PageElementsType
     const FLOAT_BUTTON = 'FLOAT_BUTTON';
     const GOODS = 'GOODS';
     const COMMON_COMPONENT = 'COMMON_COMPONENT';
+    const SWIPE_WEBVIEW = 'SWIPE_WEBVIEW';
+    const WEBVIEW = 'WEBVIEW';
     
     /**
      * Gets allowable values of the enum
@@ -76,6 +78,8 @@ class PageElementsType
             self::FLOAT_BUTTON,
             self::GOODS,
             self::COMMON_COMPONENT,
+            self::SWIPE_WEBVIEW,
+            self::WEBVIEW,
         ];
     }
 }

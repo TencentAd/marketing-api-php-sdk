@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * ConversionTargetType Class Doc Comment
  *
  * @category Class
- * @description 数据展示转化数据量类型，仅投朋友圈流量且conversion_data_type为CONVERSION_DATA_ADMETRIC时可设置
+ * @description 数据展示转化行为
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

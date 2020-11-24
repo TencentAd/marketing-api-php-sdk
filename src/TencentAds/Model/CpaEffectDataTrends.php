@@ -59,8 +59,8 @@ class CpaEffectDataTrends implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'rank' => 'int',
-        'targetCpa' => 'string[]',
-        'realCpa' => 'string[]'
+        'targetCpa' => '\TencentAds\Model\PointStruct[]',
+        'realCpa' => '\TencentAds\Model\PointStruct[]'
     ];
 
     /**
@@ -244,7 +244,7 @@ class CpaEffectDataTrends implements ModelInterface, ArrayAccess
     /**
      * Gets targetCpa
      *
-     * @return string[]
+     * @return \TencentAds\Model\PointStruct[]
      */
     public function getTargetCpa()
     {
@@ -254,7 +254,7 @@ class CpaEffectDataTrends implements ModelInterface, ArrayAccess
     /**
      * Sets targetCpa
      *
-     * @param string[] $targetCpa targetCpa
+     * @param \TencentAds\Model\PointStruct[] $targetCpa targetCpa
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class CpaEffectDataTrends implements ModelInterface, ArrayAccess
     /**
      * Gets realCpa
      *
-     * @return string[]
+     * @return \TencentAds\Model\PointStruct[]
      */
     public function getRealCpa()
     {
@@ -278,7 +278,7 @@ class CpaEffectDataTrends implements ModelInterface, ArrayAccess
     /**
      * Sets realCpa
      *
-     * @param string[] $realCpa realCpa
+     * @param \TencentAds\Model\PointStruct[] $realCpa realCpa
      *
      * @return $this
      */

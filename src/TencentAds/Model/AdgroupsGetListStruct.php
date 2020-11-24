@@ -67,9 +67,10 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'billingEvent' => '\TencentAds\Model\BillingEvent',
         'bidAmount' => 'int',
         'dailyBudget' => 'int',
-        'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
+        'promotedObjectType' => '\TencentAds\Model\PromotedObject',
         'promotedObjectId' => 'string',
         'appAndroidChannelPackageId' => 'string',
+        'miniGameProgramId' => 'string',
         'targetingId' => 'int',
         'targeting' => '\TencentAds\Model\ReadTargetingSettingForAdgroup',
         'targetingTranslation' => 'string',
@@ -99,6 +100,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'expandTargeting' => 'string[]',
         'deepConversionSpec' => '\TencentAds\Model\DeepConversionSpec',
         'deepOptimizationActionType' => '\TencentAds\Model\DeepOptimizationActionType',
+        'poiList' => 'string[]',
         'conversionId' => 'int',
         'deepConversionBehaviorBid' => 'int',
         'deepConversionWorthRate' => 'double',
@@ -108,7 +110,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'status' => '\TencentAds\Model\CalcStatus',
         'bidAdjustment' => '\TencentAds\Model\BidAdjustment',
         'autoAcquisitionEnabled' => 'bool',
-        'autoAcquisitionBudget' => 'int'
+        'autoAcquisitionBudget' => 'int',
+        'autoDerivedCreativeEnabled' => 'bool'
     ];
 
     /**
@@ -129,6 +132,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectType' => null,
         'promotedObjectId' => null,
         'appAndroidChannelPackageId' => null,
+        'miniGameProgramId' => null,
         'targetingId' => 'int64',
         'targeting' => null,
         'targetingTranslation' => null,
@@ -158,6 +162,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'expandTargeting' => null,
         'deepConversionSpec' => null,
         'deepOptimizationActionType' => null,
+        'poiList' => null,
         'conversionId' => 'int64',
         'deepConversionBehaviorBid' => 'int64',
         'deepConversionWorthRate' => 'double',
@@ -167,7 +172,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'status' => null,
         'bidAdjustment' => null,
         'autoAcquisitionEnabled' => null,
-        'autoAcquisitionBudget' => 'int64'
+        'autoAcquisitionBudget' => 'int64',
+        'autoDerivedCreativeEnabled' => null
     ];
 
     /**
@@ -209,6 +215,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectType' => 'promoted_object_type',
         'promotedObjectId' => 'promoted_object_id',
         'appAndroidChannelPackageId' => 'app_android_channel_package_id',
+        'miniGameProgramId' => 'mini_game_program_id',
         'targetingId' => 'targeting_id',
         'targeting' => 'targeting',
         'targetingTranslation' => 'targeting_translation',
@@ -238,6 +245,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'expandTargeting' => 'expand_targeting',
         'deepConversionSpec' => 'deep_conversion_spec',
         'deepOptimizationActionType' => 'deep_optimization_action_type',
+        'poiList' => 'poi_list',
         'conversionId' => 'conversion_id',
         'deepConversionBehaviorBid' => 'deep_conversion_behavior_bid',
         'deepConversionWorthRate' => 'deep_conversion_worth_rate',
@@ -247,7 +255,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'status' => 'status',
         'bidAdjustment' => 'bid_adjustment',
         'autoAcquisitionEnabled' => 'auto_acquisition_enabled',
-        'autoAcquisitionBudget' => 'auto_acquisition_budget'
+        'autoAcquisitionBudget' => 'auto_acquisition_budget',
+        'autoDerivedCreativeEnabled' => 'auto_derived_creative_enabled'
     ];
 
     /**
@@ -268,6 +277,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectType' => 'setPromotedObjectType',
         'promotedObjectId' => 'setPromotedObjectId',
         'appAndroidChannelPackageId' => 'setAppAndroidChannelPackageId',
+        'miniGameProgramId' => 'setMiniGameProgramId',
         'targetingId' => 'setTargetingId',
         'targeting' => 'setTargeting',
         'targetingTranslation' => 'setTargetingTranslation',
@@ -297,6 +307,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'expandTargeting' => 'setExpandTargeting',
         'deepConversionSpec' => 'setDeepConversionSpec',
         'deepOptimizationActionType' => 'setDeepOptimizationActionType',
+        'poiList' => 'setPoiList',
         'conversionId' => 'setConversionId',
         'deepConversionBehaviorBid' => 'setDeepConversionBehaviorBid',
         'deepConversionWorthRate' => 'setDeepConversionWorthRate',
@@ -306,7 +317,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'status' => 'setStatus',
         'bidAdjustment' => 'setBidAdjustment',
         'autoAcquisitionEnabled' => 'setAutoAcquisitionEnabled',
-        'autoAcquisitionBudget' => 'setAutoAcquisitionBudget'
+        'autoAcquisitionBudget' => 'setAutoAcquisitionBudget',
+        'autoDerivedCreativeEnabled' => 'setAutoDerivedCreativeEnabled'
     ];
 
     /**
@@ -327,6 +339,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectType' => 'getPromotedObjectType',
         'promotedObjectId' => 'getPromotedObjectId',
         'appAndroidChannelPackageId' => 'getAppAndroidChannelPackageId',
+        'miniGameProgramId' => 'getMiniGameProgramId',
         'targetingId' => 'getTargetingId',
         'targeting' => 'getTargeting',
         'targetingTranslation' => 'getTargetingTranslation',
@@ -356,6 +369,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'expandTargeting' => 'getExpandTargeting',
         'deepConversionSpec' => 'getDeepConversionSpec',
         'deepOptimizationActionType' => 'getDeepOptimizationActionType',
+        'poiList' => 'getPoiList',
         'conversionId' => 'getConversionId',
         'deepConversionBehaviorBid' => 'getDeepConversionBehaviorBid',
         'deepConversionWorthRate' => 'getDeepConversionWorthRate',
@@ -365,7 +379,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'status' => 'getStatus',
         'bidAdjustment' => 'getBidAdjustment',
         'autoAcquisitionEnabled' => 'getAutoAcquisitionEnabled',
-        'autoAcquisitionBudget' => 'getAutoAcquisitionBudget'
+        'autoAcquisitionBudget' => 'getAutoAcquisitionBudget',
+        'autoDerivedCreativeEnabled' => 'getAutoDerivedCreativeEnabled'
     ];
 
     /**
@@ -440,6 +455,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
         $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
         $this->container['appAndroidChannelPackageId'] = isset($data['appAndroidChannelPackageId']) ? $data['appAndroidChannelPackageId'] : null;
+        $this->container['miniGameProgramId'] = isset($data['miniGameProgramId']) ? $data['miniGameProgramId'] : null;
         $this->container['targetingId'] = isset($data['targetingId']) ? $data['targetingId'] : null;
         $this->container['targeting'] = isset($data['targeting']) ? $data['targeting'] : null;
         $this->container['targetingTranslation'] = isset($data['targetingTranslation']) ? $data['targetingTranslation'] : null;
@@ -469,6 +485,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['expandTargeting'] = isset($data['expandTargeting']) ? $data['expandTargeting'] : null;
         $this->container['deepConversionSpec'] = isset($data['deepConversionSpec']) ? $data['deepConversionSpec'] : null;
         $this->container['deepOptimizationActionType'] = isset($data['deepOptimizationActionType']) ? $data['deepOptimizationActionType'] : null;
+        $this->container['poiList'] = isset($data['poiList']) ? $data['poiList'] : null;
         $this->container['conversionId'] = isset($data['conversionId']) ? $data['conversionId'] : null;
         $this->container['deepConversionBehaviorBid'] = isset($data['deepConversionBehaviorBid']) ? $data['deepConversionBehaviorBid'] : null;
         $this->container['deepConversionWorthRate'] = isset($data['deepConversionWorthRate']) ? $data['deepConversionWorthRate'] : null;
@@ -479,6 +496,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['bidAdjustment'] = isset($data['bidAdjustment']) ? $data['bidAdjustment'] : null;
         $this->container['autoAcquisitionEnabled'] = isset($data['autoAcquisitionEnabled']) ? $data['autoAcquisitionEnabled'] : null;
         $this->container['autoAcquisitionBudget'] = isset($data['autoAcquisitionBudget']) ? $data['autoAcquisitionBudget'] : null;
+        $this->container['autoDerivedCreativeEnabled'] = isset($data['autoDerivedCreativeEnabled']) ? $data['autoDerivedCreativeEnabled'] : null;
     }
 
     /**
@@ -724,7 +742,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObjectType
+     * @return \TencentAds\Model\PromotedObject
      */
     public function getPromotedObjectType()
     {
@@ -734,7 +752,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObject $promotedObjectType promotedObjectType
      *
      * @return $this
      */
@@ -789,6 +807,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setAppAndroidChannelPackageId($appAndroidChannelPackageId)
     {
         $this->container['appAndroidChannelPackageId'] = $appAndroidChannelPackageId;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameProgramId
+     *
+     * @return string
+     */
+    public function getMiniGameProgramId()
+    {
+        return $this->container['miniGameProgramId'];
+    }
+
+    /**
+     * Sets miniGameProgramId
+     *
+     * @param string $miniGameProgramId miniGameProgramId
+     *
+     * @return $this
+     */
+    public function setMiniGameProgramId($miniGameProgramId)
+    {
+        $this->container['miniGameProgramId'] = $miniGameProgramId;
 
         return $this;
     }
@@ -1490,6 +1532,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets poiList
+     *
+     * @return string[]
+     */
+    public function getPoiList()
+    {
+        return $this->container['poiList'];
+    }
+
+    /**
+     * Sets poiList
+     *
+     * @param string[] $poiList poiList
+     *
+     * @return $this
+     */
+    public function setPoiList($poiList)
+    {
+        $this->container['poiList'] = $poiList;
+
+        return $this;
+    }
+
+    /**
      * Gets conversionId
      *
      * @return int
@@ -1725,6 +1791,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setAutoAcquisitionBudget($autoAcquisitionBudget)
     {
         $this->container['autoAcquisitionBudget'] = $autoAcquisitionBudget;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoDerivedCreativeEnabled
+     *
+     * @return bool
+     */
+    public function getAutoDerivedCreativeEnabled()
+    {
+        return $this->container['autoDerivedCreativeEnabled'];
+    }
+
+    /**
+     * Sets autoDerivedCreativeEnabled
+     *
+     * @param bool $autoDerivedCreativeEnabled autoDerivedCreativeEnabled
+     *
+     * @return $this
+     */
+    public function setAutoDerivedCreativeEnabled($autoDerivedCreativeEnabled)
+    {
+        $this->container['autoDerivedCreativeEnabled'] = $autoDerivedCreativeEnabled;
 
         return $this;
     }

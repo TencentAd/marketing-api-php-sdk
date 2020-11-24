@@ -68,7 +68,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'deepLinkUrl' => 'string',
         'automaticSiteEnabled' => 'bool',
         'siteSet' => 'string[]',
-        'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
+        'promotedObjectType' => '\TencentAds\Model\PromotedObject',
         'promotedObjectId' => 'string',
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
@@ -562,7 +562,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObjectType
+     * @return \TencentAds\Model\PromotedObject
      */
     public function getPromotedObjectType()
     {
@@ -572,7 +572,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObject $promotedObjectType promotedObjectType
      *
      * @return $this
      */

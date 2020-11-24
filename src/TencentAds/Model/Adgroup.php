@@ -61,7 +61,7 @@ class Adgroup implements ModelInterface, ArrayAccess
         'campaignType' => '\TencentAds\Model\CampaignType',
         'billingEvent' => '\TencentAds\Model\BillingEvent',
         'sceneSpec' => '\TencentAds\Model\SceneTargeting',
-        'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
+        'promotedObjectType' => '\TencentAds\Model\PromotedObject',
         'promotedObjectId' => 'string'
     ];
 
@@ -304,7 +304,7 @@ class Adgroup implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObjectType
+     * @return \TencentAds\Model\PromotedObject
      */
     public function getPromotedObjectType()
     {
@@ -314,7 +314,7 @@ class Adgroup implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObject $promotedObjectType promotedObjectType
      *
      * @return $this
      */

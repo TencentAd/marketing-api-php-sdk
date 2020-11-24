@@ -60,6 +60,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'adgroupName' => 'string',
         'beginDate' => 'string',
+        'configuredStatus' => '\TencentAds\Model\AdStatus',
         'targeting' => '\TencentAds\Model\DpWriteTargetingSetting',
         'poiList' => 'string[]',
         'coldStartAudience' => 'int[]'
@@ -73,6 +74,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'adgroupName' => null,
         'beginDate' => null,
+        'configuredStatus' => null,
         'targeting' => null,
         'poiList' => null,
         'coldStartAudience' => 'int64'
@@ -107,6 +109,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'adgroupName' => 'adgroup_name',
         'beginDate' => 'begin_date',
+        'configuredStatus' => 'configured_status',
         'targeting' => 'targeting',
         'poiList' => 'poi_list',
         'coldStartAudience' => 'cold_start_audience'
@@ -120,6 +123,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
     protected static $setters = [
         'adgroupName' => 'setAdgroupName',
         'beginDate' => 'setBeginDate',
+        'configuredStatus' => 'setConfiguredStatus',
         'targeting' => 'setTargeting',
         'poiList' => 'setPoiList',
         'coldStartAudience' => 'setColdStartAudience'
@@ -133,6 +137,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
     protected static $getters = [
         'adgroupName' => 'getAdgroupName',
         'beginDate' => 'getBeginDate',
+        'configuredStatus' => 'getConfiguredStatus',
         'targeting' => 'getTargeting',
         'poiList' => 'getPoiList',
         'coldStartAudience' => 'getColdStartAudience'
@@ -200,6 +205,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
     {
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['beginDate'] = isset($data['beginDate']) ? $data['beginDate'] : null;
+        $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
         $this->container['targeting'] = isset($data['targeting']) ? $data['targeting'] : null;
         $this->container['poiList'] = isset($data['poiList']) ? $data['poiList'] : null;
         $this->container['coldStartAudience'] = isset($data['coldStartAudience']) ? $data['coldStartAudience'] : null;
@@ -273,6 +279,30 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
     public function setBeginDate($beginDate)
     {
         $this->container['beginDate'] = $beginDate;
+
+        return $this;
+    }
+
+    /**
+     * Gets configuredStatus
+     *
+     * @return \TencentAds\Model\AdStatus
+     */
+    public function getConfiguredStatus()
+    {
+        return $this->container['configuredStatus'];
+    }
+
+    /**
+     * Sets configuredStatus
+     *
+     * @param \TencentAds\Model\AdStatus $configuredStatus configuredStatus
+     *
+     * @return $this
+     */
+    public function setConfiguredStatus($configuredStatus)
+    {
+        $this->container['configuredStatus'] = $configuredStatus;
 
         return $this;
     }

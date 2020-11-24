@@ -62,7 +62,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
         'campaignName' => 'string',
         'configuredStatus' => '\TencentAds\Model\AdStatus',
         'campaignType' => '\TencentAds\Model\CampaignType',
-        'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
+        'promotedObjectType' => '\TencentAds\Model\PromotedObject',
         'dailyBudget' => 'int',
         'budgetReachDate' => 'int',
         'createdTime' => 'int',
@@ -370,7 +370,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObjectType
+     * @return \TencentAds\Model\PromotedObject
      */
     public function getPromotedObjectType()
     {
@@ -380,7 +380,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObject $promotedObjectType promotedObjectType
      *
      * @return $this
      */

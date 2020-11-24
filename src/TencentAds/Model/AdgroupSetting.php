@@ -64,7 +64,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
         'siteSet' => 'string[]',
         'bidType' => '\TencentAds\Model\CostType',
         'bidAmount' => 'int',
-        'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
+        'promotedObjectType' => '\TencentAds\Model\PromotedObject',
         'billingEvent' => '\TencentAds\Model\BillingEvent',
         'optimizationGoal' => '\TencentAds\Model\OptimizationGoal',
         'promotedObjectId' => 'string',
@@ -412,7 +412,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObjectType
+     * @return \TencentAds\Model\PromotedObject
      */
     public function getPromotedObjectType()
     {
@@ -422,7 +422,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObject $promotedObjectType promotedObjectType
      *
      * @return $this
      */

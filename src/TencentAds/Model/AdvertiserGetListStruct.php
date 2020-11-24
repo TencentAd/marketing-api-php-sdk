@@ -72,6 +72,8 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'contactPersonMobile' => 'string',
         'wechatSpec' => '\TencentAds\Model\MpInfoRead',
         'websites' => '\TencentAds\Model\WebsiteReadStruct[]',
+        'mdmId' => 'int',
+        'mdmName' => 'string',
         'agencyAccountId' => 'int',
         'operators' => '\TencentAds\Model\AdvertiserOperatorStruct[]',
         'accountId' => 'int',
@@ -107,6 +109,8 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'contactPersonMobile' => null,
         'wechatSpec' => null,
         'websites' => null,
+        'mdmId' => 'int64',
+        'mdmName' => null,
         'agencyAccountId' => 'int64',
         'operators' => null,
         'accountId' => 'int64',
@@ -163,6 +167,8 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'contactPersonMobile' => 'contact_person_mobile',
         'wechatSpec' => 'wechat_spec',
         'websites' => 'websites',
+        'mdmId' => 'mdm_id',
+        'mdmName' => 'mdm_name',
         'agencyAccountId' => 'agency_account_id',
         'operators' => 'operators',
         'accountId' => 'account_id',
@@ -198,6 +204,8 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'contactPersonMobile' => 'setContactPersonMobile',
         'wechatSpec' => 'setWechatSpec',
         'websites' => 'setWebsites',
+        'mdmId' => 'setMdmId',
+        'mdmName' => 'setMdmName',
         'agencyAccountId' => 'setAgencyAccountId',
         'operators' => 'setOperators',
         'accountId' => 'setAccountId',
@@ -233,6 +241,8 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'contactPersonMobile' => 'getContactPersonMobile',
         'wechatSpec' => 'getWechatSpec',
         'websites' => 'getWebsites',
+        'mdmId' => 'getMdmId',
+        'mdmName' => 'getMdmName',
         'agencyAccountId' => 'getAgencyAccountId',
         'operators' => 'getOperators',
         'accountId' => 'getAccountId',
@@ -322,6 +332,8 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         $this->container['contactPersonMobile'] = isset($data['contactPersonMobile']) ? $data['contactPersonMobile'] : null;
         $this->container['wechatSpec'] = isset($data['wechatSpec']) ? $data['wechatSpec'] : null;
         $this->container['websites'] = isset($data['websites']) ? $data['websites'] : null;
+        $this->container['mdmId'] = isset($data['mdmId']) ? $data['mdmId'] : null;
+        $this->container['mdmName'] = isset($data['mdmName']) ? $data['mdmName'] : null;
         $this->container['agencyAccountId'] = isset($data['agencyAccountId']) ? $data['agencyAccountId'] : null;
         $this->container['operators'] = isset($data['operators']) ? $data['operators'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
@@ -693,6 +705,54 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     public function setWebsites($websites)
     {
         $this->container['websites'] = $websites;
+
+        return $this;
+    }
+
+    /**
+     * Gets mdmId
+     *
+     * @return int
+     */
+    public function getMdmId()
+    {
+        return $this->container['mdmId'];
+    }
+
+    /**
+     * Sets mdmId
+     *
+     * @param int $mdmId mdmId
+     *
+     * @return $this
+     */
+    public function setMdmId($mdmId)
+    {
+        $this->container['mdmId'] = $mdmId;
+
+        return $this;
+    }
+
+    /**
+     * Gets mdmName
+     *
+     * @return string
+     */
+    public function getMdmName()
+    {
+        return $this->container['mdmName'];
+    }
+
+    /**
+     * Sets mdmName
+     *
+     * @param string $mdmName mdmName
+     *
+     * @return $this
+     */
+    public function setMdmName($mdmName)
+    {
+        $this->container['mdmName'] = $mdmName;
 
         return $this;
     }

@@ -98,20 +98,20 @@ class WechatAdvertiserLocalBusinessApi
      * @param  string $contactPerson contactPerson (required)
      * @param  string $contactPersonMobile contactPersonMobile (required)
      * @param  string $contactPersonCardId contactPersonCardId (required)
-     * @param  string $contactPersonTele contactPersonTele (required)
      * @param  string $corporation corporation (required)
      * @param  string $corporationLicence corporationLicence (required)
-     * @param  string $businessContent businessContent (required)
      * @param  int $industryId industryId (required)
      * @param  string $businessId businessId (required)
+     * @param  string $contactPersonTele contactPersonTele (optional)
+     * @param  string $businessContent businessContent (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\WechatAdvertiserLocalBusinessAddResponse
      */
-    public function wechatAdvertiserLocalBusinessAdd($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $contactPersonTele, $corporation, $corporationLicence, $businessContent, $industryId, $businessId)
+    public function wechatAdvertiserLocalBusinessAdd($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $businessId, $contactPersonTele = null, $businessContent = null)
     {
-        list($response) = $this->wechatAdvertiserLocalBusinessAddWithHttpInfo($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $contactPersonTele, $corporation, $corporationLicence, $businessContent, $industryId, $businessId);
+        list($response) = $this->wechatAdvertiserLocalBusinessAddWithHttpInfo($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $businessId, $contactPersonTele, $businessContent);
         return $response;
     }
 
@@ -126,21 +126,21 @@ class WechatAdvertiserLocalBusinessApi
      * @param  string $contactPerson (required)
      * @param  string $contactPersonMobile (required)
      * @param  string $contactPersonCardId (required)
-     * @param  string $contactPersonTele (required)
      * @param  string $corporation (required)
      * @param  string $corporationLicence (required)
-     * @param  string $businessContent (required)
      * @param  int $industryId (required)
      * @param  string $businessId (required)
+     * @param  string $contactPersonTele (optional)
+     * @param  string $businessContent (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\WechatAdvertiserLocalBusinessAddResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function wechatAdvertiserLocalBusinessAddWithHttpInfo($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $contactPersonTele, $corporation, $corporationLicence, $businessContent, $industryId, $businessId)
+    public function wechatAdvertiserLocalBusinessAddWithHttpInfo($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $businessId, $contactPersonTele = null, $businessContent = null)
     {
         $returnType = '\TencentAds\Model\WechatAdvertiserLocalBusinessAddResponse';
-        $request = $this->wechatAdvertiserLocalBusinessAddRequest($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $contactPersonTele, $corporation, $corporationLicence, $businessContent, $industryId, $businessId);
+        $request = $this->wechatAdvertiserLocalBusinessAddRequest($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $businessId, $contactPersonTele, $businessContent);
 
         try {
             $options = $this->createHttpClientOption();
@@ -212,19 +212,19 @@ class WechatAdvertiserLocalBusinessApi
      * @param  string $contactPerson (required)
      * @param  string $contactPersonMobile (required)
      * @param  string $contactPersonCardId (required)
-     * @param  string $contactPersonTele (required)
      * @param  string $corporation (required)
      * @param  string $corporationLicence (required)
-     * @param  string $businessContent (required)
      * @param  int $industryId (required)
      * @param  string $businessId (required)
+     * @param  string $contactPersonTele (optional)
+     * @param  string $businessContent (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function wechatAdvertiserLocalBusinessAddAsync($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $contactPersonTele, $corporation, $corporationLicence, $businessContent, $industryId, $businessId)
+    public function wechatAdvertiserLocalBusinessAddAsync($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $businessId, $contactPersonTele = null, $businessContent = null)
     {
-        return $this->wechatAdvertiserLocalBusinessAddAsyncWithHttpInfo($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $contactPersonTele, $corporation, $corporationLicence, $businessContent, $industryId, $businessId)
+        return $this->wechatAdvertiserLocalBusinessAddAsyncWithHttpInfo($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $businessId, $contactPersonTele, $businessContent)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -243,20 +243,20 @@ class WechatAdvertiserLocalBusinessApi
      * @param  string $contactPerson (required)
      * @param  string $contactPersonMobile (required)
      * @param  string $contactPersonCardId (required)
-     * @param  string $contactPersonTele (required)
      * @param  string $corporation (required)
      * @param  string $corporationLicence (required)
-     * @param  string $businessContent (required)
      * @param  int $industryId (required)
      * @param  string $businessId (required)
+     * @param  string $contactPersonTele (optional)
+     * @param  string $businessContent (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function wechatAdvertiserLocalBusinessAddAsyncWithHttpInfo($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $contactPersonTele, $corporation, $corporationLicence, $businessContent, $industryId, $businessId)
+    public function wechatAdvertiserLocalBusinessAddAsyncWithHttpInfo($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $businessId, $contactPersonTele = null, $businessContent = null)
     {
         $returnType = '\TencentAds\Model\WechatAdvertiserLocalBusinessAddResponse';
-        $request = $this->wechatAdvertiserLocalBusinessAddRequest($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $contactPersonTele, $corporation, $corporationLicence, $businessContent, $industryId, $businessId);
+        $request = $this->wechatAdvertiserLocalBusinessAddRequest($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $businessId, $contactPersonTele, $businessContent);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -304,17 +304,17 @@ class WechatAdvertiserLocalBusinessApi
      * @param  string $contactPerson (required)
      * @param  string $contactPersonMobile (required)
      * @param  string $contactPersonCardId (required)
-     * @param  string $contactPersonTele (required)
      * @param  string $corporation (required)
      * @param  string $corporationLicence (required)
-     * @param  string $businessContent (required)
      * @param  int $industryId (required)
      * @param  string $businessId (required)
+     * @param  string $contactPersonTele (optional)
+     * @param  string $businessContent (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function wechatAdvertiserLocalBusinessAddRequest($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $contactPersonTele, $corporation, $corporationLicence, $businessContent, $industryId, $businessId)
+    protected function wechatAdvertiserLocalBusinessAddRequest($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $businessId, $contactPersonTele = null, $businessContent = null)
     {
         // verify the required parameter 'headImage' is set
         if ($headImage === null || (is_array($headImage) && count($headImage) === 0)) {
@@ -352,12 +352,6 @@ class WechatAdvertiserLocalBusinessApi
                 'Missing the required parameter $contactPersonCardId when calling wechatAdvertiserLocalBusinessAdd'
             );
         }
-        // verify the required parameter 'contactPersonTele' is set
-        if ($contactPersonTele === null || (is_array($contactPersonTele) && count($contactPersonTele) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $contactPersonTele when calling wechatAdvertiserLocalBusinessAdd'
-            );
-        }
         // verify the required parameter 'corporation' is set
         if ($corporation === null || (is_array($corporation) && count($corporation) === 0)) {
             throw new \InvalidArgumentException(
@@ -368,12 +362,6 @@ class WechatAdvertiserLocalBusinessApi
         if ($corporationLicence === null || (is_array($corporationLicence) && count($corporationLicence) === 0)) {
             throw new \InvalidArgumentException(
                 'Missing the required parameter $corporationLicence when calling wechatAdvertiserLocalBusinessAdd'
-            );
-        }
-        // verify the required parameter 'businessContent' is set
-        if ($businessContent === null || (is_array($businessContent) && count($businessContent) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $businessContent when calling wechatAdvertiserLocalBusinessAdd'
             );
         }
         // verify the required parameter 'industryId' is set
@@ -842,20 +830,20 @@ class WechatAdvertiserLocalBusinessApi
      * @param  string $contactPerson contactPerson (required)
      * @param  string $contactPersonMobile contactPersonMobile (required)
      * @param  string $contactPersonCardId contactPersonCardId (required)
-     * @param  string $contactPersonTele contactPersonTele (required)
      * @param  string $corporation corporation (required)
      * @param  string $corporationLicence corporationLicence (required)
-     * @param  string $businessContent businessContent (required)
      * @param  int $industryId industryId (required)
      * @param  int $accountId accountId (required)
+     * @param  string $contactPersonTele contactPersonTele (optional)
+     * @param  string $businessContent businessContent (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\WechatAdvertiserLocalBusinessUpdateResponse
      */
-    public function wechatAdvertiserLocalBusinessUpdate($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $contactPersonTele, $corporation, $corporationLicence, $businessContent, $industryId, $accountId)
+    public function wechatAdvertiserLocalBusinessUpdate($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $accountId, $contactPersonTele = null, $businessContent = null)
     {
-        list($response) = $this->wechatAdvertiserLocalBusinessUpdateWithHttpInfo($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $contactPersonTele, $corporation, $corporationLicence, $businessContent, $industryId, $accountId);
+        list($response) = $this->wechatAdvertiserLocalBusinessUpdateWithHttpInfo($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $accountId, $contactPersonTele, $businessContent);
         return $response;
     }
 
@@ -870,21 +858,21 @@ class WechatAdvertiserLocalBusinessApi
      * @param  string $contactPerson (required)
      * @param  string $contactPersonMobile (required)
      * @param  string $contactPersonCardId (required)
-     * @param  string $contactPersonTele (required)
      * @param  string $corporation (required)
      * @param  string $corporationLicence (required)
-     * @param  string $businessContent (required)
      * @param  int $industryId (required)
      * @param  int $accountId (required)
+     * @param  string $contactPersonTele (optional)
+     * @param  string $businessContent (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\WechatAdvertiserLocalBusinessUpdateResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function wechatAdvertiserLocalBusinessUpdateWithHttpInfo($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $contactPersonTele, $corporation, $corporationLicence, $businessContent, $industryId, $accountId)
+    public function wechatAdvertiserLocalBusinessUpdateWithHttpInfo($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $accountId, $contactPersonTele = null, $businessContent = null)
     {
         $returnType = '\TencentAds\Model\WechatAdvertiserLocalBusinessUpdateResponse';
-        $request = $this->wechatAdvertiserLocalBusinessUpdateRequest($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $contactPersonTele, $corporation, $corporationLicence, $businessContent, $industryId, $accountId);
+        $request = $this->wechatAdvertiserLocalBusinessUpdateRequest($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $accountId, $contactPersonTele, $businessContent);
 
         try {
             $options = $this->createHttpClientOption();
@@ -956,19 +944,19 @@ class WechatAdvertiserLocalBusinessApi
      * @param  string $contactPerson (required)
      * @param  string $contactPersonMobile (required)
      * @param  string $contactPersonCardId (required)
-     * @param  string $contactPersonTele (required)
      * @param  string $corporation (required)
      * @param  string $corporationLicence (required)
-     * @param  string $businessContent (required)
      * @param  int $industryId (required)
      * @param  int $accountId (required)
+     * @param  string $contactPersonTele (optional)
+     * @param  string $businessContent (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function wechatAdvertiserLocalBusinessUpdateAsync($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $contactPersonTele, $corporation, $corporationLicence, $businessContent, $industryId, $accountId)
+    public function wechatAdvertiserLocalBusinessUpdateAsync($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $accountId, $contactPersonTele = null, $businessContent = null)
     {
-        return $this->wechatAdvertiserLocalBusinessUpdateAsyncWithHttpInfo($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $contactPersonTele, $corporation, $corporationLicence, $businessContent, $industryId, $accountId)
+        return $this->wechatAdvertiserLocalBusinessUpdateAsyncWithHttpInfo($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $accountId, $contactPersonTele, $businessContent)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -987,20 +975,20 @@ class WechatAdvertiserLocalBusinessApi
      * @param  string $contactPerson (required)
      * @param  string $contactPersonMobile (required)
      * @param  string $contactPersonCardId (required)
-     * @param  string $contactPersonTele (required)
      * @param  string $corporation (required)
      * @param  string $corporationLicence (required)
-     * @param  string $businessContent (required)
      * @param  int $industryId (required)
      * @param  int $accountId (required)
+     * @param  string $contactPersonTele (optional)
+     * @param  string $businessContent (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function wechatAdvertiserLocalBusinessUpdateAsyncWithHttpInfo($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $contactPersonTele, $corporation, $corporationLicence, $businessContent, $industryId, $accountId)
+    public function wechatAdvertiserLocalBusinessUpdateAsyncWithHttpInfo($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $accountId, $contactPersonTele = null, $businessContent = null)
     {
         $returnType = '\TencentAds\Model\WechatAdvertiserLocalBusinessUpdateResponse';
-        $request = $this->wechatAdvertiserLocalBusinessUpdateRequest($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $contactPersonTele, $corporation, $corporationLicence, $businessContent, $industryId, $accountId);
+        $request = $this->wechatAdvertiserLocalBusinessUpdateRequest($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $accountId, $contactPersonTele, $businessContent);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1048,17 +1036,17 @@ class WechatAdvertiserLocalBusinessApi
      * @param  string $contactPerson (required)
      * @param  string $contactPersonMobile (required)
      * @param  string $contactPersonCardId (required)
-     * @param  string $contactPersonTele (required)
      * @param  string $corporation (required)
      * @param  string $corporationLicence (required)
-     * @param  string $businessContent (required)
      * @param  int $industryId (required)
      * @param  int $accountId (required)
+     * @param  string $contactPersonTele (optional)
+     * @param  string $businessContent (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function wechatAdvertiserLocalBusinessUpdateRequest($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $contactPersonTele, $corporation, $corporationLicence, $businessContent, $industryId, $accountId)
+    protected function wechatAdvertiserLocalBusinessUpdateRequest($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $accountId, $contactPersonTele = null, $businessContent = null)
     {
         // verify the required parameter 'headImage' is set
         if ($headImage === null || (is_array($headImage) && count($headImage) === 0)) {
@@ -1096,12 +1084,6 @@ class WechatAdvertiserLocalBusinessApi
                 'Missing the required parameter $contactPersonCardId when calling wechatAdvertiserLocalBusinessUpdate'
             );
         }
-        // verify the required parameter 'contactPersonTele' is set
-        if ($contactPersonTele === null || (is_array($contactPersonTele) && count($contactPersonTele) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $contactPersonTele when calling wechatAdvertiserLocalBusinessUpdate'
-            );
-        }
         // verify the required parameter 'corporation' is set
         if ($corporation === null || (is_array($corporation) && count($corporation) === 0)) {
             throw new \InvalidArgumentException(
@@ -1112,12 +1094,6 @@ class WechatAdvertiserLocalBusinessApi
         if ($corporationLicence === null || (is_array($corporationLicence) && count($corporationLicence) === 0)) {
             throw new \InvalidArgumentException(
                 'Missing the required parameter $corporationLicence when calling wechatAdvertiserLocalBusinessUpdate'
-            );
-        }
-        // verify the required parameter 'businessContent' is set
-        if ($businessContent === null || (is_array($businessContent) && count($businessContent) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $businessContent when calling wechatAdvertiserLocalBusinessUpdate'
             );
         }
         // verify the required parameter 'industryId' is set

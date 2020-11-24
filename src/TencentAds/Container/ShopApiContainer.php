@@ -62,40 +62,6 @@ class ShopApiContainer extends ApiContainer
 
 
     /**
-     * Handle ShopApi shopDelete function
-     * @param array params
-     * @return \TencentAds\Model\ShopDeleteResponseData
-     * @throws \TencentAds\ApiException
-     * @throws \TencentAds\Exception\TencentAdsResponseException
-     */
-    public function delete(array $params = [])
-    {
-        return $this->handleMiddleware('delete', $params, function(MiddlewareRequest $request) {
-            $params = $request->getApiMethodArguments();
-            $data = $params;
-            $response = $this->apiInstance->shopDelete($data);
-            return $this->handleResponse($response);
-        });
-    }
-
-
-    /**
-     * Handle ShopApi shopDeleteAsync function
-     * @param array params
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function deleteAsync(array $params = [])
-    {
-        return $this->handleMiddleware('delete', $params, function(MiddlewareRequest $request) {
-            $params = $request->getApiMethodArguments();
-            $data = $params;
-            $response = $this->apiInstance->shopDeleteAsync($data);
-            return $response;
-        });
-    }
-
-
-    /**
      * Handle ShopApi shopGet function
      * @param array params
      * @return \TencentAds\Model\ShopGetResponseData

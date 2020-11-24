@@ -59,7 +59,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'campaignId' => 'int',
         'adgroupName' => 'string',
-        'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
+        'promotedObjectType' => '\TencentAds\Model\PromotedObject',
         'beginDate' => 'string',
         'firstDayBeginTime' => 'string',
         'endDate' => 'string',
@@ -89,6 +89,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'expandTargeting' => 'string[]',
         'deepConversionSpec' => '\TencentAds\Model\DeepConversionSpec',
         'deepOptimizationActionType' => '\TencentAds\Model\DeepOptimizationActionType',
+        'poiList' => 'string[]',
         'conversionId' => 'int',
         'deepConversionBehaviorBid' => 'int',
         'deepConversionWorthRate' => 'double',
@@ -96,6 +97,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'bidAdjustment' => '\TencentAds\Model\BidAdjustment',
         'autoAcquisitionEnabled' => 'bool',
         'autoAcquisitionBudget' => 'int',
+        'autoDerivedCreativeEnabled' => 'bool',
         'accountId' => 'int'
     ];
 
@@ -137,6 +139,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'expandTargeting' => null,
         'deepConversionSpec' => null,
         'deepOptimizationActionType' => null,
+        'poiList' => null,
         'conversionId' => 'int64',
         'deepConversionBehaviorBid' => 'int64',
         'deepConversionWorthRate' => 'double',
@@ -144,6 +147,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'bidAdjustment' => null,
         'autoAcquisitionEnabled' => null,
         'autoAcquisitionBudget' => 'int64',
+        'autoDerivedCreativeEnabled' => null,
         'accountId' => 'int64'
     ];
 
@@ -206,6 +210,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'expandTargeting' => 'expand_targeting',
         'deepConversionSpec' => 'deep_conversion_spec',
         'deepOptimizationActionType' => 'deep_optimization_action_type',
+        'poiList' => 'poi_list',
         'conversionId' => 'conversion_id',
         'deepConversionBehaviorBid' => 'deep_conversion_behavior_bid',
         'deepConversionWorthRate' => 'deep_conversion_worth_rate',
@@ -213,6 +218,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'bidAdjustment' => 'bid_adjustment',
         'autoAcquisitionEnabled' => 'auto_acquisition_enabled',
         'autoAcquisitionBudget' => 'auto_acquisition_budget',
+        'autoDerivedCreativeEnabled' => 'auto_derived_creative_enabled',
         'accountId' => 'account_id'
     ];
 
@@ -254,6 +260,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'expandTargeting' => 'setExpandTargeting',
         'deepConversionSpec' => 'setDeepConversionSpec',
         'deepOptimizationActionType' => 'setDeepOptimizationActionType',
+        'poiList' => 'setPoiList',
         'conversionId' => 'setConversionId',
         'deepConversionBehaviorBid' => 'setDeepConversionBehaviorBid',
         'deepConversionWorthRate' => 'setDeepConversionWorthRate',
@@ -261,6 +268,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'bidAdjustment' => 'setBidAdjustment',
         'autoAcquisitionEnabled' => 'setAutoAcquisitionEnabled',
         'autoAcquisitionBudget' => 'setAutoAcquisitionBudget',
+        'autoDerivedCreativeEnabled' => 'setAutoDerivedCreativeEnabled',
         'accountId' => 'setAccountId'
     ];
 
@@ -302,6 +310,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'expandTargeting' => 'getExpandTargeting',
         'deepConversionSpec' => 'getDeepConversionSpec',
         'deepOptimizationActionType' => 'getDeepOptimizationActionType',
+        'poiList' => 'getPoiList',
         'conversionId' => 'getConversionId',
         'deepConversionBehaviorBid' => 'getDeepConversionBehaviorBid',
         'deepConversionWorthRate' => 'getDeepConversionWorthRate',
@@ -309,6 +318,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'bidAdjustment' => 'getBidAdjustment',
         'autoAcquisitionEnabled' => 'getAutoAcquisitionEnabled',
         'autoAcquisitionBudget' => 'getAutoAcquisitionBudget',
+        'autoDerivedCreativeEnabled' => 'getAutoDerivedCreativeEnabled',
         'accountId' => 'getAccountId'
     ];
 
@@ -404,6 +414,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['expandTargeting'] = isset($data['expandTargeting']) ? $data['expandTargeting'] : null;
         $this->container['deepConversionSpec'] = isset($data['deepConversionSpec']) ? $data['deepConversionSpec'] : null;
         $this->container['deepOptimizationActionType'] = isset($data['deepOptimizationActionType']) ? $data['deepOptimizationActionType'] : null;
+        $this->container['poiList'] = isset($data['poiList']) ? $data['poiList'] : null;
         $this->container['conversionId'] = isset($data['conversionId']) ? $data['conversionId'] : null;
         $this->container['deepConversionBehaviorBid'] = isset($data['deepConversionBehaviorBid']) ? $data['deepConversionBehaviorBid'] : null;
         $this->container['deepConversionWorthRate'] = isset($data['deepConversionWorthRate']) ? $data['deepConversionWorthRate'] : null;
@@ -411,6 +422,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['bidAdjustment'] = isset($data['bidAdjustment']) ? $data['bidAdjustment'] : null;
         $this->container['autoAcquisitionEnabled'] = isset($data['autoAcquisitionEnabled']) ? $data['autoAcquisitionEnabled'] : null;
         $this->container['autoAcquisitionBudget'] = isset($data['autoAcquisitionBudget']) ? $data['autoAcquisitionBudget'] : null;
+        $this->container['autoDerivedCreativeEnabled'] = isset($data['autoDerivedCreativeEnabled']) ? $data['autoDerivedCreativeEnabled'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -489,7 +501,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObjectType
+     * @return \TencentAds\Model\PromotedObject
      */
     public function getPromotedObjectType()
     {
@@ -499,7 +511,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObject $promotedObjectType promotedObjectType
      *
      * @return $this
      */
@@ -1207,6 +1219,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets poiList
+     *
+     * @return string[]
+     */
+    public function getPoiList()
+    {
+        return $this->container['poiList'];
+    }
+
+    /**
+     * Sets poiList
+     *
+     * @param string[] $poiList poiList
+     *
+     * @return $this
+     */
+    public function setPoiList($poiList)
+    {
+        $this->container['poiList'] = $poiList;
+
+        return $this;
+    }
+
+    /**
      * Gets conversionId
      *
      * @return int
@@ -1370,6 +1406,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setAutoAcquisitionBudget($autoAcquisitionBudget)
     {
         $this->container['autoAcquisitionBudget'] = $autoAcquisitionBudget;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoDerivedCreativeEnabled
+     *
+     * @return bool
+     */
+    public function getAutoDerivedCreativeEnabled()
+    {
+        return $this->container['autoDerivedCreativeEnabled'];
+    }
+
+    /**
+     * Sets autoDerivedCreativeEnabled
+     *
+     * @param bool $autoDerivedCreativeEnabled autoDerivedCreativeEnabled
+     *
+     * @return $this
+     */
+    public function setAutoDerivedCreativeEnabled($autoDerivedCreativeEnabled)
+    {
+        $this->container['autoDerivedCreativeEnabled'] = $autoDerivedCreativeEnabled;
 
         return $this;
     }

@@ -87,6 +87,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'simpleCanvasSubType' => '\TencentAds\Model\SimpleCanvasSubType',
         'floatingZone' => '\TencentAds\Model\FloatingZone',
         'marketingPendantImageId' => 'string',
+        'countdownSwitch' => 'bool',
         'accountId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsMp'
     ];
@@ -127,6 +128,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'simpleCanvasSubType' => null,
         'floatingZone' => null,
         'marketingPendantImageId' => null,
+        'countdownSwitch' => null,
         'accountId' => 'int64',
         'adcreativeElements' => null
     ];
@@ -188,6 +190,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'simpleCanvasSubType' => 'simple_canvas_sub_type',
         'floatingZone' => 'floating_zone',
         'marketingPendantImageId' => 'marketing_pendant_image_id',
+        'countdownSwitch' => 'countdown_switch',
         'accountId' => 'account_id',
         'adcreativeElements' => 'adcreative_elements'
     ];
@@ -228,6 +231,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'simpleCanvasSubType' => 'setSimpleCanvasSubType',
         'floatingZone' => 'setFloatingZone',
         'marketingPendantImageId' => 'setMarketingPendantImageId',
+        'countdownSwitch' => 'setCountdownSwitch',
         'accountId' => 'setAccountId',
         'adcreativeElements' => 'setAdcreativeElements'
     ];
@@ -268,6 +272,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'simpleCanvasSubType' => 'getSimpleCanvasSubType',
         'floatingZone' => 'getFloatingZone',
         'marketingPendantImageId' => 'getMarketingPendantImageId',
+        'countdownSwitch' => 'getCountdownSwitch',
         'accountId' => 'getAccountId',
         'adcreativeElements' => 'getAdcreativeElements'
     ];
@@ -362,6 +367,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['simpleCanvasSubType'] = isset($data['simpleCanvasSubType']) ? $data['simpleCanvasSubType'] : null;
         $this->container['floatingZone'] = isset($data['floatingZone']) ? $data['floatingZone'] : null;
         $this->container['marketingPendantImageId'] = isset($data['marketingPendantImageId']) ? $data['marketingPendantImageId'] : null;
+        $this->container['countdownSwitch'] = isset($data['countdownSwitch']) ? $data['countdownSwitch'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
     }
@@ -1106,6 +1112,30 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setMarketingPendantImageId($marketingPendantImageId)
     {
         $this->container['marketingPendantImageId'] = $marketingPendantImageId;
+
+        return $this;
+    }
+
+    /**
+     * Gets countdownSwitch
+     *
+     * @return bool
+     */
+    public function getCountdownSwitch()
+    {
+        return $this->container['countdownSwitch'];
+    }
+
+    /**
+     * Sets countdownSwitch
+     *
+     * @param bool $countdownSwitch countdownSwitch
+     *
+     * @return $this
+     */
+    public function setCountdownSwitch($countdownSwitch)
+    {
+        $this->container['countdownSwitch'] = $countdownSwitch;
 
         return $this;
     }

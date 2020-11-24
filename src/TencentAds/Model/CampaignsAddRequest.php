@@ -60,7 +60,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'int',
         'campaignName' => 'string',
         'campaignType' => '\TencentAds\Model\CampaignType',
-        'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
+        'promotedObjectType' => '\TencentAds\Model\PromotedObject',
         'dailyBudget' => 'int',
         'configuredStatus' => '\TencentAds\Model\AdStatus',
         'speedMode' => '\TencentAds\Model\SpeedMode'
@@ -315,7 +315,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObjectType
+     * @return \TencentAds\Model\PromotedObject
      */
     public function getPromotedObjectType()
     {
@@ -325,7 +325,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObject $promotedObjectType promotedObjectType
      *
      * @return $this
      */

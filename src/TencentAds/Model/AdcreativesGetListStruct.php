@@ -76,7 +76,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'universalLinkUrl' => 'string',
         'siteSet' => 'string[]',
         'automaticSiteEnabled' => 'bool',
-        'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
+        'promotedObjectType' => '\TencentAds\Model\PromotedObject',
         'promotedObjectId' => 'string',
         'profileId' => 'int',
         'createdTime' => 'int',
@@ -99,6 +99,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'simpleCanvasSubType' => '\TencentAds\Model\SimpleCanvasSubType',
         'floatingZone' => '\TencentAds\Model\FloatingZone',
         'marketingPendantImageId' => 'string',
+        'countdownSwitch' => 'bool',
         'adcreativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsReadMp'
     ];
@@ -150,6 +151,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'simpleCanvasSubType' => null,
         'floatingZone' => null,
         'marketingPendantImageId' => null,
+        'countdownSwitch' => null,
         'adcreativeTemplateId' => 'int64',
         'adcreativeElements' => null
     ];
@@ -222,6 +224,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'simpleCanvasSubType' => 'simple_canvas_sub_type',
         'floatingZone' => 'floating_zone',
         'marketingPendantImageId' => 'marketing_pendant_image_id',
+        'countdownSwitch' => 'countdown_switch',
         'adcreativeTemplateId' => 'adcreative_template_id',
         'adcreativeElements' => 'adcreative_elements'
     ];
@@ -273,6 +276,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'simpleCanvasSubType' => 'setSimpleCanvasSubType',
         'floatingZone' => 'setFloatingZone',
         'marketingPendantImageId' => 'setMarketingPendantImageId',
+        'countdownSwitch' => 'setCountdownSwitch',
         'adcreativeTemplateId' => 'setAdcreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements'
     ];
@@ -324,6 +328,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'simpleCanvasSubType' => 'getSimpleCanvasSubType',
         'floatingZone' => 'getFloatingZone',
         'marketingPendantImageId' => 'getMarketingPendantImageId',
+        'countdownSwitch' => 'getCountdownSwitch',
         'adcreativeTemplateId' => 'getAdcreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements'
     ];
@@ -429,6 +434,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['simpleCanvasSubType'] = isset($data['simpleCanvasSubType']) ? $data['simpleCanvasSubType'] : null;
         $this->container['floatingZone'] = isset($data['floatingZone']) ? $data['floatingZone'] : null;
         $this->container['marketingPendantImageId'] = isset($data['marketingPendantImageId']) ? $data['marketingPendantImageId'] : null;
+        $this->container['countdownSwitch'] = isset($data['countdownSwitch']) ? $data['countdownSwitch'] : null;
         $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
     }
@@ -892,7 +898,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObjectType
+     * @return \TencentAds\Model\PromotedObject
      */
     public function getPromotedObjectType()
     {
@@ -902,7 +908,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObject $promotedObjectType promotedObjectType
      *
      * @return $this
      */
@@ -1437,6 +1443,30 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setMarketingPendantImageId($marketingPendantImageId)
     {
         $this->container['marketingPendantImageId'] = $marketingPendantImageId;
+
+        return $this;
+    }
+
+    /**
+     * Gets countdownSwitch
+     *
+     * @return bool
+     */
+    public function getCountdownSwitch()
+    {
+        return $this->container['countdownSwitch'];
+    }
+
+    /**
+     * Sets countdownSwitch
+     *
+     * @param bool $countdownSwitch countdownSwitch
+     *
+     * @return $this
+     */
+    public function setCountdownSwitch($countdownSwitch)
+    {
+        $this->container['countdownSwitch'] = $countdownSwitch;
 
         return $this;
     }

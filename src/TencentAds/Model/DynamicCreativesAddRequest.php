@@ -61,7 +61,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'dynamicCreativeTemplateId' => 'int',
         'dynamicCreativeElements' => '\TencentAds\Model\DynamicCreativeElements',
         'campaignType' => '\TencentAds\Model\CampaignType',
-        'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
+        'promotedObjectType' => '\TencentAds\Model\PromotedObject',
         'pageType' => '\TencentAds\Model\DestinationType',
         'automaticSiteEnabled' => 'bool',
         'siteSet' => 'string[]',
@@ -393,7 +393,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObjectType
+     * @return \TencentAds\Model\PromotedObject
      */
     public function getPromotedObjectType()
     {
@@ -403,7 +403,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObject $promotedObjectType promotedObjectType
      *
      * @return $this
      */

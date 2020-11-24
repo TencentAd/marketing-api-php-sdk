@@ -60,7 +60,7 @@ class DetailTargetDetailStruct implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'expandTargetingOpened' => 'bool',
         'score' => 'int',
-        'trends' => 'string[]',
+        'trends' => '\TencentAds\Model\PointStruct[]',
         'conclusion' => 'string'
     ];
 
@@ -274,7 +274,7 @@ class DetailTargetDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets trends
      *
-     * @return string[]
+     * @return \TencentAds\Model\PointStruct[]
      */
     public function getTrends()
     {
@@ -284,7 +284,7 @@ class DetailTargetDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets trends
      *
-     * @param string[] $trends trends
+     * @param \TencentAds\Model\PointStruct[] $trends trends
      *
      * @return $this
      */

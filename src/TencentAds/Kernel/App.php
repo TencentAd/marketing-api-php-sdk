@@ -29,13 +29,13 @@ use TencentAds\Container\BatchRequestsApiContainer;
 use TencentAds\Container\BidSimulationApiContainer;
 use TencentAds\Container\BrandApiContainer;
 use TencentAds\Container\BusinessManagerRelationsApiContainer;
+use TencentAds\Container\BusinessMdmAccountRelationsApiContainer;
 use TencentAds\Container\CampaignsApiContainer;
 use TencentAds\Container\CapabilitiesApiContainer;
 use TencentAds\Container\ChannelsApiContainer;
 use TencentAds\Container\ComplianceValidationApiContainer;
 use TencentAds\Container\ConversionsApiContainer;
 use TencentAds\Container\CreativetoolsTextApiContainer;
-use TencentAds\Container\CreativevideoLabelApiContainer;
 use TencentAds\Container\CustomAudienceEstimationsApiContainer;
 use TencentAds\Container\CustomAudienceFilesApiContainer;
 use TencentAds\Container\CustomAudienceInsightsApiContainer;
@@ -64,7 +64,6 @@ use TencentAds\Container\ImagesApiContainer;
 use TencentAds\Container\LabelAudiencesApiContainer;
 use TencentAds\Container\LabelsApiContainer;
 use TencentAds\Container\LeadCluesApiContainer;
-use TencentAds\Container\LeadsApiContainer;
 use TencentAds\Container\LeadsFormApiContainer;
 use TencentAds\Container\LeadsFormListApiContainer;
 use TencentAds\Container\LocalApiContainer;
@@ -88,6 +87,7 @@ use TencentAds\Container\ProfilesApiContainer;
 use TencentAds\Container\PromotedObjectsApiContainer;
 use TencentAds\Container\QualificationsApiContainer;
 use TencentAds\Container\RealtimeCostApiContainer;
+use TencentAds\Container\ReportApiContainer;
 use TencentAds\Container\ShopApiContainer;
 use TencentAds\Container\SplitTestsApiContainer;
 use TencentAds\Container\SystemStatusApiContainer;
@@ -101,6 +101,9 @@ use TencentAds\Container\UserActionSetsApiContainer;
 use TencentAds\Container\UserActionsApiContainer;
 use TencentAds\Container\UserPropertiesApiContainer;
 use TencentAds\Container\UserPropertySetsApiContainer;
+use TencentAds\Container\VideomakerAutoadjustmentsApiContainer;
+use TencentAds\Container\VideomakerSubtitlesApiContainer;
+use TencentAds\Container\VideomakerTasksApiContainer;
 use TencentAds\Container\VideosApiContainer;
 use TencentAds\Container\WechatAdFollowersApiContainer;
 use TencentAds\Container\WechatAdLabelsApiContainer;
@@ -113,7 +116,6 @@ use TencentAds\Container\WechatDailyCostApiContainer;
 use TencentAds\Container\WechatFundStatementsDetailedApiContainer;
 use TencentAds\Container\WechatFundTransferApiContainer;
 use TencentAds\Container\WechatFundsApiContainer;
-use TencentAds\Container\WechatLeadsApiContainer;
 use TencentAds\Container\WechatPagesApiContainer;
 use TencentAds\Container\WechatQualificationsApiContainer;
 use TencentAds\Container\XijingPageApiContainer;
@@ -207,6 +209,9 @@ class App
     /** @var BusinessManagerRelationsApiContainer */
     public $businessManagerRelationsApiContainer;
 
+    /** @var BusinessMdmAccountRelationsApiContainer */
+    public $businessMdmAccountRelationsApiContainer;
+
     /** @var CampaignsApiContainer */
     public $campaignsApiContainer;
 
@@ -224,9 +229,6 @@ class App
 
     /** @var CreativetoolsTextApiContainer */
     public $creativetoolsTextApiContainer;
-
-    /** @var CreativevideoLabelApiContainer */
-    public $creativevideoLabelApiContainer;
 
     /** @var CustomAudienceEstimationsApiContainer */
     public $customAudienceEstimationsApiContainer;
@@ -312,9 +314,6 @@ class App
     /** @var LeadCluesApiContainer */
     public $leadCluesApiContainer;
 
-    /** @var LeadsApiContainer */
-    public $leadsApiContainer;
-
     /** @var LeadsFormApiContainer */
     public $leadsFormApiContainer;
 
@@ -384,6 +383,9 @@ class App
     /** @var RealtimeCostApiContainer */
     public $realtimeCostApiContainer;
 
+    /** @var ReportApiContainer */
+    public $reportApiContainer;
+
     /** @var ShopApiContainer */
     public $shopApiContainer;
 
@@ -423,6 +425,15 @@ class App
     /** @var UserPropertySetsApiContainer */
     public $userPropertySetsApiContainer;
 
+    /** @var VideomakerAutoadjustmentsApiContainer */
+    public $videomakerAutoadjustmentsApiContainer;
+
+    /** @var VideomakerSubtitlesApiContainer */
+    public $videomakerSubtitlesApiContainer;
+
+    /** @var VideomakerTasksApiContainer */
+    public $videomakerTasksApiContainer;
+
     /** @var VideosApiContainer */
     public $videosApiContainer;
 
@@ -458,9 +469,6 @@ class App
 
     /** @var WechatFundsApiContainer */
     public $wechatFundsApiContainer;
-
-    /** @var WechatLeadsApiContainer */
-    public $wechatLeadsApiContainer;
 
     /** @var WechatPagesApiContainer */
     public $wechatPagesApiContainer;
@@ -872,6 +880,20 @@ class App
 
 
     /**
+     * @return BusinessMdmAccountRelationsApiContainer
+     */
+    public function businessMdmAccountRelations()
+    {
+        if (empty($this->businessMdmAccountRelationsApiContainer)) {
+            $container = new BusinessMdmAccountRelationsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->businessMdmAccountRelationsApiContainer = $container;
+        }
+        return $this->businessMdmAccountRelationsApiContainer;
+    }
+
+
+    /**
      * @return CampaignsApiContainer
      */
     public function campaigns()
@@ -952,20 +974,6 @@ class App
             $this->creativetoolsTextApiContainer = $container;
         }
         return $this->creativetoolsTextApiContainer;
-    }
-
-
-    /**
-     * @return CreativevideoLabelApiContainer
-     */
-    public function creativevideoLabel()
-    {
-        if (empty($this->creativevideoLabelApiContainer)) {
-            $container = new CreativevideoLabelApiContainer();
-            $container->init($this, $this->getClient());
-            $this->creativevideoLabelApiContainer = $container;
-        }
-        return $this->creativevideoLabelApiContainer;
     }
 
 
@@ -1362,20 +1370,6 @@ class App
 
 
     /**
-     * @return LeadsApiContainer
-     */
-    public function leads()
-    {
-        if (empty($this->leadsApiContainer)) {
-            $container = new LeadsApiContainer();
-            $container->init($this, $this->getClient());
-            $this->leadsApiContainer = $container;
-        }
-        return $this->leadsApiContainer;
-    }
-
-
-    /**
      * @return LeadsFormApiContainer
      */
     public function leadsForm()
@@ -1698,6 +1692,20 @@ class App
 
 
     /**
+     * @return ReportApiContainer
+     */
+    public function report()
+    {
+        if (empty($this->reportApiContainer)) {
+            $container = new ReportApiContainer();
+            $container->init($this, $this->getClient());
+            $this->reportApiContainer = $container;
+        }
+        return $this->reportApiContainer;
+    }
+
+
+    /**
      * @return ShopApiContainer
      */
     public function shop()
@@ -1880,6 +1888,48 @@ class App
 
 
     /**
+     * @return VideomakerAutoadjustmentsApiContainer
+     */
+    public function videomakerAutoadjustments()
+    {
+        if (empty($this->videomakerAutoadjustmentsApiContainer)) {
+            $container = new VideomakerAutoadjustmentsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->videomakerAutoadjustmentsApiContainer = $container;
+        }
+        return $this->videomakerAutoadjustmentsApiContainer;
+    }
+
+
+    /**
+     * @return VideomakerSubtitlesApiContainer
+     */
+    public function videomakerSubtitles()
+    {
+        if (empty($this->videomakerSubtitlesApiContainer)) {
+            $container = new VideomakerSubtitlesApiContainer();
+            $container->init($this, $this->getClient());
+            $this->videomakerSubtitlesApiContainer = $container;
+        }
+        return $this->videomakerSubtitlesApiContainer;
+    }
+
+
+    /**
+     * @return VideomakerTasksApiContainer
+     */
+    public function videomakerTasks()
+    {
+        if (empty($this->videomakerTasksApiContainer)) {
+            $container = new VideomakerTasksApiContainer();
+            $container->init($this, $this->getClient());
+            $this->videomakerTasksApiContainer = $container;
+        }
+        return $this->videomakerTasksApiContainer;
+    }
+
+
+    /**
      * @return VideosApiContainer
      */
     public function videos()
@@ -2044,20 +2094,6 @@ class App
             $this->wechatFundsApiContainer = $container;
         }
         return $this->wechatFundsApiContainer;
-    }
-
-
-    /**
-     * @return WechatLeadsApiContainer
-     */
-    public function wechatLeads()
-    {
-        if (empty($this->wechatLeadsApiContainer)) {
-            $container = new WechatLeadsApiContainer();
-            $container->init($this, $this->getClient());
-            $this->wechatLeadsApiContainer = $container;
-        }
-        return $this->wechatLeadsApiContainer;
     }
 
 

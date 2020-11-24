@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * AdgroupGetSpec Class Doc Comment
  *
  * @category Class
- * @description 拉取广告结构(计划数据较少放一起了)
+ * @description 广告结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -59,6 +59,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'adgroupId' => 'int',
+        'configuredStatus' => '\TencentAds\Model\AdStatus',
         'adgroupName' => 'string',
         'beginDate' => 'string',
         'targeting' => '\TencentAds\Model\DpWriteTargetingSetting',
@@ -75,6 +76,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'adgroupId' => 'int64',
+        'configuredStatus' => null,
         'adgroupName' => null,
         'beginDate' => null,
         'targeting' => null,
@@ -112,6 +114,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'adgroupId' => 'adgroup_id',
+        'configuredStatus' => 'configured_status',
         'adgroupName' => 'adgroup_name',
         'beginDate' => 'begin_date',
         'targeting' => 'targeting',
@@ -128,6 +131,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'adgroupId' => 'setAdgroupId',
+        'configuredStatus' => 'setConfiguredStatus',
         'adgroupName' => 'setAdgroupName',
         'beginDate' => 'setBeginDate',
         'targeting' => 'setTargeting',
@@ -144,6 +148,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'adgroupId' => 'getAdgroupId',
+        'configuredStatus' => 'getConfiguredStatus',
         'adgroupName' => 'getAdgroupName',
         'beginDate' => 'getBeginDate',
         'targeting' => 'getTargeting',
@@ -214,6 +219,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
+        $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['beginDate'] = isset($data['beginDate']) ? $data['beginDate'] : null;
         $this->container['targeting'] = isset($data['targeting']) ? $data['targeting'] : null;
@@ -267,6 +273,30 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     public function setAdgroupId($adgroupId)
     {
         $this->container['adgroupId'] = $adgroupId;
+
+        return $this;
+    }
+
+    /**
+     * Gets configuredStatus
+     *
+     * @return \TencentAds\Model\AdStatus
+     */
+    public function getConfiguredStatus()
+    {
+        return $this->container['configuredStatus'];
+    }
+
+    /**
+     * Sets configuredStatus
+     *
+     * @param \TencentAds\Model\AdStatus $configuredStatus configuredStatus
+     *
+     * @return $this
+     */
+    public function setConfiguredStatus($configuredStatus)
+    {
+        $this->container['configuredStatus'] = $configuredStatus;
 
         return $this;
     }

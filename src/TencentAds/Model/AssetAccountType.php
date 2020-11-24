@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * AssetAccountType Class Doc Comment
  *
  * @category Class
- * @description 被授权账号类型，素材授权功能目前白名单灰度中，若要使用可联系运营开通
+ * @description 被授权账号类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

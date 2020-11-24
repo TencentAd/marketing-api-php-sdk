@@ -59,7 +59,8 @@ class DynamicAdSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'productCatalogId' => 'int',
-        'productMode' => '\TencentAds\Model\ProductMode'
+        'productMode' => '\TencentAds\Model\ProductMode',
+        'productSource' => 'string'
     ];
 
     /**
@@ -69,7 +70,8 @@ class DynamicAdSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'productCatalogId' => 'int64',
-        'productMode' => null
+        'productMode' => null,
+        'productSource' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class DynamicAdSpec implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'productCatalogId' => 'product_catalog_id',
-        'productMode' => 'product_mode'
+        'productMode' => 'product_mode',
+        'productSource' => 'product_source'
     ];
 
     /**
@@ -110,7 +113,8 @@ class DynamicAdSpec implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'productCatalogId' => 'setProductCatalogId',
-        'productMode' => 'setProductMode'
+        'productMode' => 'setProductMode',
+        'productSource' => 'setProductSource'
     ];
 
     /**
@@ -120,7 +124,8 @@ class DynamicAdSpec implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'productCatalogId' => 'getProductCatalogId',
-        'productMode' => 'getProductMode'
+        'productMode' => 'getProductMode',
+        'productSource' => 'getProductSource'
     ];
 
     /**
@@ -185,6 +190,7 @@ class DynamicAdSpec implements ModelInterface, ArrayAccess
     {
         $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
         $this->container['productMode'] = isset($data['productMode']) ? $data['productMode'] : null;
+        $this->container['productSource'] = isset($data['productSource']) ? $data['productSource'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class DynamicAdSpec implements ModelInterface, ArrayAccess
     public function setProductMode($productMode)
     {
         $this->container['productMode'] = $productMode;
+
+        return $this;
+    }
+
+    /**
+     * Gets productSource
+     *
+     * @return string
+     */
+    public function getProductSource()
+    {
+        return $this->container['productSource'];
+    }
+
+    /**
+     * Sets productSource
+     *
+     * @param string $productSource productSource
+     *
+     * @return $this
+     */
+    public function setProductSource($productSource)
+    {
+        $this->container['productSource'] = $productSource;
 
         return $this;
     }

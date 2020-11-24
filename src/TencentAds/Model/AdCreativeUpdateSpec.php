@@ -60,6 +60,7 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'adcreativeName' => 'string',
         'adcreativeElements' => '\TencentAds\Model\DpAdcreativeCreativeElementsMp',
+        'pageSpec' => '\TencentAds\Model\DpPageSpec',
         'buttonTips' => 'string',
         'couponTitle' => 'string'
     ];
@@ -72,6 +73,7 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'adcreativeName' => null,
         'adcreativeElements' => null,
+        'pageSpec' => null,
         'buttonTips' => null,
         'couponTitle' => null
     ];
@@ -105,6 +107,7 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'adcreativeName' => 'adcreative_name',
         'adcreativeElements' => 'adcreative_elements',
+        'pageSpec' => 'page_spec',
         'buttonTips' => 'button_tips',
         'couponTitle' => 'coupon_title'
     ];
@@ -117,6 +120,7 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
     protected static $setters = [
         'adcreativeName' => 'setAdcreativeName',
         'adcreativeElements' => 'setAdcreativeElements',
+        'pageSpec' => 'setPageSpec',
         'buttonTips' => 'setButtonTips',
         'couponTitle' => 'setCouponTitle'
     ];
@@ -129,6 +133,7 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
     protected static $getters = [
         'adcreativeName' => 'getAdcreativeName',
         'adcreativeElements' => 'getAdcreativeElements',
+        'pageSpec' => 'getPageSpec',
         'buttonTips' => 'getButtonTips',
         'couponTitle' => 'getCouponTitle'
     ];
@@ -195,6 +200,7 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
     {
         $this->container['adcreativeName'] = isset($data['adcreativeName']) ? $data['adcreativeName'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
+        $this->container['pageSpec'] = isset($data['pageSpec']) ? $data['pageSpec'] : null;
         $this->container['buttonTips'] = isset($data['buttonTips']) ? $data['buttonTips'] : null;
         $this->container['couponTitle'] = isset($data['couponTitle']) ? $data['couponTitle'] : null;
     }
@@ -267,6 +273,30 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
     public function setAdcreativeElements($adcreativeElements)
     {
         $this->container['adcreativeElements'] = $adcreativeElements;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageSpec
+     *
+     * @return \TencentAds\Model\DpPageSpec
+     */
+    public function getPageSpec()
+    {
+        return $this->container['pageSpec'];
+    }
+
+    /**
+     * Sets pageSpec
+     *
+     * @param \TencentAds\Model\DpPageSpec $pageSpec pageSpec
+     *
+     * @return $this
+     */
+    public function setPageSpec($pageSpec)
+    {
+        $this->container['pageSpec'] = $pageSpec;
 
         return $this;
     }

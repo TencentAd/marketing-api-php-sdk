@@ -44,13 +44,13 @@ class WechatAdvertiserLocalBusinessApiContainer extends ApiContainer
             $contactPerson = isset($params['contact_person']) ? $params['contact_person'] : null;
             $contactPersonMobile = isset($params['contact_person_mobile']) ? $params['contact_person_mobile'] : null;
             $contactPersonCardId = isset($params['contact_person_card_id']) ? $params['contact_person_card_id'] : null;
-            $contactPersonTele = isset($params['contact_person_tele']) ? $params['contact_person_tele'] : null;
             $corporation = isset($params['corporation']) ? $params['corporation'] : null;
             $corporationLicence = isset($params['corporation_licence']) ? $params['corporation_licence'] : null;
-            $businessContent = isset($params['business_content']) ? $params['business_content'] : null;
             $industryId = isset($params['industry_id']) ? $params['industry_id'] : null;
             $businessId = isset($params['business_id']) ? $params['business_id'] : null;
-            $response = $this->apiInstance->wechatAdvertiserLocalBusinessAdd($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $contactPersonTele, $corporation, $corporationLicence, $businessContent, $industryId, $businessId);
+            $contactPersonTele = isset($params['contact_person_tele']) ? $params['contact_person_tele'] : null;
+            $businessContent = isset($params['business_content']) ? $params['business_content'] : null;
+            $response = $this->apiInstance->wechatAdvertiserLocalBusinessAdd($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $businessId, $contactPersonTele, $businessContent);
             return $this->handleResponse($response);
         });
     }
@@ -71,13 +71,13 @@ class WechatAdvertiserLocalBusinessApiContainer extends ApiContainer
             $contactPerson = isset($params['contact_person']) ? $params['contact_person'] : null;
             $contactPersonMobile = isset($params['contact_person_mobile']) ? $params['contact_person_mobile'] : null;
             $contactPersonCardId = isset($params['contact_person_card_id']) ? $params['contact_person_card_id'] : null;
-            $contactPersonTele = isset($params['contact_person_tele']) ? $params['contact_person_tele'] : null;
             $corporation = isset($params['corporation']) ? $params['corporation'] : null;
             $corporationLicence = isset($params['corporation_licence']) ? $params['corporation_licence'] : null;
-            $businessContent = isset($params['business_content']) ? $params['business_content'] : null;
             $industryId = isset($params['industry_id']) ? $params['industry_id'] : null;
             $businessId = isset($params['business_id']) ? $params['business_id'] : null;
-            $response = $this->apiInstance->wechatAdvertiserLocalBusinessAddAsync($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $contactPersonTele, $corporation, $corporationLicence, $businessContent, $industryId, $businessId);
+            $contactPersonTele = isset($params['contact_person_tele']) ? $params['contact_person_tele'] : null;
+            $businessContent = isset($params['business_content']) ? $params['business_content'] : null;
+            $response = $this->apiInstance->wechatAdvertiserLocalBusinessAddAsync($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $businessId, $contactPersonTele, $businessContent);
             return $response;
         });
     }
@@ -136,13 +136,13 @@ class WechatAdvertiserLocalBusinessApiContainer extends ApiContainer
             $contactPerson = isset($params['contact_person']) ? $params['contact_person'] : null;
             $contactPersonMobile = isset($params['contact_person_mobile']) ? $params['contact_person_mobile'] : null;
             $contactPersonCardId = isset($params['contact_person_card_id']) ? $params['contact_person_card_id'] : null;
-            $contactPersonTele = isset($params['contact_person_tele']) ? $params['contact_person_tele'] : null;
             $corporation = isset($params['corporation']) ? $params['corporation'] : null;
             $corporationLicence = isset($params['corporation_licence']) ? $params['corporation_licence'] : null;
-            $businessContent = isset($params['business_content']) ? $params['business_content'] : null;
             $industryId = isset($params['industry_id']) ? $params['industry_id'] : null;
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
-            $response = $this->apiInstance->wechatAdvertiserLocalBusinessUpdate($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $contactPersonTele, $corporation, $corporationLicence, $businessContent, $industryId, $accountId);
+            $contactPersonTele = isset($params['contact_person_tele']) ? $params['contact_person_tele'] : null;
+            $businessContent = isset($params['business_content']) ? $params['business_content'] : null;
+            $response = $this->apiInstance->wechatAdvertiserLocalBusinessUpdate($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $accountId, $contactPersonTele, $businessContent);
             return $this->handleResponse($response);
         });
     }
@@ -163,13 +163,13 @@ class WechatAdvertiserLocalBusinessApiContainer extends ApiContainer
             $contactPerson = isset($params['contact_person']) ? $params['contact_person'] : null;
             $contactPersonMobile = isset($params['contact_person_mobile']) ? $params['contact_person_mobile'] : null;
             $contactPersonCardId = isset($params['contact_person_card_id']) ? $params['contact_person_card_id'] : null;
-            $contactPersonTele = isset($params['contact_person_tele']) ? $params['contact_person_tele'] : null;
             $corporation = isset($params['corporation']) ? $params['corporation'] : null;
             $corporationLicence = isset($params['corporation_licence']) ? $params['corporation_licence'] : null;
-            $businessContent = isset($params['business_content']) ? $params['business_content'] : null;
             $industryId = isset($params['industry_id']) ? $params['industry_id'] : null;
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
-            $response = $this->apiInstance->wechatAdvertiserLocalBusinessUpdateAsync($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $contactPersonTele, $corporation, $corporationLicence, $businessContent, $industryId, $accountId);
+            $contactPersonTele = isset($params['contact_person_tele']) ? $params['contact_person_tele'] : null;
+            $businessContent = isset($params['business_content']) ? $params['business_content'] : null;
+            $response = $this->apiInstance->wechatAdvertiserLocalBusinessUpdateAsync($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $accountId, $contactPersonTele, $businessContent);
             return $response;
         });
     }

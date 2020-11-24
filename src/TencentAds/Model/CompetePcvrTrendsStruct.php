@@ -59,9 +59,9 @@ class CompetePcvrTrendsStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'score' => 'int',
-        'selfAvg' => 'string[]',
-        'selfChoseAvg' => 'string[]',
-        'winnerChoseAvg' => 'string[]',
+        'selfAvg' => '\TencentAds\Model\PointStruct[]',
+        'selfChoseAvg' => '\TencentAds\Model\PointStruct[]',
+        'winnerChoseAvg' => '\TencentAds\Model\PointStruct[]',
         'conclusion' => 'string'
     ];
 
@@ -256,7 +256,7 @@ class CompetePcvrTrendsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets selfAvg
      *
-     * @return string[]
+     * @return \TencentAds\Model\PointStruct[]
      */
     public function getSelfAvg()
     {
@@ -266,7 +266,7 @@ class CompetePcvrTrendsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets selfAvg
      *
-     * @param string[] $selfAvg selfAvg
+     * @param \TencentAds\Model\PointStruct[] $selfAvg selfAvg
      *
      * @return $this
      */
@@ -280,7 +280,7 @@ class CompetePcvrTrendsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets selfChoseAvg
      *
-     * @return string[]
+     * @return \TencentAds\Model\PointStruct[]
      */
     public function getSelfChoseAvg()
     {
@@ -290,7 +290,7 @@ class CompetePcvrTrendsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets selfChoseAvg
      *
-     * @param string[] $selfChoseAvg selfChoseAvg
+     * @param \TencentAds\Model\PointStruct[] $selfChoseAvg selfChoseAvg
      *
      * @return $this
      */
@@ -304,7 +304,7 @@ class CompetePcvrTrendsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets winnerChoseAvg
      *
-     * @return string[]
+     * @return \TencentAds\Model\PointStruct[]
      */
     public function getWinnerChoseAvg()
     {
@@ -314,7 +314,7 @@ class CompetePcvrTrendsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets winnerChoseAvg
      *
-     * @param string[] $winnerChoseAvg winnerChoseAvg
+     * @param \TencentAds\Model\PointStruct[] $winnerChoseAvg winnerChoseAvg
      *
      * @return $this
      */

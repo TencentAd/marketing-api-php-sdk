@@ -314,10 +314,13 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'firstDayPayAmount' => 'int',
         'firstDayFirstPayRate' => 'double',
         'campaignId' => 'int',
+        'campaignName' => 'string',
         'webAddToCartCount' => 'int',
         'webAddToCartCost' => 'int',
         'adgroupId' => 'int',
+        'adgroupName' => 'string',
         'adId' => 'int',
+        'adName' => 'string',
         'promotedObjectType' => 'string',
         'promotedObjectId' => 'string',
         'wechatAccountId' => 'string',
@@ -654,10 +657,13 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'firstDayPayAmount' => 'int64',
         'firstDayFirstPayRate' => 'double',
         'campaignId' => 'int64',
+        'campaignName' => null,
         'webAddToCartCount' => 'int64',
         'webAddToCartCost' => 'int64',
         'adgroupId' => 'int64',
+        'adgroupName' => null,
         'adId' => 'int64',
+        'adName' => null,
         'promotedObjectType' => null,
         'promotedObjectId' => null,
         'wechatAccountId' => null,
@@ -1015,10 +1021,13 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'firstDayPayAmount' => 'first_day_pay_amount',
         'firstDayFirstPayRate' => 'first_day_first_pay_rate',
         'campaignId' => 'campaign_id',
+        'campaignName' => 'campaign_name',
         'webAddToCartCount' => 'web_add_to_cart_count',
         'webAddToCartCost' => 'web_add_to_cart_cost',
         'adgroupId' => 'adgroup_id',
+        'adgroupName' => 'adgroup_name',
         'adId' => 'ad_id',
+        'adName' => 'ad_name',
         'promotedObjectType' => 'promoted_object_type',
         'promotedObjectId' => 'promoted_object_id',
         'wechatAccountId' => 'wechat_account_id',
@@ -1355,10 +1364,13 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'firstDayPayAmount' => 'setFirstDayPayAmount',
         'firstDayFirstPayRate' => 'setFirstDayFirstPayRate',
         'campaignId' => 'setCampaignId',
+        'campaignName' => 'setCampaignName',
         'webAddToCartCount' => 'setWebAddToCartCount',
         'webAddToCartCost' => 'setWebAddToCartCost',
         'adgroupId' => 'setAdgroupId',
+        'adgroupName' => 'setAdgroupName',
         'adId' => 'setAdId',
+        'adName' => 'setAdName',
         'promotedObjectType' => 'setPromotedObjectType',
         'promotedObjectId' => 'setPromotedObjectId',
         'wechatAccountId' => 'setWechatAccountId',
@@ -1695,10 +1707,13 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'firstDayPayAmount' => 'getFirstDayPayAmount',
         'firstDayFirstPayRate' => 'getFirstDayFirstPayRate',
         'campaignId' => 'getCampaignId',
+        'campaignName' => 'getCampaignName',
         'webAddToCartCount' => 'getWebAddToCartCount',
         'webAddToCartCost' => 'getWebAddToCartCost',
         'adgroupId' => 'getAdgroupId',
+        'adgroupName' => 'getAdgroupName',
         'adId' => 'getAdId',
+        'adName' => 'getAdName',
         'promotedObjectType' => 'getPromotedObjectType',
         'promotedObjectId' => 'getPromotedObjectId',
         'wechatAccountId' => 'getWechatAccountId',
@@ -2089,10 +2104,13 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['firstDayPayAmount'] = isset($data['firstDayPayAmount']) ? $data['firstDayPayAmount'] : null;
         $this->container['firstDayFirstPayRate'] = isset($data['firstDayFirstPayRate']) ? $data['firstDayFirstPayRate'] : null;
         $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
+        $this->container['campaignName'] = isset($data['campaignName']) ? $data['campaignName'] : null;
         $this->container['webAddToCartCount'] = isset($data['webAddToCartCount']) ? $data['webAddToCartCount'] : null;
         $this->container['webAddToCartCost'] = isset($data['webAddToCartCost']) ? $data['webAddToCartCost'] : null;
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
+        $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['adId'] = isset($data['adId']) ? $data['adId'] : null;
+        $this->container['adName'] = isset($data['adName']) ? $data['adName'] : null;
         $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
         $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
         $this->container['wechatAccountId'] = isset($data['wechatAccountId']) ? $data['wechatAccountId'] : null;
@@ -8336,6 +8354,30 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets campaignName
+     *
+     * @return string
+     */
+    public function getCampaignName()
+    {
+        return $this->container['campaignName'];
+    }
+
+    /**
+     * Sets campaignName
+     *
+     * @param string $campaignName campaignName
+     *
+     * @return $this
+     */
+    public function setCampaignName($campaignName)
+    {
+        $this->container['campaignName'] = $campaignName;
+
+        return $this;
+    }
+
+    /**
      * Gets webAddToCartCount
      *
      * @return int
@@ -8408,6 +8450,30 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets adgroupName
+     *
+     * @return string
+     */
+    public function getAdgroupName()
+    {
+        return $this->container['adgroupName'];
+    }
+
+    /**
+     * Sets adgroupName
+     *
+     * @param string $adgroupName adgroupName
+     *
+     * @return $this
+     */
+    public function setAdgroupName($adgroupName)
+    {
+        $this->container['adgroupName'] = $adgroupName;
+
+        return $this;
+    }
+
+    /**
      * Gets adId
      *
      * @return int
@@ -8427,6 +8493,30 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setAdId($adId)
     {
         $this->container['adId'] = $adId;
+
+        return $this;
+    }
+
+    /**
+     * Gets adName
+     *
+     * @return string
+     */
+    public function getAdName()
+    {
+        return $this->container['adName'];
+    }
+
+    /**
+     * Sets adName
+     *
+     * @param string $adName adName
+     *
+     * @return $this
+     */
+    public function setAdName($adName)
+    {
+        $this->container['adName'] = $adName;
 
         return $this;
     }

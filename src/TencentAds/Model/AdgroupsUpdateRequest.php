@@ -80,6 +80,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'expandEnabled' => 'bool',
         'expandTargeting' => 'string[]',
         'deepConversionSpec' => '\TencentAds\Model\DeepConversionSpec',
+        'poiList' => 'string[]',
         'deepConversionBehaviorBid' => 'int',
         'deepConversionWorthRate' => 'double',
         'bidMode' => '\TencentAds\Model\BidMode',
@@ -118,6 +119,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'expandEnabled' => null,
         'expandTargeting' => null,
         'deepConversionSpec' => null,
+        'poiList' => null,
         'deepConversionBehaviorBid' => 'int64',
         'deepConversionWorthRate' => 'double',
         'bidMode' => null,
@@ -177,6 +179,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'expandEnabled' => 'expand_enabled',
         'expandTargeting' => 'expand_targeting',
         'deepConversionSpec' => 'deep_conversion_spec',
+        'poiList' => 'poi_list',
         'deepConversionBehaviorBid' => 'deep_conversion_behavior_bid',
         'deepConversionWorthRate' => 'deep_conversion_worth_rate',
         'bidMode' => 'bid_mode',
@@ -215,6 +218,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'expandEnabled' => 'setExpandEnabled',
         'expandTargeting' => 'setExpandTargeting',
         'deepConversionSpec' => 'setDeepConversionSpec',
+        'poiList' => 'setPoiList',
         'deepConversionBehaviorBid' => 'setDeepConversionBehaviorBid',
         'deepConversionWorthRate' => 'setDeepConversionWorthRate',
         'bidMode' => 'setBidMode',
@@ -253,6 +257,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'expandEnabled' => 'getExpandEnabled',
         'expandTargeting' => 'getExpandTargeting',
         'deepConversionSpec' => 'getDeepConversionSpec',
+        'poiList' => 'getPoiList',
         'deepConversionBehaviorBid' => 'getDeepConversionBehaviorBid',
         'deepConversionWorthRate' => 'getDeepConversionWorthRate',
         'bidMode' => 'getBidMode',
@@ -345,6 +350,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['expandEnabled'] = isset($data['expandEnabled']) ? $data['expandEnabled'] : null;
         $this->container['expandTargeting'] = isset($data['expandTargeting']) ? $data['expandTargeting'] : null;
         $this->container['deepConversionSpec'] = isset($data['deepConversionSpec']) ? $data['deepConversionSpec'] : null;
+        $this->container['poiList'] = isset($data['poiList']) ? $data['poiList'] : null;
         $this->container['deepConversionBehaviorBid'] = isset($data['deepConversionBehaviorBid']) ? $data['deepConversionBehaviorBid'] : null;
         $this->container['deepConversionWorthRate'] = isset($data['deepConversionWorthRate']) ? $data['deepConversionWorthRate'] : null;
         $this->container['bidMode'] = isset($data['bidMode']) ? $data['bidMode'] : null;
@@ -926,6 +932,30 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setDeepConversionSpec($deepConversionSpec)
     {
         $this->container['deepConversionSpec'] = $deepConversionSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets poiList
+     *
+     * @return string[]
+     */
+    public function getPoiList()
+    {
+        return $this->container['poiList'];
+    }
+
+    /**
+     * Sets poiList
+     *
+     * @param string[] $poiList poiList
+     *
+     * @return $this
+     */
+    public function setPoiList($poiList)
+    {
+        $this->container['poiList'] = $poiList;
 
         return $this;
     }

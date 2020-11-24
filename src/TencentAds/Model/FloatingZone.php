@@ -62,8 +62,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
         'floatingZoneImageId' => 'string',
         'floatingZoneName' => 'string',
         'floatingZoneDesc' => 'string',
-        'floatingZoneButtonText' => 'string',
-        'floatingZoneShowAppPropertySwitch' => 'bool'
+        'floatingZoneButtonText' => 'string'
     ];
 
     /**
@@ -76,8 +75,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
         'floatingZoneImageId' => null,
         'floatingZoneName' => null,
         'floatingZoneDesc' => null,
-        'floatingZoneButtonText' => null,
-        'floatingZoneShowAppPropertySwitch' => null
+        'floatingZoneButtonText' => null
     ];
 
     /**
@@ -111,8 +109,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
         'floatingZoneImageId' => 'floating_zone_image_id',
         'floatingZoneName' => 'floating_zone_name',
         'floatingZoneDesc' => 'floating_zone_desc',
-        'floatingZoneButtonText' => 'floating_zone_button_text',
-        'floatingZoneShowAppPropertySwitch' => 'floating_zone_show_app_property_switch'
+        'floatingZoneButtonText' => 'floating_zone_button_text'
     ];
 
     /**
@@ -125,8 +122,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
         'floatingZoneImageId' => 'setFloatingZoneImageId',
         'floatingZoneName' => 'setFloatingZoneName',
         'floatingZoneDesc' => 'setFloatingZoneDesc',
-        'floatingZoneButtonText' => 'setFloatingZoneButtonText',
-        'floatingZoneShowAppPropertySwitch' => 'setFloatingZoneShowAppPropertySwitch'
+        'floatingZoneButtonText' => 'setFloatingZoneButtonText'
     ];
 
     /**
@@ -139,8 +135,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
         'floatingZoneImageId' => 'getFloatingZoneImageId',
         'floatingZoneName' => 'getFloatingZoneName',
         'floatingZoneDesc' => 'getFloatingZoneDesc',
-        'floatingZoneButtonText' => 'getFloatingZoneButtonText',
-        'floatingZoneShowAppPropertySwitch' => 'getFloatingZoneShowAppPropertySwitch'
+        'floatingZoneButtonText' => 'getFloatingZoneButtonText'
     ];
 
     /**
@@ -208,7 +203,6 @@ class FloatingZone implements ModelInterface, ArrayAccess
         $this->container['floatingZoneName'] = isset($data['floatingZoneName']) ? $data['floatingZoneName'] : null;
         $this->container['floatingZoneDesc'] = isset($data['floatingZoneDesc']) ? $data['floatingZoneDesc'] : null;
         $this->container['floatingZoneButtonText'] = isset($data['floatingZoneButtonText']) ? $data['floatingZoneButtonText'] : null;
-        $this->container['floatingZoneShowAppPropertySwitch'] = isset($data['floatingZoneShowAppPropertySwitch']) ? $data['floatingZoneShowAppPropertySwitch'] : null;
     }
 
     /**
@@ -351,30 +345,6 @@ class FloatingZone implements ModelInterface, ArrayAccess
     public function setFloatingZoneButtonText($floatingZoneButtonText)
     {
         $this->container['floatingZoneButtonText'] = $floatingZoneButtonText;
-
-        return $this;
-    }
-
-    /**
-     * Gets floatingZoneShowAppPropertySwitch
-     *
-     * @return bool
-     */
-    public function getFloatingZoneShowAppPropertySwitch()
-    {
-        return $this->container['floatingZoneShowAppPropertySwitch'];
-    }
-
-    /**
-     * Sets floatingZoneShowAppPropertySwitch
-     *
-     * @param bool $floatingZoneShowAppPropertySwitch floatingZoneShowAppPropertySwitch
-     *
-     * @return $this
-     */
-    public function setFloatingZoneShowAppPropertySwitch($floatingZoneShowAppPropertySwitch)
-    {
-        $this->container['floatingZoneShowAppPropertySwitch'] = $floatingZoneShowAppPropertySwitch;
 
         return $this;
     }

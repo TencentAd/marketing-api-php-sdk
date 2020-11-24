@@ -68,6 +68,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'productCatalogId' => 'int',
         'productOuterId' => 'string',
         'sourceReferenceId' => 'string',
+        'ownerAccountId' => 'string',
         'width' => 'int',
         'height' => 'int',
         'fileSize' => 'int',
@@ -91,6 +92,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'productCatalogId' => 'int64',
         'productOuterId' => null,
         'sourceReferenceId' => null,
+        'ownerAccountId' => null,
         'width' => 'int64',
         'height' => 'int64',
         'fileSize' => 'int64',
@@ -135,6 +137,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'productCatalogId' => 'product_catalog_id',
         'productOuterId' => 'product_outer_id',
         'sourceReferenceId' => 'source_reference_id',
+        'ownerAccountId' => 'owner_account_id',
         'width' => 'width',
         'height' => 'height',
         'fileSize' => 'file_size',
@@ -158,6 +161,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'productCatalogId' => 'setProductCatalogId',
         'productOuterId' => 'setProductOuterId',
         'sourceReferenceId' => 'setSourceReferenceId',
+        'ownerAccountId' => 'setOwnerAccountId',
         'width' => 'setWidth',
         'height' => 'setHeight',
         'fileSize' => 'setFileSize',
@@ -181,6 +185,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'productCatalogId' => 'getProductCatalogId',
         'productOuterId' => 'getProductOuterId',
         'sourceReferenceId' => 'getSourceReferenceId',
+        'ownerAccountId' => 'getOwnerAccountId',
         'width' => 'getWidth',
         'height' => 'getHeight',
         'fileSize' => 'getFileSize',
@@ -258,6 +263,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
         $this->container['productOuterId'] = isset($data['productOuterId']) ? $data['productOuterId'] : null;
         $this->container['sourceReferenceId'] = isset($data['sourceReferenceId']) ? $data['sourceReferenceId'] : null;
+        $this->container['ownerAccountId'] = isset($data['ownerAccountId']) ? $data['ownerAccountId'] : null;
         $this->container['width'] = isset($data['width']) ? $data['width'] : null;
         $this->container['height'] = isset($data['height']) ? $data['height'] : null;
         $this->container['fileSize'] = isset($data['fileSize']) ? $data['fileSize'] : null;
@@ -525,6 +531,30 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     public function setSourceReferenceId($sourceReferenceId)
     {
         $this->container['sourceReferenceId'] = $sourceReferenceId;
+
+        return $this;
+    }
+
+    /**
+     * Gets ownerAccountId
+     *
+     * @return string
+     */
+    public function getOwnerAccountId()
+    {
+        return $this->container['ownerAccountId'];
+    }
+
+    /**
+     * Sets ownerAccountId
+     *
+     * @param string $ownerAccountId ownerAccountId
+     *
+     * @return $this
+     */
+    public function setOwnerAccountId($ownerAccountId)
+    {
+        $this->container['ownerAccountId'] = $ownerAccountId;
 
         return $this;
     }

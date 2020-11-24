@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * CampaignGetSpec Class Doc Comment
  *
  * @category Class
- * @description 拉取ad结构
+ * @description 计划结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

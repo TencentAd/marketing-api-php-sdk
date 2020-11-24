@@ -63,8 +63,8 @@ class CtrLevelStruct implements ModelInterface, ArrayAccess
         'rankOverall' => 'string',
         'rankFirstCategory' => 'string',
         'rankSecondCategory' => 'string',
-        'selfTrends' => 'string[]',
-        'benchmarkTrends' => 'string[]'
+        'selfTrends' => '\TencentAds\Model\PointStruct[]',
+        'benchmarkTrends' => '\TencentAds\Model\PointStruct[]'
     ];
 
     /**
@@ -364,7 +364,7 @@ class CtrLevelStruct implements ModelInterface, ArrayAccess
     /**
      * Gets selfTrends
      *
-     * @return string[]
+     * @return \TencentAds\Model\PointStruct[]
      */
     public function getSelfTrends()
     {
@@ -374,7 +374,7 @@ class CtrLevelStruct implements ModelInterface, ArrayAccess
     /**
      * Sets selfTrends
      *
-     * @param string[] $selfTrends selfTrends
+     * @param \TencentAds\Model\PointStruct[] $selfTrends selfTrends
      *
      * @return $this
      */
@@ -388,7 +388,7 @@ class CtrLevelStruct implements ModelInterface, ArrayAccess
     /**
      * Gets benchmarkTrends
      *
-     * @return string[]
+     * @return \TencentAds\Model\PointStruct[]
      */
     public function getBenchmarkTrends()
     {
@@ -398,7 +398,7 @@ class CtrLevelStruct implements ModelInterface, ArrayAccess
     /**
      * Sets benchmarkTrends
      *
-     * @param string[] $benchmarkTrends benchmarkTrends
+     * @param \TencentAds\Model\PointStruct[] $benchmarkTrends benchmarkTrends
      *
      * @return $this
      */

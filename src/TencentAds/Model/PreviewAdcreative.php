@@ -60,7 +60,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'adcreativeName' => 'string',
         'siteSet' => 'string[]',
-        'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
+        'promotedObjectType' => '\TencentAds\Model\PromotedObject',
         'promotedObjectId' => 'string',
         'pageType' => '\TencentAds\Model\PageTypeRead',
         'pageSpec' => '\TencentAds\Model\PageSpec',
@@ -430,7 +430,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObjectType
+     * @return \TencentAds\Model\PromotedObject
      */
     public function getPromotedObjectType()
     {
@@ -440,7 +440,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObject $promotedObjectType promotedObjectType
      *
      * @return $this
      */

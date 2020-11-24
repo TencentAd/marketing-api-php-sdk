@@ -62,40 +62,6 @@ class ChannelsApiContainer extends ApiContainer
 
 
     /**
-     * Handle ChannelsApi channelsDelete function
-     * @param array params
-     * @return \TencentAds\Model\ChannelsDeleteResponseData
-     * @throws \TencentAds\ApiException
-     * @throws \TencentAds\Exception\TencentAdsResponseException
-     */
-    public function delete(array $params = [])
-    {
-        return $this->handleMiddleware('delete', $params, function(MiddlewareRequest $request) {
-            $params = $request->getApiMethodArguments();
-            $data = $params;
-            $response = $this->apiInstance->channelsDelete($data);
-            return $this->handleResponse($response);
-        });
-    }
-
-
-    /**
-     * Handle ChannelsApi channelsDeleteAsync function
-     * @param array params
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function deleteAsync(array $params = [])
-    {
-        return $this->handleMiddleware('delete', $params, function(MiddlewareRequest $request) {
-            $params = $request->getApiMethodArguments();
-            $data = $params;
-            $response = $this->apiInstance->channelsDeleteAsync($data);
-            return $response;
-        });
-    }
-
-
-    /**
      * Handle ChannelsApi channelsGet function
      * @param array params
      * @return \TencentAds\Model\ChannelsGetResponseData

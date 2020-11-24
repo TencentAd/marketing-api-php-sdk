@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * TimeRange Class Doc Comment
  *
  * @category Class
- * @description 起止时间范围
+ * @description 时间范围，根据表单最后提交时间进行查询。最长跨度1年
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

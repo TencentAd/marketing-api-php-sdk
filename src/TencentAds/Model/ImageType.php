@@ -44,29 +44,52 @@ class ImageType
     /**
      * Possible values of this enum
      */
-    const GIF = 'IMAGE_TYPE_GIF';
-    const JPG = 'IMAGE_TYPE_JPG';
-    const PNG = 'IMAGE_TYPE_PNG';
-    const SWF = 'IMAGE_TYPE_SWF';
-    const PSD = 'IMAGE_TYPE_PSD';
-    const BMP = 'IMAGE_TYPE_BMP';
-    const TIFF_INTEL = 'IMAGE_TYPE_TIFF_INTEL';
-    const TIFF_MOTOROLA = 'IMAGE_TYPE_TIFF_MOTOROLA';
-    const JPC = 'IMAGE_TYPE_JPC';
-    const JP2 = 'IMAGE_TYPE_JP2';
-    const JPX = 'IMAGE_TYPE_JPX';
-    const JB2 = 'IMAGE_TYPE_JB2';
-    const SWC = 'IMAGE_TYPE_SWC';
-    const IFF = 'IMAGE_TYPE_IFF';
-    const WBMP = 'IMAGE_TYPE_WBMP';
-    const XBM = 'IMAGE_TYPE_XBM';
-    const WEBP = 'IMAGE_TYPE_WEBP';
-    const FLV = 'IMAGE_TYPE_FLV';
-    const WAV = 'IMAGE_TYPE_WAV';
-    const MP3 = 'IMAGE_TYPE_MP3';
-    const MP4 = 'IMAGE_TYPE_MP4';
-    const AVI = 'IMAGE_TYPE_AVI';
-    const MOV = 'IMAGE_TYPE_MOV';
+    const IMAGE_TYPE_GIF = 'IMAGE_TYPE_GIF';
+    const IMAGE_TYPE_JPG = 'IMAGE_TYPE_JPG';
+    const IMAGE_TYPE_PNG = 'IMAGE_TYPE_PNG';
+    const IMAGE_TYPE_SWF = 'IMAGE_TYPE_SWF';
+    const IMAGE_TYPE_PSD = 'IMAGE_TYPE_PSD';
+    const IMAGE_TYPE_BMP = 'IMAGE_TYPE_BMP';
+    const IMAGE_TYPE_TIFF_INTEL = 'IMAGE_TYPE_TIFF_INTEL';
+    const IMAGE_TYPE_TIFF_MOTOROLA = 'IMAGE_TYPE_TIFF_MOTOROLA';
+    const IMAGE_TYPE_JPC = 'IMAGE_TYPE_JPC';
+    const IMAGE_TYPE_JP2 = 'IMAGE_TYPE_JP2';
+    const IMAGE_TYPE_JPX = 'IMAGE_TYPE_JPX';
+    const IMAGE_TYPE_JB2 = 'IMAGE_TYPE_JB2';
+    const IMAGE_TYPE_SWC = 'IMAGE_TYPE_SWC';
+    const IMAGE_TYPE_IFF = 'IMAGE_TYPE_IFF';
+    const IMAGE_TYPE_WBMP = 'IMAGE_TYPE_WBMP';
+    const IMAGE_TYPE_XBM = 'IMAGE_TYPE_XBM';
+    const IMAGE_TYPE_WEBP = 'IMAGE_TYPE_WEBP';
+    const IMAGE_TYPE_FLV = 'IMAGE_TYPE_FLV';
+    const IMAGE_TYPE_WAV = 'IMAGE_TYPE_WAV';
+    const IMAGE_TYPE_MP3 = 'IMAGE_TYPE_MP3';
+    const IMAGE_TYPE_MP4 = 'IMAGE_TYPE_MP4';
+    const IMAGE_TYPE_AVI = 'IMAGE_TYPE_AVI';
+    const IMAGE_TYPE_MOV = 'IMAGE_TYPE_MOV';
+    const TYPE_GIF = 'TYPE_GIF';
+    const TYPE_JPG = 'TYPE_JPG';
+    const TYPE_PNG = 'TYPE_PNG';
+    const TYPE_SWF = 'TYPE_SWF';
+    const TYPE_PSD = 'TYPE_PSD';
+    const TYPE_BMP = 'TYPE_BMP';
+    const TYPE_TIFF_INTEL = 'TYPE_TIFF_INTEL';
+    const TYPE_TIFF_MOTOROLA = 'TYPE_TIFF_MOTOROLA';
+    const TYPE_JPC = 'TYPE_JPC';
+    const TYPE_JP2 = 'TYPE_JP2';
+    const TYPE_JPX = 'TYPE_JPX';
+    const TYPE_JB2 = 'TYPE_JB2';
+    const TYPE_SWC = 'TYPE_SWC';
+    const TYPE_IFF = 'TYPE_IFF';
+    const TYPE_WBMP = 'TYPE_WBMP';
+    const TYPE_XBM = 'TYPE_XBM';
+    const TYPE_WEBP = 'TYPE_WEBP';
+    const TYPE_FLV = 'TYPE_FLV';
+    const TYPE_WAV = 'TYPE_WAV';
+    const TYPE_MP3 = 'TYPE_MP3';
+    const TYPE_MP4 = 'TYPE_MP4';
+    const TYPE_AVI = 'TYPE_AVI';
+    const TYPE_MOV = 'TYPE_MOV';
     
     /**
      * Gets allowable values of the enum
@@ -75,29 +98,52 @@ class ImageType
     public static function getAllowableEnumValues()
     {
         return [
-            self::GIF,
-            self::JPG,
-            self::PNG,
-            self::SWF,
-            self::PSD,
-            self::BMP,
-            self::TIFF_INTEL,
-            self::TIFF_MOTOROLA,
-            self::JPC,
-            self::JP2,
-            self::JPX,
-            self::JB2,
-            self::SWC,
-            self::IFF,
-            self::WBMP,
-            self::XBM,
-            self::WEBP,
-            self::FLV,
-            self::WAV,
-            self::MP3,
-            self::MP4,
-            self::AVI,
-            self::MOV,
+            self::IMAGE_TYPE_GIF,
+            self::IMAGE_TYPE_JPG,
+            self::IMAGE_TYPE_PNG,
+            self::IMAGE_TYPE_SWF,
+            self::IMAGE_TYPE_PSD,
+            self::IMAGE_TYPE_BMP,
+            self::IMAGE_TYPE_TIFF_INTEL,
+            self::IMAGE_TYPE_TIFF_MOTOROLA,
+            self::IMAGE_TYPE_JPC,
+            self::IMAGE_TYPE_JP2,
+            self::IMAGE_TYPE_JPX,
+            self::IMAGE_TYPE_JB2,
+            self::IMAGE_TYPE_SWC,
+            self::IMAGE_TYPE_IFF,
+            self::IMAGE_TYPE_WBMP,
+            self::IMAGE_TYPE_XBM,
+            self::IMAGE_TYPE_WEBP,
+            self::IMAGE_TYPE_FLV,
+            self::IMAGE_TYPE_WAV,
+            self::IMAGE_TYPE_MP3,
+            self::IMAGE_TYPE_MP4,
+            self::IMAGE_TYPE_AVI,
+            self::IMAGE_TYPE_MOV,
+            self::TYPE_GIF,
+            self::TYPE_JPG,
+            self::TYPE_PNG,
+            self::TYPE_SWF,
+            self::TYPE_PSD,
+            self::TYPE_BMP,
+            self::TYPE_TIFF_INTEL,
+            self::TYPE_TIFF_MOTOROLA,
+            self::TYPE_JPC,
+            self::TYPE_JP2,
+            self::TYPE_JPX,
+            self::TYPE_JB2,
+            self::TYPE_SWC,
+            self::TYPE_IFF,
+            self::TYPE_WBMP,
+            self::TYPE_XBM,
+            self::TYPE_WEBP,
+            self::TYPE_FLV,
+            self::TYPE_WAV,
+            self::TYPE_MP3,
+            self::TYPE_MP4,
+            self::TYPE_AVI,
+            self::TYPE_MOV,
         ];
     }
 }

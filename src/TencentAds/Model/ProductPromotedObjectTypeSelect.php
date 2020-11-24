@@ -53,6 +53,7 @@ class ProductPromotedObjectTypeSelect
     const EXCHANGE_APP_ANDROID_MYAPP = 'PROMOTED_OBJECT_TYPE_EXCHANGE_APP_ANDROID_MYAPP';
     const DIANPING_SHOP = 'PROMOTED_OBJECT_TYPE_DIANPING_SHOP';
     const UNSUPPORTED = 'PROMOTED_OBJECT_TYPE_UNSUPPORTED';
+    const MINI_GAME_WECHAT = 'PROMOTED_OBJECT_TYPE_MINI_GAME_WECHAT';
     const MINI_GAME_QQ = 'PROMOTED_OBJECT_TYPE_MINI_GAME_QQ';
     const JD = 'PROMOTED_OBJECT_TYPE_JD';
     
@@ -72,6 +73,7 @@ class ProductPromotedObjectTypeSelect
             self::EXCHANGE_APP_ANDROID_MYAPP,
             self::DIANPING_SHOP,
             self::UNSUPPORTED,
+            self::MINI_GAME_WECHAT,
             self::MINI_GAME_QQ,
             self::JD,
         ];

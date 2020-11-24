@@ -61,6 +61,8 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
         'elementShelf' => '\TencentAds\Model\ElementShelf',
         'elementFloat' => '\TencentAds\Model\ElementFloat',
         'elementGoods' => '\TencentAds\Model\ElementGoods',
+        'elementSwipe' => '\TencentAds\Model\ElementSwipe',
+        'elementWebview' => '\TencentAds\Model\ElementWebview',
         'imageSpec' => '\TencentAds\Model\ElementImage',
         'videoSpec' => '\TencentAds\Model\ElementVideo',
         'textSpec' => '\TencentAds\Model\ElementText',
@@ -78,6 +80,8 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
         'elementShelf' => null,
         'elementFloat' => null,
         'elementGoods' => null,
+        'elementSwipe' => null,
+        'elementWebview' => null,
         'imageSpec' => null,
         'videoSpec' => null,
         'textSpec' => null,
@@ -116,6 +120,8 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
         'elementShelf' => 'element_shelf',
         'elementFloat' => 'element_float',
         'elementGoods' => 'element_goods',
+        'elementSwipe' => 'element_swipe',
+        'elementWebview' => 'element_webview',
         'imageSpec' => 'image_spec',
         'videoSpec' => 'video_spec',
         'textSpec' => 'text_spec',
@@ -133,6 +139,8 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
         'elementShelf' => 'setElementShelf',
         'elementFloat' => 'setElementFloat',
         'elementGoods' => 'setElementGoods',
+        'elementSwipe' => 'setElementSwipe',
+        'elementWebview' => 'setElementWebview',
         'imageSpec' => 'setImageSpec',
         'videoSpec' => 'setVideoSpec',
         'textSpec' => 'setTextSpec',
@@ -150,6 +158,8 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
         'elementShelf' => 'getElementShelf',
         'elementFloat' => 'getElementFloat',
         'elementGoods' => 'getElementGoods',
+        'elementSwipe' => 'getElementSwipe',
+        'elementWebview' => 'getElementWebview',
         'imageSpec' => 'getImageSpec',
         'videoSpec' => 'getVideoSpec',
         'textSpec' => 'getTextSpec',
@@ -221,6 +231,8 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
         $this->container['elementShelf'] = isset($data['elementShelf']) ? $data['elementShelf'] : null;
         $this->container['elementFloat'] = isset($data['elementFloat']) ? $data['elementFloat'] : null;
         $this->container['elementGoods'] = isset($data['elementGoods']) ? $data['elementGoods'] : null;
+        $this->container['elementSwipe'] = isset($data['elementSwipe']) ? $data['elementSwipe'] : null;
+        $this->container['elementWebview'] = isset($data['elementWebview']) ? $data['elementWebview'] : null;
         $this->container['imageSpec'] = isset($data['imageSpec']) ? $data['imageSpec'] : null;
         $this->container['videoSpec'] = isset($data['videoSpec']) ? $data['videoSpec'] : null;
         $this->container['textSpec'] = isset($data['textSpec']) ? $data['textSpec'] : null;
@@ -321,6 +333,54 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     public function setElementGoods($elementGoods)
     {
         $this->container['elementGoods'] = $elementGoods;
+
+        return $this;
+    }
+
+    /**
+     * Gets elementSwipe
+     *
+     * @return \TencentAds\Model\ElementSwipe
+     */
+    public function getElementSwipe()
+    {
+        return $this->container['elementSwipe'];
+    }
+
+    /**
+     * Sets elementSwipe
+     *
+     * @param \TencentAds\Model\ElementSwipe $elementSwipe elementSwipe
+     *
+     * @return $this
+     */
+    public function setElementSwipe($elementSwipe)
+    {
+        $this->container['elementSwipe'] = $elementSwipe;
+
+        return $this;
+    }
+
+    /**
+     * Gets elementWebview
+     *
+     * @return \TencentAds\Model\ElementWebview
+     */
+    public function getElementWebview()
+    {
+        return $this->container['elementWebview'];
+    }
+
+    /**
+     * Sets elementWebview
+     *
+     * @param \TencentAds\Model\ElementWebview $elementWebview elementWebview
+     *
+     * @return $this
+     */
+    public function setElementWebview($elementWebview)
+    {
+        $this->container['elementWebview'] = $elementWebview;
 
         return $this;
     }

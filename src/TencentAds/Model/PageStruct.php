@@ -64,7 +64,8 @@ class PageStruct implements ModelInterface, ArrayAccess
         'pageType' => '\TencentAds\Model\PageType',
         'pagePublishStatus' => '\TencentAds\Model\PagePublishStatus',
         'pageStatus' => '\TencentAds\Model\PageAuditStatus',
-        'pageLastModifyTime' => 'string'
+        'pageLastModifyTime' => 'string',
+        'pageAccountId' => 'int'
     ];
 
     /**
@@ -79,7 +80,8 @@ class PageStruct implements ModelInterface, ArrayAccess
         'pageType' => null,
         'pagePublishStatus' => null,
         'pageStatus' => null,
-        'pageLastModifyTime' => null
+        'pageLastModifyTime' => null,
+        'pageAccountId' => 'int64'
     ];
 
     /**
@@ -115,7 +117,8 @@ class PageStruct implements ModelInterface, ArrayAccess
         'pageType' => 'page_type',
         'pagePublishStatus' => 'page_publish_status',
         'pageStatus' => 'page_status',
-        'pageLastModifyTime' => 'page_last_modify_time'
+        'pageLastModifyTime' => 'page_last_modify_time',
+        'pageAccountId' => 'page_account_id'
     ];
 
     /**
@@ -130,7 +133,8 @@ class PageStruct implements ModelInterface, ArrayAccess
         'pageType' => 'setPageType',
         'pagePublishStatus' => 'setPagePublishStatus',
         'pageStatus' => 'setPageStatus',
-        'pageLastModifyTime' => 'setPageLastModifyTime'
+        'pageLastModifyTime' => 'setPageLastModifyTime',
+        'pageAccountId' => 'setPageAccountId'
     ];
 
     /**
@@ -145,7 +149,8 @@ class PageStruct implements ModelInterface, ArrayAccess
         'pageType' => 'getPageType',
         'pagePublishStatus' => 'getPagePublishStatus',
         'pageStatus' => 'getPageStatus',
-        'pageLastModifyTime' => 'getPageLastModifyTime'
+        'pageLastModifyTime' => 'getPageLastModifyTime',
+        'pageAccountId' => 'getPageAccountId'
     ];
 
     /**
@@ -215,6 +220,7 @@ class PageStruct implements ModelInterface, ArrayAccess
         $this->container['pagePublishStatus'] = isset($data['pagePublishStatus']) ? $data['pagePublishStatus'] : null;
         $this->container['pageStatus'] = isset($data['pageStatus']) ? $data['pageStatus'] : null;
         $this->container['pageLastModifyTime'] = isset($data['pageLastModifyTime']) ? $data['pageLastModifyTime'] : null;
+        $this->container['pageAccountId'] = isset($data['pageAccountId']) ? $data['pageAccountId'] : null;
     }
 
     /**
@@ -405,6 +411,30 @@ class PageStruct implements ModelInterface, ArrayAccess
     public function setPageLastModifyTime($pageLastModifyTime)
     {
         $this->container['pageLastModifyTime'] = $pageLastModifyTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageAccountId
+     *
+     * @return int
+     */
+    public function getPageAccountId()
+    {
+        return $this->container['pageAccountId'];
+    }
+
+    /**
+     * Sets pageAccountId
+     *
+     * @param int $pageAccountId pageAccountId
+     *
+     * @return $this
+     */
+    public function setPageAccountId($pageAccountId)
+    {
+        $this->container['pageAccountId'] = $pageAccountId;
 
         return $this;
     }

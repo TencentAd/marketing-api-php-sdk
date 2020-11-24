@@ -153,7 +153,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'cityId' => 'int',
         'province' => 'string',
         'city' => 'string',
-        'genderName' => 'string',
         'viewUserCount' => 'int',
         'avgViewPerUser' => 'double',
         'clickUserCount' => 'int',
@@ -268,6 +267,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'creAppCost' => 'int',
         'preCreWebCost' => 'int',
         'preCreAppCost' => 'int',
+        'genderName' => 'string',
         'accountId' => 'int',
         'campaignId' => 'int',
         'adgroupId' => 'int',
@@ -425,7 +425,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'cityId' => 'int64',
         'province' => null,
         'city' => null,
-        'genderName' => null,
         'viewUserCount' => 'int64',
         'avgViewPerUser' => 'double',
         'clickUserCount' => 'int64',
@@ -540,6 +539,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'creAppCost' => 'int64',
         'preCreWebCost' => 'int64',
         'preCreAppCost' => 'int64',
+        'genderName' => null,
         'accountId' => 'int64',
         'campaignId' => 'int64',
         'adgroupId' => 'int64',
@@ -718,7 +718,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'cityId' => 'city_id',
         'province' => 'province',
         'city' => 'city',
-        'genderName' => 'gender_name',
         'viewUserCount' => 'view_user_count',
         'avgViewPerUser' => 'avg_view_per_user',
         'clickUserCount' => 'click_user_count',
@@ -833,6 +832,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'creAppCost' => 'cre_app_cost',
         'preCreWebCost' => 'pre_cre_web_cost',
         'preCreAppCost' => 'pre_cre_app_cost',
+        'genderName' => 'gender_name',
         'accountId' => 'account_id',
         'campaignId' => 'campaign_id',
         'adgroupId' => 'adgroup_id',
@@ -990,7 +990,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'cityId' => 'setCityId',
         'province' => 'setProvince',
         'city' => 'setCity',
-        'genderName' => 'setGenderName',
         'viewUserCount' => 'setViewUserCount',
         'avgViewPerUser' => 'setAvgViewPerUser',
         'clickUserCount' => 'setClickUserCount',
@@ -1105,6 +1104,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'creAppCost' => 'setCreAppCost',
         'preCreWebCost' => 'setPreCreWebCost',
         'preCreAppCost' => 'setPreCreAppCost',
+        'genderName' => 'setGenderName',
         'accountId' => 'setAccountId',
         'campaignId' => 'setCampaignId',
         'adgroupId' => 'setAdgroupId',
@@ -1262,7 +1262,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'cityId' => 'getCityId',
         'province' => 'getProvince',
         'city' => 'getCity',
-        'genderName' => 'getGenderName',
         'viewUserCount' => 'getViewUserCount',
         'avgViewPerUser' => 'getAvgViewPerUser',
         'clickUserCount' => 'getClickUserCount',
@@ -1377,6 +1376,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'creAppCost' => 'getCreAppCost',
         'preCreWebCost' => 'getPreCreWebCost',
         'preCreAppCost' => 'getPreCreAppCost',
+        'genderName' => 'getGenderName',
         'accountId' => 'getAccountId',
         'campaignId' => 'getCampaignId',
         'adgroupId' => 'getAdgroupId',
@@ -1588,7 +1588,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['cityId'] = isset($data['cityId']) ? $data['cityId'] : null;
         $this->container['province'] = isset($data['province']) ? $data['province'] : null;
         $this->container['city'] = isset($data['city']) ? $data['city'] : null;
-        $this->container['genderName'] = isset($data['genderName']) ? $data['genderName'] : null;
         $this->container['viewUserCount'] = isset($data['viewUserCount']) ? $data['viewUserCount'] : null;
         $this->container['avgViewPerUser'] = isset($data['avgViewPerUser']) ? $data['avgViewPerUser'] : null;
         $this->container['clickUserCount'] = isset($data['clickUserCount']) ? $data['clickUserCount'] : null;
@@ -1703,6 +1702,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['creAppCost'] = isset($data['creAppCost']) ? $data['creAppCost'] : null;
         $this->container['preCreWebCost'] = isset($data['preCreWebCost']) ? $data['preCreWebCost'] : null;
         $this->container['preCreAppCost'] = isset($data['preCreAppCost']) ? $data['preCreAppCost'] : null;
+        $this->container['genderName'] = isset($data['genderName']) ? $data['genderName'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
@@ -4059,30 +4059,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setCity($city)
     {
         $this->container['city'] = $city;
-
-        return $this;
-    }
-
-    /**
-     * Gets genderName
-     *
-     * @return string
-     */
-    public function getGenderName()
-    {
-        return $this->container['genderName'];
-    }
-
-    /**
-     * Sets genderName
-     *
-     * @param string $genderName genderName
-     *
-     * @return $this
-     */
-    public function setGenderName($genderName)
-    {
-        $this->container['genderName'] = $genderName;
 
         return $this;
     }
@@ -6819,6 +6795,30 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setPreCreAppCost($preCreAppCost)
     {
         $this->container['preCreAppCost'] = $preCreAppCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets genderName
+     *
+     * @return string
+     */
+    public function getGenderName()
+    {
+        return $this->container['genderName'];
+    }
+
+    /**
+     * Sets genderName
+     *
+     * @param string $genderName genderName
+     *
+     * @return $this
+     */
+    public function setGenderName($genderName)
+    {
+        $this->container['genderName'] = $genderName;
 
         return $this;
     }

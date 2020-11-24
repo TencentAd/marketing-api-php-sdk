@@ -59,7 +59,7 @@ class CompeteUserAcceptanceStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'score' => 'int',
-        'acceptance' => 'string[]',
+        'acceptance' => '\TencentAds\Model\CompeteAttributionStruct[]',
         'conclusion' => 'string',
         'ratio' => 'double'
     ];
@@ -250,7 +250,7 @@ class CompeteUserAcceptanceStruct implements ModelInterface, ArrayAccess
     /**
      * Gets acceptance
      *
-     * @return string[]
+     * @return \TencentAds\Model\CompeteAttributionStruct[]
      */
     public function getAcceptance()
     {
@@ -260,7 +260,7 @@ class CompeteUserAcceptanceStruct implements ModelInterface, ArrayAccess
     /**
      * Sets acceptance
      *
-     * @param string[] $acceptance acceptance
+     * @param \TencentAds\Model\CompeteAttributionStruct[] $acceptance acceptance
      *
      * @return $this
      */
