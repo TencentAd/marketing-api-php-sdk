@@ -60,7 +60,7 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'adcreativeName' => 'string',
         'adcreativeElements' => '\TencentAds\Model\DpAdcreativeCreativeElementsMp',
-        'pageType' => '\TencentAds\Model\DpApiDestinationType',
+        'pageType' => '\TencentAds\Model\DestinationType',
         'pageSpec' => '\TencentAds\Model\DpPageSpec',
         'buttonTips' => 'string',
         'couponTitle' => 'string'
@@ -286,7 +286,7 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Gets pageType
      *
-     * @return \TencentAds\Model\DpApiDestinationType
+     * @return \TencentAds\Model\DestinationType
      */
     public function getPageType()
     {
@@ -296,7 +296,7 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Sets pageType
      *
-     * @param \TencentAds\Model\DpApiDestinationType $pageType pageType
+     * @param \TencentAds\Model\DestinationType $pageType pageType
      *
      * @return $this
      */

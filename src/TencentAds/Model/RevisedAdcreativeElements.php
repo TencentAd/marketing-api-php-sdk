@@ -65,12 +65,14 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'description' => 'string',
         'corporate' => '\TencentAds\Model\AdcreativeCorporate',
         'video' => 'string',
+        'deepLinkType' => 'string',
         'linkNameType' => '\TencentAds\Model\LinkNameTypeMP',
         'imageList' => 'string[]',
         'elementStory' => '\TencentAds\Model\AdcreativeElementStoryArrayItem[]',
         'url' => 'string',
         'buttonText' => 'string',
         'bottomText' => 'string',
+        'countdown' => 'int',
         'miniProgramId' => 'string',
         'miniProgramPath' => 'string',
         'label' => '\TencentAds\Model\AdcreativeLabel[]',
@@ -86,13 +88,13 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'cardContent' => '\TencentAds\Model\AdcreativeCardContent',
         'videoPopupUrl' => 'string',
         'videoPopupButton' => '\TencentAds\Model\AdcreativeVideoPopupButton',
+        'buttonUrl' => 'string',
         'brand' => '\TencentAds\Model\AdCreativeBrand',
         'caption' => 'string',
         'labelledImg' => '\TencentAds\Model\AdcreativeLabelledImg',
         'fullScreenImage' => 'string',
         'zipUrl' => 'string',
-        'endPage' => '\TencentAds\Model\AdCreativeEndPage',
-        'countdownExpiringTimestamp' => 'int'
+        'endPage' => '\TencentAds\Model\AdCreativeEndPage'
     ];
 
     /**
@@ -108,12 +110,14 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'description' => null,
         'corporate' => null,
         'video' => null,
+        'deepLinkType' => null,
         'linkNameType' => null,
         'imageList' => null,
         'elementStory' => null,
         'url' => null,
         'buttonText' => null,
         'bottomText' => null,
+        'countdown' => 'int64',
         'miniProgramId' => null,
         'miniProgramPath' => null,
         'label' => null,
@@ -129,13 +133,13 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'cardContent' => null,
         'videoPopupUrl' => null,
         'videoPopupButton' => null,
+        'buttonUrl' => null,
         'brand' => null,
         'caption' => null,
         'labelledImg' => null,
         'fullScreenImage' => null,
         'zipUrl' => null,
-        'endPage' => null,
-        'countdownExpiringTimestamp' => 'int64'
+        'endPage' => null
     ];
 
     /**
@@ -172,12 +176,14 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'description' => 'description',
         'corporate' => 'corporate',
         'video' => 'video',
+        'deepLinkType' => 'deep_link_type',
         'linkNameType' => 'link_name_type',
         'imageList' => 'image_list',
         'elementStory' => 'element_story',
         'url' => 'url',
         'buttonText' => 'button_text',
         'bottomText' => 'bottom_text',
+        'countdown' => 'countdown',
         'miniProgramId' => 'mini_program_id',
         'miniProgramPath' => 'mini_program_path',
         'label' => 'label',
@@ -193,13 +199,13 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'cardContent' => 'card_content',
         'videoPopupUrl' => 'video_popup_url',
         'videoPopupButton' => 'video_popup_button',
+        'buttonUrl' => 'button_url',
         'brand' => 'brand',
         'caption' => 'caption',
         'labelledImg' => 'labelled_img',
         'fullScreenImage' => 'full_screen_image',
         'zipUrl' => 'zip_url',
-        'endPage' => 'end_page',
-        'countdownExpiringTimestamp' => 'countdown_expiring_timestamp'
+        'endPage' => 'end_page'
     ];
 
     /**
@@ -215,12 +221,14 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'description' => 'setDescription',
         'corporate' => 'setCorporate',
         'video' => 'setVideo',
+        'deepLinkType' => 'setDeepLinkType',
         'linkNameType' => 'setLinkNameType',
         'imageList' => 'setImageList',
         'elementStory' => 'setElementStory',
         'url' => 'setUrl',
         'buttonText' => 'setButtonText',
         'bottomText' => 'setBottomText',
+        'countdown' => 'setCountdown',
         'miniProgramId' => 'setMiniProgramId',
         'miniProgramPath' => 'setMiniProgramPath',
         'label' => 'setLabel',
@@ -236,13 +244,13 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'cardContent' => 'setCardContent',
         'videoPopupUrl' => 'setVideoPopupUrl',
         'videoPopupButton' => 'setVideoPopupButton',
+        'buttonUrl' => 'setButtonUrl',
         'brand' => 'setBrand',
         'caption' => 'setCaption',
         'labelledImg' => 'setLabelledImg',
         'fullScreenImage' => 'setFullScreenImage',
         'zipUrl' => 'setZipUrl',
-        'endPage' => 'setEndPage',
-        'countdownExpiringTimestamp' => 'setCountdownExpiringTimestamp'
+        'endPage' => 'setEndPage'
     ];
 
     /**
@@ -258,12 +266,14 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'description' => 'getDescription',
         'corporate' => 'getCorporate',
         'video' => 'getVideo',
+        'deepLinkType' => 'getDeepLinkType',
         'linkNameType' => 'getLinkNameType',
         'imageList' => 'getImageList',
         'elementStory' => 'getElementStory',
         'url' => 'getUrl',
         'buttonText' => 'getButtonText',
         'bottomText' => 'getBottomText',
+        'countdown' => 'getCountdown',
         'miniProgramId' => 'getMiniProgramId',
         'miniProgramPath' => 'getMiniProgramPath',
         'label' => 'getLabel',
@@ -279,13 +289,13 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'cardContent' => 'getCardContent',
         'videoPopupUrl' => 'getVideoPopupUrl',
         'videoPopupButton' => 'getVideoPopupButton',
+        'buttonUrl' => 'getButtonUrl',
         'brand' => 'getBrand',
         'caption' => 'getCaption',
         'labelledImg' => 'getLabelledImg',
         'fullScreenImage' => 'getFullScreenImage',
         'zipUrl' => 'getZipUrl',
-        'endPage' => 'getEndPage',
-        'countdownExpiringTimestamp' => 'getCountdownExpiringTimestamp'
+        'endPage' => 'getEndPage'
     ];
 
     /**
@@ -355,12 +365,14 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
         $this->container['corporate'] = isset($data['corporate']) ? $data['corporate'] : null;
         $this->container['video'] = isset($data['video']) ? $data['video'] : null;
+        $this->container['deepLinkType'] = isset($data['deepLinkType']) ? $data['deepLinkType'] : null;
         $this->container['linkNameType'] = isset($data['linkNameType']) ? $data['linkNameType'] : null;
         $this->container['imageList'] = isset($data['imageList']) ? $data['imageList'] : null;
         $this->container['elementStory'] = isset($data['elementStory']) ? $data['elementStory'] : null;
         $this->container['url'] = isset($data['url']) ? $data['url'] : null;
         $this->container['buttonText'] = isset($data['buttonText']) ? $data['buttonText'] : null;
         $this->container['bottomText'] = isset($data['bottomText']) ? $data['bottomText'] : null;
+        $this->container['countdown'] = isset($data['countdown']) ? $data['countdown'] : null;
         $this->container['miniProgramId'] = isset($data['miniProgramId']) ? $data['miniProgramId'] : null;
         $this->container['miniProgramPath'] = isset($data['miniProgramPath']) ? $data['miniProgramPath'] : null;
         $this->container['label'] = isset($data['label']) ? $data['label'] : null;
@@ -376,13 +388,13 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         $this->container['cardContent'] = isset($data['cardContent']) ? $data['cardContent'] : null;
         $this->container['videoPopupUrl'] = isset($data['videoPopupUrl']) ? $data['videoPopupUrl'] : null;
         $this->container['videoPopupButton'] = isset($data['videoPopupButton']) ? $data['videoPopupButton'] : null;
+        $this->container['buttonUrl'] = isset($data['buttonUrl']) ? $data['buttonUrl'] : null;
         $this->container['brand'] = isset($data['brand']) ? $data['brand'] : null;
         $this->container['caption'] = isset($data['caption']) ? $data['caption'] : null;
         $this->container['labelledImg'] = isset($data['labelledImg']) ? $data['labelledImg'] : null;
         $this->container['fullScreenImage'] = isset($data['fullScreenImage']) ? $data['fullScreenImage'] : null;
         $this->container['zipUrl'] = isset($data['zipUrl']) ? $data['zipUrl'] : null;
         $this->container['endPage'] = isset($data['endPage']) ? $data['endPage'] : null;
-        $this->container['countdownExpiringTimestamp'] = isset($data['countdownExpiringTimestamp']) ? $data['countdownExpiringTimestamp'] : null;
     }
 
     /**
@@ -578,6 +590,30 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets deepLinkType
+     *
+     * @return string
+     */
+    public function getDeepLinkType()
+    {
+        return $this->container['deepLinkType'];
+    }
+
+    /**
+     * Sets deepLinkType
+     *
+     * @param string $deepLinkType deepLinkType
+     *
+     * @return $this
+     */
+    public function setDeepLinkType($deepLinkType)
+    {
+        $this->container['deepLinkType'] = $deepLinkType;
+
+        return $this;
+    }
+
+    /**
      * Gets linkNameType
      *
      * @return \TencentAds\Model\LinkNameTypeMP
@@ -717,6 +753,30 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     public function setBottomText($bottomText)
     {
         $this->container['bottomText'] = $bottomText;
+
+        return $this;
+    }
+
+    /**
+     * Gets countdown
+     *
+     * @return int
+     */
+    public function getCountdown()
+    {
+        return $this->container['countdown'];
+    }
+
+    /**
+     * Sets countdown
+     *
+     * @param int $countdown countdown
+     *
+     * @return $this
+     */
+    public function setCountdown($countdown)
+    {
+        $this->container['countdown'] = $countdown;
 
         return $this;
     }
@@ -1082,6 +1142,30 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets buttonUrl
+     *
+     * @return string
+     */
+    public function getButtonUrl()
+    {
+        return $this->container['buttonUrl'];
+    }
+
+    /**
+     * Sets buttonUrl
+     *
+     * @param string $buttonUrl buttonUrl
+     *
+     * @return $this
+     */
+    public function setButtonUrl($buttonUrl)
+    {
+        $this->container['buttonUrl'] = $buttonUrl;
+
+        return $this;
+    }
+
+    /**
      * Gets brand
      *
      * @return \TencentAds\Model\AdCreativeBrand
@@ -1221,30 +1305,6 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     public function setEndPage($endPage)
     {
         $this->container['endPage'] = $endPage;
-
-        return $this;
-    }
-
-    /**
-     * Gets countdownExpiringTimestamp
-     *
-     * @return int
-     */
-    public function getCountdownExpiringTimestamp()
-    {
-        return $this->container['countdownExpiringTimestamp'];
-    }
-
-    /**
-     * Sets countdownExpiringTimestamp
-     *
-     * @param int $countdownExpiringTimestamp countdownExpiringTimestamp
-     *
-     * @return $this
-     */
-    public function setCountdownExpiringTimestamp($countdownExpiringTimestamp)
-    {
-        $this->container['countdownExpiringTimestamp'] = $countdownExpiringTimestamp;
 
         return $this;
     }

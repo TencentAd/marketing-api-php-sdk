@@ -58,7 +58,7 @@ class WechatOcpa implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'promotedObjectType' => '\TencentAds\Model\PromotedObject',
+        'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
         'promotedObjectId' => 'string',
         'adcreativeTemplateId' => 'int'
     ];
@@ -220,7 +220,7 @@ class WechatOcpa implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObject
+     * @return \TencentAds\Model\PromotedObjectType
      */
     public function getPromotedObjectType()
     {
@@ -230,7 +230,7 @@ class WechatOcpa implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObject $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
      *
      * @return $this
      */

@@ -67,7 +67,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'billingEvent' => '\TencentAds\Model\BillingEvent',
         'bidAmount' => 'int',
         'dailyBudget' => 'int',
-        'promotedObjectType' => '\TencentAds\Model\PromotedObject',
+        'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
         'promotedObjectId' => 'string',
         'appAndroidChannelPackageId' => 'string',
         'miniGameProgramId' => 'string',
@@ -742,7 +742,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObject
+     * @return \TencentAds\Model\PromotedObjectType
      */
     public function getPromotedObjectType()
     {
@@ -752,7 +752,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObject $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
      *
      * @return $this
      */

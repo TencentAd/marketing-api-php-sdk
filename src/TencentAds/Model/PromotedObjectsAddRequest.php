@@ -57,7 +57,7 @@ class PromotedObjectsAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'promotedObjectType' => '\TencentAds\Model\PromotedObject',
+        'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
         'promotedObjectId' => 'string',
         'promotedObjectSpec' => '\TencentAds\Model\PromotedObjectSpec',
         'accountId' => 'int'
@@ -225,7 +225,7 @@ class PromotedObjectsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObject
+     * @return \TencentAds\Model\PromotedObjectType
      */
     public function getPromotedObjectType()
     {
@@ -235,7 +235,7 @@ class PromotedObjectsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObject $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
      *
      * @return $this
      */

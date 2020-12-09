@@ -64,7 +64,7 @@ class Adcreative implements ModelInterface, ArrayAccess
         'pageType' => '\TencentAds\Model\PageTypeRead',
         'pageSpec' => '\TencentAds\Model\PageSpec',
         'siteSet' => 'string[]',
-        'promotedObjectType' => '\TencentAds\Model\PromotedObject',
+        'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
         'promotedObjectId' => 'string',
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
@@ -430,7 +430,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObject
+     * @return \TencentAds\Model\PromotedObjectType
      */
     public function getPromotedObjectType()
     {
@@ -440,7 +440,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObject $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
      *
      * @return $this
      */

@@ -61,7 +61,7 @@ class AdCreativeGetSpec implements ModelInterface, ArrayAccess
         'adcreativeId' => 'int',
         'adcreativeName' => 'string',
         'adcreativeElements' => '\TencentAds\Model\DpAdcreativeCreativeElementsMp',
-        'pageType' => '\TencentAds\Model\DpApiDestinationType',
+        'pageType' => '\TencentAds\Model\DestinationType',
         'pageSpec' => '\TencentAds\Model\DpPageSpec'
     ];
 
@@ -304,7 +304,7 @@ class AdCreativeGetSpec implements ModelInterface, ArrayAccess
     /**
      * Gets pageType
      *
-     * @return \TencentAds\Model\DpApiDestinationType
+     * @return \TencentAds\Model\DestinationType
      */
     public function getPageType()
     {
@@ -314,7 +314,7 @@ class AdCreativeGetSpec implements ModelInterface, ArrayAccess
     /**
      * Sets pageType
      *
-     * @param \TencentAds\Model\DpApiDestinationType $pageType pageType
+     * @param \TencentAds\Model\DestinationType $pageType pageType
      *
      * @return $this
      */

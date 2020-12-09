@@ -74,7 +74,10 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
         'brandName' => 'string',
         'brandId' => 'int',
         'description' => 'string',
-        'customData' => 'string'
+        'customData' => 'string',
+        'isVideo' => 'string',
+        'dataSource' => 'string',
+        'productSelectScore' => 'double'
     ];
 
     /**
@@ -99,7 +102,10 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
         'brandName' => null,
         'brandId' => 'int64',
         'description' => null,
-        'customData' => null
+        'customData' => null,
+        'isVideo' => null,
+        'dataSource' => null,
+        'productSelectScore' => 'double'
     ];
 
     /**
@@ -145,7 +151,10 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
         'brandName' => 'brand_name',
         'brandId' => 'brand_id',
         'description' => 'description',
-        'customData' => 'custom_data'
+        'customData' => 'custom_data',
+        'isVideo' => 'is_video',
+        'dataSource' => 'data_source',
+        'productSelectScore' => 'product_select_score'
     ];
 
     /**
@@ -170,7 +179,10 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
         'brandName' => 'setBrandName',
         'brandId' => 'setBrandId',
         'description' => 'setDescription',
-        'customData' => 'setCustomData'
+        'customData' => 'setCustomData',
+        'isVideo' => 'setIsVideo',
+        'dataSource' => 'setDataSource',
+        'productSelectScore' => 'setProductSelectScore'
     ];
 
     /**
@@ -195,7 +207,10 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
         'brandName' => 'getBrandName',
         'brandId' => 'getBrandId',
         'description' => 'getDescription',
-        'customData' => 'getCustomData'
+        'customData' => 'getCustomData',
+        'isVideo' => 'getIsVideo',
+        'dataSource' => 'getDataSource',
+        'productSelectScore' => 'getProductSelectScore'
     ];
 
     /**
@@ -275,6 +290,9 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['brandId'] = isset($data['brandId']) ? $data['brandId'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
         $this->container['customData'] = isset($data['customData']) ? $data['customData'] : null;
+        $this->container['isVideo'] = isset($data['isVideo']) ? $data['isVideo'] : null;
+        $this->container['dataSource'] = isset($data['dataSource']) ? $data['dataSource'] : null;
+        $this->container['productSelectScore'] = isset($data['productSelectScore']) ? $data['productSelectScore'] : null;
     }
 
     /**
@@ -705,6 +723,78 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     public function setCustomData($customData)
     {
         $this->container['customData'] = $customData;
+
+        return $this;
+    }
+
+    /**
+     * Gets isVideo
+     *
+     * @return string
+     */
+    public function getIsVideo()
+    {
+        return $this->container['isVideo'];
+    }
+
+    /**
+     * Sets isVideo
+     *
+     * @param string $isVideo isVideo
+     *
+     * @return $this
+     */
+    public function setIsVideo($isVideo)
+    {
+        $this->container['isVideo'] = $isVideo;
+
+        return $this;
+    }
+
+    /**
+     * Gets dataSource
+     *
+     * @return string
+     */
+    public function getDataSource()
+    {
+        return $this->container['dataSource'];
+    }
+
+    /**
+     * Sets dataSource
+     *
+     * @param string $dataSource dataSource
+     *
+     * @return $this
+     */
+    public function setDataSource($dataSource)
+    {
+        $this->container['dataSource'] = $dataSource;
+
+        return $this;
+    }
+
+    /**
+     * Gets productSelectScore
+     *
+     * @return double
+     */
+    public function getProductSelectScore()
+    {
+        return $this->container['productSelectScore'];
+    }
+
+    /**
+     * Sets productSelectScore
+     *
+     * @param double $productSelectScore productSelectScore
+     *
+     * @return $this
+     */
+    public function setProductSelectScore($productSelectScore)
+    {
+        $this->container['productSelectScore'] = $productSelectScore;
 
         return $this;
     }

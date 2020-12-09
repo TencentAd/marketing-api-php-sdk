@@ -101,6 +101,9 @@ class OptimizationGoal
     const RESERVATION = 'OPTIMIZATIONGOAL_RESERVATION';
     const FIRST_ECOMMERCE_ORDER = 'OPTIMIZATIONGOAL_FIRST_ECOMMERCE_ORDER';
     const LIKE = 'OPTIMIZATIONGOAL_LIKE';
+    const EXTERNAL_LINK_CLICK = 'OPTIMIZATIONGOAL_EXTERNAL_LINK_CLICK';
+    const BUY_COUPONS = 'OPTIMIZATIONGOAL_BUY_COUPONS';
+    const LEAVE_INFORMATION = 'OPTIMIZATIONGOAL_LEAVE_INFORMATION';
     
     /**
      * Gets allowable values of the enum
@@ -166,6 +169,9 @@ class OptimizationGoal
             self::RESERVATION,
             self::FIRST_ECOMMERCE_ORDER,
             self::LIKE,
+            self::EXTERNAL_LINK_CLICK,
+            self::BUY_COUPONS,
+            self::LEAVE_INFORMATION,
         ];
     }
 }

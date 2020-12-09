@@ -1,6 +1,6 @@
 <?php
 /**
- * PromotedObjectsUpdateRequest
+ * AdcreativeImageList
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PromotedObjectsUpdateRequest Class Doc Comment
+ * AdcreativeImageList Class Doc Comment
  *
  * @category Class
+ * @description 图片墙，图片Id通过 &lt;a href&#x3D;&#39;/docs/api/business_assets/image/images_add&#39; target&#x3D;&#39;_blank&#39;&gt;[images 模块]&lt;/a&gt; 上传图片获得
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PromotedObjectsUpdateRequest implements ModelInterface, ArrayAccess
+class AdcreativeImageList implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class PromotedObjectsUpdateRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'PromotedObjectsUpdateRequest';
+    protected static $swaggerModelName = 'adcreative_image_list';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,10 +58,7 @@ class PromotedObjectsUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
-        'promotedObjectId' => 'string',
-        'promotedObjectSpec' => '\TencentAds\Model\PromotedObjectSpec',
-        'accountId' => 'int'
+        
     ];
 
     /**
@@ -69,10 +67,7 @@ class PromotedObjectsUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'promotedObjectType' => null,
-        'promotedObjectId' => null,
-        'promotedObjectSpec' => null,
-        'accountId' => 'int64'
+        
     ];
 
     /**
@@ -102,10 +97,7 @@ class PromotedObjectsUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'promotedObjectType' => 'promoted_object_type',
-        'promotedObjectId' => 'promoted_object_id',
-        'promotedObjectSpec' => 'promoted_object_spec',
-        'accountId' => 'account_id'
+        
     ];
 
     /**
@@ -114,10 +106,7 @@ class PromotedObjectsUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'promotedObjectType' => 'setPromotedObjectType',
-        'promotedObjectId' => 'setPromotedObjectId',
-        'promotedObjectSpec' => 'setPromotedObjectSpec',
-        'accountId' => 'setAccountId'
+        
     ];
 
     /**
@@ -126,10 +115,7 @@ class PromotedObjectsUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'promotedObjectType' => 'getPromotedObjectType',
-        'promotedObjectId' => 'getPromotedObjectId',
-        'promotedObjectSpec' => 'getPromotedObjectSpec',
-        'accountId' => 'getAccountId'
+        
     ];
 
     /**
@@ -192,10 +178,6 @@ class PromotedObjectsUpdateRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
-        $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
-        $this->container['promotedObjectSpec'] = isset($data['promotedObjectSpec']) ? $data['promotedObjectSpec'] : null;
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
     /**
@@ -205,7 +187,7 @@ class PromotedObjectsUpdateRequest implements ModelInterface, ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalidProperties = [];
+        $invalidProperties = parent::listInvalidProperties();
 
         return $invalidProperties;
     }
@@ -221,102 +203,6 @@ class PromotedObjectsUpdateRequest implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
-
-    /**
-     * Gets promotedObjectType
-     *
-     * @return \TencentAds\Model\PromotedObjectType
-     */
-    public function getPromotedObjectType()
-    {
-        return $this->container['promotedObjectType'];
-    }
-
-    /**
-     * Sets promotedObjectType
-     *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
-     *
-     * @return $this
-     */
-    public function setPromotedObjectType($promotedObjectType)
-    {
-        $this->container['promotedObjectType'] = $promotedObjectType;
-
-        return $this;
-    }
-
-    /**
-     * Gets promotedObjectId
-     *
-     * @return string
-     */
-    public function getPromotedObjectId()
-    {
-        return $this->container['promotedObjectId'];
-    }
-
-    /**
-     * Sets promotedObjectId
-     *
-     * @param string $promotedObjectId promotedObjectId
-     *
-     * @return $this
-     */
-    public function setPromotedObjectId($promotedObjectId)
-    {
-        $this->container['promotedObjectId'] = $promotedObjectId;
-
-        return $this;
-    }
-
-    /**
-     * Gets promotedObjectSpec
-     *
-     * @return \TencentAds\Model\PromotedObjectSpec
-     */
-    public function getPromotedObjectSpec()
-    {
-        return $this->container['promotedObjectSpec'];
-    }
-
-    /**
-     * Sets promotedObjectSpec
-     *
-     * @param \TencentAds\Model\PromotedObjectSpec $promotedObjectSpec promotedObjectSpec
-     *
-     * @return $this
-     */
-    public function setPromotedObjectSpec($promotedObjectSpec)
-    {
-        $this->container['promotedObjectSpec'] = $promotedObjectSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets accountId
-     *
-     * @return int
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
-
-        return $this;
-    }
     /**
      * Returns true if offset exists. False otherwise.
      *

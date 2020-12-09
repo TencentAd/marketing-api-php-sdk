@@ -44,7 +44,6 @@ class CatalogType
     /**
      * Possible values of this enum
      */
-    const CATALOG_TYPE_UNKNOWN = 'CATALOG_TYPE_UNKNOWN';
     const CATALOG_TYPE_STANDARD = 'CATALOG_TYPE_STANDARD';
     const CATALOG_TYPE_FENGYE = 'CATALOG_TYPE_FENGYE';
     const CATALOG_TYPE_LOCAL_STORE = 'CATALOG_TYPE_LOCAL_STORE';
@@ -53,6 +52,7 @@ class CatalogType
     const PRODUCT_CATALOG_TYPE_SMALLSHOP = 'PRODUCT_CATALOG_TYPE_SMALLSHOP';
     const PRODUCT_CATALOG_TYPE_YUEBAO = 'PRODUCT_CATALOG_TYPE_YUEBAO';
     const PRODUCT_CATALOG_TYPE_MAIBAO = 'PRODUCT_CATALOG_TYPE_MAIBAO';
+    const CATALOG_TYPE_UNKNOWN = 'CATALOG_TYPE_UNKNOWN';
     
     /**
      * Gets allowable values of the enum
@@ -61,7 +61,6 @@ class CatalogType
     public static function getAllowableEnumValues()
     {
         return [
-            self::CATALOG_TYPE_UNKNOWN,
             self::CATALOG_TYPE_STANDARD,
             self::CATALOG_TYPE_FENGYE,
             self::CATALOG_TYPE_LOCAL_STORE,
@@ -70,6 +69,7 @@ class CatalogType
             self::PRODUCT_CATALOG_TYPE_SMALLSHOP,
             self::PRODUCT_CATALOG_TYPE_YUEBAO,
             self::PRODUCT_CATALOG_TYPE_MAIBAO,
+            self::CATALOG_TYPE_UNKNOWN,
         ];
     }
 }

@@ -139,7 +139,28 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'makeMoneyOnline' => 'string',
         'liveBroadcast' => 'string',
         'platformAttribute' => 'string',
-        'customData' => 'string'
+        'customData' => 'string',
+        'shootingPicCount' => 'int',
+        'fineeditCount' => 'int',
+        'albumPhotoCount' => 'int',
+        'albumCount' => 'int',
+        'frameCount' => 'int',
+        'country' => 'string',
+        'province' => 'string',
+        'city' => 'string',
+        'district' => 'string',
+        'address' => 'string[]',
+        'shootingSceneInCount' => '\TencentAds\Model\ShootingSceneInCount',
+        'shootingSceneOutCount' => '\TencentAds\Model\ShootingSceneOutCount',
+        'brideClothing' => '\TencentAds\Model\BrideClothing',
+        'groomClothing' => '\TencentAds\Model\GroomClothing',
+        'clothCount' => '\TencentAds\Model\ClothCount',
+        'shootingScene' => '\TencentAds\Model\ShootingScene',
+        'setSpecial' => 'string[]',
+        'shootingStyleCom' => 'string[]',
+        'shootingSceneDetail' => 'string[]',
+        'tourPlaceDomestic' => '\TencentAds\Model\TourPlaceDomestic',
+        'tourPlaceForeign' => '\TencentAds\Model\TourPlaceForeign'
     ];
 
     /**
@@ -229,7 +250,28 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'makeMoneyOnline' => null,
         'liveBroadcast' => null,
         'platformAttribute' => null,
-        'customData' => null
+        'customData' => null,
+        'shootingPicCount' => 'int64',
+        'fineeditCount' => 'int64',
+        'albumPhotoCount' => 'int64',
+        'albumCount' => 'int64',
+        'frameCount' => 'int64',
+        'country' => null,
+        'province' => null,
+        'city' => null,
+        'district' => null,
+        'address' => null,
+        'shootingSceneInCount' => null,
+        'shootingSceneOutCount' => null,
+        'brideClothing' => null,
+        'groomClothing' => null,
+        'clothCount' => null,
+        'shootingScene' => null,
+        'setSpecial' => null,
+        'shootingStyleCom' => null,
+        'shootingSceneDetail' => null,
+        'tourPlaceDomestic' => null,
+        'tourPlaceForeign' => null
     ];
 
     /**
@@ -340,7 +382,28 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'makeMoneyOnline' => 'make_money_online',
         'liveBroadcast' => 'live_broadcast',
         'platformAttribute' => 'platform_attribute',
-        'customData' => 'custom_data'
+        'customData' => 'custom_data',
+        'shootingPicCount' => 'shooting_pic_count',
+        'fineeditCount' => 'fineedit_count',
+        'albumPhotoCount' => 'album_photo_count',
+        'albumCount' => 'album_count',
+        'frameCount' => 'frame_count',
+        'country' => 'country',
+        'province' => 'province',
+        'city' => 'city',
+        'district' => 'district',
+        'address' => 'address',
+        'shootingSceneInCount' => 'shooting_scene_in_count',
+        'shootingSceneOutCount' => 'shooting_scene_out_count',
+        'brideClothing' => 'bride_clothing',
+        'groomClothing' => 'groom_clothing',
+        'clothCount' => 'cloth_count',
+        'shootingScene' => 'shooting_scene',
+        'setSpecial' => 'set_special',
+        'shootingStyleCom' => 'shooting_style_com',
+        'shootingSceneDetail' => 'shooting_scene_detail',
+        'tourPlaceDomestic' => 'tour_place_domestic',
+        'tourPlaceForeign' => 'tour_place_foreign'
     ];
 
     /**
@@ -430,7 +493,28 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'makeMoneyOnline' => 'setMakeMoneyOnline',
         'liveBroadcast' => 'setLiveBroadcast',
         'platformAttribute' => 'setPlatformAttribute',
-        'customData' => 'setCustomData'
+        'customData' => 'setCustomData',
+        'shootingPicCount' => 'setShootingPicCount',
+        'fineeditCount' => 'setFineeditCount',
+        'albumPhotoCount' => 'setAlbumPhotoCount',
+        'albumCount' => 'setAlbumCount',
+        'frameCount' => 'setFrameCount',
+        'country' => 'setCountry',
+        'province' => 'setProvince',
+        'city' => 'setCity',
+        'district' => 'setDistrict',
+        'address' => 'setAddress',
+        'shootingSceneInCount' => 'setShootingSceneInCount',
+        'shootingSceneOutCount' => 'setShootingSceneOutCount',
+        'brideClothing' => 'setBrideClothing',
+        'groomClothing' => 'setGroomClothing',
+        'clothCount' => 'setClothCount',
+        'shootingScene' => 'setShootingScene',
+        'setSpecial' => 'setSetSpecial',
+        'shootingStyleCom' => 'setShootingStyleCom',
+        'shootingSceneDetail' => 'setShootingSceneDetail',
+        'tourPlaceDomestic' => 'setTourPlaceDomestic',
+        'tourPlaceForeign' => 'setTourPlaceForeign'
     ];
 
     /**
@@ -520,7 +604,28 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'makeMoneyOnline' => 'getMakeMoneyOnline',
         'liveBroadcast' => 'getLiveBroadcast',
         'platformAttribute' => 'getPlatformAttribute',
-        'customData' => 'getCustomData'
+        'customData' => 'getCustomData',
+        'shootingPicCount' => 'getShootingPicCount',
+        'fineeditCount' => 'getFineeditCount',
+        'albumPhotoCount' => 'getAlbumPhotoCount',
+        'albumCount' => 'getAlbumCount',
+        'frameCount' => 'getFrameCount',
+        'country' => 'getCountry',
+        'province' => 'getProvince',
+        'city' => 'getCity',
+        'district' => 'getDistrict',
+        'address' => 'getAddress',
+        'shootingSceneInCount' => 'getShootingSceneInCount',
+        'shootingSceneOutCount' => 'getShootingSceneOutCount',
+        'brideClothing' => 'getBrideClothing',
+        'groomClothing' => 'getGroomClothing',
+        'clothCount' => 'getClothCount',
+        'shootingScene' => 'getShootingScene',
+        'setSpecial' => 'getSetSpecial',
+        'shootingStyleCom' => 'getShootingStyleCom',
+        'shootingSceneDetail' => 'getShootingSceneDetail',
+        'tourPlaceDomestic' => 'getTourPlaceDomestic',
+        'tourPlaceForeign' => 'getTourPlaceForeign'
     ];
 
     /**
@@ -665,6 +770,27 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         $this->container['liveBroadcast'] = isset($data['liveBroadcast']) ? $data['liveBroadcast'] : null;
         $this->container['platformAttribute'] = isset($data['platformAttribute']) ? $data['platformAttribute'] : null;
         $this->container['customData'] = isset($data['customData']) ? $data['customData'] : null;
+        $this->container['shootingPicCount'] = isset($data['shootingPicCount']) ? $data['shootingPicCount'] : null;
+        $this->container['fineeditCount'] = isset($data['fineeditCount']) ? $data['fineeditCount'] : null;
+        $this->container['albumPhotoCount'] = isset($data['albumPhotoCount']) ? $data['albumPhotoCount'] : null;
+        $this->container['albumCount'] = isset($data['albumCount']) ? $data['albumCount'] : null;
+        $this->container['frameCount'] = isset($data['frameCount']) ? $data['frameCount'] : null;
+        $this->container['country'] = isset($data['country']) ? $data['country'] : null;
+        $this->container['province'] = isset($data['province']) ? $data['province'] : null;
+        $this->container['city'] = isset($data['city']) ? $data['city'] : null;
+        $this->container['district'] = isset($data['district']) ? $data['district'] : null;
+        $this->container['address'] = isset($data['address']) ? $data['address'] : null;
+        $this->container['shootingSceneInCount'] = isset($data['shootingSceneInCount']) ? $data['shootingSceneInCount'] : null;
+        $this->container['shootingSceneOutCount'] = isset($data['shootingSceneOutCount']) ? $data['shootingSceneOutCount'] : null;
+        $this->container['brideClothing'] = isset($data['brideClothing']) ? $data['brideClothing'] : null;
+        $this->container['groomClothing'] = isset($data['groomClothing']) ? $data['groomClothing'] : null;
+        $this->container['clothCount'] = isset($data['clothCount']) ? $data['clothCount'] : null;
+        $this->container['shootingScene'] = isset($data['shootingScene']) ? $data['shootingScene'] : null;
+        $this->container['setSpecial'] = isset($data['setSpecial']) ? $data['setSpecial'] : null;
+        $this->container['shootingStyleCom'] = isset($data['shootingStyleCom']) ? $data['shootingStyleCom'] : null;
+        $this->container['shootingSceneDetail'] = isset($data['shootingSceneDetail']) ? $data['shootingSceneDetail'] : null;
+        $this->container['tourPlaceDomestic'] = isset($data['tourPlaceDomestic']) ? $data['tourPlaceDomestic'] : null;
+        $this->container['tourPlaceForeign'] = isset($data['tourPlaceForeign']) ? $data['tourPlaceForeign'] : null;
     }
 
     /**
@@ -2655,6 +2781,510 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     public function setCustomData($customData)
     {
         $this->container['customData'] = $customData;
+
+        return $this;
+    }
+
+    /**
+     * Gets shootingPicCount
+     *
+     * @return int
+     */
+    public function getShootingPicCount()
+    {
+        return $this->container['shootingPicCount'];
+    }
+
+    /**
+     * Sets shootingPicCount
+     *
+     * @param int $shootingPicCount shootingPicCount
+     *
+     * @return $this
+     */
+    public function setShootingPicCount($shootingPicCount)
+    {
+        $this->container['shootingPicCount'] = $shootingPicCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets fineeditCount
+     *
+     * @return int
+     */
+    public function getFineeditCount()
+    {
+        return $this->container['fineeditCount'];
+    }
+
+    /**
+     * Sets fineeditCount
+     *
+     * @param int $fineeditCount fineeditCount
+     *
+     * @return $this
+     */
+    public function setFineeditCount($fineeditCount)
+    {
+        $this->container['fineeditCount'] = $fineeditCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets albumPhotoCount
+     *
+     * @return int
+     */
+    public function getAlbumPhotoCount()
+    {
+        return $this->container['albumPhotoCount'];
+    }
+
+    /**
+     * Sets albumPhotoCount
+     *
+     * @param int $albumPhotoCount albumPhotoCount
+     *
+     * @return $this
+     */
+    public function setAlbumPhotoCount($albumPhotoCount)
+    {
+        $this->container['albumPhotoCount'] = $albumPhotoCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets albumCount
+     *
+     * @return int
+     */
+    public function getAlbumCount()
+    {
+        return $this->container['albumCount'];
+    }
+
+    /**
+     * Sets albumCount
+     *
+     * @param int $albumCount albumCount
+     *
+     * @return $this
+     */
+    public function setAlbumCount($albumCount)
+    {
+        $this->container['albumCount'] = $albumCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets frameCount
+     *
+     * @return int
+     */
+    public function getFrameCount()
+    {
+        return $this->container['frameCount'];
+    }
+
+    /**
+     * Sets frameCount
+     *
+     * @param int $frameCount frameCount
+     *
+     * @return $this
+     */
+    public function setFrameCount($frameCount)
+    {
+        $this->container['frameCount'] = $frameCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets country
+     *
+     * @return string
+     */
+    public function getCountry()
+    {
+        return $this->container['country'];
+    }
+
+    /**
+     * Sets country
+     *
+     * @param string $country country
+     *
+     * @return $this
+     */
+    public function setCountry($country)
+    {
+        $this->container['country'] = $country;
+
+        return $this;
+    }
+
+    /**
+     * Gets province
+     *
+     * @return string
+     */
+    public function getProvince()
+    {
+        return $this->container['province'];
+    }
+
+    /**
+     * Sets province
+     *
+     * @param string $province province
+     *
+     * @return $this
+     */
+    public function setProvince($province)
+    {
+        $this->container['province'] = $province;
+
+        return $this;
+    }
+
+    /**
+     * Gets city
+     *
+     * @return string
+     */
+    public function getCity()
+    {
+        return $this->container['city'];
+    }
+
+    /**
+     * Sets city
+     *
+     * @param string $city city
+     *
+     * @return $this
+     */
+    public function setCity($city)
+    {
+        $this->container['city'] = $city;
+
+        return $this;
+    }
+
+    /**
+     * Gets district
+     *
+     * @return string
+     */
+    public function getDistrict()
+    {
+        return $this->container['district'];
+    }
+
+    /**
+     * Sets district
+     *
+     * @param string $district district
+     *
+     * @return $this
+     */
+    public function setDistrict($district)
+    {
+        $this->container['district'] = $district;
+
+        return $this;
+    }
+
+    /**
+     * Gets address
+     *
+     * @return string[]
+     */
+    public function getAddress()
+    {
+        return $this->container['address'];
+    }
+
+    /**
+     * Sets address
+     *
+     * @param string[] $address address
+     *
+     * @return $this
+     */
+    public function setAddress($address)
+    {
+        $this->container['address'] = $address;
+
+        return $this;
+    }
+
+    /**
+     * Gets shootingSceneInCount
+     *
+     * @return \TencentAds\Model\ShootingSceneInCount
+     */
+    public function getShootingSceneInCount()
+    {
+        return $this->container['shootingSceneInCount'];
+    }
+
+    /**
+     * Sets shootingSceneInCount
+     *
+     * @param \TencentAds\Model\ShootingSceneInCount $shootingSceneInCount shootingSceneInCount
+     *
+     * @return $this
+     */
+    public function setShootingSceneInCount($shootingSceneInCount)
+    {
+        $this->container['shootingSceneInCount'] = $shootingSceneInCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets shootingSceneOutCount
+     *
+     * @return \TencentAds\Model\ShootingSceneOutCount
+     */
+    public function getShootingSceneOutCount()
+    {
+        return $this->container['shootingSceneOutCount'];
+    }
+
+    /**
+     * Sets shootingSceneOutCount
+     *
+     * @param \TencentAds\Model\ShootingSceneOutCount $shootingSceneOutCount shootingSceneOutCount
+     *
+     * @return $this
+     */
+    public function setShootingSceneOutCount($shootingSceneOutCount)
+    {
+        $this->container['shootingSceneOutCount'] = $shootingSceneOutCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets brideClothing
+     *
+     * @return \TencentAds\Model\BrideClothing
+     */
+    public function getBrideClothing()
+    {
+        return $this->container['brideClothing'];
+    }
+
+    /**
+     * Sets brideClothing
+     *
+     * @param \TencentAds\Model\BrideClothing $brideClothing brideClothing
+     *
+     * @return $this
+     */
+    public function setBrideClothing($brideClothing)
+    {
+        $this->container['brideClothing'] = $brideClothing;
+
+        return $this;
+    }
+
+    /**
+     * Gets groomClothing
+     *
+     * @return \TencentAds\Model\GroomClothing
+     */
+    public function getGroomClothing()
+    {
+        return $this->container['groomClothing'];
+    }
+
+    /**
+     * Sets groomClothing
+     *
+     * @param \TencentAds\Model\GroomClothing $groomClothing groomClothing
+     *
+     * @return $this
+     */
+    public function setGroomClothing($groomClothing)
+    {
+        $this->container['groomClothing'] = $groomClothing;
+
+        return $this;
+    }
+
+    /**
+     * Gets clothCount
+     *
+     * @return \TencentAds\Model\ClothCount
+     */
+    public function getClothCount()
+    {
+        return $this->container['clothCount'];
+    }
+
+    /**
+     * Sets clothCount
+     *
+     * @param \TencentAds\Model\ClothCount $clothCount clothCount
+     *
+     * @return $this
+     */
+    public function setClothCount($clothCount)
+    {
+        $this->container['clothCount'] = $clothCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets shootingScene
+     *
+     * @return \TencentAds\Model\ShootingScene
+     */
+    public function getShootingScene()
+    {
+        return $this->container['shootingScene'];
+    }
+
+    /**
+     * Sets shootingScene
+     *
+     * @param \TencentAds\Model\ShootingScene $shootingScene shootingScene
+     *
+     * @return $this
+     */
+    public function setShootingScene($shootingScene)
+    {
+        $this->container['shootingScene'] = $shootingScene;
+
+        return $this;
+    }
+
+    /**
+     * Gets setSpecial
+     *
+     * @return string[]
+     */
+    public function getSetSpecial()
+    {
+        return $this->container['setSpecial'];
+    }
+
+    /**
+     * Sets setSpecial
+     *
+     * @param string[] $setSpecial setSpecial
+     *
+     * @return $this
+     */
+    public function setSetSpecial($setSpecial)
+    {
+        $this->container['setSpecial'] = $setSpecial;
+
+        return $this;
+    }
+
+    /**
+     * Gets shootingStyleCom
+     *
+     * @return string[]
+     */
+    public function getShootingStyleCom()
+    {
+        return $this->container['shootingStyleCom'];
+    }
+
+    /**
+     * Sets shootingStyleCom
+     *
+     * @param string[] $shootingStyleCom shootingStyleCom
+     *
+     * @return $this
+     */
+    public function setShootingStyleCom($shootingStyleCom)
+    {
+        $this->container['shootingStyleCom'] = $shootingStyleCom;
+
+        return $this;
+    }
+
+    /**
+     * Gets shootingSceneDetail
+     *
+     * @return string[]
+     */
+    public function getShootingSceneDetail()
+    {
+        return $this->container['shootingSceneDetail'];
+    }
+
+    /**
+     * Sets shootingSceneDetail
+     *
+     * @param string[] $shootingSceneDetail shootingSceneDetail
+     *
+     * @return $this
+     */
+    public function setShootingSceneDetail($shootingSceneDetail)
+    {
+        $this->container['shootingSceneDetail'] = $shootingSceneDetail;
+
+        return $this;
+    }
+
+    /**
+     * Gets tourPlaceDomestic
+     *
+     * @return \TencentAds\Model\TourPlaceDomestic
+     */
+    public function getTourPlaceDomestic()
+    {
+        return $this->container['tourPlaceDomestic'];
+    }
+
+    /**
+     * Sets tourPlaceDomestic
+     *
+     * @param \TencentAds\Model\TourPlaceDomestic $tourPlaceDomestic tourPlaceDomestic
+     *
+     * @return $this
+     */
+    public function setTourPlaceDomestic($tourPlaceDomestic)
+    {
+        $this->container['tourPlaceDomestic'] = $tourPlaceDomestic;
+
+        return $this;
+    }
+
+    /**
+     * Gets tourPlaceForeign
+     *
+     * @return \TencentAds\Model\TourPlaceForeign
+     */
+    public function getTourPlaceForeign()
+    {
+        return $this->container['tourPlaceForeign'];
+    }
+
+    /**
+     * Sets tourPlaceForeign
+     *
+     * @param \TencentAds\Model\TourPlaceForeign $tourPlaceForeign tourPlaceForeign
+     *
+     * @return $this
+     */
+    public function setTourPlaceForeign($tourPlaceForeign)
+    {
+        $this->container['tourPlaceForeign'] = $tourPlaceForeign;
 
         return $this;
     }

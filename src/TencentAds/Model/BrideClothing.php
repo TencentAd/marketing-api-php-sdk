@@ -1,6 +1,6 @@
 <?php
 /**
- * CatalogIndustry
+ * BrideClothing
  *
  * PHP version 5
  *
@@ -31,23 +31,27 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CatalogIndustry Class Doc Comment
+ * BrideClothing Class Doc Comment
  *
  * @category Class
- * @description 商品库行业类型
+ * @description 新娘服装
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CatalogIndustry
+class BrideClothing
 {
     /**
      * Possible values of this enum
      */
-    const ECOMMERCE = 'INDUSTRY_TYPE_ECOMMERCE';
-    const READING = 'INDUSTRY_TYPE_READING';
-    const EDUCATION = 'INDUSTRY_TYPE_EDUCATION';
-    const WEDDING = 'INDUSTRY_TYPE_WEDDING';
+    const _1 = 'BRIDE_CLOTHING_1';
+    const _2 = 'BRIDE_CLOTHING_2';
+    const _3 = 'BRIDE_CLOTHING_3';
+    const _4 = 'BRIDE_CLOTHING_4';
+    const _5 = 'BRIDE_CLOTHING_5';
+    const _6 = 'BRIDE_CLOTHING_6';
+    const _7 = 'BRIDE_CLOTHING_7';
+    const N = 'BRIDE_CLOTHING_N';
     
     /**
      * Gets allowable values of the enum
@@ -56,10 +60,14 @@ class CatalogIndustry
     public static function getAllowableEnumValues()
     {
         return [
-            self::ECOMMERCE,
-            self::READING,
-            self::EDUCATION,
-            self::WEDDING,
+            self::_1,
+            self::_2,
+            self::_3,
+            self::_4,
+            self::_5,
+            self::_6,
+            self::_7,
+            self::N,
         ];
     }
 }

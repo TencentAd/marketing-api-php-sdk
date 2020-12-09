@@ -1,6 +1,6 @@
 <?php
 /**
- * CatalogIndustry
+ * ShootingScene
  *
  * PHP version 5
  *
@@ -31,23 +31,22 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CatalogIndustry Class Doc Comment
+ * ShootingScene Class Doc Comment
  *
  * @category Class
- * @description 商品库行业类型
+ * @description 拍摄场景
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CatalogIndustry
+class ShootingScene
 {
     /**
      * Possible values of this enum
      */
-    const ECOMMERCE = 'INDUSTRY_TYPE_ECOMMERCE';
-    const READING = 'INDUSTRY_TYPE_READING';
-    const EDUCATION = 'INDUSTRY_TYPE_EDUCATION';
-    const WEDDING = 'INDUSTRY_TYPE_WEDDING';
+    const IN = 'SHOOTING_SCENE_IN';
+    const OUT = 'SHOOTING_SCENE_OUT';
+    const BOTH = 'SHOOTING_SCENE_BOTH';
     
     /**
      * Gets allowable values of the enum
@@ -56,10 +55,9 @@ class CatalogIndustry
     public static function getAllowableEnumValues()
     {
         return [
-            self::ECOMMERCE,
-            self::READING,
-            self::EDUCATION,
-            self::WEDDING,
+            self::IN,
+            self::OUT,
+            self::BOTH,
         ];
     }
 }

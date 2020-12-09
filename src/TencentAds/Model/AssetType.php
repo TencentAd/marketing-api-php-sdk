@@ -51,6 +51,8 @@ class AssetType
     const FENGYE = 'ASSET_TYPE_FENGYE';
     const DYNAMIC_AD_TEMPLATE = 'ASSET_TYPE_DYNAMIC_AD_TEMPLATE';
     const AD_QUALIFICATION = 'ASSET_TYPE_AD_QUALIFICATION';
+    const CATALOG = 'ASSET_TYPE_CATALOG';
+    const ACTION_SET = 'ASSET_TYPE_ACTION_SET';
     
     /**
      * Gets allowable values of the enum
@@ -66,6 +68,8 @@ class AssetType
             self::FENGYE,
             self::DYNAMIC_AD_TEMPLATE,
             self::AD_QUALIFICATION,
+            self::CATALOG,
+            self::ACTION_SET,
         ];
     }
 }

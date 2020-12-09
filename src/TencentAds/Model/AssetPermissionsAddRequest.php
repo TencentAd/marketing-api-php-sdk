@@ -62,7 +62,8 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
         'assetPermissionSpec' => '\TencentAds\Model\AssetPermissionSpecStruct[]',
         'licensingAccountIdList' => 'int[]',
         'licensingIdType' => '\TencentAds\Model\AssetAccountType',
-        'pathId' => 'int'
+        'pathId' => 'int',
+        'permissionList' => 'string[]'
     ];
 
     /**
@@ -76,7 +77,8 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
         'assetPermissionSpec' => null,
         'licensingAccountIdList' => 'int64',
         'licensingIdType' => null,
-        'pathId' => 'int64'
+        'pathId' => 'int64',
+        'permissionList' => null
     ];
 
     /**
@@ -111,7 +113,8 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
         'assetPermissionSpec' => 'asset_permission_spec',
         'licensingAccountIdList' => 'licensing_account_id_list',
         'licensingIdType' => 'licensing_id_type',
-        'pathId' => 'path_id'
+        'pathId' => 'path_id',
+        'permissionList' => 'permission_list'
     ];
 
     /**
@@ -125,7 +128,8 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
         'assetPermissionSpec' => 'setAssetPermissionSpec',
         'licensingAccountIdList' => 'setLicensingAccountIdList',
         'licensingIdType' => 'setLicensingIdType',
-        'pathId' => 'setPathId'
+        'pathId' => 'setPathId',
+        'permissionList' => 'setPermissionList'
     ];
 
     /**
@@ -139,7 +143,8 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
         'assetPermissionSpec' => 'getAssetPermissionSpec',
         'licensingAccountIdList' => 'getLicensingAccountIdList',
         'licensingIdType' => 'getLicensingIdType',
-        'pathId' => 'getPathId'
+        'pathId' => 'getPathId',
+        'permissionList' => 'getPermissionList'
     ];
 
     /**
@@ -208,6 +213,7 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
         $this->container['licensingAccountIdList'] = isset($data['licensingAccountIdList']) ? $data['licensingAccountIdList'] : null;
         $this->container['licensingIdType'] = isset($data['licensingIdType']) ? $data['licensingIdType'] : null;
         $this->container['pathId'] = isset($data['pathId']) ? $data['pathId'] : null;
+        $this->container['permissionList'] = isset($data['permissionList']) ? $data['permissionList'] : null;
     }
 
     /**
@@ -374,6 +380,30 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
     public function setPathId($pathId)
     {
         $this->container['pathId'] = $pathId;
+
+        return $this;
+    }
+
+    /**
+     * Gets permissionList
+     *
+     * @return string[]
+     */
+    public function getPermissionList()
+    {
+        return $this->container['permissionList'];
+    }
+
+    /**
+     * Sets permissionList
+     *
+     * @param string[] $permissionList permissionList
+     *
+     * @return $this
+     */
+    public function setPermissionList($permissionList)
+    {
+        $this->container['permissionList'] = $permissionList;
 
         return $this;
     }

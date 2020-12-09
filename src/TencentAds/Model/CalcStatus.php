@@ -59,6 +59,7 @@ class CalcStatus
     const ACTIVE_ACCOUNT_LIMIT = 'STATUS_ACTIVE_ACCOUNT_LIMIT';
     const ACTIVE_CAMPAIGN_LIMIT = 'STATUS_ACTIVE_CAMPAIGN_LIMIT';
     const ACTIVE_CAMPAIGN_SUSPEND = 'STATUS_ACTIVE_CAMPAIGN_SUSPEND';
+    const ACTIVE_AD_LIMIT = 'STATUS_ACTIVE_AD_LIMIT';
     const PART_READY = 'STATUS_PART_READY';
     const PART_ACTIVE = 'STATUS_PART_ACTIVE';
     
@@ -84,6 +85,7 @@ class CalcStatus
             self::ACTIVE_ACCOUNT_LIMIT,
             self::ACTIVE_CAMPAIGN_LIMIT,
             self::ACTIVE_CAMPAIGN_SUSPEND,
+            self::ACTIVE_AD_LIMIT,
             self::PART_READY,
             self::PART_ACTIVE,
         ];

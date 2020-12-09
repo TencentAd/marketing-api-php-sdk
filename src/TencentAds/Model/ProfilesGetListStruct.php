@@ -60,7 +60,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'profileType' => '\TencentAds\Model\ProfileType',
         'profileId' => 'int',
-        'promotedObjectType' => '\TencentAds\Model\PromotedObject',
+        'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
         'promotedObjectId' => 'string',
         'headImageId' => 'string',
         'headImageUrl' => 'string',
@@ -322,7 +322,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObject
+     * @return \TencentAds\Model\PromotedObjectType
      */
     public function getPromotedObjectType()
     {
@@ -332,7 +332,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObject $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
      *
      * @return $this
      */

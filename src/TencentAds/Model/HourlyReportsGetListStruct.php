@@ -156,6 +156,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'intePhoneCount' => 'int',
         'phoneCallCount' => 'int',
         'externalFormReservationCount' => 'int',
+        'appAdPayingUsers' => 'int',
         'adPurValWeb' => 'int',
         'adPurValApp' => 'int',
         'gameCreateRoleCount' => 'int',
@@ -185,6 +186,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'webArppuCost' => 'int',
         'webArpuCost' => 'int',
         'appAdPurArpuCost' => 'int',
+        'appAdPurArppuCost' => 'int',
         'webAdPurArpuCost' => 'int',
         'cheoutFd' => 'int',
         'cheoutTd' => 'int',
@@ -254,6 +256,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoInnerPlayCount' => 'int',
         'lanButtonClickCount' => 'int',
         'lanJumpButtonClickers' => 'int',
+        'lanJumpButtonClickCost' => 'int',
+        'lanJumpButtonCtr' => 'double',
         'lanButtonClickCost' => 'int',
         'cpnClickButtonCount' => 'int',
         'cpnClickButtonUv' => 'int',
@@ -303,15 +307,31 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'creAppCost' => 'int',
         'preCreWebCost' => 'int',
         'preCreAppCost' => 'int',
+        'storeVisitor' => 'int',
+        'tryOutUser' => 'int',
+        'consultLeaveInfoUsers' => 'int',
+        'requestConversionsCount' => 'int',
+        'requestConversionsCost' => 'int',
         'incomeRoi1' => 'double',
         'incomeRoi3' => 'double',
         'incomeRoi7' => 'double',
         'incomeRoi14' => 'double',
+        'activatedTotalPaymentCost' => 'int',
+        'paymentAmountActivatedD3' => 'int',
+        'paymentAmountActivatedD7' => 'int',
+        'paymentAmountActivatedD14' => 'int',
+        'paymentAmountActivatedD30' => 'int',
         'firstDayPayCount' => 'int',
         'firstDayPayCost' => 'int',
         'firstDayFirstPayCost' => 'int',
         'firstDayFirstPayCount' => 'int',
+        'paymentCostActivatedD1' => 'int',
         'firstDayPayAmount' => 'int',
+        'roiActivatedD1' => 'double',
+        'roiActivatedD3' => 'double',
+        'roiActivatedD7' => 'double',
+        'roiActivatedD14' => 'double',
+        'roiActivatedD30' => 'double',
         'firstDayFirstPayRate' => 'double',
         'campaignId' => 'int',
         'campaignName' => 'string',
@@ -499,6 +519,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'intePhoneCount' => 'int64',
         'phoneCallCount' => 'int64',
         'externalFormReservationCount' => 'int64',
+        'appAdPayingUsers' => 'int64',
         'adPurValWeb' => 'int64',
         'adPurValApp' => 'int64',
         'gameCreateRoleCount' => 'int64',
@@ -528,6 +549,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'webArppuCost' => 'int64',
         'webArpuCost' => 'int64',
         'appAdPurArpuCost' => 'int64',
+        'appAdPurArppuCost' => 'int64',
         'webAdPurArpuCost' => 'int64',
         'cheoutFd' => 'int64',
         'cheoutTd' => 'int64',
@@ -597,6 +619,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoInnerPlayCount' => 'int64',
         'lanButtonClickCount' => 'int64',
         'lanJumpButtonClickers' => 'int64',
+        'lanJumpButtonClickCost' => 'int64',
+        'lanJumpButtonCtr' => 'double',
         'lanButtonClickCost' => 'int64',
         'cpnClickButtonCount' => 'int64',
         'cpnClickButtonUv' => 'int64',
@@ -646,15 +670,31 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'creAppCost' => 'int64',
         'preCreWebCost' => 'int64',
         'preCreAppCost' => 'int64',
+        'storeVisitor' => 'int64',
+        'tryOutUser' => 'int64',
+        'consultLeaveInfoUsers' => 'int64',
+        'requestConversionsCount' => 'int64',
+        'requestConversionsCost' => 'int64',
         'incomeRoi1' => 'double',
         'incomeRoi3' => 'double',
         'incomeRoi7' => 'double',
         'incomeRoi14' => 'double',
+        'activatedTotalPaymentCost' => 'int64',
+        'paymentAmountActivatedD3' => 'int64',
+        'paymentAmountActivatedD7' => 'int64',
+        'paymentAmountActivatedD14' => 'int64',
+        'paymentAmountActivatedD30' => 'int64',
         'firstDayPayCount' => 'int64',
         'firstDayPayCost' => 'int64',
         'firstDayFirstPayCost' => 'int64',
         'firstDayFirstPayCount' => 'int64',
+        'paymentCostActivatedD1' => 'int64',
         'firstDayPayAmount' => 'int64',
+        'roiActivatedD1' => 'double',
+        'roiActivatedD3' => 'double',
+        'roiActivatedD7' => 'double',
+        'roiActivatedD14' => 'double',
+        'roiActivatedD30' => 'double',
         'firstDayFirstPayRate' => 'double',
         'campaignId' => 'int64',
         'campaignName' => null,
@@ -863,6 +903,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'intePhoneCount' => 'inte_phone_count',
         'phoneCallCount' => 'phone_call_count',
         'externalFormReservationCount' => 'external_form_reservation_count',
+        'appAdPayingUsers' => 'app_ad_paying_users',
         'adPurValWeb' => 'ad_pur_val_web',
         'adPurValApp' => 'ad_pur_val_app',
         'gameCreateRoleCount' => 'game_create_role_count',
@@ -892,6 +933,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'webArppuCost' => 'web_arppu_cost',
         'webArpuCost' => 'web_arpu_cost',
         'appAdPurArpuCost' => 'app_ad_pur_arpu_cost',
+        'appAdPurArppuCost' => 'app_ad_pur_arppu_cost',
         'webAdPurArpuCost' => 'web_ad_pur_arpu_cost',
         'cheoutFd' => 'cheout_fd',
         'cheoutTd' => 'cheout_td',
@@ -961,6 +1003,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoInnerPlayCount' => 'video_inner_play_count',
         'lanButtonClickCount' => 'lan_button_click_count',
         'lanJumpButtonClickers' => 'lan_jump_button_clickers',
+        'lanJumpButtonClickCost' => 'lan_jump_button_click_cost',
+        'lanJumpButtonCtr' => 'lan_jump_button_ctr',
         'lanButtonClickCost' => 'lan_button_click_cost',
         'cpnClickButtonCount' => 'cpn_click_button_count',
         'cpnClickButtonUv' => 'cpn_click_button_uv',
@@ -1010,15 +1054,31 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'creAppCost' => 'cre_app_cost',
         'preCreWebCost' => 'pre_cre_web_cost',
         'preCreAppCost' => 'pre_cre_app_cost',
+        'storeVisitor' => 'store_visitor',
+        'tryOutUser' => 'try_out_user',
+        'consultLeaveInfoUsers' => 'consult_leave_info_users',
+        'requestConversionsCount' => 'request_conversions_count',
+        'requestConversionsCost' => 'request_conversions_cost',
         'incomeRoi1' => 'income_roi_1',
         'incomeRoi3' => 'income_roi_3',
         'incomeRoi7' => 'income_roi_7',
         'incomeRoi14' => 'income_roi_14',
+        'activatedTotalPaymentCost' => 'activated_total_payment_cost',
+        'paymentAmountActivatedD3' => 'payment_amount_activated_d3',
+        'paymentAmountActivatedD7' => 'payment_amount_activated_d7',
+        'paymentAmountActivatedD14' => 'payment_amount_activated_d14',
+        'paymentAmountActivatedD30' => 'payment_amount_activated_d30',
         'firstDayPayCount' => 'first_day_pay_count',
         'firstDayPayCost' => 'first_day_pay_cost',
         'firstDayFirstPayCost' => 'first_day_first_pay_cost',
         'firstDayFirstPayCount' => 'first_day_first_pay_count',
+        'paymentCostActivatedD1' => 'payment_cost_activated_d1',
         'firstDayPayAmount' => 'first_day_pay_amount',
+        'roiActivatedD1' => 'roi_activated_d1',
+        'roiActivatedD3' => 'roi_activated_d3',
+        'roiActivatedD7' => 'roi_activated_d7',
+        'roiActivatedD14' => 'roi_activated_d14',
+        'roiActivatedD30' => 'roi_activated_d30',
         'firstDayFirstPayRate' => 'first_day_first_pay_rate',
         'campaignId' => 'campaign_id',
         'campaignName' => 'campaign_name',
@@ -1206,6 +1266,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'intePhoneCount' => 'setIntePhoneCount',
         'phoneCallCount' => 'setPhoneCallCount',
         'externalFormReservationCount' => 'setExternalFormReservationCount',
+        'appAdPayingUsers' => 'setAppAdPayingUsers',
         'adPurValWeb' => 'setAdPurValWeb',
         'adPurValApp' => 'setAdPurValApp',
         'gameCreateRoleCount' => 'setGameCreateRoleCount',
@@ -1235,6 +1296,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'webArppuCost' => 'setWebArppuCost',
         'webArpuCost' => 'setWebArpuCost',
         'appAdPurArpuCost' => 'setAppAdPurArpuCost',
+        'appAdPurArppuCost' => 'setAppAdPurArppuCost',
         'webAdPurArpuCost' => 'setWebAdPurArpuCost',
         'cheoutFd' => 'setCheoutFd',
         'cheoutTd' => 'setCheoutTd',
@@ -1304,6 +1366,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoInnerPlayCount' => 'setVideoInnerPlayCount',
         'lanButtonClickCount' => 'setLanButtonClickCount',
         'lanJumpButtonClickers' => 'setLanJumpButtonClickers',
+        'lanJumpButtonClickCost' => 'setLanJumpButtonClickCost',
+        'lanJumpButtonCtr' => 'setLanJumpButtonCtr',
         'lanButtonClickCost' => 'setLanButtonClickCost',
         'cpnClickButtonCount' => 'setCpnClickButtonCount',
         'cpnClickButtonUv' => 'setCpnClickButtonUv',
@@ -1353,15 +1417,31 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'creAppCost' => 'setCreAppCost',
         'preCreWebCost' => 'setPreCreWebCost',
         'preCreAppCost' => 'setPreCreAppCost',
+        'storeVisitor' => 'setStoreVisitor',
+        'tryOutUser' => 'setTryOutUser',
+        'consultLeaveInfoUsers' => 'setConsultLeaveInfoUsers',
+        'requestConversionsCount' => 'setRequestConversionsCount',
+        'requestConversionsCost' => 'setRequestConversionsCost',
         'incomeRoi1' => 'setIncomeRoi1',
         'incomeRoi3' => 'setIncomeRoi3',
         'incomeRoi7' => 'setIncomeRoi7',
         'incomeRoi14' => 'setIncomeRoi14',
+        'activatedTotalPaymentCost' => 'setActivatedTotalPaymentCost',
+        'paymentAmountActivatedD3' => 'setPaymentAmountActivatedD3',
+        'paymentAmountActivatedD7' => 'setPaymentAmountActivatedD7',
+        'paymentAmountActivatedD14' => 'setPaymentAmountActivatedD14',
+        'paymentAmountActivatedD30' => 'setPaymentAmountActivatedD30',
         'firstDayPayCount' => 'setFirstDayPayCount',
         'firstDayPayCost' => 'setFirstDayPayCost',
         'firstDayFirstPayCost' => 'setFirstDayFirstPayCost',
         'firstDayFirstPayCount' => 'setFirstDayFirstPayCount',
+        'paymentCostActivatedD1' => 'setPaymentCostActivatedD1',
         'firstDayPayAmount' => 'setFirstDayPayAmount',
+        'roiActivatedD1' => 'setRoiActivatedD1',
+        'roiActivatedD3' => 'setRoiActivatedD3',
+        'roiActivatedD7' => 'setRoiActivatedD7',
+        'roiActivatedD14' => 'setRoiActivatedD14',
+        'roiActivatedD30' => 'setRoiActivatedD30',
         'firstDayFirstPayRate' => 'setFirstDayFirstPayRate',
         'campaignId' => 'setCampaignId',
         'campaignName' => 'setCampaignName',
@@ -1549,6 +1629,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'intePhoneCount' => 'getIntePhoneCount',
         'phoneCallCount' => 'getPhoneCallCount',
         'externalFormReservationCount' => 'getExternalFormReservationCount',
+        'appAdPayingUsers' => 'getAppAdPayingUsers',
         'adPurValWeb' => 'getAdPurValWeb',
         'adPurValApp' => 'getAdPurValApp',
         'gameCreateRoleCount' => 'getGameCreateRoleCount',
@@ -1578,6 +1659,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'webArppuCost' => 'getWebArppuCost',
         'webArpuCost' => 'getWebArpuCost',
         'appAdPurArpuCost' => 'getAppAdPurArpuCost',
+        'appAdPurArppuCost' => 'getAppAdPurArppuCost',
         'webAdPurArpuCost' => 'getWebAdPurArpuCost',
         'cheoutFd' => 'getCheoutFd',
         'cheoutTd' => 'getCheoutTd',
@@ -1647,6 +1729,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoInnerPlayCount' => 'getVideoInnerPlayCount',
         'lanButtonClickCount' => 'getLanButtonClickCount',
         'lanJumpButtonClickers' => 'getLanJumpButtonClickers',
+        'lanJumpButtonClickCost' => 'getLanJumpButtonClickCost',
+        'lanJumpButtonCtr' => 'getLanJumpButtonCtr',
         'lanButtonClickCost' => 'getLanButtonClickCost',
         'cpnClickButtonCount' => 'getCpnClickButtonCount',
         'cpnClickButtonUv' => 'getCpnClickButtonUv',
@@ -1696,15 +1780,31 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'creAppCost' => 'getCreAppCost',
         'preCreWebCost' => 'getPreCreWebCost',
         'preCreAppCost' => 'getPreCreAppCost',
+        'storeVisitor' => 'getStoreVisitor',
+        'tryOutUser' => 'getTryOutUser',
+        'consultLeaveInfoUsers' => 'getConsultLeaveInfoUsers',
+        'requestConversionsCount' => 'getRequestConversionsCount',
+        'requestConversionsCost' => 'getRequestConversionsCost',
         'incomeRoi1' => 'getIncomeRoi1',
         'incomeRoi3' => 'getIncomeRoi3',
         'incomeRoi7' => 'getIncomeRoi7',
         'incomeRoi14' => 'getIncomeRoi14',
+        'activatedTotalPaymentCost' => 'getActivatedTotalPaymentCost',
+        'paymentAmountActivatedD3' => 'getPaymentAmountActivatedD3',
+        'paymentAmountActivatedD7' => 'getPaymentAmountActivatedD7',
+        'paymentAmountActivatedD14' => 'getPaymentAmountActivatedD14',
+        'paymentAmountActivatedD30' => 'getPaymentAmountActivatedD30',
         'firstDayPayCount' => 'getFirstDayPayCount',
         'firstDayPayCost' => 'getFirstDayPayCost',
         'firstDayFirstPayCost' => 'getFirstDayFirstPayCost',
         'firstDayFirstPayCount' => 'getFirstDayFirstPayCount',
+        'paymentCostActivatedD1' => 'getPaymentCostActivatedD1',
         'firstDayPayAmount' => 'getFirstDayPayAmount',
+        'roiActivatedD1' => 'getRoiActivatedD1',
+        'roiActivatedD3' => 'getRoiActivatedD3',
+        'roiActivatedD7' => 'getRoiActivatedD7',
+        'roiActivatedD14' => 'getRoiActivatedD14',
+        'roiActivatedD30' => 'getRoiActivatedD30',
         'firstDayFirstPayRate' => 'getFirstDayFirstPayRate',
         'campaignId' => 'getCampaignId',
         'campaignName' => 'getCampaignName',
@@ -1946,6 +2046,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['intePhoneCount'] = isset($data['intePhoneCount']) ? $data['intePhoneCount'] : null;
         $this->container['phoneCallCount'] = isset($data['phoneCallCount']) ? $data['phoneCallCount'] : null;
         $this->container['externalFormReservationCount'] = isset($data['externalFormReservationCount']) ? $data['externalFormReservationCount'] : null;
+        $this->container['appAdPayingUsers'] = isset($data['appAdPayingUsers']) ? $data['appAdPayingUsers'] : null;
         $this->container['adPurValWeb'] = isset($data['adPurValWeb']) ? $data['adPurValWeb'] : null;
         $this->container['adPurValApp'] = isset($data['adPurValApp']) ? $data['adPurValApp'] : null;
         $this->container['gameCreateRoleCount'] = isset($data['gameCreateRoleCount']) ? $data['gameCreateRoleCount'] : null;
@@ -1975,6 +2076,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['webArppuCost'] = isset($data['webArppuCost']) ? $data['webArppuCost'] : null;
         $this->container['webArpuCost'] = isset($data['webArpuCost']) ? $data['webArpuCost'] : null;
         $this->container['appAdPurArpuCost'] = isset($data['appAdPurArpuCost']) ? $data['appAdPurArpuCost'] : null;
+        $this->container['appAdPurArppuCost'] = isset($data['appAdPurArppuCost']) ? $data['appAdPurArppuCost'] : null;
         $this->container['webAdPurArpuCost'] = isset($data['webAdPurArpuCost']) ? $data['webAdPurArpuCost'] : null;
         $this->container['cheoutFd'] = isset($data['cheoutFd']) ? $data['cheoutFd'] : null;
         $this->container['cheoutTd'] = isset($data['cheoutTd']) ? $data['cheoutTd'] : null;
@@ -2044,6 +2146,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['videoInnerPlayCount'] = isset($data['videoInnerPlayCount']) ? $data['videoInnerPlayCount'] : null;
         $this->container['lanButtonClickCount'] = isset($data['lanButtonClickCount']) ? $data['lanButtonClickCount'] : null;
         $this->container['lanJumpButtonClickers'] = isset($data['lanJumpButtonClickers']) ? $data['lanJumpButtonClickers'] : null;
+        $this->container['lanJumpButtonClickCost'] = isset($data['lanJumpButtonClickCost']) ? $data['lanJumpButtonClickCost'] : null;
+        $this->container['lanJumpButtonCtr'] = isset($data['lanJumpButtonCtr']) ? $data['lanJumpButtonCtr'] : null;
         $this->container['lanButtonClickCost'] = isset($data['lanButtonClickCost']) ? $data['lanButtonClickCost'] : null;
         $this->container['cpnClickButtonCount'] = isset($data['cpnClickButtonCount']) ? $data['cpnClickButtonCount'] : null;
         $this->container['cpnClickButtonUv'] = isset($data['cpnClickButtonUv']) ? $data['cpnClickButtonUv'] : null;
@@ -2093,15 +2197,31 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['creAppCost'] = isset($data['creAppCost']) ? $data['creAppCost'] : null;
         $this->container['preCreWebCost'] = isset($data['preCreWebCost']) ? $data['preCreWebCost'] : null;
         $this->container['preCreAppCost'] = isset($data['preCreAppCost']) ? $data['preCreAppCost'] : null;
+        $this->container['storeVisitor'] = isset($data['storeVisitor']) ? $data['storeVisitor'] : null;
+        $this->container['tryOutUser'] = isset($data['tryOutUser']) ? $data['tryOutUser'] : null;
+        $this->container['consultLeaveInfoUsers'] = isset($data['consultLeaveInfoUsers']) ? $data['consultLeaveInfoUsers'] : null;
+        $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
+        $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
         $this->container['incomeRoi1'] = isset($data['incomeRoi1']) ? $data['incomeRoi1'] : null;
         $this->container['incomeRoi3'] = isset($data['incomeRoi3']) ? $data['incomeRoi3'] : null;
         $this->container['incomeRoi7'] = isset($data['incomeRoi7']) ? $data['incomeRoi7'] : null;
         $this->container['incomeRoi14'] = isset($data['incomeRoi14']) ? $data['incomeRoi14'] : null;
+        $this->container['activatedTotalPaymentCost'] = isset($data['activatedTotalPaymentCost']) ? $data['activatedTotalPaymentCost'] : null;
+        $this->container['paymentAmountActivatedD3'] = isset($data['paymentAmountActivatedD3']) ? $data['paymentAmountActivatedD3'] : null;
+        $this->container['paymentAmountActivatedD7'] = isset($data['paymentAmountActivatedD7']) ? $data['paymentAmountActivatedD7'] : null;
+        $this->container['paymentAmountActivatedD14'] = isset($data['paymentAmountActivatedD14']) ? $data['paymentAmountActivatedD14'] : null;
+        $this->container['paymentAmountActivatedD30'] = isset($data['paymentAmountActivatedD30']) ? $data['paymentAmountActivatedD30'] : null;
         $this->container['firstDayPayCount'] = isset($data['firstDayPayCount']) ? $data['firstDayPayCount'] : null;
         $this->container['firstDayPayCost'] = isset($data['firstDayPayCost']) ? $data['firstDayPayCost'] : null;
         $this->container['firstDayFirstPayCost'] = isset($data['firstDayFirstPayCost']) ? $data['firstDayFirstPayCost'] : null;
         $this->container['firstDayFirstPayCount'] = isset($data['firstDayFirstPayCount']) ? $data['firstDayFirstPayCount'] : null;
+        $this->container['paymentCostActivatedD1'] = isset($data['paymentCostActivatedD1']) ? $data['paymentCostActivatedD1'] : null;
         $this->container['firstDayPayAmount'] = isset($data['firstDayPayAmount']) ? $data['firstDayPayAmount'] : null;
+        $this->container['roiActivatedD1'] = isset($data['roiActivatedD1']) ? $data['roiActivatedD1'] : null;
+        $this->container['roiActivatedD3'] = isset($data['roiActivatedD3']) ? $data['roiActivatedD3'] : null;
+        $this->container['roiActivatedD7'] = isset($data['roiActivatedD7']) ? $data['roiActivatedD7'] : null;
+        $this->container['roiActivatedD14'] = isset($data['roiActivatedD14']) ? $data['roiActivatedD14'] : null;
+        $this->container['roiActivatedD30'] = isset($data['roiActivatedD30']) ? $data['roiActivatedD30'] : null;
         $this->container['firstDayFirstPayRate'] = isset($data['firstDayFirstPayRate']) ? $data['firstDayFirstPayRate'] : null;
         $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
         $this->container['campaignName'] = isset($data['campaignName']) ? $data['campaignName'] : null;
@@ -4562,6 +4682,30 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets appAdPayingUsers
+     *
+     * @return int
+     */
+    public function getAppAdPayingUsers()
+    {
+        return $this->container['appAdPayingUsers'];
+    }
+
+    /**
+     * Sets appAdPayingUsers
+     *
+     * @param int $appAdPayingUsers appAdPayingUsers
+     *
+     * @return $this
+     */
+    public function setAppAdPayingUsers($appAdPayingUsers)
+    {
+        $this->container['appAdPayingUsers'] = $appAdPayingUsers;
+
+        return $this;
+    }
+
+    /**
      * Gets adPurValWeb
      *
      * @return int
@@ -5253,6 +5397,30 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setAppAdPurArpuCost($appAdPurArpuCost)
     {
         $this->container['appAdPurArpuCost'] = $appAdPurArpuCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets appAdPurArppuCost
+     *
+     * @return int
+     */
+    public function getAppAdPurArppuCost()
+    {
+        return $this->container['appAdPurArppuCost'];
+    }
+
+    /**
+     * Sets appAdPurArppuCost
+     *
+     * @param int $appAdPurArppuCost appAdPurArppuCost
+     *
+     * @return $this
+     */
+    public function setAppAdPurArppuCost($appAdPurArppuCost)
+    {
+        $this->container['appAdPurArppuCost'] = $appAdPurArppuCost;
 
         return $this;
     }
@@ -6914,6 +7082,54 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets lanJumpButtonClickCost
+     *
+     * @return int
+     */
+    public function getLanJumpButtonClickCost()
+    {
+        return $this->container['lanJumpButtonClickCost'];
+    }
+
+    /**
+     * Sets lanJumpButtonClickCost
+     *
+     * @param int $lanJumpButtonClickCost lanJumpButtonClickCost
+     *
+     * @return $this
+     */
+    public function setLanJumpButtonClickCost($lanJumpButtonClickCost)
+    {
+        $this->container['lanJumpButtonClickCost'] = $lanJumpButtonClickCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets lanJumpButtonCtr
+     *
+     * @return double
+     */
+    public function getLanJumpButtonCtr()
+    {
+        return $this->container['lanJumpButtonCtr'];
+    }
+
+    /**
+     * Sets lanJumpButtonCtr
+     *
+     * @param double $lanJumpButtonCtr lanJumpButtonCtr
+     *
+     * @return $this
+     */
+    public function setLanJumpButtonCtr($lanJumpButtonCtr)
+    {
+        $this->container['lanJumpButtonCtr'] = $lanJumpButtonCtr;
+
+        return $this;
+    }
+
+    /**
      * Gets lanButtonClickCost
      *
      * @return int
@@ -8090,6 +8306,126 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets storeVisitor
+     *
+     * @return int
+     */
+    public function getStoreVisitor()
+    {
+        return $this->container['storeVisitor'];
+    }
+
+    /**
+     * Sets storeVisitor
+     *
+     * @param int $storeVisitor storeVisitor
+     *
+     * @return $this
+     */
+    public function setStoreVisitor($storeVisitor)
+    {
+        $this->container['storeVisitor'] = $storeVisitor;
+
+        return $this;
+    }
+
+    /**
+     * Gets tryOutUser
+     *
+     * @return int
+     */
+    public function getTryOutUser()
+    {
+        return $this->container['tryOutUser'];
+    }
+
+    /**
+     * Sets tryOutUser
+     *
+     * @param int $tryOutUser tryOutUser
+     *
+     * @return $this
+     */
+    public function setTryOutUser($tryOutUser)
+    {
+        $this->container['tryOutUser'] = $tryOutUser;
+
+        return $this;
+    }
+
+    /**
+     * Gets consultLeaveInfoUsers
+     *
+     * @return int
+     */
+    public function getConsultLeaveInfoUsers()
+    {
+        return $this->container['consultLeaveInfoUsers'];
+    }
+
+    /**
+     * Sets consultLeaveInfoUsers
+     *
+     * @param int $consultLeaveInfoUsers consultLeaveInfoUsers
+     *
+     * @return $this
+     */
+    public function setConsultLeaveInfoUsers($consultLeaveInfoUsers)
+    {
+        $this->container['consultLeaveInfoUsers'] = $consultLeaveInfoUsers;
+
+        return $this;
+    }
+
+    /**
+     * Gets requestConversionsCount
+     *
+     * @return int
+     */
+    public function getRequestConversionsCount()
+    {
+        return $this->container['requestConversionsCount'];
+    }
+
+    /**
+     * Sets requestConversionsCount
+     *
+     * @param int $requestConversionsCount requestConversionsCount
+     *
+     * @return $this
+     */
+    public function setRequestConversionsCount($requestConversionsCount)
+    {
+        $this->container['requestConversionsCount'] = $requestConversionsCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets requestConversionsCost
+     *
+     * @return int
+     */
+    public function getRequestConversionsCost()
+    {
+        return $this->container['requestConversionsCost'];
+    }
+
+    /**
+     * Sets requestConversionsCost
+     *
+     * @param int $requestConversionsCost requestConversionsCost
+     *
+     * @return $this
+     */
+    public function setRequestConversionsCost($requestConversionsCost)
+    {
+        $this->container['requestConversionsCost'] = $requestConversionsCost;
+
+        return $this;
+    }
+
+    /**
      * Gets incomeRoi1
      *
      * @return double
@@ -8181,6 +8517,126 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setIncomeRoi14($incomeRoi14)
     {
         $this->container['incomeRoi14'] = $incomeRoi14;
+
+        return $this;
+    }
+
+    /**
+     * Gets activatedTotalPaymentCost
+     *
+     * @return int
+     */
+    public function getActivatedTotalPaymentCost()
+    {
+        return $this->container['activatedTotalPaymentCost'];
+    }
+
+    /**
+     * Sets activatedTotalPaymentCost
+     *
+     * @param int $activatedTotalPaymentCost activatedTotalPaymentCost
+     *
+     * @return $this
+     */
+    public function setActivatedTotalPaymentCost($activatedTotalPaymentCost)
+    {
+        $this->container['activatedTotalPaymentCost'] = $activatedTotalPaymentCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets paymentAmountActivatedD3
+     *
+     * @return int
+     */
+    public function getPaymentAmountActivatedD3()
+    {
+        return $this->container['paymentAmountActivatedD3'];
+    }
+
+    /**
+     * Sets paymentAmountActivatedD3
+     *
+     * @param int $paymentAmountActivatedD3 paymentAmountActivatedD3
+     *
+     * @return $this
+     */
+    public function setPaymentAmountActivatedD3($paymentAmountActivatedD3)
+    {
+        $this->container['paymentAmountActivatedD3'] = $paymentAmountActivatedD3;
+
+        return $this;
+    }
+
+    /**
+     * Gets paymentAmountActivatedD7
+     *
+     * @return int
+     */
+    public function getPaymentAmountActivatedD7()
+    {
+        return $this->container['paymentAmountActivatedD7'];
+    }
+
+    /**
+     * Sets paymentAmountActivatedD7
+     *
+     * @param int $paymentAmountActivatedD7 paymentAmountActivatedD7
+     *
+     * @return $this
+     */
+    public function setPaymentAmountActivatedD7($paymentAmountActivatedD7)
+    {
+        $this->container['paymentAmountActivatedD7'] = $paymentAmountActivatedD7;
+
+        return $this;
+    }
+
+    /**
+     * Gets paymentAmountActivatedD14
+     *
+     * @return int
+     */
+    public function getPaymentAmountActivatedD14()
+    {
+        return $this->container['paymentAmountActivatedD14'];
+    }
+
+    /**
+     * Sets paymentAmountActivatedD14
+     *
+     * @param int $paymentAmountActivatedD14 paymentAmountActivatedD14
+     *
+     * @return $this
+     */
+    public function setPaymentAmountActivatedD14($paymentAmountActivatedD14)
+    {
+        $this->container['paymentAmountActivatedD14'] = $paymentAmountActivatedD14;
+
+        return $this;
+    }
+
+    /**
+     * Gets paymentAmountActivatedD30
+     *
+     * @return int
+     */
+    public function getPaymentAmountActivatedD30()
+    {
+        return $this->container['paymentAmountActivatedD30'];
+    }
+
+    /**
+     * Sets paymentAmountActivatedD30
+     *
+     * @param int $paymentAmountActivatedD30 paymentAmountActivatedD30
+     *
+     * @return $this
+     */
+    public function setPaymentAmountActivatedD30($paymentAmountActivatedD30)
+    {
+        $this->container['paymentAmountActivatedD30'] = $paymentAmountActivatedD30;
 
         return $this;
     }
@@ -8282,6 +8738,30 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets paymentCostActivatedD1
+     *
+     * @return int
+     */
+    public function getPaymentCostActivatedD1()
+    {
+        return $this->container['paymentCostActivatedD1'];
+    }
+
+    /**
+     * Sets paymentCostActivatedD1
+     *
+     * @param int $paymentCostActivatedD1 paymentCostActivatedD1
+     *
+     * @return $this
+     */
+    public function setPaymentCostActivatedD1($paymentCostActivatedD1)
+    {
+        $this->container['paymentCostActivatedD1'] = $paymentCostActivatedD1;
+
+        return $this;
+    }
+
+    /**
      * Gets firstDayPayAmount
      *
      * @return int
@@ -8301,6 +8781,126 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setFirstDayPayAmount($firstDayPayAmount)
     {
         $this->container['firstDayPayAmount'] = $firstDayPayAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets roiActivatedD1
+     *
+     * @return double
+     */
+    public function getRoiActivatedD1()
+    {
+        return $this->container['roiActivatedD1'];
+    }
+
+    /**
+     * Sets roiActivatedD1
+     *
+     * @param double $roiActivatedD1 roiActivatedD1
+     *
+     * @return $this
+     */
+    public function setRoiActivatedD1($roiActivatedD1)
+    {
+        $this->container['roiActivatedD1'] = $roiActivatedD1;
+
+        return $this;
+    }
+
+    /**
+     * Gets roiActivatedD3
+     *
+     * @return double
+     */
+    public function getRoiActivatedD3()
+    {
+        return $this->container['roiActivatedD3'];
+    }
+
+    /**
+     * Sets roiActivatedD3
+     *
+     * @param double $roiActivatedD3 roiActivatedD3
+     *
+     * @return $this
+     */
+    public function setRoiActivatedD3($roiActivatedD3)
+    {
+        $this->container['roiActivatedD3'] = $roiActivatedD3;
+
+        return $this;
+    }
+
+    /**
+     * Gets roiActivatedD7
+     *
+     * @return double
+     */
+    public function getRoiActivatedD7()
+    {
+        return $this->container['roiActivatedD7'];
+    }
+
+    /**
+     * Sets roiActivatedD7
+     *
+     * @param double $roiActivatedD7 roiActivatedD7
+     *
+     * @return $this
+     */
+    public function setRoiActivatedD7($roiActivatedD7)
+    {
+        $this->container['roiActivatedD7'] = $roiActivatedD7;
+
+        return $this;
+    }
+
+    /**
+     * Gets roiActivatedD14
+     *
+     * @return double
+     */
+    public function getRoiActivatedD14()
+    {
+        return $this->container['roiActivatedD14'];
+    }
+
+    /**
+     * Sets roiActivatedD14
+     *
+     * @param double $roiActivatedD14 roiActivatedD14
+     *
+     * @return $this
+     */
+    public function setRoiActivatedD14($roiActivatedD14)
+    {
+        $this->container['roiActivatedD14'] = $roiActivatedD14;
+
+        return $this;
+    }
+
+    /**
+     * Gets roiActivatedD30
+     *
+     * @return double
+     */
+    public function getRoiActivatedD30()
+    {
+        return $this->container['roiActivatedD30'];
+    }
+
+    /**
+     * Sets roiActivatedD30
+     *
+     * @param double $roiActivatedD30 roiActivatedD30
+     *
+     * @return $this
+     */
+    public function setRoiActivatedD30($roiActivatedD30)
+    {
+        $this->container['roiActivatedD30'] = $roiActivatedD30;
 
         return $this;
     }

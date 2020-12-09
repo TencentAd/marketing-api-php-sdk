@@ -66,9 +66,11 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'corporate' => '\TencentAds\Model\AdcreativeCorporate',
         'video' => 'string',
         'imageOptions' => 'string[]',
+        'imageListOptions' => '\TencentAds\Model\ImageListOptions[]',
         'titleOptions' => 'string[]',
         'descriptionOptions' => 'string[]',
         'videoOptions' => 'string[]',
+        'shortVideoStructOptions' => '\TencentAds\Model\ShortVideoStruct[]',
         'deepLinkType' => 'string',
         'linkNameType' => '\TencentAds\Model\LinkNameType',
         'imageList' => 'string[]',
@@ -137,9 +139,11 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'corporate' => null,
         'video' => null,
         'imageOptions' => null,
+        'imageListOptions' => null,
         'titleOptions' => null,
         'descriptionOptions' => null,
         'videoOptions' => null,
+        'shortVideoStructOptions' => null,
         'deepLinkType' => null,
         'linkNameType' => null,
         'imageList' => null,
@@ -229,9 +233,11 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'corporate' => 'corporate',
         'video' => 'video',
         'imageOptions' => 'image_options',
+        'imageListOptions' => 'image_list_options',
         'titleOptions' => 'title_options',
         'descriptionOptions' => 'description_options',
         'videoOptions' => 'video_options',
+        'shortVideoStructOptions' => 'short_video_struct_options',
         'deepLinkType' => 'deep_link_type',
         'linkNameType' => 'link_name_type',
         'imageList' => 'image_list',
@@ -300,9 +306,11 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'corporate' => 'setCorporate',
         'video' => 'setVideo',
         'imageOptions' => 'setImageOptions',
+        'imageListOptions' => 'setImageListOptions',
         'titleOptions' => 'setTitleOptions',
         'descriptionOptions' => 'setDescriptionOptions',
         'videoOptions' => 'setVideoOptions',
+        'shortVideoStructOptions' => 'setShortVideoStructOptions',
         'deepLinkType' => 'setDeepLinkType',
         'linkNameType' => 'setLinkNameType',
         'imageList' => 'setImageList',
@@ -371,9 +379,11 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'corporate' => 'getCorporate',
         'video' => 'getVideo',
         'imageOptions' => 'getImageOptions',
+        'imageListOptions' => 'getImageListOptions',
         'titleOptions' => 'getTitleOptions',
         'descriptionOptions' => 'getDescriptionOptions',
         'videoOptions' => 'getVideoOptions',
+        'shortVideoStructOptions' => 'getShortVideoStructOptions',
         'deepLinkType' => 'getDeepLinkType',
         'linkNameType' => 'getLinkNameType',
         'imageList' => 'getImageList',
@@ -496,9 +506,11 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         $this->container['corporate'] = isset($data['corporate']) ? $data['corporate'] : null;
         $this->container['video'] = isset($data['video']) ? $data['video'] : null;
         $this->container['imageOptions'] = isset($data['imageOptions']) ? $data['imageOptions'] : null;
+        $this->container['imageListOptions'] = isset($data['imageListOptions']) ? $data['imageListOptions'] : null;
         $this->container['titleOptions'] = isset($data['titleOptions']) ? $data['titleOptions'] : null;
         $this->container['descriptionOptions'] = isset($data['descriptionOptions']) ? $data['descriptionOptions'] : null;
         $this->container['videoOptions'] = isset($data['videoOptions']) ? $data['videoOptions'] : null;
+        $this->container['shortVideoStructOptions'] = isset($data['shortVideoStructOptions']) ? $data['shortVideoStructOptions'] : null;
         $this->container['deepLinkType'] = isset($data['deepLinkType']) ? $data['deepLinkType'] : null;
         $this->container['linkNameType'] = isset($data['linkNameType']) ? $data['linkNameType'] : null;
         $this->container['imageList'] = isset($data['imageList']) ? $data['imageList'] : null;
@@ -770,6 +782,30 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets imageListOptions
+     *
+     * @return \TencentAds\Model\ImageListOptions[]
+     */
+    public function getImageListOptions()
+    {
+        return $this->container['imageListOptions'];
+    }
+
+    /**
+     * Sets imageListOptions
+     *
+     * @param \TencentAds\Model\ImageListOptions[] $imageListOptions imageListOptions
+     *
+     * @return $this
+     */
+    public function setImageListOptions($imageListOptions)
+    {
+        $this->container['imageListOptions'] = $imageListOptions;
+
+        return $this;
+    }
+
+    /**
      * Gets titleOptions
      *
      * @return string[]
@@ -837,6 +873,30 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
     public function setVideoOptions($videoOptions)
     {
         $this->container['videoOptions'] = $videoOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets shortVideoStructOptions
+     *
+     * @return \TencentAds\Model\ShortVideoStruct[]
+     */
+    public function getShortVideoStructOptions()
+    {
+        return $this->container['shortVideoStructOptions'];
+    }
+
+    /**
+     * Sets shortVideoStructOptions
+     *
+     * @param \TencentAds\Model\ShortVideoStruct[] $shortVideoStructOptions shortVideoStructOptions
+     *
+     * @return $this
+     */
+    public function setShortVideoStructOptions($shortVideoStructOptions)
+    {
+        $this->container['shortVideoStructOptions'] = $shortVideoStructOptions;
 
         return $this;
     }

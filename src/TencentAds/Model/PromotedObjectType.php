@@ -1,6 +1,6 @@
 <?php
 /**
- * PromotedObject
+ * PromotedObjectType
  *
  * PHP version 5
  *
@@ -31,7 +31,7 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PromotedObject Class Doc Comment
+ * PromotedObjectType Class Doc Comment
  *
  * @category Class
  * @description 推广目标类型
@@ -39,7 +39,7 @@ use \TencentAds\ObjectSerializer;
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PromotedObject
+class PromotedObjectType
 {
     /**
      * Possible values of this enum

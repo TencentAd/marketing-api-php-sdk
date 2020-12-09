@@ -50,6 +50,7 @@ class TaskScope
     const ADVERTISER = 'TASK_SCOPE_ADVERTISER';
     const SCHEDULED_TASK = 'TASK_SCOPE_SCHEDULED_TASK';
     const AD = 'TASK_SCOPE_AD';
+    const ADCREATIVE = 'TASK_SCOPE_ADCREATIVE';
     
     /**
      * Gets allowable values of the enum
@@ -64,6 +65,7 @@ class TaskScope
             self::ADVERTISER,
             self::SCHEDULED_TASK,
             self::AD,
+            self::ADCREATIVE,
         ];
     }
 }
