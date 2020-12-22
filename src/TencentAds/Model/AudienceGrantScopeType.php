@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * AudienceGrantScopeType Class Doc Comment
  *
  * @category Class
- * @description 人群授权的范围
+ * @description 人群授权的范围。仅支持 &#39;GRANT_SCOPE_TYPE_ACCOUNT&#39; 枚举值。授权给BM内全部账号功能不再在此接口中支持实现
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

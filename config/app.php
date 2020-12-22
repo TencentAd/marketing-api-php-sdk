@@ -147,4 +147,9 @@ return [
             'skip_middleware' => [\TencentAds\Middleware\EncodeArrayMiddleware::class],
         ],
     ],
+    'TencentAds\Api\AdcreativesValidateResultApi'       => [
+        'get' => [
+            'skip_middleware' => [\TencentAds\Middleware\EncodeArrayMiddleware::class],
+        ],
+    ],
 ];

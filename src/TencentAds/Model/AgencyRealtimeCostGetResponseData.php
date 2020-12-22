@@ -1,6 +1,6 @@
 <?php
 /**
- * ControlListItemDetailData
+ * AgencyRealtimeCostGetResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ControlListItemDetailData Class Doc Comment
+ * AgencyRealtimeCostGetResponseData Class Doc Comment
  *
  * @category Class
- * @description 表单项
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ControlListItemDetailData implements ModelInterface, ArrayAccess
+class AgencyRealtimeCostGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'control_list_item_detail_data';
+    protected static $swaggerModelName = 'AgencyRealtimeCostGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +57,7 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'itemName' => 'string',
-        'itemType' => '\TencentAds\Model\ItemType',
-        'placeholder' => 'string',
-        'selectElements' => '\TencentAds\Model\ConfigsDetailDataArrayItem[]'
+        'list' => '\TencentAds\Model\AgencyRealtimeCostGetListStruct[]'
     ];
 
     /**
@@ -70,10 +66,7 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'itemName' => null,
-        'itemType' => null,
-        'placeholder' => null,
-        'selectElements' => null
+        'list' => null
     ];
 
     /**
@@ -103,10 +96,7 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'itemName' => 'item_name',
-        'itemType' => 'item_type',
-        'placeholder' => 'placeholder',
-        'selectElements' => 'select_elements'
+        'list' => 'list'
     ];
 
     /**
@@ -115,10 +105,7 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'itemName' => 'setItemName',
-        'itemType' => 'setItemType',
-        'placeholder' => 'setPlaceholder',
-        'selectElements' => 'setSelectElements'
+        'list' => 'setList'
     ];
 
     /**
@@ -127,10 +114,7 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'itemName' => 'getItemName',
-        'itemType' => 'getItemType',
-        'placeholder' => 'getPlaceholder',
-        'selectElements' => 'getSelectElements'
+        'list' => 'getList'
     ];
 
     /**
@@ -193,10 +177,7 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['itemName'] = isset($data['itemName']) ? $data['itemName'] : null;
-        $this->container['itemType'] = isset($data['itemType']) ? $data['itemType'] : null;
-        $this->container['placeholder'] = isset($data['placeholder']) ? $data['placeholder'] : null;
-        $this->container['selectElements'] = isset($data['selectElements']) ? $data['selectElements'] : null;
+        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
     }
 
     /**
@@ -224,97 +205,25 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets itemName
+     * Gets list
      *
-     * @return string
+     * @return \TencentAds\Model\AgencyRealtimeCostGetListStruct[]
      */
-    public function getItemName()
+    public function getList()
     {
-        return $this->container['itemName'];
+        return $this->container['list'];
     }
 
     /**
-     * Sets itemName
+     * Sets list
      *
-     * @param string $itemName itemName
+     * @param \TencentAds\Model\AgencyRealtimeCostGetListStruct[] $list list
      *
      * @return $this
      */
-    public function setItemName($itemName)
+    public function setList($list)
     {
-        $this->container['itemName'] = $itemName;
-
-        return $this;
-    }
-
-    /**
-     * Gets itemType
-     *
-     * @return \TencentAds\Model\ItemType
-     */
-    public function getItemType()
-    {
-        return $this->container['itemType'];
-    }
-
-    /**
-     * Sets itemType
-     *
-     * @param \TencentAds\Model\ItemType $itemType itemType
-     *
-     * @return $this
-     */
-    public function setItemType($itemType)
-    {
-        $this->container['itemType'] = $itemType;
-
-        return $this;
-    }
-
-    /**
-     * Gets placeholder
-     *
-     * @return string
-     */
-    public function getPlaceholder()
-    {
-        return $this->container['placeholder'];
-    }
-
-    /**
-     * Sets placeholder
-     *
-     * @param string $placeholder placeholder
-     *
-     * @return $this
-     */
-    public function setPlaceholder($placeholder)
-    {
-        $this->container['placeholder'] = $placeholder;
-
-        return $this;
-    }
-
-    /**
-     * Gets selectElements
-     *
-     * @return \TencentAds\Model\ConfigsDetailDataArrayItem[]
-     */
-    public function getSelectElements()
-    {
-        return $this->container['selectElements'];
-    }
-
-    /**
-     * Sets selectElements
-     *
-     * @param \TencentAds\Model\ConfigsDetailDataArrayItem[] $selectElements selectElements
-     *
-     * @return $this
-     */
-    public function setSelectElements($selectElements)
-    {
-        $this->container['selectElements'] = $selectElements;
+        $this->container['list'] = $list;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * ControlListItemDetailData
+ * AgencyInnerTransferAddResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ControlListItemDetailData Class Doc Comment
+ * AgencyInnerTransferAddResponse Class Doc Comment
  *
  * @category Class
- * @description 表单项
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ControlListItemDetailData implements ModelInterface, ArrayAccess
+class AgencyInnerTransferAddResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'control_list_item_detail_data';
+    protected static $swaggerModelName = 'AgencyInnerTransferAddResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +57,11 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'itemName' => 'string',
-        'itemType' => '\TencentAds\Model\ItemType',
-        'placeholder' => 'string',
-        'selectElements' => '\TencentAds\Model\ConfigsDetailDataArrayItem[]'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\AgencyInnerTransferAddResponseData'
     ];
 
     /**
@@ -70,10 +70,11 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'itemName' => null,
-        'itemType' => null,
-        'placeholder' => null,
-        'selectElements' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -103,10 +104,11 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'itemName' => 'item_name',
-        'itemType' => 'item_type',
-        'placeholder' => 'placeholder',
-        'selectElements' => 'select_elements'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -115,10 +117,11 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'itemName' => 'setItemName',
-        'itemType' => 'setItemType',
-        'placeholder' => 'setPlaceholder',
-        'selectElements' => 'setSelectElements'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -127,10 +130,11 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'itemName' => 'getItemName',
-        'itemType' => 'getItemType',
-        'placeholder' => 'getPlaceholder',
-        'selectElements' => 'getSelectElements'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -193,10 +197,11 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['itemName'] = isset($data['itemName']) ? $data['itemName'] : null;
-        $this->container['itemType'] = isset($data['itemType']) ? $data['itemType'] : null;
-        $this->container['placeholder'] = isset($data['placeholder']) ? $data['placeholder'] : null;
-        $this->container['selectElements'] = isset($data['selectElements']) ? $data['selectElements'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -224,97 +229,121 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets itemName
+     * Gets code
+     *
+     * @return int
+     */
+    public function getCode()
+    {
+        return $this->container['code'];
+    }
+
+    /**
+     * Sets code
+     *
+     * @param int $code code
+     *
+     * @return $this
+     */
+    public function setCode($code)
+    {
+        $this->container['code'] = $code;
+
+        return $this;
+    }
+
+    /**
+     * Gets message
      *
      * @return string
      */
-    public function getItemName()
+    public function getMessage()
     {
-        return $this->container['itemName'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets itemName
+     * Sets message
      *
-     * @param string $itemName itemName
+     * @param string $message message
      *
      * @return $this
      */
-    public function setItemName($itemName)
+    public function setMessage($message)
     {
-        $this->container['itemName'] = $itemName;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets itemType
-     *
-     * @return \TencentAds\Model\ItemType
-     */
-    public function getItemType()
-    {
-        return $this->container['itemType'];
-    }
-
-    /**
-     * Sets itemType
-     *
-     * @param \TencentAds\Model\ItemType $itemType itemType
-     *
-     * @return $this
-     */
-    public function setItemType($itemType)
-    {
-        $this->container['itemType'] = $itemType;
-
-        return $this;
-    }
-
-    /**
-     * Gets placeholder
+     * Gets messageCn
      *
      * @return string
      */
-    public function getPlaceholder()
+    public function getMessageCn()
     {
-        return $this->container['placeholder'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets placeholder
+     * Sets messageCn
      *
-     * @param string $placeholder placeholder
+     * @param string $messageCn messageCn
      *
      * @return $this
      */
-    public function setPlaceholder($placeholder)
+    public function setMessageCn($messageCn)
     {
-        $this->container['placeholder'] = $placeholder;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets selectElements
+     * Gets errors
      *
-     * @return \TencentAds\Model\ConfigsDetailDataArrayItem[]
+     * @return \TencentAds\Model\ApiErrorStruct[]
      */
-    public function getSelectElements()
+    public function getErrors()
     {
-        return $this->container['selectElements'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets selectElements
+     * Sets errors
      *
-     * @param \TencentAds\Model\ConfigsDetailDataArrayItem[] $selectElements selectElements
+     * @param \TencentAds\Model\ApiErrorStruct[] $errors errors
      *
      * @return $this
      */
-    public function setSelectElements($selectElements)
+    public function setErrors($errors)
     {
-        $this->container['selectElements'] = $selectElements;
+        $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\AgencyInnerTransferAddResponseData
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\AgencyInnerTransferAddResponseData $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * ControlListItemDetailData
+ * AgencyInnerTransferAddRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ControlListItemDetailData Class Doc Comment
+ * AgencyInnerTransferAddRequest Class Doc Comment
  *
  * @category Class
- * @description 表单项
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ControlListItemDetailData implements ModelInterface, ArrayAccess
+class AgencyInnerTransferAddRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'control_list_item_detail_data';
+    protected static $swaggerModelName = 'AgencyInnerTransferAddRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +57,12 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'itemName' => 'string',
-        'itemType' => '\TencentAds\Model\ItemType',
-        'placeholder' => 'string',
-        'selectElements' => '\TencentAds\Model\ConfigsDetailDataArrayItem[]'
+        'fundTypeFrom' => '\TencentAds\Model\AccountTypeMapInnerTransfer',
+        'fundTypeTo' => '\TencentAds\Model\AccountTypeMapInnerTransfer',
+        'amount' => 'int',
+        'externalBillNo' => 'string',
+        'memo' => 'string',
+        'accountId' => 'int'
     ];
 
     /**
@@ -70,10 +71,12 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'itemName' => null,
-        'itemType' => null,
-        'placeholder' => null,
-        'selectElements' => null
+        'fundTypeFrom' => null,
+        'fundTypeTo' => null,
+        'amount' => 'int64',
+        'externalBillNo' => null,
+        'memo' => null,
+        'accountId' => 'int64'
     ];
 
     /**
@@ -103,10 +106,12 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'itemName' => 'item_name',
-        'itemType' => 'item_type',
-        'placeholder' => 'placeholder',
-        'selectElements' => 'select_elements'
+        'fundTypeFrom' => 'fund_type_from',
+        'fundTypeTo' => 'fund_type_to',
+        'amount' => 'amount',
+        'externalBillNo' => 'external_bill_no',
+        'memo' => 'memo',
+        'accountId' => 'account_id'
     ];
 
     /**
@@ -115,10 +120,12 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'itemName' => 'setItemName',
-        'itemType' => 'setItemType',
-        'placeholder' => 'setPlaceholder',
-        'selectElements' => 'setSelectElements'
+        'fundTypeFrom' => 'setFundTypeFrom',
+        'fundTypeTo' => 'setFundTypeTo',
+        'amount' => 'setAmount',
+        'externalBillNo' => 'setExternalBillNo',
+        'memo' => 'setMemo',
+        'accountId' => 'setAccountId'
     ];
 
     /**
@@ -127,10 +134,12 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'itemName' => 'getItemName',
-        'itemType' => 'getItemType',
-        'placeholder' => 'getPlaceholder',
-        'selectElements' => 'getSelectElements'
+        'fundTypeFrom' => 'getFundTypeFrom',
+        'fundTypeTo' => 'getFundTypeTo',
+        'amount' => 'getAmount',
+        'externalBillNo' => 'getExternalBillNo',
+        'memo' => 'getMemo',
+        'accountId' => 'getAccountId'
     ];
 
     /**
@@ -193,10 +202,12 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['itemName'] = isset($data['itemName']) ? $data['itemName'] : null;
-        $this->container['itemType'] = isset($data['itemType']) ? $data['itemType'] : null;
-        $this->container['placeholder'] = isset($data['placeholder']) ? $data['placeholder'] : null;
-        $this->container['selectElements'] = isset($data['selectElements']) ? $data['selectElements'] : null;
+        $this->container['fundTypeFrom'] = isset($data['fundTypeFrom']) ? $data['fundTypeFrom'] : null;
+        $this->container['fundTypeTo'] = isset($data['fundTypeTo']) ? $data['fundTypeTo'] : null;
+        $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
+        $this->container['externalBillNo'] = isset($data['externalBillNo']) ? $data['externalBillNo'] : null;
+        $this->container['memo'] = isset($data['memo']) ? $data['memo'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
     /**
@@ -224,97 +235,145 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets itemName
+     * Gets fundTypeFrom
+     *
+     * @return \TencentAds\Model\AccountTypeMapInnerTransfer
+     */
+    public function getFundTypeFrom()
+    {
+        return $this->container['fundTypeFrom'];
+    }
+
+    /**
+     * Sets fundTypeFrom
+     *
+     * @param \TencentAds\Model\AccountTypeMapInnerTransfer $fundTypeFrom fundTypeFrom
+     *
+     * @return $this
+     */
+    public function setFundTypeFrom($fundTypeFrom)
+    {
+        $this->container['fundTypeFrom'] = $fundTypeFrom;
+
+        return $this;
+    }
+
+    /**
+     * Gets fundTypeTo
+     *
+     * @return \TencentAds\Model\AccountTypeMapInnerTransfer
+     */
+    public function getFundTypeTo()
+    {
+        return $this->container['fundTypeTo'];
+    }
+
+    /**
+     * Sets fundTypeTo
+     *
+     * @param \TencentAds\Model\AccountTypeMapInnerTransfer $fundTypeTo fundTypeTo
+     *
+     * @return $this
+     */
+    public function setFundTypeTo($fundTypeTo)
+    {
+        $this->container['fundTypeTo'] = $fundTypeTo;
+
+        return $this;
+    }
+
+    /**
+     * Gets amount
+     *
+     * @return int
+     */
+    public function getAmount()
+    {
+        return $this->container['amount'];
+    }
+
+    /**
+     * Sets amount
+     *
+     * @param int $amount amount
+     *
+     * @return $this
+     */
+    public function setAmount($amount)
+    {
+        $this->container['amount'] = $amount;
+
+        return $this;
+    }
+
+    /**
+     * Gets externalBillNo
      *
      * @return string
      */
-    public function getItemName()
+    public function getExternalBillNo()
     {
-        return $this->container['itemName'];
+        return $this->container['externalBillNo'];
     }
 
     /**
-     * Sets itemName
+     * Sets externalBillNo
      *
-     * @param string $itemName itemName
+     * @param string $externalBillNo externalBillNo
      *
      * @return $this
      */
-    public function setItemName($itemName)
+    public function setExternalBillNo($externalBillNo)
     {
-        $this->container['itemName'] = $itemName;
+        $this->container['externalBillNo'] = $externalBillNo;
 
         return $this;
     }
 
     /**
-     * Gets itemType
-     *
-     * @return \TencentAds\Model\ItemType
-     */
-    public function getItemType()
-    {
-        return $this->container['itemType'];
-    }
-
-    /**
-     * Sets itemType
-     *
-     * @param \TencentAds\Model\ItemType $itemType itemType
-     *
-     * @return $this
-     */
-    public function setItemType($itemType)
-    {
-        $this->container['itemType'] = $itemType;
-
-        return $this;
-    }
-
-    /**
-     * Gets placeholder
+     * Gets memo
      *
      * @return string
      */
-    public function getPlaceholder()
+    public function getMemo()
     {
-        return $this->container['placeholder'];
+        return $this->container['memo'];
     }
 
     /**
-     * Sets placeholder
+     * Sets memo
      *
-     * @param string $placeholder placeholder
+     * @param string $memo memo
      *
      * @return $this
      */
-    public function setPlaceholder($placeholder)
+    public function setMemo($memo)
     {
-        $this->container['placeholder'] = $placeholder;
+        $this->container['memo'] = $memo;
 
         return $this;
     }
 
     /**
-     * Gets selectElements
+     * Gets accountId
      *
-     * @return \TencentAds\Model\ConfigsDetailDataArrayItem[]
+     * @return int
      */
-    public function getSelectElements()
+    public function getAccountId()
     {
-        return $this->container['selectElements'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets selectElements
+     * Sets accountId
      *
-     * @param \TencentAds\Model\ConfigsDetailDataArrayItem[] $selectElements selectElements
+     * @param int $accountId accountId
      *
      * @return $this
      */
-    public function setSelectElements($selectElements)
+    public function setAccountId($accountId)
     {
-        $this->container['selectElements'] = $selectElements;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }

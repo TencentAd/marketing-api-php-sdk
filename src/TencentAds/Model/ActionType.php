@@ -98,6 +98,16 @@ class ActionType
     const PURCHASE_MEMBER_CARD = 'PURCHASE_MEMBER_CARD';
     const ONLINE_CONSULT = 'ONLINE_CONSULT';
     const MAKE_PHONE_CALL = 'MAKE_PHONE_CALL';
+    const FOLLOW = 'FOLLOW';
+    const ADD_DESKTOP = 'ADD_DESKTOP';
+    const _RETURN = 'RETURN';
+    const LEAVE_INFORMATION = 'LEAVE_INFORMATION';
+    const PURCHASE_COUPON = 'PURCHASE_COUPON';
+    const ADD_GROUP = 'ADD_GROUP';
+    const ADD_CUSTOMER_PAGE_VIEW = 'ADD_CUSTOMER_PAGE_VIEW';
+    const ADD_CUSTOMER_PAGE_INTERACTIVE = 'ADD_CUSTOMER_PAGE_INTERACTIVE';
+    const CUSTOMER_PROMOTION_PAGE_VIEW = 'CUSTOMER_PROMOTION_PAGE_VIEW';
+    const CUSTOMER_PROMOTION_PAGE_INTERACTIVE = 'CUSTOMER_PROMOTION_PAGE_INTERACTIVE';
     const AD_CLICK = 'AD_CLICK';
     const AD_IMPRESSION = 'AD_IMPRESSION';
     
@@ -162,6 +172,16 @@ class ActionType
             self::PURCHASE_MEMBER_CARD,
             self::ONLINE_CONSULT,
             self::MAKE_PHONE_CALL,
+            self::FOLLOW,
+            self::ADD_DESKTOP,
+            self::_RETURN,
+            self::LEAVE_INFORMATION,
+            self::PURCHASE_COUPON,
+            self::ADD_GROUP,
+            self::ADD_CUSTOMER_PAGE_VIEW,
+            self::ADD_CUSTOMER_PAGE_INTERACTIVE,
+            self::CUSTOMER_PROMOTION_PAGE_VIEW,
+            self::CUSTOMER_PROMOTION_PAGE_INTERACTIVE,
             self::AD_CLICK,
             self::AD_IMPRESSION,
         ];

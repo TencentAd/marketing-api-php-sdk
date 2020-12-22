@@ -1,6 +1,6 @@
 <?php
 /**
- * ControlListItemDetailData
+ * AgencyPeerTransferAddResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ControlListItemDetailData Class Doc Comment
+ * AgencyPeerTransferAddResponseData Class Doc Comment
  *
  * @category Class
- * @description 表单项
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ControlListItemDetailData implements ModelInterface, ArrayAccess
+class AgencyPeerTransferAddResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'control_list_item_detail_data';
+    protected static $swaggerModelName = 'AgencyPeerTransferAddResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +57,11 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'itemName' => 'string',
-        'itemType' => '\TencentAds\Model\ItemType',
-        'placeholder' => 'string',
-        'selectElements' => '\TencentAds\Model\ConfigsDetailDataArrayItem[]'
+        'amount' => 'int',
+        'externalBillNo' => 'string',
+        'isRepeated' => '\TencentAds\Model\Boolean',
+        'fundType' => '\TencentAds\Model\AccountTypeMap',
+        'time' => 'int'
     ];
 
     /**
@@ -70,10 +70,11 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'itemName' => null,
-        'itemType' => null,
-        'placeholder' => null,
-        'selectElements' => null
+        'amount' => 'int64',
+        'externalBillNo' => null,
+        'isRepeated' => null,
+        'fundType' => null,
+        'time' => 'int64'
     ];
 
     /**
@@ -103,10 +104,11 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'itemName' => 'item_name',
-        'itemType' => 'item_type',
-        'placeholder' => 'placeholder',
-        'selectElements' => 'select_elements'
+        'amount' => 'amount',
+        'externalBillNo' => 'external_bill_no',
+        'isRepeated' => 'is_repeated',
+        'fundType' => 'fund_type',
+        'time' => 'time'
     ];
 
     /**
@@ -115,10 +117,11 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'itemName' => 'setItemName',
-        'itemType' => 'setItemType',
-        'placeholder' => 'setPlaceholder',
-        'selectElements' => 'setSelectElements'
+        'amount' => 'setAmount',
+        'externalBillNo' => 'setExternalBillNo',
+        'isRepeated' => 'setIsRepeated',
+        'fundType' => 'setFundType',
+        'time' => 'setTime'
     ];
 
     /**
@@ -127,10 +130,11 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'itemName' => 'getItemName',
-        'itemType' => 'getItemType',
-        'placeholder' => 'getPlaceholder',
-        'selectElements' => 'getSelectElements'
+        'amount' => 'getAmount',
+        'externalBillNo' => 'getExternalBillNo',
+        'isRepeated' => 'getIsRepeated',
+        'fundType' => 'getFundType',
+        'time' => 'getTime'
     ];
 
     /**
@@ -193,10 +197,11 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['itemName'] = isset($data['itemName']) ? $data['itemName'] : null;
-        $this->container['itemType'] = isset($data['itemType']) ? $data['itemType'] : null;
-        $this->container['placeholder'] = isset($data['placeholder']) ? $data['placeholder'] : null;
-        $this->container['selectElements'] = isset($data['selectElements']) ? $data['selectElements'] : null;
+        $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
+        $this->container['externalBillNo'] = isset($data['externalBillNo']) ? $data['externalBillNo'] : null;
+        $this->container['isRepeated'] = isset($data['isRepeated']) ? $data['isRepeated'] : null;
+        $this->container['fundType'] = isset($data['fundType']) ? $data['fundType'] : null;
+        $this->container['time'] = isset($data['time']) ? $data['time'] : null;
     }
 
     /**
@@ -224,97 +229,121 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets itemName
+     * Gets amount
+     *
+     * @return int
+     */
+    public function getAmount()
+    {
+        return $this->container['amount'];
+    }
+
+    /**
+     * Sets amount
+     *
+     * @param int $amount amount
+     *
+     * @return $this
+     */
+    public function setAmount($amount)
+    {
+        $this->container['amount'] = $amount;
+
+        return $this;
+    }
+
+    /**
+     * Gets externalBillNo
      *
      * @return string
      */
-    public function getItemName()
+    public function getExternalBillNo()
     {
-        return $this->container['itemName'];
+        return $this->container['externalBillNo'];
     }
 
     /**
-     * Sets itemName
+     * Sets externalBillNo
      *
-     * @param string $itemName itemName
+     * @param string $externalBillNo externalBillNo
      *
      * @return $this
      */
-    public function setItemName($itemName)
+    public function setExternalBillNo($externalBillNo)
     {
-        $this->container['itemName'] = $itemName;
+        $this->container['externalBillNo'] = $externalBillNo;
 
         return $this;
     }
 
     /**
-     * Gets itemType
+     * Gets isRepeated
      *
-     * @return \TencentAds\Model\ItemType
+     * @return \TencentAds\Model\Boolean
      */
-    public function getItemType()
+    public function getIsRepeated()
     {
-        return $this->container['itemType'];
+        return $this->container['isRepeated'];
     }
 
     /**
-     * Sets itemType
+     * Sets isRepeated
      *
-     * @param \TencentAds\Model\ItemType $itemType itemType
+     * @param \TencentAds\Model\Boolean $isRepeated isRepeated
      *
      * @return $this
      */
-    public function setItemType($itemType)
+    public function setIsRepeated($isRepeated)
     {
-        $this->container['itemType'] = $itemType;
+        $this->container['isRepeated'] = $isRepeated;
 
         return $this;
     }
 
     /**
-     * Gets placeholder
+     * Gets fundType
      *
-     * @return string
+     * @return \TencentAds\Model\AccountTypeMap
      */
-    public function getPlaceholder()
+    public function getFundType()
     {
-        return $this->container['placeholder'];
+        return $this->container['fundType'];
     }
 
     /**
-     * Sets placeholder
+     * Sets fundType
      *
-     * @param string $placeholder placeholder
+     * @param \TencentAds\Model\AccountTypeMap $fundType fundType
      *
      * @return $this
      */
-    public function setPlaceholder($placeholder)
+    public function setFundType($fundType)
     {
-        $this->container['placeholder'] = $placeholder;
+        $this->container['fundType'] = $fundType;
 
         return $this;
     }
 
     /**
-     * Gets selectElements
+     * Gets time
      *
-     * @return \TencentAds\Model\ConfigsDetailDataArrayItem[]
+     * @return int
      */
-    public function getSelectElements()
+    public function getTime()
     {
-        return $this->container['selectElements'];
+        return $this->container['time'];
     }
 
     /**
-     * Sets selectElements
+     * Sets time
      *
-     * @param \TencentAds\Model\ConfigsDetailDataArrayItem[] $selectElements selectElements
+     * @param int $time time
      *
      * @return $this
      */
-    public function setSelectElements($selectElements)
+    public function setTime($time)
     {
-        $this->container['selectElements'] = $selectElements;
+        $this->container['time'] = $time;
 
         return $this;
     }

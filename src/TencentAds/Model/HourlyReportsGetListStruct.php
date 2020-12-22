@@ -310,6 +310,15 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'storeVisitor' => 'int',
         'tryOutUser' => 'int',
         'consultLeaveInfoUsers' => 'int',
+        'activePageViews' => 'int',
+        'activePageViewers' => 'int',
+        'activePageInteractionAmount' => 'int',
+        'activePageInteractionUsers' => 'int',
+        'joinChatGroupAmount' => 'int',
+        'guideToFollowPageViews' => 'int',
+        'guideToFollowPageViewers' => 'int',
+        'guideToFollowPageInteractionAmount' => 'int',
+        'guideToFollowPageInteractionUsers' => 'int',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
         'incomeRoi1' => 'double',
@@ -673,6 +682,15 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'storeVisitor' => 'int64',
         'tryOutUser' => 'int64',
         'consultLeaveInfoUsers' => 'int64',
+        'activePageViews' => 'int64',
+        'activePageViewers' => 'int64',
+        'activePageInteractionAmount' => 'int64',
+        'activePageInteractionUsers' => 'int64',
+        'joinChatGroupAmount' => 'int64',
+        'guideToFollowPageViews' => 'int64',
+        'guideToFollowPageViewers' => 'int64',
+        'guideToFollowPageInteractionAmount' => 'int64',
+        'guideToFollowPageInteractionUsers' => 'int64',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
         'incomeRoi1' => 'double',
@@ -1057,6 +1075,15 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'storeVisitor' => 'store_visitor',
         'tryOutUser' => 'try_out_user',
         'consultLeaveInfoUsers' => 'consult_leave_info_users',
+        'activePageViews' => 'active_page_views',
+        'activePageViewers' => 'active_page_viewers',
+        'activePageInteractionAmount' => 'active_page_interaction_amount',
+        'activePageInteractionUsers' => 'active_page_interaction_users',
+        'joinChatGroupAmount' => 'join_chat_group_amount',
+        'guideToFollowPageViews' => 'guide_to_follow_page_views',
+        'guideToFollowPageViewers' => 'guide_to_follow_page_viewers',
+        'guideToFollowPageInteractionAmount' => 'guide_to_follow_page_interaction_amount',
+        'guideToFollowPageInteractionUsers' => 'guide_to_follow_page_interaction_users',
         'requestConversionsCount' => 'request_conversions_count',
         'requestConversionsCost' => 'request_conversions_cost',
         'incomeRoi1' => 'income_roi_1',
@@ -1420,6 +1447,15 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'storeVisitor' => 'setStoreVisitor',
         'tryOutUser' => 'setTryOutUser',
         'consultLeaveInfoUsers' => 'setConsultLeaveInfoUsers',
+        'activePageViews' => 'setActivePageViews',
+        'activePageViewers' => 'setActivePageViewers',
+        'activePageInteractionAmount' => 'setActivePageInteractionAmount',
+        'activePageInteractionUsers' => 'setActivePageInteractionUsers',
+        'joinChatGroupAmount' => 'setJoinChatGroupAmount',
+        'guideToFollowPageViews' => 'setGuideToFollowPageViews',
+        'guideToFollowPageViewers' => 'setGuideToFollowPageViewers',
+        'guideToFollowPageInteractionAmount' => 'setGuideToFollowPageInteractionAmount',
+        'guideToFollowPageInteractionUsers' => 'setGuideToFollowPageInteractionUsers',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'requestConversionsCost' => 'setRequestConversionsCost',
         'incomeRoi1' => 'setIncomeRoi1',
@@ -1783,6 +1819,15 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'storeVisitor' => 'getStoreVisitor',
         'tryOutUser' => 'getTryOutUser',
         'consultLeaveInfoUsers' => 'getConsultLeaveInfoUsers',
+        'activePageViews' => 'getActivePageViews',
+        'activePageViewers' => 'getActivePageViewers',
+        'activePageInteractionAmount' => 'getActivePageInteractionAmount',
+        'activePageInteractionUsers' => 'getActivePageInteractionUsers',
+        'joinChatGroupAmount' => 'getJoinChatGroupAmount',
+        'guideToFollowPageViews' => 'getGuideToFollowPageViews',
+        'guideToFollowPageViewers' => 'getGuideToFollowPageViewers',
+        'guideToFollowPageInteractionAmount' => 'getGuideToFollowPageInteractionAmount',
+        'guideToFollowPageInteractionUsers' => 'getGuideToFollowPageInteractionUsers',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'requestConversionsCost' => 'getRequestConversionsCost',
         'incomeRoi1' => 'getIncomeRoi1',
@@ -2200,6 +2245,15 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['storeVisitor'] = isset($data['storeVisitor']) ? $data['storeVisitor'] : null;
         $this->container['tryOutUser'] = isset($data['tryOutUser']) ? $data['tryOutUser'] : null;
         $this->container['consultLeaveInfoUsers'] = isset($data['consultLeaveInfoUsers']) ? $data['consultLeaveInfoUsers'] : null;
+        $this->container['activePageViews'] = isset($data['activePageViews']) ? $data['activePageViews'] : null;
+        $this->container['activePageViewers'] = isset($data['activePageViewers']) ? $data['activePageViewers'] : null;
+        $this->container['activePageInteractionAmount'] = isset($data['activePageInteractionAmount']) ? $data['activePageInteractionAmount'] : null;
+        $this->container['activePageInteractionUsers'] = isset($data['activePageInteractionUsers']) ? $data['activePageInteractionUsers'] : null;
+        $this->container['joinChatGroupAmount'] = isset($data['joinChatGroupAmount']) ? $data['joinChatGroupAmount'] : null;
+        $this->container['guideToFollowPageViews'] = isset($data['guideToFollowPageViews']) ? $data['guideToFollowPageViews'] : null;
+        $this->container['guideToFollowPageViewers'] = isset($data['guideToFollowPageViewers']) ? $data['guideToFollowPageViewers'] : null;
+        $this->container['guideToFollowPageInteractionAmount'] = isset($data['guideToFollowPageInteractionAmount']) ? $data['guideToFollowPageInteractionAmount'] : null;
+        $this->container['guideToFollowPageInteractionUsers'] = isset($data['guideToFollowPageInteractionUsers']) ? $data['guideToFollowPageInteractionUsers'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
         $this->container['incomeRoi1'] = isset($data['incomeRoi1']) ? $data['incomeRoi1'] : null;
@@ -8373,6 +8427,222 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setConsultLeaveInfoUsers($consultLeaveInfoUsers)
     {
         $this->container['consultLeaveInfoUsers'] = $consultLeaveInfoUsers;
+
+        return $this;
+    }
+
+    /**
+     * Gets activePageViews
+     *
+     * @return int
+     */
+    public function getActivePageViews()
+    {
+        return $this->container['activePageViews'];
+    }
+
+    /**
+     * Sets activePageViews
+     *
+     * @param int $activePageViews activePageViews
+     *
+     * @return $this
+     */
+    public function setActivePageViews($activePageViews)
+    {
+        $this->container['activePageViews'] = $activePageViews;
+
+        return $this;
+    }
+
+    /**
+     * Gets activePageViewers
+     *
+     * @return int
+     */
+    public function getActivePageViewers()
+    {
+        return $this->container['activePageViewers'];
+    }
+
+    /**
+     * Sets activePageViewers
+     *
+     * @param int $activePageViewers activePageViewers
+     *
+     * @return $this
+     */
+    public function setActivePageViewers($activePageViewers)
+    {
+        $this->container['activePageViewers'] = $activePageViewers;
+
+        return $this;
+    }
+
+    /**
+     * Gets activePageInteractionAmount
+     *
+     * @return int
+     */
+    public function getActivePageInteractionAmount()
+    {
+        return $this->container['activePageInteractionAmount'];
+    }
+
+    /**
+     * Sets activePageInteractionAmount
+     *
+     * @param int $activePageInteractionAmount activePageInteractionAmount
+     *
+     * @return $this
+     */
+    public function setActivePageInteractionAmount($activePageInteractionAmount)
+    {
+        $this->container['activePageInteractionAmount'] = $activePageInteractionAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets activePageInteractionUsers
+     *
+     * @return int
+     */
+    public function getActivePageInteractionUsers()
+    {
+        return $this->container['activePageInteractionUsers'];
+    }
+
+    /**
+     * Sets activePageInteractionUsers
+     *
+     * @param int $activePageInteractionUsers activePageInteractionUsers
+     *
+     * @return $this
+     */
+    public function setActivePageInteractionUsers($activePageInteractionUsers)
+    {
+        $this->container['activePageInteractionUsers'] = $activePageInteractionUsers;
+
+        return $this;
+    }
+
+    /**
+     * Gets joinChatGroupAmount
+     *
+     * @return int
+     */
+    public function getJoinChatGroupAmount()
+    {
+        return $this->container['joinChatGroupAmount'];
+    }
+
+    /**
+     * Sets joinChatGroupAmount
+     *
+     * @param int $joinChatGroupAmount joinChatGroupAmount
+     *
+     * @return $this
+     */
+    public function setJoinChatGroupAmount($joinChatGroupAmount)
+    {
+        $this->container['joinChatGroupAmount'] = $joinChatGroupAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets guideToFollowPageViews
+     *
+     * @return int
+     */
+    public function getGuideToFollowPageViews()
+    {
+        return $this->container['guideToFollowPageViews'];
+    }
+
+    /**
+     * Sets guideToFollowPageViews
+     *
+     * @param int $guideToFollowPageViews guideToFollowPageViews
+     *
+     * @return $this
+     */
+    public function setGuideToFollowPageViews($guideToFollowPageViews)
+    {
+        $this->container['guideToFollowPageViews'] = $guideToFollowPageViews;
+
+        return $this;
+    }
+
+    /**
+     * Gets guideToFollowPageViewers
+     *
+     * @return int
+     */
+    public function getGuideToFollowPageViewers()
+    {
+        return $this->container['guideToFollowPageViewers'];
+    }
+
+    /**
+     * Sets guideToFollowPageViewers
+     *
+     * @param int $guideToFollowPageViewers guideToFollowPageViewers
+     *
+     * @return $this
+     */
+    public function setGuideToFollowPageViewers($guideToFollowPageViewers)
+    {
+        $this->container['guideToFollowPageViewers'] = $guideToFollowPageViewers;
+
+        return $this;
+    }
+
+    /**
+     * Gets guideToFollowPageInteractionAmount
+     *
+     * @return int
+     */
+    public function getGuideToFollowPageInteractionAmount()
+    {
+        return $this->container['guideToFollowPageInteractionAmount'];
+    }
+
+    /**
+     * Sets guideToFollowPageInteractionAmount
+     *
+     * @param int $guideToFollowPageInteractionAmount guideToFollowPageInteractionAmount
+     *
+     * @return $this
+     */
+    public function setGuideToFollowPageInteractionAmount($guideToFollowPageInteractionAmount)
+    {
+        $this->container['guideToFollowPageInteractionAmount'] = $guideToFollowPageInteractionAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets guideToFollowPageInteractionUsers
+     *
+     * @return int
+     */
+    public function getGuideToFollowPageInteractionUsers()
+    {
+        return $this->container['guideToFollowPageInteractionUsers'];
+    }
+
+    /**
+     * Sets guideToFollowPageInteractionUsers
+     *
+     * @param int $guideToFollowPageInteractionUsers guideToFollowPageInteractionUsers
+     *
+     * @return $this
+     */
+    public function setGuideToFollowPageInteractionUsers($guideToFollowPageInteractionUsers)
+    {
+        $this->container['guideToFollowPageInteractionUsers'] = $guideToFollowPageInteractionUsers;
 
         return $this;
     }

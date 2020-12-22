@@ -1,6 +1,6 @@
 <?php
 /**
- * ControlListItemDetailData
+ * AgencyRealtimeCostGetListStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ControlListItemDetailData Class Doc Comment
+ * AgencyRealtimeCostGetListStruct Class Doc Comment
  *
  * @category Class
- * @description 表单项
+ * @description 返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ControlListItemDetailData implements ModelInterface, ArrayAccess
+class AgencyRealtimeCostGetListStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'control_list_item_detail_data';
+    protected static $swaggerModelName = 'AgencyRealtimeCostGetListStruct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +58,9 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'itemName' => 'string',
-        'itemType' => '\TencentAds\Model\ItemType',
-        'placeholder' => 'string',
-        'selectElements' => '\TencentAds\Model\ConfigsDetailDataArrayItem[]'
+        'cost' => 'int',
+        'caculateTime' => 'int',
+        'fundType' => '\TencentAds\Model\AccountTypeMap'
     ];
 
     /**
@@ -70,10 +69,9 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'itemName' => null,
-        'itemType' => null,
-        'placeholder' => null,
-        'selectElements' => null
+        'cost' => 'int64',
+        'caculateTime' => 'int64',
+        'fundType' => null
     ];
 
     /**
@@ -103,10 +101,9 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'itemName' => 'item_name',
-        'itemType' => 'item_type',
-        'placeholder' => 'placeholder',
-        'selectElements' => 'select_elements'
+        'cost' => 'cost',
+        'caculateTime' => 'caculate_time',
+        'fundType' => 'fund_type'
     ];
 
     /**
@@ -115,10 +112,9 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'itemName' => 'setItemName',
-        'itemType' => 'setItemType',
-        'placeholder' => 'setPlaceholder',
-        'selectElements' => 'setSelectElements'
+        'cost' => 'setCost',
+        'caculateTime' => 'setCaculateTime',
+        'fundType' => 'setFundType'
     ];
 
     /**
@@ -127,10 +123,9 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'itemName' => 'getItemName',
-        'itemType' => 'getItemType',
-        'placeholder' => 'getPlaceholder',
-        'selectElements' => 'getSelectElements'
+        'cost' => 'getCost',
+        'caculateTime' => 'getCaculateTime',
+        'fundType' => 'getFundType'
     ];
 
     /**
@@ -193,10 +188,9 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['itemName'] = isset($data['itemName']) ? $data['itemName'] : null;
-        $this->container['itemType'] = isset($data['itemType']) ? $data['itemType'] : null;
-        $this->container['placeholder'] = isset($data['placeholder']) ? $data['placeholder'] : null;
-        $this->container['selectElements'] = isset($data['selectElements']) ? $data['selectElements'] : null;
+        $this->container['cost'] = isset($data['cost']) ? $data['cost'] : null;
+        $this->container['caculateTime'] = isset($data['caculateTime']) ? $data['caculateTime'] : null;
+        $this->container['fundType'] = isset($data['fundType']) ? $data['fundType'] : null;
     }
 
     /**
@@ -224,97 +218,73 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets itemName
+     * Gets cost
      *
-     * @return string
+     * @return int
      */
-    public function getItemName()
+    public function getCost()
     {
-        return $this->container['itemName'];
+        return $this->container['cost'];
     }
 
     /**
-     * Sets itemName
+     * Sets cost
      *
-     * @param string $itemName itemName
+     * @param int $cost cost
      *
      * @return $this
      */
-    public function setItemName($itemName)
+    public function setCost($cost)
     {
-        $this->container['itemName'] = $itemName;
+        $this->container['cost'] = $cost;
 
         return $this;
     }
 
     /**
-     * Gets itemType
+     * Gets caculateTime
      *
-     * @return \TencentAds\Model\ItemType
+     * @return int
      */
-    public function getItemType()
+    public function getCaculateTime()
     {
-        return $this->container['itemType'];
+        return $this->container['caculateTime'];
     }
 
     /**
-     * Sets itemType
+     * Sets caculateTime
      *
-     * @param \TencentAds\Model\ItemType $itemType itemType
+     * @param int $caculateTime caculateTime
      *
      * @return $this
      */
-    public function setItemType($itemType)
+    public function setCaculateTime($caculateTime)
     {
-        $this->container['itemType'] = $itemType;
+        $this->container['caculateTime'] = $caculateTime;
 
         return $this;
     }
 
     /**
-     * Gets placeholder
+     * Gets fundType
      *
-     * @return string
+     * @return \TencentAds\Model\AccountTypeMap
      */
-    public function getPlaceholder()
+    public function getFundType()
     {
-        return $this->container['placeholder'];
+        return $this->container['fundType'];
     }
 
     /**
-     * Sets placeholder
+     * Sets fundType
      *
-     * @param string $placeholder placeholder
+     * @param \TencentAds\Model\AccountTypeMap $fundType fundType
      *
      * @return $this
      */
-    public function setPlaceholder($placeholder)
+    public function setFundType($fundType)
     {
-        $this->container['placeholder'] = $placeholder;
-
-        return $this;
-    }
-
-    /**
-     * Gets selectElements
-     *
-     * @return \TencentAds\Model\ConfigsDetailDataArrayItem[]
-     */
-    public function getSelectElements()
-    {
-        return $this->container['selectElements'];
-    }
-
-    /**
-     * Sets selectElements
-     *
-     * @param \TencentAds\Model\ConfigsDetailDataArrayItem[] $selectElements selectElements
-     *
-     * @return $this
-     */
-    public function setSelectElements($selectElements)
-    {
-        $this->container['selectElements'] = $selectElements;
+        $this->container['fundType'] = $fundType;
 
         return $this;
     }

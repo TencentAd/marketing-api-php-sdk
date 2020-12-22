@@ -1,6 +1,6 @@
 <?php
 /**
- * AssetType
+ * CreativeDisplayType
  *
  * PHP version 5
  *
@@ -31,29 +31,22 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AssetType Class Doc Comment
+ * CreativeDisplayType Class Doc Comment
  *
  * @category Class
- * @description 资产类型
+ * @description 创意展示类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AssetType
+class CreativeDisplayType
 {
     /**
      * Possible values of this enum
      */
-    const XIJING = 'ASSET_TYPE_XIJING';
-    const CANVAS_WECHAT = 'ASSET_TYPE_CANVAS_WECHAT';
-    const CANVAS_IMAGE = 'ASSET_TYPE_CANVAS_IMAGE';
-    const CANVAS_VIDEO = 'ASSET_TYPE_CANVAS_VIDEO';
-    const FENGYE = 'ASSET_TYPE_FENGYE';
-    const DYNAMIC_AD_TEMPLATE = 'ASSET_TYPE_DYNAMIC_AD_TEMPLATE';
-    const AD_QUALIFICATION = 'ASSET_TYPE_AD_QUALIFICATION';
-    const CATALOG = 'ASSET_TYPE_CATALOG';
-    const ACTION_SET = 'ASSET_TYPE_ACTION_SET';
-    const CONVERSION_SPEC = 'ASSET_TYPE_CONVERSION_SPEC';
+    const NONE = 'CREATIVE_DISPLAY_TYPE_NONE';
+    const INTELLIGENCE = 'CREATIVE_DISPLAY_TYPE_INTELLIGENCE';
+    const AVERAGE = 'CREATIVE_DISPLAY_TYPE_AVERAGE';
     
     /**
      * Gets allowable values of the enum
@@ -62,16 +55,9 @@ class AssetType
     public static function getAllowableEnumValues()
     {
         return [
-            self::XIJING,
-            self::CANVAS_WECHAT,
-            self::CANVAS_IMAGE,
-            self::CANVAS_VIDEO,
-            self::FENGYE,
-            self::DYNAMIC_AD_TEMPLATE,
-            self::AD_QUALIFICATION,
-            self::CATALOG,
-            self::ACTION_SET,
-            self::CONVERSION_SPEC,
+            self::NONE,
+            self::INTELLIGENCE,
+            self::AVERAGE,
         ];
     }
 }

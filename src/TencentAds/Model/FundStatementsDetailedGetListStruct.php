@@ -58,11 +58,14 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'accountId' => 'int',
+        'balance' => 'int',
         'time' => 'int',
         'externalBillNo' => 'string',
-        'tradeType' => '\TencentAds\Model\TradeType',
+        'tradeTypeExt' => '\TencentAds\Model\TradeTypeExt',
         'amount' => 'int',
-        'description' => 'string'
+        'description' => 'string',
+        'fundType' => '\TencentAds\Model\AccountTypeMap'
     ];
 
     /**
@@ -71,11 +74,14 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
+        'accountId' => 'int64',
+        'balance' => 'int64',
         'time' => 'int64',
         'externalBillNo' => null,
-        'tradeType' => null,
+        'tradeTypeExt' => null,
         'amount' => 'int64',
-        'description' => null
+        'description' => null,
+        'fundType' => null
     ];
 
     /**
@@ -105,11 +111,14 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'accountId' => 'account_id',
+        'balance' => 'balance',
         'time' => 'time',
         'externalBillNo' => 'external_bill_no',
-        'tradeType' => 'trade_type',
+        'tradeTypeExt' => 'trade_type_ext',
         'amount' => 'amount',
-        'description' => 'description'
+        'description' => 'description',
+        'fundType' => 'fund_type'
     ];
 
     /**
@@ -118,11 +127,14 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'accountId' => 'setAccountId',
+        'balance' => 'setBalance',
         'time' => 'setTime',
         'externalBillNo' => 'setExternalBillNo',
-        'tradeType' => 'setTradeType',
+        'tradeTypeExt' => 'setTradeTypeExt',
         'amount' => 'setAmount',
-        'description' => 'setDescription'
+        'description' => 'setDescription',
+        'fundType' => 'setFundType'
     ];
 
     /**
@@ -131,11 +143,14 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'accountId' => 'getAccountId',
+        'balance' => 'getBalance',
         'time' => 'getTime',
         'externalBillNo' => 'getExternalBillNo',
-        'tradeType' => 'getTradeType',
+        'tradeTypeExt' => 'getTradeTypeExt',
         'amount' => 'getAmount',
-        'description' => 'getDescription'
+        'description' => 'getDescription',
+        'fundType' => 'getFundType'
     ];
 
     /**
@@ -198,11 +213,14 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['balance'] = isset($data['balance']) ? $data['balance'] : null;
         $this->container['time'] = isset($data['time']) ? $data['time'] : null;
         $this->container['externalBillNo'] = isset($data['externalBillNo']) ? $data['externalBillNo'] : null;
-        $this->container['tradeType'] = isset($data['tradeType']) ? $data['tradeType'] : null;
+        $this->container['tradeTypeExt'] = isset($data['tradeTypeExt']) ? $data['tradeTypeExt'] : null;
         $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
+        $this->container['fundType'] = isset($data['fundType']) ? $data['fundType'] : null;
     }
 
     /**
@@ -228,6 +246,54 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets accountId
+     *
+     * @return int
+     */
+    public function getAccountId()
+    {
+        return $this->container['accountId'];
+    }
+
+    /**
+     * Sets accountId
+     *
+     * @param int $accountId accountId
+     *
+     * @return $this
+     */
+    public function setAccountId($accountId)
+    {
+        $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets balance
+     *
+     * @return int
+     */
+    public function getBalance()
+    {
+        return $this->container['balance'];
+    }
+
+    /**
+     * Sets balance
+     *
+     * @param int $balance balance
+     *
+     * @return $this
+     */
+    public function setBalance($balance)
+    {
+        $this->container['balance'] = $balance;
+
+        return $this;
+    }
 
     /**
      * Gets time
@@ -278,25 +344,25 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets tradeType
+     * Gets tradeTypeExt
      *
-     * @return \TencentAds\Model\TradeType
+     * @return \TencentAds\Model\TradeTypeExt
      */
-    public function getTradeType()
+    public function getTradeTypeExt()
     {
-        return $this->container['tradeType'];
+        return $this->container['tradeTypeExt'];
     }
 
     /**
-     * Sets tradeType
+     * Sets tradeTypeExt
      *
-     * @param \TencentAds\Model\TradeType $tradeType tradeType
+     * @param \TencentAds\Model\TradeTypeExt $tradeTypeExt tradeTypeExt
      *
      * @return $this
      */
-    public function setTradeType($tradeType)
+    public function setTradeTypeExt($tradeTypeExt)
     {
-        $this->container['tradeType'] = $tradeType;
+        $this->container['tradeTypeExt'] = $tradeTypeExt;
 
         return $this;
     }
@@ -345,6 +411,30 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
     public function setDescription($description)
     {
         $this->container['description'] = $description;
+
+        return $this;
+    }
+
+    /**
+     * Gets fundType
+     *
+     * @return \TencentAds\Model\AccountTypeMap
+     */
+    public function getFundType()
+    {
+        return $this->container['fundType'];
+    }
+
+    /**
+     * Sets fundType
+     *
+     * @param \TencentAds\Model\AccountTypeMap $fundType fundType
+     *
+     * @return $this
+     */
+    public function setFundType($fundType)
+    {
+        $this->container['fundType'] = $fundType;
 
         return $this;
     }

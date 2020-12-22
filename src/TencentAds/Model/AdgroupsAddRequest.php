@@ -97,6 +97,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'bidAdjustment' => '\TencentAds\Model\BidAdjustment',
         'autoAcquisitionEnabled' => 'bool',
         'autoAcquisitionBudget' => 'int',
+        'creativeDisplayType' => '\TencentAds\Model\CreativeDisplayType',
         'autoDerivedCreativeEnabled' => 'bool',
         'accountId' => 'int'
     ];
@@ -147,6 +148,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'bidAdjustment' => null,
         'autoAcquisitionEnabled' => null,
         'autoAcquisitionBudget' => 'int64',
+        'creativeDisplayType' => null,
         'autoDerivedCreativeEnabled' => null,
         'accountId' => 'int64'
     ];
@@ -218,6 +220,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'bidAdjustment' => 'bid_adjustment',
         'autoAcquisitionEnabled' => 'auto_acquisition_enabled',
         'autoAcquisitionBudget' => 'auto_acquisition_budget',
+        'creativeDisplayType' => 'creative_display_type',
         'autoDerivedCreativeEnabled' => 'auto_derived_creative_enabled',
         'accountId' => 'account_id'
     ];
@@ -268,6 +271,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'bidAdjustment' => 'setBidAdjustment',
         'autoAcquisitionEnabled' => 'setAutoAcquisitionEnabled',
         'autoAcquisitionBudget' => 'setAutoAcquisitionBudget',
+        'creativeDisplayType' => 'setCreativeDisplayType',
         'autoDerivedCreativeEnabled' => 'setAutoDerivedCreativeEnabled',
         'accountId' => 'setAccountId'
     ];
@@ -318,6 +322,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'bidAdjustment' => 'getBidAdjustment',
         'autoAcquisitionEnabled' => 'getAutoAcquisitionEnabled',
         'autoAcquisitionBudget' => 'getAutoAcquisitionBudget',
+        'creativeDisplayType' => 'getCreativeDisplayType',
         'autoDerivedCreativeEnabled' => 'getAutoDerivedCreativeEnabled',
         'accountId' => 'getAccountId'
     ];
@@ -422,6 +427,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['bidAdjustment'] = isset($data['bidAdjustment']) ? $data['bidAdjustment'] : null;
         $this->container['autoAcquisitionEnabled'] = isset($data['autoAcquisitionEnabled']) ? $data['autoAcquisitionEnabled'] : null;
         $this->container['autoAcquisitionBudget'] = isset($data['autoAcquisitionBudget']) ? $data['autoAcquisitionBudget'] : null;
+        $this->container['creativeDisplayType'] = isset($data['creativeDisplayType']) ? $data['creativeDisplayType'] : null;
         $this->container['autoDerivedCreativeEnabled'] = isset($data['autoDerivedCreativeEnabled']) ? $data['autoDerivedCreativeEnabled'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
@@ -1406,6 +1412,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setAutoAcquisitionBudget($autoAcquisitionBudget)
     {
         $this->container['autoAcquisitionBudget'] = $autoAcquisitionBudget;
+
+        return $this;
+    }
+
+    /**
+     * Gets creativeDisplayType
+     *
+     * @return \TencentAds\Model\CreativeDisplayType
+     */
+    public function getCreativeDisplayType()
+    {
+        return $this->container['creativeDisplayType'];
+    }
+
+    /**
+     * Sets creativeDisplayType
+     *
+     * @param \TencentAds\Model\CreativeDisplayType $creativeDisplayType creativeDisplayType
+     *
+     * @return $this
+     */
+    public function setCreativeDisplayType($creativeDisplayType)
+    {
+        $this->container['creativeDisplayType'] = $creativeDisplayType;
 
         return $this;
     }

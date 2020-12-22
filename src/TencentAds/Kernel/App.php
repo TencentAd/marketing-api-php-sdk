@@ -13,6 +13,9 @@ use TencentAds\Container\AdcreativesRelatedCapabilityApiContainer;
 use TencentAds\Container\AdgroupsApiContainer;
 use TencentAds\Container\AdsApiContainer;
 use TencentAds\Container\AdvertiserApiContainer;
+use TencentAds\Container\AgencyInnerTransferApiContainer;
+use TencentAds\Container\AgencyPeerTransferApiContainer;
+use TencentAds\Container\AgencyRealtimeCostApiContainer;
 use TencentAds\Container\AndroidChannelPackagesApiContainer;
 use TencentAds\Container\AndroidUnionChannelPackagesApiContainer;
 use TencentAds\Container\AssetPermissionsApiContainer;
@@ -160,6 +163,15 @@ class App
 
     /** @var AdvertiserApiContainer */
     public $advertiserApiContainer;
+
+    /** @var AgencyInnerTransferApiContainer */
+    public $agencyInnerTransferApiContainer;
+
+    /** @var AgencyPeerTransferApiContainer */
+    public $agencyPeerTransferApiContainer;
+
+    /** @var AgencyRealtimeCostApiContainer */
+    public $agencyRealtimeCostApiContainer;
 
     /** @var AndroidChannelPackagesApiContainer */
     public $androidChannelPackagesApiContainer;
@@ -652,6 +664,48 @@ class App
             $this->advertiserApiContainer = $container;
         }
         return $this->advertiserApiContainer;
+    }
+
+
+    /**
+     * @return AgencyInnerTransferApiContainer
+     */
+    public function agencyInnerTransfer()
+    {
+        if (empty($this->agencyInnerTransferApiContainer)) {
+            $container = new AgencyInnerTransferApiContainer();
+            $container->init($this, $this->getClient());
+            $this->agencyInnerTransferApiContainer = $container;
+        }
+        return $this->agencyInnerTransferApiContainer;
+    }
+
+
+    /**
+     * @return AgencyPeerTransferApiContainer
+     */
+    public function agencyPeerTransfer()
+    {
+        if (empty($this->agencyPeerTransferApiContainer)) {
+            $container = new AgencyPeerTransferApiContainer();
+            $container->init($this, $this->getClient());
+            $this->agencyPeerTransferApiContainer = $container;
+        }
+        return $this->agencyPeerTransferApiContainer;
+    }
+
+
+    /**
+     * @return AgencyRealtimeCostApiContainer
+     */
+    public function agencyRealtimeCost()
+    {
+        if (empty($this->agencyRealtimeCostApiContainer)) {
+            $container = new AgencyRealtimeCostApiContainer();
+            $container->init($this, $this->getClient());
+            $this->agencyRealtimeCostApiContainer = $container;
+        }
+        return $this->agencyRealtimeCostApiContainer;
     }
 
 

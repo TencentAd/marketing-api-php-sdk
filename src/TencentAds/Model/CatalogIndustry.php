@@ -48,6 +48,12 @@ class CatalogIndustry
     const READING = 'INDUSTRY_TYPE_READING';
     const EDUCATION = 'INDUSTRY_TYPE_EDUCATION';
     const WEDDING = 'INDUSTRY_TYPE_WEDDING';
+    const VIDEO = 'INDUSTRY_TYPE_VIDEO';
+    const INSURANCE = 'INDUSTRY_TYPE_INSURANCE';
+    const LOAN = 'INDUSTRY_TYPE_LOAN';
+    const FINANCIAL = 'INDUSTRY_TYPE_FINANCIAL';
+    const BANKCARD = 'INDUSTRY_TYPE_BANKCARD';
+    const SECURITIES = 'INDUSTRY_TYPE_SECURITIES';
     
     /**
      * Gets allowable values of the enum
@@ -60,6 +66,12 @@ class CatalogIndustry
             self::READING,
             self::EDUCATION,
             self::WEDDING,
+            self::VIDEO,
+            self::INSURANCE,
+            self::LOAN,
+            self::FINANCIAL,
+            self::BANKCARD,
+            self::SECURITIES,
         ];
     }
 }
