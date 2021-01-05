@@ -78,7 +78,6 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'profileId' => 'int',
         'shareContentSpec' => '\TencentAds\Model\ShareContentSpec',
         'dynamicAdcreativeSpec' => '\TencentAds\Model\DynamicAdcreativeSpec',
-        'multiShareOptimizationEnabled' => 'bool',
         'componentId' => 'int',
         'category' => 'int[]',
         'label' => 'string[]',
@@ -123,7 +122,6 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'profileId' => 'int64',
         'shareContentSpec' => null,
         'dynamicAdcreativeSpec' => null,
-        'multiShareOptimizationEnabled' => null,
         'componentId' => 'int64',
         'category' => 'int64',
         'label' => null,
@@ -189,7 +187,6 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'profileId' => 'profile_id',
         'shareContentSpec' => 'share_content_spec',
         'dynamicAdcreativeSpec' => 'dynamic_adcreative_spec',
-        'multiShareOptimizationEnabled' => 'multi_share_optimization_enabled',
         'componentId' => 'component_id',
         'category' => 'category',
         'label' => 'label',
@@ -234,7 +231,6 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'profileId' => 'setProfileId',
         'shareContentSpec' => 'setShareContentSpec',
         'dynamicAdcreativeSpec' => 'setDynamicAdcreativeSpec',
-        'multiShareOptimizationEnabled' => 'setMultiShareOptimizationEnabled',
         'componentId' => 'setComponentId',
         'category' => 'setCategory',
         'label' => 'setLabel',
@@ -279,7 +275,6 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'profileId' => 'getProfileId',
         'shareContentSpec' => 'getShareContentSpec',
         'dynamicAdcreativeSpec' => 'getDynamicAdcreativeSpec',
-        'multiShareOptimizationEnabled' => 'getMultiShareOptimizationEnabled',
         'componentId' => 'getComponentId',
         'category' => 'getCategory',
         'label' => 'getLabel',
@@ -378,7 +373,6 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         $this->container['profileId'] = isset($data['profileId']) ? $data['profileId'] : null;
         $this->container['shareContentSpec'] = isset($data['shareContentSpec']) ? $data['shareContentSpec'] : null;
         $this->container['dynamicAdcreativeSpec'] = isset($data['dynamicAdcreativeSpec']) ? $data['dynamicAdcreativeSpec'] : null;
-        $this->container['multiShareOptimizationEnabled'] = isset($data['multiShareOptimizationEnabled']) ? $data['multiShareOptimizationEnabled'] : null;
         $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
         $this->container['category'] = isset($data['category']) ? $data['category'] : null;
         $this->container['label'] = isset($data['label']) ? $data['label'] : null;
@@ -920,30 +914,6 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     public function setDynamicAdcreativeSpec($dynamicAdcreativeSpec)
     {
         $this->container['dynamicAdcreativeSpec'] = $dynamicAdcreativeSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets multiShareOptimizationEnabled
-     *
-     * @return bool
-     */
-    public function getMultiShareOptimizationEnabled()
-    {
-        return $this->container['multiShareOptimizationEnabled'];
-    }
-
-    /**
-     * Sets multiShareOptimizationEnabled
-     *
-     * @param bool $multiShareOptimizationEnabled multiShareOptimizationEnabled
-     *
-     * @return $this
-     */
-    public function setMultiShareOptimizationEnabled($multiShareOptimizationEnabled)
-    {
-        $this->container['multiShareOptimizationEnabled'] = $multiShareOptimizationEnabled;
 
         return $this;
     }

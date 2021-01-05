@@ -75,7 +75,6 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'linkNameType' => '\TencentAds\Model\LinkNameType',
         'imageList' => 'string[]',
         'elementStory' => '\TencentAds\Model\AdcreativeElementStoryArrayItem[]',
-        'multiShareOptimizationEnabled' => 'bool',
         'url' => 'string',
         'buttonText' => 'string',
         'bottomText' => 'string',
@@ -122,6 +121,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'longVideoStruct' => '\TencentAds\Model\LongVideoStruct',
         'bannerContent' => '\TencentAds\Model\AdcreativeBannerContent',
         'cardContent' => '\TencentAds\Model\AdcreativeCardContent',
+        'shopImage' => 'string',
         'countdownExpiringTimestamp' => 'int'
     ];
 
@@ -148,7 +148,6 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'linkNameType' => null,
         'imageList' => null,
         'elementStory' => null,
-        'multiShareOptimizationEnabled' => null,
         'url' => null,
         'buttonText' => null,
         'bottomText' => null,
@@ -195,6 +194,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'longVideoStruct' => null,
         'bannerContent' => null,
         'cardContent' => null,
+        'shopImage' => null,
         'countdownExpiringTimestamp' => 'int64'
     ];
 
@@ -242,7 +242,6 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'linkNameType' => 'link_name_type',
         'imageList' => 'image_list',
         'elementStory' => 'element_story',
-        'multiShareOptimizationEnabled' => 'multi_share_optimization_enabled',
         'url' => 'url',
         'buttonText' => 'button_text',
         'bottomText' => 'bottom_text',
@@ -289,6 +288,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'longVideoStruct' => 'long_video_struct',
         'bannerContent' => 'banner_content',
         'cardContent' => 'card_content',
+        'shopImage' => 'shop_image',
         'countdownExpiringTimestamp' => 'countdown_expiring_timestamp'
     ];
 
@@ -315,7 +315,6 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'linkNameType' => 'setLinkNameType',
         'imageList' => 'setImageList',
         'elementStory' => 'setElementStory',
-        'multiShareOptimizationEnabled' => 'setMultiShareOptimizationEnabled',
         'url' => 'setUrl',
         'buttonText' => 'setButtonText',
         'bottomText' => 'setBottomText',
@@ -362,6 +361,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'longVideoStruct' => 'setLongVideoStruct',
         'bannerContent' => 'setBannerContent',
         'cardContent' => 'setCardContent',
+        'shopImage' => 'setShopImage',
         'countdownExpiringTimestamp' => 'setCountdownExpiringTimestamp'
     ];
 
@@ -388,7 +388,6 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'linkNameType' => 'getLinkNameType',
         'imageList' => 'getImageList',
         'elementStory' => 'getElementStory',
-        'multiShareOptimizationEnabled' => 'getMultiShareOptimizationEnabled',
         'url' => 'getUrl',
         'buttonText' => 'getButtonText',
         'bottomText' => 'getBottomText',
@@ -435,6 +434,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'longVideoStruct' => 'getLongVideoStruct',
         'bannerContent' => 'getBannerContent',
         'cardContent' => 'getCardContent',
+        'shopImage' => 'getShopImage',
         'countdownExpiringTimestamp' => 'getCountdownExpiringTimestamp'
     ];
 
@@ -515,7 +515,6 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         $this->container['linkNameType'] = isset($data['linkNameType']) ? $data['linkNameType'] : null;
         $this->container['imageList'] = isset($data['imageList']) ? $data['imageList'] : null;
         $this->container['elementStory'] = isset($data['elementStory']) ? $data['elementStory'] : null;
-        $this->container['multiShareOptimizationEnabled'] = isset($data['multiShareOptimizationEnabled']) ? $data['multiShareOptimizationEnabled'] : null;
         $this->container['url'] = isset($data['url']) ? $data['url'] : null;
         $this->container['buttonText'] = isset($data['buttonText']) ? $data['buttonText'] : null;
         $this->container['bottomText'] = isset($data['bottomText']) ? $data['bottomText'] : null;
@@ -562,6 +561,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         $this->container['longVideoStruct'] = isset($data['longVideoStruct']) ? $data['longVideoStruct'] : null;
         $this->container['bannerContent'] = isset($data['bannerContent']) ? $data['bannerContent'] : null;
         $this->container['cardContent'] = isset($data['cardContent']) ? $data['cardContent'] : null;
+        $this->container['shopImage'] = isset($data['shopImage']) ? $data['shopImage'] : null;
         $this->container['countdownExpiringTimestamp'] = isset($data['countdownExpiringTimestamp']) ? $data['countdownExpiringTimestamp'] : null;
     }
 
@@ -993,30 +993,6 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
     public function setElementStory($elementStory)
     {
         $this->container['elementStory'] = $elementStory;
-
-        return $this;
-    }
-
-    /**
-     * Gets multiShareOptimizationEnabled
-     *
-     * @return bool
-     */
-    public function getMultiShareOptimizationEnabled()
-    {
-        return $this->container['multiShareOptimizationEnabled'];
-    }
-
-    /**
-     * Sets multiShareOptimizationEnabled
-     *
-     * @param bool $multiShareOptimizationEnabled multiShareOptimizationEnabled
-     *
-     * @return $this
-     */
-    public function setMultiShareOptimizationEnabled($multiShareOptimizationEnabled)
-    {
-        $this->container['multiShareOptimizationEnabled'] = $multiShareOptimizationEnabled;
 
         return $this;
     }
@@ -2121,6 +2097,30 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
     public function setCardContent($cardContent)
     {
         $this->container['cardContent'] = $cardContent;
+
+        return $this;
+    }
+
+    /**
+     * Gets shopImage
+     *
+     * @return string
+     */
+    public function getShopImage()
+    {
+        return $this->container['shopImage'];
+    }
+
+    /**
+     * Sets shopImage
+     *
+     * @param string $shopImage shopImage
+     *
+     * @return $this
+     */
+    public function setShopImage($shopImage)
+    {
+        $this->container['shopImage'] = $shopImage;
 
         return $this;
     }

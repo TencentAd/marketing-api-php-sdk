@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * ClaimType Class Doc Comment
  *
  * @category Class
- * @description 归因方式，SDK上报方式时归因方式只能为CLAIM_TYPE_ACTIVATION
+ * @description 归因方式，SDK上报方式时归因方式只能为CLAIM_TYPE_ACTIVATION，JS上报方式时只能是CLAIM_TYPE_CLICK
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

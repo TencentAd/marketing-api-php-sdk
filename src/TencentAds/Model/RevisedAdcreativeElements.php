@@ -94,7 +94,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'labelledImg' => '\TencentAds\Model\AdcreativeLabelledImg',
         'fullScreenImage' => 'string',
         'zipUrl' => 'string',
-        'endPage' => '\TencentAds\Model\AdCreativeEndPage'
+        'endPage' => '\TencentAds\Model\AdCreativeEndPage',
+        'shopImage' => 'string'
     ];
 
     /**
@@ -139,7 +140,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'labelledImg' => null,
         'fullScreenImage' => null,
         'zipUrl' => null,
-        'endPage' => null
+        'endPage' => null,
+        'shopImage' => null
     ];
 
     /**
@@ -205,7 +207,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'labelledImg' => 'labelled_img',
         'fullScreenImage' => 'full_screen_image',
         'zipUrl' => 'zip_url',
-        'endPage' => 'end_page'
+        'endPage' => 'end_page',
+        'shopImage' => 'shop_image'
     ];
 
     /**
@@ -250,7 +253,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'labelledImg' => 'setLabelledImg',
         'fullScreenImage' => 'setFullScreenImage',
         'zipUrl' => 'setZipUrl',
-        'endPage' => 'setEndPage'
+        'endPage' => 'setEndPage',
+        'shopImage' => 'setShopImage'
     ];
 
     /**
@@ -295,7 +299,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'labelledImg' => 'getLabelledImg',
         'fullScreenImage' => 'getFullScreenImage',
         'zipUrl' => 'getZipUrl',
-        'endPage' => 'getEndPage'
+        'endPage' => 'getEndPage',
+        'shopImage' => 'getShopImage'
     ];
 
     /**
@@ -395,6 +400,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         $this->container['fullScreenImage'] = isset($data['fullScreenImage']) ? $data['fullScreenImage'] : null;
         $this->container['zipUrl'] = isset($data['zipUrl']) ? $data['zipUrl'] : null;
         $this->container['endPage'] = isset($data['endPage']) ? $data['endPage'] : null;
+        $this->container['shopImage'] = isset($data['shopImage']) ? $data['shopImage'] : null;
     }
 
     /**
@@ -1305,6 +1311,30 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     public function setEndPage($endPage)
     {
         $this->container['endPage'] = $endPage;
+
+        return $this;
+    }
+
+    /**
+     * Gets shopImage
+     *
+     * @return string
+     */
+    public function getShopImage()
+    {
+        return $this->container['shopImage'];
+    }
+
+    /**
+     * Sets shopImage
+     *
+     * @param string $shopImage shopImage
+     *
+     * @return $this
+     */
+    public function setShopImage($shopImage)
+    {
+        $this->container['shopImage'] = $shopImage;
 
         return $this;
     }

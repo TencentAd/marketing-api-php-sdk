@@ -1,6 +1,6 @@
 <?php
 /**
- * MetricDetailData
+ * ReportJdCreativeTemplateHourlyReportRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MetricDetailData Class Doc Comment
+ * ReportJdCreativeTemplateHourlyReportRequest Class Doc Comment
  *
  * @category Class
- * @description 报表效果数据
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MetricDetailData implements ModelInterface, ArrayAccess
+class ReportJdCreativeTemplateHourlyReportRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'metric_detail_data';
+    protected static $swaggerModelName = 'ReportJdCreativeTemplateHourlyReportRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,14 +57,11 @@ class MetricDetailData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'cost' => 'int',
-        'expPv' => 'int',
-        'canvasCpnCouponsGetPv' => 'int',
-        'canvasCpnCouponsCost' => 'int',
-        'canvasCpnCouponsUsePv' => 'int',
-        'purchase' => 'int',
-        'promotionClaimOfferPv' => 'int',
-        'pageVisitStorePv' => 'int'
+        'accountId' => 'int',
+        'date' => 'string',
+        'creativeTemplateIdList' => 'int[]',
+        'page' => 'int',
+        'pageSize' => 'int'
     ];
 
     /**
@@ -74,14 +70,11 @@ class MetricDetailData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'cost' => 'int64',
-        'expPv' => 'int64',
-        'canvasCpnCouponsGetPv' => 'int64',
-        'canvasCpnCouponsCost' => 'int64',
-        'canvasCpnCouponsUsePv' => 'int64',
-        'purchase' => 'int64',
-        'promotionClaimOfferPv' => 'int64',
-        'pageVisitStorePv' => 'int64'
+        'accountId' => 'int64',
+        'date' => null,
+        'creativeTemplateIdList' => 'int64',
+        'page' => 'int64',
+        'pageSize' => 'int64'
     ];
 
     /**
@@ -111,14 +104,11 @@ class MetricDetailData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'cost' => 'cost',
-        'expPv' => 'exp_pv',
-        'canvasCpnCouponsGetPv' => 'canvas_cpn_coupons_get_pv',
-        'canvasCpnCouponsCost' => 'canvas_cpn_coupons_cost',
-        'canvasCpnCouponsUsePv' => 'canvas_cpn_coupons_use_pv',
-        'purchase' => 'purchase',
-        'promotionClaimOfferPv' => 'promotion_claim_offer_pv',
-        'pageVisitStorePv' => 'page_visit_store_pv'
+        'accountId' => 'account_id',
+        'date' => 'date',
+        'creativeTemplateIdList' => 'creative_template_id_list',
+        'page' => 'page',
+        'pageSize' => 'page_size'
     ];
 
     /**
@@ -127,14 +117,11 @@ class MetricDetailData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'cost' => 'setCost',
-        'expPv' => 'setExpPv',
-        'canvasCpnCouponsGetPv' => 'setCanvasCpnCouponsGetPv',
-        'canvasCpnCouponsCost' => 'setCanvasCpnCouponsCost',
-        'canvasCpnCouponsUsePv' => 'setCanvasCpnCouponsUsePv',
-        'purchase' => 'setPurchase',
-        'promotionClaimOfferPv' => 'setPromotionClaimOfferPv',
-        'pageVisitStorePv' => 'setPageVisitStorePv'
+        'accountId' => 'setAccountId',
+        'date' => 'setDate',
+        'creativeTemplateIdList' => 'setCreativeTemplateIdList',
+        'page' => 'setPage',
+        'pageSize' => 'setPageSize'
     ];
 
     /**
@@ -143,14 +130,11 @@ class MetricDetailData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'cost' => 'getCost',
-        'expPv' => 'getExpPv',
-        'canvasCpnCouponsGetPv' => 'getCanvasCpnCouponsGetPv',
-        'canvasCpnCouponsCost' => 'getCanvasCpnCouponsCost',
-        'canvasCpnCouponsUsePv' => 'getCanvasCpnCouponsUsePv',
-        'purchase' => 'getPurchase',
-        'promotionClaimOfferPv' => 'getPromotionClaimOfferPv',
-        'pageVisitStorePv' => 'getPageVisitStorePv'
+        'accountId' => 'getAccountId',
+        'date' => 'getDate',
+        'creativeTemplateIdList' => 'getCreativeTemplateIdList',
+        'page' => 'getPage',
+        'pageSize' => 'getPageSize'
     ];
 
     /**
@@ -213,14 +197,11 @@ class MetricDetailData implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['cost'] = isset($data['cost']) ? $data['cost'] : null;
-        $this->container['expPv'] = isset($data['expPv']) ? $data['expPv'] : null;
-        $this->container['canvasCpnCouponsGetPv'] = isset($data['canvasCpnCouponsGetPv']) ? $data['canvasCpnCouponsGetPv'] : null;
-        $this->container['canvasCpnCouponsCost'] = isset($data['canvasCpnCouponsCost']) ? $data['canvasCpnCouponsCost'] : null;
-        $this->container['canvasCpnCouponsUsePv'] = isset($data['canvasCpnCouponsUsePv']) ? $data['canvasCpnCouponsUsePv'] : null;
-        $this->container['purchase'] = isset($data['purchase']) ? $data['purchase'] : null;
-        $this->container['promotionClaimOfferPv'] = isset($data['promotionClaimOfferPv']) ? $data['promotionClaimOfferPv'] : null;
-        $this->container['pageVisitStorePv'] = isset($data['pageVisitStorePv']) ? $data['pageVisitStorePv'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['date'] = isset($data['date']) ? $data['date'] : null;
+        $this->container['creativeTemplateIdList'] = isset($data['creativeTemplateIdList']) ? $data['creativeTemplateIdList'] : null;
+        $this->container['page'] = isset($data['page']) ? $data['page'] : null;
+        $this->container['pageSize'] = isset($data['pageSize']) ? $data['pageSize'] : null;
     }
 
     /**
@@ -248,193 +229,121 @@ class MetricDetailData implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets cost
+     * Gets accountId
      *
      * @return int
      */
-    public function getCost()
+    public function getAccountId()
     {
-        return $this->container['cost'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets cost
+     * Sets accountId
      *
-     * @param int $cost cost
+     * @param int $accountId accountId
      *
      * @return $this
      */
-    public function setCost($cost)
+    public function setAccountId($accountId)
     {
-        $this->container['cost'] = $cost;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }
 
     /**
-     * Gets expPv
+     * Gets date
      *
-     * @return int
+     * @return string
      */
-    public function getExpPv()
+    public function getDate()
     {
-        return $this->container['expPv'];
+        return $this->container['date'];
     }
 
     /**
-     * Sets expPv
+     * Sets date
      *
-     * @param int $expPv expPv
+     * @param string $date date
      *
      * @return $this
      */
-    public function setExpPv($expPv)
+    public function setDate($date)
     {
-        $this->container['expPv'] = $expPv;
+        $this->container['date'] = $date;
 
         return $this;
     }
 
     /**
-     * Gets canvasCpnCouponsGetPv
+     * Gets creativeTemplateIdList
      *
-     * @return int
+     * @return int[]
      */
-    public function getCanvasCpnCouponsGetPv()
+    public function getCreativeTemplateIdList()
     {
-        return $this->container['canvasCpnCouponsGetPv'];
+        return $this->container['creativeTemplateIdList'];
     }
 
     /**
-     * Sets canvasCpnCouponsGetPv
+     * Sets creativeTemplateIdList
      *
-     * @param int $canvasCpnCouponsGetPv canvasCpnCouponsGetPv
+     * @param int[] $creativeTemplateIdList creativeTemplateIdList
      *
      * @return $this
      */
-    public function setCanvasCpnCouponsGetPv($canvasCpnCouponsGetPv)
+    public function setCreativeTemplateIdList($creativeTemplateIdList)
     {
-        $this->container['canvasCpnCouponsGetPv'] = $canvasCpnCouponsGetPv;
+        $this->container['creativeTemplateIdList'] = $creativeTemplateIdList;
 
         return $this;
     }
 
     /**
-     * Gets canvasCpnCouponsCost
+     * Gets page
      *
      * @return int
      */
-    public function getCanvasCpnCouponsCost()
+    public function getPage()
     {
-        return $this->container['canvasCpnCouponsCost'];
+        return $this->container['page'];
     }
 
     /**
-     * Sets canvasCpnCouponsCost
+     * Sets page
      *
-     * @param int $canvasCpnCouponsCost canvasCpnCouponsCost
+     * @param int $page page
      *
      * @return $this
      */
-    public function setCanvasCpnCouponsCost($canvasCpnCouponsCost)
+    public function setPage($page)
     {
-        $this->container['canvasCpnCouponsCost'] = $canvasCpnCouponsCost;
+        $this->container['page'] = $page;
 
         return $this;
     }
 
     /**
-     * Gets canvasCpnCouponsUsePv
+     * Gets pageSize
      *
      * @return int
      */
-    public function getCanvasCpnCouponsUsePv()
+    public function getPageSize()
     {
-        return $this->container['canvasCpnCouponsUsePv'];
+        return $this->container['pageSize'];
     }
 
     /**
-     * Sets canvasCpnCouponsUsePv
+     * Sets pageSize
      *
-     * @param int $canvasCpnCouponsUsePv canvasCpnCouponsUsePv
+     * @param int $pageSize pageSize
      *
      * @return $this
      */
-    public function setCanvasCpnCouponsUsePv($canvasCpnCouponsUsePv)
+    public function setPageSize($pageSize)
     {
-        $this->container['canvasCpnCouponsUsePv'] = $canvasCpnCouponsUsePv;
-
-        return $this;
-    }
-
-    /**
-     * Gets purchase
-     *
-     * @return int
-     */
-    public function getPurchase()
-    {
-        return $this->container['purchase'];
-    }
-
-    /**
-     * Sets purchase
-     *
-     * @param int $purchase purchase
-     *
-     * @return $this
-     */
-    public function setPurchase($purchase)
-    {
-        $this->container['purchase'] = $purchase;
-
-        return $this;
-    }
-
-    /**
-     * Gets promotionClaimOfferPv
-     *
-     * @return int
-     */
-    public function getPromotionClaimOfferPv()
-    {
-        return $this->container['promotionClaimOfferPv'];
-    }
-
-    /**
-     * Sets promotionClaimOfferPv
-     *
-     * @param int $promotionClaimOfferPv promotionClaimOfferPv
-     *
-     * @return $this
-     */
-    public function setPromotionClaimOfferPv($promotionClaimOfferPv)
-    {
-        $this->container['promotionClaimOfferPv'] = $promotionClaimOfferPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets pageVisitStorePv
-     *
-     * @return int
-     */
-    public function getPageVisitStorePv()
-    {
-        return $this->container['pageVisitStorePv'];
-    }
-
-    /**
-     * Sets pageVisitStorePv
-     *
-     * @param int $pageVisitStorePv pageVisitStorePv
-     *
-     * @return $this
-     */
-    public function setPageVisitStorePv($pageVisitStorePv)
-    {
-        $this->container['pageVisitStorePv'] = $pageVisitStorePv;
+        $this->container['pageSize'] = $pageSize;
 
         return $this;
     }

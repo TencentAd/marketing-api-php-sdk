@@ -69,6 +69,7 @@ class DeepConversionBehaviorGoal
     const LEADS_COLLECT = 'OPTIMIZATIONGOAL_LEADS_COLLECT';
     const PROMOTION_VIEW_KEY_PAGE = 'OPTIMIZATIONGOAL_PROMOTION_VIEW_KEY_PAGE';
     const LEAVE_INFORMATION = 'OPTIMIZATIONGOAL_LEAVE_INFORMATION';
+    const CORE_ACTION = 'OPTIMIZATIONGOAL_CORE_ACTION';
     const ONE_DAY_RETENTION_RATIO = 'OPTIMIZATIONGOAL_ONE_DAY_RETENTION_RATIO';
     
     /**
@@ -103,6 +104,7 @@ class DeepConversionBehaviorGoal
             self::LEADS_COLLECT,
             self::PROMOTION_VIEW_KEY_PAGE,
             self::LEAVE_INFORMATION,
+            self::CORE_ACTION,
             self::ONE_DAY_RETENTION_RATIO,
         ];
     }

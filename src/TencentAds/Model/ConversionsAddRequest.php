@@ -64,6 +64,8 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'promotedObjectId' => 'string',
         'claimType' => '\TencentAds\Model\ClaimType',
         'feedbackUrl' => 'string',
+        'landingPageUrl' => 'string',
+        'miniProgramId' => 'string',
         'selfAttributed' => 'bool',
         'optimizationGoal' => '\TencentAds\Model\IntOptimizationGoal',
         'deepBehaviorOptimizationGoal' => '\TencentAds\Model\IntOptimizationGoal',
@@ -84,6 +86,8 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'promotedObjectId' => null,
         'claimType' => null,
         'feedbackUrl' => null,
+        'landingPageUrl' => null,
+        'miniProgramId' => null,
         'selfAttributed' => null,
         'optimizationGoal' => null,
         'deepBehaviorOptimizationGoal' => null,
@@ -125,6 +129,8 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'promotedObjectId' => 'promoted_object_id',
         'claimType' => 'claim_type',
         'feedbackUrl' => 'feedback_url',
+        'landingPageUrl' => 'landing_page_url',
+        'miniProgramId' => 'mini_program_id',
         'selfAttributed' => 'self_attributed',
         'optimizationGoal' => 'optimization_goal',
         'deepBehaviorOptimizationGoal' => 'deep_behavior_optimization_goal',
@@ -145,6 +151,8 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'promotedObjectId' => 'setPromotedObjectId',
         'claimType' => 'setClaimType',
         'feedbackUrl' => 'setFeedbackUrl',
+        'landingPageUrl' => 'setLandingPageUrl',
+        'miniProgramId' => 'setMiniProgramId',
         'selfAttributed' => 'setSelfAttributed',
         'optimizationGoal' => 'setOptimizationGoal',
         'deepBehaviorOptimizationGoal' => 'setDeepBehaviorOptimizationGoal',
@@ -165,6 +173,8 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'promotedObjectId' => 'getPromotedObjectId',
         'claimType' => 'getClaimType',
         'feedbackUrl' => 'getFeedbackUrl',
+        'landingPageUrl' => 'getLandingPageUrl',
+        'miniProgramId' => 'getMiniProgramId',
         'selfAttributed' => 'getSelfAttributed',
         'optimizationGoal' => 'getOptimizationGoal',
         'deepBehaviorOptimizationGoal' => 'getDeepBehaviorOptimizationGoal',
@@ -239,6 +249,8 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
         $this->container['claimType'] = isset($data['claimType']) ? $data['claimType'] : null;
         $this->container['feedbackUrl'] = isset($data['feedbackUrl']) ? $data['feedbackUrl'] : null;
+        $this->container['landingPageUrl'] = isset($data['landingPageUrl']) ? $data['landingPageUrl'] : null;
+        $this->container['miniProgramId'] = isset($data['miniProgramId']) ? $data['miniProgramId'] : null;
         $this->container['selfAttributed'] = isset($data['selfAttributed']) ? $data['selfAttributed'] : null;
         $this->container['optimizationGoal'] = isset($data['optimizationGoal']) ? $data['optimizationGoal'] : null;
         $this->container['deepBehaviorOptimizationGoal'] = isset($data['deepBehaviorOptimizationGoal']) ? $data['deepBehaviorOptimizationGoal'] : null;
@@ -434,6 +446,54 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     public function setFeedbackUrl($feedbackUrl)
     {
         $this->container['feedbackUrl'] = $feedbackUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets landingPageUrl
+     *
+     * @return string
+     */
+    public function getLandingPageUrl()
+    {
+        return $this->container['landingPageUrl'];
+    }
+
+    /**
+     * Sets landingPageUrl
+     *
+     * @param string $landingPageUrl landingPageUrl
+     *
+     * @return $this
+     */
+    public function setLandingPageUrl($landingPageUrl)
+    {
+        $this->container['landingPageUrl'] = $landingPageUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniProgramId
+     *
+     * @return string
+     */
+    public function getMiniProgramId()
+    {
+        return $this->container['miniProgramId'];
+    }
+
+    /**
+     * Sets miniProgramId
+     *
+     * @param string $miniProgramId miniProgramId
+     *
+     * @return $this
+     */
+    public function setMiniProgramId($miniProgramId)
+    {
+        $this->container['miniProgramId'] = $miniProgramId;
 
         return $this;
     }

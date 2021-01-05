@@ -95,6 +95,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'buttonUrl' => 'string',
         'brand' => '\TencentAds\Model\BrandStruct',
         'caption' => 'string',
+        'shopImage' => 'string',
         'countdownExpiringTimestamp' => 'int'
     ];
 
@@ -141,6 +142,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'buttonUrl' => null,
         'brand' => null,
         'caption' => null,
+        'shopImage' => null,
         'countdownExpiringTimestamp' => 'int64'
     ];
 
@@ -208,6 +210,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'buttonUrl' => 'button_url',
         'brand' => 'brand',
         'caption' => 'caption',
+        'shopImage' => 'shop_image',
         'countdownExpiringTimestamp' => 'countdown_expiring_timestamp'
     ];
 
@@ -254,6 +257,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'buttonUrl' => 'setButtonUrl',
         'brand' => 'setBrand',
         'caption' => 'setCaption',
+        'shopImage' => 'setShopImage',
         'countdownExpiringTimestamp' => 'setCountdownExpiringTimestamp'
     ];
 
@@ -300,6 +304,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'buttonUrl' => 'getButtonUrl',
         'brand' => 'getBrand',
         'caption' => 'getCaption',
+        'shopImage' => 'getShopImage',
         'countdownExpiringTimestamp' => 'getCountdownExpiringTimestamp'
     ];
 
@@ -400,6 +405,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         $this->container['buttonUrl'] = isset($data['buttonUrl']) ? $data['buttonUrl'] : null;
         $this->container['brand'] = isset($data['brand']) ? $data['brand'] : null;
         $this->container['caption'] = isset($data['caption']) ? $data['caption'] : null;
+        $this->container['shopImage'] = isset($data['shopImage']) ? $data['shopImage'] : null;
         $this->container['countdownExpiringTimestamp'] = isset($data['countdownExpiringTimestamp']) ? $data['countdownExpiringTimestamp'] : null;
     }
 
@@ -1311,6 +1317,30 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     public function setCaption($caption)
     {
         $this->container['caption'] = $caption;
+
+        return $this;
+    }
+
+    /**
+     * Gets shopImage
+     *
+     * @return string
+     */
+    public function getShopImage()
+    {
+        return $this->container['shopImage'];
+    }
+
+    /**
+     * Sets shopImage
+     *
+     * @param string $shopImage shopImage
+     *
+     * @return $this
+     */
+    public function setShopImage($shopImage)
+    {
+        $this->container['shopImage'] = $shopImage;
 
         return $this;
     }

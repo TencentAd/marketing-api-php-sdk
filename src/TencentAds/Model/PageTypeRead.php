@@ -61,6 +61,14 @@ class PageTypeRead
     const FULL_SCREEN_WECHAT = 'PAGE_TYPE_FULL_SCREEN_WECHAT';
     const YUEBAO_QUICKAPP = 'PAGE_TYPE_YUEBAO_QUICKAPP';
     const YUEBAO_OFFICIAL_ACCOUNT_ARTICLE = 'PAGE_TYPE_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE';
+    const YOUZAN_SINGLE = 'PAGE_TYPE_YOUZAN_SINGLE';
+    const YOUZAN_TOGETHER = 'PAGE_TYPE_YOUZAN_TOGETHER';
+    const YOUZAN_WECHAT_MINIPROGRAM = 'PAGE_TYPE_YOUZAN_WECHAT_MINIPROGRAM';
+    const YIYE_FORM = 'PAGE_TYPE_YIYE_FORM';
+    const WEIMOB_PRODUCTSET = 'PAGE_TYPE_WEIMOB_PRODUCTSET';
+    const WEIMOB_PROMOTION = 'PAGE_TYPE_WEIMOB_PROMOTION';
+    const WEIMOB_PRODUCT = 'PAGE_TYPE_WEIMOB_PRODUCT';
+    const WEIMOB_H5 = 'PAGE_TYPE_WEIMOB_H5';
     
     /**
      * Gets allowable values of the enum
@@ -86,6 +94,14 @@ class PageTypeRead
             self::FULL_SCREEN_WECHAT,
             self::YUEBAO_QUICKAPP,
             self::YUEBAO_OFFICIAL_ACCOUNT_ARTICLE,
+            self::YOUZAN_SINGLE,
+            self::YOUZAN_TOGETHER,
+            self::YOUZAN_WECHAT_MINIPROGRAM,
+            self::YIYE_FORM,
+            self::WEIMOB_PRODUCTSET,
+            self::WEIMOB_PROMOTION,
+            self::WEIMOB_PRODUCT,
+            self::WEIMOB_H5,
         ];
     }
 }

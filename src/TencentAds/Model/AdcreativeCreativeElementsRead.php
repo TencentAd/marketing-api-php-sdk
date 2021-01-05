@@ -68,7 +68,6 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'linkNameType' => '\TencentAds\Model\LinkNameType',
         'imageList' => 'string[]',
         'elementStory' => '\TencentAds\Model\AdcreativeElementStoryArrayItem[]',
-        'multiShareOptimizationEnabled' => 'bool',
         'url' => 'string',
         'buttonText' => 'string',
         'bottomText' => 'string',
@@ -111,6 +110,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'fullScreenImage' => 'string',
         'zipUrl' => 'string',
         'endPage' => '\TencentAds\Model\AdCreativeEndPage',
+        'shopImage' => 'string',
         'countdownExpiringTimestamp' => 'int'
     ];
 
@@ -130,7 +130,6 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'linkNameType' => null,
         'imageList' => null,
         'elementStory' => null,
-        'multiShareOptimizationEnabled' => null,
         'url' => null,
         'buttonText' => null,
         'bottomText' => null,
@@ -173,6 +172,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'fullScreenImage' => null,
         'zipUrl' => null,
         'endPage' => null,
+        'shopImage' => null,
         'countdownExpiringTimestamp' => 'int64'
     ];
 
@@ -213,7 +213,6 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'linkNameType' => 'link_name_type',
         'imageList' => 'image_list',
         'elementStory' => 'element_story',
-        'multiShareOptimizationEnabled' => 'multi_share_optimization_enabled',
         'url' => 'url',
         'buttonText' => 'button_text',
         'bottomText' => 'bottom_text',
@@ -256,6 +255,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'fullScreenImage' => 'full_screen_image',
         'zipUrl' => 'zip_url',
         'endPage' => 'end_page',
+        'shopImage' => 'shop_image',
         'countdownExpiringTimestamp' => 'countdown_expiring_timestamp'
     ];
 
@@ -275,7 +275,6 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'linkNameType' => 'setLinkNameType',
         'imageList' => 'setImageList',
         'elementStory' => 'setElementStory',
-        'multiShareOptimizationEnabled' => 'setMultiShareOptimizationEnabled',
         'url' => 'setUrl',
         'buttonText' => 'setButtonText',
         'bottomText' => 'setBottomText',
@@ -318,6 +317,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'fullScreenImage' => 'setFullScreenImage',
         'zipUrl' => 'setZipUrl',
         'endPage' => 'setEndPage',
+        'shopImage' => 'setShopImage',
         'countdownExpiringTimestamp' => 'setCountdownExpiringTimestamp'
     ];
 
@@ -337,7 +337,6 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'linkNameType' => 'getLinkNameType',
         'imageList' => 'getImageList',
         'elementStory' => 'getElementStory',
-        'multiShareOptimizationEnabled' => 'getMultiShareOptimizationEnabled',
         'url' => 'getUrl',
         'buttonText' => 'getButtonText',
         'bottomText' => 'getBottomText',
@@ -380,6 +379,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'fullScreenImage' => 'getFullScreenImage',
         'zipUrl' => 'getZipUrl',
         'endPage' => 'getEndPage',
+        'shopImage' => 'getShopImage',
         'countdownExpiringTimestamp' => 'getCountdownExpiringTimestamp'
     ];
 
@@ -453,7 +453,6 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         $this->container['linkNameType'] = isset($data['linkNameType']) ? $data['linkNameType'] : null;
         $this->container['imageList'] = isset($data['imageList']) ? $data['imageList'] : null;
         $this->container['elementStory'] = isset($data['elementStory']) ? $data['elementStory'] : null;
-        $this->container['multiShareOptimizationEnabled'] = isset($data['multiShareOptimizationEnabled']) ? $data['multiShareOptimizationEnabled'] : null;
         $this->container['url'] = isset($data['url']) ? $data['url'] : null;
         $this->container['buttonText'] = isset($data['buttonText']) ? $data['buttonText'] : null;
         $this->container['bottomText'] = isset($data['bottomText']) ? $data['bottomText'] : null;
@@ -496,6 +495,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         $this->container['fullScreenImage'] = isset($data['fullScreenImage']) ? $data['fullScreenImage'] : null;
         $this->container['zipUrl'] = isset($data['zipUrl']) ? $data['zipUrl'] : null;
         $this->container['endPage'] = isset($data['endPage']) ? $data['endPage'] : null;
+        $this->container['shopImage'] = isset($data['shopImage']) ? $data['shopImage'] : null;
         $this->container['countdownExpiringTimestamp'] = isset($data['countdownExpiringTimestamp']) ? $data['countdownExpiringTimestamp'] : null;
     }
 
@@ -759,30 +759,6 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
     public function setElementStory($elementStory)
     {
         $this->container['elementStory'] = $elementStory;
-
-        return $this;
-    }
-
-    /**
-     * Gets multiShareOptimizationEnabled
-     *
-     * @return bool
-     */
-    public function getMultiShareOptimizationEnabled()
-    {
-        return $this->container['multiShareOptimizationEnabled'];
-    }
-
-    /**
-     * Sets multiShareOptimizationEnabled
-     *
-     * @param bool $multiShareOptimizationEnabled multiShareOptimizationEnabled
-     *
-     * @return $this
-     */
-    public function setMultiShareOptimizationEnabled($multiShareOptimizationEnabled)
-    {
-        $this->container['multiShareOptimizationEnabled'] = $multiShareOptimizationEnabled;
 
         return $this;
     }
@@ -1791,6 +1767,30 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
     public function setEndPage($endPage)
     {
         $this->container['endPage'] = $endPage;
+
+        return $this;
+    }
+
+    /**
+     * Gets shopImage
+     *
+     * @return string
+     */
+    public function getShopImage()
+    {
+        return $this->container['shopImage'];
+    }
+
+    /**
+     * Sets shopImage
+     *
+     * @param string $shopImage shopImage
+     *
+     * @return $this
+     */
+    public function setShopImage($shopImage)
+    {
+        $this->container['shopImage'] = $shopImage;
 
         return $this;
     }

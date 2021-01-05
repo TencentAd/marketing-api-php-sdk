@@ -72,7 +72,6 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'iosDeepLinkAppId' => 'string',
         'universalLinkUrl' => 'string',
         'shareContentSpec' => '\TencentAds\Model\ShareContentSpec',
-        'multiShareOptimizationEnabled' => 'bool',
         'profileId' => 'int',
         'componentId' => 'int',
         'onlineEnabled' => 'bool',
@@ -113,7 +112,6 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'iosDeepLinkAppId' => null,
         'universalLinkUrl' => null,
         'shareContentSpec' => null,
-        'multiShareOptimizationEnabled' => null,
         'profileId' => 'int64',
         'componentId' => 'int64',
         'onlineEnabled' => null,
@@ -175,7 +173,6 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'iosDeepLinkAppId' => 'ios_deep_link_app_id',
         'universalLinkUrl' => 'universal_link_url',
         'shareContentSpec' => 'share_content_spec',
-        'multiShareOptimizationEnabled' => 'multi_share_optimization_enabled',
         'profileId' => 'profile_id',
         'componentId' => 'component_id',
         'onlineEnabled' => 'online_enabled',
@@ -216,7 +213,6 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'iosDeepLinkAppId' => 'setIosDeepLinkAppId',
         'universalLinkUrl' => 'setUniversalLinkUrl',
         'shareContentSpec' => 'setShareContentSpec',
-        'multiShareOptimizationEnabled' => 'setMultiShareOptimizationEnabled',
         'profileId' => 'setProfileId',
         'componentId' => 'setComponentId',
         'onlineEnabled' => 'setOnlineEnabled',
@@ -257,7 +253,6 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'iosDeepLinkAppId' => 'getIosDeepLinkAppId',
         'universalLinkUrl' => 'getUniversalLinkUrl',
         'shareContentSpec' => 'getShareContentSpec',
-        'multiShareOptimizationEnabled' => 'getMultiShareOptimizationEnabled',
         'profileId' => 'getProfileId',
         'componentId' => 'getComponentId',
         'onlineEnabled' => 'getOnlineEnabled',
@@ -352,7 +347,6 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['iosDeepLinkAppId'] = isset($data['iosDeepLinkAppId']) ? $data['iosDeepLinkAppId'] : null;
         $this->container['universalLinkUrl'] = isset($data['universalLinkUrl']) ? $data['universalLinkUrl'] : null;
         $this->container['shareContentSpec'] = isset($data['shareContentSpec']) ? $data['shareContentSpec'] : null;
-        $this->container['multiShareOptimizationEnabled'] = isset($data['multiShareOptimizationEnabled']) ? $data['multiShareOptimizationEnabled'] : null;
         $this->container['profileId'] = isset($data['profileId']) ? $data['profileId'] : null;
         $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
         $this->container['onlineEnabled'] = isset($data['onlineEnabled']) ? $data['onlineEnabled'] : null;
@@ -752,30 +746,6 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setShareContentSpec($shareContentSpec)
     {
         $this->container['shareContentSpec'] = $shareContentSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets multiShareOptimizationEnabled
-     *
-     * @return bool
-     */
-    public function getMultiShareOptimizationEnabled()
-    {
-        return $this->container['multiShareOptimizationEnabled'];
-    }
-
-    /**
-     * Sets multiShareOptimizationEnabled
-     *
-     * @param bool $multiShareOptimizationEnabled multiShareOptimizationEnabled
-     *
-     * @return $this
-     */
-    public function setMultiShareOptimizationEnabled($multiShareOptimizationEnabled)
-    {
-        $this->container['multiShareOptimizationEnabled'] = $multiShareOptimizationEnabled;
 
         return $this;
     }

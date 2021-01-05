@@ -1,6 +1,6 @@
 <?php
 /**
- * PageStruct
+ * ReportJdOfflineReportFileResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PageStruct Class Doc Comment
+ * ReportJdOfflineReportFileResponse Class Doc Comment
  *
  * @category Class
- * @description 获取落地页列表落地页数据结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PageStruct implements ModelInterface, ArrayAccess
+class ReportJdOfflineReportFileResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class PageStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'page_struct';
+    protected static $swaggerModelName = 'ReportJdOfflineReportFileResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,14 +57,10 @@ class PageStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pageId' => 'int',
-        'pageServiceId' => 'string',
-        'pageName' => 'string',
-        'pageType' => '\TencentAds\Model\PageType',
-        'pagePublishStatus' => '\TencentAds\Model\PagePublishStatus',
-        'pageStatus' => '\TencentAds\Model\PageAuditStatus',
-        'pageLastModifyTime' => 'string',
-        'pageOwnerId' => 'int'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]'
     ];
 
     /**
@@ -74,14 +69,10 @@ class PageStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'pageId' => 'int64',
-        'pageServiceId' => null,
-        'pageName' => null,
-        'pageType' => null,
-        'pagePublishStatus' => null,
-        'pageStatus' => null,
-        'pageLastModifyTime' => null,
-        'pageOwnerId' => 'int64'
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null
     ];
 
     /**
@@ -111,14 +102,10 @@ class PageStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'pageId' => 'page_id',
-        'pageServiceId' => 'page_service_id',
-        'pageName' => 'page_name',
-        'pageType' => 'page_type',
-        'pagePublishStatus' => 'page_publish_status',
-        'pageStatus' => 'page_status',
-        'pageLastModifyTime' => 'page_last_modify_time',
-        'pageOwnerId' => 'page_owner_id'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors'
     ];
 
     /**
@@ -127,14 +114,10 @@ class PageStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'pageId' => 'setPageId',
-        'pageServiceId' => 'setPageServiceId',
-        'pageName' => 'setPageName',
-        'pageType' => 'setPageType',
-        'pagePublishStatus' => 'setPagePublishStatus',
-        'pageStatus' => 'setPageStatus',
-        'pageLastModifyTime' => 'setPageLastModifyTime',
-        'pageOwnerId' => 'setPageOwnerId'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors'
     ];
 
     /**
@@ -143,14 +126,10 @@ class PageStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'pageId' => 'getPageId',
-        'pageServiceId' => 'getPageServiceId',
-        'pageName' => 'getPageName',
-        'pageType' => 'getPageType',
-        'pagePublishStatus' => 'getPagePublishStatus',
-        'pageStatus' => 'getPageStatus',
-        'pageLastModifyTime' => 'getPageLastModifyTime',
-        'pageOwnerId' => 'getPageOwnerId'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors'
     ];
 
     /**
@@ -213,14 +192,10 @@ class PageStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['pageId'] = isset($data['pageId']) ? $data['pageId'] : null;
-        $this->container['pageServiceId'] = isset($data['pageServiceId']) ? $data['pageServiceId'] : null;
-        $this->container['pageName'] = isset($data['pageName']) ? $data['pageName'] : null;
-        $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
-        $this->container['pagePublishStatus'] = isset($data['pagePublishStatus']) ? $data['pagePublishStatus'] : null;
-        $this->container['pageStatus'] = isset($data['pageStatus']) ? $data['pageStatus'] : null;
-        $this->container['pageLastModifyTime'] = isset($data['pageLastModifyTime']) ? $data['pageLastModifyTime'] : null;
-        $this->container['pageOwnerId'] = isset($data['pageOwnerId']) ? $data['pageOwnerId'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
     }
 
     /**
@@ -248,193 +223,97 @@ class PageStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets pageId
+     * Gets code
      *
      * @return int
      */
-    public function getPageId()
+    public function getCode()
     {
-        return $this->container['pageId'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets pageId
+     * Sets code
      *
-     * @param int $pageId pageId
+     * @param int $code code
      *
      * @return $this
      */
-    public function setPageId($pageId)
+    public function setCode($code)
     {
-        $this->container['pageId'] = $pageId;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets pageServiceId
+     * Gets message
      *
      * @return string
      */
-    public function getPageServiceId()
+    public function getMessage()
     {
-        return $this->container['pageServiceId'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets pageServiceId
+     * Sets message
      *
-     * @param string $pageServiceId pageServiceId
+     * @param string $message message
      *
      * @return $this
      */
-    public function setPageServiceId($pageServiceId)
+    public function setMessage($message)
     {
-        $this->container['pageServiceId'] = $pageServiceId;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets pageName
+     * Gets messageCn
      *
      * @return string
      */
-    public function getPageName()
+    public function getMessageCn()
     {
-        return $this->container['pageName'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets pageName
+     * Sets messageCn
      *
-     * @param string $pageName pageName
+     * @param string $messageCn messageCn
      *
      * @return $this
      */
-    public function setPageName($pageName)
+    public function setMessageCn($messageCn)
     {
-        $this->container['pageName'] = $pageName;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets pageType
+     * Gets errors
      *
-     * @return \TencentAds\Model\PageType
+     * @return \TencentAds\Model\ApiErrorStruct[]
      */
-    public function getPageType()
+    public function getErrors()
     {
-        return $this->container['pageType'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets pageType
+     * Sets errors
      *
-     * @param \TencentAds\Model\PageType $pageType pageType
+     * @param \TencentAds\Model\ApiErrorStruct[] $errors errors
      *
      * @return $this
      */
-    public function setPageType($pageType)
+    public function setErrors($errors)
     {
-        $this->container['pageType'] = $pageType;
-
-        return $this;
-    }
-
-    /**
-     * Gets pagePublishStatus
-     *
-     * @return \TencentAds\Model\PagePublishStatus
-     */
-    public function getPagePublishStatus()
-    {
-        return $this->container['pagePublishStatus'];
-    }
-
-    /**
-     * Sets pagePublishStatus
-     *
-     * @param \TencentAds\Model\PagePublishStatus $pagePublishStatus pagePublishStatus
-     *
-     * @return $this
-     */
-    public function setPagePublishStatus($pagePublishStatus)
-    {
-        $this->container['pagePublishStatus'] = $pagePublishStatus;
-
-        return $this;
-    }
-
-    /**
-     * Gets pageStatus
-     *
-     * @return \TencentAds\Model\PageAuditStatus
-     */
-    public function getPageStatus()
-    {
-        return $this->container['pageStatus'];
-    }
-
-    /**
-     * Sets pageStatus
-     *
-     * @param \TencentAds\Model\PageAuditStatus $pageStatus pageStatus
-     *
-     * @return $this
-     */
-    public function setPageStatus($pageStatus)
-    {
-        $this->container['pageStatus'] = $pageStatus;
-
-        return $this;
-    }
-
-    /**
-     * Gets pageLastModifyTime
-     *
-     * @return string
-     */
-    public function getPageLastModifyTime()
-    {
-        return $this->container['pageLastModifyTime'];
-    }
-
-    /**
-     * Sets pageLastModifyTime
-     *
-     * @param string $pageLastModifyTime pageLastModifyTime
-     *
-     * @return $this
-     */
-    public function setPageLastModifyTime($pageLastModifyTime)
-    {
-        $this->container['pageLastModifyTime'] = $pageLastModifyTime;
-
-        return $this;
-    }
-
-    /**
-     * Gets pageOwnerId
-     *
-     * @return int
-     */
-    public function getPageOwnerId()
-    {
-        return $this->container['pageOwnerId'];
-    }
-
-    /**
-     * Sets pageOwnerId
-     *
-     * @param int $pageOwnerId pageOwnerId
-     *
-     * @return $this
-     */
-    public function setPageOwnerId($pageOwnerId)
-    {
-        $this->container['pageOwnerId'] = $pageOwnerId;
+        $this->container['errors'] = $errors;
 
         return $this;
     }

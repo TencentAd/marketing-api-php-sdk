@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * ConversionScene Class Doc Comment
  *
  * @category Class
- * @description 转化场景
+ * @description 转化场景，网页及微信小程序转化场景无需输入推广目标id
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -46,6 +46,8 @@ class ConversionScene
      */
     const ANDROID = 'CONVERSION_SCENE_ANDROID';
     const IOS = 'CONVERSION_SCENE_IOS';
+    const WEB = 'CONVERSION_SCENE_WEB';
+    const WECHAT_MINI_PROGRAM = 'CONVERSION_SCENE_WECHAT_MINI_PROGRAM';
     
     /**
      * Gets allowable values of the enum
@@ -56,6 +58,8 @@ class ConversionScene
         return [
             self::ANDROID,
             self::IOS,
+            self::WEB,
+            self::WECHAT_MINI_PROGRAM,
         ];
     }
 }

@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * AccessType Class Doc Comment
  *
  * @category Class
- * @description 上报方式
+ * @description 上报方式, SDK上报方式仅支持安卓和ios转化场景，JS上报方式仅支持网页转化场景
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -46,6 +46,7 @@ class AccessType
      */
     const SDK = 'ACCESS_TYPE_SDK';
     const API = 'ACCESS_TYPE_API';
+    const JS = 'ACCESS_TYPE_JS';
     
     /**
      * Gets allowable values of the enum
@@ -56,6 +57,7 @@ class AccessType
         return [
             self::SDK,
             self::API,
+            self::JS,
         ];
     }
 }

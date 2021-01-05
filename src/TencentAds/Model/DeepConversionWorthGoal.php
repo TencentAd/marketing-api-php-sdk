@@ -46,6 +46,7 @@ class DeepConversionWorthGoal
      */
     const _30_DAY_PURCHASE_ROAS = 'GOAL_30DAY_PURCHASE_ROAS';
     const _30_DAY_MONETIZATION_ROAS = 'GOAL_30DAY_MONETIZATION_ROAS';
+    const _7_DAY_PURCHASE_ROAS = 'GOAL_7DAY_PURCHASE_ROAS';
     const _30_DAY_ORDER_ROAS = 'GOAL_30DAY_ORDER_ROAS';
     const _1_DAY_PURCHASE_ROAS = 'GOAL_1DAY_PURCHASE_ROAS';
     const _1_DAY_MONETIZATION_ROAS = 'GOAL_1DAY_MONETIZATION_ROAS';
@@ -59,6 +60,7 @@ class DeepConversionWorthGoal
         return [
             self::_30_DAY_PURCHASE_ROAS,
             self::_30_DAY_MONETIZATION_ROAS,
+            self::_7_DAY_PURCHASE_ROAS,
             self::_30_DAY_ORDER_ROAS,
             self::_1_DAY_PURCHASE_ROAS,
             self::_1_DAY_MONETIZATION_ROAS,

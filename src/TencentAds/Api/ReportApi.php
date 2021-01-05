@@ -370,6 +370,913 @@ class ReportApi
     }
 
     /**
+     * Operation reportJdCreativeTemplateHourlyReport
+     *
+     * 获取京东创意形式小时报表
+     *
+     * @param  \TencentAds\Model\ReportJdCreativeTemplateHourlyReportRequest $data data (required)
+     *
+     * @throws \TencentAds\ApiException on non-2xx response
+     * @throws \InvalidArgumentException
+     * @return \TencentAds\Model\ReportJdCreativeTemplateHourlyReportResponse
+     */
+    public function reportJdCreativeTemplateHourlyReport($data)
+    {
+        list($response) = $this->reportJdCreativeTemplateHourlyReportWithHttpInfo($data);
+        return $response;
+    }
+
+    /**
+     * Operation reportJdCreativeTemplateHourlyReportWithHttpInfo
+     *
+     * 获取京东创意形式小时报表
+     *
+     * @param  \TencentAds\Model\ReportJdCreativeTemplateHourlyReportRequest $data (required)
+     *
+     * @throws \TencentAds\ApiException on non-2xx response
+     * @throws \InvalidArgumentException
+     * @return array of \TencentAds\Model\ReportJdCreativeTemplateHourlyReportResponse, HTTP status code, HTTP response headers (array of strings)
+     */
+    public function reportJdCreativeTemplateHourlyReportWithHttpInfo($data)
+    {
+        $returnType = '\TencentAds\Model\ReportJdCreativeTemplateHourlyReportResponse';
+        $request = $this->reportJdCreativeTemplateHourlyReportRequest($data);
+
+        try {
+            $options = $this->createHttpClientOption();
+            try {
+                $response = $this->client->send($request, $options);
+            } catch (RequestException $e) {
+                throw new ApiException(
+                    "[{$e->getCode()}] {$e->getMessage()}",
+                    $e->getCode(),
+                    $e->getResponse() ? $e->getResponse()->getHeaders() : null,
+                    $e->getResponse() ? $e->getResponse()->getBody()->getContents() : null
+                );
+            }
+
+            $statusCode = $response->getStatusCode();
+
+            if ($statusCode < 200 || $statusCode > 299) {
+                throw new ApiException(
+                    sprintf(
+                        '[%d] Error connecting to the API (%s)',
+                        $statusCode,
+                        $request->getUri()
+                    ),
+                    $statusCode,
+                    $response->getHeaders(),
+                    $response->getBody()
+                );
+            }
+
+            $responseBody = $response->getBody();
+            if ($returnType === '\SplFileObject') {
+                $content = $responseBody; //stream goes to serializer
+            } else {
+                $content = $responseBody->getContents();
+                if ($returnType !== 'string') {
+                    $content = json_decode($content);
+                }
+            }
+
+            return [
+                ObjectSerializer::deserialize($content, $returnType, []),
+                $response->getStatusCode(),
+                $response->getHeaders()
+            ];
+
+        } catch (ApiException $e) {
+            switch ($e->getCode()) {
+                case 200:
+                    $data = ObjectSerializer::deserialize(
+                        $e->getResponseBody(),
+                        '\TencentAds\Model\ReportJdCreativeTemplateHourlyReportResponse',
+                        $e->getResponseHeaders()
+                    );
+                    $e->setResponseObject($data);
+                    break;
+            }
+            throw $e;
+        }
+    }
+
+    /**
+     * Operation reportJdCreativeTemplateHourlyReportAsync
+     *
+     * 获取京东创意形式小时报表
+     *
+     * @param  \TencentAds\Model\ReportJdCreativeTemplateHourlyReportRequest $data (required)
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function reportJdCreativeTemplateHourlyReportAsync($data)
+    {
+        return $this->reportJdCreativeTemplateHourlyReportAsyncWithHttpInfo($data)
+            ->then(
+                function ($response) {
+                    return $response[0];
+                }
+            );
+    }
+
+    /**
+     * Operation reportJdCreativeTemplateHourlyReportAsyncWithHttpInfo
+     *
+     * 获取京东创意形式小时报表
+     *
+     * @param  \TencentAds\Model\ReportJdCreativeTemplateHourlyReportRequest $data (required)
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function reportJdCreativeTemplateHourlyReportAsyncWithHttpInfo($data)
+    {
+        $returnType = '\TencentAds\Model\ReportJdCreativeTemplateHourlyReportResponse';
+        $request = $this->reportJdCreativeTemplateHourlyReportRequest($data);
+
+        return $this->client
+            ->sendAsync($request, $this->createHttpClientOption())
+            ->then(
+                function ($response) use ($returnType) {
+                    $responseBody = $response->getBody();
+                    if ($returnType === '\SplFileObject') {
+                        $content = $responseBody; //stream goes to serializer
+                    } else {
+                        $content = $responseBody->getContents();
+                        if ($returnType !== 'string') {
+                            $content = json_decode($content);
+                        }
+                    }
+
+                    return [
+                        ObjectSerializer::deserialize($content, $returnType, []),
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+                },
+                function ($exception) {
+                    $response = $exception->getResponse();
+                    $statusCode = $response->getStatusCode();
+                    throw new ApiException(
+                        sprintf(
+                            '[%d] Error connecting to the API (%s)',
+                            $statusCode,
+                            $exception->getRequest()->getUri()
+                        ),
+                        $statusCode,
+                        $response->getHeaders(),
+                        $response->getBody()
+                    );
+                }
+            );
+    }
+
+    /**
+     * Create request for operation 'reportJdCreativeTemplateHourlyReport'
+     *
+     * @param  \TencentAds\Model\ReportJdCreativeTemplateHourlyReportRequest $data (required)
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Psr7\Request
+     */
+    protected function reportJdCreativeTemplateHourlyReportRequest($data)
+    {
+        // verify the required parameter 'data' is set
+        if ($data === null || (is_array($data) && count($data) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $data when calling reportJdCreativeTemplateHourlyReport'
+            );
+        }
+
+        $resourcePath = '/report/jd_creative_template_hourly_report';
+        $formParams = [];
+        $queryParams = [];
+        $headerParams = [];
+        $httpBody = '';
+        $multipart = false;
+
+
+
+        // body params
+        $_tempBody = null;
+        if (isset($data)) {
+            $_tempBody = $data;
+        }
+
+        if (in_array('multipart/form-data', ['application/json', 'application/xml'])) {
+            $multipart = true;
+        }
+        if ($multipart) {
+            $headers = $this->headerSelector->selectHeadersForMultipart(
+                ['application/json']
+            );
+        } else {
+            $headers = $this->headerSelector->selectHeaders(
+                ['application/json'],
+                ['application/json', 'application/xml']
+            );
+        }
+
+        // for model (json/xml)
+        if (isset($_tempBody)) {
+            // $_tempBody is the method argument, if present
+            $httpBody = $_tempBody;
+            
+            if($headers['Content-Type'] === 'application/json') {
+                // \stdClass has no __toString(), so we should encode it manually
+                if ($httpBody instanceof \stdClass) {
+                    $httpBody = \GuzzleHttp\json_encode($httpBody);
+                }
+                // array has no __toString(), so we should encode it manually
+                if(is_array($httpBody)) {
+                    $httpBody = \GuzzleHttp\json_encode(ObjectSerializer::sanitizeForSerialization($httpBody));
+                }
+            }
+        } elseif (count($formParams) > 0) {
+            if ($multipart) {
+                $multipartContents = [];
+                foreach ($formParams as $formParamName => $formParamValue) {
+                    $multipartContents[] = [
+                        'name' => $formParamName,
+                        'contents' => $formParamValue
+                    ];
+                }
+                // for HTTP post (form)
+                $httpBody = new MultipartStream($multipartContents);
+
+            } elseif ($headers['Content-Type'] === 'application/json') {
+                $httpBody = \GuzzleHttp\json_encode($formParams);
+
+            } else {
+                // for HTTP post (form)
+                $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+            }
+        }
+
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('access_token');
+        if ($apiKey !== null) {
+            $queryParams['access_token'] = $apiKey;
+        }
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('nonce');
+        if ($apiKey !== null) {
+            $queryParams['nonce'] = $apiKey;
+        }
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('timestamp');
+        if ($apiKey !== null) {
+            $queryParams['timestamp'] = $apiKey;
+        }
+
+        $defaultHeaders = [];
+        if ($this->config->getUserAgent()) {
+            $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
+        }
+
+        $headers = array_merge(
+            $defaultHeaders,
+            $headerParams,
+            $headers
+        );
+
+        $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        return new Request(
+            'POST',
+            $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
+            $headers,
+            $httpBody
+        );
+    }
+
+    /**
+     * Operation reportJdOfflineReportFile
+     *
+     * 获取京东离线报表文件
+     *
+     * @param  int $accountId accountId (required)
+     * @param  string $task task (required)
+     * @param  string $date date (required)
+     * @param  string $hour hour (optional)
+     * @param  string $timeFrame timeFrame (optional)
+     * @param  string[] $fields 返回参数的字段列表 (optional)
+     *
+     * @throws \TencentAds\ApiException on non-2xx response
+     * @throws \InvalidArgumentException
+     * @return \TencentAds\Model\ReportJdOfflineReportFileResponse
+     */
+    public function reportJdOfflineReportFile($accountId, $task, $date, $hour = null, $timeFrame = null, $fields = null)
+    {
+        list($response) = $this->reportJdOfflineReportFileWithHttpInfo($accountId, $task, $date, $hour, $timeFrame, $fields);
+        return $response;
+    }
+
+    /**
+     * Operation reportJdOfflineReportFileWithHttpInfo
+     *
+     * 获取京东离线报表文件
+     *
+     * @param  int $accountId (required)
+     * @param  string $task (required)
+     * @param  string $date (required)
+     * @param  string $hour (optional)
+     * @param  string $timeFrame (optional)
+     * @param  string[] $fields 返回参数的字段列表 (optional)
+     *
+     * @throws \TencentAds\ApiException on non-2xx response
+     * @throws \InvalidArgumentException
+     * @return array of \TencentAds\Model\ReportJdOfflineReportFileResponse, HTTP status code, HTTP response headers (array of strings)
+     */
+    public function reportJdOfflineReportFileWithHttpInfo($accountId, $task, $date, $hour = null, $timeFrame = null, $fields = null)
+    {
+        $returnType = '\TencentAds\Model\ReportJdOfflineReportFileResponse';
+        $request = $this->reportJdOfflineReportFileRequest($accountId, $task, $date, $hour, $timeFrame, $fields);
+
+        try {
+            $options = $this->createHttpClientOption();
+            try {
+                $response = $this->client->send($request, $options);
+            } catch (RequestException $e) {
+                throw new ApiException(
+                    "[{$e->getCode()}] {$e->getMessage()}",
+                    $e->getCode(),
+                    $e->getResponse() ? $e->getResponse()->getHeaders() : null,
+                    $e->getResponse() ? $e->getResponse()->getBody()->getContents() : null
+                );
+            }
+
+            $statusCode = $response->getStatusCode();
+
+            if ($statusCode < 200 || $statusCode > 299) {
+                throw new ApiException(
+                    sprintf(
+                        '[%d] Error connecting to the API (%s)',
+                        $statusCode,
+                        $request->getUri()
+                    ),
+                    $statusCode,
+                    $response->getHeaders(),
+                    $response->getBody()
+                );
+            }
+
+            $responseBody = $response->getBody();
+            if ($returnType === '\SplFileObject') {
+                $content = $responseBody; //stream goes to serializer
+            } else {
+                $content = $responseBody->getContents();
+                if ($returnType !== 'string') {
+                    $content = json_decode($content);
+                }
+            }
+
+            return [
+                ObjectSerializer::deserialize($content, $returnType, []),
+                $response->getStatusCode(),
+                $response->getHeaders()
+            ];
+
+        } catch (ApiException $e) {
+            switch ($e->getCode()) {
+                case 200:
+                    $data = ObjectSerializer::deserialize(
+                        $e->getResponseBody(),
+                        '\TencentAds\Model\ReportJdOfflineReportFileResponse',
+                        $e->getResponseHeaders()
+                    );
+                    $e->setResponseObject($data);
+                    break;
+            }
+            throw $e;
+        }
+    }
+
+    /**
+     * Operation reportJdOfflineReportFileAsync
+     *
+     * 获取京东离线报表文件
+     *
+     * @param  int $accountId (required)
+     * @param  string $task (required)
+     * @param  string $date (required)
+     * @param  string $hour (optional)
+     * @param  string $timeFrame (optional)
+     * @param  string[] $fields 返回参数的字段列表 (optional)
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function reportJdOfflineReportFileAsync($accountId, $task, $date, $hour = null, $timeFrame = null, $fields = null)
+    {
+        return $this->reportJdOfflineReportFileAsyncWithHttpInfo($accountId, $task, $date, $hour, $timeFrame, $fields)
+            ->then(
+                function ($response) {
+                    return $response[0];
+                }
+            );
+    }
+
+    /**
+     * Operation reportJdOfflineReportFileAsyncWithHttpInfo
+     *
+     * 获取京东离线报表文件
+     *
+     * @param  int $accountId (required)
+     * @param  string $task (required)
+     * @param  string $date (required)
+     * @param  string $hour (optional)
+     * @param  string $timeFrame (optional)
+     * @param  string[] $fields 返回参数的字段列表 (optional)
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function reportJdOfflineReportFileAsyncWithHttpInfo($accountId, $task, $date, $hour = null, $timeFrame = null, $fields = null)
+    {
+        $returnType = '\TencentAds\Model\ReportJdOfflineReportFileResponse';
+        $request = $this->reportJdOfflineReportFileRequest($accountId, $task, $date, $hour, $timeFrame, $fields);
+
+        return $this->client
+            ->sendAsync($request, $this->createHttpClientOption())
+            ->then(
+                function ($response) use ($returnType) {
+                    $responseBody = $response->getBody();
+                    if ($returnType === '\SplFileObject') {
+                        $content = $responseBody; //stream goes to serializer
+                    } else {
+                        $content = $responseBody->getContents();
+                        if ($returnType !== 'string') {
+                            $content = json_decode($content);
+                        }
+                    }
+
+                    return [
+                        ObjectSerializer::deserialize($content, $returnType, []),
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+                },
+                function ($exception) {
+                    $response = $exception->getResponse();
+                    $statusCode = $response->getStatusCode();
+                    throw new ApiException(
+                        sprintf(
+                            '[%d] Error connecting to the API (%s)',
+                            $statusCode,
+                            $exception->getRequest()->getUri()
+                        ),
+                        $statusCode,
+                        $response->getHeaders(),
+                        $response->getBody()
+                    );
+                }
+            );
+    }
+
+    /**
+     * Create request for operation 'reportJdOfflineReportFile'
+     *
+     * @param  int $accountId (required)
+     * @param  string $task (required)
+     * @param  string $date (required)
+     * @param  string $hour (optional)
+     * @param  string $timeFrame (optional)
+     * @param  string[] $fields 返回参数的字段列表 (optional)
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Psr7\Request
+     */
+    protected function reportJdOfflineReportFileRequest($accountId, $task, $date, $hour = null, $timeFrame = null, $fields = null)
+    {
+        // verify the required parameter 'accountId' is set
+        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $accountId when calling reportJdOfflineReportFile'
+            );
+        }
+        // verify the required parameter 'task' is set
+        if ($task === null || (is_array($task) && count($task) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $task when calling reportJdOfflineReportFile'
+            );
+        }
+        // verify the required parameter 'date' is set
+        if ($date === null || (is_array($date) && count($date) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $date when calling reportJdOfflineReportFile'
+            );
+        }
+
+        $resourcePath = '/report/jd_offline_report_file';
+        $formParams = [];
+        $queryParams = [];
+        $headerParams = [];
+        $httpBody = '';
+        $multipart = false;
+
+        // query params
+        if ($accountId !== null) {
+            $queryParams['account_id'] = ObjectSerializer::toQueryValue($accountId);
+        }
+        // query params
+        if ($task !== null) {
+            $queryParams['task'] = ObjectSerializer::toQueryValue($task);
+        }
+        // query params
+        if ($date !== null) {
+            $queryParams['date'] = ObjectSerializer::toQueryValue($date);
+        }
+        // query params
+        if ($hour !== null) {
+            $queryParams['hour'] = ObjectSerializer::toQueryValue($hour);
+        }
+        // query params
+        if ($timeFrame !== null) {
+            $queryParams['time_frame'] = ObjectSerializer::toQueryValue($timeFrame);
+        }
+        // query params
+        if (is_array($fields)) {
+            $queryParams['fields'] = $fields;
+        } else
+        if ($fields !== null) {
+            $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);
+        }
+
+
+        // body params
+        $_tempBody = null;
+
+        if (in_array('multipart/form-data', ['text/plain'])) {
+            $multipart = true;
+        }
+        if ($multipart) {
+            $headers = $this->headerSelector->selectHeadersForMultipart(
+                ['application/json']
+            );
+        } else {
+            $headers = $this->headerSelector->selectHeaders(
+                ['application/json'],
+                ['text/plain']
+            );
+        }
+
+        // for model (json/xml)
+        if (isset($_tempBody)) {
+            // $_tempBody is the method argument, if present
+            $httpBody = $_tempBody;
+            
+            if($headers['Content-Type'] === 'application/json') {
+                // \stdClass has no __toString(), so we should encode it manually
+                if ($httpBody instanceof \stdClass) {
+                    $httpBody = \GuzzleHttp\json_encode($httpBody);
+                }
+                // array has no __toString(), so we should encode it manually
+                if(is_array($httpBody)) {
+                    $httpBody = \GuzzleHttp\json_encode(ObjectSerializer::sanitizeForSerialization($httpBody));
+                }
+            }
+        } elseif (count($formParams) > 0) {
+            if ($multipart) {
+                $multipartContents = [];
+                foreach ($formParams as $formParamName => $formParamValue) {
+                    $multipartContents[] = [
+                        'name' => $formParamName,
+                        'contents' => $formParamValue
+                    ];
+                }
+                // for HTTP post (form)
+                $httpBody = new MultipartStream($multipartContents);
+
+            } elseif ($headers['Content-Type'] === 'application/json') {
+                $httpBody = \GuzzleHttp\json_encode($formParams);
+
+            } else {
+                // for HTTP post (form)
+                $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+            }
+        }
+
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('access_token');
+        if ($apiKey !== null) {
+            $queryParams['access_token'] = $apiKey;
+        }
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('nonce');
+        if ($apiKey !== null) {
+            $queryParams['nonce'] = $apiKey;
+        }
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('timestamp');
+        if ($apiKey !== null) {
+            $queryParams['timestamp'] = $apiKey;
+        }
+
+        $defaultHeaders = [];
+        if ($this->config->getUserAgent()) {
+            $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
+        }
+
+        $headers = array_merge(
+            $defaultHeaders,
+            $headerParams,
+            $headers
+        );
+
+        $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        return new Request(
+            'GET',
+            $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
+            $headers,
+            $httpBody
+        );
+    }
+
+    /**
+     * Operation reportJdOfflineReportStatus
+     *
+     * 获取京东离线报表文件状态
+     *
+     * @param  \TencentAds\Model\ReportJdOfflineReportStatusRequest $data data (required)
+     *
+     * @throws \TencentAds\ApiException on non-2xx response
+     * @throws \InvalidArgumentException
+     * @return \TencentAds\Model\ReportJdOfflineReportStatusResponse
+     */
+    public function reportJdOfflineReportStatus($data)
+    {
+        list($response) = $this->reportJdOfflineReportStatusWithHttpInfo($data);
+        return $response;
+    }
+
+    /**
+     * Operation reportJdOfflineReportStatusWithHttpInfo
+     *
+     * 获取京东离线报表文件状态
+     *
+     * @param  \TencentAds\Model\ReportJdOfflineReportStatusRequest $data (required)
+     *
+     * @throws \TencentAds\ApiException on non-2xx response
+     * @throws \InvalidArgumentException
+     * @return array of \TencentAds\Model\ReportJdOfflineReportStatusResponse, HTTP status code, HTTP response headers (array of strings)
+     */
+    public function reportJdOfflineReportStatusWithHttpInfo($data)
+    {
+        $returnType = '\TencentAds\Model\ReportJdOfflineReportStatusResponse';
+        $request = $this->reportJdOfflineReportStatusRequest($data);
+
+        try {
+            $options = $this->createHttpClientOption();
+            try {
+                $response = $this->client->send($request, $options);
+            } catch (RequestException $e) {
+                throw new ApiException(
+                    "[{$e->getCode()}] {$e->getMessage()}",
+                    $e->getCode(),
+                    $e->getResponse() ? $e->getResponse()->getHeaders() : null,
+                    $e->getResponse() ? $e->getResponse()->getBody()->getContents() : null
+                );
+            }
+
+            $statusCode = $response->getStatusCode();
+
+            if ($statusCode < 200 || $statusCode > 299) {
+                throw new ApiException(
+                    sprintf(
+                        '[%d] Error connecting to the API (%s)',
+                        $statusCode,
+                        $request->getUri()
+                    ),
+                    $statusCode,
+                    $response->getHeaders(),
+                    $response->getBody()
+                );
+            }
+
+            $responseBody = $response->getBody();
+            if ($returnType === '\SplFileObject') {
+                $content = $responseBody; //stream goes to serializer
+            } else {
+                $content = $responseBody->getContents();
+                if ($returnType !== 'string') {
+                    $content = json_decode($content);
+                }
+            }
+
+            return [
+                ObjectSerializer::deserialize($content, $returnType, []),
+                $response->getStatusCode(),
+                $response->getHeaders()
+            ];
+
+        } catch (ApiException $e) {
+            switch ($e->getCode()) {
+                case 200:
+                    $data = ObjectSerializer::deserialize(
+                        $e->getResponseBody(),
+                        '\TencentAds\Model\ReportJdOfflineReportStatusResponse',
+                        $e->getResponseHeaders()
+                    );
+                    $e->setResponseObject($data);
+                    break;
+            }
+            throw $e;
+        }
+    }
+
+    /**
+     * Operation reportJdOfflineReportStatusAsync
+     *
+     * 获取京东离线报表文件状态
+     *
+     * @param  \TencentAds\Model\ReportJdOfflineReportStatusRequest $data (required)
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function reportJdOfflineReportStatusAsync($data)
+    {
+        return $this->reportJdOfflineReportStatusAsyncWithHttpInfo($data)
+            ->then(
+                function ($response) {
+                    return $response[0];
+                }
+            );
+    }
+
+    /**
+     * Operation reportJdOfflineReportStatusAsyncWithHttpInfo
+     *
+     * 获取京东离线报表文件状态
+     *
+     * @param  \TencentAds\Model\ReportJdOfflineReportStatusRequest $data (required)
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function reportJdOfflineReportStatusAsyncWithHttpInfo($data)
+    {
+        $returnType = '\TencentAds\Model\ReportJdOfflineReportStatusResponse';
+        $request = $this->reportJdOfflineReportStatusRequest($data);
+
+        return $this->client
+            ->sendAsync($request, $this->createHttpClientOption())
+            ->then(
+                function ($response) use ($returnType) {
+                    $responseBody = $response->getBody();
+                    if ($returnType === '\SplFileObject') {
+                        $content = $responseBody; //stream goes to serializer
+                    } else {
+                        $content = $responseBody->getContents();
+                        if ($returnType !== 'string') {
+                            $content = json_decode($content);
+                        }
+                    }
+
+                    return [
+                        ObjectSerializer::deserialize($content, $returnType, []),
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+                },
+                function ($exception) {
+                    $response = $exception->getResponse();
+                    $statusCode = $response->getStatusCode();
+                    throw new ApiException(
+                        sprintf(
+                            '[%d] Error connecting to the API (%s)',
+                            $statusCode,
+                            $exception->getRequest()->getUri()
+                        ),
+                        $statusCode,
+                        $response->getHeaders(),
+                        $response->getBody()
+                    );
+                }
+            );
+    }
+
+    /**
+     * Create request for operation 'reportJdOfflineReportStatus'
+     *
+     * @param  \TencentAds\Model\ReportJdOfflineReportStatusRequest $data (required)
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Psr7\Request
+     */
+    protected function reportJdOfflineReportStatusRequest($data)
+    {
+        // verify the required parameter 'data' is set
+        if ($data === null || (is_array($data) && count($data) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $data when calling reportJdOfflineReportStatus'
+            );
+        }
+
+        $resourcePath = '/report/jd_offline_report_status';
+        $formParams = [];
+        $queryParams = [];
+        $headerParams = [];
+        $httpBody = '';
+        $multipart = false;
+
+
+
+        // body params
+        $_tempBody = null;
+        if (isset($data)) {
+            $_tempBody = $data;
+        }
+
+        if (in_array('multipart/form-data', ['application/json', 'application/xml'])) {
+            $multipart = true;
+        }
+        if ($multipart) {
+            $headers = $this->headerSelector->selectHeadersForMultipart(
+                ['application/json']
+            );
+        } else {
+            $headers = $this->headerSelector->selectHeaders(
+                ['application/json'],
+                ['application/json', 'application/xml']
+            );
+        }
+
+        // for model (json/xml)
+        if (isset($_tempBody)) {
+            // $_tempBody is the method argument, if present
+            $httpBody = $_tempBody;
+            
+            if($headers['Content-Type'] === 'application/json') {
+                // \stdClass has no __toString(), so we should encode it manually
+                if ($httpBody instanceof \stdClass) {
+                    $httpBody = \GuzzleHttp\json_encode($httpBody);
+                }
+                // array has no __toString(), so we should encode it manually
+                if(is_array($httpBody)) {
+                    $httpBody = \GuzzleHttp\json_encode(ObjectSerializer::sanitizeForSerialization($httpBody));
+                }
+            }
+        } elseif (count($formParams) > 0) {
+            if ($multipart) {
+                $multipartContents = [];
+                foreach ($formParams as $formParamName => $formParamValue) {
+                    $multipartContents[] = [
+                        'name' => $formParamName,
+                        'contents' => $formParamValue
+                    ];
+                }
+                // for HTTP post (form)
+                $httpBody = new MultipartStream($multipartContents);
+
+            } elseif ($headers['Content-Type'] === 'application/json') {
+                $httpBody = \GuzzleHttp\json_encode($formParams);
+
+            } else {
+                // for HTTP post (form)
+                $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+            }
+        }
+
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('access_token');
+        if ($apiKey !== null) {
+            $queryParams['access_token'] = $apiKey;
+        }
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('nonce');
+        if ($apiKey !== null) {
+            $queryParams['nonce'] = $apiKey;
+        }
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('timestamp');
+        if ($apiKey !== null) {
+            $queryParams['timestamp'] = $apiKey;
+        }
+
+        $defaultHeaders = [];
+        if ($this->config->getUserAgent()) {
+            $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
+        }
+
+        $headers = array_merge(
+            $defaultHeaders,
+            $headerParams,
+            $headers
+        );
+
+        $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        return new Request(
+            'POST',
+            $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
+            $headers,
+            $httpBody
+        );
+    }
+
+    /**
      * Operation reportVideoFrame
      *
      * 视频流失分析接口

@@ -160,6 +160,17 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'guideToFollowPageViewers' => 'int',
         'guideToFollowPageInteractionAmount' => 'int',
         'guideToFollowPageInteractionUsers' => 'int',
+        'miniGameRegisterUsers' => 'int',
+        'miniGameRegisterCost' => 'int',
+        'miniGameRegisterRate' => 'double',
+        'miniGameAdMonetizationUsers' => 'int',
+        'miniGamePayingCount' => 'int',
+        'miniGamePayingAmount' => 'int',
+        'miniGameCreateRoleUsers' => 'int',
+        'miniGameCreateRoleCost' => 'int',
+        'miniGameRetentionD1' => 'int',
+        'miniGameKeyPageViewers' => 'int',
+        'miniGameKeyPageViewCost' => 'int',
         'age' => 'string',
         'regionId' => 'int',
         'cityId' => 'int',
@@ -350,7 +361,16 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'roiActivatedD7' => 'double',
         'roiActivatedD14' => 'double',
         'roiActivatedD30' => 'double',
-        'firstDayFirstPayRate' => 'double'
+        'firstDayFirstPayRate' => 'double',
+        'miniGameFirstDayAdMonetizationUsers' => 'int',
+        'miniGameFirstDayAdMonetizationAmount' => 'int',
+        'miniGameFirstDayAdPayingCost' => 'int',
+        'miniGameIncomeRoi1' => 'double',
+        'miniGameFirstDayAdPayingArpu' => 'int',
+        'miniGamePayingUsersD1' => 'int',
+        'miniGamePayingAmountD1' => 'int',
+        'miniGameFirstPayingUsers' => 'int',
+        'miniGameFirstDayPayingRoi' => 'double'
     ];
 
     /**
@@ -461,6 +481,17 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'guideToFollowPageViewers' => 'int64',
         'guideToFollowPageInteractionAmount' => 'int64',
         'guideToFollowPageInteractionUsers' => 'int64',
+        'miniGameRegisterUsers' => 'int64',
+        'miniGameRegisterCost' => 'int64',
+        'miniGameRegisterRate' => 'double',
+        'miniGameAdMonetizationUsers' => 'int64',
+        'miniGamePayingCount' => 'int64',
+        'miniGamePayingAmount' => 'int64',
+        'miniGameCreateRoleUsers' => 'int64',
+        'miniGameCreateRoleCost' => 'int64',
+        'miniGameRetentionD1' => 'int64',
+        'miniGameKeyPageViewers' => 'int64',
+        'miniGameKeyPageViewCost' => 'int64',
         'age' => null,
         'regionId' => 'int64',
         'cityId' => 'int64',
@@ -651,7 +682,16 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'roiActivatedD7' => 'double',
         'roiActivatedD14' => 'double',
         'roiActivatedD30' => 'double',
-        'firstDayFirstPayRate' => 'double'
+        'firstDayFirstPayRate' => 'double',
+        'miniGameFirstDayAdMonetizationUsers' => 'int64',
+        'miniGameFirstDayAdMonetizationAmount' => 'int64',
+        'miniGameFirstDayAdPayingCost' => 'int64',
+        'miniGameIncomeRoi1' => 'double',
+        'miniGameFirstDayAdPayingArpu' => 'int64',
+        'miniGamePayingUsersD1' => 'int64',
+        'miniGamePayingAmountD1' => 'int64',
+        'miniGameFirstPayingUsers' => 'int64',
+        'miniGameFirstDayPayingRoi' => 'double'
     ];
 
     /**
@@ -783,6 +823,17 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'guideToFollowPageViewers' => 'guide_to_follow_page_viewers',
         'guideToFollowPageInteractionAmount' => 'guide_to_follow_page_interaction_amount',
         'guideToFollowPageInteractionUsers' => 'guide_to_follow_page_interaction_users',
+        'miniGameRegisterUsers' => 'mini_game_register_users',
+        'miniGameRegisterCost' => 'mini_game_register_cost',
+        'miniGameRegisterRate' => 'mini_game_register_rate',
+        'miniGameAdMonetizationUsers' => 'mini_game_ad_monetization_users',
+        'miniGamePayingCount' => 'mini_game_paying_count',
+        'miniGamePayingAmount' => 'mini_game_paying_amount',
+        'miniGameCreateRoleUsers' => 'mini_game_create_role_users',
+        'miniGameCreateRoleCost' => 'mini_game_create_role_cost',
+        'miniGameRetentionD1' => 'mini_game_retention_d1',
+        'miniGameKeyPageViewers' => 'mini_game_key_page_viewers',
+        'miniGameKeyPageViewCost' => 'mini_game_key_page_view_cost',
         'age' => 'age',
         'regionId' => 'region_id',
         'cityId' => 'city_id',
@@ -973,7 +1024,16 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'roiActivatedD7' => 'roi_activated_d7',
         'roiActivatedD14' => 'roi_activated_d14',
         'roiActivatedD30' => 'roi_activated_d30',
-        'firstDayFirstPayRate' => 'first_day_first_pay_rate'
+        'firstDayFirstPayRate' => 'first_day_first_pay_rate',
+        'miniGameFirstDayAdMonetizationUsers' => 'mini_game_first_day_ad_monetization_users',
+        'miniGameFirstDayAdMonetizationAmount' => 'mini_game_first_day_ad_monetization_amount',
+        'miniGameFirstDayAdPayingCost' => 'mini_game_first_day_ad_paying_cost',
+        'miniGameIncomeRoi1' => 'mini_game_income_roi_1',
+        'miniGameFirstDayAdPayingArpu' => 'mini_game_first_day_ad_paying_arpu',
+        'miniGamePayingUsersD1' => 'mini_game_paying_users_d1',
+        'miniGamePayingAmountD1' => 'mini_game_paying_amount_d1',
+        'miniGameFirstPayingUsers' => 'mini_game_first_paying_users',
+        'miniGameFirstDayPayingRoi' => 'mini_game_first_day_paying_roi'
     ];
 
     /**
@@ -1084,6 +1144,17 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'guideToFollowPageViewers' => 'setGuideToFollowPageViewers',
         'guideToFollowPageInteractionAmount' => 'setGuideToFollowPageInteractionAmount',
         'guideToFollowPageInteractionUsers' => 'setGuideToFollowPageInteractionUsers',
+        'miniGameRegisterUsers' => 'setMiniGameRegisterUsers',
+        'miniGameRegisterCost' => 'setMiniGameRegisterCost',
+        'miniGameRegisterRate' => 'setMiniGameRegisterRate',
+        'miniGameAdMonetizationUsers' => 'setMiniGameAdMonetizationUsers',
+        'miniGamePayingCount' => 'setMiniGamePayingCount',
+        'miniGamePayingAmount' => 'setMiniGamePayingAmount',
+        'miniGameCreateRoleUsers' => 'setMiniGameCreateRoleUsers',
+        'miniGameCreateRoleCost' => 'setMiniGameCreateRoleCost',
+        'miniGameRetentionD1' => 'setMiniGameRetentionD1',
+        'miniGameKeyPageViewers' => 'setMiniGameKeyPageViewers',
+        'miniGameKeyPageViewCost' => 'setMiniGameKeyPageViewCost',
         'age' => 'setAge',
         'regionId' => 'setRegionId',
         'cityId' => 'setCityId',
@@ -1274,7 +1345,16 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'roiActivatedD7' => 'setRoiActivatedD7',
         'roiActivatedD14' => 'setRoiActivatedD14',
         'roiActivatedD30' => 'setRoiActivatedD30',
-        'firstDayFirstPayRate' => 'setFirstDayFirstPayRate'
+        'firstDayFirstPayRate' => 'setFirstDayFirstPayRate',
+        'miniGameFirstDayAdMonetizationUsers' => 'setMiniGameFirstDayAdMonetizationUsers',
+        'miniGameFirstDayAdMonetizationAmount' => 'setMiniGameFirstDayAdMonetizationAmount',
+        'miniGameFirstDayAdPayingCost' => 'setMiniGameFirstDayAdPayingCost',
+        'miniGameIncomeRoi1' => 'setMiniGameIncomeRoi1',
+        'miniGameFirstDayAdPayingArpu' => 'setMiniGameFirstDayAdPayingArpu',
+        'miniGamePayingUsersD1' => 'setMiniGamePayingUsersD1',
+        'miniGamePayingAmountD1' => 'setMiniGamePayingAmountD1',
+        'miniGameFirstPayingUsers' => 'setMiniGameFirstPayingUsers',
+        'miniGameFirstDayPayingRoi' => 'setMiniGameFirstDayPayingRoi'
     ];
 
     /**
@@ -1385,6 +1465,17 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'guideToFollowPageViewers' => 'getGuideToFollowPageViewers',
         'guideToFollowPageInteractionAmount' => 'getGuideToFollowPageInteractionAmount',
         'guideToFollowPageInteractionUsers' => 'getGuideToFollowPageInteractionUsers',
+        'miniGameRegisterUsers' => 'getMiniGameRegisterUsers',
+        'miniGameRegisterCost' => 'getMiniGameRegisterCost',
+        'miniGameRegisterRate' => 'getMiniGameRegisterRate',
+        'miniGameAdMonetizationUsers' => 'getMiniGameAdMonetizationUsers',
+        'miniGamePayingCount' => 'getMiniGamePayingCount',
+        'miniGamePayingAmount' => 'getMiniGamePayingAmount',
+        'miniGameCreateRoleUsers' => 'getMiniGameCreateRoleUsers',
+        'miniGameCreateRoleCost' => 'getMiniGameCreateRoleCost',
+        'miniGameRetentionD1' => 'getMiniGameRetentionD1',
+        'miniGameKeyPageViewers' => 'getMiniGameKeyPageViewers',
+        'miniGameKeyPageViewCost' => 'getMiniGameKeyPageViewCost',
         'age' => 'getAge',
         'regionId' => 'getRegionId',
         'cityId' => 'getCityId',
@@ -1575,7 +1666,16 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'roiActivatedD7' => 'getRoiActivatedD7',
         'roiActivatedD14' => 'getRoiActivatedD14',
         'roiActivatedD30' => 'getRoiActivatedD30',
-        'firstDayFirstPayRate' => 'getFirstDayFirstPayRate'
+        'firstDayFirstPayRate' => 'getFirstDayFirstPayRate',
+        'miniGameFirstDayAdMonetizationUsers' => 'getMiniGameFirstDayAdMonetizationUsers',
+        'miniGameFirstDayAdMonetizationAmount' => 'getMiniGameFirstDayAdMonetizationAmount',
+        'miniGameFirstDayAdPayingCost' => 'getMiniGameFirstDayAdPayingCost',
+        'miniGameIncomeRoi1' => 'getMiniGameIncomeRoi1',
+        'miniGameFirstDayAdPayingArpu' => 'getMiniGameFirstDayAdPayingArpu',
+        'miniGamePayingUsersD1' => 'getMiniGamePayingUsersD1',
+        'miniGamePayingAmountD1' => 'getMiniGamePayingAmountD1',
+        'miniGameFirstPayingUsers' => 'getMiniGameFirstPayingUsers',
+        'miniGameFirstDayPayingRoi' => 'getMiniGameFirstDayPayingRoi'
     ];
 
     /**
@@ -1740,6 +1840,17 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['guideToFollowPageViewers'] = isset($data['guideToFollowPageViewers']) ? $data['guideToFollowPageViewers'] : null;
         $this->container['guideToFollowPageInteractionAmount'] = isset($data['guideToFollowPageInteractionAmount']) ? $data['guideToFollowPageInteractionAmount'] : null;
         $this->container['guideToFollowPageInteractionUsers'] = isset($data['guideToFollowPageInteractionUsers']) ? $data['guideToFollowPageInteractionUsers'] : null;
+        $this->container['miniGameRegisterUsers'] = isset($data['miniGameRegisterUsers']) ? $data['miniGameRegisterUsers'] : null;
+        $this->container['miniGameRegisterCost'] = isset($data['miniGameRegisterCost']) ? $data['miniGameRegisterCost'] : null;
+        $this->container['miniGameRegisterRate'] = isset($data['miniGameRegisterRate']) ? $data['miniGameRegisterRate'] : null;
+        $this->container['miniGameAdMonetizationUsers'] = isset($data['miniGameAdMonetizationUsers']) ? $data['miniGameAdMonetizationUsers'] : null;
+        $this->container['miniGamePayingCount'] = isset($data['miniGamePayingCount']) ? $data['miniGamePayingCount'] : null;
+        $this->container['miniGamePayingAmount'] = isset($data['miniGamePayingAmount']) ? $data['miniGamePayingAmount'] : null;
+        $this->container['miniGameCreateRoleUsers'] = isset($data['miniGameCreateRoleUsers']) ? $data['miniGameCreateRoleUsers'] : null;
+        $this->container['miniGameCreateRoleCost'] = isset($data['miniGameCreateRoleCost']) ? $data['miniGameCreateRoleCost'] : null;
+        $this->container['miniGameRetentionD1'] = isset($data['miniGameRetentionD1']) ? $data['miniGameRetentionD1'] : null;
+        $this->container['miniGameKeyPageViewers'] = isset($data['miniGameKeyPageViewers']) ? $data['miniGameKeyPageViewers'] : null;
+        $this->container['miniGameKeyPageViewCost'] = isset($data['miniGameKeyPageViewCost']) ? $data['miniGameKeyPageViewCost'] : null;
         $this->container['age'] = isset($data['age']) ? $data['age'] : null;
         $this->container['regionId'] = isset($data['regionId']) ? $data['regionId'] : null;
         $this->container['cityId'] = isset($data['cityId']) ? $data['cityId'] : null;
@@ -1931,6 +2042,15 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['roiActivatedD14'] = isset($data['roiActivatedD14']) ? $data['roiActivatedD14'] : null;
         $this->container['roiActivatedD30'] = isset($data['roiActivatedD30']) ? $data['roiActivatedD30'] : null;
         $this->container['firstDayFirstPayRate'] = isset($data['firstDayFirstPayRate']) ? $data['firstDayFirstPayRate'] : null;
+        $this->container['miniGameFirstDayAdMonetizationUsers'] = isset($data['miniGameFirstDayAdMonetizationUsers']) ? $data['miniGameFirstDayAdMonetizationUsers'] : null;
+        $this->container['miniGameFirstDayAdMonetizationAmount'] = isset($data['miniGameFirstDayAdMonetizationAmount']) ? $data['miniGameFirstDayAdMonetizationAmount'] : null;
+        $this->container['miniGameFirstDayAdPayingCost'] = isset($data['miniGameFirstDayAdPayingCost']) ? $data['miniGameFirstDayAdPayingCost'] : null;
+        $this->container['miniGameIncomeRoi1'] = isset($data['miniGameIncomeRoi1']) ? $data['miniGameIncomeRoi1'] : null;
+        $this->container['miniGameFirstDayAdPayingArpu'] = isset($data['miniGameFirstDayAdPayingArpu']) ? $data['miniGameFirstDayAdPayingArpu'] : null;
+        $this->container['miniGamePayingUsersD1'] = isset($data['miniGamePayingUsersD1']) ? $data['miniGamePayingUsersD1'] : null;
+        $this->container['miniGamePayingAmountD1'] = isset($data['miniGamePayingAmountD1']) ? $data['miniGamePayingAmountD1'] : null;
+        $this->container['miniGameFirstPayingUsers'] = isset($data['miniGameFirstPayingUsers']) ? $data['miniGameFirstPayingUsers'] : null;
+        $this->container['miniGameFirstDayPayingRoi'] = isset($data['miniGameFirstDayPayingRoi']) ? $data['miniGameFirstDayPayingRoi'] : null;
     }
 
     /**
@@ -4401,6 +4521,270 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setGuideToFollowPageInteractionUsers($guideToFollowPageInteractionUsers)
     {
         $this->container['guideToFollowPageInteractionUsers'] = $guideToFollowPageInteractionUsers;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameRegisterUsers
+     *
+     * @return int
+     */
+    public function getMiniGameRegisterUsers()
+    {
+        return $this->container['miniGameRegisterUsers'];
+    }
+
+    /**
+     * Sets miniGameRegisterUsers
+     *
+     * @param int $miniGameRegisterUsers miniGameRegisterUsers
+     *
+     * @return $this
+     */
+    public function setMiniGameRegisterUsers($miniGameRegisterUsers)
+    {
+        $this->container['miniGameRegisterUsers'] = $miniGameRegisterUsers;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameRegisterCost
+     *
+     * @return int
+     */
+    public function getMiniGameRegisterCost()
+    {
+        return $this->container['miniGameRegisterCost'];
+    }
+
+    /**
+     * Sets miniGameRegisterCost
+     *
+     * @param int $miniGameRegisterCost miniGameRegisterCost
+     *
+     * @return $this
+     */
+    public function setMiniGameRegisterCost($miniGameRegisterCost)
+    {
+        $this->container['miniGameRegisterCost'] = $miniGameRegisterCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameRegisterRate
+     *
+     * @return double
+     */
+    public function getMiniGameRegisterRate()
+    {
+        return $this->container['miniGameRegisterRate'];
+    }
+
+    /**
+     * Sets miniGameRegisterRate
+     *
+     * @param double $miniGameRegisterRate miniGameRegisterRate
+     *
+     * @return $this
+     */
+    public function setMiniGameRegisterRate($miniGameRegisterRate)
+    {
+        $this->container['miniGameRegisterRate'] = $miniGameRegisterRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameAdMonetizationUsers
+     *
+     * @return int
+     */
+    public function getMiniGameAdMonetizationUsers()
+    {
+        return $this->container['miniGameAdMonetizationUsers'];
+    }
+
+    /**
+     * Sets miniGameAdMonetizationUsers
+     *
+     * @param int $miniGameAdMonetizationUsers miniGameAdMonetizationUsers
+     *
+     * @return $this
+     */
+    public function setMiniGameAdMonetizationUsers($miniGameAdMonetizationUsers)
+    {
+        $this->container['miniGameAdMonetizationUsers'] = $miniGameAdMonetizationUsers;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayingCount
+     *
+     * @return int
+     */
+    public function getMiniGamePayingCount()
+    {
+        return $this->container['miniGamePayingCount'];
+    }
+
+    /**
+     * Sets miniGamePayingCount
+     *
+     * @param int $miniGamePayingCount miniGamePayingCount
+     *
+     * @return $this
+     */
+    public function setMiniGamePayingCount($miniGamePayingCount)
+    {
+        $this->container['miniGamePayingCount'] = $miniGamePayingCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayingAmount
+     *
+     * @return int
+     */
+    public function getMiniGamePayingAmount()
+    {
+        return $this->container['miniGamePayingAmount'];
+    }
+
+    /**
+     * Sets miniGamePayingAmount
+     *
+     * @param int $miniGamePayingAmount miniGamePayingAmount
+     *
+     * @return $this
+     */
+    public function setMiniGamePayingAmount($miniGamePayingAmount)
+    {
+        $this->container['miniGamePayingAmount'] = $miniGamePayingAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameCreateRoleUsers
+     *
+     * @return int
+     */
+    public function getMiniGameCreateRoleUsers()
+    {
+        return $this->container['miniGameCreateRoleUsers'];
+    }
+
+    /**
+     * Sets miniGameCreateRoleUsers
+     *
+     * @param int $miniGameCreateRoleUsers miniGameCreateRoleUsers
+     *
+     * @return $this
+     */
+    public function setMiniGameCreateRoleUsers($miniGameCreateRoleUsers)
+    {
+        $this->container['miniGameCreateRoleUsers'] = $miniGameCreateRoleUsers;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameCreateRoleCost
+     *
+     * @return int
+     */
+    public function getMiniGameCreateRoleCost()
+    {
+        return $this->container['miniGameCreateRoleCost'];
+    }
+
+    /**
+     * Sets miniGameCreateRoleCost
+     *
+     * @param int $miniGameCreateRoleCost miniGameCreateRoleCost
+     *
+     * @return $this
+     */
+    public function setMiniGameCreateRoleCost($miniGameCreateRoleCost)
+    {
+        $this->container['miniGameCreateRoleCost'] = $miniGameCreateRoleCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameRetentionD1
+     *
+     * @return int
+     */
+    public function getMiniGameRetentionD1()
+    {
+        return $this->container['miniGameRetentionD1'];
+    }
+
+    /**
+     * Sets miniGameRetentionD1
+     *
+     * @param int $miniGameRetentionD1 miniGameRetentionD1
+     *
+     * @return $this
+     */
+    public function setMiniGameRetentionD1($miniGameRetentionD1)
+    {
+        $this->container['miniGameRetentionD1'] = $miniGameRetentionD1;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameKeyPageViewers
+     *
+     * @return int
+     */
+    public function getMiniGameKeyPageViewers()
+    {
+        return $this->container['miniGameKeyPageViewers'];
+    }
+
+    /**
+     * Sets miniGameKeyPageViewers
+     *
+     * @param int $miniGameKeyPageViewers miniGameKeyPageViewers
+     *
+     * @return $this
+     */
+    public function setMiniGameKeyPageViewers($miniGameKeyPageViewers)
+    {
+        $this->container['miniGameKeyPageViewers'] = $miniGameKeyPageViewers;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameKeyPageViewCost
+     *
+     * @return int
+     */
+    public function getMiniGameKeyPageViewCost()
+    {
+        return $this->container['miniGameKeyPageViewCost'];
+    }
+
+    /**
+     * Sets miniGameKeyPageViewCost
+     *
+     * @param int $miniGameKeyPageViewCost miniGameKeyPageViewCost
+     *
+     * @return $this
+     */
+    public function setMiniGameKeyPageViewCost($miniGameKeyPageViewCost)
+    {
+        $this->container['miniGameKeyPageViewCost'] = $miniGameKeyPageViewCost;
 
         return $this;
     }
@@ -8985,6 +9369,222 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setFirstDayFirstPayRate($firstDayFirstPayRate)
     {
         $this->container['firstDayFirstPayRate'] = $firstDayFirstPayRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameFirstDayAdMonetizationUsers
+     *
+     * @return int
+     */
+    public function getMiniGameFirstDayAdMonetizationUsers()
+    {
+        return $this->container['miniGameFirstDayAdMonetizationUsers'];
+    }
+
+    /**
+     * Sets miniGameFirstDayAdMonetizationUsers
+     *
+     * @param int $miniGameFirstDayAdMonetizationUsers miniGameFirstDayAdMonetizationUsers
+     *
+     * @return $this
+     */
+    public function setMiniGameFirstDayAdMonetizationUsers($miniGameFirstDayAdMonetizationUsers)
+    {
+        $this->container['miniGameFirstDayAdMonetizationUsers'] = $miniGameFirstDayAdMonetizationUsers;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameFirstDayAdMonetizationAmount
+     *
+     * @return int
+     */
+    public function getMiniGameFirstDayAdMonetizationAmount()
+    {
+        return $this->container['miniGameFirstDayAdMonetizationAmount'];
+    }
+
+    /**
+     * Sets miniGameFirstDayAdMonetizationAmount
+     *
+     * @param int $miniGameFirstDayAdMonetizationAmount miniGameFirstDayAdMonetizationAmount
+     *
+     * @return $this
+     */
+    public function setMiniGameFirstDayAdMonetizationAmount($miniGameFirstDayAdMonetizationAmount)
+    {
+        $this->container['miniGameFirstDayAdMonetizationAmount'] = $miniGameFirstDayAdMonetizationAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameFirstDayAdPayingCost
+     *
+     * @return int
+     */
+    public function getMiniGameFirstDayAdPayingCost()
+    {
+        return $this->container['miniGameFirstDayAdPayingCost'];
+    }
+
+    /**
+     * Sets miniGameFirstDayAdPayingCost
+     *
+     * @param int $miniGameFirstDayAdPayingCost miniGameFirstDayAdPayingCost
+     *
+     * @return $this
+     */
+    public function setMiniGameFirstDayAdPayingCost($miniGameFirstDayAdPayingCost)
+    {
+        $this->container['miniGameFirstDayAdPayingCost'] = $miniGameFirstDayAdPayingCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameIncomeRoi1
+     *
+     * @return double
+     */
+    public function getMiniGameIncomeRoi1()
+    {
+        return $this->container['miniGameIncomeRoi1'];
+    }
+
+    /**
+     * Sets miniGameIncomeRoi1
+     *
+     * @param double $miniGameIncomeRoi1 miniGameIncomeRoi1
+     *
+     * @return $this
+     */
+    public function setMiniGameIncomeRoi1($miniGameIncomeRoi1)
+    {
+        $this->container['miniGameIncomeRoi1'] = $miniGameIncomeRoi1;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameFirstDayAdPayingArpu
+     *
+     * @return int
+     */
+    public function getMiniGameFirstDayAdPayingArpu()
+    {
+        return $this->container['miniGameFirstDayAdPayingArpu'];
+    }
+
+    /**
+     * Sets miniGameFirstDayAdPayingArpu
+     *
+     * @param int $miniGameFirstDayAdPayingArpu miniGameFirstDayAdPayingArpu
+     *
+     * @return $this
+     */
+    public function setMiniGameFirstDayAdPayingArpu($miniGameFirstDayAdPayingArpu)
+    {
+        $this->container['miniGameFirstDayAdPayingArpu'] = $miniGameFirstDayAdPayingArpu;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayingUsersD1
+     *
+     * @return int
+     */
+    public function getMiniGamePayingUsersD1()
+    {
+        return $this->container['miniGamePayingUsersD1'];
+    }
+
+    /**
+     * Sets miniGamePayingUsersD1
+     *
+     * @param int $miniGamePayingUsersD1 miniGamePayingUsersD1
+     *
+     * @return $this
+     */
+    public function setMiniGamePayingUsersD1($miniGamePayingUsersD1)
+    {
+        $this->container['miniGamePayingUsersD1'] = $miniGamePayingUsersD1;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayingAmountD1
+     *
+     * @return int
+     */
+    public function getMiniGamePayingAmountD1()
+    {
+        return $this->container['miniGamePayingAmountD1'];
+    }
+
+    /**
+     * Sets miniGamePayingAmountD1
+     *
+     * @param int $miniGamePayingAmountD1 miniGamePayingAmountD1
+     *
+     * @return $this
+     */
+    public function setMiniGamePayingAmountD1($miniGamePayingAmountD1)
+    {
+        $this->container['miniGamePayingAmountD1'] = $miniGamePayingAmountD1;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameFirstPayingUsers
+     *
+     * @return int
+     */
+    public function getMiniGameFirstPayingUsers()
+    {
+        return $this->container['miniGameFirstPayingUsers'];
+    }
+
+    /**
+     * Sets miniGameFirstPayingUsers
+     *
+     * @param int $miniGameFirstPayingUsers miniGameFirstPayingUsers
+     *
+     * @return $this
+     */
+    public function setMiniGameFirstPayingUsers($miniGameFirstPayingUsers)
+    {
+        $this->container['miniGameFirstPayingUsers'] = $miniGameFirstPayingUsers;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameFirstDayPayingRoi
+     *
+     * @return double
+     */
+    public function getMiniGameFirstDayPayingRoi()
+    {
+        return $this->container['miniGameFirstDayPayingRoi'];
+    }
+
+    /**
+     * Sets miniGameFirstDayPayingRoi
+     *
+     * @param double $miniGameFirstDayPayingRoi miniGameFirstDayPayingRoi
+     *
+     * @return $this
+     */
+    public function setMiniGameFirstDayPayingRoi($miniGameFirstDayPayingRoi)
+    {
+        $this->container['miniGameFirstDayPayingRoi'] = $miniGameFirstDayPayingRoi;
 
         return $this;
     }

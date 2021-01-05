@@ -85,7 +85,6 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'dynamicAdcreativeSpec' => '\TencentAds\Model\DynamicAdcreativeSpec',
         'isDeleted' => 'bool',
         'isDynamicCreative' => 'bool',
-        'multiShareOptimizationEnabled' => 'bool',
         'componentId' => 'int',
         'onlineEnabled' => 'bool',
         'revisedAdcreativeSpec' => '\TencentAds\Model\RevisedAdcreativeSpec',
@@ -137,7 +136,6 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'dynamicAdcreativeSpec' => null,
         'isDeleted' => null,
         'isDynamicCreative' => null,
-        'multiShareOptimizationEnabled' => null,
         'componentId' => 'int64',
         'onlineEnabled' => null,
         'revisedAdcreativeSpec' => null,
@@ -210,7 +208,6 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'dynamicAdcreativeSpec' => 'dynamic_adcreative_spec',
         'isDeleted' => 'is_deleted',
         'isDynamicCreative' => 'is_dynamic_creative',
-        'multiShareOptimizationEnabled' => 'multi_share_optimization_enabled',
         'componentId' => 'component_id',
         'onlineEnabled' => 'online_enabled',
         'revisedAdcreativeSpec' => 'revised_adcreative_spec',
@@ -262,7 +259,6 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'dynamicAdcreativeSpec' => 'setDynamicAdcreativeSpec',
         'isDeleted' => 'setIsDeleted',
         'isDynamicCreative' => 'setIsDynamicCreative',
-        'multiShareOptimizationEnabled' => 'setMultiShareOptimizationEnabled',
         'componentId' => 'setComponentId',
         'onlineEnabled' => 'setOnlineEnabled',
         'revisedAdcreativeSpec' => 'setRevisedAdcreativeSpec',
@@ -314,7 +310,6 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'dynamicAdcreativeSpec' => 'getDynamicAdcreativeSpec',
         'isDeleted' => 'getIsDeleted',
         'isDynamicCreative' => 'getIsDynamicCreative',
-        'multiShareOptimizationEnabled' => 'getMultiShareOptimizationEnabled',
         'componentId' => 'getComponentId',
         'onlineEnabled' => 'getOnlineEnabled',
         'revisedAdcreativeSpec' => 'getRevisedAdcreativeSpec',
@@ -420,7 +415,6 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['dynamicAdcreativeSpec'] = isset($data['dynamicAdcreativeSpec']) ? $data['dynamicAdcreativeSpec'] : null;
         $this->container['isDeleted'] = isset($data['isDeleted']) ? $data['isDeleted'] : null;
         $this->container['isDynamicCreative'] = isset($data['isDynamicCreative']) ? $data['isDynamicCreative'] : null;
-        $this->container['multiShareOptimizationEnabled'] = isset($data['multiShareOptimizationEnabled']) ? $data['multiShareOptimizationEnabled'] : null;
         $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
         $this->container['onlineEnabled'] = isset($data['onlineEnabled']) ? $data['onlineEnabled'] : null;
         $this->container['revisedAdcreativeSpec'] = isset($data['revisedAdcreativeSpec']) ? $data['revisedAdcreativeSpec'] : null;
@@ -1107,30 +1101,6 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setIsDynamicCreative($isDynamicCreative)
     {
         $this->container['isDynamicCreative'] = $isDynamicCreative;
-
-        return $this;
-    }
-
-    /**
-     * Gets multiShareOptimizationEnabled
-     *
-     * @return bool
-     */
-    public function getMultiShareOptimizationEnabled()
-    {
-        return $this->container['multiShareOptimizationEnabled'];
-    }
-
-    /**
-     * Sets multiShareOptimizationEnabled
-     *
-     * @param bool $multiShareOptimizationEnabled multiShareOptimizationEnabled
-     *
-     * @return $this
-     */
-    public function setMultiShareOptimizationEnabled($multiShareOptimizationEnabled)
-    {
-        $this->container['multiShareOptimizationEnabled'] = $multiShareOptimizationEnabled;
 
         return $this;
     }
