@@ -1,6 +1,6 @@
 <?php
 /**
- * ReportJdCreativeTemplateHourlyReportRequest
+ * TargetingsShareAddResponse
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ReportJdCreativeTemplateHourlyReportRequest Class Doc Comment
+ * TargetingsShareAddResponse Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ReportJdCreativeTemplateHourlyReportRequest implements ModelInterface, ArrayAccess
+class TargetingsShareAddResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class ReportJdCreativeTemplateHourlyReportRequest implements ModelInterface, Arr
       *
       * @var string
       */
-    protected static $swaggerModelName = 'ReportJdCreativeTemplateHourlyReportRequest';
+    protected static $swaggerModelName = 'TargetingsShareAddResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,11 +57,11 @@ class ReportJdCreativeTemplateHourlyReportRequest implements ModelInterface, Arr
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'date' => 'string',
-        'creativeTemplateIdList' => 'int[]',
-        'page' => 'int',
-        'pageSize' => 'int'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\TargetingsShareAddResponseData'
     ];
 
     /**
@@ -70,11 +70,11 @@ class ReportJdCreativeTemplateHourlyReportRequest implements ModelInterface, Arr
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'date' => null,
-        'creativeTemplateIdList' => 'int64',
-        'page' => 'int64',
-        'pageSize' => 'int64'
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -104,11 +104,11 @@ class ReportJdCreativeTemplateHourlyReportRequest implements ModelInterface, Arr
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'date' => 'date',
-        'creativeTemplateIdList' => 'creative_template_id_list',
-        'page' => 'page',
-        'pageSize' => 'page_size'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -117,11 +117,11 @@ class ReportJdCreativeTemplateHourlyReportRequest implements ModelInterface, Arr
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'date' => 'setDate',
-        'creativeTemplateIdList' => 'setCreativeTemplateIdList',
-        'page' => 'setPage',
-        'pageSize' => 'setPageSize'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -130,11 +130,11 @@ class ReportJdCreativeTemplateHourlyReportRequest implements ModelInterface, Arr
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'date' => 'getDate',
-        'creativeTemplateIdList' => 'getCreativeTemplateIdList',
-        'page' => 'getPage',
-        'pageSize' => 'getPageSize'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -197,11 +197,11 @@ class ReportJdCreativeTemplateHourlyReportRequest implements ModelInterface, Arr
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['date'] = isset($data['date']) ? $data['date'] : null;
-        $this->container['creativeTemplateIdList'] = isset($data['creativeTemplateIdList']) ? $data['creativeTemplateIdList'] : null;
-        $this->container['page'] = isset($data['page']) ? $data['page'] : null;
-        $this->container['pageSize'] = isset($data['pageSize']) ? $data['pageSize'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -229,121 +229,121 @@ class ReportJdCreativeTemplateHourlyReportRequest implements ModelInterface, Arr
 
 
     /**
-     * Gets accountId
+     * Gets code
      *
      * @return int
      */
-    public function getAccountId()
+    public function getCode()
     {
-        return $this->container['accountId'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets accountId
+     * Sets code
      *
-     * @param int $accountId accountId
+     * @param int $code code
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setCode($code)
     {
-        $this->container['accountId'] = $accountId;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets date
+     * Gets message
      *
      * @return string
      */
-    public function getDate()
+    public function getMessage()
     {
-        return $this->container['date'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets date
+     * Sets message
      *
-     * @param string $date date
+     * @param string $message message
      *
      * @return $this
      */
-    public function setDate($date)
+    public function setMessage($message)
     {
-        $this->container['date'] = $date;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets creativeTemplateIdList
+     * Gets messageCn
      *
-     * @return int[]
+     * @return string
      */
-    public function getCreativeTemplateIdList()
+    public function getMessageCn()
     {
-        return $this->container['creativeTemplateIdList'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets creativeTemplateIdList
+     * Sets messageCn
      *
-     * @param int[] $creativeTemplateIdList creativeTemplateIdList
+     * @param string $messageCn messageCn
      *
      * @return $this
      */
-    public function setCreativeTemplateIdList($creativeTemplateIdList)
+    public function setMessageCn($messageCn)
     {
-        $this->container['creativeTemplateIdList'] = $creativeTemplateIdList;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets page
+     * Gets errors
      *
-     * @return int
+     * @return \TencentAds\Model\ApiErrorStruct[]
      */
-    public function getPage()
+    public function getErrors()
     {
-        return $this->container['page'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets page
+     * Sets errors
      *
-     * @param int $page page
+     * @param \TencentAds\Model\ApiErrorStruct[] $errors errors
      *
      * @return $this
      */
-    public function setPage($page)
+    public function setErrors($errors)
     {
-        $this->container['page'] = $page;
+        $this->container['errors'] = $errors;
 
         return $this;
     }
 
     /**
-     * Gets pageSize
+     * Gets data
      *
-     * @return int
+     * @return \TencentAds\Model\TargetingsShareAddResponseData
      */
-    public function getPageSize()
+    public function getData()
     {
-        return $this->container['pageSize'];
+        return $this->container['data'];
     }
 
     /**
-     * Sets pageSize
+     * Sets data
      *
-     * @param int $pageSize pageSize
+     * @param \TencentAds\Model\TargetingsShareAddResponseData $data data
      *
      * @return $this
      */
-    public function setPageSize($pageSize)
+    public function setData($data)
     {
-        $this->container['pageSize'] = $pageSize;
+        $this->container['data'] = $data;
 
         return $this;
     }

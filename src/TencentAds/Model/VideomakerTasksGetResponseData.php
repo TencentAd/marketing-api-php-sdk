@@ -60,7 +60,8 @@ class VideomakerTasksGetResponseData implements ModelInterface, ArrayAccess
         'code' => 'int',
         'taskId' => 'string',
         'status' => '\TencentAds\Model\Status',
-        'videoId' => 'string'
+        'videoId' => 'string',
+        'otherData' => '\TencentAds\Model\OtherData'
     ];
 
     /**
@@ -72,7 +73,8 @@ class VideomakerTasksGetResponseData implements ModelInterface, ArrayAccess
         'code' => 'int64',
         'taskId' => null,
         'status' => null,
-        'videoId' => null
+        'videoId' => null,
+        'otherData' => null
     ];
 
     /**
@@ -105,7 +107,8 @@ class VideomakerTasksGetResponseData implements ModelInterface, ArrayAccess
         'code' => 'code',
         'taskId' => 'task_id',
         'status' => 'status',
-        'videoId' => 'video_id'
+        'videoId' => 'video_id',
+        'otherData' => 'other_data'
     ];
 
     /**
@@ -117,7 +120,8 @@ class VideomakerTasksGetResponseData implements ModelInterface, ArrayAccess
         'code' => 'setCode',
         'taskId' => 'setTaskId',
         'status' => 'setStatus',
-        'videoId' => 'setVideoId'
+        'videoId' => 'setVideoId',
+        'otherData' => 'setOtherData'
     ];
 
     /**
@@ -129,7 +133,8 @@ class VideomakerTasksGetResponseData implements ModelInterface, ArrayAccess
         'code' => 'getCode',
         'taskId' => 'getTaskId',
         'status' => 'getStatus',
-        'videoId' => 'getVideoId'
+        'videoId' => 'getVideoId',
+        'otherData' => 'getOtherData'
     ];
 
     /**
@@ -196,6 +201,7 @@ class VideomakerTasksGetResponseData implements ModelInterface, ArrayAccess
         $this->container['taskId'] = isset($data['taskId']) ? $data['taskId'] : null;
         $this->container['status'] = isset($data['status']) ? $data['status'] : null;
         $this->container['videoId'] = isset($data['videoId']) ? $data['videoId'] : null;
+        $this->container['otherData'] = isset($data['otherData']) ? $data['otherData'] : null;
     }
 
     /**
@@ -314,6 +320,30 @@ class VideomakerTasksGetResponseData implements ModelInterface, ArrayAccess
     public function setVideoId($videoId)
     {
         $this->container['videoId'] = $videoId;
+
+        return $this;
+    }
+
+    /**
+     * Gets otherData
+     *
+     * @return \TencentAds\Model\OtherData
+     */
+    public function getOtherData()
+    {
+        return $this->container['otherData'];
+    }
+
+    /**
+     * Sets otherData
+     *
+     * @param \TencentAds\Model\OtherData $otherData otherData
+     *
+     * @return $this
+     */
+    public function setOtherData($otherData)
+    {
+        $this->container['otherData'] = $otherData;
 
         return $this;
     }

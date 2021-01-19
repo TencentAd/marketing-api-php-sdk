@@ -96,14 +96,15 @@ class VideomakerSubtitlesApi
      * @param  string $videoId videoId (optional)
      * @param  \SplFileObject $videoFile videoFile (optional)
      * @param  string $signature signature (optional)
+     * @param  bool $onlySubtitleFile onlySubtitleFile (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\VideomakerSubtitlesAddResponse
      */
-    public function videomakerSubtitlesAdd($accountId, $videoId = null, $videoFile = null, $signature = null)
+    public function videomakerSubtitlesAdd($accountId, $videoId = null, $videoFile = null, $signature = null, $onlySubtitleFile = null)
     {
-        list($response) = $this->videomakerSubtitlesAddWithHttpInfo($accountId, $videoId, $videoFile, $signature);
+        list($response) = $this->videomakerSubtitlesAddWithHttpInfo($accountId, $videoId, $videoFile, $signature, $onlySubtitleFile);
         return $response;
     }
 
@@ -116,15 +117,16 @@ class VideomakerSubtitlesApi
      * @param  string $videoId (optional)
      * @param  \SplFileObject $videoFile (optional)
      * @param  string $signature (optional)
+     * @param  bool $onlySubtitleFile (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\VideomakerSubtitlesAddResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function videomakerSubtitlesAddWithHttpInfo($accountId, $videoId = null, $videoFile = null, $signature = null)
+    public function videomakerSubtitlesAddWithHttpInfo($accountId, $videoId = null, $videoFile = null, $signature = null, $onlySubtitleFile = null)
     {
         $returnType = '\TencentAds\Model\VideomakerSubtitlesAddResponse';
-        $request = $this->videomakerSubtitlesAddRequest($accountId, $videoId, $videoFile, $signature);
+        $request = $this->videomakerSubtitlesAddRequest($accountId, $videoId, $videoFile, $signature, $onlySubtitleFile);
 
         try {
             $options = $this->createHttpClientOption();
@@ -194,13 +196,14 @@ class VideomakerSubtitlesApi
      * @param  string $videoId (optional)
      * @param  \SplFileObject $videoFile (optional)
      * @param  string $signature (optional)
+     * @param  bool $onlySubtitleFile (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function videomakerSubtitlesAddAsync($accountId, $videoId = null, $videoFile = null, $signature = null)
+    public function videomakerSubtitlesAddAsync($accountId, $videoId = null, $videoFile = null, $signature = null, $onlySubtitleFile = null)
     {
-        return $this->videomakerSubtitlesAddAsyncWithHttpInfo($accountId, $videoId, $videoFile, $signature)
+        return $this->videomakerSubtitlesAddAsyncWithHttpInfo($accountId, $videoId, $videoFile, $signature, $onlySubtitleFile)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -217,14 +220,15 @@ class VideomakerSubtitlesApi
      * @param  string $videoId (optional)
      * @param  \SplFileObject $videoFile (optional)
      * @param  string $signature (optional)
+     * @param  bool $onlySubtitleFile (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function videomakerSubtitlesAddAsyncWithHttpInfo($accountId, $videoId = null, $videoFile = null, $signature = null)
+    public function videomakerSubtitlesAddAsyncWithHttpInfo($accountId, $videoId = null, $videoFile = null, $signature = null, $onlySubtitleFile = null)
     {
         $returnType = '\TencentAds\Model\VideomakerSubtitlesAddResponse';
-        $request = $this->videomakerSubtitlesAddRequest($accountId, $videoId, $videoFile, $signature);
+        $request = $this->videomakerSubtitlesAddRequest($accountId, $videoId, $videoFile, $signature, $onlySubtitleFile);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -270,11 +274,12 @@ class VideomakerSubtitlesApi
      * @param  string $videoId (optional)
      * @param  \SplFileObject $videoFile (optional)
      * @param  string $signature (optional)
+     * @param  bool $onlySubtitleFile (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function videomakerSubtitlesAddRequest($accountId, $videoId = null, $videoFile = null, $signature = null)
+    protected function videomakerSubtitlesAddRequest($accountId, $videoId = null, $videoFile = null, $signature = null, $onlySubtitleFile = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -308,6 +313,10 @@ class VideomakerSubtitlesApi
         // form params
         if ($signature !== null) {
             $formParams['signature'] = ObjectSerializer::toFormValue($signature);
+        }
+        // form params
+        if ($onlySubtitleFile !== null) {
+            $formParams['only_subtitle_file'] = ObjectSerializer::toFormValue($onlySubtitleFile);
         }
         // body params
         $_tempBody = null;

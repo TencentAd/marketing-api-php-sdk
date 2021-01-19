@@ -77,6 +77,12 @@ class CalculateStatus
     const PART_INVALID = 'CALCULATE_STATUS_PART_INVALID';
     const AD_PARTIAL_NORMAL = 'CALCULATE_STATUS_AD_PARTIAL_NORMAL';
     const AD_PARTIAL_PENDING = 'CALCULATE_STATUS_AD_PARTIAL_PENDING';
+    const UNKNOWN = 'CALCULATE_STATUS_UNKNOWN';
+    const ACTIVE_AD_LIMIT = 'CALCULATE_STATUS_ACTIVE_AD_LIMIT';
+    const WECHAT_CHANNELS_STOP = 'CALCULATE_STATUS_WECHAT_CHANNELS_STOP';
+    const WECHAT_CHANNELS_READY = 'CALCULATE_STATUS_WECHAT_CHANNELS_READY';
+    const ENABLE = 'CALCULATE_STATUS_ENABLE';
+    const EXCLUDE_DEL = 'CALCULATE_STATUS_EXCLUDE_DEL';
     
     /**
      * Gets allowable values of the enum
@@ -118,6 +124,12 @@ class CalculateStatus
             self::PART_INVALID,
             self::AD_PARTIAL_NORMAL,
             self::AD_PARTIAL_PENDING,
+            self::UNKNOWN,
+            self::ACTIVE_AD_LIMIT,
+            self::WECHAT_CHANNELS_STOP,
+            self::WECHAT_CHANNELS_READY,
+            self::ENABLE,
+            self::EXCLUDE_DEL,
         ];
     }
 }

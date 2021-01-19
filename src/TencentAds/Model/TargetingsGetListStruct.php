@@ -67,6 +67,9 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'int',
         'adLockStatus' => '\TencentAds\Model\AdLockStatus',
         'targetingTranslation' => 'string',
+        'targetingSourceType' => '\TencentAds\Model\TargetingPkgSourceType',
+        'shareFromAccountId' => 'int',
+        'shareFromTargetingId' => 'int',
         'targeting' => '\TencentAds\Model\ReadTargetingSetting'
     ];
 
@@ -85,6 +88,9 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'int64',
         'adLockStatus' => null,
         'targetingTranslation' => null,
+        'targetingSourceType' => null,
+        'shareFromAccountId' => 'int64',
+        'shareFromTargetingId' => 'int64',
         'targeting' => null
     ];
 
@@ -124,6 +130,9 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'last_modified_time',
         'adLockStatus' => 'ad_lock_status',
         'targetingTranslation' => 'targeting_translation',
+        'targetingSourceType' => 'targeting_source_type',
+        'shareFromAccountId' => 'share_from_account_id',
+        'shareFromTargetingId' => 'share_from_targeting_id',
         'targeting' => 'targeting'
     ];
 
@@ -142,6 +151,9 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'setLastModifiedTime',
         'adLockStatus' => 'setAdLockStatus',
         'targetingTranslation' => 'setTargetingTranslation',
+        'targetingSourceType' => 'setTargetingSourceType',
+        'shareFromAccountId' => 'setShareFromAccountId',
+        'shareFromTargetingId' => 'setShareFromTargetingId',
         'targeting' => 'setTargeting'
     ];
 
@@ -160,6 +172,9 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'getLastModifiedTime',
         'adLockStatus' => 'getAdLockStatus',
         'targetingTranslation' => 'getTargetingTranslation',
+        'targetingSourceType' => 'getTargetingSourceType',
+        'shareFromAccountId' => 'getShareFromAccountId',
+        'shareFromTargetingId' => 'getShareFromTargetingId',
         'targeting' => 'getTargeting'
     ];
 
@@ -232,6 +247,9 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
         $this->container['adLockStatus'] = isset($data['adLockStatus']) ? $data['adLockStatus'] : null;
         $this->container['targetingTranslation'] = isset($data['targetingTranslation']) ? $data['targetingTranslation'] : null;
+        $this->container['targetingSourceType'] = isset($data['targetingSourceType']) ? $data['targetingSourceType'] : null;
+        $this->container['shareFromAccountId'] = isset($data['shareFromAccountId']) ? $data['shareFromAccountId'] : null;
+        $this->container['shareFromTargetingId'] = isset($data['shareFromTargetingId']) ? $data['shareFromTargetingId'] : null;
         $this->container['targeting'] = isset($data['targeting']) ? $data['targeting'] : null;
     }
 
@@ -471,6 +489,78 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     public function setTargetingTranslation($targetingTranslation)
     {
         $this->container['targetingTranslation'] = $targetingTranslation;
+
+        return $this;
+    }
+
+    /**
+     * Gets targetingSourceType
+     *
+     * @return \TencentAds\Model\TargetingPkgSourceType
+     */
+    public function getTargetingSourceType()
+    {
+        return $this->container['targetingSourceType'];
+    }
+
+    /**
+     * Sets targetingSourceType
+     *
+     * @param \TencentAds\Model\TargetingPkgSourceType $targetingSourceType targetingSourceType
+     *
+     * @return $this
+     */
+    public function setTargetingSourceType($targetingSourceType)
+    {
+        $this->container['targetingSourceType'] = $targetingSourceType;
+
+        return $this;
+    }
+
+    /**
+     * Gets shareFromAccountId
+     *
+     * @return int
+     */
+    public function getShareFromAccountId()
+    {
+        return $this->container['shareFromAccountId'];
+    }
+
+    /**
+     * Sets shareFromAccountId
+     *
+     * @param int $shareFromAccountId shareFromAccountId
+     *
+     * @return $this
+     */
+    public function setShareFromAccountId($shareFromAccountId)
+    {
+        $this->container['shareFromAccountId'] = $shareFromAccountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets shareFromTargetingId
+     *
+     * @return int
+     */
+    public function getShareFromTargetingId()
+    {
+        return $this->container['shareFromTargetingId'];
+    }
+
+    /**
+     * Sets shareFromTargetingId
+     *
+     * @param int $shareFromTargetingId shareFromTargetingId
+     *
+     * @return $this
+     */
+    public function setShareFromTargetingId($shareFromTargetingId)
+    {
+        $this->container['shareFromTargetingId'] = $shareFromTargetingId;
 
         return $this;
     }

@@ -51,6 +51,7 @@ class TaskStatus
     const CANCELLED = 'TASK_STATUS_CANCELLED';
     const FAIL = 'TASK_STATUS_FAIL';
     const DELETED = 'TASK_STATUS_DELETED';
+    const DRAFT = 'TASK_STATUS_DRAFT';
     
     /**
      * Gets allowable values of the enum
@@ -66,6 +67,7 @@ class TaskStatus
             self::CANCELLED,
             self::FAIL,
             self::DELETED,
+            self::DRAFT,
         ];
     }
 }

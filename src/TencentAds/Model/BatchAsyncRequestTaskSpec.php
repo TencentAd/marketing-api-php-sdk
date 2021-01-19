@@ -67,7 +67,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateCampaignSpeedModeSpec' => '\TencentAds\Model\UpdateCampaignSpeedModeItem[]',
         'deleteCampaignSpec' => '\TencentAds\Model\DeleteCampaignItem[]',
         'deleteAdgroupSpec' => '\TencentAds\Model\DeleteAdgroupItem[]',
-        'deleteAdSpec' => '\TencentAds\Model\DeleteAdItem[]'
+        'deleteAdSpec' => '\TencentAds\Model\DeleteAdItem[]',
+        'targetingsShareSpec' => '\TencentAds\Model\TargetingsShareItem[]'
     ];
 
     /**
@@ -85,7 +86,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateCampaignSpeedModeSpec' => null,
         'deleteCampaignSpec' => null,
         'deleteAdgroupSpec' => null,
-        'deleteAdSpec' => null
+        'deleteAdSpec' => null,
+        'targetingsShareSpec' => null
     ];
 
     /**
@@ -124,7 +126,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateCampaignSpeedModeSpec' => 'update_campaign_speed_mode_spec',
         'deleteCampaignSpec' => 'delete_campaign_spec',
         'deleteAdgroupSpec' => 'delete_adgroup_spec',
-        'deleteAdSpec' => 'delete_ad_spec'
+        'deleteAdSpec' => 'delete_ad_spec',
+        'targetingsShareSpec' => 'targetings_share_spec'
     ];
 
     /**
@@ -142,7 +145,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateCampaignSpeedModeSpec' => 'setUpdateCampaignSpeedModeSpec',
         'deleteCampaignSpec' => 'setDeleteCampaignSpec',
         'deleteAdgroupSpec' => 'setDeleteAdgroupSpec',
-        'deleteAdSpec' => 'setDeleteAdSpec'
+        'deleteAdSpec' => 'setDeleteAdSpec',
+        'targetingsShareSpec' => 'setTargetingsShareSpec'
     ];
 
     /**
@@ -160,7 +164,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateCampaignSpeedModeSpec' => 'getUpdateCampaignSpeedModeSpec',
         'deleteCampaignSpec' => 'getDeleteCampaignSpec',
         'deleteAdgroupSpec' => 'getDeleteAdgroupSpec',
-        'deleteAdSpec' => 'getDeleteAdSpec'
+        'deleteAdSpec' => 'getDeleteAdSpec',
+        'targetingsShareSpec' => 'getTargetingsShareSpec'
     ];
 
     /**
@@ -233,6 +238,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         $this->container['deleteCampaignSpec'] = isset($data['deleteCampaignSpec']) ? $data['deleteCampaignSpec'] : null;
         $this->container['deleteAdgroupSpec'] = isset($data['deleteAdgroupSpec']) ? $data['deleteAdgroupSpec'] : null;
         $this->container['deleteAdSpec'] = isset($data['deleteAdSpec']) ? $data['deleteAdSpec'] : null;
+        $this->container['targetingsShareSpec'] = isset($data['targetingsShareSpec']) ? $data['targetingsShareSpec'] : null;
     }
 
     /**
@@ -495,6 +501,30 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     public function setDeleteAdSpec($deleteAdSpec)
     {
         $this->container['deleteAdSpec'] = $deleteAdSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets targetingsShareSpec
+     *
+     * @return \TencentAds\Model\TargetingsShareItem[]
+     */
+    public function getTargetingsShareSpec()
+    {
+        return $this->container['targetingsShareSpec'];
+    }
+
+    /**
+     * Sets targetingsShareSpec
+     *
+     * @param \TencentAds\Model\TargetingsShareItem[] $targetingsShareSpec targetingsShareSpec
+     *
+     * @return $this
+     */
+    public function setTargetingsShareSpec($targetingsShareSpec)
+    {
+        $this->container['targetingsShareSpec'] = $targetingsShareSpec;
 
         return $this;
     }

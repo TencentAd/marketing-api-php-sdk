@@ -1,6 +1,6 @@
 <?php
 /**
- * ReportApi
+ * TargetingsShareApi
  * PHP version 5
  *
  * @category Class
@@ -40,14 +40,14 @@ use TencentAds\HeaderSelector;
 use TencentAds\ObjectSerializer;
 
 /**
- * ReportApi Class Doc Comment
+ * TargetingsShareApi Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ReportApi
+class TargetingsShareApi
 {
     /**
      * @var ClientInterface
@@ -88,37 +88,37 @@ class ReportApi
     }
 
     /**
-     * Operation reportConversionsPredict
+     * Operation targetingsShareAdd
      *
-     * 获取当日转化效果预估数据
+     * 分享定向
      *
-     * @param  \TencentAds\Model\ReportConversionsPredictRequest $data data (required)
+     * @param  \TencentAds\Model\TargetingsShareAddRequest $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ReportConversionsPredictResponse
+     * @return \TencentAds\Model\TargetingsShareAddResponse
      */
-    public function reportConversionsPredict($data)
+    public function targetingsShareAdd($data)
     {
-        list($response) = $this->reportConversionsPredictWithHttpInfo($data);
+        list($response) = $this->targetingsShareAddWithHttpInfo($data);
         return $response;
     }
 
     /**
-     * Operation reportConversionsPredictWithHttpInfo
+     * Operation targetingsShareAddWithHttpInfo
      *
-     * 获取当日转化效果预估数据
+     * 分享定向
      *
-     * @param  \TencentAds\Model\ReportConversionsPredictRequest $data (required)
+     * @param  \TencentAds\Model\TargetingsShareAddRequest $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \TencentAds\Model\ReportConversionsPredictResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TencentAds\Model\TargetingsShareAddResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function reportConversionsPredictWithHttpInfo($data)
+    public function targetingsShareAddWithHttpInfo($data)
     {
-        $returnType = '\TencentAds\Model\ReportConversionsPredictResponse';
-        $request = $this->reportConversionsPredictRequest($data);
+        $returnType = '\TencentAds\Model\TargetingsShareAddResponse';
+        $request = $this->targetingsShareAddRequest($data);
 
         try {
             $options = $this->createHttpClientOption();
@@ -169,7 +169,7 @@ class ReportApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\TencentAds\Model\ReportConversionsPredictResponse',
+                        '\TencentAds\Model\TargetingsShareAddResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -180,18 +180,18 @@ class ReportApi
     }
 
     /**
-     * Operation reportConversionsPredictAsync
+     * Operation targetingsShareAddAsync
      *
-     * 获取当日转化效果预估数据
+     * 分享定向
      *
-     * @param  \TencentAds\Model\ReportConversionsPredictRequest $data (required)
+     * @param  \TencentAds\Model\TargetingsShareAddRequest $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function reportConversionsPredictAsync($data)
+    public function targetingsShareAddAsync($data)
     {
-        return $this->reportConversionsPredictAsyncWithHttpInfo($data)
+        return $this->targetingsShareAddAsyncWithHttpInfo($data)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -200,19 +200,19 @@ class ReportApi
     }
 
     /**
-     * Operation reportConversionsPredictAsyncWithHttpInfo
+     * Operation targetingsShareAddAsyncWithHttpInfo
      *
-     * 获取当日转化效果预估数据
+     * 分享定向
      *
-     * @param  \TencentAds\Model\ReportConversionsPredictRequest $data (required)
+     * @param  \TencentAds\Model\TargetingsShareAddRequest $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function reportConversionsPredictAsyncWithHttpInfo($data)
+    public function targetingsShareAddAsyncWithHttpInfo($data)
     {
-        $returnType = '\TencentAds\Model\ReportConversionsPredictResponse';
-        $request = $this->reportConversionsPredictRequest($data);
+        $returnType = '\TencentAds\Model\TargetingsShareAddResponse';
+        $request = $this->targetingsShareAddRequest($data);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -252,23 +252,23 @@ class ReportApi
     }
 
     /**
-     * Create request for operation 'reportConversionsPredict'
+     * Create request for operation 'targetingsShareAdd'
      *
-     * @param  \TencentAds\Model\ReportConversionsPredictRequest $data (required)
+     * @param  \TencentAds\Model\TargetingsShareAddRequest $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function reportConversionsPredictRequest($data)
+    protected function targetingsShareAddRequest($data)
     {
         // verify the required parameter 'data' is set
         if ($data === null || (is_array($data) && count($data) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $data when calling reportConversionsPredict'
+                'Missing the required parameter $data when calling targetingsShareAdd'
             );
         }
 
-        $resourcePath = '/report/conversions_predict';
+        $resourcePath = '/targetings_share/add';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -370,37 +370,45 @@ class ReportApi
     }
 
     /**
-     * Operation reportVideoFrame
+     * Operation targetingsShareGet
      *
-     * 视频流失分析接口
+     * 获取定向分享记录
      *
-     * @param  \TencentAds\Model\ReportVideoFrameRequest $data data (required)
+     * @param  int $accountId accountId (required)
+     * @param  int $targetingId targetingId (required)
+     * @param  int $page page (optional)
+     * @param  int $pageSize pageSize (optional)
+     * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ReportVideoFrameResponse
+     * @return \TencentAds\Model\TargetingsShareGetResponse
      */
-    public function reportVideoFrame($data)
+    public function targetingsShareGet($accountId, $targetingId, $page = null, $pageSize = null, $fields = null)
     {
-        list($response) = $this->reportVideoFrameWithHttpInfo($data);
+        list($response) = $this->targetingsShareGetWithHttpInfo($accountId, $targetingId, $page, $pageSize, $fields);
         return $response;
     }
 
     /**
-     * Operation reportVideoFrameWithHttpInfo
+     * Operation targetingsShareGetWithHttpInfo
      *
-     * 视频流失分析接口
+     * 获取定向分享记录
      *
-     * @param  \TencentAds\Model\ReportVideoFrameRequest $data (required)
+     * @param  int $accountId (required)
+     * @param  int $targetingId (required)
+     * @param  int $page (optional)
+     * @param  int $pageSize (optional)
+     * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \TencentAds\Model\ReportVideoFrameResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TencentAds\Model\TargetingsShareGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function reportVideoFrameWithHttpInfo($data)
+    public function targetingsShareGetWithHttpInfo($accountId, $targetingId, $page = null, $pageSize = null, $fields = null)
     {
-        $returnType = '\TencentAds\Model\ReportVideoFrameResponse';
-        $request = $this->reportVideoFrameRequest($data);
+        $returnType = '\TencentAds\Model\TargetingsShareGetResponse';
+        $request = $this->targetingsShareGetRequest($accountId, $targetingId, $page, $pageSize, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -451,7 +459,7 @@ class ReportApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\TencentAds\Model\ReportVideoFrameResponse',
+                        '\TencentAds\Model\TargetingsShareGetResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -462,18 +470,22 @@ class ReportApi
     }
 
     /**
-     * Operation reportVideoFrameAsync
+     * Operation targetingsShareGetAsync
      *
-     * 视频流失分析接口
+     * 获取定向分享记录
      *
-     * @param  \TencentAds\Model\ReportVideoFrameRequest $data (required)
+     * @param  int $accountId (required)
+     * @param  int $targetingId (required)
+     * @param  int $page (optional)
+     * @param  int $pageSize (optional)
+     * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function reportVideoFrameAsync($data)
+    public function targetingsShareGetAsync($accountId, $targetingId, $page = null, $pageSize = null, $fields = null)
     {
-        return $this->reportVideoFrameAsyncWithHttpInfo($data)
+        return $this->targetingsShareGetAsyncWithHttpInfo($accountId, $targetingId, $page, $pageSize, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -482,19 +494,23 @@ class ReportApi
     }
 
     /**
-     * Operation reportVideoFrameAsyncWithHttpInfo
+     * Operation targetingsShareGetAsyncWithHttpInfo
      *
-     * 视频流失分析接口
+     * 获取定向分享记录
      *
-     * @param  \TencentAds\Model\ReportVideoFrameRequest $data (required)
+     * @param  int $accountId (required)
+     * @param  int $targetingId (required)
+     * @param  int $page (optional)
+     * @param  int $pageSize (optional)
+     * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function reportVideoFrameAsyncWithHttpInfo($data)
+    public function targetingsShareGetAsyncWithHttpInfo($accountId, $targetingId, $page = null, $pageSize = null, $fields = null)
     {
-        $returnType = '\TencentAds\Model\ReportVideoFrameResponse';
-        $request = $this->reportVideoFrameRequest($data);
+        $returnType = '\TencentAds\Model\TargetingsShareGetResponse';
+        $request = $this->targetingsShareGetRequest($accountId, $targetingId, $page, $pageSize, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -534,38 +550,68 @@ class ReportApi
     }
 
     /**
-     * Create request for operation 'reportVideoFrame'
+     * Create request for operation 'targetingsShareGet'
      *
-     * @param  \TencentAds\Model\ReportVideoFrameRequest $data (required)
+     * @param  int $accountId (required)
+     * @param  int $targetingId (required)
+     * @param  int $page (optional)
+     * @param  int $pageSize (optional)
+     * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function reportVideoFrameRequest($data)
+    protected function targetingsShareGetRequest($accountId, $targetingId, $page = null, $pageSize = null, $fields = null)
     {
-        // verify the required parameter 'data' is set
-        if ($data === null || (is_array($data) && count($data) === 0)) {
+        // verify the required parameter 'accountId' is set
+        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $data when calling reportVideoFrame'
+                'Missing the required parameter $accountId when calling targetingsShareGet'
+            );
+        }
+        // verify the required parameter 'targetingId' is set
+        if ($targetingId === null || (is_array($targetingId) && count($targetingId) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $targetingId when calling targetingsShareGet'
             );
         }
 
-        $resourcePath = '/report/video_frame';
+        $resourcePath = '/targetings_share/get';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
         $httpBody = '';
         $multipart = false;
 
+        // query params
+        if ($accountId !== null) {
+            $queryParams['account_id'] = ObjectSerializer::toQueryValue($accountId);
+        }
+        // query params
+        if ($targetingId !== null) {
+            $queryParams['targeting_id'] = ObjectSerializer::toQueryValue($targetingId);
+        }
+        // query params
+        if ($page !== null) {
+            $queryParams['page'] = ObjectSerializer::toQueryValue($page);
+        }
+        // query params
+        if ($pageSize !== null) {
+            $queryParams['page_size'] = ObjectSerializer::toQueryValue($pageSize);
+        }
+        // query params
+        if (is_array($fields)) {
+            $queryParams['fields'] = $fields;
+        } else
+        if ($fields !== null) {
+            $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);
+        }
 
 
         // body params
         $_tempBody = null;
-        if (isset($data)) {
-            $_tempBody = $data;
-        }
 
-        if (in_array('multipart/form-data', ['application/json', 'application/xml'])) {
+        if (in_array('multipart/form-data', ['text/plain'])) {
             $multipart = true;
         }
         if ($multipart) {
@@ -575,7 +621,7 @@ class ReportApi
         } else {
             $headers = $this->headerSelector->selectHeaders(
                 ['application/json'],
-                ['application/json', 'application/xml']
+                ['text/plain']
             );
         }
 
@@ -644,7 +690,7 @@ class ReportApi
 
         $query = \GuzzleHttp\Psr7\build_query($queryParams);
         return new Request(
-            'POST',
+            'GET',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
             $headers,
             $httpBody

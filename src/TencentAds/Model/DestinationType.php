@@ -51,6 +51,7 @@ class DestinationType
     const MINI_PROGRAM_WECHAT = 'PAGE_TYPE_MINI_PROGRAM_WECHAT';
     const FENGYE_ECOMMERCE = 'PAGE_TYPE_FENGYE_ECOMMERCE';
     const MINI_GAME_WECHAT = 'PAGE_TYPE_MINI_GAME_WECHAT';
+    const IOS_APP = 'PAGE_TYPE_IOS_APP';
     const MINI_PROGRAM_QQ = 'PAGE_TYPE_MINI_PROGRAM_QQ';
     const MINI_PROGRAM_CANVAS_WECHAT = 'PAGE_TYPE_MINI_PROGRAM_CANVAS_WECHAT';
     const MINI_GAME_QQ = 'PAGE_TYPE_MINI_GAME_QQ';
@@ -67,6 +68,9 @@ class DestinationType
     const WEIMOB_PROMOTION = 'PAGE_TYPE_WEIMOB_PROMOTION';
     const WEIMOB_PRODUCT = 'PAGE_TYPE_WEIMOB_PRODUCT';
     const WEIMOB_H5 = 'PAGE_TYPE_WEIMOB_H5';
+    const WECHAT_CHANNELS = 'PAGE_TYPE_WECHAT_CHANNELS';
+    const CHANNELS_WATCH_LIVE = 'PAGE_TYPE_CHANNELS_WATCH_LIVE';
+    const CHANNELS_RESERVE_LIVE = 'PAGE_TYPE_CHANNELS_RESERVE_LIVE';
     
     /**
      * Gets allowable values of the enum
@@ -82,6 +86,7 @@ class DestinationType
             self::MINI_PROGRAM_WECHAT,
             self::FENGYE_ECOMMERCE,
             self::MINI_GAME_WECHAT,
+            self::IOS_APP,
             self::MINI_PROGRAM_QQ,
             self::MINI_PROGRAM_CANVAS_WECHAT,
             self::MINI_GAME_QQ,
@@ -98,6 +103,9 @@ class DestinationType
             self::WEIMOB_PROMOTION,
             self::WEIMOB_PRODUCT,
             self::WEIMOB_H5,
+            self::WECHAT_CHANNELS,
+            self::CHANNELS_WATCH_LIVE,
+            self::CHANNELS_RESERVE_LIVE,
         ];
     }
 }

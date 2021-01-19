@@ -90,7 +90,7 @@ class ProductItemsVerticalsApi
     /**
      * Operation productItemsVerticalsGet
      *
-     * 商品列表
+     * 行业列表
      *
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
@@ -107,7 +107,7 @@ class ProductItemsVerticalsApi
     /**
      * Operation productItemsVerticalsGetWithHttpInfo
      *
-     * 商品列表
+     * 行业列表
      *
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
@@ -182,7 +182,7 @@ class ProductItemsVerticalsApi
     /**
      * Operation productItemsVerticalsGetAsync
      *
-     * 商品列表
+     * 行业列表
      *
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
@@ -202,7 +202,7 @@ class ProductItemsVerticalsApi
     /**
      * Operation productItemsVerticalsGetAsyncWithHttpInfo
      *
-     * 商品列表
+     * 行业列表
      *
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *

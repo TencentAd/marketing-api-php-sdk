@@ -1,6 +1,6 @@
 <?php
 /**
- * ReportJdOfflineReportFileResponse
+ * TargetingsShareGetListStruct
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ReportJdOfflineReportFileResponse Class Doc Comment
+ * TargetingsShareGetListStruct Class Doc Comment
  *
  * @category Class
+ * @description 返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ReportJdOfflineReportFileResponse implements ModelInterface, ArrayAccess
+class TargetingsShareGetListStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class ReportJdOfflineReportFileResponse implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'ReportJdOfflineReportFileResponse';
+    protected static $swaggerModelName = 'TargetingsShareGetListStruct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,10 +58,10 @@ class ReportJdOfflineReportFileResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'code' => 'int',
-        'message' => 'string',
-        'messageCn' => 'string',
-        'errors' => '\TencentAds\Model\ApiErrorStruct[]'
+        'targetingId' => 'int',
+        'shareToAccountId' => 'int',
+        'shareToTargetingId' => 'int',
+        'sharedTime' => 'int'
     ];
 
     /**
@@ -69,10 +70,10 @@ class ReportJdOfflineReportFileResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'code' => 'int64',
-        'message' => null,
-        'messageCn' => null,
-        'errors' => null
+        'targetingId' => 'int64',
+        'shareToAccountId' => 'int64',
+        'shareToTargetingId' => 'int64',
+        'sharedTime' => 'int64'
     ];
 
     /**
@@ -102,10 +103,10 @@ class ReportJdOfflineReportFileResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'code' => 'code',
-        'message' => 'message',
-        'messageCn' => 'message_cn',
-        'errors' => 'errors'
+        'targetingId' => 'targeting_id',
+        'shareToAccountId' => 'share_to_account_id',
+        'shareToTargetingId' => 'share_to_targeting_id',
+        'sharedTime' => 'shared_time'
     ];
 
     /**
@@ -114,10 +115,10 @@ class ReportJdOfflineReportFileResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'code' => 'setCode',
-        'message' => 'setMessage',
-        'messageCn' => 'setMessageCn',
-        'errors' => 'setErrors'
+        'targetingId' => 'setTargetingId',
+        'shareToAccountId' => 'setShareToAccountId',
+        'shareToTargetingId' => 'setShareToTargetingId',
+        'sharedTime' => 'setSharedTime'
     ];
 
     /**
@@ -126,10 +127,10 @@ class ReportJdOfflineReportFileResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'code' => 'getCode',
-        'message' => 'getMessage',
-        'messageCn' => 'getMessageCn',
-        'errors' => 'getErrors'
+        'targetingId' => 'getTargetingId',
+        'shareToAccountId' => 'getShareToAccountId',
+        'shareToTargetingId' => 'getShareToTargetingId',
+        'sharedTime' => 'getSharedTime'
     ];
 
     /**
@@ -192,10 +193,10 @@ class ReportJdOfflineReportFileResponse implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
-        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
-        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
-        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['targetingId'] = isset($data['targetingId']) ? $data['targetingId'] : null;
+        $this->container['shareToAccountId'] = isset($data['shareToAccountId']) ? $data['shareToAccountId'] : null;
+        $this->container['shareToTargetingId'] = isset($data['shareToTargetingId']) ? $data['shareToTargetingId'] : null;
+        $this->container['sharedTime'] = isset($data['sharedTime']) ? $data['sharedTime'] : null;
     }
 
     /**
@@ -223,97 +224,97 @@ class ReportJdOfflineReportFileResponse implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets code
+     * Gets targetingId
      *
      * @return int
      */
-    public function getCode()
+    public function getTargetingId()
     {
-        return $this->container['code'];
+        return $this->container['targetingId'];
     }
 
     /**
-     * Sets code
+     * Sets targetingId
      *
-     * @param int $code code
+     * @param int $targetingId targetingId
      *
      * @return $this
      */
-    public function setCode($code)
+    public function setTargetingId($targetingId)
     {
-        $this->container['code'] = $code;
+        $this->container['targetingId'] = $targetingId;
 
         return $this;
     }
 
     /**
-     * Gets message
+     * Gets shareToAccountId
      *
-     * @return string
+     * @return int
      */
-    public function getMessage()
+    public function getShareToAccountId()
     {
-        return $this->container['message'];
+        return $this->container['shareToAccountId'];
     }
 
     /**
-     * Sets message
+     * Sets shareToAccountId
      *
-     * @param string $message message
+     * @param int $shareToAccountId shareToAccountId
      *
      * @return $this
      */
-    public function setMessage($message)
+    public function setShareToAccountId($shareToAccountId)
     {
-        $this->container['message'] = $message;
+        $this->container['shareToAccountId'] = $shareToAccountId;
 
         return $this;
     }
 
     /**
-     * Gets messageCn
+     * Gets shareToTargetingId
      *
-     * @return string
+     * @return int
      */
-    public function getMessageCn()
+    public function getShareToTargetingId()
     {
-        return $this->container['messageCn'];
+        return $this->container['shareToTargetingId'];
     }
 
     /**
-     * Sets messageCn
+     * Sets shareToTargetingId
      *
-     * @param string $messageCn messageCn
+     * @param int $shareToTargetingId shareToTargetingId
      *
      * @return $this
      */
-    public function setMessageCn($messageCn)
+    public function setShareToTargetingId($shareToTargetingId)
     {
-        $this->container['messageCn'] = $messageCn;
+        $this->container['shareToTargetingId'] = $shareToTargetingId;
 
         return $this;
     }
 
     /**
-     * Gets errors
+     * Gets sharedTime
      *
-     * @return \TencentAds\Model\ApiErrorStruct[]
+     * @return int
      */
-    public function getErrors()
+    public function getSharedTime()
     {
-        return $this->container['errors'];
+        return $this->container['sharedTime'];
     }
 
     /**
-     * Sets errors
+     * Sets sharedTime
      *
-     * @param \TencentAds\Model\ApiErrorStruct[] $errors errors
+     * @param int $sharedTime sharedTime
      *
      * @return $this
      */
-    public function setErrors($errors)
+    public function setSharedTime($sharedTime)
     {
-        $this->container['errors'] = $errors;
+        $this->container['sharedTime'] = $sharedTime;
 
         return $this;
     }

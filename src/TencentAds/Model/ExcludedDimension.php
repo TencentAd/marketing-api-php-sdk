@@ -1,6 +1,6 @@
 <?php
 /**
- * ExcludedConvertedAudience
+ * ExcludedDimension
  *
  * PHP version 5
  *
@@ -31,7 +31,7 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ExcludedConvertedAudience Class Doc Comment
+ * ExcludedDimension Class Doc Comment
  *
  * @category Class
  * @description 排除已转化用户定向范围&lt;br/&gt; 同应用，仅当推广目标为应用下载时可以使用，没有选择自定义转化行为（excluded_dimension）时 ，使用该定向出价需要满足是oCPC、oCPM广告；&lt;br/&gt; 同商品，仅当SDPA商品广告下使用，不支持自定义转化行为默认排除已下单、和已付费用户，不限制出价方式；&lt;br/&gt; 非同应用、非同商品，没有选择自定义转化行为（excluded_dimension）时 ，使用该定向出价需要满足是oCPC、oCPM广告；
@@ -39,7 +39,7 @@ use \TencentAds\ObjectSerializer;
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ExcludedConvertedAudience
+class ExcludedDimension
 {
     /**
      * Possible values of this enum

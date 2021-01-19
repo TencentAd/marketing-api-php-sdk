@@ -111,7 +111,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'thirdCategoryUrl' => 'string',
         'fourthCategoryUrl' => 'string',
         'brandId' => 'int',
-        'brandName' => 'string',
+        'productBrand' => 'string',
         'brandUrl' => 'string',
         'promotionId' => 'int',
         'promotionName' => 'string',
@@ -160,7 +160,12 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'shootingStyleCom' => 'string[]',
         'shootingSceneDetail' => 'string[]',
         'tourPlaceDomestic' => '\TencentAds\Model\TourPlaceDomestic',
-        'tourPlaceForeign' => '\TencentAds\Model\TourPlaceForeign'
+        'tourPlaceForeign' => '\TencentAds\Model\TourPlaceForeign',
+        'maxInsuranceQuota' => 'double',
+        'firstMonthInsuranceFee' => 'double',
+        'maxQuota' => 'double',
+        'annualizedRateOfReturn' => 'double',
+        'riskType' => '\TencentAds\Model\RiskTypeStatus'
     ];
 
     /**
@@ -222,7 +227,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'thirdCategoryUrl' => null,
         'fourthCategoryUrl' => null,
         'brandId' => 'int64',
-        'brandName' => null,
+        'productBrand' => null,
         'brandUrl' => null,
         'promotionId' => 'int64',
         'promotionName' => null,
@@ -271,7 +276,12 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'shootingStyleCom' => null,
         'shootingSceneDetail' => null,
         'tourPlaceDomestic' => null,
-        'tourPlaceForeign' => null
+        'tourPlaceForeign' => null,
+        'maxInsuranceQuota' => 'double',
+        'firstMonthInsuranceFee' => 'double',
+        'maxQuota' => 'double',
+        'annualizedRateOfReturn' => 'double',
+        'riskType' => null
     ];
 
     /**
@@ -354,7 +364,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'thirdCategoryUrl' => 'third_category_url',
         'fourthCategoryUrl' => 'fourth_category_url',
         'brandId' => 'brand_id',
-        'brandName' => 'brand_name',
+        'productBrand' => 'product_brand',
         'brandUrl' => 'brand_url',
         'promotionId' => 'promotion_id',
         'promotionName' => 'promotion_name',
@@ -403,7 +413,12 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'shootingStyleCom' => 'shooting_style_com',
         'shootingSceneDetail' => 'shooting_scene_detail',
         'tourPlaceDomestic' => 'tour_place_domestic',
-        'tourPlaceForeign' => 'tour_place_foreign'
+        'tourPlaceForeign' => 'tour_place_foreign',
+        'maxInsuranceQuota' => 'max_insurance_quota',
+        'firstMonthInsuranceFee' => 'first_month_insurance_fee',
+        'maxQuota' => 'max_quota',
+        'annualizedRateOfReturn' => 'annualized_rate_of_return',
+        'riskType' => 'risk_type'
     ];
 
     /**
@@ -465,7 +480,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'thirdCategoryUrl' => 'setThirdCategoryUrl',
         'fourthCategoryUrl' => 'setFourthCategoryUrl',
         'brandId' => 'setBrandId',
-        'brandName' => 'setBrandName',
+        'productBrand' => 'setProductBrand',
         'brandUrl' => 'setBrandUrl',
         'promotionId' => 'setPromotionId',
         'promotionName' => 'setPromotionName',
@@ -514,7 +529,12 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'shootingStyleCom' => 'setShootingStyleCom',
         'shootingSceneDetail' => 'setShootingSceneDetail',
         'tourPlaceDomestic' => 'setTourPlaceDomestic',
-        'tourPlaceForeign' => 'setTourPlaceForeign'
+        'tourPlaceForeign' => 'setTourPlaceForeign',
+        'maxInsuranceQuota' => 'setMaxInsuranceQuota',
+        'firstMonthInsuranceFee' => 'setFirstMonthInsuranceFee',
+        'maxQuota' => 'setMaxQuota',
+        'annualizedRateOfReturn' => 'setAnnualizedRateOfReturn',
+        'riskType' => 'setRiskType'
     ];
 
     /**
@@ -576,7 +596,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'thirdCategoryUrl' => 'getThirdCategoryUrl',
         'fourthCategoryUrl' => 'getFourthCategoryUrl',
         'brandId' => 'getBrandId',
-        'brandName' => 'getBrandName',
+        'productBrand' => 'getProductBrand',
         'brandUrl' => 'getBrandUrl',
         'promotionId' => 'getPromotionId',
         'promotionName' => 'getPromotionName',
@@ -625,7 +645,12 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'shootingStyleCom' => 'getShootingStyleCom',
         'shootingSceneDetail' => 'getShootingSceneDetail',
         'tourPlaceDomestic' => 'getTourPlaceDomestic',
-        'tourPlaceForeign' => 'getTourPlaceForeign'
+        'tourPlaceForeign' => 'getTourPlaceForeign',
+        'maxInsuranceQuota' => 'getMaxInsuranceQuota',
+        'firstMonthInsuranceFee' => 'getFirstMonthInsuranceFee',
+        'maxQuota' => 'getMaxQuota',
+        'annualizedRateOfReturn' => 'getAnnualizedRateOfReturn',
+        'riskType' => 'getRiskType'
     ];
 
     /**
@@ -741,7 +766,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         $this->container['thirdCategoryUrl'] = isset($data['thirdCategoryUrl']) ? $data['thirdCategoryUrl'] : null;
         $this->container['fourthCategoryUrl'] = isset($data['fourthCategoryUrl']) ? $data['fourthCategoryUrl'] : null;
         $this->container['brandId'] = isset($data['brandId']) ? $data['brandId'] : null;
-        $this->container['brandName'] = isset($data['brandName']) ? $data['brandName'] : null;
+        $this->container['productBrand'] = isset($data['productBrand']) ? $data['productBrand'] : null;
         $this->container['brandUrl'] = isset($data['brandUrl']) ? $data['brandUrl'] : null;
         $this->container['promotionId'] = isset($data['promotionId']) ? $data['promotionId'] : null;
         $this->container['promotionName'] = isset($data['promotionName']) ? $data['promotionName'] : null;
@@ -791,6 +816,11 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         $this->container['shootingSceneDetail'] = isset($data['shootingSceneDetail']) ? $data['shootingSceneDetail'] : null;
         $this->container['tourPlaceDomestic'] = isset($data['tourPlaceDomestic']) ? $data['tourPlaceDomestic'] : null;
         $this->container['tourPlaceForeign'] = isset($data['tourPlaceForeign']) ? $data['tourPlaceForeign'] : null;
+        $this->container['maxInsuranceQuota'] = isset($data['maxInsuranceQuota']) ? $data['maxInsuranceQuota'] : null;
+        $this->container['firstMonthInsuranceFee'] = isset($data['firstMonthInsuranceFee']) ? $data['firstMonthInsuranceFee'] : null;
+        $this->container['maxQuota'] = isset($data['maxQuota']) ? $data['maxQuota'] : null;
+        $this->container['annualizedRateOfReturn'] = isset($data['annualizedRateOfReturn']) ? $data['annualizedRateOfReturn'] : null;
+        $this->container['riskType'] = isset($data['riskType']) ? $data['riskType'] : null;
     }
 
     /**
@@ -2090,25 +2120,25 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets brandName
+     * Gets productBrand
      *
      * @return string
      */
-    public function getBrandName()
+    public function getProductBrand()
     {
-        return $this->container['brandName'];
+        return $this->container['productBrand'];
     }
 
     /**
-     * Sets brandName
+     * Sets productBrand
      *
-     * @param string $brandName brandName
+     * @param string $productBrand productBrand
      *
      * @return $this
      */
-    public function setBrandName($brandName)
+    public function setProductBrand($productBrand)
     {
-        $this->container['brandName'] = $brandName;
+        $this->container['productBrand'] = $productBrand;
 
         return $this;
     }
@@ -3285,6 +3315,126 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     public function setTourPlaceForeign($tourPlaceForeign)
     {
         $this->container['tourPlaceForeign'] = $tourPlaceForeign;
+
+        return $this;
+    }
+
+    /**
+     * Gets maxInsuranceQuota
+     *
+     * @return double
+     */
+    public function getMaxInsuranceQuota()
+    {
+        return $this->container['maxInsuranceQuota'];
+    }
+
+    /**
+     * Sets maxInsuranceQuota
+     *
+     * @param double $maxInsuranceQuota maxInsuranceQuota
+     *
+     * @return $this
+     */
+    public function setMaxInsuranceQuota($maxInsuranceQuota)
+    {
+        $this->container['maxInsuranceQuota'] = $maxInsuranceQuota;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstMonthInsuranceFee
+     *
+     * @return double
+     */
+    public function getFirstMonthInsuranceFee()
+    {
+        return $this->container['firstMonthInsuranceFee'];
+    }
+
+    /**
+     * Sets firstMonthInsuranceFee
+     *
+     * @param double $firstMonthInsuranceFee firstMonthInsuranceFee
+     *
+     * @return $this
+     */
+    public function setFirstMonthInsuranceFee($firstMonthInsuranceFee)
+    {
+        $this->container['firstMonthInsuranceFee'] = $firstMonthInsuranceFee;
+
+        return $this;
+    }
+
+    /**
+     * Gets maxQuota
+     *
+     * @return double
+     */
+    public function getMaxQuota()
+    {
+        return $this->container['maxQuota'];
+    }
+
+    /**
+     * Sets maxQuota
+     *
+     * @param double $maxQuota maxQuota
+     *
+     * @return $this
+     */
+    public function setMaxQuota($maxQuota)
+    {
+        $this->container['maxQuota'] = $maxQuota;
+
+        return $this;
+    }
+
+    /**
+     * Gets annualizedRateOfReturn
+     *
+     * @return double
+     */
+    public function getAnnualizedRateOfReturn()
+    {
+        return $this->container['annualizedRateOfReturn'];
+    }
+
+    /**
+     * Sets annualizedRateOfReturn
+     *
+     * @param double $annualizedRateOfReturn annualizedRateOfReturn
+     *
+     * @return $this
+     */
+    public function setAnnualizedRateOfReturn($annualizedRateOfReturn)
+    {
+        $this->container['annualizedRateOfReturn'] = $annualizedRateOfReturn;
+
+        return $this;
+    }
+
+    /**
+     * Gets riskType
+     *
+     * @return \TencentAds\Model\RiskTypeStatus
+     */
+    public function getRiskType()
+    {
+        return $this->container['riskType'];
+    }
+
+    /**
+     * Sets riskType
+     *
+     * @param \TencentAds\Model\RiskTypeStatus $riskType riskType
+     *
+     * @return $this
+     */
+    public function setRiskType($riskType)
+    {
+        $this->container['riskType'] = $riskType;
 
         return $this;
     }

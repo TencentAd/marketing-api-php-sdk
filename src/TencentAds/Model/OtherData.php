@@ -1,6 +1,6 @@
 <?php
 /**
- * ReportJdOfflineReportStatusRequest
+ * OtherData
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ReportJdOfflineReportStatusRequest Class Doc Comment
+ * OtherData Class Doc Comment
  *
  * @category Class
+ * @description 其他相关数据
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ReportJdOfflineReportStatusRequest implements ModelInterface, ArrayAccess
+class OtherData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class ReportJdOfflineReportStatusRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'ReportJdOfflineReportStatusRequest';
+    protected static $swaggerModelName = 'other_data';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,11 +58,8 @@ class ReportJdOfflineReportStatusRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'task' => 'string',
-        'date' => 'string',
-        'hour' => 'string',
-        'timeFrame' => 'string'
+        'subtitleFile' => 'string',
+        'audioFile' => 'string'
     ];
 
     /**
@@ -70,11 +68,8 @@ class ReportJdOfflineReportStatusRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'task' => null,
-        'date' => null,
-        'hour' => null,
-        'timeFrame' => null
+        'subtitleFile' => null,
+        'audioFile' => null
     ];
 
     /**
@@ -104,11 +99,8 @@ class ReportJdOfflineReportStatusRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'task' => 'task',
-        'date' => 'date',
-        'hour' => 'hour',
-        'timeFrame' => 'time_frame'
+        'subtitleFile' => 'subtitle_file',
+        'audioFile' => 'audio_file'
     ];
 
     /**
@@ -117,11 +109,8 @@ class ReportJdOfflineReportStatusRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'task' => 'setTask',
-        'date' => 'setDate',
-        'hour' => 'setHour',
-        'timeFrame' => 'setTimeFrame'
+        'subtitleFile' => 'setSubtitleFile',
+        'audioFile' => 'setAudioFile'
     ];
 
     /**
@@ -130,11 +119,8 @@ class ReportJdOfflineReportStatusRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'task' => 'getTask',
-        'date' => 'getDate',
-        'hour' => 'getHour',
-        'timeFrame' => 'getTimeFrame'
+        'subtitleFile' => 'getSubtitleFile',
+        'audioFile' => 'getAudioFile'
     ];
 
     /**
@@ -197,11 +183,8 @@ class ReportJdOfflineReportStatusRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['task'] = isset($data['task']) ? $data['task'] : null;
-        $this->container['date'] = isset($data['date']) ? $data['date'] : null;
-        $this->container['hour'] = isset($data['hour']) ? $data['hour'] : null;
-        $this->container['timeFrame'] = isset($data['timeFrame']) ? $data['timeFrame'] : null;
+        $this->container['subtitleFile'] = isset($data['subtitleFile']) ? $data['subtitleFile'] : null;
+        $this->container['audioFile'] = isset($data['audioFile']) ? $data['audioFile'] : null;
     }
 
     /**
@@ -229,121 +212,49 @@ class ReportJdOfflineReportStatusRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets accountId
+     * Gets subtitleFile
      *
-     * @return int
+     * @return string
      */
-    public function getAccountId()
+    public function getSubtitleFile()
     {
-        return $this->container['accountId'];
+        return $this->container['subtitleFile'];
     }
 
     /**
-     * Sets accountId
+     * Sets subtitleFile
      *
-     * @param int $accountId accountId
+     * @param string $subtitleFile subtitleFile
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setSubtitleFile($subtitleFile)
     {
-        $this->container['accountId'] = $accountId;
+        $this->container['subtitleFile'] = $subtitleFile;
 
         return $this;
     }
 
     /**
-     * Gets task
+     * Gets audioFile
      *
      * @return string
      */
-    public function getTask()
+    public function getAudioFile()
     {
-        return $this->container['task'];
+        return $this->container['audioFile'];
     }
 
     /**
-     * Sets task
+     * Sets audioFile
      *
-     * @param string $task task
+     * @param string $audioFile audioFile
      *
      * @return $this
      */
-    public function setTask($task)
+    public function setAudioFile($audioFile)
     {
-        $this->container['task'] = $task;
-
-        return $this;
-    }
-
-    /**
-     * Gets date
-     *
-     * @return string
-     */
-    public function getDate()
-    {
-        return $this->container['date'];
-    }
-
-    /**
-     * Sets date
-     *
-     * @param string $date date
-     *
-     * @return $this
-     */
-    public function setDate($date)
-    {
-        $this->container['date'] = $date;
-
-        return $this;
-    }
-
-    /**
-     * Gets hour
-     *
-     * @return string
-     */
-    public function getHour()
-    {
-        return $this->container['hour'];
-    }
-
-    /**
-     * Sets hour
-     *
-     * @param string $hour hour
-     *
-     * @return $this
-     */
-    public function setHour($hour)
-    {
-        $this->container['hour'] = $hour;
-
-        return $this;
-    }
-
-    /**
-     * Gets timeFrame
-     *
-     * @return string
-     */
-    public function getTimeFrame()
-    {
-        return $this->container['timeFrame'];
-    }
-
-    /**
-     * Sets timeFrame
-     *
-     * @param string $timeFrame timeFrame
-     *
-     * @return $this
-     */
-    public function setTimeFrame($timeFrame)
-    {
-        $this->container['timeFrame'] = $timeFrame;
+        $this->container['audioFile'] = $audioFile;
 
         return $this;
     }

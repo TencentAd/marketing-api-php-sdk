@@ -73,6 +73,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'feedsVideoCommentSwitch' => 'bool',
         'unionMarketSwitch' => 'bool',
         'dynamicAdcreativeSpec' => '\TencentAds\Model\DynamicAdcreativeSpec',
+        'videoEndPage' => '\TencentAds\Model\VideoEndPageSpec',
         'accountId' => 'int'
     ];
 
@@ -98,6 +99,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'feedsVideoCommentSwitch' => null,
         'unionMarketSwitch' => null,
         'dynamicAdcreativeSpec' => null,
+        'videoEndPage' => null,
         'accountId' => 'int64'
     ];
 
@@ -144,6 +146,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'feedsVideoCommentSwitch' => 'feeds_video_comment_switch',
         'unionMarketSwitch' => 'union_market_switch',
         'dynamicAdcreativeSpec' => 'dynamic_adcreative_spec',
+        'videoEndPage' => 'video_end_page',
         'accountId' => 'account_id'
     ];
 
@@ -169,6 +172,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'feedsVideoCommentSwitch' => 'setFeedsVideoCommentSwitch',
         'unionMarketSwitch' => 'setUnionMarketSwitch',
         'dynamicAdcreativeSpec' => 'setDynamicAdcreativeSpec',
+        'videoEndPage' => 'setVideoEndPage',
         'accountId' => 'setAccountId'
     ];
 
@@ -194,6 +198,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'feedsVideoCommentSwitch' => 'getFeedsVideoCommentSwitch',
         'unionMarketSwitch' => 'getUnionMarketSwitch',
         'dynamicAdcreativeSpec' => 'getDynamicAdcreativeSpec',
+        'videoEndPage' => 'getVideoEndPage',
         'accountId' => 'getAccountId'
     ];
 
@@ -273,6 +278,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         $this->container['feedsVideoCommentSwitch'] = isset($data['feedsVideoCommentSwitch']) ? $data['feedsVideoCommentSwitch'] : null;
         $this->container['unionMarketSwitch'] = isset($data['unionMarketSwitch']) ? $data['unionMarketSwitch'] : null;
         $this->container['dynamicAdcreativeSpec'] = isset($data['dynamicAdcreativeSpec']) ? $data['dynamicAdcreativeSpec'] : null;
+        $this->container['videoEndPage'] = isset($data['videoEndPage']) ? $data['videoEndPage'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -680,6 +686,30 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     public function setDynamicAdcreativeSpec($dynamicAdcreativeSpec)
     {
         $this->container['dynamicAdcreativeSpec'] = $dynamicAdcreativeSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoEndPage
+     *
+     * @return \TencentAds\Model\VideoEndPageSpec
+     */
+    public function getVideoEndPage()
+    {
+        return $this->container['videoEndPage'];
+    }
+
+    /**
+     * Sets videoEndPage
+     *
+     * @param \TencentAds\Model\VideoEndPageSpec $videoEndPage videoEndPage
+     *
+     * @return $this
+     */
+    public function setVideoEndPage($videoEndPage)
+    {
+        $this->container['videoEndPage'] = $videoEndPage;
 
         return $this;
     }

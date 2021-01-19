@@ -1,6 +1,6 @@
 <?php
 /**
- * ExcludedConvertedAudienceStruct
+ * TargetingsShareAddRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ExcludedConvertedAudienceStruct Class Doc Comment
+ * TargetingsShareAddRequest Class Doc Comment
  *
  * @category Class
- * @description 排除已转化用户定向
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ExcludedConvertedAudienceStruct implements ModelInterface, ArrayAccess
+class TargetingsShareAddRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class ExcludedConvertedAudienceStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'excluded_converted_audience_struct';
+    protected static $swaggerModelName = 'TargetingsShareAddRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,10 @@ class ExcludedConvertedAudienceStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'excludedDimension' => '\TencentAds\Model\ExcludedDimension',
-        'conversionBehaviorList' => 'string[]'
+        'targetingId' => 'int',
+        'shareToAccountId' => 'int',
+        'shareType' => '\TencentAds\Model\TargetingShareType',
+        'accountId' => 'int'
     ];
 
     /**
@@ -68,8 +69,10 @@ class ExcludedConvertedAudienceStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'excludedDimension' => null,
-        'conversionBehaviorList' => null
+        'targetingId' => 'int64',
+        'shareToAccountId' => 'int64',
+        'shareType' => null,
+        'accountId' => 'int64'
     ];
 
     /**
@@ -99,8 +102,10 @@ class ExcludedConvertedAudienceStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'excludedDimension' => 'excluded_dimension',
-        'conversionBehaviorList' => 'conversion_behavior_list'
+        'targetingId' => 'targeting_id',
+        'shareToAccountId' => 'share_to_account_id',
+        'shareType' => 'share_type',
+        'accountId' => 'account_id'
     ];
 
     /**
@@ -109,8 +114,10 @@ class ExcludedConvertedAudienceStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'excludedDimension' => 'setExcludedDimension',
-        'conversionBehaviorList' => 'setConversionBehaviorList'
+        'targetingId' => 'setTargetingId',
+        'shareToAccountId' => 'setShareToAccountId',
+        'shareType' => 'setShareType',
+        'accountId' => 'setAccountId'
     ];
 
     /**
@@ -119,8 +126,10 @@ class ExcludedConvertedAudienceStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'excludedDimension' => 'getExcludedDimension',
-        'conversionBehaviorList' => 'getConversionBehaviorList'
+        'targetingId' => 'getTargetingId',
+        'shareToAccountId' => 'getShareToAccountId',
+        'shareType' => 'getShareType',
+        'accountId' => 'getAccountId'
     ];
 
     /**
@@ -183,8 +192,10 @@ class ExcludedConvertedAudienceStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['excludedDimension'] = isset($data['excludedDimension']) ? $data['excludedDimension'] : null;
-        $this->container['conversionBehaviorList'] = isset($data['conversionBehaviorList']) ? $data['conversionBehaviorList'] : null;
+        $this->container['targetingId'] = isset($data['targetingId']) ? $data['targetingId'] : null;
+        $this->container['shareToAccountId'] = isset($data['shareToAccountId']) ? $data['shareToAccountId'] : null;
+        $this->container['shareType'] = isset($data['shareType']) ? $data['shareType'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
     /**
@@ -212,49 +223,97 @@ class ExcludedConvertedAudienceStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets excludedDimension
+     * Gets targetingId
      *
-     * @return \TencentAds\Model\ExcludedDimension
+     * @return int
      */
-    public function getExcludedDimension()
+    public function getTargetingId()
     {
-        return $this->container['excludedDimension'];
+        return $this->container['targetingId'];
     }
 
     /**
-     * Sets excludedDimension
+     * Sets targetingId
      *
-     * @param \TencentAds\Model\ExcludedDimension $excludedDimension excludedDimension
+     * @param int $targetingId targetingId
      *
      * @return $this
      */
-    public function setExcludedDimension($excludedDimension)
+    public function setTargetingId($targetingId)
     {
-        $this->container['excludedDimension'] = $excludedDimension;
+        $this->container['targetingId'] = $targetingId;
 
         return $this;
     }
 
     /**
-     * Gets conversionBehaviorList
+     * Gets shareToAccountId
      *
-     * @return string[]
+     * @return int
      */
-    public function getConversionBehaviorList()
+    public function getShareToAccountId()
     {
-        return $this->container['conversionBehaviorList'];
+        return $this->container['shareToAccountId'];
     }
 
     /**
-     * Sets conversionBehaviorList
+     * Sets shareToAccountId
      *
-     * @param string[] $conversionBehaviorList conversionBehaviorList
+     * @param int $shareToAccountId shareToAccountId
      *
      * @return $this
      */
-    public function setConversionBehaviorList($conversionBehaviorList)
+    public function setShareToAccountId($shareToAccountId)
     {
-        $this->container['conversionBehaviorList'] = $conversionBehaviorList;
+        $this->container['shareToAccountId'] = $shareToAccountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets shareType
+     *
+     * @return \TencentAds\Model\TargetingShareType
+     */
+    public function getShareType()
+    {
+        return $this->container['shareType'];
+    }
+
+    /**
+     * Sets shareType
+     *
+     * @param \TencentAds\Model\TargetingShareType $shareType shareType
+     *
+     * @return $this
+     */
+    public function setShareType($shareType)
+    {
+        $this->container['shareType'] = $shareType;
+
+        return $this;
+    }
+
+    /**
+     * Gets accountId
+     *
+     * @return int
+     */
+    public function getAccountId()
+    {
+        return $this->container['accountId'];
+    }
+
+    /**
+     * Sets accountId
+     *
+     * @param int $accountId accountId
+     *
+     * @return $this
+     */
+    public function setAccountId($accountId)
+    {
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }

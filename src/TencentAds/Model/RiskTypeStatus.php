@@ -1,6 +1,6 @@
 <?php
 /**
- * SimpleCanvasSubType
+ * RiskTypeStatus
  *
  * PHP version 5
  *
@@ -31,25 +31,24 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * SimpleCanvasSubType Class Doc Comment
+ * RiskTypeStatus Class Doc Comment
  *
  * @category Class
- * @description 简版原生页子类型(灰度中)，仅在简版原生页下生效，其他情况改字段内容会被忽略
+ * @description 风险等级类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class SimpleCanvasSubType
+class RiskTypeStatus
 {
     /**
      * Possible values of this enum
      */
-    const UNKNOWN = 'SIMPLE_CANVAS_SUB_TYPE_UNKNOWN';
-    const _DEFAULT = 'SIMPLE_CANVAS_SUB_TYPE_DEFAULT';
-    const URL = 'SIMPLE_CANVAS_SUB_TYPE_URL';
-    const SLIDE_UP = 'SIMPLE_CANVAS_SUB_TYPE_SLIDE_UP';
-    const WEB_STORE = 'SIMPLE_CANVAS_SUB_TYPE_WEB_STORE';
-    const RESERVE_LIVE = 'SIMPLE_CANVAS_SUB_TYPE_RESERVE_LIVE';
+    const CONSERVATIVE = 'RISK_CONSERVATIVE';
+    const STEADY = 'RISK_STEADY';
+    const BALANCE = 'RISK_BALANCE';
+    const RADICAL = 'RISK_RADICAL';
+    const OTHER = 'RISK_OTHER';
     
     /**
      * Gets allowable values of the enum
@@ -58,12 +57,11 @@ class SimpleCanvasSubType
     public static function getAllowableEnumValues()
     {
         return [
-            self::UNKNOWN,
-            self::_DEFAULT,
-            self::URL,
-            self::SLIDE_UP,
-            self::WEB_STORE,
-            self::RESERVE_LIVE,
+            self::CONSERVATIVE,
+            self::STEADY,
+            self::BALANCE,
+            self::RADICAL,
+            self::OTHER,
         ];
     }
 }

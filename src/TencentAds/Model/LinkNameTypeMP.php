@@ -78,6 +78,9 @@ class LinkNameTypeMP
     const GO_TO_KUAISHOU = 'GO_TO_KUAISHOU';
     const WATCH_LIVE = 'WATCH_LIVE';
     const RESERVE_NOW = 'RESERVE_NOW';
+    const OPEN_APP = 'OPEN_APP';
+    const ALREADY_INSTALL = 'ALREADY_INSTALL';
+    const RESERVE_LIVE = 'RESERVE_LIVE';
     
     /**
      * Gets allowable values of the enum
@@ -120,6 +123,9 @@ class LinkNameTypeMP
             self::GO_TO_KUAISHOU,
             self::WATCH_LIVE,
             self::RESERVE_NOW,
+            self::OPEN_APP,
+            self::ALREADY_INSTALL,
+            self::RESERVE_LIVE,
         ];
     }
 }

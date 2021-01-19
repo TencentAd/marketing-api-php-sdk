@@ -59,6 +59,8 @@ class DestinationTypeRead
     const WEIMOB_PROMOTION = 'PAGE_TYPE_WEIMOB_PROMOTION';
     const WEIMOB_PRODUCT = 'PAGE_TYPE_WEIMOB_PRODUCT';
     const WEIMOB_H5 = 'PAGE_TYPE_WEIMOB_H5';
+    const CHANNELS_WATCH_LIVE = 'PAGE_TYPE_CHANNELS_WATCH_LIVE';
+    const CHANNELS_RESERVE_LIVE = 'PAGE_TYPE_CHANNELS_RESERVE_LIVE';
     
     /**
      * Gets allowable values of the enum
@@ -82,6 +84,8 @@ class DestinationTypeRead
             self::WEIMOB_PROMOTION,
             self::WEIMOB_PRODUCT,
             self::WEIMOB_H5,
+            self::CHANNELS_WATCH_LIVE,
+            self::CHANNELS_RESERVE_LIVE,
         ];
     }
 }

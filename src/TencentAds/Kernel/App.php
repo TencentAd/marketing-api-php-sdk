@@ -97,6 +97,7 @@ use TencentAds\Container\SystemStatusApiContainer;
 use TencentAds\Container\TargetingTagReportsApiContainer;
 use TencentAds\Container\TargetingTagsApiContainer;
 use TencentAds\Container\TargetingsApiContainer;
+use TencentAds\Container\TargetingsShareApiContainer;
 use TencentAds\Container\TrackingReportsApiContainer;
 use TencentAds\Container\UnionPositionPackagesApiContainer;
 use TencentAds\Container\UserActionSetReportsApiContainer;
@@ -415,6 +416,9 @@ class App
 
     /** @var TargetingsApiContainer */
     public $targetingsApiContainer;
+
+    /** @var TargetingsShareApiContainer */
+    public $targetingsShareApiContainer;
 
     /** @var TrackingReportsApiContainer */
     public $trackingReportsApiContainer;
@@ -1840,6 +1844,20 @@ class App
             $this->targetingsApiContainer = $container;
         }
         return $this->targetingsApiContainer;
+    }
+
+
+    /**
+     * @return TargetingsShareApiContainer
+     */
+    public function targetingsShare()
+    {
+        if (empty($this->targetingsShareApiContainer)) {
+            $container = new TargetingsShareApiContainer();
+            $container->init($this, $this->getClient());
+            $this->targetingsShareApiContainer = $container;
+        }
+        return $this->targetingsShareApiContainer;
     }
 
 

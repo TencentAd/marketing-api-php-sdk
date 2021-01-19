@@ -42,7 +42,8 @@ class VideomakerSubtitlesApiContainer extends ApiContainer
             $videoId = isset($params['video_id']) ? $params['video_id'] : null;
             $videoFile = isset($params['video_file']) ? $params['video_file'] : null;
             $signature = isset($params['signature']) ? $params['signature'] : null;
-            $response = $this->apiInstance->videomakerSubtitlesAdd($accountId, $videoId, $videoFile, $signature);
+            $onlySubtitleFile = isset($params['only_subtitle_file']) ? $params['only_subtitle_file'] : null;
+            $response = $this->apiInstance->videomakerSubtitlesAdd($accountId, $videoId, $videoFile, $signature, $onlySubtitleFile);
             return $this->handleResponse($response);
         });
     }
@@ -61,7 +62,8 @@ class VideomakerSubtitlesApiContainer extends ApiContainer
             $videoId = isset($params['video_id']) ? $params['video_id'] : null;
             $videoFile = isset($params['video_file']) ? $params['video_file'] : null;
             $signature = isset($params['signature']) ? $params['signature'] : null;
-            $response = $this->apiInstance->videomakerSubtitlesAddAsync($accountId, $videoId, $videoFile, $signature);
+            $onlySubtitleFile = isset($params['only_subtitle_file']) ? $params['only_subtitle_file'] : null;
+            $response = $this->apiInstance->videomakerSubtitlesAddAsync($accountId, $videoId, $videoFile, $signature, $onlySubtitleFile);
             return $response;
         });
     }

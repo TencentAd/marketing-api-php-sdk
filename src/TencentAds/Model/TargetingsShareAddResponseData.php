@@ -1,6 +1,6 @@
 <?php
 /**
- * ReportJdOfflineReportStatusResponseData
+ * TargetingsShareAddResponseData
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ReportJdOfflineReportStatusResponseData Class Doc Comment
+ * TargetingsShareAddResponseData Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ReportJdOfflineReportStatusResponseData implements ModelInterface, ArrayAccess
+class TargetingsShareAddResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class ReportJdOfflineReportStatusResponseData implements ModelInterface, ArrayAc
       *
       * @var string
       */
-    protected static $swaggerModelName = 'ReportJdOfflineReportStatusResponseData';
+    protected static $swaggerModelName = 'TargetingsShareAddResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,9 +57,7 @@ class ReportJdOfflineReportStatusResponseData implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'status' => 'string',
-        'size' => 'int',
-        'md5' => 'string'
+        'targetingId' => 'int'
     ];
 
     /**
@@ -68,9 +66,7 @@ class ReportJdOfflineReportStatusResponseData implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'status' => null,
-        'size' => 'int64',
-        'md5' => null
+        'targetingId' => 'int64'
     ];
 
     /**
@@ -100,9 +96,7 @@ class ReportJdOfflineReportStatusResponseData implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $attributeMap = [
-        'status' => 'status',
-        'size' => 'size',
-        'md5' => 'md5'
+        'targetingId' => 'targeting_id'
     ];
 
     /**
@@ -111,9 +105,7 @@ class ReportJdOfflineReportStatusResponseData implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        'status' => 'setStatus',
-        'size' => 'setSize',
-        'md5' => 'setMd5'
+        'targetingId' => 'setTargetingId'
     ];
 
     /**
@@ -122,9 +114,7 @@ class ReportJdOfflineReportStatusResponseData implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        'status' => 'getStatus',
-        'size' => 'getSize',
-        'md5' => 'getMd5'
+        'targetingId' => 'getTargetingId'
     ];
 
     /**
@@ -187,9 +177,7 @@ class ReportJdOfflineReportStatusResponseData implements ModelInterface, ArrayAc
      */
     public function __construct(array $data = null)
     {
-        $this->container['status'] = isset($data['status']) ? $data['status'] : null;
-        $this->container['size'] = isset($data['size']) ? $data['size'] : null;
-        $this->container['md5'] = isset($data['md5']) ? $data['md5'] : null;
+        $this->container['targetingId'] = isset($data['targetingId']) ? $data['targetingId'] : null;
     }
 
     /**
@@ -217,73 +205,25 @@ class ReportJdOfflineReportStatusResponseData implements ModelInterface, ArrayAc
 
 
     /**
-     * Gets status
-     *
-     * @return string
-     */
-    public function getStatus()
-    {
-        return $this->container['status'];
-    }
-
-    /**
-     * Sets status
-     *
-     * @param string $status status
-     *
-     * @return $this
-     */
-    public function setStatus($status)
-    {
-        $this->container['status'] = $status;
-
-        return $this;
-    }
-
-    /**
-     * Gets size
+     * Gets targetingId
      *
      * @return int
      */
-    public function getSize()
+    public function getTargetingId()
     {
-        return $this->container['size'];
+        return $this->container['targetingId'];
     }
 
     /**
-     * Sets size
+     * Sets targetingId
      *
-     * @param int $size size
+     * @param int $targetingId targetingId
      *
      * @return $this
      */
-    public function setSize($size)
+    public function setTargetingId($targetingId)
     {
-        $this->container['size'] = $size;
-
-        return $this;
-    }
-
-    /**
-     * Gets md5
-     *
-     * @return string
-     */
-    public function getMd5()
-    {
-        return $this->container['md5'];
-    }
-
-    /**
-     * Sets md5
-     *
-     * @param string $md5 md5
-     *
-     * @return $this
-     */
-    public function setMd5($md5)
-    {
-        $this->container['md5'] = $md5;
+        $this->container['targetingId'] = $targetingId;
 
         return $this;
     }

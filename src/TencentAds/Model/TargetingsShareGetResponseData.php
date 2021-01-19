@@ -1,6 +1,6 @@
 <?php
 /**
- * ReportJdCreativeTemplateHourlyReportResponse
+ * TargetingsShareGetResponseData
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ReportJdCreativeTemplateHourlyReportResponse Class Doc Comment
+ * TargetingsShareGetResponseData Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ReportJdCreativeTemplateHourlyReportResponse implements ModelInterface, ArrayAccess
+class TargetingsShareGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class ReportJdCreativeTemplateHourlyReportResponse implements ModelInterface, Ar
       *
       * @var string
       */
-    protected static $swaggerModelName = 'ReportJdCreativeTemplateHourlyReportResponse';
+    protected static $swaggerModelName = 'TargetingsShareGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,11 +57,8 @@ class ReportJdCreativeTemplateHourlyReportResponse implements ModelInterface, Ar
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'code' => 'int',
-        'message' => 'string',
-        'messageCn' => 'string',
-        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
-        'data' => '\TencentAds\Model\ReportJdCreativeTemplateHourlyReportResponseData'
+        'list' => '\TencentAds\Model\TargetingsShareGetListStruct[]',
+        'pageInfo' => '\TencentAds\Model\Conf'
     ];
 
     /**
@@ -70,11 +67,8 @@ class ReportJdCreativeTemplateHourlyReportResponse implements ModelInterface, Ar
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'code' => 'int64',
-        'message' => null,
-        'messageCn' => null,
-        'errors' => null,
-        'data' => null
+        'list' => null,
+        'pageInfo' => null
     ];
 
     /**
@@ -104,11 +98,8 @@ class ReportJdCreativeTemplateHourlyReportResponse implements ModelInterface, Ar
      * @var string[]
      */
     protected static $attributeMap = [
-        'code' => 'code',
-        'message' => 'message',
-        'messageCn' => 'message_cn',
-        'errors' => 'errors',
-        'data' => 'data'
+        'list' => 'list',
+        'pageInfo' => 'page_info'
     ];
 
     /**
@@ -117,11 +108,8 @@ class ReportJdCreativeTemplateHourlyReportResponse implements ModelInterface, Ar
      * @var string[]
      */
     protected static $setters = [
-        'code' => 'setCode',
-        'message' => 'setMessage',
-        'messageCn' => 'setMessageCn',
-        'errors' => 'setErrors',
-        'data' => 'setData'
+        'list' => 'setList',
+        'pageInfo' => 'setPageInfo'
     ];
 
     /**
@@ -130,11 +118,8 @@ class ReportJdCreativeTemplateHourlyReportResponse implements ModelInterface, Ar
      * @var string[]
      */
     protected static $getters = [
-        'code' => 'getCode',
-        'message' => 'getMessage',
-        'messageCn' => 'getMessageCn',
-        'errors' => 'getErrors',
-        'data' => 'getData'
+        'list' => 'getList',
+        'pageInfo' => 'getPageInfo'
     ];
 
     /**
@@ -197,11 +182,8 @@ class ReportJdCreativeTemplateHourlyReportResponse implements ModelInterface, Ar
      */
     public function __construct(array $data = null)
     {
-        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
-        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
-        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
-        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
-        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
+        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
+        $this->container['pageInfo'] = isset($data['pageInfo']) ? $data['pageInfo'] : null;
     }
 
     /**
@@ -229,121 +211,49 @@ class ReportJdCreativeTemplateHourlyReportResponse implements ModelInterface, Ar
 
 
     /**
-     * Gets code
+     * Gets list
      *
-     * @return int
+     * @return \TencentAds\Model\TargetingsShareGetListStruct[]
      */
-    public function getCode()
+    public function getList()
     {
-        return $this->container['code'];
+        return $this->container['list'];
     }
 
     /**
-     * Sets code
+     * Sets list
      *
-     * @param int $code code
+     * @param \TencentAds\Model\TargetingsShareGetListStruct[] $list list
      *
      * @return $this
      */
-    public function setCode($code)
+    public function setList($list)
     {
-        $this->container['code'] = $code;
+        $this->container['list'] = $list;
 
         return $this;
     }
 
     /**
-     * Gets message
+     * Gets pageInfo
      *
-     * @return string
+     * @return \TencentAds\Model\Conf
      */
-    public function getMessage()
+    public function getPageInfo()
     {
-        return $this->container['message'];
+        return $this->container['pageInfo'];
     }
 
     /**
-     * Sets message
+     * Sets pageInfo
      *
-     * @param string $message message
+     * @param \TencentAds\Model\Conf $pageInfo pageInfo
      *
      * @return $this
      */
-    public function setMessage($message)
+    public function setPageInfo($pageInfo)
     {
-        $this->container['message'] = $message;
-
-        return $this;
-    }
-
-    /**
-     * Gets messageCn
-     *
-     * @return string
-     */
-    public function getMessageCn()
-    {
-        return $this->container['messageCn'];
-    }
-
-    /**
-     * Sets messageCn
-     *
-     * @param string $messageCn messageCn
-     *
-     * @return $this
-     */
-    public function setMessageCn($messageCn)
-    {
-        $this->container['messageCn'] = $messageCn;
-
-        return $this;
-    }
-
-    /**
-     * Gets errors
-     *
-     * @return \TencentAds\Model\ApiErrorStruct[]
-     */
-    public function getErrors()
-    {
-        return $this->container['errors'];
-    }
-
-    /**
-     * Sets errors
-     *
-     * @param \TencentAds\Model\ApiErrorStruct[] $errors errors
-     *
-     * @return $this
-     */
-    public function setErrors($errors)
-    {
-        $this->container['errors'] = $errors;
-
-        return $this;
-    }
-
-    /**
-     * Gets data
-     *
-     * @return \TencentAds\Model\ReportJdCreativeTemplateHourlyReportResponseData
-     */
-    public function getData()
-    {
-        return $this->container['data'];
-    }
-
-    /**
-     * Sets data
-     *
-     * @param \TencentAds\Model\ReportJdCreativeTemplateHourlyReportResponseData $data data
-     *
-     * @return $this
-     */
-    public function setData($data)
-    {
-        $this->container['data'] = $data;
+        $this->container['pageInfo'] = $pageInfo;
 
         return $this;
     }

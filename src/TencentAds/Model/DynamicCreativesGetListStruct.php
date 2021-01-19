@@ -77,7 +77,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'impressionTrackingUrl' => 'string',
         'clickTrackingUrl' => 'string',
         'feedsVideoCommentSwitch' => 'bool',
-        'unionMarketSwitch' => 'bool'
+        'unionMarketSwitch' => 'bool',
+        'videoEndPage' => '\TencentAds\Model\VideoEndPageSpec'
     ];
 
     /**
@@ -105,7 +106,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'impressionTrackingUrl' => null,
         'clickTrackingUrl' => null,
         'feedsVideoCommentSwitch' => null,
-        'unionMarketSwitch' => null
+        'unionMarketSwitch' => null,
+        'videoEndPage' => null
     ];
 
     /**
@@ -154,7 +156,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'impressionTrackingUrl' => 'impression_tracking_url',
         'clickTrackingUrl' => 'click_tracking_url',
         'feedsVideoCommentSwitch' => 'feeds_video_comment_switch',
-        'unionMarketSwitch' => 'union_market_switch'
+        'unionMarketSwitch' => 'union_market_switch',
+        'videoEndPage' => 'video_end_page'
     ];
 
     /**
@@ -182,7 +185,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'impressionTrackingUrl' => 'setImpressionTrackingUrl',
         'clickTrackingUrl' => 'setClickTrackingUrl',
         'feedsVideoCommentSwitch' => 'setFeedsVideoCommentSwitch',
-        'unionMarketSwitch' => 'setUnionMarketSwitch'
+        'unionMarketSwitch' => 'setUnionMarketSwitch',
+        'videoEndPage' => 'setVideoEndPage'
     ];
 
     /**
@@ -210,7 +214,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'impressionTrackingUrl' => 'getImpressionTrackingUrl',
         'clickTrackingUrl' => 'getClickTrackingUrl',
         'feedsVideoCommentSwitch' => 'getFeedsVideoCommentSwitch',
-        'unionMarketSwitch' => 'getUnionMarketSwitch'
+        'unionMarketSwitch' => 'getUnionMarketSwitch',
+        'videoEndPage' => 'getVideoEndPage'
     ];
 
     /**
@@ -293,6 +298,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['clickTrackingUrl'] = isset($data['clickTrackingUrl']) ? $data['clickTrackingUrl'] : null;
         $this->container['feedsVideoCommentSwitch'] = isset($data['feedsVideoCommentSwitch']) ? $data['feedsVideoCommentSwitch'] : null;
         $this->container['unionMarketSwitch'] = isset($data['unionMarketSwitch']) ? $data['unionMarketSwitch'] : null;
+        $this->container['videoEndPage'] = isset($data['videoEndPage']) ? $data['videoEndPage'] : null;
     }
 
     /**
@@ -795,6 +801,30 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setUnionMarketSwitch($unionMarketSwitch)
     {
         $this->container['unionMarketSwitch'] = $unionMarketSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoEndPage
+     *
+     * @return \TencentAds\Model\VideoEndPageSpec
+     */
+    public function getVideoEndPage()
+    {
+        return $this->container['videoEndPage'];
+    }
+
+    /**
+     * Sets videoEndPage
+     *
+     * @param \TencentAds\Model\VideoEndPageSpec $videoEndPage videoEndPage
+     *
+     * @return $this
+     */
+    public function setVideoEndPage($videoEndPage)
+    {
+        $this->container['videoEndPage'] = $videoEndPage;
 
         return $this;
     }

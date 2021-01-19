@@ -87,6 +87,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'bidAdjustment' => '\TencentAds\Model\BidAdjustment',
         'autoAcquisitionEnabled' => 'bool',
         'autoAcquisitionBudget' => 'int',
+        'autoDerivedCreativeEnabled' => 'bool',
         'accountId' => 'int'
     ];
 
@@ -126,6 +127,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'bidAdjustment' => null,
         'autoAcquisitionEnabled' => null,
         'autoAcquisitionBudget' => 'int64',
+        'autoDerivedCreativeEnabled' => null,
         'accountId' => 'int64'
     ];
 
@@ -186,6 +188,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'bidAdjustment' => 'bid_adjustment',
         'autoAcquisitionEnabled' => 'auto_acquisition_enabled',
         'autoAcquisitionBudget' => 'auto_acquisition_budget',
+        'autoDerivedCreativeEnabled' => 'auto_derived_creative_enabled',
         'accountId' => 'account_id'
     ];
 
@@ -225,6 +228,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'bidAdjustment' => 'setBidAdjustment',
         'autoAcquisitionEnabled' => 'setAutoAcquisitionEnabled',
         'autoAcquisitionBudget' => 'setAutoAcquisitionBudget',
+        'autoDerivedCreativeEnabled' => 'setAutoDerivedCreativeEnabled',
         'accountId' => 'setAccountId'
     ];
 
@@ -264,6 +268,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'bidAdjustment' => 'getBidAdjustment',
         'autoAcquisitionEnabled' => 'getAutoAcquisitionEnabled',
         'autoAcquisitionBudget' => 'getAutoAcquisitionBudget',
+        'autoDerivedCreativeEnabled' => 'getAutoDerivedCreativeEnabled',
         'accountId' => 'getAccountId'
     ];
 
@@ -357,6 +362,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['bidAdjustment'] = isset($data['bidAdjustment']) ? $data['bidAdjustment'] : null;
         $this->container['autoAcquisitionEnabled'] = isset($data['autoAcquisitionEnabled']) ? $data['autoAcquisitionEnabled'] : null;
         $this->container['autoAcquisitionBudget'] = isset($data['autoAcquisitionBudget']) ? $data['autoAcquisitionBudget'] : null;
+        $this->container['autoDerivedCreativeEnabled'] = isset($data['autoDerivedCreativeEnabled']) ? $data['autoDerivedCreativeEnabled'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1100,6 +1106,30 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setAutoAcquisitionBudget($autoAcquisitionBudget)
     {
         $this->container['autoAcquisitionBudget'] = $autoAcquisitionBudget;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoDerivedCreativeEnabled
+     *
+     * @return bool
+     */
+    public function getAutoDerivedCreativeEnabled()
+    {
+        return $this->container['autoDerivedCreativeEnabled'];
+    }
+
+    /**
+     * Sets autoDerivedCreativeEnabled
+     *
+     * @param bool $autoDerivedCreativeEnabled autoDerivedCreativeEnabled
+     *
+     * @return $this
+     */
+    public function setAutoDerivedCreativeEnabled($autoDerivedCreativeEnabled)
+    {
+        $this->container['autoDerivedCreativeEnabled'] = $autoDerivedCreativeEnabled;
 
         return $this;
     }
