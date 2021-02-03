@@ -75,7 +75,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'countdown' => 'int',
         'miniProgramId' => 'string',
         'miniProgramPath' => 'string',
-        'label' => '\TencentAds\Model\AdcreativeLabel[]',
+        'label' => '\TencentAds\Model\CreativeLabel[]',
         'productTags' => 'string[]',
         'logoDescription' => 'string',
         'logo' => 'string',
@@ -838,7 +838,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets label
      *
-     * @return \TencentAds\Model\AdcreativeLabel[]
+     * @return \TencentAds\Model\CreativeLabel[]
      */
     public function getLabel()
     {
@@ -848,7 +848,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets label
      *
-     * @param \TencentAds\Model\AdcreativeLabel[] $label label
+     * @param \TencentAds\Model\CreativeLabel[] $label label
      *
      * @return $this
      */

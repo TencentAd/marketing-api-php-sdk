@@ -60,7 +60,9 @@ class SizeAdjustment implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'targetSize' => '\TencentAds\Model\SizeType',
         'sizeAdjustmentMethod' => '\TencentAds\Model\SizeAdjustmentMethodEnum',
-        'color' => 'string'
+        'color' => 'string',
+        'bgImageId1' => 'string',
+        'bgImageId2' => 'string'
     ];
 
     /**
@@ -71,7 +73,9 @@ class SizeAdjustment implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'targetSize' => null,
         'sizeAdjustmentMethod' => null,
-        'color' => null
+        'color' => null,
+        'bgImageId1' => null,
+        'bgImageId2' => null
     ];
 
     /**
@@ -103,7 +107,9 @@ class SizeAdjustment implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'targetSize' => 'target_size',
         'sizeAdjustmentMethod' => 'size_adjustment_method',
-        'color' => 'color'
+        'color' => 'color',
+        'bgImageId1' => 'bg_image_id1',
+        'bgImageId2' => 'bg_image_id2'
     ];
 
     /**
@@ -114,7 +120,9 @@ class SizeAdjustment implements ModelInterface, ArrayAccess
     protected static $setters = [
         'targetSize' => 'setTargetSize',
         'sizeAdjustmentMethod' => 'setSizeAdjustmentMethod',
-        'color' => 'setColor'
+        'color' => 'setColor',
+        'bgImageId1' => 'setBgImageId1',
+        'bgImageId2' => 'setBgImageId2'
     ];
 
     /**
@@ -125,7 +133,9 @@ class SizeAdjustment implements ModelInterface, ArrayAccess
     protected static $getters = [
         'targetSize' => 'getTargetSize',
         'sizeAdjustmentMethod' => 'getSizeAdjustmentMethod',
-        'color' => 'getColor'
+        'color' => 'getColor',
+        'bgImageId1' => 'getBgImageId1',
+        'bgImageId2' => 'getBgImageId2'
     ];
 
     /**
@@ -191,6 +201,8 @@ class SizeAdjustment implements ModelInterface, ArrayAccess
         $this->container['targetSize'] = isset($data['targetSize']) ? $data['targetSize'] : null;
         $this->container['sizeAdjustmentMethod'] = isset($data['sizeAdjustmentMethod']) ? $data['sizeAdjustmentMethod'] : null;
         $this->container['color'] = isset($data['color']) ? $data['color'] : null;
+        $this->container['bgImageId1'] = isset($data['bgImageId1']) ? $data['bgImageId1'] : null;
+        $this->container['bgImageId2'] = isset($data['bgImageId2']) ? $data['bgImageId2'] : null;
     }
 
     /**
@@ -285,6 +297,54 @@ class SizeAdjustment implements ModelInterface, ArrayAccess
     public function setColor($color)
     {
         $this->container['color'] = $color;
+
+        return $this;
+    }
+
+    /**
+     * Gets bgImageId1
+     *
+     * @return string
+     */
+    public function getBgImageId1()
+    {
+        return $this->container['bgImageId1'];
+    }
+
+    /**
+     * Sets bgImageId1
+     *
+     * @param string $bgImageId1 bgImageId1
+     *
+     * @return $this
+     */
+    public function setBgImageId1($bgImageId1)
+    {
+        $this->container['bgImageId1'] = $bgImageId1;
+
+        return $this;
+    }
+
+    /**
+     * Gets bgImageId2
+     *
+     * @return string
+     */
+    public function getBgImageId2()
+    {
+        return $this->container['bgImageId2'];
+    }
+
+    /**
+     * Sets bgImageId2
+     *
+     * @param string $bgImageId2 bgImageId2
+     *
+     * @return $this
+     */
+    public function setBgImageId2($bgImageId2)
+    {
+        $this->container['bgImageId2'] = $bgImageId2;
 
         return $this;
     }

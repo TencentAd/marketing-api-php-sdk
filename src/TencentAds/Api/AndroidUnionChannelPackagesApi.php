@@ -376,6 +376,7 @@ class AndroidUnionChannelPackagesApi
      *
      * @param  int $accountId accountId (required)
      * @param  int $androidUnionAppId androidUnionAppId (required)
+     * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
      * @param  int $page page (optional)
      * @param  int $pageSize pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
@@ -384,9 +385,9 @@ class AndroidUnionChannelPackagesApi
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\AndroidUnionChannelPackagesGetResponse
      */
-    public function androidUnionChannelPackagesGet($accountId, $androidUnionAppId, $page = null, $pageSize = null, $fields = null)
+    public function androidUnionChannelPackagesGet($accountId, $androidUnionAppId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
-        list($response) = $this->androidUnionChannelPackagesGetWithHttpInfo($accountId, $androidUnionAppId, $page, $pageSize, $fields);
+        list($response) = $this->androidUnionChannelPackagesGetWithHttpInfo($accountId, $androidUnionAppId, $filtering, $page, $pageSize, $fields);
         return $response;
     }
 
@@ -397,6 +398,7 @@ class AndroidUnionChannelPackagesApi
      *
      * @param  int $accountId (required)
      * @param  int $androidUnionAppId (required)
+     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
@@ -405,10 +407,10 @@ class AndroidUnionChannelPackagesApi
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\AndroidUnionChannelPackagesGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function androidUnionChannelPackagesGetWithHttpInfo($accountId, $androidUnionAppId, $page = null, $pageSize = null, $fields = null)
+    public function androidUnionChannelPackagesGetWithHttpInfo($accountId, $androidUnionAppId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\AndroidUnionChannelPackagesGetResponse';
-        $request = $this->androidUnionChannelPackagesGetRequest($accountId, $androidUnionAppId, $page, $pageSize, $fields);
+        $request = $this->androidUnionChannelPackagesGetRequest($accountId, $androidUnionAppId, $filtering, $page, $pageSize, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -476,6 +478,7 @@ class AndroidUnionChannelPackagesApi
      *
      * @param  int $accountId (required)
      * @param  int $androidUnionAppId (required)
+     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
@@ -483,9 +486,9 @@ class AndroidUnionChannelPackagesApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function androidUnionChannelPackagesGetAsync($accountId, $androidUnionAppId, $page = null, $pageSize = null, $fields = null)
+    public function androidUnionChannelPackagesGetAsync($accountId, $androidUnionAppId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
-        return $this->androidUnionChannelPackagesGetAsyncWithHttpInfo($accountId, $androidUnionAppId, $page, $pageSize, $fields)
+        return $this->androidUnionChannelPackagesGetAsyncWithHttpInfo($accountId, $androidUnionAppId, $filtering, $page, $pageSize, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -500,6 +503,7 @@ class AndroidUnionChannelPackagesApi
      *
      * @param  int $accountId (required)
      * @param  int $androidUnionAppId (required)
+     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
@@ -507,10 +511,10 @@ class AndroidUnionChannelPackagesApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function androidUnionChannelPackagesGetAsyncWithHttpInfo($accountId, $androidUnionAppId, $page = null, $pageSize = null, $fields = null)
+    public function androidUnionChannelPackagesGetAsyncWithHttpInfo($accountId, $androidUnionAppId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\AndroidUnionChannelPackagesGetResponse';
-        $request = $this->androidUnionChannelPackagesGetRequest($accountId, $androidUnionAppId, $page, $pageSize, $fields);
+        $request = $this->androidUnionChannelPackagesGetRequest($accountId, $androidUnionAppId, $filtering, $page, $pageSize, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -554,6 +558,7 @@ class AndroidUnionChannelPackagesApi
      *
      * @param  int $accountId (required)
      * @param  int $androidUnionAppId (required)
+     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
@@ -561,7 +566,7 @@ class AndroidUnionChannelPackagesApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function androidUnionChannelPackagesGetRequest($accountId, $androidUnionAppId, $page = null, $pageSize = null, $fields = null)
+    protected function androidUnionChannelPackagesGetRequest($accountId, $androidUnionAppId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -590,6 +595,13 @@ class AndroidUnionChannelPackagesApi
         // query params
         if ($androidUnionAppId !== null) {
             $queryParams['android_union_app_id'] = ObjectSerializer::toQueryValue($androidUnionAppId);
+        }
+        // query params
+        if (is_array($filtering)) {
+            $queryParams['filtering'] = $filtering;
+        } else
+        if ($filtering !== null) {
+            $queryParams['filtering'] = ObjectSerializer::toQueryValue($filtering);
         }
         // query params
         if ($page !== null) {

@@ -60,6 +60,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'accountId' => 'int',
         'leadsId' => 'int',
+        'outerLeadsId' => 'string',
         'clickId' => 'string',
         'wechatAppid' => 'string',
         'agencyId' => 'string',
@@ -75,10 +76,14 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'pageId' => 'string',
         'pageName' => 'string',
         'pageUrl' => 'string',
-        'leadsType' => 'string',
+        'leadsType' => '\TencentAds\Model\LeadCluesLeadsType',
         'leadsSource' => 'string',
         'leadsPotentialScore' => 'string',
         'leadsFollowTag' => 'string',
+        'outerLeadsConvertType' => 'string',
+        'outerLeadsIneffectReason' => 'string',
+        'leadsUserId' => 'string',
+        'leadsUserType' => '\TencentAds\Model\LeadsUserType',
         'leadsName' => 'string',
         'leadsTelephone' => 'string',
         'telephoneLocation' => 'string',
@@ -86,7 +91,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'leadsEmail' => 'string',
         'leadsQq' => 'string',
         'leadsWechat' => 'string',
-        'leadsGender' => 'string',
+        'leadsGender' => '\TencentAds\Model\LeadCluesGenderType',
         'nationality' => 'string',
         'workingYears' => 'string',
         'age' => 'string',
@@ -110,6 +115,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'accountId' => 'int64',
         'leadsId' => 'int64',
+        'outerLeadsId' => null,
         'clickId' => null,
         'wechatAppid' => null,
         'agencyId' => null,
@@ -129,6 +135,10 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'leadsSource' => null,
         'leadsPotentialScore' => null,
         'leadsFollowTag' => null,
+        'outerLeadsConvertType' => null,
+        'outerLeadsIneffectReason' => null,
+        'leadsUserId' => null,
+        'leadsUserType' => null,
         'leadsName' => null,
         'leadsTelephone' => null,
         'telephoneLocation' => null,
@@ -181,6 +191,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'accountId' => 'account_id',
         'leadsId' => 'leads_id',
+        'outerLeadsId' => 'outer_leads_id',
         'clickId' => 'click_id',
         'wechatAppid' => 'wechat_appid',
         'agencyId' => 'agency_id',
@@ -200,6 +211,10 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'leadsSource' => 'leads_source',
         'leadsPotentialScore' => 'leads_potential_score',
         'leadsFollowTag' => 'leads_follow_tag',
+        'outerLeadsConvertType' => 'outer_leads_convert_type',
+        'outerLeadsIneffectReason' => 'outer_leads_ineffect_reason',
+        'leadsUserId' => 'leads_user_id',
+        'leadsUserType' => 'leads_user_type',
         'leadsName' => 'leads_name',
         'leadsTelephone' => 'leads_telephone',
         'telephoneLocation' => 'telephone_location',
@@ -231,6 +246,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     protected static $setters = [
         'accountId' => 'setAccountId',
         'leadsId' => 'setLeadsId',
+        'outerLeadsId' => 'setOuterLeadsId',
         'clickId' => 'setClickId',
         'wechatAppid' => 'setWechatAppid',
         'agencyId' => 'setAgencyId',
@@ -250,6 +266,10 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'leadsSource' => 'setLeadsSource',
         'leadsPotentialScore' => 'setLeadsPotentialScore',
         'leadsFollowTag' => 'setLeadsFollowTag',
+        'outerLeadsConvertType' => 'setOuterLeadsConvertType',
+        'outerLeadsIneffectReason' => 'setOuterLeadsIneffectReason',
+        'leadsUserId' => 'setLeadsUserId',
+        'leadsUserType' => 'setLeadsUserType',
         'leadsName' => 'setLeadsName',
         'leadsTelephone' => 'setLeadsTelephone',
         'telephoneLocation' => 'setTelephoneLocation',
@@ -281,6 +301,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     protected static $getters = [
         'accountId' => 'getAccountId',
         'leadsId' => 'getLeadsId',
+        'outerLeadsId' => 'getOuterLeadsId',
         'clickId' => 'getClickId',
         'wechatAppid' => 'getWechatAppid',
         'agencyId' => 'getAgencyId',
@@ -300,6 +321,10 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'leadsSource' => 'getLeadsSource',
         'leadsPotentialScore' => 'getLeadsPotentialScore',
         'leadsFollowTag' => 'getLeadsFollowTag',
+        'outerLeadsConvertType' => 'getOuterLeadsConvertType',
+        'outerLeadsIneffectReason' => 'getOuterLeadsIneffectReason',
+        'leadsUserId' => 'getLeadsUserId',
+        'leadsUserType' => 'getLeadsUserType',
         'leadsName' => 'getLeadsName',
         'leadsTelephone' => 'getLeadsTelephone',
         'telephoneLocation' => 'getTelephoneLocation',
@@ -385,6 +410,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['leadsId'] = isset($data['leadsId']) ? $data['leadsId'] : null;
+        $this->container['outerLeadsId'] = isset($data['outerLeadsId']) ? $data['outerLeadsId'] : null;
         $this->container['clickId'] = isset($data['clickId']) ? $data['clickId'] : null;
         $this->container['wechatAppid'] = isset($data['wechatAppid']) ? $data['wechatAppid'] : null;
         $this->container['agencyId'] = isset($data['agencyId']) ? $data['agencyId'] : null;
@@ -404,6 +430,10 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['leadsSource'] = isset($data['leadsSource']) ? $data['leadsSource'] : null;
         $this->container['leadsPotentialScore'] = isset($data['leadsPotentialScore']) ? $data['leadsPotentialScore'] : null;
         $this->container['leadsFollowTag'] = isset($data['leadsFollowTag']) ? $data['leadsFollowTag'] : null;
+        $this->container['outerLeadsConvertType'] = isset($data['outerLeadsConvertType']) ? $data['outerLeadsConvertType'] : null;
+        $this->container['outerLeadsIneffectReason'] = isset($data['outerLeadsIneffectReason']) ? $data['outerLeadsIneffectReason'] : null;
+        $this->container['leadsUserId'] = isset($data['leadsUserId']) ? $data['leadsUserId'] : null;
+        $this->container['leadsUserType'] = isset($data['leadsUserType']) ? $data['leadsUserType'] : null;
         $this->container['leadsName'] = isset($data['leadsName']) ? $data['leadsName'] : null;
         $this->container['leadsTelephone'] = isset($data['leadsTelephone']) ? $data['leadsTelephone'] : null;
         $this->container['telephoneLocation'] = isset($data['telephoneLocation']) ? $data['telephoneLocation'] : null;
@@ -495,6 +525,30 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     public function setLeadsId($leadsId)
     {
         $this->container['leadsId'] = $leadsId;
+
+        return $this;
+    }
+
+    /**
+     * Gets outerLeadsId
+     *
+     * @return string
+     */
+    public function getOuterLeadsId()
+    {
+        return $this->container['outerLeadsId'];
+    }
+
+    /**
+     * Sets outerLeadsId
+     *
+     * @param string $outerLeadsId outerLeadsId
+     *
+     * @return $this
+     */
+    public function setOuterLeadsId($outerLeadsId)
+    {
+        $this->container['outerLeadsId'] = $outerLeadsId;
 
         return $this;
     }
@@ -862,7 +916,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsType
      *
-     * @return string
+     * @return \TencentAds\Model\LeadCluesLeadsType
      */
     public function getLeadsType()
     {
@@ -872,7 +926,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsType
      *
-     * @param string $leadsType leadsType
+     * @param \TencentAds\Model\LeadCluesLeadsType $leadsType leadsType
      *
      * @return $this
      */
@@ -951,6 +1005,102 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     public function setLeadsFollowTag($leadsFollowTag)
     {
         $this->container['leadsFollowTag'] = $leadsFollowTag;
+
+        return $this;
+    }
+
+    /**
+     * Gets outerLeadsConvertType
+     *
+     * @return string
+     */
+    public function getOuterLeadsConvertType()
+    {
+        return $this->container['outerLeadsConvertType'];
+    }
+
+    /**
+     * Sets outerLeadsConvertType
+     *
+     * @param string $outerLeadsConvertType outerLeadsConvertType
+     *
+     * @return $this
+     */
+    public function setOuterLeadsConvertType($outerLeadsConvertType)
+    {
+        $this->container['outerLeadsConvertType'] = $outerLeadsConvertType;
+
+        return $this;
+    }
+
+    /**
+     * Gets outerLeadsIneffectReason
+     *
+     * @return string
+     */
+    public function getOuterLeadsIneffectReason()
+    {
+        return $this->container['outerLeadsIneffectReason'];
+    }
+
+    /**
+     * Sets outerLeadsIneffectReason
+     *
+     * @param string $outerLeadsIneffectReason outerLeadsIneffectReason
+     *
+     * @return $this
+     */
+    public function setOuterLeadsIneffectReason($outerLeadsIneffectReason)
+    {
+        $this->container['outerLeadsIneffectReason'] = $outerLeadsIneffectReason;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsUserId
+     *
+     * @return string
+     */
+    public function getLeadsUserId()
+    {
+        return $this->container['leadsUserId'];
+    }
+
+    /**
+     * Sets leadsUserId
+     *
+     * @param string $leadsUserId leadsUserId
+     *
+     * @return $this
+     */
+    public function setLeadsUserId($leadsUserId)
+    {
+        $this->container['leadsUserId'] = $leadsUserId;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsUserType
+     *
+     * @return \TencentAds\Model\LeadsUserType
+     */
+    public function getLeadsUserType()
+    {
+        return $this->container['leadsUserType'];
+    }
+
+    /**
+     * Sets leadsUserType
+     *
+     * @param \TencentAds\Model\LeadsUserType $leadsUserType leadsUserType
+     *
+     * @return $this
+     */
+    public function setLeadsUserType($leadsUserType)
+    {
+        $this->container['leadsUserType'] = $leadsUserType;
 
         return $this;
     }
@@ -1126,7 +1276,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsGender
      *
-     * @return string
+     * @return \TencentAds\Model\LeadCluesGenderType
      */
     public function getLeadsGender()
     {
@@ -1136,7 +1286,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsGender
      *
-     * @param string $leadsGender leadsGender
+     * @param \TencentAds\Model\LeadCluesGenderType $leadsGender leadsGender
      *
      * @return $this
      */

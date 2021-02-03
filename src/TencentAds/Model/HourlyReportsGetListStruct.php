@@ -325,11 +325,19 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationUsers' => 'int',
         'miniGamePayingCount' => 'int',
         'miniGamePayingAmount' => 'int',
+        'miniGameFirstPayingUsers' => 'int',
         'miniGameCreateRoleUsers' => 'int',
         'miniGameCreateRoleCost' => 'int',
         'miniGameRetentionD1' => 'int',
         'miniGameKeyPageViewers' => 'int',
         'miniGameKeyPageViewCost' => 'int',
+        'miniGameAdMonetizationAmount' => 'int',
+        'miniGamePayingAmountByUpload' => 'int',
+        'miniGamePayingCountByUpload' => 'int',
+        'consultLeaveInfoCost' => 'int',
+        'purchaseAmountWithCoupon' => 'int',
+        'purchaseAmountWithCouponCost' => 'int',
+        'miniGamePayingAmountClickD1ByUpload' => 'int',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
         'incomeRoi1' => 'double',
@@ -360,8 +368,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameFirstDayAdPayingArpu' => 'int',
         'miniGamePayingUsersD1' => 'int',
         'miniGamePayingAmountD1' => 'int',
-        'miniGameFirstPayingUsers' => 'int',
         'miniGameFirstDayPayingRoi' => 'double',
+        'miniGamePayingAmountD1ByUpload' => 'int',
         'campaignId' => 'int',
         'campaignName' => 'string',
         'webAddToCartCount' => 'int',
@@ -719,11 +727,19 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationUsers' => 'int64',
         'miniGamePayingCount' => 'int64',
         'miniGamePayingAmount' => 'int64',
+        'miniGameFirstPayingUsers' => 'int64',
         'miniGameCreateRoleUsers' => 'int64',
         'miniGameCreateRoleCost' => 'int64',
         'miniGameRetentionD1' => 'int64',
         'miniGameKeyPageViewers' => 'int64',
         'miniGameKeyPageViewCost' => 'int64',
+        'miniGameAdMonetizationAmount' => 'int64',
+        'miniGamePayingAmountByUpload' => 'int64',
+        'miniGamePayingCountByUpload' => 'int64',
+        'consultLeaveInfoCost' => 'int64',
+        'purchaseAmountWithCoupon' => 'int64',
+        'purchaseAmountWithCouponCost' => 'int64',
+        'miniGamePayingAmountClickD1ByUpload' => 'int64',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
         'incomeRoi1' => 'double',
@@ -754,8 +770,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameFirstDayAdPayingArpu' => 'int64',
         'miniGamePayingUsersD1' => 'int64',
         'miniGamePayingAmountD1' => 'int64',
-        'miniGameFirstPayingUsers' => 'int64',
         'miniGameFirstDayPayingRoi' => 'double',
+        'miniGamePayingAmountD1ByUpload' => 'int64',
         'campaignId' => 'int64',
         'campaignName' => null,
         'webAddToCartCount' => 'int64',
@@ -1134,11 +1150,19 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationUsers' => 'mini_game_ad_monetization_users',
         'miniGamePayingCount' => 'mini_game_paying_count',
         'miniGamePayingAmount' => 'mini_game_paying_amount',
+        'miniGameFirstPayingUsers' => 'mini_game_first_paying_users',
         'miniGameCreateRoleUsers' => 'mini_game_create_role_users',
         'miniGameCreateRoleCost' => 'mini_game_create_role_cost',
         'miniGameRetentionD1' => 'mini_game_retention_d1',
         'miniGameKeyPageViewers' => 'mini_game_key_page_viewers',
         'miniGameKeyPageViewCost' => 'mini_game_key_page_view_cost',
+        'miniGameAdMonetizationAmount' => 'mini_game_ad_monetization_amount',
+        'miniGamePayingAmountByUpload' => 'mini_game_paying_amount_by_upload',
+        'miniGamePayingCountByUpload' => 'mini_game_paying_count_by_upload',
+        'consultLeaveInfoCost' => 'consult_leave_info_cost',
+        'purchaseAmountWithCoupon' => 'purchase_amount_with_coupon',
+        'purchaseAmountWithCouponCost' => 'purchase_amount_with_coupon_cost',
+        'miniGamePayingAmountClickD1ByUpload' => 'mini_game_paying_amount_click_d1_by_upload',
         'requestConversionsCount' => 'request_conversions_count',
         'requestConversionsCost' => 'request_conversions_cost',
         'incomeRoi1' => 'income_roi_1',
@@ -1169,8 +1193,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameFirstDayAdPayingArpu' => 'mini_game_first_day_ad_paying_arpu',
         'miniGamePayingUsersD1' => 'mini_game_paying_users_d1',
         'miniGamePayingAmountD1' => 'mini_game_paying_amount_d1',
-        'miniGameFirstPayingUsers' => 'mini_game_first_paying_users',
         'miniGameFirstDayPayingRoi' => 'mini_game_first_day_paying_roi',
+        'miniGamePayingAmountD1ByUpload' => 'mini_game_paying_amount_d1_by_upload',
         'campaignId' => 'campaign_id',
         'campaignName' => 'campaign_name',
         'webAddToCartCount' => 'web_add_to_cart_count',
@@ -1528,11 +1552,19 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationUsers' => 'setMiniGameAdMonetizationUsers',
         'miniGamePayingCount' => 'setMiniGamePayingCount',
         'miniGamePayingAmount' => 'setMiniGamePayingAmount',
+        'miniGameFirstPayingUsers' => 'setMiniGameFirstPayingUsers',
         'miniGameCreateRoleUsers' => 'setMiniGameCreateRoleUsers',
         'miniGameCreateRoleCost' => 'setMiniGameCreateRoleCost',
         'miniGameRetentionD1' => 'setMiniGameRetentionD1',
         'miniGameKeyPageViewers' => 'setMiniGameKeyPageViewers',
         'miniGameKeyPageViewCost' => 'setMiniGameKeyPageViewCost',
+        'miniGameAdMonetizationAmount' => 'setMiniGameAdMonetizationAmount',
+        'miniGamePayingAmountByUpload' => 'setMiniGamePayingAmountByUpload',
+        'miniGamePayingCountByUpload' => 'setMiniGamePayingCountByUpload',
+        'consultLeaveInfoCost' => 'setConsultLeaveInfoCost',
+        'purchaseAmountWithCoupon' => 'setPurchaseAmountWithCoupon',
+        'purchaseAmountWithCouponCost' => 'setPurchaseAmountWithCouponCost',
+        'miniGamePayingAmountClickD1ByUpload' => 'setMiniGamePayingAmountClickD1ByUpload',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'requestConversionsCost' => 'setRequestConversionsCost',
         'incomeRoi1' => 'setIncomeRoi1',
@@ -1563,8 +1595,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameFirstDayAdPayingArpu' => 'setMiniGameFirstDayAdPayingArpu',
         'miniGamePayingUsersD1' => 'setMiniGamePayingUsersD1',
         'miniGamePayingAmountD1' => 'setMiniGamePayingAmountD1',
-        'miniGameFirstPayingUsers' => 'setMiniGameFirstPayingUsers',
         'miniGameFirstDayPayingRoi' => 'setMiniGameFirstDayPayingRoi',
+        'miniGamePayingAmountD1ByUpload' => 'setMiniGamePayingAmountD1ByUpload',
         'campaignId' => 'setCampaignId',
         'campaignName' => 'setCampaignName',
         'webAddToCartCount' => 'setWebAddToCartCount',
@@ -1922,11 +1954,19 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationUsers' => 'getMiniGameAdMonetizationUsers',
         'miniGamePayingCount' => 'getMiniGamePayingCount',
         'miniGamePayingAmount' => 'getMiniGamePayingAmount',
+        'miniGameFirstPayingUsers' => 'getMiniGameFirstPayingUsers',
         'miniGameCreateRoleUsers' => 'getMiniGameCreateRoleUsers',
         'miniGameCreateRoleCost' => 'getMiniGameCreateRoleCost',
         'miniGameRetentionD1' => 'getMiniGameRetentionD1',
         'miniGameKeyPageViewers' => 'getMiniGameKeyPageViewers',
         'miniGameKeyPageViewCost' => 'getMiniGameKeyPageViewCost',
+        'miniGameAdMonetizationAmount' => 'getMiniGameAdMonetizationAmount',
+        'miniGamePayingAmountByUpload' => 'getMiniGamePayingAmountByUpload',
+        'miniGamePayingCountByUpload' => 'getMiniGamePayingCountByUpload',
+        'consultLeaveInfoCost' => 'getConsultLeaveInfoCost',
+        'purchaseAmountWithCoupon' => 'getPurchaseAmountWithCoupon',
+        'purchaseAmountWithCouponCost' => 'getPurchaseAmountWithCouponCost',
+        'miniGamePayingAmountClickD1ByUpload' => 'getMiniGamePayingAmountClickD1ByUpload',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'requestConversionsCost' => 'getRequestConversionsCost',
         'incomeRoi1' => 'getIncomeRoi1',
@@ -1957,8 +1997,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameFirstDayAdPayingArpu' => 'getMiniGameFirstDayAdPayingArpu',
         'miniGamePayingUsersD1' => 'getMiniGamePayingUsersD1',
         'miniGamePayingAmountD1' => 'getMiniGamePayingAmountD1',
-        'miniGameFirstPayingUsers' => 'getMiniGameFirstPayingUsers',
         'miniGameFirstDayPayingRoi' => 'getMiniGameFirstDayPayingRoi',
+        'miniGamePayingAmountD1ByUpload' => 'getMiniGamePayingAmountD1ByUpload',
         'campaignId' => 'getCampaignId',
         'campaignName' => 'getCampaignName',
         'webAddToCartCount' => 'getWebAddToCartCount',
@@ -2370,11 +2410,19 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGameAdMonetizationUsers'] = isset($data['miniGameAdMonetizationUsers']) ? $data['miniGameAdMonetizationUsers'] : null;
         $this->container['miniGamePayingCount'] = isset($data['miniGamePayingCount']) ? $data['miniGamePayingCount'] : null;
         $this->container['miniGamePayingAmount'] = isset($data['miniGamePayingAmount']) ? $data['miniGamePayingAmount'] : null;
+        $this->container['miniGameFirstPayingUsers'] = isset($data['miniGameFirstPayingUsers']) ? $data['miniGameFirstPayingUsers'] : null;
         $this->container['miniGameCreateRoleUsers'] = isset($data['miniGameCreateRoleUsers']) ? $data['miniGameCreateRoleUsers'] : null;
         $this->container['miniGameCreateRoleCost'] = isset($data['miniGameCreateRoleCost']) ? $data['miniGameCreateRoleCost'] : null;
         $this->container['miniGameRetentionD1'] = isset($data['miniGameRetentionD1']) ? $data['miniGameRetentionD1'] : null;
         $this->container['miniGameKeyPageViewers'] = isset($data['miniGameKeyPageViewers']) ? $data['miniGameKeyPageViewers'] : null;
         $this->container['miniGameKeyPageViewCost'] = isset($data['miniGameKeyPageViewCost']) ? $data['miniGameKeyPageViewCost'] : null;
+        $this->container['miniGameAdMonetizationAmount'] = isset($data['miniGameAdMonetizationAmount']) ? $data['miniGameAdMonetizationAmount'] : null;
+        $this->container['miniGamePayingAmountByUpload'] = isset($data['miniGamePayingAmountByUpload']) ? $data['miniGamePayingAmountByUpload'] : null;
+        $this->container['miniGamePayingCountByUpload'] = isset($data['miniGamePayingCountByUpload']) ? $data['miniGamePayingCountByUpload'] : null;
+        $this->container['consultLeaveInfoCost'] = isset($data['consultLeaveInfoCost']) ? $data['consultLeaveInfoCost'] : null;
+        $this->container['purchaseAmountWithCoupon'] = isset($data['purchaseAmountWithCoupon']) ? $data['purchaseAmountWithCoupon'] : null;
+        $this->container['purchaseAmountWithCouponCost'] = isset($data['purchaseAmountWithCouponCost']) ? $data['purchaseAmountWithCouponCost'] : null;
+        $this->container['miniGamePayingAmountClickD1ByUpload'] = isset($data['miniGamePayingAmountClickD1ByUpload']) ? $data['miniGamePayingAmountClickD1ByUpload'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
         $this->container['incomeRoi1'] = isset($data['incomeRoi1']) ? $data['incomeRoi1'] : null;
@@ -2405,8 +2453,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGameFirstDayAdPayingArpu'] = isset($data['miniGameFirstDayAdPayingArpu']) ? $data['miniGameFirstDayAdPayingArpu'] : null;
         $this->container['miniGamePayingUsersD1'] = isset($data['miniGamePayingUsersD1']) ? $data['miniGamePayingUsersD1'] : null;
         $this->container['miniGamePayingAmountD1'] = isset($data['miniGamePayingAmountD1']) ? $data['miniGamePayingAmountD1'] : null;
-        $this->container['miniGameFirstPayingUsers'] = isset($data['miniGameFirstPayingUsers']) ? $data['miniGameFirstPayingUsers'] : null;
         $this->container['miniGameFirstDayPayingRoi'] = isset($data['miniGameFirstDayPayingRoi']) ? $data['miniGameFirstDayPayingRoi'] : null;
+        $this->container['miniGamePayingAmountD1ByUpload'] = isset($data['miniGamePayingAmountD1ByUpload']) ? $data['miniGamePayingAmountD1ByUpload'] : null;
         $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
         $this->container['campaignName'] = isset($data['campaignName']) ? $data['campaignName'] : null;
         $this->container['webAddToCartCount'] = isset($data['webAddToCartCount']) ? $data['webAddToCartCount'] : null;
@@ -8924,6 +8972,30 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets miniGameFirstPayingUsers
+     *
+     * @return int
+     */
+    public function getMiniGameFirstPayingUsers()
+    {
+        return $this->container['miniGameFirstPayingUsers'];
+    }
+
+    /**
+     * Sets miniGameFirstPayingUsers
+     *
+     * @param int $miniGameFirstPayingUsers miniGameFirstPayingUsers
+     *
+     * @return $this
+     */
+    public function setMiniGameFirstPayingUsers($miniGameFirstPayingUsers)
+    {
+        $this->container['miniGameFirstPayingUsers'] = $miniGameFirstPayingUsers;
+
+        return $this;
+    }
+
+    /**
      * Gets miniGameCreateRoleUsers
      *
      * @return int
@@ -9039,6 +9111,174 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setMiniGameKeyPageViewCost($miniGameKeyPageViewCost)
     {
         $this->container['miniGameKeyPageViewCost'] = $miniGameKeyPageViewCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameAdMonetizationAmount
+     *
+     * @return int
+     */
+    public function getMiniGameAdMonetizationAmount()
+    {
+        return $this->container['miniGameAdMonetizationAmount'];
+    }
+
+    /**
+     * Sets miniGameAdMonetizationAmount
+     *
+     * @param int $miniGameAdMonetizationAmount miniGameAdMonetizationAmount
+     *
+     * @return $this
+     */
+    public function setMiniGameAdMonetizationAmount($miniGameAdMonetizationAmount)
+    {
+        $this->container['miniGameAdMonetizationAmount'] = $miniGameAdMonetizationAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayingAmountByUpload
+     *
+     * @return int
+     */
+    public function getMiniGamePayingAmountByUpload()
+    {
+        return $this->container['miniGamePayingAmountByUpload'];
+    }
+
+    /**
+     * Sets miniGamePayingAmountByUpload
+     *
+     * @param int $miniGamePayingAmountByUpload miniGamePayingAmountByUpload
+     *
+     * @return $this
+     */
+    public function setMiniGamePayingAmountByUpload($miniGamePayingAmountByUpload)
+    {
+        $this->container['miniGamePayingAmountByUpload'] = $miniGamePayingAmountByUpload;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayingCountByUpload
+     *
+     * @return int
+     */
+    public function getMiniGamePayingCountByUpload()
+    {
+        return $this->container['miniGamePayingCountByUpload'];
+    }
+
+    /**
+     * Sets miniGamePayingCountByUpload
+     *
+     * @param int $miniGamePayingCountByUpload miniGamePayingCountByUpload
+     *
+     * @return $this
+     */
+    public function setMiniGamePayingCountByUpload($miniGamePayingCountByUpload)
+    {
+        $this->container['miniGamePayingCountByUpload'] = $miniGamePayingCountByUpload;
+
+        return $this;
+    }
+
+    /**
+     * Gets consultLeaveInfoCost
+     *
+     * @return int
+     */
+    public function getConsultLeaveInfoCost()
+    {
+        return $this->container['consultLeaveInfoCost'];
+    }
+
+    /**
+     * Sets consultLeaveInfoCost
+     *
+     * @param int $consultLeaveInfoCost consultLeaveInfoCost
+     *
+     * @return $this
+     */
+    public function setConsultLeaveInfoCost($consultLeaveInfoCost)
+    {
+        $this->container['consultLeaveInfoCost'] = $consultLeaveInfoCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseAmountWithCoupon
+     *
+     * @return int
+     */
+    public function getPurchaseAmountWithCoupon()
+    {
+        return $this->container['purchaseAmountWithCoupon'];
+    }
+
+    /**
+     * Sets purchaseAmountWithCoupon
+     *
+     * @param int $purchaseAmountWithCoupon purchaseAmountWithCoupon
+     *
+     * @return $this
+     */
+    public function setPurchaseAmountWithCoupon($purchaseAmountWithCoupon)
+    {
+        $this->container['purchaseAmountWithCoupon'] = $purchaseAmountWithCoupon;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseAmountWithCouponCost
+     *
+     * @return int
+     */
+    public function getPurchaseAmountWithCouponCost()
+    {
+        return $this->container['purchaseAmountWithCouponCost'];
+    }
+
+    /**
+     * Sets purchaseAmountWithCouponCost
+     *
+     * @param int $purchaseAmountWithCouponCost purchaseAmountWithCouponCost
+     *
+     * @return $this
+     */
+    public function setPurchaseAmountWithCouponCost($purchaseAmountWithCouponCost)
+    {
+        $this->container['purchaseAmountWithCouponCost'] = $purchaseAmountWithCouponCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayingAmountClickD1ByUpload
+     *
+     * @return int
+     */
+    public function getMiniGamePayingAmountClickD1ByUpload()
+    {
+        return $this->container['miniGamePayingAmountClickD1ByUpload'];
+    }
+
+    /**
+     * Sets miniGamePayingAmountClickD1ByUpload
+     *
+     * @param int $miniGamePayingAmountClickD1ByUpload miniGamePayingAmountClickD1ByUpload
+     *
+     * @return $this
+     */
+    public function setMiniGamePayingAmountClickD1ByUpload($miniGamePayingAmountClickD1ByUpload)
+    {
+        $this->container['miniGamePayingAmountClickD1ByUpload'] = $miniGamePayingAmountClickD1ByUpload;
 
         return $this;
     }
@@ -9764,30 +10004,6 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets miniGameFirstPayingUsers
-     *
-     * @return int
-     */
-    public function getMiniGameFirstPayingUsers()
-    {
-        return $this->container['miniGameFirstPayingUsers'];
-    }
-
-    /**
-     * Sets miniGameFirstPayingUsers
-     *
-     * @param int $miniGameFirstPayingUsers miniGameFirstPayingUsers
-     *
-     * @return $this
-     */
-    public function setMiniGameFirstPayingUsers($miniGameFirstPayingUsers)
-    {
-        $this->container['miniGameFirstPayingUsers'] = $miniGameFirstPayingUsers;
-
-        return $this;
-    }
-
-    /**
      * Gets miniGameFirstDayPayingRoi
      *
      * @return double
@@ -9807,6 +10023,30 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setMiniGameFirstDayPayingRoi($miniGameFirstDayPayingRoi)
     {
         $this->container['miniGameFirstDayPayingRoi'] = $miniGameFirstDayPayingRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayingAmountD1ByUpload
+     *
+     * @return int
+     */
+    public function getMiniGamePayingAmountD1ByUpload()
+    {
+        return $this->container['miniGamePayingAmountD1ByUpload'];
+    }
+
+    /**
+     * Sets miniGamePayingAmountD1ByUpload
+     *
+     * @param int $miniGamePayingAmountD1ByUpload miniGamePayingAmountD1ByUpload
+     *
+     * @return $this
+     */
+    public function setMiniGamePayingAmountD1ByUpload($miniGamePayingAmountD1ByUpload)
+    {
+        $this->container['miniGamePayingAmountD1ByUpload'] = $miniGamePayingAmountD1ByUpload;
 
         return $this;
     }

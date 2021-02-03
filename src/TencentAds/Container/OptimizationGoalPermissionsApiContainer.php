@@ -41,8 +41,9 @@ class OptimizationGoalPermissionsApiContainer extends ApiContainer
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $siteSet = isset($params['site_set']) ? $params['site_set'] : null;
             $promotedObjectType = isset($params['promoted_object_type']) ? $params['promoted_object_type'] : null;
+            $bidMode = isset($params['bid_mode']) ? $params['bid_mode'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->optimizationGoalPermissionsGet($accountId, $siteSet, $promotedObjectType, $fields);
+            $response = $this->apiInstance->optimizationGoalPermissionsGet($accountId, $siteSet, $promotedObjectType, $bidMode, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -60,8 +61,9 @@ class OptimizationGoalPermissionsApiContainer extends ApiContainer
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $siteSet = isset($params['site_set']) ? $params['site_set'] : null;
             $promotedObjectType = isset($params['promoted_object_type']) ? $params['promoted_object_type'] : null;
+            $bidMode = isset($params['bid_mode']) ? $params['bid_mode'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->optimizationGoalPermissionsGetAsync($accountId, $siteSet, $promotedObjectType, $fields);
+            $response = $this->apiInstance->optimizationGoalPermissionsGetAsync($accountId, $siteSet, $promotedObjectType, $bidMode, $fields);
             return $response;
         });
     }

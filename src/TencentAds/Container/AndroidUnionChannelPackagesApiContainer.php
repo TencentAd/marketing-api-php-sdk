@@ -74,10 +74,11 @@ class AndroidUnionChannelPackagesApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $androidUnionAppId = isset($params['android_union_app_id']) ? $params['android_union_app_id'] : null;
+            $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->androidUnionChannelPackagesGet($accountId, $androidUnionAppId, $page, $pageSize, $fields);
+            $response = $this->apiInstance->androidUnionChannelPackagesGet($accountId, $androidUnionAppId, $filtering, $page, $pageSize, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -94,10 +95,11 @@ class AndroidUnionChannelPackagesApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $androidUnionAppId = isset($params['android_union_app_id']) ? $params['android_union_app_id'] : null;
+            $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->androidUnionChannelPackagesGetAsync($accountId, $androidUnionAppId, $page, $pageSize, $fields);
+            $response = $this->apiInstance->androidUnionChannelPackagesGetAsync($accountId, $androidUnionAppId, $filtering, $page, $pageSize, $fields);
             return $response;
         });
     }

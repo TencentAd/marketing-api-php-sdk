@@ -51,8 +51,10 @@ class XijingPageListApiContainer extends ApiContainer
             $pageStatus = isset($params['page_status']) ? $params['page_status'] : null;
             $pageSource = isset($params['page_source']) ? $params['page_source'] : null;
             $pageOwnerId = isset($params['page_owner_id']) ? $params['page_owner_id'] : null;
+            $appId = isset($params['app_id']) ? $params['app_id'] : null;
+            $appType = isset($params['app_type']) ? $params['app_type'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->xijingPageListGet($accountId, $pageId, $pageServiceId, $pageName, $pageType, $pageLastModifyStartTime, $pageLastModifyEndTime, $pageSize, $pageIndex, $pagePublishStatus, $pageStatus, $pageSource, $pageOwnerId, $fields);
+            $response = $this->apiInstance->xijingPageListGet($accountId, $pageId, $pageServiceId, $pageName, $pageType, $pageLastModifyStartTime, $pageLastModifyEndTime, $pageSize, $pageIndex, $pagePublishStatus, $pageStatus, $pageSource, $pageOwnerId, $appId, $appType, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -80,8 +82,10 @@ class XijingPageListApiContainer extends ApiContainer
             $pageStatus = isset($params['page_status']) ? $params['page_status'] : null;
             $pageSource = isset($params['page_source']) ? $params['page_source'] : null;
             $pageOwnerId = isset($params['page_owner_id']) ? $params['page_owner_id'] : null;
+            $appId = isset($params['app_id']) ? $params['app_id'] : null;
+            $appType = isset($params['app_type']) ? $params['app_type'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->xijingPageListGetAsync($accountId, $pageId, $pageServiceId, $pageName, $pageType, $pageLastModifyStartTime, $pageLastModifyEndTime, $pageSize, $pageIndex, $pagePublishStatus, $pageStatus, $pageSource, $pageOwnerId, $fields);
+            $response = $this->apiInstance->xijingPageListGetAsync($accountId, $pageId, $pageServiceId, $pageName, $pageType, $pageLastModifyStartTime, $pageLastModifyEndTime, $pageSize, $pageIndex, $pagePublishStatus, $pageStatus, $pageSource, $pageOwnerId, $appId, $appType, $fields);
             return $response;
         });
     }

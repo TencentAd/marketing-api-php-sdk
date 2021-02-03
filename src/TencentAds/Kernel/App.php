@@ -3,6 +3,7 @@ namespace TencentAds\Kernel;
 
 use GuzzleHttp\Client;
 use TencentAds\Container\AdDiagnosisApiContainer;
+use TencentAds\Container\AdLabelApiContainer;
 use TencentAds\Container\AdcreativePreviewsApiContainer;
 use TencentAds\Container\AdcreativeTemplateDetailApiContainer;
 use TencentAds\Container\AdcreativeTemplatePreviewApiContainer;
@@ -51,6 +52,7 @@ use TencentAds\Container\CustomTagsApiContainer;
 use TencentAds\Container\DailyCostApiContainer;
 use TencentAds\Container\DailyReportsApiContainer;
 use TencentAds\Container\DiagnosisApiContainer;
+use TencentAds\Container\DplabelAdLabelApiContainer;
 use TencentAds\Container\DynamicAdImagesApiContainer;
 use TencentAds\Container\DynamicAdTemplatesApiContainer;
 use TencentAds\Container\DynamicAdVideoApiContainer;
@@ -77,6 +79,7 @@ use TencentAds\Container\LocalStoresApiContainer;
 use TencentAds\Container\LocalStoresSearchInfoApiContainer;
 use TencentAds\Container\OauthApiContainer;
 use TencentAds\Container\OptimizationGoalPermissionsApiContainer;
+use TencentAds\Container\OuterCluesApiContainer;
 use TencentAds\Container\PagesApiContainer;
 use TencentAds\Container\PlayablePagesApiContainer;
 use TencentAds\Container\ProductCatalogsApiContainer;
@@ -108,6 +111,7 @@ use TencentAds\Container\UserPropertySetsApiContainer;
 use TencentAds\Container\VideomakerAutoadjustmentsApiContainer;
 use TencentAds\Container\VideomakerSubtitlesApiContainer;
 use TencentAds\Container\VideomakerTasksApiContainer;
+use TencentAds\Container\VideomakerVideocapturesApiContainer;
 use TencentAds\Container\VideosApiContainer;
 use TencentAds\Container\WechatAdFollowersApiContainer;
 use TencentAds\Container\WechatAdLabelsApiContainer;
@@ -134,6 +138,9 @@ class App
 
     /** @var AdDiagnosisApiContainer */
     public $adDiagnosisApiContainer;
+
+    /** @var AdLabelApiContainer */
+    public $adLabelApiContainer;
 
     /** @var AdcreativePreviewsApiContainer */
     public $adcreativePreviewsApiContainer;
@@ -279,6 +286,9 @@ class App
     /** @var DiagnosisApiContainer */
     public $diagnosisApiContainer;
 
+    /** @var DplabelAdLabelApiContainer */
+    public $dplabelAdLabelApiContainer;
+
     /** @var DynamicAdImagesApiContainer */
     public $dynamicAdImagesApiContainer;
 
@@ -356,6 +366,9 @@ class App
 
     /** @var OptimizationGoalPermissionsApiContainer */
     public $optimizationGoalPermissionsApiContainer;
+
+    /** @var OuterCluesApiContainer */
+    public $outerCluesApiContainer;
 
     /** @var PagesApiContainer */
     public $pagesApiContainer;
@@ -450,6 +463,9 @@ class App
     /** @var VideomakerTasksApiContainer */
     public $videomakerTasksApiContainer;
 
+    /** @var VideomakerVideocapturesApiContainer */
+    public $videomakerVideocapturesApiContainer;
+
     /** @var VideosApiContainer */
     public $videosApiContainer;
 
@@ -528,6 +544,20 @@ class App
             $this->adDiagnosisApiContainer = $container;
         }
         return $this->adDiagnosisApiContainer;
+    }
+
+
+    /**
+     * @return AdLabelApiContainer
+     */
+    public function adLabel()
+    {
+        if (empty($this->adLabelApiContainer)) {
+            $container = new AdLabelApiContainer();
+            $container->init($this, $this->getClient());
+            $this->adLabelApiContainer = $container;
+        }
+        return $this->adLabelApiContainer;
     }
 
 
@@ -1204,6 +1234,20 @@ class App
 
 
     /**
+     * @return DplabelAdLabelApiContainer
+     */
+    public function dplabelAdLabel()
+    {
+        if (empty($this->dplabelAdLabelApiContainer)) {
+            $container = new DplabelAdLabelApiContainer();
+            $container->init($this, $this->getClient());
+            $this->dplabelAdLabelApiContainer = $container;
+        }
+        return $this->dplabelAdLabelApiContainer;
+    }
+
+
+    /**
      * @return DynamicAdImagesApiContainer
      */
     public function dynamicAdImages()
@@ -1564,6 +1608,20 @@ class App
             $this->optimizationGoalPermissionsApiContainer = $container;
         }
         return $this->optimizationGoalPermissionsApiContainer;
+    }
+
+
+    /**
+     * @return OuterCluesApiContainer
+     */
+    public function outerClues()
+    {
+        if (empty($this->outerCluesApiContainer)) {
+            $container = new OuterCluesApiContainer();
+            $container->init($this, $this->getClient());
+            $this->outerCluesApiContainer = $container;
+        }
+        return $this->outerCluesApiContainer;
     }
 
 
@@ -1998,6 +2056,20 @@ class App
             $this->videomakerTasksApiContainer = $container;
         }
         return $this->videomakerTasksApiContainer;
+    }
+
+
+    /**
+     * @return VideomakerVideocapturesApiContainer
+     */
+    public function videomakerVideocaptures()
+    {
+        if (empty($this->videomakerVideocapturesApiContainer)) {
+            $container = new VideomakerVideocapturesApiContainer();
+            $container->init($this, $this->getClient());
+            $this->videomakerVideocapturesApiContainer = $container;
+        }
+        return $this->videomakerVideocapturesApiContainer;
     }
 
 

@@ -93,8 +93,9 @@ class AndroidChannelPackagesApi
      * 获取应用宝渠道包
      *
      * @param  int $accountId accountId (required)
-     * @param  string $myappAuthKey myappAuthKey (required)
      * @param  int $androidAppId androidAppId (required)
+     * @param  string $myappAuthKey myappAuthKey (optional)
+     * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
      * @param  int $page page (optional)
      * @param  int $pageSize pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
@@ -103,9 +104,9 @@ class AndroidChannelPackagesApi
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\AndroidChannelPackagesGetResponse
      */
-    public function androidChannelPackagesGet($accountId, $myappAuthKey, $androidAppId, $page = null, $pageSize = null, $fields = null)
+    public function androidChannelPackagesGet($accountId, $androidAppId, $myappAuthKey = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
-        list($response) = $this->androidChannelPackagesGetWithHttpInfo($accountId, $myappAuthKey, $androidAppId, $page, $pageSize, $fields);
+        list($response) = $this->androidChannelPackagesGetWithHttpInfo($accountId, $androidAppId, $myappAuthKey, $filtering, $page, $pageSize, $fields);
         return $response;
     }
 
@@ -115,8 +116,9 @@ class AndroidChannelPackagesApi
      * 获取应用宝渠道包
      *
      * @param  int $accountId (required)
-     * @param  string $myappAuthKey (required)
      * @param  int $androidAppId (required)
+     * @param  string $myappAuthKey (optional)
+     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
@@ -125,10 +127,10 @@ class AndroidChannelPackagesApi
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\AndroidChannelPackagesGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function androidChannelPackagesGetWithHttpInfo($accountId, $myappAuthKey, $androidAppId, $page = null, $pageSize = null, $fields = null)
+    public function androidChannelPackagesGetWithHttpInfo($accountId, $androidAppId, $myappAuthKey = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\AndroidChannelPackagesGetResponse';
-        $request = $this->androidChannelPackagesGetRequest($accountId, $myappAuthKey, $androidAppId, $page, $pageSize, $fields);
+        $request = $this->androidChannelPackagesGetRequest($accountId, $androidAppId, $myappAuthKey, $filtering, $page, $pageSize, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -195,8 +197,9 @@ class AndroidChannelPackagesApi
      * 获取应用宝渠道包
      *
      * @param  int $accountId (required)
-     * @param  string $myappAuthKey (required)
      * @param  int $androidAppId (required)
+     * @param  string $myappAuthKey (optional)
+     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
@@ -204,9 +207,9 @@ class AndroidChannelPackagesApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function androidChannelPackagesGetAsync($accountId, $myappAuthKey, $androidAppId, $page = null, $pageSize = null, $fields = null)
+    public function androidChannelPackagesGetAsync($accountId, $androidAppId, $myappAuthKey = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
-        return $this->androidChannelPackagesGetAsyncWithHttpInfo($accountId, $myappAuthKey, $androidAppId, $page, $pageSize, $fields)
+        return $this->androidChannelPackagesGetAsyncWithHttpInfo($accountId, $androidAppId, $myappAuthKey, $filtering, $page, $pageSize, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -220,8 +223,9 @@ class AndroidChannelPackagesApi
      * 获取应用宝渠道包
      *
      * @param  int $accountId (required)
-     * @param  string $myappAuthKey (required)
      * @param  int $androidAppId (required)
+     * @param  string $myappAuthKey (optional)
+     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
@@ -229,10 +233,10 @@ class AndroidChannelPackagesApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function androidChannelPackagesGetAsyncWithHttpInfo($accountId, $myappAuthKey, $androidAppId, $page = null, $pageSize = null, $fields = null)
+    public function androidChannelPackagesGetAsyncWithHttpInfo($accountId, $androidAppId, $myappAuthKey = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\AndroidChannelPackagesGetResponse';
-        $request = $this->androidChannelPackagesGetRequest($accountId, $myappAuthKey, $androidAppId, $page, $pageSize, $fields);
+        $request = $this->androidChannelPackagesGetRequest($accountId, $androidAppId, $myappAuthKey, $filtering, $page, $pageSize, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -275,8 +279,9 @@ class AndroidChannelPackagesApi
      * Create request for operation 'androidChannelPackagesGet'
      *
      * @param  int $accountId (required)
-     * @param  string $myappAuthKey (required)
      * @param  int $androidAppId (required)
+     * @param  string $myappAuthKey (optional)
+     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
@@ -284,18 +289,12 @@ class AndroidChannelPackagesApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function androidChannelPackagesGetRequest($accountId, $myappAuthKey, $androidAppId, $page = null, $pageSize = null, $fields = null)
+    protected function androidChannelPackagesGetRequest($accountId, $androidAppId, $myappAuthKey = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
             throw new \InvalidArgumentException(
                 'Missing the required parameter $accountId when calling androidChannelPackagesGet'
-            );
-        }
-        // verify the required parameter 'myappAuthKey' is set
-        if ($myappAuthKey === null || (is_array($myappAuthKey) && count($myappAuthKey) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $myappAuthKey when calling androidChannelPackagesGet'
             );
         }
         // verify the required parameter 'androidAppId' is set
@@ -323,6 +322,13 @@ class AndroidChannelPackagesApi
         // query params
         if ($androidAppId !== null) {
             $queryParams['android_app_id'] = ObjectSerializer::toQueryValue($androidAppId);
+        }
+        // query params
+        if (is_array($filtering)) {
+            $queryParams['filtering'] = $filtering;
+        } else
+        if ($filtering !== null) {
+            $queryParams['filtering'] = ObjectSerializer::toQueryValue($filtering);
         }
         // query params
         if ($page !== null) {

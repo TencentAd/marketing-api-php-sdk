@@ -90,6 +90,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'floatingZone' => '\TencentAds\Model\FloatingZone',
         'marketingPendantImageId' => 'string',
         'countdownSwitch' => 'bool',
+        'pageTrackUrl' => 'string',
         'accountId' => 'int',
         'adcreativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsMp'
@@ -134,6 +135,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'floatingZone' => null,
         'marketingPendantImageId' => null,
         'countdownSwitch' => null,
+        'pageTrackUrl' => null,
         'accountId' => 'int64',
         'adcreativeTemplateId' => 'int64',
         'adcreativeElements' => null
@@ -199,6 +201,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'floatingZone' => 'floating_zone',
         'marketingPendantImageId' => 'marketing_pendant_image_id',
         'countdownSwitch' => 'countdown_switch',
+        'pageTrackUrl' => 'page_track_url',
         'accountId' => 'account_id',
         'adcreativeTemplateId' => 'adcreative_template_id',
         'adcreativeElements' => 'adcreative_elements'
@@ -243,6 +246,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'floatingZone' => 'setFloatingZone',
         'marketingPendantImageId' => 'setMarketingPendantImageId',
         'countdownSwitch' => 'setCountdownSwitch',
+        'pageTrackUrl' => 'setPageTrackUrl',
         'accountId' => 'setAccountId',
         'adcreativeTemplateId' => 'setAdcreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements'
@@ -287,6 +291,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'floatingZone' => 'getFloatingZone',
         'marketingPendantImageId' => 'getMarketingPendantImageId',
         'countdownSwitch' => 'getCountdownSwitch',
+        'pageTrackUrl' => 'getPageTrackUrl',
         'accountId' => 'getAccountId',
         'adcreativeTemplateId' => 'getAdcreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements'
@@ -385,6 +390,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         $this->container['floatingZone'] = isset($data['floatingZone']) ? $data['floatingZone'] : null;
         $this->container['marketingPendantImageId'] = isset($data['marketingPendantImageId']) ? $data['marketingPendantImageId'] : null;
         $this->container['countdownSwitch'] = isset($data['countdownSwitch']) ? $data['countdownSwitch'] : null;
+        $this->container['pageTrackUrl'] = isset($data['pageTrackUrl']) ? $data['pageTrackUrl'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
@@ -1202,6 +1208,30 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     public function setCountdownSwitch($countdownSwitch)
     {
         $this->container['countdownSwitch'] = $countdownSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageTrackUrl
+     *
+     * @return string
+     */
+    public function getPageTrackUrl()
+    {
+        return $this->container['pageTrackUrl'];
+    }
+
+    /**
+     * Sets pageTrackUrl
+     *
+     * @param string $pageTrackUrl pageTrackUrl
+     *
+     * @return $this
+     */
+    public function setPageTrackUrl($pageTrackUrl)
+    {
+        $this->container['pageTrackUrl'] = $pageTrackUrl;
 
         return $this;
     }

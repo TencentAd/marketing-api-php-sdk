@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * SizeAdjustmentMethodEnum Class Doc Comment
  *
  * @category Class
- * @description 调整尺寸方式：高斯模糊、指定颜色、智能裁剪、智能取图
+ * @description 调整尺寸方式：高斯模糊、指定颜色、智能裁剪、智能取图、指定图片
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -48,6 +48,7 @@ class SizeAdjustmentMethodEnum
     const COLOR = 'COLOR';
     const SMART_CLIP = 'SMART_CLIP';
     const SMART_IMAGE = 'SMART_IMAGE';
+    const IMAGE = 'IMAGE';
     
     /**
      * Gets allowable values of the enum
@@ -60,6 +61,7 @@ class SizeAdjustmentMethodEnum
             self::COLOR,
             self::SMART_CLIP,
             self::SMART_IMAGE,
+            self::IMAGE,
         ];
     }
 }

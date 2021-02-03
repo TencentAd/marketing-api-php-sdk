@@ -95,15 +95,16 @@ class OptimizationGoalPermissionsApi
      * @param  int $accountId accountId (required)
      * @param  string[] $siteSet siteSet (required)
      * @param  string $promotedObjectType promotedObjectType (required)
+     * @param  string $bidMode bidMode (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\OptimizationGoalPermissionsGetResponse
      */
-    public function optimizationGoalPermissionsGet($accountId, $siteSet, $promotedObjectType, $fields = null)
+    public function optimizationGoalPermissionsGet($accountId, $siteSet, $promotedObjectType, $bidMode = null, $fields = null)
     {
-        list($response) = $this->optimizationGoalPermissionsGetWithHttpInfo($accountId, $siteSet, $promotedObjectType, $fields);
+        list($response) = $this->optimizationGoalPermissionsGetWithHttpInfo($accountId, $siteSet, $promotedObjectType, $bidMode, $fields);
         return $response;
     }
 
@@ -115,16 +116,17 @@ class OptimizationGoalPermissionsApi
      * @param  int $accountId (required)
      * @param  string[] $siteSet (required)
      * @param  string $promotedObjectType (required)
+     * @param  string $bidMode (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\OptimizationGoalPermissionsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function optimizationGoalPermissionsGetWithHttpInfo($accountId, $siteSet, $promotedObjectType, $fields = null)
+    public function optimizationGoalPermissionsGetWithHttpInfo($accountId, $siteSet, $promotedObjectType, $bidMode = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\OptimizationGoalPermissionsGetResponse';
-        $request = $this->optimizationGoalPermissionsGetRequest($accountId, $siteSet, $promotedObjectType, $fields);
+        $request = $this->optimizationGoalPermissionsGetRequest($accountId, $siteSet, $promotedObjectType, $bidMode, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -193,14 +195,15 @@ class OptimizationGoalPermissionsApi
      * @param  int $accountId (required)
      * @param  string[] $siteSet (required)
      * @param  string $promotedObjectType (required)
+     * @param  string $bidMode (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function optimizationGoalPermissionsGetAsync($accountId, $siteSet, $promotedObjectType, $fields = null)
+    public function optimizationGoalPermissionsGetAsync($accountId, $siteSet, $promotedObjectType, $bidMode = null, $fields = null)
     {
-        return $this->optimizationGoalPermissionsGetAsyncWithHttpInfo($accountId, $siteSet, $promotedObjectType, $fields)
+        return $this->optimizationGoalPermissionsGetAsyncWithHttpInfo($accountId, $siteSet, $promotedObjectType, $bidMode, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -216,15 +219,16 @@ class OptimizationGoalPermissionsApi
      * @param  int $accountId (required)
      * @param  string[] $siteSet (required)
      * @param  string $promotedObjectType (required)
+     * @param  string $bidMode (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function optimizationGoalPermissionsGetAsyncWithHttpInfo($accountId, $siteSet, $promotedObjectType, $fields = null)
+    public function optimizationGoalPermissionsGetAsyncWithHttpInfo($accountId, $siteSet, $promotedObjectType, $bidMode = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\OptimizationGoalPermissionsGetResponse';
-        $request = $this->optimizationGoalPermissionsGetRequest($accountId, $siteSet, $promotedObjectType, $fields);
+        $request = $this->optimizationGoalPermissionsGetRequest($accountId, $siteSet, $promotedObjectType, $bidMode, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -269,12 +273,13 @@ class OptimizationGoalPermissionsApi
      * @param  int $accountId (required)
      * @param  string[] $siteSet (required)
      * @param  string $promotedObjectType (required)
+     * @param  string $bidMode (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function optimizationGoalPermissionsGetRequest($accountId, $siteSet, $promotedObjectType, $fields = null)
+    protected function optimizationGoalPermissionsGetRequest($accountId, $siteSet, $promotedObjectType, $bidMode = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -312,6 +317,10 @@ class OptimizationGoalPermissionsApi
         } else
         if ($siteSet !== null) {
             $queryParams['site_set'] = ObjectSerializer::toQueryValue($siteSet);
+        }
+        // query params
+        if ($bidMode !== null) {
+            $queryParams['bid_mode'] = ObjectSerializer::toQueryValue($bidMode);
         }
         // query params
         if ($promotedObjectType !== null) {

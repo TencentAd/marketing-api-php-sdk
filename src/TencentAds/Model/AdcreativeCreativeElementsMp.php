@@ -71,7 +71,7 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'url' => 'string',
         'buttonText' => 'string',
         'bottomText' => 'string',
-        'label' => '\TencentAds\Model\AdcreativeLabel[]',
+        'label' => '\TencentAds\Model\CreativeLabel[]',
         'productTags' => 'string[]',
         'logoDescription' => 'string',
         'logo' => 'string',
@@ -712,7 +712,7 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
     /**
      * Gets label
      *
-     * @return \TencentAds\Model\AdcreativeLabel[]
+     * @return \TencentAds\Model\CreativeLabel[]
      */
     public function getLabel()
     {
@@ -722,7 +722,7 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
     /**
      * Sets label
      *
-     * @param \TencentAds\Model\AdcreativeLabel[] $label label
+     * @param \TencentAds\Model\CreativeLabel[] $label label
      *
      * @return $this
      */

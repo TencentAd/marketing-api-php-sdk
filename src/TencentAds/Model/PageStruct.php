@@ -65,7 +65,12 @@ class PageStruct implements ModelInterface, ArrayAccess
         'pagePublishStatus' => '\TencentAds\Model\PagePublishStatus',
         'pageStatus' => '\TencentAds\Model\PageAuditStatus',
         'pageLastModifyTime' => 'string',
-        'pageOwnerId' => 'int'
+        'pageOwnerId' => 'int',
+        'publishUrl' => 'string',
+        'rejectReason' => 'string',
+        'playableType' => '\TencentAds\Model\PlayableType',
+        'publishAppId' => '\TencentAds\Model\PublishAppId',
+        'unpublishAppId' => '\TencentAds\Model\UnpublishAppId'
     ];
 
     /**
@@ -81,7 +86,12 @@ class PageStruct implements ModelInterface, ArrayAccess
         'pagePublishStatus' => null,
         'pageStatus' => null,
         'pageLastModifyTime' => null,
-        'pageOwnerId' => 'int64'
+        'pageOwnerId' => 'int64',
+        'publishUrl' => null,
+        'rejectReason' => null,
+        'playableType' => null,
+        'publishAppId' => null,
+        'unpublishAppId' => null
     ];
 
     /**
@@ -118,7 +128,12 @@ class PageStruct implements ModelInterface, ArrayAccess
         'pagePublishStatus' => 'page_publish_status',
         'pageStatus' => 'page_status',
         'pageLastModifyTime' => 'page_last_modify_time',
-        'pageOwnerId' => 'page_owner_id'
+        'pageOwnerId' => 'page_owner_id',
+        'publishUrl' => 'publish_url',
+        'rejectReason' => 'reject_reason',
+        'playableType' => 'playable_type',
+        'publishAppId' => 'publish_app_id',
+        'unpublishAppId' => 'unpublish_app_id'
     ];
 
     /**
@@ -134,7 +149,12 @@ class PageStruct implements ModelInterface, ArrayAccess
         'pagePublishStatus' => 'setPagePublishStatus',
         'pageStatus' => 'setPageStatus',
         'pageLastModifyTime' => 'setPageLastModifyTime',
-        'pageOwnerId' => 'setPageOwnerId'
+        'pageOwnerId' => 'setPageOwnerId',
+        'publishUrl' => 'setPublishUrl',
+        'rejectReason' => 'setRejectReason',
+        'playableType' => 'setPlayableType',
+        'publishAppId' => 'setPublishAppId',
+        'unpublishAppId' => 'setUnpublishAppId'
     ];
 
     /**
@@ -150,7 +170,12 @@ class PageStruct implements ModelInterface, ArrayAccess
         'pagePublishStatus' => 'getPagePublishStatus',
         'pageStatus' => 'getPageStatus',
         'pageLastModifyTime' => 'getPageLastModifyTime',
-        'pageOwnerId' => 'getPageOwnerId'
+        'pageOwnerId' => 'getPageOwnerId',
+        'publishUrl' => 'getPublishUrl',
+        'rejectReason' => 'getRejectReason',
+        'playableType' => 'getPlayableType',
+        'publishAppId' => 'getPublishAppId',
+        'unpublishAppId' => 'getUnpublishAppId'
     ];
 
     /**
@@ -221,6 +246,11 @@ class PageStruct implements ModelInterface, ArrayAccess
         $this->container['pageStatus'] = isset($data['pageStatus']) ? $data['pageStatus'] : null;
         $this->container['pageLastModifyTime'] = isset($data['pageLastModifyTime']) ? $data['pageLastModifyTime'] : null;
         $this->container['pageOwnerId'] = isset($data['pageOwnerId']) ? $data['pageOwnerId'] : null;
+        $this->container['publishUrl'] = isset($data['publishUrl']) ? $data['publishUrl'] : null;
+        $this->container['rejectReason'] = isset($data['rejectReason']) ? $data['rejectReason'] : null;
+        $this->container['playableType'] = isset($data['playableType']) ? $data['playableType'] : null;
+        $this->container['publishAppId'] = isset($data['publishAppId']) ? $data['publishAppId'] : null;
+        $this->container['unpublishAppId'] = isset($data['unpublishAppId']) ? $data['unpublishAppId'] : null;
     }
 
     /**
@@ -435,6 +465,126 @@ class PageStruct implements ModelInterface, ArrayAccess
     public function setPageOwnerId($pageOwnerId)
     {
         $this->container['pageOwnerId'] = $pageOwnerId;
+
+        return $this;
+    }
+
+    /**
+     * Gets publishUrl
+     *
+     * @return string
+     */
+    public function getPublishUrl()
+    {
+        return $this->container['publishUrl'];
+    }
+
+    /**
+     * Sets publishUrl
+     *
+     * @param string $publishUrl publishUrl
+     *
+     * @return $this
+     */
+    public function setPublishUrl($publishUrl)
+    {
+        $this->container['publishUrl'] = $publishUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets rejectReason
+     *
+     * @return string
+     */
+    public function getRejectReason()
+    {
+        return $this->container['rejectReason'];
+    }
+
+    /**
+     * Sets rejectReason
+     *
+     * @param string $rejectReason rejectReason
+     *
+     * @return $this
+     */
+    public function setRejectReason($rejectReason)
+    {
+        $this->container['rejectReason'] = $rejectReason;
+
+        return $this;
+    }
+
+    /**
+     * Gets playableType
+     *
+     * @return \TencentAds\Model\PlayableType
+     */
+    public function getPlayableType()
+    {
+        return $this->container['playableType'];
+    }
+
+    /**
+     * Sets playableType
+     *
+     * @param \TencentAds\Model\PlayableType $playableType playableType
+     *
+     * @return $this
+     */
+    public function setPlayableType($playableType)
+    {
+        $this->container['playableType'] = $playableType;
+
+        return $this;
+    }
+
+    /**
+     * Gets publishAppId
+     *
+     * @return \TencentAds\Model\PublishAppId
+     */
+    public function getPublishAppId()
+    {
+        return $this->container['publishAppId'];
+    }
+
+    /**
+     * Sets publishAppId
+     *
+     * @param \TencentAds\Model\PublishAppId $publishAppId publishAppId
+     *
+     * @return $this
+     */
+    public function setPublishAppId($publishAppId)
+    {
+        $this->container['publishAppId'] = $publishAppId;
+
+        return $this;
+    }
+
+    /**
+     * Gets unpublishAppId
+     *
+     * @return \TencentAds\Model\UnpublishAppId
+     */
+    public function getUnpublishAppId()
+    {
+        return $this->container['unpublishAppId'];
+    }
+
+    /**
+     * Sets unpublishAppId
+     *
+     * @param \TencentAds\Model\UnpublishAppId $unpublishAppId unpublishAppId
+     *
+     * @return $this
+     */
+    public function setUnpublishAppId($unpublishAppId)
+    {
+        $this->container['unpublishAppId'] = $unpublishAppId;
 
         return $this;
     }

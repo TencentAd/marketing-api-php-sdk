@@ -70,6 +70,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'siteSet' => 'string[]',
         'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
         'promotedObjectId' => 'string',
+        'profileId' => 'int',
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
         'isDeleted' => 'bool',
@@ -99,6 +100,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'siteSet' => null,
         'promotedObjectType' => null,
         'promotedObjectId' => null,
+        'profileId' => 'int64',
         'createdTime' => 'int64',
         'lastModifiedTime' => 'int64',
         'isDeleted' => null,
@@ -149,6 +151,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'siteSet' => 'site_set',
         'promotedObjectType' => 'promoted_object_type',
         'promotedObjectId' => 'promoted_object_id',
+        'profileId' => 'profile_id',
         'createdTime' => 'created_time',
         'lastModifiedTime' => 'last_modified_time',
         'isDeleted' => 'is_deleted',
@@ -178,6 +181,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'siteSet' => 'setSiteSet',
         'promotedObjectType' => 'setPromotedObjectType',
         'promotedObjectId' => 'setPromotedObjectId',
+        'profileId' => 'setProfileId',
         'createdTime' => 'setCreatedTime',
         'lastModifiedTime' => 'setLastModifiedTime',
         'isDeleted' => 'setIsDeleted',
@@ -207,6 +211,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'siteSet' => 'getSiteSet',
         'promotedObjectType' => 'getPromotedObjectType',
         'promotedObjectId' => 'getPromotedObjectId',
+        'profileId' => 'getProfileId',
         'createdTime' => 'getCreatedTime',
         'lastModifiedTime' => 'getLastModifiedTime',
         'isDeleted' => 'getIsDeleted',
@@ -290,6 +295,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
         $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
         $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
+        $this->container['profileId'] = isset($data['profileId']) ? $data['profileId'] : null;
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
         $this->container['isDeleted'] = isset($data['isDeleted']) ? $data['isDeleted'] : null;
@@ -609,6 +615,30 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setPromotedObjectId($promotedObjectId)
     {
         $this->container['promotedObjectId'] = $promotedObjectId;
+
+        return $this;
+    }
+
+    /**
+     * Gets profileId
+     *
+     * @return int
+     */
+    public function getProfileId()
+    {
+        return $this->container['profileId'];
+    }
+
+    /**
+     * Sets profileId
+     *
+     * @param int $profileId profileId
+     *
+     * @return $this
+     */
+    public function setProfileId($profileId)
+    {
+        $this->container['profileId'] = $profileId;
 
         return $this;
     }

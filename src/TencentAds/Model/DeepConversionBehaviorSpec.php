@@ -58,7 +58,7 @@ class DeepConversionBehaviorSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'goal' => '\TencentAds\Model\DeepConversionBehaviorGoal',
+        'goal' => '\TencentAds\Model\OptimizationGoal',
         'bidAmount' => 'int'
     ];
 
@@ -214,7 +214,7 @@ class DeepConversionBehaviorSpec implements ModelInterface, ArrayAccess
     /**
      * Gets goal
      *
-     * @return \TencentAds\Model\DeepConversionBehaviorGoal
+     * @return \TencentAds\Model\OptimizationGoal
      */
     public function getGoal()
     {
@@ -224,7 +224,7 @@ class DeepConversionBehaviorSpec implements ModelInterface, ArrayAccess
     /**
      * Sets goal
      *
-     * @param \TencentAds\Model\DeepConversionBehaviorGoal $goal goal
+     * @param \TencentAds\Model\OptimizationGoal $goal goal
      *
      * @return $this
      */

@@ -60,6 +60,7 @@ class ChannelPackageData implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'androidAppId' => 'int',
         'packageName' => 'string',
+        'packageDownloadUrl' => 'string',
         'channelPackageId' => 'string',
         'versionCode' => 'int',
         'versionName' => 'string',
@@ -77,6 +78,7 @@ class ChannelPackageData implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'androidAppId' => 'int64',
         'packageName' => null,
+        'packageDownloadUrl' => null,
         'channelPackageId' => null,
         'versionCode' => 'int64',
         'versionName' => null,
@@ -115,6 +117,7 @@ class ChannelPackageData implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'androidAppId' => 'android_app_id',
         'packageName' => 'package_name',
+        'packageDownloadUrl' => 'package_download_url',
         'channelPackageId' => 'channel_package_id',
         'versionCode' => 'version_code',
         'versionName' => 'version_name',
@@ -132,6 +135,7 @@ class ChannelPackageData implements ModelInterface, ArrayAccess
     protected static $setters = [
         'androidAppId' => 'setAndroidAppId',
         'packageName' => 'setPackageName',
+        'packageDownloadUrl' => 'setPackageDownloadUrl',
         'channelPackageId' => 'setChannelPackageId',
         'versionCode' => 'setVersionCode',
         'versionName' => 'setVersionName',
@@ -149,6 +153,7 @@ class ChannelPackageData implements ModelInterface, ArrayAccess
     protected static $getters = [
         'androidAppId' => 'getAndroidAppId',
         'packageName' => 'getPackageName',
+        'packageDownloadUrl' => 'getPackageDownloadUrl',
         'channelPackageId' => 'getChannelPackageId',
         'versionCode' => 'getVersionCode',
         'versionName' => 'getVersionName',
@@ -220,6 +225,7 @@ class ChannelPackageData implements ModelInterface, ArrayAccess
     {
         $this->container['androidAppId'] = isset($data['androidAppId']) ? $data['androidAppId'] : null;
         $this->container['packageName'] = isset($data['packageName']) ? $data['packageName'] : null;
+        $this->container['packageDownloadUrl'] = isset($data['packageDownloadUrl']) ? $data['packageDownloadUrl'] : null;
         $this->container['channelPackageId'] = isset($data['channelPackageId']) ? $data['channelPackageId'] : null;
         $this->container['versionCode'] = isset($data['versionCode']) ? $data['versionCode'] : null;
         $this->container['versionName'] = isset($data['versionName']) ? $data['versionName'] : null;
@@ -297,6 +303,30 @@ class ChannelPackageData implements ModelInterface, ArrayAccess
     public function setPackageName($packageName)
     {
         $this->container['packageName'] = $packageName;
+
+        return $this;
+    }
+
+    /**
+     * Gets packageDownloadUrl
+     *
+     * @return string
+     */
+    public function getPackageDownloadUrl()
+    {
+        return $this->container['packageDownloadUrl'];
+    }
+
+    /**
+     * Sets packageDownloadUrl
+     *
+     * @param string $packageDownloadUrl packageDownloadUrl
+     *
+     * @return $this
+     */
+    public function setPackageDownloadUrl($packageDownloadUrl)
+    {
+        $this->container['packageDownloadUrl'] = $packageDownloadUrl;
 
         return $this;
     }
