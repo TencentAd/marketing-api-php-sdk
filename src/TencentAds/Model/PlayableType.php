@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * PlayableType Class Doc Comment
  *
  * @category Class
- * @description 互动落地页类型
+ * @description 蹊径落地页试玩类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -44,6 +44,12 @@ class PlayableType
     /**
      * Possible values of this enum
      */
+    const PLAYABLE_TYPE_DEFAULT = 'PLAYABLE_TYPE_DEFAULT';
+    const PLAYABLE_TYPE_HOMEMADE_INTERACTION = 'PLAYABLE_TYPE_HOMEMADE_INTERACTION';
+    const PLAYABLE_TYPE_MINIGAME_INTERACTION = 'PLAYABLE_TYPE_MINIGAME_INTERACTION';
+    const PLAYABLE_TYPE_VIDEO_INTERACTION = 'PLAYABLE_TYPE_VIDEO_INTERACTION';
+    const PLAYABLE_TYPE_WEBSITE_INTERACTION = 'PLAYABLE_TYPE_WEBSITE_INTERACTION';
+    const PLAYABLE_TYPE_ZIP_INTERACTION = 'PLAYABLE_TYPE_ZIP_INTERACTION';
     const NOT_INTERACT = 'NOT_INTERACT';
     const INLINE = 'INLINE';
     const TEMPLATE_GAME = 'TEMPLATE_GAME';
@@ -58,6 +64,12 @@ class PlayableType
     public static function getAllowableEnumValues()
     {
         return [
+            self::PLAYABLE_TYPE_DEFAULT,
+            self::PLAYABLE_TYPE_HOMEMADE_INTERACTION,
+            self::PLAYABLE_TYPE_MINIGAME_INTERACTION,
+            self::PLAYABLE_TYPE_VIDEO_INTERACTION,
+            self::PLAYABLE_TYPE_WEBSITE_INTERACTION,
+            self::PLAYABLE_TYPE_ZIP_INTERACTION,
             self::NOT_INTERACT,
             self::INLINE,
             self::TEMPLATE_GAME,

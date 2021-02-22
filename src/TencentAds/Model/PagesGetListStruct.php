@@ -65,7 +65,8 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'int',
         'promotedObjectId' => 'string',
         'productCatalogId' => 'int',
-        'pageType' => '\TencentAds\Model\DestinationTypeRead'
+        'pageType' => '\TencentAds\Model\DestinationTypeRead',
+        'playableType' => '\TencentAds\Model\PlayableType'
     ];
 
     /**
@@ -81,7 +82,8 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'int64',
         'promotedObjectId' => null,
         'productCatalogId' => 'int64',
-        'pageType' => null
+        'pageType' => null,
+        'playableType' => null
     ];
 
     /**
@@ -118,7 +120,8 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'last_modified_time',
         'promotedObjectId' => 'promoted_object_id',
         'productCatalogId' => 'product_catalog_id',
-        'pageType' => 'page_type'
+        'pageType' => 'page_type',
+        'playableType' => 'playable_type'
     ];
 
     /**
@@ -134,7 +137,8 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'setLastModifiedTime',
         'promotedObjectId' => 'setPromotedObjectId',
         'productCatalogId' => 'setProductCatalogId',
-        'pageType' => 'setPageType'
+        'pageType' => 'setPageType',
+        'playableType' => 'setPlayableType'
     ];
 
     /**
@@ -150,7 +154,8 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'getLastModifiedTime',
         'promotedObjectId' => 'getPromotedObjectId',
         'productCatalogId' => 'getProductCatalogId',
-        'pageType' => 'getPageType'
+        'pageType' => 'getPageType',
+        'playableType' => 'getPlayableType'
     ];
 
     /**
@@ -221,6 +226,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
         $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
         $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
+        $this->container['playableType'] = isset($data['playableType']) ? $data['playableType'] : null;
     }
 
     /**
@@ -435,6 +441,30 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     public function setPageType($pageType)
     {
         $this->container['pageType'] = $pageType;
+
+        return $this;
+    }
+
+    /**
+     * Gets playableType
+     *
+     * @return \TencentAds\Model\PlayableType
+     */
+    public function getPlayableType()
+    {
+        return $this->container['playableType'];
+    }
+
+    /**
+     * Sets playableType
+     *
+     * @param \TencentAds\Model\PlayableType $playableType playableType
+     *
+     * @return $this
+     */
+    public function setPlayableType($playableType)
+    {
+        $this->container['playableType'] = $playableType;
 
         return $this;
     }

@@ -32,7 +32,7 @@ class TencentAds extends Tools
      * SDK version
      * @var string
      */
-    protected $version = '1.1.14';
+    protected $version = '1.1.15';
 
     /**
      * SDK version
@@ -268,7 +268,7 @@ class TencentAds extends Tools
     /**
      * @return string
      */
-    public function getApiVersion(): string
+    public function getApiVersion()
     {
         return $this->apiVersion;
     }
