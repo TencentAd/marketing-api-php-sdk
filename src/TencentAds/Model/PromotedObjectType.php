@@ -71,6 +71,7 @@ class PromotedObjectType
     const COUPON_WECHAT = 'PROMOTED_OBJECT_TYPE_COUPON_WECHAT';
     const APP_PROMOTION = 'PROMOTED_OBJECT_TYPE_APP_PROMOTION';
     const WECHAT_CHANNELS = 'PROMOTED_OBJECT_TYPE_WECHAT_CHANNELS';
+    const MINI_PROGRAM_WECHAT = 'PROMOTED_OBJECT_TYPE_MINI_PROGRAM_WECHAT';
     
     /**
      * Gets allowable values of the enum
@@ -106,6 +107,7 @@ class PromotedObjectType
             self::COUPON_WECHAT,
             self::APP_PROMOTION,
             self::WECHAT_CHANNELS,
+            self::MINI_PROGRAM_WECHAT,
         ];
     }
 }

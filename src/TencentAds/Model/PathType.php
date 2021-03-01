@@ -1,6 +1,6 @@
 <?php
 /**
- * BidMode
+ * PathType
  *
  * PHP version 5
  *
@@ -31,24 +31,23 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * BidMode Class Doc Comment
+ * PathType Class Doc Comment
  *
  * @category Class
- * @description 出价方式，&lt;br/&gt;        优化目标查询接口需传输出价方式才可获取是否支持“点击”优化目标，&lt;br/&gt;        “点击”优化目标仅支持BID_MODE_OCPM出价方式。
+ * @description 资产授权路径类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class BidMode
+class PathType
 {
     /**
      * Possible values of this enum
      */
-    const CPC = 'BID_MODE_CPC';
-    const CPA = 'BID_MODE_CPA';
-    const CPM = 'BID_MODE_CPM';
-    const OCPC = 'BID_MODE_OCPC';
-    const OCPM = 'BID_MODE_OCPM';
+    const BM = 'PATH_TYPE_BM';
+    const AGENCY = 'PATH_TYPE_AGENCY';
+    const MDM = 'PATH_TYPE_MDM';
+    const POINT_TO_POINT = 'PATH_TYPE_POINT_TO_POINT';
     
     /**
      * Gets allowable values of the enum
@@ -57,11 +56,10 @@ class BidMode
     public static function getAllowableEnumValues()
     {
         return [
-            self::CPC,
-            self::CPA,
-            self::CPM,
-            self::OCPC,
-            self::OCPM,
+            self::BM,
+            self::AGENCY,
+            self::MDM,
+            self::POINT_TO_POINT,
         ];
     }
 }

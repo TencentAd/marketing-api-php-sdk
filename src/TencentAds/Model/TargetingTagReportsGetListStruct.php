@@ -73,6 +73,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'couponClickCount' => 'int',
         'couponIssueCount' => 'int',
         'couponGetCount' => 'int',
+        'platformPageViewCount' => 'int',
         'webCommodityPageViewCount' => 'int',
         'webCommodityPageViewCost' => 'int',
         'webRegisterCount' => 'int',
@@ -144,10 +145,58 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'praiseCost' => 'int',
         'commentCount' => 'int',
         'commentCost' => 'int',
+        'cost1' => 'int',
+        'cost2' => 'int',
+        'cost3' => 'int',
+        'cost4' => 'int',
+        'creditCost' => 'int',
+        'adPurValApp' => 'int',
         'fromFollowUv' => 'int',
         'fromFollowCost' => 'int',
         'addDesktopPv' => 'int',
         'addDesktopCost' => 'int',
+        'conversionsCount' => 'int',
+        'deepConversionsCount' => 'int',
+        'valuableClickCount' => 'int',
+        'videoPlayCount' => 'int',
+        'clickImageCount' => 'int',
+        'clickDetailCount' => 'int',
+        'clickHeadCount' => 'int',
+        'clickNickCount' => 'int',
+        'clickPoiCount' => 'int',
+        'videoInnerPlayCount' => 'int',
+        'lanButtonClickCount' => 'int',
+        'cpnClickButtonUv' => 'int',
+        'keyPageUv' => 'int',
+        'specialPageExpUv' => 'int',
+        'viewCommodityPageUv' => 'int',
+        'leadsPurchaseCount' => 'int',
+        'leadsPurchaseUv' => 'int',
+        'validLeadsUv' => 'int',
+        'phoneCallUv' => 'int',
+        'validPhoneUv' => 'int',
+        'potentialCustomerPhoneUv' => 'int',
+        'webRegisterUv' => 'int',
+        'webApplyUv' => 'int',
+        'webCreditUv' => 'int',
+        'appApplyUv' => 'int',
+        'appPreCreditUv' => 'int',
+        'appCreditUv' => 'int',
+        'appWithdrawUv' => 'int',
+        'wechatAppRegisterUv' => 'int',
+        'noInterestCount' => 'int',
+        'firstDayOrderCount' => 'int',
+        'firstDayOrderAmount' => 'int',
+        'addWishlistCount' => 'int',
+        'videoOuterPlay10Count' => 'int',
+        'videoOuterPlay25Count' => 'int',
+        'videoOuterPlay50Count' => 'int',
+        'videoOuterPlay75Count' => 'int',
+        'videoOuterPlay95Count' => 'int',
+        'videoOuterPlay100Count' => 'int',
+        'videoOuterPlay3sCount' => 'int',
+        'videoOuterPlay5sCount' => 'int',
+        'videoOuterPlay7sCount' => 'int',
         'storeVisitor' => 'int',
         'tryOutUser' => 'int',
         'consultLeaveInfoUsers' => 'int',
@@ -187,28 +236,20 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'viewUserCount' => 'int',
         'avgViewPerUser' => 'double',
         'clickUserCount' => 'int',
-        'valuableClickCount' => 'int',
         'valuableClickCost' => 'int',
-        'clickDetailCount' => 'int',
         'linkClickUserCount' => 'int',
-        'clickHeadCount' => 'int',
         'portraitClickUserCount' => 'int',
-        'clickNickCount' => 'int',
         'nicknameClickUserCount' => 'int',
-        'clickPoiCount' => 'int',
         'poiClickUserCount' => 'int',
         'praiseUserCount' => 'int',
         'commentUserCount' => 'int',
-        'conversionsCount' => 'int',
         'conversionsCost' => 'int',
         'conversionsRate' => 'double',
-        'deepConversionsCount' => 'int',
         'deepConversionsCost' => 'int',
         'deepConversionsRate' => 'double',
         'orderCount' => 'int',
         'orderUnitPrice' => 'int',
         'leadsUserCount' => 'int',
-        'validLeadsUv' => 'int',
         'validLeadsCost' => 'int',
         'officialAccountFollowCount' => 'int',
         'couponUseCount' => 'int',
@@ -218,7 +259,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'behaviorScene' => 'string',
         'behaviorTimeWindow' => 'string',
         'behaviorIntensity' => 'string',
-        'platformPageViewCount' => 'int',
         'platformShopNavigationCount' => 'int',
         'platformShopNavigationCost' => 'int',
         'retentionRate' => 'double',
@@ -232,7 +272,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'externalFormReservationCount' => 'int',
         'appAdPayingUsers' => 'int',
         'adPurValWeb' => 'int',
-        'adPurValApp' => 'int',
         'gameCreateRoleCount' => 'int',
         'gameAuthorizeCount' => 'int',
         'gameTutorialFinishCount' => 'int',
@@ -310,42 +349,17 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectId' => 'string',
         'platformPageViewRate' => 'double',
         'valuableClickRate' => 'double',
-        'videoPlayCount' => 'int',
-        'clickImageCount' => 'int',
-        'videoInnerPlayCount' => 'int',
-        'lanButtonClickCount' => 'int',
         'lanJumpButtonClickers' => 'int',
         'lanJumpButtonClickCost' => 'int',
         'lanJumpButtonCtr' => 'double',
         'lanButtonClickCost' => 'int',
         'cpnClickButtonCount' => 'int',
-        'cpnClickButtonUv' => 'int',
-        'keyPageUv' => 'int',
-        'specialPageExpUv' => 'int',
         'specialPageExpCost' => 'int',
-        'viewCommodityPageUv' => 'int',
         'effectLeadsPurchaseCount' => 'int',
         'reservationUv' => 'int',
         'overallLeadsPurchaseCount' => 'int',
-        'leadsPurchaseCount' => 'int',
         'leadsPurchaseRate' => 'double',
         'leadsPurchaseCost' => 'int',
-        'leadsPurchaseUv' => 'int',
-        'phoneCallUv' => 'int',
-        'validPhoneUv' => 'int',
-        'potentialCustomerPhoneUv' => 'int',
-        'webRegisterUv' => 'int',
-        'webApplyUv' => 'int',
-        'webCreditUv' => 'int',
-        'appApplyUv' => 'int',
-        'appPreCreditUv' => 'int',
-        'appCreditUv' => 'int',
-        'appWithdrawUv' => 'int',
-        'wechatAppRegisterUv' => 'int',
-        'noInterestCount' => 'int',
-        'firstDayOrderCount' => 'int',
-        'firstDayOrderAmount' => 'int',
-        'addWishlistCount' => 'int',
         'effectLeadsPurchaseCost' => 'int',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
@@ -402,6 +416,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'couponClickCount' => 'int64',
         'couponIssueCount' => 'int64',
         'couponGetCount' => 'int64',
+        'platformPageViewCount' => 'int64',
         'webCommodityPageViewCount' => 'int64',
         'webCommodityPageViewCost' => 'int64',
         'webRegisterCount' => 'int64',
@@ -473,10 +488,58 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'praiseCost' => 'int64',
         'commentCount' => 'int64',
         'commentCost' => 'int64',
+        'cost1' => 'int64',
+        'cost2' => 'int64',
+        'cost3' => 'int64',
+        'cost4' => 'int64',
+        'creditCost' => 'int64',
+        'adPurValApp' => 'int64',
         'fromFollowUv' => 'int64',
         'fromFollowCost' => 'int64',
         'addDesktopPv' => 'int64',
         'addDesktopCost' => 'int64',
+        'conversionsCount' => 'int64',
+        'deepConversionsCount' => 'int64',
+        'valuableClickCount' => 'int64',
+        'videoPlayCount' => 'int64',
+        'clickImageCount' => 'int64',
+        'clickDetailCount' => 'int64',
+        'clickHeadCount' => 'int64',
+        'clickNickCount' => 'int64',
+        'clickPoiCount' => 'int64',
+        'videoInnerPlayCount' => 'int64',
+        'lanButtonClickCount' => 'int64',
+        'cpnClickButtonUv' => 'int64',
+        'keyPageUv' => 'int64',
+        'specialPageExpUv' => 'int64',
+        'viewCommodityPageUv' => 'int64',
+        'leadsPurchaseCount' => 'int64',
+        'leadsPurchaseUv' => 'int64',
+        'validLeadsUv' => 'int64',
+        'phoneCallUv' => 'int64',
+        'validPhoneUv' => 'int64',
+        'potentialCustomerPhoneUv' => 'int64',
+        'webRegisterUv' => 'int64',
+        'webApplyUv' => 'int64',
+        'webCreditUv' => 'int64',
+        'appApplyUv' => 'int64',
+        'appPreCreditUv' => 'int64',
+        'appCreditUv' => 'int64',
+        'appWithdrawUv' => 'int64',
+        'wechatAppRegisterUv' => 'int64',
+        'noInterestCount' => 'int64',
+        'firstDayOrderCount' => 'int64',
+        'firstDayOrderAmount' => 'int64',
+        'addWishlistCount' => 'int64',
+        'videoOuterPlay10Count' => 'int64',
+        'videoOuterPlay25Count' => 'int64',
+        'videoOuterPlay50Count' => 'int64',
+        'videoOuterPlay75Count' => 'int64',
+        'videoOuterPlay95Count' => 'int64',
+        'videoOuterPlay100Count' => 'int64',
+        'videoOuterPlay3sCount' => 'int64',
+        'videoOuterPlay5sCount' => 'int64',
+        'videoOuterPlay7sCount' => 'int64',
         'storeVisitor' => 'int64',
         'tryOutUser' => 'int64',
         'consultLeaveInfoUsers' => 'int64',
@@ -516,28 +579,20 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'viewUserCount' => 'int64',
         'avgViewPerUser' => 'double',
         'clickUserCount' => 'int64',
-        'valuableClickCount' => 'int64',
         'valuableClickCost' => 'int64',
-        'clickDetailCount' => 'int64',
         'linkClickUserCount' => 'int64',
-        'clickHeadCount' => 'int64',
         'portraitClickUserCount' => 'int64',
-        'clickNickCount' => 'int64',
         'nicknameClickUserCount' => 'int64',
-        'clickPoiCount' => 'int64',
         'poiClickUserCount' => 'int64',
         'praiseUserCount' => 'int64',
         'commentUserCount' => 'int64',
-        'conversionsCount' => 'int64',
         'conversionsCost' => 'int64',
         'conversionsRate' => 'double',
-        'deepConversionsCount' => 'int64',
         'deepConversionsCost' => 'int64',
         'deepConversionsRate' => 'double',
         'orderCount' => 'int64',
         'orderUnitPrice' => 'int64',
         'leadsUserCount' => 'int64',
-        'validLeadsUv' => 'int64',
         'validLeadsCost' => 'int64',
         'officialAccountFollowCount' => 'int64',
         'couponUseCount' => 'int64',
@@ -547,7 +602,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'behaviorScene' => null,
         'behaviorTimeWindow' => null,
         'behaviorIntensity' => null,
-        'platformPageViewCount' => 'int64',
         'platformShopNavigationCount' => 'int64',
         'platformShopNavigationCost' => 'int64',
         'retentionRate' => 'double',
@@ -561,7 +615,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'externalFormReservationCount' => 'int64',
         'appAdPayingUsers' => 'int64',
         'adPurValWeb' => 'int64',
-        'adPurValApp' => 'int64',
         'gameCreateRoleCount' => 'int64',
         'gameAuthorizeCount' => 'int64',
         'gameTutorialFinishCount' => 'int64',
@@ -639,42 +692,17 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectId' => null,
         'platformPageViewRate' => 'double',
         'valuableClickRate' => 'double',
-        'videoPlayCount' => 'int64',
-        'clickImageCount' => 'int64',
-        'videoInnerPlayCount' => 'int64',
-        'lanButtonClickCount' => 'int64',
         'lanJumpButtonClickers' => 'int64',
         'lanJumpButtonClickCost' => 'int64',
         'lanJumpButtonCtr' => 'double',
         'lanButtonClickCost' => 'int64',
         'cpnClickButtonCount' => 'int64',
-        'cpnClickButtonUv' => 'int64',
-        'keyPageUv' => 'int64',
-        'specialPageExpUv' => 'int64',
         'specialPageExpCost' => 'int64',
-        'viewCommodityPageUv' => 'int64',
         'effectLeadsPurchaseCount' => 'int64',
         'reservationUv' => 'int64',
         'overallLeadsPurchaseCount' => 'int64',
-        'leadsPurchaseCount' => 'int64',
         'leadsPurchaseRate' => 'double',
         'leadsPurchaseCost' => 'int64',
-        'leadsPurchaseUv' => 'int64',
-        'phoneCallUv' => 'int64',
-        'validPhoneUv' => 'int64',
-        'potentialCustomerPhoneUv' => 'int64',
-        'webRegisterUv' => 'int64',
-        'webApplyUv' => 'int64',
-        'webCreditUv' => 'int64',
-        'appApplyUv' => 'int64',
-        'appPreCreditUv' => 'int64',
-        'appCreditUv' => 'int64',
-        'appWithdrawUv' => 'int64',
-        'wechatAppRegisterUv' => 'int64',
-        'noInterestCount' => 'int64',
-        'firstDayOrderCount' => 'int64',
-        'firstDayOrderAmount' => 'int64',
-        'addWishlistCount' => 'int64',
         'effectLeadsPurchaseCost' => 'int64',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
@@ -752,6 +780,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'couponClickCount' => 'coupon_click_count',
         'couponIssueCount' => 'coupon_issue_count',
         'couponGetCount' => 'coupon_get_count',
+        'platformPageViewCount' => 'platform_page_view_count',
         'webCommodityPageViewCount' => 'web_commodity_page_view_count',
         'webCommodityPageViewCost' => 'web_commodity_page_view_cost',
         'webRegisterCount' => 'web_register_count',
@@ -823,10 +852,58 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'praiseCost' => 'praise_cost',
         'commentCount' => 'comment_count',
         'commentCost' => 'comment_cost',
+        'cost1' => 'cost1',
+        'cost2' => 'cost2',
+        'cost3' => 'cost3',
+        'cost4' => 'cost4',
+        'creditCost' => 'credit_cost',
+        'adPurValApp' => 'ad_pur_val_app',
         'fromFollowUv' => 'from_follow_uv',
         'fromFollowCost' => 'from_follow_cost',
         'addDesktopPv' => 'add_desktop_pv',
         'addDesktopCost' => 'add_desktop_cost',
+        'conversionsCount' => 'conversions_count',
+        'deepConversionsCount' => 'deep_conversions_count',
+        'valuableClickCount' => 'valuable_click_count',
+        'videoPlayCount' => 'video_play_count',
+        'clickImageCount' => 'click_image_count',
+        'clickDetailCount' => 'click_detail_count',
+        'clickHeadCount' => 'click_head_count',
+        'clickNickCount' => 'click_nick_count',
+        'clickPoiCount' => 'click_poi_count',
+        'videoInnerPlayCount' => 'video_inner_play_count',
+        'lanButtonClickCount' => 'lan_button_click_count',
+        'cpnClickButtonUv' => 'cpn_click_button_uv',
+        'keyPageUv' => 'key_page_uv',
+        'specialPageExpUv' => 'special_page_exp_uv',
+        'viewCommodityPageUv' => 'view_commodity_page_uv',
+        'leadsPurchaseCount' => 'leads_purchase_count',
+        'leadsPurchaseUv' => 'leads_purchase_uv',
+        'validLeadsUv' => 'valid_leads_uv',
+        'phoneCallUv' => 'phone_call_uv',
+        'validPhoneUv' => 'valid_phone_uv',
+        'potentialCustomerPhoneUv' => 'potential_customer_phone_uv',
+        'webRegisterUv' => 'web_register_uv',
+        'webApplyUv' => 'web_apply_uv',
+        'webCreditUv' => 'web_credit_uv',
+        'appApplyUv' => 'app_apply_uv',
+        'appPreCreditUv' => 'app_pre_credit_uv',
+        'appCreditUv' => 'app_credit_uv',
+        'appWithdrawUv' => 'app_withdraw_uv',
+        'wechatAppRegisterUv' => 'wechat_app_register_uv',
+        'noInterestCount' => 'no_interest_count',
+        'firstDayOrderCount' => 'first_day_order_count',
+        'firstDayOrderAmount' => 'first_day_order_amount',
+        'addWishlistCount' => 'add_wishlist_count',
+        'videoOuterPlay10Count' => 'video_outer_play10_count',
+        'videoOuterPlay25Count' => 'video_outer_play25_count',
+        'videoOuterPlay50Count' => 'video_outer_play50_count',
+        'videoOuterPlay75Count' => 'video_outer_play75_count',
+        'videoOuterPlay95Count' => 'video_outer_play95_count',
+        'videoOuterPlay100Count' => 'video_outer_play100_count',
+        'videoOuterPlay3sCount' => 'video_outer_play3s_count',
+        'videoOuterPlay5sCount' => 'video_outer_play5s_count',
+        'videoOuterPlay7sCount' => 'video_outer_play7s_count',
         'storeVisitor' => 'store_visitor',
         'tryOutUser' => 'try_out_user',
         'consultLeaveInfoUsers' => 'consult_leave_info_users',
@@ -866,28 +943,20 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'viewUserCount' => 'view_user_count',
         'avgViewPerUser' => 'avg_view_per_user',
         'clickUserCount' => 'click_user_count',
-        'valuableClickCount' => 'valuable_click_count',
         'valuableClickCost' => 'valuable_click_cost',
-        'clickDetailCount' => 'click_detail_count',
         'linkClickUserCount' => 'link_click_user_count',
-        'clickHeadCount' => 'click_head_count',
         'portraitClickUserCount' => 'portrait_click_user_count',
-        'clickNickCount' => 'click_nick_count',
         'nicknameClickUserCount' => 'nickname_click_user_count',
-        'clickPoiCount' => 'click_poi_count',
         'poiClickUserCount' => 'poi_click_user_count',
         'praiseUserCount' => 'praise_user_count',
         'commentUserCount' => 'comment_user_count',
-        'conversionsCount' => 'conversions_count',
         'conversionsCost' => 'conversions_cost',
         'conversionsRate' => 'conversions_rate',
-        'deepConversionsCount' => 'deep_conversions_count',
         'deepConversionsCost' => 'deep_conversions_cost',
         'deepConversionsRate' => 'deep_conversions_rate',
         'orderCount' => 'order_count',
         'orderUnitPrice' => 'order_unit_price',
         'leadsUserCount' => 'leads_user_count',
-        'validLeadsUv' => 'valid_leads_uv',
         'validLeadsCost' => 'valid_leads_cost',
         'officialAccountFollowCount' => 'official_account_follow_count',
         'couponUseCount' => 'coupon_use_count',
@@ -897,7 +966,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'behaviorScene' => 'behavior_scene',
         'behaviorTimeWindow' => 'behavior_time_window',
         'behaviorIntensity' => 'behavior_intensity',
-        'platformPageViewCount' => 'platform_page_view_count',
         'platformShopNavigationCount' => 'platform_shop_navigation_count',
         'platformShopNavigationCost' => 'platform_shop_navigation_cost',
         'retentionRate' => 'retention_rate',
@@ -911,7 +979,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'externalFormReservationCount' => 'external_form_reservation_count',
         'appAdPayingUsers' => 'app_ad_paying_users',
         'adPurValWeb' => 'ad_pur_val_web',
-        'adPurValApp' => 'ad_pur_val_app',
         'gameCreateRoleCount' => 'game_create_role_count',
         'gameAuthorizeCount' => 'game_authorize_count',
         'gameTutorialFinishCount' => 'game_tutorial_finish_count',
@@ -989,42 +1056,17 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectId' => 'promoted_object_id',
         'platformPageViewRate' => 'platform_page_view_rate',
         'valuableClickRate' => 'valuable_click_rate',
-        'videoPlayCount' => 'video_play_count',
-        'clickImageCount' => 'click_image_count',
-        'videoInnerPlayCount' => 'video_inner_play_count',
-        'lanButtonClickCount' => 'lan_button_click_count',
         'lanJumpButtonClickers' => 'lan_jump_button_clickers',
         'lanJumpButtonClickCost' => 'lan_jump_button_click_cost',
         'lanJumpButtonCtr' => 'lan_jump_button_ctr',
         'lanButtonClickCost' => 'lan_button_click_cost',
         'cpnClickButtonCount' => 'cpn_click_button_count',
-        'cpnClickButtonUv' => 'cpn_click_button_uv',
-        'keyPageUv' => 'key_page_uv',
-        'specialPageExpUv' => 'special_page_exp_uv',
         'specialPageExpCost' => 'special_page_exp_cost',
-        'viewCommodityPageUv' => 'view_commodity_page_uv',
         'effectLeadsPurchaseCount' => 'effect_leads_purchase_count',
         'reservationUv' => 'reservation_uv',
         'overallLeadsPurchaseCount' => 'overall_leads_purchase_count',
-        'leadsPurchaseCount' => 'leads_purchase_count',
         'leadsPurchaseRate' => 'leads_purchase_rate',
         'leadsPurchaseCost' => 'leads_purchase_cost',
-        'leadsPurchaseUv' => 'leads_purchase_uv',
-        'phoneCallUv' => 'phone_call_uv',
-        'validPhoneUv' => 'valid_phone_uv',
-        'potentialCustomerPhoneUv' => 'potential_customer_phone_uv',
-        'webRegisterUv' => 'web_register_uv',
-        'webApplyUv' => 'web_apply_uv',
-        'webCreditUv' => 'web_credit_uv',
-        'appApplyUv' => 'app_apply_uv',
-        'appPreCreditUv' => 'app_pre_credit_uv',
-        'appCreditUv' => 'app_credit_uv',
-        'appWithdrawUv' => 'app_withdraw_uv',
-        'wechatAppRegisterUv' => 'wechat_app_register_uv',
-        'noInterestCount' => 'no_interest_count',
-        'firstDayOrderCount' => 'first_day_order_count',
-        'firstDayOrderAmount' => 'first_day_order_amount',
-        'addWishlistCount' => 'add_wishlist_count',
         'effectLeadsPurchaseCost' => 'effect_leads_purchase_cost',
         'requestConversionsCount' => 'request_conversions_count',
         'requestConversionsCost' => 'request_conversions_cost',
@@ -1081,6 +1123,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'couponClickCount' => 'setCouponClickCount',
         'couponIssueCount' => 'setCouponIssueCount',
         'couponGetCount' => 'setCouponGetCount',
+        'platformPageViewCount' => 'setPlatformPageViewCount',
         'webCommodityPageViewCount' => 'setWebCommodityPageViewCount',
         'webCommodityPageViewCost' => 'setWebCommodityPageViewCost',
         'webRegisterCount' => 'setWebRegisterCount',
@@ -1152,10 +1195,58 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'praiseCost' => 'setPraiseCost',
         'commentCount' => 'setCommentCount',
         'commentCost' => 'setCommentCost',
+        'cost1' => 'setCost1',
+        'cost2' => 'setCost2',
+        'cost3' => 'setCost3',
+        'cost4' => 'setCost4',
+        'creditCost' => 'setCreditCost',
+        'adPurValApp' => 'setAdPurValApp',
         'fromFollowUv' => 'setFromFollowUv',
         'fromFollowCost' => 'setFromFollowCost',
         'addDesktopPv' => 'setAddDesktopPv',
         'addDesktopCost' => 'setAddDesktopCost',
+        'conversionsCount' => 'setConversionsCount',
+        'deepConversionsCount' => 'setDeepConversionsCount',
+        'valuableClickCount' => 'setValuableClickCount',
+        'videoPlayCount' => 'setVideoPlayCount',
+        'clickImageCount' => 'setClickImageCount',
+        'clickDetailCount' => 'setClickDetailCount',
+        'clickHeadCount' => 'setClickHeadCount',
+        'clickNickCount' => 'setClickNickCount',
+        'clickPoiCount' => 'setClickPoiCount',
+        'videoInnerPlayCount' => 'setVideoInnerPlayCount',
+        'lanButtonClickCount' => 'setLanButtonClickCount',
+        'cpnClickButtonUv' => 'setCpnClickButtonUv',
+        'keyPageUv' => 'setKeyPageUv',
+        'specialPageExpUv' => 'setSpecialPageExpUv',
+        'viewCommodityPageUv' => 'setViewCommodityPageUv',
+        'leadsPurchaseCount' => 'setLeadsPurchaseCount',
+        'leadsPurchaseUv' => 'setLeadsPurchaseUv',
+        'validLeadsUv' => 'setValidLeadsUv',
+        'phoneCallUv' => 'setPhoneCallUv',
+        'validPhoneUv' => 'setValidPhoneUv',
+        'potentialCustomerPhoneUv' => 'setPotentialCustomerPhoneUv',
+        'webRegisterUv' => 'setWebRegisterUv',
+        'webApplyUv' => 'setWebApplyUv',
+        'webCreditUv' => 'setWebCreditUv',
+        'appApplyUv' => 'setAppApplyUv',
+        'appPreCreditUv' => 'setAppPreCreditUv',
+        'appCreditUv' => 'setAppCreditUv',
+        'appWithdrawUv' => 'setAppWithdrawUv',
+        'wechatAppRegisterUv' => 'setWechatAppRegisterUv',
+        'noInterestCount' => 'setNoInterestCount',
+        'firstDayOrderCount' => 'setFirstDayOrderCount',
+        'firstDayOrderAmount' => 'setFirstDayOrderAmount',
+        'addWishlistCount' => 'setAddWishlistCount',
+        'videoOuterPlay10Count' => 'setVideoOuterPlay10Count',
+        'videoOuterPlay25Count' => 'setVideoOuterPlay25Count',
+        'videoOuterPlay50Count' => 'setVideoOuterPlay50Count',
+        'videoOuterPlay75Count' => 'setVideoOuterPlay75Count',
+        'videoOuterPlay95Count' => 'setVideoOuterPlay95Count',
+        'videoOuterPlay100Count' => 'setVideoOuterPlay100Count',
+        'videoOuterPlay3sCount' => 'setVideoOuterPlay3sCount',
+        'videoOuterPlay5sCount' => 'setVideoOuterPlay5sCount',
+        'videoOuterPlay7sCount' => 'setVideoOuterPlay7sCount',
         'storeVisitor' => 'setStoreVisitor',
         'tryOutUser' => 'setTryOutUser',
         'consultLeaveInfoUsers' => 'setConsultLeaveInfoUsers',
@@ -1195,28 +1286,20 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'viewUserCount' => 'setViewUserCount',
         'avgViewPerUser' => 'setAvgViewPerUser',
         'clickUserCount' => 'setClickUserCount',
-        'valuableClickCount' => 'setValuableClickCount',
         'valuableClickCost' => 'setValuableClickCost',
-        'clickDetailCount' => 'setClickDetailCount',
         'linkClickUserCount' => 'setLinkClickUserCount',
-        'clickHeadCount' => 'setClickHeadCount',
         'portraitClickUserCount' => 'setPortraitClickUserCount',
-        'clickNickCount' => 'setClickNickCount',
         'nicknameClickUserCount' => 'setNicknameClickUserCount',
-        'clickPoiCount' => 'setClickPoiCount',
         'poiClickUserCount' => 'setPoiClickUserCount',
         'praiseUserCount' => 'setPraiseUserCount',
         'commentUserCount' => 'setCommentUserCount',
-        'conversionsCount' => 'setConversionsCount',
         'conversionsCost' => 'setConversionsCost',
         'conversionsRate' => 'setConversionsRate',
-        'deepConversionsCount' => 'setDeepConversionsCount',
         'deepConversionsCost' => 'setDeepConversionsCost',
         'deepConversionsRate' => 'setDeepConversionsRate',
         'orderCount' => 'setOrderCount',
         'orderUnitPrice' => 'setOrderUnitPrice',
         'leadsUserCount' => 'setLeadsUserCount',
-        'validLeadsUv' => 'setValidLeadsUv',
         'validLeadsCost' => 'setValidLeadsCost',
         'officialAccountFollowCount' => 'setOfficialAccountFollowCount',
         'couponUseCount' => 'setCouponUseCount',
@@ -1226,7 +1309,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'behaviorScene' => 'setBehaviorScene',
         'behaviorTimeWindow' => 'setBehaviorTimeWindow',
         'behaviorIntensity' => 'setBehaviorIntensity',
-        'platformPageViewCount' => 'setPlatformPageViewCount',
         'platformShopNavigationCount' => 'setPlatformShopNavigationCount',
         'platformShopNavigationCost' => 'setPlatformShopNavigationCost',
         'retentionRate' => 'setRetentionRate',
@@ -1240,7 +1322,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'externalFormReservationCount' => 'setExternalFormReservationCount',
         'appAdPayingUsers' => 'setAppAdPayingUsers',
         'adPurValWeb' => 'setAdPurValWeb',
-        'adPurValApp' => 'setAdPurValApp',
         'gameCreateRoleCount' => 'setGameCreateRoleCount',
         'gameAuthorizeCount' => 'setGameAuthorizeCount',
         'gameTutorialFinishCount' => 'setGameTutorialFinishCount',
@@ -1318,42 +1399,17 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectId' => 'setPromotedObjectId',
         'platformPageViewRate' => 'setPlatformPageViewRate',
         'valuableClickRate' => 'setValuableClickRate',
-        'videoPlayCount' => 'setVideoPlayCount',
-        'clickImageCount' => 'setClickImageCount',
-        'videoInnerPlayCount' => 'setVideoInnerPlayCount',
-        'lanButtonClickCount' => 'setLanButtonClickCount',
         'lanJumpButtonClickers' => 'setLanJumpButtonClickers',
         'lanJumpButtonClickCost' => 'setLanJumpButtonClickCost',
         'lanJumpButtonCtr' => 'setLanJumpButtonCtr',
         'lanButtonClickCost' => 'setLanButtonClickCost',
         'cpnClickButtonCount' => 'setCpnClickButtonCount',
-        'cpnClickButtonUv' => 'setCpnClickButtonUv',
-        'keyPageUv' => 'setKeyPageUv',
-        'specialPageExpUv' => 'setSpecialPageExpUv',
         'specialPageExpCost' => 'setSpecialPageExpCost',
-        'viewCommodityPageUv' => 'setViewCommodityPageUv',
         'effectLeadsPurchaseCount' => 'setEffectLeadsPurchaseCount',
         'reservationUv' => 'setReservationUv',
         'overallLeadsPurchaseCount' => 'setOverallLeadsPurchaseCount',
-        'leadsPurchaseCount' => 'setLeadsPurchaseCount',
         'leadsPurchaseRate' => 'setLeadsPurchaseRate',
         'leadsPurchaseCost' => 'setLeadsPurchaseCost',
-        'leadsPurchaseUv' => 'setLeadsPurchaseUv',
-        'phoneCallUv' => 'setPhoneCallUv',
-        'validPhoneUv' => 'setValidPhoneUv',
-        'potentialCustomerPhoneUv' => 'setPotentialCustomerPhoneUv',
-        'webRegisterUv' => 'setWebRegisterUv',
-        'webApplyUv' => 'setWebApplyUv',
-        'webCreditUv' => 'setWebCreditUv',
-        'appApplyUv' => 'setAppApplyUv',
-        'appPreCreditUv' => 'setAppPreCreditUv',
-        'appCreditUv' => 'setAppCreditUv',
-        'appWithdrawUv' => 'setAppWithdrawUv',
-        'wechatAppRegisterUv' => 'setWechatAppRegisterUv',
-        'noInterestCount' => 'setNoInterestCount',
-        'firstDayOrderCount' => 'setFirstDayOrderCount',
-        'firstDayOrderAmount' => 'setFirstDayOrderAmount',
-        'addWishlistCount' => 'setAddWishlistCount',
         'effectLeadsPurchaseCost' => 'setEffectLeadsPurchaseCost',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'requestConversionsCost' => 'setRequestConversionsCost',
@@ -1410,6 +1466,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'couponClickCount' => 'getCouponClickCount',
         'couponIssueCount' => 'getCouponIssueCount',
         'couponGetCount' => 'getCouponGetCount',
+        'platformPageViewCount' => 'getPlatformPageViewCount',
         'webCommodityPageViewCount' => 'getWebCommodityPageViewCount',
         'webCommodityPageViewCost' => 'getWebCommodityPageViewCost',
         'webRegisterCount' => 'getWebRegisterCount',
@@ -1481,10 +1538,58 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'praiseCost' => 'getPraiseCost',
         'commentCount' => 'getCommentCount',
         'commentCost' => 'getCommentCost',
+        'cost1' => 'getCost1',
+        'cost2' => 'getCost2',
+        'cost3' => 'getCost3',
+        'cost4' => 'getCost4',
+        'creditCost' => 'getCreditCost',
+        'adPurValApp' => 'getAdPurValApp',
         'fromFollowUv' => 'getFromFollowUv',
         'fromFollowCost' => 'getFromFollowCost',
         'addDesktopPv' => 'getAddDesktopPv',
         'addDesktopCost' => 'getAddDesktopCost',
+        'conversionsCount' => 'getConversionsCount',
+        'deepConversionsCount' => 'getDeepConversionsCount',
+        'valuableClickCount' => 'getValuableClickCount',
+        'videoPlayCount' => 'getVideoPlayCount',
+        'clickImageCount' => 'getClickImageCount',
+        'clickDetailCount' => 'getClickDetailCount',
+        'clickHeadCount' => 'getClickHeadCount',
+        'clickNickCount' => 'getClickNickCount',
+        'clickPoiCount' => 'getClickPoiCount',
+        'videoInnerPlayCount' => 'getVideoInnerPlayCount',
+        'lanButtonClickCount' => 'getLanButtonClickCount',
+        'cpnClickButtonUv' => 'getCpnClickButtonUv',
+        'keyPageUv' => 'getKeyPageUv',
+        'specialPageExpUv' => 'getSpecialPageExpUv',
+        'viewCommodityPageUv' => 'getViewCommodityPageUv',
+        'leadsPurchaseCount' => 'getLeadsPurchaseCount',
+        'leadsPurchaseUv' => 'getLeadsPurchaseUv',
+        'validLeadsUv' => 'getValidLeadsUv',
+        'phoneCallUv' => 'getPhoneCallUv',
+        'validPhoneUv' => 'getValidPhoneUv',
+        'potentialCustomerPhoneUv' => 'getPotentialCustomerPhoneUv',
+        'webRegisterUv' => 'getWebRegisterUv',
+        'webApplyUv' => 'getWebApplyUv',
+        'webCreditUv' => 'getWebCreditUv',
+        'appApplyUv' => 'getAppApplyUv',
+        'appPreCreditUv' => 'getAppPreCreditUv',
+        'appCreditUv' => 'getAppCreditUv',
+        'appWithdrawUv' => 'getAppWithdrawUv',
+        'wechatAppRegisterUv' => 'getWechatAppRegisterUv',
+        'noInterestCount' => 'getNoInterestCount',
+        'firstDayOrderCount' => 'getFirstDayOrderCount',
+        'firstDayOrderAmount' => 'getFirstDayOrderAmount',
+        'addWishlistCount' => 'getAddWishlistCount',
+        'videoOuterPlay10Count' => 'getVideoOuterPlay10Count',
+        'videoOuterPlay25Count' => 'getVideoOuterPlay25Count',
+        'videoOuterPlay50Count' => 'getVideoOuterPlay50Count',
+        'videoOuterPlay75Count' => 'getVideoOuterPlay75Count',
+        'videoOuterPlay95Count' => 'getVideoOuterPlay95Count',
+        'videoOuterPlay100Count' => 'getVideoOuterPlay100Count',
+        'videoOuterPlay3sCount' => 'getVideoOuterPlay3sCount',
+        'videoOuterPlay5sCount' => 'getVideoOuterPlay5sCount',
+        'videoOuterPlay7sCount' => 'getVideoOuterPlay7sCount',
         'storeVisitor' => 'getStoreVisitor',
         'tryOutUser' => 'getTryOutUser',
         'consultLeaveInfoUsers' => 'getConsultLeaveInfoUsers',
@@ -1524,28 +1629,20 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'viewUserCount' => 'getViewUserCount',
         'avgViewPerUser' => 'getAvgViewPerUser',
         'clickUserCount' => 'getClickUserCount',
-        'valuableClickCount' => 'getValuableClickCount',
         'valuableClickCost' => 'getValuableClickCost',
-        'clickDetailCount' => 'getClickDetailCount',
         'linkClickUserCount' => 'getLinkClickUserCount',
-        'clickHeadCount' => 'getClickHeadCount',
         'portraitClickUserCount' => 'getPortraitClickUserCount',
-        'clickNickCount' => 'getClickNickCount',
         'nicknameClickUserCount' => 'getNicknameClickUserCount',
-        'clickPoiCount' => 'getClickPoiCount',
         'poiClickUserCount' => 'getPoiClickUserCount',
         'praiseUserCount' => 'getPraiseUserCount',
         'commentUserCount' => 'getCommentUserCount',
-        'conversionsCount' => 'getConversionsCount',
         'conversionsCost' => 'getConversionsCost',
         'conversionsRate' => 'getConversionsRate',
-        'deepConversionsCount' => 'getDeepConversionsCount',
         'deepConversionsCost' => 'getDeepConversionsCost',
         'deepConversionsRate' => 'getDeepConversionsRate',
         'orderCount' => 'getOrderCount',
         'orderUnitPrice' => 'getOrderUnitPrice',
         'leadsUserCount' => 'getLeadsUserCount',
-        'validLeadsUv' => 'getValidLeadsUv',
         'validLeadsCost' => 'getValidLeadsCost',
         'officialAccountFollowCount' => 'getOfficialAccountFollowCount',
         'couponUseCount' => 'getCouponUseCount',
@@ -1555,7 +1652,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'behaviorScene' => 'getBehaviorScene',
         'behaviorTimeWindow' => 'getBehaviorTimeWindow',
         'behaviorIntensity' => 'getBehaviorIntensity',
-        'platformPageViewCount' => 'getPlatformPageViewCount',
         'platformShopNavigationCount' => 'getPlatformShopNavigationCount',
         'platformShopNavigationCost' => 'getPlatformShopNavigationCost',
         'retentionRate' => 'getRetentionRate',
@@ -1569,7 +1665,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'externalFormReservationCount' => 'getExternalFormReservationCount',
         'appAdPayingUsers' => 'getAppAdPayingUsers',
         'adPurValWeb' => 'getAdPurValWeb',
-        'adPurValApp' => 'getAdPurValApp',
         'gameCreateRoleCount' => 'getGameCreateRoleCount',
         'gameAuthorizeCount' => 'getGameAuthorizeCount',
         'gameTutorialFinishCount' => 'getGameTutorialFinishCount',
@@ -1647,42 +1742,17 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectId' => 'getPromotedObjectId',
         'platformPageViewRate' => 'getPlatformPageViewRate',
         'valuableClickRate' => 'getValuableClickRate',
-        'videoPlayCount' => 'getVideoPlayCount',
-        'clickImageCount' => 'getClickImageCount',
-        'videoInnerPlayCount' => 'getVideoInnerPlayCount',
-        'lanButtonClickCount' => 'getLanButtonClickCount',
         'lanJumpButtonClickers' => 'getLanJumpButtonClickers',
         'lanJumpButtonClickCost' => 'getLanJumpButtonClickCost',
         'lanJumpButtonCtr' => 'getLanJumpButtonCtr',
         'lanButtonClickCost' => 'getLanButtonClickCost',
         'cpnClickButtonCount' => 'getCpnClickButtonCount',
-        'cpnClickButtonUv' => 'getCpnClickButtonUv',
-        'keyPageUv' => 'getKeyPageUv',
-        'specialPageExpUv' => 'getSpecialPageExpUv',
         'specialPageExpCost' => 'getSpecialPageExpCost',
-        'viewCommodityPageUv' => 'getViewCommodityPageUv',
         'effectLeadsPurchaseCount' => 'getEffectLeadsPurchaseCount',
         'reservationUv' => 'getReservationUv',
         'overallLeadsPurchaseCount' => 'getOverallLeadsPurchaseCount',
-        'leadsPurchaseCount' => 'getLeadsPurchaseCount',
         'leadsPurchaseRate' => 'getLeadsPurchaseRate',
         'leadsPurchaseCost' => 'getLeadsPurchaseCost',
-        'leadsPurchaseUv' => 'getLeadsPurchaseUv',
-        'phoneCallUv' => 'getPhoneCallUv',
-        'validPhoneUv' => 'getValidPhoneUv',
-        'potentialCustomerPhoneUv' => 'getPotentialCustomerPhoneUv',
-        'webRegisterUv' => 'getWebRegisterUv',
-        'webApplyUv' => 'getWebApplyUv',
-        'webCreditUv' => 'getWebCreditUv',
-        'appApplyUv' => 'getAppApplyUv',
-        'appPreCreditUv' => 'getAppPreCreditUv',
-        'appCreditUv' => 'getAppCreditUv',
-        'appWithdrawUv' => 'getAppWithdrawUv',
-        'wechatAppRegisterUv' => 'getWechatAppRegisterUv',
-        'noInterestCount' => 'getNoInterestCount',
-        'firstDayOrderCount' => 'getFirstDayOrderCount',
-        'firstDayOrderAmount' => 'getFirstDayOrderAmount',
-        'addWishlistCount' => 'getAddWishlistCount',
         'effectLeadsPurchaseCost' => 'getEffectLeadsPurchaseCost',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'requestConversionsCost' => 'getRequestConversionsCost',
@@ -1793,6 +1863,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['couponClickCount'] = isset($data['couponClickCount']) ? $data['couponClickCount'] : null;
         $this->container['couponIssueCount'] = isset($data['couponIssueCount']) ? $data['couponIssueCount'] : null;
         $this->container['couponGetCount'] = isset($data['couponGetCount']) ? $data['couponGetCount'] : null;
+        $this->container['platformPageViewCount'] = isset($data['platformPageViewCount']) ? $data['platformPageViewCount'] : null;
         $this->container['webCommodityPageViewCount'] = isset($data['webCommodityPageViewCount']) ? $data['webCommodityPageViewCount'] : null;
         $this->container['webCommodityPageViewCost'] = isset($data['webCommodityPageViewCost']) ? $data['webCommodityPageViewCost'] : null;
         $this->container['webRegisterCount'] = isset($data['webRegisterCount']) ? $data['webRegisterCount'] : null;
@@ -1864,10 +1935,58 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['praiseCost'] = isset($data['praiseCost']) ? $data['praiseCost'] : null;
         $this->container['commentCount'] = isset($data['commentCount']) ? $data['commentCount'] : null;
         $this->container['commentCost'] = isset($data['commentCost']) ? $data['commentCost'] : null;
+        $this->container['cost1'] = isset($data['cost1']) ? $data['cost1'] : null;
+        $this->container['cost2'] = isset($data['cost2']) ? $data['cost2'] : null;
+        $this->container['cost3'] = isset($data['cost3']) ? $data['cost3'] : null;
+        $this->container['cost4'] = isset($data['cost4']) ? $data['cost4'] : null;
+        $this->container['creditCost'] = isset($data['creditCost']) ? $data['creditCost'] : null;
+        $this->container['adPurValApp'] = isset($data['adPurValApp']) ? $data['adPurValApp'] : null;
         $this->container['fromFollowUv'] = isset($data['fromFollowUv']) ? $data['fromFollowUv'] : null;
         $this->container['fromFollowCost'] = isset($data['fromFollowCost']) ? $data['fromFollowCost'] : null;
         $this->container['addDesktopPv'] = isset($data['addDesktopPv']) ? $data['addDesktopPv'] : null;
         $this->container['addDesktopCost'] = isset($data['addDesktopCost']) ? $data['addDesktopCost'] : null;
+        $this->container['conversionsCount'] = isset($data['conversionsCount']) ? $data['conversionsCount'] : null;
+        $this->container['deepConversionsCount'] = isset($data['deepConversionsCount']) ? $data['deepConversionsCount'] : null;
+        $this->container['valuableClickCount'] = isset($data['valuableClickCount']) ? $data['valuableClickCount'] : null;
+        $this->container['videoPlayCount'] = isset($data['videoPlayCount']) ? $data['videoPlayCount'] : null;
+        $this->container['clickImageCount'] = isset($data['clickImageCount']) ? $data['clickImageCount'] : null;
+        $this->container['clickDetailCount'] = isset($data['clickDetailCount']) ? $data['clickDetailCount'] : null;
+        $this->container['clickHeadCount'] = isset($data['clickHeadCount']) ? $data['clickHeadCount'] : null;
+        $this->container['clickNickCount'] = isset($data['clickNickCount']) ? $data['clickNickCount'] : null;
+        $this->container['clickPoiCount'] = isset($data['clickPoiCount']) ? $data['clickPoiCount'] : null;
+        $this->container['videoInnerPlayCount'] = isset($data['videoInnerPlayCount']) ? $data['videoInnerPlayCount'] : null;
+        $this->container['lanButtonClickCount'] = isset($data['lanButtonClickCount']) ? $data['lanButtonClickCount'] : null;
+        $this->container['cpnClickButtonUv'] = isset($data['cpnClickButtonUv']) ? $data['cpnClickButtonUv'] : null;
+        $this->container['keyPageUv'] = isset($data['keyPageUv']) ? $data['keyPageUv'] : null;
+        $this->container['specialPageExpUv'] = isset($data['specialPageExpUv']) ? $data['specialPageExpUv'] : null;
+        $this->container['viewCommodityPageUv'] = isset($data['viewCommodityPageUv']) ? $data['viewCommodityPageUv'] : null;
+        $this->container['leadsPurchaseCount'] = isset($data['leadsPurchaseCount']) ? $data['leadsPurchaseCount'] : null;
+        $this->container['leadsPurchaseUv'] = isset($data['leadsPurchaseUv']) ? $data['leadsPurchaseUv'] : null;
+        $this->container['validLeadsUv'] = isset($data['validLeadsUv']) ? $data['validLeadsUv'] : null;
+        $this->container['phoneCallUv'] = isset($data['phoneCallUv']) ? $data['phoneCallUv'] : null;
+        $this->container['validPhoneUv'] = isset($data['validPhoneUv']) ? $data['validPhoneUv'] : null;
+        $this->container['potentialCustomerPhoneUv'] = isset($data['potentialCustomerPhoneUv']) ? $data['potentialCustomerPhoneUv'] : null;
+        $this->container['webRegisterUv'] = isset($data['webRegisterUv']) ? $data['webRegisterUv'] : null;
+        $this->container['webApplyUv'] = isset($data['webApplyUv']) ? $data['webApplyUv'] : null;
+        $this->container['webCreditUv'] = isset($data['webCreditUv']) ? $data['webCreditUv'] : null;
+        $this->container['appApplyUv'] = isset($data['appApplyUv']) ? $data['appApplyUv'] : null;
+        $this->container['appPreCreditUv'] = isset($data['appPreCreditUv']) ? $data['appPreCreditUv'] : null;
+        $this->container['appCreditUv'] = isset($data['appCreditUv']) ? $data['appCreditUv'] : null;
+        $this->container['appWithdrawUv'] = isset($data['appWithdrawUv']) ? $data['appWithdrawUv'] : null;
+        $this->container['wechatAppRegisterUv'] = isset($data['wechatAppRegisterUv']) ? $data['wechatAppRegisterUv'] : null;
+        $this->container['noInterestCount'] = isset($data['noInterestCount']) ? $data['noInterestCount'] : null;
+        $this->container['firstDayOrderCount'] = isset($data['firstDayOrderCount']) ? $data['firstDayOrderCount'] : null;
+        $this->container['firstDayOrderAmount'] = isset($data['firstDayOrderAmount']) ? $data['firstDayOrderAmount'] : null;
+        $this->container['addWishlistCount'] = isset($data['addWishlistCount']) ? $data['addWishlistCount'] : null;
+        $this->container['videoOuterPlay10Count'] = isset($data['videoOuterPlay10Count']) ? $data['videoOuterPlay10Count'] : null;
+        $this->container['videoOuterPlay25Count'] = isset($data['videoOuterPlay25Count']) ? $data['videoOuterPlay25Count'] : null;
+        $this->container['videoOuterPlay50Count'] = isset($data['videoOuterPlay50Count']) ? $data['videoOuterPlay50Count'] : null;
+        $this->container['videoOuterPlay75Count'] = isset($data['videoOuterPlay75Count']) ? $data['videoOuterPlay75Count'] : null;
+        $this->container['videoOuterPlay95Count'] = isset($data['videoOuterPlay95Count']) ? $data['videoOuterPlay95Count'] : null;
+        $this->container['videoOuterPlay100Count'] = isset($data['videoOuterPlay100Count']) ? $data['videoOuterPlay100Count'] : null;
+        $this->container['videoOuterPlay3sCount'] = isset($data['videoOuterPlay3sCount']) ? $data['videoOuterPlay3sCount'] : null;
+        $this->container['videoOuterPlay5sCount'] = isset($data['videoOuterPlay5sCount']) ? $data['videoOuterPlay5sCount'] : null;
+        $this->container['videoOuterPlay7sCount'] = isset($data['videoOuterPlay7sCount']) ? $data['videoOuterPlay7sCount'] : null;
         $this->container['storeVisitor'] = isset($data['storeVisitor']) ? $data['storeVisitor'] : null;
         $this->container['tryOutUser'] = isset($data['tryOutUser']) ? $data['tryOutUser'] : null;
         $this->container['consultLeaveInfoUsers'] = isset($data['consultLeaveInfoUsers']) ? $data['consultLeaveInfoUsers'] : null;
@@ -1907,28 +2026,20 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['viewUserCount'] = isset($data['viewUserCount']) ? $data['viewUserCount'] : null;
         $this->container['avgViewPerUser'] = isset($data['avgViewPerUser']) ? $data['avgViewPerUser'] : null;
         $this->container['clickUserCount'] = isset($data['clickUserCount']) ? $data['clickUserCount'] : null;
-        $this->container['valuableClickCount'] = isset($data['valuableClickCount']) ? $data['valuableClickCount'] : null;
         $this->container['valuableClickCost'] = isset($data['valuableClickCost']) ? $data['valuableClickCost'] : null;
-        $this->container['clickDetailCount'] = isset($data['clickDetailCount']) ? $data['clickDetailCount'] : null;
         $this->container['linkClickUserCount'] = isset($data['linkClickUserCount']) ? $data['linkClickUserCount'] : null;
-        $this->container['clickHeadCount'] = isset($data['clickHeadCount']) ? $data['clickHeadCount'] : null;
         $this->container['portraitClickUserCount'] = isset($data['portraitClickUserCount']) ? $data['portraitClickUserCount'] : null;
-        $this->container['clickNickCount'] = isset($data['clickNickCount']) ? $data['clickNickCount'] : null;
         $this->container['nicknameClickUserCount'] = isset($data['nicknameClickUserCount']) ? $data['nicknameClickUserCount'] : null;
-        $this->container['clickPoiCount'] = isset($data['clickPoiCount']) ? $data['clickPoiCount'] : null;
         $this->container['poiClickUserCount'] = isset($data['poiClickUserCount']) ? $data['poiClickUserCount'] : null;
         $this->container['praiseUserCount'] = isset($data['praiseUserCount']) ? $data['praiseUserCount'] : null;
         $this->container['commentUserCount'] = isset($data['commentUserCount']) ? $data['commentUserCount'] : null;
-        $this->container['conversionsCount'] = isset($data['conversionsCount']) ? $data['conversionsCount'] : null;
         $this->container['conversionsCost'] = isset($data['conversionsCost']) ? $data['conversionsCost'] : null;
         $this->container['conversionsRate'] = isset($data['conversionsRate']) ? $data['conversionsRate'] : null;
-        $this->container['deepConversionsCount'] = isset($data['deepConversionsCount']) ? $data['deepConversionsCount'] : null;
         $this->container['deepConversionsCost'] = isset($data['deepConversionsCost']) ? $data['deepConversionsCost'] : null;
         $this->container['deepConversionsRate'] = isset($data['deepConversionsRate']) ? $data['deepConversionsRate'] : null;
         $this->container['orderCount'] = isset($data['orderCount']) ? $data['orderCount'] : null;
         $this->container['orderUnitPrice'] = isset($data['orderUnitPrice']) ? $data['orderUnitPrice'] : null;
         $this->container['leadsUserCount'] = isset($data['leadsUserCount']) ? $data['leadsUserCount'] : null;
-        $this->container['validLeadsUv'] = isset($data['validLeadsUv']) ? $data['validLeadsUv'] : null;
         $this->container['validLeadsCost'] = isset($data['validLeadsCost']) ? $data['validLeadsCost'] : null;
         $this->container['officialAccountFollowCount'] = isset($data['officialAccountFollowCount']) ? $data['officialAccountFollowCount'] : null;
         $this->container['couponUseCount'] = isset($data['couponUseCount']) ? $data['couponUseCount'] : null;
@@ -1938,7 +2049,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['behaviorScene'] = isset($data['behaviorScene']) ? $data['behaviorScene'] : null;
         $this->container['behaviorTimeWindow'] = isset($data['behaviorTimeWindow']) ? $data['behaviorTimeWindow'] : null;
         $this->container['behaviorIntensity'] = isset($data['behaviorIntensity']) ? $data['behaviorIntensity'] : null;
-        $this->container['platformPageViewCount'] = isset($data['platformPageViewCount']) ? $data['platformPageViewCount'] : null;
         $this->container['platformShopNavigationCount'] = isset($data['platformShopNavigationCount']) ? $data['platformShopNavigationCount'] : null;
         $this->container['platformShopNavigationCost'] = isset($data['platformShopNavigationCost']) ? $data['platformShopNavigationCost'] : null;
         $this->container['retentionRate'] = isset($data['retentionRate']) ? $data['retentionRate'] : null;
@@ -1952,7 +2062,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['externalFormReservationCount'] = isset($data['externalFormReservationCount']) ? $data['externalFormReservationCount'] : null;
         $this->container['appAdPayingUsers'] = isset($data['appAdPayingUsers']) ? $data['appAdPayingUsers'] : null;
         $this->container['adPurValWeb'] = isset($data['adPurValWeb']) ? $data['adPurValWeb'] : null;
-        $this->container['adPurValApp'] = isset($data['adPurValApp']) ? $data['adPurValApp'] : null;
         $this->container['gameCreateRoleCount'] = isset($data['gameCreateRoleCount']) ? $data['gameCreateRoleCount'] : null;
         $this->container['gameAuthorizeCount'] = isset($data['gameAuthorizeCount']) ? $data['gameAuthorizeCount'] : null;
         $this->container['gameTutorialFinishCount'] = isset($data['gameTutorialFinishCount']) ? $data['gameTutorialFinishCount'] : null;
@@ -2030,42 +2139,17 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
         $this->container['platformPageViewRate'] = isset($data['platformPageViewRate']) ? $data['platformPageViewRate'] : null;
         $this->container['valuableClickRate'] = isset($data['valuableClickRate']) ? $data['valuableClickRate'] : null;
-        $this->container['videoPlayCount'] = isset($data['videoPlayCount']) ? $data['videoPlayCount'] : null;
-        $this->container['clickImageCount'] = isset($data['clickImageCount']) ? $data['clickImageCount'] : null;
-        $this->container['videoInnerPlayCount'] = isset($data['videoInnerPlayCount']) ? $data['videoInnerPlayCount'] : null;
-        $this->container['lanButtonClickCount'] = isset($data['lanButtonClickCount']) ? $data['lanButtonClickCount'] : null;
         $this->container['lanJumpButtonClickers'] = isset($data['lanJumpButtonClickers']) ? $data['lanJumpButtonClickers'] : null;
         $this->container['lanJumpButtonClickCost'] = isset($data['lanJumpButtonClickCost']) ? $data['lanJumpButtonClickCost'] : null;
         $this->container['lanJumpButtonCtr'] = isset($data['lanJumpButtonCtr']) ? $data['lanJumpButtonCtr'] : null;
         $this->container['lanButtonClickCost'] = isset($data['lanButtonClickCost']) ? $data['lanButtonClickCost'] : null;
         $this->container['cpnClickButtonCount'] = isset($data['cpnClickButtonCount']) ? $data['cpnClickButtonCount'] : null;
-        $this->container['cpnClickButtonUv'] = isset($data['cpnClickButtonUv']) ? $data['cpnClickButtonUv'] : null;
-        $this->container['keyPageUv'] = isset($data['keyPageUv']) ? $data['keyPageUv'] : null;
-        $this->container['specialPageExpUv'] = isset($data['specialPageExpUv']) ? $data['specialPageExpUv'] : null;
         $this->container['specialPageExpCost'] = isset($data['specialPageExpCost']) ? $data['specialPageExpCost'] : null;
-        $this->container['viewCommodityPageUv'] = isset($data['viewCommodityPageUv']) ? $data['viewCommodityPageUv'] : null;
         $this->container['effectLeadsPurchaseCount'] = isset($data['effectLeadsPurchaseCount']) ? $data['effectLeadsPurchaseCount'] : null;
         $this->container['reservationUv'] = isset($data['reservationUv']) ? $data['reservationUv'] : null;
         $this->container['overallLeadsPurchaseCount'] = isset($data['overallLeadsPurchaseCount']) ? $data['overallLeadsPurchaseCount'] : null;
-        $this->container['leadsPurchaseCount'] = isset($data['leadsPurchaseCount']) ? $data['leadsPurchaseCount'] : null;
         $this->container['leadsPurchaseRate'] = isset($data['leadsPurchaseRate']) ? $data['leadsPurchaseRate'] : null;
         $this->container['leadsPurchaseCost'] = isset($data['leadsPurchaseCost']) ? $data['leadsPurchaseCost'] : null;
-        $this->container['leadsPurchaseUv'] = isset($data['leadsPurchaseUv']) ? $data['leadsPurchaseUv'] : null;
-        $this->container['phoneCallUv'] = isset($data['phoneCallUv']) ? $data['phoneCallUv'] : null;
-        $this->container['validPhoneUv'] = isset($data['validPhoneUv']) ? $data['validPhoneUv'] : null;
-        $this->container['potentialCustomerPhoneUv'] = isset($data['potentialCustomerPhoneUv']) ? $data['potentialCustomerPhoneUv'] : null;
-        $this->container['webRegisterUv'] = isset($data['webRegisterUv']) ? $data['webRegisterUv'] : null;
-        $this->container['webApplyUv'] = isset($data['webApplyUv']) ? $data['webApplyUv'] : null;
-        $this->container['webCreditUv'] = isset($data['webCreditUv']) ? $data['webCreditUv'] : null;
-        $this->container['appApplyUv'] = isset($data['appApplyUv']) ? $data['appApplyUv'] : null;
-        $this->container['appPreCreditUv'] = isset($data['appPreCreditUv']) ? $data['appPreCreditUv'] : null;
-        $this->container['appCreditUv'] = isset($data['appCreditUv']) ? $data['appCreditUv'] : null;
-        $this->container['appWithdrawUv'] = isset($data['appWithdrawUv']) ? $data['appWithdrawUv'] : null;
-        $this->container['wechatAppRegisterUv'] = isset($data['wechatAppRegisterUv']) ? $data['wechatAppRegisterUv'] : null;
-        $this->container['noInterestCount'] = isset($data['noInterestCount']) ? $data['noInterestCount'] : null;
-        $this->container['firstDayOrderCount'] = isset($data['firstDayOrderCount']) ? $data['firstDayOrderCount'] : null;
-        $this->container['firstDayOrderAmount'] = isset($data['firstDayOrderAmount']) ? $data['firstDayOrderAmount'] : null;
-        $this->container['addWishlistCount'] = isset($data['addWishlistCount']) ? $data['addWishlistCount'] : null;
         $this->container['effectLeadsPurchaseCost'] = isset($data['effectLeadsPurchaseCost']) ? $data['effectLeadsPurchaseCost'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
@@ -2481,6 +2565,30 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setCouponGetCount($couponGetCount)
     {
         $this->container['couponGetCount'] = $couponGetCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets platformPageViewCount
+     *
+     * @return int
+     */
+    public function getPlatformPageViewCount()
+    {
+        return $this->container['platformPageViewCount'];
+    }
+
+    /**
+     * Sets platformPageViewCount
+     *
+     * @param int $platformPageViewCount platformPageViewCount
+     *
+     * @return $this
+     */
+    public function setPlatformPageViewCount($platformPageViewCount)
+    {
+        $this->container['platformPageViewCount'] = $platformPageViewCount;
 
         return $this;
     }
@@ -4190,6 +4298,150 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets cost1
+     *
+     * @return int
+     */
+    public function getCost1()
+    {
+        return $this->container['cost1'];
+    }
+
+    /**
+     * Sets cost1
+     *
+     * @param int $cost1 cost1
+     *
+     * @return $this
+     */
+    public function setCost1($cost1)
+    {
+        $this->container['cost1'] = $cost1;
+
+        return $this;
+    }
+
+    /**
+     * Gets cost2
+     *
+     * @return int
+     */
+    public function getCost2()
+    {
+        return $this->container['cost2'];
+    }
+
+    /**
+     * Sets cost2
+     *
+     * @param int $cost2 cost2
+     *
+     * @return $this
+     */
+    public function setCost2($cost2)
+    {
+        $this->container['cost2'] = $cost2;
+
+        return $this;
+    }
+
+    /**
+     * Gets cost3
+     *
+     * @return int
+     */
+    public function getCost3()
+    {
+        return $this->container['cost3'];
+    }
+
+    /**
+     * Sets cost3
+     *
+     * @param int $cost3 cost3
+     *
+     * @return $this
+     */
+    public function setCost3($cost3)
+    {
+        $this->container['cost3'] = $cost3;
+
+        return $this;
+    }
+
+    /**
+     * Gets cost4
+     *
+     * @return int
+     */
+    public function getCost4()
+    {
+        return $this->container['cost4'];
+    }
+
+    /**
+     * Sets cost4
+     *
+     * @param int $cost4 cost4
+     *
+     * @return $this
+     */
+    public function setCost4($cost4)
+    {
+        $this->container['cost4'] = $cost4;
+
+        return $this;
+    }
+
+    /**
+     * Gets creditCost
+     *
+     * @return int
+     */
+    public function getCreditCost()
+    {
+        return $this->container['creditCost'];
+    }
+
+    /**
+     * Sets creditCost
+     *
+     * @param int $creditCost creditCost
+     *
+     * @return $this
+     */
+    public function setCreditCost($creditCost)
+    {
+        $this->container['creditCost'] = $creditCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets adPurValApp
+     *
+     * @return int
+     */
+    public function getAdPurValApp()
+    {
+        return $this->container['adPurValApp'];
+    }
+
+    /**
+     * Sets adPurValApp
+     *
+     * @param int $adPurValApp adPurValApp
+     *
+     * @return $this
+     */
+    public function setAdPurValApp($adPurValApp)
+    {
+        $this->container['adPurValApp'] = $adPurValApp;
+
+        return $this;
+    }
+
+    /**
      * Gets fromFollowUv
      *
      * @return int
@@ -4281,6 +4533,1014 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setAddDesktopCost($addDesktopCost)
     {
         $this->container['addDesktopCost'] = $addDesktopCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets conversionsCount
+     *
+     * @return int
+     */
+    public function getConversionsCount()
+    {
+        return $this->container['conversionsCount'];
+    }
+
+    /**
+     * Sets conversionsCount
+     *
+     * @param int $conversionsCount conversionsCount
+     *
+     * @return $this
+     */
+    public function setConversionsCount($conversionsCount)
+    {
+        $this->container['conversionsCount'] = $conversionsCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets deepConversionsCount
+     *
+     * @return int
+     */
+    public function getDeepConversionsCount()
+    {
+        return $this->container['deepConversionsCount'];
+    }
+
+    /**
+     * Sets deepConversionsCount
+     *
+     * @param int $deepConversionsCount deepConversionsCount
+     *
+     * @return $this
+     */
+    public function setDeepConversionsCount($deepConversionsCount)
+    {
+        $this->container['deepConversionsCount'] = $deepConversionsCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets valuableClickCount
+     *
+     * @return int
+     */
+    public function getValuableClickCount()
+    {
+        return $this->container['valuableClickCount'];
+    }
+
+    /**
+     * Sets valuableClickCount
+     *
+     * @param int $valuableClickCount valuableClickCount
+     *
+     * @return $this
+     */
+    public function setValuableClickCount($valuableClickCount)
+    {
+        $this->container['valuableClickCount'] = $valuableClickCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoPlayCount
+     *
+     * @return int
+     */
+    public function getVideoPlayCount()
+    {
+        return $this->container['videoPlayCount'];
+    }
+
+    /**
+     * Sets videoPlayCount
+     *
+     * @param int $videoPlayCount videoPlayCount
+     *
+     * @return $this
+     */
+    public function setVideoPlayCount($videoPlayCount)
+    {
+        $this->container['videoPlayCount'] = $videoPlayCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets clickImageCount
+     *
+     * @return int
+     */
+    public function getClickImageCount()
+    {
+        return $this->container['clickImageCount'];
+    }
+
+    /**
+     * Sets clickImageCount
+     *
+     * @param int $clickImageCount clickImageCount
+     *
+     * @return $this
+     */
+    public function setClickImageCount($clickImageCount)
+    {
+        $this->container['clickImageCount'] = $clickImageCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets clickDetailCount
+     *
+     * @return int
+     */
+    public function getClickDetailCount()
+    {
+        return $this->container['clickDetailCount'];
+    }
+
+    /**
+     * Sets clickDetailCount
+     *
+     * @param int $clickDetailCount clickDetailCount
+     *
+     * @return $this
+     */
+    public function setClickDetailCount($clickDetailCount)
+    {
+        $this->container['clickDetailCount'] = $clickDetailCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets clickHeadCount
+     *
+     * @return int
+     */
+    public function getClickHeadCount()
+    {
+        return $this->container['clickHeadCount'];
+    }
+
+    /**
+     * Sets clickHeadCount
+     *
+     * @param int $clickHeadCount clickHeadCount
+     *
+     * @return $this
+     */
+    public function setClickHeadCount($clickHeadCount)
+    {
+        $this->container['clickHeadCount'] = $clickHeadCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets clickNickCount
+     *
+     * @return int
+     */
+    public function getClickNickCount()
+    {
+        return $this->container['clickNickCount'];
+    }
+
+    /**
+     * Sets clickNickCount
+     *
+     * @param int $clickNickCount clickNickCount
+     *
+     * @return $this
+     */
+    public function setClickNickCount($clickNickCount)
+    {
+        $this->container['clickNickCount'] = $clickNickCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets clickPoiCount
+     *
+     * @return int
+     */
+    public function getClickPoiCount()
+    {
+        return $this->container['clickPoiCount'];
+    }
+
+    /**
+     * Sets clickPoiCount
+     *
+     * @param int $clickPoiCount clickPoiCount
+     *
+     * @return $this
+     */
+    public function setClickPoiCount($clickPoiCount)
+    {
+        $this->container['clickPoiCount'] = $clickPoiCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoInnerPlayCount
+     *
+     * @return int
+     */
+    public function getVideoInnerPlayCount()
+    {
+        return $this->container['videoInnerPlayCount'];
+    }
+
+    /**
+     * Sets videoInnerPlayCount
+     *
+     * @param int $videoInnerPlayCount videoInnerPlayCount
+     *
+     * @return $this
+     */
+    public function setVideoInnerPlayCount($videoInnerPlayCount)
+    {
+        $this->container['videoInnerPlayCount'] = $videoInnerPlayCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets lanButtonClickCount
+     *
+     * @return int
+     */
+    public function getLanButtonClickCount()
+    {
+        return $this->container['lanButtonClickCount'];
+    }
+
+    /**
+     * Sets lanButtonClickCount
+     *
+     * @param int $lanButtonClickCount lanButtonClickCount
+     *
+     * @return $this
+     */
+    public function setLanButtonClickCount($lanButtonClickCount)
+    {
+        $this->container['lanButtonClickCount'] = $lanButtonClickCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets cpnClickButtonUv
+     *
+     * @return int
+     */
+    public function getCpnClickButtonUv()
+    {
+        return $this->container['cpnClickButtonUv'];
+    }
+
+    /**
+     * Sets cpnClickButtonUv
+     *
+     * @param int $cpnClickButtonUv cpnClickButtonUv
+     *
+     * @return $this
+     */
+    public function setCpnClickButtonUv($cpnClickButtonUv)
+    {
+        $this->container['cpnClickButtonUv'] = $cpnClickButtonUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets keyPageUv
+     *
+     * @return int
+     */
+    public function getKeyPageUv()
+    {
+        return $this->container['keyPageUv'];
+    }
+
+    /**
+     * Sets keyPageUv
+     *
+     * @param int $keyPageUv keyPageUv
+     *
+     * @return $this
+     */
+    public function setKeyPageUv($keyPageUv)
+    {
+        $this->container['keyPageUv'] = $keyPageUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets specialPageExpUv
+     *
+     * @return int
+     */
+    public function getSpecialPageExpUv()
+    {
+        return $this->container['specialPageExpUv'];
+    }
+
+    /**
+     * Sets specialPageExpUv
+     *
+     * @param int $specialPageExpUv specialPageExpUv
+     *
+     * @return $this
+     */
+    public function setSpecialPageExpUv($specialPageExpUv)
+    {
+        $this->container['specialPageExpUv'] = $specialPageExpUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets viewCommodityPageUv
+     *
+     * @return int
+     */
+    public function getViewCommodityPageUv()
+    {
+        return $this->container['viewCommodityPageUv'];
+    }
+
+    /**
+     * Sets viewCommodityPageUv
+     *
+     * @param int $viewCommodityPageUv viewCommodityPageUv
+     *
+     * @return $this
+     */
+    public function setViewCommodityPageUv($viewCommodityPageUv)
+    {
+        $this->container['viewCommodityPageUv'] = $viewCommodityPageUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsPurchaseCount
+     *
+     * @return int
+     */
+    public function getLeadsPurchaseCount()
+    {
+        return $this->container['leadsPurchaseCount'];
+    }
+
+    /**
+     * Sets leadsPurchaseCount
+     *
+     * @param int $leadsPurchaseCount leadsPurchaseCount
+     *
+     * @return $this
+     */
+    public function setLeadsPurchaseCount($leadsPurchaseCount)
+    {
+        $this->container['leadsPurchaseCount'] = $leadsPurchaseCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsPurchaseUv
+     *
+     * @return int
+     */
+    public function getLeadsPurchaseUv()
+    {
+        return $this->container['leadsPurchaseUv'];
+    }
+
+    /**
+     * Sets leadsPurchaseUv
+     *
+     * @param int $leadsPurchaseUv leadsPurchaseUv
+     *
+     * @return $this
+     */
+    public function setLeadsPurchaseUv($leadsPurchaseUv)
+    {
+        $this->container['leadsPurchaseUv'] = $leadsPurchaseUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets validLeadsUv
+     *
+     * @return int
+     */
+    public function getValidLeadsUv()
+    {
+        return $this->container['validLeadsUv'];
+    }
+
+    /**
+     * Sets validLeadsUv
+     *
+     * @param int $validLeadsUv validLeadsUv
+     *
+     * @return $this
+     */
+    public function setValidLeadsUv($validLeadsUv)
+    {
+        $this->container['validLeadsUv'] = $validLeadsUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets phoneCallUv
+     *
+     * @return int
+     */
+    public function getPhoneCallUv()
+    {
+        return $this->container['phoneCallUv'];
+    }
+
+    /**
+     * Sets phoneCallUv
+     *
+     * @param int $phoneCallUv phoneCallUv
+     *
+     * @return $this
+     */
+    public function setPhoneCallUv($phoneCallUv)
+    {
+        $this->container['phoneCallUv'] = $phoneCallUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets validPhoneUv
+     *
+     * @return int
+     */
+    public function getValidPhoneUv()
+    {
+        return $this->container['validPhoneUv'];
+    }
+
+    /**
+     * Sets validPhoneUv
+     *
+     * @param int $validPhoneUv validPhoneUv
+     *
+     * @return $this
+     */
+    public function setValidPhoneUv($validPhoneUv)
+    {
+        $this->container['validPhoneUv'] = $validPhoneUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets potentialCustomerPhoneUv
+     *
+     * @return int
+     */
+    public function getPotentialCustomerPhoneUv()
+    {
+        return $this->container['potentialCustomerPhoneUv'];
+    }
+
+    /**
+     * Sets potentialCustomerPhoneUv
+     *
+     * @param int $potentialCustomerPhoneUv potentialCustomerPhoneUv
+     *
+     * @return $this
+     */
+    public function setPotentialCustomerPhoneUv($potentialCustomerPhoneUv)
+    {
+        $this->container['potentialCustomerPhoneUv'] = $potentialCustomerPhoneUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets webRegisterUv
+     *
+     * @return int
+     */
+    public function getWebRegisterUv()
+    {
+        return $this->container['webRegisterUv'];
+    }
+
+    /**
+     * Sets webRegisterUv
+     *
+     * @param int $webRegisterUv webRegisterUv
+     *
+     * @return $this
+     */
+    public function setWebRegisterUv($webRegisterUv)
+    {
+        $this->container['webRegisterUv'] = $webRegisterUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets webApplyUv
+     *
+     * @return int
+     */
+    public function getWebApplyUv()
+    {
+        return $this->container['webApplyUv'];
+    }
+
+    /**
+     * Sets webApplyUv
+     *
+     * @param int $webApplyUv webApplyUv
+     *
+     * @return $this
+     */
+    public function setWebApplyUv($webApplyUv)
+    {
+        $this->container['webApplyUv'] = $webApplyUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets webCreditUv
+     *
+     * @return int
+     */
+    public function getWebCreditUv()
+    {
+        return $this->container['webCreditUv'];
+    }
+
+    /**
+     * Sets webCreditUv
+     *
+     * @param int $webCreditUv webCreditUv
+     *
+     * @return $this
+     */
+    public function setWebCreditUv($webCreditUv)
+    {
+        $this->container['webCreditUv'] = $webCreditUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets appApplyUv
+     *
+     * @return int
+     */
+    public function getAppApplyUv()
+    {
+        return $this->container['appApplyUv'];
+    }
+
+    /**
+     * Sets appApplyUv
+     *
+     * @param int $appApplyUv appApplyUv
+     *
+     * @return $this
+     */
+    public function setAppApplyUv($appApplyUv)
+    {
+        $this->container['appApplyUv'] = $appApplyUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets appPreCreditUv
+     *
+     * @return int
+     */
+    public function getAppPreCreditUv()
+    {
+        return $this->container['appPreCreditUv'];
+    }
+
+    /**
+     * Sets appPreCreditUv
+     *
+     * @param int $appPreCreditUv appPreCreditUv
+     *
+     * @return $this
+     */
+    public function setAppPreCreditUv($appPreCreditUv)
+    {
+        $this->container['appPreCreditUv'] = $appPreCreditUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets appCreditUv
+     *
+     * @return int
+     */
+    public function getAppCreditUv()
+    {
+        return $this->container['appCreditUv'];
+    }
+
+    /**
+     * Sets appCreditUv
+     *
+     * @param int $appCreditUv appCreditUv
+     *
+     * @return $this
+     */
+    public function setAppCreditUv($appCreditUv)
+    {
+        $this->container['appCreditUv'] = $appCreditUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets appWithdrawUv
+     *
+     * @return int
+     */
+    public function getAppWithdrawUv()
+    {
+        return $this->container['appWithdrawUv'];
+    }
+
+    /**
+     * Sets appWithdrawUv
+     *
+     * @param int $appWithdrawUv appWithdrawUv
+     *
+     * @return $this
+     */
+    public function setAppWithdrawUv($appWithdrawUv)
+    {
+        $this->container['appWithdrawUv'] = $appWithdrawUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatAppRegisterUv
+     *
+     * @return int
+     */
+    public function getWechatAppRegisterUv()
+    {
+        return $this->container['wechatAppRegisterUv'];
+    }
+
+    /**
+     * Sets wechatAppRegisterUv
+     *
+     * @param int $wechatAppRegisterUv wechatAppRegisterUv
+     *
+     * @return $this
+     */
+    public function setWechatAppRegisterUv($wechatAppRegisterUv)
+    {
+        $this->container['wechatAppRegisterUv'] = $wechatAppRegisterUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets noInterestCount
+     *
+     * @return int
+     */
+    public function getNoInterestCount()
+    {
+        return $this->container['noInterestCount'];
+    }
+
+    /**
+     * Sets noInterestCount
+     *
+     * @param int $noInterestCount noInterestCount
+     *
+     * @return $this
+     */
+    public function setNoInterestCount($noInterestCount)
+    {
+        $this->container['noInterestCount'] = $noInterestCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstDayOrderCount
+     *
+     * @return int
+     */
+    public function getFirstDayOrderCount()
+    {
+        return $this->container['firstDayOrderCount'];
+    }
+
+    /**
+     * Sets firstDayOrderCount
+     *
+     * @param int $firstDayOrderCount firstDayOrderCount
+     *
+     * @return $this
+     */
+    public function setFirstDayOrderCount($firstDayOrderCount)
+    {
+        $this->container['firstDayOrderCount'] = $firstDayOrderCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstDayOrderAmount
+     *
+     * @return int
+     */
+    public function getFirstDayOrderAmount()
+    {
+        return $this->container['firstDayOrderAmount'];
+    }
+
+    /**
+     * Sets firstDayOrderAmount
+     *
+     * @param int $firstDayOrderAmount firstDayOrderAmount
+     *
+     * @return $this
+     */
+    public function setFirstDayOrderAmount($firstDayOrderAmount)
+    {
+        $this->container['firstDayOrderAmount'] = $firstDayOrderAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets addWishlistCount
+     *
+     * @return int
+     */
+    public function getAddWishlistCount()
+    {
+        return $this->container['addWishlistCount'];
+    }
+
+    /**
+     * Sets addWishlistCount
+     *
+     * @param int $addWishlistCount addWishlistCount
+     *
+     * @return $this
+     */
+    public function setAddWishlistCount($addWishlistCount)
+    {
+        $this->container['addWishlistCount'] = $addWishlistCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay10Count
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay10Count()
+    {
+        return $this->container['videoOuterPlay10Count'];
+    }
+
+    /**
+     * Sets videoOuterPlay10Count
+     *
+     * @param int $videoOuterPlay10Count videoOuterPlay10Count
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay10Count($videoOuterPlay10Count)
+    {
+        $this->container['videoOuterPlay10Count'] = $videoOuterPlay10Count;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay25Count
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay25Count()
+    {
+        return $this->container['videoOuterPlay25Count'];
+    }
+
+    /**
+     * Sets videoOuterPlay25Count
+     *
+     * @param int $videoOuterPlay25Count videoOuterPlay25Count
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay25Count($videoOuterPlay25Count)
+    {
+        $this->container['videoOuterPlay25Count'] = $videoOuterPlay25Count;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay50Count
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay50Count()
+    {
+        return $this->container['videoOuterPlay50Count'];
+    }
+
+    /**
+     * Sets videoOuterPlay50Count
+     *
+     * @param int $videoOuterPlay50Count videoOuterPlay50Count
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay50Count($videoOuterPlay50Count)
+    {
+        $this->container['videoOuterPlay50Count'] = $videoOuterPlay50Count;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay75Count
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay75Count()
+    {
+        return $this->container['videoOuterPlay75Count'];
+    }
+
+    /**
+     * Sets videoOuterPlay75Count
+     *
+     * @param int $videoOuterPlay75Count videoOuterPlay75Count
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay75Count($videoOuterPlay75Count)
+    {
+        $this->container['videoOuterPlay75Count'] = $videoOuterPlay75Count;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay95Count
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay95Count()
+    {
+        return $this->container['videoOuterPlay95Count'];
+    }
+
+    /**
+     * Sets videoOuterPlay95Count
+     *
+     * @param int $videoOuterPlay95Count videoOuterPlay95Count
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay95Count($videoOuterPlay95Count)
+    {
+        $this->container['videoOuterPlay95Count'] = $videoOuterPlay95Count;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay100Count
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay100Count()
+    {
+        return $this->container['videoOuterPlay100Count'];
+    }
+
+    /**
+     * Sets videoOuterPlay100Count
+     *
+     * @param int $videoOuterPlay100Count videoOuterPlay100Count
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay100Count($videoOuterPlay100Count)
+    {
+        $this->container['videoOuterPlay100Count'] = $videoOuterPlay100Count;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay3sCount
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay3sCount()
+    {
+        return $this->container['videoOuterPlay3sCount'];
+    }
+
+    /**
+     * Sets videoOuterPlay3sCount
+     *
+     * @param int $videoOuterPlay3sCount videoOuterPlay3sCount
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay3sCount($videoOuterPlay3sCount)
+    {
+        $this->container['videoOuterPlay3sCount'] = $videoOuterPlay3sCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay5sCount
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay5sCount()
+    {
+        return $this->container['videoOuterPlay5sCount'];
+    }
+
+    /**
+     * Sets videoOuterPlay5sCount
+     *
+     * @param int $videoOuterPlay5sCount videoOuterPlay5sCount
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay5sCount($videoOuterPlay5sCount)
+    {
+        $this->container['videoOuterPlay5sCount'] = $videoOuterPlay5sCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay7sCount
+     *
+     * @return int
+     */
+    public function getVideoOuterPlay7sCount()
+    {
+        return $this->container['videoOuterPlay7sCount'];
+    }
+
+    /**
+     * Sets videoOuterPlay7sCount
+     *
+     * @param int $videoOuterPlay7sCount videoOuterPlay7sCount
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay7sCount($videoOuterPlay7sCount)
+    {
+        $this->container['videoOuterPlay7sCount'] = $videoOuterPlay7sCount;
 
         return $this;
     }
@@ -5222,30 +6482,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets valuableClickCount
-     *
-     * @return int
-     */
-    public function getValuableClickCount()
-    {
-        return $this->container['valuableClickCount'];
-    }
-
-    /**
-     * Sets valuableClickCount
-     *
-     * @param int $valuableClickCount valuableClickCount
-     *
-     * @return $this
-     */
-    public function setValuableClickCount($valuableClickCount)
-    {
-        $this->container['valuableClickCount'] = $valuableClickCount;
-
-        return $this;
-    }
-
-    /**
      * Gets valuableClickCost
      *
      * @return int
@@ -5265,30 +6501,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setValuableClickCost($valuableClickCost)
     {
         $this->container['valuableClickCost'] = $valuableClickCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets clickDetailCount
-     *
-     * @return int
-     */
-    public function getClickDetailCount()
-    {
-        return $this->container['clickDetailCount'];
-    }
-
-    /**
-     * Sets clickDetailCount
-     *
-     * @param int $clickDetailCount clickDetailCount
-     *
-     * @return $this
-     */
-    public function setClickDetailCount($clickDetailCount)
-    {
-        $this->container['clickDetailCount'] = $clickDetailCount;
 
         return $this;
     }
@@ -5318,30 +6530,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets clickHeadCount
-     *
-     * @return int
-     */
-    public function getClickHeadCount()
-    {
-        return $this->container['clickHeadCount'];
-    }
-
-    /**
-     * Sets clickHeadCount
-     *
-     * @param int $clickHeadCount clickHeadCount
-     *
-     * @return $this
-     */
-    public function setClickHeadCount($clickHeadCount)
-    {
-        $this->container['clickHeadCount'] = $clickHeadCount;
-
-        return $this;
-    }
-
-    /**
      * Gets portraitClickUserCount
      *
      * @return int
@@ -5366,30 +6554,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets clickNickCount
-     *
-     * @return int
-     */
-    public function getClickNickCount()
-    {
-        return $this->container['clickNickCount'];
-    }
-
-    /**
-     * Sets clickNickCount
-     *
-     * @param int $clickNickCount clickNickCount
-     *
-     * @return $this
-     */
-    public function setClickNickCount($clickNickCount)
-    {
-        $this->container['clickNickCount'] = $clickNickCount;
-
-        return $this;
-    }
-
-    /**
      * Gets nicknameClickUserCount
      *
      * @return int
@@ -5409,30 +6573,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setNicknameClickUserCount($nicknameClickUserCount)
     {
         $this->container['nicknameClickUserCount'] = $nicknameClickUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets clickPoiCount
-     *
-     * @return int
-     */
-    public function getClickPoiCount()
-    {
-        return $this->container['clickPoiCount'];
-    }
-
-    /**
-     * Sets clickPoiCount
-     *
-     * @param int $clickPoiCount clickPoiCount
-     *
-     * @return $this
-     */
-    public function setClickPoiCount($clickPoiCount)
-    {
-        $this->container['clickPoiCount'] = $clickPoiCount;
 
         return $this;
     }
@@ -5510,30 +6650,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets conversionsCount
-     *
-     * @return int
-     */
-    public function getConversionsCount()
-    {
-        return $this->container['conversionsCount'];
-    }
-
-    /**
-     * Sets conversionsCount
-     *
-     * @param int $conversionsCount conversionsCount
-     *
-     * @return $this
-     */
-    public function setConversionsCount($conversionsCount)
-    {
-        $this->container['conversionsCount'] = $conversionsCount;
-
-        return $this;
-    }
-
-    /**
      * Gets conversionsCost
      *
      * @return int
@@ -5577,30 +6693,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setConversionsRate($conversionsRate)
     {
         $this->container['conversionsRate'] = $conversionsRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets deepConversionsCount
-     *
-     * @return int
-     */
-    public function getDeepConversionsCount()
-    {
-        return $this->container['deepConversionsCount'];
-    }
-
-    /**
-     * Sets deepConversionsCount
-     *
-     * @param int $deepConversionsCount deepConversionsCount
-     *
-     * @return $this
-     */
-    public function setDeepConversionsCount($deepConversionsCount)
-    {
-        $this->container['deepConversionsCount'] = $deepConversionsCount;
 
         return $this;
     }
@@ -5721,30 +6813,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setLeadsUserCount($leadsUserCount)
     {
         $this->container['leadsUserCount'] = $leadsUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets validLeadsUv
-     *
-     * @return int
-     */
-    public function getValidLeadsUv()
-    {
-        return $this->container['validLeadsUv'];
-    }
-
-    /**
-     * Sets validLeadsUv
-     *
-     * @param int $validLeadsUv validLeadsUv
-     *
-     * @return $this
-     */
-    public function setValidLeadsUv($validLeadsUv)
-    {
-        $this->container['validLeadsUv'] = $validLeadsUv;
 
         return $this;
     }
@@ -5961,30 +7029,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setBehaviorIntensity($behaviorIntensity)
     {
         $this->container['behaviorIntensity'] = $behaviorIntensity;
-
-        return $this;
-    }
-
-    /**
-     * Gets platformPageViewCount
-     *
-     * @return int
-     */
-    public function getPlatformPageViewCount()
-    {
-        return $this->container['platformPageViewCount'];
-    }
-
-    /**
-     * Sets platformPageViewCount
-     *
-     * @param int $platformPageViewCount platformPageViewCount
-     *
-     * @return $this
-     */
-    public function setPlatformPageViewCount($platformPageViewCount)
-    {
-        $this->container['platformPageViewCount'] = $platformPageViewCount;
 
         return $this;
     }
@@ -6297,30 +7341,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setAdPurValWeb($adPurValWeb)
     {
         $this->container['adPurValWeb'] = $adPurValWeb;
-
-        return $this;
-    }
-
-    /**
-     * Gets adPurValApp
-     *
-     * @return int
-     */
-    public function getAdPurValApp()
-    {
-        return $this->container['adPurValApp'];
-    }
-
-    /**
-     * Sets adPurValApp
-     *
-     * @param int $adPurValApp adPurValApp
-     *
-     * @return $this
-     */
-    public function setAdPurValApp($adPurValApp)
-    {
-        $this->container['adPurValApp'] = $adPurValApp;
 
         return $this;
     }
@@ -8174,102 +9194,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets videoPlayCount
-     *
-     * @return int
-     */
-    public function getVideoPlayCount()
-    {
-        return $this->container['videoPlayCount'];
-    }
-
-    /**
-     * Sets videoPlayCount
-     *
-     * @param int $videoPlayCount videoPlayCount
-     *
-     * @return $this
-     */
-    public function setVideoPlayCount($videoPlayCount)
-    {
-        $this->container['videoPlayCount'] = $videoPlayCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets clickImageCount
-     *
-     * @return int
-     */
-    public function getClickImageCount()
-    {
-        return $this->container['clickImageCount'];
-    }
-
-    /**
-     * Sets clickImageCount
-     *
-     * @param int $clickImageCount clickImageCount
-     *
-     * @return $this
-     */
-    public function setClickImageCount($clickImageCount)
-    {
-        $this->container['clickImageCount'] = $clickImageCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoInnerPlayCount
-     *
-     * @return int
-     */
-    public function getVideoInnerPlayCount()
-    {
-        return $this->container['videoInnerPlayCount'];
-    }
-
-    /**
-     * Sets videoInnerPlayCount
-     *
-     * @param int $videoInnerPlayCount videoInnerPlayCount
-     *
-     * @return $this
-     */
-    public function setVideoInnerPlayCount($videoInnerPlayCount)
-    {
-        $this->container['videoInnerPlayCount'] = $videoInnerPlayCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets lanButtonClickCount
-     *
-     * @return int
-     */
-    public function getLanButtonClickCount()
-    {
-        return $this->container['lanButtonClickCount'];
-    }
-
-    /**
-     * Sets lanButtonClickCount
-     *
-     * @param int $lanButtonClickCount lanButtonClickCount
-     *
-     * @return $this
-     */
-    public function setLanButtonClickCount($lanButtonClickCount)
-    {
-        $this->container['lanButtonClickCount'] = $lanButtonClickCount;
-
-        return $this;
-    }
-
-    /**
      * Gets lanJumpButtonClickers
      *
      * @return int
@@ -8390,78 +9314,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets cpnClickButtonUv
-     *
-     * @return int
-     */
-    public function getCpnClickButtonUv()
-    {
-        return $this->container['cpnClickButtonUv'];
-    }
-
-    /**
-     * Sets cpnClickButtonUv
-     *
-     * @param int $cpnClickButtonUv cpnClickButtonUv
-     *
-     * @return $this
-     */
-    public function setCpnClickButtonUv($cpnClickButtonUv)
-    {
-        $this->container['cpnClickButtonUv'] = $cpnClickButtonUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets keyPageUv
-     *
-     * @return int
-     */
-    public function getKeyPageUv()
-    {
-        return $this->container['keyPageUv'];
-    }
-
-    /**
-     * Sets keyPageUv
-     *
-     * @param int $keyPageUv keyPageUv
-     *
-     * @return $this
-     */
-    public function setKeyPageUv($keyPageUv)
-    {
-        $this->container['keyPageUv'] = $keyPageUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets specialPageExpUv
-     *
-     * @return int
-     */
-    public function getSpecialPageExpUv()
-    {
-        return $this->container['specialPageExpUv'];
-    }
-
-    /**
-     * Sets specialPageExpUv
-     *
-     * @param int $specialPageExpUv specialPageExpUv
-     *
-     * @return $this
-     */
-    public function setSpecialPageExpUv($specialPageExpUv)
-    {
-        $this->container['specialPageExpUv'] = $specialPageExpUv;
-
-        return $this;
-    }
-
-    /**
      * Gets specialPageExpCost
      *
      * @return int
@@ -8481,30 +9333,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setSpecialPageExpCost($specialPageExpCost)
     {
         $this->container['specialPageExpCost'] = $specialPageExpCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets viewCommodityPageUv
-     *
-     * @return int
-     */
-    public function getViewCommodityPageUv()
-    {
-        return $this->container['viewCommodityPageUv'];
-    }
-
-    /**
-     * Sets viewCommodityPageUv
-     *
-     * @param int $viewCommodityPageUv viewCommodityPageUv
-     *
-     * @return $this
-     */
-    public function setViewCommodityPageUv($viewCommodityPageUv)
-    {
-        $this->container['viewCommodityPageUv'] = $viewCommodityPageUv;
 
         return $this;
     }
@@ -8582,30 +9410,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets leadsPurchaseCount
-     *
-     * @return int
-     */
-    public function getLeadsPurchaseCount()
-    {
-        return $this->container['leadsPurchaseCount'];
-    }
-
-    /**
-     * Sets leadsPurchaseCount
-     *
-     * @param int $leadsPurchaseCount leadsPurchaseCount
-     *
-     * @return $this
-     */
-    public function setLeadsPurchaseCount($leadsPurchaseCount)
-    {
-        $this->container['leadsPurchaseCount'] = $leadsPurchaseCount;
-
-        return $this;
-    }
-
-    /**
      * Gets leadsPurchaseRate
      *
      * @return double
@@ -8649,390 +9453,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setLeadsPurchaseCost($leadsPurchaseCost)
     {
         $this->container['leadsPurchaseCost'] = $leadsPurchaseCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets leadsPurchaseUv
-     *
-     * @return int
-     */
-    public function getLeadsPurchaseUv()
-    {
-        return $this->container['leadsPurchaseUv'];
-    }
-
-    /**
-     * Sets leadsPurchaseUv
-     *
-     * @param int $leadsPurchaseUv leadsPurchaseUv
-     *
-     * @return $this
-     */
-    public function setLeadsPurchaseUv($leadsPurchaseUv)
-    {
-        $this->container['leadsPurchaseUv'] = $leadsPurchaseUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets phoneCallUv
-     *
-     * @return int
-     */
-    public function getPhoneCallUv()
-    {
-        return $this->container['phoneCallUv'];
-    }
-
-    /**
-     * Sets phoneCallUv
-     *
-     * @param int $phoneCallUv phoneCallUv
-     *
-     * @return $this
-     */
-    public function setPhoneCallUv($phoneCallUv)
-    {
-        $this->container['phoneCallUv'] = $phoneCallUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets validPhoneUv
-     *
-     * @return int
-     */
-    public function getValidPhoneUv()
-    {
-        return $this->container['validPhoneUv'];
-    }
-
-    /**
-     * Sets validPhoneUv
-     *
-     * @param int $validPhoneUv validPhoneUv
-     *
-     * @return $this
-     */
-    public function setValidPhoneUv($validPhoneUv)
-    {
-        $this->container['validPhoneUv'] = $validPhoneUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets potentialCustomerPhoneUv
-     *
-     * @return int
-     */
-    public function getPotentialCustomerPhoneUv()
-    {
-        return $this->container['potentialCustomerPhoneUv'];
-    }
-
-    /**
-     * Sets potentialCustomerPhoneUv
-     *
-     * @param int $potentialCustomerPhoneUv potentialCustomerPhoneUv
-     *
-     * @return $this
-     */
-    public function setPotentialCustomerPhoneUv($potentialCustomerPhoneUv)
-    {
-        $this->container['potentialCustomerPhoneUv'] = $potentialCustomerPhoneUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets webRegisterUv
-     *
-     * @return int
-     */
-    public function getWebRegisterUv()
-    {
-        return $this->container['webRegisterUv'];
-    }
-
-    /**
-     * Sets webRegisterUv
-     *
-     * @param int $webRegisterUv webRegisterUv
-     *
-     * @return $this
-     */
-    public function setWebRegisterUv($webRegisterUv)
-    {
-        $this->container['webRegisterUv'] = $webRegisterUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets webApplyUv
-     *
-     * @return int
-     */
-    public function getWebApplyUv()
-    {
-        return $this->container['webApplyUv'];
-    }
-
-    /**
-     * Sets webApplyUv
-     *
-     * @param int $webApplyUv webApplyUv
-     *
-     * @return $this
-     */
-    public function setWebApplyUv($webApplyUv)
-    {
-        $this->container['webApplyUv'] = $webApplyUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets webCreditUv
-     *
-     * @return int
-     */
-    public function getWebCreditUv()
-    {
-        return $this->container['webCreditUv'];
-    }
-
-    /**
-     * Sets webCreditUv
-     *
-     * @param int $webCreditUv webCreditUv
-     *
-     * @return $this
-     */
-    public function setWebCreditUv($webCreditUv)
-    {
-        $this->container['webCreditUv'] = $webCreditUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets appApplyUv
-     *
-     * @return int
-     */
-    public function getAppApplyUv()
-    {
-        return $this->container['appApplyUv'];
-    }
-
-    /**
-     * Sets appApplyUv
-     *
-     * @param int $appApplyUv appApplyUv
-     *
-     * @return $this
-     */
-    public function setAppApplyUv($appApplyUv)
-    {
-        $this->container['appApplyUv'] = $appApplyUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets appPreCreditUv
-     *
-     * @return int
-     */
-    public function getAppPreCreditUv()
-    {
-        return $this->container['appPreCreditUv'];
-    }
-
-    /**
-     * Sets appPreCreditUv
-     *
-     * @param int $appPreCreditUv appPreCreditUv
-     *
-     * @return $this
-     */
-    public function setAppPreCreditUv($appPreCreditUv)
-    {
-        $this->container['appPreCreditUv'] = $appPreCreditUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets appCreditUv
-     *
-     * @return int
-     */
-    public function getAppCreditUv()
-    {
-        return $this->container['appCreditUv'];
-    }
-
-    /**
-     * Sets appCreditUv
-     *
-     * @param int $appCreditUv appCreditUv
-     *
-     * @return $this
-     */
-    public function setAppCreditUv($appCreditUv)
-    {
-        $this->container['appCreditUv'] = $appCreditUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets appWithdrawUv
-     *
-     * @return int
-     */
-    public function getAppWithdrawUv()
-    {
-        return $this->container['appWithdrawUv'];
-    }
-
-    /**
-     * Sets appWithdrawUv
-     *
-     * @param int $appWithdrawUv appWithdrawUv
-     *
-     * @return $this
-     */
-    public function setAppWithdrawUv($appWithdrawUv)
-    {
-        $this->container['appWithdrawUv'] = $appWithdrawUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatAppRegisterUv
-     *
-     * @return int
-     */
-    public function getWechatAppRegisterUv()
-    {
-        return $this->container['wechatAppRegisterUv'];
-    }
-
-    /**
-     * Sets wechatAppRegisterUv
-     *
-     * @param int $wechatAppRegisterUv wechatAppRegisterUv
-     *
-     * @return $this
-     */
-    public function setWechatAppRegisterUv($wechatAppRegisterUv)
-    {
-        $this->container['wechatAppRegisterUv'] = $wechatAppRegisterUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets noInterestCount
-     *
-     * @return int
-     */
-    public function getNoInterestCount()
-    {
-        return $this->container['noInterestCount'];
-    }
-
-    /**
-     * Sets noInterestCount
-     *
-     * @param int $noInterestCount noInterestCount
-     *
-     * @return $this
-     */
-    public function setNoInterestCount($noInterestCount)
-    {
-        $this->container['noInterestCount'] = $noInterestCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets firstDayOrderCount
-     *
-     * @return int
-     */
-    public function getFirstDayOrderCount()
-    {
-        return $this->container['firstDayOrderCount'];
-    }
-
-    /**
-     * Sets firstDayOrderCount
-     *
-     * @param int $firstDayOrderCount firstDayOrderCount
-     *
-     * @return $this
-     */
-    public function setFirstDayOrderCount($firstDayOrderCount)
-    {
-        $this->container['firstDayOrderCount'] = $firstDayOrderCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets firstDayOrderAmount
-     *
-     * @return int
-     */
-    public function getFirstDayOrderAmount()
-    {
-        return $this->container['firstDayOrderAmount'];
-    }
-
-    /**
-     * Sets firstDayOrderAmount
-     *
-     * @param int $firstDayOrderAmount firstDayOrderAmount
-     *
-     * @return $this
-     */
-    public function setFirstDayOrderAmount($firstDayOrderAmount)
-    {
-        $this->container['firstDayOrderAmount'] = $firstDayOrderAmount;
-
-        return $this;
-    }
-
-    /**
-     * Gets addWishlistCount
-     *
-     * @return int
-     */
-    public function getAddWishlistCount()
-    {
-        return $this->container['addWishlistCount'];
-    }
-
-    /**
-     * Sets addWishlistCount
-     *
-     * @param int $addWishlistCount addWishlistCount
-     *
-     * @return $this
-     */
-    public function setAddWishlistCount($addWishlistCount)
-    {
-        $this->container['addWishlistCount'] = $addWishlistCount;
 
         return $this;
     }

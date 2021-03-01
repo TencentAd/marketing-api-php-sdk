@@ -1,6 +1,6 @@
 <?php
 /**
- * BidMode
+ * GrantAllType
  *
  * PHP version 5
  *
@@ -31,24 +31,21 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * BidMode Class Doc Comment
+ * GrantAllType Class Doc Comment
  *
  * @category Class
- * @description 出价方式，&lt;br/&gt;        优化目标查询接口需传输出价方式才可获取是否支持“点击”优化目标，&lt;br/&gt;        “点击”优化目标仅支持BID_MODE_OCPM出价方式。
+ * @description 资产授权维度
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class BidMode
+class GrantAllType
 {
     /**
      * Possible values of this enum
      */
-    const CPC = 'BID_MODE_CPC';
-    const CPA = 'BID_MODE_CPA';
-    const CPM = 'BID_MODE_CPM';
-    const OCPC = 'BID_MODE_OCPC';
-    const OCPM = 'BID_MODE_OCPM';
+    const YES = 'GRANT_ALL_YES';
+    const NO = 'GRANT_ALL_NO';
     
     /**
      * Gets allowable values of the enum
@@ -57,11 +54,8 @@ class BidMode
     public static function getAllowableEnumValues()
     {
         return [
-            self::CPC,
-            self::CPA,
-            self::CPM,
-            self::OCPC,
-            self::OCPM,
+            self::YES,
+            self::NO,
         ];
     }
 }

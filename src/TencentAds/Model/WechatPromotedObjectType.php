@@ -51,6 +51,7 @@ class WechatPromotedObjectType
     const LOCAL_ADS_WECHAT = 'PROMOTED_OBJECT_TYPE_LOCAL_ADS_WECHAT';
     const LEAD_AD = 'PROMOTED_OBJECT_TYPE_LEAD_AD';
     const MINI_GAME_WECHAT = 'PROMOTED_OBJECT_TYPE_MINI_GAME_WECHAT';
+    const MINI_PROGRAM_WECHAT = 'PROMOTED_OBJECT_TYPE_MINI_PROGRAM_WECHAT';
     
     /**
      * Gets allowable values of the enum
@@ -66,6 +67,7 @@ class WechatPromotedObjectType
             self::LOCAL_ADS_WECHAT,
             self::LEAD_AD,
             self::MINI_GAME_WECHAT,
+            self::MINI_PROGRAM_WECHAT,
         ];
     }
 }
