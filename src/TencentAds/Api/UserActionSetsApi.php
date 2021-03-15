@@ -377,15 +377,19 @@ class UserActionSetsApi
      * @param  int $accountId accountId (required)
      * @param  int $userActionSetId userActionSetId (optional)
      * @param  string[] $type type (optional)
+     * @param  int $mobileAppId mobileAppId (optional)
+     * @param  string $wechatAppId wechatAppId (optional)
+     * @param  string $name name (optional)
+     * @param  bool $includePermission includePermission (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\UserActionSetsGetResponse
      */
-    public function userActionSetsGet($accountId, $userActionSetId = null, $type = null, $fields = null)
+    public function userActionSetsGet($accountId, $userActionSetId = null, $type = null, $mobileAppId = null, $wechatAppId = null, $name = null, $includePermission = null, $fields = null)
     {
-        list($response) = $this->userActionSetsGetWithHttpInfo($accountId, $userActionSetId, $type, $fields);
+        list($response) = $this->userActionSetsGetWithHttpInfo($accountId, $userActionSetId, $type, $mobileAppId, $wechatAppId, $name, $includePermission, $fields);
         return $response;
     }
 
@@ -397,16 +401,20 @@ class UserActionSetsApi
      * @param  int $accountId (required)
      * @param  int $userActionSetId (optional)
      * @param  string[] $type (optional)
+     * @param  int $mobileAppId (optional)
+     * @param  string $wechatAppId (optional)
+     * @param  string $name (optional)
+     * @param  bool $includePermission (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\UserActionSetsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function userActionSetsGetWithHttpInfo($accountId, $userActionSetId = null, $type = null, $fields = null)
+    public function userActionSetsGetWithHttpInfo($accountId, $userActionSetId = null, $type = null, $mobileAppId = null, $wechatAppId = null, $name = null, $includePermission = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\UserActionSetsGetResponse';
-        $request = $this->userActionSetsGetRequest($accountId, $userActionSetId, $type, $fields);
+        $request = $this->userActionSetsGetRequest($accountId, $userActionSetId, $type, $mobileAppId, $wechatAppId, $name, $includePermission, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -475,14 +483,18 @@ class UserActionSetsApi
      * @param  int $accountId (required)
      * @param  int $userActionSetId (optional)
      * @param  string[] $type (optional)
+     * @param  int $mobileAppId (optional)
+     * @param  string $wechatAppId (optional)
+     * @param  string $name (optional)
+     * @param  bool $includePermission (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function userActionSetsGetAsync($accountId, $userActionSetId = null, $type = null, $fields = null)
+    public function userActionSetsGetAsync($accountId, $userActionSetId = null, $type = null, $mobileAppId = null, $wechatAppId = null, $name = null, $includePermission = null, $fields = null)
     {
-        return $this->userActionSetsGetAsyncWithHttpInfo($accountId, $userActionSetId, $type, $fields)
+        return $this->userActionSetsGetAsyncWithHttpInfo($accountId, $userActionSetId, $type, $mobileAppId, $wechatAppId, $name, $includePermission, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -498,15 +510,19 @@ class UserActionSetsApi
      * @param  int $accountId (required)
      * @param  int $userActionSetId (optional)
      * @param  string[] $type (optional)
+     * @param  int $mobileAppId (optional)
+     * @param  string $wechatAppId (optional)
+     * @param  string $name (optional)
+     * @param  bool $includePermission (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function userActionSetsGetAsyncWithHttpInfo($accountId, $userActionSetId = null, $type = null, $fields = null)
+    public function userActionSetsGetAsyncWithHttpInfo($accountId, $userActionSetId = null, $type = null, $mobileAppId = null, $wechatAppId = null, $name = null, $includePermission = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\UserActionSetsGetResponse';
-        $request = $this->userActionSetsGetRequest($accountId, $userActionSetId, $type, $fields);
+        $request = $this->userActionSetsGetRequest($accountId, $userActionSetId, $type, $mobileAppId, $wechatAppId, $name, $includePermission, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -551,12 +567,16 @@ class UserActionSetsApi
      * @param  int $accountId (required)
      * @param  int $userActionSetId (optional)
      * @param  string[] $type (optional)
+     * @param  int $mobileAppId (optional)
+     * @param  string $wechatAppId (optional)
+     * @param  string $name (optional)
+     * @param  bool $includePermission (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function userActionSetsGetRequest($accountId, $userActionSetId = null, $type = null, $fields = null)
+    protected function userActionSetsGetRequest($accountId, $userActionSetId = null, $type = null, $mobileAppId = null, $wechatAppId = null, $name = null, $includePermission = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -586,6 +606,22 @@ class UserActionSetsApi
         } else
         if ($type !== null) {
             $queryParams['type'] = ObjectSerializer::toQueryValue($type);
+        }
+        // query params
+        if ($mobileAppId !== null) {
+            $queryParams['mobile_app_id'] = ObjectSerializer::toQueryValue($mobileAppId);
+        }
+        // query params
+        if ($wechatAppId !== null) {
+            $queryParams['wechat_app_id'] = ObjectSerializer::toQueryValue($wechatAppId);
+        }
+        // query params
+        if ($name !== null) {
+            $queryParams['name'] = ObjectSerializer::toQueryValue($name);
+        }
+        // query params
+        if ($includePermission !== null) {
+            $queryParams['include_permission'] = ObjectSerializer::toQueryValue($includePermission);
         }
         // query params
         if (is_array($fields)) {

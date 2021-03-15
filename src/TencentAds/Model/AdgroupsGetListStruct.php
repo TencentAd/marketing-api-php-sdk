@@ -112,7 +112,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoAcquisitionEnabled' => 'bool',
         'autoAcquisitionBudget' => 'int',
         'creativeDisplayType' => '\TencentAds\Model\CreativeDisplayType',
-        'autoDerivedCreativeEnabled' => 'bool'
+        'autoDerivedCreativeEnabled' => 'bool',
+        'smartBidType' => '\TencentAds\Model\SmartBidType',
+        'smartCostCap' => 'int'
     ];
 
     /**
@@ -175,7 +177,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoAcquisitionEnabled' => null,
         'autoAcquisitionBudget' => 'int64',
         'creativeDisplayType' => null,
-        'autoDerivedCreativeEnabled' => null
+        'autoDerivedCreativeEnabled' => null,
+        'smartBidType' => null,
+        'smartCostCap' => 'int64'
     ];
 
     /**
@@ -259,7 +263,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoAcquisitionEnabled' => 'auto_acquisition_enabled',
         'autoAcquisitionBudget' => 'auto_acquisition_budget',
         'creativeDisplayType' => 'creative_display_type',
-        'autoDerivedCreativeEnabled' => 'auto_derived_creative_enabled'
+        'autoDerivedCreativeEnabled' => 'auto_derived_creative_enabled',
+        'smartBidType' => 'smart_bid_type',
+        'smartCostCap' => 'smart_cost_cap'
     ];
 
     /**
@@ -322,7 +328,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoAcquisitionEnabled' => 'setAutoAcquisitionEnabled',
         'autoAcquisitionBudget' => 'setAutoAcquisitionBudget',
         'creativeDisplayType' => 'setCreativeDisplayType',
-        'autoDerivedCreativeEnabled' => 'setAutoDerivedCreativeEnabled'
+        'autoDerivedCreativeEnabled' => 'setAutoDerivedCreativeEnabled',
+        'smartBidType' => 'setSmartBidType',
+        'smartCostCap' => 'setSmartCostCap'
     ];
 
     /**
@@ -385,7 +393,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoAcquisitionEnabled' => 'getAutoAcquisitionEnabled',
         'autoAcquisitionBudget' => 'getAutoAcquisitionBudget',
         'creativeDisplayType' => 'getCreativeDisplayType',
-        'autoDerivedCreativeEnabled' => 'getAutoDerivedCreativeEnabled'
+        'autoDerivedCreativeEnabled' => 'getAutoDerivedCreativeEnabled',
+        'smartBidType' => 'getSmartBidType',
+        'smartCostCap' => 'getSmartCostCap'
     ];
 
     /**
@@ -503,6 +513,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['autoAcquisitionBudget'] = isset($data['autoAcquisitionBudget']) ? $data['autoAcquisitionBudget'] : null;
         $this->container['creativeDisplayType'] = isset($data['creativeDisplayType']) ? $data['creativeDisplayType'] : null;
         $this->container['autoDerivedCreativeEnabled'] = isset($data['autoDerivedCreativeEnabled']) ? $data['autoDerivedCreativeEnabled'] : null;
+        $this->container['smartBidType'] = isset($data['smartBidType']) ? $data['smartBidType'] : null;
+        $this->container['smartCostCap'] = isset($data['smartCostCap']) ? $data['smartCostCap'] : null;
     }
 
     /**
@@ -1845,6 +1857,54 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setAutoDerivedCreativeEnabled($autoDerivedCreativeEnabled)
     {
         $this->container['autoDerivedCreativeEnabled'] = $autoDerivedCreativeEnabled;
+
+        return $this;
+    }
+
+    /**
+     * Gets smartBidType
+     *
+     * @return \TencentAds\Model\SmartBidType
+     */
+    public function getSmartBidType()
+    {
+        return $this->container['smartBidType'];
+    }
+
+    /**
+     * Sets smartBidType
+     *
+     * @param \TencentAds\Model\SmartBidType $smartBidType smartBidType
+     *
+     * @return $this
+     */
+    public function setSmartBidType($smartBidType)
+    {
+        $this->container['smartBidType'] = $smartBidType;
+
+        return $this;
+    }
+
+    /**
+     * Gets smartCostCap
+     *
+     * @return int
+     */
+    public function getSmartCostCap()
+    {
+        return $this->container['smartCostCap'];
+    }
+
+    /**
+     * Sets smartCostCap
+     *
+     * @param int $smartCostCap smartCostCap
+     *
+     * @return $this
+     */
+    public function setSmartCostCap($smartCostCap)
+    {
+        $this->container['smartCostCap'] = $smartCostCap;
 
         return $this;
     }

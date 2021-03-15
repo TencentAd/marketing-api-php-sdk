@@ -75,8 +75,12 @@ class UserActionSetsApiContainer extends ApiContainer
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $userActionSetId = isset($params['user_action_set_id']) ? $params['user_action_set_id'] : null;
             $type = isset($params['type']) ? $params['type'] : null;
+            $mobileAppId = isset($params['mobile_app_id']) ? $params['mobile_app_id'] : null;
+            $wechatAppId = isset($params['wechat_app_id']) ? $params['wechat_app_id'] : null;
+            $name = isset($params['name']) ? $params['name'] : null;
+            $includePermission = isset($params['include_permission']) ? $params['include_permission'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->userActionSetsGet($accountId, $userActionSetId, $type, $fields);
+            $response = $this->apiInstance->userActionSetsGet($accountId, $userActionSetId, $type, $mobileAppId, $wechatAppId, $name, $includePermission, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -94,8 +98,12 @@ class UserActionSetsApiContainer extends ApiContainer
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $userActionSetId = isset($params['user_action_set_id']) ? $params['user_action_set_id'] : null;
             $type = isset($params['type']) ? $params['type'] : null;
+            $mobileAppId = isset($params['mobile_app_id']) ? $params['mobile_app_id'] : null;
+            $wechatAppId = isset($params['wechat_app_id']) ? $params['wechat_app_id'] : null;
+            $name = isset($params['name']) ? $params['name'] : null;
+            $includePermission = isset($params['include_permission']) ? $params['include_permission'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->userActionSetsGetAsync($accountId, $userActionSetId, $type, $fields);
+            $response = $this->apiInstance->userActionSetsGetAsync($accountId, $userActionSetId, $type, $mobileAppId, $wechatAppId, $name, $includePermission, $fields);
             return $response;
         });
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * WechatFundStatementsDetailedApi
+ * WechatPagesGrantinfoApi
  * PHP version 5
  *
  * @category Class
@@ -40,14 +40,14 @@ use TencentAds\HeaderSelector;
 use TencentAds\ObjectSerializer;
 
 /**
- * WechatFundStatementsDetailedApi Class Doc Comment
+ * WechatPagesGrantinfoApi Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class WechatFundStatementsDetailedApi
+class WechatPagesGrantinfoApi
 {
     /**
      * @var ClientInterface
@@ -88,47 +88,45 @@ class WechatFundStatementsDetailedApi
     }
 
     /**
-     * Operation wechatFundStatementsDetailedGet
+     * Operation wechatPagesGrantinfoGet
      *
-     * 获取微信资金账户流水信息
+     * 获取原生页授权方信息
      *
-     * @param  string $tradeType tradeType (required)
-     * @param  \TencentAds\Model\ReportDateRange $dateRange dateRange (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
+     * @param  int $accountId accountId (required)
+     * @param  string $searchKey searchKey (optional)
      * @param  int $page page (optional)
      * @param  int $pageSize pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\WechatFundStatementsDetailedGetResponse
+     * @return \TencentAds\Model\WechatPagesGrantinfoGetResponse
      */
-    public function wechatFundStatementsDetailedGet($tradeType, $dateRange, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function wechatPagesGrantinfoGet($accountId, $searchKey = null, $page = null, $pageSize = null, $fields = null)
     {
-        list($response) = $this->wechatFundStatementsDetailedGetWithHttpInfo($tradeType, $dateRange, $filtering, $page, $pageSize, $fields);
+        list($response) = $this->wechatPagesGrantinfoGetWithHttpInfo($accountId, $searchKey, $page, $pageSize, $fields);
         return $response;
     }
 
     /**
-     * Operation wechatFundStatementsDetailedGetWithHttpInfo
+     * Operation wechatPagesGrantinfoGetWithHttpInfo
      *
-     * 获取微信资金账户流水信息
+     * 获取原生页授权方信息
      *
-     * @param  string $tradeType (required)
-     * @param  \TencentAds\Model\ReportDateRange $dateRange (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
+     * @param  int $accountId (required)
+     * @param  string $searchKey (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \TencentAds\Model\WechatFundStatementsDetailedGetResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TencentAds\Model\WechatPagesGrantinfoGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function wechatFundStatementsDetailedGetWithHttpInfo($tradeType, $dateRange, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function wechatPagesGrantinfoGetWithHttpInfo($accountId, $searchKey = null, $page = null, $pageSize = null, $fields = null)
     {
-        $returnType = '\TencentAds\Model\WechatFundStatementsDetailedGetResponse';
-        $request = $this->wechatFundStatementsDetailedGetRequest($tradeType, $dateRange, $filtering, $page, $pageSize, $fields);
+        $returnType = '\TencentAds\Model\WechatPagesGrantinfoGetResponse';
+        $request = $this->wechatPagesGrantinfoGetRequest($accountId, $searchKey, $page, $pageSize, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -179,7 +177,7 @@ class WechatFundStatementsDetailedApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\TencentAds\Model\WechatFundStatementsDetailedGetResponse',
+                        '\TencentAds\Model\WechatPagesGrantinfoGetResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -190,13 +188,12 @@ class WechatFundStatementsDetailedApi
     }
 
     /**
-     * Operation wechatFundStatementsDetailedGetAsync
+     * Operation wechatPagesGrantinfoGetAsync
      *
-     * 获取微信资金账户流水信息
+     * 获取原生页授权方信息
      *
-     * @param  string $tradeType (required)
-     * @param  \TencentAds\Model\ReportDateRange $dateRange (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
+     * @param  int $accountId (required)
+     * @param  string $searchKey (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
@@ -204,9 +201,9 @@ class WechatFundStatementsDetailedApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function wechatFundStatementsDetailedGetAsync($tradeType, $dateRange, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function wechatPagesGrantinfoGetAsync($accountId, $searchKey = null, $page = null, $pageSize = null, $fields = null)
     {
-        return $this->wechatFundStatementsDetailedGetAsyncWithHttpInfo($tradeType, $dateRange, $filtering, $page, $pageSize, $fields)
+        return $this->wechatPagesGrantinfoGetAsyncWithHttpInfo($accountId, $searchKey, $page, $pageSize, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -215,13 +212,12 @@ class WechatFundStatementsDetailedApi
     }
 
     /**
-     * Operation wechatFundStatementsDetailedGetAsyncWithHttpInfo
+     * Operation wechatPagesGrantinfoGetAsyncWithHttpInfo
      *
-     * 获取微信资金账户流水信息
+     * 获取原生页授权方信息
      *
-     * @param  string $tradeType (required)
-     * @param  \TencentAds\Model\ReportDateRange $dateRange (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
+     * @param  int $accountId (required)
+     * @param  string $searchKey (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
@@ -229,10 +225,10 @@ class WechatFundStatementsDetailedApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function wechatFundStatementsDetailedGetAsyncWithHttpInfo($tradeType, $dateRange, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function wechatPagesGrantinfoGetAsyncWithHttpInfo($accountId, $searchKey = null, $page = null, $pageSize = null, $fields = null)
     {
-        $returnType = '\TencentAds\Model\WechatFundStatementsDetailedGetResponse';
-        $request = $this->wechatFundStatementsDetailedGetRequest($tradeType, $dateRange, $filtering, $page, $pageSize, $fields);
+        $returnType = '\TencentAds\Model\WechatPagesGrantinfoGetResponse';
+        $request = $this->wechatPagesGrantinfoGetRequest($accountId, $searchKey, $page, $pageSize, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -272,11 +268,10 @@ class WechatFundStatementsDetailedApi
     }
 
     /**
-     * Create request for operation 'wechatFundStatementsDetailedGet'
+     * Create request for operation 'wechatPagesGrantinfoGet'
      *
-     * @param  string $tradeType (required)
-     * @param  \TencentAds\Model\ReportDateRange $dateRange (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
+     * @param  int $accountId (required)
+     * @param  string $searchKey (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
@@ -284,22 +279,16 @@ class WechatFundStatementsDetailedApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function wechatFundStatementsDetailedGetRequest($tradeType, $dateRange, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    protected function wechatPagesGrantinfoGetRequest($accountId, $searchKey = null, $page = null, $pageSize = null, $fields = null)
     {
-        // verify the required parameter 'tradeType' is set
-        if ($tradeType === null || (is_array($tradeType) && count($tradeType) === 0)) {
+        // verify the required parameter 'accountId' is set
+        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $tradeType when calling wechatFundStatementsDetailedGet'
-            );
-        }
-        // verify the required parameter 'dateRange' is set
-        if ($dateRange === null || (is_array($dateRange) && count($dateRange) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $dateRange when calling wechatFundStatementsDetailedGet'
+                'Missing the required parameter $accountId when calling wechatPagesGrantinfoGet'
             );
         }
 
-        $resourcePath = '/wechat_fund_statements_detailed/get';
+        $resourcePath = '/wechat_pages_grantinfo/get';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -307,19 +296,12 @@ class WechatFundStatementsDetailedApi
         $multipart = false;
 
         // query params
-        if ($tradeType !== null) {
-            $queryParams['trade_type'] = ObjectSerializer::toQueryValue($tradeType);
+        if ($accountId !== null) {
+            $queryParams['account_id'] = ObjectSerializer::toQueryValue($accountId);
         }
         // query params
-        if ($dateRange !== null) {
-            $queryParams['date_range'] = ObjectSerializer::toQueryValue($dateRange);
-        }
-        // query params
-        if (is_array($filtering)) {
-            $queryParams['filtering'] = $filtering;
-        } else
-        if ($filtering !== null) {
-            $queryParams['filtering'] = ObjectSerializer::toQueryValue($filtering);
+        if ($searchKey !== null) {
+            $queryParams['search_key'] = ObjectSerializer::toQueryValue($searchKey);
         }
         // query params
         if ($page !== null) {

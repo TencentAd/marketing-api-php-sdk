@@ -1,6 +1,6 @@
 <?php
 /**
- * UserActionSet
+ * UpdateAdgroupAutoAcquisitionItem
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * UserActionSet Class Doc Comment
+ * UpdateAdgroupAutoAcquisitionItem Class Doc Comment
  *
  * @category Class
- * @description UserActionSet返回结构
+ * @description 修改广告组一键起量
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class UserActionSet implements ModelInterface, ArrayAccess
+class UpdateAdgroupAutoAcquisitionItem implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'user_action_set';
+    protected static $swaggerModelName = 'update_adgroup_auto_acquisition_item';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,14 +58,9 @@ class UserActionSet implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'userActionSetId' => 'int',
-        'type' => '\TencentAds\Model\AmUserActionSetType',
-        'mobileAppId' => 'int',
-        'name' => 'string',
-        'description' => 'string',
-        'activateStatus' => 'bool',
-        'createdTime' => 'string',
-        'accessWay' => '\TencentAds\Model\ActionSetAccessWayType'
+        'adgroupId' => 'int',
+        'autoAcquisitionEnabled' => 'bool',
+        'autoAcquisitionBudget' => 'int'
     ];
 
     /**
@@ -74,14 +69,9 @@ class UserActionSet implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'userActionSetId' => 'int64',
-        'type' => null,
-        'mobileAppId' => 'int64',
-        'name' => null,
-        'description' => null,
-        'activateStatus' => null,
-        'createdTime' => null,
-        'accessWay' => null
+        'adgroupId' => 'int64',
+        'autoAcquisitionEnabled' => null,
+        'autoAcquisitionBudget' => 'int64'
     ];
 
     /**
@@ -111,14 +101,9 @@ class UserActionSet implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'userActionSetId' => 'user_action_set_id',
-        'type' => 'type',
-        'mobileAppId' => 'mobile_app_id',
-        'name' => 'name',
-        'description' => 'description',
-        'activateStatus' => 'activate_status',
-        'createdTime' => 'created_time',
-        'accessWay' => 'access_way'
+        'adgroupId' => 'adgroup_id',
+        'autoAcquisitionEnabled' => 'auto_acquisition_enabled',
+        'autoAcquisitionBudget' => 'auto_acquisition_budget'
     ];
 
     /**
@@ -127,14 +112,9 @@ class UserActionSet implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'userActionSetId' => 'setUserActionSetId',
-        'type' => 'setType',
-        'mobileAppId' => 'setMobileAppId',
-        'name' => 'setName',
-        'description' => 'setDescription',
-        'activateStatus' => 'setActivateStatus',
-        'createdTime' => 'setCreatedTime',
-        'accessWay' => 'setAccessWay'
+        'adgroupId' => 'setAdgroupId',
+        'autoAcquisitionEnabled' => 'setAutoAcquisitionEnabled',
+        'autoAcquisitionBudget' => 'setAutoAcquisitionBudget'
     ];
 
     /**
@@ -143,14 +123,9 @@ class UserActionSet implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'userActionSetId' => 'getUserActionSetId',
-        'type' => 'getType',
-        'mobileAppId' => 'getMobileAppId',
-        'name' => 'getName',
-        'description' => 'getDescription',
-        'activateStatus' => 'getActivateStatus',
-        'createdTime' => 'getCreatedTime',
-        'accessWay' => 'getAccessWay'
+        'adgroupId' => 'getAdgroupId',
+        'autoAcquisitionEnabled' => 'getAutoAcquisitionEnabled',
+        'autoAcquisitionBudget' => 'getAutoAcquisitionBudget'
     ];
 
     /**
@@ -213,14 +188,9 @@ class UserActionSet implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['userActionSetId'] = isset($data['userActionSetId']) ? $data['userActionSetId'] : null;
-        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['mobileAppId'] = isset($data['mobileAppId']) ? $data['mobileAppId'] : null;
-        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
-        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
-        $this->container['activateStatus'] = isset($data['activateStatus']) ? $data['activateStatus'] : null;
-        $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
-        $this->container['accessWay'] = isset($data['accessWay']) ? $data['accessWay'] : null;
+        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
+        $this->container['autoAcquisitionEnabled'] = isset($data['autoAcquisitionEnabled']) ? $data['autoAcquisitionEnabled'] : null;
+        $this->container['autoAcquisitionBudget'] = isset($data['autoAcquisitionBudget']) ? $data['autoAcquisitionBudget'] : null;
     }
 
     /**
@@ -248,193 +218,73 @@ class UserActionSet implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets userActionSetId
+     * Gets adgroupId
      *
      * @return int
      */
-    public function getUserActionSetId()
+    public function getAdgroupId()
     {
-        return $this->container['userActionSetId'];
+        return $this->container['adgroupId'];
     }
 
     /**
-     * Sets userActionSetId
+     * Sets adgroupId
      *
-     * @param int $userActionSetId userActionSetId
+     * @param int $adgroupId adgroupId
      *
      * @return $this
      */
-    public function setUserActionSetId($userActionSetId)
+    public function setAdgroupId($adgroupId)
     {
-        $this->container['userActionSetId'] = $userActionSetId;
+        $this->container['adgroupId'] = $adgroupId;
 
         return $this;
     }
 
     /**
-     * Gets type
-     *
-     * @return \TencentAds\Model\AmUserActionSetType
-     */
-    public function getType()
-    {
-        return $this->container['type'];
-    }
-
-    /**
-     * Sets type
-     *
-     * @param \TencentAds\Model\AmUserActionSetType $type type
-     *
-     * @return $this
-     */
-    public function setType($type)
-    {
-        $this->container['type'] = $type;
-
-        return $this;
-    }
-
-    /**
-     * Gets mobileAppId
-     *
-     * @return int
-     */
-    public function getMobileAppId()
-    {
-        return $this->container['mobileAppId'];
-    }
-
-    /**
-     * Sets mobileAppId
-     *
-     * @param int $mobileAppId mobileAppId
-     *
-     * @return $this
-     */
-    public function setMobileAppId($mobileAppId)
-    {
-        $this->container['mobileAppId'] = $mobileAppId;
-
-        return $this;
-    }
-
-    /**
-     * Gets name
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return $this->container['name'];
-    }
-
-    /**
-     * Sets name
-     *
-     * @param string $name name
-     *
-     * @return $this
-     */
-    public function setName($name)
-    {
-        $this->container['name'] = $name;
-
-        return $this;
-    }
-
-    /**
-     * Gets description
-     *
-     * @return string
-     */
-    public function getDescription()
-    {
-        return $this->container['description'];
-    }
-
-    /**
-     * Sets description
-     *
-     * @param string $description description
-     *
-     * @return $this
-     */
-    public function setDescription($description)
-    {
-        $this->container['description'] = $description;
-
-        return $this;
-    }
-
-    /**
-     * Gets activateStatus
+     * Gets autoAcquisitionEnabled
      *
      * @return bool
      */
-    public function getActivateStatus()
+    public function getAutoAcquisitionEnabled()
     {
-        return $this->container['activateStatus'];
+        return $this->container['autoAcquisitionEnabled'];
     }
 
     /**
-     * Sets activateStatus
+     * Sets autoAcquisitionEnabled
      *
-     * @param bool $activateStatus activateStatus
+     * @param bool $autoAcquisitionEnabled autoAcquisitionEnabled
      *
      * @return $this
      */
-    public function setActivateStatus($activateStatus)
+    public function setAutoAcquisitionEnabled($autoAcquisitionEnabled)
     {
-        $this->container['activateStatus'] = $activateStatus;
+        $this->container['autoAcquisitionEnabled'] = $autoAcquisitionEnabled;
 
         return $this;
     }
 
     /**
-     * Gets createdTime
+     * Gets autoAcquisitionBudget
      *
-     * @return string
+     * @return int
      */
-    public function getCreatedTime()
+    public function getAutoAcquisitionBudget()
     {
-        return $this->container['createdTime'];
+        return $this->container['autoAcquisitionBudget'];
     }
 
     /**
-     * Sets createdTime
+     * Sets autoAcquisitionBudget
      *
-     * @param string $createdTime createdTime
+     * @param int $autoAcquisitionBudget autoAcquisitionBudget
      *
      * @return $this
      */
-    public function setCreatedTime($createdTime)
+    public function setAutoAcquisitionBudget($autoAcquisitionBudget)
     {
-        $this->container['createdTime'] = $createdTime;
-
-        return $this;
-    }
-
-    /**
-     * Gets accessWay
-     *
-     * @return \TencentAds\Model\ActionSetAccessWayType
-     */
-    public function getAccessWay()
-    {
-        return $this->container['accessWay'];
-    }
-
-    /**
-     * Sets accessWay
-     *
-     * @param \TencentAds\Model\ActionSetAccessWayType $accessWay accessWay
-     *
-     * @return $this
-     */
-    public function setAccessWay($accessWay)
-    {
-        $this->container['accessWay'] = $accessWay;
+        $this->container['autoAcquisitionBudget'] = $autoAcquisitionBudget;
 
         return $this;
     }

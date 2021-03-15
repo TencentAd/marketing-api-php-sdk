@@ -657,6 +657,7 @@ class WechatPagesApi
      * 获取微信落地页列表
      *
      * @param  int $accountId accountId (required)
+     * @param  int $ownerUid ownerUid (optional)
      * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
      * @param  int $page page (optional)
      * @param  int $pageSize pageSize (optional)
@@ -666,9 +667,9 @@ class WechatPagesApi
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\WechatPagesGetResponse
      */
-    public function wechatPagesGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function wechatPagesGet($accountId, $ownerUid = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
-        list($response) = $this->wechatPagesGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $fields);
+        list($response) = $this->wechatPagesGetWithHttpInfo($accountId, $ownerUid, $filtering, $page, $pageSize, $fields);
         return $response;
     }
 
@@ -678,6 +679,7 @@ class WechatPagesApi
      * 获取微信落地页列表
      *
      * @param  int $accountId (required)
+     * @param  int $ownerUid (optional)
      * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
@@ -687,10 +689,10 @@ class WechatPagesApi
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\WechatPagesGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function wechatPagesGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function wechatPagesGetWithHttpInfo($accountId, $ownerUid = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\WechatPagesGetResponse';
-        $request = $this->wechatPagesGetRequest($accountId, $filtering, $page, $pageSize, $fields);
+        $request = $this->wechatPagesGetRequest($accountId, $ownerUid, $filtering, $page, $pageSize, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -757,6 +759,7 @@ class WechatPagesApi
      * 获取微信落地页列表
      *
      * @param  int $accountId (required)
+     * @param  int $ownerUid (optional)
      * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
@@ -765,9 +768,9 @@ class WechatPagesApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function wechatPagesGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function wechatPagesGetAsync($accountId, $ownerUid = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
-        return $this->wechatPagesGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $fields)
+        return $this->wechatPagesGetAsyncWithHttpInfo($accountId, $ownerUid, $filtering, $page, $pageSize, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -781,6 +784,7 @@ class WechatPagesApi
      * 获取微信落地页列表
      *
      * @param  int $accountId (required)
+     * @param  int $ownerUid (optional)
      * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
@@ -789,10 +793,10 @@ class WechatPagesApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function wechatPagesGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function wechatPagesGetAsyncWithHttpInfo($accountId, $ownerUid = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\WechatPagesGetResponse';
-        $request = $this->wechatPagesGetRequest($accountId, $filtering, $page, $pageSize, $fields);
+        $request = $this->wechatPagesGetRequest($accountId, $ownerUid, $filtering, $page, $pageSize, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -835,6 +839,7 @@ class WechatPagesApi
      * Create request for operation 'wechatPagesGet'
      *
      * @param  int $accountId (required)
+     * @param  int $ownerUid (optional)
      * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
@@ -843,7 +848,7 @@ class WechatPagesApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function wechatPagesGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    protected function wechatPagesGetRequest($accountId, $ownerUid = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -862,6 +867,10 @@ class WechatPagesApi
         // query params
         if ($accountId !== null) {
             $queryParams['account_id'] = ObjectSerializer::toQueryValue($accountId);
+        }
+        // query params
+        if ($ownerUid !== null) {
+            $queryParams['owner_uid'] = ObjectSerializer::toQueryValue($ownerUid);
         }
         // query params
         if (is_array($filtering)) {

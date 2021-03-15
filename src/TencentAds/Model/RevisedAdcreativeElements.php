@@ -95,7 +95,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'fullScreenImage' => 'string',
         'zipUrl' => 'string',
         'endPage' => '\TencentAds\Model\AdCreativeEndPage',
-        'shopImage' => 'string'
+        'shopImage' => 'string',
+        'headLine' => 'string'
     ];
 
     /**
@@ -141,7 +142,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'fullScreenImage' => null,
         'zipUrl' => null,
         'endPage' => null,
-        'shopImage' => null
+        'shopImage' => null,
+        'headLine' => null
     ];
 
     /**
@@ -208,7 +210,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'fullScreenImage' => 'full_screen_image',
         'zipUrl' => 'zip_url',
         'endPage' => 'end_page',
-        'shopImage' => 'shop_image'
+        'shopImage' => 'shop_image',
+        'headLine' => 'head_line'
     ];
 
     /**
@@ -254,7 +257,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'fullScreenImage' => 'setFullScreenImage',
         'zipUrl' => 'setZipUrl',
         'endPage' => 'setEndPage',
-        'shopImage' => 'setShopImage'
+        'shopImage' => 'setShopImage',
+        'headLine' => 'setHeadLine'
     ];
 
     /**
@@ -300,7 +304,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'fullScreenImage' => 'getFullScreenImage',
         'zipUrl' => 'getZipUrl',
         'endPage' => 'getEndPage',
-        'shopImage' => 'getShopImage'
+        'shopImage' => 'getShopImage',
+        'headLine' => 'getHeadLine'
     ];
 
     /**
@@ -401,6 +406,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         $this->container['zipUrl'] = isset($data['zipUrl']) ? $data['zipUrl'] : null;
         $this->container['endPage'] = isset($data['endPage']) ? $data['endPage'] : null;
         $this->container['shopImage'] = isset($data['shopImage']) ? $data['shopImage'] : null;
+        $this->container['headLine'] = isset($data['headLine']) ? $data['headLine'] : null;
     }
 
     /**
@@ -1335,6 +1341,30 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     public function setShopImage($shopImage)
     {
         $this->container['shopImage'] = $shopImage;
+
+        return $this;
+    }
+
+    /**
+     * Gets headLine
+     *
+     * @return string
+     */
+    public function getHeadLine()
+    {
+        return $this->container['headLine'];
+    }
+
+    /**
+     * Sets headLine
+     *
+     * @param string $headLine headLine
+     *
+     * @return $this
+     */
+    public function setHeadLine($headLine)
+    {
+        $this->container['headLine'] = $headLine;
 
         return $this;
     }

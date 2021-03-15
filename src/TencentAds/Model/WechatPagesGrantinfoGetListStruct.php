@@ -1,6 +1,6 @@
 <?php
 /**
- * UserActionSet
+ * WechatPagesGrantinfoGetListStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * UserActionSet Class Doc Comment
+ * WechatPagesGrantinfoGetListStruct Class Doc Comment
  *
  * @category Class
- * @description UserActionSet返回结构
+ * @description 返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class UserActionSet implements ModelInterface, ArrayAccess
+class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'user_action_set';
+    protected static $swaggerModelName = 'WechatPagesGrantinfoGetListStruct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,14 +58,9 @@ class UserActionSet implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'userActionSetId' => 'int',
-        'type' => '\TencentAds\Model\AmUserActionSetType',
-        'mobileAppId' => 'int',
-        'name' => 'string',
-        'description' => 'string',
-        'activateStatus' => 'bool',
-        'createdTime' => 'string',
-        'accessWay' => '\TencentAds\Model\ActionSetAccessWayType'
+        'ownerAccountId' => 'int',
+        'ownerAccountName' => 'string',
+        'createdTime' => 'int'
     ];
 
     /**
@@ -74,14 +69,9 @@ class UserActionSet implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'userActionSetId' => 'int64',
-        'type' => null,
-        'mobileAppId' => 'int64',
-        'name' => null,
-        'description' => null,
-        'activateStatus' => null,
-        'createdTime' => null,
-        'accessWay' => null
+        'ownerAccountId' => 'int64',
+        'ownerAccountName' => null,
+        'createdTime' => 'int64'
     ];
 
     /**
@@ -111,14 +101,9 @@ class UserActionSet implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'userActionSetId' => 'user_action_set_id',
-        'type' => 'type',
-        'mobileAppId' => 'mobile_app_id',
-        'name' => 'name',
-        'description' => 'description',
-        'activateStatus' => 'activate_status',
-        'createdTime' => 'created_time',
-        'accessWay' => 'access_way'
+        'ownerAccountId' => 'owner_account_id',
+        'ownerAccountName' => 'owner_account_name',
+        'createdTime' => 'created_time'
     ];
 
     /**
@@ -127,14 +112,9 @@ class UserActionSet implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'userActionSetId' => 'setUserActionSetId',
-        'type' => 'setType',
-        'mobileAppId' => 'setMobileAppId',
-        'name' => 'setName',
-        'description' => 'setDescription',
-        'activateStatus' => 'setActivateStatus',
-        'createdTime' => 'setCreatedTime',
-        'accessWay' => 'setAccessWay'
+        'ownerAccountId' => 'setOwnerAccountId',
+        'ownerAccountName' => 'setOwnerAccountName',
+        'createdTime' => 'setCreatedTime'
     ];
 
     /**
@@ -143,14 +123,9 @@ class UserActionSet implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'userActionSetId' => 'getUserActionSetId',
-        'type' => 'getType',
-        'mobileAppId' => 'getMobileAppId',
-        'name' => 'getName',
-        'description' => 'getDescription',
-        'activateStatus' => 'getActivateStatus',
-        'createdTime' => 'getCreatedTime',
-        'accessWay' => 'getAccessWay'
+        'ownerAccountId' => 'getOwnerAccountId',
+        'ownerAccountName' => 'getOwnerAccountName',
+        'createdTime' => 'getCreatedTime'
     ];
 
     /**
@@ -213,14 +188,9 @@ class UserActionSet implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['userActionSetId'] = isset($data['userActionSetId']) ? $data['userActionSetId'] : null;
-        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['mobileAppId'] = isset($data['mobileAppId']) ? $data['mobileAppId'] : null;
-        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
-        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
-        $this->container['activateStatus'] = isset($data['activateStatus']) ? $data['activateStatus'] : null;
+        $this->container['ownerAccountId'] = isset($data['ownerAccountId']) ? $data['ownerAccountId'] : null;
+        $this->container['ownerAccountName'] = isset($data['ownerAccountName']) ? $data['ownerAccountName'] : null;
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
-        $this->container['accessWay'] = isset($data['accessWay']) ? $data['accessWay'] : null;
     }
 
     /**
@@ -248,145 +218,49 @@ class UserActionSet implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets userActionSetId
+     * Gets ownerAccountId
      *
      * @return int
      */
-    public function getUserActionSetId()
+    public function getOwnerAccountId()
     {
-        return $this->container['userActionSetId'];
+        return $this->container['ownerAccountId'];
     }
 
     /**
-     * Sets userActionSetId
+     * Sets ownerAccountId
      *
-     * @param int $userActionSetId userActionSetId
+     * @param int $ownerAccountId ownerAccountId
      *
      * @return $this
      */
-    public function setUserActionSetId($userActionSetId)
+    public function setOwnerAccountId($ownerAccountId)
     {
-        $this->container['userActionSetId'] = $userActionSetId;
+        $this->container['ownerAccountId'] = $ownerAccountId;
 
         return $this;
     }
 
     /**
-     * Gets type
-     *
-     * @return \TencentAds\Model\AmUserActionSetType
-     */
-    public function getType()
-    {
-        return $this->container['type'];
-    }
-
-    /**
-     * Sets type
-     *
-     * @param \TencentAds\Model\AmUserActionSetType $type type
-     *
-     * @return $this
-     */
-    public function setType($type)
-    {
-        $this->container['type'] = $type;
-
-        return $this;
-    }
-
-    /**
-     * Gets mobileAppId
-     *
-     * @return int
-     */
-    public function getMobileAppId()
-    {
-        return $this->container['mobileAppId'];
-    }
-
-    /**
-     * Sets mobileAppId
-     *
-     * @param int $mobileAppId mobileAppId
-     *
-     * @return $this
-     */
-    public function setMobileAppId($mobileAppId)
-    {
-        $this->container['mobileAppId'] = $mobileAppId;
-
-        return $this;
-    }
-
-    /**
-     * Gets name
+     * Gets ownerAccountName
      *
      * @return string
      */
-    public function getName()
+    public function getOwnerAccountName()
     {
-        return $this->container['name'];
+        return $this->container['ownerAccountName'];
     }
 
     /**
-     * Sets name
+     * Sets ownerAccountName
      *
-     * @param string $name name
+     * @param string $ownerAccountName ownerAccountName
      *
      * @return $this
      */
-    public function setName($name)
+    public function setOwnerAccountName($ownerAccountName)
     {
-        $this->container['name'] = $name;
-
-        return $this;
-    }
-
-    /**
-     * Gets description
-     *
-     * @return string
-     */
-    public function getDescription()
-    {
-        return $this->container['description'];
-    }
-
-    /**
-     * Sets description
-     *
-     * @param string $description description
-     *
-     * @return $this
-     */
-    public function setDescription($description)
-    {
-        $this->container['description'] = $description;
-
-        return $this;
-    }
-
-    /**
-     * Gets activateStatus
-     *
-     * @return bool
-     */
-    public function getActivateStatus()
-    {
-        return $this->container['activateStatus'];
-    }
-
-    /**
-     * Sets activateStatus
-     *
-     * @param bool $activateStatus activateStatus
-     *
-     * @return $this
-     */
-    public function setActivateStatus($activateStatus)
-    {
-        $this->container['activateStatus'] = $activateStatus;
+        $this->container['ownerAccountName'] = $ownerAccountName;
 
         return $this;
     }
@@ -394,7 +268,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return string
+     * @return int
      */
     public function getCreatedTime()
     {
@@ -404,37 +278,13 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param string $createdTime createdTime
+     * @param int $createdTime createdTime
      *
      * @return $this
      */
     public function setCreatedTime($createdTime)
     {
         $this->container['createdTime'] = $createdTime;
-
-        return $this;
-    }
-
-    /**
-     * Gets accessWay
-     *
-     * @return \TencentAds\Model\ActionSetAccessWayType
-     */
-    public function getAccessWay()
-    {
-        return $this->container['accessWay'];
-    }
-
-    /**
-     * Sets accessWay
-     *
-     * @param \TencentAds\Model\ActionSetAccessWayType $accessWay accessWay
-     *
-     * @return $this
-     */
-    public function setAccessWay($accessWay)
-    {
-        $this->container['accessWay'] = $accessWay;
 
         return $this;
     }

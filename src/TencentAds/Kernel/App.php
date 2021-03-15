@@ -126,6 +126,7 @@ use TencentAds\Container\WechatFundStatementsDetailedApiContainer;
 use TencentAds\Container\WechatFundTransferApiContainer;
 use TencentAds\Container\WechatFundsApiContainer;
 use TencentAds\Container\WechatPagesApiContainer;
+use TencentAds\Container\WechatPagesGrantinfoApiContainer;
 use TencentAds\Container\WechatQualificationsApiContainer;
 use TencentAds\Container\XijingPageApiContainer;
 use TencentAds\Container\XijingPageByComponentsApiContainer;
@@ -508,6 +509,9 @@ class App
 
     /** @var WechatPagesApiContainer */
     public $wechatPagesApiContainer;
+
+    /** @var WechatPagesGrantinfoApiContainer */
+    public $wechatPagesGrantinfoApiContainer;
 
     /** @var WechatQualificationsApiContainer */
     public $wechatQualificationsApiContainer;
@@ -2270,6 +2274,20 @@ class App
             $this->wechatPagesApiContainer = $container;
         }
         return $this->wechatPagesApiContainer;
+    }
+
+
+    /**
+     * @return WechatPagesGrantinfoApiContainer
+     */
+    public function wechatPagesGrantinfo()
+    {
+        if (empty($this->wechatPagesGrantinfoApiContainer)) {
+            $container = new WechatPagesGrantinfoApiContainer();
+            $container->init($this, $this->getClient());
+            $this->wechatPagesGrantinfoApiContainer = $container;
+        }
+        return $this->wechatPagesGrantinfoApiContainer;
     }
 
 

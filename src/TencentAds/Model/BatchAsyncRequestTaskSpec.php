@@ -75,7 +75,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateCampaignDailyBudgetSpec' => '\TencentAds\Model\UpdateCampaignDailyBudgetItem[]',
         'updateAdgroupConfiguredStatusSpec' => '\TencentAds\Model\UpdateAdgroupConfiguredStatusItem[]',
         'updateAdgroupDailyBudgetSpec' => '\TencentAds\Model\UpdateAdgroupDailyBudgetItem[]',
-        'updateAdConfiguredStatusSpec' => '\TencentAds\Model\UpdateAdConfiguredStatusItem[]'
+        'updateAdConfiguredStatusSpec' => '\TencentAds\Model\UpdateAdConfiguredStatusItem[]',
+        'updateAdgroupAutoAcquisitionSpec' => '\TencentAds\Model\UpdateAdgroupAutoAcquisitionItem[]'
     ];
 
     /**
@@ -101,7 +102,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateCampaignDailyBudgetSpec' => null,
         'updateAdgroupConfiguredStatusSpec' => null,
         'updateAdgroupDailyBudgetSpec' => null,
-        'updateAdConfiguredStatusSpec' => null
+        'updateAdConfiguredStatusSpec' => null,
+        'updateAdgroupAutoAcquisitionSpec' => null
     ];
 
     /**
@@ -148,7 +150,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateCampaignDailyBudgetSpec' => 'update_campaign_daily_budget_spec',
         'updateAdgroupConfiguredStatusSpec' => 'update_adgroup_configured_status_spec',
         'updateAdgroupDailyBudgetSpec' => 'update_adgroup_daily_budget_spec',
-        'updateAdConfiguredStatusSpec' => 'update_ad_configured_status_spec'
+        'updateAdConfiguredStatusSpec' => 'update_ad_configured_status_spec',
+        'updateAdgroupAutoAcquisitionSpec' => 'update_adgroup_auto_acquisition_spec'
     ];
 
     /**
@@ -174,7 +177,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateCampaignDailyBudgetSpec' => 'setUpdateCampaignDailyBudgetSpec',
         'updateAdgroupConfiguredStatusSpec' => 'setUpdateAdgroupConfiguredStatusSpec',
         'updateAdgroupDailyBudgetSpec' => 'setUpdateAdgroupDailyBudgetSpec',
-        'updateAdConfiguredStatusSpec' => 'setUpdateAdConfiguredStatusSpec'
+        'updateAdConfiguredStatusSpec' => 'setUpdateAdConfiguredStatusSpec',
+        'updateAdgroupAutoAcquisitionSpec' => 'setUpdateAdgroupAutoAcquisitionSpec'
     ];
 
     /**
@@ -200,7 +204,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateCampaignDailyBudgetSpec' => 'getUpdateCampaignDailyBudgetSpec',
         'updateAdgroupConfiguredStatusSpec' => 'getUpdateAdgroupConfiguredStatusSpec',
         'updateAdgroupDailyBudgetSpec' => 'getUpdateAdgroupDailyBudgetSpec',
-        'updateAdConfiguredStatusSpec' => 'getUpdateAdConfiguredStatusSpec'
+        'updateAdConfiguredStatusSpec' => 'getUpdateAdConfiguredStatusSpec',
+        'updateAdgroupAutoAcquisitionSpec' => 'getUpdateAdgroupAutoAcquisitionSpec'
     ];
 
     /**
@@ -281,6 +286,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         $this->container['updateAdgroupConfiguredStatusSpec'] = isset($data['updateAdgroupConfiguredStatusSpec']) ? $data['updateAdgroupConfiguredStatusSpec'] : null;
         $this->container['updateAdgroupDailyBudgetSpec'] = isset($data['updateAdgroupDailyBudgetSpec']) ? $data['updateAdgroupDailyBudgetSpec'] : null;
         $this->container['updateAdConfiguredStatusSpec'] = isset($data['updateAdConfiguredStatusSpec']) ? $data['updateAdConfiguredStatusSpec'] : null;
+        $this->container['updateAdgroupAutoAcquisitionSpec'] = isset($data['updateAdgroupAutoAcquisitionSpec']) ? $data['updateAdgroupAutoAcquisitionSpec'] : null;
     }
 
     /**
@@ -735,6 +741,30 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     public function setUpdateAdConfiguredStatusSpec($updateAdConfiguredStatusSpec)
     {
         $this->container['updateAdConfiguredStatusSpec'] = $updateAdConfiguredStatusSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets updateAdgroupAutoAcquisitionSpec
+     *
+     * @return \TencentAds\Model\UpdateAdgroupAutoAcquisitionItem[]
+     */
+    public function getUpdateAdgroupAutoAcquisitionSpec()
+    {
+        return $this->container['updateAdgroupAutoAcquisitionSpec'];
+    }
+
+    /**
+     * Sets updateAdgroupAutoAcquisitionSpec
+     *
+     * @param \TencentAds\Model\UpdateAdgroupAutoAcquisitionItem[] $updateAdgroupAutoAcquisitionSpec updateAdgroupAutoAcquisitionSpec
+     *
+     * @return $this
+     */
+    public function setUpdateAdgroupAutoAcquisitionSpec($updateAdgroupAutoAcquisitionSpec)
+    {
+        $this->container['updateAdgroupAutoAcquisitionSpec'] = $updateAdgroupAutoAcquisitionSpec;
 
         return $this;
     }

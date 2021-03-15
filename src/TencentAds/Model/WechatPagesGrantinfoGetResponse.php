@@ -1,6 +1,6 @@
 <?php
 /**
- * UserActionSet
+ * WechatPagesGrantinfoGetResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * UserActionSet Class Doc Comment
+ * WechatPagesGrantinfoGetResponse Class Doc Comment
  *
  * @category Class
- * @description UserActionSet返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class UserActionSet implements ModelInterface, ArrayAccess
+class WechatPagesGrantinfoGetResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'user_action_set';
+    protected static $swaggerModelName = 'WechatPagesGrantinfoGetResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,14 +57,11 @@ class UserActionSet implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'userActionSetId' => 'int',
-        'type' => '\TencentAds\Model\AmUserActionSetType',
-        'mobileAppId' => 'int',
-        'name' => 'string',
-        'description' => 'string',
-        'activateStatus' => 'bool',
-        'createdTime' => 'string',
-        'accessWay' => '\TencentAds\Model\ActionSetAccessWayType'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\WechatPagesGrantinfoGetResponseData'
     ];
 
     /**
@@ -74,14 +70,11 @@ class UserActionSet implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'userActionSetId' => 'int64',
-        'type' => null,
-        'mobileAppId' => 'int64',
-        'name' => null,
-        'description' => null,
-        'activateStatus' => null,
-        'createdTime' => null,
-        'accessWay' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -111,14 +104,11 @@ class UserActionSet implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'userActionSetId' => 'user_action_set_id',
-        'type' => 'type',
-        'mobileAppId' => 'mobile_app_id',
-        'name' => 'name',
-        'description' => 'description',
-        'activateStatus' => 'activate_status',
-        'createdTime' => 'created_time',
-        'accessWay' => 'access_way'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -127,14 +117,11 @@ class UserActionSet implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'userActionSetId' => 'setUserActionSetId',
-        'type' => 'setType',
-        'mobileAppId' => 'setMobileAppId',
-        'name' => 'setName',
-        'description' => 'setDescription',
-        'activateStatus' => 'setActivateStatus',
-        'createdTime' => 'setCreatedTime',
-        'accessWay' => 'setAccessWay'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -143,14 +130,11 @@ class UserActionSet implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'userActionSetId' => 'getUserActionSetId',
-        'type' => 'getType',
-        'mobileAppId' => 'getMobileAppId',
-        'name' => 'getName',
-        'description' => 'getDescription',
-        'activateStatus' => 'getActivateStatus',
-        'createdTime' => 'getCreatedTime',
-        'accessWay' => 'getAccessWay'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -213,14 +197,11 @@ class UserActionSet implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['userActionSetId'] = isset($data['userActionSetId']) ? $data['userActionSetId'] : null;
-        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['mobileAppId'] = isset($data['mobileAppId']) ? $data['mobileAppId'] : null;
-        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
-        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
-        $this->container['activateStatus'] = isset($data['activateStatus']) ? $data['activateStatus'] : null;
-        $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
-        $this->container['accessWay'] = isset($data['accessWay']) ? $data['accessWay'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -248,193 +229,121 @@ class UserActionSet implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets userActionSetId
+     * Gets code
      *
      * @return int
      */
-    public function getUserActionSetId()
+    public function getCode()
     {
-        return $this->container['userActionSetId'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets userActionSetId
+     * Sets code
      *
-     * @param int $userActionSetId userActionSetId
+     * @param int $code code
      *
      * @return $this
      */
-    public function setUserActionSetId($userActionSetId)
+    public function setCode($code)
     {
-        $this->container['userActionSetId'] = $userActionSetId;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets type
-     *
-     * @return \TencentAds\Model\AmUserActionSetType
-     */
-    public function getType()
-    {
-        return $this->container['type'];
-    }
-
-    /**
-     * Sets type
-     *
-     * @param \TencentAds\Model\AmUserActionSetType $type type
-     *
-     * @return $this
-     */
-    public function setType($type)
-    {
-        $this->container['type'] = $type;
-
-        return $this;
-    }
-
-    /**
-     * Gets mobileAppId
-     *
-     * @return int
-     */
-    public function getMobileAppId()
-    {
-        return $this->container['mobileAppId'];
-    }
-
-    /**
-     * Sets mobileAppId
-     *
-     * @param int $mobileAppId mobileAppId
-     *
-     * @return $this
-     */
-    public function setMobileAppId($mobileAppId)
-    {
-        $this->container['mobileAppId'] = $mobileAppId;
-
-        return $this;
-    }
-
-    /**
-     * Gets name
+     * Gets message
      *
      * @return string
      */
-    public function getName()
+    public function getMessage()
     {
-        return $this->container['name'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets name
+     * Sets message
      *
-     * @param string $name name
+     * @param string $message message
      *
      * @return $this
      */
-    public function setName($name)
+    public function setMessage($message)
     {
-        $this->container['name'] = $name;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets description
+     * Gets messageCn
      *
      * @return string
      */
-    public function getDescription()
+    public function getMessageCn()
     {
-        return $this->container['description'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets description
+     * Sets messageCn
      *
-     * @param string $description description
+     * @param string $messageCn messageCn
      *
      * @return $this
      */
-    public function setDescription($description)
+    public function setMessageCn($messageCn)
     {
-        $this->container['description'] = $description;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets activateStatus
+     * Gets errors
      *
-     * @return bool
+     * @return \TencentAds\Model\ApiErrorStruct[]
      */
-    public function getActivateStatus()
+    public function getErrors()
     {
-        return $this->container['activateStatus'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets activateStatus
+     * Sets errors
      *
-     * @param bool $activateStatus activateStatus
+     * @param \TencentAds\Model\ApiErrorStruct[] $errors errors
      *
      * @return $this
      */
-    public function setActivateStatus($activateStatus)
+    public function setErrors($errors)
     {
-        $this->container['activateStatus'] = $activateStatus;
+        $this->container['errors'] = $errors;
 
         return $this;
     }
 
     /**
-     * Gets createdTime
+     * Gets data
      *
-     * @return string
+     * @return \TencentAds\Model\WechatPagesGrantinfoGetResponseData
      */
-    public function getCreatedTime()
+    public function getData()
     {
-        return $this->container['createdTime'];
+        return $this->container['data'];
     }
 
     /**
-     * Sets createdTime
+     * Sets data
      *
-     * @param string $createdTime createdTime
+     * @param \TencentAds\Model\WechatPagesGrantinfoGetResponseData $data data
      *
      * @return $this
      */
-    public function setCreatedTime($createdTime)
+    public function setData($data)
     {
-        $this->container['createdTime'] = $createdTime;
-
-        return $this;
-    }
-
-    /**
-     * Gets accessWay
-     *
-     * @return \TencentAds\Model\ActionSetAccessWayType
-     */
-    public function getAccessWay()
-    {
-        return $this->container['accessWay'];
-    }
-
-    /**
-     * Sets accessWay
-     *
-     * @param \TencentAds\Model\ActionSetAccessWayType $accessWay accessWay
-     *
-     * @return $this
-     */
-    public function setAccessWay($accessWay)
-    {
-        $this->container['accessWay'] = $accessWay;
+        $this->container['data'] = $data;
 
         return $this;
     }
