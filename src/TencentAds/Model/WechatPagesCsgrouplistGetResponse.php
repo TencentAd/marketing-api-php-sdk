@@ -1,6 +1,6 @@
 <?php
 /**
- * LocalAdsSpec
+ * WechatPagesCsgrouplistGetResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * LocalAdsSpec Class Doc Comment
+ * WechatPagesCsgrouplistGetResponse Class Doc Comment
  *
  * @category Class
- * @description 本地门店信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class LocalAdsSpec implements ModelInterface, ArrayAccess
+class WechatPagesCsgrouplistGetResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class LocalAdsSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'local_ads_spec';
+    protected static $swaggerModelName = 'WechatPagesCsgrouplistGetResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +57,11 @@ class LocalAdsSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'shopName' => 'string',
-        'address' => 'string',
-        'telphone' => 'string',
-        'systemIndustryId' => 'string'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\WechatPagesCsgrouplistGetResponseData'
     ];
 
     /**
@@ -70,10 +70,11 @@ class LocalAdsSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'shopName' => null,
-        'address' => null,
-        'telphone' => null,
-        'systemIndustryId' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -103,10 +104,11 @@ class LocalAdsSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'shopName' => 'shop_name',
-        'address' => 'address',
-        'telphone' => 'telphone',
-        'systemIndustryId' => 'system_industry_id'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -115,10 +117,11 @@ class LocalAdsSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'shopName' => 'setShopName',
-        'address' => 'setAddress',
-        'telphone' => 'setTelphone',
-        'systemIndustryId' => 'setSystemIndustryId'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -127,10 +130,11 @@ class LocalAdsSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'shopName' => 'getShopName',
-        'address' => 'getAddress',
-        'telphone' => 'getTelphone',
-        'systemIndustryId' => 'getSystemIndustryId'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -193,10 +197,11 @@ class LocalAdsSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['shopName'] = isset($data['shopName']) ? $data['shopName'] : null;
-        $this->container['address'] = isset($data['address']) ? $data['address'] : null;
-        $this->container['telphone'] = isset($data['telphone']) ? $data['telphone'] : null;
-        $this->container['systemIndustryId'] = isset($data['systemIndustryId']) ? $data['systemIndustryId'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -224,97 +229,121 @@ class LocalAdsSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets shopName
+     * Gets code
      *
-     * @return string
+     * @return int
      */
-    public function getShopName()
+    public function getCode()
     {
-        return $this->container['shopName'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets shopName
+     * Sets code
      *
-     * @param string $shopName shopName
+     * @param int $code code
      *
      * @return $this
      */
-    public function setShopName($shopName)
+    public function setCode($code)
     {
-        $this->container['shopName'] = $shopName;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets address
+     * Gets message
      *
      * @return string
      */
-    public function getAddress()
+    public function getMessage()
     {
-        return $this->container['address'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets address
+     * Sets message
      *
-     * @param string $address address
+     * @param string $message message
      *
      * @return $this
      */
-    public function setAddress($address)
+    public function setMessage($message)
     {
-        $this->container['address'] = $address;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets telphone
+     * Gets messageCn
      *
      * @return string
      */
-    public function getTelphone()
+    public function getMessageCn()
     {
-        return $this->container['telphone'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets telphone
+     * Sets messageCn
      *
-     * @param string $telphone telphone
+     * @param string $messageCn messageCn
      *
      * @return $this
      */
-    public function setTelphone($telphone)
+    public function setMessageCn($messageCn)
     {
-        $this->container['telphone'] = $telphone;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets systemIndustryId
+     * Gets errors
      *
-     * @return string
+     * @return \TencentAds\Model\ApiErrorStruct[]
      */
-    public function getSystemIndustryId()
+    public function getErrors()
     {
-        return $this->container['systemIndustryId'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets systemIndustryId
+     * Sets errors
      *
-     * @param string $systemIndustryId systemIndustryId
+     * @param \TencentAds\Model\ApiErrorStruct[] $errors errors
      *
      * @return $this
      */
-    public function setSystemIndustryId($systemIndustryId)
+    public function setErrors($errors)
     {
-        $this->container['systemIndustryId'] = $systemIndustryId;
+        $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\WechatPagesCsgrouplistGetResponseData
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\WechatPagesCsgrouplistGetResponseData $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * LinkJdInfo
+ * LocalAdsSpecRead
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * LinkJdInfo Class Doc Comment
+ * LocalAdsSpecRead Class Doc Comment
  *
  * @category Class
- * @description 京东POP商户投放商品信息
+ * @description 本地门店信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class LinkJdInfo implements ModelInterface, ArrayAccess
+class LocalAdsSpecRead implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class LinkJdInfo implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'link_jd_info';
+    protected static $swaggerModelName = 'local_ads_spec_read';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,11 +58,10 @@ class LinkJdInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'ecommerceType' => '\TencentAds\Model\EcommerceType',
-        'itemId' => 'string',
-        'shopId' => 'string',
-        'itemCategory' => '\TencentAds\Model\Category[]',
-        'shopCategory' => '\TencentAds\Model\Category[]'
+        'shopName' => 'string',
+        'address' => 'string',
+        'telphone' => 'string',
+        'systemIndustryId' => 'string'
     ];
 
     /**
@@ -71,11 +70,10 @@ class LinkJdInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'ecommerceType' => null,
-        'itemId' => null,
-        'shopId' => null,
-        'itemCategory' => null,
-        'shopCategory' => null
+        'shopName' => null,
+        'address' => null,
+        'telphone' => null,
+        'systemIndustryId' => null
     ];
 
     /**
@@ -105,11 +103,10 @@ class LinkJdInfo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'ecommerceType' => 'ecommerce_type',
-        'itemId' => 'item_id',
-        'shopId' => 'shop_id',
-        'itemCategory' => 'item_category',
-        'shopCategory' => 'shop_category'
+        'shopName' => 'shop_name',
+        'address' => 'address',
+        'telphone' => 'telphone',
+        'systemIndustryId' => 'system_industry_id'
     ];
 
     /**
@@ -118,11 +115,10 @@ class LinkJdInfo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'ecommerceType' => 'setEcommerceType',
-        'itemId' => 'setItemId',
-        'shopId' => 'setShopId',
-        'itemCategory' => 'setItemCategory',
-        'shopCategory' => 'setShopCategory'
+        'shopName' => 'setShopName',
+        'address' => 'setAddress',
+        'telphone' => 'setTelphone',
+        'systemIndustryId' => 'setSystemIndustryId'
     ];
 
     /**
@@ -131,11 +127,10 @@ class LinkJdInfo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'ecommerceType' => 'getEcommerceType',
-        'itemId' => 'getItemId',
-        'shopId' => 'getShopId',
-        'itemCategory' => 'getItemCategory',
-        'shopCategory' => 'getShopCategory'
+        'shopName' => 'getShopName',
+        'address' => 'getAddress',
+        'telphone' => 'getTelphone',
+        'systemIndustryId' => 'getSystemIndustryId'
     ];
 
     /**
@@ -198,11 +193,10 @@ class LinkJdInfo implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['ecommerceType'] = isset($data['ecommerceType']) ? $data['ecommerceType'] : null;
-        $this->container['itemId'] = isset($data['itemId']) ? $data['itemId'] : null;
-        $this->container['shopId'] = isset($data['shopId']) ? $data['shopId'] : null;
-        $this->container['itemCategory'] = isset($data['itemCategory']) ? $data['itemCategory'] : null;
-        $this->container['shopCategory'] = isset($data['shopCategory']) ? $data['shopCategory'] : null;
+        $this->container['shopName'] = isset($data['shopName']) ? $data['shopName'] : null;
+        $this->container['address'] = isset($data['address']) ? $data['address'] : null;
+        $this->container['telphone'] = isset($data['telphone']) ? $data['telphone'] : null;
+        $this->container['systemIndustryId'] = isset($data['systemIndustryId']) ? $data['systemIndustryId'] : null;
     }
 
     /**
@@ -230,121 +224,97 @@ class LinkJdInfo implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets ecommerceType
-     *
-     * @return \TencentAds\Model\EcommerceType
-     */
-    public function getEcommerceType()
-    {
-        return $this->container['ecommerceType'];
-    }
-
-    /**
-     * Sets ecommerceType
-     *
-     * @param \TencentAds\Model\EcommerceType $ecommerceType ecommerceType
-     *
-     * @return $this
-     */
-    public function setEcommerceType($ecommerceType)
-    {
-        $this->container['ecommerceType'] = $ecommerceType;
-
-        return $this;
-    }
-
-    /**
-     * Gets itemId
+     * Gets shopName
      *
      * @return string
      */
-    public function getItemId()
+    public function getShopName()
     {
-        return $this->container['itemId'];
+        return $this->container['shopName'];
     }
 
     /**
-     * Sets itemId
+     * Sets shopName
      *
-     * @param string $itemId itemId
+     * @param string $shopName shopName
      *
      * @return $this
      */
-    public function setItemId($itemId)
+    public function setShopName($shopName)
     {
-        $this->container['itemId'] = $itemId;
+        $this->container['shopName'] = $shopName;
 
         return $this;
     }
 
     /**
-     * Gets shopId
+     * Gets address
      *
      * @return string
      */
-    public function getShopId()
+    public function getAddress()
     {
-        return $this->container['shopId'];
+        return $this->container['address'];
     }
 
     /**
-     * Sets shopId
+     * Sets address
      *
-     * @param string $shopId shopId
+     * @param string $address address
      *
      * @return $this
      */
-    public function setShopId($shopId)
+    public function setAddress($address)
     {
-        $this->container['shopId'] = $shopId;
+        $this->container['address'] = $address;
 
         return $this;
     }
 
     /**
-     * Gets itemCategory
+     * Gets telphone
      *
-     * @return \TencentAds\Model\Category[]
+     * @return string
      */
-    public function getItemCategory()
+    public function getTelphone()
     {
-        return $this->container['itemCategory'];
+        return $this->container['telphone'];
     }
 
     /**
-     * Sets itemCategory
+     * Sets telphone
      *
-     * @param \TencentAds\Model\Category[] $itemCategory itemCategory
+     * @param string $telphone telphone
      *
      * @return $this
      */
-    public function setItemCategory($itemCategory)
+    public function setTelphone($telphone)
     {
-        $this->container['itemCategory'] = $itemCategory;
+        $this->container['telphone'] = $telphone;
 
         return $this;
     }
 
     /**
-     * Gets shopCategory
+     * Gets systemIndustryId
      *
-     * @return \TencentAds\Model\Category[]
+     * @return string
      */
-    public function getShopCategory()
+    public function getSystemIndustryId()
     {
-        return $this->container['shopCategory'];
+        return $this->container['systemIndustryId'];
     }
 
     /**
-     * Sets shopCategory
+     * Sets systemIndustryId
      *
-     * @param \TencentAds\Model\Category[] $shopCategory shopCategory
+     * @param string $systemIndustryId systemIndustryId
      *
      * @return $this
      */
-    public function setShopCategory($shopCategory)
+    public function setSystemIndustryId($systemIndustryId)
     {
-        $this->container['shopCategory'] = $shopCategory;
+        $this->container['systemIndustryId'] = $systemIndustryId;
 
         return $this;
     }

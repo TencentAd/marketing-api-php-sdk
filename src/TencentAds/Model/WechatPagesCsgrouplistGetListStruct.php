@@ -1,6 +1,6 @@
 <?php
 /**
- * Category
+ * WechatPagesCsgrouplistGetListStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * Category Class Doc Comment
+ * WechatPagesCsgrouplistGetListStruct Class Doc Comment
  *
  * @category Class
- * @description 类目信息
+ * @description 返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class Category implements ModelInterface, ArrayAccess
+class WechatPagesCsgrouplistGetListStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class Category implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'category';
+    protected static $swaggerModelName = 'WechatPagesCsgrouplistGetListStruct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,8 @@ class Category implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'level' => '\TencentAds\Model\OcpaCategoryLevel',
-        'id' => 'int',
-        'name' => 'string'
+        'groupid' => 'int',
+        'groupname' => 'string'
     ];
 
     /**
@@ -69,9 +68,8 @@ class Category implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'level' => null,
-        'id' => 'int64',
-        'name' => null
+        'groupid' => 'int64',
+        'groupname' => null
     ];
 
     /**
@@ -101,9 +99,8 @@ class Category implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'level' => 'level',
-        'id' => 'id',
-        'name' => 'name'
+        'groupid' => 'groupid',
+        'groupname' => 'groupname'
     ];
 
     /**
@@ -112,9 +109,8 @@ class Category implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'level' => 'setLevel',
-        'id' => 'setId',
-        'name' => 'setName'
+        'groupid' => 'setGroupid',
+        'groupname' => 'setGroupname'
     ];
 
     /**
@@ -123,9 +119,8 @@ class Category implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'level' => 'getLevel',
-        'id' => 'getId',
-        'name' => 'getName'
+        'groupid' => 'getGroupid',
+        'groupname' => 'getGroupname'
     ];
 
     /**
@@ -188,9 +183,8 @@ class Category implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['level'] = isset($data['level']) ? $data['level'] : null;
-        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
-        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
+        $this->container['groupid'] = isset($data['groupid']) ? $data['groupid'] : null;
+        $this->container['groupname'] = isset($data['groupname']) ? $data['groupname'] : null;
     }
 
     /**
@@ -218,73 +212,49 @@ class Category implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets level
-     *
-     * @return \TencentAds\Model\OcpaCategoryLevel
-     */
-    public function getLevel()
-    {
-        return $this->container['level'];
-    }
-
-    /**
-     * Sets level
-     *
-     * @param \TencentAds\Model\OcpaCategoryLevel $level level
-     *
-     * @return $this
-     */
-    public function setLevel($level)
-    {
-        $this->container['level'] = $level;
-
-        return $this;
-    }
-
-    /**
-     * Gets id
+     * Gets groupid
      *
      * @return int
      */
-    public function getId()
+    public function getGroupid()
     {
-        return $this->container['id'];
+        return $this->container['groupid'];
     }
 
     /**
-     * Sets id
+     * Sets groupid
      *
-     * @param int $id id
+     * @param int $groupid groupid
      *
      * @return $this
      */
-    public function setId($id)
+    public function setGroupid($groupid)
     {
-        $this->container['id'] = $id;
+        $this->container['groupid'] = $groupid;
 
         return $this;
     }
 
     /**
-     * Gets name
+     * Gets groupname
      *
      * @return string
      */
-    public function getName()
+    public function getGroupname()
     {
-        return $this->container['name'];
+        return $this->container['groupname'];
     }
 
     /**
-     * Sets name
+     * Sets groupname
      *
-     * @param string $name name
+     * @param string $groupname groupname
      *
      * @return $this
      */
-    public function setName($name)
+    public function setGroupname($groupname)
     {
-        $this->container['name'] = $name;
+        $this->container['groupname'] = $groupname;
 
         return $this;
     }

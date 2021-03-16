@@ -1,6 +1,6 @@
 <?php
 /**
- * PromotedObjectsUpdateRequest
+ * WecomSpec
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PromotedObjectsUpdateRequest Class Doc Comment
+ * WecomSpec Class Doc Comment
  *
  * @category Class
+ * @description 企业微信组件信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PromotedObjectsUpdateRequest implements ModelInterface, ArrayAccess
+class WecomSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class PromotedObjectsUpdateRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'PromotedObjectsUpdateRequest';
+    protected static $swaggerModelName = 'wecom_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,9 +58,8 @@ class PromotedObjectsUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
-        'promotedObjectId' => 'string',
-        'accountId' => 'int'
+        'title' => 'string',
+        'groupid' => 'int'
     ];
 
     /**
@@ -68,9 +68,8 @@ class PromotedObjectsUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'promotedObjectType' => null,
-        'promotedObjectId' => null,
-        'accountId' => 'int64'
+        'title' => null,
+        'groupid' => 'int64'
     ];
 
     /**
@@ -100,9 +99,8 @@ class PromotedObjectsUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'promotedObjectType' => 'promoted_object_type',
-        'promotedObjectId' => 'promoted_object_id',
-        'accountId' => 'account_id'
+        'title' => 'title',
+        'groupid' => 'groupid'
     ];
 
     /**
@@ -111,9 +109,8 @@ class PromotedObjectsUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'promotedObjectType' => 'setPromotedObjectType',
-        'promotedObjectId' => 'setPromotedObjectId',
-        'accountId' => 'setAccountId'
+        'title' => 'setTitle',
+        'groupid' => 'setGroupid'
     ];
 
     /**
@@ -122,9 +119,8 @@ class PromotedObjectsUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'promotedObjectType' => 'getPromotedObjectType',
-        'promotedObjectId' => 'getPromotedObjectId',
-        'accountId' => 'getAccountId'
+        'title' => 'getTitle',
+        'groupid' => 'getGroupid'
     ];
 
     /**
@@ -187,9 +183,8 @@ class PromotedObjectsUpdateRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
-        $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['title'] = isset($data['title']) ? $data['title'] : null;
+        $this->container['groupid'] = isset($data['groupid']) ? $data['groupid'] : null;
     }
 
     /**
@@ -217,73 +212,49 @@ class PromotedObjectsUpdateRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets promotedObjectType
-     *
-     * @return \TencentAds\Model\PromotedObjectType
-     */
-    public function getPromotedObjectType()
-    {
-        return $this->container['promotedObjectType'];
-    }
-
-    /**
-     * Sets promotedObjectType
-     *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
-     *
-     * @return $this
-     */
-    public function setPromotedObjectType($promotedObjectType)
-    {
-        $this->container['promotedObjectType'] = $promotedObjectType;
-
-        return $this;
-    }
-
-    /**
-     * Gets promotedObjectId
+     * Gets title
      *
      * @return string
      */
-    public function getPromotedObjectId()
+    public function getTitle()
     {
-        return $this->container['promotedObjectId'];
+        return $this->container['title'];
     }
 
     /**
-     * Sets promotedObjectId
+     * Sets title
      *
-     * @param string $promotedObjectId promotedObjectId
+     * @param string $title title
      *
      * @return $this
      */
-    public function setPromotedObjectId($promotedObjectId)
+    public function setTitle($title)
     {
-        $this->container['promotedObjectId'] = $promotedObjectId;
+        $this->container['title'] = $title;
 
         return $this;
     }
 
     /**
-     * Gets accountId
+     * Gets groupid
      *
      * @return int
      */
-    public function getAccountId()
+    public function getGroupid()
     {
-        return $this->container['accountId'];
+        return $this->container['groupid'];
     }
 
     /**
-     * Sets accountId
+     * Sets groupid
      *
-     * @param int $accountId accountId
+     * @param int $groupid groupid
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setGroupid($groupid)
     {
-        $this->container['accountId'] = $accountId;
+        $this->container['groupid'] = $groupid;
 
         return $this;
     }

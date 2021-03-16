@@ -59,7 +59,6 @@ class PromotedObjectsAddRequest implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
         'promotedObjectId' => 'string',
-        'promotedObjectSpec' => '\TencentAds\Model\PromotedObjectSpec',
         'accountId' => 'int'
     ];
 
@@ -71,7 +70,6 @@ class PromotedObjectsAddRequest implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'promotedObjectType' => null,
         'promotedObjectId' => null,
-        'promotedObjectSpec' => null,
         'accountId' => 'int64'
     ];
 
@@ -104,7 +102,6 @@ class PromotedObjectsAddRequest implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'promotedObjectType' => 'promoted_object_type',
         'promotedObjectId' => 'promoted_object_id',
-        'promotedObjectSpec' => 'promoted_object_spec',
         'accountId' => 'account_id'
     ];
 
@@ -116,7 +113,6 @@ class PromotedObjectsAddRequest implements ModelInterface, ArrayAccess
     protected static $setters = [
         'promotedObjectType' => 'setPromotedObjectType',
         'promotedObjectId' => 'setPromotedObjectId',
-        'promotedObjectSpec' => 'setPromotedObjectSpec',
         'accountId' => 'setAccountId'
     ];
 
@@ -128,7 +124,6 @@ class PromotedObjectsAddRequest implements ModelInterface, ArrayAccess
     protected static $getters = [
         'promotedObjectType' => 'getPromotedObjectType',
         'promotedObjectId' => 'getPromotedObjectId',
-        'promotedObjectSpec' => 'getPromotedObjectSpec',
         'accountId' => 'getAccountId'
     ];
 
@@ -194,7 +189,6 @@ class PromotedObjectsAddRequest implements ModelInterface, ArrayAccess
     {
         $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
         $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
-        $this->container['promotedObjectSpec'] = isset($data['promotedObjectSpec']) ? $data['promotedObjectSpec'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -266,30 +260,6 @@ class PromotedObjectsAddRequest implements ModelInterface, ArrayAccess
     public function setPromotedObjectId($promotedObjectId)
     {
         $this->container['promotedObjectId'] = $promotedObjectId;
-
-        return $this;
-    }
-
-    /**
-     * Gets promotedObjectSpec
-     *
-     * @return \TencentAds\Model\PromotedObjectSpec
-     */
-    public function getPromotedObjectSpec()
-    {
-        return $this->container['promotedObjectSpec'];
-    }
-
-    /**
-     * Sets promotedObjectSpec
-     *
-     * @param \TencentAds\Model\PromotedObjectSpec $promotedObjectSpec promotedObjectSpec
-     *
-     * @return $this
-     */
-    public function setPromotedObjectSpec($promotedObjectSpec)
-    {
-        $this->container['promotedObjectSpec'] = $promotedObjectSpec;
 
         return $this;
     }

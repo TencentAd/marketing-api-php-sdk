@@ -1,6 +1,6 @@
 <?php
 /**
- * PromotedObjectGetSpec
+ * PromotedObjectSpecRead
  *
  * PHP version 5
  *
@@ -33,7 +33,7 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PromotedObjectGetSpec Class Doc Comment
+ * PromotedObjectSpecRead Class Doc Comment
  *
  * @category Class
  * @description 推广目标详细信息
@@ -41,7 +41,7 @@ use \TencentAds\ObjectSerializer;
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PromotedObjectGetSpec implements ModelInterface, ArrayAccess
+class PromotedObjectSpecRead implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class PromotedObjectGetSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'promoted_object_get_spec';
+    protected static $swaggerModelName = 'promoted_object_spec_read';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -67,7 +67,7 @@ class PromotedObjectGetSpec implements ModelInterface, ArrayAccess
         'dianpingShop' => '\TencentAds\Model\ProductTypeDianpingShop',
         'miniGameWechatSpec' => '\TencentAds\Model\MiniGameWechatSpec',
         'qqBrowserMiniProgram' => '\TencentAds\Model\QqBrowserMiniProgram',
-        'localAdsSpec' => '\TencentAds\Model\LocalAdsSpec'
+        'localAdsSpec' => '\TencentAds\Model\LocalAdsSpecRead'
     ];
 
     /**
@@ -478,7 +478,7 @@ class PromotedObjectGetSpec implements ModelInterface, ArrayAccess
     /**
      * Gets localAdsSpec
      *
-     * @return \TencentAds\Model\LocalAdsSpec
+     * @return \TencentAds\Model\LocalAdsSpecRead
      */
     public function getLocalAdsSpec()
     {
@@ -488,7 +488,7 @@ class PromotedObjectGetSpec implements ModelInterface, ArrayAccess
     /**
      * Sets localAdsSpec
      *
-     * @param \TencentAds\Model\LocalAdsSpec $localAdsSpec localAdsSpec
+     * @param \TencentAds\Model\LocalAdsSpecRead $localAdsSpec localAdsSpec
      *
      * @return $this
      */

@@ -1,6 +1,6 @@
 <?php
 /**
- * PromotedObjectSpec
+ * WechatPagesCsgrouplistGetResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PromotedObjectSpec Class Doc Comment
+ * WechatPagesCsgrouplistGetResponseData Class Doc Comment
  *
  * @category Class
- * @description 推广目标详细信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PromotedObjectSpec implements ModelInterface, ArrayAccess
+class WechatPagesCsgrouplistGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class PromotedObjectSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'promoted_object_spec';
+    protected static $swaggerModelName = 'WechatPagesCsgrouplistGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +57,8 @@ class PromotedObjectSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'jdItem' => '\TencentAds\Model\EcInfo',
-        'jdShop' => '\TencentAds\Model\EcInfo',
-        'dianpingShop' => '\TencentAds\Model\ProductTypeDianpingShop',
-        'productTypeLinkJd' => '\TencentAds\Model\LinkJdInfo'
+        'list' => '\TencentAds\Model\WechatPagesCsgrouplistGetListStruct[]',
+        'pageInfo' => '\TencentAds\Model\PageInfo'
     ];
 
     /**
@@ -70,10 +67,8 @@ class PromotedObjectSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'jdItem' => null,
-        'jdShop' => null,
-        'dianpingShop' => null,
-        'productTypeLinkJd' => null
+        'list' => null,
+        'pageInfo' => null
     ];
 
     /**
@@ -103,10 +98,8 @@ class PromotedObjectSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'jdItem' => 'jd_item',
-        'jdShop' => 'jd_shop',
-        'dianpingShop' => 'dianping_shop',
-        'productTypeLinkJd' => 'product_type_link_jd'
+        'list' => 'list',
+        'pageInfo' => 'page_info'
     ];
 
     /**
@@ -115,10 +108,8 @@ class PromotedObjectSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'jdItem' => 'setJdItem',
-        'jdShop' => 'setJdShop',
-        'dianpingShop' => 'setDianpingShop',
-        'productTypeLinkJd' => 'setProductTypeLinkJd'
+        'list' => 'setList',
+        'pageInfo' => 'setPageInfo'
     ];
 
     /**
@@ -127,10 +118,8 @@ class PromotedObjectSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'jdItem' => 'getJdItem',
-        'jdShop' => 'getJdShop',
-        'dianpingShop' => 'getDianpingShop',
-        'productTypeLinkJd' => 'getProductTypeLinkJd'
+        'list' => 'getList',
+        'pageInfo' => 'getPageInfo'
     ];
 
     /**
@@ -193,10 +182,8 @@ class PromotedObjectSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['jdItem'] = isset($data['jdItem']) ? $data['jdItem'] : null;
-        $this->container['jdShop'] = isset($data['jdShop']) ? $data['jdShop'] : null;
-        $this->container['dianpingShop'] = isset($data['dianpingShop']) ? $data['dianpingShop'] : null;
-        $this->container['productTypeLinkJd'] = isset($data['productTypeLinkJd']) ? $data['productTypeLinkJd'] : null;
+        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
+        $this->container['pageInfo'] = isset($data['pageInfo']) ? $data['pageInfo'] : null;
     }
 
     /**
@@ -224,97 +211,49 @@ class PromotedObjectSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets jdItem
+     * Gets list
      *
-     * @return \TencentAds\Model\EcInfo
+     * @return \TencentAds\Model\WechatPagesCsgrouplistGetListStruct[]
      */
-    public function getJdItem()
+    public function getList()
     {
-        return $this->container['jdItem'];
+        return $this->container['list'];
     }
 
     /**
-     * Sets jdItem
+     * Sets list
      *
-     * @param \TencentAds\Model\EcInfo $jdItem jdItem
+     * @param \TencentAds\Model\WechatPagesCsgrouplistGetListStruct[] $list list
      *
      * @return $this
      */
-    public function setJdItem($jdItem)
+    public function setList($list)
     {
-        $this->container['jdItem'] = $jdItem;
+        $this->container['list'] = $list;
 
         return $this;
     }
 
     /**
-     * Gets jdShop
+     * Gets pageInfo
      *
-     * @return \TencentAds\Model\EcInfo
+     * @return \TencentAds\Model\PageInfo
      */
-    public function getJdShop()
+    public function getPageInfo()
     {
-        return $this->container['jdShop'];
+        return $this->container['pageInfo'];
     }
 
     /**
-     * Sets jdShop
+     * Sets pageInfo
      *
-     * @param \TencentAds\Model\EcInfo $jdShop jdShop
+     * @param \TencentAds\Model\PageInfo $pageInfo pageInfo
      *
      * @return $this
      */
-    public function setJdShop($jdShop)
+    public function setPageInfo($pageInfo)
     {
-        $this->container['jdShop'] = $jdShop;
-
-        return $this;
-    }
-
-    /**
-     * Gets dianpingShop
-     *
-     * @return \TencentAds\Model\ProductTypeDianpingShop
-     */
-    public function getDianpingShop()
-    {
-        return $this->container['dianpingShop'];
-    }
-
-    /**
-     * Sets dianpingShop
-     *
-     * @param \TencentAds\Model\ProductTypeDianpingShop $dianpingShop dianpingShop
-     *
-     * @return $this
-     */
-    public function setDianpingShop($dianpingShop)
-    {
-        $this->container['dianpingShop'] = $dianpingShop;
-
-        return $this;
-    }
-
-    /**
-     * Gets productTypeLinkJd
-     *
-     * @return \TencentAds\Model\LinkJdInfo
-     */
-    public function getProductTypeLinkJd()
-    {
-        return $this->container['productTypeLinkJd'];
-    }
-
-    /**
-     * Sets productTypeLinkJd
-     *
-     * @param \TencentAds\Model\LinkJdInfo $productTypeLinkJd productTypeLinkJd
-     *
-     * @return $this
-     */
-    public function setProductTypeLinkJd($productTypeLinkJd)
-    {
-        $this->container['productTypeLinkJd'] = $productTypeLinkJd;
+        $this->container['pageInfo'] = $pageInfo;
 
         return $this;
     }
