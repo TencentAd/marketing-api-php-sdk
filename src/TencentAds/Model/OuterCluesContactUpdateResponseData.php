@@ -1,6 +1,6 @@
 <?php
 /**
- * OuterCluesUpdateListStruct
+ * OuterCluesContactUpdateResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * OuterCluesUpdateListStruct Class Doc Comment
+ * OuterCluesContactUpdateResponseData Class Doc Comment
  *
  * @category Class
- * @description 返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
+class OuterCluesContactUpdateResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'OuterCluesUpdateListStruct';
+    protected static $swaggerModelName = 'OuterCluesContactUpdateResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,7 +57,7 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'outerLeadsId' => 'string'
+        'failLeadsList' => '\TencentAds\Model\OuterCluesContactUpdateListStruct[]'
     ];
 
     /**
@@ -67,7 +66,7 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'outerLeadsId' => null
+        'failLeadsList' => null
     ];
 
     /**
@@ -97,7 +96,7 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'outerLeadsId' => 'outer_leads_id'
+        'failLeadsList' => 'fail_leads_list'
     ];
 
     /**
@@ -106,7 +105,7 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'outerLeadsId' => 'setOuterLeadsId'
+        'failLeadsList' => 'setFailLeadsList'
     ];
 
     /**
@@ -115,7 +114,7 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'outerLeadsId' => 'getOuterLeadsId'
+        'failLeadsList' => 'getFailLeadsList'
     ];
 
     /**
@@ -178,7 +177,7 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['outerLeadsId'] = isset($data['outerLeadsId']) ? $data['outerLeadsId'] : null;
+        $this->container['failLeadsList'] = isset($data['failLeadsList']) ? $data['failLeadsList'] : null;
     }
 
     /**
@@ -206,25 +205,25 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets outerLeadsId
+     * Gets failLeadsList
      *
-     * @return string
+     * @return \TencentAds\Model\OuterCluesContactUpdateListStruct[]
      */
-    public function getOuterLeadsId()
+    public function getFailLeadsList()
     {
-        return $this->container['outerLeadsId'];
+        return $this->container['failLeadsList'];
     }
 
     /**
-     * Sets outerLeadsId
+     * Sets failLeadsList
      *
-     * @param string $outerLeadsId outerLeadsId
+     * @param \TencentAds\Model\OuterCluesContactUpdateListStruct[] $failLeadsList failLeadsList
      *
      * @return $this
      */
-    public function setOuterLeadsId($outerLeadsId)
+    public function setFailLeadsList($failLeadsList)
     {
-        $this->container['outerLeadsId'] = $outerLeadsId;
+        $this->container['failLeadsList'] = $failLeadsList;
 
         return $this;
     }

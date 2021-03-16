@@ -84,6 +84,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'outerLeadsIneffectReason' => 'string',
         'leadsUserId' => 'string',
         'leadsUserType' => '\TencentAds\Model\LeadsUserType',
+        'leadsUserWechatAppid' => 'string',
         'leadsName' => 'string',
         'leadsTelephone' => 'string',
         'telephoneLocation' => 'string',
@@ -139,6 +140,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'outerLeadsIneffectReason' => null,
         'leadsUserId' => null,
         'leadsUserType' => null,
+        'leadsUserWechatAppid' => null,
         'leadsName' => null,
         'leadsTelephone' => null,
         'telephoneLocation' => null,
@@ -215,6 +217,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'outerLeadsIneffectReason' => 'outer_leads_ineffect_reason',
         'leadsUserId' => 'leads_user_id',
         'leadsUserType' => 'leads_user_type',
+        'leadsUserWechatAppid' => 'leads_user_wechat_appid',
         'leadsName' => 'leads_name',
         'leadsTelephone' => 'leads_telephone',
         'telephoneLocation' => 'telephone_location',
@@ -270,6 +273,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'outerLeadsIneffectReason' => 'setOuterLeadsIneffectReason',
         'leadsUserId' => 'setLeadsUserId',
         'leadsUserType' => 'setLeadsUserType',
+        'leadsUserWechatAppid' => 'setLeadsUserWechatAppid',
         'leadsName' => 'setLeadsName',
         'leadsTelephone' => 'setLeadsTelephone',
         'telephoneLocation' => 'setTelephoneLocation',
@@ -325,6 +329,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'outerLeadsIneffectReason' => 'getOuterLeadsIneffectReason',
         'leadsUserId' => 'getLeadsUserId',
         'leadsUserType' => 'getLeadsUserType',
+        'leadsUserWechatAppid' => 'getLeadsUserWechatAppid',
         'leadsName' => 'getLeadsName',
         'leadsTelephone' => 'getLeadsTelephone',
         'telephoneLocation' => 'getTelephoneLocation',
@@ -434,6 +439,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['outerLeadsIneffectReason'] = isset($data['outerLeadsIneffectReason']) ? $data['outerLeadsIneffectReason'] : null;
         $this->container['leadsUserId'] = isset($data['leadsUserId']) ? $data['leadsUserId'] : null;
         $this->container['leadsUserType'] = isset($data['leadsUserType']) ? $data['leadsUserType'] : null;
+        $this->container['leadsUserWechatAppid'] = isset($data['leadsUserWechatAppid']) ? $data['leadsUserWechatAppid'] : null;
         $this->container['leadsName'] = isset($data['leadsName']) ? $data['leadsName'] : null;
         $this->container['leadsTelephone'] = isset($data['leadsTelephone']) ? $data['leadsTelephone'] : null;
         $this->container['telephoneLocation'] = isset($data['telephoneLocation']) ? $data['telephoneLocation'] : null;
@@ -1101,6 +1107,30 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     public function setLeadsUserType($leadsUserType)
     {
         $this->container['leadsUserType'] = $leadsUserType;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsUserWechatAppid
+     *
+     * @return string
+     */
+    public function getLeadsUserWechatAppid()
+    {
+        return $this->container['leadsUserWechatAppid'];
+    }
+
+    /**
+     * Sets leadsUserWechatAppid
+     *
+     * @param string $leadsUserWechatAppid leadsUserWechatAppid
+     *
+     * @return $this
+     */
+    public function setLeadsUserWechatAppid($leadsUserWechatAppid)
+    {
+        $this->container['leadsUserWechatAppid'] = $leadsUserWechatAppid;
 
         return $this;
     }

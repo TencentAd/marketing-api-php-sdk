@@ -57,7 +57,7 @@ class OuterCluesUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'operatorAccountId' => 'int',
+        'accountId' => 'int',
         'leadsConversionStatusList' => '\TencentAds\Model\OuterLeadsStatusInfoStruct[]'
     ];
 
@@ -67,7 +67,7 @@ class OuterCluesUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'operatorAccountId' => 'int64',
+        'accountId' => 'int64',
         'leadsConversionStatusList' => null
     ];
 
@@ -98,7 +98,7 @@ class OuterCluesUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'operatorAccountId' => 'operator_account_id',
+        'accountId' => 'account_id',
         'leadsConversionStatusList' => 'leads_conversion_status_list'
     ];
 
@@ -108,7 +108,7 @@ class OuterCluesUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'operatorAccountId' => 'setOperatorAccountId',
+        'accountId' => 'setAccountId',
         'leadsConversionStatusList' => 'setLeadsConversionStatusList'
     ];
 
@@ -118,7 +118,7 @@ class OuterCluesUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'operatorAccountId' => 'getOperatorAccountId',
+        'accountId' => 'getAccountId',
         'leadsConversionStatusList' => 'getLeadsConversionStatusList'
     ];
 
@@ -182,7 +182,7 @@ class OuterCluesUpdateRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['operatorAccountId'] = isset($data['operatorAccountId']) ? $data['operatorAccountId'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['leadsConversionStatusList'] = isset($data['leadsConversionStatusList']) ? $data['leadsConversionStatusList'] : null;
     }
 
@@ -211,25 +211,25 @@ class OuterCluesUpdateRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets operatorAccountId
+     * Gets accountId
      *
      * @return int
      */
-    public function getOperatorAccountId()
+    public function getAccountId()
     {
-        return $this->container['operatorAccountId'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets operatorAccountId
+     * Sets accountId
      *
-     * @param int $operatorAccountId operatorAccountId
+     * @param int $accountId accountId
      *
      * @return $this
      */
-    public function setOperatorAccountId($operatorAccountId)
+    public function setAccountId($accountId)
     {
-        $this->container['operatorAccountId'] = $operatorAccountId;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }

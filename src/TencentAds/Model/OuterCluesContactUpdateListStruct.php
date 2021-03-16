@@ -1,6 +1,6 @@
 <?php
 /**
- * OuterCluesUpdateListStruct
+ * OuterCluesContactUpdateListStruct
  *
  * PHP version 5
  *
@@ -33,7 +33,7 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * OuterCluesUpdateListStruct Class Doc Comment
+ * OuterCluesContactUpdateListStruct Class Doc Comment
  *
  * @category Class
  * @description 返回结构
@@ -41,7 +41,7 @@ use \TencentAds\ObjectSerializer;
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
+class OuterCluesContactUpdateListStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'OuterCluesUpdateListStruct';
+    protected static $swaggerModelName = 'OuterCluesContactUpdateListStruct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization

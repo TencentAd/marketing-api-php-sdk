@@ -81,6 +81,7 @@ use TencentAds\Container\LocalStoresSearchInfoApiContainer;
 use TencentAds\Container\OauthApiContainer;
 use TencentAds\Container\OptimizationGoalPermissionsApiContainer;
 use TencentAds\Container\OuterCluesApiContainer;
+use TencentAds\Container\OuterCluesContactApiContainer;
 use TencentAds\Container\PagesApiContainer;
 use TencentAds\Container\PlayablePagesApiContainer;
 use TencentAds\Container\ProductCatalogsApiContainer;
@@ -375,6 +376,9 @@ class App
 
     /** @var OuterCluesApiContainer */
     public $outerCluesApiContainer;
+
+    /** @var OuterCluesContactApiContainer */
+    public $outerCluesContactApiContainer;
 
     /** @var PagesApiContainer */
     public $pagesApiContainer;
@@ -1648,6 +1652,20 @@ class App
             $this->outerCluesApiContainer = $container;
         }
         return $this->outerCluesApiContainer;
+    }
+
+
+    /**
+     * @return OuterCluesContactApiContainer
+     */
+    public function outerCluesContact()
+    {
+        if (empty($this->outerCluesContactApiContainer)) {
+            $container = new OuterCluesContactApiContainer();
+            $container->init($this, $this->getClient());
+            $this->outerCluesContactApiContainer = $container;
+        }
+        return $this->outerCluesContactApiContainer;
     }
 
 

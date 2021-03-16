@@ -1,6 +1,6 @@
 <?php
 /**
- * OuterCluesUpdateListStruct
+ * OuterCluesContactUpdateRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * OuterCluesUpdateListStruct Class Doc Comment
+ * OuterCluesContactUpdateRequest Class Doc Comment
  *
  * @category Class
- * @description 返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
+class OuterCluesContactUpdateRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'OuterCluesUpdateListStruct';
+    protected static $swaggerModelName = 'OuterCluesContactUpdateRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,7 +57,8 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'outerLeadsId' => 'string'
+        'accountId' => 'int',
+        'leadsContactList' => '\TencentAds\Model\LeadsContactInfoStruct[]'
     ];
 
     /**
@@ -67,7 +67,8 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'outerLeadsId' => null
+        'accountId' => 'int64',
+        'leadsContactList' => null
     ];
 
     /**
@@ -97,7 +98,8 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'outerLeadsId' => 'outer_leads_id'
+        'accountId' => 'account_id',
+        'leadsContactList' => 'leads_contact_list'
     ];
 
     /**
@@ -106,7 +108,8 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'outerLeadsId' => 'setOuterLeadsId'
+        'accountId' => 'setAccountId',
+        'leadsContactList' => 'setLeadsContactList'
     ];
 
     /**
@@ -115,7 +118,8 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'outerLeadsId' => 'getOuterLeadsId'
+        'accountId' => 'getAccountId',
+        'leadsContactList' => 'getLeadsContactList'
     ];
 
     /**
@@ -178,7 +182,8 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['outerLeadsId'] = isset($data['outerLeadsId']) ? $data['outerLeadsId'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['leadsContactList'] = isset($data['leadsContactList']) ? $data['leadsContactList'] : null;
     }
 
     /**
@@ -206,25 +211,49 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets outerLeadsId
+     * Gets accountId
      *
-     * @return string
+     * @return int
      */
-    public function getOuterLeadsId()
+    public function getAccountId()
     {
-        return $this->container['outerLeadsId'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets outerLeadsId
+     * Sets accountId
      *
-     * @param string $outerLeadsId outerLeadsId
+     * @param int $accountId accountId
      *
      * @return $this
      */
-    public function setOuterLeadsId($outerLeadsId)
+    public function setAccountId($accountId)
     {
-        $this->container['outerLeadsId'] = $outerLeadsId;
+        $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsContactList
+     *
+     * @return \TencentAds\Model\LeadsContactInfoStruct[]
+     */
+    public function getLeadsContactList()
+    {
+        return $this->container['leadsContactList'];
+    }
+
+    /**
+     * Sets leadsContactList
+     *
+     * @param \TencentAds\Model\LeadsContactInfoStruct[] $leadsContactList leadsContactList
+     *
+     * @return $this
+     */
+    public function setLeadsContactList($leadsContactList)
+    {
+        $this->container['leadsContactList'] = $leadsContactList;
 
         return $this;
     }

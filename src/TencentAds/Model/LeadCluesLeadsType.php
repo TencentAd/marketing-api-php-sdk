@@ -53,6 +53,7 @@ class LeadCluesLeadsType
     const LOTTERY = 'LEADS_TYPE_LOTTERY';
     const LANDING_PAGE_CLICK = 'LEADS_TYPE_LANDING_PAGE_CLICK';
     const ONE_CLICK_AUTHORIZE = 'LEADS_TYPE_ONE_CLICK_AUTHORIZE';
+    const PAGE_SCAN_CODE = 'LEADS_TYPE_PAGE_SCAN_CODE';
     
     /**
      * Gets allowable values of the enum
@@ -70,6 +71,7 @@ class LeadCluesLeadsType
             self::LOTTERY,
             self::LANDING_PAGE_CLICK,
             self::ONE_CLICK_AUTHORIZE,
+            self::PAGE_SCAN_CODE,
         ];
     }
 }

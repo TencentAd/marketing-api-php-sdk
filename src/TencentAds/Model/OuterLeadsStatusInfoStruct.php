@@ -58,7 +58,6 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
         'outerLeadsId' => 'string',
         'outerLeadsConvertType' => 'string',
         'outerLeadsIneffectReason' => 'string'
@@ -70,7 +69,6 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
         'outerLeadsId' => null,
         'outerLeadsConvertType' => null,
         'outerLeadsIneffectReason' => null
@@ -103,7 +101,6 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
         'outerLeadsId' => 'outer_leads_id',
         'outerLeadsConvertType' => 'outer_leads_convert_type',
         'outerLeadsIneffectReason' => 'outer_leads_ineffect_reason'
@@ -115,7 +112,6 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
         'outerLeadsId' => 'setOuterLeadsId',
         'outerLeadsConvertType' => 'setOuterLeadsConvertType',
         'outerLeadsIneffectReason' => 'setOuterLeadsIneffectReason'
@@ -127,7 +123,6 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
         'outerLeadsId' => 'getOuterLeadsId',
         'outerLeadsConvertType' => 'getOuterLeadsConvertType',
         'outerLeadsIneffectReason' => 'getOuterLeadsIneffectReason'
@@ -193,7 +188,6 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['outerLeadsId'] = isset($data['outerLeadsId']) ? $data['outerLeadsId'] : null;
         $this->container['outerLeadsConvertType'] = isset($data['outerLeadsConvertType']) ? $data['outerLeadsConvertType'] : null;
         $this->container['outerLeadsIneffectReason'] = isset($data['outerLeadsIneffectReason']) ? $data['outerLeadsIneffectReason'] : null;
@@ -222,30 +216,6 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
-
-    /**
-     * Gets accountId
-     *
-     * @return int
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
-
-        return $this;
-    }
 
     /**
      * Gets outerLeadsId

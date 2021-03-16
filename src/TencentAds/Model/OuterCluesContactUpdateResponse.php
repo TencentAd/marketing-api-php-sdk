@@ -1,6 +1,6 @@
 <?php
 /**
- * OuterCluesUpdateListStruct
+ * OuterCluesContactUpdateResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * OuterCluesUpdateListStruct Class Doc Comment
+ * OuterCluesContactUpdateResponse Class Doc Comment
  *
  * @category Class
- * @description 返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
+class OuterCluesContactUpdateResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'OuterCluesUpdateListStruct';
+    protected static $swaggerModelName = 'OuterCluesContactUpdateResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,7 +57,11 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'outerLeadsId' => 'string'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\OuterCluesContactUpdateResponseData'
     ];
 
     /**
@@ -67,7 +70,11 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'outerLeadsId' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -97,7 +104,11 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'outerLeadsId' => 'outer_leads_id'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -106,7 +117,11 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'outerLeadsId' => 'setOuterLeadsId'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -115,7 +130,11 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'outerLeadsId' => 'getOuterLeadsId'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -178,7 +197,11 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['outerLeadsId'] = isset($data['outerLeadsId']) ? $data['outerLeadsId'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -206,25 +229,121 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets outerLeadsId
+     * Gets code
      *
-     * @return string
+     * @return int
      */
-    public function getOuterLeadsId()
+    public function getCode()
     {
-        return $this->container['outerLeadsId'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets outerLeadsId
+     * Sets code
      *
-     * @param string $outerLeadsId outerLeadsId
+     * @param int $code code
      *
      * @return $this
      */
-    public function setOuterLeadsId($outerLeadsId)
+    public function setCode($code)
     {
-        $this->container['outerLeadsId'] = $outerLeadsId;
+        $this->container['code'] = $code;
+
+        return $this;
+    }
+
+    /**
+     * Gets message
+     *
+     * @return string
+     */
+    public function getMessage()
+    {
+        return $this->container['message'];
+    }
+
+    /**
+     * Sets message
+     *
+     * @param string $message message
+     *
+     * @return $this
+     */
+    public function setMessage($message)
+    {
+        $this->container['message'] = $message;
+
+        return $this;
+    }
+
+    /**
+     * Gets messageCn
+     *
+     * @return string
+     */
+    public function getMessageCn()
+    {
+        return $this->container['messageCn'];
+    }
+
+    /**
+     * Sets messageCn
+     *
+     * @param string $messageCn messageCn
+     *
+     * @return $this
+     */
+    public function setMessageCn($messageCn)
+    {
+        $this->container['messageCn'] = $messageCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets errors
+     *
+     * @return \TencentAds\Model\ApiErrorStruct[]
+     */
+    public function getErrors()
+    {
+        return $this->container['errors'];
+    }
+
+    /**
+     * Sets errors
+     *
+     * @param \TencentAds\Model\ApiErrorStruct[] $errors errors
+     *
+     * @return $this
+     */
+    public function setErrors($errors)
+    {
+        $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\OuterCluesContactUpdateResponseData
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\OuterCluesContactUpdateResponseData $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }
