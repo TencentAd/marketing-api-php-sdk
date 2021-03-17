@@ -63,7 +63,6 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'gdtOpenid' => 'string',
         'hashPhone' => 'string',
         'sha256Phone' => 'string',
-        'qaid' => 'string',
         'hashAndroidId' => 'string',
         'hashMac' => 'string',
         'oaid' => 'string',
@@ -83,7 +82,6 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'gdtOpenid' => null,
         'hashPhone' => null,
         'sha256Phone' => null,
-        'qaid' => null,
         'hashAndroidId' => null,
         'hashMac' => null,
         'oaid' => null,
@@ -124,7 +122,6 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'gdtOpenid' => 'gdt_openid',
         'hashPhone' => 'hash_phone',
         'sha256Phone' => 'sha256_phone',
-        'qaid' => 'qaid',
         'hashAndroidId' => 'hash_android_id',
         'hashMac' => 'hash_mac',
         'oaid' => 'oaid',
@@ -144,7 +141,6 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'gdtOpenid' => 'setGdtOpenid',
         'hashPhone' => 'setHashPhone',
         'sha256Phone' => 'setSha256Phone',
-        'qaid' => 'setQaid',
         'hashAndroidId' => 'setHashAndroidId',
         'hashMac' => 'setHashMac',
         'oaid' => 'setOaid',
@@ -164,7 +160,6 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'gdtOpenid' => 'getGdtOpenid',
         'hashPhone' => 'getHashPhone',
         'sha256Phone' => 'getSha256Phone',
-        'qaid' => 'getQaid',
         'hashAndroidId' => 'getHashAndroidId',
         'hashMac' => 'getHashMac',
         'oaid' => 'getOaid',
@@ -238,7 +233,6 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         $this->container['gdtOpenid'] = isset($data['gdtOpenid']) ? $data['gdtOpenid'] : null;
         $this->container['hashPhone'] = isset($data['hashPhone']) ? $data['hashPhone'] : null;
         $this->container['sha256Phone'] = isset($data['sha256Phone']) ? $data['sha256Phone'] : null;
-        $this->container['qaid'] = isset($data['qaid']) ? $data['qaid'] : null;
         $this->container['hashAndroidId'] = isset($data['hashAndroidId']) ? $data['hashAndroidId'] : null;
         $this->container['hashMac'] = isset($data['hashMac']) ? $data['hashMac'] : null;
         $this->container['oaid'] = isset($data['oaid']) ? $data['oaid'] : null;
@@ -387,30 +381,6 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     public function setSha256Phone($sha256Phone)
     {
         $this->container['sha256Phone'] = $sha256Phone;
-
-        return $this;
-    }
-
-    /**
-     * Gets qaid
-     *
-     * @return string
-     */
-    public function getQaid()
-    {
-        return $this->container['qaid'];
-    }
-
-    /**
-     * Sets qaid
-     *
-     * @param string $qaid qaid
-     *
-     * @return $this
-     */
-    public function setQaid($qaid)
-    {
-        $this->container['qaid'] = $qaid;
 
         return $this;
     }
