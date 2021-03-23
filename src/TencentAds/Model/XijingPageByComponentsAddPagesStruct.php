@@ -61,6 +61,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
         'pageType' => '\TencentAds\Model\ComponentsPageType',
         'pageName' => 'string',
         'pageTitle' => 'string',
+        'clipboard' => 'string',
         'mobileAppId' => 'string',
         'bgColor' => 'string',
         'bgImageId' => 'string',
@@ -76,6 +77,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
         'pageType' => null,
         'pageName' => null,
         'pageTitle' => null,
+        'clipboard' => null,
         'mobileAppId' => null,
         'bgColor' => null,
         'bgImageId' => null,
@@ -112,6 +114,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
         'pageType' => 'page_type',
         'pageName' => 'page_name',
         'pageTitle' => 'page_title',
+        'clipboard' => 'clipboard',
         'mobileAppId' => 'mobile_app_id',
         'bgColor' => 'bg_color',
         'bgImageId' => 'bg_image_id',
@@ -127,6 +130,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
         'pageType' => 'setPageType',
         'pageName' => 'setPageName',
         'pageTitle' => 'setPageTitle',
+        'clipboard' => 'setClipboard',
         'mobileAppId' => 'setMobileAppId',
         'bgColor' => 'setBgColor',
         'bgImageId' => 'setBgImageId',
@@ -142,6 +146,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
         'pageType' => 'getPageType',
         'pageName' => 'getPageName',
         'pageTitle' => 'getPageTitle',
+        'clipboard' => 'getClipboard',
         'mobileAppId' => 'getMobileAppId',
         'bgColor' => 'getBgColor',
         'bgImageId' => 'getBgImageId',
@@ -211,6 +216,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
         $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
         $this->container['pageName'] = isset($data['pageName']) ? $data['pageName'] : null;
         $this->container['pageTitle'] = isset($data['pageTitle']) ? $data['pageTitle'] : null;
+        $this->container['clipboard'] = isset($data['clipboard']) ? $data['clipboard'] : null;
         $this->container['mobileAppId'] = isset($data['mobileAppId']) ? $data['mobileAppId'] : null;
         $this->container['bgColor'] = isset($data['bgColor']) ? $data['bgColor'] : null;
         $this->container['bgImageId'] = isset($data['bgImageId']) ? $data['bgImageId'] : null;
@@ -309,6 +315,30 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
     public function setPageTitle($pageTitle)
     {
         $this->container['pageTitle'] = $pageTitle;
+
+        return $this;
+    }
+
+    /**
+     * Gets clipboard
+     *
+     * @return string
+     */
+    public function getClipboard()
+    {
+        return $this->container['clipboard'];
+    }
+
+    /**
+     * Sets clipboard
+     *
+     * @param string $clipboard clipboard
+     *
+     * @return $this
+     */
+    public function setClipboard($clipboard)
+    {
+        $this->container['clipboard'] = $clipboard;
 
         return $this;
     }

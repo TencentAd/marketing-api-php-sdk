@@ -372,7 +372,7 @@ class XijingPageApi
     /**
      * Operation xijingPageDelete
      *
-     * 蹊径-送审落地页
+     * 蹊径-删除落地页
      *
      * @param  \TencentAds\Model\XijingPageDeleteRequest $data data (required)
      *
@@ -389,7 +389,7 @@ class XijingPageApi
     /**
      * Operation xijingPageDeleteWithHttpInfo
      *
-     * 蹊径-送审落地页
+     * 蹊径-删除落地页
      *
      * @param  \TencentAds\Model\XijingPageDeleteRequest $data (required)
      *
@@ -464,7 +464,7 @@ class XijingPageApi
     /**
      * Operation xijingPageDeleteAsync
      *
-     * 蹊径-送审落地页
+     * 蹊径-删除落地页
      *
      * @param  \TencentAds\Model\XijingPageDeleteRequest $data (required)
      *
@@ -484,7 +484,7 @@ class XijingPageApi
     /**
      * Operation xijingPageDeleteAsyncWithHttpInfo
      *
-     * 蹊径-送审落地页
+     * 蹊径-删除落地页
      *
      * @param  \TencentAds\Model\XijingPageDeleteRequest $data (required)
      *

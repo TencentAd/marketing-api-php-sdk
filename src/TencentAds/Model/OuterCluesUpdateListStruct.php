@@ -58,7 +58,7 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'outerLeadsId' => 'string'
+        
     ];
 
     /**
@@ -67,7 +67,7 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'outerLeadsId' => null
+        
     ];
 
     /**
@@ -97,7 +97,7 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'outerLeadsId' => 'outer_leads_id'
+        
     ];
 
     /**
@@ -106,7 +106,7 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'outerLeadsId' => 'setOuterLeadsId'
+        
     ];
 
     /**
@@ -115,7 +115,7 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'outerLeadsId' => 'getOuterLeadsId'
+        
     ];
 
     /**
@@ -178,7 +178,6 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['outerLeadsId'] = isset($data['outerLeadsId']) ? $data['outerLeadsId'] : null;
     }
 
     /**
@@ -204,30 +203,6 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
-
-    /**
-     * Gets outerLeadsId
-     *
-     * @return string
-     */
-    public function getOuterLeadsId()
-    {
-        return $this->container['outerLeadsId'];
-    }
-
-    /**
-     * Sets outerLeadsId
-     *
-     * @param string $outerLeadsId outerLeadsId
-     *
-     * @return $this
-     */
-    public function setOuterLeadsId($outerLeadsId)
-    {
-        $this->container['outerLeadsId'] = $outerLeadsId;
-
-        return $this;
-    }
     /**
      * Returns true if offset exists. False otherwise.
      *

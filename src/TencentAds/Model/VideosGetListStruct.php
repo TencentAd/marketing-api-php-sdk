@@ -89,7 +89,8 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'productCatalogId' => 'string',
         'productOuterId' => 'string',
         'sourceReferenceId' => 'string',
-        'ownerAccountId' => 'string'
+        'ownerAccountId' => 'string',
+        'status' => '\TencentAds\Model\MediaStatusType'
     ];
 
     /**
@@ -129,7 +130,8 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'productCatalogId' => null,
         'productOuterId' => null,
         'sourceReferenceId' => null,
-        'ownerAccountId' => null
+        'ownerAccountId' => null,
+        'status' => null
     ];
 
     /**
@@ -190,7 +192,8 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'productCatalogId' => 'product_catalog_id',
         'productOuterId' => 'product_outer_id',
         'sourceReferenceId' => 'source_reference_id',
-        'ownerAccountId' => 'owner_account_id'
+        'ownerAccountId' => 'owner_account_id',
+        'status' => 'status'
     ];
 
     /**
@@ -230,7 +233,8 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'productCatalogId' => 'setProductCatalogId',
         'productOuterId' => 'setProductOuterId',
         'sourceReferenceId' => 'setSourceReferenceId',
-        'ownerAccountId' => 'setOwnerAccountId'
+        'ownerAccountId' => 'setOwnerAccountId',
+        'status' => 'setStatus'
     ];
 
     /**
@@ -270,7 +274,8 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'productCatalogId' => 'getProductCatalogId',
         'productOuterId' => 'getProductOuterId',
         'sourceReferenceId' => 'getSourceReferenceId',
-        'ownerAccountId' => 'getOwnerAccountId'
+        'ownerAccountId' => 'getOwnerAccountId',
+        'status' => 'getStatus'
     ];
 
     /**
@@ -365,6 +370,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         $this->container['productOuterId'] = isset($data['productOuterId']) ? $data['productOuterId'] : null;
         $this->container['sourceReferenceId'] = isset($data['sourceReferenceId']) ? $data['sourceReferenceId'] : null;
         $this->container['ownerAccountId'] = isset($data['ownerAccountId']) ? $data['ownerAccountId'] : null;
+        $this->container['status'] = isset($data['status']) ? $data['status'] : null;
     }
 
     /**
@@ -1155,6 +1161,30 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     public function setOwnerAccountId($ownerAccountId)
     {
         $this->container['ownerAccountId'] = $ownerAccountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets status
+     *
+     * @return \TencentAds\Model\MediaStatusType
+     */
+    public function getStatus()
+    {
+        return $this->container['status'];
+    }
+
+    /**
+     * Sets status
+     *
+     * @param \TencentAds\Model\MediaStatusType $status status
+     *
+     * @return $this
+     */
+    public function setStatus($status)
+    {
+        $this->container['status'] = $status;
 
         return $this;
     }

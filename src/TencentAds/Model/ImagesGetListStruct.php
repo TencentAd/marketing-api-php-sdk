@@ -69,6 +69,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'productOuterId' => 'string',
         'sourceReferenceId' => 'string',
         'ownerAccountId' => 'string',
+        'status' => '\TencentAds\Model\MediaStatusType',
         'width' => 'int',
         'height' => 'int',
         'fileSize' => 'int',
@@ -93,6 +94,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'productOuterId' => null,
         'sourceReferenceId' => null,
         'ownerAccountId' => null,
+        'status' => null,
         'width' => 'int64',
         'height' => 'int64',
         'fileSize' => 'int64',
@@ -138,6 +140,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'productOuterId' => 'product_outer_id',
         'sourceReferenceId' => 'source_reference_id',
         'ownerAccountId' => 'owner_account_id',
+        'status' => 'status',
         'width' => 'width',
         'height' => 'height',
         'fileSize' => 'file_size',
@@ -162,6 +165,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'productOuterId' => 'setProductOuterId',
         'sourceReferenceId' => 'setSourceReferenceId',
         'ownerAccountId' => 'setOwnerAccountId',
+        'status' => 'setStatus',
         'width' => 'setWidth',
         'height' => 'setHeight',
         'fileSize' => 'setFileSize',
@@ -186,6 +190,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'productOuterId' => 'getProductOuterId',
         'sourceReferenceId' => 'getSourceReferenceId',
         'ownerAccountId' => 'getOwnerAccountId',
+        'status' => 'getStatus',
         'width' => 'getWidth',
         'height' => 'getHeight',
         'fileSize' => 'getFileSize',
@@ -264,6 +269,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['productOuterId'] = isset($data['productOuterId']) ? $data['productOuterId'] : null;
         $this->container['sourceReferenceId'] = isset($data['sourceReferenceId']) ? $data['sourceReferenceId'] : null;
         $this->container['ownerAccountId'] = isset($data['ownerAccountId']) ? $data['ownerAccountId'] : null;
+        $this->container['status'] = isset($data['status']) ? $data['status'] : null;
         $this->container['width'] = isset($data['width']) ? $data['width'] : null;
         $this->container['height'] = isset($data['height']) ? $data['height'] : null;
         $this->container['fileSize'] = isset($data['fileSize']) ? $data['fileSize'] : null;
@@ -555,6 +561,30 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     public function setOwnerAccountId($ownerAccountId)
     {
         $this->container['ownerAccountId'] = $ownerAccountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets status
+     *
+     * @return \TencentAds\Model\MediaStatusType
+     */
+    public function getStatus()
+    {
+        return $this->container['status'];
+    }
+
+    /**
+     * Sets status
+     *
+     * @param \TencentAds\Model\MediaStatusType $status status
+     *
+     * @return $this
+     */
+    public function setStatus($status)
+    {
+        $this->container['status'] = $status;
 
         return $this;
     }
