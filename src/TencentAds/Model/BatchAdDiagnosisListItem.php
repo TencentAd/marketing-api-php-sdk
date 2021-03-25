@@ -76,7 +76,14 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
         'operateSuggestionDesc' => 'string',
         'learningStatusDesc' => 'string',
         'exposureCompeteScoreDesc' => 'string',
-        'detail' => '\TencentAds\Model\ResponseDetailStruct'
+        'detail' => '\TencentAds\Model\ResponseDetailStruct',
+        'autoAcquisitionStatus' => '\TencentAds\Model\AutoAcquisitionStatus',
+        'autoAcquisitionStatusName' => 'string',
+        'autoAcquisitionStatusDesc' => 'string',
+        'autoAcquisitionBeginTime' => 'string',
+        'autoAcquisitionEndTime' => 'string',
+        'isPotential' => 'bool',
+        'potentialDetail' => '\TencentAds\Model\ResponsePotentialStruct'
     ];
 
     /**
@@ -103,7 +110,14 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
         'operateSuggestionDesc' => null,
         'learningStatusDesc' => null,
         'exposureCompeteScoreDesc' => null,
-        'detail' => null
+        'detail' => null,
+        'autoAcquisitionStatus' => null,
+        'autoAcquisitionStatusName' => null,
+        'autoAcquisitionStatusDesc' => null,
+        'autoAcquisitionBeginTime' => null,
+        'autoAcquisitionEndTime' => null,
+        'isPotential' => null,
+        'potentialDetail' => null
     ];
 
     /**
@@ -151,7 +165,14 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
         'operateSuggestionDesc' => 'operate_suggestion_desc',
         'learningStatusDesc' => 'learning_status_desc',
         'exposureCompeteScoreDesc' => 'exposure_compete_score_desc',
-        'detail' => 'detail'
+        'detail' => 'detail',
+        'autoAcquisitionStatus' => 'auto_acquisition_status',
+        'autoAcquisitionStatusName' => 'auto_acquisition_status_name',
+        'autoAcquisitionStatusDesc' => 'auto_acquisition_status_desc',
+        'autoAcquisitionBeginTime' => 'auto_acquisition_begin_time',
+        'autoAcquisitionEndTime' => 'auto_acquisition_end_time',
+        'isPotential' => 'is_potential',
+        'potentialDetail' => 'potential_detail'
     ];
 
     /**
@@ -178,7 +199,14 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
         'operateSuggestionDesc' => 'setOperateSuggestionDesc',
         'learningStatusDesc' => 'setLearningStatusDesc',
         'exposureCompeteScoreDesc' => 'setExposureCompeteScoreDesc',
-        'detail' => 'setDetail'
+        'detail' => 'setDetail',
+        'autoAcquisitionStatus' => 'setAutoAcquisitionStatus',
+        'autoAcquisitionStatusName' => 'setAutoAcquisitionStatusName',
+        'autoAcquisitionStatusDesc' => 'setAutoAcquisitionStatusDesc',
+        'autoAcquisitionBeginTime' => 'setAutoAcquisitionBeginTime',
+        'autoAcquisitionEndTime' => 'setAutoAcquisitionEndTime',
+        'isPotential' => 'setIsPotential',
+        'potentialDetail' => 'setPotentialDetail'
     ];
 
     /**
@@ -205,7 +233,14 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
         'operateSuggestionDesc' => 'getOperateSuggestionDesc',
         'learningStatusDesc' => 'getLearningStatusDesc',
         'exposureCompeteScoreDesc' => 'getExposureCompeteScoreDesc',
-        'detail' => 'getDetail'
+        'detail' => 'getDetail',
+        'autoAcquisitionStatus' => 'getAutoAcquisitionStatus',
+        'autoAcquisitionStatusName' => 'getAutoAcquisitionStatusName',
+        'autoAcquisitionStatusDesc' => 'getAutoAcquisitionStatusDesc',
+        'autoAcquisitionBeginTime' => 'getAutoAcquisitionBeginTime',
+        'autoAcquisitionEndTime' => 'getAutoAcquisitionEndTime',
+        'isPotential' => 'getIsPotential',
+        'potentialDetail' => 'getPotentialDetail'
     ];
 
     /**
@@ -287,6 +322,13 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
         $this->container['learningStatusDesc'] = isset($data['learningStatusDesc']) ? $data['learningStatusDesc'] : null;
         $this->container['exposureCompeteScoreDesc'] = isset($data['exposureCompeteScoreDesc']) ? $data['exposureCompeteScoreDesc'] : null;
         $this->container['detail'] = isset($data['detail']) ? $data['detail'] : null;
+        $this->container['autoAcquisitionStatus'] = isset($data['autoAcquisitionStatus']) ? $data['autoAcquisitionStatus'] : null;
+        $this->container['autoAcquisitionStatusName'] = isset($data['autoAcquisitionStatusName']) ? $data['autoAcquisitionStatusName'] : null;
+        $this->container['autoAcquisitionStatusDesc'] = isset($data['autoAcquisitionStatusDesc']) ? $data['autoAcquisitionStatusDesc'] : null;
+        $this->container['autoAcquisitionBeginTime'] = isset($data['autoAcquisitionBeginTime']) ? $data['autoAcquisitionBeginTime'] : null;
+        $this->container['autoAcquisitionEndTime'] = isset($data['autoAcquisitionEndTime']) ? $data['autoAcquisitionEndTime'] : null;
+        $this->container['isPotential'] = isset($data['isPotential']) ? $data['isPotential'] : null;
+        $this->container['potentialDetail'] = isset($data['potentialDetail']) ? $data['potentialDetail'] : null;
     }
 
     /**
@@ -765,6 +807,174 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     public function setDetail($detail)
     {
         $this->container['detail'] = $detail;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoAcquisitionStatus
+     *
+     * @return \TencentAds\Model\AutoAcquisitionStatus
+     */
+    public function getAutoAcquisitionStatus()
+    {
+        return $this->container['autoAcquisitionStatus'];
+    }
+
+    /**
+     * Sets autoAcquisitionStatus
+     *
+     * @param \TencentAds\Model\AutoAcquisitionStatus $autoAcquisitionStatus autoAcquisitionStatus
+     *
+     * @return $this
+     */
+    public function setAutoAcquisitionStatus($autoAcquisitionStatus)
+    {
+        $this->container['autoAcquisitionStatus'] = $autoAcquisitionStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoAcquisitionStatusName
+     *
+     * @return string
+     */
+    public function getAutoAcquisitionStatusName()
+    {
+        return $this->container['autoAcquisitionStatusName'];
+    }
+
+    /**
+     * Sets autoAcquisitionStatusName
+     *
+     * @param string $autoAcquisitionStatusName autoAcquisitionStatusName
+     *
+     * @return $this
+     */
+    public function setAutoAcquisitionStatusName($autoAcquisitionStatusName)
+    {
+        $this->container['autoAcquisitionStatusName'] = $autoAcquisitionStatusName;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoAcquisitionStatusDesc
+     *
+     * @return string
+     */
+    public function getAutoAcquisitionStatusDesc()
+    {
+        return $this->container['autoAcquisitionStatusDesc'];
+    }
+
+    /**
+     * Sets autoAcquisitionStatusDesc
+     *
+     * @param string $autoAcquisitionStatusDesc autoAcquisitionStatusDesc
+     *
+     * @return $this
+     */
+    public function setAutoAcquisitionStatusDesc($autoAcquisitionStatusDesc)
+    {
+        $this->container['autoAcquisitionStatusDesc'] = $autoAcquisitionStatusDesc;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoAcquisitionBeginTime
+     *
+     * @return string
+     */
+    public function getAutoAcquisitionBeginTime()
+    {
+        return $this->container['autoAcquisitionBeginTime'];
+    }
+
+    /**
+     * Sets autoAcquisitionBeginTime
+     *
+     * @param string $autoAcquisitionBeginTime autoAcquisitionBeginTime
+     *
+     * @return $this
+     */
+    public function setAutoAcquisitionBeginTime($autoAcquisitionBeginTime)
+    {
+        $this->container['autoAcquisitionBeginTime'] = $autoAcquisitionBeginTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoAcquisitionEndTime
+     *
+     * @return string
+     */
+    public function getAutoAcquisitionEndTime()
+    {
+        return $this->container['autoAcquisitionEndTime'];
+    }
+
+    /**
+     * Sets autoAcquisitionEndTime
+     *
+     * @param string $autoAcquisitionEndTime autoAcquisitionEndTime
+     *
+     * @return $this
+     */
+    public function setAutoAcquisitionEndTime($autoAcquisitionEndTime)
+    {
+        $this->container['autoAcquisitionEndTime'] = $autoAcquisitionEndTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets isPotential
+     *
+     * @return bool
+     */
+    public function getIsPotential()
+    {
+        return $this->container['isPotential'];
+    }
+
+    /**
+     * Sets isPotential
+     *
+     * @param bool $isPotential isPotential
+     *
+     * @return $this
+     */
+    public function setIsPotential($isPotential)
+    {
+        $this->container['isPotential'] = $isPotential;
+
+        return $this;
+    }
+
+    /**
+     * Gets potentialDetail
+     *
+     * @return \TencentAds\Model\ResponsePotentialStruct
+     */
+    public function getPotentialDetail()
+    {
+        return $this->container['potentialDetail'];
+    }
+
+    /**
+     * Sets potentialDetail
+     *
+     * @param \TencentAds\Model\ResponsePotentialStruct $potentialDetail potentialDetail
+     *
+     * @return $this
+     */
+    public function setPotentialDetail($potentialDetail)
+    {
+        $this->container['potentialDetail'] = $potentialDetail;
 
         return $this;
     }

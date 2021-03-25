@@ -45,13 +45,16 @@ class AdStatus
      * Possible values of this enum
      */
     const NORMAL = 'AD_STATUS_NORMAL';
-    const SUSPEND = 'AD_STATUS_SUSPEND';
-    const WITHDRAW = 'AD_STATUS_WITHDRAW';
     const PENDING = 'AD_STATUS_PENDING';
     const DENIED = 'AD_STATUS_DENIED';
     const FROZEN = 'AD_STATUS_FROZEN';
+    const PARTIALLY_PENDING = 'AD_STATUS_PARTIALLY_PENDING';
+    const PARTIALLY_NORMAL = 'AD_STATUS_PARTIALLY_NORMAL';
+    const SUSPEND = 'AD_STATUS_SUSPEND';
+    const INVALID = 'AD_STATUS_INVALID';
     const PREPARE = 'AD_STATUS_PREPARE';
     const DELETED = 'AD_STATUS_DELETED';
+    const WITHDRAW = 'AD_STATUS_WITHDRAW';
     
     /**
      * Gets allowable values of the enum
@@ -61,13 +64,16 @@ class AdStatus
     {
         return [
             self::NORMAL,
-            self::SUSPEND,
-            self::WITHDRAW,
             self::PENDING,
             self::DENIED,
             self::FROZEN,
+            self::PARTIALLY_PENDING,
+            self::PARTIALLY_NORMAL,
+            self::SUSPEND,
+            self::INVALID,
             self::PREPARE,
             self::DELETED,
+            self::WITHDRAW,
         ];
     }
 }
