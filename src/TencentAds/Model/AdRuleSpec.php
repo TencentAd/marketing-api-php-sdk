@@ -63,8 +63,8 @@ class AdRuleSpec implements ModelInterface, ArrayAccess
         'startDate' => 'string',
         'endDate' => 'string',
         'campaignIdList' => 'int[]',
-        'productList' => '\TencentAds\Model\AdProduct[]',
-        'adgroupIdList' => 'int[]'
+        'adgroupIdList' => 'int[]',
+        'promotedObjectList' => '\TencentAds\Model\AdProduct[]'
     ];
 
     /**
@@ -78,8 +78,8 @@ class AdRuleSpec implements ModelInterface, ArrayAccess
         'startDate' => null,
         'endDate' => null,
         'campaignIdList' => 'int64',
-        'productList' => null,
-        'adgroupIdList' => 'int64'
+        'adgroupIdList' => 'int64',
+        'promotedObjectList' => null
     ];
 
     /**
@@ -114,8 +114,8 @@ class AdRuleSpec implements ModelInterface, ArrayAccess
         'startDate' => 'start_date',
         'endDate' => 'end_date',
         'campaignIdList' => 'campaign_id_list',
-        'productList' => 'product_list',
-        'adgroupIdList' => 'adgroup_id_list'
+        'adgroupIdList' => 'adgroup_id_list',
+        'promotedObjectList' => 'promoted_object_list'
     ];
 
     /**
@@ -129,8 +129,8 @@ class AdRuleSpec implements ModelInterface, ArrayAccess
         'startDate' => 'setStartDate',
         'endDate' => 'setEndDate',
         'campaignIdList' => 'setCampaignIdList',
-        'productList' => 'setProductList',
-        'adgroupIdList' => 'setAdgroupIdList'
+        'adgroupIdList' => 'setAdgroupIdList',
+        'promotedObjectList' => 'setPromotedObjectList'
     ];
 
     /**
@@ -144,8 +144,8 @@ class AdRuleSpec implements ModelInterface, ArrayAccess
         'startDate' => 'getStartDate',
         'endDate' => 'getEndDate',
         'campaignIdList' => 'getCampaignIdList',
-        'productList' => 'getProductList',
-        'adgroupIdList' => 'getAdgroupIdList'
+        'adgroupIdList' => 'getAdgroupIdList',
+        'promotedObjectList' => 'getPromotedObjectList'
     ];
 
     /**
@@ -213,8 +213,8 @@ class AdRuleSpec implements ModelInterface, ArrayAccess
         $this->container['startDate'] = isset($data['startDate']) ? $data['startDate'] : null;
         $this->container['endDate'] = isset($data['endDate']) ? $data['endDate'] : null;
         $this->container['campaignIdList'] = isset($data['campaignIdList']) ? $data['campaignIdList'] : null;
-        $this->container['productList'] = isset($data['productList']) ? $data['productList'] : null;
         $this->container['adgroupIdList'] = isset($data['adgroupIdList']) ? $data['adgroupIdList'] : null;
+        $this->container['promotedObjectList'] = isset($data['promotedObjectList']) ? $data['promotedObjectList'] : null;
     }
 
     /**
@@ -362,30 +362,6 @@ class AdRuleSpec implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets productList
-     *
-     * @return \TencentAds\Model\AdProduct[]
-     */
-    public function getProductList()
-    {
-        return $this->container['productList'];
-    }
-
-    /**
-     * Sets productList
-     *
-     * @param \TencentAds\Model\AdProduct[] $productList productList
-     *
-     * @return $this
-     */
-    public function setProductList($productList)
-    {
-        $this->container['productList'] = $productList;
-
-        return $this;
-    }
-
-    /**
      * Gets adgroupIdList
      *
      * @return int[]
@@ -405,6 +381,30 @@ class AdRuleSpec implements ModelInterface, ArrayAccess
     public function setAdgroupIdList($adgroupIdList)
     {
         $this->container['adgroupIdList'] = $adgroupIdList;
+
+        return $this;
+    }
+
+    /**
+     * Gets promotedObjectList
+     *
+     * @return \TencentAds\Model\AdProduct[]
+     */
+    public function getPromotedObjectList()
+    {
+        return $this->container['promotedObjectList'];
+    }
+
+    /**
+     * Sets promotedObjectList
+     *
+     * @param \TencentAds\Model\AdProduct[] $promotedObjectList promotedObjectList
+     *
+     * @return $this
+     */
+    public function setPromotedObjectList($promotedObjectList)
+    {
+        $this->container['promotedObjectList'] = $promotedObjectList;
 
         return $this;
     }

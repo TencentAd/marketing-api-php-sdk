@@ -58,8 +58,8 @@ class AdProduct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'productType' => '\TencentAds\Model\AudienceProductType',
-        'productRefsId' => 'string'
+        'promotedObjectType' => '\TencentAds\Model\AudienceProductType',
+        'promotedObjectId' => 'string'
     ];
 
     /**
@@ -68,8 +68,8 @@ class AdProduct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'productType' => null,
-        'productRefsId' => null
+        'promotedObjectType' => null,
+        'promotedObjectId' => null
     ];
 
     /**
@@ -99,8 +99,8 @@ class AdProduct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'productType' => 'product_type',
-        'productRefsId' => 'product_refs_id'
+        'promotedObjectType' => 'promoted_object_type',
+        'promotedObjectId' => 'promoted_object_id'
     ];
 
     /**
@@ -109,8 +109,8 @@ class AdProduct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'productType' => 'setProductType',
-        'productRefsId' => 'setProductRefsId'
+        'promotedObjectType' => 'setPromotedObjectType',
+        'promotedObjectId' => 'setPromotedObjectId'
     ];
 
     /**
@@ -119,8 +119,8 @@ class AdProduct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'productType' => 'getProductType',
-        'productRefsId' => 'getProductRefsId'
+        'promotedObjectType' => 'getPromotedObjectType',
+        'promotedObjectId' => 'getPromotedObjectId'
     ];
 
     /**
@@ -183,8 +183,8 @@ class AdProduct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['productType'] = isset($data['productType']) ? $data['productType'] : null;
-        $this->container['productRefsId'] = isset($data['productRefsId']) ? $data['productRefsId'] : null;
+        $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
+        $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
     }
 
     /**
@@ -212,49 +212,49 @@ class AdProduct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets productType
+     * Gets promotedObjectType
      *
      * @return \TencentAds\Model\AudienceProductType
      */
-    public function getProductType()
+    public function getPromotedObjectType()
     {
-        return $this->container['productType'];
+        return $this->container['promotedObjectType'];
     }
 
     /**
-     * Sets productType
+     * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\AudienceProductType $productType productType
+     * @param \TencentAds\Model\AudienceProductType $promotedObjectType promotedObjectType
      *
      * @return $this
      */
-    public function setProductType($productType)
+    public function setPromotedObjectType($promotedObjectType)
     {
-        $this->container['productType'] = $productType;
+        $this->container['promotedObjectType'] = $promotedObjectType;
 
         return $this;
     }
 
     /**
-     * Gets productRefsId
+     * Gets promotedObjectId
      *
      * @return string
      */
-    public function getProductRefsId()
+    public function getPromotedObjectId()
     {
-        return $this->container['productRefsId'];
+        return $this->container['promotedObjectId'];
     }
 
     /**
-     * Sets productRefsId
+     * Sets promotedObjectId
      *
-     * @param string $productRefsId productRefsId
+     * @param string $promotedObjectId promotedObjectId
      *
      * @return $this
      */
-    public function setProductRefsId($productRefsId)
+    public function setPromotedObjectId($promotedObjectId)
     {
-        $this->container['productRefsId'] = $productRefsId;
+        $this->container['promotedObjectId'] = $promotedObjectId;
 
         return $this;
     }

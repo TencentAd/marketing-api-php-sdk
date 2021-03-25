@@ -61,7 +61,6 @@ class CustomAudience implements ModelInterface, ArrayAccess
         'audienceId' => 'int',
         'accountId' => 'int',
         'name' => 'string',
-        'outerAudienceId' => 'string',
         'description' => 'string',
         'type' => '\TencentAds\Model\AudienceType',
         'status' => '\TencentAds\Model\ProcessStatus',
@@ -69,7 +68,8 @@ class CustomAudience implements ModelInterface, ArrayAccess
         'userCount' => 'int',
         'createdTime' => 'string',
         'lastModifiedTime' => 'string',
-        'audienceSpec' => '\TencentAds\Model\AudienceSpec'
+        'audienceSpec' => '\TencentAds\Model\AudienceSpec',
+        'externalAudienceId' => 'string'
     ];
 
     /**
@@ -81,7 +81,6 @@ class CustomAudience implements ModelInterface, ArrayAccess
         'audienceId' => 'int64',
         'accountId' => 'int64',
         'name' => null,
-        'outerAudienceId' => null,
         'description' => null,
         'type' => null,
         'status' => null,
@@ -89,7 +88,8 @@ class CustomAudience implements ModelInterface, ArrayAccess
         'userCount' => 'int64',
         'createdTime' => null,
         'lastModifiedTime' => null,
-        'audienceSpec' => null
+        'audienceSpec' => null,
+        'externalAudienceId' => null
     ];
 
     /**
@@ -122,7 +122,6 @@ class CustomAudience implements ModelInterface, ArrayAccess
         'audienceId' => 'audience_id',
         'accountId' => 'account_id',
         'name' => 'name',
-        'outerAudienceId' => 'outer_audience_id',
         'description' => 'description',
         'type' => 'type',
         'status' => 'status',
@@ -130,7 +129,8 @@ class CustomAudience implements ModelInterface, ArrayAccess
         'userCount' => 'user_count',
         'createdTime' => 'created_time',
         'lastModifiedTime' => 'last_modified_time',
-        'audienceSpec' => 'audience_spec'
+        'audienceSpec' => 'audience_spec',
+        'externalAudienceId' => 'external_audience_id'
     ];
 
     /**
@@ -142,7 +142,6 @@ class CustomAudience implements ModelInterface, ArrayAccess
         'audienceId' => 'setAudienceId',
         'accountId' => 'setAccountId',
         'name' => 'setName',
-        'outerAudienceId' => 'setOuterAudienceId',
         'description' => 'setDescription',
         'type' => 'setType',
         'status' => 'setStatus',
@@ -150,7 +149,8 @@ class CustomAudience implements ModelInterface, ArrayAccess
         'userCount' => 'setUserCount',
         'createdTime' => 'setCreatedTime',
         'lastModifiedTime' => 'setLastModifiedTime',
-        'audienceSpec' => 'setAudienceSpec'
+        'audienceSpec' => 'setAudienceSpec',
+        'externalAudienceId' => 'setExternalAudienceId'
     ];
 
     /**
@@ -162,7 +162,6 @@ class CustomAudience implements ModelInterface, ArrayAccess
         'audienceId' => 'getAudienceId',
         'accountId' => 'getAccountId',
         'name' => 'getName',
-        'outerAudienceId' => 'getOuterAudienceId',
         'description' => 'getDescription',
         'type' => 'getType',
         'status' => 'getStatus',
@@ -170,7 +169,8 @@ class CustomAudience implements ModelInterface, ArrayAccess
         'userCount' => 'getUserCount',
         'createdTime' => 'getCreatedTime',
         'lastModifiedTime' => 'getLastModifiedTime',
-        'audienceSpec' => 'getAudienceSpec'
+        'audienceSpec' => 'getAudienceSpec',
+        'externalAudienceId' => 'getExternalAudienceId'
     ];
 
     /**
@@ -236,7 +236,6 @@ class CustomAudience implements ModelInterface, ArrayAccess
         $this->container['audienceId'] = isset($data['audienceId']) ? $data['audienceId'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['name'] = isset($data['name']) ? $data['name'] : null;
-        $this->container['outerAudienceId'] = isset($data['outerAudienceId']) ? $data['outerAudienceId'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
         $this->container['type'] = isset($data['type']) ? $data['type'] : null;
         $this->container['status'] = isset($data['status']) ? $data['status'] : null;
@@ -245,6 +244,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
         $this->container['audienceSpec'] = isset($data['audienceSpec']) ? $data['audienceSpec'] : null;
+        $this->container['externalAudienceId'] = isset($data['externalAudienceId']) ? $data['externalAudienceId'] : null;
     }
 
     /**
@@ -339,30 +339,6 @@ class CustomAudience implements ModelInterface, ArrayAccess
     public function setName($name)
     {
         $this->container['name'] = $name;
-
-        return $this;
-    }
-
-    /**
-     * Gets outerAudienceId
-     *
-     * @return string
-     */
-    public function getOuterAudienceId()
-    {
-        return $this->container['outerAudienceId'];
-    }
-
-    /**
-     * Sets outerAudienceId
-     *
-     * @param string $outerAudienceId outerAudienceId
-     *
-     * @return $this
-     */
-    public function setOuterAudienceId($outerAudienceId)
-    {
-        $this->container['outerAudienceId'] = $outerAudienceId;
 
         return $this;
     }
@@ -555,6 +531,30 @@ class CustomAudience implements ModelInterface, ArrayAccess
     public function setAudienceSpec($audienceSpec)
     {
         $this->container['audienceSpec'] = $audienceSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets externalAudienceId
+     *
+     * @return string
+     */
+    public function getExternalAudienceId()
+    {
+        return $this->container['externalAudienceId'];
+    }
+
+    /**
+     * Sets externalAudienceId
+     *
+     * @param string $externalAudienceId externalAudienceId
+     *
+     * @return $this
+     */
+    public function setExternalAudienceId($externalAudienceId)
+    {
+        $this->container['externalAudienceId'] = $externalAudienceId;
 
         return $this;
     }

@@ -60,10 +60,10 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'int',
         'name' => 'string',
         'type' => '\TencentAds\Model\AudienceType',
-        'outerAudienceId' => 'string',
         'description' => 'string',
         'audienceSpec' => '\TencentAds\Model\AudienceSpec',
-        'platform' => '\TencentAds\Model\DataPlatform'
+        'platform' => '\TencentAds\Model\DataPlatform',
+        'externalAudienceId' => 'string'
     ];
 
     /**
@@ -75,10 +75,10 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'int64',
         'name' => null,
         'type' => null,
-        'outerAudienceId' => null,
         'description' => null,
         'audienceSpec' => null,
-        'platform' => null
+        'platform' => null,
+        'externalAudienceId' => null
     ];
 
     /**
@@ -111,10 +111,10 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'account_id',
         'name' => 'name',
         'type' => 'type',
-        'outerAudienceId' => 'outer_audience_id',
         'description' => 'description',
         'audienceSpec' => 'audience_spec',
-        'platform' => 'platform'
+        'platform' => 'platform',
+        'externalAudienceId' => 'external_audience_id'
     ];
 
     /**
@@ -126,10 +126,10 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'setAccountId',
         'name' => 'setName',
         'type' => 'setType',
-        'outerAudienceId' => 'setOuterAudienceId',
         'description' => 'setDescription',
         'audienceSpec' => 'setAudienceSpec',
-        'platform' => 'setPlatform'
+        'platform' => 'setPlatform',
+        'externalAudienceId' => 'setExternalAudienceId'
     ];
 
     /**
@@ -141,10 +141,10 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'getAccountId',
         'name' => 'getName',
         'type' => 'getType',
-        'outerAudienceId' => 'getOuterAudienceId',
         'description' => 'getDescription',
         'audienceSpec' => 'getAudienceSpec',
-        'platform' => 'getPlatform'
+        'platform' => 'getPlatform',
+        'externalAudienceId' => 'getExternalAudienceId'
     ];
 
     /**
@@ -210,10 +210,10 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['name'] = isset($data['name']) ? $data['name'] : null;
         $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['outerAudienceId'] = isset($data['outerAudienceId']) ? $data['outerAudienceId'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
         $this->container['audienceSpec'] = isset($data['audienceSpec']) ? $data['audienceSpec'] : null;
         $this->container['platform'] = isset($data['platform']) ? $data['platform'] : null;
+        $this->container['externalAudienceId'] = isset($data['externalAudienceId']) ? $data['externalAudienceId'] : null;
     }
 
     /**
@@ -313,30 +313,6 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets outerAudienceId
-     *
-     * @return string
-     */
-    public function getOuterAudienceId()
-    {
-        return $this->container['outerAudienceId'];
-    }
-
-    /**
-     * Sets outerAudienceId
-     *
-     * @param string $outerAudienceId outerAudienceId
-     *
-     * @return $this
-     */
-    public function setOuterAudienceId($outerAudienceId)
-    {
-        $this->container['outerAudienceId'] = $outerAudienceId;
-
-        return $this;
-    }
-
-    /**
      * Gets description
      *
      * @return string
@@ -404,6 +380,30 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
     public function setPlatform($platform)
     {
         $this->container['platform'] = $platform;
+
+        return $this;
+    }
+
+    /**
+     * Gets externalAudienceId
+     *
+     * @return string
+     */
+    public function getExternalAudienceId()
+    {
+        return $this->container['externalAudienceId'];
+    }
+
+    /**
+     * Sets externalAudienceId
+     *
+     * @param string $externalAudienceId externalAudienceId
+     *
+     * @return $this
+     */
+    public function setExternalAudienceId($externalAudienceId)
+    {
+        $this->container['externalAudienceId'] = $externalAudienceId;
 
         return $this;
     }
