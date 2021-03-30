@@ -1,6 +1,6 @@
 <?php
 /**
- * AppAndroidSpec
+ * SceneSpecTagsGetResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AppAndroidSpec Class Doc Comment
+ * SceneSpecTagsGetResponseData Class Doc Comment
  *
  * @category Class
- * @description Android应用信息元素
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AppAndroidSpec implements ModelInterface, ArrayAccess
+class SceneSpecTagsGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'app_android_spec';
+    protected static $swaggerModelName = 'SceneSpecTagsGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +57,7 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'deepLinkUrl' => 'string',
-        'appAndroidId' => 'string',
-        'appAndroidChannelPackageId' => 'string',
-        'appMarketPackage' => 'string'
+        'list' => '\TencentAds\Model\SceneSpecTagsGetListStruct[]'
     ];
 
     /**
@@ -70,10 +66,7 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'deepLinkUrl' => null,
-        'appAndroidId' => null,
-        'appAndroidChannelPackageId' => null,
-        'appMarketPackage' => null
+        'list' => null
     ];
 
     /**
@@ -103,10 +96,7 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'deepLinkUrl' => 'deep_link_url',
-        'appAndroidId' => 'app_android_id',
-        'appAndroidChannelPackageId' => 'app_android_channel_package_id',
-        'appMarketPackage' => 'app_market_package'
+        'list' => 'list'
     ];
 
     /**
@@ -115,10 +105,7 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'deepLinkUrl' => 'setDeepLinkUrl',
-        'appAndroidId' => 'setAppAndroidId',
-        'appAndroidChannelPackageId' => 'setAppAndroidChannelPackageId',
-        'appMarketPackage' => 'setAppMarketPackage'
+        'list' => 'setList'
     ];
 
     /**
@@ -127,10 +114,7 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'deepLinkUrl' => 'getDeepLinkUrl',
-        'appAndroidId' => 'getAppAndroidId',
-        'appAndroidChannelPackageId' => 'getAppAndroidChannelPackageId',
-        'appMarketPackage' => 'getAppMarketPackage'
+        'list' => 'getList'
     ];
 
     /**
@@ -193,10 +177,7 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['deepLinkUrl'] = isset($data['deepLinkUrl']) ? $data['deepLinkUrl'] : null;
-        $this->container['appAndroidId'] = isset($data['appAndroidId']) ? $data['appAndroidId'] : null;
-        $this->container['appAndroidChannelPackageId'] = isset($data['appAndroidChannelPackageId']) ? $data['appAndroidChannelPackageId'] : null;
-        $this->container['appMarketPackage'] = isset($data['appMarketPackage']) ? $data['appMarketPackage'] : null;
+        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
     }
 
     /**
@@ -224,97 +205,25 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets deepLinkUrl
+     * Gets list
      *
-     * @return string
+     * @return \TencentAds\Model\SceneSpecTagsGetListStruct[]
      */
-    public function getDeepLinkUrl()
+    public function getList()
     {
-        return $this->container['deepLinkUrl'];
+        return $this->container['list'];
     }
 
     /**
-     * Sets deepLinkUrl
+     * Sets list
      *
-     * @param string $deepLinkUrl deepLinkUrl
+     * @param \TencentAds\Model\SceneSpecTagsGetListStruct[] $list list
      *
      * @return $this
      */
-    public function setDeepLinkUrl($deepLinkUrl)
+    public function setList($list)
     {
-        $this->container['deepLinkUrl'] = $deepLinkUrl;
-
-        return $this;
-    }
-
-    /**
-     * Gets appAndroidId
-     *
-     * @return string
-     */
-    public function getAppAndroidId()
-    {
-        return $this->container['appAndroidId'];
-    }
-
-    /**
-     * Sets appAndroidId
-     *
-     * @param string $appAndroidId appAndroidId
-     *
-     * @return $this
-     */
-    public function setAppAndroidId($appAndroidId)
-    {
-        $this->container['appAndroidId'] = $appAndroidId;
-
-        return $this;
-    }
-
-    /**
-     * Gets appAndroidChannelPackageId
-     *
-     * @return string
-     */
-    public function getAppAndroidChannelPackageId()
-    {
-        return $this->container['appAndroidChannelPackageId'];
-    }
-
-    /**
-     * Sets appAndroidChannelPackageId
-     *
-     * @param string $appAndroidChannelPackageId appAndroidChannelPackageId
-     *
-     * @return $this
-     */
-    public function setAppAndroidChannelPackageId($appAndroidChannelPackageId)
-    {
-        $this->container['appAndroidChannelPackageId'] = $appAndroidChannelPackageId;
-
-        return $this;
-    }
-
-    /**
-     * Gets appMarketPackage
-     *
-     * @return string
-     */
-    public function getAppMarketPackage()
-    {
-        return $this->container['appMarketPackage'];
-    }
-
-    /**
-     * Sets appMarketPackage
-     *
-     * @param string $appMarketPackage appMarketPackage
-     *
-     * @return $this
-     */
-    public function setAppMarketPackage($appMarketPackage)
-    {
-        $this->container['appMarketPackage'] = $appMarketPackage;
+        $this->container['list'] = $list;
 
         return $this;
     }

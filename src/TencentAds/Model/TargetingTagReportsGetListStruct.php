@@ -228,6 +228,9 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'purchaseAmountWithCoupon' => 'int',
         'purchaseAmountWithCouponCost' => 'int',
         'miniGamePayingAmountClickD1ByUpload' => 'int',
+        'miniGameRetentionD1Rate' => 'double',
+        'miniGameRetentionD1Cost' => 'int',
+        'keyPageViewRate' => 'double',
         'age' => 'string',
         'regionId' => 'int',
         'cityId' => 'int',
@@ -571,6 +574,9 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'purchaseAmountWithCoupon' => 'int64',
         'purchaseAmountWithCouponCost' => 'int64',
         'miniGamePayingAmountClickD1ByUpload' => 'int64',
+        'miniGameRetentionD1Rate' => 'double',
+        'miniGameRetentionD1Cost' => 'int64',
+        'keyPageViewRate' => 'double',
         'age' => null,
         'regionId' => 'int64',
         'cityId' => 'int64',
@@ -935,6 +941,9 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'purchaseAmountWithCoupon' => 'purchase_amount_with_coupon',
         'purchaseAmountWithCouponCost' => 'purchase_amount_with_coupon_cost',
         'miniGamePayingAmountClickD1ByUpload' => 'mini_game_paying_amount_click_d1_by_upload',
+        'miniGameRetentionD1Rate' => 'mini_game_retention_d1_rate',
+        'miniGameRetentionD1Cost' => 'mini_game_retention_d1_cost',
+        'keyPageViewRate' => 'key_page_view_rate',
         'age' => 'age',
         'regionId' => 'region_id',
         'cityId' => 'city_id',
@@ -1278,6 +1287,9 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'purchaseAmountWithCoupon' => 'setPurchaseAmountWithCoupon',
         'purchaseAmountWithCouponCost' => 'setPurchaseAmountWithCouponCost',
         'miniGamePayingAmountClickD1ByUpload' => 'setMiniGamePayingAmountClickD1ByUpload',
+        'miniGameRetentionD1Rate' => 'setMiniGameRetentionD1Rate',
+        'miniGameRetentionD1Cost' => 'setMiniGameRetentionD1Cost',
+        'keyPageViewRate' => 'setKeyPageViewRate',
         'age' => 'setAge',
         'regionId' => 'setRegionId',
         'cityId' => 'setCityId',
@@ -1621,6 +1633,9 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'purchaseAmountWithCoupon' => 'getPurchaseAmountWithCoupon',
         'purchaseAmountWithCouponCost' => 'getPurchaseAmountWithCouponCost',
         'miniGamePayingAmountClickD1ByUpload' => 'getMiniGamePayingAmountClickD1ByUpload',
+        'miniGameRetentionD1Rate' => 'getMiniGameRetentionD1Rate',
+        'miniGameRetentionD1Cost' => 'getMiniGameRetentionD1Cost',
+        'keyPageViewRate' => 'getKeyPageViewRate',
         'age' => 'getAge',
         'regionId' => 'getRegionId',
         'cityId' => 'getCityId',
@@ -2018,6 +2033,9 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['purchaseAmountWithCoupon'] = isset($data['purchaseAmountWithCoupon']) ? $data['purchaseAmountWithCoupon'] : null;
         $this->container['purchaseAmountWithCouponCost'] = isset($data['purchaseAmountWithCouponCost']) ? $data['purchaseAmountWithCouponCost'] : null;
         $this->container['miniGamePayingAmountClickD1ByUpload'] = isset($data['miniGamePayingAmountClickD1ByUpload']) ? $data['miniGamePayingAmountClickD1ByUpload'] : null;
+        $this->container['miniGameRetentionD1Rate'] = isset($data['miniGameRetentionD1Rate']) ? $data['miniGameRetentionD1Rate'] : null;
+        $this->container['miniGameRetentionD1Cost'] = isset($data['miniGameRetentionD1Cost']) ? $data['miniGameRetentionD1Cost'] : null;
+        $this->container['keyPageViewRate'] = isset($data['keyPageViewRate']) ? $data['keyPageViewRate'] : null;
         $this->container['age'] = isset($data['age']) ? $data['age'] : null;
         $this->container['regionId'] = isset($data['regionId']) ? $data['regionId'] : null;
         $this->container['cityId'] = isset($data['cityId']) ? $data['cityId'] : null;
@@ -6285,6 +6303,78 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setMiniGamePayingAmountClickD1ByUpload($miniGamePayingAmountClickD1ByUpload)
     {
         $this->container['miniGamePayingAmountClickD1ByUpload'] = $miniGamePayingAmountClickD1ByUpload;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameRetentionD1Rate
+     *
+     * @return double
+     */
+    public function getMiniGameRetentionD1Rate()
+    {
+        return $this->container['miniGameRetentionD1Rate'];
+    }
+
+    /**
+     * Sets miniGameRetentionD1Rate
+     *
+     * @param double $miniGameRetentionD1Rate miniGameRetentionD1Rate
+     *
+     * @return $this
+     */
+    public function setMiniGameRetentionD1Rate($miniGameRetentionD1Rate)
+    {
+        $this->container['miniGameRetentionD1Rate'] = $miniGameRetentionD1Rate;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameRetentionD1Cost
+     *
+     * @return int
+     */
+    public function getMiniGameRetentionD1Cost()
+    {
+        return $this->container['miniGameRetentionD1Cost'];
+    }
+
+    /**
+     * Sets miniGameRetentionD1Cost
+     *
+     * @param int $miniGameRetentionD1Cost miniGameRetentionD1Cost
+     *
+     * @return $this
+     */
+    public function setMiniGameRetentionD1Cost($miniGameRetentionD1Cost)
+    {
+        $this->container['miniGameRetentionD1Cost'] = $miniGameRetentionD1Cost;
+
+        return $this;
+    }
+
+    /**
+     * Gets keyPageViewRate
+     *
+     * @return double
+     */
+    public function getKeyPageViewRate()
+    {
+        return $this->container['keyPageViewRate'];
+    }
+
+    /**
+     * Sets keyPageViewRate
+     *
+     * @param double $keyPageViewRate keyPageViewRate
+     *
+     * @return $this
+     */
+    public function setKeyPageViewRate($keyPageViewRate)
+    {
+        $this->container['keyPageViewRate'] = $keyPageViewRate;
 
         return $this;
     }

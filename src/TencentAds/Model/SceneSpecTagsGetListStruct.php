@@ -1,6 +1,6 @@
 <?php
 /**
- * AppAndroidSpec
+ * SceneSpecTagsGetListStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AppAndroidSpec Class Doc Comment
+ * SceneSpecTagsGetListStruct Class Doc Comment
  *
  * @category Class
- * @description Android应用信息元素
+ * @description 返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AppAndroidSpec implements ModelInterface, ArrayAccess
+class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'app_android_spec';
+    protected static $swaggerModelName = 'SceneSpecTagsGetListStruct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +58,11 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'deepLinkUrl' => 'string',
-        'appAndroidId' => 'string',
-        'appAndroidChannelPackageId' => 'string',
-        'appMarketPackage' => 'string'
+        'id' => 'int',
+        'name' => 'string',
+        'desc' => 'string',
+        'parentId' => 'int',
+        'targetingName' => 'string'
     ];
 
     /**
@@ -70,10 +71,11 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'deepLinkUrl' => null,
-        'appAndroidId' => null,
-        'appAndroidChannelPackageId' => null,
-        'appMarketPackage' => null
+        'id' => 'int64',
+        'name' => null,
+        'desc' => null,
+        'parentId' => 'int64',
+        'targetingName' => null
     ];
 
     /**
@@ -103,10 +105,11 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'deepLinkUrl' => 'deep_link_url',
-        'appAndroidId' => 'app_android_id',
-        'appAndroidChannelPackageId' => 'app_android_channel_package_id',
-        'appMarketPackage' => 'app_market_package'
+        'id' => 'id',
+        'name' => 'name',
+        'desc' => 'desc',
+        'parentId' => 'parent_id',
+        'targetingName' => 'targeting_name'
     ];
 
     /**
@@ -115,10 +118,11 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'deepLinkUrl' => 'setDeepLinkUrl',
-        'appAndroidId' => 'setAppAndroidId',
-        'appAndroidChannelPackageId' => 'setAppAndroidChannelPackageId',
-        'appMarketPackage' => 'setAppMarketPackage'
+        'id' => 'setId',
+        'name' => 'setName',
+        'desc' => 'setDesc',
+        'parentId' => 'setParentId',
+        'targetingName' => 'setTargetingName'
     ];
 
     /**
@@ -127,10 +131,11 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'deepLinkUrl' => 'getDeepLinkUrl',
-        'appAndroidId' => 'getAppAndroidId',
-        'appAndroidChannelPackageId' => 'getAppAndroidChannelPackageId',
-        'appMarketPackage' => 'getAppMarketPackage'
+        'id' => 'getId',
+        'name' => 'getName',
+        'desc' => 'getDesc',
+        'parentId' => 'getParentId',
+        'targetingName' => 'getTargetingName'
     ];
 
     /**
@@ -193,10 +198,11 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['deepLinkUrl'] = isset($data['deepLinkUrl']) ? $data['deepLinkUrl'] : null;
-        $this->container['appAndroidId'] = isset($data['appAndroidId']) ? $data['appAndroidId'] : null;
-        $this->container['appAndroidChannelPackageId'] = isset($data['appAndroidChannelPackageId']) ? $data['appAndroidChannelPackageId'] : null;
-        $this->container['appMarketPackage'] = isset($data['appMarketPackage']) ? $data['appMarketPackage'] : null;
+        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
+        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
+        $this->container['desc'] = isset($data['desc']) ? $data['desc'] : null;
+        $this->container['parentId'] = isset($data['parentId']) ? $data['parentId'] : null;
+        $this->container['targetingName'] = isset($data['targetingName']) ? $data['targetingName'] : null;
     }
 
     /**
@@ -224,97 +230,121 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets deepLinkUrl
+     * Gets id
      *
-     * @return string
+     * @return int
      */
-    public function getDeepLinkUrl()
+    public function getId()
     {
-        return $this->container['deepLinkUrl'];
+        return $this->container['id'];
     }
 
     /**
-     * Sets deepLinkUrl
+     * Sets id
      *
-     * @param string $deepLinkUrl deepLinkUrl
+     * @param int $id id
      *
      * @return $this
      */
-    public function setDeepLinkUrl($deepLinkUrl)
+    public function setId($id)
     {
-        $this->container['deepLinkUrl'] = $deepLinkUrl;
+        $this->container['id'] = $id;
 
         return $this;
     }
 
     /**
-     * Gets appAndroidId
+     * Gets name
      *
      * @return string
      */
-    public function getAppAndroidId()
+    public function getName()
     {
-        return $this->container['appAndroidId'];
+        return $this->container['name'];
     }
 
     /**
-     * Sets appAndroidId
+     * Sets name
      *
-     * @param string $appAndroidId appAndroidId
+     * @param string $name name
      *
      * @return $this
      */
-    public function setAppAndroidId($appAndroidId)
+    public function setName($name)
     {
-        $this->container['appAndroidId'] = $appAndroidId;
+        $this->container['name'] = $name;
 
         return $this;
     }
 
     /**
-     * Gets appAndroidChannelPackageId
+     * Gets desc
      *
      * @return string
      */
-    public function getAppAndroidChannelPackageId()
+    public function getDesc()
     {
-        return $this->container['appAndroidChannelPackageId'];
+        return $this->container['desc'];
     }
 
     /**
-     * Sets appAndroidChannelPackageId
+     * Sets desc
      *
-     * @param string $appAndroidChannelPackageId appAndroidChannelPackageId
+     * @param string $desc desc
      *
      * @return $this
      */
-    public function setAppAndroidChannelPackageId($appAndroidChannelPackageId)
+    public function setDesc($desc)
     {
-        $this->container['appAndroidChannelPackageId'] = $appAndroidChannelPackageId;
+        $this->container['desc'] = $desc;
 
         return $this;
     }
 
     /**
-     * Gets appMarketPackage
+     * Gets parentId
      *
-     * @return string
+     * @return int
      */
-    public function getAppMarketPackage()
+    public function getParentId()
     {
-        return $this->container['appMarketPackage'];
+        return $this->container['parentId'];
     }
 
     /**
-     * Sets appMarketPackage
+     * Sets parentId
      *
-     * @param string $appMarketPackage appMarketPackage
+     * @param int $parentId parentId
      *
      * @return $this
      */
-    public function setAppMarketPackage($appMarketPackage)
+    public function setParentId($parentId)
     {
-        $this->container['appMarketPackage'] = $appMarketPackage;
+        $this->container['parentId'] = $parentId;
+
+        return $this;
+    }
+
+    /**
+     * Gets targetingName
+     *
+     * @return string
+     */
+    public function getTargetingName()
+    {
+        return $this->container['targetingName'];
+    }
+
+    /**
+     * Sets targetingName
+     *
+     * @param string $targetingName targetingName
+     *
+     * @return $this
+     */
+    public function setTargetingName($targetingName)
+    {
+        $this->container['targetingName'] = $targetingName;
 
         return $this;
     }

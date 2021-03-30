@@ -96,6 +96,7 @@ use TencentAds\Container\PromotedObjectsApiContainer;
 use TencentAds\Container\QualificationsApiContainer;
 use TencentAds\Container\RealtimeCostApiContainer;
 use TencentAds\Container\ReportApiContainer;
+use TencentAds\Container\SceneSpecTagsApiContainer;
 use TencentAds\Container\ShopApiContainer;
 use TencentAds\Container\SplitTestsApiContainer;
 use TencentAds\Container\SystemStatusApiContainer;
@@ -421,6 +422,9 @@ class App
 
     /** @var ReportApiContainer */
     public $reportApiContainer;
+
+    /** @var SceneSpecTagsApiContainer */
+    public $sceneSpecTagsApiContainer;
 
     /** @var ShopApiContainer */
     public $shopApiContainer;
@@ -1862,6 +1866,20 @@ class App
             $this->reportApiContainer = $container;
         }
         return $this->reportApiContainer;
+    }
+
+
+    /**
+     * @return SceneSpecTagsApiContainer
+     */
+    public function sceneSpecTags()
+    {
+        if (empty($this->sceneSpecTagsApiContainer)) {
+            $container = new SceneSpecTagsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->sceneSpecTagsApiContainer = $container;
+        }
+        return $this->sceneSpecTagsApiContainer;
     }
 
 

@@ -340,6 +340,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'purchaseAmountWithCoupon' => 'int',
         'purchaseAmountWithCouponCost' => 'int',
         'miniGamePayingAmountClickD1ByUpload' => 'int',
+        'miniGameRetentionD1Rate' => 'double',
+        'miniGameRetentionD1Cost' => 'int',
+        'keyPageViewRate' => 'double',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
         'incomeRoi1' => 'double',
@@ -760,6 +763,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'purchaseAmountWithCoupon' => 'int64',
         'purchaseAmountWithCouponCost' => 'int64',
         'miniGamePayingAmountClickD1ByUpload' => 'int64',
+        'miniGameRetentionD1Rate' => 'double',
+        'miniGameRetentionD1Cost' => 'int64',
+        'keyPageViewRate' => 'double',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
         'incomeRoi1' => 'double',
@@ -1201,6 +1207,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'purchaseAmountWithCoupon' => 'purchase_amount_with_coupon',
         'purchaseAmountWithCouponCost' => 'purchase_amount_with_coupon_cost',
         'miniGamePayingAmountClickD1ByUpload' => 'mini_game_paying_amount_click_d1_by_upload',
+        'miniGameRetentionD1Rate' => 'mini_game_retention_d1_rate',
+        'miniGameRetentionD1Cost' => 'mini_game_retention_d1_cost',
+        'keyPageViewRate' => 'key_page_view_rate',
         'requestConversionsCount' => 'request_conversions_count',
         'requestConversionsCost' => 'request_conversions_cost',
         'incomeRoi1' => 'income_roi_1',
@@ -1621,6 +1630,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'purchaseAmountWithCoupon' => 'setPurchaseAmountWithCoupon',
         'purchaseAmountWithCouponCost' => 'setPurchaseAmountWithCouponCost',
         'miniGamePayingAmountClickD1ByUpload' => 'setMiniGamePayingAmountClickD1ByUpload',
+        'miniGameRetentionD1Rate' => 'setMiniGameRetentionD1Rate',
+        'miniGameRetentionD1Cost' => 'setMiniGameRetentionD1Cost',
+        'keyPageViewRate' => 'setKeyPageViewRate',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'requestConversionsCost' => 'setRequestConversionsCost',
         'incomeRoi1' => 'setIncomeRoi1',
@@ -2041,6 +2053,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'purchaseAmountWithCoupon' => 'getPurchaseAmountWithCoupon',
         'purchaseAmountWithCouponCost' => 'getPurchaseAmountWithCouponCost',
         'miniGamePayingAmountClickD1ByUpload' => 'getMiniGamePayingAmountClickD1ByUpload',
+        'miniGameRetentionD1Rate' => 'getMiniGameRetentionD1Rate',
+        'miniGameRetentionD1Cost' => 'getMiniGameRetentionD1Cost',
+        'keyPageViewRate' => 'getKeyPageViewRate',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'requestConversionsCost' => 'getRequestConversionsCost',
         'incomeRoi1' => 'getIncomeRoi1',
@@ -2515,6 +2530,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['purchaseAmountWithCoupon'] = isset($data['purchaseAmountWithCoupon']) ? $data['purchaseAmountWithCoupon'] : null;
         $this->container['purchaseAmountWithCouponCost'] = isset($data['purchaseAmountWithCouponCost']) ? $data['purchaseAmountWithCouponCost'] : null;
         $this->container['miniGamePayingAmountClickD1ByUpload'] = isset($data['miniGamePayingAmountClickD1ByUpload']) ? $data['miniGamePayingAmountClickD1ByUpload'] : null;
+        $this->container['miniGameRetentionD1Rate'] = isset($data['miniGameRetentionD1Rate']) ? $data['miniGameRetentionD1Rate'] : null;
+        $this->container['miniGameRetentionD1Cost'] = isset($data['miniGameRetentionD1Cost']) ? $data['miniGameRetentionD1Cost'] : null;
+        $this->container['keyPageViewRate'] = isset($data['keyPageViewRate']) ? $data['keyPageViewRate'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
         $this->container['incomeRoi1'] = isset($data['incomeRoi1']) ? $data['incomeRoi1'] : null;
@@ -9435,6 +9453,78 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setMiniGamePayingAmountClickD1ByUpload($miniGamePayingAmountClickD1ByUpload)
     {
         $this->container['miniGamePayingAmountClickD1ByUpload'] = $miniGamePayingAmountClickD1ByUpload;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameRetentionD1Rate
+     *
+     * @return double
+     */
+    public function getMiniGameRetentionD1Rate()
+    {
+        return $this->container['miniGameRetentionD1Rate'];
+    }
+
+    /**
+     * Sets miniGameRetentionD1Rate
+     *
+     * @param double $miniGameRetentionD1Rate miniGameRetentionD1Rate
+     *
+     * @return $this
+     */
+    public function setMiniGameRetentionD1Rate($miniGameRetentionD1Rate)
+    {
+        $this->container['miniGameRetentionD1Rate'] = $miniGameRetentionD1Rate;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameRetentionD1Cost
+     *
+     * @return int
+     */
+    public function getMiniGameRetentionD1Cost()
+    {
+        return $this->container['miniGameRetentionD1Cost'];
+    }
+
+    /**
+     * Sets miniGameRetentionD1Cost
+     *
+     * @param int $miniGameRetentionD1Cost miniGameRetentionD1Cost
+     *
+     * @return $this
+     */
+    public function setMiniGameRetentionD1Cost($miniGameRetentionD1Cost)
+    {
+        $this->container['miniGameRetentionD1Cost'] = $miniGameRetentionD1Cost;
+
+        return $this;
+    }
+
+    /**
+     * Gets keyPageViewRate
+     *
+     * @return double
+     */
+    public function getKeyPageViewRate()
+    {
+        return $this->container['keyPageViewRate'];
+    }
+
+    /**
+     * Sets keyPageViewRate
+     *
+     * @param double $keyPageViewRate keyPageViewRate
+     *
+     * @return $this
+     */
+    public function setKeyPageViewRate($keyPageViewRate)
+    {
+        $this->container['keyPageViewRate'] = $keyPageViewRate;
 
         return $this;
     }

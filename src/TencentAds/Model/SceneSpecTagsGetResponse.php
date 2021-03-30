@@ -1,6 +1,6 @@
 <?php
 /**
- * AppAndroidSpec
+ * SceneSpecTagsGetResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AppAndroidSpec Class Doc Comment
+ * SceneSpecTagsGetResponse Class Doc Comment
  *
  * @category Class
- * @description Android应用信息元素
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AppAndroidSpec implements ModelInterface, ArrayAccess
+class SceneSpecTagsGetResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'app_android_spec';
+    protected static $swaggerModelName = 'SceneSpecTagsGetResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +57,11 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'deepLinkUrl' => 'string',
-        'appAndroidId' => 'string',
-        'appAndroidChannelPackageId' => 'string',
-        'appMarketPackage' => 'string'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\SceneSpecTagsGetResponseData'
     ];
 
     /**
@@ -70,10 +70,11 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'deepLinkUrl' => null,
-        'appAndroidId' => null,
-        'appAndroidChannelPackageId' => null,
-        'appMarketPackage' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -103,10 +104,11 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'deepLinkUrl' => 'deep_link_url',
-        'appAndroidId' => 'app_android_id',
-        'appAndroidChannelPackageId' => 'app_android_channel_package_id',
-        'appMarketPackage' => 'app_market_package'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -115,10 +117,11 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'deepLinkUrl' => 'setDeepLinkUrl',
-        'appAndroidId' => 'setAppAndroidId',
-        'appAndroidChannelPackageId' => 'setAppAndroidChannelPackageId',
-        'appMarketPackage' => 'setAppMarketPackage'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -127,10 +130,11 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'deepLinkUrl' => 'getDeepLinkUrl',
-        'appAndroidId' => 'getAppAndroidId',
-        'appAndroidChannelPackageId' => 'getAppAndroidChannelPackageId',
-        'appMarketPackage' => 'getAppMarketPackage'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -193,10 +197,11 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['deepLinkUrl'] = isset($data['deepLinkUrl']) ? $data['deepLinkUrl'] : null;
-        $this->container['appAndroidId'] = isset($data['appAndroidId']) ? $data['appAndroidId'] : null;
-        $this->container['appAndroidChannelPackageId'] = isset($data['appAndroidChannelPackageId']) ? $data['appAndroidChannelPackageId'] : null;
-        $this->container['appMarketPackage'] = isset($data['appMarketPackage']) ? $data['appMarketPackage'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -224,97 +229,121 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets deepLinkUrl
+     * Gets code
      *
-     * @return string
+     * @return int
      */
-    public function getDeepLinkUrl()
+    public function getCode()
     {
-        return $this->container['deepLinkUrl'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets deepLinkUrl
+     * Sets code
      *
-     * @param string $deepLinkUrl deepLinkUrl
+     * @param int $code code
      *
      * @return $this
      */
-    public function setDeepLinkUrl($deepLinkUrl)
+    public function setCode($code)
     {
-        $this->container['deepLinkUrl'] = $deepLinkUrl;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets appAndroidId
+     * Gets message
      *
      * @return string
      */
-    public function getAppAndroidId()
+    public function getMessage()
     {
-        return $this->container['appAndroidId'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets appAndroidId
+     * Sets message
      *
-     * @param string $appAndroidId appAndroidId
+     * @param string $message message
      *
      * @return $this
      */
-    public function setAppAndroidId($appAndroidId)
+    public function setMessage($message)
     {
-        $this->container['appAndroidId'] = $appAndroidId;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets appAndroidChannelPackageId
+     * Gets messageCn
      *
      * @return string
      */
-    public function getAppAndroidChannelPackageId()
+    public function getMessageCn()
     {
-        return $this->container['appAndroidChannelPackageId'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets appAndroidChannelPackageId
+     * Sets messageCn
      *
-     * @param string $appAndroidChannelPackageId appAndroidChannelPackageId
+     * @param string $messageCn messageCn
      *
      * @return $this
      */
-    public function setAppAndroidChannelPackageId($appAndroidChannelPackageId)
+    public function setMessageCn($messageCn)
     {
-        $this->container['appAndroidChannelPackageId'] = $appAndroidChannelPackageId;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets appMarketPackage
+     * Gets errors
      *
-     * @return string
+     * @return \TencentAds\Model\ApiErrorStruct[]
      */
-    public function getAppMarketPackage()
+    public function getErrors()
     {
-        return $this->container['appMarketPackage'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets appMarketPackage
+     * Sets errors
      *
-     * @param string $appMarketPackage appMarketPackage
+     * @param \TencentAds\Model\ApiErrorStruct[] $errors errors
      *
      * @return $this
      */
-    public function setAppMarketPackage($appMarketPackage)
+    public function setErrors($errors)
     {
-        $this->container['appMarketPackage'] = $appMarketPackage;
+        $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\SceneSpecTagsGetResponseData
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\SceneSpecTagsGetResponseData $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }

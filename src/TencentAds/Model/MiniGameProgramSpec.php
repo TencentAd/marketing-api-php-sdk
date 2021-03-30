@@ -59,7 +59,8 @@ class MiniGameProgramSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'title' => 'string',
-        'miniGameProgramId' => 'string'
+        'miniGameProgramId' => 'string',
+        'miniGameProgramPath' => 'string'
     ];
 
     /**
@@ -69,7 +70,8 @@ class MiniGameProgramSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'title' => null,
-        'miniGameProgramId' => null
+        'miniGameProgramId' => null,
+        'miniGameProgramPath' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class MiniGameProgramSpec implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'title' => 'title',
-        'miniGameProgramId' => 'mini_game_program_id'
+        'miniGameProgramId' => 'mini_game_program_id',
+        'miniGameProgramPath' => 'mini_game_program_path'
     ];
 
     /**
@@ -110,7 +113,8 @@ class MiniGameProgramSpec implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'title' => 'setTitle',
-        'miniGameProgramId' => 'setMiniGameProgramId'
+        'miniGameProgramId' => 'setMiniGameProgramId',
+        'miniGameProgramPath' => 'setMiniGameProgramPath'
     ];
 
     /**
@@ -120,7 +124,8 @@ class MiniGameProgramSpec implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'title' => 'getTitle',
-        'miniGameProgramId' => 'getMiniGameProgramId'
+        'miniGameProgramId' => 'getMiniGameProgramId',
+        'miniGameProgramPath' => 'getMiniGameProgramPath'
     ];
 
     /**
@@ -185,6 +190,7 @@ class MiniGameProgramSpec implements ModelInterface, ArrayAccess
     {
         $this->container['title'] = isset($data['title']) ? $data['title'] : null;
         $this->container['miniGameProgramId'] = isset($data['miniGameProgramId']) ? $data['miniGameProgramId'] : null;
+        $this->container['miniGameProgramPath'] = isset($data['miniGameProgramPath']) ? $data['miniGameProgramPath'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class MiniGameProgramSpec implements ModelInterface, ArrayAccess
     public function setMiniGameProgramId($miniGameProgramId)
     {
         $this->container['miniGameProgramId'] = $miniGameProgramId;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameProgramPath
+     *
+     * @return string
+     */
+    public function getMiniGameProgramPath()
+    {
+        return $this->container['miniGameProgramPath'];
+    }
+
+    /**
+     * Sets miniGameProgramPath
+     *
+     * @param string $miniGameProgramPath miniGameProgramPath
+     *
+     * @return $this
+     */
+    public function setMiniGameProgramPath($miniGameProgramPath)
+    {
+        $this->container['miniGameProgramPath'] = $miniGameProgramPath;
 
         return $this;
     }
