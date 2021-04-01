@@ -1,6 +1,6 @@
 <?php
 /**
- * SceneSpecTagsGetResponseData
+ * ProductSeriesStruct
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * SceneSpecTagsGetResponseData Class Doc Comment
+ * ProductSeriesStruct Class Doc Comment
  *
  * @category Class
+ * @description 商品系列信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class SceneSpecTagsGetResponseData implements ModelInterface, ArrayAccess
+class ProductSeriesStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class SceneSpecTagsGetResponseData implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'SceneSpecTagsGetResponseData';
+    protected static $swaggerModelName = 'product_series_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,7 +58,11 @@ class SceneSpecTagsGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'list' => '\TencentAds\Model\SceneSpecTagsGetListStruct[]'
+        'productSeriesId' => 'int',
+        'productSeriesName' => 'string',
+        'productSeriesDescription' => 'string',
+        'productSeriesType' => '\TencentAds\Model\ProductSeriesType',
+        'productSeries' => '\TencentAds\Model\ProductSeriesSpec'
     ];
 
     /**
@@ -66,7 +71,11 @@ class SceneSpecTagsGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'list' => null
+        'productSeriesId' => 'int64',
+        'productSeriesName' => null,
+        'productSeriesDescription' => null,
+        'productSeriesType' => null,
+        'productSeries' => null
     ];
 
     /**
@@ -96,7 +105,11 @@ class SceneSpecTagsGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'list' => 'list'
+        'productSeriesId' => 'product_series_id',
+        'productSeriesName' => 'product_series_name',
+        'productSeriesDescription' => 'product_series_description',
+        'productSeriesType' => 'product_series_type',
+        'productSeries' => 'product_series'
     ];
 
     /**
@@ -105,7 +118,11 @@ class SceneSpecTagsGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'list' => 'setList'
+        'productSeriesId' => 'setProductSeriesId',
+        'productSeriesName' => 'setProductSeriesName',
+        'productSeriesDescription' => 'setProductSeriesDescription',
+        'productSeriesType' => 'setProductSeriesType',
+        'productSeries' => 'setProductSeries'
     ];
 
     /**
@@ -114,7 +131,11 @@ class SceneSpecTagsGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'list' => 'getList'
+        'productSeriesId' => 'getProductSeriesId',
+        'productSeriesName' => 'getProductSeriesName',
+        'productSeriesDescription' => 'getProductSeriesDescription',
+        'productSeriesType' => 'getProductSeriesType',
+        'productSeries' => 'getProductSeries'
     ];
 
     /**
@@ -177,7 +198,11 @@ class SceneSpecTagsGetResponseData implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
+        $this->container['productSeriesId'] = isset($data['productSeriesId']) ? $data['productSeriesId'] : null;
+        $this->container['productSeriesName'] = isset($data['productSeriesName']) ? $data['productSeriesName'] : null;
+        $this->container['productSeriesDescription'] = isset($data['productSeriesDescription']) ? $data['productSeriesDescription'] : null;
+        $this->container['productSeriesType'] = isset($data['productSeriesType']) ? $data['productSeriesType'] : null;
+        $this->container['productSeries'] = isset($data['productSeries']) ? $data['productSeries'] : null;
     }
 
     /**
@@ -205,25 +230,121 @@ class SceneSpecTagsGetResponseData implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets list
+     * Gets productSeriesId
      *
-     * @return \TencentAds\Model\SceneSpecTagsGetListStruct[]
+     * @return int
      */
-    public function getList()
+    public function getProductSeriesId()
     {
-        return $this->container['list'];
+        return $this->container['productSeriesId'];
     }
 
     /**
-     * Sets list
+     * Sets productSeriesId
      *
-     * @param \TencentAds\Model\SceneSpecTagsGetListStruct[] $list list
+     * @param int $productSeriesId productSeriesId
      *
      * @return $this
      */
-    public function setList($list)
+    public function setProductSeriesId($productSeriesId)
     {
-        $this->container['list'] = $list;
+        $this->container['productSeriesId'] = $productSeriesId;
+
+        return $this;
+    }
+
+    /**
+     * Gets productSeriesName
+     *
+     * @return string
+     */
+    public function getProductSeriesName()
+    {
+        return $this->container['productSeriesName'];
+    }
+
+    /**
+     * Sets productSeriesName
+     *
+     * @param string $productSeriesName productSeriesName
+     *
+     * @return $this
+     */
+    public function setProductSeriesName($productSeriesName)
+    {
+        $this->container['productSeriesName'] = $productSeriesName;
+
+        return $this;
+    }
+
+    /**
+     * Gets productSeriesDescription
+     *
+     * @return string
+     */
+    public function getProductSeriesDescription()
+    {
+        return $this->container['productSeriesDescription'];
+    }
+
+    /**
+     * Sets productSeriesDescription
+     *
+     * @param string $productSeriesDescription productSeriesDescription
+     *
+     * @return $this
+     */
+    public function setProductSeriesDescription($productSeriesDescription)
+    {
+        $this->container['productSeriesDescription'] = $productSeriesDescription;
+
+        return $this;
+    }
+
+    /**
+     * Gets productSeriesType
+     *
+     * @return \TencentAds\Model\ProductSeriesType
+     */
+    public function getProductSeriesType()
+    {
+        return $this->container['productSeriesType'];
+    }
+
+    /**
+     * Sets productSeriesType
+     *
+     * @param \TencentAds\Model\ProductSeriesType $productSeriesType productSeriesType
+     *
+     * @return $this
+     */
+    public function setProductSeriesType($productSeriesType)
+    {
+        $this->container['productSeriesType'] = $productSeriesType;
+
+        return $this;
+    }
+
+    /**
+     * Gets productSeries
+     *
+     * @return \TencentAds\Model\ProductSeriesSpec
+     */
+    public function getProductSeries()
+    {
+        return $this->container['productSeries'];
+    }
+
+    /**
+     * Sets productSeries
+     *
+     * @param \TencentAds\Model\ProductSeriesSpec $productSeries productSeries
+     *
+     * @return $this
+     */
+    public function setProductSeries($productSeries)
+    {
+        $this->container['productSeries'] = $productSeries;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * SceneSpecTagsGetResponse
+ * ProductSeriesSpec
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * SceneSpecTagsGetResponse Class Doc Comment
+ * ProductSeriesSpec Class Doc Comment
  *
  * @category Class
+ * @description 商品系列详情
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class SceneSpecTagsGetResponse implements ModelInterface, ArrayAccess
+class ProductSeriesSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class SceneSpecTagsGetResponse implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'SceneSpecTagsGetResponse';
+    protected static $swaggerModelName = 'product_series_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,11 +58,8 @@ class SceneSpecTagsGetResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'code' => 'int',
-        'message' => 'string',
-        'messageCn' => 'string',
-        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
-        'data' => '\TencentAds\Model\SceneSpecTagsGetResponseData'
+        'logicOperator' => '\TencentAds\Model\ProductSeriesSpecLogicOperator',
+        'filters' => '\TencentAds\Model\ProductSeriesSpecFilteringStruct[]'
     ];
 
     /**
@@ -70,11 +68,8 @@ class SceneSpecTagsGetResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'code' => 'int64',
-        'message' => null,
-        'messageCn' => null,
-        'errors' => null,
-        'data' => null
+        'logicOperator' => null,
+        'filters' => null
     ];
 
     /**
@@ -104,11 +99,8 @@ class SceneSpecTagsGetResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'code' => 'code',
-        'message' => 'message',
-        'messageCn' => 'message_cn',
-        'errors' => 'errors',
-        'data' => 'data'
+        'logicOperator' => 'logic_operator',
+        'filters' => 'filters'
     ];
 
     /**
@@ -117,11 +109,8 @@ class SceneSpecTagsGetResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'code' => 'setCode',
-        'message' => 'setMessage',
-        'messageCn' => 'setMessageCn',
-        'errors' => 'setErrors',
-        'data' => 'setData'
+        'logicOperator' => 'setLogicOperator',
+        'filters' => 'setFilters'
     ];
 
     /**
@@ -130,11 +119,8 @@ class SceneSpecTagsGetResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'code' => 'getCode',
-        'message' => 'getMessage',
-        'messageCn' => 'getMessageCn',
-        'errors' => 'getErrors',
-        'data' => 'getData'
+        'logicOperator' => 'getLogicOperator',
+        'filters' => 'getFilters'
     ];
 
     /**
@@ -197,11 +183,8 @@ class SceneSpecTagsGetResponse implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
-        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
-        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
-        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
-        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
+        $this->container['logicOperator'] = isset($data['logicOperator']) ? $data['logicOperator'] : null;
+        $this->container['filters'] = isset($data['filters']) ? $data['filters'] : null;
     }
 
     /**
@@ -229,121 +212,49 @@ class SceneSpecTagsGetResponse implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets code
+     * Gets logicOperator
      *
-     * @return int
+     * @return \TencentAds\Model\ProductSeriesSpecLogicOperator
      */
-    public function getCode()
+    public function getLogicOperator()
     {
-        return $this->container['code'];
+        return $this->container['logicOperator'];
     }
 
     /**
-     * Sets code
+     * Sets logicOperator
      *
-     * @param int $code code
+     * @param \TencentAds\Model\ProductSeriesSpecLogicOperator $logicOperator logicOperator
      *
      * @return $this
      */
-    public function setCode($code)
+    public function setLogicOperator($logicOperator)
     {
-        $this->container['code'] = $code;
+        $this->container['logicOperator'] = $logicOperator;
 
         return $this;
     }
 
     /**
-     * Gets message
+     * Gets filters
      *
-     * @return string
+     * @return \TencentAds\Model\ProductSeriesSpecFilteringStruct[]
      */
-    public function getMessage()
+    public function getFilters()
     {
-        return $this->container['message'];
+        return $this->container['filters'];
     }
 
     /**
-     * Sets message
+     * Sets filters
      *
-     * @param string $message message
+     * @param \TencentAds\Model\ProductSeriesSpecFilteringStruct[] $filters filters
      *
      * @return $this
      */
-    public function setMessage($message)
+    public function setFilters($filters)
     {
-        $this->container['message'] = $message;
-
-        return $this;
-    }
-
-    /**
-     * Gets messageCn
-     *
-     * @return string
-     */
-    public function getMessageCn()
-    {
-        return $this->container['messageCn'];
-    }
-
-    /**
-     * Sets messageCn
-     *
-     * @param string $messageCn messageCn
-     *
-     * @return $this
-     */
-    public function setMessageCn($messageCn)
-    {
-        $this->container['messageCn'] = $messageCn;
-
-        return $this;
-    }
-
-    /**
-     * Gets errors
-     *
-     * @return \TencentAds\Model\ApiErrorStruct[]
-     */
-    public function getErrors()
-    {
-        return $this->container['errors'];
-    }
-
-    /**
-     * Sets errors
-     *
-     * @param \TencentAds\Model\ApiErrorStruct[] $errors errors
-     *
-     * @return $this
-     */
-    public function setErrors($errors)
-    {
-        $this->container['errors'] = $errors;
-
-        return $this;
-    }
-
-    /**
-     * Gets data
-     *
-     * @return \TencentAds\Model\SceneSpecTagsGetResponseData
-     */
-    public function getData()
-    {
-        return $this->container['data'];
-    }
-
-    /**
-     * Sets data
-     *
-     * @param \TencentAds\Model\SceneSpecTagsGetResponseData $data data
-     *
-     * @return $this
-     */
-    public function setData($data)
-    {
-        $this->container['data'] = $data;
+        $this->container['filters'] = $filters;
 
         return $this;
     }

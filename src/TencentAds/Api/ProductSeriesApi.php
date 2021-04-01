@@ -1,6 +1,6 @@
 <?php
 /**
- * SceneSpecTagsApi
+ * ProductSeriesApi
  * PHP version 5
  *
  * @category Class
@@ -40,14 +40,14 @@ use TencentAds\HeaderSelector;
 use TencentAds\ObjectSerializer;
 
 /**
- * SceneSpecTagsApi Class Doc Comment
+ * ProductSeriesApi Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class SceneSpecTagsApi
+class ProductSeriesApi
 {
     /**
      * @var ClientInterface
@@ -88,41 +88,47 @@ class SceneSpecTagsApi
     }
 
     /**
-     * Operation sceneSpecTagsGet
+     * Operation productSeriesGet
      *
-     * 获取场景定向标签
+     * 获取商品系列
      *
-     * @param  string $type type (required)
-     * @param  int $accountId accountId (optional)
+     * @param  int $accountId accountId (required)
+     * @param  int $catalogId catalogId (required)
+     * @param  \TencentAds\Model\ProductSeriesSearchFilteringStruct[] $filtering filtering (optional)
+     * @param  int $page page (optional)
+     * @param  int $pageSize pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\SceneSpecTagsGetResponse
+     * @return \TencentAds\Model\ProductSeriesGetResponse
      */
-    public function sceneSpecTagsGet($type, $accountId = null, $fields = null)
+    public function productSeriesGet($accountId, $catalogId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
-        list($response) = $this->sceneSpecTagsGetWithHttpInfo($type, $accountId, $fields);
+        list($response) = $this->productSeriesGetWithHttpInfo($accountId, $catalogId, $filtering, $page, $pageSize, $fields);
         return $response;
     }
 
     /**
-     * Operation sceneSpecTagsGetWithHttpInfo
+     * Operation productSeriesGetWithHttpInfo
      *
-     * 获取场景定向标签
+     * 获取商品系列
      *
-     * @param  string $type (required)
-     * @param  int $accountId (optional)
+     * @param  int $accountId (required)
+     * @param  int $catalogId (required)
+     * @param  \TencentAds\Model\ProductSeriesSearchFilteringStruct[] $filtering (optional)
+     * @param  int $page (optional)
+     * @param  int $pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \TencentAds\Model\SceneSpecTagsGetResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TencentAds\Model\ProductSeriesGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function sceneSpecTagsGetWithHttpInfo($type, $accountId = null, $fields = null)
+    public function productSeriesGetWithHttpInfo($accountId, $catalogId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
-        $returnType = '\TencentAds\Model\SceneSpecTagsGetResponse';
-        $request = $this->sceneSpecTagsGetRequest($type, $accountId, $fields);
+        $returnType = '\TencentAds\Model\ProductSeriesGetResponse';
+        $request = $this->productSeriesGetRequest($accountId, $catalogId, $filtering, $page, $pageSize, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -173,7 +179,7 @@ class SceneSpecTagsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\TencentAds\Model\SceneSpecTagsGetResponse',
+                        '\TencentAds\Model\ProductSeriesGetResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -184,20 +190,23 @@ class SceneSpecTagsApi
     }
 
     /**
-     * Operation sceneSpecTagsGetAsync
+     * Operation productSeriesGetAsync
      *
-     * 获取场景定向标签
+     * 获取商品系列
      *
-     * @param  string $type (required)
-     * @param  int $accountId (optional)
+     * @param  int $accountId (required)
+     * @param  int $catalogId (required)
+     * @param  \TencentAds\Model\ProductSeriesSearchFilteringStruct[] $filtering (optional)
+     * @param  int $page (optional)
+     * @param  int $pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function sceneSpecTagsGetAsync($type, $accountId = null, $fields = null)
+    public function productSeriesGetAsync($accountId, $catalogId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
-        return $this->sceneSpecTagsGetAsyncWithHttpInfo($type, $accountId, $fields)
+        return $this->productSeriesGetAsyncWithHttpInfo($accountId, $catalogId, $filtering, $page, $pageSize, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -206,21 +215,24 @@ class SceneSpecTagsApi
     }
 
     /**
-     * Operation sceneSpecTagsGetAsyncWithHttpInfo
+     * Operation productSeriesGetAsyncWithHttpInfo
      *
-     * 获取场景定向标签
+     * 获取商品系列
      *
-     * @param  string $type (required)
-     * @param  int $accountId (optional)
+     * @param  int $accountId (required)
+     * @param  int $catalogId (required)
+     * @param  \TencentAds\Model\ProductSeriesSearchFilteringStruct[] $filtering (optional)
+     * @param  int $page (optional)
+     * @param  int $pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function sceneSpecTagsGetAsyncWithHttpInfo($type, $accountId = null, $fields = null)
+    public function productSeriesGetAsyncWithHttpInfo($accountId, $catalogId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
-        $returnType = '\TencentAds\Model\SceneSpecTagsGetResponse';
-        $request = $this->sceneSpecTagsGetRequest($type, $accountId, $fields);
+        $returnType = '\TencentAds\Model\ProductSeriesGetResponse';
+        $request = $this->productSeriesGetRequest($accountId, $catalogId, $filtering, $page, $pageSize, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -260,25 +272,34 @@ class SceneSpecTagsApi
     }
 
     /**
-     * Create request for operation 'sceneSpecTagsGet'
+     * Create request for operation 'productSeriesGet'
      *
-     * @param  string $type (required)
-     * @param  int $accountId (optional)
+     * @param  int $accountId (required)
+     * @param  int $catalogId (required)
+     * @param  \TencentAds\Model\ProductSeriesSearchFilteringStruct[] $filtering (optional)
+     * @param  int $page (optional)
+     * @param  int $pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function sceneSpecTagsGetRequest($type, $accountId = null, $fields = null)
+    protected function productSeriesGetRequest($accountId, $catalogId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
-        // verify the required parameter 'type' is set
-        if ($type === null || (is_array($type) && count($type) === 0)) {
+        // verify the required parameter 'accountId' is set
+        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $type when calling sceneSpecTagsGet'
+                'Missing the required parameter $accountId when calling productSeriesGet'
+            );
+        }
+        // verify the required parameter 'catalogId' is set
+        if ($catalogId === null || (is_array($catalogId) && count($catalogId) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $catalogId when calling productSeriesGet'
             );
         }
 
-        $resourcePath = '/scene_spec_tags/get';
+        $resourcePath = '/product_series/get';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -290,8 +311,23 @@ class SceneSpecTagsApi
             $queryParams['account_id'] = ObjectSerializer::toQueryValue($accountId);
         }
         // query params
-        if ($type !== null) {
-            $queryParams['type'] = ObjectSerializer::toQueryValue($type);
+        if ($catalogId !== null) {
+            $queryParams['catalog_id'] = ObjectSerializer::toQueryValue($catalogId);
+        }
+        // query params
+        if (is_array($filtering)) {
+            $queryParams['filtering'] = $filtering;
+        } else
+        if ($filtering !== null) {
+            $queryParams['filtering'] = ObjectSerializer::toQueryValue($filtering);
+        }
+        // query params
+        if ($page !== null) {
+            $queryParams['page'] = ObjectSerializer::toQueryValue($page);
+        }
+        // query params
+        if ($pageSize !== null) {
+            $queryParams['page_size'] = ObjectSerializer::toQueryValue($pageSize);
         }
         // query params
         if (is_array($fields)) {

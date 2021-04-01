@@ -372,9 +372,11 @@ class ProductCatalogsApi
     /**
      * Operation productCatalogsGet
      *
-     * 获取商品目录信息
+     * 获取商品库
      *
      * @param  int $accountId accountId (required)
+     * @param  int $catalogId catalogId (optional)
+     * @param  string $catalogName catalogName (optional)
      * @param  int $page page (optional)
      * @param  int $pageSize pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
@@ -383,18 +385,20 @@ class ProductCatalogsApi
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\ProductCatalogsGetResponse
      */
-    public function productCatalogsGet($accountId, $page = null, $pageSize = null, $fields = null)
+    public function productCatalogsGet($accountId, $catalogId = null, $catalogName = null, $page = null, $pageSize = null, $fields = null)
     {
-        list($response) = $this->productCatalogsGetWithHttpInfo($accountId, $page, $pageSize, $fields);
+        list($response) = $this->productCatalogsGetWithHttpInfo($accountId, $catalogId, $catalogName, $page, $pageSize, $fields);
         return $response;
     }
 
     /**
      * Operation productCatalogsGetWithHttpInfo
      *
-     * 获取商品目录信息
+     * 获取商品库
      *
      * @param  int $accountId (required)
+     * @param  int $catalogId (optional)
+     * @param  string $catalogName (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
@@ -403,10 +407,10 @@ class ProductCatalogsApi
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\ProductCatalogsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function productCatalogsGetWithHttpInfo($accountId, $page = null, $pageSize = null, $fields = null)
+    public function productCatalogsGetWithHttpInfo($accountId, $catalogId = null, $catalogName = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\ProductCatalogsGetResponse';
-        $request = $this->productCatalogsGetRequest($accountId, $page, $pageSize, $fields);
+        $request = $this->productCatalogsGetRequest($accountId, $catalogId, $catalogName, $page, $pageSize, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -470,9 +474,11 @@ class ProductCatalogsApi
     /**
      * Operation productCatalogsGetAsync
      *
-     * 获取商品目录信息
+     * 获取商品库
      *
      * @param  int $accountId (required)
+     * @param  int $catalogId (optional)
+     * @param  string $catalogName (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
@@ -480,9 +486,9 @@ class ProductCatalogsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function productCatalogsGetAsync($accountId, $page = null, $pageSize = null, $fields = null)
+    public function productCatalogsGetAsync($accountId, $catalogId = null, $catalogName = null, $page = null, $pageSize = null, $fields = null)
     {
-        return $this->productCatalogsGetAsyncWithHttpInfo($accountId, $page, $pageSize, $fields)
+        return $this->productCatalogsGetAsyncWithHttpInfo($accountId, $catalogId, $catalogName, $page, $pageSize, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -493,9 +499,11 @@ class ProductCatalogsApi
     /**
      * Operation productCatalogsGetAsyncWithHttpInfo
      *
-     * 获取商品目录信息
+     * 获取商品库
      *
      * @param  int $accountId (required)
+     * @param  int $catalogId (optional)
+     * @param  string $catalogName (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
@@ -503,10 +511,10 @@ class ProductCatalogsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function productCatalogsGetAsyncWithHttpInfo($accountId, $page = null, $pageSize = null, $fields = null)
+    public function productCatalogsGetAsyncWithHttpInfo($accountId, $catalogId = null, $catalogName = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\ProductCatalogsGetResponse';
-        $request = $this->productCatalogsGetRequest($accountId, $page, $pageSize, $fields);
+        $request = $this->productCatalogsGetRequest($accountId, $catalogId, $catalogName, $page, $pageSize, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -549,6 +557,8 @@ class ProductCatalogsApi
      * Create request for operation 'productCatalogsGet'
      *
      * @param  int $accountId (required)
+     * @param  int $catalogId (optional)
+     * @param  string $catalogName (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
@@ -556,7 +566,7 @@ class ProductCatalogsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function productCatalogsGetRequest($accountId, $page = null, $pageSize = null, $fields = null)
+    protected function productCatalogsGetRequest($accountId, $catalogId = null, $catalogName = null, $page = null, $pageSize = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -575,6 +585,14 @@ class ProductCatalogsApi
         // query params
         if ($accountId !== null) {
             $queryParams['account_id'] = ObjectSerializer::toQueryValue($accountId);
+        }
+        // query params
+        if ($catalogId !== null) {
+            $queryParams['catalog_id'] = ObjectSerializer::toQueryValue($catalogId);
+        }
+        // query params
+        if ($catalogName !== null) {
+            $queryParams['catalog_name'] = ObjectSerializer::toQueryValue($catalogName);
         }
         // query params
         if ($page !== null) {

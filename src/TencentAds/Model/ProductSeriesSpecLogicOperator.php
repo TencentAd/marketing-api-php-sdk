@@ -1,6 +1,6 @@
 <?php
 /**
- * CatalogIndustry
+ * ProductSeriesSpecLogicOperator
  *
  * PHP version 5
  *
@@ -31,30 +31,21 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CatalogIndustry Class Doc Comment
+ * ProductSeriesSpecLogicOperator Class Doc Comment
  *
  * @category Class
- * @description 商品库行业类型
+ * @description 商品系列逻辑操作符,详见枚举值
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CatalogIndustry
+class ProductSeriesSpecLogicOperator
 {
     /**
      * Possible values of this enum
      */
-    const ECOMMERCE = 'INDUSTRY_TYPE_ECOMMERCE';
-    const READING = 'INDUSTRY_TYPE_READING';
-    const EDUCATION = 'INDUSTRY_TYPE_EDUCATION';
-    const WEDDING = 'INDUSTRY_TYPE_WEDDING';
-    const VIDEO = 'INDUSTRY_TYPE_VIDEO';
-    const INSURANCE = 'INDUSTRY_TYPE_INSURANCE';
-    const LOAN = 'INDUSTRY_TYPE_LOAN';
-    const FINANCIAL = 'INDUSTRY_TYPE_FINANCIAL';
-    const BANKCARD = 'INDUSTRY_TYPE_BANKCARD';
-    const SECURITIES = 'INDUSTRY_TYPE_SECURITIES';
-    const ESTATE = 'INDUSTRY_TYPE_ESTATE';
+    const _OR = 'LOGIC_OPERATOR_OR';
+    const _AND = 'LOGIC_OPERATOR_AND';
     
     /**
      * Gets allowable values of the enum
@@ -63,17 +54,8 @@ class CatalogIndustry
     public static function getAllowableEnumValues()
     {
         return [
-            self::ECOMMERCE,
-            self::READING,
-            self::EDUCATION,
-            self::WEDDING,
-            self::VIDEO,
-            self::INSURANCE,
-            self::LOAN,
-            self::FINANCIAL,
-            self::BANKCARD,
-            self::SECURITIES,
-            self::ESTATE,
+            self::_OR,
+            self::_AND,
         ];
     }
 }

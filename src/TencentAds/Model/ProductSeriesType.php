@@ -1,6 +1,6 @@
 <?php
 /**
- * SceneSpecTagsType
+ * ProductSeriesType
  *
  * PHP version 5
  *
@@ -31,23 +31,21 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * SceneSpecTagsType Class Doc Comment
+ * ProductSeriesType Class Doc Comment
  *
  * @category Class
- * @description 场景定向标签类型
+ * @description 商品系列类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class SceneSpecTagsType
+class ProductSeriesType
 {
     /**
      * Possible values of this enum
      */
-    const WECHAT_POSITION = 'WECHAT_POSITION';
-    const OFFICIAL_ACCOUNT_MEDIA_CATEGORY = 'OFFICIAL_ACCOUNT_MEDIA_CATEGORY';
-    const MINI_PROGRAM_AND_MINI_GAME = 'MINI_PROGRAM_AND_MINI_GAME';
-    const PAY_SCENE = 'PAY_SCENE';
+    const CUSTOMIZED = 'PRODUCT_SERIES_TYPE_CUSTOMIZED';
+    const UNLIMITED = 'PRODUCT_SERIES_TYPE_UNLIMITED';
     
     /**
      * Gets allowable values of the enum
@@ -56,10 +54,8 @@ class SceneSpecTagsType
     public static function getAllowableEnumValues()
     {
         return [
-            self::WECHAT_POSITION,
-            self::OFFICIAL_ACCOUNT_MEDIA_CATEGORY,
-            self::MINI_PROGRAM_AND_MINI_GAME,
-            self::PAY_SCENE,
+            self::CUSTOMIZED,
+            self::UNLIMITED,
         ];
     }
 }

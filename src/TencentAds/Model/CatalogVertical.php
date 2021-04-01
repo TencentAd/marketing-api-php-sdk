@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * CatalogVertical Class Doc Comment
  *
  * @category Class
- * @description 商品目录行业类型，详见 &lt;a href&#x3D;&#39;catalog_vertical&#39; target&#x3D;&#39;_blank&#39;&gt;[商品目录行业类型]&lt;/a&gt;
+ * @description 商品库行业类型，详见 &lt;a href&#x3D;&#39;catalog_vertical&#39; target&#x3D;&#39;_blank&#39;&gt;[商品库行业类型]&lt;/a&gt;
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

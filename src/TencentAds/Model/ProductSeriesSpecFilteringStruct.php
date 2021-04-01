@@ -1,6 +1,6 @@
 <?php
 /**
- * SceneSpecTagsGetListStruct
+ * ProductSeriesSpecFilteringStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * SceneSpecTagsGetListStruct Class Doc Comment
+ * ProductSeriesSpecFilteringStruct Class Doc Comment
  *
  * @category Class
- * @description 返回结构
+ * @description 商品系列条件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
+class ProductSeriesSpecFilteringStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'SceneSpecTagsGetListStruct';
+    protected static $swaggerModelName = 'product_series_spec_filtering_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,11 +58,9 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'name' => 'string',
-        'desc' => 'string',
-        'parentId' => 'int',
-        'targetingName' => 'string'
+        'field' => 'string',
+        'operator' => 'string',
+        'values' => '\TencentAds\Model\ProductSeriesSpecFilteringValueStruct[]'
     ];
 
     /**
@@ -71,11 +69,9 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'id' => 'int64',
-        'name' => null,
-        'desc' => null,
-        'parentId' => 'int64',
-        'targetingName' => null
+        'field' => null,
+        'operator' => null,
+        'values' => null
     ];
 
     /**
@@ -105,11 +101,9 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'name' => 'name',
-        'desc' => 'desc',
-        'parentId' => 'parent_id',
-        'targetingName' => 'targeting_name'
+        'field' => 'field',
+        'operator' => 'operator',
+        'values' => 'values'
     ];
 
     /**
@@ -118,11 +112,9 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'name' => 'setName',
-        'desc' => 'setDesc',
-        'parentId' => 'setParentId',
-        'targetingName' => 'setTargetingName'
+        'field' => 'setField',
+        'operator' => 'setOperator',
+        'values' => 'setValues'
     ];
 
     /**
@@ -131,11 +123,9 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'name' => 'getName',
-        'desc' => 'getDesc',
-        'parentId' => 'getParentId',
-        'targetingName' => 'getTargetingName'
+        'field' => 'getField',
+        'operator' => 'getOperator',
+        'values' => 'getValues'
     ];
 
     /**
@@ -198,11 +188,9 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
-        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
-        $this->container['desc'] = isset($data['desc']) ? $data['desc'] : null;
-        $this->container['parentId'] = isset($data['parentId']) ? $data['parentId'] : null;
-        $this->container['targetingName'] = isset($data['targetingName']) ? $data['targetingName'] : null;
+        $this->container['field'] = isset($data['field']) ? $data['field'] : null;
+        $this->container['operator'] = isset($data['operator']) ? $data['operator'] : null;
+        $this->container['values'] = isset($data['values']) ? $data['values'] : null;
     }
 
     /**
@@ -230,121 +218,73 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets id
-     *
-     * @return int
-     */
-    public function getId()
-    {
-        return $this->container['id'];
-    }
-
-    /**
-     * Sets id
-     *
-     * @param int $id id
-     *
-     * @return $this
-     */
-    public function setId($id)
-    {
-        $this->container['id'] = $id;
-
-        return $this;
-    }
-
-    /**
-     * Gets name
+     * Gets field
      *
      * @return string
      */
-    public function getName()
+    public function getField()
     {
-        return $this->container['name'];
+        return $this->container['field'];
     }
 
     /**
-     * Sets name
+     * Sets field
      *
-     * @param string $name name
+     * @param string $field field
      *
      * @return $this
      */
-    public function setName($name)
+    public function setField($field)
     {
-        $this->container['name'] = $name;
+        $this->container['field'] = $field;
 
         return $this;
     }
 
     /**
-     * Gets desc
+     * Gets operator
      *
      * @return string
      */
-    public function getDesc()
+    public function getOperator()
     {
-        return $this->container['desc'];
+        return $this->container['operator'];
     }
 
     /**
-     * Sets desc
+     * Sets operator
      *
-     * @param string $desc desc
+     * @param string $operator operator
      *
      * @return $this
      */
-    public function setDesc($desc)
+    public function setOperator($operator)
     {
-        $this->container['desc'] = $desc;
+        $this->container['operator'] = $operator;
 
         return $this;
     }
 
     /**
-     * Gets parentId
+     * Gets values
      *
-     * @return int
+     * @return \TencentAds\Model\ProductSeriesSpecFilteringValueStruct[]
      */
-    public function getParentId()
+    public function getValues()
     {
-        return $this->container['parentId'];
+        return $this->container['values'];
     }
 
     /**
-     * Sets parentId
+     * Sets values
      *
-     * @param int $parentId parentId
+     * @param \TencentAds\Model\ProductSeriesSpecFilteringValueStruct[] $values values
      *
      * @return $this
      */
-    public function setParentId($parentId)
+    public function setValues($values)
     {
-        $this->container['parentId'] = $parentId;
-
-        return $this;
-    }
-
-    /**
-     * Gets targetingName
-     *
-     * @return string
-     */
-    public function getTargetingName()
-    {
-        return $this->container['targetingName'];
-    }
-
-    /**
-     * Sets targetingName
-     *
-     * @param string $targetingName targetingName
-     *
-     * @return $this
-     */
-    public function setTargetingName($targetingName)
-    {
-        $this->container['targetingName'] = $targetingName;
+        $this->container['values'] = $values;
 
         return $this;
     }

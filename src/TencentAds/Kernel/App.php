@@ -90,13 +90,13 @@ use TencentAds\Container\ProductCategoriesListApiContainer;
 use TencentAds\Container\ProductItemsApiContainer;
 use TencentAds\Container\ProductItemsDetailApiContainer;
 use TencentAds\Container\ProductItemsVerticalsApiContainer;
+use TencentAds\Container\ProductSeriesApiContainer;
 use TencentAds\Container\ProductsSystemStatusApiContainer;
 use TencentAds\Container\ProfilesApiContainer;
 use TencentAds\Container\PromotedObjectsApiContainer;
 use TencentAds\Container\QualificationsApiContainer;
 use TencentAds\Container\RealtimeCostApiContainer;
 use TencentAds\Container\ReportApiContainer;
-use TencentAds\Container\SceneSpecTagsApiContainer;
 use TencentAds\Container\ShopApiContainer;
 use TencentAds\Container\SplitTestsApiContainer;
 use TencentAds\Container\SystemStatusApiContainer;
@@ -406,6 +406,9 @@ class App
     /** @var ProductItemsVerticalsApiContainer */
     public $productItemsVerticalsApiContainer;
 
+    /** @var ProductSeriesApiContainer */
+    public $productSeriesApiContainer;
+
     /** @var ProductsSystemStatusApiContainer */
     public $productsSystemStatusApiContainer;
 
@@ -423,9 +426,6 @@ class App
 
     /** @var ReportApiContainer */
     public $reportApiContainer;
-
-    /** @var SceneSpecTagsApiContainer */
-    public $sceneSpecTagsApiContainer;
 
     /** @var ShopApiContainer */
     public $shopApiContainer;
@@ -1790,6 +1790,20 @@ class App
 
 
     /**
+     * @return ProductSeriesApiContainer
+     */
+    public function productSeries()
+    {
+        if (empty($this->productSeriesApiContainer)) {
+            $container = new ProductSeriesApiContainer();
+            $container->init($this, $this->getClient());
+            $this->productSeriesApiContainer = $container;
+        }
+        return $this->productSeriesApiContainer;
+    }
+
+
+    /**
      * @return ProductsSystemStatusApiContainer
      */
     public function productsSystemStatus()
@@ -1870,20 +1884,6 @@ class App
             $this->reportApiContainer = $container;
         }
         return $this->reportApiContainer;
-    }
-
-
-    /**
-     * @return SceneSpecTagsApiContainer
-     */
-    public function sceneSpecTags()
-    {
-        if (empty($this->sceneSpecTagsApiContainer)) {
-            $container = new SceneSpecTagsApiContainer();
-            $container->init($this, $this->getClient());
-            $this->sceneSpecTagsApiContainer = $container;
-        }
-        return $this->sceneSpecTagsApiContainer;
     }
 
 
