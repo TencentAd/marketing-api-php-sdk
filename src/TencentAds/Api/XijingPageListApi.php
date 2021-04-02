@@ -107,15 +107,16 @@ class XijingPageListApi
      * @param  int $pageOwnerId pageOwnerId (optional)
      * @param  int $appId appId (optional)
      * @param  string $appType appType (optional)
+     * @param  string $queryType queryType (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\XijingPageListGetResponse
      */
-    public function xijingPageListGet($accountId, $pageId = null, $pageServiceId = null, $pageName = null, $pageType = null, $pageLastModifyStartTime = null, $pageLastModifyEndTime = null, $pageSize = null, $pageIndex = null, $pagePublishStatus = null, $pageStatus = null, $pageSource = null, $pageOwnerId = null, $appId = null, $appType = null, $fields = null)
+    public function xijingPageListGet($accountId, $pageId = null, $pageServiceId = null, $pageName = null, $pageType = null, $pageLastModifyStartTime = null, $pageLastModifyEndTime = null, $pageSize = null, $pageIndex = null, $pagePublishStatus = null, $pageStatus = null, $pageSource = null, $pageOwnerId = null, $appId = null, $appType = null, $queryType = null, $fields = null)
     {
-        list($response) = $this->xijingPageListGetWithHttpInfo($accountId, $pageId, $pageServiceId, $pageName, $pageType, $pageLastModifyStartTime, $pageLastModifyEndTime, $pageSize, $pageIndex, $pagePublishStatus, $pageStatus, $pageSource, $pageOwnerId, $appId, $appType, $fields);
+        list($response) = $this->xijingPageListGetWithHttpInfo($accountId, $pageId, $pageServiceId, $pageName, $pageType, $pageLastModifyStartTime, $pageLastModifyEndTime, $pageSize, $pageIndex, $pagePublishStatus, $pageStatus, $pageSource, $pageOwnerId, $appId, $appType, $queryType, $fields);
         return $response;
     }
 
@@ -139,16 +140,17 @@ class XijingPageListApi
      * @param  int $pageOwnerId (optional)
      * @param  int $appId (optional)
      * @param  string $appType (optional)
+     * @param  string $queryType (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\XijingPageListGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function xijingPageListGetWithHttpInfo($accountId, $pageId = null, $pageServiceId = null, $pageName = null, $pageType = null, $pageLastModifyStartTime = null, $pageLastModifyEndTime = null, $pageSize = null, $pageIndex = null, $pagePublishStatus = null, $pageStatus = null, $pageSource = null, $pageOwnerId = null, $appId = null, $appType = null, $fields = null)
+    public function xijingPageListGetWithHttpInfo($accountId, $pageId = null, $pageServiceId = null, $pageName = null, $pageType = null, $pageLastModifyStartTime = null, $pageLastModifyEndTime = null, $pageSize = null, $pageIndex = null, $pagePublishStatus = null, $pageStatus = null, $pageSource = null, $pageOwnerId = null, $appId = null, $appType = null, $queryType = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\XijingPageListGetResponse';
-        $request = $this->xijingPageListGetRequest($accountId, $pageId, $pageServiceId, $pageName, $pageType, $pageLastModifyStartTime, $pageLastModifyEndTime, $pageSize, $pageIndex, $pagePublishStatus, $pageStatus, $pageSource, $pageOwnerId, $appId, $appType, $fields);
+        $request = $this->xijingPageListGetRequest($accountId, $pageId, $pageServiceId, $pageName, $pageType, $pageLastModifyStartTime, $pageLastModifyEndTime, $pageSize, $pageIndex, $pagePublishStatus, $pageStatus, $pageSource, $pageOwnerId, $appId, $appType, $queryType, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -229,14 +231,15 @@ class XijingPageListApi
      * @param  int $pageOwnerId (optional)
      * @param  int $appId (optional)
      * @param  string $appType (optional)
+     * @param  string $queryType (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function xijingPageListGetAsync($accountId, $pageId = null, $pageServiceId = null, $pageName = null, $pageType = null, $pageLastModifyStartTime = null, $pageLastModifyEndTime = null, $pageSize = null, $pageIndex = null, $pagePublishStatus = null, $pageStatus = null, $pageSource = null, $pageOwnerId = null, $appId = null, $appType = null, $fields = null)
+    public function xijingPageListGetAsync($accountId, $pageId = null, $pageServiceId = null, $pageName = null, $pageType = null, $pageLastModifyStartTime = null, $pageLastModifyEndTime = null, $pageSize = null, $pageIndex = null, $pagePublishStatus = null, $pageStatus = null, $pageSource = null, $pageOwnerId = null, $appId = null, $appType = null, $queryType = null, $fields = null)
     {
-        return $this->xijingPageListGetAsyncWithHttpInfo($accountId, $pageId, $pageServiceId, $pageName, $pageType, $pageLastModifyStartTime, $pageLastModifyEndTime, $pageSize, $pageIndex, $pagePublishStatus, $pageStatus, $pageSource, $pageOwnerId, $appId, $appType, $fields)
+        return $this->xijingPageListGetAsyncWithHttpInfo($accountId, $pageId, $pageServiceId, $pageName, $pageType, $pageLastModifyStartTime, $pageLastModifyEndTime, $pageSize, $pageIndex, $pagePublishStatus, $pageStatus, $pageSource, $pageOwnerId, $appId, $appType, $queryType, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -264,15 +267,16 @@ class XijingPageListApi
      * @param  int $pageOwnerId (optional)
      * @param  int $appId (optional)
      * @param  string $appType (optional)
+     * @param  string $queryType (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function xijingPageListGetAsyncWithHttpInfo($accountId, $pageId = null, $pageServiceId = null, $pageName = null, $pageType = null, $pageLastModifyStartTime = null, $pageLastModifyEndTime = null, $pageSize = null, $pageIndex = null, $pagePublishStatus = null, $pageStatus = null, $pageSource = null, $pageOwnerId = null, $appId = null, $appType = null, $fields = null)
+    public function xijingPageListGetAsyncWithHttpInfo($accountId, $pageId = null, $pageServiceId = null, $pageName = null, $pageType = null, $pageLastModifyStartTime = null, $pageLastModifyEndTime = null, $pageSize = null, $pageIndex = null, $pagePublishStatus = null, $pageStatus = null, $pageSource = null, $pageOwnerId = null, $appId = null, $appType = null, $queryType = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\XijingPageListGetResponse';
-        $request = $this->xijingPageListGetRequest($accountId, $pageId, $pageServiceId, $pageName, $pageType, $pageLastModifyStartTime, $pageLastModifyEndTime, $pageSize, $pageIndex, $pagePublishStatus, $pageStatus, $pageSource, $pageOwnerId, $appId, $appType, $fields);
+        $request = $this->xijingPageListGetRequest($accountId, $pageId, $pageServiceId, $pageName, $pageType, $pageLastModifyStartTime, $pageLastModifyEndTime, $pageSize, $pageIndex, $pagePublishStatus, $pageStatus, $pageSource, $pageOwnerId, $appId, $appType, $queryType, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -329,12 +333,13 @@ class XijingPageListApi
      * @param  int $pageOwnerId (optional)
      * @param  int $appId (optional)
      * @param  string $appType (optional)
+     * @param  string $queryType (optional)
      * @param  string[] $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function xijingPageListGetRequest($accountId, $pageId = null, $pageServiceId = null, $pageName = null, $pageType = null, $pageLastModifyStartTime = null, $pageLastModifyEndTime = null, $pageSize = null, $pageIndex = null, $pagePublishStatus = null, $pageStatus = null, $pageSource = null, $pageOwnerId = null, $appId = null, $appType = null, $fields = null)
+    protected function xijingPageListGetRequest($accountId, $pageId = null, $pageServiceId = null, $pageName = null, $pageType = null, $pageLastModifyStartTime = null, $pageLastModifyEndTime = null, $pageSize = null, $pageIndex = null, $pagePublishStatus = null, $pageStatus = null, $pageSource = null, $pageOwnerId = null, $appId = null, $appType = null, $queryType = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -409,6 +414,10 @@ class XijingPageListApi
         // query params
         if ($appType !== null) {
             $queryParams['app_type'] = ObjectSerializer::toQueryValue($appType);
+        }
+        // query params
+        if ($queryType !== null) {
+            $queryParams['query_type'] = ObjectSerializer::toQueryValue($queryType);
         }
         // query params
         if (is_array($fields)) {

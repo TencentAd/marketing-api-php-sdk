@@ -53,8 +53,9 @@ class XijingPageListApiContainer extends ApiContainer
             $pageOwnerId = isset($params['page_owner_id']) ? $params['page_owner_id'] : null;
             $appId = isset($params['app_id']) ? $params['app_id'] : null;
             $appType = isset($params['app_type']) ? $params['app_type'] : null;
+            $queryType = isset($params['query_type']) ? $params['query_type'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->xijingPageListGet($accountId, $pageId, $pageServiceId, $pageName, $pageType, $pageLastModifyStartTime, $pageLastModifyEndTime, $pageSize, $pageIndex, $pagePublishStatus, $pageStatus, $pageSource, $pageOwnerId, $appId, $appType, $fields);
+            $response = $this->apiInstance->xijingPageListGet($accountId, $pageId, $pageServiceId, $pageName, $pageType, $pageLastModifyStartTime, $pageLastModifyEndTime, $pageSize, $pageIndex, $pagePublishStatus, $pageStatus, $pageSource, $pageOwnerId, $appId, $appType, $queryType, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -84,8 +85,9 @@ class XijingPageListApiContainer extends ApiContainer
             $pageOwnerId = isset($params['page_owner_id']) ? $params['page_owner_id'] : null;
             $appId = isset($params['app_id']) ? $params['app_id'] : null;
             $appType = isset($params['app_type']) ? $params['app_type'] : null;
+            $queryType = isset($params['query_type']) ? $params['query_type'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->xijingPageListGetAsync($accountId, $pageId, $pageServiceId, $pageName, $pageType, $pageLastModifyStartTime, $pageLastModifyEndTime, $pageSize, $pageIndex, $pagePublishStatus, $pageStatus, $pageSource, $pageOwnerId, $appId, $appType, $fields);
+            $response = $this->apiInstance->xijingPageListGetAsync($accountId, $pageId, $pageServiceId, $pageName, $pageType, $pageLastModifyStartTime, $pageLastModifyEndTime, $pageSize, $pageIndex, $pagePublishStatus, $pageStatus, $pageSource, $pageOwnerId, $appId, $appType, $queryType, $fields);
             return $response;
         });
     }

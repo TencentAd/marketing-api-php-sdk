@@ -134,6 +134,7 @@ use TencentAds\Container\WechatPagesGrantinfoApiContainer;
 use TencentAds\Container\WechatQualificationsApiContainer;
 use TencentAds\Container\XijingPageApiContainer;
 use TencentAds\Container\XijingPageByComponentsApiContainer;
+use TencentAds\Container\XijingPageInteractiveApiContainer;
 use TencentAds\Container\XijingPageListApiContainer;
 use TencentAds\Container\XijingTemplateApiContainer;
 
@@ -537,6 +538,9 @@ class App
 
     /** @var XijingPageByComponentsApiContainer */
     public $xijingPageByComponentsApiContainer;
+
+    /** @var XijingPageInteractiveApiContainer */
+    public $xijingPageInteractiveApiContainer;
 
     /** @var XijingPageListApiContainer */
     public $xijingPageListApiContainer;
@@ -2402,6 +2406,20 @@ class App
             $this->xijingPageByComponentsApiContainer = $container;
         }
         return $this->xijingPageByComponentsApiContainer;
+    }
+
+
+    /**
+     * @return XijingPageInteractiveApiContainer
+     */
+    public function xijingPageInteractive()
+    {
+        if (empty($this->xijingPageInteractiveApiContainer)) {
+            $container = new XijingPageInteractiveApiContainer();
+            $container->init($this, $this->getClient());
+            $this->xijingPageInteractiveApiContainer = $container;
+        }
+        return $this->xijingPageInteractiveApiContainer;
     }
 
 
