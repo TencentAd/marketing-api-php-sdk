@@ -66,7 +66,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
         'descColor' => 'string',
         'appearType' => 'int',
         'disappearType' => 'int',
-        'forbidPage' => 'int[]',
+        'forbidPageList' => 'int[]',
         'elementType' => '\TencentAds\Model\CanvasFloatElementType',
         'appDownloadSpec' => '\TencentAds\Model\FloatAppDownloadSpec'
     ];
@@ -85,7 +85,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
         'descColor' => null,
         'appearType' => 'int64',
         'disappearType' => 'int64',
-        'forbidPage' => 'int64',
+        'forbidPageList' => 'int64',
         'elementType' => null,
         'appDownloadSpec' => null
     ];
@@ -125,7 +125,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
         'descColor' => 'desc_color',
         'appearType' => 'appear_type',
         'disappearType' => 'disappear_type',
-        'forbidPage' => 'forbid_page',
+        'forbidPageList' => 'forbid_page_list',
         'elementType' => 'element_type',
         'appDownloadSpec' => 'app_download_spec'
     ];
@@ -144,7 +144,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
         'descColor' => 'setDescColor',
         'appearType' => 'setAppearType',
         'disappearType' => 'setDisappearType',
-        'forbidPage' => 'setForbidPage',
+        'forbidPageList' => 'setForbidPageList',
         'elementType' => 'setElementType',
         'appDownloadSpec' => 'setAppDownloadSpec'
     ];
@@ -163,7 +163,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
         'descColor' => 'getDescColor',
         'appearType' => 'getAppearType',
         'disappearType' => 'getDisappearType',
-        'forbidPage' => 'getForbidPage',
+        'forbidPageList' => 'getForbidPageList',
         'elementType' => 'getElementType',
         'appDownloadSpec' => 'getAppDownloadSpec'
     ];
@@ -236,7 +236,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
         $this->container['descColor'] = isset($data['descColor']) ? $data['descColor'] : null;
         $this->container['appearType'] = isset($data['appearType']) ? $data['appearType'] : null;
         $this->container['disappearType'] = isset($data['disappearType']) ? $data['disappearType'] : null;
-        $this->container['forbidPage'] = isset($data['forbidPage']) ? $data['forbidPage'] : null;
+        $this->container['forbidPageList'] = isset($data['forbidPageList']) ? $data['forbidPageList'] : null;
         $this->container['elementType'] = isset($data['elementType']) ? $data['elementType'] : null;
         $this->container['appDownloadSpec'] = isset($data['appDownloadSpec']) ? $data['appDownloadSpec'] : null;
     }
@@ -458,25 +458,25 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets forbidPage
+     * Gets forbidPageList
      *
      * @return int[]
      */
-    public function getForbidPage()
+    public function getForbidPageList()
     {
-        return $this->container['forbidPage'];
+        return $this->container['forbidPageList'];
     }
 
     /**
-     * Sets forbidPage
+     * Sets forbidPageList
      *
-     * @param int[] $forbidPage forbidPage
+     * @param int[] $forbidPageList forbidPageList
      *
      * @return $this
      */
-    public function setForbidPage($forbidPage)
+    public function setForbidPageList($forbidPageList)
     {
-        $this->container['forbidPage'] = $forbidPage;
+        $this->container['forbidPageList'] = $forbidPageList;
 
         return $this;
     }

@@ -90,7 +90,7 @@ class WechatPagesApi
     /**
      * Operation wechatPagesAdd
      *
-     * 创建微信落地页
+     * 基于模板创建微信原生页
      *
      * @param  \TencentAds\Model\WechatPagesAddRequest $data data (required)
      *
@@ -107,7 +107,7 @@ class WechatPagesApi
     /**
      * Operation wechatPagesAddWithHttpInfo
      *
-     * 创建微信落地页
+     * 基于模板创建微信原生页
      *
      * @param  \TencentAds\Model\WechatPagesAddRequest $data (required)
      *
@@ -182,7 +182,7 @@ class WechatPagesApi
     /**
      * Operation wechatPagesAddAsync
      *
-     * 创建微信落地页
+     * 基于模板创建微信原生页
      *
      * @param  \TencentAds\Model\WechatPagesAddRequest $data (required)
      *
@@ -202,7 +202,7 @@ class WechatPagesApi
     /**
      * Operation wechatPagesAddAsyncWithHttpInfo
      *
-     * 创建微信落地页
+     * 基于模板创建微信原生页
      *
      * @param  \TencentAds\Model\WechatPagesAddRequest $data (required)
      *

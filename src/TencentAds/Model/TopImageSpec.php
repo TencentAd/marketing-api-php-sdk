@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * TopImageSpec Class Doc Comment
  *
  * @category Class
- * @description 顶部图片组件元素&lt;br&gt;        图片大小: 不超过300KB&lt;br&gt;        图片尺寸: 朋友圈常规广告 800*800,&lt;br&gt;        朋友圈卡片广告800*450. &lt;br&gt;        公众号及其他广告位 800*800/640*800/800*640/800*450
+ * @description 顶部图片组件元素&lt;br&gt;        图片大小: 不超过300KB&lt;br&gt;        图片尺寸: 朋友圈常规广告 800*800, 朋友圈卡片广告800*450. &lt;br&gt;        公众号及其他广告位 800*800/640*800/800*640/800*450
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

@@ -57,8 +57,7 @@ class WechatPagesCustomAddResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pageId' => 'int',
-        'pageUrl' => 'string'
+        'pageId' => 'int'
     ];
 
     /**
@@ -67,8 +66,7 @@ class WechatPagesCustomAddResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'pageId' => 'int64',
-        'pageUrl' => null
+        'pageId' => 'int64'
     ];
 
     /**
@@ -98,8 +96,7 @@ class WechatPagesCustomAddResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'pageId' => 'page_id',
-        'pageUrl' => 'page_url'
+        'pageId' => 'page_id'
     ];
 
     /**
@@ -108,8 +105,7 @@ class WechatPagesCustomAddResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'pageId' => 'setPageId',
-        'pageUrl' => 'setPageUrl'
+        'pageId' => 'setPageId'
     ];
 
     /**
@@ -118,8 +114,7 @@ class WechatPagesCustomAddResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'pageId' => 'getPageId',
-        'pageUrl' => 'getPageUrl'
+        'pageId' => 'getPageId'
     ];
 
     /**
@@ -183,7 +178,6 @@ class WechatPagesCustomAddResponseData implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['pageId'] = isset($data['pageId']) ? $data['pageId'] : null;
-        $this->container['pageUrl'] = isset($data['pageUrl']) ? $data['pageUrl'] : null;
     }
 
     /**
@@ -230,30 +224,6 @@ class WechatPagesCustomAddResponseData implements ModelInterface, ArrayAccess
     public function setPageId($pageId)
     {
         $this->container['pageId'] = $pageId;
-
-        return $this;
-    }
-
-    /**
-     * Gets pageUrl
-     *
-     * @return string
-     */
-    public function getPageUrl()
-    {
-        return $this->container['pageUrl'];
-    }
-
-    /**
-     * Sets pageUrl
-     *
-     * @param string $pageUrl pageUrl
-     *
-     * @return $this
-     */
-    public function setPageUrl($pageUrl)
-    {
-        $this->container['pageUrl'] = $pageUrl;
 
         return $this;
     }
