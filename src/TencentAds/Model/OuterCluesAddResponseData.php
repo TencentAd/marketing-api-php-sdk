@@ -57,7 +57,8 @@ class OuterCluesAddResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'failOuterLeadIdList' => '\TencentAds\Model\OuterCluesAddListStruct[]'
+        'failOuterLeadIdList' => '\TencentAds\Model\OuterCluesAddListStruct[]',
+        'successLeadIdList' => '\TencentAds\Model\SuccessLeadsIdListRespStruct[]'
     ];
 
     /**
@@ -66,7 +67,8 @@ class OuterCluesAddResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'failOuterLeadIdList' => null
+        'failOuterLeadIdList' => null,
+        'successLeadIdList' => null
     ];
 
     /**
@@ -96,7 +98,8 @@ class OuterCluesAddResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'failOuterLeadIdList' => 'fail_outer_lead_id_list'
+        'failOuterLeadIdList' => 'fail_outer_lead_id_list',
+        'successLeadIdList' => 'success_lead_id_list'
     ];
 
     /**
@@ -105,7 +108,8 @@ class OuterCluesAddResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'failOuterLeadIdList' => 'setFailOuterLeadIdList'
+        'failOuterLeadIdList' => 'setFailOuterLeadIdList',
+        'successLeadIdList' => 'setSuccessLeadIdList'
     ];
 
     /**
@@ -114,7 +118,8 @@ class OuterCluesAddResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'failOuterLeadIdList' => 'getFailOuterLeadIdList'
+        'failOuterLeadIdList' => 'getFailOuterLeadIdList',
+        'successLeadIdList' => 'getSuccessLeadIdList'
     ];
 
     /**
@@ -178,6 +183,7 @@ class OuterCluesAddResponseData implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['failOuterLeadIdList'] = isset($data['failOuterLeadIdList']) ? $data['failOuterLeadIdList'] : null;
+        $this->container['successLeadIdList'] = isset($data['successLeadIdList']) ? $data['successLeadIdList'] : null;
     }
 
     /**
@@ -224,6 +230,30 @@ class OuterCluesAddResponseData implements ModelInterface, ArrayAccess
     public function setFailOuterLeadIdList($failOuterLeadIdList)
     {
         $this->container['failOuterLeadIdList'] = $failOuterLeadIdList;
+
+        return $this;
+    }
+
+    /**
+     * Gets successLeadIdList
+     *
+     * @return \TencentAds\Model\SuccessLeadsIdListRespStruct[]
+     */
+    public function getSuccessLeadIdList()
+    {
+        return $this->container['successLeadIdList'];
+    }
+
+    /**
+     * Sets successLeadIdList
+     *
+     * @param \TencentAds\Model\SuccessLeadsIdListRespStruct[] $successLeadIdList successLeadIdList
+     *
+     * @return $this
+     */
+    public function setSuccessLeadIdList($successLeadIdList)
+    {
+        $this->container['successLeadIdList'] = $successLeadIdList;
 
         return $this;
     }

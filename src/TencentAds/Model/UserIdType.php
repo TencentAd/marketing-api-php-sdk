@@ -61,6 +61,10 @@ class UserIdType
     const SALTED_HASH_IDFA = 'SALTED_HASH_IDFA';
     const OAID = 'OAID';
     const HASH_OAID = 'HASH_OAID';
+    const SHA256_MOBILE_PHONE = 'SHA256_MOBILE_PHONE';
+    const MD5_SHA256_IMEI = 'MD5_SHA256_IMEI';
+    const MD5_SHA256_IDFA = 'MD5_SHA256_IDFA';
+    const MD5_SHA256_OAID = 'MD5_SHA256_OAID';
     
     /**
      * Gets allowable values of the enum
@@ -86,6 +90,10 @@ class UserIdType
             self::SALTED_HASH_IDFA,
             self::OAID,
             self::HASH_OAID,
+            self::SHA256_MOBILE_PHONE,
+            self::MD5_SHA256_IMEI,
+            self::MD5_SHA256_IDFA,
+            self::MD5_SHA256_OAID,
         ];
     }
 }

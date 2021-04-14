@@ -97,15 +97,16 @@ class ImagesApi
      * @param  string $signature signature (required)
      * @param  \SplFileObject $file file (optional)
      * @param  string $bytes bytes (optional)
+     * @param  string $imageUsage imageUsage (optional)
      * @param  string $description description (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\ImagesAddResponse
      */
-    public function imagesAdd($accountId, $uploadType, $signature, $file = null, $bytes = null, $description = null)
+    public function imagesAdd($accountId, $uploadType, $signature, $file = null, $bytes = null, $imageUsage = null, $description = null)
     {
-        list($response) = $this->imagesAddWithHttpInfo($accountId, $uploadType, $signature, $file, $bytes, $description);
+        list($response) = $this->imagesAddWithHttpInfo($accountId, $uploadType, $signature, $file, $bytes, $imageUsage, $description);
         return $response;
     }
 
@@ -119,16 +120,17 @@ class ImagesApi
      * @param  string $signature (required)
      * @param  \SplFileObject $file (optional)
      * @param  string $bytes (optional)
+     * @param  string $imageUsage (optional)
      * @param  string $description (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\ImagesAddResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function imagesAddWithHttpInfo($accountId, $uploadType, $signature, $file = null, $bytes = null, $description = null)
+    public function imagesAddWithHttpInfo($accountId, $uploadType, $signature, $file = null, $bytes = null, $imageUsage = null, $description = null)
     {
         $returnType = '\TencentAds\Model\ImagesAddResponse';
-        $request = $this->imagesAddRequest($accountId, $uploadType, $signature, $file, $bytes, $description);
+        $request = $this->imagesAddRequest($accountId, $uploadType, $signature, $file, $bytes, $imageUsage, $description);
 
         try {
             $options = $this->createHttpClientOption();
@@ -199,14 +201,15 @@ class ImagesApi
      * @param  string $signature (required)
      * @param  \SplFileObject $file (optional)
      * @param  string $bytes (optional)
+     * @param  string $imageUsage (optional)
      * @param  string $description (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function imagesAddAsync($accountId, $uploadType, $signature, $file = null, $bytes = null, $description = null)
+    public function imagesAddAsync($accountId, $uploadType, $signature, $file = null, $bytes = null, $imageUsage = null, $description = null)
     {
-        return $this->imagesAddAsyncWithHttpInfo($accountId, $uploadType, $signature, $file, $bytes, $description)
+        return $this->imagesAddAsyncWithHttpInfo($accountId, $uploadType, $signature, $file, $bytes, $imageUsage, $description)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -224,15 +227,16 @@ class ImagesApi
      * @param  string $signature (required)
      * @param  \SplFileObject $file (optional)
      * @param  string $bytes (optional)
+     * @param  string $imageUsage (optional)
      * @param  string $description (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function imagesAddAsyncWithHttpInfo($accountId, $uploadType, $signature, $file = null, $bytes = null, $description = null)
+    public function imagesAddAsyncWithHttpInfo($accountId, $uploadType, $signature, $file = null, $bytes = null, $imageUsage = null, $description = null)
     {
         $returnType = '\TencentAds\Model\ImagesAddResponse';
-        $request = $this->imagesAddRequest($accountId, $uploadType, $signature, $file, $bytes, $description);
+        $request = $this->imagesAddRequest($accountId, $uploadType, $signature, $file, $bytes, $imageUsage, $description);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -279,12 +283,13 @@ class ImagesApi
      * @param  string $signature (required)
      * @param  \SplFileObject $file (optional)
      * @param  string $bytes (optional)
+     * @param  string $imageUsage (optional)
      * @param  string $description (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function imagesAddRequest($accountId, $uploadType, $signature, $file = null, $bytes = null, $description = null)
+    protected function imagesAddRequest($accountId, $uploadType, $signature, $file = null, $bytes = null, $imageUsage = null, $description = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -334,6 +339,10 @@ class ImagesApi
         // form params
         if ($bytes !== null) {
             $formParams['bytes'] = ObjectSerializer::toFormValue($bytes);
+        }
+        // form params
+        if ($imageUsage !== null) {
+            $formParams['image_usage'] = ObjectSerializer::toFormValue($imageUsage);
         }
         // form params
         if ($description !== null) {

@@ -1,6 +1,6 @@
 <?php
 /**
- * Status
+ * ImageUsage
  *
  * PHP version 5
  *
@@ -31,22 +31,22 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * Status Class Doc Comment
+ * ImageUsage Class Doc Comment
  *
  * @category Class
- * @description 任务状态枚举
+ * @description 图片用途
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class Status
+class ImageUsage
 {
     /**
      * Possible values of this enum
      */
-    const PROCESSING = 'TASK_STATUS_PROCESSING';
-    const SUCCESS = 'TASK_STATUS_SUCCESS';
-    const FAIL = 'TASK_STATUS_FAIL';
+    const _DEFAULT = 'IMAGE_USAGE_DEFAULT';
+    const MARKETING_PENDANT = 'IMAGE_USAGE_MARKETING_PENDANT';
+    const SHOP_IMG = 'IMAGE_USAGE_SHOP_IMG';
     
     /**
      * Gets allowable values of the enum
@@ -55,9 +55,9 @@ class Status
     public static function getAllowableEnumValues()
     {
         return [
-            self::PROCESSING,
-            self::SUCCESS,
-            self::FAIL,
+            self::_DEFAULT,
+            self::MARKETING_PENDANT,
+            self::SHOP_IMG,
         ];
     }
 }

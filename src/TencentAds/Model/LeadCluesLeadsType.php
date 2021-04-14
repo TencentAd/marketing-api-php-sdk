@@ -54,6 +54,7 @@ class LeadCluesLeadsType
     const LANDING_PAGE_CLICK = 'LEADS_TYPE_LANDING_PAGE_CLICK';
     const ONE_CLICK_AUTHORIZE = 'LEADS_TYPE_ONE_CLICK_AUTHORIZE';
     const PAGE_SCAN_CODE = 'LEADS_TYPE_PAGE_SCAN_CODE';
+    const PROMOTION_FOLLOW = 'LEADS_TYPE_PROMOTION_FOLLOW';
     
     /**
      * Gets allowable values of the enum
@@ -72,6 +73,7 @@ class LeadCluesLeadsType
             self::LANDING_PAGE_CLICK,
             self::ONE_CLICK_AUTHORIZE,
             self::PAGE_SCAN_CODE,
+            self::PROMOTION_FOLLOW,
         ];
     }
 }

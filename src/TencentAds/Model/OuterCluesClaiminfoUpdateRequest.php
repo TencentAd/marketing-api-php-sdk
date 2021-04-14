@@ -1,6 +1,6 @@
 <?php
 /**
- * GeoLocations
+ * OuterCluesClaiminfoUpdateRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * GeoLocations Class Doc Comment
+ * OuterCluesClaiminfoUpdateRequest Class Doc Comment
  *
  * @category Class
- * @description 地理位置定向
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class GeoLocations implements ModelInterface, ArrayAccess
+class OuterCluesClaiminfoUpdateRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class GeoLocations implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'geo_locations';
+    protected static $swaggerModelName = 'OuterCluesClaiminfoUpdateRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +57,8 @@ class GeoLocations implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'locationTypes' => 'string[]',
-        'regions' => 'int[]',
-        'businessDistricts' => 'int[]',
-        'customLocations' => '\TencentAds\Model\CustomLocationsItemWithName[]'
+        'accountId' => 'int',
+        'leadsClaimList' => '\TencentAds\Model\LeadsClaimInfoStruct[]'
     ];
 
     /**
@@ -70,10 +67,8 @@ class GeoLocations implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'locationTypes' => null,
-        'regions' => 'int64',
-        'businessDistricts' => 'int64',
-        'customLocations' => null
+        'accountId' => 'int64',
+        'leadsClaimList' => null
     ];
 
     /**
@@ -103,10 +98,8 @@ class GeoLocations implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'locationTypes' => 'location_types',
-        'regions' => 'regions',
-        'businessDistricts' => 'business_districts',
-        'customLocations' => 'custom_locations'
+        'accountId' => 'account_id',
+        'leadsClaimList' => 'leads_claim_list'
     ];
 
     /**
@@ -115,10 +108,8 @@ class GeoLocations implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'locationTypes' => 'setLocationTypes',
-        'regions' => 'setRegions',
-        'businessDistricts' => 'setBusinessDistricts',
-        'customLocations' => 'setCustomLocations'
+        'accountId' => 'setAccountId',
+        'leadsClaimList' => 'setLeadsClaimList'
     ];
 
     /**
@@ -127,10 +118,8 @@ class GeoLocations implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'locationTypes' => 'getLocationTypes',
-        'regions' => 'getRegions',
-        'businessDistricts' => 'getBusinessDistricts',
-        'customLocations' => 'getCustomLocations'
+        'accountId' => 'getAccountId',
+        'leadsClaimList' => 'getLeadsClaimList'
     ];
 
     /**
@@ -193,10 +182,8 @@ class GeoLocations implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['locationTypes'] = isset($data['locationTypes']) ? $data['locationTypes'] : null;
-        $this->container['regions'] = isset($data['regions']) ? $data['regions'] : null;
-        $this->container['businessDistricts'] = isset($data['businessDistricts']) ? $data['businessDistricts'] : null;
-        $this->container['customLocations'] = isset($data['customLocations']) ? $data['customLocations'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['leadsClaimList'] = isset($data['leadsClaimList']) ? $data['leadsClaimList'] : null;
     }
 
     /**
@@ -224,97 +211,49 @@ class GeoLocations implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets locationTypes
+     * Gets accountId
      *
-     * @return string[]
+     * @return int
      */
-    public function getLocationTypes()
+    public function getAccountId()
     {
-        return $this->container['locationTypes'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets locationTypes
+     * Sets accountId
      *
-     * @param string[] $locationTypes locationTypes
+     * @param int $accountId accountId
      *
      * @return $this
      */
-    public function setLocationTypes($locationTypes)
+    public function setAccountId($accountId)
     {
-        $this->container['locationTypes'] = $locationTypes;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }
 
     /**
-     * Gets regions
+     * Gets leadsClaimList
      *
-     * @return int[]
+     * @return \TencentAds\Model\LeadsClaimInfoStruct[]
      */
-    public function getRegions()
+    public function getLeadsClaimList()
     {
-        return $this->container['regions'];
+        return $this->container['leadsClaimList'];
     }
 
     /**
-     * Sets regions
+     * Sets leadsClaimList
      *
-     * @param int[] $regions regions
+     * @param \TencentAds\Model\LeadsClaimInfoStruct[] $leadsClaimList leadsClaimList
      *
      * @return $this
      */
-    public function setRegions($regions)
+    public function setLeadsClaimList($leadsClaimList)
     {
-        $this->container['regions'] = $regions;
-
-        return $this;
-    }
-
-    /**
-     * Gets businessDistricts
-     *
-     * @return int[]
-     */
-    public function getBusinessDistricts()
-    {
-        return $this->container['businessDistricts'];
-    }
-
-    /**
-     * Sets businessDistricts
-     *
-     * @param int[] $businessDistricts businessDistricts
-     *
-     * @return $this
-     */
-    public function setBusinessDistricts($businessDistricts)
-    {
-        $this->container['businessDistricts'] = $businessDistricts;
-
-        return $this;
-    }
-
-    /**
-     * Gets customLocations
-     *
-     * @return \TencentAds\Model\CustomLocationsItemWithName[]
-     */
-    public function getCustomLocations()
-    {
-        return $this->container['customLocations'];
-    }
-
-    /**
-     * Sets customLocations
-     *
-     * @param \TencentAds\Model\CustomLocationsItemWithName[] $customLocations customLocations
-     *
-     * @return $this
-     */
-    public function setCustomLocations($customLocations)
-    {
-        $this->container['customLocations'] = $customLocations;
+        $this->container['leadsClaimList'] = $leadsClaimList;
 
         return $this;
     }

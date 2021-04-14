@@ -1,6 +1,6 @@
 <?php
 /**
- * GeoLocations
+ * OuterCluesClaiminfoUpdateResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * GeoLocations Class Doc Comment
+ * OuterCluesClaiminfoUpdateResponse Class Doc Comment
  *
  * @category Class
- * @description 地理位置定向
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class GeoLocations implements ModelInterface, ArrayAccess
+class OuterCluesClaiminfoUpdateResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class GeoLocations implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'geo_locations';
+    protected static $swaggerModelName = 'OuterCluesClaiminfoUpdateResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +57,11 @@ class GeoLocations implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'locationTypes' => 'string[]',
-        'regions' => 'int[]',
-        'businessDistricts' => 'int[]',
-        'customLocations' => '\TencentAds\Model\CustomLocationsItemWithName[]'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\OuterCluesClaiminfoUpdateResponseData'
     ];
 
     /**
@@ -70,10 +70,11 @@ class GeoLocations implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'locationTypes' => null,
-        'regions' => 'int64',
-        'businessDistricts' => 'int64',
-        'customLocations' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -103,10 +104,11 @@ class GeoLocations implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'locationTypes' => 'location_types',
-        'regions' => 'regions',
-        'businessDistricts' => 'business_districts',
-        'customLocations' => 'custom_locations'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -115,10 +117,11 @@ class GeoLocations implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'locationTypes' => 'setLocationTypes',
-        'regions' => 'setRegions',
-        'businessDistricts' => 'setBusinessDistricts',
-        'customLocations' => 'setCustomLocations'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -127,10 +130,11 @@ class GeoLocations implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'locationTypes' => 'getLocationTypes',
-        'regions' => 'getRegions',
-        'businessDistricts' => 'getBusinessDistricts',
-        'customLocations' => 'getCustomLocations'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -193,10 +197,11 @@ class GeoLocations implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['locationTypes'] = isset($data['locationTypes']) ? $data['locationTypes'] : null;
-        $this->container['regions'] = isset($data['regions']) ? $data['regions'] : null;
-        $this->container['businessDistricts'] = isset($data['businessDistricts']) ? $data['businessDistricts'] : null;
-        $this->container['customLocations'] = isset($data['customLocations']) ? $data['customLocations'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -224,97 +229,121 @@ class GeoLocations implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets locationTypes
+     * Gets code
      *
-     * @return string[]
+     * @return int
      */
-    public function getLocationTypes()
+    public function getCode()
     {
-        return $this->container['locationTypes'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets locationTypes
+     * Sets code
      *
-     * @param string[] $locationTypes locationTypes
+     * @param int $code code
      *
      * @return $this
      */
-    public function setLocationTypes($locationTypes)
+    public function setCode($code)
     {
-        $this->container['locationTypes'] = $locationTypes;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets regions
+     * Gets message
      *
-     * @return int[]
+     * @return string
      */
-    public function getRegions()
+    public function getMessage()
     {
-        return $this->container['regions'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets regions
+     * Sets message
      *
-     * @param int[] $regions regions
+     * @param string $message message
      *
      * @return $this
      */
-    public function setRegions($regions)
+    public function setMessage($message)
     {
-        $this->container['regions'] = $regions;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets businessDistricts
+     * Gets messageCn
      *
-     * @return int[]
+     * @return string
      */
-    public function getBusinessDistricts()
+    public function getMessageCn()
     {
-        return $this->container['businessDistricts'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets businessDistricts
+     * Sets messageCn
      *
-     * @param int[] $businessDistricts businessDistricts
+     * @param string $messageCn messageCn
      *
      * @return $this
      */
-    public function setBusinessDistricts($businessDistricts)
+    public function setMessageCn($messageCn)
     {
-        $this->container['businessDistricts'] = $businessDistricts;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets customLocations
+     * Gets errors
      *
-     * @return \TencentAds\Model\CustomLocationsItemWithName[]
+     * @return \TencentAds\Model\ApiErrorStruct[]
      */
-    public function getCustomLocations()
+    public function getErrors()
     {
-        return $this->container['customLocations'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets customLocations
+     * Sets errors
      *
-     * @param \TencentAds\Model\CustomLocationsItemWithName[] $customLocations customLocations
+     * @param \TencentAds\Model\ApiErrorStruct[] $errors errors
      *
      * @return $this
      */
-    public function setCustomLocations($customLocations)
+    public function setErrors($errors)
     {
-        $this->container['customLocations'] = $customLocations;
+        $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\OuterCluesClaiminfoUpdateResponseData
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\OuterCluesClaiminfoUpdateResponseData $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }

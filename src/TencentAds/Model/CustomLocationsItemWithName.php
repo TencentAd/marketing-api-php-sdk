@@ -1,6 +1,6 @@
 <?php
 /**
- * GeoLocations
+ * CustomLocationsItemWithName
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * GeoLocations Class Doc Comment
+ * CustomLocationsItemWithName Class Doc Comment
  *
  * @category Class
- * @description 地理位置定向
+ * @description option_list_item
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class GeoLocations implements ModelInterface, ArrayAccess
+class CustomLocationsItemWithName implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class GeoLocations implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'geo_locations';
+    protected static $swaggerModelName = 'custom_locations_item_with_name';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +58,9 @@ class GeoLocations implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'locationTypes' => 'string[]',
-        'regions' => 'int[]',
-        'businessDistricts' => 'int[]',
-        'customLocations' => '\TencentAds\Model\CustomLocationsItemWithName[]'
+        'longitude' => 'double',
+        'latitude' => 'double',
+        'radius' => 'int'
     ];
 
     /**
@@ -70,10 +69,9 @@ class GeoLocations implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'locationTypes' => null,
-        'regions' => 'int64',
-        'businessDistricts' => 'int64',
-        'customLocations' => null
+        'longitude' => 'double',
+        'latitude' => 'double',
+        'radius' => 'int64'
     ];
 
     /**
@@ -103,10 +101,9 @@ class GeoLocations implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'locationTypes' => 'location_types',
-        'regions' => 'regions',
-        'businessDistricts' => 'business_districts',
-        'customLocations' => 'custom_locations'
+        'longitude' => 'longitude',
+        'latitude' => 'latitude',
+        'radius' => 'radius'
     ];
 
     /**
@@ -115,10 +112,9 @@ class GeoLocations implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'locationTypes' => 'setLocationTypes',
-        'regions' => 'setRegions',
-        'businessDistricts' => 'setBusinessDistricts',
-        'customLocations' => 'setCustomLocations'
+        'longitude' => 'setLongitude',
+        'latitude' => 'setLatitude',
+        'radius' => 'setRadius'
     ];
 
     /**
@@ -127,10 +123,9 @@ class GeoLocations implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'locationTypes' => 'getLocationTypes',
-        'regions' => 'getRegions',
-        'businessDistricts' => 'getBusinessDistricts',
-        'customLocations' => 'getCustomLocations'
+        'longitude' => 'getLongitude',
+        'latitude' => 'getLatitude',
+        'radius' => 'getRadius'
     ];
 
     /**
@@ -193,10 +188,9 @@ class GeoLocations implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['locationTypes'] = isset($data['locationTypes']) ? $data['locationTypes'] : null;
-        $this->container['regions'] = isset($data['regions']) ? $data['regions'] : null;
-        $this->container['businessDistricts'] = isset($data['businessDistricts']) ? $data['businessDistricts'] : null;
-        $this->container['customLocations'] = isset($data['customLocations']) ? $data['customLocations'] : null;
+        $this->container['longitude'] = isset($data['longitude']) ? $data['longitude'] : null;
+        $this->container['latitude'] = isset($data['latitude']) ? $data['latitude'] : null;
+        $this->container['radius'] = isset($data['radius']) ? $data['radius'] : null;
     }
 
     /**
@@ -224,97 +218,73 @@ class GeoLocations implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets locationTypes
+     * Gets longitude
      *
-     * @return string[]
+     * @return double
      */
-    public function getLocationTypes()
+    public function getLongitude()
     {
-        return $this->container['locationTypes'];
+        return $this->container['longitude'];
     }
 
     /**
-     * Sets locationTypes
+     * Sets longitude
      *
-     * @param string[] $locationTypes locationTypes
+     * @param double $longitude longitude
      *
      * @return $this
      */
-    public function setLocationTypes($locationTypes)
+    public function setLongitude($longitude)
     {
-        $this->container['locationTypes'] = $locationTypes;
+        $this->container['longitude'] = $longitude;
 
         return $this;
     }
 
     /**
-     * Gets regions
+     * Gets latitude
      *
-     * @return int[]
+     * @return double
      */
-    public function getRegions()
+    public function getLatitude()
     {
-        return $this->container['regions'];
+        return $this->container['latitude'];
     }
 
     /**
-     * Sets regions
+     * Sets latitude
      *
-     * @param int[] $regions regions
+     * @param double $latitude latitude
      *
      * @return $this
      */
-    public function setRegions($regions)
+    public function setLatitude($latitude)
     {
-        $this->container['regions'] = $regions;
+        $this->container['latitude'] = $latitude;
 
         return $this;
     }
 
     /**
-     * Gets businessDistricts
+     * Gets radius
      *
-     * @return int[]
+     * @return int
      */
-    public function getBusinessDistricts()
+    public function getRadius()
     {
-        return $this->container['businessDistricts'];
+        return $this->container['radius'];
     }
 
     /**
-     * Sets businessDistricts
+     * Sets radius
      *
-     * @param int[] $businessDistricts businessDistricts
+     * @param int $radius radius
      *
      * @return $this
      */
-    public function setBusinessDistricts($businessDistricts)
+    public function setRadius($radius)
     {
-        $this->container['businessDistricts'] = $businessDistricts;
-
-        return $this;
-    }
-
-    /**
-     * Gets customLocations
-     *
-     * @return \TencentAds\Model\CustomLocationsItemWithName[]
-     */
-    public function getCustomLocations()
-    {
-        return $this->container['customLocations'];
-    }
-
-    /**
-     * Sets customLocations
-     *
-     * @param \TencentAds\Model\CustomLocationsItemWithName[] $customLocations customLocations
-     *
-     * @return $this
-     */
-    public function setCustomLocations($customLocations)
-    {
-        $this->container['customLocations'] = $customLocations;
+        $this->container['radius'] = $radius;
 
         return $this;
     }

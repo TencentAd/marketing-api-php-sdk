@@ -69,7 +69,8 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
         'leadsGender' => '\TencentAds\Model\LeadCluesGenderType',
         'leadsEmail' => 'string',
         'leadsArea' => 'string',
-        'bundle' => 'string'
+        'bundle' => 'string',
+        'memo' => 'string'
     ];
 
     /**
@@ -89,7 +90,8 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
         'leadsGender' => null,
         'leadsEmail' => null,
         'leadsArea' => null,
-        'bundle' => null
+        'bundle' => null,
+        'memo' => null
     ];
 
     /**
@@ -130,7 +132,8 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
         'leadsGender' => 'leads_gender',
         'leadsEmail' => 'leads_email',
         'leadsArea' => 'leads_area',
-        'bundle' => 'bundle'
+        'bundle' => 'bundle',
+        'memo' => 'memo'
     ];
 
     /**
@@ -150,7 +153,8 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
         'leadsGender' => 'setLeadsGender',
         'leadsEmail' => 'setLeadsEmail',
         'leadsArea' => 'setLeadsArea',
-        'bundle' => 'setBundle'
+        'bundle' => 'setBundle',
+        'memo' => 'setMemo'
     ];
 
     /**
@@ -170,7 +174,8 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
         'leadsGender' => 'getLeadsGender',
         'leadsEmail' => 'getLeadsEmail',
         'leadsArea' => 'getLeadsArea',
-        'bundle' => 'getBundle'
+        'bundle' => 'getBundle',
+        'memo' => 'getMemo'
     ];
 
     /**
@@ -245,6 +250,7 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
         $this->container['leadsEmail'] = isset($data['leadsEmail']) ? $data['leadsEmail'] : null;
         $this->container['leadsArea'] = isset($data['leadsArea']) ? $data['leadsArea'] : null;
         $this->container['bundle'] = isset($data['bundle']) ? $data['bundle'] : null;
+        $this->container['memo'] = isset($data['memo']) ? $data['memo'] : null;
     }
 
     /**
@@ -555,6 +561,30 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
     public function setBundle($bundle)
     {
         $this->container['bundle'] = $bundle;
+
+        return $this;
+    }
+
+    /**
+     * Gets memo
+     *
+     * @return string
+     */
+    public function getMemo()
+    {
+        return $this->container['memo'];
+    }
+
+    /**
+     * Sets memo
+     *
+     * @param string $memo memo
+     *
+     * @return $this
+     */
+    public function setMemo($memo)
+    {
+        $this->container['memo'] = $memo;
 
         return $this;
     }

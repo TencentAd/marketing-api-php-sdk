@@ -73,7 +73,11 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         'bundle' => 'string',
         'clickId' => 'string',
         'outerLeadsConvertType' => 'string',
-        'outerLeadsIneffectReason' => 'string'
+        'outerLeadsIneffectReason' => 'string',
+        'memo' => 'string',
+        'campaignId' => 'int',
+        'adgroupId' => 'int',
+        'wechatAgencyId' => 'string'
     ];
 
     /**
@@ -97,7 +101,11 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         'bundle' => null,
         'clickId' => null,
         'outerLeadsConvertType' => null,
-        'outerLeadsIneffectReason' => null
+        'outerLeadsIneffectReason' => null,
+        'memo' => null,
+        'campaignId' => 'int64',
+        'adgroupId' => 'int64',
+        'wechatAgencyId' => null
     ];
 
     /**
@@ -142,7 +150,11 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         'bundle' => 'bundle',
         'clickId' => 'click_id',
         'outerLeadsConvertType' => 'outer_leads_convert_type',
-        'outerLeadsIneffectReason' => 'outer_leads_ineffect_reason'
+        'outerLeadsIneffectReason' => 'outer_leads_ineffect_reason',
+        'memo' => 'memo',
+        'campaignId' => 'campaign_id',
+        'adgroupId' => 'adgroup_id',
+        'wechatAgencyId' => 'wechat_agency_id'
     ];
 
     /**
@@ -166,7 +178,11 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         'bundle' => 'setBundle',
         'clickId' => 'setClickId',
         'outerLeadsConvertType' => 'setOuterLeadsConvertType',
-        'outerLeadsIneffectReason' => 'setOuterLeadsIneffectReason'
+        'outerLeadsIneffectReason' => 'setOuterLeadsIneffectReason',
+        'memo' => 'setMemo',
+        'campaignId' => 'setCampaignId',
+        'adgroupId' => 'setAdgroupId',
+        'wechatAgencyId' => 'setWechatAgencyId'
     ];
 
     /**
@@ -190,7 +206,11 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         'bundle' => 'getBundle',
         'clickId' => 'getClickId',
         'outerLeadsConvertType' => 'getOuterLeadsConvertType',
-        'outerLeadsIneffectReason' => 'getOuterLeadsIneffectReason'
+        'outerLeadsIneffectReason' => 'getOuterLeadsIneffectReason',
+        'memo' => 'getMemo',
+        'campaignId' => 'getCampaignId',
+        'adgroupId' => 'getAdgroupId',
+        'wechatAgencyId' => 'getWechatAgencyId'
     ];
 
     /**
@@ -269,6 +289,10 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         $this->container['clickId'] = isset($data['clickId']) ? $data['clickId'] : null;
         $this->container['outerLeadsConvertType'] = isset($data['outerLeadsConvertType']) ? $data['outerLeadsConvertType'] : null;
         $this->container['outerLeadsIneffectReason'] = isset($data['outerLeadsIneffectReason']) ? $data['outerLeadsIneffectReason'] : null;
+        $this->container['memo'] = isset($data['memo']) ? $data['memo'] : null;
+        $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
+        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
+        $this->container['wechatAgencyId'] = isset($data['wechatAgencyId']) ? $data['wechatAgencyId'] : null;
     }
 
     /**
@@ -675,6 +699,102 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     public function setOuterLeadsIneffectReason($outerLeadsIneffectReason)
     {
         $this->container['outerLeadsIneffectReason'] = $outerLeadsIneffectReason;
+
+        return $this;
+    }
+
+    /**
+     * Gets memo
+     *
+     * @return string
+     */
+    public function getMemo()
+    {
+        return $this->container['memo'];
+    }
+
+    /**
+     * Sets memo
+     *
+     * @param string $memo memo
+     *
+     * @return $this
+     */
+    public function setMemo($memo)
+    {
+        $this->container['memo'] = $memo;
+
+        return $this;
+    }
+
+    /**
+     * Gets campaignId
+     *
+     * @return int
+     */
+    public function getCampaignId()
+    {
+        return $this->container['campaignId'];
+    }
+
+    /**
+     * Sets campaignId
+     *
+     * @param int $campaignId campaignId
+     *
+     * @return $this
+     */
+    public function setCampaignId($campaignId)
+    {
+        $this->container['campaignId'] = $campaignId;
+
+        return $this;
+    }
+
+    /**
+     * Gets adgroupId
+     *
+     * @return int
+     */
+    public function getAdgroupId()
+    {
+        return $this->container['adgroupId'];
+    }
+
+    /**
+     * Sets adgroupId
+     *
+     * @param int $adgroupId adgroupId
+     *
+     * @return $this
+     */
+    public function setAdgroupId($adgroupId)
+    {
+        $this->container['adgroupId'] = $adgroupId;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatAgencyId
+     *
+     * @return string
+     */
+    public function getWechatAgencyId()
+    {
+        return $this->container['wechatAgencyId'];
+    }
+
+    /**
+     * Sets wechatAgencyId
+     *
+     * @param string $wechatAgencyId wechatAgencyId
+     *
+     * @return $this
+     */
+    public function setWechatAgencyId($wechatAgencyId)
+    {
+        $this->container['wechatAgencyId'] = $wechatAgencyId;
 
         return $this;
     }

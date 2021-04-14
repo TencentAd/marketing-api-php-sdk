@@ -1,6 +1,6 @@
 <?php
 /**
- * GeoLocations
+ * OuterCluesClaiminfoUpdateResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * GeoLocations Class Doc Comment
+ * OuterCluesClaiminfoUpdateResponseData Class Doc Comment
  *
  * @category Class
- * @description 地理位置定向
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class GeoLocations implements ModelInterface, ArrayAccess
+class OuterCluesClaiminfoUpdateResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class GeoLocations implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'geo_locations';
+    protected static $swaggerModelName = 'OuterCluesClaiminfoUpdateResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +57,7 @@ class GeoLocations implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'locationTypes' => 'string[]',
-        'regions' => 'int[]',
-        'businessDistricts' => 'int[]',
-        'customLocations' => '\TencentAds\Model\CustomLocationsItemWithName[]'
+        'failLeadsList' => '\TencentAds\Model\OuterCluesClaiminfoUpdateListStruct[]'
     ];
 
     /**
@@ -70,10 +66,7 @@ class GeoLocations implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'locationTypes' => null,
-        'regions' => 'int64',
-        'businessDistricts' => 'int64',
-        'customLocations' => null
+        'failLeadsList' => null
     ];
 
     /**
@@ -103,10 +96,7 @@ class GeoLocations implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'locationTypes' => 'location_types',
-        'regions' => 'regions',
-        'businessDistricts' => 'business_districts',
-        'customLocations' => 'custom_locations'
+        'failLeadsList' => 'fail_leads_list'
     ];
 
     /**
@@ -115,10 +105,7 @@ class GeoLocations implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'locationTypes' => 'setLocationTypes',
-        'regions' => 'setRegions',
-        'businessDistricts' => 'setBusinessDistricts',
-        'customLocations' => 'setCustomLocations'
+        'failLeadsList' => 'setFailLeadsList'
     ];
 
     /**
@@ -127,10 +114,7 @@ class GeoLocations implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'locationTypes' => 'getLocationTypes',
-        'regions' => 'getRegions',
-        'businessDistricts' => 'getBusinessDistricts',
-        'customLocations' => 'getCustomLocations'
+        'failLeadsList' => 'getFailLeadsList'
     ];
 
     /**
@@ -193,10 +177,7 @@ class GeoLocations implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['locationTypes'] = isset($data['locationTypes']) ? $data['locationTypes'] : null;
-        $this->container['regions'] = isset($data['regions']) ? $data['regions'] : null;
-        $this->container['businessDistricts'] = isset($data['businessDistricts']) ? $data['businessDistricts'] : null;
-        $this->container['customLocations'] = isset($data['customLocations']) ? $data['customLocations'] : null;
+        $this->container['failLeadsList'] = isset($data['failLeadsList']) ? $data['failLeadsList'] : null;
     }
 
     /**
@@ -224,97 +205,25 @@ class GeoLocations implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets locationTypes
+     * Gets failLeadsList
      *
-     * @return string[]
+     * @return \TencentAds\Model\OuterCluesClaiminfoUpdateListStruct[]
      */
-    public function getLocationTypes()
+    public function getFailLeadsList()
     {
-        return $this->container['locationTypes'];
+        return $this->container['failLeadsList'];
     }
 
     /**
-     * Sets locationTypes
+     * Sets failLeadsList
      *
-     * @param string[] $locationTypes locationTypes
+     * @param \TencentAds\Model\OuterCluesClaiminfoUpdateListStruct[] $failLeadsList failLeadsList
      *
      * @return $this
      */
-    public function setLocationTypes($locationTypes)
+    public function setFailLeadsList($failLeadsList)
     {
-        $this->container['locationTypes'] = $locationTypes;
-
-        return $this;
-    }
-
-    /**
-     * Gets regions
-     *
-     * @return int[]
-     */
-    public function getRegions()
-    {
-        return $this->container['regions'];
-    }
-
-    /**
-     * Sets regions
-     *
-     * @param int[] $regions regions
-     *
-     * @return $this
-     */
-    public function setRegions($regions)
-    {
-        $this->container['regions'] = $regions;
-
-        return $this;
-    }
-
-    /**
-     * Gets businessDistricts
-     *
-     * @return int[]
-     */
-    public function getBusinessDistricts()
-    {
-        return $this->container['businessDistricts'];
-    }
-
-    /**
-     * Sets businessDistricts
-     *
-     * @param int[] $businessDistricts businessDistricts
-     *
-     * @return $this
-     */
-    public function setBusinessDistricts($businessDistricts)
-    {
-        $this->container['businessDistricts'] = $businessDistricts;
-
-        return $this;
-    }
-
-    /**
-     * Gets customLocations
-     *
-     * @return \TencentAds\Model\CustomLocationsItemWithName[]
-     */
-    public function getCustomLocations()
-    {
-        return $this->container['customLocations'];
-    }
-
-    /**
-     * Sets customLocations
-     *
-     * @param \TencentAds\Model\CustomLocationsItemWithName[] $customLocations customLocations
-     *
-     * @return $this
-     */
-    public function setCustomLocations($customLocations)
-    {
-        $this->container['customLocations'] = $customLocations;
+        $this->container['failLeadsList'] = $failLeadsList;
 
         return $this;
     }

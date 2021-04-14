@@ -1,6 +1,6 @@
 <?php
 /**
- * GeoLocations
+ * DynamicCreativePageSpec
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * GeoLocations Class Doc Comment
+ * DynamicCreativePageSpec Class Doc Comment
  *
  * @category Class
- * @description 地理位置定向
+ * @description 落地页信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class GeoLocations implements ModelInterface, ArrayAccess
+class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class GeoLocations implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'geo_locations';
+    protected static $swaggerModelName = 'dynamic_creative_page_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +58,8 @@ class GeoLocations implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'locationTypes' => 'string[]',
-        'regions' => 'int[]',
-        'businessDistricts' => 'int[]',
-        'customLocations' => '\TencentAds\Model\CustomLocationsItemWithName[]'
+        'pageId' => 'int',
+        'pageUrl' => 'string'
     ];
 
     /**
@@ -70,10 +68,8 @@ class GeoLocations implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'locationTypes' => null,
-        'regions' => 'int64',
-        'businessDistricts' => 'int64',
-        'customLocations' => null
+        'pageId' => 'int64',
+        'pageUrl' => null
     ];
 
     /**
@@ -103,10 +99,8 @@ class GeoLocations implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'locationTypes' => 'location_types',
-        'regions' => 'regions',
-        'businessDistricts' => 'business_districts',
-        'customLocations' => 'custom_locations'
+        'pageId' => 'page_id',
+        'pageUrl' => 'page_url'
     ];
 
     /**
@@ -115,10 +109,8 @@ class GeoLocations implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'locationTypes' => 'setLocationTypes',
-        'regions' => 'setRegions',
-        'businessDistricts' => 'setBusinessDistricts',
-        'customLocations' => 'setCustomLocations'
+        'pageId' => 'setPageId',
+        'pageUrl' => 'setPageUrl'
     ];
 
     /**
@@ -127,10 +119,8 @@ class GeoLocations implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'locationTypes' => 'getLocationTypes',
-        'regions' => 'getRegions',
-        'businessDistricts' => 'getBusinessDistricts',
-        'customLocations' => 'getCustomLocations'
+        'pageId' => 'getPageId',
+        'pageUrl' => 'getPageUrl'
     ];
 
     /**
@@ -193,10 +183,8 @@ class GeoLocations implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['locationTypes'] = isset($data['locationTypes']) ? $data['locationTypes'] : null;
-        $this->container['regions'] = isset($data['regions']) ? $data['regions'] : null;
-        $this->container['businessDistricts'] = isset($data['businessDistricts']) ? $data['businessDistricts'] : null;
-        $this->container['customLocations'] = isset($data['customLocations']) ? $data['customLocations'] : null;
+        $this->container['pageId'] = isset($data['pageId']) ? $data['pageId'] : null;
+        $this->container['pageUrl'] = isset($data['pageUrl']) ? $data['pageUrl'] : null;
     }
 
     /**
@@ -224,97 +212,49 @@ class GeoLocations implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets locationTypes
+     * Gets pageId
      *
-     * @return string[]
+     * @return int
      */
-    public function getLocationTypes()
+    public function getPageId()
     {
-        return $this->container['locationTypes'];
+        return $this->container['pageId'];
     }
 
     /**
-     * Sets locationTypes
+     * Sets pageId
      *
-     * @param string[] $locationTypes locationTypes
+     * @param int $pageId pageId
      *
      * @return $this
      */
-    public function setLocationTypes($locationTypes)
+    public function setPageId($pageId)
     {
-        $this->container['locationTypes'] = $locationTypes;
+        $this->container['pageId'] = $pageId;
 
         return $this;
     }
 
     /**
-     * Gets regions
+     * Gets pageUrl
      *
-     * @return int[]
+     * @return string
      */
-    public function getRegions()
+    public function getPageUrl()
     {
-        return $this->container['regions'];
+        return $this->container['pageUrl'];
     }
 
     /**
-     * Sets regions
+     * Sets pageUrl
      *
-     * @param int[] $regions regions
+     * @param string $pageUrl pageUrl
      *
      * @return $this
      */
-    public function setRegions($regions)
+    public function setPageUrl($pageUrl)
     {
-        $this->container['regions'] = $regions;
-
-        return $this;
-    }
-
-    /**
-     * Gets businessDistricts
-     *
-     * @return int[]
-     */
-    public function getBusinessDistricts()
-    {
-        return $this->container['businessDistricts'];
-    }
-
-    /**
-     * Sets businessDistricts
-     *
-     * @param int[] $businessDistricts businessDistricts
-     *
-     * @return $this
-     */
-    public function setBusinessDistricts($businessDistricts)
-    {
-        $this->container['businessDistricts'] = $businessDistricts;
-
-        return $this;
-    }
-
-    /**
-     * Gets customLocations
-     *
-     * @return \TencentAds\Model\CustomLocationsItemWithName[]
-     */
-    public function getCustomLocations()
-    {
-        return $this->container['customLocations'];
-    }
-
-    /**
-     * Sets customLocations
-     *
-     * @param \TencentAds\Model\CustomLocationsItemWithName[] $customLocations customLocations
-     *
-     * @return $this
-     */
-    public function setCustomLocations($customLocations)
-    {
-        $this->container['customLocations'] = $customLocations;
+        $this->container['pageUrl'] = $pageUrl;
 
         return $this;
     }

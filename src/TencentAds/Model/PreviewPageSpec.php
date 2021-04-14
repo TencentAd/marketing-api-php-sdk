@@ -59,7 +59,10 @@ class PreviewPageSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'pageId' => 'int',
-        'pageUrl' => 'string'
+        'pageUrl' => 'string',
+        'miniProgramSpec' => '\TencentAds\Model\AdcreativeMiniProgramSpec',
+        'miniGameSpec' => '\TencentAds\Model\MiniGameSpec',
+        'overrideCanvasHeadOption' => '\TencentAds\Model\OverrideCanvasHeadOption'
     ];
 
     /**
@@ -69,7 +72,10 @@ class PreviewPageSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'pageId' => 'int64',
-        'pageUrl' => null
+        'pageUrl' => null,
+        'miniProgramSpec' => null,
+        'miniGameSpec' => null,
+        'overrideCanvasHeadOption' => null
     ];
 
     /**
@@ -100,7 +106,10 @@ class PreviewPageSpec implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'pageId' => 'page_id',
-        'pageUrl' => 'page_url'
+        'pageUrl' => 'page_url',
+        'miniProgramSpec' => 'mini_program_spec',
+        'miniGameSpec' => 'mini_game_spec',
+        'overrideCanvasHeadOption' => 'override_canvas_head_option'
     ];
 
     /**
@@ -110,7 +119,10 @@ class PreviewPageSpec implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'pageId' => 'setPageId',
-        'pageUrl' => 'setPageUrl'
+        'pageUrl' => 'setPageUrl',
+        'miniProgramSpec' => 'setMiniProgramSpec',
+        'miniGameSpec' => 'setMiniGameSpec',
+        'overrideCanvasHeadOption' => 'setOverrideCanvasHeadOption'
     ];
 
     /**
@@ -120,7 +132,10 @@ class PreviewPageSpec implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'pageId' => 'getPageId',
-        'pageUrl' => 'getPageUrl'
+        'pageUrl' => 'getPageUrl',
+        'miniProgramSpec' => 'getMiniProgramSpec',
+        'miniGameSpec' => 'getMiniGameSpec',
+        'overrideCanvasHeadOption' => 'getOverrideCanvasHeadOption'
     ];
 
     /**
@@ -185,6 +200,9 @@ class PreviewPageSpec implements ModelInterface, ArrayAccess
     {
         $this->container['pageId'] = isset($data['pageId']) ? $data['pageId'] : null;
         $this->container['pageUrl'] = isset($data['pageUrl']) ? $data['pageUrl'] : null;
+        $this->container['miniProgramSpec'] = isset($data['miniProgramSpec']) ? $data['miniProgramSpec'] : null;
+        $this->container['miniGameSpec'] = isset($data['miniGameSpec']) ? $data['miniGameSpec'] : null;
+        $this->container['overrideCanvasHeadOption'] = isset($data['overrideCanvasHeadOption']) ? $data['overrideCanvasHeadOption'] : null;
     }
 
     /**
@@ -255,6 +273,78 @@ class PreviewPageSpec implements ModelInterface, ArrayAccess
     public function setPageUrl($pageUrl)
     {
         $this->container['pageUrl'] = $pageUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniProgramSpec
+     *
+     * @return \TencentAds\Model\AdcreativeMiniProgramSpec
+     */
+    public function getMiniProgramSpec()
+    {
+        return $this->container['miniProgramSpec'];
+    }
+
+    /**
+     * Sets miniProgramSpec
+     *
+     * @param \TencentAds\Model\AdcreativeMiniProgramSpec $miniProgramSpec miniProgramSpec
+     *
+     * @return $this
+     */
+    public function setMiniProgramSpec($miniProgramSpec)
+    {
+        $this->container['miniProgramSpec'] = $miniProgramSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameSpec
+     *
+     * @return \TencentAds\Model\MiniGameSpec
+     */
+    public function getMiniGameSpec()
+    {
+        return $this->container['miniGameSpec'];
+    }
+
+    /**
+     * Sets miniGameSpec
+     *
+     * @param \TencentAds\Model\MiniGameSpec $miniGameSpec miniGameSpec
+     *
+     * @return $this
+     */
+    public function setMiniGameSpec($miniGameSpec)
+    {
+        $this->container['miniGameSpec'] = $miniGameSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets overrideCanvasHeadOption
+     *
+     * @return \TencentAds\Model\OverrideCanvasHeadOption
+     */
+    public function getOverrideCanvasHeadOption()
+    {
+        return $this->container['overrideCanvasHeadOption'];
+    }
+
+    /**
+     * Sets overrideCanvasHeadOption
+     *
+     * @param \TencentAds\Model\OverrideCanvasHeadOption $overrideCanvasHeadOption overrideCanvasHeadOption
+     *
+     * @return $this
+     */
+    public function setOverrideCanvasHeadOption($overrideCanvasHeadOption)
+    {
+        $this->container['overrideCanvasHeadOption'] = $overrideCanvasHeadOption;
 
         return $this;
     }

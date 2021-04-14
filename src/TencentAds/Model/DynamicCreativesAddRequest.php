@@ -66,14 +66,14 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'automaticSiteEnabled' => 'bool',
         'siteSet' => 'string[]',
         'promotedObjectId' => 'string',
-        'pageSpec' => '\TencentAds\Model\DynamicPageSpec',
+        'pageSpec' => '\TencentAds\Model\DynamicCreativePageSpec',
         'deepLinkUrl' => 'string',
         'impressionTrackingUrl' => 'string',
         'clickTrackingUrl' => 'string',
         'feedsVideoCommentSwitch' => 'bool',
         'unionMarketSwitch' => 'bool',
         'profileId' => 'int',
-        'dynamicAdcreativeSpec' => '\TencentAds\Model\DynamicAdcreativeSpec',
+        'dynamicAdcreativeSpec' => '\TencentAds\Model\DynamicAdcreativeSpecForDc',
         'videoEndPage' => '\TencentAds\Model\VideoEndPageSpec',
         'accountId' => 'int'
     ];
@@ -531,7 +531,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets pageSpec
      *
-     * @return \TencentAds\Model\DynamicPageSpec
+     * @return \TencentAds\Model\DynamicCreativePageSpec
      */
     public function getPageSpec()
     {
@@ -541,7 +541,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets pageSpec
      *
-     * @param \TencentAds\Model\DynamicPageSpec $pageSpec pageSpec
+     * @param \TencentAds\Model\DynamicCreativePageSpec $pageSpec pageSpec
      *
      * @return $this
      */
@@ -699,7 +699,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicAdcreativeSpec
      *
-     * @return \TencentAds\Model\DynamicAdcreativeSpec
+     * @return \TencentAds\Model\DynamicAdcreativeSpecForDc
      */
     public function getDynamicAdcreativeSpec()
     {
@@ -709,7 +709,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets dynamicAdcreativeSpec
      *
-     * @param \TencentAds\Model\DynamicAdcreativeSpec $dynamicAdcreativeSpec dynamicAdcreativeSpec
+     * @param \TencentAds\Model\DynamicAdcreativeSpecForDc $dynamicAdcreativeSpec dynamicAdcreativeSpec
      *
      * @return $this
      */

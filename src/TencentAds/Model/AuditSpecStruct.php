@@ -60,7 +60,8 @@ class AuditSpecStruct implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'siteSet' => '\TencentAds\Model\SiteSetDefinition',
         'systemStatus' => '\TencentAds\Model\SysStatus',
-        'rejectMessage' => 'string'
+        'rejectMessage' => 'string',
+        'elementRejectDetailInfo' => '\TencentAds\Model\ElementRejectDetailInfo[]'
     ];
 
     /**
@@ -71,7 +72,8 @@ class AuditSpecStruct implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'siteSet' => null,
         'systemStatus' => null,
-        'rejectMessage' => null
+        'rejectMessage' => null,
+        'elementRejectDetailInfo' => null
     ];
 
     /**
@@ -103,7 +105,8 @@ class AuditSpecStruct implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'siteSet' => 'site_set',
         'systemStatus' => 'system_status',
-        'rejectMessage' => 'reject_message'
+        'rejectMessage' => 'reject_message',
+        'elementRejectDetailInfo' => 'element_reject_detail_info'
     ];
 
     /**
@@ -114,7 +117,8 @@ class AuditSpecStruct implements ModelInterface, ArrayAccess
     protected static $setters = [
         'siteSet' => 'setSiteSet',
         'systemStatus' => 'setSystemStatus',
-        'rejectMessage' => 'setRejectMessage'
+        'rejectMessage' => 'setRejectMessage',
+        'elementRejectDetailInfo' => 'setElementRejectDetailInfo'
     ];
 
     /**
@@ -125,7 +129,8 @@ class AuditSpecStruct implements ModelInterface, ArrayAccess
     protected static $getters = [
         'siteSet' => 'getSiteSet',
         'systemStatus' => 'getSystemStatus',
-        'rejectMessage' => 'getRejectMessage'
+        'rejectMessage' => 'getRejectMessage',
+        'elementRejectDetailInfo' => 'getElementRejectDetailInfo'
     ];
 
     /**
@@ -191,6 +196,7 @@ class AuditSpecStruct implements ModelInterface, ArrayAccess
         $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
         $this->container['systemStatus'] = isset($data['systemStatus']) ? $data['systemStatus'] : null;
         $this->container['rejectMessage'] = isset($data['rejectMessage']) ? $data['rejectMessage'] : null;
+        $this->container['elementRejectDetailInfo'] = isset($data['elementRejectDetailInfo']) ? $data['elementRejectDetailInfo'] : null;
     }
 
     /**
@@ -285,6 +291,30 @@ class AuditSpecStruct implements ModelInterface, ArrayAccess
     public function setRejectMessage($rejectMessage)
     {
         $this->container['rejectMessage'] = $rejectMessage;
+
+        return $this;
+    }
+
+    /**
+     * Gets elementRejectDetailInfo
+     *
+     * @return \TencentAds\Model\ElementRejectDetailInfo[]
+     */
+    public function getElementRejectDetailInfo()
+    {
+        return $this->container['elementRejectDetailInfo'];
+    }
+
+    /**
+     * Sets elementRejectDetailInfo
+     *
+     * @param \TencentAds\Model\ElementRejectDetailInfo[] $elementRejectDetailInfo elementRejectDetailInfo
+     *
+     * @return $this
+     */
+    public function setElementRejectDetailInfo($elementRejectDetailInfo)
+    {
+        $this->container['elementRejectDetailInfo'] = $elementRejectDetailInfo;
 
         return $this;
     }

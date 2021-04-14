@@ -1,6 +1,6 @@
 <?php
 /**
- * CustomLocationsItem
+ * ElementRejectDetailInfo
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CustomLocationsItem Class Doc Comment
+ * ElementRejectDetailInfo Class Doc Comment
  *
  * @category Class
- * @description option_list_item
+ * @description 元素拒绝原因详情
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CustomLocationsItem implements ModelInterface, ArrayAccess
+class ElementRejectDetailInfo implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class CustomLocationsItem implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'custom_locations_item';
+    protected static $swaggerModelName = 'element_reject_detail_info';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,13 @@ class CustomLocationsItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'longitude' => 'double',
-        'latitude' => 'double',
-        'radius' => 'int'
+        'elementName' => 'string',
+        'elementValue' => 'string',
+        'elementType' => 'string',
+        'reason' => 'string',
+        'caseDoc' => 'string',
+        'caseContent' => 'string',
+        'rejectInfoLocation' => '\TencentAds\Model\RejectInfoLocation[]'
     ];
 
     /**
@@ -69,9 +73,13 @@ class CustomLocationsItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'longitude' => 'double',
-        'latitude' => 'double',
-        'radius' => 'int64'
+        'elementName' => null,
+        'elementValue' => null,
+        'elementType' => null,
+        'reason' => null,
+        'caseDoc' => null,
+        'caseContent' => null,
+        'rejectInfoLocation' => null
     ];
 
     /**
@@ -101,9 +109,13 @@ class CustomLocationsItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'longitude' => 'longitude',
-        'latitude' => 'latitude',
-        'radius' => 'radius'
+        'elementName' => 'element_name',
+        'elementValue' => 'element_value',
+        'elementType' => 'element_type',
+        'reason' => 'reason',
+        'caseDoc' => 'case_doc',
+        'caseContent' => 'case_content',
+        'rejectInfoLocation' => 'reject_info_location'
     ];
 
     /**
@@ -112,9 +124,13 @@ class CustomLocationsItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'longitude' => 'setLongitude',
-        'latitude' => 'setLatitude',
-        'radius' => 'setRadius'
+        'elementName' => 'setElementName',
+        'elementValue' => 'setElementValue',
+        'elementType' => 'setElementType',
+        'reason' => 'setReason',
+        'caseDoc' => 'setCaseDoc',
+        'caseContent' => 'setCaseContent',
+        'rejectInfoLocation' => 'setRejectInfoLocation'
     ];
 
     /**
@@ -123,9 +139,13 @@ class CustomLocationsItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'longitude' => 'getLongitude',
-        'latitude' => 'getLatitude',
-        'radius' => 'getRadius'
+        'elementName' => 'getElementName',
+        'elementValue' => 'getElementValue',
+        'elementType' => 'getElementType',
+        'reason' => 'getReason',
+        'caseDoc' => 'getCaseDoc',
+        'caseContent' => 'getCaseContent',
+        'rejectInfoLocation' => 'getRejectInfoLocation'
     ];
 
     /**
@@ -188,9 +208,13 @@ class CustomLocationsItem implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['longitude'] = isset($data['longitude']) ? $data['longitude'] : null;
-        $this->container['latitude'] = isset($data['latitude']) ? $data['latitude'] : null;
-        $this->container['radius'] = isset($data['radius']) ? $data['radius'] : null;
+        $this->container['elementName'] = isset($data['elementName']) ? $data['elementName'] : null;
+        $this->container['elementValue'] = isset($data['elementValue']) ? $data['elementValue'] : null;
+        $this->container['elementType'] = isset($data['elementType']) ? $data['elementType'] : null;
+        $this->container['reason'] = isset($data['reason']) ? $data['reason'] : null;
+        $this->container['caseDoc'] = isset($data['caseDoc']) ? $data['caseDoc'] : null;
+        $this->container['caseContent'] = isset($data['caseContent']) ? $data['caseContent'] : null;
+        $this->container['rejectInfoLocation'] = isset($data['rejectInfoLocation']) ? $data['rejectInfoLocation'] : null;
     }
 
     /**
@@ -218,73 +242,169 @@ class CustomLocationsItem implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets longitude
+     * Gets elementName
      *
-     * @return double
+     * @return string
      */
-    public function getLongitude()
+    public function getElementName()
     {
-        return $this->container['longitude'];
+        return $this->container['elementName'];
     }
 
     /**
-     * Sets longitude
+     * Sets elementName
      *
-     * @param double $longitude longitude
+     * @param string $elementName elementName
      *
      * @return $this
      */
-    public function setLongitude($longitude)
+    public function setElementName($elementName)
     {
-        $this->container['longitude'] = $longitude;
+        $this->container['elementName'] = $elementName;
 
         return $this;
     }
 
     /**
-     * Gets latitude
+     * Gets elementValue
      *
-     * @return double
+     * @return string
      */
-    public function getLatitude()
+    public function getElementValue()
     {
-        return $this->container['latitude'];
+        return $this->container['elementValue'];
     }
 
     /**
-     * Sets latitude
+     * Sets elementValue
      *
-     * @param double $latitude latitude
+     * @param string $elementValue elementValue
      *
      * @return $this
      */
-    public function setLatitude($latitude)
+    public function setElementValue($elementValue)
     {
-        $this->container['latitude'] = $latitude;
+        $this->container['elementValue'] = $elementValue;
 
         return $this;
     }
 
     /**
-     * Gets radius
+     * Gets elementType
      *
-     * @return int
+     * @return string
      */
-    public function getRadius()
+    public function getElementType()
     {
-        return $this->container['radius'];
+        return $this->container['elementType'];
     }
 
     /**
-     * Sets radius
+     * Sets elementType
      *
-     * @param int $radius radius
+     * @param string $elementType elementType
      *
      * @return $this
      */
-    public function setRadius($radius)
+    public function setElementType($elementType)
     {
-        $this->container['radius'] = $radius;
+        $this->container['elementType'] = $elementType;
+
+        return $this;
+    }
+
+    /**
+     * Gets reason
+     *
+     * @return string
+     */
+    public function getReason()
+    {
+        return $this->container['reason'];
+    }
+
+    /**
+     * Sets reason
+     *
+     * @param string $reason reason
+     *
+     * @return $this
+     */
+    public function setReason($reason)
+    {
+        $this->container['reason'] = $reason;
+
+        return $this;
+    }
+
+    /**
+     * Gets caseDoc
+     *
+     * @return string
+     */
+    public function getCaseDoc()
+    {
+        return $this->container['caseDoc'];
+    }
+
+    /**
+     * Sets caseDoc
+     *
+     * @param string $caseDoc caseDoc
+     *
+     * @return $this
+     */
+    public function setCaseDoc($caseDoc)
+    {
+        $this->container['caseDoc'] = $caseDoc;
+
+        return $this;
+    }
+
+    /**
+     * Gets caseContent
+     *
+     * @return string
+     */
+    public function getCaseContent()
+    {
+        return $this->container['caseContent'];
+    }
+
+    /**
+     * Sets caseContent
+     *
+     * @param string $caseContent caseContent
+     *
+     * @return $this
+     */
+    public function setCaseContent($caseContent)
+    {
+        $this->container['caseContent'] = $caseContent;
+
+        return $this;
+    }
+
+    /**
+     * Gets rejectInfoLocation
+     *
+     * @return \TencentAds\Model\RejectInfoLocation[]
+     */
+    public function getRejectInfoLocation()
+    {
+        return $this->container['rejectInfoLocation'];
+    }
+
+    /**
+     * Sets rejectInfoLocation
+     *
+     * @param \TencentAds\Model\RejectInfoLocation[] $rejectInfoLocation rejectInfoLocation
+     *
+     * @return $this
+     */
+    public function setRejectInfoLocation($rejectInfoLocation)
+    {
+        $this->container['rejectInfoLocation'] = $rejectInfoLocation;
 
         return $this;
     }

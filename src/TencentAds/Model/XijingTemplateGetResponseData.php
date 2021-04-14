@@ -60,6 +60,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
         'pageTemplateId' => 'string',
         'pageType' => '\TencentAds\Model\TemplatesPageType',
         'pageName' => 'string',
+        'clipboard' => 'string',
         'pageTitle' => 'string',
         'componentSpecList' => 'string[]',
         'mobileAppId' => 'string'
@@ -74,6 +75,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
         'pageTemplateId' => null,
         'pageType' => null,
         'pageName' => null,
+        'clipboard' => null,
         'pageTitle' => null,
         'componentSpecList' => null,
         'mobileAppId' => null
@@ -109,6 +111,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
         'pageTemplateId' => 'page_template_id',
         'pageType' => 'page_type',
         'pageName' => 'page_name',
+        'clipboard' => 'clipboard',
         'pageTitle' => 'page_title',
         'componentSpecList' => 'component_spec_list',
         'mobileAppId' => 'mobile_app_id'
@@ -123,6 +126,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
         'pageTemplateId' => 'setPageTemplateId',
         'pageType' => 'setPageType',
         'pageName' => 'setPageName',
+        'clipboard' => 'setClipboard',
         'pageTitle' => 'setPageTitle',
         'componentSpecList' => 'setComponentSpecList',
         'mobileAppId' => 'setMobileAppId'
@@ -137,6 +141,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
         'pageTemplateId' => 'getPageTemplateId',
         'pageType' => 'getPageType',
         'pageName' => 'getPageName',
+        'clipboard' => 'getClipboard',
         'pageTitle' => 'getPageTitle',
         'componentSpecList' => 'getComponentSpecList',
         'mobileAppId' => 'getMobileAppId'
@@ -205,6 +210,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
         $this->container['pageTemplateId'] = isset($data['pageTemplateId']) ? $data['pageTemplateId'] : null;
         $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
         $this->container['pageName'] = isset($data['pageName']) ? $data['pageName'] : null;
+        $this->container['clipboard'] = isset($data['clipboard']) ? $data['clipboard'] : null;
         $this->container['pageTitle'] = isset($data['pageTitle']) ? $data['pageTitle'] : null;
         $this->container['componentSpecList'] = isset($data['componentSpecList']) ? $data['componentSpecList'] : null;
         $this->container['mobileAppId'] = isset($data['mobileAppId']) ? $data['mobileAppId'] : null;
@@ -302,6 +308,30 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
     public function setPageName($pageName)
     {
         $this->container['pageName'] = $pageName;
+
+        return $this;
+    }
+
+    /**
+     * Gets clipboard
+     *
+     * @return string
+     */
+    public function getClipboard()
+    {
+        return $this->container['clipboard'];
+    }
+
+    /**
+     * Sets clipboard
+     *
+     * @param string $clipboard clipboard
+     *
+     * @return $this
+     */
+    public function setClipboard($clipboard)
+    {
+        $this->container['clipboard'] = $clipboard;
 
         return $this;
     }

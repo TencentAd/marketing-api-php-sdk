@@ -63,6 +63,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'sourceSignature' => 'string',
         'previewUrl' => 'string',
         'sourceType' => '\TencentAds\Model\ImageSourceType',
+        'imageUsage' => '\TencentAds\Model\ImageUsage',
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
         'productCatalogId' => 'int',
@@ -88,6 +89,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'sourceSignature' => null,
         'previewUrl' => null,
         'sourceType' => null,
+        'imageUsage' => null,
         'createdTime' => 'int64',
         'lastModifiedTime' => 'int64',
         'productCatalogId' => 'int64',
@@ -134,6 +136,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'sourceSignature' => 'source_signature',
         'previewUrl' => 'preview_url',
         'sourceType' => 'source_type',
+        'imageUsage' => 'image_usage',
         'createdTime' => 'created_time',
         'lastModifiedTime' => 'last_modified_time',
         'productCatalogId' => 'product_catalog_id',
@@ -159,6 +162,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'sourceSignature' => 'setSourceSignature',
         'previewUrl' => 'setPreviewUrl',
         'sourceType' => 'setSourceType',
+        'imageUsage' => 'setImageUsage',
         'createdTime' => 'setCreatedTime',
         'lastModifiedTime' => 'setLastModifiedTime',
         'productCatalogId' => 'setProductCatalogId',
@@ -184,6 +188,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'sourceSignature' => 'getSourceSignature',
         'previewUrl' => 'getPreviewUrl',
         'sourceType' => 'getSourceType',
+        'imageUsage' => 'getImageUsage',
         'createdTime' => 'getCreatedTime',
         'lastModifiedTime' => 'getLastModifiedTime',
         'productCatalogId' => 'getProductCatalogId',
@@ -263,6 +268,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['sourceSignature'] = isset($data['sourceSignature']) ? $data['sourceSignature'] : null;
         $this->container['previewUrl'] = isset($data['previewUrl']) ? $data['previewUrl'] : null;
         $this->container['sourceType'] = isset($data['sourceType']) ? $data['sourceType'] : null;
+        $this->container['imageUsage'] = isset($data['imageUsage']) ? $data['imageUsage'] : null;
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
         $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
@@ -417,6 +423,30 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     public function setSourceType($sourceType)
     {
         $this->container['sourceType'] = $sourceType;
+
+        return $this;
+    }
+
+    /**
+     * Gets imageUsage
+     *
+     * @return \TencentAds\Model\ImageUsage
+     */
+    public function getImageUsage()
+    {
+        return $this->container['imageUsage'];
+    }
+
+    /**
+     * Sets imageUsage
+     *
+     * @param \TencentAds\Model\ImageUsage $imageUsage imageUsage
+     *
+     * @return $this
+     */
+    public function setImageUsage($imageUsage)
+    {
+        $this->container['imageUsage'] = $imageUsage;
 
         return $this;
     }

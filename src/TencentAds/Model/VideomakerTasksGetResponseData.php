@@ -59,7 +59,7 @@ class VideomakerTasksGetResponseData implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'code' => 'int',
         'taskId' => 'string',
-        'status' => '\TencentAds\Model\Status',
+        'status' => '\TencentAds\Model\AdStatus',
         'videoId' => 'string',
         'otherData' => '\TencentAds\Model\OtherData'
     ];
@@ -279,7 +279,7 @@ class VideomakerTasksGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \TencentAds\Model\Status
+     * @return \TencentAds\Model\AdStatus
      */
     public function getStatus()
     {
@@ -289,7 +289,7 @@ class VideomakerTasksGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \TencentAds\Model\Status $status status
+     * @param \TencentAds\Model\AdStatus $status status
      *
      * @return $this
      */

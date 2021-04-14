@@ -61,6 +61,7 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
         'pageType' => '\TencentAds\Model\TemplatesPageType',
         'pageName' => 'string',
         'pageTitle' => 'string',
+        'clipboard' => 'string',
         'mobileAppId' => 'string',
         'pageTemplateId' => 'string',
         'componentSpecList' => 'string[]'
@@ -75,6 +76,7 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
         'pageType' => null,
         'pageName' => null,
         'pageTitle' => null,
+        'clipboard' => null,
         'mobileAppId' => null,
         'pageTemplateId' => null,
         'componentSpecList' => null
@@ -110,6 +112,7 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
         'pageType' => 'page_type',
         'pageName' => 'page_name',
         'pageTitle' => 'page_title',
+        'clipboard' => 'clipboard',
         'mobileAppId' => 'mobile_app_id',
         'pageTemplateId' => 'page_template_id',
         'componentSpecList' => 'component_spec_list'
@@ -124,6 +127,7 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
         'pageType' => 'setPageType',
         'pageName' => 'setPageName',
         'pageTitle' => 'setPageTitle',
+        'clipboard' => 'setClipboard',
         'mobileAppId' => 'setMobileAppId',
         'pageTemplateId' => 'setPageTemplateId',
         'componentSpecList' => 'setComponentSpecList'
@@ -138,6 +142,7 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
         'pageType' => 'getPageType',
         'pageName' => 'getPageName',
         'pageTitle' => 'getPageTitle',
+        'clipboard' => 'getClipboard',
         'mobileAppId' => 'getMobileAppId',
         'pageTemplateId' => 'getPageTemplateId',
         'componentSpecList' => 'getComponentSpecList'
@@ -206,6 +211,7 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
         $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
         $this->container['pageName'] = isset($data['pageName']) ? $data['pageName'] : null;
         $this->container['pageTitle'] = isset($data['pageTitle']) ? $data['pageTitle'] : null;
+        $this->container['clipboard'] = isset($data['clipboard']) ? $data['clipboard'] : null;
         $this->container['mobileAppId'] = isset($data['mobileAppId']) ? $data['mobileAppId'] : null;
         $this->container['pageTemplateId'] = isset($data['pageTemplateId']) ? $data['pageTemplateId'] : null;
         $this->container['componentSpecList'] = isset($data['componentSpecList']) ? $data['componentSpecList'] : null;
@@ -303,6 +309,30 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
     public function setPageTitle($pageTitle)
     {
         $this->container['pageTitle'] = $pageTitle;
+
+        return $this;
+    }
+
+    /**
+     * Gets clipboard
+     *
+     * @return string
+     */
+    public function getClipboard()
+    {
+        return $this->container['clipboard'];
+    }
+
+    /**
+     * Sets clipboard
+     *
+     * @param string $clipboard clipboard
+     *
+     * @return $this
+     */
+    public function setClipboard($clipboard)
+    {
+        $this->container['clipboard'] = $clipboard;
 
         return $this;
     }

@@ -64,7 +64,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'dynamicCreativeTemplateId' => 'int',
         'dynamicCreativeElements' => '\TencentAds\Model\DynamicCreativeElementsRead',
         'pageType' => '\TencentAds\Model\PageTypeRead',
-        'pageSpec' => '\TencentAds\Model\DynamicPageSpec',
+        'pageSpec' => '\TencentAds\Model\DynamicCreativePageSpec',
         'deepLinkUrl' => 'string',
         'automaticSiteEnabled' => 'bool',
         'siteSet' => 'string[]',
@@ -478,7 +478,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageSpec
      *
-     * @return \TencentAds\Model\DynamicPageSpec
+     * @return \TencentAds\Model\DynamicCreativePageSpec
      */
     public function getPageSpec()
     {
@@ -488,7 +488,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageSpec
      *
-     * @param \TencentAds\Model\DynamicPageSpec $pageSpec pageSpec
+     * @param \TencentAds\Model\DynamicCreativePageSpec $pageSpec pageSpec
      *
      * @return $this
      */

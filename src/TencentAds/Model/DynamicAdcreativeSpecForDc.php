@@ -1,6 +1,6 @@
 <?php
 /**
- * DynamicPageSpec
+ * DynamicAdcreativeSpecForDc
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DynamicPageSpec Class Doc Comment
+ * DynamicAdcreativeSpecForDc Class Doc Comment
  *
  * @category Class
- * @description 落地页信息
+ * @description 动态商品广告属性
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DynamicPageSpec implements ModelInterface, ArrayAccess
+class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class DynamicPageSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dynamic_page_spec';
+    protected static $swaggerModelName = 'dynamic_adcreative_spec_for_dc';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,9 @@ class DynamicPageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pageId' => 'int',
-        'pageUrl' => 'string'
+        'productCatalogId' => 'int',
+        'productMode' => '\TencentAds\Model\ProductMode',
+        'productSource' => 'string'
     ];
 
     /**
@@ -68,8 +69,9 @@ class DynamicPageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'pageId' => 'int64',
-        'pageUrl' => null
+        'productCatalogId' => 'int64',
+        'productMode' => null,
+        'productSource' => null
     ];
 
     /**
@@ -99,8 +101,9 @@ class DynamicPageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'pageId' => 'page_id',
-        'pageUrl' => 'page_url'
+        'productCatalogId' => 'product_catalog_id',
+        'productMode' => 'product_mode',
+        'productSource' => 'product_source'
     ];
 
     /**
@@ -109,8 +112,9 @@ class DynamicPageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'pageId' => 'setPageId',
-        'pageUrl' => 'setPageUrl'
+        'productCatalogId' => 'setProductCatalogId',
+        'productMode' => 'setProductMode',
+        'productSource' => 'setProductSource'
     ];
 
     /**
@@ -119,8 +123,9 @@ class DynamicPageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'pageId' => 'getPageId',
-        'pageUrl' => 'getPageUrl'
+        'productCatalogId' => 'getProductCatalogId',
+        'productMode' => 'getProductMode',
+        'productSource' => 'getProductSource'
     ];
 
     /**
@@ -183,8 +188,9 @@ class DynamicPageSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['pageId'] = isset($data['pageId']) ? $data['pageId'] : null;
-        $this->container['pageUrl'] = isset($data['pageUrl']) ? $data['pageUrl'] : null;
+        $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
+        $this->container['productMode'] = isset($data['productMode']) ? $data['productMode'] : null;
+        $this->container['productSource'] = isset($data['productSource']) ? $data['productSource'] : null;
     }
 
     /**
@@ -212,49 +218,73 @@ class DynamicPageSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets pageId
+     * Gets productCatalogId
      *
      * @return int
      */
-    public function getPageId()
+    public function getProductCatalogId()
     {
-        return $this->container['pageId'];
+        return $this->container['productCatalogId'];
     }
 
     /**
-     * Sets pageId
+     * Sets productCatalogId
      *
-     * @param int $pageId pageId
+     * @param int $productCatalogId productCatalogId
      *
      * @return $this
      */
-    public function setPageId($pageId)
+    public function setProductCatalogId($productCatalogId)
     {
-        $this->container['pageId'] = $pageId;
+        $this->container['productCatalogId'] = $productCatalogId;
 
         return $this;
     }
 
     /**
-     * Gets pageUrl
+     * Gets productMode
      *
-     * @return string
+     * @return \TencentAds\Model\ProductMode
      */
-    public function getPageUrl()
+    public function getProductMode()
     {
-        return $this->container['pageUrl'];
+        return $this->container['productMode'];
     }
 
     /**
-     * Sets pageUrl
+     * Sets productMode
      *
-     * @param string $pageUrl pageUrl
+     * @param \TencentAds\Model\ProductMode $productMode productMode
      *
      * @return $this
      */
-    public function setPageUrl($pageUrl)
+    public function setProductMode($productMode)
     {
-        $this->container['pageUrl'] = $pageUrl;
+        $this->container['productMode'] = $productMode;
+
+        return $this;
+    }
+
+    /**
+     * Gets productSource
+     *
+     * @return string
+     */
+    public function getProductSource()
+    {
+        return $this->container['productSource'];
+    }
+
+    /**
+     * Sets productSource
+     *
+     * @param string $productSource productSource
+     *
+     * @return $this
+     */
+    public function setProductSource($productSource)
+    {
+        $this->container['productSource'] = $productSource;
 
         return $this;
     }

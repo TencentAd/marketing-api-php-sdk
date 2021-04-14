@@ -1,6 +1,6 @@
 <?php
 /**
- * GeoLocations
+ * RejectInfoLocation
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * GeoLocations Class Doc Comment
+ * RejectInfoLocation Class Doc Comment
  *
  * @category Class
- * @description 地理位置定向
+ * @description 标注位置信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class GeoLocations implements ModelInterface, ArrayAccess
+class RejectInfoLocation implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class GeoLocations implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'geo_locations';
+    protected static $swaggerModelName = 'reject_info_location';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +58,14 @@ class GeoLocations implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'locationTypes' => 'string[]',
-        'regions' => 'int[]',
-        'businessDistricts' => 'int[]',
-        'customLocations' => '\TencentAds\Model\CustomLocationsItemWithName[]'
+        'x' => 'int',
+        'y' => 'int',
+        'width' => 'int',
+        'height' => 'int',
+        'timeSecond' => 'int',
+        'locationImgUrl' => 'string',
+        'imgUrl' => 'string',
+        'relatedImgUrl' => 'string'
     ];
 
     /**
@@ -70,10 +74,14 @@ class GeoLocations implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'locationTypes' => null,
-        'regions' => 'int64',
-        'businessDistricts' => 'int64',
-        'customLocations' => null
+        'x' => 'int64',
+        'y' => 'int64',
+        'width' => 'int64',
+        'height' => 'int64',
+        'timeSecond' => 'int64',
+        'locationImgUrl' => null,
+        'imgUrl' => null,
+        'relatedImgUrl' => null
     ];
 
     /**
@@ -103,10 +111,14 @@ class GeoLocations implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'locationTypes' => 'location_types',
-        'regions' => 'regions',
-        'businessDistricts' => 'business_districts',
-        'customLocations' => 'custom_locations'
+        'x' => 'x',
+        'y' => 'y',
+        'width' => 'width',
+        'height' => 'height',
+        'timeSecond' => 'time_second',
+        'locationImgUrl' => 'location_img_url',
+        'imgUrl' => 'img_url',
+        'relatedImgUrl' => 'related_img_url'
     ];
 
     /**
@@ -115,10 +127,14 @@ class GeoLocations implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'locationTypes' => 'setLocationTypes',
-        'regions' => 'setRegions',
-        'businessDistricts' => 'setBusinessDistricts',
-        'customLocations' => 'setCustomLocations'
+        'x' => 'setX',
+        'y' => 'setY',
+        'width' => 'setWidth',
+        'height' => 'setHeight',
+        'timeSecond' => 'setTimeSecond',
+        'locationImgUrl' => 'setLocationImgUrl',
+        'imgUrl' => 'setImgUrl',
+        'relatedImgUrl' => 'setRelatedImgUrl'
     ];
 
     /**
@@ -127,10 +143,14 @@ class GeoLocations implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'locationTypes' => 'getLocationTypes',
-        'regions' => 'getRegions',
-        'businessDistricts' => 'getBusinessDistricts',
-        'customLocations' => 'getCustomLocations'
+        'x' => 'getX',
+        'y' => 'getY',
+        'width' => 'getWidth',
+        'height' => 'getHeight',
+        'timeSecond' => 'getTimeSecond',
+        'locationImgUrl' => 'getLocationImgUrl',
+        'imgUrl' => 'getImgUrl',
+        'relatedImgUrl' => 'getRelatedImgUrl'
     ];
 
     /**
@@ -193,10 +213,14 @@ class GeoLocations implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['locationTypes'] = isset($data['locationTypes']) ? $data['locationTypes'] : null;
-        $this->container['regions'] = isset($data['regions']) ? $data['regions'] : null;
-        $this->container['businessDistricts'] = isset($data['businessDistricts']) ? $data['businessDistricts'] : null;
-        $this->container['customLocations'] = isset($data['customLocations']) ? $data['customLocations'] : null;
+        $this->container['x'] = isset($data['x']) ? $data['x'] : null;
+        $this->container['y'] = isset($data['y']) ? $data['y'] : null;
+        $this->container['width'] = isset($data['width']) ? $data['width'] : null;
+        $this->container['height'] = isset($data['height']) ? $data['height'] : null;
+        $this->container['timeSecond'] = isset($data['timeSecond']) ? $data['timeSecond'] : null;
+        $this->container['locationImgUrl'] = isset($data['locationImgUrl']) ? $data['locationImgUrl'] : null;
+        $this->container['imgUrl'] = isset($data['imgUrl']) ? $data['imgUrl'] : null;
+        $this->container['relatedImgUrl'] = isset($data['relatedImgUrl']) ? $data['relatedImgUrl'] : null;
     }
 
     /**
@@ -224,97 +248,193 @@ class GeoLocations implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets locationTypes
+     * Gets x
      *
-     * @return string[]
+     * @return int
      */
-    public function getLocationTypes()
+    public function getX()
     {
-        return $this->container['locationTypes'];
+        return $this->container['x'];
     }
 
     /**
-     * Sets locationTypes
+     * Sets x
      *
-     * @param string[] $locationTypes locationTypes
+     * @param int $x x
      *
      * @return $this
      */
-    public function setLocationTypes($locationTypes)
+    public function setX($x)
     {
-        $this->container['locationTypes'] = $locationTypes;
+        $this->container['x'] = $x;
 
         return $this;
     }
 
     /**
-     * Gets regions
+     * Gets y
      *
-     * @return int[]
+     * @return int
      */
-    public function getRegions()
+    public function getY()
     {
-        return $this->container['regions'];
+        return $this->container['y'];
     }
 
     /**
-     * Sets regions
+     * Sets y
      *
-     * @param int[] $regions regions
+     * @param int $y y
      *
      * @return $this
      */
-    public function setRegions($regions)
+    public function setY($y)
     {
-        $this->container['regions'] = $regions;
+        $this->container['y'] = $y;
 
         return $this;
     }
 
     /**
-     * Gets businessDistricts
+     * Gets width
      *
-     * @return int[]
+     * @return int
      */
-    public function getBusinessDistricts()
+    public function getWidth()
     {
-        return $this->container['businessDistricts'];
+        return $this->container['width'];
     }
 
     /**
-     * Sets businessDistricts
+     * Sets width
      *
-     * @param int[] $businessDistricts businessDistricts
+     * @param int $width width
      *
      * @return $this
      */
-    public function setBusinessDistricts($businessDistricts)
+    public function setWidth($width)
     {
-        $this->container['businessDistricts'] = $businessDistricts;
+        $this->container['width'] = $width;
 
         return $this;
     }
 
     /**
-     * Gets customLocations
+     * Gets height
      *
-     * @return \TencentAds\Model\CustomLocationsItemWithName[]
+     * @return int
      */
-    public function getCustomLocations()
+    public function getHeight()
     {
-        return $this->container['customLocations'];
+        return $this->container['height'];
     }
 
     /**
-     * Sets customLocations
+     * Sets height
      *
-     * @param \TencentAds\Model\CustomLocationsItemWithName[] $customLocations customLocations
+     * @param int $height height
      *
      * @return $this
      */
-    public function setCustomLocations($customLocations)
+    public function setHeight($height)
     {
-        $this->container['customLocations'] = $customLocations;
+        $this->container['height'] = $height;
+
+        return $this;
+    }
+
+    /**
+     * Gets timeSecond
+     *
+     * @return int
+     */
+    public function getTimeSecond()
+    {
+        return $this->container['timeSecond'];
+    }
+
+    /**
+     * Sets timeSecond
+     *
+     * @param int $timeSecond timeSecond
+     *
+     * @return $this
+     */
+    public function setTimeSecond($timeSecond)
+    {
+        $this->container['timeSecond'] = $timeSecond;
+
+        return $this;
+    }
+
+    /**
+     * Gets locationImgUrl
+     *
+     * @return string
+     */
+    public function getLocationImgUrl()
+    {
+        return $this->container['locationImgUrl'];
+    }
+
+    /**
+     * Sets locationImgUrl
+     *
+     * @param string $locationImgUrl locationImgUrl
+     *
+     * @return $this
+     */
+    public function setLocationImgUrl($locationImgUrl)
+    {
+        $this->container['locationImgUrl'] = $locationImgUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets imgUrl
+     *
+     * @return string
+     */
+    public function getImgUrl()
+    {
+        return $this->container['imgUrl'];
+    }
+
+    /**
+     * Sets imgUrl
+     *
+     * @param string $imgUrl imgUrl
+     *
+     * @return $this
+     */
+    public function setImgUrl($imgUrl)
+    {
+        $this->container['imgUrl'] = $imgUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets relatedImgUrl
+     *
+     * @return string
+     */
+    public function getRelatedImgUrl()
+    {
+        return $this->container['relatedImgUrl'];
+    }
+
+    /**
+     * Sets relatedImgUrl
+     *
+     * @param string $relatedImgUrl relatedImgUrl
+     *
+     * @return $this
+     */
+    public function setRelatedImgUrl($relatedImgUrl)
+    {
+        $this->container['relatedImgUrl'] = $relatedImgUrl;
 
         return $this;
     }

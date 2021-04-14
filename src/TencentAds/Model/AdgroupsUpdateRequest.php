@@ -88,6 +88,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoAcquisitionEnabled' => 'bool',
         'autoAcquisitionBudget' => 'int',
         'autoDerivedCreativeEnabled' => 'bool',
+        'dynamicAdSpec' => '\TencentAds\Model\DynamicAdSpec',
         'accountId' => 'int'
     ];
 
@@ -128,6 +129,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoAcquisitionEnabled' => null,
         'autoAcquisitionBudget' => 'int64',
         'autoDerivedCreativeEnabled' => null,
+        'dynamicAdSpec' => null,
         'accountId' => 'int64'
     ];
 
@@ -189,6 +191,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoAcquisitionEnabled' => 'auto_acquisition_enabled',
         'autoAcquisitionBudget' => 'auto_acquisition_budget',
         'autoDerivedCreativeEnabled' => 'auto_derived_creative_enabled',
+        'dynamicAdSpec' => 'dynamic_ad_spec',
         'accountId' => 'account_id'
     ];
 
@@ -229,6 +232,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoAcquisitionEnabled' => 'setAutoAcquisitionEnabled',
         'autoAcquisitionBudget' => 'setAutoAcquisitionBudget',
         'autoDerivedCreativeEnabled' => 'setAutoDerivedCreativeEnabled',
+        'dynamicAdSpec' => 'setDynamicAdSpec',
         'accountId' => 'setAccountId'
     ];
 
@@ -269,6 +273,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoAcquisitionEnabled' => 'getAutoAcquisitionEnabled',
         'autoAcquisitionBudget' => 'getAutoAcquisitionBudget',
         'autoDerivedCreativeEnabled' => 'getAutoDerivedCreativeEnabled',
+        'dynamicAdSpec' => 'getDynamicAdSpec',
         'accountId' => 'getAccountId'
     ];
 
@@ -363,6 +368,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['autoAcquisitionEnabled'] = isset($data['autoAcquisitionEnabled']) ? $data['autoAcquisitionEnabled'] : null;
         $this->container['autoAcquisitionBudget'] = isset($data['autoAcquisitionBudget']) ? $data['autoAcquisitionBudget'] : null;
         $this->container['autoDerivedCreativeEnabled'] = isset($data['autoDerivedCreativeEnabled']) ? $data['autoDerivedCreativeEnabled'] : null;
+        $this->container['dynamicAdSpec'] = isset($data['dynamicAdSpec']) ? $data['dynamicAdSpec'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1130,6 +1136,30 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setAutoDerivedCreativeEnabled($autoDerivedCreativeEnabled)
     {
         $this->container['autoDerivedCreativeEnabled'] = $autoDerivedCreativeEnabled;
+
+        return $this;
+    }
+
+    /**
+     * Gets dynamicAdSpec
+     *
+     * @return \TencentAds\Model\DynamicAdSpec
+     */
+    public function getDynamicAdSpec()
+    {
+        return $this->container['dynamicAdSpec'];
+    }
+
+    /**
+     * Sets dynamicAdSpec
+     *
+     * @param \TencentAds\Model\DynamicAdSpec $dynamicAdSpec dynamicAdSpec
+     *
+     * @return $this
+     */
+    public function setDynamicAdSpec($dynamicAdSpec)
+    {
+        $this->container['dynamicAdSpec'] = $dynamicAdSpec;
 
         return $this;
     }

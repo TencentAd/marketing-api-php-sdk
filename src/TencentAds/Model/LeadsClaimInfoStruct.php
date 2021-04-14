@@ -1,6 +1,6 @@
 <?php
 /**
- * GeoLocations
+ * LeadsClaimInfoStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * GeoLocations Class Doc Comment
+ * LeadsClaimInfoStruct Class Doc Comment
  *
  * @category Class
- * @description 地理位置定向
+ * @description 回传信息结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class GeoLocations implements ModelInterface, ArrayAccess
+class LeadsClaimInfoStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class GeoLocations implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'geo_locations';
+    protected static $swaggerModelName = 'leads_claim_info_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +58,13 @@ class GeoLocations implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'locationTypes' => 'string[]',
-        'regions' => 'int[]',
-        'businessDistricts' => 'int[]',
-        'customLocations' => '\TencentAds\Model\CustomLocationsItemWithName[]'
+        'outerLeadsId' => 'string',
+        'leadsUserType' => '\TencentAds\Model\LeadsUserType',
+        'leadsUserWechatAppid' => 'string',
+        'leadsUserId' => 'string',
+        'campaignId' => 'int',
+        'adgroupId' => 'int',
+        'wechatAgencyId' => 'string'
     ];
 
     /**
@@ -70,10 +73,13 @@ class GeoLocations implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'locationTypes' => null,
-        'regions' => 'int64',
-        'businessDistricts' => 'int64',
-        'customLocations' => null
+        'outerLeadsId' => null,
+        'leadsUserType' => null,
+        'leadsUserWechatAppid' => null,
+        'leadsUserId' => null,
+        'campaignId' => 'int64',
+        'adgroupId' => 'int64',
+        'wechatAgencyId' => null
     ];
 
     /**
@@ -103,10 +109,13 @@ class GeoLocations implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'locationTypes' => 'location_types',
-        'regions' => 'regions',
-        'businessDistricts' => 'business_districts',
-        'customLocations' => 'custom_locations'
+        'outerLeadsId' => 'outer_leads_id',
+        'leadsUserType' => 'leads_user_type',
+        'leadsUserWechatAppid' => 'leads_user_wechat_appid',
+        'leadsUserId' => 'leads_user_id',
+        'campaignId' => 'campaign_id',
+        'adgroupId' => 'adgroup_id',
+        'wechatAgencyId' => 'wechat_agency_id'
     ];
 
     /**
@@ -115,10 +124,13 @@ class GeoLocations implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'locationTypes' => 'setLocationTypes',
-        'regions' => 'setRegions',
-        'businessDistricts' => 'setBusinessDistricts',
-        'customLocations' => 'setCustomLocations'
+        'outerLeadsId' => 'setOuterLeadsId',
+        'leadsUserType' => 'setLeadsUserType',
+        'leadsUserWechatAppid' => 'setLeadsUserWechatAppid',
+        'leadsUserId' => 'setLeadsUserId',
+        'campaignId' => 'setCampaignId',
+        'adgroupId' => 'setAdgroupId',
+        'wechatAgencyId' => 'setWechatAgencyId'
     ];
 
     /**
@@ -127,10 +139,13 @@ class GeoLocations implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'locationTypes' => 'getLocationTypes',
-        'regions' => 'getRegions',
-        'businessDistricts' => 'getBusinessDistricts',
-        'customLocations' => 'getCustomLocations'
+        'outerLeadsId' => 'getOuterLeadsId',
+        'leadsUserType' => 'getLeadsUserType',
+        'leadsUserWechatAppid' => 'getLeadsUserWechatAppid',
+        'leadsUserId' => 'getLeadsUserId',
+        'campaignId' => 'getCampaignId',
+        'adgroupId' => 'getAdgroupId',
+        'wechatAgencyId' => 'getWechatAgencyId'
     ];
 
     /**
@@ -193,10 +208,13 @@ class GeoLocations implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['locationTypes'] = isset($data['locationTypes']) ? $data['locationTypes'] : null;
-        $this->container['regions'] = isset($data['regions']) ? $data['regions'] : null;
-        $this->container['businessDistricts'] = isset($data['businessDistricts']) ? $data['businessDistricts'] : null;
-        $this->container['customLocations'] = isset($data['customLocations']) ? $data['customLocations'] : null;
+        $this->container['outerLeadsId'] = isset($data['outerLeadsId']) ? $data['outerLeadsId'] : null;
+        $this->container['leadsUserType'] = isset($data['leadsUserType']) ? $data['leadsUserType'] : null;
+        $this->container['leadsUserWechatAppid'] = isset($data['leadsUserWechatAppid']) ? $data['leadsUserWechatAppid'] : null;
+        $this->container['leadsUserId'] = isset($data['leadsUserId']) ? $data['leadsUserId'] : null;
+        $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
+        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
+        $this->container['wechatAgencyId'] = isset($data['wechatAgencyId']) ? $data['wechatAgencyId'] : null;
     }
 
     /**
@@ -224,97 +242,169 @@ class GeoLocations implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets locationTypes
+     * Gets outerLeadsId
      *
-     * @return string[]
+     * @return string
      */
-    public function getLocationTypes()
+    public function getOuterLeadsId()
     {
-        return $this->container['locationTypes'];
+        return $this->container['outerLeadsId'];
     }
 
     /**
-     * Sets locationTypes
+     * Sets outerLeadsId
      *
-     * @param string[] $locationTypes locationTypes
+     * @param string $outerLeadsId outerLeadsId
      *
      * @return $this
      */
-    public function setLocationTypes($locationTypes)
+    public function setOuterLeadsId($outerLeadsId)
     {
-        $this->container['locationTypes'] = $locationTypes;
+        $this->container['outerLeadsId'] = $outerLeadsId;
 
         return $this;
     }
 
     /**
-     * Gets regions
+     * Gets leadsUserType
      *
-     * @return int[]
+     * @return \TencentAds\Model\LeadsUserType
      */
-    public function getRegions()
+    public function getLeadsUserType()
     {
-        return $this->container['regions'];
+        return $this->container['leadsUserType'];
     }
 
     /**
-     * Sets regions
+     * Sets leadsUserType
      *
-     * @param int[] $regions regions
+     * @param \TencentAds\Model\LeadsUserType $leadsUserType leadsUserType
      *
      * @return $this
      */
-    public function setRegions($regions)
+    public function setLeadsUserType($leadsUserType)
     {
-        $this->container['regions'] = $regions;
+        $this->container['leadsUserType'] = $leadsUserType;
 
         return $this;
     }
 
     /**
-     * Gets businessDistricts
+     * Gets leadsUserWechatAppid
      *
-     * @return int[]
+     * @return string
      */
-    public function getBusinessDistricts()
+    public function getLeadsUserWechatAppid()
     {
-        return $this->container['businessDistricts'];
+        return $this->container['leadsUserWechatAppid'];
     }
 
     /**
-     * Sets businessDistricts
+     * Sets leadsUserWechatAppid
      *
-     * @param int[] $businessDistricts businessDistricts
+     * @param string $leadsUserWechatAppid leadsUserWechatAppid
      *
      * @return $this
      */
-    public function setBusinessDistricts($businessDistricts)
+    public function setLeadsUserWechatAppid($leadsUserWechatAppid)
     {
-        $this->container['businessDistricts'] = $businessDistricts;
+        $this->container['leadsUserWechatAppid'] = $leadsUserWechatAppid;
 
         return $this;
     }
 
     /**
-     * Gets customLocations
+     * Gets leadsUserId
      *
-     * @return \TencentAds\Model\CustomLocationsItemWithName[]
+     * @return string
      */
-    public function getCustomLocations()
+    public function getLeadsUserId()
     {
-        return $this->container['customLocations'];
+        return $this->container['leadsUserId'];
     }
 
     /**
-     * Sets customLocations
+     * Sets leadsUserId
      *
-     * @param \TencentAds\Model\CustomLocationsItemWithName[] $customLocations customLocations
+     * @param string $leadsUserId leadsUserId
      *
      * @return $this
      */
-    public function setCustomLocations($customLocations)
+    public function setLeadsUserId($leadsUserId)
     {
-        $this->container['customLocations'] = $customLocations;
+        $this->container['leadsUserId'] = $leadsUserId;
+
+        return $this;
+    }
+
+    /**
+     * Gets campaignId
+     *
+     * @return int
+     */
+    public function getCampaignId()
+    {
+        return $this->container['campaignId'];
+    }
+
+    /**
+     * Sets campaignId
+     *
+     * @param int $campaignId campaignId
+     *
+     * @return $this
+     */
+    public function setCampaignId($campaignId)
+    {
+        $this->container['campaignId'] = $campaignId;
+
+        return $this;
+    }
+
+    /**
+     * Gets adgroupId
+     *
+     * @return int
+     */
+    public function getAdgroupId()
+    {
+        return $this->container['adgroupId'];
+    }
+
+    /**
+     * Sets adgroupId
+     *
+     * @param int $adgroupId adgroupId
+     *
+     * @return $this
+     */
+    public function setAdgroupId($adgroupId)
+    {
+        $this->container['adgroupId'] = $adgroupId;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatAgencyId
+     *
+     * @return string
+     */
+    public function getWechatAgencyId()
+    {
+        return $this->container['wechatAgencyId'];
+    }
+
+    /**
+     * Sets wechatAgencyId
+     *
+     * @param string $wechatAgencyId wechatAgencyId
+     *
+     * @return $this
+     */
+    public function setWechatAgencyId($wechatAgencyId)
+    {
+        $this->container['wechatAgencyId'] = $wechatAgencyId;
 
         return $this;
     }

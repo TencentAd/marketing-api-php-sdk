@@ -70,6 +70,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
         'videoResourceStatus' => '\TencentAds\Model\WechatPageResourceStatus',
         'canvasType' => '\TencentAds\Model\CanvasType',
         'ownerUid' => 'int',
+        'pageStatus' => '\TencentAds\Model\PageStatus',
         'pageElementsSpecList' => '\TencentAds\Model\PageElementsStruct[]'
     ];
 
@@ -91,6 +92,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
         'videoResourceStatus' => null,
         'canvasType' => null,
         'ownerUid' => 'int64',
+        'pageStatus' => null,
         'pageElementsSpecList' => null
     ];
 
@@ -133,6 +135,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
         'videoResourceStatus' => 'video_resource_status',
         'canvasType' => 'canvas_type',
         'ownerUid' => 'owner_uid',
+        'pageStatus' => 'page_status',
         'pageElementsSpecList' => 'page_elements_spec_list'
     ];
 
@@ -154,6 +157,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
         'videoResourceStatus' => 'setVideoResourceStatus',
         'canvasType' => 'setCanvasType',
         'ownerUid' => 'setOwnerUid',
+        'pageStatus' => 'setPageStatus',
         'pageElementsSpecList' => 'setPageElementsSpecList'
     ];
 
@@ -175,6 +179,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
         'videoResourceStatus' => 'getVideoResourceStatus',
         'canvasType' => 'getCanvasType',
         'ownerUid' => 'getOwnerUid',
+        'pageStatus' => 'getPageStatus',
         'pageElementsSpecList' => 'getPageElementsSpecList'
     ];
 
@@ -250,6 +255,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['videoResourceStatus'] = isset($data['videoResourceStatus']) ? $data['videoResourceStatus'] : null;
         $this->container['canvasType'] = isset($data['canvasType']) ? $data['canvasType'] : null;
         $this->container['ownerUid'] = isset($data['ownerUid']) ? $data['ownerUid'] : null;
+        $this->container['pageStatus'] = isset($data['pageStatus']) ? $data['pageStatus'] : null;
         $this->container['pageElementsSpecList'] = isset($data['pageElementsSpecList']) ? $data['pageElementsSpecList'] : null;
     }
 
@@ -561,6 +567,30 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     public function setOwnerUid($ownerUid)
     {
         $this->container['ownerUid'] = $ownerUid;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageStatus
+     *
+     * @return \TencentAds\Model\PageStatus
+     */
+    public function getPageStatus()
+    {
+        return $this->container['pageStatus'];
+    }
+
+    /**
+     * Sets pageStatus
+     *
+     * @param \TencentAds\Model\PageStatus $pageStatus pageStatus
+     *
+     * @return $this
+     */
+    public function setPageStatus($pageStatus)
+    {
+        $this->container['pageStatus'] = $pageStatus;
 
         return $this;
     }
