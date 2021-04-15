@@ -64,6 +64,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
         'beginDate' => 'string',
         'targeting' => '\TencentAds\Model\DpWriteTargetingSetting',
         'calcStatus' => '\TencentAds\Model\CalculateStatus',
+        'metricDetail' => '\TencentAds\Model\MetricDetailData',
         'rejectMessage' => 'string',
         'poiList' => 'string[]',
         'coldStartAudience' => 'int[]'
@@ -81,6 +82,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
         'beginDate' => null,
         'targeting' => null,
         'calcStatus' => null,
+        'metricDetail' => null,
         'rejectMessage' => null,
         'poiList' => null,
         'coldStartAudience' => 'int64'
@@ -119,6 +121,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
         'beginDate' => 'begin_date',
         'targeting' => 'targeting',
         'calcStatus' => 'calc_status',
+        'metricDetail' => 'metric_detail',
         'rejectMessage' => 'reject_message',
         'poiList' => 'poi_list',
         'coldStartAudience' => 'cold_start_audience'
@@ -136,6 +139,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
         'beginDate' => 'setBeginDate',
         'targeting' => 'setTargeting',
         'calcStatus' => 'setCalcStatus',
+        'metricDetail' => 'setMetricDetail',
         'rejectMessage' => 'setRejectMessage',
         'poiList' => 'setPoiList',
         'coldStartAudience' => 'setColdStartAudience'
@@ -153,6 +157,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
         'beginDate' => 'getBeginDate',
         'targeting' => 'getTargeting',
         'calcStatus' => 'getCalcStatus',
+        'metricDetail' => 'getMetricDetail',
         'rejectMessage' => 'getRejectMessage',
         'poiList' => 'getPoiList',
         'coldStartAudience' => 'getColdStartAudience'
@@ -224,6 +229,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
         $this->container['beginDate'] = isset($data['beginDate']) ? $data['beginDate'] : null;
         $this->container['targeting'] = isset($data['targeting']) ? $data['targeting'] : null;
         $this->container['calcStatus'] = isset($data['calcStatus']) ? $data['calcStatus'] : null;
+        $this->container['metricDetail'] = isset($data['metricDetail']) ? $data['metricDetail'] : null;
         $this->container['rejectMessage'] = isset($data['rejectMessage']) ? $data['rejectMessage'] : null;
         $this->container['poiList'] = isset($data['poiList']) ? $data['poiList'] : null;
         $this->container['coldStartAudience'] = isset($data['coldStartAudience']) ? $data['coldStartAudience'] : null;
@@ -393,6 +399,30 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     public function setCalcStatus($calcStatus)
     {
         $this->container['calcStatus'] = $calcStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets metricDetail
+     *
+     * @return \TencentAds\Model\MetricDetailData
+     */
+    public function getMetricDetail()
+    {
+        return $this->container['metricDetail'];
+    }
+
+    /**
+     * Sets metricDetail
+     *
+     * @param \TencentAds\Model\MetricDetailData $metricDetail metricDetail
+     *
+     * @return $this
+     */
+    public function setMetricDetail($metricDetail)
+    {
+        $this->container['metricDetail'] = $metricDetail;
 
         return $this;
     }
