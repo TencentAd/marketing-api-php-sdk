@@ -145,11 +145,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'praiseCost' => 'int',
         'commentCount' => 'int',
         'commentCost' => 'int',
-        'cost1' => 'int',
-        'cost2' => 'int',
-        'cost3' => 'int',
-        'cost4' => 'int',
-        'creditCost' => 'int',
         'adPurValApp' => 'int',
         'fromFollowUv' => 'int',
         'fromFollowCost' => 'int',
@@ -231,6 +226,12 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameRetentionD1Rate' => 'double',
         'miniGameRetentionD1Cost' => 'int',
         'keyPageViewRate' => 'double',
+        'wechatCostStage1' => 'int',
+        'wechatCostStage2' => 'int',
+        'wechatDeepConversionsCountStage1' => 'int',
+        'wechatDeepConversionsCountStage2' => 'int',
+        'wechatShallowConversionsCountStage1' => 'int',
+        'wechatShallowConversionsCountStage2' => 'int',
         'age' => 'string',
         'regionId' => 'int',
         'cityId' => 'int',
@@ -491,11 +492,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'praiseCost' => 'int64',
         'commentCount' => 'int64',
         'commentCost' => 'int64',
-        'cost1' => 'int64',
-        'cost2' => 'int64',
-        'cost3' => 'int64',
-        'cost4' => 'int64',
-        'creditCost' => 'int64',
         'adPurValApp' => 'int64',
         'fromFollowUv' => 'int64',
         'fromFollowCost' => 'int64',
@@ -577,6 +573,12 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameRetentionD1Rate' => 'double',
         'miniGameRetentionD1Cost' => 'int64',
         'keyPageViewRate' => 'double',
+        'wechatCostStage1' => 'int64',
+        'wechatCostStage2' => 'int64',
+        'wechatDeepConversionsCountStage1' => 'int64',
+        'wechatDeepConversionsCountStage2' => 'int64',
+        'wechatShallowConversionsCountStage1' => 'int64',
+        'wechatShallowConversionsCountStage2' => 'int64',
         'age' => null,
         'regionId' => 'int64',
         'cityId' => 'int64',
@@ -858,11 +860,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'praiseCost' => 'praise_cost',
         'commentCount' => 'comment_count',
         'commentCost' => 'comment_cost',
-        'cost1' => 'cost1',
-        'cost2' => 'cost2',
-        'cost3' => 'cost3',
-        'cost4' => 'cost4',
-        'creditCost' => 'credit_cost',
         'adPurValApp' => 'ad_pur_val_app',
         'fromFollowUv' => 'from_follow_uv',
         'fromFollowCost' => 'from_follow_cost',
@@ -944,6 +941,12 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameRetentionD1Rate' => 'mini_game_retention_d1_rate',
         'miniGameRetentionD1Cost' => 'mini_game_retention_d1_cost',
         'keyPageViewRate' => 'key_page_view_rate',
+        'wechatCostStage1' => 'wechat_cost_stage1',
+        'wechatCostStage2' => 'wechat_cost_stage2',
+        'wechatDeepConversionsCountStage1' => 'wechat_deep_conversions_count_stage1',
+        'wechatDeepConversionsCountStage2' => 'wechat_deep_conversions_count_stage2',
+        'wechatShallowConversionsCountStage1' => 'wechat_shallow_conversions_count_stage1',
+        'wechatShallowConversionsCountStage2' => 'wechat_shallow_conversions_count_stage2',
         'age' => 'age',
         'regionId' => 'region_id',
         'cityId' => 'city_id',
@@ -1204,11 +1207,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'praiseCost' => 'setPraiseCost',
         'commentCount' => 'setCommentCount',
         'commentCost' => 'setCommentCost',
-        'cost1' => 'setCost1',
-        'cost2' => 'setCost2',
-        'cost3' => 'setCost3',
-        'cost4' => 'setCost4',
-        'creditCost' => 'setCreditCost',
         'adPurValApp' => 'setAdPurValApp',
         'fromFollowUv' => 'setFromFollowUv',
         'fromFollowCost' => 'setFromFollowCost',
@@ -1290,6 +1288,12 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameRetentionD1Rate' => 'setMiniGameRetentionD1Rate',
         'miniGameRetentionD1Cost' => 'setMiniGameRetentionD1Cost',
         'keyPageViewRate' => 'setKeyPageViewRate',
+        'wechatCostStage1' => 'setWechatCostStage1',
+        'wechatCostStage2' => 'setWechatCostStage2',
+        'wechatDeepConversionsCountStage1' => 'setWechatDeepConversionsCountStage1',
+        'wechatDeepConversionsCountStage2' => 'setWechatDeepConversionsCountStage2',
+        'wechatShallowConversionsCountStage1' => 'setWechatShallowConversionsCountStage1',
+        'wechatShallowConversionsCountStage2' => 'setWechatShallowConversionsCountStage2',
         'age' => 'setAge',
         'regionId' => 'setRegionId',
         'cityId' => 'setCityId',
@@ -1550,11 +1554,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'praiseCost' => 'getPraiseCost',
         'commentCount' => 'getCommentCount',
         'commentCost' => 'getCommentCost',
-        'cost1' => 'getCost1',
-        'cost2' => 'getCost2',
-        'cost3' => 'getCost3',
-        'cost4' => 'getCost4',
-        'creditCost' => 'getCreditCost',
         'adPurValApp' => 'getAdPurValApp',
         'fromFollowUv' => 'getFromFollowUv',
         'fromFollowCost' => 'getFromFollowCost',
@@ -1636,6 +1635,12 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameRetentionD1Rate' => 'getMiniGameRetentionD1Rate',
         'miniGameRetentionD1Cost' => 'getMiniGameRetentionD1Cost',
         'keyPageViewRate' => 'getKeyPageViewRate',
+        'wechatCostStage1' => 'getWechatCostStage1',
+        'wechatCostStage2' => 'getWechatCostStage2',
+        'wechatDeepConversionsCountStage1' => 'getWechatDeepConversionsCountStage1',
+        'wechatDeepConversionsCountStage2' => 'getWechatDeepConversionsCountStage2',
+        'wechatShallowConversionsCountStage1' => 'getWechatShallowConversionsCountStage1',
+        'wechatShallowConversionsCountStage2' => 'getWechatShallowConversionsCountStage2',
         'age' => 'getAge',
         'regionId' => 'getRegionId',
         'cityId' => 'getCityId',
@@ -1950,11 +1955,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['praiseCost'] = isset($data['praiseCost']) ? $data['praiseCost'] : null;
         $this->container['commentCount'] = isset($data['commentCount']) ? $data['commentCount'] : null;
         $this->container['commentCost'] = isset($data['commentCost']) ? $data['commentCost'] : null;
-        $this->container['cost1'] = isset($data['cost1']) ? $data['cost1'] : null;
-        $this->container['cost2'] = isset($data['cost2']) ? $data['cost2'] : null;
-        $this->container['cost3'] = isset($data['cost3']) ? $data['cost3'] : null;
-        $this->container['cost4'] = isset($data['cost4']) ? $data['cost4'] : null;
-        $this->container['creditCost'] = isset($data['creditCost']) ? $data['creditCost'] : null;
         $this->container['adPurValApp'] = isset($data['adPurValApp']) ? $data['adPurValApp'] : null;
         $this->container['fromFollowUv'] = isset($data['fromFollowUv']) ? $data['fromFollowUv'] : null;
         $this->container['fromFollowCost'] = isset($data['fromFollowCost']) ? $data['fromFollowCost'] : null;
@@ -2036,6 +2036,12 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGameRetentionD1Rate'] = isset($data['miniGameRetentionD1Rate']) ? $data['miniGameRetentionD1Rate'] : null;
         $this->container['miniGameRetentionD1Cost'] = isset($data['miniGameRetentionD1Cost']) ? $data['miniGameRetentionD1Cost'] : null;
         $this->container['keyPageViewRate'] = isset($data['keyPageViewRate']) ? $data['keyPageViewRate'] : null;
+        $this->container['wechatCostStage1'] = isset($data['wechatCostStage1']) ? $data['wechatCostStage1'] : null;
+        $this->container['wechatCostStage2'] = isset($data['wechatCostStage2']) ? $data['wechatCostStage2'] : null;
+        $this->container['wechatDeepConversionsCountStage1'] = isset($data['wechatDeepConversionsCountStage1']) ? $data['wechatDeepConversionsCountStage1'] : null;
+        $this->container['wechatDeepConversionsCountStage2'] = isset($data['wechatDeepConversionsCountStage2']) ? $data['wechatDeepConversionsCountStage2'] : null;
+        $this->container['wechatShallowConversionsCountStage1'] = isset($data['wechatShallowConversionsCountStage1']) ? $data['wechatShallowConversionsCountStage1'] : null;
+        $this->container['wechatShallowConversionsCountStage2'] = isset($data['wechatShallowConversionsCountStage2']) ? $data['wechatShallowConversionsCountStage2'] : null;
         $this->container['age'] = isset($data['age']) ? $data['age'] : null;
         $this->container['regionId'] = isset($data['regionId']) ? $data['regionId'] : null;
         $this->container['cityId'] = isset($data['cityId']) ? $data['cityId'] : null;
@@ -4316,126 +4322,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets cost1
-     *
-     * @return int
-     */
-    public function getCost1()
-    {
-        return $this->container['cost1'];
-    }
-
-    /**
-     * Sets cost1
-     *
-     * @param int $cost1 cost1
-     *
-     * @return $this
-     */
-    public function setCost1($cost1)
-    {
-        $this->container['cost1'] = $cost1;
-
-        return $this;
-    }
-
-    /**
-     * Gets cost2
-     *
-     * @return int
-     */
-    public function getCost2()
-    {
-        return $this->container['cost2'];
-    }
-
-    /**
-     * Sets cost2
-     *
-     * @param int $cost2 cost2
-     *
-     * @return $this
-     */
-    public function setCost2($cost2)
-    {
-        $this->container['cost2'] = $cost2;
-
-        return $this;
-    }
-
-    /**
-     * Gets cost3
-     *
-     * @return int
-     */
-    public function getCost3()
-    {
-        return $this->container['cost3'];
-    }
-
-    /**
-     * Sets cost3
-     *
-     * @param int $cost3 cost3
-     *
-     * @return $this
-     */
-    public function setCost3($cost3)
-    {
-        $this->container['cost3'] = $cost3;
-
-        return $this;
-    }
-
-    /**
-     * Gets cost4
-     *
-     * @return int
-     */
-    public function getCost4()
-    {
-        return $this->container['cost4'];
-    }
-
-    /**
-     * Sets cost4
-     *
-     * @param int $cost4 cost4
-     *
-     * @return $this
-     */
-    public function setCost4($cost4)
-    {
-        $this->container['cost4'] = $cost4;
-
-        return $this;
-    }
-
-    /**
-     * Gets creditCost
-     *
-     * @return int
-     */
-    public function getCreditCost()
-    {
-        return $this->container['creditCost'];
-    }
-
-    /**
-     * Sets creditCost
-     *
-     * @param int $creditCost creditCost
-     *
-     * @return $this
-     */
-    public function setCreditCost($creditCost)
-    {
-        $this->container['creditCost'] = $creditCost;
-
-        return $this;
-    }
-
-    /**
      * Gets adPurValApp
      *
      * @return int
@@ -6375,6 +6261,150 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setKeyPageViewRate($keyPageViewRate)
     {
         $this->container['keyPageViewRate'] = $keyPageViewRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatCostStage1
+     *
+     * @return int
+     */
+    public function getWechatCostStage1()
+    {
+        return $this->container['wechatCostStage1'];
+    }
+
+    /**
+     * Sets wechatCostStage1
+     *
+     * @param int $wechatCostStage1 wechatCostStage1
+     *
+     * @return $this
+     */
+    public function setWechatCostStage1($wechatCostStage1)
+    {
+        $this->container['wechatCostStage1'] = $wechatCostStage1;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatCostStage2
+     *
+     * @return int
+     */
+    public function getWechatCostStage2()
+    {
+        return $this->container['wechatCostStage2'];
+    }
+
+    /**
+     * Sets wechatCostStage2
+     *
+     * @param int $wechatCostStage2 wechatCostStage2
+     *
+     * @return $this
+     */
+    public function setWechatCostStage2($wechatCostStage2)
+    {
+        $this->container['wechatCostStage2'] = $wechatCostStage2;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatDeepConversionsCountStage1
+     *
+     * @return int
+     */
+    public function getWechatDeepConversionsCountStage1()
+    {
+        return $this->container['wechatDeepConversionsCountStage1'];
+    }
+
+    /**
+     * Sets wechatDeepConversionsCountStage1
+     *
+     * @param int $wechatDeepConversionsCountStage1 wechatDeepConversionsCountStage1
+     *
+     * @return $this
+     */
+    public function setWechatDeepConversionsCountStage1($wechatDeepConversionsCountStage1)
+    {
+        $this->container['wechatDeepConversionsCountStage1'] = $wechatDeepConversionsCountStage1;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatDeepConversionsCountStage2
+     *
+     * @return int
+     */
+    public function getWechatDeepConversionsCountStage2()
+    {
+        return $this->container['wechatDeepConversionsCountStage2'];
+    }
+
+    /**
+     * Sets wechatDeepConversionsCountStage2
+     *
+     * @param int $wechatDeepConversionsCountStage2 wechatDeepConversionsCountStage2
+     *
+     * @return $this
+     */
+    public function setWechatDeepConversionsCountStage2($wechatDeepConversionsCountStage2)
+    {
+        $this->container['wechatDeepConversionsCountStage2'] = $wechatDeepConversionsCountStage2;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatShallowConversionsCountStage1
+     *
+     * @return int
+     */
+    public function getWechatShallowConversionsCountStage1()
+    {
+        return $this->container['wechatShallowConversionsCountStage1'];
+    }
+
+    /**
+     * Sets wechatShallowConversionsCountStage1
+     *
+     * @param int $wechatShallowConversionsCountStage1 wechatShallowConversionsCountStage1
+     *
+     * @return $this
+     */
+    public function setWechatShallowConversionsCountStage1($wechatShallowConversionsCountStage1)
+    {
+        $this->container['wechatShallowConversionsCountStage1'] = $wechatShallowConversionsCountStage1;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatShallowConversionsCountStage2
+     *
+     * @return int
+     */
+    public function getWechatShallowConversionsCountStage2()
+    {
+        return $this->container['wechatShallowConversionsCountStage2'];
+    }
+
+    /**
+     * Sets wechatShallowConversionsCountStage2
+     *
+     * @param int $wechatShallowConversionsCountStage2 wechatShallowConversionsCountStage2
+     *
+     * @return $this
+     */
+    public function setWechatShallowConversionsCountStage2($wechatShallowConversionsCountStage2)
+    {
+        $this->container['wechatShallowConversionsCountStage2'] = $wechatShallowConversionsCountStage2;
 
         return $this;
     }

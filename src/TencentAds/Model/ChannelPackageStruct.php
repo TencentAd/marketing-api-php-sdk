@@ -1,6 +1,6 @@
 <?php
 /**
- * WecomSpec
+ * ChannelPackageStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * WecomSpec Class Doc Comment
+ * ChannelPackageStruct Class Doc Comment
  *
  * @category Class
- * @description 企业微信组件信息
+ * @description 渠道包信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class WecomSpec implements ModelInterface, ArrayAccess
+class ChannelPackageStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class WecomSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'wecom_spec';
+    protected static $swaggerModelName = 'channel_package_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,10 @@ class WecomSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'title' => 'string',
-        'groupid' => 'int',
-        'setid' => 'int'
+        'appAndroidChannelPackageId' => 'string',
+        'packageName' => 'string',
+        'systemStatus' => '\TencentAds\Model\UnionPackageSysStatus',
+        'packageOriginUrl' => 'string'
     ];
 
     /**
@@ -69,9 +70,10 @@ class WecomSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'title' => null,
-        'groupid' => 'int64',
-        'setid' => 'int64'
+        'appAndroidChannelPackageId' => null,
+        'packageName' => null,
+        'systemStatus' => null,
+        'packageOriginUrl' => null
     ];
 
     /**
@@ -101,9 +103,10 @@ class WecomSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'title' => 'title',
-        'groupid' => 'groupid',
-        'setid' => 'setid'
+        'appAndroidChannelPackageId' => 'app_android_channel_package_id',
+        'packageName' => 'package_name',
+        'systemStatus' => 'system_status',
+        'packageOriginUrl' => 'package_origin_url'
     ];
 
     /**
@@ -112,9 +115,10 @@ class WecomSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'title' => 'setTitle',
-        'groupid' => 'setGroupid',
-        'setid' => 'setSetid'
+        'appAndroidChannelPackageId' => 'setAppAndroidChannelPackageId',
+        'packageName' => 'setPackageName',
+        'systemStatus' => 'setSystemStatus',
+        'packageOriginUrl' => 'setPackageOriginUrl'
     ];
 
     /**
@@ -123,9 +127,10 @@ class WecomSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'title' => 'getTitle',
-        'groupid' => 'getGroupid',
-        'setid' => 'getSetid'
+        'appAndroidChannelPackageId' => 'getAppAndroidChannelPackageId',
+        'packageName' => 'getPackageName',
+        'systemStatus' => 'getSystemStatus',
+        'packageOriginUrl' => 'getPackageOriginUrl'
     ];
 
     /**
@@ -188,9 +193,10 @@ class WecomSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['title'] = isset($data['title']) ? $data['title'] : null;
-        $this->container['groupid'] = isset($data['groupid']) ? $data['groupid'] : null;
-        $this->container['setid'] = isset($data['setid']) ? $data['setid'] : null;
+        $this->container['appAndroidChannelPackageId'] = isset($data['appAndroidChannelPackageId']) ? $data['appAndroidChannelPackageId'] : null;
+        $this->container['packageName'] = isset($data['packageName']) ? $data['packageName'] : null;
+        $this->container['systemStatus'] = isset($data['systemStatus']) ? $data['systemStatus'] : null;
+        $this->container['packageOriginUrl'] = isset($data['packageOriginUrl']) ? $data['packageOriginUrl'] : null;
     }
 
     /**
@@ -218,73 +224,97 @@ class WecomSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets title
+     * Gets appAndroidChannelPackageId
      *
      * @return string
      */
-    public function getTitle()
+    public function getAppAndroidChannelPackageId()
     {
-        return $this->container['title'];
+        return $this->container['appAndroidChannelPackageId'];
     }
 
     /**
-     * Sets title
+     * Sets appAndroidChannelPackageId
      *
-     * @param string $title title
+     * @param string $appAndroidChannelPackageId appAndroidChannelPackageId
      *
      * @return $this
      */
-    public function setTitle($title)
+    public function setAppAndroidChannelPackageId($appAndroidChannelPackageId)
     {
-        $this->container['title'] = $title;
+        $this->container['appAndroidChannelPackageId'] = $appAndroidChannelPackageId;
 
         return $this;
     }
 
     /**
-     * Gets groupid
+     * Gets packageName
      *
-     * @return int
+     * @return string
      */
-    public function getGroupid()
+    public function getPackageName()
     {
-        return $this->container['groupid'];
+        return $this->container['packageName'];
     }
 
     /**
-     * Sets groupid
+     * Sets packageName
      *
-     * @param int $groupid groupid
+     * @param string $packageName packageName
      *
      * @return $this
      */
-    public function setGroupid($groupid)
+    public function setPackageName($packageName)
     {
-        $this->container['groupid'] = $groupid;
+        $this->container['packageName'] = $packageName;
 
         return $this;
     }
 
     /**
-     * Gets setid
+     * Gets systemStatus
      *
-     * @return int
+     * @return \TencentAds\Model\UnionPackageSysStatus
      */
-    public function getSetid()
+    public function getSystemStatus()
     {
-        return $this->container['setid'];
+        return $this->container['systemStatus'];
     }
 
     /**
-     * Sets setid
+     * Sets systemStatus
      *
-     * @param int $setid setid
+     * @param \TencentAds\Model\UnionPackageSysStatus $systemStatus systemStatus
      *
      * @return $this
      */
-    public function setSetid($setid)
+    public function setSystemStatus($systemStatus)
     {
-        $this->container['setid'] = $setid;
+        $this->container['systemStatus'] = $systemStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets packageOriginUrl
+     *
+     * @return string
+     */
+    public function getPackageOriginUrl()
+    {
+        return $this->container['packageOriginUrl'];
+    }
+
+    /**
+     * Sets packageOriginUrl
+     *
+     * @param string $packageOriginUrl packageOriginUrl
+     *
+     * @return $this
+     */
+    public function setPackageOriginUrl($packageOriginUrl)
+    {
+        $this->container['packageOriginUrl'] = $packageOriginUrl;
 
         return $this;
     }

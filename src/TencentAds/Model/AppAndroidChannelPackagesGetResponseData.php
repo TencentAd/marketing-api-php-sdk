@@ -1,6 +1,6 @@
 <?php
 /**
- * WecomSpec
+ * AppAndroidChannelPackagesGetResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * WecomSpec Class Doc Comment
+ * AppAndroidChannelPackagesGetResponseData Class Doc Comment
  *
  * @category Class
- * @description 企业微信组件信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class WecomSpec implements ModelInterface, ArrayAccess
+class AppAndroidChannelPackagesGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class WecomSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'wecom_spec';
+    protected static $swaggerModelName = 'AppAndroidChannelPackagesGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,8 @@ class WecomSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'title' => 'string',
-        'groupid' => 'int',
-        'setid' => 'int'
+        'list' => '\TencentAds\Model\ChannelPackageStruct[]',
+        'pageInfo' => '\TencentAds\Model\Conf'
     ];
 
     /**
@@ -69,9 +67,8 @@ class WecomSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'title' => null,
-        'groupid' => 'int64',
-        'setid' => 'int64'
+        'list' => null,
+        'pageInfo' => null
     ];
 
     /**
@@ -101,9 +98,8 @@ class WecomSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'title' => 'title',
-        'groupid' => 'groupid',
-        'setid' => 'setid'
+        'list' => 'list',
+        'pageInfo' => 'page_info'
     ];
 
     /**
@@ -112,9 +108,8 @@ class WecomSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'title' => 'setTitle',
-        'groupid' => 'setGroupid',
-        'setid' => 'setSetid'
+        'list' => 'setList',
+        'pageInfo' => 'setPageInfo'
     ];
 
     /**
@@ -123,9 +118,8 @@ class WecomSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'title' => 'getTitle',
-        'groupid' => 'getGroupid',
-        'setid' => 'getSetid'
+        'list' => 'getList',
+        'pageInfo' => 'getPageInfo'
     ];
 
     /**
@@ -188,9 +182,8 @@ class WecomSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['title'] = isset($data['title']) ? $data['title'] : null;
-        $this->container['groupid'] = isset($data['groupid']) ? $data['groupid'] : null;
-        $this->container['setid'] = isset($data['setid']) ? $data['setid'] : null;
+        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
+        $this->container['pageInfo'] = isset($data['pageInfo']) ? $data['pageInfo'] : null;
     }
 
     /**
@@ -218,73 +211,49 @@ class WecomSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets title
+     * Gets list
      *
-     * @return string
+     * @return \TencentAds\Model\ChannelPackageStruct[]
      */
-    public function getTitle()
+    public function getList()
     {
-        return $this->container['title'];
+        return $this->container['list'];
     }
 
     /**
-     * Sets title
+     * Sets list
      *
-     * @param string $title title
+     * @param \TencentAds\Model\ChannelPackageStruct[] $list list
      *
      * @return $this
      */
-    public function setTitle($title)
+    public function setList($list)
     {
-        $this->container['title'] = $title;
+        $this->container['list'] = $list;
 
         return $this;
     }
 
     /**
-     * Gets groupid
+     * Gets pageInfo
      *
-     * @return int
+     * @return \TencentAds\Model\Conf
      */
-    public function getGroupid()
+    public function getPageInfo()
     {
-        return $this->container['groupid'];
+        return $this->container['pageInfo'];
     }
 
     /**
-     * Sets groupid
+     * Sets pageInfo
      *
-     * @param int $groupid groupid
+     * @param \TencentAds\Model\Conf $pageInfo pageInfo
      *
      * @return $this
      */
-    public function setGroupid($groupid)
+    public function setPageInfo($pageInfo)
     {
-        $this->container['groupid'] = $groupid;
-
-        return $this;
-    }
-
-    /**
-     * Gets setid
-     *
-     * @return int
-     */
-    public function getSetid()
-    {
-        return $this->container['setid'];
-    }
-
-    /**
-     * Sets setid
-     *
-     * @param int $setid setid
-     *
-     * @return $this
-     */
-    public function setSetid($setid)
-    {
-        $this->container['setid'] = $setid;
+        $this->container['pageInfo'] = $pageInfo;
 
         return $this;
     }

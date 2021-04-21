@@ -343,6 +343,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameRetentionD1Rate' => 'double',
         'miniGameRetentionD1Cost' => 'int',
         'keyPageViewRate' => 'double',
+        'wechatCostStage1' => 'int',
+        'wechatCostStage2' => 'int',
+        'wechatDeepConversionsCountStage1' => 'int',
+        'wechatDeepConversionsCountStage2' => 'int',
+        'wechatShallowConversionsCountStage1' => 'int',
+        'wechatShallowConversionsCountStage2' => 'int',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
         'incomeRoi1' => 'double',
@@ -766,6 +772,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameRetentionD1Rate' => 'double',
         'miniGameRetentionD1Cost' => 'int64',
         'keyPageViewRate' => 'double',
+        'wechatCostStage1' => 'int64',
+        'wechatCostStage2' => 'int64',
+        'wechatDeepConversionsCountStage1' => 'int64',
+        'wechatDeepConversionsCountStage2' => 'int64',
+        'wechatShallowConversionsCountStage1' => 'int64',
+        'wechatShallowConversionsCountStage2' => 'int64',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
         'incomeRoi1' => 'double',
@@ -1210,6 +1222,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameRetentionD1Rate' => 'mini_game_retention_d1_rate',
         'miniGameRetentionD1Cost' => 'mini_game_retention_d1_cost',
         'keyPageViewRate' => 'key_page_view_rate',
+        'wechatCostStage1' => 'wechat_cost_stage1',
+        'wechatCostStage2' => 'wechat_cost_stage2',
+        'wechatDeepConversionsCountStage1' => 'wechat_deep_conversions_count_stage1',
+        'wechatDeepConversionsCountStage2' => 'wechat_deep_conversions_count_stage2',
+        'wechatShallowConversionsCountStage1' => 'wechat_shallow_conversions_count_stage1',
+        'wechatShallowConversionsCountStage2' => 'wechat_shallow_conversions_count_stage2',
         'requestConversionsCount' => 'request_conversions_count',
         'requestConversionsCost' => 'request_conversions_cost',
         'incomeRoi1' => 'income_roi_1',
@@ -1633,6 +1651,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameRetentionD1Rate' => 'setMiniGameRetentionD1Rate',
         'miniGameRetentionD1Cost' => 'setMiniGameRetentionD1Cost',
         'keyPageViewRate' => 'setKeyPageViewRate',
+        'wechatCostStage1' => 'setWechatCostStage1',
+        'wechatCostStage2' => 'setWechatCostStage2',
+        'wechatDeepConversionsCountStage1' => 'setWechatDeepConversionsCountStage1',
+        'wechatDeepConversionsCountStage2' => 'setWechatDeepConversionsCountStage2',
+        'wechatShallowConversionsCountStage1' => 'setWechatShallowConversionsCountStage1',
+        'wechatShallowConversionsCountStage2' => 'setWechatShallowConversionsCountStage2',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'requestConversionsCost' => 'setRequestConversionsCost',
         'incomeRoi1' => 'setIncomeRoi1',
@@ -2056,6 +2080,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameRetentionD1Rate' => 'getMiniGameRetentionD1Rate',
         'miniGameRetentionD1Cost' => 'getMiniGameRetentionD1Cost',
         'keyPageViewRate' => 'getKeyPageViewRate',
+        'wechatCostStage1' => 'getWechatCostStage1',
+        'wechatCostStage2' => 'getWechatCostStage2',
+        'wechatDeepConversionsCountStage1' => 'getWechatDeepConversionsCountStage1',
+        'wechatDeepConversionsCountStage2' => 'getWechatDeepConversionsCountStage2',
+        'wechatShallowConversionsCountStage1' => 'getWechatShallowConversionsCountStage1',
+        'wechatShallowConversionsCountStage2' => 'getWechatShallowConversionsCountStage2',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'requestConversionsCost' => 'getRequestConversionsCost',
         'incomeRoi1' => 'getIncomeRoi1',
@@ -2533,6 +2563,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGameRetentionD1Rate'] = isset($data['miniGameRetentionD1Rate']) ? $data['miniGameRetentionD1Rate'] : null;
         $this->container['miniGameRetentionD1Cost'] = isset($data['miniGameRetentionD1Cost']) ? $data['miniGameRetentionD1Cost'] : null;
         $this->container['keyPageViewRate'] = isset($data['keyPageViewRate']) ? $data['keyPageViewRate'] : null;
+        $this->container['wechatCostStage1'] = isset($data['wechatCostStage1']) ? $data['wechatCostStage1'] : null;
+        $this->container['wechatCostStage2'] = isset($data['wechatCostStage2']) ? $data['wechatCostStage2'] : null;
+        $this->container['wechatDeepConversionsCountStage1'] = isset($data['wechatDeepConversionsCountStage1']) ? $data['wechatDeepConversionsCountStage1'] : null;
+        $this->container['wechatDeepConversionsCountStage2'] = isset($data['wechatDeepConversionsCountStage2']) ? $data['wechatDeepConversionsCountStage2'] : null;
+        $this->container['wechatShallowConversionsCountStage1'] = isset($data['wechatShallowConversionsCountStage1']) ? $data['wechatShallowConversionsCountStage1'] : null;
+        $this->container['wechatShallowConversionsCountStage2'] = isset($data['wechatShallowConversionsCountStage2']) ? $data['wechatShallowConversionsCountStage2'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
         $this->container['incomeRoi1'] = isset($data['incomeRoi1']) ? $data['incomeRoi1'] : null;
@@ -9525,6 +9561,150 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setKeyPageViewRate($keyPageViewRate)
     {
         $this->container['keyPageViewRate'] = $keyPageViewRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatCostStage1
+     *
+     * @return int
+     */
+    public function getWechatCostStage1()
+    {
+        return $this->container['wechatCostStage1'];
+    }
+
+    /**
+     * Sets wechatCostStage1
+     *
+     * @param int $wechatCostStage1 wechatCostStage1
+     *
+     * @return $this
+     */
+    public function setWechatCostStage1($wechatCostStage1)
+    {
+        $this->container['wechatCostStage1'] = $wechatCostStage1;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatCostStage2
+     *
+     * @return int
+     */
+    public function getWechatCostStage2()
+    {
+        return $this->container['wechatCostStage2'];
+    }
+
+    /**
+     * Sets wechatCostStage2
+     *
+     * @param int $wechatCostStage2 wechatCostStage2
+     *
+     * @return $this
+     */
+    public function setWechatCostStage2($wechatCostStage2)
+    {
+        $this->container['wechatCostStage2'] = $wechatCostStage2;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatDeepConversionsCountStage1
+     *
+     * @return int
+     */
+    public function getWechatDeepConversionsCountStage1()
+    {
+        return $this->container['wechatDeepConversionsCountStage1'];
+    }
+
+    /**
+     * Sets wechatDeepConversionsCountStage1
+     *
+     * @param int $wechatDeepConversionsCountStage1 wechatDeepConversionsCountStage1
+     *
+     * @return $this
+     */
+    public function setWechatDeepConversionsCountStage1($wechatDeepConversionsCountStage1)
+    {
+        $this->container['wechatDeepConversionsCountStage1'] = $wechatDeepConversionsCountStage1;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatDeepConversionsCountStage2
+     *
+     * @return int
+     */
+    public function getWechatDeepConversionsCountStage2()
+    {
+        return $this->container['wechatDeepConversionsCountStage2'];
+    }
+
+    /**
+     * Sets wechatDeepConversionsCountStage2
+     *
+     * @param int $wechatDeepConversionsCountStage2 wechatDeepConversionsCountStage2
+     *
+     * @return $this
+     */
+    public function setWechatDeepConversionsCountStage2($wechatDeepConversionsCountStage2)
+    {
+        $this->container['wechatDeepConversionsCountStage2'] = $wechatDeepConversionsCountStage2;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatShallowConversionsCountStage1
+     *
+     * @return int
+     */
+    public function getWechatShallowConversionsCountStage1()
+    {
+        return $this->container['wechatShallowConversionsCountStage1'];
+    }
+
+    /**
+     * Sets wechatShallowConversionsCountStage1
+     *
+     * @param int $wechatShallowConversionsCountStage1 wechatShallowConversionsCountStage1
+     *
+     * @return $this
+     */
+    public function setWechatShallowConversionsCountStage1($wechatShallowConversionsCountStage1)
+    {
+        $this->container['wechatShallowConversionsCountStage1'] = $wechatShallowConversionsCountStage1;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatShallowConversionsCountStage2
+     *
+     * @return int
+     */
+    public function getWechatShallowConversionsCountStage2()
+    {
+        return $this->container['wechatShallowConversionsCountStage2'];
+    }
+
+    /**
+     * Sets wechatShallowConversionsCountStage2
+     *
+     * @param int $wechatShallowConversionsCountStage2 wechatShallowConversionsCountStage2
+     *
+     * @return $this
+     */
+    public function setWechatShallowConversionsCountStage2($wechatShallowConversionsCountStage2)
+    {
+        $this->container['wechatShallowConversionsCountStage2'] = $wechatShallowConversionsCountStage2;
 
         return $this;
     }

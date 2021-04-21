@@ -1,6 +1,6 @@
 <?php
 /**
- * WecomSpec
+ * AppAndroidChannelPackagesGetResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * WecomSpec Class Doc Comment
+ * AppAndroidChannelPackagesGetResponse Class Doc Comment
  *
  * @category Class
- * @description 企业微信组件信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class WecomSpec implements ModelInterface, ArrayAccess
+class AppAndroidChannelPackagesGetResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class WecomSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'wecom_spec';
+    protected static $swaggerModelName = 'AppAndroidChannelPackagesGetResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,11 @@ class WecomSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'title' => 'string',
-        'groupid' => 'int',
-        'setid' => 'int'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\AppAndroidChannelPackagesGetResponseData'
     ];
 
     /**
@@ -69,9 +70,11 @@ class WecomSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'title' => null,
-        'groupid' => 'int64',
-        'setid' => 'int64'
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -101,9 +104,11 @@ class WecomSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'title' => 'title',
-        'groupid' => 'groupid',
-        'setid' => 'setid'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -112,9 +117,11 @@ class WecomSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'title' => 'setTitle',
-        'groupid' => 'setGroupid',
-        'setid' => 'setSetid'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -123,9 +130,11 @@ class WecomSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'title' => 'getTitle',
-        'groupid' => 'getGroupid',
-        'setid' => 'getSetid'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -188,9 +197,11 @@ class WecomSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['title'] = isset($data['title']) ? $data['title'] : null;
-        $this->container['groupid'] = isset($data['groupid']) ? $data['groupid'] : null;
-        $this->container['setid'] = isset($data['setid']) ? $data['setid'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -218,73 +229,121 @@ class WecomSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets title
+     * Gets code
+     *
+     * @return int
+     */
+    public function getCode()
+    {
+        return $this->container['code'];
+    }
+
+    /**
+     * Sets code
+     *
+     * @param int $code code
+     *
+     * @return $this
+     */
+    public function setCode($code)
+    {
+        $this->container['code'] = $code;
+
+        return $this;
+    }
+
+    /**
+     * Gets message
      *
      * @return string
      */
-    public function getTitle()
+    public function getMessage()
     {
-        return $this->container['title'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets title
+     * Sets message
      *
-     * @param string $title title
+     * @param string $message message
      *
      * @return $this
      */
-    public function setTitle($title)
+    public function setMessage($message)
     {
-        $this->container['title'] = $title;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets groupid
+     * Gets messageCn
      *
-     * @return int
+     * @return string
      */
-    public function getGroupid()
+    public function getMessageCn()
     {
-        return $this->container['groupid'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets groupid
+     * Sets messageCn
      *
-     * @param int $groupid groupid
+     * @param string $messageCn messageCn
      *
      * @return $this
      */
-    public function setGroupid($groupid)
+    public function setMessageCn($messageCn)
     {
-        $this->container['groupid'] = $groupid;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets setid
+     * Gets errors
      *
-     * @return int
+     * @return \TencentAds\Model\ApiErrorStruct[]
      */
-    public function getSetid()
+    public function getErrors()
     {
-        return $this->container['setid'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets setid
+     * Sets errors
      *
-     * @param int $setid setid
+     * @param \TencentAds\Model\ApiErrorStruct[] $errors errors
      *
      * @return $this
      */
-    public function setSetid($setid)
+    public function setErrors($errors)
     {
-        $this->container['setid'] = $setid;
+        $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\AppAndroidChannelPackagesGetResponseData
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\AppAndroidChannelPackagesGetResponseData $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }
