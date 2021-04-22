@@ -53,6 +53,8 @@ class AdgroupSysStatus
     const PREPARE = 'AD_GROUP_STATUS_PREPARE';
     const DELETED = 'AD_GROUP_STATUS_DELETED';
     const INVALID = 'AD_GROUP_STATUS_INVALID';
+    const TO_BE_STARTED = 'AD_GROUP_STATUS_TO_BE_STARTED';
+    const ENDED = 'AD_GROUP_STATUS_ENDED';
     
     /**
      * Gets allowable values of the enum
@@ -70,6 +72,8 @@ class AdgroupSysStatus
             self::PREPARE,
             self::DELETED,
             self::INVALID,
+            self::TO_BE_STARTED,
+            self::ENDED,
         ];
     }
 }

@@ -349,8 +349,13 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatDeepConversionsCountStage2' => 'int',
         'wechatShallowConversionsCountStage1' => 'int',
         'wechatShallowConversionsCountStage2' => 'int',
+        'registerActivateRate' => 'double',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
+        'incomeVal1' => 'int',
+        'incomeVal3' => 'int',
+        'incomeVal7' => 'int',
+        'incomeVal14' => 'int',
         'incomeRoi1' => 'double',
         'incomeRoi3' => 'double',
         'incomeRoi7' => 'double',
@@ -778,8 +783,13 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatDeepConversionsCountStage2' => 'int64',
         'wechatShallowConversionsCountStage1' => 'int64',
         'wechatShallowConversionsCountStage2' => 'int64',
+        'registerActivateRate' => 'double',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
+        'incomeVal1' => 'int64',
+        'incomeVal3' => 'int64',
+        'incomeVal7' => 'int64',
+        'incomeVal14' => 'int64',
         'incomeRoi1' => 'double',
         'incomeRoi3' => 'double',
         'incomeRoi7' => 'double',
@@ -1228,8 +1238,13 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatDeepConversionsCountStage2' => 'wechat_deep_conversions_count_stage2',
         'wechatShallowConversionsCountStage1' => 'wechat_shallow_conversions_count_stage1',
         'wechatShallowConversionsCountStage2' => 'wechat_shallow_conversions_count_stage2',
+        'registerActivateRate' => 'register_activate_rate',
         'requestConversionsCount' => 'request_conversions_count',
         'requestConversionsCost' => 'request_conversions_cost',
+        'incomeVal1' => 'income_val_1',
+        'incomeVal3' => 'income_val_3',
+        'incomeVal7' => 'income_val_7',
+        'incomeVal14' => 'income_val_14',
         'incomeRoi1' => 'income_roi_1',
         'incomeRoi3' => 'income_roi_3',
         'incomeRoi7' => 'income_roi_7',
@@ -1657,8 +1672,13 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatDeepConversionsCountStage2' => 'setWechatDeepConversionsCountStage2',
         'wechatShallowConversionsCountStage1' => 'setWechatShallowConversionsCountStage1',
         'wechatShallowConversionsCountStage2' => 'setWechatShallowConversionsCountStage2',
+        'registerActivateRate' => 'setRegisterActivateRate',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'requestConversionsCost' => 'setRequestConversionsCost',
+        'incomeVal1' => 'setIncomeVal1',
+        'incomeVal3' => 'setIncomeVal3',
+        'incomeVal7' => 'setIncomeVal7',
+        'incomeVal14' => 'setIncomeVal14',
         'incomeRoi1' => 'setIncomeRoi1',
         'incomeRoi3' => 'setIncomeRoi3',
         'incomeRoi7' => 'setIncomeRoi7',
@@ -2086,8 +2106,13 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatDeepConversionsCountStage2' => 'getWechatDeepConversionsCountStage2',
         'wechatShallowConversionsCountStage1' => 'getWechatShallowConversionsCountStage1',
         'wechatShallowConversionsCountStage2' => 'getWechatShallowConversionsCountStage2',
+        'registerActivateRate' => 'getRegisterActivateRate',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'requestConversionsCost' => 'getRequestConversionsCost',
+        'incomeVal1' => 'getIncomeVal1',
+        'incomeVal3' => 'getIncomeVal3',
+        'incomeVal7' => 'getIncomeVal7',
+        'incomeVal14' => 'getIncomeVal14',
         'incomeRoi1' => 'getIncomeRoi1',
         'incomeRoi3' => 'getIncomeRoi3',
         'incomeRoi7' => 'getIncomeRoi7',
@@ -2569,8 +2594,13 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['wechatDeepConversionsCountStage2'] = isset($data['wechatDeepConversionsCountStage2']) ? $data['wechatDeepConversionsCountStage2'] : null;
         $this->container['wechatShallowConversionsCountStage1'] = isset($data['wechatShallowConversionsCountStage1']) ? $data['wechatShallowConversionsCountStage1'] : null;
         $this->container['wechatShallowConversionsCountStage2'] = isset($data['wechatShallowConversionsCountStage2']) ? $data['wechatShallowConversionsCountStage2'] : null;
+        $this->container['registerActivateRate'] = isset($data['registerActivateRate']) ? $data['registerActivateRate'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
+        $this->container['incomeVal1'] = isset($data['incomeVal1']) ? $data['incomeVal1'] : null;
+        $this->container['incomeVal3'] = isset($data['incomeVal3']) ? $data['incomeVal3'] : null;
+        $this->container['incomeVal7'] = isset($data['incomeVal7']) ? $data['incomeVal7'] : null;
+        $this->container['incomeVal14'] = isset($data['incomeVal14']) ? $data['incomeVal14'] : null;
         $this->container['incomeRoi1'] = isset($data['incomeRoi1']) ? $data['incomeRoi1'] : null;
         $this->container['incomeRoi3'] = isset($data['incomeRoi3']) ? $data['incomeRoi3'] : null;
         $this->container['incomeRoi7'] = isset($data['incomeRoi7']) ? $data['incomeRoi7'] : null;
@@ -9710,6 +9740,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets registerActivateRate
+     *
+     * @return double
+     */
+    public function getRegisterActivateRate()
+    {
+        return $this->container['registerActivateRate'];
+    }
+
+    /**
+     * Sets registerActivateRate
+     *
+     * @param double $registerActivateRate registerActivateRate
+     *
+     * @return $this
+     */
+    public function setRegisterActivateRate($registerActivateRate)
+    {
+        $this->container['registerActivateRate'] = $registerActivateRate;
+
+        return $this;
+    }
+
+    /**
      * Gets requestConversionsCount
      *
      * @return int
@@ -9753,6 +9807,102 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setRequestConversionsCost($requestConversionsCost)
     {
         $this->container['requestConversionsCost'] = $requestConversionsCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets incomeVal1
+     *
+     * @return int
+     */
+    public function getIncomeVal1()
+    {
+        return $this->container['incomeVal1'];
+    }
+
+    /**
+     * Sets incomeVal1
+     *
+     * @param int $incomeVal1 incomeVal1
+     *
+     * @return $this
+     */
+    public function setIncomeVal1($incomeVal1)
+    {
+        $this->container['incomeVal1'] = $incomeVal1;
+
+        return $this;
+    }
+
+    /**
+     * Gets incomeVal3
+     *
+     * @return int
+     */
+    public function getIncomeVal3()
+    {
+        return $this->container['incomeVal3'];
+    }
+
+    /**
+     * Sets incomeVal3
+     *
+     * @param int $incomeVal3 incomeVal3
+     *
+     * @return $this
+     */
+    public function setIncomeVal3($incomeVal3)
+    {
+        $this->container['incomeVal3'] = $incomeVal3;
+
+        return $this;
+    }
+
+    /**
+     * Gets incomeVal7
+     *
+     * @return int
+     */
+    public function getIncomeVal7()
+    {
+        return $this->container['incomeVal7'];
+    }
+
+    /**
+     * Sets incomeVal7
+     *
+     * @param int $incomeVal7 incomeVal7
+     *
+     * @return $this
+     */
+    public function setIncomeVal7($incomeVal7)
+    {
+        $this->container['incomeVal7'] = $incomeVal7;
+
+        return $this;
+    }
+
+    /**
+     * Gets incomeVal14
+     *
+     * @return int
+     */
+    public function getIncomeVal14()
+    {
+        return $this->container['incomeVal14'];
+    }
+
+    /**
+     * Sets incomeVal14
+     *
+     * @param int $incomeVal14 incomeVal14
+     *
+     * @return $this
+     */
+    public function setIncomeVal14($incomeVal14)
+    {
+        $this->container['incomeVal14'] = $incomeVal14;
 
         return $this;
     }
