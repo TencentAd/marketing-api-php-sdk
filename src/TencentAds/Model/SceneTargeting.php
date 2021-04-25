@@ -64,7 +64,8 @@ class SceneTargeting implements ModelInterface, ArrayAccess
         'unionPositionPackage' => 'int[]',
         'excludeUnionPositionPackage' => 'int[]',
         'tencentNews' => 'string[]',
-        'displayScene' => 'string[]'
+        'displayScene' => 'string[]',
+        'mobileUnionCategory' => 'int[]'
     ];
 
     /**
@@ -79,7 +80,8 @@ class SceneTargeting implements ModelInterface, ArrayAccess
         'unionPositionPackage' => 'int64',
         'excludeUnionPositionPackage' => 'int64',
         'tencentNews' => null,
-        'displayScene' => null
+        'displayScene' => null,
+        'mobileUnionCategory' => 'int64'
     ];
 
     /**
@@ -115,7 +117,8 @@ class SceneTargeting implements ModelInterface, ArrayAccess
         'unionPositionPackage' => 'union_position_package',
         'excludeUnionPositionPackage' => 'exclude_union_position_package',
         'tencentNews' => 'tencent_news',
-        'displayScene' => 'display_scene'
+        'displayScene' => 'display_scene',
+        'mobileUnionCategory' => 'mobile_union_category'
     ];
 
     /**
@@ -130,7 +133,8 @@ class SceneTargeting implements ModelInterface, ArrayAccess
         'unionPositionPackage' => 'setUnionPositionPackage',
         'excludeUnionPositionPackage' => 'setExcludeUnionPositionPackage',
         'tencentNews' => 'setTencentNews',
-        'displayScene' => 'setDisplayScene'
+        'displayScene' => 'setDisplayScene',
+        'mobileUnionCategory' => 'setMobileUnionCategory'
     ];
 
     /**
@@ -145,7 +149,8 @@ class SceneTargeting implements ModelInterface, ArrayAccess
         'unionPositionPackage' => 'getUnionPositionPackage',
         'excludeUnionPositionPackage' => 'getExcludeUnionPositionPackage',
         'tencentNews' => 'getTencentNews',
-        'displayScene' => 'getDisplayScene'
+        'displayScene' => 'getDisplayScene',
+        'mobileUnionCategory' => 'getMobileUnionCategory'
     ];
 
     /**
@@ -215,6 +220,7 @@ class SceneTargeting implements ModelInterface, ArrayAccess
         $this->container['excludeUnionPositionPackage'] = isset($data['excludeUnionPositionPackage']) ? $data['excludeUnionPositionPackage'] : null;
         $this->container['tencentNews'] = isset($data['tencentNews']) ? $data['tencentNews'] : null;
         $this->container['displayScene'] = isset($data['displayScene']) ? $data['displayScene'] : null;
+        $this->container['mobileUnionCategory'] = isset($data['mobileUnionCategory']) ? $data['mobileUnionCategory'] : null;
     }
 
     /**
@@ -405,6 +411,30 @@ class SceneTargeting implements ModelInterface, ArrayAccess
     public function setDisplayScene($displayScene)
     {
         $this->container['displayScene'] = $displayScene;
+
+        return $this;
+    }
+
+    /**
+     * Gets mobileUnionCategory
+     *
+     * @return int[]
+     */
+    public function getMobileUnionCategory()
+    {
+        return $this->container['mobileUnionCategory'];
+    }
+
+    /**
+     * Sets mobileUnionCategory
+     *
+     * @param int[] $mobileUnionCategory mobileUnionCategory
+     *
+     * @return $this
+     */
+    public function setMobileUnionCategory($mobileUnionCategory)
+    {
+        $this->container['mobileUnionCategory'] = $mobileUnionCategory;
 
         return $this;
     }

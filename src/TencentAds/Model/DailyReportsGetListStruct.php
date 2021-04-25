@@ -407,6 +407,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'siteSet' => 'string',
         'materialId' => 'string',
         'signature' => 'string',
+        'activateRegisterRate' => 'double',
         'productCatalogId' => 'int',
         'productOuterId' => 'string',
         'brandId' => 'int',
@@ -841,6 +842,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'siteSet' => null,
         'materialId' => null,
         'signature' => null,
+        'activateRegisterRate' => 'double',
         'productCatalogId' => 'int64',
         'productOuterId' => null,
         'brandId' => 'int64',
@@ -1296,6 +1298,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'siteSet' => 'site_set',
         'materialId' => 'material_id',
         'signature' => 'signature',
+        'activateRegisterRate' => 'activate_register_rate',
         'productCatalogId' => 'product_catalog_id',
         'productOuterId' => 'product_outer_id',
         'brandId' => 'brand_id',
@@ -1730,6 +1733,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'siteSet' => 'setSiteSet',
         'materialId' => 'setMaterialId',
         'signature' => 'setSignature',
+        'activateRegisterRate' => 'setActivateRegisterRate',
         'productCatalogId' => 'setProductCatalogId',
         'productOuterId' => 'setProductOuterId',
         'brandId' => 'setBrandId',
@@ -2164,6 +2168,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'siteSet' => 'getSiteSet',
         'materialId' => 'getMaterialId',
         'signature' => 'getSignature',
+        'activateRegisterRate' => 'getActivateRegisterRate',
         'productCatalogId' => 'getProductCatalogId',
         'productOuterId' => 'getProductOuterId',
         'brandId' => 'getBrandId',
@@ -2652,6 +2657,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
         $this->container['materialId'] = isset($data['materialId']) ? $data['materialId'] : null;
         $this->container['signature'] = isset($data['signature']) ? $data['signature'] : null;
+        $this->container['activateRegisterRate'] = isset($data['activateRegisterRate']) ? $data['activateRegisterRate'] : null;
         $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
         $this->container['productOuterId'] = isset($data['productOuterId']) ? $data['productOuterId'] : null;
         $this->container['brandId'] = isset($data['brandId']) ? $data['brandId'] : null;
@@ -11127,6 +11133,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setSignature($signature)
     {
         $this->container['signature'] = $signature;
+
+        return $this;
+    }
+
+    /**
+     * Gets activateRegisterRate
+     *
+     * @return double
+     */
+    public function getActivateRegisterRate()
+    {
+        return $this->container['activateRegisterRate'];
+    }
+
+    /**
+     * Sets activateRegisterRate
+     *
+     * @param double $activateRegisterRate activateRegisterRate
+     *
+     * @return $this
+     */
+    public function setActivateRegisterRate($activateRegisterRate)
+    {
+        $this->container['activateRegisterRate'] = $activateRegisterRate;
 
         return $this;
     }

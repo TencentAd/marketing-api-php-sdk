@@ -396,6 +396,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'adName' => 'string',
         'promotedObjectType' => 'string',
         'promotedObjectId' => 'string',
+        'activateRegisterRate' => 'double',
         'wechatAccountId' => 'string',
         'wechatAgencyId' => 'string',
         'costDeviationRate' => 'double',
@@ -812,6 +813,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'adName' => null,
         'promotedObjectType' => null,
         'promotedObjectId' => null,
+        'activateRegisterRate' => 'double',
         'wechatAccountId' => null,
         'wechatAgencyId' => null,
         'costDeviationRate' => 'double',
@@ -1249,6 +1251,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'adName' => 'ad_name',
         'promotedObjectType' => 'promoted_object_type',
         'promotedObjectId' => 'promoted_object_id',
+        'activateRegisterRate' => 'activate_register_rate',
         'wechatAccountId' => 'wechat_account_id',
         'wechatAgencyId' => 'wechat_agency_id',
         'costDeviationRate' => 'cost_deviation_rate',
@@ -1665,6 +1668,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'adName' => 'setAdName',
         'promotedObjectType' => 'setPromotedObjectType',
         'promotedObjectId' => 'setPromotedObjectId',
+        'activateRegisterRate' => 'setActivateRegisterRate',
         'wechatAccountId' => 'setWechatAccountId',
         'wechatAgencyId' => 'setWechatAgencyId',
         'costDeviationRate' => 'setCostDeviationRate',
@@ -2081,6 +2085,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'adName' => 'getAdName',
         'promotedObjectType' => 'getPromotedObjectType',
         'promotedObjectId' => 'getPromotedObjectId',
+        'activateRegisterRate' => 'getActivateRegisterRate',
         'wechatAccountId' => 'getWechatAccountId',
         'wechatAgencyId' => 'getWechatAgencyId',
         'costDeviationRate' => 'getCostDeviationRate',
@@ -2551,6 +2556,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['adName'] = isset($data['adName']) ? $data['adName'] : null;
         $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
         $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
+        $this->container['activateRegisterRate'] = isset($data['activateRegisterRate']) ? $data['activateRegisterRate'] : null;
         $this->container['wechatAccountId'] = isset($data['wechatAccountId']) ? $data['wechatAccountId'] : null;
         $this->container['wechatAgencyId'] = isset($data['wechatAgencyId']) ? $data['wechatAgencyId'] : null;
         $this->container['costDeviationRate'] = isset($data['costDeviationRate']) ? $data['costDeviationRate'] : null;
@@ -10755,6 +10761,30 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setPromotedObjectId($promotedObjectId)
     {
         $this->container['promotedObjectId'] = $promotedObjectId;
+
+        return $this;
+    }
+
+    /**
+     * Gets activateRegisterRate
+     *
+     * @return double
+     */
+    public function getActivateRegisterRate()
+    {
+        return $this->container['activateRegisterRate'];
+    }
+
+    /**
+     * Sets activateRegisterRate
+     *
+     * @param double $activateRegisterRate activateRegisterRate
+     *
+     * @return $this
+     */
+    public function setActivateRegisterRate($activateRegisterRate)
+    {
+        $this->container['activateRegisterRate'] = $activateRegisterRate;
 
         return $this;
     }
