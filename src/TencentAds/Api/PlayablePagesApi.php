@@ -90,7 +90,7 @@ class PlayablePagesApi
     /**
      * Operation playablePagesAdd
      *
-     * 添加互动推广页
+     * 添加互动推广页（待废弃,详见公告）
      *
      * @param  int $accountId accountId (required)
      * @param  string $playablePageName playablePageName (required)
@@ -109,7 +109,7 @@ class PlayablePagesApi
     /**
      * Operation playablePagesAddWithHttpInfo
      *
-     * 添加互动推广页
+     * 添加互动推广页（待废弃,详见公告）
      *
      * @param  int $accountId (required)
      * @param  string $playablePageName (required)
@@ -186,7 +186,7 @@ class PlayablePagesApi
     /**
      * Operation playablePagesAddAsync
      *
-     * 添加互动推广页
+     * 添加互动推广页（待废弃,详见公告）
      *
      * @param  int $accountId (required)
      * @param  string $playablePageName (required)
@@ -208,7 +208,7 @@ class PlayablePagesApi
     /**
      * Operation playablePagesAddAsyncWithHttpInfo
      *
-     * 添加互动推广页
+     * 添加互动推广页（待废弃,详见公告）
      *
      * @param  int $accountId (required)
      * @param  string $playablePageName (required)

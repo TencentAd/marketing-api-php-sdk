@@ -351,7 +351,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatShallowConversionsCountStage2' => 'int',
         'activateRegisterRate' => 'double',
         'age' => 'string',
-        'registerActivateRate' => 'double',
         'regionId' => 'int',
         'cityId' => 'int',
         'province' => 'string',
@@ -721,7 +720,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatShallowConversionsCountStage2' => 'int64',
         'activateRegisterRate' => 'double',
         'age' => null,
-        'registerActivateRate' => 'double',
         'regionId' => 'int64',
         'cityId' => 'int64',
         'province' => null,
@@ -1112,7 +1110,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatShallowConversionsCountStage2' => 'wechat_shallow_conversions_count_stage2',
         'activateRegisterRate' => 'activate_register_rate',
         'age' => 'age',
-        'registerActivateRate' => 'register_activate_rate',
         'regionId' => 'region_id',
         'cityId' => 'city_id',
         'province' => 'province',
@@ -1482,7 +1479,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatShallowConversionsCountStage2' => 'setWechatShallowConversionsCountStage2',
         'activateRegisterRate' => 'setActivateRegisterRate',
         'age' => 'setAge',
-        'registerActivateRate' => 'setRegisterActivateRate',
         'regionId' => 'setRegionId',
         'cityId' => 'setCityId',
         'province' => 'setProvince',
@@ -1852,7 +1848,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatShallowConversionsCountStage2' => 'getWechatShallowConversionsCountStage2',
         'activateRegisterRate' => 'getActivateRegisterRate',
         'age' => 'getAge',
-        'registerActivateRate' => 'getRegisterActivateRate',
         'regionId' => 'getRegionId',
         'cityId' => 'getCityId',
         'province' => 'getProvince',
@@ -2276,7 +2271,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['wechatShallowConversionsCountStage2'] = isset($data['wechatShallowConversionsCountStage2']) ? $data['wechatShallowConversionsCountStage2'] : null;
         $this->container['activateRegisterRate'] = isset($data['activateRegisterRate']) ? $data['activateRegisterRate'] : null;
         $this->container['age'] = isset($data['age']) ? $data['age'] : null;
-        $this->container['registerActivateRate'] = isset($data['registerActivateRate']) ? $data['registerActivateRate'] : null;
         $this->container['regionId'] = isset($data['regionId']) ? $data['regionId'] : null;
         $this->container['cityId'] = isset($data['cityId']) ? $data['cityId'] : null;
         $this->container['province'] = isset($data['province']) ? $data['province'] : null;
@@ -9399,30 +9393,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setAge($age)
     {
         $this->container['age'] = $age;
-
-        return $this;
-    }
-
-    /**
-     * Gets registerActivateRate
-     *
-     * @return double
-     */
-    public function getRegisterActivateRate()
-    {
-        return $this->container['registerActivateRate'];
-    }
-
-    /**
-     * Sets registerActivateRate
-     *
-     * @param double $registerActivateRate registerActivateRate
-     *
-     * @return $this
-     */
-    public function setRegisterActivateRate($registerActivateRate)
-    {
-        $this->container['registerActivateRate'] = $registerActivateRate;
 
         return $this;
     }

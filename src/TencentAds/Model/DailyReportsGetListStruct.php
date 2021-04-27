@@ -349,7 +349,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatDeepConversionsCountStage2' => 'int',
         'wechatShallowConversionsCountStage1' => 'int',
         'wechatShallowConversionsCountStage2' => 'int',
-        'registerActivateRate' => 'double',
+        'activateRegisterRate' => 'double',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
         'incomeVal1' => 'int',
@@ -407,7 +407,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'siteSet' => 'string',
         'materialId' => 'string',
         'signature' => 'string',
-        'activateRegisterRate' => 'double',
         'productCatalogId' => 'int',
         'productOuterId' => 'string',
         'brandId' => 'int',
@@ -784,7 +783,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatDeepConversionsCountStage2' => 'int64',
         'wechatShallowConversionsCountStage1' => 'int64',
         'wechatShallowConversionsCountStage2' => 'int64',
-        'registerActivateRate' => 'double',
+        'activateRegisterRate' => 'double',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
         'incomeVal1' => 'int64',
@@ -842,7 +841,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'siteSet' => null,
         'materialId' => null,
         'signature' => null,
-        'activateRegisterRate' => 'double',
         'productCatalogId' => 'int64',
         'productOuterId' => null,
         'brandId' => 'int64',
@@ -1240,7 +1238,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatDeepConversionsCountStage2' => 'wechat_deep_conversions_count_stage2',
         'wechatShallowConversionsCountStage1' => 'wechat_shallow_conversions_count_stage1',
         'wechatShallowConversionsCountStage2' => 'wechat_shallow_conversions_count_stage2',
-        'registerActivateRate' => 'register_activate_rate',
+        'activateRegisterRate' => 'activate_register_rate',
         'requestConversionsCount' => 'request_conversions_count',
         'requestConversionsCost' => 'request_conversions_cost',
         'incomeVal1' => 'income_val_1',
@@ -1298,7 +1296,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'siteSet' => 'site_set',
         'materialId' => 'material_id',
         'signature' => 'signature',
-        'activateRegisterRate' => 'activate_register_rate',
         'productCatalogId' => 'product_catalog_id',
         'productOuterId' => 'product_outer_id',
         'brandId' => 'brand_id',
@@ -1675,7 +1672,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatDeepConversionsCountStage2' => 'setWechatDeepConversionsCountStage2',
         'wechatShallowConversionsCountStage1' => 'setWechatShallowConversionsCountStage1',
         'wechatShallowConversionsCountStage2' => 'setWechatShallowConversionsCountStage2',
-        'registerActivateRate' => 'setRegisterActivateRate',
+        'activateRegisterRate' => 'setActivateRegisterRate',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'requestConversionsCost' => 'setRequestConversionsCost',
         'incomeVal1' => 'setIncomeVal1',
@@ -1733,7 +1730,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'siteSet' => 'setSiteSet',
         'materialId' => 'setMaterialId',
         'signature' => 'setSignature',
-        'activateRegisterRate' => 'setActivateRegisterRate',
         'productCatalogId' => 'setProductCatalogId',
         'productOuterId' => 'setProductOuterId',
         'brandId' => 'setBrandId',
@@ -2110,7 +2106,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatDeepConversionsCountStage2' => 'getWechatDeepConversionsCountStage2',
         'wechatShallowConversionsCountStage1' => 'getWechatShallowConversionsCountStage1',
         'wechatShallowConversionsCountStage2' => 'getWechatShallowConversionsCountStage2',
-        'registerActivateRate' => 'getRegisterActivateRate',
+        'activateRegisterRate' => 'getActivateRegisterRate',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'requestConversionsCost' => 'getRequestConversionsCost',
         'incomeVal1' => 'getIncomeVal1',
@@ -2168,7 +2164,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'siteSet' => 'getSiteSet',
         'materialId' => 'getMaterialId',
         'signature' => 'getSignature',
-        'activateRegisterRate' => 'getActivateRegisterRate',
         'productCatalogId' => 'getProductCatalogId',
         'productOuterId' => 'getProductOuterId',
         'brandId' => 'getBrandId',
@@ -2599,7 +2594,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['wechatDeepConversionsCountStage2'] = isset($data['wechatDeepConversionsCountStage2']) ? $data['wechatDeepConversionsCountStage2'] : null;
         $this->container['wechatShallowConversionsCountStage1'] = isset($data['wechatShallowConversionsCountStage1']) ? $data['wechatShallowConversionsCountStage1'] : null;
         $this->container['wechatShallowConversionsCountStage2'] = isset($data['wechatShallowConversionsCountStage2']) ? $data['wechatShallowConversionsCountStage2'] : null;
-        $this->container['registerActivateRate'] = isset($data['registerActivateRate']) ? $data['registerActivateRate'] : null;
+        $this->container['activateRegisterRate'] = isset($data['activateRegisterRate']) ? $data['activateRegisterRate'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
         $this->container['incomeVal1'] = isset($data['incomeVal1']) ? $data['incomeVal1'] : null;
@@ -2657,7 +2652,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
         $this->container['materialId'] = isset($data['materialId']) ? $data['materialId'] : null;
         $this->container['signature'] = isset($data['signature']) ? $data['signature'] : null;
-        $this->container['activateRegisterRate'] = isset($data['activateRegisterRate']) ? $data['activateRegisterRate'] : null;
         $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
         $this->container['productOuterId'] = isset($data['productOuterId']) ? $data['productOuterId'] : null;
         $this->container['brandId'] = isset($data['brandId']) ? $data['brandId'] : null;
@@ -9746,25 +9740,25 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets registerActivateRate
+     * Gets activateRegisterRate
      *
      * @return double
      */
-    public function getRegisterActivateRate()
+    public function getActivateRegisterRate()
     {
-        return $this->container['registerActivateRate'];
+        return $this->container['activateRegisterRate'];
     }
 
     /**
-     * Sets registerActivateRate
+     * Sets activateRegisterRate
      *
-     * @param double $registerActivateRate registerActivateRate
+     * @param double $activateRegisterRate activateRegisterRate
      *
      * @return $this
      */
-    public function setRegisterActivateRate($registerActivateRate)
+    public function setActivateRegisterRate($activateRegisterRate)
     {
-        $this->container['registerActivateRate'] = $registerActivateRate;
+        $this->container['activateRegisterRate'] = $activateRegisterRate;
 
         return $this;
     }
@@ -11133,30 +11127,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setSignature($signature)
     {
         $this->container['signature'] = $signature;
-
-        return $this;
-    }
-
-    /**
-     * Gets activateRegisterRate
-     *
-     * @return double
-     */
-    public function getActivateRegisterRate()
-    {
-        return $this->container['activateRegisterRate'];
-    }
-
-    /**
-     * Sets activateRegisterRate
-     *
-     * @param double $activateRegisterRate activateRegisterRate
-     *
-     * @return $this
-     */
-    public function setActivateRegisterRate($activateRegisterRate)
-    {
-        $this->container['activateRegisterRate'] = $activateRegisterRate;
 
         return $this;
     }
