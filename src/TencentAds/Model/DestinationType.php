@@ -61,6 +61,9 @@ class DestinationType
     const FULL_SCREEN_WECHAT = 'PAGE_TYPE_FULL_SCREEN_WECHAT';
     const YUEBAO_QUICKAPP = 'PAGE_TYPE_YUEBAO_QUICKAPP';
     const YUEBAO_OFFICIAL_ACCOUNT_ARTICLE = 'PAGE_TYPE_YUEBAO_OFFICIAL_ACCOUNT_ARTICLE';
+    const WECHAT_CHANNELS = 'PAGE_TYPE_WECHAT_CHANNELS';
+    const CHANNELS_WATCH_LIVE = 'PAGE_TYPE_CHANNELS_WATCH_LIVE';
+    const CHANNELS_RESERVE_LIVE = 'PAGE_TYPE_CHANNELS_RESERVE_LIVE';
     const YOUZAN_SINGLE = 'PAGE_TYPE_YOUZAN_SINGLE';
     const YOUZAN_TOGETHER = 'PAGE_TYPE_YOUZAN_TOGETHER';
     const YOUZAN_WECHAT_MINIPROGRAM = 'PAGE_TYPE_YOUZAN_WECHAT_MINIPROGRAM';
@@ -70,9 +73,6 @@ class DestinationType
     const WEIMOB_PRODUCT = 'PAGE_TYPE_WEIMOB_PRODUCT';
     const WEIMOB_H5 = 'PAGE_TYPE_WEIMOB_H5';
     const TSA_OTT = 'PAGE_TYPE_TSA_OTT';
-    const WECHAT_CHANNELS = 'PAGE_TYPE_WECHAT_CHANNELS';
-    const CHANNELS_WATCH_LIVE = 'PAGE_TYPE_CHANNELS_WATCH_LIVE';
-    const CHANNELS_RESERVE_LIVE = 'PAGE_TYPE_CHANNELS_RESERVE_LIVE';
     
     /**
      * Gets allowable values of the enum
@@ -98,6 +98,9 @@ class DestinationType
             self::FULL_SCREEN_WECHAT,
             self::YUEBAO_QUICKAPP,
             self::YUEBAO_OFFICIAL_ACCOUNT_ARTICLE,
+            self::WECHAT_CHANNELS,
+            self::CHANNELS_WATCH_LIVE,
+            self::CHANNELS_RESERVE_LIVE,
             self::YOUZAN_SINGLE,
             self::YOUZAN_TOGETHER,
             self::YOUZAN_WECHAT_MINIPROGRAM,
@@ -107,9 +110,6 @@ class DestinationType
             self::WEIMOB_PRODUCT,
             self::WEIMOB_H5,
             self::TSA_OTT,
-            self::WECHAT_CHANNELS,
-            self::CHANNELS_WATCH_LIVE,
-            self::CHANNELS_RESERVE_LIVE,
         ];
     }
 }
