@@ -1,6 +1,6 @@
 <?php
 /**
- * ShelfButtonSpec
+ * BarrageAddResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ShelfButtonSpec Class Doc Comment
+ * BarrageAddResponse Class Doc Comment
  *
  * @category Class
- * @description 按钮信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ShelfButtonSpec implements ModelInterface, ArrayAccess
+class BarrageAddResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class ShelfButtonSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'shelf_button_spec';
+    protected static $swaggerModelName = 'BarrageAddResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +57,11 @@ class ShelfButtonSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'linkSpec' => '\TencentAds\Model\LinkSpec',
-        'appDownloadSpec' => '\TencentAds\Model\AppDownloadSpec',
-        'miniProgramSpec' => '\TencentAds\Model\MiniProgramSpec',
-        'wecomSpec' => '\TencentAds\Model\WecomSpec'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\BarrageAddResponseData'
     ];
 
     /**
@@ -70,10 +70,11 @@ class ShelfButtonSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'linkSpec' => null,
-        'appDownloadSpec' => null,
-        'miniProgramSpec' => null,
-        'wecomSpec' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -103,10 +104,11 @@ class ShelfButtonSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'linkSpec' => 'link_spec',
-        'appDownloadSpec' => 'app_download_spec',
-        'miniProgramSpec' => 'mini_program_spec',
-        'wecomSpec' => 'wecom_spec'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -115,10 +117,11 @@ class ShelfButtonSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'linkSpec' => 'setLinkSpec',
-        'appDownloadSpec' => 'setAppDownloadSpec',
-        'miniProgramSpec' => 'setMiniProgramSpec',
-        'wecomSpec' => 'setWecomSpec'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -127,10 +130,11 @@ class ShelfButtonSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'linkSpec' => 'getLinkSpec',
-        'appDownloadSpec' => 'getAppDownloadSpec',
-        'miniProgramSpec' => 'getMiniProgramSpec',
-        'wecomSpec' => 'getWecomSpec'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -193,10 +197,11 @@ class ShelfButtonSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['linkSpec'] = isset($data['linkSpec']) ? $data['linkSpec'] : null;
-        $this->container['appDownloadSpec'] = isset($data['appDownloadSpec']) ? $data['appDownloadSpec'] : null;
-        $this->container['miniProgramSpec'] = isset($data['miniProgramSpec']) ? $data['miniProgramSpec'] : null;
-        $this->container['wecomSpec'] = isset($data['wecomSpec']) ? $data['wecomSpec'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -224,97 +229,121 @@ class ShelfButtonSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets linkSpec
+     * Gets code
      *
-     * @return \TencentAds\Model\LinkSpec
+     * @return int
      */
-    public function getLinkSpec()
+    public function getCode()
     {
-        return $this->container['linkSpec'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets linkSpec
+     * Sets code
      *
-     * @param \TencentAds\Model\LinkSpec $linkSpec linkSpec
+     * @param int $code code
      *
      * @return $this
      */
-    public function setLinkSpec($linkSpec)
+    public function setCode($code)
     {
-        $this->container['linkSpec'] = $linkSpec;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets appDownloadSpec
+     * Gets message
      *
-     * @return \TencentAds\Model\AppDownloadSpec
+     * @return string
      */
-    public function getAppDownloadSpec()
+    public function getMessage()
     {
-        return $this->container['appDownloadSpec'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets appDownloadSpec
+     * Sets message
      *
-     * @param \TencentAds\Model\AppDownloadSpec $appDownloadSpec appDownloadSpec
+     * @param string $message message
      *
      * @return $this
      */
-    public function setAppDownloadSpec($appDownloadSpec)
+    public function setMessage($message)
     {
-        $this->container['appDownloadSpec'] = $appDownloadSpec;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets miniProgramSpec
+     * Gets messageCn
      *
-     * @return \TencentAds\Model\MiniProgramSpec
+     * @return string
      */
-    public function getMiniProgramSpec()
+    public function getMessageCn()
     {
-        return $this->container['miniProgramSpec'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets miniProgramSpec
+     * Sets messageCn
      *
-     * @param \TencentAds\Model\MiniProgramSpec $miniProgramSpec miniProgramSpec
+     * @param string $messageCn messageCn
      *
      * @return $this
      */
-    public function setMiniProgramSpec($miniProgramSpec)
+    public function setMessageCn($messageCn)
     {
-        $this->container['miniProgramSpec'] = $miniProgramSpec;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets wecomSpec
+     * Gets errors
      *
-     * @return \TencentAds\Model\WecomSpec
+     * @return \TencentAds\Model\ApiErrorStruct[]
      */
-    public function getWecomSpec()
+    public function getErrors()
     {
-        return $this->container['wecomSpec'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets wecomSpec
+     * Sets errors
      *
-     * @param \TencentAds\Model\WecomSpec $wecomSpec wecomSpec
+     * @param \TencentAds\Model\ApiErrorStruct[] $errors errors
      *
      * @return $this
      */
-    public function setWecomSpec($wecomSpec)
+    public function setErrors($errors)
     {
-        $this->container['wecomSpec'] = $wecomSpec;
+        $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\BarrageAddResponseData
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\BarrageAddResponseData $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }

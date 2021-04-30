@@ -100,6 +100,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'marketingPendantImageId' => 'string',
         'countdownSwitch' => 'bool',
         'pageTrackUrl' => 'string',
+        'barrageList' => '\TencentAds\Model\BarrageListReadStruct[]',
         'adcreativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsReadMp'
     ];
@@ -152,6 +153,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'marketingPendantImageId' => null,
         'countdownSwitch' => null,
         'pageTrackUrl' => null,
+        'barrageList' => null,
         'adcreativeTemplateId' => 'int64',
         'adcreativeElements' => null
     ];
@@ -225,6 +227,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'marketingPendantImageId' => 'marketing_pendant_image_id',
         'countdownSwitch' => 'countdown_switch',
         'pageTrackUrl' => 'page_track_url',
+        'barrageList' => 'barrage_list',
         'adcreativeTemplateId' => 'adcreative_template_id',
         'adcreativeElements' => 'adcreative_elements'
     ];
@@ -277,6 +280,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'marketingPendantImageId' => 'setMarketingPendantImageId',
         'countdownSwitch' => 'setCountdownSwitch',
         'pageTrackUrl' => 'setPageTrackUrl',
+        'barrageList' => 'setBarrageList',
         'adcreativeTemplateId' => 'setAdcreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements'
     ];
@@ -329,6 +333,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'marketingPendantImageId' => 'getMarketingPendantImageId',
         'countdownSwitch' => 'getCountdownSwitch',
         'pageTrackUrl' => 'getPageTrackUrl',
+        'barrageList' => 'getBarrageList',
         'adcreativeTemplateId' => 'getAdcreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements'
     ];
@@ -435,6 +440,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['marketingPendantImageId'] = isset($data['marketingPendantImageId']) ? $data['marketingPendantImageId'] : null;
         $this->container['countdownSwitch'] = isset($data['countdownSwitch']) ? $data['countdownSwitch'] : null;
         $this->container['pageTrackUrl'] = isset($data['pageTrackUrl']) ? $data['pageTrackUrl'] : null;
+        $this->container['barrageList'] = isset($data['barrageList']) ? $data['barrageList'] : null;
         $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
     }
@@ -1467,6 +1473,30 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setPageTrackUrl($pageTrackUrl)
     {
         $this->container['pageTrackUrl'] = $pageTrackUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets barrageList
+     *
+     * @return \TencentAds\Model\BarrageListReadStruct[]
+     */
+    public function getBarrageList()
+    {
+        return $this->container['barrageList'];
+    }
+
+    /**
+     * Sets barrageList
+     *
+     * @param \TencentAds\Model\BarrageListReadStruct[] $barrageList barrageList
+     *
+     * @return $this
+     */
+    public function setBarrageList($barrageList)
+    {
+        $this->container['barrageList'] = $barrageList;
 
         return $this;
     }

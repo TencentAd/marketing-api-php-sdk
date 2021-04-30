@@ -65,7 +65,8 @@ class FloatButtonSpec implements ModelInterface, ArrayAccess
         'fengyeSpec' => '\TencentAds\Model\FengyeSpec',
         'cardSpec' => '\TencentAds\Model\CardSpec',
         'followSpec' => '\TencentAds\Model\FollowSpec',
-        'serviceSpec' => '\TencentAds\Model\ServiceSpec'
+        'serviceSpec' => '\TencentAds\Model\ServiceSpec',
+        'wecomSpec' => '\TencentAds\Model\WecomSpec'
     ];
 
     /**
@@ -81,7 +82,8 @@ class FloatButtonSpec implements ModelInterface, ArrayAccess
         'fengyeSpec' => null,
         'cardSpec' => null,
         'followSpec' => null,
-        'serviceSpec' => null
+        'serviceSpec' => null,
+        'wecomSpec' => null
     ];
 
     /**
@@ -118,7 +120,8 @@ class FloatButtonSpec implements ModelInterface, ArrayAccess
         'fengyeSpec' => 'fengye_spec',
         'cardSpec' => 'card_spec',
         'followSpec' => 'follow_spec',
-        'serviceSpec' => 'service_spec'
+        'serviceSpec' => 'service_spec',
+        'wecomSpec' => 'wecom_spec'
     ];
 
     /**
@@ -134,7 +137,8 @@ class FloatButtonSpec implements ModelInterface, ArrayAccess
         'fengyeSpec' => 'setFengyeSpec',
         'cardSpec' => 'setCardSpec',
         'followSpec' => 'setFollowSpec',
-        'serviceSpec' => 'setServiceSpec'
+        'serviceSpec' => 'setServiceSpec',
+        'wecomSpec' => 'setWecomSpec'
     ];
 
     /**
@@ -150,7 +154,8 @@ class FloatButtonSpec implements ModelInterface, ArrayAccess
         'fengyeSpec' => 'getFengyeSpec',
         'cardSpec' => 'getCardSpec',
         'followSpec' => 'getFollowSpec',
-        'serviceSpec' => 'getServiceSpec'
+        'serviceSpec' => 'getServiceSpec',
+        'wecomSpec' => 'getWecomSpec'
     ];
 
     /**
@@ -221,6 +226,7 @@ class FloatButtonSpec implements ModelInterface, ArrayAccess
         $this->container['cardSpec'] = isset($data['cardSpec']) ? $data['cardSpec'] : null;
         $this->container['followSpec'] = isset($data['followSpec']) ? $data['followSpec'] : null;
         $this->container['serviceSpec'] = isset($data['serviceSpec']) ? $data['serviceSpec'] : null;
+        $this->container['wecomSpec'] = isset($data['wecomSpec']) ? $data['wecomSpec'] : null;
     }
 
     /**
@@ -435,6 +441,30 @@ class FloatButtonSpec implements ModelInterface, ArrayAccess
     public function setServiceSpec($serviceSpec)
     {
         $this->container['serviceSpec'] = $serviceSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets wecomSpec
+     *
+     * @return \TencentAds\Model\WecomSpec
+     */
+    public function getWecomSpec()
+    {
+        return $this->container['wecomSpec'];
+    }
+
+    /**
+     * Sets wecomSpec
+     *
+     * @param \TencentAds\Model\WecomSpec $wecomSpec wecomSpec
+     *
+     * @return $this
+     */
+    public function setWecomSpec($wecomSpec)
+    {
+        $this->container['wecomSpec'] = $wecomSpec;
 
         return $this;
     }

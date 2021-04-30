@@ -67,6 +67,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'unionMarketSwitch' => 'bool',
         'profileId' => 'int',
         'videoEndPage' => '\TencentAds\Model\VideoEndPageSpec',
+        'barrageList' => '\TencentAds\Model\BarrageListCreateStruct[]',
         'accountId' => 'int'
     ];
 
@@ -86,6 +87,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'unionMarketSwitch' => null,
         'profileId' => 'int64',
         'videoEndPage' => null,
+        'barrageList' => null,
         'accountId' => 'int64'
     ];
 
@@ -126,6 +128,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'unionMarketSwitch' => 'union_market_switch',
         'profileId' => 'profile_id',
         'videoEndPage' => 'video_end_page',
+        'barrageList' => 'barrage_list',
         'accountId' => 'account_id'
     ];
 
@@ -145,6 +148,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'unionMarketSwitch' => 'setUnionMarketSwitch',
         'profileId' => 'setProfileId',
         'videoEndPage' => 'setVideoEndPage',
+        'barrageList' => 'setBarrageList',
         'accountId' => 'setAccountId'
     ];
 
@@ -164,6 +168,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'unionMarketSwitch' => 'getUnionMarketSwitch',
         'profileId' => 'getProfileId',
         'videoEndPage' => 'getVideoEndPage',
+        'barrageList' => 'getBarrageList',
         'accountId' => 'getAccountId'
     ];
 
@@ -237,6 +242,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['unionMarketSwitch'] = isset($data['unionMarketSwitch']) ? $data['unionMarketSwitch'] : null;
         $this->container['profileId'] = isset($data['profileId']) ? $data['profileId'] : null;
         $this->container['videoEndPage'] = isset($data['videoEndPage']) ? $data['videoEndPage'] : null;
+        $this->container['barrageList'] = isset($data['barrageList']) ? $data['barrageList'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -500,6 +506,30 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setVideoEndPage($videoEndPage)
     {
         $this->container['videoEndPage'] = $videoEndPage;
+
+        return $this;
+    }
+
+    /**
+     * Gets barrageList
+     *
+     * @return \TencentAds\Model\BarrageListCreateStruct[]
+     */
+    public function getBarrageList()
+    {
+        return $this->container['barrageList'];
+    }
+
+    /**
+     * Sets barrageList
+     *
+     * @param \TencentAds\Model\BarrageListCreateStruct[] $barrageList barrageList
+     *
+     * @return $this
+     */
+    public function setBarrageList($barrageList)
+    {
+        $this->container['barrageList'] = $barrageList;
 
         return $this;
     }

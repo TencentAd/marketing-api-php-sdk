@@ -87,6 +87,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'floatingZone' => '\TencentAds\Model\FloatingZone',
         'marketingPendantImageId' => 'string',
         'countdownSwitch' => 'bool',
+        'barrageList' => '\TencentAds\Model\BarrageListCreateStruct[]',
         'dynamicAdcreativeSpec' => '\TencentAds\Model\DynamicAdcreativeSpec',
         'accountId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsMp'
@@ -128,6 +129,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'floatingZone' => null,
         'marketingPendantImageId' => null,
         'countdownSwitch' => null,
+        'barrageList' => null,
         'dynamicAdcreativeSpec' => null,
         'accountId' => 'int64',
         'adcreativeElements' => null
@@ -190,6 +192,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'floatingZone' => 'floating_zone',
         'marketingPendantImageId' => 'marketing_pendant_image_id',
         'countdownSwitch' => 'countdown_switch',
+        'barrageList' => 'barrage_list',
         'dynamicAdcreativeSpec' => 'dynamic_adcreative_spec',
         'accountId' => 'account_id',
         'adcreativeElements' => 'adcreative_elements'
@@ -231,6 +234,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'floatingZone' => 'setFloatingZone',
         'marketingPendantImageId' => 'setMarketingPendantImageId',
         'countdownSwitch' => 'setCountdownSwitch',
+        'barrageList' => 'setBarrageList',
         'dynamicAdcreativeSpec' => 'setDynamicAdcreativeSpec',
         'accountId' => 'setAccountId',
         'adcreativeElements' => 'setAdcreativeElements'
@@ -272,6 +276,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'floatingZone' => 'getFloatingZone',
         'marketingPendantImageId' => 'getMarketingPendantImageId',
         'countdownSwitch' => 'getCountdownSwitch',
+        'barrageList' => 'getBarrageList',
         'dynamicAdcreativeSpec' => 'getDynamicAdcreativeSpec',
         'accountId' => 'getAccountId',
         'adcreativeElements' => 'getAdcreativeElements'
@@ -367,6 +372,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['floatingZone'] = isset($data['floatingZone']) ? $data['floatingZone'] : null;
         $this->container['marketingPendantImageId'] = isset($data['marketingPendantImageId']) ? $data['marketingPendantImageId'] : null;
         $this->container['countdownSwitch'] = isset($data['countdownSwitch']) ? $data['countdownSwitch'] : null;
+        $this->container['barrageList'] = isset($data['barrageList']) ? $data['barrageList'] : null;
         $this->container['dynamicAdcreativeSpec'] = isset($data['dynamicAdcreativeSpec']) ? $data['dynamicAdcreativeSpec'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
@@ -1112,6 +1118,30 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setCountdownSwitch($countdownSwitch)
     {
         $this->container['countdownSwitch'] = $countdownSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets barrageList
+     *
+     * @return \TencentAds\Model\BarrageListCreateStruct[]
+     */
+    public function getBarrageList()
+    {
+        return $this->container['barrageList'];
+    }
+
+    /**
+     * Sets barrageList
+     *
+     * @param \TencentAds\Model\BarrageListCreateStruct[] $barrageList barrageList
+     *
+     * @return $this
+     */
+    public function setBarrageList($barrageList)
+    {
+        $this->container['barrageList'] = $barrageList;
 
         return $this;
     }

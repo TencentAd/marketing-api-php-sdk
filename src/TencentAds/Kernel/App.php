@@ -29,6 +29,8 @@ use TencentAds\Container\AsyncTaskFilesApiContainer;
 use TencentAds\Container\AsyncTasksApiContainer;
 use TencentAds\Container\AudienceGrantRelationsApiContainer;
 use TencentAds\Container\AuthorizationApiContainer;
+use TencentAds\Container\BarrageApiContainer;
+use TencentAds\Container\BarrageRecommendApiContainer;
 use TencentAds\Container\BatchAsyncRequestSpecificationApiContainer;
 use TencentAds\Container\BatchAsyncRequestsApiContainer;
 use TencentAds\Container\BatchOperationApiContainer;
@@ -227,6 +229,12 @@ class App
 
     /** @var AuthorizationApiContainer */
     public $authorizationApiContainer;
+
+    /** @var BarrageApiContainer */
+    public $barrageApiContainer;
+
+    /** @var BarrageRecommendApiContainer */
+    public $barrageRecommendApiContainer;
 
     /** @var BatchAsyncRequestSpecificationApiContainer */
     public $batchAsyncRequestSpecificationApiContainer;
@@ -952,6 +960,34 @@ class App
             $this->authorizationApiContainer = $container;
         }
         return $this->authorizationApiContainer;
+    }
+
+
+    /**
+     * @return BarrageApiContainer
+     */
+    public function barrage()
+    {
+        if (empty($this->barrageApiContainer)) {
+            $container = new BarrageApiContainer();
+            $container->init($this, $this->getClient());
+            $this->barrageApiContainer = $container;
+        }
+        return $this->barrageApiContainer;
+    }
+
+
+    /**
+     * @return BarrageRecommendApiContainer
+     */
+    public function barrageRecommend()
+    {
+        if (empty($this->barrageRecommendApiContainer)) {
+            $container = new BarrageRecommendApiContainer();
+            $container->init($this, $this->getClient());
+            $this->barrageRecommendApiContainer = $container;
+        }
+        return $this->barrageRecommendApiContainer;
     }
 
 

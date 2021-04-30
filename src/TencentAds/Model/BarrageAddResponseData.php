@@ -1,6 +1,6 @@
 <?php
 /**
- * ShelfButtonSpec
+ * BarrageAddResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ShelfButtonSpec Class Doc Comment
+ * BarrageAddResponseData Class Doc Comment
  *
  * @category Class
- * @description 按钮信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ShelfButtonSpec implements ModelInterface, ArrayAccess
+class BarrageAddResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class ShelfButtonSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'shelf_button_spec';
+    protected static $swaggerModelName = 'BarrageAddResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +57,7 @@ class ShelfButtonSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'linkSpec' => '\TencentAds\Model\LinkSpec',
-        'appDownloadSpec' => '\TencentAds\Model\AppDownloadSpec',
-        'miniProgramSpec' => '\TencentAds\Model\MiniProgramSpec',
-        'wecomSpec' => '\TencentAds\Model\WecomSpec'
+        'list' => '\TencentAds\Model\BarrageAddListStruct[]'
     ];
 
     /**
@@ -70,10 +66,7 @@ class ShelfButtonSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'linkSpec' => null,
-        'appDownloadSpec' => null,
-        'miniProgramSpec' => null,
-        'wecomSpec' => null
+        'list' => null
     ];
 
     /**
@@ -103,10 +96,7 @@ class ShelfButtonSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'linkSpec' => 'link_spec',
-        'appDownloadSpec' => 'app_download_spec',
-        'miniProgramSpec' => 'mini_program_spec',
-        'wecomSpec' => 'wecom_spec'
+        'list' => 'list'
     ];
 
     /**
@@ -115,10 +105,7 @@ class ShelfButtonSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'linkSpec' => 'setLinkSpec',
-        'appDownloadSpec' => 'setAppDownloadSpec',
-        'miniProgramSpec' => 'setMiniProgramSpec',
-        'wecomSpec' => 'setWecomSpec'
+        'list' => 'setList'
     ];
 
     /**
@@ -127,10 +114,7 @@ class ShelfButtonSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'linkSpec' => 'getLinkSpec',
-        'appDownloadSpec' => 'getAppDownloadSpec',
-        'miniProgramSpec' => 'getMiniProgramSpec',
-        'wecomSpec' => 'getWecomSpec'
+        'list' => 'getList'
     ];
 
     /**
@@ -193,10 +177,7 @@ class ShelfButtonSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['linkSpec'] = isset($data['linkSpec']) ? $data['linkSpec'] : null;
-        $this->container['appDownloadSpec'] = isset($data['appDownloadSpec']) ? $data['appDownloadSpec'] : null;
-        $this->container['miniProgramSpec'] = isset($data['miniProgramSpec']) ? $data['miniProgramSpec'] : null;
-        $this->container['wecomSpec'] = isset($data['wecomSpec']) ? $data['wecomSpec'] : null;
+        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
     }
 
     /**
@@ -224,97 +205,25 @@ class ShelfButtonSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets linkSpec
+     * Gets list
      *
-     * @return \TencentAds\Model\LinkSpec
+     * @return \TencentAds\Model\BarrageAddListStruct[]
      */
-    public function getLinkSpec()
+    public function getList()
     {
-        return $this->container['linkSpec'];
+        return $this->container['list'];
     }
 
     /**
-     * Sets linkSpec
+     * Sets list
      *
-     * @param \TencentAds\Model\LinkSpec $linkSpec linkSpec
+     * @param \TencentAds\Model\BarrageAddListStruct[] $list list
      *
      * @return $this
      */
-    public function setLinkSpec($linkSpec)
+    public function setList($list)
     {
-        $this->container['linkSpec'] = $linkSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets appDownloadSpec
-     *
-     * @return \TencentAds\Model\AppDownloadSpec
-     */
-    public function getAppDownloadSpec()
-    {
-        return $this->container['appDownloadSpec'];
-    }
-
-    /**
-     * Sets appDownloadSpec
-     *
-     * @param \TencentAds\Model\AppDownloadSpec $appDownloadSpec appDownloadSpec
-     *
-     * @return $this
-     */
-    public function setAppDownloadSpec($appDownloadSpec)
-    {
-        $this->container['appDownloadSpec'] = $appDownloadSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniProgramSpec
-     *
-     * @return \TencentAds\Model\MiniProgramSpec
-     */
-    public function getMiniProgramSpec()
-    {
-        return $this->container['miniProgramSpec'];
-    }
-
-    /**
-     * Sets miniProgramSpec
-     *
-     * @param \TencentAds\Model\MiniProgramSpec $miniProgramSpec miniProgramSpec
-     *
-     * @return $this
-     */
-    public function setMiniProgramSpec($miniProgramSpec)
-    {
-        $this->container['miniProgramSpec'] = $miniProgramSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets wecomSpec
-     *
-     * @return \TencentAds\Model\WecomSpec
-     */
-    public function getWecomSpec()
-    {
-        return $this->container['wecomSpec'];
-    }
-
-    /**
-     * Sets wecomSpec
-     *
-     * @param \TencentAds\Model\WecomSpec $wecomSpec wecomSpec
-     *
-     * @return $this
-     */
-    public function setWecomSpec($wecomSpec)
-    {
-        $this->container['wecomSpec'] = $wecomSpec;
+        $this->container['list'] = $list;
 
         return $this;
     }

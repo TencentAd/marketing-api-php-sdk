@@ -79,7 +79,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'clickTrackingUrl' => 'string',
         'feedsVideoCommentSwitch' => 'bool',
         'unionMarketSwitch' => 'bool',
-        'videoEndPage' => '\TencentAds\Model\VideoEndPageSpec'
+        'videoEndPage' => '\TencentAds\Model\VideoEndPageSpec',
+        'barrageList' => '\TencentAds\Model\BarrageListReadStruct[]'
     ];
 
     /**
@@ -109,7 +110,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'clickTrackingUrl' => null,
         'feedsVideoCommentSwitch' => null,
         'unionMarketSwitch' => null,
-        'videoEndPage' => null
+        'videoEndPage' => null,
+        'barrageList' => null
     ];
 
     /**
@@ -160,7 +162,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'clickTrackingUrl' => 'click_tracking_url',
         'feedsVideoCommentSwitch' => 'feeds_video_comment_switch',
         'unionMarketSwitch' => 'union_market_switch',
-        'videoEndPage' => 'video_end_page'
+        'videoEndPage' => 'video_end_page',
+        'barrageList' => 'barrage_list'
     ];
 
     /**
@@ -190,7 +193,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'clickTrackingUrl' => 'setClickTrackingUrl',
         'feedsVideoCommentSwitch' => 'setFeedsVideoCommentSwitch',
         'unionMarketSwitch' => 'setUnionMarketSwitch',
-        'videoEndPage' => 'setVideoEndPage'
+        'videoEndPage' => 'setVideoEndPage',
+        'barrageList' => 'setBarrageList'
     ];
 
     /**
@@ -220,7 +224,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'clickTrackingUrl' => 'getClickTrackingUrl',
         'feedsVideoCommentSwitch' => 'getFeedsVideoCommentSwitch',
         'unionMarketSwitch' => 'getUnionMarketSwitch',
-        'videoEndPage' => 'getVideoEndPage'
+        'videoEndPage' => 'getVideoEndPage',
+        'barrageList' => 'getBarrageList'
     ];
 
     /**
@@ -305,6 +310,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['feedsVideoCommentSwitch'] = isset($data['feedsVideoCommentSwitch']) ? $data['feedsVideoCommentSwitch'] : null;
         $this->container['unionMarketSwitch'] = isset($data['unionMarketSwitch']) ? $data['unionMarketSwitch'] : null;
         $this->container['videoEndPage'] = isset($data['videoEndPage']) ? $data['videoEndPage'] : null;
+        $this->container['barrageList'] = isset($data['barrageList']) ? $data['barrageList'] : null;
     }
 
     /**
@@ -855,6 +861,30 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setVideoEndPage($videoEndPage)
     {
         $this->container['videoEndPage'] = $videoEndPage;
+
+        return $this;
+    }
+
+    /**
+     * Gets barrageList
+     *
+     * @return \TencentAds\Model\BarrageListReadStruct[]
+     */
+    public function getBarrageList()
+    {
+        return $this->container['barrageList'];
+    }
+
+    /**
+     * Sets barrageList
+     *
+     * @param \TencentAds\Model\BarrageListReadStruct[] $barrageList barrageList
+     *
+     * @return $this
+     */
+    public function setBarrageList($barrageList)
+    {
+        $this->container['barrageList'] = $barrageList;
 
         return $this;
     }
