@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * ShareContentSpec Class Doc Comment
  *
  * @category Class
- * @description 分享信息，仅在部分朋友圈创意形式下设置有效，具体可通过创意形式查询工具或 adcreative_templates/get 接口进行查询
+ * @description 简版原生页分享信息，仅在部分朋友圈创意形式下设置有效，具体可通过创意形式查询工具或 adcreative_templates/get 接口进行查询
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
