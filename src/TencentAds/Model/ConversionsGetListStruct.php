@@ -71,7 +71,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'userActionSetKey' => 'string',
         'siteSetEnable' => 'bool',
         'isDeleted' => 'bool',
-        'accessStatus' => '\TencentAds\Model\AccessStatus'
+        'accessStatus' => '\TencentAds\Model\AccessStatus',
+        'createSourceType' => '\TencentAds\Model\CreateSourceType'
     ];
 
     /**
@@ -93,7 +94,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'userActionSetKey' => null,
         'siteSetEnable' => null,
         'isDeleted' => null,
-        'accessStatus' => null
+        'accessStatus' => null,
+        'createSourceType' => null
     ];
 
     /**
@@ -136,7 +138,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'userActionSetKey' => 'user_action_set_key',
         'siteSetEnable' => 'site_set_enable',
         'isDeleted' => 'is_deleted',
-        'accessStatus' => 'access_status'
+        'accessStatus' => 'access_status',
+        'createSourceType' => 'create_source_type'
     ];
 
     /**
@@ -158,7 +161,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'userActionSetKey' => 'setUserActionSetKey',
         'siteSetEnable' => 'setSiteSetEnable',
         'isDeleted' => 'setIsDeleted',
-        'accessStatus' => 'setAccessStatus'
+        'accessStatus' => 'setAccessStatus',
+        'createSourceType' => 'setCreateSourceType'
     ];
 
     /**
@@ -180,7 +184,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'userActionSetKey' => 'getUserActionSetKey',
         'siteSetEnable' => 'getSiteSetEnable',
         'isDeleted' => 'getIsDeleted',
-        'accessStatus' => 'getAccessStatus'
+        'accessStatus' => 'getAccessStatus',
+        'createSourceType' => 'getCreateSourceType'
     ];
 
     /**
@@ -257,6 +262,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['siteSetEnable'] = isset($data['siteSetEnable']) ? $data['siteSetEnable'] : null;
         $this->container['isDeleted'] = isset($data['isDeleted']) ? $data['isDeleted'] : null;
         $this->container['accessStatus'] = isset($data['accessStatus']) ? $data['accessStatus'] : null;
+        $this->container['createSourceType'] = isset($data['createSourceType']) ? $data['createSourceType'] : null;
     }
 
     /**
@@ -615,6 +621,30 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     public function setAccessStatus($accessStatus)
     {
         $this->container['accessStatus'] = $accessStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets createSourceType
+     *
+     * @return \TencentAds\Model\CreateSourceType
+     */
+    public function getCreateSourceType()
+    {
+        return $this->container['createSourceType'];
+    }
+
+    /**
+     * Sets createSourceType
+     *
+     * @param \TencentAds\Model\CreateSourceType $createSourceType createSourceType
+     *
+     * @return $this
+     */
+    public function setCreateSourceType($createSourceType)
+    {
+        $this->container['createSourceType'] = $createSourceType;
 
         return $this;
     }

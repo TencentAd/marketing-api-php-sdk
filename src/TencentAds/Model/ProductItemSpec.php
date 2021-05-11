@@ -87,7 +87,6 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'universalLink' => 'string',
         'additionalUniversalLink' => 'string',
         'productShortName' => 'string',
-        'productSaleStatus' => '\TencentAds\Model\ProductSaleStatus',
         'price' => 'double',
         'originalPrice' => 'double',
         'discount' => 'double',
@@ -203,7 +202,6 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'universalLink' => null,
         'additionalUniversalLink' => null,
         'productShortName' => null,
-        'productSaleStatus' => null,
         'price' => 'double',
         'originalPrice' => 'double',
         'discount' => 'double',
@@ -340,7 +338,6 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'universalLink' => 'universal_link',
         'additionalUniversalLink' => 'additional_universal_link',
         'productShortName' => 'product_short_name',
-        'productSaleStatus' => 'product_sale_status',
         'price' => 'price',
         'originalPrice' => 'original_price',
         'discount' => 'discount',
@@ -456,7 +453,6 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'universalLink' => 'setUniversalLink',
         'additionalUniversalLink' => 'setAdditionalUniversalLink',
         'productShortName' => 'setProductShortName',
-        'productSaleStatus' => 'setProductSaleStatus',
         'price' => 'setPrice',
         'originalPrice' => 'setOriginalPrice',
         'discount' => 'setDiscount',
@@ -572,7 +568,6 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'universalLink' => 'getUniversalLink',
         'additionalUniversalLink' => 'getAdditionalUniversalLink',
         'productShortName' => 'getProductShortName',
-        'productSaleStatus' => 'getProductSaleStatus',
         'price' => 'getPrice',
         'originalPrice' => 'getOriginalPrice',
         'discount' => 'getDiscount',
@@ -742,7 +737,6 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         $this->container['universalLink'] = isset($data['universalLink']) ? $data['universalLink'] : null;
         $this->container['additionalUniversalLink'] = isset($data['additionalUniversalLink']) ? $data['additionalUniversalLink'] : null;
         $this->container['productShortName'] = isset($data['productShortName']) ? $data['productShortName'] : null;
-        $this->container['productSaleStatus'] = isset($data['productSaleStatus']) ? $data['productSaleStatus'] : null;
         $this->container['price'] = isset($data['price']) ? $data['price'] : null;
         $this->container['originalPrice'] = isset($data['originalPrice']) ? $data['originalPrice'] : null;
         $this->container['discount'] = isset($data['discount']) ? $data['discount'] : null;
@@ -1539,30 +1533,6 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     public function setProductShortName($productShortName)
     {
         $this->container['productShortName'] = $productShortName;
-
-        return $this;
-    }
-
-    /**
-     * Gets productSaleStatus
-     *
-     * @return \TencentAds\Model\ProductSaleStatus
-     */
-    public function getProductSaleStatus()
-    {
-        return $this->container['productSaleStatus'];
-    }
-
-    /**
-     * Sets productSaleStatus
-     *
-     * @param \TencentAds\Model\ProductSaleStatus $productSaleStatus productSaleStatus
-     *
-     * @return $this
-     */
-    public function setProductSaleStatus($productSaleStatus)
-    {
-        $this->container['productSaleStatus'] = $productSaleStatus;
 
         return $this;
     }

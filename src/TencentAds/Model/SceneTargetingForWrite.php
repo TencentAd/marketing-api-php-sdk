@@ -65,7 +65,9 @@ class SceneTargetingForWrite implements ModelInterface, ArrayAccess
         'excludeUnionPositionPackage' => 'int[]',
         'tencentNews' => 'string[]',
         'displayScene' => 'string[]',
-        'mobileUnionCategory' => 'int[]'
+        'mobileUnionCategory' => 'int[]',
+        'wechatScene' => '\TencentAds\Model\WechatScene',
+        'wechatPosition' => 'int[]'
     ];
 
     /**
@@ -81,7 +83,9 @@ class SceneTargetingForWrite implements ModelInterface, ArrayAccess
         'excludeUnionPositionPackage' => 'int64',
         'tencentNews' => null,
         'displayScene' => null,
-        'mobileUnionCategory' => 'int64'
+        'mobileUnionCategory' => 'int64',
+        'wechatScene' => null,
+        'wechatPosition' => 'int64'
     ];
 
     /**
@@ -118,7 +122,9 @@ class SceneTargetingForWrite implements ModelInterface, ArrayAccess
         'excludeUnionPositionPackage' => 'exclude_union_position_package',
         'tencentNews' => 'tencent_news',
         'displayScene' => 'display_scene',
-        'mobileUnionCategory' => 'mobile_union_category'
+        'mobileUnionCategory' => 'mobile_union_category',
+        'wechatScene' => 'wechat_scene',
+        'wechatPosition' => 'wechat_position'
     ];
 
     /**
@@ -134,7 +140,9 @@ class SceneTargetingForWrite implements ModelInterface, ArrayAccess
         'excludeUnionPositionPackage' => 'setExcludeUnionPositionPackage',
         'tencentNews' => 'setTencentNews',
         'displayScene' => 'setDisplayScene',
-        'mobileUnionCategory' => 'setMobileUnionCategory'
+        'mobileUnionCategory' => 'setMobileUnionCategory',
+        'wechatScene' => 'setWechatScene',
+        'wechatPosition' => 'setWechatPosition'
     ];
 
     /**
@@ -150,7 +158,9 @@ class SceneTargetingForWrite implements ModelInterface, ArrayAccess
         'excludeUnionPositionPackage' => 'getExcludeUnionPositionPackage',
         'tencentNews' => 'getTencentNews',
         'displayScene' => 'getDisplayScene',
-        'mobileUnionCategory' => 'getMobileUnionCategory'
+        'mobileUnionCategory' => 'getMobileUnionCategory',
+        'wechatScene' => 'getWechatScene',
+        'wechatPosition' => 'getWechatPosition'
     ];
 
     /**
@@ -221,6 +231,8 @@ class SceneTargetingForWrite implements ModelInterface, ArrayAccess
         $this->container['tencentNews'] = isset($data['tencentNews']) ? $data['tencentNews'] : null;
         $this->container['displayScene'] = isset($data['displayScene']) ? $data['displayScene'] : null;
         $this->container['mobileUnionCategory'] = isset($data['mobileUnionCategory']) ? $data['mobileUnionCategory'] : null;
+        $this->container['wechatScene'] = isset($data['wechatScene']) ? $data['wechatScene'] : null;
+        $this->container['wechatPosition'] = isset($data['wechatPosition']) ? $data['wechatPosition'] : null;
     }
 
     /**
@@ -435,6 +447,54 @@ class SceneTargetingForWrite implements ModelInterface, ArrayAccess
     public function setMobileUnionCategory($mobileUnionCategory)
     {
         $this->container['mobileUnionCategory'] = $mobileUnionCategory;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatScene
+     *
+     * @return \TencentAds\Model\WechatScene
+     */
+    public function getWechatScene()
+    {
+        return $this->container['wechatScene'];
+    }
+
+    /**
+     * Sets wechatScene
+     *
+     * @param \TencentAds\Model\WechatScene $wechatScene wechatScene
+     *
+     * @return $this
+     */
+    public function setWechatScene($wechatScene)
+    {
+        $this->container['wechatScene'] = $wechatScene;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatPosition
+     *
+     * @return int[]
+     */
+    public function getWechatPosition()
+    {
+        return $this->container['wechatPosition'];
+    }
+
+    /**
+     * Sets wechatPosition
+     *
+     * @param int[] $wechatPosition wechatPosition
+     *
+     * @return $this
+     */
+    public function setWechatPosition($wechatPosition)
+    {
+        $this->container['wechatPosition'] = $wechatPosition;
 
         return $this;
     }
