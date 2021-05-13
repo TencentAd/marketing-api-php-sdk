@@ -1,6 +1,6 @@
 <?php
 /**
- * SceneSpecTagsGetListStruct
+ * ImagesDeleteResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * SceneSpecTagsGetListStruct Class Doc Comment
+ * ImagesDeleteResponse Class Doc Comment
  *
  * @category Class
- * @description 返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
+class ImagesDeleteResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'SceneSpecTagsGetListStruct';
+    protected static $swaggerModelName = 'ImagesDeleteResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,11 +57,11 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'name' => 'string',
-        'description' => 'string',
-        'parentId' => 'int',
-        'targetingName' => 'string'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\ImagesDeleteResponseData'
     ];
 
     /**
@@ -71,11 +70,11 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'id' => 'int64',
-        'name' => null,
-        'description' => null,
-        'parentId' => 'int64',
-        'targetingName' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -105,11 +104,11 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'name' => 'name',
-        'description' => 'description',
-        'parentId' => 'parent_id',
-        'targetingName' => 'targeting_name'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -118,11 +117,11 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'name' => 'setName',
-        'description' => 'setDescription',
-        'parentId' => 'setParentId',
-        'targetingName' => 'setTargetingName'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -131,11 +130,11 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'name' => 'getName',
-        'description' => 'getDescription',
-        'parentId' => 'getParentId',
-        'targetingName' => 'getTargetingName'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -198,11 +197,11 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
-        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
-        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
-        $this->container['parentId'] = isset($data['parentId']) ? $data['parentId'] : null;
-        $this->container['targetingName'] = isset($data['targetingName']) ? $data['targetingName'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -230,121 +229,121 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets id
+     * Gets code
      *
      * @return int
      */
-    public function getId()
+    public function getCode()
     {
-        return $this->container['id'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets id
+     * Sets code
      *
-     * @param int $id id
+     * @param int $code code
      *
      * @return $this
      */
-    public function setId($id)
+    public function setCode($code)
     {
-        $this->container['id'] = $id;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets name
+     * Gets message
      *
      * @return string
      */
-    public function getName()
+    public function getMessage()
     {
-        return $this->container['name'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets name
+     * Sets message
      *
-     * @param string $name name
+     * @param string $message message
      *
      * @return $this
      */
-    public function setName($name)
+    public function setMessage($message)
     {
-        $this->container['name'] = $name;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets description
+     * Gets messageCn
      *
      * @return string
      */
-    public function getDescription()
+    public function getMessageCn()
     {
-        return $this->container['description'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets description
+     * Sets messageCn
      *
-     * @param string $description description
+     * @param string $messageCn messageCn
      *
      * @return $this
      */
-    public function setDescription($description)
+    public function setMessageCn($messageCn)
     {
-        $this->container['description'] = $description;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets parentId
+     * Gets errors
      *
-     * @return int
+     * @return \TencentAds\Model\ApiErrorStruct[]
      */
-    public function getParentId()
+    public function getErrors()
     {
-        return $this->container['parentId'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets parentId
+     * Sets errors
      *
-     * @param int $parentId parentId
+     * @param \TencentAds\Model\ApiErrorStruct[] $errors errors
      *
      * @return $this
      */
-    public function setParentId($parentId)
+    public function setErrors($errors)
     {
-        $this->container['parentId'] = $parentId;
+        $this->container['errors'] = $errors;
 
         return $this;
     }
 
     /**
-     * Gets targetingName
+     * Gets data
      *
-     * @return string
+     * @return \TencentAds\Model\ImagesDeleteResponseData
      */
-    public function getTargetingName()
+    public function getData()
     {
-        return $this->container['targetingName'];
+        return $this->container['data'];
     }
 
     /**
-     * Sets targetingName
+     * Sets data
      *
-     * @param string $targetingName targetingName
+     * @param \TencentAds\Model\ImagesDeleteResponseData $data data
      *
      * @return $this
      */
-    public function setTargetingName($targetingName)
+    public function setData($data)
     {
-        $this->container['targetingName'] = $targetingName;
+        $this->container['data'] = $data;
 
         return $this;
     }

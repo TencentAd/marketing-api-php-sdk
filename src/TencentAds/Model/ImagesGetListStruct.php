@@ -71,6 +71,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'sourceReferenceId' => 'string',
         'ownerAccountId' => 'string',
         'status' => '\TencentAds\Model\MediaStatusType',
+        'sampleAspectRatio' => 'string',
         'width' => 'int',
         'height' => 'int',
         'fileSize' => 'int',
@@ -97,6 +98,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'sourceReferenceId' => null,
         'ownerAccountId' => null,
         'status' => null,
+        'sampleAspectRatio' => null,
         'width' => 'int64',
         'height' => 'int64',
         'fileSize' => 'int64',
@@ -144,6 +146,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'sourceReferenceId' => 'source_reference_id',
         'ownerAccountId' => 'owner_account_id',
         'status' => 'status',
+        'sampleAspectRatio' => 'sample_aspect_ratio',
         'width' => 'width',
         'height' => 'height',
         'fileSize' => 'file_size',
@@ -170,6 +173,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'sourceReferenceId' => 'setSourceReferenceId',
         'ownerAccountId' => 'setOwnerAccountId',
         'status' => 'setStatus',
+        'sampleAspectRatio' => 'setSampleAspectRatio',
         'width' => 'setWidth',
         'height' => 'setHeight',
         'fileSize' => 'setFileSize',
@@ -196,6 +200,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'sourceReferenceId' => 'getSourceReferenceId',
         'ownerAccountId' => 'getOwnerAccountId',
         'status' => 'getStatus',
+        'sampleAspectRatio' => 'getSampleAspectRatio',
         'width' => 'getWidth',
         'height' => 'getHeight',
         'fileSize' => 'getFileSize',
@@ -276,6 +281,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['sourceReferenceId'] = isset($data['sourceReferenceId']) ? $data['sourceReferenceId'] : null;
         $this->container['ownerAccountId'] = isset($data['ownerAccountId']) ? $data['ownerAccountId'] : null;
         $this->container['status'] = isset($data['status']) ? $data['status'] : null;
+        $this->container['sampleAspectRatio'] = isset($data['sampleAspectRatio']) ? $data['sampleAspectRatio'] : null;
         $this->container['width'] = isset($data['width']) ? $data['width'] : null;
         $this->container['height'] = isset($data['height']) ? $data['height'] : null;
         $this->container['fileSize'] = isset($data['fileSize']) ? $data['fileSize'] : null;
@@ -615,6 +621,30 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     public function setStatus($status)
     {
         $this->container['status'] = $status;
+
+        return $this;
+    }
+
+    /**
+     * Gets sampleAspectRatio
+     *
+     * @return string
+     */
+    public function getSampleAspectRatio()
+    {
+        return $this->container['sampleAspectRatio'];
+    }
+
+    /**
+     * Sets sampleAspectRatio
+     *
+     * @param string $sampleAspectRatio sampleAspectRatio
+     *
+     * @return $this
+     */
+    public function setSampleAspectRatio($sampleAspectRatio)
+    {
+        $this->container['sampleAspectRatio'] = $sampleAspectRatio;
 
         return $this;
     }

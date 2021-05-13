@@ -70,6 +70,40 @@ class VideosApiContainer extends ApiContainer
 
 
     /**
+     * Handle VideosApi videosDelete function
+     * @param array params
+     * @return \TencentAds\Model\VideosDeleteResponseData
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function delete(array $params = [])
+    {
+        return $this->handleMiddleware('delete', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->videosDelete($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle VideosApi videosDeleteAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function deleteAsync(array $params = [])
+    {
+        return $this->handleMiddleware('delete', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->videosDeleteAsync($data);
+            return $response;
+        });
+    }
+
+
+    /**
      * Handle VideosApi videosGet function
      * @param array params
      * @return \TencentAds\Model\VideosGetResponseData

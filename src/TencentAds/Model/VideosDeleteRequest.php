@@ -1,6 +1,6 @@
 <?php
 /**
- * SceneSpecTagsGetListStruct
+ * VideosDeleteRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * SceneSpecTagsGetListStruct Class Doc Comment
+ * VideosDeleteRequest Class Doc Comment
  *
  * @category Class
- * @description 返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
+class VideosDeleteRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'SceneSpecTagsGetListStruct';
+    protected static $swaggerModelName = 'VideosDeleteRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,11 +57,8 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'name' => 'string',
-        'description' => 'string',
-        'parentId' => 'int',
-        'targetingName' => 'string'
+        'accountId' => 'int',
+        'videoId' => 'int'
     ];
 
     /**
@@ -71,11 +67,8 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'id' => 'int64',
-        'name' => null,
-        'description' => null,
-        'parentId' => 'int64',
-        'targetingName' => null
+        'accountId' => 'int64',
+        'videoId' => 'int64'
     ];
 
     /**
@@ -105,11 +98,8 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'name' => 'name',
-        'description' => 'description',
-        'parentId' => 'parent_id',
-        'targetingName' => 'targeting_name'
+        'accountId' => 'account_id',
+        'videoId' => 'video_id'
     ];
 
     /**
@@ -118,11 +108,8 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'name' => 'setName',
-        'description' => 'setDescription',
-        'parentId' => 'setParentId',
-        'targetingName' => 'setTargetingName'
+        'accountId' => 'setAccountId',
+        'videoId' => 'setVideoId'
     ];
 
     /**
@@ -131,11 +118,8 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'name' => 'getName',
-        'description' => 'getDescription',
-        'parentId' => 'getParentId',
-        'targetingName' => 'getTargetingName'
+        'accountId' => 'getAccountId',
+        'videoId' => 'getVideoId'
     ];
 
     /**
@@ -198,11 +182,8 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
-        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
-        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
-        $this->container['parentId'] = isset($data['parentId']) ? $data['parentId'] : null;
-        $this->container['targetingName'] = isset($data['targetingName']) ? $data['targetingName'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['videoId'] = isset($data['videoId']) ? $data['videoId'] : null;
     }
 
     /**
@@ -230,121 +211,49 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets id
+     * Gets accountId
      *
      * @return int
      */
-    public function getId()
+    public function getAccountId()
     {
-        return $this->container['id'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets id
+     * Sets accountId
      *
-     * @param int $id id
+     * @param int $accountId accountId
      *
      * @return $this
      */
-    public function setId($id)
+    public function setAccountId($accountId)
     {
-        $this->container['id'] = $id;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }
 
     /**
-     * Gets name
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return $this->container['name'];
-    }
-
-    /**
-     * Sets name
-     *
-     * @param string $name name
-     *
-     * @return $this
-     */
-    public function setName($name)
-    {
-        $this->container['name'] = $name;
-
-        return $this;
-    }
-
-    /**
-     * Gets description
-     *
-     * @return string
-     */
-    public function getDescription()
-    {
-        return $this->container['description'];
-    }
-
-    /**
-     * Sets description
-     *
-     * @param string $description description
-     *
-     * @return $this
-     */
-    public function setDescription($description)
-    {
-        $this->container['description'] = $description;
-
-        return $this;
-    }
-
-    /**
-     * Gets parentId
+     * Gets videoId
      *
      * @return int
      */
-    public function getParentId()
+    public function getVideoId()
     {
-        return $this->container['parentId'];
+        return $this->container['videoId'];
     }
 
     /**
-     * Sets parentId
+     * Sets videoId
      *
-     * @param int $parentId parentId
+     * @param int $videoId videoId
      *
      * @return $this
      */
-    public function setParentId($parentId)
+    public function setVideoId($videoId)
     {
-        $this->container['parentId'] = $parentId;
-
-        return $this;
-    }
-
-    /**
-     * Gets targetingName
-     *
-     * @return string
-     */
-    public function getTargetingName()
-    {
-        return $this->container['targetingName'];
-    }
-
-    /**
-     * Sets targetingName
-     *
-     * @param string $targetingName targetingName
-     *
-     * @return $this
-     */
-    public function setTargetingName($targetingName)
-    {
-        $this->container['targetingName'] = $targetingName;
+        $this->container['videoId'] = $videoId;
 
         return $this;
     }

@@ -74,6 +74,40 @@ class ImagesApiContainer extends ApiContainer
 
 
     /**
+     * Handle ImagesApi imagesDelete function
+     * @param array params
+     * @return \TencentAds\Model\ImagesDeleteResponseData
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function delete(array $params = [])
+    {
+        return $this->handleMiddleware('delete', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->imagesDelete($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle ImagesApi imagesDeleteAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function deleteAsync(array $params = [])
+    {
+        return $this->handleMiddleware('delete', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->imagesDeleteAsync($data);
+            return $response;
+        });
+    }
+
+
+    /**
      * Handle ImagesApi imagesGet function
      * @param array params
      * @return \TencentAds\Model\ImagesGetResponseData
