@@ -65,6 +65,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'description' => 'string',
         'corporate' => '\TencentAds\Model\AdcreativeCorporate',
         'video' => 'string',
+        'deepLinkType' => 'string',
         'linkNameType' => '\TencentAds\Model\LinkNameType',
         'imageList' => 'string[]',
         'elementStory' => '\TencentAds\Model\AdcreativeElementStoryArrayItem[]',
@@ -86,6 +87,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'videoPopupButton' => '\TencentAds\Model\AdcreativeVideoPopupButton',
         'videoPopupButtonText' => 'string',
         'videoPopupButtonUrl' => 'string',
+        'buttonUrl' => 'string',
         'longVideo1' => 'string',
         'longVideo2' => 'string',
         'shortVideoStruct' => '\TencentAds\Model\ShortVideoStruct',
@@ -128,6 +130,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'description' => null,
         'corporate' => null,
         'video' => null,
+        'deepLinkType' => null,
         'linkNameType' => null,
         'imageList' => null,
         'elementStory' => null,
@@ -149,6 +152,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'videoPopupButton' => null,
         'videoPopupButtonText' => null,
         'videoPopupButtonUrl' => null,
+        'buttonUrl' => null,
         'longVideo1' => null,
         'longVideo2' => null,
         'shortVideoStruct' => null,
@@ -212,6 +216,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'description' => 'description',
         'corporate' => 'corporate',
         'video' => 'video',
+        'deepLinkType' => 'deep_link_type',
         'linkNameType' => 'link_name_type',
         'imageList' => 'image_list',
         'elementStory' => 'element_story',
@@ -233,6 +238,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'videoPopupButton' => 'video_popup_button',
         'videoPopupButtonText' => 'video_popup_button_text',
         'videoPopupButtonUrl' => 'video_popup_button_url',
+        'buttonUrl' => 'button_url',
         'longVideo1' => 'long_video1',
         'longVideo2' => 'long_video2',
         'shortVideoStruct' => 'short_video_struct',
@@ -275,6 +281,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'description' => 'setDescription',
         'corporate' => 'setCorporate',
         'video' => 'setVideo',
+        'deepLinkType' => 'setDeepLinkType',
         'linkNameType' => 'setLinkNameType',
         'imageList' => 'setImageList',
         'elementStory' => 'setElementStory',
@@ -296,6 +303,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'videoPopupButton' => 'setVideoPopupButton',
         'videoPopupButtonText' => 'setVideoPopupButtonText',
         'videoPopupButtonUrl' => 'setVideoPopupButtonUrl',
+        'buttonUrl' => 'setButtonUrl',
         'longVideo1' => 'setLongVideo1',
         'longVideo2' => 'setLongVideo2',
         'shortVideoStruct' => 'setShortVideoStruct',
@@ -338,6 +346,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'description' => 'getDescription',
         'corporate' => 'getCorporate',
         'video' => 'getVideo',
+        'deepLinkType' => 'getDeepLinkType',
         'linkNameType' => 'getLinkNameType',
         'imageList' => 'getImageList',
         'elementStory' => 'getElementStory',
@@ -359,6 +368,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'videoPopupButton' => 'getVideoPopupButton',
         'videoPopupButtonText' => 'getVideoPopupButtonText',
         'videoPopupButtonUrl' => 'getVideoPopupButtonUrl',
+        'buttonUrl' => 'getButtonUrl',
         'longVideo1' => 'getLongVideo1',
         'longVideo2' => 'getLongVideo2',
         'shortVideoStruct' => 'getShortVideoStruct',
@@ -455,6 +465,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
         $this->container['corporate'] = isset($data['corporate']) ? $data['corporate'] : null;
         $this->container['video'] = isset($data['video']) ? $data['video'] : null;
+        $this->container['deepLinkType'] = isset($data['deepLinkType']) ? $data['deepLinkType'] : null;
         $this->container['linkNameType'] = isset($data['linkNameType']) ? $data['linkNameType'] : null;
         $this->container['imageList'] = isset($data['imageList']) ? $data['imageList'] : null;
         $this->container['elementStory'] = isset($data['elementStory']) ? $data['elementStory'] : null;
@@ -476,6 +487,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         $this->container['videoPopupButton'] = isset($data['videoPopupButton']) ? $data['videoPopupButton'] : null;
         $this->container['videoPopupButtonText'] = isset($data['videoPopupButtonText']) ? $data['videoPopupButtonText'] : null;
         $this->container['videoPopupButtonUrl'] = isset($data['videoPopupButtonUrl']) ? $data['videoPopupButtonUrl'] : null;
+        $this->container['buttonUrl'] = isset($data['buttonUrl']) ? $data['buttonUrl'] : null;
         $this->container['longVideo1'] = isset($data['longVideo1']) ? $data['longVideo1'] : null;
         $this->container['longVideo2'] = isset($data['longVideo2']) ? $data['longVideo2'] : null;
         $this->container['shortVideoStruct'] = isset($data['shortVideoStruct']) ? $data['shortVideoStruct'] : null;
@@ -693,6 +705,30 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
     public function setVideo($video)
     {
         $this->container['video'] = $video;
+
+        return $this;
+    }
+
+    /**
+     * Gets deepLinkType
+     *
+     * @return string
+     */
+    public function getDeepLinkType()
+    {
+        return $this->container['deepLinkType'];
+    }
+
+    /**
+     * Sets deepLinkType
+     *
+     * @param string $deepLinkType deepLinkType
+     *
+     * @return $this
+     */
+    public function setDeepLinkType($deepLinkType)
+    {
+        $this->container['deepLinkType'] = $deepLinkType;
 
         return $this;
     }
@@ -1197,6 +1233,30 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
     public function setVideoPopupButtonUrl($videoPopupButtonUrl)
     {
         $this->container['videoPopupButtonUrl'] = $videoPopupButtonUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets buttonUrl
+     *
+     * @return string
+     */
+    public function getButtonUrl()
+    {
+        return $this->container['buttonUrl'];
+    }
+
+    /**
+     * Sets buttonUrl
+     *
+     * @param string $buttonUrl buttonUrl
+     *
+     * @return $this
+     */
+    public function setButtonUrl($buttonUrl)
+    {
+        $this->container['buttonUrl'] = $buttonUrl;
 
         return $this;
     }

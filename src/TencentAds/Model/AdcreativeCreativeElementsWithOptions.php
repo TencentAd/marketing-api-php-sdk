@@ -69,6 +69,7 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'titleOptions' => 'string[]',
         'descriptionOptions' => 'string[]',
         'videoOptions' => 'string[]',
+        'deepLinkType' => 'string',
         'linkNameType' => '\TencentAds\Model\LinkNameTypeMP',
         'imageList' => 'string[]',
         'elementStory' => '\TencentAds\Model\AdcreativeElementStoryArrayItem[]',
@@ -90,6 +91,7 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'cardContent' => '\TencentAds\Model\AdcreativeCardContent',
         'videoPopupUrl' => 'string',
         'videoPopupButton' => '\TencentAds\Model\AdcreativeVideoPopupButton',
+        'buttonUrl' => 'string',
         'brand' => '\TencentAds\Model\AdCreativeBrand',
         'caption' => 'string',
         'labelledImg' => '\TencentAds\Model\AdcreativeLabelledImg',
@@ -118,6 +120,7 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'titleOptions' => null,
         'descriptionOptions' => null,
         'videoOptions' => null,
+        'deepLinkType' => null,
         'linkNameType' => null,
         'imageList' => null,
         'elementStory' => null,
@@ -139,6 +142,7 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'cardContent' => null,
         'videoPopupUrl' => null,
         'videoPopupButton' => null,
+        'buttonUrl' => null,
         'brand' => null,
         'caption' => null,
         'labelledImg' => null,
@@ -188,6 +192,7 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'titleOptions' => 'title_options',
         'descriptionOptions' => 'description_options',
         'videoOptions' => 'video_options',
+        'deepLinkType' => 'deep_link_type',
         'linkNameType' => 'link_name_type',
         'imageList' => 'image_list',
         'elementStory' => 'element_story',
@@ -209,6 +214,7 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'cardContent' => 'card_content',
         'videoPopupUrl' => 'video_popup_url',
         'videoPopupButton' => 'video_popup_button',
+        'buttonUrl' => 'button_url',
         'brand' => 'brand',
         'caption' => 'caption',
         'labelledImg' => 'labelled_img',
@@ -237,6 +243,7 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'titleOptions' => 'setTitleOptions',
         'descriptionOptions' => 'setDescriptionOptions',
         'videoOptions' => 'setVideoOptions',
+        'deepLinkType' => 'setDeepLinkType',
         'linkNameType' => 'setLinkNameType',
         'imageList' => 'setImageList',
         'elementStory' => 'setElementStory',
@@ -258,6 +265,7 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'cardContent' => 'setCardContent',
         'videoPopupUrl' => 'setVideoPopupUrl',
         'videoPopupButton' => 'setVideoPopupButton',
+        'buttonUrl' => 'setButtonUrl',
         'brand' => 'setBrand',
         'caption' => 'setCaption',
         'labelledImg' => 'setLabelledImg',
@@ -286,6 +294,7 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'titleOptions' => 'getTitleOptions',
         'descriptionOptions' => 'getDescriptionOptions',
         'videoOptions' => 'getVideoOptions',
+        'deepLinkType' => 'getDeepLinkType',
         'linkNameType' => 'getLinkNameType',
         'imageList' => 'getImageList',
         'elementStory' => 'getElementStory',
@@ -307,6 +316,7 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'cardContent' => 'getCardContent',
         'videoPopupUrl' => 'getVideoPopupUrl',
         'videoPopupButton' => 'getVideoPopupButton',
+        'buttonUrl' => 'getButtonUrl',
         'brand' => 'getBrand',
         'caption' => 'getCaption',
         'labelledImg' => 'getLabelledImg',
@@ -389,6 +399,7 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         $this->container['titleOptions'] = isset($data['titleOptions']) ? $data['titleOptions'] : null;
         $this->container['descriptionOptions'] = isset($data['descriptionOptions']) ? $data['descriptionOptions'] : null;
         $this->container['videoOptions'] = isset($data['videoOptions']) ? $data['videoOptions'] : null;
+        $this->container['deepLinkType'] = isset($data['deepLinkType']) ? $data['deepLinkType'] : null;
         $this->container['linkNameType'] = isset($data['linkNameType']) ? $data['linkNameType'] : null;
         $this->container['imageList'] = isset($data['imageList']) ? $data['imageList'] : null;
         $this->container['elementStory'] = isset($data['elementStory']) ? $data['elementStory'] : null;
@@ -410,6 +421,7 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         $this->container['cardContent'] = isset($data['cardContent']) ? $data['cardContent'] : null;
         $this->container['videoPopupUrl'] = isset($data['videoPopupUrl']) ? $data['videoPopupUrl'] : null;
         $this->container['videoPopupButton'] = isset($data['videoPopupButton']) ? $data['videoPopupButton'] : null;
+        $this->container['buttonUrl'] = isset($data['buttonUrl']) ? $data['buttonUrl'] : null;
         $this->container['brand'] = isset($data['brand']) ? $data['brand'] : null;
         $this->container['caption'] = isset($data['caption']) ? $data['caption'] : null;
         $this->container['labelledImg'] = isset($data['labelledImg']) ? $data['labelledImg'] : null;
@@ -705,6 +717,30 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
     public function setVideoOptions($videoOptions)
     {
         $this->container['videoOptions'] = $videoOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets deepLinkType
+     *
+     * @return string
+     */
+    public function getDeepLinkType()
+    {
+        return $this->container['deepLinkType'];
+    }
+
+    /**
+     * Sets deepLinkType
+     *
+     * @param string $deepLinkType deepLinkType
+     *
+     * @return $this
+     */
+    public function setDeepLinkType($deepLinkType)
+    {
+        $this->container['deepLinkType'] = $deepLinkType;
 
         return $this;
     }
@@ -1209,6 +1245,30 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
     public function setVideoPopupButton($videoPopupButton)
     {
         $this->container['videoPopupButton'] = $videoPopupButton;
+
+        return $this;
+    }
+
+    /**
+     * Gets buttonUrl
+     *
+     * @return string
+     */
+    public function getButtonUrl()
+    {
+        return $this->container['buttonUrl'];
+    }
+
+    /**
+     * Sets buttonUrl
+     *
+     * @param string $buttonUrl buttonUrl
+     *
+     * @return $this
+     */
+    public function setButtonUrl($buttonUrl)
+    {
+        $this->container['buttonUrl'] = $buttonUrl;
 
         return $this;
     }
