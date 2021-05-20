@@ -73,6 +73,7 @@ class DestinationType
     const WEIMOB_PRODUCT = 'PAGE_TYPE_WEIMOB_PRODUCT';
     const WEIMOB_H5 = 'PAGE_TYPE_WEIMOB_H5';
     const TSA_OTT = 'PAGE_TYPE_TSA_OTT';
+    const WECHAT_OFFICIAL_ACCOUNT_DETAIL = 'PAGE_TYPE_WECHAT_OFFICIAL_ACCOUNT_DETAIL';
     
     /**
      * Gets allowable values of the enum
@@ -110,6 +111,7 @@ class DestinationType
             self::WEIMOB_PRODUCT,
             self::WEIMOB_H5,
             self::TSA_OTT,
+            self::WECHAT_OFFICIAL_ACCOUNT_DETAIL,
         ];
     }
 }

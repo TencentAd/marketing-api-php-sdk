@@ -73,6 +73,7 @@ class PageTypeRead
     const WEIMOB_PROMOTION = 'PAGE_TYPE_WEIMOB_PROMOTION';
     const WEIMOB_PRODUCT = 'PAGE_TYPE_WEIMOB_PRODUCT';
     const WEIMOB_H5 = 'PAGE_TYPE_WEIMOB_H5';
+    const WECHAT_OFFICIAL_ACCOUNT_DETAIL = 'PAGE_TYPE_WECHAT_OFFICIAL_ACCOUNT_DETAIL';
     
     /**
      * Gets allowable values of the enum
@@ -110,6 +111,7 @@ class PageTypeRead
             self::WEIMOB_PROMOTION,
             self::WEIMOB_PRODUCT,
             self::WEIMOB_H5,
+            self::WECHAT_OFFICIAL_ACCOUNT_DETAIL,
         ];
     }
 }

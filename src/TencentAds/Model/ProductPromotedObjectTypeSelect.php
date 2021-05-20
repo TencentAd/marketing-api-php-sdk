@@ -56,6 +56,7 @@ class ProductPromotedObjectTypeSelect
     const MINI_GAME_WECHAT = 'PROMOTED_OBJECT_TYPE_MINI_GAME_WECHAT';
     const MINI_GAME_QQ = 'PROMOTED_OBJECT_TYPE_MINI_GAME_QQ';
     const JD = 'PROMOTED_OBJECT_TYPE_JD';
+    const WECHAT_OFFICIAL_ACCOUNT = 'PROMOTED_OBJECT_TYPE_WECHAT_OFFICIAL_ACCOUNT';
     
     /**
      * Gets allowable values of the enum
@@ -76,6 +77,7 @@ class ProductPromotedObjectTypeSelect
             self::MINI_GAME_WECHAT,
             self::MINI_GAME_QQ,
             self::JD,
+            self::WECHAT_OFFICIAL_ACCOUNT,
         ];
     }
 }

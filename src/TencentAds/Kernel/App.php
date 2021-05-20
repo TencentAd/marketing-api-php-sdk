@@ -102,6 +102,7 @@ use TencentAds\Container\PromotedObjectsApiContainer;
 use TencentAds\Container\QualificationsApiContainer;
 use TencentAds\Container\RealtimeCostApiContainer;
 use TencentAds\Container\ReportApiContainer;
+use TencentAds\Container\ReviewElementPrereviewResultsApiContainer;
 use TencentAds\Container\SceneSpecTagsApiContainer;
 use TencentAds\Container\ShopApiContainer;
 use TencentAds\Container\SplitTestsApiContainer;
@@ -449,6 +450,9 @@ class App
 
     /** @var ReportApiContainer */
     public $reportApiContainer;
+
+    /** @var ReviewElementPrereviewResultsApiContainer */
+    public $reviewElementPrereviewResultsApiContainer;
 
     /** @var SceneSpecTagsApiContainer */
     public $sceneSpecTagsApiContainer;
@@ -1986,6 +1990,20 @@ class App
             $this->reportApiContainer = $container;
         }
         return $this->reportApiContainer;
+    }
+
+
+    /**
+     * @return ReviewElementPrereviewResultsApiContainer
+     */
+    public function reviewElementPrereviewResults()
+    {
+        if (empty($this->reviewElementPrereviewResultsApiContainer)) {
+            $container = new ReviewElementPrereviewResultsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->reviewElementPrereviewResultsApiContainer = $container;
+        }
+        return $this->reviewElementPrereviewResultsApiContainer;
     }
 
 

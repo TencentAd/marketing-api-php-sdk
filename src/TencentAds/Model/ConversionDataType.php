@@ -49,6 +49,7 @@ class ConversionDataType
     const APP_DOWNLOAD = 'CONVERSION_DATA_APP_DOWNLOAD';
     const ONSHOP = 'CONVERSION_DATA_ONSHOP';
     const ADMETRIC = 'CONVERSION_DATA_ADMETRIC';
+    const FRIEND_FOLLOW = 'CONVERSION_DATA_FRIEND_FOLLOW';
     
     /**
      * Gets allowable values of the enum
@@ -62,6 +63,7 @@ class ConversionDataType
             self::APP_DOWNLOAD,
             self::ONSHOP,
             self::ADMETRIC,
+            self::FRIEND_FOLLOW,
         ];
     }
 }
