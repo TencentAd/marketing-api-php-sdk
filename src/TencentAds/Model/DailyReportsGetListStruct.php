@@ -350,6 +350,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatShallowConversionsCountStage1' => 'int',
         'wechatShallowConversionsCountStage2' => 'int',
         'activateRegisterRate' => 'double',
+        'keyBehaviorConversionsCount' => 'int',
+        'keyBehaviorConversionsCost' => 'int',
+        'keyBehaviorConversionsRate' => 'double',
+        'firstDayOrderRoi' => 'double',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
         'incomeVal1' => 'int',
@@ -784,6 +788,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatShallowConversionsCountStage1' => 'int64',
         'wechatShallowConversionsCountStage2' => 'int64',
         'activateRegisterRate' => 'double',
+        'keyBehaviorConversionsCount' => 'int64',
+        'keyBehaviorConversionsCost' => 'int64',
+        'keyBehaviorConversionsRate' => 'double',
+        'firstDayOrderRoi' => 'double',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
         'incomeVal1' => 'int64',
@@ -1239,6 +1247,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatShallowConversionsCountStage1' => 'wechat_shallow_conversions_count_stage1',
         'wechatShallowConversionsCountStage2' => 'wechat_shallow_conversions_count_stage2',
         'activateRegisterRate' => 'activate_register_rate',
+        'keyBehaviorConversionsCount' => 'key_behavior_conversions_count',
+        'keyBehaviorConversionsCost' => 'key_behavior_conversions_cost',
+        'keyBehaviorConversionsRate' => 'key_behavior_conversions_rate',
+        'firstDayOrderRoi' => 'first_day_order_roi',
         'requestConversionsCount' => 'request_conversions_count',
         'requestConversionsCost' => 'request_conversions_cost',
         'incomeVal1' => 'income_val_1',
@@ -1673,6 +1685,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatShallowConversionsCountStage1' => 'setWechatShallowConversionsCountStage1',
         'wechatShallowConversionsCountStage2' => 'setWechatShallowConversionsCountStage2',
         'activateRegisterRate' => 'setActivateRegisterRate',
+        'keyBehaviorConversionsCount' => 'setKeyBehaviorConversionsCount',
+        'keyBehaviorConversionsCost' => 'setKeyBehaviorConversionsCost',
+        'keyBehaviorConversionsRate' => 'setKeyBehaviorConversionsRate',
+        'firstDayOrderRoi' => 'setFirstDayOrderRoi',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'requestConversionsCost' => 'setRequestConversionsCost',
         'incomeVal1' => 'setIncomeVal1',
@@ -2107,6 +2123,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatShallowConversionsCountStage1' => 'getWechatShallowConversionsCountStage1',
         'wechatShallowConversionsCountStage2' => 'getWechatShallowConversionsCountStage2',
         'activateRegisterRate' => 'getActivateRegisterRate',
+        'keyBehaviorConversionsCount' => 'getKeyBehaviorConversionsCount',
+        'keyBehaviorConversionsCost' => 'getKeyBehaviorConversionsCost',
+        'keyBehaviorConversionsRate' => 'getKeyBehaviorConversionsRate',
+        'firstDayOrderRoi' => 'getFirstDayOrderRoi',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'requestConversionsCost' => 'getRequestConversionsCost',
         'incomeVal1' => 'getIncomeVal1',
@@ -2595,6 +2615,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['wechatShallowConversionsCountStage1'] = isset($data['wechatShallowConversionsCountStage1']) ? $data['wechatShallowConversionsCountStage1'] : null;
         $this->container['wechatShallowConversionsCountStage2'] = isset($data['wechatShallowConversionsCountStage2']) ? $data['wechatShallowConversionsCountStage2'] : null;
         $this->container['activateRegisterRate'] = isset($data['activateRegisterRate']) ? $data['activateRegisterRate'] : null;
+        $this->container['keyBehaviorConversionsCount'] = isset($data['keyBehaviorConversionsCount']) ? $data['keyBehaviorConversionsCount'] : null;
+        $this->container['keyBehaviorConversionsCost'] = isset($data['keyBehaviorConversionsCost']) ? $data['keyBehaviorConversionsCost'] : null;
+        $this->container['keyBehaviorConversionsRate'] = isset($data['keyBehaviorConversionsRate']) ? $data['keyBehaviorConversionsRate'] : null;
+        $this->container['firstDayOrderRoi'] = isset($data['firstDayOrderRoi']) ? $data['firstDayOrderRoi'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
         $this->container['incomeVal1'] = isset($data['incomeVal1']) ? $data['incomeVal1'] : null;
@@ -9759,6 +9783,102 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setActivateRegisterRate($activateRegisterRate)
     {
         $this->container['activateRegisterRate'] = $activateRegisterRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets keyBehaviorConversionsCount
+     *
+     * @return int
+     */
+    public function getKeyBehaviorConversionsCount()
+    {
+        return $this->container['keyBehaviorConversionsCount'];
+    }
+
+    /**
+     * Sets keyBehaviorConversionsCount
+     *
+     * @param int $keyBehaviorConversionsCount keyBehaviorConversionsCount
+     *
+     * @return $this
+     */
+    public function setKeyBehaviorConversionsCount($keyBehaviorConversionsCount)
+    {
+        $this->container['keyBehaviorConversionsCount'] = $keyBehaviorConversionsCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets keyBehaviorConversionsCost
+     *
+     * @return int
+     */
+    public function getKeyBehaviorConversionsCost()
+    {
+        return $this->container['keyBehaviorConversionsCost'];
+    }
+
+    /**
+     * Sets keyBehaviorConversionsCost
+     *
+     * @param int $keyBehaviorConversionsCost keyBehaviorConversionsCost
+     *
+     * @return $this
+     */
+    public function setKeyBehaviorConversionsCost($keyBehaviorConversionsCost)
+    {
+        $this->container['keyBehaviorConversionsCost'] = $keyBehaviorConversionsCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets keyBehaviorConversionsRate
+     *
+     * @return double
+     */
+    public function getKeyBehaviorConversionsRate()
+    {
+        return $this->container['keyBehaviorConversionsRate'];
+    }
+
+    /**
+     * Sets keyBehaviorConversionsRate
+     *
+     * @param double $keyBehaviorConversionsRate keyBehaviorConversionsRate
+     *
+     * @return $this
+     */
+    public function setKeyBehaviorConversionsRate($keyBehaviorConversionsRate)
+    {
+        $this->container['keyBehaviorConversionsRate'] = $keyBehaviorConversionsRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstDayOrderRoi
+     *
+     * @return double
+     */
+    public function getFirstDayOrderRoi()
+    {
+        return $this->container['firstDayOrderRoi'];
+    }
+
+    /**
+     * Sets firstDayOrderRoi
+     *
+     * @param double $firstDayOrderRoi firstDayOrderRoi
+     *
+     * @return $this
+     */
+    public function setFirstDayOrderRoi($firstDayOrderRoi)
+    {
+        $this->container['firstDayOrderRoi'] = $firstDayOrderRoi;
 
         return $this;
     }

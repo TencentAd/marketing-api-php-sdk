@@ -1,6 +1,6 @@
 <?php
 /**
- * PreReviewDetailStruct
+ * ElementAnimateFloat
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PreReviewDetailStruct Class Doc Comment
+ * ElementAnimateFloat Class Doc Comment
  *
  * @category Class
- * @description 元素预审结果明细
+ * @description 动画悬浮组件，灰度开放中
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PreReviewDetailStruct implements ModelInterface, ArrayAccess
+class ElementAnimateFloat implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class PreReviewDetailStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'pre_review_detail_struct';
+    protected static $swaggerModelName = 'element_animate_float';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,10 @@ class PreReviewDetailStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'siteSet' => 'string',
-        'preReviewResult' => 'int',
-        'rejectReasonDetail' => '\TencentAds\Model\RejectReasonDetailStruct[]'
+        'title' => 'string',
+        'desc' => 'string',
+        'animateFloatButtonSpec' => '\TencentAds\Model\AnimateFloatButtonSpec',
+        'imageIdList' => 'string'
     ];
 
     /**
@@ -69,9 +70,10 @@ class PreReviewDetailStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'siteSet' => null,
-        'preReviewResult' => 'int64',
-        'rejectReasonDetail' => null
+        'title' => null,
+        'desc' => null,
+        'animateFloatButtonSpec' => null,
+        'imageIdList' => null
     ];
 
     /**
@@ -101,9 +103,10 @@ class PreReviewDetailStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'siteSet' => 'site_set',
-        'preReviewResult' => 'pre_review_result',
-        'rejectReasonDetail' => 'reject_reason_detail'
+        'title' => 'title',
+        'desc' => 'desc',
+        'animateFloatButtonSpec' => 'animate_float_button_spec',
+        'imageIdList' => 'image_id_list'
     ];
 
     /**
@@ -112,9 +115,10 @@ class PreReviewDetailStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'siteSet' => 'setSiteSet',
-        'preReviewResult' => 'setPreReviewResult',
-        'rejectReasonDetail' => 'setRejectReasonDetail'
+        'title' => 'setTitle',
+        'desc' => 'setDesc',
+        'animateFloatButtonSpec' => 'setAnimateFloatButtonSpec',
+        'imageIdList' => 'setImageIdList'
     ];
 
     /**
@@ -123,9 +127,10 @@ class PreReviewDetailStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'siteSet' => 'getSiteSet',
-        'preReviewResult' => 'getPreReviewResult',
-        'rejectReasonDetail' => 'getRejectReasonDetail'
+        'title' => 'getTitle',
+        'desc' => 'getDesc',
+        'animateFloatButtonSpec' => 'getAnimateFloatButtonSpec',
+        'imageIdList' => 'getImageIdList'
     ];
 
     /**
@@ -188,9 +193,10 @@ class PreReviewDetailStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
-        $this->container['preReviewResult'] = isset($data['preReviewResult']) ? $data['preReviewResult'] : null;
-        $this->container['rejectReasonDetail'] = isset($data['rejectReasonDetail']) ? $data['rejectReasonDetail'] : null;
+        $this->container['title'] = isset($data['title']) ? $data['title'] : null;
+        $this->container['desc'] = isset($data['desc']) ? $data['desc'] : null;
+        $this->container['animateFloatButtonSpec'] = isset($data['animateFloatButtonSpec']) ? $data['animateFloatButtonSpec'] : null;
+        $this->container['imageIdList'] = isset($data['imageIdList']) ? $data['imageIdList'] : null;
     }
 
     /**
@@ -218,73 +224,97 @@ class PreReviewDetailStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets siteSet
+     * Gets title
      *
      * @return string
      */
-    public function getSiteSet()
+    public function getTitle()
     {
-        return $this->container['siteSet'];
+        return $this->container['title'];
     }
 
     /**
-     * Sets siteSet
+     * Sets title
      *
-     * @param string $siteSet siteSet
+     * @param string $title title
      *
      * @return $this
      */
-    public function setSiteSet($siteSet)
+    public function setTitle($title)
     {
-        $this->container['siteSet'] = $siteSet;
+        $this->container['title'] = $title;
 
         return $this;
     }
 
     /**
-     * Gets preReviewResult
+     * Gets desc
      *
-     * @return int
+     * @return string
      */
-    public function getPreReviewResult()
+    public function getDesc()
     {
-        return $this->container['preReviewResult'];
+        return $this->container['desc'];
     }
 
     /**
-     * Sets preReviewResult
+     * Sets desc
      *
-     * @param int $preReviewResult preReviewResult
+     * @param string $desc desc
      *
      * @return $this
      */
-    public function setPreReviewResult($preReviewResult)
+    public function setDesc($desc)
     {
-        $this->container['preReviewResult'] = $preReviewResult;
+        $this->container['desc'] = $desc;
 
         return $this;
     }
 
     /**
-     * Gets rejectReasonDetail
+     * Gets animateFloatButtonSpec
      *
-     * @return \TencentAds\Model\RejectReasonDetailStruct[]
+     * @return \TencentAds\Model\AnimateFloatButtonSpec
      */
-    public function getRejectReasonDetail()
+    public function getAnimateFloatButtonSpec()
     {
-        return $this->container['rejectReasonDetail'];
+        return $this->container['animateFloatButtonSpec'];
     }
 
     /**
-     * Sets rejectReasonDetail
+     * Sets animateFloatButtonSpec
      *
-     * @param \TencentAds\Model\RejectReasonDetailStruct[] $rejectReasonDetail rejectReasonDetail
+     * @param \TencentAds\Model\AnimateFloatButtonSpec $animateFloatButtonSpec animateFloatButtonSpec
      *
      * @return $this
      */
-    public function setRejectReasonDetail($rejectReasonDetail)
+    public function setAnimateFloatButtonSpec($animateFloatButtonSpec)
     {
-        $this->container['rejectReasonDetail'] = $rejectReasonDetail;
+        $this->container['animateFloatButtonSpec'] = $animateFloatButtonSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets imageIdList
+     *
+     * @return string
+     */
+    public function getImageIdList()
+    {
+        return $this->container['imageIdList'];
+    }
+
+    /**
+     * Sets imageIdList
+     *
+     * @param string $imageIdList imageIdList
+     *
+     * @return $this
+     */
+    public function setImageIdList($imageIdList)
+    {
+        $this->container['imageIdList'] = $imageIdList;
 
         return $this;
     }

@@ -16,7 +16,6 @@ use TencentAds\Container\AdgroupsApiContainer;
 use TencentAds\Container\AdsApiContainer;
 use TencentAds\Container\AdvertiserApiContainer;
 use TencentAds\Container\AgencyInnerTransferApiContainer;
-use TencentAds\Container\AgencyPeerTransferApiContainer;
 use TencentAds\Container\AgencyRealtimeCostApiContainer;
 use TencentAds\Container\AndroidChannelPackagesApiContainer;
 use TencentAds\Container\AndroidUnionChannelPackagesApiContainer;
@@ -102,7 +101,6 @@ use TencentAds\Container\PromotedObjectsApiContainer;
 use TencentAds\Container\QualificationsApiContainer;
 use TencentAds\Container\RealtimeCostApiContainer;
 use TencentAds\Container\ReportApiContainer;
-use TencentAds\Container\ReviewElementPrereviewResultsApiContainer;
 use TencentAds\Container\SceneSpecTagsApiContainer;
 use TencentAds\Container\ShopApiContainer;
 use TencentAds\Container\SplitTestsApiContainer;
@@ -192,9 +190,6 @@ class App
 
     /** @var AgencyInnerTransferApiContainer */
     public $agencyInnerTransferApiContainer;
-
-    /** @var AgencyPeerTransferApiContainer */
-    public $agencyPeerTransferApiContainer;
 
     /** @var AgencyRealtimeCostApiContainer */
     public $agencyRealtimeCostApiContainer;
@@ -450,9 +445,6 @@ class App
 
     /** @var ReportApiContainer */
     public $reportApiContainer;
-
-    /** @var ReviewElementPrereviewResultsApiContainer */
-    public $reviewElementPrereviewResultsApiContainer;
 
     /** @var SceneSpecTagsApiContainer */
     public $sceneSpecTagsApiContainer;
@@ -786,20 +778,6 @@ class App
             $this->agencyInnerTransferApiContainer = $container;
         }
         return $this->agencyInnerTransferApiContainer;
-    }
-
-
-    /**
-     * @return AgencyPeerTransferApiContainer
-     */
-    public function agencyPeerTransfer()
-    {
-        if (empty($this->agencyPeerTransferApiContainer)) {
-            $container = new AgencyPeerTransferApiContainer();
-            $container->init($this, $this->getClient());
-            $this->agencyPeerTransferApiContainer = $container;
-        }
-        return $this->agencyPeerTransferApiContainer;
     }
 
 
@@ -1990,20 +1968,6 @@ class App
             $this->reportApiContainer = $container;
         }
         return $this->reportApiContainer;
-    }
-
-
-    /**
-     * @return ReviewElementPrereviewResultsApiContainer
-     */
-    public function reviewElementPrereviewResults()
-    {
-        if (empty($this->reviewElementPrereviewResultsApiContainer)) {
-            $container = new ReviewElementPrereviewResultsApiContainer();
-            $container->init($this, $this->getClient());
-            $this->reviewElementPrereviewResultsApiContainer = $container;
-        }
-        return $this->reviewElementPrereviewResultsApiContainer;
     }
 
 

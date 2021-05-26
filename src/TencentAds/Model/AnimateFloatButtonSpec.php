@@ -1,6 +1,6 @@
 <?php
 /**
- * ElementButtonRead
+ * AnimateFloatButtonSpec
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ElementButtonRead Class Doc Comment
+ * AnimateFloatButtonSpec Class Doc Comment
  *
  * @category Class
- * @description 按钮组件元素
+ * @description 动画悬浮组件按钮
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ElementButtonRead implements ModelInterface, ArrayAccess
+class AnimateFloatButtonSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'element_button_read';
+    protected static $swaggerModelName = 'animate_float_button_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,18 +58,15 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'title' => 'string',
-        'url' => 'string',
-        'appIosSpec' => '\TencentAds\Model\AppIosSpec',
-        'appAndroidSpec' => '\TencentAds\Model\AppAndroidSpec',
+        'linkSpec' => '\TencentAds\Model\LinkSpec',
+        'appDownloadSpec' => '\TencentAds\Model\AppDownloadSpec',
+        'followSpec' => '\TencentAds\Model\FollowSpec',
         'miniProgramSpec' => '\TencentAds\Model\MiniProgramSpec',
         'miniGameProgramSpec' => '\TencentAds\Model\MiniGameProgramSpec',
         'fengyeSpec' => '\TencentAds\Model\FengyeSpec',
         'cardSpec' => '\TencentAds\Model\CardSpec',
-        'followSpec' => '\TencentAds\Model\FollowSpec',
         'serviceSpec' => '\TencentAds\Model\ServiceSpec',
-        'wecomSpec' => '\TencentAds\Model\WecomSpec',
-        'useIcon' => 'int'
+        'wecomSpec' => '\TencentAds\Model\WecomSpec'
     ];
 
     /**
@@ -78,18 +75,15 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'title' => null,
-        'url' => null,
-        'appIosSpec' => null,
-        'appAndroidSpec' => null,
+        'linkSpec' => null,
+        'appDownloadSpec' => null,
+        'followSpec' => null,
         'miniProgramSpec' => null,
         'miniGameProgramSpec' => null,
         'fengyeSpec' => null,
         'cardSpec' => null,
-        'followSpec' => null,
         'serviceSpec' => null,
-        'wecomSpec' => null,
-        'useIcon' => 'int64'
+        'wecomSpec' => null
     ];
 
     /**
@@ -119,18 +113,15 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'title' => 'title',
-        'url' => 'url',
-        'appIosSpec' => 'app_ios_spec',
-        'appAndroidSpec' => 'app_android_spec',
+        'linkSpec' => 'link_spec',
+        'appDownloadSpec' => 'app_download_spec',
+        'followSpec' => 'follow_spec',
         'miniProgramSpec' => 'mini_program_spec',
         'miniGameProgramSpec' => 'mini_game_program_spec',
         'fengyeSpec' => 'fengye_spec',
         'cardSpec' => 'card_spec',
-        'followSpec' => 'follow_spec',
         'serviceSpec' => 'service_spec',
-        'wecomSpec' => 'wecom_spec',
-        'useIcon' => 'use_icon'
+        'wecomSpec' => 'wecom_spec'
     ];
 
     /**
@@ -139,18 +130,15 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'title' => 'setTitle',
-        'url' => 'setUrl',
-        'appIosSpec' => 'setAppIosSpec',
-        'appAndroidSpec' => 'setAppAndroidSpec',
+        'linkSpec' => 'setLinkSpec',
+        'appDownloadSpec' => 'setAppDownloadSpec',
+        'followSpec' => 'setFollowSpec',
         'miniProgramSpec' => 'setMiniProgramSpec',
         'miniGameProgramSpec' => 'setMiniGameProgramSpec',
         'fengyeSpec' => 'setFengyeSpec',
         'cardSpec' => 'setCardSpec',
-        'followSpec' => 'setFollowSpec',
         'serviceSpec' => 'setServiceSpec',
-        'wecomSpec' => 'setWecomSpec',
-        'useIcon' => 'setUseIcon'
+        'wecomSpec' => 'setWecomSpec'
     ];
 
     /**
@@ -159,18 +147,15 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'title' => 'getTitle',
-        'url' => 'getUrl',
-        'appIosSpec' => 'getAppIosSpec',
-        'appAndroidSpec' => 'getAppAndroidSpec',
+        'linkSpec' => 'getLinkSpec',
+        'appDownloadSpec' => 'getAppDownloadSpec',
+        'followSpec' => 'getFollowSpec',
         'miniProgramSpec' => 'getMiniProgramSpec',
         'miniGameProgramSpec' => 'getMiniGameProgramSpec',
         'fengyeSpec' => 'getFengyeSpec',
         'cardSpec' => 'getCardSpec',
-        'followSpec' => 'getFollowSpec',
         'serviceSpec' => 'getServiceSpec',
-        'wecomSpec' => 'getWecomSpec',
-        'useIcon' => 'getUseIcon'
+        'wecomSpec' => 'getWecomSpec'
     ];
 
     /**
@@ -233,18 +218,15 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['title'] = isset($data['title']) ? $data['title'] : null;
-        $this->container['url'] = isset($data['url']) ? $data['url'] : null;
-        $this->container['appIosSpec'] = isset($data['appIosSpec']) ? $data['appIosSpec'] : null;
-        $this->container['appAndroidSpec'] = isset($data['appAndroidSpec']) ? $data['appAndroidSpec'] : null;
+        $this->container['linkSpec'] = isset($data['linkSpec']) ? $data['linkSpec'] : null;
+        $this->container['appDownloadSpec'] = isset($data['appDownloadSpec']) ? $data['appDownloadSpec'] : null;
+        $this->container['followSpec'] = isset($data['followSpec']) ? $data['followSpec'] : null;
         $this->container['miniProgramSpec'] = isset($data['miniProgramSpec']) ? $data['miniProgramSpec'] : null;
         $this->container['miniGameProgramSpec'] = isset($data['miniGameProgramSpec']) ? $data['miniGameProgramSpec'] : null;
         $this->container['fengyeSpec'] = isset($data['fengyeSpec']) ? $data['fengyeSpec'] : null;
         $this->container['cardSpec'] = isset($data['cardSpec']) ? $data['cardSpec'] : null;
-        $this->container['followSpec'] = isset($data['followSpec']) ? $data['followSpec'] : null;
         $this->container['serviceSpec'] = isset($data['serviceSpec']) ? $data['serviceSpec'] : null;
         $this->container['wecomSpec'] = isset($data['wecomSpec']) ? $data['wecomSpec'] : null;
-        $this->container['useIcon'] = isset($data['useIcon']) ? $data['useIcon'] : null;
     }
 
     /**
@@ -272,97 +254,73 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets title
+     * Gets linkSpec
      *
-     * @return string
+     * @return \TencentAds\Model\LinkSpec
      */
-    public function getTitle()
+    public function getLinkSpec()
     {
-        return $this->container['title'];
+        return $this->container['linkSpec'];
     }
 
     /**
-     * Sets title
+     * Sets linkSpec
      *
-     * @param string $title title
+     * @param \TencentAds\Model\LinkSpec $linkSpec linkSpec
      *
      * @return $this
      */
-    public function setTitle($title)
+    public function setLinkSpec($linkSpec)
     {
-        $this->container['title'] = $title;
+        $this->container['linkSpec'] = $linkSpec;
 
         return $this;
     }
 
     /**
-     * Gets url
+     * Gets appDownloadSpec
      *
-     * @return string
+     * @return \TencentAds\Model\AppDownloadSpec
      */
-    public function getUrl()
+    public function getAppDownloadSpec()
     {
-        return $this->container['url'];
+        return $this->container['appDownloadSpec'];
     }
 
     /**
-     * Sets url
+     * Sets appDownloadSpec
      *
-     * @param string $url url
+     * @param \TencentAds\Model\AppDownloadSpec $appDownloadSpec appDownloadSpec
      *
      * @return $this
      */
-    public function setUrl($url)
+    public function setAppDownloadSpec($appDownloadSpec)
     {
-        $this->container['url'] = $url;
+        $this->container['appDownloadSpec'] = $appDownloadSpec;
 
         return $this;
     }
 
     /**
-     * Gets appIosSpec
+     * Gets followSpec
      *
-     * @return \TencentAds\Model\AppIosSpec
+     * @return \TencentAds\Model\FollowSpec
      */
-    public function getAppIosSpec()
+    public function getFollowSpec()
     {
-        return $this->container['appIosSpec'];
+        return $this->container['followSpec'];
     }
 
     /**
-     * Sets appIosSpec
+     * Sets followSpec
      *
-     * @param \TencentAds\Model\AppIosSpec $appIosSpec appIosSpec
+     * @param \TencentAds\Model\FollowSpec $followSpec followSpec
      *
      * @return $this
      */
-    public function setAppIosSpec($appIosSpec)
+    public function setFollowSpec($followSpec)
     {
-        $this->container['appIosSpec'] = $appIosSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets appAndroidSpec
-     *
-     * @return \TencentAds\Model\AppAndroidSpec
-     */
-    public function getAppAndroidSpec()
-    {
-        return $this->container['appAndroidSpec'];
-    }
-
-    /**
-     * Sets appAndroidSpec
-     *
-     * @param \TencentAds\Model\AppAndroidSpec $appAndroidSpec appAndroidSpec
-     *
-     * @return $this
-     */
-    public function setAppAndroidSpec($appAndroidSpec)
-    {
-        $this->container['appAndroidSpec'] = $appAndroidSpec;
+        $this->container['followSpec'] = $followSpec;
 
         return $this;
     }
@@ -464,30 +422,6 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets followSpec
-     *
-     * @return \TencentAds\Model\FollowSpec
-     */
-    public function getFollowSpec()
-    {
-        return $this->container['followSpec'];
-    }
-
-    /**
-     * Sets followSpec
-     *
-     * @param \TencentAds\Model\FollowSpec $followSpec followSpec
-     *
-     * @return $this
-     */
-    public function setFollowSpec($followSpec)
-    {
-        $this->container['followSpec'] = $followSpec;
-
-        return $this;
-    }
-
-    /**
      * Gets serviceSpec
      *
      * @return \TencentAds\Model\ServiceSpec
@@ -531,30 +465,6 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     public function setWecomSpec($wecomSpec)
     {
         $this->container['wecomSpec'] = $wecomSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets useIcon
-     *
-     * @return int
-     */
-    public function getUseIcon()
-    {
-        return $this->container['useIcon'];
-    }
-
-    /**
-     * Sets useIcon
-     *
-     * @param int $useIcon useIcon
-     *
-     * @return $this
-     */
-    public function setUseIcon($useIcon)
-    {
-        $this->container['useIcon'] = $useIcon;
 
         return $this;
     }

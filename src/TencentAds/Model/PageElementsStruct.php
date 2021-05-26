@@ -63,6 +63,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
         'elementGoods' => '\TencentAds\Model\ElementGoods',
         'elementSwipe' => '\TencentAds\Model\ElementSwipe',
         'elementWebview' => '\TencentAds\Model\ElementWebview',
+        'elementAnimateFloat' => '\TencentAds\Model\ElementAnimateFloat',
         'imageSpec' => '\TencentAds\Model\ElementImage',
         'videoSpec' => '\TencentAds\Model\ElementVideo',
         'textSpec' => '\TencentAds\Model\ElementText',
@@ -82,6 +83,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
         'elementGoods' => null,
         'elementSwipe' => null,
         'elementWebview' => null,
+        'elementAnimateFloat' => null,
         'imageSpec' => null,
         'videoSpec' => null,
         'textSpec' => null,
@@ -122,6 +124,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
         'elementGoods' => 'element_goods',
         'elementSwipe' => 'element_swipe',
         'elementWebview' => 'element_webview',
+        'elementAnimateFloat' => 'element_animate_float',
         'imageSpec' => 'image_spec',
         'videoSpec' => 'video_spec',
         'textSpec' => 'text_spec',
@@ -141,6 +144,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
         'elementGoods' => 'setElementGoods',
         'elementSwipe' => 'setElementSwipe',
         'elementWebview' => 'setElementWebview',
+        'elementAnimateFloat' => 'setElementAnimateFloat',
         'imageSpec' => 'setImageSpec',
         'videoSpec' => 'setVideoSpec',
         'textSpec' => 'setTextSpec',
@@ -160,6 +164,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
         'elementGoods' => 'getElementGoods',
         'elementSwipe' => 'getElementSwipe',
         'elementWebview' => 'getElementWebview',
+        'elementAnimateFloat' => 'getElementAnimateFloat',
         'imageSpec' => 'getImageSpec',
         'videoSpec' => 'getVideoSpec',
         'textSpec' => 'getTextSpec',
@@ -233,6 +238,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
         $this->container['elementGoods'] = isset($data['elementGoods']) ? $data['elementGoods'] : null;
         $this->container['elementSwipe'] = isset($data['elementSwipe']) ? $data['elementSwipe'] : null;
         $this->container['elementWebview'] = isset($data['elementWebview']) ? $data['elementWebview'] : null;
+        $this->container['elementAnimateFloat'] = isset($data['elementAnimateFloat']) ? $data['elementAnimateFloat'] : null;
         $this->container['imageSpec'] = isset($data['imageSpec']) ? $data['imageSpec'] : null;
         $this->container['videoSpec'] = isset($data['videoSpec']) ? $data['videoSpec'] : null;
         $this->container['textSpec'] = isset($data['textSpec']) ? $data['textSpec'] : null;
@@ -381,6 +387,30 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     public function setElementWebview($elementWebview)
     {
         $this->container['elementWebview'] = $elementWebview;
+
+        return $this;
+    }
+
+    /**
+     * Gets elementAnimateFloat
+     *
+     * @return \TencentAds\Model\ElementAnimateFloat
+     */
+    public function getElementAnimateFloat()
+    {
+        return $this->container['elementAnimateFloat'];
+    }
+
+    /**
+     * Sets elementAnimateFloat
+     *
+     * @param \TencentAds\Model\ElementAnimateFloat $elementAnimateFloat elementAnimateFloat
+     *
+     * @return $this
+     */
+    public function setElementAnimateFloat($elementAnimateFloat)
+    {
+        $this->container['elementAnimateFloat'] = $elementAnimateFloat;
 
         return $this;
     }
