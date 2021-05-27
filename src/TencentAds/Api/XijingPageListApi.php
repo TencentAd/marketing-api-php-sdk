@@ -96,13 +96,13 @@ class XijingPageListApi
      * @param  int $pageId pageId (optional)
      * @param  string $pageServiceId pageServiceId (optional)
      * @param  string $pageName pageName (optional)
-     * @param  string $pageType pageType (optional)
+     * @param  string[] $pageType pageType (optional)
      * @param  string $pageLastModifyStartTime pageLastModifyStartTime (optional)
      * @param  string $pageLastModifyEndTime pageLastModifyEndTime (optional)
      * @param  int $pageSize pageSize (optional)
      * @param  int $pageIndex pageIndex (optional)
-     * @param  string $pagePublishStatus pagePublishStatus (optional)
-     * @param  string $pageStatus pageStatus (optional)
+     * @param  string[] $pagePublishStatus pagePublishStatus (optional)
+     * @param  string[] $pageStatus pageStatus (optional)
      * @param  string $pageSource pageSource (optional)
      * @param  int $pageOwnerId pageOwnerId (optional)
      * @param  int $appId appId (optional)
@@ -129,13 +129,13 @@ class XijingPageListApi
      * @param  int $pageId (optional)
      * @param  string $pageServiceId (optional)
      * @param  string $pageName (optional)
-     * @param  string $pageType (optional)
+     * @param  string[] $pageType (optional)
      * @param  string $pageLastModifyStartTime (optional)
      * @param  string $pageLastModifyEndTime (optional)
      * @param  int $pageSize (optional)
      * @param  int $pageIndex (optional)
-     * @param  string $pagePublishStatus (optional)
-     * @param  string $pageStatus (optional)
+     * @param  string[] $pagePublishStatus (optional)
+     * @param  string[] $pageStatus (optional)
      * @param  string $pageSource (optional)
      * @param  int $pageOwnerId (optional)
      * @param  int $appId (optional)
@@ -220,13 +220,13 @@ class XijingPageListApi
      * @param  int $pageId (optional)
      * @param  string $pageServiceId (optional)
      * @param  string $pageName (optional)
-     * @param  string $pageType (optional)
+     * @param  string[] $pageType (optional)
      * @param  string $pageLastModifyStartTime (optional)
      * @param  string $pageLastModifyEndTime (optional)
      * @param  int $pageSize (optional)
      * @param  int $pageIndex (optional)
-     * @param  string $pagePublishStatus (optional)
-     * @param  string $pageStatus (optional)
+     * @param  string[] $pagePublishStatus (optional)
+     * @param  string[] $pageStatus (optional)
      * @param  string $pageSource (optional)
      * @param  int $pageOwnerId (optional)
      * @param  int $appId (optional)
@@ -256,13 +256,13 @@ class XijingPageListApi
      * @param  int $pageId (optional)
      * @param  string $pageServiceId (optional)
      * @param  string $pageName (optional)
-     * @param  string $pageType (optional)
+     * @param  string[] $pageType (optional)
      * @param  string $pageLastModifyStartTime (optional)
      * @param  string $pageLastModifyEndTime (optional)
      * @param  int $pageSize (optional)
      * @param  int $pageIndex (optional)
-     * @param  string $pagePublishStatus (optional)
-     * @param  string $pageStatus (optional)
+     * @param  string[] $pagePublishStatus (optional)
+     * @param  string[] $pageStatus (optional)
      * @param  string $pageSource (optional)
      * @param  int $pageOwnerId (optional)
      * @param  int $appId (optional)
@@ -322,13 +322,13 @@ class XijingPageListApi
      * @param  int $pageId (optional)
      * @param  string $pageServiceId (optional)
      * @param  string $pageName (optional)
-     * @param  string $pageType (optional)
+     * @param  string[] $pageType (optional)
      * @param  string $pageLastModifyStartTime (optional)
      * @param  string $pageLastModifyEndTime (optional)
      * @param  int $pageSize (optional)
      * @param  int $pageIndex (optional)
-     * @param  string $pagePublishStatus (optional)
-     * @param  string $pageStatus (optional)
+     * @param  string[] $pagePublishStatus (optional)
+     * @param  string[] $pageStatus (optional)
      * @param  string $pageSource (optional)
      * @param  int $pageOwnerId (optional)
      * @param  int $appId (optional)
@@ -372,6 +372,9 @@ class XijingPageListApi
             $queryParams['page_name'] = ObjectSerializer::toQueryValue($pageName);
         }
         // query params
+        if (is_array($pageType)) {
+            $queryParams['page_type'] = $pageType;
+        } else
         if ($pageType !== null) {
             $queryParams['page_type'] = ObjectSerializer::toQueryValue($pageType);
         }
@@ -392,10 +395,16 @@ class XijingPageListApi
             $queryParams['page_index'] = ObjectSerializer::toQueryValue($pageIndex);
         }
         // query params
+        if (is_array($pagePublishStatus)) {
+            $queryParams['page_publish_status'] = $pagePublishStatus;
+        } else
         if ($pagePublishStatus !== null) {
             $queryParams['page_publish_status'] = ObjectSerializer::toQueryValue($pagePublishStatus);
         }
         // query params
+        if (is_array($pageStatus)) {
+            $queryParams['page_status'] = $pageStatus;
+        } else
         if ($pageStatus !== null) {
             $queryParams['page_status'] = ObjectSerializer::toQueryValue($pageStatus);
         }
