@@ -1,6 +1,6 @@
 <?php
 /**
- * XijingPageAddResponseData
+ * UpdateAdcreativeLandingPageItem
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * XijingPageAddResponseData Class Doc Comment
+ * UpdateAdcreativeLandingPageItem Class Doc Comment
  *
  * @category Class
+ * @description 修改广告创意落地页
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class XijingPageAddResponseData implements ModelInterface, ArrayAccess
+class UpdateAdcreativeLandingPageItem implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class XijingPageAddResponseData implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'XijingPageAddResponseData';
+    protected static $swaggerModelName = 'update_adcreative_landing_page_item';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,7 +58,8 @@ class XijingPageAddResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'list' => '\TencentAds\Model\CreatePageResponse[]'
+        'adcreativeId' => 'int',
+        'adCreative' => '\TencentAds\Model\TaskAdcreative'
     ];
 
     /**
@@ -66,7 +68,8 @@ class XijingPageAddResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'list' => null
+        'adcreativeId' => 'int64',
+        'adCreative' => null
     ];
 
     /**
@@ -96,7 +99,8 @@ class XijingPageAddResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'list' => 'list'
+        'adcreativeId' => 'adcreative_id',
+        'adCreative' => 'ad_creative'
     ];
 
     /**
@@ -105,7 +109,8 @@ class XijingPageAddResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'list' => 'setList'
+        'adcreativeId' => 'setAdcreativeId',
+        'adCreative' => 'setAdCreative'
     ];
 
     /**
@@ -114,7 +119,8 @@ class XijingPageAddResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'list' => 'getList'
+        'adcreativeId' => 'getAdcreativeId',
+        'adCreative' => 'getAdCreative'
     ];
 
     /**
@@ -177,7 +183,8 @@ class XijingPageAddResponseData implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
+        $this->container['adcreativeId'] = isset($data['adcreativeId']) ? $data['adcreativeId'] : null;
+        $this->container['adCreative'] = isset($data['adCreative']) ? $data['adCreative'] : null;
     }
 
     /**
@@ -205,25 +212,49 @@ class XijingPageAddResponseData implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets list
+     * Gets adcreativeId
      *
-     * @return \TencentAds\Model\CreatePageResponse[]
+     * @return int
      */
-    public function getList()
+    public function getAdcreativeId()
     {
-        return $this->container['list'];
+        return $this->container['adcreativeId'];
     }
 
     /**
-     * Sets list
+     * Sets adcreativeId
      *
-     * @param \TencentAds\Model\CreatePageResponse[] $list list
+     * @param int $adcreativeId adcreativeId
      *
      * @return $this
      */
-    public function setList($list)
+    public function setAdcreativeId($adcreativeId)
     {
-        $this->container['list'] = $list;
+        $this->container['adcreativeId'] = $adcreativeId;
+
+        return $this;
+    }
+
+    /**
+     * Gets adCreative
+     *
+     * @return \TencentAds\Model\TaskAdcreative
+     */
+    public function getAdCreative()
+    {
+        return $this->container['adCreative'];
+    }
+
+    /**
+     * Sets adCreative
+     *
+     * @param \TencentAds\Model\TaskAdcreative $adCreative adCreative
+     *
+     * @return $this
+     */
+    public function setAdCreative($adCreative)
+    {
+        $this->container['adCreative'] = $adCreative;
 
         return $this;
     }

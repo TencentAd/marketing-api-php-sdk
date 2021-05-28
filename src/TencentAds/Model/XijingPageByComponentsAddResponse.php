@@ -61,7 +61,7 @@ class XijingPageByComponentsAddResponse implements ModelInterface, ArrayAccess
         'message' => 'string',
         'messageCn' => 'string',
         'errors' => '\TencentAds\Model\ApiErrorStruct[]',
-        'data' => '\TencentAds\Model\XijingPageByComponentsAddResponseData'
+        'data' => '\TencentAds\Model\CreatePageResponse[]'
     ];
 
     /**
@@ -327,7 +327,7 @@ class XijingPageByComponentsAddResponse implements ModelInterface, ArrayAccess
     /**
      * Gets data
      *
-     * @return \TencentAds\Model\XijingPageByComponentsAddResponseData
+     * @return \TencentAds\Model\CreatePageResponse[]
      */
     public function getData()
     {
@@ -337,7 +337,7 @@ class XijingPageByComponentsAddResponse implements ModelInterface, ArrayAccess
     /**
      * Sets data
      *
-     * @param \TencentAds\Model\XijingPageByComponentsAddResponseData $data data
+     * @param \TencentAds\Model\CreatePageResponse[] $data data
      *
      * @return $this
      */

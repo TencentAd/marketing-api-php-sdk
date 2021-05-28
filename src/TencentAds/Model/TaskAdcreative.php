@@ -1,6 +1,6 @@
 <?php
 /**
- * XijingPageInteractiveAddResponseData
+ * TaskAdcreative
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * XijingPageInteractiveAddResponseData Class Doc Comment
+ * TaskAdcreative Class Doc Comment
  *
  * @category Class
+ * @description 广告创意
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class XijingPageInteractiveAddResponseData implements ModelInterface, ArrayAccess
+class TaskAdcreative implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class XijingPageInteractiveAddResponseData implements ModelInterface, ArrayAcces
       *
       * @var string
       */
-    protected static $swaggerModelName = 'XijingPageInteractiveAddResponseData';
+    protected static $swaggerModelName = 'task_adcreative';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,7 +58,8 @@ class XijingPageInteractiveAddResponseData implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'list' => '\TencentAds\Model\CreatePageResponse[]'
+        'pageType' => '\TencentAds\Model\DestinationType',
+        'pageSpec' => '\TencentAds\Model\TaskPageSpec'
     ];
 
     /**
@@ -66,7 +68,8 @@ class XijingPageInteractiveAddResponseData implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'list' => null
+        'pageType' => null,
+        'pageSpec' => null
     ];
 
     /**
@@ -96,7 +99,8 @@ class XijingPageInteractiveAddResponseData implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $attributeMap = [
-        'list' => 'list'
+        'pageType' => 'page_type',
+        'pageSpec' => 'page_spec'
     ];
 
     /**
@@ -105,7 +109,8 @@ class XijingPageInteractiveAddResponseData implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $setters = [
-        'list' => 'setList'
+        'pageType' => 'setPageType',
+        'pageSpec' => 'setPageSpec'
     ];
 
     /**
@@ -114,7 +119,8 @@ class XijingPageInteractiveAddResponseData implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $getters = [
-        'list' => 'getList'
+        'pageType' => 'getPageType',
+        'pageSpec' => 'getPageSpec'
     ];
 
     /**
@@ -177,7 +183,8 @@ class XijingPageInteractiveAddResponseData implements ModelInterface, ArrayAcces
      */
     public function __construct(array $data = null)
     {
-        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
+        $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
+        $this->container['pageSpec'] = isset($data['pageSpec']) ? $data['pageSpec'] : null;
     }
 
     /**
@@ -205,25 +212,49 @@ class XijingPageInteractiveAddResponseData implements ModelInterface, ArrayAcces
 
 
     /**
-     * Gets list
+     * Gets pageType
      *
-     * @return \TencentAds\Model\CreatePageResponse[]
+     * @return \TencentAds\Model\DestinationType
      */
-    public function getList()
+    public function getPageType()
     {
-        return $this->container['list'];
+        return $this->container['pageType'];
     }
 
     /**
-     * Sets list
+     * Sets pageType
      *
-     * @param \TencentAds\Model\CreatePageResponse[] $list list
+     * @param \TencentAds\Model\DestinationType $pageType pageType
      *
      * @return $this
      */
-    public function setList($list)
+    public function setPageType($pageType)
     {
-        $this->container['list'] = $list;
+        $this->container['pageType'] = $pageType;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageSpec
+     *
+     * @return \TencentAds\Model\TaskPageSpec
+     */
+    public function getPageSpec()
+    {
+        return $this->container['pageSpec'];
+    }
+
+    /**
+     * Sets pageSpec
+     *
+     * @param \TencentAds\Model\TaskPageSpec $pageSpec pageSpec
+     *
+     * @return $this
+     */
+    public function setPageSpec($pageSpec)
+    {
+        $this->container['pageSpec'] = $pageSpec;
 
         return $this;
     }

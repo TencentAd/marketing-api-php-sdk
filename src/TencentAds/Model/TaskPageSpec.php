@@ -1,6 +1,6 @@
 <?php
 /**
- * WildcardsGetResponseData
+ * TaskPageSpec
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * WildcardsGetResponseData Class Doc Comment
+ * TaskPageSpec Class Doc Comment
  *
  * @category Class
+ * @description 落地页信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class WildcardsGetResponseData implements ModelInterface, ArrayAccess
+class TaskPageSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class WildcardsGetResponseData implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'WildcardsGetResponseData';
+    protected static $swaggerModelName = 'task_page_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,7 +58,9 @@ class WildcardsGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'list' => '\TencentAds\Model\WildcardsGetListStruct[]'
+        'pageId' => 'int',
+        'pageUrl' => 'string',
+        'overrideCanvasHeadOption' => '\TencentAds\Model\OverrideCanvasHeadOption'
     ];
 
     /**
@@ -66,7 +69,9 @@ class WildcardsGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'list' => null
+        'pageId' => 'int64',
+        'pageUrl' => null,
+        'overrideCanvasHeadOption' => null
     ];
 
     /**
@@ -96,7 +101,9 @@ class WildcardsGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'list' => 'list'
+        'pageId' => 'page_id',
+        'pageUrl' => 'page_url',
+        'overrideCanvasHeadOption' => 'override_canvas_head_option'
     ];
 
     /**
@@ -105,7 +112,9 @@ class WildcardsGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'list' => 'setList'
+        'pageId' => 'setPageId',
+        'pageUrl' => 'setPageUrl',
+        'overrideCanvasHeadOption' => 'setOverrideCanvasHeadOption'
     ];
 
     /**
@@ -114,7 +123,9 @@ class WildcardsGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'list' => 'getList'
+        'pageId' => 'getPageId',
+        'pageUrl' => 'getPageUrl',
+        'overrideCanvasHeadOption' => 'getOverrideCanvasHeadOption'
     ];
 
     /**
@@ -177,7 +188,9 @@ class WildcardsGetResponseData implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
+        $this->container['pageId'] = isset($data['pageId']) ? $data['pageId'] : null;
+        $this->container['pageUrl'] = isset($data['pageUrl']) ? $data['pageUrl'] : null;
+        $this->container['overrideCanvasHeadOption'] = isset($data['overrideCanvasHeadOption']) ? $data['overrideCanvasHeadOption'] : null;
     }
 
     /**
@@ -205,25 +218,73 @@ class WildcardsGetResponseData implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets list
+     * Gets pageId
      *
-     * @return \TencentAds\Model\WildcardsGetListStruct[]
+     * @return int
      */
-    public function getList()
+    public function getPageId()
     {
-        return $this->container['list'];
+        return $this->container['pageId'];
     }
 
     /**
-     * Sets list
+     * Sets pageId
      *
-     * @param \TencentAds\Model\WildcardsGetListStruct[] $list list
+     * @param int $pageId pageId
      *
      * @return $this
      */
-    public function setList($list)
+    public function setPageId($pageId)
     {
-        $this->container['list'] = $list;
+        $this->container['pageId'] = $pageId;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageUrl
+     *
+     * @return string
+     */
+    public function getPageUrl()
+    {
+        return $this->container['pageUrl'];
+    }
+
+    /**
+     * Sets pageUrl
+     *
+     * @param string $pageUrl pageUrl
+     *
+     * @return $this
+     */
+    public function setPageUrl($pageUrl)
+    {
+        $this->container['pageUrl'] = $pageUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets overrideCanvasHeadOption
+     *
+     * @return \TencentAds\Model\OverrideCanvasHeadOption
+     */
+    public function getOverrideCanvasHeadOption()
+    {
+        return $this->container['overrideCanvasHeadOption'];
+    }
+
+    /**
+     * Sets overrideCanvasHeadOption
+     *
+     * @param \TencentAds\Model\OverrideCanvasHeadOption $overrideCanvasHeadOption overrideCanvasHeadOption
+     *
+     * @return $this
+     */
+    public function setOverrideCanvasHeadOption($overrideCanvasHeadOption)
+    {
+        $this->container['overrideCanvasHeadOption'] = $overrideCanvasHeadOption;
 
         return $this;
     }

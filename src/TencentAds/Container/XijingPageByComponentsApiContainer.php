@@ -30,7 +30,7 @@ class XijingPageByComponentsApiContainer extends ApiContainer
     /**
      * Handle XijingPageByComponentsApi xijingPageByComponentsAdd function
      * @param array params
-     * @return \TencentAds\Model\XijingPageByComponentsAddResponseData
+     * @return \TencentAds\Model\CreatePageResponse[]
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

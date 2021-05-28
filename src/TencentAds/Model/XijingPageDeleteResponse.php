@@ -61,7 +61,7 @@ class XijingPageDeleteResponse implements ModelInterface, ArrayAccess
         'message' => 'string',
         'messageCn' => 'string',
         'errors' => '\TencentAds\Model\ApiErrorStruct[]',
-        'data' => '\TencentAds\Model\XijingPageDeleteResponseData'
+        'data' => '\TencentAds\Model\PageOperateResponses[]'
     ];
 
     /**
@@ -327,7 +327,7 @@ class XijingPageDeleteResponse implements ModelInterface, ArrayAccess
     /**
      * Gets data
      *
-     * @return \TencentAds\Model\XijingPageDeleteResponseData
+     * @return \TencentAds\Model\PageOperateResponses[]
      */
     public function getData()
     {
@@ -337,7 +337,7 @@ class XijingPageDeleteResponse implements ModelInterface, ArrayAccess
     /**
      * Sets data
      *
-     * @param \TencentAds\Model\XijingPageDeleteResponseData $data data
+     * @param \TencentAds\Model\PageOperateResponses[] $data data
      *
      * @return $this
      */

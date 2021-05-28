@@ -4,7 +4,6 @@ namespace TencentAds\Kernel;
 use GuzzleHttp\Client;
 use TencentAds\Container\AdDiagnosisApiContainer;
 use TencentAds\Container\AdLabelApiContainer;
-use TencentAds\Container\AdParamApiContainer;
 use TencentAds\Container\AdcreativePreviewsApiContainer;
 use TencentAds\Container\AdcreativeTemplateDetailApiContainer;
 use TencentAds\Container\AdcreativeTemplatePreviewApiContainer;
@@ -137,7 +136,6 @@ use TencentAds\Container\WechatPagesCsgrouplistApiContainer;
 use TencentAds\Container\WechatPagesCustomApiContainer;
 use TencentAds\Container\WechatPagesGrantinfoApiContainer;
 use TencentAds\Container\WechatQualificationsApiContainer;
-use TencentAds\Container\WildcardsApiContainer;
 use TencentAds\Container\XijingPageApiContainer;
 use TencentAds\Container\XijingPageByComponentsApiContainer;
 use TencentAds\Container\XijingPageInteractiveApiContainer;
@@ -154,9 +152,6 @@ class App
 
     /** @var AdLabelApiContainer */
     public $adLabelApiContainer;
-
-    /** @var AdParamApiContainer */
-    public $adParamApiContainer;
 
     /** @var AdcreativePreviewsApiContainer */
     public $adcreativePreviewsApiContainer;
@@ -554,9 +549,6 @@ class App
     /** @var WechatQualificationsApiContainer */
     public $wechatQualificationsApiContainer;
 
-    /** @var WildcardsApiContainer */
-    public $wildcardsApiContainer;
-
     /** @var XijingPageApiContainer */
     public $xijingPageApiContainer;
 
@@ -610,20 +602,6 @@ class App
             $this->adLabelApiContainer = $container;
         }
         return $this->adLabelApiContainer;
-    }
-
-
-    /**
-     * @return AdParamApiContainer
-     */
-    public function adParam()
-    {
-        if (empty($this->adParamApiContainer)) {
-            $container = new AdParamApiContainer();
-            $container->init($this, $this->getClient());
-            $this->adParamApiContainer = $container;
-        }
-        return $this->adParamApiContainer;
     }
 
 
@@ -2472,20 +2450,6 @@ class App
             $this->wechatQualificationsApiContainer = $container;
         }
         return $this->wechatQualificationsApiContainer;
-    }
-
-
-    /**
-     * @return WildcardsApiContainer
-     */
-    public function wildcards()
-    {
-        if (empty($this->wildcardsApiContainer)) {
-            $container = new WildcardsApiContainer();
-            $container->init($this, $this->getClient());
-            $this->wildcardsApiContainer = $container;
-        }
-        return $this->wildcardsApiContainer;
     }
 
 
