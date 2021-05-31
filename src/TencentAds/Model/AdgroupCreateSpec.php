@@ -60,10 +60,14 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'adgroupName' => 'string',
         'beginDate' => 'string',
+        'endDate' => 'string',
+        'optimizationGoal' => '\TencentAds\Model\OptimizationGoal',
+        'totalBudget' => 'int',
         'targeting' => '\TencentAds\Model\DpWriteTargetingSetting',
         'poiList' => 'string[]',
+        'poiRadius' => 'int',
         'packageLevel' => '\TencentAds\Model\PackageLevel',
-        'coldStartAudience' => 'int[]'
+        'localBusinessMode' => '\TencentAds\Model\EcoLocalBusinessMode'
     ];
 
     /**
@@ -74,10 +78,14 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'adgroupName' => null,
         'beginDate' => null,
+        'endDate' => null,
+        'optimizationGoal' => null,
+        'totalBudget' => 'int64',
         'targeting' => null,
         'poiList' => null,
+        'poiRadius' => 'int64',
         'packageLevel' => null,
-        'coldStartAudience' => 'int64'
+        'localBusinessMode' => null
     ];
 
     /**
@@ -109,10 +117,14 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'adgroupName' => 'adgroup_name',
         'beginDate' => 'begin_date',
+        'endDate' => 'end_date',
+        'optimizationGoal' => 'optimization_goal',
+        'totalBudget' => 'total_budget',
         'targeting' => 'targeting',
         'poiList' => 'poi_list',
+        'poiRadius' => 'poi_radius',
         'packageLevel' => 'package_level',
-        'coldStartAudience' => 'cold_start_audience'
+        'localBusinessMode' => 'local_business_mode'
     ];
 
     /**
@@ -123,10 +135,14 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     protected static $setters = [
         'adgroupName' => 'setAdgroupName',
         'beginDate' => 'setBeginDate',
+        'endDate' => 'setEndDate',
+        'optimizationGoal' => 'setOptimizationGoal',
+        'totalBudget' => 'setTotalBudget',
         'targeting' => 'setTargeting',
         'poiList' => 'setPoiList',
+        'poiRadius' => 'setPoiRadius',
         'packageLevel' => 'setPackageLevel',
-        'coldStartAudience' => 'setColdStartAudience'
+        'localBusinessMode' => 'setLocalBusinessMode'
     ];
 
     /**
@@ -137,10 +153,14 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     protected static $getters = [
         'adgroupName' => 'getAdgroupName',
         'beginDate' => 'getBeginDate',
+        'endDate' => 'getEndDate',
+        'optimizationGoal' => 'getOptimizationGoal',
+        'totalBudget' => 'getTotalBudget',
         'targeting' => 'getTargeting',
         'poiList' => 'getPoiList',
+        'poiRadius' => 'getPoiRadius',
         'packageLevel' => 'getPackageLevel',
-        'coldStartAudience' => 'getColdStartAudience'
+        'localBusinessMode' => 'getLocalBusinessMode'
     ];
 
     /**
@@ -205,10 +225,14 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     {
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['beginDate'] = isset($data['beginDate']) ? $data['beginDate'] : null;
+        $this->container['endDate'] = isset($data['endDate']) ? $data['endDate'] : null;
+        $this->container['optimizationGoal'] = isset($data['optimizationGoal']) ? $data['optimizationGoal'] : null;
+        $this->container['totalBudget'] = isset($data['totalBudget']) ? $data['totalBudget'] : null;
         $this->container['targeting'] = isset($data['targeting']) ? $data['targeting'] : null;
         $this->container['poiList'] = isset($data['poiList']) ? $data['poiList'] : null;
+        $this->container['poiRadius'] = isset($data['poiRadius']) ? $data['poiRadius'] : null;
         $this->container['packageLevel'] = isset($data['packageLevel']) ? $data['packageLevel'] : null;
-        $this->container['coldStartAudience'] = isset($data['coldStartAudience']) ? $data['coldStartAudience'] : null;
+        $this->container['localBusinessMode'] = isset($data['localBusinessMode']) ? $data['localBusinessMode'] : null;
     }
 
     /**
@@ -284,6 +308,78 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets endDate
+     *
+     * @return string
+     */
+    public function getEndDate()
+    {
+        return $this->container['endDate'];
+    }
+
+    /**
+     * Sets endDate
+     *
+     * @param string $endDate endDate
+     *
+     * @return $this
+     */
+    public function setEndDate($endDate)
+    {
+        $this->container['endDate'] = $endDate;
+
+        return $this;
+    }
+
+    /**
+     * Gets optimizationGoal
+     *
+     * @return \TencentAds\Model\OptimizationGoal
+     */
+    public function getOptimizationGoal()
+    {
+        return $this->container['optimizationGoal'];
+    }
+
+    /**
+     * Sets optimizationGoal
+     *
+     * @param \TencentAds\Model\OptimizationGoal $optimizationGoal optimizationGoal
+     *
+     * @return $this
+     */
+    public function setOptimizationGoal($optimizationGoal)
+    {
+        $this->container['optimizationGoal'] = $optimizationGoal;
+
+        return $this;
+    }
+
+    /**
+     * Gets totalBudget
+     *
+     * @return int
+     */
+    public function getTotalBudget()
+    {
+        return $this->container['totalBudget'];
+    }
+
+    /**
+     * Sets totalBudget
+     *
+     * @param int $totalBudget totalBudget
+     *
+     * @return $this
+     */
+    public function setTotalBudget($totalBudget)
+    {
+        $this->container['totalBudget'] = $totalBudget;
+
+        return $this;
+    }
+
+    /**
      * Gets targeting
      *
      * @return \TencentAds\Model\DpWriteTargetingSetting
@@ -332,6 +428,30 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets poiRadius
+     *
+     * @return int
+     */
+    public function getPoiRadius()
+    {
+        return $this->container['poiRadius'];
+    }
+
+    /**
+     * Sets poiRadius
+     *
+     * @param int $poiRadius poiRadius
+     *
+     * @return $this
+     */
+    public function setPoiRadius($poiRadius)
+    {
+        $this->container['poiRadius'] = $poiRadius;
+
+        return $this;
+    }
+
+    /**
      * Gets packageLevel
      *
      * @return \TencentAds\Model\PackageLevel
@@ -356,25 +476,25 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets coldStartAudience
+     * Gets localBusinessMode
      *
-     * @return int[]
+     * @return \TencentAds\Model\EcoLocalBusinessMode
      */
-    public function getColdStartAudience()
+    public function getLocalBusinessMode()
     {
-        return $this->container['coldStartAudience'];
+        return $this->container['localBusinessMode'];
     }
 
     /**
-     * Sets coldStartAudience
+     * Sets localBusinessMode
      *
-     * @param int[] $coldStartAudience coldStartAudience
+     * @param \TencentAds\Model\EcoLocalBusinessMode $localBusinessMode localBusinessMode
      *
      * @return $this
      */
-    public function setColdStartAudience($coldStartAudience)
+    public function setLocalBusinessMode($localBusinessMode)
     {
-        $this->container['coldStartAudience'] = $coldStartAudience;
+        $this->container['localBusinessMode'] = $localBusinessMode;
 
         return $this;
     }

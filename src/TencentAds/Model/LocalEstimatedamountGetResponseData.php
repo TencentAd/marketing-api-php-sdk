@@ -57,8 +57,11 @@ class LocalEstimatedamountGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'estimatedViews' => 'int',
-        'estimatedCouponAmount' => 'int'
+        'minEstimatedExposure' => 'int',
+        'maxEstimatedExposure' => 'int',
+        'minEstimatedConv' => 'int',
+        'maxEstimatedConv' => 'int',
+        'suggestion' => 'string'
     ];
 
     /**
@@ -67,8 +70,11 @@ class LocalEstimatedamountGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'estimatedViews' => 'int64',
-        'estimatedCouponAmount' => 'int64'
+        'minEstimatedExposure' => 'int64',
+        'maxEstimatedExposure' => 'int64',
+        'minEstimatedConv' => 'int64',
+        'maxEstimatedConv' => 'int64',
+        'suggestion' => null
     ];
 
     /**
@@ -98,8 +104,11 @@ class LocalEstimatedamountGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'estimatedViews' => 'estimated_views',
-        'estimatedCouponAmount' => 'estimated_coupon_amount'
+        'minEstimatedExposure' => 'min_estimated_exposure',
+        'maxEstimatedExposure' => 'max_estimated_exposure',
+        'minEstimatedConv' => 'min_estimated_conv',
+        'maxEstimatedConv' => 'max_estimated_conv',
+        'suggestion' => 'suggestion'
     ];
 
     /**
@@ -108,8 +117,11 @@ class LocalEstimatedamountGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'estimatedViews' => 'setEstimatedViews',
-        'estimatedCouponAmount' => 'setEstimatedCouponAmount'
+        'minEstimatedExposure' => 'setMinEstimatedExposure',
+        'maxEstimatedExposure' => 'setMaxEstimatedExposure',
+        'minEstimatedConv' => 'setMinEstimatedConv',
+        'maxEstimatedConv' => 'setMaxEstimatedConv',
+        'suggestion' => 'setSuggestion'
     ];
 
     /**
@@ -118,8 +130,11 @@ class LocalEstimatedamountGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'estimatedViews' => 'getEstimatedViews',
-        'estimatedCouponAmount' => 'getEstimatedCouponAmount'
+        'minEstimatedExposure' => 'getMinEstimatedExposure',
+        'maxEstimatedExposure' => 'getMaxEstimatedExposure',
+        'minEstimatedConv' => 'getMinEstimatedConv',
+        'maxEstimatedConv' => 'getMaxEstimatedConv',
+        'suggestion' => 'getSuggestion'
     ];
 
     /**
@@ -182,8 +197,11 @@ class LocalEstimatedamountGetResponseData implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['estimatedViews'] = isset($data['estimatedViews']) ? $data['estimatedViews'] : null;
-        $this->container['estimatedCouponAmount'] = isset($data['estimatedCouponAmount']) ? $data['estimatedCouponAmount'] : null;
+        $this->container['minEstimatedExposure'] = isset($data['minEstimatedExposure']) ? $data['minEstimatedExposure'] : null;
+        $this->container['maxEstimatedExposure'] = isset($data['maxEstimatedExposure']) ? $data['maxEstimatedExposure'] : null;
+        $this->container['minEstimatedConv'] = isset($data['minEstimatedConv']) ? $data['minEstimatedConv'] : null;
+        $this->container['maxEstimatedConv'] = isset($data['maxEstimatedConv']) ? $data['maxEstimatedConv'] : null;
+        $this->container['suggestion'] = isset($data['suggestion']) ? $data['suggestion'] : null;
     }
 
     /**
@@ -211,49 +229,121 @@ class LocalEstimatedamountGetResponseData implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets estimatedViews
+     * Gets minEstimatedExposure
      *
      * @return int
      */
-    public function getEstimatedViews()
+    public function getMinEstimatedExposure()
     {
-        return $this->container['estimatedViews'];
+        return $this->container['minEstimatedExposure'];
     }
 
     /**
-     * Sets estimatedViews
+     * Sets minEstimatedExposure
      *
-     * @param int $estimatedViews estimatedViews
+     * @param int $minEstimatedExposure minEstimatedExposure
      *
      * @return $this
      */
-    public function setEstimatedViews($estimatedViews)
+    public function setMinEstimatedExposure($minEstimatedExposure)
     {
-        $this->container['estimatedViews'] = $estimatedViews;
+        $this->container['minEstimatedExposure'] = $minEstimatedExposure;
 
         return $this;
     }
 
     /**
-     * Gets estimatedCouponAmount
+     * Gets maxEstimatedExposure
      *
      * @return int
      */
-    public function getEstimatedCouponAmount()
+    public function getMaxEstimatedExposure()
     {
-        return $this->container['estimatedCouponAmount'];
+        return $this->container['maxEstimatedExposure'];
     }
 
     /**
-     * Sets estimatedCouponAmount
+     * Sets maxEstimatedExposure
      *
-     * @param int $estimatedCouponAmount estimatedCouponAmount
+     * @param int $maxEstimatedExposure maxEstimatedExposure
      *
      * @return $this
      */
-    public function setEstimatedCouponAmount($estimatedCouponAmount)
+    public function setMaxEstimatedExposure($maxEstimatedExposure)
     {
-        $this->container['estimatedCouponAmount'] = $estimatedCouponAmount;
+        $this->container['maxEstimatedExposure'] = $maxEstimatedExposure;
+
+        return $this;
+    }
+
+    /**
+     * Gets minEstimatedConv
+     *
+     * @return int
+     */
+    public function getMinEstimatedConv()
+    {
+        return $this->container['minEstimatedConv'];
+    }
+
+    /**
+     * Sets minEstimatedConv
+     *
+     * @param int $minEstimatedConv minEstimatedConv
+     *
+     * @return $this
+     */
+    public function setMinEstimatedConv($minEstimatedConv)
+    {
+        $this->container['minEstimatedConv'] = $minEstimatedConv;
+
+        return $this;
+    }
+
+    /**
+     * Gets maxEstimatedConv
+     *
+     * @return int
+     */
+    public function getMaxEstimatedConv()
+    {
+        return $this->container['maxEstimatedConv'];
+    }
+
+    /**
+     * Sets maxEstimatedConv
+     *
+     * @param int $maxEstimatedConv maxEstimatedConv
+     *
+     * @return $this
+     */
+    public function setMaxEstimatedConv($maxEstimatedConv)
+    {
+        $this->container['maxEstimatedConv'] = $maxEstimatedConv;
+
+        return $this;
+    }
+
+    /**
+     * Gets suggestion
+     *
+     * @return string
+     */
+    public function getSuggestion()
+    {
+        return $this->container['suggestion'];
+    }
+
+    /**
+     * Sets suggestion
+     *
+     * @param string $suggestion suggestion
+     *
+     * @return $this
+     */
+    public function setSuggestion($suggestion)
+    {
+        $this->container['suggestion'] = $suggestion;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * AdCreativeUpdateSpec
+ * DpAlitaPageSpec
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AdCreativeUpdateSpec Class Doc Comment
+ * DpAlitaPageSpec Class Doc Comment
  *
  * @category Class
- * @description 广告创意结构
+ * @description 微信小程序原生页
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
+class DpAlitaPageSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'ad_creative_update_spec';
+    protected static $swaggerModelName = 'dp_alita_page_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,10 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adcreativeName' => 'string',
-        'adcreativeElements' => '\TencentAds\Model\DpAdcreativeCreativeElementsMp',
-        'pageSpec' => '\TencentAds\Model\DpPageSpec'
+        'buttonTips' => 'string',
+        'couponTitle' => 'string',
+        'beginDate' => 'string',
+        'endDate' => 'string'
     ];
 
     /**
@@ -69,9 +70,10 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adcreativeName' => null,
-        'adcreativeElements' => null,
-        'pageSpec' => null
+        'buttonTips' => null,
+        'couponTitle' => null,
+        'beginDate' => null,
+        'endDate' => null
     ];
 
     /**
@@ -101,9 +103,10 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adcreativeName' => 'adcreative_name',
-        'adcreativeElements' => 'adcreative_elements',
-        'pageSpec' => 'page_spec'
+        'buttonTips' => 'button_tips',
+        'couponTitle' => 'coupon_title',
+        'beginDate' => 'begin_date',
+        'endDate' => 'end_date'
     ];
 
     /**
@@ -112,9 +115,10 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adcreativeName' => 'setAdcreativeName',
-        'adcreativeElements' => 'setAdcreativeElements',
-        'pageSpec' => 'setPageSpec'
+        'buttonTips' => 'setButtonTips',
+        'couponTitle' => 'setCouponTitle',
+        'beginDate' => 'setBeginDate',
+        'endDate' => 'setEndDate'
     ];
 
     /**
@@ -123,9 +127,10 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adcreativeName' => 'getAdcreativeName',
-        'adcreativeElements' => 'getAdcreativeElements',
-        'pageSpec' => 'getPageSpec'
+        'buttonTips' => 'getButtonTips',
+        'couponTitle' => 'getCouponTitle',
+        'beginDate' => 'getBeginDate',
+        'endDate' => 'getEndDate'
     ];
 
     /**
@@ -188,9 +193,10 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['adcreativeName'] = isset($data['adcreativeName']) ? $data['adcreativeName'] : null;
-        $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
-        $this->container['pageSpec'] = isset($data['pageSpec']) ? $data['pageSpec'] : null;
+        $this->container['buttonTips'] = isset($data['buttonTips']) ? $data['buttonTips'] : null;
+        $this->container['couponTitle'] = isset($data['couponTitle']) ? $data['couponTitle'] : null;
+        $this->container['beginDate'] = isset($data['beginDate']) ? $data['beginDate'] : null;
+        $this->container['endDate'] = isset($data['endDate']) ? $data['endDate'] : null;
     }
 
     /**
@@ -218,73 +224,97 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets adcreativeName
+     * Gets buttonTips
      *
      * @return string
      */
-    public function getAdcreativeName()
+    public function getButtonTips()
     {
-        return $this->container['adcreativeName'];
+        return $this->container['buttonTips'];
     }
 
     /**
-     * Sets adcreativeName
+     * Sets buttonTips
      *
-     * @param string $adcreativeName adcreativeName
+     * @param string $buttonTips buttonTips
      *
      * @return $this
      */
-    public function setAdcreativeName($adcreativeName)
+    public function setButtonTips($buttonTips)
     {
-        $this->container['adcreativeName'] = $adcreativeName;
+        $this->container['buttonTips'] = $buttonTips;
 
         return $this;
     }
 
     /**
-     * Gets adcreativeElements
+     * Gets couponTitle
      *
-     * @return \TencentAds\Model\DpAdcreativeCreativeElementsMp
+     * @return string
      */
-    public function getAdcreativeElements()
+    public function getCouponTitle()
     {
-        return $this->container['adcreativeElements'];
+        return $this->container['couponTitle'];
     }
 
     /**
-     * Sets adcreativeElements
+     * Sets couponTitle
      *
-     * @param \TencentAds\Model\DpAdcreativeCreativeElementsMp $adcreativeElements adcreativeElements
+     * @param string $couponTitle couponTitle
      *
      * @return $this
      */
-    public function setAdcreativeElements($adcreativeElements)
+    public function setCouponTitle($couponTitle)
     {
-        $this->container['adcreativeElements'] = $adcreativeElements;
+        $this->container['couponTitle'] = $couponTitle;
 
         return $this;
     }
 
     /**
-     * Gets pageSpec
+     * Gets beginDate
      *
-     * @return \TencentAds\Model\DpPageSpec
+     * @return string
      */
-    public function getPageSpec()
+    public function getBeginDate()
     {
-        return $this->container['pageSpec'];
+        return $this->container['beginDate'];
     }
 
     /**
-     * Sets pageSpec
+     * Sets beginDate
      *
-     * @param \TencentAds\Model\DpPageSpec $pageSpec pageSpec
+     * @param string $beginDate beginDate
      *
      * @return $this
      */
-    public function setPageSpec($pageSpec)
+    public function setBeginDate($beginDate)
     {
-        $this->container['pageSpec'] = $pageSpec;
+        $this->container['beginDate'] = $beginDate;
+
+        return $this;
+    }
+
+    /**
+     * Gets endDate
+     *
+     * @return string
+     */
+    public function getEndDate()
+    {
+        return $this->container['endDate'];
+    }
+
+    /**
+     * Sets endDate
+     *
+     * @param string $endDate endDate
+     *
+     * @return $this
+     */
+    public function setEndDate($endDate)
+    {
+        $this->container['endDate'] = $endDate;
 
         return $this;
     }

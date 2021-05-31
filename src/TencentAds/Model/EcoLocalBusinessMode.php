@@ -1,6 +1,6 @@
 <?php
 /**
- * PackageLevel
+ * EcoLocalBusinessMode
  *
  * PHP version 5
  *
@@ -31,23 +31,23 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PackageLevel Class Doc Comment
+ * EcoLocalBusinessMode Class Doc Comment
  *
  * @category Class
- * @description 套餐等级, 设置总预算和广告结束时间后该字段可不填
+ * @description 附近推模式
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PackageLevel
+class EcoLocalBusinessMode
 {
     /**
      * Possible values of this enum
      */
-    const UNKNOWN = 'PACKAGE_LEVEL_UNKNOWN';
-    const _2000 = 'PACKAGE_LEVEL_2000';
-    const _5000 = 'PACKAGE_LEVEL_5000';
-    const _9000 = 'PACKAGE_LEVEL_9000';
+    const _DEFAULT = 'LOCAL_BUSINESS_MODE_DEFAULT';
+    const LEADS_COUPON = 'LOCAL_BUSINESS_MODE_LEADS_COUPON';
+    const LEADS_RESERVATION = 'LOCAL_BUSINESS_MODE_LEADS_RESERVATION';
+    const SHOP_VOUCHER = 'LOCAL_BUSINESS_MODE_SHOP_VOUCHER';
     
     /**
      * Gets allowable values of the enum
@@ -56,10 +56,10 @@ class PackageLevel
     public static function getAllowableEnumValues()
     {
         return [
-            self::UNKNOWN,
-            self::_2000,
-            self::_5000,
-            self::_9000,
+            self::_DEFAULT,
+            self::LEADS_COUPON,
+            self::LEADS_RESERVATION,
+            self::SHOP_VOUCHER,
         ];
     }
 }

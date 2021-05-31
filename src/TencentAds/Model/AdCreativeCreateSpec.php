@@ -61,9 +61,7 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
         'adcreativeName' => 'string',
         'adcreativeElements' => '\TencentAds\Model\DpAdcreativeCreativeElementsMp',
         'pageType' => '\TencentAds\Model\DestinationType',
-        'pageSpec' => '\TencentAds\Model\DpPageSpec',
-        'buttonTips' => 'string',
-        'couponTitle' => 'string'
+        'pageSpec' => '\TencentAds\Model\DpPageSpec'
     ];
 
     /**
@@ -75,9 +73,7 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
         'adcreativeName' => null,
         'adcreativeElements' => null,
         'pageType' => null,
-        'pageSpec' => null,
-        'buttonTips' => null,
-        'couponTitle' => null
+        'pageSpec' => null
     ];
 
     /**
@@ -110,9 +106,7 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
         'adcreativeName' => 'adcreative_name',
         'adcreativeElements' => 'adcreative_elements',
         'pageType' => 'page_type',
-        'pageSpec' => 'page_spec',
-        'buttonTips' => 'button_tips',
-        'couponTitle' => 'coupon_title'
+        'pageSpec' => 'page_spec'
     ];
 
     /**
@@ -124,9 +118,7 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
         'adcreativeName' => 'setAdcreativeName',
         'adcreativeElements' => 'setAdcreativeElements',
         'pageType' => 'setPageType',
-        'pageSpec' => 'setPageSpec',
-        'buttonTips' => 'setButtonTips',
-        'couponTitle' => 'setCouponTitle'
+        'pageSpec' => 'setPageSpec'
     ];
 
     /**
@@ -138,9 +130,7 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
         'adcreativeName' => 'getAdcreativeName',
         'adcreativeElements' => 'getAdcreativeElements',
         'pageType' => 'getPageType',
-        'pageSpec' => 'getPageSpec',
-        'buttonTips' => 'getButtonTips',
-        'couponTitle' => 'getCouponTitle'
+        'pageSpec' => 'getPageSpec'
     ];
 
     /**
@@ -207,8 +197,6 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
         $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
         $this->container['pageSpec'] = isset($data['pageSpec']) ? $data['pageSpec'] : null;
-        $this->container['buttonTips'] = isset($data['buttonTips']) ? $data['buttonTips'] : null;
-        $this->container['couponTitle'] = isset($data['couponTitle']) ? $data['couponTitle'] : null;
     }
 
     /**
@@ -327,54 +315,6 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
     public function setPageSpec($pageSpec)
     {
         $this->container['pageSpec'] = $pageSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets buttonTips
-     *
-     * @return string
-     */
-    public function getButtonTips()
-    {
-        return $this->container['buttonTips'];
-    }
-
-    /**
-     * Sets buttonTips
-     *
-     * @param string $buttonTips buttonTips
-     *
-     * @return $this
-     */
-    public function setButtonTips($buttonTips)
-    {
-        $this->container['buttonTips'] = $buttonTips;
-
-        return $this;
-    }
-
-    /**
-     * Gets couponTitle
-     *
-     * @return string
-     */
-    public function getCouponTitle()
-    {
-        return $this->container['couponTitle'];
-    }
-
-    /**
-     * Sets couponTitle
-     *
-     * @param string $couponTitle couponTitle
-     *
-     * @return $this
-     */
-    public function setCouponTitle($couponTitle)
-    {
-        $this->container['couponTitle'] = $couponTitle;
 
         return $this;
     }

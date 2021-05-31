@@ -65,7 +65,17 @@ class MetricDetailData implements ModelInterface, ArrayAccess
         'canvasCpnCouponsUsePv' => 'int',
         'purchase' => 'int',
         'promotionClaimOfferPv' => 'int',
-        'pageVisitStorePv' => 'int'
+        'pageVisitStorePv' => 'int',
+        'weappExpPv' => 'int',
+        'promotionClaimOfferCost' => 'int',
+        'pageVisitStoreAmount' => 'int',
+        'buyCouponsPv' => 'int',
+        'buyCouponsCost' => 'int',
+        'questReservationUv' => 'int',
+        'cvsExpPv' => 'int',
+        'cvsExpCost' => 'int',
+        'weappExpCost' => 'int',
+        'questReservationUvCost' => 'int'
     ];
 
     /**
@@ -81,7 +91,17 @@ class MetricDetailData implements ModelInterface, ArrayAccess
         'canvasCpnCouponsUsePv' => 'int64',
         'purchase' => 'int64',
         'promotionClaimOfferPv' => 'int64',
-        'pageVisitStorePv' => 'int64'
+        'pageVisitStorePv' => 'int64',
+        'weappExpPv' => 'int64',
+        'promotionClaimOfferCost' => 'int64',
+        'pageVisitStoreAmount' => 'int64',
+        'buyCouponsPv' => 'int64',
+        'buyCouponsCost' => 'int64',
+        'questReservationUv' => 'int64',
+        'cvsExpPv' => 'int64',
+        'cvsExpCost' => 'int64',
+        'weappExpCost' => 'int64',
+        'questReservationUvCost' => 'int64'
     ];
 
     /**
@@ -118,7 +138,17 @@ class MetricDetailData implements ModelInterface, ArrayAccess
         'canvasCpnCouponsUsePv' => 'canvas_cpn_coupons_use_pv',
         'purchase' => 'purchase',
         'promotionClaimOfferPv' => 'promotion_claim_offer_pv',
-        'pageVisitStorePv' => 'page_visit_store_pv'
+        'pageVisitStorePv' => 'page_visit_store_pv',
+        'weappExpPv' => 'weapp_exp_pv',
+        'promotionClaimOfferCost' => 'promotion_claim_offer_cost',
+        'pageVisitStoreAmount' => 'page_visit_store_amount',
+        'buyCouponsPv' => 'buy_coupons_pv',
+        'buyCouponsCost' => 'buy_coupons_cost',
+        'questReservationUv' => 'quest_reservation_uv',
+        'cvsExpPv' => 'cvs_exp_pv',
+        'cvsExpCost' => 'cvs_exp_cost',
+        'weappExpCost' => 'weapp_exp_cost',
+        'questReservationUvCost' => 'quest_reservation_uv_cost'
     ];
 
     /**
@@ -134,7 +164,17 @@ class MetricDetailData implements ModelInterface, ArrayAccess
         'canvasCpnCouponsUsePv' => 'setCanvasCpnCouponsUsePv',
         'purchase' => 'setPurchase',
         'promotionClaimOfferPv' => 'setPromotionClaimOfferPv',
-        'pageVisitStorePv' => 'setPageVisitStorePv'
+        'pageVisitStorePv' => 'setPageVisitStorePv',
+        'weappExpPv' => 'setWeappExpPv',
+        'promotionClaimOfferCost' => 'setPromotionClaimOfferCost',
+        'pageVisitStoreAmount' => 'setPageVisitStoreAmount',
+        'buyCouponsPv' => 'setBuyCouponsPv',
+        'buyCouponsCost' => 'setBuyCouponsCost',
+        'questReservationUv' => 'setQuestReservationUv',
+        'cvsExpPv' => 'setCvsExpPv',
+        'cvsExpCost' => 'setCvsExpCost',
+        'weappExpCost' => 'setWeappExpCost',
+        'questReservationUvCost' => 'setQuestReservationUvCost'
     ];
 
     /**
@@ -150,7 +190,17 @@ class MetricDetailData implements ModelInterface, ArrayAccess
         'canvasCpnCouponsUsePv' => 'getCanvasCpnCouponsUsePv',
         'purchase' => 'getPurchase',
         'promotionClaimOfferPv' => 'getPromotionClaimOfferPv',
-        'pageVisitStorePv' => 'getPageVisitStorePv'
+        'pageVisitStorePv' => 'getPageVisitStorePv',
+        'weappExpPv' => 'getWeappExpPv',
+        'promotionClaimOfferCost' => 'getPromotionClaimOfferCost',
+        'pageVisitStoreAmount' => 'getPageVisitStoreAmount',
+        'buyCouponsPv' => 'getBuyCouponsPv',
+        'buyCouponsCost' => 'getBuyCouponsCost',
+        'questReservationUv' => 'getQuestReservationUv',
+        'cvsExpPv' => 'getCvsExpPv',
+        'cvsExpCost' => 'getCvsExpCost',
+        'weappExpCost' => 'getWeappExpCost',
+        'questReservationUvCost' => 'getQuestReservationUvCost'
     ];
 
     /**
@@ -221,6 +271,16 @@ class MetricDetailData implements ModelInterface, ArrayAccess
         $this->container['purchase'] = isset($data['purchase']) ? $data['purchase'] : null;
         $this->container['promotionClaimOfferPv'] = isset($data['promotionClaimOfferPv']) ? $data['promotionClaimOfferPv'] : null;
         $this->container['pageVisitStorePv'] = isset($data['pageVisitStorePv']) ? $data['pageVisitStorePv'] : null;
+        $this->container['weappExpPv'] = isset($data['weappExpPv']) ? $data['weappExpPv'] : null;
+        $this->container['promotionClaimOfferCost'] = isset($data['promotionClaimOfferCost']) ? $data['promotionClaimOfferCost'] : null;
+        $this->container['pageVisitStoreAmount'] = isset($data['pageVisitStoreAmount']) ? $data['pageVisitStoreAmount'] : null;
+        $this->container['buyCouponsPv'] = isset($data['buyCouponsPv']) ? $data['buyCouponsPv'] : null;
+        $this->container['buyCouponsCost'] = isset($data['buyCouponsCost']) ? $data['buyCouponsCost'] : null;
+        $this->container['questReservationUv'] = isset($data['questReservationUv']) ? $data['questReservationUv'] : null;
+        $this->container['cvsExpPv'] = isset($data['cvsExpPv']) ? $data['cvsExpPv'] : null;
+        $this->container['cvsExpCost'] = isset($data['cvsExpCost']) ? $data['cvsExpCost'] : null;
+        $this->container['weappExpCost'] = isset($data['weappExpCost']) ? $data['weappExpCost'] : null;
+        $this->container['questReservationUvCost'] = isset($data['questReservationUvCost']) ? $data['questReservationUvCost'] : null;
     }
 
     /**
@@ -435,6 +495,246 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     public function setPageVisitStorePv($pageVisitStorePv)
     {
         $this->container['pageVisitStorePv'] = $pageVisitStorePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets weappExpPv
+     *
+     * @return int
+     */
+    public function getWeappExpPv()
+    {
+        return $this->container['weappExpPv'];
+    }
+
+    /**
+     * Sets weappExpPv
+     *
+     * @param int $weappExpPv weappExpPv
+     *
+     * @return $this
+     */
+    public function setWeappExpPv($weappExpPv)
+    {
+        $this->container['weappExpPv'] = $weappExpPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets promotionClaimOfferCost
+     *
+     * @return int
+     */
+    public function getPromotionClaimOfferCost()
+    {
+        return $this->container['promotionClaimOfferCost'];
+    }
+
+    /**
+     * Sets promotionClaimOfferCost
+     *
+     * @param int $promotionClaimOfferCost promotionClaimOfferCost
+     *
+     * @return $this
+     */
+    public function setPromotionClaimOfferCost($promotionClaimOfferCost)
+    {
+        $this->container['promotionClaimOfferCost'] = $promotionClaimOfferCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageVisitStoreAmount
+     *
+     * @return int
+     */
+    public function getPageVisitStoreAmount()
+    {
+        return $this->container['pageVisitStoreAmount'];
+    }
+
+    /**
+     * Sets pageVisitStoreAmount
+     *
+     * @param int $pageVisitStoreAmount pageVisitStoreAmount
+     *
+     * @return $this
+     */
+    public function setPageVisitStoreAmount($pageVisitStoreAmount)
+    {
+        $this->container['pageVisitStoreAmount'] = $pageVisitStoreAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets buyCouponsPv
+     *
+     * @return int
+     */
+    public function getBuyCouponsPv()
+    {
+        return $this->container['buyCouponsPv'];
+    }
+
+    /**
+     * Sets buyCouponsPv
+     *
+     * @param int $buyCouponsPv buyCouponsPv
+     *
+     * @return $this
+     */
+    public function setBuyCouponsPv($buyCouponsPv)
+    {
+        $this->container['buyCouponsPv'] = $buyCouponsPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets buyCouponsCost
+     *
+     * @return int
+     */
+    public function getBuyCouponsCost()
+    {
+        return $this->container['buyCouponsCost'];
+    }
+
+    /**
+     * Sets buyCouponsCost
+     *
+     * @param int $buyCouponsCost buyCouponsCost
+     *
+     * @return $this
+     */
+    public function setBuyCouponsCost($buyCouponsCost)
+    {
+        $this->container['buyCouponsCost'] = $buyCouponsCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets questReservationUv
+     *
+     * @return int
+     */
+    public function getQuestReservationUv()
+    {
+        return $this->container['questReservationUv'];
+    }
+
+    /**
+     * Sets questReservationUv
+     *
+     * @param int $questReservationUv questReservationUv
+     *
+     * @return $this
+     */
+    public function setQuestReservationUv($questReservationUv)
+    {
+        $this->container['questReservationUv'] = $questReservationUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsExpPv
+     *
+     * @return int
+     */
+    public function getCvsExpPv()
+    {
+        return $this->container['cvsExpPv'];
+    }
+
+    /**
+     * Sets cvsExpPv
+     *
+     * @param int $cvsExpPv cvsExpPv
+     *
+     * @return $this
+     */
+    public function setCvsExpPv($cvsExpPv)
+    {
+        $this->container['cvsExpPv'] = $cvsExpPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsExpCost
+     *
+     * @return int
+     */
+    public function getCvsExpCost()
+    {
+        return $this->container['cvsExpCost'];
+    }
+
+    /**
+     * Sets cvsExpCost
+     *
+     * @param int $cvsExpCost cvsExpCost
+     *
+     * @return $this
+     */
+    public function setCvsExpCost($cvsExpCost)
+    {
+        $this->container['cvsExpCost'] = $cvsExpCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets weappExpCost
+     *
+     * @return int
+     */
+    public function getWeappExpCost()
+    {
+        return $this->container['weappExpCost'];
+    }
+
+    /**
+     * Sets weappExpCost
+     *
+     * @param int $weappExpCost weappExpCost
+     *
+     * @return $this
+     */
+    public function setWeappExpCost($weappExpCost)
+    {
+        $this->container['weappExpCost'] = $weappExpCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets questReservationUvCost
+     *
+     * @return int
+     */
+    public function getQuestReservationUvCost()
+    {
+        return $this->container['questReservationUvCost'];
+    }
+
+    /**
+     * Sets questReservationUvCost
+     *
+     * @param int $questReservationUvCost questReservationUvCost
+     *
+     * @return $this
+     */
+    public function setQuestReservationUvCost($questReservationUvCost)
+    {
+        $this->container['questReservationUvCost'] = $questReservationUvCost;
 
         return $this;
     }

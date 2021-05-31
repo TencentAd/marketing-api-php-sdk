@@ -58,7 +58,8 @@ class DpPageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'miniProgramSpec' => '\TencentAds\Model\DpMiniProgramSpec'
+        'miniProgramSpec' => '\TencentAds\Model\DpMiniProgramSpec',
+        'alitaPageSpec' => '\TencentAds\Model\DpAlitaPageSpec'
     ];
 
     /**
@@ -67,7 +68,8 @@ class DpPageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'miniProgramSpec' => null
+        'miniProgramSpec' => null,
+        'alitaPageSpec' => null
     ];
 
     /**
@@ -97,7 +99,8 @@ class DpPageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'miniProgramSpec' => 'mini_program_spec'
+        'miniProgramSpec' => 'mini_program_spec',
+        'alitaPageSpec' => 'alita_page_spec'
     ];
 
     /**
@@ -106,7 +109,8 @@ class DpPageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'miniProgramSpec' => 'setMiniProgramSpec'
+        'miniProgramSpec' => 'setMiniProgramSpec',
+        'alitaPageSpec' => 'setAlitaPageSpec'
     ];
 
     /**
@@ -115,7 +119,8 @@ class DpPageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'miniProgramSpec' => 'getMiniProgramSpec'
+        'miniProgramSpec' => 'getMiniProgramSpec',
+        'alitaPageSpec' => 'getAlitaPageSpec'
     ];
 
     /**
@@ -179,6 +184,7 @@ class DpPageSpec implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['miniProgramSpec'] = isset($data['miniProgramSpec']) ? $data['miniProgramSpec'] : null;
+        $this->container['alitaPageSpec'] = isset($data['alitaPageSpec']) ? $data['alitaPageSpec'] : null;
     }
 
     /**
@@ -225,6 +231,30 @@ class DpPageSpec implements ModelInterface, ArrayAccess
     public function setMiniProgramSpec($miniProgramSpec)
     {
         $this->container['miniProgramSpec'] = $miniProgramSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets alitaPageSpec
+     *
+     * @return \TencentAds\Model\DpAlitaPageSpec
+     */
+    public function getAlitaPageSpec()
+    {
+        return $this->container['alitaPageSpec'];
+    }
+
+    /**
+     * Sets alitaPageSpec
+     *
+     * @param \TencentAds\Model\DpAlitaPageSpec $alitaPageSpec alitaPageSpec
+     *
+     * @return $this
+     */
+    public function setAlitaPageSpec($alitaPageSpec)
+    {
+        $this->container['alitaPageSpec'] = $alitaPageSpec;
 
         return $this;
     }

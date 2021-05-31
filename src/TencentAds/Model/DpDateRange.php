@@ -1,6 +1,6 @@
 <?php
 /**
- * AdCreativeUpdateSpec
+ * DpDateRange
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AdCreativeUpdateSpec Class Doc Comment
+ * DpDateRange Class Doc Comment
  *
  * @category Class
- * @description 广告创意结构
+ * @description 日期范围
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
+class DpDateRange implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'ad_creative_update_spec';
+    protected static $swaggerModelName = 'dp_date_range';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,8 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adcreativeName' => 'string',
-        'adcreativeElements' => '\TencentAds\Model\DpAdcreativeCreativeElementsMp',
-        'pageSpec' => '\TencentAds\Model\DpPageSpec'
+        'startDate' => 'string',
+        'endDate' => 'string'
     ];
 
     /**
@@ -69,9 +68,8 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adcreativeName' => null,
-        'adcreativeElements' => null,
-        'pageSpec' => null
+        'startDate' => null,
+        'endDate' => null
     ];
 
     /**
@@ -101,9 +99,8 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adcreativeName' => 'adcreative_name',
-        'adcreativeElements' => 'adcreative_elements',
-        'pageSpec' => 'page_spec'
+        'startDate' => 'start_date',
+        'endDate' => 'end_date'
     ];
 
     /**
@@ -112,9 +109,8 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adcreativeName' => 'setAdcreativeName',
-        'adcreativeElements' => 'setAdcreativeElements',
-        'pageSpec' => 'setPageSpec'
+        'startDate' => 'setStartDate',
+        'endDate' => 'setEndDate'
     ];
 
     /**
@@ -123,9 +119,8 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adcreativeName' => 'getAdcreativeName',
-        'adcreativeElements' => 'getAdcreativeElements',
-        'pageSpec' => 'getPageSpec'
+        'startDate' => 'getStartDate',
+        'endDate' => 'getEndDate'
     ];
 
     /**
@@ -188,9 +183,8 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['adcreativeName'] = isset($data['adcreativeName']) ? $data['adcreativeName'] : null;
-        $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
-        $this->container['pageSpec'] = isset($data['pageSpec']) ? $data['pageSpec'] : null;
+        $this->container['startDate'] = isset($data['startDate']) ? $data['startDate'] : null;
+        $this->container['endDate'] = isset($data['endDate']) ? $data['endDate'] : null;
     }
 
     /**
@@ -218,73 +212,49 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets adcreativeName
+     * Gets startDate
      *
      * @return string
      */
-    public function getAdcreativeName()
+    public function getStartDate()
     {
-        return $this->container['adcreativeName'];
+        return $this->container['startDate'];
     }
 
     /**
-     * Sets adcreativeName
+     * Sets startDate
      *
-     * @param string $adcreativeName adcreativeName
+     * @param string $startDate startDate
      *
      * @return $this
      */
-    public function setAdcreativeName($adcreativeName)
+    public function setStartDate($startDate)
     {
-        $this->container['adcreativeName'] = $adcreativeName;
+        $this->container['startDate'] = $startDate;
 
         return $this;
     }
 
     /**
-     * Gets adcreativeElements
+     * Gets endDate
      *
-     * @return \TencentAds\Model\DpAdcreativeCreativeElementsMp
+     * @return string
      */
-    public function getAdcreativeElements()
+    public function getEndDate()
     {
-        return $this->container['adcreativeElements'];
+        return $this->container['endDate'];
     }
 
     /**
-     * Sets adcreativeElements
+     * Sets endDate
      *
-     * @param \TencentAds\Model\DpAdcreativeCreativeElementsMp $adcreativeElements adcreativeElements
+     * @param string $endDate endDate
      *
      * @return $this
      */
-    public function setAdcreativeElements($adcreativeElements)
+    public function setEndDate($endDate)
     {
-        $this->container['adcreativeElements'] = $adcreativeElements;
-
-        return $this;
-    }
-
-    /**
-     * Gets pageSpec
-     *
-     * @return \TencentAds\Model\DpPageSpec
-     */
-    public function getPageSpec()
-    {
-        return $this->container['pageSpec'];
-    }
-
-    /**
-     * Sets pageSpec
-     *
-     * @param \TencentAds\Model\DpPageSpec $pageSpec pageSpec
-     *
-     * @return $this
-     */
-    public function setPageSpec($pageSpec)
-    {
-        $this->container['pageSpec'] = $pageSpec;
+        $this->container['endDate'] = $endDate;
 
         return $this;
     }

@@ -63,7 +63,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
         'configuredStatus' => '\TencentAds\Model\AdStatus',
         'targeting' => '\TencentAds\Model\DpWriteTargetingSetting',
         'poiList' => 'string[]',
-        'coldStartAudience' => 'int[]'
+        'poiRadius' => 'int'
     ];
 
     /**
@@ -77,7 +77,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
         'configuredStatus' => null,
         'targeting' => null,
         'poiList' => null,
-        'coldStartAudience' => 'int64'
+        'poiRadius' => 'int64'
     ];
 
     /**
@@ -112,7 +112,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
         'configuredStatus' => 'configured_status',
         'targeting' => 'targeting',
         'poiList' => 'poi_list',
-        'coldStartAudience' => 'cold_start_audience'
+        'poiRadius' => 'poi_radius'
     ];
 
     /**
@@ -126,7 +126,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
         'configuredStatus' => 'setConfiguredStatus',
         'targeting' => 'setTargeting',
         'poiList' => 'setPoiList',
-        'coldStartAudience' => 'setColdStartAudience'
+        'poiRadius' => 'setPoiRadius'
     ];
 
     /**
@@ -140,7 +140,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
         'configuredStatus' => 'getConfiguredStatus',
         'targeting' => 'getTargeting',
         'poiList' => 'getPoiList',
-        'coldStartAudience' => 'getColdStartAudience'
+        'poiRadius' => 'getPoiRadius'
     ];
 
     /**
@@ -208,7 +208,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
         $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
         $this->container['targeting'] = isset($data['targeting']) ? $data['targeting'] : null;
         $this->container['poiList'] = isset($data['poiList']) ? $data['poiList'] : null;
-        $this->container['coldStartAudience'] = isset($data['coldStartAudience']) ? $data['coldStartAudience'] : null;
+        $this->container['poiRadius'] = isset($data['poiRadius']) ? $data['poiRadius'] : null;
     }
 
     /**
@@ -356,25 +356,25 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets coldStartAudience
+     * Gets poiRadius
      *
-     * @return int[]
+     * @return int
      */
-    public function getColdStartAudience()
+    public function getPoiRadius()
     {
-        return $this->container['coldStartAudience'];
+        return $this->container['poiRadius'];
     }
 
     /**
-     * Sets coldStartAudience
+     * Sets poiRadius
      *
-     * @param int[] $coldStartAudience coldStartAudience
+     * @param int $poiRadius poiRadius
      *
      * @return $this
      */
-    public function setColdStartAudience($coldStartAudience)
+    public function setPoiRadius($poiRadius)
     {
-        $this->container['coldStartAudience'] = $coldStartAudience;
+        $this->container['poiRadius'] = $poiRadius;
 
         return $this;
     }

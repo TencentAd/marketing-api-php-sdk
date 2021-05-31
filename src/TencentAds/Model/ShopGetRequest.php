@@ -58,7 +58,7 @@ class ShopGetRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
-        'dateRange' => '\TencentAds\Model\DateRange',
+        'dateRange' => '\TencentAds\Model\DpDateRange',
         'filtering' => '\TencentAds\Model\FilteringStruct[]',
         'level' => '\TencentAds\Model\DpApiReportLevel',
         'page' => 'int',
@@ -261,7 +261,7 @@ class ShopGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets dateRange
      *
-     * @return \TencentAds\Model\DateRange
+     * @return \TencentAds\Model\DpDateRange
      */
     public function getDateRange()
     {
@@ -271,7 +271,7 @@ class ShopGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets dateRange
      *
-     * @param \TencentAds\Model\DateRange $dateRange dateRange
+     * @param \TencentAds\Model\DpDateRange $dateRange dateRange
      *
      * @return $this
      */

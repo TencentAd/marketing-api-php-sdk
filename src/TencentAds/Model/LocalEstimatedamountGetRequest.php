@@ -59,7 +59,16 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'accountId' => 'int',
         'cityLevel' => '\TencentAds\Model\CityLevel',
-        'packageLevel' => '\TencentAds\Model\PackageLevel'
+        'packageLevel' => '\TencentAds\Model\PackageLevel',
+        'poiList' => 'string[]',
+        'optimizationGoal' => '\TencentAds\Model\OptimizationGoal',
+        'radius' => 'int',
+        'age' => '\TencentAds\Model\AgeStruct[]',
+        'gender' => 'string[]',
+        'beginTime' => 'string',
+        'endTime' => 'string',
+        'budget' => 'int',
+        'localBusinessMode' => '\TencentAds\Model\EcoLocalBusinessMode'
     ];
 
     /**
@@ -70,7 +79,16 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'accountId' => 'int64',
         'cityLevel' => null,
-        'packageLevel' => null
+        'packageLevel' => null,
+        'poiList' => null,
+        'optimizationGoal' => null,
+        'radius' => 'int64',
+        'age' => null,
+        'gender' => null,
+        'beginTime' => null,
+        'endTime' => null,
+        'budget' => 'int64',
+        'localBusinessMode' => null
     ];
 
     /**
@@ -102,7 +120,16 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'accountId' => 'account_id',
         'cityLevel' => 'city_level',
-        'packageLevel' => 'package_level'
+        'packageLevel' => 'package_level',
+        'poiList' => 'poi_list',
+        'optimizationGoal' => 'optimization_goal',
+        'radius' => 'radius',
+        'age' => 'age',
+        'gender' => 'gender',
+        'beginTime' => 'begin_time',
+        'endTime' => 'end_time',
+        'budget' => 'budget',
+        'localBusinessMode' => 'local_business_mode'
     ];
 
     /**
@@ -113,7 +140,16 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     protected static $setters = [
         'accountId' => 'setAccountId',
         'cityLevel' => 'setCityLevel',
-        'packageLevel' => 'setPackageLevel'
+        'packageLevel' => 'setPackageLevel',
+        'poiList' => 'setPoiList',
+        'optimizationGoal' => 'setOptimizationGoal',
+        'radius' => 'setRadius',
+        'age' => 'setAge',
+        'gender' => 'setGender',
+        'beginTime' => 'setBeginTime',
+        'endTime' => 'setEndTime',
+        'budget' => 'setBudget',
+        'localBusinessMode' => 'setLocalBusinessMode'
     ];
 
     /**
@@ -124,7 +160,16 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     protected static $getters = [
         'accountId' => 'getAccountId',
         'cityLevel' => 'getCityLevel',
-        'packageLevel' => 'getPackageLevel'
+        'packageLevel' => 'getPackageLevel',
+        'poiList' => 'getPoiList',
+        'optimizationGoal' => 'getOptimizationGoal',
+        'radius' => 'getRadius',
+        'age' => 'getAge',
+        'gender' => 'getGender',
+        'beginTime' => 'getBeginTime',
+        'endTime' => 'getEndTime',
+        'budget' => 'getBudget',
+        'localBusinessMode' => 'getLocalBusinessMode'
     ];
 
     /**
@@ -190,6 +235,15 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['cityLevel'] = isset($data['cityLevel']) ? $data['cityLevel'] : null;
         $this->container['packageLevel'] = isset($data['packageLevel']) ? $data['packageLevel'] : null;
+        $this->container['poiList'] = isset($data['poiList']) ? $data['poiList'] : null;
+        $this->container['optimizationGoal'] = isset($data['optimizationGoal']) ? $data['optimizationGoal'] : null;
+        $this->container['radius'] = isset($data['radius']) ? $data['radius'] : null;
+        $this->container['age'] = isset($data['age']) ? $data['age'] : null;
+        $this->container['gender'] = isset($data['gender']) ? $data['gender'] : null;
+        $this->container['beginTime'] = isset($data['beginTime']) ? $data['beginTime'] : null;
+        $this->container['endTime'] = isset($data['endTime']) ? $data['endTime'] : null;
+        $this->container['budget'] = isset($data['budget']) ? $data['budget'] : null;
+        $this->container['localBusinessMode'] = isset($data['localBusinessMode']) ? $data['localBusinessMode'] : null;
     }
 
     /**
@@ -284,6 +338,222 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     public function setPackageLevel($packageLevel)
     {
         $this->container['packageLevel'] = $packageLevel;
+
+        return $this;
+    }
+
+    /**
+     * Gets poiList
+     *
+     * @return string[]
+     */
+    public function getPoiList()
+    {
+        return $this->container['poiList'];
+    }
+
+    /**
+     * Sets poiList
+     *
+     * @param string[] $poiList poiList
+     *
+     * @return $this
+     */
+    public function setPoiList($poiList)
+    {
+        $this->container['poiList'] = $poiList;
+
+        return $this;
+    }
+
+    /**
+     * Gets optimizationGoal
+     *
+     * @return \TencentAds\Model\OptimizationGoal
+     */
+    public function getOptimizationGoal()
+    {
+        return $this->container['optimizationGoal'];
+    }
+
+    /**
+     * Sets optimizationGoal
+     *
+     * @param \TencentAds\Model\OptimizationGoal $optimizationGoal optimizationGoal
+     *
+     * @return $this
+     */
+    public function setOptimizationGoal($optimizationGoal)
+    {
+        $this->container['optimizationGoal'] = $optimizationGoal;
+
+        return $this;
+    }
+
+    /**
+     * Gets radius
+     *
+     * @return int
+     */
+    public function getRadius()
+    {
+        return $this->container['radius'];
+    }
+
+    /**
+     * Sets radius
+     *
+     * @param int $radius radius
+     *
+     * @return $this
+     */
+    public function setRadius($radius)
+    {
+        $this->container['radius'] = $radius;
+
+        return $this;
+    }
+
+    /**
+     * Gets age
+     *
+     * @return \TencentAds\Model\AgeStruct[]
+     */
+    public function getAge()
+    {
+        return $this->container['age'];
+    }
+
+    /**
+     * Sets age
+     *
+     * @param \TencentAds\Model\AgeStruct[] $age age
+     *
+     * @return $this
+     */
+    public function setAge($age)
+    {
+        $this->container['age'] = $age;
+
+        return $this;
+    }
+
+    /**
+     * Gets gender
+     *
+     * @return string[]
+     */
+    public function getGender()
+    {
+        return $this->container['gender'];
+    }
+
+    /**
+     * Sets gender
+     *
+     * @param string[] $gender gender
+     *
+     * @return $this
+     */
+    public function setGender($gender)
+    {
+        $this->container['gender'] = $gender;
+
+        return $this;
+    }
+
+    /**
+     * Gets beginTime
+     *
+     * @return string
+     */
+    public function getBeginTime()
+    {
+        return $this->container['beginTime'];
+    }
+
+    /**
+     * Sets beginTime
+     *
+     * @param string $beginTime beginTime
+     *
+     * @return $this
+     */
+    public function setBeginTime($beginTime)
+    {
+        $this->container['beginTime'] = $beginTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets endTime
+     *
+     * @return string
+     */
+    public function getEndTime()
+    {
+        return $this->container['endTime'];
+    }
+
+    /**
+     * Sets endTime
+     *
+     * @param string $endTime endTime
+     *
+     * @return $this
+     */
+    public function setEndTime($endTime)
+    {
+        $this->container['endTime'] = $endTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets budget
+     *
+     * @return int
+     */
+    public function getBudget()
+    {
+        return $this->container['budget'];
+    }
+
+    /**
+     * Sets budget
+     *
+     * @param int $budget budget
+     *
+     * @return $this
+     */
+    public function setBudget($budget)
+    {
+        $this->container['budget'] = $budget;
+
+        return $this;
+    }
+
+    /**
+     * Gets localBusinessMode
+     *
+     * @return \TencentAds\Model\EcoLocalBusinessMode
+     */
+    public function getLocalBusinessMode()
+    {
+        return $this->container['localBusinessMode'];
+    }
+
+    /**
+     * Sets localBusinessMode
+     *
+     * @param \TencentAds\Model\EcoLocalBusinessMode $localBusinessMode localBusinessMode
+     *
+     * @return $this
+     */
+    public function setLocalBusinessMode($localBusinessMode)
+    {
+        $this->container['localBusinessMode'] = $localBusinessMode;
 
         return $this;
     }

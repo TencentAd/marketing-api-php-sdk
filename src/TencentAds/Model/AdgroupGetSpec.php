@@ -62,12 +62,17 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
         'configuredStatus' => '\TencentAds\Model\AdStatus',
         'adgroupName' => 'string',
         'beginDate' => 'string',
+        'endDate' => 'string',
+        'optimizationGoal' => '\TencentAds\Model\OptimizationGoal',
+        'totalBudget' => 'int',
         'targeting' => '\TencentAds\Model\DpWriteTargetingSetting',
         'calcStatus' => '\TencentAds\Model\CalculateStatus',
         'metricDetail' => '\TencentAds\Model\MetricDetailData',
         'rejectMessage' => 'string',
         'poiList' => 'string[]',
-        'coldStartAudience' => 'int[]'
+        'coldStartAudience' => 'int[]',
+        'poiRadius' => 'int',
+        'localBusinessMode' => '\TencentAds\Model\EcoLocalBusinessMode'
     ];
 
     /**
@@ -80,12 +85,17 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
         'configuredStatus' => null,
         'adgroupName' => null,
         'beginDate' => null,
+        'endDate' => null,
+        'optimizationGoal' => null,
+        'totalBudget' => 'int64',
         'targeting' => null,
         'calcStatus' => null,
         'metricDetail' => null,
         'rejectMessage' => null,
         'poiList' => null,
-        'coldStartAudience' => 'int64'
+        'coldStartAudience' => 'int64',
+        'poiRadius' => 'int64',
+        'localBusinessMode' => null
     ];
 
     /**
@@ -119,12 +129,17 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
         'configuredStatus' => 'configured_status',
         'adgroupName' => 'adgroup_name',
         'beginDate' => 'begin_date',
+        'endDate' => 'end_date',
+        'optimizationGoal' => 'optimization_goal',
+        'totalBudget' => 'total_budget',
         'targeting' => 'targeting',
         'calcStatus' => 'calc_status',
         'metricDetail' => 'metric_detail',
         'rejectMessage' => 'reject_message',
         'poiList' => 'poi_list',
-        'coldStartAudience' => 'cold_start_audience'
+        'coldStartAudience' => 'cold_start_audience',
+        'poiRadius' => 'poi_radius',
+        'localBusinessMode' => 'local_business_mode'
     ];
 
     /**
@@ -137,12 +152,17 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
         'configuredStatus' => 'setConfiguredStatus',
         'adgroupName' => 'setAdgroupName',
         'beginDate' => 'setBeginDate',
+        'endDate' => 'setEndDate',
+        'optimizationGoal' => 'setOptimizationGoal',
+        'totalBudget' => 'setTotalBudget',
         'targeting' => 'setTargeting',
         'calcStatus' => 'setCalcStatus',
         'metricDetail' => 'setMetricDetail',
         'rejectMessage' => 'setRejectMessage',
         'poiList' => 'setPoiList',
-        'coldStartAudience' => 'setColdStartAudience'
+        'coldStartAudience' => 'setColdStartAudience',
+        'poiRadius' => 'setPoiRadius',
+        'localBusinessMode' => 'setLocalBusinessMode'
     ];
 
     /**
@@ -155,12 +175,17 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
         'configuredStatus' => 'getConfiguredStatus',
         'adgroupName' => 'getAdgroupName',
         'beginDate' => 'getBeginDate',
+        'endDate' => 'getEndDate',
+        'optimizationGoal' => 'getOptimizationGoal',
+        'totalBudget' => 'getTotalBudget',
         'targeting' => 'getTargeting',
         'calcStatus' => 'getCalcStatus',
         'metricDetail' => 'getMetricDetail',
         'rejectMessage' => 'getRejectMessage',
         'poiList' => 'getPoiList',
-        'coldStartAudience' => 'getColdStartAudience'
+        'coldStartAudience' => 'getColdStartAudience',
+        'poiRadius' => 'getPoiRadius',
+        'localBusinessMode' => 'getLocalBusinessMode'
     ];
 
     /**
@@ -227,12 +252,17 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
         $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['beginDate'] = isset($data['beginDate']) ? $data['beginDate'] : null;
+        $this->container['endDate'] = isset($data['endDate']) ? $data['endDate'] : null;
+        $this->container['optimizationGoal'] = isset($data['optimizationGoal']) ? $data['optimizationGoal'] : null;
+        $this->container['totalBudget'] = isset($data['totalBudget']) ? $data['totalBudget'] : null;
         $this->container['targeting'] = isset($data['targeting']) ? $data['targeting'] : null;
         $this->container['calcStatus'] = isset($data['calcStatus']) ? $data['calcStatus'] : null;
         $this->container['metricDetail'] = isset($data['metricDetail']) ? $data['metricDetail'] : null;
         $this->container['rejectMessage'] = isset($data['rejectMessage']) ? $data['rejectMessage'] : null;
         $this->container['poiList'] = isset($data['poiList']) ? $data['poiList'] : null;
         $this->container['coldStartAudience'] = isset($data['coldStartAudience']) ? $data['coldStartAudience'] : null;
+        $this->container['poiRadius'] = isset($data['poiRadius']) ? $data['poiRadius'] : null;
+        $this->container['localBusinessMode'] = isset($data['localBusinessMode']) ? $data['localBusinessMode'] : null;
     }
 
     /**
@@ -351,6 +381,78 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     public function setBeginDate($beginDate)
     {
         $this->container['beginDate'] = $beginDate;
+
+        return $this;
+    }
+
+    /**
+     * Gets endDate
+     *
+     * @return string
+     */
+    public function getEndDate()
+    {
+        return $this->container['endDate'];
+    }
+
+    /**
+     * Sets endDate
+     *
+     * @param string $endDate endDate
+     *
+     * @return $this
+     */
+    public function setEndDate($endDate)
+    {
+        $this->container['endDate'] = $endDate;
+
+        return $this;
+    }
+
+    /**
+     * Gets optimizationGoal
+     *
+     * @return \TencentAds\Model\OptimizationGoal
+     */
+    public function getOptimizationGoal()
+    {
+        return $this->container['optimizationGoal'];
+    }
+
+    /**
+     * Sets optimizationGoal
+     *
+     * @param \TencentAds\Model\OptimizationGoal $optimizationGoal optimizationGoal
+     *
+     * @return $this
+     */
+    public function setOptimizationGoal($optimizationGoal)
+    {
+        $this->container['optimizationGoal'] = $optimizationGoal;
+
+        return $this;
+    }
+
+    /**
+     * Gets totalBudget
+     *
+     * @return int
+     */
+    public function getTotalBudget()
+    {
+        return $this->container['totalBudget'];
+    }
+
+    /**
+     * Sets totalBudget
+     *
+     * @param int $totalBudget totalBudget
+     *
+     * @return $this
+     */
+    public function setTotalBudget($totalBudget)
+    {
+        $this->container['totalBudget'] = $totalBudget;
 
         return $this;
     }
@@ -495,6 +597,54 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     public function setColdStartAudience($coldStartAudience)
     {
         $this->container['coldStartAudience'] = $coldStartAudience;
+
+        return $this;
+    }
+
+    /**
+     * Gets poiRadius
+     *
+     * @return int
+     */
+    public function getPoiRadius()
+    {
+        return $this->container['poiRadius'];
+    }
+
+    /**
+     * Sets poiRadius
+     *
+     * @param int $poiRadius poiRadius
+     *
+     * @return $this
+     */
+    public function setPoiRadius($poiRadius)
+    {
+        $this->container['poiRadius'] = $poiRadius;
+
+        return $this;
+    }
+
+    /**
+     * Gets localBusinessMode
+     *
+     * @return \TencentAds\Model\EcoLocalBusinessMode
+     */
+    public function getLocalBusinessMode()
+    {
+        return $this->container['localBusinessMode'];
+    }
+
+    /**
+     * Sets localBusinessMode
+     *
+     * @param \TencentAds\Model\EcoLocalBusinessMode $localBusinessMode localBusinessMode
+     *
+     * @return $this
+     */
+    public function setLocalBusinessMode($localBusinessMode)
+    {
+        $this->container['localBusinessMode'] = $localBusinessMode;
 
         return $this;
     }
