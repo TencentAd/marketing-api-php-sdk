@@ -1,6 +1,6 @@
 <?php
 /**
- * OuterCluesAddListStruct
+ * SupportLinkNameType
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * OuterCluesAddListStruct Class Doc Comment
+ * SupportLinkNameType Class Doc Comment
  *
  * @category Class
- * @description 返回结构
+ * @description 文字链跳转类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
+class SupportLinkNameType implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'OuterCluesAddListStruct';
+    protected static $swaggerModelName = 'support_link_name_type';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,8 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'index' => 'int',
-        'outerLeadsId' => 'string'
+        'required' => 'bool',
+        'list' => '\TencentAds\Model\SupportLinkNameStruct[]'
     ];
 
     /**
@@ -68,8 +68,8 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'index' => 'int64',
-        'outerLeadsId' => null
+        'required' => null,
+        'list' => null
     ];
 
     /**
@@ -99,8 +99,8 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'index' => 'index',
-        'outerLeadsId' => 'outer_leads_id'
+        'required' => 'required',
+        'list' => 'list'
     ];
 
     /**
@@ -109,8 +109,8 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'index' => 'setIndex',
-        'outerLeadsId' => 'setOuterLeadsId'
+        'required' => 'setRequired',
+        'list' => 'setList'
     ];
 
     /**
@@ -119,8 +119,8 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'index' => 'getIndex',
-        'outerLeadsId' => 'getOuterLeadsId'
+        'required' => 'getRequired',
+        'list' => 'getList'
     ];
 
     /**
@@ -183,8 +183,8 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['index'] = isset($data['index']) ? $data['index'] : null;
-        $this->container['outerLeadsId'] = isset($data['outerLeadsId']) ? $data['outerLeadsId'] : null;
+        $this->container['required'] = isset($data['required']) ? $data['required'] : null;
+        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
     }
 
     /**
@@ -212,49 +212,49 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets index
+     * Gets required
      *
-     * @return int
+     * @return bool
      */
-    public function getIndex()
+    public function getRequired()
     {
-        return $this->container['index'];
+        return $this->container['required'];
     }
 
     /**
-     * Sets index
+     * Sets required
      *
-     * @param int $index index
+     * @param bool $required required
      *
      * @return $this
      */
-    public function setIndex($index)
+    public function setRequired($required)
     {
-        $this->container['index'] = $index;
+        $this->container['required'] = $required;
 
         return $this;
     }
 
     /**
-     * Gets outerLeadsId
+     * Gets list
      *
-     * @return string
+     * @return \TencentAds\Model\SupportLinkNameStruct[]
      */
-    public function getOuterLeadsId()
+    public function getList()
     {
-        return $this->container['outerLeadsId'];
+        return $this->container['list'];
     }
 
     /**
-     * Sets outerLeadsId
+     * Sets list
      *
-     * @param string $outerLeadsId outerLeadsId
+     * @param \TencentAds\Model\SupportLinkNameStruct[] $list list
      *
      * @return $this
      */
-    public function setOuterLeadsId($outerLeadsId)
+    public function setList($list)
     {
-        $this->container['outerLeadsId'] = $outerLeadsId;
+        $this->container['list'] = $list;
 
         return $this;
     }

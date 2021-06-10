@@ -71,6 +71,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
         'adcreativeAttributes' => '\TencentAds\Model\AdcreativeElement[]',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeElement[]',
         'supportPageType' => 'string[]',
+        'landingPageConfig' => '\TencentAds\Model\LandingPageConfig',
         'supportBillingSpecList' => '\TencentAds\Model\SupportBillingSpec[]',
         'supportDynamicAbilitySpecList' => '\TencentAds\Model\SupportDynamicAbilitySpecList',
         'supportBidModeList' => 'string[]'
@@ -95,6 +96,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
         'adcreativeAttributes' => null,
         'adcreativeElements' => null,
         'supportPageType' => null,
+        'landingPageConfig' => null,
         'supportBillingSpecList' => null,
         'supportDynamicAbilitySpecList' => null,
         'supportBidModeList' => null
@@ -140,6 +142,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
         'adcreativeAttributes' => 'adcreative_attributes',
         'adcreativeElements' => 'adcreative_elements',
         'supportPageType' => 'support_page_type',
+        'landingPageConfig' => 'landing_page_config',
         'supportBillingSpecList' => 'support_billing_spec_list',
         'supportDynamicAbilitySpecList' => 'support_dynamic_ability_spec_list',
         'supportBidModeList' => 'support_bid_mode_list'
@@ -164,6 +167,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
         'adcreativeAttributes' => 'setAdcreativeAttributes',
         'adcreativeElements' => 'setAdcreativeElements',
         'supportPageType' => 'setSupportPageType',
+        'landingPageConfig' => 'setLandingPageConfig',
         'supportBillingSpecList' => 'setSupportBillingSpecList',
         'supportDynamicAbilitySpecList' => 'setSupportDynamicAbilitySpecList',
         'supportBidModeList' => 'setSupportBidModeList'
@@ -188,6 +192,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
         'adcreativeAttributes' => 'getAdcreativeAttributes',
         'adcreativeElements' => 'getAdcreativeElements',
         'supportPageType' => 'getSupportPageType',
+        'landingPageConfig' => 'getLandingPageConfig',
         'supportBillingSpecList' => 'getSupportBillingSpecList',
         'supportDynamicAbilitySpecList' => 'getSupportDynamicAbilitySpecList',
         'supportBidModeList' => 'getSupportBidModeList'
@@ -266,6 +271,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
         $this->container['adcreativeAttributes'] = isset($data['adcreativeAttributes']) ? $data['adcreativeAttributes'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
         $this->container['supportPageType'] = isset($data['supportPageType']) ? $data['supportPageType'] : null;
+        $this->container['landingPageConfig'] = isset($data['landingPageConfig']) ? $data['landingPageConfig'] : null;
         $this->container['supportBillingSpecList'] = isset($data['supportBillingSpecList']) ? $data['supportBillingSpecList'] : null;
         $this->container['supportDynamicAbilitySpecList'] = isset($data['supportDynamicAbilitySpecList']) ? $data['supportDynamicAbilitySpecList'] : null;
         $this->container['supportBidModeList'] = isset($data['supportBidModeList']) ? $data['supportBidModeList'] : null;
@@ -603,6 +609,30 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     public function setSupportPageType($supportPageType)
     {
         $this->container['supportPageType'] = $supportPageType;
+
+        return $this;
+    }
+
+    /**
+     * Gets landingPageConfig
+     *
+     * @return \TencentAds\Model\LandingPageConfig
+     */
+    public function getLandingPageConfig()
+    {
+        return $this->container['landingPageConfig'];
+    }
+
+    /**
+     * Sets landingPageConfig
+     *
+     * @param \TencentAds\Model\LandingPageConfig $landingPageConfig landingPageConfig
+     *
+     * @return $this
+     */
+    public function setLandingPageConfig($landingPageConfig)
+    {
+        $this->container['landingPageConfig'] = $landingPageConfig;
 
         return $this;
     }

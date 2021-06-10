@@ -372,7 +372,7 @@ class OuterCluesApi
     /**
      * Operation outerCluesUpdate
      *
-     * 回传线索状态
+     * 更新线索状态
      *
      * @param  \TencentAds\Model\OuterCluesUpdateRequest $data data (required)
      *
@@ -389,7 +389,7 @@ class OuterCluesApi
     /**
      * Operation outerCluesUpdateWithHttpInfo
      *
-     * 回传线索状态
+     * 更新线索状态
      *
      * @param  \TencentAds\Model\OuterCluesUpdateRequest $data (required)
      *
@@ -464,7 +464,7 @@ class OuterCluesApi
     /**
      * Operation outerCluesUpdateAsync
      *
-     * 回传线索状态
+     * 更新线索状态
      *
      * @param  \TencentAds\Model\OuterCluesUpdateRequest $data (required)
      *
@@ -484,7 +484,7 @@ class OuterCluesApi
     /**
      * Operation outerCluesUpdateAsyncWithHttpInfo
      *
-     * 回传线索状态
+     * 更新线索状态
      *
      * @param  \TencentAds\Model\OuterCluesUpdateRequest $data (required)
      *

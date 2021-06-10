@@ -72,7 +72,10 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'url' => 'string',
         'buttonText' => 'string',
         'bottomText' => 'string',
+        'countdownBegin' => 'int',
         'countdown' => 'int',
+        'countdownPrice' => 'string',
+        'countdownTimeType' => '\TencentAds\Model\AdCreativeCountdownTimeType',
         'miniProgramId' => 'string',
         'miniProgramPath' => 'string',
         'label' => '\TencentAds\Model\CreativeLabel[]',
@@ -119,7 +122,10 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'url' => null,
         'buttonText' => null,
         'bottomText' => null,
+        'countdownBegin' => 'int64',
         'countdown' => 'int64',
+        'countdownPrice' => null,
+        'countdownTimeType' => null,
         'miniProgramId' => null,
         'miniProgramPath' => null,
         'label' => null,
@@ -187,7 +193,10 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'url' => 'url',
         'buttonText' => 'button_text',
         'bottomText' => 'bottom_text',
+        'countdownBegin' => 'countdown_begin',
         'countdown' => 'countdown',
+        'countdownPrice' => 'countdown_price',
+        'countdownTimeType' => 'countdown_time_type',
         'miniProgramId' => 'mini_program_id',
         'miniProgramPath' => 'mini_program_path',
         'label' => 'label',
@@ -234,7 +243,10 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'url' => 'setUrl',
         'buttonText' => 'setButtonText',
         'bottomText' => 'setBottomText',
+        'countdownBegin' => 'setCountdownBegin',
         'countdown' => 'setCountdown',
+        'countdownPrice' => 'setCountdownPrice',
+        'countdownTimeType' => 'setCountdownTimeType',
         'miniProgramId' => 'setMiniProgramId',
         'miniProgramPath' => 'setMiniProgramPath',
         'label' => 'setLabel',
@@ -281,7 +293,10 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'url' => 'getUrl',
         'buttonText' => 'getButtonText',
         'bottomText' => 'getBottomText',
+        'countdownBegin' => 'getCountdownBegin',
         'countdown' => 'getCountdown',
+        'countdownPrice' => 'getCountdownPrice',
+        'countdownTimeType' => 'getCountdownTimeType',
         'miniProgramId' => 'getMiniProgramId',
         'miniProgramPath' => 'getMiniProgramPath',
         'label' => 'getLabel',
@@ -382,7 +397,10 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         $this->container['url'] = isset($data['url']) ? $data['url'] : null;
         $this->container['buttonText'] = isset($data['buttonText']) ? $data['buttonText'] : null;
         $this->container['bottomText'] = isset($data['bottomText']) ? $data['bottomText'] : null;
+        $this->container['countdownBegin'] = isset($data['countdownBegin']) ? $data['countdownBegin'] : null;
         $this->container['countdown'] = isset($data['countdown']) ? $data['countdown'] : null;
+        $this->container['countdownPrice'] = isset($data['countdownPrice']) ? $data['countdownPrice'] : null;
+        $this->container['countdownTimeType'] = isset($data['countdownTimeType']) ? $data['countdownTimeType'] : null;
         $this->container['miniProgramId'] = isset($data['miniProgramId']) ? $data['miniProgramId'] : null;
         $this->container['miniProgramPath'] = isset($data['miniProgramPath']) ? $data['miniProgramPath'] : null;
         $this->container['label'] = isset($data['label']) ? $data['label'] : null;
@@ -770,6 +788,30 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets countdownBegin
+     *
+     * @return int
+     */
+    public function getCountdownBegin()
+    {
+        return $this->container['countdownBegin'];
+    }
+
+    /**
+     * Sets countdownBegin
+     *
+     * @param int $countdownBegin countdownBegin
+     *
+     * @return $this
+     */
+    public function setCountdownBegin($countdownBegin)
+    {
+        $this->container['countdownBegin'] = $countdownBegin;
+
+        return $this;
+    }
+
+    /**
      * Gets countdown
      *
      * @return int
@@ -789,6 +831,54 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     public function setCountdown($countdown)
     {
         $this->container['countdown'] = $countdown;
+
+        return $this;
+    }
+
+    /**
+     * Gets countdownPrice
+     *
+     * @return string
+     */
+    public function getCountdownPrice()
+    {
+        return $this->container['countdownPrice'];
+    }
+
+    /**
+     * Sets countdownPrice
+     *
+     * @param string $countdownPrice countdownPrice
+     *
+     * @return $this
+     */
+    public function setCountdownPrice($countdownPrice)
+    {
+        $this->container['countdownPrice'] = $countdownPrice;
+
+        return $this;
+    }
+
+    /**
+     * Gets countdownTimeType
+     *
+     * @return \TencentAds\Model\AdCreativeCountdownTimeType
+     */
+    public function getCountdownTimeType()
+    {
+        return $this->container['countdownTimeType'];
+    }
+
+    /**
+     * Sets countdownTimeType
+     *
+     * @param \TencentAds\Model\AdCreativeCountdownTimeType $countdownTimeType countdownTimeType
+     *
+     * @return $this
+     */
+    public function setCountdownTimeType($countdownTimeType)
+    {
+        $this->container['countdownTimeType'] = $countdownTimeType;
 
         return $this;
     }

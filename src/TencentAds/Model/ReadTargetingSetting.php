@@ -96,7 +96,8 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
         'paidUser' => 'string[]',
         'deprecatedCustomAudience' => 'int[]',
         'deprecatedExcludedCustomAudience' => 'int[]',
-        'deprecatedRegion' => 'int[]'
+        'deprecatedRegion' => 'int[]',
+        'excludedConvertedAudience' => '\TencentAds\Model\ExcludedConvertedAudienceStruct'
     ];
 
     /**
@@ -143,7 +144,8 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
         'paidUser' => null,
         'deprecatedCustomAudience' => 'int64',
         'deprecatedExcludedCustomAudience' => 'int64',
-        'deprecatedRegion' => 'int64'
+        'deprecatedRegion' => 'int64',
+        'excludedConvertedAudience' => null
     ];
 
     /**
@@ -211,7 +213,8 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
         'paidUser' => 'paid_user',
         'deprecatedCustomAudience' => 'deprecated_custom_audience',
         'deprecatedExcludedCustomAudience' => 'deprecated_excluded_custom_audience',
-        'deprecatedRegion' => 'deprecated_region'
+        'deprecatedRegion' => 'deprecated_region',
+        'excludedConvertedAudience' => 'excluded_converted_audience'
     ];
 
     /**
@@ -258,7 +261,8 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
         'paidUser' => 'setPaidUser',
         'deprecatedCustomAudience' => 'setDeprecatedCustomAudience',
         'deprecatedExcludedCustomAudience' => 'setDeprecatedExcludedCustomAudience',
-        'deprecatedRegion' => 'setDeprecatedRegion'
+        'deprecatedRegion' => 'setDeprecatedRegion',
+        'excludedConvertedAudience' => 'setExcludedConvertedAudience'
     ];
 
     /**
@@ -305,7 +309,8 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
         'paidUser' => 'getPaidUser',
         'deprecatedCustomAudience' => 'getDeprecatedCustomAudience',
         'deprecatedExcludedCustomAudience' => 'getDeprecatedExcludedCustomAudience',
-        'deprecatedRegion' => 'getDeprecatedRegion'
+        'deprecatedRegion' => 'getDeprecatedRegion',
+        'excludedConvertedAudience' => 'getExcludedConvertedAudience'
     ];
 
     /**
@@ -407,6 +412,7 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
         $this->container['deprecatedCustomAudience'] = isset($data['deprecatedCustomAudience']) ? $data['deprecatedCustomAudience'] : null;
         $this->container['deprecatedExcludedCustomAudience'] = isset($data['deprecatedExcludedCustomAudience']) ? $data['deprecatedExcludedCustomAudience'] : null;
         $this->container['deprecatedRegion'] = isset($data['deprecatedRegion']) ? $data['deprecatedRegion'] : null;
+        $this->container['excludedConvertedAudience'] = isset($data['excludedConvertedAudience']) ? $data['excludedConvertedAudience'] : null;
     }
 
     /**
@@ -1365,6 +1371,30 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
     public function setDeprecatedRegion($deprecatedRegion)
     {
         $this->container['deprecatedRegion'] = $deprecatedRegion;
+
+        return $this;
+    }
+
+    /**
+     * Gets excludedConvertedAudience
+     *
+     * @return \TencentAds\Model\ExcludedConvertedAudienceStruct
+     */
+    public function getExcludedConvertedAudience()
+    {
+        return $this->container['excludedConvertedAudience'];
+    }
+
+    /**
+     * Sets excludedConvertedAudience
+     *
+     * @param \TencentAds\Model\ExcludedConvertedAudienceStruct $excludedConvertedAudience excludedConvertedAudience
+     *
+     * @return $this
+     */
+    public function setExcludedConvertedAudience($excludedConvertedAudience)
+    {
+        $this->container['excludedConvertedAudience'] = $excludedConvertedAudience;
 
         return $this;
     }

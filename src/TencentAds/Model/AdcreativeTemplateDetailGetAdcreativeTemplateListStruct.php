@@ -69,6 +69,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
         'adcreativeElements' => '\TencentAds\Model\AdcreativeElement[]',
         'supportBillingSpecList' => '\TencentAds\Model\SupportBillingSpec[]',
         'supportPageType' => 'string[]',
+        'landingPageConfig' => '\TencentAds\Model\LandingPageConfig',
         'unsupportBillingSpecList' => '\TencentAds\Model\UnsupportBillingSpec[]',
         'unsupportAdAttributesSpecList' => '\TencentAds\Model\UnsupportSpec[]',
         'unsupportAdcreativeAttributesSpecList' => '\TencentAds\Model\UnsupportSpec[]',
@@ -95,6 +96,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
         'adcreativeElements' => null,
         'supportBillingSpecList' => null,
         'supportPageType' => null,
+        'landingPageConfig' => null,
         'unsupportBillingSpecList' => null,
         'unsupportAdAttributesSpecList' => null,
         'unsupportAdcreativeAttributesSpecList' => null,
@@ -142,6 +144,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
         'adcreativeElements' => 'adcreative_elements',
         'supportBillingSpecList' => 'support_billing_spec_list',
         'supportPageType' => 'support_page_type',
+        'landingPageConfig' => 'landing_page_config',
         'unsupportBillingSpecList' => 'unsupport_billing_spec_list',
         'unsupportAdAttributesSpecList' => 'unsupport_ad_attributes_spec_list',
         'unsupportAdcreativeAttributesSpecList' => 'unsupport_adcreative_attributes_spec_list',
@@ -168,6 +171,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
         'adcreativeElements' => 'setAdcreativeElements',
         'supportBillingSpecList' => 'setSupportBillingSpecList',
         'supportPageType' => 'setSupportPageType',
+        'landingPageConfig' => 'setLandingPageConfig',
         'unsupportBillingSpecList' => 'setUnsupportBillingSpecList',
         'unsupportAdAttributesSpecList' => 'setUnsupportAdAttributesSpecList',
         'unsupportAdcreativeAttributesSpecList' => 'setUnsupportAdcreativeAttributesSpecList',
@@ -194,6 +198,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
         'adcreativeElements' => 'getAdcreativeElements',
         'supportBillingSpecList' => 'getSupportBillingSpecList',
         'supportPageType' => 'getSupportPageType',
+        'landingPageConfig' => 'getLandingPageConfig',
         'unsupportBillingSpecList' => 'getUnsupportBillingSpecList',
         'unsupportAdAttributesSpecList' => 'getUnsupportAdAttributesSpecList',
         'unsupportAdcreativeAttributesSpecList' => 'getUnsupportAdcreativeAttributesSpecList',
@@ -274,6 +279,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
         $this->container['supportBillingSpecList'] = isset($data['supportBillingSpecList']) ? $data['supportBillingSpecList'] : null;
         $this->container['supportPageType'] = isset($data['supportPageType']) ? $data['supportPageType'] : null;
+        $this->container['landingPageConfig'] = isset($data['landingPageConfig']) ? $data['landingPageConfig'] : null;
         $this->container['unsupportBillingSpecList'] = isset($data['unsupportBillingSpecList']) ? $data['unsupportBillingSpecList'] : null;
         $this->container['unsupportAdAttributesSpecList'] = isset($data['unsupportAdAttributesSpecList']) ? $data['unsupportAdAttributesSpecList'] : null;
         $this->container['unsupportAdcreativeAttributesSpecList'] = isset($data['unsupportAdcreativeAttributesSpecList']) ? $data['unsupportAdcreativeAttributesSpecList'] : null;
@@ -567,6 +573,30 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
     public function setSupportPageType($supportPageType)
     {
         $this->container['supportPageType'] = $supportPageType;
+
+        return $this;
+    }
+
+    /**
+     * Gets landingPageConfig
+     *
+     * @return \TencentAds\Model\LandingPageConfig
+     */
+    public function getLandingPageConfig()
+    {
+        return $this->container['landingPageConfig'];
+    }
+
+    /**
+     * Sets landingPageConfig
+     *
+     * @param \TencentAds\Model\LandingPageConfig $landingPageConfig landingPageConfig
+     *
+     * @return $this
+     */
+    public function setLandingPageConfig($landingPageConfig)
+    {
+        $this->container['landingPageConfig'] = $landingPageConfig;
 
         return $this;
     }

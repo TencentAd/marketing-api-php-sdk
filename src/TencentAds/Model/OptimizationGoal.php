@@ -106,6 +106,7 @@ class OptimizationGoal
     const LEAVE_INFORMATION = 'OPTIMIZATIONGOAL_LEAVE_INFORMATION';
     const CORE_ACTION = 'OPTIMIZATIONGOAL_CORE_ACTION';
     const ONE_DAY_RETENTION_RATIO = 'OPTIMIZATIONGOAL_ONE_DAY_RETENTION_RATIO';
+    const PROMOTION_READ_ARTICLE = 'OPTIMIZATIONGOAL_PROMOTION_READ_ARTICLE';
     
     /**
      * Gets allowable values of the enum
@@ -176,6 +177,7 @@ class OptimizationGoal
             self::LEAVE_INFORMATION,
             self::CORE_ACTION,
             self::ONE_DAY_RETENTION_RATIO,
+            self::PROMOTION_READ_ARTICLE,
         ];
     }
 }

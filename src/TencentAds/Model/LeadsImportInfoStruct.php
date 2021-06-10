@@ -59,25 +59,24 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'outerLeadsId' => 'string',
+        'leadsId' => 'int',
+        'leadsTel' => 'string',
+        'leadsQq' => 'int',
+        'leadsWechat' => 'string',
+        'clickId' => 'string',
         'leadsType' => '\TencentAds\Model\LeadCluesLeadsType',
         'leadsUserId' => 'string',
         'leadsUserType' => '\TencentAds\Model\LeadsUserType',
         'leadsUserWechatAppid' => 'string',
-        'leadsTel' => 'string',
-        'leadsQq' => 'int',
-        'leadsWechat' => 'string',
         'leadsName' => 'string',
         'leadsGender' => '\TencentAds\Model\LeadCluesGenderType',
         'leadsEmail' => 'string',
         'leadsArea' => 'string',
         'bundle' => 'string',
-        'clickId' => 'string',
         'outerLeadsConvertType' => 'string',
         'outerLeadsIneffectReason' => 'string',
-        'memo' => 'string',
-        'campaignId' => 'int',
-        'adgroupId' => 'int',
-        'wechatAgencyId' => 'string'
+        'outerLeadsComefrom' => '\TencentAds\Model\ActionChannelType',
+        'memo' => 'string'
     ];
 
     /**
@@ -87,25 +86,24 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'outerLeadsId' => null,
+        'leadsId' => 'int64',
+        'leadsTel' => null,
+        'leadsQq' => 'int64',
+        'leadsWechat' => null,
+        'clickId' => null,
         'leadsType' => null,
         'leadsUserId' => null,
         'leadsUserType' => null,
         'leadsUserWechatAppid' => null,
-        'leadsTel' => null,
-        'leadsQq' => 'int64',
-        'leadsWechat' => null,
         'leadsName' => null,
         'leadsGender' => null,
         'leadsEmail' => null,
         'leadsArea' => null,
         'bundle' => null,
-        'clickId' => null,
         'outerLeadsConvertType' => null,
         'outerLeadsIneffectReason' => null,
-        'memo' => null,
-        'campaignId' => 'int64',
-        'adgroupId' => 'int64',
-        'wechatAgencyId' => null
+        'outerLeadsComefrom' => null,
+        'memo' => null
     ];
 
     /**
@@ -136,25 +134,24 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'outerLeadsId' => 'outer_leads_id',
+        'leadsId' => 'leads_id',
+        'leadsTel' => 'leads_tel',
+        'leadsQq' => 'leads_qq',
+        'leadsWechat' => 'leads_wechat',
+        'clickId' => 'click_id',
         'leadsType' => 'leads_type',
         'leadsUserId' => 'leads_user_id',
         'leadsUserType' => 'leads_user_type',
         'leadsUserWechatAppid' => 'leads_user_wechat_appid',
-        'leadsTel' => 'leads_tel',
-        'leadsQq' => 'leads_qq',
-        'leadsWechat' => 'leads_wechat',
         'leadsName' => 'leads_name',
         'leadsGender' => 'leads_gender',
         'leadsEmail' => 'leads_email',
         'leadsArea' => 'leads_area',
         'bundle' => 'bundle',
-        'clickId' => 'click_id',
         'outerLeadsConvertType' => 'outer_leads_convert_type',
         'outerLeadsIneffectReason' => 'outer_leads_ineffect_reason',
-        'memo' => 'memo',
-        'campaignId' => 'campaign_id',
-        'adgroupId' => 'adgroup_id',
-        'wechatAgencyId' => 'wechat_agency_id'
+        'outerLeadsComefrom' => 'outer_leads_comefrom',
+        'memo' => 'memo'
     ];
 
     /**
@@ -164,25 +161,24 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'outerLeadsId' => 'setOuterLeadsId',
+        'leadsId' => 'setLeadsId',
+        'leadsTel' => 'setLeadsTel',
+        'leadsQq' => 'setLeadsQq',
+        'leadsWechat' => 'setLeadsWechat',
+        'clickId' => 'setClickId',
         'leadsType' => 'setLeadsType',
         'leadsUserId' => 'setLeadsUserId',
         'leadsUserType' => 'setLeadsUserType',
         'leadsUserWechatAppid' => 'setLeadsUserWechatAppid',
-        'leadsTel' => 'setLeadsTel',
-        'leadsQq' => 'setLeadsQq',
-        'leadsWechat' => 'setLeadsWechat',
         'leadsName' => 'setLeadsName',
         'leadsGender' => 'setLeadsGender',
         'leadsEmail' => 'setLeadsEmail',
         'leadsArea' => 'setLeadsArea',
         'bundle' => 'setBundle',
-        'clickId' => 'setClickId',
         'outerLeadsConvertType' => 'setOuterLeadsConvertType',
         'outerLeadsIneffectReason' => 'setOuterLeadsIneffectReason',
-        'memo' => 'setMemo',
-        'campaignId' => 'setCampaignId',
-        'adgroupId' => 'setAdgroupId',
-        'wechatAgencyId' => 'setWechatAgencyId'
+        'outerLeadsComefrom' => 'setOuterLeadsComefrom',
+        'memo' => 'setMemo'
     ];
 
     /**
@@ -192,25 +188,24 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'outerLeadsId' => 'getOuterLeadsId',
+        'leadsId' => 'getLeadsId',
+        'leadsTel' => 'getLeadsTel',
+        'leadsQq' => 'getLeadsQq',
+        'leadsWechat' => 'getLeadsWechat',
+        'clickId' => 'getClickId',
         'leadsType' => 'getLeadsType',
         'leadsUserId' => 'getLeadsUserId',
         'leadsUserType' => 'getLeadsUserType',
         'leadsUserWechatAppid' => 'getLeadsUserWechatAppid',
-        'leadsTel' => 'getLeadsTel',
-        'leadsQq' => 'getLeadsQq',
-        'leadsWechat' => 'getLeadsWechat',
         'leadsName' => 'getLeadsName',
         'leadsGender' => 'getLeadsGender',
         'leadsEmail' => 'getLeadsEmail',
         'leadsArea' => 'getLeadsArea',
         'bundle' => 'getBundle',
-        'clickId' => 'getClickId',
         'outerLeadsConvertType' => 'getOuterLeadsConvertType',
         'outerLeadsIneffectReason' => 'getOuterLeadsIneffectReason',
-        'memo' => 'getMemo',
-        'campaignId' => 'getCampaignId',
-        'adgroupId' => 'getAdgroupId',
-        'wechatAgencyId' => 'getWechatAgencyId'
+        'outerLeadsComefrom' => 'getOuterLeadsComefrom',
+        'memo' => 'getMemo'
     ];
 
     /**
@@ -274,25 +269,24 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['outerLeadsId'] = isset($data['outerLeadsId']) ? $data['outerLeadsId'] : null;
+        $this->container['leadsId'] = isset($data['leadsId']) ? $data['leadsId'] : null;
+        $this->container['leadsTel'] = isset($data['leadsTel']) ? $data['leadsTel'] : null;
+        $this->container['leadsQq'] = isset($data['leadsQq']) ? $data['leadsQq'] : null;
+        $this->container['leadsWechat'] = isset($data['leadsWechat']) ? $data['leadsWechat'] : null;
+        $this->container['clickId'] = isset($data['clickId']) ? $data['clickId'] : null;
         $this->container['leadsType'] = isset($data['leadsType']) ? $data['leadsType'] : null;
         $this->container['leadsUserId'] = isset($data['leadsUserId']) ? $data['leadsUserId'] : null;
         $this->container['leadsUserType'] = isset($data['leadsUserType']) ? $data['leadsUserType'] : null;
         $this->container['leadsUserWechatAppid'] = isset($data['leadsUserWechatAppid']) ? $data['leadsUserWechatAppid'] : null;
-        $this->container['leadsTel'] = isset($data['leadsTel']) ? $data['leadsTel'] : null;
-        $this->container['leadsQq'] = isset($data['leadsQq']) ? $data['leadsQq'] : null;
-        $this->container['leadsWechat'] = isset($data['leadsWechat']) ? $data['leadsWechat'] : null;
         $this->container['leadsName'] = isset($data['leadsName']) ? $data['leadsName'] : null;
         $this->container['leadsGender'] = isset($data['leadsGender']) ? $data['leadsGender'] : null;
         $this->container['leadsEmail'] = isset($data['leadsEmail']) ? $data['leadsEmail'] : null;
         $this->container['leadsArea'] = isset($data['leadsArea']) ? $data['leadsArea'] : null;
         $this->container['bundle'] = isset($data['bundle']) ? $data['bundle'] : null;
-        $this->container['clickId'] = isset($data['clickId']) ? $data['clickId'] : null;
         $this->container['outerLeadsConvertType'] = isset($data['outerLeadsConvertType']) ? $data['outerLeadsConvertType'] : null;
         $this->container['outerLeadsIneffectReason'] = isset($data['outerLeadsIneffectReason']) ? $data['outerLeadsIneffectReason'] : null;
+        $this->container['outerLeadsComefrom'] = isset($data['outerLeadsComefrom']) ? $data['outerLeadsComefrom'] : null;
         $this->container['memo'] = isset($data['memo']) ? $data['memo'] : null;
-        $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
-        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
-        $this->container['wechatAgencyId'] = isset($data['wechatAgencyId']) ? $data['wechatAgencyId'] : null;
     }
 
     /**
@@ -339,6 +333,126 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     public function setOuterLeadsId($outerLeadsId)
     {
         $this->container['outerLeadsId'] = $outerLeadsId;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsId
+     *
+     * @return int
+     */
+    public function getLeadsId()
+    {
+        return $this->container['leadsId'];
+    }
+
+    /**
+     * Sets leadsId
+     *
+     * @param int $leadsId leadsId
+     *
+     * @return $this
+     */
+    public function setLeadsId($leadsId)
+    {
+        $this->container['leadsId'] = $leadsId;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsTel
+     *
+     * @return string
+     */
+    public function getLeadsTel()
+    {
+        return $this->container['leadsTel'];
+    }
+
+    /**
+     * Sets leadsTel
+     *
+     * @param string $leadsTel leadsTel
+     *
+     * @return $this
+     */
+    public function setLeadsTel($leadsTel)
+    {
+        $this->container['leadsTel'] = $leadsTel;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsQq
+     *
+     * @return int
+     */
+    public function getLeadsQq()
+    {
+        return $this->container['leadsQq'];
+    }
+
+    /**
+     * Sets leadsQq
+     *
+     * @param int $leadsQq leadsQq
+     *
+     * @return $this
+     */
+    public function setLeadsQq($leadsQq)
+    {
+        $this->container['leadsQq'] = $leadsQq;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsWechat
+     *
+     * @return string
+     */
+    public function getLeadsWechat()
+    {
+        return $this->container['leadsWechat'];
+    }
+
+    /**
+     * Sets leadsWechat
+     *
+     * @param string $leadsWechat leadsWechat
+     *
+     * @return $this
+     */
+    public function setLeadsWechat($leadsWechat)
+    {
+        $this->container['leadsWechat'] = $leadsWechat;
+
+        return $this;
+    }
+
+    /**
+     * Gets clickId
+     *
+     * @return string
+     */
+    public function getClickId()
+    {
+        return $this->container['clickId'];
+    }
+
+    /**
+     * Sets clickId
+     *
+     * @param string $clickId clickId
+     *
+     * @return $this
+     */
+    public function setClickId($clickId)
+    {
+        $this->container['clickId'] = $clickId;
 
         return $this;
     }
@@ -435,78 +549,6 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     public function setLeadsUserWechatAppid($leadsUserWechatAppid)
     {
         $this->container['leadsUserWechatAppid'] = $leadsUserWechatAppid;
-
-        return $this;
-    }
-
-    /**
-     * Gets leadsTel
-     *
-     * @return string
-     */
-    public function getLeadsTel()
-    {
-        return $this->container['leadsTel'];
-    }
-
-    /**
-     * Sets leadsTel
-     *
-     * @param string $leadsTel leadsTel
-     *
-     * @return $this
-     */
-    public function setLeadsTel($leadsTel)
-    {
-        $this->container['leadsTel'] = $leadsTel;
-
-        return $this;
-    }
-
-    /**
-     * Gets leadsQq
-     *
-     * @return int
-     */
-    public function getLeadsQq()
-    {
-        return $this->container['leadsQq'];
-    }
-
-    /**
-     * Sets leadsQq
-     *
-     * @param int $leadsQq leadsQq
-     *
-     * @return $this
-     */
-    public function setLeadsQq($leadsQq)
-    {
-        $this->container['leadsQq'] = $leadsQq;
-
-        return $this;
-    }
-
-    /**
-     * Gets leadsWechat
-     *
-     * @return string
-     */
-    public function getLeadsWechat()
-    {
-        return $this->container['leadsWechat'];
-    }
-
-    /**
-     * Sets leadsWechat
-     *
-     * @param string $leadsWechat leadsWechat
-     *
-     * @return $this
-     */
-    public function setLeadsWechat($leadsWechat)
-    {
-        $this->container['leadsWechat'] = $leadsWechat;
 
         return $this;
     }
@@ -632,30 +674,6 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets clickId
-     *
-     * @return string
-     */
-    public function getClickId()
-    {
-        return $this->container['clickId'];
-    }
-
-    /**
-     * Sets clickId
-     *
-     * @param string $clickId clickId
-     *
-     * @return $this
-     */
-    public function setClickId($clickId)
-    {
-        $this->container['clickId'] = $clickId;
-
-        return $this;
-    }
-
-    /**
      * Gets outerLeadsConvertType
      *
      * @return string
@@ -704,6 +722,30 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets outerLeadsComefrom
+     *
+     * @return \TencentAds\Model\ActionChannelType
+     */
+    public function getOuterLeadsComefrom()
+    {
+        return $this->container['outerLeadsComefrom'];
+    }
+
+    /**
+     * Sets outerLeadsComefrom
+     *
+     * @param \TencentAds\Model\ActionChannelType $outerLeadsComefrom outerLeadsComefrom
+     *
+     * @return $this
+     */
+    public function setOuterLeadsComefrom($outerLeadsComefrom)
+    {
+        $this->container['outerLeadsComefrom'] = $outerLeadsComefrom;
+
+        return $this;
+    }
+
+    /**
      * Gets memo
      *
      * @return string
@@ -723,78 +765,6 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     public function setMemo($memo)
     {
         $this->container['memo'] = $memo;
-
-        return $this;
-    }
-
-    /**
-     * Gets campaignId
-     *
-     * @return int
-     */
-    public function getCampaignId()
-    {
-        return $this->container['campaignId'];
-    }
-
-    /**
-     * Sets campaignId
-     *
-     * @param int $campaignId campaignId
-     *
-     * @return $this
-     */
-    public function setCampaignId($campaignId)
-    {
-        $this->container['campaignId'] = $campaignId;
-
-        return $this;
-    }
-
-    /**
-     * Gets adgroupId
-     *
-     * @return int
-     */
-    public function getAdgroupId()
-    {
-        return $this->container['adgroupId'];
-    }
-
-    /**
-     * Sets adgroupId
-     *
-     * @param int $adgroupId adgroupId
-     *
-     * @return $this
-     */
-    public function setAdgroupId($adgroupId)
-    {
-        $this->container['adgroupId'] = $adgroupId;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatAgencyId
-     *
-     * @return string
-     */
-    public function getWechatAgencyId()
-    {
-        return $this->container['wechatAgencyId'];
-    }
-
-    /**
-     * Sets wechatAgencyId
-     *
-     * @param string $wechatAgencyId wechatAgencyId
-     *
-     * @return $this
-     */
-    public function setWechatAgencyId($wechatAgencyId)
-    {
-        $this->container['wechatAgencyId'] = $wechatAgencyId;
 
         return $this;
     }

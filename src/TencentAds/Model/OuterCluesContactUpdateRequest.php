@@ -58,6 +58,7 @@ class OuterCluesContactUpdateRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
+        'matchType' => '\TencentAds\Model\LeadsMatchType',
         'leadsContactList' => '\TencentAds\Model\LeadsContactInfoStruct[]'
     ];
 
@@ -68,6 +69,7 @@ class OuterCluesContactUpdateRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'accountId' => 'int64',
+        'matchType' => null,
         'leadsContactList' => null
     ];
 
@@ -99,6 +101,7 @@ class OuterCluesContactUpdateRequest implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'accountId' => 'account_id',
+        'matchType' => 'match_type',
         'leadsContactList' => 'leads_contact_list'
     ];
 
@@ -109,6 +112,7 @@ class OuterCluesContactUpdateRequest implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'accountId' => 'setAccountId',
+        'matchType' => 'setMatchType',
         'leadsContactList' => 'setLeadsContactList'
     ];
 
@@ -119,6 +123,7 @@ class OuterCluesContactUpdateRequest implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'accountId' => 'getAccountId',
+        'matchType' => 'getMatchType',
         'leadsContactList' => 'getLeadsContactList'
     ];
 
@@ -183,6 +188,7 @@ class OuterCluesContactUpdateRequest implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['matchType'] = isset($data['matchType']) ? $data['matchType'] : null;
         $this->container['leadsContactList'] = isset($data['leadsContactList']) ? $data['leadsContactList'] : null;
     }
 
@@ -230,6 +236,30 @@ class OuterCluesContactUpdateRequest implements ModelInterface, ArrayAccess
     public function setAccountId($accountId)
     {
         $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets matchType
+     *
+     * @return \TencentAds\Model\LeadsMatchType
+     */
+    public function getMatchType()
+    {
+        return $this->container['matchType'];
+    }
+
+    /**
+     * Sets matchType
+     *
+     * @param \TencentAds\Model\LeadsMatchType $matchType matchType
+     *
+     * @return $this
+     */
+    public function setMatchType($matchType)
+    {
+        $this->container['matchType'] = $matchType;
 
         return $this;
     }

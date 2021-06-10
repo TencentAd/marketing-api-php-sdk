@@ -1,6 +1,6 @@
 <?php
 /**
- * OuterCluesAddListStruct
+ * LandingPageConfig
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * OuterCluesAddListStruct Class Doc Comment
+ * LandingPageConfig Class Doc Comment
  *
  * @category Class
- * @description 返回结构
+ * @description 支持的落地页类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
+class LandingPageConfig implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'OuterCluesAddListStruct';
+    protected static $swaggerModelName = 'landing_page_config';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,8 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'index' => 'int',
-        'outerLeadsId' => 'string'
+        'required' => 'bool',
+        'supportPageTypeList' => '\TencentAds\Model\SupportPageTypeStruct[]'
     ];
 
     /**
@@ -68,8 +68,8 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'index' => 'int64',
-        'outerLeadsId' => null
+        'required' => null,
+        'supportPageTypeList' => null
     ];
 
     /**
@@ -99,8 +99,8 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'index' => 'index',
-        'outerLeadsId' => 'outer_leads_id'
+        'required' => 'required',
+        'supportPageTypeList' => 'support_page_type_list'
     ];
 
     /**
@@ -109,8 +109,8 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'index' => 'setIndex',
-        'outerLeadsId' => 'setOuterLeadsId'
+        'required' => 'setRequired',
+        'supportPageTypeList' => 'setSupportPageTypeList'
     ];
 
     /**
@@ -119,8 +119,8 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'index' => 'getIndex',
-        'outerLeadsId' => 'getOuterLeadsId'
+        'required' => 'getRequired',
+        'supportPageTypeList' => 'getSupportPageTypeList'
     ];
 
     /**
@@ -183,8 +183,8 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['index'] = isset($data['index']) ? $data['index'] : null;
-        $this->container['outerLeadsId'] = isset($data['outerLeadsId']) ? $data['outerLeadsId'] : null;
+        $this->container['required'] = isset($data['required']) ? $data['required'] : null;
+        $this->container['supportPageTypeList'] = isset($data['supportPageTypeList']) ? $data['supportPageTypeList'] : null;
     }
 
     /**
@@ -212,49 +212,49 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets index
+     * Gets required
      *
-     * @return int
+     * @return bool
      */
-    public function getIndex()
+    public function getRequired()
     {
-        return $this->container['index'];
+        return $this->container['required'];
     }
 
     /**
-     * Sets index
+     * Sets required
      *
-     * @param int $index index
+     * @param bool $required required
      *
      * @return $this
      */
-    public function setIndex($index)
+    public function setRequired($required)
     {
-        $this->container['index'] = $index;
+        $this->container['required'] = $required;
 
         return $this;
     }
 
     /**
-     * Gets outerLeadsId
+     * Gets supportPageTypeList
      *
-     * @return string
+     * @return \TencentAds\Model\SupportPageTypeStruct[]
      */
-    public function getOuterLeadsId()
+    public function getSupportPageTypeList()
     {
-        return $this->container['outerLeadsId'];
+        return $this->container['supportPageTypeList'];
     }
 
     /**
-     * Sets outerLeadsId
+     * Sets supportPageTypeList
      *
-     * @param string $outerLeadsId outerLeadsId
+     * @param \TencentAds\Model\SupportPageTypeStruct[] $supportPageTypeList supportPageTypeList
      *
      * @return $this
      */
-    public function setOuterLeadsId($outerLeadsId)
+    public function setSupportPageTypeList($supportPageTypeList)
     {
-        $this->container['outerLeadsId'] = $outerLeadsId;
+        $this->container['supportPageTypeList'] = $supportPageTypeList;
 
         return $this;
     }

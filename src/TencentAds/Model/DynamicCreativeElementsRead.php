@@ -79,6 +79,9 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'buttonText' => 'string',
         'bottomText' => 'string',
         'activityType' => 'string',
+        'countdownBegin' => 'int',
+        'countdownPrice' => 'string',
+        'countdownTimeType' => '\TencentAds\Model\AdCreativeCountdownTimeType',
         'miniProgramId' => 'string',
         'miniProgramPath' => 'string',
         'label' => '\TencentAds\Model\CreativeLabel[]',
@@ -153,6 +156,9 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'buttonText' => null,
         'bottomText' => null,
         'activityType' => null,
+        'countdownBegin' => 'int64',
+        'countdownPrice' => null,
+        'countdownTimeType' => null,
         'miniProgramId' => null,
         'miniProgramPath' => null,
         'label' => null,
@@ -248,6 +254,9 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'buttonText' => 'button_text',
         'bottomText' => 'bottom_text',
         'activityType' => 'activity_type',
+        'countdownBegin' => 'countdown_begin',
+        'countdownPrice' => 'countdown_price',
+        'countdownTimeType' => 'countdown_time_type',
         'miniProgramId' => 'mini_program_id',
         'miniProgramPath' => 'mini_program_path',
         'label' => 'label',
@@ -322,6 +331,9 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'buttonText' => 'setButtonText',
         'bottomText' => 'setBottomText',
         'activityType' => 'setActivityType',
+        'countdownBegin' => 'setCountdownBegin',
+        'countdownPrice' => 'setCountdownPrice',
+        'countdownTimeType' => 'setCountdownTimeType',
         'miniProgramId' => 'setMiniProgramId',
         'miniProgramPath' => 'setMiniProgramPath',
         'label' => 'setLabel',
@@ -396,6 +408,9 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'buttonText' => 'getButtonText',
         'bottomText' => 'getBottomText',
         'activityType' => 'getActivityType',
+        'countdownBegin' => 'getCountdownBegin',
+        'countdownPrice' => 'getCountdownPrice',
+        'countdownTimeType' => 'getCountdownTimeType',
         'miniProgramId' => 'getMiniProgramId',
         'miniProgramPath' => 'getMiniProgramPath',
         'label' => 'getLabel',
@@ -524,6 +539,9 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         $this->container['buttonText'] = isset($data['buttonText']) ? $data['buttonText'] : null;
         $this->container['bottomText'] = isset($data['bottomText']) ? $data['bottomText'] : null;
         $this->container['activityType'] = isset($data['activityType']) ? $data['activityType'] : null;
+        $this->container['countdownBegin'] = isset($data['countdownBegin']) ? $data['countdownBegin'] : null;
+        $this->container['countdownPrice'] = isset($data['countdownPrice']) ? $data['countdownPrice'] : null;
+        $this->container['countdownTimeType'] = isset($data['countdownTimeType']) ? $data['countdownTimeType'] : null;
         $this->container['miniProgramId'] = isset($data['miniProgramId']) ? $data['miniProgramId'] : null;
         $this->container['miniProgramPath'] = isset($data['miniProgramPath']) ? $data['miniProgramPath'] : null;
         $this->container['label'] = isset($data['label']) ? $data['label'] : null;
@@ -1095,6 +1113,78 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
     public function setActivityType($activityType)
     {
         $this->container['activityType'] = $activityType;
+
+        return $this;
+    }
+
+    /**
+     * Gets countdownBegin
+     *
+     * @return int
+     */
+    public function getCountdownBegin()
+    {
+        return $this->container['countdownBegin'];
+    }
+
+    /**
+     * Sets countdownBegin
+     *
+     * @param int $countdownBegin countdownBegin
+     *
+     * @return $this
+     */
+    public function setCountdownBegin($countdownBegin)
+    {
+        $this->container['countdownBegin'] = $countdownBegin;
+
+        return $this;
+    }
+
+    /**
+     * Gets countdownPrice
+     *
+     * @return string
+     */
+    public function getCountdownPrice()
+    {
+        return $this->container['countdownPrice'];
+    }
+
+    /**
+     * Sets countdownPrice
+     *
+     * @param string $countdownPrice countdownPrice
+     *
+     * @return $this
+     */
+    public function setCountdownPrice($countdownPrice)
+    {
+        $this->container['countdownPrice'] = $countdownPrice;
+
+        return $this;
+    }
+
+    /**
+     * Gets countdownTimeType
+     *
+     * @return \TencentAds\Model\AdCreativeCountdownTimeType
+     */
+    public function getCountdownTimeType()
+    {
+        return $this->container['countdownTimeType'];
+    }
+
+    /**
+     * Sets countdownTimeType
+     *
+     * @param \TencentAds\Model\AdCreativeCountdownTimeType $countdownTimeType countdownTimeType
+     *
+     * @return $this
+     */
+    public function setCountdownTimeType($countdownTimeType)
+    {
+        $this->container['countdownTimeType'] = $countdownTimeType;
 
         return $this;
     }

@@ -59,13 +59,16 @@ class ActionsUserId implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'hashImei' => 'string',
+        'md5Sha256Imei' => 'string',
         'hashIdfa' => 'string',
+        'md5Sha256Idfa' => 'string',
         'gdtOpenid' => 'string',
         'hashPhone' => 'string',
         'sha256Phone' => 'string',
         'hashAndroidId' => 'string',
         'hashMac' => 'string',
         'oaid' => 'string',
+        'md5Sha256Oaid' => 'string',
         'wechatOpenid' => 'string',
         'wechatUnionid' => 'string',
         'wechatAppId' => 'string'
@@ -78,13 +81,16 @@ class ActionsUserId implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'hashImei' => null,
+        'md5Sha256Imei' => null,
         'hashIdfa' => null,
+        'md5Sha256Idfa' => null,
         'gdtOpenid' => null,
         'hashPhone' => null,
         'sha256Phone' => null,
         'hashAndroidId' => null,
         'hashMac' => null,
         'oaid' => null,
+        'md5Sha256Oaid' => null,
         'wechatOpenid' => null,
         'wechatUnionid' => null,
         'wechatAppId' => null
@@ -118,13 +124,16 @@ class ActionsUserId implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'hashImei' => 'hash_imei',
+        'md5Sha256Imei' => 'md5_sha256_imei',
         'hashIdfa' => 'hash_idfa',
+        'md5Sha256Idfa' => 'md5_sha256_idfa',
         'gdtOpenid' => 'gdt_openid',
         'hashPhone' => 'hash_phone',
         'sha256Phone' => 'sha256_phone',
         'hashAndroidId' => 'hash_android_id',
         'hashMac' => 'hash_mac',
         'oaid' => 'oaid',
+        'md5Sha256Oaid' => 'md5_sha256_oaid',
         'wechatOpenid' => 'wechat_openid',
         'wechatUnionid' => 'wechat_unionid',
         'wechatAppId' => 'wechat_app_id'
@@ -137,13 +146,16 @@ class ActionsUserId implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'hashImei' => 'setHashImei',
+        'md5Sha256Imei' => 'setMd5Sha256Imei',
         'hashIdfa' => 'setHashIdfa',
+        'md5Sha256Idfa' => 'setMd5Sha256Idfa',
         'gdtOpenid' => 'setGdtOpenid',
         'hashPhone' => 'setHashPhone',
         'sha256Phone' => 'setSha256Phone',
         'hashAndroidId' => 'setHashAndroidId',
         'hashMac' => 'setHashMac',
         'oaid' => 'setOaid',
+        'md5Sha256Oaid' => 'setMd5Sha256Oaid',
         'wechatOpenid' => 'setWechatOpenid',
         'wechatUnionid' => 'setWechatUnionid',
         'wechatAppId' => 'setWechatAppId'
@@ -156,13 +168,16 @@ class ActionsUserId implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'hashImei' => 'getHashImei',
+        'md5Sha256Imei' => 'getMd5Sha256Imei',
         'hashIdfa' => 'getHashIdfa',
+        'md5Sha256Idfa' => 'getMd5Sha256Idfa',
         'gdtOpenid' => 'getGdtOpenid',
         'hashPhone' => 'getHashPhone',
         'sha256Phone' => 'getSha256Phone',
         'hashAndroidId' => 'getHashAndroidId',
         'hashMac' => 'getHashMac',
         'oaid' => 'getOaid',
+        'md5Sha256Oaid' => 'getMd5Sha256Oaid',
         'wechatOpenid' => 'getWechatOpenid',
         'wechatUnionid' => 'getWechatUnionid',
         'wechatAppId' => 'getWechatAppId'
@@ -229,13 +244,16 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['hashImei'] = isset($data['hashImei']) ? $data['hashImei'] : null;
+        $this->container['md5Sha256Imei'] = isset($data['md5Sha256Imei']) ? $data['md5Sha256Imei'] : null;
         $this->container['hashIdfa'] = isset($data['hashIdfa']) ? $data['hashIdfa'] : null;
+        $this->container['md5Sha256Idfa'] = isset($data['md5Sha256Idfa']) ? $data['md5Sha256Idfa'] : null;
         $this->container['gdtOpenid'] = isset($data['gdtOpenid']) ? $data['gdtOpenid'] : null;
         $this->container['hashPhone'] = isset($data['hashPhone']) ? $data['hashPhone'] : null;
         $this->container['sha256Phone'] = isset($data['sha256Phone']) ? $data['sha256Phone'] : null;
         $this->container['hashAndroidId'] = isset($data['hashAndroidId']) ? $data['hashAndroidId'] : null;
         $this->container['hashMac'] = isset($data['hashMac']) ? $data['hashMac'] : null;
         $this->container['oaid'] = isset($data['oaid']) ? $data['oaid'] : null;
+        $this->container['md5Sha256Oaid'] = isset($data['md5Sha256Oaid']) ? $data['md5Sha256Oaid'] : null;
         $this->container['wechatOpenid'] = isset($data['wechatOpenid']) ? $data['wechatOpenid'] : null;
         $this->container['wechatUnionid'] = isset($data['wechatUnionid']) ? $data['wechatUnionid'] : null;
         $this->container['wechatAppId'] = isset($data['wechatAppId']) ? $data['wechatAppId'] : null;
@@ -290,6 +308,30 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets md5Sha256Imei
+     *
+     * @return string
+     */
+    public function getMd5Sha256Imei()
+    {
+        return $this->container['md5Sha256Imei'];
+    }
+
+    /**
+     * Sets md5Sha256Imei
+     *
+     * @param string $md5Sha256Imei md5Sha256Imei
+     *
+     * @return $this
+     */
+    public function setMd5Sha256Imei($md5Sha256Imei)
+    {
+        $this->container['md5Sha256Imei'] = $md5Sha256Imei;
+
+        return $this;
+    }
+
+    /**
      * Gets hashIdfa
      *
      * @return string
@@ -309,6 +351,30 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     public function setHashIdfa($hashIdfa)
     {
         $this->container['hashIdfa'] = $hashIdfa;
+
+        return $this;
+    }
+
+    /**
+     * Gets md5Sha256Idfa
+     *
+     * @return string
+     */
+    public function getMd5Sha256Idfa()
+    {
+        return $this->container['md5Sha256Idfa'];
+    }
+
+    /**
+     * Sets md5Sha256Idfa
+     *
+     * @param string $md5Sha256Idfa md5Sha256Idfa
+     *
+     * @return $this
+     */
+    public function setMd5Sha256Idfa($md5Sha256Idfa)
+    {
+        $this->container['md5Sha256Idfa'] = $md5Sha256Idfa;
 
         return $this;
     }
@@ -453,6 +519,30 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     public function setOaid($oaid)
     {
         $this->container['oaid'] = $oaid;
+
+        return $this;
+    }
+
+    /**
+     * Gets md5Sha256Oaid
+     *
+     * @return string
+     */
+    public function getMd5Sha256Oaid()
+    {
+        return $this->container['md5Sha256Oaid'];
+    }
+
+    /**
+     * Sets md5Sha256Oaid
+     *
+     * @param string $md5Sha256Oaid md5Sha256Oaid
+     *
+     * @return $this
+     */
+    public function setMd5Sha256Oaid($md5Sha256Oaid)
+    {
+        $this->container['md5Sha256Oaid'] = $md5Sha256Oaid;
 
         return $this;
     }

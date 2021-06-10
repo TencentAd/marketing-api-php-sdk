@@ -58,6 +58,7 @@ class OuterCluesContactUpdateListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'index' => 'int',
         'outerLeadsId' => 'string'
     ];
 
@@ -67,6 +68,7 @@ class OuterCluesContactUpdateListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
+        'index' => 'int64',
         'outerLeadsId' => null
     ];
 
@@ -97,6 +99,7 @@ class OuterCluesContactUpdateListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'index' => 'index',
         'outerLeadsId' => 'outer_leads_id'
     ];
 
@@ -106,6 +109,7 @@ class OuterCluesContactUpdateListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'index' => 'setIndex',
         'outerLeadsId' => 'setOuterLeadsId'
     ];
 
@@ -115,6 +119,7 @@ class OuterCluesContactUpdateListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'index' => 'getIndex',
         'outerLeadsId' => 'getOuterLeadsId'
     ];
 
@@ -178,6 +183,7 @@ class OuterCluesContactUpdateListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['index'] = isset($data['index']) ? $data['index'] : null;
         $this->container['outerLeadsId'] = isset($data['outerLeadsId']) ? $data['outerLeadsId'] : null;
     }
 
@@ -204,6 +210,30 @@ class OuterCluesContactUpdateListStruct implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets index
+     *
+     * @return int
+     */
+    public function getIndex()
+    {
+        return $this->container['index'];
+    }
+
+    /**
+     * Sets index
+     *
+     * @param int $index index
+     *
+     * @return $this
+     */
+    public function setIndex($index)
+    {
+        $this->container['index'] = $index;
+
+        return $this;
+    }
 
     /**
      * Gets outerLeadsId

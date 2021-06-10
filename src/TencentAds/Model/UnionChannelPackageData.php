@@ -66,7 +66,8 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
         'systemStatus' => '\TencentAds\Model\UnionPackageSysStatus',
-        'systemMessage' => 'string'
+        'systemMessage' => 'string',
+        'customizedChannelId' => 'string'
     ];
 
     /**
@@ -83,7 +84,8 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
         'createdTime' => 'int64',
         'lastModifiedTime' => 'int64',
         'systemStatus' => null,
-        'systemMessage' => null
+        'systemMessage' => null,
+        'customizedChannelId' => null
     ];
 
     /**
@@ -121,7 +123,8 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
         'createdTime' => 'created_time',
         'lastModifiedTime' => 'last_modified_time',
         'systemStatus' => 'system_status',
-        'systemMessage' => 'system_message'
+        'systemMessage' => 'system_message',
+        'customizedChannelId' => 'customized_channel_id'
     ];
 
     /**
@@ -138,7 +141,8 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
         'createdTime' => 'setCreatedTime',
         'lastModifiedTime' => 'setLastModifiedTime',
         'systemStatus' => 'setSystemStatus',
-        'systemMessage' => 'setSystemMessage'
+        'systemMessage' => 'setSystemMessage',
+        'customizedChannelId' => 'setCustomizedChannelId'
     ];
 
     /**
@@ -155,7 +159,8 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
         'createdTime' => 'getCreatedTime',
         'lastModifiedTime' => 'getLastModifiedTime',
         'systemStatus' => 'getSystemStatus',
-        'systemMessage' => 'getSystemMessage'
+        'systemMessage' => 'getSystemMessage',
+        'customizedChannelId' => 'getCustomizedChannelId'
     ];
 
     /**
@@ -227,6 +232,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
         $this->container['systemStatus'] = isset($data['systemStatus']) ? $data['systemStatus'] : null;
         $this->container['systemMessage'] = isset($data['systemMessage']) ? $data['systemMessage'] : null;
+        $this->container['customizedChannelId'] = isset($data['customizedChannelId']) ? $data['customizedChannelId'] : null;
     }
 
     /**
@@ -465,6 +471,30 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
     public function setSystemMessage($systemMessage)
     {
         $this->container['systemMessage'] = $systemMessage;
+
+        return $this;
+    }
+
+    /**
+     * Gets customizedChannelId
+     *
+     * @return string
+     */
+    public function getCustomizedChannelId()
+    {
+        return $this->container['customizedChannelId'];
+    }
+
+    /**
+     * Sets customizedChannelId
+     *
+     * @param string $customizedChannelId customizedChannelId
+     *
+     * @return $this
+     */
+    public function setCustomizedChannelId($customizedChannelId)
+    {
+        $this->container['customizedChannelId'] = $customizedChannelId;
 
         return $this;
     }

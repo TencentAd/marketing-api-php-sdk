@@ -72,6 +72,9 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         'url' => 'string',
         'buttonText' => 'string',
         'bottomText' => 'string',
+        'countdownBegin' => 'int',
+        'countdownPrice' => 'string',
+        'countdownTimeType' => '\TencentAds\Model\AdCreativeCountdownTimeType',
         'label' => '\TencentAds\Model\CreativeLabel[]',
         'productTags' => 'string[]',
         'logoDescription' => 'string',
@@ -137,6 +140,9 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         'url' => null,
         'buttonText' => null,
         'bottomText' => null,
+        'countdownBegin' => 'int64',
+        'countdownPrice' => null,
+        'countdownTimeType' => null,
         'label' => null,
         'productTags' => null,
         'logoDescription' => null,
@@ -223,6 +229,9 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         'url' => 'url',
         'buttonText' => 'button_text',
         'bottomText' => 'bottom_text',
+        'countdownBegin' => 'countdown_begin',
+        'countdownPrice' => 'countdown_price',
+        'countdownTimeType' => 'countdown_time_type',
         'label' => 'label',
         'productTags' => 'product_tags',
         'logoDescription' => 'logo_description',
@@ -288,6 +297,9 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         'url' => 'setUrl',
         'buttonText' => 'setButtonText',
         'bottomText' => 'setBottomText',
+        'countdownBegin' => 'setCountdownBegin',
+        'countdownPrice' => 'setCountdownPrice',
+        'countdownTimeType' => 'setCountdownTimeType',
         'label' => 'setLabel',
         'productTags' => 'setProductTags',
         'logoDescription' => 'setLogoDescription',
@@ -353,6 +365,9 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         'url' => 'getUrl',
         'buttonText' => 'getButtonText',
         'bottomText' => 'getBottomText',
+        'countdownBegin' => 'getCountdownBegin',
+        'countdownPrice' => 'getCountdownPrice',
+        'countdownTimeType' => 'getCountdownTimeType',
         'label' => 'getLabel',
         'productTags' => 'getProductTags',
         'logoDescription' => 'getLogoDescription',
@@ -472,6 +487,9 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         $this->container['url'] = isset($data['url']) ? $data['url'] : null;
         $this->container['buttonText'] = isset($data['buttonText']) ? $data['buttonText'] : null;
         $this->container['bottomText'] = isset($data['bottomText']) ? $data['bottomText'] : null;
+        $this->container['countdownBegin'] = isset($data['countdownBegin']) ? $data['countdownBegin'] : null;
+        $this->container['countdownPrice'] = isset($data['countdownPrice']) ? $data['countdownPrice'] : null;
+        $this->container['countdownTimeType'] = isset($data['countdownTimeType']) ? $data['countdownTimeType'] : null;
         $this->container['label'] = isset($data['label']) ? $data['label'] : null;
         $this->container['productTags'] = isset($data['productTags']) ? $data['productTags'] : null;
         $this->container['logoDescription'] = isset($data['logoDescription']) ? $data['logoDescription'] : null;
@@ -873,6 +891,78 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
     public function setBottomText($bottomText)
     {
         $this->container['bottomText'] = $bottomText;
+
+        return $this;
+    }
+
+    /**
+     * Gets countdownBegin
+     *
+     * @return int
+     */
+    public function getCountdownBegin()
+    {
+        return $this->container['countdownBegin'];
+    }
+
+    /**
+     * Sets countdownBegin
+     *
+     * @param int $countdownBegin countdownBegin
+     *
+     * @return $this
+     */
+    public function setCountdownBegin($countdownBegin)
+    {
+        $this->container['countdownBegin'] = $countdownBegin;
+
+        return $this;
+    }
+
+    /**
+     * Gets countdownPrice
+     *
+     * @return string
+     */
+    public function getCountdownPrice()
+    {
+        return $this->container['countdownPrice'];
+    }
+
+    /**
+     * Sets countdownPrice
+     *
+     * @param string $countdownPrice countdownPrice
+     *
+     * @return $this
+     */
+    public function setCountdownPrice($countdownPrice)
+    {
+        $this->container['countdownPrice'] = $countdownPrice;
+
+        return $this;
+    }
+
+    /**
+     * Gets countdownTimeType
+     *
+     * @return \TencentAds\Model\AdCreativeCountdownTimeType
+     */
+    public function getCountdownTimeType()
+    {
+        return $this->container['countdownTimeType'];
+    }
+
+    /**
+     * Sets countdownTimeType
+     *
+     * @param \TencentAds\Model\AdCreativeCountdownTimeType $countdownTimeType countdownTimeType
+     *
+     * @return $this
+     */
+    public function setCountdownTimeType($countdownTimeType)
+    {
+        $this->container['countdownTimeType'] = $countdownTimeType;
 
         return $this;
     }

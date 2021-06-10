@@ -59,6 +59,8 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'outerLeadsId' => 'string',
+        'leadsId' => 'int',
+        'clickId' => 'string',
         'leadsUserType' => '\TencentAds\Model\LeadsUserType',
         'leadsUserWechatAppid' => 'string',
         'leadsUserId' => 'string',
@@ -80,6 +82,8 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'outerLeadsId' => null,
+        'leadsId' => 'int64',
+        'clickId' => null,
         'leadsUserType' => null,
         'leadsUserWechatAppid' => null,
         'leadsUserId' => null,
@@ -122,6 +126,8 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'outerLeadsId' => 'outer_leads_id',
+        'leadsId' => 'leads_id',
+        'clickId' => 'click_id',
         'leadsUserType' => 'leads_user_type',
         'leadsUserWechatAppid' => 'leads_user_wechat_appid',
         'leadsUserId' => 'leads_user_id',
@@ -143,6 +149,8 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'outerLeadsId' => 'setOuterLeadsId',
+        'leadsId' => 'setLeadsId',
+        'clickId' => 'setClickId',
         'leadsUserType' => 'setLeadsUserType',
         'leadsUserWechatAppid' => 'setLeadsUserWechatAppid',
         'leadsUserId' => 'setLeadsUserId',
@@ -164,6 +172,8 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'outerLeadsId' => 'getOuterLeadsId',
+        'leadsId' => 'getLeadsId',
+        'clickId' => 'getClickId',
         'leadsUserType' => 'getLeadsUserType',
         'leadsUserWechatAppid' => 'getLeadsUserWechatAppid',
         'leadsUserId' => 'getLeadsUserId',
@@ -239,6 +249,8 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['outerLeadsId'] = isset($data['outerLeadsId']) ? $data['outerLeadsId'] : null;
+        $this->container['leadsId'] = isset($data['leadsId']) ? $data['leadsId'] : null;
+        $this->container['clickId'] = isset($data['clickId']) ? $data['clickId'] : null;
         $this->container['leadsUserType'] = isset($data['leadsUserType']) ? $data['leadsUserType'] : null;
         $this->container['leadsUserWechatAppid'] = isset($data['leadsUserWechatAppid']) ? $data['leadsUserWechatAppid'] : null;
         $this->container['leadsUserId'] = isset($data['leadsUserId']) ? $data['leadsUserId'] : null;
@@ -297,6 +309,54 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
     public function setOuterLeadsId($outerLeadsId)
     {
         $this->container['outerLeadsId'] = $outerLeadsId;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsId
+     *
+     * @return int
+     */
+    public function getLeadsId()
+    {
+        return $this->container['leadsId'];
+    }
+
+    /**
+     * Sets leadsId
+     *
+     * @param int $leadsId leadsId
+     *
+     * @return $this
+     */
+    public function setLeadsId($leadsId)
+    {
+        $this->container['leadsId'] = $leadsId;
+
+        return $this;
+    }
+
+    /**
+     * Gets clickId
+     *
+     * @return string
+     */
+    public function getClickId()
+    {
+        return $this->container['clickId'];
+    }
+
+    /**
+     * Sets clickId
+     *
+     * @param string $clickId clickId
+     *
+     * @return $this
+     */
+    public function setClickId($clickId)
+    {
+        $this->container['clickId'] = $clickId;
 
         return $this;
     }

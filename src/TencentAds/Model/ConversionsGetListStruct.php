@@ -72,7 +72,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'siteSetEnable' => 'bool',
         'isDeleted' => 'bool',
         'accessStatus' => '\TencentAds\Model\AccessStatus',
-        'createSourceType' => '\TencentAds\Model\CreateSourceType'
+        'createSourceType' => '\TencentAds\Model\CreateSourceType',
+        'appAndroidChannelPackageId' => 'string'
     ];
 
     /**
@@ -95,7 +96,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'siteSetEnable' => null,
         'isDeleted' => null,
         'accessStatus' => null,
-        'createSourceType' => null
+        'createSourceType' => null,
+        'appAndroidChannelPackageId' => null
     ];
 
     /**
@@ -139,7 +141,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'siteSetEnable' => 'site_set_enable',
         'isDeleted' => 'is_deleted',
         'accessStatus' => 'access_status',
-        'createSourceType' => 'create_source_type'
+        'createSourceType' => 'create_source_type',
+        'appAndroidChannelPackageId' => 'app_android_channel_package_id'
     ];
 
     /**
@@ -162,7 +165,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'siteSetEnable' => 'setSiteSetEnable',
         'isDeleted' => 'setIsDeleted',
         'accessStatus' => 'setAccessStatus',
-        'createSourceType' => 'setCreateSourceType'
+        'createSourceType' => 'setCreateSourceType',
+        'appAndroidChannelPackageId' => 'setAppAndroidChannelPackageId'
     ];
 
     /**
@@ -185,7 +189,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'siteSetEnable' => 'getSiteSetEnable',
         'isDeleted' => 'getIsDeleted',
         'accessStatus' => 'getAccessStatus',
-        'createSourceType' => 'getCreateSourceType'
+        'createSourceType' => 'getCreateSourceType',
+        'appAndroidChannelPackageId' => 'getAppAndroidChannelPackageId'
     ];
 
     /**
@@ -263,6 +268,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['isDeleted'] = isset($data['isDeleted']) ? $data['isDeleted'] : null;
         $this->container['accessStatus'] = isset($data['accessStatus']) ? $data['accessStatus'] : null;
         $this->container['createSourceType'] = isset($data['createSourceType']) ? $data['createSourceType'] : null;
+        $this->container['appAndroidChannelPackageId'] = isset($data['appAndroidChannelPackageId']) ? $data['appAndroidChannelPackageId'] : null;
     }
 
     /**
@@ -645,6 +651,30 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     public function setCreateSourceType($createSourceType)
     {
         $this->container['createSourceType'] = $createSourceType;
+
+        return $this;
+    }
+
+    /**
+     * Gets appAndroidChannelPackageId
+     *
+     * @return string
+     */
+    public function getAppAndroidChannelPackageId()
+    {
+        return $this->container['appAndroidChannelPackageId'];
+    }
+
+    /**
+     * Sets appAndroidChannelPackageId
+     *
+     * @param string $appAndroidChannelPackageId appAndroidChannelPackageId
+     *
+     * @return $this
+     */
+    public function setAppAndroidChannelPackageId($appAndroidChannelPackageId)
+    {
+        $this->container['appAndroidChannelPackageId'] = $appAndroidChannelPackageId;
 
         return $this;
     }

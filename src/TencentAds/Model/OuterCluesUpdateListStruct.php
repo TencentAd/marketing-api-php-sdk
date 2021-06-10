@@ -58,7 +58,7 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        
+        'index' => 'int'
     ];
 
     /**
@@ -67,7 +67,7 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        
+        'index' => 'int64'
     ];
 
     /**
@@ -97,7 +97,7 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        
+        'index' => 'index'
     ];
 
     /**
@@ -106,7 +106,7 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        
+        'index' => 'setIndex'
     ];
 
     /**
@@ -115,7 +115,7 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        
+        'index' => 'getIndex'
     ];
 
     /**
@@ -178,6 +178,7 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['index'] = isset($data['index']) ? $data['index'] : null;
     }
 
     /**
@@ -203,6 +204,30 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets index
+     *
+     * @return int
+     */
+    public function getIndex()
+    {
+        return $this->container['index'];
+    }
+
+    /**
+     * Sets index
+     *
+     * @param int $index index
+     *
+     * @return $this
+     */
+    public function setIndex($index)
+    {
+        $this->container['index'] = $index;
+
+        return $this;
+    }
     /**
      * Returns true if offset exists. False otherwise.
      *

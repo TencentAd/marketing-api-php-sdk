@@ -62,6 +62,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'accessType' => '\TencentAds\Model\AccessType',
         'conversionScene' => '\TencentAds\Model\ConversionScene',
         'promotedObjectId' => 'string',
+        'appAndroidChannelPackageId' => 'string',
         'claimType' => '\TencentAds\Model\ClaimType',
         'feedbackUrl' => 'string',
         'landingPageUrl' => 'string',
@@ -84,6 +85,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'accessType' => null,
         'conversionScene' => null,
         'promotedObjectId' => null,
+        'appAndroidChannelPackageId' => null,
         'claimType' => null,
         'feedbackUrl' => null,
         'landingPageUrl' => null,
@@ -127,6 +129,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'accessType' => 'access_type',
         'conversionScene' => 'conversion_scene',
         'promotedObjectId' => 'promoted_object_id',
+        'appAndroidChannelPackageId' => 'app_android_channel_package_id',
         'claimType' => 'claim_type',
         'feedbackUrl' => 'feedback_url',
         'landingPageUrl' => 'landing_page_url',
@@ -149,6 +152,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'accessType' => 'setAccessType',
         'conversionScene' => 'setConversionScene',
         'promotedObjectId' => 'setPromotedObjectId',
+        'appAndroidChannelPackageId' => 'setAppAndroidChannelPackageId',
         'claimType' => 'setClaimType',
         'feedbackUrl' => 'setFeedbackUrl',
         'landingPageUrl' => 'setLandingPageUrl',
@@ -171,6 +175,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'accessType' => 'getAccessType',
         'conversionScene' => 'getConversionScene',
         'promotedObjectId' => 'getPromotedObjectId',
+        'appAndroidChannelPackageId' => 'getAppAndroidChannelPackageId',
         'claimType' => 'getClaimType',
         'feedbackUrl' => 'getFeedbackUrl',
         'landingPageUrl' => 'getLandingPageUrl',
@@ -247,6 +252,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         $this->container['accessType'] = isset($data['accessType']) ? $data['accessType'] : null;
         $this->container['conversionScene'] = isset($data['conversionScene']) ? $data['conversionScene'] : null;
         $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
+        $this->container['appAndroidChannelPackageId'] = isset($data['appAndroidChannelPackageId']) ? $data['appAndroidChannelPackageId'] : null;
         $this->container['claimType'] = isset($data['claimType']) ? $data['claimType'] : null;
         $this->container['feedbackUrl'] = isset($data['feedbackUrl']) ? $data['feedbackUrl'] : null;
         $this->container['landingPageUrl'] = isset($data['landingPageUrl']) ? $data['landingPageUrl'] : null;
@@ -398,6 +404,30 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     public function setPromotedObjectId($promotedObjectId)
     {
         $this->container['promotedObjectId'] = $promotedObjectId;
+
+        return $this;
+    }
+
+    /**
+     * Gets appAndroidChannelPackageId
+     *
+     * @return string
+     */
+    public function getAppAndroidChannelPackageId()
+    {
+        return $this->container['appAndroidChannelPackageId'];
+    }
+
+    /**
+     * Sets appAndroidChannelPackageId
+     *
+     * @param string $appAndroidChannelPackageId appAndroidChannelPackageId
+     *
+     * @return $this
+     */
+    public function setAppAndroidChannelPackageId($appAndroidChannelPackageId)
+    {
+        $this->container['appAndroidChannelPackageId'] = $appAndroidChannelPackageId;
 
         return $this;
     }

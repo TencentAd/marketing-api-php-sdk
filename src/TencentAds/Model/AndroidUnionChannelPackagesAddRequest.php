@@ -60,6 +60,7 @@ class AndroidUnionChannelPackagesAddRequest implements ModelInterface, ArrayAcce
         'androidUnionAppId' => 'int',
         'packageName' => 'string',
         'packageOriginUrl' => 'string',
+        'customizedChannelId' => 'string',
         'accountId' => 'int'
     ];
 
@@ -72,6 +73,7 @@ class AndroidUnionChannelPackagesAddRequest implements ModelInterface, ArrayAcce
         'androidUnionAppId' => 'int64',
         'packageName' => null,
         'packageOriginUrl' => null,
+        'customizedChannelId' => null,
         'accountId' => 'int64'
     ];
 
@@ -105,6 +107,7 @@ class AndroidUnionChannelPackagesAddRequest implements ModelInterface, ArrayAcce
         'androidUnionAppId' => 'android_union_app_id',
         'packageName' => 'package_name',
         'packageOriginUrl' => 'package_origin_url',
+        'customizedChannelId' => 'customized_channel_id',
         'accountId' => 'account_id'
     ];
 
@@ -117,6 +120,7 @@ class AndroidUnionChannelPackagesAddRequest implements ModelInterface, ArrayAcce
         'androidUnionAppId' => 'setAndroidUnionAppId',
         'packageName' => 'setPackageName',
         'packageOriginUrl' => 'setPackageOriginUrl',
+        'customizedChannelId' => 'setCustomizedChannelId',
         'accountId' => 'setAccountId'
     ];
 
@@ -129,6 +133,7 @@ class AndroidUnionChannelPackagesAddRequest implements ModelInterface, ArrayAcce
         'androidUnionAppId' => 'getAndroidUnionAppId',
         'packageName' => 'getPackageName',
         'packageOriginUrl' => 'getPackageOriginUrl',
+        'customizedChannelId' => 'getCustomizedChannelId',
         'accountId' => 'getAccountId'
     ];
 
@@ -195,6 +200,7 @@ class AndroidUnionChannelPackagesAddRequest implements ModelInterface, ArrayAcce
         $this->container['androidUnionAppId'] = isset($data['androidUnionAppId']) ? $data['androidUnionAppId'] : null;
         $this->container['packageName'] = isset($data['packageName']) ? $data['packageName'] : null;
         $this->container['packageOriginUrl'] = isset($data['packageOriginUrl']) ? $data['packageOriginUrl'] : null;
+        $this->container['customizedChannelId'] = isset($data['customizedChannelId']) ? $data['customizedChannelId'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -290,6 +296,30 @@ class AndroidUnionChannelPackagesAddRequest implements ModelInterface, ArrayAcce
     public function setPackageOriginUrl($packageOriginUrl)
     {
         $this->container['packageOriginUrl'] = $packageOriginUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets customizedChannelId
+     *
+     * @return string
+     */
+    public function getCustomizedChannelId()
+    {
+        return $this->container['customizedChannelId'];
+    }
+
+    /**
+     * Sets customizedChannelId
+     *
+     * @param string $customizedChannelId customizedChannelId
+     *
+     * @return $this
+     */
+    public function setCustomizedChannelId($customizedChannelId)
+    {
+        $this->container['customizedChannelId'] = $customizedChannelId;
 
         return $this;
     }

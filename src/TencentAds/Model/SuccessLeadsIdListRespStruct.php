@@ -58,6 +58,7 @@ class SuccessLeadsIdListRespStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'index' => 'int',
         'outerLeadsId' => 'string',
         'leadsId' => 'int'
     ];
@@ -68,6 +69,7 @@ class SuccessLeadsIdListRespStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
+        'index' => 'int64',
         'outerLeadsId' => null,
         'leadsId' => 'int64'
     ];
@@ -99,6 +101,7 @@ class SuccessLeadsIdListRespStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'index' => 'index',
         'outerLeadsId' => 'outer_leads_id',
         'leadsId' => 'leads_id'
     ];
@@ -109,6 +112,7 @@ class SuccessLeadsIdListRespStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'index' => 'setIndex',
         'outerLeadsId' => 'setOuterLeadsId',
         'leadsId' => 'setLeadsId'
     ];
@@ -119,6 +123,7 @@ class SuccessLeadsIdListRespStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'index' => 'getIndex',
         'outerLeadsId' => 'getOuterLeadsId',
         'leadsId' => 'getLeadsId'
     ];
@@ -183,6 +188,7 @@ class SuccessLeadsIdListRespStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['index'] = isset($data['index']) ? $data['index'] : null;
         $this->container['outerLeadsId'] = isset($data['outerLeadsId']) ? $data['outerLeadsId'] : null;
         $this->container['leadsId'] = isset($data['leadsId']) ? $data['leadsId'] : null;
     }
@@ -210,6 +216,30 @@ class SuccessLeadsIdListRespStruct implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets index
+     *
+     * @return int
+     */
+    public function getIndex()
+    {
+        return $this->container['index'];
+    }
+
+    /**
+     * Sets index
+     *
+     * @param int $index index
+     *
+     * @return $this
+     */
+    public function setIndex($index)
+    {
+        $this->container['index'] = $index;
+
+        return $this;
+    }
 
     /**
      * Gets outerLeadsId

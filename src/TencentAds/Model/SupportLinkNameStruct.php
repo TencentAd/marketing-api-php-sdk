@@ -1,6 +1,6 @@
 <?php
 /**
- * OuterCluesAddListStruct
+ * SupportLinkNameStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * OuterCluesAddListStruct Class Doc Comment
+ * SupportLinkNameStruct Class Doc Comment
  *
  * @category Class
- * @description 返回结构
+ * @description 文字链跳转类型结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
+class SupportLinkNameStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'OuterCluesAddListStruct';
+    protected static $swaggerModelName = 'support_link_name_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,8 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'index' => 'int',
-        'outerLeadsId' => 'string'
+        'linkNameType' => 'string',
+        'description' => 'string'
     ];
 
     /**
@@ -68,8 +68,8 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'index' => 'int64',
-        'outerLeadsId' => null
+        'linkNameType' => null,
+        'description' => null
     ];
 
     /**
@@ -99,8 +99,8 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'index' => 'index',
-        'outerLeadsId' => 'outer_leads_id'
+        'linkNameType' => 'link_name_type',
+        'description' => 'description'
     ];
 
     /**
@@ -109,8 +109,8 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'index' => 'setIndex',
-        'outerLeadsId' => 'setOuterLeadsId'
+        'linkNameType' => 'setLinkNameType',
+        'description' => 'setDescription'
     ];
 
     /**
@@ -119,8 +119,8 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'index' => 'getIndex',
-        'outerLeadsId' => 'getOuterLeadsId'
+        'linkNameType' => 'getLinkNameType',
+        'description' => 'getDescription'
     ];
 
     /**
@@ -183,8 +183,8 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['index'] = isset($data['index']) ? $data['index'] : null;
-        $this->container['outerLeadsId'] = isset($data['outerLeadsId']) ? $data['outerLeadsId'] : null;
+        $this->container['linkNameType'] = isset($data['linkNameType']) ? $data['linkNameType'] : null;
+        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
     }
 
     /**
@@ -212,49 +212,49 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets index
+     * Gets linkNameType
      *
-     * @return int
+     * @return string
      */
-    public function getIndex()
+    public function getLinkNameType()
     {
-        return $this->container['index'];
+        return $this->container['linkNameType'];
     }
 
     /**
-     * Sets index
+     * Sets linkNameType
      *
-     * @param int $index index
+     * @param string $linkNameType linkNameType
      *
      * @return $this
      */
-    public function setIndex($index)
+    public function setLinkNameType($linkNameType)
     {
-        $this->container['index'] = $index;
+        $this->container['linkNameType'] = $linkNameType;
 
         return $this;
     }
 
     /**
-     * Gets outerLeadsId
+     * Gets description
      *
      * @return string
      */
-    public function getOuterLeadsId()
+    public function getDescription()
     {
-        return $this->container['outerLeadsId'];
+        return $this->container['description'];
     }
 
     /**
-     * Sets outerLeadsId
+     * Sets description
      *
-     * @param string $outerLeadsId outerLeadsId
+     * @param string $description description
      *
      * @return $this
      */
-    public function setOuterLeadsId($outerLeadsId)
+    public function setDescription($description)
     {
-        $this->container['outerLeadsId'] = $outerLeadsId;
+        $this->container['description'] = $description;
 
         return $this;
     }

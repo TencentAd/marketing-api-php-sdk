@@ -1,6 +1,6 @@
 <?php
 /**
- * OuterCluesAddListStruct
+ * SupportPageTypeStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * OuterCluesAddListStruct Class Doc Comment
+ * SupportPageTypeStruct Class Doc Comment
  *
  * @category Class
- * @description 返回结构
+ * @description 支持落地页类型结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
+class SupportPageTypeStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'OuterCluesAddListStruct';
+    protected static $swaggerModelName = 'support_page_type_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,10 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'index' => 'int',
-        'outerLeadsId' => 'string'
+        'pageType' => 'string',
+        'description' => 'string',
+        'supportLinkNameType' => '\TencentAds\Model\SupportLinkNameType',
+        'supportLinkPageType' => '\TencentAds\Model\SupportLinkPageType'
     ];
 
     /**
@@ -68,8 +70,10 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'index' => 'int64',
-        'outerLeadsId' => null
+        'pageType' => null,
+        'description' => null,
+        'supportLinkNameType' => null,
+        'supportLinkPageType' => null
     ];
 
     /**
@@ -99,8 +103,10 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'index' => 'index',
-        'outerLeadsId' => 'outer_leads_id'
+        'pageType' => 'page_type',
+        'description' => 'description',
+        'supportLinkNameType' => 'support_link_name_type',
+        'supportLinkPageType' => 'support_link_page_type'
     ];
 
     /**
@@ -109,8 +115,10 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'index' => 'setIndex',
-        'outerLeadsId' => 'setOuterLeadsId'
+        'pageType' => 'setPageType',
+        'description' => 'setDescription',
+        'supportLinkNameType' => 'setSupportLinkNameType',
+        'supportLinkPageType' => 'setSupportLinkPageType'
     ];
 
     /**
@@ -119,8 +127,10 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'index' => 'getIndex',
-        'outerLeadsId' => 'getOuterLeadsId'
+        'pageType' => 'getPageType',
+        'description' => 'getDescription',
+        'supportLinkNameType' => 'getSupportLinkNameType',
+        'supportLinkPageType' => 'getSupportLinkPageType'
     ];
 
     /**
@@ -183,8 +193,10 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['index'] = isset($data['index']) ? $data['index'] : null;
-        $this->container['outerLeadsId'] = isset($data['outerLeadsId']) ? $data['outerLeadsId'] : null;
+        $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
+        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
+        $this->container['supportLinkNameType'] = isset($data['supportLinkNameType']) ? $data['supportLinkNameType'] : null;
+        $this->container['supportLinkPageType'] = isset($data['supportLinkPageType']) ? $data['supportLinkPageType'] : null;
     }
 
     /**
@@ -212,49 +224,97 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets index
+     * Gets pageType
      *
-     * @return int
+     * @return string
      */
-    public function getIndex()
+    public function getPageType()
     {
-        return $this->container['index'];
+        return $this->container['pageType'];
     }
 
     /**
-     * Sets index
+     * Sets pageType
      *
-     * @param int $index index
+     * @param string $pageType pageType
      *
      * @return $this
      */
-    public function setIndex($index)
+    public function setPageType($pageType)
     {
-        $this->container['index'] = $index;
+        $this->container['pageType'] = $pageType;
 
         return $this;
     }
 
     /**
-     * Gets outerLeadsId
+     * Gets description
      *
      * @return string
      */
-    public function getOuterLeadsId()
+    public function getDescription()
     {
-        return $this->container['outerLeadsId'];
+        return $this->container['description'];
     }
 
     /**
-     * Sets outerLeadsId
+     * Sets description
      *
-     * @param string $outerLeadsId outerLeadsId
+     * @param string $description description
      *
      * @return $this
      */
-    public function setOuterLeadsId($outerLeadsId)
+    public function setDescription($description)
     {
-        $this->container['outerLeadsId'] = $outerLeadsId;
+        $this->container['description'] = $description;
+
+        return $this;
+    }
+
+    /**
+     * Gets supportLinkNameType
+     *
+     * @return \TencentAds\Model\SupportLinkNameType
+     */
+    public function getSupportLinkNameType()
+    {
+        return $this->container['supportLinkNameType'];
+    }
+
+    /**
+     * Sets supportLinkNameType
+     *
+     * @param \TencentAds\Model\SupportLinkNameType $supportLinkNameType supportLinkNameType
+     *
+     * @return $this
+     */
+    public function setSupportLinkNameType($supportLinkNameType)
+    {
+        $this->container['supportLinkNameType'] = $supportLinkNameType;
+
+        return $this;
+    }
+
+    /**
+     * Gets supportLinkPageType
+     *
+     * @return \TencentAds\Model\SupportLinkPageType
+     */
+    public function getSupportLinkPageType()
+    {
+        return $this->container['supportLinkPageType'];
+    }
+
+    /**
+     * Sets supportLinkPageType
+     *
+     * @param \TencentAds\Model\SupportLinkPageType $supportLinkPageType supportLinkPageType
+     *
+     * @return $this
+     */
+    public function setSupportLinkPageType($supportLinkPageType)
+    {
+        $this->container['supportLinkPageType'] = $supportLinkPageType;
 
         return $this;
     }

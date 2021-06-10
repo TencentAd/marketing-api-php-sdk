@@ -59,6 +59,11 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'outerLeadsId' => 'string',
+        'leadsId' => 'int',
+        'leadsTel' => 'string',
+        'leadsQq' => 'int',
+        'leadsWechat' => 'string',
+        'clickId' => 'string',
         'outerLeadsConvertType' => 'string',
         'outerLeadsIneffectReason' => 'string'
     ];
@@ -70,6 +75,11 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'outerLeadsId' => null,
+        'leadsId' => 'int64',
+        'leadsTel' => null,
+        'leadsQq' => 'int64',
+        'leadsWechat' => null,
+        'clickId' => null,
         'outerLeadsConvertType' => null,
         'outerLeadsIneffectReason' => null
     ];
@@ -102,6 +112,11 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'outerLeadsId' => 'outer_leads_id',
+        'leadsId' => 'leads_id',
+        'leadsTel' => 'leads_tel',
+        'leadsQq' => 'leads_qq',
+        'leadsWechat' => 'leads_wechat',
+        'clickId' => 'click_id',
         'outerLeadsConvertType' => 'outer_leads_convert_type',
         'outerLeadsIneffectReason' => 'outer_leads_ineffect_reason'
     ];
@@ -113,6 +128,11 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'outerLeadsId' => 'setOuterLeadsId',
+        'leadsId' => 'setLeadsId',
+        'leadsTel' => 'setLeadsTel',
+        'leadsQq' => 'setLeadsQq',
+        'leadsWechat' => 'setLeadsWechat',
+        'clickId' => 'setClickId',
         'outerLeadsConvertType' => 'setOuterLeadsConvertType',
         'outerLeadsIneffectReason' => 'setOuterLeadsIneffectReason'
     ];
@@ -124,6 +144,11 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'outerLeadsId' => 'getOuterLeadsId',
+        'leadsId' => 'getLeadsId',
+        'leadsTel' => 'getLeadsTel',
+        'leadsQq' => 'getLeadsQq',
+        'leadsWechat' => 'getLeadsWechat',
+        'clickId' => 'getClickId',
         'outerLeadsConvertType' => 'getOuterLeadsConvertType',
         'outerLeadsIneffectReason' => 'getOuterLeadsIneffectReason'
     ];
@@ -189,6 +214,11 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['outerLeadsId'] = isset($data['outerLeadsId']) ? $data['outerLeadsId'] : null;
+        $this->container['leadsId'] = isset($data['leadsId']) ? $data['leadsId'] : null;
+        $this->container['leadsTel'] = isset($data['leadsTel']) ? $data['leadsTel'] : null;
+        $this->container['leadsQq'] = isset($data['leadsQq']) ? $data['leadsQq'] : null;
+        $this->container['leadsWechat'] = isset($data['leadsWechat']) ? $data['leadsWechat'] : null;
+        $this->container['clickId'] = isset($data['clickId']) ? $data['clickId'] : null;
         $this->container['outerLeadsConvertType'] = isset($data['outerLeadsConvertType']) ? $data['outerLeadsConvertType'] : null;
         $this->container['outerLeadsIneffectReason'] = isset($data['outerLeadsIneffectReason']) ? $data['outerLeadsIneffectReason'] : null;
     }
@@ -237,6 +267,126 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     public function setOuterLeadsId($outerLeadsId)
     {
         $this->container['outerLeadsId'] = $outerLeadsId;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsId
+     *
+     * @return int
+     */
+    public function getLeadsId()
+    {
+        return $this->container['leadsId'];
+    }
+
+    /**
+     * Sets leadsId
+     *
+     * @param int $leadsId leadsId
+     *
+     * @return $this
+     */
+    public function setLeadsId($leadsId)
+    {
+        $this->container['leadsId'] = $leadsId;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsTel
+     *
+     * @return string
+     */
+    public function getLeadsTel()
+    {
+        return $this->container['leadsTel'];
+    }
+
+    /**
+     * Sets leadsTel
+     *
+     * @param string $leadsTel leadsTel
+     *
+     * @return $this
+     */
+    public function setLeadsTel($leadsTel)
+    {
+        $this->container['leadsTel'] = $leadsTel;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsQq
+     *
+     * @return int
+     */
+    public function getLeadsQq()
+    {
+        return $this->container['leadsQq'];
+    }
+
+    /**
+     * Sets leadsQq
+     *
+     * @param int $leadsQq leadsQq
+     *
+     * @return $this
+     */
+    public function setLeadsQq($leadsQq)
+    {
+        $this->container['leadsQq'] = $leadsQq;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsWechat
+     *
+     * @return string
+     */
+    public function getLeadsWechat()
+    {
+        return $this->container['leadsWechat'];
+    }
+
+    /**
+     * Sets leadsWechat
+     *
+     * @param string $leadsWechat leadsWechat
+     *
+     * @return $this
+     */
+    public function setLeadsWechat($leadsWechat)
+    {
+        $this->container['leadsWechat'] = $leadsWechat;
+
+        return $this;
+    }
+
+    /**
+     * Gets clickId
+     *
+     * @return string
+     */
+    public function getClickId()
+    {
+        return $this->container['clickId'];
+    }
+
+    /**
+     * Sets clickId
+     *
+     * @param string $clickId clickId
+     *
+     * @return $this
+     */
+    public function setClickId($clickId)
+    {
+        $this->container['clickId'] = $clickId;
 
         return $this;
     }
