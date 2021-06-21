@@ -66,7 +66,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'corporate' => '\TencentAds\Model\AdcreativeCorporate',
         'video' => 'string',
         'imageOptions' => 'string[]',
-        'imageListOptions' => '\TencentAds\Model\ImageListOptions[]',
+        'imageListOptions' => '\TencentAds\Model\AdcreativeImageList[]',
         'titleOptions' => 'string[]',
         'descriptionOptions' => 'string[]',
         'videoOptions' => 'string[]',
@@ -652,7 +652,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets imageListOptions
      *
-     * @return \TencentAds\Model\ImageListOptions[]
+     * @return \TencentAds\Model\AdcreativeImageList[]
      */
     public function getImageListOptions()
     {
@@ -662,7 +662,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets imageListOptions
      *
-     * @param \TencentAds\Model\ImageListOptions[] $imageListOptions imageListOptions
+     * @param \TencentAds\Model\AdcreativeImageList[] $imageListOptions imageListOptions
      *
      * @return $this
      */

@@ -48,7 +48,6 @@ use TencentAds\Container\CustomAudienceFilesApiContainer;
 use TencentAds\Container\CustomAudienceInsightsApiContainer;
 use TencentAds\Container\CustomAudienceReportsApiContainer;
 use TencentAds\Container\CustomAudiencesApiContainer;
-use TencentAds\Container\CustomDataSaltApiContainer;
 use TencentAds\Container\CustomFeaturesApiContainer;
 use TencentAds\Container\CustomTagFilesApiContainer;
 use TencentAds\Container\CustomTagsApiContainer;
@@ -284,9 +283,6 @@ class App
 
     /** @var CustomAudiencesApiContainer */
     public $customAudiencesApiContainer;
-
-    /** @var CustomDataSaltApiContainer */
-    public $customDataSaltApiContainer;
 
     /** @var CustomFeaturesApiContainer */
     public $customFeaturesApiContainer;
@@ -1218,20 +1214,6 @@ class App
             $this->customAudiencesApiContainer = $container;
         }
         return $this->customAudiencesApiContainer;
-    }
-
-
-    /**
-     * @return CustomDataSaltApiContainer
-     */
-    public function customDataSalt()
-    {
-        if (empty($this->customDataSaltApiContainer)) {
-            $container = new CustomDataSaltApiContainer();
-            $container->init($this, $this->getClient());
-            $this->customDataSaltApiContainer = $container;
-        }
-        return $this->customDataSaltApiContainer;
     }
 
 
