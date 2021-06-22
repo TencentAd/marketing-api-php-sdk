@@ -1,6 +1,6 @@
 <?php
 /**
- * Memo
+ * LocalWechatFundSpec
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * Memo Class Doc Comment
+ * LocalWechatFundSpec Class Doc Comment
  *
  * @category Class
- * @description 更多信息
+ * @description 附近推微信账户更多信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class Memo implements ModelInterface, ArrayAccess
+class LocalWechatFundSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class Memo implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'memo';
+    protected static $swaggerModelName = 'local_wechat_fund_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,10 @@ class Memo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'wechatFundSpec' => '\TencentAds\Model\WechatFundSpec',
-        'localWechatFundSpec' => '\TencentAds\Model\LocalWechatFundSpec'
+        'cashUsableAmount' => 'int',
+        'giftUsableAmount' => 'int',
+        'cashLockedAmount' => 'int',
+        'giftLockedAmount' => 'int'
     ];
 
     /**
@@ -68,8 +70,10 @@ class Memo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'wechatFundSpec' => null,
-        'localWechatFundSpec' => null
+        'cashUsableAmount' => 'int64',
+        'giftUsableAmount' => 'int64',
+        'cashLockedAmount' => 'int64',
+        'giftLockedAmount' => 'int64'
     ];
 
     /**
@@ -99,8 +103,10 @@ class Memo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'wechatFundSpec' => 'wechat_fund_spec',
-        'localWechatFundSpec' => 'local_wechat_fund_spec'
+        'cashUsableAmount' => 'cash_usable_amount',
+        'giftUsableAmount' => 'gift_usable_amount',
+        'cashLockedAmount' => 'cash_locked_amount',
+        'giftLockedAmount' => 'gift_locked_amount'
     ];
 
     /**
@@ -109,8 +115,10 @@ class Memo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'wechatFundSpec' => 'setWechatFundSpec',
-        'localWechatFundSpec' => 'setLocalWechatFundSpec'
+        'cashUsableAmount' => 'setCashUsableAmount',
+        'giftUsableAmount' => 'setGiftUsableAmount',
+        'cashLockedAmount' => 'setCashLockedAmount',
+        'giftLockedAmount' => 'setGiftLockedAmount'
     ];
 
     /**
@@ -119,8 +127,10 @@ class Memo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'wechatFundSpec' => 'getWechatFundSpec',
-        'localWechatFundSpec' => 'getLocalWechatFundSpec'
+        'cashUsableAmount' => 'getCashUsableAmount',
+        'giftUsableAmount' => 'getGiftUsableAmount',
+        'cashLockedAmount' => 'getCashLockedAmount',
+        'giftLockedAmount' => 'getGiftLockedAmount'
     ];
 
     /**
@@ -183,8 +193,10 @@ class Memo implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['wechatFundSpec'] = isset($data['wechatFundSpec']) ? $data['wechatFundSpec'] : null;
-        $this->container['localWechatFundSpec'] = isset($data['localWechatFundSpec']) ? $data['localWechatFundSpec'] : null;
+        $this->container['cashUsableAmount'] = isset($data['cashUsableAmount']) ? $data['cashUsableAmount'] : null;
+        $this->container['giftUsableAmount'] = isset($data['giftUsableAmount']) ? $data['giftUsableAmount'] : null;
+        $this->container['cashLockedAmount'] = isset($data['cashLockedAmount']) ? $data['cashLockedAmount'] : null;
+        $this->container['giftLockedAmount'] = isset($data['giftLockedAmount']) ? $data['giftLockedAmount'] : null;
     }
 
     /**
@@ -212,49 +224,97 @@ class Memo implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets wechatFundSpec
+     * Gets cashUsableAmount
      *
-     * @return \TencentAds\Model\WechatFundSpec
+     * @return int
      */
-    public function getWechatFundSpec()
+    public function getCashUsableAmount()
     {
-        return $this->container['wechatFundSpec'];
+        return $this->container['cashUsableAmount'];
     }
 
     /**
-     * Sets wechatFundSpec
+     * Sets cashUsableAmount
      *
-     * @param \TencentAds\Model\WechatFundSpec $wechatFundSpec wechatFundSpec
+     * @param int $cashUsableAmount cashUsableAmount
      *
      * @return $this
      */
-    public function setWechatFundSpec($wechatFundSpec)
+    public function setCashUsableAmount($cashUsableAmount)
     {
-        $this->container['wechatFundSpec'] = $wechatFundSpec;
+        $this->container['cashUsableAmount'] = $cashUsableAmount;
 
         return $this;
     }
 
     /**
-     * Gets localWechatFundSpec
+     * Gets giftUsableAmount
      *
-     * @return \TencentAds\Model\LocalWechatFundSpec
+     * @return int
      */
-    public function getLocalWechatFundSpec()
+    public function getGiftUsableAmount()
     {
-        return $this->container['localWechatFundSpec'];
+        return $this->container['giftUsableAmount'];
     }
 
     /**
-     * Sets localWechatFundSpec
+     * Sets giftUsableAmount
      *
-     * @param \TencentAds\Model\LocalWechatFundSpec $localWechatFundSpec localWechatFundSpec
+     * @param int $giftUsableAmount giftUsableAmount
      *
      * @return $this
      */
-    public function setLocalWechatFundSpec($localWechatFundSpec)
+    public function setGiftUsableAmount($giftUsableAmount)
     {
-        $this->container['localWechatFundSpec'] = $localWechatFundSpec;
+        $this->container['giftUsableAmount'] = $giftUsableAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets cashLockedAmount
+     *
+     * @return int
+     */
+    public function getCashLockedAmount()
+    {
+        return $this->container['cashLockedAmount'];
+    }
+
+    /**
+     * Sets cashLockedAmount
+     *
+     * @param int $cashLockedAmount cashLockedAmount
+     *
+     * @return $this
+     */
+    public function setCashLockedAmount($cashLockedAmount)
+    {
+        $this->container['cashLockedAmount'] = $cashLockedAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets giftLockedAmount
+     *
+     * @return int
+     */
+    public function getGiftLockedAmount()
+    {
+        return $this->container['giftLockedAmount'];
+    }
+
+    /**
+     * Sets giftLockedAmount
+     *
+     * @param int $giftLockedAmount giftLockedAmount
+     *
+     * @return $this
+     */
+    public function setGiftLockedAmount($giftLockedAmount)
+    {
+        $this->container['giftLockedAmount'] = $giftLockedAmount;
 
         return $this;
     }

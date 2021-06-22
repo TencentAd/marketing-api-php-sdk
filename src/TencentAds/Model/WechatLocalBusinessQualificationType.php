@@ -48,6 +48,7 @@ class WechatLocalBusinessQualificationType
     const ID_CARD_FRONT = 'STUFF_ID_CARD_FRONT';
     const ID_CARD_REVERSE = 'STUFF_ID_CARD_REVERSE';
     const INDUSTRY_QUALIFICATION = 'STUFF_INDUSTRY_QUALIFICATION';
+    const ADDIITIONAL_QUALIFICATION = 'STUFF_ADDIITIONAL_QUALIFICATION';
     
     /**
      * Gets allowable values of the enum
@@ -60,6 +61,7 @@ class WechatLocalBusinessQualificationType
             self::ID_CARD_FRONT,
             self::ID_CARD_REVERSE,
             self::INDUSTRY_QUALIFICATION,
+            self::ADDIITIONAL_QUALIFICATION,
         ];
     }
 }

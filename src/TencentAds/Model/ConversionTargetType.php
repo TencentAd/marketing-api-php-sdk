@@ -65,6 +65,9 @@ class ConversionTargetType
     const READ = 'CONVERSION_TARGET_READ';
     const FOLLOW = 'CONVERSION_TARGET_FOLLOW';
     const _USE = 'CONVERSION_TARGET_USE';
+    const EXPERIENCE = 'CONVERSION_TARGET_EXPERIENCE';
+    const SETUP = 'CONVERSION_TARGET_SETUP';
+    const SECKILL = 'CONVERSION_TARGET_SECKILL';
     
     /**
      * Gets allowable values of the enum
@@ -94,6 +97,9 @@ class ConversionTargetType
             self::READ,
             self::FOLLOW,
             self::_USE,
+            self::EXPERIENCE,
+            self::SETUP,
+            self::SECKILL,
         ];
     }
 }

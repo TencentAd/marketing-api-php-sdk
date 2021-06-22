@@ -52,6 +52,7 @@ class LinkNameType
     const ENTER_MINI_PROGRAM = 'ENTER_MINI_PROGRAM';
     const ENTER_MINI_GAME = 'ENTER_MINI_GAME';
     const APPLY_NOW = 'APPLY_NOW';
+    const BOOK_NOW = 'BOOK_NOW';
     const RESERVATION_BUY = 'RESERVATION_BUY';
     const CONSULT_NOW = 'CONSULT_NOW';
     const BOOK_DRIVE = 'BOOK_DRIVE';
@@ -61,6 +62,7 @@ class LinkNameType
     const DOWNLOAD_APP = 'DOWNLOAD_APP';
     const DOWNLOAD_GAME = 'DOWNLOAD_GAME';
     const GET_SAMPLES = 'GET_SAMPLES';
+    const TRY_NOW = 'TRY_NOW';
     const GET_IT_NOW = 'GET_IT_NOW';
     const BUY_ASAP = 'BUY_ASAP';
     const DOWNLOAD_NOW = 'DOWNLOAD_NOW';
@@ -77,6 +79,17 @@ class LinkNameType
     const GO_TO_KUAISHOU = 'GO_TO_KUAISHOU';
     const WATCH_LIVE = 'WATCH_LIVE';
     const RESERVE_NOW = 'RESERVE_NOW';
+    const OPEN_APP = 'OPEN_APP';
+    const ALREADY_INSTALL = 'ALREADY_INSTALL';
+    const RESERVE_LIVE = 'RESERVE_LIVE';
+    const SETUP_NOW = 'SETUP_NOW';
+    const SECKILL_NOW = 'SECKILL_NOW';
+    const TRY_PLAY_NOW = 'TRY_PLAY_NOW';
+    const INSTALL_NOW = 'INSTALL_NOW';
+    const FOLLOW_CHANNELS = 'FOLLOW_CHANNELS';
+    const MORE_ABOUT_CHANNELS = 'MORE_ABOUT_CHANNELS';
+    const MORE_ABOUT_OFFICIAL_ACCOUNT_CHT = 'MORE_ABOUT_OFFICIAL_ACCOUNT_CHT';
+    const FOLLOW_OFFICIAL_ACCOUNT_CHT = 'FOLLOW_OFFICIAL_ACCOUNT_CHT';
     
     /**
      * Gets allowable values of the enum
@@ -93,6 +106,7 @@ class LinkNameType
             self::ENTER_MINI_PROGRAM,
             self::ENTER_MINI_GAME,
             self::APPLY_NOW,
+            self::BOOK_NOW,
             self::RESERVATION_BUY,
             self::CONSULT_NOW,
             self::BOOK_DRIVE,
@@ -102,6 +116,7 @@ class LinkNameType
             self::DOWNLOAD_APP,
             self::DOWNLOAD_GAME,
             self::GET_SAMPLES,
+            self::TRY_NOW,
             self::GET_IT_NOW,
             self::BUY_ASAP,
             self::DOWNLOAD_NOW,
@@ -118,6 +133,17 @@ class LinkNameType
             self::GO_TO_KUAISHOU,
             self::WATCH_LIVE,
             self::RESERVE_NOW,
+            self::OPEN_APP,
+            self::ALREADY_INSTALL,
+            self::RESERVE_LIVE,
+            self::SETUP_NOW,
+            self::SECKILL_NOW,
+            self::TRY_PLAY_NOW,
+            self::INSTALL_NOW,
+            self::FOLLOW_CHANNELS,
+            self::MORE_ABOUT_CHANNELS,
+            self::MORE_ABOUT_OFFICIAL_ACCOUNT_CHT,
+            self::FOLLOW_OFFICIAL_ACCOUNT_CHT,
         ];
     }
 }

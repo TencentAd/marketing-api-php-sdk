@@ -66,7 +66,7 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         'corporate' => '\TencentAds\Model\AdcreativeCorporate',
         'video' => 'string',
         'deepLinkType' => 'string',
-        'linkNameType' => '\TencentAds\Model\LinkNameTypeMP',
+        'linkNameType' => '\TencentAds\Model\LinkNameType',
         'imageList' => 'string[]',
         'elementStory' => '\TencentAds\Model\AdcreativeElementStoryArrayItem[]',
         'url' => 'string',
@@ -754,7 +754,7 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
     /**
      * Gets linkNameType
      *
-     * @return \TencentAds\Model\LinkNameTypeMP
+     * @return \TencentAds\Model\LinkNameType
      */
     public function getLinkNameType()
     {
@@ -764,7 +764,7 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
     /**
      * Sets linkNameType
      *
-     * @param \TencentAds\Model\LinkNameTypeMP $linkNameType linkNameType
+     * @param \TencentAds\Model\LinkNameType $linkNameType linkNameType
      *
      * @return $this
      */

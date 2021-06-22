@@ -62,7 +62,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'pageType' => '\TencentAds\Model\DestinationType',
         'pageSpec' => '\TencentAds\Model\PageSpec',
         'linkPageType' => '\TencentAds\Model\LinkPageType',
-        'linkNameType' => '\TencentAds\Model\LinkNameTypeMP',
+        'linkNameType' => '\TencentAds\Model\LinkNameType',
         'linkPageSpec' => '\TencentAds\Model\LinkPageSpec',
         'conversionDataType' => '\TencentAds\Model\ConversionDataType',
         'conversionTargetType' => '\TencentAds\Model\ConversionTargetType',
@@ -525,7 +525,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets linkNameType
      *
-     * @return \TencentAds\Model\LinkNameTypeMP
+     * @return \TencentAds\Model\LinkNameType
      */
     public function getLinkNameType()
     {
@@ -535,7 +535,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets linkNameType
      *
-     * @param \TencentAds\Model\LinkNameTypeMP $linkNameType linkNameType
+     * @param \TencentAds\Model\LinkNameType $linkNameType linkNameType
      *
      * @return $this
      */
