@@ -88,8 +88,6 @@ class WriteTargetingSetting implements ModelInterface, ArrayAccess
         'customAudience' => 'int[]',
         'excludedCustomAudience' => 'int[]',
         'behaviorOrInterest' => '\TencentAds\Model\BehaviorOrInterest',
-        'wechatOfficialAccountCategory' => 'int[]',
-        'mobileUnionCategory' => 'int[]',
         'excludedConvertedAudience' => '\TencentAds\Model\ExcludedConvertedAudienceStruct'
     ];
 
@@ -129,8 +127,6 @@ class WriteTargetingSetting implements ModelInterface, ArrayAccess
         'customAudience' => 'int64',
         'excludedCustomAudience' => 'int64',
         'behaviorOrInterest' => null,
-        'wechatOfficialAccountCategory' => 'int64',
-        'mobileUnionCategory' => 'int64',
         'excludedConvertedAudience' => null
     ];
 
@@ -191,8 +187,6 @@ class WriteTargetingSetting implements ModelInterface, ArrayAccess
         'customAudience' => 'custom_audience',
         'excludedCustomAudience' => 'excluded_custom_audience',
         'behaviorOrInterest' => 'behavior_or_interest',
-        'wechatOfficialAccountCategory' => 'wechat_official_account_category',
-        'mobileUnionCategory' => 'mobile_union_category',
         'excludedConvertedAudience' => 'excluded_converted_audience'
     ];
 
@@ -232,8 +226,6 @@ class WriteTargetingSetting implements ModelInterface, ArrayAccess
         'customAudience' => 'setCustomAudience',
         'excludedCustomAudience' => 'setExcludedCustomAudience',
         'behaviorOrInterest' => 'setBehaviorOrInterest',
-        'wechatOfficialAccountCategory' => 'setWechatOfficialAccountCategory',
-        'mobileUnionCategory' => 'setMobileUnionCategory',
         'excludedConvertedAudience' => 'setExcludedConvertedAudience'
     ];
 
@@ -273,8 +265,6 @@ class WriteTargetingSetting implements ModelInterface, ArrayAccess
         'customAudience' => 'getCustomAudience',
         'excludedCustomAudience' => 'getExcludedCustomAudience',
         'behaviorOrInterest' => 'getBehaviorOrInterest',
-        'wechatOfficialAccountCategory' => 'getWechatOfficialAccountCategory',
-        'mobileUnionCategory' => 'getMobileUnionCategory',
         'excludedConvertedAudience' => 'getExcludedConvertedAudience'
     ];
 
@@ -368,8 +358,6 @@ class WriteTargetingSetting implements ModelInterface, ArrayAccess
         $this->container['customAudience'] = isset($data['customAudience']) ? $data['customAudience'] : null;
         $this->container['excludedCustomAudience'] = isset($data['excludedCustomAudience']) ? $data['excludedCustomAudience'] : null;
         $this->container['behaviorOrInterest'] = isset($data['behaviorOrInterest']) ? $data['behaviorOrInterest'] : null;
-        $this->container['wechatOfficialAccountCategory'] = isset($data['wechatOfficialAccountCategory']) ? $data['wechatOfficialAccountCategory'] : null;
-        $this->container['mobileUnionCategory'] = isset($data['mobileUnionCategory']) ? $data['mobileUnionCategory'] : null;
         $this->container['excludedConvertedAudience'] = isset($data['excludedConvertedAudience']) ? $data['excludedConvertedAudience'] : null;
     }
 
@@ -1113,54 +1101,6 @@ class WriteTargetingSetting implements ModelInterface, ArrayAccess
     public function setBehaviorOrInterest($behaviorOrInterest)
     {
         $this->container['behaviorOrInterest'] = $behaviorOrInterest;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatOfficialAccountCategory
-     *
-     * @return int[]
-     */
-    public function getWechatOfficialAccountCategory()
-    {
-        return $this->container['wechatOfficialAccountCategory'];
-    }
-
-    /**
-     * Sets wechatOfficialAccountCategory
-     *
-     * @param int[] $wechatOfficialAccountCategory wechatOfficialAccountCategory
-     *
-     * @return $this
-     */
-    public function setWechatOfficialAccountCategory($wechatOfficialAccountCategory)
-    {
-        $this->container['wechatOfficialAccountCategory'] = $wechatOfficialAccountCategory;
-
-        return $this;
-    }
-
-    /**
-     * Gets mobileUnionCategory
-     *
-     * @return int[]
-     */
-    public function getMobileUnionCategory()
-    {
-        return $this->container['mobileUnionCategory'];
-    }
-
-    /**
-     * Sets mobileUnionCategory
-     *
-     * @param int[] $mobileUnionCategory mobileUnionCategory
-     *
-     * @return $this
-     */
-    public function setMobileUnionCategory($mobileUnionCategory)
-    {
-        $this->container['mobileUnionCategory'] = $mobileUnionCategory;
 
         return $this;
     }

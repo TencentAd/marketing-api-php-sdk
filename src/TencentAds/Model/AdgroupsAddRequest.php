@@ -100,6 +100,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'creativeDisplayType' => '\TencentAds\Model\CreativeDisplayType',
         'autoDerivedCreativeEnabled' => 'bool',
         'smartBidType' => '\TencentAds\Model\SmartBidType',
+        'marketingScene' => '\TencentAds\Model\MarketingScene',
         'accountId' => 'int'
     ];
 
@@ -152,6 +153,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'creativeDisplayType' => null,
         'autoDerivedCreativeEnabled' => null,
         'smartBidType' => null,
+        'marketingScene' => null,
         'accountId' => 'int64'
     ];
 
@@ -225,6 +227,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'creativeDisplayType' => 'creative_display_type',
         'autoDerivedCreativeEnabled' => 'auto_derived_creative_enabled',
         'smartBidType' => 'smart_bid_type',
+        'marketingScene' => 'marketing_scene',
         'accountId' => 'account_id'
     ];
 
@@ -277,6 +280,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'creativeDisplayType' => 'setCreativeDisplayType',
         'autoDerivedCreativeEnabled' => 'setAutoDerivedCreativeEnabled',
         'smartBidType' => 'setSmartBidType',
+        'marketingScene' => 'setMarketingScene',
         'accountId' => 'setAccountId'
     ];
 
@@ -329,6 +333,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'creativeDisplayType' => 'getCreativeDisplayType',
         'autoDerivedCreativeEnabled' => 'getAutoDerivedCreativeEnabled',
         'smartBidType' => 'getSmartBidType',
+        'marketingScene' => 'getMarketingScene',
         'accountId' => 'getAccountId'
     ];
 
@@ -435,6 +440,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['creativeDisplayType'] = isset($data['creativeDisplayType']) ? $data['creativeDisplayType'] : null;
         $this->container['autoDerivedCreativeEnabled'] = isset($data['autoDerivedCreativeEnabled']) ? $data['autoDerivedCreativeEnabled'] : null;
         $this->container['smartBidType'] = isset($data['smartBidType']) ? $data['smartBidType'] : null;
+        $this->container['marketingScene'] = isset($data['marketingScene']) ? $data['marketingScene'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1490,6 +1496,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setSmartBidType($smartBidType)
     {
         $this->container['smartBidType'] = $smartBidType;
+
+        return $this;
+    }
+
+    /**
+     * Gets marketingScene
+     *
+     * @return \TencentAds\Model\MarketingScene
+     */
+    public function getMarketingScene()
+    {
+        return $this->container['marketingScene'];
+    }
+
+    /**
+     * Sets marketingScene
+     *
+     * @param \TencentAds\Model\MarketingScene $marketingScene marketingScene
+     *
+     * @return $this
+     */
+    public function setMarketingScene($marketingScene)
+    {
+        $this->container['marketingScene'] = $marketingScene;
 
         return $this;
     }

@@ -114,7 +114,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'creativeDisplayType' => '\TencentAds\Model\CreativeDisplayType',
         'autoDerivedCreativeEnabled' => 'bool',
         'smartBidType' => '\TencentAds\Model\SmartBidType',
-        'smartCostCap' => 'int'
+        'smartCostCap' => 'int',
+        'marketingScene' => '\TencentAds\Model\MarketingScene'
     ];
 
     /**
@@ -179,7 +180,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'creativeDisplayType' => null,
         'autoDerivedCreativeEnabled' => null,
         'smartBidType' => null,
-        'smartCostCap' => 'int64'
+        'smartCostCap' => 'int64',
+        'marketingScene' => null
     ];
 
     /**
@@ -265,7 +267,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'creativeDisplayType' => 'creative_display_type',
         'autoDerivedCreativeEnabled' => 'auto_derived_creative_enabled',
         'smartBidType' => 'smart_bid_type',
-        'smartCostCap' => 'smart_cost_cap'
+        'smartCostCap' => 'smart_cost_cap',
+        'marketingScene' => 'marketing_scene'
     ];
 
     /**
@@ -330,7 +333,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'creativeDisplayType' => 'setCreativeDisplayType',
         'autoDerivedCreativeEnabled' => 'setAutoDerivedCreativeEnabled',
         'smartBidType' => 'setSmartBidType',
-        'smartCostCap' => 'setSmartCostCap'
+        'smartCostCap' => 'setSmartCostCap',
+        'marketingScene' => 'setMarketingScene'
     ];
 
     /**
@@ -395,7 +399,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'creativeDisplayType' => 'getCreativeDisplayType',
         'autoDerivedCreativeEnabled' => 'getAutoDerivedCreativeEnabled',
         'smartBidType' => 'getSmartBidType',
-        'smartCostCap' => 'getSmartCostCap'
+        'smartCostCap' => 'getSmartCostCap',
+        'marketingScene' => 'getMarketingScene'
     ];
 
     /**
@@ -515,6 +520,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['autoDerivedCreativeEnabled'] = isset($data['autoDerivedCreativeEnabled']) ? $data['autoDerivedCreativeEnabled'] : null;
         $this->container['smartBidType'] = isset($data['smartBidType']) ? $data['smartBidType'] : null;
         $this->container['smartCostCap'] = isset($data['smartCostCap']) ? $data['smartCostCap'] : null;
+        $this->container['marketingScene'] = isset($data['marketingScene']) ? $data['marketingScene'] : null;
     }
 
     /**
@@ -1905,6 +1911,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setSmartCostCap($smartCostCap)
     {
         $this->container['smartCostCap'] = $smartCostCap;
+
+        return $this;
+    }
+
+    /**
+     * Gets marketingScene
+     *
+     * @return \TencentAds\Model\MarketingScene
+     */
+    public function getMarketingScene()
+    {
+        return $this->container['marketingScene'];
+    }
+
+    /**
+     * Sets marketingScene
+     *
+     * @param \TencentAds\Model\MarketingScene $marketingScene marketingScene
+     *
+     * @return $this
+     */
+    public function setMarketingScene($marketingScene)
+    {
+        $this->container['marketingScene'] = $marketingScene;
 
         return $this;
     }
