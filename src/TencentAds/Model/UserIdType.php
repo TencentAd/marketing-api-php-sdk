@@ -56,6 +56,7 @@ class UserIdType
     const MOBILE_QQ_OPENID = 'MOBILE_QQ_OPENID';
     const QQ = 'QQ';
     const WX_OPENID = 'WX_OPENID';
+    const WX_UNIONID = 'WX_UNIONID';
     const WECHAT_OPENID = 'WECHAT_OPENID';
     const SALTED_HASH_IMEI = 'SALTED_HASH_IMEI';
     const SALTED_HASH_IDFA = 'SALTED_HASH_IDFA';
@@ -85,6 +86,7 @@ class UserIdType
             self::MOBILE_QQ_OPENID,
             self::QQ,
             self::WX_OPENID,
+            self::WX_UNIONID,
             self::WECHAT_OPENID,
             self::SALTED_HASH_IMEI,
             self::SALTED_HASH_IDFA,
