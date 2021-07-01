@@ -76,6 +76,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'dynamicAdcreativeSpec' => '\TencentAds\Model\DynamicAdcreativeSpecForDc',
         'videoEndPage' => '\TencentAds\Model\VideoEndPageSpec',
         'barrageList' => '\TencentAds\Model\BarrageListCreateStruct[]',
+        'dynamicCreativeGroupUsed' => '\TencentAds\Model\DynamicCreativeGroupUsed',
         'accountId' => 'int'
     ];
 
@@ -104,6 +105,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'dynamicAdcreativeSpec' => null,
         'videoEndPage' => null,
         'barrageList' => null,
+        'dynamicCreativeGroupUsed' => null,
         'accountId' => 'int64'
     ];
 
@@ -153,6 +155,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'dynamicAdcreativeSpec' => 'dynamic_adcreative_spec',
         'videoEndPage' => 'video_end_page',
         'barrageList' => 'barrage_list',
+        'dynamicCreativeGroupUsed' => 'dynamic_creative_group_used',
         'accountId' => 'account_id'
     ];
 
@@ -181,6 +184,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'dynamicAdcreativeSpec' => 'setDynamicAdcreativeSpec',
         'videoEndPage' => 'setVideoEndPage',
         'barrageList' => 'setBarrageList',
+        'dynamicCreativeGroupUsed' => 'setDynamicCreativeGroupUsed',
         'accountId' => 'setAccountId'
     ];
 
@@ -209,6 +213,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'dynamicAdcreativeSpec' => 'getDynamicAdcreativeSpec',
         'videoEndPage' => 'getVideoEndPage',
         'barrageList' => 'getBarrageList',
+        'dynamicCreativeGroupUsed' => 'getDynamicCreativeGroupUsed',
         'accountId' => 'getAccountId'
     ];
 
@@ -291,6 +296,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         $this->container['dynamicAdcreativeSpec'] = isset($data['dynamicAdcreativeSpec']) ? $data['dynamicAdcreativeSpec'] : null;
         $this->container['videoEndPage'] = isset($data['videoEndPage']) ? $data['videoEndPage'] : null;
         $this->container['barrageList'] = isset($data['barrageList']) ? $data['barrageList'] : null;
+        $this->container['dynamicCreativeGroupUsed'] = isset($data['dynamicCreativeGroupUsed']) ? $data['dynamicCreativeGroupUsed'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -770,6 +776,30 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     public function setBarrageList($barrageList)
     {
         $this->container['barrageList'] = $barrageList;
+
+        return $this;
+    }
+
+    /**
+     * Gets dynamicCreativeGroupUsed
+     *
+     * @return \TencentAds\Model\DynamicCreativeGroupUsed
+     */
+    public function getDynamicCreativeGroupUsed()
+    {
+        return $this->container['dynamicCreativeGroupUsed'];
+    }
+
+    /**
+     * Sets dynamicCreativeGroupUsed
+     *
+     * @param \TencentAds\Model\DynamicCreativeGroupUsed $dynamicCreativeGroupUsed dynamicCreativeGroupUsed
+     *
+     * @return $this
+     */
+    public function setDynamicCreativeGroupUsed($dynamicCreativeGroupUsed)
+    {
+        $this->container['dynamicCreativeGroupUsed'] = $dynamicCreativeGroupUsed;
 
         return $this;
     }

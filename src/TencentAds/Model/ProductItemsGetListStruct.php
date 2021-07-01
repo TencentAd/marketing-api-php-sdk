@@ -75,7 +75,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
         'brandId' => 'int',
         'description' => 'string',
         'customData' => 'string',
-        'isVideo' => 'string',
+        'isVideo' => 'bool',
         'dataSource' => 'string',
         'productSelectScore' => 'double'
     ];
@@ -730,7 +730,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets isVideo
      *
-     * @return string
+     * @return bool
      */
     public function getIsVideo()
     {
@@ -740,7 +740,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets isVideo
      *
-     * @param string $isVideo isVideo
+     * @param bool $isVideo isVideo
      *
      * @return $this
      */

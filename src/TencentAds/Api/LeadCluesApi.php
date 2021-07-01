@@ -372,7 +372,7 @@ class LeadCluesApi
     /**
      * Operation leadCluesUpdate
      *
-     * 回传线索信息
+     * 回传线索状态
      *
      * @param  \TencentAds\Model\LeadCluesUpdateRequest $data data (required)
      *
@@ -389,7 +389,7 @@ class LeadCluesApi
     /**
      * Operation leadCluesUpdateWithHttpInfo
      *
-     * 回传线索信息
+     * 回传线索状态
      *
      * @param  \TencentAds\Model\LeadCluesUpdateRequest $data (required)
      *
@@ -464,7 +464,7 @@ class LeadCluesApi
     /**
      * Operation leadCluesUpdateAsync
      *
-     * 回传线索信息
+     * 回传线索状态
      *
      * @param  \TencentAds\Model\LeadCluesUpdateRequest $data (required)
      *
@@ -484,7 +484,7 @@ class LeadCluesApi
     /**
      * Operation leadCluesUpdateAsyncWithHttpInfo
      *
-     * 回传线索信息
+     * 回传线索状态
      *
      * @param  \TencentAds\Model\LeadCluesUpdateRequest $data (required)
      *

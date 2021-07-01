@@ -65,7 +65,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'pageType' => '\TencentAds\Model\PageTypeRead',
         'pageSpec' => '\TencentAds\Model\PageSpec',
         'linkPageType' => '\TencentAds\Model\LinkPageType',
-        'linkNameType' => '\TencentAds\Model\LinkNameType',
+        'linkNameType' => '\TencentAds\Model\LinkUrlLinkNameType',
         'linkPageSpec' => '\TencentAds\Model\LinkPageSpec',
         'conversionDataType' => '\TencentAds\Model\ConversionDataType',
         'conversionTargetType' => '\TencentAds\Model\ConversionTargetType',
@@ -640,7 +640,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets linkNameType
      *
-     * @return \TencentAds\Model\LinkNameType
+     * @return \TencentAds\Model\LinkUrlLinkNameType
      */
     public function getLinkNameType()
     {
@@ -650,7 +650,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets linkNameType
      *
-     * @param \TencentAds\Model\LinkNameType $linkNameType linkNameType
+     * @param \TencentAds\Model\LinkUrlLinkNameType $linkNameType linkNameType
      *
      * @return $this
      */

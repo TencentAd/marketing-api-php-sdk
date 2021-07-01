@@ -62,7 +62,8 @@ class PageSpec implements ModelInterface, ArrayAccess
         'pageUrl' => 'string',
         'miniProgramSpec' => '\TencentAds\Model\AdcreativeMiniProgramSpec',
         'miniGameSpec' => '\TencentAds\Model\MiniGameSpec',
-        'overrideCanvasHeadOption' => '\TencentAds\Model\OverrideCanvasHeadOption'
+        'overrideCanvasHeadOption' => '\TencentAds\Model\OverrideCanvasHeadOption',
+        'dynamicProductSpec' => '\TencentAds\Model\DynamicProductSpec'
     ];
 
     /**
@@ -75,7 +76,8 @@ class PageSpec implements ModelInterface, ArrayAccess
         'pageUrl' => null,
         'miniProgramSpec' => null,
         'miniGameSpec' => null,
-        'overrideCanvasHeadOption' => null
+        'overrideCanvasHeadOption' => null,
+        'dynamicProductSpec' => null
     ];
 
     /**
@@ -109,7 +111,8 @@ class PageSpec implements ModelInterface, ArrayAccess
         'pageUrl' => 'page_url',
         'miniProgramSpec' => 'mini_program_spec',
         'miniGameSpec' => 'mini_game_spec',
-        'overrideCanvasHeadOption' => 'override_canvas_head_option'
+        'overrideCanvasHeadOption' => 'override_canvas_head_option',
+        'dynamicProductSpec' => 'dynamic_product_spec'
     ];
 
     /**
@@ -122,7 +125,8 @@ class PageSpec implements ModelInterface, ArrayAccess
         'pageUrl' => 'setPageUrl',
         'miniProgramSpec' => 'setMiniProgramSpec',
         'miniGameSpec' => 'setMiniGameSpec',
-        'overrideCanvasHeadOption' => 'setOverrideCanvasHeadOption'
+        'overrideCanvasHeadOption' => 'setOverrideCanvasHeadOption',
+        'dynamicProductSpec' => 'setDynamicProductSpec'
     ];
 
     /**
@@ -135,7 +139,8 @@ class PageSpec implements ModelInterface, ArrayAccess
         'pageUrl' => 'getPageUrl',
         'miniProgramSpec' => 'getMiniProgramSpec',
         'miniGameSpec' => 'getMiniGameSpec',
-        'overrideCanvasHeadOption' => 'getOverrideCanvasHeadOption'
+        'overrideCanvasHeadOption' => 'getOverrideCanvasHeadOption',
+        'dynamicProductSpec' => 'getDynamicProductSpec'
     ];
 
     /**
@@ -203,6 +208,7 @@ class PageSpec implements ModelInterface, ArrayAccess
         $this->container['miniProgramSpec'] = isset($data['miniProgramSpec']) ? $data['miniProgramSpec'] : null;
         $this->container['miniGameSpec'] = isset($data['miniGameSpec']) ? $data['miniGameSpec'] : null;
         $this->container['overrideCanvasHeadOption'] = isset($data['overrideCanvasHeadOption']) ? $data['overrideCanvasHeadOption'] : null;
+        $this->container['dynamicProductSpec'] = isset($data['dynamicProductSpec']) ? $data['dynamicProductSpec'] : null;
     }
 
     /**
@@ -345,6 +351,30 @@ class PageSpec implements ModelInterface, ArrayAccess
     public function setOverrideCanvasHeadOption($overrideCanvasHeadOption)
     {
         $this->container['overrideCanvasHeadOption'] = $overrideCanvasHeadOption;
+
+        return $this;
+    }
+
+    /**
+     * Gets dynamicProductSpec
+     *
+     * @return \TencentAds\Model\DynamicProductSpec
+     */
+    public function getDynamicProductSpec()
+    {
+        return $this->container['dynamicProductSpec'];
+    }
+
+    /**
+     * Sets dynamicProductSpec
+     *
+     * @param \TencentAds\Model\DynamicProductSpec $dynamicProductSpec dynamicProductSpec
+     *
+     * @return $this
+     */
+    public function setDynamicProductSpec($dynamicProductSpec)
+    {
+        $this->container['dynamicProductSpec'] = $dynamicProductSpec;
 
         return $this;
     }

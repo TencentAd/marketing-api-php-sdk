@@ -60,7 +60,9 @@ class DynamicAdcreativeSpec implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'productCatalogId' => 'int',
         'productMode' => '\TencentAds\Model\ProductMode',
-        'productSource' => 'string'
+        'productSource' => 'string',
+        'productExposureQuantityMode' => '\TencentAds\Model\ProductItemsQuantity',
+        'landingPageUrlType' => '\TencentAds\Model\LandingPageUrlType'
     ];
 
     /**
@@ -71,7 +73,9 @@ class DynamicAdcreativeSpec implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'productCatalogId' => 'int64',
         'productMode' => null,
-        'productSource' => null
+        'productSource' => null,
+        'productExposureQuantityMode' => null,
+        'landingPageUrlType' => null
     ];
 
     /**
@@ -103,7 +107,9 @@ class DynamicAdcreativeSpec implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'productCatalogId' => 'product_catalog_id',
         'productMode' => 'product_mode',
-        'productSource' => 'product_source'
+        'productSource' => 'product_source',
+        'productExposureQuantityMode' => 'product_exposure_quantity_mode',
+        'landingPageUrlType' => 'landing_page_url_type'
     ];
 
     /**
@@ -114,7 +120,9 @@ class DynamicAdcreativeSpec implements ModelInterface, ArrayAccess
     protected static $setters = [
         'productCatalogId' => 'setProductCatalogId',
         'productMode' => 'setProductMode',
-        'productSource' => 'setProductSource'
+        'productSource' => 'setProductSource',
+        'productExposureQuantityMode' => 'setProductExposureQuantityMode',
+        'landingPageUrlType' => 'setLandingPageUrlType'
     ];
 
     /**
@@ -125,7 +133,9 @@ class DynamicAdcreativeSpec implements ModelInterface, ArrayAccess
     protected static $getters = [
         'productCatalogId' => 'getProductCatalogId',
         'productMode' => 'getProductMode',
-        'productSource' => 'getProductSource'
+        'productSource' => 'getProductSource',
+        'productExposureQuantityMode' => 'getProductExposureQuantityMode',
+        'landingPageUrlType' => 'getLandingPageUrlType'
     ];
 
     /**
@@ -191,6 +201,8 @@ class DynamicAdcreativeSpec implements ModelInterface, ArrayAccess
         $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
         $this->container['productMode'] = isset($data['productMode']) ? $data['productMode'] : null;
         $this->container['productSource'] = isset($data['productSource']) ? $data['productSource'] : null;
+        $this->container['productExposureQuantityMode'] = isset($data['productExposureQuantityMode']) ? $data['productExposureQuantityMode'] : null;
+        $this->container['landingPageUrlType'] = isset($data['landingPageUrlType']) ? $data['landingPageUrlType'] : null;
     }
 
     /**
@@ -285,6 +297,54 @@ class DynamicAdcreativeSpec implements ModelInterface, ArrayAccess
     public function setProductSource($productSource)
     {
         $this->container['productSource'] = $productSource;
+
+        return $this;
+    }
+
+    /**
+     * Gets productExposureQuantityMode
+     *
+     * @return \TencentAds\Model\ProductItemsQuantity
+     */
+    public function getProductExposureQuantityMode()
+    {
+        return $this->container['productExposureQuantityMode'];
+    }
+
+    /**
+     * Sets productExposureQuantityMode
+     *
+     * @param \TencentAds\Model\ProductItemsQuantity $productExposureQuantityMode productExposureQuantityMode
+     *
+     * @return $this
+     */
+    public function setProductExposureQuantityMode($productExposureQuantityMode)
+    {
+        $this->container['productExposureQuantityMode'] = $productExposureQuantityMode;
+
+        return $this;
+    }
+
+    /**
+     * Gets landingPageUrlType
+     *
+     * @return \TencentAds\Model\LandingPageUrlType
+     */
+    public function getLandingPageUrlType()
+    {
+        return $this->container['landingPageUrlType'];
+    }
+
+    /**
+     * Sets landingPageUrlType
+     *
+     * @param \TencentAds\Model\LandingPageUrlType $landingPageUrlType landingPageUrlType
+     *
+     * @return $this
+     */
+    public function setLandingPageUrlType($landingPageUrlType)
+    {
+        $this->container['landingPageUrlType'] = $landingPageUrlType;
 
         return $this;
     }

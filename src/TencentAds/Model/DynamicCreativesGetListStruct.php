@@ -80,7 +80,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'feedsVideoCommentSwitch' => 'bool',
         'unionMarketSwitch' => 'bool',
         'videoEndPage' => '\TencentAds\Model\VideoEndPageSpec',
-        'barrageList' => '\TencentAds\Model\BarrageListReadStruct[]'
+        'barrageList' => '\TencentAds\Model\BarrageListReadStruct[]',
+        'dynamicCreativeGroupUsed' => '\TencentAds\Model\DynamicCreativeGroupUsed'
     ];
 
     /**
@@ -111,7 +112,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'feedsVideoCommentSwitch' => null,
         'unionMarketSwitch' => null,
         'videoEndPage' => null,
-        'barrageList' => null
+        'barrageList' => null,
+        'dynamicCreativeGroupUsed' => null
     ];
 
     /**
@@ -163,7 +165,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'feedsVideoCommentSwitch' => 'feeds_video_comment_switch',
         'unionMarketSwitch' => 'union_market_switch',
         'videoEndPage' => 'video_end_page',
-        'barrageList' => 'barrage_list'
+        'barrageList' => 'barrage_list',
+        'dynamicCreativeGroupUsed' => 'dynamic_creative_group_used'
     ];
 
     /**
@@ -194,7 +197,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'feedsVideoCommentSwitch' => 'setFeedsVideoCommentSwitch',
         'unionMarketSwitch' => 'setUnionMarketSwitch',
         'videoEndPage' => 'setVideoEndPage',
-        'barrageList' => 'setBarrageList'
+        'barrageList' => 'setBarrageList',
+        'dynamicCreativeGroupUsed' => 'setDynamicCreativeGroupUsed'
     ];
 
     /**
@@ -225,7 +229,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'feedsVideoCommentSwitch' => 'getFeedsVideoCommentSwitch',
         'unionMarketSwitch' => 'getUnionMarketSwitch',
         'videoEndPage' => 'getVideoEndPage',
-        'barrageList' => 'getBarrageList'
+        'barrageList' => 'getBarrageList',
+        'dynamicCreativeGroupUsed' => 'getDynamicCreativeGroupUsed'
     ];
 
     /**
@@ -311,6 +316,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['unionMarketSwitch'] = isset($data['unionMarketSwitch']) ? $data['unionMarketSwitch'] : null;
         $this->container['videoEndPage'] = isset($data['videoEndPage']) ? $data['videoEndPage'] : null;
         $this->container['barrageList'] = isset($data['barrageList']) ? $data['barrageList'] : null;
+        $this->container['dynamicCreativeGroupUsed'] = isset($data['dynamicCreativeGroupUsed']) ? $data['dynamicCreativeGroupUsed'] : null;
     }
 
     /**
@@ -885,6 +891,30 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setBarrageList($barrageList)
     {
         $this->container['barrageList'] = $barrageList;
+
+        return $this;
+    }
+
+    /**
+     * Gets dynamicCreativeGroupUsed
+     *
+     * @return \TencentAds\Model\DynamicCreativeGroupUsed
+     */
+    public function getDynamicCreativeGroupUsed()
+    {
+        return $this->container['dynamicCreativeGroupUsed'];
+    }
+
+    /**
+     * Sets dynamicCreativeGroupUsed
+     *
+     * @param \TencentAds\Model\DynamicCreativeGroupUsed $dynamicCreativeGroupUsed dynamicCreativeGroupUsed
+     *
+     * @return $this
+     */
+    public function setDynamicCreativeGroupUsed($dynamicCreativeGroupUsed)
+    {
+        $this->container['dynamicCreativeGroupUsed'] = $dynamicCreativeGroupUsed;
 
         return $this;
     }
