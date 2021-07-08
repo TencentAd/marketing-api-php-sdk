@@ -59,7 +59,8 @@ class ApiContainer
         $request = MiddlewareRequest::init($this->app, get_class($this->apiInstance), $method, $arguments);
         $middlewareFun = [];
         $skipMiddlewareFun = $this->getSkipMiddlewareFunc();
-        foreach ($this->app->getMiddlewareInstance() as $middlewareName => $middleware) {
+        $middleWareInstance = $this->app->getMiddlewareInstance();
+        foreach ($middleWareInstance as $middlewareName => $middleware) {
             if ($skipMiddlewareFun($middlewareName, $method)) {
                 continue;
             }
@@ -85,7 +86,8 @@ class ApiContainer
     public function handleMiddlewareBefore($method, $arguments)
     {
         $skipMiddlewareFun = $this->getSkipMiddlewareFunc();
-        foreach ($this->app->getMiddlewareInstance() as $middlewareName => $middleware) {
+        $middlewareInstance = $this->app->getMiddlewareInstance();
+        foreach ($middlewareInstance as $middlewareName => $middleware) {
             if ($skipMiddlewareFun($middlewareName, $method)) {
                 continue;
             }
@@ -107,7 +109,8 @@ class ApiContainer
     public function handleMiddlewareAfter($method, $response)
     {
         $skipMiddlewareFun = $this->getSkipMiddlewareFunc();
-        foreach (array_reverse($this->app->getMiddlewareInstance()) as $middlewareName => $middleware) {
+        $middlewareInstance = array_reverse($this->app->getMiddlewareInstance());
+        foreach ($middlewareInstance as $middlewareName => $middleware) {
             if ($skipMiddlewareFun($middlewareName, $method)) {
                 continue;
             }
