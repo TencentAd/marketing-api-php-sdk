@@ -115,7 +115,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => 'bool',
         'smartBidType' => '\TencentAds\Model\SmartBidType',
         'smartCostCap' => 'int',
-        'marketingScene' => '\TencentAds\Model\MarketingScene'
+        'marketingScene' => '\TencentAds\Model\MarketingScene',
+        'deepOptimizationType' => '\TencentAds\Model\DeepOptimizationType'
     ];
 
     /**
@@ -181,7 +182,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => null,
         'smartBidType' => null,
         'smartCostCap' => 'int64',
-        'marketingScene' => null
+        'marketingScene' => null,
+        'deepOptimizationType' => null
     ];
 
     /**
@@ -268,7 +270,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => 'auto_derived_creative_enabled',
         'smartBidType' => 'smart_bid_type',
         'smartCostCap' => 'smart_cost_cap',
-        'marketingScene' => 'marketing_scene'
+        'marketingScene' => 'marketing_scene',
+        'deepOptimizationType' => 'deep_optimization_type'
     ];
 
     /**
@@ -334,7 +337,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => 'setAutoDerivedCreativeEnabled',
         'smartBidType' => 'setSmartBidType',
         'smartCostCap' => 'setSmartCostCap',
-        'marketingScene' => 'setMarketingScene'
+        'marketingScene' => 'setMarketingScene',
+        'deepOptimizationType' => 'setDeepOptimizationType'
     ];
 
     /**
@@ -400,7 +404,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => 'getAutoDerivedCreativeEnabled',
         'smartBidType' => 'getSmartBidType',
         'smartCostCap' => 'getSmartCostCap',
-        'marketingScene' => 'getMarketingScene'
+        'marketingScene' => 'getMarketingScene',
+        'deepOptimizationType' => 'getDeepOptimizationType'
     ];
 
     /**
@@ -521,6 +526,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['smartBidType'] = isset($data['smartBidType']) ? $data['smartBidType'] : null;
         $this->container['smartCostCap'] = isset($data['smartCostCap']) ? $data['smartCostCap'] : null;
         $this->container['marketingScene'] = isset($data['marketingScene']) ? $data['marketingScene'] : null;
+        $this->container['deepOptimizationType'] = isset($data['deepOptimizationType']) ? $data['deepOptimizationType'] : null;
     }
 
     /**
@@ -1935,6 +1941,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setMarketingScene($marketingScene)
     {
         $this->container['marketingScene'] = $marketingScene;
+
+        return $this;
+    }
+
+    /**
+     * Gets deepOptimizationType
+     *
+     * @return \TencentAds\Model\DeepOptimizationType
+     */
+    public function getDeepOptimizationType()
+    {
+        return $this->container['deepOptimizationType'];
+    }
+
+    /**
+     * Sets deepOptimizationType
+     *
+     * @param \TencentAds\Model\DeepOptimizationType $deepOptimizationType deepOptimizationType
+     *
+     * @return $this
+     */
+    public function setDeepOptimizationType($deepOptimizationType)
+    {
+        $this->container['deepOptimizationType'] = $deepOptimizationType;
 
         return $this;
     }

@@ -64,6 +64,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
         'campaignType' => '\TencentAds\Model\CampaignType',
         'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
         'dailyBudget' => 'int',
+        'totalBudget' => 'int',
         'budgetReachDate' => 'int',
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
@@ -84,6 +85,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
         'campaignType' => null,
         'promotedObjectType' => null,
         'dailyBudget' => 'int64',
+        'totalBudget' => 'int64',
         'budgetReachDate' => 'int64',
         'createdTime' => 'int64',
         'lastModifiedTime' => 'int64',
@@ -125,6 +127,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
         'campaignType' => 'campaign_type',
         'promotedObjectType' => 'promoted_object_type',
         'dailyBudget' => 'daily_budget',
+        'totalBudget' => 'total_budget',
         'budgetReachDate' => 'budget_reach_date',
         'createdTime' => 'created_time',
         'lastModifiedTime' => 'last_modified_time',
@@ -145,6 +148,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
         'campaignType' => 'setCampaignType',
         'promotedObjectType' => 'setPromotedObjectType',
         'dailyBudget' => 'setDailyBudget',
+        'totalBudget' => 'setTotalBudget',
         'budgetReachDate' => 'setBudgetReachDate',
         'createdTime' => 'setCreatedTime',
         'lastModifiedTime' => 'setLastModifiedTime',
@@ -165,6 +169,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
         'campaignType' => 'getCampaignType',
         'promotedObjectType' => 'getPromotedObjectType',
         'dailyBudget' => 'getDailyBudget',
+        'totalBudget' => 'getTotalBudget',
         'budgetReachDate' => 'getBudgetReachDate',
         'createdTime' => 'getCreatedTime',
         'lastModifiedTime' => 'getLastModifiedTime',
@@ -239,6 +244,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['campaignType'] = isset($data['campaignType']) ? $data['campaignType'] : null;
         $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
         $this->container['dailyBudget'] = isset($data['dailyBudget']) ? $data['dailyBudget'] : null;
+        $this->container['totalBudget'] = isset($data['totalBudget']) ? $data['totalBudget'] : null;
         $this->container['budgetReachDate'] = isset($data['budgetReachDate']) ? $data['budgetReachDate'] : null;
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
@@ -411,6 +417,30 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     public function setDailyBudget($dailyBudget)
     {
         $this->container['dailyBudget'] = $dailyBudget;
+
+        return $this;
+    }
+
+    /**
+     * Gets totalBudget
+     *
+     * @return int
+     */
+    public function getTotalBudget()
+    {
+        return $this->container['totalBudget'];
+    }
+
+    /**
+     * Sets totalBudget
+     *
+     * @param int $totalBudget totalBudget
+     *
+     * @return $this
+     */
+    public function setTotalBudget($totalBudget)
+    {
+        $this->container['totalBudget'] = $totalBudget;
 
         return $this;
     }

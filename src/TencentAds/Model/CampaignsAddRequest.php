@@ -62,6 +62,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
         'campaignType' => '\TencentAds\Model\CampaignType',
         'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
         'dailyBudget' => 'int',
+        'totalBudget' => 'int',
         'configuredStatus' => '\TencentAds\Model\AdStatus',
         'speedMode' => '\TencentAds\Model\SpeedMode'
     ];
@@ -77,6 +78,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
         'campaignType' => null,
         'promotedObjectType' => null,
         'dailyBudget' => 'int64',
+        'totalBudget' => 'int64',
         'configuredStatus' => null,
         'speedMode' => null
     ];
@@ -113,6 +115,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
         'campaignType' => 'campaign_type',
         'promotedObjectType' => 'promoted_object_type',
         'dailyBudget' => 'daily_budget',
+        'totalBudget' => 'total_budget',
         'configuredStatus' => 'configured_status',
         'speedMode' => 'speed_mode'
     ];
@@ -128,6 +131,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
         'campaignType' => 'setCampaignType',
         'promotedObjectType' => 'setPromotedObjectType',
         'dailyBudget' => 'setDailyBudget',
+        'totalBudget' => 'setTotalBudget',
         'configuredStatus' => 'setConfiguredStatus',
         'speedMode' => 'setSpeedMode'
     ];
@@ -143,6 +147,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
         'campaignType' => 'getCampaignType',
         'promotedObjectType' => 'getPromotedObjectType',
         'dailyBudget' => 'getDailyBudget',
+        'totalBudget' => 'getTotalBudget',
         'configuredStatus' => 'getConfiguredStatus',
         'speedMode' => 'getSpeedMode'
     ];
@@ -212,6 +217,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
         $this->container['campaignType'] = isset($data['campaignType']) ? $data['campaignType'] : null;
         $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
         $this->container['dailyBudget'] = isset($data['dailyBudget']) ? $data['dailyBudget'] : null;
+        $this->container['totalBudget'] = isset($data['totalBudget']) ? $data['totalBudget'] : null;
         $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
         $this->container['speedMode'] = isset($data['speedMode']) ? $data['speedMode'] : null;
     }
@@ -356,6 +362,30 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
     public function setDailyBudget($dailyBudget)
     {
         $this->container['dailyBudget'] = $dailyBudget;
+
+        return $this;
+    }
+
+    /**
+     * Gets totalBudget
+     *
+     * @return int
+     */
+    public function getTotalBudget()
+    {
+        return $this->container['totalBudget'];
+    }
+
+    /**
+     * Sets totalBudget
+     *
+     * @param int $totalBudget totalBudget
+     *
+     * @return $this
+     */
+    public function setTotalBudget($totalBudget)
+    {
+        $this->container['totalBudget'] = $totalBudget;
 
         return $this;
     }

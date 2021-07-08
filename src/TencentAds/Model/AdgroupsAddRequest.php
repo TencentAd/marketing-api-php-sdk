@@ -101,6 +101,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => 'bool',
         'smartBidType' => '\TencentAds\Model\SmartBidType',
         'marketingScene' => '\TencentAds\Model\MarketingScene',
+        'deepOptimizationType' => '\TencentAds\Model\DeepOptimizationType',
         'accountId' => 'int'
     ];
 
@@ -154,6 +155,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => null,
         'smartBidType' => null,
         'marketingScene' => null,
+        'deepOptimizationType' => null,
         'accountId' => 'int64'
     ];
 
@@ -228,6 +230,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => 'auto_derived_creative_enabled',
         'smartBidType' => 'smart_bid_type',
         'marketingScene' => 'marketing_scene',
+        'deepOptimizationType' => 'deep_optimization_type',
         'accountId' => 'account_id'
     ];
 
@@ -281,6 +284,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => 'setAutoDerivedCreativeEnabled',
         'smartBidType' => 'setSmartBidType',
         'marketingScene' => 'setMarketingScene',
+        'deepOptimizationType' => 'setDeepOptimizationType',
         'accountId' => 'setAccountId'
     ];
 
@@ -334,6 +338,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => 'getAutoDerivedCreativeEnabled',
         'smartBidType' => 'getSmartBidType',
         'marketingScene' => 'getMarketingScene',
+        'deepOptimizationType' => 'getDeepOptimizationType',
         'accountId' => 'getAccountId'
     ];
 
@@ -441,6 +446,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['autoDerivedCreativeEnabled'] = isset($data['autoDerivedCreativeEnabled']) ? $data['autoDerivedCreativeEnabled'] : null;
         $this->container['smartBidType'] = isset($data['smartBidType']) ? $data['smartBidType'] : null;
         $this->container['marketingScene'] = isset($data['marketingScene']) ? $data['marketingScene'] : null;
+        $this->container['deepOptimizationType'] = isset($data['deepOptimizationType']) ? $data['deepOptimizationType'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1520,6 +1526,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setMarketingScene($marketingScene)
     {
         $this->container['marketingScene'] = $marketingScene;
+
+        return $this;
+    }
+
+    /**
+     * Gets deepOptimizationType
+     *
+     * @return \TencentAds\Model\DeepOptimizationType
+     */
+    public function getDeepOptimizationType()
+    {
+        return $this->container['deepOptimizationType'];
+    }
+
+    /**
+     * Sets deepOptimizationType
+     *
+     * @param \TencentAds\Model\DeepOptimizationType $deepOptimizationType deepOptimizationType
+     *
+     * @return $this
+     */
+    public function setDeepOptimizationType($deepOptimizationType)
+    {
+        $this->container['deepOptimizationType'] = $deepOptimizationType;
 
         return $this;
     }

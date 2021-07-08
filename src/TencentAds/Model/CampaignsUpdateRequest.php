@@ -61,6 +61,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
         'campaignId' => 'int',
         'campaignName' => 'string',
         'dailyBudget' => 'int',
+        'totalBudget' => 'int',
         'configuredStatus' => '\TencentAds\Model\AdStatus',
         'speedMode' => '\TencentAds\Model\SpeedMode',
         'beginDate' => 'string',
@@ -78,6 +79,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
         'campaignId' => 'int64',
         'campaignName' => null,
         'dailyBudget' => 'int64',
+        'totalBudget' => 'int64',
         'configuredStatus' => null,
         'speedMode' => null,
         'beginDate' => null,
@@ -116,6 +118,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
         'campaignId' => 'campaign_id',
         'campaignName' => 'campaign_name',
         'dailyBudget' => 'daily_budget',
+        'totalBudget' => 'total_budget',
         'configuredStatus' => 'configured_status',
         'speedMode' => 'speed_mode',
         'beginDate' => 'begin_date',
@@ -133,6 +136,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
         'campaignId' => 'setCampaignId',
         'campaignName' => 'setCampaignName',
         'dailyBudget' => 'setDailyBudget',
+        'totalBudget' => 'setTotalBudget',
         'configuredStatus' => 'setConfiguredStatus',
         'speedMode' => 'setSpeedMode',
         'beginDate' => 'setBeginDate',
@@ -150,6 +154,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
         'campaignId' => 'getCampaignId',
         'campaignName' => 'getCampaignName',
         'dailyBudget' => 'getDailyBudget',
+        'totalBudget' => 'getTotalBudget',
         'configuredStatus' => 'getConfiguredStatus',
         'speedMode' => 'getSpeedMode',
         'beginDate' => 'getBeginDate',
@@ -221,6 +226,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
         $this->container['campaignName'] = isset($data['campaignName']) ? $data['campaignName'] : null;
         $this->container['dailyBudget'] = isset($data['dailyBudget']) ? $data['dailyBudget'] : null;
+        $this->container['totalBudget'] = isset($data['totalBudget']) ? $data['totalBudget'] : null;
         $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
         $this->container['speedMode'] = isset($data['speedMode']) ? $data['speedMode'] : null;
         $this->container['beginDate'] = isset($data['beginDate']) ? $data['beginDate'] : null;
@@ -344,6 +350,30 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
     public function setDailyBudget($dailyBudget)
     {
         $this->container['dailyBudget'] = $dailyBudget;
+
+        return $this;
+    }
+
+    /**
+     * Gets totalBudget
+     *
+     * @return int
+     */
+    public function getTotalBudget()
+    {
+        return $this->container['totalBudget'];
+    }
+
+    /**
+     * Sets totalBudget
+     *
+     * @param int $totalBudget totalBudget
+     *
+     * @return $this
+     */
+    public function setTotalBudget($totalBudget)
+    {
+        $this->container['totalBudget'] = $totalBudget;
 
         return $this;
     }

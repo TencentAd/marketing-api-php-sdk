@@ -1,6 +1,6 @@
 <?php
 /**
- * WechatAccountFundType
+ * DeepOptimizationType
  *
  * PHP version 5
  *
@@ -31,27 +31,21 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * WechatAccountFundType Class Doc Comment
+ * DeepOptimizationType Class Doc Comment
  *
  * @category Class
- * @description 微信资金账户类型，注意非资金类型
+ * @description 深度优化策略类型，该字段仅在深度优化开启时可用，且不可与deep_optimization_action_type同时使用，仅当投放微信版位广告时可设置为DEEP_OPTIMIZATION_TYPE_SECOND_STAGE_BID。当没有指定该字段时，默认按DEEP_OPTIMIZATION_TYPE_SMART_OPTIMIZATION_BID创建。该字段设置后不允许修改，功能灰度开放中。
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class WechatAccountFundType
+class DeepOptimizationType
 {
     /**
      * Possible values of this enum
      */
-    const UNKNOWN = 'FUND_UNKNOWN';
-    const CASH = 'FUND_CASH';
-    const GIFT = 'FUND_GIFT';
-    const INNER = 'FUND_INNER';
-    const CREDIT = 'FUND_CREDIT';
-    const DEBT_TEMP = 'FUND_DEBT_TEMP';
-    const DEBT_FIXED = 'FUND_DEBT_FIXED';
-    const TCC_GIFT = 'FUND_TCC_GIFT';
+    const SMART_OPTIMIZATION_BID = 'DEEP_OPTIMIZATION_TYPE_SMART_OPTIMIZATION_BID';
+    const SECOND_STAGE_BID = 'DEEP_OPTIMIZATION_TYPE_SECOND_STAGE_BID';
     
     /**
      * Gets allowable values of the enum
@@ -60,14 +54,8 @@ class WechatAccountFundType
     public static function getAllowableEnumValues()
     {
         return [
-            self::UNKNOWN,
-            self::CASH,
-            self::GIFT,
-            self::INNER,
-            self::CREDIT,
-            self::DEBT_TEMP,
-            self::DEBT_FIXED,
-            self::TCC_GIFT,
+            self::SMART_OPTIMIZATION_BID,
+            self::SECOND_STAGE_BID,
         ];
     }
 }

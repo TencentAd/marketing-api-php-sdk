@@ -61,6 +61,7 @@ class LinkPageType
     const CHANNELS_RESERVE_LIVE = 'LINK_PAGE_TYPE_CHANNELS_RESERVE_LIVE';
     const CHANNELS_FOLLOW_CARD = 'LINK_PAGE_TYPE_CHANNELS_FOLLOW_CARD';
     const WECHAT_FOCUS_DAILOG = 'LINK_PAGE_TYPE_WECHAT_FOCUS_DAILOG';
+    const XJ_QUICK = 'LINK_PAGE_TYPE_XJ_QUICK';
     
     /**
      * Gets allowable values of the enum
@@ -86,6 +87,7 @@ class LinkPageType
             self::CHANNELS_RESERVE_LIVE,
             self::CHANNELS_FOLLOW_CARD,
             self::WECHAT_FOCUS_DAILOG,
+            self::XJ_QUICK,
         ];
     }
 }

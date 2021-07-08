@@ -90,6 +90,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => 'bool',
         'userActionSets' => '\TencentAds\Model\UserActionSetStruct[]',
         'dynamicAdSpec' => '\TencentAds\Model\DynamicAdSpec',
+        'deepOptimizationType' => '\TencentAds\Model\DeepOptimizationType',
         'accountId' => 'int'
     ];
 
@@ -132,6 +133,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => null,
         'userActionSets' => null,
         'dynamicAdSpec' => null,
+        'deepOptimizationType' => null,
         'accountId' => 'int64'
     ];
 
@@ -195,6 +197,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => 'auto_derived_creative_enabled',
         'userActionSets' => 'user_action_sets',
         'dynamicAdSpec' => 'dynamic_ad_spec',
+        'deepOptimizationType' => 'deep_optimization_type',
         'accountId' => 'account_id'
     ];
 
@@ -237,6 +240,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => 'setAutoDerivedCreativeEnabled',
         'userActionSets' => 'setUserActionSets',
         'dynamicAdSpec' => 'setDynamicAdSpec',
+        'deepOptimizationType' => 'setDeepOptimizationType',
         'accountId' => 'setAccountId'
     ];
 
@@ -279,6 +283,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => 'getAutoDerivedCreativeEnabled',
         'userActionSets' => 'getUserActionSets',
         'dynamicAdSpec' => 'getDynamicAdSpec',
+        'deepOptimizationType' => 'getDeepOptimizationType',
         'accountId' => 'getAccountId'
     ];
 
@@ -375,6 +380,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['autoDerivedCreativeEnabled'] = isset($data['autoDerivedCreativeEnabled']) ? $data['autoDerivedCreativeEnabled'] : null;
         $this->container['userActionSets'] = isset($data['userActionSets']) ? $data['userActionSets'] : null;
         $this->container['dynamicAdSpec'] = isset($data['dynamicAdSpec']) ? $data['dynamicAdSpec'] : null;
+        $this->container['deepOptimizationType'] = isset($data['deepOptimizationType']) ? $data['deepOptimizationType'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1190,6 +1196,30 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setDynamicAdSpec($dynamicAdSpec)
     {
         $this->container['dynamicAdSpec'] = $dynamicAdSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets deepOptimizationType
+     *
+     * @return \TencentAds\Model\DeepOptimizationType
+     */
+    public function getDeepOptimizationType()
+    {
+        return $this->container['deepOptimizationType'];
+    }
+
+    /**
+     * Sets deepOptimizationType
+     *
+     * @param \TencentAds\Model\DeepOptimizationType $deepOptimizationType deepOptimizationType
+     *
+     * @return $this
+     */
+    public function setDeepOptimizationType($deepOptimizationType)
+    {
+        $this->container['deepOptimizationType'] = $deepOptimizationType;
 
         return $this;
     }

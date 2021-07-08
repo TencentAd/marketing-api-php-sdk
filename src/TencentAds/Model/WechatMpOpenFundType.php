@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * WechatMpOpenFundType Class Doc Comment
  *
  * @category Class
- * @description 资金账户类型
+ * @description 资金账户类型，注意非微信资金账户类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
