@@ -78,7 +78,6 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
         'temperature' => '\TencentAds\Model\TemperatureStruct[]',
         'airQualityIndex' => 'string[]',
         'appInstallStatus' => 'string[]',
-        'miniGameQqStatus' => 'string[]',
         'consumptionStatus' => 'string[]',
         'gameConsumptionLevel' => 'string[]',
         'residentialCommunityPrice' => '\TencentAds\Model\ResidentialCommunityPriceStruct[]',
@@ -126,7 +125,6 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
         'temperature' => null,
         'airQualityIndex' => null,
         'appInstallStatus' => null,
-        'miniGameQqStatus' => null,
         'consumptionStatus' => null,
         'gameConsumptionLevel' => null,
         'residentialCommunityPrice' => null,
@@ -195,7 +193,6 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
         'temperature' => 'temperature',
         'airQualityIndex' => 'air_quality_index',
         'appInstallStatus' => 'app_install_status',
-        'miniGameQqStatus' => 'mini_game_qq_status',
         'consumptionStatus' => 'consumption_status',
         'gameConsumptionLevel' => 'game_consumption_level',
         'residentialCommunityPrice' => 'residential_community_price',
@@ -243,7 +240,6 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
         'temperature' => 'setTemperature',
         'airQualityIndex' => 'setAirQualityIndex',
         'appInstallStatus' => 'setAppInstallStatus',
-        'miniGameQqStatus' => 'setMiniGameQqStatus',
         'consumptionStatus' => 'setConsumptionStatus',
         'gameConsumptionLevel' => 'setGameConsumptionLevel',
         'residentialCommunityPrice' => 'setResidentialCommunityPrice',
@@ -291,7 +287,6 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
         'temperature' => 'getTemperature',
         'airQualityIndex' => 'getAirQualityIndex',
         'appInstallStatus' => 'getAppInstallStatus',
-        'miniGameQqStatus' => 'getMiniGameQqStatus',
         'consumptionStatus' => 'getConsumptionStatus',
         'gameConsumptionLevel' => 'getGameConsumptionLevel',
         'residentialCommunityPrice' => 'getResidentialCommunityPrice',
@@ -393,7 +388,6 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
         $this->container['temperature'] = isset($data['temperature']) ? $data['temperature'] : null;
         $this->container['airQualityIndex'] = isset($data['airQualityIndex']) ? $data['airQualityIndex'] : null;
         $this->container['appInstallStatus'] = isset($data['appInstallStatus']) ? $data['appInstallStatus'] : null;
-        $this->container['miniGameQqStatus'] = isset($data['miniGameQqStatus']) ? $data['miniGameQqStatus'] : null;
         $this->container['consumptionStatus'] = isset($data['consumptionStatus']) ? $data['consumptionStatus'] : null;
         $this->container['gameConsumptionLevel'] = isset($data['gameConsumptionLevel']) ? $data['gameConsumptionLevel'] : null;
         $this->container['residentialCommunityPrice'] = isset($data['residentialCommunityPrice']) ? $data['residentialCommunityPrice'] : null;
@@ -915,30 +909,6 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
     public function setAppInstallStatus($appInstallStatus)
     {
         $this->container['appInstallStatus'] = $appInstallStatus;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameQqStatus
-     *
-     * @return string[]
-     */
-    public function getMiniGameQqStatus()
-    {
-        return $this->container['miniGameQqStatus'];
-    }
-
-    /**
-     * Sets miniGameQqStatus
-     *
-     * @param string[] $miniGameQqStatus miniGameQqStatus
-     *
-     * @return $this
-     */
-    public function setMiniGameQqStatus($miniGameQqStatus)
-    {
-        $this->container['miniGameQqStatus'] = $miniGameQqStatus;
 
         return $this;
     }

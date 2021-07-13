@@ -76,8 +76,6 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'componentId' => 'int',
         'onlineEnabled' => 'bool',
         'revisedAdcreativeSpec' => '\TencentAds\Model\RevisedAdcreativeSpec',
-        'category' => 'int[]',
-        'label' => 'string[]',
         'unionMarketSwitch' => 'bool',
         'playablePageMaterialId' => 'string',
         'videoEndPage' => '\TencentAds\Model\VideoEndPageSpec',
@@ -118,8 +116,6 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'componentId' => 'int64',
         'onlineEnabled' => null,
         'revisedAdcreativeSpec' => null,
-        'category' => 'int64',
-        'label' => null,
         'unionMarketSwitch' => null,
         'playablePageMaterialId' => null,
         'videoEndPage' => null,
@@ -181,8 +177,6 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'componentId' => 'component_id',
         'onlineEnabled' => 'online_enabled',
         'revisedAdcreativeSpec' => 'revised_adcreative_spec',
-        'category' => 'category',
-        'label' => 'label',
         'unionMarketSwitch' => 'union_market_switch',
         'playablePageMaterialId' => 'playable_page_material_id',
         'videoEndPage' => 'video_end_page',
@@ -223,8 +217,6 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'componentId' => 'setComponentId',
         'onlineEnabled' => 'setOnlineEnabled',
         'revisedAdcreativeSpec' => 'setRevisedAdcreativeSpec',
-        'category' => 'setCategory',
-        'label' => 'setLabel',
         'unionMarketSwitch' => 'setUnionMarketSwitch',
         'playablePageMaterialId' => 'setPlayablePageMaterialId',
         'videoEndPage' => 'setVideoEndPage',
@@ -265,8 +257,6 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'componentId' => 'getComponentId',
         'onlineEnabled' => 'getOnlineEnabled',
         'revisedAdcreativeSpec' => 'getRevisedAdcreativeSpec',
-        'category' => 'getCategory',
-        'label' => 'getLabel',
         'unionMarketSwitch' => 'getUnionMarketSwitch',
         'playablePageMaterialId' => 'getPlayablePageMaterialId',
         'videoEndPage' => 'getVideoEndPage',
@@ -361,8 +351,6 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
         $this->container['onlineEnabled'] = isset($data['onlineEnabled']) ? $data['onlineEnabled'] : null;
         $this->container['revisedAdcreativeSpec'] = isset($data['revisedAdcreativeSpec']) ? $data['revisedAdcreativeSpec'] : null;
-        $this->container['category'] = isset($data['category']) ? $data['category'] : null;
-        $this->container['label'] = isset($data['label']) ? $data['label'] : null;
         $this->container['unionMarketSwitch'] = isset($data['unionMarketSwitch']) ? $data['unionMarketSwitch'] : null;
         $this->container['playablePageMaterialId'] = isset($data['playablePageMaterialId']) ? $data['playablePageMaterialId'] : null;
         $this->container['videoEndPage'] = isset($data['videoEndPage']) ? $data['videoEndPage'] : null;
@@ -854,54 +842,6 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setRevisedAdcreativeSpec($revisedAdcreativeSpec)
     {
         $this->container['revisedAdcreativeSpec'] = $revisedAdcreativeSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets category
-     *
-     * @return int[]
-     */
-    public function getCategory()
-    {
-        return $this->container['category'];
-    }
-
-    /**
-     * Sets category
-     *
-     * @param int[] $category category
-     *
-     * @return $this
-     */
-    public function setCategory($category)
-    {
-        $this->container['category'] = $category;
-
-        return $this;
-    }
-
-    /**
-     * Gets label
-     *
-     * @return string[]
-     */
-    public function getLabel()
-    {
-        return $this->container['label'];
-    }
-
-    /**
-     * Sets label
-     *
-     * @param string[] $label label
-     *
-     * @return $this
-     */
-    public function setLabel($label)
-    {
-        $this->container['label'] = $label;
 
         return $this;
     }
