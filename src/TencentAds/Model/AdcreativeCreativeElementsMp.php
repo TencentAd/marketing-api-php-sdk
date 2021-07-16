@@ -72,6 +72,7 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'url' => 'string',
         'buttonText' => 'string',
         'bottomText' => 'string',
+        'excitationText' => 'string',
         'countdownBegin' => 'int',
         'countdownPrice' => 'string',
         'countdownTimeType' => '\TencentAds\Model\AdCreativeCountdownTimeType',
@@ -119,6 +120,7 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'url' => null,
         'buttonText' => null,
         'bottomText' => null,
+        'excitationText' => null,
         'countdownBegin' => 'int64',
         'countdownPrice' => null,
         'countdownTimeType' => null,
@@ -187,6 +189,7 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'url' => 'url',
         'buttonText' => 'button_text',
         'bottomText' => 'bottom_text',
+        'excitationText' => 'excitation_text',
         'countdownBegin' => 'countdown_begin',
         'countdownPrice' => 'countdown_price',
         'countdownTimeType' => 'countdown_time_type',
@@ -234,6 +237,7 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'url' => 'setUrl',
         'buttonText' => 'setButtonText',
         'bottomText' => 'setBottomText',
+        'excitationText' => 'setExcitationText',
         'countdownBegin' => 'setCountdownBegin',
         'countdownPrice' => 'setCountdownPrice',
         'countdownTimeType' => 'setCountdownTimeType',
@@ -281,6 +285,7 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'url' => 'getUrl',
         'buttonText' => 'getButtonText',
         'bottomText' => 'getBottomText',
+        'excitationText' => 'getExcitationText',
         'countdownBegin' => 'getCountdownBegin',
         'countdownPrice' => 'getCountdownPrice',
         'countdownTimeType' => 'getCountdownTimeType',
@@ -382,6 +387,7 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         $this->container['url'] = isset($data['url']) ? $data['url'] : null;
         $this->container['buttonText'] = isset($data['buttonText']) ? $data['buttonText'] : null;
         $this->container['bottomText'] = isset($data['bottomText']) ? $data['bottomText'] : null;
+        $this->container['excitationText'] = isset($data['excitationText']) ? $data['excitationText'] : null;
         $this->container['countdownBegin'] = isset($data['countdownBegin']) ? $data['countdownBegin'] : null;
         $this->container['countdownPrice'] = isset($data['countdownPrice']) ? $data['countdownPrice'] : null;
         $this->container['countdownTimeType'] = isset($data['countdownTimeType']) ? $data['countdownTimeType'] : null;
@@ -765,6 +771,30 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
     public function setBottomText($bottomText)
     {
         $this->container['bottomText'] = $bottomText;
+
+        return $this;
+    }
+
+    /**
+     * Gets excitationText
+     *
+     * @return string
+     */
+    public function getExcitationText()
+    {
+        return $this->container['excitationText'];
+    }
+
+    /**
+     * Sets excitationText
+     *
+     * @param string $excitationText excitationText
+     *
+     * @return $this
+     */
+    public function setExcitationText($excitationText)
+    {
+        $this->container['excitationText'] = $excitationText;
 
         return $this;
     }

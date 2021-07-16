@@ -161,6 +161,11 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'appAdPayingUsers' => 'int',
         'adPurValWeb' => 'int',
         'adPurValApp' => 'int',
+        'order24hCount' => 'int',
+        'order24hRate' => 'double',
+        'order24hCost' => 'int',
+        'order24hAmount' => 'int',
+        'order24hRoi' => 'double',
         'gameCreateRoleCount' => 'int',
         'gameAuthorizeCount' => 'int',
         'gameTutorialFinishCount' => 'int',
@@ -357,7 +362,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationCost' => 'int',
         'miniGameAdMonetizationRoi' => 'double',
         'miniGameAdMonetizationArpu' => 'int',
-        'miniGamePayingRoi' => 'int',
+        'miniGamePayingRoi' => 'double',
         'miniGamePayingArpu' => 'int',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
@@ -617,6 +622,11 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'appAdPayingUsers' => 'int64',
         'adPurValWeb' => 'int64',
         'adPurValApp' => 'int64',
+        'order24hCount' => 'int64',
+        'order24hRate' => 'double',
+        'order24hCost' => 'int64',
+        'order24hAmount' => 'int64',
+        'order24hRoi' => 'double',
         'gameCreateRoleCount' => 'int64',
         'gameAuthorizeCount' => 'int64',
         'gameTutorialFinishCount' => 'int64',
@@ -813,7 +823,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationCost' => 'int64',
         'miniGameAdMonetizationRoi' => 'double',
         'miniGameAdMonetizationArpu' => 'int64',
-        'miniGamePayingRoi' => 'int64',
+        'miniGamePayingRoi' => 'double',
         'miniGamePayingArpu' => 'int64',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
@@ -1094,6 +1104,11 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'appAdPayingUsers' => 'app_ad_paying_users',
         'adPurValWeb' => 'ad_pur_val_web',
         'adPurValApp' => 'ad_pur_val_app',
+        'order24hCount' => 'order_24h_count',
+        'order24hRate' => 'order_24h_rate',
+        'order24hCost' => 'order_24h_cost',
+        'order24hAmount' => 'order_24h_amount',
+        'order24hRoi' => 'order_24h_roi',
         'gameCreateRoleCount' => 'game_create_role_count',
         'gameAuthorizeCount' => 'game_authorize_count',
         'gameTutorialFinishCount' => 'game_tutorial_finish_count',
@@ -1550,6 +1565,11 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'appAdPayingUsers' => 'setAppAdPayingUsers',
         'adPurValWeb' => 'setAdPurValWeb',
         'adPurValApp' => 'setAdPurValApp',
+        'order24hCount' => 'setOrder24hCount',
+        'order24hRate' => 'setOrder24hRate',
+        'order24hCost' => 'setOrder24hCost',
+        'order24hAmount' => 'setOrder24hAmount',
+        'order24hRoi' => 'setOrder24hRoi',
         'gameCreateRoleCount' => 'setGameCreateRoleCount',
         'gameAuthorizeCount' => 'setGameAuthorizeCount',
         'gameTutorialFinishCount' => 'setGameTutorialFinishCount',
@@ -2006,6 +2026,11 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'appAdPayingUsers' => 'getAppAdPayingUsers',
         'adPurValWeb' => 'getAdPurValWeb',
         'adPurValApp' => 'getAdPurValApp',
+        'order24hCount' => 'getOrder24hCount',
+        'order24hRate' => 'getOrder24hRate',
+        'order24hCost' => 'getOrder24hCost',
+        'order24hAmount' => 'getOrder24hAmount',
+        'order24hRoi' => 'getOrder24hRoi',
         'gameCreateRoleCount' => 'getGameCreateRoleCount',
         'gameAuthorizeCount' => 'getGameAuthorizeCount',
         'gameTutorialFinishCount' => 'getGameTutorialFinishCount',
@@ -2516,6 +2541,11 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['appAdPayingUsers'] = isset($data['appAdPayingUsers']) ? $data['appAdPayingUsers'] : null;
         $this->container['adPurValWeb'] = isset($data['adPurValWeb']) ? $data['adPurValWeb'] : null;
         $this->container['adPurValApp'] = isset($data['adPurValApp']) ? $data['adPurValApp'] : null;
+        $this->container['order24hCount'] = isset($data['order24hCount']) ? $data['order24hCount'] : null;
+        $this->container['order24hRate'] = isset($data['order24hRate']) ? $data['order24hRate'] : null;
+        $this->container['order24hCost'] = isset($data['order24hCost']) ? $data['order24hCost'] : null;
+        $this->container['order24hAmount'] = isset($data['order24hAmount']) ? $data['order24hAmount'] : null;
+        $this->container['order24hRoi'] = isset($data['order24hRoi']) ? $data['order24hRoi'] : null;
         $this->container['gameCreateRoleCount'] = isset($data['gameCreateRoleCount']) ? $data['gameCreateRoleCount'] : null;
         $this->container['gameAuthorizeCount'] = isset($data['gameAuthorizeCount']) ? $data['gameAuthorizeCount'] : null;
         $this->container['gameTutorialFinishCount'] = isset($data['gameTutorialFinishCount']) ? $data['gameTutorialFinishCount'] : null;
@@ -5355,6 +5385,126 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setAdPurValApp($adPurValApp)
     {
         $this->container['adPurValApp'] = $adPurValApp;
+
+        return $this;
+    }
+
+    /**
+     * Gets order24hCount
+     *
+     * @return int
+     */
+    public function getOrder24hCount()
+    {
+        return $this->container['order24hCount'];
+    }
+
+    /**
+     * Sets order24hCount
+     *
+     * @param int $order24hCount order24hCount
+     *
+     * @return $this
+     */
+    public function setOrder24hCount($order24hCount)
+    {
+        $this->container['order24hCount'] = $order24hCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets order24hRate
+     *
+     * @return double
+     */
+    public function getOrder24hRate()
+    {
+        return $this->container['order24hRate'];
+    }
+
+    /**
+     * Sets order24hRate
+     *
+     * @param double $order24hRate order24hRate
+     *
+     * @return $this
+     */
+    public function setOrder24hRate($order24hRate)
+    {
+        $this->container['order24hRate'] = $order24hRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets order24hCost
+     *
+     * @return int
+     */
+    public function getOrder24hCost()
+    {
+        return $this->container['order24hCost'];
+    }
+
+    /**
+     * Sets order24hCost
+     *
+     * @param int $order24hCost order24hCost
+     *
+     * @return $this
+     */
+    public function setOrder24hCost($order24hCost)
+    {
+        $this->container['order24hCost'] = $order24hCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets order24hAmount
+     *
+     * @return int
+     */
+    public function getOrder24hAmount()
+    {
+        return $this->container['order24hAmount'];
+    }
+
+    /**
+     * Sets order24hAmount
+     *
+     * @param int $order24hAmount order24hAmount
+     *
+     * @return $this
+     */
+    public function setOrder24hAmount($order24hAmount)
+    {
+        $this->container['order24hAmount'] = $order24hAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets order24hRoi
+     *
+     * @return double
+     */
+    public function getOrder24hRoi()
+    {
+        return $this->container['order24hRoi'];
+    }
+
+    /**
+     * Sets order24hRoi
+     *
+     * @param double $order24hRoi order24hRoi
+     *
+     * @return $this
+     */
+    public function setOrder24hRoi($order24hRoi)
+    {
+        $this->container['order24hRoi'] = $order24hRoi;
 
         return $this;
     }
@@ -10066,7 +10216,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayingRoi
      *
-     * @return int
+     * @return double
      */
     public function getMiniGamePayingRoi()
     {
@@ -10076,7 +10226,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGamePayingRoi
      *
-     * @param int $miniGamePayingRoi miniGamePayingRoi
+     * @param double $miniGamePayingRoi miniGamePayingRoi
      *
      * @return $this
      */

@@ -104,6 +104,7 @@ use TencentAds\Container\SplitTestsApiContainer;
 use TencentAds\Container\SystemStatusApiContainer;
 use TencentAds\Container\TargetingTagReportsApiContainer;
 use TencentAds\Container\TargetingTagsApiContainer;
+use TencentAds\Container\TargetingTagsUvApiContainer;
 use TencentAds\Container\TargetingsApiContainer;
 use TencentAds\Container\TargetingsShareApiContainer;
 use TencentAds\Container\TrackingReportsApiContainer;
@@ -450,6 +451,9 @@ class App
 
     /** @var TargetingTagsApiContainer */
     public $targetingTagsApiContainer;
+
+    /** @var TargetingTagsUvApiContainer */
+    public $targetingTagsUvApiContainer;
 
     /** @var TargetingsApiContainer */
     public $targetingsApiContainer;
@@ -1994,6 +1998,20 @@ class App
             $this->targetingTagsApiContainer = $container;
         }
         return $this->targetingTagsApiContainer;
+    }
+
+
+    /**
+     * @return TargetingTagsUvApiContainer
+     */
+    public function targetingTagsUv()
+    {
+        if (empty($this->targetingTagsUvApiContainer)) {
+            $container = new TargetingTagsUvApiContainer();
+            $container->init($this, $this->getClient());
+            $this->targetingTagsUvApiContainer = $container;
+        }
+        return $this->targetingTagsUvApiContainer;
     }
 
 

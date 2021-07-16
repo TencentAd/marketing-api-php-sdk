@@ -72,6 +72,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'url' => 'string',
         'buttonText' => 'string',
         'bottomText' => 'string',
+        'excitationText' => 'string',
         'countdownBegin' => 'int',
         'countdown' => 'int',
         'countdownPrice' => 'string',
@@ -122,6 +123,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'url' => null,
         'buttonText' => null,
         'bottomText' => null,
+        'excitationText' => null,
         'countdownBegin' => 'int64',
         'countdown' => 'int64',
         'countdownPrice' => null,
@@ -193,6 +195,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'url' => 'url',
         'buttonText' => 'button_text',
         'bottomText' => 'bottom_text',
+        'excitationText' => 'excitation_text',
         'countdownBegin' => 'countdown_begin',
         'countdown' => 'countdown',
         'countdownPrice' => 'countdown_price',
@@ -243,6 +246,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'url' => 'setUrl',
         'buttonText' => 'setButtonText',
         'bottomText' => 'setBottomText',
+        'excitationText' => 'setExcitationText',
         'countdownBegin' => 'setCountdownBegin',
         'countdown' => 'setCountdown',
         'countdownPrice' => 'setCountdownPrice',
@@ -293,6 +297,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'url' => 'getUrl',
         'buttonText' => 'getButtonText',
         'bottomText' => 'getBottomText',
+        'excitationText' => 'getExcitationText',
         'countdownBegin' => 'getCountdownBegin',
         'countdown' => 'getCountdown',
         'countdownPrice' => 'getCountdownPrice',
@@ -397,6 +402,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         $this->container['url'] = isset($data['url']) ? $data['url'] : null;
         $this->container['buttonText'] = isset($data['buttonText']) ? $data['buttonText'] : null;
         $this->container['bottomText'] = isset($data['bottomText']) ? $data['bottomText'] : null;
+        $this->container['excitationText'] = isset($data['excitationText']) ? $data['excitationText'] : null;
         $this->container['countdownBegin'] = isset($data['countdownBegin']) ? $data['countdownBegin'] : null;
         $this->container['countdown'] = isset($data['countdown']) ? $data['countdown'] : null;
         $this->container['countdownPrice'] = isset($data['countdownPrice']) ? $data['countdownPrice'] : null;
@@ -783,6 +789,30 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     public function setBottomText($bottomText)
     {
         $this->container['bottomText'] = $bottomText;
+
+        return $this;
+    }
+
+    /**
+     * Gets excitationText
+     *
+     * @return string
+     */
+    public function getExcitationText()
+    {
+        return $this->container['excitationText'];
+    }
+
+    /**
+     * Sets excitationText
+     *
+     * @param string $excitationText excitationText
+     *
+     * @return $this
+     */
+    public function setExcitationText($excitationText)
+    {
+        $this->container['excitationText'] = $excitationText;
 
         return $this;
     }
