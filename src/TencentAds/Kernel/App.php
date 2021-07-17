@@ -51,6 +51,7 @@ use TencentAds\Container\CustomAudiencesApiContainer;
 use TencentAds\Container\CustomFeaturesApiContainer;
 use TencentAds\Container\CustomTagFilesApiContainer;
 use TencentAds\Container\CustomTagsApiContainer;
+use TencentAds\Container\DailyBalanceReportApiContainer;
 use TencentAds\Container\DailyCostApiContainer;
 use TencentAds\Container\DailyReportsApiContainer;
 use TencentAds\Container\DiagnosisApiContainer;
@@ -292,6 +293,9 @@ class App
 
     /** @var CustomTagsApiContainer */
     public $customTagsApiContainer;
+
+    /** @var DailyBalanceReportApiContainer */
+    public $dailyBalanceReportApiContainer;
 
     /** @var DailyCostApiContainer */
     public $dailyCostApiContainer;
@@ -1256,6 +1260,20 @@ class App
             $this->customTagsApiContainer = $container;
         }
         return $this->customTagsApiContainer;
+    }
+
+
+    /**
+     * @return DailyBalanceReportApiContainer
+     */
+    public function dailyBalanceReport()
+    {
+        if (empty($this->dailyBalanceReportApiContainer)) {
+            $container = new DailyBalanceReportApiContainer();
+            $container->init($this, $this->getClient());
+            $this->dailyBalanceReportApiContainer = $container;
+        }
+        return $this->dailyBalanceReportApiContainer;
     }
 
 
