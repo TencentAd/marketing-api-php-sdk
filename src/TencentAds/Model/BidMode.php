@@ -48,6 +48,7 @@ class BidMode
     const CPA = 'BID_MODE_CPA';
     const CPM = 'BID_MODE_CPM';
     const OCPC = 'BID_MODE_OCPC';
+    const OCPA = 'BID_MODE_OCPA';
     const OCPM = 'BID_MODE_OCPM';
     
     /**
@@ -61,6 +62,7 @@ class BidMode
             self::CPA,
             self::CPM,
             self::OCPC,
+            self::OCPA,
             self::OCPM,
         ];
     }
