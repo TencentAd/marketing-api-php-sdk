@@ -116,6 +116,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'smartBidType' => '\TencentAds\Model\SmartBidType',
         'smartCostCap' => 'int',
         'marketingScene' => '\TencentAds\Model\MarketingScene',
+        'customAdgroupTag' => 'string[]',
         'deepOptimizationType' => '\TencentAds\Model\DeepOptimizationType'
     ];
 
@@ -183,6 +184,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'smartBidType' => null,
         'smartCostCap' => 'int64',
         'marketingScene' => null,
+        'customAdgroupTag' => null,
         'deepOptimizationType' => null
     ];
 
@@ -271,6 +273,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'smartBidType' => 'smart_bid_type',
         'smartCostCap' => 'smart_cost_cap',
         'marketingScene' => 'marketing_scene',
+        'customAdgroupTag' => 'custom_adgroup_tag',
         'deepOptimizationType' => 'deep_optimization_type'
     ];
 
@@ -338,6 +341,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'smartBidType' => 'setSmartBidType',
         'smartCostCap' => 'setSmartCostCap',
         'marketingScene' => 'setMarketingScene',
+        'customAdgroupTag' => 'setCustomAdgroupTag',
         'deepOptimizationType' => 'setDeepOptimizationType'
     ];
 
@@ -405,6 +409,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'smartBidType' => 'getSmartBidType',
         'smartCostCap' => 'getSmartCostCap',
         'marketingScene' => 'getMarketingScene',
+        'customAdgroupTag' => 'getCustomAdgroupTag',
         'deepOptimizationType' => 'getDeepOptimizationType'
     ];
 
@@ -526,6 +531,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['smartBidType'] = isset($data['smartBidType']) ? $data['smartBidType'] : null;
         $this->container['smartCostCap'] = isset($data['smartCostCap']) ? $data['smartCostCap'] : null;
         $this->container['marketingScene'] = isset($data['marketingScene']) ? $data['marketingScene'] : null;
+        $this->container['customAdgroupTag'] = isset($data['customAdgroupTag']) ? $data['customAdgroupTag'] : null;
         $this->container['deepOptimizationType'] = isset($data['deepOptimizationType']) ? $data['deepOptimizationType'] : null;
     }
 
@@ -1941,6 +1947,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setMarketingScene($marketingScene)
     {
         $this->container['marketingScene'] = $marketingScene;
+
+        return $this;
+    }
+
+    /**
+     * Gets customAdgroupTag
+     *
+     * @return string[]
+     */
+    public function getCustomAdgroupTag()
+    {
+        return $this->container['customAdgroupTag'];
+    }
+
+    /**
+     * Sets customAdgroupTag
+     *
+     * @param string[] $customAdgroupTag customAdgroupTag
+     *
+     * @return $this
+     */
+    public function setCustomAdgroupTag($customAdgroupTag)
+    {
+        $this->container['customAdgroupTag'] = $customAdgroupTag;
 
         return $this;
     }

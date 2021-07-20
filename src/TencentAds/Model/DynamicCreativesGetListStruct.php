@@ -81,7 +81,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'unionMarketSwitch' => 'bool',
         'videoEndPage' => '\TencentAds\Model\VideoEndPageSpec',
         'barrageList' => '\TencentAds\Model\BarrageListReadStruct[]',
-        'dynamicCreativeGroupUsed' => '\TencentAds\Model\DynamicCreativeGroupUsed'
+        'dynamicCreativeGroupUsed' => '\TencentAds\Model\DynamicCreativeGroupUsed',
+        'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode'
     ];
 
     /**
@@ -113,7 +114,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'unionMarketSwitch' => null,
         'videoEndPage' => null,
         'barrageList' => null,
-        'dynamicCreativeGroupUsed' => null
+        'dynamicCreativeGroupUsed' => null,
+        'appGiftPackCode' => null
     ];
 
     /**
@@ -166,7 +168,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'unionMarketSwitch' => 'union_market_switch',
         'videoEndPage' => 'video_end_page',
         'barrageList' => 'barrage_list',
-        'dynamicCreativeGroupUsed' => 'dynamic_creative_group_used'
+        'dynamicCreativeGroupUsed' => 'dynamic_creative_group_used',
+        'appGiftPackCode' => 'app_gift_pack_code'
     ];
 
     /**
@@ -198,7 +201,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'unionMarketSwitch' => 'setUnionMarketSwitch',
         'videoEndPage' => 'setVideoEndPage',
         'barrageList' => 'setBarrageList',
-        'dynamicCreativeGroupUsed' => 'setDynamicCreativeGroupUsed'
+        'dynamicCreativeGroupUsed' => 'setDynamicCreativeGroupUsed',
+        'appGiftPackCode' => 'setAppGiftPackCode'
     ];
 
     /**
@@ -230,7 +234,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'unionMarketSwitch' => 'getUnionMarketSwitch',
         'videoEndPage' => 'getVideoEndPage',
         'barrageList' => 'getBarrageList',
-        'dynamicCreativeGroupUsed' => 'getDynamicCreativeGroupUsed'
+        'dynamicCreativeGroupUsed' => 'getDynamicCreativeGroupUsed',
+        'appGiftPackCode' => 'getAppGiftPackCode'
     ];
 
     /**
@@ -317,6 +322,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['videoEndPage'] = isset($data['videoEndPage']) ? $data['videoEndPage'] : null;
         $this->container['barrageList'] = isset($data['barrageList']) ? $data['barrageList'] : null;
         $this->container['dynamicCreativeGroupUsed'] = isset($data['dynamicCreativeGroupUsed']) ? $data['dynamicCreativeGroupUsed'] : null;
+        $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
     }
 
     /**
@@ -915,6 +921,30 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setDynamicCreativeGroupUsed($dynamicCreativeGroupUsed)
     {
         $this->container['dynamicCreativeGroupUsed'] = $dynamicCreativeGroupUsed;
+
+        return $this;
+    }
+
+    /**
+     * Gets appGiftPackCode
+     *
+     * @return \TencentAds\Model\AppGiftPackCode
+     */
+    public function getAppGiftPackCode()
+    {
+        return $this->container['appGiftPackCode'];
+    }
+
+    /**
+     * Sets appGiftPackCode
+     *
+     * @param \TencentAds\Model\AppGiftPackCode $appGiftPackCode appGiftPackCode
+     *
+     * @return $this
+     */
+    public function setAppGiftPackCode($appGiftPackCode)
+    {
+        $this->container['appGiftPackCode'] = $appGiftPackCode;
 
         return $this;
     }

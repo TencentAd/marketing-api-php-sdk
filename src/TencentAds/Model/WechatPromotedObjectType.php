@@ -53,6 +53,7 @@ class WechatPromotedObjectType
     const MINI_GAME_WECHAT = 'PROMOTED_OBJECT_TYPE_MINI_GAME_WECHAT';
     const MINI_PROGRAM_WECHAT = 'PROMOTED_OBJECT_TYPE_MINI_PROGRAM_WECHAT';
     const WECHAT_OFFICIAL_ACCOUNT = 'PROMOTED_OBJECT_TYPE_WECHAT_OFFICIAL_ACCOUNT';
+    const WECHAT_CHANNELS = 'PROMOTED_OBJECT_TYPE_WECHAT_CHANNELS';
     
     /**
      * Gets allowable values of the enum
@@ -70,6 +71,7 @@ class WechatPromotedObjectType
             self::MINI_GAME_WECHAT,
             self::MINI_PROGRAM_WECHAT,
             self::WECHAT_OFFICIAL_ACCOUNT,
+            self::WECHAT_CHANNELS,
         ];
     }
 }

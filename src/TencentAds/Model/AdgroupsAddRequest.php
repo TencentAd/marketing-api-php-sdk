@@ -101,6 +101,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => 'bool',
         'smartBidType' => '\TencentAds\Model\SmartBidType',
         'marketingScene' => '\TencentAds\Model\MarketingScene',
+        'customAdgroupTag' => 'string[]',
         'deepOptimizationType' => '\TencentAds\Model\DeepOptimizationType',
         'accountId' => 'int'
     ];
@@ -155,6 +156,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => null,
         'smartBidType' => null,
         'marketingScene' => null,
+        'customAdgroupTag' => null,
         'deepOptimizationType' => null,
         'accountId' => 'int64'
     ];
@@ -230,6 +232,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => 'auto_derived_creative_enabled',
         'smartBidType' => 'smart_bid_type',
         'marketingScene' => 'marketing_scene',
+        'customAdgroupTag' => 'custom_adgroup_tag',
         'deepOptimizationType' => 'deep_optimization_type',
         'accountId' => 'account_id'
     ];
@@ -284,6 +287,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => 'setAutoDerivedCreativeEnabled',
         'smartBidType' => 'setSmartBidType',
         'marketingScene' => 'setMarketingScene',
+        'customAdgroupTag' => 'setCustomAdgroupTag',
         'deepOptimizationType' => 'setDeepOptimizationType',
         'accountId' => 'setAccountId'
     ];
@@ -338,6 +342,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => 'getAutoDerivedCreativeEnabled',
         'smartBidType' => 'getSmartBidType',
         'marketingScene' => 'getMarketingScene',
+        'customAdgroupTag' => 'getCustomAdgroupTag',
         'deepOptimizationType' => 'getDeepOptimizationType',
         'accountId' => 'getAccountId'
     ];
@@ -446,6 +451,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['autoDerivedCreativeEnabled'] = isset($data['autoDerivedCreativeEnabled']) ? $data['autoDerivedCreativeEnabled'] : null;
         $this->container['smartBidType'] = isset($data['smartBidType']) ? $data['smartBidType'] : null;
         $this->container['marketingScene'] = isset($data['marketingScene']) ? $data['marketingScene'] : null;
+        $this->container['customAdgroupTag'] = isset($data['customAdgroupTag']) ? $data['customAdgroupTag'] : null;
         $this->container['deepOptimizationType'] = isset($data['deepOptimizationType']) ? $data['deepOptimizationType'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
@@ -1526,6 +1532,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setMarketingScene($marketingScene)
     {
         $this->container['marketingScene'] = $marketingScene;
+
+        return $this;
+    }
+
+    /**
+     * Gets customAdgroupTag
+     *
+     * @return string[]
+     */
+    public function getCustomAdgroupTag()
+    {
+        return $this->container['customAdgroupTag'];
+    }
+
+    /**
+     * Sets customAdgroupTag
+     *
+     * @param string[] $customAdgroupTag customAdgroupTag
+     *
+     * @return $this
+     */
+    public function setCustomAdgroupTag($customAdgroupTag)
+    {
+        $this->container['customAdgroupTag'] = $customAdgroupTag;
 
         return $this;
     }

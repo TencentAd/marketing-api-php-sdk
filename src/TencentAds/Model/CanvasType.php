@@ -46,9 +46,11 @@ class CanvasType
      */
     const VIDEO = 'CANVAS_TYPE_VIDEO';
     const IMAGE = 'CANVAS_TYPE_IMAGE';
+    const REWARD = 'CANVAS_TYPE_REWARD';
     const PORTRAIT_VIDEO = 'CANVAS_TYPE_PORTRAIT_VIDEO';
     const PORTRAIT_VIDEO_2 = 'CANVAS_TYPE_PORTRAIT_VIDEO_2';
     const COMMON_PAGE = 'CANVAS_TYPE_COMMON_PAGE';
+    const VERTICAL_VIDEO_NEW_916 = 'CANVAS_TYPE_VERTICAL_VIDEO_NEW_916';
     
     /**
      * Gets allowable values of the enum
@@ -59,9 +61,11 @@ class CanvasType
         return [
             self::VIDEO,
             self::IMAGE,
+            self::REWARD,
             self::PORTRAIT_VIDEO,
             self::PORTRAIT_VIDEO_2,
             self::COMMON_PAGE,
+            self::VERTICAL_VIDEO_NEW_916,
         ];
     }
 }

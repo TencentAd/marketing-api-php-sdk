@@ -87,6 +87,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'bool',
         'barrageList' => '\TencentAds\Model\BarrageListCreateStruct[]',
         'dynamicAdcreativeSpec' => '\TencentAds\Model\DynamicAdcreativeSpec',
+        'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
         'accountId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsMp'
     ];
@@ -127,6 +128,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => null,
         'barrageList' => null,
         'dynamicAdcreativeSpec' => null,
+        'appGiftPackCode' => null,
         'accountId' => 'int64',
         'adcreativeElements' => null
     ];
@@ -188,6 +190,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'countdown_switch',
         'barrageList' => 'barrage_list',
         'dynamicAdcreativeSpec' => 'dynamic_adcreative_spec',
+        'appGiftPackCode' => 'app_gift_pack_code',
         'accountId' => 'account_id',
         'adcreativeElements' => 'adcreative_elements'
     ];
@@ -228,6 +231,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'setCountdownSwitch',
         'barrageList' => 'setBarrageList',
         'dynamicAdcreativeSpec' => 'setDynamicAdcreativeSpec',
+        'appGiftPackCode' => 'setAppGiftPackCode',
         'accountId' => 'setAccountId',
         'adcreativeElements' => 'setAdcreativeElements'
     ];
@@ -268,6 +272,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'getCountdownSwitch',
         'barrageList' => 'getBarrageList',
         'dynamicAdcreativeSpec' => 'getDynamicAdcreativeSpec',
+        'appGiftPackCode' => 'getAppGiftPackCode',
         'accountId' => 'getAccountId',
         'adcreativeElements' => 'getAdcreativeElements'
     ];
@@ -362,6 +367,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['countdownSwitch'] = isset($data['countdownSwitch']) ? $data['countdownSwitch'] : null;
         $this->container['barrageList'] = isset($data['barrageList']) ? $data['barrageList'] : null;
         $this->container['dynamicAdcreativeSpec'] = isset($data['dynamicAdcreativeSpec']) ? $data['dynamicAdcreativeSpec'] : null;
+        $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
     }
@@ -1106,6 +1112,30 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setDynamicAdcreativeSpec($dynamicAdcreativeSpec)
     {
         $this->container['dynamicAdcreativeSpec'] = $dynamicAdcreativeSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets appGiftPackCode
+     *
+     * @return \TencentAds\Model\AppGiftPackCode
+     */
+    public function getAppGiftPackCode()
+    {
+        return $this->container['appGiftPackCode'];
+    }
+
+    /**
+     * Sets appGiftPackCode
+     *
+     * @param \TencentAds\Model\AppGiftPackCode $appGiftPackCode appGiftPackCode
+     *
+     * @return $this
+     */
+    public function setAppGiftPackCode($appGiftPackCode)
+    {
+        $this->container['appGiftPackCode'] = $appGiftPackCode;
 
         return $this;
     }

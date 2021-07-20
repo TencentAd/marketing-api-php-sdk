@@ -90,6 +90,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => 'bool',
         'userActionSets' => '\TencentAds\Model\UserActionSetStruct[]',
         'dynamicAdSpec' => '\TencentAds\Model\DynamicAdSpec',
+        'customAdgroupTag' => 'string[]',
         'deepOptimizationType' => '\TencentAds\Model\DeepOptimizationType',
         'accountId' => 'int'
     ];
@@ -133,6 +134,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => null,
         'userActionSets' => null,
         'dynamicAdSpec' => null,
+        'customAdgroupTag' => null,
         'deepOptimizationType' => null,
         'accountId' => 'int64'
     ];
@@ -197,6 +199,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => 'auto_derived_creative_enabled',
         'userActionSets' => 'user_action_sets',
         'dynamicAdSpec' => 'dynamic_ad_spec',
+        'customAdgroupTag' => 'custom_adgroup_tag',
         'deepOptimizationType' => 'deep_optimization_type',
         'accountId' => 'account_id'
     ];
@@ -240,6 +243,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => 'setAutoDerivedCreativeEnabled',
         'userActionSets' => 'setUserActionSets',
         'dynamicAdSpec' => 'setDynamicAdSpec',
+        'customAdgroupTag' => 'setCustomAdgroupTag',
         'deepOptimizationType' => 'setDeepOptimizationType',
         'accountId' => 'setAccountId'
     ];
@@ -283,6 +287,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoDerivedCreativeEnabled' => 'getAutoDerivedCreativeEnabled',
         'userActionSets' => 'getUserActionSets',
         'dynamicAdSpec' => 'getDynamicAdSpec',
+        'customAdgroupTag' => 'getCustomAdgroupTag',
         'deepOptimizationType' => 'getDeepOptimizationType',
         'accountId' => 'getAccountId'
     ];
@@ -380,6 +385,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['autoDerivedCreativeEnabled'] = isset($data['autoDerivedCreativeEnabled']) ? $data['autoDerivedCreativeEnabled'] : null;
         $this->container['userActionSets'] = isset($data['userActionSets']) ? $data['userActionSets'] : null;
         $this->container['dynamicAdSpec'] = isset($data['dynamicAdSpec']) ? $data['dynamicAdSpec'] : null;
+        $this->container['customAdgroupTag'] = isset($data['customAdgroupTag']) ? $data['customAdgroupTag'] : null;
         $this->container['deepOptimizationType'] = isset($data['deepOptimizationType']) ? $data['deepOptimizationType'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
@@ -1196,6 +1202,30 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setDynamicAdSpec($dynamicAdSpec)
     {
         $this->container['dynamicAdSpec'] = $dynamicAdSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets customAdgroupTag
+     *
+     * @return string[]
+     */
+    public function getCustomAdgroupTag()
+    {
+        return $this->container['customAdgroupTag'];
+    }
+
+    /**
+     * Sets customAdgroupTag
+     *
+     * @param string[] $customAdgroupTag customAdgroupTag
+     *
+     * @return $this
+     */
+    public function setCustomAdgroupTag($customAdgroupTag)
+    {
+        $this->container['customAdgroupTag'] = $customAdgroupTag;
 
         return $this;
     }

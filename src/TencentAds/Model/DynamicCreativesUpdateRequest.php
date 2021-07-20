@@ -68,6 +68,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'profileId' => 'int',
         'videoEndPage' => '\TencentAds\Model\VideoEndPageSpec',
         'barrageList' => '\TencentAds\Model\BarrageListCreateStruct[]',
+        'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
         'accountId' => 'int'
     ];
 
@@ -88,6 +89,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'profileId' => 'int64',
         'videoEndPage' => null,
         'barrageList' => null,
+        'appGiftPackCode' => null,
         'accountId' => 'int64'
     ];
 
@@ -129,6 +131,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'profileId' => 'profile_id',
         'videoEndPage' => 'video_end_page',
         'barrageList' => 'barrage_list',
+        'appGiftPackCode' => 'app_gift_pack_code',
         'accountId' => 'account_id'
     ];
 
@@ -149,6 +152,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'profileId' => 'setProfileId',
         'videoEndPage' => 'setVideoEndPage',
         'barrageList' => 'setBarrageList',
+        'appGiftPackCode' => 'setAppGiftPackCode',
         'accountId' => 'setAccountId'
     ];
 
@@ -169,6 +173,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'profileId' => 'getProfileId',
         'videoEndPage' => 'getVideoEndPage',
         'barrageList' => 'getBarrageList',
+        'appGiftPackCode' => 'getAppGiftPackCode',
         'accountId' => 'getAccountId'
     ];
 
@@ -243,6 +248,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['profileId'] = isset($data['profileId']) ? $data['profileId'] : null;
         $this->container['videoEndPage'] = isset($data['videoEndPage']) ? $data['videoEndPage'] : null;
         $this->container['barrageList'] = isset($data['barrageList']) ? $data['barrageList'] : null;
+        $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -530,6 +536,30 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setBarrageList($barrageList)
     {
         $this->container['barrageList'] = $barrageList;
+
+        return $this;
+    }
+
+    /**
+     * Gets appGiftPackCode
+     *
+     * @return \TencentAds\Model\AppGiftPackCode
+     */
+    public function getAppGiftPackCode()
+    {
+        return $this->container['appGiftPackCode'];
+    }
+
+    /**
+     * Sets appGiftPackCode
+     *
+     * @param \TencentAds\Model\AppGiftPackCode $appGiftPackCode appGiftPackCode
+     *
+     * @return $this
+     */
+    public function setAppGiftPackCode($appGiftPackCode)
+    {
+        $this->container['appGiftPackCode'] = $appGiftPackCode;
 
         return $this;
     }

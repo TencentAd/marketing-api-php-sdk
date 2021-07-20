@@ -77,6 +77,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'videoEndPage' => '\TencentAds\Model\VideoEndPageSpec',
         'barrageList' => '\TencentAds\Model\BarrageListCreateStruct[]',
         'dynamicCreativeGroupUsed' => '\TencentAds\Model\DynamicCreativeGroupUsed',
+        'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
         'accountId' => 'int'
     ];
 
@@ -106,6 +107,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'videoEndPage' => null,
         'barrageList' => null,
         'dynamicCreativeGroupUsed' => null,
+        'appGiftPackCode' => null,
         'accountId' => 'int64'
     ];
 
@@ -156,6 +158,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'videoEndPage' => 'video_end_page',
         'barrageList' => 'barrage_list',
         'dynamicCreativeGroupUsed' => 'dynamic_creative_group_used',
+        'appGiftPackCode' => 'app_gift_pack_code',
         'accountId' => 'account_id'
     ];
 
@@ -185,6 +188,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'videoEndPage' => 'setVideoEndPage',
         'barrageList' => 'setBarrageList',
         'dynamicCreativeGroupUsed' => 'setDynamicCreativeGroupUsed',
+        'appGiftPackCode' => 'setAppGiftPackCode',
         'accountId' => 'setAccountId'
     ];
 
@@ -214,6 +218,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'videoEndPage' => 'getVideoEndPage',
         'barrageList' => 'getBarrageList',
         'dynamicCreativeGroupUsed' => 'getDynamicCreativeGroupUsed',
+        'appGiftPackCode' => 'getAppGiftPackCode',
         'accountId' => 'getAccountId'
     ];
 
@@ -297,6 +302,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         $this->container['videoEndPage'] = isset($data['videoEndPage']) ? $data['videoEndPage'] : null;
         $this->container['barrageList'] = isset($data['barrageList']) ? $data['barrageList'] : null;
         $this->container['dynamicCreativeGroupUsed'] = isset($data['dynamicCreativeGroupUsed']) ? $data['dynamicCreativeGroupUsed'] : null;
+        $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -800,6 +806,30 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     public function setDynamicCreativeGroupUsed($dynamicCreativeGroupUsed)
     {
         $this->container['dynamicCreativeGroupUsed'] = $dynamicCreativeGroupUsed;
+
+        return $this;
+    }
+
+    /**
+     * Gets appGiftPackCode
+     *
+     * @return \TencentAds\Model\AppGiftPackCode
+     */
+    public function getAppGiftPackCode()
+    {
+        return $this->container['appGiftPackCode'];
+    }
+
+    /**
+     * Sets appGiftPackCode
+     *
+     * @param \TencentAds\Model\AppGiftPackCode $appGiftPackCode appGiftPackCode
+     *
+     * @return $this
+     */
+    public function setAppGiftPackCode($appGiftPackCode)
+    {
+        $this->container['appGiftPackCode'] = $appGiftPackCode;
 
         return $this;
     }
