@@ -59,7 +59,8 @@ class VideoCaptureStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'imageUrl' => 'string',
-        'imageType' => '\TencentAds\Model\VideoCaptureImageType'
+        'imageType' => '\TencentAds\Model\VideoCaptureImageType',
+        'imageId' => 'string'
     ];
 
     /**
@@ -69,7 +70,8 @@ class VideoCaptureStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'imageUrl' => null,
-        'imageType' => null
+        'imageType' => null,
+        'imageId' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class VideoCaptureStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'imageUrl' => 'image_url',
-        'imageType' => 'image_type'
+        'imageType' => 'image_type',
+        'imageId' => 'image_id'
     ];
 
     /**
@@ -110,7 +113,8 @@ class VideoCaptureStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'imageUrl' => 'setImageUrl',
-        'imageType' => 'setImageType'
+        'imageType' => 'setImageType',
+        'imageId' => 'setImageId'
     ];
 
     /**
@@ -120,7 +124,8 @@ class VideoCaptureStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'imageUrl' => 'getImageUrl',
-        'imageType' => 'getImageType'
+        'imageType' => 'getImageType',
+        'imageId' => 'getImageId'
     ];
 
     /**
@@ -185,6 +190,7 @@ class VideoCaptureStruct implements ModelInterface, ArrayAccess
     {
         $this->container['imageUrl'] = isset($data['imageUrl']) ? $data['imageUrl'] : null;
         $this->container['imageType'] = isset($data['imageType']) ? $data['imageType'] : null;
+        $this->container['imageId'] = isset($data['imageId']) ? $data['imageId'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class VideoCaptureStruct implements ModelInterface, ArrayAccess
     public function setImageType($imageType)
     {
         $this->container['imageType'] = $imageType;
+
+        return $this;
+    }
+
+    /**
+     * Gets imageId
+     *
+     * @return string
+     */
+    public function getImageId()
+    {
+        return $this->container['imageId'];
+    }
+
+    /**
+     * Sets imageId
+     *
+     * @param string $imageId imageId
+     *
+     * @return $this
+     */
+    public function setImageId($imageId)
+    {
+        $this->container['imageId'] = $imageId;
 
         return $this;
     }

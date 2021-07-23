@@ -67,7 +67,9 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'productCatalogId' => 'int',
         'pageType' => '\TencentAds\Model\DestinationTypeRead',
         'playableType' => '\TencentAds\Model\PlayableType',
-        'pageStatus' => '\TencentAds\Model\PageStatus'
+        'pageStatus' => '\TencentAds\Model\PageStatus',
+        'fengyeSubType' => '\TencentAds\Model\LandingPageFengyeSubType',
+        'ownerUid' => 'int'
     ];
 
     /**
@@ -85,7 +87,9 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'productCatalogId' => 'int64',
         'pageType' => null,
         'playableType' => null,
-        'pageStatus' => null
+        'pageStatus' => null,
+        'fengyeSubType' => null,
+        'ownerUid' => 'int64'
     ];
 
     /**
@@ -124,7 +128,9 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'productCatalogId' => 'product_catalog_id',
         'pageType' => 'page_type',
         'playableType' => 'playable_type',
-        'pageStatus' => 'page_status'
+        'pageStatus' => 'page_status',
+        'fengyeSubType' => 'fengye_sub_type',
+        'ownerUid' => 'owner_uid'
     ];
 
     /**
@@ -142,7 +148,9 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'productCatalogId' => 'setProductCatalogId',
         'pageType' => 'setPageType',
         'playableType' => 'setPlayableType',
-        'pageStatus' => 'setPageStatus'
+        'pageStatus' => 'setPageStatus',
+        'fengyeSubType' => 'setFengyeSubType',
+        'ownerUid' => 'setOwnerUid'
     ];
 
     /**
@@ -160,7 +168,9 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'productCatalogId' => 'getProductCatalogId',
         'pageType' => 'getPageType',
         'playableType' => 'getPlayableType',
-        'pageStatus' => 'getPageStatus'
+        'pageStatus' => 'getPageStatus',
+        'fengyeSubType' => 'getFengyeSubType',
+        'ownerUid' => 'getOwnerUid'
     ];
 
     /**
@@ -233,6 +243,8 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
         $this->container['playableType'] = isset($data['playableType']) ? $data['playableType'] : null;
         $this->container['pageStatus'] = isset($data['pageStatus']) ? $data['pageStatus'] : null;
+        $this->container['fengyeSubType'] = isset($data['fengyeSubType']) ? $data['fengyeSubType'] : null;
+        $this->container['ownerUid'] = isset($data['ownerUid']) ? $data['ownerUid'] : null;
     }
 
     /**
@@ -495,6 +507,54 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     public function setPageStatus($pageStatus)
     {
         $this->container['pageStatus'] = $pageStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets fengyeSubType
+     *
+     * @return \TencentAds\Model\LandingPageFengyeSubType
+     */
+    public function getFengyeSubType()
+    {
+        return $this->container['fengyeSubType'];
+    }
+
+    /**
+     * Sets fengyeSubType
+     *
+     * @param \TencentAds\Model\LandingPageFengyeSubType $fengyeSubType fengyeSubType
+     *
+     * @return $this
+     */
+    public function setFengyeSubType($fengyeSubType)
+    {
+        $this->container['fengyeSubType'] = $fengyeSubType;
+
+        return $this;
+    }
+
+    /**
+     * Gets ownerUid
+     *
+     * @return int
+     */
+    public function getOwnerUid()
+    {
+        return $this->container['ownerUid'];
+    }
+
+    /**
+     * Sets ownerUid
+     *
+     * @param int $ownerUid ownerUid
+     *
+     * @return $this
+     */
+    public function setOwnerUid($ownerUid)
+    {
+        $this->container['ownerUid'] = $ownerUid;
 
         return $this;
     }

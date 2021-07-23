@@ -43,7 +43,8 @@ class VideomakerVideocapturesApiContainer extends ApiContainer
             $videoFile = isset($params['video_file']) ? $params['video_file'] : null;
             $signature = isset($params['signature']) ? $params['signature'] : null;
             $number = isset($params['number']) ? $params['number'] : null;
-            $response = $this->apiInstance->videomakerVideocapturesAdd($accountId, $videoId, $videoFile, $signature, $number);
+            $returnImageIds = isset($params['return_image_ids']) ? $params['return_image_ids'] : null;
+            $response = $this->apiInstance->videomakerVideocapturesAdd($accountId, $videoId, $videoFile, $signature, $number, $returnImageIds);
             return $this->handleResponse($response);
         });
     }
@@ -63,7 +64,8 @@ class VideomakerVideocapturesApiContainer extends ApiContainer
             $videoFile = isset($params['video_file']) ? $params['video_file'] : null;
             $signature = isset($params['signature']) ? $params['signature'] : null;
             $number = isset($params['number']) ? $params['number'] : null;
-            $response = $this->apiInstance->videomakerVideocapturesAddAsync($accountId, $videoId, $videoFile, $signature, $number);
+            $returnImageIds = isset($params['return_image_ids']) ? $params['return_image_ids'] : null;
+            $response = $this->apiInstance->videomakerVideocapturesAddAsync($accountId, $videoId, $videoFile, $signature, $number, $returnImageIds);
             return $response;
         });
     }

@@ -97,14 +97,15 @@ class VideomakerVideocapturesApi
      * @param  \SplFileObject $videoFile videoFile (optional)
      * @param  string $signature signature (optional)
      * @param  int $number number (optional)
+     * @param  bool $returnImageIds returnImageIds (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\VideomakerVideocapturesAddResponse
      */
-    public function videomakerVideocapturesAdd($accountId, $videoId = null, $videoFile = null, $signature = null, $number = null)
+    public function videomakerVideocapturesAdd($accountId, $videoId = null, $videoFile = null, $signature = null, $number = null, $returnImageIds = null)
     {
-        list($response) = $this->videomakerVideocapturesAddWithHttpInfo($accountId, $videoId, $videoFile, $signature, $number);
+        list($response) = $this->videomakerVideocapturesAddWithHttpInfo($accountId, $videoId, $videoFile, $signature, $number, $returnImageIds);
         return $response;
     }
 
@@ -118,15 +119,16 @@ class VideomakerVideocapturesApi
      * @param  \SplFileObject $videoFile (optional)
      * @param  string $signature (optional)
      * @param  int $number (optional)
+     * @param  bool $returnImageIds (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\VideomakerVideocapturesAddResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function videomakerVideocapturesAddWithHttpInfo($accountId, $videoId = null, $videoFile = null, $signature = null, $number = null)
+    public function videomakerVideocapturesAddWithHttpInfo($accountId, $videoId = null, $videoFile = null, $signature = null, $number = null, $returnImageIds = null)
     {
         $returnType = '\TencentAds\Model\VideomakerVideocapturesAddResponse';
-        $request = $this->videomakerVideocapturesAddRequest($accountId, $videoId, $videoFile, $signature, $number);
+        $request = $this->videomakerVideocapturesAddRequest($accountId, $videoId, $videoFile, $signature, $number, $returnImageIds);
 
         try {
             $options = $this->createHttpClientOption();
@@ -197,13 +199,14 @@ class VideomakerVideocapturesApi
      * @param  \SplFileObject $videoFile (optional)
      * @param  string $signature (optional)
      * @param  int $number (optional)
+     * @param  bool $returnImageIds (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function videomakerVideocapturesAddAsync($accountId, $videoId = null, $videoFile = null, $signature = null, $number = null)
+    public function videomakerVideocapturesAddAsync($accountId, $videoId = null, $videoFile = null, $signature = null, $number = null, $returnImageIds = null)
     {
-        return $this->videomakerVideocapturesAddAsyncWithHttpInfo($accountId, $videoId, $videoFile, $signature, $number)
+        return $this->videomakerVideocapturesAddAsyncWithHttpInfo($accountId, $videoId, $videoFile, $signature, $number, $returnImageIds)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -221,14 +224,15 @@ class VideomakerVideocapturesApi
      * @param  \SplFileObject $videoFile (optional)
      * @param  string $signature (optional)
      * @param  int $number (optional)
+     * @param  bool $returnImageIds (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function videomakerVideocapturesAddAsyncWithHttpInfo($accountId, $videoId = null, $videoFile = null, $signature = null, $number = null)
+    public function videomakerVideocapturesAddAsyncWithHttpInfo($accountId, $videoId = null, $videoFile = null, $signature = null, $number = null, $returnImageIds = null)
     {
         $returnType = '\TencentAds\Model\VideomakerVideocapturesAddResponse';
-        $request = $this->videomakerVideocapturesAddRequest($accountId, $videoId, $videoFile, $signature, $number);
+        $request = $this->videomakerVideocapturesAddRequest($accountId, $videoId, $videoFile, $signature, $number, $returnImageIds);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -275,11 +279,12 @@ class VideomakerVideocapturesApi
      * @param  \SplFileObject $videoFile (optional)
      * @param  string $signature (optional)
      * @param  int $number (optional)
+     * @param  bool $returnImageIds (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function videomakerVideocapturesAddRequest($accountId, $videoId = null, $videoFile = null, $signature = null, $number = null)
+    protected function videomakerVideocapturesAddRequest($accountId, $videoId = null, $videoFile = null, $signature = null, $number = null, $returnImageIds = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -317,6 +322,10 @@ class VideomakerVideocapturesApi
         // form params
         if ($number !== null) {
             $formParams['number'] = ObjectSerializer::toFormValue($number);
+        }
+        // form params
+        if ($returnImageIds !== null) {
+            $formParams['return_image_ids'] = ObjectSerializer::toFormValue($returnImageIds);
         }
         // body params
         $_tempBody = null;
