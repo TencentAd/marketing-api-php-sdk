@@ -81,7 +81,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'userActionSets' => '\TencentAds\Model\UserActionSetStruct[]',
         'additionalUserActionSets' => '\TencentAds\Model\UserActionSetStruct[]',
         'dynamicCreativeId' => 'int',
-        'isRewardedVideoAd' => 'bool',
         'bidStrategy' => '\TencentAds\Model\BidStrategy',
         'coldStartAudience' => 'int[]',
         'autoAudience' => 'bool',
@@ -136,7 +135,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'userActionSets' => null,
         'additionalUserActionSets' => null,
         'dynamicCreativeId' => 'int64',
-        'isRewardedVideoAd' => null,
         'bidStrategy' => null,
         'coldStartAudience' => 'int64',
         'autoAudience' => null,
@@ -212,7 +210,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'userActionSets' => 'user_action_sets',
         'additionalUserActionSets' => 'additional_user_action_sets',
         'dynamicCreativeId' => 'dynamic_creative_id',
-        'isRewardedVideoAd' => 'is_rewarded_video_ad',
         'bidStrategy' => 'bid_strategy',
         'coldStartAudience' => 'cold_start_audience',
         'autoAudience' => 'auto_audience',
@@ -267,7 +264,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'userActionSets' => 'setUserActionSets',
         'additionalUserActionSets' => 'setAdditionalUserActionSets',
         'dynamicCreativeId' => 'setDynamicCreativeId',
-        'isRewardedVideoAd' => 'setIsRewardedVideoAd',
         'bidStrategy' => 'setBidStrategy',
         'coldStartAudience' => 'setColdStartAudience',
         'autoAudience' => 'setAutoAudience',
@@ -322,7 +318,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'userActionSets' => 'getUserActionSets',
         'additionalUserActionSets' => 'getAdditionalUserActionSets',
         'dynamicCreativeId' => 'getDynamicCreativeId',
-        'isRewardedVideoAd' => 'getIsRewardedVideoAd',
         'bidStrategy' => 'getBidStrategy',
         'coldStartAudience' => 'getColdStartAudience',
         'autoAudience' => 'getAutoAudience',
@@ -431,7 +426,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['userActionSets'] = isset($data['userActionSets']) ? $data['userActionSets'] : null;
         $this->container['additionalUserActionSets'] = isset($data['additionalUserActionSets']) ? $data['additionalUserActionSets'] : null;
         $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
-        $this->container['isRewardedVideoAd'] = isset($data['isRewardedVideoAd']) ? $data['isRewardedVideoAd'] : null;
         $this->container['bidStrategy'] = isset($data['bidStrategy']) ? $data['bidStrategy'] : null;
         $this->container['coldStartAudience'] = isset($data['coldStartAudience']) ? $data['coldStartAudience'] : null;
         $this->container['autoAudience'] = isset($data['autoAudience']) ? $data['autoAudience'] : null;
@@ -1052,30 +1046,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setDynamicCreativeId($dynamicCreativeId)
     {
         $this->container['dynamicCreativeId'] = $dynamicCreativeId;
-
-        return $this;
-    }
-
-    /**
-     * Gets isRewardedVideoAd
-     *
-     * @return bool
-     */
-    public function getIsRewardedVideoAd()
-    {
-        return $this->container['isRewardedVideoAd'];
-    }
-
-    /**
-     * Sets isRewardedVideoAd
-     *
-     * @param bool $isRewardedVideoAd isRewardedVideoAd
-     *
-     * @return $this
-     */
-    public function setIsRewardedVideoAd($isRewardedVideoAd)
-    {
-        $this->container['isRewardedVideoAd'] = $isRewardedVideoAd;
 
         return $this;
     }

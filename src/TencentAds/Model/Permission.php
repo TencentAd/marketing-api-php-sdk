@@ -1,6 +1,6 @@
 <?php
 /**
- * CpaEffectDataStruct
+ * Permission
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CpaEffectDataStruct Class Doc Comment
+ * Permission Class Doc Comment
  *
  * @category Class
- * @description 效果数据（成本）
+ * @description 数据源权限
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CpaEffectDataStruct implements ModelInterface, ArrayAccess
+class Permission implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class CpaEffectDataStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'cpa_effect_data_struct';
+    protected static $swaggerModelName = 'permission';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,14 +58,9 @@ class CpaEffectDataStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'rank' => 'int',
-        'conversionCount' => 'int',
-        'cvr' => 'double',
-        'targetCpa' => 'double',
-        'realCpa' => 'double',
-        'cpaBias' => 'double',
-        'industryTopTargetcpa' => 'int',
-        'industryAvgTargetcpa' => 'int'
+        'canCreateAudience' => 'bool',
+        'canExactConversionClaim' => 'bool',
+        'canAsServing' => 'bool'
     ];
 
     /**
@@ -74,14 +69,9 @@ class CpaEffectDataStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'rank' => 'int64',
-        'conversionCount' => 'int64',
-        'cvr' => 'double',
-        'targetCpa' => 'double',
-        'realCpa' => 'double',
-        'cpaBias' => 'double',
-        'industryTopTargetcpa' => 'int64',
-        'industryAvgTargetcpa' => 'int64'
+        'canCreateAudience' => null,
+        'canExactConversionClaim' => null,
+        'canAsServing' => null
     ];
 
     /**
@@ -111,14 +101,9 @@ class CpaEffectDataStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'rank' => 'rank',
-        'conversionCount' => 'conversion_count',
-        'cvr' => 'cvr',
-        'targetCpa' => 'target_cpa',
-        'realCpa' => 'real_cpa',
-        'cpaBias' => 'cpa_bias',
-        'industryTopTargetcpa' => 'industry_top_targetcpa',
-        'industryAvgTargetcpa' => 'industry_avg_targetcpa'
+        'canCreateAudience' => 'can_create_audience',
+        'canExactConversionClaim' => 'can_exact_conversion_claim',
+        'canAsServing' => 'can_as_serving'
     ];
 
     /**
@@ -127,14 +112,9 @@ class CpaEffectDataStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'rank' => 'setRank',
-        'conversionCount' => 'setConversionCount',
-        'cvr' => 'setCvr',
-        'targetCpa' => 'setTargetCpa',
-        'realCpa' => 'setRealCpa',
-        'cpaBias' => 'setCpaBias',
-        'industryTopTargetcpa' => 'setIndustryTopTargetcpa',
-        'industryAvgTargetcpa' => 'setIndustryAvgTargetcpa'
+        'canCreateAudience' => 'setCanCreateAudience',
+        'canExactConversionClaim' => 'setCanExactConversionClaim',
+        'canAsServing' => 'setCanAsServing'
     ];
 
     /**
@@ -143,14 +123,9 @@ class CpaEffectDataStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'rank' => 'getRank',
-        'conversionCount' => 'getConversionCount',
-        'cvr' => 'getCvr',
-        'targetCpa' => 'getTargetCpa',
-        'realCpa' => 'getRealCpa',
-        'cpaBias' => 'getCpaBias',
-        'industryTopTargetcpa' => 'getIndustryTopTargetcpa',
-        'industryAvgTargetcpa' => 'getIndustryAvgTargetcpa'
+        'canCreateAudience' => 'getCanCreateAudience',
+        'canExactConversionClaim' => 'getCanExactConversionClaim',
+        'canAsServing' => 'getCanAsServing'
     ];
 
     /**
@@ -213,14 +188,9 @@ class CpaEffectDataStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['rank'] = isset($data['rank']) ? $data['rank'] : null;
-        $this->container['conversionCount'] = isset($data['conversionCount']) ? $data['conversionCount'] : null;
-        $this->container['cvr'] = isset($data['cvr']) ? $data['cvr'] : null;
-        $this->container['targetCpa'] = isset($data['targetCpa']) ? $data['targetCpa'] : null;
-        $this->container['realCpa'] = isset($data['realCpa']) ? $data['realCpa'] : null;
-        $this->container['cpaBias'] = isset($data['cpaBias']) ? $data['cpaBias'] : null;
-        $this->container['industryTopTargetcpa'] = isset($data['industryTopTargetcpa']) ? $data['industryTopTargetcpa'] : null;
-        $this->container['industryAvgTargetcpa'] = isset($data['industryAvgTargetcpa']) ? $data['industryAvgTargetcpa'] : null;
+        $this->container['canCreateAudience'] = isset($data['canCreateAudience']) ? $data['canCreateAudience'] : null;
+        $this->container['canExactConversionClaim'] = isset($data['canExactConversionClaim']) ? $data['canExactConversionClaim'] : null;
+        $this->container['canAsServing'] = isset($data['canAsServing']) ? $data['canAsServing'] : null;
     }
 
     /**
@@ -248,193 +218,73 @@ class CpaEffectDataStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets rank
+     * Gets canCreateAudience
      *
-     * @return int
+     * @return bool
      */
-    public function getRank()
+    public function getCanCreateAudience()
     {
-        return $this->container['rank'];
+        return $this->container['canCreateAudience'];
     }
 
     /**
-     * Sets rank
+     * Sets canCreateAudience
      *
-     * @param int $rank rank
+     * @param bool $canCreateAudience canCreateAudience
      *
      * @return $this
      */
-    public function setRank($rank)
+    public function setCanCreateAudience($canCreateAudience)
     {
-        $this->container['rank'] = $rank;
+        $this->container['canCreateAudience'] = $canCreateAudience;
 
         return $this;
     }
 
     /**
-     * Gets conversionCount
+     * Gets canExactConversionClaim
      *
-     * @return int
+     * @return bool
      */
-    public function getConversionCount()
+    public function getCanExactConversionClaim()
     {
-        return $this->container['conversionCount'];
+        return $this->container['canExactConversionClaim'];
     }
 
     /**
-     * Sets conversionCount
+     * Sets canExactConversionClaim
      *
-     * @param int $conversionCount conversionCount
+     * @param bool $canExactConversionClaim canExactConversionClaim
      *
      * @return $this
      */
-    public function setConversionCount($conversionCount)
+    public function setCanExactConversionClaim($canExactConversionClaim)
     {
-        $this->container['conversionCount'] = $conversionCount;
+        $this->container['canExactConversionClaim'] = $canExactConversionClaim;
 
         return $this;
     }
 
     /**
-     * Gets cvr
+     * Gets canAsServing
      *
-     * @return double
+     * @return bool
      */
-    public function getCvr()
+    public function getCanAsServing()
     {
-        return $this->container['cvr'];
+        return $this->container['canAsServing'];
     }
 
     /**
-     * Sets cvr
+     * Sets canAsServing
      *
-     * @param double $cvr cvr
+     * @param bool $canAsServing canAsServing
      *
      * @return $this
      */
-    public function setCvr($cvr)
+    public function setCanAsServing($canAsServing)
     {
-        $this->container['cvr'] = $cvr;
-
-        return $this;
-    }
-
-    /**
-     * Gets targetCpa
-     *
-     * @return double
-     */
-    public function getTargetCpa()
-    {
-        return $this->container['targetCpa'];
-    }
-
-    /**
-     * Sets targetCpa
-     *
-     * @param double $targetCpa targetCpa
-     *
-     * @return $this
-     */
-    public function setTargetCpa($targetCpa)
-    {
-        $this->container['targetCpa'] = $targetCpa;
-
-        return $this;
-    }
-
-    /**
-     * Gets realCpa
-     *
-     * @return double
-     */
-    public function getRealCpa()
-    {
-        return $this->container['realCpa'];
-    }
-
-    /**
-     * Sets realCpa
-     *
-     * @param double $realCpa realCpa
-     *
-     * @return $this
-     */
-    public function setRealCpa($realCpa)
-    {
-        $this->container['realCpa'] = $realCpa;
-
-        return $this;
-    }
-
-    /**
-     * Gets cpaBias
-     *
-     * @return double
-     */
-    public function getCpaBias()
-    {
-        return $this->container['cpaBias'];
-    }
-
-    /**
-     * Sets cpaBias
-     *
-     * @param double $cpaBias cpaBias
-     *
-     * @return $this
-     */
-    public function setCpaBias($cpaBias)
-    {
-        $this->container['cpaBias'] = $cpaBias;
-
-        return $this;
-    }
-
-    /**
-     * Gets industryTopTargetcpa
-     *
-     * @return int
-     */
-    public function getIndustryTopTargetcpa()
-    {
-        return $this->container['industryTopTargetcpa'];
-    }
-
-    /**
-     * Sets industryTopTargetcpa
-     *
-     * @param int $industryTopTargetcpa industryTopTargetcpa
-     *
-     * @return $this
-     */
-    public function setIndustryTopTargetcpa($industryTopTargetcpa)
-    {
-        $this->container['industryTopTargetcpa'] = $industryTopTargetcpa;
-
-        return $this;
-    }
-
-    /**
-     * Gets industryAvgTargetcpa
-     *
-     * @return int
-     */
-    public function getIndustryAvgTargetcpa()
-    {
-        return $this->container['industryAvgTargetcpa'];
-    }
-
-    /**
-     * Sets industryAvgTargetcpa
-     *
-     * @param int $industryAvgTargetcpa industryAvgTargetcpa
-     *
-     * @return $this
-     */
-    public function setIndustryAvgTargetcpa($industryAvgTargetcpa)
-    {
-        $this->container['industryAvgTargetcpa'] = $industryAvgTargetcpa;
+        $this->container['canAsServing'] = $canAsServing;
 
         return $this;
     }

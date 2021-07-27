@@ -40,11 +40,13 @@ class AssetPrePermissionsApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $assetType = isset($params['asset_type']) ? $params['asset_type'] : null;
+            $assetId = isset($params['asset_id']) ? $params['asset_id'] : null;
+            $assetName = isset($params['asset_name']) ? $params['asset_name'] : null;
             $pathType = isset($params['path_type']) ? $params['path_type'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->assetPrePermissionsGet($accountId, $assetType, $pathType, $page, $pageSize, $fields);
+            $response = $this->apiInstance->assetPrePermissionsGet($accountId, $assetType, $assetId, $assetName, $pathType, $page, $pageSize, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -61,11 +63,13 @@ class AssetPrePermissionsApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $assetType = isset($params['asset_type']) ? $params['asset_type'] : null;
+            $assetId = isset($params['asset_id']) ? $params['asset_id'] : null;
+            $assetName = isset($params['asset_name']) ? $params['asset_name'] : null;
             $pathType = isset($params['path_type']) ? $params['path_type'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->assetPrePermissionsGetAsync($accountId, $assetType, $pathType, $page, $pageSize, $fields);
+            $response = $this->apiInstance->assetPrePermissionsGetAsync($accountId, $assetType, $assetId, $assetName, $pathType, $page, $pageSize, $fields);
             return $response;
         });
     }

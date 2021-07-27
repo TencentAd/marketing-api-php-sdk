@@ -63,7 +63,8 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
         'wechatAppId' => 'string',
         'name' => 'string',
         'description' => 'string',
-        'usages' => 'string[]'
+        'usages' => 'string[]',
+        'enableConversionClaim' => 'bool'
     ];
 
     /**
@@ -78,7 +79,8 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
         'wechatAppId' => null,
         'name' => null,
         'description' => null,
-        'usages' => null
+        'usages' => null,
+        'enableConversionClaim' => null
     ];
 
     /**
@@ -114,7 +116,8 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
         'wechatAppId' => 'wechat_app_id',
         'name' => 'name',
         'description' => 'description',
-        'usages' => 'usages'
+        'usages' => 'usages',
+        'enableConversionClaim' => 'enable_conversion_claim'
     ];
 
     /**
@@ -129,7 +132,8 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
         'wechatAppId' => 'setWechatAppId',
         'name' => 'setName',
         'description' => 'setDescription',
-        'usages' => 'setUsages'
+        'usages' => 'setUsages',
+        'enableConversionClaim' => 'setEnableConversionClaim'
     ];
 
     /**
@@ -144,7 +148,8 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
         'wechatAppId' => 'getWechatAppId',
         'name' => 'getName',
         'description' => 'getDescription',
-        'usages' => 'getUsages'
+        'usages' => 'getUsages',
+        'enableConversionClaim' => 'getEnableConversionClaim'
     ];
 
     /**
@@ -214,6 +219,7 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
         $this->container['name'] = isset($data['name']) ? $data['name'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
         $this->container['usages'] = isset($data['usages']) ? $data['usages'] : null;
+        $this->container['enableConversionClaim'] = isset($data['enableConversionClaim']) ? $data['enableConversionClaim'] : null;
     }
 
     /**
@@ -404,6 +410,30 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
     public function setUsages($usages)
     {
         $this->container['usages'] = $usages;
+
+        return $this;
+    }
+
+    /**
+     * Gets enableConversionClaim
+     *
+     * @return bool
+     */
+    public function getEnableConversionClaim()
+    {
+        return $this->container['enableConversionClaim'];
+    }
+
+    /**
+     * Sets enableConversionClaim
+     *
+     * @param bool $enableConversionClaim enableConversionClaim
+     *
+     * @return $this
+     */
+    public function setEnableConversionClaim($enableConversionClaim)
+    {
+        $this->container['enableConversionClaim'] = $enableConversionClaim;
 
         return $this;
     }

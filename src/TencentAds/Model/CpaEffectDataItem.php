@@ -1,6 +1,6 @@
 <?php
 /**
- * CpaEffectDataTrends
+ * CpaEffectDataItem
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CpaEffectDataTrends Class Doc Comment
+ * CpaEffectDataItem Class Doc Comment
  *
  * @category Class
- * @description 成本趋势
+ * @description 深浅效果数据（成本）
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CpaEffectDataTrends implements ModelInterface, ArrayAccess
+class CpaEffectDataItem implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class CpaEffectDataTrends implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'cpa_effect_data_trends';
+    protected static $swaggerModelName = 'cpa_effect_data_item';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -59,8 +59,13 @@ class CpaEffectDataTrends implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'rank' => 'int',
-        'targetCpa' => '\TencentAds\Model\PointStruct[]',
-        'realCpa' => '\TencentAds\Model\PointStruct[]'
+        'conversionCount' => 'int',
+        'cvr' => 'double',
+        'targetCpa' => 'double',
+        'realCpa' => 'double',
+        'cpaBias' => 'double',
+        'industryTopTargetcpa' => 'int',
+        'industryAvgTargetcpa' => 'int'
     ];
 
     /**
@@ -70,8 +75,13 @@ class CpaEffectDataTrends implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'rank' => 'int64',
-        'targetCpa' => null,
-        'realCpa' => null
+        'conversionCount' => 'int64',
+        'cvr' => 'double',
+        'targetCpa' => 'double',
+        'realCpa' => 'double',
+        'cpaBias' => 'double',
+        'industryTopTargetcpa' => 'int64',
+        'industryAvgTargetcpa' => 'int64'
     ];
 
     /**
@@ -102,8 +112,13 @@ class CpaEffectDataTrends implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'rank' => 'rank',
+        'conversionCount' => 'conversion_count',
+        'cvr' => 'cvr',
         'targetCpa' => 'target_cpa',
-        'realCpa' => 'real_cpa'
+        'realCpa' => 'real_cpa',
+        'cpaBias' => 'cpa_bias',
+        'industryTopTargetcpa' => 'industry_top_targetcpa',
+        'industryAvgTargetcpa' => 'industry_avg_targetcpa'
     ];
 
     /**
@@ -113,8 +128,13 @@ class CpaEffectDataTrends implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'rank' => 'setRank',
+        'conversionCount' => 'setConversionCount',
+        'cvr' => 'setCvr',
         'targetCpa' => 'setTargetCpa',
-        'realCpa' => 'setRealCpa'
+        'realCpa' => 'setRealCpa',
+        'cpaBias' => 'setCpaBias',
+        'industryTopTargetcpa' => 'setIndustryTopTargetcpa',
+        'industryAvgTargetcpa' => 'setIndustryAvgTargetcpa'
     ];
 
     /**
@@ -124,8 +144,13 @@ class CpaEffectDataTrends implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'rank' => 'getRank',
+        'conversionCount' => 'getConversionCount',
+        'cvr' => 'getCvr',
         'targetCpa' => 'getTargetCpa',
-        'realCpa' => 'getRealCpa'
+        'realCpa' => 'getRealCpa',
+        'cpaBias' => 'getCpaBias',
+        'industryTopTargetcpa' => 'getIndustryTopTargetcpa',
+        'industryAvgTargetcpa' => 'getIndustryAvgTargetcpa'
     ];
 
     /**
@@ -189,8 +214,13 @@ class CpaEffectDataTrends implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['rank'] = isset($data['rank']) ? $data['rank'] : null;
+        $this->container['conversionCount'] = isset($data['conversionCount']) ? $data['conversionCount'] : null;
+        $this->container['cvr'] = isset($data['cvr']) ? $data['cvr'] : null;
         $this->container['targetCpa'] = isset($data['targetCpa']) ? $data['targetCpa'] : null;
         $this->container['realCpa'] = isset($data['realCpa']) ? $data['realCpa'] : null;
+        $this->container['cpaBias'] = isset($data['cpaBias']) ? $data['cpaBias'] : null;
+        $this->container['industryTopTargetcpa'] = isset($data['industryTopTargetcpa']) ? $data['industryTopTargetcpa'] : null;
+        $this->container['industryAvgTargetcpa'] = isset($data['industryAvgTargetcpa']) ? $data['industryAvgTargetcpa'] : null;
     }
 
     /**
@@ -242,9 +272,57 @@ class CpaEffectDataTrends implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets conversionCount
+     *
+     * @return int
+     */
+    public function getConversionCount()
+    {
+        return $this->container['conversionCount'];
+    }
+
+    /**
+     * Sets conversionCount
+     *
+     * @param int $conversionCount conversionCount
+     *
+     * @return $this
+     */
+    public function setConversionCount($conversionCount)
+    {
+        $this->container['conversionCount'] = $conversionCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvr
+     *
+     * @return double
+     */
+    public function getCvr()
+    {
+        return $this->container['cvr'];
+    }
+
+    /**
+     * Sets cvr
+     *
+     * @param double $cvr cvr
+     *
+     * @return $this
+     */
+    public function setCvr($cvr)
+    {
+        $this->container['cvr'] = $cvr;
+
+        return $this;
+    }
+
+    /**
      * Gets targetCpa
      *
-     * @return \TencentAds\Model\PointStruct[]
+     * @return double
      */
     public function getTargetCpa()
     {
@@ -254,7 +332,7 @@ class CpaEffectDataTrends implements ModelInterface, ArrayAccess
     /**
      * Sets targetCpa
      *
-     * @param \TencentAds\Model\PointStruct[] $targetCpa targetCpa
+     * @param double $targetCpa targetCpa
      *
      * @return $this
      */
@@ -268,7 +346,7 @@ class CpaEffectDataTrends implements ModelInterface, ArrayAccess
     /**
      * Gets realCpa
      *
-     * @return \TencentAds\Model\PointStruct[]
+     * @return double
      */
     public function getRealCpa()
     {
@@ -278,13 +356,85 @@ class CpaEffectDataTrends implements ModelInterface, ArrayAccess
     /**
      * Sets realCpa
      *
-     * @param \TencentAds\Model\PointStruct[] $realCpa realCpa
+     * @param double $realCpa realCpa
      *
      * @return $this
      */
     public function setRealCpa($realCpa)
     {
         $this->container['realCpa'] = $realCpa;
+
+        return $this;
+    }
+
+    /**
+     * Gets cpaBias
+     *
+     * @return double
+     */
+    public function getCpaBias()
+    {
+        return $this->container['cpaBias'];
+    }
+
+    /**
+     * Sets cpaBias
+     *
+     * @param double $cpaBias cpaBias
+     *
+     * @return $this
+     */
+    public function setCpaBias($cpaBias)
+    {
+        $this->container['cpaBias'] = $cpaBias;
+
+        return $this;
+    }
+
+    /**
+     * Gets industryTopTargetcpa
+     *
+     * @return int
+     */
+    public function getIndustryTopTargetcpa()
+    {
+        return $this->container['industryTopTargetcpa'];
+    }
+
+    /**
+     * Sets industryTopTargetcpa
+     *
+     * @param int $industryTopTargetcpa industryTopTargetcpa
+     *
+     * @return $this
+     */
+    public function setIndustryTopTargetcpa($industryTopTargetcpa)
+    {
+        $this->container['industryTopTargetcpa'] = $industryTopTargetcpa;
+
+        return $this;
+    }
+
+    /**
+     * Gets industryAvgTargetcpa
+     *
+     * @return int
+     */
+    public function getIndustryAvgTargetcpa()
+    {
+        return $this->container['industryAvgTargetcpa'];
+    }
+
+    /**
+     * Sets industryAvgTargetcpa
+     *
+     * @param int $industryAvgTargetcpa industryAvgTargetcpa
+     *
+     * @return $this
+     */
+    public function setIndustryAvgTargetcpa($industryAvgTargetcpa)
+    {
+        $this->container['industryAvgTargetcpa'] = $industryAvgTargetcpa;
 
         return $this;
     }

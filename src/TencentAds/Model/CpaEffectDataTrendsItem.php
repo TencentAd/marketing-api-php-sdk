@@ -1,6 +1,6 @@
 <?php
 /**
- * DetailCpaDetailStruct
+ * CpaEffectDataTrendsItem
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DetailCpaDetailStruct Class Doc Comment
+ * CpaEffectDataTrendsItem Class Doc Comment
  *
  * @category Class
- * @description 诊断详情-成本明细
+ * @description 深浅成本趋势
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DetailCpaDetailStruct implements ModelInterface, ArrayAccess
+class CpaEffectDataTrendsItem implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class DetailCpaDetailStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'detail_cpa_detail_struct';
+    protected static $swaggerModelName = 'cpa_effect_data_trends_item';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,9 @@ class DetailCpaDetailStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'effectData' => '\TencentAds\Model\CpaEffectDataItem[]',
-        'effectDataTrends' => '\TencentAds\Model\CpaEffectDataTrendsItem[]'
+        'rank' => 'int',
+        'targetCpa' => '\TencentAds\Model\PointStruct[]',
+        'realCpa' => '\TencentAds\Model\PointStruct[]'
     ];
 
     /**
@@ -68,8 +69,9 @@ class DetailCpaDetailStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'effectData' => null,
-        'effectDataTrends' => null
+        'rank' => 'int64',
+        'targetCpa' => null,
+        'realCpa' => null
     ];
 
     /**
@@ -99,8 +101,9 @@ class DetailCpaDetailStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'effectData' => 'effect_data',
-        'effectDataTrends' => 'effect_data_trends'
+        'rank' => 'rank',
+        'targetCpa' => 'target_cpa',
+        'realCpa' => 'real_cpa'
     ];
 
     /**
@@ -109,8 +112,9 @@ class DetailCpaDetailStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'effectData' => 'setEffectData',
-        'effectDataTrends' => 'setEffectDataTrends'
+        'rank' => 'setRank',
+        'targetCpa' => 'setTargetCpa',
+        'realCpa' => 'setRealCpa'
     ];
 
     /**
@@ -119,8 +123,9 @@ class DetailCpaDetailStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'effectData' => 'getEffectData',
-        'effectDataTrends' => 'getEffectDataTrends'
+        'rank' => 'getRank',
+        'targetCpa' => 'getTargetCpa',
+        'realCpa' => 'getRealCpa'
     ];
 
     /**
@@ -183,8 +188,9 @@ class DetailCpaDetailStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['effectData'] = isset($data['effectData']) ? $data['effectData'] : null;
-        $this->container['effectDataTrends'] = isset($data['effectDataTrends']) ? $data['effectDataTrends'] : null;
+        $this->container['rank'] = isset($data['rank']) ? $data['rank'] : null;
+        $this->container['targetCpa'] = isset($data['targetCpa']) ? $data['targetCpa'] : null;
+        $this->container['realCpa'] = isset($data['realCpa']) ? $data['realCpa'] : null;
     }
 
     /**
@@ -212,49 +218,73 @@ class DetailCpaDetailStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets effectData
+     * Gets rank
      *
-     * @return \TencentAds\Model\CpaEffectDataItem[]
+     * @return int
      */
-    public function getEffectData()
+    public function getRank()
     {
-        return $this->container['effectData'];
+        return $this->container['rank'];
     }
 
     /**
-     * Sets effectData
+     * Sets rank
      *
-     * @param \TencentAds\Model\CpaEffectDataItem[] $effectData effectData
+     * @param int $rank rank
      *
      * @return $this
      */
-    public function setEffectData($effectData)
+    public function setRank($rank)
     {
-        $this->container['effectData'] = $effectData;
+        $this->container['rank'] = $rank;
 
         return $this;
     }
 
     /**
-     * Gets effectDataTrends
+     * Gets targetCpa
      *
-     * @return \TencentAds\Model\CpaEffectDataTrendsItem[]
+     * @return \TencentAds\Model\PointStruct[]
      */
-    public function getEffectDataTrends()
+    public function getTargetCpa()
     {
-        return $this->container['effectDataTrends'];
+        return $this->container['targetCpa'];
     }
 
     /**
-     * Sets effectDataTrends
+     * Sets targetCpa
      *
-     * @param \TencentAds\Model\CpaEffectDataTrendsItem[] $effectDataTrends effectDataTrends
+     * @param \TencentAds\Model\PointStruct[] $targetCpa targetCpa
      *
      * @return $this
      */
-    public function setEffectDataTrends($effectDataTrends)
+    public function setTargetCpa($targetCpa)
     {
-        $this->container['effectDataTrends'] = $effectDataTrends;
+        $this->container['targetCpa'] = $targetCpa;
+
+        return $this;
+    }
+
+    /**
+     * Gets realCpa
+     *
+     * @return \TencentAds\Model\PointStruct[]
+     */
+    public function getRealCpa()
+    {
+        return $this->container['realCpa'];
+    }
+
+    /**
+     * Sets realCpa
+     *
+     * @param \TencentAds\Model\PointStruct[] $realCpa realCpa
+     *
+     * @return $this
+     */
+    public function setRealCpa($realCpa)
+    {
+        $this->container['realCpa'] = $realCpa;
 
         return $this;
     }

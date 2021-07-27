@@ -61,6 +61,7 @@ class AssetPrePermissionsGetListStruct implements ModelInterface, ArrayAccess
         'accountId' => 'int',
         'ownerAccountId' => 'int',
         'assetId' => 'int',
+        'assetName' => 'string',
         'assetType' => '\TencentAds\Model\AssetType',
         'pathId' => 'int',
         'pathType' => '\TencentAds\Model\PathType',
@@ -78,6 +79,7 @@ class AssetPrePermissionsGetListStruct implements ModelInterface, ArrayAccess
         'accountId' => 'int64',
         'ownerAccountId' => 'int64',
         'assetId' => 'int64',
+        'assetName' => null,
         'assetType' => null,
         'pathId' => 'int64',
         'pathType' => null,
@@ -116,6 +118,7 @@ class AssetPrePermissionsGetListStruct implements ModelInterface, ArrayAccess
         'accountId' => 'account_id',
         'ownerAccountId' => 'owner_account_id',
         'assetId' => 'asset_id',
+        'assetName' => 'asset_name',
         'assetType' => 'asset_type',
         'pathId' => 'path_id',
         'pathType' => 'path_type',
@@ -133,6 +136,7 @@ class AssetPrePermissionsGetListStruct implements ModelInterface, ArrayAccess
         'accountId' => 'setAccountId',
         'ownerAccountId' => 'setOwnerAccountId',
         'assetId' => 'setAssetId',
+        'assetName' => 'setAssetName',
         'assetType' => 'setAssetType',
         'pathId' => 'setPathId',
         'pathType' => 'setPathType',
@@ -150,6 +154,7 @@ class AssetPrePermissionsGetListStruct implements ModelInterface, ArrayAccess
         'accountId' => 'getAccountId',
         'ownerAccountId' => 'getOwnerAccountId',
         'assetId' => 'getAssetId',
+        'assetName' => 'getAssetName',
         'assetType' => 'getAssetType',
         'pathId' => 'getPathId',
         'pathType' => 'getPathType',
@@ -221,6 +226,7 @@ class AssetPrePermissionsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['ownerAccountId'] = isset($data['ownerAccountId']) ? $data['ownerAccountId'] : null;
         $this->container['assetId'] = isset($data['assetId']) ? $data['assetId'] : null;
+        $this->container['assetName'] = isset($data['assetName']) ? $data['assetName'] : null;
         $this->container['assetType'] = isset($data['assetType']) ? $data['assetType'] : null;
         $this->container['pathId'] = isset($data['pathId']) ? $data['pathId'] : null;
         $this->container['pathType'] = isset($data['pathType']) ? $data['pathType'] : null;
@@ -321,6 +327,30 @@ class AssetPrePermissionsGetListStruct implements ModelInterface, ArrayAccess
     public function setAssetId($assetId)
     {
         $this->container['assetId'] = $assetId;
+
+        return $this;
+    }
+
+    /**
+     * Gets assetName
+     *
+     * @return string
+     */
+    public function getAssetName()
+    {
+        return $this->container['assetName'];
+    }
+
+    /**
+     * Sets assetName
+     *
+     * @param string $assetName assetName
+     *
+     * @return $this
+     */
+    public function setAssetName($assetName)
+    {
+        $this->container['assetName'] = $assetName;
 
         return $this;
     }

@@ -65,7 +65,10 @@ class UserActionSet implements ModelInterface, ArrayAccess
         'description' => 'string',
         'activateStatus' => 'bool',
         'createdTime' => 'string',
-        'accessWay' => '\TencentAds\Model\ActionSetAccessWayType'
+        'accessWay' => '\TencentAds\Model\ActionSetAccessWayType',
+        'usages' => 'string[]',
+        'enableConversionClaim' => 'bool',
+        'permission' => '\TencentAds\Model\Permission'
     ];
 
     /**
@@ -81,7 +84,10 @@ class UserActionSet implements ModelInterface, ArrayAccess
         'description' => null,
         'activateStatus' => null,
         'createdTime' => null,
-        'accessWay' => null
+        'accessWay' => null,
+        'usages' => null,
+        'enableConversionClaim' => null,
+        'permission' => null
     ];
 
     /**
@@ -118,7 +124,10 @@ class UserActionSet implements ModelInterface, ArrayAccess
         'description' => 'description',
         'activateStatus' => 'activate_status',
         'createdTime' => 'created_time',
-        'accessWay' => 'access_way'
+        'accessWay' => 'access_way',
+        'usages' => 'usages',
+        'enableConversionClaim' => 'enable_conversion_claim',
+        'permission' => 'permission'
     ];
 
     /**
@@ -134,7 +143,10 @@ class UserActionSet implements ModelInterface, ArrayAccess
         'description' => 'setDescription',
         'activateStatus' => 'setActivateStatus',
         'createdTime' => 'setCreatedTime',
-        'accessWay' => 'setAccessWay'
+        'accessWay' => 'setAccessWay',
+        'usages' => 'setUsages',
+        'enableConversionClaim' => 'setEnableConversionClaim',
+        'permission' => 'setPermission'
     ];
 
     /**
@@ -150,7 +162,10 @@ class UserActionSet implements ModelInterface, ArrayAccess
         'description' => 'getDescription',
         'activateStatus' => 'getActivateStatus',
         'createdTime' => 'getCreatedTime',
-        'accessWay' => 'getAccessWay'
+        'accessWay' => 'getAccessWay',
+        'usages' => 'getUsages',
+        'enableConversionClaim' => 'getEnableConversionClaim',
+        'permission' => 'getPermission'
     ];
 
     /**
@@ -221,6 +236,9 @@ class UserActionSet implements ModelInterface, ArrayAccess
         $this->container['activateStatus'] = isset($data['activateStatus']) ? $data['activateStatus'] : null;
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
         $this->container['accessWay'] = isset($data['accessWay']) ? $data['accessWay'] : null;
+        $this->container['usages'] = isset($data['usages']) ? $data['usages'] : null;
+        $this->container['enableConversionClaim'] = isset($data['enableConversionClaim']) ? $data['enableConversionClaim'] : null;
+        $this->container['permission'] = isset($data['permission']) ? $data['permission'] : null;
     }
 
     /**
@@ -435,6 +453,78 @@ class UserActionSet implements ModelInterface, ArrayAccess
     public function setAccessWay($accessWay)
     {
         $this->container['accessWay'] = $accessWay;
+
+        return $this;
+    }
+
+    /**
+     * Gets usages
+     *
+     * @return string[]
+     */
+    public function getUsages()
+    {
+        return $this->container['usages'];
+    }
+
+    /**
+     * Sets usages
+     *
+     * @param string[] $usages usages
+     *
+     * @return $this
+     */
+    public function setUsages($usages)
+    {
+        $this->container['usages'] = $usages;
+
+        return $this;
+    }
+
+    /**
+     * Gets enableConversionClaim
+     *
+     * @return bool
+     */
+    public function getEnableConversionClaim()
+    {
+        return $this->container['enableConversionClaim'];
+    }
+
+    /**
+     * Sets enableConversionClaim
+     *
+     * @param bool $enableConversionClaim enableConversionClaim
+     *
+     * @return $this
+     */
+    public function setEnableConversionClaim($enableConversionClaim)
+    {
+        $this->container['enableConversionClaim'] = $enableConversionClaim;
+
+        return $this;
+    }
+
+    /**
+     * Gets permission
+     *
+     * @return \TencentAds\Model\Permission
+     */
+    public function getPermission()
+    {
+        return $this->container['permission'];
+    }
+
+    /**
+     * Sets permission
+     *
+     * @param \TencentAds\Model\Permission $permission permission
+     *
+     * @return $this
+     */
+    public function setPermission($permission)
+    {
+        $this->container['permission'] = $permission;
 
         return $this;
     }

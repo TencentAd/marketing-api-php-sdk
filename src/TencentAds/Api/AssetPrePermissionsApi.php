@@ -94,6 +94,8 @@ class AssetPrePermissionsApi
      *
      * @param  int $accountId accountId (required)
      * @param  string $assetType assetType (required)
+     * @param  int $assetId assetId (optional)
+     * @param  string $assetName assetName (optional)
      * @param  string $pathType pathType (optional)
      * @param  int $page page (optional)
      * @param  int $pageSize pageSize (optional)
@@ -103,9 +105,9 @@ class AssetPrePermissionsApi
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\AssetPrePermissionsGetResponse
      */
-    public function assetPrePermissionsGet($accountId, $assetType, $pathType = null, $page = null, $pageSize = null, $fields = null)
+    public function assetPrePermissionsGet($accountId, $assetType, $assetId = null, $assetName = null, $pathType = null, $page = null, $pageSize = null, $fields = null)
     {
-        list($response) = $this->assetPrePermissionsGetWithHttpInfo($accountId, $assetType, $pathType, $page, $pageSize, $fields);
+        list($response) = $this->assetPrePermissionsGetWithHttpInfo($accountId, $assetType, $assetId, $assetName, $pathType, $page, $pageSize, $fields);
         return $response;
     }
 
@@ -116,6 +118,8 @@ class AssetPrePermissionsApi
      *
      * @param  int $accountId (required)
      * @param  string $assetType (required)
+     * @param  int $assetId (optional)
+     * @param  string $assetName (optional)
      * @param  string $pathType (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
@@ -125,10 +129,10 @@ class AssetPrePermissionsApi
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\AssetPrePermissionsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function assetPrePermissionsGetWithHttpInfo($accountId, $assetType, $pathType = null, $page = null, $pageSize = null, $fields = null)
+    public function assetPrePermissionsGetWithHttpInfo($accountId, $assetType, $assetId = null, $assetName = null, $pathType = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\AssetPrePermissionsGetResponse';
-        $request = $this->assetPrePermissionsGetRequest($accountId, $assetType, $pathType, $page, $pageSize, $fields);
+        $request = $this->assetPrePermissionsGetRequest($accountId, $assetType, $assetId, $assetName, $pathType, $page, $pageSize, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -196,6 +200,8 @@ class AssetPrePermissionsApi
      *
      * @param  int $accountId (required)
      * @param  string $assetType (required)
+     * @param  int $assetId (optional)
+     * @param  string $assetName (optional)
      * @param  string $pathType (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
@@ -204,9 +210,9 @@ class AssetPrePermissionsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function assetPrePermissionsGetAsync($accountId, $assetType, $pathType = null, $page = null, $pageSize = null, $fields = null)
+    public function assetPrePermissionsGetAsync($accountId, $assetType, $assetId = null, $assetName = null, $pathType = null, $page = null, $pageSize = null, $fields = null)
     {
-        return $this->assetPrePermissionsGetAsyncWithHttpInfo($accountId, $assetType, $pathType, $page, $pageSize, $fields)
+        return $this->assetPrePermissionsGetAsyncWithHttpInfo($accountId, $assetType, $assetId, $assetName, $pathType, $page, $pageSize, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -221,6 +227,8 @@ class AssetPrePermissionsApi
      *
      * @param  int $accountId (required)
      * @param  string $assetType (required)
+     * @param  int $assetId (optional)
+     * @param  string $assetName (optional)
      * @param  string $pathType (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
@@ -229,10 +237,10 @@ class AssetPrePermissionsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function assetPrePermissionsGetAsyncWithHttpInfo($accountId, $assetType, $pathType = null, $page = null, $pageSize = null, $fields = null)
+    public function assetPrePermissionsGetAsyncWithHttpInfo($accountId, $assetType, $assetId = null, $assetName = null, $pathType = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\AssetPrePermissionsGetResponse';
-        $request = $this->assetPrePermissionsGetRequest($accountId, $assetType, $pathType, $page, $pageSize, $fields);
+        $request = $this->assetPrePermissionsGetRequest($accountId, $assetType, $assetId, $assetName, $pathType, $page, $pageSize, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -276,6 +284,8 @@ class AssetPrePermissionsApi
      *
      * @param  int $accountId (required)
      * @param  string $assetType (required)
+     * @param  int $assetId (optional)
+     * @param  string $assetName (optional)
      * @param  string $pathType (optional)
      * @param  int $page (optional)
      * @param  int $pageSize (optional)
@@ -284,7 +294,7 @@ class AssetPrePermissionsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function assetPrePermissionsGetRequest($accountId, $assetType, $pathType = null, $page = null, $pageSize = null, $fields = null)
+    protected function assetPrePermissionsGetRequest($accountId, $assetType, $assetId = null, $assetName = null, $pathType = null, $page = null, $pageSize = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -313,6 +323,14 @@ class AssetPrePermissionsApi
         // query params
         if ($assetType !== null) {
             $queryParams['asset_type'] = ObjectSerializer::toQueryValue($assetType);
+        }
+        // query params
+        if ($assetId !== null) {
+            $queryParams['asset_id'] = ObjectSerializer::toQueryValue($assetId);
+        }
+        // query params
+        if ($assetName !== null) {
+            $queryParams['asset_name'] = ObjectSerializer::toQueryValue($assetName);
         }
         // query params
         if ($pathType !== null) {

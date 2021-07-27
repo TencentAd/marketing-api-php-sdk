@@ -62,7 +62,9 @@ class FloatingZone implements ModelInterface, ArrayAccess
         'floatingZoneImageId' => 'string',
         'floatingZoneName' => 'string',
         'floatingZoneDesc' => 'string',
-        'floatingZoneButtonText' => 'string'
+        'floatingZoneButtonText' => 'string',
+        'floatingZoneType' => '\TencentAds\Model\FloatingZoneType',
+        'floatingZoneSingleImageId' => 'string'
     ];
 
     /**
@@ -75,7 +77,9 @@ class FloatingZone implements ModelInterface, ArrayAccess
         'floatingZoneImageId' => null,
         'floatingZoneName' => null,
         'floatingZoneDesc' => null,
-        'floatingZoneButtonText' => null
+        'floatingZoneButtonText' => null,
+        'floatingZoneType' => null,
+        'floatingZoneSingleImageId' => null
     ];
 
     /**
@@ -109,7 +113,9 @@ class FloatingZone implements ModelInterface, ArrayAccess
         'floatingZoneImageId' => 'floating_zone_image_id',
         'floatingZoneName' => 'floating_zone_name',
         'floatingZoneDesc' => 'floating_zone_desc',
-        'floatingZoneButtonText' => 'floating_zone_button_text'
+        'floatingZoneButtonText' => 'floating_zone_button_text',
+        'floatingZoneType' => 'floating_zone_type',
+        'floatingZoneSingleImageId' => 'floating_zone_single_image_id'
     ];
 
     /**
@@ -122,7 +128,9 @@ class FloatingZone implements ModelInterface, ArrayAccess
         'floatingZoneImageId' => 'setFloatingZoneImageId',
         'floatingZoneName' => 'setFloatingZoneName',
         'floatingZoneDesc' => 'setFloatingZoneDesc',
-        'floatingZoneButtonText' => 'setFloatingZoneButtonText'
+        'floatingZoneButtonText' => 'setFloatingZoneButtonText',
+        'floatingZoneType' => 'setFloatingZoneType',
+        'floatingZoneSingleImageId' => 'setFloatingZoneSingleImageId'
     ];
 
     /**
@@ -135,7 +143,9 @@ class FloatingZone implements ModelInterface, ArrayAccess
         'floatingZoneImageId' => 'getFloatingZoneImageId',
         'floatingZoneName' => 'getFloatingZoneName',
         'floatingZoneDesc' => 'getFloatingZoneDesc',
-        'floatingZoneButtonText' => 'getFloatingZoneButtonText'
+        'floatingZoneButtonText' => 'getFloatingZoneButtonText',
+        'floatingZoneType' => 'getFloatingZoneType',
+        'floatingZoneSingleImageId' => 'getFloatingZoneSingleImageId'
     ];
 
     /**
@@ -203,6 +213,8 @@ class FloatingZone implements ModelInterface, ArrayAccess
         $this->container['floatingZoneName'] = isset($data['floatingZoneName']) ? $data['floatingZoneName'] : null;
         $this->container['floatingZoneDesc'] = isset($data['floatingZoneDesc']) ? $data['floatingZoneDesc'] : null;
         $this->container['floatingZoneButtonText'] = isset($data['floatingZoneButtonText']) ? $data['floatingZoneButtonText'] : null;
+        $this->container['floatingZoneType'] = isset($data['floatingZoneType']) ? $data['floatingZoneType'] : null;
+        $this->container['floatingZoneSingleImageId'] = isset($data['floatingZoneSingleImageId']) ? $data['floatingZoneSingleImageId'] : null;
     }
 
     /**
@@ -345,6 +357,54 @@ class FloatingZone implements ModelInterface, ArrayAccess
     public function setFloatingZoneButtonText($floatingZoneButtonText)
     {
         $this->container['floatingZoneButtonText'] = $floatingZoneButtonText;
+
+        return $this;
+    }
+
+    /**
+     * Gets floatingZoneType
+     *
+     * @return \TencentAds\Model\FloatingZoneType
+     */
+    public function getFloatingZoneType()
+    {
+        return $this->container['floatingZoneType'];
+    }
+
+    /**
+     * Sets floatingZoneType
+     *
+     * @param \TencentAds\Model\FloatingZoneType $floatingZoneType floatingZoneType
+     *
+     * @return $this
+     */
+    public function setFloatingZoneType($floatingZoneType)
+    {
+        $this->container['floatingZoneType'] = $floatingZoneType;
+
+        return $this;
+    }
+
+    /**
+     * Gets floatingZoneSingleImageId
+     *
+     * @return string
+     */
+    public function getFloatingZoneSingleImageId()
+    {
+        return $this->container['floatingZoneSingleImageId'];
+    }
+
+    /**
+     * Sets floatingZoneSingleImageId
+     *
+     * @param string $floatingZoneSingleImageId floatingZoneSingleImageId
+     *
+     * @return $this
+     */
+    public function setFloatingZoneSingleImageId($floatingZoneSingleImageId)
+    {
+        $this->container['floatingZoneSingleImageId'] = $floatingZoneSingleImageId;
 
         return $this;
     }
