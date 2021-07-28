@@ -76,6 +76,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'mdmName' => 'string',
         'agencyAccountId' => 'int',
         'operators' => '\TencentAds\Model\AdvertiserOperatorStruct[]',
+        'memo' => 'string',
         'accountId' => 'int',
         'adQualificationImage' => 'string[]',
         'certificationImage' => 'string',
@@ -113,6 +114,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'mdmName' => null,
         'agencyAccountId' => 'int64',
         'operators' => null,
+        'memo' => null,
         'accountId' => 'int64',
         'adQualificationImage' => null,
         'certificationImage' => null,
@@ -171,6 +173,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'mdmName' => 'mdm_name',
         'agencyAccountId' => 'agency_account_id',
         'operators' => 'operators',
+        'memo' => 'memo',
         'accountId' => 'account_id',
         'adQualificationImage' => 'ad_qualification_image',
         'certificationImage' => 'certification_image',
@@ -208,6 +211,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'mdmName' => 'setMdmName',
         'agencyAccountId' => 'setAgencyAccountId',
         'operators' => 'setOperators',
+        'memo' => 'setMemo',
         'accountId' => 'setAccountId',
         'adQualificationImage' => 'setAdQualificationImage',
         'certificationImage' => 'setCertificationImage',
@@ -245,6 +249,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'mdmName' => 'getMdmName',
         'agencyAccountId' => 'getAgencyAccountId',
         'operators' => 'getOperators',
+        'memo' => 'getMemo',
         'accountId' => 'getAccountId',
         'adQualificationImage' => 'getAdQualificationImage',
         'certificationImage' => 'getCertificationImage',
@@ -336,6 +341,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         $this->container['mdmName'] = isset($data['mdmName']) ? $data['mdmName'] : null;
         $this->container['agencyAccountId'] = isset($data['agencyAccountId']) ? $data['agencyAccountId'] : null;
         $this->container['operators'] = isset($data['operators']) ? $data['operators'] : null;
+        $this->container['memo'] = isset($data['memo']) ? $data['memo'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['adQualificationImage'] = isset($data['adQualificationImage']) ? $data['adQualificationImage'] : null;
         $this->container['certificationImage'] = isset($data['certificationImage']) ? $data['certificationImage'] : null;
@@ -801,6 +807,30 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     public function setOperators($operators)
     {
         $this->container['operators'] = $operators;
+
+        return $this;
+    }
+
+    /**
+     * Gets memo
+     *
+     * @return string
+     */
+    public function getMemo()
+    {
+        return $this->container['memo'];
+    }
+
+    /**
+     * Sets memo
+     *
+     * @param string $memo memo
+     *
+     * @return $this
+     */
+    public function setMemo($memo)
+    {
+        $this->container['memo'] = $memo;
 
         return $this;
     }
