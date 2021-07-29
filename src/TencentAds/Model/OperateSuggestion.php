@@ -48,6 +48,8 @@ class OperateSuggestion
     const OPERATION = 'OPERATE_SUGGESTION_OPERATION';
     const PAUSE = 'OPERATE_SUGGESTION_PAUSE';
     const FINE_PLAY = 'OPERATE_SUGGESTION_FINE_PLAY';
+    const SUSPEND = 'OPERATE_SUGGESTION_SUSPEND';
+    const TRAFFIC = 'OPERATE_SUGGESTION_TRAFFIC';
     
     /**
      * Gets allowable values of the enum
@@ -60,6 +62,8 @@ class OperateSuggestion
             self::OPERATION,
             self::PAUSE,
             self::FINE_PLAY,
+            self::SUSPEND,
+            self::TRAFFIC,
         ];
     }
 }

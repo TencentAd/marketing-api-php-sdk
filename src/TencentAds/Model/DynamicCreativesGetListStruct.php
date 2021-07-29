@@ -73,6 +73,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'profileId' => 'int',
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
+        'dynamicAdcreativeSpec' => '\TencentAds\Model\DynamicAdcreativeSpecForDc',
         'isDeleted' => 'bool',
         'campaignType' => '\TencentAds\Model\CampaignType',
         'impressionTrackingUrl' => 'string',
@@ -106,6 +107,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'profileId' => 'int64',
         'createdTime' => 'int64',
         'lastModifiedTime' => 'int64',
+        'dynamicAdcreativeSpec' => null,
         'isDeleted' => null,
         'campaignType' => null,
         'impressionTrackingUrl' => null,
@@ -160,6 +162,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'profileId' => 'profile_id',
         'createdTime' => 'created_time',
         'lastModifiedTime' => 'last_modified_time',
+        'dynamicAdcreativeSpec' => 'dynamic_adcreative_spec',
         'isDeleted' => 'is_deleted',
         'campaignType' => 'campaign_type',
         'impressionTrackingUrl' => 'impression_tracking_url',
@@ -193,6 +196,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'profileId' => 'setProfileId',
         'createdTime' => 'setCreatedTime',
         'lastModifiedTime' => 'setLastModifiedTime',
+        'dynamicAdcreativeSpec' => 'setDynamicAdcreativeSpec',
         'isDeleted' => 'setIsDeleted',
         'campaignType' => 'setCampaignType',
         'impressionTrackingUrl' => 'setImpressionTrackingUrl',
@@ -226,6 +230,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'profileId' => 'getProfileId',
         'createdTime' => 'getCreatedTime',
         'lastModifiedTime' => 'getLastModifiedTime',
+        'dynamicAdcreativeSpec' => 'getDynamicAdcreativeSpec',
         'isDeleted' => 'getIsDeleted',
         'campaignType' => 'getCampaignType',
         'impressionTrackingUrl' => 'getImpressionTrackingUrl',
@@ -313,6 +318,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['profileId'] = isset($data['profileId']) ? $data['profileId'] : null;
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
+        $this->container['dynamicAdcreativeSpec'] = isset($data['dynamicAdcreativeSpec']) ? $data['dynamicAdcreativeSpec'] : null;
         $this->container['isDeleted'] = isset($data['isDeleted']) ? $data['isDeleted'] : null;
         $this->container['campaignType'] = isset($data['campaignType']) ? $data['campaignType'] : null;
         $this->container['impressionTrackingUrl'] = isset($data['impressionTrackingUrl']) ? $data['impressionTrackingUrl'] : null;
@@ -705,6 +711,30 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setLastModifiedTime($lastModifiedTime)
     {
         $this->container['lastModifiedTime'] = $lastModifiedTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets dynamicAdcreativeSpec
+     *
+     * @return \TencentAds\Model\DynamicAdcreativeSpecForDc
+     */
+    public function getDynamicAdcreativeSpec()
+    {
+        return $this->container['dynamicAdcreativeSpec'];
+    }
+
+    /**
+     * Sets dynamicAdcreativeSpec
+     *
+     * @param \TencentAds\Model\DynamicAdcreativeSpecForDc $dynamicAdcreativeSpec dynamicAdcreativeSpec
+     *
+     * @return $this
+     */
+    public function setDynamicAdcreativeSpec($dynamicAdcreativeSpec)
+    {
+        $this->container['dynamicAdcreativeSpec'] = $dynamicAdcreativeSpec;
 
         return $this;
     }

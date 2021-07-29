@@ -61,6 +61,7 @@ class CompeteAttribution
     const BUDGET = 'ATTRIBUTE_BUDGET';
     const INNER_COMPETE = 'ATTRIBUTE_INNER_COMPETE';
     const PCVR = 'ATTRIBUTE_PCVR';
+    const OPT_KNOCK_OUT = 'ATTRIBUTE_OPT_KNOCK_OUT';
     
     /**
      * Gets allowable values of the enum
@@ -86,6 +87,7 @@ class CompeteAttribution
             self::BUDGET,
             self::INNER_COMPETE,
             self::PCVR,
+            self::OPT_KNOCK_OUT,
         ];
     }
 }

@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * SmartBidType Class Doc Comment
  *
  * @category Class
- * @description 出价类型， 当出价类型为SMART_BID_TYPE_SYSTEMATIC时，不可传入bid_amount，暂不支持微信流量，功能灰度开放中。
+ * @description 出价类型， 当出价类型为SMART_BID_TYPE_SYSTEMATIC时，不可传入bid_amount，暂不支持微信流量，功能灰度开放中。smart_bid_type出价类型仅支持oCPX广告使用
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
