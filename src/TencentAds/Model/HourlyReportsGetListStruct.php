@@ -95,6 +95,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'pageReservationCount' => 'int',
         'pageReservationRate' => 'double',
         'pageReservationCost' => 'int',
+        'pageReservationCostWithPeople' => 'int',
         'addToCartPrice' => 'int',
         'ownPageCouponGetCount' => 'int',
         'ownPageCouponGetCost' => 'int',
@@ -143,6 +144,13 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'appCheckoutCost' => 'int',
         'platformCouponClickCount' => 'int',
         'platformCouponGetRate' => 'double',
+        'couponUsageNumber' => 'int',
+        'couponUsageCost' => 'int',
+        'couponUsageRate' => 'double',
+        'couponPurchaseRate' => 'double',
+        'couponGetCountByPlatform' => 'int',
+        'couponGetCostByPlatform' => 'int',
+        'couponGetRate' => 'double',
         'followCount' => 'int',
         'followCost' => 'int',
         'forwardCount' => 'int',
@@ -320,6 +328,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activePageInteractionAmount' => 'int',
         'activePageInteractionUsers' => 'int',
         'joinChatGroupAmount' => 'int',
+        'joinChatGroupNumberOfPeople' => 'int',
+        'joinChatGroupCostByPeople' => 'int',
         'guideToFollowPageViews' => 'int',
         'guideToFollowPageViewers' => 'int',
         'guideToFollowPageInteractionAmount' => 'int',
@@ -387,6 +397,9 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'roiActivatedD3' => 'double',
         'roiActivatedD7' => 'double',
         'roiActivatedD14' => 'double',
+        'firstDayAdPurArppuCost' => 'int',
+        'firstDayPayAmountArpu' => 'int',
+        'firstDayPayAmountArppu' => 'int',
         'roiActivatedD30' => 'double',
         'firstDayFirstPayRate' => 'double',
         'miniGameFirstDayAdMonetizationUsers' => 'int',
@@ -403,9 +416,13 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'mixedMonetizationRoiD7' => 'double',
         'mixedMonetizationRoiD14' => 'double',
         'miniGameMixedMonetizationRoiD1' => 'double',
+        'miniGameMixedMonetizationRoiD1ByReporting' => 'double',
         'miniGameMixedMonetizationRoiD3' => 'double',
+        'miniGameMixedMonetizationRoiD3Reporting' => 'double',
         'miniGameMixedMonetizationRoiD7' => 'double',
+        'miniGameMixedMonetizationRoiD7ByReporting' => 'double',
         'miniGameMixedMonetizationRoiD14' => 'double',
+        'miniGameMixedMonetizationRoiD14ByReporting' => 'double',
         'adPayingUsersD1' => 'int',
         'adPayingCostD1' => 'int',
         'adPurArpuCostD1' => 'int',
@@ -487,7 +504,6 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'officialAccountCreditApplyUserCount' => 'int',
         'officialAccountCreditUserCount' => 'int',
         'couponGetCost' => 'int',
-        'couponGetRate' => 'double',
         'couponUseCount' => 'int',
         'forwardUserCount' => 'int',
         'videoOuterPlayUserCount' => 'int',
@@ -538,6 +554,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'pageReservationCount' => 'int64',
         'pageReservationRate' => 'double',
         'pageReservationCost' => 'int64',
+        'pageReservationCostWithPeople' => 'int64',
         'addToCartPrice' => 'int64',
         'ownPageCouponGetCount' => 'int64',
         'ownPageCouponGetCost' => 'int64',
@@ -586,6 +603,13 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'appCheckoutCost' => 'int64',
         'platformCouponClickCount' => 'int64',
         'platformCouponGetRate' => 'double',
+        'couponUsageNumber' => 'int64',
+        'couponUsageCost' => 'int64',
+        'couponUsageRate' => 'double',
+        'couponPurchaseRate' => 'double',
+        'couponGetCountByPlatform' => 'int64',
+        'couponGetCostByPlatform' => 'int64',
+        'couponGetRate' => 'double',
         'followCount' => 'int64',
         'followCost' => 'int64',
         'forwardCount' => 'int64',
@@ -763,6 +787,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activePageInteractionAmount' => 'int64',
         'activePageInteractionUsers' => 'int64',
         'joinChatGroupAmount' => 'int64',
+        'joinChatGroupNumberOfPeople' => 'int64',
+        'joinChatGroupCostByPeople' => 'int64',
         'guideToFollowPageViews' => 'int64',
         'guideToFollowPageViewers' => 'int64',
         'guideToFollowPageInteractionAmount' => 'int64',
@@ -830,6 +856,9 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'roiActivatedD3' => 'double',
         'roiActivatedD7' => 'double',
         'roiActivatedD14' => 'double',
+        'firstDayAdPurArppuCost' => 'int64',
+        'firstDayPayAmountArpu' => 'int64',
+        'firstDayPayAmountArppu' => 'int64',
         'roiActivatedD30' => 'double',
         'firstDayFirstPayRate' => 'double',
         'miniGameFirstDayAdMonetizationUsers' => 'int64',
@@ -846,9 +875,13 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'mixedMonetizationRoiD7' => 'double',
         'mixedMonetizationRoiD14' => 'double',
         'miniGameMixedMonetizationRoiD1' => 'double',
+        'miniGameMixedMonetizationRoiD1ByReporting' => 'double',
         'miniGameMixedMonetizationRoiD3' => 'double',
+        'miniGameMixedMonetizationRoiD3Reporting' => 'double',
         'miniGameMixedMonetizationRoiD7' => 'double',
+        'miniGameMixedMonetizationRoiD7ByReporting' => 'double',
         'miniGameMixedMonetizationRoiD14' => 'double',
+        'miniGameMixedMonetizationRoiD14ByReporting' => 'double',
         'adPayingUsersD1' => 'int64',
         'adPayingCostD1' => 'int64',
         'adPurArpuCostD1' => 'int64',
@@ -930,7 +963,6 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'officialAccountCreditApplyUserCount' => 'int64',
         'officialAccountCreditUserCount' => 'int64',
         'couponGetCost' => 'int64',
-        'couponGetRate' => 'double',
         'couponUseCount' => 'int64',
         'forwardUserCount' => 'int64',
         'videoOuterPlayUserCount' => 'int64',
@@ -1002,6 +1034,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'pageReservationCount' => 'page_reservation_count',
         'pageReservationRate' => 'page_reservation_rate',
         'pageReservationCost' => 'page_reservation_cost',
+        'pageReservationCostWithPeople' => 'page_reservation_cost_with_people',
         'addToCartPrice' => 'add_to_cart_price',
         'ownPageCouponGetCount' => 'own_page_coupon_get_count',
         'ownPageCouponGetCost' => 'own_page_coupon_get_cost',
@@ -1050,6 +1083,13 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'appCheckoutCost' => 'app_checkout_cost',
         'platformCouponClickCount' => 'platform_coupon_click_count',
         'platformCouponGetRate' => 'platform_coupon_get_rate',
+        'couponUsageNumber' => 'coupon_usage_number',
+        'couponUsageCost' => 'coupon_usage_cost',
+        'couponUsageRate' => 'coupon_usage_rate',
+        'couponPurchaseRate' => 'coupon_purchase_rate',
+        'couponGetCountByPlatform' => 'coupon_get_count_by_platform',
+        'couponGetCostByPlatform' => 'coupon_get_cost_by_platform',
+        'couponGetRate' => 'coupon_get_rate',
         'followCount' => 'follow_count',
         'followCost' => 'follow_cost',
         'forwardCount' => 'forward_count',
@@ -1227,6 +1267,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activePageInteractionAmount' => 'active_page_interaction_amount',
         'activePageInteractionUsers' => 'active_page_interaction_users',
         'joinChatGroupAmount' => 'join_chat_group_amount',
+        'joinChatGroupNumberOfPeople' => 'join_chat_group_number_of_people',
+        'joinChatGroupCostByPeople' => 'join_chat_group_cost_by_people',
         'guideToFollowPageViews' => 'guide_to_follow_page_views',
         'guideToFollowPageViewers' => 'guide_to_follow_page_viewers',
         'guideToFollowPageInteractionAmount' => 'guide_to_follow_page_interaction_amount',
@@ -1294,6 +1336,9 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'roiActivatedD3' => 'roi_activated_d3',
         'roiActivatedD7' => 'roi_activated_d7',
         'roiActivatedD14' => 'roi_activated_d14',
+        'firstDayAdPurArppuCost' => 'first_day_ad_pur_arppu_cost',
+        'firstDayPayAmountArpu' => 'first_day_pay_amount_arpu',
+        'firstDayPayAmountArppu' => 'first_day_pay_amount_arppu',
         'roiActivatedD30' => 'roi_activated_d30',
         'firstDayFirstPayRate' => 'first_day_first_pay_rate',
         'miniGameFirstDayAdMonetizationUsers' => 'mini_game_first_day_ad_monetization_users',
@@ -1310,9 +1355,13 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'mixedMonetizationRoiD7' => 'mixed_monetization_roi_d7',
         'mixedMonetizationRoiD14' => 'mixed_monetization_roi_d14',
         'miniGameMixedMonetizationRoiD1' => 'mini_game_mixed_monetization_roi_d1',
+        'miniGameMixedMonetizationRoiD1ByReporting' => 'mini_game_mixed_monetization_roi_d1_by_reporting',
         'miniGameMixedMonetizationRoiD3' => 'mini_game_mixed_monetization_roi_d3',
+        'miniGameMixedMonetizationRoiD3Reporting' => 'mini_game_mixed_monetization_roi_d3_reporting',
         'miniGameMixedMonetizationRoiD7' => 'mini_game_mixed_monetization_roi_d7',
+        'miniGameMixedMonetizationRoiD7ByReporting' => 'mini_game_mixed_monetization_roi_d7_by_reporting',
         'miniGameMixedMonetizationRoiD14' => 'mini_game_mixed_monetization_roi_d14',
+        'miniGameMixedMonetizationRoiD14ByReporting' => 'mini_game_mixed_monetization_roi_d14_by_reporting',
         'adPayingUsersD1' => 'ad_paying_users_d1',
         'adPayingCostD1' => 'ad_paying_cost_d1',
         'adPurArpuCostD1' => 'ad_pur_arpu_cost_d1',
@@ -1394,7 +1443,6 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'officialAccountCreditApplyUserCount' => 'official_account_credit_apply_user_count',
         'officialAccountCreditUserCount' => 'official_account_credit_user_count',
         'couponGetCost' => 'coupon_get_cost',
-        'couponGetRate' => 'coupon_get_rate',
         'couponUseCount' => 'coupon_use_count',
         'forwardUserCount' => 'forward_user_count',
         'videoOuterPlayUserCount' => 'video_outer_play_user_count',
@@ -1445,6 +1493,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'pageReservationCount' => 'setPageReservationCount',
         'pageReservationRate' => 'setPageReservationRate',
         'pageReservationCost' => 'setPageReservationCost',
+        'pageReservationCostWithPeople' => 'setPageReservationCostWithPeople',
         'addToCartPrice' => 'setAddToCartPrice',
         'ownPageCouponGetCount' => 'setOwnPageCouponGetCount',
         'ownPageCouponGetCost' => 'setOwnPageCouponGetCost',
@@ -1493,6 +1542,13 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'appCheckoutCost' => 'setAppCheckoutCost',
         'platformCouponClickCount' => 'setPlatformCouponClickCount',
         'platformCouponGetRate' => 'setPlatformCouponGetRate',
+        'couponUsageNumber' => 'setCouponUsageNumber',
+        'couponUsageCost' => 'setCouponUsageCost',
+        'couponUsageRate' => 'setCouponUsageRate',
+        'couponPurchaseRate' => 'setCouponPurchaseRate',
+        'couponGetCountByPlatform' => 'setCouponGetCountByPlatform',
+        'couponGetCostByPlatform' => 'setCouponGetCostByPlatform',
+        'couponGetRate' => 'setCouponGetRate',
         'followCount' => 'setFollowCount',
         'followCost' => 'setFollowCost',
         'forwardCount' => 'setForwardCount',
@@ -1670,6 +1726,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activePageInteractionAmount' => 'setActivePageInteractionAmount',
         'activePageInteractionUsers' => 'setActivePageInteractionUsers',
         'joinChatGroupAmount' => 'setJoinChatGroupAmount',
+        'joinChatGroupNumberOfPeople' => 'setJoinChatGroupNumberOfPeople',
+        'joinChatGroupCostByPeople' => 'setJoinChatGroupCostByPeople',
         'guideToFollowPageViews' => 'setGuideToFollowPageViews',
         'guideToFollowPageViewers' => 'setGuideToFollowPageViewers',
         'guideToFollowPageInteractionAmount' => 'setGuideToFollowPageInteractionAmount',
@@ -1737,6 +1795,9 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'roiActivatedD3' => 'setRoiActivatedD3',
         'roiActivatedD7' => 'setRoiActivatedD7',
         'roiActivatedD14' => 'setRoiActivatedD14',
+        'firstDayAdPurArppuCost' => 'setFirstDayAdPurArppuCost',
+        'firstDayPayAmountArpu' => 'setFirstDayPayAmountArpu',
+        'firstDayPayAmountArppu' => 'setFirstDayPayAmountArppu',
         'roiActivatedD30' => 'setRoiActivatedD30',
         'firstDayFirstPayRate' => 'setFirstDayFirstPayRate',
         'miniGameFirstDayAdMonetizationUsers' => 'setMiniGameFirstDayAdMonetizationUsers',
@@ -1753,9 +1814,13 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'mixedMonetizationRoiD7' => 'setMixedMonetizationRoiD7',
         'mixedMonetizationRoiD14' => 'setMixedMonetizationRoiD14',
         'miniGameMixedMonetizationRoiD1' => 'setMiniGameMixedMonetizationRoiD1',
+        'miniGameMixedMonetizationRoiD1ByReporting' => 'setMiniGameMixedMonetizationRoiD1ByReporting',
         'miniGameMixedMonetizationRoiD3' => 'setMiniGameMixedMonetizationRoiD3',
+        'miniGameMixedMonetizationRoiD3Reporting' => 'setMiniGameMixedMonetizationRoiD3Reporting',
         'miniGameMixedMonetizationRoiD7' => 'setMiniGameMixedMonetizationRoiD7',
+        'miniGameMixedMonetizationRoiD7ByReporting' => 'setMiniGameMixedMonetizationRoiD7ByReporting',
         'miniGameMixedMonetizationRoiD14' => 'setMiniGameMixedMonetizationRoiD14',
+        'miniGameMixedMonetizationRoiD14ByReporting' => 'setMiniGameMixedMonetizationRoiD14ByReporting',
         'adPayingUsersD1' => 'setAdPayingUsersD1',
         'adPayingCostD1' => 'setAdPayingCostD1',
         'adPurArpuCostD1' => 'setAdPurArpuCostD1',
@@ -1837,7 +1902,6 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'officialAccountCreditApplyUserCount' => 'setOfficialAccountCreditApplyUserCount',
         'officialAccountCreditUserCount' => 'setOfficialAccountCreditUserCount',
         'couponGetCost' => 'setCouponGetCost',
-        'couponGetRate' => 'setCouponGetRate',
         'couponUseCount' => 'setCouponUseCount',
         'forwardUserCount' => 'setForwardUserCount',
         'videoOuterPlayUserCount' => 'setVideoOuterPlayUserCount',
@@ -1888,6 +1952,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'pageReservationCount' => 'getPageReservationCount',
         'pageReservationRate' => 'getPageReservationRate',
         'pageReservationCost' => 'getPageReservationCost',
+        'pageReservationCostWithPeople' => 'getPageReservationCostWithPeople',
         'addToCartPrice' => 'getAddToCartPrice',
         'ownPageCouponGetCount' => 'getOwnPageCouponGetCount',
         'ownPageCouponGetCost' => 'getOwnPageCouponGetCost',
@@ -1936,6 +2001,13 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'appCheckoutCost' => 'getAppCheckoutCost',
         'platformCouponClickCount' => 'getPlatformCouponClickCount',
         'platformCouponGetRate' => 'getPlatformCouponGetRate',
+        'couponUsageNumber' => 'getCouponUsageNumber',
+        'couponUsageCost' => 'getCouponUsageCost',
+        'couponUsageRate' => 'getCouponUsageRate',
+        'couponPurchaseRate' => 'getCouponPurchaseRate',
+        'couponGetCountByPlatform' => 'getCouponGetCountByPlatform',
+        'couponGetCostByPlatform' => 'getCouponGetCostByPlatform',
+        'couponGetRate' => 'getCouponGetRate',
         'followCount' => 'getFollowCount',
         'followCost' => 'getFollowCost',
         'forwardCount' => 'getForwardCount',
@@ -2113,6 +2185,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activePageInteractionAmount' => 'getActivePageInteractionAmount',
         'activePageInteractionUsers' => 'getActivePageInteractionUsers',
         'joinChatGroupAmount' => 'getJoinChatGroupAmount',
+        'joinChatGroupNumberOfPeople' => 'getJoinChatGroupNumberOfPeople',
+        'joinChatGroupCostByPeople' => 'getJoinChatGroupCostByPeople',
         'guideToFollowPageViews' => 'getGuideToFollowPageViews',
         'guideToFollowPageViewers' => 'getGuideToFollowPageViewers',
         'guideToFollowPageInteractionAmount' => 'getGuideToFollowPageInteractionAmount',
@@ -2180,6 +2254,9 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'roiActivatedD3' => 'getRoiActivatedD3',
         'roiActivatedD7' => 'getRoiActivatedD7',
         'roiActivatedD14' => 'getRoiActivatedD14',
+        'firstDayAdPurArppuCost' => 'getFirstDayAdPurArppuCost',
+        'firstDayPayAmountArpu' => 'getFirstDayPayAmountArpu',
+        'firstDayPayAmountArppu' => 'getFirstDayPayAmountArppu',
         'roiActivatedD30' => 'getRoiActivatedD30',
         'firstDayFirstPayRate' => 'getFirstDayFirstPayRate',
         'miniGameFirstDayAdMonetizationUsers' => 'getMiniGameFirstDayAdMonetizationUsers',
@@ -2196,9 +2273,13 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'mixedMonetizationRoiD7' => 'getMixedMonetizationRoiD7',
         'mixedMonetizationRoiD14' => 'getMixedMonetizationRoiD14',
         'miniGameMixedMonetizationRoiD1' => 'getMiniGameMixedMonetizationRoiD1',
+        'miniGameMixedMonetizationRoiD1ByReporting' => 'getMiniGameMixedMonetizationRoiD1ByReporting',
         'miniGameMixedMonetizationRoiD3' => 'getMiniGameMixedMonetizationRoiD3',
+        'miniGameMixedMonetizationRoiD3Reporting' => 'getMiniGameMixedMonetizationRoiD3Reporting',
         'miniGameMixedMonetizationRoiD7' => 'getMiniGameMixedMonetizationRoiD7',
+        'miniGameMixedMonetizationRoiD7ByReporting' => 'getMiniGameMixedMonetizationRoiD7ByReporting',
         'miniGameMixedMonetizationRoiD14' => 'getMiniGameMixedMonetizationRoiD14',
+        'miniGameMixedMonetizationRoiD14ByReporting' => 'getMiniGameMixedMonetizationRoiD14ByReporting',
         'adPayingUsersD1' => 'getAdPayingUsersD1',
         'adPayingCostD1' => 'getAdPayingCostD1',
         'adPurArpuCostD1' => 'getAdPurArpuCostD1',
@@ -2280,7 +2361,6 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'officialAccountCreditApplyUserCount' => 'getOfficialAccountCreditApplyUserCount',
         'officialAccountCreditUserCount' => 'getOfficialAccountCreditUserCount',
         'couponGetCost' => 'getCouponGetCost',
-        'couponGetRate' => 'getCouponGetRate',
         'couponUseCount' => 'getCouponUseCount',
         'forwardUserCount' => 'getForwardUserCount',
         'videoOuterPlayUserCount' => 'getVideoOuterPlayUserCount',
@@ -2385,6 +2465,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['pageReservationCount'] = isset($data['pageReservationCount']) ? $data['pageReservationCount'] : null;
         $this->container['pageReservationRate'] = isset($data['pageReservationRate']) ? $data['pageReservationRate'] : null;
         $this->container['pageReservationCost'] = isset($data['pageReservationCost']) ? $data['pageReservationCost'] : null;
+        $this->container['pageReservationCostWithPeople'] = isset($data['pageReservationCostWithPeople']) ? $data['pageReservationCostWithPeople'] : null;
         $this->container['addToCartPrice'] = isset($data['addToCartPrice']) ? $data['addToCartPrice'] : null;
         $this->container['ownPageCouponGetCount'] = isset($data['ownPageCouponGetCount']) ? $data['ownPageCouponGetCount'] : null;
         $this->container['ownPageCouponGetCost'] = isset($data['ownPageCouponGetCost']) ? $data['ownPageCouponGetCost'] : null;
@@ -2433,6 +2514,13 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['appCheckoutCost'] = isset($data['appCheckoutCost']) ? $data['appCheckoutCost'] : null;
         $this->container['platformCouponClickCount'] = isset($data['platformCouponClickCount']) ? $data['platformCouponClickCount'] : null;
         $this->container['platformCouponGetRate'] = isset($data['platformCouponGetRate']) ? $data['platformCouponGetRate'] : null;
+        $this->container['couponUsageNumber'] = isset($data['couponUsageNumber']) ? $data['couponUsageNumber'] : null;
+        $this->container['couponUsageCost'] = isset($data['couponUsageCost']) ? $data['couponUsageCost'] : null;
+        $this->container['couponUsageRate'] = isset($data['couponUsageRate']) ? $data['couponUsageRate'] : null;
+        $this->container['couponPurchaseRate'] = isset($data['couponPurchaseRate']) ? $data['couponPurchaseRate'] : null;
+        $this->container['couponGetCountByPlatform'] = isset($data['couponGetCountByPlatform']) ? $data['couponGetCountByPlatform'] : null;
+        $this->container['couponGetCostByPlatform'] = isset($data['couponGetCostByPlatform']) ? $data['couponGetCostByPlatform'] : null;
+        $this->container['couponGetRate'] = isset($data['couponGetRate']) ? $data['couponGetRate'] : null;
         $this->container['followCount'] = isset($data['followCount']) ? $data['followCount'] : null;
         $this->container['followCost'] = isset($data['followCost']) ? $data['followCost'] : null;
         $this->container['forwardCount'] = isset($data['forwardCount']) ? $data['forwardCount'] : null;
@@ -2610,6 +2698,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['activePageInteractionAmount'] = isset($data['activePageInteractionAmount']) ? $data['activePageInteractionAmount'] : null;
         $this->container['activePageInteractionUsers'] = isset($data['activePageInteractionUsers']) ? $data['activePageInteractionUsers'] : null;
         $this->container['joinChatGroupAmount'] = isset($data['joinChatGroupAmount']) ? $data['joinChatGroupAmount'] : null;
+        $this->container['joinChatGroupNumberOfPeople'] = isset($data['joinChatGroupNumberOfPeople']) ? $data['joinChatGroupNumberOfPeople'] : null;
+        $this->container['joinChatGroupCostByPeople'] = isset($data['joinChatGroupCostByPeople']) ? $data['joinChatGroupCostByPeople'] : null;
         $this->container['guideToFollowPageViews'] = isset($data['guideToFollowPageViews']) ? $data['guideToFollowPageViews'] : null;
         $this->container['guideToFollowPageViewers'] = isset($data['guideToFollowPageViewers']) ? $data['guideToFollowPageViewers'] : null;
         $this->container['guideToFollowPageInteractionAmount'] = isset($data['guideToFollowPageInteractionAmount']) ? $data['guideToFollowPageInteractionAmount'] : null;
@@ -2677,6 +2767,9 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['roiActivatedD3'] = isset($data['roiActivatedD3']) ? $data['roiActivatedD3'] : null;
         $this->container['roiActivatedD7'] = isset($data['roiActivatedD7']) ? $data['roiActivatedD7'] : null;
         $this->container['roiActivatedD14'] = isset($data['roiActivatedD14']) ? $data['roiActivatedD14'] : null;
+        $this->container['firstDayAdPurArppuCost'] = isset($data['firstDayAdPurArppuCost']) ? $data['firstDayAdPurArppuCost'] : null;
+        $this->container['firstDayPayAmountArpu'] = isset($data['firstDayPayAmountArpu']) ? $data['firstDayPayAmountArpu'] : null;
+        $this->container['firstDayPayAmountArppu'] = isset($data['firstDayPayAmountArppu']) ? $data['firstDayPayAmountArppu'] : null;
         $this->container['roiActivatedD30'] = isset($data['roiActivatedD30']) ? $data['roiActivatedD30'] : null;
         $this->container['firstDayFirstPayRate'] = isset($data['firstDayFirstPayRate']) ? $data['firstDayFirstPayRate'] : null;
         $this->container['miniGameFirstDayAdMonetizationUsers'] = isset($data['miniGameFirstDayAdMonetizationUsers']) ? $data['miniGameFirstDayAdMonetizationUsers'] : null;
@@ -2693,9 +2786,13 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['mixedMonetizationRoiD7'] = isset($data['mixedMonetizationRoiD7']) ? $data['mixedMonetizationRoiD7'] : null;
         $this->container['mixedMonetizationRoiD14'] = isset($data['mixedMonetizationRoiD14']) ? $data['mixedMonetizationRoiD14'] : null;
         $this->container['miniGameMixedMonetizationRoiD1'] = isset($data['miniGameMixedMonetizationRoiD1']) ? $data['miniGameMixedMonetizationRoiD1'] : null;
+        $this->container['miniGameMixedMonetizationRoiD1ByReporting'] = isset($data['miniGameMixedMonetizationRoiD1ByReporting']) ? $data['miniGameMixedMonetizationRoiD1ByReporting'] : null;
         $this->container['miniGameMixedMonetizationRoiD3'] = isset($data['miniGameMixedMonetizationRoiD3']) ? $data['miniGameMixedMonetizationRoiD3'] : null;
+        $this->container['miniGameMixedMonetizationRoiD3Reporting'] = isset($data['miniGameMixedMonetizationRoiD3Reporting']) ? $data['miniGameMixedMonetizationRoiD3Reporting'] : null;
         $this->container['miniGameMixedMonetizationRoiD7'] = isset($data['miniGameMixedMonetizationRoiD7']) ? $data['miniGameMixedMonetizationRoiD7'] : null;
+        $this->container['miniGameMixedMonetizationRoiD7ByReporting'] = isset($data['miniGameMixedMonetizationRoiD7ByReporting']) ? $data['miniGameMixedMonetizationRoiD7ByReporting'] : null;
         $this->container['miniGameMixedMonetizationRoiD14'] = isset($data['miniGameMixedMonetizationRoiD14']) ? $data['miniGameMixedMonetizationRoiD14'] : null;
+        $this->container['miniGameMixedMonetizationRoiD14ByReporting'] = isset($data['miniGameMixedMonetizationRoiD14ByReporting']) ? $data['miniGameMixedMonetizationRoiD14ByReporting'] : null;
         $this->container['adPayingUsersD1'] = isset($data['adPayingUsersD1']) ? $data['adPayingUsersD1'] : null;
         $this->container['adPayingCostD1'] = isset($data['adPayingCostD1']) ? $data['adPayingCostD1'] : null;
         $this->container['adPurArpuCostD1'] = isset($data['adPurArpuCostD1']) ? $data['adPurArpuCostD1'] : null;
@@ -2777,7 +2874,6 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['officialAccountCreditApplyUserCount'] = isset($data['officialAccountCreditApplyUserCount']) ? $data['officialAccountCreditApplyUserCount'] : null;
         $this->container['officialAccountCreditUserCount'] = isset($data['officialAccountCreditUserCount']) ? $data['officialAccountCreditUserCount'] : null;
         $this->container['couponGetCost'] = isset($data['couponGetCost']) ? $data['couponGetCost'] : null;
-        $this->container['couponGetRate'] = isset($data['couponGetRate']) ? $data['couponGetRate'] : null;
         $this->container['couponUseCount'] = isset($data['couponUseCount']) ? $data['couponUseCount'] : null;
         $this->container['forwardUserCount'] = isset($data['forwardUserCount']) ? $data['forwardUserCount'] : null;
         $this->container['videoOuterPlayUserCount'] = isset($data['videoOuterPlayUserCount']) ? $data['videoOuterPlayUserCount'] : null;
@@ -3693,6 +3789,30 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setPageReservationCost($pageReservationCost)
     {
         $this->container['pageReservationCost'] = $pageReservationCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageReservationCostWithPeople
+     *
+     * @return int
+     */
+    public function getPageReservationCostWithPeople()
+    {
+        return $this->container['pageReservationCostWithPeople'];
+    }
+
+    /**
+     * Sets pageReservationCostWithPeople
+     *
+     * @param int $pageReservationCostWithPeople pageReservationCostWithPeople
+     *
+     * @return $this
+     */
+    public function setPageReservationCostWithPeople($pageReservationCostWithPeople)
+    {
+        $this->container['pageReservationCostWithPeople'] = $pageReservationCostWithPeople;
 
         return $this;
     }
@@ -4845,6 +4965,174 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setPlatformCouponGetRate($platformCouponGetRate)
     {
         $this->container['platformCouponGetRate'] = $platformCouponGetRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets couponUsageNumber
+     *
+     * @return int
+     */
+    public function getCouponUsageNumber()
+    {
+        return $this->container['couponUsageNumber'];
+    }
+
+    /**
+     * Sets couponUsageNumber
+     *
+     * @param int $couponUsageNumber couponUsageNumber
+     *
+     * @return $this
+     */
+    public function setCouponUsageNumber($couponUsageNumber)
+    {
+        $this->container['couponUsageNumber'] = $couponUsageNumber;
+
+        return $this;
+    }
+
+    /**
+     * Gets couponUsageCost
+     *
+     * @return int
+     */
+    public function getCouponUsageCost()
+    {
+        return $this->container['couponUsageCost'];
+    }
+
+    /**
+     * Sets couponUsageCost
+     *
+     * @param int $couponUsageCost couponUsageCost
+     *
+     * @return $this
+     */
+    public function setCouponUsageCost($couponUsageCost)
+    {
+        $this->container['couponUsageCost'] = $couponUsageCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets couponUsageRate
+     *
+     * @return double
+     */
+    public function getCouponUsageRate()
+    {
+        return $this->container['couponUsageRate'];
+    }
+
+    /**
+     * Sets couponUsageRate
+     *
+     * @param double $couponUsageRate couponUsageRate
+     *
+     * @return $this
+     */
+    public function setCouponUsageRate($couponUsageRate)
+    {
+        $this->container['couponUsageRate'] = $couponUsageRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets couponPurchaseRate
+     *
+     * @return double
+     */
+    public function getCouponPurchaseRate()
+    {
+        return $this->container['couponPurchaseRate'];
+    }
+
+    /**
+     * Sets couponPurchaseRate
+     *
+     * @param double $couponPurchaseRate couponPurchaseRate
+     *
+     * @return $this
+     */
+    public function setCouponPurchaseRate($couponPurchaseRate)
+    {
+        $this->container['couponPurchaseRate'] = $couponPurchaseRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets couponGetCountByPlatform
+     *
+     * @return int
+     */
+    public function getCouponGetCountByPlatform()
+    {
+        return $this->container['couponGetCountByPlatform'];
+    }
+
+    /**
+     * Sets couponGetCountByPlatform
+     *
+     * @param int $couponGetCountByPlatform couponGetCountByPlatform
+     *
+     * @return $this
+     */
+    public function setCouponGetCountByPlatform($couponGetCountByPlatform)
+    {
+        $this->container['couponGetCountByPlatform'] = $couponGetCountByPlatform;
+
+        return $this;
+    }
+
+    /**
+     * Gets couponGetCostByPlatform
+     *
+     * @return int
+     */
+    public function getCouponGetCostByPlatform()
+    {
+        return $this->container['couponGetCostByPlatform'];
+    }
+
+    /**
+     * Sets couponGetCostByPlatform
+     *
+     * @param int $couponGetCostByPlatform couponGetCostByPlatform
+     *
+     * @return $this
+     */
+    public function setCouponGetCostByPlatform($couponGetCostByPlatform)
+    {
+        $this->container['couponGetCostByPlatform'] = $couponGetCostByPlatform;
+
+        return $this;
+    }
+
+    /**
+     * Gets couponGetRate
+     *
+     * @return double
+     */
+    public function getCouponGetRate()
+    {
+        return $this->container['couponGetRate'];
+    }
+
+    /**
+     * Sets couponGetRate
+     *
+     * @param double $couponGetRate couponGetRate
+     *
+     * @return $this
+     */
+    public function setCouponGetRate($couponGetRate)
+    {
+        $this->container['couponGetRate'] = $couponGetRate;
 
         return $this;
     }
@@ -9098,6 +9386,54 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets joinChatGroupNumberOfPeople
+     *
+     * @return int
+     */
+    public function getJoinChatGroupNumberOfPeople()
+    {
+        return $this->container['joinChatGroupNumberOfPeople'];
+    }
+
+    /**
+     * Sets joinChatGroupNumberOfPeople
+     *
+     * @param int $joinChatGroupNumberOfPeople joinChatGroupNumberOfPeople
+     *
+     * @return $this
+     */
+    public function setJoinChatGroupNumberOfPeople($joinChatGroupNumberOfPeople)
+    {
+        $this->container['joinChatGroupNumberOfPeople'] = $joinChatGroupNumberOfPeople;
+
+        return $this;
+    }
+
+    /**
+     * Gets joinChatGroupCostByPeople
+     *
+     * @return int
+     */
+    public function getJoinChatGroupCostByPeople()
+    {
+        return $this->container['joinChatGroupCostByPeople'];
+    }
+
+    /**
+     * Sets joinChatGroupCostByPeople
+     *
+     * @param int $joinChatGroupCostByPeople joinChatGroupCostByPeople
+     *
+     * @return $this
+     */
+    public function setJoinChatGroupCostByPeople($joinChatGroupCostByPeople)
+    {
+        $this->container['joinChatGroupCostByPeople'] = $joinChatGroupCostByPeople;
+
+        return $this;
+    }
+
+    /**
      * Gets guideToFollowPageViews
      *
      * @return int
@@ -10706,6 +11042,78 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets firstDayAdPurArppuCost
+     *
+     * @return int
+     */
+    public function getFirstDayAdPurArppuCost()
+    {
+        return $this->container['firstDayAdPurArppuCost'];
+    }
+
+    /**
+     * Sets firstDayAdPurArppuCost
+     *
+     * @param int $firstDayAdPurArppuCost firstDayAdPurArppuCost
+     *
+     * @return $this
+     */
+    public function setFirstDayAdPurArppuCost($firstDayAdPurArppuCost)
+    {
+        $this->container['firstDayAdPurArppuCost'] = $firstDayAdPurArppuCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstDayPayAmountArpu
+     *
+     * @return int
+     */
+    public function getFirstDayPayAmountArpu()
+    {
+        return $this->container['firstDayPayAmountArpu'];
+    }
+
+    /**
+     * Sets firstDayPayAmountArpu
+     *
+     * @param int $firstDayPayAmountArpu firstDayPayAmountArpu
+     *
+     * @return $this
+     */
+    public function setFirstDayPayAmountArpu($firstDayPayAmountArpu)
+    {
+        $this->container['firstDayPayAmountArpu'] = $firstDayPayAmountArpu;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstDayPayAmountArppu
+     *
+     * @return int
+     */
+    public function getFirstDayPayAmountArppu()
+    {
+        return $this->container['firstDayPayAmountArppu'];
+    }
+
+    /**
+     * Sets firstDayPayAmountArppu
+     *
+     * @param int $firstDayPayAmountArppu firstDayPayAmountArppu
+     *
+     * @return $this
+     */
+    public function setFirstDayPayAmountArppu($firstDayPayAmountArppu)
+    {
+        $this->container['firstDayPayAmountArppu'] = $firstDayPayAmountArppu;
+
+        return $this;
+    }
+
+    /**
      * Gets roiActivatedD30
      *
      * @return double
@@ -11090,6 +11498,30 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets miniGameMixedMonetizationRoiD1ByReporting
+     *
+     * @return double
+     */
+    public function getMiniGameMixedMonetizationRoiD1ByReporting()
+    {
+        return $this->container['miniGameMixedMonetizationRoiD1ByReporting'];
+    }
+
+    /**
+     * Sets miniGameMixedMonetizationRoiD1ByReporting
+     *
+     * @param double $miniGameMixedMonetizationRoiD1ByReporting miniGameMixedMonetizationRoiD1ByReporting
+     *
+     * @return $this
+     */
+    public function setMiniGameMixedMonetizationRoiD1ByReporting($miniGameMixedMonetizationRoiD1ByReporting)
+    {
+        $this->container['miniGameMixedMonetizationRoiD1ByReporting'] = $miniGameMixedMonetizationRoiD1ByReporting;
+
+        return $this;
+    }
+
+    /**
      * Gets miniGameMixedMonetizationRoiD3
      *
      * @return double
@@ -11109,6 +11541,30 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setMiniGameMixedMonetizationRoiD3($miniGameMixedMonetizationRoiD3)
     {
         $this->container['miniGameMixedMonetizationRoiD3'] = $miniGameMixedMonetizationRoiD3;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameMixedMonetizationRoiD3Reporting
+     *
+     * @return double
+     */
+    public function getMiniGameMixedMonetizationRoiD3Reporting()
+    {
+        return $this->container['miniGameMixedMonetizationRoiD3Reporting'];
+    }
+
+    /**
+     * Sets miniGameMixedMonetizationRoiD3Reporting
+     *
+     * @param double $miniGameMixedMonetizationRoiD3Reporting miniGameMixedMonetizationRoiD3Reporting
+     *
+     * @return $this
+     */
+    public function setMiniGameMixedMonetizationRoiD3Reporting($miniGameMixedMonetizationRoiD3Reporting)
+    {
+        $this->container['miniGameMixedMonetizationRoiD3Reporting'] = $miniGameMixedMonetizationRoiD3Reporting;
 
         return $this;
     }
@@ -11138,6 +11594,30 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets miniGameMixedMonetizationRoiD7ByReporting
+     *
+     * @return double
+     */
+    public function getMiniGameMixedMonetizationRoiD7ByReporting()
+    {
+        return $this->container['miniGameMixedMonetizationRoiD7ByReporting'];
+    }
+
+    /**
+     * Sets miniGameMixedMonetizationRoiD7ByReporting
+     *
+     * @param double $miniGameMixedMonetizationRoiD7ByReporting miniGameMixedMonetizationRoiD7ByReporting
+     *
+     * @return $this
+     */
+    public function setMiniGameMixedMonetizationRoiD7ByReporting($miniGameMixedMonetizationRoiD7ByReporting)
+    {
+        $this->container['miniGameMixedMonetizationRoiD7ByReporting'] = $miniGameMixedMonetizationRoiD7ByReporting;
+
+        return $this;
+    }
+
+    /**
      * Gets miniGameMixedMonetizationRoiD14
      *
      * @return double
@@ -11157,6 +11637,30 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setMiniGameMixedMonetizationRoiD14($miniGameMixedMonetizationRoiD14)
     {
         $this->container['miniGameMixedMonetizationRoiD14'] = $miniGameMixedMonetizationRoiD14;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameMixedMonetizationRoiD14ByReporting
+     *
+     * @return double
+     */
+    public function getMiniGameMixedMonetizationRoiD14ByReporting()
+    {
+        return $this->container['miniGameMixedMonetizationRoiD14ByReporting'];
+    }
+
+    /**
+     * Sets miniGameMixedMonetizationRoiD14ByReporting
+     *
+     * @param double $miniGameMixedMonetizationRoiD14ByReporting miniGameMixedMonetizationRoiD14ByReporting
+     *
+     * @return $this
+     */
+    public function setMiniGameMixedMonetizationRoiD14ByReporting($miniGameMixedMonetizationRoiD14ByReporting)
+    {
+        $this->container['miniGameMixedMonetizationRoiD14ByReporting'] = $miniGameMixedMonetizationRoiD14ByReporting;
 
         return $this;
     }
@@ -13101,30 +13605,6 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setCouponGetCost($couponGetCost)
     {
         $this->container['couponGetCost'] = $couponGetCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets couponGetRate
-     *
-     * @return double
-     */
-    public function getCouponGetRate()
-    {
-        return $this->container['couponGetRate'];
-    }
-
-    /**
-     * Sets couponGetRate
-     *
-     * @param double $couponGetRate couponGetRate
-     *
-     * @return $this
-     */
-    public function setCouponGetRate($couponGetRate)
-    {
-        $this->container['couponGetRate'] = $couponGetRate;
 
         return $this;
     }
