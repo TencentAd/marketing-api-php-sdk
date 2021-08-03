@@ -150,9 +150,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'couponUsageCost' => 'int',
         'couponUsageRate' => 'double',
         'couponPurchaseRate' => 'double',
-        'couponGetCountByPlatform' => 'int',
-        'couponGetCostByPlatform' => 'int',
-        'couponGetRate' => 'double',
         'followCount' => 'int',
         'followCost' => 'int',
         'forwardCount' => 'int',
@@ -420,7 +417,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameMixedMonetizationRoiD1' => 'double',
         'miniGameMixedMonetizationRoiD1ByReporting' => 'double',
         'miniGameMixedMonetizationRoiD3' => 'double',
-        'miniGameMixedMonetizationRoiD3Reporting' => 'double',
+        'miniGameMixedMonetizationRoiD3ByReporting' => 'double',
         'miniGameMixedMonetizationRoiD7' => 'double',
         'miniGameMixedMonetizationRoiD7ByReporting' => 'double',
         'miniGameMixedMonetizationRoiD14' => 'double',
@@ -523,6 +520,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'officialAccountCreditApplyUserCount' => 'int',
         'officialAccountCreditUserCount' => 'int',
         'couponGetCost' => 'int',
+        'couponGetRate' => 'double',
         'couponUseCount' => 'int',
         'forwardUserCount' => 'int',
         'videoOuterPlayUserCount' => 'int',
@@ -627,9 +625,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'couponUsageCost' => 'int64',
         'couponUsageRate' => 'double',
         'couponPurchaseRate' => 'double',
-        'couponGetCountByPlatform' => 'int64',
-        'couponGetCostByPlatform' => 'int64',
-        'couponGetRate' => 'double',
         'followCount' => 'int64',
         'followCost' => 'int64',
         'forwardCount' => 'int64',
@@ -897,7 +892,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameMixedMonetizationRoiD1' => 'double',
         'miniGameMixedMonetizationRoiD1ByReporting' => 'double',
         'miniGameMixedMonetizationRoiD3' => 'double',
-        'miniGameMixedMonetizationRoiD3Reporting' => 'double',
+        'miniGameMixedMonetizationRoiD3ByReporting' => 'double',
         'miniGameMixedMonetizationRoiD7' => 'double',
         'miniGameMixedMonetizationRoiD7ByReporting' => 'double',
         'miniGameMixedMonetizationRoiD14' => 'double',
@@ -1000,6 +995,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'officialAccountCreditApplyUserCount' => 'int64',
         'officialAccountCreditUserCount' => 'int64',
         'couponGetCost' => 'int64',
+        'couponGetRate' => 'double',
         'couponUseCount' => 'int64',
         'forwardUserCount' => 'int64',
         'videoOuterPlayUserCount' => 'int64',
@@ -1125,9 +1121,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'couponUsageCost' => 'coupon_usage_cost',
         'couponUsageRate' => 'coupon_usage_rate',
         'couponPurchaseRate' => 'coupon_purchase_rate',
-        'couponGetCountByPlatform' => 'coupon_get_count_by_platform',
-        'couponGetCostByPlatform' => 'coupon_get_cost_by_platform',
-        'couponGetRate' => 'coupon_get_rate',
         'followCount' => 'follow_count',
         'followCost' => 'follow_cost',
         'forwardCount' => 'forward_count',
@@ -1395,7 +1388,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameMixedMonetizationRoiD1' => 'mini_game_mixed_monetization_roi_d1',
         'miniGameMixedMonetizationRoiD1ByReporting' => 'mini_game_mixed_monetization_roi_d1_by_reporting',
         'miniGameMixedMonetizationRoiD3' => 'mini_game_mixed_monetization_roi_d3',
-        'miniGameMixedMonetizationRoiD3Reporting' => 'mini_game_mixed_monetization_roi_d3_reporting',
+        'miniGameMixedMonetizationRoiD3ByReporting' => 'mini_game_mixed_monetization_roi_d3_by_reporting',
         'miniGameMixedMonetizationRoiD7' => 'mini_game_mixed_monetization_roi_d7',
         'miniGameMixedMonetizationRoiD7ByReporting' => 'mini_game_mixed_monetization_roi_d7_by_reporting',
         'miniGameMixedMonetizationRoiD14' => 'mini_game_mixed_monetization_roi_d14',
@@ -1498,6 +1491,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'officialAccountCreditApplyUserCount' => 'official_account_credit_apply_user_count',
         'officialAccountCreditUserCount' => 'official_account_credit_user_count',
         'couponGetCost' => 'coupon_get_cost',
+        'couponGetRate' => 'coupon_get_rate',
         'couponUseCount' => 'coupon_use_count',
         'forwardUserCount' => 'forward_user_count',
         'videoOuterPlayUserCount' => 'video_outer_play_user_count',
@@ -1602,9 +1596,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'couponUsageCost' => 'setCouponUsageCost',
         'couponUsageRate' => 'setCouponUsageRate',
         'couponPurchaseRate' => 'setCouponPurchaseRate',
-        'couponGetCountByPlatform' => 'setCouponGetCountByPlatform',
-        'couponGetCostByPlatform' => 'setCouponGetCostByPlatform',
-        'couponGetRate' => 'setCouponGetRate',
         'followCount' => 'setFollowCount',
         'followCost' => 'setFollowCost',
         'forwardCount' => 'setForwardCount',
@@ -1872,7 +1863,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameMixedMonetizationRoiD1' => 'setMiniGameMixedMonetizationRoiD1',
         'miniGameMixedMonetizationRoiD1ByReporting' => 'setMiniGameMixedMonetizationRoiD1ByReporting',
         'miniGameMixedMonetizationRoiD3' => 'setMiniGameMixedMonetizationRoiD3',
-        'miniGameMixedMonetizationRoiD3Reporting' => 'setMiniGameMixedMonetizationRoiD3Reporting',
+        'miniGameMixedMonetizationRoiD3ByReporting' => 'setMiniGameMixedMonetizationRoiD3ByReporting',
         'miniGameMixedMonetizationRoiD7' => 'setMiniGameMixedMonetizationRoiD7',
         'miniGameMixedMonetizationRoiD7ByReporting' => 'setMiniGameMixedMonetizationRoiD7ByReporting',
         'miniGameMixedMonetizationRoiD14' => 'setMiniGameMixedMonetizationRoiD14',
@@ -1975,6 +1966,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'officialAccountCreditApplyUserCount' => 'setOfficialAccountCreditApplyUserCount',
         'officialAccountCreditUserCount' => 'setOfficialAccountCreditUserCount',
         'couponGetCost' => 'setCouponGetCost',
+        'couponGetRate' => 'setCouponGetRate',
         'couponUseCount' => 'setCouponUseCount',
         'forwardUserCount' => 'setForwardUserCount',
         'videoOuterPlayUserCount' => 'setVideoOuterPlayUserCount',
@@ -2079,9 +2071,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'couponUsageCost' => 'getCouponUsageCost',
         'couponUsageRate' => 'getCouponUsageRate',
         'couponPurchaseRate' => 'getCouponPurchaseRate',
-        'couponGetCountByPlatform' => 'getCouponGetCountByPlatform',
-        'couponGetCostByPlatform' => 'getCouponGetCostByPlatform',
-        'couponGetRate' => 'getCouponGetRate',
         'followCount' => 'getFollowCount',
         'followCost' => 'getFollowCost',
         'forwardCount' => 'getForwardCount',
@@ -2349,7 +2338,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameMixedMonetizationRoiD1' => 'getMiniGameMixedMonetizationRoiD1',
         'miniGameMixedMonetizationRoiD1ByReporting' => 'getMiniGameMixedMonetizationRoiD1ByReporting',
         'miniGameMixedMonetizationRoiD3' => 'getMiniGameMixedMonetizationRoiD3',
-        'miniGameMixedMonetizationRoiD3Reporting' => 'getMiniGameMixedMonetizationRoiD3Reporting',
+        'miniGameMixedMonetizationRoiD3ByReporting' => 'getMiniGameMixedMonetizationRoiD3ByReporting',
         'miniGameMixedMonetizationRoiD7' => 'getMiniGameMixedMonetizationRoiD7',
         'miniGameMixedMonetizationRoiD7ByReporting' => 'getMiniGameMixedMonetizationRoiD7ByReporting',
         'miniGameMixedMonetizationRoiD14' => 'getMiniGameMixedMonetizationRoiD14',
@@ -2452,6 +2441,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'officialAccountCreditApplyUserCount' => 'getOfficialAccountCreditApplyUserCount',
         'officialAccountCreditUserCount' => 'getOfficialAccountCreditUserCount',
         'couponGetCost' => 'getCouponGetCost',
+        'couponGetRate' => 'getCouponGetRate',
         'couponUseCount' => 'getCouponUseCount',
         'forwardUserCount' => 'getForwardUserCount',
         'videoOuterPlayUserCount' => 'getVideoOuterPlayUserCount',
@@ -2610,9 +2600,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['couponUsageCost'] = isset($data['couponUsageCost']) ? $data['couponUsageCost'] : null;
         $this->container['couponUsageRate'] = isset($data['couponUsageRate']) ? $data['couponUsageRate'] : null;
         $this->container['couponPurchaseRate'] = isset($data['couponPurchaseRate']) ? $data['couponPurchaseRate'] : null;
-        $this->container['couponGetCountByPlatform'] = isset($data['couponGetCountByPlatform']) ? $data['couponGetCountByPlatform'] : null;
-        $this->container['couponGetCostByPlatform'] = isset($data['couponGetCostByPlatform']) ? $data['couponGetCostByPlatform'] : null;
-        $this->container['couponGetRate'] = isset($data['couponGetRate']) ? $data['couponGetRate'] : null;
         $this->container['followCount'] = isset($data['followCount']) ? $data['followCount'] : null;
         $this->container['followCost'] = isset($data['followCost']) ? $data['followCost'] : null;
         $this->container['forwardCount'] = isset($data['forwardCount']) ? $data['forwardCount'] : null;
@@ -2880,7 +2867,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGameMixedMonetizationRoiD1'] = isset($data['miniGameMixedMonetizationRoiD1']) ? $data['miniGameMixedMonetizationRoiD1'] : null;
         $this->container['miniGameMixedMonetizationRoiD1ByReporting'] = isset($data['miniGameMixedMonetizationRoiD1ByReporting']) ? $data['miniGameMixedMonetizationRoiD1ByReporting'] : null;
         $this->container['miniGameMixedMonetizationRoiD3'] = isset($data['miniGameMixedMonetizationRoiD3']) ? $data['miniGameMixedMonetizationRoiD3'] : null;
-        $this->container['miniGameMixedMonetizationRoiD3Reporting'] = isset($data['miniGameMixedMonetizationRoiD3Reporting']) ? $data['miniGameMixedMonetizationRoiD3Reporting'] : null;
+        $this->container['miniGameMixedMonetizationRoiD3ByReporting'] = isset($data['miniGameMixedMonetizationRoiD3ByReporting']) ? $data['miniGameMixedMonetizationRoiD3ByReporting'] : null;
         $this->container['miniGameMixedMonetizationRoiD7'] = isset($data['miniGameMixedMonetizationRoiD7']) ? $data['miniGameMixedMonetizationRoiD7'] : null;
         $this->container['miniGameMixedMonetizationRoiD7ByReporting'] = isset($data['miniGameMixedMonetizationRoiD7ByReporting']) ? $data['miniGameMixedMonetizationRoiD7ByReporting'] : null;
         $this->container['miniGameMixedMonetizationRoiD14'] = isset($data['miniGameMixedMonetizationRoiD14']) ? $data['miniGameMixedMonetizationRoiD14'] : null;
@@ -2983,6 +2970,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['officialAccountCreditApplyUserCount'] = isset($data['officialAccountCreditApplyUserCount']) ? $data['officialAccountCreditApplyUserCount'] : null;
         $this->container['officialAccountCreditUserCount'] = isset($data['officialAccountCreditUserCount']) ? $data['officialAccountCreditUserCount'] : null;
         $this->container['couponGetCost'] = isset($data['couponGetCost']) ? $data['couponGetCost'] : null;
+        $this->container['couponGetRate'] = isset($data['couponGetRate']) ? $data['couponGetRate'] : null;
         $this->container['couponUseCount'] = isset($data['couponUseCount']) ? $data['couponUseCount'] : null;
         $this->container['forwardUserCount'] = isset($data['forwardUserCount']) ? $data['forwardUserCount'] : null;
         $this->container['videoOuterPlayUserCount'] = isset($data['videoOuterPlayUserCount']) ? $data['videoOuterPlayUserCount'] : null;
@@ -5217,78 +5205,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setCouponPurchaseRate($couponPurchaseRate)
     {
         $this->container['couponPurchaseRate'] = $couponPurchaseRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets couponGetCountByPlatform
-     *
-     * @return int
-     */
-    public function getCouponGetCountByPlatform()
-    {
-        return $this->container['couponGetCountByPlatform'];
-    }
-
-    /**
-     * Sets couponGetCountByPlatform
-     *
-     * @param int $couponGetCountByPlatform couponGetCountByPlatform
-     *
-     * @return $this
-     */
-    public function setCouponGetCountByPlatform($couponGetCountByPlatform)
-    {
-        $this->container['couponGetCountByPlatform'] = $couponGetCountByPlatform;
-
-        return $this;
-    }
-
-    /**
-     * Gets couponGetCostByPlatform
-     *
-     * @return int
-     */
-    public function getCouponGetCostByPlatform()
-    {
-        return $this->container['couponGetCostByPlatform'];
-    }
-
-    /**
-     * Sets couponGetCostByPlatform
-     *
-     * @param int $couponGetCostByPlatform couponGetCostByPlatform
-     *
-     * @return $this
-     */
-    public function setCouponGetCostByPlatform($couponGetCostByPlatform)
-    {
-        $this->container['couponGetCostByPlatform'] = $couponGetCostByPlatform;
-
-        return $this;
-    }
-
-    /**
-     * Gets couponGetRate
-     *
-     * @return double
-     */
-    public function getCouponGetRate()
-    {
-        return $this->container['couponGetRate'];
-    }
-
-    /**
-     * Sets couponGetRate
-     *
-     * @param double $couponGetRate couponGetRate
-     *
-     * @return $this
-     */
-    public function setCouponGetRate($couponGetRate)
-    {
-        $this->container['couponGetRate'] = $couponGetRate;
 
         return $this;
     }
@@ -11702,25 +11618,25 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets miniGameMixedMonetizationRoiD3Reporting
+     * Gets miniGameMixedMonetizationRoiD3ByReporting
      *
      * @return double
      */
-    public function getMiniGameMixedMonetizationRoiD3Reporting()
+    public function getMiniGameMixedMonetizationRoiD3ByReporting()
     {
-        return $this->container['miniGameMixedMonetizationRoiD3Reporting'];
+        return $this->container['miniGameMixedMonetizationRoiD3ByReporting'];
     }
 
     /**
-     * Sets miniGameMixedMonetizationRoiD3Reporting
+     * Sets miniGameMixedMonetizationRoiD3ByReporting
      *
-     * @param double $miniGameMixedMonetizationRoiD3Reporting miniGameMixedMonetizationRoiD3Reporting
+     * @param double $miniGameMixedMonetizationRoiD3ByReporting miniGameMixedMonetizationRoiD3ByReporting
      *
      * @return $this
      */
-    public function setMiniGameMixedMonetizationRoiD3Reporting($miniGameMixedMonetizationRoiD3Reporting)
+    public function setMiniGameMixedMonetizationRoiD3ByReporting($miniGameMixedMonetizationRoiD3ByReporting)
     {
-        $this->container['miniGameMixedMonetizationRoiD3Reporting'] = $miniGameMixedMonetizationRoiD3Reporting;
+        $this->container['miniGameMixedMonetizationRoiD3ByReporting'] = $miniGameMixedMonetizationRoiD3ByReporting;
 
         return $this;
     }
@@ -14169,6 +14085,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setCouponGetCost($couponGetCost)
     {
         $this->container['couponGetCost'] = $couponGetCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets couponGetRate
+     *
+     * @return double
+     */
+    public function getCouponGetRate()
+    {
+        return $this->container['couponGetRate'];
+    }
+
+    /**
+     * Sets couponGetRate
+     *
+     * @param double $couponGetRate couponGetRate
+     *
+     * @return $this
+     */
+    public function setCouponGetRate($couponGetRate)
+    {
+        $this->container['couponGetRate'] = $couponGetRate;
 
         return $this;
     }

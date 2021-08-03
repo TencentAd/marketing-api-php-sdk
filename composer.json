@@ -36,7 +36,9 @@
         "pds/skeleton": "^1.0",
         "friendsofphp/php-cs-fixer": "^2.15",
         "mockery/mockery": "^1.2.3",
-        "phpunit/phpunit": "^4.8"
+        "phpunit/phpunit": "^4.8 || ~5.1.0",
+        "phpunit/php-timer": "^1.0",
+        "guzzlehttp/guzzle": "^6.2"
     },
     "autoload-dev": {
         "psr-4": {

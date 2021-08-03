@@ -90,7 +90,7 @@ class TargetingTagsUvApi
     /**
      * Operation targetingTagsUvGet
      *
-     * 获取行为,兴趣,意向标签覆盖人群数
+     * 获取行为/兴趣/意向标签覆盖人群数
      *
      * @param  int $accountId accountId (required)
      * @param  string $categoryType categoryType (required)
@@ -110,7 +110,7 @@ class TargetingTagsUvApi
     /**
      * Operation targetingTagsUvGetWithHttpInfo
      *
-     * 获取行为,兴趣,意向标签覆盖人群数
+     * 获取行为/兴趣/意向标签覆盖人群数
      *
      * @param  int $accountId (required)
      * @param  string $categoryType (required)
@@ -188,7 +188,7 @@ class TargetingTagsUvApi
     /**
      * Operation targetingTagsUvGetAsync
      *
-     * 获取行为,兴趣,意向标签覆盖人群数
+     * 获取行为/兴趣/意向标签覆盖人群数
      *
      * @param  int $accountId (required)
      * @param  string $categoryType (required)
@@ -211,7 +211,7 @@ class TargetingTagsUvApi
     /**
      * Operation targetingTagsUvGetAsyncWithHttpInfo
      *
-     * 获取行为,兴趣,意向标签覆盖人群数
+     * 获取行为/兴趣/意向标签覆盖人群数
      *
      * @param  int $accountId (required)
      * @param  string $categoryType (required)

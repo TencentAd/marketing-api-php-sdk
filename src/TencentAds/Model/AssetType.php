@@ -57,6 +57,7 @@ class AssetType
     const CONVERSION_SPEC = 'ASSET_TYPE_CONVERSION_SPEC';
     const UNION_PACKAGE = 'ASSET_TYPE_UNION_PACKAGE';
     const ACCOUNT_WECHAT_CANVAS = 'ASSET_TYPE_ACCOUNT_WECHAT_CANVAS';
+    const PROFILE = 'ASSET_TYPE_PROFILE';
     
     /**
      * Gets allowable values of the enum
@@ -78,6 +79,7 @@ class AssetType
             self::CONVERSION_SPEC,
             self::UNION_PACKAGE,
             self::ACCOUNT_WECHAT_CANVAS,
+            self::PROFILE,
         ];
     }
 }
