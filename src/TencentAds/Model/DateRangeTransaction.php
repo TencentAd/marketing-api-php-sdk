@@ -214,7 +214,7 @@ class DateRangeTransaction implements ModelInterface, ArrayAccess
     /**
      * Gets startDate
      *
-     * @return string
+     * @return string|mixed
      */
     public function getStartDate()
     {
@@ -238,7 +238,7 @@ class DateRangeTransaction implements ModelInterface, ArrayAccess
     /**
      * Gets endDate
      *
-     * @return string
+     * @return string|mixed
      */
     public function getEndDate()
     {

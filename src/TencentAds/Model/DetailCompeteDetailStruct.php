@@ -250,7 +250,7 @@ class DetailCompeteDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets competeAttribution
      *
-     * @return \TencentAds\Model\CompeteAttributionStruct[]
+     * @return \TencentAds\Model\CompeteAttributionStruct[]|mixed
      */
     public function getCompeteAttribution()
     {
@@ -274,7 +274,7 @@ class DetailCompeteDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets competeBudgetDetails
      *
-     * @return \TencentAds\Model\CompeteBudgetDetailsStruct
+     * @return \TencentAds\Model\CompeteBudgetDetailsStruct|mixed
      */
     public function getCompeteBudgetDetails()
     {
@@ -298,7 +298,7 @@ class DetailCompeteDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets competeBidDetails
      *
-     * @return \TencentAds\Model\CompeteBidDetailsStruct
+     * @return \TencentAds\Model\CompeteBidDetailsStruct|mixed
      */
     public function getCompeteBidDetails()
     {
@@ -322,7 +322,7 @@ class DetailCompeteDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets competeUserAcceptance
      *
-     * @return \TencentAds\Model\CompeteUserAcceptanceStruct
+     * @return \TencentAds\Model\CompeteUserAcceptanceStruct|mixed
      */
     public function getCompeteUserAcceptance()
     {
@@ -346,7 +346,7 @@ class DetailCompeteDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets competePctrTrends
      *
-     * @return \TencentAds\Model\CompetePctrTrendsStruct
+     * @return \TencentAds\Model\CompetePctrTrendsStruct|mixed
      */
     public function getCompetePctrTrends()
     {
@@ -370,7 +370,7 @@ class DetailCompeteDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets competePcvrTrends
      *
-     * @return \TencentAds\Model\CompetePcvrTrendsStruct
+     * @return \TencentAds\Model\CompetePcvrTrendsStruct|mixed
      */
     public function getCompetePcvrTrends()
     {
@@ -394,7 +394,7 @@ class DetailCompeteDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets competeWinAdgroup
      *
-     * @return \TencentAds\Model\CompeteWinAdgroupStruct
+     * @return \TencentAds\Model\CompeteWinAdgroupStruct|mixed
      */
     public function getCompeteWinAdgroup()
     {
@@ -418,7 +418,7 @@ class DetailCompeteDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets competeSurroundings
      *
-     * @return \TencentAds\Model\CompeteSurroundingsStruct
+     * @return \TencentAds\Model\CompeteSurroundingsStruct|mixed
      */
     public function getCompeteSurroundings()
     {

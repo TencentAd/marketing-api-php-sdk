@@ -213,7 +213,7 @@ class AndroidChannelPackagesGetResponseData implements ModelInterface, ArrayAcce
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\ChannelPackageData[]
+     * @return \TencentAds\Model\ChannelPackageData[]|mixed
      */
     public function getList()
     {
@@ -237,7 +237,7 @@ class AndroidChannelPackagesGetResponseData implements ModelInterface, ArrayAcce
     /**
      * Gets pageInfo
      *
-     * @return \TencentAds\Model\Conf
+     * @return \TencentAds\Model\Conf|mixed
      */
     public function getPageInfo()
     {

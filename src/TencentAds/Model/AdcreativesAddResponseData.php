@@ -207,7 +207,7 @@ class AdcreativesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets adcreativeId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdcreativeId()
     {

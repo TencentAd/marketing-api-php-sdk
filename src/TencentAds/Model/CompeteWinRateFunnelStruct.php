@@ -238,7 +238,7 @@ class CompeteWinRateFunnelStruct implements ModelInterface, ArrayAccess
     /**
      * Gets value
      *
-     * @return double
+     * @return double|mixed
      */
     public function getValue()
     {
@@ -262,7 +262,7 @@ class CompeteWinRateFunnelStruct implements ModelInterface, ArrayAccess
     /**
      * Gets score
      *
-     * @return int
+     * @return int|mixed
      */
     public function getScore()
     {
@@ -286,7 +286,7 @@ class CompeteWinRateFunnelStruct implements ModelInterface, ArrayAccess
     /**
      * Gets scoreDesc
      *
-     * @return string
+     * @return string|mixed
      */
     public function getScoreDesc()
     {
@@ -310,7 +310,7 @@ class CompeteWinRateFunnelStruct implements ModelInterface, ArrayAccess
     /**
      * Gets rankCategory
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRankCategory()
     {
@@ -334,7 +334,7 @@ class CompeteWinRateFunnelStruct implements ModelInterface, ArrayAccess
     /**
      * Gets rankSecondCategory
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRankSecondCategory()
     {
@@ -358,7 +358,7 @@ class CompeteWinRateFunnelStruct implements ModelInterface, ArrayAccess
     /**
      * Gets rankOverall
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRankOverall()
     {

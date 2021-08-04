@@ -30,7 +30,7 @@ class CampaignsApiContainer extends ApiContainer
     /**
      * Handle CampaignsApi campaignsAdd function
      * @param array params
-     * @return \TencentAds\Model\CampaignsAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class CampaignsApiContainer extends ApiContainer
     /**
      * Handle CampaignsApi campaignsDelete function
      * @param array params
-     * @return \TencentAds\Model\CampaignsDeleteResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -98,7 +98,7 @@ class CampaignsApiContainer extends ApiContainer
     /**
      * Handle CampaignsApi campaignsGet function
      * @param array params
-     * @return \TencentAds\Model\CampaignsGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -142,7 +142,7 @@ class CampaignsApiContainer extends ApiContainer
     /**
      * Handle CampaignsApi campaignsUpdate function
      * @param array params
-     * @return \TencentAds\Model\CampaignsUpdateResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -176,7 +176,7 @@ class CampaignsApiContainer extends ApiContainer
     /**
      * Handle CampaignsApi campaignsUpdateConfiguredStatus function
      * @param array params
-     * @return \TencentAds\Model\CampaignsUpdateConfiguredStatusResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -210,7 +210,7 @@ class CampaignsApiContainer extends ApiContainer
     /**
      * Handle CampaignsApi campaignsUpdateDailyBudget function
      * @param array params
-     * @return \TencentAds\Model\CampaignsUpdateDailyBudgetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

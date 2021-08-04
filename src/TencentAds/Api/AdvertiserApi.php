@@ -96,7 +96,7 @@ class AdvertiserApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdvertiserAddResponse
+     * @return \TencentAds\Model\AdvertiserAddResponse|mixed
      */
     public function advertiserAdd($data)
     {
@@ -382,7 +382,7 @@ class AdvertiserApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdvertiserGetResponse
+     * @return \TencentAds\Model\AdvertiserGetResponse|mixed
      */
     public function advertiserGet($accountId = null, $filtering = null, $fields = null, $page = null, $pageSize = null)
     {
@@ -697,7 +697,7 @@ class AdvertiserApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdvertiserUpdateResponse
+     * @return \TencentAds\Model\AdvertiserUpdateResponse|mixed
      */
     public function advertiserUpdate($data)
     {
@@ -979,7 +979,7 @@ class AdvertiserApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdvertiserUpdateDailyBudgetResponse
+     * @return \TencentAds\Model\AdvertiserUpdateDailyBudgetResponse|mixed
      */
     public function advertiserUpdateDailyBudget($data)
     {

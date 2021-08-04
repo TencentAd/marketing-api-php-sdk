@@ -96,7 +96,7 @@ class XijingPageByComponentsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\XijingPageByComponentsAddResponse
+     * @return \TencentAds\Model\XijingPageByComponentsAddResponse|mixed
      */
     public function xijingPageByComponentsAdd($data)
     {

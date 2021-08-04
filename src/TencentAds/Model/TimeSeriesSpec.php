@@ -208,7 +208,7 @@ class TimeSeriesSpec implements ModelInterface, ArrayAccess
     /**
      * Gets timeSeries
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTimeSeries()
     {

@@ -250,7 +250,7 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets outerLeadsId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOuterLeadsId()
     {
@@ -274,7 +274,7 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLeadsId()
     {
@@ -298,7 +298,7 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsTel
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeadsTel()
     {
@@ -322,7 +322,7 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsQq
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLeadsQq()
     {
@@ -346,7 +346,7 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsWechat
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeadsWechat()
     {
@@ -370,7 +370,7 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets clickId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getClickId()
     {
@@ -394,7 +394,7 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets outerLeadsConvertType
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOuterLeadsConvertType()
     {
@@ -418,7 +418,7 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets outerLeadsIneffectReason
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOuterLeadsIneffectReason()
     {

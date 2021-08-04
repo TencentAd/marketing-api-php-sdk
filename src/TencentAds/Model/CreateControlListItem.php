@@ -226,7 +226,7 @@ class CreateControlListItem implements ModelInterface, ArrayAccess
     /**
      * Gets itemType
      *
-     * @return \TencentAds\Model\ItemType
+     * @return \TencentAds\Model\ItemType|mixed
      */
     public function getItemType()
     {
@@ -250,7 +250,7 @@ class CreateControlListItem implements ModelInterface, ArrayAccess
     /**
      * Gets itemName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getItemName()
     {
@@ -274,7 +274,7 @@ class CreateControlListItem implements ModelInterface, ArrayAccess
     /**
      * Gets placeholder
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPlaceholder()
     {
@@ -298,7 +298,7 @@ class CreateControlListItem implements ModelInterface, ArrayAccess
     /**
      * Gets selectElements
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getSelectElements()
     {

@@ -226,7 +226,7 @@ class ProductInform implements ModelInterface, ArrayAccess
     /**
      * Gets contentType
      *
-     * @return \TencentAds\Model\ActionProductInformType
+     * @return \TencentAds\Model\ActionProductInformType|mixed
      */
     public function getContentType()
     {
@@ -250,7 +250,7 @@ class ProductInform implements ModelInterface, ArrayAccess
     /**
      * Gets productCatalogId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductCatalogId()
     {
@@ -274,7 +274,7 @@ class ProductInform implements ModelInterface, ArrayAccess
     /**
      * Gets productId
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getProductId()
     {
@@ -298,7 +298,7 @@ class ProductInform implements ModelInterface, ArrayAccess
     /**
      * Gets categoryPath
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getCategoryPath()
     {

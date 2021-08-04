@@ -207,7 +207,7 @@ class VideosAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets videoId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoId()
     {

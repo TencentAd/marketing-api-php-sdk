@@ -207,7 +207,7 @@ class CampaignsUpdateDailyBudgetResponseData implements ModelInterface, ArrayAcc
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\CampaignsUpdateDailyBudgetListStruct[]
+     * @return \TencentAds\Model\CampaignsUpdateDailyBudgetListStruct[]|mixed
      */
     public function getList()
     {

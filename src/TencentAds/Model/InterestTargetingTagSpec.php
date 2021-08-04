@@ -214,7 +214,7 @@ class InterestTargetingTagSpec implements ModelInterface, ArrayAccess
     /**
      * Gets queryMode
      *
-     * @return \TencentAds\Model\TargetingTagQueryMode
+     * @return \TencentAds\Model\TargetingTagQueryMode|mixed
      */
     public function getQueryMode()
     {
@@ -238,7 +238,7 @@ class InterestTargetingTagSpec implements ModelInterface, ArrayAccess
     /**
      * Gets querySpec
      *
-     * @return \TencentAds\Model\TargetingTagsGetQuerySpec
+     * @return \TencentAds\Model\TargetingTagsGetQuerySpec|mixed
      */
     public function getQuerySpec()
     {

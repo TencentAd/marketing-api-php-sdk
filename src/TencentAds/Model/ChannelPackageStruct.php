@@ -226,7 +226,7 @@ class ChannelPackageStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appAndroidChannelPackageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAppAndroidChannelPackageId()
     {
@@ -250,7 +250,7 @@ class ChannelPackageStruct implements ModelInterface, ArrayAccess
     /**
      * Gets packageName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPackageName()
     {
@@ -274,7 +274,7 @@ class ChannelPackageStruct implements ModelInterface, ArrayAccess
     /**
      * Gets systemStatus
      *
-     * @return \TencentAds\Model\UnionPackageSysStatus
+     * @return \TencentAds\Model\UnionPackageSysStatus|mixed
      */
     public function getSystemStatus()
     {
@@ -298,7 +298,7 @@ class ChannelPackageStruct implements ModelInterface, ArrayAccess
     /**
      * Gets packageOriginUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPackageOriginUrl()
     {

@@ -214,7 +214,7 @@ class AreaSpec implements ModelInterface, ArrayAccess
     /**
      * Gets areaType
      *
-     * @return \TencentAds\Model\LbsAreaType
+     * @return \TencentAds\Model\LbsAreaType|mixed
      */
     public function getAreaType()
     {
@@ -238,7 +238,7 @@ class AreaSpec implements ModelInterface, ArrayAccess
     /**
      * Gets circleArea
      *
-     * @return \TencentAds\Model\CircleArea
+     * @return \TencentAds\Model\CircleArea|mixed
      */
     public function getCircleArea()
     {

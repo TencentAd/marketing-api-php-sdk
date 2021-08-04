@@ -214,7 +214,7 @@ class AdQualificationsSpec implements ModelInterface, ArrayAccess
     /**
      * Gets qualificationCode
      *
-     * @return string
+     * @return string|mixed
      */
     public function getQualificationCode()
     {
@@ -238,7 +238,7 @@ class AdQualificationsSpec implements ModelInterface, ArrayAccess
     /**
      * Gets imageIdList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getImageIdList()
     {

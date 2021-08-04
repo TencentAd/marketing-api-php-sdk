@@ -207,7 +207,7 @@ class UnionPositionPackagesAddResponseData implements ModelInterface, ArrayAcces
     /**
      * Gets unionPackageId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUnionPackageId()
     {

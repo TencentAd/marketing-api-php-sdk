@@ -238,7 +238,7 @@ class ResponsePotentialStruct implements ModelInterface, ArrayAccess
     /**
      * Gets partitionTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPartitionTime()
     {
@@ -262,7 +262,7 @@ class ResponsePotentialStruct implements ModelInterface, ArrayAccess
     /**
      * Gets bidRaiseRatio
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBidRaiseRatio()
     {
@@ -286,7 +286,7 @@ class ResponsePotentialStruct implements ModelInterface, ArrayAccess
     /**
      * Gets exposureEstimate
      *
-     * @return int
+     * @return int|mixed
      */
     public function getExposureEstimate()
     {
@@ -310,7 +310,7 @@ class ResponsePotentialStruct implements ModelInterface, ArrayAccess
     /**
      * Gets exposureRaiseRatio
      *
-     * @return int
+     * @return int|mixed
      */
     public function getExposureRaiseRatio()
     {
@@ -334,7 +334,7 @@ class ResponsePotentialStruct implements ModelInterface, ArrayAccess
     /**
      * Gets bidModified
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getBidModified()
     {
@@ -358,7 +358,7 @@ class ResponsePotentialStruct implements ModelInterface, ArrayAccess
     /**
      * Gets deepBidModified
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getDeepBidModified()
     {

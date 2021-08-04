@@ -279,7 +279,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -303,7 +303,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets catalogId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCatalogId()
     {
@@ -327,7 +327,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets productOuterId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductOuterId()
     {
@@ -351,7 +351,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets price
      *
-     * @return double
+     * @return double|mixed
      */
     public function getPrice()
     {
@@ -375,7 +375,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets salePrice
      *
-     * @return double
+     * @return double|mixed
      */
     public function getSalePrice()
     {
@@ -399,7 +399,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets pricePc
      *
-     * @return double
+     * @return double|mixed
      */
     public function getPricePc()
     {
@@ -423,7 +423,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets priceMobile
      *
-     * @return double
+     * @return double|mixed
      */
     public function getPriceMobile()
     {
@@ -447,7 +447,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets priceApp
      *
-     * @return double
+     * @return double|mixed
      */
     public function getPriceApp()
     {
@@ -471,7 +471,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets stockVolume
      *
-     * @return int
+     * @return int|mixed
      */
     public function getStockVolume()
     {
@@ -495,7 +495,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets discount
      *
-     * @return double
+     * @return double|mixed
      */
     public function getDiscount()
     {
@@ -519,7 +519,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets expirationTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getExpirationTime()
     {
@@ -543,7 +543,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets productSaleStatus
      *
-     * @return \TencentAds\Model\ProductSaleStatus
+     * @return \TencentAds\Model\ProductSaleStatus|mixed
      */
     public function getProductSaleStatus()
     {
@@ -567,7 +567,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets productVisibility
      *
-     * @return \TencentAds\Model\ProductVisibility
+     * @return \TencentAds\Model\ProductVisibility|mixed
      */
     public function getProductVisibility()
     {

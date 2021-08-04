@@ -220,7 +220,7 @@ class UpdateAndroidUnionChannelPackageSpec implements ModelInterface, ArrayAcces
     /**
      * Gets channelPackageId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getChannelPackageId()
     {
@@ -244,7 +244,7 @@ class UpdateAndroidUnionChannelPackageSpec implements ModelInterface, ArrayAcces
     /**
      * Gets packageName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPackageName()
     {
@@ -268,7 +268,7 @@ class UpdateAndroidUnionChannelPackageSpec implements ModelInterface, ArrayAcces
     /**
      * Gets downloadUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDownloadUrl()
     {

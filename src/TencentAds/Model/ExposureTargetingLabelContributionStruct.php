@@ -214,7 +214,7 @@ class ExposureTargetingLabelContributionStruct implements ModelInterface, ArrayA
     /**
      * Gets locard
      *
-     * @return \TencentAds\Model\LabelContributionListItem[]
+     * @return \TencentAds\Model\LabelContributionListItem[]|mixed
      */
     public function getLocard()
     {
@@ -238,7 +238,7 @@ class ExposureTargetingLabelContributionStruct implements ModelInterface, ArrayA
     /**
      * Gets audience
      *
-     * @return \TencentAds\Model\LabelContributionListItem[]
+     * @return \TencentAds\Model\LabelContributionListItem[]|mixed
      */
     public function getAudience()
     {

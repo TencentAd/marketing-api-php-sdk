@@ -237,7 +237,7 @@ class LeadsFormAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -261,7 +261,7 @@ class LeadsFormAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets componentName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getComponentName()
     {
@@ -285,7 +285,7 @@ class LeadsFormAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets title
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTitle()
     {
@@ -309,7 +309,7 @@ class LeadsFormAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets subTitle
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSubTitle()
     {
@@ -333,7 +333,7 @@ class LeadsFormAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets submitText
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSubmitText()
     {
@@ -357,7 +357,7 @@ class LeadsFormAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \TencentAds\Model\CreateControlListItem[]
+     * @return \TencentAds\Model\CreateControlListItem[]|mixed
      */
     public function getItems()
     {

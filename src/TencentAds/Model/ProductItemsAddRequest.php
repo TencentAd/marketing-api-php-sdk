@@ -225,7 +225,7 @@ class ProductItemsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -249,7 +249,7 @@ class ProductItemsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets productCatalogId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProductCatalogId()
     {
@@ -273,7 +273,7 @@ class ProductItemsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets feedId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFeedId()
     {
@@ -297,7 +297,7 @@ class ProductItemsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets productItemSpecList
      *
-     * @return \TencentAds\Model\ProductItemSpec[]
+     * @return \TencentAds\Model\ProductItemSpec[]|mixed
      */
     public function getProductItemSpecList()
     {

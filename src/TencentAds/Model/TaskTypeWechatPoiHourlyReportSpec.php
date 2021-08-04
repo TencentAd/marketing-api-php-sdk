@@ -208,7 +208,7 @@ class TaskTypeWechatPoiHourlyReportSpec implements ModelInterface, ArrayAccess
     /**
      * Gets date
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDate()
     {

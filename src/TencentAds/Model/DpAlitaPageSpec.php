@@ -226,7 +226,7 @@ class DpAlitaPageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets buttonTips
      *
-     * @return string
+     * @return string|mixed
      */
     public function getButtonTips()
     {
@@ -250,7 +250,7 @@ class DpAlitaPageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets couponTitle
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCouponTitle()
     {
@@ -274,7 +274,7 @@ class DpAlitaPageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets beginDate
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBeginDate()
     {
@@ -298,7 +298,7 @@ class DpAlitaPageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets endDate
      *
-     * @return string
+     * @return string|mixed
      */
     public function getEndDate()
     {

@@ -268,7 +268,7 @@ class ProductTypeDianpingShop implements ModelInterface, ArrayAccess
     /**
      * Gets shopName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getShopName()
     {
@@ -292,7 +292,7 @@ class ProductTypeDianpingShop implements ModelInterface, ArrayAccess
     /**
      * Gets address
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAddress()
     {
@@ -316,7 +316,7 @@ class ProductTypeDianpingShop implements ModelInterface, ArrayAccess
     /**
      * Gets city
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCity()
     {
@@ -340,7 +340,7 @@ class ProductTypeDianpingShop implements ModelInterface, ArrayAccess
     /**
      * Gets district
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDistrict()
     {
@@ -364,7 +364,7 @@ class ProductTypeDianpingShop implements ModelInterface, ArrayAccess
     /**
      * Gets businessArea
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBusinessArea()
     {
@@ -388,7 +388,7 @@ class ProductTypeDianpingShop implements ModelInterface, ArrayAccess
     /**
      * Gets streetNumber
      *
-     * @return string
+     * @return string|mixed
      */
     public function getStreetNumber()
     {
@@ -412,7 +412,7 @@ class ProductTypeDianpingShop implements ModelInterface, ArrayAccess
     /**
      * Gets longitude
      *
-     * @return double
+     * @return double|mixed
      */
     public function getLongitude()
     {
@@ -436,7 +436,7 @@ class ProductTypeDianpingShop implements ModelInterface, ArrayAccess
     /**
      * Gets latitude
      *
-     * @return double
+     * @return double|mixed
      */
     public function getLatitude()
     {
@@ -460,7 +460,7 @@ class ProductTypeDianpingShop implements ModelInterface, ArrayAccess
     /**
      * Gets shopDetailUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getShopDetailUrl()
     {
@@ -484,7 +484,7 @@ class ProductTypeDianpingShop implements ModelInterface, ArrayAccess
     /**
      * Gets ratings
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRatings()
     {
@@ -508,7 +508,7 @@ class ProductTypeDianpingShop implements ModelInterface, ArrayAccess
     /**
      * Gets averagePrice
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAveragePrice()
     {

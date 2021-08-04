@@ -232,7 +232,7 @@ class RecommendMethod implements ModelInterface, ArrayAccess
     /**
      * Gets methodId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMethodId()
     {
@@ -256,7 +256,7 @@ class RecommendMethod implements ModelInterface, ArrayAccess
     /**
      * Gets methodName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMethodName()
     {
@@ -280,7 +280,7 @@ class RecommendMethod implements ModelInterface, ArrayAccess
     /**
      * Gets methodDescription
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMethodDescription()
     {
@@ -304,7 +304,7 @@ class RecommendMethod implements ModelInterface, ArrayAccess
     /**
      * Gets subMethodOperators
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getSubMethodOperators()
     {
@@ -328,7 +328,7 @@ class RecommendMethod implements ModelInterface, ArrayAccess
     /**
      * Gets subMethods
      *
-     * @return \TencentAds\Model\SubMethod[]
+     * @return \TencentAds\Model\SubMethod[]|mixed
      */
     public function getSubMethods()
     {

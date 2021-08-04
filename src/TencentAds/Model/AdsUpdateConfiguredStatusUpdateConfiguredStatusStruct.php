@@ -214,7 +214,7 @@ class AdsUpdateConfiguredStatusUpdateConfiguredStatusStruct implements ModelInte
     /**
      * Gets adId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdId()
     {
@@ -238,7 +238,7 @@ class AdsUpdateConfiguredStatusUpdateConfiguredStatusStruct implements ModelInte
     /**
      * Gets configuredStatus
      *
-     * @return \TencentAds\Model\AdStatus
+     * @return \TencentAds\Model\AdStatus|mixed
      */
     public function getConfiguredStatus()
     {

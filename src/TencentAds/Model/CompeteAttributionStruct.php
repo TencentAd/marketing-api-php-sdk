@@ -220,7 +220,7 @@ class CompeteAttributionStruct implements ModelInterface, ArrayAccess
     /**
      * Gets attributeCode
      *
-     * @return \TencentAds\Model\CompeteAttribution
+     * @return \TencentAds\Model\CompeteAttribution|mixed
      */
     public function getAttributeCode()
     {
@@ -244,7 +244,7 @@ class CompeteAttributionStruct implements ModelInterface, ArrayAccess
     /**
      * Gets attributeName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAttributeName()
     {
@@ -268,7 +268,7 @@ class CompeteAttributionStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ratio
      *
-     * @return double
+     * @return double|mixed
      */
     public function getRatio()
     {

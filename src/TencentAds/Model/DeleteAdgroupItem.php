@@ -208,7 +208,7 @@ class DeleteAdgroupItem implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {

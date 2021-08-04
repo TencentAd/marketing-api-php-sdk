@@ -207,7 +207,7 @@ class LocalStoresAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets poiList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getPoiList()
     {

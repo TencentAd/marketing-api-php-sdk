@@ -316,7 +316,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets imageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImageId()
     {
@@ -340,7 +340,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -364,7 +364,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets sourceSignature
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSourceSignature()
     {
@@ -388,7 +388,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets previewUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPreviewUrl()
     {
@@ -412,7 +412,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets sourceType
      *
-     * @return \TencentAds\Model\ImageSourceType
+     * @return \TencentAds\Model\ImageSourceType|mixed
      */
     public function getSourceType()
     {
@@ -436,7 +436,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets imageUsage
      *
-     * @return \TencentAds\Model\ImageUsage
+     * @return \TencentAds\Model\ImageUsage|mixed
      */
     public function getImageUsage()
     {
@@ -460,7 +460,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {
@@ -484,7 +484,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLastModifiedTime()
     {
@@ -508,7 +508,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productCatalogId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProductCatalogId()
     {
@@ -532,7 +532,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productOuterId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductOuterId()
     {
@@ -556,7 +556,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets sourceReferenceId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSourceReferenceId()
     {
@@ -580,7 +580,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ownerAccountId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOwnerAccountId()
     {
@@ -604,7 +604,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \TencentAds\Model\MediaStatusType
+     * @return \TencentAds\Model\MediaStatusType|mixed
      */
     public function getStatus()
     {
@@ -628,7 +628,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets sampleAspectRatio
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSampleAspectRatio()
     {
@@ -652,7 +652,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets width
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWidth()
     {
@@ -676,7 +676,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets height
      *
-     * @return int
+     * @return int|mixed
      */
     public function getHeight()
     {
@@ -700,7 +700,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets fileSize
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFileSize()
     {
@@ -724,7 +724,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \TencentAds\Model\ImageType
+     * @return \TencentAds\Model\ImageType|mixed
      */
     public function getType()
     {
@@ -748,7 +748,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets signature
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSignature()
     {

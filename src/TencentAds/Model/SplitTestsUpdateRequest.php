@@ -231,7 +231,7 @@ class SplitTestsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -255,7 +255,7 @@ class SplitTestsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets splitTestId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSplitTestId()
     {
@@ -279,7 +279,7 @@ class SplitTestsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets splitTestStatus
      *
-     * @return \TencentAds\Model\SplitTestStatus
+     * @return \TencentAds\Model\SplitTestStatus|mixed
      */
     public function getSplitTestStatus()
     {
@@ -303,7 +303,7 @@ class SplitTestsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets splitTestName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSplitTestName()
     {
@@ -327,7 +327,7 @@ class SplitTestsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupIdList
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getAdgroupIdList()
     {

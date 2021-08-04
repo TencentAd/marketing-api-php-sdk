@@ -214,7 +214,7 @@ class DpMiniProgramSpec implements ModelInterface, ArrayAccess
     /**
      * Gets miniProgramId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMiniProgramId()
     {
@@ -238,7 +238,7 @@ class DpMiniProgramSpec implements ModelInterface, ArrayAccess
     /**
      * Gets miniProgramPath
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMiniProgramPath()
     {

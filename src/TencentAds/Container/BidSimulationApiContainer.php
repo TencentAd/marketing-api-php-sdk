@@ -30,7 +30,7 @@ class BidSimulationApiContainer extends ApiContainer
     /**
      * Handle BidSimulationApi bidSimulationGet function
      * @param array params
-     * @return \TencentAds\Model\BidSimulationGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

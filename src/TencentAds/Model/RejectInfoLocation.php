@@ -250,7 +250,7 @@ class RejectInfoLocation implements ModelInterface, ArrayAccess
     /**
      * Gets x
      *
-     * @return int
+     * @return int|mixed
      */
     public function getX()
     {
@@ -274,7 +274,7 @@ class RejectInfoLocation implements ModelInterface, ArrayAccess
     /**
      * Gets y
      *
-     * @return int
+     * @return int|mixed
      */
     public function getY()
     {
@@ -298,7 +298,7 @@ class RejectInfoLocation implements ModelInterface, ArrayAccess
     /**
      * Gets width
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWidth()
     {
@@ -322,7 +322,7 @@ class RejectInfoLocation implements ModelInterface, ArrayAccess
     /**
      * Gets height
      *
-     * @return int
+     * @return int|mixed
      */
     public function getHeight()
     {
@@ -346,7 +346,7 @@ class RejectInfoLocation implements ModelInterface, ArrayAccess
     /**
      * Gets timeSecond
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTimeSecond()
     {
@@ -370,7 +370,7 @@ class RejectInfoLocation implements ModelInterface, ArrayAccess
     /**
      * Gets locationImgUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLocationImgUrl()
     {
@@ -394,7 +394,7 @@ class RejectInfoLocation implements ModelInterface, ArrayAccess
     /**
      * Gets imgUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImgUrl()
     {
@@ -418,7 +418,7 @@ class RejectInfoLocation implements ModelInterface, ArrayAccess
     /**
      * Gets relatedImgUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getRelatedImgUrl()
     {

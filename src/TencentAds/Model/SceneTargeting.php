@@ -262,7 +262,7 @@ class SceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Gets mobileUnion
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getMobileUnion()
     {
@@ -286,7 +286,7 @@ class SceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Gets excludeMobileUnion
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getExcludeMobileUnion()
     {
@@ -310,7 +310,7 @@ class SceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Gets mobileUnionIndustry
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getMobileUnionIndustry()
     {
@@ -334,7 +334,7 @@ class SceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Gets unionPositionPackage
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getUnionPositionPackage()
     {
@@ -358,7 +358,7 @@ class SceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Gets excludeUnionPositionPackage
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getExcludeUnionPositionPackage()
     {
@@ -382,7 +382,7 @@ class SceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Gets tencentNews
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getTencentNews()
     {
@@ -406,7 +406,7 @@ class SceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Gets displayScene
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getDisplayScene()
     {
@@ -430,7 +430,7 @@ class SceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Gets mobileUnionCategory
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getMobileUnionCategory()
     {
@@ -454,7 +454,7 @@ class SceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Gets wechatScene
      *
-     * @return \TencentAds\Model\WechatScene
+     * @return \TencentAds\Model\WechatScene|mixed
      */
     public function getWechatScene()
     {
@@ -478,7 +478,7 @@ class SceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Gets wechatPosition
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getWechatPosition()
     {

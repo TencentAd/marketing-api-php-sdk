@@ -225,7 +225,7 @@ class EcommerceOrderUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -249,7 +249,7 @@ class EcommerceOrderUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets ecommerceOrderId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getEcommerceOrderId()
     {
@@ -273,7 +273,7 @@ class EcommerceOrderUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets deliveryTrackingNumber
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDeliveryTrackingNumber()
     {
@@ -297,7 +297,7 @@ class EcommerceOrderUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets expressCompany
      *
-     * @return \TencentAds\Model\ExpressCompany
+     * @return \TencentAds\Model\ExpressCompany|mixed
      */
     public function getExpressCompany()
     {

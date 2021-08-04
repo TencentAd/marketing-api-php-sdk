@@ -220,7 +220,7 @@ class WecomSpec implements ModelInterface, ArrayAccess
     /**
      * Gets title
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTitle()
     {
@@ -244,7 +244,7 @@ class WecomSpec implements ModelInterface, ArrayAccess
     /**
      * Gets groupid
      *
-     * @return int
+     * @return int|mixed
      */
     public function getGroupid()
     {
@@ -268,7 +268,7 @@ class WecomSpec implements ModelInterface, ArrayAccess
     /**
      * Gets setid
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSetid()
     {

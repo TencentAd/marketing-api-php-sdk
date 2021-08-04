@@ -30,7 +30,7 @@ class WechatAdvertiserLocalBusinessApiContainer extends ApiContainer
     /**
      * Handle WechatAdvertiserLocalBusinessApi wechatAdvertiserLocalBusinessAdd function
      * @param array params
-     * @return \TencentAds\Model\WechatAdvertiserLocalBusinessAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -86,7 +86,7 @@ class WechatAdvertiserLocalBusinessApiContainer extends ApiContainer
     /**
      * Handle WechatAdvertiserLocalBusinessApi wechatAdvertiserLocalBusinessGet function
      * @param array params
-     * @return \TencentAds\Model\WechatAdvertiserLocalBusinessGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

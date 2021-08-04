@@ -208,7 +208,7 @@ class BarrageListCreateStruct implements ModelInterface, ArrayAccess
     /**
      * Gets id
      *
-     * @return int
+     * @return int|mixed
      */
     public function getId()
     {

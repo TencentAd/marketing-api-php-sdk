@@ -213,7 +213,7 @@ class AdgroupsUpdateDatetimeRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -237,7 +237,7 @@ class AdgroupsUpdateDatetimeRequest implements ModelInterface, ArrayAccess
     /**
      * Gets updateDatetimeSpec
      *
-     * @return \TencentAds\Model\UpdateDatetimeStruct[]
+     * @return \TencentAds\Model\UpdateDatetimeStruct[]|mixed
      */
     public function getUpdateDatetimeSpec()
     {

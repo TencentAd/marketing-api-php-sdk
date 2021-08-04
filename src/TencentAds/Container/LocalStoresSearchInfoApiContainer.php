@@ -30,7 +30,7 @@ class LocalStoresSearchInfoApiContainer extends ApiContainer
     /**
      * Handle LocalStoresSearchInfoApi localStoresSearchInfoGet function
      * @param array params
-     * @return \TencentAds\Model\LocalStoresSearchInfoGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

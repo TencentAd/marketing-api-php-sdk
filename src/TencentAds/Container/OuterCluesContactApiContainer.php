@@ -30,7 +30,7 @@ class OuterCluesContactApiContainer extends ApiContainer
     /**
      * Handle OuterCluesContactApi outerCluesContactUpdate function
      * @param array params
-     * @return \TencentAds\Model\OuterCluesContactUpdateResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

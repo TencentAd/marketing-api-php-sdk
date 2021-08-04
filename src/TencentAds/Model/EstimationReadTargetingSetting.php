@@ -406,7 +406,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets age
      *
-     * @return \TencentAds\Model\AgeStruct[]
+     * @return \TencentAds\Model\AgeStruct[]|mixed
      */
     public function getAge()
     {
@@ -430,7 +430,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets gender
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getGender()
     {
@@ -454,7 +454,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets education
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getEducation()
     {
@@ -478,7 +478,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets maritalStatus
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getMaritalStatus()
     {
@@ -502,7 +502,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets workingStatus
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getWorkingStatus()
     {
@@ -526,7 +526,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets geoLocation
      *
-     * @return \TencentAds\Model\GeoLocations
+     * @return \TencentAds\Model\GeoLocations|mixed
      */
     public function getGeoLocation()
     {
@@ -550,7 +550,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets userOs
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getUserOs()
     {
@@ -574,7 +574,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets newDevice
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getNewDevice()
     {
@@ -598,7 +598,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets devicePrice
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getDevicePrice()
     {
@@ -622,7 +622,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets networkType
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getNetworkType()
     {
@@ -646,7 +646,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets networkOperator
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getNetworkOperator()
     {
@@ -670,7 +670,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets networkScene
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getNetworkScene()
     {
@@ -694,7 +694,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets dressingIndex
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getDressingIndex()
     {
@@ -718,7 +718,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets uvIndex
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getUvIndex()
     {
@@ -742,7 +742,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets makeupIndex
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getMakeupIndex()
     {
@@ -766,7 +766,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets climate
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getClimate()
     {
@@ -790,7 +790,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets temperature
      *
-     * @return \TencentAds\Model\TemperatureStruct[]
+     * @return \TencentAds\Model\TemperatureStruct[]|mixed
      */
     public function getTemperature()
     {
@@ -814,7 +814,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets appInstallStatus
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getAppInstallStatus()
     {
@@ -838,7 +838,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameQqStatus
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getMiniGameQqStatus()
     {
@@ -862,7 +862,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets consumptionStatus
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getConsumptionStatus()
     {
@@ -886,7 +886,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets gameConsumptionLevel
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getGameConsumptionLevel()
     {
@@ -910,7 +910,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets paidUser
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getPaidUser()
     {
@@ -934,7 +934,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets residentialCommunityPrice
      *
-     * @return \TencentAds\Model\ResidentialCommunityPriceStruct[]
+     * @return \TencentAds\Model\ResidentialCommunityPriceStruct[]|mixed
      */
     public function getResidentialCommunityPrice()
     {
@@ -958,7 +958,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets wechatAdBehavior
      *
-     * @return \TencentAds\Model\LimitWechatAdBehavior
+     * @return \TencentAds\Model\LimitWechatAdBehavior|mixed
      */
     public function getWechatAdBehavior()
     {
@@ -982,7 +982,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets customAudience
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getCustomAudience()
     {
@@ -1006,7 +1006,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets excludedCustomAudience
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getExcludedCustomAudience()
     {
@@ -1030,7 +1030,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets deprecatedCustomAudience
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getDeprecatedCustomAudience()
     {
@@ -1054,7 +1054,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets deprecatedExcludedCustomAudience
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getDeprecatedExcludedCustomAudience()
     {
@@ -1078,7 +1078,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets behaviorOrInterest
      *
-     * @return \TencentAds\Model\BehaviorOrInterest
+     * @return \TencentAds\Model\BehaviorOrInterest|mixed
      */
     public function getBehaviorOrInterest()
     {
@@ -1102,7 +1102,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets airQualityIndex
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getAirQualityIndex()
     {
@@ -1126,7 +1126,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets wechatOfficialAccountCategory
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getWechatOfficialAccountCategory()
     {
@@ -1150,7 +1150,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets mobileUnionCategory
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getMobileUnionCategory()
     {
@@ -1174,7 +1174,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets financialSituation
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getFinancialSituation()
     {
@@ -1198,7 +1198,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets consumptionType
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getConsumptionType()
     {

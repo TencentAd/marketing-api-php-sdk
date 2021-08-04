@@ -280,7 +280,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets targetingId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTargetingId()
     {
@@ -304,7 +304,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets targetingName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTargetingName()
     {
@@ -328,7 +328,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets isIncludeUnsupportedTargeting
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getIsIncludeUnsupportedTargeting()
     {
@@ -352,7 +352,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -376,7 +376,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets isDeleted
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getIsDeleted()
     {
@@ -400,7 +400,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {
@@ -424,7 +424,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLastModifiedTime()
     {
@@ -448,7 +448,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adLockStatus
      *
-     * @return \TencentAds\Model\AdLockStatus
+     * @return \TencentAds\Model\AdLockStatus|mixed
      */
     public function getAdLockStatus()
     {
@@ -472,7 +472,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets targetingTranslation
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTargetingTranslation()
     {
@@ -496,7 +496,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets targetingSourceType
      *
-     * @return \TencentAds\Model\TargetingPkgSourceType
+     * @return \TencentAds\Model\TargetingPkgSourceType|mixed
      */
     public function getTargetingSourceType()
     {
@@ -520,7 +520,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets shareFromAccountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getShareFromAccountId()
     {
@@ -544,7 +544,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets shareFromTargetingId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getShareFromTargetingId()
     {
@@ -568,7 +568,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets targeting
      *
-     * @return \TencentAds\Model\ReadTargetingSetting
+     * @return \TencentAds\Model\ReadTargetingSetting|mixed
      */
     public function getTargeting()
     {

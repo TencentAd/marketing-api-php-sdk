@@ -214,7 +214,7 @@ class OtherData implements ModelInterface, ArrayAccess
     /**
      * Gets subtitleFile
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSubtitleFile()
     {
@@ -238,7 +238,7 @@ class OtherData implements ModelInterface, ArrayAccess
     /**
      * Gets audioFile
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAudioFile()
     {

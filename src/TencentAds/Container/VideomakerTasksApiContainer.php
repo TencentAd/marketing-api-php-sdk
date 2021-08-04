@@ -30,7 +30,7 @@ class VideomakerTasksApiContainer extends ApiContainer
     /**
      * Handle VideomakerTasksApi videomakerTasksGet function
      * @param array params
-     * @return \TencentAds\Model\VideomakerTasksGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

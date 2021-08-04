@@ -232,7 +232,7 @@ class DynamicAdcreativeSpec implements ModelInterface, ArrayAccess
     /**
      * Gets productCatalogId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProductCatalogId()
     {
@@ -256,7 +256,7 @@ class DynamicAdcreativeSpec implements ModelInterface, ArrayAccess
     /**
      * Gets productMode
      *
-     * @return \TencentAds\Model\ProductMode
+     * @return \TencentAds\Model\ProductMode|mixed
      */
     public function getProductMode()
     {
@@ -280,7 +280,7 @@ class DynamicAdcreativeSpec implements ModelInterface, ArrayAccess
     /**
      * Gets productSource
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductSource()
     {
@@ -304,7 +304,7 @@ class DynamicAdcreativeSpec implements ModelInterface, ArrayAccess
     /**
      * Gets productExposureQuantityMode
      *
-     * @return \TencentAds\Model\ProductItemsQuantity
+     * @return \TencentAds\Model\ProductItemsQuantity|mixed
      */
     public function getProductExposureQuantityMode()
     {
@@ -328,7 +328,7 @@ class DynamicAdcreativeSpec implements ModelInterface, ArrayAccess
     /**
      * Gets landingPageUrlType
      *
-     * @return \TencentAds\Model\LandingPageUrlType
+     * @return \TencentAds\Model\LandingPageUrlType|mixed
      */
     public function getLandingPageUrlType()
     {

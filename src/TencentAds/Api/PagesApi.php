@@ -101,7 +101,7 @@ class PagesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\PagesGetResponse
+     * @return \TencentAds\Model\PagesGetResponse|mixed
      */
     public function pagesGet($accountId, $promotedObjectType, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {

@@ -244,7 +244,7 @@ class UserActionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets userActionSetId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUserActionSetId()
     {
@@ -268,7 +268,7 @@ class UserActionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets matchRuleType
      *
-     * @return \TencentAds\Model\MatchRuleType
+     * @return \TencentAds\Model\MatchRuleType|mixed
      */
     public function getMatchRuleType()
     {
@@ -292,7 +292,7 @@ class UserActionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets extractType
      *
-     * @return \TencentAds\Model\ExtractRuleType
+     * @return \TencentAds\Model\ExtractRuleType|mixed
      */
     public function getExtractType()
     {
@@ -316,7 +316,7 @@ class UserActionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets timeWindow
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTimeWindow()
     {
@@ -340,7 +340,7 @@ class UserActionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets urlMatchRule
      *
-     * @return \TencentAds\Model\UrlMatchRule
+     * @return \TencentAds\Model\UrlMatchRule|mixed
      */
     public function getUrlMatchRule()
     {
@@ -364,7 +364,7 @@ class UserActionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets actionMatchRule
      *
-     * @return \TencentAds\Model\ActionMatchRule
+     * @return \TencentAds\Model\ActionMatchRule|mixed
      */
     public function getActionMatchRule()
     {
@@ -388,7 +388,7 @@ class UserActionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets actionAggregationRule
      *
-     * @return \TencentAds\Model\ActionAggregationRule
+     * @return \TencentAds\Model\ActionAggregationRule|mixed
      */
     public function getActionAggregationRule()
     {

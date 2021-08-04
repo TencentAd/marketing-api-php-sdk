@@ -30,7 +30,7 @@ class WechatDailyCostApiContainer extends ApiContainer
     /**
      * Handle WechatDailyCostApi wechatDailyCostGet function
      * @param array params
-     * @return \TencentAds\Model\WechatDailyCostGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

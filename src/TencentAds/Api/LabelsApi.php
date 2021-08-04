@@ -100,7 +100,7 @@ class LabelsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\LabelsGetResponse
+     * @return \TencentAds\Model\LabelsGetResponse|mixed
      */
     public function labelsGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {

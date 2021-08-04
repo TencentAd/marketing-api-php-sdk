@@ -232,7 +232,7 @@ class AdcreativeLabel implements ModelInterface, ArrayAccess
     /**
      * Gets coordinateX
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCoordinateX()
     {
@@ -256,7 +256,7 @@ class AdcreativeLabel implements ModelInterface, ArrayAccess
     /**
      * Gets coordinateY
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCoordinateY()
     {
@@ -280,7 +280,7 @@ class AdcreativeLabel implements ModelInterface, ArrayAccess
     /**
      * Gets direction
      *
-     * @return \TencentAds\Model\LableDirection
+     * @return \TencentAds\Model\LableDirection|mixed
      */
     public function getDirection()
     {
@@ -304,7 +304,7 @@ class AdcreativeLabel implements ModelInterface, ArrayAccess
     /**
      * Gets content
      *
-     * @return string
+     * @return string|mixed
      */
     public function getContent()
     {
@@ -328,7 +328,7 @@ class AdcreativeLabel implements ModelInterface, ArrayAccess
     /**
      * Gets landingPageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLandingPageUrl()
     {

@@ -103,7 +103,7 @@ class XijingPageInteractiveApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\XijingPageInteractiveAddResponse
+     * @return \TencentAds\Model\XijingPageInteractiveAddResponse|mixed
      */
     public function xijingPageInteractiveAdd($accountId, $isAutoSubmit, $pageType, $interactivePageType, $pageTitle, $pageName, $mobileAppId, $file = null)
     {

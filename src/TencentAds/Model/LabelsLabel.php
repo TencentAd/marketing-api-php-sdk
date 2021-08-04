@@ -232,7 +232,7 @@ class LabelsLabel implements ModelInterface, ArrayAccess
     /**
      * Gets labelId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLabelId()
     {
@@ -256,7 +256,7 @@ class LabelsLabel implements ModelInterface, ArrayAccess
     /**
      * Gets audienceId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAudienceId()
     {
@@ -280,7 +280,7 @@ class LabelsLabel implements ModelInterface, ArrayAccess
     /**
      * Gets displayLabelName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDisplayLabelName()
     {
@@ -304,7 +304,7 @@ class LabelsLabel implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -328,7 +328,7 @@ class LabelsLabel implements ModelInterface, ArrayAccess
     /**
      * Gets userCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUserCount()
     {

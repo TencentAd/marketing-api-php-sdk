@@ -100,7 +100,7 @@ class WechatPagesGrantinfoApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\WechatPagesGrantinfoGetResponse
+     * @return \TencentAds\Model\WechatPagesGrantinfoGetResponse|mixed
      */
     public function wechatPagesGrantinfoGet($accountId, $searchKey = null, $page = null, $pageSize = null, $fields = null)
     {

@@ -238,7 +238,7 @@ class DetailFunnelStruct implements ModelInterface, ArrayAccess
     /**
      * Gets targetingWidenessRate
      *
-     * @return \TencentAds\Model\TargetingWidenessRateFunnelStruct
+     * @return \TencentAds\Model\TargetingWidenessRateFunnelStruct|mixed
      */
     public function getTargetingWidenessRate()
     {
@@ -262,7 +262,7 @@ class DetailFunnelStruct implements ModelInterface, ArrayAccess
     /**
      * Gets competeWinRate
      *
-     * @return \TencentAds\Model\CompeteWinRateFunnelStruct
+     * @return \TencentAds\Model\CompeteWinRateFunnelStruct|mixed
      */
     public function getCompeteWinRate()
     {
@@ -286,7 +286,7 @@ class DetailFunnelStruct implements ModelInterface, ArrayAccess
     /**
      * Gets exposureCount
      *
-     * @return \TencentAds\Model\ExposureCountFunnelStruct
+     * @return \TencentAds\Model\ExposureCountFunnelStruct|mixed
      */
     public function getExposureCount()
     {
@@ -310,7 +310,7 @@ class DetailFunnelStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ctr
      *
-     * @return \TencentAds\Model\CtrFunnelStruct
+     * @return \TencentAds\Model\CtrFunnelStruct|mixed
      */
     public function getCtr()
     {
@@ -334,7 +334,7 @@ class DetailFunnelStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cvr
      *
-     * @return \TencentAds\Model\CvrFunnelStruct
+     * @return \TencentAds\Model\CvrFunnelStruct|mixed
      */
     public function getCvr()
     {
@@ -358,7 +358,7 @@ class DetailFunnelStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cpa
      *
-     * @return \TencentAds\Model\CpaFunnelStruct
+     * @return \TencentAds\Model\CpaFunnelStruct|mixed
      */
     public function getCpa()
     {

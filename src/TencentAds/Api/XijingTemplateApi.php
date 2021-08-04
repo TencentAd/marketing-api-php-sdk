@@ -98,7 +98,7 @@ class XijingTemplateApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\XijingTemplateGetResponse
+     * @return \TencentAds\Model\XijingTemplateGetResponse|mixed
      */
     public function xijingTemplateGet($accountId, $templateId, $fields = null)
     {

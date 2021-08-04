@@ -256,7 +256,7 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets elementType
      *
-     * @return \TencentAds\Model\CanvasPageElementType
+     * @return \TencentAds\Model\CanvasPageElementType|mixed
      */
     public function getElementType()
     {
@@ -280,7 +280,7 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets topImageSpec
      *
-     * @return \TencentAds\Model\TopImageSpec
+     * @return \TencentAds\Model\TopImageSpec|mixed
      */
     public function getTopImageSpec()
     {
@@ -304,7 +304,7 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets topSliderSpec
      *
-     * @return \TencentAds\Model\TopSliderSpec
+     * @return \TencentAds\Model\TopSliderSpec|mixed
      */
     public function getTopSliderSpec()
     {
@@ -328,7 +328,7 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets topVideoSpec
      *
-     * @return \TencentAds\Model\TopVideoSpec
+     * @return \TencentAds\Model\TopVideoSpec|mixed
      */
     public function getTopVideoSpec()
     {
@@ -352,7 +352,7 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets imageSpec
      *
-     * @return \TencentAds\Model\ImageSpec
+     * @return \TencentAds\Model\ImageSpec|mixed
      */
     public function getImageSpec()
     {
@@ -376,7 +376,7 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets sliderSpec
      *
-     * @return \TencentAds\Model\SliderSpec
+     * @return \TencentAds\Model\SliderSpec|mixed
      */
     public function getSliderSpec()
     {
@@ -400,7 +400,7 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoSpec
      *
-     * @return \TencentAds\Model\VideoSpec
+     * @return \TencentAds\Model\VideoSpec|mixed
      */
     public function getVideoSpec()
     {
@@ -424,7 +424,7 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets textSpec
      *
-     * @return \TencentAds\Model\TextSpec
+     * @return \TencentAds\Model\TextSpec|mixed
      */
     public function getTextSpec()
     {
@@ -448,7 +448,7 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appDownloadSpec
      *
-     * @return \TencentAds\Model\CanvasAppDownloadSpecType
+     * @return \TencentAds\Model\CanvasAppDownloadSpecType|mixed
      */
     public function getAppDownloadSpec()
     {

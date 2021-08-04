@@ -238,7 +238,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdgroupName()
     {
@@ -262,7 +262,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
     /**
      * Gets beginDate
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBeginDate()
     {
@@ -286,7 +286,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
     /**
      * Gets configuredStatus
      *
-     * @return \TencentAds\Model\AdStatus
+     * @return \TencentAds\Model\AdStatus|mixed
      */
     public function getConfiguredStatus()
     {
@@ -310,7 +310,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
     /**
      * Gets targeting
      *
-     * @return \TencentAds\Model\DpWriteTargetingSetting
+     * @return \TencentAds\Model\DpWriteTargetingSetting|mixed
      */
     public function getTargeting()
     {
@@ -334,7 +334,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
     /**
      * Gets poiList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getPoiList()
     {
@@ -358,7 +358,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
     /**
      * Gets poiRadius
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPoiRadius()
     {

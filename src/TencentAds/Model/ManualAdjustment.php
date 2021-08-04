@@ -220,7 +220,7 @@ class ManualAdjustment implements ModelInterface, ArrayAccess
     /**
      * Gets sizeAdjustment
      *
-     * @return \TencentAds\Model\SizeAdjustment
+     * @return \TencentAds\Model\SizeAdjustment|mixed
      */
     public function getSizeAdjustment()
     {
@@ -244,7 +244,7 @@ class ManualAdjustment implements ModelInterface, ArrayAccess
     /**
      * Gets lengthAdjustment
      *
-     * @return \TencentAds\Model\LengthAdjustment
+     * @return \TencentAds\Model\LengthAdjustment|mixed
      */
     public function getLengthAdjustment()
     {
@@ -268,7 +268,7 @@ class ManualAdjustment implements ModelInterface, ArrayAccess
     /**
      * Gets musicAdjustment
      *
-     * @return \TencentAds\Model\MusicAdjustment
+     * @return \TencentAds\Model\MusicAdjustment|mixed
      */
     public function getMusicAdjustment()
     {

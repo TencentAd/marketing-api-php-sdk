@@ -237,7 +237,7 @@ class UnionPositionPackagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -261,7 +261,7 @@ class UnionPositionPackagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets unionPackageName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUnionPackageName()
     {
@@ -285,7 +285,7 @@ class UnionPositionPackagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObjectType
+     * @return \TencentAds\Model\PromotedObjectType|mixed
      */
     public function getPromotedObjectType()
     {
@@ -309,7 +309,7 @@ class UnionPositionPackagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPromotedObjectId()
     {
@@ -333,7 +333,7 @@ class UnionPositionPackagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets unionPackageType
      *
-     * @return \TencentAds\Model\UnionPackageType
+     * @return \TencentAds\Model\UnionPackageType|mixed
      */
     public function getUnionPackageType()
     {
@@ -357,7 +357,7 @@ class UnionPositionPackagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets unionPositionIdList
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getUnionPositionIdList()
     {

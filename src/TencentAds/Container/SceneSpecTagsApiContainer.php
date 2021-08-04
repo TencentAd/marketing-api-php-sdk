@@ -30,7 +30,7 @@ class SceneSpecTagsApiContainer extends ApiContainer
     /**
      * Handle SceneSpecTagsApi sceneSpecTagsGet function
      * @param array params
-     * @return \TencentAds\Model\SceneSpecTagsGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

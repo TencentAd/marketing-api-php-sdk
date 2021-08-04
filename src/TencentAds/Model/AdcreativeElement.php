@@ -262,7 +262,7 @@ class AdcreativeElement implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return string
+     * @return string|mixed
      */
     public function getName()
     {
@@ -286,7 +286,7 @@ class AdcreativeElement implements ModelInterface, ArrayAccess
     /**
      * Gets elementType
      *
-     * @return \TencentAds\Model\ElementType
+     * @return \TencentAds\Model\ElementType|mixed
      */
     public function getElementType()
     {
@@ -310,7 +310,7 @@ class AdcreativeElement implements ModelInterface, ArrayAccess
     /**
      * Gets fieldType
      *
-     * @return \TencentAds\Model\FieldType
+     * @return \TencentAds\Model\FieldType|mixed
      */
     public function getFieldType()
     {
@@ -334,7 +334,7 @@ class AdcreativeElement implements ModelInterface, ArrayAccess
     /**
      * Gets required
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getRequired()
     {
@@ -358,7 +358,7 @@ class AdcreativeElement implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -382,7 +382,7 @@ class AdcreativeElement implements ModelInterface, ArrayAccess
     /**
      * Gets parentName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getParentName()
     {
@@ -406,7 +406,7 @@ class AdcreativeElement implements ModelInterface, ArrayAccess
     /**
      * Gets enumProperty
      *
-     * @return \TencentAds\Model\AdcreativeElementEnumProperty
+     * @return \TencentAds\Model\AdcreativeElementEnumProperty|mixed
      */
     public function getEnumProperty()
     {
@@ -430,7 +430,7 @@ class AdcreativeElement implements ModelInterface, ArrayAccess
     /**
      * Gets arrayProperty
      *
-     * @return \TencentAds\Model\AdcreativeElementArrayProperty
+     * @return \TencentAds\Model\AdcreativeElementArrayProperty|mixed
      */
     public function getArrayProperty()
     {
@@ -454,7 +454,7 @@ class AdcreativeElement implements ModelInterface, ArrayAccess
     /**
      * Gets structProperty
      *
-     * @return \TencentAds\Model\AdcreativeElementStructProperty
+     * @return \TencentAds\Model\AdcreativeElementStructProperty|mixed
      */
     public function getStructProperty()
     {
@@ -478,7 +478,7 @@ class AdcreativeElement implements ModelInterface, ArrayAccess
     /**
      * Gets restriction
      *
-     * @return \TencentAds\Model\AdcreativeElementRestriction
+     * @return \TencentAds\Model\AdcreativeElementRestriction|mixed
      */
     public function getRestriction()
     {

@@ -214,7 +214,7 @@ class DetailCpaDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectData
      *
-     * @return \TencentAds\Model\CpaEffectDataItem[]
+     * @return \TencentAds\Model\CpaEffectDataItem[]|mixed
      */
     public function getEffectData()
     {
@@ -238,7 +238,7 @@ class DetailCpaDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectDataTrends
      *
-     * @return \TencentAds\Model\CpaEffectDataTrendsItem[]
+     * @return \TencentAds\Model\CpaEffectDataTrendsItem[]|mixed
      */
     public function getEffectDataTrends()
     {

@@ -250,7 +250,7 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets poiId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPoiId()
     {
@@ -274,7 +274,7 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets localStoreName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLocalStoreName()
     {
@@ -298,7 +298,7 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets localStoreProvince
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLocalStoreProvince()
     {
@@ -322,7 +322,7 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets localStoreCity
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLocalStoreCity()
     {
@@ -346,7 +346,7 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets localStoreAddress
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLocalStoreAddress()
     {
@@ -370,7 +370,7 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {
@@ -394,7 +394,7 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLastModifiedTime()
     {
@@ -418,7 +418,7 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets systemStatus
      *
-     * @return \TencentAds\Model\SysStatus
+     * @return \TencentAds\Model\SysStatus|mixed
      */
     public function getSystemStatus()
     {

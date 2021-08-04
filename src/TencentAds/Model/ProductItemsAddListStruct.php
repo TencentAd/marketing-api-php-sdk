@@ -214,7 +214,7 @@ class ProductItemsAddListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductId()
     {
@@ -238,7 +238,7 @@ class ProductItemsAddListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productOuterId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductOuterId()
     {

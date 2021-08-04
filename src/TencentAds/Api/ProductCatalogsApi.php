@@ -96,7 +96,7 @@ class ProductCatalogsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ProductCatalogsAddResponse
+     * @return \TencentAds\Model\ProductCatalogsAddResponse|mixed
      */
     public function productCatalogsAdd($data)
     {
@@ -383,7 +383,7 @@ class ProductCatalogsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ProductCatalogsGetResponse
+     * @return \TencentAds\Model\ProductCatalogsGetResponse|mixed
      */
     public function productCatalogsGet($accountId, $catalogId = null, $catalogName = null, $page = null, $pageSize = null, $fields = null)
     {

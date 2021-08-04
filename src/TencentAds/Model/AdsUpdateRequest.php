@@ -243,7 +243,7 @@ class AdsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets adId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdId()
     {
@@ -267,7 +267,7 @@ class AdsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets adName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdName()
     {
@@ -291,7 +291,7 @@ class AdsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets configuredStatus
      *
-     * @return \TencentAds\Model\AdStatus
+     * @return \TencentAds\Model\AdStatus|mixed
      */
     public function getConfiguredStatus()
     {
@@ -315,7 +315,7 @@ class AdsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets impressionTrackingUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImpressionTrackingUrl()
     {
@@ -339,7 +339,7 @@ class AdsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets clickTrackingUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getClickTrackingUrl()
     {
@@ -363,7 +363,7 @@ class AdsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets feedsInteractionEnabled
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getFeedsInteractionEnabled()
     {
@@ -387,7 +387,7 @@ class AdsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {

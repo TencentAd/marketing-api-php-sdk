@@ -310,7 +310,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Gets targeting
      *
-     * @return \TencentAds\Model\OptimizeStatus
+     * @return \TencentAds\Model\OptimizeStatus|mixed
      */
     public function getTargeting()
     {
@@ -334,7 +334,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Gets targetingExpand
      *
-     * @return \TencentAds\Model\OptimizeStatus
+     * @return \TencentAds\Model\OptimizeStatus|mixed
      */
     public function getTargetingExpand()
     {
@@ -358,7 +358,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Gets targetingLocard
      *
-     * @return \TencentAds\Model\OptimizeStatus
+     * @return \TencentAds\Model\OptimizeStatus|mixed
      */
     public function getTargetingLocard()
     {
@@ -382,7 +382,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Gets bid
      *
-     * @return \TencentAds\Model\OptimizeStatus
+     * @return \TencentAds\Model\OptimizeStatus|mixed
      */
     public function getBid()
     {
@@ -406,7 +406,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Gets bidStrategy
      *
-     * @return \TencentAds\Model\OptimizeStatus
+     * @return \TencentAds\Model\OptimizeStatus|mixed
      */
     public function getBidStrategy()
     {
@@ -430,7 +430,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Gets bidAmount
      *
-     * @return \TencentAds\Model\OptimizeStatus
+     * @return \TencentAds\Model\OptimizeStatus|mixed
      */
     public function getBidAmount()
     {
@@ -454,7 +454,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Gets budget
      *
-     * @return \TencentAds\Model\OptimizeStatus
+     * @return \TencentAds\Model\OptimizeStatus|mixed
      */
     public function getBudget()
     {
@@ -478,7 +478,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Gets dailyBudget
      *
-     * @return \TencentAds\Model\OptimizeStatus
+     * @return \TencentAds\Model\OptimizeStatus|mixed
      */
     public function getDailyBudget()
     {
@@ -502,7 +502,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Gets accountBalance
      *
-     * @return \TencentAds\Model\OptimizeStatus
+     * @return \TencentAds\Model\OptimizeStatus|mixed
      */
     public function getAccountBalance()
     {
@@ -526,7 +526,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Gets targetingStatusDesc
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTargetingStatusDesc()
     {
@@ -550,7 +550,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Gets targetingExpandStatusDesc
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTargetingExpandStatusDesc()
     {
@@ -574,7 +574,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Gets targetingLocardStatusDesc
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTargetingLocardStatusDesc()
     {
@@ -598,7 +598,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Gets bidStatusDesc
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBidStatusDesc()
     {
@@ -622,7 +622,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Gets bidStrategyStatusDesc
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBidStrategyStatusDesc()
     {
@@ -646,7 +646,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Gets bidAmountStatusDesc
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBidAmountStatusDesc()
     {
@@ -670,7 +670,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Gets budgetStatusDesc
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBudgetStatusDesc()
     {
@@ -694,7 +694,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Gets dailyBudgetStatusDesc
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDailyBudgetStatusDesc()
     {
@@ -718,7 +718,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Gets accountBalanceStatusDesc
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAccountBalanceStatusDesc()
     {

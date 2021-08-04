@@ -304,7 +304,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets campaignId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampaignId()
     {
@@ -328,7 +328,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -352,7 +352,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdId()
     {
@@ -376,7 +376,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdName()
     {
@@ -400,7 +400,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adcreativeId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdcreativeId()
     {
@@ -424,7 +424,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adcreative
      *
-     * @return \TencentAds\Model\Adcreative
+     * @return \TencentAds\Model\Adcreative|mixed
      */
     public function getAdcreative()
     {
@@ -448,7 +448,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets configuredStatus
      *
-     * @return \TencentAds\Model\AdStatus
+     * @return \TencentAds\Model\AdStatus|mixed
      */
     public function getConfiguredStatus()
     {
@@ -472,7 +472,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets systemStatus
      *
-     * @return \TencentAds\Model\SysStatus
+     * @return \TencentAds\Model\SysStatus|mixed
      */
     public function getSystemStatus()
     {
@@ -496,7 +496,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets auditSpec
      *
-     * @return \TencentAds\Model\AuditSpecStruct[]
+     * @return \TencentAds\Model\AuditSpecStruct[]|mixed
      */
     public function getAuditSpec()
     {
@@ -520,7 +520,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets impressionTrackingUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImpressionTrackingUrl()
     {
@@ -544,7 +544,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets clickTrackingUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getClickTrackingUrl()
     {
@@ -568,7 +568,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets feedsInteractionEnabled
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getFeedsInteractionEnabled()
     {
@@ -592,7 +592,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets isDeleted
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getIsDeleted()
     {
@@ -616,7 +616,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets isDynamicCreative
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getIsDynamicCreative()
     {
@@ -640,7 +640,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {
@@ -664,7 +664,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLastModifiedTime()
     {
@@ -688,7 +688,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets rejectMessage
      *
-     * @return string
+     * @return string|mixed
      */
     public function getRejectMessage()
     {

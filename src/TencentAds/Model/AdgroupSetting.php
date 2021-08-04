@@ -268,7 +268,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -292,7 +292,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdgroupName()
     {
@@ -316,7 +316,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Gets automaticSiteEnabled
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getAutomaticSiteEnabled()
     {
@@ -340,7 +340,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Gets siteSet
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getSiteSet()
     {
@@ -364,7 +364,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Gets bidType
      *
-     * @return \TencentAds\Model\CostType
+     * @return \TencentAds\Model\CostType|mixed
      */
     public function getBidType()
     {
@@ -388,7 +388,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Gets bidAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBidAmount()
     {
@@ -412,7 +412,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObjectType
+     * @return \TencentAds\Model\PromotedObjectType|mixed
      */
     public function getPromotedObjectType()
     {
@@ -436,7 +436,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Gets billingEvent
      *
-     * @return \TencentAds\Model\BillingEvent
+     * @return \TencentAds\Model\BillingEvent|mixed
      */
     public function getBillingEvent()
     {
@@ -460,7 +460,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Gets optimizationGoal
      *
-     * @return \TencentAds\Model\OptimizationGoal
+     * @return \TencentAds\Model\OptimizationGoal|mixed
      */
     public function getOptimizationGoal()
     {
@@ -484,7 +484,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPromotedObjectId()
     {
@@ -508,7 +508,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Gets timeSeries
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTimeSeries()
     {

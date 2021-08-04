@@ -274,7 +274,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Gets audienceId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAudienceId()
     {
@@ -298,7 +298,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -322,7 +322,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -346,7 +346,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Gets campaignId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampaignId()
     {
@@ -370,7 +370,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Gets wechatAdgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatAdgroupId()
     {
@@ -394,7 +394,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Gets wechatCampaignId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatCampaignId()
     {
@@ -418,7 +418,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Gets modelId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getModelId()
     {
@@ -442,7 +442,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Gets audiencePredictTaskId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAudiencePredictTaskId()
     {
@@ -466,7 +466,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Gets actionType
      *
-     * @return \TencentAds\Model\AdActionType
+     * @return \TencentAds\Model\AdActionType|mixed
      */
     public function getActionType()
     {
@@ -490,7 +490,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Gets cost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCost()
     {
@@ -514,7 +514,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Gets actionCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getActionCount()
     {
@@ -538,7 +538,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Gets userCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUserCount()
     {

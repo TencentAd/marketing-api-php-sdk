@@ -220,7 +220,7 @@ class GrantInfo implements ModelInterface, ArrayAccess
     /**
      * Gets audienceId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAudienceId()
     {
@@ -244,7 +244,7 @@ class GrantInfo implements ModelInterface, ArrayAccess
     /**
      * Gets grantType
      *
-     * @return \TencentAds\Model\AudienceGrantType
+     * @return \TencentAds\Model\AudienceGrantType|mixed
      */
     public function getGrantType()
     {
@@ -268,7 +268,7 @@ class GrantInfo implements ModelInterface, ArrayAccess
     /**
      * Gets grantSpec
      *
-     * @return \TencentAds\Model\AudienceGrantRelationsGetGrantSpec
+     * @return \TencentAds\Model\AudienceGrantRelationsGetGrantSpec|mixed
      */
     public function getGrantSpec()
     {

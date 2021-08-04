@@ -262,7 +262,7 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdgroupName()
     {
@@ -286,7 +286,7 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Gets beginDate
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBeginDate()
     {
@@ -310,7 +310,7 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Gets endDate
      *
-     * @return string
+     * @return string|mixed
      */
     public function getEndDate()
     {
@@ -334,7 +334,7 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Gets optimizationGoal
      *
-     * @return \TencentAds\Model\OptimizationGoal
+     * @return \TencentAds\Model\OptimizationGoal|mixed
      */
     public function getOptimizationGoal()
     {
@@ -358,7 +358,7 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Gets totalBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTotalBudget()
     {
@@ -382,7 +382,7 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Gets targeting
      *
-     * @return \TencentAds\Model\DpWriteTargetingSetting
+     * @return \TencentAds\Model\DpWriteTargetingSetting|mixed
      */
     public function getTargeting()
     {
@@ -406,7 +406,7 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Gets poiList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getPoiList()
     {
@@ -430,7 +430,7 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Gets poiRadius
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPoiRadius()
     {
@@ -454,7 +454,7 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Gets packageLevel
      *
-     * @return \TencentAds\Model\PackageLevel
+     * @return \TencentAds\Model\PackageLevel|mixed
      */
     public function getPackageLevel()
     {
@@ -478,7 +478,7 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Gets localBusinessMode
      *
-     * @return \TencentAds\Model\EcoLocalBusinessMode
+     * @return \TencentAds\Model\EcoLocalBusinessMode|mixed
      */
     public function getLocalBusinessMode()
     {

@@ -220,7 +220,7 @@ class WechatScene implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountMediaCategory
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getOfficialAccountMediaCategory()
     {
@@ -244,7 +244,7 @@ class WechatScene implements ModelInterface, ArrayAccess
     /**
      * Gets miniProgramAndMiniGame
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getMiniProgramAndMiniGame()
     {
@@ -268,7 +268,7 @@ class WechatScene implements ModelInterface, ArrayAccess
     /**
      * Gets payScene
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getPayScene()
     {

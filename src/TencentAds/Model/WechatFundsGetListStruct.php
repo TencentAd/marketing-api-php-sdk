@@ -226,7 +226,7 @@ class WechatFundsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets fundType
      *
-     * @return \TencentAds\Model\WechatMpOpenFundType
+     * @return \TencentAds\Model\WechatMpOpenFundType|mixed
      */
     public function getFundType()
     {
@@ -250,7 +250,7 @@ class WechatFundsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets balance
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBalance()
     {
@@ -274,7 +274,7 @@ class WechatFundsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets creditRollSpec
      *
-     * @return \TencentAds\Model\CreditRollSpec
+     * @return \TencentAds\Model\CreditRollSpec|mixed
      */
     public function getCreditRollSpec()
     {
@@ -298,7 +298,7 @@ class WechatFundsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniprogramSpec
      *
-     * @return \TencentAds\Model\MiniprogramAmount
+     * @return \TencentAds\Model\MiniprogramAmount|mixed
      */
     public function getMiniprogramSpec()
     {

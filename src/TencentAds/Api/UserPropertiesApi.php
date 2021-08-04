@@ -96,7 +96,7 @@ class UserPropertiesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\UserPropertiesAddResponse
+     * @return \TencentAds\Model\UserPropertiesAddResponse|mixed
      */
     public function userPropertiesAdd($data)
     {

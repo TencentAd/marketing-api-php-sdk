@@ -243,7 +243,7 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -267,7 +267,7 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets assetType
      *
-     * @return \TencentAds\Model\AssetType
+     * @return \TencentAds\Model\AssetType|mixed
      */
     public function getAssetType()
     {
@@ -291,7 +291,7 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets assetPermissionSpec
      *
-     * @return \TencentAds\Model\AssetPermissionSpecStruct[]
+     * @return \TencentAds\Model\AssetPermissionSpecStruct[]|mixed
      */
     public function getAssetPermissionSpec()
     {
@@ -315,7 +315,7 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets licensingAccountIdList
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getLicensingAccountIdList()
     {
@@ -339,7 +339,7 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets licensingIdType
      *
-     * @return \TencentAds\Model\AssetAccountType
+     * @return \TencentAds\Model\AssetAccountType|mixed
      */
     public function getLicensingIdType()
     {
@@ -363,7 +363,7 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets pathId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPathId()
     {
@@ -387,7 +387,7 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets permissionList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getPermissionList()
     {

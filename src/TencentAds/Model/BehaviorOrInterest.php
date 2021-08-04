@@ -220,7 +220,7 @@ class BehaviorOrInterest implements ModelInterface, ArrayAccess
     /**
      * Gets interest
      *
-     * @return \TencentAds\Model\Interest
+     * @return \TencentAds\Model\Interest|mixed
      */
     public function getInterest()
     {
@@ -244,7 +244,7 @@ class BehaviorOrInterest implements ModelInterface, ArrayAccess
     /**
      * Gets behavior
      *
-     * @return \TencentAds\Model\BehaviorStruct[]
+     * @return \TencentAds\Model\BehaviorStruct[]|mixed
      */
     public function getBehavior()
     {
@@ -268,7 +268,7 @@ class BehaviorOrInterest implements ModelInterface, ArrayAccess
     /**
      * Gets intention
      *
-     * @return \TencentAds\Model\Intention
+     * @return \TencentAds\Model\Intention|mixed
      */
     public function getIntention()
     {

@@ -244,7 +244,7 @@ class ProductCatalogsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productCatalogId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProductCatalogId()
     {
@@ -268,7 +268,7 @@ class ProductCatalogsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productCatalogName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductCatalogName()
     {
@@ -292,7 +292,7 @@ class ProductCatalogsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productCatalogType
      *
-     * @return \TencentAds\Model\CatalogType
+     * @return \TencentAds\Model\CatalogType|mixed
      */
     public function getProductCatalogType()
     {
@@ -316,7 +316,7 @@ class ProductCatalogsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productCatalogVertical
      *
-     * @return \TencentAds\Model\CatalogVertical
+     * @return \TencentAds\Model\CatalogVertical|mixed
      */
     public function getProductCatalogVertical()
     {
@@ -340,7 +340,7 @@ class ProductCatalogsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productCatalogStatus
      *
-     * @return \TencentAds\Model\CatalogStatus
+     * @return \TencentAds\Model\CatalogStatus|mixed
      */
     public function getProductCatalogStatus()
     {
@@ -364,7 +364,7 @@ class ProductCatalogsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productRecommendMethods
      *
-     * @return \TencentAds\Model\RecommendMethod[]
+     * @return \TencentAds\Model\RecommendMethod[]|mixed
      */
     public function getProductRecommendMethods()
     {
@@ -388,7 +388,7 @@ class ProductCatalogsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets deepLinkEnabled
      *
-     * @return \TencentAds\Model\DeepLinkEnabled
+     * @return \TencentAds\Model\DeepLinkEnabled|mixed
      */
     public function getDeepLinkEnabled()
     {

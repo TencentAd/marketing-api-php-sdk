@@ -214,7 +214,7 @@ class SupportDynamicAbilitySpecList implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicAbilityType
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getDynamicAbilityType()
     {
@@ -238,7 +238,7 @@ class SupportDynamicAbilitySpecList implements ModelInterface, ArrayAccess
     /**
      * Gets productItemDisplayQuantity
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getProductItemDisplayQuantity()
     {

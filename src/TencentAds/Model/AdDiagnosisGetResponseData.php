@@ -207,7 +207,7 @@ class AdDiagnosisGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\BatchAdDiagnosisListItem[]
+     * @return \TencentAds\Model\BatchAdDiagnosisListItem[]|mixed
      */
     public function getList()
     {

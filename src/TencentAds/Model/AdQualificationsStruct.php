@@ -256,7 +256,7 @@ class AdQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets qualificationId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getQualificationId()
     {
@@ -280,7 +280,7 @@ class AdQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets qualificationCode
      *
-     * @return string
+     * @return string|mixed
      */
     public function getQualificationCode()
     {
@@ -304,7 +304,7 @@ class AdQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets imageIdList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getImageIdList()
     {
@@ -328,7 +328,7 @@ class AdQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets qualificationStatus
      *
-     * @return \TencentAds\Model\QualificationStatus
+     * @return \TencentAds\Model\QualificationStatus|mixed
      */
     public function getQualificationStatus()
     {
@@ -352,7 +352,7 @@ class AdQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets expiredDate
      *
-     * @return string
+     * @return string|mixed
      */
     public function getExpiredDate()
     {
@@ -376,7 +376,7 @@ class AdQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets isMdmShared
      *
-     * @return \TencentAds\Model\AdQualificationSharedStatus
+     * @return \TencentAds\Model\AdQualificationSharedStatus|mixed
      */
     public function getIsMdmShared()
     {
@@ -400,7 +400,7 @@ class AdQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets rejectMessage
      *
-     * @return string
+     * @return string|mixed
      */
     public function getRejectMessage()
     {
@@ -424,7 +424,7 @@ class AdQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {
@@ -448,7 +448,7 @@ class AdQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLastModifiedTime()
     {

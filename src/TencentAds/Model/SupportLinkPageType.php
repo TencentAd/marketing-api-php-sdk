@@ -214,7 +214,7 @@ class SupportLinkPageType implements ModelInterface, ArrayAccess
     /**
      * Gets required
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getRequired()
     {
@@ -238,7 +238,7 @@ class SupportLinkPageType implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\SupportLinkPageStruct[]
+     * @return \TencentAds\Model\SupportLinkPageStruct[]|mixed
      */
     public function getList()
     {

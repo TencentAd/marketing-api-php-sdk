@@ -208,7 +208,7 @@ class UrlMatchRule implements ModelInterface, ArrayAccess
     /**
      * Gets urlMatcherGroup
      *
-     * @return \TencentAds\Model\UrlMatcherGroup[]
+     * @return \TencentAds\Model\UrlMatcherGroup[]|mixed
      */
     public function getUrlMatcherGroup()
     {

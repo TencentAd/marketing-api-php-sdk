@@ -214,7 +214,7 @@ class UpdateBidAmountStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -238,7 +238,7 @@ class UpdateBidAmountStruct implements ModelInterface, ArrayAccess
     /**
      * Gets bidAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBidAmount()
     {

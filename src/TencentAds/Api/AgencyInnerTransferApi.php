@@ -96,7 +96,7 @@ class AgencyInnerTransferApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AgencyInnerTransferAddResponse
+     * @return \TencentAds\Model\AgencyInnerTransferAddResponse|mixed
      */
     public function agencyInnerTransferAdd($data)
     {

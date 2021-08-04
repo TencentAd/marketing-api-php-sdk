@@ -232,7 +232,7 @@ class IndividualQualification implements ModelInterface, ArrayAccess
     /**
      * Gets identificationUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIdentificationUrl()
     {
@@ -256,7 +256,7 @@ class IndividualQualification implements ModelInterface, ArrayAccess
     /**
      * Gets identificationUrl2
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIdentificationUrl2()
     {
@@ -280,7 +280,7 @@ class IndividualQualification implements ModelInterface, ArrayAccess
     /**
      * Gets photoUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPhotoUrl()
     {
@@ -304,7 +304,7 @@ class IndividualQualification implements ModelInterface, ArrayAccess
     /**
      * Gets identificationFrontImageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIdentificationFrontImageId()
     {
@@ -328,7 +328,7 @@ class IndividualQualification implements ModelInterface, ArrayAccess
     /**
      * Gets identificationBackImageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIdentificationBackImageId()
     {

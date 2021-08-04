@@ -244,7 +244,7 @@ class Tag implements ModelInterface, ArrayAccess
     /**
      * Gets tagId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTagId()
     {
@@ -268,7 +268,7 @@ class Tag implements ModelInterface, ArrayAccess
     /**
      * Gets parentTagId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getParentTagId()
     {
@@ -292,7 +292,7 @@ class Tag implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return string
+     * @return string|mixed
      */
     public function getName()
     {
@@ -316,7 +316,7 @@ class Tag implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -340,7 +340,7 @@ class Tag implements ModelInterface, ArrayAccess
     /**
      * Gets tagCode
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTagCode()
     {
@@ -364,7 +364,7 @@ class Tag implements ModelInterface, ArrayAccess
     /**
      * Gets userCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUserCount()
     {
@@ -388,7 +388,7 @@ class Tag implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCreatedTime()
     {

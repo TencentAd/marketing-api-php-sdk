@@ -279,7 +279,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicCreativeId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDynamicCreativeId()
     {
@@ -303,7 +303,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicCreativeTemplateId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDynamicCreativeTemplateId()
     {
@@ -327,7 +327,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicCreativeElements
      *
-     * @return \TencentAds\Model\DynamicCreativeElements
+     * @return \TencentAds\Model\DynamicCreativeElements|mixed
      */
     public function getDynamicCreativeElements()
     {
@@ -351,7 +351,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets deepLinkUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDeepLinkUrl()
     {
@@ -375,7 +375,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets impressionTrackingUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImpressionTrackingUrl()
     {
@@ -399,7 +399,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets clickTrackingUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getClickTrackingUrl()
     {
@@ -423,7 +423,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets feedsVideoCommentSwitch
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getFeedsVideoCommentSwitch()
     {
@@ -447,7 +447,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets unionMarketSwitch
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getUnionMarketSwitch()
     {
@@ -471,7 +471,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets profileId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProfileId()
     {
@@ -495,7 +495,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets videoEndPage
      *
-     * @return \TencentAds\Model\VideoEndPageSpec
+     * @return \TencentAds\Model\VideoEndPageSpec|mixed
      */
     public function getVideoEndPage()
     {
@@ -519,7 +519,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets barrageList
      *
-     * @return \TencentAds\Model\BarrageListCreateStruct[]
+     * @return \TencentAds\Model\BarrageListCreateStruct[]|mixed
      */
     public function getBarrageList()
     {
@@ -543,7 +543,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets appGiftPackCode
      *
-     * @return \TencentAds\Model\AppGiftPackCode
+     * @return \TencentAds\Model\AppGiftPackCode|mixed
      */
     public function getAppGiftPackCode()
     {
@@ -567,7 +567,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {

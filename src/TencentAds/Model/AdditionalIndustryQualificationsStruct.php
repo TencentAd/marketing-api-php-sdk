@@ -262,7 +262,7 @@ class AdditionalIndustryQualificationsStruct implements ModelInterface, ArrayAcc
     /**
      * Gets qualificationId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getQualificationId()
     {
@@ -286,7 +286,7 @@ class AdditionalIndustryQualificationsStruct implements ModelInterface, ArrayAcc
     /**
      * Gets systemIndustryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSystemIndustryId()
     {
@@ -310,7 +310,7 @@ class AdditionalIndustryQualificationsStruct implements ModelInterface, ArrayAcc
     /**
      * Gets businessScopeId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBusinessScopeId()
     {
@@ -334,7 +334,7 @@ class AdditionalIndustryQualificationsStruct implements ModelInterface, ArrayAcc
     /**
      * Gets qualificationCode
      *
-     * @return string
+     * @return string|mixed
      */
     public function getQualificationCode()
     {
@@ -358,7 +358,7 @@ class AdditionalIndustryQualificationsStruct implements ModelInterface, ArrayAcc
     /**
      * Gets imageIdList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getImageIdList()
     {
@@ -382,7 +382,7 @@ class AdditionalIndustryQualificationsStruct implements ModelInterface, ArrayAcc
     /**
      * Gets qualificationStatus
      *
-     * @return \TencentAds\Model\QualificationStatus
+     * @return \TencentAds\Model\QualificationStatus|mixed
      */
     public function getQualificationStatus()
     {
@@ -406,7 +406,7 @@ class AdditionalIndustryQualificationsStruct implements ModelInterface, ArrayAcc
     /**
      * Gets expiredDate
      *
-     * @return string
+     * @return string|mixed
      */
     public function getExpiredDate()
     {
@@ -430,7 +430,7 @@ class AdditionalIndustryQualificationsStruct implements ModelInterface, ArrayAcc
     /**
      * Gets rejectMessage
      *
-     * @return string
+     * @return string|mixed
      */
     public function getRejectMessage()
     {
@@ -454,7 +454,7 @@ class AdditionalIndustryQualificationsStruct implements ModelInterface, ArrayAcc
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {
@@ -478,7 +478,7 @@ class AdditionalIndustryQualificationsStruct implements ModelInterface, ArrayAcc
     /**
      * Gets lastModifiedTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLastModifiedTime()
     {

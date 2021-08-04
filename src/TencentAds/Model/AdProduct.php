@@ -214,7 +214,7 @@ class AdProduct implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\AudienceProductType
+     * @return \TencentAds\Model\AudienceProductType|mixed
      */
     public function getPromotedObjectType()
     {
@@ -238,7 +238,7 @@ class AdProduct implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPromotedObjectId()
     {

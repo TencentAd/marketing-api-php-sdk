@@ -243,7 +243,7 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -267,7 +267,7 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return string
+     * @return string|mixed
      */
     public function getName()
     {
@@ -291,7 +291,7 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \TencentAds\Model\AudienceType
+     * @return \TencentAds\Model\AudienceType|mixed
      */
     public function getType()
     {
@@ -315,7 +315,7 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -339,7 +339,7 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets audienceSpec
      *
-     * @return \TencentAds\Model\AudienceSpec
+     * @return \TencentAds\Model\AudienceSpec|mixed
      */
     public function getAudienceSpec()
     {
@@ -363,7 +363,7 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets platform
      *
-     * @return \TencentAds\Model\DataPlatform
+     * @return \TencentAds\Model\DataPlatform|mixed
      */
     public function getPlatform()
     {
@@ -387,7 +387,7 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets externalAudienceId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getExternalAudienceId()
     {

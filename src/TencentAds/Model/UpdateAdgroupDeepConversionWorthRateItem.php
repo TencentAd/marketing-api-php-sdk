@@ -214,7 +214,7 @@ class UpdateAdgroupDeepConversionWorthRateItem implements ModelInterface, ArrayA
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -238,7 +238,7 @@ class UpdateAdgroupDeepConversionWorthRateItem implements ModelInterface, ArrayA
     /**
      * Gets deepConversionWorthRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getDeepConversionWorthRate()
     {

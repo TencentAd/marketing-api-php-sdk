@@ -100,7 +100,7 @@ class BatchAsyncRequestSpecificationApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\BatchAsyncRequestSpecificationGetResponse
+     * @return \TencentAds\Model\BatchAsyncRequestSpecificationGetResponse|mixed
      */
     public function batchAsyncRequestSpecificationGet($accountId, $taskId, $page = null, $pageSize = null, $fields = null)
     {

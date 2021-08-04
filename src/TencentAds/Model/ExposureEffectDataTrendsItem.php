@@ -214,7 +214,7 @@ class ExposureEffectDataTrendsItem implements ModelInterface, ArrayAccess
     /**
      * Gets date
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDate()
     {
@@ -238,7 +238,7 @@ class ExposureEffectDataTrendsItem implements ModelInterface, ArrayAccess
     /**
      * Gets trends
      *
-     * @return \TencentAds\Model\PointStruct[]
+     * @return \TencentAds\Model\PointStruct[]|mixed
      */
     public function getTrends()
     {

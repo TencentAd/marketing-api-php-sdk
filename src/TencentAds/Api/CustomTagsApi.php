@@ -96,7 +96,7 @@ class CustomTagsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CustomTagsAddResponse
+     * @return \TencentAds\Model\CustomTagsAddResponse|mixed
      */
     public function customTagsAdd($data)
     {
@@ -378,7 +378,7 @@ class CustomTagsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CustomTagsDeleteResponse
+     * @return \TencentAds\Model\CustomTagsDeleteResponse|mixed
      */
     public function customTagsDelete($data)
     {
@@ -667,7 +667,7 @@ class CustomTagsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CustomTagsGetResponse
+     * @return \TencentAds\Model\CustomTagsGetResponse|mixed
      */
     public function customTagsGet($accountId, $parentTagId = null, $tagId = null, $tagCode = null, $platform = null, $page = null, $pageSize = null, $fields = null)
     {
@@ -1009,7 +1009,7 @@ class CustomTagsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CustomTagsUpdateResponse
+     * @return \TencentAds\Model\CustomTagsUpdateResponse|mixed
      */
     public function customTagsUpdate($data)
     {

@@ -207,7 +207,7 @@ class AdgroupsUpdateConfiguredStatusResponseData implements ModelInterface, Arra
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\AdgroupsUpdateConfiguredStatusListStruct[]
+     * @return \TencentAds\Model\AdgroupsUpdateConfiguredStatusListStruct[]|mixed
      */
     public function getList()
     {

@@ -231,7 +231,7 @@ class CampaignsUpdateConfiguredStatusResponse implements ModelInterface, ArrayAc
     /**
      * Gets code
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCode()
     {
@@ -255,7 +255,7 @@ class CampaignsUpdateConfiguredStatusResponse implements ModelInterface, ArrayAc
     /**
      * Gets message
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMessage()
     {
@@ -279,7 +279,7 @@ class CampaignsUpdateConfiguredStatusResponse implements ModelInterface, ArrayAc
     /**
      * Gets messageCn
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMessageCn()
     {
@@ -303,7 +303,7 @@ class CampaignsUpdateConfiguredStatusResponse implements ModelInterface, ArrayAc
     /**
      * Gets errors
      *
-     * @return \TencentAds\Model\ApiErrorStruct[]
+     * @return \TencentAds\Model\ApiErrorStruct[]|mixed
      */
     public function getErrors()
     {
@@ -327,7 +327,7 @@ class CampaignsUpdateConfiguredStatusResponse implements ModelInterface, ArrayAc
     /**
      * Gets data
      *
-     * @return \TencentAds\Model\CampaignsUpdateConfiguredStatusResponseData
+     * @return \TencentAds\Model\CampaignsUpdateConfiguredStatusResponseData|mixed
      */
     public function getData()
     {

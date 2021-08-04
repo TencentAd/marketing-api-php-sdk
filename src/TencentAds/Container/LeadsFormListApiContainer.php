@@ -30,7 +30,7 @@ class LeadsFormListApiContainer extends ApiContainer
     /**
      * Handle LeadsFormListApi leadsFormListGet function
      * @param array params
-     * @return \TencentAds\Model\LeadsFormListGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

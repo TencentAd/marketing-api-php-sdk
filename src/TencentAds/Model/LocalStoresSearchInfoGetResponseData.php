@@ -213,7 +213,7 @@ class LocalStoresSearchInfoGetResponseData implements ModelInterface, ArrayAcces
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\LocalStoresSearchInfoGetListStruct[]
+     * @return \TencentAds\Model\LocalStoresSearchInfoGetListStruct[]|mixed
      */
     public function getList()
     {
@@ -237,7 +237,7 @@ class LocalStoresSearchInfoGetResponseData implements ModelInterface, ArrayAcces
     /**
      * Gets pageInfo
      *
-     * @return \TencentAds\Model\Conf
+     * @return \TencentAds\Model\Conf|mixed
      */
     public function getPageInfo()
     {

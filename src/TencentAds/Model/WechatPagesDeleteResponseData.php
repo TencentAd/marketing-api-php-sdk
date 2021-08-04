@@ -207,7 +207,7 @@ class WechatPagesDeleteResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets pageId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageId()
     {

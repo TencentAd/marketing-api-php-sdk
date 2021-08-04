@@ -220,7 +220,7 @@ class HistoryCpcSpec implements ModelInterface, ArrayAccess
     /**
      * Gets date
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDate()
     {
@@ -244,7 +244,7 @@ class HistoryCpcSpec implements ModelInterface, ArrayAccess
     /**
      * Gets actualCpc
      *
-     * @return int
+     * @return int|mixed
      */
     public function getActualCpc()
     {
@@ -268,7 +268,7 @@ class HistoryCpcSpec implements ModelInterface, ArrayAccess
     /**
      * Gets targetCpc
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTargetCpc()
     {

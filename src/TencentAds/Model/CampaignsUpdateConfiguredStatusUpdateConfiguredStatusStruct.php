@@ -214,7 +214,7 @@ class CampaignsUpdateConfiguredStatusUpdateConfiguredStatusStruct implements Mod
     /**
      * Gets campaignId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampaignId()
     {
@@ -238,7 +238,7 @@ class CampaignsUpdateConfiguredStatusUpdateConfiguredStatusStruct implements Mod
     /**
      * Gets configuredStatus
      *
-     * @return \TencentAds\Model\AdStatus
+     * @return \TencentAds\Model\AdStatus|mixed
      */
     public function getConfiguredStatus()
     {

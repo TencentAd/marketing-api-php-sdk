@@ -107,7 +107,7 @@ class WechatAdvertiserLocalBusinessApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\WechatAdvertiserLocalBusinessAddResponse
+     * @return \TencentAds\Model\WechatAdvertiserLocalBusinessAddResponse|mixed
      */
     public function wechatAdvertiserLocalBusinessAdd($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $businessId, $contactPersonTele = null, $businessContent = null)
     {
@@ -534,7 +534,7 @@ class WechatAdvertiserLocalBusinessApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\WechatAdvertiserLocalBusinessGetResponse
+     * @return \TencentAds\Model\WechatAdvertiserLocalBusinessGetResponse|mixed
      */
     public function wechatAdvertiserLocalBusinessGet($accountId, $fields = null)
     {
@@ -839,7 +839,7 @@ class WechatAdvertiserLocalBusinessApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\WechatAdvertiserLocalBusinessUpdateResponse
+     * @return \TencentAds\Model\WechatAdvertiserLocalBusinessUpdateResponse|mixed
      */
     public function wechatAdvertiserLocalBusinessUpdate($headImage, $name, $description, $contactPerson, $contactPersonMobile, $contactPersonCardId, $corporation, $corporationLicence, $industryId, $accountId, $contactPersonTele = null, $businessContent = null)
     {

@@ -97,7 +97,7 @@ class AdLabelApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdLabelGetResponse
+     * @return \TencentAds\Model\AdLabelGetResponse|mixed
      */
     public function adLabelGet($accountId, $fields = null)
     {

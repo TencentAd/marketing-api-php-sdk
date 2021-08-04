@@ -231,7 +231,7 @@ class ProductCatalogsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -255,7 +255,7 @@ class ProductCatalogsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets catalogName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCatalogName()
     {
@@ -279,7 +279,7 @@ class ProductCatalogsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets catalogScaleType
      *
-     * @return \TencentAds\Model\CatalogScale
+     * @return \TencentAds\Model\CatalogScale|mixed
      */
     public function getCatalogScaleType()
     {
@@ -303,7 +303,7 @@ class ProductCatalogsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets catalogType
      *
-     * @return \TencentAds\Model\CatalogType
+     * @return \TencentAds\Model\CatalogType|mixed
      */
     public function getCatalogType()
     {
@@ -327,7 +327,7 @@ class ProductCatalogsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets industryType
      *
-     * @return \TencentAds\Model\CatalogIndustry
+     * @return \TencentAds\Model\CatalogIndustry|mixed
      */
     public function getIndustryType()
     {

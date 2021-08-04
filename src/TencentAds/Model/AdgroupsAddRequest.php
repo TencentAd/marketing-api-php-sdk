@@ -477,7 +477,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets campaignId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampaignId()
     {
@@ -501,7 +501,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdgroupName()
     {
@@ -525,7 +525,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObjectType
+     * @return \TencentAds\Model\PromotedObjectType|mixed
      */
     public function getPromotedObjectType()
     {
@@ -549,7 +549,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets beginDate
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBeginDate()
     {
@@ -573,7 +573,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayBeginTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getFirstDayBeginTime()
     {
@@ -597,7 +597,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets endDate
      *
-     * @return string
+     * @return string|mixed
      */
     public function getEndDate()
     {
@@ -621,7 +621,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets billingEvent
      *
-     * @return \TencentAds\Model\BillingEvent
+     * @return \TencentAds\Model\BillingEvent|mixed
      */
     public function getBillingEvent()
     {
@@ -645,7 +645,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets bidAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBidAmount()
     {
@@ -669,7 +669,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets optimizationGoal
      *
-     * @return \TencentAds\Model\OptimizationGoal
+     * @return \TencentAds\Model\OptimizationGoal|mixed
      */
     public function getOptimizationGoal()
     {
@@ -693,7 +693,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets timeSeries
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTimeSeries()
     {
@@ -717,7 +717,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets automaticSiteEnabled
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getAutomaticSiteEnabled()
     {
@@ -741,7 +741,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets siteSet
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getSiteSet()
     {
@@ -765,7 +765,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets dailyBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDailyBudget()
     {
@@ -789,7 +789,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPromotedObjectId()
     {
@@ -813,7 +813,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets appAndroidChannelPackageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAppAndroidChannelPackageId()
     {
@@ -837,7 +837,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets targetingId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTargetingId()
     {
@@ -861,7 +861,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets targeting
      *
-     * @return \TencentAds\Model\WriteTargetingSettingForAdgroup
+     * @return \TencentAds\Model\WriteTargetingSettingForAdgroup|mixed
      */
     public function getTargeting()
     {
@@ -885,7 +885,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets sceneSpec
      *
-     * @return \TencentAds\Model\SceneTargetingForWrite
+     * @return \TencentAds\Model\SceneTargetingForWrite|mixed
      */
     public function getSceneSpec()
     {
@@ -909,7 +909,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets configuredStatus
      *
-     * @return \TencentAds\Model\AdStatus
+     * @return \TencentAds\Model\AdStatus|mixed
      */
     public function getConfiguredStatus()
     {
@@ -933,7 +933,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets customizedCategory
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCustomizedCategory()
     {
@@ -957,7 +957,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicAdSpec
      *
-     * @return \TencentAds\Model\DynamicAdSpec
+     * @return \TencentAds\Model\DynamicAdSpec|mixed
      */
     public function getDynamicAdSpec()
     {
@@ -981,7 +981,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets userActionSets
      *
-     * @return \TencentAds\Model\UserActionSetStruct[]
+     * @return \TencentAds\Model\UserActionSetStruct[]|mixed
      */
     public function getUserActionSets()
     {
@@ -1005,7 +1005,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets additionalUserActionSets
      *
-     * @return \TencentAds\Model\UserActionSetStruct[]
+     * @return \TencentAds\Model\UserActionSetStruct[]|mixed
      */
     public function getAdditionalUserActionSets()
     {
@@ -1029,7 +1029,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicCreativeId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDynamicCreativeId()
     {
@@ -1053,7 +1053,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets bidStrategy
      *
-     * @return \TencentAds\Model\BidStrategy
+     * @return \TencentAds\Model\BidStrategy|mixed
      */
     public function getBidStrategy()
     {
@@ -1077,7 +1077,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets coldStartAudience
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getColdStartAudience()
     {
@@ -1101,7 +1101,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets autoAudience
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getAutoAudience()
     {
@@ -1125,7 +1125,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets expandEnabled
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getExpandEnabled()
     {
@@ -1149,7 +1149,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets expandTargeting
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getExpandTargeting()
     {
@@ -1173,7 +1173,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets deepConversionSpec
      *
-     * @return \TencentAds\Model\DeepConversionSpec
+     * @return \TencentAds\Model\DeepConversionSpec|mixed
      */
     public function getDeepConversionSpec()
     {
@@ -1197,7 +1197,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets deepOptimizationActionType
      *
-     * @return \TencentAds\Model\DeepOptimizationActionType
+     * @return \TencentAds\Model\DeepOptimizationActionType|mixed
      */
     public function getDeepOptimizationActionType()
     {
@@ -1221,7 +1221,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets poiList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getPoiList()
     {
@@ -1245,7 +1245,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets conversionId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getConversionId()
     {
@@ -1269,7 +1269,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets deepConversionBehaviorBid
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDeepConversionBehaviorBid()
     {
@@ -1293,7 +1293,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets deepConversionWorthRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getDeepConversionWorthRate()
     {
@@ -1317,7 +1317,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets bidMode
      *
-     * @return \TencentAds\Model\BidMode
+     * @return \TencentAds\Model\BidMode|mixed
      */
     public function getBidMode()
     {
@@ -1341,7 +1341,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets bidAdjustment
      *
-     * @return \TencentAds\Model\BidAdjustment
+     * @return \TencentAds\Model\BidAdjustment|mixed
      */
     public function getBidAdjustment()
     {
@@ -1365,7 +1365,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets autoAcquisitionEnabled
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getAutoAcquisitionEnabled()
     {
@@ -1389,7 +1389,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets autoAcquisitionBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAutoAcquisitionBudget()
     {
@@ -1413,7 +1413,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets creativeDisplayType
      *
-     * @return \TencentAds\Model\CreativeDisplayType
+     * @return \TencentAds\Model\CreativeDisplayType|mixed
      */
     public function getCreativeDisplayType()
     {
@@ -1437,7 +1437,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets autoDerivedCreativeEnabled
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getAutoDerivedCreativeEnabled()
     {
@@ -1461,7 +1461,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets smartBidType
      *
-     * @return \TencentAds\Model\SmartBidType
+     * @return \TencentAds\Model\SmartBidType|mixed
      */
     public function getSmartBidType()
     {
@@ -1485,7 +1485,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets marketingScene
      *
-     * @return \TencentAds\Model\MarketingScene
+     * @return \TencentAds\Model\MarketingScene|mixed
      */
     public function getMarketingScene()
     {
@@ -1509,7 +1509,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets customAdgroupTag
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getCustomAdgroupTag()
     {
@@ -1533,7 +1533,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets deepOptimizationType
      *
-     * @return \TencentAds\Model\DeepOptimizationType
+     * @return \TencentAds\Model\DeepOptimizationType|mixed
      */
     public function getDeepOptimizationType()
     {
@@ -1557,7 +1557,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {

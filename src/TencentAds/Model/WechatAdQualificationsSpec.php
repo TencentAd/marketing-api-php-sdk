@@ -214,7 +214,7 @@ class WechatAdQualificationsSpec implements ModelInterface, ArrayAccess
     /**
      * Gets qualificationName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getQualificationName()
     {
@@ -238,7 +238,7 @@ class WechatAdQualificationsSpec implements ModelInterface, ArrayAccess
     /**
      * Gets imageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImageId()
     {

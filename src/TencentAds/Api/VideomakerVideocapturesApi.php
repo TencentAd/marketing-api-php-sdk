@@ -101,7 +101,7 @@ class VideomakerVideocapturesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\VideomakerVideocapturesAddResponse
+     * @return \TencentAds\Model\VideomakerVideocapturesAddResponse|mixed
      */
     public function videomakerVideocapturesAdd($accountId, $videoId = null, $videoFile = null, $signature = null, $number = null, $returnImageIds = null)
     {

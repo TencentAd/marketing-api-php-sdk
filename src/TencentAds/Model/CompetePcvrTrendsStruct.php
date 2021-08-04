@@ -232,7 +232,7 @@ class CompetePcvrTrendsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets score
      *
-     * @return int
+     * @return int|mixed
      */
     public function getScore()
     {
@@ -256,7 +256,7 @@ class CompetePcvrTrendsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets selfAvg
      *
-     * @return \TencentAds\Model\PointStruct[]
+     * @return \TencentAds\Model\PointStruct[]|mixed
      */
     public function getSelfAvg()
     {
@@ -280,7 +280,7 @@ class CompetePcvrTrendsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets selfChoseAvg
      *
-     * @return \TencentAds\Model\PointStruct[]
+     * @return \TencentAds\Model\PointStruct[]|mixed
      */
     public function getSelfChoseAvg()
     {
@@ -304,7 +304,7 @@ class CompetePcvrTrendsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets winnerChoseAvg
      *
-     * @return \TencentAds\Model\PointStruct[]
+     * @return \TencentAds\Model\PointStruct[]|mixed
      */
     public function getWinnerChoseAvg()
     {
@@ -328,7 +328,7 @@ class CompetePcvrTrendsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets conclusion
      *
-     * @return string
+     * @return string|mixed
      */
     public function getConclusion()
     {

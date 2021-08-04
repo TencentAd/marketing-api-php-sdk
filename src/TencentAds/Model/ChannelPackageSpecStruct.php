@@ -214,7 +214,7 @@ class ChannelPackageSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appAndroidChannelPackageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAppAndroidChannelPackageId()
     {
@@ -238,7 +238,7 @@ class ChannelPackageSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Gets packageName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPackageName()
     {

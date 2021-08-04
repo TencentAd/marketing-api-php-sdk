@@ -214,7 +214,7 @@ class UnsupportBidModeStruct implements ModelInterface, ArrayAccess
     /**
      * Gets siteSet
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getSiteSet()
     {
@@ -238,7 +238,7 @@ class UnsupportBidModeStruct implements ModelInterface, ArrayAccess
     /**
      * Gets bidModeList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getBidModeList()
     {

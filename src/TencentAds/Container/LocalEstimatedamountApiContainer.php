@@ -30,7 +30,7 @@ class LocalEstimatedamountApiContainer extends ApiContainer
     /**
      * Handle LocalEstimatedamountApi localEstimatedamountGet function
      * @param array params
-     * @return \TencentAds\Model\LocalEstimatedamountGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

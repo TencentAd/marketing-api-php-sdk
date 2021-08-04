@@ -219,7 +219,7 @@ class AndroidUnionChannelPackagesAddResponseData implements ModelInterface, Arra
     /**
      * Gets appAndroidChannelPackageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAppAndroidChannelPackageId()
     {
@@ -243,7 +243,7 @@ class AndroidUnionChannelPackagesAddResponseData implements ModelInterface, Arra
     /**
      * Gets packageName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPackageName()
     {
@@ -267,7 +267,7 @@ class AndroidUnionChannelPackagesAddResponseData implements ModelInterface, Arra
     /**
      * Gets packageStatus
      *
-     * @return \TencentAds\Model\PackageStatus
+     * @return \TencentAds\Model\PackageStatus|mixed
      */
     public function getPackageStatus()
     {

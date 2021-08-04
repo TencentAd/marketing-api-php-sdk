@@ -30,7 +30,7 @@ class LocalStoresAddressParsingResultApiContainer extends ApiContainer
     /**
      * Handle LocalStoresAddressParsingResultApi localStoresAddressParsingResultGet function
      * @param array params
-     * @return \TencentAds\Model\LocalStoresAddressParsingResultGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

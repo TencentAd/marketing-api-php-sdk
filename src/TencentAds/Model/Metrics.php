@@ -220,7 +220,7 @@ class Metrics implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlayIndex
      *
-     * @return double
+     * @return double|mixed
      */
     public function getVideoOuterPlayIndex()
     {
@@ -244,7 +244,7 @@ class Metrics implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterClickIndex
      *
-     * @return double
+     * @return double|mixed
      */
     public function getVideoOuterClickIndex()
     {
@@ -268,7 +268,7 @@ class Metrics implements ModelInterface, ArrayAccess
     /**
      * Gets videoOffsetIndex
      *
-     * @return double
+     * @return double|mixed
      */
     public function getVideoOffsetIndex()
     {

@@ -220,7 +220,7 @@ class CustomLocationsItemWithName implements ModelInterface, ArrayAccess
     /**
      * Gets longitude
      *
-     * @return double
+     * @return double|mixed
      */
     public function getLongitude()
     {
@@ -244,7 +244,7 @@ class CustomLocationsItemWithName implements ModelInterface, ArrayAccess
     /**
      * Gets latitude
      *
-     * @return double
+     * @return double|mixed
      */
     public function getLatitude()
     {
@@ -268,7 +268,7 @@ class CustomLocationsItemWithName implements ModelInterface, ArrayAccess
     /**
      * Gets radius
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRadius()
     {

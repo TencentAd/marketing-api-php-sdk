@@ -213,7 +213,7 @@ class VideosDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -237,7 +237,7 @@ class VideosDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets videoId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoId()
     {

@@ -96,7 +96,7 @@ class TargetingsShareApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\TargetingsShareAddResponse
+     * @return \TencentAds\Model\TargetingsShareAddResponse|mixed
      */
     public function targetingsShareAdd($data)
     {
@@ -382,7 +382,7 @@ class TargetingsShareApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\TargetingsShareGetResponse
+     * @return \TencentAds\Model\TargetingsShareGetResponse|mixed
      */
     public function targetingsShareGet($accountId, $targetingId, $page = null, $pageSize = null, $fields = null)
     {

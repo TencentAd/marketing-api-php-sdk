@@ -214,7 +214,7 @@ class UrlMatcher implements ModelInterface, ArrayAccess
     /**
      * Gets paramValue
      *
-     * @return string
+     * @return string|mixed
      */
     public function getParamValue()
     {
@@ -238,7 +238,7 @@ class UrlMatcher implements ModelInterface, ArrayAccess
     /**
      * Gets operator
      *
-     * @return \TencentAds\Model\Operator
+     * @return \TencentAds\Model\Operator|mixed
      */
     public function getOperator()
     {

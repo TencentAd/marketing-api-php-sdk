@@ -333,7 +333,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicCreativeName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDynamicCreativeName()
     {
@@ -357,7 +357,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicCreativeTemplateId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDynamicCreativeTemplateId()
     {
@@ -381,7 +381,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicCreativeElements
      *
-     * @return \TencentAds\Model\DynamicCreativeElements
+     * @return \TencentAds\Model\DynamicCreativeElements|mixed
      */
     public function getDynamicCreativeElements()
     {
@@ -405,7 +405,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets campaignType
      *
-     * @return \TencentAds\Model\CampaignType
+     * @return \TencentAds\Model\CampaignType|mixed
      */
     public function getCampaignType()
     {
@@ -429,7 +429,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObjectType
+     * @return \TencentAds\Model\PromotedObjectType|mixed
      */
     public function getPromotedObjectType()
     {
@@ -453,7 +453,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets pageType
      *
-     * @return \TencentAds\Model\DestinationType
+     * @return \TencentAds\Model\DestinationType|mixed
      */
     public function getPageType()
     {
@@ -477,7 +477,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets automaticSiteEnabled
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getAutomaticSiteEnabled()
     {
@@ -501,7 +501,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets siteSet
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getSiteSet()
     {
@@ -525,7 +525,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPromotedObjectId()
     {
@@ -549,7 +549,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets pageSpec
      *
-     * @return \TencentAds\Model\DynamicCreativePageSpec
+     * @return \TencentAds\Model\DynamicCreativePageSpec|mixed
      */
     public function getPageSpec()
     {
@@ -573,7 +573,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets deepLinkUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDeepLinkUrl()
     {
@@ -597,7 +597,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets impressionTrackingUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImpressionTrackingUrl()
     {
@@ -621,7 +621,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets clickTrackingUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getClickTrackingUrl()
     {
@@ -645,7 +645,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets feedsVideoCommentSwitch
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getFeedsVideoCommentSwitch()
     {
@@ -669,7 +669,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets unionMarketSwitch
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getUnionMarketSwitch()
     {
@@ -693,7 +693,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets profileId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProfileId()
     {
@@ -717,7 +717,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicAdcreativeSpec
      *
-     * @return \TencentAds\Model\DynamicAdcreativeSpecForDc
+     * @return \TencentAds\Model\DynamicAdcreativeSpecForDc|mixed
      */
     public function getDynamicAdcreativeSpec()
     {
@@ -741,7 +741,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets videoEndPage
      *
-     * @return \TencentAds\Model\VideoEndPageSpec
+     * @return \TencentAds\Model\VideoEndPageSpec|mixed
      */
     public function getVideoEndPage()
     {
@@ -765,7 +765,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets barrageList
      *
-     * @return \TencentAds\Model\BarrageListCreateStruct[]
+     * @return \TencentAds\Model\BarrageListCreateStruct[]|mixed
      */
     public function getBarrageList()
     {
@@ -789,7 +789,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicCreativeGroupUsed
      *
-     * @return \TencentAds\Model\DynamicCreativeGroupUsed
+     * @return \TencentAds\Model\DynamicCreativeGroupUsed|mixed
      */
     public function getDynamicCreativeGroupUsed()
     {
@@ -813,7 +813,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets appGiftPackCode
      *
-     * @return \TencentAds\Model\AppGiftPackCode
+     * @return \TencentAds\Model\AppGiftPackCode|mixed
      */
     public function getAppGiftPackCode()
     {
@@ -837,7 +837,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {

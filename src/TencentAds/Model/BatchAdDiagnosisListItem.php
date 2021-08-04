@@ -358,7 +358,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -382,7 +382,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets diagnoseTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDiagnoseTime()
     {
@@ -406,7 +406,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets operateSuggestion
      *
-     * @return \TencentAds\Model\OperateSuggestion
+     * @return \TencentAds\Model\OperateSuggestion|mixed
      */
     public function getOperateSuggestion()
     {
@@ -430,7 +430,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets learningStatus
      *
-     * @return \TencentAds\Model\LearningStatus
+     * @return \TencentAds\Model\LearningStatus|mixed
      */
     public function getLearningStatus()
     {
@@ -454,7 +454,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets costGuaranteeStatus
      *
-     * @return \TencentAds\Model\CostGuaranteeStatus
+     * @return \TencentAds\Model\CostGuaranteeStatus|mixed
      */
     public function getCostGuaranteeStatus()
     {
@@ -478,7 +478,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets costGuaranteeMoney
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCostGuaranteeMoney()
     {
@@ -502,7 +502,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets exposureCompeteScore
      *
-     * @return string
+     * @return string|mixed
      */
     public function getExposureCompeteScore()
     {
@@ -526,7 +526,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets exposureRaiseRate
      *
-     * @return string
+     * @return string|mixed
      */
     public function getExposureRaiseRate()
     {
@@ -550,7 +550,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets cpaBiasToday
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCpaBiasToday()
     {
@@ -574,7 +574,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets cpaBiasOverall
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCpaBiasOverall()
     {
@@ -598,7 +598,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets isOcpx
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getIsOcpx()
     {
@@ -622,7 +622,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets optimizationGoal
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOptimizationGoal()
     {
@@ -646,7 +646,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets deepOptimizationGoal
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDeepOptimizationGoal()
     {
@@ -670,7 +670,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets conclusionDescription
      *
-     * @return string
+     * @return string|mixed
      */
     public function getConclusionDescription()
     {
@@ -694,7 +694,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets hasDiagnoseDetail
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getHasDiagnoseDetail()
     {
@@ -718,7 +718,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets operateSuggestionDesc
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOperateSuggestionDesc()
     {
@@ -742,7 +742,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets learningStatusDesc
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLearningStatusDesc()
     {
@@ -766,7 +766,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets exposureCompeteScoreDesc
      *
-     * @return string
+     * @return string|mixed
      */
     public function getExposureCompeteScoreDesc()
     {
@@ -790,7 +790,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets detail
      *
-     * @return \TencentAds\Model\ResponseDetailStruct
+     * @return \TencentAds\Model\ResponseDetailStruct|mixed
      */
     public function getDetail()
     {
@@ -814,7 +814,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets autoAcquisitionStatus
      *
-     * @return \TencentAds\Model\AutoAcquisitionStatus
+     * @return \TencentAds\Model\AutoAcquisitionStatus|mixed
      */
     public function getAutoAcquisitionStatus()
     {
@@ -838,7 +838,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets autoAcquisitionStatusName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAutoAcquisitionStatusName()
     {
@@ -862,7 +862,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets autoAcquisitionStatusDesc
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAutoAcquisitionStatusDesc()
     {
@@ -886,7 +886,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets autoAcquisitionBeginTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAutoAcquisitionBeginTime()
     {
@@ -910,7 +910,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets autoAcquisitionEndTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAutoAcquisitionEndTime()
     {
@@ -934,7 +934,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets isPotential
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getIsPotential()
     {
@@ -958,7 +958,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Gets potentialDetail
      *
-     * @return \TencentAds\Model\ResponsePotentialStruct
+     * @return \TencentAds\Model\ResponsePotentialStruct|mixed
      */
     public function getPotentialDetail()
     {

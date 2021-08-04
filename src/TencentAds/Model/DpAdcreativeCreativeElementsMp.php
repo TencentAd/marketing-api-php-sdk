@@ -220,7 +220,7 @@ class DpAdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
     /**
      * Gets title
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTitle()
     {
@@ -244,7 +244,7 @@ class DpAdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -268,7 +268,7 @@ class DpAdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
     /**
      * Gets imageList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getImageList()
     {

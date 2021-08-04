@@ -232,7 +232,7 @@ class PropertyDataFeatureSpec implements ModelInterface, ArrayAccess
     /**
      * Gets userPropertySetId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUserPropertySetId()
     {
@@ -256,7 +256,7 @@ class PropertyDataFeatureSpec implements ModelInterface, ArrayAccess
     /**
      * Gets propertyDataKey
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPropertyDataKey()
     {
@@ -280,7 +280,7 @@ class PropertyDataFeatureSpec implements ModelInterface, ArrayAccess
     /**
      * Gets dataType
      *
-     * @return \TencentAds\Model\FeatureValueDataType
+     * @return \TencentAds\Model\FeatureValueDataType|mixed
      */
     public function getDataType()
     {
@@ -304,7 +304,7 @@ class PropertyDataFeatureSpec implements ModelInterface, ArrayAccess
     /**
      * Gets isMultiValued
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getIsMultiValued()
     {
@@ -328,7 +328,7 @@ class PropertyDataFeatureSpec implements ModelInterface, ArrayAccess
     /**
      * Gets possibleValuesSize
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPossibleValuesSize()
     {

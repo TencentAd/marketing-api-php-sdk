@@ -96,7 +96,7 @@ class AdcreativeTemplatePreviewApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdcreativeTemplatePreviewGetResponse
+     * @return \TencentAds\Model\AdcreativeTemplatePreviewGetResponse|mixed
      */
     public function adcreativeTemplatePreviewGet($data)
     {

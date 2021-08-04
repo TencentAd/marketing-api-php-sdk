@@ -226,7 +226,7 @@ class BusinessMdmAccountRelationsGetListStruct implements ModelInterface, ArrayA
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -250,7 +250,7 @@ class BusinessMdmAccountRelationsGetListStruct implements ModelInterface, ArrayA
     /**
      * Gets businessId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBusinessId()
     {
@@ -274,7 +274,7 @@ class BusinessMdmAccountRelationsGetListStruct implements ModelInterface, ArrayA
     /**
      * Gets mdmId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMdmId()
     {
@@ -298,7 +298,7 @@ class BusinessMdmAccountRelationsGetListStruct implements ModelInterface, ArrayA
     /**
      * Gets agencyAccountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAgencyAccountId()
     {

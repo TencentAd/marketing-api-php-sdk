@@ -96,7 +96,7 @@ class LocalStoresAddressParsingResultApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\LocalStoresAddressParsingResultGetResponse
+     * @return \TencentAds\Model\LocalStoresAddressParsingResultGetResponse|mixed
      */
     public function localStoresAddressParsingResultGet($data)
     {

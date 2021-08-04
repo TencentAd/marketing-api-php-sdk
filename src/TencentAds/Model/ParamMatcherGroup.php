@@ -208,7 +208,7 @@ class ParamMatcherGroup implements ModelInterface, ArrayAccess
     /**
      * Gets paramMatcher
      *
-     * @return \TencentAds\Model\ParamMatcher[]
+     * @return \TencentAds\Model\ParamMatcher[]|mixed
      */
     public function getParamMatcher()
     {

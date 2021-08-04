@@ -207,7 +207,7 @@ class AdcreativeTemplatePreviewGetResponseData implements ModelInterface, ArrayA
     /**
      * Gets previewUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPreviewUrl()
     {

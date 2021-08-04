@@ -207,7 +207,7 @@ class ImagesDeleteResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets imageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImageId()
     {

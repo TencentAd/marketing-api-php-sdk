@@ -30,7 +30,7 @@ class WechatFundsApiContainer extends ApiContainer
     /**
      * Handle WechatFundsApi wechatFundsGet function
      * @param array params
-     * @return \TencentAds\Model\WechatFundsGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

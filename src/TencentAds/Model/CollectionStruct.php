@@ -214,7 +214,7 @@ class CollectionStruct implements ModelInterface, ArrayAccess
     /**
      * Gets metrics
      *
-     * @return \TencentAds\Model\Metrics
+     * @return \TencentAds\Model\Metrics|mixed
      */
     public function getMetrics()
     {
@@ -238,7 +238,7 @@ class CollectionStruct implements ModelInterface, ArrayAccess
     /**
      * Gets dimension
      *
-     * @return \TencentAds\Model\Dimension
+     * @return \TencentAds\Model\Dimension|mixed
      */
     public function getDimension()
     {

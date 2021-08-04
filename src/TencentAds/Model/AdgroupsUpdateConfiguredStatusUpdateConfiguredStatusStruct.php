@@ -214,7 +214,7 @@ class AdgroupsUpdateConfiguredStatusUpdateConfiguredStatusStruct implements Mode
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -238,7 +238,7 @@ class AdgroupsUpdateConfiguredStatusUpdateConfiguredStatusStruct implements Mode
     /**
      * Gets configuredStatus
      *
-     * @return \TencentAds\Model\AdStatus
+     * @return \TencentAds\Model\AdStatus|mixed
      */
     public function getConfiguredStatus()
     {

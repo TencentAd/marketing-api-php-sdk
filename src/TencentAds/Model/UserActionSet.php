@@ -268,7 +268,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Gets userActionSetId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUserActionSetId()
     {
@@ -292,7 +292,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \TencentAds\Model\AmUserActionSetType
+     * @return \TencentAds\Model\AmUserActionSetType|mixed
      */
     public function getType()
     {
@@ -316,7 +316,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Gets mobileAppId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMobileAppId()
     {
@@ -340,7 +340,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return string
+     * @return string|mixed
      */
     public function getName()
     {
@@ -364,7 +364,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -388,7 +388,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Gets activateStatus
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getActivateStatus()
     {
@@ -412,7 +412,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCreatedTime()
     {
@@ -436,7 +436,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Gets accessWay
      *
-     * @return \TencentAds\Model\ActionSetAccessWayType
+     * @return \TencentAds\Model\ActionSetAccessWayType|mixed
      */
     public function getAccessWay()
     {
@@ -460,7 +460,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Gets usages
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getUsages()
     {
@@ -484,7 +484,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Gets enableConversionClaim
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getEnableConversionClaim()
     {
@@ -508,7 +508,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Gets permission
      *
-     * @return \TencentAds\Model\Permission
+     * @return \TencentAds\Model\Permission|mixed
      */
     public function getPermission()
     {

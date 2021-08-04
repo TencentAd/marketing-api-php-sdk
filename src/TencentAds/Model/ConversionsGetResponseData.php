@@ -213,7 +213,7 @@ class ConversionsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\ConversionsGetListStruct[]
+     * @return \TencentAds\Model\ConversionsGetListStruct[]|mixed
      */
     public function getList()
     {
@@ -237,7 +237,7 @@ class ConversionsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets pageInfo
      *
-     * @return \TencentAds\Model\Conf
+     * @return \TencentAds\Model\Conf|mixed
      */
     public function getPageInfo()
     {

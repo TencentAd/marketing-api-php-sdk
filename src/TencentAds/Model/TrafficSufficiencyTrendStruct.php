@@ -220,7 +220,7 @@ class TrafficSufficiencyTrendStruct implements ModelInterface, ArrayAccess
     /**
      * Gets score
      *
-     * @return int
+     * @return int|mixed
      */
     public function getScore()
     {
@@ -244,7 +244,7 @@ class TrafficSufficiencyTrendStruct implements ModelInterface, ArrayAccess
     /**
      * Gets trends
      *
-     * @return \TencentAds\Model\PointStruct[]
+     * @return \TencentAds\Model\PointStruct[]|mixed
      */
     public function getTrends()
     {
@@ -268,7 +268,7 @@ class TrafficSufficiencyTrendStruct implements ModelInterface, ArrayAccess
     /**
      * Gets conclusion
      *
-     * @return string
+     * @return string|mixed
      */
     public function getConclusion()
     {

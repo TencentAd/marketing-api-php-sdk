@@ -262,7 +262,7 @@ class UserAction implements ModelInterface, ArrayAccess
     /**
      * Gets actionTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getActionTime()
     {
@@ -286,7 +286,7 @@ class UserAction implements ModelInterface, ArrayAccess
     /**
      * Gets userId
      *
-     * @return \TencentAds\Model\ActionsUserId
+     * @return \TencentAds\Model\ActionsUserId|mixed
      */
     public function getUserId()
     {
@@ -310,7 +310,7 @@ class UserAction implements ModelInterface, ArrayAccess
     /**
      * Gets actionType
      *
-     * @return \TencentAds\Model\ActionType
+     * @return \TencentAds\Model\ActionType|mixed
      */
     public function getActionType()
     {
@@ -334,7 +334,7 @@ class UserAction implements ModelInterface, ArrayAccess
     /**
      * Gets actionParam
      *
-     * @return string
+     * @return string|mixed
      */
     public function getActionParam()
     {
@@ -358,7 +358,7 @@ class UserAction implements ModelInterface, ArrayAccess
     /**
      * Gets customAction
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCustomAction()
     {
@@ -382,7 +382,7 @@ class UserAction implements ModelInterface, ArrayAccess
     /**
      * Gets trace
      *
-     * @return \TencentAds\Model\Trace
+     * @return \TencentAds\Model\Trace|mixed
      */
     public function getTrace()
     {
@@ -406,7 +406,7 @@ class UserAction implements ModelInterface, ArrayAccess
     /**
      * Gets url
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUrl()
     {
@@ -430,7 +430,7 @@ class UserAction implements ModelInterface, ArrayAccess
     /**
      * Gets productInform
      *
-     * @return \TencentAds\Model\ProductInform
+     * @return \TencentAds\Model\ProductInform|mixed
      */
     public function getProductInform()
     {
@@ -454,7 +454,7 @@ class UserAction implements ModelInterface, ArrayAccess
     /**
      * Gets channel
      *
-     * @return \TencentAds\Model\ActionChannelType
+     * @return \TencentAds\Model\ActionChannelType|mixed
      */
     public function getChannel()
     {
@@ -478,7 +478,7 @@ class UserAction implements ModelInterface, ArrayAccess
     /**
      * Gets externalActionId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getExternalActionId()
     {

@@ -231,7 +231,7 @@ class ImageProcessingAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -255,7 +255,7 @@ class ImageProcessingAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets imageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImageId()
     {
@@ -279,7 +279,7 @@ class ImageProcessingAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets operationType
      *
-     * @return \TencentAds\Model\ImageOperationType
+     * @return \TencentAds\Model\ImageOperationType|mixed
      */
     public function getOperationType()
     {
@@ -303,7 +303,7 @@ class ImageProcessingAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets operationSpec
      *
-     * @return \TencentAds\Model\CropOperationSpec
+     * @return \TencentAds\Model\CropOperationSpec|mixed
      */
     public function getOperationSpec()
     {
@@ -327,7 +327,7 @@ class ImageProcessingAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets fileSizeMax
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFileSizeMax()
     {

@@ -244,7 +244,7 @@ class CanvasAppDownloadSpecType implements ModelInterface, ArrayAccess
     /**
      * Gets title
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTitle()
     {
@@ -268,7 +268,7 @@ class CanvasAppDownloadSpecType implements ModelInterface, ArrayAccess
     /**
      * Gets fontColor
      *
-     * @return string
+     * @return string|mixed
      */
     public function getFontColor()
     {
@@ -292,7 +292,7 @@ class CanvasAppDownloadSpecType implements ModelInterface, ArrayAccess
     /**
      * Gets bgColor
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBgColor()
     {
@@ -316,7 +316,7 @@ class CanvasAppDownloadSpecType implements ModelInterface, ArrayAccess
     /**
      * Gets paddingTop
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPaddingTop()
     {
@@ -340,7 +340,7 @@ class CanvasAppDownloadSpecType implements ModelInterface, ArrayAccess
     /**
      * Gets paddingBottom
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPaddingBottom()
     {
@@ -364,7 +364,7 @@ class CanvasAppDownloadSpecType implements ModelInterface, ArrayAccess
     /**
      * Gets appIosSpec
      *
-     * @return \TencentAds\Model\CanvasAppIosSpecType
+     * @return \TencentAds\Model\CanvasAppIosSpecType|mixed
      */
     public function getAppIosSpec()
     {
@@ -388,7 +388,7 @@ class CanvasAppDownloadSpecType implements ModelInterface, ArrayAccess
     /**
      * Gets appAndroidSpec
      *
-     * @return \TencentAds\Model\CanvasAppAndroidSpecType
+     * @return \TencentAds\Model\CanvasAppAndroidSpecType|mixed
      */
     public function getAppAndroidSpec()
     {

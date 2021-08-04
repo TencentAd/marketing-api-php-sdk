@@ -98,7 +98,7 @@ class VideomakerTasksApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\VideomakerTasksGetResponse
+     * @return \TencentAds\Model\VideomakerTasksGetResponse|mixed
      */
     public function videomakerTasksGet($accountId, $taskId, $fields = null)
     {

@@ -100,7 +100,7 @@ class DailyBalanceReportApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\DailyBalanceReportGetResponse
+     * @return \TencentAds\Model\DailyBalanceReportGetResponse|mixed
      */
     public function dailyBalanceReportGet($accountId, $dateRange, $page = null, $pageSize = null, $fields = null)
     {

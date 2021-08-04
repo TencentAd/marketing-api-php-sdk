@@ -102,7 +102,7 @@ class ProductCatalogsReportsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ProductCatalogsReportsGetResponse
+     * @return \TencentAds\Model\ProductCatalogsReportsGetResponse|mixed
      */
     public function productCatalogsReportsGet($accountId, $productCatalogId, $dateRange, $filtering = null, $groupBy = null, $orderBy = null, $fields = null)
     {

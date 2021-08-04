@@ -220,7 +220,7 @@ class ExposureDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectData
      *
-     * @return \TencentAds\Model\ExposureEffectDataStruct
+     * @return \TencentAds\Model\ExposureEffectDataStruct|mixed
      */
     public function getEffectData()
     {
@@ -244,7 +244,7 @@ class ExposureDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectDataTrends
      *
-     * @return \TencentAds\Model\ExposureEffectDataTrendsItem[]
+     * @return \TencentAds\Model\ExposureEffectDataTrendsItem[]|mixed
      */
     public function getEffectDataTrends()
     {
@@ -268,7 +268,7 @@ class ExposureDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets targetingLabelContribution
      *
-     * @return \TencentAds\Model\ExposureTargetingLabelContributionStruct
+     * @return \TencentAds\Model\ExposureTargetingLabelContributionStruct|mixed
      */
     public function getTargetingLabelContribution()
     {

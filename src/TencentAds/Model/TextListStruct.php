@@ -214,7 +214,7 @@ class TextListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets text
      *
-     * @return string
+     * @return string|mixed
      */
     public function getText()
     {
@@ -238,7 +238,7 @@ class TextListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets tag
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTag()
     {

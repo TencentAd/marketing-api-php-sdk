@@ -207,7 +207,7 @@ class AdcreativePreviewsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\AdcreativePreviewsGetListStruct[]
+     * @return \TencentAds\Model\AdcreativePreviewsGetListStruct[]|mixed
      */
     public function getList()
     {

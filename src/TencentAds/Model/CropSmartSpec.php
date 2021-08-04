@@ -214,7 +214,7 @@ class CropSmartSpec implements ModelInterface, ArrayAccess
     /**
      * Gets width
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWidth()
     {
@@ -238,7 +238,7 @@ class CropSmartSpec implements ModelInterface, ArrayAccess
     /**
      * Gets height
      *
-     * @return int
+     * @return int|mixed
      */
     public function getHeight()
     {

@@ -208,7 +208,7 @@ class ConfigsDetailDataArrayItem implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return string
+     * @return string|mixed
      */
     public function getName()
     {

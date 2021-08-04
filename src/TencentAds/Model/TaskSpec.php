@@ -286,7 +286,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Gets reportTaskSpec
      *
-     * @return \TencentAds\Model\ReportTaskSpec
+     * @return \TencentAds\Model\ReportTaskSpec|mixed
      */
     public function getReportTaskSpec()
     {
@@ -310,7 +310,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Gets taskTypeAdHourlyReportSpec
      *
-     * @return \TencentAds\Model\TaskTypeAdHourlyReportSpec
+     * @return \TencentAds\Model\TaskTypeAdHourlyReportSpec|mixed
      */
     public function getTaskTypeAdHourlyReportSpec()
     {
@@ -334,7 +334,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Gets taskTypeWechatMomentsAdgroupHourlyReportSpec
      *
-     * @return \TencentAds\Model\TaskTypeWechatMomentsAdgroupHourlyReportSpec
+     * @return \TencentAds\Model\TaskTypeWechatMomentsAdgroupHourlyReportSpec|mixed
      */
     public function getTaskTypeWechatMomentsAdgroupHourlyReportSpec()
     {
@@ -358,7 +358,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Gets taskTypeWechatAdgroupHourlyReportSpec
      *
-     * @return \TencentAds\Model\TaskTypeWechatAdgroupHourlyReportSpec
+     * @return \TencentAds\Model\TaskTypeWechatAdgroupHourlyReportSpec|mixed
      */
     public function getTaskTypeWechatAdgroupHourlyReportSpec()
     {
@@ -382,7 +382,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Gets taskTypeWechatAdgroupDailyReportSpec
      *
-     * @return \TencentAds\Model\TaskTypeWechatAdgroupDailyReportSpec
+     * @return \TencentAds\Model\TaskTypeWechatAdgroupDailyReportSpec|mixed
      */
     public function getTaskTypeWechatAdgroupDailyReportSpec()
     {
@@ -406,7 +406,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Gets taskTypeWechatAdHourlyReportSpec
      *
-     * @return \TencentAds\Model\TaskTypeWechatAdHourlyReportSpec
+     * @return \TencentAds\Model\TaskTypeWechatAdHourlyReportSpec|mixed
      */
     public function getTaskTypeWechatAdHourlyReportSpec()
     {
@@ -430,7 +430,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Gets taskTypeWechatAdDailyReportSpec
      *
-     * @return \TencentAds\Model\TaskTypeWechatAdDailyReportSpec
+     * @return \TencentAds\Model\TaskTypeWechatAdDailyReportSpec|mixed
      */
     public function getTaskTypeWechatAdDailyReportSpec()
     {
@@ -454,7 +454,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Gets taskTypeWechatAdvertisingDataSpec
      *
-     * @return \TencentAds\Model\TaskTypeWechatAdvertisingDataSpec
+     * @return \TencentAds\Model\TaskTypeWechatAdvertisingDataSpec|mixed
      */
     public function getTaskTypeWechatAdvertisingDataSpec()
     {
@@ -478,7 +478,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Gets taskTypeWechatPoiHourlyReportSpec
      *
-     * @return \TencentAds\Model\TaskTypeWechatPoiHourlyReportSpec
+     * @return \TencentAds\Model\TaskTypeWechatPoiHourlyReportSpec|mixed
      */
     public function getTaskTypeWechatPoiHourlyReportSpec()
     {
@@ -502,7 +502,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Gets taskTypeCreateAndroidChannelPackageSpec
      *
-     * @return \TencentAds\Model\TaskTypeCreateAndroidChannelPackageSpec
+     * @return \TencentAds\Model\TaskTypeCreateAndroidChannelPackageSpec|mixed
      */
     public function getTaskTypeCreateAndroidChannelPackageSpec()
     {
@@ -526,7 +526,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Gets taskTypeUpdateAndroidChannelPackageSpec
      *
-     * @return \TencentAds\Model\TaskTypeUpdateAndroidChannelPackageSpec
+     * @return \TencentAds\Model\TaskTypeUpdateAndroidChannelPackageSpec|mixed
      */
     public function getTaskTypeUpdateAndroidChannelPackageSpec()
     {
@@ -550,7 +550,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Gets taskTypeCreateAndroidUnionChannelPackageSpec
      *
-     * @return \TencentAds\Model\TaskTypeCreateAndroidUnionChannelPackageSpec
+     * @return \TencentAds\Model\TaskTypeCreateAndroidUnionChannelPackageSpec|mixed
      */
     public function getTaskTypeCreateAndroidUnionChannelPackageSpec()
     {
@@ -574,7 +574,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Gets taskTypeUpdateAndroidUnionChannelPackageSpec
      *
-     * @return \TencentAds\Model\TaskTypeUpdateAndroidUnionChannelPackageSpec
+     * @return \TencentAds\Model\TaskTypeUpdateAndroidUnionChannelPackageSpec|mixed
      */
     public function getTaskTypeUpdateAndroidUnionChannelPackageSpec()
     {
@@ -598,7 +598,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Gets taskTypeUnionPositionReportSpec
      *
-     * @return \TencentAds\Model\TaskTypeUnionPositionReportSpec
+     * @return \TencentAds\Model\TaskTypeUnionPositionReportSpec|mixed
      */
     public function getTaskTypeUnionPositionReportSpec()
     {

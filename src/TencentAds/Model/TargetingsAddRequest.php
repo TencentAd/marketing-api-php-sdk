@@ -225,7 +225,7 @@ class TargetingsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets targetingName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTargetingName()
     {
@@ -249,7 +249,7 @@ class TargetingsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -273,7 +273,7 @@ class TargetingsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -297,7 +297,7 @@ class TargetingsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets targeting
      *
-     * @return \TencentAds\Model\WriteTargetingSetting
+     * @return \TencentAds\Model\WriteTargetingSetting|mixed
      */
     public function getTargeting()
     {

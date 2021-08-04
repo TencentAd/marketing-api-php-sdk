@@ -214,7 +214,7 @@ class UpdateCampaignSpeedModeItem implements ModelInterface, ArrayAccess
     /**
      * Gets campaignId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampaignId()
     {
@@ -238,7 +238,7 @@ class UpdateCampaignSpeedModeItem implements ModelInterface, ArrayAccess
     /**
      * Gets speedMode
      *
-     * @return \TencentAds\Model\SpeedMode
+     * @return \TencentAds\Model\SpeedMode|mixed
      */
     public function getSpeedMode()
     {

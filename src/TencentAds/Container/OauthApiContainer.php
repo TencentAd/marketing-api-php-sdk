@@ -76,7 +76,7 @@ class OauthApiContainer extends ApiContainer
     /**
      * Handle OauthApi oauthToken function
      * @param array params
-     * @return \TencentAds\Model\OauthTokenResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

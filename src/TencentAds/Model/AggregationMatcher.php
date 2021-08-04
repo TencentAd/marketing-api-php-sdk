@@ -244,7 +244,7 @@ class AggregationMatcher implements ModelInterface, ArrayAccess
     /**
      * Gets aggregationType
      *
-     * @return \TencentAds\Model\AggregationType
+     * @return \TencentAds\Model\AggregationType|mixed
      */
     public function getAggregationType()
     {
@@ -268,7 +268,7 @@ class AggregationMatcher implements ModelInterface, ArrayAccess
     /**
      * Gets countType
      *
-     * @return \TencentAds\Model\CountType
+     * @return \TencentAds\Model\CountType|mixed
      */
     public function getCountType()
     {
@@ -292,7 +292,7 @@ class AggregationMatcher implements ModelInterface, ArrayAccess
     /**
      * Gets paramName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getParamName()
     {
@@ -316,7 +316,7 @@ class AggregationMatcher implements ModelInterface, ArrayAccess
     /**
      * Gets comparator
      *
-     * @return \TencentAds\Model\Comparator
+     * @return \TencentAds\Model\Comparator|mixed
      */
     public function getComparator()
     {
@@ -340,7 +340,7 @@ class AggregationMatcher implements ModelInterface, ArrayAccess
     /**
      * Gets comparisonValue
      *
-     * @return int
+     * @return int|mixed
      */
     public function getComparisonValue()
     {
@@ -364,7 +364,7 @@ class AggregationMatcher implements ModelInterface, ArrayAccess
     /**
      * Gets comparisonMinValue
      *
-     * @return int
+     * @return int|mixed
      */
     public function getComparisonMinValue()
     {
@@ -388,7 +388,7 @@ class AggregationMatcher implements ModelInterface, ArrayAccess
     /**
      * Gets comparisonMaxValue
      *
-     * @return int
+     * @return int|mixed
      */
     public function getComparisonMaxValue()
     {

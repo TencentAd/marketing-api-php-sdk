@@ -97,7 +97,7 @@ class FundsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\FundsGetResponse
+     * @return \TencentAds\Model\FundsGetResponse|mixed
      */
     public function fundsGet($accountId, $fields = null)
     {

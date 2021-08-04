@@ -226,7 +226,7 @@ class DynamicAdSpec implements ModelInterface, ArrayAccess
     /**
      * Gets productCatalogId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProductCatalogId()
     {
@@ -250,7 +250,7 @@ class DynamicAdSpec implements ModelInterface, ArrayAccess
     /**
      * Gets productMode
      *
-     * @return \TencentAds\Model\ProductMode
+     * @return \TencentAds\Model\ProductMode|mixed
      */
     public function getProductMode()
     {
@@ -274,7 +274,7 @@ class DynamicAdSpec implements ModelInterface, ArrayAccess
     /**
      * Gets productSource
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductSource()
     {
@@ -298,7 +298,7 @@ class DynamicAdSpec implements ModelInterface, ArrayAccess
     /**
      * Gets productRecommendMethods
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getProductRecommendMethods()
     {

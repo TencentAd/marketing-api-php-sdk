@@ -99,7 +99,7 @@ class AsyncTaskFilesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return string
+     * @return string|mixed
      */
     public function asyncTaskFilesGet($accountId, $taskId, $fileId, $fields = null)
     {

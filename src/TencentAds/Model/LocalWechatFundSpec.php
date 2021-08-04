@@ -226,7 +226,7 @@ class LocalWechatFundSpec implements ModelInterface, ArrayAccess
     /**
      * Gets cashUsableAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCashUsableAmount()
     {
@@ -250,7 +250,7 @@ class LocalWechatFundSpec implements ModelInterface, ArrayAccess
     /**
      * Gets giftUsableAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getGiftUsableAmount()
     {
@@ -274,7 +274,7 @@ class LocalWechatFundSpec implements ModelInterface, ArrayAccess
     /**
      * Gets cashLockedAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCashLockedAmount()
     {
@@ -298,7 +298,7 @@ class LocalWechatFundSpec implements ModelInterface, ArrayAccess
     /**
      * Gets giftLockedAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getGiftLockedAmount()
     {

@@ -30,7 +30,7 @@ class WechatPagesGrantinfoApiContainer extends ApiContainer
     /**
      * Handle WechatPagesGrantinfoApi wechatPagesGrantinfoGet function
      * @param array params
-     * @return \TencentAds\Model\WechatPagesGrantinfoGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

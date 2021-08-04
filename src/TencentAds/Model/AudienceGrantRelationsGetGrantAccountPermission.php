@@ -214,7 +214,7 @@ class AudienceGrantRelationsGetGrantAccountPermission implements ModelInterface,
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -238,7 +238,7 @@ class AudienceGrantRelationsGetGrantAccountPermission implements ModelInterface,
     /**
      * Gets grantPermissionTypeList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getGrantPermissionTypeList()
     {

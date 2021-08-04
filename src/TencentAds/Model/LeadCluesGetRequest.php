@@ -237,7 +237,7 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -261,7 +261,7 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets timeRange
      *
-     * @return \TencentAds\Model\TimeRange
+     * @return \TencentAds\Model\TimeRange|mixed
      */
     public function getTimeRange()
     {
@@ -285,7 +285,7 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets filtering
      *
-     * @return \TencentAds\Model\FilteringStruct[]
+     * @return \TencentAds\Model\FilteringStruct[]|mixed
      */
     public function getFiltering()
     {
@@ -309,7 +309,7 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets page
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPage()
     {
@@ -333,7 +333,7 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets pageSize
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageSize()
     {
@@ -357,7 +357,7 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets lastSearchAfterValues
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getLastSearchAfterValues()
     {

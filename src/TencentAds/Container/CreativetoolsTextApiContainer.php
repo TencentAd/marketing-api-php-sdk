@@ -30,7 +30,7 @@ class CreativetoolsTextApiContainer extends ApiContainer
     /**
      * Handle CreativetoolsTextApi creativetoolsTextGet function
      * @param array params
-     * @return \TencentAds\Model\CreativetoolsTextGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

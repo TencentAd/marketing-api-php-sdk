@@ -220,7 +220,7 @@ class Permission implements ModelInterface, ArrayAccess
     /**
      * Gets canCreateAudience
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getCanCreateAudience()
     {
@@ -244,7 +244,7 @@ class Permission implements ModelInterface, ArrayAccess
     /**
      * Gets canExactConversionClaim
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getCanExactConversionClaim()
     {
@@ -268,7 +268,7 @@ class Permission implements ModelInterface, ArrayAccess
     /**
      * Gets canAsServing
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getCanAsServing()
     {

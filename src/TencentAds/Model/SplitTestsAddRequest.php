@@ -237,7 +237,7 @@ class SplitTestsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -261,7 +261,7 @@ class SplitTestsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets splitTestName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSplitTestName()
     {
@@ -285,7 +285,7 @@ class SplitTestsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets beginTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBeginTime()
     {
@@ -309,7 +309,7 @@ class SplitTestsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets endTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getEndTime()
     {
@@ -333,7 +333,7 @@ class SplitTestsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupIdList
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getAdgroupIdList()
     {
@@ -357,7 +357,7 @@ class SplitTestsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets smartExpandEnabled
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getSmartExpandEnabled()
     {

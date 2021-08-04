@@ -219,7 +219,7 @@ class CapabilitiesGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets wechatEcommerceProductSpec
      *
-     * @return \TencentAds\Model\WechatEcommerceProductSpec
+     * @return \TencentAds\Model\WechatEcommerceProductSpec|mixed
      */
     public function getWechatEcommerceProductSpec()
     {
@@ -243,7 +243,7 @@ class CapabilitiesGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets wechatLinkAdSpec
      *
-     * @return \TencentAds\Model\WechatLinkAdSpec
+     * @return \TencentAds\Model\WechatLinkAdSpec|mixed
      */
     public function getWechatLinkAdSpec()
     {
@@ -267,7 +267,7 @@ class CapabilitiesGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets wechatOcpaSpec
      *
-     * @return \TencentAds\Model\WechatOcpaSpecStruct[]
+     * @return \TencentAds\Model\WechatOcpaSpecStruct[]|mixed
      */
     public function getWechatOcpaSpec()
     {

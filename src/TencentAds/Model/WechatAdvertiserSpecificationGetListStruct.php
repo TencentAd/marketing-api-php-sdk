@@ -268,7 +268,7 @@ class WechatAdvertiserSpecificationGetListStruct implements ModelInterface, Arra
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -292,7 +292,7 @@ class WechatAdvertiserSpecificationGetListStruct implements ModelInterface, Arra
     /**
      * Gets wechatAccountName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatAccountName()
     {
@@ -316,7 +316,7 @@ class WechatAdvertiserSpecificationGetListStruct implements ModelInterface, Arra
     /**
      * Gets systemIndustryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSystemIndustryId()
     {
@@ -340,7 +340,7 @@ class WechatAdvertiserSpecificationGetListStruct implements ModelInterface, Arra
     /**
      * Gets wechatAccountId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatAccountId()
     {
@@ -364,7 +364,7 @@ class WechatAdvertiserSpecificationGetListStruct implements ModelInterface, Arra
     /**
      * Gets wechatAccountType
      *
-     * @return \TencentAds\Model\WechatSpecificationAccountType
+     * @return \TencentAds\Model\WechatSpecificationAccountType|mixed
      */
     public function getWechatAccountType()
     {
@@ -388,7 +388,7 @@ class WechatAdvertiserSpecificationGetListStruct implements ModelInterface, Arra
     /**
      * Gets corporationName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCorporationName()
     {
@@ -412,7 +412,7 @@ class WechatAdvertiserSpecificationGetListStruct implements ModelInterface, Arra
     /**
      * Gets authStatus
      *
-     * @return \TencentAds\Model\WechatAuthStatus
+     * @return \TencentAds\Model\WechatAuthStatus|mixed
      */
     public function getAuthStatus()
     {
@@ -436,7 +436,7 @@ class WechatAdvertiserSpecificationGetListStruct implements ModelInterface, Arra
     /**
      * Gets authTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAuthTime()
     {
@@ -460,7 +460,7 @@ class WechatAdvertiserSpecificationGetListStruct implements ModelInterface, Arra
     /**
      * Gets agencyIdList
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getAgencyIdList()
     {
@@ -484,7 +484,7 @@ class WechatAdvertiserSpecificationGetListStruct implements ModelInterface, Arra
     /**
      * Gets staffWechatIdList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getStaffWechatIdList()
     {
@@ -508,7 +508,7 @@ class WechatAdvertiserSpecificationGetListStruct implements ModelInterface, Arra
     /**
      * Gets dailyBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDailyBudget()
     {

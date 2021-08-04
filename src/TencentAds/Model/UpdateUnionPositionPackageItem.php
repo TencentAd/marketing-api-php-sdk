@@ -214,7 +214,7 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -238,7 +238,7 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
     /**
      * Gets unionPositionPackage
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getUnionPositionPackage()
     {

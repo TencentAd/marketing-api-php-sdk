@@ -237,7 +237,7 @@ class LeadsFormGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -261,7 +261,7 @@ class LeadsFormGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets componentId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getComponentId()
     {
@@ -285,7 +285,7 @@ class LeadsFormGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets componentName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getComponentName()
     {
@@ -309,7 +309,7 @@ class LeadsFormGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCreatedTime()
     {
@@ -333,7 +333,7 @@ class LeadsFormGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets formConfig
      *
-     * @return \TencentAds\Model\FormConfigDetailData
+     * @return \TencentAds\Model\FormConfigDetailData|mixed
      */
     public function getFormConfig()
     {
@@ -357,7 +357,7 @@ class LeadsFormGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets itemList
      *
-     * @return \TencentAds\Model\ControlListItemDetailData[]
+     * @return \TencentAds\Model\ControlListItemDetailData[]|mixed
      */
     public function getItemList()
     {

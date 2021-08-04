@@ -30,7 +30,7 @@ class LocalStoresApiContainer extends ApiContainer
     /**
      * Handle LocalStoresApi localStoresAdd function
      * @param array params
-     * @return \TencentAds\Model\LocalStoresAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class LocalStoresApiContainer extends ApiContainer
     /**
      * Handle LocalStoresApi localStoresDelete function
      * @param array params
-     * @return \TencentAds\Model\LocalStoresDeleteResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -98,7 +98,7 @@ class LocalStoresApiContainer extends ApiContainer
     /**
      * Handle LocalStoresApi localStoresGet function
      * @param array params
-     * @return \TencentAds\Model\LocalStoresGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

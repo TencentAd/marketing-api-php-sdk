@@ -844,7 +844,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets productOuterId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductOuterId()
     {
@@ -868,7 +868,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets productName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductName()
     {
@@ -892,7 +892,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -916,7 +916,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCreatedTime()
     {
@@ -940,7 +940,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLastModifiedTime()
     {
@@ -964,7 +964,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets expirationTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getExpirationTime()
     {
@@ -988,7 +988,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets imageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImageUrl()
     {
@@ -1012,7 +1012,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets additionalImageUrl
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getAdditionalImageUrl()
     {
@@ -1036,7 +1036,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets videoDuration
      *
-     * @return string
+     * @return string|mixed
      */
     public function getVideoDuration()
     {
@@ -1060,7 +1060,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets videoUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getVideoUrl()
     {
@@ -1084,7 +1084,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets playCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPlayCount()
     {
@@ -1108,7 +1108,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets publishTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPublishTime()
     {
@@ -1132,7 +1132,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets additionalVideoUrl
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getAdditionalVideoUrl()
     {
@@ -1156,7 +1156,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets pcPageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPcPageUrl()
     {
@@ -1180,7 +1180,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets mobileH5PageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMobileH5PageUrl()
     {
@@ -1204,7 +1204,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets androidPageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAndroidPageUrl()
     {
@@ -1228,7 +1228,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets iosPageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIosPageUrl()
     {
@@ -1252,7 +1252,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets wechatPageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatPageUrl()
     {
@@ -1276,7 +1276,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets additionalMobileH5PageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdditionalMobileH5PageUrl()
     {
@@ -1300,7 +1300,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets additionalAndroidPageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdditionalAndroidPageUrl()
     {
@@ -1324,7 +1324,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets additionalIosPageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdditionalIosPageUrl()
     {
@@ -1348,7 +1348,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets additionalWechatPageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdditionalWechatPageUrl()
     {
@@ -1372,7 +1372,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets miniProgramId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMiniProgramId()
     {
@@ -1396,7 +1396,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets miniProgramPath
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMiniProgramPath()
     {
@@ -1420,7 +1420,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets additionalMiniProgramId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdditionalMiniProgramId()
     {
@@ -1444,7 +1444,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets additionalMiniProgramPath
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdditionalMiniProgramPath()
     {
@@ -1468,7 +1468,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets universalLink
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUniversalLink()
     {
@@ -1492,7 +1492,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets additionalUniversalLink
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdditionalUniversalLink()
     {
@@ -1516,7 +1516,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets productShortName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductShortName()
     {
@@ -1540,7 +1540,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets price
      *
-     * @return double
+     * @return double|mixed
      */
     public function getPrice()
     {
@@ -1564,7 +1564,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets originalPrice
      *
-     * @return double
+     * @return double|mixed
      */
     public function getOriginalPrice()
     {
@@ -1588,7 +1588,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets discount
      *
-     * @return double
+     * @return double|mixed
      */
     public function getDiscount()
     {
@@ -1612,7 +1612,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets salePrice
      *
-     * @return double
+     * @return double|mixed
      */
     public function getSalePrice()
     {
@@ -1636,7 +1636,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets startTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getStartTime()
     {
@@ -1660,7 +1660,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets endTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getEndTime()
     {
@@ -1684,7 +1684,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets salesVolume
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSalesVolume()
     {
@@ -1708,7 +1708,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets stockVolume
      *
-     * @return int
+     * @return int|mixed
      */
     public function getStockVolume()
     {
@@ -1732,7 +1732,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets slogan
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSlogan()
     {
@@ -1756,7 +1756,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets customLabel
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getCustomLabel()
     {
@@ -1780,7 +1780,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets firstCategoryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstCategoryId()
     {
@@ -1804,7 +1804,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets secondCategoryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSecondCategoryId()
     {
@@ -1828,7 +1828,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets thirdCategoryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getThirdCategoryId()
     {
@@ -1852,7 +1852,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets fourthCategoryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFourthCategoryId()
     {
@@ -1876,7 +1876,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets firstCategoryName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getFirstCategoryName()
     {
@@ -1900,7 +1900,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets secondCategoryName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSecondCategoryName()
     {
@@ -1924,7 +1924,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets thirdCategoryName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getThirdCategoryName()
     {
@@ -1948,7 +1948,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets fourthCategoryName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getFourthCategoryName()
     {
@@ -1972,7 +1972,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets firstCategoryUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getFirstCategoryUrl()
     {
@@ -1996,7 +1996,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets secondCategoryUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSecondCategoryUrl()
     {
@@ -2020,7 +2020,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets thirdCategoryUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getThirdCategoryUrl()
     {
@@ -2044,7 +2044,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets fourthCategoryUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getFourthCategoryUrl()
     {
@@ -2068,7 +2068,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets brandId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBrandId()
     {
@@ -2092,7 +2092,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets productBrand
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductBrand()
     {
@@ -2116,7 +2116,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets brandUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBrandUrl()
     {
@@ -2140,7 +2140,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets promotionId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPromotionId()
     {
@@ -2164,7 +2164,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets promotionName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPromotionName()
     {
@@ -2188,7 +2188,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets promotionUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPromotionUrl()
     {
@@ -2212,7 +2212,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets shopId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getShopId()
     {
@@ -2236,7 +2236,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets shopName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getShopName()
     {
@@ -2260,7 +2260,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets shopUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getShopUrl()
     {
@@ -2284,7 +2284,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets shopCustomInfo
      *
-     * @return string
+     * @return string|mixed
      */
     public function getShopCustomInfo()
     {
@@ -2308,7 +2308,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets shopIdList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getShopIdList()
     {
@@ -2332,7 +2332,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets productViewCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProductViewCount()
     {
@@ -2356,7 +2356,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets favoriteCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFavoriteCount()
     {
@@ -2380,7 +2380,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets rating
      *
-     * @return double
+     * @return double|mixed
      */
     public function getRating()
     {
@@ -2404,7 +2404,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets favourableCommentRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getFavourableCommentRate()
     {
@@ -2428,7 +2428,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets productOwnerType
      *
-     * @return \TencentAds\Model\ProductOwnerType
+     * @return \TencentAds\Model\ProductOwnerType|mixed
      */
     public function getProductOwnerType()
     {
@@ -2452,7 +2452,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets author
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAuthor()
     {
@@ -2476,7 +2476,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets fullText
      *
-     * @return string
+     * @return string|mixed
      */
     public function getFullText()
     {
@@ -2500,7 +2500,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets likeCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLikeCount()
     {
@@ -2524,7 +2524,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets forwardCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getForwardCount()
     {
@@ -2548,7 +2548,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets commentCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCommentCount()
     {
@@ -2572,7 +2572,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets authorFansCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAuthorFansCount()
     {
@@ -2596,7 +2596,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets semanticLabels
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getSemanticLabels()
     {
@@ -2620,7 +2620,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets detailImg
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getDetailImg()
     {
@@ -2644,7 +2644,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets showCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getShowCount()
     {
@@ -2668,7 +2668,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets playRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getPlayRate()
     {
@@ -2692,7 +2692,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets makeMoneyOnline
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMakeMoneyOnline()
     {
@@ -2716,7 +2716,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets liveBroadcast
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLiveBroadcast()
     {
@@ -2740,7 +2740,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets platformAttribute
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPlatformAttribute()
     {
@@ -2764,7 +2764,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets customData
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCustomData()
     {
@@ -2788,7 +2788,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets shootingPicCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getShootingPicCount()
     {
@@ -2812,7 +2812,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets fineeditCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFineeditCount()
     {
@@ -2836,7 +2836,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets albumPhotoCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAlbumPhotoCount()
     {
@@ -2860,7 +2860,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets albumCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAlbumCount()
     {
@@ -2884,7 +2884,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets frameCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFrameCount()
     {
@@ -2908,7 +2908,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets country
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCountry()
     {
@@ -2932,7 +2932,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets province
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProvince()
     {
@@ -2956,7 +2956,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets city
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCity()
     {
@@ -2980,7 +2980,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets district
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDistrict()
     {
@@ -3004,7 +3004,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets address
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getAddress()
     {
@@ -3028,7 +3028,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets shootingSceneInCount
      *
-     * @return \TencentAds\Model\ShootingSceneInCount
+     * @return \TencentAds\Model\ShootingSceneInCount|mixed
      */
     public function getShootingSceneInCount()
     {
@@ -3052,7 +3052,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets shootingSceneOutCount
      *
-     * @return \TencentAds\Model\ShootingSceneOutCount
+     * @return \TencentAds\Model\ShootingSceneOutCount|mixed
      */
     public function getShootingSceneOutCount()
     {
@@ -3076,7 +3076,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets brideClothing
      *
-     * @return \TencentAds\Model\BrideClothing
+     * @return \TencentAds\Model\BrideClothing|mixed
      */
     public function getBrideClothing()
     {
@@ -3100,7 +3100,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets groomClothing
      *
-     * @return \TencentAds\Model\GroomClothing
+     * @return \TencentAds\Model\GroomClothing|mixed
      */
     public function getGroomClothing()
     {
@@ -3124,7 +3124,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets clothCount
      *
-     * @return \TencentAds\Model\ClothCount
+     * @return \TencentAds\Model\ClothCount|mixed
      */
     public function getClothCount()
     {
@@ -3148,7 +3148,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets shootingScene
      *
-     * @return \TencentAds\Model\ShootingScene
+     * @return \TencentAds\Model\ShootingScene|mixed
      */
     public function getShootingScene()
     {
@@ -3172,7 +3172,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets setSpecial
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getSetSpecial()
     {
@@ -3196,7 +3196,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets shootingStyleCom
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getShootingStyleCom()
     {
@@ -3220,7 +3220,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets shootingSceneDetail
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getShootingSceneDetail()
     {
@@ -3244,7 +3244,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets tourPlaceDomestic
      *
-     * @return \TencentAds\Model\TourPlaceDomestic
+     * @return \TencentAds\Model\TourPlaceDomestic|mixed
      */
     public function getTourPlaceDomestic()
     {
@@ -3268,7 +3268,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets tourPlaceForeign
      *
-     * @return \TencentAds\Model\TourPlaceForeign
+     * @return \TencentAds\Model\TourPlaceForeign|mixed
      */
     public function getTourPlaceForeign()
     {
@@ -3292,7 +3292,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets maxInsuranceQuota
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMaxInsuranceQuota()
     {
@@ -3316,7 +3316,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets firstMonthInsuranceFee
      *
-     * @return double
+     * @return double|mixed
      */
     public function getFirstMonthInsuranceFee()
     {
@@ -3340,7 +3340,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets maxQuota
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMaxQuota()
     {
@@ -3364,7 +3364,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets annualizedRateOfReturn
      *
-     * @return double
+     * @return double|mixed
      */
     public function getAnnualizedRateOfReturn()
     {
@@ -3388,7 +3388,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets riskType
      *
-     * @return \TencentAds\Model\RiskTypeStatus
+     * @return \TencentAds\Model\RiskTypeStatus|mixed
      */
     public function getRiskType()
     {

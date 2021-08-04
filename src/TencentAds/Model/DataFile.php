@@ -292,7 +292,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Gets audienceId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAudienceId()
     {
@@ -316,7 +316,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Gets customAudienceFileId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCustomAudienceFileId()
     {
@@ -340,7 +340,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return string
+     * @return string|mixed
      */
     public function getName()
     {
@@ -364,7 +364,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Gets userIdType
      *
-     * @return \TencentAds\Model\UserIdType
+     * @return \TencentAds\Model\UserIdType|mixed
      */
     public function getUserIdType()
     {
@@ -388,7 +388,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Gets operationType
      *
-     * @return \TencentAds\Model\OperationType
+     * @return \TencentAds\Model\OperationType|mixed
      */
     public function getOperationType()
     {
@@ -412,7 +412,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Gets openAppId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOpenAppId()
     {
@@ -436,7 +436,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Gets saltId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSaltId()
     {
@@ -460,7 +460,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Gets processStatus
      *
-     * @return \TencentAds\Model\FileProcessStatus
+     * @return \TencentAds\Model\FileProcessStatus|mixed
      */
     public function getProcessStatus()
     {
@@ -484,7 +484,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Gets processCode
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProcessCode()
     {
@@ -508,7 +508,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Gets errorMessage
      *
-     * @return string
+     * @return string|mixed
      */
     public function getErrorMessage()
     {
@@ -532,7 +532,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Gets lineCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLineCount()
     {
@@ -556,7 +556,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Gets validLineCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getValidLineCount()
     {
@@ -580,7 +580,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Gets userCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUserCount()
     {
@@ -604,7 +604,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Gets size
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSize()
     {
@@ -628,7 +628,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCreatedTime()
     {

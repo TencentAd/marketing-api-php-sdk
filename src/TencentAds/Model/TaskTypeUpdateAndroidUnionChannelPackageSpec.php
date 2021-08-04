@@ -214,7 +214,7 @@ class TaskTypeUpdateAndroidUnionChannelPackageSpec implements ModelInterface, Ar
     /**
      * Gets androidUnionAppId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAndroidUnionAppId()
     {
@@ -238,7 +238,7 @@ class TaskTypeUpdateAndroidUnionChannelPackageSpec implements ModelInterface, Ar
     /**
      * Gets androidUnionChannelPackageSpec
      *
-     * @return \TencentAds\Model\UpdateAndroidUnionChannelPackageSpec[]
+     * @return \TencentAds\Model\UpdateAndroidUnionChannelPackageSpec[]|mixed
      */
     public function getAndroidUnionChannelPackageSpec()
     {

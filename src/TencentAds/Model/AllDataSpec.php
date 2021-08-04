@@ -226,7 +226,7 @@ class AllDataSpec implements ModelInterface, ArrayAccess
     /**
      * Gets campaign
      *
-     * @return \TencentAds\Model\CampaignGetSpec
+     * @return \TencentAds\Model\CampaignGetSpec|mixed
      */
     public function getCampaign()
     {
@@ -250,7 +250,7 @@ class AllDataSpec implements ModelInterface, ArrayAccess
     /**
      * Gets adgroup
      *
-     * @return \TencentAds\Model\AdgroupGetSpec
+     * @return \TencentAds\Model\AdgroupGetSpec|mixed
      */
     public function getAdgroup()
     {
@@ -274,7 +274,7 @@ class AllDataSpec implements ModelInterface, ArrayAccess
     /**
      * Gets adcreative
      *
-     * @return \TencentAds\Model\AdCreativeGetSpec
+     * @return \TencentAds\Model\AdCreativeGetSpec|mixed
      */
     public function getAdcreative()
     {
@@ -298,7 +298,7 @@ class AllDataSpec implements ModelInterface, ArrayAccess
     /**
      * Gets accountMetric
      *
-     * @return \TencentAds\Model\MetricDetailData
+     * @return \TencentAds\Model\MetricDetailData|mixed
      */
     public function getAccountMetric()
     {

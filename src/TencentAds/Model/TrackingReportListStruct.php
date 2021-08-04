@@ -268,7 +268,7 @@ class TrackingReportListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets date
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDate()
     {
@@ -292,7 +292,7 @@ class TrackingReportListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets hour
      *
-     * @return int
+     * @return int|mixed
      */
     public function getHour()
     {
@@ -316,7 +316,7 @@ class TrackingReportListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets rawClicks
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRawClicks()
     {
@@ -340,7 +340,7 @@ class TrackingReportListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets _1minClicks
      *
-     * @return int
+     * @return int|mixed
      */
     public function get1minClicks()
     {
@@ -364,7 +364,7 @@ class TrackingReportListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets _2minClicks
      *
-     * @return int
+     * @return int|mixed
      */
     public function get2minClicks()
     {
@@ -388,7 +388,7 @@ class TrackingReportListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets _15minClicks
      *
-     * @return int
+     * @return int|mixed
      */
     public function get15minClicks()
     {
@@ -412,7 +412,7 @@ class TrackingReportListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets requestFail
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRequestFail()
     {
@@ -436,7 +436,7 @@ class TrackingReportListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets responseFail
      *
-     * @return int
+     * @return int|mixed
      */
     public function getResponseFail()
     {
@@ -460,7 +460,7 @@ class TrackingReportListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets httpStatusError
      *
-     * @return int
+     * @return int|mixed
      */
     public function getHttpStatusError()
     {
@@ -484,7 +484,7 @@ class TrackingReportListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets otherError
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOtherError()
     {
@@ -508,7 +508,7 @@ class TrackingReportListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets sourceType
      *
-     * @return \TencentAds\Model\SourceType
+     * @return \TencentAds\Model\SourceType|mixed
      */
     public function getSourceType()
     {

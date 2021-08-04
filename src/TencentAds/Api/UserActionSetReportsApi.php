@@ -101,7 +101,7 @@ class UserActionSetReportsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\UserActionSetReportsGetResponse
+     * @return \TencentAds\Model\UserActionSetReportsGetResponse|mixed
      */
     public function userActionSetReportsGet($accountId, $userActionSetId, $dateRange, $timeGranularity, $aggregation = null, $fields = null)
     {

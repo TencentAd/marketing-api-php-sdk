@@ -213,7 +213,7 @@ class LocalStoresAddressParsingResultGetRequest implements ModelInterface, Array
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -237,7 +237,7 @@ class LocalStoresAddressParsingResultGetRequest implements ModelInterface, Array
     /**
      * Gets storeAddressList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getStoreAddressList()
     {

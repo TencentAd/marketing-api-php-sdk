@@ -220,7 +220,7 @@ class VideoCaptureStruct implements ModelInterface, ArrayAccess
     /**
      * Gets imageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImageUrl()
     {
@@ -244,7 +244,7 @@ class VideoCaptureStruct implements ModelInterface, ArrayAccess
     /**
      * Gets imageType
      *
-     * @return \TencentAds\Model\VideoCaptureImageType
+     * @return \TencentAds\Model\VideoCaptureImageType|mixed
      */
     public function getImageType()
     {
@@ -268,7 +268,7 @@ class VideoCaptureStruct implements ModelInterface, ArrayAccess
     /**
      * Gets imageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImageId()
     {

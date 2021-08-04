@@ -213,7 +213,7 @@ class VideomakerAutoadjustmentsAddResponseData implements ModelInterface, ArrayA
     /**
      * Gets code
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCode()
     {
@@ -237,7 +237,7 @@ class VideomakerAutoadjustmentsAddResponseData implements ModelInterface, ArrayA
     /**
      * Gets taskIds
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getTaskIds()
     {

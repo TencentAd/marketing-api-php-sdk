@@ -30,7 +30,7 @@ class TrackingReportsApiContainer extends ApiContainer
     /**
      * Handle TrackingReportsApi trackingReportsGet function
      * @param array params
-     * @return \TencentAds\Model\TrackingReportsGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

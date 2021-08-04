@@ -238,7 +238,7 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets poiId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPoiId()
     {
@@ -262,7 +262,7 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets originAddress
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOriginAddress()
     {
@@ -286,7 +286,7 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets localStoreName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLocalStoreName()
     {
@@ -310,7 +310,7 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets localStoreProvince
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLocalStoreProvince()
     {
@@ -334,7 +334,7 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets localStoreCity
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLocalStoreCity()
     {
@@ -358,7 +358,7 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets localStoreAddress
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLocalStoreAddress()
     {

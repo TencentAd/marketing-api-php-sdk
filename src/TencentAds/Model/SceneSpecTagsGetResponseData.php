@@ -207,7 +207,7 @@ class SceneSpecTagsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\SceneSpecTagsGetListStruct[]
+     * @return \TencentAds\Model\SceneSpecTagsGetListStruct[]|mixed
      */
     public function getList()
     {

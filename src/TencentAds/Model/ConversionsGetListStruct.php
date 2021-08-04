@@ -298,7 +298,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets conversionId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getConversionId()
     {
@@ -322,7 +322,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets conversionName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getConversionName()
     {
@@ -346,7 +346,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets accessType
      *
-     * @return \TencentAds\Model\AccessType
+     * @return \TencentAds\Model\AccessType|mixed
      */
     public function getAccessType()
     {
@@ -370,7 +370,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets claimType
      *
-     * @return \TencentAds\Model\ClaimType
+     * @return \TencentAds\Model\ClaimType|mixed
      */
     public function getClaimType()
     {
@@ -394,7 +394,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets feedbackUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getFeedbackUrl()
     {
@@ -418,7 +418,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets selfAttributed
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getSelfAttributed()
     {
@@ -442,7 +442,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets optimizationGoal
      *
-     * @return \TencentAds\Model\IntOptimizationGoal
+     * @return \TencentAds\Model\IntOptimizationGoal|mixed
      */
     public function getOptimizationGoal()
     {
@@ -466,7 +466,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets deepBehaviorOptimizationGoal
      *
-     * @return \TencentAds\Model\IntOptimizationGoal
+     * @return \TencentAds\Model\IntOptimizationGoal|mixed
      */
     public function getDeepBehaviorOptimizationGoal()
     {
@@ -490,7 +490,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets deepWorthOptimizationGoal
      *
-     * @return \TencentAds\Model\ConversionOptimizationGoal
+     * @return \TencentAds\Model\ConversionOptimizationGoal|mixed
      */
     public function getDeepWorthOptimizationGoal()
     {
@@ -514,7 +514,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets userActionSetId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUserActionSetId()
     {
@@ -538,7 +538,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets userActionSetKey
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUserActionSetKey()
     {
@@ -562,7 +562,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets siteSetEnable
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getSiteSetEnable()
     {
@@ -586,7 +586,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets isDeleted
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getIsDeleted()
     {
@@ -610,7 +610,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets accessStatus
      *
-     * @return \TencentAds\Model\AccessStatus
+     * @return \TencentAds\Model\AccessStatus|mixed
      */
     public function getAccessStatus()
     {
@@ -634,7 +634,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets createSourceType
      *
-     * @return \TencentAds\Model\CreateSourceType
+     * @return \TencentAds\Model\CreateSourceType|mixed
      */
     public function getCreateSourceType()
     {
@@ -658,7 +658,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appAndroidChannelPackageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAppAndroidChannelPackageId()
     {

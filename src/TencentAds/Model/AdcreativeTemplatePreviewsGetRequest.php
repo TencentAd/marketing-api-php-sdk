@@ -231,7 +231,7 @@ class AdcreativeTemplatePreviewsGetRequest implements ModelInterface, ArrayAcces
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -255,7 +255,7 @@ class AdcreativeTemplatePreviewsGetRequest implements ModelInterface, ArrayAcces
     /**
      * Gets adIdList
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getAdIdList()
     {
@@ -279,7 +279,7 @@ class AdcreativeTemplatePreviewsGetRequest implements ModelInterface, ArrayAcces
     /**
      * Gets adgroup
      *
-     * @return \TencentAds\Model\Adgroup
+     * @return \TencentAds\Model\Adgroup|mixed
      */
     public function getAdgroup()
     {
@@ -303,7 +303,7 @@ class AdcreativeTemplatePreviewsGetRequest implements ModelInterface, ArrayAcces
     /**
      * Gets adList
      *
-     * @return \TencentAds\Model\Ad[]
+     * @return \TencentAds\Model\Ad[]|mixed
      */
     public function getAdList()
     {
@@ -327,7 +327,7 @@ class AdcreativeTemplatePreviewsGetRequest implements ModelInterface, ArrayAcces
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {

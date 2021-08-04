@@ -207,7 +207,7 @@ class WechatQualificationsAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets wechatQualificationId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatQualificationId()
     {

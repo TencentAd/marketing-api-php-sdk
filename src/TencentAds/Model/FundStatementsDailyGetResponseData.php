@@ -207,7 +207,7 @@ class FundStatementsDailyGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\FundStatementsDailyGetListStruct[]
+     * @return \TencentAds\Model\FundStatementsDailyGetListStruct[]|mixed
      */
     public function getList()
     {

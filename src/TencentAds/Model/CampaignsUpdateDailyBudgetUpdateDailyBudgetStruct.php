@@ -214,7 +214,7 @@ class CampaignsUpdateDailyBudgetUpdateDailyBudgetStruct implements ModelInterfac
     /**
      * Gets campaignId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampaignId()
     {
@@ -238,7 +238,7 @@ class CampaignsUpdateDailyBudgetUpdateDailyBudgetStruct implements ModelInterfac
     /**
      * Gets dailyBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDailyBudget()
     {

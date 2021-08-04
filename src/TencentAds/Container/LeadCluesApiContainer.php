@@ -30,7 +30,7 @@ class LeadCluesApiContainer extends ApiContainer
     /**
      * Handle LeadCluesApi leadCluesGet function
      * @param array params
-     * @return \TencentAds\Model\LeadCluesGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

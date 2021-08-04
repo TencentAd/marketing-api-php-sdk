@@ -232,7 +232,7 @@ class FundStatementsDailyGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets tradeType
      *
-     * @return \TencentAds\Model\TradeType
+     * @return \TencentAds\Model\TradeType|mixed
      */
     public function getTradeType()
     {
@@ -256,7 +256,7 @@ class FundStatementsDailyGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets amount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAmount()
     {
@@ -280,7 +280,7 @@ class FundStatementsDailyGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -304,7 +304,7 @@ class FundStatementsDailyGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets fundType
      *
-     * @return \TencentAds\Model\AccountTypeMap
+     * @return \TencentAds\Model\AccountTypeMap|mixed
      */
     public function getFundType()
     {
@@ -328,7 +328,7 @@ class FundStatementsDailyGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets time
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTime()
     {

@@ -208,7 +208,7 @@ class Trace implements ModelInterface, ArrayAccess
     /**
      * Gets clickId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getClickId()
     {

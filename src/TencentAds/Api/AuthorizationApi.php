@@ -100,7 +100,7 @@ class AuthorizationApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return string
+     * @return string|mixed
      */
     public function authorizationWechatBind($accessToken, $redirectUri, $accountId = null, $wechatAccountId = null, $fields = null)
     {

@@ -232,7 +232,7 @@ class ProductSeriesStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productSeriesId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProductSeriesId()
     {
@@ -256,7 +256,7 @@ class ProductSeriesStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productSeriesName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductSeriesName()
     {
@@ -280,7 +280,7 @@ class ProductSeriesStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productSeriesDescription
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductSeriesDescription()
     {
@@ -304,7 +304,7 @@ class ProductSeriesStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productSeriesType
      *
-     * @return \TencentAds\Model\ProductSeriesType
+     * @return \TencentAds\Model\ProductSeriesType|mixed
      */
     public function getProductSeriesType()
     {
@@ -328,7 +328,7 @@ class ProductSeriesStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productSeries
      *
-     * @return \TencentAds\Model\ProductSeriesSpec
+     * @return \TencentAds\Model\ProductSeriesSpec|mixed
      */
     public function getProductSeries()
     {

@@ -96,7 +96,7 @@ class UserActionSetsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\UserActionSetsAddResponse
+     * @return \TencentAds\Model\UserActionSetsAddResponse|mixed
      */
     public function userActionSetsAdd($data)
     {
@@ -385,7 +385,7 @@ class UserActionSetsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\UserActionSetsGetResponse
+     * @return \TencentAds\Model\UserActionSetsGetResponse|mixed
      */
     public function userActionSetsGet($accountId, $userActionSetId = null, $type = null, $mobileAppId = null, $wechatAppId = null, $name = null, $includePermission = null, $fields = null)
     {

@@ -220,7 +220,7 @@ class ProductSeriesSpecFilteringStruct implements ModelInterface, ArrayAccess
     /**
      * Gets field
      *
-     * @return string
+     * @return string|mixed
      */
     public function getField()
     {
@@ -244,7 +244,7 @@ class ProductSeriesSpecFilteringStruct implements ModelInterface, ArrayAccess
     /**
      * Gets operator
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOperator()
     {
@@ -268,7 +268,7 @@ class ProductSeriesSpecFilteringStruct implements ModelInterface, ArrayAccess
     /**
      * Gets values
      *
-     * @return \TencentAds\Model\ProductSeriesSpecFilteringValueStruct[]
+     * @return \TencentAds\Model\ProductSeriesSpecFilteringValueStruct[]|mixed
      */
     public function getValues()
     {

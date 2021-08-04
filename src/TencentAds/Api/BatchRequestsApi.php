@@ -96,7 +96,7 @@ class BatchRequestsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\BatchRequestsAddResponse
+     * @return \TencentAds\Model\BatchRequestsAddResponse|mixed
      */
     public function batchRequestsAdd($data)
     {

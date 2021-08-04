@@ -256,7 +256,7 @@ class OptBidStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adjustBidStrategyFlag
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getAdjustBidStrategyFlag()
     {
@@ -280,7 +280,7 @@ class OptBidStruct implements ModelInterface, ArrayAccess
     /**
      * Gets currentBidStrategy
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCurrentBidStrategy()
     {
@@ -304,7 +304,7 @@ class OptBidStruct implements ModelInterface, ArrayAccess
     /**
      * Gets optimizeBidStrategy
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOptimizeBidStrategy()
     {
@@ -328,7 +328,7 @@ class OptBidStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adjustBidAmountFlag
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getAdjustBidAmountFlag()
     {
@@ -352,7 +352,7 @@ class OptBidStruct implements ModelInterface, ArrayAccess
     /**
      * Gets currentBidAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCurrentBidAmount()
     {
@@ -376,7 +376,7 @@ class OptBidStruct implements ModelInterface, ArrayAccess
     /**
      * Gets optimizeBidAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOptimizeBidAmount()
     {
@@ -400,7 +400,7 @@ class OptBidStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adjustDeepBidAmountFlag
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getAdjustDeepBidAmountFlag()
     {
@@ -424,7 +424,7 @@ class OptBidStruct implements ModelInterface, ArrayAccess
     /**
      * Gets currentDeepBidAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCurrentDeepBidAmount()
     {
@@ -448,7 +448,7 @@ class OptBidStruct implements ModelInterface, ArrayAccess
     /**
      * Gets optimizeDeepBidAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOptimizeDeepBidAmount()
     {

@@ -220,7 +220,7 @@ class TopSliderSpec implements ModelInterface, ArrayAccess
     /**
      * Gets imageIdList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getImageIdList()
     {
@@ -244,7 +244,7 @@ class TopSliderSpec implements ModelInterface, ArrayAccess
     /**
      * Gets width
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWidth()
     {
@@ -268,7 +268,7 @@ class TopSliderSpec implements ModelInterface, ArrayAccess
     /**
      * Gets height
      *
-     * @return int
+     * @return int|mixed
      */
     public function getHeight()
     {

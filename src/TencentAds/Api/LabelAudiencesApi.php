@@ -96,7 +96,7 @@ class LabelAudiencesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\LabelAudiencesAddResponse
+     * @return \TencentAds\Model\LabelAudiencesAddResponse|mixed
      */
     public function labelAudiencesAdd($data)
     {

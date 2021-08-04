@@ -208,7 +208,7 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
     /**
      * Gets pageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPageUrl()
     {

@@ -100,7 +100,7 @@ class VideomakerSubtitlesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\VideomakerSubtitlesAddResponse
+     * @return \TencentAds\Model\VideomakerSubtitlesAddResponse|mixed
      */
     public function videomakerSubtitlesAdd($accountId, $videoId = null, $videoFile = null, $signature = null, $onlySubtitleFile = null)
     {

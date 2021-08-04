@@ -30,7 +30,7 @@ class WechatQualificationsApiContainer extends ApiContainer
     /**
      * Handle WechatQualificationsApi wechatQualificationsAdd function
      * @param array params
-     * @return \TencentAds\Model\WechatQualificationsAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -70,7 +70,7 @@ class WechatQualificationsApiContainer extends ApiContainer
     /**
      * Handle WechatQualificationsApi wechatQualificationsDelete function
      * @param array params
-     * @return \TencentAds\Model\WechatQualificationsDeleteResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -104,7 +104,7 @@ class WechatQualificationsApiContainer extends ApiContainer
     /**
      * Handle WechatQualificationsApi wechatQualificationsGet function
      * @param array params
-     * @return \TencentAds\Model\WechatQualificationsGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

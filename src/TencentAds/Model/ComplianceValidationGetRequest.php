@@ -225,7 +225,7 @@ class ComplianceValidationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -249,7 +249,7 @@ class ComplianceValidationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets siteSet
      *
-     * @return \TencentAds\Model\SiteSet
+     * @return \TencentAds\Model\SiteSet|mixed
      */
     public function getSiteSet()
     {
@@ -273,7 +273,7 @@ class ComplianceValidationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets imageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImageId()
     {
@@ -297,7 +297,7 @@ class ComplianceValidationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets text
      *
-     * @return string
+     * @return string|mixed
      */
     public function getText()
     {

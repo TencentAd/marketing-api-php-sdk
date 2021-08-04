@@ -100,7 +100,7 @@ class CustomFeaturesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CustomFeaturesGetResponse
+     * @return \TencentAds\Model\CustomFeaturesGetResponse|mixed
      */
     public function customFeaturesGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {

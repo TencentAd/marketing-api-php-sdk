@@ -292,7 +292,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Gets tradeType
      *
-     * @return \TencentAds\Model\WechatAccountTradeType
+     * @return \TencentAds\Model\WechatAccountTradeType|mixed
      */
     public function getTradeType()
     {
@@ -316,7 +316,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Gets time
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTime()
     {
@@ -340,7 +340,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Gets amount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAmount()
     {
@@ -364,7 +364,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Gets wechatAccountId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatAccountId()
     {
@@ -388,7 +388,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Gets wechatAccountName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatAccountName()
     {
@@ -412,7 +412,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Gets fundType
      *
-     * @return \TencentAds\Model\WechatMpOpenFundType
+     * @return \TencentAds\Model\WechatMpOpenFundType|mixed
      */
     public function getFundType()
     {
@@ -436,7 +436,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Gets externalBillNo
      *
-     * @return string
+     * @return string|mixed
      */
     public function getExternalBillNo()
     {
@@ -460,7 +460,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -484,7 +484,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Gets operator
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOperator()
     {
@@ -508,7 +508,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Gets billNo
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBillNo()
     {
@@ -532,7 +532,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Gets repaymentChannelType
      *
-     * @return string
+     * @return string|mixed
      */
     public function getRepaymentChannelType()
     {
@@ -556,7 +556,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Gets companyName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCompanyName()
     {
@@ -580,7 +580,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Gets contactName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getContactName()
     {
@@ -604,7 +604,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Gets contactPhone
      *
-     * @return string
+     * @return string|mixed
      */
     public function getContactPhone()
     {
@@ -628,7 +628,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \TencentAds\Model\WechatAccountTradeStatus
+     * @return \TencentAds\Model\WechatAccountTradeStatus|mixed
      */
     public function getStatus()
     {

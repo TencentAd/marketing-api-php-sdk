@@ -226,7 +226,7 @@ class CreatePageResponse implements ModelInterface, ArrayAccess
     /**
      * Gets landingPageId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLandingPageId()
     {
@@ -250,7 +250,7 @@ class CreatePageResponse implements ModelInterface, ArrayAccess
     /**
      * Gets id
      *
-     * @return string
+     * @return string|mixed
      */
     public function getId()
     {
@@ -274,7 +274,7 @@ class CreatePageResponse implements ModelInterface, ArrayAccess
     /**
      * Gets code
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCode()
     {
@@ -298,7 +298,7 @@ class CreatePageResponse implements ModelInterface, ArrayAccess
     /**
      * Gets message
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMessage()
     {

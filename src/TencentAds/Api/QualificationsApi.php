@@ -96,7 +96,7 @@ class QualificationsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\QualificationsAddResponse
+     * @return \TencentAds\Model\QualificationsAddResponse|mixed
      */
     public function qualificationsAdd($data)
     {
@@ -378,7 +378,7 @@ class QualificationsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\QualificationsDeleteResponse
+     * @return \TencentAds\Model\QualificationsDeleteResponse|mixed
      */
     public function qualificationsDelete($data)
     {
@@ -663,7 +663,7 @@ class QualificationsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\QualificationsGetResponse
+     * @return \TencentAds\Model\QualificationsGetResponse|mixed
      */
     public function qualificationsGet($accountId, $qualificationType, $filtering = null, $fields = null)
     {
@@ -982,7 +982,7 @@ class QualificationsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\QualificationsUpdateResponse
+     * @return \TencentAds\Model\QualificationsUpdateResponse|mixed
      */
     public function qualificationsUpdate($data)
     {

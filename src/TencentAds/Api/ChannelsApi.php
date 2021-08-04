@@ -96,7 +96,7 @@ class ChannelsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ChannelsAddResponse
+     * @return \TencentAds\Model\ChannelsAddResponse|mixed
      */
     public function channelsAdd($data)
     {
@@ -378,7 +378,7 @@ class ChannelsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ChannelsGetResponse
+     * @return \TencentAds\Model\ChannelsGetResponse|mixed
      */
     public function channelsGet($data)
     {
@@ -660,7 +660,7 @@ class ChannelsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ChannelsUpdateResponse
+     * @return \TencentAds\Model\ChannelsUpdateResponse|mixed
      */
     public function channelsUpdate($data)
     {

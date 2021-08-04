@@ -232,7 +232,7 @@ class AppAndroidMyappSpec implements ModelInterface, ArrayAccess
     /**
      * Gets packname
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPackname()
     {
@@ -256,7 +256,7 @@ class AppAndroidMyappSpec implements ModelInterface, ArrayAccess
     /**
      * Gets version
      *
-     * @return string
+     * @return string|mixed
      */
     public function getVersion()
     {
@@ -280,7 +280,7 @@ class AppAndroidMyappSpec implements ModelInterface, ArrayAccess
     /**
      * Gets icon
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIcon()
     {
@@ -304,7 +304,7 @@ class AppAndroidMyappSpec implements ModelInterface, ArrayAccess
     /**
      * Gets packageSize
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPackageSize()
     {
@@ -328,7 +328,7 @@ class AppAndroidMyappSpec implements ModelInterface, ArrayAccess
     /**
      * Gets channelPackageSpec
      *
-     * @return \TencentAds\Model\ChannelPackageSpecStruct[]
+     * @return \TencentAds\Model\ChannelPackageSpecStruct[]|mixed
      */
     public function getChannelPackageSpec()
     {

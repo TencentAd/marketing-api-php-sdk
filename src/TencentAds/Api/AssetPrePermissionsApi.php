@@ -103,7 +103,7 @@ class AssetPrePermissionsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AssetPrePermissionsGetResponse
+     * @return \TencentAds\Model\AssetPrePermissionsGetResponse|mixed
      */
     public function assetPrePermissionsGet($accountId, $assetType, $assetId = null, $assetName = null, $pathType = null, $page = null, $pageSize = null, $fields = null)
     {
@@ -451,7 +451,7 @@ class AssetPrePermissionsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AssetPrePermissionsUpdateResponse
+     * @return \TencentAds\Model\AssetPrePermissionsUpdateResponse|mixed
      */
     public function assetPrePermissionsUpdate($data)
     {

@@ -226,7 +226,7 @@ class LocalAdsSpecRead implements ModelInterface, ArrayAccess
     /**
      * Gets shopName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getShopName()
     {
@@ -250,7 +250,7 @@ class LocalAdsSpecRead implements ModelInterface, ArrayAccess
     /**
      * Gets address
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAddress()
     {
@@ -274,7 +274,7 @@ class LocalAdsSpecRead implements ModelInterface, ArrayAccess
     /**
      * Gets telphone
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTelphone()
     {
@@ -298,7 +298,7 @@ class LocalAdsSpecRead implements ModelInterface, ArrayAccess
     /**
      * Gets systemIndustryId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSystemIndustryId()
     {

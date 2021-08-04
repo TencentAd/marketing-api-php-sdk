@@ -250,7 +250,7 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
     /**
      * Gets packname
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPackname()
     {
@@ -274,7 +274,7 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
     /**
      * Gets version
      *
-     * @return string
+     * @return string|mixed
      */
     public function getVersion()
     {
@@ -298,7 +298,7 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
     /**
      * Gets icon
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIcon()
     {
@@ -322,7 +322,7 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
     /**
      * Gets icon512
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIcon512()
     {
@@ -346,7 +346,7 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
     /**
      * Gets averageRating
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAverageRating()
     {
@@ -370,7 +370,7 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
     /**
      * Gets packageSize
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPackageSize()
     {
@@ -394,7 +394,7 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
     /**
      * Gets genres
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getGenres()
     {
@@ -418,7 +418,7 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
     /**
      * Gets packageDownloadUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPackageDownloadUrl()
     {

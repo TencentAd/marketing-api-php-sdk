@@ -255,7 +255,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets corporationName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCorporationName()
     {
@@ -279,7 +279,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets certificationImageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCertificationImageId()
     {
@@ -303,7 +303,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets systemIndustryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSystemIndustryId()
     {
@@ -327,7 +327,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets introductionUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIntroductionUrl()
     {
@@ -351,7 +351,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets individualQualification
      *
-     * @return \TencentAds\Model\IndividualQualification
+     * @return \TencentAds\Model\IndividualQualification|mixed
      */
     public function getIndividualQualification()
     {
@@ -375,7 +375,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets corporateImageName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCorporateImageName()
     {
@@ -399,7 +399,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets contactPersonTelephone
      *
-     * @return string
+     * @return string|mixed
      */
     public function getContactPersonTelephone()
     {
@@ -423,7 +423,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets contactPersonMobile
      *
-     * @return string
+     * @return string|mixed
      */
     public function getContactPersonMobile()
     {
@@ -447,7 +447,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets certificationNumber
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCertificationNumber()
     {

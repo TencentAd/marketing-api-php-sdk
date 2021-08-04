@@ -256,7 +256,7 @@ class WechatAdFollowersGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets openid
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOpenid()
     {
@@ -280,7 +280,7 @@ class WechatAdFollowersGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatAdgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatAdgroupId()
     {
@@ -304,7 +304,7 @@ class WechatAdFollowersGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatCampaignId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatCampaignId()
     {
@@ -328,7 +328,7 @@ class WechatAdFollowersGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatAccountId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatAccountId()
     {
@@ -352,7 +352,7 @@ class WechatAdFollowersGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatAgencyId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatAgencyId()
     {
@@ -376,7 +376,7 @@ class WechatAdFollowersGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets campaignId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampaignId()
     {
@@ -400,7 +400,7 @@ class WechatAdFollowersGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -424,7 +424,7 @@ class WechatAdFollowersGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets subscribeTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSubscribeTime()
     {
@@ -448,7 +448,7 @@ class WechatAdFollowersGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets positionType
      *
-     * @return \TencentAds\Model\WechatPositionType
+     * @return \TencentAds\Model\WechatPositionType|mixed
      */
     public function getPositionType()
     {

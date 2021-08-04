@@ -99,7 +99,7 @@ class CustomAudienceInsightsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CustomAudienceInsightsGetResponse
+     * @return \TencentAds\Model\CustomAudienceInsightsGetResponse|mixed
      */
     public function customAudienceInsightsGet($accountId, $audienceId, $dimensionType, $fields = null)
     {

@@ -96,7 +96,7 @@ class UnionPositionPackagesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\UnionPositionPackagesAddResponse
+     * @return \TencentAds\Model\UnionPositionPackagesAddResponse|mixed
      */
     public function unionPositionPackagesAdd($data)
     {
@@ -378,7 +378,7 @@ class UnionPositionPackagesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\UnionPositionPackagesDeleteResponse
+     * @return \TencentAds\Model\UnionPositionPackagesDeleteResponse|mixed
      */
     public function unionPositionPackagesDelete($data)
     {
@@ -664,7 +664,7 @@ class UnionPositionPackagesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\UnionPositionPackagesGetResponse
+     * @return \TencentAds\Model\UnionPositionPackagesGetResponse|mixed
      */
     public function unionPositionPackagesGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {

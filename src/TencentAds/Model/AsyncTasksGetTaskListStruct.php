@@ -238,7 +238,7 @@ class AsyncTasksGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets taskId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTaskId()
     {
@@ -262,7 +262,7 @@ class AsyncTasksGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets taskName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTaskName()
     {
@@ -286,7 +286,7 @@ class AsyncTasksGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets taskType
      *
-     * @return \TencentAds\Model\TaskType
+     * @return \TencentAds\Model\TaskType|mixed
      */
     public function getTaskType()
     {
@@ -310,7 +310,7 @@ class AsyncTasksGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \TencentAds\Model\TaskStatus
+     * @return \TencentAds\Model\TaskStatus|mixed
      */
     public function getStatus()
     {
@@ -334,7 +334,7 @@ class AsyncTasksGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {
@@ -358,7 +358,7 @@ class AsyncTasksGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets result
      *
-     * @return \TencentAds\Model\AsyncTasksGetResult
+     * @return \TencentAds\Model\AsyncTasksGetResult|mixed
      */
     public function getResult()
     {

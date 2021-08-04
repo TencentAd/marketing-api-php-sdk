@@ -226,7 +226,7 @@ class ActionAggregationRule implements ModelInterface, ArrayAccess
     /**
      * Gets actionType
      *
-     * @return \TencentAds\Model\ActionType
+     * @return \TencentAds\Model\ActionType|mixed
      */
     public function getActionType()
     {
@@ -250,7 +250,7 @@ class ActionAggregationRule implements ModelInterface, ArrayAccess
     /**
      * Gets customAction
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCustomAction()
     {
@@ -274,7 +274,7 @@ class ActionAggregationRule implements ModelInterface, ArrayAccess
     /**
      * Gets aggregationGroup
      *
-     * @return \TencentAds\Model\AggregationMatcherGroup[]
+     * @return \TencentAds\Model\AggregationMatcherGroup[]|mixed
      */
     public function getAggregationGroup()
     {
@@ -298,7 +298,7 @@ class ActionAggregationRule implements ModelInterface, ArrayAccess
     /**
      * Gets filterGroup
      *
-     * @return \TencentAds\Model\MiniParamMatcherGroup[]
+     * @return \TencentAds\Model\MiniParamMatcherGroup[]|mixed
      */
     public function getFilterGroup()
     {

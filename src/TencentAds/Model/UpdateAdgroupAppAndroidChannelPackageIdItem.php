@@ -214,7 +214,7 @@ class UpdateAdgroupAppAndroidChannelPackageIdItem implements ModelInterface, Arr
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -238,7 +238,7 @@ class UpdateAdgroupAppAndroidChannelPackageIdItem implements ModelInterface, Arr
     /**
      * Gets appAndroidChannelPackageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAppAndroidChannelPackageId()
     {

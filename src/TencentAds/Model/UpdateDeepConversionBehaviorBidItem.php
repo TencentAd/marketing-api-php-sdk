@@ -214,7 +214,7 @@ class UpdateDeepConversionBehaviorBidItem implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -238,7 +238,7 @@ class UpdateDeepConversionBehaviorBidItem implements ModelInterface, ArrayAccess
     /**
      * Gets deepConversionBehaviorBid
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDeepConversionBehaviorBid()
     {

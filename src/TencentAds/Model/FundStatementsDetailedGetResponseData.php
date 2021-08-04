@@ -213,7 +213,7 @@ class FundStatementsDetailedGetResponseData implements ModelInterface, ArrayAcce
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\FundStatementsDetailedGetListStruct[]
+     * @return \TencentAds\Model\FundStatementsDetailedGetListStruct[]|mixed
      */
     public function getList()
     {
@@ -237,7 +237,7 @@ class FundStatementsDetailedGetResponseData implements ModelInterface, ArrayAcce
     /**
      * Gets pageInfo
      *
-     * @return \TencentAds\Model\Conf
+     * @return \TencentAds\Model\Conf|mixed
      */
     public function getPageInfo()
     {

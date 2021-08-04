@@ -256,7 +256,7 @@ class MpInfoUpdate implements ModelInterface, ArrayAccess
     /**
      * Gets systemIndustryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSystemIndustryId()
     {
@@ -280,7 +280,7 @@ class MpInfoUpdate implements ModelInterface, ArrayAccess
     /**
      * Gets contactPerson
      *
-     * @return string
+     * @return string|mixed
      */
     public function getContactPerson()
     {
@@ -304,7 +304,7 @@ class MpInfoUpdate implements ModelInterface, ArrayAccess
     /**
      * Gets contactPersonTelephone
      *
-     * @return string
+     * @return string|mixed
      */
     public function getContactPersonTelephone()
     {
@@ -328,7 +328,7 @@ class MpInfoUpdate implements ModelInterface, ArrayAccess
     /**
      * Gets businessType
      *
-     * @return \TencentAds\Model\WechatBusinessType
+     * @return \TencentAds\Model\WechatBusinessType|mixed
      */
     public function getBusinessType()
     {
@@ -352,7 +352,7 @@ class MpInfoUpdate implements ModelInterface, ArrayAccess
     /**
      * Gets businessContent
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBusinessContent()
     {
@@ -376,7 +376,7 @@ class MpInfoUpdate implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return string
+     * @return string|mixed
      */
     public function getName()
     {
@@ -400,7 +400,7 @@ class MpInfoUpdate implements ModelInterface, ArrayAccess
     /**
      * Gets profilePhoto
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProfilePhoto()
     {
@@ -424,7 +424,7 @@ class MpInfoUpdate implements ModelInterface, ArrayAccess
     /**
      * Gets brandIntroduction
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBrandIntroduction()
     {
@@ -448,7 +448,7 @@ class MpInfoUpdate implements ModelInterface, ArrayAccess
     /**
      * Gets introductionUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIntroductionUrl()
     {

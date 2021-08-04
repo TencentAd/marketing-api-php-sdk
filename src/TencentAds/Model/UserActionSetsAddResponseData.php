@@ -207,7 +207,7 @@ class UserActionSetsAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets userActionSetId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUserActionSetId()
     {

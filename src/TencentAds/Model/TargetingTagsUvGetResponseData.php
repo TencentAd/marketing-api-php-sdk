@@ -207,7 +207,7 @@ class TargetingTagsUvGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\TargetingTagsUvGetListStruct[]
+     * @return \TencentAds\Model\TargetingTagsUvGetListStruct[]|mixed
      */
     public function getList()
     {

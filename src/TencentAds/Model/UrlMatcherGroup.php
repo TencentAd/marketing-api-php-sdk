@@ -208,7 +208,7 @@ class UrlMatcherGroup implements ModelInterface, ArrayAccess
     /**
      * Gets urlMatcher
      *
-     * @return \TencentAds\Model\UrlMatcher[]
+     * @return \TencentAds\Model\UrlMatcher[]|mixed
      */
     public function getUrlMatcher()
     {

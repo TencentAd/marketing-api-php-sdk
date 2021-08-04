@@ -102,7 +102,7 @@ class ImagesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ImagesAddResponse
+     * @return \TencentAds\Model\ImagesAddResponse|mixed
      */
     public function imagesAdd($accountId, $uploadType, $signature, $file = null, $bytes = null, $imageUsage = null, $description = null)
     {
@@ -446,7 +446,7 @@ class ImagesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ImagesDeleteResponse
+     * @return \TencentAds\Model\ImagesDeleteResponse|mixed
      */
     public function imagesDelete($data)
     {
@@ -732,7 +732,7 @@ class ImagesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ImagesGetResponse
+     * @return \TencentAds\Model\ImagesGetResponse|mixed
      */
     public function imagesGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
@@ -1053,7 +1053,7 @@ class ImagesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ImagesUpdateResponse
+     * @return \TencentAds\Model\ImagesUpdateResponse|mixed
      */
     public function imagesUpdate($data)
     {

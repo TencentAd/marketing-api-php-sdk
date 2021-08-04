@@ -219,7 +219,7 @@ class AdDiagnosisGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -243,7 +243,7 @@ class AdDiagnosisGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupIdList
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getAdgroupIdList()
     {
@@ -267,7 +267,7 @@ class AdDiagnosisGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets detailFields
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getDetailFields()
     {

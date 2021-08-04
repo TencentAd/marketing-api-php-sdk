@@ -207,7 +207,7 @@ class ConversionsAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets conversionId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getConversionId()
     {

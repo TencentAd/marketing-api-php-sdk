@@ -96,7 +96,7 @@ class WechatPagesCustomApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\WechatPagesCustomAddResponse
+     * @return \TencentAds\Model\WechatPagesCustomAddResponse|mixed
      */
     public function wechatPagesCustomAdd($data)
     {

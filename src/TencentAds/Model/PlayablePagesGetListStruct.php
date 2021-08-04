@@ -262,7 +262,7 @@ class PlayablePagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets landingPageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLandingPageId()
     {
@@ -286,7 +286,7 @@ class PlayablePagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets playablePageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPlayablePageId()
     {
@@ -310,7 +310,7 @@ class PlayablePagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets playablePageMaterialId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPlayablePageMaterialId()
     {
@@ -334,7 +334,7 @@ class PlayablePagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets playablePageName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPlayablePageName()
     {
@@ -358,7 +358,7 @@ class PlayablePagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets playablePageCdnBaseUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPlayablePageCdnBaseUrl()
     {
@@ -382,7 +382,7 @@ class PlayablePagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets playablePageDirection
      *
-     * @return \TencentAds\Model\PlayablePageDirection
+     * @return \TencentAds\Model\PlayablePageDirection|mixed
      */
     public function getPlayablePageDirection()
     {
@@ -406,7 +406,7 @@ class PlayablePagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets auditStatus
      *
-     * @return \TencentAds\Model\PlayablePageAuditStatus
+     * @return \TencentAds\Model\PlayablePageAuditStatus|mixed
      */
     public function getAuditStatus()
     {
@@ -430,7 +430,7 @@ class PlayablePagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets auditMsg
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAuditMsg()
     {
@@ -454,7 +454,7 @@ class PlayablePagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {
@@ -478,7 +478,7 @@ class PlayablePagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLastModifiedTime()
     {

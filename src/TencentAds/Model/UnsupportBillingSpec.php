@@ -232,7 +232,7 @@ class UnsupportBillingSpec implements ModelInterface, ArrayAccess
     /**
      * Gets siteSet
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getSiteSet()
     {
@@ -256,7 +256,7 @@ class UnsupportBillingSpec implements ModelInterface, ArrayAccess
     /**
      * Gets billingEvent
      *
-     * @return \TencentAds\Model\BillingEvent
+     * @return \TencentAds\Model\BillingEvent|mixed
      */
     public function getBillingEvent()
     {
@@ -280,7 +280,7 @@ class UnsupportBillingSpec implements ModelInterface, ArrayAccess
     /**
      * Gets minPrice
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMinPrice()
     {
@@ -304,7 +304,7 @@ class UnsupportBillingSpec implements ModelInterface, ArrayAccess
     /**
      * Gets maxPrice
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMaxPrice()
     {
@@ -328,7 +328,7 @@ class UnsupportBillingSpec implements ModelInterface, ArrayAccess
     /**
      * Gets unsupportType
      *
-     * @return \TencentAds\Model\UnsupportType
+     * @return \TencentAds\Model\UnsupportType|mixed
      */
     public function getUnsupportType()
     {

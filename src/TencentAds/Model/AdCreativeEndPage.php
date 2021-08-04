@@ -214,7 +214,7 @@ class AdCreativeEndPage implements ModelInterface, ArrayAccess
     /**
      * Gets endPageType
      *
-     * @return string
+     * @return string|mixed
      */
     public function getEndPageType()
     {
@@ -238,7 +238,7 @@ class AdCreativeEndPage implements ModelInterface, ArrayAccess
     /**
      * Gets endPageDesc
      *
-     * @return string
+     * @return string|mixed
      */
     public function getEndPageDesc()
     {

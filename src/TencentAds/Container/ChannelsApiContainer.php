@@ -30,7 +30,7 @@ class ChannelsApiContainer extends ApiContainer
     /**
      * Handle ChannelsApi channelsAdd function
      * @param array params
-     * @return \TencentAds\Model\ChannelsAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class ChannelsApiContainer extends ApiContainer
     /**
      * Handle ChannelsApi channelsGet function
      * @param array params
-     * @return \TencentAds\Model\ChannelsGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -98,7 +98,7 @@ class ChannelsApiContainer extends ApiContainer
     /**
      * Handle ChannelsApi channelsUpdate function
      * @param array params
-     * @return \TencentAds\Model\ChannelsUpdateResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

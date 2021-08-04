@@ -207,7 +207,7 @@ class CustomAudienceFilesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets customAudienceFileId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCustomAudienceFileId()
     {

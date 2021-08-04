@@ -220,7 +220,7 @@ class MiniProgramSpec implements ModelInterface, ArrayAccess
     /**
      * Gets title
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTitle()
     {
@@ -244,7 +244,7 @@ class MiniProgramSpec implements ModelInterface, ArrayAccess
     /**
      * Gets miniProgramId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMiniProgramId()
     {
@@ -268,7 +268,7 @@ class MiniProgramSpec implements ModelInterface, ArrayAccess
     /**
      * Gets miniProgramPath
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMiniProgramPath()
     {

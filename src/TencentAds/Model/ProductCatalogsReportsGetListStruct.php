@@ -646,7 +646,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets date
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDate()
     {
@@ -670,7 +670,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productCatalogId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProductCatalogId()
     {
@@ -694,7 +694,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -718,7 +718,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productOuterId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductOuterId()
     {
@@ -742,7 +742,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstCategoryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstCategoryId()
     {
@@ -766,7 +766,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets secondCategoryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSecondCategoryId()
     {
@@ -790,7 +790,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets thirdCategoryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getThirdCategoryId()
     {
@@ -814,7 +814,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets viewCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getViewCount()
     {
@@ -838,7 +838,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets validClickCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getValidClickCount()
     {
@@ -862,7 +862,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ctr
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCtr()
     {
@@ -886,7 +886,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cpc
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCpc()
     {
@@ -910,7 +910,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets thousandDisplayPrice
      *
-     * @return int
+     * @return int|mixed
      */
     public function getThousandDisplayPrice()
     {
@@ -934,7 +934,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCost()
     {
@@ -958,7 +958,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activatedCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getActivatedCount()
     {
@@ -982,7 +982,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activatedCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getActivatedCost()
     {
@@ -1006,7 +1006,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activatedRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getActivatedRate()
     {
@@ -1030,7 +1030,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webKeyPageViewCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebKeyPageViewCost()
     {
@@ -1054,7 +1054,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCommodityPageViewCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebCommodityPageViewCount()
     {
@@ -1078,7 +1078,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCommodityPageViewCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebCommodityPageViewCost()
     {
@@ -1102,7 +1102,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webRegisterCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebRegisterCount()
     {
@@ -1126,7 +1126,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pagePhoneCallDirectCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPagePhoneCallDirectCount()
     {
@@ -1150,7 +1150,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ownPageNavigationCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOwnPageNavigationCount()
     {
@@ -1174,7 +1174,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ownPageNavigationCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOwnPageNavigationCost()
     {
@@ -1198,7 +1198,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webApplicationCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebApplicationCount()
     {
@@ -1222,7 +1222,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webApplicationCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebApplicationCost()
     {
@@ -1246,7 +1246,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webOrderCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebOrderCount()
     {
@@ -1270,7 +1270,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webOrderRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getWebOrderRate()
     {
@@ -1294,7 +1294,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appOrderRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getAppOrderRate()
     {
@@ -1318,7 +1318,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webOrderCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebOrderCost()
     {
@@ -1342,7 +1342,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCheckoutAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebCheckoutAmount()
     {
@@ -1366,7 +1366,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCheckoutCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebCheckoutCount()
     {
@@ -1390,7 +1390,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCheckoutCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebCheckoutCost()
     {
@@ -1414,7 +1414,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets downloadRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getDownloadRate()
     {
@@ -1438,7 +1438,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets downloadCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDownloadCost()
     {
@@ -1462,7 +1462,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets installCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getInstallCost()
     {
@@ -1486,7 +1486,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets clickActivatedRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getClickActivatedRate()
     {
@@ -1510,7 +1510,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets retentionCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRetentionCount()
     {
@@ -1534,7 +1534,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets retentionRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getRetentionRate()
     {
@@ -1558,7 +1558,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets retentionCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRetentionCost()
     {
@@ -1582,7 +1582,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appKeyPageViewCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppKeyPageViewCount()
     {
@@ -1606,7 +1606,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webKeyPageViewCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebKeyPageViewCount()
     {
@@ -1630,7 +1630,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appCommodityPageViewCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppCommodityPageViewCount()
     {
@@ -1654,7 +1654,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appCommodityPageViewRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getAppCommodityPageViewRate()
     {
@@ -1678,7 +1678,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCommodityPageViewRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getWebCommodityPageViewRate()
     {
@@ -1702,7 +1702,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appCommodityPageViewCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppCommodityPageViewCost()
     {
@@ -1726,7 +1726,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appRegisterCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppRegisterCount()
     {
@@ -1750,7 +1750,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appRegisterCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppRegisterCost()
     {
@@ -1774,7 +1774,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appApplicationCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppApplicationCount()
     {
@@ -1798,7 +1798,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appApplicationCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppApplicationCost()
     {
@@ -1822,7 +1822,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appOrderCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppOrderCount()
     {
@@ -1846,7 +1846,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appOrderCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppOrderCost()
     {
@@ -1870,7 +1870,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets followCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFollowCost()
     {
@@ -1894,7 +1894,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets forwardCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getForwardCost()
     {
@@ -1918,7 +1918,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets readCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getReadCost()
     {
@@ -1942,7 +1942,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets praiseCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPraiseCount()
     {
@@ -1966,7 +1966,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets praiseCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPraiseCost()
     {
@@ -1990,7 +1990,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets commentCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCommentCount()
     {
@@ -2014,7 +2014,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets likeOrComment
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLikeOrComment()
     {
@@ -2038,7 +2038,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets commentCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCommentCost()
     {
@@ -2062,7 +2062,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appCheckoutRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getAppCheckoutRate()
     {
@@ -2086,7 +2086,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appRegisterRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getAppRegisterRate()
     {
@@ -2110,7 +2110,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets impression
      *
-     * @return int
+     * @return int|mixed
      */
     public function getImpression()
     {
@@ -2134,7 +2134,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets click
      *
-     * @return int
+     * @return int|mixed
      */
     public function getClick()
     {
@@ -2158,7 +2158,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets download
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDownload()
     {
@@ -2182,7 +2182,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets follow
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFollow()
     {
@@ -2206,7 +2206,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activation
      *
-     * @return int
+     * @return int|mixed
      */
     public function getActivation()
     {
@@ -2230,7 +2230,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets share
      *
-     * @return int
+     * @return int|mixed
      */
     public function getShare()
     {
@@ -2254,7 +2254,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets read
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRead()
     {
@@ -2278,7 +2278,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appPaymentCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppPaymentCount()
     {
@@ -2302,7 +2302,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets reservation
      *
-     * @return int
+     * @return int|mixed
      */
     public function getReservation()
     {
@@ -2326,7 +2326,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appInstallation
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppInstallation()
     {
@@ -2350,7 +2350,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appPaymentAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppPaymentAmount()
     {
@@ -2374,7 +2374,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appAddToCarCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppAddToCarCount()
     {
@@ -2398,7 +2398,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appAddToCarCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppAddToCarCost()
     {

@@ -226,7 +226,7 @@ class SupportPageTypeStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageType
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPageType()
     {
@@ -250,7 +250,7 @@ class SupportPageTypeStruct implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -274,7 +274,7 @@ class SupportPageTypeStruct implements ModelInterface, ArrayAccess
     /**
      * Gets supportLinkNameType
      *
-     * @return \TencentAds\Model\SupportLinkNameType
+     * @return \TencentAds\Model\SupportLinkNameType|mixed
      */
     public function getSupportLinkNameType()
     {
@@ -298,7 +298,7 @@ class SupportPageTypeStruct implements ModelInterface, ArrayAccess
     /**
      * Gets supportLinkPageType
      *
-     * @return \TencentAds\Model\SupportLinkPageType
+     * @return \TencentAds\Model\SupportLinkPageType|mixed
      */
     public function getSupportLinkPageType()
     {

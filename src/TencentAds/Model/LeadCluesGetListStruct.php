@@ -490,7 +490,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -514,7 +514,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLeadsId()
     {
@@ -538,7 +538,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets outerLeadsId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOuterLeadsId()
     {
@@ -562,7 +562,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets clickId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getClickId()
     {
@@ -586,7 +586,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatAppid
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatAppid()
     {
@@ -610,7 +610,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets agencyId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAgencyId()
     {
@@ -634,7 +634,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets agencyName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAgencyName()
     {
@@ -658,7 +658,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets campaignId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampaignId()
     {
@@ -682,7 +682,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets campaignName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCampaignName()
     {
@@ -706,7 +706,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdgroupId()
     {
@@ -730,7 +730,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdgroupName()
     {
@@ -754,7 +754,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets creativeId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCreativeId()
     {
@@ -778,7 +778,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets creativeName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCreativeName()
     {
@@ -802,7 +802,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets componentId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getComponentId()
     {
@@ -826,7 +826,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets componentName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getComponentName()
     {
@@ -850,7 +850,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPageId()
     {
@@ -874,7 +874,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPageName()
     {
@@ -898,7 +898,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPageUrl()
     {
@@ -922,7 +922,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsType
      *
-     * @return \TencentAds\Model\LeadCluesLeadsType
+     * @return \TencentAds\Model\LeadCluesLeadsType|mixed
      */
     public function getLeadsType()
     {
@@ -946,7 +946,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsSource
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeadsSource()
     {
@@ -970,7 +970,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsPotentialScore
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeadsPotentialScore()
     {
@@ -994,7 +994,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsFollowTag
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeadsFollowTag()
     {
@@ -1018,7 +1018,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets outerLeadsConvertType
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOuterLeadsConvertType()
     {
@@ -1042,7 +1042,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets outerLeadsIneffectReason
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOuterLeadsIneffectReason()
     {
@@ -1066,7 +1066,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsUserId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeadsUserId()
     {
@@ -1090,7 +1090,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsUserType
      *
-     * @return \TencentAds\Model\LeadsUserType
+     * @return \TencentAds\Model\LeadsUserType|mixed
      */
     public function getLeadsUserType()
     {
@@ -1114,7 +1114,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsUserWechatAppid
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeadsUserWechatAppid()
     {
@@ -1138,7 +1138,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeadsName()
     {
@@ -1162,7 +1162,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsTelephone
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeadsTelephone()
     {
@@ -1186,7 +1186,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets telephoneLocation
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTelephoneLocation()
     {
@@ -1210,7 +1210,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsArea
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeadsArea()
     {
@@ -1234,7 +1234,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsEmail
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeadsEmail()
     {
@@ -1258,7 +1258,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsQq
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeadsQq()
     {
@@ -1282,7 +1282,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsWechat
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeadsWechat()
     {
@@ -1306,7 +1306,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsGender
      *
-     * @return \TencentAds\Model\LeadCluesGenderType
+     * @return \TencentAds\Model\LeadCluesGenderType|mixed
      */
     public function getLeadsGender()
     {
@@ -1330,7 +1330,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets nationality
      *
-     * @return string
+     * @return string|mixed
      */
     public function getNationality()
     {
@@ -1354,7 +1354,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets workingYears
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWorkingYears()
     {
@@ -1378,7 +1378,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets age
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAge()
     {
@@ -1402,7 +1402,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets profession
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProfession()
     {
@@ -1426,7 +1426,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets idNumber
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIdNumber()
     {
@@ -1450,7 +1450,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets address
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAddress()
     {
@@ -1474,7 +1474,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets bundle
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBundle()
     {
@@ -1498,7 +1498,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets posType
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPosType()
     {
@@ -1522,7 +1522,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsCreateTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeadsCreateTime()
     {
@@ -1546,7 +1546,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsActionTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeadsActionTime()
     {
@@ -1570,7 +1570,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsTags
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeadsTags()
     {
@@ -1594,7 +1594,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets shopName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getShopName()
     {
@@ -1618,7 +1618,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets shopAddress
      *
-     * @return string
+     * @return string|mixed
      */
     public function getShopAddress()
     {

@@ -219,7 +219,7 @@ class CustomAudienceEstimationsGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -243,7 +243,7 @@ class CustomAudienceEstimationsGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return string
+     * @return string|mixed
      */
     public function getType()
     {
@@ -267,7 +267,7 @@ class CustomAudienceEstimationsGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets audienceSpec
      *
-     * @return \TencentAds\Model\EstimationAudienceSpec
+     * @return \TencentAds\Model\EstimationAudienceSpec|mixed
      */
     public function getAudienceSpec()
     {

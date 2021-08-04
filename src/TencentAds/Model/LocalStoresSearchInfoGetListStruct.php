@@ -232,7 +232,7 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets poiId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPoiId()
     {
@@ -256,7 +256,7 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets localStoreName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLocalStoreName()
     {
@@ -280,7 +280,7 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets localStoreProvince
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLocalStoreProvince()
     {
@@ -304,7 +304,7 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets localStoreCity
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLocalStoreCity()
     {
@@ -328,7 +328,7 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets localStoreAddress
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLocalStoreAddress()
     {

@@ -214,7 +214,7 @@ class UnpublishAppId implements ModelInterface, ArrayAccess
     /**
      * Gets androidAppId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAndroidAppId()
     {
@@ -238,7 +238,7 @@ class UnpublishAppId implements ModelInterface, ArrayAccess
     /**
      * Gets iosAppId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getIosAppId()
     {

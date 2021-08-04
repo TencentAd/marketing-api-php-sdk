@@ -249,7 +249,7 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -273,7 +273,7 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \TencentAds\Model\AmUserActionSetType
+     * @return \TencentAds\Model\AmUserActionSetType|mixed
      */
     public function getType()
     {
@@ -297,7 +297,7 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets mobileAppId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMobileAppId()
     {
@@ -321,7 +321,7 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets wechatAppId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatAppId()
     {
@@ -345,7 +345,7 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return string
+     * @return string|mixed
      */
     public function getName()
     {
@@ -369,7 +369,7 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -393,7 +393,7 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets usages
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getUsages()
     {
@@ -417,7 +417,7 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets enableConversionClaim
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getEnableConversionClaim()
     {

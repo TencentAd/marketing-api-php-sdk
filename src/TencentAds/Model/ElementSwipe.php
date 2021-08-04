@@ -214,7 +214,7 @@ class ElementSwipe implements ModelInterface, ArrayAccess
     /**
      * Gets jumpUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getJumpUrl()
     {
@@ -238,7 +238,7 @@ class ElementSwipe implements ModelInterface, ArrayAccess
     /**
      * Gets swipeText
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSwipeText()
     {

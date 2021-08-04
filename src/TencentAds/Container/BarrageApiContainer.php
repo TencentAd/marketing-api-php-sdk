@@ -30,7 +30,7 @@ class BarrageApiContainer extends ApiContainer
     /**
      * Handle BarrageApi barrageAdd function
      * @param array params
-     * @return \TencentAds\Model\BarrageAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

@@ -30,7 +30,7 @@ class LabelAudiencesApiContainer extends ApiContainer
     /**
      * Handle LabelAudiencesApi labelAudiencesAdd function
      * @param array params
-     * @return \TencentAds\Model\LabelAudiencesAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

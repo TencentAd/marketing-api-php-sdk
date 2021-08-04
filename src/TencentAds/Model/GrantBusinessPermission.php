@@ -208,7 +208,7 @@ class GrantBusinessPermission implements ModelInterface, ArrayAccess
     /**
      * Gets grantPermissionTypeList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getGrantPermissionTypeList()
     {

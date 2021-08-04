@@ -207,7 +207,7 @@ class AdgroupsUpdateDailyBudgetResponseData implements ModelInterface, ArrayAcce
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\AdgroupsUpdateDailyBudgetListStruct[]
+     * @return \TencentAds\Model\AdgroupsUpdateDailyBudgetListStruct[]|mixed
      */
     public function getList()
     {

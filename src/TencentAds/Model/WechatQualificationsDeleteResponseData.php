@@ -207,7 +207,7 @@ class WechatQualificationsDeleteResponseData implements ModelInterface, ArrayAcc
     /**
      * Gets wechatQualificationId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatQualificationId()
     {

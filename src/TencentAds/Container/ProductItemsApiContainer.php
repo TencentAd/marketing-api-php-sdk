@@ -30,7 +30,7 @@ class ProductItemsApiContainer extends ApiContainer
     /**
      * Handle ProductItemsApi productItemsAdd function
      * @param array params
-     * @return \TencentAds\Model\ProductItemsAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class ProductItemsApiContainer extends ApiContainer
     /**
      * Handle ProductItemsApi productItemsGet function
      * @param array params
-     * @return \TencentAds\Model\ProductItemsGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

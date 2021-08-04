@@ -273,7 +273,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -297,7 +297,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets cityLevel
      *
-     * @return \TencentAds\Model\CityLevel
+     * @return \TencentAds\Model\CityLevel|mixed
      */
     public function getCityLevel()
     {
@@ -321,7 +321,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets packageLevel
      *
-     * @return \TencentAds\Model\PackageLevel
+     * @return \TencentAds\Model\PackageLevel|mixed
      */
     public function getPackageLevel()
     {
@@ -345,7 +345,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets poiList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getPoiList()
     {
@@ -369,7 +369,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets optimizationGoal
      *
-     * @return \TencentAds\Model\OptimizationGoal
+     * @return \TencentAds\Model\OptimizationGoal|mixed
      */
     public function getOptimizationGoal()
     {
@@ -393,7 +393,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets radius
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRadius()
     {
@@ -417,7 +417,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets age
      *
-     * @return \TencentAds\Model\AgeStruct[]
+     * @return \TencentAds\Model\AgeStruct[]|mixed
      */
     public function getAge()
     {
@@ -441,7 +441,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets gender
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getGender()
     {
@@ -465,7 +465,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets beginTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBeginTime()
     {
@@ -489,7 +489,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets endTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getEndTime()
     {
@@ -513,7 +513,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets budget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBudget()
     {
@@ -537,7 +537,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets localBusinessMode
      *
-     * @return \TencentAds\Model\EcoLocalBusinessMode
+     * @return \TencentAds\Model\EcoLocalBusinessMode|mixed
      */
     public function getLocalBusinessMode()
     {

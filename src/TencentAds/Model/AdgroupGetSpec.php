@@ -292,7 +292,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -316,7 +316,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Gets configuredStatus
      *
-     * @return \TencentAds\Model\AdStatus
+     * @return \TencentAds\Model\AdStatus|mixed
      */
     public function getConfiguredStatus()
     {
@@ -340,7 +340,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdgroupName()
     {
@@ -364,7 +364,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Gets beginDate
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBeginDate()
     {
@@ -388,7 +388,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Gets endDate
      *
-     * @return string
+     * @return string|mixed
      */
     public function getEndDate()
     {
@@ -412,7 +412,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Gets optimizationGoal
      *
-     * @return \TencentAds\Model\OptimizationGoal
+     * @return \TencentAds\Model\OptimizationGoal|mixed
      */
     public function getOptimizationGoal()
     {
@@ -436,7 +436,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Gets totalBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTotalBudget()
     {
@@ -460,7 +460,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Gets targeting
      *
-     * @return \TencentAds\Model\DpWriteTargetingSetting
+     * @return \TencentAds\Model\DpWriteTargetingSetting|mixed
      */
     public function getTargeting()
     {
@@ -484,7 +484,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Gets calcStatus
      *
-     * @return \TencentAds\Model\CalculateStatus
+     * @return \TencentAds\Model\CalculateStatus|mixed
      */
     public function getCalcStatus()
     {
@@ -508,7 +508,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Gets metricDetail
      *
-     * @return \TencentAds\Model\MetricDetailData
+     * @return \TencentAds\Model\MetricDetailData|mixed
      */
     public function getMetricDetail()
     {
@@ -532,7 +532,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Gets rejectMessage
      *
-     * @return string
+     * @return string|mixed
      */
     public function getRejectMessage()
     {
@@ -556,7 +556,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Gets poiList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getPoiList()
     {
@@ -580,7 +580,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Gets coldStartAudience
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getColdStartAudience()
     {
@@ -604,7 +604,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Gets poiRadius
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPoiRadius()
     {
@@ -628,7 +628,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Gets localBusinessMode
      *
-     * @return \TencentAds\Model\EcoLocalBusinessMode
+     * @return \TencentAds\Model\EcoLocalBusinessMode|mixed
      */
     public function getLocalBusinessMode()
     {

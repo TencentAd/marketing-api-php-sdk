@@ -232,7 +232,7 @@ class EstimationSceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Gets displayScene
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getDisplayScene()
     {
@@ -256,7 +256,7 @@ class EstimationSceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Gets mobileUnionCategory
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getMobileUnionCategory()
     {
@@ -280,7 +280,7 @@ class EstimationSceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Gets mobileUnion
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getMobileUnion()
     {
@@ -304,7 +304,7 @@ class EstimationSceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Gets excludeMobileUnion
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getExcludeMobileUnion()
     {
@@ -328,7 +328,7 @@ class EstimationSceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Gets mobileUnionIndustry
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getMobileUnionIndustry()
     {

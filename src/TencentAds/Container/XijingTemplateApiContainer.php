@@ -30,7 +30,7 @@ class XijingTemplateApiContainer extends ApiContainer
     /**
      * Handle XijingTemplateApi xijingTemplateGet function
      * @param array params
-     * @return \TencentAds\Model\XijingTemplateGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

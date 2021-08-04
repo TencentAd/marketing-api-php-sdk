@@ -214,7 +214,7 @@ class UpdateExcludeUnionPositionPackageItem implements ModelInterface, ArrayAcce
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -238,7 +238,7 @@ class UpdateExcludeUnionPositionPackageItem implements ModelInterface, ArrayAcce
     /**
      * Gets excludeUnionPositionPackage
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getExcludeUnionPositionPackage()
     {

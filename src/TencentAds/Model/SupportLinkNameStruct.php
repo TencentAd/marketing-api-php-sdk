@@ -214,7 +214,7 @@ class SupportLinkNameStruct implements ModelInterface, ArrayAccess
     /**
      * Gets linkNameType
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLinkNameType()
     {
@@ -238,7 +238,7 @@ class SupportLinkNameStruct implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {

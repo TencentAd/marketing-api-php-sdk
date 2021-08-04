@@ -214,7 +214,7 @@ class KeywordSpec implements ModelInterface, ArrayAccess
     /**
      * Gets includeKeyword
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getIncludeKeyword()
     {
@@ -238,7 +238,7 @@ class KeywordSpec implements ModelInterface, ArrayAccess
     /**
      * Gets excludeKeyword
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getExcludeKeyword()
     {

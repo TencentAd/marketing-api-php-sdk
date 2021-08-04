@@ -238,7 +238,7 @@ class WechatAdQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets qualificationId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getQualificationId()
     {
@@ -262,7 +262,7 @@ class WechatAdQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets qualificationName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getQualificationName()
     {
@@ -286,7 +286,7 @@ class WechatAdQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets imageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImageUrl()
     {
@@ -310,7 +310,7 @@ class WechatAdQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets expiredDate
      *
-     * @return string
+     * @return string|mixed
      */
     public function getExpiredDate()
     {
@@ -334,7 +334,7 @@ class WechatAdQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets qualificationStatus
      *
-     * @return \TencentAds\Model\QualificationStatus
+     * @return \TencentAds\Model\QualificationStatus|mixed
      */
     public function getQualificationStatus()
     {
@@ -358,7 +358,7 @@ class WechatAdQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets rejectMessage
      *
-     * @return string
+     * @return string|mixed
      */
     public function getRejectMessage()
     {

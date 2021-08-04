@@ -226,7 +226,7 @@ class ElementFloat implements ModelInterface, ArrayAccess
     /**
      * Gets title
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTitle()
     {
@@ -250,7 +250,7 @@ class ElementFloat implements ModelInterface, ArrayAccess
     /**
      * Gets desc
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDesc()
     {
@@ -274,7 +274,7 @@ class ElementFloat implements ModelInterface, ArrayAccess
     /**
      * Gets floatButtonSpec
      *
-     * @return \TencentAds\Model\FloatButtonSpec
+     * @return \TencentAds\Model\FloatButtonSpec|mixed
      */
     public function getFloatButtonSpec()
     {
@@ -298,7 +298,7 @@ class ElementFloat implements ModelInterface, ArrayAccess
     /**
      * Gets imageIdList
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImageIdList()
     {

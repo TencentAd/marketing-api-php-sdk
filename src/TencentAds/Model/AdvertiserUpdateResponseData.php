@@ -207,7 +207,7 @@ class AdvertiserUpdateResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {

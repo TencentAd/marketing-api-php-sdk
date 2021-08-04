@@ -207,7 +207,7 @@ class WechatQualificationsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\ListStruct[]
+     * @return \TencentAds\Model\ListStruct[]|mixed
      */
     public function getList()
     {

@@ -214,7 +214,7 @@ class HeaderStruct implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return string
+     * @return string|mixed
      */
     public function getName()
     {
@@ -238,7 +238,7 @@ class HeaderStruct implements ModelInterface, ArrayAccess
     /**
      * Gets value
      *
-     * @return string
+     * @return string|mixed
      */
     public function getValue()
     {

@@ -214,7 +214,7 @@ class IndividualQualificationRead implements ModelInterface, ArrayAccess
     /**
      * Gets identificationFrontImageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIdentificationFrontImageId()
     {
@@ -238,7 +238,7 @@ class IndividualQualificationRead implements ModelInterface, ArrayAccess
     /**
      * Gets identificationBackImageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIdentificationBackImageId()
     {

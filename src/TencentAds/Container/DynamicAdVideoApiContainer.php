@@ -30,7 +30,7 @@ class DynamicAdVideoApiContainer extends ApiContainer
     /**
      * Handle DynamicAdVideoApi dynamicAdVideoAdd function
      * @param array params
-     * @return \TencentAds\Model\DynamicAdVideoAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

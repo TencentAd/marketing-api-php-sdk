@@ -207,7 +207,7 @@ class UserPropertySetsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\UserPropertySet[]
+     * @return \TencentAds\Model\UserPropertySet[]|mixed
      */
     public function getList()
     {

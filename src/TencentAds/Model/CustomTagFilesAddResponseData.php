@@ -207,7 +207,7 @@ class CustomTagFilesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets customTagFileId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCustomTagFileId()
     {

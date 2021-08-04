@@ -213,7 +213,7 @@ class TargetingsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets targetingId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTargetingId()
     {
@@ -237,7 +237,7 @@ class TargetingsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {

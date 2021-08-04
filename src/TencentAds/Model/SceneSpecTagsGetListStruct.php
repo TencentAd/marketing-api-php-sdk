@@ -232,7 +232,7 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets id
      *
-     * @return int
+     * @return int|mixed
      */
     public function getId()
     {
@@ -256,7 +256,7 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return string
+     * @return string|mixed
      */
     public function getName()
     {
@@ -280,7 +280,7 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -304,7 +304,7 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets parentId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getParentId()
     {
@@ -328,7 +328,7 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets targetingName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTargetingName()
     {

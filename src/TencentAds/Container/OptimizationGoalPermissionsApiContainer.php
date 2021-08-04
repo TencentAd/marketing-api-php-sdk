@@ -30,7 +30,7 @@ class OptimizationGoalPermissionsApiContainer extends ApiContainer
     /**
      * Handle OptimizationGoalPermissionsApi optimizationGoalPermissionsGet function
      * @param array params
-     * @return \TencentAds\Model\OptimizationGoalPermissionsGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

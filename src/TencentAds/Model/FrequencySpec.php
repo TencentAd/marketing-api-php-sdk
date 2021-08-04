@@ -220,7 +220,7 @@ class FrequencySpec implements ModelInterface, ArrayAccess
     /**
      * Gets comparator
      *
-     * @return \TencentAds\Model\Comparator
+     * @return \TencentAds\Model\Comparator|mixed
      */
     public function getComparator()
     {
@@ -244,7 +244,7 @@ class FrequencySpec implements ModelInterface, ArrayAccess
     /**
      * Gets frequencyMinValue
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFrequencyMinValue()
     {
@@ -268,7 +268,7 @@ class FrequencySpec implements ModelInterface, ArrayAccess
     /**
      * Gets frequencyMaxValue
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFrequencyMaxValue()
     {

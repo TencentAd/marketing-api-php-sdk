@@ -214,7 +214,7 @@ class BatchRequestSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Gets relativePath
      *
-     * @return string
+     * @return string|mixed
      */
     public function getRelativePath()
     {
@@ -238,7 +238,7 @@ class BatchRequestSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Gets body
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBody()
     {

@@ -243,7 +243,7 @@ class DynamicAdImagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -267,7 +267,7 @@ class DynamicAdImagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets productCatalogId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProductCatalogId()
     {
@@ -291,7 +291,7 @@ class DynamicAdImagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets productMode
      *
-     * @return \TencentAds\Model\ProductMode
+     * @return \TencentAds\Model\ProductMode|mixed
      */
     public function getProductMode()
     {
@@ -315,7 +315,7 @@ class DynamicAdImagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets productSource
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductSource()
     {
@@ -339,7 +339,7 @@ class DynamicAdImagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicAdTemplateSize
      *
-     * @return \TencentAds\Model\DynamicAdTemplateSize
+     * @return \TencentAds\Model\DynamicAdTemplateSize|mixed
      */
     public function getDynamicAdTemplateSize()
     {
@@ -363,7 +363,7 @@ class DynamicAdImagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicAdTemplateId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDynamicAdTemplateId()
     {
@@ -387,7 +387,7 @@ class DynamicAdImagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets imageMattingEnabled
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getImageMattingEnabled()
     {

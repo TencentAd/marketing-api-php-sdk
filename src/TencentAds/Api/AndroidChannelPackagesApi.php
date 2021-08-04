@@ -102,7 +102,7 @@ class AndroidChannelPackagesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AndroidChannelPackagesGetResponse
+     * @return \TencentAds\Model\AndroidChannelPackagesGetResponse|mixed
      */
     public function androidChannelPackagesGet($accountId, $androidAppId, $myappAuthKey = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {

@@ -207,7 +207,7 @@ class UserActionSetReportsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\TimeData[]
+     * @return \TencentAds\Model\TimeData[]|mixed
      */
     public function getList()
     {

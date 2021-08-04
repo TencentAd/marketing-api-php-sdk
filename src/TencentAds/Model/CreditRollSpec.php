@@ -220,7 +220,7 @@ class CreditRollSpec implements ModelInterface, ArrayAccess
     /**
      * Gets limitAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLimitAmount()
     {
@@ -244,7 +244,7 @@ class CreditRollSpec implements ModelInterface, ArrayAccess
     /**
      * Gets usedAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUsedAmount()
     {
@@ -268,7 +268,7 @@ class CreditRollSpec implements ModelInterface, ArrayAccess
     /**
      * Gets usableAmout
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUsableAmout()
     {

@@ -220,7 +220,7 @@ class CompeteBidDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets score
      *
-     * @return int
+     * @return int|mixed
      */
     public function getScore()
     {
@@ -244,7 +244,7 @@ class CompeteBidDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets bidAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBidAmount()
     {
@@ -268,7 +268,7 @@ class CompeteBidDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets conclusion
      *
-     * @return string
+     * @return string|mixed
      */
     public function getConclusion()
     {

@@ -268,7 +268,7 @@ class CompititionDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets compititionDiagnosisScore
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCompititionDiagnosisScore()
     {
@@ -292,7 +292,7 @@ class CompititionDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets compititionDiagnosisResult
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCompititionDiagnosisResult()
     {
@@ -316,7 +316,7 @@ class CompititionDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets bidAmountDiagnosisScore
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBidAmountDiagnosisScore()
     {
@@ -340,7 +340,7 @@ class CompititionDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets bidAmountDiagnosisConclusion
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBidAmountDiagnosisConclusion()
     {
@@ -364,7 +364,7 @@ class CompititionDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets clickDiagnosisScore
      *
-     * @return int
+     * @return int|mixed
      */
     public function getClickDiagnosisScore()
     {
@@ -388,7 +388,7 @@ class CompititionDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets clickDiagnosisConclusion
      *
-     * @return string
+     * @return string|mixed
      */
     public function getClickDiagnosisConclusion()
     {
@@ -412,7 +412,7 @@ class CompititionDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets conversionDiagnosisScore
      *
-     * @return int
+     * @return int|mixed
      */
     public function getConversionDiagnosisScore()
     {
@@ -436,7 +436,7 @@ class CompititionDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets conversionDiagnosisConclusion
      *
-     * @return string
+     * @return string|mixed
      */
     public function getConversionDiagnosisConclusion()
     {
@@ -460,7 +460,7 @@ class CompititionDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets userAcceptanceDiagnosisScore
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUserAcceptanceDiagnosisScore()
     {
@@ -484,7 +484,7 @@ class CompititionDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets userAcceptanceDiagnosisConclusion
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUserAcceptanceDiagnosisConclusion()
     {
@@ -508,7 +508,7 @@ class CompititionDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets compititionAnalysisDetailSpecList
      *
-     * @return \TencentAds\Model\CompititionAnalysisDetailSpec[]
+     * @return \TencentAds\Model\CompititionAnalysisDetailSpec[]|mixed
      */
     public function getCompititionAnalysisDetailSpecList()
     {

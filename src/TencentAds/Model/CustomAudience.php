@@ -274,7 +274,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Gets audienceId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAudienceId()
     {
@@ -298,7 +298,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -322,7 +322,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return string
+     * @return string|mixed
      */
     public function getName()
     {
@@ -346,7 +346,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -370,7 +370,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \TencentAds\Model\AudienceType
+     * @return \TencentAds\Model\AudienceType|mixed
      */
     public function getType()
     {
@@ -394,7 +394,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \TencentAds\Model\ProcessStatus
+     * @return \TencentAds\Model\ProcessStatus|mixed
      */
     public function getStatus()
     {
@@ -418,7 +418,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Gets errorCode
      *
-     * @return int
+     * @return int|mixed
      */
     public function getErrorCode()
     {
@@ -442,7 +442,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Gets userCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUserCount()
     {
@@ -466,7 +466,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCreatedTime()
     {
@@ -490,7 +490,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLastModifiedTime()
     {
@@ -514,7 +514,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Gets audienceSpec
      *
-     * @return \TencentAds\Model\AudienceSpec
+     * @return \TencentAds\Model\AudienceSpec|mixed
      */
     public function getAudienceSpec()
     {
@@ -538,7 +538,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Gets externalAudienceId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getExternalAudienceId()
     {

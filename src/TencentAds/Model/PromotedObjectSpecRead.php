@@ -262,7 +262,7 @@ class PromotedObjectSpecRead implements ModelInterface, ArrayAccess
     /**
      * Gets jdItem
      *
-     * @return \TencentAds\Model\EcInfo
+     * @return \TencentAds\Model\EcInfo|mixed
      */
     public function getJdItem()
     {
@@ -286,7 +286,7 @@ class PromotedObjectSpecRead implements ModelInterface, ArrayAccess
     /**
      * Gets jdShop
      *
-     * @return \TencentAds\Model\EcInfo
+     * @return \TencentAds\Model\EcInfo|mixed
      */
     public function getJdShop()
     {
@@ -310,7 +310,7 @@ class PromotedObjectSpecRead implements ModelInterface, ArrayAccess
     /**
      * Gets appIosSpec
      *
-     * @return \TencentAds\Model\PromotedObjectAppIosSpec
+     * @return \TencentAds\Model\PromotedObjectAppIosSpec|mixed
      */
     public function getAppIosSpec()
     {
@@ -334,7 +334,7 @@ class PromotedObjectSpecRead implements ModelInterface, ArrayAccess
     /**
      * Gets appAndroidSpec
      *
-     * @return \TencentAds\Model\PromotedObjectAppAndroidSpec
+     * @return \TencentAds\Model\PromotedObjectAppAndroidSpec|mixed
      */
     public function getAppAndroidSpec()
     {
@@ -358,7 +358,7 @@ class PromotedObjectSpecRead implements ModelInterface, ArrayAccess
     /**
      * Gets appAndroidUnionSpec
      *
-     * @return \TencentAds\Model\AppAndroidUnionSpec
+     * @return \TencentAds\Model\AppAndroidUnionSpec|mixed
      */
     public function getAppAndroidUnionSpec()
     {
@@ -382,7 +382,7 @@ class PromotedObjectSpecRead implements ModelInterface, ArrayAccess
     /**
      * Gets appAndroidMyappSpec
      *
-     * @return \TencentAds\Model\AppAndroidMyappSpec
+     * @return \TencentAds\Model\AppAndroidMyappSpec|mixed
      */
     public function getAppAndroidMyappSpec()
     {
@@ -406,7 +406,7 @@ class PromotedObjectSpecRead implements ModelInterface, ArrayAccess
     /**
      * Gets dianpingShop
      *
-     * @return \TencentAds\Model\ProductTypeDianpingShop
+     * @return \TencentAds\Model\ProductTypeDianpingShop|mixed
      */
     public function getDianpingShop()
     {
@@ -430,7 +430,7 @@ class PromotedObjectSpecRead implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameWechatSpec
      *
-     * @return \TencentAds\Model\MiniGameWechatSpec
+     * @return \TencentAds\Model\MiniGameWechatSpec|mixed
      */
     public function getMiniGameWechatSpec()
     {
@@ -454,7 +454,7 @@ class PromotedObjectSpecRead implements ModelInterface, ArrayAccess
     /**
      * Gets qqBrowserMiniProgram
      *
-     * @return \TencentAds\Model\QqBrowserMiniProgram
+     * @return \TencentAds\Model\QqBrowserMiniProgram|mixed
      */
     public function getQqBrowserMiniProgram()
     {
@@ -478,7 +478,7 @@ class PromotedObjectSpecRead implements ModelInterface, ArrayAccess
     /**
      * Gets localAdsSpec
      *
-     * @return \TencentAds\Model\LocalAdsSpecRead
+     * @return \TencentAds\Model\LocalAdsSpecRead|mixed
      */
     public function getLocalAdsSpec()
     {

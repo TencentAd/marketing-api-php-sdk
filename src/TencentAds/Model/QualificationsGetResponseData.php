@@ -231,7 +231,7 @@ class QualificationsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets industryQualifications
      *
-     * @return \TencentAds\Model\IndustryQualificationsStruct[]
+     * @return \TencentAds\Model\IndustryQualificationsStruct[]|mixed
      */
     public function getIndustryQualifications()
     {
@@ -255,7 +255,7 @@ class QualificationsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets adQualifications
      *
-     * @return \TencentAds\Model\AdQualificationsStruct[]
+     * @return \TencentAds\Model\AdQualificationsStruct[]|mixed
      */
     public function getAdQualifications()
     {
@@ -279,7 +279,7 @@ class QualificationsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets additionalIndustryQualifications
      *
-     * @return \TencentAds\Model\AdditionalIndustryQualificationsStruct[]
+     * @return \TencentAds\Model\AdditionalIndustryQualificationsStruct[]|mixed
      */
     public function getAdditionalIndustryQualifications()
     {
@@ -303,7 +303,7 @@ class QualificationsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets industryQualificationsWechat
      *
-     * @return \TencentAds\Model\WechatIndustryQualificationsStruct[]
+     * @return \TencentAds\Model\WechatIndustryQualificationsStruct[]|mixed
      */
     public function getIndustryQualificationsWechat()
     {
@@ -327,7 +327,7 @@ class QualificationsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets adQualificationsWechat
      *
-     * @return \TencentAds\Model\WechatAdQualificationsStruct[]
+     * @return \TencentAds\Model\WechatAdQualificationsStruct[]|mixed
      */
     public function getAdQualificationsWechat()
     {

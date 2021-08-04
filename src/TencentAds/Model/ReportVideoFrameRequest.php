@@ -225,7 +225,7 @@ class ReportVideoFrameRequest implements ModelInterface, ArrayAccess
     /**
      * Gets filtering
      *
-     * @return \TencentAds\Model\FilteringStruct[]
+     * @return \TencentAds\Model\FilteringStruct[]|mixed
      */
     public function getFiltering()
     {
@@ -249,7 +249,7 @@ class ReportVideoFrameRequest implements ModelInterface, ArrayAccess
     /**
      * Gets dateRange
      *
-     * @return \TencentAds\Model\DateRange
+     * @return \TencentAds\Model\DateRange|mixed
      */
     public function getDateRange()
     {
@@ -273,7 +273,7 @@ class ReportVideoFrameRequest implements ModelInterface, ArrayAccess
     /**
      * Gets groupBy
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getGroupBy()
     {
@@ -297,7 +297,7 @@ class ReportVideoFrameRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {

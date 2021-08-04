@@ -219,7 +219,7 @@ class ChannelsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets adgroup
      *
-     * @return \TencentAds\Model\AdgroupCreateSpec
+     * @return \TencentAds\Model\AdgroupCreateSpec|mixed
      */
     public function getAdgroup()
     {
@@ -243,7 +243,7 @@ class ChannelsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets campaign
      *
-     * @return \TencentAds\Model\CampaignCreateSpec
+     * @return \TencentAds\Model\CampaignCreateSpec|mixed
      */
     public function getCampaign()
     {
@@ -267,7 +267,7 @@ class ChannelsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets adcreative
      *
-     * @return \TencentAds\Model\AdCreativeCreateSpec
+     * @return \TencentAds\Model\AdCreativeCreateSpec|mixed
      */
     public function getAdcreative()
     {

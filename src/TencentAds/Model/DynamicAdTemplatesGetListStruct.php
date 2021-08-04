@@ -250,7 +250,7 @@ class DynamicAdTemplatesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicAdTemplateId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDynamicAdTemplateId()
     {
@@ -274,7 +274,7 @@ class DynamicAdTemplatesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicAdTemplateName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDynamicAdTemplateName()
     {
@@ -298,7 +298,7 @@ class DynamicAdTemplatesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicAdTemplateType
      *
-     * @return \TencentAds\Model\DynamicAdTemplateType
+     * @return \TencentAds\Model\DynamicAdTemplateType|mixed
      */
     public function getDynamicAdTemplateType()
     {
@@ -322,7 +322,7 @@ class DynamicAdTemplatesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productItemDisplayQuantity
      *
-     * @return \TencentAds\Model\ProductMode
+     * @return \TencentAds\Model\ProductMode|mixed
      */
     public function getProductItemDisplayQuantity()
     {
@@ -346,7 +346,7 @@ class DynamicAdTemplatesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicAdTemplateWidth
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDynamicAdTemplateWidth()
     {
@@ -370,7 +370,7 @@ class DynamicAdTemplatesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicAdTemplateHeight
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDynamicAdTemplateHeight()
     {
@@ -394,7 +394,7 @@ class DynamicAdTemplatesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets imageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImageUrl()
     {
@@ -418,7 +418,7 @@ class DynamicAdTemplatesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getVideoUrl()
     {

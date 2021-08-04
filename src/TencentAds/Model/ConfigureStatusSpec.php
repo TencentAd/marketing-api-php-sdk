@@ -208,7 +208,7 @@ class ConfigureStatusSpec implements ModelInterface, ArrayAccess
     /**
      * Gets configureStatus
      *
-     * @return \TencentAds\Model\AdStatus
+     * @return \TencentAds\Model\AdStatus|mixed
      */
     public function getConfigureStatus()
     {

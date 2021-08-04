@@ -244,7 +244,7 @@ class PropertiesUserId implements ModelInterface, ArrayAccess
     /**
      * Gets hashQq
      *
-     * @return string
+     * @return string|mixed
      */
     public function getHashQq()
     {
@@ -268,7 +268,7 @@ class PropertiesUserId implements ModelInterface, ArrayAccess
     /**
      * Gets hashPhone
      *
-     * @return string
+     * @return string|mixed
      */
     public function getHashPhone()
     {
@@ -292,7 +292,7 @@ class PropertiesUserId implements ModelInterface, ArrayAccess
     /**
      * Gets hashIdfa
      *
-     * @return string
+     * @return string|mixed
      */
     public function getHashIdfa()
     {
@@ -316,7 +316,7 @@ class PropertiesUserId implements ModelInterface, ArrayAccess
     /**
      * Gets hashImei
      *
-     * @return string
+     * @return string|mixed
      */
     public function getHashImei()
     {
@@ -340,7 +340,7 @@ class PropertiesUserId implements ModelInterface, ArrayAccess
     /**
      * Gets hashMac
      *
-     * @return string
+     * @return string|mixed
      */
     public function getHashMac()
     {
@@ -364,7 +364,7 @@ class PropertiesUserId implements ModelInterface, ArrayAccess
     /**
      * Gets wechatOpenid
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatOpenid()
     {
@@ -388,7 +388,7 @@ class PropertiesUserId implements ModelInterface, ArrayAccess
     /**
      * Gets wechatUnionid
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatUnionid()
     {

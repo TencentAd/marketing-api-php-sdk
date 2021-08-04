@@ -214,7 +214,7 @@ class BarrageListReadStruct implements ModelInterface, ArrayAccess
     /**
      * Gets id
      *
-     * @return int
+     * @return int|mixed
      */
     public function getId()
     {
@@ -238,7 +238,7 @@ class BarrageListReadStruct implements ModelInterface, ArrayAccess
     /**
      * Gets text
      *
-     * @return string
+     * @return string|mixed
      */
     public function getText()
     {

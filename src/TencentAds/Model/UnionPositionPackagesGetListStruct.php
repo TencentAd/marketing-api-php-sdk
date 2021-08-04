@@ -238,7 +238,7 @@ class UnionPositionPackagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets unionPackageId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUnionPackageId()
     {
@@ -262,7 +262,7 @@ class UnionPositionPackagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets unionPackageName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUnionPackageName()
     {
@@ -286,7 +286,7 @@ class UnionPositionPackagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets unionPackageType
      *
-     * @return \TencentAds\Model\UnionPackageType
+     * @return \TencentAds\Model\UnionPackageType|mixed
      */
     public function getUnionPackageType()
     {
@@ -310,7 +310,7 @@ class UnionPositionPackagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets unionPositionIdList
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getUnionPositionIdList()
     {
@@ -334,7 +334,7 @@ class UnionPositionPackagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {
@@ -358,7 +358,7 @@ class UnionPositionPackagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLastModifiedTime()
     {

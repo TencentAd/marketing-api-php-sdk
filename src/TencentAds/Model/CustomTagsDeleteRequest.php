@@ -213,7 +213,7 @@ class CustomTagsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -237,7 +237,7 @@ class CustomTagsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets tagId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTagId()
     {

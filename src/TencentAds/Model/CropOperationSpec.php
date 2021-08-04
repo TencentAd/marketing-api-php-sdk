@@ -226,7 +226,7 @@ class CropOperationSpec implements ModelInterface, ArrayAccess
     /**
      * Gets cropCustomizedSpec
      *
-     * @return \TencentAds\Model\CropCustomizedSpec
+     * @return \TencentAds\Model\CropCustomizedSpec|mixed
      */
     public function getCropCustomizedSpec()
     {
@@ -250,7 +250,7 @@ class CropOperationSpec implements ModelInterface, ArrayAccess
     /**
      * Gets cropSmartSpec
      *
-     * @return \TencentAds\Model\CropSmartSpec
+     * @return \TencentAds\Model\CropSmartSpec|mixed
      */
     public function getCropSmartSpec()
     {
@@ -274,7 +274,7 @@ class CropOperationSpec implements ModelInterface, ArrayAccess
     /**
      * Gets resizeSpec
      *
-     * @return \TencentAds\Model\ResizeSpec
+     * @return \TencentAds\Model\ResizeSpec|mixed
      */
     public function getResizeSpec()
     {
@@ -298,7 +298,7 @@ class CropOperationSpec implements ModelInterface, ArrayAccess
     /**
      * Gets cropCustomizedSpecAndResize
      *
-     * @return \TencentAds\Model\CropCustomizedSpecAndResize
+     * @return \TencentAds\Model\CropCustomizedSpecAndResize|mixed
      */
     public function getCropCustomizedSpecAndResize()
     {

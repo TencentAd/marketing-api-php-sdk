@@ -226,7 +226,7 @@ class ImageRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets width
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWidth()
     {
@@ -250,7 +250,7 @@ class ImageRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets height
      *
-     * @return int
+     * @return int|mixed
      */
     public function getHeight()
     {
@@ -274,7 +274,7 @@ class ImageRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets fileSize
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFileSize()
     {
@@ -298,7 +298,7 @@ class ImageRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets fileFormat
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getFileFormat()
     {

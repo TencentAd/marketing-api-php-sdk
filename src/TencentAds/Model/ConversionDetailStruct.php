@@ -220,7 +220,7 @@ class ConversionDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectData
      *
-     * @return \TencentAds\Model\ConversionEffectDataStruct
+     * @return \TencentAds\Model\ConversionEffectDataStruct|mixed
      */
     public function getEffectData()
     {
@@ -244,7 +244,7 @@ class ConversionDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectDataTrends
      *
-     * @return \TencentAds\Model\ConversionEffectDataTrendsItem[]
+     * @return \TencentAds\Model\ConversionEffectDataTrendsItem[]|mixed
      */
     public function getEffectDataTrends()
     {
@@ -268,7 +268,7 @@ class ConversionDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets targetingLabelContribution
      *
-     * @return \TencentAds\Model\ConversionTargetingLabelContributionStruct
+     * @return \TencentAds\Model\ConversionTargetingLabelContributionStruct|mixed
      */
     public function getTargetingLabelContribution()
     {

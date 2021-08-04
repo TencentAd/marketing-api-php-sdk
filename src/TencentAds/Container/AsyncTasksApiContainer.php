@@ -30,7 +30,7 @@ class AsyncTasksApiContainer extends ApiContainer
     /**
      * Handle AsyncTasksApi asyncTasksAdd function
      * @param array params
-     * @return \TencentAds\Model\AsyncTasksAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class AsyncTasksApiContainer extends ApiContainer
     /**
      * Handle AsyncTasksApi asyncTasksGet function
      * @param array params
-     * @return \TencentAds\Model\AsyncTasksGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

@@ -220,7 +220,7 @@ class Interest implements ModelInterface, ArrayAccess
     /**
      * Gets targetingTags
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getTargetingTags()
     {
@@ -244,7 +244,7 @@ class Interest implements ModelInterface, ArrayAccess
     /**
      * Gets categoryIdList
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getCategoryIdList()
     {
@@ -268,7 +268,7 @@ class Interest implements ModelInterface, ArrayAccess
     /**
      * Gets keywordList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getKeywordList()
     {

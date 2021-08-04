@@ -220,7 +220,7 @@ class Ad implements ModelInterface, ArrayAccess
     /**
      * Gets adName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdName()
     {
@@ -244,7 +244,7 @@ class Ad implements ModelInterface, ArrayAccess
     /**
      * Gets adcreative
      *
-     * @return \TencentAds\Model\PreviewAdcreative
+     * @return \TencentAds\Model\PreviewAdcreative|mixed
      */
     public function getAdcreative()
     {
@@ -268,7 +268,7 @@ class Ad implements ModelInterface, ArrayAccess
     /**
      * Gets feedsInteractionEnabled
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getFeedsInteractionEnabled()
     {

@@ -382,7 +382,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets dailyBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDailyBudget()
     {
@@ -406,7 +406,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets systemStatus
      *
-     * @return \TencentAds\Model\CustomerSystemStatus
+     * @return \TencentAds\Model\CustomerSystemStatus|mixed
      */
     public function getSystemStatus()
     {
@@ -430,7 +430,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets corporationName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCorporationName()
     {
@@ -454,7 +454,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets certificationImageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCertificationImageId()
     {
@@ -478,7 +478,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets individualQualification
      *
-     * @return \TencentAds\Model\IndividualQualificationRead
+     * @return \TencentAds\Model\IndividualQualificationRead|mixed
      */
     public function getIndividualQualification()
     {
@@ -502,7 +502,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets introductionUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIntroductionUrl()
     {
@@ -526,7 +526,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets industryQualificationImageIdList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getIndustryQualificationImageIdList()
     {
@@ -550,7 +550,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adQualificationImageIdList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getAdQualificationImageIdList()
     {
@@ -574,7 +574,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets contactPerson
      *
-     * @return string
+     * @return string|mixed
      */
     public function getContactPerson()
     {
@@ -598,7 +598,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets contactPersonEmail
      *
-     * @return string
+     * @return string|mixed
      */
     public function getContactPersonEmail()
     {
@@ -622,7 +622,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets contactPersonTelephone
      *
-     * @return string
+     * @return string|mixed
      */
     public function getContactPersonTelephone()
     {
@@ -646,7 +646,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets contactPersonMobile
      *
-     * @return string
+     * @return string|mixed
      */
     public function getContactPersonMobile()
     {
@@ -670,7 +670,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatSpec
      *
-     * @return \TencentAds\Model\MpInfoRead
+     * @return \TencentAds\Model\MpInfoRead|mixed
      */
     public function getWechatSpec()
     {
@@ -694,7 +694,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets websites
      *
-     * @return \TencentAds\Model\WebsiteReadStruct[]
+     * @return \TencentAds\Model\WebsiteReadStruct[]|mixed
      */
     public function getWebsites()
     {
@@ -718,7 +718,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets mdmId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMdmId()
     {
@@ -742,7 +742,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets mdmName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMdmName()
     {
@@ -766,7 +766,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets agencyAccountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAgencyAccountId()
     {
@@ -790,7 +790,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets operators
      *
-     * @return \TencentAds\Model\AdvertiserOperatorStruct[]
+     * @return \TencentAds\Model\AdvertiserOperatorStruct[]|mixed
      */
     public function getOperators()
     {
@@ -814,7 +814,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets memo
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMemo()
     {
@@ -838,7 +838,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -862,7 +862,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adQualificationImage
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getAdQualificationImage()
     {
@@ -886,7 +886,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets certificationImage
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCertificationImage()
     {
@@ -910,7 +910,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets industryQualificationImage
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getIndustryQualificationImage()
     {
@@ -934,7 +934,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets corporateImageName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCorporateImageName()
     {
@@ -958,7 +958,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets corporateImageLogo
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCorporateImageLogo()
     {
@@ -982,7 +982,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets corporationLicence
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCorporationLicence()
     {
@@ -1006,7 +1006,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets customizedIndustry
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCustomizedIndustry()
     {
@@ -1030,7 +1030,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets identityNumber
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIdentityNumber()
     {
@@ -1054,7 +1054,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets systemIndustryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSystemIndustryId()
     {
@@ -1078,7 +1078,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets rejectMessage
      *
-     * @return string
+     * @return string|mixed
      */
     public function getRejectMessage()
     {

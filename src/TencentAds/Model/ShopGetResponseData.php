@@ -213,7 +213,7 @@ class ShopGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\AllDataSpec[]
+     * @return \TencentAds\Model\AllDataSpec[]|mixed
      */
     public function getList()
     {
@@ -237,7 +237,7 @@ class ShopGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets pageInfo
      *
-     * @return \TencentAds\Model\DpPageInfo
+     * @return \TencentAds\Model\DpPageInfo|mixed
      */
     public function getPageInfo()
     {

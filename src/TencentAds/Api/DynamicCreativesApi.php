@@ -96,7 +96,7 @@ class DynamicCreativesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\DynamicCreativesAddResponse
+     * @return \TencentAds\Model\DynamicCreativesAddResponse|mixed
      */
     public function dynamicCreativesAdd($data)
     {
@@ -382,7 +382,7 @@ class DynamicCreativesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\DynamicCreativesGetResponse
+     * @return \TencentAds\Model\DynamicCreativesGetResponse|mixed
      */
     public function dynamicCreativesGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
@@ -703,7 +703,7 @@ class DynamicCreativesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\DynamicCreativesUpdateResponse
+     * @return \TencentAds\Model\DynamicCreativesUpdateResponse|mixed
      */
     public function dynamicCreativesUpdate($data)
     {

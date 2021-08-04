@@ -262,7 +262,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets qualificationId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getQualificationId()
     {
@@ -286,7 +286,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets systemIndustryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSystemIndustryId()
     {
@@ -310,7 +310,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets businessScopeId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBusinessScopeId()
     {
@@ -334,7 +334,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets qualificationCode
      *
-     * @return string
+     * @return string|mixed
      */
     public function getQualificationCode()
     {
@@ -358,7 +358,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets imageIdList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getImageIdList()
     {
@@ -382,7 +382,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets qualificationStatus
      *
-     * @return \TencentAds\Model\QualificationStatus
+     * @return \TencentAds\Model\QualificationStatus|mixed
      */
     public function getQualificationStatus()
     {
@@ -406,7 +406,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets expiredDate
      *
-     * @return string
+     * @return string|mixed
      */
     public function getExpiredDate()
     {
@@ -430,7 +430,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets rejectMessage
      *
-     * @return string
+     * @return string|mixed
      */
     public function getRejectMessage()
     {
@@ -454,7 +454,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {
@@ -478,7 +478,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLastModifiedTime()
     {

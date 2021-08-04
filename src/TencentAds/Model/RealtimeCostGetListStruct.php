@@ -220,7 +220,7 @@ class RealtimeCostGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets campaignId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampaignId()
     {
@@ -244,7 +244,7 @@ class RealtimeCostGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -268,7 +268,7 @@ class RealtimeCostGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCost()
     {

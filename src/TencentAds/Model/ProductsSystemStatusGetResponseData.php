@@ -213,7 +213,7 @@ class ProductsSystemStatusGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\AuditRejectItem[]
+     * @return \TencentAds\Model\AuditRejectItem[]|mixed
      */
     public function getList()
     {
@@ -237,7 +237,7 @@ class ProductsSystemStatusGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets pageInfo
      *
-     * @return \TencentAds\Model\PageInfo
+     * @return \TencentAds\Model\PageInfo|mixed
      */
     public function getPageInfo()
     {

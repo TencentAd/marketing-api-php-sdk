@@ -214,7 +214,7 @@ class CardSpec implements ModelInterface, ArrayAccess
     /**
      * Gets title
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTitle()
     {
@@ -238,7 +238,7 @@ class CardSpec implements ModelInterface, ArrayAccess
     /**
      * Gets cardId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCardId()
     {

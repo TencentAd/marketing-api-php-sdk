@@ -96,7 +96,7 @@ class ReportApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ReportConversionsPredictResponse
+     * @return \TencentAds\Model\ReportConversionsPredictResponse|mixed
      */
     public function reportConversionsPredict($data)
     {
@@ -378,7 +378,7 @@ class ReportApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ReportVideoFrameResponse
+     * @return \TencentAds\Model\ReportVideoFrameResponse|mixed
      */
     public function reportVideoFrame($data)
     {

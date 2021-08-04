@@ -98,7 +98,7 @@ class PlayablePagesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\PlayablePagesAddResponse
+     * @return \TencentAds\Model\PlayablePagesAddResponse|mixed
      */
     public function playablePagesAdd($accountId, $playablePageName, $materialFile)
     {
@@ -414,7 +414,7 @@ class PlayablePagesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\PlayablePagesGetResponse
+     * @return \TencentAds\Model\PlayablePagesGetResponse|mixed
      */
     public function playablePagesGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {

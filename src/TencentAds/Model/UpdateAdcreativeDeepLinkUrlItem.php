@@ -214,7 +214,7 @@ class UpdateAdcreativeDeepLinkUrlItem implements ModelInterface, ArrayAccess
     /**
      * Gets adcreativeId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdcreativeId()
     {
@@ -238,7 +238,7 @@ class UpdateAdcreativeDeepLinkUrlItem implements ModelInterface, ArrayAccess
     /**
      * Gets deepLinkUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDeepLinkUrl()
     {

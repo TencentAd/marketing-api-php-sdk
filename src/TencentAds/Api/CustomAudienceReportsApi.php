@@ -100,7 +100,7 @@ class CustomAudienceReportsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CustomAudienceReportsGetResponse
+     * @return \TencentAds\Model\CustomAudienceReportsGetResponse|mixed
      */
     public function customAudienceReportsGet($accountId, $filtering, $dateRange, $groupBy = null, $fields = null)
     {

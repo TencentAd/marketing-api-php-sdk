@@ -214,7 +214,7 @@ class WechatAdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -238,7 +238,7 @@ class WechatAdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatAccountId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatAccountId()
     {

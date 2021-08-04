@@ -30,7 +30,7 @@ class LocalEndadsmanuallyApiContainer extends ApiContainer
     /**
      * Handle LocalEndadsmanuallyApi localEndadsmanuallyAdd function
      * @param array params
-     * @return \TencentAds\Model\LocalEndadsmanuallyAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

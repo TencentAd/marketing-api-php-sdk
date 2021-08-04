@@ -30,7 +30,7 @@ class TargetingsShareApiContainer extends ApiContainer
     /**
      * Handle TargetingsShareApi targetingsShareAdd function
      * @param array params
-     * @return \TencentAds\Model\TargetingsShareAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class TargetingsShareApiContainer extends ApiContainer
     /**
      * Handle TargetingsShareApi targetingsShareGet function
      * @param array params
-     * @return \TencentAds\Model\TargetingsShareGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

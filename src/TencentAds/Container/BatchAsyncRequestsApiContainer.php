@@ -30,7 +30,7 @@ class BatchAsyncRequestsApiContainer extends ApiContainer
     /**
      * Handle BatchAsyncRequestsApi batchAsyncRequestsAdd function
      * @param array params
-     * @return \TencentAds\Model\BatchAsyncRequestsAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class BatchAsyncRequestsApiContainer extends ApiContainer
     /**
      * Handle BatchAsyncRequestsApi batchAsyncRequestsGet function
      * @param array params
-     * @return \TencentAds\Model\BatchAsyncRequestsGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

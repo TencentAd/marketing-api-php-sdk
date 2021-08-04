@@ -220,7 +220,7 @@ class AdcreativeSampleImage implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return string
+     * @return string|mixed
      */
     public function getName()
     {
@@ -244,7 +244,7 @@ class AdcreativeSampleImage implements ModelInterface, ArrayAccess
     /**
      * Gets thumb
      *
-     * @return string
+     * @return string|mixed
      */
     public function getThumb()
     {
@@ -268,7 +268,7 @@ class AdcreativeSampleImage implements ModelInterface, ArrayAccess
     /**
      * Gets image
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImage()
     {

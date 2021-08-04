@@ -220,7 +220,7 @@ class CustomAudienceInsights implements ModelInterface, ArrayAccess
     /**
      * Gets dimensionType
      *
-     * @return \TencentAds\Model\DimensionType
+     * @return \TencentAds\Model\DimensionType|mixed
      */
     public function getDimensionType()
     {
@@ -244,7 +244,7 @@ class CustomAudienceInsights implements ModelInterface, ArrayAccess
     /**
      * Gets matchRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMatchRate()
     {
@@ -268,7 +268,7 @@ class CustomAudienceInsights implements ModelInterface, ArrayAccess
     /**
      * Gets distribution
      *
-     * @return \TencentAds\Model\RangeDistribution[]
+     * @return \TencentAds\Model\RangeDistribution[]|mixed
      */
     public function getDistribution()
     {

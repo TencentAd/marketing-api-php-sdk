@@ -97,7 +97,7 @@ class WechatAdLabelsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\WechatAdLabelsGetResponse
+     * @return \TencentAds\Model\WechatAdLabelsGetResponse|mixed
      */
     public function wechatAdLabelsGet($accountId, $fields = null)
     {

@@ -220,7 +220,7 @@ class AdgroupsUpdateBidAmountListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets code
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCode()
     {
@@ -244,7 +244,7 @@ class AdgroupsUpdateBidAmountListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets message
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMessage()
     {
@@ -268,7 +268,7 @@ class AdgroupsUpdateBidAmountListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets messageCn
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMessageCn()
     {

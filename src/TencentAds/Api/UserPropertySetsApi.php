@@ -96,7 +96,7 @@ class UserPropertySetsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\UserPropertySetsAddResponse
+     * @return \TencentAds\Model\UserPropertySetsAddResponse|mixed
      */
     public function userPropertySetsAdd($data)
     {
@@ -380,7 +380,7 @@ class UserPropertySetsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\UserPropertySetsGetResponse
+     * @return \TencentAds\Model\UserPropertySetsGetResponse|mixed
      */
     public function userPropertySetsGet($accountId, $userPropertySetId = null, $fields = null)
     {
@@ -682,7 +682,7 @@ class UserPropertySetsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\UserPropertySetsUpdateResponse
+     * @return \TencentAds\Model\UserPropertySetsUpdateResponse|mixed
      */
     public function userPropertySetsUpdate($data)
     {

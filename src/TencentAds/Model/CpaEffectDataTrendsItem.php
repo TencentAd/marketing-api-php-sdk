@@ -220,7 +220,7 @@ class CpaEffectDataTrendsItem implements ModelInterface, ArrayAccess
     /**
      * Gets rank
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRank()
     {
@@ -244,7 +244,7 @@ class CpaEffectDataTrendsItem implements ModelInterface, ArrayAccess
     /**
      * Gets targetCpa
      *
-     * @return \TencentAds\Model\PointStruct[]
+     * @return \TencentAds\Model\PointStruct[]|mixed
      */
     public function getTargetCpa()
     {
@@ -268,7 +268,7 @@ class CpaEffectDataTrendsItem implements ModelInterface, ArrayAccess
     /**
      * Gets realCpa
      *
-     * @return \TencentAds\Model\PointStruct[]
+     * @return \TencentAds\Model\PointStruct[]|mixed
      */
     public function getRealCpa()
     {

@@ -97,7 +97,7 @@ class WechatAgencyApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\WechatAgencyGetResponse
+     * @return \TencentAds\Model\WechatAgencyGetResponse|mixed
      */
     public function wechatAgencyGet($accountId, $fields = null)
     {

@@ -207,7 +207,7 @@ class TargetingsUpdateResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets targetingId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTargetingId()
     {

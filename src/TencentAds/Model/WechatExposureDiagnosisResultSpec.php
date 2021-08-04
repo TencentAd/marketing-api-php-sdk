@@ -226,7 +226,7 @@ class WechatExposureDiagnosisResultSpec implements ModelInterface, ArrayAccess
     /**
      * Gets diagnosisConclusionSpec
      *
-     * @return \TencentAds\Model\DiagnosisConclusionSpec
+     * @return \TencentAds\Model\DiagnosisConclusionSpec|mixed
      */
     public function getDiagnosisConclusionSpec()
     {
@@ -250,7 +250,7 @@ class WechatExposureDiagnosisResultSpec implements ModelInterface, ArrayAccess
     /**
      * Gets targetingDiagnosisConclusionSpec
      *
-     * @return \TencentAds\Model\TargetingDiagnosisConclusionSpec
+     * @return \TencentAds\Model\TargetingDiagnosisConclusionSpec|mixed
      */
     public function getTargetingDiagnosisConclusionSpec()
     {
@@ -274,7 +274,7 @@ class WechatExposureDiagnosisResultSpec implements ModelInterface, ArrayAccess
     /**
      * Gets costDiagnosisConclusionSpec
      *
-     * @return \TencentAds\Model\CostDiagnosisConclusionSpec
+     * @return \TencentAds\Model\CostDiagnosisConclusionSpec|mixed
      */
     public function getCostDiagnosisConclusionSpec()
     {
@@ -298,7 +298,7 @@ class WechatExposureDiagnosisResultSpec implements ModelInterface, ArrayAccess
     /**
      * Gets compititionDiagnosisConclusionSpec
      *
-     * @return \TencentAds\Model\CompititionDiagnosisConclusionSpec
+     * @return \TencentAds\Model\CompititionDiagnosisConclusionSpec|mixed
      */
     public function getCompititionDiagnosisConclusionSpec()
     {

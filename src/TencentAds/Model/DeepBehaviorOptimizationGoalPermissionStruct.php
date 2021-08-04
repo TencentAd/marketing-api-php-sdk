@@ -214,7 +214,7 @@ class DeepBehaviorOptimizationGoalPermissionStruct implements ModelInterface, Ar
     /**
      * Gets optimizationGoal
      *
-     * @return \TencentAds\Model\OptimizationGoal
+     * @return \TencentAds\Model\OptimizationGoal|mixed
      */
     public function getOptimizationGoal()
     {
@@ -238,7 +238,7 @@ class DeepBehaviorOptimizationGoalPermissionStruct implements ModelInterface, Ar
     /**
      * Gets deepBehaviorOptimizationGoalList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getDeepBehaviorOptimizationGoalList()
     {

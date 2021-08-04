@@ -214,7 +214,7 @@ class AdcreativeVideoPopupButton implements ModelInterface, ArrayAccess
     /**
      * Gets videoPopupButtonText
      *
-     * @return string
+     * @return string|mixed
      */
     public function getVideoPopupButtonText()
     {
@@ -238,7 +238,7 @@ class AdcreativeVideoPopupButton implements ModelInterface, ArrayAccess
     /**
      * Gets videoPopupButtonUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getVideoPopupButtonUrl()
     {

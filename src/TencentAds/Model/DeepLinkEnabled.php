@@ -220,7 +220,7 @@ class DeepLinkEnabled implements ModelInterface, ArrayAccess
     /**
      * Gets iosDeepLinkEnabled
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getIosDeepLinkEnabled()
     {
@@ -244,7 +244,7 @@ class DeepLinkEnabled implements ModelInterface, ArrayAccess
     /**
      * Gets androidDeepLinkEnabled
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getAndroidDeepLinkEnabled()
     {
@@ -268,7 +268,7 @@ class DeepLinkEnabled implements ModelInterface, ArrayAccess
     /**
      * Gets h5DeepLinkEnabled
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getH5DeepLinkEnabled()
     {

@@ -219,7 +219,7 @@ class OuterCluesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -243,7 +243,7 @@ class OuterCluesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets matchType
      *
-     * @return \TencentAds\Model\LeadsMatchType
+     * @return \TencentAds\Model\LeadsMatchType|mixed
      */
     public function getMatchType()
     {
@@ -267,7 +267,7 @@ class OuterCluesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets leadsConversionStatusList
      *
-     * @return \TencentAds\Model\OuterLeadsStatusInfoStruct[]
+     * @return \TencentAds\Model\OuterLeadsStatusInfoStruct[]|mixed
      */
     public function getLeadsConversionStatusList()
     {

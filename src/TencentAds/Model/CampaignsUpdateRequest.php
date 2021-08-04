@@ -261,7 +261,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -285,7 +285,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets campaignId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampaignId()
     {
@@ -309,7 +309,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets campaignName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCampaignName()
     {
@@ -333,7 +333,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets dailyBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDailyBudget()
     {
@@ -357,7 +357,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets totalBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTotalBudget()
     {
@@ -381,7 +381,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets configuredStatus
      *
-     * @return \TencentAds\Model\AdStatus
+     * @return \TencentAds\Model\AdStatus|mixed
      */
     public function getConfiguredStatus()
     {
@@ -405,7 +405,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets speedMode
      *
-     * @return \TencentAds\Model\SpeedMode
+     * @return \TencentAds\Model\SpeedMode|mixed
      */
     public function getSpeedMode()
     {
@@ -429,7 +429,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets beginDate
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBeginDate()
     {
@@ -453,7 +453,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets endDate
      *
-     * @return string
+     * @return string|mixed
      */
     public function getEndDate()
     {
@@ -477,7 +477,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets isAutoReplenish
      *
-     * @return int
+     * @return int|mixed
      */
     public function getIsAutoReplenish()
     {

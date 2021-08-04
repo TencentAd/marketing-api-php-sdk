@@ -250,7 +250,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
     /**
      * Gets pageType
      *
-     * @return \TencentAds\Model\ComponentsPageType
+     * @return \TencentAds\Model\ComponentsPageType|mixed
      */
     public function getPageType()
     {
@@ -274,7 +274,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
     /**
      * Gets pageName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPageName()
     {
@@ -298,7 +298,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
     /**
      * Gets pageTitle
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPageTitle()
     {
@@ -322,7 +322,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
     /**
      * Gets clipboard
      *
-     * @return string
+     * @return string|mixed
      */
     public function getClipboard()
     {
@@ -346,7 +346,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
     /**
      * Gets mobileAppId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMobileAppId()
     {
@@ -370,7 +370,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
     /**
      * Gets bgColor
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBgColor()
     {
@@ -394,7 +394,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
     /**
      * Gets bgImageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBgImageId()
     {
@@ -418,7 +418,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
     /**
      * Gets componentSpecList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getComponentSpecList()
     {

@@ -96,7 +96,7 @@ class XijingPageApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\XijingPageAddResponse
+     * @return \TencentAds\Model\XijingPageAddResponse|mixed
      */
     public function xijingPageAdd($data)
     {
@@ -378,7 +378,7 @@ class XijingPageApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\XijingPageDeleteResponse
+     * @return \TencentAds\Model\XijingPageDeleteResponse|mixed
      */
     public function xijingPageDelete($data)
     {
@@ -660,7 +660,7 @@ class XijingPageApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\XijingPageUpdateResponse
+     * @return \TencentAds\Model\XijingPageUpdateResponse|mixed
      */
     public function xijingPageUpdate($data)
     {

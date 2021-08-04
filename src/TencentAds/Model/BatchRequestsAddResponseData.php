@@ -207,7 +207,7 @@ class BatchRequestsAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\BatchRequestsAddListStruct[]
+     * @return \TencentAds\Model\BatchRequestsAddListStruct[]|mixed
      */
     public function getList()
     {

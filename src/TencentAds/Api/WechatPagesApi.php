@@ -96,7 +96,7 @@ class WechatPagesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\WechatPagesAddResponse
+     * @return \TencentAds\Model\WechatPagesAddResponse|mixed
      */
     public function wechatPagesAdd($data)
     {
@@ -378,7 +378,7 @@ class WechatPagesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\WechatPagesDeleteResponse
+     * @return \TencentAds\Model\WechatPagesDeleteResponse|mixed
      */
     public function wechatPagesDelete($data)
     {
@@ -665,7 +665,7 @@ class WechatPagesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\WechatPagesGetResponse
+     * @return \TencentAds\Model\WechatPagesGetResponse|mixed
      */
     public function wechatPagesGet($accountId, $ownerUid = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {

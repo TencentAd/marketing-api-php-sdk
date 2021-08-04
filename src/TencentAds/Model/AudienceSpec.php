@@ -238,7 +238,7 @@ class AudienceSpec implements ModelInterface, ArrayAccess
     /**
      * Gets lookalikeSpec
      *
-     * @return \TencentAds\Model\LookalikeSpec
+     * @return \TencentAds\Model\LookalikeSpec|mixed
      */
     public function getLookalikeSpec()
     {
@@ -262,7 +262,7 @@ class AudienceSpec implements ModelInterface, ArrayAccess
     /**
      * Gets userActionSpec
      *
-     * @return \TencentAds\Model\UserActionSpec
+     * @return \TencentAds\Model\UserActionSpec|mixed
      */
     public function getUserActionSpec()
     {
@@ -286,7 +286,7 @@ class AudienceSpec implements ModelInterface, ArrayAccess
     /**
      * Gets lbsSpec
      *
-     * @return \TencentAds\Model\LbsSpec
+     * @return \TencentAds\Model\LbsSpec|mixed
      */
     public function getLbsSpec()
     {
@@ -310,7 +310,7 @@ class AudienceSpec implements ModelInterface, ArrayAccess
     /**
      * Gets keywordSpec
      *
-     * @return \TencentAds\Model\KeywordSpec
+     * @return \TencentAds\Model\KeywordSpec|mixed
      */
     public function getKeywordSpec()
     {
@@ -334,7 +334,7 @@ class AudienceSpec implements ModelInterface, ArrayAccess
     /**
      * Gets adRuleSpec
      *
-     * @return \TencentAds\Model\AdRuleSpec
+     * @return \TencentAds\Model\AdRuleSpec|mixed
      */
     public function getAdRuleSpec()
     {
@@ -358,7 +358,7 @@ class AudienceSpec implements ModelInterface, ArrayAccess
     /**
      * Gets combineSpec
      *
-     * @return \TencentAds\Model\CombineSpec
+     * @return \TencentAds\Model\CombineSpec|mixed
      */
     public function getCombineSpec()
     {

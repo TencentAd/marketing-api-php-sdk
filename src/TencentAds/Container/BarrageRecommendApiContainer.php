@@ -30,7 +30,7 @@ class BarrageRecommendApiContainer extends ApiContainer
     /**
      * Handle BarrageRecommendApi barrageRecommendGet function
      * @param array params
-     * @return \TencentAds\Model\BarrageRecommendGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

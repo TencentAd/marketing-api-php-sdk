@@ -213,7 +213,7 @@ class VideomakerSubtitlesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets code
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCode()
     {
@@ -237,7 +237,7 @@ class VideomakerSubtitlesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets taskId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTaskId()
     {

@@ -268,7 +268,7 @@ class CompeteBudgetDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets score
      *
-     * @return int
+     * @return int|mixed
      */
     public function getScore()
     {
@@ -292,7 +292,7 @@ class CompeteBudgetDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets raiseAccountBalanceFlag
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getRaiseAccountBalanceFlag()
     {
@@ -316,7 +316,7 @@ class CompeteBudgetDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets recommendRecharge
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRecommendRecharge()
     {
@@ -340,7 +340,7 @@ class CompeteBudgetDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets accountDailyCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountDailyCost()
     {
@@ -364,7 +364,7 @@ class CompeteBudgetDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets accountDayBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountDayBudget()
     {
@@ -388,7 +388,7 @@ class CompeteBudgetDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets campaignDailyCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampaignDailyCost()
     {
@@ -412,7 +412,7 @@ class CompeteBudgetDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets campaignDayBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampaignDayBudget()
     {
@@ -436,7 +436,7 @@ class CompeteBudgetDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupDailyCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupDailyCost()
     {
@@ -460,7 +460,7 @@ class CompeteBudgetDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupDayBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupDayBudget()
     {
@@ -484,7 +484,7 @@ class CompeteBudgetDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets accountBalance
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountBalance()
     {
@@ -508,7 +508,7 @@ class CompeteBudgetDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets conclusion
      *
-     * @return string
+     * @return string|mixed
      */
     public function getConclusion()
     {

@@ -207,7 +207,7 @@ class AdsAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets adId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdId()
     {

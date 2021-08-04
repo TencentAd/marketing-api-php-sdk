@@ -226,7 +226,7 @@ class UpdateDatetimeStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -250,7 +250,7 @@ class UpdateDatetimeStruct implements ModelInterface, ArrayAccess
     /**
      * Gets beginDate
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBeginDate()
     {
@@ -274,7 +274,7 @@ class UpdateDatetimeStruct implements ModelInterface, ArrayAccess
     /**
      * Gets endDate
      *
-     * @return string
+     * @return string|mixed
      */
     public function getEndDate()
     {
@@ -298,7 +298,7 @@ class UpdateDatetimeStruct implements ModelInterface, ArrayAccess
     /**
      * Gets timeSeries
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTimeSeries()
     {

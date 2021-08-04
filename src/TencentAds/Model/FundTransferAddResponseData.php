@@ -231,7 +231,7 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets amount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAmount()
     {
@@ -255,7 +255,7 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets externalBillNo
      *
-     * @return string
+     * @return string|mixed
      */
     public function getExternalBillNo()
     {
@@ -279,7 +279,7 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets fundType
      *
-     * @return \TencentAds\Model\AccountTypeMap
+     * @return \TencentAds\Model\AccountTypeMap|mixed
      */
     public function getFundType()
     {
@@ -303,7 +303,7 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets time
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTime()
     {
@@ -327,7 +327,7 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets isRepeated
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getIsRepeated()
     {

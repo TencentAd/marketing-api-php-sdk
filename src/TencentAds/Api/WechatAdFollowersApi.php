@@ -99,7 +99,7 @@ class WechatAdFollowersApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\WechatAdFollowersGetResponse
+     * @return \TencentAds\Model\WechatAdFollowersGetResponse|mixed
      */
     public function wechatAdFollowersGet($timeRange, $page = null, $pageSize = null, $fields = null)
     {

@@ -219,7 +219,7 @@ class XijingPageUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -243,7 +243,7 @@ class XijingPageUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets isSubmittedForReview
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getIsSubmittedForReview()
     {
@@ -267,7 +267,7 @@ class XijingPageUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets pageIdList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getPageIdList()
     {

@@ -244,7 +244,7 @@ class DetailCreativeDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets isVideo
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getIsVideo()
     {
@@ -268,7 +268,7 @@ class DetailCreativeDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets isWechatMoment
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getIsWechatMoment()
     {
@@ -292,7 +292,7 @@ class DetailCreativeDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets playDuration
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPlayDuration()
     {
@@ -316,7 +316,7 @@ class DetailCreativeDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets playProgress
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPlayProgress()
     {
@@ -340,7 +340,7 @@ class DetailCreativeDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ctrLevel
      *
-     * @return \TencentAds\Model\CtrLevelStruct
+     * @return \TencentAds\Model\CtrLevelStruct|mixed
      */
     public function getCtrLevel()
     {
@@ -364,7 +364,7 @@ class DetailCreativeDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectivePlayRate
      *
-     * @return \TencentAds\Model\EffectivePlayRateStruct
+     * @return \TencentAds\Model\EffectivePlayRateStruct|mixed
      */
     public function getEffectivePlayRate()
     {
@@ -388,7 +388,7 @@ class DetailCreativeDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets noInterestClickRate
      *
-     * @return \TencentAds\Model\NoInterestClickRateStruct
+     * @return \TencentAds\Model\NoInterestClickRateStruct|mixed
      */
     public function getNoInterestClickRate()
     {

@@ -208,7 +208,7 @@ class AsyncReportsGetData implements ModelInterface, ArrayAccess
     /**
      * Gets fileInfoList
      *
-     * @return \TencentAds\Model\AsyncReportsGetFileInfo[]
+     * @return \TencentAds\Model\AsyncReportsGetFileInfo[]|mixed
      */
     public function getFileInfoList()
     {

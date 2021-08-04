@@ -99,7 +99,7 @@ class TargetingTagsUvApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\TargetingTagsUvGetResponse
+     * @return \TencentAds\Model\TargetingTagsUvGetResponse|mixed
      */
     public function targetingTagsUvGet($accountId, $categoryType, $categoryList = null, $fields = null)
     {

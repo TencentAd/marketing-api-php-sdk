@@ -261,7 +261,7 @@ class WechatAgencyGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -285,7 +285,7 @@ class WechatAgencyGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets wechatAccountId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatAccountId()
     {
@@ -309,7 +309,7 @@ class WechatAgencyGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets wechatAccountName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatAccountName()
     {
@@ -333,7 +333,7 @@ class WechatAgencyGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets corporationName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCorporationName()
     {
@@ -357,7 +357,7 @@ class WechatAgencyGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets adminName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdminName()
     {
@@ -381,7 +381,7 @@ class WechatAgencyGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets adminPhoneNumber
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdminPhoneNumber()
     {
@@ -405,7 +405,7 @@ class WechatAgencyGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets adminWechatId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdminWechatId()
     {
@@ -429,7 +429,7 @@ class WechatAgencyGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets certificationImage
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCertificationImage()
     {
@@ -453,7 +453,7 @@ class WechatAgencyGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets corporationLicence
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCorporationLicence()
     {
@@ -477,7 +477,7 @@ class WechatAgencyGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets advertiserInfoSpec
      *
-     * @return \TencentAds\Model\AdvertiserInfoSpecStruct
+     * @return \TencentAds\Model\AdvertiserInfoSpecStruct|mixed
      */
     public function getAdvertiserInfoSpec()
     {

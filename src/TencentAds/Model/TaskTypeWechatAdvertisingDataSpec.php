@@ -214,7 +214,7 @@ class TaskTypeWechatAdvertisingDataSpec implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedTimeRange
      *
-     * @return \TencentAds\Model\LastModifiedTimeRange
+     * @return \TencentAds\Model\LastModifiedTimeRange|mixed
      */
     public function getLastModifiedTimeRange()
     {
@@ -238,7 +238,7 @@ class TaskTypeWechatAdvertisingDataSpec implements ModelInterface, ArrayAccess
     /**
      * Gets fields
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getFields()
     {

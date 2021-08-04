@@ -231,7 +231,7 @@ class BatchOperationAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets resourceType
      *
-     * @return \TencentAds\Model\ResourceType
+     * @return \TencentAds\Model\ResourceType|mixed
      */
     public function getResourceType()
     {
@@ -255,7 +255,7 @@ class BatchOperationAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets operationType
      *
-     * @return \TencentAds\Model\BatchOperationType
+     * @return \TencentAds\Model\BatchOperationType|mixed
      */
     public function getOperationType()
     {
@@ -279,7 +279,7 @@ class BatchOperationAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets resourceIdList
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getResourceIdList()
     {
@@ -303,7 +303,7 @@ class BatchOperationAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets operationSpec
      *
-     * @return \TencentAds\Model\OperationSpec
+     * @return \TencentAds\Model\OperationSpec|mixed
      */
     public function getOperationSpec()
     {
@@ -327,7 +327,7 @@ class BatchOperationAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {

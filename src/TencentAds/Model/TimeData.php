@@ -250,7 +250,7 @@ class TimeData implements ModelInterface, ArrayAccess
     /**
      * Gets date
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDate()
     {
@@ -274,7 +274,7 @@ class TimeData implements ModelInterface, ArrayAccess
     /**
      * Gets hour
      *
-     * @return int
+     * @return int|mixed
      */
     public function getHour()
     {
@@ -298,7 +298,7 @@ class TimeData implements ModelInterface, ArrayAccess
     /**
      * Gets domain
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDomain()
     {
@@ -322,7 +322,7 @@ class TimeData implements ModelInterface, ArrayAccess
     /**
      * Gets actionType
      *
-     * @return \TencentAds\Model\ActionType
+     * @return \TencentAds\Model\ActionType|mixed
      */
     public function getActionType()
     {
@@ -346,7 +346,7 @@ class TimeData implements ModelInterface, ArrayAccess
     /**
      * Gets customAction
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCustomAction()
     {
@@ -370,7 +370,7 @@ class TimeData implements ModelInterface, ArrayAccess
     /**
      * Gets rawActionCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRawActionCount()
     {
@@ -394,7 +394,7 @@ class TimeData implements ModelInterface, ArrayAccess
     /**
      * Gets identifiedActionCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getIdentifiedActionCount()
     {
@@ -418,7 +418,7 @@ class TimeData implements ModelInterface, ArrayAccess
     /**
      * Gets identifiedUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getIdentifiedUserCount()
     {

@@ -220,7 +220,7 @@ class CustomFileFeatureSpec implements ModelInterface, ArrayAccess
     /**
      * Gets dataType
      *
-     * @return \TencentAds\Model\FeatureValueDataType
+     * @return \TencentAds\Model\FeatureValueDataType|mixed
      */
     public function getDataType()
     {
@@ -244,7 +244,7 @@ class CustomFileFeatureSpec implements ModelInterface, ArrayAccess
     /**
      * Gets isMultiValued
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getIsMultiValued()
     {
@@ -268,7 +268,7 @@ class CustomFileFeatureSpec implements ModelInterface, ArrayAccess
     /**
      * Gets possibleValuesSize
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPossibleValuesSize()
     {

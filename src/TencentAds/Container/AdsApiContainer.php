@@ -30,7 +30,7 @@ class AdsApiContainer extends ApiContainer
     /**
      * Handle AdsApi adsAdd function
      * @param array params
-     * @return \TencentAds\Model\AdsAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class AdsApiContainer extends ApiContainer
     /**
      * Handle AdsApi adsDelete function
      * @param array params
-     * @return \TencentAds\Model\AdsDeleteResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -98,7 +98,7 @@ class AdsApiContainer extends ApiContainer
     /**
      * Handle AdsApi adsGet function
      * @param array params
-     * @return \TencentAds\Model\AdsGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -142,7 +142,7 @@ class AdsApiContainer extends ApiContainer
     /**
      * Handle AdsApi adsUpdate function
      * @param array params
-     * @return \TencentAds\Model\AdsUpdateResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -176,7 +176,7 @@ class AdsApiContainer extends ApiContainer
     /**
      * Handle AdsApi adsUpdateConfiguredStatus function
      * @param array params
-     * @return \TencentAds\Model\AdsUpdateConfiguredStatusResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

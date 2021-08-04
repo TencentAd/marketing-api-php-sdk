@@ -213,7 +213,7 @@ class AdcreativesDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets adcreativeId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdcreativeId()
     {
@@ -237,7 +237,7 @@ class AdcreativesDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {

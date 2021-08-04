@@ -214,7 +214,7 @@ class DeepConversionWorthSpec implements ModelInterface, ArrayAccess
     /**
      * Gets goal
      *
-     * @return \TencentAds\Model\DeepConversionWorthGoal
+     * @return \TencentAds\Model\DeepConversionWorthGoal|mixed
      */
     public function getGoal()
     {
@@ -238,7 +238,7 @@ class DeepConversionWorthSpec implements ModelInterface, ArrayAccess
     /**
      * Gets expectedRoi
      *
-     * @return double
+     * @return double|mixed
      */
     public function getExpectedRoi()
     {

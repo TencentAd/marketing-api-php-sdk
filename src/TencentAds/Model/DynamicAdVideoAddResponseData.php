@@ -219,7 +219,7 @@ class DynamicAdVideoAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets videoId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getVideoId()
     {
@@ -243,7 +243,7 @@ class DynamicAdVideoAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets videoPreviewImageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getVideoPreviewImageUrl()
     {
@@ -267,7 +267,7 @@ class DynamicAdVideoAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets videoPreviewImageId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoPreviewImageId()
     {

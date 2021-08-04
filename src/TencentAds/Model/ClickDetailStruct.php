@@ -220,7 +220,7 @@ class ClickDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectData
      *
-     * @return \TencentAds\Model\ClickEffectDataStruct
+     * @return \TencentAds\Model\ClickEffectDataStruct|mixed
      */
     public function getEffectData()
     {
@@ -244,7 +244,7 @@ class ClickDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectDataTrends
      *
-     * @return \TencentAds\Model\ClickEffectDataTrendsItem[]
+     * @return \TencentAds\Model\ClickEffectDataTrendsItem[]|mixed
      */
     public function getEffectDataTrends()
     {
@@ -268,7 +268,7 @@ class ClickDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets targetingLabelContribution
      *
-     * @return \TencentAds\Model\ClickTargetingLabelContributionStruct
+     * @return \TencentAds\Model\ClickTargetingLabelContributionStruct|mixed
      */
     public function getTargetingLabelContribution()
     {

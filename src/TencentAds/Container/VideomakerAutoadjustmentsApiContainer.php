@@ -30,7 +30,7 @@ class VideomakerAutoadjustmentsApiContainer extends ApiContainer
     /**
      * Handle VideomakerAutoadjustmentsApi videomakerAutoadjustmentsAdd function
      * @param array params
-     * @return \TencentAds\Model\VideomakerAutoadjustmentsAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

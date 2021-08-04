@@ -96,7 +96,7 @@ class UserActionsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\UserActionsAddResponse
+     * @return \TencentAds\Model\UserActionsAddResponse|mixed
      */
     public function userActionsAdd($data)
     {

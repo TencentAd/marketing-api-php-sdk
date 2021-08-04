@@ -220,7 +220,7 @@ class WechatCostDiagnosisResultSpec implements ModelInterface, ArrayAccess
     /**
      * Gets diagnosisConclusion
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDiagnosisConclusion()
     {
@@ -244,7 +244,7 @@ class WechatCostDiagnosisResultSpec implements ModelInterface, ArrayAccess
     /**
      * Gets overallCpc
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOverallCpc()
     {
@@ -268,7 +268,7 @@ class WechatCostDiagnosisResultSpec implements ModelInterface, ArrayAccess
     /**
      * Gets historyCpcSpecList
      *
-     * @return \TencentAds\Model\HistoryCpcSpec[]
+     * @return \TencentAds\Model\HistoryCpcSpec[]|mixed
      */
     public function getHistoryCpcSpecList()
     {

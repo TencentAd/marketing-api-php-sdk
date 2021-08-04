@@ -100,7 +100,7 @@ class LocalStoresSearchInfoApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\LocalStoresSearchInfoGetResponse
+     * @return \TencentAds\Model\LocalStoresSearchInfoGetResponse|mixed
      */
     public function localStoresSearchInfoGet($accountId, $keyWord, $page = null, $pageSize = null, $fields = null)
     {

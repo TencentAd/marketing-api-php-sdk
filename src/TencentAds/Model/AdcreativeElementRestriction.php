@@ -232,7 +232,7 @@ class AdcreativeElementRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets textRestriction
      *
-     * @return \TencentAds\Model\TextRestriction
+     * @return \TencentAds\Model\TextRestriction|mixed
      */
     public function getTextRestriction()
     {
@@ -256,7 +256,7 @@ class AdcreativeElementRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets imageRestriction
      *
-     * @return \TencentAds\Model\ImageRestriction
+     * @return \TencentAds\Model\ImageRestriction|mixed
      */
     public function getImageRestriction()
     {
@@ -280,7 +280,7 @@ class AdcreativeElementRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets urlRestriction
      *
-     * @return \TencentAds\Model\UrlRestriction
+     * @return \TencentAds\Model\UrlRestriction|mixed
      */
     public function getUrlRestriction()
     {
@@ -304,7 +304,7 @@ class AdcreativeElementRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets videoRestriction
      *
-     * @return \TencentAds\Model\VideoRestriction
+     * @return \TencentAds\Model\VideoRestriction|mixed
      */
     public function getVideoRestriction()
     {
@@ -328,7 +328,7 @@ class AdcreativeElementRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets numberRestriction
      *
-     * @return \TencentAds\Model\NumberRestriction
+     * @return \TencentAds\Model\NumberRestriction|mixed
      */
     public function getNumberRestriction()
     {

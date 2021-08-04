@@ -213,7 +213,7 @@ class SplitTestsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -237,7 +237,7 @@ class SplitTestsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets splitTestId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSplitTestId()
     {

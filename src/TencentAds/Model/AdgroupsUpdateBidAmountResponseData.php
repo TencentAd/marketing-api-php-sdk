@@ -207,7 +207,7 @@ class AdgroupsUpdateBidAmountResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\AdgroupsUpdateBidAmountListStruct[]
+     * @return \TencentAds\Model\AdgroupsUpdateBidAmountListStruct[]|mixed
      */
     public function getList()
     {

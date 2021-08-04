@@ -219,7 +219,7 @@ class VideosUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -243,7 +243,7 @@ class VideosUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets videoId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoId()
     {
@@ -267,7 +267,7 @@ class VideosUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {

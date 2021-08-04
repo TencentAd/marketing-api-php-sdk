@@ -30,7 +30,7 @@ class ConversionsApiContainer extends ApiContainer
     /**
      * Handle ConversionsApi conversionsAdd function
      * @param array params
-     * @return \TencentAds\Model\ConversionsAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class ConversionsApiContainer extends ApiContainer
     /**
      * Handle ConversionsApi conversionsGet function
      * @param array params
-     * @return \TencentAds\Model\ConversionsGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

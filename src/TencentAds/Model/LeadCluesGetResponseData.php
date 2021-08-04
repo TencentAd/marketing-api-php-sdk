@@ -213,7 +213,7 @@ class LeadCluesGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets leadsInfo
      *
-     * @return \TencentAds\Model\LeadCluesGetListStruct[]
+     * @return \TencentAds\Model\LeadCluesGetListStruct[]|mixed
      */
     public function getLeadsInfo()
     {
@@ -237,7 +237,7 @@ class LeadCluesGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets pageInfo
      *
-     * @return \TencentAds\Model\Conf
+     * @return \TencentAds\Model\Conf|mixed
      */
     public function getPageInfo()
     {

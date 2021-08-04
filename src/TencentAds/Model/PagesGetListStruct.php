@@ -274,7 +274,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageId()
     {
@@ -298,7 +298,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPageName()
     {
@@ -322,7 +322,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets previewUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPreviewUrl()
     {
@@ -346,7 +346,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {
@@ -370,7 +370,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLastModifiedTime()
     {
@@ -394,7 +394,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPromotedObjectId()
     {
@@ -418,7 +418,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productCatalogId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProductCatalogId()
     {
@@ -442,7 +442,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageType
      *
-     * @return \TencentAds\Model\DestinationTypeRead
+     * @return \TencentAds\Model\DestinationTypeRead|mixed
      */
     public function getPageType()
     {
@@ -466,7 +466,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets playableType
      *
-     * @return \TencentAds\Model\PlayableType
+     * @return \TencentAds\Model\PlayableType|mixed
      */
     public function getPlayableType()
     {
@@ -490,7 +490,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageStatus
      *
-     * @return \TencentAds\Model\PageStatus
+     * @return \TencentAds\Model\PageStatus|mixed
      */
     public function getPageStatus()
     {
@@ -514,7 +514,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets fengyeSubType
      *
-     * @return \TencentAds\Model\LandingPageFengyeSubType
+     * @return \TencentAds\Model\LandingPageFengyeSubType|mixed
      */
     public function getFengyeSubType()
     {
@@ -538,7 +538,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ownerUid
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOwnerUid()
     {

@@ -249,7 +249,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -273,7 +273,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets campaignName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCampaignName()
     {
@@ -297,7 +297,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets campaignType
      *
-     * @return \TencentAds\Model\CampaignType
+     * @return \TencentAds\Model\CampaignType|mixed
      */
     public function getCampaignType()
     {
@@ -321,7 +321,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObjectType
+     * @return \TencentAds\Model\PromotedObjectType|mixed
      */
     public function getPromotedObjectType()
     {
@@ -345,7 +345,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets dailyBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDailyBudget()
     {
@@ -369,7 +369,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets totalBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTotalBudget()
     {
@@ -393,7 +393,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets configuredStatus
      *
-     * @return \TencentAds\Model\AdStatus
+     * @return \TencentAds\Model\AdStatus|mixed
      */
     public function getConfiguredStatus()
     {
@@ -417,7 +417,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets speedMode
      *
-     * @return \TencentAds\Model\SpeedMode
+     * @return \TencentAds\Model\SpeedMode|mixed
      */
     public function getSpeedMode()
     {

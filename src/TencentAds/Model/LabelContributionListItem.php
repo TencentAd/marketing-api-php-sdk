@@ -226,7 +226,7 @@ class LabelContributionListItem implements ModelInterface, ArrayAccess
     /**
      * Gets label
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLabel()
     {
@@ -250,7 +250,7 @@ class LabelContributionListItem implements ModelInterface, ArrayAccess
     /**
      * Gets count
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCount()
     {
@@ -274,7 +274,7 @@ class LabelContributionListItem implements ModelInterface, ArrayAccess
     /**
      * Gets contribution
      *
-     * @return int
+     * @return int|mixed
      */
     public function getContribution()
     {
@@ -298,7 +298,7 @@ class LabelContributionListItem implements ModelInterface, ArrayAccess
     /**
      * Gets ratio
      *
-     * @return double
+     * @return double|mixed
      */
     public function getRatio()
     {

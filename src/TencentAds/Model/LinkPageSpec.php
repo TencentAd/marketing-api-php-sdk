@@ -226,7 +226,7 @@ class LinkPageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets pageId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageId()
     {
@@ -250,7 +250,7 @@ class LinkPageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets pageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPageUrl()
     {
@@ -274,7 +274,7 @@ class LinkPageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets miniProgramSpec
      *
-     * @return \TencentAds\Model\AdcreativeMiniProgramSpec
+     * @return \TencentAds\Model\AdcreativeMiniProgramSpec|mixed
      */
     public function getMiniProgramSpec()
     {
@@ -298,7 +298,7 @@ class LinkPageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameSpec
      *
-     * @return \TencentAds\Model\MiniGameSpec
+     * @return \TencentAds\Model\MiniGameSpec|mixed
      */
     public function getMiniGameSpec()
     {

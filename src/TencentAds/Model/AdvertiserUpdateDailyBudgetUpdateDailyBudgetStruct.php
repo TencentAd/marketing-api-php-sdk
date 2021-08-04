@@ -214,7 +214,7 @@ class AdvertiserUpdateDailyBudgetUpdateDailyBudgetStruct implements ModelInterfa
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -238,7 +238,7 @@ class AdvertiserUpdateDailyBudgetUpdateDailyBudgetStruct implements ModelInterfa
     /**
      * Gets dailyBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDailyBudget()
     {

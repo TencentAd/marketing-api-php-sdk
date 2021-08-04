@@ -96,7 +96,7 @@ class ProductItemsVerticalsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ProductItemsVerticalsGetResponse
+     * @return \TencentAds\Model\ProductItemsVerticalsGetResponse|mixed
      */
     public function productItemsVerticalsGet($fields = null)
     {

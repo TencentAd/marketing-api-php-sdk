@@ -30,7 +30,7 @@ class DiagnosisApiContainer extends ApiContainer
     /**
      * Handle DiagnosisApi diagnosisGet function
      * @param array params
-     * @return \TencentAds\Model\DiagnosisGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

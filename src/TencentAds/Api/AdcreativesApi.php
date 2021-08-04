@@ -96,7 +96,7 @@ class AdcreativesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdcreativesAddResponse
+     * @return \TencentAds\Model\AdcreativesAddResponse|mixed
      */
     public function adcreativesAdd($data)
     {
@@ -378,7 +378,7 @@ class AdcreativesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdcreativesDeleteResponse
+     * @return \TencentAds\Model\AdcreativesDeleteResponse|mixed
      */
     public function adcreativesDelete($data)
     {
@@ -666,7 +666,7 @@ class AdcreativesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdcreativesGetResponse
+     * @return \TencentAds\Model\AdcreativesGetResponse|mixed
      */
     public function adcreativesGet($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $linkPageTypeCompatible = null, $fields = null)
     {
@@ -1003,7 +1003,7 @@ class AdcreativesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdcreativesUpdateResponse
+     * @return \TencentAds\Model\AdcreativesUpdateResponse|mixed
      */
     public function adcreativesUpdate($data)
     {

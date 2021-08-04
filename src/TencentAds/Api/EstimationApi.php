@@ -96,7 +96,7 @@ class EstimationApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\EstimationGetResponse
+     * @return \TencentAds\Model\EstimationGetResponse|mixed
      */
     public function estimationGet($data)
     {

@@ -243,7 +243,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets pageTemplateId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPageTemplateId()
     {
@@ -267,7 +267,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets pageType
      *
-     * @return \TencentAds\Model\TemplatesPageType
+     * @return \TencentAds\Model\TemplatesPageType|mixed
      */
     public function getPageType()
     {
@@ -291,7 +291,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets pageName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPageName()
     {
@@ -315,7 +315,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets clipboard
      *
-     * @return string
+     * @return string|mixed
      */
     public function getClipboard()
     {
@@ -339,7 +339,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets pageTitle
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPageTitle()
     {
@@ -363,7 +363,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets componentSpecList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getComponentSpecList()
     {
@@ -387,7 +387,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets mobileAppId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMobileAppId()
     {

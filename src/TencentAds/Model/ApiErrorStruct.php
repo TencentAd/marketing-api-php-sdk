@@ -213,7 +213,7 @@ class ApiErrorStruct implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return string
+     * @return string|mixed
      */
     public function getType()
     {
@@ -237,7 +237,7 @@ class ApiErrorStruct implements ModelInterface, ArrayAccess
     /**
      * Gets commonParamExceptionSpec
      *
-     * @return \TencentAds\Model\CommonParamExceptionSpec
+     * @return \TencentAds\Model\CommonParamExceptionSpec|mixed
      */
     public function getCommonParamExceptionSpec()
     {

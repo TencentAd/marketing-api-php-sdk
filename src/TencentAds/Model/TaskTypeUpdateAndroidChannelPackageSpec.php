@@ -220,7 +220,7 @@ class TaskTypeUpdateAndroidChannelPackageSpec implements ModelInterface, ArrayAc
     /**
      * Gets myappAuthKey
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMyappAuthKey()
     {
@@ -244,7 +244,7 @@ class TaskTypeUpdateAndroidChannelPackageSpec implements ModelInterface, ArrayAc
     /**
      * Gets androidAppId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAndroidAppId()
     {
@@ -268,7 +268,7 @@ class TaskTypeUpdateAndroidChannelPackageSpec implements ModelInterface, ArrayAc
     /**
      * Gets androidChannelPackageSpec
      *
-     * @return \TencentAds\Model\UpdateAndroidChannelPackageSpec[]
+     * @return \TencentAds\Model\UpdateAndroidChannelPackageSpec[]|mixed
      */
     public function getAndroidChannelPackageSpec()
     {

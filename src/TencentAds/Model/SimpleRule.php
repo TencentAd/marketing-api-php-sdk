@@ -214,7 +214,7 @@ class SimpleRule implements ModelInterface, ArrayAccess
     /**
      * Gets audienceId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAudienceId()
     {
@@ -238,7 +238,7 @@ class SimpleRule implements ModelInterface, ArrayAccess
     /**
      * Gets timeWindow
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTimeWindow()
     {

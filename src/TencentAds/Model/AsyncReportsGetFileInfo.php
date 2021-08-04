@@ -214,7 +214,7 @@ class AsyncReportsGetFileInfo implements ModelInterface, ArrayAccess
     /**
      * Gets fileId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFileId()
     {
@@ -238,7 +238,7 @@ class AsyncReportsGetFileInfo implements ModelInterface, ArrayAccess
     /**
      * Gets md5
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMd5()
     {

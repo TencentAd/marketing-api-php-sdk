@@ -231,7 +231,7 @@ class ChannelsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -255,7 +255,7 @@ class ChannelsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -279,7 +279,7 @@ class ChannelsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets adgroup
      *
-     * @return \TencentAds\Model\AdgroupUpdateSpec
+     * @return \TencentAds\Model\AdgroupUpdateSpec|mixed
      */
     public function getAdgroup()
     {
@@ -303,7 +303,7 @@ class ChannelsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets campaign
      *
-     * @return \TencentAds\Model\CampaignUpdateSpec
+     * @return \TencentAds\Model\CampaignUpdateSpec|mixed
      */
     public function getCampaign()
     {
@@ -327,7 +327,7 @@ class ChannelsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets adcreative
      *
-     * @return \TencentAds\Model\AdCreativeUpdateSpec
+     * @return \TencentAds\Model\AdCreativeUpdateSpec|mixed
      */
     public function getAdcreative()
     {

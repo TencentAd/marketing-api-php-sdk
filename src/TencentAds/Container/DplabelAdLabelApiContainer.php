@@ -30,7 +30,7 @@ class DplabelAdLabelApiContainer extends ApiContainer
     /**
      * Handle DplabelAdLabelApi dplabelAdLabelGet function
      * @param array params
-     * @return \TencentAds\Model\DplabelAdLabelGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

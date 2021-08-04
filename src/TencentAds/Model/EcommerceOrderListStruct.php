@@ -334,7 +334,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -358,7 +358,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ecommerceOrderId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getEcommerceOrderId()
     {
@@ -382,7 +382,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets customizedPageName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCustomizedPageName()
     {
@@ -406,7 +406,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets commodityPackageDetail
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCommodityPackageDetail()
     {
@@ -430,7 +430,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets quantity
      *
-     * @return int
+     * @return int|mixed
      */
     public function getQuantity()
     {
@@ -454,7 +454,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets price
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPrice()
     {
@@ -478,7 +478,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets totalPrice
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTotalPrice()
     {
@@ -502,7 +502,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ecommerceOrderTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getEcommerceOrderTime()
     {
@@ -526,7 +526,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ecommerceOrderStatus
      *
-     * @return \TencentAds\Model\EcommerceOrderStatus
+     * @return \TencentAds\Model\EcommerceOrderStatus|mixed
      */
     public function getEcommerceOrderStatus()
     {
@@ -550,7 +550,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets userName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUserName()
     {
@@ -574,7 +574,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets userPhone
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUserPhone()
     {
@@ -598,7 +598,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets userProvince
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUserProvince()
     {
@@ -622,7 +622,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets userCity
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUserCity()
     {
@@ -646,7 +646,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets userArea
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUserArea()
     {
@@ -670,7 +670,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets userAddress
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUserAddress()
     {
@@ -694,7 +694,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets userIp
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUserIp()
     {
@@ -718,7 +718,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets userMessage
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUserMessage()
     {
@@ -742,7 +742,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets destinationUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDestinationUrl()
     {
@@ -766,7 +766,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -790,7 +790,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdgroupName()
     {
@@ -814,7 +814,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets fromAccountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFromAccountId()
     {
@@ -838,7 +838,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets deliverySpec
      *
-     * @return \TencentAds\Model\OrderDeliverySpec
+     * @return \TencentAds\Model\OrderDeliverySpec|mixed
      */
     public function getDeliverySpec()
     {

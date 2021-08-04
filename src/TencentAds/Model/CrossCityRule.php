@@ -220,7 +220,7 @@ class CrossCityRule implements ModelInterface, ArrayAccess
     /**
      * Gets route
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getRoute()
     {
@@ -244,7 +244,7 @@ class CrossCityRule implements ModelInterface, ArrayAccess
     /**
      * Gets dateRange
      *
-     * @return \TencentAds\Model\DateRange
+     * @return \TencentAds\Model\DateRange|mixed
      */
     public function getDateRange()
     {
@@ -268,7 +268,7 @@ class CrossCityRule implements ModelInterface, ArrayAccess
     /**
      * Gets frequency
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFrequency()
     {

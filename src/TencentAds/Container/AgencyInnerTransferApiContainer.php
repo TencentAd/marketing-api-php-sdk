@@ -30,7 +30,7 @@ class AgencyInnerTransferApiContainer extends ApiContainer
     /**
      * Handle AgencyInnerTransferApi agencyInnerTransferAdd function
      * @param array params
-     * @return \TencentAds\Model\AgencyInnerTransferAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

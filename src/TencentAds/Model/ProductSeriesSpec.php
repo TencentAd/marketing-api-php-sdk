@@ -214,7 +214,7 @@ class ProductSeriesSpec implements ModelInterface, ArrayAccess
     /**
      * Gets logicOperator
      *
-     * @return \TencentAds\Model\ProductSeriesSpecLogicOperator
+     * @return \TencentAds\Model\ProductSeriesSpecLogicOperator|mixed
      */
     public function getLogicOperator()
     {
@@ -238,7 +238,7 @@ class ProductSeriesSpec implements ModelInterface, ArrayAccess
     /**
      * Gets filters
      *
-     * @return \TencentAds\Model\ProductSeriesSpecFilteringStruct[]
+     * @return \TencentAds\Model\ProductSeriesSpecFilteringStruct[]|mixed
      */
     public function getFilters()
     {

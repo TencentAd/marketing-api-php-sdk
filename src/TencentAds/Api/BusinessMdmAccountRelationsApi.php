@@ -100,7 +100,7 @@ class BusinessMdmAccountRelationsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\BusinessMdmAccountRelationsGetResponse
+     * @return \TencentAds\Model\BusinessMdmAccountRelationsGetResponse|mixed
      */
     public function businessMdmAccountRelationsGet($accountId, $relationType, $page = null, $pageSize = null, $fields = null)
     {

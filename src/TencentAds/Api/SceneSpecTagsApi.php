@@ -98,7 +98,7 @@ class SceneSpecTagsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\SceneSpecTagsGetResponse
+     * @return \TencentAds\Model\SceneSpecTagsGetResponse|mixed
      */
     public function sceneSpecTagsGet($type, $accountId = null, $fields = null)
     {

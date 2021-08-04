@@ -3004,7 +3004,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -3028,7 +3028,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets date
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDate()
     {
@@ -3052,7 +3052,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets viewCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getViewCount()
     {
@@ -3076,7 +3076,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets downloadCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDownloadCount()
     {
@@ -3100,7 +3100,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activatedCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getActivatedCount()
     {
@@ -3124,7 +3124,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activatedRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getActivatedRate()
     {
@@ -3148,7 +3148,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets thousandDisplayPrice
      *
-     * @return int
+     * @return int|mixed
      */
     public function getThousandDisplayPrice()
     {
@@ -3172,7 +3172,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets validClickCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getValidClickCount()
     {
@@ -3196,7 +3196,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ctr
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCtr()
     {
@@ -3220,7 +3220,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cpc
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCpc()
     {
@@ -3244,7 +3244,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCost()
     {
@@ -3268,7 +3268,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets keyPageViewCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getKeyPageViewCost()
     {
@@ -3292,7 +3292,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets couponClickCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCouponClickCount()
     {
@@ -3316,7 +3316,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets couponIssueCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCouponIssueCount()
     {
@@ -3340,7 +3340,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets couponGetCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCouponGetCount()
     {
@@ -3364,7 +3364,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets platformPageViewCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPlatformPageViewCount()
     {
@@ -3388,7 +3388,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets platformPageViewRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getPlatformPageViewRate()
     {
@@ -3412,7 +3412,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCommodityPageViewCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebCommodityPageViewCount()
     {
@@ -3436,7 +3436,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCommodityPageViewCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebCommodityPageViewCost()
     {
@@ -3460,7 +3460,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webRegisterCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebRegisterCount()
     {
@@ -3484,7 +3484,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageConsultCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageConsultCount()
     {
@@ -3508,7 +3508,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageConsultCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageConsultCost()
     {
@@ -3532,7 +3532,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pagePhoneCallDirectCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPagePhoneCallDirectCount()
     {
@@ -3556,7 +3556,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pagePhoneCallDirectCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPagePhoneCallDirectCost()
     {
@@ -3580,7 +3580,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pagePhoneCallBackCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPagePhoneCallBackCount()
     {
@@ -3604,7 +3604,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pagePhoneCallBackCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPagePhoneCallBackCost()
     {
@@ -3628,7 +3628,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ownPageNavigationCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOwnPageNavigationCount()
     {
@@ -3652,7 +3652,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ownPageNaviCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOwnPageNaviCost()
     {
@@ -3676,7 +3676,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets platformPageNavigationCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPlatformPageNavigationCount()
     {
@@ -3700,7 +3700,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets platformPageNavigationCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPlatformPageNavigationCost()
     {
@@ -3724,7 +3724,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets platformShopNavigationCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPlatformShopNavigationCount()
     {
@@ -3748,7 +3748,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets platformShopNavigationCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPlatformShopNavigationCost()
     {
@@ -3772,7 +3772,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webApplicationCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebApplicationCount()
     {
@@ -3796,7 +3796,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webApplicationCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebApplicationCost()
     {
@@ -3820,7 +3820,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageReservationCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageReservationCount()
     {
@@ -3844,7 +3844,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageReservationRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getPageReservationRate()
     {
@@ -3868,7 +3868,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageReservationCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageReservationCost()
     {
@@ -3892,7 +3892,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageReservationCostWithPeople
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageReservationCostWithPeople()
     {
@@ -3916,7 +3916,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webAddToCartCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebAddToCartCount()
     {
@@ -3940,7 +3940,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webAddToCartCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebAddToCartCost()
     {
@@ -3964,7 +3964,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets addToCartPrice
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAddToCartPrice()
     {
@@ -3988,7 +3988,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ownPageCouponGetCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOwnPageCouponGetCount()
     {
@@ -4012,7 +4012,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ownPageCouponGetCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOwnPageCouponGetCost()
     {
@@ -4036,7 +4036,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets platformCouponGetCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPlatformCouponGetCount()
     {
@@ -4060,7 +4060,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets platformCouponGetCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPlatformCouponGetCost()
     {
@@ -4084,7 +4084,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webOrderCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebOrderCount()
     {
@@ -4108,7 +4108,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webOrderRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getWebOrderRate()
     {
@@ -4132,7 +4132,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appOrderRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getAppOrderRate()
     {
@@ -4156,7 +4156,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webOrderCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebOrderCost()
     {
@@ -4180,7 +4180,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCheckoutAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebCheckoutAmount()
     {
@@ -4204,7 +4204,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCheckoutCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebCheckoutCount()
     {
@@ -4228,7 +4228,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCheckoutCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebCheckoutCost()
     {
@@ -4252,7 +4252,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets orderAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOrderAmount()
     {
@@ -4276,7 +4276,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets orderUnitPrice
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOrderUnitPrice()
     {
@@ -4300,7 +4300,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets orderRoi
      *
-     * @return double
+     * @return double|mixed
      */
     public function getOrderRoi()
     {
@@ -4324,7 +4324,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets deliverCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDeliverCount()
     {
@@ -4348,7 +4348,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets deliverCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDeliverCost()
     {
@@ -4372,7 +4372,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets signInCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSignInCount()
     {
@@ -4396,7 +4396,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets signInCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSignInCost()
     {
@@ -4420,7 +4420,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets downloadRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getDownloadRate()
     {
@@ -4444,7 +4444,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets downloadCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDownloadCost()
     {
@@ -4468,7 +4468,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets installCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getInstallCount()
     {
@@ -4492,7 +4492,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets installCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getInstallCost()
     {
@@ -4516,7 +4516,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets clickActivatedRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getClickActivatedRate()
     {
@@ -4540,7 +4540,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activatedCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getActivatedCost()
     {
@@ -4564,7 +4564,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets retentionCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRetentionCount()
     {
@@ -4588,7 +4588,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets retentionRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getRetentionRate()
     {
@@ -4612,7 +4612,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets retentionCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRetentionCost()
     {
@@ -4636,7 +4636,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets keyPageViewCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getKeyPageViewCount()
     {
@@ -4660,7 +4660,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appCommodityPageViewCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppCommodityPageViewCount()
     {
@@ -4684,7 +4684,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appCommodityPageViewRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getAppCommodityPageViewRate()
     {
@@ -4708,7 +4708,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCommodityPageViewRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getWebCommodityPageViewRate()
     {
@@ -4732,7 +4732,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appCommodityPageViewCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppCommodityPageViewCost()
     {
@@ -4756,7 +4756,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appRegisterCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppRegisterCount()
     {
@@ -4780,7 +4780,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appRegisterCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppRegisterCost()
     {
@@ -4804,7 +4804,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webRegisterCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebRegisterCost()
     {
@@ -4828,7 +4828,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appApplicationCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppApplicationCount()
     {
@@ -4852,7 +4852,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appApplicationCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppApplicationCost()
     {
@@ -4876,7 +4876,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appAddToCartCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppAddToCartCount()
     {
@@ -4900,7 +4900,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets addToCartAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAddToCartAmount()
     {
@@ -4924,7 +4924,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appAddToCartCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppAddToCartCost()
     {
@@ -4948,7 +4948,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appOrderCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppOrderCount()
     {
@@ -4972,7 +4972,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appOrderCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppOrderCost()
     {
@@ -4996,7 +4996,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appCheckoutCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppCheckoutCount()
     {
@@ -5020,7 +5020,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appCheckoutAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppCheckoutAmount()
     {
@@ -5044,7 +5044,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appCheckoutCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppCheckoutCost()
     {
@@ -5068,7 +5068,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets platformCouponClickCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPlatformCouponClickCount()
     {
@@ -5092,7 +5092,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets platformCouponGetRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getPlatformCouponGetRate()
     {
@@ -5116,7 +5116,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets couponUsageNumber
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCouponUsageNumber()
     {
@@ -5140,7 +5140,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets couponUsageCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCouponUsageCost()
     {
@@ -5164,7 +5164,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets couponUsageRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCouponUsageRate()
     {
@@ -5188,7 +5188,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets couponPurchaseRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCouponPurchaseRate()
     {
@@ -5212,7 +5212,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets followCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFollowCount()
     {
@@ -5236,7 +5236,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets followCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFollowCost()
     {
@@ -5260,7 +5260,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets forwardCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getForwardCount()
     {
@@ -5284,7 +5284,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets forwardCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getForwardCost()
     {
@@ -5308,7 +5308,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets readCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getReadCount()
     {
@@ -5332,7 +5332,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets readCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getReadCost()
     {
@@ -5356,7 +5356,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets praiseCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPraiseCount()
     {
@@ -5380,7 +5380,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets praiseCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPraiseCost()
     {
@@ -5404,7 +5404,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets commentCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCommentCount()
     {
@@ -5428,7 +5428,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets commentCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCommentCost()
     {
@@ -5452,7 +5452,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets intePhoneCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getIntePhoneCount()
     {
@@ -5476,7 +5476,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets phoneCallCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPhoneCallCount()
     {
@@ -5500,7 +5500,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets externalFormReservationCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getExternalFormReservationCount()
     {
@@ -5524,7 +5524,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appAdPayingUsers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppAdPayingUsers()
     {
@@ -5548,7 +5548,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adPurValWeb
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdPurValWeb()
     {
@@ -5572,7 +5572,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adPurValApp
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdPurValApp()
     {
@@ -5596,7 +5596,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets order24hCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOrder24hCount()
     {
@@ -5620,7 +5620,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets order24hRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getOrder24hRate()
     {
@@ -5644,7 +5644,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets order24hCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOrder24hCost()
     {
@@ -5668,7 +5668,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets order24hAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOrder24hAmount()
     {
@@ -5692,7 +5692,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets order24hRoi
      *
-     * @return double
+     * @return double|mixed
      */
     public function getOrder24hRoi()
     {
@@ -5716,7 +5716,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets gameCreateRoleCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getGameCreateRoleCount()
     {
@@ -5740,7 +5740,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets gameAuthorizeCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getGameAuthorizeCount()
     {
@@ -5764,7 +5764,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets gameTutorialFinishCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getGameTutorialFinishCount()
     {
@@ -5788,7 +5788,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectiveLeadsCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getEffectiveLeadsCount()
     {
@@ -5812,7 +5812,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectiveCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getEffectiveCost()
     {
@@ -5836,7 +5836,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectiveReserveCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getEffectiveReserveCount()
     {
@@ -5860,7 +5860,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectiveConsultCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getEffectiveConsultCount()
     {
@@ -5884,7 +5884,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectivePhoneCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getEffectivePhoneCount()
     {
@@ -5908,7 +5908,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets potentialReserveCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPotentialReserveCount()
     {
@@ -5932,7 +5932,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets potentialConsultCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPotentialConsultCount()
     {
@@ -5956,7 +5956,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets potentialPhoneCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPotentialPhoneCount()
     {
@@ -5980,7 +5980,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appCheckoutRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getAppCheckoutRate()
     {
@@ -6004,7 +6004,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCheckoutRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getWebCheckoutRate()
     {
@@ -6028,7 +6028,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appActivatedCheckoutRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getAppActivatedCheckoutRate()
     {
@@ -6052,7 +6052,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webActivatedCheckoutRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getWebActivatedCheckoutRate()
     {
@@ -6076,7 +6076,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appRegisterRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getAppRegisterRate()
     {
@@ -6100,7 +6100,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webRegRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getWebRegRate()
     {
@@ -6124,7 +6124,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pagePhoneCallDirectRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getPagePhoneCallDirectRate()
     {
@@ -6148,7 +6148,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pagePhoneCallBackRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getPagePhoneCallBackRate()
     {
@@ -6172,7 +6172,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageConsultRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getPageConsultRate()
     {
@@ -6196,7 +6196,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets deliverRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getDeliverRate()
     {
@@ -6220,7 +6220,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets installRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getInstallRate()
     {
@@ -6244,7 +6244,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets arppuCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getArppuCost()
     {
@@ -6268,7 +6268,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets arpuCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getArpuCost()
     {
@@ -6292,7 +6292,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webArppuCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebArppuCost()
     {
@@ -6316,7 +6316,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webArpuCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebArpuCost()
     {
@@ -6340,7 +6340,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appAdPurArpuCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppAdPurArpuCost()
     {
@@ -6364,7 +6364,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appAdPurArppuCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppAdPurArppuCost()
     {
@@ -6388,7 +6388,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webAdPurArpuCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebAdPurArpuCost()
     {
@@ -6412,7 +6412,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cheoutFd
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCheoutFd()
     {
@@ -6436,7 +6436,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cheoutTd
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCheoutTd()
     {
@@ -6460,7 +6460,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cheoutOw
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCheoutOw()
     {
@@ -6484,7 +6484,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cheoutTw
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCheoutTw()
     {
@@ -6508,7 +6508,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cheoutOm
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCheoutOm()
     {
@@ -6532,7 +6532,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cheoutFdReward
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCheoutFdReward()
     {
@@ -6556,7 +6556,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cheoutTdReward
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCheoutTdReward()
     {
@@ -6580,7 +6580,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cheoutOwReward
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCheoutOwReward()
     {
@@ -6604,7 +6604,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cheoutTwReward
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCheoutTwReward()
     {
@@ -6628,7 +6628,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cheoutOmReward
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCheoutOmReward()
     {
@@ -6652,7 +6652,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cheoutTotalReward
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCheoutTotalReward()
     {
@@ -6676,7 +6676,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets fromFollowUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFromFollowUv()
     {
@@ -6700,7 +6700,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets fromFollowCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFromFollowCost()
     {
@@ -6724,7 +6724,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets addDesktopPv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAddDesktopPv()
     {
@@ -6748,7 +6748,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets addDesktopCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAddDesktopCost()
     {
@@ -6772,7 +6772,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstPayCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstPayCount()
     {
@@ -6796,7 +6796,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstPayRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getFirstPayRate()
     {
@@ -6820,7 +6820,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets preCreWeb
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPreCreWeb()
     {
@@ -6844,7 +6844,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets preCreApp
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPreCreApp()
     {
@@ -6868,7 +6868,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets preCreWebVal
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPreCreWebVal()
     {
@@ -6892,7 +6892,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets preCreAppVal
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPreCreAppVal()
     {
@@ -6916,7 +6916,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets creWeb
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreWeb()
     {
@@ -6940,7 +6940,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets creApp
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreApp()
     {
@@ -6964,7 +6964,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets creWebVal
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreWebVal()
     {
@@ -6988,7 +6988,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets creAppVal
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreAppVal()
     {
@@ -7012,7 +7012,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets withdrDepWeb
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWithdrDepWeb()
     {
@@ -7036,7 +7036,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets withdrDepApp
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWithdrDepApp()
     {
@@ -7060,7 +7060,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets withdrDepWebVal
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWithdrDepWebVal()
     {
@@ -7084,7 +7084,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets withdrDepAppVal
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWithdrDepAppVal()
     {
@@ -7108,7 +7108,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstPayCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstPayCost()
     {
@@ -7132,7 +7132,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets landingPageClickCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLandingPageClickCount()
     {
@@ -7156,7 +7156,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCartAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebCartAmount()
     {
@@ -7180,7 +7180,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets scanFollowCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getScanFollowCount()
     {
@@ -7204,7 +7204,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets scanFollowUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getScanFollowUserCount()
     {
@@ -7228,7 +7228,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets scanFollowUserCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getScanFollowUserCost()
     {
@@ -7252,7 +7252,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets scanFollowUserRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getScanFollowUserRate()
     {
@@ -7276,7 +7276,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appOrderAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppOrderAmount()
     {
@@ -7300,7 +7300,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webOrderAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebOrderAmount()
     {
@@ -7324,7 +7324,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets phoneConsultCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPhoneConsultCount()
     {
@@ -7348,7 +7348,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets toolConsultCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getToolConsultCount()
     {
@@ -7372,7 +7372,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lotteryLeadsCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLotteryLeadsCount()
     {
@@ -7396,7 +7396,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lotteryLeadsCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLotteryLeadsCost()
     {
@@ -7420,7 +7420,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets conversionsCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getConversionsCount()
     {
@@ -7444,7 +7444,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets conversionsRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getConversionsRate()
     {
@@ -7468,7 +7468,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets conversionsCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getConversionsCost()
     {
@@ -7492,7 +7492,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets deepConversionsCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDeepConversionsCount()
     {
@@ -7516,7 +7516,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets deepConversionsRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getDeepConversionsRate()
     {
@@ -7540,7 +7540,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets deepConversionsCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDeepConversionsCost()
     {
@@ -7564,7 +7564,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstMemcardWebCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstMemcardWebCount()
     {
@@ -7588,7 +7588,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstMemcardAppCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstMemcardAppCount()
     {
@@ -7612,7 +7612,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets memcardWebCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMemcardWebCount()
     {
@@ -7636,7 +7636,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets memcardAppCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMemcardAppCount()
     {
@@ -7660,7 +7660,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstMemcardWebRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getFirstMemcardWebRate()
     {
@@ -7684,7 +7684,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstMemcardAppRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getFirstMemcardAppRate()
     {
@@ -7708,7 +7708,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstMemcardWebCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstMemcardWebCost()
     {
@@ -7732,7 +7732,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstMemcardAppCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstMemcardAppCost()
     {
@@ -7756,7 +7756,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets valuableClickCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getValuableClickCount()
     {
@@ -7780,7 +7780,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets valuableClickRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getValuableClickRate()
     {
@@ -7804,7 +7804,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets valuableClickCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getValuableClickCost()
     {
@@ -7828,7 +7828,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoPlayCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoPlayCount()
     {
@@ -7852,7 +7852,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets clickImageCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getClickImageCount()
     {
@@ -7876,7 +7876,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets clickDetailCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getClickDetailCount()
     {
@@ -7900,7 +7900,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets clickHeadCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getClickHeadCount()
     {
@@ -7924,7 +7924,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets clickNickCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getClickNickCount()
     {
@@ -7948,7 +7948,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets clickPoiCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getClickPoiCount()
     {
@@ -7972,7 +7972,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoInnerPlayCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoInnerPlayCount()
     {
@@ -7996,7 +7996,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lanButtonClickCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLanButtonClickCount()
     {
@@ -8020,7 +8020,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lanJumpButtonClickers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLanJumpButtonClickers()
     {
@@ -8044,7 +8044,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lanJumpButtonClickCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLanJumpButtonClickCost()
     {
@@ -8068,7 +8068,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lanJumpButtonCtr
      *
-     * @return double
+     * @return double|mixed
      */
     public function getLanJumpButtonCtr()
     {
@@ -8092,7 +8092,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lanButtonClickCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLanButtonClickCost()
     {
@@ -8116,7 +8116,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cpnClickButtonCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCpnClickButtonCount()
     {
@@ -8140,7 +8140,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cpnClickButtonUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCpnClickButtonUv()
     {
@@ -8164,7 +8164,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets keyPageUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getKeyPageUv()
     {
@@ -8188,7 +8188,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets specialPageExpUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSpecialPageExpUv()
     {
@@ -8212,7 +8212,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets specialPageExpCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSpecialPageExpCost()
     {
@@ -8236,7 +8236,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets viewCommodityPageUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getViewCommodityPageUv()
     {
@@ -8260,7 +8260,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectLeadsPurchaseCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getEffectLeadsPurchaseCount()
     {
@@ -8284,7 +8284,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets reservationUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getReservationUv()
     {
@@ -8308,7 +8308,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets overallLeadsPurchaseCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOverallLeadsPurchaseCount()
     {
@@ -8332,7 +8332,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsPurchaseCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLeadsPurchaseCount()
     {
@@ -8356,7 +8356,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsPurchaseRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getLeadsPurchaseRate()
     {
@@ -8380,7 +8380,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsPurchaseCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLeadsPurchaseCost()
     {
@@ -8404,7 +8404,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsPurchaseUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLeadsPurchaseUv()
     {
@@ -8428,7 +8428,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets validLeadsUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getValidLeadsUv()
     {
@@ -8452,7 +8452,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets phoneCallUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPhoneCallUv()
     {
@@ -8476,7 +8476,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets validPhoneUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getValidPhoneUv()
     {
@@ -8500,7 +8500,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets potentialCustomerPhoneUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPotentialCustomerPhoneUv()
     {
@@ -8524,7 +8524,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webRegisterUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebRegisterUv()
     {
@@ -8548,7 +8548,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webApplyUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebApplyUv()
     {
@@ -8572,7 +8572,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCreditUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebCreditUv()
     {
@@ -8596,7 +8596,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appApplyUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppApplyUv()
     {
@@ -8620,7 +8620,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appPreCreditUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppPreCreditUv()
     {
@@ -8644,7 +8644,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appCreditUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppCreditUv()
     {
@@ -8668,7 +8668,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appWithdrawUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppWithdrawUv()
     {
@@ -8692,7 +8692,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatAppRegisterUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatAppRegisterUv()
     {
@@ -8716,7 +8716,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets noInterestCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getNoInterestCount()
     {
@@ -8740,7 +8740,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayOrderCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstDayOrderCount()
     {
@@ -8764,7 +8764,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayOrderAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstDayOrderAmount()
     {
@@ -8788,7 +8788,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets addWishlistCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAddWishlistCount()
     {
@@ -8812,7 +8812,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlay10Count
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoOuterPlay10Count()
     {
@@ -8836,7 +8836,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlay25Count
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoOuterPlay25Count()
     {
@@ -8860,7 +8860,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlay50Count
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoOuterPlay50Count()
     {
@@ -8884,7 +8884,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlay75Count
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoOuterPlay75Count()
     {
@@ -8908,7 +8908,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlay95Count
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoOuterPlay95Count()
     {
@@ -8932,7 +8932,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlay100Count
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoOuterPlay100Count()
     {
@@ -8956,7 +8956,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlayTimeCount
      *
-     * @return double
+     * @return double|mixed
      */
     public function getVideoOuterPlayTimeCount()
     {
@@ -8980,7 +8980,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlayTimeAvgRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getVideoOuterPlayTimeAvgRate()
     {
@@ -9004,7 +9004,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlayRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getVideoOuterPlayRate()
     {
@@ -9028,7 +9028,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlayCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoOuterPlayCost()
     {
@@ -9052,7 +9052,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlayCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoOuterPlayCount()
     {
@@ -9076,7 +9076,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlay3sCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoOuterPlay3sCount()
     {
@@ -9100,7 +9100,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlay5sCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoOuterPlay5sCount()
     {
@@ -9124,7 +9124,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlay7sCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoOuterPlay7sCount()
     {
@@ -9148,7 +9148,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectLeadsPurchaseCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getEffectLeadsPurchaseCost()
     {
@@ -9172,7 +9172,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets creWebCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreWebCost()
     {
@@ -9196,7 +9196,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets creAppCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreAppCost()
     {
@@ -9220,7 +9220,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets preCreWebCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPreCreWebCost()
     {
@@ -9244,7 +9244,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets preCreAppCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPreCreAppCost()
     {
@@ -9268,7 +9268,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets storeVisitor
      *
-     * @return int
+     * @return int|mixed
      */
     public function getStoreVisitor()
     {
@@ -9292,7 +9292,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets tryOutUser
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTryOutUser()
     {
@@ -9316,7 +9316,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets consultLeaveInfoUsers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getConsultLeaveInfoUsers()
     {
@@ -9340,7 +9340,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activePageViews
      *
-     * @return int
+     * @return int|mixed
      */
     public function getActivePageViews()
     {
@@ -9364,7 +9364,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activePageViewers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getActivePageViewers()
     {
@@ -9388,7 +9388,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activePageInteractionAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getActivePageInteractionAmount()
     {
@@ -9412,7 +9412,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activePageInteractionUsers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getActivePageInteractionUsers()
     {
@@ -9436,7 +9436,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets joinChatGroupAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getJoinChatGroupAmount()
     {
@@ -9460,7 +9460,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets joinChatGroupNumberOfPeople
      *
-     * @return int
+     * @return int|mixed
      */
     public function getJoinChatGroupNumberOfPeople()
     {
@@ -9484,7 +9484,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets joinChatGroupCostByPeople
      *
-     * @return int
+     * @return int|mixed
      */
     public function getJoinChatGroupCostByPeople()
     {
@@ -9508,7 +9508,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets guideToFollowPageViews
      *
-     * @return int
+     * @return int|mixed
      */
     public function getGuideToFollowPageViews()
     {
@@ -9532,7 +9532,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets guideToFollowPageViewers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getGuideToFollowPageViewers()
     {
@@ -9556,7 +9556,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets guideToFollowPageInteractionAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getGuideToFollowPageInteractionAmount()
     {
@@ -9580,7 +9580,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets guideToFollowPageInteractionUsers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getGuideToFollowPageInteractionUsers()
     {
@@ -9604,7 +9604,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameRegisterUsers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameRegisterUsers()
     {
@@ -9628,7 +9628,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameRegisterCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameRegisterCost()
     {
@@ -9652,7 +9652,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameRegisterRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameRegisterRate()
     {
@@ -9676,7 +9676,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameAdMonetizationUsers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameAdMonetizationUsers()
     {
@@ -9700,7 +9700,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayingCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGamePayingCount()
     {
@@ -9724,7 +9724,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayingAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGamePayingAmount()
     {
@@ -9748,7 +9748,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameFirstPayingUsers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameFirstPayingUsers()
     {
@@ -9772,7 +9772,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameCreateRoleUsers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameCreateRoleUsers()
     {
@@ -9796,7 +9796,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameCreateRoleCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameCreateRoleCost()
     {
@@ -9820,7 +9820,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameRetentionD1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameRetentionD1()
     {
@@ -9844,7 +9844,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameKeyPageViewers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameKeyPageViewers()
     {
@@ -9868,7 +9868,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameKeyPageViewCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameKeyPageViewCost()
     {
@@ -9892,7 +9892,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameAdMonetizationAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameAdMonetizationAmount()
     {
@@ -9916,7 +9916,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayingAmountByUpload
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGamePayingAmountByUpload()
     {
@@ -9940,7 +9940,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayingCountByUpload
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGamePayingCountByUpload()
     {
@@ -9964,7 +9964,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets consultLeaveInfoCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getConsultLeaveInfoCost()
     {
@@ -9988,7 +9988,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets purchaseAmountWithCoupon
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPurchaseAmountWithCoupon()
     {
@@ -10012,7 +10012,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets purchaseAmountWithCouponCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPurchaseAmountWithCouponCost()
     {
@@ -10036,7 +10036,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayingAmountClickD1ByUpload
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGamePayingAmountClickD1ByUpload()
     {
@@ -10060,7 +10060,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameRetentionD1Rate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameRetentionD1Rate()
     {
@@ -10084,7 +10084,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameRetentionD1Cost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameRetentionD1Cost()
     {
@@ -10108,7 +10108,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets keyPageViewRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getKeyPageViewRate()
     {
@@ -10132,7 +10132,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatCostStage1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatCostStage1()
     {
@@ -10156,7 +10156,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatCostStage2
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatCostStage2()
     {
@@ -10180,7 +10180,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatDeepConversionsCountStage1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatDeepConversionsCountStage1()
     {
@@ -10204,7 +10204,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatDeepConversionsCountStage2
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatDeepConversionsCountStage2()
     {
@@ -10228,7 +10228,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatShallowConversionsCountStage1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatShallowConversionsCountStage1()
     {
@@ -10252,7 +10252,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatShallowConversionsCountStage2
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatShallowConversionsCountStage2()
     {
@@ -10276,7 +10276,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activateRegisterRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getActivateRegisterRate()
     {
@@ -10300,7 +10300,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets keyBehaviorConversionsCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getKeyBehaviorConversionsCount()
     {
@@ -10324,7 +10324,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets keyBehaviorConversionsCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getKeyBehaviorConversionsCost()
     {
@@ -10348,7 +10348,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets keyBehaviorConversionsRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getKeyBehaviorConversionsRate()
     {
@@ -10372,7 +10372,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayOrderRoi
      *
-     * @return double
+     * @return double|mixed
      */
     public function getFirstDayOrderRoi()
     {
@@ -10396,7 +10396,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameAdMonetizationCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameAdMonetizationCost()
     {
@@ -10420,7 +10420,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameAdMonetizationRoi
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameAdMonetizationRoi()
     {
@@ -10444,7 +10444,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameAdMonetizationArpu
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameAdMonetizationArpu()
     {
@@ -10468,7 +10468,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayingRoi
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGamePayingRoi()
     {
@@ -10492,7 +10492,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayingArpu
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGamePayingArpu()
     {
@@ -10516,7 +10516,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets requestConversionsCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRequestConversionsCount()
     {
@@ -10540,7 +10540,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets requestConversionsCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRequestConversionsCost()
     {
@@ -10564,7 +10564,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets incomeVal1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getIncomeVal1()
     {
@@ -10588,7 +10588,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets incomeVal3
      *
-     * @return int
+     * @return int|mixed
      */
     public function getIncomeVal3()
     {
@@ -10612,7 +10612,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets incomeVal7
      *
-     * @return int
+     * @return int|mixed
      */
     public function getIncomeVal7()
     {
@@ -10636,7 +10636,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets incomeVal14
      *
-     * @return int
+     * @return int|mixed
      */
     public function getIncomeVal14()
     {
@@ -10660,7 +10660,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets incomeRoi1
      *
-     * @return double
+     * @return double|mixed
      */
     public function getIncomeRoi1()
     {
@@ -10684,7 +10684,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets incomeRoi3
      *
-     * @return double
+     * @return double|mixed
      */
     public function getIncomeRoi3()
     {
@@ -10708,7 +10708,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets incomeRoi7
      *
-     * @return double
+     * @return double|mixed
      */
     public function getIncomeRoi7()
     {
@@ -10732,7 +10732,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets incomeRoi14
      *
-     * @return double
+     * @return double|mixed
      */
     public function getIncomeRoi14()
     {
@@ -10756,7 +10756,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activatedTotalPaymentCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getActivatedTotalPaymentCost()
     {
@@ -10780,7 +10780,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets paymentAmountActivatedD3
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPaymentAmountActivatedD3()
     {
@@ -10804,7 +10804,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets paymentAmountActivatedD7
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPaymentAmountActivatedD7()
     {
@@ -10828,7 +10828,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets paymentAmountActivatedD14
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPaymentAmountActivatedD14()
     {
@@ -10852,7 +10852,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets paymentAmountActivatedD30
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPaymentAmountActivatedD30()
     {
@@ -10876,7 +10876,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayPayCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstDayPayCount()
     {
@@ -10900,7 +10900,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayPayCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstDayPayCost()
     {
@@ -10924,7 +10924,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayFirstPayCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstDayFirstPayCost()
     {
@@ -10948,7 +10948,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayFirstPayCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstDayFirstPayCount()
     {
@@ -10972,7 +10972,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets paymentCostActivatedD1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPaymentCostActivatedD1()
     {
@@ -10996,7 +10996,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayPayAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstDayPayAmount()
     {
@@ -11020,7 +11020,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets roiActivatedD1
      *
-     * @return double
+     * @return double|mixed
      */
     public function getRoiActivatedD1()
     {
@@ -11044,7 +11044,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets roiActivatedD3
      *
-     * @return double
+     * @return double|mixed
      */
     public function getRoiActivatedD3()
     {
@@ -11068,7 +11068,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets roiActivatedD7
      *
-     * @return double
+     * @return double|mixed
      */
     public function getRoiActivatedD7()
     {
@@ -11092,7 +11092,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets roiActivatedD14
      *
-     * @return double
+     * @return double|mixed
      */
     public function getRoiActivatedD14()
     {
@@ -11116,7 +11116,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayAdPurArppuCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstDayAdPurArppuCost()
     {
@@ -11140,7 +11140,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayPayAmountArpu
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstDayPayAmountArpu()
     {
@@ -11164,7 +11164,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayPayAmountArppu
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstDayPayAmountArppu()
     {
@@ -11188,7 +11188,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets roiActivatedD30
      *
-     * @return double
+     * @return double|mixed
      */
     public function getRoiActivatedD30()
     {
@@ -11212,7 +11212,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayFirstPayRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getFirstDayFirstPayRate()
     {
@@ -11236,7 +11236,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameFirstDayAdMonetizationUsers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameFirstDayAdMonetizationUsers()
     {
@@ -11260,7 +11260,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameFirstDayAdMonetizationAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameFirstDayAdMonetizationAmount()
     {
@@ -11284,7 +11284,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameFirstDayAdPayingCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameFirstDayAdPayingCost()
     {
@@ -11308,7 +11308,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameIncomeRoi1
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameIncomeRoi1()
     {
@@ -11332,7 +11332,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameFirstDayAdPayingArpu
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameFirstDayAdPayingArpu()
     {
@@ -11356,7 +11356,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayingUsersD1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGamePayingUsersD1()
     {
@@ -11380,7 +11380,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayingAmountD1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGamePayingAmountD1()
     {
@@ -11404,7 +11404,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameFirstDayPayingRoi
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameFirstDayPayingRoi()
     {
@@ -11428,7 +11428,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayingAmountD1ByUpload
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGamePayingAmountD1ByUpload()
     {
@@ -11452,7 +11452,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets mixedMonetizationRoiD1
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMixedMonetizationRoiD1()
     {
@@ -11476,7 +11476,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets mixedMonetizationRoiD3
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMixedMonetizationRoiD3()
     {
@@ -11500,7 +11500,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets mixedMonetizationRoiD7
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMixedMonetizationRoiD7()
     {
@@ -11524,7 +11524,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets mixedMonetizationRoiD14
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMixedMonetizationRoiD14()
     {
@@ -11548,7 +11548,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameMixedMonetizationRoiD1
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameMixedMonetizationRoiD1()
     {
@@ -11572,7 +11572,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameMixedMonetizationRoiD1ByReporting
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameMixedMonetizationRoiD1ByReporting()
     {
@@ -11596,7 +11596,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameMixedMonetizationRoiD3
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameMixedMonetizationRoiD3()
     {
@@ -11620,7 +11620,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameMixedMonetizationRoiD3ByReporting
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameMixedMonetizationRoiD3ByReporting()
     {
@@ -11644,7 +11644,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameMixedMonetizationRoiD7
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameMixedMonetizationRoiD7()
     {
@@ -11668,7 +11668,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameMixedMonetizationRoiD7ByReporting
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameMixedMonetizationRoiD7ByReporting()
     {
@@ -11692,7 +11692,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameMixedMonetizationRoiD14
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameMixedMonetizationRoiD14()
     {
@@ -11716,7 +11716,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameMixedMonetizationRoiD14ByReporting
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameMixedMonetizationRoiD14ByReporting()
     {
@@ -11740,7 +11740,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adPayingUsersD1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdPayingUsersD1()
     {
@@ -11764,7 +11764,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adPayingCostD1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdPayingCostD1()
     {
@@ -11788,7 +11788,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adPurArpuCostD1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdPurArpuCostD1()
     {
@@ -11812,7 +11812,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adMonetizationPenetrationRatD1
      *
-     * @return double
+     * @return double|mixed
      */
     public function getAdMonetizationPenetrationRatD1()
     {
@@ -11836,7 +11836,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayingArpuD1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGamePayingArpuD1()
     {
@@ -11860,7 +11860,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets campaignId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampaignId()
     {
@@ -11884,7 +11884,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets campaignName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCampaignName()
     {
@@ -11908,7 +11908,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -11932,7 +11932,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdgroupName()
     {
@@ -11956,7 +11956,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets previewConversionsCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPreviewConversionsCount()
     {
@@ -11980,7 +11980,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets previewDeepConversionsCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPreviewDeepConversionsCount()
     {
@@ -12004,7 +12004,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdId()
     {
@@ -12028,7 +12028,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdName()
     {
@@ -12052,7 +12052,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPromotedObjectType()
     {
@@ -12076,7 +12076,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPromotedObjectId()
     {
@@ -12100,7 +12100,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets unionPositionId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUnionPositionId()
     {
@@ -12124,7 +12124,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets industryParentName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIndustryParentName()
     {
@@ -12148,7 +12148,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets placementName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPlacementName()
     {
@@ -12172,7 +12172,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets templateId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTemplateId()
     {
@@ -12196,7 +12196,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets addToCartCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAddToCartCost()
     {
@@ -12220,7 +12220,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webAddToCartRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getWebAddToCartRate()
     {
@@ -12244,7 +12244,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appAddToCartRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getAppAddToCartRate()
     {
@@ -12268,7 +12268,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets isExpandTargeting
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getIsExpandTargeting()
     {
@@ -12292,7 +12292,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets siteSet
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSiteSet()
     {
@@ -12316,7 +12316,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets materialId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMaterialId()
     {
@@ -12340,7 +12340,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets signature
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSignature()
     {
@@ -12364,7 +12364,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productCatalogId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProductCatalogId()
     {
@@ -12388,7 +12388,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productOuterId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductOuterId()
     {
@@ -12412,7 +12412,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets brandId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBrandId()
     {
@@ -12436,7 +12436,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productSetId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProductSetId()
     {
@@ -12460,7 +12460,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets shopId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getShopId()
     {
@@ -12484,7 +12484,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstCategoryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstCategoryId()
     {
@@ -12508,7 +12508,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets secondCategoryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSecondCategoryId()
     {
@@ -12532,7 +12532,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets thirdCategoryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getThirdCategoryId()
     {
@@ -12556,7 +12556,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatAccountId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatAccountId()
     {
@@ -12580,7 +12580,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatAgencyId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatAgencyId()
     {
@@ -12604,7 +12604,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets costDeviationRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCostDeviationRate()
     {
@@ -12628,7 +12628,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets compensationAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCompensationAmount()
     {
@@ -12652,7 +12652,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets viewUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getViewUserCount()
     {
@@ -12676,7 +12676,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets avgViewPerUser
      *
-     * @return double
+     * @return double|mixed
      */
     public function getAvgViewPerUser()
     {
@@ -12700,7 +12700,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets clickUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getClickUserCount()
     {
@@ -12724,7 +12724,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets imageClickUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getImageClickUserCount()
     {
@@ -12748,7 +12748,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoClickUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoClickUserCount()
     {
@@ -12772,7 +12772,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets linkClickUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLinkClickUserCount()
     {
@@ -12796,7 +12796,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets portraitClickUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPortraitClickUserCount()
     {
@@ -12820,7 +12820,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets nicknameClickUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getNicknameClickUserCount()
     {
@@ -12844,7 +12844,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets poiClickUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPoiClickUserCount()
     {
@@ -12868,7 +12868,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets platformKeyPageViewUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPlatformKeyPageViewUserCount()
     {
@@ -12892,7 +12892,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets platformKeyPageAvgViewPerUser
      *
-     * @return double
+     * @return double|mixed
      */
     public function getPlatformKeyPageAvgViewPerUser()
     {
@@ -12916,7 +12916,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets platformKeyPageViewDuration
      *
-     * @return double
+     * @return double|mixed
      */
     public function getPlatformKeyPageViewDuration()
     {
@@ -12940,7 +12940,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cpnClickButtonCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCpnClickButtonCost()
     {
@@ -12964,7 +12964,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets praiseUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPraiseUserCount()
     {
@@ -12988,7 +12988,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets commentUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCommentUserCount()
     {
@@ -13012,7 +13012,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets orderCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOrderCount()
     {
@@ -13036,7 +13036,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets orderRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getOrderRate()
     {
@@ -13060,7 +13060,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets questReservationPvCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getQuestReservationPvCost()
     {
@@ -13084,7 +13084,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getLeadsRate()
     {
@@ -13108,7 +13108,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLeadsUserCount()
     {
@@ -13132,7 +13132,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLeadsCost()
     {
@@ -13156,7 +13156,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsUserRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getLeadsUserRate()
     {
@@ -13180,7 +13180,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets validLeadsCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getValidLeadsCost()
     {
@@ -13204,7 +13204,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets validLeadsRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getValidLeadsRate()
     {
@@ -13228,7 +13228,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageConsultUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageConsultUserCount()
     {
@@ -13252,7 +13252,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets validPageConsultUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getValidPageConsultUserCount()
     {
@@ -13276,7 +13276,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets withdrDepWebUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWithdrDepWebUserCount()
     {
@@ -13300,7 +13300,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatMinigameRegisterCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatMinigameRegisterCost()
     {
@@ -13324,7 +13324,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatMinigameRegisterRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getWechatMinigameRegisterRate()
     {
@@ -13348,7 +13348,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatMinigameArpu
      *
-     * @return double
+     * @return double|mixed
      */
     public function getWechatMinigameArpu()
     {
@@ -13372,7 +13372,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatMinigameRetentionCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatMinigameRetentionCount()
     {
@@ -13396,7 +13396,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatMinigameCheckoutCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatMinigameCheckoutCount()
     {
@@ -13420,7 +13420,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatMinigameCheckoutAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatMinigameCheckoutAmount()
     {
@@ -13444,7 +13444,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountFollowCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOfficialAccountFollowCount()
     {
@@ -13468,7 +13468,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountFollowCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOfficialAccountFollowCost()
     {
@@ -13492,7 +13492,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountFollowRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getOfficialAccountFollowRate()
     {
@@ -13516,7 +13516,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountRegisterUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOfficialAccountRegisterUserCount()
     {
@@ -13540,7 +13540,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountRegisterRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getOfficialAccountRegisterRate()
     {
@@ -13564,7 +13564,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountRegisterCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOfficialAccountRegisterCost()
     {
@@ -13588,7 +13588,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountRegisterAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOfficialAccountRegisterAmount()
     {
@@ -13612,7 +13612,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountRegisterRoi
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOfficialAccountRegisterRoi()
     {
@@ -13636,7 +13636,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountApplyCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOfficialAccountApplyCount()
     {
@@ -13660,7 +13660,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountApplyUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOfficialAccountApplyUserCount()
     {
@@ -13684,7 +13684,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountApplyRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getOfficialAccountApplyRate()
     {
@@ -13708,7 +13708,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountApplyCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOfficialAccountApplyCost()
     {
@@ -13732,7 +13732,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountApplyAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOfficialAccountApplyAmount()
     {
@@ -13756,7 +13756,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountApplyRoi
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOfficialAccountApplyRoi()
     {
@@ -13780,7 +13780,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountOrderCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOfficialAccountOrderCount()
     {
@@ -13804,7 +13804,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountFirstDayOrderCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOfficialAccountFirstDayOrderCount()
     {
@@ -13828,7 +13828,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountOrderUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOfficialAccountOrderUserCount()
     {
@@ -13852,7 +13852,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountOrderRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getOfficialAccountOrderRate()
     {
@@ -13876,7 +13876,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountOrderCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOfficialAccountOrderCost()
     {
@@ -13900,7 +13900,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountOrderAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOfficialAccountOrderAmount()
     {
@@ -13924,7 +13924,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountFirstDayOrderAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOfficialAccountFirstDayOrderAmount()
     {
@@ -13948,7 +13948,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountOrderRoi
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOfficialAccountOrderRoi()
     {
@@ -13972,7 +13972,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountConsultCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOfficialAccountConsultCount()
     {
@@ -13996,7 +13996,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountReaderCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOfficialAccountReaderCount()
     {
@@ -14020,7 +14020,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountCreditApplyUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOfficialAccountCreditApplyUserCount()
     {
@@ -14044,7 +14044,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountCreditUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOfficialAccountCreditUserCount()
     {
@@ -14068,7 +14068,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets couponGetCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCouponGetCost()
     {
@@ -14092,7 +14092,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets couponGetRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCouponGetRate()
     {
@@ -14116,7 +14116,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets couponUseCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCouponUseCount()
     {
@@ -14140,7 +14140,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets forwardUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getForwardUserCount()
     {
@@ -14164,7 +14164,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlayUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoOuterPlayUserCount()
     {
@@ -14188,7 +14188,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoInnerPlayUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoInnerPlayUserCount()
     {

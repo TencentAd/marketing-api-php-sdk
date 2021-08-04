@@ -442,7 +442,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets age
      *
-     * @return \TencentAds\Model\AgeStruct[]
+     * @return \TencentAds\Model\AgeStruct[]|mixed
      */
     public function getAge()
     {
@@ -466,7 +466,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets gender
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getGender()
     {
@@ -490,7 +490,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets education
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getEducation()
     {
@@ -514,7 +514,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets maritalStatus
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getMaritalStatus()
     {
@@ -538,7 +538,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets workingStatus
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getWorkingStatus()
     {
@@ -562,7 +562,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets geoLocation
      *
-     * @return \TencentAds\Model\GeoLocations
+     * @return \TencentAds\Model\GeoLocations|mixed
      */
     public function getGeoLocation()
     {
@@ -586,7 +586,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets userOs
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getUserOs()
     {
@@ -610,7 +610,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets newDevice
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getNewDevice()
     {
@@ -634,7 +634,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets devicePrice
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getDevicePrice()
     {
@@ -658,7 +658,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets deviceBrandModel
      *
-     * @return \TencentAds\Model\DeviceBrandModel
+     * @return \TencentAds\Model\DeviceBrandModel|mixed
      */
     public function getDeviceBrandModel()
     {
@@ -682,7 +682,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets networkType
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getNetworkType()
     {
@@ -706,7 +706,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets networkOperator
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getNetworkOperator()
     {
@@ -730,7 +730,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets networkScene
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getNetworkScene()
     {
@@ -754,7 +754,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets dressingIndex
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getDressingIndex()
     {
@@ -778,7 +778,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets uvIndex
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getUvIndex()
     {
@@ -802,7 +802,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets makeupIndex
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getMakeupIndex()
     {
@@ -826,7 +826,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets climate
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getClimate()
     {
@@ -850,7 +850,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets temperature
      *
-     * @return \TencentAds\Model\TemperatureStruct[]
+     * @return \TencentAds\Model\TemperatureStruct[]|mixed
      */
     public function getTemperature()
     {
@@ -874,7 +874,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets airQualityIndex
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getAirQualityIndex()
     {
@@ -898,7 +898,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets appInstallStatus
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getAppInstallStatus()
     {
@@ -922,7 +922,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets consumptionStatus
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getConsumptionStatus()
     {
@@ -946,7 +946,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets gameConsumptionLevel
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getGameConsumptionLevel()
     {
@@ -970,7 +970,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets residentialCommunityPrice
      *
-     * @return \TencentAds\Model\ResidentialCommunityPriceStruct[]
+     * @return \TencentAds\Model\ResidentialCommunityPriceStruct[]|mixed
      */
     public function getResidentialCommunityPrice()
     {
@@ -994,7 +994,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets financialSituation
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getFinancialSituation()
     {
@@ -1018,7 +1018,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets consumptionType
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getConsumptionType()
     {
@@ -1042,7 +1042,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets wechatAdBehavior
      *
-     * @return \TencentAds\Model\WechatAdBehavior
+     * @return \TencentAds\Model\WechatAdBehavior|mixed
      */
     public function getWechatAdBehavior()
     {
@@ -1066,7 +1066,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets customAudience
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getCustomAudience()
     {
@@ -1090,7 +1090,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets excludedCustomAudience
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getExcludedCustomAudience()
     {
@@ -1114,7 +1114,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets behaviorOrInterest
      *
-     * @return \TencentAds\Model\BehaviorOrInterest
+     * @return \TencentAds\Model\BehaviorOrInterest|mixed
      */
     public function getBehaviorOrInterest()
     {
@@ -1138,7 +1138,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets wechatOfficialAccountCategory
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getWechatOfficialAccountCategory()
     {
@@ -1162,7 +1162,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets mobileUnionCategory
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getMobileUnionCategory()
     {
@@ -1186,7 +1186,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets businessInterest
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getBusinessInterest()
     {
@@ -1210,7 +1210,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets keyword
      *
-     * @return \TencentAds\Model\Keyword
+     * @return \TencentAds\Model\Keyword|mixed
      */
     public function getKeyword()
     {
@@ -1234,7 +1234,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets appBehavior
      *
-     * @return \TencentAds\Model\AppBehavior
+     * @return \TencentAds\Model\AppBehavior|mixed
      */
     public function getAppBehavior()
     {
@@ -1258,7 +1258,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets paidUser
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getPaidUser()
     {
@@ -1282,7 +1282,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets deprecatedCustomAudience
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getDeprecatedCustomAudience()
     {
@@ -1306,7 +1306,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets deprecatedExcludedCustomAudience
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getDeprecatedExcludedCustomAudience()
     {
@@ -1330,7 +1330,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets deprecatedRegion
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getDeprecatedRegion()
     {
@@ -1354,7 +1354,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameQqStatus
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getMiniGameQqStatus()
     {
@@ -1378,7 +1378,7 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets excludedConvertedAudience
      *
-     * @return \TencentAds\Model\ExcludedConvertedAudienceStruct
+     * @return \TencentAds\Model\ExcludedConvertedAudienceStruct|mixed
      */
     public function getExcludedConvertedAudience()
     {

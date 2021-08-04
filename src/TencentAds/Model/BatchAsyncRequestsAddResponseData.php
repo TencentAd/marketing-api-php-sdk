@@ -207,7 +207,7 @@ class BatchAsyncRequestsAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets taskId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTaskId()
     {

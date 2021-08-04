@@ -250,7 +250,7 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -274,7 +274,7 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets balance
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBalance()
     {
@@ -298,7 +298,7 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets time
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTime()
     {
@@ -322,7 +322,7 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets externalBillNo
      *
-     * @return string
+     * @return string|mixed
      */
     public function getExternalBillNo()
     {
@@ -346,7 +346,7 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets tradeTypeExt
      *
-     * @return \TencentAds\Model\TradeTypeExt
+     * @return \TencentAds\Model\TradeTypeExt|mixed
      */
     public function getTradeTypeExt()
     {
@@ -370,7 +370,7 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets amount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAmount()
     {
@@ -394,7 +394,7 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -418,7 +418,7 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets fundType
      *
-     * @return \TencentAds\Model\AccountTypeMap
+     * @return \TencentAds\Model\AccountTypeMap|mixed
      */
     public function getFundType()
     {

@@ -96,7 +96,7 @@ class ShopApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ShopAddResponse
+     * @return \TencentAds\Model\ShopAddResponse|mixed
      */
     public function shopAdd($data)
     {
@@ -378,7 +378,7 @@ class ShopApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ShopGetResponse
+     * @return \TencentAds\Model\ShopGetResponse|mixed
      */
     public function shopGet($data)
     {
@@ -660,7 +660,7 @@ class ShopApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ShopUpdateResponse
+     * @return \TencentAds\Model\ShopUpdateResponse|mixed
      */
     public function shopUpdate($data)
     {

@@ -98,7 +98,7 @@ class AdcreativesRelatedCapabilityApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdcreativesRelatedCapabilityGetResponse
+     * @return \TencentAds\Model\AdcreativesRelatedCapabilityGetResponse|mixed
      */
     public function adcreativesRelatedCapabilityGet($accountId, $adId, $fields = null)
     {

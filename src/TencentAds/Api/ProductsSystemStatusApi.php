@@ -101,7 +101,7 @@ class ProductsSystemStatusApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ProductsSystemStatusGetResponse
+     * @return \TencentAds\Model\ProductsSystemStatusGetResponse|mixed
      */
     public function productsSystemStatusGet($accountId, $productCatalogId, $feedId = null, $page = null, $pageSize = null, $fields = null)
     {

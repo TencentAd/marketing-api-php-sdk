@@ -231,7 +231,7 @@ class WechatFundTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -255,7 +255,7 @@ class WechatFundTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets fundType
      *
-     * @return \TencentAds\Model\WechatAccountFundType
+     * @return \TencentAds\Model\WechatAccountFundType|mixed
      */
     public function getFundType()
     {
@@ -279,7 +279,7 @@ class WechatFundTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets amount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAmount()
     {
@@ -303,7 +303,7 @@ class WechatFundTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets transferType
      *
-     * @return \TencentAds\Model\TransferType
+     * @return \TencentAds\Model\TransferType|mixed
      */
     public function getTransferType()
     {
@@ -327,7 +327,7 @@ class WechatFundTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets operator
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOperator()
     {

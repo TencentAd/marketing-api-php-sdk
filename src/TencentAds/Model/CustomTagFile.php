@@ -280,7 +280,7 @@ class CustomTagFile implements ModelInterface, ArrayAccess
     /**
      * Gets tagId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTagId()
     {
@@ -304,7 +304,7 @@ class CustomTagFile implements ModelInterface, ArrayAccess
     /**
      * Gets customTagFileId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCustomTagFileId()
     {
@@ -328,7 +328,7 @@ class CustomTagFile implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return string
+     * @return string|mixed
      */
     public function getName()
     {
@@ -352,7 +352,7 @@ class CustomTagFile implements ModelInterface, ArrayAccess
     /**
      * Gets userIdType
      *
-     * @return \TencentAds\Model\UserIdType
+     * @return \TencentAds\Model\UserIdType|mixed
      */
     public function getUserIdType()
     {
@@ -376,7 +376,7 @@ class CustomTagFile implements ModelInterface, ArrayAccess
     /**
      * Gets operationType
      *
-     * @return \TencentAds\Model\OperationType
+     * @return \TencentAds\Model\OperationType|mixed
      */
     public function getOperationType()
     {
@@ -400,7 +400,7 @@ class CustomTagFile implements ModelInterface, ArrayAccess
     /**
      * Gets openAppId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOpenAppId()
     {
@@ -424,7 +424,7 @@ class CustomTagFile implements ModelInterface, ArrayAccess
     /**
      * Gets processStatus
      *
-     * @return \TencentAds\Model\FileProcessStatus
+     * @return \TencentAds\Model\FileProcessStatus|mixed
      */
     public function getProcessStatus()
     {
@@ -448,7 +448,7 @@ class CustomTagFile implements ModelInterface, ArrayAccess
     /**
      * Gets processCode
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProcessCode()
     {
@@ -472,7 +472,7 @@ class CustomTagFile implements ModelInterface, ArrayAccess
     /**
      * Gets errorMessage
      *
-     * @return string
+     * @return string|mixed
      */
     public function getErrorMessage()
     {
@@ -496,7 +496,7 @@ class CustomTagFile implements ModelInterface, ArrayAccess
     /**
      * Gets lineCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLineCount()
     {
@@ -520,7 +520,7 @@ class CustomTagFile implements ModelInterface, ArrayAccess
     /**
      * Gets validLineCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getValidLineCount()
     {
@@ -544,7 +544,7 @@ class CustomTagFile implements ModelInterface, ArrayAccess
     /**
      * Gets userCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUserCount()
     {
@@ -568,7 +568,7 @@ class CustomTagFile implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCreatedTime()
     {

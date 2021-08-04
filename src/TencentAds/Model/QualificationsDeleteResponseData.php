@@ -207,7 +207,7 @@ class QualificationsDeleteResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets qualificationId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getQualificationId()
     {

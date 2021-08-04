@@ -231,7 +231,7 @@ class BidSimulationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -255,7 +255,7 @@ class BidSimulationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets reqType
      *
-     * @return int
+     * @return int|mixed
      */
     public function getReqType()
     {
@@ -279,7 +279,7 @@ class BidSimulationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets optimizationGoalLevel
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOptimizationGoalLevel()
     {
@@ -303,7 +303,7 @@ class BidSimulationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -327,7 +327,7 @@ class BidSimulationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets bidList
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getBidList()
     {

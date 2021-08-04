@@ -214,7 +214,7 @@ class AdcreativeLabelledImg implements ModelInterface, ArrayAccess
     /**
      * Gets image
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImage()
     {
@@ -238,7 +238,7 @@ class AdcreativeLabelledImg implements ModelInterface, ArrayAccess
     /**
      * Gets label
      *
-     * @return \TencentAds\Model\AdcreativeLabel[]
+     * @return \TencentAds\Model\AdcreativeLabel[]|mixed
      */
     public function getLabel()
     {

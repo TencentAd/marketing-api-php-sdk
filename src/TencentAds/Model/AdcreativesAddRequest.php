@@ -423,7 +423,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets campaignId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampaignId()
     {
@@ -447,7 +447,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets adcreativeName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdcreativeName()
     {
@@ -471,7 +471,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObjectType
+     * @return \TencentAds\Model\PromotedObjectType|mixed
      */
     public function getPromotedObjectType()
     {
@@ -495,7 +495,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets pageType
      *
-     * @return \TencentAds\Model\DestinationType
+     * @return \TencentAds\Model\DestinationType|mixed
      */
     public function getPageType()
     {
@@ -519,7 +519,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets automaticSiteEnabled
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getAutomaticSiteEnabled()
     {
@@ -543,7 +543,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets siteSet
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getSiteSet()
     {
@@ -567,7 +567,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets pageSpec
      *
-     * @return \TencentAds\Model\PageSpec
+     * @return \TencentAds\Model\PageSpec|mixed
      */
     public function getPageSpec()
     {
@@ -591,7 +591,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets linkPageType
      *
-     * @return \TencentAds\Model\LinkPageType
+     * @return \TencentAds\Model\LinkPageType|mixed
      */
     public function getLinkPageType()
     {
@@ -615,7 +615,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets linkNameType
      *
-     * @return \TencentAds\Model\LinkUrlLinkNameType
+     * @return \TencentAds\Model\LinkUrlLinkNameType|mixed
      */
     public function getLinkNameType()
     {
@@ -639,7 +639,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets linkPageSpec
      *
-     * @return \TencentAds\Model\LinkPageSpec
+     * @return \TencentAds\Model\LinkPageSpec|mixed
      */
     public function getLinkPageSpec()
     {
@@ -663,7 +663,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets conversionDataType
      *
-     * @return \TencentAds\Model\ConversionDataType
+     * @return \TencentAds\Model\ConversionDataType|mixed
      */
     public function getConversionDataType()
     {
@@ -687,7 +687,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets conversionTargetType
      *
-     * @return \TencentAds\Model\ConversionTargetType
+     * @return \TencentAds\Model\ConversionTargetType|mixed
      */
     public function getConversionTargetType()
     {
@@ -711,7 +711,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets qqMiniGameTrackingQueryString
      *
-     * @return string
+     * @return string|mixed
      */
     public function getQqMiniGameTrackingQueryString()
     {
@@ -735,7 +735,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets deepLinkUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDeepLinkUrl()
     {
@@ -759,7 +759,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets androidDeepLinkAppId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAndroidDeepLinkAppId()
     {
@@ -783,7 +783,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets iosDeepLinkAppId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIosDeepLinkAppId()
     {
@@ -807,7 +807,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets universalLinkUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUniversalLinkUrl()
     {
@@ -831,7 +831,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPromotedObjectId()
     {
@@ -855,7 +855,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets profileId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProfileId()
     {
@@ -879,7 +879,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets shareContentSpec
      *
-     * @return \TencentAds\Model\ShareContentSpec
+     * @return \TencentAds\Model\ShareContentSpec|mixed
      */
     public function getShareContentSpec()
     {
@@ -903,7 +903,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicAdcreativeSpec
      *
-     * @return \TencentAds\Model\DynamicAdcreativeSpec
+     * @return \TencentAds\Model\DynamicAdcreativeSpec|mixed
      */
     public function getDynamicAdcreativeSpec()
     {
@@ -927,7 +927,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets componentId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getComponentId()
     {
@@ -951,7 +951,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets unionMarketSwitch
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getUnionMarketSwitch()
     {
@@ -975,7 +975,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets playablePageMaterialId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPlayablePageMaterialId()
     {
@@ -999,7 +999,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets videoEndPage
      *
-     * @return \TencentAds\Model\VideoEndPageSpec
+     * @return \TencentAds\Model\VideoEndPageSpec|mixed
      */
     public function getVideoEndPage()
     {
@@ -1023,7 +1023,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets feedsVideoCommentSwitch
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getFeedsVideoCommentSwitch()
     {
@@ -1047,7 +1047,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets webviewUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWebviewUrl()
     {
@@ -1071,7 +1071,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets simpleCanvasSubType
      *
-     * @return \TencentAds\Model\SimpleCanvasSubType
+     * @return \TencentAds\Model\SimpleCanvasSubType|mixed
      */
     public function getSimpleCanvasSubType()
     {
@@ -1095,7 +1095,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets floatingZone
      *
-     * @return \TencentAds\Model\FloatingZone
+     * @return \TencentAds\Model\FloatingZone|mixed
      */
     public function getFloatingZone()
     {
@@ -1119,7 +1119,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets marketingPendantImageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMarketingPendantImageId()
     {
@@ -1143,7 +1143,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets countdownSwitch
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getCountdownSwitch()
     {
@@ -1167,7 +1167,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets pageTrackUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPageTrackUrl()
     {
@@ -1191,7 +1191,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets barrageList
      *
-     * @return \TencentAds\Model\BarrageListCreateStruct[]
+     * @return \TencentAds\Model\BarrageListCreateStruct[]|mixed
      */
     public function getBarrageList()
     {
@@ -1215,7 +1215,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets appGiftPackCode
      *
-     * @return \TencentAds\Model\AppGiftPackCode
+     * @return \TencentAds\Model\AppGiftPackCode|mixed
      */
     public function getAppGiftPackCode()
     {
@@ -1239,7 +1239,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -1263,7 +1263,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets adcreativeTemplateId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdcreativeTemplateId()
     {
@@ -1287,7 +1287,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets adcreativeElements
      *
-     * @return \TencentAds\Model\AdcreativeCreativeElementsMp
+     * @return \TencentAds\Model\AdcreativeCreativeElementsMp|mixed
      */
     public function getAdcreativeElements()
     {

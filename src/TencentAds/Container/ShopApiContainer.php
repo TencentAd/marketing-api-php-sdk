@@ -30,7 +30,7 @@ class ShopApiContainer extends ApiContainer
     /**
      * Handle ShopApi shopAdd function
      * @param array params
-     * @return \TencentAds\Model\ShopAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class ShopApiContainer extends ApiContainer
     /**
      * Handle ShopApi shopGet function
      * @param array params
-     * @return \TencentAds\Model\ShopGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -98,7 +98,7 @@ class ShopApiContainer extends ApiContainer
     /**
      * Handle ShopApi shopUpdate function
      * @param array params
-     * @return \TencentAds\Model\ShopUpdateResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

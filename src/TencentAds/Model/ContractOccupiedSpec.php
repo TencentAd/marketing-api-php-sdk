@@ -220,7 +220,7 @@ class ContractOccupiedSpec implements ModelInterface, ArrayAccess
     /**
      * Gets date
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDate()
     {
@@ -244,7 +244,7 @@ class ContractOccupiedSpec implements ModelInterface, ArrayAccess
     /**
      * Gets hour
      *
-     * @return int
+     * @return int|mixed
      */
     public function getHour()
     {
@@ -268,7 +268,7 @@ class ContractOccupiedSpec implements ModelInterface, ArrayAccess
     /**
      * Gets contractOccupiedScore
      *
-     * @return int
+     * @return int|mixed
      */
     public function getContractOccupiedScore()
     {

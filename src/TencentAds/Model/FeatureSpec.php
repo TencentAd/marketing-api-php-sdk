@@ -220,7 +220,7 @@ class FeatureSpec implements ModelInterface, ArrayAccess
     /**
      * Gets dataSourceType
      *
-     * @return \TencentAds\Model\FeatureDataSourceType
+     * @return \TencentAds\Model\FeatureDataSourceType|mixed
      */
     public function getDataSourceType()
     {
@@ -244,7 +244,7 @@ class FeatureSpec implements ModelInterface, ArrayAccess
     /**
      * Gets propertyDataFeatureSpec
      *
-     * @return \TencentAds\Model\PropertyDataFeatureSpec
+     * @return \TencentAds\Model\PropertyDataFeatureSpec|mixed
      */
     public function getPropertyDataFeatureSpec()
     {
@@ -268,7 +268,7 @@ class FeatureSpec implements ModelInterface, ArrayAccess
     /**
      * Gets customFileFeatureSpec
      *
-     * @return \TencentAds\Model\CustomFileFeatureSpec
+     * @return \TencentAds\Model\CustomFileFeatureSpec|mixed
      */
     public function getCustomFileFeatureSpec()
     {

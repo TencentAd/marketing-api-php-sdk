@@ -225,7 +225,7 @@ class TargetingsShareAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets targetingId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTargetingId()
     {
@@ -249,7 +249,7 @@ class TargetingsShareAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets shareToAccountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getShareToAccountId()
     {
@@ -273,7 +273,7 @@ class TargetingsShareAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets shareType
      *
-     * @return \TencentAds\Model\TargetingShareType
+     * @return \TencentAds\Model\TargetingShareType|mixed
      */
     public function getShareType()
     {
@@ -297,7 +297,7 @@ class TargetingsShareAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {

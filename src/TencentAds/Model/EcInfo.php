@@ -214,7 +214,7 @@ class EcInfo implements ModelInterface, ArrayAccess
     /**
      * Gets productPrice
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProductPrice()
     {
@@ -238,7 +238,7 @@ class EcInfo implements ModelInterface, ArrayAccess
     /**
      * Gets productMetaClass
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProductMetaClass()
     {

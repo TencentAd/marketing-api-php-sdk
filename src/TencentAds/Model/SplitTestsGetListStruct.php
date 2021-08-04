@@ -262,7 +262,7 @@ class SplitTestsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -286,7 +286,7 @@ class SplitTestsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets splitTestId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSplitTestId()
     {
@@ -310,7 +310,7 @@ class SplitTestsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets splitTestStatus
      *
-     * @return \TencentAds\Model\SplitTestStatus
+     * @return \TencentAds\Model\SplitTestStatus|mixed
      */
     public function getSplitTestStatus()
     {
@@ -334,7 +334,7 @@ class SplitTestsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets splitTestName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSplitTestName()
     {
@@ -358,7 +358,7 @@ class SplitTestsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets beginTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBeginTime()
     {
@@ -382,7 +382,7 @@ class SplitTestsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets endTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getEndTime()
     {
@@ -406,7 +406,7 @@ class SplitTestsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets smartExpandEnabled
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getSmartExpandEnabled()
     {
@@ -430,7 +430,7 @@ class SplitTestsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupIdList
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getAdgroupIdList()
     {
@@ -454,7 +454,7 @@ class SplitTestsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets recommendedRating
      *
-     * @return \TencentAds\Model\RecommendedRating
+     * @return \TencentAds\Model\RecommendedRating|mixed
      */
     public function getRecommendedRating()
     {
@@ -478,7 +478,7 @@ class SplitTestsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets recommendedAdgroupIdList
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getRecommendedAdgroupIdList()
     {

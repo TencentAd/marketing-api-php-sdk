@@ -214,7 +214,7 @@ class DpPageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets miniProgramSpec
      *
-     * @return \TencentAds\Model\DpMiniProgramSpec
+     * @return \TencentAds\Model\DpMiniProgramSpec|mixed
      */
     public function getMiniProgramSpec()
     {
@@ -238,7 +238,7 @@ class DpPageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets alitaPageSpec
      *
-     * @return \TencentAds\Model\DpAlitaPageSpec
+     * @return \TencentAds\Model\DpAlitaPageSpec|mixed
      */
     public function getAlitaPageSpec()
     {

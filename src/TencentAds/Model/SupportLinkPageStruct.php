@@ -214,7 +214,7 @@ class SupportLinkPageStruct implements ModelInterface, ArrayAccess
     /**
      * Gets linkPageType
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLinkPageType()
     {
@@ -238,7 +238,7 @@ class SupportLinkPageStruct implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {

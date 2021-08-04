@@ -237,7 +237,7 @@ class CustomTagsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -261,7 +261,7 @@ class CustomTagsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets parentTagId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getParentTagId()
     {
@@ -285,7 +285,7 @@ class CustomTagsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return string
+     * @return string|mixed
      */
     public function getName()
     {
@@ -309,7 +309,7 @@ class CustomTagsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -333,7 +333,7 @@ class CustomTagsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets tagCode
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTagCode()
     {
@@ -357,7 +357,7 @@ class CustomTagsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets platform
      *
-     * @return \TencentAds\Model\DataPlatform
+     * @return \TencentAds\Model\DataPlatform|mixed
      */
     public function getPlatform()
     {

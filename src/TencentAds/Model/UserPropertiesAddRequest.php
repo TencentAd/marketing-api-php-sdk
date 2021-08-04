@@ -225,7 +225,7 @@ class UserPropertiesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -249,7 +249,7 @@ class UserPropertiesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets userPropertySetId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUserPropertySetId()
     {
@@ -273,7 +273,7 @@ class UserPropertiesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets wechatAppId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatAppId()
     {
@@ -297,7 +297,7 @@ class UserPropertiesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets property
      *
-     * @return \TencentAds\Model\UserPropertiesAddProperty[]
+     * @return \TencentAds\Model\UserPropertiesAddProperty[]|mixed
      */
     public function getProperty()
     {

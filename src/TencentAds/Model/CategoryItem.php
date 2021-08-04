@@ -232,7 +232,7 @@ class CategoryItem implements ModelInterface, ArrayAccess
     /**
      * Gets categoryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCategoryId()
     {
@@ -256,7 +256,7 @@ class CategoryItem implements ModelInterface, ArrayAccess
     /**
      * Gets categoryName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCategoryName()
     {
@@ -280,7 +280,7 @@ class CategoryItem implements ModelInterface, ArrayAccess
     /**
      * Gets parentCategoryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getParentCategoryId()
     {
@@ -304,7 +304,7 @@ class CategoryItem implements ModelInterface, ArrayAccess
     /**
      * Gets level
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLevel()
     {
@@ -328,7 +328,7 @@ class CategoryItem implements ModelInterface, ArrayAccess
     /**
      * Gets categoryPath
      *
-     * @return \TencentAds\Model\CategoryPathsItem[]
+     * @return \TencentAds\Model\CategoryPathsItem[]|mixed
      */
     public function getCategoryPath()
     {

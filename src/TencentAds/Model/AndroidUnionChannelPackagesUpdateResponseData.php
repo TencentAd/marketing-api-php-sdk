@@ -207,7 +207,7 @@ class AndroidUnionChannelPackagesUpdateResponseData implements ModelInterface, A
     /**
      * Gets taskId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTaskId()
     {

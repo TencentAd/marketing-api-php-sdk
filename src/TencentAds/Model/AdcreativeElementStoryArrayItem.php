@@ -232,7 +232,7 @@ class AdcreativeElementStoryArrayItem implements ModelInterface, ArrayAccess
     /**
      * Gets image
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImage()
     {
@@ -256,7 +256,7 @@ class AdcreativeElementStoryArrayItem implements ModelInterface, ArrayAccess
     /**
      * Gets image2
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImage2()
     {
@@ -280,7 +280,7 @@ class AdcreativeElementStoryArrayItem implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -304,7 +304,7 @@ class AdcreativeElementStoryArrayItem implements ModelInterface, ArrayAccess
     /**
      * Gets url
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUrl()
     {
@@ -328,7 +328,7 @@ class AdcreativeElementStoryArrayItem implements ModelInterface, ArrayAccess
     /**
      * Gets title
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTitle()
     {

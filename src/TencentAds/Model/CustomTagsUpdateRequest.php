@@ -225,7 +225,7 @@ class CustomTagsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -249,7 +249,7 @@ class CustomTagsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets tagId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTagId()
     {
@@ -273,7 +273,7 @@ class CustomTagsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return string
+     * @return string|mixed
      */
     public function getName()
     {
@@ -297,7 +297,7 @@ class CustomTagsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {

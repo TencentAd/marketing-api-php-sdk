@@ -232,7 +232,7 @@ class PoiRule implements ModelInterface, ArrayAccess
     /**
      * Gets regionId
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getRegionId()
     {
@@ -256,7 +256,7 @@ class PoiRule implements ModelInterface, ArrayAccess
     /**
      * Gets poiCategoryId
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getPoiCategoryId()
     {
@@ -280,7 +280,7 @@ class PoiRule implements ModelInterface, ArrayAccess
     /**
      * Gets dateRange
      *
-     * @return \TencentAds\Model\DateRange
+     * @return \TencentAds\Model\DateRange|mixed
      */
     public function getDateRange()
     {
@@ -304,7 +304,7 @@ class PoiRule implements ModelInterface, ArrayAccess
     /**
      * Gets dayOfWeek
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getDayOfWeek()
     {
@@ -328,7 +328,7 @@ class PoiRule implements ModelInterface, ArrayAccess
     /**
      * Gets frequency
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFrequency()
     {

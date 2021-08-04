@@ -214,7 +214,7 @@ class LookalikeSpec implements ModelInterface, ArrayAccess
     /**
      * Gets seedAudienceId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSeedAudienceId()
     {
@@ -238,7 +238,7 @@ class LookalikeSpec implements ModelInterface, ArrayAccess
     /**
      * Gets expandUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getExpandUserCount()
     {

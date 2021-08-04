@@ -96,7 +96,7 @@ class CampaignsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CampaignsAddResponse
+     * @return \TencentAds\Model\CampaignsAddResponse|mixed
      */
     public function campaignsAdd($data)
     {
@@ -378,7 +378,7 @@ class CampaignsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CampaignsDeleteResponse
+     * @return \TencentAds\Model\CampaignsDeleteResponse|mixed
      */
     public function campaignsDelete($data)
     {
@@ -665,7 +665,7 @@ class CampaignsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CampaignsGetResponse
+     * @return \TencentAds\Model\CampaignsGetResponse|mixed
      */
     public function campaignsGet($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
     {
@@ -994,7 +994,7 @@ class CampaignsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CampaignsUpdateResponse
+     * @return \TencentAds\Model\CampaignsUpdateResponse|mixed
      */
     public function campaignsUpdate($data)
     {
@@ -1276,7 +1276,7 @@ class CampaignsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CampaignsUpdateConfiguredStatusResponse
+     * @return \TencentAds\Model\CampaignsUpdateConfiguredStatusResponse|mixed
      */
     public function campaignsUpdateConfiguredStatus($data)
     {
@@ -1558,7 +1558,7 @@ class CampaignsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CampaignsUpdateDailyBudgetResponse
+     * @return \TencentAds\Model\CampaignsUpdateDailyBudgetResponse|mixed
      */
     public function campaignsUpdateDailyBudget($data)
     {

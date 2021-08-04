@@ -214,7 +214,7 @@ class NumberRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets min
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMin()
     {
@@ -238,7 +238,7 @@ class NumberRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets max
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMax()
     {

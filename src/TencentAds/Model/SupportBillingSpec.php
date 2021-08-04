@@ -220,7 +220,7 @@ class SupportBillingSpec implements ModelInterface, ArrayAccess
     /**
      * Gets billingEvent
      *
-     * @return \TencentAds\Model\BillingEvent
+     * @return \TencentAds\Model\BillingEvent|mixed
      */
     public function getBillingEvent()
     {
@@ -244,7 +244,7 @@ class SupportBillingSpec implements ModelInterface, ArrayAccess
     /**
      * Gets minPrice
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMinPrice()
     {
@@ -268,7 +268,7 @@ class SupportBillingSpec implements ModelInterface, ArrayAccess
     /**
      * Gets maxPrice
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMaxPrice()
     {

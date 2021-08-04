@@ -220,7 +220,7 @@ class CreativeStruct implements ModelInterface, ArrayAccess
     /**
      * Gets deepLinkUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDeepLinkUrl()
     {
@@ -244,7 +244,7 @@ class CreativeStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adcreativeTemplateId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdcreativeTemplateId()
     {
@@ -268,7 +268,7 @@ class CreativeStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adcreativeElements
      *
-     * @return \TencentAds\Model\AdcreativeCreativeElementsWithOptions
+     * @return \TencentAds\Model\AdcreativeCreativeElementsWithOptions|mixed
      */
     public function getAdcreativeElements()
     {

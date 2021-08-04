@@ -213,7 +213,7 @@ class OuterCluesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets failOuterLeadIdList
      *
-     * @return \TencentAds\Model\OuterCluesAddListStruct[]
+     * @return \TencentAds\Model\OuterCluesAddListStruct[]|mixed
      */
     public function getFailOuterLeadIdList()
     {
@@ -237,7 +237,7 @@ class OuterCluesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets successLeadIdList
      *
-     * @return \TencentAds\Model\SuccessLeadsIdListRespStruct[]
+     * @return \TencentAds\Model\SuccessLeadsIdListRespStruct[]|mixed
      */
     public function getSuccessLeadIdList()
     {

@@ -214,7 +214,7 @@ class UpdateBidStrategyItem implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -238,7 +238,7 @@ class UpdateBidStrategyItem implements ModelInterface, ArrayAccess
     /**
      * Gets bidStrategy
      *
-     * @return \TencentAds\Model\BidStrategy
+     * @return \TencentAds\Model\BidStrategy|mixed
      */
     public function getBidStrategy()
     {

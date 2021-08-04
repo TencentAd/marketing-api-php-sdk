@@ -207,7 +207,7 @@ class FundsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\FundsGetListStruct[]
+     * @return \TencentAds\Model\FundsGetListStruct[]|mixed
      */
     public function getList()
     {

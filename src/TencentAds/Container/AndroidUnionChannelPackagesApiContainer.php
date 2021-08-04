@@ -30,7 +30,7 @@ class AndroidUnionChannelPackagesApiContainer extends ApiContainer
     /**
      * Handle AndroidUnionChannelPackagesApi androidUnionChannelPackagesAdd function
      * @param array params
-     * @return \TencentAds\Model\AndroidUnionChannelPackagesAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class AndroidUnionChannelPackagesApiContainer extends ApiContainer
     /**
      * Handle AndroidUnionChannelPackagesApi androidUnionChannelPackagesGet function
      * @param array params
-     * @return \TencentAds\Model\AndroidUnionChannelPackagesGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -108,7 +108,7 @@ class AndroidUnionChannelPackagesApiContainer extends ApiContainer
     /**
      * Handle AndroidUnionChannelPackagesApi androidUnionChannelPackagesUpdate function
      * @param array params
-     * @return \TencentAds\Model\AndroidUnionChannelPackagesUpdateResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

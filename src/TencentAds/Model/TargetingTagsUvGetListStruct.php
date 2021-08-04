@@ -220,7 +220,7 @@ class TargetingTagsUvGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets categoryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCategoryId()
     {
@@ -244,7 +244,7 @@ class TargetingTagsUvGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets categoryName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCategoryName()
     {
@@ -268,7 +268,7 @@ class TargetingTagsUvGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets categoryUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCategoryUv()
     {

@@ -226,7 +226,7 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
     /**
      * Gets deepLinkUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDeepLinkUrl()
     {
@@ -250,7 +250,7 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
     /**
      * Gets appAndroidId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAppAndroidId()
     {
@@ -274,7 +274,7 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
     /**
      * Gets appAndroidChannelPackageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAppAndroidChannelPackageId()
     {
@@ -298,7 +298,7 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
     /**
      * Gets appMarketPackage
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAppMarketPackage()
     {

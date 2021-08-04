@@ -214,7 +214,7 @@ class LimitWechatAdBehavior implements ModelInterface, ArrayAccess
     /**
      * Gets actions
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getActions()
     {
@@ -238,7 +238,7 @@ class LimitWechatAdBehavior implements ModelInterface, ArrayAccess
     /**
      * Gets excludedActions
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getExcludedActions()
     {

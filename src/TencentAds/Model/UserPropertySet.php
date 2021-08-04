@@ -226,7 +226,7 @@ class UserPropertySet implements ModelInterface, ArrayAccess
     /**
      * Gets userPropertySetId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUserPropertySetId()
     {
@@ -250,7 +250,7 @@ class UserPropertySet implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return string
+     * @return string|mixed
      */
     public function getName()
     {
@@ -274,7 +274,7 @@ class UserPropertySet implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -298,7 +298,7 @@ class UserPropertySet implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCreatedTime()
     {

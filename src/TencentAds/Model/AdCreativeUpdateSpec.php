@@ -220,7 +220,7 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
     /**
      * Gets adcreativeName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdcreativeName()
     {
@@ -244,7 +244,7 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
     /**
      * Gets adcreativeElements
      *
-     * @return \TencentAds\Model\DpAdcreativeCreativeElementsMp
+     * @return \TencentAds\Model\DpAdcreativeCreativeElementsMp|mixed
      */
     public function getAdcreativeElements()
     {
@@ -268,7 +268,7 @@ class AdCreativeUpdateSpec implements ModelInterface, ArrayAccess
     /**
      * Gets pageSpec
      *
-     * @return \TencentAds\Model\DpPageSpec
+     * @return \TencentAds\Model\DpPageSpec|mixed
      */
     public function getPageSpec()
     {

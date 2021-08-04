@@ -213,7 +213,7 @@ class CampaignsUpdateConfiguredStatusRequest implements ModelInterface, ArrayAcc
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -237,7 +237,7 @@ class CampaignsUpdateConfiguredStatusRequest implements ModelInterface, ArrayAcc
     /**
      * Gets updateConfiguredStatusSpec
      *
-     * @return \TencentAds\Model\CampaignsUpdateConfiguredStatusUpdateConfiguredStatusStruct[]
+     * @return \TencentAds\Model\CampaignsUpdateConfiguredStatusUpdateConfiguredStatusStruct[]|mixed
      */
     public function getUpdateConfiguredStatusSpec()
     {

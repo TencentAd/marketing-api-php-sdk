@@ -232,7 +232,7 @@ class SizeAdjustment implements ModelInterface, ArrayAccess
     /**
      * Gets targetSize
      *
-     * @return \TencentAds\Model\SizeType
+     * @return \TencentAds\Model\SizeType|mixed
      */
     public function getTargetSize()
     {
@@ -256,7 +256,7 @@ class SizeAdjustment implements ModelInterface, ArrayAccess
     /**
      * Gets sizeAdjustmentMethod
      *
-     * @return \TencentAds\Model\SizeAdjustmentMethodEnum
+     * @return \TencentAds\Model\SizeAdjustmentMethodEnum|mixed
      */
     public function getSizeAdjustmentMethod()
     {
@@ -280,7 +280,7 @@ class SizeAdjustment implements ModelInterface, ArrayAccess
     /**
      * Gets color
      *
-     * @return string
+     * @return string|mixed
      */
     public function getColor()
     {
@@ -304,7 +304,7 @@ class SizeAdjustment implements ModelInterface, ArrayAccess
     /**
      * Gets bgImageId1
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBgImageId1()
     {
@@ -328,7 +328,7 @@ class SizeAdjustment implements ModelInterface, ArrayAccess
     /**
      * Gets bgImageId2
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBgImageId2()
     {

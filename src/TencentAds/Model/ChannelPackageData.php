@@ -262,7 +262,7 @@ class ChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Gets androidAppId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAndroidAppId()
     {
@@ -286,7 +286,7 @@ class ChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Gets packageName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPackageName()
     {
@@ -310,7 +310,7 @@ class ChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Gets packageDownloadUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPackageDownloadUrl()
     {
@@ -334,7 +334,7 @@ class ChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Gets channelPackageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getChannelPackageId()
     {
@@ -358,7 +358,7 @@ class ChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Gets versionCode
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVersionCode()
     {
@@ -382,7 +382,7 @@ class ChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Gets versionName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getVersionName()
     {
@@ -406,7 +406,7 @@ class ChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {
@@ -430,7 +430,7 @@ class ChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLastModifiedTime()
     {
@@ -454,7 +454,7 @@ class ChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Gets systemStatus
      *
-     * @return \TencentAds\Model\PackageSysStatus
+     * @return \TencentAds\Model\PackageSysStatus|mixed
      */
     public function getSystemStatus()
     {
@@ -478,7 +478,7 @@ class ChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Gets auditStatus
      *
-     * @return \TencentAds\Model\PackageAuditStatus
+     * @return \TencentAds\Model\PackageAuditStatus|mixed
      */
     public function getAuditStatus()
     {

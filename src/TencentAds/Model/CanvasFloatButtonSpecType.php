@@ -268,7 +268,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     /**
      * Gets styleType
      *
-     * @return int
+     * @return int|mixed
      */
     public function getStyleType()
     {
@@ -292,7 +292,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     /**
      * Gets imageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImageId()
     {
@@ -316,7 +316,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     /**
      * Gets title
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTitle()
     {
@@ -340,7 +340,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     /**
      * Gets titleColor
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTitleColor()
     {
@@ -364,7 +364,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     /**
      * Gets desc
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDesc()
     {
@@ -388,7 +388,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     /**
      * Gets descColor
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescColor()
     {
@@ -412,7 +412,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     /**
      * Gets appearType
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppearType()
     {
@@ -436,7 +436,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     /**
      * Gets disappearType
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDisappearType()
     {
@@ -460,7 +460,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     /**
      * Gets forbidPageList
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getForbidPageList()
     {
@@ -484,7 +484,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     /**
      * Gets elementType
      *
-     * @return \TencentAds\Model\CanvasFloatElementType
+     * @return \TencentAds\Model\CanvasFloatElementType|mixed
      */
     public function getElementType()
     {
@@ -508,7 +508,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     /**
      * Gets appDownloadSpec
      *
-     * @return \TencentAds\Model\FloatAppDownloadSpec
+     * @return \TencentAds\Model\FloatAppDownloadSpec|mixed
      */
     public function getAppDownloadSpec()
     {

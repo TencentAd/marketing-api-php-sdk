@@ -207,7 +207,7 @@ class OuterCluesUpdateResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets failLeadsList
      *
-     * @return \TencentAds\Model\OuterCluesUpdateListStruct[]
+     * @return \TencentAds\Model\OuterCluesUpdateListStruct[]|mixed
      */
     public function getFailLeadsList()
     {

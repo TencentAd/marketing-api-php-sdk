@@ -207,7 +207,7 @@ class WechatAdvertiserLocalBusinessAddResponseData implements ModelInterface, Ar
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {

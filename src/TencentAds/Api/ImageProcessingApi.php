@@ -96,7 +96,7 @@ class ImageProcessingApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ImageProcessingAddResponse
+     * @return \TencentAds\Model\ImageProcessingAddResponse|mixed
      */
     public function imageProcessingAdd($data)
     {

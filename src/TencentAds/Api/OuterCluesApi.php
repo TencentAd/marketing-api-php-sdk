@@ -96,7 +96,7 @@ class OuterCluesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\OuterCluesAddResponse
+     * @return \TencentAds\Model\OuterCluesAddResponse|mixed
      */
     public function outerCluesAdd($data)
     {
@@ -378,7 +378,7 @@ class OuterCluesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\OuterCluesUpdateResponse
+     * @return \TencentAds\Model\OuterCluesUpdateResponse|mixed
      */
     public function outerCluesUpdate($data)
     {

@@ -214,7 +214,7 @@ class CpaFunnelStruct implements ModelInterface, ArrayAccess
     /**
      * Gets biasToday
      *
-     * @return double
+     * @return double|mixed
      */
     public function getBiasToday()
     {
@@ -238,7 +238,7 @@ class CpaFunnelStruct implements ModelInterface, ArrayAccess
     /**
      * Gets biasOverall
      *
-     * @return double
+     * @return double|mixed
      */
     public function getBiasOverall()
     {

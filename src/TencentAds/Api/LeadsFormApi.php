@@ -96,7 +96,7 @@ class LeadsFormApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\LeadsFormAddResponse
+     * @return \TencentAds\Model\LeadsFormAddResponse|mixed
      */
     public function leadsFormAdd($data)
     {
@@ -380,7 +380,7 @@ class LeadsFormApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\LeadsFormGetResponse
+     * @return \TencentAds\Model\LeadsFormGetResponse|mixed
      */
     public function leadsFormGet($accountId, $componentId, $fields = null)
     {

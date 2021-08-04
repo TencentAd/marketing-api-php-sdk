@@ -256,7 +256,7 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets taskId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTaskId()
     {
@@ -280,7 +280,7 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets taskName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTaskName()
     {
@@ -304,7 +304,7 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets taskType
      *
-     * @return \TencentAds\Model\TaskType
+     * @return \TencentAds\Model\TaskType|mixed
      */
     public function getTaskType()
     {
@@ -328,7 +328,7 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets taskScope
      *
-     * @return \TencentAds\Model\TaskScope
+     * @return \TencentAds\Model\TaskScope|mixed
      */
     public function getTaskScope()
     {
@@ -352,7 +352,7 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \TencentAds\Model\TaskStatus
+     * @return \TencentAds\Model\TaskStatus|mixed
      */
     public function getStatus()
     {
@@ -376,7 +376,7 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets resultStatus
      *
-     * @return \TencentAds\Model\TaskResultStatus
+     * @return \TencentAds\Model\TaskResultStatus|mixed
      */
     public function getResultStatus()
     {
@@ -400,7 +400,7 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {
@@ -424,7 +424,7 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets endTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getEndTime()
     {
@@ -448,7 +448,7 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets scopeObjectIdList
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getScopeObjectIdList()
     {

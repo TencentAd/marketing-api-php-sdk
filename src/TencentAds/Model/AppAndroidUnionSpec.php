@@ -244,7 +244,7 @@ class AppAndroidUnionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets packname
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPackname()
     {
@@ -268,7 +268,7 @@ class AppAndroidUnionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets version
      *
-     * @return string
+     * @return string|mixed
      */
     public function getVersion()
     {
@@ -292,7 +292,7 @@ class AppAndroidUnionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets icon
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIcon()
     {
@@ -316,7 +316,7 @@ class AppAndroidUnionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets packageSize
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPackageSize()
     {
@@ -340,7 +340,7 @@ class AppAndroidUnionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets packageMd5
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPackageMd5()
     {
@@ -364,7 +364,7 @@ class AppAndroidUnionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets packageDownloadUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPackageDownloadUrl()
     {
@@ -388,7 +388,7 @@ class AppAndroidUnionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets channelPackageSpec
      *
-     * @return \TencentAds\Model\ChannelPackageSpecStruct[]
+     * @return \TencentAds\Model\ChannelPackageSpecStruct[]|mixed
      */
     public function getChannelPackageSpec()
     {

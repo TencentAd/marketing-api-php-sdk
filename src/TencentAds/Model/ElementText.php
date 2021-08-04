@@ -208,7 +208,7 @@ class ElementText implements ModelInterface, ArrayAccess
     /**
      * Gets text
      *
-     * @return string
+     * @return string|mixed
      */
     public function getText()
     {

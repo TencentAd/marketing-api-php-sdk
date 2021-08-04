@@ -214,7 +214,7 @@ class TaskTypeWechatAdgroupHourlyReportSpec implements ModelInterface, ArrayAcce
     /**
      * Gets date
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDate()
     {
@@ -238,7 +238,7 @@ class TaskTypeWechatAdgroupHourlyReportSpec implements ModelInterface, ArrayAcce
     /**
      * Gets hourRange
      *
-     * @return \TencentAds\Model\HourRange
+     * @return \TencentAds\Model\HourRange|mixed
      */
     public function getHourRange()
     {

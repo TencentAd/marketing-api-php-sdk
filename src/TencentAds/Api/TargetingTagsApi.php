@@ -99,7 +99,7 @@ class TargetingTagsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\TargetingTagsGetResponse
+     * @return \TencentAds\Model\TargetingTagsGetResponse|mixed
      */
     public function targetingTagsGet($type, $accountId = null, $tagSpec = null, $fields = null)
     {

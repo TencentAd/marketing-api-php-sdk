@@ -273,7 +273,7 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -297,7 +297,7 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets dailyBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDailyBudget()
     {
@@ -321,7 +321,7 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets systemIndustryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSystemIndustryId()
     {
@@ -345,7 +345,7 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets corporationName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCorporationName()
     {
@@ -369,7 +369,7 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets certificationImageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCertificationImageId()
     {
@@ -393,7 +393,7 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets corporateImageName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCorporateImageName()
     {
@@ -417,7 +417,7 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets individualQualification
      *
-     * @return \TencentAds\Model\IndividualQualification
+     * @return \TencentAds\Model\IndividualQualification|mixed
      */
     public function getIndividualQualification()
     {
@@ -441,7 +441,7 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets introductionUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIntroductionUrl()
     {
@@ -465,7 +465,7 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets contactPersonTelephone
      *
-     * @return string
+     * @return string|mixed
      */
     public function getContactPersonTelephone()
     {
@@ -489,7 +489,7 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets contactPersonMobile
      *
-     * @return string
+     * @return string|mixed
      */
     public function getContactPersonMobile()
     {
@@ -513,7 +513,7 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets wechatSpec
      *
-     * @return \TencentAds\Model\MpInfoUpdate
+     * @return \TencentAds\Model\MpInfoUpdate|mixed
      */
     public function getWechatSpec()
     {
@@ -537,7 +537,7 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets websites
      *
-     * @return \TencentAds\Model\WebsiteUpdateStruct[]
+     * @return \TencentAds\Model\WebsiteUpdateStruct[]|mixed
      */
     public function getWebsites()
     {

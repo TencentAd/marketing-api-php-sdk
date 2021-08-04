@@ -208,7 +208,7 @@ class ElementWebview implements ModelInterface, ArrayAccess
     /**
      * Gets url
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUrl()
     {

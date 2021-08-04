@@ -220,7 +220,7 @@ class AdCreativeBrand implements ModelInterface, ArrayAccess
     /**
      * Gets brandName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBrandName()
     {
@@ -244,7 +244,7 @@ class AdCreativeBrand implements ModelInterface, ArrayAccess
     /**
      * Gets brandImg
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBrandImg()
     {
@@ -268,7 +268,7 @@ class AdCreativeBrand implements ModelInterface, ArrayAccess
     /**
      * Gets brandDescription
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBrandDescription()
     {

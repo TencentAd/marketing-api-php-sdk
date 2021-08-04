@@ -244,7 +244,7 @@ class CtrLevelStruct implements ModelInterface, ArrayAccess
     /**
      * Gets value
      *
-     * @return string
+     * @return string|mixed
      */
     public function getValue()
     {
@@ -268,7 +268,7 @@ class CtrLevelStruct implements ModelInterface, ArrayAccess
     /**
      * Gets score
      *
-     * @return string
+     * @return string|mixed
      */
     public function getScore()
     {
@@ -292,7 +292,7 @@ class CtrLevelStruct implements ModelInterface, ArrayAccess
     /**
      * Gets rankOverall
      *
-     * @return string
+     * @return string|mixed
      */
     public function getRankOverall()
     {
@@ -316,7 +316,7 @@ class CtrLevelStruct implements ModelInterface, ArrayAccess
     /**
      * Gets rankFirstCategory
      *
-     * @return string
+     * @return string|mixed
      */
     public function getRankFirstCategory()
     {
@@ -340,7 +340,7 @@ class CtrLevelStruct implements ModelInterface, ArrayAccess
     /**
      * Gets rankSecondCategory
      *
-     * @return string
+     * @return string|mixed
      */
     public function getRankSecondCategory()
     {
@@ -364,7 +364,7 @@ class CtrLevelStruct implements ModelInterface, ArrayAccess
     /**
      * Gets selfTrends
      *
-     * @return \TencentAds\Model\PointStruct[]
+     * @return \TencentAds\Model\PointStruct[]|mixed
      */
     public function getSelfTrends()
     {
@@ -388,7 +388,7 @@ class CtrLevelStruct implements ModelInterface, ArrayAccess
     /**
      * Gets benchmarkTrends
      *
-     * @return \TencentAds\Model\PointStruct[]
+     * @return \TencentAds\Model\PointStruct[]|mixed
      */
     public function getBenchmarkTrends()
     {

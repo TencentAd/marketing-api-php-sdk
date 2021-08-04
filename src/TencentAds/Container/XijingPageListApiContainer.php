@@ -30,7 +30,7 @@ class XijingPageListApiContainer extends ApiContainer
     /**
      * Handle XijingPageListApi xijingPageListGet function
      * @param array params
-     * @return \TencentAds\Model\XijingPageListGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

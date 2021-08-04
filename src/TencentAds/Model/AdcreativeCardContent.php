@@ -220,7 +220,7 @@ class AdcreativeCardContent implements ModelInterface, ArrayAccess
     /**
      * Gets image
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImage()
     {
@@ -244,7 +244,7 @@ class AdcreativeCardContent implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -268,7 +268,7 @@ class AdcreativeCardContent implements ModelInterface, ArrayAccess
     /**
      * Gets url
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUrl()
     {

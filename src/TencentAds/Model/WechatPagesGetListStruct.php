@@ -286,7 +286,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageId()
     {
@@ -310,7 +310,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPageName()
     {
@@ -334,7 +334,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {
@@ -358,7 +358,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLastModifiedTime()
     {
@@ -382,7 +382,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageTemplateId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageTemplateId()
     {
@@ -406,7 +406,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets shareContentSpec
      *
-     * @return \TencentAds\Model\ShareContentSpec
+     * @return \TencentAds\Model\ShareContentSpec|mixed
      */
     public function getShareContentSpec()
     {
@@ -430,7 +430,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets previewUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPreviewUrl()
     {
@@ -454,7 +454,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageType
      *
-     * @return \TencentAds\Model\PageTypeRead
+     * @return \TencentAds\Model\PageTypeRead|mixed
      */
     public function getPageType()
     {
@@ -478,7 +478,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets sourceType
      *
-     * @return \TencentAds\Model\WechatPageSourceType
+     * @return \TencentAds\Model\WechatPageSourceType|mixed
      */
     public function getSourceType()
     {
@@ -502,7 +502,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoResourceStatus
      *
-     * @return \TencentAds\Model\WechatPageResourceStatus
+     * @return \TencentAds\Model\WechatPageResourceStatus|mixed
      */
     public function getVideoResourceStatus()
     {
@@ -526,7 +526,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets canvasType
      *
-     * @return \TencentAds\Model\CanvasType
+     * @return \TencentAds\Model\CanvasType|mixed
      */
     public function getCanvasType()
     {
@@ -550,7 +550,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ownerUid
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOwnerUid()
     {
@@ -574,7 +574,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageStatus
      *
-     * @return \TencentAds\Model\PageStatus
+     * @return \TencentAds\Model\PageStatus|mixed
      */
     public function getPageStatus()
     {
@@ -598,7 +598,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageElementsSpecList
      *
-     * @return \TencentAds\Model\PageElementsStruct[]
+     * @return \TencentAds\Model\PageElementsStruct[]|mixed
      */
     public function getPageElementsSpecList()
     {

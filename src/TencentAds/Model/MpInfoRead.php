@@ -280,7 +280,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Gets wechatAccountId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatAccountId()
     {
@@ -304,7 +304,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Gets wechatAccountName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatAccountName()
     {
@@ -328,7 +328,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Gets systemStatus
      *
-     * @return \TencentAds\Model\WechatCustomerSystemStatus
+     * @return \TencentAds\Model\WechatCustomerSystemStatus|mixed
      */
     public function getSystemStatus()
     {
@@ -352,7 +352,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Gets industryName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIndustryName()
     {
@@ -376,7 +376,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Gets contactPerson
      *
-     * @return string
+     * @return string|mixed
      */
     public function getContactPerson()
     {
@@ -400,7 +400,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Gets contactPersonTelephone
      *
-     * @return string
+     * @return string|mixed
      */
     public function getContactPersonTelephone()
     {
@@ -424,7 +424,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Gets businessType
      *
-     * @return \TencentAds\Model\WechatBusinessType
+     * @return \TencentAds\Model\WechatBusinessType|mixed
      */
     public function getBusinessType()
     {
@@ -448,7 +448,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Gets businessContent
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBusinessContent()
     {
@@ -472,7 +472,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Gets rejectMessage
      *
-     * @return string
+     * @return string|mixed
      */
     public function getRejectMessage()
     {
@@ -496,7 +496,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Gets profilePhoto
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProfilePhoto()
     {
@@ -520,7 +520,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Gets brandIntroduction
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBrandIntroduction()
     {
@@ -544,7 +544,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Gets introductionUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIntroductionUrl()
     {
@@ -568,7 +568,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Gets systemIndustryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSystemIndustryId()
     {

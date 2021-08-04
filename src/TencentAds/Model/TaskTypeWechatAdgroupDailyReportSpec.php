@@ -208,7 +208,7 @@ class TaskTypeWechatAdgroupDailyReportSpec implements ModelInterface, ArrayAcces
     /**
      * Gets date
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDate()
     {

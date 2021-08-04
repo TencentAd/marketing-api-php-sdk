@@ -244,7 +244,7 @@ class BrandGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -268,7 +268,7 @@ class BrandGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return string
+     * @return string|mixed
      */
     public function getName()
     {
@@ -292,7 +292,7 @@ class BrandGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets imageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImageId()
     {
@@ -316,7 +316,7 @@ class BrandGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets width
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWidth()
     {
@@ -340,7 +340,7 @@ class BrandGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets height
      *
-     * @return int
+     * @return int|mixed
      */
     public function getHeight()
     {
@@ -364,7 +364,7 @@ class BrandGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets imageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImageUrl()
     {
@@ -388,7 +388,7 @@ class BrandGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {

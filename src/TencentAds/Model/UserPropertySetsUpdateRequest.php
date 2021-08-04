@@ -225,7 +225,7 @@ class UserPropertySetsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -249,7 +249,7 @@ class UserPropertySetsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets userPropertySetId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUserPropertySetId()
     {
@@ -273,7 +273,7 @@ class UserPropertySetsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return string
+     * @return string|mixed
      */
     public function getName()
     {
@@ -297,7 +297,7 @@ class UserPropertySetsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {

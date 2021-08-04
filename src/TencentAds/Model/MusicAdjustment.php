@@ -208,7 +208,7 @@ class MusicAdjustment implements ModelInterface, ArrayAccess
     /**
      * Gets musicAdjustmentMethod
      *
-     * @return \TencentAds\Model\MusicAdjustmentMethodEnum
+     * @return \TencentAds\Model\MusicAdjustmentMethodEnum|mixed
      */
     public function getMusicAdjustmentMethod()
     {

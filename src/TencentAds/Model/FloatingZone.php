@@ -244,7 +244,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
     /**
      * Gets floatingZoneSwitch
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getFloatingZoneSwitch()
     {
@@ -268,7 +268,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
     /**
      * Gets floatingZoneImageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getFloatingZoneImageId()
     {
@@ -292,7 +292,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
     /**
      * Gets floatingZoneName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getFloatingZoneName()
     {
@@ -316,7 +316,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
     /**
      * Gets floatingZoneDesc
      *
-     * @return string
+     * @return string|mixed
      */
     public function getFloatingZoneDesc()
     {
@@ -340,7 +340,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
     /**
      * Gets floatingZoneButtonText
      *
-     * @return string
+     * @return string|mixed
      */
     public function getFloatingZoneButtonText()
     {
@@ -364,7 +364,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
     /**
      * Gets floatingZoneType
      *
-     * @return \TencentAds\Model\FloatingZoneType
+     * @return \TencentAds\Model\FloatingZoneType|mixed
      */
     public function getFloatingZoneType()
     {
@@ -388,7 +388,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
     /**
      * Gets floatingZoneSingleImageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getFloatingZoneSingleImageId()
     {

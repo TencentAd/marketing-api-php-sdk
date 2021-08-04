@@ -310,7 +310,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Gets raiseDayBudgetFlag
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getRaiseDayBudgetFlag()
     {
@@ -334,7 +334,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Gets currentAdgroupDayBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCurrentAdgroupDayBudget()
     {
@@ -358,7 +358,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Gets currentCampaignDayBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCurrentCampaignDayBudget()
     {
@@ -382,7 +382,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Gets currentAccountDayBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCurrentAccountDayBudget()
     {
@@ -406,7 +406,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupCostDaily
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupCostDaily()
     {
@@ -430,7 +430,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Gets campaignCostDaily
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampaignCostDaily()
     {
@@ -454,7 +454,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Gets accountCostDaily
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountCostDaily()
     {
@@ -478,7 +478,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupBalance
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupBalance()
     {
@@ -502,7 +502,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Gets campaignBalance
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampaignBalance()
     {
@@ -526,7 +526,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Gets accountBalance
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountBalance()
     {
@@ -550,7 +550,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Gets optimizeAdgroupDayBudgetFlag
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getOptimizeAdgroupDayBudgetFlag()
     {
@@ -574,7 +574,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Gets optimizeCampaignDayBudgetFlag
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getOptimizeCampaignDayBudgetFlag()
     {
@@ -598,7 +598,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Gets optimizeAccountDayBudgetFlag
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getOptimizeAccountDayBudgetFlag()
     {
@@ -622,7 +622,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Gets optimizeAdgroupDayBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOptimizeAdgroupDayBudget()
     {
@@ -646,7 +646,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Gets optimizeCampaignDayBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOptimizeCampaignDayBudget()
     {
@@ -670,7 +670,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Gets optimizeAccountDayBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOptimizeAccountDayBudget()
     {
@@ -694,7 +694,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Gets raiseAccountBalanceFlag
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getRaiseAccountBalanceFlag()
     {
@@ -718,7 +718,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Gets recommendRecharge
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRecommendRecharge()
     {

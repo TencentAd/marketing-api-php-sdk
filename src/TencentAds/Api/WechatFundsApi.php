@@ -97,7 +97,7 @@ class WechatFundsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\WechatFundsGetResponse
+     * @return \TencentAds\Model\WechatFundsGetResponse|mixed
      */
     public function wechatFundsGet($accountId, $fields = null)
     {

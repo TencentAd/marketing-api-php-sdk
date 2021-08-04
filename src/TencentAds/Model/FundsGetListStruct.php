@@ -226,7 +226,7 @@ class FundsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets balance
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBalance()
     {
@@ -250,7 +250,7 @@ class FundsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets fundStatus
      *
-     * @return \TencentAds\Model\FundStatus
+     * @return \TencentAds\Model\FundStatus|mixed
      */
     public function getFundStatus()
     {
@@ -274,7 +274,7 @@ class FundsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets realtimeCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRealtimeCost()
     {
@@ -298,7 +298,7 @@ class FundsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets fundType
      *
-     * @return \TencentAds\Model\AccountTypeMap
+     * @return \TencentAds\Model\AccountTypeMap|mixed
      */
     public function getFundType()
     {

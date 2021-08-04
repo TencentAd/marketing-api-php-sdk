@@ -225,7 +225,7 @@ class ProductItemsDetailGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets feedId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFeedId()
     {
@@ -249,7 +249,7 @@ class ProductItemsDetailGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets systemStatus
      *
-     * @return \TencentAds\Model\AuditStatus
+     * @return \TencentAds\Model\AuditStatus|mixed
      */
     public function getSystemStatus()
     {
@@ -273,7 +273,7 @@ class ProductItemsDetailGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets rejectMessage
      *
-     * @return string
+     * @return string|mixed
      */
     public function getRejectMessage()
     {
@@ -297,7 +297,7 @@ class ProductItemsDetailGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets productItemSpec
      *
-     * @return \TencentAds\Model\ProductItemSpec
+     * @return \TencentAds\Model\ProductItemSpec|mixed
      */
     public function getProductItemSpec()
     {

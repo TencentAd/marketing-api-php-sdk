@@ -286,7 +286,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Gets adcreativeId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdcreativeId()
     {
@@ -310,7 +310,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Gets adcreativeName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdcreativeName()
     {
@@ -334,7 +334,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Gets campaignId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampaignId()
     {
@@ -358,7 +358,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Gets pageType
      *
-     * @return \TencentAds\Model\PageTypeRead
+     * @return \TencentAds\Model\PageTypeRead|mixed
      */
     public function getPageType()
     {
@@ -382,7 +382,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Gets pageSpec
      *
-     * @return \TencentAds\Model\PageSpec
+     * @return \TencentAds\Model\PageSpec|mixed
      */
     public function getPageSpec()
     {
@@ -406,7 +406,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Gets siteSet
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getSiteSet()
     {
@@ -430,7 +430,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObjectType
+     * @return \TencentAds\Model\PromotedObjectType|mixed
      */
     public function getPromotedObjectType()
     {
@@ -454,7 +454,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPromotedObjectId()
     {
@@ -478,7 +478,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {
@@ -502,7 +502,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLastModifiedTime()
     {
@@ -526,7 +526,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Gets playablePageMaterialId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPlayablePageMaterialId()
     {
@@ -550,7 +550,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Gets videoEndPage
      *
-     * @return \TencentAds\Model\VideoEndPageSpec
+     * @return \TencentAds\Model\VideoEndPageSpec|mixed
      */
     public function getVideoEndPage()
     {
@@ -574,7 +574,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Gets adcreativeTemplateId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdcreativeTemplateId()
     {
@@ -598,7 +598,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Gets adcreativeElements
      *
-     * @return \TencentAds\Model\AdcreativeCreativeElementsRead
+     * @return \TencentAds\Model\AdcreativeCreativeElementsRead|mixed
      */
     public function getAdcreativeElements()
     {

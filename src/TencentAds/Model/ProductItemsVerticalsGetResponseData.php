@@ -207,7 +207,7 @@ class ProductItemsVerticalsGetResponseData implements ModelInterface, ArrayAcces
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\VerticalItemSpec[]
+     * @return \TencentAds\Model\VerticalItemSpec[]|mixed
      */
     public function getList()
     {

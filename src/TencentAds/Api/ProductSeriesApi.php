@@ -101,7 +101,7 @@ class ProductSeriesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ProductSeriesGetResponse
+     * @return \TencentAds\Model\ProductSeriesGetResponse|mixed
      */
     public function productSeriesGet($accountId, $catalogId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {

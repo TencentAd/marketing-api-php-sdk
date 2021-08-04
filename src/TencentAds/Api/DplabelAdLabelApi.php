@@ -97,7 +97,7 @@ class DplabelAdLabelApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\DplabelAdLabelGetResponse
+     * @return \TencentAds\Model\DplabelAdLabelGetResponse|mixed
      */
     public function dplabelAdLabelGet($accountId, $fields = null)
     {

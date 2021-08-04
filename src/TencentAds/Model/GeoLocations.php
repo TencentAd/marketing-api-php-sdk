@@ -226,7 +226,7 @@ class GeoLocations implements ModelInterface, ArrayAccess
     /**
      * Gets locationTypes
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getLocationTypes()
     {
@@ -250,7 +250,7 @@ class GeoLocations implements ModelInterface, ArrayAccess
     /**
      * Gets regions
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getRegions()
     {
@@ -274,7 +274,7 @@ class GeoLocations implements ModelInterface, ArrayAccess
     /**
      * Gets businessDistricts
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getBusinessDistricts()
     {
@@ -298,7 +298,7 @@ class GeoLocations implements ModelInterface, ArrayAccess
     /**
      * Gets customLocations
      *
-     * @return \TencentAds\Model\CustomLocationsItemWithName[]
+     * @return \TencentAds\Model\CustomLocationsItemWithName[]|mixed
      */
     public function getCustomLocations()
     {

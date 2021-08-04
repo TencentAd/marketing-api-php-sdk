@@ -101,7 +101,7 @@ class LeadsFormListApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\LeadsFormListGetResponse
+     * @return \TencentAds\Model\LeadsFormListGetResponse|mixed
      */
     public function leadsFormListGet($accountId, $beginCreatedTime = null, $endCreatedTime = null, $page = null, $pageSize = null, $fields = null)
     {

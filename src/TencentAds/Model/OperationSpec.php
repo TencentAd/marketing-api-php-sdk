@@ -226,7 +226,7 @@ class OperationSpec implements ModelInterface, ArrayAccess
     /**
      * Gets configureStatusSpec
      *
-     * @return \TencentAds\Model\ConfigureStatusSpec
+     * @return \TencentAds\Model\ConfigureStatusSpec|mixed
      */
     public function getConfigureStatusSpec()
     {
@@ -250,7 +250,7 @@ class OperationSpec implements ModelInterface, ArrayAccess
     /**
      * Gets bidAmountSpec
      *
-     * @return \TencentAds\Model\BidAmountSpec
+     * @return \TencentAds\Model\BidAmountSpec|mixed
      */
     public function getBidAmountSpec()
     {
@@ -274,7 +274,7 @@ class OperationSpec implements ModelInterface, ArrayAccess
     /**
      * Gets dateSpec
      *
-     * @return \TencentAds\Model\DateSpec
+     * @return \TencentAds\Model\DateSpec|mixed
      */
     public function getDateSpec()
     {
@@ -298,7 +298,7 @@ class OperationSpec implements ModelInterface, ArrayAccess
     /**
      * Gets timeSeriesSpec
      *
-     * @return \TencentAds\Model\TimeSeriesSpec
+     * @return \TencentAds\Model\TimeSeriesSpec|mixed
      */
     public function getTimeSeriesSpec()
     {

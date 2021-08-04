@@ -105,7 +105,7 @@ class HourlyReportsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\HourlyReportsGetResponse
+     * @return \TencentAds\Model\HourlyReportsGetResponse|mixed
      */
     public function hourlyReportsGet($accountId, $level, $dateRange, $filtering = null, $groupBy = null, $orderBy = null, $page = null, $pageSize = null, $timeLine = null, $fields = null)
     {

@@ -2614,7 +2614,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets date
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDate()
     {
@@ -2638,7 +2638,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets gender
      *
-     * @return string
+     * @return string|mixed
      */
     public function getGender()
     {
@@ -2662,7 +2662,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets viewCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getViewCount()
     {
@@ -2686,7 +2686,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets downloadCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDownloadCount()
     {
@@ -2710,7 +2710,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activatedCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getActivatedCount()
     {
@@ -2734,7 +2734,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activatedRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getActivatedRate()
     {
@@ -2758,7 +2758,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets thousandDisplayPrice
      *
-     * @return int
+     * @return int|mixed
      */
     public function getThousandDisplayPrice()
     {
@@ -2782,7 +2782,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets validClickCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getValidClickCount()
     {
@@ -2806,7 +2806,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ctr
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCtr()
     {
@@ -2830,7 +2830,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cpc
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCpc()
     {
@@ -2854,7 +2854,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCost()
     {
@@ -2878,7 +2878,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets keyPageViewCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getKeyPageViewCost()
     {
@@ -2902,7 +2902,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets couponClickCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCouponClickCount()
     {
@@ -2926,7 +2926,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets couponIssueCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCouponIssueCount()
     {
@@ -2950,7 +2950,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets couponGetCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCouponGetCount()
     {
@@ -2974,7 +2974,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets platformPageViewCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPlatformPageViewCount()
     {
@@ -2998,7 +2998,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets platformPageViewRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getPlatformPageViewRate()
     {
@@ -3022,7 +3022,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCommodityPageViewCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebCommodityPageViewCount()
     {
@@ -3046,7 +3046,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCommodityPageViewCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebCommodityPageViewCost()
     {
@@ -3070,7 +3070,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webRegisterCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebRegisterCount()
     {
@@ -3094,7 +3094,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageConsultCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageConsultCount()
     {
@@ -3118,7 +3118,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageConsultCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageConsultCost()
     {
@@ -3142,7 +3142,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pagePhoneCallDirectCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPagePhoneCallDirectCount()
     {
@@ -3166,7 +3166,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pagePhoneCallDirectCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPagePhoneCallDirectCost()
     {
@@ -3190,7 +3190,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pagePhoneCallBackCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPagePhoneCallBackCount()
     {
@@ -3214,7 +3214,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pagePhoneCallBackCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPagePhoneCallBackCost()
     {
@@ -3238,7 +3238,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ownPageNavigationCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOwnPageNavigationCount()
     {
@@ -3262,7 +3262,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ownPageNaviCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOwnPageNaviCost()
     {
@@ -3286,7 +3286,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets platformPageNavigationCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPlatformPageNavigationCount()
     {
@@ -3310,7 +3310,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets platformPageNavigationCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPlatformPageNavigationCost()
     {
@@ -3334,7 +3334,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets platformShopNavigationCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPlatformShopNavigationCount()
     {
@@ -3358,7 +3358,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets platformShopNavigationCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPlatformShopNavigationCost()
     {
@@ -3382,7 +3382,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webApplicationCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebApplicationCount()
     {
@@ -3406,7 +3406,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webApplicationCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebApplicationCost()
     {
@@ -3430,7 +3430,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageReservationCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageReservationCount()
     {
@@ -3454,7 +3454,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageReservationRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getPageReservationRate()
     {
@@ -3478,7 +3478,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageReservationCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageReservationCost()
     {
@@ -3502,7 +3502,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageReservationCostWithPeople
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageReservationCostWithPeople()
     {
@@ -3526,7 +3526,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webAddToCartCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebAddToCartCount()
     {
@@ -3550,7 +3550,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webAddToCartCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebAddToCartCost()
     {
@@ -3574,7 +3574,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets addToCartPrice
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAddToCartPrice()
     {
@@ -3598,7 +3598,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ownPageCouponGetCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOwnPageCouponGetCount()
     {
@@ -3622,7 +3622,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ownPageCouponGetCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOwnPageCouponGetCost()
     {
@@ -3646,7 +3646,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets platformCouponGetCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPlatformCouponGetCount()
     {
@@ -3670,7 +3670,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets platformCouponGetCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPlatformCouponGetCost()
     {
@@ -3694,7 +3694,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webOrderCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebOrderCount()
     {
@@ -3718,7 +3718,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webOrderRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getWebOrderRate()
     {
@@ -3742,7 +3742,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appOrderRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getAppOrderRate()
     {
@@ -3766,7 +3766,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webOrderCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebOrderCost()
     {
@@ -3790,7 +3790,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCheckoutAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebCheckoutAmount()
     {
@@ -3814,7 +3814,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCheckoutCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebCheckoutCount()
     {
@@ -3838,7 +3838,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCheckoutCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebCheckoutCost()
     {
@@ -3862,7 +3862,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets orderAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOrderAmount()
     {
@@ -3886,7 +3886,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets orderUnitPrice
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOrderUnitPrice()
     {
@@ -3910,7 +3910,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets orderRoi
      *
-     * @return double
+     * @return double|mixed
      */
     public function getOrderRoi()
     {
@@ -3934,7 +3934,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets deliverCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDeliverCount()
     {
@@ -3958,7 +3958,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets deliverCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDeliverCost()
     {
@@ -3982,7 +3982,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets signInCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSignInCount()
     {
@@ -4006,7 +4006,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets signInCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSignInCost()
     {
@@ -4030,7 +4030,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets downloadRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getDownloadRate()
     {
@@ -4054,7 +4054,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets downloadCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDownloadCost()
     {
@@ -4078,7 +4078,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets installCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getInstallCount()
     {
@@ -4102,7 +4102,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets installCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getInstallCost()
     {
@@ -4126,7 +4126,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets clickActivatedRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getClickActivatedRate()
     {
@@ -4150,7 +4150,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activatedCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getActivatedCost()
     {
@@ -4174,7 +4174,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets retentionCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRetentionCount()
     {
@@ -4198,7 +4198,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets retentionRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getRetentionRate()
     {
@@ -4222,7 +4222,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets retentionCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRetentionCost()
     {
@@ -4246,7 +4246,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets keyPageViewCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getKeyPageViewCount()
     {
@@ -4270,7 +4270,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appCommodityPageViewCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppCommodityPageViewCount()
     {
@@ -4294,7 +4294,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appCommodityPageViewRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getAppCommodityPageViewRate()
     {
@@ -4318,7 +4318,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCommodityPageViewRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getWebCommodityPageViewRate()
     {
@@ -4342,7 +4342,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appCommodityPageViewCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppCommodityPageViewCost()
     {
@@ -4366,7 +4366,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appRegisterCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppRegisterCount()
     {
@@ -4390,7 +4390,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appRegisterCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppRegisterCost()
     {
@@ -4414,7 +4414,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webRegisterCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebRegisterCost()
     {
@@ -4438,7 +4438,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appApplicationCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppApplicationCount()
     {
@@ -4462,7 +4462,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appApplicationCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppApplicationCost()
     {
@@ -4486,7 +4486,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appAddToCartCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppAddToCartCount()
     {
@@ -4510,7 +4510,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets addToCartAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAddToCartAmount()
     {
@@ -4534,7 +4534,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appAddToCartCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppAddToCartCost()
     {
@@ -4558,7 +4558,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appOrderCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppOrderCount()
     {
@@ -4582,7 +4582,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appOrderCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppOrderCost()
     {
@@ -4606,7 +4606,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appCheckoutCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppCheckoutCount()
     {
@@ -4630,7 +4630,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appCheckoutAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppCheckoutAmount()
     {
@@ -4654,7 +4654,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appCheckoutCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppCheckoutCost()
     {
@@ -4678,7 +4678,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets platformCouponClickCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPlatformCouponClickCount()
     {
@@ -4702,7 +4702,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets platformCouponGetRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getPlatformCouponGetRate()
     {
@@ -4726,7 +4726,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets couponUsageNumber
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCouponUsageNumber()
     {
@@ -4750,7 +4750,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets couponUsageCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCouponUsageCost()
     {
@@ -4774,7 +4774,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets couponUsageRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCouponUsageRate()
     {
@@ -4798,7 +4798,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets couponPurchaseRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCouponPurchaseRate()
     {
@@ -4822,7 +4822,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets followCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFollowCount()
     {
@@ -4846,7 +4846,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets followCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFollowCost()
     {
@@ -4870,7 +4870,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets forwardCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getForwardCount()
     {
@@ -4894,7 +4894,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets forwardCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getForwardCost()
     {
@@ -4918,7 +4918,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets readCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getReadCount()
     {
@@ -4942,7 +4942,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets readCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getReadCost()
     {
@@ -4966,7 +4966,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets praiseCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPraiseCount()
     {
@@ -4990,7 +4990,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets praiseCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPraiseCost()
     {
@@ -5014,7 +5014,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets commentCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCommentCount()
     {
@@ -5038,7 +5038,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets commentCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCommentCost()
     {
@@ -5062,7 +5062,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets intePhoneCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getIntePhoneCount()
     {
@@ -5086,7 +5086,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets phoneCallCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPhoneCallCount()
     {
@@ -5110,7 +5110,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets externalFormReservationCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getExternalFormReservationCount()
     {
@@ -5134,7 +5134,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appAdPayingUsers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppAdPayingUsers()
     {
@@ -5158,7 +5158,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adPurValWeb
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdPurValWeb()
     {
@@ -5182,7 +5182,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adPurValApp
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdPurValApp()
     {
@@ -5206,7 +5206,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets order24hCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOrder24hCount()
     {
@@ -5230,7 +5230,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets order24hRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getOrder24hRate()
     {
@@ -5254,7 +5254,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets order24hCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOrder24hCost()
     {
@@ -5278,7 +5278,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets order24hAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOrder24hAmount()
     {
@@ -5302,7 +5302,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets order24hRoi
      *
-     * @return double
+     * @return double|mixed
      */
     public function getOrder24hRoi()
     {
@@ -5326,7 +5326,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets gameCreateRoleCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getGameCreateRoleCount()
     {
@@ -5350,7 +5350,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets gameAuthorizeCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getGameAuthorizeCount()
     {
@@ -5374,7 +5374,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets gameTutorialFinishCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getGameTutorialFinishCount()
     {
@@ -5398,7 +5398,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectiveLeadsCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getEffectiveLeadsCount()
     {
@@ -5422,7 +5422,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectiveCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getEffectiveCost()
     {
@@ -5446,7 +5446,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectiveReserveCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getEffectiveReserveCount()
     {
@@ -5470,7 +5470,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectiveConsultCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getEffectiveConsultCount()
     {
@@ -5494,7 +5494,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectivePhoneCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getEffectivePhoneCount()
     {
@@ -5518,7 +5518,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets potentialReserveCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPotentialReserveCount()
     {
@@ -5542,7 +5542,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets potentialConsultCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPotentialConsultCount()
     {
@@ -5566,7 +5566,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets potentialPhoneCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPotentialPhoneCount()
     {
@@ -5590,7 +5590,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appCheckoutRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getAppCheckoutRate()
     {
@@ -5614,7 +5614,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCheckoutRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getWebCheckoutRate()
     {
@@ -5638,7 +5638,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appActivatedCheckoutRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getAppActivatedCheckoutRate()
     {
@@ -5662,7 +5662,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webActivatedCheckoutRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getWebActivatedCheckoutRate()
     {
@@ -5686,7 +5686,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appRegisterRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getAppRegisterRate()
     {
@@ -5710,7 +5710,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webRegRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getWebRegRate()
     {
@@ -5734,7 +5734,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pagePhoneCallDirectRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getPagePhoneCallDirectRate()
     {
@@ -5758,7 +5758,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pagePhoneCallBackRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getPagePhoneCallBackRate()
     {
@@ -5782,7 +5782,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageConsultRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getPageConsultRate()
     {
@@ -5806,7 +5806,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets deliverRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getDeliverRate()
     {
@@ -5830,7 +5830,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets installRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getInstallRate()
     {
@@ -5854,7 +5854,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets arppuCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getArppuCost()
     {
@@ -5878,7 +5878,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets arpuCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getArpuCost()
     {
@@ -5902,7 +5902,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webArppuCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebArppuCost()
     {
@@ -5926,7 +5926,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webArpuCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebArpuCost()
     {
@@ -5950,7 +5950,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appAdPurArpuCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppAdPurArpuCost()
     {
@@ -5974,7 +5974,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appAdPurArppuCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppAdPurArppuCost()
     {
@@ -5998,7 +5998,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webAdPurArpuCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebAdPurArpuCost()
     {
@@ -6022,7 +6022,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cheoutFd
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCheoutFd()
     {
@@ -6046,7 +6046,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cheoutTd
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCheoutTd()
     {
@@ -6070,7 +6070,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cheoutOw
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCheoutOw()
     {
@@ -6094,7 +6094,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cheoutTw
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCheoutTw()
     {
@@ -6118,7 +6118,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cheoutOm
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCheoutOm()
     {
@@ -6142,7 +6142,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cheoutFdReward
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCheoutFdReward()
     {
@@ -6166,7 +6166,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cheoutTdReward
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCheoutTdReward()
     {
@@ -6190,7 +6190,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cheoutOwReward
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCheoutOwReward()
     {
@@ -6214,7 +6214,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cheoutTwReward
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCheoutTwReward()
     {
@@ -6238,7 +6238,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cheoutOmReward
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCheoutOmReward()
     {
@@ -6262,7 +6262,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cheoutTotalReward
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCheoutTotalReward()
     {
@@ -6286,7 +6286,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets fromFollowUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFromFollowUv()
     {
@@ -6310,7 +6310,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets fromFollowCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFromFollowCost()
     {
@@ -6334,7 +6334,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets addDesktopPv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAddDesktopPv()
     {
@@ -6358,7 +6358,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets addDesktopCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAddDesktopCost()
     {
@@ -6382,7 +6382,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstPayCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstPayCount()
     {
@@ -6406,7 +6406,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstPayRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getFirstPayRate()
     {
@@ -6430,7 +6430,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets preCreWeb
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPreCreWeb()
     {
@@ -6454,7 +6454,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets preCreApp
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPreCreApp()
     {
@@ -6478,7 +6478,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets preCreWebVal
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPreCreWebVal()
     {
@@ -6502,7 +6502,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets preCreAppVal
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPreCreAppVal()
     {
@@ -6526,7 +6526,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets creWeb
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreWeb()
     {
@@ -6550,7 +6550,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets creApp
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreApp()
     {
@@ -6574,7 +6574,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets creWebVal
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreWebVal()
     {
@@ -6598,7 +6598,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets creAppVal
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreAppVal()
     {
@@ -6622,7 +6622,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets withdrDepWeb
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWithdrDepWeb()
     {
@@ -6646,7 +6646,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets withdrDepApp
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWithdrDepApp()
     {
@@ -6670,7 +6670,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets withdrDepWebVal
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWithdrDepWebVal()
     {
@@ -6694,7 +6694,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets withdrDepAppVal
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWithdrDepAppVal()
     {
@@ -6718,7 +6718,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstPayCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstPayCost()
     {
@@ -6742,7 +6742,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets landingPageClickCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLandingPageClickCount()
     {
@@ -6766,7 +6766,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCartAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebCartAmount()
     {
@@ -6790,7 +6790,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets scanFollowCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getScanFollowCount()
     {
@@ -6814,7 +6814,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets scanFollowUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getScanFollowUserCount()
     {
@@ -6838,7 +6838,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets scanFollowUserCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getScanFollowUserCost()
     {
@@ -6862,7 +6862,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets scanFollowUserRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getScanFollowUserRate()
     {
@@ -6886,7 +6886,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appOrderAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppOrderAmount()
     {
@@ -6910,7 +6910,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webOrderAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebOrderAmount()
     {
@@ -6934,7 +6934,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets phoneConsultCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPhoneConsultCount()
     {
@@ -6958,7 +6958,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets toolConsultCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getToolConsultCount()
     {
@@ -6982,7 +6982,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lotteryLeadsCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLotteryLeadsCount()
     {
@@ -7006,7 +7006,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lotteryLeadsCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLotteryLeadsCost()
     {
@@ -7030,7 +7030,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets conversionsCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getConversionsCount()
     {
@@ -7054,7 +7054,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets conversionsRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getConversionsRate()
     {
@@ -7078,7 +7078,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets conversionsCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getConversionsCost()
     {
@@ -7102,7 +7102,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets deepConversionsCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDeepConversionsCount()
     {
@@ -7126,7 +7126,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets deepConversionsRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getDeepConversionsRate()
     {
@@ -7150,7 +7150,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets deepConversionsCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDeepConversionsCost()
     {
@@ -7174,7 +7174,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstMemcardWebCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstMemcardWebCount()
     {
@@ -7198,7 +7198,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstMemcardAppCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstMemcardAppCount()
     {
@@ -7222,7 +7222,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets memcardWebCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMemcardWebCount()
     {
@@ -7246,7 +7246,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets memcardAppCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMemcardAppCount()
     {
@@ -7270,7 +7270,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstMemcardWebRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getFirstMemcardWebRate()
     {
@@ -7294,7 +7294,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstMemcardAppRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getFirstMemcardAppRate()
     {
@@ -7318,7 +7318,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstMemcardWebCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstMemcardWebCost()
     {
@@ -7342,7 +7342,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstMemcardAppCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstMemcardAppCost()
     {
@@ -7366,7 +7366,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets valuableClickCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getValuableClickCount()
     {
@@ -7390,7 +7390,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets valuableClickRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getValuableClickRate()
     {
@@ -7414,7 +7414,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets valuableClickCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getValuableClickCost()
     {
@@ -7438,7 +7438,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoPlayCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoPlayCount()
     {
@@ -7462,7 +7462,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets clickImageCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getClickImageCount()
     {
@@ -7486,7 +7486,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets clickDetailCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getClickDetailCount()
     {
@@ -7510,7 +7510,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets clickHeadCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getClickHeadCount()
     {
@@ -7534,7 +7534,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets clickNickCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getClickNickCount()
     {
@@ -7558,7 +7558,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets clickPoiCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getClickPoiCount()
     {
@@ -7582,7 +7582,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoInnerPlayCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoInnerPlayCount()
     {
@@ -7606,7 +7606,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lanButtonClickCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLanButtonClickCount()
     {
@@ -7630,7 +7630,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lanJumpButtonClickers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLanJumpButtonClickers()
     {
@@ -7654,7 +7654,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lanJumpButtonClickCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLanJumpButtonClickCost()
     {
@@ -7678,7 +7678,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lanJumpButtonCtr
      *
-     * @return double
+     * @return double|mixed
      */
     public function getLanJumpButtonCtr()
     {
@@ -7702,7 +7702,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lanButtonClickCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLanButtonClickCost()
     {
@@ -7726,7 +7726,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cpnClickButtonCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCpnClickButtonCount()
     {
@@ -7750,7 +7750,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cpnClickButtonUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCpnClickButtonUv()
     {
@@ -7774,7 +7774,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets keyPageUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getKeyPageUv()
     {
@@ -7798,7 +7798,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets specialPageExpUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSpecialPageExpUv()
     {
@@ -7822,7 +7822,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets specialPageExpCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSpecialPageExpCost()
     {
@@ -7846,7 +7846,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets viewCommodityPageUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getViewCommodityPageUv()
     {
@@ -7870,7 +7870,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectLeadsPurchaseCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getEffectLeadsPurchaseCount()
     {
@@ -7894,7 +7894,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets reservationUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getReservationUv()
     {
@@ -7918,7 +7918,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets overallLeadsPurchaseCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOverallLeadsPurchaseCount()
     {
@@ -7942,7 +7942,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsPurchaseCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLeadsPurchaseCount()
     {
@@ -7966,7 +7966,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsPurchaseRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getLeadsPurchaseRate()
     {
@@ -7990,7 +7990,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsPurchaseCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLeadsPurchaseCost()
     {
@@ -8014,7 +8014,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsPurchaseUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLeadsPurchaseUv()
     {
@@ -8038,7 +8038,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets validLeadsUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getValidLeadsUv()
     {
@@ -8062,7 +8062,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets phoneCallUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPhoneCallUv()
     {
@@ -8086,7 +8086,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets validPhoneUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getValidPhoneUv()
     {
@@ -8110,7 +8110,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets potentialCustomerPhoneUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPotentialCustomerPhoneUv()
     {
@@ -8134,7 +8134,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webRegisterUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebRegisterUv()
     {
@@ -8158,7 +8158,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webApplyUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebApplyUv()
     {
@@ -8182,7 +8182,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webCreditUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWebCreditUv()
     {
@@ -8206,7 +8206,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appApplyUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppApplyUv()
     {
@@ -8230,7 +8230,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appPreCreditUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppPreCreditUv()
     {
@@ -8254,7 +8254,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appCreditUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppCreditUv()
     {
@@ -8278,7 +8278,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appWithdrawUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAppWithdrawUv()
     {
@@ -8302,7 +8302,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatAppRegisterUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatAppRegisterUv()
     {
@@ -8326,7 +8326,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets noInterestCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getNoInterestCount()
     {
@@ -8350,7 +8350,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayOrderCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstDayOrderCount()
     {
@@ -8374,7 +8374,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayOrderAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstDayOrderAmount()
     {
@@ -8398,7 +8398,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets addWishlistCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAddWishlistCount()
     {
@@ -8422,7 +8422,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlay10Count
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoOuterPlay10Count()
     {
@@ -8446,7 +8446,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlay25Count
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoOuterPlay25Count()
     {
@@ -8470,7 +8470,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlay50Count
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoOuterPlay50Count()
     {
@@ -8494,7 +8494,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlay75Count
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoOuterPlay75Count()
     {
@@ -8518,7 +8518,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlay95Count
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoOuterPlay95Count()
     {
@@ -8542,7 +8542,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlay100Count
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoOuterPlay100Count()
     {
@@ -8566,7 +8566,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlayTimeCount
      *
-     * @return double
+     * @return double|mixed
      */
     public function getVideoOuterPlayTimeCount()
     {
@@ -8590,7 +8590,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlayTimeAvgRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getVideoOuterPlayTimeAvgRate()
     {
@@ -8614,7 +8614,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlayRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getVideoOuterPlayRate()
     {
@@ -8638,7 +8638,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlayCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoOuterPlayCost()
     {
@@ -8662,7 +8662,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlayCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoOuterPlayCount()
     {
@@ -8686,7 +8686,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlay3sCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoOuterPlay3sCount()
     {
@@ -8710,7 +8710,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlay5sCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoOuterPlay5sCount()
     {
@@ -8734,7 +8734,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoOuterPlay7sCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoOuterPlay7sCount()
     {
@@ -8758,7 +8758,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectLeadsPurchaseCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getEffectLeadsPurchaseCost()
     {
@@ -8782,7 +8782,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets creWebCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreWebCost()
     {
@@ -8806,7 +8806,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets creAppCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreAppCost()
     {
@@ -8830,7 +8830,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets preCreWebCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPreCreWebCost()
     {
@@ -8854,7 +8854,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets preCreAppCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPreCreAppCost()
     {
@@ -8878,7 +8878,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets storeVisitor
      *
-     * @return int
+     * @return int|mixed
      */
     public function getStoreVisitor()
     {
@@ -8902,7 +8902,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets tryOutUser
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTryOutUser()
     {
@@ -8926,7 +8926,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets consultLeaveInfoUsers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getConsultLeaveInfoUsers()
     {
@@ -8950,7 +8950,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activePageViews
      *
-     * @return int
+     * @return int|mixed
      */
     public function getActivePageViews()
     {
@@ -8974,7 +8974,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activePageViewers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getActivePageViewers()
     {
@@ -8998,7 +8998,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activePageInteractionAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getActivePageInteractionAmount()
     {
@@ -9022,7 +9022,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activePageInteractionUsers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getActivePageInteractionUsers()
     {
@@ -9046,7 +9046,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets joinChatGroupAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getJoinChatGroupAmount()
     {
@@ -9070,7 +9070,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets joinChatGroupNumberOfPeople
      *
-     * @return int
+     * @return int|mixed
      */
     public function getJoinChatGroupNumberOfPeople()
     {
@@ -9094,7 +9094,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets joinChatGroupCostByPeople
      *
-     * @return int
+     * @return int|mixed
      */
     public function getJoinChatGroupCostByPeople()
     {
@@ -9118,7 +9118,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets guideToFollowPageViews
      *
-     * @return int
+     * @return int|mixed
      */
     public function getGuideToFollowPageViews()
     {
@@ -9142,7 +9142,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets guideToFollowPageViewers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getGuideToFollowPageViewers()
     {
@@ -9166,7 +9166,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets guideToFollowPageInteractionAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getGuideToFollowPageInteractionAmount()
     {
@@ -9190,7 +9190,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets guideToFollowPageInteractionUsers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getGuideToFollowPageInteractionUsers()
     {
@@ -9214,7 +9214,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameRegisterUsers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameRegisterUsers()
     {
@@ -9238,7 +9238,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameRegisterCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameRegisterCost()
     {
@@ -9262,7 +9262,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameRegisterRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameRegisterRate()
     {
@@ -9286,7 +9286,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameAdMonetizationUsers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameAdMonetizationUsers()
     {
@@ -9310,7 +9310,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayingCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGamePayingCount()
     {
@@ -9334,7 +9334,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayingAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGamePayingAmount()
     {
@@ -9358,7 +9358,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameFirstPayingUsers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameFirstPayingUsers()
     {
@@ -9382,7 +9382,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameCreateRoleUsers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameCreateRoleUsers()
     {
@@ -9406,7 +9406,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameCreateRoleCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameCreateRoleCost()
     {
@@ -9430,7 +9430,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameRetentionD1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameRetentionD1()
     {
@@ -9454,7 +9454,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameKeyPageViewers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameKeyPageViewers()
     {
@@ -9478,7 +9478,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameKeyPageViewCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameKeyPageViewCost()
     {
@@ -9502,7 +9502,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameAdMonetizationAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameAdMonetizationAmount()
     {
@@ -9526,7 +9526,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayingAmountByUpload
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGamePayingAmountByUpload()
     {
@@ -9550,7 +9550,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayingCountByUpload
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGamePayingCountByUpload()
     {
@@ -9574,7 +9574,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets consultLeaveInfoCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getConsultLeaveInfoCost()
     {
@@ -9598,7 +9598,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets purchaseAmountWithCoupon
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPurchaseAmountWithCoupon()
     {
@@ -9622,7 +9622,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets purchaseAmountWithCouponCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPurchaseAmountWithCouponCost()
     {
@@ -9646,7 +9646,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayingAmountClickD1ByUpload
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGamePayingAmountClickD1ByUpload()
     {
@@ -9670,7 +9670,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameRetentionD1Rate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameRetentionD1Rate()
     {
@@ -9694,7 +9694,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameRetentionD1Cost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameRetentionD1Cost()
     {
@@ -9718,7 +9718,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets keyPageViewRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getKeyPageViewRate()
     {
@@ -9742,7 +9742,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatCostStage1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatCostStage1()
     {
@@ -9766,7 +9766,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatCostStage2
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatCostStage2()
     {
@@ -9790,7 +9790,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatDeepConversionsCountStage1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatDeepConversionsCountStage1()
     {
@@ -9814,7 +9814,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatDeepConversionsCountStage2
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatDeepConversionsCountStage2()
     {
@@ -9838,7 +9838,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatShallowConversionsCountStage1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatShallowConversionsCountStage1()
     {
@@ -9862,7 +9862,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatShallowConversionsCountStage2
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatShallowConversionsCountStage2()
     {
@@ -9886,7 +9886,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activateRegisterRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getActivateRegisterRate()
     {
@@ -9910,7 +9910,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets keyBehaviorConversionsCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getKeyBehaviorConversionsCount()
     {
@@ -9934,7 +9934,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets keyBehaviorConversionsCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getKeyBehaviorConversionsCost()
     {
@@ -9958,7 +9958,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets keyBehaviorConversionsRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getKeyBehaviorConversionsRate()
     {
@@ -9982,7 +9982,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayOrderRoi
      *
-     * @return double
+     * @return double|mixed
      */
     public function getFirstDayOrderRoi()
     {
@@ -10006,7 +10006,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameAdMonetizationCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameAdMonetizationCost()
     {
@@ -10030,7 +10030,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameAdMonetizationRoi
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameAdMonetizationRoi()
     {
@@ -10054,7 +10054,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameAdMonetizationArpu
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameAdMonetizationArpu()
     {
@@ -10078,7 +10078,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayingRoi
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGamePayingRoi()
     {
@@ -10102,7 +10102,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayingArpu
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGamePayingArpu()
     {
@@ -10126,7 +10126,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets age
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAge()
     {
@@ -10150,7 +10150,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets regionId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRegionId()
     {
@@ -10174,7 +10174,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cityId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCityId()
     {
@@ -10198,7 +10198,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets province
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProvince()
     {
@@ -10222,7 +10222,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets city
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCity()
     {
@@ -10246,7 +10246,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets viewUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getViewUserCount()
     {
@@ -10270,7 +10270,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets avgViewPerUser
      *
-     * @return double
+     * @return double|mixed
      */
     public function getAvgViewPerUser()
     {
@@ -10294,7 +10294,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets clickUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getClickUserCount()
     {
@@ -10318,7 +10318,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets linkClickUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLinkClickUserCount()
     {
@@ -10342,7 +10342,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets portraitClickUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPortraitClickUserCount()
     {
@@ -10366,7 +10366,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets nicknameClickUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getNicknameClickUserCount()
     {
@@ -10390,7 +10390,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets poiClickUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPoiClickUserCount()
     {
@@ -10414,7 +10414,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets praiseUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPraiseUserCount()
     {
@@ -10438,7 +10438,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets commentUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCommentUserCount()
     {
@@ -10462,7 +10462,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets orderCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOrderCount()
     {
@@ -10486,7 +10486,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLeadsUserCount()
     {
@@ -10510,7 +10510,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets validLeadsCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getValidLeadsCost()
     {
@@ -10534,7 +10534,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets officialAccountFollowCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOfficialAccountFollowCount()
     {
@@ -10558,7 +10558,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets couponUseCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCouponUseCount()
     {
@@ -10582,7 +10582,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets targetingType
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTargetingType()
     {
@@ -10606,7 +10606,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets targetingTag
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTargetingTag()
     {
@@ -10630,7 +10630,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets tagClass
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTagClass()
     {
@@ -10654,7 +10654,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets behaviorScene
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBehaviorScene()
     {
@@ -10678,7 +10678,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets behaviorTimeWindow
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBehaviorTimeWindow()
     {
@@ -10702,7 +10702,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets behaviorIntensity
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBehaviorIntensity()
     {
@@ -10726,7 +10726,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets genderName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getGenderName()
     {
@@ -10750,7 +10750,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -10774,7 +10774,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets campaignId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampaignId()
     {
@@ -10798,7 +10798,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -10822,7 +10822,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdId()
     {
@@ -10846,7 +10846,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets audienceId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAudienceId()
     {
@@ -10870,7 +10870,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPromotedObjectType()
     {
@@ -10894,7 +10894,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPromotedObjectId()
     {
@@ -10918,7 +10918,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets requestConversionsCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRequestConversionsCount()
     {
@@ -10942,7 +10942,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets requestConversionsCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRequestConversionsCost()
     {
@@ -10966,7 +10966,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets incomeVal1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getIncomeVal1()
     {
@@ -10990,7 +10990,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets incomeVal3
      *
-     * @return int
+     * @return int|mixed
      */
     public function getIncomeVal3()
     {
@@ -11014,7 +11014,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets incomeVal7
      *
-     * @return int
+     * @return int|mixed
      */
     public function getIncomeVal7()
     {
@@ -11038,7 +11038,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets incomeVal14
      *
-     * @return int
+     * @return int|mixed
      */
     public function getIncomeVal14()
     {
@@ -11062,7 +11062,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets incomeRoi1
      *
-     * @return double
+     * @return double|mixed
      */
     public function getIncomeRoi1()
     {
@@ -11086,7 +11086,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets incomeRoi3
      *
-     * @return double
+     * @return double|mixed
      */
     public function getIncomeRoi3()
     {
@@ -11110,7 +11110,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets incomeRoi7
      *
-     * @return double
+     * @return double|mixed
      */
     public function getIncomeRoi7()
     {
@@ -11134,7 +11134,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets incomeRoi14
      *
-     * @return double
+     * @return double|mixed
      */
     public function getIncomeRoi14()
     {
@@ -11158,7 +11158,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets activatedTotalPaymentCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getActivatedTotalPaymentCost()
     {
@@ -11182,7 +11182,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets paymentAmountActivatedD3
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPaymentAmountActivatedD3()
     {
@@ -11206,7 +11206,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets paymentAmountActivatedD7
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPaymentAmountActivatedD7()
     {
@@ -11230,7 +11230,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets paymentAmountActivatedD14
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPaymentAmountActivatedD14()
     {
@@ -11254,7 +11254,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets paymentAmountActivatedD30
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPaymentAmountActivatedD30()
     {
@@ -11278,7 +11278,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayPayCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstDayPayCount()
     {
@@ -11302,7 +11302,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayPayCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstDayPayCost()
     {
@@ -11326,7 +11326,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayFirstPayCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstDayFirstPayCost()
     {
@@ -11350,7 +11350,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayFirstPayCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstDayFirstPayCount()
     {
@@ -11374,7 +11374,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets paymentCostActivatedD1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPaymentCostActivatedD1()
     {
@@ -11398,7 +11398,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayPayAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstDayPayAmount()
     {
@@ -11422,7 +11422,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets roiActivatedD1
      *
-     * @return double
+     * @return double|mixed
      */
     public function getRoiActivatedD1()
     {
@@ -11446,7 +11446,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets roiActivatedD3
      *
-     * @return double
+     * @return double|mixed
      */
     public function getRoiActivatedD3()
     {
@@ -11470,7 +11470,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets roiActivatedD7
      *
-     * @return double
+     * @return double|mixed
      */
     public function getRoiActivatedD7()
     {
@@ -11494,7 +11494,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets roiActivatedD14
      *
-     * @return double
+     * @return double|mixed
      */
     public function getRoiActivatedD14()
     {
@@ -11518,7 +11518,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayAdPurArppuCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstDayAdPurArppuCost()
     {
@@ -11542,7 +11542,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayPayAmountArpu
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstDayPayAmountArpu()
     {
@@ -11566,7 +11566,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayPayAmountArppu
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstDayPayAmountArppu()
     {
@@ -11590,7 +11590,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets roiActivatedD30
      *
-     * @return double
+     * @return double|mixed
      */
     public function getRoiActivatedD30()
     {
@@ -11614,7 +11614,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstDayFirstPayRate
      *
-     * @return double
+     * @return double|mixed
      */
     public function getFirstDayFirstPayRate()
     {
@@ -11638,7 +11638,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameFirstDayAdMonetizationUsers
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameFirstDayAdMonetizationUsers()
     {
@@ -11662,7 +11662,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameFirstDayAdMonetizationAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameFirstDayAdMonetizationAmount()
     {
@@ -11686,7 +11686,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameFirstDayAdPayingCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameFirstDayAdPayingCost()
     {
@@ -11710,7 +11710,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameIncomeRoi1
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameIncomeRoi1()
     {
@@ -11734,7 +11734,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameFirstDayAdPayingArpu
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGameFirstDayAdPayingArpu()
     {
@@ -11758,7 +11758,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayingUsersD1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGamePayingUsersD1()
     {
@@ -11782,7 +11782,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayingAmountD1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGamePayingAmountD1()
     {
@@ -11806,7 +11806,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameFirstDayPayingRoi
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameFirstDayPayingRoi()
     {
@@ -11830,7 +11830,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayingAmountD1ByUpload
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGamePayingAmountD1ByUpload()
     {
@@ -11854,7 +11854,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets mixedMonetizationRoiD1
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMixedMonetizationRoiD1()
     {
@@ -11878,7 +11878,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets mixedMonetizationRoiD3
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMixedMonetizationRoiD3()
     {
@@ -11902,7 +11902,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets mixedMonetizationRoiD7
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMixedMonetizationRoiD7()
     {
@@ -11926,7 +11926,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets mixedMonetizationRoiD14
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMixedMonetizationRoiD14()
     {
@@ -11950,7 +11950,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameMixedMonetizationRoiD1
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameMixedMonetizationRoiD1()
     {
@@ -11974,7 +11974,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameMixedMonetizationRoiD1ByReporting
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameMixedMonetizationRoiD1ByReporting()
     {
@@ -11998,7 +11998,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameMixedMonetizationRoiD3
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameMixedMonetizationRoiD3()
     {
@@ -12022,7 +12022,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameMixedMonetizationRoiD3ByReporting
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameMixedMonetizationRoiD3ByReporting()
     {
@@ -12046,7 +12046,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameMixedMonetizationRoiD7
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameMixedMonetizationRoiD7()
     {
@@ -12070,7 +12070,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameMixedMonetizationRoiD7ByReporting
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameMixedMonetizationRoiD7ByReporting()
     {
@@ -12094,7 +12094,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameMixedMonetizationRoiD14
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameMixedMonetizationRoiD14()
     {
@@ -12118,7 +12118,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameMixedMonetizationRoiD14ByReporting
      *
-     * @return double
+     * @return double|mixed
      */
     public function getMiniGameMixedMonetizationRoiD14ByReporting()
     {
@@ -12142,7 +12142,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adPayingUsersD1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdPayingUsersD1()
     {
@@ -12166,7 +12166,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adPayingCostD1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdPayingCostD1()
     {
@@ -12190,7 +12190,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adPurArpuCostD1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdPurArpuCostD1()
     {
@@ -12214,7 +12214,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adMonetizationPenetrationRatD1
      *
-     * @return double
+     * @return double|mixed
      */
     public function getAdMonetizationPenetrationRatD1()
     {
@@ -12238,7 +12238,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayingArpuD1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMiniGamePayingArpuD1()
     {

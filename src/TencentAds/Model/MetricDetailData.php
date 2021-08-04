@@ -310,7 +310,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Gets cost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCost()
     {
@@ -334,7 +334,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Gets expPv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getExpPv()
     {
@@ -358,7 +358,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Gets canvasCpnCouponsGetPv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCanvasCpnCouponsGetPv()
     {
@@ -382,7 +382,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Gets canvasCpnCouponsCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCanvasCpnCouponsCost()
     {
@@ -406,7 +406,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Gets canvasCpnCouponsUsePv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCanvasCpnCouponsUsePv()
     {
@@ -430,7 +430,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Gets purchase
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPurchase()
     {
@@ -454,7 +454,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Gets promotionClaimOfferPv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPromotionClaimOfferPv()
     {
@@ -478,7 +478,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Gets pageVisitStorePv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageVisitStorePv()
     {
@@ -502,7 +502,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Gets weappExpPv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWeappExpPv()
     {
@@ -526,7 +526,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Gets promotionClaimOfferCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPromotionClaimOfferCost()
     {
@@ -550,7 +550,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Gets pageVisitStoreAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageVisitStoreAmount()
     {
@@ -574,7 +574,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Gets buyCouponsPv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBuyCouponsPv()
     {
@@ -598,7 +598,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Gets buyCouponsCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBuyCouponsCost()
     {
@@ -622,7 +622,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Gets questReservationUv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getQuestReservationUv()
     {
@@ -646,7 +646,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Gets cvsExpPv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCvsExpPv()
     {
@@ -670,7 +670,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Gets cvsExpCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCvsExpCost()
     {
@@ -694,7 +694,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Gets weappExpCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWeappExpCost()
     {
@@ -718,7 +718,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Gets questReservationUvCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getQuestReservationUvCost()
     {

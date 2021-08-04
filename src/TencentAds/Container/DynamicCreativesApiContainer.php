@@ -30,7 +30,7 @@ class DynamicCreativesApiContainer extends ApiContainer
     /**
      * Handle DynamicCreativesApi dynamicCreativesAdd function
      * @param array params
-     * @return \TencentAds\Model\DynamicCreativesAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class DynamicCreativesApiContainer extends ApiContainer
     /**
      * Handle DynamicCreativesApi dynamicCreativesGet function
      * @param array params
-     * @return \TencentAds\Model\DynamicCreativesGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -106,7 +106,7 @@ class DynamicCreativesApiContainer extends ApiContainer
     /**
      * Handle DynamicCreativesApi dynamicCreativesUpdate function
      * @param array params
-     * @return \TencentAds\Model\DynamicCreativesUpdateResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

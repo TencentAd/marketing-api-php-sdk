@@ -30,7 +30,7 @@ class BatchRequestsApiContainer extends ApiContainer
     /**
      * Handle BatchRequestsApi batchRequestsAdd function
      * @param array params
-     * @return \TencentAds\Model\BatchRequestsAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

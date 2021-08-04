@@ -238,7 +238,7 @@ class PromotedObjectsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPromotedObjectName()
     {
@@ -262,7 +262,7 @@ class PromotedObjectsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPromotedObjectId()
     {
@@ -286,7 +286,7 @@ class PromotedObjectsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\ProductPromotedObjectTypeSelect
+     * @return \TencentAds\Model\ProductPromotedObjectTypeSelect|mixed
      */
     public function getPromotedObjectType()
     {
@@ -310,7 +310,7 @@ class PromotedObjectsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectSpec
      *
-     * @return \TencentAds\Model\PromotedObjectSpecRead
+     * @return \TencentAds\Model\PromotedObjectSpecRead|mixed
      */
     public function getPromotedObjectSpec()
     {
@@ -334,7 +334,7 @@ class PromotedObjectsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {
@@ -358,7 +358,7 @@ class PromotedObjectsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLastModifiedTime()
     {

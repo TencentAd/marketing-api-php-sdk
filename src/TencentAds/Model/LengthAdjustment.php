@@ -214,7 +214,7 @@ class LengthAdjustment implements ModelInterface, ArrayAccess
     /**
      * Gets targetLength
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTargetLength()
     {
@@ -238,7 +238,7 @@ class LengthAdjustment implements ModelInterface, ArrayAccess
     /**
      * Gets lengthAdjustmentMethod
      *
-     * @return \TencentAds\Model\LengthAdjustmentMethod
+     * @return \TencentAds\Model\LengthAdjustmentMethod|mixed
      */
     public function getLengthAdjustmentMethod()
     {

@@ -220,7 +220,7 @@ class RangeDistribution implements ModelInterface, ArrayAccess
     /**
      * Gets dimensionValue
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDimensionValue()
     {
@@ -244,7 +244,7 @@ class RangeDistribution implements ModelInterface, ArrayAccess
     /**
      * Gets percentage
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPercentage()
     {
@@ -268,7 +268,7 @@ class RangeDistribution implements ModelInterface, ArrayAccess
     /**
      * Gets tgi
      *
-     * @return double
+     * @return double|mixed
      */
     public function getTgi()
     {

@@ -96,7 +96,7 @@ class SplitTestsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\SplitTestsAddResponse
+     * @return \TencentAds\Model\SplitTestsAddResponse|mixed
      */
     public function splitTestsAdd($data)
     {
@@ -378,7 +378,7 @@ class SplitTestsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\SplitTestsDeleteResponse
+     * @return \TencentAds\Model\SplitTestsDeleteResponse|mixed
      */
     public function splitTestsDelete($data)
     {
@@ -664,7 +664,7 @@ class SplitTestsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\SplitTestsGetResponse
+     * @return \TencentAds\Model\SplitTestsGetResponse|mixed
      */
     public function splitTestsGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
@@ -985,7 +985,7 @@ class SplitTestsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\SplitTestsUpdateResponse
+     * @return \TencentAds\Model\SplitTestsUpdateResponse|mixed
      */
     public function splitTestsUpdate($data)
     {

@@ -98,7 +98,7 @@ class BusinessManagerRelationsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\BusinessManagerRelationsGetResponse
+     * @return \TencentAds\Model\BusinessManagerRelationsGetResponse|mixed
      */
     public function businessManagerRelationsGet($page = null, $pageSize = null, $fields = null)
     {

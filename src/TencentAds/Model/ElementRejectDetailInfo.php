@@ -244,7 +244,7 @@ class ElementRejectDetailInfo implements ModelInterface, ArrayAccess
     /**
      * Gets elementName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getElementName()
     {
@@ -268,7 +268,7 @@ class ElementRejectDetailInfo implements ModelInterface, ArrayAccess
     /**
      * Gets elementValue
      *
-     * @return string
+     * @return string|mixed
      */
     public function getElementValue()
     {
@@ -292,7 +292,7 @@ class ElementRejectDetailInfo implements ModelInterface, ArrayAccess
     /**
      * Gets elementType
      *
-     * @return string
+     * @return string|mixed
      */
     public function getElementType()
     {
@@ -316,7 +316,7 @@ class ElementRejectDetailInfo implements ModelInterface, ArrayAccess
     /**
      * Gets reason
      *
-     * @return string
+     * @return string|mixed
      */
     public function getReason()
     {
@@ -340,7 +340,7 @@ class ElementRejectDetailInfo implements ModelInterface, ArrayAccess
     /**
      * Gets caseDoc
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCaseDoc()
     {
@@ -364,7 +364,7 @@ class ElementRejectDetailInfo implements ModelInterface, ArrayAccess
     /**
      * Gets caseContent
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCaseContent()
     {
@@ -388,7 +388,7 @@ class ElementRejectDetailInfo implements ModelInterface, ArrayAccess
     /**
      * Gets rejectInfoLocation
      *
-     * @return \TencentAds\Model\RejectInfoLocation[]
+     * @return \TencentAds\Model\RejectInfoLocation[]|mixed
      */
     public function getRejectInfoLocation()
     {

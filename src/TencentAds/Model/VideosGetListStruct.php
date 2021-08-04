@@ -400,7 +400,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoId()
     {
@@ -424,7 +424,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets width
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWidth()
     {
@@ -448,7 +448,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets height
      *
-     * @return int
+     * @return int|mixed
      */
     public function getHeight()
     {
@@ -472,7 +472,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoFrames
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoFrames()
     {
@@ -496,7 +496,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoFps
      *
-     * @return double
+     * @return double|mixed
      */
     public function getVideoFps()
     {
@@ -520,7 +520,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoCodec
      *
-     * @return string
+     * @return string|mixed
      */
     public function getVideoCodec()
     {
@@ -544,7 +544,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoBitRate
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoBitRate()
     {
@@ -568,7 +568,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets audioCodec
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAudioCodec()
     {
@@ -592,7 +592,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets audioBitRate
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAudioBitRate()
     {
@@ -616,7 +616,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets fileSize
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFileSize()
     {
@@ -640,7 +640,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \TencentAds\Model\MediaType
+     * @return \TencentAds\Model\MediaType|mixed
      */
     public function getType()
     {
@@ -664,7 +664,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets signature
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSignature()
     {
@@ -688,7 +688,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets systemStatus
      *
-     * @return \TencentAds\Model\MediaSystemStatus
+     * @return \TencentAds\Model\MediaSystemStatus|mixed
      */
     public function getSystemStatus()
     {
@@ -712,7 +712,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -736,7 +736,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets previewUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPreviewUrl()
     {
@@ -760,7 +760,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets keyFrameImageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getKeyFrameImageUrl()
     {
@@ -784,7 +784,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {
@@ -808,7 +808,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLastModifiedTime()
     {
@@ -832,7 +832,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoProfileName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getVideoProfileName()
     {
@@ -856,7 +856,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets audioSampleRate
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAudioSampleRate()
     {
@@ -880,7 +880,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets maxKeyframeInterval
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMaxKeyframeInterval()
     {
@@ -904,7 +904,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets minKeyframeInterval
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMinKeyframeInterval()
     {
@@ -928,7 +928,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets sampleAspectRatio
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSampleAspectRatio()
     {
@@ -952,7 +952,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets audioProfileName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAudioProfileName()
     {
@@ -976,7 +976,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets scanType
      *
-     * @return string
+     * @return string|mixed
      */
     public function getScanType()
     {
@@ -1000,7 +1000,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets imageDurationMillisecond
      *
-     * @return int
+     * @return int|mixed
      */
     public function getImageDurationMillisecond()
     {
@@ -1024,7 +1024,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets audioDurationMillisecond
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAudioDurationMillisecond()
     {
@@ -1048,7 +1048,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets sourceType
      *
-     * @return \TencentAds\Model\MediaSourceType
+     * @return \TencentAds\Model\MediaSourceType|mixed
      */
     public function getSourceType()
     {
@@ -1072,7 +1072,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productCatalogId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductCatalogId()
     {
@@ -1096,7 +1096,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productOuterId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductOuterId()
     {
@@ -1120,7 +1120,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets sourceReferenceId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSourceReferenceId()
     {
@@ -1144,7 +1144,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ownerAccountId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOwnerAccountId()
     {
@@ -1168,7 +1168,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \TencentAds\Model\MediaStatusType
+     * @return \TencentAds\Model\MediaStatusType|mixed
      */
     public function getStatus()
     {

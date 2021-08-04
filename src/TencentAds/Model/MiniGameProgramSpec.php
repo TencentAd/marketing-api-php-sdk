@@ -220,7 +220,7 @@ class MiniGameProgramSpec implements ModelInterface, ArrayAccess
     /**
      * Gets title
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTitle()
     {
@@ -244,7 +244,7 @@ class MiniGameProgramSpec implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameProgramId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMiniGameProgramId()
     {
@@ -268,7 +268,7 @@ class MiniGameProgramSpec implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameProgramPath
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMiniGameProgramPath()
     {

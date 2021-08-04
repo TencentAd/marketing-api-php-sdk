@@ -226,7 +226,7 @@ class AdditionalIndustryQualificationsSpec implements ModelInterface, ArrayAcces
     /**
      * Gets systemIndustryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSystemIndustryId()
     {
@@ -250,7 +250,7 @@ class AdditionalIndustryQualificationsSpec implements ModelInterface, ArrayAcces
     /**
      * Gets businessScopeId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBusinessScopeId()
     {
@@ -274,7 +274,7 @@ class AdditionalIndustryQualificationsSpec implements ModelInterface, ArrayAcces
     /**
      * Gets qualificationCode
      *
-     * @return string
+     * @return string|mixed
      */
     public function getQualificationCode()
     {
@@ -298,7 +298,7 @@ class AdditionalIndustryQualificationsSpec implements ModelInterface, ArrayAcces
     /**
      * Gets imageIdList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getImageIdList()
     {

@@ -30,7 +30,7 @@ class UserActionSetsApiContainer extends ApiContainer
     /**
      * Handle UserActionSetsApi userActionSetsAdd function
      * @param array params
-     * @return \TencentAds\Model\UserActionSetsAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class UserActionSetsApiContainer extends ApiContainer
     /**
      * Handle UserActionSetsApi userActionSetsGet function
      * @param array params
-     * @return \TencentAds\Model\UserActionSetsGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

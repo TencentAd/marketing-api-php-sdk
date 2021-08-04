@@ -214,7 +214,7 @@ class LastModifiedTimeRange implements ModelInterface, ArrayAccess
     /**
      * Gets beginTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBeginTime()
     {
@@ -238,7 +238,7 @@ class LastModifiedTimeRange implements ModelInterface, ArrayAccess
     /**
      * Gets endTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getEndTime()
     {

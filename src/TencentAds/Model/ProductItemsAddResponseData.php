@@ -207,7 +207,7 @@ class ProductItemsAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\ProductItemsAddListStruct[]
+     * @return \TencentAds\Model\ProductItemsAddListStruct[]|mixed
      */
     public function getList()
     {

@@ -220,7 +220,7 @@ class SubMethod implements ModelInterface, ArrayAccess
     /**
      * Gets subMethodId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSubMethodId()
     {
@@ -244,7 +244,7 @@ class SubMethod implements ModelInterface, ArrayAccess
     /**
      * Gets subMethodName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSubMethodName()
     {
@@ -268,7 +268,7 @@ class SubMethod implements ModelInterface, ArrayAccess
     /**
      * Gets subMethodDescription
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSubMethodDescription()
     {

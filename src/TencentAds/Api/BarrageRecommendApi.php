@@ -97,7 +97,7 @@ class BarrageRecommendApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\BarrageRecommendGetResponse
+     * @return \TencentAds\Model\BarrageRecommendGetResponse|mixed
      */
     public function barrageRecommendGet($accountId, $fields = null)
     {

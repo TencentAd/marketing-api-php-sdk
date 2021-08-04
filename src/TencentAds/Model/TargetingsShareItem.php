@@ -220,7 +220,7 @@ class TargetingsShareItem implements ModelInterface, ArrayAccess
     /**
      * Gets targetingId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTargetingId()
     {
@@ -244,7 +244,7 @@ class TargetingsShareItem implements ModelInterface, ArrayAccess
     /**
      * Gets shareToAccountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getShareToAccountId()
     {
@@ -268,7 +268,7 @@ class TargetingsShareItem implements ModelInterface, ArrayAccess
     /**
      * Gets shareType
      *
-     * @return \TencentAds\Model\TargetingShareType
+     * @return \TencentAds\Model\TargetingShareType|mixed
      */
     public function getShareType()
     {

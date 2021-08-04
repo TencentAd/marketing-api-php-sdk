@@ -280,7 +280,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets campaignId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampaignId()
     {
@@ -304,7 +304,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets campaignName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCampaignName()
     {
@@ -328,7 +328,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets configuredStatus
      *
-     * @return \TencentAds\Model\AdStatus
+     * @return \TencentAds\Model\AdStatus|mixed
      */
     public function getConfiguredStatus()
     {
@@ -352,7 +352,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets campaignType
      *
-     * @return \TencentAds\Model\CampaignType
+     * @return \TencentAds\Model\CampaignType|mixed
      */
     public function getCampaignType()
     {
@@ -376,7 +376,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObjectType
+     * @return \TencentAds\Model\PromotedObjectType|mixed
      */
     public function getPromotedObjectType()
     {
@@ -400,7 +400,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets dailyBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDailyBudget()
     {
@@ -424,7 +424,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets totalBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTotalBudget()
     {
@@ -448,7 +448,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets budgetReachDate
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBudgetReachDate()
     {
@@ -472,7 +472,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {
@@ -496,7 +496,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLastModifiedTime()
     {
@@ -520,7 +520,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets speedMode
      *
-     * @return \TencentAds\Model\SpeedMode
+     * @return \TencentAds\Model\SpeedMode|mixed
      */
     public function getSpeedMode()
     {
@@ -544,7 +544,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets isDeleted
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getIsDeleted()
     {
@@ -568,7 +568,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets isAutoReplenish
      *
-     * @return int
+     * @return int|mixed
      */
     public function getIsAutoReplenish()
     {

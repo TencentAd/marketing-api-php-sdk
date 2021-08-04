@@ -96,7 +96,7 @@ class FundTransferApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\FundTransferAddResponse
+     * @return \TencentAds\Model\FundTransferAddResponse|mixed
      */
     public function fundTransferAdd($data)
     {

@@ -214,7 +214,7 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
     /**
      * Gets code
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCode()
     {
@@ -238,7 +238,7 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
     /**
      * Gets tips
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTips()
     {

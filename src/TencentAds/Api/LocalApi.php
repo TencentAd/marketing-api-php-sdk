@@ -96,7 +96,7 @@ class LocalApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\LocalAddResponse
+     * @return \TencentAds\Model\LocalAddResponse|mixed
      */
     public function localAdd($data)
     {
@@ -378,7 +378,7 @@ class LocalApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\LocalGetResponse
+     * @return \TencentAds\Model\LocalGetResponse|mixed
      */
     public function localGet($data)
     {
@@ -660,7 +660,7 @@ class LocalApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\LocalUpdateResponse
+     * @return \TencentAds\Model\LocalUpdateResponse|mixed
      */
     public function localUpdate($data)
     {

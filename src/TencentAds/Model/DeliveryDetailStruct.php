@@ -214,7 +214,7 @@ class DeliveryDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets deliveryUpdateTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDeliveryUpdateTime()
     {
@@ -238,7 +238,7 @@ class DeliveryDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets deliveryDetail
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDeliveryDetail()
     {

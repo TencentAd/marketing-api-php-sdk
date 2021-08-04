@@ -214,7 +214,7 @@ class LongVideoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets longVideo1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLongVideo1()
     {
@@ -238,7 +238,7 @@ class LongVideoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets longVideo2
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLongVideo2()
     {

@@ -96,7 +96,7 @@ class WechatFundTransferApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\WechatFundTransferAddResponse
+     * @return \TencentAds\Model\WechatFundTransferAddResponse|mixed
      */
     public function wechatFundTransferAdd($data)
     {

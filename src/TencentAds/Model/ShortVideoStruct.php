@@ -214,7 +214,7 @@ class ShortVideoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets shortVideo1
      *
-     * @return int
+     * @return int|mixed
      */
     public function getShortVideo1()
     {
@@ -238,7 +238,7 @@ class ShortVideoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets shortVideo2
      *
-     * @return int
+     * @return int|mixed
      */
     public function getShortVideo2()
     {

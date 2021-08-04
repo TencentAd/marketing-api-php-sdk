@@ -208,7 +208,7 @@ class ElementImage implements ModelInterface, ArrayAccess
     /**
      * Gets imageIdList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getImageIdList()
     {

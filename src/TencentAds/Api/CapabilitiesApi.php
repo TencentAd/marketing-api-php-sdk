@@ -99,7 +99,7 @@ class CapabilitiesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CapabilitiesGetResponse
+     * @return \TencentAds\Model\CapabilitiesGetResponse|mixed
      */
     public function capabilitiesGet($accountId, $capability, $querySpec = null, $fields = null)
     {

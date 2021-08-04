@@ -99,7 +99,7 @@ class DiagnosisApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\DiagnosisGetResponse
+     * @return \TencentAds\Model\DiagnosisGetResponse|mixed
      */
     public function diagnosisGet($accountId, $adgroupIdList, $timeRange = null, $fields = null)
     {

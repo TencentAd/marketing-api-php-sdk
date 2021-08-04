@@ -96,7 +96,7 @@ class AndroidUnionChannelPackagesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AndroidUnionChannelPackagesAddResponse
+     * @return \TencentAds\Model\AndroidUnionChannelPackagesAddResponse|mixed
      */
     public function androidUnionChannelPackagesAdd($data)
     {
@@ -383,7 +383,7 @@ class AndroidUnionChannelPackagesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AndroidUnionChannelPackagesGetResponse
+     * @return \TencentAds\Model\AndroidUnionChannelPackagesGetResponse|mixed
      */
     public function androidUnionChannelPackagesGet($accountId, $androidUnionAppId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
@@ -718,7 +718,7 @@ class AndroidUnionChannelPackagesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AndroidUnionChannelPackagesUpdateResponse
+     * @return \TencentAds\Model\AndroidUnionChannelPackagesUpdateResponse|mixed
      */
     public function androidUnionChannelPackagesUpdate($data)
     {

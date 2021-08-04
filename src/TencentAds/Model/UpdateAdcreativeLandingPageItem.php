@@ -214,7 +214,7 @@ class UpdateAdcreativeLandingPageItem implements ModelInterface, ArrayAccess
     /**
      * Gets adcreativeId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdcreativeId()
     {
@@ -238,7 +238,7 @@ class UpdateAdcreativeLandingPageItem implements ModelInterface, ArrayAccess
     /**
      * Gets adCreative
      *
-     * @return \TencentAds\Model\TaskAdcreative
+     * @return \TencentAds\Model\TaskAdcreative|mixed
      */
     public function getAdCreative()
     {

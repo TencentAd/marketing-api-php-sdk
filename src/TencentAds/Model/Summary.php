@@ -274,7 +274,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Gets taskId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTaskId()
     {
@@ -298,7 +298,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Gets taskName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTaskName()
     {
@@ -322,7 +322,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Gets taskType
      *
-     * @return \TencentAds\Model\TaskType
+     * @return \TencentAds\Model\TaskType|mixed
      */
     public function getTaskType()
     {
@@ -346,7 +346,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Gets taskScope
      *
-     * @return \TencentAds\Model\TaskScope
+     * @return \TencentAds\Model\TaskScope|mixed
      */
     public function getTaskScope()
     {
@@ -370,7 +370,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \TencentAds\Model\TaskStatus
+     * @return \TencentAds\Model\TaskStatus|mixed
      */
     public function getStatus()
     {
@@ -394,7 +394,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Gets resultStatus
      *
-     * @return \TencentAds\Model\TaskResultStatus
+     * @return \TencentAds\Model\TaskResultStatus|mixed
      */
     public function getResultStatus()
     {
@@ -418,7 +418,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {
@@ -442,7 +442,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Gets endTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getEndTime()
     {
@@ -466,7 +466,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Gets successCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSuccessCount()
     {
@@ -490,7 +490,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Gets failCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFailCount()
     {
@@ -514,7 +514,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Gets systemErrorCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSystemErrorCount()
     {
@@ -538,7 +538,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Gets progress
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProgress()
     {

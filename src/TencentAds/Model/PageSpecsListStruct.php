@@ -214,7 +214,7 @@ class PageSpecsListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets bgColor
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBgColor()
     {
@@ -238,7 +238,7 @@ class PageSpecsListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageElementsSpecList
      *
-     * @return \TencentAds\Model\PageElementsSpecListStruct[]
+     * @return \TencentAds\Model\PageElementsSpecListStruct[]|mixed
      */
     public function getPageElementsSpecList()
     {

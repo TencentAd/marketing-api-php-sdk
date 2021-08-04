@@ -238,7 +238,7 @@ class BehaviorStruct implements ModelInterface, ArrayAccess
     /**
      * Gets targetingTags
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getTargetingTags()
     {
@@ -262,7 +262,7 @@ class BehaviorStruct implements ModelInterface, ArrayAccess
     /**
      * Gets categoryIdList
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getCategoryIdList()
     {
@@ -286,7 +286,7 @@ class BehaviorStruct implements ModelInterface, ArrayAccess
     /**
      * Gets keywordList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getKeywordList()
     {
@@ -310,7 +310,7 @@ class BehaviorStruct implements ModelInterface, ArrayAccess
     /**
      * Gets scene
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getScene()
     {
@@ -334,7 +334,7 @@ class BehaviorStruct implements ModelInterface, ArrayAccess
     /**
      * Gets timeWindow
      *
-     * @return \TencentAds\Model\BehaviorInterestTimeWindow
+     * @return \TencentAds\Model\BehaviorInterestTimeWindow|mixed
      */
     public function getTimeWindow()
     {
@@ -358,7 +358,7 @@ class BehaviorStruct implements ModelInterface, ArrayAccess
     /**
      * Gets intensity
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getIntensity()
     {

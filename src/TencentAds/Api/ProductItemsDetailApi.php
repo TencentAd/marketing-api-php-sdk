@@ -99,7 +99,7 @@ class ProductItemsDetailApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ProductItemsDetailGetResponse
+     * @return \TencentAds\Model\ProductItemsDetailGetResponse|mixed
      */
     public function productItemsDetailGet($accountId, $productCatalogId, $productOuterId, $fields = null)
     {

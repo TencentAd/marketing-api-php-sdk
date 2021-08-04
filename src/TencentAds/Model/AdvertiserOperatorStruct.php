@@ -232,7 +232,7 @@ class AdvertiserOperatorStruct implements ModelInterface, ArrayAccess
     /**
      * Gets operatorId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOperatorId()
     {
@@ -256,7 +256,7 @@ class AdvertiserOperatorStruct implements ModelInterface, ArrayAccess
     /**
      * Gets operatorName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOperatorName()
     {
@@ -280,7 +280,7 @@ class AdvertiserOperatorStruct implements ModelInterface, ArrayAccess
     /**
      * Gets qq
      *
-     * @return int
+     * @return int|mixed
      */
     public function getQq()
     {
@@ -304,7 +304,7 @@ class AdvertiserOperatorStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatAccountId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatAccountId()
     {
@@ -328,7 +328,7 @@ class AdvertiserOperatorStruct implements ModelInterface, ArrayAccess
     /**
      * Gets isMaster
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getIsMaster()
     {

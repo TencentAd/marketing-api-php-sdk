@@ -102,7 +102,7 @@ class RealtimeCostApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\RealtimeCostGetResponse
+     * @return \TencentAds\Model\RealtimeCostGetResponse|mixed
      */
     public function realtimeCostGet($accountId, $level, $date, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {

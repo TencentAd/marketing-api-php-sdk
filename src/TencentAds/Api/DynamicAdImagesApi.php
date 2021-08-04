@@ -96,7 +96,7 @@ class DynamicAdImagesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\DynamicAdImagesAddResponse
+     * @return \TencentAds\Model\DynamicAdImagesAddResponse|mixed
      */
     public function dynamicAdImagesAdd($data)
     {
@@ -382,7 +382,7 @@ class DynamicAdImagesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\DynamicAdImagesGetResponse
+     * @return \TencentAds\Model\DynamicAdImagesGetResponse|mixed
      */
     public function dynamicAdImagesGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {

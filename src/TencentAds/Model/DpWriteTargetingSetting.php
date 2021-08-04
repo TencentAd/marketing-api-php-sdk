@@ -214,7 +214,7 @@ class DpWriteTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets age
      *
-     * @return \TencentAds\Model\AgeStruct[]
+     * @return \TencentAds\Model\AgeStruct[]|mixed
      */
     public function getAge()
     {
@@ -238,7 +238,7 @@ class DpWriteTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets gender
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getGender()
     {

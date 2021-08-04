@@ -30,7 +30,7 @@ class XijingPageInteractiveApiContainer extends ApiContainer
     /**
      * Handle XijingPageInteractiveApi xijingPageInteractiveAdd function
      * @param array params
-     * @return \TencentAds\Model\CreatePageResponse[]
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

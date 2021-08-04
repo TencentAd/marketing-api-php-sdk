@@ -30,7 +30,7 @@ class UserPropertySetsApiContainer extends ApiContainer
     /**
      * Handle UserPropertySetsApi userPropertySetsAdd function
      * @param array params
-     * @return \TencentAds\Model\UserPropertySetsAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class UserPropertySetsApiContainer extends ApiContainer
     /**
      * Handle UserPropertySetsApi userPropertySetsGet function
      * @param array params
-     * @return \TencentAds\Model\UserPropertySetsGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

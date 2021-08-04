@@ -214,7 +214,7 @@ class WechatFundSpec implements ModelInterface, ArrayAccess
     /**
      * Gets usableAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUsableAmount()
     {
@@ -238,7 +238,7 @@ class WechatFundSpec implements ModelInterface, ArrayAccess
     /**
      * Gets lockedAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLockedAmount()
     {

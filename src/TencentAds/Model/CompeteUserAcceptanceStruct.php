@@ -226,7 +226,7 @@ class CompeteUserAcceptanceStruct implements ModelInterface, ArrayAccess
     /**
      * Gets score
      *
-     * @return int
+     * @return int|mixed
      */
     public function getScore()
     {
@@ -250,7 +250,7 @@ class CompeteUserAcceptanceStruct implements ModelInterface, ArrayAccess
     /**
      * Gets acceptance
      *
-     * @return \TencentAds\Model\CompeteAttributionStruct[]
+     * @return \TencentAds\Model\CompeteAttributionStruct[]|mixed
      */
     public function getAcceptance()
     {
@@ -274,7 +274,7 @@ class CompeteUserAcceptanceStruct implements ModelInterface, ArrayAccess
     /**
      * Gets conclusion
      *
-     * @return string
+     * @return string|mixed
      */
     public function getConclusion()
     {
@@ -298,7 +298,7 @@ class CompeteUserAcceptanceStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ratio
      *
-     * @return double
+     * @return double|mixed
      */
     public function getRatio()
     {

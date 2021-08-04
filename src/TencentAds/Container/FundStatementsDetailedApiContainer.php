@@ -30,7 +30,7 @@ class FundStatementsDetailedApiContainer extends ApiContainer
     /**
      * Handle FundStatementsDetailedApi fundStatementsDetailedGet function
      * @param array params
-     * @return \TencentAds\Model\FundStatementsDetailedGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

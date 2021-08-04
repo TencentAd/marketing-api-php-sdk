@@ -208,7 +208,7 @@ class Keyword implements ModelInterface, ArrayAccess
     /**
      * Gets words
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getWords()
     {

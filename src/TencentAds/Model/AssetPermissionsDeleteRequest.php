@@ -243,7 +243,7 @@ class AssetPermissionsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -267,7 +267,7 @@ class AssetPermissionsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets licensingAccountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLicensingAccountId()
     {
@@ -291,7 +291,7 @@ class AssetPermissionsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets assetType
      *
-     * @return \TencentAds\Model\AssetType
+     * @return \TencentAds\Model\AssetType|mixed
      */
     public function getAssetType()
     {
@@ -315,7 +315,7 @@ class AssetPermissionsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets assetPermissionGrantType
      *
-     * @return \TencentAds\Model\AssetPermissionGrantType
+     * @return \TencentAds\Model\AssetPermissionGrantType|mixed
      */
     public function getAssetPermissionGrantType()
     {
@@ -339,7 +339,7 @@ class AssetPermissionsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets assetId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAssetId()
     {
@@ -363,7 +363,7 @@ class AssetPermissionsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets licensingIdType
      *
-     * @return \TencentAds\Model\AssetAccountType
+     * @return \TencentAds\Model\AssetAccountType|mixed
      */
     public function getLicensingIdType()
     {
@@ -387,7 +387,7 @@ class AssetPermissionsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets pathId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPathId()
     {

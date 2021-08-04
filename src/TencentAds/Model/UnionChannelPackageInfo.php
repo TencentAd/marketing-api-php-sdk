@@ -232,7 +232,7 @@ class UnionChannelPackageInfo implements ModelInterface, ArrayAccess
     /**
      * Gets androidUnionAppId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAndroidUnionAppId()
     {
@@ -256,7 +256,7 @@ class UnionChannelPackageInfo implements ModelInterface, ArrayAccess
     /**
      * Gets packageName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPackageName()
     {
@@ -280,7 +280,7 @@ class UnionChannelPackageInfo implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \TencentAds\Model\UnionChannelTaskStatus
+     * @return \TencentAds\Model\UnionChannelTaskStatus|mixed
      */
     public function getStatus()
     {
@@ -304,7 +304,7 @@ class UnionChannelPackageInfo implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {
@@ -328,7 +328,7 @@ class UnionChannelPackageInfo implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLastModifiedTime()
     {

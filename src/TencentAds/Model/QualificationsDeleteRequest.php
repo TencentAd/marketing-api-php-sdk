@@ -219,7 +219,7 @@ class QualificationsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets qualificationType
      *
-     * @return \TencentAds\Model\QualificationType
+     * @return \TencentAds\Model\QualificationType|mixed
      */
     public function getQualificationType()
     {
@@ -243,7 +243,7 @@ class QualificationsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets qualificationId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getQualificationId()
     {
@@ -267,7 +267,7 @@ class QualificationsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {

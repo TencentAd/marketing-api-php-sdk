@@ -220,7 +220,7 @@ class SuccessLeadsIdListRespStruct implements ModelInterface, ArrayAccess
     /**
      * Gets index
      *
-     * @return int
+     * @return int|mixed
      */
     public function getIndex()
     {
@@ -244,7 +244,7 @@ class SuccessLeadsIdListRespStruct implements ModelInterface, ArrayAccess
     /**
      * Gets outerLeadsId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOuterLeadsId()
     {
@@ -268,7 +268,7 @@ class SuccessLeadsIdListRespStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLeadsId()
     {

@@ -214,7 +214,7 @@ class ShareContentSpec implements ModelInterface, ArrayAccess
     /**
      * Gets shareTitle
      *
-     * @return string
+     * @return string|mixed
      */
     public function getShareTitle()
     {
@@ -238,7 +238,7 @@ class ShareContentSpec implements ModelInterface, ArrayAccess
     /**
      * Gets shareDescription
      *
-     * @return string
+     * @return string|mixed
      */
     public function getShareDescription()
     {

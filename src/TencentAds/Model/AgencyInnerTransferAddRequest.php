@@ -237,7 +237,7 @@ class AgencyInnerTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets fundTypeFrom
      *
-     * @return \TencentAds\Model\AccountTypeMapInnerTransfer
+     * @return \TencentAds\Model\AccountTypeMapInnerTransfer|mixed
      */
     public function getFundTypeFrom()
     {
@@ -261,7 +261,7 @@ class AgencyInnerTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets fundTypeTo
      *
-     * @return \TencentAds\Model\AccountTypeMapInnerTransfer
+     * @return \TencentAds\Model\AccountTypeMapInnerTransfer|mixed
      */
     public function getFundTypeTo()
     {
@@ -285,7 +285,7 @@ class AgencyInnerTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets amount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAmount()
     {
@@ -309,7 +309,7 @@ class AgencyInnerTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets externalBillNo
      *
-     * @return string
+     * @return string|mixed
      */
     public function getExternalBillNo()
     {
@@ -333,7 +333,7 @@ class AgencyInnerTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets memo
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMemo()
     {
@@ -357,7 +357,7 @@ class AgencyInnerTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {

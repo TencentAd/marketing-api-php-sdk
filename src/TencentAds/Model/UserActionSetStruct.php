@@ -214,7 +214,7 @@ class UserActionSetStruct implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \TencentAds\Model\UserActionSetType
+     * @return \TencentAds\Model\UserActionSetType|mixed
      */
     public function getType()
     {
@@ -238,7 +238,7 @@ class UserActionSetStruct implements ModelInterface, ArrayAccess
     /**
      * Gets id
      *
-     * @return int
+     * @return int|mixed
      */
     public function getId()
     {

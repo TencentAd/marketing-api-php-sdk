@@ -208,7 +208,7 @@ class TaskTypeWechatMomentsAdgroupHourlyReportSpec implements ModelInterface, Ar
     /**
      * Gets date
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDate()
     {

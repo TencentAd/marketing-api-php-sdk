@@ -208,7 +208,7 @@ class WechatEcommerceProductSpec implements ModelInterface, ArrayAccess
     /**
      * Gets result
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getResult()
     {

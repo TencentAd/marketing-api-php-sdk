@@ -226,7 +226,7 @@ class TargetingsShareGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets targetingId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTargetingId()
     {
@@ -250,7 +250,7 @@ class TargetingsShareGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets shareToAccountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getShareToAccountId()
     {
@@ -274,7 +274,7 @@ class TargetingsShareGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets shareToTargetingId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getShareToTargetingId()
     {
@@ -298,7 +298,7 @@ class TargetingsShareGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets sharedTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSharedTime()
     {

@@ -213,7 +213,7 @@ class WechatPagesGrantinfoGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\WechatPagesGrantinfoGetListStruct[]
+     * @return \TencentAds\Model\WechatPagesGrantinfoGetListStruct[]|mixed
      */
     public function getList()
     {
@@ -237,7 +237,7 @@ class WechatPagesGrantinfoGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets pageInfo
      *
-     * @return \TencentAds\Model\PageInfo
+     * @return \TencentAds\Model\PageInfo|mixed
      */
     public function getPageInfo()
     {

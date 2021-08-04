@@ -291,7 +291,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets maxActiveUserCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMaxActiveUserCount()
     {
@@ -315,7 +315,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets approximateCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getApproximateCount()
     {
@@ -339,7 +339,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets impression
      *
-     * @return int
+     * @return int|mixed
      */
     public function getImpression()
     {
@@ -363,7 +363,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets minBidAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMinBidAmount()
     {
@@ -387,7 +387,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets maxBidAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMaxBidAmount()
     {
@@ -411,7 +411,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets suggestMinBidAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSuggestMinBidAmount()
     {
@@ -435,7 +435,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets suggestMaxBidAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSuggestMaxBidAmount()
     {
@@ -459,7 +459,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets suggestBidContentOcpa
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSuggestBidContentOcpa()
     {
@@ -483,7 +483,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets minUsersDaily
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMinUsersDaily()
     {
@@ -507,7 +507,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets maxUsersDaily
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMaxUsersDaily()
     {
@@ -531,7 +531,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets minExposureDaily
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMinExposureDaily()
     {
@@ -555,7 +555,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets maxExposureDaily
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMaxExposureDaily()
     {
@@ -579,7 +579,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets targetingStatus
      *
-     * @return \TencentAds\Model\TargetingStatus
+     * @return \TencentAds\Model\TargetingStatus|mixed
      */
     public function getTargetingStatus()
     {
@@ -603,7 +603,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets suggestTargeting
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getSuggestTargeting()
     {
@@ -627,7 +627,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets isRealExposureSupported
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getIsRealExposureSupported()
     {

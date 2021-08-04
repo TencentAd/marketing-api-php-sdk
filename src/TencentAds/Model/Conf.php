@@ -226,7 +226,7 @@ class Conf implements ModelInterface, ArrayAccess
     /**
      * Gets page
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPage()
     {
@@ -250,7 +250,7 @@ class Conf implements ModelInterface, ArrayAccess
     /**
      * Gets pageSize
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageSize()
     {
@@ -274,7 +274,7 @@ class Conf implements ModelInterface, ArrayAccess
     /**
      * Gets totalNumber
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTotalNumber()
     {
@@ -298,7 +298,7 @@ class Conf implements ModelInterface, ArrayAccess
     /**
      * Gets totalPage
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTotalPage()
     {

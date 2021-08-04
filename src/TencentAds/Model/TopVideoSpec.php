@@ -238,7 +238,7 @@ class TopVideoSpec implements ModelInterface, ArrayAccess
     /**
      * Gets videoId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getVideoId()
     {
@@ -262,7 +262,7 @@ class TopVideoSpec implements ModelInterface, ArrayAccess
     /**
      * Gets width
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWidth()
     {
@@ -286,7 +286,7 @@ class TopVideoSpec implements ModelInterface, ArrayAccess
     /**
      * Gets height
      *
-     * @return int
+     * @return int|mixed
      */
     public function getHeight()
     {
@@ -310,7 +310,7 @@ class TopVideoSpec implements ModelInterface, ArrayAccess
     /**
      * Gets adLocation
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdLocation()
     {
@@ -334,7 +334,7 @@ class TopVideoSpec implements ModelInterface, ArrayAccess
     /**
      * Gets outerStyle
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOuterStyle()
     {
@@ -358,7 +358,7 @@ class TopVideoSpec implements ModelInterface, ArrayAccess
     /**
      * Gets usedForOuter
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUsedForOuter()
     {

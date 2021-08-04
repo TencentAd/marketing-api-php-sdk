@@ -322,7 +322,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productOuterId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductOuterId()
     {
@@ -346,7 +346,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductName()
     {
@@ -370,7 +370,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productImageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductImageUrl()
     {
@@ -394,7 +394,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productShortName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductShortName()
     {
@@ -418,7 +418,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets price
      *
-     * @return double
+     * @return double|mixed
      */
     public function getPrice()
     {
@@ -442,7 +442,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstCategoryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFirstCategoryId()
     {
@@ -466,7 +466,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets firstCategoryName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getFirstCategoryName()
     {
@@ -490,7 +490,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets secondCategoryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSecondCategoryId()
     {
@@ -514,7 +514,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets secondCategoryName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSecondCategoryName()
     {
@@ -538,7 +538,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets thirdCategoryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getThirdCategoryId()
     {
@@ -562,7 +562,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets thirdCategoryName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getThirdCategoryName()
     {
@@ -586,7 +586,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets fourthCategoryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFourthCategoryId()
     {
@@ -610,7 +610,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets fourthCategoryName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getFourthCategoryName()
     {
@@ -634,7 +634,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets brandName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBrandName()
     {
@@ -658,7 +658,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets brandId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBrandId()
     {
@@ -682,7 +682,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -706,7 +706,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets customData
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCustomData()
     {
@@ -730,7 +730,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets isVideo
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getIsVideo()
     {
@@ -754,7 +754,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets dataSource
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDataSource()
     {
@@ -778,7 +778,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productSelectScore
      *
-     * @return double
+     * @return double|mixed
      */
     public function getProductSelectScore()
     {

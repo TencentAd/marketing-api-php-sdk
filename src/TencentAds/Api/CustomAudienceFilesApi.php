@@ -102,7 +102,7 @@ class CustomAudienceFilesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CustomAudienceFilesAddResponse
+     * @return \TencentAds\Model\CustomAudienceFilesAddResponse|mixed
      */
     public function customAudienceFilesAdd($accountId, $audienceId, $userIdType, $file, $operationType = null, $openAppId = null, $saltId = null)
     {
@@ -457,7 +457,7 @@ class CustomAudienceFilesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CustomAudienceFilesGetResponse
+     * @return \TencentAds\Model\CustomAudienceFilesGetResponse|mixed
      */
     public function customAudienceFilesGet($accountId, $audienceId = null, $customAudienceFileId = null, $page = null, $pageSize = null, $fields = null)
     {

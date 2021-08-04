@@ -220,7 +220,7 @@ class UnsupportSpec implements ModelInterface, ArrayAccess
     /**
      * Gets siteSet
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getSiteSet()
     {
@@ -244,7 +244,7 @@ class UnsupportSpec implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return string
+     * @return string|mixed
      */
     public function getName()
     {
@@ -268,7 +268,7 @@ class UnsupportSpec implements ModelInterface, ArrayAccess
     /**
      * Gets unsupportType
      *
-     * @return \TencentAds\Model\UnsupportType
+     * @return \TencentAds\Model\UnsupportType|mixed
      */
     public function getUnsupportType()
     {

@@ -238,7 +238,7 @@ class TargetingDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets targetingDiagnosisScore
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTargetingDiagnosisScore()
     {
@@ -262,7 +262,7 @@ class TargetingDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets contractOccupiedScore
      *
-     * @return int
+     * @return int|mixed
      */
     public function getContractOccupiedScore()
     {
@@ -286,7 +286,7 @@ class TargetingDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets contractOccupiedSpecList
      *
-     * @return \TencentAds\Model\ContractOccupiedSpec[]
+     * @return \TencentAds\Model\ContractOccupiedSpec[]|mixed
      */
     public function getContractOccupiedSpecList()
     {
@@ -310,7 +310,7 @@ class TargetingDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets compititionScore
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCompititionScore()
     {
@@ -334,7 +334,7 @@ class TargetingDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets compititionSpecList
      *
-     * @return \TencentAds\Model\CompititionSpec[]
+     * @return \TencentAds\Model\CompititionSpec[]|mixed
      */
     public function getCompititionSpecList()
     {
@@ -358,7 +358,7 @@ class TargetingDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets conclusion
      *
-     * @return string
+     * @return string|mixed
      */
     public function getConclusion()
     {

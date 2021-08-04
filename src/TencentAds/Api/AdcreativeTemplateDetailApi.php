@@ -102,7 +102,7 @@ class AdcreativeTemplateDetailApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdcreativeTemplateDetailGetResponse
+     * @return \TencentAds\Model\AdcreativeTemplateDetailGetResponse|mixed
      */
     public function adcreativeTemplateDetailGet($adcreativeTemplateId, $promotedObjectType, $accountId = null, $automaticSiteEnabled = null, $siteSet = null, $isDynamicCreativeAd = null, $fields = null)
     {

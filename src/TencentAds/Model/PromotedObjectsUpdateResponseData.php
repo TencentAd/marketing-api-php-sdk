@@ -207,7 +207,7 @@ class PromotedObjectsUpdateResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPromotedObjectId()
     {

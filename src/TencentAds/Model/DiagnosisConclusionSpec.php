@@ -220,7 +220,7 @@ class DiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets timeRange
      *
-     * @return \TencentAds\Model\DiagnosisConclusionSpecTimeRange
+     * @return \TencentAds\Model\DiagnosisConclusionSpecTimeRange|mixed
      */
     public function getTimeRange()
     {
@@ -244,7 +244,7 @@ class DiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets diagnosisScore
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDiagnosisScore()
     {
@@ -268,7 +268,7 @@ class DiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets sameIndustryRank
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSameIndustryRank()
     {

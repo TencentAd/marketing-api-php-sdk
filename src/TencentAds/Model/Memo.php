@@ -214,7 +214,7 @@ class Memo implements ModelInterface, ArrayAccess
     /**
      * Gets wechatFundSpec
      *
-     * @return \TencentAds\Model\WechatFundSpec
+     * @return \TencentAds\Model\WechatFundSpec|mixed
      */
     public function getWechatFundSpec()
     {
@@ -238,7 +238,7 @@ class Memo implements ModelInterface, ArrayAccess
     /**
      * Gets localWechatFundSpec
      *
-     * @return \TencentAds\Model\LocalWechatFundSpec
+     * @return \TencentAds\Model\LocalWechatFundSpec|mixed
      */
     public function getLocalWechatFundSpec()
     {

@@ -96,7 +96,7 @@ class AsyncTasksApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AsyncTasksAddResponse
+     * @return \TencentAds\Model\AsyncTasksAddResponse|mixed
      */
     public function asyncTasksAdd($data)
     {
@@ -382,7 +382,7 @@ class AsyncTasksApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AsyncTasksGetResponse
+     * @return \TencentAds\Model\AsyncTasksGetResponse|mixed
      */
     public function asyncTasksGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {

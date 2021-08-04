@@ -30,7 +30,7 @@ class VideomakerSubtitlesApiContainer extends ApiContainer
     /**
      * Handle VideomakerSubtitlesApi videomakerSubtitlesAdd function
      * @param array params
-     * @return \TencentAds\Model\VideomakerSubtitlesAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

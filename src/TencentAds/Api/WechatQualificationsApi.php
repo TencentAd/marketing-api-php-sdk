@@ -99,7 +99,7 @@ class WechatQualificationsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\WechatQualificationsAddResponse
+     * @return \TencentAds\Model\WechatQualificationsAddResponse|mixed
      */
     public function wechatQualificationsAdd($accountId, $wechatQualificationType, $wechatQualificationFile, $wechatQualificationFileSignature)
     {
@@ -425,7 +425,7 @@ class WechatQualificationsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\WechatQualificationsDeleteResponse
+     * @return \TencentAds\Model\WechatQualificationsDeleteResponse|mixed
      */
     public function wechatQualificationsDelete($data)
     {
@@ -708,7 +708,7 @@ class WechatQualificationsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\WechatQualificationsGetResponse
+     * @return \TencentAds\Model\WechatQualificationsGetResponse|mixed
      */
     public function wechatQualificationsGet($accountId, $fields = null)
     {

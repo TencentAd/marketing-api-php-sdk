@@ -30,7 +30,7 @@ class ProductItemsVerticalsApiContainer extends ApiContainer
     /**
      * Handle ProductItemsVerticalsApi productItemsVerticalsGet function
      * @param array params
-     * @return \TencentAds\Model\ProductItemsVerticalsGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

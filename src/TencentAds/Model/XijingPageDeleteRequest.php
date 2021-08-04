@@ -213,7 +213,7 @@ class XijingPageDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -237,7 +237,7 @@ class XijingPageDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets pageIdList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getPageIdList()
     {

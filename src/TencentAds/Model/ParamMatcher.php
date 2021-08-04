@@ -220,7 +220,7 @@ class ParamMatcher implements ModelInterface, ArrayAccess
     /**
      * Gets paramName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getParamName()
     {
@@ -244,7 +244,7 @@ class ParamMatcher implements ModelInterface, ArrayAccess
     /**
      * Gets paramValue
      *
-     * @return string
+     * @return string|mixed
      */
     public function getParamValue()
     {
@@ -268,7 +268,7 @@ class ParamMatcher implements ModelInterface, ArrayAccess
     /**
      * Gets operator
      *
-     * @return \TencentAds\Model\Operator
+     * @return \TencentAds\Model\Operator|mixed
      */
     public function getOperator()
     {

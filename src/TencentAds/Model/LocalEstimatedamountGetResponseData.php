@@ -231,7 +231,7 @@ class LocalEstimatedamountGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets minEstimatedExposure
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMinEstimatedExposure()
     {
@@ -255,7 +255,7 @@ class LocalEstimatedamountGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets maxEstimatedExposure
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMaxEstimatedExposure()
     {
@@ -279,7 +279,7 @@ class LocalEstimatedamountGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets minEstimatedConv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMinEstimatedConv()
     {
@@ -303,7 +303,7 @@ class LocalEstimatedamountGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets maxEstimatedConv
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMaxEstimatedConv()
     {
@@ -327,7 +327,7 @@ class LocalEstimatedamountGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets suggestion
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSuggestion()
     {

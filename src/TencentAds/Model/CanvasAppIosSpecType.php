@@ -220,7 +220,7 @@ class CanvasAppIosSpecType implements ModelInterface, ArrayAccess
     /**
      * Gets appIosId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAppIosId()
     {
@@ -244,7 +244,7 @@ class CanvasAppIosSpecType implements ModelInterface, ArrayAccess
     /**
      * Gets deepLinkUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDeepLinkUrl()
     {
@@ -268,7 +268,7 @@ class CanvasAppIosSpecType implements ModelInterface, ArrayAccess
     /**
      * Gets jumpAppstoreType
      *
-     * @return int
+     * @return int|mixed
      */
     public function getJumpAppstoreType()
     {

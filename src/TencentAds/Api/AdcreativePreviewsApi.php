@@ -96,7 +96,7 @@ class AdcreativePreviewsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdcreativePreviewsAddResponse
+     * @return \TencentAds\Model\AdcreativePreviewsAddResponse|mixed
      */
     public function adcreativePreviewsAdd($data)
     {
@@ -380,7 +380,7 @@ class AdcreativePreviewsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdcreativePreviewsGetResponse
+     * @return \TencentAds\Model\AdcreativePreviewsGetResponse|mixed
      */
     public function adcreativePreviewsGet($accountId, $filtering, $fields = null)
     {

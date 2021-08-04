@@ -226,7 +226,7 @@ class DetailListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets scopeObjectId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getScopeObjectId()
     {
@@ -250,7 +250,7 @@ class DetailListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets scopeObjectName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getScopeObjectName()
     {
@@ -274,7 +274,7 @@ class DetailListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets detailResultType
      *
-     * @return \TencentAds\Model\TaskDetailResultType
+     * @return \TencentAds\Model\TaskDetailResultType|mixed
      */
     public function getDetailResultType()
     {
@@ -298,7 +298,7 @@ class DetailListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets message
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMessage()
     {

@@ -207,7 +207,7 @@ class ProfilesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets profileId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProfileId()
     {

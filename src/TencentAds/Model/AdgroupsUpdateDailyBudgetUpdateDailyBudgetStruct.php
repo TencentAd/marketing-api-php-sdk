@@ -214,7 +214,7 @@ class AdgroupsUpdateDailyBudgetUpdateDailyBudgetStruct implements ModelInterface
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -238,7 +238,7 @@ class AdgroupsUpdateDailyBudgetUpdateDailyBudgetStruct implements ModelInterface
     /**
      * Gets dailyBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDailyBudget()
     {

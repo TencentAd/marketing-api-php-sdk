@@ -213,7 +213,7 @@ class UnionPositionPackagesDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -237,7 +237,7 @@ class UnionPositionPackagesDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Gets unionPackageId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUnionPackageId()
     {

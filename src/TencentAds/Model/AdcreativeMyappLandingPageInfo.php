@@ -214,7 +214,7 @@ class AdcreativeMyappLandingPageInfo implements ModelInterface, ArrayAccess
     /**
      * Gets myappPageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMyappPageId()
     {
@@ -238,7 +238,7 @@ class AdcreativeMyappLandingPageInfo implements ModelInterface, ArrayAccess
     /**
      * Gets url
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUrl()
     {

@@ -232,7 +232,7 @@ class TargetingTagsGetQuerySpec implements ModelInterface, ArrayAccess
     /**
      * Gets query
      *
-     * @return string
+     * @return string|mixed
      */
     public function getQuery()
     {
@@ -256,7 +256,7 @@ class TargetingTagsGetQuerySpec implements ModelInterface, ArrayAccess
     /**
      * Gets queryList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getQueryList()
     {
@@ -280,7 +280,7 @@ class TargetingTagsGetQuerySpec implements ModelInterface, ArrayAccess
     /**
      * Gets maxResultNumber
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMaxResultNumber()
     {
@@ -304,7 +304,7 @@ class TargetingTagsGetQuerySpec implements ModelInterface, ArrayAccess
     /**
      * Gets excludingTargetingTags
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getExcludingTargetingTags()
     {
@@ -328,7 +328,7 @@ class TargetingTagsGetQuerySpec implements ModelInterface, ArrayAccess
     /**
      * Gets advancedRecommendType
      *
-     * @return \TencentAds\Model\TargetingAdvancedRecommendType
+     * @return \TencentAds\Model\TargetingAdvancedRecommendType|mixed
      */
     public function getAdvancedRecommendType()
     {

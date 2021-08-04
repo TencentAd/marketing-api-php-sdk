@@ -104,7 +104,7 @@ class TrackingReportsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\TrackingReportsGetResponse
+     * @return \TencentAds\Model\TrackingReportsGetResponse|mixed
      */
     public function trackingReportsGet($accountId, $dateRange, $timeGranularity = null, $promotedObjectType = null, $promotedObjectId = null, $feedbackUrl = null, $page = null, $pageSize = null, $fields = null)
     {

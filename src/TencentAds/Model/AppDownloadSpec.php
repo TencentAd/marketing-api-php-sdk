@@ -220,7 +220,7 @@ class AppDownloadSpec implements ModelInterface, ArrayAccess
     /**
      * Gets title
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTitle()
     {
@@ -244,7 +244,7 @@ class AppDownloadSpec implements ModelInterface, ArrayAccess
     /**
      * Gets appIosSpec
      *
-     * @return \TencentAds\Model\AppIosSpec
+     * @return \TencentAds\Model\AppIosSpec|mixed
      */
     public function getAppIosSpec()
     {
@@ -268,7 +268,7 @@ class AppDownloadSpec implements ModelInterface, ArrayAccess
     /**
      * Gets appAndroidSpec
      *
-     * @return \TencentAds\Model\AppAndroidSpec
+     * @return \TencentAds\Model\AppAndroidSpec|mixed
      */
     public function getAppAndroidSpec()
     {

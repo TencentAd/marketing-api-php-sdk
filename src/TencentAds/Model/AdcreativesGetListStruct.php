@@ -466,7 +466,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets campaignId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampaignId()
     {
@@ -490,7 +490,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adcreativeId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdcreativeId()
     {
@@ -514,7 +514,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets outerAdcreativeId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOuterAdcreativeId()
     {
@@ -538,7 +538,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adcreativeName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdcreativeName()
     {
@@ -562,7 +562,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageType
      *
-     * @return \TencentAds\Model\PageTypeRead
+     * @return \TencentAds\Model\PageTypeRead|mixed
      */
     public function getPageType()
     {
@@ -586,7 +586,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageSpec
      *
-     * @return \TencentAds\Model\PageSpec
+     * @return \TencentAds\Model\PageSpec|mixed
      */
     public function getPageSpec()
     {
@@ -610,7 +610,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets linkPageType
      *
-     * @return \TencentAds\Model\LinkPageType
+     * @return \TencentAds\Model\LinkPageType|mixed
      */
     public function getLinkPageType()
     {
@@ -634,7 +634,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets linkNameType
      *
-     * @return \TencentAds\Model\LinkUrlLinkNameType
+     * @return \TencentAds\Model\LinkUrlLinkNameType|mixed
      */
     public function getLinkNameType()
     {
@@ -658,7 +658,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets linkPageSpec
      *
-     * @return \TencentAds\Model\LinkPageSpec
+     * @return \TencentAds\Model\LinkPageSpec|mixed
      */
     public function getLinkPageSpec()
     {
@@ -682,7 +682,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets conversionDataType
      *
-     * @return \TencentAds\Model\ConversionDataType
+     * @return \TencentAds\Model\ConversionDataType|mixed
      */
     public function getConversionDataType()
     {
@@ -706,7 +706,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets conversionTargetType
      *
-     * @return \TencentAds\Model\ConversionTargetType
+     * @return \TencentAds\Model\ConversionTargetType|mixed
      */
     public function getConversionTargetType()
     {
@@ -730,7 +730,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets qqMiniGameTrackingQueryString
      *
-     * @return string
+     * @return string|mixed
      */
     public function getQqMiniGameTrackingQueryString()
     {
@@ -754,7 +754,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets deepLinkUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDeepLinkUrl()
     {
@@ -778,7 +778,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets androidDeepLinkAppId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAndroidDeepLinkAppId()
     {
@@ -802,7 +802,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets iosDeepLinkAppId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIosDeepLinkAppId()
     {
@@ -826,7 +826,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets universalLinkUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUniversalLinkUrl()
     {
@@ -850,7 +850,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets siteSet
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getSiteSet()
     {
@@ -874,7 +874,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets automaticSiteEnabled
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getAutomaticSiteEnabled()
     {
@@ -898,7 +898,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObjectType
+     * @return \TencentAds\Model\PromotedObjectType|mixed
      */
     public function getPromotedObjectType()
     {
@@ -922,7 +922,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPromotedObjectId()
     {
@@ -946,7 +946,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets profileId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProfileId()
     {
@@ -970,7 +970,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {
@@ -994,7 +994,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLastModifiedTime()
     {
@@ -1018,7 +1018,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets shareContentSpec
      *
-     * @return \TencentAds\Model\ShareContentSpec
+     * @return \TencentAds\Model\ShareContentSpec|mixed
      */
     public function getShareContentSpec()
     {
@@ -1042,7 +1042,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicAdcreativeSpec
      *
-     * @return \TencentAds\Model\DynamicAdcreativeSpec
+     * @return \TencentAds\Model\DynamicAdcreativeSpec|mixed
      */
     public function getDynamicAdcreativeSpec()
     {
@@ -1066,7 +1066,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets isDeleted
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getIsDeleted()
     {
@@ -1090,7 +1090,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets isDynamicCreative
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getIsDynamicCreative()
     {
@@ -1114,7 +1114,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets componentId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getComponentId()
     {
@@ -1138,7 +1138,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets onlineEnabled
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getOnlineEnabled()
     {
@@ -1162,7 +1162,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets revisedAdcreativeSpec
      *
-     * @return \TencentAds\Model\RevisedAdcreativeSpec
+     * @return \TencentAds\Model\RevisedAdcreativeSpec|mixed
      */
     public function getRevisedAdcreativeSpec()
     {
@@ -1186,7 +1186,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets unionMarketSwitch
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getUnionMarketSwitch()
     {
@@ -1210,7 +1210,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets playablePageMaterialId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPlayablePageMaterialId()
     {
@@ -1234,7 +1234,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoEndPage
      *
-     * @return \TencentAds\Model\VideoEndPageSpec
+     * @return \TencentAds\Model\VideoEndPageSpec|mixed
      */
     public function getVideoEndPage()
     {
@@ -1258,7 +1258,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets feedsVideoCommentSwitch
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getFeedsVideoCommentSwitch()
     {
@@ -1282,7 +1282,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets webviewUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWebviewUrl()
     {
@@ -1306,7 +1306,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets simpleCanvasSubType
      *
-     * @return \TencentAds\Model\SimpleCanvasSubType
+     * @return \TencentAds\Model\SimpleCanvasSubType|mixed
      */
     public function getSimpleCanvasSubType()
     {
@@ -1330,7 +1330,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets floatingZone
      *
-     * @return \TencentAds\Model\FloatingZone
+     * @return \TencentAds\Model\FloatingZone|mixed
      */
     public function getFloatingZone()
     {
@@ -1354,7 +1354,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets marketingPendantImageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMarketingPendantImageId()
     {
@@ -1378,7 +1378,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets countdownSwitch
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getCountdownSwitch()
     {
@@ -1402,7 +1402,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageTrackUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPageTrackUrl()
     {
@@ -1426,7 +1426,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets barrageList
      *
-     * @return \TencentAds\Model\BarrageListReadStruct[]
+     * @return \TencentAds\Model\BarrageListReadStruct[]|mixed
      */
     public function getBarrageList()
     {
@@ -1450,7 +1450,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets appGiftPackCode
      *
-     * @return \TencentAds\Model\AppGiftPackCode
+     * @return \TencentAds\Model\AppGiftPackCode|mixed
      */
     public function getAppGiftPackCode()
     {
@@ -1474,7 +1474,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adcreativeTemplateId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdcreativeTemplateId()
     {
@@ -1498,7 +1498,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adcreativeElements
      *
-     * @return \TencentAds\Model\AdcreativeCreativeElementsReadMp
+     * @return \TencentAds\Model\AdcreativeCreativeElementsReadMp|mixed
      */
     public function getAdcreativeElements()
     {

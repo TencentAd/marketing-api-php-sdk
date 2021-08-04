@@ -214,7 +214,7 @@ class SupportLinkNameType implements ModelInterface, ArrayAccess
     /**
      * Gets required
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getRequired()
     {
@@ -238,7 +238,7 @@ class SupportLinkNameType implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\SupportLinkNameStruct[]
+     * @return \TencentAds\Model\SupportLinkNameStruct[]|mixed
      */
     public function getList()
     {

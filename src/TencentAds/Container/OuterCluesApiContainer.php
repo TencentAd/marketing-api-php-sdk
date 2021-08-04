@@ -30,7 +30,7 @@ class OuterCluesApiContainer extends ApiContainer
     /**
      * Handle OuterCluesApi outerCluesAdd function
      * @param array params
-     * @return \TencentAds\Model\OuterCluesAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class OuterCluesApiContainer extends ApiContainer
     /**
      * Handle OuterCluesApi outerCluesUpdate function
      * @param array params
-     * @return \TencentAds\Model\OuterCluesUpdateResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

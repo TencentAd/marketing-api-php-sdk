@@ -256,7 +256,7 @@ class CustomFeature implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -280,7 +280,7 @@ class CustomFeature implements ModelInterface, ArrayAccess
     /**
      * Gets featureId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFeatureId()
     {
@@ -304,7 +304,7 @@ class CustomFeature implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return string
+     * @return string|mixed
      */
     public function getName()
     {
@@ -328,7 +328,7 @@ class CustomFeature implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -352,7 +352,7 @@ class CustomFeature implements ModelInterface, ArrayAccess
     /**
      * Gets featureClassId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFeatureClassId()
     {
@@ -376,7 +376,7 @@ class CustomFeature implements ModelInterface, ArrayAccess
     /**
      * Gets featureSpec
      *
-     * @return \TencentAds\Model\FeatureSpec
+     * @return \TencentAds\Model\FeatureSpec|mixed
      */
     public function getFeatureSpec()
     {
@@ -400,7 +400,7 @@ class CustomFeature implements ModelInterface, ArrayAccess
     /**
      * Gets isSupportedTimeWindow
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getIsSupportedTimeWindow()
     {
@@ -424,7 +424,7 @@ class CustomFeature implements ModelInterface, ArrayAccess
     /**
      * Gets timeWindow
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getTimeWindow()
     {
@@ -448,7 +448,7 @@ class CustomFeature implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCreatedTime()
     {

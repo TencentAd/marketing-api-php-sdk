@@ -214,7 +214,7 @@ class AccountPermission implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -238,7 +238,7 @@ class AccountPermission implements ModelInterface, ArrayAccess
     /**
      * Gets grantPermissionTypeList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getGrantPermissionTypeList()
     {

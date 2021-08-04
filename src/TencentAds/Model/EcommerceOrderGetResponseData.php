@@ -213,7 +213,7 @@ class EcommerceOrderGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\EcommerceOrderListStruct[]
+     * @return \TencentAds\Model\EcommerceOrderListStruct[]|mixed
      */
     public function getList()
     {
@@ -237,7 +237,7 @@ class EcommerceOrderGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets pageInfo
      *
-     * @return \TencentAds\Model\PageInfo
+     * @return \TencentAds\Model\PageInfo|mixed
      */
     public function getPageInfo()
     {

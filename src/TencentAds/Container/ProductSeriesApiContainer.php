@@ -30,7 +30,7 @@ class ProductSeriesApiContainer extends ApiContainer
     /**
      * Handle ProductSeriesApi productSeriesGet function
      * @param array params
-     * @return \TencentAds\Model\ProductSeriesGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

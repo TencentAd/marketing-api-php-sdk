@@ -30,7 +30,7 @@ class VideosApiContainer extends ApiContainer
     /**
      * Handle VideosApi videosAdd function
      * @param array params
-     * @return \TencentAds\Model\VideosAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -72,7 +72,7 @@ class VideosApiContainer extends ApiContainer
     /**
      * Handle VideosApi videosDelete function
      * @param array params
-     * @return \TencentAds\Model\VideosDeleteResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -106,7 +106,7 @@ class VideosApiContainer extends ApiContainer
     /**
      * Handle VideosApi videosGet function
      * @param array params
-     * @return \TencentAds\Model\VideosGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -148,7 +148,7 @@ class VideosApiContainer extends ApiContainer
     /**
      * Handle VideosApi videosUpdate function
      * @param array params
-     * @return \TencentAds\Model\VideosUpdateResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

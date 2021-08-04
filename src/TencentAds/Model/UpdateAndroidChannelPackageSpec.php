@@ -214,7 +214,7 @@ class UpdateAndroidChannelPackageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets channelPackageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getChannelPackageId()
     {
@@ -238,7 +238,7 @@ class UpdateAndroidChannelPackageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets downloadUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDownloadUrl()
     {

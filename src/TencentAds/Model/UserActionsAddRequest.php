@@ -219,7 +219,7 @@ class UserActionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -243,7 +243,7 @@ class UserActionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets userActionSetId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUserActionSetId()
     {
@@ -267,7 +267,7 @@ class UserActionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets actions
      *
-     * @return \TencentAds\Model\UserAction[]
+     * @return \TencentAds\Model\UserAction[]|mixed
      */
     public function getActions()
     {

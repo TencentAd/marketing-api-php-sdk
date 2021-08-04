@@ -30,7 +30,7 @@ class LocalApiContainer extends ApiContainer
     /**
      * Handle LocalApi localAdd function
      * @param array params
-     * @return \TencentAds\Model\LocalAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class LocalApiContainer extends ApiContainer
     /**
      * Handle LocalApi localGet function
      * @param array params
-     * @return \TencentAds\Model\LocalGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -98,7 +98,7 @@ class LocalApiContainer extends ApiContainer
     /**
      * Handle LocalApi localUpdate function
      * @param array params
-     * @return \TencentAds\Model\LocalUpdateResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

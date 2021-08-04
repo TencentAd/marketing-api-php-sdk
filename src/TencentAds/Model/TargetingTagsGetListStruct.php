@@ -238,7 +238,7 @@ class TargetingTagsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets id
      *
-     * @return int
+     * @return int|mixed
      */
     public function getId()
     {
@@ -262,7 +262,7 @@ class TargetingTagsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return string
+     * @return string|mixed
      */
     public function getName()
     {
@@ -286,7 +286,7 @@ class TargetingTagsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets parentId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getParentId()
     {
@@ -310,7 +310,7 @@ class TargetingTagsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets parentName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getParentName()
     {
@@ -334,7 +334,7 @@ class TargetingTagsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cityLevel
      *
-     * @return \TencentAds\Model\CityLevel
+     * @return \TencentAds\Model\CityLevel|mixed
      */
     public function getCityLevel()
     {
@@ -358,7 +358,7 @@ class TargetingTagsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets tagClass
      *
-     * @return \TencentAds\Model\TagClass
+     * @return \TencentAds\Model\TagClass|mixed
      */
     public function getTagClass()
     {

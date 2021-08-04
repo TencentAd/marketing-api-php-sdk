@@ -96,7 +96,7 @@ class LocalEndadsmanuallyApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\LocalEndadsmanuallyAddResponse
+     * @return \TencentAds\Model\LocalEndadsmanuallyAddResponse|mixed
      */
     public function localEndadsmanuallyAdd($data)
     {

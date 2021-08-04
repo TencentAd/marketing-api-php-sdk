@@ -213,7 +213,7 @@ class CommonParamExceptionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets errorFields
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getErrorFields()
     {
@@ -237,7 +237,7 @@ class CommonParamExceptionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets errorUserMsg
      *
-     * @return string
+     * @return string|mixed
      */
     public function getErrorUserMsg()
     {

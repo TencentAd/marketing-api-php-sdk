@@ -238,7 +238,7 @@ class PageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets pageId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageId()
     {
@@ -262,7 +262,7 @@ class PageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets pageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPageUrl()
     {
@@ -286,7 +286,7 @@ class PageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets miniProgramSpec
      *
-     * @return \TencentAds\Model\AdcreativeMiniProgramSpec
+     * @return \TencentAds\Model\AdcreativeMiniProgramSpec|mixed
      */
     public function getMiniProgramSpec()
     {
@@ -310,7 +310,7 @@ class PageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameSpec
      *
-     * @return \TencentAds\Model\MiniGameSpec
+     * @return \TencentAds\Model\MiniGameSpec|mixed
      */
     public function getMiniGameSpec()
     {
@@ -334,7 +334,7 @@ class PageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets overrideCanvasHeadOption
      *
-     * @return \TencentAds\Model\OverrideCanvasHeadOption
+     * @return \TencentAds\Model\OverrideCanvasHeadOption|mixed
      */
     public function getOverrideCanvasHeadOption()
     {
@@ -358,7 +358,7 @@ class PageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicProductSpec
      *
-     * @return \TencentAds\Model\DynamicProductSpec
+     * @return \TencentAds\Model\DynamicProductSpec|mixed
      */
     public function getDynamicProductSpec()
     {

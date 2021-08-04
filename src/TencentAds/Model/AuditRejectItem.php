@@ -226,7 +226,7 @@ class AuditRejectItem implements ModelInterface, ArrayAccess
     /**
      * Gets feedId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFeedId()
     {
@@ -250,7 +250,7 @@ class AuditRejectItem implements ModelInterface, ArrayAccess
     /**
      * Gets productId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductId()
     {
@@ -274,7 +274,7 @@ class AuditRejectItem implements ModelInterface, ArrayAccess
     /**
      * Gets systemStatus
      *
-     * @return \TencentAds\Model\AuditStatus
+     * @return \TencentAds\Model\AuditStatus|mixed
      */
     public function getSystemStatus()
     {
@@ -298,7 +298,7 @@ class AuditRejectItem implements ModelInterface, ArrayAccess
     /**
      * Gets rejectMessage
      *
-     * @return string
+     * @return string|mixed
      */
     public function getRejectMessage()
     {

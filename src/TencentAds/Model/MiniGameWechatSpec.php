@@ -208,7 +208,7 @@ class MiniGameWechatSpec implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameProgramId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMiniGameProgramId()
     {

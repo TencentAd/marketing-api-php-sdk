@@ -207,7 +207,7 @@ class CampaignsUpdateConfiguredStatusResponseData implements ModelInterface, Arr
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\CampaignsUpdateConfiguredStatusListStruct[]
+     * @return \TencentAds\Model\CampaignsUpdateConfiguredStatusListStruct[]|mixed
      */
     public function getList()
     {

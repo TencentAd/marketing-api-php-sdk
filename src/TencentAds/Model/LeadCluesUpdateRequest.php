@@ -213,7 +213,7 @@ class LeadCluesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -237,7 +237,7 @@ class LeadCluesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets leads
      *
-     * @return \TencentAds\Model\LeadsStatusInfoStruct[]
+     * @return \TencentAds\Model\LeadsStatusInfoStruct[]|mixed
      */
     public function getLeads()
     {

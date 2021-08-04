@@ -226,7 +226,7 @@ class CropCustomizedSpec implements ModelInterface, ArrayAccess
     /**
      * Gets width
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWidth()
     {
@@ -250,7 +250,7 @@ class CropCustomizedSpec implements ModelInterface, ArrayAccess
     /**
      * Gets height
      *
-     * @return int
+     * @return int|mixed
      */
     public function getHeight()
     {
@@ -274,7 +274,7 @@ class CropCustomizedSpec implements ModelInterface, ArrayAccess
     /**
      * Gets axisX
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAxisX()
     {
@@ -298,7 +298,7 @@ class CropCustomizedSpec implements ModelInterface, ArrayAccess
     /**
      * Gets axisY
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAxisY()
     {

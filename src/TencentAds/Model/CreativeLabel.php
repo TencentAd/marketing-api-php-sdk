@@ -214,7 +214,7 @@ class CreativeLabel implements ModelInterface, ArrayAccess
     /**
      * Gets content
      *
-     * @return string
+     * @return string|mixed
      */
     public function getContent()
     {
@@ -238,7 +238,7 @@ class CreativeLabel implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \TencentAds\Model\LabelType
+     * @return \TencentAds\Model\LabelType|mixed
      */
     public function getType()
     {

@@ -220,7 +220,7 @@ class CampaignTargeting implements ModelInterface, ArrayAccess
     /**
      * Gets campaignId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampaignId()
     {
@@ -244,7 +244,7 @@ class CampaignTargeting implements ModelInterface, ArrayAccess
     /**
      * Gets campaignType
      *
-     * @return \TencentAds\Model\CampaignType
+     * @return \TencentAds\Model\CampaignType|mixed
      */
     public function getCampaignType()
     {
@@ -268,7 +268,7 @@ class CampaignTargeting implements ModelInterface, ArrayAccess
     /**
      * Gets dailyBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDailyBudget()
     {

@@ -30,7 +30,7 @@ class AssetPrePermissionsApiContainer extends ApiContainer
     /**
      * Handle AssetPrePermissionsApi assetPrePermissionsGet function
      * @param array params
-     * @return \TencentAds\Model\AssetPrePermissionsGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

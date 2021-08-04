@@ -30,7 +30,7 @@ class AdgroupsApiContainer extends ApiContainer
     /**
      * Handle AdgroupsApi adgroupsAdd function
      * @param array params
-     * @return \TencentAds\Model\AdgroupsAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class AdgroupsApiContainer extends ApiContainer
     /**
      * Handle AdgroupsApi adgroupsDelete function
      * @param array params
-     * @return \TencentAds\Model\AdgroupsDeleteResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -98,7 +98,7 @@ class AdgroupsApiContainer extends ApiContainer
     /**
      * Handle AdgroupsApi adgroupsGet function
      * @param array params
-     * @return \TencentAds\Model\AdgroupsGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -142,7 +142,7 @@ class AdgroupsApiContainer extends ApiContainer
     /**
      * Handle AdgroupsApi adgroupsUpdate function
      * @param array params
-     * @return \TencentAds\Model\AdgroupsUpdateResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -176,7 +176,7 @@ class AdgroupsApiContainer extends ApiContainer
     /**
      * Handle AdgroupsApi adgroupsUpdateBidAmount function
      * @param array params
-     * @return \TencentAds\Model\AdgroupsUpdateBidAmountResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -210,7 +210,7 @@ class AdgroupsApiContainer extends ApiContainer
     /**
      * Handle AdgroupsApi adgroupsUpdateConfiguredStatus function
      * @param array params
-     * @return \TencentAds\Model\AdgroupsUpdateConfiguredStatusResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -244,7 +244,7 @@ class AdgroupsApiContainer extends ApiContainer
     /**
      * Handle AdgroupsApi adgroupsUpdateDailyBudget function
      * @param array params
-     * @return \TencentAds\Model\AdgroupsUpdateDailyBudgetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -278,7 +278,7 @@ class AdgroupsApiContainer extends ApiContainer
     /**
      * Handle AdgroupsApi adgroupsUpdateDatetime function
      * @param array params
-     * @return \TencentAds\Model\AdgroupsUpdateDatetimeResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

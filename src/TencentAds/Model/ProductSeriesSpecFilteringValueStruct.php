@@ -214,7 +214,7 @@ class ProductSeriesSpecFilteringValueStruct implements ModelInterface, ArrayAcce
     /**
      * Gets fieldValue
      *
-     * @return string
+     * @return string|mixed
      */
     public function getFieldValue()
     {
@@ -238,7 +238,7 @@ class ProductSeriesSpecFilteringValueStruct implements ModelInterface, ArrayAcce
     /**
      * Gets currencyType
      *
-     * @return \TencentAds\Model\CurrencyType
+     * @return \TencentAds\Model\CurrencyType|mixed
      */
     public function getCurrencyType()
     {

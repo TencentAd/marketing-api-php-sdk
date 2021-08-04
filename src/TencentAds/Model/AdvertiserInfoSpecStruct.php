@@ -220,7 +220,7 @@ class AdvertiserInfoSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Gets statusPreAuthorizationNumber
      *
-     * @return int
+     * @return int|mixed
      */
     public function getStatusPreAuthorizationNumber()
     {
@@ -244,7 +244,7 @@ class AdvertiserInfoSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Gets statusConfirmAuthorizationNumber
      *
-     * @return int
+     * @return int|mixed
      */
     public function getStatusConfirmAuthorizationNumber()
     {
@@ -268,7 +268,7 @@ class AdvertiserInfoSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Gets statusRequestCancelationNumber
      *
-     * @return int
+     * @return int|mixed
      */
     public function getStatusRequestCancelationNumber()
     {

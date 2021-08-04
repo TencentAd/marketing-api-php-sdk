@@ -207,7 +207,7 @@ class CustomAudienceInsightsGetResponseData implements ModelInterface, ArrayAcce
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\CustomAudienceInsights[]
+     * @return \TencentAds\Model\CustomAudienceInsights[]|mixed
      */
     public function getList()
     {

@@ -225,7 +225,7 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -249,7 +249,7 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets taskName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTaskName()
     {
@@ -273,7 +273,7 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets taskType
      *
-     * @return \TencentAds\Model\TaskType
+     * @return \TencentAds\Model\TaskType|mixed
      */
     public function getTaskType()
     {
@@ -297,7 +297,7 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets taskSpec
      *
-     * @return \TencentAds\Model\TaskSpec
+     * @return \TencentAds\Model\TaskSpec|mixed
      */
     public function getTaskSpec()
     {

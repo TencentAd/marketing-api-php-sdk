@@ -208,7 +208,7 @@ class AggregationMatcherGroup implements ModelInterface, ArrayAccess
     /**
      * Gets aggregationMatcher
      *
-     * @return \TencentAds\Model\AggregationMatcher[]
+     * @return \TencentAds\Model\AggregationMatcher[]|mixed
      */
     public function getAggregationMatcher()
     {

@@ -226,7 +226,7 @@ class AuditSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Gets siteSet
      *
-     * @return \TencentAds\Model\SiteSetDefinition
+     * @return \TencentAds\Model\SiteSetDefinition|mixed
      */
     public function getSiteSet()
     {
@@ -250,7 +250,7 @@ class AuditSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Gets systemStatus
      *
-     * @return \TencentAds\Model\SysStatus
+     * @return \TencentAds\Model\SysStatus|mixed
      */
     public function getSystemStatus()
     {
@@ -274,7 +274,7 @@ class AuditSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Gets rejectMessage
      *
-     * @return string
+     * @return string|mixed
      */
     public function getRejectMessage()
     {
@@ -298,7 +298,7 @@ class AuditSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Gets elementRejectDetailInfo
      *
-     * @return \TencentAds\Model\ElementRejectDetailInfo[]
+     * @return \TencentAds\Model\ElementRejectDetailInfo[]|mixed
      */
     public function getElementRejectDetailInfo()
     {

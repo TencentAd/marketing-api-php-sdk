@@ -220,7 +220,7 @@ class UserPropertiesAddProperty implements ModelInterface, ArrayAccess
     /**
      * Gets outerUserId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOuterUserId()
     {
@@ -244,7 +244,7 @@ class UserPropertiesAddProperty implements ModelInterface, ArrayAccess
     /**
      * Gets userId
      *
-     * @return \TencentAds\Model\PropertiesUserId
+     * @return \TencentAds\Model\PropertiesUserId|mixed
      */
     public function getUserId()
     {
@@ -268,7 +268,7 @@ class UserPropertiesAddProperty implements ModelInterface, ArrayAccess
     /**
      * Gets propertyData
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPropertyData()
     {

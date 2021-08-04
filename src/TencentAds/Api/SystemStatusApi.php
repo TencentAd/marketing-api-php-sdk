@@ -99,7 +99,7 @@ class SystemStatusApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\SystemStatusGetResponse
+     * @return \TencentAds\Model\SystemStatusGetResponse|mixed
      */
     public function systemStatusGet($accountId, $statusType, $statusSpec, $fields = null)
     {

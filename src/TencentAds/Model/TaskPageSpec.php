@@ -220,7 +220,7 @@ class TaskPageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets pageId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageId()
     {
@@ -244,7 +244,7 @@ class TaskPageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets pageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPageUrl()
     {
@@ -268,7 +268,7 @@ class TaskPageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets overrideCanvasHeadOption
      *
-     * @return \TencentAds\Model\OverrideCanvasHeadOption
+     * @return \TencentAds\Model\OverrideCanvasHeadOption|mixed
      */
     public function getOverrideCanvasHeadOption()
     {

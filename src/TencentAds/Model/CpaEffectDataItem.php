@@ -250,7 +250,7 @@ class CpaEffectDataItem implements ModelInterface, ArrayAccess
     /**
      * Gets rank
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRank()
     {
@@ -274,7 +274,7 @@ class CpaEffectDataItem implements ModelInterface, ArrayAccess
     /**
      * Gets conversionCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getConversionCount()
     {
@@ -298,7 +298,7 @@ class CpaEffectDataItem implements ModelInterface, ArrayAccess
     /**
      * Gets cvr
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCvr()
     {
@@ -322,7 +322,7 @@ class CpaEffectDataItem implements ModelInterface, ArrayAccess
     /**
      * Gets targetCpa
      *
-     * @return double
+     * @return double|mixed
      */
     public function getTargetCpa()
     {
@@ -346,7 +346,7 @@ class CpaEffectDataItem implements ModelInterface, ArrayAccess
     /**
      * Gets realCpa
      *
-     * @return double
+     * @return double|mixed
      */
     public function getRealCpa()
     {
@@ -370,7 +370,7 @@ class CpaEffectDataItem implements ModelInterface, ArrayAccess
     /**
      * Gets cpaBias
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCpaBias()
     {
@@ -394,7 +394,7 @@ class CpaEffectDataItem implements ModelInterface, ArrayAccess
     /**
      * Gets industryTopTargetcpa
      *
-     * @return int
+     * @return int|mixed
      */
     public function getIndustryTopTargetcpa()
     {
@@ -418,7 +418,7 @@ class CpaEffectDataItem implements ModelInterface, ArrayAccess
     /**
      * Gets industryAvgTargetcpa
      *
-     * @return int
+     * @return int|mixed
      */
     public function getIndustryAvgTargetcpa()
     {

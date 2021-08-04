@@ -274,7 +274,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets costDiagnosisScore
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCostDiagnosisScore()
     {
@@ -298,7 +298,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets balance
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBalance()
     {
@@ -322,7 +322,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets adDailyBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdDailyBudget()
     {
@@ -346,7 +346,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets adRealtimeAvailableBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdRealtimeAvailableBudget()
     {
@@ -370,7 +370,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets adCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdCost()
     {
@@ -394,7 +394,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets campainDailyBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampainDailyBudget()
     {
@@ -418,7 +418,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets campainCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampainCost()
     {
@@ -442,7 +442,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets campainRealtimeAvailableBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCampainRealtimeAvailableBudget()
     {
@@ -466,7 +466,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets accountDailyBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountDailyBudget()
     {
@@ -490,7 +490,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets accountCost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountCost()
     {
@@ -514,7 +514,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets accountRealtimeAvailableBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountRealtimeAvailableBudget()
     {
@@ -538,7 +538,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Gets conclusion
      *
-     * @return string
+     * @return string|mixed
      */
     public function getConclusion()
     {

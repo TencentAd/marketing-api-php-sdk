@@ -214,7 +214,7 @@ class TimeRange implements ModelInterface, ArrayAccess
     /**
      * Gets startTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getStartTime()
     {
@@ -238,7 +238,7 @@ class TimeRange implements ModelInterface, ArrayAccess
     /**
      * Gets endTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getEndTime()
     {

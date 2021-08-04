@@ -219,7 +219,7 @@ class XijingPageAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -243,7 +243,7 @@ class XijingPageAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets isAutoSubmit
      *
-     * @return int
+     * @return int|mixed
      */
     public function getIsAutoSubmit()
     {
@@ -267,7 +267,7 @@ class XijingPageAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets pages
      *
-     * @return \TencentAds\Model\XijingPageAddPagesStruct[]
+     * @return \TencentAds\Model\XijingPageAddPagesStruct[]|mixed
      */
     public function getPages()
     {

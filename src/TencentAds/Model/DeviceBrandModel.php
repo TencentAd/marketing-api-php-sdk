@@ -214,7 +214,7 @@ class DeviceBrandModel implements ModelInterface, ArrayAccess
     /**
      * Gets includedList
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getIncludedList()
     {
@@ -238,7 +238,7 @@ class DeviceBrandModel implements ModelInterface, ArrayAccess
     /**
      * Gets excludedList
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getExcludedList()
     {

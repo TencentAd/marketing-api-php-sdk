@@ -96,7 +96,7 @@ class AudienceGrantRelationsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AudienceGrantRelationsAddResponse
+     * @return \TencentAds\Model\AudienceGrantRelationsAddResponse|mixed
      */
     public function audienceGrantRelationsAdd($data)
     {
@@ -382,7 +382,7 @@ class AudienceGrantRelationsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AudienceGrantRelationsGetResponse
+     * @return \TencentAds\Model\AudienceGrantRelationsGetResponse|mixed
      */
     public function audienceGrantRelationsGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {

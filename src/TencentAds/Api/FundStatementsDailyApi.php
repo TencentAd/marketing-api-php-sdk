@@ -100,7 +100,7 @@ class FundStatementsDailyApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\FundStatementsDailyGetResponse
+     * @return \TencentAds\Model\FundStatementsDailyGetResponse|mixed
      */
     public function fundStatementsDailyGet($accountId, $fundType, $dateRange, $tradeType = null, $fields = null)
     {

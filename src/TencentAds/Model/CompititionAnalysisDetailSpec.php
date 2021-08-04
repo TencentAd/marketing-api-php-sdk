@@ -274,7 +274,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Gets date
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDate()
     {
@@ -298,7 +298,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Gets hour
      *
-     * @return int
+     * @return int|mixed
      */
     public function getHour()
     {
@@ -322,7 +322,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Gets adUserAcceptance
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdUserAcceptance()
     {
@@ -346,7 +346,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Gets adBidAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdBidAmount()
     {
@@ -370,7 +370,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Gets sameIndustryBidAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSameIndustryBidAmount()
     {
@@ -394,7 +394,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Gets winOverAdBidAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWinOverAdBidAmount()
     {
@@ -418,7 +418,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Gets adClick
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdClick()
     {
@@ -442,7 +442,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Gets sameIndustryClick
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSameIndustryClick()
     {
@@ -466,7 +466,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Gets winOverAdClick
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWinOverAdClick()
     {
@@ -490,7 +490,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Gets adConversion
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdConversion()
     {
@@ -514,7 +514,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Gets sameIndustryConversion
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSameIndustryConversion()
     {
@@ -538,7 +538,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Gets winOverAdConversion
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWinOverAdConversion()
     {

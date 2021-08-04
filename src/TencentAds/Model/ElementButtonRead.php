@@ -274,7 +274,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     /**
      * Gets title
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTitle()
     {
@@ -298,7 +298,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     /**
      * Gets url
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUrl()
     {
@@ -322,7 +322,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     /**
      * Gets appIosSpec
      *
-     * @return \TencentAds\Model\AppIosSpec
+     * @return \TencentAds\Model\AppIosSpec|mixed
      */
     public function getAppIosSpec()
     {
@@ -346,7 +346,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     /**
      * Gets appAndroidSpec
      *
-     * @return \TencentAds\Model\AppAndroidSpec
+     * @return \TencentAds\Model\AppAndroidSpec|mixed
      */
     public function getAppAndroidSpec()
     {
@@ -370,7 +370,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     /**
      * Gets miniProgramSpec
      *
-     * @return \TencentAds\Model\MiniProgramSpec
+     * @return \TencentAds\Model\MiniProgramSpec|mixed
      */
     public function getMiniProgramSpec()
     {
@@ -394,7 +394,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameProgramSpec
      *
-     * @return \TencentAds\Model\MiniGameProgramSpec
+     * @return \TencentAds\Model\MiniGameProgramSpec|mixed
      */
     public function getMiniGameProgramSpec()
     {
@@ -418,7 +418,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     /**
      * Gets fengyeSpec
      *
-     * @return \TencentAds\Model\FengyeSpec
+     * @return \TencentAds\Model\FengyeSpec|mixed
      */
     public function getFengyeSpec()
     {
@@ -442,7 +442,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     /**
      * Gets cardSpec
      *
-     * @return \TencentAds\Model\CardSpec
+     * @return \TencentAds\Model\CardSpec|mixed
      */
     public function getCardSpec()
     {
@@ -466,7 +466,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     /**
      * Gets followSpec
      *
-     * @return \TencentAds\Model\FollowSpec
+     * @return \TencentAds\Model\FollowSpec|mixed
      */
     public function getFollowSpec()
     {
@@ -490,7 +490,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     /**
      * Gets serviceSpec
      *
-     * @return \TencentAds\Model\ServiceSpec
+     * @return \TencentAds\Model\ServiceSpec|mixed
      */
     public function getServiceSpec()
     {
@@ -514,7 +514,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     /**
      * Gets wecomSpec
      *
-     * @return \TencentAds\Model\WecomSpec
+     * @return \TencentAds\Model\WecomSpec|mixed
      */
     public function getWecomSpec()
     {
@@ -538,7 +538,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     /**
      * Gets useIcon
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUseIcon()
     {

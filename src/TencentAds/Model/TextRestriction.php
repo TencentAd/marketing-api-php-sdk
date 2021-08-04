@@ -220,7 +220,7 @@ class TextRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets minLength
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMinLength()
     {
@@ -244,7 +244,7 @@ class TextRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets maxLength
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMaxLength()
     {
@@ -268,7 +268,7 @@ class TextRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets textPattern
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTextPattern()
     {

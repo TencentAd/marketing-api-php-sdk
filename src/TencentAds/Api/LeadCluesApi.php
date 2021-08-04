@@ -96,7 +96,7 @@ class LeadCluesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\LeadCluesGetResponse
+     * @return \TencentAds\Model\LeadCluesGetResponse|mixed
      */
     public function leadCluesGet($data)
     {
@@ -378,7 +378,7 @@ class LeadCluesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\LeadCluesUpdateResponse
+     * @return \TencentAds\Model\LeadCluesUpdateResponse|mixed
      */
     public function leadCluesUpdate($data)
     {

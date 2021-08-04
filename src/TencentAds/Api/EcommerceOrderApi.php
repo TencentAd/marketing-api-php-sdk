@@ -101,7 +101,7 @@ class EcommerceOrderApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\EcommerceOrderGetResponse
+     * @return \TencentAds\Model\EcommerceOrderGetResponse|mixed
      */
     public function ecommerceOrderGet($accountId, $dateRange, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
@@ -436,7 +436,7 @@ class EcommerceOrderApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\EcommerceOrderUpdateResponse
+     * @return \TencentAds\Model\EcommerceOrderUpdateResponse|mixed
      */
     public function ecommerceOrderUpdate($data)
     {

@@ -226,7 +226,7 @@ class LeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLeadsId()
     {
@@ -250,7 +250,7 @@ class LeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsConvertType
      *
-     * @return \TencentAds\Model\LeadCluesLeadsConvertType
+     * @return \TencentAds\Model\LeadCluesLeadsConvertType|mixed
      */
     public function getLeadsConvertType()
     {
@@ -274,7 +274,7 @@ class LeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsIneffectReason
      *
-     * @return \TencentAds\Model\LeadCluesLeadsIneffectReason
+     * @return \TencentAds\Model\LeadCluesLeadsIneffectReason|mixed
      */
     public function getLeadsIneffectReason()
     {
@@ -298,7 +298,7 @@ class LeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsIntentionScore
      *
-     * @return \TencentAds\Model\LeadCluesLeadsIntentionScore
+     * @return \TencentAds\Model\LeadCluesLeadsIntentionScore|mixed
      */
     public function getLeadsIntentionScore()
     {

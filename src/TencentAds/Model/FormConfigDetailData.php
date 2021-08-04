@@ -220,7 +220,7 @@ class FormConfigDetailData implements ModelInterface, ArrayAccess
     /**
      * Gets title
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTitle()
     {
@@ -244,7 +244,7 @@ class FormConfigDetailData implements ModelInterface, ArrayAccess
     /**
      * Gets subTitle
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSubTitle()
     {
@@ -268,7 +268,7 @@ class FormConfigDetailData implements ModelInterface, ArrayAccess
     /**
      * Gets submitText
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSubmitText()
     {

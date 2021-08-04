@@ -262,7 +262,7 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -286,7 +286,7 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets fundType
      *
-     * @return \TencentAds\Model\AccountTypeMap
+     * @return \TencentAds\Model\AccountTypeMap|mixed
      */
     public function getFundType()
     {
@@ -310,7 +310,7 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets time
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTime()
     {
@@ -334,7 +334,7 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets deposit
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDeposit()
     {
@@ -358,7 +358,7 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets paid
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPaid()
     {
@@ -382,7 +382,7 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets transIn
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTransIn()
     {
@@ -406,7 +406,7 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets transOut
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTransOut()
     {
@@ -430,7 +430,7 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets creditModify
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreditModify()
     {
@@ -454,7 +454,7 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets balance
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBalance()
     {
@@ -478,7 +478,7 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets preauthBalance
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPreauthBalance()
     {

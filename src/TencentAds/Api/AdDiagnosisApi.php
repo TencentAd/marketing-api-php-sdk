@@ -96,7 +96,7 @@ class AdDiagnosisApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdDiagnosisGetResponse
+     * @return \TencentAds\Model\AdDiagnosisGetResponse|mixed
      */
     public function adDiagnosisGet($data)
     {

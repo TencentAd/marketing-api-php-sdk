@@ -103,7 +103,7 @@ class CreativetoolsTextApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CreativetoolsTextGetResponse
+     * @return \TencentAds\Model\CreativetoolsTextGetResponse|mixed
      */
     public function creativetoolsTextGet($accountId, $maxTextLength, $categoryFirstLevel = null, $categorySecondLevel = null, $keyword = null, $filtering = null, $number = null, $fields = null)
     {

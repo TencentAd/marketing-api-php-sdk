@@ -274,7 +274,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets elementShelf
      *
-     * @return \TencentAds\Model\ElementShelf
+     * @return \TencentAds\Model\ElementShelf|mixed
      */
     public function getElementShelf()
     {
@@ -298,7 +298,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets elementFloat
      *
-     * @return \TencentAds\Model\ElementFloat
+     * @return \TencentAds\Model\ElementFloat|mixed
      */
     public function getElementFloat()
     {
@@ -322,7 +322,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets elementGoods
      *
-     * @return \TencentAds\Model\ElementGoods
+     * @return \TencentAds\Model\ElementGoods|mixed
      */
     public function getElementGoods()
     {
@@ -346,7 +346,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets elementSwipe
      *
-     * @return \TencentAds\Model\ElementSwipe
+     * @return \TencentAds\Model\ElementSwipe|mixed
      */
     public function getElementSwipe()
     {
@@ -370,7 +370,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets elementWebview
      *
-     * @return \TencentAds\Model\ElementWebview
+     * @return \TencentAds\Model\ElementWebview|mixed
      */
     public function getElementWebview()
     {
@@ -394,7 +394,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets elementAnimateFloat
      *
-     * @return \TencentAds\Model\ElementAnimateFloat
+     * @return \TencentAds\Model\ElementAnimateFloat|mixed
      */
     public function getElementAnimateFloat()
     {
@@ -418,7 +418,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets imageSpec
      *
-     * @return \TencentAds\Model\ElementImage
+     * @return \TencentAds\Model\ElementImage|mixed
      */
     public function getImageSpec()
     {
@@ -442,7 +442,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets videoSpec
      *
-     * @return \TencentAds\Model\ElementVideo
+     * @return \TencentAds\Model\ElementVideo|mixed
      */
     public function getVideoSpec()
     {
@@ -466,7 +466,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets textSpec
      *
-     * @return \TencentAds\Model\ElementText
+     * @return \TencentAds\Model\ElementText|mixed
      */
     public function getTextSpec()
     {
@@ -490,7 +490,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets buttonSpec
      *
-     * @return \TencentAds\Model\ElementButtonRead
+     * @return \TencentAds\Model\ElementButtonRead|mixed
      */
     public function getButtonSpec()
     {
@@ -514,7 +514,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets formSpec
      *
-     * @return \TencentAds\Model\ElementForm
+     * @return \TencentAds\Model\ElementForm|mixed
      */
     public function getFormSpec()
     {
@@ -538,7 +538,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets elementType
      *
-     * @return \TencentAds\Model\PageElementsType
+     * @return \TencentAds\Model\PageElementsType|mixed
      */
     public function getElementType()
     {

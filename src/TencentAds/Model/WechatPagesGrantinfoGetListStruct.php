@@ -220,7 +220,7 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ownerAccountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOwnerAccountId()
     {
@@ -244,7 +244,7 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ownerAccountName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOwnerAccountName()
     {
@@ -268,7 +268,7 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {

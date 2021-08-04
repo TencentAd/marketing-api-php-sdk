@@ -207,7 +207,7 @@ class DynamicCreativesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicCreativeId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDynamicCreativeId()
     {

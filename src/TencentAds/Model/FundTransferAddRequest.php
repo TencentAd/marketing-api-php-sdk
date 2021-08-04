@@ -237,7 +237,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets amount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAmount()
     {
@@ -261,7 +261,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets transferType
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTransferType()
     {
@@ -285,7 +285,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets externalBillNo
      *
-     * @return string
+     * @return string|mixed
      */
     public function getExternalBillNo()
     {
@@ -309,7 +309,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets memo
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMemo()
     {
@@ -333,7 +333,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -357,7 +357,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets fundType
      *
-     * @return \TencentAds\Model\AccountTypeMap
+     * @return \TencentAds\Model\AccountTypeMap|mixed
      */
     public function getFundType()
     {

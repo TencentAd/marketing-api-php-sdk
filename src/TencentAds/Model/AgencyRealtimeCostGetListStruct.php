@@ -220,7 +220,7 @@ class AgencyRealtimeCostGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cost
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCost()
     {
@@ -244,7 +244,7 @@ class AgencyRealtimeCostGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets caculateTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCaculateTime()
     {
@@ -268,7 +268,7 @@ class AgencyRealtimeCostGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets fundType
      *
-     * @return \TencentAds\Model\AccountTypeMap
+     * @return \TencentAds\Model\AccountTypeMap|mixed
      */
     public function getFundType()
     {

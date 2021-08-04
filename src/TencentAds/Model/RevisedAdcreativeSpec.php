@@ -214,7 +214,7 @@ class RevisedAdcreativeSpec implements ModelInterface, ArrayAccess
     /**
      * Gets revisedAdcreativeElements
      *
-     * @return \TencentAds\Model\RevisedAdcreativeElements
+     * @return \TencentAds\Model\RevisedAdcreativeElements|mixed
      */
     public function getRevisedAdcreativeElements()
     {
@@ -238,7 +238,7 @@ class RevisedAdcreativeSpec implements ModelInterface, ArrayAccess
     /**
      * Gets revisedPageSpec
      *
-     * @return \TencentAds\Model\RevisedPageSpec
+     * @return \TencentAds\Model\RevisedPageSpec|mixed
      */
     public function getRevisedPageSpec()
     {

@@ -96,7 +96,7 @@ class ProfilesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ProfilesAddResponse
+     * @return \TencentAds\Model\ProfilesAddResponse|mixed
      */
     public function profilesAdd($data)
     {
@@ -378,7 +378,7 @@ class ProfilesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ProfilesDeleteResponse
+     * @return \TencentAds\Model\ProfilesDeleteResponse|mixed
      */
     public function profilesDelete($data)
     {
@@ -664,7 +664,7 @@ class ProfilesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ProfilesGetResponse
+     * @return \TencentAds\Model\ProfilesGetResponse|mixed
      */
     public function profilesGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {

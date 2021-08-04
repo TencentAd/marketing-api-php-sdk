@@ -30,7 +30,7 @@ class BusinessMdmAccountRelationsApiContainer extends ApiContainer
     /**
      * Handle BusinessMdmAccountRelationsApi businessMdmAccountRelationsGet function
      * @param array params
-     * @return \TencentAds\Model\BusinessMdmAccountRelationsGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

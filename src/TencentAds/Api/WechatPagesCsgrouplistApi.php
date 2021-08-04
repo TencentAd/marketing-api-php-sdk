@@ -99,7 +99,7 @@ class WechatPagesCsgrouplistApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\WechatPagesCsgrouplistGetResponse
+     * @return \TencentAds\Model\WechatPagesCsgrouplistGetResponse|mixed
      */
     public function wechatPagesCsgrouplistGet($accountId, $page = null, $pageSize = null, $fields = null)
     {

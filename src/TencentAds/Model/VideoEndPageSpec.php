@@ -214,7 +214,7 @@ class VideoEndPageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets endPageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getEndPageId()
     {
@@ -238,7 +238,7 @@ class VideoEndPageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets endPageType
      *
-     * @return \TencentAds\Model\VideoEndPageType
+     * @return \TencentAds\Model\VideoEndPageType|mixed
      */
     public function getEndPageType()
     {

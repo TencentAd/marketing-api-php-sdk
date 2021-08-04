@@ -219,7 +219,7 @@ class AndroidUnionChannelPackagesUpdateRequest implements ModelInterface, ArrayA
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -243,7 +243,7 @@ class AndroidUnionChannelPackagesUpdateRequest implements ModelInterface, ArrayA
     /**
      * Gets androidUnionAppId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAndroidUnionAppId()
     {
@@ -267,7 +267,7 @@ class AndroidUnionChannelPackagesUpdateRequest implements ModelInterface, ArrayA
     /**
      * Gets appAndroidChannelPackageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAppAndroidChannelPackageId()
     {

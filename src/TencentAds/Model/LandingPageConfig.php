@@ -214,7 +214,7 @@ class LandingPageConfig implements ModelInterface, ArrayAccess
     /**
      * Gets required
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getRequired()
     {
@@ -238,7 +238,7 @@ class LandingPageConfig implements ModelInterface, ArrayAccess
     /**
      * Gets supportPageTypeList
      *
-     * @return \TencentAds\Model\SupportPageTypeStruct[]
+     * @return \TencentAds\Model\SupportPageTypeStruct[]|mixed
      */
     public function getSupportPageTypeList()
     {

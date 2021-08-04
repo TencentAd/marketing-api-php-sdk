@@ -30,7 +30,7 @@ class AdcreativesRelatedCapabilityApiContainer extends ApiContainer
     /**
      * Handle AdcreativesRelatedCapabilityApi adcreativesRelatedCapabilityGet function
      * @param array params
-     * @return \TencentAds\Model\AdcreativesRelatedCapabilityGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

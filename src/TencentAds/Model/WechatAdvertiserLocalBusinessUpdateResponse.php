@@ -225,7 +225,7 @@ class WechatAdvertiserLocalBusinessUpdateResponse implements ModelInterface, Arr
     /**
      * Gets code
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCode()
     {
@@ -249,7 +249,7 @@ class WechatAdvertiserLocalBusinessUpdateResponse implements ModelInterface, Arr
     /**
      * Gets message
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMessage()
     {
@@ -273,7 +273,7 @@ class WechatAdvertiserLocalBusinessUpdateResponse implements ModelInterface, Arr
     /**
      * Gets messageCn
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMessageCn()
     {
@@ -297,7 +297,7 @@ class WechatAdvertiserLocalBusinessUpdateResponse implements ModelInterface, Arr
     /**
      * Gets errors
      *
-     * @return \TencentAds\Model\ApiErrorStruct[]
+     * @return \TencentAds\Model\ApiErrorStruct[]|mixed
      */
     public function getErrors()
     {

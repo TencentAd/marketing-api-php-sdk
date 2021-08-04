@@ -237,7 +237,7 @@ class DynamicAdVideoAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -261,7 +261,7 @@ class DynamicAdVideoAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets productCatalogId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProductCatalogId()
     {
@@ -285,7 +285,7 @@ class DynamicAdVideoAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets productMode
      *
-     * @return \TencentAds\Model\ProductMode
+     * @return \TencentAds\Model\ProductMode|mixed
      */
     public function getProductMode()
     {
@@ -309,7 +309,7 @@ class DynamicAdVideoAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets productSource
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProductSource()
     {
@@ -333,7 +333,7 @@ class DynamicAdVideoAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets videoMaxDuration
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVideoMaxDuration()
     {
@@ -357,7 +357,7 @@ class DynamicAdVideoAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets dynamicAdTemplateId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getDynamicAdTemplateId()
     {

@@ -101,7 +101,7 @@ class WechatFundStatementsDetailedApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\WechatFundStatementsDetailedGetResponse
+     * @return \TencentAds\Model\WechatFundStatementsDetailedGetResponse|mixed
      */
     public function wechatFundStatementsDetailedGet($tradeType, $dateRange, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {

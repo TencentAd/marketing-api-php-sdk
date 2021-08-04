@@ -304,7 +304,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Gets adcreativeTemplateId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdcreativeTemplateId()
     {
@@ -328,7 +328,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Gets adcreativeTemplateName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdcreativeTemplateName()
     {
@@ -352,7 +352,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Gets adcreativeTemplateDescription
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdcreativeTemplateDescription()
     {
@@ -376,7 +376,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Gets adcreativeTemplateSize
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdcreativeTemplateSize()
     {
@@ -400,7 +400,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Gets adcreativeTemplateStyle
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdcreativeTemplateStyle()
     {
@@ -424,7 +424,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Gets adcreativeTemplateAppellation
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdcreativeTemplateAppellation()
     {
@@ -448,7 +448,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Gets siteSet
      *
-     * @return \TencentAds\Model\SiteSetDefinition
+     * @return \TencentAds\Model\SiteSetDefinition|mixed
      */
     public function getSiteSet()
     {
@@ -472,7 +472,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObjectTypeWithoutJd
+     * @return \TencentAds\Model\PromotedObjectTypeWithoutJd|mixed
      */
     public function getPromotedObjectType()
     {
@@ -496,7 +496,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Gets adcreativeSampleImageList
      *
-     * @return \TencentAds\Model\AdcreativeSampleImage[]
+     * @return \TencentAds\Model\AdcreativeSampleImage[]|mixed
      */
     public function getAdcreativeSampleImageList()
     {
@@ -520,7 +520,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Gets adAttributes
      *
-     * @return \TencentAds\Model\AdcreativeElement[]
+     * @return \TencentAds\Model\AdcreativeElement[]|mixed
      */
     public function getAdAttributes()
     {
@@ -544,7 +544,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Gets adcreativeAttributes
      *
-     * @return \TencentAds\Model\AdcreativeElement[]
+     * @return \TencentAds\Model\AdcreativeElement[]|mixed
      */
     public function getAdcreativeAttributes()
     {
@@ -568,7 +568,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Gets adcreativeElements
      *
-     * @return \TencentAds\Model\AdcreativeElement[]
+     * @return \TencentAds\Model\AdcreativeElement[]|mixed
      */
     public function getAdcreativeElements()
     {
@@ -592,7 +592,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Gets supportPageType
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getSupportPageType()
     {
@@ -616,7 +616,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Gets landingPageConfig
      *
-     * @return \TencentAds\Model\LandingPageConfig
+     * @return \TencentAds\Model\LandingPageConfig|mixed
      */
     public function getLandingPageConfig()
     {
@@ -640,7 +640,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Gets supportBillingSpecList
      *
-     * @return \TencentAds\Model\SupportBillingSpec[]
+     * @return \TencentAds\Model\SupportBillingSpec[]|mixed
      */
     public function getSupportBillingSpecList()
     {
@@ -664,7 +664,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Gets supportDynamicAbilitySpecList
      *
-     * @return \TencentAds\Model\SupportDynamicAbilitySpecList
+     * @return \TencentAds\Model\SupportDynamicAbilitySpecList|mixed
      */
     public function getSupportDynamicAbilitySpecList()
     {
@@ -688,7 +688,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Gets supportBidModeList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getSupportBidModeList()
     {

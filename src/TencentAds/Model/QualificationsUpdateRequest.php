@@ -225,7 +225,7 @@ class QualificationsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets qualificationType
      *
-     * @return \TencentAds\Model\QualificationType
+     * @return \TencentAds\Model\QualificationType|mixed
      */
     public function getQualificationType()
     {
@@ -249,7 +249,7 @@ class QualificationsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets qualificationId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getQualificationId()
     {
@@ -273,7 +273,7 @@ class QualificationsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets imageIdList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getImageIdList()
     {
@@ -297,7 +297,7 @@ class QualificationsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {

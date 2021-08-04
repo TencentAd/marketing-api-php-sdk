@@ -30,7 +30,7 @@ class CustomFeaturesApiContainer extends ApiContainer
     /**
      * Handle CustomFeaturesApi customFeaturesGet function
      * @param array params
-     * @return \TencentAds\Model\CustomFeaturesGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

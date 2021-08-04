@@ -244,7 +244,7 @@ class TextSpec implements ModelInterface, ArrayAccess
     /**
      * Gets text
      *
-     * @return string
+     * @return string|mixed
      */
     public function getText()
     {
@@ -268,7 +268,7 @@ class TextSpec implements ModelInterface, ArrayAccess
     /**
      * Gets paddingTop
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPaddingTop()
     {
@@ -292,7 +292,7 @@ class TextSpec implements ModelInterface, ArrayAccess
     /**
      * Gets paddingBottom
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPaddingBottom()
     {
@@ -316,7 +316,7 @@ class TextSpec implements ModelInterface, ArrayAccess
     /**
      * Gets fontSize
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFontSize()
     {
@@ -340,7 +340,7 @@ class TextSpec implements ModelInterface, ArrayAccess
     /**
      * Gets fontColor
      *
-     * @return string
+     * @return string|mixed
      */
     public function getFontColor()
     {
@@ -364,7 +364,7 @@ class TextSpec implements ModelInterface, ArrayAccess
     /**
      * Gets textAlignment
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTextAlignment()
     {
@@ -388,7 +388,7 @@ class TextSpec implements ModelInterface, ArrayAccess
     /**
      * Gets fontStyle
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFontStyle()
     {

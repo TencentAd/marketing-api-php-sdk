@@ -214,7 +214,7 @@ class CreateAndroidChannelPackageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets packageName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPackageName()
     {
@@ -238,7 +238,7 @@ class CreateAndroidChannelPackageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets downloadUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDownloadUrl()
     {

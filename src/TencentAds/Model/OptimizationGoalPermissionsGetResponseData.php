@@ -219,7 +219,7 @@ class OptimizationGoalPermissionsGetResponseData implements ModelInterface, Arra
     /**
      * Gets optimizationGoalPermissionList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getOptimizationGoalPermissionList()
     {
@@ -243,7 +243,7 @@ class OptimizationGoalPermissionsGetResponseData implements ModelInterface, Arra
     /**
      * Gets deepBehaviorOptimizationGoalPermissionList
      *
-     * @return \TencentAds\Model\DeepBehaviorOptimizationGoalPermissionStruct[]
+     * @return \TencentAds\Model\DeepBehaviorOptimizationGoalPermissionStruct[]|mixed
      */
     public function getDeepBehaviorOptimizationGoalPermissionList()
     {
@@ -267,7 +267,7 @@ class OptimizationGoalPermissionsGetResponseData implements ModelInterface, Arra
     /**
      * Gets deepWorthOptimizationGoalPermissionList
      *
-     * @return \TencentAds\Model\DeepWorthOptimizationGoalPermissionStruct[]
+     * @return \TencentAds\Model\DeepWorthOptimizationGoalPermissionStruct[]|mixed
      */
     public function getDeepWorthOptimizationGoalPermissionList()
     {

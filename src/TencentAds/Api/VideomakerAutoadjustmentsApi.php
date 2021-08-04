@@ -102,7 +102,7 @@ class VideomakerAutoadjustmentsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\VideomakerAutoadjustmentsAddResponse
+     * @return \TencentAds\Model\VideomakerAutoadjustmentsAddResponse|mixed
      */
     public function videomakerAutoadjustmentsAdd($accountId, $adjustmentType, $videoId = null, $videoFile = null, $signature = null, $smartAdjustment = null, $manualAdjustment = null)
     {

@@ -208,7 +208,7 @@ class ElementGoods implements ModelInterface, ArrayAccess
     /**
      * Gets goodsButtonSpec
      *
-     * @return \TencentAds\Model\GoodsButtonSpec
+     * @return \TencentAds\Model\GoodsButtonSpec|mixed
      */
     public function getGoodsButtonSpec()
     {

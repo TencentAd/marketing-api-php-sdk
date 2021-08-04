@@ -213,7 +213,7 @@ class PromotedObjectsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\PromotedObjectsGetListStruct[]
+     * @return \TencentAds\Model\PromotedObjectsGetListStruct[]|mixed
      */
     public function getList()
     {
@@ -237,7 +237,7 @@ class PromotedObjectsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets pageInfo
      *
-     * @return \TencentAds\Model\Conf
+     * @return \TencentAds\Model\Conf|mixed
      */
     public function getPageInfo()
     {

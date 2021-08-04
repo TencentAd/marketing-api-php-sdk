@@ -232,7 +232,7 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets labelCategory
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLabelCategory()
     {
@@ -256,7 +256,7 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets label
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getLabel()
     {
@@ -280,7 +280,7 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets icon
      *
-     * @return \TencentAds\Model\LabelIconItem[]
+     * @return \TencentAds\Model\LabelIconItem[]|mixed
      */
     public function getIcon()
     {
@@ -304,7 +304,7 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets labelType
      *
-     * @return \TencentAds\Model\LabelType
+     * @return \TencentAds\Model\LabelType|mixed
      */
     public function getLabelType()
     {
@@ -328,7 +328,7 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets labelTypeName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLabelTypeName()
     {

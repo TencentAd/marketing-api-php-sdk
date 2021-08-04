@@ -207,7 +207,7 @@ class CustomAudienceEstimationsGetResponseData implements ModelInterface, ArrayA
     /**
      * Gets userCount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUserCount()
     {

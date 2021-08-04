@@ -207,7 +207,7 @@ class DplabelAdLabelGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\AdLabelGetListStruct[]
+     * @return \TencentAds\Model\AdLabelGetListStruct[]|mixed
      */
     public function getList()
     {

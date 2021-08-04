@@ -226,7 +226,7 @@ class WebsiteReadStruct implements ModelInterface, ArrayAccess
     /**
      * Gets websiteDomain
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWebsiteDomain()
     {
@@ -250,7 +250,7 @@ class WebsiteReadStruct implements ModelInterface, ArrayAccess
     /**
      * Gets icpImageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIcpImageId()
     {
@@ -274,7 +274,7 @@ class WebsiteReadStruct implements ModelInterface, ArrayAccess
     /**
      * Gets systemStatus
      *
-     * @return \TencentAds\Model\WebsiteStatus
+     * @return \TencentAds\Model\WebsiteStatus|mixed
      */
     public function getSystemStatus()
     {
@@ -298,7 +298,7 @@ class WebsiteReadStruct implements ModelInterface, ArrayAccess
     /**
      * Gets rejectMessage
      *
-     * @return string
+     * @return string|mixed
      */
     public function getRejectMessage()
     {

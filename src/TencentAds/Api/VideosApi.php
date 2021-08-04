@@ -100,7 +100,7 @@ class VideosApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\VideosAddResponse
+     * @return \TencentAds\Model\VideosAddResponse|mixed
      */
     public function videosAdd($accountId, $videoFile, $signature, $description = null, $adcreativeTemplateId = null)
     {
@@ -428,7 +428,7 @@ class VideosApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\VideosDeleteResponse
+     * @return \TencentAds\Model\VideosDeleteResponse|mixed
      */
     public function videosDelete($data)
     {
@@ -714,7 +714,7 @@ class VideosApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\VideosGetResponse
+     * @return \TencentAds\Model\VideosGetResponse|mixed
      */
     public function videosGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
@@ -1035,7 +1035,7 @@ class VideosApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\VideosUpdateResponse
+     * @return \TencentAds\Model\VideosUpdateResponse|mixed
      */
     public function videosUpdate($data)
     {

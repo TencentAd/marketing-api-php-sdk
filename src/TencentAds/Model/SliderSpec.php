@@ -232,7 +232,7 @@ class SliderSpec implements ModelInterface, ArrayAccess
     /**
      * Gets imageIdList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getImageIdList()
     {
@@ -256,7 +256,7 @@ class SliderSpec implements ModelInterface, ArrayAccess
     /**
      * Gets width
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWidth()
     {
@@ -280,7 +280,7 @@ class SliderSpec implements ModelInterface, ArrayAccess
     /**
      * Gets height
      *
-     * @return int
+     * @return int|mixed
      */
     public function getHeight()
     {
@@ -304,7 +304,7 @@ class SliderSpec implements ModelInterface, ArrayAccess
     /**
      * Gets sliderStyle
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSliderStyle()
     {
@@ -328,7 +328,7 @@ class SliderSpec implements ModelInterface, ArrayAccess
     /**
      * Gets bgColor
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBgColor()
     {

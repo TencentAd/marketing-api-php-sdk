@@ -280,7 +280,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageId()
     {
@@ -304,7 +304,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageServiceId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPageServiceId()
     {
@@ -328,7 +328,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPageName()
     {
@@ -352,7 +352,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageType
      *
-     * @return \TencentAds\Model\PageType
+     * @return \TencentAds\Model\PageType|mixed
      */
     public function getPageType()
     {
@@ -376,7 +376,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pagePublishStatus
      *
-     * @return \TencentAds\Model\PagePublishStatus
+     * @return \TencentAds\Model\PagePublishStatus|mixed
      */
     public function getPagePublishStatus()
     {
@@ -400,7 +400,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageStatus
      *
-     * @return \TencentAds\Model\PageAuditStatus
+     * @return \TencentAds\Model\PageAuditStatus|mixed
      */
     public function getPageStatus()
     {
@@ -424,7 +424,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageLastModifyTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPageLastModifyTime()
     {
@@ -448,7 +448,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageOwnerId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPageOwnerId()
     {
@@ -472,7 +472,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Gets publishUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPublishUrl()
     {
@@ -496,7 +496,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Gets rejectReason
      *
-     * @return string
+     * @return string|mixed
      */
     public function getRejectReason()
     {
@@ -520,7 +520,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Gets playableType
      *
-     * @return \TencentAds\Model\PlayableType
+     * @return \TencentAds\Model\PlayableType|mixed
      */
     public function getPlayableType()
     {
@@ -544,7 +544,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Gets publishAppId
      *
-     * @return \TencentAds\Model\PublishAppId
+     * @return \TencentAds\Model\PublishAppId|mixed
      */
     public function getPublishAppId()
     {
@@ -568,7 +568,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Gets unpublishAppId
      *
-     * @return \TencentAds\Model\UnpublishAppId
+     * @return \TencentAds\Model\UnpublishAppId|mixed
      */
     public function getUnpublishAppId()
     {

@@ -220,7 +220,7 @@ class BusinessManagerRelationsGetListStruct implements ModelInterface, ArrayAcce
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -244,7 +244,7 @@ class BusinessManagerRelationsGetListStruct implements ModelInterface, ArrayAcce
     /**
      * Gets corporationName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCorporationName()
     {
@@ -268,7 +268,7 @@ class BusinessManagerRelationsGetListStruct implements ModelInterface, ArrayAcce
     /**
      * Gets accountType
      *
-     * @return \TencentAds\Model\BMAccountType
+     * @return \TencentAds\Model\BMAccountType|mixed
      */
     public function getAccountType()
     {

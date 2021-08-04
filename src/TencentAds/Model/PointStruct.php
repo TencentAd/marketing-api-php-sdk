@@ -214,7 +214,7 @@ class PointStruct implements ModelInterface, ArrayAccess
     /**
      * Gets time
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTime()
     {
@@ -238,7 +238,7 @@ class PointStruct implements ModelInterface, ArrayAccess
     /**
      * Gets value
      *
-     * @return double
+     * @return double|mixed
      */
     public function getValue()
     {

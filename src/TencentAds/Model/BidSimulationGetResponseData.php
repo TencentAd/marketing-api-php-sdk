@@ -207,7 +207,7 @@ class BidSimulationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets diagBidSimulate
      *
-     * @return \TencentAds\Model\BidSimulateResultItem[]
+     * @return \TencentAds\Model\BidSimulateResultItem[]|mixed
      */
     public function getDiagBidSimulate()
     {

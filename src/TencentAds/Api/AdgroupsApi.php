@@ -96,7 +96,7 @@ class AdgroupsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdgroupsAddResponse
+     * @return \TencentAds\Model\AdgroupsAddResponse|mixed
      */
     public function adgroupsAdd($data)
     {
@@ -378,7 +378,7 @@ class AdgroupsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdgroupsDeleteResponse
+     * @return \TencentAds\Model\AdgroupsDeleteResponse|mixed
      */
     public function adgroupsDelete($data)
     {
@@ -665,7 +665,7 @@ class AdgroupsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdgroupsGetResponse
+     * @return \TencentAds\Model\AdgroupsGetResponse|mixed
      */
     public function adgroupsGet($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
     {
@@ -994,7 +994,7 @@ class AdgroupsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdgroupsUpdateResponse
+     * @return \TencentAds\Model\AdgroupsUpdateResponse|mixed
      */
     public function adgroupsUpdate($data)
     {
@@ -1276,7 +1276,7 @@ class AdgroupsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdgroupsUpdateBidAmountResponse
+     * @return \TencentAds\Model\AdgroupsUpdateBidAmountResponse|mixed
      */
     public function adgroupsUpdateBidAmount($data)
     {
@@ -1558,7 +1558,7 @@ class AdgroupsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdgroupsUpdateConfiguredStatusResponse
+     * @return \TencentAds\Model\AdgroupsUpdateConfiguredStatusResponse|mixed
      */
     public function adgroupsUpdateConfiguredStatus($data)
     {
@@ -1840,7 +1840,7 @@ class AdgroupsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdgroupsUpdateDailyBudgetResponse
+     * @return \TencentAds\Model\AdgroupsUpdateDailyBudgetResponse|mixed
      */
     public function adgroupsUpdateDailyBudget($data)
     {
@@ -2122,7 +2122,7 @@ class AdgroupsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdgroupsUpdateDatetimeResponse
+     * @return \TencentAds\Model\AdgroupsUpdateDatetimeResponse|mixed
      */
     public function adgroupsUpdateDatetime($data)
     {

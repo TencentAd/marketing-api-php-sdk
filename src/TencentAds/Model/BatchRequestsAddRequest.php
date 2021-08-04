@@ -207,7 +207,7 @@ class BatchRequestsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets batchRequestSpec
      *
-     * @return \TencentAds\Model\BatchRequestSpecStruct[]
+     * @return \TencentAds\Model\BatchRequestSpecStruct[]|mixed
      */
     public function getBatchRequestSpec()
     {

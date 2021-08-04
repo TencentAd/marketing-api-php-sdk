@@ -316,7 +316,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets outerLeadsId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOuterLeadsId()
     {
@@ -340,7 +340,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLeadsId()
     {
@@ -364,7 +364,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsTel
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeadsTel()
     {
@@ -388,7 +388,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsQq
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLeadsQq()
     {
@@ -412,7 +412,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsWechat
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeadsWechat()
     {
@@ -436,7 +436,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets clickId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getClickId()
     {
@@ -460,7 +460,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsType
      *
-     * @return \TencentAds\Model\LeadCluesLeadsType
+     * @return \TencentAds\Model\LeadCluesLeadsType|mixed
      */
     public function getLeadsType()
     {
@@ -484,7 +484,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsUserId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeadsUserId()
     {
@@ -508,7 +508,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsUserType
      *
-     * @return \TencentAds\Model\LeadsUserType
+     * @return \TencentAds\Model\LeadsUserType|mixed
      */
     public function getLeadsUserType()
     {
@@ -532,7 +532,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsUserWechatAppid
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeadsUserWechatAppid()
     {
@@ -556,7 +556,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeadsName()
     {
@@ -580,7 +580,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsGender
      *
-     * @return \TencentAds\Model\LeadCluesGenderType
+     * @return \TencentAds\Model\LeadCluesGenderType|mixed
      */
     public function getLeadsGender()
     {
@@ -604,7 +604,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsEmail
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeadsEmail()
     {
@@ -628,7 +628,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsArea
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeadsArea()
     {
@@ -652,7 +652,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets bundle
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBundle()
     {
@@ -676,7 +676,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets outerLeadsConvertType
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOuterLeadsConvertType()
     {
@@ -700,7 +700,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets outerLeadsIneffectReason
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOuterLeadsIneffectReason()
     {
@@ -724,7 +724,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets outerLeadsComefrom
      *
-     * @return \TencentAds\Model\ActionChannelType
+     * @return \TencentAds\Model\ActionChannelType|mixed
      */
     public function getOuterLeadsComefrom()
     {
@@ -748,7 +748,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets memo
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMemo()
     {

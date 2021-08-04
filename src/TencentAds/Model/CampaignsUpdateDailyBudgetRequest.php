@@ -213,7 +213,7 @@ class CampaignsUpdateDailyBudgetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -237,7 +237,7 @@ class CampaignsUpdateDailyBudgetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets updateDailyBudgetSpec
      *
-     * @return \TencentAds\Model\CampaignsUpdateDailyBudgetUpdateDailyBudgetStruct[]
+     * @return \TencentAds\Model\CampaignsUpdateDailyBudgetUpdateDailyBudgetStruct[]|mixed
      */
     public function getUpdateDailyBudgetSpec()
     {

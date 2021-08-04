@@ -213,7 +213,7 @@ class WechatAdvertiserDetailGetResponseData implements ModelInterface, ArrayAcce
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\WechatAdvertiserDetailGetListStruct[]
+     * @return \TencentAds\Model\WechatAdvertiserDetailGetListStruct[]|mixed
      */
     public function getList()
     {
@@ -237,7 +237,7 @@ class WechatAdvertiserDetailGetResponseData implements ModelInterface, ArrayAcce
     /**
      * Gets pageInfo
      *
-     * @return \TencentAds\Model\Conf
+     * @return \TencentAds\Model\Conf|mixed
      */
     public function getPageInfo()
     {

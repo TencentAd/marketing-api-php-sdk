@@ -207,7 +207,7 @@ class AdcreativeTemplateDetailGetResponseData implements ModelInterface, ArrayAc
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\AdcreativeTemplateDetailGetAdcreativeTemplateListStruct[]
+     * @return \TencentAds\Model\AdcreativeTemplateDetailGetAdcreativeTemplateListStruct[]|mixed
      */
     public function getList()
     {

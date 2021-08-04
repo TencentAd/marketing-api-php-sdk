@@ -220,7 +220,7 @@ class WechatOcpaSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Gets optimizationGoal
      *
-     * @return \TencentAds\Model\OptimizationGoal
+     * @return \TencentAds\Model\OptimizationGoal|mixed
      */
     public function getOptimizationGoal()
     {
@@ -244,7 +244,7 @@ class WechatOcpaSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Gets maxPrice
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMaxPrice()
     {
@@ -268,7 +268,7 @@ class WechatOcpaSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Gets minPrice
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMinPrice()
     {

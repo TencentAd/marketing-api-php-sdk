@@ -214,7 +214,7 @@ class WechatAdLabelsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets labelCategory
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLabelCategory()
     {
@@ -238,7 +238,7 @@ class WechatAdLabelsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets label
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getLabel()
     {

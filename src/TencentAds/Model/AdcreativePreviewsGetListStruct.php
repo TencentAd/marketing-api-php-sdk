@@ -214,7 +214,7 @@ class AdcreativePreviewsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets userId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUserId()
     {
@@ -238,7 +238,7 @@ class AdcreativePreviewsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets userIdType
      *
-     * @return \TencentAds\Model\ViewerIdType
+     * @return \TencentAds\Model\ViewerIdType|mixed
      */
     public function getUserIdType()
     {

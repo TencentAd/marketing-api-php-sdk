@@ -30,7 +30,7 @@ class ProductCatalogsReportsApiContainer extends ApiContainer
     /**
      * Handle ProductCatalogsReportsApi productCatalogsReportsGet function
      * @param array params
-     * @return \TencentAds\Model\ProductCatalogsReportsGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

@@ -96,7 +96,7 @@ class OuterCluesContactApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\OuterCluesContactUpdateResponse
+     * @return \TencentAds\Model\OuterCluesContactUpdateResponse|mixed
      */
     public function outerCluesContactUpdate($data)
     {

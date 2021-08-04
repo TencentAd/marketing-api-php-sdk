@@ -220,7 +220,7 @@ class BatchRequestsAddListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets httpCode
      *
-     * @return int
+     * @return int|mixed
      */
     public function getHttpCode()
     {
@@ -244,7 +244,7 @@ class BatchRequestsAddListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets headers
      *
-     * @return \TencentAds\Model\HeaderStruct[]
+     * @return \TencentAds\Model\HeaderStruct[]|mixed
      */
     public function getHeaders()
     {
@@ -268,7 +268,7 @@ class BatchRequestsAddListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets body
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBody()
     {

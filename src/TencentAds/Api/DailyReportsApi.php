@@ -105,7 +105,7 @@ class DailyReportsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\DailyReportsGetResponse
+     * @return \TencentAds\Model\DailyReportsGetResponse|mixed
      */
     public function dailyReportsGet($accountId, $level, $dateRange, $filtering = null, $groupBy = null, $orderBy = null, $page = null, $pageSize = null, $timeLine = null, $fields = null)
     {

@@ -220,7 +220,7 @@ class OrderDeliverySpec implements ModelInterface, ArrayAccess
     /**
      * Gets deliveryTrackingNumber
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDeliveryTrackingNumber()
     {
@@ -244,7 +244,7 @@ class OrderDeliverySpec implements ModelInterface, ArrayAccess
     /**
      * Gets expressCompany
      *
-     * @return \TencentAds\Model\ExpressCompany
+     * @return \TencentAds\Model\ExpressCompany|mixed
      */
     public function getExpressCompany()
     {
@@ -268,7 +268,7 @@ class OrderDeliverySpec implements ModelInterface, ArrayAccess
     /**
      * Gets deliveryInfoList
      *
-     * @return \TencentAds\Model\DeliveryDetailStruct[]
+     * @return \TencentAds\Model\DeliveryDetailStruct[]|mixed
      */
     public function getDeliveryInfoList()
     {

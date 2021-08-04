@@ -101,7 +101,7 @@ class FundStatementsDetailedApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\FundStatementsDetailedGetResponse
+     * @return \TencentAds\Model\FundStatementsDetailedGetResponse|mixed
      */
     public function fundStatementsDetailedGet($accountId, $fundType, $dateRange, $page = null, $pageSize = null, $fields = null)
     {

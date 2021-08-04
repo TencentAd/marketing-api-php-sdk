@@ -226,7 +226,7 @@ class CustomLocationRule implements ModelInterface, ArrayAccess
     /**
      * Gets poiType
      *
-     * @return \TencentAds\Model\LbsPOIType
+     * @return \TencentAds\Model\LbsPOIType|mixed
      */
     public function getPoiType()
     {
@@ -250,7 +250,7 @@ class CustomLocationRule implements ModelInterface, ArrayAccess
     /**
      * Gets dateRange
      *
-     * @return \TencentAds\Model\CustomLocationDateRange
+     * @return \TencentAds\Model\CustomLocationDateRange|mixed
      */
     public function getDateRange()
     {
@@ -274,7 +274,7 @@ class CustomLocationRule implements ModelInterface, ArrayAccess
     /**
      * Gets frequencySpec
      *
-     * @return \TencentAds\Model\FrequencySpec
+     * @return \TencentAds\Model\FrequencySpec|mixed
      */
     public function getFrequencySpec()
     {
@@ -298,7 +298,7 @@ class CustomLocationRule implements ModelInterface, ArrayAccess
     /**
      * Gets areaList
      *
-     * @return \TencentAds\Model\AreaSpec[]
+     * @return \TencentAds\Model\AreaSpec[]|mixed
      */
     public function getAreaList()
     {

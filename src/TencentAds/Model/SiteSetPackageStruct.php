@@ -220,7 +220,7 @@ class SiteSetPackageStruct implements ModelInterface, ArrayAccess
     /**
      * Gets siteSet
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getSiteSet()
     {
@@ -244,7 +244,7 @@ class SiteSetPackageStruct implements ModelInterface, ArrayAccess
     /**
      * Gets bidCoefficient
      *
-     * @return double
+     * @return double|mixed
      */
     public function getBidCoefficient()
     {
@@ -268,7 +268,7 @@ class SiteSetPackageStruct implements ModelInterface, ArrayAccess
     /**
      * Gets deepBidCoefficient
      *
-     * @return double
+     * @return double|mixed
      */
     public function getDeepBidCoefficient()
     {

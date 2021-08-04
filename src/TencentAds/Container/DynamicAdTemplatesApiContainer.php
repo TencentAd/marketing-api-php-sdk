@@ -30,7 +30,7 @@ class DynamicAdTemplatesApiContainer extends ApiContainer
     /**
      * Handle DynamicAdTemplatesApi dynamicAdTemplatesGet function
      * @param array params
-     * @return \TencentAds\Model\DynamicAdTemplatesGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

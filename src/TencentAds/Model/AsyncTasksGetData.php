@@ -220,7 +220,7 @@ class AsyncTasksGetData implements ModelInterface, ArrayAccess
     /**
      * Gets fileInfoList
      *
-     * @return \TencentAds\Model\AsyncTasksGetFileInfo[]
+     * @return \TencentAds\Model\AsyncTasksGetFileInfo[]|mixed
      */
     public function getFileInfoList()
     {
@@ -244,7 +244,7 @@ class AsyncTasksGetData implements ModelInterface, ArrayAccess
     /**
      * Gets channelPackageInfoList
      *
-     * @return \TencentAds\Model\ChannelPackageInfo[]
+     * @return \TencentAds\Model\ChannelPackageInfo[]|mixed
      */
     public function getChannelPackageInfoList()
     {
@@ -268,7 +268,7 @@ class AsyncTasksGetData implements ModelInterface, ArrayAccess
     /**
      * Gets unionChannelPackageInfoList
      *
-     * @return \TencentAds\Model\UnionChannelPackageInfo[]
+     * @return \TencentAds\Model\UnionChannelPackageInfo[]|mixed
      */
     public function getUnionChannelPackageInfoList()
     {

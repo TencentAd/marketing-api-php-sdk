@@ -207,7 +207,7 @@ class ProductCatalogsAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets productCatalogId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProductCatalogId()
     {

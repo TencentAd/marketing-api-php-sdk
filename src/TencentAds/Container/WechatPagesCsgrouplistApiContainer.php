@@ -30,7 +30,7 @@ class WechatPagesCsgrouplistApiContainer extends ApiContainer
     /**
      * Handle WechatPagesCsgrouplistApi wechatPagesCsgrouplistGet function
      * @param array params
-     * @return \TencentAds\Model\WechatPagesCsgrouplistGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

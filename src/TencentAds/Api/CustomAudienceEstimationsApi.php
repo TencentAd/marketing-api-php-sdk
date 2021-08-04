@@ -96,7 +96,7 @@ class CustomAudienceEstimationsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CustomAudienceEstimationsGetResponse
+     * @return \TencentAds\Model\CustomAudienceEstimationsGetResponse|mixed
      */
     public function customAudienceEstimationsGet($data)
     {

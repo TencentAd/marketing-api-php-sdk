@@ -96,7 +96,7 @@ class BarrageApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\BarrageAddResponse
+     * @return \TencentAds\Model\BarrageAddResponse|mixed
      */
     public function barrageAdd($data)
     {

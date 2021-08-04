@@ -30,7 +30,7 @@ class UnionPositionPackagesApiContainer extends ApiContainer
     /**
      * Handle UnionPositionPackagesApi unionPositionPackagesAdd function
      * @param array params
-     * @return \TencentAds\Model\UnionPositionPackagesAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -98,7 +98,7 @@ class UnionPositionPackagesApiContainer extends ApiContainer
     /**
      * Handle UnionPositionPackagesApi unionPositionPackagesGet function
      * @param array params
-     * @return \TencentAds\Model\UnionPositionPackagesGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

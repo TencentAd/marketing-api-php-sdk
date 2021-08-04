@@ -232,7 +232,7 @@ class MiniprogramAmount implements ModelInterface, ArrayAccess
     /**
      * Gets receivedAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getReceivedAmount()
     {
@@ -256,7 +256,7 @@ class MiniprogramAmount implements ModelInterface, ArrayAccess
     /**
      * Gets usedAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUsedAmount()
     {
@@ -280,7 +280,7 @@ class MiniprogramAmount implements ModelInterface, ArrayAccess
     /**
      * Gets lockedAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLockedAmount()
     {
@@ -304,7 +304,7 @@ class MiniprogramAmount implements ModelInterface, ArrayAccess
     /**
      * Gets repaidAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRepaidAmount()
     {
@@ -328,7 +328,7 @@ class MiniprogramAmount implements ModelInterface, ArrayAccess
     /**
      * Gets needRepayAmount
      *
-     * @return int
+     * @return int|mixed
      */
     public function getNeedRepayAmount()
     {

@@ -102,7 +102,7 @@ class OauthApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return string
+     * @return string|mixed
      */
     public function oauthAuthorize($clientId, $redirectUri, $state = null, $scope = null, $accountType = null, $accountDisplayNumber = null, $fields = null)
     {
@@ -432,7 +432,7 @@ class OauthApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\OauthTokenResponse
+     * @return \TencentAds\Model\OauthTokenResponse|mixed
      */
     public function oauthToken($clientId, $clientSecret, $grantType, $authorizationCode = null, $refreshToken = null, $redirectUri = null)
     {

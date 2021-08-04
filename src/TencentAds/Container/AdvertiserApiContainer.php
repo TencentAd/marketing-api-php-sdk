@@ -30,7 +30,7 @@ class AdvertiserApiContainer extends ApiContainer
     /**
      * Handle AdvertiserApi advertiserAdd function
      * @param array params
-     * @return \TencentAds\Model\AdvertiserAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class AdvertiserApiContainer extends ApiContainer
     /**
      * Handle AdvertiserApi advertiserGet function
      * @param array params
-     * @return \TencentAds\Model\AdvertiserGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -106,7 +106,7 @@ class AdvertiserApiContainer extends ApiContainer
     /**
      * Handle AdvertiserApi advertiserUpdate function
      * @param array params
-     * @return \TencentAds\Model\AdvertiserUpdateResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -140,7 +140,7 @@ class AdvertiserApiContainer extends ApiContainer
     /**
      * Handle AdvertiserApi advertiserUpdateDailyBudget function
      * @param array params
-     * @return \TencentAds\Model\AdvertiserUpdateDailyBudgetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

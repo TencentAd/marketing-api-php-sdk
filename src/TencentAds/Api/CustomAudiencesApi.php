@@ -96,7 +96,7 @@ class CustomAudiencesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CustomAudiencesAddResponse
+     * @return \TencentAds\Model\CustomAudiencesAddResponse|mixed
      */
     public function customAudiencesAdd($data)
     {
@@ -378,7 +378,7 @@ class CustomAudiencesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CustomAudiencesDeleteResponse
+     * @return \TencentAds\Model\CustomAudiencesDeleteResponse|mixed
      */
     public function customAudiencesDelete($data)
     {
@@ -665,7 +665,7 @@ class CustomAudiencesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CustomAudiencesGetResponse
+     * @return \TencentAds\Model\CustomAudiencesGetResponse|mixed
      */
     public function customAudiencesGet($accountId, $audienceId = null, $page = null, $pageSize = null, $platform = null, $fields = null)
     {
@@ -991,7 +991,7 @@ class CustomAudiencesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CustomAudiencesUpdateResponse
+     * @return \TencentAds\Model\CustomAudiencesUpdateResponse|mixed
      */
     public function customAudiencesUpdate($data)
     {

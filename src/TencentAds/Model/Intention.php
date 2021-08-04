@@ -208,7 +208,7 @@ class Intention implements ModelInterface, ArrayAccess
     /**
      * Gets targetingTags
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getTargetingTags()
     {

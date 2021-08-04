@@ -214,7 +214,7 @@ class OptimizeContentMainStruct implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \TencentAds\Model\OptimizeSubStatusStruct
+     * @return \TencentAds\Model\OptimizeSubStatusStruct|mixed
      */
     public function getStatus()
     {
@@ -238,7 +238,7 @@ class OptimizeContentMainStruct implements ModelInterface, ArrayAccess
     /**
      * Gets optimizeContents
      *
-     * @return \TencentAds\Model\OptimizeSubContentStruct
+     * @return \TencentAds\Model\OptimizeSubContentStruct|mixed
      */
     public function getOptimizeContents()
     {

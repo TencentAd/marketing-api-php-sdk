@@ -213,7 +213,7 @@ class AdgroupsUpdateBidAmountRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -237,7 +237,7 @@ class AdgroupsUpdateBidAmountRequest implements ModelInterface, ArrayAccess
     /**
      * Gets updateBidAmountSpec
      *
-     * @return \TencentAds\Model\UpdateBidAmountStruct[]
+     * @return \TencentAds\Model\UpdateBidAmountStruct[]|mixed
      */
     public function getUpdateBidAmountSpec()
     {

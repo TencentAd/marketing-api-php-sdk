@@ -220,7 +220,7 @@ class FormListItemData implements ModelInterface, ArrayAccess
     /**
      * Gets componentName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getComponentName()
     {
@@ -244,7 +244,7 @@ class FormListItemData implements ModelInterface, ArrayAccess
     /**
      * Gets componentId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getComponentId()
     {
@@ -268,7 +268,7 @@ class FormListItemData implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCreatedTime()
     {

@@ -208,7 +208,7 @@ class AdcreativeLogoPage implements ModelInterface, ArrayAccess
     /**
      * Gets image
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImage()
     {

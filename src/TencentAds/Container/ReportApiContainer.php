@@ -30,7 +30,7 @@ class ReportApiContainer extends ApiContainer
     /**
      * Handle ReportApi reportConversionsPredict function
      * @param array params
-     * @return \TencentAds\Model\ReportConversionsPredictResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class ReportApiContainer extends ApiContainer
     /**
      * Handle ReportApi reportVideoFrame function
      * @param array params
-     * @return \TencentAds\Model\ReportVideoFrameResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

@@ -232,7 +232,7 @@ class Adgroup implements ModelInterface, ArrayAccess
     /**
      * Gets campaignType
      *
-     * @return \TencentAds\Model\CampaignType
+     * @return \TencentAds\Model\CampaignType|mixed
      */
     public function getCampaignType()
     {
@@ -256,7 +256,7 @@ class Adgroup implements ModelInterface, ArrayAccess
     /**
      * Gets billingEvent
      *
-     * @return \TencentAds\Model\BillingEvent
+     * @return \TencentAds\Model\BillingEvent|mixed
      */
     public function getBillingEvent()
     {
@@ -280,7 +280,7 @@ class Adgroup implements ModelInterface, ArrayAccess
     /**
      * Gets sceneSpec
      *
-     * @return \TencentAds\Model\SceneTargeting
+     * @return \TencentAds\Model\SceneTargeting|mixed
      */
     public function getSceneSpec()
     {
@@ -304,7 +304,7 @@ class Adgroup implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObjectType
+     * @return \TencentAds\Model\PromotedObjectType|mixed
      */
     public function getPromotedObjectType()
     {
@@ -328,7 +328,7 @@ class Adgroup implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPromotedObjectId()
     {

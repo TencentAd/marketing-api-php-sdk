@@ -214,7 +214,7 @@ class ReportTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Gets level
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLevel()
     {
@@ -238,7 +238,7 @@ class ReportTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Gets date
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDate()
     {

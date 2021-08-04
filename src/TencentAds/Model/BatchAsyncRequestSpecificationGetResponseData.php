@@ -219,7 +219,7 @@ class BatchAsyncRequestSpecificationGetResponseData implements ModelInterface, A
     /**
      * Gets summary
      *
-     * @return \TencentAds\Model\Summary
+     * @return \TencentAds\Model\Summary|mixed
      */
     public function getSummary()
     {
@@ -243,7 +243,7 @@ class BatchAsyncRequestSpecificationGetResponseData implements ModelInterface, A
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\DetailListStruct[]
+     * @return \TencentAds\Model\DetailListStruct[]|mixed
      */
     public function getList()
     {
@@ -267,7 +267,7 @@ class BatchAsyncRequestSpecificationGetResponseData implements ModelInterface, A
     /**
      * Gets pageInfo
      *
-     * @return \TencentAds\Model\Conf
+     * @return \TencentAds\Model\Conf|mixed
      */
     public function getPageInfo()
     {

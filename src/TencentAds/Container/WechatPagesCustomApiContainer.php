@@ -30,7 +30,7 @@ class WechatPagesCustomApiContainer extends ApiContainer
     /**
      * Handle WechatPagesCustomApi wechatPagesCustomAdd function
      * @param array params
-     * @return \TencentAds\Model\WechatPagesCustomAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

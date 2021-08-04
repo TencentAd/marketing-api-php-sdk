@@ -214,7 +214,7 @@ class GlobalSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Gets elementType
      *
-     * @return \TencentAds\Model\CanvasGlobalElementType
+     * @return \TencentAds\Model\CanvasGlobalElementType|mixed
      */
     public function getElementType()
     {
@@ -238,7 +238,7 @@ class GlobalSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Gets floatButtonSpec
      *
-     * @return \TencentAds\Model\CanvasFloatButtonSpecType
+     * @return \TencentAds\Model\CanvasFloatButtonSpecType|mixed
      */
     public function getFloatButtonSpec()
     {

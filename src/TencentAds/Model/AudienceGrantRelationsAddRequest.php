@@ -225,7 +225,7 @@ class AudienceGrantRelationsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -249,7 +249,7 @@ class AudienceGrantRelationsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets audienceIdList
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getAudienceIdList()
     {
@@ -273,7 +273,7 @@ class AudienceGrantRelationsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets grantType
      *
-     * @return \TencentAds\Model\AudienceGrantType
+     * @return \TencentAds\Model\AudienceGrantType|mixed
      */
     public function getGrantType()
     {
@@ -297,7 +297,7 @@ class AudienceGrantRelationsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets grantSpec
      *
-     * @return \TencentAds\Model\AudienceGrantRelationsAddGrantSpec
+     * @return \TencentAds\Model\AudienceGrantRelationsAddGrantSpec|mixed
      */
     public function getGrantSpec()
     {

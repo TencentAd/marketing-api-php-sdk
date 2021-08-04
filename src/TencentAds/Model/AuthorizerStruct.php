@@ -244,7 +244,7 @@ class AuthorizerStruct implements ModelInterface, ArrayAccess
     /**
      * Gets accountUin
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountUin()
     {
@@ -268,7 +268,7 @@ class AuthorizerStruct implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -292,7 +292,7 @@ class AuthorizerStruct implements ModelInterface, ArrayAccess
     /**
      * Gets scopeList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getScopeList()
     {
@@ -316,7 +316,7 @@ class AuthorizerStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatAccountId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatAccountId()
     {
@@ -340,7 +340,7 @@ class AuthorizerStruct implements ModelInterface, ArrayAccess
     /**
      * Gets accountRoleType
      *
-     * @return \TencentAds\Model\AccountRoleType
+     * @return \TencentAds\Model\AccountRoleType|mixed
      */
     public function getAccountRoleType()
     {
@@ -364,7 +364,7 @@ class AuthorizerStruct implements ModelInterface, ArrayAccess
     /**
      * Gets accountType
      *
-     * @return \TencentAds\Model\AccountType
+     * @return \TencentAds\Model\AccountType|mixed
      */
     public function getAccountType()
     {
@@ -388,7 +388,7 @@ class AuthorizerStruct implements ModelInterface, ArrayAccess
     /**
      * Gets roleType
      *
-     * @return \TencentAds\Model\RoleType
+     * @return \TencentAds\Model\RoleType|mixed
      */
     public function getRoleType()
     {

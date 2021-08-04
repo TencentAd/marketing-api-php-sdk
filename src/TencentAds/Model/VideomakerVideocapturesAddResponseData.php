@@ -213,7 +213,7 @@ class VideomakerVideocapturesAddResponseData implements ModelInterface, ArrayAcc
     /**
      * Gets code
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCode()
     {
@@ -237,7 +237,7 @@ class VideomakerVideocapturesAddResponseData implements ModelInterface, ArrayAcc
     /**
      * Gets videoCaptures
      *
-     * @return \TencentAds\Model\VideoCaptureStruct[]
+     * @return \TencentAds\Model\VideoCaptureStruct[]|mixed
      */
     public function getVideoCaptures()
     {

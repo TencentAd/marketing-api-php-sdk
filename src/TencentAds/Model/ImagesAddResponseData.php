@@ -249,7 +249,7 @@ class ImagesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets imageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImageId()
     {
@@ -273,7 +273,7 @@ class ImagesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets previewUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPreviewUrl()
     {
@@ -297,7 +297,7 @@ class ImagesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -321,7 +321,7 @@ class ImagesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets width
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWidth()
     {
@@ -345,7 +345,7 @@ class ImagesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets height
      *
-     * @return int
+     * @return int|mixed
      */
     public function getHeight()
     {
@@ -369,7 +369,7 @@ class ImagesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets fileSize
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFileSize()
     {
@@ -393,7 +393,7 @@ class ImagesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \TencentAds\Model\ImageType
+     * @return \TencentAds\Model\ImageType|mixed
      */
     public function getType()
     {
@@ -417,7 +417,7 @@ class ImagesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets signature
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSignature()
     {

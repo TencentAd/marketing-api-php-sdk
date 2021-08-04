@@ -243,7 +243,7 @@ class ProfilesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -267,7 +267,7 @@ class ProfilesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObjectType
+     * @return \TencentAds\Model\PromotedObjectType|mixed
      */
     public function getPromotedObjectType()
     {
@@ -291,7 +291,7 @@ class ProfilesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPromotedObjectId()
     {
@@ -315,7 +315,7 @@ class ProfilesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets profileType
      *
-     * @return \TencentAds\Model\ProfileType
+     * @return \TencentAds\Model\ProfileType|mixed
      */
     public function getProfileType()
     {
@@ -339,7 +339,7 @@ class ProfilesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets headImageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getHeadImageId()
     {
@@ -363,7 +363,7 @@ class ProfilesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets profileName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProfileName()
     {
@@ -387,7 +387,7 @@ class ProfilesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {

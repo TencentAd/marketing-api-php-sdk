@@ -244,7 +244,7 @@ class AdRuleSpec implements ModelInterface, ArrayAccess
     /**
      * Gets ruleType
      *
-     * @return \TencentAds\Model\AdRuleType
+     * @return \TencentAds\Model\AdRuleType|mixed
      */
     public function getRuleType()
     {
@@ -268,7 +268,7 @@ class AdRuleSpec implements ModelInterface, ArrayAccess
     /**
      * Gets conversionType
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getConversionType()
     {
@@ -292,7 +292,7 @@ class AdRuleSpec implements ModelInterface, ArrayAccess
     /**
      * Gets startDate
      *
-     * @return string
+     * @return string|mixed
      */
     public function getStartDate()
     {
@@ -316,7 +316,7 @@ class AdRuleSpec implements ModelInterface, ArrayAccess
     /**
      * Gets endDate
      *
-     * @return string
+     * @return string|mixed
      */
     public function getEndDate()
     {
@@ -340,7 +340,7 @@ class AdRuleSpec implements ModelInterface, ArrayAccess
     /**
      * Gets campaignIdList
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getCampaignIdList()
     {
@@ -364,7 +364,7 @@ class AdRuleSpec implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupIdList
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getAdgroupIdList()
     {
@@ -388,7 +388,7 @@ class AdRuleSpec implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectList
      *
-     * @return \TencentAds\Model\AdProduct[]
+     * @return \TencentAds\Model\AdProduct[]|mixed
      */
     public function getPromotedObjectList()
     {

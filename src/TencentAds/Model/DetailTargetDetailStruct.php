@@ -226,7 +226,7 @@ class DetailTargetDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets expandTargetingOpened
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getExpandTargetingOpened()
     {
@@ -250,7 +250,7 @@ class DetailTargetDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets score
      *
-     * @return int
+     * @return int|mixed
      */
     public function getScore()
     {
@@ -274,7 +274,7 @@ class DetailTargetDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets trends
      *
-     * @return \TencentAds\Model\PointStruct[]
+     * @return \TencentAds\Model\PointStruct[]|mixed
      */
     public function getTrends()
     {
@@ -298,7 +298,7 @@ class DetailTargetDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets conclusion
      *
-     * @return string
+     * @return string|mixed
      */
     public function getConclusion()
     {

@@ -207,7 +207,7 @@ class CustomAudiencesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets audienceId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAudienceId()
     {

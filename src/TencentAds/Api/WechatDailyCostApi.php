@@ -101,7 +101,7 @@ class WechatDailyCostApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\WechatDailyCostGetResponse
+     * @return \TencentAds\Model\WechatDailyCostGetResponse|mixed
      */
     public function wechatDailyCostGet($dateRange, $accountId = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {

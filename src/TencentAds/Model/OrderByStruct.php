@@ -214,7 +214,7 @@ class OrderByStruct implements ModelInterface, ArrayAccess
     /**
      * Gets sortField
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSortField()
     {
@@ -238,7 +238,7 @@ class OrderByStruct implements ModelInterface, ArrayAccess
     /**
      * Gets sortType
      *
-     * @return \TencentAds\Model\Sortord
+     * @return \TencentAds\Model\Sortord|mixed
      */
     public function getSortType()
     {

@@ -207,7 +207,7 @@ class SystemStatusGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\SystemStatusGetListStruct[]
+     * @return \TencentAds\Model\SystemStatusGetListStruct[]|mixed
      */
     public function getList()
     {

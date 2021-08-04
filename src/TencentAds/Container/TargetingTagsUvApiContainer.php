@@ -30,7 +30,7 @@ class TargetingTagsUvApiContainer extends ApiContainer
     /**
      * Handle TargetingTagsUvApi targetingTagsUvGet function
      * @param array params
-     * @return \TencentAds\Model\TargetingTagsUvGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

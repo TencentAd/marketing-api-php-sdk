@@ -214,7 +214,7 @@ class ClickTargetingLabelContributionStruct implements ModelInterface, ArrayAcce
     /**
      * Gets locard
      *
-     * @return \TencentAds\Model\LabelContributionListItem[]
+     * @return \TencentAds\Model\LabelContributionListItem[]|mixed
      */
     public function getLocard()
     {
@@ -238,7 +238,7 @@ class ClickTargetingLabelContributionStruct implements ModelInterface, ArrayAcce
     /**
      * Gets audience
      *
-     * @return \TencentAds\Model\LabelContributionListItem[]
+     * @return \TencentAds\Model\LabelContributionListItem[]|mixed
      */
     public function getAudience()
     {

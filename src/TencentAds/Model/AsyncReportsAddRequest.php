@@ -255,7 +255,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -279,7 +279,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets taskName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTaskName()
     {
@@ -303,7 +303,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets reportFields
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getReportFields()
     {
@@ -327,7 +327,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets level
      *
-     * @return \TencentAds\Model\AsyncReportLevel
+     * @return \TencentAds\Model\AsyncReportLevel|mixed
      */
     public function getLevel()
     {
@@ -351,7 +351,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets filtering
      *
-     * @return \TencentAds\Model\AsyncReportsFilteringStruct[]
+     * @return \TencentAds\Model\AsyncReportsFilteringStruct[]|mixed
      */
     public function getFiltering()
     {
@@ -375,7 +375,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets timeLine
      *
-     * @return \TencentAds\Model\TimeLine
+     * @return \TencentAds\Model\TimeLine|mixed
      */
     public function getTimeLine()
     {
@@ -399,7 +399,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets groupBy
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getGroupBy()
     {
@@ -423,7 +423,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets granularity
      *
-     * @return \TencentAds\Model\TimeGranularity
+     * @return \TencentAds\Model\TimeGranularity|mixed
      */
     public function getGranularity()
     {
@@ -447,7 +447,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets date
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDate()
     {

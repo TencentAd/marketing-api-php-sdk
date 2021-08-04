@@ -226,7 +226,7 @@ class Dimension implements ModelInterface, ArrayAccess
     /**
      * Gets second
      *
-     * @return int
+     * @return int|mixed
      */
     public function getSecond()
     {
@@ -250,7 +250,7 @@ class Dimension implements ModelInterface, ArrayAccess
     /**
      * Gets materialId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMaterialId()
     {
@@ -274,7 +274,7 @@ class Dimension implements ModelInterface, ArrayAccess
     /**
      * Gets date
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDate()
     {
@@ -298,7 +298,7 @@ class Dimension implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {

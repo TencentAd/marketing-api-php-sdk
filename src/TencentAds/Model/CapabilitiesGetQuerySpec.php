@@ -214,7 +214,7 @@ class CapabilitiesGetQuerySpec implements ModelInterface, ArrayAccess
     /**
      * Gets wechatLinkAd
      *
-     * @return \TencentAds\Model\WechatLinkAd
+     * @return \TencentAds\Model\WechatLinkAd|mixed
      */
     public function getWechatLinkAd()
     {
@@ -238,7 +238,7 @@ class CapabilitiesGetQuerySpec implements ModelInterface, ArrayAccess
     /**
      * Gets wechatOcpa
      *
-     * @return \TencentAds\Model\WechatOcpa
+     * @return \TencentAds\Model\WechatOcpa|mixed
      */
     public function getWechatOcpa()
     {

@@ -214,7 +214,7 @@ class WebsiteUpdateStruct implements ModelInterface, ArrayAccess
     /**
      * Gets websiteDomain
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWebsiteDomain()
     {
@@ -238,7 +238,7 @@ class WebsiteUpdateStruct implements ModelInterface, ArrayAccess
     /**
      * Gets icpImageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getIcpImageId()
     {

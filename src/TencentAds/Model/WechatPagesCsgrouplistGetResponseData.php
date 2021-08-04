@@ -213,7 +213,7 @@ class WechatPagesCsgrouplistGetResponseData implements ModelInterface, ArrayAcce
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\WechatPagesCsgrouplistGetListStruct[]
+     * @return \TencentAds\Model\WechatPagesCsgrouplistGetListStruct[]|mixed
      */
     public function getList()
     {
@@ -237,7 +237,7 @@ class WechatPagesCsgrouplistGetResponseData implements ModelInterface, ArrayAcce
     /**
      * Gets pageInfo
      *
-     * @return \TencentAds\Model\PageInfo
+     * @return \TencentAds\Model\PageInfo|mixed
      */
     public function getPageInfo()
     {

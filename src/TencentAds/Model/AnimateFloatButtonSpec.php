@@ -256,7 +256,7 @@ class AnimateFloatButtonSpec implements ModelInterface, ArrayAccess
     /**
      * Gets linkSpec
      *
-     * @return \TencentAds\Model\LinkSpec
+     * @return \TencentAds\Model\LinkSpec|mixed
      */
     public function getLinkSpec()
     {
@@ -280,7 +280,7 @@ class AnimateFloatButtonSpec implements ModelInterface, ArrayAccess
     /**
      * Gets appDownloadSpec
      *
-     * @return \TencentAds\Model\AppDownloadSpec
+     * @return \TencentAds\Model\AppDownloadSpec|mixed
      */
     public function getAppDownloadSpec()
     {
@@ -304,7 +304,7 @@ class AnimateFloatButtonSpec implements ModelInterface, ArrayAccess
     /**
      * Gets followSpec
      *
-     * @return \TencentAds\Model\FollowSpec
+     * @return \TencentAds\Model\FollowSpec|mixed
      */
     public function getFollowSpec()
     {
@@ -328,7 +328,7 @@ class AnimateFloatButtonSpec implements ModelInterface, ArrayAccess
     /**
      * Gets miniProgramSpec
      *
-     * @return \TencentAds\Model\MiniProgramSpec
+     * @return \TencentAds\Model\MiniProgramSpec|mixed
      */
     public function getMiniProgramSpec()
     {
@@ -352,7 +352,7 @@ class AnimateFloatButtonSpec implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameProgramSpec
      *
-     * @return \TencentAds\Model\MiniGameProgramSpec
+     * @return \TencentAds\Model\MiniGameProgramSpec|mixed
      */
     public function getMiniGameProgramSpec()
     {
@@ -376,7 +376,7 @@ class AnimateFloatButtonSpec implements ModelInterface, ArrayAccess
     /**
      * Gets fengyeSpec
      *
-     * @return \TencentAds\Model\FengyeSpec
+     * @return \TencentAds\Model\FengyeSpec|mixed
      */
     public function getFengyeSpec()
     {
@@ -400,7 +400,7 @@ class AnimateFloatButtonSpec implements ModelInterface, ArrayAccess
     /**
      * Gets cardSpec
      *
-     * @return \TencentAds\Model\CardSpec
+     * @return \TencentAds\Model\CardSpec|mixed
      */
     public function getCardSpec()
     {
@@ -424,7 +424,7 @@ class AnimateFloatButtonSpec implements ModelInterface, ArrayAccess
     /**
      * Gets serviceSpec
      *
-     * @return \TencentAds\Model\ServiceSpec
+     * @return \TencentAds\Model\ServiceSpec|mixed
      */
     public function getServiceSpec()
     {
@@ -448,7 +448,7 @@ class AnimateFloatButtonSpec implements ModelInterface, ArrayAccess
     /**
      * Gets wecomSpec
      *
-     * @return \TencentAds\Model\WecomSpec
+     * @return \TencentAds\Model\WecomSpec|mixed
      */
     public function getWecomSpec()
     {

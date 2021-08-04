@@ -96,7 +96,7 @@ class ConversionsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ConversionsAddResponse
+     * @return \TencentAds\Model\ConversionsAddResponse|mixed
      */
     public function conversionsAdd($data)
     {
@@ -382,7 +382,7 @@ class ConversionsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ConversionsGetResponse
+     * @return \TencentAds\Model\ConversionsGetResponse|mixed
      */
     public function conversionsGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {

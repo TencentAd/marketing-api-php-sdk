@@ -98,7 +98,7 @@ class WechatAdvertiserApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\WechatAdvertiserGetResponse
+     * @return \TencentAds\Model\WechatAdvertiserGetResponse|mixed
      */
     public function wechatAdvertiserGet($page = null, $pageSize = null, $fields = null)
     {

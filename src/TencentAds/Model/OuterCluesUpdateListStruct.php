@@ -208,7 +208,7 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets index
      *
-     * @return int
+     * @return int|mixed
      */
     public function getIndex()
     {

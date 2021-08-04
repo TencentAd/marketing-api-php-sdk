@@ -232,7 +232,7 @@ class TopImageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets imageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImageId()
     {
@@ -256,7 +256,7 @@ class TopImageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets width
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWidth()
     {
@@ -280,7 +280,7 @@ class TopImageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets height
      *
-     * @return int
+     * @return int|mixed
      */
     public function getHeight()
     {
@@ -304,7 +304,7 @@ class TopImageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets adLocation
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdLocation()
     {
@@ -328,7 +328,7 @@ class TopImageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets outerStyle
      *
-     * @return int
+     * @return int|mixed
      */
     public function getOuterStyle()
     {

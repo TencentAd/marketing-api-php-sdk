@@ -207,7 +207,7 @@ class BarrageRecommendGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\BarrageRecommendGetListStruct[]
+     * @return \TencentAds\Model\BarrageRecommendGetListStruct[]|mixed
      */
     public function getList()
     {

@@ -96,7 +96,7 @@ class AssetPermissionsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AssetPermissionsAddResponse
+     * @return \TencentAds\Model\AssetPermissionsAddResponse|mixed
      */
     public function assetPermissionsAdd($data)
     {
@@ -378,7 +378,7 @@ class AssetPermissionsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AssetPermissionsDeleteResponse
+     * @return \TencentAds\Model\AssetPermissionsDeleteResponse|mixed
      */
     public function assetPermissionsDelete($data)
     {

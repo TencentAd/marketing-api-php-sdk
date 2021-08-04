@@ -214,7 +214,7 @@ class AppIosSpec implements ModelInterface, ArrayAccess
     /**
      * Gets deepLinkUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDeepLinkUrl()
     {
@@ -238,7 +238,7 @@ class AppIosSpec implements ModelInterface, ArrayAccess
     /**
      * Gets appIosId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAppIosId()
     {

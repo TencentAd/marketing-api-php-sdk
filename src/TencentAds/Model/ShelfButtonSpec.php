@@ -226,7 +226,7 @@ class ShelfButtonSpec implements ModelInterface, ArrayAccess
     /**
      * Gets linkSpec
      *
-     * @return \TencentAds\Model\LinkSpec
+     * @return \TencentAds\Model\LinkSpec|mixed
      */
     public function getLinkSpec()
     {
@@ -250,7 +250,7 @@ class ShelfButtonSpec implements ModelInterface, ArrayAccess
     /**
      * Gets appDownloadSpec
      *
-     * @return \TencentAds\Model\AppDownloadSpec
+     * @return \TencentAds\Model\AppDownloadSpec|mixed
      */
     public function getAppDownloadSpec()
     {
@@ -274,7 +274,7 @@ class ShelfButtonSpec implements ModelInterface, ArrayAccess
     /**
      * Gets miniProgramSpec
      *
-     * @return \TencentAds\Model\MiniProgramSpec
+     * @return \TencentAds\Model\MiniProgramSpec|mixed
      */
     public function getMiniProgramSpec()
     {
@@ -298,7 +298,7 @@ class ShelfButtonSpec implements ModelInterface, ArrayAccess
     /**
      * Gets wecomSpec
      *
-     * @return \TencentAds\Model\WecomSpec
+     * @return \TencentAds\Model\WecomSpec|mixed
      */
     public function getWecomSpec()
     {

@@ -250,7 +250,7 @@ class OptTargetingStruct implements ModelInterface, ArrayAccess
     /**
      * Gets openAutoExpandFlag
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getOpenAutoExpandFlag()
     {
@@ -274,7 +274,7 @@ class OptTargetingStruct implements ModelInterface, ArrayAccess
     /**
      * Gets expandTargetingRule
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getExpandTargetingRule()
     {
@@ -298,7 +298,7 @@ class OptTargetingStruct implements ModelInterface, ArrayAccess
     /**
      * Gets openExpandSeedPopulationFlag
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getOpenExpandSeedPopulationFlag()
     {
@@ -322,7 +322,7 @@ class OptTargetingStruct implements ModelInterface, ArrayAccess
     /**
      * Gets openExpandSeedPopulationSelectedFlag
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getOpenExpandSeedPopulationSelectedFlag()
     {
@@ -346,7 +346,7 @@ class OptTargetingStruct implements ModelInterface, ArrayAccess
     /**
      * Gets expandSeedPopulations
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getExpandSeedPopulations()
     {
@@ -370,7 +370,7 @@ class OptTargetingStruct implements ModelInterface, ArrayAccess
     /**
      * Gets addMoreLocardLabelsFlag
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getAddMoreLocardLabelsFlag()
     {
@@ -394,7 +394,7 @@ class OptTargetingStruct implements ModelInterface, ArrayAccess
     /**
      * Gets locardBehaviors
      *
-     * @return \TencentAds\Model\LocardBehaviorsListItem[]
+     * @return \TencentAds\Model\LocardBehaviorsListItem[]|mixed
      */
     public function getLocardBehaviors()
     {
@@ -418,7 +418,7 @@ class OptTargetingStruct implements ModelInterface, ArrayAccess
     /**
      * Gets locardInterests
      *
-     * @return \TencentAds\Model\LocardInterestsListItem[]
+     * @return \TencentAds\Model\LocardInterestsListItem[]|mixed
      */
     public function getLocardInterests()
     {

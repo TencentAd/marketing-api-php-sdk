@@ -220,7 +220,7 @@ class CampaignsUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcces
     /**
      * Gets code
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCode()
     {
@@ -244,7 +244,7 @@ class CampaignsUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcces
     /**
      * Gets message
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMessage()
     {
@@ -268,7 +268,7 @@ class CampaignsUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcces
     /**
      * Gets messageCn
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMessageCn()
     {

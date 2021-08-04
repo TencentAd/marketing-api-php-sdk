@@ -291,7 +291,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Gets headImageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getHeadImageUrl()
     {
@@ -315,7 +315,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Gets name
      *
-     * @return string
+     * @return string|mixed
      */
     public function getName()
     {
@@ -339,7 +339,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -363,7 +363,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Gets contactPerson
      *
-     * @return string
+     * @return string|mixed
      */
     public function getContactPerson()
     {
@@ -387,7 +387,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Gets contactPersonMobile
      *
-     * @return string
+     * @return string|mixed
      */
     public function getContactPersonMobile()
     {
@@ -411,7 +411,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Gets contactPersonCardId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getContactPersonCardId()
     {
@@ -435,7 +435,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Gets contactPersonTele
      *
-     * @return string
+     * @return string|mixed
      */
     public function getContactPersonTele()
     {
@@ -459,7 +459,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Gets corporation
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCorporation()
     {
@@ -483,7 +483,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Gets corporationLicence
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCorporationLicence()
     {
@@ -507,7 +507,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Gets businessContent
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBusinessContent()
     {
@@ -531,7 +531,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Gets industryId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getIndustryId()
     {
@@ -555,7 +555,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -579,7 +579,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Gets businessId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBusinessId()
     {
@@ -603,7 +603,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Gets rejectMessage
      *
-     * @return string
+     * @return string|mixed
      */
     public function getRejectMessage()
     {
@@ -627,7 +627,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Gets reviewStatus
      *
-     * @return \TencentAds\Model\WechatLocalBusinessReviewStatus
+     * @return \TencentAds\Model\WechatLocalBusinessReviewStatus|mixed
      */
     public function getReviewStatus()
     {

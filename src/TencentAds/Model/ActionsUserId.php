@@ -286,7 +286,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Gets hashImei
      *
-     * @return string
+     * @return string|mixed
      */
     public function getHashImei()
     {
@@ -310,7 +310,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Gets md5Sha256Imei
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMd5Sha256Imei()
     {
@@ -334,7 +334,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Gets hashIdfa
      *
-     * @return string
+     * @return string|mixed
      */
     public function getHashIdfa()
     {
@@ -358,7 +358,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Gets md5Sha256Idfa
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMd5Sha256Idfa()
     {
@@ -382,7 +382,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Gets gdtOpenid
      *
-     * @return string
+     * @return string|mixed
      */
     public function getGdtOpenid()
     {
@@ -406,7 +406,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Gets hashPhone
      *
-     * @return string
+     * @return string|mixed
      */
     public function getHashPhone()
     {
@@ -430,7 +430,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Gets sha256Phone
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSha256Phone()
     {
@@ -454,7 +454,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Gets hashAndroidId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getHashAndroidId()
     {
@@ -478,7 +478,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Gets hashMac
      *
-     * @return string
+     * @return string|mixed
      */
     public function getHashMac()
     {
@@ -502,7 +502,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Gets oaid
      *
-     * @return string
+     * @return string|mixed
      */
     public function getOaid()
     {
@@ -526,7 +526,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Gets md5Sha256Oaid
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMd5Sha256Oaid()
     {
@@ -550,7 +550,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Gets wechatOpenid
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatOpenid()
     {
@@ -574,7 +574,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Gets wechatUnionid
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatUnionid()
     {
@@ -598,7 +598,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Gets wechatAppId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatAppId()
     {

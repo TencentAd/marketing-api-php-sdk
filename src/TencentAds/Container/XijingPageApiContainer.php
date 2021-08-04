@@ -30,7 +30,7 @@ class XijingPageApiContainer extends ApiContainer
     /**
      * Handle XijingPageApi xijingPageAdd function
      * @param array params
-     * @return \TencentAds\Model\CreatePageResponse[]
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class XijingPageApiContainer extends ApiContainer
     /**
      * Handle XijingPageApi xijingPageDelete function
      * @param array params
-     * @return \TencentAds\Model\PageOperateResponses[]
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -98,7 +98,7 @@ class XijingPageApiContainer extends ApiContainer
     /**
      * Handle XijingPageApi xijingPageUpdate function
      * @param array params
-     * @return \TencentAds\Model\PageOperateResponses[]
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

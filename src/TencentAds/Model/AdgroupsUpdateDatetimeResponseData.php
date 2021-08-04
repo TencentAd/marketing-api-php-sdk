@@ -207,7 +207,7 @@ class AdgroupsUpdateDatetimeResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\AdgroupsUpdateDatetimeListStruct[]
+     * @return \TencentAds\Model\AdgroupsUpdateDatetimeListStruct[]|mixed
      */
     public function getList()
     {

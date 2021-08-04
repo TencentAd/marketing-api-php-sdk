@@ -101,7 +101,7 @@ class DailyCostApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\DailyCostGetResponse
+     * @return \TencentAds\Model\DailyCostGetResponse|mixed
      */
     public function dailyCostGet($dateRange, $accountId = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {

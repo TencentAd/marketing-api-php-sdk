@@ -96,7 +96,7 @@ class LocalEstimatedamountApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\LocalEstimatedamountGetResponse
+     * @return \TencentAds\Model\LocalEstimatedamountGetResponse|mixed
      */
     public function localEstimatedamountGet($data)
     {

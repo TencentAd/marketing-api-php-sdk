@@ -220,7 +220,7 @@ class ExposureEffectDataStruct implements ModelInterface, ArrayAccess
     /**
      * Gets count
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCount()
     {
@@ -244,7 +244,7 @@ class ExposureEffectDataStruct implements ModelInterface, ArrayAccess
     /**
      * Gets categoryWin
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCategoryWin()
     {
@@ -268,7 +268,7 @@ class ExposureEffectDataStruct implements ModelInterface, ArrayAccess
     /**
      * Gets categoryAvg
      *
-     * @return double
+     * @return double|mixed
      */
     public function getCategoryAvg()
     {

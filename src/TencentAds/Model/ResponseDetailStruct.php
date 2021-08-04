@@ -256,7 +256,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets funnel
      *
-     * @return \TencentAds\Model\DetailFunnelStruct
+     * @return \TencentAds\Model\DetailFunnelStruct|mixed
      */
     public function getFunnel()
     {
@@ -280,7 +280,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets targetDetail
      *
-     * @return \TencentAds\Model\DetailTargetDetailStruct
+     * @return \TencentAds\Model\DetailTargetDetailStruct|mixed
      */
     public function getTargetDetail()
     {
@@ -304,7 +304,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets competeDetail
      *
-     * @return \TencentAds\Model\DetailCompeteDetailStruct
+     * @return \TencentAds\Model\DetailCompeteDetailStruct|mixed
      */
     public function getCompeteDetail()
     {
@@ -328,7 +328,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets exposureDetail
      *
-     * @return \TencentAds\Model\ExposureDetailStruct
+     * @return \TencentAds\Model\ExposureDetailStruct|mixed
      */
     public function getExposureDetail()
     {
@@ -352,7 +352,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets clickDetail
      *
-     * @return \TencentAds\Model\ClickDetailStruct
+     * @return \TencentAds\Model\ClickDetailStruct|mixed
      */
     public function getClickDetail()
     {
@@ -376,7 +376,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets conversionDetail
      *
-     * @return \TencentAds\Model\ConversionDetailStruct
+     * @return \TencentAds\Model\ConversionDetailStruct|mixed
      */
     public function getConversionDetail()
     {
@@ -400,7 +400,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets cpaDetail
      *
-     * @return \TencentAds\Model\DetailCpaDetailStruct
+     * @return \TencentAds\Model\DetailCpaDetailStruct|mixed
      */
     public function getCpaDetail()
     {
@@ -424,7 +424,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets creativeDetail
      *
-     * @return \TencentAds\Model\DetailCreativeDetailStruct
+     * @return \TencentAds\Model\DetailCreativeDetailStruct|mixed
      */
     public function getCreativeDetail()
     {
@@ -448,7 +448,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets optimization
      *
-     * @return \TencentAds\Model\OptimizeContentMainStruct
+     * @return \TencentAds\Model\OptimizeContentMainStruct|mixed
      */
     public function getOptimization()
     {

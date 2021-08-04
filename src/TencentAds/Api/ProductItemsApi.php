@@ -96,7 +96,7 @@ class ProductItemsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ProductItemsAddResponse
+     * @return \TencentAds\Model\ProductItemsAddResponse|mixed
      */
     public function productItemsAdd($data)
     {
@@ -381,7 +381,7 @@ class ProductItemsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ProductItemsGetResponse
+     * @return \TencentAds\Model\ProductItemsGetResponse|mixed
      */
     public function productItemsGet($accountId, $productCatalogId, $filtering = null, $fields = null)
     {
@@ -700,7 +700,7 @@ class ProductItemsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ProductItemsUpdateResponse
+     * @return \TencentAds\Model\ProductItemsUpdateResponse|mixed
      */
     public function productItemsUpdate($data)
     {

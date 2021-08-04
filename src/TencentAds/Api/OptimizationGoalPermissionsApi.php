@@ -101,7 +101,7 @@ class OptimizationGoalPermissionsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\OptimizationGoalPermissionsGetResponse
+     * @return \TencentAds\Model\OptimizationGoalPermissionsGetResponse|mixed
      */
     public function optimizationGoalPermissionsGet($accountId, $siteSet, $promotedObjectType, $bidMode = null, $promotedObjectId = null, $fields = null)
     {

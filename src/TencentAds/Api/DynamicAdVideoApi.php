@@ -96,7 +96,7 @@ class DynamicAdVideoApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\DynamicAdVideoAddResponse
+     * @return \TencentAds\Model\DynamicAdVideoAddResponse|mixed
      */
     public function dynamicAdVideoAdd($data)
     {

@@ -96,7 +96,7 @@ class BatchAsyncRequestsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\BatchAsyncRequestsAddResponse
+     * @return \TencentAds\Model\BatchAsyncRequestsAddResponse|mixed
      */
     public function batchAsyncRequestsAdd($data)
     {
@@ -382,7 +382,7 @@ class BatchAsyncRequestsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\BatchAsyncRequestsGetResponse
+     * @return \TencentAds\Model\BatchAsyncRequestsGetResponse|mixed
      */
     public function batchAsyncRequestsGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {

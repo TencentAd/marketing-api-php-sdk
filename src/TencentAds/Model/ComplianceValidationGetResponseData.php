@@ -207,7 +207,7 @@ class ComplianceValidationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets suggestionList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getSuggestionList()
     {

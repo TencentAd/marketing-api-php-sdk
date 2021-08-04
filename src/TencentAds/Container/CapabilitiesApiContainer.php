@@ -30,7 +30,7 @@ class CapabilitiesApiContainer extends ApiContainer
     /**
      * Handle CapabilitiesApi capabilitiesGet function
      * @param array params
-     * @return \TencentAds\Model\CapabilitiesGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

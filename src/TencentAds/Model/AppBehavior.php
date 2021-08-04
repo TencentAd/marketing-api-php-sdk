@@ -226,7 +226,7 @@ class AppBehavior implements ModelInterface, ArrayAccess
     /**
      * Gets objectType
      *
-     * @return \TencentAds\Model\AppActionObjectType
+     * @return \TencentAds\Model\AppActionObjectType|mixed
      */
     public function getObjectType()
     {
@@ -250,7 +250,7 @@ class AppBehavior implements ModelInterface, ArrayAccess
     /**
      * Gets objectIdList
      *
-     * @return int[]
+     * @return int[]|mixed
      */
     public function getObjectIdList()
     {
@@ -274,7 +274,7 @@ class AppBehavior implements ModelInterface, ArrayAccess
     /**
      * Gets timeWindow
      *
-     * @return int
+     * @return int|mixed
      */
     public function getTimeWindow()
     {
@@ -298,7 +298,7 @@ class AppBehavior implements ModelInterface, ArrayAccess
     /**
      * Gets actIdList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getActIdList()
     {

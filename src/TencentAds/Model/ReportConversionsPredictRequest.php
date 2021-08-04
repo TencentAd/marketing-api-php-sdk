@@ -213,7 +213,7 @@ class ReportConversionsPredictRequest implements ModelInterface, ArrayAccess
     /**
      * Gets filtering
      *
-     * @return \TencentAds\Model\FilteringStruct[]
+     * @return \TencentAds\Model\FilteringStruct[]|mixed
      */
     public function getFiltering()
     {
@@ -237,7 +237,7 @@ class ReportConversionsPredictRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {

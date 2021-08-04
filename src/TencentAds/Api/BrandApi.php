@@ -98,7 +98,7 @@ class BrandApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\BrandAddResponse
+     * @return \TencentAds\Model\BrandAddResponse|mixed
      */
     public function brandAdd($accountId, $name, $brandImageFile)
     {
@@ -413,7 +413,7 @@ class BrandApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\BrandGetResponse
+     * @return \TencentAds\Model\BrandGetResponse|mixed
      */
     public function brandGet($accountId, $page = null, $pageSize = null, $fields = null)
     {

@@ -96,7 +96,7 @@ class TargetingsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\TargetingsAddResponse
+     * @return \TencentAds\Model\TargetingsAddResponse|mixed
      */
     public function targetingsAdd($data)
     {
@@ -378,7 +378,7 @@ class TargetingsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\TargetingsDeleteResponse
+     * @return \TencentAds\Model\TargetingsDeleteResponse|mixed
      */
     public function targetingsDelete($data)
     {
@@ -664,7 +664,7 @@ class TargetingsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\TargetingsGetResponse
+     * @return \TencentAds\Model\TargetingsGetResponse|mixed
      */
     public function targetingsGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
@@ -985,7 +985,7 @@ class TargetingsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\TargetingsUpdateResponse
+     * @return \TencentAds\Model\TargetingsUpdateResponse|mixed
      */
     public function targetingsUpdate($data)
     {

@@ -96,7 +96,7 @@ class ComplianceValidationApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ComplianceValidationGetResponse
+     * @return \TencentAds\Model\ComplianceValidationGetResponse|mixed
      */
     public function complianceValidationGet($data)
     {

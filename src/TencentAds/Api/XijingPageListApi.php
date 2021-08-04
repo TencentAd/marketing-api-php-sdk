@@ -112,7 +112,7 @@ class XijingPageListApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\XijingPageListGetResponse
+     * @return \TencentAds\Model\XijingPageListGetResponse|mixed
      */
     public function xijingPageListGet($accountId, $pageId = null, $pageServiceId = null, $pageName = null, $pageType = null, $pageLastModifyStartTime = null, $pageLastModifyEndTime = null, $pageSize = null, $pageIndex = null, $pagePublishStatus = null, $pageStatus = null, $pageSource = null, $pageOwnerId = null, $appId = null, $appType = null, $queryType = null, $fields = null)
     {

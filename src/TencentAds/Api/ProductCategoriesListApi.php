@@ -103,7 +103,7 @@ class ProductCategoriesListApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\ProductCategoriesListGetResponse
+     * @return \TencentAds\Model\ProductCategoriesListGetResponse|mixed
      */
     public function productCategoriesListGet($accountId, $productCatalogId, $page, $pageSize, $level = null, $categoryId = null, $categoryName = null, $fields = null)
     {

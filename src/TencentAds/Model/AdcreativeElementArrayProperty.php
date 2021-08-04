@@ -214,7 +214,7 @@ class AdcreativeElementArrayProperty implements ModelInterface, ArrayAccess
     /**
      * Gets minNumber
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMinNumber()
     {
@@ -238,7 +238,7 @@ class AdcreativeElementArrayProperty implements ModelInterface, ArrayAccess
     /**
      * Gets maxNumber
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMaxNumber()
     {

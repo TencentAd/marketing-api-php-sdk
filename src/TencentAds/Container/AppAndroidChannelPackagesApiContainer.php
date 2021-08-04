@@ -30,7 +30,7 @@ class AppAndroidChannelPackagesApiContainer extends ApiContainer
     /**
      * Handle AppAndroidChannelPackagesApi appAndroidChannelPackagesGet function
      * @param array params
-     * @return \TencentAds\Model\AppAndroidChannelPackagesGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

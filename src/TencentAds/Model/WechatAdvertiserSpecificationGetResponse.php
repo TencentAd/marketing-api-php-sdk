@@ -231,7 +231,7 @@ class WechatAdvertiserSpecificationGetResponse implements ModelInterface, ArrayA
     /**
      * Gets code
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCode()
     {
@@ -255,7 +255,7 @@ class WechatAdvertiserSpecificationGetResponse implements ModelInterface, ArrayA
     /**
      * Gets message
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMessage()
     {
@@ -279,7 +279,7 @@ class WechatAdvertiserSpecificationGetResponse implements ModelInterface, ArrayA
     /**
      * Gets messageCn
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMessageCn()
     {
@@ -303,7 +303,7 @@ class WechatAdvertiserSpecificationGetResponse implements ModelInterface, ArrayA
     /**
      * Gets errors
      *
-     * @return \TencentAds\Model\ApiErrorStruct[]
+     * @return \TencentAds\Model\ApiErrorStruct[]|mixed
      */
     public function getErrors()
     {
@@ -327,7 +327,7 @@ class WechatAdvertiserSpecificationGetResponse implements ModelInterface, ArrayA
     /**
      * Gets data
      *
-     * @return \TencentAds\Model\WechatAdvertiserSpecificationGetResponseData
+     * @return \TencentAds\Model\WechatAdvertiserSpecificationGetResponseData|mixed
      */
     public function getData()
     {

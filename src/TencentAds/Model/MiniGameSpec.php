@@ -208,7 +208,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameTrackingParameter
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMiniGameTrackingParameter()
     {

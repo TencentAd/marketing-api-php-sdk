@@ -220,7 +220,7 @@ class CompeteWinAdgroupListItem implements ModelInterface, ArrayAccess
     /**
      * Gets rank
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRank()
     {
@@ -244,7 +244,7 @@ class CompeteWinAdgroupListItem implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -268,7 +268,7 @@ class CompeteWinAdgroupListItem implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAdgroupName()
     {

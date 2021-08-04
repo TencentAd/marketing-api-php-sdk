@@ -96,7 +96,7 @@ class PromotedObjectsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\PromotedObjectsAddResponse
+     * @return \TencentAds\Model\PromotedObjectsAddResponse|mixed
      */
     public function promotedObjectsAdd($data)
     {
@@ -382,7 +382,7 @@ class PromotedObjectsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\PromotedObjectsGetResponse
+     * @return \TencentAds\Model\PromotedObjectsGetResponse|mixed
      */
     public function promotedObjectsGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
@@ -703,7 +703,7 @@ class PromotedObjectsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\PromotedObjectsUpdateResponse
+     * @return \TencentAds\Model\PromotedObjectsUpdateResponse|mixed
      */
     public function promotedObjectsUpdate($data)
     {

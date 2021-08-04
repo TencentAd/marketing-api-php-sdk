@@ -226,7 +226,7 @@ class ShelfSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Gets shelfButtonSpec
      *
-     * @return \TencentAds\Model\ShelfButtonSpec
+     * @return \TencentAds\Model\ShelfButtonSpec|mixed
      */
     public function getShelfButtonSpec()
     {
@@ -250,7 +250,7 @@ class ShelfSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Gets title
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTitle()
     {
@@ -274,7 +274,7 @@ class ShelfSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Gets desc
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDesc()
     {
@@ -298,7 +298,7 @@ class ShelfSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Gets imageIdList
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImageIdList()
     {

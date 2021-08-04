@@ -30,7 +30,7 @@ class RealtimeCostApiContainer extends ApiContainer
     /**
      * Handle RealtimeCostApi realtimeCostGet function
      * @param array params
-     * @return \TencentAds\Model\RealtimeCostGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

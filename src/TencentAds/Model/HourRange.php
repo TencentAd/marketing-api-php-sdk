@@ -214,7 +214,7 @@ class HourRange implements ModelInterface, ArrayAccess
     /**
      * Gets beginHour
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBeginHour()
     {
@@ -238,7 +238,7 @@ class HourRange implements ModelInterface, ArrayAccess
     /**
      * Gets endHour
      *
-     * @return int
+     * @return int|mixed
      */
     public function getEndHour()
     {

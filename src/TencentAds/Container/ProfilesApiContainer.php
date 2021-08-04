@@ -30,7 +30,7 @@ class ProfilesApiContainer extends ApiContainer
     /**
      * Handle ProfilesApi profilesAdd function
      * @param array params
-     * @return \TencentAds\Model\ProfilesAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class ProfilesApiContainer extends ApiContainer
     /**
      * Handle ProfilesApi profilesDelete function
      * @param array params
-     * @return \TencentAds\Model\ProfilesDeleteResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -98,7 +98,7 @@ class ProfilesApiContainer extends ApiContainer
     /**
      * Handle ProfilesApi profilesGet function
      * @param array params
-     * @return \TencentAds\Model\ProfilesGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

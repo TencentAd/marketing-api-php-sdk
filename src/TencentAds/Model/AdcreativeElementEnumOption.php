@@ -214,7 +214,7 @@ class AdcreativeElementEnumOption implements ModelInterface, ArrayAccess
     /**
      * Gets value
      *
-     * @return string
+     * @return string|mixed
      */
     public function getValue()
     {
@@ -238,7 +238,7 @@ class AdcreativeElementEnumOption implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {

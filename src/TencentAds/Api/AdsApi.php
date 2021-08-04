@@ -96,7 +96,7 @@ class AdsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdsAddResponse
+     * @return \TencentAds\Model\AdsAddResponse|mixed
      */
     public function adsAdd($data)
     {
@@ -378,7 +378,7 @@ class AdsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdsDeleteResponse
+     * @return \TencentAds\Model\AdsDeleteResponse|mixed
      */
     public function adsDelete($data)
     {
@@ -665,7 +665,7 @@ class AdsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdsGetResponse
+     * @return \TencentAds\Model\AdsGetResponse|mixed
      */
     public function adsGet($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
     {
@@ -994,7 +994,7 @@ class AdsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdsUpdateResponse
+     * @return \TencentAds\Model\AdsUpdateResponse|mixed
      */
     public function adsUpdate($data)
     {
@@ -1276,7 +1276,7 @@ class AdsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AdsUpdateConfiguredStatusResponse
+     * @return \TencentAds\Model\AdsUpdateConfiguredStatusResponse|mixed
      */
     public function adsUpdateConfiguredStatus($data)
     {

@@ -231,7 +231,7 @@ class AssetPrePermissionsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -255,7 +255,7 @@ class AssetPrePermissionsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets assetId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAssetId()
     {
@@ -279,7 +279,7 @@ class AssetPrePermissionsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets assetType
      *
-     * @return \TencentAds\Model\AssetType
+     * @return \TencentAds\Model\AssetType|mixed
      */
     public function getAssetType()
     {
@@ -303,7 +303,7 @@ class AssetPrePermissionsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets pathId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getPathId()
     {
@@ -327,7 +327,7 @@ class AssetPrePermissionsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets pathType
      *
-     * @return \TencentAds\Model\PathType
+     * @return \TencentAds\Model\PathType|mixed
      */
     public function getPathType()
     {

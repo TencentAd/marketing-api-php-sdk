@@ -226,7 +226,7 @@ class VideoSpec implements ModelInterface, ArrayAccess
     /**
      * Gets videoId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getVideoId()
     {
@@ -250,7 +250,7 @@ class VideoSpec implements ModelInterface, ArrayAccess
     /**
      * Gets width
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWidth()
     {
@@ -274,7 +274,7 @@ class VideoSpec implements ModelInterface, ArrayAccess
     /**
      * Gets height
      *
-     * @return int
+     * @return int|mixed
      */
     public function getHeight()
     {
@@ -298,7 +298,7 @@ class VideoSpec implements ModelInterface, ArrayAccess
     /**
      * Gets inMiddle
      *
-     * @return int
+     * @return int|mixed
      */
     public function getInMiddle()
     {

@@ -220,7 +220,7 @@ class UpdateAdgroupAutoAcquisitionItem implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -244,7 +244,7 @@ class UpdateAdgroupAutoAcquisitionItem implements ModelInterface, ArrayAccess
     /**
      * Gets autoAcquisitionEnabled
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getAutoAcquisitionEnabled()
     {
@@ -268,7 +268,7 @@ class UpdateAdgroupAutoAcquisitionItem implements ModelInterface, ArrayAccess
     /**
      * Gets autoAcquisitionBudget
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAutoAcquisitionBudget()
     {

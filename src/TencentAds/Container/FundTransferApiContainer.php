@@ -30,7 +30,7 @@ class FundTransferApiContainer extends ApiContainer
     /**
      * Handle FundTransferApi fundTransferAdd function
      * @param array params
-     * @return \TencentAds\Model\FundTransferAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

@@ -220,7 +220,7 @@ class CompeteSurroundingsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets displayFlag
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getDisplayFlag()
     {
@@ -244,7 +244,7 @@ class CompeteSurroundingsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets trafficSufficiency
      *
-     * @return \TencentAds\Model\TrafficSufficiencyTrendStruct
+     * @return \TencentAds\Model\TrafficSufficiencyTrendStruct|mixed
      */
     public function getTrafficSufficiency()
     {
@@ -268,7 +268,7 @@ class CompeteSurroundingsStruct implements ModelInterface, ArrayAccess
     /**
      * Gets competeIntense
      *
-     * @return \TencentAds\Model\CompeteIntenseTrendStruct
+     * @return \TencentAds\Model\CompeteIntenseTrendStruct|mixed
      */
     public function getCompeteIntense()
     {

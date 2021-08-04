@@ -207,7 +207,7 @@ class ReportConversionsPredictResponseData implements ModelInterface, ArrayAcces
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\CollectionStruct[]
+     * @return \TencentAds\Model\CollectionStruct[]|mixed
      */
     public function getList()
     {

@@ -30,7 +30,7 @@ class DailyBalanceReportApiContainer extends ApiContainer
     /**
      * Handle DailyBalanceReportApi dailyBalanceReportGet function
      * @param array params
-     * @return \TencentAds\Model\DailyBalanceReportGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

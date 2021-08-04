@@ -460,7 +460,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets image
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImage()
     {
@@ -484,7 +484,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets image2
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImage2()
     {
@@ -508,7 +508,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets image3
      *
-     * @return string
+     * @return string|mixed
      */
     public function getImage3()
     {
@@ -532,7 +532,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets title
      *
-     * @return string
+     * @return string|mixed
      */
     public function getTitle()
     {
@@ -556,7 +556,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -580,7 +580,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets corporate
      *
-     * @return \TencentAds\Model\AdcreativeCorporate
+     * @return \TencentAds\Model\AdcreativeCorporate|mixed
      */
     public function getCorporate()
     {
@@ -604,7 +604,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets video
      *
-     * @return string
+     * @return string|mixed
      */
     public function getVideo()
     {
@@ -628,7 +628,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets deepLinkType
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDeepLinkType()
     {
@@ -652,7 +652,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets linkNameType
      *
-     * @return \TencentAds\Model\LinkNameType
+     * @return \TencentAds\Model\LinkNameType|mixed
      */
     public function getLinkNameType()
     {
@@ -676,7 +676,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets imageList
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getImageList()
     {
@@ -700,7 +700,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets elementStory
      *
-     * @return \TencentAds\Model\AdcreativeElementStoryArrayItem[]
+     * @return \TencentAds\Model\AdcreativeElementStoryArrayItem[]|mixed
      */
     public function getElementStory()
     {
@@ -724,7 +724,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets url
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUrl()
     {
@@ -748,7 +748,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets buttonText
      *
-     * @return string
+     * @return string|mixed
      */
     public function getButtonText()
     {
@@ -772,7 +772,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets bottomText
      *
-     * @return string
+     * @return string|mixed
      */
     public function getBottomText()
     {
@@ -796,7 +796,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets excitationText
      *
-     * @return string
+     * @return string|mixed
      */
     public function getExcitationText()
     {
@@ -820,7 +820,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets countdownBegin
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCountdownBegin()
     {
@@ -844,7 +844,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets countdown
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCountdown()
     {
@@ -868,7 +868,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets countdownPrice
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCountdownPrice()
     {
@@ -892,7 +892,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets countdownTimeType
      *
-     * @return \TencentAds\Model\AdCreativeCountdownTimeType
+     * @return \TencentAds\Model\AdCreativeCountdownTimeType|mixed
      */
     public function getCountdownTimeType()
     {
@@ -916,7 +916,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets miniProgramId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMiniProgramId()
     {
@@ -940,7 +940,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets miniProgramPath
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMiniProgramPath()
     {
@@ -964,7 +964,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets label
      *
-     * @return \TencentAds\Model\CreativeLabel[]
+     * @return \TencentAds\Model\CreativeLabel[]|mixed
      */
     public function getLabel()
     {
@@ -988,7 +988,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets productTags
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getProductTags()
     {
@@ -1012,7 +1012,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets logoDescription
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLogoDescription()
     {
@@ -1036,7 +1036,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets logo
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLogo()
     {
@@ -1060,7 +1060,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets leftBottomTxt
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLeftBottomTxt()
     {
@@ -1084,7 +1084,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets animationEffect
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAnimationEffect()
     {
@@ -1108,7 +1108,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets phone
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPhone()
     {
@@ -1132,7 +1132,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets shortVideoStruct
      *
-     * @return \TencentAds\Model\ShortVideoStruct
+     * @return \TencentAds\Model\ShortVideoStruct|mixed
      */
     public function getShortVideoStruct()
     {
@@ -1156,7 +1156,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets longVideoStruct
      *
-     * @return \TencentAds\Model\LongVideoStruct
+     * @return \TencentAds\Model\LongVideoStruct|mixed
      */
     public function getLongVideoStruct()
     {
@@ -1180,7 +1180,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets bannerContent
      *
-     * @return \TencentAds\Model\AdcreativeBannerContent
+     * @return \TencentAds\Model\AdcreativeBannerContent|mixed
      */
     public function getBannerContent()
     {
@@ -1204,7 +1204,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets cardContent
      *
-     * @return \TencentAds\Model\AdcreativeCardContent
+     * @return \TencentAds\Model\AdcreativeCardContent|mixed
      */
     public function getCardContent()
     {
@@ -1228,7 +1228,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets videoPopupUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getVideoPopupUrl()
     {
@@ -1252,7 +1252,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets videoPopupButton
      *
-     * @return \TencentAds\Model\AdcreativeVideoPopupButton
+     * @return \TencentAds\Model\AdcreativeVideoPopupButton|mixed
      */
     public function getVideoPopupButton()
     {
@@ -1276,7 +1276,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets buttonUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getButtonUrl()
     {
@@ -1300,7 +1300,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets brand
      *
-     * @return \TencentAds\Model\AdCreativeBrand
+     * @return \TencentAds\Model\AdCreativeBrand|mixed
      */
     public function getBrand()
     {
@@ -1324,7 +1324,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets caption
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCaption()
     {
@@ -1348,7 +1348,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets labelledImg
      *
-     * @return \TencentAds\Model\AdcreativeLabelledImg
+     * @return \TencentAds\Model\AdcreativeLabelledImg|mixed
      */
     public function getLabelledImg()
     {
@@ -1372,7 +1372,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets fullScreenImage
      *
-     * @return string
+     * @return string|mixed
      */
     public function getFullScreenImage()
     {
@@ -1396,7 +1396,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets zipUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getZipUrl()
     {
@@ -1420,7 +1420,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets endPage
      *
-     * @return \TencentAds\Model\AdCreativeEndPage
+     * @return \TencentAds\Model\AdCreativeEndPage|mixed
      */
     public function getEndPage()
     {
@@ -1444,7 +1444,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets shopImage
      *
-     * @return string
+     * @return string|mixed
      */
     public function getShopImage()
     {
@@ -1468,7 +1468,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     /**
      * Gets headLine
      *
-     * @return string
+     * @return string|mixed
      */
     public function getHeadLine()
     {

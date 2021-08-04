@@ -274,7 +274,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets profileType
      *
-     * @return \TencentAds\Model\ProfileType
+     * @return \TencentAds\Model\ProfileType|mixed
      */
     public function getProfileType()
     {
@@ -298,7 +298,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets profileId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getProfileId()
     {
@@ -322,7 +322,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\PromotedObjectType
+     * @return \TencentAds\Model\PromotedObjectType|mixed
      */
     public function getPromotedObjectType()
     {
@@ -346,7 +346,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPromotedObjectId()
     {
@@ -370,7 +370,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets headImageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getHeadImageId()
     {
@@ -394,7 +394,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets headImageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getHeadImageUrl()
     {
@@ -418,7 +418,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets profileName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProfileName()
     {
@@ -442,7 +442,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -466,7 +466,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {
@@ -490,7 +490,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLastModifiedTime()
     {
@@ -514,7 +514,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets profileUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getProfileUrl()
     {
@@ -538,7 +538,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets systemStatus
      *
-     * @return \TencentAds\Model\SysStatus
+     * @return \TencentAds\Model\SysStatus|mixed
      */
     public function getSystemStatus()
     {

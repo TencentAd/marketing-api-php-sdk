@@ -213,7 +213,7 @@ class BusinessManagerRelationsGetResponseData implements ModelInterface, ArrayAc
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\BusinessManagerRelationsGetListStruct[]
+     * @return \TencentAds\Model\BusinessManagerRelationsGetListStruct[]|mixed
      */
     public function getList()
     {
@@ -237,7 +237,7 @@ class BusinessManagerRelationsGetResponseData implements ModelInterface, ArrayAc
     /**
      * Gets pageInfo
      *
-     * @return \TencentAds\Model\Conf
+     * @return \TencentAds\Model\Conf|mixed
      */
     public function getPageInfo()
     {

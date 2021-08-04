@@ -96,7 +96,7 @@ class BidSimulationApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\BidSimulationGetResponse
+     * @return \TencentAds\Model\BidSimulationGetResponse|mixed
      */
     public function bidSimulationGet($data)
     {

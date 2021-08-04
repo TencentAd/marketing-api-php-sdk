@@ -96,7 +96,7 @@ class AsyncReportsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AsyncReportsAddResponse
+     * @return \TencentAds\Model\AsyncReportsAddResponse|mixed
      */
     public function asyncReportsAdd($data)
     {
@@ -382,7 +382,7 @@ class AsyncReportsApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\AsyncReportsGetResponse
+     * @return \TencentAds\Model\AsyncReportsGetResponse|mixed
      */
     public function asyncReportsGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {

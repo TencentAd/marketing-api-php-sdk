@@ -262,7 +262,7 @@ class VideoRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets width
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWidth()
     {
@@ -286,7 +286,7 @@ class VideoRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets height
      *
-     * @return int
+     * @return int|mixed
      */
     public function getHeight()
     {
@@ -310,7 +310,7 @@ class VideoRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets minWidth
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMinWidth()
     {
@@ -334,7 +334,7 @@ class VideoRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets minHeight
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMinHeight()
     {
@@ -358,7 +358,7 @@ class VideoRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets ratioWidth
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRatioWidth()
     {
@@ -382,7 +382,7 @@ class VideoRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets ratioHeight
      *
-     * @return int
+     * @return int|mixed
      */
     public function getRatioHeight()
     {
@@ -406,7 +406,7 @@ class VideoRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets fileSize
      *
-     * @return int
+     * @return int|mixed
      */
     public function getFileSize()
     {
@@ -430,7 +430,7 @@ class VideoRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets fileFormat
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getFileFormat()
     {
@@ -454,7 +454,7 @@ class VideoRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets minDuration
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMinDuration()
     {
@@ -478,7 +478,7 @@ class VideoRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets maxDuration
      *
-     * @return int
+     * @return int|mixed
      */
     public function getMaxDuration()
     {

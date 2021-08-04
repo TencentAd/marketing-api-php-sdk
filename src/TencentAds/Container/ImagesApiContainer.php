@@ -30,7 +30,7 @@ class ImagesApiContainer extends ApiContainer
     /**
      * Handle ImagesApi imagesAdd function
      * @param array params
-     * @return \TencentAds\Model\ImagesAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -76,7 +76,7 @@ class ImagesApiContainer extends ApiContainer
     /**
      * Handle ImagesApi imagesDelete function
      * @param array params
-     * @return \TencentAds\Model\ImagesDeleteResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -110,7 +110,7 @@ class ImagesApiContainer extends ApiContainer
     /**
      * Handle ImagesApi imagesGet function
      * @param array params
-     * @return \TencentAds\Model\ImagesGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -152,7 +152,7 @@ class ImagesApiContainer extends ApiContainer
     /**
      * Handle ImagesApi imagesUpdate function
      * @param array params
-     * @return \TencentAds\Model\ImagesUpdateResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

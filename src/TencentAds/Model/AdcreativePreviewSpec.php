@@ -244,7 +244,7 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
     /**
      * Gets adcreativeTemplateId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdcreativeTemplateId()
     {
@@ -268,7 +268,7 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
     /**
      * Gets siteSet
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getSiteSet()
     {
@@ -292,7 +292,7 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectType
      *
-     * @return \TencentAds\Model\WechatPromotedObjectType
+     * @return \TencentAds\Model\WechatPromotedObjectType|mixed
      */
     public function getPromotedObjectType()
     {
@@ -316,7 +316,7 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
     /**
      * Gets adcreativeElements
      *
-     * @return \TencentAds\Model\AdcreativeCreativeElements
+     * @return \TencentAds\Model\AdcreativeCreativeElements|mixed
      */
     public function getAdcreativeElements()
     {
@@ -340,7 +340,7 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPromotedObjectId()
     {
@@ -364,7 +364,7 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
     /**
      * Gets pageType
      *
-     * @return \TencentAds\Model\DestinationType
+     * @return \TencentAds\Model\DestinationType|mixed
      */
     public function getPageType()
     {
@@ -388,7 +388,7 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
     /**
      * Gets pageSpec
      *
-     * @return \TencentAds\Model\PreviewPageSpec
+     * @return \TencentAds\Model\PreviewPageSpec|mixed
      */
     public function getPageSpec()
     {

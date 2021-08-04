@@ -208,7 +208,7 @@ class UrlRestriction implements ModelInterface, ArrayAccess
     /**
      * Gets urlPattern
      *
-     * @return string
+     * @return string|mixed
      */
     public function getUrlPattern()
     {

@@ -101,7 +101,7 @@ class CustomTagFilesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CustomTagFilesAddResponse
+     * @return \TencentAds\Model\CustomTagFilesAddResponse|mixed
      */
     public function customTagFilesAdd($accountId, $userIdType, $tagId, $file, $operationType = null, $openAppId = null)
     {
@@ -447,7 +447,7 @@ class CustomTagFilesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\CustomTagFilesGetResponse
+     * @return \TencentAds\Model\CustomTagFilesGetResponse|mixed
      */
     public function customTagFilesGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {

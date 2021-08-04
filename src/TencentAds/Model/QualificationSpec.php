@@ -232,7 +232,7 @@ class QualificationSpec implements ModelInterface, ArrayAccess
     /**
      * Gets industrySpec
      *
-     * @return \TencentAds\Model\IndustryQualificationsSpec
+     * @return \TencentAds\Model\IndustryQualificationsSpec|mixed
      */
     public function getIndustrySpec()
     {
@@ -256,7 +256,7 @@ class QualificationSpec implements ModelInterface, ArrayAccess
     /**
      * Gets adSpec
      *
-     * @return \TencentAds\Model\AdQualificationsSpec
+     * @return \TencentAds\Model\AdQualificationsSpec|mixed
      */
     public function getAdSpec()
     {
@@ -280,7 +280,7 @@ class QualificationSpec implements ModelInterface, ArrayAccess
     /**
      * Gets additionalIndustrySpec
      *
-     * @return \TencentAds\Model\AdditionalIndustryQualificationsSpec
+     * @return \TencentAds\Model\AdditionalIndustryQualificationsSpec|mixed
      */
     public function getAdditionalIndustrySpec()
     {
@@ -304,7 +304,7 @@ class QualificationSpec implements ModelInterface, ArrayAccess
     /**
      * Gets industryWechatSpec
      *
-     * @return \TencentAds\Model\WechatIndustryQualificationsSpec
+     * @return \TencentAds\Model\WechatIndustryQualificationsSpec|mixed
      */
     public function getIndustryWechatSpec()
     {
@@ -328,7 +328,7 @@ class QualificationSpec implements ModelInterface, ArrayAccess
     /**
      * Gets adWechatSpec
      *
-     * @return \TencentAds\Model\WechatAdQualificationsSpec
+     * @return \TencentAds\Model\WechatAdQualificationsSpec|mixed
      */
     public function getAdWechatSpec()
     {

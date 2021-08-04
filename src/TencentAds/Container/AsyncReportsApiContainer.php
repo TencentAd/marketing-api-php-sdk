@@ -30,7 +30,7 @@ class AsyncReportsApiContainer extends ApiContainer
     /**
      * Handle AsyncReportsApi asyncReportsAdd function
      * @param array params
-     * @return \TencentAds\Model\AsyncReportsAddResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */
@@ -64,7 +64,7 @@ class AsyncReportsApiContainer extends ApiContainer
     /**
      * Handle AsyncReportsApi asyncReportsGet function
      * @param array params
-     * @return \TencentAds\Model\AsyncReportsGetResponseData
+     * @return mixed
      * @throws \TencentAds\ApiException
      * @throws \TencentAds\Exception\TencentAdsResponseException
      */

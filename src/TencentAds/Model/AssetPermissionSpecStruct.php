@@ -214,7 +214,7 @@ class AssetPermissionSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Gets assetPermissionGrantType
      *
-     * @return \TencentAds\Model\AssetPermissionGrantType
+     * @return \TencentAds\Model\AssetPermissionGrantType|mixed
      */
     public function getAssetPermissionGrantType()
     {
@@ -238,7 +238,7 @@ class AssetPermissionSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Gets assetId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAssetId()
     {

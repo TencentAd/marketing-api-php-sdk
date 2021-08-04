@@ -232,7 +232,7 @@ class ListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatQualificationName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatQualificationName()
     {
@@ -256,7 +256,7 @@ class ListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatQualificationUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getWechatQualificationUrl()
     {
@@ -280,7 +280,7 @@ class ListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatQualificationId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getWechatQualificationId()
     {
@@ -304,7 +304,7 @@ class ListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets reviewStatus
      *
-     * @return \TencentAds\Model\LocalBusinessQualificationReviewStatus
+     * @return \TencentAds\Model\LocalBusinessQualificationReviewStatus|mixed
      */
     public function getReviewStatus()
     {
@@ -328,7 +328,7 @@ class ListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets auditMessage
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAuditMessage()
     {

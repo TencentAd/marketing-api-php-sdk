@@ -214,7 +214,7 @@ class DiagnosisGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets adgroupId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAdgroupId()
     {
@@ -238,7 +238,7 @@ class DiagnosisGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatDiagnosisResultSpec
      *
-     * @return \TencentAds\Model\WechatDiagnosisResultSpec
+     * @return \TencentAds\Model\WechatDiagnosisResultSpec|mixed
      */
     public function getWechatDiagnosisResultSpec()
     {

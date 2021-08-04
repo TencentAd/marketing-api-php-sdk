@@ -96,7 +96,7 @@ class LocalStoresApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\LocalStoresAddResponse
+     * @return \TencentAds\Model\LocalStoresAddResponse|mixed
      */
     public function localStoresAdd($data)
     {
@@ -378,7 +378,7 @@ class LocalStoresApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\LocalStoresDeleteResponse
+     * @return \TencentAds\Model\LocalStoresDeleteResponse|mixed
      */
     public function localStoresDelete($data)
     {
@@ -664,7 +664,7 @@ class LocalStoresApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\LocalStoresGetResponse
+     * @return \TencentAds\Model\LocalStoresGetResponse|mixed
      */
     public function localStoresGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {

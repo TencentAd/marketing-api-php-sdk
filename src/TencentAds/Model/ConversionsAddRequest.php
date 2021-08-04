@@ -291,7 +291,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accountId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAccountId()
     {
@@ -315,7 +315,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets conversionName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getConversionName()
     {
@@ -339,7 +339,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets accessType
      *
-     * @return \TencentAds\Model\AccessType
+     * @return \TencentAds\Model\AccessType|mixed
      */
     public function getAccessType()
     {
@@ -363,7 +363,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets conversionScene
      *
-     * @return \TencentAds\Model\ConversionScene
+     * @return \TencentAds\Model\ConversionScene|mixed
      */
     public function getConversionScene()
     {
@@ -387,7 +387,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets promotedObjectId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPromotedObjectId()
     {
@@ -411,7 +411,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets appAndroidChannelPackageId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getAppAndroidChannelPackageId()
     {
@@ -435,7 +435,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets claimType
      *
-     * @return \TencentAds\Model\ClaimType
+     * @return \TencentAds\Model\ClaimType|mixed
      */
     public function getClaimType()
     {
@@ -459,7 +459,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets feedbackUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getFeedbackUrl()
     {
@@ -483,7 +483,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets landingPageUrl
      *
-     * @return string
+     * @return string|mixed
      */
     public function getLandingPageUrl()
     {
@@ -507,7 +507,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets miniProgramId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getMiniProgramId()
     {
@@ -531,7 +531,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets selfAttributed
      *
-     * @return bool
+     * @return bool|mixed
      */
     public function getSelfAttributed()
     {
@@ -555,7 +555,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets optimizationGoal
      *
-     * @return \TencentAds\Model\IntOptimizationGoal
+     * @return \TencentAds\Model\IntOptimizationGoal|mixed
      */
     public function getOptimizationGoal()
     {
@@ -579,7 +579,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets deepBehaviorOptimizationGoal
      *
-     * @return \TencentAds\Model\IntOptimizationGoal
+     * @return \TencentAds\Model\IntOptimizationGoal|mixed
      */
     public function getDeepBehaviorOptimizationGoal()
     {
@@ -603,7 +603,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets deepWorthOptimizationGoal
      *
-     * @return \TencentAds\Model\ConversionOptimizationGoal
+     * @return \TencentAds\Model\ConversionOptimizationGoal|mixed
      */
     public function getDeepWorthOptimizationGoal()
     {
@@ -627,7 +627,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets userActionSetId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getUserActionSetId()
     {

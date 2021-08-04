@@ -226,7 +226,7 @@ class BidSimulateResultItem implements ModelInterface, ArrayAccess
     /**
      * Gets bid
      *
-     * @return int
+     * @return int|mixed
      */
     public function getBid()
     {
@@ -250,7 +250,7 @@ class BidSimulateResultItem implements ModelInterface, ArrayAccess
     /**
      * Gets exposeCnt
      *
-     * @return int
+     * @return int|mixed
      */
     public function getExposeCnt()
     {
@@ -274,7 +274,7 @@ class BidSimulateResultItem implements ModelInterface, ArrayAccess
     /**
      * Gets clickCnt
      *
-     * @return int
+     * @return int|mixed
      */
     public function getClickCnt()
     {
@@ -298,7 +298,7 @@ class BidSimulateResultItem implements ModelInterface, ArrayAccess
     /**
      * Gets conversionCnt
      *
-     * @return int
+     * @return int|mixed
      */
     public function getConversionCnt()
     {

@@ -226,7 +226,7 @@ class LbsSpec implements ModelInterface, ArrayAccess
     /**
      * Gets lbsType
      *
-     * @return \TencentAds\Model\LbsType
+     * @return \TencentAds\Model\LbsType|mixed
      */
     public function getLbsType()
     {
@@ -250,7 +250,7 @@ class LbsSpec implements ModelInterface, ArrayAccess
     /**
      * Gets crossCityRule
      *
-     * @return \TencentAds\Model\CrossCityRule
+     * @return \TencentAds\Model\CrossCityRule|mixed
      */
     public function getCrossCityRule()
     {
@@ -274,7 +274,7 @@ class LbsSpec implements ModelInterface, ArrayAccess
     /**
      * Gets poiRule
      *
-     * @return \TencentAds\Model\PoiRule
+     * @return \TencentAds\Model\PoiRule|mixed
      */
     public function getPoiRule()
     {
@@ -298,7 +298,7 @@ class LbsSpec implements ModelInterface, ArrayAccess
     /**
      * Gets customLocationRule
      *
-     * @return \TencentAds\Model\CustomLocationRule
+     * @return \TencentAds\Model\CustomLocationRule|mixed
      */
     public function getCustomLocationRule()
     {

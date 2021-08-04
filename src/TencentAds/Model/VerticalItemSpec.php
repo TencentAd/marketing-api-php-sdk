@@ -232,7 +232,7 @@ class VerticalItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets id
      *
-     * @return int
+     * @return int|mixed
      */
     public function getId()
     {
@@ -256,7 +256,7 @@ class VerticalItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return string
+     * @return string|mixed
      */
     public function getName()
     {
@@ -280,7 +280,7 @@ class VerticalItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets description
      *
-     * @return string
+     * @return string|mixed
      */
     public function getDescription()
     {
@@ -304,7 +304,7 @@ class VerticalItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets supportCatalogTypes
      *
-     * @return string[]
+     * @return string[]|mixed
      */
     public function getSupportCatalogTypes()
     {
@@ -328,7 +328,7 @@ class VerticalItemSpec implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return string
+     * @return string|mixed
      */
     public function getType()
     {

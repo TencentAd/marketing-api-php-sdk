@@ -214,7 +214,7 @@ class AdcreativeCorporate implements ModelInterface, ArrayAccess
     /**
      * Gets corporateName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCorporateName()
     {
@@ -238,7 +238,7 @@ class AdcreativeCorporate implements ModelInterface, ArrayAccess
     /**
      * Gets corporateImg
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCorporateImg()
     {

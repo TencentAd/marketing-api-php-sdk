@@ -105,7 +105,7 @@ class DynamicAdTemplatesApi
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\DynamicAdTemplatesGetResponse
+     * @return \TencentAds\Model\DynamicAdTemplatesGetResponse|mixed
      */
     public function dynamicAdTemplatesGet($accountId, $productCatalogId, $dynamicAdTemplateWidth, $dynamicAdTemplateHeight, $dynamicAdTemplateType = null, $dynamicAdTemplateOwnershipType = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {

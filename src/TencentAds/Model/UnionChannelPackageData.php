@@ -262,7 +262,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Gets androidUnionAppId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getAndroidUnionAppId()
     {
@@ -286,7 +286,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Gets packageName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getPackageName()
     {
@@ -310,7 +310,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Gets channelPackageId
      *
-     * @return int
+     * @return int|mixed
      */
     public function getChannelPackageId()
     {
@@ -334,7 +334,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Gets versionCode
      *
-     * @return int
+     * @return int|mixed
      */
     public function getVersionCode()
     {
@@ -358,7 +358,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Gets versionName
      *
-     * @return string
+     * @return string|mixed
      */
     public function getVersionName()
     {
@@ -382,7 +382,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getCreatedTime()
     {
@@ -406,7 +406,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedTime
      *
-     * @return int
+     * @return int|mixed
      */
     public function getLastModifiedTime()
     {
@@ -430,7 +430,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Gets systemStatus
      *
-     * @return \TencentAds\Model\UnionPackageSysStatus
+     * @return \TencentAds\Model\UnionPackageSysStatus|mixed
      */
     public function getSystemStatus()
     {
@@ -454,7 +454,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Gets systemMessage
      *
-     * @return string
+     * @return string|mixed
      */
     public function getSystemMessage()
     {
@@ -478,7 +478,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Gets customizedChannelId
      *
-     * @return string
+     * @return string|mixed
      */
     public function getCustomizedChannelId()
     {

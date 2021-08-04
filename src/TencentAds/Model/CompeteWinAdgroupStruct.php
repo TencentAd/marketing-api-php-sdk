@@ -220,7 +220,7 @@ class CompeteWinAdgroupStruct implements ModelInterface, ArrayAccess
     /**
      * Gets score
      *
-     * @return int
+     * @return int|mixed
      */
     public function getScore()
     {
@@ -244,7 +244,7 @@ class CompeteWinAdgroupStruct implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\CompeteWinAdgroupListItem[]
+     * @return \TencentAds\Model\CompeteWinAdgroupListItem[]|mixed
      */
     public function getList()
     {
@@ -268,7 +268,7 @@ class CompeteWinAdgroupStruct implements ModelInterface, ArrayAccess
     /**
      * Gets conclusion
      *
-     * @return string
+     * @return string|mixed
      */
     public function getConclusion()
     {
