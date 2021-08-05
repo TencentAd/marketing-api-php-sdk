@@ -235,7 +235,7 @@ class UserPropertiesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -259,7 +259,7 @@ class UserPropertiesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets userPropertySetId
      *
-     * @param int $userPropertySetId userPropertySetId
+     * @param int|mixed $userPropertySetId userPropertySetId
      *
      * @return $this
      */
@@ -283,7 +283,7 @@ class UserPropertiesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAppId
      *
-     * @param string $wechatAppId wechatAppId
+     * @param string|mixed $wechatAppId wechatAppId
      *
      * @return $this
      */
@@ -307,7 +307,7 @@ class UserPropertiesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets property
      *
-     * @param \TencentAds\Model\UserPropertiesAddProperty[] $property property
+     * @param \TencentAds\Model\UserPropertiesAddProperty[]|mixed $property property
      *
      * @return $this
      */

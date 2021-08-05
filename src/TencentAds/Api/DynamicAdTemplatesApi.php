@@ -92,16 +92,16 @@ class DynamicAdTemplatesApi
      *
      * 获取动态模板信息
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $productCatalogId productCatalogId (required)
-     * @param  int $dynamicAdTemplateWidth dynamicAdTemplateWidth (required)
-     * @param  int $dynamicAdTemplateHeight dynamicAdTemplateHeight (required)
-     * @param  string $dynamicAdTemplateType dynamicAdTemplateType (optional)
-     * @param  string $dynamicAdTemplateOwnershipType dynamicAdTemplateOwnershipType (optional)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $productCatalogId productCatalogId (required)
+     * @param  int|mixed $dynamicAdTemplateWidth dynamicAdTemplateWidth (required)
+     * @param  int|mixed $dynamicAdTemplateHeight dynamicAdTemplateHeight (required)
+     * @param  string|mixed $dynamicAdTemplateType dynamicAdTemplateType (optional)
+     * @param  string|mixed $dynamicAdTemplateOwnershipType dynamicAdTemplateOwnershipType (optional)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -118,16 +118,16 @@ class DynamicAdTemplatesApi
      *
      * 获取动态模板信息
      *
-     * @param  int $accountId (required)
-     * @param  int $productCatalogId (required)
-     * @param  int $dynamicAdTemplateWidth (required)
-     * @param  int $dynamicAdTemplateHeight (required)
-     * @param  string $dynamicAdTemplateType (optional)
-     * @param  string $dynamicAdTemplateOwnershipType (optional)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  int|mixed $dynamicAdTemplateWidth (required)
+     * @param  int|mixed $dynamicAdTemplateHeight (required)
+     * @param  string|mixed $dynamicAdTemplateType (optional)
+     * @param  string|mixed $dynamicAdTemplateOwnershipType (optional)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -202,16 +202,16 @@ class DynamicAdTemplatesApi
      *
      * 获取动态模板信息
      *
-     * @param  int $accountId (required)
-     * @param  int $productCatalogId (required)
-     * @param  int $dynamicAdTemplateWidth (required)
-     * @param  int $dynamicAdTemplateHeight (required)
-     * @param  string $dynamicAdTemplateType (optional)
-     * @param  string $dynamicAdTemplateOwnershipType (optional)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  int|mixed $dynamicAdTemplateWidth (required)
+     * @param  int|mixed $dynamicAdTemplateHeight (required)
+     * @param  string|mixed $dynamicAdTemplateType (optional)
+     * @param  string|mixed $dynamicAdTemplateOwnershipType (optional)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -231,16 +231,16 @@ class DynamicAdTemplatesApi
      *
      * 获取动态模板信息
      *
-     * @param  int $accountId (required)
-     * @param  int $productCatalogId (required)
-     * @param  int $dynamicAdTemplateWidth (required)
-     * @param  int $dynamicAdTemplateHeight (required)
-     * @param  string $dynamicAdTemplateType (optional)
-     * @param  string $dynamicAdTemplateOwnershipType (optional)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  int|mixed $dynamicAdTemplateWidth (required)
+     * @param  int|mixed $dynamicAdTemplateHeight (required)
+     * @param  string|mixed $dynamicAdTemplateType (optional)
+     * @param  string|mixed $dynamicAdTemplateOwnershipType (optional)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -290,16 +290,16 @@ class DynamicAdTemplatesApi
     /**
      * Create request for operation 'dynamicAdTemplatesGet'
      *
-     * @param  int $accountId (required)
-     * @param  int $productCatalogId (required)
-     * @param  int $dynamicAdTemplateWidth (required)
-     * @param  int $dynamicAdTemplateHeight (required)
-     * @param  string $dynamicAdTemplateType (optional)
-     * @param  string $dynamicAdTemplateOwnershipType (optional)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  int|mixed $dynamicAdTemplateWidth (required)
+     * @param  int|mixed $dynamicAdTemplateHeight (required)
+     * @param  string|mixed $dynamicAdTemplateType (optional)
+     * @param  string|mixed $dynamicAdTemplateOwnershipType (optional)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

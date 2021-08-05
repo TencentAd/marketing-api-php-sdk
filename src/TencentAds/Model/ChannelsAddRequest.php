@@ -229,7 +229,7 @@ class ChannelsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets adgroup
      *
-     * @param \TencentAds\Model\AdgroupCreateSpec $adgroup adgroup
+     * @param \TencentAds\Model\AdgroupCreateSpec|mixed $adgroup adgroup
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class ChannelsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets campaign
      *
-     * @param \TencentAds\Model\CampaignCreateSpec $campaign campaign
+     * @param \TencentAds\Model\CampaignCreateSpec|mixed $campaign campaign
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class ChannelsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets adcreative
      *
-     * @param \TencentAds\Model\AdCreativeCreateSpec $adcreative adcreative
+     * @param \TencentAds\Model\AdCreativeCreateSpec|mixed $adcreative adcreative
      *
      * @return $this
      */

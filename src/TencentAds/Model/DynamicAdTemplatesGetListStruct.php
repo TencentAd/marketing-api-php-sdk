@@ -260,7 +260,7 @@ class DynamicAdTemplatesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets dynamicAdTemplateId
      *
-     * @param int $dynamicAdTemplateId dynamicAdTemplateId
+     * @param int|mixed $dynamicAdTemplateId dynamicAdTemplateId
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class DynamicAdTemplatesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets dynamicAdTemplateName
      *
-     * @param string $dynamicAdTemplateName dynamicAdTemplateName
+     * @param string|mixed $dynamicAdTemplateName dynamicAdTemplateName
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class DynamicAdTemplatesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets dynamicAdTemplateType
      *
-     * @param \TencentAds\Model\DynamicAdTemplateType $dynamicAdTemplateType dynamicAdTemplateType
+     * @param \TencentAds\Model\DynamicAdTemplateType|mixed $dynamicAdTemplateType dynamicAdTemplateType
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class DynamicAdTemplatesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productItemDisplayQuantity
      *
-     * @param \TencentAds\Model\ProductMode $productItemDisplayQuantity productItemDisplayQuantity
+     * @param \TencentAds\Model\ProductMode|mixed $productItemDisplayQuantity productItemDisplayQuantity
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class DynamicAdTemplatesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets dynamicAdTemplateWidth
      *
-     * @param int $dynamicAdTemplateWidth dynamicAdTemplateWidth
+     * @param int|mixed $dynamicAdTemplateWidth dynamicAdTemplateWidth
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class DynamicAdTemplatesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets dynamicAdTemplateHeight
      *
-     * @param int $dynamicAdTemplateHeight dynamicAdTemplateHeight
+     * @param int|mixed $dynamicAdTemplateHeight dynamicAdTemplateHeight
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class DynamicAdTemplatesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets imageUrl
      *
-     * @param string $imageUrl imageUrl
+     * @param string|mixed $imageUrl imageUrl
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class DynamicAdTemplatesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoUrl
      *
-     * @param string $videoUrl videoUrl
+     * @param string|mixed $videoUrl videoUrl
      *
      * @return $this
      */

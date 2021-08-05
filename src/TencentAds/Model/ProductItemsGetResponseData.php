@@ -217,7 +217,7 @@ class ProductItemsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\ProductItemsGetListStruct[] $list list
+     * @param \TencentAds\Model\ProductItemsGetListStruct[]|mixed $list list
      *
      * @return $this
      */

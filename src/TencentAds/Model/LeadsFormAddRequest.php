@@ -247,7 +247,7 @@ class LeadsFormAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -271,7 +271,7 @@ class LeadsFormAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets componentName
      *
-     * @param string $componentName componentName
+     * @param string|mixed $componentName componentName
      *
      * @return $this
      */
@@ -295,7 +295,7 @@ class LeadsFormAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets title
      *
-     * @param string $title title
+     * @param string|mixed $title title
      *
      * @return $this
      */
@@ -319,7 +319,7 @@ class LeadsFormAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets subTitle
      *
-     * @param string $subTitle subTitle
+     * @param string|mixed $subTitle subTitle
      *
      * @return $this
      */
@@ -343,7 +343,7 @@ class LeadsFormAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets submitText
      *
-     * @param string $submitText submitText
+     * @param string|mixed $submitText submitText
      *
      * @return $this
      */
@@ -367,7 +367,7 @@ class LeadsFormAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \TencentAds\Model\CreateControlListItem[] $items items
+     * @param \TencentAds\Model\CreateControlListItem[]|mixed $items items
      *
      * @return $this
      */

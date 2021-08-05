@@ -217,7 +217,7 @@ class QualificationsUpdateResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets qualificationId
      *
-     * @param int $qualificationId qualificationId
+     * @param int|mixed $qualificationId qualificationId
      *
      * @return $this
      */

@@ -230,7 +230,7 @@ class Ad implements ModelInterface, ArrayAccess
     /**
      * Sets adName
      *
-     * @param string $adName adName
+     * @param string|mixed $adName adName
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class Ad implements ModelInterface, ArrayAccess
     /**
      * Sets adcreative
      *
-     * @param \TencentAds\Model\PreviewAdcreative $adcreative adcreative
+     * @param \TencentAds\Model\PreviewAdcreative|mixed $adcreative adcreative
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class Ad implements ModelInterface, ArrayAccess
     /**
      * Sets feedsInteractionEnabled
      *
-     * @param bool $feedsInteractionEnabled feedsInteractionEnabled
+     * @param bool|mixed $feedsInteractionEnabled feedsInteractionEnabled
      *
      * @return $this
      */

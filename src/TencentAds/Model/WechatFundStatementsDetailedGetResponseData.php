@@ -223,7 +223,7 @@ class WechatFundStatementsDetailedGetResponseData implements ModelInterface, Arr
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\DetailedFundStatement[] $list list
+     * @param \TencentAds\Model\DetailedFundStatement[]|mixed $list list
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class WechatFundStatementsDetailedGetResponseData implements ModelInterface, Arr
     /**
      * Sets pageInfo
      *
-     * @param \TencentAds\Model\Conf $pageInfo pageInfo
+     * @param \TencentAds\Model\Conf|mixed $pageInfo pageInfo
      *
      * @return $this
      */

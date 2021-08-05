@@ -92,7 +92,7 @@ class LocalStoresAddressParsingResultApi
      *
      * 解析门店地址
      *
-     * @param  \TencentAds\Model\LocalStoresAddressParsingResultGetRequest $data data (required)
+     * @param  \TencentAds\Model\LocalStoresAddressParsingResultGetRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class LocalStoresAddressParsingResultApi
      *
      * 解析门店地址
      *
-     * @param  \TencentAds\Model\LocalStoresAddressParsingResultGetRequest $data (required)
+     * @param  \TencentAds\Model\LocalStoresAddressParsingResultGetRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class LocalStoresAddressParsingResultApi
      *
      * 解析门店地址
      *
-     * @param  \TencentAds\Model\LocalStoresAddressParsingResultGetRequest $data (required)
+     * @param  \TencentAds\Model\LocalStoresAddressParsingResultGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class LocalStoresAddressParsingResultApi
      *
      * 解析门店地址
      *
-     * @param  \TencentAds\Model\LocalStoresAddressParsingResultGetRequest $data (required)
+     * @param  \TencentAds\Model\LocalStoresAddressParsingResultGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class LocalStoresAddressParsingResultApi
     /**
      * Create request for operation 'localStoresAddressParsingResultGet'
      *
-     * @param  \TencentAds\Model\LocalStoresAddressParsingResultGetRequest $data (required)
+     * @param  \TencentAds\Model\LocalStoresAddressParsingResultGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

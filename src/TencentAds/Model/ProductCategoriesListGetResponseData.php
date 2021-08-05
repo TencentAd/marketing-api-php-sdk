@@ -223,7 +223,7 @@ class ProductCategoriesListGetResponseData implements ModelInterface, ArrayAcces
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\CategoryItem[] $list list
+     * @param \TencentAds\Model\CategoryItem[]|mixed $list list
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class ProductCategoriesListGetResponseData implements ModelInterface, ArrayAcces
     /**
      * Sets pageInfo
      *
-     * @param \TencentAds\Model\Conf $pageInfo pageInfo
+     * @param \TencentAds\Model\Conf|mixed $pageInfo pageInfo
      *
      * @return $this
      */

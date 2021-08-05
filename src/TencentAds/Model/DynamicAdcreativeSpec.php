@@ -242,7 +242,7 @@ class DynamicAdcreativeSpec implements ModelInterface, ArrayAccess
     /**
      * Sets productCatalogId
      *
-     * @param int $productCatalogId productCatalogId
+     * @param int|mixed $productCatalogId productCatalogId
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class DynamicAdcreativeSpec implements ModelInterface, ArrayAccess
     /**
      * Sets productMode
      *
-     * @param \TencentAds\Model\ProductMode $productMode productMode
+     * @param \TencentAds\Model\ProductMode|mixed $productMode productMode
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class DynamicAdcreativeSpec implements ModelInterface, ArrayAccess
     /**
      * Sets productSource
      *
-     * @param string $productSource productSource
+     * @param string|mixed $productSource productSource
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class DynamicAdcreativeSpec implements ModelInterface, ArrayAccess
     /**
      * Sets productExposureQuantityMode
      *
-     * @param \TencentAds\Model\ProductItemsQuantity $productExposureQuantityMode productExposureQuantityMode
+     * @param \TencentAds\Model\ProductItemsQuantity|mixed $productExposureQuantityMode productExposureQuantityMode
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class DynamicAdcreativeSpec implements ModelInterface, ArrayAccess
     /**
      * Sets landingPageUrlType
      *
-     * @param \TencentAds\Model\LandingPageUrlType $landingPageUrlType landingPageUrlType
+     * @param \TencentAds\Model\LandingPageUrlType|mixed $landingPageUrlType landingPageUrlType
      *
      * @return $this
      */

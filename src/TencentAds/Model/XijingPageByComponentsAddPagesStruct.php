@@ -260,7 +260,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
     /**
      * Sets pageType
      *
-     * @param \TencentAds\Model\ComponentsPageType $pageType pageType
+     * @param \TencentAds\Model\ComponentsPageType|mixed $pageType pageType
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
     /**
      * Sets pageName
      *
-     * @param string $pageName pageName
+     * @param string|mixed $pageName pageName
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
     /**
      * Sets pageTitle
      *
-     * @param string $pageTitle pageTitle
+     * @param string|mixed $pageTitle pageTitle
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
     /**
      * Sets clipboard
      *
-     * @param string $clipboard clipboard
+     * @param string|mixed $clipboard clipboard
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
     /**
      * Sets mobileAppId
      *
-     * @param string $mobileAppId mobileAppId
+     * @param string|mixed $mobileAppId mobileAppId
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
     /**
      * Sets bgColor
      *
-     * @param string $bgColor bgColor
+     * @param string|mixed $bgColor bgColor
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
     /**
      * Sets bgImageId
      *
-     * @param string $bgImageId bgImageId
+     * @param string|mixed $bgImageId bgImageId
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
     /**
      * Sets componentSpecList
      *
-     * @param string[] $componentSpecList componentSpecList
+     * @param string[]|mixed $componentSpecList componentSpecList
      *
      * @return $this
      */

@@ -242,7 +242,7 @@ class ListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatQualificationName
      *
-     * @param string $wechatQualificationName wechatQualificationName
+     * @param string|mixed $wechatQualificationName wechatQualificationName
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class ListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatQualificationUrl
      *
-     * @param string $wechatQualificationUrl wechatQualificationUrl
+     * @param string|mixed $wechatQualificationUrl wechatQualificationUrl
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class ListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatQualificationId
      *
-     * @param int $wechatQualificationId wechatQualificationId
+     * @param int|mixed $wechatQualificationId wechatQualificationId
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class ListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets reviewStatus
      *
-     * @param \TencentAds\Model\LocalBusinessQualificationReviewStatus $reviewStatus reviewStatus
+     * @param \TencentAds\Model\LocalBusinessQualificationReviewStatus|mixed $reviewStatus reviewStatus
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class ListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets auditMessage
      *
-     * @param string $auditMessage auditMessage
+     * @param string|mixed $auditMessage auditMessage
      *
      * @return $this
      */

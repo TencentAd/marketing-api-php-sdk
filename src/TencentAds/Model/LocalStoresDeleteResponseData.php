@@ -217,7 +217,7 @@ class LocalStoresDeleteResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets poiList
      *
-     * @param string[] $poiList poiList
+     * @param string[]|mixed $poiList poiList
      *
      * @return $this
      */

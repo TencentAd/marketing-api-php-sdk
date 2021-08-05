@@ -92,7 +92,7 @@ class WechatPagesApi
      *
      * 基于模板创建微信原生页
      *
-     * @param  \TencentAds\Model\WechatPagesAddRequest $data data (required)
+     * @param  \TencentAds\Model\WechatPagesAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class WechatPagesApi
      *
      * 基于模板创建微信原生页
      *
-     * @param  \TencentAds\Model\WechatPagesAddRequest $data (required)
+     * @param  \TencentAds\Model\WechatPagesAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class WechatPagesApi
      *
      * 基于模板创建微信原生页
      *
-     * @param  \TencentAds\Model\WechatPagesAddRequest $data (required)
+     * @param  \TencentAds\Model\WechatPagesAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class WechatPagesApi
      *
      * 基于模板创建微信原生页
      *
-     * @param  \TencentAds\Model\WechatPagesAddRequest $data (required)
+     * @param  \TencentAds\Model\WechatPagesAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class WechatPagesApi
     /**
      * Create request for operation 'wechatPagesAdd'
      *
-     * @param  \TencentAds\Model\WechatPagesAddRequest $data (required)
+     * @param  \TencentAds\Model\WechatPagesAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,7 +374,7 @@ class WechatPagesApi
      *
      * 删除微信落地页
      *
-     * @param  \TencentAds\Model\WechatPagesDeleteRequest $data data (required)
+     * @param  \TencentAds\Model\WechatPagesDeleteRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -391,7 +391,7 @@ class WechatPagesApi
      *
      * 删除微信落地页
      *
-     * @param  \TencentAds\Model\WechatPagesDeleteRequest $data (required)
+     * @param  \TencentAds\Model\WechatPagesDeleteRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -466,7 +466,7 @@ class WechatPagesApi
      *
      * 删除微信落地页
      *
-     * @param  \TencentAds\Model\WechatPagesDeleteRequest $data (required)
+     * @param  \TencentAds\Model\WechatPagesDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -486,7 +486,7 @@ class WechatPagesApi
      *
      * 删除微信落地页
      *
-     * @param  \TencentAds\Model\WechatPagesDeleteRequest $data (required)
+     * @param  \TencentAds\Model\WechatPagesDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -536,7 +536,7 @@ class WechatPagesApi
     /**
      * Create request for operation 'wechatPagesDelete'
      *
-     * @param  \TencentAds\Model\WechatPagesDeleteRequest $data (required)
+     * @param  \TencentAds\Model\WechatPagesDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -656,12 +656,12 @@ class WechatPagesApi
      *
      * 获取微信落地页列表
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $ownerUid ownerUid (optional)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $ownerUid ownerUid (optional)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -678,12 +678,12 @@ class WechatPagesApi
      *
      * 获取微信落地页列表
      *
-     * @param  int $accountId (required)
-     * @param  int $ownerUid (optional)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $ownerUid (optional)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -758,12 +758,12 @@ class WechatPagesApi
      *
      * 获取微信落地页列表
      *
-     * @param  int $accountId (required)
-     * @param  int $ownerUid (optional)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $ownerUid (optional)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -783,12 +783,12 @@ class WechatPagesApi
      *
      * 获取微信落地页列表
      *
-     * @param  int $accountId (required)
-     * @param  int $ownerUid (optional)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $ownerUid (optional)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -838,12 +838,12 @@ class WechatPagesApi
     /**
      * Create request for operation 'wechatPagesGet'
      *
-     * @param  int $accountId (required)
-     * @param  int $ownerUid (optional)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $ownerUid (optional)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -230,7 +230,7 @@ class ActionMatchRule implements ModelInterface, ArrayAccess
     /**
      * Sets actionType
      *
-     * @param \TencentAds\Model\ActionType $actionType actionType
+     * @param \TencentAds\Model\ActionType|mixed $actionType actionType
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class ActionMatchRule implements ModelInterface, ArrayAccess
     /**
      * Sets customAction
      *
-     * @param string $customAction customAction
+     * @param string|mixed $customAction customAction
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class ActionMatchRule implements ModelInterface, ArrayAccess
     /**
      * Sets paramMatcherGroup
      *
-     * @param \TencentAds\Model\ParamMatcherGroup[] $paramMatcherGroup paramMatcherGroup
+     * @param \TencentAds\Model\ParamMatcherGroup[]|mixed $paramMatcherGroup paramMatcherGroup
      *
      * @return $this
      */

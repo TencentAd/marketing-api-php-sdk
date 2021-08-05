@@ -284,7 +284,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets profileType
      *
-     * @param \TencentAds\Model\ProfileType $profileType profileType
+     * @param \TencentAds\Model\ProfileType|mixed $profileType profileType
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets profileId
      *
-     * @param int $profileId profileId
+     * @param int|mixed $profileId profileId
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObjectType|mixed $promotedObjectType promotedObjectType
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectId
      *
-     * @param string $promotedObjectId promotedObjectId
+     * @param string|mixed $promotedObjectId promotedObjectId
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets headImageId
      *
-     * @param string $headImageId headImageId
+     * @param string|mixed $headImageId headImageId
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets headImageUrl
      *
-     * @param string $headImageUrl headImageUrl
+     * @param string|mixed $headImageUrl headImageUrl
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets profileName
      *
-     * @param string $profileName profileName
+     * @param string|mixed $profileName profileName
      *
      * @return $this
      */
@@ -452,7 +452,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -476,7 +476,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -500,7 +500,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedTime
      *
-     * @param int $lastModifiedTime lastModifiedTime
+     * @param int|mixed $lastModifiedTime lastModifiedTime
      *
      * @return $this
      */
@@ -524,7 +524,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets profileUrl
      *
-     * @param string $profileUrl profileUrl
+     * @param string|mixed $profileUrl profileUrl
      *
      * @return $this
      */
@@ -548,7 +548,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets systemStatus
      *
-     * @param \TencentAds\Model\SysStatus $systemStatus systemStatus
+     * @param \TencentAds\Model\SysStatus|mixed $systemStatus systemStatus
      *
      * @return $this
      */

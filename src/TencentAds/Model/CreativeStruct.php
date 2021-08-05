@@ -230,7 +230,7 @@ class CreativeStruct implements ModelInterface, ArrayAccess
     /**
      * Sets deepLinkUrl
      *
-     * @param string $deepLinkUrl deepLinkUrl
+     * @param string|mixed $deepLinkUrl deepLinkUrl
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class CreativeStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adcreativeTemplateId
      *
-     * @param int $adcreativeTemplateId adcreativeTemplateId
+     * @param int|mixed $adcreativeTemplateId adcreativeTemplateId
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class CreativeStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adcreativeElements
      *
-     * @param \TencentAds\Model\AdcreativeCreativeElementsWithOptions $adcreativeElements adcreativeElements
+     * @param \TencentAds\Model\AdcreativeCreativeElementsWithOptions|mixed $adcreativeElements adcreativeElements
      *
      * @return $this
      */

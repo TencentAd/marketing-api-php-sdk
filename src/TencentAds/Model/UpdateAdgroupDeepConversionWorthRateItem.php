@@ -224,7 +224,7 @@ class UpdateAdgroupDeepConversionWorthRateItem implements ModelInterface, ArrayA
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class UpdateAdgroupDeepConversionWorthRateItem implements ModelInterface, ArrayA
     /**
      * Sets deepConversionWorthRate
      *
-     * @param double $deepConversionWorthRate deepConversionWorthRate
+     * @param double|mixed $deepConversionWorthRate deepConversionWorthRate
      *
      * @return $this
      */

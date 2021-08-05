@@ -242,7 +242,7 @@ class UnsupportBillingSpec implements ModelInterface, ArrayAccess
     /**
      * Sets siteSet
      *
-     * @param string[] $siteSet siteSet
+     * @param string[]|mixed $siteSet siteSet
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class UnsupportBillingSpec implements ModelInterface, ArrayAccess
     /**
      * Sets billingEvent
      *
-     * @param \TencentAds\Model\BillingEvent $billingEvent billingEvent
+     * @param \TencentAds\Model\BillingEvent|mixed $billingEvent billingEvent
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class UnsupportBillingSpec implements ModelInterface, ArrayAccess
     /**
      * Sets minPrice
      *
-     * @param int $minPrice minPrice
+     * @param int|mixed $minPrice minPrice
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class UnsupportBillingSpec implements ModelInterface, ArrayAccess
     /**
      * Sets maxPrice
      *
-     * @param int $maxPrice maxPrice
+     * @param int|mixed $maxPrice maxPrice
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class UnsupportBillingSpec implements ModelInterface, ArrayAccess
     /**
      * Sets unsupportType
      *
-     * @param \TencentAds\Model\UnsupportType $unsupportType unsupportType
+     * @param \TencentAds\Model\UnsupportType|mixed $unsupportType unsupportType
      *
      * @return $this
      */

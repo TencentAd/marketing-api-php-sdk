@@ -224,7 +224,7 @@ class AdcreativeElementEnumProperty implements ModelInterface, ArrayAccess
     /**
      * Sets default
      *
-     * @param string $default default
+     * @param string|mixed $default default
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class AdcreativeElementEnumProperty implements ModelInterface, ArrayAccess
     /**
      * Sets enumeration
      *
-     * @param \TencentAds\Model\AdcreativeElementEnumOption[] $enumeration enumeration
+     * @param \TencentAds\Model\AdcreativeElementEnumOption[]|mixed $enumeration enumeration
      *
      * @return $this
      */

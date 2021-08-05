@@ -223,7 +223,7 @@ class LocalEndadsmanuallyAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class LocalEndadsmanuallyAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */

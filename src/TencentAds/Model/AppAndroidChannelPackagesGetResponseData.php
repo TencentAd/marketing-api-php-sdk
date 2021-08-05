@@ -223,7 +223,7 @@ class AppAndroidChannelPackagesGetResponseData implements ModelInterface, ArrayA
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\ChannelPackageStruct[] $list list
+     * @param \TencentAds\Model\ChannelPackageStruct[]|mixed $list list
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class AppAndroidChannelPackagesGetResponseData implements ModelInterface, ArrayA
     /**
      * Sets pageInfo
      *
-     * @param \TencentAds\Model\Conf $pageInfo pageInfo
+     * @param \TencentAds\Model\Conf|mixed $pageInfo pageInfo
      *
      * @return $this
      */

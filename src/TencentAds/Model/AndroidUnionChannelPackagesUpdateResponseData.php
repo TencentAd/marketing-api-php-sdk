@@ -217,7 +217,7 @@ class AndroidUnionChannelPackagesUpdateResponseData implements ModelInterface, A
     /**
      * Sets taskId
      *
-     * @param int $taskId taskId
+     * @param int|mixed $taskId taskId
      *
      * @return $this
      */

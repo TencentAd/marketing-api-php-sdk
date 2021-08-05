@@ -224,7 +224,7 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets pageId
      *
-     * @param int $pageId pageId
+     * @param int|mixed $pageId pageId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets pageUrl
      *
-     * @param string $pageUrl pageUrl
+     * @param string|mixed $pageUrl pageUrl
      *
      * @return $this
      */

@@ -218,7 +218,7 @@ class AggregationMatcherGroup implements ModelInterface, ArrayAccess
     /**
      * Sets aggregationMatcher
      *
-     * @param \TencentAds\Model\AggregationMatcher[] $aggregationMatcher aggregationMatcher
+     * @param \TencentAds\Model\AggregationMatcher[]|mixed $aggregationMatcher aggregationMatcher
      *
      * @return $this
      */

@@ -224,7 +224,7 @@ class AdsUpdateConfiguredStatusUpdateConfiguredStatusStruct implements ModelInte
     /**
      * Sets adId
      *
-     * @param int $adId adId
+     * @param int|mixed $adId adId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class AdsUpdateConfiguredStatusUpdateConfiguredStatusStruct implements ModelInte
     /**
      * Sets configuredStatus
      *
-     * @param \TencentAds\Model\AdStatus $configuredStatus configuredStatus
+     * @param \TencentAds\Model\AdStatus|mixed $configuredStatus configuredStatus
      *
      * @return $this
      */

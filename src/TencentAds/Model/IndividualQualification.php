@@ -242,7 +242,7 @@ class IndividualQualification implements ModelInterface, ArrayAccess
     /**
      * Sets identificationUrl
      *
-     * @param string $identificationUrl identificationUrl
+     * @param string|mixed $identificationUrl identificationUrl
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class IndividualQualification implements ModelInterface, ArrayAccess
     /**
      * Sets identificationUrl2
      *
-     * @param string $identificationUrl2 identificationUrl2
+     * @param string|mixed $identificationUrl2 identificationUrl2
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class IndividualQualification implements ModelInterface, ArrayAccess
     /**
      * Sets photoUrl
      *
-     * @param string $photoUrl photoUrl
+     * @param string|mixed $photoUrl photoUrl
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class IndividualQualification implements ModelInterface, ArrayAccess
     /**
      * Sets identificationFrontImageId
      *
-     * @param string $identificationFrontImageId identificationFrontImageId
+     * @param string|mixed $identificationFrontImageId identificationFrontImageId
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class IndividualQualification implements ModelInterface, ArrayAccess
     /**
      * Sets identificationBackImageId
      *
-     * @param string $identificationBackImageId identificationBackImageId
+     * @param string|mixed $identificationBackImageId identificationBackImageId
      *
      * @return $this
      */

@@ -224,7 +224,7 @@ class AdcreativeVideoPopupButton implements ModelInterface, ArrayAccess
     /**
      * Sets videoPopupButtonText
      *
-     * @param string $videoPopupButtonText videoPopupButtonText
+     * @param string|mixed $videoPopupButtonText videoPopupButtonText
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class AdcreativeVideoPopupButton implements ModelInterface, ArrayAccess
     /**
      * Sets videoPopupButtonUrl
      *
-     * @param string $videoPopupButtonUrl videoPopupButtonUrl
+     * @param string|mixed $videoPopupButtonUrl videoPopupButtonUrl
      *
      * @return $this
      */

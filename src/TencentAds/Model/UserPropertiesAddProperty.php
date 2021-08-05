@@ -230,7 +230,7 @@ class UserPropertiesAddProperty implements ModelInterface, ArrayAccess
     /**
      * Sets outerUserId
      *
-     * @param string $outerUserId outerUserId
+     * @param string|mixed $outerUserId outerUserId
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class UserPropertiesAddProperty implements ModelInterface, ArrayAccess
     /**
      * Sets userId
      *
-     * @param \TencentAds\Model\PropertiesUserId $userId userId
+     * @param \TencentAds\Model\PropertiesUserId|mixed $userId userId
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class UserPropertiesAddProperty implements ModelInterface, ArrayAccess
     /**
      * Sets propertyData
      *
-     * @param string $propertyData propertyData
+     * @param string|mixed $propertyData propertyData
      *
      * @return $this
      */

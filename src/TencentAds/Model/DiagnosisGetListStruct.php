@@ -224,7 +224,7 @@ class DiagnosisGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class DiagnosisGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatDiagnosisResultSpec
      *
-     * @param \TencentAds\Model\WechatDiagnosisResultSpec $wechatDiagnosisResultSpec wechatDiagnosisResultSpec
+     * @param \TencentAds\Model\WechatDiagnosisResultSpec|mixed $wechatDiagnosisResultSpec wechatDiagnosisResultSpec
      *
      * @return $this
      */

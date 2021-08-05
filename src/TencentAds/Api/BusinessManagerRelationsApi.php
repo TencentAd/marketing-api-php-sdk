@@ -92,9 +92,9 @@ class BusinessManagerRelationsApi
      *
      * 查询商务管家账号下广告主信息
      *
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -111,9 +111,9 @@ class BusinessManagerRelationsApi
      *
      * 查询商务管家账号下广告主信息
      *
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -188,9 +188,9 @@ class BusinessManagerRelationsApi
      *
      * 查询商务管家账号下广告主信息
      *
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -210,9 +210,9 @@ class BusinessManagerRelationsApi
      *
      * 查询商务管家账号下广告主信息
      *
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -262,9 +262,9 @@ class BusinessManagerRelationsApi
     /**
      * Create request for operation 'businessManagerRelationsGet'
      *
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

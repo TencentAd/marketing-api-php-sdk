@@ -224,7 +224,7 @@ class DeviceBrandModel implements ModelInterface, ArrayAccess
     /**
      * Sets includedList
      *
-     * @param int[] $includedList includedList
+     * @param int[]|mixed $includedList includedList
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class DeviceBrandModel implements ModelInterface, ArrayAccess
     /**
      * Sets excludedList
      *
-     * @param int[] $excludedList excludedList
+     * @param int[]|mixed $excludedList excludedList
      *
      * @return $this
      */

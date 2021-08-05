@@ -254,7 +254,7 @@ class AggregationMatcher implements ModelInterface, ArrayAccess
     /**
      * Sets aggregationType
      *
-     * @param \TencentAds\Model\AggregationType $aggregationType aggregationType
+     * @param \TencentAds\Model\AggregationType|mixed $aggregationType aggregationType
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class AggregationMatcher implements ModelInterface, ArrayAccess
     /**
      * Sets countType
      *
-     * @param \TencentAds\Model\CountType $countType countType
+     * @param \TencentAds\Model\CountType|mixed $countType countType
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class AggregationMatcher implements ModelInterface, ArrayAccess
     /**
      * Sets paramName
      *
-     * @param string $paramName paramName
+     * @param string|mixed $paramName paramName
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class AggregationMatcher implements ModelInterface, ArrayAccess
     /**
      * Sets comparator
      *
-     * @param \TencentAds\Model\Comparator $comparator comparator
+     * @param \TencentAds\Model\Comparator|mixed $comparator comparator
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class AggregationMatcher implements ModelInterface, ArrayAccess
     /**
      * Sets comparisonValue
      *
-     * @param int $comparisonValue comparisonValue
+     * @param int|mixed $comparisonValue comparisonValue
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class AggregationMatcher implements ModelInterface, ArrayAccess
     /**
      * Sets comparisonMinValue
      *
-     * @param int $comparisonMinValue comparisonMinValue
+     * @param int|mixed $comparisonMinValue comparisonMinValue
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class AggregationMatcher implements ModelInterface, ArrayAccess
     /**
      * Sets comparisonMaxValue
      *
-     * @param int $comparisonMaxValue comparisonMaxValue
+     * @param int|mixed $comparisonMaxValue comparisonMaxValue
      *
      * @return $this
      */

@@ -229,7 +229,7 @@ class PromotedObjectsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObjectType|mixed $promotedObjectType promotedObjectType
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class PromotedObjectsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectId
      *
-     * @param string $promotedObjectId promotedObjectId
+     * @param string|mixed $promotedObjectId promotedObjectId
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class PromotedObjectsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */

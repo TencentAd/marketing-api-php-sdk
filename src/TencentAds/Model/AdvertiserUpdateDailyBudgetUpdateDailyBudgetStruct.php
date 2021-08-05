@@ -224,7 +224,7 @@ class AdvertiserUpdateDailyBudgetUpdateDailyBudgetStruct implements ModelInterfa
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class AdvertiserUpdateDailyBudgetUpdateDailyBudgetStruct implements ModelInterfa
     /**
      * Sets dailyBudget
      *
-     * @param int $dailyBudget dailyBudget
+     * @param int|mixed $dailyBudget dailyBudget
      *
      * @return $this
      */

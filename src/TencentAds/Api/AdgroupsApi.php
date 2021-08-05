@@ -92,7 +92,7 @@ class AdgroupsApi
      *
      * 创建广告组
      *
-     * @param  \TencentAds\Model\AdgroupsAddRequest $data data (required)
+     * @param  \TencentAds\Model\AdgroupsAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class AdgroupsApi
      *
      * 创建广告组
      *
-     * @param  \TencentAds\Model\AdgroupsAddRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class AdgroupsApi
      *
      * 创建广告组
      *
-     * @param  \TencentAds\Model\AdgroupsAddRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class AdgroupsApi
      *
      * 创建广告组
      *
-     * @param  \TencentAds\Model\AdgroupsAddRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class AdgroupsApi
     /**
      * Create request for operation 'adgroupsAdd'
      *
-     * @param  \TencentAds\Model\AdgroupsAddRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,7 +374,7 @@ class AdgroupsApi
      *
      * 删除广告组
      *
-     * @param  \TencentAds\Model\AdgroupsDeleteRequest $data data (required)
+     * @param  \TencentAds\Model\AdgroupsDeleteRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -391,7 +391,7 @@ class AdgroupsApi
      *
      * 删除广告组
      *
-     * @param  \TencentAds\Model\AdgroupsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsDeleteRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -466,7 +466,7 @@ class AdgroupsApi
      *
      * 删除广告组
      *
-     * @param  \TencentAds\Model\AdgroupsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -486,7 +486,7 @@ class AdgroupsApi
      *
      * 删除广告组
      *
-     * @param  \TencentAds\Model\AdgroupsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -536,7 +536,7 @@ class AdgroupsApi
     /**
      * Create request for operation 'adgroupsDelete'
      *
-     * @param  \TencentAds\Model\AdgroupsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -656,12 +656,12 @@ class AdgroupsApi
      *
      * 获取广告组
      *
-     * @param  int $accountId accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  bool $isDeleted isDeleted (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  bool|mixed $isDeleted isDeleted (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -678,12 +678,12 @@ class AdgroupsApi
      *
      * 获取广告组
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  bool $isDeleted (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  bool|mixed $isDeleted (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -758,12 +758,12 @@ class AdgroupsApi
      *
      * 获取广告组
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  bool $isDeleted (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  bool|mixed $isDeleted (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -783,12 +783,12 @@ class AdgroupsApi
      *
      * 获取广告组
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  bool $isDeleted (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  bool|mixed $isDeleted (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -838,12 +838,12 @@ class AdgroupsApi
     /**
      * Create request for operation 'adgroupsGet'
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  bool $isDeleted (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  bool|mixed $isDeleted (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -990,7 +990,7 @@ class AdgroupsApi
      *
      * 更新广告组
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateRequest $data data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1007,7 +1007,7 @@ class AdgroupsApi
      *
      * 更新广告组
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1082,7 +1082,7 @@ class AdgroupsApi
      *
      * 更新广告组
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1102,7 +1102,7 @@ class AdgroupsApi
      *
      * 更新广告组
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1152,7 +1152,7 @@ class AdgroupsApi
     /**
      * Create request for operation 'adgroupsUpdate'
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1272,7 +1272,7 @@ class AdgroupsApi
      *
      * 更新广告组出价
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateBidAmountRequest $data data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateBidAmountRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1289,7 +1289,7 @@ class AdgroupsApi
      *
      * 更新广告组出价
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateBidAmountRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateBidAmountRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1364,7 +1364,7 @@ class AdgroupsApi
      *
      * 更新广告组出价
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateBidAmountRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateBidAmountRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1384,7 +1384,7 @@ class AdgroupsApi
      *
      * 更新广告组出价
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateBidAmountRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateBidAmountRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1434,7 +1434,7 @@ class AdgroupsApi
     /**
      * Create request for operation 'adgroupsUpdateBidAmount'
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateBidAmountRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateBidAmountRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1554,7 +1554,7 @@ class AdgroupsApi
      *
      * 更新广告组状态
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateConfiguredStatusRequest $data data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateConfiguredStatusRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1571,7 +1571,7 @@ class AdgroupsApi
      *
      * 更新广告组状态
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateConfiguredStatusRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateConfiguredStatusRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1646,7 +1646,7 @@ class AdgroupsApi
      *
      * 更新广告组状态
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateConfiguredStatusRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateConfiguredStatusRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1666,7 +1666,7 @@ class AdgroupsApi
      *
      * 更新广告组状态
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateConfiguredStatusRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateConfiguredStatusRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1716,7 +1716,7 @@ class AdgroupsApi
     /**
      * Create request for operation 'adgroupsUpdateConfiguredStatus'
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateConfiguredStatusRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateConfiguredStatusRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1836,7 +1836,7 @@ class AdgroupsApi
      *
      * 更新广告组日限额信息
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateDailyBudgetRequest $data data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateDailyBudgetRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1853,7 +1853,7 @@ class AdgroupsApi
      *
      * 更新广告组日限额信息
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateDailyBudgetRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateDailyBudgetRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1928,7 +1928,7 @@ class AdgroupsApi
      *
      * 更新广告组日限额信息
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateDailyBudgetRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateDailyBudgetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1948,7 +1948,7 @@ class AdgroupsApi
      *
      * 更新广告组日限额信息
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateDailyBudgetRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateDailyBudgetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1998,7 +1998,7 @@ class AdgroupsApi
     /**
      * Create request for operation 'adgroupsUpdateDailyBudget'
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateDailyBudgetRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateDailyBudgetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2118,7 +2118,7 @@ class AdgroupsApi
      *
      * 更新广告组投放时间
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateDatetimeRequest $data data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateDatetimeRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2135,7 +2135,7 @@ class AdgroupsApi
      *
      * 更新广告组投放时间
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateDatetimeRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateDatetimeRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2210,7 +2210,7 @@ class AdgroupsApi
      *
      * 更新广告组投放时间
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateDatetimeRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateDatetimeRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2230,7 +2230,7 @@ class AdgroupsApi
      *
      * 更新广告组投放时间
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateDatetimeRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateDatetimeRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2280,7 +2280,7 @@ class AdgroupsApi
     /**
      * Create request for operation 'adgroupsUpdateDatetime'
      *
-     * @param  \TencentAds\Model\AdgroupsUpdateDatetimeRequest $data (required)
+     * @param  \TencentAds\Model\AdgroupsUpdateDatetimeRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

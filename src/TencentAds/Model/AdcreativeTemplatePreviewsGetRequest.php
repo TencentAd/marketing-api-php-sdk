@@ -241,7 +241,7 @@ class AdcreativeTemplatePreviewsGetRequest implements ModelInterface, ArrayAcces
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class AdcreativeTemplatePreviewsGetRequest implements ModelInterface, ArrayAcces
     /**
      * Sets adIdList
      *
-     * @param int[] $adIdList adIdList
+     * @param int[]|mixed $adIdList adIdList
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class AdcreativeTemplatePreviewsGetRequest implements ModelInterface, ArrayAcces
     /**
      * Sets adgroup
      *
-     * @param \TencentAds\Model\Adgroup $adgroup adgroup
+     * @param \TencentAds\Model\Adgroup|mixed $adgroup adgroup
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class AdcreativeTemplatePreviewsGetRequest implements ModelInterface, ArrayAcces
     /**
      * Sets adList
      *
-     * @param \TencentAds\Model\Ad[] $adList adList
+     * @param \TencentAds\Model\Ad[]|mixed $adList adList
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class AdcreativeTemplatePreviewsGetRequest implements ModelInterface, ArrayAcces
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */

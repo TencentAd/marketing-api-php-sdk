@@ -265,7 +265,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets taskName
      *
-     * @param string $taskName taskName
+     * @param string|mixed $taskName taskName
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets reportFields
      *
-     * @param string[] $reportFields reportFields
+     * @param string[]|mixed $reportFields reportFields
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets level
      *
-     * @param \TencentAds\Model\AsyncReportLevel $level level
+     * @param \TencentAds\Model\AsyncReportLevel|mixed $level level
      *
      * @return $this
      */
@@ -361,7 +361,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets filtering
      *
-     * @param \TencentAds\Model\AsyncReportsFilteringStruct[] $filtering filtering
+     * @param \TencentAds\Model\AsyncReportsFilteringStruct[]|mixed $filtering filtering
      *
      * @return $this
      */
@@ -385,7 +385,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets timeLine
      *
-     * @param \TencentAds\Model\TimeLine $timeLine timeLine
+     * @param \TencentAds\Model\TimeLine|mixed $timeLine timeLine
      *
      * @return $this
      */
@@ -409,7 +409,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets groupBy
      *
-     * @param string[] $groupBy groupBy
+     * @param string[]|mixed $groupBy groupBy
      *
      * @return $this
      */
@@ -433,7 +433,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets granularity
      *
-     * @param \TencentAds\Model\TimeGranularity $granularity granularity
+     * @param \TencentAds\Model\TimeGranularity|mixed $granularity granularity
      *
      * @return $this
      */
@@ -457,7 +457,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets date
      *
-     * @param string $date date
+     * @param string|mixed $date date
      *
      * @return $this
      */

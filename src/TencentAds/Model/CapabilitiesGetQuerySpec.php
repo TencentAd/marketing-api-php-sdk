@@ -224,7 +224,7 @@ class CapabilitiesGetQuerySpec implements ModelInterface, ArrayAccess
     /**
      * Sets wechatLinkAd
      *
-     * @param \TencentAds\Model\WechatLinkAd $wechatLinkAd wechatLinkAd
+     * @param \TencentAds\Model\WechatLinkAd|mixed $wechatLinkAd wechatLinkAd
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class CapabilitiesGetQuerySpec implements ModelInterface, ArrayAccess
     /**
      * Sets wechatOcpa
      *
-     * @param \TencentAds\Model\WechatOcpa $wechatOcpa wechatOcpa
+     * @param \TencentAds\Model\WechatOcpa|mixed $wechatOcpa wechatOcpa
      *
      * @return $this
      */

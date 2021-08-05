@@ -92,11 +92,11 @@ class LocalStoresSearchInfoApi
      *
      * 搜索门店
      *
-     * @param  int $accountId accountId (required)
-     * @param  string $keyWord keyWord (required)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string|mixed $keyWord keyWord (required)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -113,11 +113,11 @@ class LocalStoresSearchInfoApi
      *
      * 搜索门店
      *
-     * @param  int $accountId (required)
-     * @param  string $keyWord (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $keyWord (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -192,11 +192,11 @@ class LocalStoresSearchInfoApi
      *
      * 搜索门店
      *
-     * @param  int $accountId (required)
-     * @param  string $keyWord (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $keyWord (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -216,11 +216,11 @@ class LocalStoresSearchInfoApi
      *
      * 搜索门店
      *
-     * @param  int $accountId (required)
-     * @param  string $keyWord (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $keyWord (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -270,11 +270,11 @@ class LocalStoresSearchInfoApi
     /**
      * Create request for operation 'localStoresSearchInfoGet'
      *
-     * @param  int $accountId (required)
-     * @param  string $keyWord (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $keyWord (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

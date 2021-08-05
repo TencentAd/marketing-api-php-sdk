@@ -230,7 +230,7 @@ class BatchRequestsAddListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets httpCode
      *
-     * @param int $httpCode httpCode
+     * @param int|mixed $httpCode httpCode
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class BatchRequestsAddListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets headers
      *
-     * @param \TencentAds\Model\HeaderStruct[] $headers headers
+     * @param \TencentAds\Model\HeaderStruct[]|mixed $headers headers
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class BatchRequestsAddListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets body
      *
-     * @param string $body body
+     * @param string|mixed $body body
      *
      * @return $this
      */

@@ -92,7 +92,7 @@ class AndroidUnionChannelPackagesApi
      *
      * 添加广告渠道包
      *
-     * @param  \TencentAds\Model\AndroidUnionChannelPackagesAddRequest $data data (required)
+     * @param  \TencentAds\Model\AndroidUnionChannelPackagesAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class AndroidUnionChannelPackagesApi
      *
      * 添加广告渠道包
      *
-     * @param  \TencentAds\Model\AndroidUnionChannelPackagesAddRequest $data (required)
+     * @param  \TencentAds\Model\AndroidUnionChannelPackagesAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class AndroidUnionChannelPackagesApi
      *
      * 添加广告渠道包
      *
-     * @param  \TencentAds\Model\AndroidUnionChannelPackagesAddRequest $data (required)
+     * @param  \TencentAds\Model\AndroidUnionChannelPackagesAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class AndroidUnionChannelPackagesApi
      *
      * 添加广告渠道包
      *
-     * @param  \TencentAds\Model\AndroidUnionChannelPackagesAddRequest $data (required)
+     * @param  \TencentAds\Model\AndroidUnionChannelPackagesAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class AndroidUnionChannelPackagesApi
     /**
      * Create request for operation 'androidUnionChannelPackagesAdd'
      *
-     * @param  \TencentAds\Model\AndroidUnionChannelPackagesAddRequest $data (required)
+     * @param  \TencentAds\Model\AndroidUnionChannelPackagesAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,12 +374,12 @@ class AndroidUnionChannelPackagesApi
      *
      * 获取广告渠道包
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $androidUnionAppId androidUnionAppId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $androidUnionAppId androidUnionAppId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -396,12 +396,12 @@ class AndroidUnionChannelPackagesApi
      *
      * 获取广告渠道包
      *
-     * @param  int $accountId (required)
-     * @param  int $androidUnionAppId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $androidUnionAppId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -476,12 +476,12 @@ class AndroidUnionChannelPackagesApi
      *
      * 获取广告渠道包
      *
-     * @param  int $accountId (required)
-     * @param  int $androidUnionAppId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $androidUnionAppId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -501,12 +501,12 @@ class AndroidUnionChannelPackagesApi
      *
      * 获取广告渠道包
      *
-     * @param  int $accountId (required)
-     * @param  int $androidUnionAppId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $androidUnionAppId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -556,12 +556,12 @@ class AndroidUnionChannelPackagesApi
     /**
      * Create request for operation 'androidUnionChannelPackagesGet'
      *
-     * @param  int $accountId (required)
-     * @param  int $androidUnionAppId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $androidUnionAppId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -714,7 +714,7 @@ class AndroidUnionChannelPackagesApi
      *
      * 更新广告渠道包
      *
-     * @param  \TencentAds\Model\AndroidUnionChannelPackagesUpdateRequest $data data (required)
+     * @param  \TencentAds\Model\AndroidUnionChannelPackagesUpdateRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -731,7 +731,7 @@ class AndroidUnionChannelPackagesApi
      *
      * 更新广告渠道包
      *
-     * @param  \TencentAds\Model\AndroidUnionChannelPackagesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\AndroidUnionChannelPackagesUpdateRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -806,7 +806,7 @@ class AndroidUnionChannelPackagesApi
      *
      * 更新广告渠道包
      *
-     * @param  \TencentAds\Model\AndroidUnionChannelPackagesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\AndroidUnionChannelPackagesUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -826,7 +826,7 @@ class AndroidUnionChannelPackagesApi
      *
      * 更新广告渠道包
      *
-     * @param  \TencentAds\Model\AndroidUnionChannelPackagesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\AndroidUnionChannelPackagesUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -876,7 +876,7 @@ class AndroidUnionChannelPackagesApi
     /**
      * Create request for operation 'androidUnionChannelPackagesUpdate'
      *
-     * @param  \TencentAds\Model\AndroidUnionChannelPackagesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\AndroidUnionChannelPackagesUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

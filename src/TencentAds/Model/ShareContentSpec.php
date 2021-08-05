@@ -224,7 +224,7 @@ class ShareContentSpec implements ModelInterface, ArrayAccess
     /**
      * Sets shareTitle
      *
-     * @param string $shareTitle shareTitle
+     * @param string|mixed $shareTitle shareTitle
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class ShareContentSpec implements ModelInterface, ArrayAccess
     /**
      * Sets shareDescription
      *
-     * @param string $shareDescription shareDescription
+     * @param string|mixed $shareDescription shareDescription
      *
      * @return $this
      */

@@ -223,7 +223,7 @@ class ApiErrorStruct implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param string $type type
+     * @param string|mixed $type type
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class ApiErrorStruct implements ModelInterface, ArrayAccess
     /**
      * Sets commonParamExceptionSpec
      *
-     * @param \TencentAds\Model\CommonParamExceptionSpec $commonParamExceptionSpec commonParamExceptionSpec
+     * @param \TencentAds\Model\CommonParamExceptionSpec|mixed $commonParamExceptionSpec commonParamExceptionSpec
      *
      * @return $this
      */

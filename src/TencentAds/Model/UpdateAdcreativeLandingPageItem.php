@@ -224,7 +224,7 @@ class UpdateAdcreativeLandingPageItem implements ModelInterface, ArrayAccess
     /**
      * Sets adcreativeId
      *
-     * @param int $adcreativeId adcreativeId
+     * @param int|mixed $adcreativeId adcreativeId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class UpdateAdcreativeLandingPageItem implements ModelInterface, ArrayAccess
     /**
      * Sets adCreative
      *
-     * @param \TencentAds\Model\TaskAdcreative $adCreative adCreative
+     * @param \TencentAds\Model\TaskAdcreative|mixed $adCreative adCreative
      *
      * @return $this
      */

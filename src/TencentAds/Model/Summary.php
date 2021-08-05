@@ -284,7 +284,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Sets taskId
      *
-     * @param int $taskId taskId
+     * @param int|mixed $taskId taskId
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Sets taskName
      *
-     * @param string $taskName taskName
+     * @param string|mixed $taskName taskName
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Sets taskType
      *
-     * @param \TencentAds\Model\TaskType $taskType taskType
+     * @param \TencentAds\Model\TaskType|mixed $taskType taskType
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Sets taskScope
      *
-     * @param \TencentAds\Model\TaskScope $taskScope taskScope
+     * @param \TencentAds\Model\TaskScope|mixed $taskScope taskScope
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \TencentAds\Model\TaskStatus $status status
+     * @param \TencentAds\Model\TaskStatus|mixed $status status
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Sets resultStatus
      *
-     * @param \TencentAds\Model\TaskResultStatus $resultStatus resultStatus
+     * @param \TencentAds\Model\TaskResultStatus|mixed $resultStatus resultStatus
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -452,7 +452,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Sets endTime
      *
-     * @param int $endTime endTime
+     * @param int|mixed $endTime endTime
      *
      * @return $this
      */
@@ -476,7 +476,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Sets successCount
      *
-     * @param int $successCount successCount
+     * @param int|mixed $successCount successCount
      *
      * @return $this
      */
@@ -500,7 +500,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Sets failCount
      *
-     * @param int $failCount failCount
+     * @param int|mixed $failCount failCount
      *
      * @return $this
      */
@@ -524,7 +524,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Sets systemErrorCount
      *
-     * @param int $systemErrorCount systemErrorCount
+     * @param int|mixed $systemErrorCount systemErrorCount
      *
      * @return $this
      */
@@ -548,7 +548,7 @@ class Summary implements ModelInterface, ArrayAccess
     /**
      * Sets progress
      *
-     * @param int $progress progress
+     * @param int|mixed $progress progress
      *
      * @return $this
      */

@@ -224,7 +224,7 @@ class LookalikeSpec implements ModelInterface, ArrayAccess
     /**
      * Sets seedAudienceId
      *
-     * @param int $seedAudienceId seedAudienceId
+     * @param int|mixed $seedAudienceId seedAudienceId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class LookalikeSpec implements ModelInterface, ArrayAccess
     /**
      * Sets expandUserCount
      *
-     * @param int $expandUserCount expandUserCount
+     * @param int|mixed $expandUserCount expandUserCount
      *
      * @return $this
      */

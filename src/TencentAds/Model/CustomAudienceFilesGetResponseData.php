@@ -223,7 +223,7 @@ class CustomAudienceFilesGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\DataFile[] $list list
+     * @param \TencentAds\Model\DataFile[]|mixed $list list
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class CustomAudienceFilesGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets pageInfo
      *
-     * @param \TencentAds\Model\PageInfo $pageInfo pageInfo
+     * @param \TencentAds\Model\PageInfo|mixed $pageInfo pageInfo
      *
      * @return $this
      */

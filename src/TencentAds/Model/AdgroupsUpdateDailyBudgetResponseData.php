@@ -217,7 +217,7 @@ class AdgroupsUpdateDailyBudgetResponseData implements ModelInterface, ArrayAcce
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\AdgroupsUpdateDailyBudgetListStruct[] $list list
+     * @param \TencentAds\Model\AdgroupsUpdateDailyBudgetListStruct[]|mixed $list list
      *
      * @return $this
      */

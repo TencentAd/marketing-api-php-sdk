@@ -224,7 +224,7 @@ class QqBrowserMiniProgram implements ModelInterface, ArrayAccess
     /**
      * Sets packname
      *
-     * @param string $packname packname
+     * @param string|mixed $packname packname
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class QqBrowserMiniProgram implements ModelInterface, ArrayAccess
     /**
      * Sets icon
      *
-     * @param string $icon icon
+     * @param string|mixed $icon icon
      *
      * @return $this
      */

@@ -332,7 +332,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productOuterId
      *
-     * @param string $productOuterId productOuterId
+     * @param string|mixed $productOuterId productOuterId
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productName
      *
-     * @param string $productName productName
+     * @param string|mixed $productName productName
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productImageUrl
      *
-     * @param string $productImageUrl productImageUrl
+     * @param string|mixed $productImageUrl productImageUrl
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productShortName
      *
-     * @param string $productShortName productShortName
+     * @param string|mixed $productShortName productShortName
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets price
      *
-     * @param double $price price
+     * @param double|mixed $price price
      *
      * @return $this
      */
@@ -452,7 +452,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstCategoryId
      *
-     * @param int $firstCategoryId firstCategoryId
+     * @param int|mixed $firstCategoryId firstCategoryId
      *
      * @return $this
      */
@@ -476,7 +476,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstCategoryName
      *
-     * @param string $firstCategoryName firstCategoryName
+     * @param string|mixed $firstCategoryName firstCategoryName
      *
      * @return $this
      */
@@ -500,7 +500,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets secondCategoryId
      *
-     * @param int $secondCategoryId secondCategoryId
+     * @param int|mixed $secondCategoryId secondCategoryId
      *
      * @return $this
      */
@@ -524,7 +524,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets secondCategoryName
      *
-     * @param string $secondCategoryName secondCategoryName
+     * @param string|mixed $secondCategoryName secondCategoryName
      *
      * @return $this
      */
@@ -548,7 +548,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets thirdCategoryId
      *
-     * @param int $thirdCategoryId thirdCategoryId
+     * @param int|mixed $thirdCategoryId thirdCategoryId
      *
      * @return $this
      */
@@ -572,7 +572,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets thirdCategoryName
      *
-     * @param string $thirdCategoryName thirdCategoryName
+     * @param string|mixed $thirdCategoryName thirdCategoryName
      *
      * @return $this
      */
@@ -596,7 +596,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets fourthCategoryId
      *
-     * @param int $fourthCategoryId fourthCategoryId
+     * @param int|mixed $fourthCategoryId fourthCategoryId
      *
      * @return $this
      */
@@ -620,7 +620,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets fourthCategoryName
      *
-     * @param string $fourthCategoryName fourthCategoryName
+     * @param string|mixed $fourthCategoryName fourthCategoryName
      *
      * @return $this
      */
@@ -644,7 +644,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets brandName
      *
-     * @param string $brandName brandName
+     * @param string|mixed $brandName brandName
      *
      * @return $this
      */
@@ -668,7 +668,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets brandId
      *
-     * @param int $brandId brandId
+     * @param int|mixed $brandId brandId
      *
      * @return $this
      */
@@ -692,7 +692,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -716,7 +716,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets customData
      *
-     * @param string $customData customData
+     * @param string|mixed $customData customData
      *
      * @return $this
      */
@@ -740,7 +740,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets isVideo
      *
-     * @param bool $isVideo isVideo
+     * @param bool|mixed $isVideo isVideo
      *
      * @return $this
      */
@@ -764,7 +764,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets dataSource
      *
-     * @param string $dataSource dataSource
+     * @param string|mixed $dataSource dataSource
      *
      * @return $this
      */
@@ -788,7 +788,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productSelectScore
      *
-     * @param double $productSelectScore productSelectScore
+     * @param double|mixed $productSelectScore productSelectScore
      *
      * @return $this
      */

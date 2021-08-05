@@ -230,7 +230,7 @@ class SuccessLeadsIdListRespStruct implements ModelInterface, ArrayAccess
     /**
      * Sets index
      *
-     * @param int $index index
+     * @param int|mixed $index index
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class SuccessLeadsIdListRespStruct implements ModelInterface, ArrayAccess
     /**
      * Sets outerLeadsId
      *
-     * @param string $outerLeadsId outerLeadsId
+     * @param string|mixed $outerLeadsId outerLeadsId
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class SuccessLeadsIdListRespStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsId
      *
-     * @param int $leadsId leadsId
+     * @param int|mixed $leadsId leadsId
      *
      * @return $this
      */

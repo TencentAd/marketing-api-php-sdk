@@ -92,13 +92,13 @@ class OauthApi
      *
      * 获取Authorization Code
      *
-     * @param  int $clientId clientId (required)
-     * @param  string $redirectUri redirectUri (required)
-     * @param  string $state state (optional)
-     * @param  string $scope scope (optional)
-     * @param  string $accountType accountType (optional)
-     * @param  int $accountDisplayNumber accountDisplayNumber (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $clientId clientId (required)
+     * @param  string|mixed $redirectUri redirectUri (required)
+     * @param  string|mixed $state state (optional)
+     * @param  string|mixed $scope scope (optional)
+     * @param  string|mixed $accountType accountType (optional)
+     * @param  int|mixed $accountDisplayNumber accountDisplayNumber (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -115,13 +115,13 @@ class OauthApi
      *
      * 获取Authorization Code
      *
-     * @param  int $clientId (required)
-     * @param  string $redirectUri (required)
-     * @param  string $state (optional)
-     * @param  string $scope (optional)
-     * @param  string $accountType (optional)
-     * @param  int $accountDisplayNumber (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $clientId (required)
+     * @param  string|mixed $redirectUri (required)
+     * @param  string|mixed $state (optional)
+     * @param  string|mixed $scope (optional)
+     * @param  string|mixed $accountType (optional)
+     * @param  int|mixed $accountDisplayNumber (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -196,13 +196,13 @@ class OauthApi
      *
      * 获取Authorization Code
      *
-     * @param  int $clientId (required)
-     * @param  string $redirectUri (required)
-     * @param  string $state (optional)
-     * @param  string $scope (optional)
-     * @param  string $accountType (optional)
-     * @param  int $accountDisplayNumber (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $clientId (required)
+     * @param  string|mixed $redirectUri (required)
+     * @param  string|mixed $state (optional)
+     * @param  string|mixed $scope (optional)
+     * @param  string|mixed $accountType (optional)
+     * @param  int|mixed $accountDisplayNumber (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -222,13 +222,13 @@ class OauthApi
      *
      * 获取Authorization Code
      *
-     * @param  int $clientId (required)
-     * @param  string $redirectUri (required)
-     * @param  string $state (optional)
-     * @param  string $scope (optional)
-     * @param  string $accountType (optional)
-     * @param  int $accountDisplayNumber (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $clientId (required)
+     * @param  string|mixed $redirectUri (required)
+     * @param  string|mixed $state (optional)
+     * @param  string|mixed $scope (optional)
+     * @param  string|mixed $accountType (optional)
+     * @param  int|mixed $accountDisplayNumber (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -278,13 +278,13 @@ class OauthApi
     /**
      * Create request for operation 'oauthAuthorize'
      *
-     * @param  int $clientId (required)
-     * @param  string $redirectUri (required)
-     * @param  string $state (optional)
-     * @param  string $scope (optional)
-     * @param  string $accountType (optional)
-     * @param  int $accountDisplayNumber (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $clientId (required)
+     * @param  string|mixed $redirectUri (required)
+     * @param  string|mixed $state (optional)
+     * @param  string|mixed $scope (optional)
+     * @param  string|mixed $accountType (optional)
+     * @param  int|mixed $accountDisplayNumber (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -423,12 +423,12 @@ class OauthApi
      *
      * 通过Authorization Code获取Access Token或刷新Access Token
      *
-     * @param  int $clientId clientId (required)
-     * @param  string $clientSecret clientSecret (required)
-     * @param  string $grantType grantType (required)
-     * @param  string $authorizationCode authorizationCode (optional)
-     * @param  string $refreshToken refreshToken (optional)
-     * @param  string $redirectUri 应用回调地址，当 grant_type&#x3D;authorization_code时，redirect_uri 为必传参数，仅支持 http 和 https，不支持指定端口号，且传入的地址需要与获取authorization_code时，传入的回调地址保持一致 (optional)
+     * @param  int|mixed $clientId clientId (required)
+     * @param  string|mixed $clientSecret clientSecret (required)
+     * @param  string|mixed $grantType grantType (required)
+     * @param  string|mixed $authorizationCode authorizationCode (optional)
+     * @param  string|mixed $refreshToken refreshToken (optional)
+     * @param  string|mixed $redirectUri 应用回调地址，当 grant_type&#x3D;authorization_code时，redirect_uri 为必传参数，仅支持 http 和 https，不支持指定端口号，且传入的地址需要与获取authorization_code时，传入的回调地址保持一致 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -445,12 +445,12 @@ class OauthApi
      *
      * 通过Authorization Code获取Access Token或刷新Access Token
      *
-     * @param  int $clientId (required)
-     * @param  string $clientSecret (required)
-     * @param  string $grantType (required)
-     * @param  string $authorizationCode (optional)
-     * @param  string $refreshToken (optional)
-     * @param  string $redirectUri 应用回调地址，当 grant_type&#x3D;authorization_code时，redirect_uri 为必传参数，仅支持 http 和 https，不支持指定端口号，且传入的地址需要与获取authorization_code时，传入的回调地址保持一致 (optional)
+     * @param  int|mixed $clientId (required)
+     * @param  string|mixed $clientSecret (required)
+     * @param  string|mixed $grantType (required)
+     * @param  string|mixed $authorizationCode (optional)
+     * @param  string|mixed $refreshToken (optional)
+     * @param  string|mixed $redirectUri 应用回调地址，当 grant_type&#x3D;authorization_code时，redirect_uri 为必传参数，仅支持 http 和 https，不支持指定端口号，且传入的地址需要与获取authorization_code时，传入的回调地址保持一致 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -525,12 +525,12 @@ class OauthApi
      *
      * 通过Authorization Code获取Access Token或刷新Access Token
      *
-     * @param  int $clientId (required)
-     * @param  string $clientSecret (required)
-     * @param  string $grantType (required)
-     * @param  string $authorizationCode (optional)
-     * @param  string $refreshToken (optional)
-     * @param  string $redirectUri 应用回调地址，当 grant_type&#x3D;authorization_code时，redirect_uri 为必传参数，仅支持 http 和 https，不支持指定端口号，且传入的地址需要与获取authorization_code时，传入的回调地址保持一致 (optional)
+     * @param  int|mixed $clientId (required)
+     * @param  string|mixed $clientSecret (required)
+     * @param  string|mixed $grantType (required)
+     * @param  string|mixed $authorizationCode (optional)
+     * @param  string|mixed $refreshToken (optional)
+     * @param  string|mixed $redirectUri 应用回调地址，当 grant_type&#x3D;authorization_code时，redirect_uri 为必传参数，仅支持 http 和 https，不支持指定端口号，且传入的地址需要与获取authorization_code时，传入的回调地址保持一致 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -550,12 +550,12 @@ class OauthApi
      *
      * 通过Authorization Code获取Access Token或刷新Access Token
      *
-     * @param  int $clientId (required)
-     * @param  string $clientSecret (required)
-     * @param  string $grantType (required)
-     * @param  string $authorizationCode (optional)
-     * @param  string $refreshToken (optional)
-     * @param  string $redirectUri 应用回调地址，当 grant_type&#x3D;authorization_code时，redirect_uri 为必传参数，仅支持 http 和 https，不支持指定端口号，且传入的地址需要与获取authorization_code时，传入的回调地址保持一致 (optional)
+     * @param  int|mixed $clientId (required)
+     * @param  string|mixed $clientSecret (required)
+     * @param  string|mixed $grantType (required)
+     * @param  string|mixed $authorizationCode (optional)
+     * @param  string|mixed $refreshToken (optional)
+     * @param  string|mixed $redirectUri 应用回调地址，当 grant_type&#x3D;authorization_code时，redirect_uri 为必传参数，仅支持 http 和 https，不支持指定端口号，且传入的地址需要与获取authorization_code时，传入的回调地址保持一致 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -605,12 +605,12 @@ class OauthApi
     /**
      * Create request for operation 'oauthToken'
      *
-     * @param  int $clientId (required)
-     * @param  string $clientSecret (required)
-     * @param  string $grantType (required)
-     * @param  string $authorizationCode (optional)
-     * @param  string $refreshToken (optional)
-     * @param  string $redirectUri 应用回调地址，当 grant_type&#x3D;authorization_code时，redirect_uri 为必传参数，仅支持 http 和 https，不支持指定端口号，且传入的地址需要与获取authorization_code时，传入的回调地址保持一致 (optional)
+     * @param  int|mixed $clientId (required)
+     * @param  string|mixed $clientSecret (required)
+     * @param  string|mixed $grantType (required)
+     * @param  string|mixed $authorizationCode (optional)
+     * @param  string|mixed $refreshToken (optional)
+     * @param  string|mixed $redirectUri 应用回调地址，当 grant_type&#x3D;authorization_code时，redirect_uri 为必传参数，仅支持 http 和 https，不支持指定端口号，且传入的地址需要与获取authorization_code时，传入的回调地址保持一致 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

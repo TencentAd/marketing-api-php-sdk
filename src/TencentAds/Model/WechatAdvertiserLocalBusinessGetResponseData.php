@@ -301,7 +301,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Sets headImageUrl
      *
-     * @param string $headImageUrl headImageUrl
+     * @param string|mixed $headImageUrl headImageUrl
      *
      * @return $this
      */
@@ -325,7 +325,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Sets name
      *
-     * @param string $name name
+     * @param string|mixed $name name
      *
      * @return $this
      */
@@ -349,7 +349,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -373,7 +373,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Sets contactPerson
      *
-     * @param string $contactPerson contactPerson
+     * @param string|mixed $contactPerson contactPerson
      *
      * @return $this
      */
@@ -397,7 +397,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Sets contactPersonMobile
      *
-     * @param string $contactPersonMobile contactPersonMobile
+     * @param string|mixed $contactPersonMobile contactPersonMobile
      *
      * @return $this
      */
@@ -421,7 +421,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Sets contactPersonCardId
      *
-     * @param string $contactPersonCardId contactPersonCardId
+     * @param string|mixed $contactPersonCardId contactPersonCardId
      *
      * @return $this
      */
@@ -445,7 +445,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Sets contactPersonTele
      *
-     * @param string $contactPersonTele contactPersonTele
+     * @param string|mixed $contactPersonTele contactPersonTele
      *
      * @return $this
      */
@@ -469,7 +469,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Sets corporation
      *
-     * @param string $corporation corporation
+     * @param string|mixed $corporation corporation
      *
      * @return $this
      */
@@ -493,7 +493,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Sets corporationLicence
      *
-     * @param string $corporationLicence corporationLicence
+     * @param string|mixed $corporationLicence corporationLicence
      *
      * @return $this
      */
@@ -517,7 +517,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Sets businessContent
      *
-     * @param string $businessContent businessContent
+     * @param string|mixed $businessContent businessContent
      *
      * @return $this
      */
@@ -541,7 +541,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Sets industryId
      *
-     * @param int $industryId industryId
+     * @param int|mixed $industryId industryId
      *
      * @return $this
      */
@@ -565,7 +565,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -589,7 +589,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Sets businessId
      *
-     * @param string $businessId businessId
+     * @param string|mixed $businessId businessId
      *
      * @return $this
      */
@@ -613,7 +613,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Sets rejectMessage
      *
-     * @param string $rejectMessage rejectMessage
+     * @param string|mixed $rejectMessage rejectMessage
      *
      * @return $this
      */
@@ -637,7 +637,7 @@ class WechatAdvertiserLocalBusinessGetResponseData implements ModelInterface, Ar
     /**
      * Sets reviewStatus
      *
-     * @param \TencentAds\Model\WechatLocalBusinessReviewStatus $reviewStatus reviewStatus
+     * @param \TencentAds\Model\WechatLocalBusinessReviewStatus|mixed $reviewStatus reviewStatus
      *
      * @return $this
      */

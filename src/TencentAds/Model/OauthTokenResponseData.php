@@ -241,7 +241,7 @@ class OauthTokenResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets authorizerInfo
      *
-     * @param \TencentAds\Model\AuthorizerStruct $authorizerInfo authorizerInfo
+     * @param \TencentAds\Model\AuthorizerStruct|mixed $authorizerInfo authorizerInfo
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class OauthTokenResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets accessToken
      *
-     * @param string $accessToken accessToken
+     * @param string|mixed $accessToken accessToken
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class OauthTokenResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets refreshToken
      *
-     * @param string $refreshToken refreshToken
+     * @param string|mixed $refreshToken refreshToken
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class OauthTokenResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets accessTokenExpiresIn
      *
-     * @param int $accessTokenExpiresIn accessTokenExpiresIn
+     * @param int|mixed $accessTokenExpiresIn accessTokenExpiresIn
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class OauthTokenResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets refreshTokenExpiresIn
      *
-     * @param int $refreshTokenExpiresIn refreshTokenExpiresIn
+     * @param int|mixed $refreshTokenExpiresIn refreshTokenExpiresIn
      *
      * @return $this
      */

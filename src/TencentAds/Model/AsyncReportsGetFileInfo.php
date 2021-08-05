@@ -224,7 +224,7 @@ class AsyncReportsGetFileInfo implements ModelInterface, ArrayAccess
     /**
      * Sets fileId
      *
-     * @param int $fileId fileId
+     * @param int|mixed $fileId fileId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class AsyncReportsGetFileInfo implements ModelInterface, ArrayAccess
     /**
      * Sets md5
      *
-     * @param string $md5 md5
+     * @param string|mixed $md5 md5
      *
      * @return $this
      */

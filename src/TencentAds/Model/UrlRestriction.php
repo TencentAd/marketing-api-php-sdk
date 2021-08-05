@@ -218,7 +218,7 @@ class UrlRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets urlPattern
      *
-     * @param string $urlPattern urlPattern
+     * @param string|mixed $urlPattern urlPattern
      *
      * @return $this
      */

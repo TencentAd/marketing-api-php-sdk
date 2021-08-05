@@ -92,7 +92,7 @@ class BatchOperationApi
      *
      * 创建批量操作(待废弃)
      *
-     * @param  \TencentAds\Model\BatchOperationAddRequest $data data (required)
+     * @param  \TencentAds\Model\BatchOperationAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class BatchOperationApi
      *
      * 创建批量操作(待废弃)
      *
-     * @param  \TencentAds\Model\BatchOperationAddRequest $data (required)
+     * @param  \TencentAds\Model\BatchOperationAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class BatchOperationApi
      *
      * 创建批量操作(待废弃)
      *
-     * @param  \TencentAds\Model\BatchOperationAddRequest $data (required)
+     * @param  \TencentAds\Model\BatchOperationAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class BatchOperationApi
      *
      * 创建批量操作(待废弃)
      *
-     * @param  \TencentAds\Model\BatchOperationAddRequest $data (required)
+     * @param  \TencentAds\Model\BatchOperationAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class BatchOperationApi
     /**
      * Create request for operation 'batchOperationAdd'
      *
-     * @param  \TencentAds\Model\BatchOperationAddRequest $data (required)
+     * @param  \TencentAds\Model\BatchOperationAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

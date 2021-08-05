@@ -230,7 +230,7 @@ class RangeDistribution implements ModelInterface, ArrayAccess
     /**
      * Sets dimensionValue
      *
-     * @param string $dimensionValue dimensionValue
+     * @param string|mixed $dimensionValue dimensionValue
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class RangeDistribution implements ModelInterface, ArrayAccess
     /**
      * Sets percentage
      *
-     * @param int $percentage percentage
+     * @param int|mixed $percentage percentage
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class RangeDistribution implements ModelInterface, ArrayAccess
     /**
      * Sets tgi
      *
-     * @param double $tgi tgi
+     * @param double|mixed $tgi tgi
      *
      * @return $this
      */

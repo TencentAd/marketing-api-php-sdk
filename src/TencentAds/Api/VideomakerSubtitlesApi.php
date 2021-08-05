@@ -92,11 +92,11 @@ class VideomakerSubtitlesApi
      *
      * 创建视频加字幕任务
      *
-     * @param  int $accountId accountId (required)
-     * @param  string $videoId videoId (optional)
-     * @param  \SplFileObject $videoFile videoFile (optional)
-     * @param  string $signature signature (optional)
-     * @param  bool $onlySubtitleFile onlySubtitleFile (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string|mixed $videoId videoId (optional)
+     * @param  \SplFileObject|mixed $videoFile videoFile (optional)
+     * @param  string|mixed $signature signature (optional)
+     * @param  bool|mixed $onlySubtitleFile onlySubtitleFile (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -113,11 +113,11 @@ class VideomakerSubtitlesApi
      *
      * 创建视频加字幕任务
      *
-     * @param  int $accountId (required)
-     * @param  string $videoId (optional)
-     * @param  \SplFileObject $videoFile (optional)
-     * @param  string $signature (optional)
-     * @param  bool $onlySubtitleFile (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $videoId (optional)
+     * @param  \SplFileObject|mixed $videoFile (optional)
+     * @param  string|mixed $signature (optional)
+     * @param  bool|mixed $onlySubtitleFile (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -192,11 +192,11 @@ class VideomakerSubtitlesApi
      *
      * 创建视频加字幕任务
      *
-     * @param  int $accountId (required)
-     * @param  string $videoId (optional)
-     * @param  \SplFileObject $videoFile (optional)
-     * @param  string $signature (optional)
-     * @param  bool $onlySubtitleFile (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $videoId (optional)
+     * @param  \SplFileObject|mixed $videoFile (optional)
+     * @param  string|mixed $signature (optional)
+     * @param  bool|mixed $onlySubtitleFile (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -216,11 +216,11 @@ class VideomakerSubtitlesApi
      *
      * 创建视频加字幕任务
      *
-     * @param  int $accountId (required)
-     * @param  string $videoId (optional)
-     * @param  \SplFileObject $videoFile (optional)
-     * @param  string $signature (optional)
-     * @param  bool $onlySubtitleFile (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $videoId (optional)
+     * @param  \SplFileObject|mixed $videoFile (optional)
+     * @param  string|mixed $signature (optional)
+     * @param  bool|mixed $onlySubtitleFile (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -270,11 +270,11 @@ class VideomakerSubtitlesApi
     /**
      * Create request for operation 'videomakerSubtitlesAdd'
      *
-     * @param  int $accountId (required)
-     * @param  string $videoId (optional)
-     * @param  \SplFileObject $videoFile (optional)
-     * @param  string $signature (optional)
-     * @param  bool $onlySubtitleFile (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $videoId (optional)
+     * @param  \SplFileObject|mixed $videoFile (optional)
+     * @param  string|mixed $signature (optional)
+     * @param  bool|mixed $onlySubtitleFile (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

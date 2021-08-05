@@ -224,7 +224,7 @@ class AdcreativeElementEnumOption implements ModelInterface, ArrayAccess
     /**
      * Sets value
      *
-     * @param string $value value
+     * @param string|mixed $value value
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class AdcreativeElementEnumOption implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */

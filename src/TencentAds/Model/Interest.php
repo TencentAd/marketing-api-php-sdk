@@ -230,7 +230,7 @@ class Interest implements ModelInterface, ArrayAccess
     /**
      * Sets targetingTags
      *
-     * @param string[] $targetingTags targetingTags
+     * @param string[]|mixed $targetingTags targetingTags
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class Interest implements ModelInterface, ArrayAccess
     /**
      * Sets categoryIdList
      *
-     * @param int[] $categoryIdList categoryIdList
+     * @param int[]|mixed $categoryIdList categoryIdList
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class Interest implements ModelInterface, ArrayAccess
     /**
      * Sets keywordList
      *
-     * @param string[] $keywordList keywordList
+     * @param string[]|mixed $keywordList keywordList
      *
      * @return $this
      */

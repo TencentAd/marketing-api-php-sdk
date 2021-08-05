@@ -260,7 +260,7 @@ class PromotedObjectAppAndroidSpec implements ModelInterface, ArrayAccess
     /**
      * Sets packname
      *
-     * @param string $packname packname
+     * @param string|mixed $packname packname
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class PromotedObjectAppAndroidSpec implements ModelInterface, ArrayAccess
     /**
      * Sets version
      *
-     * @param string $version version
+     * @param string|mixed $version version
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class PromotedObjectAppAndroidSpec implements ModelInterface, ArrayAccess
     /**
      * Sets icon
      *
-     * @param string $icon icon
+     * @param string|mixed $icon icon
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class PromotedObjectAppAndroidSpec implements ModelInterface, ArrayAccess
     /**
      * Sets averageRating
      *
-     * @param string $averageRating averageRating
+     * @param string|mixed $averageRating averageRating
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class PromotedObjectAppAndroidSpec implements ModelInterface, ArrayAccess
     /**
      * Sets packageSize
      *
-     * @param string $packageSize packageSize
+     * @param string|mixed $packageSize packageSize
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class PromotedObjectAppAndroidSpec implements ModelInterface, ArrayAccess
     /**
      * Sets genres
      *
-     * @param string[] $genres genres
+     * @param string[]|mixed $genres genres
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class PromotedObjectAppAndroidSpec implements ModelInterface, ArrayAccess
     /**
      * Sets packageDownloadUrl
      *
-     * @param string $packageDownloadUrl packageDownloadUrl
+     * @param string|mixed $packageDownloadUrl packageDownloadUrl
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class PromotedObjectAppAndroidSpec implements ModelInterface, ArrayAccess
     /**
      * Sets channelPackageSpec
      *
-     * @param \TencentAds\Model\ChannelPackageSpecStruct[] $channelPackageSpec channelPackageSpec
+     * @param \TencentAds\Model\ChannelPackageSpecStruct[]|mixed $channelPackageSpec channelPackageSpec
      *
      * @return $this
      */

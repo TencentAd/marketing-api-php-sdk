@@ -224,7 +224,7 @@ class ExposureTargetingLabelContributionStruct implements ModelInterface, ArrayA
     /**
      * Sets locard
      *
-     * @param \TencentAds\Model\LabelContributionListItem[] $locard locard
+     * @param \TencentAds\Model\LabelContributionListItem[]|mixed $locard locard
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class ExposureTargetingLabelContributionStruct implements ModelInterface, ArrayA
     /**
      * Sets audience
      *
-     * @param \TencentAds\Model\LabelContributionListItem[] $audience audience
+     * @param \TencentAds\Model\LabelContributionListItem[]|mixed $audience audience
      *
      * @return $this
      */

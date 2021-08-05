@@ -242,7 +242,7 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets labelCategory
      *
-     * @param string $labelCategory labelCategory
+     * @param string|mixed $labelCategory labelCategory
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets label
      *
-     * @param string[] $label label
+     * @param string[]|mixed $label label
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets icon
      *
-     * @param \TencentAds\Model\LabelIconItem[] $icon icon
+     * @param \TencentAds\Model\LabelIconItem[]|mixed $icon icon
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets labelType
      *
-     * @param \TencentAds\Model\LabelType $labelType labelType
+     * @param \TencentAds\Model\LabelType|mixed $labelType labelType
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets labelTypeName
      *
-     * @param string $labelTypeName labelTypeName
+     * @param string|mixed $labelTypeName labelTypeName
      *
      * @return $this
      */

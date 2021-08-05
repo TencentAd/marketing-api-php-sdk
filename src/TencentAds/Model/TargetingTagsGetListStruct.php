@@ -248,7 +248,7 @@ class TargetingTagsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets id
      *
-     * @param int $id id
+     * @param int|mixed $id id
      *
      * @return $this
      */
@@ -272,7 +272,7 @@ class TargetingTagsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param string $name name
+     * @param string|mixed $name name
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class TargetingTagsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets parentId
      *
-     * @param int $parentId parentId
+     * @param int|mixed $parentId parentId
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class TargetingTagsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets parentName
      *
-     * @param string $parentName parentName
+     * @param string|mixed $parentName parentName
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class TargetingTagsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cityLevel
      *
-     * @param \TencentAds\Model\CityLevel $cityLevel cityLevel
+     * @param \TencentAds\Model\CityLevel|mixed $cityLevel cityLevel
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class TargetingTagsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets tagClass
      *
-     * @param \TencentAds\Model\TagClass $tagClass tagClass
+     * @param \TencentAds\Model\TagClass|mixed $tagClass tagClass
      *
      * @return $this
      */

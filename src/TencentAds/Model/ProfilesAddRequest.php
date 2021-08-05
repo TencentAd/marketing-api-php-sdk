@@ -253,7 +253,7 @@ class ProfilesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class ProfilesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObjectType|mixed $promotedObjectType promotedObjectType
      *
      * @return $this
      */
@@ -301,7 +301,7 @@ class ProfilesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectId
      *
-     * @param string $promotedObjectId promotedObjectId
+     * @param string|mixed $promotedObjectId promotedObjectId
      *
      * @return $this
      */
@@ -325,7 +325,7 @@ class ProfilesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets profileType
      *
-     * @param \TencentAds\Model\ProfileType $profileType profileType
+     * @param \TencentAds\Model\ProfileType|mixed $profileType profileType
      *
      * @return $this
      */
@@ -349,7 +349,7 @@ class ProfilesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets headImageId
      *
-     * @param string $headImageId headImageId
+     * @param string|mixed $headImageId headImageId
      *
      * @return $this
      */
@@ -373,7 +373,7 @@ class ProfilesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets profileName
      *
-     * @param string $profileName profileName
+     * @param string|mixed $profileName profileName
      *
      * @return $this
      */
@@ -397,7 +397,7 @@ class ProfilesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */

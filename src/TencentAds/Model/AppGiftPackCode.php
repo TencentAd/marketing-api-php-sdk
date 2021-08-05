@@ -224,7 +224,7 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param string $code code
+     * @param string|mixed $code code
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
     /**
      * Sets tips
      *
-     * @param string $tips tips
+     * @param string|mixed $tips tips
      *
      * @return $this
      */

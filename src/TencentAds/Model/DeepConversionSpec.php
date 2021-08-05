@@ -230,7 +230,7 @@ class DeepConversionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets deepConversionType
      *
-     * @param \TencentAds\Model\DeepConversionType $deepConversionType deepConversionType
+     * @param \TencentAds\Model\DeepConversionType|mixed $deepConversionType deepConversionType
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class DeepConversionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets deepConversionBehaviorSpec
      *
-     * @param \TencentAds\Model\DeepConversionBehaviorSpec $deepConversionBehaviorSpec deepConversionBehaviorSpec
+     * @param \TencentAds\Model\DeepConversionBehaviorSpec|mixed $deepConversionBehaviorSpec deepConversionBehaviorSpec
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class DeepConversionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets deepConversionWorthSpec
      *
-     * @param \TencentAds\Model\DeepConversionWorthSpec $deepConversionWorthSpec deepConversionWorthSpec
+     * @param \TencentAds\Model\DeepConversionWorthSpec|mixed $deepConversionWorthSpec deepConversionWorthSpec
      *
      * @return $this
      */

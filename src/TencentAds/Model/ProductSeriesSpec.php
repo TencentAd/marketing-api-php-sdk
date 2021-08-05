@@ -224,7 +224,7 @@ class ProductSeriesSpec implements ModelInterface, ArrayAccess
     /**
      * Sets logicOperator
      *
-     * @param \TencentAds\Model\ProductSeriesSpecLogicOperator $logicOperator logicOperator
+     * @param \TencentAds\Model\ProductSeriesSpecLogicOperator|mixed $logicOperator logicOperator
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class ProductSeriesSpec implements ModelInterface, ArrayAccess
     /**
      * Sets filters
      *
-     * @param \TencentAds\Model\ProductSeriesSpecFilteringStruct[] $filters filters
+     * @param \TencentAds\Model\ProductSeriesSpecFilteringStruct[]|mixed $filters filters
      *
      * @return $this
      */

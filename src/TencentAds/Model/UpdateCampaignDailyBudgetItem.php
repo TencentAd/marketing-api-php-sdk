@@ -224,7 +224,7 @@ class UpdateCampaignDailyBudgetItem implements ModelInterface, ArrayAccess
     /**
      * Sets campaignId
      *
-     * @param int $campaignId campaignId
+     * @param int|mixed $campaignId campaignId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class UpdateCampaignDailyBudgetItem implements ModelInterface, ArrayAccess
     /**
      * Sets dailyBudget
      *
-     * @param int $dailyBudget dailyBudget
+     * @param int|mixed $dailyBudget dailyBudget
      *
      * @return $this
      */

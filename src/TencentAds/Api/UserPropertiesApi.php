@@ -92,7 +92,7 @@ class UserPropertiesApi
      *
      * 上传用户属性数据
      *
-     * @param  \TencentAds\Model\UserPropertiesAddRequest $data data (required)
+     * @param  \TencentAds\Model\UserPropertiesAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class UserPropertiesApi
      *
      * 上传用户属性数据
      *
-     * @param  \TencentAds\Model\UserPropertiesAddRequest $data (required)
+     * @param  \TencentAds\Model\UserPropertiesAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class UserPropertiesApi
      *
      * 上传用户属性数据
      *
-     * @param  \TencentAds\Model\UserPropertiesAddRequest $data (required)
+     * @param  \TencentAds\Model\UserPropertiesAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class UserPropertiesApi
      *
      * 上传用户属性数据
      *
-     * @param  \TencentAds\Model\UserPropertiesAddRequest $data (required)
+     * @param  \TencentAds\Model\UserPropertiesAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class UserPropertiesApi
     /**
      * Create request for operation 'userPropertiesAdd'
      *
-     * @param  \TencentAds\Model\UserPropertiesAddRequest $data (required)
+     * @param  \TencentAds\Model\UserPropertiesAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

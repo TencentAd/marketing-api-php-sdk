@@ -230,7 +230,7 @@ class HistoryCpcSpec implements ModelInterface, ArrayAccess
     /**
      * Sets date
      *
-     * @param string $date date
+     * @param string|mixed $date date
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class HistoryCpcSpec implements ModelInterface, ArrayAccess
     /**
      * Sets actualCpc
      *
-     * @param int $actualCpc actualCpc
+     * @param int|mixed $actualCpc actualCpc
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class HistoryCpcSpec implements ModelInterface, ArrayAccess
     /**
      * Sets targetCpc
      *
-     * @param int $targetCpc targetCpc
+     * @param int|mixed $targetCpc targetCpc
      *
      * @return $this
      */

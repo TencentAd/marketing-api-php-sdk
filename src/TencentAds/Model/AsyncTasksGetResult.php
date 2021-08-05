@@ -230,7 +230,7 @@ class AsyncTasksGetResult implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param int $code code
+     * @param int|mixed $code code
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class AsyncTasksGetResult implements ModelInterface, ArrayAccess
     /**
      * Sets message
      *
-     * @param string $message message
+     * @param string|mixed $message message
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class AsyncTasksGetResult implements ModelInterface, ArrayAccess
     /**
      * Sets data
      *
-     * @param \TencentAds\Model\AsyncTasksGetData $data data
+     * @param \TencentAds\Model\AsyncTasksGetData|mixed $data data
      *
      * @return $this
      */

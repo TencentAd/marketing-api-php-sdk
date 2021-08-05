@@ -230,7 +230,7 @@ class ContractOccupiedSpec implements ModelInterface, ArrayAccess
     /**
      * Sets date
      *
-     * @param string $date date
+     * @param string|mixed $date date
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class ContractOccupiedSpec implements ModelInterface, ArrayAccess
     /**
      * Sets hour
      *
-     * @param int $hour hour
+     * @param int|mixed $hour hour
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class ContractOccupiedSpec implements ModelInterface, ArrayAccess
     /**
      * Sets contractOccupiedScore
      *
-     * @param int $contractOccupiedScore contractOccupiedScore
+     * @param int|mixed $contractOccupiedScore contractOccupiedScore
      *
      * @return $this
      */

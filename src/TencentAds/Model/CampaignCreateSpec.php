@@ -224,7 +224,7 @@ class CampaignCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class CampaignCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Sets campaignName
      *
-     * @param string $campaignName campaignName
+     * @param string|mixed $campaignName campaignName
      *
      * @return $this
      */

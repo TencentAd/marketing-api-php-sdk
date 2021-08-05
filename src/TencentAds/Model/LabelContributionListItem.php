@@ -236,7 +236,7 @@ class LabelContributionListItem implements ModelInterface, ArrayAccess
     /**
      * Sets label
      *
-     * @param string $label label
+     * @param string|mixed $label label
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class LabelContributionListItem implements ModelInterface, ArrayAccess
     /**
      * Sets count
      *
-     * @param int $count count
+     * @param int|mixed $count count
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class LabelContributionListItem implements ModelInterface, ArrayAccess
     /**
      * Sets contribution
      *
-     * @param int $contribution contribution
+     * @param int|mixed $contribution contribution
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class LabelContributionListItem implements ModelInterface, ArrayAccess
     /**
      * Sets ratio
      *
-     * @param double $ratio ratio
+     * @param double|mixed $ratio ratio
      *
      * @return $this
      */

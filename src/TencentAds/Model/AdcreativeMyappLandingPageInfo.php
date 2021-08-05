@@ -224,7 +224,7 @@ class AdcreativeMyappLandingPageInfo implements ModelInterface, ArrayAccess
     /**
      * Sets myappPageId
      *
-     * @param string $myappPageId myappPageId
+     * @param string|mixed $myappPageId myappPageId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class AdcreativeMyappLandingPageInfo implements ModelInterface, ArrayAccess
     /**
      * Sets url
      *
-     * @param string $url url
+     * @param string|mixed $url url
      *
      * @return $this
      */

@@ -217,7 +217,7 @@ class UserActionSetReportsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\TimeData[] $list list
+     * @param \TencentAds\Model\TimeData[]|mixed $list list
      *
      * @return $this
      */

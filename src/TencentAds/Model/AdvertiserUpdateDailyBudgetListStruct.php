@@ -230,7 +230,7 @@ class AdvertiserUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcce
     /**
      * Sets code
      *
-     * @param int $code code
+     * @param int|mixed $code code
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class AdvertiserUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcce
     /**
      * Sets message
      *
-     * @param string $message message
+     * @param string|mixed $message message
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class AdvertiserUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcce
     /**
      * Sets messageCn
      *
-     * @param string $messageCn messageCn
+     * @param string|mixed $messageCn messageCn
      *
      * @return $this
      */

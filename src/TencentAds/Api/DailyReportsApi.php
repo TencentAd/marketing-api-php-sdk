@@ -92,16 +92,16 @@ class DailyReportsApi
      *
      * 获取日报表
      *
-     * @param  int $accountId accountId (required)
-     * @param  string $level level (required)
-     * @param  \TencentAds\Model\ReportDateRange $dateRange dateRange (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
-     * @param  string[] $groupBy groupBy (optional)
-     * @param  \TencentAds\Model\OrderByStruct[] $orderBy orderBy (optional)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string $timeLine timeLine (optional)
-     * @param  string[] $fields fields (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string|mixed $level level (required)
+     * @param  \TencentAds\Model\ReportDateRange|mixed $dateRange dateRange (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering (optional)
+     * @param  string[]|mixed $groupBy groupBy (optional)
+     * @param  \TencentAds\Model\OrderByStruct[]|mixed $orderBy orderBy (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string|mixed $timeLine timeLine (optional)
+     * @param  string[]|mixed $fields fields (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -118,16 +118,16 @@ class DailyReportsApi
      *
      * 获取日报表
      *
-     * @param  int $accountId (required)
-     * @param  string $level (required)
-     * @param  \TencentAds\Model\ReportDateRange $dateRange (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  string[] $groupBy (optional)
-     * @param  \TencentAds\Model\OrderByStruct[] $orderBy (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string $timeLine (optional)
-     * @param  string[] $fields (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $level (required)
+     * @param  \TencentAds\Model\ReportDateRange|mixed $dateRange (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  string[]|mixed $groupBy (optional)
+     * @param  \TencentAds\Model\OrderByStruct[]|mixed $orderBy (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $timeLine (optional)
+     * @param  string[]|mixed $fields (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -202,16 +202,16 @@ class DailyReportsApi
      *
      * 获取日报表
      *
-     * @param  int $accountId (required)
-     * @param  string $level (required)
-     * @param  \TencentAds\Model\ReportDateRange $dateRange (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  string[] $groupBy (optional)
-     * @param  \TencentAds\Model\OrderByStruct[] $orderBy (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string $timeLine (optional)
-     * @param  string[] $fields (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $level (required)
+     * @param  \TencentAds\Model\ReportDateRange|mixed $dateRange (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  string[]|mixed $groupBy (optional)
+     * @param  \TencentAds\Model\OrderByStruct[]|mixed $orderBy (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $timeLine (optional)
+     * @param  string[]|mixed $fields (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -231,16 +231,16 @@ class DailyReportsApi
      *
      * 获取日报表
      *
-     * @param  int $accountId (required)
-     * @param  string $level (required)
-     * @param  \TencentAds\Model\ReportDateRange $dateRange (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  string[] $groupBy (optional)
-     * @param  \TencentAds\Model\OrderByStruct[] $orderBy (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string $timeLine (optional)
-     * @param  string[] $fields (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $level (required)
+     * @param  \TencentAds\Model\ReportDateRange|mixed $dateRange (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  string[]|mixed $groupBy (optional)
+     * @param  \TencentAds\Model\OrderByStruct[]|mixed $orderBy (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $timeLine (optional)
+     * @param  string[]|mixed $fields (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -290,16 +290,16 @@ class DailyReportsApi
     /**
      * Create request for operation 'dailyReportsGet'
      *
-     * @param  int $accountId (required)
-     * @param  string $level (required)
-     * @param  \TencentAds\Model\ReportDateRange $dateRange (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  string[] $groupBy (optional)
-     * @param  \TencentAds\Model\OrderByStruct[] $orderBy (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string $timeLine (optional)
-     * @param  string[] $fields (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $level (required)
+     * @param  \TencentAds\Model\ReportDateRange|mixed $dateRange (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  string[]|mixed $groupBy (optional)
+     * @param  \TencentAds\Model\OrderByStruct[]|mixed $orderBy (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $timeLine (optional)
+     * @param  string[]|mixed $fields (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

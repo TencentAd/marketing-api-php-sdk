@@ -224,7 +224,7 @@ class WechatAdLabelsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets labelCategory
      *
-     * @param string $labelCategory labelCategory
+     * @param string|mixed $labelCategory labelCategory
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class WechatAdLabelsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets label
      *
-     * @param string[] $label label
+     * @param string[]|mixed $label label
      *
      * @return $this
      */

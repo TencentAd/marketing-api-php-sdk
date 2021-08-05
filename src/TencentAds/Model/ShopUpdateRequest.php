@@ -241,7 +241,7 @@ class ShopUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class ShopUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class ShopUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets adgroup
      *
-     * @param \TencentAds\Model\AdgroupUpdateSpec $adgroup adgroup
+     * @param \TencentAds\Model\AdgroupUpdateSpec|mixed $adgroup adgroup
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class ShopUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets campaign
      *
-     * @param \TencentAds\Model\CampaignUpdateSpec $campaign campaign
+     * @param \TencentAds\Model\CampaignUpdateSpec|mixed $campaign campaign
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class ShopUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets adcreative
      *
-     * @param \TencentAds\Model\AdCreativeUpdateSpec $adcreative adcreative
+     * @param \TencentAds\Model\AdCreativeUpdateSpec|mixed $adcreative adcreative
      *
      * @return $this
      */

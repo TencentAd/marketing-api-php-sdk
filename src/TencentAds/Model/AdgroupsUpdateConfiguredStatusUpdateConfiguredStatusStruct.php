@@ -224,7 +224,7 @@ class AdgroupsUpdateConfiguredStatusUpdateConfiguredStatusStruct implements Mode
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class AdgroupsUpdateConfiguredStatusUpdateConfiguredStatusStruct implements Mode
     /**
      * Sets configuredStatus
      *
-     * @param \TencentAds\Model\AdStatus $configuredStatus configuredStatus
+     * @param \TencentAds\Model\AdStatus|mixed $configuredStatus configuredStatus
      *
      * @return $this
      */

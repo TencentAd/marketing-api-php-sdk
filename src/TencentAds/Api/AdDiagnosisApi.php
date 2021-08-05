@@ -92,7 +92,7 @@ class AdDiagnosisApi
      *
      * 获取广告诊断信息
      *
-     * @param  \TencentAds\Model\AdDiagnosisGetRequest $data data (required)
+     * @param  \TencentAds\Model\AdDiagnosisGetRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class AdDiagnosisApi
      *
      * 获取广告诊断信息
      *
-     * @param  \TencentAds\Model\AdDiagnosisGetRequest $data (required)
+     * @param  \TencentAds\Model\AdDiagnosisGetRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class AdDiagnosisApi
      *
      * 获取广告诊断信息
      *
-     * @param  \TencentAds\Model\AdDiagnosisGetRequest $data (required)
+     * @param  \TencentAds\Model\AdDiagnosisGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class AdDiagnosisApi
      *
      * 获取广告诊断信息
      *
-     * @param  \TencentAds\Model\AdDiagnosisGetRequest $data (required)
+     * @param  \TencentAds\Model\AdDiagnosisGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class AdDiagnosisApi
     /**
      * Create request for operation 'adDiagnosisGet'
      *
-     * @param  \TencentAds\Model\AdDiagnosisGetRequest $data (required)
+     * @param  \TencentAds\Model\AdDiagnosisGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

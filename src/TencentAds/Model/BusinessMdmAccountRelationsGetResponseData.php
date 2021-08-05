@@ -223,7 +223,7 @@ class BusinessMdmAccountRelationsGetResponseData implements ModelInterface, Arra
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\BusinessMdmAccountRelationsGetListStruct[] $list list
+     * @param \TencentAds\Model\BusinessMdmAccountRelationsGetListStruct[]|mixed $list list
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class BusinessMdmAccountRelationsGetResponseData implements ModelInterface, Arra
     /**
      * Sets pageInfo
      *
-     * @param \TencentAds\Model\Conf $pageInfo pageInfo
+     * @param \TencentAds\Model\Conf|mixed $pageInfo pageInfo
      *
      * @return $this
      */

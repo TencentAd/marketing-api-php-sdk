@@ -278,7 +278,7 @@ class WechatAdvertiserDetailGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class WechatAdvertiserDetailGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAccountName
      *
-     * @param string $wechatAccountName wechatAccountName
+     * @param string|mixed $wechatAccountName wechatAccountName
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class WechatAdvertiserDetailGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets systemIndustryId
      *
-     * @param int $systemIndustryId systemIndustryId
+     * @param int|mixed $systemIndustryId systemIndustryId
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class WechatAdvertiserDetailGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAccountId
      *
-     * @param string $wechatAccountId wechatAccountId
+     * @param string|mixed $wechatAccountId wechatAccountId
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class WechatAdvertiserDetailGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountType
      *
-     * @param \TencentAds\Model\WechatAdvertiserAccountType $accountType accountType
+     * @param \TencentAds\Model\WechatAdvertiserAccountType|mixed $accountType accountType
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class WechatAdvertiserDetailGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets corporationName
      *
-     * @param string $corporationName corporationName
+     * @param string|mixed $corporationName corporationName
      *
      * @return $this
      */
@@ -422,7 +422,7 @@ class WechatAdvertiserDetailGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets authStatus
      *
-     * @param \TencentAds\Model\WechatAuthStatus $authStatus authStatus
+     * @param \TencentAds\Model\WechatAuthStatus|mixed $authStatus authStatus
      *
      * @return $this
      */
@@ -446,7 +446,7 @@ class WechatAdvertiserDetailGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets authTime
      *
-     * @param int $authTime authTime
+     * @param int|mixed $authTime authTime
      *
      * @return $this
      */
@@ -470,7 +470,7 @@ class WechatAdvertiserDetailGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets agencyIdList
      *
-     * @param int[] $agencyIdList agencyIdList
+     * @param int[]|mixed $agencyIdList agencyIdList
      *
      * @return $this
      */
@@ -494,7 +494,7 @@ class WechatAdvertiserDetailGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets staffWechatIdList
      *
-     * @param string[] $staffWechatIdList staffWechatIdList
+     * @param string[]|mixed $staffWechatIdList staffWechatIdList
      *
      * @return $this
      */
@@ -518,7 +518,7 @@ class WechatAdvertiserDetailGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets dailyBudget
      *
-     * @param int $dailyBudget dailyBudget
+     * @param int|mixed $dailyBudget dailyBudget
      *
      * @return $this
      */

@@ -92,12 +92,12 @@ class UserActionSetReportsApi
      *
      * 获取用户行为数据源报表
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $userActionSetId userActionSetId (required)
-     * @param  \TencentAds\Model\DateRange $dateRange dateRange (required)
-     * @param  string $timeGranularity timeGranularity (required)
-     * @param  string $aggregation aggregation (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $userActionSetId userActionSetId (required)
+     * @param  \TencentAds\Model\DateRange|mixed $dateRange dateRange (required)
+     * @param  string|mixed $timeGranularity timeGranularity (required)
+     * @param  string|mixed $aggregation aggregation (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -114,12 +114,12 @@ class UserActionSetReportsApi
      *
      * 获取用户行为数据源报表
      *
-     * @param  int $accountId (required)
-     * @param  int $userActionSetId (required)
-     * @param  \TencentAds\Model\DateRange $dateRange (required)
-     * @param  string $timeGranularity (required)
-     * @param  string $aggregation (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $userActionSetId (required)
+     * @param  \TencentAds\Model\DateRange|mixed $dateRange (required)
+     * @param  string|mixed $timeGranularity (required)
+     * @param  string|mixed $aggregation (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -194,12 +194,12 @@ class UserActionSetReportsApi
      *
      * 获取用户行为数据源报表
      *
-     * @param  int $accountId (required)
-     * @param  int $userActionSetId (required)
-     * @param  \TencentAds\Model\DateRange $dateRange (required)
-     * @param  string $timeGranularity (required)
-     * @param  string $aggregation (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $userActionSetId (required)
+     * @param  \TencentAds\Model\DateRange|mixed $dateRange (required)
+     * @param  string|mixed $timeGranularity (required)
+     * @param  string|mixed $aggregation (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -219,12 +219,12 @@ class UserActionSetReportsApi
      *
      * 获取用户行为数据源报表
      *
-     * @param  int $accountId (required)
-     * @param  int $userActionSetId (required)
-     * @param  \TencentAds\Model\DateRange $dateRange (required)
-     * @param  string $timeGranularity (required)
-     * @param  string $aggregation (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $userActionSetId (required)
+     * @param  \TencentAds\Model\DateRange|mixed $dateRange (required)
+     * @param  string|mixed $timeGranularity (required)
+     * @param  string|mixed $aggregation (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -274,12 +274,12 @@ class UserActionSetReportsApi
     /**
      * Create request for operation 'userActionSetReportsGet'
      *
-     * @param  int $accountId (required)
-     * @param  int $userActionSetId (required)
-     * @param  \TencentAds\Model\DateRange $dateRange (required)
-     * @param  string $timeGranularity (required)
-     * @param  string $aggregation (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $userActionSetId (required)
+     * @param  \TencentAds\Model\DateRange|mixed $dateRange (required)
+     * @param  string|mixed $timeGranularity (required)
+     * @param  string|mixed $aggregation (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

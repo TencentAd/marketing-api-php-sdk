@@ -224,7 +224,7 @@ class VideoEndPageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets endPageId
      *
-     * @param string $endPageId endPageId
+     * @param string|mixed $endPageId endPageId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class VideoEndPageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets endPageType
      *
-     * @param \TencentAds\Model\VideoEndPageType $endPageType endPageType
+     * @param \TencentAds\Model\VideoEndPageType|mixed $endPageType endPageType
      *
      * @return $this
      */

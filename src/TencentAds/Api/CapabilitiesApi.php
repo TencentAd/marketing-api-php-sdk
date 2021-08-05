@@ -92,10 +92,10 @@ class CapabilitiesApi
      *
      * 查询广告相关权限（待废弃）
      *
-     * @param  int $accountId accountId (required)
-     * @param  string $capability capability (required)
-     * @param  \TencentAds\Model\CapabilitiesGetQuerySpec $querySpec querySpec (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string|mixed $capability capability (required)
+     * @param  \TencentAds\Model\CapabilitiesGetQuerySpec|mixed $querySpec querySpec (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -112,10 +112,10 @@ class CapabilitiesApi
      *
      * 查询广告相关权限（待废弃）
      *
-     * @param  int $accountId (required)
-     * @param  string $capability (required)
-     * @param  \TencentAds\Model\CapabilitiesGetQuerySpec $querySpec (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $capability (required)
+     * @param  \TencentAds\Model\CapabilitiesGetQuerySpec|mixed $querySpec (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -190,10 +190,10 @@ class CapabilitiesApi
      *
      * 查询广告相关权限（待废弃）
      *
-     * @param  int $accountId (required)
-     * @param  string $capability (required)
-     * @param  \TencentAds\Model\CapabilitiesGetQuerySpec $querySpec (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $capability (required)
+     * @param  \TencentAds\Model\CapabilitiesGetQuerySpec|mixed $querySpec (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -213,10 +213,10 @@ class CapabilitiesApi
      *
      * 查询广告相关权限（待废弃）
      *
-     * @param  int $accountId (required)
-     * @param  string $capability (required)
-     * @param  \TencentAds\Model\CapabilitiesGetQuerySpec $querySpec (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $capability (required)
+     * @param  \TencentAds\Model\CapabilitiesGetQuerySpec|mixed $querySpec (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -266,10 +266,10 @@ class CapabilitiesApi
     /**
      * Create request for operation 'capabilitiesGet'
      *
-     * @param  int $accountId (required)
-     * @param  string $capability (required)
-     * @param  \TencentAds\Model\CapabilitiesGetQuerySpec $querySpec (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $capability (required)
+     * @param  \TencentAds\Model\CapabilitiesGetQuerySpec|mixed $querySpec (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

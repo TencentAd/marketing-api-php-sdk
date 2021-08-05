@@ -254,7 +254,7 @@ class BrandGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class BrandGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param string $name name
+     * @param string|mixed $name name
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class BrandGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets imageId
      *
-     * @param string $imageId imageId
+     * @param string|mixed $imageId imageId
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class BrandGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets width
      *
-     * @param int $width width
+     * @param int|mixed $width width
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class BrandGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets height
      *
-     * @param int $height height
+     * @param int|mixed $height height
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class BrandGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets imageUrl
      *
-     * @param string $imageUrl imageUrl
+     * @param string|mixed $imageUrl imageUrl
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class BrandGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */

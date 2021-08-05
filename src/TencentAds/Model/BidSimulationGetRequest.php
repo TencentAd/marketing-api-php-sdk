@@ -241,7 +241,7 @@ class BidSimulationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class BidSimulationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets reqType
      *
-     * @param int $reqType reqType
+     * @param int|mixed $reqType reqType
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class BidSimulationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets optimizationGoalLevel
      *
-     * @param int $optimizationGoalLevel optimizationGoalLevel
+     * @param int|mixed $optimizationGoalLevel optimizationGoalLevel
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class BidSimulationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class BidSimulationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets bidList
      *
-     * @param int[] $bidList bidList
+     * @param int[]|mixed $bidList bidList
      *
      * @return $this
      */

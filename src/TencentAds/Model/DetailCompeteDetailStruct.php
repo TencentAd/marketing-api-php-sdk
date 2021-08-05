@@ -260,7 +260,7 @@ class DetailCompeteDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets competeAttribution
      *
-     * @param \TencentAds\Model\CompeteAttributionStruct[] $competeAttribution competeAttribution
+     * @param \TencentAds\Model\CompeteAttributionStruct[]|mixed $competeAttribution competeAttribution
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class DetailCompeteDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets competeBudgetDetails
      *
-     * @param \TencentAds\Model\CompeteBudgetDetailsStruct $competeBudgetDetails competeBudgetDetails
+     * @param \TencentAds\Model\CompeteBudgetDetailsStruct|mixed $competeBudgetDetails competeBudgetDetails
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class DetailCompeteDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets competeBidDetails
      *
-     * @param \TencentAds\Model\CompeteBidDetailsStruct $competeBidDetails competeBidDetails
+     * @param \TencentAds\Model\CompeteBidDetailsStruct|mixed $competeBidDetails competeBidDetails
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class DetailCompeteDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets competeUserAcceptance
      *
-     * @param \TencentAds\Model\CompeteUserAcceptanceStruct $competeUserAcceptance competeUserAcceptance
+     * @param \TencentAds\Model\CompeteUserAcceptanceStruct|mixed $competeUserAcceptance competeUserAcceptance
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class DetailCompeteDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets competePctrTrends
      *
-     * @param \TencentAds\Model\CompetePctrTrendsStruct $competePctrTrends competePctrTrends
+     * @param \TencentAds\Model\CompetePctrTrendsStruct|mixed $competePctrTrends competePctrTrends
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class DetailCompeteDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets competePcvrTrends
      *
-     * @param \TencentAds\Model\CompetePcvrTrendsStruct $competePcvrTrends competePcvrTrends
+     * @param \TencentAds\Model\CompetePcvrTrendsStruct|mixed $competePcvrTrends competePcvrTrends
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class DetailCompeteDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets competeWinAdgroup
      *
-     * @param \TencentAds\Model\CompeteWinAdgroupStruct $competeWinAdgroup competeWinAdgroup
+     * @param \TencentAds\Model\CompeteWinAdgroupStruct|mixed $competeWinAdgroup competeWinAdgroup
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class DetailCompeteDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets competeSurroundings
      *
-     * @param \TencentAds\Model\CompeteSurroundingsStruct $competeSurroundings competeSurroundings
+     * @param \TencentAds\Model\CompeteSurroundingsStruct|mixed $competeSurroundings competeSurroundings
      *
      * @return $this
      */

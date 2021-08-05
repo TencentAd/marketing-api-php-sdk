@@ -236,7 +236,7 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets itemName
      *
-     * @param string $itemName itemName
+     * @param string|mixed $itemName itemName
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets itemType
      *
-     * @param \TencentAds\Model\ItemType $itemType itemType
+     * @param \TencentAds\Model\ItemType|mixed $itemType itemType
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets placeholder
      *
-     * @param string $placeholder placeholder
+     * @param string|mixed $placeholder placeholder
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class ControlListItemDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets selectElements
      *
-     * @param \TencentAds\Model\ConfigsDetailDataArrayItem[] $selectElements selectElements
+     * @param \TencentAds\Model\ConfigsDetailDataArrayItem[]|mixed $selectElements selectElements
      *
      * @return $this
      */

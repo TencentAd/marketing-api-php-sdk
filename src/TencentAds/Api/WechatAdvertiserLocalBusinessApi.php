@@ -92,18 +92,18 @@ class WechatAdvertiserLocalBusinessApi
      *
      * 附近推商家开户
      *
-     * @param  \SplFileObject $headImage headImage (required)
-     * @param  string $name name (required)
-     * @param  string $description description (required)
-     * @param  string $contactPerson contactPerson (required)
-     * @param  string $contactPersonMobile contactPersonMobile (required)
-     * @param  string $contactPersonCardId contactPersonCardId (required)
-     * @param  string $corporation corporation (required)
-     * @param  string $corporationLicence corporationLicence (required)
-     * @param  int $industryId industryId (required)
-     * @param  string $businessId businessId (required)
-     * @param  string $contactPersonTele contactPersonTele (optional)
-     * @param  string $businessContent businessContent (optional)
+     * @param  \SplFileObject|mixed $headImage headImage (required)
+     * @param  string|mixed $name name (required)
+     * @param  string|mixed $description description (required)
+     * @param  string|mixed $contactPerson contactPerson (required)
+     * @param  string|mixed $contactPersonMobile contactPersonMobile (required)
+     * @param  string|mixed $contactPersonCardId contactPersonCardId (required)
+     * @param  string|mixed $corporation corporation (required)
+     * @param  string|mixed $corporationLicence corporationLicence (required)
+     * @param  int|mixed $industryId industryId (required)
+     * @param  string|mixed $businessId businessId (required)
+     * @param  string|mixed $contactPersonTele contactPersonTele (optional)
+     * @param  string|mixed $businessContent businessContent (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -120,18 +120,18 @@ class WechatAdvertiserLocalBusinessApi
      *
      * 附近推商家开户
      *
-     * @param  \SplFileObject $headImage (required)
-     * @param  string $name (required)
-     * @param  string $description (required)
-     * @param  string $contactPerson (required)
-     * @param  string $contactPersonMobile (required)
-     * @param  string $contactPersonCardId (required)
-     * @param  string $corporation (required)
-     * @param  string $corporationLicence (required)
-     * @param  int $industryId (required)
-     * @param  string $businessId (required)
-     * @param  string $contactPersonTele (optional)
-     * @param  string $businessContent (optional)
+     * @param  \SplFileObject|mixed $headImage (required)
+     * @param  string|mixed $name (required)
+     * @param  string|mixed $description (required)
+     * @param  string|mixed $contactPerson (required)
+     * @param  string|mixed $contactPersonMobile (required)
+     * @param  string|mixed $contactPersonCardId (required)
+     * @param  string|mixed $corporation (required)
+     * @param  string|mixed $corporationLicence (required)
+     * @param  int|mixed $industryId (required)
+     * @param  string|mixed $businessId (required)
+     * @param  string|mixed $contactPersonTele (optional)
+     * @param  string|mixed $businessContent (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -206,18 +206,18 @@ class WechatAdvertiserLocalBusinessApi
      *
      * 附近推商家开户
      *
-     * @param  \SplFileObject $headImage (required)
-     * @param  string $name (required)
-     * @param  string $description (required)
-     * @param  string $contactPerson (required)
-     * @param  string $contactPersonMobile (required)
-     * @param  string $contactPersonCardId (required)
-     * @param  string $corporation (required)
-     * @param  string $corporationLicence (required)
-     * @param  int $industryId (required)
-     * @param  string $businessId (required)
-     * @param  string $contactPersonTele (optional)
-     * @param  string $businessContent (optional)
+     * @param  \SplFileObject|mixed $headImage (required)
+     * @param  string|mixed $name (required)
+     * @param  string|mixed $description (required)
+     * @param  string|mixed $contactPerson (required)
+     * @param  string|mixed $contactPersonMobile (required)
+     * @param  string|mixed $contactPersonCardId (required)
+     * @param  string|mixed $corporation (required)
+     * @param  string|mixed $corporationLicence (required)
+     * @param  int|mixed $industryId (required)
+     * @param  string|mixed $businessId (required)
+     * @param  string|mixed $contactPersonTele (optional)
+     * @param  string|mixed $businessContent (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -237,18 +237,18 @@ class WechatAdvertiserLocalBusinessApi
      *
      * 附近推商家开户
      *
-     * @param  \SplFileObject $headImage (required)
-     * @param  string $name (required)
-     * @param  string $description (required)
-     * @param  string $contactPerson (required)
-     * @param  string $contactPersonMobile (required)
-     * @param  string $contactPersonCardId (required)
-     * @param  string $corporation (required)
-     * @param  string $corporationLicence (required)
-     * @param  int $industryId (required)
-     * @param  string $businessId (required)
-     * @param  string $contactPersonTele (optional)
-     * @param  string $businessContent (optional)
+     * @param  \SplFileObject|mixed $headImage (required)
+     * @param  string|mixed $name (required)
+     * @param  string|mixed $description (required)
+     * @param  string|mixed $contactPerson (required)
+     * @param  string|mixed $contactPersonMobile (required)
+     * @param  string|mixed $contactPersonCardId (required)
+     * @param  string|mixed $corporation (required)
+     * @param  string|mixed $corporationLicence (required)
+     * @param  int|mixed $industryId (required)
+     * @param  string|mixed $businessId (required)
+     * @param  string|mixed $contactPersonTele (optional)
+     * @param  string|mixed $businessContent (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -298,18 +298,18 @@ class WechatAdvertiserLocalBusinessApi
     /**
      * Create request for operation 'wechatAdvertiserLocalBusinessAdd'
      *
-     * @param  \SplFileObject $headImage (required)
-     * @param  string $name (required)
-     * @param  string $description (required)
-     * @param  string $contactPerson (required)
-     * @param  string $contactPersonMobile (required)
-     * @param  string $contactPersonCardId (required)
-     * @param  string $corporation (required)
-     * @param  string $corporationLicence (required)
-     * @param  int $industryId (required)
-     * @param  string $businessId (required)
-     * @param  string $contactPersonTele (optional)
-     * @param  string $businessContent (optional)
+     * @param  \SplFileObject|mixed $headImage (required)
+     * @param  string|mixed $name (required)
+     * @param  string|mixed $description (required)
+     * @param  string|mixed $contactPerson (required)
+     * @param  string|mixed $contactPersonMobile (required)
+     * @param  string|mixed $contactPersonCardId (required)
+     * @param  string|mixed $corporation (required)
+     * @param  string|mixed $corporationLicence (required)
+     * @param  int|mixed $industryId (required)
+     * @param  string|mixed $businessId (required)
+     * @param  string|mixed $contactPersonTele (optional)
+     * @param  string|mixed $businessContent (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -529,8 +529,8 @@ class WechatAdvertiserLocalBusinessApi
      *
      * 查询附近推商家信息
      *
-     * @param  int $accountId accountId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -547,8 +547,8 @@ class WechatAdvertiserLocalBusinessApi
      *
      * 查询附近推商家信息
      *
-     * @param  int $accountId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -623,8 +623,8 @@ class WechatAdvertiserLocalBusinessApi
      *
      * 查询附近推商家信息
      *
-     * @param  int $accountId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -644,8 +644,8 @@ class WechatAdvertiserLocalBusinessApi
      *
      * 查询附近推商家信息
      *
-     * @param  int $accountId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -695,8 +695,8 @@ class WechatAdvertiserLocalBusinessApi
     /**
      * Create request for operation 'wechatAdvertiserLocalBusinessGet'
      *
-     * @param  int $accountId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -824,18 +824,18 @@ class WechatAdvertiserLocalBusinessApi
      *
      * 更新附近推商家信息
      *
-     * @param  \SplFileObject $headImage headImage (required)
-     * @param  string $name name (required)
-     * @param  string $description description (required)
-     * @param  string $contactPerson contactPerson (required)
-     * @param  string $contactPersonMobile contactPersonMobile (required)
-     * @param  string $contactPersonCardId contactPersonCardId (required)
-     * @param  string $corporation corporation (required)
-     * @param  string $corporationLicence corporationLicence (required)
-     * @param  int $industryId industryId (required)
-     * @param  int $accountId accountId (required)
-     * @param  string $contactPersonTele contactPersonTele (optional)
-     * @param  string $businessContent businessContent (optional)
+     * @param  \SplFileObject|mixed $headImage headImage (required)
+     * @param  string|mixed $name name (required)
+     * @param  string|mixed $description description (required)
+     * @param  string|mixed $contactPerson contactPerson (required)
+     * @param  string|mixed $contactPersonMobile contactPersonMobile (required)
+     * @param  string|mixed $contactPersonCardId contactPersonCardId (required)
+     * @param  string|mixed $corporation corporation (required)
+     * @param  string|mixed $corporationLicence corporationLicence (required)
+     * @param  int|mixed $industryId industryId (required)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string|mixed $contactPersonTele contactPersonTele (optional)
+     * @param  string|mixed $businessContent businessContent (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -852,18 +852,18 @@ class WechatAdvertiserLocalBusinessApi
      *
      * 更新附近推商家信息
      *
-     * @param  \SplFileObject $headImage (required)
-     * @param  string $name (required)
-     * @param  string $description (required)
-     * @param  string $contactPerson (required)
-     * @param  string $contactPersonMobile (required)
-     * @param  string $contactPersonCardId (required)
-     * @param  string $corporation (required)
-     * @param  string $corporationLicence (required)
-     * @param  int $industryId (required)
-     * @param  int $accountId (required)
-     * @param  string $contactPersonTele (optional)
-     * @param  string $businessContent (optional)
+     * @param  \SplFileObject|mixed $headImage (required)
+     * @param  string|mixed $name (required)
+     * @param  string|mixed $description (required)
+     * @param  string|mixed $contactPerson (required)
+     * @param  string|mixed $contactPersonMobile (required)
+     * @param  string|mixed $contactPersonCardId (required)
+     * @param  string|mixed $corporation (required)
+     * @param  string|mixed $corporationLicence (required)
+     * @param  int|mixed $industryId (required)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $contactPersonTele (optional)
+     * @param  string|mixed $businessContent (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -938,18 +938,18 @@ class WechatAdvertiserLocalBusinessApi
      *
      * 更新附近推商家信息
      *
-     * @param  \SplFileObject $headImage (required)
-     * @param  string $name (required)
-     * @param  string $description (required)
-     * @param  string $contactPerson (required)
-     * @param  string $contactPersonMobile (required)
-     * @param  string $contactPersonCardId (required)
-     * @param  string $corporation (required)
-     * @param  string $corporationLicence (required)
-     * @param  int $industryId (required)
-     * @param  int $accountId (required)
-     * @param  string $contactPersonTele (optional)
-     * @param  string $businessContent (optional)
+     * @param  \SplFileObject|mixed $headImage (required)
+     * @param  string|mixed $name (required)
+     * @param  string|mixed $description (required)
+     * @param  string|mixed $contactPerson (required)
+     * @param  string|mixed $contactPersonMobile (required)
+     * @param  string|mixed $contactPersonCardId (required)
+     * @param  string|mixed $corporation (required)
+     * @param  string|mixed $corporationLicence (required)
+     * @param  int|mixed $industryId (required)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $contactPersonTele (optional)
+     * @param  string|mixed $businessContent (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -969,18 +969,18 @@ class WechatAdvertiserLocalBusinessApi
      *
      * 更新附近推商家信息
      *
-     * @param  \SplFileObject $headImage (required)
-     * @param  string $name (required)
-     * @param  string $description (required)
-     * @param  string $contactPerson (required)
-     * @param  string $contactPersonMobile (required)
-     * @param  string $contactPersonCardId (required)
-     * @param  string $corporation (required)
-     * @param  string $corporationLicence (required)
-     * @param  int $industryId (required)
-     * @param  int $accountId (required)
-     * @param  string $contactPersonTele (optional)
-     * @param  string $businessContent (optional)
+     * @param  \SplFileObject|mixed $headImage (required)
+     * @param  string|mixed $name (required)
+     * @param  string|mixed $description (required)
+     * @param  string|mixed $contactPerson (required)
+     * @param  string|mixed $contactPersonMobile (required)
+     * @param  string|mixed $contactPersonCardId (required)
+     * @param  string|mixed $corporation (required)
+     * @param  string|mixed $corporationLicence (required)
+     * @param  int|mixed $industryId (required)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $contactPersonTele (optional)
+     * @param  string|mixed $businessContent (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1030,18 +1030,18 @@ class WechatAdvertiserLocalBusinessApi
     /**
      * Create request for operation 'wechatAdvertiserLocalBusinessUpdate'
      *
-     * @param  \SplFileObject $headImage (required)
-     * @param  string $name (required)
-     * @param  string $description (required)
-     * @param  string $contactPerson (required)
-     * @param  string $contactPersonMobile (required)
-     * @param  string $contactPersonCardId (required)
-     * @param  string $corporation (required)
-     * @param  string $corporationLicence (required)
-     * @param  int $industryId (required)
-     * @param  int $accountId (required)
-     * @param  string $contactPersonTele (optional)
-     * @param  string $businessContent (optional)
+     * @param  \SplFileObject|mixed $headImage (required)
+     * @param  string|mixed $name (required)
+     * @param  string|mixed $description (required)
+     * @param  string|mixed $contactPerson (required)
+     * @param  string|mixed $contactPersonMobile (required)
+     * @param  string|mixed $contactPersonCardId (required)
+     * @param  string|mixed $corporation (required)
+     * @param  string|mixed $corporationLicence (required)
+     * @param  int|mixed $industryId (required)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $contactPersonTele (optional)
+     * @param  string|mixed $businessContent (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

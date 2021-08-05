@@ -247,7 +247,7 @@ class EstimationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets campaignSpec
      *
-     * @param \TencentAds\Model\CampaignTargeting $campaignSpec campaignSpec
+     * @param \TencentAds\Model\CampaignTargeting|mixed $campaignSpec campaignSpec
      *
      * @return $this
      */
@@ -271,7 +271,7 @@ class EstimationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets sceneSpec
      *
-     * @param \TencentAds\Model\EstimationSceneTargeting $sceneSpec sceneSpec
+     * @param \TencentAds\Model\EstimationSceneTargeting|mixed $sceneSpec sceneSpec
      *
      * @return $this
      */
@@ -295,7 +295,7 @@ class EstimationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -319,7 +319,7 @@ class EstimationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets adcreative
      *
-     * @param \TencentAds\Model\CreativeStruct[] $adcreative adcreative
+     * @param \TencentAds\Model\CreativeStruct[]|mixed $adcreative adcreative
      *
      * @return $this
      */
@@ -343,7 +343,7 @@ class EstimationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets targeting
      *
-     * @param \TencentAds\Model\EstimationReadTargetingSetting $targeting targeting
+     * @param \TencentAds\Model\EstimationReadTargetingSetting|mixed $targeting targeting
      *
      * @return $this
      */
@@ -367,7 +367,7 @@ class EstimationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets adgroup
      *
-     * @param \TencentAds\Model\AdgroupSetting $adgroup adgroup
+     * @param \TencentAds\Model\AdgroupSetting|mixed $adgroup adgroup
      *
      * @return $this
      */

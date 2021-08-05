@@ -217,7 +217,7 @@ class CustomAudienceEstimationsGetResponseData implements ModelInterface, ArrayA
     /**
      * Sets userCount
      *
-     * @param int $userCount userCount
+     * @param int|mixed $userCount userCount
      *
      * @return $this
      */

@@ -92,7 +92,7 @@ class AdcreativeTemplatePreviewApi
      *
      * 获取广告创意预览（待废弃）
      *
-     * @param  \TencentAds\Model\AdcreativeTemplatePreviewGetRequest $data data (required)
+     * @param  \TencentAds\Model\AdcreativeTemplatePreviewGetRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class AdcreativeTemplatePreviewApi
      *
      * 获取广告创意预览（待废弃）
      *
-     * @param  \TencentAds\Model\AdcreativeTemplatePreviewGetRequest $data (required)
+     * @param  \TencentAds\Model\AdcreativeTemplatePreviewGetRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class AdcreativeTemplatePreviewApi
      *
      * 获取广告创意预览（待废弃）
      *
-     * @param  \TencentAds\Model\AdcreativeTemplatePreviewGetRequest $data (required)
+     * @param  \TencentAds\Model\AdcreativeTemplatePreviewGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class AdcreativeTemplatePreviewApi
      *
      * 获取广告创意预览（待废弃）
      *
-     * @param  \TencentAds\Model\AdcreativeTemplatePreviewGetRequest $data (required)
+     * @param  \TencentAds\Model\AdcreativeTemplatePreviewGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class AdcreativeTemplatePreviewApi
     /**
      * Create request for operation 'adcreativeTemplatePreviewGet'
      *
-     * @param  \TencentAds\Model\AdcreativeTemplatePreviewGetRequest $data (required)
+     * @param  \TencentAds\Model\AdcreativeTemplatePreviewGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

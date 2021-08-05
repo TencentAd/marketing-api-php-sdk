@@ -224,7 +224,7 @@ class WechatAdBehavior implements ModelInterface, ArrayAccess
     /**
      * Sets actions
      *
-     * @param string[] $actions actions
+     * @param string[]|mixed $actions actions
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class WechatAdBehavior implements ModelInterface, ArrayAccess
     /**
      * Sets excludedActions
      *
-     * @param string[] $excludedActions excludedActions
+     * @param string[]|mixed $excludedActions excludedActions
      *
      * @return $this
      */

@@ -92,7 +92,7 @@ class CustomAudienceEstimationsApi
      *
      * 人群覆盖数预估
      *
-     * @param  \TencentAds\Model\CustomAudienceEstimationsGetRequest $data data (required)
+     * @param  \TencentAds\Model\CustomAudienceEstimationsGetRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class CustomAudienceEstimationsApi
      *
      * 人群覆盖数预估
      *
-     * @param  \TencentAds\Model\CustomAudienceEstimationsGetRequest $data (required)
+     * @param  \TencentAds\Model\CustomAudienceEstimationsGetRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class CustomAudienceEstimationsApi
      *
      * 人群覆盖数预估
      *
-     * @param  \TencentAds\Model\CustomAudienceEstimationsGetRequest $data (required)
+     * @param  \TencentAds\Model\CustomAudienceEstimationsGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class CustomAudienceEstimationsApi
      *
      * 人群覆盖数预估
      *
-     * @param  \TencentAds\Model\CustomAudienceEstimationsGetRequest $data (required)
+     * @param  \TencentAds\Model\CustomAudienceEstimationsGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class CustomAudienceEstimationsApi
     /**
      * Create request for operation 'customAudienceEstimationsGet'
      *
-     * @param  \TencentAds\Model\CustomAudienceEstimationsGetRequest $data (required)
+     * @param  \TencentAds\Model\CustomAudienceEstimationsGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

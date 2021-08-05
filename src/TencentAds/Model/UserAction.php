@@ -272,7 +272,7 @@ class UserAction implements ModelInterface, ArrayAccess
     /**
      * Sets actionTime
      *
-     * @param int $actionTime actionTime
+     * @param int|mixed $actionTime actionTime
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class UserAction implements ModelInterface, ArrayAccess
     /**
      * Sets userId
      *
-     * @param \TencentAds\Model\ActionsUserId $userId userId
+     * @param \TencentAds\Model\ActionsUserId|mixed $userId userId
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class UserAction implements ModelInterface, ArrayAccess
     /**
      * Sets actionType
      *
-     * @param \TencentAds\Model\ActionType $actionType actionType
+     * @param \TencentAds\Model\ActionType|mixed $actionType actionType
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class UserAction implements ModelInterface, ArrayAccess
     /**
      * Sets actionParam
      *
-     * @param string $actionParam actionParam
+     * @param string|mixed $actionParam actionParam
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class UserAction implements ModelInterface, ArrayAccess
     /**
      * Sets customAction
      *
-     * @param string $customAction customAction
+     * @param string|mixed $customAction customAction
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class UserAction implements ModelInterface, ArrayAccess
     /**
      * Sets trace
      *
-     * @param \TencentAds\Model\Trace $trace trace
+     * @param \TencentAds\Model\Trace|mixed $trace trace
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class UserAction implements ModelInterface, ArrayAccess
     /**
      * Sets url
      *
-     * @param string $url url
+     * @param string|mixed $url url
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class UserAction implements ModelInterface, ArrayAccess
     /**
      * Sets productInform
      *
-     * @param \TencentAds\Model\ProductInform $productInform productInform
+     * @param \TencentAds\Model\ProductInform|mixed $productInform productInform
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class UserAction implements ModelInterface, ArrayAccess
     /**
      * Sets channel
      *
-     * @param \TencentAds\Model\ActionChannelType $channel channel
+     * @param \TencentAds\Model\ActionChannelType|mixed $channel channel
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class UserAction implements ModelInterface, ArrayAccess
     /**
      * Sets externalActionId
      *
-     * @param string $externalActionId externalActionId
+     * @param string|mixed $externalActionId externalActionId
      *
      * @return $this
      */

@@ -224,7 +224,7 @@ class UpdateAdcreativeDeepLinkUrlItem implements ModelInterface, ArrayAccess
     /**
      * Sets adcreativeId
      *
-     * @param int $adcreativeId adcreativeId
+     * @param int|mixed $adcreativeId adcreativeId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class UpdateAdcreativeDeepLinkUrlItem implements ModelInterface, ArrayAccess
     /**
      * Sets deepLinkUrl
      *
-     * @param string $deepLinkUrl deepLinkUrl
+     * @param string|mixed $deepLinkUrl deepLinkUrl
      *
      * @return $this
      */

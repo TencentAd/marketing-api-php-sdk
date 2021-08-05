@@ -218,7 +218,7 @@ class OuterCluesUpdateListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets index
      *
-     * @param int $index index
+     * @param int|mixed $index index
      *
      * @return $this
      */

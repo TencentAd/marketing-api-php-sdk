@@ -230,7 +230,7 @@ class DeepLinkEnabled implements ModelInterface, ArrayAccess
     /**
      * Sets iosDeepLinkEnabled
      *
-     * @param bool $iosDeepLinkEnabled iosDeepLinkEnabled
+     * @param bool|mixed $iosDeepLinkEnabled iosDeepLinkEnabled
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class DeepLinkEnabled implements ModelInterface, ArrayAccess
     /**
      * Sets androidDeepLinkEnabled
      *
-     * @param bool $androidDeepLinkEnabled androidDeepLinkEnabled
+     * @param bool|mixed $androidDeepLinkEnabled androidDeepLinkEnabled
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class DeepLinkEnabled implements ModelInterface, ArrayAccess
     /**
      * Sets h5DeepLinkEnabled
      *
-     * @param bool $h5DeepLinkEnabled h5DeepLinkEnabled
+     * @param bool|mixed $h5DeepLinkEnabled h5DeepLinkEnabled
      *
      * @return $this
      */

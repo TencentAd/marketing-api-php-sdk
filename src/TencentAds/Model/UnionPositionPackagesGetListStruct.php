@@ -248,7 +248,7 @@ class UnionPositionPackagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets unionPackageId
      *
-     * @param int $unionPackageId unionPackageId
+     * @param int|mixed $unionPackageId unionPackageId
      *
      * @return $this
      */
@@ -272,7 +272,7 @@ class UnionPositionPackagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets unionPackageName
      *
-     * @param string $unionPackageName unionPackageName
+     * @param string|mixed $unionPackageName unionPackageName
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class UnionPositionPackagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets unionPackageType
      *
-     * @param \TencentAds\Model\UnionPackageType $unionPackageType unionPackageType
+     * @param \TencentAds\Model\UnionPackageType|mixed $unionPackageType unionPackageType
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class UnionPositionPackagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets unionPositionIdList
      *
-     * @param int[] $unionPositionIdList unionPositionIdList
+     * @param int[]|mixed $unionPositionIdList unionPositionIdList
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class UnionPositionPackagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class UnionPositionPackagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedTime
      *
-     * @param int $lastModifiedTime lastModifiedTime
+     * @param int|mixed $lastModifiedTime lastModifiedTime
      *
      * @return $this
      */

@@ -223,7 +223,7 @@ class LocalStoresAddressParsingResultGetResponseData implements ModelInterface, 
     /**
      * Sets successList
      *
-     * @param \TencentAds\Model\SuccessPoiInfoStruct[] $successList successList
+     * @param \TencentAds\Model\SuccessPoiInfoStruct[]|mixed $successList successList
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class LocalStoresAddressParsingResultGetResponseData implements ModelInterface, 
     /**
      * Sets failList
      *
-     * @param string[] $failList failList
+     * @param string[]|mixed $failList failList
      *
      * @return $this
      */

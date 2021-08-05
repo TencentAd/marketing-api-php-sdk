@@ -235,7 +235,7 @@ class TargetingsShareAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets targetingId
      *
-     * @param int $targetingId targetingId
+     * @param int|mixed $targetingId targetingId
      *
      * @return $this
      */
@@ -259,7 +259,7 @@ class TargetingsShareAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets shareToAccountId
      *
-     * @param int $shareToAccountId shareToAccountId
+     * @param int|mixed $shareToAccountId shareToAccountId
      *
      * @return $this
      */
@@ -283,7 +283,7 @@ class TargetingsShareAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets shareType
      *
-     * @param \TencentAds\Model\TargetingShareType $shareType shareType
+     * @param \TencentAds\Model\TargetingShareType|mixed $shareType shareType
      *
      * @return $this
      */
@@ -307,7 +307,7 @@ class TargetingsShareAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */

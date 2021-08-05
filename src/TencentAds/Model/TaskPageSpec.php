@@ -230,7 +230,7 @@ class TaskPageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets pageId
      *
-     * @param int $pageId pageId
+     * @param int|mixed $pageId pageId
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class TaskPageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets pageUrl
      *
-     * @param string $pageUrl pageUrl
+     * @param string|mixed $pageUrl pageUrl
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class TaskPageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets overrideCanvasHeadOption
      *
-     * @param \TencentAds\Model\OverrideCanvasHeadOption $overrideCanvasHeadOption overrideCanvasHeadOption
+     * @param \TencentAds\Model\OverrideCanvasHeadOption|mixed $overrideCanvasHeadOption overrideCanvasHeadOption
      *
      * @return $this
      */

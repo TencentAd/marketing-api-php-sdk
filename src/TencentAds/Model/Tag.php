@@ -254,7 +254,7 @@ class Tag implements ModelInterface, ArrayAccess
     /**
      * Sets tagId
      *
-     * @param int $tagId tagId
+     * @param int|mixed $tagId tagId
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class Tag implements ModelInterface, ArrayAccess
     /**
      * Sets parentTagId
      *
-     * @param int $parentTagId parentTagId
+     * @param int|mixed $parentTagId parentTagId
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class Tag implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param string $name name
+     * @param string|mixed $name name
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class Tag implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class Tag implements ModelInterface, ArrayAccess
     /**
      * Sets tagCode
      *
-     * @param string $tagCode tagCode
+     * @param string|mixed $tagCode tagCode
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class Tag implements ModelInterface, ArrayAccess
     /**
      * Sets userCount
      *
-     * @param int $userCount userCount
+     * @param int|mixed $userCount userCount
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class Tag implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param string $createdTime createdTime
+     * @param string|mixed $createdTime createdTime
      *
      * @return $this
      */

@@ -224,7 +224,7 @@ class AdcreativeCorporate implements ModelInterface, ArrayAccess
     /**
      * Sets corporateName
      *
-     * @param string $corporateName corporateName
+     * @param string|mixed $corporateName corporateName
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class AdcreativeCorporate implements ModelInterface, ArrayAccess
     /**
      * Sets corporateImg
      *
-     * @param string $corporateImg corporateImg
+     * @param string|mixed $corporateImg corporateImg
      *
      * @return $this
      */

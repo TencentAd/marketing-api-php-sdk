@@ -314,7 +314,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets campaignId
      *
-     * @param int $campaignId campaignId
+     * @param int|mixed $campaignId campaignId
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -362,7 +362,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adId
      *
-     * @param int $adId adId
+     * @param int|mixed $adId adId
      *
      * @return $this
      */
@@ -386,7 +386,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adName
      *
-     * @param string $adName adName
+     * @param string|mixed $adName adName
      *
      * @return $this
      */
@@ -410,7 +410,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adcreativeId
      *
-     * @param int $adcreativeId adcreativeId
+     * @param int|mixed $adcreativeId adcreativeId
      *
      * @return $this
      */
@@ -434,7 +434,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adcreative
      *
-     * @param \TencentAds\Model\Adcreative $adcreative adcreative
+     * @param \TencentAds\Model\Adcreative|mixed $adcreative adcreative
      *
      * @return $this
      */
@@ -458,7 +458,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets configuredStatus
      *
-     * @param \TencentAds\Model\AdStatus $configuredStatus configuredStatus
+     * @param \TencentAds\Model\AdStatus|mixed $configuredStatus configuredStatus
      *
      * @return $this
      */
@@ -482,7 +482,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets systemStatus
      *
-     * @param \TencentAds\Model\SysStatus $systemStatus systemStatus
+     * @param \TencentAds\Model\SysStatus|mixed $systemStatus systemStatus
      *
      * @return $this
      */
@@ -506,7 +506,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets auditSpec
      *
-     * @param \TencentAds\Model\AuditSpecStruct[] $auditSpec auditSpec
+     * @param \TencentAds\Model\AuditSpecStruct[]|mixed $auditSpec auditSpec
      *
      * @return $this
      */
@@ -530,7 +530,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets impressionTrackingUrl
      *
-     * @param string $impressionTrackingUrl impressionTrackingUrl
+     * @param string|mixed $impressionTrackingUrl impressionTrackingUrl
      *
      * @return $this
      */
@@ -554,7 +554,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets clickTrackingUrl
      *
-     * @param string $clickTrackingUrl clickTrackingUrl
+     * @param string|mixed $clickTrackingUrl clickTrackingUrl
      *
      * @return $this
      */
@@ -578,7 +578,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets feedsInteractionEnabled
      *
-     * @param bool $feedsInteractionEnabled feedsInteractionEnabled
+     * @param bool|mixed $feedsInteractionEnabled feedsInteractionEnabled
      *
      * @return $this
      */
@@ -602,7 +602,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets isDeleted
      *
-     * @param bool $isDeleted isDeleted
+     * @param bool|mixed $isDeleted isDeleted
      *
      * @return $this
      */
@@ -626,7 +626,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets isDynamicCreative
      *
-     * @param bool $isDynamicCreative isDynamicCreative
+     * @param bool|mixed $isDynamicCreative isDynamicCreative
      *
      * @return $this
      */
@@ -650,7 +650,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -674,7 +674,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedTime
      *
-     * @param int $lastModifiedTime lastModifiedTime
+     * @param int|mixed $lastModifiedTime lastModifiedTime
      *
      * @return $this
      */
@@ -698,7 +698,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets rejectMessage
      *
-     * @param string $rejectMessage rejectMessage
+     * @param string|mixed $rejectMessage rejectMessage
      *
      * @return $this
      */

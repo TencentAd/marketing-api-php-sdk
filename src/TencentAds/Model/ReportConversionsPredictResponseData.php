@@ -217,7 +217,7 @@ class ReportConversionsPredictResponseData implements ModelInterface, ArrayAcces
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\CollectionStruct[] $list list
+     * @param \TencentAds\Model\CollectionStruct[]|mixed $list list
      *
      * @return $this
      */

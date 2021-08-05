@@ -236,7 +236,7 @@ class LocalWechatFundSpec implements ModelInterface, ArrayAccess
     /**
      * Sets cashUsableAmount
      *
-     * @param int $cashUsableAmount cashUsableAmount
+     * @param int|mixed $cashUsableAmount cashUsableAmount
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class LocalWechatFundSpec implements ModelInterface, ArrayAccess
     /**
      * Sets giftUsableAmount
      *
-     * @param int $giftUsableAmount giftUsableAmount
+     * @param int|mixed $giftUsableAmount giftUsableAmount
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class LocalWechatFundSpec implements ModelInterface, ArrayAccess
     /**
      * Sets cashLockedAmount
      *
-     * @param int $cashLockedAmount cashLockedAmount
+     * @param int|mixed $cashLockedAmount cashLockedAmount
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class LocalWechatFundSpec implements ModelInterface, ArrayAccess
     /**
      * Sets giftLockedAmount
      *
-     * @param int $giftLockedAmount giftLockedAmount
+     * @param int|mixed $giftLockedAmount giftLockedAmount
      *
      * @return $this
      */

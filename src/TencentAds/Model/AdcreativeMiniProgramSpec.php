@@ -224,7 +224,7 @@ class AdcreativeMiniProgramSpec implements ModelInterface, ArrayAccess
     /**
      * Sets miniProgramId
      *
-     * @param string $miniProgramId miniProgramId
+     * @param string|mixed $miniProgramId miniProgramId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class AdcreativeMiniProgramSpec implements ModelInterface, ArrayAccess
     /**
      * Sets miniProgramPath
      *
-     * @param string $miniProgramPath miniProgramPath
+     * @param string|mixed $miniProgramPath miniProgramPath
      *
      * @return $this
      */

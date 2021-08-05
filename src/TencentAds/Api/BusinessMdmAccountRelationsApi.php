@@ -92,11 +92,11 @@ class BusinessMdmAccountRelationsApi
      *
      * 查询商务管家或同主体下广告主信息
      *
-     * @param  int $accountId accountId (required)
-     * @param  string $relationType relationType (required)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string|mixed $relationType relationType (required)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -113,11 +113,11 @@ class BusinessMdmAccountRelationsApi
      *
      * 查询商务管家或同主体下广告主信息
      *
-     * @param  int $accountId (required)
-     * @param  string $relationType (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $relationType (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -192,11 +192,11 @@ class BusinessMdmAccountRelationsApi
      *
      * 查询商务管家或同主体下广告主信息
      *
-     * @param  int $accountId (required)
-     * @param  string $relationType (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $relationType (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -216,11 +216,11 @@ class BusinessMdmAccountRelationsApi
      *
      * 查询商务管家或同主体下广告主信息
      *
-     * @param  int $accountId (required)
-     * @param  string $relationType (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $relationType (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -270,11 +270,11 @@ class BusinessMdmAccountRelationsApi
     /**
      * Create request for operation 'businessMdmAccountRelationsGet'
      *
-     * @param  int $accountId (required)
-     * @param  string $relationType (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $relationType (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

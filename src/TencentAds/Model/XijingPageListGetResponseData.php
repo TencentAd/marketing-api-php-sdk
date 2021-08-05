@@ -235,7 +235,7 @@ class XijingPageListGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\PageStruct[] $list list
+     * @param \TencentAds\Model\PageStruct[]|mixed $list list
      *
      * @return $this
      */
@@ -259,7 +259,7 @@ class XijingPageListGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets totalPages
      *
-     * @param int $totalPages totalPages
+     * @param int|mixed $totalPages totalPages
      *
      * @return $this
      */
@@ -283,7 +283,7 @@ class XijingPageListGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets pageSize
      *
-     * @param int $pageSize pageSize
+     * @param int|mixed $pageSize pageSize
      *
      * @return $this
      */
@@ -307,7 +307,7 @@ class XijingPageListGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets pageIndex
      *
-     * @param int $pageIndex pageIndex
+     * @param int|mixed $pageIndex pageIndex
      *
      * @return $this
      */

@@ -230,7 +230,7 @@ class CategoryPathsItem implements ModelInterface, ArrayAccess
     /**
      * Sets categoryId
      *
-     * @param int $categoryId categoryId
+     * @param int|mixed $categoryId categoryId
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class CategoryPathsItem implements ModelInterface, ArrayAccess
     /**
      * Sets categoryName
      *
-     * @param string $categoryName categoryName
+     * @param string|mixed $categoryName categoryName
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class CategoryPathsItem implements ModelInterface, ArrayAccess
     /**
      * Sets level
      *
-     * @param int $level level
+     * @param int|mixed $level level
      *
      * @return $this
      */

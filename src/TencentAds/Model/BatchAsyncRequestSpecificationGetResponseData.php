@@ -229,7 +229,7 @@ class BatchAsyncRequestSpecificationGetResponseData implements ModelInterface, A
     /**
      * Sets summary
      *
-     * @param \TencentAds\Model\Summary $summary summary
+     * @param \TencentAds\Model\Summary|mixed $summary summary
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class BatchAsyncRequestSpecificationGetResponseData implements ModelInterface, A
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\DetailListStruct[] $list list
+     * @param \TencentAds\Model\DetailListStruct[]|mixed $list list
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class BatchAsyncRequestSpecificationGetResponseData implements ModelInterface, A
     /**
      * Sets pageInfo
      *
-     * @param \TencentAds\Model\Conf $pageInfo pageInfo
+     * @param \TencentAds\Model\Conf|mixed $pageInfo pageInfo
      *
      * @return $this
      */

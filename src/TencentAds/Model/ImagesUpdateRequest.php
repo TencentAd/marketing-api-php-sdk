@@ -229,7 +229,7 @@ class ImagesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets imageId
      *
-     * @param string $imageId imageId
+     * @param string|mixed $imageId imageId
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class ImagesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class ImagesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */

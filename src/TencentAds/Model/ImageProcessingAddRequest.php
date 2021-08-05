@@ -241,7 +241,7 @@ class ImageProcessingAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class ImageProcessingAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets imageId
      *
-     * @param string $imageId imageId
+     * @param string|mixed $imageId imageId
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class ImageProcessingAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets operationType
      *
-     * @param \TencentAds\Model\ImageOperationType $operationType operationType
+     * @param \TencentAds\Model\ImageOperationType|mixed $operationType operationType
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class ImageProcessingAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets operationSpec
      *
-     * @param \TencentAds\Model\CropOperationSpec $operationSpec operationSpec
+     * @param \TencentAds\Model\CropOperationSpec|mixed $operationSpec operationSpec
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class ImageProcessingAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets fileSizeMax
      *
-     * @param int $fileSizeMax fileSizeMax
+     * @param int|mixed $fileSizeMax fileSizeMax
      *
      * @return $this
      */

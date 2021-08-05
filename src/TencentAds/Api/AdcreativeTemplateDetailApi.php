@@ -92,13 +92,13 @@ class AdcreativeTemplateDetailApi
      *
      * 获取创意规格信息
      *
-     * @param  int $adcreativeTemplateId adcreativeTemplateId (required)
-     * @param  string $promotedObjectType promotedObjectType (required)
-     * @param  int $accountId accountId (optional)
-     * @param  bool $automaticSiteEnabled automaticSiteEnabled (optional)
-     * @param  string[] $siteSet siteSet (optional)
-     * @param  bool $isDynamicCreativeAd isDynamicCreativeAd (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $adcreativeTemplateId adcreativeTemplateId (required)
+     * @param  string|mixed $promotedObjectType promotedObjectType (required)
+     * @param  int|mixed $accountId accountId (optional)
+     * @param  bool|mixed $automaticSiteEnabled automaticSiteEnabled (optional)
+     * @param  string[]|mixed $siteSet siteSet (optional)
+     * @param  bool|mixed $isDynamicCreativeAd isDynamicCreativeAd (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -115,13 +115,13 @@ class AdcreativeTemplateDetailApi
      *
      * 获取创意规格信息
      *
-     * @param  int $adcreativeTemplateId (required)
-     * @param  string $promotedObjectType (required)
-     * @param  int $accountId (optional)
-     * @param  bool $automaticSiteEnabled (optional)
-     * @param  string[] $siteSet (optional)
-     * @param  bool $isDynamicCreativeAd (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $adcreativeTemplateId (required)
+     * @param  string|mixed $promotedObjectType (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  bool|mixed $automaticSiteEnabled (optional)
+     * @param  string[]|mixed $siteSet (optional)
+     * @param  bool|mixed $isDynamicCreativeAd (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -196,13 +196,13 @@ class AdcreativeTemplateDetailApi
      *
      * 获取创意规格信息
      *
-     * @param  int $adcreativeTemplateId (required)
-     * @param  string $promotedObjectType (required)
-     * @param  int $accountId (optional)
-     * @param  bool $automaticSiteEnabled (optional)
-     * @param  string[] $siteSet (optional)
-     * @param  bool $isDynamicCreativeAd (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $adcreativeTemplateId (required)
+     * @param  string|mixed $promotedObjectType (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  bool|mixed $automaticSiteEnabled (optional)
+     * @param  string[]|mixed $siteSet (optional)
+     * @param  bool|mixed $isDynamicCreativeAd (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -222,13 +222,13 @@ class AdcreativeTemplateDetailApi
      *
      * 获取创意规格信息
      *
-     * @param  int $adcreativeTemplateId (required)
-     * @param  string $promotedObjectType (required)
-     * @param  int $accountId (optional)
-     * @param  bool $automaticSiteEnabled (optional)
-     * @param  string[] $siteSet (optional)
-     * @param  bool $isDynamicCreativeAd (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $adcreativeTemplateId (required)
+     * @param  string|mixed $promotedObjectType (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  bool|mixed $automaticSiteEnabled (optional)
+     * @param  string[]|mixed $siteSet (optional)
+     * @param  bool|mixed $isDynamicCreativeAd (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -278,13 +278,13 @@ class AdcreativeTemplateDetailApi
     /**
      * Create request for operation 'adcreativeTemplateDetailGet'
      *
-     * @param  int $adcreativeTemplateId (required)
-     * @param  string $promotedObjectType (required)
-     * @param  int $accountId (optional)
-     * @param  bool $automaticSiteEnabled (optional)
-     * @param  string[] $siteSet (optional)
-     * @param  bool $isDynamicCreativeAd (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $adcreativeTemplateId (required)
+     * @param  string|mixed $promotedObjectType (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  bool|mixed $automaticSiteEnabled (optional)
+     * @param  string[]|mixed $siteSet (optional)
+     * @param  bool|mixed $isDynamicCreativeAd (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

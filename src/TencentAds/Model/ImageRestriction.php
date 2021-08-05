@@ -236,7 +236,7 @@ class ImageRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets width
      *
-     * @param int $width width
+     * @param int|mixed $width width
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class ImageRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets height
      *
-     * @param int $height height
+     * @param int|mixed $height height
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class ImageRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets fileSize
      *
-     * @param int $fileSize fileSize
+     * @param int|mixed $fileSize fileSize
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class ImageRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets fileFormat
      *
-     * @param string[] $fileFormat fileFormat
+     * @param string[]|mixed $fileFormat fileFormat
      *
      * @return $this
      */

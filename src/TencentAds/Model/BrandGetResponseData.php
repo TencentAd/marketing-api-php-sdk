@@ -223,7 +223,7 @@ class BrandGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\BrandGetListStruct[] $list list
+     * @param \TencentAds\Model\BrandGetListStruct[]|mixed $list list
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class BrandGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets pageInfo
      *
-     * @param \TencentAds\Model\PageInfo $pageInfo pageInfo
+     * @param \TencentAds\Model\PageInfo|mixed $pageInfo pageInfo
      *
      * @return $this
      */

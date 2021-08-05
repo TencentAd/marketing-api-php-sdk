@@ -254,7 +254,7 @@ class PropertiesUserId implements ModelInterface, ArrayAccess
     /**
      * Sets hashQq
      *
-     * @param string $hashQq hashQq
+     * @param string|mixed $hashQq hashQq
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class PropertiesUserId implements ModelInterface, ArrayAccess
     /**
      * Sets hashPhone
      *
-     * @param string $hashPhone hashPhone
+     * @param string|mixed $hashPhone hashPhone
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class PropertiesUserId implements ModelInterface, ArrayAccess
     /**
      * Sets hashIdfa
      *
-     * @param string $hashIdfa hashIdfa
+     * @param string|mixed $hashIdfa hashIdfa
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class PropertiesUserId implements ModelInterface, ArrayAccess
     /**
      * Sets hashImei
      *
-     * @param string $hashImei hashImei
+     * @param string|mixed $hashImei hashImei
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class PropertiesUserId implements ModelInterface, ArrayAccess
     /**
      * Sets hashMac
      *
-     * @param string $hashMac hashMac
+     * @param string|mixed $hashMac hashMac
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class PropertiesUserId implements ModelInterface, ArrayAccess
     /**
      * Sets wechatOpenid
      *
-     * @param string $wechatOpenid wechatOpenid
+     * @param string|mixed $wechatOpenid wechatOpenid
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class PropertiesUserId implements ModelInterface, ArrayAccess
     /**
      * Sets wechatUnionid
      *
-     * @param string $wechatUnionid wechatUnionid
+     * @param string|mixed $wechatUnionid wechatUnionid
      *
      * @return $this
      */

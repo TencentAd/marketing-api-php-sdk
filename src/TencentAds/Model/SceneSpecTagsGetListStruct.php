@@ -242,7 +242,7 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets id
      *
-     * @param int $id id
+     * @param int|mixed $id id
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param string $name name
+     * @param string|mixed $name name
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets parentId
      *
-     * @param int $parentId parentId
+     * @param int|mixed $parentId parentId
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class SceneSpecTagsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets targetingName
      *
-     * @param string $targetingName targetingName
+     * @param string|mixed $targetingName targetingName
      *
      * @return $this
      */

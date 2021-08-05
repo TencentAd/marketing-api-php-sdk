@@ -217,7 +217,7 @@ class WechatAdLabelsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\WechatAdLabelsGetListStruct[] $list list
+     * @param \TencentAds\Model\WechatAdLabelsGetListStruct[]|mixed $list list
      *
      * @return $this
      */

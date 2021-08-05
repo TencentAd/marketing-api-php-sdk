@@ -223,7 +223,7 @@ class UnionPositionPackagesDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class UnionPositionPackagesDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Sets unionPackageId
      *
-     * @param int $unionPackageId unionPackageId
+     * @param int|mixed $unionPackageId unionPackageId
      *
      * @return $this
      */

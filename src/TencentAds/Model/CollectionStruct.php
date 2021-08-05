@@ -224,7 +224,7 @@ class CollectionStruct implements ModelInterface, ArrayAccess
     /**
      * Sets metrics
      *
-     * @param \TencentAds\Model\Metrics $metrics metrics
+     * @param \TencentAds\Model\Metrics|mixed $metrics metrics
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class CollectionStruct implements ModelInterface, ArrayAccess
     /**
      * Sets dimension
      *
-     * @param \TencentAds\Model\Dimension $dimension dimension
+     * @param \TencentAds\Model\Dimension|mixed $dimension dimension
      *
      * @return $this
      */

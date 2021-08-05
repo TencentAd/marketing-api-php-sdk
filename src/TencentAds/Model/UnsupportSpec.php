@@ -230,7 +230,7 @@ class UnsupportSpec implements ModelInterface, ArrayAccess
     /**
      * Sets siteSet
      *
-     * @param string[] $siteSet siteSet
+     * @param string[]|mixed $siteSet siteSet
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class UnsupportSpec implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param string $name name
+     * @param string|mixed $name name
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class UnsupportSpec implements ModelInterface, ArrayAccess
     /**
      * Sets unsupportType
      *
-     * @param \TencentAds\Model\UnsupportType $unsupportType unsupportType
+     * @param \TencentAds\Model\UnsupportType|mixed $unsupportType unsupportType
      *
      * @return $this
      */

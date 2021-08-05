@@ -224,7 +224,7 @@ class PageSpecsListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets bgColor
      *
-     * @param string $bgColor bgColor
+     * @param string|mixed $bgColor bgColor
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class PageSpecsListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageElementsSpecList
      *
-     * @param \TencentAds\Model\PageElementsSpecListStruct[] $pageElementsSpecList pageElementsSpecList
+     * @param \TencentAds\Model\PageElementsSpecListStruct[]|mixed $pageElementsSpecList pageElementsSpecList
      *
      * @return $this
      */

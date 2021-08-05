@@ -217,7 +217,7 @@ class BarrageAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\BarrageAddListStruct[] $list list
+     * @param \TencentAds\Model\BarrageAddListStruct[]|mixed $list list
      *
      * @return $this
      */

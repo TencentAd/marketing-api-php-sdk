@@ -235,7 +235,7 @@ class ProductItemsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -259,7 +259,7 @@ class ProductItemsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets productCatalogId
      *
-     * @param int $productCatalogId productCatalogId
+     * @param int|mixed $productCatalogId productCatalogId
      *
      * @return $this
      */
@@ -283,7 +283,7 @@ class ProductItemsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets feedId
      *
-     * @param int $feedId feedId
+     * @param int|mixed $feedId feedId
      *
      * @return $this
      */
@@ -307,7 +307,7 @@ class ProductItemsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets productItemSpecList
      *
-     * @param \TencentAds\Model\ProductItemSpec[] $productItemSpecList productItemSpecList
+     * @param \TencentAds\Model\ProductItemSpec[]|mixed $productItemSpecList productItemSpecList
      *
      * @return $this
      */

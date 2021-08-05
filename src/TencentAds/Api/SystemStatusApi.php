@@ -92,10 +92,10 @@ class SystemStatusApi
      *
      * 获取广告组系统状态信息
      *
-     * @param  int $accountId accountId (required)
-     * @param  string $statusType statusType (required)
-     * @param  \TencentAds\Model\StatusSpec $statusSpec statusSpec (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string|mixed $statusType statusType (required)
+     * @param  \TencentAds\Model\StatusSpec|mixed $statusSpec statusSpec (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -112,10 +112,10 @@ class SystemStatusApi
      *
      * 获取广告组系统状态信息
      *
-     * @param  int $accountId (required)
-     * @param  string $statusType (required)
-     * @param  \TencentAds\Model\StatusSpec $statusSpec (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $statusType (required)
+     * @param  \TencentAds\Model\StatusSpec|mixed $statusSpec (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -190,10 +190,10 @@ class SystemStatusApi
      *
      * 获取广告组系统状态信息
      *
-     * @param  int $accountId (required)
-     * @param  string $statusType (required)
-     * @param  \TencentAds\Model\StatusSpec $statusSpec (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $statusType (required)
+     * @param  \TencentAds\Model\StatusSpec|mixed $statusSpec (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -213,10 +213,10 @@ class SystemStatusApi
      *
      * 获取广告组系统状态信息
      *
-     * @param  int $accountId (required)
-     * @param  string $statusType (required)
-     * @param  \TencentAds\Model\StatusSpec $statusSpec (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $statusType (required)
+     * @param  \TencentAds\Model\StatusSpec|mixed $statusSpec (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -266,10 +266,10 @@ class SystemStatusApi
     /**
      * Create request for operation 'systemStatusGet'
      *
-     * @param  int $accountId (required)
-     * @param  string $statusType (required)
-     * @param  \TencentAds\Model\StatusSpec $statusSpec (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $statusType (required)
+     * @param  \TencentAds\Model\StatusSpec|mixed $statusSpec (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

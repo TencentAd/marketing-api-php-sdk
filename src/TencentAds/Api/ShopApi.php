@@ -92,7 +92,7 @@ class ShopApi
      *
      * 创建广告
      *
-     * @param  \TencentAds\Model\ShopAddRequest $data data (required)
+     * @param  \TencentAds\Model\ShopAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class ShopApi
      *
      * 创建广告
      *
-     * @param  \TencentAds\Model\ShopAddRequest $data (required)
+     * @param  \TencentAds\Model\ShopAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class ShopApi
      *
      * 创建广告
      *
-     * @param  \TencentAds\Model\ShopAddRequest $data (required)
+     * @param  \TencentAds\Model\ShopAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class ShopApi
      *
      * 创建广告
      *
-     * @param  \TencentAds\Model\ShopAddRequest $data (required)
+     * @param  \TencentAds\Model\ShopAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class ShopApi
     /**
      * Create request for operation 'shopAdd'
      *
-     * @param  \TencentAds\Model\ShopAddRequest $data (required)
+     * @param  \TencentAds\Model\ShopAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,7 +374,7 @@ class ShopApi
      *
      * 拉取广告列表
      *
-     * @param  \TencentAds\Model\ShopGetRequest $data data (required)
+     * @param  \TencentAds\Model\ShopGetRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -391,7 +391,7 @@ class ShopApi
      *
      * 拉取广告列表
      *
-     * @param  \TencentAds\Model\ShopGetRequest $data (required)
+     * @param  \TencentAds\Model\ShopGetRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -466,7 +466,7 @@ class ShopApi
      *
      * 拉取广告列表
      *
-     * @param  \TencentAds\Model\ShopGetRequest $data (required)
+     * @param  \TencentAds\Model\ShopGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -486,7 +486,7 @@ class ShopApi
      *
      * 拉取广告列表
      *
-     * @param  \TencentAds\Model\ShopGetRequest $data (required)
+     * @param  \TencentAds\Model\ShopGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -536,7 +536,7 @@ class ShopApi
     /**
      * Create request for operation 'shopGet'
      *
-     * @param  \TencentAds\Model\ShopGetRequest $data (required)
+     * @param  \TencentAds\Model\ShopGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -656,7 +656,7 @@ class ShopApi
      *
      * 更新广告
      *
-     * @param  \TencentAds\Model\ShopUpdateRequest $data data (required)
+     * @param  \TencentAds\Model\ShopUpdateRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -673,7 +673,7 @@ class ShopApi
      *
      * 更新广告
      *
-     * @param  \TencentAds\Model\ShopUpdateRequest $data (required)
+     * @param  \TencentAds\Model\ShopUpdateRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -748,7 +748,7 @@ class ShopApi
      *
      * 更新广告
      *
-     * @param  \TencentAds\Model\ShopUpdateRequest $data (required)
+     * @param  \TencentAds\Model\ShopUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -768,7 +768,7 @@ class ShopApi
      *
      * 更新广告
      *
-     * @param  \TencentAds\Model\ShopUpdateRequest $data (required)
+     * @param  \TencentAds\Model\ShopUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -818,7 +818,7 @@ class ShopApi
     /**
      * Create request for operation 'shopUpdate'
      *
-     * @param  \TencentAds\Model\ShopUpdateRequest $data (required)
+     * @param  \TencentAds\Model\ShopUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

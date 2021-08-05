@@ -217,7 +217,7 @@ class AdsUpdateConfiguredStatusResponseData implements ModelInterface, ArrayAcce
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\AdsUpdateConfiguredStatusListStruct[] $list list
+     * @param \TencentAds\Model\AdsUpdateConfiguredStatusListStruct[]|mixed $list list
      *
      * @return $this
      */

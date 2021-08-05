@@ -236,7 +236,7 @@ class GeoLocations implements ModelInterface, ArrayAccess
     /**
      * Sets locationTypes
      *
-     * @param string[] $locationTypes locationTypes
+     * @param string[]|mixed $locationTypes locationTypes
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class GeoLocations implements ModelInterface, ArrayAccess
     /**
      * Sets regions
      *
-     * @param int[] $regions regions
+     * @param int[]|mixed $regions regions
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class GeoLocations implements ModelInterface, ArrayAccess
     /**
      * Sets businessDistricts
      *
-     * @param int[] $businessDistricts businessDistricts
+     * @param int[]|mixed $businessDistricts businessDistricts
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class GeoLocations implements ModelInterface, ArrayAccess
     /**
      * Sets customLocations
      *
-     * @param \TencentAds\Model\CustomLocationsItemWithName[] $customLocations customLocations
+     * @param \TencentAds\Model\CustomLocationsItemWithName[]|mixed $customLocations customLocations
      *
      * @return $this
      */

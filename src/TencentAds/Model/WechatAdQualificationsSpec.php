@@ -224,7 +224,7 @@ class WechatAdQualificationsSpec implements ModelInterface, ArrayAccess
     /**
      * Sets qualificationName
      *
-     * @param string $qualificationName qualificationName
+     * @param string|mixed $qualificationName qualificationName
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class WechatAdQualificationsSpec implements ModelInterface, ArrayAccess
     /**
      * Sets imageId
      *
-     * @param string $imageId imageId
+     * @param string|mixed $imageId imageId
      *
      * @return $this
      */

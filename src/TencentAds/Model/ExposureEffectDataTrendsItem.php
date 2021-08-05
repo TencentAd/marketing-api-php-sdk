@@ -224,7 +224,7 @@ class ExposureEffectDataTrendsItem implements ModelInterface, ArrayAccess
     /**
      * Sets date
      *
-     * @param string $date date
+     * @param string|mixed $date date
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class ExposureEffectDataTrendsItem implements ModelInterface, ArrayAccess
     /**
      * Sets trends
      *
-     * @param \TencentAds\Model\PointStruct[] $trends trends
+     * @param \TencentAds\Model\PointStruct[]|mixed $trends trends
      *
      * @return $this
      */

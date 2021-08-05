@@ -253,7 +253,7 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets assetType
      *
-     * @param \TencentAds\Model\AssetType $assetType assetType
+     * @param \TencentAds\Model\AssetType|mixed $assetType assetType
      *
      * @return $this
      */
@@ -301,7 +301,7 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets assetPermissionSpec
      *
-     * @param \TencentAds\Model\AssetPermissionSpecStruct[] $assetPermissionSpec assetPermissionSpec
+     * @param \TencentAds\Model\AssetPermissionSpecStruct[]|mixed $assetPermissionSpec assetPermissionSpec
      *
      * @return $this
      */
@@ -325,7 +325,7 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets licensingAccountIdList
      *
-     * @param int[] $licensingAccountIdList licensingAccountIdList
+     * @param int[]|mixed $licensingAccountIdList licensingAccountIdList
      *
      * @return $this
      */
@@ -349,7 +349,7 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets licensingIdType
      *
-     * @param \TencentAds\Model\AssetAccountType $licensingIdType licensingIdType
+     * @param \TencentAds\Model\AssetAccountType|mixed $licensingIdType licensingIdType
      *
      * @return $this
      */
@@ -373,7 +373,7 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets pathId
      *
-     * @param int $pathId pathId
+     * @param int|mixed $pathId pathId
      *
      * @return $this
      */
@@ -397,7 +397,7 @@ class AssetPermissionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets permissionList
      *
-     * @param string[] $permissionList permissionList
+     * @param string[]|mixed $permissionList permissionList
      *
      * @return $this
      */

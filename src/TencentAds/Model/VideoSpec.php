@@ -236,7 +236,7 @@ class VideoSpec implements ModelInterface, ArrayAccess
     /**
      * Sets videoId
      *
-     * @param string $videoId videoId
+     * @param string|mixed $videoId videoId
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class VideoSpec implements ModelInterface, ArrayAccess
     /**
      * Sets width
      *
-     * @param int $width width
+     * @param int|mixed $width width
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class VideoSpec implements ModelInterface, ArrayAccess
     /**
      * Sets height
      *
-     * @param int $height height
+     * @param int|mixed $height height
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class VideoSpec implements ModelInterface, ArrayAccess
     /**
      * Sets inMiddle
      *
-     * @param int $inMiddle inMiddle
+     * @param int|mixed $inMiddle inMiddle
      *
      * @return $this
      */

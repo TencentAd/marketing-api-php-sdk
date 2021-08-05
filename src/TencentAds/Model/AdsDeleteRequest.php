@@ -223,7 +223,7 @@ class AdsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Sets adId
      *
-     * @param int $adId adId
+     * @param int|mixed $adId adId
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class AdsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */

@@ -224,7 +224,7 @@ class SupportLinkNameType implements ModelInterface, ArrayAccess
     /**
      * Sets required
      *
-     * @param bool $required required
+     * @param bool|mixed $required required
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class SupportLinkNameType implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\SupportLinkNameStruct[] $list list
+     * @param \TencentAds\Model\SupportLinkNameStruct[]|mixed $list list
      *
      * @return $this
      */

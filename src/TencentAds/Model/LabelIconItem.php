@@ -224,7 +224,7 @@ class LabelIconItem implements ModelInterface, ArrayAccess
     /**
      * Sets url
      *
-     * @param string $url url
+     * @param string|mixed $url url
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class LabelIconItem implements ModelInterface, ArrayAccess
     /**
      * Sets text
      *
-     * @param string $text text
+     * @param string|mixed $text text
      *
      * @return $this
      */

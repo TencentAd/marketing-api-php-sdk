@@ -224,7 +224,7 @@ class EcInfo implements ModelInterface, ArrayAccess
     /**
      * Sets productPrice
      *
-     * @param int $productPrice productPrice
+     * @param int|mixed $productPrice productPrice
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class EcInfo implements ModelInterface, ArrayAccess
     /**
      * Sets productMetaClass
      *
-     * @param int $productMetaClass productMetaClass
+     * @param int|mixed $productMetaClass productMetaClass
      *
      * @return $this
      */

@@ -92,11 +92,11 @@ class BatchAsyncRequestSpecificationApi
      *
      * 获取批量异步请求任务详情
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $taskId taskId (required)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $taskId taskId (required)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -113,11 +113,11 @@ class BatchAsyncRequestSpecificationApi
      *
      * 获取批量异步请求任务详情
      *
-     * @param  int $accountId (required)
-     * @param  int $taskId (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $taskId (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -192,11 +192,11 @@ class BatchAsyncRequestSpecificationApi
      *
      * 获取批量异步请求任务详情
      *
-     * @param  int $accountId (required)
-     * @param  int $taskId (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $taskId (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -216,11 +216,11 @@ class BatchAsyncRequestSpecificationApi
      *
      * 获取批量异步请求任务详情
      *
-     * @param  int $accountId (required)
-     * @param  int $taskId (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $taskId (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -270,11 +270,11 @@ class BatchAsyncRequestSpecificationApi
     /**
      * Create request for operation 'batchAsyncRequestSpecificationGet'
      *
-     * @param  int $accountId (required)
-     * @param  int $taskId (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $taskId (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

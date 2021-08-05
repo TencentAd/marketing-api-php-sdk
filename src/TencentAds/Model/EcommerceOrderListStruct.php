@@ -344,7 +344,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets ecommerceOrderId
      *
-     * @param string $ecommerceOrderId ecommerceOrderId
+     * @param string|mixed $ecommerceOrderId ecommerceOrderId
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets customizedPageName
      *
-     * @param string $customizedPageName customizedPageName
+     * @param string|mixed $customizedPageName customizedPageName
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets commodityPackageDetail
      *
-     * @param string $commodityPackageDetail commodityPackageDetail
+     * @param string|mixed $commodityPackageDetail commodityPackageDetail
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets quantity
      *
-     * @param int $quantity quantity
+     * @param int|mixed $quantity quantity
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets price
      *
-     * @param int $price price
+     * @param int|mixed $price price
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets totalPrice
      *
-     * @param int $totalPrice totalPrice
+     * @param int|mixed $totalPrice totalPrice
      *
      * @return $this
      */
@@ -512,7 +512,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets ecommerceOrderTime
      *
-     * @param string $ecommerceOrderTime ecommerceOrderTime
+     * @param string|mixed $ecommerceOrderTime ecommerceOrderTime
      *
      * @return $this
      */
@@ -536,7 +536,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets ecommerceOrderStatus
      *
-     * @param \TencentAds\Model\EcommerceOrderStatus $ecommerceOrderStatus ecommerceOrderStatus
+     * @param \TencentAds\Model\EcommerceOrderStatus|mixed $ecommerceOrderStatus ecommerceOrderStatus
      *
      * @return $this
      */
@@ -560,7 +560,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets userName
      *
-     * @param string $userName userName
+     * @param string|mixed $userName userName
      *
      * @return $this
      */
@@ -584,7 +584,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets userPhone
      *
-     * @param string $userPhone userPhone
+     * @param string|mixed $userPhone userPhone
      *
      * @return $this
      */
@@ -608,7 +608,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets userProvince
      *
-     * @param string $userProvince userProvince
+     * @param string|mixed $userProvince userProvince
      *
      * @return $this
      */
@@ -632,7 +632,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets userCity
      *
-     * @param string $userCity userCity
+     * @param string|mixed $userCity userCity
      *
      * @return $this
      */
@@ -656,7 +656,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets userArea
      *
-     * @param string $userArea userArea
+     * @param string|mixed $userArea userArea
      *
      * @return $this
      */
@@ -680,7 +680,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets userAddress
      *
-     * @param string $userAddress userAddress
+     * @param string|mixed $userAddress userAddress
      *
      * @return $this
      */
@@ -704,7 +704,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets userIp
      *
-     * @param string $userIp userIp
+     * @param string|mixed $userIp userIp
      *
      * @return $this
      */
@@ -728,7 +728,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets userMessage
      *
-     * @param string $userMessage userMessage
+     * @param string|mixed $userMessage userMessage
      *
      * @return $this
      */
@@ -752,7 +752,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets destinationUrl
      *
-     * @param string $destinationUrl destinationUrl
+     * @param string|mixed $destinationUrl destinationUrl
      *
      * @return $this
      */
@@ -776,7 +776,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -800,7 +800,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupName
      *
-     * @param string $adgroupName adgroupName
+     * @param string|mixed $adgroupName adgroupName
      *
      * @return $this
      */
@@ -824,7 +824,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets fromAccountId
      *
-     * @param int $fromAccountId fromAccountId
+     * @param int|mixed $fromAccountId fromAccountId
      *
      * @return $this
      */
@@ -848,7 +848,7 @@ class EcommerceOrderListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets deliverySpec
      *
-     * @param \TencentAds\Model\OrderDeliverySpec $deliverySpec deliverySpec
+     * @param \TencentAds\Model\OrderDeliverySpec|mixed $deliverySpec deliverySpec
      *
      * @return $this
      */

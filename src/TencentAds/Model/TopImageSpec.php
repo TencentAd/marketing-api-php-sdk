@@ -242,7 +242,7 @@ class TopImageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets imageId
      *
-     * @param string $imageId imageId
+     * @param string|mixed $imageId imageId
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class TopImageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets width
      *
-     * @param int $width width
+     * @param int|mixed $width width
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class TopImageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets height
      *
-     * @param int $height height
+     * @param int|mixed $height height
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class TopImageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adLocation
      *
-     * @param string $adLocation adLocation
+     * @param string|mixed $adLocation adLocation
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class TopImageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets outerStyle
      *
-     * @param int $outerStyle outerStyle
+     * @param int|mixed $outerStyle outerStyle
      *
      * @return $this
      */

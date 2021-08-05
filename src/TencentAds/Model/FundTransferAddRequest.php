@@ -247,7 +247,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets amount
      *
-     * @param int $amount amount
+     * @param int|mixed $amount amount
      *
      * @return $this
      */
@@ -271,7 +271,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets transferType
      *
-     * @param string $transferType transferType
+     * @param string|mixed $transferType transferType
      *
      * @return $this
      */
@@ -295,7 +295,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets externalBillNo
      *
-     * @param string $externalBillNo externalBillNo
+     * @param string|mixed $externalBillNo externalBillNo
      *
      * @return $this
      */
@@ -319,7 +319,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets memo
      *
-     * @param string $memo memo
+     * @param string|mixed $memo memo
      *
      * @return $this
      */
@@ -343,7 +343,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -367,7 +367,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets fundType
      *
-     * @param \TencentAds\Model\AccountTypeMap $fundType fundType
+     * @param \TencentAds\Model\AccountTypeMap|mixed $fundType fundType
      *
      * @return $this
      */

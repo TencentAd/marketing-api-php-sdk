@@ -223,7 +223,7 @@ class CommonParamExceptionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets errorFields
      *
-     * @param string[] $errorFields errorFields
+     * @param string[]|mixed $errorFields errorFields
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class CommonParamExceptionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets errorUserMsg
      *
-     * @param string $errorUserMsg errorUserMsg
+     * @param string|mixed $errorUserMsg errorUserMsg
      *
      * @return $this
      */

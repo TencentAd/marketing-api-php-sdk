@@ -259,7 +259,7 @@ class AdsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -283,7 +283,7 @@ class AdsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets adcreativeId
      *
-     * @param int $adcreativeId adcreativeId
+     * @param int|mixed $adcreativeId adcreativeId
      *
      * @return $this
      */
@@ -307,7 +307,7 @@ class AdsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets adName
      *
-     * @param string $adName adName
+     * @param string|mixed $adName adName
      *
      * @return $this
      */
@@ -331,7 +331,7 @@ class AdsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets configuredStatus
      *
-     * @param \TencentAds\Model\AdStatus $configuredStatus configuredStatus
+     * @param \TencentAds\Model\AdStatus|mixed $configuredStatus configuredStatus
      *
      * @return $this
      */
@@ -355,7 +355,7 @@ class AdsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets impressionTrackingUrl
      *
-     * @param string $impressionTrackingUrl impressionTrackingUrl
+     * @param string|mixed $impressionTrackingUrl impressionTrackingUrl
      *
      * @return $this
      */
@@ -379,7 +379,7 @@ class AdsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets clickTrackingUrl
      *
-     * @param string $clickTrackingUrl clickTrackingUrl
+     * @param string|mixed $clickTrackingUrl clickTrackingUrl
      *
      * @return $this
      */
@@ -403,7 +403,7 @@ class AdsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets feedsInteractionEnabled
      *
-     * @param bool $feedsInteractionEnabled feedsInteractionEnabled
+     * @param bool|mixed $feedsInteractionEnabled feedsInteractionEnabled
      *
      * @return $this
      */
@@ -427,7 +427,7 @@ class AdsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */

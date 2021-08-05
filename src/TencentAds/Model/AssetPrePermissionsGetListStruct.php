@@ -272,7 +272,7 @@ class AssetPrePermissionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class AssetPrePermissionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets ownerAccountId
      *
-     * @param int $ownerAccountId ownerAccountId
+     * @param int|mixed $ownerAccountId ownerAccountId
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class AssetPrePermissionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets assetId
      *
-     * @param int $assetId assetId
+     * @param int|mixed $assetId assetId
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class AssetPrePermissionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets assetName
      *
-     * @param string $assetName assetName
+     * @param string|mixed $assetName assetName
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class AssetPrePermissionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets assetType
      *
-     * @param \TencentAds\Model\AssetType $assetType assetType
+     * @param \TencentAds\Model\AssetType|mixed $assetType assetType
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class AssetPrePermissionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pathId
      *
-     * @param int $pathId pathId
+     * @param int|mixed $pathId pathId
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class AssetPrePermissionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pathType
      *
-     * @param \TencentAds\Model\PathType $pathType pathType
+     * @param \TencentAds\Model\PathType|mixed $pathType pathType
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class AssetPrePermissionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets isGrantedAll
      *
-     * @param \TencentAds\Model\GrantAllType $isGrantedAll isGrantedAll
+     * @param \TencentAds\Model\GrantAllType|mixed $isGrantedAll isGrantedAll
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class AssetPrePermissionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets grantTime
      *
-     * @param int $grantTime grantTime
+     * @param int|mixed $grantTime grantTime
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class AssetPrePermissionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets permissionList
      *
-     * @param string[] $permissionList permissionList
+     * @param string[]|mixed $permissionList permissionList
      *
      * @return $this
      */

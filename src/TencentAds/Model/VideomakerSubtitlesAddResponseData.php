@@ -223,7 +223,7 @@ class VideomakerSubtitlesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param int $code code
+     * @param int|mixed $code code
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class VideomakerSubtitlesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets taskId
      *
-     * @param string $taskId taskId
+     * @param string|mixed $taskId taskId
      *
      * @return $this
      */

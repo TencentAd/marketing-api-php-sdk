@@ -254,7 +254,7 @@ class CanvasAppDownloadSpecType implements ModelInterface, ArrayAccess
     /**
      * Sets title
      *
-     * @param string $title title
+     * @param string|mixed $title title
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class CanvasAppDownloadSpecType implements ModelInterface, ArrayAccess
     /**
      * Sets fontColor
      *
-     * @param string $fontColor fontColor
+     * @param string|mixed $fontColor fontColor
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class CanvasAppDownloadSpecType implements ModelInterface, ArrayAccess
     /**
      * Sets bgColor
      *
-     * @param string $bgColor bgColor
+     * @param string|mixed $bgColor bgColor
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class CanvasAppDownloadSpecType implements ModelInterface, ArrayAccess
     /**
      * Sets paddingTop
      *
-     * @param int $paddingTop paddingTop
+     * @param int|mixed $paddingTop paddingTop
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class CanvasAppDownloadSpecType implements ModelInterface, ArrayAccess
     /**
      * Sets paddingBottom
      *
-     * @param int $paddingBottom paddingBottom
+     * @param int|mixed $paddingBottom paddingBottom
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class CanvasAppDownloadSpecType implements ModelInterface, ArrayAccess
     /**
      * Sets appIosSpec
      *
-     * @param \TencentAds\Model\CanvasAppIosSpecType $appIosSpec appIosSpec
+     * @param \TencentAds\Model\CanvasAppIosSpecType|mixed $appIosSpec appIosSpec
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class CanvasAppDownloadSpecType implements ModelInterface, ArrayAccess
     /**
      * Sets appAndroidSpec
      *
-     * @param \TencentAds\Model\CanvasAppAndroidSpecType $appAndroidSpec appAndroidSpec
+     * @param \TencentAds\Model\CanvasAppAndroidSpecType|mixed $appAndroidSpec appAndroidSpec
      *
      * @return $this
      */

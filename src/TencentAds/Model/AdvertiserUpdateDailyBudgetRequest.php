@@ -217,7 +217,7 @@ class AdvertiserUpdateDailyBudgetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets updateDailyBudgetSpec
      *
-     * @param \TencentAds\Model\AdvertiserUpdateDailyBudgetUpdateDailyBudgetStruct[] $updateDailyBudgetSpec updateDailyBudgetSpec
+     * @param \TencentAds\Model\AdvertiserUpdateDailyBudgetUpdateDailyBudgetStruct[]|mixed $updateDailyBudgetSpec updateDailyBudgetSpec
      *
      * @return $this
      */

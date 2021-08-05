@@ -224,7 +224,7 @@ class LandingPageConfig implements ModelInterface, ArrayAccess
     /**
      * Sets required
      *
-     * @param bool $required required
+     * @param bool|mixed $required required
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class LandingPageConfig implements ModelInterface, ArrayAccess
     /**
      * Sets supportPageTypeList
      *
-     * @param \TencentAds\Model\SupportPageTypeStruct[] $supportPageTypeList supportPageTypeList
+     * @param \TencentAds\Model\SupportPageTypeStruct[]|mixed $supportPageTypeList supportPageTypeList
      *
      * @return $this
      */

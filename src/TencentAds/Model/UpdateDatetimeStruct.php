@@ -236,7 +236,7 @@ class UpdateDatetimeStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class UpdateDatetimeStruct implements ModelInterface, ArrayAccess
     /**
      * Sets beginDate
      *
-     * @param string $beginDate beginDate
+     * @param string|mixed $beginDate beginDate
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class UpdateDatetimeStruct implements ModelInterface, ArrayAccess
     /**
      * Sets endDate
      *
-     * @param string $endDate endDate
+     * @param string|mixed $endDate endDate
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class UpdateDatetimeStruct implements ModelInterface, ArrayAccess
     /**
      * Sets timeSeries
      *
-     * @param string $timeSeries timeSeries
+     * @param string|mixed $timeSeries timeSeries
      *
      * @return $this
      */

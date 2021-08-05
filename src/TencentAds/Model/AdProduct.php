@@ -224,7 +224,7 @@ class AdProduct implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\AudienceProductType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\AudienceProductType|mixed $promotedObjectType promotedObjectType
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class AdProduct implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectId
      *
-     * @param string $promotedObjectId promotedObjectId
+     * @param string|mixed $promotedObjectId promotedObjectId
      *
      * @return $this
      */

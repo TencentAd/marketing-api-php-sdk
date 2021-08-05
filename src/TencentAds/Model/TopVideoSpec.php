@@ -248,7 +248,7 @@ class TopVideoSpec implements ModelInterface, ArrayAccess
     /**
      * Sets videoId
      *
-     * @param string $videoId videoId
+     * @param string|mixed $videoId videoId
      *
      * @return $this
      */
@@ -272,7 +272,7 @@ class TopVideoSpec implements ModelInterface, ArrayAccess
     /**
      * Sets width
      *
-     * @param int $width width
+     * @param int|mixed $width width
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class TopVideoSpec implements ModelInterface, ArrayAccess
     /**
      * Sets height
      *
-     * @param int $height height
+     * @param int|mixed $height height
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class TopVideoSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adLocation
      *
-     * @param string $adLocation adLocation
+     * @param string|mixed $adLocation adLocation
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class TopVideoSpec implements ModelInterface, ArrayAccess
     /**
      * Sets outerStyle
      *
-     * @param int $outerStyle outerStyle
+     * @param int|mixed $outerStyle outerStyle
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class TopVideoSpec implements ModelInterface, ArrayAccess
     /**
      * Sets usedForOuter
      *
-     * @param int $usedForOuter usedForOuter
+     * @param int|mixed $usedForOuter usedForOuter
      *
      * @return $this
      */

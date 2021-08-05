@@ -230,7 +230,7 @@ class CrossCityRule implements ModelInterface, ArrayAccess
     /**
      * Sets route
      *
-     * @param string[] $route route
+     * @param string[]|mixed $route route
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class CrossCityRule implements ModelInterface, ArrayAccess
     /**
      * Sets dateRange
      *
-     * @param \TencentAds\Model\DateRange $dateRange dateRange
+     * @param \TencentAds\Model\DateRange|mixed $dateRange dateRange
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class CrossCityRule implements ModelInterface, ArrayAccess
     /**
      * Sets frequency
      *
-     * @param int $frequency frequency
+     * @param int|mixed $frequency frequency
      *
      * @return $this
      */

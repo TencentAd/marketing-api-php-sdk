@@ -230,7 +230,7 @@ class ManualAdjustment implements ModelInterface, ArrayAccess
     /**
      * Sets sizeAdjustment
      *
-     * @param \TencentAds\Model\SizeAdjustment $sizeAdjustment sizeAdjustment
+     * @param \TencentAds\Model\SizeAdjustment|mixed $sizeAdjustment sizeAdjustment
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class ManualAdjustment implements ModelInterface, ArrayAccess
     /**
      * Sets lengthAdjustment
      *
-     * @param \TencentAds\Model\LengthAdjustment $lengthAdjustment lengthAdjustment
+     * @param \TencentAds\Model\LengthAdjustment|mixed $lengthAdjustment lengthAdjustment
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class ManualAdjustment implements ModelInterface, ArrayAccess
     /**
      * Sets musicAdjustment
      *
-     * @param \TencentAds\Model\MusicAdjustment $musicAdjustment musicAdjustment
+     * @param \TencentAds\Model\MusicAdjustment|mixed $musicAdjustment musicAdjustment
      *
      * @return $this
      */

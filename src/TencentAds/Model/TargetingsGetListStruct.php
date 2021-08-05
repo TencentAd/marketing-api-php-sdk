@@ -290,7 +290,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets targetingId
      *
-     * @param int $targetingId targetingId
+     * @param int|mixed $targetingId targetingId
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets targetingName
      *
-     * @param string $targetingName targetingName
+     * @param string|mixed $targetingName targetingName
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets isIncludeUnsupportedTargeting
      *
-     * @param bool $isIncludeUnsupportedTargeting isIncludeUnsupportedTargeting
+     * @param bool|mixed $isIncludeUnsupportedTargeting isIncludeUnsupportedTargeting
      *
      * @return $this
      */
@@ -362,7 +362,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -386,7 +386,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets isDeleted
      *
-     * @param bool $isDeleted isDeleted
+     * @param bool|mixed $isDeleted isDeleted
      *
      * @return $this
      */
@@ -410,7 +410,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -434,7 +434,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedTime
      *
-     * @param int $lastModifiedTime lastModifiedTime
+     * @param int|mixed $lastModifiedTime lastModifiedTime
      *
      * @return $this
      */
@@ -458,7 +458,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adLockStatus
      *
-     * @param \TencentAds\Model\AdLockStatus $adLockStatus adLockStatus
+     * @param \TencentAds\Model\AdLockStatus|mixed $adLockStatus adLockStatus
      *
      * @return $this
      */
@@ -482,7 +482,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets targetingTranslation
      *
-     * @param string $targetingTranslation targetingTranslation
+     * @param string|mixed $targetingTranslation targetingTranslation
      *
      * @return $this
      */
@@ -506,7 +506,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets targetingSourceType
      *
-     * @param \TencentAds\Model\TargetingPkgSourceType $targetingSourceType targetingSourceType
+     * @param \TencentAds\Model\TargetingPkgSourceType|mixed $targetingSourceType targetingSourceType
      *
      * @return $this
      */
@@ -530,7 +530,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets shareFromAccountId
      *
-     * @param int $shareFromAccountId shareFromAccountId
+     * @param int|mixed $shareFromAccountId shareFromAccountId
      *
      * @return $this
      */
@@ -554,7 +554,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets shareFromTargetingId
      *
-     * @param int $shareFromTargetingId shareFromTargetingId
+     * @param int|mixed $shareFromTargetingId shareFromTargetingId
      *
      * @return $this
      */
@@ -578,7 +578,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets targeting
      *
-     * @param \TencentAds\Model\ReadTargetingSetting $targeting targeting
+     * @param \TencentAds\Model\ReadTargetingSetting|mixed $targeting targeting
      *
      * @return $this
      */

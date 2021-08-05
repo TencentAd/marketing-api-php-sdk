@@ -230,7 +230,7 @@ class VideoCaptureStruct implements ModelInterface, ArrayAccess
     /**
      * Sets imageUrl
      *
-     * @param string $imageUrl imageUrl
+     * @param string|mixed $imageUrl imageUrl
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class VideoCaptureStruct implements ModelInterface, ArrayAccess
     /**
      * Sets imageType
      *
-     * @param \TencentAds\Model\VideoCaptureImageType $imageType imageType
+     * @param \TencentAds\Model\VideoCaptureImageType|mixed $imageType imageType
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class VideoCaptureStruct implements ModelInterface, ArrayAccess
     /**
      * Sets imageId
      *
-     * @param string $imageId imageId
+     * @param string|mixed $imageId imageId
      *
      * @return $this
      */

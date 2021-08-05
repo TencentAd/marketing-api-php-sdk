@@ -235,7 +235,7 @@ class EcommerceOrderUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -259,7 +259,7 @@ class EcommerceOrderUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets ecommerceOrderId
      *
-     * @param string $ecommerceOrderId ecommerceOrderId
+     * @param string|mixed $ecommerceOrderId ecommerceOrderId
      *
      * @return $this
      */
@@ -283,7 +283,7 @@ class EcommerceOrderUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets deliveryTrackingNumber
      *
-     * @param string $deliveryTrackingNumber deliveryTrackingNumber
+     * @param string|mixed $deliveryTrackingNumber deliveryTrackingNumber
      *
      * @return $this
      */
@@ -307,7 +307,7 @@ class EcommerceOrderUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets expressCompany
      *
-     * @param \TencentAds\Model\ExpressCompany $expressCompany expressCompany
+     * @param \TencentAds\Model\ExpressCompany|mixed $expressCompany expressCompany
      *
      * @return $this
      */

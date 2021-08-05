@@ -236,7 +236,7 @@ class DpPageInfo implements ModelInterface, ArrayAccess
     /**
      * Sets page
      *
-     * @param int $page page
+     * @param int|mixed $page page
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class DpPageInfo implements ModelInterface, ArrayAccess
     /**
      * Sets pageSize
      *
-     * @param int $pageSize pageSize
+     * @param int|mixed $pageSize pageSize
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class DpPageInfo implements ModelInterface, ArrayAccess
     /**
      * Sets totalPage
      *
-     * @param int $totalPage totalPage
+     * @param int|mixed $totalPage totalPage
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class DpPageInfo implements ModelInterface, ArrayAccess
     /**
      * Sets totalNum
      *
-     * @param int $totalNum totalNum
+     * @param int|mixed $totalNum totalNum
      *
      * @return $this
      */

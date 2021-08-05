@@ -218,7 +218,7 @@ class GlobalSpec implements ModelInterface, ArrayAccess
     /**
      * Sets globalElementsSpecList
      *
-     * @param \TencentAds\Model\GlobalSpecStruct[] $globalElementsSpecList globalElementsSpecList
+     * @param \TencentAds\Model\GlobalSpecStruct[]|mixed $globalElementsSpecList globalElementsSpecList
      *
      * @return $this
      */

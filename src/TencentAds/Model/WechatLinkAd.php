@@ -218,7 +218,7 @@ class WechatLinkAd implements ModelInterface, ArrayAccess
     /**
      * Sets url
      *
-     * @param string $url url
+     * @param string|mixed $url url
      *
      * @return $this
      */

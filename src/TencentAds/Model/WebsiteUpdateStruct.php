@@ -224,7 +224,7 @@ class WebsiteUpdateStruct implements ModelInterface, ArrayAccess
     /**
      * Sets websiteDomain
      *
-     * @param string $websiteDomain websiteDomain
+     * @param string|mixed $websiteDomain websiteDomain
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class WebsiteUpdateStruct implements ModelInterface, ArrayAccess
     /**
      * Sets icpImageId
      *
-     * @param string $icpImageId icpImageId
+     * @param string|mixed $icpImageId icpImageId
      *
      * @return $this
      */

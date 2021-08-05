@@ -254,7 +254,7 @@ class DetailCreativeDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets isVideo
      *
-     * @param bool $isVideo isVideo
+     * @param bool|mixed $isVideo isVideo
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class DetailCreativeDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets isWechatMoment
      *
-     * @param bool $isWechatMoment isWechatMoment
+     * @param bool|mixed $isWechatMoment isWechatMoment
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class DetailCreativeDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets playDuration
      *
-     * @param string $playDuration playDuration
+     * @param string|mixed $playDuration playDuration
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class DetailCreativeDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets playProgress
      *
-     * @param string $playProgress playProgress
+     * @param string|mixed $playProgress playProgress
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class DetailCreativeDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets ctrLevel
      *
-     * @param \TencentAds\Model\CtrLevelStruct $ctrLevel ctrLevel
+     * @param \TencentAds\Model\CtrLevelStruct|mixed $ctrLevel ctrLevel
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class DetailCreativeDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets effectivePlayRate
      *
-     * @param \TencentAds\Model\EffectivePlayRateStruct $effectivePlayRate effectivePlayRate
+     * @param \TencentAds\Model\EffectivePlayRateStruct|mixed $effectivePlayRate effectivePlayRate
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class DetailCreativeDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets noInterestClickRate
      *
-     * @param \TencentAds\Model\NoInterestClickRateStruct $noInterestClickRate noInterestClickRate
+     * @param \TencentAds\Model\NoInterestClickRateStruct|mixed $noInterestClickRate noInterestClickRate
      *
      * @return $this
      */

@@ -241,7 +241,7 @@ class LocalEstimatedamountGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets minEstimatedExposure
      *
-     * @param int $minEstimatedExposure minEstimatedExposure
+     * @param int|mixed $minEstimatedExposure minEstimatedExposure
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class LocalEstimatedamountGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets maxEstimatedExposure
      *
-     * @param int $maxEstimatedExposure maxEstimatedExposure
+     * @param int|mixed $maxEstimatedExposure maxEstimatedExposure
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class LocalEstimatedamountGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets minEstimatedConv
      *
-     * @param int $minEstimatedConv minEstimatedConv
+     * @param int|mixed $minEstimatedConv minEstimatedConv
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class LocalEstimatedamountGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets maxEstimatedConv
      *
-     * @param int $maxEstimatedConv maxEstimatedConv
+     * @param int|mixed $maxEstimatedConv maxEstimatedConv
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class LocalEstimatedamountGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets suggestion
      *
-     * @param string $suggestion suggestion
+     * @param string|mixed $suggestion suggestion
      *
      * @return $this
      */

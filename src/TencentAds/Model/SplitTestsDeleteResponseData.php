@@ -217,7 +217,7 @@ class SplitTestsDeleteResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets splitTestId
      *
-     * @param int $splitTestId splitTestId
+     * @param int|mixed $splitTestId splitTestId
      *
      * @return $this
      */

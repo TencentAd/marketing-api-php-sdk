@@ -248,7 +248,7 @@ class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
     /**
      * Sets cropWidth
      *
-     * @param int $cropWidth cropWidth
+     * @param int|mixed $cropWidth cropWidth
      *
      * @return $this
      */
@@ -272,7 +272,7 @@ class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
     /**
      * Sets cropHeight
      *
-     * @param int $cropHeight cropHeight
+     * @param int|mixed $cropHeight cropHeight
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
     /**
      * Sets axisX
      *
-     * @param int $axisX axisX
+     * @param int|mixed $axisX axisX
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
     /**
      * Sets axisY
      *
-     * @param int $axisY axisY
+     * @param int|mixed $axisY axisY
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
     /**
      * Sets resizeWidth
      *
-     * @param int $resizeWidth resizeWidth
+     * @param int|mixed $resizeWidth resizeWidth
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
     /**
      * Sets resizeHeight
      *
-     * @param int $resizeHeight resizeHeight
+     * @param int|mixed $resizeHeight resizeHeight
      *
      * @return $this
      */

@@ -230,7 +230,7 @@ class DpAdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
     /**
      * Sets title
      *
-     * @param string $title title
+     * @param string|mixed $title title
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class DpAdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class DpAdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
     /**
      * Sets imageList
      *
-     * @param string[] $imageList imageList
+     * @param string[]|mixed $imageList imageList
      *
      * @return $this
      */

@@ -224,7 +224,7 @@ class CreateAndroidUnionChannelPackageSpec implements ModelInterface, ArrayAcces
     /**
      * Sets packageName
      *
-     * @param string $packageName packageName
+     * @param string|mixed $packageName packageName
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class CreateAndroidUnionChannelPackageSpec implements ModelInterface, ArrayAcces
     /**
      * Sets downloadUrl
      *
-     * @param string $downloadUrl downloadUrl
+     * @param string|mixed $downloadUrl downloadUrl
      *
      * @return $this
      */

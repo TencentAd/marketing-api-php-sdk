@@ -248,7 +248,7 @@ class PromotedObjectsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectName
      *
-     * @param string $promotedObjectName promotedObjectName
+     * @param string|mixed $promotedObjectName promotedObjectName
      *
      * @return $this
      */
@@ -272,7 +272,7 @@ class PromotedObjectsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectId
      *
-     * @param string $promotedObjectId promotedObjectId
+     * @param string|mixed $promotedObjectId promotedObjectId
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class PromotedObjectsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\ProductPromotedObjectTypeSelect $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\ProductPromotedObjectTypeSelect|mixed $promotedObjectType promotedObjectType
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class PromotedObjectsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectSpec
      *
-     * @param \TencentAds\Model\PromotedObjectSpecRead $promotedObjectSpec promotedObjectSpec
+     * @param \TencentAds\Model\PromotedObjectSpecRead|mixed $promotedObjectSpec promotedObjectSpec
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class PromotedObjectsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class PromotedObjectsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedTime
      *
-     * @param int $lastModifiedTime lastModifiedTime
+     * @param int|mixed $lastModifiedTime lastModifiedTime
      *
      * @return $this
      */

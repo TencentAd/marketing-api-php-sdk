@@ -92,10 +92,10 @@ class CustomAudienceInsightsApi
      *
      * 人群洞察分析
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $audienceId audienceId (required)
-     * @param  string[] $dimensionType dimensionType (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $audienceId audienceId (required)
+     * @param  string[]|mixed $dimensionType dimensionType (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -112,10 +112,10 @@ class CustomAudienceInsightsApi
      *
      * 人群洞察分析
      *
-     * @param  int $accountId (required)
-     * @param  int $audienceId (required)
-     * @param  string[] $dimensionType (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $audienceId (required)
+     * @param  string[]|mixed $dimensionType (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -190,10 +190,10 @@ class CustomAudienceInsightsApi
      *
      * 人群洞察分析
      *
-     * @param  int $accountId (required)
-     * @param  int $audienceId (required)
-     * @param  string[] $dimensionType (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $audienceId (required)
+     * @param  string[]|mixed $dimensionType (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -213,10 +213,10 @@ class CustomAudienceInsightsApi
      *
      * 人群洞察分析
      *
-     * @param  int $accountId (required)
-     * @param  int $audienceId (required)
-     * @param  string[] $dimensionType (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $audienceId (required)
+     * @param  string[]|mixed $dimensionType (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -266,10 +266,10 @@ class CustomAudienceInsightsApi
     /**
      * Create request for operation 'customAudienceInsightsGet'
      *
-     * @param  int $accountId (required)
-     * @param  int $audienceId (required)
-     * @param  string[] $dimensionType (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $audienceId (required)
+     * @param  string[]|mixed $dimensionType (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

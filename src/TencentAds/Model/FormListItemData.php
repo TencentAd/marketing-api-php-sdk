@@ -230,7 +230,7 @@ class FormListItemData implements ModelInterface, ArrayAccess
     /**
      * Sets componentName
      *
-     * @param string $componentName componentName
+     * @param string|mixed $componentName componentName
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class FormListItemData implements ModelInterface, ArrayAccess
     /**
      * Sets componentId
      *
-     * @param string $componentId componentId
+     * @param string|mixed $componentId componentId
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class FormListItemData implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param string $createdTime createdTime
+     * @param string|mixed $createdTime createdTime
      *
      * @return $this
      */

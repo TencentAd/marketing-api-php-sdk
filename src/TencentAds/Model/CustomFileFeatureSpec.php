@@ -230,7 +230,7 @@ class CustomFileFeatureSpec implements ModelInterface, ArrayAccess
     /**
      * Sets dataType
      *
-     * @param \TencentAds\Model\FeatureValueDataType $dataType dataType
+     * @param \TencentAds\Model\FeatureValueDataType|mixed $dataType dataType
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class CustomFileFeatureSpec implements ModelInterface, ArrayAccess
     /**
      * Sets isMultiValued
      *
-     * @param bool $isMultiValued isMultiValued
+     * @param bool|mixed $isMultiValued isMultiValued
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class CustomFileFeatureSpec implements ModelInterface, ArrayAccess
     /**
      * Sets possibleValuesSize
      *
-     * @param int $possibleValuesSize possibleValuesSize
+     * @param int|mixed $possibleValuesSize possibleValuesSize
      *
      * @return $this
      */

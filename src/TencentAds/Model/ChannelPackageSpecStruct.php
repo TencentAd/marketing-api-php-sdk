@@ -224,7 +224,7 @@ class ChannelPackageSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appAndroidChannelPackageId
      *
-     * @param string $appAndroidChannelPackageId appAndroidChannelPackageId
+     * @param string|mixed $appAndroidChannelPackageId appAndroidChannelPackageId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class ChannelPackageSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Sets packageName
      *
-     * @param string $packageName packageName
+     * @param string|mixed $packageName packageName
      *
      * @return $this
      */

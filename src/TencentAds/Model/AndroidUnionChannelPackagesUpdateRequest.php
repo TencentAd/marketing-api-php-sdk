@@ -229,7 +229,7 @@ class AndroidUnionChannelPackagesUpdateRequest implements ModelInterface, ArrayA
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class AndroidUnionChannelPackagesUpdateRequest implements ModelInterface, ArrayA
     /**
      * Sets androidUnionAppId
      *
-     * @param int $androidUnionAppId androidUnionAppId
+     * @param int|mixed $androidUnionAppId androidUnionAppId
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class AndroidUnionChannelPackagesUpdateRequest implements ModelInterface, ArrayA
     /**
      * Sets appAndroidChannelPackageId
      *
-     * @param string $appAndroidChannelPackageId appAndroidChannelPackageId
+     * @param string|mixed $appAndroidChannelPackageId appAndroidChannelPackageId
      *
      * @return $this
      */

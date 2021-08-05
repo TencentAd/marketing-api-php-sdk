@@ -236,7 +236,7 @@ class AllDataSpec implements ModelInterface, ArrayAccess
     /**
      * Sets campaign
      *
-     * @param \TencentAds\Model\CampaignGetSpec $campaign campaign
+     * @param \TencentAds\Model\CampaignGetSpec|mixed $campaign campaign
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class AllDataSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adgroup
      *
-     * @param \TencentAds\Model\AdgroupGetSpec $adgroup adgroup
+     * @param \TencentAds\Model\AdgroupGetSpec|mixed $adgroup adgroup
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class AllDataSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adcreative
      *
-     * @param \TencentAds\Model\AdCreativeGetSpec $adcreative adcreative
+     * @param \TencentAds\Model\AdCreativeGetSpec|mixed $adcreative adcreative
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class AllDataSpec implements ModelInterface, ArrayAccess
     /**
      * Sets accountMetric
      *
-     * @param \TencentAds\Model\MetricDetailData $accountMetric accountMetric
+     * @param \TencentAds\Model\MetricDetailData|mixed $accountMetric accountMetric
      *
      * @return $this
      */

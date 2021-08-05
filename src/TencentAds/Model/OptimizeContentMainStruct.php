@@ -224,7 +224,7 @@ class OptimizeContentMainStruct implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \TencentAds\Model\OptimizeSubStatusStruct $status status
+     * @param \TencentAds\Model\OptimizeSubStatusStruct|mixed $status status
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class OptimizeContentMainStruct implements ModelInterface, ArrayAccess
     /**
      * Sets optimizeContents
      *
-     * @param \TencentAds\Model\OptimizeSubContentStruct $optimizeContents optimizeContents
+     * @param \TencentAds\Model\OptimizeSubContentStruct|mixed $optimizeContents optimizeContents
      *
      * @return $this
      */

@@ -224,7 +224,7 @@ class UserActionSetStruct implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \TencentAds\Model\UserActionSetType $type type
+     * @param \TencentAds\Model\UserActionSetType|mixed $type type
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class UserActionSetStruct implements ModelInterface, ArrayAccess
     /**
      * Sets id
      *
-     * @param int $id id
+     * @param int|mixed $id id
      *
      * @return $this
      */

@@ -229,7 +229,7 @@ class QualificationsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets qualificationType
      *
-     * @param \TencentAds\Model\QualificationType $qualificationType qualificationType
+     * @param \TencentAds\Model\QualificationType|mixed $qualificationType qualificationType
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class QualificationsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets qualificationSpec
      *
-     * @param \TencentAds\Model\QualificationSpec $qualificationSpec qualificationSpec
+     * @param \TencentAds\Model\QualificationSpec|mixed $qualificationSpec qualificationSpec
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class QualificationsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */

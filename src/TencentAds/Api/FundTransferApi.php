@@ -92,7 +92,7 @@ class FundTransferApi
      *
      * 发起代理商与子客户之间转账
      *
-     * @param  \TencentAds\Model\FundTransferAddRequest $data data (required)
+     * @param  \TencentAds\Model\FundTransferAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class FundTransferApi
      *
      * 发起代理商与子客户之间转账
      *
-     * @param  \TencentAds\Model\FundTransferAddRequest $data (required)
+     * @param  \TencentAds\Model\FundTransferAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class FundTransferApi
      *
      * 发起代理商与子客户之间转账
      *
-     * @param  \TencentAds\Model\FundTransferAddRequest $data (required)
+     * @param  \TencentAds\Model\FundTransferAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class FundTransferApi
      *
      * 发起代理商与子客户之间转账
      *
-     * @param  \TencentAds\Model\FundTransferAddRequest $data (required)
+     * @param  \TencentAds\Model\FundTransferAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class FundTransferApi
     /**
      * Create request for operation 'fundTransferAdd'
      *
-     * @param  \TencentAds\Model\FundTransferAddRequest $data (required)
+     * @param  \TencentAds\Model\FundTransferAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

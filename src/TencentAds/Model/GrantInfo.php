@@ -230,7 +230,7 @@ class GrantInfo implements ModelInterface, ArrayAccess
     /**
      * Sets audienceId
      *
-     * @param int $audienceId audienceId
+     * @param int|mixed $audienceId audienceId
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class GrantInfo implements ModelInterface, ArrayAccess
     /**
      * Sets grantType
      *
-     * @param \TencentAds\Model\AudienceGrantType $grantType grantType
+     * @param \TencentAds\Model\AudienceGrantType|mixed $grantType grantType
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class GrantInfo implements ModelInterface, ArrayAccess
     /**
      * Sets grantSpec
      *
-     * @param \TencentAds\Model\AudienceGrantRelationsGetGrantSpec $grantSpec grantSpec
+     * @param \TencentAds\Model\AudienceGrantRelationsGetGrantSpec|mixed $grantSpec grantSpec
      *
      * @return $this
      */

@@ -230,7 +230,7 @@ class ParamMatcher implements ModelInterface, ArrayAccess
     /**
      * Sets paramName
      *
-     * @param string $paramName paramName
+     * @param string|mixed $paramName paramName
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class ParamMatcher implements ModelInterface, ArrayAccess
     /**
      * Sets paramValue
      *
-     * @param string $paramValue paramValue
+     * @param string|mixed $paramValue paramValue
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class ParamMatcher implements ModelInterface, ArrayAccess
     /**
      * Sets operator
      *
-     * @param \TencentAds\Model\Operator $operator operator
+     * @param \TencentAds\Model\Operator|mixed $operator operator
      *
      * @return $this
      */

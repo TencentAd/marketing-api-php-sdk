@@ -260,7 +260,7 @@ class RejectInfoLocation implements ModelInterface, ArrayAccess
     /**
      * Sets x
      *
-     * @param int $x x
+     * @param int|mixed $x x
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class RejectInfoLocation implements ModelInterface, ArrayAccess
     /**
      * Sets y
      *
-     * @param int $y y
+     * @param int|mixed $y y
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class RejectInfoLocation implements ModelInterface, ArrayAccess
     /**
      * Sets width
      *
-     * @param int $width width
+     * @param int|mixed $width width
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class RejectInfoLocation implements ModelInterface, ArrayAccess
     /**
      * Sets height
      *
-     * @param int $height height
+     * @param int|mixed $height height
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class RejectInfoLocation implements ModelInterface, ArrayAccess
     /**
      * Sets timeSecond
      *
-     * @param int $timeSecond timeSecond
+     * @param int|mixed $timeSecond timeSecond
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class RejectInfoLocation implements ModelInterface, ArrayAccess
     /**
      * Sets locationImgUrl
      *
-     * @param string $locationImgUrl locationImgUrl
+     * @param string|mixed $locationImgUrl locationImgUrl
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class RejectInfoLocation implements ModelInterface, ArrayAccess
     /**
      * Sets imgUrl
      *
-     * @param string $imgUrl imgUrl
+     * @param string|mixed $imgUrl imgUrl
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class RejectInfoLocation implements ModelInterface, ArrayAccess
     /**
      * Sets relatedImgUrl
      *
-     * @param string $relatedImgUrl relatedImgUrl
+     * @param string|mixed $relatedImgUrl relatedImgUrl
      *
      * @return $this
      */

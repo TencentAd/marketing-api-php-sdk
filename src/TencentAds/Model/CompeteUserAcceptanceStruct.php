@@ -236,7 +236,7 @@ class CompeteUserAcceptanceStruct implements ModelInterface, ArrayAccess
     /**
      * Sets score
      *
-     * @param int $score score
+     * @param int|mixed $score score
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class CompeteUserAcceptanceStruct implements ModelInterface, ArrayAccess
     /**
      * Sets acceptance
      *
-     * @param \TencentAds\Model\CompeteAttributionStruct[] $acceptance acceptance
+     * @param \TencentAds\Model\CompeteAttributionStruct[]|mixed $acceptance acceptance
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class CompeteUserAcceptanceStruct implements ModelInterface, ArrayAccess
     /**
      * Sets conclusion
      *
-     * @param string $conclusion conclusion
+     * @param string|mixed $conclusion conclusion
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class CompeteUserAcceptanceStruct implements ModelInterface, ArrayAccess
     /**
      * Sets ratio
      *
-     * @param double $ratio ratio
+     * @param double|mixed $ratio ratio
      *
      * @return $this
      */

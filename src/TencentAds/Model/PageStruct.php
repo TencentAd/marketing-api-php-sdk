@@ -290,7 +290,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageId
      *
-     * @param int $pageId pageId
+     * @param int|mixed $pageId pageId
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageServiceId
      *
-     * @param string $pageServiceId pageServiceId
+     * @param string|mixed $pageServiceId pageServiceId
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageName
      *
-     * @param string $pageName pageName
+     * @param string|mixed $pageName pageName
      *
      * @return $this
      */
@@ -362,7 +362,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageType
      *
-     * @param \TencentAds\Model\PageType $pageType pageType
+     * @param \TencentAds\Model\PageType|mixed $pageType pageType
      *
      * @return $this
      */
@@ -386,7 +386,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pagePublishStatus
      *
-     * @param \TencentAds\Model\PagePublishStatus $pagePublishStatus pagePublishStatus
+     * @param \TencentAds\Model\PagePublishStatus|mixed $pagePublishStatus pagePublishStatus
      *
      * @return $this
      */
@@ -410,7 +410,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageStatus
      *
-     * @param \TencentAds\Model\PageAuditStatus $pageStatus pageStatus
+     * @param \TencentAds\Model\PageAuditStatus|mixed $pageStatus pageStatus
      *
      * @return $this
      */
@@ -434,7 +434,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageLastModifyTime
      *
-     * @param string $pageLastModifyTime pageLastModifyTime
+     * @param string|mixed $pageLastModifyTime pageLastModifyTime
      *
      * @return $this
      */
@@ -458,7 +458,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageOwnerId
      *
-     * @param int $pageOwnerId pageOwnerId
+     * @param int|mixed $pageOwnerId pageOwnerId
      *
      * @return $this
      */
@@ -482,7 +482,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Sets publishUrl
      *
-     * @param string $publishUrl publishUrl
+     * @param string|mixed $publishUrl publishUrl
      *
      * @return $this
      */
@@ -506,7 +506,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Sets rejectReason
      *
-     * @param string $rejectReason rejectReason
+     * @param string|mixed $rejectReason rejectReason
      *
      * @return $this
      */
@@ -530,7 +530,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Sets playableType
      *
-     * @param \TencentAds\Model\PlayableType $playableType playableType
+     * @param \TencentAds\Model\PlayableType|mixed $playableType playableType
      *
      * @return $this
      */
@@ -554,7 +554,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Sets publishAppId
      *
-     * @param \TencentAds\Model\PublishAppId $publishAppId publishAppId
+     * @param \TencentAds\Model\PublishAppId|mixed $publishAppId publishAppId
      *
      * @return $this
      */
@@ -578,7 +578,7 @@ class PageStruct implements ModelInterface, ArrayAccess
     /**
      * Sets unpublishAppId
      *
-     * @param \TencentAds\Model\UnpublishAppId $unpublishAppId unpublishAppId
+     * @param \TencentAds\Model\UnpublishAppId|mixed $unpublishAppId unpublishAppId
      *
      * @return $this
      */

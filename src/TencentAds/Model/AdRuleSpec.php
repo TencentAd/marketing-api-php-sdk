@@ -254,7 +254,7 @@ class AdRuleSpec implements ModelInterface, ArrayAccess
     /**
      * Sets ruleType
      *
-     * @param \TencentAds\Model\AdRuleType $ruleType ruleType
+     * @param \TencentAds\Model\AdRuleType|mixed $ruleType ruleType
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class AdRuleSpec implements ModelInterface, ArrayAccess
     /**
      * Sets conversionType
      *
-     * @param string[] $conversionType conversionType
+     * @param string[]|mixed $conversionType conversionType
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class AdRuleSpec implements ModelInterface, ArrayAccess
     /**
      * Sets startDate
      *
-     * @param string $startDate startDate
+     * @param string|mixed $startDate startDate
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class AdRuleSpec implements ModelInterface, ArrayAccess
     /**
      * Sets endDate
      *
-     * @param string $endDate endDate
+     * @param string|mixed $endDate endDate
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class AdRuleSpec implements ModelInterface, ArrayAccess
     /**
      * Sets campaignIdList
      *
-     * @param int[] $campaignIdList campaignIdList
+     * @param int[]|mixed $campaignIdList campaignIdList
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class AdRuleSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupIdList
      *
-     * @param int[] $adgroupIdList adgroupIdList
+     * @param int[]|mixed $adgroupIdList adgroupIdList
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class AdRuleSpec implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectList
      *
-     * @param \TencentAds\Model\AdProduct[] $promotedObjectList promotedObjectList
+     * @param \TencentAds\Model\AdProduct[]|mixed $promotedObjectList promotedObjectList
      *
      * @return $this
      */

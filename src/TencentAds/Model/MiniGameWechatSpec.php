@@ -218,7 +218,7 @@ class MiniGameWechatSpec implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameProgramId
      *
-     * @param string $miniGameProgramId miniGameProgramId
+     * @param string|mixed $miniGameProgramId miniGameProgramId
      *
      * @return $this
      */

@@ -217,7 +217,7 @@ class UserPropertySetsAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets userPropertySetId
      *
-     * @param int $userPropertySetId userPropertySetId
+     * @param int|mixed $userPropertySetId userPropertySetId
      *
      * @return $this
      */

@@ -92,12 +92,12 @@ class ProductSeriesApi
      *
      * 获取商品系列
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $catalogId catalogId (required)
-     * @param  \TencentAds\Model\ProductSeriesSearchFilteringStruct[] $filtering filtering (optional)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $catalogId catalogId (required)
+     * @param  \TencentAds\Model\ProductSeriesSearchFilteringStruct[]|mixed $filtering filtering (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -114,12 +114,12 @@ class ProductSeriesApi
      *
      * 获取商品系列
      *
-     * @param  int $accountId (required)
-     * @param  int $catalogId (required)
-     * @param  \TencentAds\Model\ProductSeriesSearchFilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $catalogId (required)
+     * @param  \TencentAds\Model\ProductSeriesSearchFilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -194,12 +194,12 @@ class ProductSeriesApi
      *
      * 获取商品系列
      *
-     * @param  int $accountId (required)
-     * @param  int $catalogId (required)
-     * @param  \TencentAds\Model\ProductSeriesSearchFilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $catalogId (required)
+     * @param  \TencentAds\Model\ProductSeriesSearchFilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -219,12 +219,12 @@ class ProductSeriesApi
      *
      * 获取商品系列
      *
-     * @param  int $accountId (required)
-     * @param  int $catalogId (required)
-     * @param  \TencentAds\Model\ProductSeriesSearchFilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $catalogId (required)
+     * @param  \TencentAds\Model\ProductSeriesSearchFilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -274,12 +274,12 @@ class ProductSeriesApi
     /**
      * Create request for operation 'productSeriesGet'
      *
-     * @param  int $accountId (required)
-     * @param  int $catalogId (required)
-     * @param  \TencentAds\Model\ProductSeriesSearchFilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $catalogId (required)
+     * @param  \TencentAds\Model\ProductSeriesSearchFilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -218,7 +218,7 @@ class UnsupportSite implements ModelInterface, ArrayAccess
     /**
      * Sets siteSet
      *
-     * @param string[] $siteSet siteSet
+     * @param string[]|mixed $siteSet siteSet
      *
      * @return $this
      */

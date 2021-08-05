@@ -320,7 +320,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Sets raiseDayBudgetFlag
      *
-     * @param bool $raiseDayBudgetFlag raiseDayBudgetFlag
+     * @param bool|mixed $raiseDayBudgetFlag raiseDayBudgetFlag
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Sets currentAdgroupDayBudget
      *
-     * @param int $currentAdgroupDayBudget currentAdgroupDayBudget
+     * @param int|mixed $currentAdgroupDayBudget currentAdgroupDayBudget
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Sets currentCampaignDayBudget
      *
-     * @param int $currentCampaignDayBudget currentCampaignDayBudget
+     * @param int|mixed $currentCampaignDayBudget currentCampaignDayBudget
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Sets currentAccountDayBudget
      *
-     * @param int $currentAccountDayBudget currentAccountDayBudget
+     * @param int|mixed $currentAccountDayBudget currentAccountDayBudget
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupCostDaily
      *
-     * @param int $adgroupCostDaily adgroupCostDaily
+     * @param int|mixed $adgroupCostDaily adgroupCostDaily
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Sets campaignCostDaily
      *
-     * @param int $campaignCostDaily campaignCostDaily
+     * @param int|mixed $campaignCostDaily campaignCostDaily
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountCostDaily
      *
-     * @param int $accountCostDaily accountCostDaily
+     * @param int|mixed $accountCostDaily accountCostDaily
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupBalance
      *
-     * @param int $adgroupBalance adgroupBalance
+     * @param int|mixed $adgroupBalance adgroupBalance
      *
      * @return $this
      */
@@ -512,7 +512,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Sets campaignBalance
      *
-     * @param int $campaignBalance campaignBalance
+     * @param int|mixed $campaignBalance campaignBalance
      *
      * @return $this
      */
@@ -536,7 +536,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountBalance
      *
-     * @param int $accountBalance accountBalance
+     * @param int|mixed $accountBalance accountBalance
      *
      * @return $this
      */
@@ -560,7 +560,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Sets optimizeAdgroupDayBudgetFlag
      *
-     * @param bool $optimizeAdgroupDayBudgetFlag optimizeAdgroupDayBudgetFlag
+     * @param bool|mixed $optimizeAdgroupDayBudgetFlag optimizeAdgroupDayBudgetFlag
      *
      * @return $this
      */
@@ -584,7 +584,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Sets optimizeCampaignDayBudgetFlag
      *
-     * @param bool $optimizeCampaignDayBudgetFlag optimizeCampaignDayBudgetFlag
+     * @param bool|mixed $optimizeCampaignDayBudgetFlag optimizeCampaignDayBudgetFlag
      *
      * @return $this
      */
@@ -608,7 +608,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Sets optimizeAccountDayBudgetFlag
      *
-     * @param bool $optimizeAccountDayBudgetFlag optimizeAccountDayBudgetFlag
+     * @param bool|mixed $optimizeAccountDayBudgetFlag optimizeAccountDayBudgetFlag
      *
      * @return $this
      */
@@ -632,7 +632,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Sets optimizeAdgroupDayBudget
      *
-     * @param int $optimizeAdgroupDayBudget optimizeAdgroupDayBudget
+     * @param int|mixed $optimizeAdgroupDayBudget optimizeAdgroupDayBudget
      *
      * @return $this
      */
@@ -656,7 +656,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Sets optimizeCampaignDayBudget
      *
-     * @param int $optimizeCampaignDayBudget optimizeCampaignDayBudget
+     * @param int|mixed $optimizeCampaignDayBudget optimizeCampaignDayBudget
      *
      * @return $this
      */
@@ -680,7 +680,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Sets optimizeAccountDayBudget
      *
-     * @param int $optimizeAccountDayBudget optimizeAccountDayBudget
+     * @param int|mixed $optimizeAccountDayBudget optimizeAccountDayBudget
      *
      * @return $this
      */
@@ -704,7 +704,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Sets raiseAccountBalanceFlag
      *
-     * @param bool $raiseAccountBalanceFlag raiseAccountBalanceFlag
+     * @param bool|mixed $raiseAccountBalanceFlag raiseAccountBalanceFlag
      *
      * @return $this
      */
@@ -728,7 +728,7 @@ class OptBudgetStruct implements ModelInterface, ArrayAccess
     /**
      * Sets recommendRecharge
      *
-     * @param int $recommendRecharge recommendRecharge
+     * @param int|mixed $recommendRecharge recommendRecharge
      *
      * @return $this
      */

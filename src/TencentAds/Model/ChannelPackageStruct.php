@@ -236,7 +236,7 @@ class ChannelPackageStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appAndroidChannelPackageId
      *
-     * @param string $appAndroidChannelPackageId appAndroidChannelPackageId
+     * @param string|mixed $appAndroidChannelPackageId appAndroidChannelPackageId
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class ChannelPackageStruct implements ModelInterface, ArrayAccess
     /**
      * Sets packageName
      *
-     * @param string $packageName packageName
+     * @param string|mixed $packageName packageName
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class ChannelPackageStruct implements ModelInterface, ArrayAccess
     /**
      * Sets systemStatus
      *
-     * @param \TencentAds\Model\UnionPackageSysStatus $systemStatus systemStatus
+     * @param \TencentAds\Model\UnionPackageSysStatus|mixed $systemStatus systemStatus
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class ChannelPackageStruct implements ModelInterface, ArrayAccess
     /**
      * Sets packageOriginUrl
      *
-     * @param string $packageOriginUrl packageOriginUrl
+     * @param string|mixed $packageOriginUrl packageOriginUrl
      *
      * @return $this
      */

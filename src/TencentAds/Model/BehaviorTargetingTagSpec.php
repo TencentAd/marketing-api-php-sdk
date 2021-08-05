@@ -224,7 +224,7 @@ class BehaviorTargetingTagSpec implements ModelInterface, ArrayAccess
     /**
      * Sets queryMode
      *
-     * @param \TencentAds\Model\TargetingTagQueryMode $queryMode queryMode
+     * @param \TencentAds\Model\TargetingTagQueryMode|mixed $queryMode queryMode
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class BehaviorTargetingTagSpec implements ModelInterface, ArrayAccess
     /**
      * Sets querySpec
      *
-     * @param \TencentAds\Model\TargetingTagsGetQuerySpec $querySpec querySpec
+     * @param \TencentAds\Model\TargetingTagsGetQuerySpec|mixed $querySpec querySpec
      *
      * @return $this
      */

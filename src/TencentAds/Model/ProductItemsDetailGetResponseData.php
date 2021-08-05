@@ -235,7 +235,7 @@ class ProductItemsDetailGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets feedId
      *
-     * @param int $feedId feedId
+     * @param int|mixed $feedId feedId
      *
      * @return $this
      */
@@ -259,7 +259,7 @@ class ProductItemsDetailGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets systemStatus
      *
-     * @param \TencentAds\Model\AuditStatus $systemStatus systemStatus
+     * @param \TencentAds\Model\AuditStatus|mixed $systemStatus systemStatus
      *
      * @return $this
      */
@@ -283,7 +283,7 @@ class ProductItemsDetailGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets rejectMessage
      *
-     * @param string $rejectMessage rejectMessage
+     * @param string|mixed $rejectMessage rejectMessage
      *
      * @return $this
      */
@@ -307,7 +307,7 @@ class ProductItemsDetailGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets productItemSpec
      *
-     * @param \TencentAds\Model\ProductItemSpec $productItemSpec productItemSpec
+     * @param \TencentAds\Model\ProductItemSpec|mixed $productItemSpec productItemSpec
      *
      * @return $this
      */

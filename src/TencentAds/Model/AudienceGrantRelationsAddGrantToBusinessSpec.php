@@ -236,7 +236,7 @@ class AudienceGrantRelationsAddGrantToBusinessSpec implements ModelInterface, Ar
     /**
      * Sets grantBusinessId
      *
-     * @param int $grantBusinessId grantBusinessId
+     * @param int|mixed $grantBusinessId grantBusinessId
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class AudienceGrantRelationsAddGrantToBusinessSpec implements ModelInterface, Ar
     /**
      * Sets grantScopeType
      *
-     * @param \TencentAds\Model\AudienceGrantScopeType $grantScopeType grantScopeType
+     * @param \TencentAds\Model\AudienceGrantScopeType|mixed $grantScopeType grantScopeType
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class AudienceGrantRelationsAddGrantToBusinessSpec implements ModelInterface, Ar
     /**
      * Sets grantBusinessPermission
      *
-     * @param \TencentAds\Model\GrantBusinessPermission $grantBusinessPermission grantBusinessPermission
+     * @param \TencentAds\Model\GrantBusinessPermission|mixed $grantBusinessPermission grantBusinessPermission
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class AudienceGrantRelationsAddGrantToBusinessSpec implements ModelInterface, Ar
     /**
      * Sets grantAccountPermission
      *
-     * @param \TencentAds\Model\AccountPermission[] $grantAccountPermission grantAccountPermission
+     * @param \TencentAds\Model\AccountPermission[]|mixed $grantAccountPermission grantAccountPermission
      *
      * @return $this
      */

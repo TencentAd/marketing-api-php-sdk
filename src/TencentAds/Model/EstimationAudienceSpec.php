@@ -218,7 +218,7 @@ class EstimationAudienceSpec implements ModelInterface, ArrayAccess
     /**
      * Sets combineSpec
      *
-     * @param \TencentAds\Model\CombineSpec $combineSpec combineSpec
+     * @param \TencentAds\Model\CombineSpec|mixed $combineSpec combineSpec
      *
      * @return $this
      */

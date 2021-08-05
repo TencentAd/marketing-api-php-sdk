@@ -301,7 +301,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -325,7 +325,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets conversionName
      *
-     * @param string $conversionName conversionName
+     * @param string|mixed $conversionName conversionName
      *
      * @return $this
      */
@@ -349,7 +349,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accessType
      *
-     * @param \TencentAds\Model\AccessType $accessType accessType
+     * @param \TencentAds\Model\AccessType|mixed $accessType accessType
      *
      * @return $this
      */
@@ -373,7 +373,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets conversionScene
      *
-     * @param \TencentAds\Model\ConversionScene $conversionScene conversionScene
+     * @param \TencentAds\Model\ConversionScene|mixed $conversionScene conversionScene
      *
      * @return $this
      */
@@ -397,7 +397,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectId
      *
-     * @param string $promotedObjectId promotedObjectId
+     * @param string|mixed $promotedObjectId promotedObjectId
      *
      * @return $this
      */
@@ -421,7 +421,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets appAndroidChannelPackageId
      *
-     * @param string $appAndroidChannelPackageId appAndroidChannelPackageId
+     * @param string|mixed $appAndroidChannelPackageId appAndroidChannelPackageId
      *
      * @return $this
      */
@@ -445,7 +445,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets claimType
      *
-     * @param \TencentAds\Model\ClaimType $claimType claimType
+     * @param \TencentAds\Model\ClaimType|mixed $claimType claimType
      *
      * @return $this
      */
@@ -469,7 +469,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets feedbackUrl
      *
-     * @param string $feedbackUrl feedbackUrl
+     * @param string|mixed $feedbackUrl feedbackUrl
      *
      * @return $this
      */
@@ -493,7 +493,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets landingPageUrl
      *
-     * @param string $landingPageUrl landingPageUrl
+     * @param string|mixed $landingPageUrl landingPageUrl
      *
      * @return $this
      */
@@ -517,7 +517,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets miniProgramId
      *
-     * @param string $miniProgramId miniProgramId
+     * @param string|mixed $miniProgramId miniProgramId
      *
      * @return $this
      */
@@ -541,7 +541,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets selfAttributed
      *
-     * @param bool $selfAttributed selfAttributed
+     * @param bool|mixed $selfAttributed selfAttributed
      *
      * @return $this
      */
@@ -565,7 +565,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets optimizationGoal
      *
-     * @param \TencentAds\Model\IntOptimizationGoal $optimizationGoal optimizationGoal
+     * @param \TencentAds\Model\IntOptimizationGoal|mixed $optimizationGoal optimizationGoal
      *
      * @return $this
      */
@@ -589,7 +589,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets deepBehaviorOptimizationGoal
      *
-     * @param \TencentAds\Model\IntOptimizationGoal $deepBehaviorOptimizationGoal deepBehaviorOptimizationGoal
+     * @param \TencentAds\Model\IntOptimizationGoal|mixed $deepBehaviorOptimizationGoal deepBehaviorOptimizationGoal
      *
      * @return $this
      */
@@ -613,7 +613,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets deepWorthOptimizationGoal
      *
-     * @param \TencentAds\Model\ConversionOptimizationGoal $deepWorthOptimizationGoal deepWorthOptimizationGoal
+     * @param \TencentAds\Model\ConversionOptimizationGoal|mixed $deepWorthOptimizationGoal deepWorthOptimizationGoal
      *
      * @return $this
      */
@@ -637,7 +637,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets userActionSetId
      *
-     * @param int $userActionSetId userActionSetId
+     * @param int|mixed $userActionSetId userActionSetId
      *
      * @return $this
      */

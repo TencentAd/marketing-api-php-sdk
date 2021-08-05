@@ -217,7 +217,7 @@ class LabelAudiencesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets audienceId
      *
-     * @param int $audienceId audienceId
+     * @param int|mixed $audienceId audienceId
      *
      * @return $this
      */

@@ -92,13 +92,13 @@ class ProductCatalogsReportsApi
      *
      * 获取商品库报表(待废弃)
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $productCatalogId productCatalogId (required)
-     * @param  \TencentAds\Model\ReportDateRange $dateRange dateRange (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
-     * @param  string[] $groupBy groupBy (optional)
-     * @param  \TencentAds\Model\OrderByStruct[] $orderBy orderBy (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $productCatalogId productCatalogId (required)
+     * @param  \TencentAds\Model\ReportDateRange|mixed $dateRange dateRange (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering (optional)
+     * @param  string[]|mixed $groupBy groupBy (optional)
+     * @param  \TencentAds\Model\OrderByStruct[]|mixed $orderBy orderBy (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -115,13 +115,13 @@ class ProductCatalogsReportsApi
      *
      * 获取商品库报表(待废弃)
      *
-     * @param  int $accountId (required)
-     * @param  int $productCatalogId (required)
-     * @param  \TencentAds\Model\ReportDateRange $dateRange (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  string[] $groupBy (optional)
-     * @param  \TencentAds\Model\OrderByStruct[] $orderBy (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  \TencentAds\Model\ReportDateRange|mixed $dateRange (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  string[]|mixed $groupBy (optional)
+     * @param  \TencentAds\Model\OrderByStruct[]|mixed $orderBy (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -196,13 +196,13 @@ class ProductCatalogsReportsApi
      *
      * 获取商品库报表(待废弃)
      *
-     * @param  int $accountId (required)
-     * @param  int $productCatalogId (required)
-     * @param  \TencentAds\Model\ReportDateRange $dateRange (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  string[] $groupBy (optional)
-     * @param  \TencentAds\Model\OrderByStruct[] $orderBy (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  \TencentAds\Model\ReportDateRange|mixed $dateRange (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  string[]|mixed $groupBy (optional)
+     * @param  \TencentAds\Model\OrderByStruct[]|mixed $orderBy (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -222,13 +222,13 @@ class ProductCatalogsReportsApi
      *
      * 获取商品库报表(待废弃)
      *
-     * @param  int $accountId (required)
-     * @param  int $productCatalogId (required)
-     * @param  \TencentAds\Model\ReportDateRange $dateRange (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  string[] $groupBy (optional)
-     * @param  \TencentAds\Model\OrderByStruct[] $orderBy (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  \TencentAds\Model\ReportDateRange|mixed $dateRange (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  string[]|mixed $groupBy (optional)
+     * @param  \TencentAds\Model\OrderByStruct[]|mixed $orderBy (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -278,13 +278,13 @@ class ProductCatalogsReportsApi
     /**
      * Create request for operation 'productCatalogsReportsGet'
      *
-     * @param  int $accountId (required)
-     * @param  int $productCatalogId (required)
-     * @param  \TencentAds\Model\ReportDateRange $dateRange (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  string[] $groupBy (optional)
-     * @param  \TencentAds\Model\OrderByStruct[] $orderBy (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  \TencentAds\Model\ReportDateRange|mixed $dateRange (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  string[]|mixed $groupBy (optional)
+     * @param  \TencentAds\Model\OrderByStruct[]|mixed $orderBy (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

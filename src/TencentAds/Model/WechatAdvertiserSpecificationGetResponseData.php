@@ -223,7 +223,7 @@ class WechatAdvertiserSpecificationGetResponseData implements ModelInterface, Ar
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\WechatAdvertiserSpecificationGetListStruct[] $list list
+     * @param \TencentAds\Model\WechatAdvertiserSpecificationGetListStruct[]|mixed $list list
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class WechatAdvertiserSpecificationGetResponseData implements ModelInterface, Ar
     /**
      * Sets pageInfo
      *
-     * @param \TencentAds\Model\Conf $pageInfo pageInfo
+     * @param \TencentAds\Model\Conf|mixed $pageInfo pageInfo
      *
      * @return $this
      */

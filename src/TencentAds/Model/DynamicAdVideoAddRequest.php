@@ -247,7 +247,7 @@ class DynamicAdVideoAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -271,7 +271,7 @@ class DynamicAdVideoAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets productCatalogId
      *
-     * @param int $productCatalogId productCatalogId
+     * @param int|mixed $productCatalogId productCatalogId
      *
      * @return $this
      */
@@ -295,7 +295,7 @@ class DynamicAdVideoAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets productMode
      *
-     * @param \TencentAds\Model\ProductMode $productMode productMode
+     * @param \TencentAds\Model\ProductMode|mixed $productMode productMode
      *
      * @return $this
      */
@@ -319,7 +319,7 @@ class DynamicAdVideoAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets productSource
      *
-     * @param string $productSource productSource
+     * @param string|mixed $productSource productSource
      *
      * @return $this
      */
@@ -343,7 +343,7 @@ class DynamicAdVideoAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets videoMaxDuration
      *
-     * @param int $videoMaxDuration videoMaxDuration
+     * @param int|mixed $videoMaxDuration videoMaxDuration
      *
      * @return $this
      */
@@ -367,7 +367,7 @@ class DynamicAdVideoAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets dynamicAdTemplateId
      *
-     * @param int $dynamicAdTemplateId dynamicAdTemplateId
+     * @param int|mixed $dynamicAdTemplateId dynamicAdTemplateId
      *
      * @return $this
      */

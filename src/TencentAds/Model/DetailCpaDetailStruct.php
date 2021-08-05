@@ -224,7 +224,7 @@ class DetailCpaDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets effectData
      *
-     * @param \TencentAds\Model\CpaEffectDataItem[] $effectData effectData
+     * @param \TencentAds\Model\CpaEffectDataItem[]|mixed $effectData effectData
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class DetailCpaDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets effectDataTrends
      *
-     * @param \TencentAds\Model\CpaEffectDataTrendsItem[] $effectDataTrends effectDataTrends
+     * @param \TencentAds\Model\CpaEffectDataTrendsItem[]|mixed $effectDataTrends effectDataTrends
      *
      * @return $this
      */

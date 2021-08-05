@@ -217,7 +217,7 @@ class ComplianceValidationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets suggestionList
      *
-     * @param string[] $suggestionList suggestionList
+     * @param string[]|mixed $suggestionList suggestionList
      *
      * @return $this
      */

@@ -229,7 +229,7 @@ class AndroidUnionChannelPackagesAddResponseData implements ModelInterface, Arra
     /**
      * Sets appAndroidChannelPackageId
      *
-     * @param string $appAndroidChannelPackageId appAndroidChannelPackageId
+     * @param string|mixed $appAndroidChannelPackageId appAndroidChannelPackageId
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class AndroidUnionChannelPackagesAddResponseData implements ModelInterface, Arra
     /**
      * Sets packageName
      *
-     * @param string $packageName packageName
+     * @param string|mixed $packageName packageName
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class AndroidUnionChannelPackagesAddResponseData implements ModelInterface, Arra
     /**
      * Sets packageStatus
      *
-     * @param \TencentAds\Model\PackageStatus $packageStatus packageStatus
+     * @param \TencentAds\Model\PackageStatus|mixed $packageStatus packageStatus
      *
      * @return $this
      */

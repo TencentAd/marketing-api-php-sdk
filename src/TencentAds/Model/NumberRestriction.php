@@ -224,7 +224,7 @@ class NumberRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets min
      *
-     * @param int $min min
+     * @param int|mixed $min min
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class NumberRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets max
      *
-     * @param int $max max
+     * @param int|mixed $max max
      *
      * @return $this
      */

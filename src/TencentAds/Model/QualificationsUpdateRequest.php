@@ -235,7 +235,7 @@ class QualificationsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets qualificationType
      *
-     * @param \TencentAds\Model\QualificationType $qualificationType qualificationType
+     * @param \TencentAds\Model\QualificationType|mixed $qualificationType qualificationType
      *
      * @return $this
      */
@@ -259,7 +259,7 @@ class QualificationsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets qualificationId
      *
-     * @param int $qualificationId qualificationId
+     * @param int|mixed $qualificationId qualificationId
      *
      * @return $this
      */
@@ -283,7 +283,7 @@ class QualificationsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets imageIdList
      *
-     * @param string[] $imageIdList imageIdList
+     * @param string[]|mixed $imageIdList imageIdList
      *
      * @return $this
      */
@@ -307,7 +307,7 @@ class QualificationsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */

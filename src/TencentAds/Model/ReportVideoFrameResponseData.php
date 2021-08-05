@@ -223,7 +223,7 @@ class ReportVideoFrameResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\CollectionStruct[] $list list
+     * @param \TencentAds\Model\CollectionStruct[]|mixed $list list
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class ReportVideoFrameResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets pageInfo
      *
-     * @param \TencentAds\Model\Conf $pageInfo pageInfo
+     * @param \TencentAds\Model\Conf|mixed $pageInfo pageInfo
      *
      * @return $this
      */

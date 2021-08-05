@@ -259,7 +259,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -283,7 +283,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets campaignName
      *
-     * @param string $campaignName campaignName
+     * @param string|mixed $campaignName campaignName
      *
      * @return $this
      */
@@ -307,7 +307,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets campaignType
      *
-     * @param \TencentAds\Model\CampaignType $campaignType campaignType
+     * @param \TencentAds\Model\CampaignType|mixed $campaignType campaignType
      *
      * @return $this
      */
@@ -331,7 +331,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObjectType|mixed $promotedObjectType promotedObjectType
      *
      * @return $this
      */
@@ -355,7 +355,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets dailyBudget
      *
-     * @param int $dailyBudget dailyBudget
+     * @param int|mixed $dailyBudget dailyBudget
      *
      * @return $this
      */
@@ -379,7 +379,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets totalBudget
      *
-     * @param int $totalBudget totalBudget
+     * @param int|mixed $totalBudget totalBudget
      *
      * @return $this
      */
@@ -403,7 +403,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets configuredStatus
      *
-     * @param \TencentAds\Model\AdStatus $configuredStatus configuredStatus
+     * @param \TencentAds\Model\AdStatus|mixed $configuredStatus configuredStatus
      *
      * @return $this
      */
@@ -427,7 +427,7 @@ class CampaignsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets speedMode
      *
-     * @param \TencentAds\Model\SpeedMode $speedMode speedMode
+     * @param \TencentAds\Model\SpeedMode|mixed $speedMode speedMode
      *
      * @return $this
      */

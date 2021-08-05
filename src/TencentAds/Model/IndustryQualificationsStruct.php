@@ -272,7 +272,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets qualificationId
      *
-     * @param int $qualificationId qualificationId
+     * @param int|mixed $qualificationId qualificationId
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets systemIndustryId
      *
-     * @param int $systemIndustryId systemIndustryId
+     * @param int|mixed $systemIndustryId systemIndustryId
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets businessScopeId
      *
-     * @param int $businessScopeId businessScopeId
+     * @param int|mixed $businessScopeId businessScopeId
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets qualificationCode
      *
-     * @param string $qualificationCode qualificationCode
+     * @param string|mixed $qualificationCode qualificationCode
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets imageIdList
      *
-     * @param string[] $imageIdList imageIdList
+     * @param string[]|mixed $imageIdList imageIdList
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets qualificationStatus
      *
-     * @param \TencentAds\Model\QualificationStatus $qualificationStatus qualificationStatus
+     * @param \TencentAds\Model\QualificationStatus|mixed $qualificationStatus qualificationStatus
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets expiredDate
      *
-     * @param string $expiredDate expiredDate
+     * @param string|mixed $expiredDate expiredDate
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets rejectMessage
      *
-     * @param string $rejectMessage rejectMessage
+     * @param string|mixed $rejectMessage rejectMessage
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedTime
      *
-     * @param int $lastModifiedTime lastModifiedTime
+     * @param int|mixed $lastModifiedTime lastModifiedTime
      *
      * @return $this
      */

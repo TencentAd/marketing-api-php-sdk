@@ -224,7 +224,7 @@ class CampaignsUpdateConfiguredStatusUpdateConfiguredStatusStruct implements Mod
     /**
      * Sets campaignId
      *
-     * @param int $campaignId campaignId
+     * @param int|mixed $campaignId campaignId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class CampaignsUpdateConfiguredStatusUpdateConfiguredStatusStruct implements Mod
     /**
      * Sets configuredStatus
      *
-     * @param \TencentAds\Model\AdStatus $configuredStatus configuredStatus
+     * @param \TencentAds\Model\AdStatus|mixed $configuredStatus configuredStatus
      *
      * @return $this
      */

@@ -229,7 +229,7 @@ class DynamicAdVideoAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets videoId
      *
-     * @param string $videoId videoId
+     * @param string|mixed $videoId videoId
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class DynamicAdVideoAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets videoPreviewImageUrl
      *
-     * @param string $videoPreviewImageUrl videoPreviewImageUrl
+     * @param string|mixed $videoPreviewImageUrl videoPreviewImageUrl
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class DynamicAdVideoAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets videoPreviewImageId
      *
-     * @param int $videoPreviewImageId videoPreviewImageId
+     * @param int|mixed $videoPreviewImageId videoPreviewImageId
      *
      * @return $this
      */

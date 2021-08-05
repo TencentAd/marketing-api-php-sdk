@@ -242,7 +242,7 @@ class AdcreativeLabel implements ModelInterface, ArrayAccess
     /**
      * Sets coordinateX
      *
-     * @param int $coordinateX coordinateX
+     * @param int|mixed $coordinateX coordinateX
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class AdcreativeLabel implements ModelInterface, ArrayAccess
     /**
      * Sets coordinateY
      *
-     * @param int $coordinateY coordinateY
+     * @param int|mixed $coordinateY coordinateY
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class AdcreativeLabel implements ModelInterface, ArrayAccess
     /**
      * Sets direction
      *
-     * @param \TencentAds\Model\LableDirection $direction direction
+     * @param \TencentAds\Model\LableDirection|mixed $direction direction
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class AdcreativeLabel implements ModelInterface, ArrayAccess
     /**
      * Sets content
      *
-     * @param string $content content
+     * @param string|mixed $content content
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class AdcreativeLabel implements ModelInterface, ArrayAccess
     /**
      * Sets landingPageUrl
      *
-     * @param string $landingPageUrl landingPageUrl
+     * @param string|mixed $landingPageUrl landingPageUrl
      *
      * @return $this
      */

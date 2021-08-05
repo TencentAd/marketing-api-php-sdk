@@ -224,7 +224,7 @@ class UrlMatcher implements ModelInterface, ArrayAccess
     /**
      * Sets paramValue
      *
-     * @param string $paramValue paramValue
+     * @param string|mixed $paramValue paramValue
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class UrlMatcher implements ModelInterface, ArrayAccess
     /**
      * Sets operator
      *
-     * @param \TencentAds\Model\Operator $operator operator
+     * @param \TencentAds\Model\Operator|mixed $operator operator
      *
      * @return $this
      */

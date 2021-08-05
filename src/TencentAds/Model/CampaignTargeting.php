@@ -230,7 +230,7 @@ class CampaignTargeting implements ModelInterface, ArrayAccess
     /**
      * Sets campaignId
      *
-     * @param int $campaignId campaignId
+     * @param int|mixed $campaignId campaignId
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class CampaignTargeting implements ModelInterface, ArrayAccess
     /**
      * Sets campaignType
      *
-     * @param \TencentAds\Model\CampaignType $campaignType campaignType
+     * @param \TencentAds\Model\CampaignType|mixed $campaignType campaignType
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class CampaignTargeting implements ModelInterface, ArrayAccess
     /**
      * Sets dailyBudget
      *
-     * @param int $dailyBudget dailyBudget
+     * @param int|mixed $dailyBudget dailyBudget
      *
      * @return $this
      */

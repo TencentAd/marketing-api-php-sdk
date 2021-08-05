@@ -224,7 +224,7 @@ class AreaSpec implements ModelInterface, ArrayAccess
     /**
      * Sets areaType
      *
-     * @param \TencentAds\Model\LbsAreaType $areaType areaType
+     * @param \TencentAds\Model\LbsAreaType|mixed $areaType areaType
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class AreaSpec implements ModelInterface, ArrayAccess
     /**
      * Sets circleArea
      *
-     * @param \TencentAds\Model\CircleArea $circleArea circleArea
+     * @param \TencentAds\Model\CircleArea|mixed $circleArea circleArea
      *
      * @return $this
      */

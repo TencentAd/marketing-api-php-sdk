@@ -301,7 +301,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets maxActiveUserCount
      *
-     * @param int $maxActiveUserCount maxActiveUserCount
+     * @param int|mixed $maxActiveUserCount maxActiveUserCount
      *
      * @return $this
      */
@@ -325,7 +325,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets approximateCount
      *
-     * @param int $approximateCount approximateCount
+     * @param int|mixed $approximateCount approximateCount
      *
      * @return $this
      */
@@ -349,7 +349,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets impression
      *
-     * @param int $impression impression
+     * @param int|mixed $impression impression
      *
      * @return $this
      */
@@ -373,7 +373,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets minBidAmount
      *
-     * @param int $minBidAmount minBidAmount
+     * @param int|mixed $minBidAmount minBidAmount
      *
      * @return $this
      */
@@ -397,7 +397,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets maxBidAmount
      *
-     * @param int $maxBidAmount maxBidAmount
+     * @param int|mixed $maxBidAmount maxBidAmount
      *
      * @return $this
      */
@@ -421,7 +421,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets suggestMinBidAmount
      *
-     * @param int $suggestMinBidAmount suggestMinBidAmount
+     * @param int|mixed $suggestMinBidAmount suggestMinBidAmount
      *
      * @return $this
      */
@@ -445,7 +445,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets suggestMaxBidAmount
      *
-     * @param int $suggestMaxBidAmount suggestMaxBidAmount
+     * @param int|mixed $suggestMaxBidAmount suggestMaxBidAmount
      *
      * @return $this
      */
@@ -469,7 +469,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets suggestBidContentOcpa
      *
-     * @param string $suggestBidContentOcpa suggestBidContentOcpa
+     * @param string|mixed $suggestBidContentOcpa suggestBidContentOcpa
      *
      * @return $this
      */
@@ -493,7 +493,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets minUsersDaily
      *
-     * @param int $minUsersDaily minUsersDaily
+     * @param int|mixed $minUsersDaily minUsersDaily
      *
      * @return $this
      */
@@ -517,7 +517,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets maxUsersDaily
      *
-     * @param int $maxUsersDaily maxUsersDaily
+     * @param int|mixed $maxUsersDaily maxUsersDaily
      *
      * @return $this
      */
@@ -541,7 +541,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets minExposureDaily
      *
-     * @param int $minExposureDaily minExposureDaily
+     * @param int|mixed $minExposureDaily minExposureDaily
      *
      * @return $this
      */
@@ -565,7 +565,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets maxExposureDaily
      *
-     * @param int $maxExposureDaily maxExposureDaily
+     * @param int|mixed $maxExposureDaily maxExposureDaily
      *
      * @return $this
      */
@@ -589,7 +589,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets targetingStatus
      *
-     * @param \TencentAds\Model\TargetingStatus $targetingStatus targetingStatus
+     * @param \TencentAds\Model\TargetingStatus|mixed $targetingStatus targetingStatus
      *
      * @return $this
      */
@@ -613,7 +613,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets suggestTargeting
      *
-     * @param string[] $suggestTargeting suggestTargeting
+     * @param string[]|mixed $suggestTargeting suggestTargeting
      *
      * @return $this
      */
@@ -637,7 +637,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets isRealExposureSupported
      *
-     * @param bool $isRealExposureSupported isRealExposureSupported
+     * @param bool|mixed $isRealExposureSupported isRealExposureSupported
      *
      * @return $this
      */

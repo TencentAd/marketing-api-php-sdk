@@ -224,7 +224,7 @@ class SimpleRule implements ModelInterface, ArrayAccess
     /**
      * Sets audienceId
      *
-     * @param int $audienceId audienceId
+     * @param int|mixed $audienceId audienceId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class SimpleRule implements ModelInterface, ArrayAccess
     /**
      * Sets timeWindow
      *
-     * @param int $timeWindow timeWindow
+     * @param int|mixed $timeWindow timeWindow
      *
      * @return $this
      */

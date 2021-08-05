@@ -271,7 +271,7 @@ class WechatAgencyGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -295,7 +295,7 @@ class WechatAgencyGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAccountId
      *
-     * @param string $wechatAccountId wechatAccountId
+     * @param string|mixed $wechatAccountId wechatAccountId
      *
      * @return $this
      */
@@ -319,7 +319,7 @@ class WechatAgencyGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAccountName
      *
-     * @param string $wechatAccountName wechatAccountName
+     * @param string|mixed $wechatAccountName wechatAccountName
      *
      * @return $this
      */
@@ -343,7 +343,7 @@ class WechatAgencyGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets corporationName
      *
-     * @param string $corporationName corporationName
+     * @param string|mixed $corporationName corporationName
      *
      * @return $this
      */
@@ -367,7 +367,7 @@ class WechatAgencyGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets adminName
      *
-     * @param string $adminName adminName
+     * @param string|mixed $adminName adminName
      *
      * @return $this
      */
@@ -391,7 +391,7 @@ class WechatAgencyGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets adminPhoneNumber
      *
-     * @param string $adminPhoneNumber adminPhoneNumber
+     * @param string|mixed $adminPhoneNumber adminPhoneNumber
      *
      * @return $this
      */
@@ -415,7 +415,7 @@ class WechatAgencyGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets adminWechatId
      *
-     * @param string $adminWechatId adminWechatId
+     * @param string|mixed $adminWechatId adminWechatId
      *
      * @return $this
      */
@@ -439,7 +439,7 @@ class WechatAgencyGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets certificationImage
      *
-     * @param string $certificationImage certificationImage
+     * @param string|mixed $certificationImage certificationImage
      *
      * @return $this
      */
@@ -463,7 +463,7 @@ class WechatAgencyGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets corporationLicence
      *
-     * @param string $corporationLicence corporationLicence
+     * @param string|mixed $corporationLicence corporationLicence
      *
      * @return $this
      */
@@ -487,7 +487,7 @@ class WechatAgencyGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets advertiserInfoSpec
      *
-     * @param \TencentAds\Model\AdvertiserInfoSpecStruct $advertiserInfoSpec advertiserInfoSpec
+     * @param \TencentAds\Model\AdvertiserInfoSpecStruct|mixed $advertiserInfoSpec advertiserInfoSpec
      *
      * @return $this
      */

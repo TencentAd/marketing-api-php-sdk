@@ -224,7 +224,7 @@ class UnpublishAppId implements ModelInterface, ArrayAccess
     /**
      * Sets androidAppId
      *
-     * @param int $androidAppId androidAppId
+     * @param int|mixed $androidAppId androidAppId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class UnpublishAppId implements ModelInterface, ArrayAccess
     /**
      * Sets iosAppId
      *
-     * @param int $iosAppId iosAppId
+     * @param int|mixed $iosAppId iosAppId
      *
      * @return $this
      */

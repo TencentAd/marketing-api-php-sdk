@@ -254,7 +254,7 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adcreativeTemplateId
      *
-     * @param int $adcreativeTemplateId adcreativeTemplateId
+     * @param int|mixed $adcreativeTemplateId adcreativeTemplateId
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
     /**
      * Sets siteSet
      *
-     * @param string[] $siteSet siteSet
+     * @param string[]|mixed $siteSet siteSet
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\WechatPromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\WechatPromotedObjectType|mixed $promotedObjectType promotedObjectType
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adcreativeElements
      *
-     * @param \TencentAds\Model\AdcreativeCreativeElements $adcreativeElements adcreativeElements
+     * @param \TencentAds\Model\AdcreativeCreativeElements|mixed $adcreativeElements adcreativeElements
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectId
      *
-     * @param string $promotedObjectId promotedObjectId
+     * @param string|mixed $promotedObjectId promotedObjectId
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
     /**
      * Sets pageType
      *
-     * @param \TencentAds\Model\DestinationType $pageType pageType
+     * @param \TencentAds\Model\DestinationType|mixed $pageType pageType
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
     /**
      * Sets pageSpec
      *
-     * @param \TencentAds\Model\PreviewPageSpec $pageSpec pageSpec
+     * @param \TencentAds\Model\PreviewPageSpec|mixed $pageSpec pageSpec
      *
      * @return $this
      */

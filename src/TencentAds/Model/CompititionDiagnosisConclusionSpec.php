@@ -278,7 +278,7 @@ class CompititionDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets compititionDiagnosisScore
      *
-     * @param int $compititionDiagnosisScore compititionDiagnosisScore
+     * @param int|mixed $compititionDiagnosisScore compititionDiagnosisScore
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class CompititionDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets compititionDiagnosisResult
      *
-     * @param string $compititionDiagnosisResult compititionDiagnosisResult
+     * @param string|mixed $compititionDiagnosisResult compititionDiagnosisResult
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class CompititionDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets bidAmountDiagnosisScore
      *
-     * @param int $bidAmountDiagnosisScore bidAmountDiagnosisScore
+     * @param int|mixed $bidAmountDiagnosisScore bidAmountDiagnosisScore
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class CompititionDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets bidAmountDiagnosisConclusion
      *
-     * @param string $bidAmountDiagnosisConclusion bidAmountDiagnosisConclusion
+     * @param string|mixed $bidAmountDiagnosisConclusion bidAmountDiagnosisConclusion
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class CompititionDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets clickDiagnosisScore
      *
-     * @param int $clickDiagnosisScore clickDiagnosisScore
+     * @param int|mixed $clickDiagnosisScore clickDiagnosisScore
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class CompititionDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets clickDiagnosisConclusion
      *
-     * @param string $clickDiagnosisConclusion clickDiagnosisConclusion
+     * @param string|mixed $clickDiagnosisConclusion clickDiagnosisConclusion
      *
      * @return $this
      */
@@ -422,7 +422,7 @@ class CompititionDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets conversionDiagnosisScore
      *
-     * @param int $conversionDiagnosisScore conversionDiagnosisScore
+     * @param int|mixed $conversionDiagnosisScore conversionDiagnosisScore
      *
      * @return $this
      */
@@ -446,7 +446,7 @@ class CompititionDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets conversionDiagnosisConclusion
      *
-     * @param string $conversionDiagnosisConclusion conversionDiagnosisConclusion
+     * @param string|mixed $conversionDiagnosisConclusion conversionDiagnosisConclusion
      *
      * @return $this
      */
@@ -470,7 +470,7 @@ class CompititionDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets userAcceptanceDiagnosisScore
      *
-     * @param int $userAcceptanceDiagnosisScore userAcceptanceDiagnosisScore
+     * @param int|mixed $userAcceptanceDiagnosisScore userAcceptanceDiagnosisScore
      *
      * @return $this
      */
@@ -494,7 +494,7 @@ class CompititionDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets userAcceptanceDiagnosisConclusion
      *
-     * @param string $userAcceptanceDiagnosisConclusion userAcceptanceDiagnosisConclusion
+     * @param string|mixed $userAcceptanceDiagnosisConclusion userAcceptanceDiagnosisConclusion
      *
      * @return $this
      */
@@ -518,7 +518,7 @@ class CompititionDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets compititionAnalysisDetailSpecList
      *
-     * @param \TencentAds\Model\CompititionAnalysisDetailSpec[] $compititionAnalysisDetailSpecList compititionAnalysisDetailSpecList
+     * @param \TencentAds\Model\CompititionAnalysisDetailSpec[]|mixed $compititionAnalysisDetailSpecList compititionAnalysisDetailSpecList
      *
      * @return $this
      */

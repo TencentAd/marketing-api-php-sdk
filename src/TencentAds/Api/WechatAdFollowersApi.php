@@ -92,10 +92,10 @@ class WechatAdFollowersApi
      *
      * 获取微信广告关注信息
      *
-     * @param  \TencentAds\Model\TimeRange $timeRange timeRange (required)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  \TencentAds\Model\TimeRange|mixed $timeRange timeRange (required)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -112,10 +112,10 @@ class WechatAdFollowersApi
      *
      * 获取微信广告关注信息
      *
-     * @param  \TencentAds\Model\TimeRange $timeRange (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  \TencentAds\Model\TimeRange|mixed $timeRange (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -190,10 +190,10 @@ class WechatAdFollowersApi
      *
      * 获取微信广告关注信息
      *
-     * @param  \TencentAds\Model\TimeRange $timeRange (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  \TencentAds\Model\TimeRange|mixed $timeRange (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -213,10 +213,10 @@ class WechatAdFollowersApi
      *
      * 获取微信广告关注信息
      *
-     * @param  \TencentAds\Model\TimeRange $timeRange (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  \TencentAds\Model\TimeRange|mixed $timeRange (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -266,10 +266,10 @@ class WechatAdFollowersApi
     /**
      * Create request for operation 'wechatAdFollowersGet'
      *
-     * @param  \TencentAds\Model\TimeRange $timeRange (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  \TencentAds\Model\TimeRange|mixed $timeRange (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

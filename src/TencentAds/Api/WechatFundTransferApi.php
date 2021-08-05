@@ -92,7 +92,7 @@ class WechatFundTransferApi
      *
      * 微信服务商子客之间转账
      *
-     * @param  \TencentAds\Model\WechatFundTransferAddRequest $data data (required)
+     * @param  \TencentAds\Model\WechatFundTransferAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class WechatFundTransferApi
      *
      * 微信服务商子客之间转账
      *
-     * @param  \TencentAds\Model\WechatFundTransferAddRequest $data (required)
+     * @param  \TencentAds\Model\WechatFundTransferAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class WechatFundTransferApi
      *
      * 微信服务商子客之间转账
      *
-     * @param  \TencentAds\Model\WechatFundTransferAddRequest $data (required)
+     * @param  \TencentAds\Model\WechatFundTransferAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class WechatFundTransferApi
      *
      * 微信服务商子客之间转账
      *
-     * @param  \TencentAds\Model\WechatFundTransferAddRequest $data (required)
+     * @param  \TencentAds\Model\WechatFundTransferAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class WechatFundTransferApi
     /**
      * Create request for operation 'wechatFundTransferAdd'
      *
-     * @param  \TencentAds\Model\WechatFundTransferAddRequest $data (required)
+     * @param  \TencentAds\Model\WechatFundTransferAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

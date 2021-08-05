@@ -224,7 +224,7 @@ class SupportDynamicAbilitySpecList implements ModelInterface, ArrayAccess
     /**
      * Sets dynamicAbilityType
      *
-     * @param string[] $dynamicAbilityType dynamicAbilityType
+     * @param string[]|mixed $dynamicAbilityType dynamicAbilityType
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class SupportDynamicAbilitySpecList implements ModelInterface, ArrayAccess
     /**
      * Sets productItemDisplayQuantity
      *
-     * @param string[] $productItemDisplayQuantity productItemDisplayQuantity
+     * @param string[]|mixed $productItemDisplayQuantity productItemDisplayQuantity
      *
      * @return $this
      */

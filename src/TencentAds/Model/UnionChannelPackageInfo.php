@@ -242,7 +242,7 @@ class UnionChannelPackageInfo implements ModelInterface, ArrayAccess
     /**
      * Sets androidUnionAppId
      *
-     * @param int $androidUnionAppId androidUnionAppId
+     * @param int|mixed $androidUnionAppId androidUnionAppId
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class UnionChannelPackageInfo implements ModelInterface, ArrayAccess
     /**
      * Sets packageName
      *
-     * @param string $packageName packageName
+     * @param string|mixed $packageName packageName
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class UnionChannelPackageInfo implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \TencentAds\Model\UnionChannelTaskStatus $status status
+     * @param \TencentAds\Model\UnionChannelTaskStatus|mixed $status status
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class UnionChannelPackageInfo implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class UnionChannelPackageInfo implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedTime
      *
-     * @param int $lastModifiedTime lastModifiedTime
+     * @param int|mixed $lastModifiedTime lastModifiedTime
      *
      * @return $this
      */

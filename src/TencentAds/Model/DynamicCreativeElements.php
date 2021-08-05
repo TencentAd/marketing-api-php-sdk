@@ -470,7 +470,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets image
      *
-     * @param string $image image
+     * @param string|mixed $image image
      *
      * @return $this
      */
@@ -494,7 +494,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets image2
      *
-     * @param string $image2 image2
+     * @param string|mixed $image2 image2
      *
      * @return $this
      */
@@ -518,7 +518,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets image3
      *
-     * @param string $image3 image3
+     * @param string|mixed $image3 image3
      *
      * @return $this
      */
@@ -542,7 +542,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets title
      *
-     * @param string $title title
+     * @param string|mixed $title title
      *
      * @return $this
      */
@@ -566,7 +566,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -590,7 +590,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets corporate
      *
-     * @param \TencentAds\Model\AdcreativeCorporate $corporate corporate
+     * @param \TencentAds\Model\AdcreativeCorporate|mixed $corporate corporate
      *
      * @return $this
      */
@@ -614,7 +614,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets video
      *
-     * @param string $video video
+     * @param string|mixed $video video
      *
      * @return $this
      */
@@ -638,7 +638,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets imageOptions
      *
-     * @param string[] $imageOptions imageOptions
+     * @param string[]|mixed $imageOptions imageOptions
      *
      * @return $this
      */
@@ -662,7 +662,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets imageListOptions
      *
-     * @param \TencentAds\Model\AdcreativeImageList[] $imageListOptions imageListOptions
+     * @param \TencentAds\Model\AdcreativeImageList[]|mixed $imageListOptions imageListOptions
      *
      * @return $this
      */
@@ -686,7 +686,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets titleOptions
      *
-     * @param string[] $titleOptions titleOptions
+     * @param string[]|mixed $titleOptions titleOptions
      *
      * @return $this
      */
@@ -710,7 +710,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets descriptionOptions
      *
-     * @param string[] $descriptionOptions descriptionOptions
+     * @param string[]|mixed $descriptionOptions descriptionOptions
      *
      * @return $this
      */
@@ -734,7 +734,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets videoOptions
      *
-     * @param string[] $videoOptions videoOptions
+     * @param string[]|mixed $videoOptions videoOptions
      *
      * @return $this
      */
@@ -758,7 +758,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets shortVideoStructOptions
      *
-     * @param \TencentAds\Model\ShortVideoStruct[] $shortVideoStructOptions shortVideoStructOptions
+     * @param \TencentAds\Model\ShortVideoStruct[]|mixed $shortVideoStructOptions shortVideoStructOptions
      *
      * @return $this
      */
@@ -782,7 +782,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets deepLinkType
      *
-     * @param string $deepLinkType deepLinkType
+     * @param string|mixed $deepLinkType deepLinkType
      *
      * @return $this
      */
@@ -806,7 +806,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets linkNameType
      *
-     * @param \TencentAds\Model\LinkNameType $linkNameType linkNameType
+     * @param \TencentAds\Model\LinkNameType|mixed $linkNameType linkNameType
      *
      * @return $this
      */
@@ -830,7 +830,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets imageList
      *
-     * @param string[] $imageList imageList
+     * @param string[]|mixed $imageList imageList
      *
      * @return $this
      */
@@ -854,7 +854,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets elementStory
      *
-     * @param \TencentAds\Model\AdcreativeElementStoryArrayItem[] $elementStory elementStory
+     * @param \TencentAds\Model\AdcreativeElementStoryArrayItem[]|mixed $elementStory elementStory
      *
      * @return $this
      */
@@ -878,7 +878,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets url
      *
-     * @param string $url url
+     * @param string|mixed $url url
      *
      * @return $this
      */
@@ -902,7 +902,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets buttonText
      *
-     * @param string $buttonText buttonText
+     * @param string|mixed $buttonText buttonText
      *
      * @return $this
      */
@@ -926,7 +926,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets bottomText
      *
-     * @param string $bottomText bottomText
+     * @param string|mixed $bottomText bottomText
      *
      * @return $this
      */
@@ -950,7 +950,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets countdownBegin
      *
-     * @param int $countdownBegin countdownBegin
+     * @param int|mixed $countdownBegin countdownBegin
      *
      * @return $this
      */
@@ -974,7 +974,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets countdownPrice
      *
-     * @param string $countdownPrice countdownPrice
+     * @param string|mixed $countdownPrice countdownPrice
      *
      * @return $this
      */
@@ -998,7 +998,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets countdownTimeType
      *
-     * @param \TencentAds\Model\AdCreativeCountdownTimeType $countdownTimeType countdownTimeType
+     * @param \TencentAds\Model\AdCreativeCountdownTimeType|mixed $countdownTimeType countdownTimeType
      *
      * @return $this
      */
@@ -1022,7 +1022,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets miniProgramId
      *
-     * @param string $miniProgramId miniProgramId
+     * @param string|mixed $miniProgramId miniProgramId
      *
      * @return $this
      */
@@ -1046,7 +1046,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets miniProgramPath
      *
-     * @param string $miniProgramPath miniProgramPath
+     * @param string|mixed $miniProgramPath miniProgramPath
      *
      * @return $this
      */
@@ -1070,7 +1070,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets label
      *
-     * @param \TencentAds\Model\CreativeLabel[] $label label
+     * @param \TencentAds\Model\CreativeLabel[]|mixed $label label
      *
      * @return $this
      */
@@ -1094,7 +1094,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets productTags
      *
-     * @param string[] $productTags productTags
+     * @param string[]|mixed $productTags productTags
      *
      * @return $this
      */
@@ -1118,7 +1118,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets logoDescription
      *
-     * @param string $logoDescription logoDescription
+     * @param string|mixed $logoDescription logoDescription
      *
      * @return $this
      */
@@ -1142,7 +1142,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets logo
      *
-     * @param string $logo logo
+     * @param string|mixed $logo logo
      *
      * @return $this
      */
@@ -1166,7 +1166,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets leftBottomTxt
      *
-     * @param string $leftBottomTxt leftBottomTxt
+     * @param string|mixed $leftBottomTxt leftBottomTxt
      *
      * @return $this
      */
@@ -1190,7 +1190,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets animationEffect
      *
-     * @param string $animationEffect animationEffect
+     * @param string|mixed $animationEffect animationEffect
      *
      * @return $this
      */
@@ -1214,7 +1214,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets phone
      *
-     * @param string $phone phone
+     * @param string|mixed $phone phone
      *
      * @return $this
      */
@@ -1238,7 +1238,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets shortVideoStruct
      *
-     * @param \TencentAds\Model\ShortVideoStruct $shortVideoStruct shortVideoStruct
+     * @param \TencentAds\Model\ShortVideoStruct|mixed $shortVideoStruct shortVideoStruct
      *
      * @return $this
      */
@@ -1262,7 +1262,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets longVideoStruct
      *
-     * @param \TencentAds\Model\LongVideoStruct $longVideoStruct longVideoStruct
+     * @param \TencentAds\Model\LongVideoStruct|mixed $longVideoStruct longVideoStruct
      *
      * @return $this
      */
@@ -1286,7 +1286,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets bannerContent
      *
-     * @param \TencentAds\Model\AdcreativeBannerContent $bannerContent bannerContent
+     * @param \TencentAds\Model\AdcreativeBannerContent|mixed $bannerContent bannerContent
      *
      * @return $this
      */
@@ -1310,7 +1310,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets cardContent
      *
-     * @param \TencentAds\Model\AdcreativeCardContent $cardContent cardContent
+     * @param \TencentAds\Model\AdcreativeCardContent|mixed $cardContent cardContent
      *
      * @return $this
      */
@@ -1334,7 +1334,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets videoPopupButton
      *
-     * @param \TencentAds\Model\AdcreativeVideoPopupButton $videoPopupButton videoPopupButton
+     * @param \TencentAds\Model\AdcreativeVideoPopupButton|mixed $videoPopupButton videoPopupButton
      *
      * @return $this
      */
@@ -1358,7 +1358,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets buttonUrl
      *
-     * @param string $buttonUrl buttonUrl
+     * @param string|mixed $buttonUrl buttonUrl
      *
      * @return $this
      */
@@ -1382,7 +1382,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets brand
      *
-     * @param \TencentAds\Model\BrandStruct $brand brand
+     * @param \TencentAds\Model\BrandStruct|mixed $brand brand
      *
      * @return $this
      */
@@ -1406,7 +1406,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets caption
      *
-     * @param string $caption caption
+     * @param string|mixed $caption caption
      *
      * @return $this
      */
@@ -1430,7 +1430,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets shopImage
      *
-     * @param string $shopImage shopImage
+     * @param string|mixed $shopImage shopImage
      *
      * @return $this
      */
@@ -1454,7 +1454,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets headLine
      *
-     * @param string $headLine headLine
+     * @param string|mixed $headLine headLine
      *
      * @return $this
      */
@@ -1478,7 +1478,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     /**
      * Sets countdownExpiringTimestamp
      *
-     * @param int $countdownExpiringTimestamp countdownExpiringTimestamp
+     * @param int|mixed $countdownExpiringTimestamp countdownExpiringTimestamp
      *
      * @return $this
      */

@@ -230,7 +230,7 @@ class WechatScene implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountMediaCategory
      *
-     * @param int[] $officialAccountMediaCategory officialAccountMediaCategory
+     * @param int[]|mixed $officialAccountMediaCategory officialAccountMediaCategory
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class WechatScene implements ModelInterface, ArrayAccess
     /**
      * Sets miniProgramAndMiniGame
      *
-     * @param int[] $miniProgramAndMiniGame miniProgramAndMiniGame
+     * @param int[]|mixed $miniProgramAndMiniGame miniProgramAndMiniGame
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class WechatScene implements ModelInterface, ArrayAccess
     /**
      * Sets payScene
      *
-     * @param int[] $payScene payScene
+     * @param int[]|mixed $payScene payScene
      *
      * @return $this
      */

@@ -218,7 +218,7 @@ class ElementImage implements ModelInterface, ArrayAccess
     /**
      * Sets imageIdList
      *
-     * @param string[] $imageIdList imageIdList
+     * @param string[]|mixed $imageIdList imageIdList
      *
      * @return $this
      */

@@ -230,7 +230,7 @@ class WechatOcpaSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Sets optimizationGoal
      *
-     * @param \TencentAds\Model\OptimizationGoal $optimizationGoal optimizationGoal
+     * @param \TencentAds\Model\OptimizationGoal|mixed $optimizationGoal optimizationGoal
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class WechatOcpaSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Sets maxPrice
      *
-     * @param int $maxPrice maxPrice
+     * @param int|mixed $maxPrice maxPrice
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class WechatOcpaSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Sets minPrice
      *
-     * @param int $minPrice minPrice
+     * @param int|mixed $minPrice minPrice
      *
      * @return $this
      */

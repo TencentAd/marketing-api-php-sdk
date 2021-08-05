@@ -230,7 +230,7 @@ class SubMethod implements ModelInterface, ArrayAccess
     /**
      * Sets subMethodId
      *
-     * @param int $subMethodId subMethodId
+     * @param int|mixed $subMethodId subMethodId
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class SubMethod implements ModelInterface, ArrayAccess
     /**
      * Sets subMethodName
      *
-     * @param string $subMethodName subMethodName
+     * @param string|mixed $subMethodName subMethodName
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class SubMethod implements ModelInterface, ArrayAccess
     /**
      * Sets subMethodDescription
      *
-     * @param string $subMethodDescription subMethodDescription
+     * @param string|mixed $subMethodDescription subMethodDescription
      *
      * @return $this
      */

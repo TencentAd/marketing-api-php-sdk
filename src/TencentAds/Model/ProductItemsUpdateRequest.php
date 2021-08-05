@@ -289,7 +289,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets catalogId
      *
-     * @param int $catalogId catalogId
+     * @param int|mixed $catalogId catalogId
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets productOuterId
      *
-     * @param string $productOuterId productOuterId
+     * @param string|mixed $productOuterId productOuterId
      *
      * @return $this
      */
@@ -361,7 +361,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets price
      *
-     * @param double $price price
+     * @param double|mixed $price price
      *
      * @return $this
      */
@@ -385,7 +385,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets salePrice
      *
-     * @param double $salePrice salePrice
+     * @param double|mixed $salePrice salePrice
      *
      * @return $this
      */
@@ -409,7 +409,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets pricePc
      *
-     * @param double $pricePc pricePc
+     * @param double|mixed $pricePc pricePc
      *
      * @return $this
      */
@@ -433,7 +433,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets priceMobile
      *
-     * @param double $priceMobile priceMobile
+     * @param double|mixed $priceMobile priceMobile
      *
      * @return $this
      */
@@ -457,7 +457,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets priceApp
      *
-     * @param double $priceApp priceApp
+     * @param double|mixed $priceApp priceApp
      *
      * @return $this
      */
@@ -481,7 +481,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets stockVolume
      *
-     * @param int $stockVolume stockVolume
+     * @param int|mixed $stockVolume stockVolume
      *
      * @return $this
      */
@@ -505,7 +505,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets discount
      *
-     * @param double $discount discount
+     * @param double|mixed $discount discount
      *
      * @return $this
      */
@@ -529,7 +529,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets expirationTime
      *
-     * @param int $expirationTime expirationTime
+     * @param int|mixed $expirationTime expirationTime
      *
      * @return $this
      */
@@ -553,7 +553,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets productSaleStatus
      *
-     * @param \TencentAds\Model\ProductSaleStatus $productSaleStatus productSaleStatus
+     * @param \TencentAds\Model\ProductSaleStatus|mixed $productSaleStatus productSaleStatus
      *
      * @return $this
      */
@@ -577,7 +577,7 @@ class ProductItemsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets productVisibility
      *
-     * @param \TencentAds\Model\ProductVisibility $productVisibility productVisibility
+     * @param \TencentAds\Model\ProductVisibility|mixed $productVisibility productVisibility
      *
      * @return $this
      */

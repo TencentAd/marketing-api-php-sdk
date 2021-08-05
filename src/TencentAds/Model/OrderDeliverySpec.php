@@ -230,7 +230,7 @@ class OrderDeliverySpec implements ModelInterface, ArrayAccess
     /**
      * Sets deliveryTrackingNumber
      *
-     * @param string $deliveryTrackingNumber deliveryTrackingNumber
+     * @param string|mixed $deliveryTrackingNumber deliveryTrackingNumber
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class OrderDeliverySpec implements ModelInterface, ArrayAccess
     /**
      * Sets expressCompany
      *
-     * @param \TencentAds\Model\ExpressCompany $expressCompany expressCompany
+     * @param \TencentAds\Model\ExpressCompany|mixed $expressCompany expressCompany
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class OrderDeliverySpec implements ModelInterface, ArrayAccess
     /**
      * Sets deliveryInfoList
      *
-     * @param \TencentAds\Model\DeliveryDetailStruct[] $deliveryInfoList deliveryInfoList
+     * @param \TencentAds\Model\DeliveryDetailStruct[]|mixed $deliveryInfoList deliveryInfoList
      *
      * @return $this
      */

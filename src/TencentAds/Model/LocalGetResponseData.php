@@ -223,7 +223,7 @@ class LocalGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\AllDataSpec[] $list list
+     * @param \TencentAds\Model\AllDataSpec[]|mixed $list list
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class LocalGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets pageInfo
      *
-     * @param \TencentAds\Model\DpPageInfo $pageInfo pageInfo
+     * @param \TencentAds\Model\DpPageInfo|mixed $pageInfo pageInfo
      *
      * @return $this
      */

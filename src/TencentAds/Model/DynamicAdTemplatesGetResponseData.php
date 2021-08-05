@@ -223,7 +223,7 @@ class DynamicAdTemplatesGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\DynamicAdTemplatesGetListStruct[] $list list
+     * @param \TencentAds\Model\DynamicAdTemplatesGetListStruct[]|mixed $list list
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class DynamicAdTemplatesGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets pageInfo
      *
-     * @param \TencentAds\Model\PageInfo $pageInfo pageInfo
+     * @param \TencentAds\Model\PageInfo|mixed $pageInfo pageInfo
      *
      * @return $this
      */

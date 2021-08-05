@@ -368,7 +368,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets diagnoseTime
      *
-     * @param string $diagnoseTime diagnoseTime
+     * @param string|mixed $diagnoseTime diagnoseTime
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets operateSuggestion
      *
-     * @param \TencentAds\Model\OperateSuggestion $operateSuggestion operateSuggestion
+     * @param \TencentAds\Model\OperateSuggestion|mixed $operateSuggestion operateSuggestion
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets learningStatus
      *
-     * @param \TencentAds\Model\LearningStatus $learningStatus learningStatus
+     * @param \TencentAds\Model\LearningStatus|mixed $learningStatus learningStatus
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets costGuaranteeStatus
      *
-     * @param \TencentAds\Model\CostGuaranteeStatus $costGuaranteeStatus costGuaranteeStatus
+     * @param \TencentAds\Model\CostGuaranteeStatus|mixed $costGuaranteeStatus costGuaranteeStatus
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets costGuaranteeMoney
      *
-     * @param int $costGuaranteeMoney costGuaranteeMoney
+     * @param int|mixed $costGuaranteeMoney costGuaranteeMoney
      *
      * @return $this
      */
@@ -512,7 +512,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets exposureCompeteScore
      *
-     * @param string $exposureCompeteScore exposureCompeteScore
+     * @param string|mixed $exposureCompeteScore exposureCompeteScore
      *
      * @return $this
      */
@@ -536,7 +536,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets exposureRaiseRate
      *
-     * @param string $exposureRaiseRate exposureRaiseRate
+     * @param string|mixed $exposureRaiseRate exposureRaiseRate
      *
      * @return $this
      */
@@ -560,7 +560,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets cpaBiasToday
      *
-     * @param string $cpaBiasToday cpaBiasToday
+     * @param string|mixed $cpaBiasToday cpaBiasToday
      *
      * @return $this
      */
@@ -584,7 +584,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets cpaBiasOverall
      *
-     * @param string $cpaBiasOverall cpaBiasOverall
+     * @param string|mixed $cpaBiasOverall cpaBiasOverall
      *
      * @return $this
      */
@@ -608,7 +608,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets isOcpx
      *
-     * @param bool $isOcpx isOcpx
+     * @param bool|mixed $isOcpx isOcpx
      *
      * @return $this
      */
@@ -632,7 +632,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets optimizationGoal
      *
-     * @param string $optimizationGoal optimizationGoal
+     * @param string|mixed $optimizationGoal optimizationGoal
      *
      * @return $this
      */
@@ -656,7 +656,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets deepOptimizationGoal
      *
-     * @param string $deepOptimizationGoal deepOptimizationGoal
+     * @param string|mixed $deepOptimizationGoal deepOptimizationGoal
      *
      * @return $this
      */
@@ -680,7 +680,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets conclusionDescription
      *
-     * @param string $conclusionDescription conclusionDescription
+     * @param string|mixed $conclusionDescription conclusionDescription
      *
      * @return $this
      */
@@ -704,7 +704,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets hasDiagnoseDetail
      *
-     * @param bool $hasDiagnoseDetail hasDiagnoseDetail
+     * @param bool|mixed $hasDiagnoseDetail hasDiagnoseDetail
      *
      * @return $this
      */
@@ -728,7 +728,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets operateSuggestionDesc
      *
-     * @param string $operateSuggestionDesc operateSuggestionDesc
+     * @param string|mixed $operateSuggestionDesc operateSuggestionDesc
      *
      * @return $this
      */
@@ -752,7 +752,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets learningStatusDesc
      *
-     * @param string $learningStatusDesc learningStatusDesc
+     * @param string|mixed $learningStatusDesc learningStatusDesc
      *
      * @return $this
      */
@@ -776,7 +776,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets exposureCompeteScoreDesc
      *
-     * @param string $exposureCompeteScoreDesc exposureCompeteScoreDesc
+     * @param string|mixed $exposureCompeteScoreDesc exposureCompeteScoreDesc
      *
      * @return $this
      */
@@ -800,7 +800,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets detail
      *
-     * @param \TencentAds\Model\ResponseDetailStruct $detail detail
+     * @param \TencentAds\Model\ResponseDetailStruct|mixed $detail detail
      *
      * @return $this
      */
@@ -824,7 +824,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets autoAcquisitionStatus
      *
-     * @param \TencentAds\Model\AutoAcquisitionStatus $autoAcquisitionStatus autoAcquisitionStatus
+     * @param \TencentAds\Model\AutoAcquisitionStatus|mixed $autoAcquisitionStatus autoAcquisitionStatus
      *
      * @return $this
      */
@@ -848,7 +848,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets autoAcquisitionStatusName
      *
-     * @param string $autoAcquisitionStatusName autoAcquisitionStatusName
+     * @param string|mixed $autoAcquisitionStatusName autoAcquisitionStatusName
      *
      * @return $this
      */
@@ -872,7 +872,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets autoAcquisitionStatusDesc
      *
-     * @param string $autoAcquisitionStatusDesc autoAcquisitionStatusDesc
+     * @param string|mixed $autoAcquisitionStatusDesc autoAcquisitionStatusDesc
      *
      * @return $this
      */
@@ -896,7 +896,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets autoAcquisitionBeginTime
      *
-     * @param string $autoAcquisitionBeginTime autoAcquisitionBeginTime
+     * @param string|mixed $autoAcquisitionBeginTime autoAcquisitionBeginTime
      *
      * @return $this
      */
@@ -920,7 +920,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets autoAcquisitionEndTime
      *
-     * @param string $autoAcquisitionEndTime autoAcquisitionEndTime
+     * @param string|mixed $autoAcquisitionEndTime autoAcquisitionEndTime
      *
      * @return $this
      */
@@ -944,7 +944,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets isPotential
      *
-     * @param bool $isPotential isPotential
+     * @param bool|mixed $isPotential isPotential
      *
      * @return $this
      */
@@ -968,7 +968,7 @@ class BatchAdDiagnosisListItem implements ModelInterface, ArrayAccess
     /**
      * Sets potentialDetail
      *
-     * @param \TencentAds\Model\ResponsePotentialStruct $potentialDetail potentialDetail
+     * @param \TencentAds\Model\ResponsePotentialStruct|mixed $potentialDetail potentialDetail
      *
      * @return $this
      */

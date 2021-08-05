@@ -224,7 +224,7 @@ class UpdateAdgroupAppAndroidChannelPackageIdItem implements ModelInterface, Arr
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class UpdateAdgroupAppAndroidChannelPackageIdItem implements ModelInterface, Arr
     /**
      * Sets appAndroidChannelPackageId
      *
-     * @param string $appAndroidChannelPackageId appAndroidChannelPackageId
+     * @param string|mixed $appAndroidChannelPackageId appAndroidChannelPackageId
      *
      * @return $this
      */

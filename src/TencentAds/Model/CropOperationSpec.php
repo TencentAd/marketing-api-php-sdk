@@ -236,7 +236,7 @@ class CropOperationSpec implements ModelInterface, ArrayAccess
     /**
      * Sets cropCustomizedSpec
      *
-     * @param \TencentAds\Model\CropCustomizedSpec $cropCustomizedSpec cropCustomizedSpec
+     * @param \TencentAds\Model\CropCustomizedSpec|mixed $cropCustomizedSpec cropCustomizedSpec
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class CropOperationSpec implements ModelInterface, ArrayAccess
     /**
      * Sets cropSmartSpec
      *
-     * @param \TencentAds\Model\CropSmartSpec $cropSmartSpec cropSmartSpec
+     * @param \TencentAds\Model\CropSmartSpec|mixed $cropSmartSpec cropSmartSpec
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class CropOperationSpec implements ModelInterface, ArrayAccess
     /**
      * Sets resizeSpec
      *
-     * @param \TencentAds\Model\ResizeSpec $resizeSpec resizeSpec
+     * @param \TencentAds\Model\ResizeSpec|mixed $resizeSpec resizeSpec
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class CropOperationSpec implements ModelInterface, ArrayAccess
     /**
      * Sets cropCustomizedSpecAndResize
      *
-     * @param \TencentAds\Model\CropCustomizedSpecAndResize $cropCustomizedSpecAndResize cropCustomizedSpecAndResize
+     * @param \TencentAds\Model\CropCustomizedSpecAndResize|mixed $cropCustomizedSpecAndResize cropCustomizedSpecAndResize
      *
      * @return $this
      */

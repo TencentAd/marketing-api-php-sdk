@@ -92,11 +92,11 @@ class DailyBalanceReportApi
      *
      * 获取资金账户日结明细（新，包含日终结余数据）
      *
-     * @param  int $accountId accountId (required)
-     * @param  \TencentAds\Model\DateRangeTransaction $dateRange dateRange (required)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  \TencentAds\Model\DateRangeTransaction|mixed $dateRange dateRange (required)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -113,11 +113,11 @@ class DailyBalanceReportApi
      *
      * 获取资金账户日结明细（新，包含日终结余数据）
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\DateRangeTransaction $dateRange (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\DateRangeTransaction|mixed $dateRange (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -192,11 +192,11 @@ class DailyBalanceReportApi
      *
      * 获取资金账户日结明细（新，包含日终结余数据）
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\DateRangeTransaction $dateRange (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\DateRangeTransaction|mixed $dateRange (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -216,11 +216,11 @@ class DailyBalanceReportApi
      *
      * 获取资金账户日结明细（新，包含日终结余数据）
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\DateRangeTransaction $dateRange (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\DateRangeTransaction|mixed $dateRange (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -270,11 +270,11 @@ class DailyBalanceReportApi
     /**
      * Create request for operation 'dailyBalanceReportGet'
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\DateRangeTransaction $dateRange (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\DateRangeTransaction|mixed $dateRange (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

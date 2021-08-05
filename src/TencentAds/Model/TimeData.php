@@ -260,7 +260,7 @@ class TimeData implements ModelInterface, ArrayAccess
     /**
      * Sets date
      *
-     * @param string $date date
+     * @param string|mixed $date date
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class TimeData implements ModelInterface, ArrayAccess
     /**
      * Sets hour
      *
-     * @param int $hour hour
+     * @param int|mixed $hour hour
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class TimeData implements ModelInterface, ArrayAccess
     /**
      * Sets domain
      *
-     * @param string $domain domain
+     * @param string|mixed $domain domain
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class TimeData implements ModelInterface, ArrayAccess
     /**
      * Sets actionType
      *
-     * @param \TencentAds\Model\ActionType $actionType actionType
+     * @param \TencentAds\Model\ActionType|mixed $actionType actionType
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class TimeData implements ModelInterface, ArrayAccess
     /**
      * Sets customAction
      *
-     * @param string $customAction customAction
+     * @param string|mixed $customAction customAction
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class TimeData implements ModelInterface, ArrayAccess
     /**
      * Sets rawActionCount
      *
-     * @param int $rawActionCount rawActionCount
+     * @param int|mixed $rawActionCount rawActionCount
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class TimeData implements ModelInterface, ArrayAccess
     /**
      * Sets identifiedActionCount
      *
-     * @param int $identifiedActionCount identifiedActionCount
+     * @param int|mixed $identifiedActionCount identifiedActionCount
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class TimeData implements ModelInterface, ArrayAccess
     /**
      * Sets identifiedUserCount
      *
-     * @param int $identifiedUserCount identifiedUserCount
+     * @param int|mixed $identifiedUserCount identifiedUserCount
      *
      * @return $this
      */

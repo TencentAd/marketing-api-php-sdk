@@ -92,14 +92,14 @@ class XijingPageInteractiveApi
      *
      * 蹊径-创建互动落地页
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $isAutoSubmit isAutoSubmit (required)
-     * @param  string $pageType pageType (required)
-     * @param  string $interactivePageType interactivePageType (required)
-     * @param  string $pageTitle pageTitle (required)
-     * @param  string $pageName pageName (required)
-     * @param  string $mobileAppId mobileAppId (required)
-     * @param  \SplFileObject $file file (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $isAutoSubmit isAutoSubmit (required)
+     * @param  string|mixed $pageType pageType (required)
+     * @param  string|mixed $interactivePageType interactivePageType (required)
+     * @param  string|mixed $pageTitle pageTitle (required)
+     * @param  string|mixed $pageName pageName (required)
+     * @param  string|mixed $mobileAppId mobileAppId (required)
+     * @param  \SplFileObject|mixed $file file (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -116,14 +116,14 @@ class XijingPageInteractiveApi
      *
      * 蹊径-创建互动落地页
      *
-     * @param  int $accountId (required)
-     * @param  int $isAutoSubmit (required)
-     * @param  string $pageType (required)
-     * @param  string $interactivePageType (required)
-     * @param  string $pageTitle (required)
-     * @param  string $pageName (required)
-     * @param  string $mobileAppId (required)
-     * @param  \SplFileObject $file (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $isAutoSubmit (required)
+     * @param  string|mixed $pageType (required)
+     * @param  string|mixed $interactivePageType (required)
+     * @param  string|mixed $pageTitle (required)
+     * @param  string|mixed $pageName (required)
+     * @param  string|mixed $mobileAppId (required)
+     * @param  \SplFileObject|mixed $file (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -198,14 +198,14 @@ class XijingPageInteractiveApi
      *
      * 蹊径-创建互动落地页
      *
-     * @param  int $accountId (required)
-     * @param  int $isAutoSubmit (required)
-     * @param  string $pageType (required)
-     * @param  string $interactivePageType (required)
-     * @param  string $pageTitle (required)
-     * @param  string $pageName (required)
-     * @param  string $mobileAppId (required)
-     * @param  \SplFileObject $file (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $isAutoSubmit (required)
+     * @param  string|mixed $pageType (required)
+     * @param  string|mixed $interactivePageType (required)
+     * @param  string|mixed $pageTitle (required)
+     * @param  string|mixed $pageName (required)
+     * @param  string|mixed $mobileAppId (required)
+     * @param  \SplFileObject|mixed $file (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -225,14 +225,14 @@ class XijingPageInteractiveApi
      *
      * 蹊径-创建互动落地页
      *
-     * @param  int $accountId (required)
-     * @param  int $isAutoSubmit (required)
-     * @param  string $pageType (required)
-     * @param  string $interactivePageType (required)
-     * @param  string $pageTitle (required)
-     * @param  string $pageName (required)
-     * @param  string $mobileAppId (required)
-     * @param  \SplFileObject $file (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $isAutoSubmit (required)
+     * @param  string|mixed $pageType (required)
+     * @param  string|mixed $interactivePageType (required)
+     * @param  string|mixed $pageTitle (required)
+     * @param  string|mixed $pageName (required)
+     * @param  string|mixed $mobileAppId (required)
+     * @param  \SplFileObject|mixed $file (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -282,14 +282,14 @@ class XijingPageInteractiveApi
     /**
      * Create request for operation 'xijingPageInteractiveAdd'
      *
-     * @param  int $accountId (required)
-     * @param  int $isAutoSubmit (required)
-     * @param  string $pageType (required)
-     * @param  string $interactivePageType (required)
-     * @param  string $pageTitle (required)
-     * @param  string $pageName (required)
-     * @param  string $mobileAppId (required)
-     * @param  \SplFileObject $file (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $isAutoSubmit (required)
+     * @param  string|mixed $pageType (required)
+     * @param  string|mixed $interactivePageType (required)
+     * @param  string|mixed $pageTitle (required)
+     * @param  string|mixed $pageName (required)
+     * @param  string|mixed $mobileAppId (required)
+     * @param  \SplFileObject|mixed $file (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

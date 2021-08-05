@@ -92,7 +92,7 @@ class CustomTagsApi
      *
      * 创建客户标签
      *
-     * @param  \TencentAds\Model\CustomTagsAddRequest $data data (required)
+     * @param  \TencentAds\Model\CustomTagsAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class CustomTagsApi
      *
      * 创建客户标签
      *
-     * @param  \TencentAds\Model\CustomTagsAddRequest $data (required)
+     * @param  \TencentAds\Model\CustomTagsAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class CustomTagsApi
      *
      * 创建客户标签
      *
-     * @param  \TencentAds\Model\CustomTagsAddRequest $data (required)
+     * @param  \TencentAds\Model\CustomTagsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class CustomTagsApi
      *
      * 创建客户标签
      *
-     * @param  \TencentAds\Model\CustomTagsAddRequest $data (required)
+     * @param  \TencentAds\Model\CustomTagsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class CustomTagsApi
     /**
      * Create request for operation 'customTagsAdd'
      *
-     * @param  \TencentAds\Model\CustomTagsAddRequest $data (required)
+     * @param  \TencentAds\Model\CustomTagsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,7 +374,7 @@ class CustomTagsApi
      *
      * 删除客户标签
      *
-     * @param  \TencentAds\Model\CustomTagsDeleteRequest $data data (required)
+     * @param  \TencentAds\Model\CustomTagsDeleteRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -391,7 +391,7 @@ class CustomTagsApi
      *
      * 删除客户标签
      *
-     * @param  \TencentAds\Model\CustomTagsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\CustomTagsDeleteRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -466,7 +466,7 @@ class CustomTagsApi
      *
      * 删除客户标签
      *
-     * @param  \TencentAds\Model\CustomTagsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\CustomTagsDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -486,7 +486,7 @@ class CustomTagsApi
      *
      * 删除客户标签
      *
-     * @param  \TencentAds\Model\CustomTagsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\CustomTagsDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -536,7 +536,7 @@ class CustomTagsApi
     /**
      * Create request for operation 'customTagsDelete'
      *
-     * @param  \TencentAds\Model\CustomTagsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\CustomTagsDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -656,14 +656,14 @@ class CustomTagsApi
      *
      * 获取客户标签
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $parentTagId 父节点Id，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
-     * @param  int $tagId 标签id，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
-     * @param  string $tagCode 广告主对标签在自己系统里的编码，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
-     * @param  string $platform 数据应用，不填写默认为DMP (optional)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $parentTagId 父节点Id，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
+     * @param  int|mixed $tagId 标签id，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
+     * @param  string|mixed $tagCode 广告主对标签在自己系统里的编码，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
+     * @param  string|mixed $platform 数据应用，不填写默认为DMP (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -680,14 +680,14 @@ class CustomTagsApi
      *
      * 获取客户标签
      *
-     * @param  int $accountId (required)
-     * @param  int $parentTagId 父节点Id，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
-     * @param  int $tagId 标签id，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
-     * @param  string $tagCode 广告主对标签在自己系统里的编码，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
-     * @param  string $platform 数据应用，不填写默认为DMP (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $parentTagId 父节点Id，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
+     * @param  int|mixed $tagId 标签id，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
+     * @param  string|mixed $tagCode 广告主对标签在自己系统里的编码，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
+     * @param  string|mixed $platform 数据应用，不填写默认为DMP (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -762,14 +762,14 @@ class CustomTagsApi
      *
      * 获取客户标签
      *
-     * @param  int $accountId (required)
-     * @param  int $parentTagId 父节点Id，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
-     * @param  int $tagId 标签id，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
-     * @param  string $tagCode 广告主对标签在自己系统里的编码，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
-     * @param  string $platform 数据应用，不填写默认为DMP (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $parentTagId 父节点Id，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
+     * @param  int|mixed $tagId 标签id，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
+     * @param  string|mixed $tagCode 广告主对标签在自己系统里的编码，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
+     * @param  string|mixed $platform 数据应用，不填写默认为DMP (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -789,14 +789,14 @@ class CustomTagsApi
      *
      * 获取客户标签
      *
-     * @param  int $accountId (required)
-     * @param  int $parentTagId 父节点Id，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
-     * @param  int $tagId 标签id，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
-     * @param  string $tagCode 广告主对标签在自己系统里的编码，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
-     * @param  string $platform 数据应用，不填写默认为DMP (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $parentTagId 父节点Id，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
+     * @param  int|mixed $tagId 标签id，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
+     * @param  string|mixed $tagCode 广告主对标签在自己系统里的编码，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
+     * @param  string|mixed $platform 数据应用，不填写默认为DMP (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -846,14 +846,14 @@ class CustomTagsApi
     /**
      * Create request for operation 'customTagsGet'
      *
-     * @param  int $accountId (required)
-     * @param  int $parentTagId 父节点Id，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
-     * @param  int $tagId 标签id，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
-     * @param  string $tagCode 广告主对标签在自己系统里的编码，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
-     * @param  string $platform 数据应用，不填写默认为DMP (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $parentTagId 父节点Id，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
+     * @param  int|mixed $tagId 标签id，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
+     * @param  string|mixed $tagCode 广告主对标签在自己系统里的编码，parent_tag_id，tag_code，tag_id只能有一个存在 (optional)
+     * @param  string|mixed $platform 数据应用，不填写默认为DMP (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1005,7 +1005,7 @@ class CustomTagsApi
      *
      * 更新客户标签
      *
-     * @param  \TencentAds\Model\CustomTagsUpdateRequest $data data (required)
+     * @param  \TencentAds\Model\CustomTagsUpdateRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1022,7 +1022,7 @@ class CustomTagsApi
      *
      * 更新客户标签
      *
-     * @param  \TencentAds\Model\CustomTagsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\CustomTagsUpdateRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1097,7 +1097,7 @@ class CustomTagsApi
      *
      * 更新客户标签
      *
-     * @param  \TencentAds\Model\CustomTagsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\CustomTagsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1117,7 +1117,7 @@ class CustomTagsApi
      *
      * 更新客户标签
      *
-     * @param  \TencentAds\Model\CustomTagsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\CustomTagsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1167,7 +1167,7 @@ class CustomTagsApi
     /**
      * Create request for operation 'customTagsUpdate'
      *
-     * @param  \TencentAds\Model\CustomTagsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\CustomTagsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

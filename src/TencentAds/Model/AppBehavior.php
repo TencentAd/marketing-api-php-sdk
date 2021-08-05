@@ -236,7 +236,7 @@ class AppBehavior implements ModelInterface, ArrayAccess
     /**
      * Sets objectType
      *
-     * @param \TencentAds\Model\AppActionObjectType $objectType objectType
+     * @param \TencentAds\Model\AppActionObjectType|mixed $objectType objectType
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class AppBehavior implements ModelInterface, ArrayAccess
     /**
      * Sets objectIdList
      *
-     * @param int[] $objectIdList objectIdList
+     * @param int[]|mixed $objectIdList objectIdList
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class AppBehavior implements ModelInterface, ArrayAccess
     /**
      * Sets timeWindow
      *
-     * @param int $timeWindow timeWindow
+     * @param int|mixed $timeWindow timeWindow
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class AppBehavior implements ModelInterface, ArrayAccess
     /**
      * Sets actIdList
      *
-     * @param string[] $actIdList actIdList
+     * @param string[]|mixed $actIdList actIdList
      *
      * @return $this
      */

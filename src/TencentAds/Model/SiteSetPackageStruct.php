@@ -230,7 +230,7 @@ class SiteSetPackageStruct implements ModelInterface, ArrayAccess
     /**
      * Sets siteSet
      *
-     * @param string[] $siteSet siteSet
+     * @param string[]|mixed $siteSet siteSet
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class SiteSetPackageStruct implements ModelInterface, ArrayAccess
     /**
      * Sets bidCoefficient
      *
-     * @param double $bidCoefficient bidCoefficient
+     * @param double|mixed $bidCoefficient bidCoefficient
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class SiteSetPackageStruct implements ModelInterface, ArrayAccess
     /**
      * Sets deepBidCoefficient
      *
-     * @param double $deepBidCoefficient deepBidCoefficient
+     * @param double|mixed $deepBidCoefficient deepBidCoefficient
      *
      * @return $this
      */

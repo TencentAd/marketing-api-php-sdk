@@ -217,7 +217,7 @@ class ProductCatalogsReportsGetResponseData implements ModelInterface, ArrayAcce
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\ProductCatalogsReportsGetListStruct[] $list list
+     * @param \TencentAds\Model\ProductCatalogsReportsGetListStruct[]|mixed $list list
      *
      * @return $this
      */

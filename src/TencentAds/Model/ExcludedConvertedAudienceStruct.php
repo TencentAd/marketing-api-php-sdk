@@ -224,7 +224,7 @@ class ExcludedConvertedAudienceStruct implements ModelInterface, ArrayAccess
     /**
      * Sets excludedDimension
      *
-     * @param \TencentAds\Model\ExcludedDimension $excludedDimension excludedDimension
+     * @param \TencentAds\Model\ExcludedDimension|mixed $excludedDimension excludedDimension
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class ExcludedConvertedAudienceStruct implements ModelInterface, ArrayAccess
     /**
      * Sets conversionBehaviorList
      *
-     * @param string[] $conversionBehaviorList conversionBehaviorList
+     * @param string[]|mixed $conversionBehaviorList conversionBehaviorList
      *
      * @return $this
      */

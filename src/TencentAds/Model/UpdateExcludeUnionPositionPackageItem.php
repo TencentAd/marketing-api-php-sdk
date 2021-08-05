@@ -224,7 +224,7 @@ class UpdateExcludeUnionPositionPackageItem implements ModelInterface, ArrayAcce
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class UpdateExcludeUnionPositionPackageItem implements ModelInterface, ArrayAcce
     /**
      * Sets excludeUnionPositionPackage
      *
-     * @param int[] $excludeUnionPositionPackage excludeUnionPositionPackage
+     * @param int[]|mixed $excludeUnionPositionPackage excludeUnionPositionPackage
      *
      * @return $this
      */

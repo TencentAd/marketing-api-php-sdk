@@ -241,7 +241,7 @@ class WechatFundTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class WechatFundTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets fundType
      *
-     * @param \TencentAds\Model\WechatAccountFundType $fundType fundType
+     * @param \TencentAds\Model\WechatAccountFundType|mixed $fundType fundType
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class WechatFundTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets amount
      *
-     * @param int $amount amount
+     * @param int|mixed $amount amount
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class WechatFundTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets transferType
      *
-     * @param \TencentAds\Model\TransferType $transferType transferType
+     * @param \TencentAds\Model\TransferType|mixed $transferType transferType
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class WechatFundTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets operator
      *
-     * @param string $operator operator
+     * @param string|mixed $operator operator
      *
      * @return $this
      */

@@ -218,7 +218,7 @@ class TimeSeriesSpec implements ModelInterface, ArrayAccess
     /**
      * Sets timeSeries
      *
-     * @param string $timeSeries timeSeries
+     * @param string|mixed $timeSeries timeSeries
      *
      * @return $this
      */

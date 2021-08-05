@@ -241,7 +241,7 @@ class ProductCatalogsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class ProductCatalogsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets catalogName
      *
-     * @param string $catalogName catalogName
+     * @param string|mixed $catalogName catalogName
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class ProductCatalogsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets catalogScaleType
      *
-     * @param \TencentAds\Model\CatalogScale $catalogScaleType catalogScaleType
+     * @param \TencentAds\Model\CatalogScale|mixed $catalogScaleType catalogScaleType
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class ProductCatalogsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets catalogType
      *
-     * @param \TencentAds\Model\CatalogType $catalogType catalogType
+     * @param \TencentAds\Model\CatalogType|mixed $catalogType catalogType
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class ProductCatalogsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets industryType
      *
-     * @param \TencentAds\Model\CatalogIndustry $industryType industryType
+     * @param \TencentAds\Model\CatalogIndustry|mixed $industryType industryType
      *
      * @return $this
      */

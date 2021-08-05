@@ -230,7 +230,7 @@ class OptimizeSubContentStruct implements ModelInterface, ArrayAccess
     /**
      * Sets targeting
      *
-     * @param \TencentAds\Model\OptTargetingStruct $targeting targeting
+     * @param \TencentAds\Model\OptTargetingStruct|mixed $targeting targeting
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class OptimizeSubContentStruct implements ModelInterface, ArrayAccess
     /**
      * Sets bid
      *
-     * @param \TencentAds\Model\OptBidStruct $bid bid
+     * @param \TencentAds\Model\OptBidStruct|mixed $bid bid
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class OptimizeSubContentStruct implements ModelInterface, ArrayAccess
     /**
      * Sets budget
      *
-     * @param \TencentAds\Model\OptBudgetStruct $budget budget
+     * @param \TencentAds\Model\OptBudgetStruct|mixed $budget budget
      *
      * @return $this
      */

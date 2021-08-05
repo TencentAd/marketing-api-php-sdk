@@ -92,13 +92,13 @@ class RealtimeCostApi
      *
      * 获取实时消耗
      *
-     * @param  int $accountId accountId (required)
-     * @param  string $level level (required)
-     * @param  string $date date (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string|mixed $level level (required)
+     * @param  string|mixed $date date (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -115,13 +115,13 @@ class RealtimeCostApi
      *
      * 获取实时消耗
      *
-     * @param  int $accountId (required)
-     * @param  string $level (required)
-     * @param  string $date (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $level (required)
+     * @param  string|mixed $date (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -196,13 +196,13 @@ class RealtimeCostApi
      *
      * 获取实时消耗
      *
-     * @param  int $accountId (required)
-     * @param  string $level (required)
-     * @param  string $date (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $level (required)
+     * @param  string|mixed $date (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -222,13 +222,13 @@ class RealtimeCostApi
      *
      * 获取实时消耗
      *
-     * @param  int $accountId (required)
-     * @param  string $level (required)
-     * @param  string $date (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $level (required)
+     * @param  string|mixed $date (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -278,13 +278,13 @@ class RealtimeCostApi
     /**
      * Create request for operation 'realtimeCostGet'
      *
-     * @param  int $accountId (required)
-     * @param  string $level (required)
-     * @param  string $date (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $level (required)
+     * @param  string|mixed $date (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

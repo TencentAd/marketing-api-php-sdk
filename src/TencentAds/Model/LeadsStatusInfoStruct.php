@@ -236,7 +236,7 @@ class LeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsId
      *
-     * @param int $leadsId leadsId
+     * @param int|mixed $leadsId leadsId
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class LeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsConvertType
      *
-     * @param \TencentAds\Model\LeadCluesLeadsConvertType $leadsConvertType leadsConvertType
+     * @param \TencentAds\Model\LeadCluesLeadsConvertType|mixed $leadsConvertType leadsConvertType
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class LeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsIneffectReason
      *
-     * @param \TencentAds\Model\LeadCluesLeadsIneffectReason $leadsIneffectReason leadsIneffectReason
+     * @param \TencentAds\Model\LeadCluesLeadsIneffectReason|mixed $leadsIneffectReason leadsIneffectReason
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class LeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsIntentionScore
      *
-     * @param \TencentAds\Model\LeadCluesLeadsIntentionScore $leadsIntentionScore leadsIntentionScore
+     * @param \TencentAds\Model\LeadCluesLeadsIntentionScore|mixed $leadsIntentionScore leadsIntentionScore
      *
      * @return $this
      */

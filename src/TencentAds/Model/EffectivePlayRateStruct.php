@@ -254,7 +254,7 @@ class EffectivePlayRateStruct implements ModelInterface, ArrayAccess
     /**
      * Sets value
      *
-     * @param string $value value
+     * @param string|mixed $value value
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class EffectivePlayRateStruct implements ModelInterface, ArrayAccess
     /**
      * Sets score
      *
-     * @param string $score score
+     * @param string|mixed $score score
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class EffectivePlayRateStruct implements ModelInterface, ArrayAccess
     /**
      * Sets rankOverall
      *
-     * @param string $rankOverall rankOverall
+     * @param string|mixed $rankOverall rankOverall
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class EffectivePlayRateStruct implements ModelInterface, ArrayAccess
     /**
      * Sets rankFirstCategory
      *
-     * @param string $rankFirstCategory rankFirstCategory
+     * @param string|mixed $rankFirstCategory rankFirstCategory
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class EffectivePlayRateStruct implements ModelInterface, ArrayAccess
     /**
      * Sets rankSecondCategory
      *
-     * @param string $rankSecondCategory rankSecondCategory
+     * @param string|mixed $rankSecondCategory rankSecondCategory
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class EffectivePlayRateStruct implements ModelInterface, ArrayAccess
     /**
      * Sets selfTrends
      *
-     * @param \TencentAds\Model\PointStruct[] $selfTrends selfTrends
+     * @param \TencentAds\Model\PointStruct[]|mixed $selfTrends selfTrends
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class EffectivePlayRateStruct implements ModelInterface, ArrayAccess
     /**
      * Sets benchmarkTrends
      *
-     * @param \TencentAds\Model\PointStruct[] $benchmarkTrends benchmarkTrends
+     * @param \TencentAds\Model\PointStruct[]|mixed $benchmarkTrends benchmarkTrends
      *
      * @return $this
      */

@@ -92,7 +92,7 @@ class LeadCluesApi
      *
      * 获取线索列表
      *
-     * @param  \TencentAds\Model\LeadCluesGetRequest $data data (required)
+     * @param  \TencentAds\Model\LeadCluesGetRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class LeadCluesApi
      *
      * 获取线索列表
      *
-     * @param  \TencentAds\Model\LeadCluesGetRequest $data (required)
+     * @param  \TencentAds\Model\LeadCluesGetRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class LeadCluesApi
      *
      * 获取线索列表
      *
-     * @param  \TencentAds\Model\LeadCluesGetRequest $data (required)
+     * @param  \TencentAds\Model\LeadCluesGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class LeadCluesApi
      *
      * 获取线索列表
      *
-     * @param  \TencentAds\Model\LeadCluesGetRequest $data (required)
+     * @param  \TencentAds\Model\LeadCluesGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class LeadCluesApi
     /**
      * Create request for operation 'leadCluesGet'
      *
-     * @param  \TencentAds\Model\LeadCluesGetRequest $data (required)
+     * @param  \TencentAds\Model\LeadCluesGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,7 +374,7 @@ class LeadCluesApi
      *
      * 回传线索状态
      *
-     * @param  \TencentAds\Model\LeadCluesUpdateRequest $data data (required)
+     * @param  \TencentAds\Model\LeadCluesUpdateRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -391,7 +391,7 @@ class LeadCluesApi
      *
      * 回传线索状态
      *
-     * @param  \TencentAds\Model\LeadCluesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\LeadCluesUpdateRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -466,7 +466,7 @@ class LeadCluesApi
      *
      * 回传线索状态
      *
-     * @param  \TencentAds\Model\LeadCluesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\LeadCluesUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -486,7 +486,7 @@ class LeadCluesApi
      *
      * 回传线索状态
      *
-     * @param  \TencentAds\Model\LeadCluesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\LeadCluesUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -536,7 +536,7 @@ class LeadCluesApi
     /**
      * Create request for operation 'leadCluesUpdate'
      *
-     * @param  \TencentAds\Model\LeadCluesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\LeadCluesUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

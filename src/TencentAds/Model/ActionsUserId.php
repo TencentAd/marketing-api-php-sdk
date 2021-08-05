@@ -296,7 +296,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Sets hashImei
      *
-     * @param string $hashImei hashImei
+     * @param string|mixed $hashImei hashImei
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Sets md5Sha256Imei
      *
-     * @param string $md5Sha256Imei md5Sha256Imei
+     * @param string|mixed $md5Sha256Imei md5Sha256Imei
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Sets hashIdfa
      *
-     * @param string $hashIdfa hashIdfa
+     * @param string|mixed $hashIdfa hashIdfa
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Sets md5Sha256Idfa
      *
-     * @param string $md5Sha256Idfa md5Sha256Idfa
+     * @param string|mixed $md5Sha256Idfa md5Sha256Idfa
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Sets gdtOpenid
      *
-     * @param string $gdtOpenid gdtOpenid
+     * @param string|mixed $gdtOpenid gdtOpenid
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Sets hashPhone
      *
-     * @param string $hashPhone hashPhone
+     * @param string|mixed $hashPhone hashPhone
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Sets sha256Phone
      *
-     * @param string $sha256Phone sha256Phone
+     * @param string|mixed $sha256Phone sha256Phone
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Sets hashAndroidId
      *
-     * @param string $hashAndroidId hashAndroidId
+     * @param string|mixed $hashAndroidId hashAndroidId
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Sets hashMac
      *
-     * @param string $hashMac hashMac
+     * @param string|mixed $hashMac hashMac
      *
      * @return $this
      */
@@ -512,7 +512,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Sets oaid
      *
-     * @param string $oaid oaid
+     * @param string|mixed $oaid oaid
      *
      * @return $this
      */
@@ -536,7 +536,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Sets md5Sha256Oaid
      *
-     * @param string $md5Sha256Oaid md5Sha256Oaid
+     * @param string|mixed $md5Sha256Oaid md5Sha256Oaid
      *
      * @return $this
      */
@@ -560,7 +560,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Sets wechatOpenid
      *
-     * @param string $wechatOpenid wechatOpenid
+     * @param string|mixed $wechatOpenid wechatOpenid
      *
      * @return $this
      */
@@ -584,7 +584,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Sets wechatUnionid
      *
-     * @param string $wechatUnionid wechatUnionid
+     * @param string|mixed $wechatUnionid wechatUnionid
      *
      * @return $this
      */
@@ -608,7 +608,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAppId
      *
-     * @param string $wechatAppId wechatAppId
+     * @param string|mixed $wechatAppId wechatAppId
      *
      * @return $this
      */

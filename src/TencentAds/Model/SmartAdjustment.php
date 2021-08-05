@@ -236,7 +236,7 @@ class SmartAdjustment implements ModelInterface, ArrayAccess
     /**
      * Sets adcreativeTemplateId
      *
-     * @param int $adcreativeTemplateId adcreativeTemplateId
+     * @param int|mixed $adcreativeTemplateId adcreativeTemplateId
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class SmartAdjustment implements ModelInterface, ArrayAccess
     /**
      * Sets campaignType
      *
-     * @param \TencentAds\Model\CampaignType $campaignType campaignType
+     * @param \TencentAds\Model\CampaignType|mixed $campaignType campaignType
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class SmartAdjustment implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObjectType|mixed $promotedObjectType promotedObjectType
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class SmartAdjustment implements ModelInterface, ArrayAccess
     /**
      * Sets siteSet
      *
-     * @param string[] $siteSet siteSet
+     * @param string[]|mixed $siteSet siteSet
      *
      * @return $this
      */

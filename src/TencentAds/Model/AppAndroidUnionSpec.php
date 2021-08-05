@@ -254,7 +254,7 @@ class AppAndroidUnionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets packname
      *
-     * @param string $packname packname
+     * @param string|mixed $packname packname
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class AppAndroidUnionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets version
      *
-     * @param string $version version
+     * @param string|mixed $version version
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class AppAndroidUnionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets icon
      *
-     * @param string $icon icon
+     * @param string|mixed $icon icon
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class AppAndroidUnionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets packageSize
      *
-     * @param string $packageSize packageSize
+     * @param string|mixed $packageSize packageSize
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class AppAndroidUnionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets packageMd5
      *
-     * @param string $packageMd5 packageMd5
+     * @param string|mixed $packageMd5 packageMd5
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class AppAndroidUnionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets packageDownloadUrl
      *
-     * @param string $packageDownloadUrl packageDownloadUrl
+     * @param string|mixed $packageDownloadUrl packageDownloadUrl
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class AppAndroidUnionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets channelPackageSpec
      *
-     * @param \TencentAds\Model\ChannelPackageSpecStruct[] $channelPackageSpec channelPackageSpec
+     * @param \TencentAds\Model\ChannelPackageSpecStruct[]|mixed $channelPackageSpec channelPackageSpec
      *
      * @return $this
      */

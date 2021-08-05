@@ -242,7 +242,7 @@ class QualificationSpec implements ModelInterface, ArrayAccess
     /**
      * Sets industrySpec
      *
-     * @param \TencentAds\Model\IndustryQualificationsSpec $industrySpec industrySpec
+     * @param \TencentAds\Model\IndustryQualificationsSpec|mixed $industrySpec industrySpec
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class QualificationSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adSpec
      *
-     * @param \TencentAds\Model\AdQualificationsSpec $adSpec adSpec
+     * @param \TencentAds\Model\AdQualificationsSpec|mixed $adSpec adSpec
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class QualificationSpec implements ModelInterface, ArrayAccess
     /**
      * Sets additionalIndustrySpec
      *
-     * @param \TencentAds\Model\AdditionalIndustryQualificationsSpec $additionalIndustrySpec additionalIndustrySpec
+     * @param \TencentAds\Model\AdditionalIndustryQualificationsSpec|mixed $additionalIndustrySpec additionalIndustrySpec
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class QualificationSpec implements ModelInterface, ArrayAccess
     /**
      * Sets industryWechatSpec
      *
-     * @param \TencentAds\Model\WechatIndustryQualificationsSpec $industryWechatSpec industryWechatSpec
+     * @param \TencentAds\Model\WechatIndustryQualificationsSpec|mixed $industryWechatSpec industryWechatSpec
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class QualificationSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adWechatSpec
      *
-     * @param \TencentAds\Model\WechatAdQualificationsSpec $adWechatSpec adWechatSpec
+     * @param \TencentAds\Model\WechatAdQualificationsSpec|mixed $adWechatSpec adWechatSpec
      *
      * @return $this
      */

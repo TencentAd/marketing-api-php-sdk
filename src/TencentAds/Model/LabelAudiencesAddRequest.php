@@ -223,7 +223,7 @@ class LabelAudiencesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class LabelAudiencesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets labelId
      *
-     * @param int $labelId labelId
+     * @param int|mixed $labelId labelId
      *
      * @return $this
      */

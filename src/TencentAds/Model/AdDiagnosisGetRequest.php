@@ -229,7 +229,7 @@ class AdDiagnosisGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class AdDiagnosisGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupIdList
      *
-     * @param int[] $adgroupIdList adgroupIdList
+     * @param int[]|mixed $adgroupIdList adgroupIdList
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class AdDiagnosisGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets detailFields
      *
-     * @param string[] $detailFields detailFields
+     * @param string[]|mixed $detailFields detailFields
      *
      * @return $this
      */

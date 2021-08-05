@@ -224,7 +224,7 @@ class UpdateBidAmountStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class UpdateBidAmountStruct implements ModelInterface, ArrayAccess
     /**
      * Sets bidAmount
      *
-     * @param int $bidAmount bidAmount
+     * @param int|mixed $bidAmount bidAmount
      *
      * @return $this
      */

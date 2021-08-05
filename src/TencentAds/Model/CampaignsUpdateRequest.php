@@ -271,7 +271,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -295,7 +295,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets campaignId
      *
-     * @param int $campaignId campaignId
+     * @param int|mixed $campaignId campaignId
      *
      * @return $this
      */
@@ -319,7 +319,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets campaignName
      *
-     * @param string $campaignName campaignName
+     * @param string|mixed $campaignName campaignName
      *
      * @return $this
      */
@@ -343,7 +343,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets dailyBudget
      *
-     * @param int $dailyBudget dailyBudget
+     * @param int|mixed $dailyBudget dailyBudget
      *
      * @return $this
      */
@@ -367,7 +367,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets totalBudget
      *
-     * @param int $totalBudget totalBudget
+     * @param int|mixed $totalBudget totalBudget
      *
      * @return $this
      */
@@ -391,7 +391,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets configuredStatus
      *
-     * @param \TencentAds\Model\AdStatus $configuredStatus configuredStatus
+     * @param \TencentAds\Model\AdStatus|mixed $configuredStatus configuredStatus
      *
      * @return $this
      */
@@ -415,7 +415,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets speedMode
      *
-     * @param \TencentAds\Model\SpeedMode $speedMode speedMode
+     * @param \TencentAds\Model\SpeedMode|mixed $speedMode speedMode
      *
      * @return $this
      */
@@ -439,7 +439,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets beginDate
      *
-     * @param string $beginDate beginDate
+     * @param string|mixed $beginDate beginDate
      *
      * @return $this
      */
@@ -463,7 +463,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets endDate
      *
-     * @param string $endDate endDate
+     * @param string|mixed $endDate endDate
      *
      * @return $this
      */
@@ -487,7 +487,7 @@ class CampaignsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets isAutoReplenish
      *
-     * @param int $isAutoReplenish isAutoReplenish
+     * @param int|mixed $isAutoReplenish isAutoReplenish
      *
      * @return $this
      */

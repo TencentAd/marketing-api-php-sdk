@@ -92,7 +92,7 @@ class CustomAudiencesApi
      *
      * 创建客户人群
      *
-     * @param  \TencentAds\Model\CustomAudiencesAddRequest $data data (required)
+     * @param  \TencentAds\Model\CustomAudiencesAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class CustomAudiencesApi
      *
      * 创建客户人群
      *
-     * @param  \TencentAds\Model\CustomAudiencesAddRequest $data (required)
+     * @param  \TencentAds\Model\CustomAudiencesAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class CustomAudiencesApi
      *
      * 创建客户人群
      *
-     * @param  \TencentAds\Model\CustomAudiencesAddRequest $data (required)
+     * @param  \TencentAds\Model\CustomAudiencesAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class CustomAudiencesApi
      *
      * 创建客户人群
      *
-     * @param  \TencentAds\Model\CustomAudiencesAddRequest $data (required)
+     * @param  \TencentAds\Model\CustomAudiencesAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class CustomAudiencesApi
     /**
      * Create request for operation 'customAudiencesAdd'
      *
-     * @param  \TencentAds\Model\CustomAudiencesAddRequest $data (required)
+     * @param  \TencentAds\Model\CustomAudiencesAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,7 +374,7 @@ class CustomAudiencesApi
      *
      * 删除客户人群
      *
-     * @param  \TencentAds\Model\CustomAudiencesDeleteRequest $data data (required)
+     * @param  \TencentAds\Model\CustomAudiencesDeleteRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -391,7 +391,7 @@ class CustomAudiencesApi
      *
      * 删除客户人群
      *
-     * @param  \TencentAds\Model\CustomAudiencesDeleteRequest $data (required)
+     * @param  \TencentAds\Model\CustomAudiencesDeleteRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -466,7 +466,7 @@ class CustomAudiencesApi
      *
      * 删除客户人群
      *
-     * @param  \TencentAds\Model\CustomAudiencesDeleteRequest $data (required)
+     * @param  \TencentAds\Model\CustomAudiencesDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -486,7 +486,7 @@ class CustomAudiencesApi
      *
      * 删除客户人群
      *
-     * @param  \TencentAds\Model\CustomAudiencesDeleteRequest $data (required)
+     * @param  \TencentAds\Model\CustomAudiencesDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -536,7 +536,7 @@ class CustomAudiencesApi
     /**
      * Create request for operation 'customAudiencesDelete'
      *
-     * @param  \TencentAds\Model\CustomAudiencesDeleteRequest $data (required)
+     * @param  \TencentAds\Model\CustomAudiencesDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -656,12 +656,12 @@ class CustomAudiencesApi
      *
      * 获取客户人群
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $audienceId audienceId (optional)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string $platform 数据应用，不填写默认为DMP (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $audienceId audienceId (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string|mixed $platform 数据应用，不填写默认为DMP (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -678,12 +678,12 @@ class CustomAudiencesApi
      *
      * 获取客户人群
      *
-     * @param  int $accountId (required)
-     * @param  int $audienceId (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string $platform 数据应用，不填写默认为DMP (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $audienceId (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $platform 数据应用，不填写默认为DMP (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -758,12 +758,12 @@ class CustomAudiencesApi
      *
      * 获取客户人群
      *
-     * @param  int $accountId (required)
-     * @param  int $audienceId (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string $platform 数据应用，不填写默认为DMP (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $audienceId (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $platform 数据应用，不填写默认为DMP (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -783,12 +783,12 @@ class CustomAudiencesApi
      *
      * 获取客户人群
      *
-     * @param  int $accountId (required)
-     * @param  int $audienceId (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string $platform 数据应用，不填写默认为DMP (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $audienceId (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $platform 数据应用，不填写默认为DMP (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -838,12 +838,12 @@ class CustomAudiencesApi
     /**
      * Create request for operation 'customAudiencesGet'
      *
-     * @param  int $accountId (required)
-     * @param  int $audienceId (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string $platform 数据应用，不填写默认为DMP (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $audienceId (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $platform 数据应用，不填写默认为DMP (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -987,7 +987,7 @@ class CustomAudiencesApi
      *
      * 更新客户人群
      *
-     * @param  \TencentAds\Model\CustomAudiencesUpdateRequest $data data (required)
+     * @param  \TencentAds\Model\CustomAudiencesUpdateRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1004,7 +1004,7 @@ class CustomAudiencesApi
      *
      * 更新客户人群
      *
-     * @param  \TencentAds\Model\CustomAudiencesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\CustomAudiencesUpdateRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1079,7 +1079,7 @@ class CustomAudiencesApi
      *
      * 更新客户人群
      *
-     * @param  \TencentAds\Model\CustomAudiencesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\CustomAudiencesUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1099,7 +1099,7 @@ class CustomAudiencesApi
      *
      * 更新客户人群
      *
-     * @param  \TencentAds\Model\CustomAudiencesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\CustomAudiencesUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1149,7 +1149,7 @@ class CustomAudiencesApi
     /**
      * Create request for operation 'customAudiencesUpdate'
      *
-     * @param  \TencentAds\Model\CustomAudiencesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\CustomAudiencesUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

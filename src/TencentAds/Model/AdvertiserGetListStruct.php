@@ -392,7 +392,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets dailyBudget
      *
-     * @param int $dailyBudget dailyBudget
+     * @param int|mixed $dailyBudget dailyBudget
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets systemStatus
      *
-     * @param \TencentAds\Model\CustomerSystemStatus $systemStatus systemStatus
+     * @param \TencentAds\Model\CustomerSystemStatus|mixed $systemStatus systemStatus
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets corporationName
      *
-     * @param string $corporationName corporationName
+     * @param string|mixed $corporationName corporationName
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets certificationImageId
      *
-     * @param string $certificationImageId certificationImageId
+     * @param string|mixed $certificationImageId certificationImageId
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets individualQualification
      *
-     * @param \TencentAds\Model\IndividualQualificationRead $individualQualification individualQualification
+     * @param \TencentAds\Model\IndividualQualificationRead|mixed $individualQualification individualQualification
      *
      * @return $this
      */
@@ -512,7 +512,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets introductionUrl
      *
-     * @param string $introductionUrl introductionUrl
+     * @param string|mixed $introductionUrl introductionUrl
      *
      * @return $this
      */
@@ -536,7 +536,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets industryQualificationImageIdList
      *
-     * @param string[] $industryQualificationImageIdList industryQualificationImageIdList
+     * @param string[]|mixed $industryQualificationImageIdList industryQualificationImageIdList
      *
      * @return $this
      */
@@ -560,7 +560,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adQualificationImageIdList
      *
-     * @param string[] $adQualificationImageIdList adQualificationImageIdList
+     * @param string[]|mixed $adQualificationImageIdList adQualificationImageIdList
      *
      * @return $this
      */
@@ -584,7 +584,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets contactPerson
      *
-     * @param string $contactPerson contactPerson
+     * @param string|mixed $contactPerson contactPerson
      *
      * @return $this
      */
@@ -608,7 +608,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets contactPersonEmail
      *
-     * @param string $contactPersonEmail contactPersonEmail
+     * @param string|mixed $contactPersonEmail contactPersonEmail
      *
      * @return $this
      */
@@ -632,7 +632,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets contactPersonTelephone
      *
-     * @param string $contactPersonTelephone contactPersonTelephone
+     * @param string|mixed $contactPersonTelephone contactPersonTelephone
      *
      * @return $this
      */
@@ -656,7 +656,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets contactPersonMobile
      *
-     * @param string $contactPersonMobile contactPersonMobile
+     * @param string|mixed $contactPersonMobile contactPersonMobile
      *
      * @return $this
      */
@@ -680,7 +680,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatSpec
      *
-     * @param \TencentAds\Model\MpInfoRead $wechatSpec wechatSpec
+     * @param \TencentAds\Model\MpInfoRead|mixed $wechatSpec wechatSpec
      *
      * @return $this
      */
@@ -704,7 +704,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets websites
      *
-     * @param \TencentAds\Model\WebsiteReadStruct[] $websites websites
+     * @param \TencentAds\Model\WebsiteReadStruct[]|mixed $websites websites
      *
      * @return $this
      */
@@ -728,7 +728,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets mdmId
      *
-     * @param int $mdmId mdmId
+     * @param int|mixed $mdmId mdmId
      *
      * @return $this
      */
@@ -752,7 +752,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets mdmName
      *
-     * @param string $mdmName mdmName
+     * @param string|mixed $mdmName mdmName
      *
      * @return $this
      */
@@ -776,7 +776,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets agencyAccountId
      *
-     * @param int $agencyAccountId agencyAccountId
+     * @param int|mixed $agencyAccountId agencyAccountId
      *
      * @return $this
      */
@@ -800,7 +800,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets operators
      *
-     * @param \TencentAds\Model\AdvertiserOperatorStruct[] $operators operators
+     * @param \TencentAds\Model\AdvertiserOperatorStruct[]|mixed $operators operators
      *
      * @return $this
      */
@@ -824,7 +824,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets memo
      *
-     * @param string $memo memo
+     * @param string|mixed $memo memo
      *
      * @return $this
      */
@@ -848,7 +848,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -872,7 +872,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adQualificationImage
      *
-     * @param string[] $adQualificationImage adQualificationImage
+     * @param string[]|mixed $adQualificationImage adQualificationImage
      *
      * @return $this
      */
@@ -896,7 +896,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets certificationImage
      *
-     * @param string $certificationImage certificationImage
+     * @param string|mixed $certificationImage certificationImage
      *
      * @return $this
      */
@@ -920,7 +920,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets industryQualificationImage
      *
-     * @param string[] $industryQualificationImage industryQualificationImage
+     * @param string[]|mixed $industryQualificationImage industryQualificationImage
      *
      * @return $this
      */
@@ -944,7 +944,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets corporateImageName
      *
-     * @param string $corporateImageName corporateImageName
+     * @param string|mixed $corporateImageName corporateImageName
      *
      * @return $this
      */
@@ -968,7 +968,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets corporateImageLogo
      *
-     * @param string $corporateImageLogo corporateImageLogo
+     * @param string|mixed $corporateImageLogo corporateImageLogo
      *
      * @return $this
      */
@@ -992,7 +992,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets corporationLicence
      *
-     * @param string $corporationLicence corporationLicence
+     * @param string|mixed $corporationLicence corporationLicence
      *
      * @return $this
      */
@@ -1016,7 +1016,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets customizedIndustry
      *
-     * @param string $customizedIndustry customizedIndustry
+     * @param string|mixed $customizedIndustry customizedIndustry
      *
      * @return $this
      */
@@ -1040,7 +1040,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets identityNumber
      *
-     * @param string $identityNumber identityNumber
+     * @param string|mixed $identityNumber identityNumber
      *
      * @return $this
      */
@@ -1064,7 +1064,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets systemIndustryId
      *
-     * @param int $systemIndustryId systemIndustryId
+     * @param int|mixed $systemIndustryId systemIndustryId
      *
      * @return $this
      */
@@ -1088,7 +1088,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets rejectMessage
      *
-     * @param string $rejectMessage rejectMessage
+     * @param string|mixed $rejectMessage rejectMessage
      *
      * @return $this
      */

@@ -254,7 +254,7 @@ class UserActionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets userActionSetId
      *
-     * @param int $userActionSetId userActionSetId
+     * @param int|mixed $userActionSetId userActionSetId
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class UserActionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets matchRuleType
      *
-     * @param \TencentAds\Model\MatchRuleType $matchRuleType matchRuleType
+     * @param \TencentAds\Model\MatchRuleType|mixed $matchRuleType matchRuleType
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class UserActionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets extractType
      *
-     * @param \TencentAds\Model\ExtractRuleType $extractType extractType
+     * @param \TencentAds\Model\ExtractRuleType|mixed $extractType extractType
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class UserActionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets timeWindow
      *
-     * @param int $timeWindow timeWindow
+     * @param int|mixed $timeWindow timeWindow
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class UserActionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets urlMatchRule
      *
-     * @param \TencentAds\Model\UrlMatchRule $urlMatchRule urlMatchRule
+     * @param \TencentAds\Model\UrlMatchRule|mixed $urlMatchRule urlMatchRule
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class UserActionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets actionMatchRule
      *
-     * @param \TencentAds\Model\ActionMatchRule $actionMatchRule actionMatchRule
+     * @param \TencentAds\Model\ActionMatchRule|mixed $actionMatchRule actionMatchRule
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class UserActionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets actionAggregationRule
      *
-     * @param \TencentAds\Model\ActionAggregationRule $actionAggregationRule actionAggregationRule
+     * @param \TencentAds\Model\ActionAggregationRule|mixed $actionAggregationRule actionAggregationRule
      *
      * @return $this
      */

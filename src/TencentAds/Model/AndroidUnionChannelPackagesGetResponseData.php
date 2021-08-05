@@ -223,7 +223,7 @@ class AndroidUnionChannelPackagesGetResponseData implements ModelInterface, Arra
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\UnionChannelPackageData[] $list list
+     * @param \TencentAds\Model\UnionChannelPackageData[]|mixed $list list
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class AndroidUnionChannelPackagesGetResponseData implements ModelInterface, Arra
     /**
      * Sets pageInfo
      *
-     * @param \TencentAds\Model\Conf $pageInfo pageInfo
+     * @param \TencentAds\Model\Conf|mixed $pageInfo pageInfo
      *
      * @return $this
      */

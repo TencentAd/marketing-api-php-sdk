@@ -217,7 +217,7 @@ class CustomAudienceReportsGetResponseData implements ModelInterface, ArrayAcces
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\AudienceReport[] $list list
+     * @param \TencentAds\Model\AudienceReport[]|mixed $list list
      *
      * @return $this
      */

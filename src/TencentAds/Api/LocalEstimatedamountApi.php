@@ -92,7 +92,7 @@ class LocalEstimatedamountApi
      *
      * 拉取曝光预估数据
      *
-     * @param  \TencentAds\Model\LocalEstimatedamountGetRequest $data data (required)
+     * @param  \TencentAds\Model\LocalEstimatedamountGetRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class LocalEstimatedamountApi
      *
      * 拉取曝光预估数据
      *
-     * @param  \TencentAds\Model\LocalEstimatedamountGetRequest $data (required)
+     * @param  \TencentAds\Model\LocalEstimatedamountGetRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class LocalEstimatedamountApi
      *
      * 拉取曝光预估数据
      *
-     * @param  \TencentAds\Model\LocalEstimatedamountGetRequest $data (required)
+     * @param  \TencentAds\Model\LocalEstimatedamountGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class LocalEstimatedamountApi
      *
      * 拉取曝光预估数据
      *
-     * @param  \TencentAds\Model\LocalEstimatedamountGetRequest $data (required)
+     * @param  \TencentAds\Model\LocalEstimatedamountGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class LocalEstimatedamountApi
     /**
      * Create request for operation 'localEstimatedamountGet'
      *
-     * @param  \TencentAds\Model\LocalEstimatedamountGetRequest $data (required)
+     * @param  \TencentAds\Model\LocalEstimatedamountGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

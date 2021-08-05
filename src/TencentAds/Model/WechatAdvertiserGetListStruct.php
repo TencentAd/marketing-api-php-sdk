@@ -224,7 +224,7 @@ class WechatAdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class WechatAdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAccountId
      *
-     * @param string $wechatAccountId wechatAccountId
+     * @param string|mixed $wechatAccountId wechatAccountId
      *
      * @return $this
      */

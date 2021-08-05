@@ -272,7 +272,7 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupName
      *
-     * @param string $adgroupName adgroupName
+     * @param string|mixed $adgroupName adgroupName
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Sets beginDate
      *
-     * @param string $beginDate beginDate
+     * @param string|mixed $beginDate beginDate
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Sets endDate
      *
-     * @param string $endDate endDate
+     * @param string|mixed $endDate endDate
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Sets optimizationGoal
      *
-     * @param \TencentAds\Model\OptimizationGoal $optimizationGoal optimizationGoal
+     * @param \TencentAds\Model\OptimizationGoal|mixed $optimizationGoal optimizationGoal
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Sets totalBudget
      *
-     * @param int $totalBudget totalBudget
+     * @param int|mixed $totalBudget totalBudget
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Sets targeting
      *
-     * @param \TencentAds\Model\DpWriteTargetingSetting $targeting targeting
+     * @param \TencentAds\Model\DpWriteTargetingSetting|mixed $targeting targeting
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Sets poiList
      *
-     * @param string[] $poiList poiList
+     * @param string[]|mixed $poiList poiList
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Sets poiRadius
      *
-     * @param int $poiRadius poiRadius
+     * @param int|mixed $poiRadius poiRadius
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Sets packageLevel
      *
-     * @param \TencentAds\Model\PackageLevel $packageLevel packageLevel
+     * @param \TencentAds\Model\PackageLevel|mixed $packageLevel packageLevel
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class AdgroupCreateSpec implements ModelInterface, ArrayAccess
     /**
      * Sets localBusinessMode
      *
-     * @param \TencentAds\Model\EcoLocalBusinessMode $localBusinessMode localBusinessMode
+     * @param \TencentAds\Model\EcoLocalBusinessMode|mixed $localBusinessMode localBusinessMode
      *
      * @return $this
      */

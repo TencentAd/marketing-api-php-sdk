@@ -242,7 +242,7 @@ class ProductSeriesStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productSeriesId
      *
-     * @param int $productSeriesId productSeriesId
+     * @param int|mixed $productSeriesId productSeriesId
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class ProductSeriesStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productSeriesName
      *
-     * @param string $productSeriesName productSeriesName
+     * @param string|mixed $productSeriesName productSeriesName
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class ProductSeriesStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productSeriesDescription
      *
-     * @param string $productSeriesDescription productSeriesDescription
+     * @param string|mixed $productSeriesDescription productSeriesDescription
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class ProductSeriesStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productSeriesType
      *
-     * @param \TencentAds\Model\ProductSeriesType $productSeriesType productSeriesType
+     * @param \TencentAds\Model\ProductSeriesType|mixed $productSeriesType productSeriesType
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class ProductSeriesStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productSeries
      *
-     * @param \TencentAds\Model\ProductSeriesSpec $productSeries productSeries
+     * @param \TencentAds\Model\ProductSeriesSpec|mixed $productSeries productSeries
      *
      * @return $this
      */

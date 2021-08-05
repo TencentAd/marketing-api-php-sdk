@@ -92,7 +92,7 @@ class ProductCatalogsApi
      *
      * 创建商品库
      *
-     * @param  \TencentAds\Model\ProductCatalogsAddRequest $data data (required)
+     * @param  \TencentAds\Model\ProductCatalogsAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class ProductCatalogsApi
      *
      * 创建商品库
      *
-     * @param  \TencentAds\Model\ProductCatalogsAddRequest $data (required)
+     * @param  \TencentAds\Model\ProductCatalogsAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class ProductCatalogsApi
      *
      * 创建商品库
      *
-     * @param  \TencentAds\Model\ProductCatalogsAddRequest $data (required)
+     * @param  \TencentAds\Model\ProductCatalogsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class ProductCatalogsApi
      *
      * 创建商品库
      *
-     * @param  \TencentAds\Model\ProductCatalogsAddRequest $data (required)
+     * @param  \TencentAds\Model\ProductCatalogsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class ProductCatalogsApi
     /**
      * Create request for operation 'productCatalogsAdd'
      *
-     * @param  \TencentAds\Model\ProductCatalogsAddRequest $data (required)
+     * @param  \TencentAds\Model\ProductCatalogsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,12 +374,12 @@ class ProductCatalogsApi
      *
      * 获取商品库
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $catalogId catalogId (optional)
-     * @param  string $catalogName catalogName (optional)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $catalogId catalogId (optional)
+     * @param  string|mixed $catalogName catalogName (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -396,12 +396,12 @@ class ProductCatalogsApi
      *
      * 获取商品库
      *
-     * @param  int $accountId (required)
-     * @param  int $catalogId (optional)
-     * @param  string $catalogName (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $catalogId (optional)
+     * @param  string|mixed $catalogName (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -476,12 +476,12 @@ class ProductCatalogsApi
      *
      * 获取商品库
      *
-     * @param  int $accountId (required)
-     * @param  int $catalogId (optional)
-     * @param  string $catalogName (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $catalogId (optional)
+     * @param  string|mixed $catalogName (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -501,12 +501,12 @@ class ProductCatalogsApi
      *
      * 获取商品库
      *
-     * @param  int $accountId (required)
-     * @param  int $catalogId (optional)
-     * @param  string $catalogName (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $catalogId (optional)
+     * @param  string|mixed $catalogName (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -556,12 +556,12 @@ class ProductCatalogsApi
     /**
      * Create request for operation 'productCatalogsGet'
      *
-     * @param  int $accountId (required)
-     * @param  int $catalogId (optional)
-     * @param  string $catalogName (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $catalogId (optional)
+     * @param  string|mixed $catalogName (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

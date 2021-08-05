@@ -224,7 +224,7 @@ class CreativeLabel implements ModelInterface, ArrayAccess
     /**
      * Sets content
      *
-     * @param string $content content
+     * @param string|mixed $content content
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class CreativeLabel implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \TencentAds\Model\LabelType $type type
+     * @param \TencentAds\Model\LabelType|mixed $type type
      *
      * @return $this
      */

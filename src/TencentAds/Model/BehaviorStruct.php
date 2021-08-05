@@ -248,7 +248,7 @@ class BehaviorStruct implements ModelInterface, ArrayAccess
     /**
      * Sets targetingTags
      *
-     * @param string[] $targetingTags targetingTags
+     * @param string[]|mixed $targetingTags targetingTags
      *
      * @return $this
      */
@@ -272,7 +272,7 @@ class BehaviorStruct implements ModelInterface, ArrayAccess
     /**
      * Sets categoryIdList
      *
-     * @param int[] $categoryIdList categoryIdList
+     * @param int[]|mixed $categoryIdList categoryIdList
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class BehaviorStruct implements ModelInterface, ArrayAccess
     /**
      * Sets keywordList
      *
-     * @param string[] $keywordList keywordList
+     * @param string[]|mixed $keywordList keywordList
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class BehaviorStruct implements ModelInterface, ArrayAccess
     /**
      * Sets scene
      *
-     * @param string[] $scene scene
+     * @param string[]|mixed $scene scene
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class BehaviorStruct implements ModelInterface, ArrayAccess
     /**
      * Sets timeWindow
      *
-     * @param \TencentAds\Model\BehaviorInterestTimeWindow $timeWindow timeWindow
+     * @param \TencentAds\Model\BehaviorInterestTimeWindow|mixed $timeWindow timeWindow
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class BehaviorStruct implements ModelInterface, ArrayAccess
     /**
      * Sets intensity
      *
-     * @param string[] $intensity intensity
+     * @param string[]|mixed $intensity intensity
      *
      * @return $this
      */

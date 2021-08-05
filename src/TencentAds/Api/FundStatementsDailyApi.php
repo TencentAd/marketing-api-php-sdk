@@ -92,11 +92,11 @@ class FundStatementsDailyApi
      *
      * 获取资金账户日结明细
      *
-     * @param  int $accountId accountId (required)
-     * @param  string $fundType fundType (required)
-     * @param  \TencentAds\Model\DateRange $dateRange dateRange (required)
-     * @param  string $tradeType tradeType (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string|mixed $fundType fundType (required)
+     * @param  \TencentAds\Model\DateRange|mixed $dateRange dateRange (required)
+     * @param  string|mixed $tradeType tradeType (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -113,11 +113,11 @@ class FundStatementsDailyApi
      *
      * 获取资金账户日结明细
      *
-     * @param  int $accountId (required)
-     * @param  string $fundType (required)
-     * @param  \TencentAds\Model\DateRange $dateRange (required)
-     * @param  string $tradeType (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $fundType (required)
+     * @param  \TencentAds\Model\DateRange|mixed $dateRange (required)
+     * @param  string|mixed $tradeType (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -192,11 +192,11 @@ class FundStatementsDailyApi
      *
      * 获取资金账户日结明细
      *
-     * @param  int $accountId (required)
-     * @param  string $fundType (required)
-     * @param  \TencentAds\Model\DateRange $dateRange (required)
-     * @param  string $tradeType (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $fundType (required)
+     * @param  \TencentAds\Model\DateRange|mixed $dateRange (required)
+     * @param  string|mixed $tradeType (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -216,11 +216,11 @@ class FundStatementsDailyApi
      *
      * 获取资金账户日结明细
      *
-     * @param  int $accountId (required)
-     * @param  string $fundType (required)
-     * @param  \TencentAds\Model\DateRange $dateRange (required)
-     * @param  string $tradeType (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $fundType (required)
+     * @param  \TencentAds\Model\DateRange|mixed $dateRange (required)
+     * @param  string|mixed $tradeType (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -270,11 +270,11 @@ class FundStatementsDailyApi
     /**
      * Create request for operation 'fundStatementsDailyGet'
      *
-     * @param  int $accountId (required)
-     * @param  string $fundType (required)
-     * @param  \TencentAds\Model\DateRange $dateRange (required)
-     * @param  string $tradeType (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $fundType (required)
+     * @param  \TencentAds\Model\DateRange|mixed $dateRange (required)
+     * @param  string|mixed $tradeType (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

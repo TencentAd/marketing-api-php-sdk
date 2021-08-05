@@ -223,7 +223,7 @@ class AudienceGrantRelationsGetResponseData implements ModelInterface, ArrayAcce
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\GrantInfo[] $list list
+     * @param \TencentAds\Model\GrantInfo[]|mixed $list list
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class AudienceGrantRelationsGetResponseData implements ModelInterface, ArrayAcce
     /**
      * Sets pageInfo
      *
-     * @param \TencentAds\Model\PageInfo $pageInfo pageInfo
+     * @param \TencentAds\Model\PageInfo|mixed $pageInfo pageInfo
      *
      * @return $this
      */

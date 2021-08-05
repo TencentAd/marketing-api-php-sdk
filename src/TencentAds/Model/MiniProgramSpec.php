@@ -230,7 +230,7 @@ class MiniProgramSpec implements ModelInterface, ArrayAccess
     /**
      * Sets title
      *
-     * @param string $title title
+     * @param string|mixed $title title
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class MiniProgramSpec implements ModelInterface, ArrayAccess
     /**
      * Sets miniProgramId
      *
-     * @param string $miniProgramId miniProgramId
+     * @param string|mixed $miniProgramId miniProgramId
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class MiniProgramSpec implements ModelInterface, ArrayAccess
     /**
      * Sets miniProgramPath
      *
-     * @param string $miniProgramPath miniProgramPath
+     * @param string|mixed $miniProgramPath miniProgramPath
      *
      * @return $this
      */

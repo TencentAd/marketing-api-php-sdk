@@ -248,7 +248,7 @@ class WechatAdQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets qualificationId
      *
-     * @param int $qualificationId qualificationId
+     * @param int|mixed $qualificationId qualificationId
      *
      * @return $this
      */
@@ -272,7 +272,7 @@ class WechatAdQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets qualificationName
      *
-     * @param string $qualificationName qualificationName
+     * @param string|mixed $qualificationName qualificationName
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class WechatAdQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets imageUrl
      *
-     * @param string $imageUrl imageUrl
+     * @param string|mixed $imageUrl imageUrl
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class WechatAdQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets expiredDate
      *
-     * @param string $expiredDate expiredDate
+     * @param string|mixed $expiredDate expiredDate
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class WechatAdQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets qualificationStatus
      *
-     * @param \TencentAds\Model\QualificationStatus $qualificationStatus qualificationStatus
+     * @param \TencentAds\Model\QualificationStatus|mixed $qualificationStatus qualificationStatus
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class WechatAdQualificationsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets rejectMessage
      *
-     * @param string $rejectMessage rejectMessage
+     * @param string|mixed $rejectMessage rejectMessage
      *
      * @return $this
      */

@@ -236,7 +236,7 @@ class IndustryQualificationsSpec implements ModelInterface, ArrayAccess
     /**
      * Sets systemIndustryId
      *
-     * @param int $systemIndustryId systemIndustryId
+     * @param int|mixed $systemIndustryId systemIndustryId
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class IndustryQualificationsSpec implements ModelInterface, ArrayAccess
     /**
      * Sets businessScopeId
      *
-     * @param int $businessScopeId businessScopeId
+     * @param int|mixed $businessScopeId businessScopeId
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class IndustryQualificationsSpec implements ModelInterface, ArrayAccess
     /**
      * Sets qualificationCode
      *
-     * @param string $qualificationCode qualificationCode
+     * @param string|mixed $qualificationCode qualificationCode
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class IndustryQualificationsSpec implements ModelInterface, ArrayAccess
     /**
      * Sets imageIdList
      *
-     * @param string[] $imageIdList imageIdList
+     * @param string[]|mixed $imageIdList imageIdList
      *
      * @return $this
      */

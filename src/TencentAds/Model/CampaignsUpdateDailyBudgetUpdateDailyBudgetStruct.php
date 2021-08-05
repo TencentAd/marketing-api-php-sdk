@@ -224,7 +224,7 @@ class CampaignsUpdateDailyBudgetUpdateDailyBudgetStruct implements ModelInterfac
     /**
      * Sets campaignId
      *
-     * @param int $campaignId campaignId
+     * @param int|mixed $campaignId campaignId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class CampaignsUpdateDailyBudgetUpdateDailyBudgetStruct implements ModelInterfac
     /**
      * Sets dailyBudget
      *
-     * @param int $dailyBudget dailyBudget
+     * @param int|mixed $dailyBudget dailyBudget
      *
      * @return $this
      */

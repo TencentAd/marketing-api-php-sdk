@@ -223,7 +223,7 @@ class AdcreativeTemplatePreviewGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets previewSpec
      *
-     * @param \TencentAds\Model\AdcreativePreviewSpec $previewSpec previewSpec
+     * @param \TencentAds\Model\AdcreativePreviewSpec|mixed $previewSpec previewSpec
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class AdcreativeTemplatePreviewGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */

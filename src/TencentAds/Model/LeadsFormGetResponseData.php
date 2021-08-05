@@ -247,7 +247,7 @@ class LeadsFormGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -271,7 +271,7 @@ class LeadsFormGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets componentId
      *
-     * @param string $componentId componentId
+     * @param string|mixed $componentId componentId
      *
      * @return $this
      */
@@ -295,7 +295,7 @@ class LeadsFormGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets componentName
      *
-     * @param string $componentName componentName
+     * @param string|mixed $componentName componentName
      *
      * @return $this
      */
@@ -319,7 +319,7 @@ class LeadsFormGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param string $createdTime createdTime
+     * @param string|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -343,7 +343,7 @@ class LeadsFormGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets formConfig
      *
-     * @param \TencentAds\Model\FormConfigDetailData $formConfig formConfig
+     * @param \TencentAds\Model\FormConfigDetailData|mixed $formConfig formConfig
      *
      * @return $this
      */
@@ -367,7 +367,7 @@ class LeadsFormGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets itemList
      *
-     * @param \TencentAds\Model\ControlListItemDetailData[] $itemList itemList
+     * @param \TencentAds\Model\ControlListItemDetailData[]|mixed $itemList itemList
      *
      * @return $this
      */

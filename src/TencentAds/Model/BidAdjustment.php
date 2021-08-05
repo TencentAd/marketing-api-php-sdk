@@ -218,7 +218,7 @@ class BidAdjustment implements ModelInterface, ArrayAccess
     /**
      * Sets siteSetPackage
      *
-     * @param \TencentAds\Model\SiteSetPackageStruct[] $siteSetPackage siteSetPackage
+     * @param \TencentAds\Model\SiteSetPackageStruct[]|mixed $siteSetPackage siteSetPackage
      *
      * @return $this
      */

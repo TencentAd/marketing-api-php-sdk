@@ -266,7 +266,7 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets taskId
      *
-     * @param int $taskId taskId
+     * @param int|mixed $taskId taskId
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets taskName
      *
-     * @param string $taskName taskName
+     * @param string|mixed $taskName taskName
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets taskType
      *
-     * @param \TencentAds\Model\TaskType $taskType taskType
+     * @param \TencentAds\Model\TaskType|mixed $taskType taskType
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets taskScope
      *
-     * @param \TencentAds\Model\TaskScope $taskScope taskScope
+     * @param \TencentAds\Model\TaskScope|mixed $taskScope taskScope
      *
      * @return $this
      */
@@ -362,7 +362,7 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \TencentAds\Model\TaskStatus $status status
+     * @param \TencentAds\Model\TaskStatus|mixed $status status
      *
      * @return $this
      */
@@ -386,7 +386,7 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets resultStatus
      *
-     * @param \TencentAds\Model\TaskResultStatus $resultStatus resultStatus
+     * @param \TencentAds\Model\TaskResultStatus|mixed $resultStatus resultStatus
      *
      * @return $this
      */
@@ -410,7 +410,7 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -434,7 +434,7 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets endTime
      *
-     * @param int $endTime endTime
+     * @param int|mixed $endTime endTime
      *
      * @return $this
      */
@@ -458,7 +458,7 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets scopeObjectIdList
      *
-     * @param int[] $scopeObjectIdList scopeObjectIdList
+     * @param int[]|mixed $scopeObjectIdList scopeObjectIdList
      *
      * @return $this
      */

@@ -92,7 +92,7 @@ class AdcreativePreviewsApi
      *
      * 创建预览
      *
-     * @param  \TencentAds\Model\AdcreativePreviewsAddRequest $data data (required)
+     * @param  \TencentAds\Model\AdcreativePreviewsAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class AdcreativePreviewsApi
      *
      * 创建预览
      *
-     * @param  \TencentAds\Model\AdcreativePreviewsAddRequest $data (required)
+     * @param  \TencentAds\Model\AdcreativePreviewsAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class AdcreativePreviewsApi
      *
      * 创建预览
      *
-     * @param  \TencentAds\Model\AdcreativePreviewsAddRequest $data (required)
+     * @param  \TencentAds\Model\AdcreativePreviewsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class AdcreativePreviewsApi
      *
      * 创建预览
      *
-     * @param  \TencentAds\Model\AdcreativePreviewsAddRequest $data (required)
+     * @param  \TencentAds\Model\AdcreativePreviewsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class AdcreativePreviewsApi
     /**
      * Create request for operation 'adcreativePreviewsAdd'
      *
-     * @param  \TencentAds\Model\AdcreativePreviewsAddRequest $data (required)
+     * @param  \TencentAds\Model\AdcreativePreviewsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,9 +374,9 @@ class AdcreativePreviewsApi
      *
      * 获取预览受众
      *
-     * @param  int $accountId accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -393,9 +393,9 @@ class AdcreativePreviewsApi
      *
      * 获取预览受众
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -470,9 +470,9 @@ class AdcreativePreviewsApi
      *
      * 获取预览受众
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -492,9 +492,9 @@ class AdcreativePreviewsApi
      *
      * 获取预览受众
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -544,9 +544,9 @@ class AdcreativePreviewsApi
     /**
      * Create request for operation 'adcreativePreviewsGet'
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -427,7 +427,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -451,7 +451,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupName
      *
-     * @param string $adgroupName adgroupName
+     * @param string|mixed $adgroupName adgroupName
      *
      * @return $this
      */
@@ -475,7 +475,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets beginDate
      *
-     * @param string $beginDate beginDate
+     * @param string|mixed $beginDate beginDate
      *
      * @return $this
      */
@@ -499,7 +499,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets firstDayBeginTime
      *
-     * @param string $firstDayBeginTime firstDayBeginTime
+     * @param string|mixed $firstDayBeginTime firstDayBeginTime
      *
      * @return $this
      */
@@ -523,7 +523,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets endDate
      *
-     * @param string $endDate endDate
+     * @param string|mixed $endDate endDate
      *
      * @return $this
      */
@@ -547,7 +547,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets bidAmount
      *
-     * @param int $bidAmount bidAmount
+     * @param int|mixed $bidAmount bidAmount
      *
      * @return $this
      */
@@ -571,7 +571,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets conversionId
      *
-     * @param int $conversionId conversionId
+     * @param int|mixed $conversionId conversionId
      *
      * @return $this
      */
@@ -595,7 +595,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets optimizationGoal
      *
-     * @param \TencentAds\Model\OptimizationGoal $optimizationGoal optimizationGoal
+     * @param \TencentAds\Model\OptimizationGoal|mixed $optimizationGoal optimizationGoal
      *
      * @return $this
      */
@@ -619,7 +619,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets timeSeries
      *
-     * @param string $timeSeries timeSeries
+     * @param string|mixed $timeSeries timeSeries
      *
      * @return $this
      */
@@ -643,7 +643,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets dailyBudget
      *
-     * @param int $dailyBudget dailyBudget
+     * @param int|mixed $dailyBudget dailyBudget
      *
      * @return $this
      */
@@ -667,7 +667,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets appAndroidChannelPackageId
      *
-     * @param string $appAndroidChannelPackageId appAndroidChannelPackageId
+     * @param string|mixed $appAndroidChannelPackageId appAndroidChannelPackageId
      *
      * @return $this
      */
@@ -691,7 +691,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets targetingId
      *
-     * @param int $targetingId targetingId
+     * @param int|mixed $targetingId targetingId
      *
      * @return $this
      */
@@ -715,7 +715,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets targeting
      *
-     * @param \TencentAds\Model\WriteTargetingSettingForAdgroup $targeting targeting
+     * @param \TencentAds\Model\WriteTargetingSettingForAdgroup|mixed $targeting targeting
      *
      * @return $this
      */
@@ -739,7 +739,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets sceneSpec
      *
-     * @param \TencentAds\Model\SceneTargetingForWrite $sceneSpec sceneSpec
+     * @param \TencentAds\Model\SceneTargetingForWrite|mixed $sceneSpec sceneSpec
      *
      * @return $this
      */
@@ -763,7 +763,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets configuredStatus
      *
-     * @param \TencentAds\Model\AdStatus $configuredStatus configuredStatus
+     * @param \TencentAds\Model\AdStatus|mixed $configuredStatus configuredStatus
      *
      * @return $this
      */
@@ -787,7 +787,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets customizedCategory
      *
-     * @param string $customizedCategory customizedCategory
+     * @param string|mixed $customizedCategory customizedCategory
      *
      * @return $this
      */
@@ -811,7 +811,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets additionalUserActionSets
      *
-     * @param \TencentAds\Model\UserActionSetStruct[] $additionalUserActionSets additionalUserActionSets
+     * @param \TencentAds\Model\UserActionSetStruct[]|mixed $additionalUserActionSets additionalUserActionSets
      *
      * @return $this
      */
@@ -835,7 +835,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets bidStrategy
      *
-     * @param \TencentAds\Model\BidStrategy $bidStrategy bidStrategy
+     * @param \TencentAds\Model\BidStrategy|mixed $bidStrategy bidStrategy
      *
      * @return $this
      */
@@ -859,7 +859,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets coldStartAudience
      *
-     * @param int[] $coldStartAudience coldStartAudience
+     * @param int[]|mixed $coldStartAudience coldStartAudience
      *
      * @return $this
      */
@@ -883,7 +883,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets autoAudience
      *
-     * @param bool $autoAudience autoAudience
+     * @param bool|mixed $autoAudience autoAudience
      *
      * @return $this
      */
@@ -907,7 +907,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets expandEnabled
      *
-     * @param bool $expandEnabled expandEnabled
+     * @param bool|mixed $expandEnabled expandEnabled
      *
      * @return $this
      */
@@ -931,7 +931,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets expandTargeting
      *
-     * @param string[] $expandTargeting expandTargeting
+     * @param string[]|mixed $expandTargeting expandTargeting
      *
      * @return $this
      */
@@ -955,7 +955,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets deepConversionSpec
      *
-     * @param \TencentAds\Model\DeepConversionSpec $deepConversionSpec deepConversionSpec
+     * @param \TencentAds\Model\DeepConversionSpec|mixed $deepConversionSpec deepConversionSpec
      *
      * @return $this
      */
@@ -979,7 +979,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets poiList
      *
-     * @param string[] $poiList poiList
+     * @param string[]|mixed $poiList poiList
      *
      * @return $this
      */
@@ -1003,7 +1003,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets deepConversionBehaviorBid
      *
-     * @param int $deepConversionBehaviorBid deepConversionBehaviorBid
+     * @param int|mixed $deepConversionBehaviorBid deepConversionBehaviorBid
      *
      * @return $this
      */
@@ -1027,7 +1027,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets deepConversionWorthRate
      *
-     * @param double $deepConversionWorthRate deepConversionWorthRate
+     * @param double|mixed $deepConversionWorthRate deepConversionWorthRate
      *
      * @return $this
      */
@@ -1051,7 +1051,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets bidMode
      *
-     * @param \TencentAds\Model\BidMode $bidMode bidMode
+     * @param \TencentAds\Model\BidMode|mixed $bidMode bidMode
      *
      * @return $this
      */
@@ -1075,7 +1075,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets bidAdjustment
      *
-     * @param \TencentAds\Model\BidAdjustment $bidAdjustment bidAdjustment
+     * @param \TencentAds\Model\BidAdjustment|mixed $bidAdjustment bidAdjustment
      *
      * @return $this
      */
@@ -1099,7 +1099,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets autoAcquisitionEnabled
      *
-     * @param bool $autoAcquisitionEnabled autoAcquisitionEnabled
+     * @param bool|mixed $autoAcquisitionEnabled autoAcquisitionEnabled
      *
      * @return $this
      */
@@ -1123,7 +1123,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets autoAcquisitionBudget
      *
-     * @param int $autoAcquisitionBudget autoAcquisitionBudget
+     * @param int|mixed $autoAcquisitionBudget autoAcquisitionBudget
      *
      * @return $this
      */
@@ -1147,7 +1147,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets autoDerivedCreativeEnabled
      *
-     * @param bool $autoDerivedCreativeEnabled autoDerivedCreativeEnabled
+     * @param bool|mixed $autoDerivedCreativeEnabled autoDerivedCreativeEnabled
      *
      * @return $this
      */
@@ -1171,7 +1171,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets userActionSets
      *
-     * @param \TencentAds\Model\UserActionSetStruct[] $userActionSets userActionSets
+     * @param \TencentAds\Model\UserActionSetStruct[]|mixed $userActionSets userActionSets
      *
      * @return $this
      */
@@ -1195,7 +1195,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets dynamicAdSpec
      *
-     * @param \TencentAds\Model\DynamicAdSpec $dynamicAdSpec dynamicAdSpec
+     * @param \TencentAds\Model\DynamicAdSpec|mixed $dynamicAdSpec dynamicAdSpec
      *
      * @return $this
      */
@@ -1219,7 +1219,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets customAdgroupTag
      *
-     * @param string[] $customAdgroupTag customAdgroupTag
+     * @param string[]|mixed $customAdgroupTag customAdgroupTag
      *
      * @return $this
      */
@@ -1243,7 +1243,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets deepOptimizationType
      *
-     * @param \TencentAds\Model\DeepOptimizationType $deepOptimizationType deepOptimizationType
+     * @param \TencentAds\Model\DeepOptimizationType|mixed $deepOptimizationType deepOptimizationType
      *
      * @return $this
      */
@@ -1267,7 +1267,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */

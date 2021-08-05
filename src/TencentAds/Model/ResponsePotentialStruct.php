@@ -248,7 +248,7 @@ class ResponsePotentialStruct implements ModelInterface, ArrayAccess
     /**
      * Sets partitionTime
      *
-     * @param string $partitionTime partitionTime
+     * @param string|mixed $partitionTime partitionTime
      *
      * @return $this
      */
@@ -272,7 +272,7 @@ class ResponsePotentialStruct implements ModelInterface, ArrayAccess
     /**
      * Sets bidRaiseRatio
      *
-     * @param int $bidRaiseRatio bidRaiseRatio
+     * @param int|mixed $bidRaiseRatio bidRaiseRatio
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class ResponsePotentialStruct implements ModelInterface, ArrayAccess
     /**
      * Sets exposureEstimate
      *
-     * @param int $exposureEstimate exposureEstimate
+     * @param int|mixed $exposureEstimate exposureEstimate
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class ResponsePotentialStruct implements ModelInterface, ArrayAccess
     /**
      * Sets exposureRaiseRatio
      *
-     * @param int $exposureRaiseRatio exposureRaiseRatio
+     * @param int|mixed $exposureRaiseRatio exposureRaiseRatio
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class ResponsePotentialStruct implements ModelInterface, ArrayAccess
     /**
      * Sets bidModified
      *
-     * @param bool $bidModified bidModified
+     * @param bool|mixed $bidModified bidModified
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class ResponsePotentialStruct implements ModelInterface, ArrayAccess
     /**
      * Sets deepBidModified
      *
-     * @param bool $deepBidModified deepBidModified
+     * @param bool|mixed $deepBidModified deepBidModified
      *
      * @return $this
      */

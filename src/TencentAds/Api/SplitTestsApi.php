@@ -92,7 +92,7 @@ class SplitTestsApi
      *
      * 创建拆分对比实验
      *
-     * @param  \TencentAds\Model\SplitTestsAddRequest $data data (required)
+     * @param  \TencentAds\Model\SplitTestsAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class SplitTestsApi
      *
      * 创建拆分对比实验
      *
-     * @param  \TencentAds\Model\SplitTestsAddRequest $data (required)
+     * @param  \TencentAds\Model\SplitTestsAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class SplitTestsApi
      *
      * 创建拆分对比实验
      *
-     * @param  \TencentAds\Model\SplitTestsAddRequest $data (required)
+     * @param  \TencentAds\Model\SplitTestsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class SplitTestsApi
      *
      * 创建拆分对比实验
      *
-     * @param  \TencentAds\Model\SplitTestsAddRequest $data (required)
+     * @param  \TencentAds\Model\SplitTestsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class SplitTestsApi
     /**
      * Create request for operation 'splitTestsAdd'
      *
-     * @param  \TencentAds\Model\SplitTestsAddRequest $data (required)
+     * @param  \TencentAds\Model\SplitTestsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,7 +374,7 @@ class SplitTestsApi
      *
      * 删除拆分对比实验
      *
-     * @param  \TencentAds\Model\SplitTestsDeleteRequest $data data (required)
+     * @param  \TencentAds\Model\SplitTestsDeleteRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -391,7 +391,7 @@ class SplitTestsApi
      *
      * 删除拆分对比实验
      *
-     * @param  \TencentAds\Model\SplitTestsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\SplitTestsDeleteRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -466,7 +466,7 @@ class SplitTestsApi
      *
      * 删除拆分对比实验
      *
-     * @param  \TencentAds\Model\SplitTestsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\SplitTestsDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -486,7 +486,7 @@ class SplitTestsApi
      *
      * 删除拆分对比实验
      *
-     * @param  \TencentAds\Model\SplitTestsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\SplitTestsDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -536,7 +536,7 @@ class SplitTestsApi
     /**
      * Create request for operation 'splitTestsDelete'
      *
-     * @param  \TencentAds\Model\SplitTestsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\SplitTestsDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -656,11 +656,11 @@ class SplitTestsApi
      *
      * 获取拆分对比实验
      *
-     * @param  int $accountId accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -677,11 +677,11 @@ class SplitTestsApi
      *
      * 获取拆分对比实验
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -756,11 +756,11 @@ class SplitTestsApi
      *
      * 获取拆分对比实验
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -780,11 +780,11 @@ class SplitTestsApi
      *
      * 获取拆分对比实验
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -834,11 +834,11 @@ class SplitTestsApi
     /**
      * Create request for operation 'splitTestsGet'
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -981,7 +981,7 @@ class SplitTestsApi
      *
      * 更新拆分对比实验
      *
-     * @param  \TencentAds\Model\SplitTestsUpdateRequest $data data (required)
+     * @param  \TencentAds\Model\SplitTestsUpdateRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -998,7 +998,7 @@ class SplitTestsApi
      *
      * 更新拆分对比实验
      *
-     * @param  \TencentAds\Model\SplitTestsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\SplitTestsUpdateRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1073,7 +1073,7 @@ class SplitTestsApi
      *
      * 更新拆分对比实验
      *
-     * @param  \TencentAds\Model\SplitTestsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\SplitTestsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1093,7 +1093,7 @@ class SplitTestsApi
      *
      * 更新拆分对比实验
      *
-     * @param  \TencentAds\Model\SplitTestsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\SplitTestsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1143,7 +1143,7 @@ class SplitTestsApi
     /**
      * Create request for operation 'splitTestsUpdate'
      *
-     * @param  \TencentAds\Model\SplitTestsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\SplitTestsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -223,7 +223,7 @@ class CreativetoolsTextGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets returnNumber
      *
-     * @param int $returnNumber returnNumber
+     * @param int|mixed $returnNumber returnNumber
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class CreativetoolsTextGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets returnTexts
      *
-     * @param \TencentAds\Model\TextListStruct[] $returnTexts returnTexts
+     * @param \TencentAds\Model\TextListStruct[]|mixed $returnTexts returnTexts
      *
      * @return $this
      */

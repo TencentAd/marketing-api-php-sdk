@@ -224,7 +224,7 @@ class TaskAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets pageType
      *
-     * @param \TencentAds\Model\DestinationType $pageType pageType
+     * @param \TencentAds\Model\DestinationType|mixed $pageType pageType
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class TaskAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets pageSpec
      *
-     * @param \TencentAds\Model\TaskPageSpec $pageSpec pageSpec
+     * @param \TencentAds\Model\TaskPageSpec|mixed $pageSpec pageSpec
      *
      * @return $this
      */

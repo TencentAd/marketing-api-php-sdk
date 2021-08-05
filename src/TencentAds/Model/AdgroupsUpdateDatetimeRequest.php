@@ -223,7 +223,7 @@ class AdgroupsUpdateDatetimeRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class AdgroupsUpdateDatetimeRequest implements ModelInterface, ArrayAccess
     /**
      * Sets updateDatetimeSpec
      *
-     * @param \TencentAds\Model\UpdateDatetimeStruct[] $updateDatetimeSpec updateDatetimeSpec
+     * @param \TencentAds\Model\UpdateDatetimeStruct[]|mixed $updateDatetimeSpec updateDatetimeSpec
      *
      * @return $this
      */

@@ -242,7 +242,7 @@ class TargetingTagsGetQuerySpec implements ModelInterface, ArrayAccess
     /**
      * Sets query
      *
-     * @param string $query query
+     * @param string|mixed $query query
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class TargetingTagsGetQuerySpec implements ModelInterface, ArrayAccess
     /**
      * Sets queryList
      *
-     * @param string[] $queryList queryList
+     * @param string[]|mixed $queryList queryList
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class TargetingTagsGetQuerySpec implements ModelInterface, ArrayAccess
     /**
      * Sets maxResultNumber
      *
-     * @param int $maxResultNumber maxResultNumber
+     * @param int|mixed $maxResultNumber maxResultNumber
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class TargetingTagsGetQuerySpec implements ModelInterface, ArrayAccess
     /**
      * Sets excludingTargetingTags
      *
-     * @param string[] $excludingTargetingTags excludingTargetingTags
+     * @param string[]|mixed $excludingTargetingTags excludingTargetingTags
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class TargetingTagsGetQuerySpec implements ModelInterface, ArrayAccess
     /**
      * Sets advancedRecommendType
      *
-     * @param \TencentAds\Model\TargetingAdvancedRecommendType $advancedRecommendType advancedRecommendType
+     * @param \TencentAds\Model\TargetingAdvancedRecommendType|mixed $advancedRecommendType advancedRecommendType
      *
      * @return $this
      */

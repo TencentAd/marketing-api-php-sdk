@@ -272,7 +272,7 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets fundType
      *
-     * @param \TencentAds\Model\AccountTypeMap $fundType fundType
+     * @param \TencentAds\Model\AccountTypeMap|mixed $fundType fundType
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets time
      *
-     * @param int $time time
+     * @param int|mixed $time time
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets deposit
      *
-     * @param int $deposit deposit
+     * @param int|mixed $deposit deposit
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets paid
      *
-     * @param int $paid paid
+     * @param int|mixed $paid paid
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets transIn
      *
-     * @param int $transIn transIn
+     * @param int|mixed $transIn transIn
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets transOut
      *
-     * @param int $transOut transOut
+     * @param int|mixed $transOut transOut
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets creditModify
      *
-     * @param int $creditModify creditModify
+     * @param int|mixed $creditModify creditModify
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets balance
      *
-     * @param int $balance balance
+     * @param int|mixed $balance balance
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets preauthBalance
      *
-     * @param int $preauthBalance preauthBalance
+     * @param int|mixed $preauthBalance preauthBalance
      *
      * @return $this
      */

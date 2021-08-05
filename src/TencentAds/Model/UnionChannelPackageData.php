@@ -272,7 +272,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Sets androidUnionAppId
      *
-     * @param int $androidUnionAppId androidUnionAppId
+     * @param int|mixed $androidUnionAppId androidUnionAppId
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Sets packageName
      *
-     * @param string $packageName packageName
+     * @param string|mixed $packageName packageName
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Sets channelPackageId
      *
-     * @param int $channelPackageId channelPackageId
+     * @param int|mixed $channelPackageId channelPackageId
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Sets versionCode
      *
-     * @param int $versionCode versionCode
+     * @param int|mixed $versionCode versionCode
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Sets versionName
      *
-     * @param string $versionName versionName
+     * @param string|mixed $versionName versionName
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedTime
      *
-     * @param int $lastModifiedTime lastModifiedTime
+     * @param int|mixed $lastModifiedTime lastModifiedTime
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Sets systemStatus
      *
-     * @param \TencentAds\Model\UnionPackageSysStatus $systemStatus systemStatus
+     * @param \TencentAds\Model\UnionPackageSysStatus|mixed $systemStatus systemStatus
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Sets systemMessage
      *
-     * @param string $systemMessage systemMessage
+     * @param string|mixed $systemMessage systemMessage
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class UnionChannelPackageData implements ModelInterface, ArrayAccess
     /**
      * Sets customizedChannelId
      *
-     * @param string $customizedChannelId customizedChannelId
+     * @param string|mixed $customizedChannelId customizedChannelId
      *
      * @return $this
      */

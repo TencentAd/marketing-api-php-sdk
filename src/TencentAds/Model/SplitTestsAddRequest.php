@@ -247,7 +247,7 @@ class SplitTestsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -271,7 +271,7 @@ class SplitTestsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets splitTestName
      *
-     * @param string $splitTestName splitTestName
+     * @param string|mixed $splitTestName splitTestName
      *
      * @return $this
      */
@@ -295,7 +295,7 @@ class SplitTestsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets beginTime
      *
-     * @param int $beginTime beginTime
+     * @param int|mixed $beginTime beginTime
      *
      * @return $this
      */
@@ -319,7 +319,7 @@ class SplitTestsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets endTime
      *
-     * @param int $endTime endTime
+     * @param int|mixed $endTime endTime
      *
      * @return $this
      */
@@ -343,7 +343,7 @@ class SplitTestsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupIdList
      *
-     * @param int[] $adgroupIdList adgroupIdList
+     * @param int[]|mixed $adgroupIdList adgroupIdList
      *
      * @return $this
      */
@@ -367,7 +367,7 @@ class SplitTestsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets smartExpandEnabled
      *
-     * @param bool $smartExpandEnabled smartExpandEnabled
+     * @param bool|mixed $smartExpandEnabled smartExpandEnabled
      *
      * @return $this
      */

@@ -224,7 +224,7 @@ class SupportLinkPageStruct implements ModelInterface, ArrayAccess
     /**
      * Sets linkPageType
      *
-     * @param string $linkPageType linkPageType
+     * @param string|mixed $linkPageType linkPageType
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class SupportLinkPageStruct implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */

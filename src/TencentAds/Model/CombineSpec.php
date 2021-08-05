@@ -224,7 +224,7 @@ class CombineSpec implements ModelInterface, ArrayAccess
     /**
      * Sets include
      *
-     * @param \TencentAds\Model\IncludeSimpleRule[] $include include
+     * @param \TencentAds\Model\IncludeSimpleRule[]|mixed $include include
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class CombineSpec implements ModelInterface, ArrayAccess
     /**
      * Sets exclude
      *
-     * @param \TencentAds\Model\ExcludeSimpleRule[] $exclude exclude
+     * @param \TencentAds\Model\ExcludeSimpleRule[]|mixed $exclude exclude
      *
      * @return $this
      */

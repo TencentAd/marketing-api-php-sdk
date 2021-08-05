@@ -242,7 +242,7 @@ class FundStatementsDailyGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets tradeType
      *
-     * @param \TencentAds\Model\TradeType $tradeType tradeType
+     * @param \TencentAds\Model\TradeType|mixed $tradeType tradeType
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class FundStatementsDailyGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets amount
      *
-     * @param int $amount amount
+     * @param int|mixed $amount amount
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class FundStatementsDailyGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class FundStatementsDailyGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets fundType
      *
-     * @param \TencentAds\Model\AccountTypeMap $fundType fundType
+     * @param \TencentAds\Model\AccountTypeMap|mixed $fundType fundType
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class FundStatementsDailyGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets time
      *
-     * @param int $time time
+     * @param int|mixed $time time
      *
      * @return $this
      */

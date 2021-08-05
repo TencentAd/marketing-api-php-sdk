@@ -242,7 +242,7 @@ class AdvertiserOperatorStruct implements ModelInterface, ArrayAccess
     /**
      * Sets operatorId
      *
-     * @param int $operatorId operatorId
+     * @param int|mixed $operatorId operatorId
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class AdvertiserOperatorStruct implements ModelInterface, ArrayAccess
     /**
      * Sets operatorName
      *
-     * @param string $operatorName operatorName
+     * @param string|mixed $operatorName operatorName
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class AdvertiserOperatorStruct implements ModelInterface, ArrayAccess
     /**
      * Sets qq
      *
-     * @param int $qq qq
+     * @param int|mixed $qq qq
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class AdvertiserOperatorStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAccountId
      *
-     * @param string $wechatAccountId wechatAccountId
+     * @param string|mixed $wechatAccountId wechatAccountId
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class AdvertiserOperatorStruct implements ModelInterface, ArrayAccess
     /**
      * Sets isMaster
      *
-     * @param bool $isMaster isMaster
+     * @param bool|mixed $isMaster isMaster
      *
      * @return $this
      */

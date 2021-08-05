@@ -218,7 +218,7 @@ class MiniParamMatcherGroup implements ModelInterface, ArrayAccess
     /**
      * Sets paramMatcher
      *
-     * @param \TencentAds\Model\ParamMatcher[] $paramMatcher paramMatcher
+     * @param \TencentAds\Model\ParamMatcher[]|mixed $paramMatcher paramMatcher
      *
      * @return $this
      */

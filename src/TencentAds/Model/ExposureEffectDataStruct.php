@@ -230,7 +230,7 @@ class ExposureEffectDataStruct implements ModelInterface, ArrayAccess
     /**
      * Sets count
      *
-     * @param int $count count
+     * @param int|mixed $count count
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class ExposureEffectDataStruct implements ModelInterface, ArrayAccess
     /**
      * Sets categoryWin
      *
-     * @param double $categoryWin categoryWin
+     * @param double|mixed $categoryWin categoryWin
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class ExposureEffectDataStruct implements ModelInterface, ArrayAccess
     /**
      * Sets categoryAvg
      *
-     * @param double $categoryAvg categoryAvg
+     * @param double|mixed $categoryAvg categoryAvg
      *
      * @return $this
      */

@@ -236,7 +236,7 @@ class LocalAdsSpecRead implements ModelInterface, ArrayAccess
     /**
      * Sets shopName
      *
-     * @param string $shopName shopName
+     * @param string|mixed $shopName shopName
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class LocalAdsSpecRead implements ModelInterface, ArrayAccess
     /**
      * Sets address
      *
-     * @param string $address address
+     * @param string|mixed $address address
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class LocalAdsSpecRead implements ModelInterface, ArrayAccess
     /**
      * Sets telphone
      *
-     * @param string $telphone telphone
+     * @param string|mixed $telphone telphone
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class LocalAdsSpecRead implements ModelInterface, ArrayAccess
     /**
      * Sets systemIndustryId
      *
-     * @param string $systemIndustryId systemIndustryId
+     * @param string|mixed $systemIndustryId systemIndustryId
      *
      * @return $this
      */

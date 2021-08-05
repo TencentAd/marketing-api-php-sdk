@@ -224,7 +224,7 @@ class UpdateDeepConversionBehaviorBidItem implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class UpdateDeepConversionBehaviorBidItem implements ModelInterface, ArrayAccess
     /**
      * Sets deepConversionBehaviorBid
      *
-     * @param int $deepConversionBehaviorBid deepConversionBehaviorBid
+     * @param int|mixed $deepConversionBehaviorBid deepConversionBehaviorBid
      *
      * @return $this
      */

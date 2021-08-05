@@ -247,7 +247,7 @@ class UnionPositionPackagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -271,7 +271,7 @@ class UnionPositionPackagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets unionPackageName
      *
-     * @param string $unionPackageName unionPackageName
+     * @param string|mixed $unionPackageName unionPackageName
      *
      * @return $this
      */
@@ -295,7 +295,7 @@ class UnionPositionPackagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObjectType|mixed $promotedObjectType promotedObjectType
      *
      * @return $this
      */
@@ -319,7 +319,7 @@ class UnionPositionPackagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectId
      *
-     * @param string $promotedObjectId promotedObjectId
+     * @param string|mixed $promotedObjectId promotedObjectId
      *
      * @return $this
      */
@@ -343,7 +343,7 @@ class UnionPositionPackagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets unionPackageType
      *
-     * @param \TencentAds\Model\UnionPackageType $unionPackageType unionPackageType
+     * @param \TencentAds\Model\UnionPackageType|mixed $unionPackageType unionPackageType
      *
      * @return $this
      */
@@ -367,7 +367,7 @@ class UnionPositionPackagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets unionPositionIdList
      *
-     * @param int[] $unionPositionIdList unionPositionIdList
+     * @param int[]|mixed $unionPositionIdList unionPositionIdList
      *
      * @return $this
      */

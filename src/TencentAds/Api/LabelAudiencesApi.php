@@ -92,7 +92,7 @@ class LabelAudiencesApi
      *
      * 标签添加到人群列表
      *
-     * @param  \TencentAds\Model\LabelAudiencesAddRequest $data data (required)
+     * @param  \TencentAds\Model\LabelAudiencesAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class LabelAudiencesApi
      *
      * 标签添加到人群列表
      *
-     * @param  \TencentAds\Model\LabelAudiencesAddRequest $data (required)
+     * @param  \TencentAds\Model\LabelAudiencesAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class LabelAudiencesApi
      *
      * 标签添加到人群列表
      *
-     * @param  \TencentAds\Model\LabelAudiencesAddRequest $data (required)
+     * @param  \TencentAds\Model\LabelAudiencesAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class LabelAudiencesApi
      *
      * 标签添加到人群列表
      *
-     * @param  \TencentAds\Model\LabelAudiencesAddRequest $data (required)
+     * @param  \TencentAds\Model\LabelAudiencesAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class LabelAudiencesApi
     /**
      * Create request for operation 'labelAudiencesAdd'
      *
-     * @param  \TencentAds\Model\LabelAudiencesAddRequest $data (required)
+     * @param  \TencentAds\Model\LabelAudiencesAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

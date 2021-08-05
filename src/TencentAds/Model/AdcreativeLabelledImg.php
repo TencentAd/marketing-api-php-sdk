@@ -224,7 +224,7 @@ class AdcreativeLabelledImg implements ModelInterface, ArrayAccess
     /**
      * Sets image
      *
-     * @param string $image image
+     * @param string|mixed $image image
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class AdcreativeLabelledImg implements ModelInterface, ArrayAccess
     /**
      * Sets label
      *
-     * @param \TencentAds\Model\AdcreativeLabel[] $label label
+     * @param \TencentAds\Model\AdcreativeLabel[]|mixed $label label
      *
      * @return $this
      */

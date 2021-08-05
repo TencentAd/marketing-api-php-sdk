@@ -230,7 +230,7 @@ class PageOperateResponses implements ModelInterface, ArrayAccess
     /**
      * Sets pageServiceId
      *
-     * @param string $pageServiceId pageServiceId
+     * @param string|mixed $pageServiceId pageServiceId
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class PageOperateResponses implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param int $code code
+     * @param int|mixed $code code
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class PageOperateResponses implements ModelInterface, ArrayAccess
     /**
      * Sets message
      *
-     * @param string $message message
+     * @param string|mixed $message message
      *
      * @return $this
      */

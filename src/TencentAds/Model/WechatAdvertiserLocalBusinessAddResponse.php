@@ -241,7 +241,7 @@ class WechatAdvertiserLocalBusinessAddResponse implements ModelInterface, ArrayA
     /**
      * Sets code
      *
-     * @param int $code code
+     * @param int|mixed $code code
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class WechatAdvertiserLocalBusinessAddResponse implements ModelInterface, ArrayA
     /**
      * Sets message
      *
-     * @param string $message message
+     * @param string|mixed $message message
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class WechatAdvertiserLocalBusinessAddResponse implements ModelInterface, ArrayA
     /**
      * Sets messageCn
      *
-     * @param string $messageCn messageCn
+     * @param string|mixed $messageCn messageCn
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class WechatAdvertiserLocalBusinessAddResponse implements ModelInterface, ArrayA
     /**
      * Sets errors
      *
-     * @param \TencentAds\Model\ApiErrorStruct[] $errors errors
+     * @param \TencentAds\Model\ApiErrorStruct[]|mixed $errors errors
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class WechatAdvertiserLocalBusinessAddResponse implements ModelInterface, ArrayA
     /**
      * Sets data
      *
-     * @param \TencentAds\Model\WechatAdvertiserLocalBusinessAddResponseData $data data
+     * @param \TencentAds\Model\WechatAdvertiserLocalBusinessAddResponseData|mixed $data data
      *
      * @return $this
      */

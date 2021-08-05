@@ -92,12 +92,12 @@ class WechatFundStatementsDetailedApi
      *
      * 获取微信资金账户流水信息
      *
-     * @param  string $tradeType tradeType (required)
-     * @param  \TencentAds\Model\ReportDateRange $dateRange dateRange (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  string|mixed $tradeType tradeType (required)
+     * @param  \TencentAds\Model\ReportDateRange|mixed $dateRange dateRange (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -114,12 +114,12 @@ class WechatFundStatementsDetailedApi
      *
      * 获取微信资金账户流水信息
      *
-     * @param  string $tradeType (required)
-     * @param  \TencentAds\Model\ReportDateRange $dateRange (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  string|mixed $tradeType (required)
+     * @param  \TencentAds\Model\ReportDateRange|mixed $dateRange (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -194,12 +194,12 @@ class WechatFundStatementsDetailedApi
      *
      * 获取微信资金账户流水信息
      *
-     * @param  string $tradeType (required)
-     * @param  \TencentAds\Model\ReportDateRange $dateRange (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  string|mixed $tradeType (required)
+     * @param  \TencentAds\Model\ReportDateRange|mixed $dateRange (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -219,12 +219,12 @@ class WechatFundStatementsDetailedApi
      *
      * 获取微信资金账户流水信息
      *
-     * @param  string $tradeType (required)
-     * @param  \TencentAds\Model\ReportDateRange $dateRange (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  string|mixed $tradeType (required)
+     * @param  \TencentAds\Model\ReportDateRange|mixed $dateRange (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -274,12 +274,12 @@ class WechatFundStatementsDetailedApi
     /**
      * Create request for operation 'wechatFundStatementsDetailedGet'
      *
-     * @param  string $tradeType (required)
-     * @param  \TencentAds\Model\ReportDateRange $dateRange (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  string|mixed $tradeType (required)
+     * @param  \TencentAds\Model\ReportDateRange|mixed $dateRange (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

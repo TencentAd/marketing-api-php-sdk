@@ -92,7 +92,7 @@ class ProductItemsVerticalsApi
      *
      * 行业列表
      *
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class ProductItemsVerticalsApi
      *
      * 行业列表
      *
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class ProductItemsVerticalsApi
      *
      * 行业列表
      *
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class ProductItemsVerticalsApi
      *
      * 行业列表
      *
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class ProductItemsVerticalsApi
     /**
      * Create request for operation 'productItemsVerticalsGet'
      *
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

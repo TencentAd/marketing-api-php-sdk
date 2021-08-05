@@ -224,7 +224,7 @@ class LongVideoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets longVideo1
      *
-     * @param int $longVideo1 longVideo1
+     * @param int|mixed $longVideo1 longVideo1
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class LongVideoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets longVideo2
      *
-     * @param int $longVideo2 longVideo2
+     * @param int|mixed $longVideo2 longVideo2
      *
      * @return $this
      */

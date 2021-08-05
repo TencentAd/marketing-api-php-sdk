@@ -248,7 +248,7 @@ class AudienceSpec implements ModelInterface, ArrayAccess
     /**
      * Sets lookalikeSpec
      *
-     * @param \TencentAds\Model\LookalikeSpec $lookalikeSpec lookalikeSpec
+     * @param \TencentAds\Model\LookalikeSpec|mixed $lookalikeSpec lookalikeSpec
      *
      * @return $this
      */
@@ -272,7 +272,7 @@ class AudienceSpec implements ModelInterface, ArrayAccess
     /**
      * Sets userActionSpec
      *
-     * @param \TencentAds\Model\UserActionSpec $userActionSpec userActionSpec
+     * @param \TencentAds\Model\UserActionSpec|mixed $userActionSpec userActionSpec
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class AudienceSpec implements ModelInterface, ArrayAccess
     /**
      * Sets lbsSpec
      *
-     * @param \TencentAds\Model\LbsSpec $lbsSpec lbsSpec
+     * @param \TencentAds\Model\LbsSpec|mixed $lbsSpec lbsSpec
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class AudienceSpec implements ModelInterface, ArrayAccess
     /**
      * Sets keywordSpec
      *
-     * @param \TencentAds\Model\KeywordSpec $keywordSpec keywordSpec
+     * @param \TencentAds\Model\KeywordSpec|mixed $keywordSpec keywordSpec
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class AudienceSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adRuleSpec
      *
-     * @param \TencentAds\Model\AdRuleSpec $adRuleSpec adRuleSpec
+     * @param \TencentAds\Model\AdRuleSpec|mixed $adRuleSpec adRuleSpec
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class AudienceSpec implements ModelInterface, ArrayAccess
     /**
      * Sets combineSpec
      *
-     * @param \TencentAds\Model\CombineSpec $combineSpec combineSpec
+     * @param \TencentAds\Model\CombineSpec|mixed $combineSpec combineSpec
      *
      * @return $this
      */

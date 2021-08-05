@@ -92,12 +92,12 @@ class VideomakerVideocapturesApi
      *
      * 生成视频封面图
      *
-     * @param  int $accountId accountId (required)
-     * @param  string $videoId videoId (optional)
-     * @param  \SplFileObject $videoFile videoFile (optional)
-     * @param  string $signature signature (optional)
-     * @param  int $number number (optional)
-     * @param  bool $returnImageIds returnImageIds (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string|mixed $videoId videoId (optional)
+     * @param  \SplFileObject|mixed $videoFile videoFile (optional)
+     * @param  string|mixed $signature signature (optional)
+     * @param  int|mixed $number number (optional)
+     * @param  bool|mixed $returnImageIds returnImageIds (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -114,12 +114,12 @@ class VideomakerVideocapturesApi
      *
      * 生成视频封面图
      *
-     * @param  int $accountId (required)
-     * @param  string $videoId (optional)
-     * @param  \SplFileObject $videoFile (optional)
-     * @param  string $signature (optional)
-     * @param  int $number (optional)
-     * @param  bool $returnImageIds (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $videoId (optional)
+     * @param  \SplFileObject|mixed $videoFile (optional)
+     * @param  string|mixed $signature (optional)
+     * @param  int|mixed $number (optional)
+     * @param  bool|mixed $returnImageIds (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -194,12 +194,12 @@ class VideomakerVideocapturesApi
      *
      * 生成视频封面图
      *
-     * @param  int $accountId (required)
-     * @param  string $videoId (optional)
-     * @param  \SplFileObject $videoFile (optional)
-     * @param  string $signature (optional)
-     * @param  int $number (optional)
-     * @param  bool $returnImageIds (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $videoId (optional)
+     * @param  \SplFileObject|mixed $videoFile (optional)
+     * @param  string|mixed $signature (optional)
+     * @param  int|mixed $number (optional)
+     * @param  bool|mixed $returnImageIds (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -219,12 +219,12 @@ class VideomakerVideocapturesApi
      *
      * 生成视频封面图
      *
-     * @param  int $accountId (required)
-     * @param  string $videoId (optional)
-     * @param  \SplFileObject $videoFile (optional)
-     * @param  string $signature (optional)
-     * @param  int $number (optional)
-     * @param  bool $returnImageIds (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $videoId (optional)
+     * @param  \SplFileObject|mixed $videoFile (optional)
+     * @param  string|mixed $signature (optional)
+     * @param  int|mixed $number (optional)
+     * @param  bool|mixed $returnImageIds (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -274,12 +274,12 @@ class VideomakerVideocapturesApi
     /**
      * Create request for operation 'videomakerVideocapturesAdd'
      *
-     * @param  int $accountId (required)
-     * @param  string $videoId (optional)
-     * @param  \SplFileObject $videoFile (optional)
-     * @param  string $signature (optional)
-     * @param  int $number (optional)
-     * @param  bool $returnImageIds (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $videoId (optional)
+     * @param  \SplFileObject|mixed $videoFile (optional)
+     * @param  string|mixed $signature (optional)
+     * @param  int|mixed $number (optional)
+     * @param  bool|mixed $returnImageIds (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -224,7 +224,7 @@ class AudienceGrantRelationsGetGrantAccountPermission implements ModelInterface,
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class AudienceGrantRelationsGetGrantAccountPermission implements ModelInterface,
     /**
      * Sets grantPermissionTypeList
      *
-     * @param string[] $grantPermissionTypeList grantPermissionTypeList
+     * @param string[]|mixed $grantPermissionTypeList grantPermissionTypeList
      *
      * @return $this
      */

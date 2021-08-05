@@ -248,7 +248,7 @@ class PageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets pageId
      *
-     * @param int $pageId pageId
+     * @param int|mixed $pageId pageId
      *
      * @return $this
      */
@@ -272,7 +272,7 @@ class PageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets pageUrl
      *
-     * @param string $pageUrl pageUrl
+     * @param string|mixed $pageUrl pageUrl
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class PageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets miniProgramSpec
      *
-     * @param \TencentAds\Model\AdcreativeMiniProgramSpec $miniProgramSpec miniProgramSpec
+     * @param \TencentAds\Model\AdcreativeMiniProgramSpec|mixed $miniProgramSpec miniProgramSpec
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class PageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameSpec
      *
-     * @param \TencentAds\Model\MiniGameSpec $miniGameSpec miniGameSpec
+     * @param \TencentAds\Model\MiniGameSpec|mixed $miniGameSpec miniGameSpec
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class PageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets overrideCanvasHeadOption
      *
-     * @param \TencentAds\Model\OverrideCanvasHeadOption $overrideCanvasHeadOption overrideCanvasHeadOption
+     * @param \TencentAds\Model\OverrideCanvasHeadOption|mixed $overrideCanvasHeadOption overrideCanvasHeadOption
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class PageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets dynamicProductSpec
      *
-     * @param \TencentAds\Model\DynamicProductSpec $dynamicProductSpec dynamicProductSpec
+     * @param \TencentAds\Model\DynamicProductSpec|mixed $dynamicProductSpec dynamicProductSpec
      *
      * @return $this
      */

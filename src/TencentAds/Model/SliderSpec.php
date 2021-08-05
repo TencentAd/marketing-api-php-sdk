@@ -242,7 +242,7 @@ class SliderSpec implements ModelInterface, ArrayAccess
     /**
      * Sets imageIdList
      *
-     * @param string[] $imageIdList imageIdList
+     * @param string[]|mixed $imageIdList imageIdList
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class SliderSpec implements ModelInterface, ArrayAccess
     /**
      * Sets width
      *
-     * @param int $width width
+     * @param int|mixed $width width
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class SliderSpec implements ModelInterface, ArrayAccess
     /**
      * Sets height
      *
-     * @param int $height height
+     * @param int|mixed $height height
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class SliderSpec implements ModelInterface, ArrayAccess
     /**
      * Sets sliderStyle
      *
-     * @param int $sliderStyle sliderStyle
+     * @param int|mixed $sliderStyle sliderStyle
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class SliderSpec implements ModelInterface, ArrayAccess
     /**
      * Sets bgColor
      *
-     * @param string $bgColor bgColor
+     * @param string|mixed $bgColor bgColor
      *
      * @return $this
      */

@@ -242,7 +242,7 @@ class CategoryItem implements ModelInterface, ArrayAccess
     /**
      * Sets categoryId
      *
-     * @param int $categoryId categoryId
+     * @param int|mixed $categoryId categoryId
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class CategoryItem implements ModelInterface, ArrayAccess
     /**
      * Sets categoryName
      *
-     * @param string $categoryName categoryName
+     * @param string|mixed $categoryName categoryName
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class CategoryItem implements ModelInterface, ArrayAccess
     /**
      * Sets parentCategoryId
      *
-     * @param int $parentCategoryId parentCategoryId
+     * @param int|mixed $parentCategoryId parentCategoryId
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class CategoryItem implements ModelInterface, ArrayAccess
     /**
      * Sets level
      *
-     * @param int $level level
+     * @param int|mixed $level level
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class CategoryItem implements ModelInterface, ArrayAccess
     /**
      * Sets categoryPath
      *
-     * @param \TencentAds\Model\CategoryPathsItem[] $categoryPath categoryPath
+     * @param \TencentAds\Model\CategoryPathsItem[]|mixed $categoryPath categoryPath
      *
      * @return $this
      */

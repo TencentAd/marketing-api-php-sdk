@@ -266,7 +266,7 @@ class WechatAdFollowersGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets openid
      *
-     * @param string $openid openid
+     * @param string|mixed $openid openid
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class WechatAdFollowersGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAdgroupId
      *
-     * @param int $wechatAdgroupId wechatAdgroupId
+     * @param int|mixed $wechatAdgroupId wechatAdgroupId
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class WechatAdFollowersGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatCampaignId
      *
-     * @param int $wechatCampaignId wechatCampaignId
+     * @param int|mixed $wechatCampaignId wechatCampaignId
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class WechatAdFollowersGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAccountId
      *
-     * @param string $wechatAccountId wechatAccountId
+     * @param string|mixed $wechatAccountId wechatAccountId
      *
      * @return $this
      */
@@ -362,7 +362,7 @@ class WechatAdFollowersGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAgencyId
      *
-     * @param string $wechatAgencyId wechatAgencyId
+     * @param string|mixed $wechatAgencyId wechatAgencyId
      *
      * @return $this
      */
@@ -386,7 +386,7 @@ class WechatAdFollowersGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets campaignId
      *
-     * @param int $campaignId campaignId
+     * @param int|mixed $campaignId campaignId
      *
      * @return $this
      */
@@ -410,7 +410,7 @@ class WechatAdFollowersGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -434,7 +434,7 @@ class WechatAdFollowersGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets subscribeTime
      *
-     * @param int $subscribeTime subscribeTime
+     * @param int|mixed $subscribeTime subscribeTime
      *
      * @return $this
      */
@@ -458,7 +458,7 @@ class WechatAdFollowersGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets positionType
      *
-     * @param \TencentAds\Model\WechatPositionType $positionType positionType
+     * @param \TencentAds\Model\WechatPositionType|mixed $positionType positionType
      *
      * @return $this
      */

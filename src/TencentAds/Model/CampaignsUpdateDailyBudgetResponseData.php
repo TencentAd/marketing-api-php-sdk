@@ -217,7 +217,7 @@ class CampaignsUpdateDailyBudgetResponseData implements ModelInterface, ArrayAcc
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\CampaignsUpdateDailyBudgetListStruct[] $list list
+     * @param \TencentAds\Model\CampaignsUpdateDailyBudgetListStruct[]|mixed $list list
      *
      * @return $this
      */

@@ -235,7 +235,7 @@ class AudienceGrantRelationsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -259,7 +259,7 @@ class AudienceGrantRelationsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets audienceIdList
      *
-     * @param int[] $audienceIdList audienceIdList
+     * @param int[]|mixed $audienceIdList audienceIdList
      *
      * @return $this
      */
@@ -283,7 +283,7 @@ class AudienceGrantRelationsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets grantType
      *
-     * @param \TencentAds\Model\AudienceGrantType $grantType grantType
+     * @param \TencentAds\Model\AudienceGrantType|mixed $grantType grantType
      *
      * @return $this
      */
@@ -307,7 +307,7 @@ class AudienceGrantRelationsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets grantSpec
      *
-     * @param \TencentAds\Model\AudienceGrantRelationsAddGrantSpec $grantSpec grantSpec
+     * @param \TencentAds\Model\AudienceGrantRelationsAddGrantSpec|mixed $grantSpec grantSpec
      *
      * @return $this
      */

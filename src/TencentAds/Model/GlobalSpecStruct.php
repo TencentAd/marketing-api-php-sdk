@@ -224,7 +224,7 @@ class GlobalSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Sets elementType
      *
-     * @param \TencentAds\Model\CanvasGlobalElementType $elementType elementType
+     * @param \TencentAds\Model\CanvasGlobalElementType|mixed $elementType elementType
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class GlobalSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Sets floatButtonSpec
      *
-     * @param \TencentAds\Model\CanvasFloatButtonSpecType $floatButtonSpec floatButtonSpec
+     * @param \TencentAds\Model\CanvasFloatButtonSpecType|mixed $floatButtonSpec floatButtonSpec
      *
      * @return $this
      */

@@ -284,7 +284,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets costDiagnosisScore
      *
-     * @param int $costDiagnosisScore costDiagnosisScore
+     * @param int|mixed $costDiagnosisScore costDiagnosisScore
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets balance
      *
-     * @param int $balance balance
+     * @param int|mixed $balance balance
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adDailyBudget
      *
-     * @param int $adDailyBudget adDailyBudget
+     * @param int|mixed $adDailyBudget adDailyBudget
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adRealtimeAvailableBudget
      *
-     * @param int $adRealtimeAvailableBudget adRealtimeAvailableBudget
+     * @param int|mixed $adRealtimeAvailableBudget adRealtimeAvailableBudget
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adCost
      *
-     * @param int $adCost adCost
+     * @param int|mixed $adCost adCost
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets campainDailyBudget
      *
-     * @param int $campainDailyBudget campainDailyBudget
+     * @param int|mixed $campainDailyBudget campainDailyBudget
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets campainCost
      *
-     * @param int $campainCost campainCost
+     * @param int|mixed $campainCost campainCost
      *
      * @return $this
      */
@@ -452,7 +452,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets campainRealtimeAvailableBudget
      *
-     * @param int $campainRealtimeAvailableBudget campainRealtimeAvailableBudget
+     * @param int|mixed $campainRealtimeAvailableBudget campainRealtimeAvailableBudget
      *
      * @return $this
      */
@@ -476,7 +476,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets accountDailyBudget
      *
-     * @param int $accountDailyBudget accountDailyBudget
+     * @param int|mixed $accountDailyBudget accountDailyBudget
      *
      * @return $this
      */
@@ -500,7 +500,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets accountCost
      *
-     * @param int $accountCost accountCost
+     * @param int|mixed $accountCost accountCost
      *
      * @return $this
      */
@@ -524,7 +524,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets accountRealtimeAvailableBudget
      *
-     * @param int $accountRealtimeAvailableBudget accountRealtimeAvailableBudget
+     * @param int|mixed $accountRealtimeAvailableBudget accountRealtimeAvailableBudget
      *
      * @return $this
      */
@@ -548,7 +548,7 @@ class CostDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets conclusion
      *
-     * @param string $conclusion conclusion
+     * @param string|mixed $conclusion conclusion
      *
      * @return $this
      */

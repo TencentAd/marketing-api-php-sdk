@@ -218,7 +218,7 @@ class Trace implements ModelInterface, ArrayAccess
     /**
      * Sets clickId
      *
-     * @param string $clickId clickId
+     * @param string|mixed $clickId clickId
      *
      * @return $this
      */

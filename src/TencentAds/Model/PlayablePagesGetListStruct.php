@@ -272,7 +272,7 @@ class PlayablePagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets landingPageId
      *
-     * @param string $landingPageId landingPageId
+     * @param string|mixed $landingPageId landingPageId
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class PlayablePagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets playablePageId
      *
-     * @param string $playablePageId playablePageId
+     * @param string|mixed $playablePageId playablePageId
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class PlayablePagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets playablePageMaterialId
      *
-     * @param string $playablePageMaterialId playablePageMaterialId
+     * @param string|mixed $playablePageMaterialId playablePageMaterialId
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class PlayablePagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets playablePageName
      *
-     * @param string $playablePageName playablePageName
+     * @param string|mixed $playablePageName playablePageName
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class PlayablePagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets playablePageCdnBaseUrl
      *
-     * @param string $playablePageCdnBaseUrl playablePageCdnBaseUrl
+     * @param string|mixed $playablePageCdnBaseUrl playablePageCdnBaseUrl
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class PlayablePagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets playablePageDirection
      *
-     * @param \TencentAds\Model\PlayablePageDirection $playablePageDirection playablePageDirection
+     * @param \TencentAds\Model\PlayablePageDirection|mixed $playablePageDirection playablePageDirection
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class PlayablePagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets auditStatus
      *
-     * @param \TencentAds\Model\PlayablePageAuditStatus $auditStatus auditStatus
+     * @param \TencentAds\Model\PlayablePageAuditStatus|mixed $auditStatus auditStatus
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class PlayablePagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets auditMsg
      *
-     * @param string $auditMsg auditMsg
+     * @param string|mixed $auditMsg auditMsg
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class PlayablePagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class PlayablePagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedTime
      *
-     * @param int $lastModifiedTime lastModifiedTime
+     * @param int|mixed $lastModifiedTime lastModifiedTime
      *
      * @return $this
      */

@@ -242,7 +242,7 @@ class PoiRule implements ModelInterface, ArrayAccess
     /**
      * Sets regionId
      *
-     * @param int[] $regionId regionId
+     * @param int[]|mixed $regionId regionId
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class PoiRule implements ModelInterface, ArrayAccess
     /**
      * Sets poiCategoryId
      *
-     * @param int[] $poiCategoryId poiCategoryId
+     * @param int[]|mixed $poiCategoryId poiCategoryId
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class PoiRule implements ModelInterface, ArrayAccess
     /**
      * Sets dateRange
      *
-     * @param \TencentAds\Model\DateRange $dateRange dateRange
+     * @param \TencentAds\Model\DateRange|mixed $dateRange dateRange
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class PoiRule implements ModelInterface, ArrayAccess
     /**
      * Sets dayOfWeek
      *
-     * @param string[] $dayOfWeek dayOfWeek
+     * @param string[]|mixed $dayOfWeek dayOfWeek
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class PoiRule implements ModelInterface, ArrayAccess
     /**
      * Sets frequency
      *
-     * @param int $frequency frequency
+     * @param int|mixed $frequency frequency
      *
      * @return $this
      */

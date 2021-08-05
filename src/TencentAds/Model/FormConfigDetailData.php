@@ -230,7 +230,7 @@ class FormConfigDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets title
      *
-     * @param string $title title
+     * @param string|mixed $title title
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class FormConfigDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets subTitle
      *
-     * @param string $subTitle subTitle
+     * @param string|mixed $subTitle subTitle
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class FormConfigDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets submitText
      *
-     * @param string $submitText submitText
+     * @param string|mixed $submitText submitText
      *
      * @return $this
      */

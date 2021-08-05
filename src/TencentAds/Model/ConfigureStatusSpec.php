@@ -218,7 +218,7 @@ class ConfigureStatusSpec implements ModelInterface, ArrayAccess
     /**
      * Sets configureStatus
      *
-     * @param \TencentAds\Model\AdStatus $configureStatus configureStatus
+     * @param \TencentAds\Model\AdStatus|mixed $configureStatus configureStatus
      *
      * @return $this
      */

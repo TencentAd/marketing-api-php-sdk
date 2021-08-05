@@ -242,7 +242,7 @@ class SizeAdjustment implements ModelInterface, ArrayAccess
     /**
      * Sets targetSize
      *
-     * @param \TencentAds\Model\SizeType $targetSize targetSize
+     * @param \TencentAds\Model\SizeType|mixed $targetSize targetSize
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class SizeAdjustment implements ModelInterface, ArrayAccess
     /**
      * Sets sizeAdjustmentMethod
      *
-     * @param \TencentAds\Model\SizeAdjustmentMethodEnum $sizeAdjustmentMethod sizeAdjustmentMethod
+     * @param \TencentAds\Model\SizeAdjustmentMethodEnum|mixed $sizeAdjustmentMethod sizeAdjustmentMethod
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class SizeAdjustment implements ModelInterface, ArrayAccess
     /**
      * Sets color
      *
-     * @param string $color color
+     * @param string|mixed $color color
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class SizeAdjustment implements ModelInterface, ArrayAccess
     /**
      * Sets bgImageId1
      *
-     * @param string $bgImageId1 bgImageId1
+     * @param string|mixed $bgImageId1 bgImageId1
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class SizeAdjustment implements ModelInterface, ArrayAccess
     /**
      * Sets bgImageId2
      *
-     * @param string $bgImageId2 bgImageId2
+     * @param string|mixed $bgImageId2 bgImageId2
      *
      * @return $this
      */

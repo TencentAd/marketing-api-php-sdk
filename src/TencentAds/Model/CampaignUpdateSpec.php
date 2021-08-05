@@ -218,7 +218,7 @@ class CampaignUpdateSpec implements ModelInterface, ArrayAccess
     /**
      * Sets campaignName
      *
-     * @param string $campaignName campaignName
+     * @param string|mixed $campaignName campaignName
      *
      * @return $this
      */

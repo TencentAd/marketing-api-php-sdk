@@ -217,7 +217,7 @@ class AdDiagnosisGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\BatchAdDiagnosisListItem[] $list list
+     * @param \TencentAds\Model\BatchAdDiagnosisListItem[]|mixed $list list
      *
      * @return $this
      */

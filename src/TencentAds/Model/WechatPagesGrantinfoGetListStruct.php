@@ -230,7 +230,7 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets ownerAccountId
      *
-     * @param int $ownerAccountId ownerAccountId
+     * @param int|mixed $ownerAccountId ownerAccountId
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets ownerAccountName
      *
-     * @param string $ownerAccountName ownerAccountName
+     * @param string|mixed $ownerAccountName ownerAccountName
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */

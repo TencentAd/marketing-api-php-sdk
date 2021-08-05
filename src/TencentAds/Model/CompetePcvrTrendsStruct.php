@@ -242,7 +242,7 @@ class CompetePcvrTrendsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets score
      *
-     * @param int $score score
+     * @param int|mixed $score score
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class CompetePcvrTrendsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets selfAvg
      *
-     * @param \TencentAds\Model\PointStruct[] $selfAvg selfAvg
+     * @param \TencentAds\Model\PointStruct[]|mixed $selfAvg selfAvg
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class CompetePcvrTrendsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets selfChoseAvg
      *
-     * @param \TencentAds\Model\PointStruct[] $selfChoseAvg selfChoseAvg
+     * @param \TencentAds\Model\PointStruct[]|mixed $selfChoseAvg selfChoseAvg
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class CompetePcvrTrendsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets winnerChoseAvg
      *
-     * @param \TencentAds\Model\PointStruct[] $winnerChoseAvg winnerChoseAvg
+     * @param \TencentAds\Model\PointStruct[]|mixed $winnerChoseAvg winnerChoseAvg
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class CompetePcvrTrendsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets conclusion
      *
-     * @param string $conclusion conclusion
+     * @param string|mixed $conclusion conclusion
      *
      * @return $this
      */

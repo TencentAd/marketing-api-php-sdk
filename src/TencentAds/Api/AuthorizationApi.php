@@ -92,11 +92,11 @@ class AuthorizationApi
      *
      * 绑定微信公众号(待废弃)
      *
-     * @param  string $accessToken accessToken (required)
-     * @param  string $redirectUri redirectUri (required)
-     * @param  int $accountId 需绑定公众号的广告主 id，有操作权限的帐号 id (optional)
-     * @param  string $wechatAccountId 微信公众号id，用于判断扫描的公众号与请求时的wechat_account_id是否一致 (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  string|mixed $accessToken accessToken (required)
+     * @param  string|mixed $redirectUri redirectUri (required)
+     * @param  int|mixed $accountId 需绑定公众号的广告主 id，有操作权限的帐号 id (optional)
+     * @param  string|mixed $wechatAccountId 微信公众号id，用于判断扫描的公众号与请求时的wechat_account_id是否一致 (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -113,11 +113,11 @@ class AuthorizationApi
      *
      * 绑定微信公众号(待废弃)
      *
-     * @param  string $accessToken (required)
-     * @param  string $redirectUri (required)
-     * @param  int $accountId 需绑定公众号的广告主 id，有操作权限的帐号 id (optional)
-     * @param  string $wechatAccountId 微信公众号id，用于判断扫描的公众号与请求时的wechat_account_id是否一致 (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  string|mixed $accessToken (required)
+     * @param  string|mixed $redirectUri (required)
+     * @param  int|mixed $accountId 需绑定公众号的广告主 id，有操作权限的帐号 id (optional)
+     * @param  string|mixed $wechatAccountId 微信公众号id，用于判断扫描的公众号与请求时的wechat_account_id是否一致 (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -192,11 +192,11 @@ class AuthorizationApi
      *
      * 绑定微信公众号(待废弃)
      *
-     * @param  string $accessToken (required)
-     * @param  string $redirectUri (required)
-     * @param  int $accountId 需绑定公众号的广告主 id，有操作权限的帐号 id (optional)
-     * @param  string $wechatAccountId 微信公众号id，用于判断扫描的公众号与请求时的wechat_account_id是否一致 (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  string|mixed $accessToken (required)
+     * @param  string|mixed $redirectUri (required)
+     * @param  int|mixed $accountId 需绑定公众号的广告主 id，有操作权限的帐号 id (optional)
+     * @param  string|mixed $wechatAccountId 微信公众号id，用于判断扫描的公众号与请求时的wechat_account_id是否一致 (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -216,11 +216,11 @@ class AuthorizationApi
      *
      * 绑定微信公众号(待废弃)
      *
-     * @param  string $accessToken (required)
-     * @param  string $redirectUri (required)
-     * @param  int $accountId 需绑定公众号的广告主 id，有操作权限的帐号 id (optional)
-     * @param  string $wechatAccountId 微信公众号id，用于判断扫描的公众号与请求时的wechat_account_id是否一致 (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  string|mixed $accessToken (required)
+     * @param  string|mixed $redirectUri (required)
+     * @param  int|mixed $accountId 需绑定公众号的广告主 id，有操作权限的帐号 id (optional)
+     * @param  string|mixed $wechatAccountId 微信公众号id，用于判断扫描的公众号与请求时的wechat_account_id是否一致 (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -270,11 +270,11 @@ class AuthorizationApi
     /**
      * Create request for operation 'authorizationWechatBind'
      *
-     * @param  string $accessToken (required)
-     * @param  string $redirectUri (required)
-     * @param  int $accountId 需绑定公众号的广告主 id，有操作权限的帐号 id (optional)
-     * @param  string $wechatAccountId 微信公众号id，用于判断扫描的公众号与请求时的wechat_account_id是否一致 (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  string|mixed $accessToken (required)
+     * @param  string|mixed $redirectUri (required)
+     * @param  int|mixed $accountId 需绑定公众号的广告主 id，有操作权限的帐号 id (optional)
+     * @param  string|mixed $wechatAccountId 微信公众号id，用于判断扫描的公众号与请求时的wechat_account_id是否一致 (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

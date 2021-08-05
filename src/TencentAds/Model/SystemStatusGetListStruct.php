@@ -224,7 +224,7 @@ class SystemStatusGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class SystemStatusGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets learningStatus
      *
-     * @param \TencentAds\Model\LearningStatus $learningStatus learningStatus
+     * @param \TencentAds\Model\LearningStatus|mixed $learningStatus learningStatus
      *
      * @return $this
      */

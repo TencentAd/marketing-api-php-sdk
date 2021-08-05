@@ -223,7 +223,7 @@ class LabelsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\LabelsLabel[] $list list
+     * @param \TencentAds\Model\LabelsLabel[]|mixed $list list
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class LabelsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets pageInfo
      *
-     * @param \TencentAds\Model\PageInfo $pageInfo pageInfo
+     * @param \TencentAds\Model\PageInfo|mixed $pageInfo pageInfo
      *
      * @return $this
      */

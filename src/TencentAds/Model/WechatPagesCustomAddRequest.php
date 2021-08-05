@@ -241,7 +241,7 @@ class WechatPagesCustomAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class WechatPagesCustomAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets pageName
      *
-     * @param string $pageName pageName
+     * @param string|mixed $pageName pageName
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class WechatPagesCustomAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets pageSpecsList
      *
-     * @param \TencentAds\Model\PageSpecsListStruct[] $pageSpecsList pageSpecsList
+     * @param \TencentAds\Model\PageSpecsListStruct[]|mixed $pageSpecsList pageSpecsList
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class WechatPagesCustomAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets globalSpec
      *
-     * @param \TencentAds\Model\GlobalSpec $globalSpec globalSpec
+     * @param \TencentAds\Model\GlobalSpec|mixed $globalSpec globalSpec
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class WechatPagesCustomAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets shareContentSpec
      *
-     * @param \TencentAds\Model\ShareContentSpec $shareContentSpec shareContentSpec
+     * @param \TencentAds\Model\ShareContentSpec|mixed $shareContentSpec shareContentSpec
      *
      * @return $this
      */

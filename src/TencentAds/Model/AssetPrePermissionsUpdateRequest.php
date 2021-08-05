@@ -241,7 +241,7 @@ class AssetPrePermissionsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class AssetPrePermissionsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets assetId
      *
-     * @param int $assetId assetId
+     * @param int|mixed $assetId assetId
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class AssetPrePermissionsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets assetType
      *
-     * @param \TencentAds\Model\AssetType $assetType assetType
+     * @param \TencentAds\Model\AssetType|mixed $assetType assetType
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class AssetPrePermissionsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets pathId
      *
-     * @param int $pathId pathId
+     * @param int|mixed $pathId pathId
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class AssetPrePermissionsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets pathType
      *
-     * @param \TencentAds\Model\PathType $pathType pathType
+     * @param \TencentAds\Model\PathType|mixed $pathType pathType
      *
      * @return $this
      */

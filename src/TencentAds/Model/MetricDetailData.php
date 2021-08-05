@@ -320,7 +320,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets cost
      *
-     * @param int $cost cost
+     * @param int|mixed $cost cost
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets expPv
      *
-     * @param int $expPv expPv
+     * @param int|mixed $expPv expPv
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets canvasCpnCouponsGetPv
      *
-     * @param int $canvasCpnCouponsGetPv canvasCpnCouponsGetPv
+     * @param int|mixed $canvasCpnCouponsGetPv canvasCpnCouponsGetPv
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets canvasCpnCouponsCost
      *
-     * @param int $canvasCpnCouponsCost canvasCpnCouponsCost
+     * @param int|mixed $canvasCpnCouponsCost canvasCpnCouponsCost
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets canvasCpnCouponsUsePv
      *
-     * @param int $canvasCpnCouponsUsePv canvasCpnCouponsUsePv
+     * @param int|mixed $canvasCpnCouponsUsePv canvasCpnCouponsUsePv
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets purchase
      *
-     * @param int $purchase purchase
+     * @param int|mixed $purchase purchase
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets promotionClaimOfferPv
      *
-     * @param int $promotionClaimOfferPv promotionClaimOfferPv
+     * @param int|mixed $promotionClaimOfferPv promotionClaimOfferPv
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets pageVisitStorePv
      *
-     * @param int $pageVisitStorePv pageVisitStorePv
+     * @param int|mixed $pageVisitStorePv pageVisitStorePv
      *
      * @return $this
      */
@@ -512,7 +512,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets weappExpPv
      *
-     * @param int $weappExpPv weappExpPv
+     * @param int|mixed $weappExpPv weappExpPv
      *
      * @return $this
      */
@@ -536,7 +536,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets promotionClaimOfferCost
      *
-     * @param int $promotionClaimOfferCost promotionClaimOfferCost
+     * @param int|mixed $promotionClaimOfferCost promotionClaimOfferCost
      *
      * @return $this
      */
@@ -560,7 +560,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets pageVisitStoreAmount
      *
-     * @param int $pageVisitStoreAmount pageVisitStoreAmount
+     * @param int|mixed $pageVisitStoreAmount pageVisitStoreAmount
      *
      * @return $this
      */
@@ -584,7 +584,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets buyCouponsPv
      *
-     * @param int $buyCouponsPv buyCouponsPv
+     * @param int|mixed $buyCouponsPv buyCouponsPv
      *
      * @return $this
      */
@@ -608,7 +608,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets buyCouponsCost
      *
-     * @param int $buyCouponsCost buyCouponsCost
+     * @param int|mixed $buyCouponsCost buyCouponsCost
      *
      * @return $this
      */
@@ -632,7 +632,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets questReservationUv
      *
-     * @param int $questReservationUv questReservationUv
+     * @param int|mixed $questReservationUv questReservationUv
      *
      * @return $this
      */
@@ -656,7 +656,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets cvsExpPv
      *
-     * @param int $cvsExpPv cvsExpPv
+     * @param int|mixed $cvsExpPv cvsExpPv
      *
      * @return $this
      */
@@ -680,7 +680,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets cvsExpCost
      *
-     * @param int $cvsExpCost cvsExpCost
+     * @param int|mixed $cvsExpCost cvsExpCost
      *
      * @return $this
      */
@@ -704,7 +704,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets weappExpCost
      *
-     * @param int $weappExpCost weappExpCost
+     * @param int|mixed $weappExpCost weappExpCost
      *
      * @return $this
      */
@@ -728,7 +728,7 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     /**
      * Sets questReservationUvCost
      *
-     * @param int $questReservationUvCost questReservationUvCost
+     * @param int|mixed $questReservationUvCost questReservationUvCost
      *
      * @return $this
      */

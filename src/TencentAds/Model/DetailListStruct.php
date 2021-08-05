@@ -236,7 +236,7 @@ class DetailListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets scopeObjectId
      *
-     * @param int $scopeObjectId scopeObjectId
+     * @param int|mixed $scopeObjectId scopeObjectId
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class DetailListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets scopeObjectName
      *
-     * @param string $scopeObjectName scopeObjectName
+     * @param string|mixed $scopeObjectName scopeObjectName
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class DetailListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets detailResultType
      *
-     * @param \TencentAds\Model\TaskDetailResultType $detailResultType detailResultType
+     * @param \TencentAds\Model\TaskDetailResultType|mixed $detailResultType detailResultType
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class DetailListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets message
      *
-     * @param string $message message
+     * @param string|mixed $message message
      *
      * @return $this
      */

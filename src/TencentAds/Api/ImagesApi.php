@@ -92,13 +92,13 @@ class ImagesApi
      *
      * 添加图片文件
      *
-     * @param  int $accountId accountId (required)
-     * @param  string $uploadType uploadType (required)
-     * @param  string $signature signature (required)
-     * @param  \SplFileObject $file file (optional)
-     * @param  string $bytes bytes (optional)
-     * @param  string $imageUsage imageUsage (optional)
-     * @param  string $description description (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string|mixed $uploadType uploadType (required)
+     * @param  string|mixed $signature signature (required)
+     * @param  \SplFileObject|mixed $file file (optional)
+     * @param  string|mixed $bytes bytes (optional)
+     * @param  string|mixed $imageUsage imageUsage (optional)
+     * @param  string|mixed $description description (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -115,13 +115,13 @@ class ImagesApi
      *
      * 添加图片文件
      *
-     * @param  int $accountId (required)
-     * @param  string $uploadType (required)
-     * @param  string $signature (required)
-     * @param  \SplFileObject $file (optional)
-     * @param  string $bytes (optional)
-     * @param  string $imageUsage (optional)
-     * @param  string $description (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $uploadType (required)
+     * @param  string|mixed $signature (required)
+     * @param  \SplFileObject|mixed $file (optional)
+     * @param  string|mixed $bytes (optional)
+     * @param  string|mixed $imageUsage (optional)
+     * @param  string|mixed $description (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -196,13 +196,13 @@ class ImagesApi
      *
      * 添加图片文件
      *
-     * @param  int $accountId (required)
-     * @param  string $uploadType (required)
-     * @param  string $signature (required)
-     * @param  \SplFileObject $file (optional)
-     * @param  string $bytes (optional)
-     * @param  string $imageUsage (optional)
-     * @param  string $description (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $uploadType (required)
+     * @param  string|mixed $signature (required)
+     * @param  \SplFileObject|mixed $file (optional)
+     * @param  string|mixed $bytes (optional)
+     * @param  string|mixed $imageUsage (optional)
+     * @param  string|mixed $description (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -222,13 +222,13 @@ class ImagesApi
      *
      * 添加图片文件
      *
-     * @param  int $accountId (required)
-     * @param  string $uploadType (required)
-     * @param  string $signature (required)
-     * @param  \SplFileObject $file (optional)
-     * @param  string $bytes (optional)
-     * @param  string $imageUsage (optional)
-     * @param  string $description (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $uploadType (required)
+     * @param  string|mixed $signature (required)
+     * @param  \SplFileObject|mixed $file (optional)
+     * @param  string|mixed $bytes (optional)
+     * @param  string|mixed $imageUsage (optional)
+     * @param  string|mixed $description (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -278,13 +278,13 @@ class ImagesApi
     /**
      * Create request for operation 'imagesAdd'
      *
-     * @param  int $accountId (required)
-     * @param  string $uploadType (required)
-     * @param  string $signature (required)
-     * @param  \SplFileObject $file (optional)
-     * @param  string $bytes (optional)
-     * @param  string $imageUsage (optional)
-     * @param  string $description (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $uploadType (required)
+     * @param  string|mixed $signature (required)
+     * @param  \SplFileObject|mixed $file (optional)
+     * @param  string|mixed $bytes (optional)
+     * @param  string|mixed $imageUsage (optional)
+     * @param  string|mixed $description (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -442,7 +442,7 @@ class ImagesApi
      *
      * 删除图片
      *
-     * @param  \TencentAds\Model\ImagesDeleteRequest $data data (required)
+     * @param  \TencentAds\Model\ImagesDeleteRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -459,7 +459,7 @@ class ImagesApi
      *
      * 删除图片
      *
-     * @param  \TencentAds\Model\ImagesDeleteRequest $data (required)
+     * @param  \TencentAds\Model\ImagesDeleteRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -534,7 +534,7 @@ class ImagesApi
      *
      * 删除图片
      *
-     * @param  \TencentAds\Model\ImagesDeleteRequest $data (required)
+     * @param  \TencentAds\Model\ImagesDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -554,7 +554,7 @@ class ImagesApi
      *
      * 删除图片
      *
-     * @param  \TencentAds\Model\ImagesDeleteRequest $data (required)
+     * @param  \TencentAds\Model\ImagesDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -604,7 +604,7 @@ class ImagesApi
     /**
      * Create request for operation 'imagesDelete'
      *
-     * @param  \TencentAds\Model\ImagesDeleteRequest $data (required)
+     * @param  \TencentAds\Model\ImagesDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -724,11 +724,11 @@ class ImagesApi
      *
      * 获取图片信息
      *
-     * @param  int $accountId accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -745,11 +745,11 @@ class ImagesApi
      *
      * 获取图片信息
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -824,11 +824,11 @@ class ImagesApi
      *
      * 获取图片信息
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -848,11 +848,11 @@ class ImagesApi
      *
      * 获取图片信息
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -902,11 +902,11 @@ class ImagesApi
     /**
      * Create request for operation 'imagesGet'
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1049,7 +1049,7 @@ class ImagesApi
      *
      * 修改图片信息
      *
-     * @param  \TencentAds\Model\ImagesUpdateRequest $data data (required)
+     * @param  \TencentAds\Model\ImagesUpdateRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1066,7 +1066,7 @@ class ImagesApi
      *
      * 修改图片信息
      *
-     * @param  \TencentAds\Model\ImagesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\ImagesUpdateRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1141,7 +1141,7 @@ class ImagesApi
      *
      * 修改图片信息
      *
-     * @param  \TencentAds\Model\ImagesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\ImagesUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1161,7 +1161,7 @@ class ImagesApi
      *
      * 修改图片信息
      *
-     * @param  \TencentAds\Model\ImagesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\ImagesUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1211,7 +1211,7 @@ class ImagesApi
     /**
      * Create request for operation 'imagesUpdate'
      *
-     * @param  \TencentAds\Model\ImagesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\ImagesUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

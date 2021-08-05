@@ -259,7 +259,7 @@ class ImagesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets imageId
      *
-     * @param string $imageId imageId
+     * @param string|mixed $imageId imageId
      *
      * @return $this
      */
@@ -283,7 +283,7 @@ class ImagesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets previewUrl
      *
-     * @param string $previewUrl previewUrl
+     * @param string|mixed $previewUrl previewUrl
      *
      * @return $this
      */
@@ -307,7 +307,7 @@ class ImagesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -331,7 +331,7 @@ class ImagesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets width
      *
-     * @param int $width width
+     * @param int|mixed $width width
      *
      * @return $this
      */
@@ -355,7 +355,7 @@ class ImagesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets height
      *
-     * @param int $height height
+     * @param int|mixed $height height
      *
      * @return $this
      */
@@ -379,7 +379,7 @@ class ImagesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets fileSize
      *
-     * @param int $fileSize fileSize
+     * @param int|mixed $fileSize fileSize
      *
      * @return $this
      */
@@ -403,7 +403,7 @@ class ImagesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \TencentAds\Model\ImageType $type type
+     * @param \TencentAds\Model\ImageType|mixed $type type
      *
      * @return $this
      */
@@ -427,7 +427,7 @@ class ImagesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets signature
      *
-     * @param string $signature signature
+     * @param string|mixed $signature signature
      *
      * @return $this
      */

@@ -218,7 +218,7 @@ class TaskTypeUnionPositionReportSpec implements ModelInterface, ArrayAccess
     /**
      * Sets date
      *
-     * @param string $date date
+     * @param string|mixed $date date
      *
      * @return $this
      */

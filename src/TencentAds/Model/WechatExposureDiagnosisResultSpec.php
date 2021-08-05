@@ -236,7 +236,7 @@ class WechatExposureDiagnosisResultSpec implements ModelInterface, ArrayAccess
     /**
      * Sets diagnosisConclusionSpec
      *
-     * @param \TencentAds\Model\DiagnosisConclusionSpec $diagnosisConclusionSpec diagnosisConclusionSpec
+     * @param \TencentAds\Model\DiagnosisConclusionSpec|mixed $diagnosisConclusionSpec diagnosisConclusionSpec
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class WechatExposureDiagnosisResultSpec implements ModelInterface, ArrayAccess
     /**
      * Sets targetingDiagnosisConclusionSpec
      *
-     * @param \TencentAds\Model\TargetingDiagnosisConclusionSpec $targetingDiagnosisConclusionSpec targetingDiagnosisConclusionSpec
+     * @param \TencentAds\Model\TargetingDiagnosisConclusionSpec|mixed $targetingDiagnosisConclusionSpec targetingDiagnosisConclusionSpec
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class WechatExposureDiagnosisResultSpec implements ModelInterface, ArrayAccess
     /**
      * Sets costDiagnosisConclusionSpec
      *
-     * @param \TencentAds\Model\CostDiagnosisConclusionSpec $costDiagnosisConclusionSpec costDiagnosisConclusionSpec
+     * @param \TencentAds\Model\CostDiagnosisConclusionSpec|mixed $costDiagnosisConclusionSpec costDiagnosisConclusionSpec
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class WechatExposureDiagnosisResultSpec implements ModelInterface, ArrayAccess
     /**
      * Sets compititionDiagnosisConclusionSpec
      *
-     * @param \TencentAds\Model\CompititionDiagnosisConclusionSpec $compititionDiagnosisConclusionSpec compititionDiagnosisConclusionSpec
+     * @param \TencentAds\Model\CompititionDiagnosisConclusionSpec|mixed $compititionDiagnosisConclusionSpec compititionDiagnosisConclusionSpec
      *
      * @return $this
      */

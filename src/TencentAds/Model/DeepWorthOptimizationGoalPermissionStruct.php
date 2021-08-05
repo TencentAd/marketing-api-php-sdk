@@ -224,7 +224,7 @@ class DeepWorthOptimizationGoalPermissionStruct implements ModelInterface, Array
     /**
      * Sets optimizationGoal
      *
-     * @param \TencentAds\Model\OptimizationGoal $optimizationGoal optimizationGoal
+     * @param \TencentAds\Model\OptimizationGoal|mixed $optimizationGoal optimizationGoal
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class DeepWorthOptimizationGoalPermissionStruct implements ModelInterface, Array
     /**
      * Sets deepWorthOptimizationGoalList
      *
-     * @param string[] $deepWorthOptimizationGoalList deepWorthOptimizationGoalList
+     * @param string[]|mixed $deepWorthOptimizationGoalList deepWorthOptimizationGoalList
      *
      * @return $this
      */

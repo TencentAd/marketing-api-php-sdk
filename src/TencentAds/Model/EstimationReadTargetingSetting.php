@@ -416,7 +416,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets age
      *
-     * @param \TencentAds\Model\AgeStruct[] $age age
+     * @param \TencentAds\Model\AgeStruct[]|mixed $age age
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets gender
      *
-     * @param string[] $gender gender
+     * @param string[]|mixed $gender gender
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets education
      *
-     * @param string[] $education education
+     * @param string[]|mixed $education education
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets maritalStatus
      *
-     * @param string[] $maritalStatus maritalStatus
+     * @param string[]|mixed $maritalStatus maritalStatus
      *
      * @return $this
      */
@@ -512,7 +512,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets workingStatus
      *
-     * @param string[] $workingStatus workingStatus
+     * @param string[]|mixed $workingStatus workingStatus
      *
      * @return $this
      */
@@ -536,7 +536,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets geoLocation
      *
-     * @param \TencentAds\Model\GeoLocations $geoLocation geoLocation
+     * @param \TencentAds\Model\GeoLocations|mixed $geoLocation geoLocation
      *
      * @return $this
      */
@@ -560,7 +560,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets userOs
      *
-     * @param string[] $userOs userOs
+     * @param string[]|mixed $userOs userOs
      *
      * @return $this
      */
@@ -584,7 +584,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets newDevice
      *
-     * @param string[] $newDevice newDevice
+     * @param string[]|mixed $newDevice newDevice
      *
      * @return $this
      */
@@ -608,7 +608,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets devicePrice
      *
-     * @param string[] $devicePrice devicePrice
+     * @param string[]|mixed $devicePrice devicePrice
      *
      * @return $this
      */
@@ -632,7 +632,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets networkType
      *
-     * @param string[] $networkType networkType
+     * @param string[]|mixed $networkType networkType
      *
      * @return $this
      */
@@ -656,7 +656,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets networkOperator
      *
-     * @param string[] $networkOperator networkOperator
+     * @param string[]|mixed $networkOperator networkOperator
      *
      * @return $this
      */
@@ -680,7 +680,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets networkScene
      *
-     * @param string[] $networkScene networkScene
+     * @param string[]|mixed $networkScene networkScene
      *
      * @return $this
      */
@@ -704,7 +704,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets dressingIndex
      *
-     * @param string[] $dressingIndex dressingIndex
+     * @param string[]|mixed $dressingIndex dressingIndex
      *
      * @return $this
      */
@@ -728,7 +728,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets uvIndex
      *
-     * @param string[] $uvIndex uvIndex
+     * @param string[]|mixed $uvIndex uvIndex
      *
      * @return $this
      */
@@ -752,7 +752,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets makeupIndex
      *
-     * @param string[] $makeupIndex makeupIndex
+     * @param string[]|mixed $makeupIndex makeupIndex
      *
      * @return $this
      */
@@ -776,7 +776,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets climate
      *
-     * @param string[] $climate climate
+     * @param string[]|mixed $climate climate
      *
      * @return $this
      */
@@ -800,7 +800,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets temperature
      *
-     * @param \TencentAds\Model\TemperatureStruct[] $temperature temperature
+     * @param \TencentAds\Model\TemperatureStruct[]|mixed $temperature temperature
      *
      * @return $this
      */
@@ -824,7 +824,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets appInstallStatus
      *
-     * @param string[] $appInstallStatus appInstallStatus
+     * @param string[]|mixed $appInstallStatus appInstallStatus
      *
      * @return $this
      */
@@ -848,7 +848,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameQqStatus
      *
-     * @param string[] $miniGameQqStatus miniGameQqStatus
+     * @param string[]|mixed $miniGameQqStatus miniGameQqStatus
      *
      * @return $this
      */
@@ -872,7 +872,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets consumptionStatus
      *
-     * @param string[] $consumptionStatus consumptionStatus
+     * @param string[]|mixed $consumptionStatus consumptionStatus
      *
      * @return $this
      */
@@ -896,7 +896,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets gameConsumptionLevel
      *
-     * @param string[] $gameConsumptionLevel gameConsumptionLevel
+     * @param string[]|mixed $gameConsumptionLevel gameConsumptionLevel
      *
      * @return $this
      */
@@ -920,7 +920,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets paidUser
      *
-     * @param string[] $paidUser paidUser
+     * @param string[]|mixed $paidUser paidUser
      *
      * @return $this
      */
@@ -944,7 +944,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets residentialCommunityPrice
      *
-     * @param \TencentAds\Model\ResidentialCommunityPriceStruct[] $residentialCommunityPrice residentialCommunityPrice
+     * @param \TencentAds\Model\ResidentialCommunityPriceStruct[]|mixed $residentialCommunityPrice residentialCommunityPrice
      *
      * @return $this
      */
@@ -968,7 +968,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAdBehavior
      *
-     * @param \TencentAds\Model\LimitWechatAdBehavior $wechatAdBehavior wechatAdBehavior
+     * @param \TencentAds\Model\LimitWechatAdBehavior|mixed $wechatAdBehavior wechatAdBehavior
      *
      * @return $this
      */
@@ -992,7 +992,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets customAudience
      *
-     * @param int[] $customAudience customAudience
+     * @param int[]|mixed $customAudience customAudience
      *
      * @return $this
      */
@@ -1016,7 +1016,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets excludedCustomAudience
      *
-     * @param int[] $excludedCustomAudience excludedCustomAudience
+     * @param int[]|mixed $excludedCustomAudience excludedCustomAudience
      *
      * @return $this
      */
@@ -1040,7 +1040,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets deprecatedCustomAudience
      *
-     * @param int[] $deprecatedCustomAudience deprecatedCustomAudience
+     * @param int[]|mixed $deprecatedCustomAudience deprecatedCustomAudience
      *
      * @return $this
      */
@@ -1064,7 +1064,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets deprecatedExcludedCustomAudience
      *
-     * @param int[] $deprecatedExcludedCustomAudience deprecatedExcludedCustomAudience
+     * @param int[]|mixed $deprecatedExcludedCustomAudience deprecatedExcludedCustomAudience
      *
      * @return $this
      */
@@ -1088,7 +1088,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets behaviorOrInterest
      *
-     * @param \TencentAds\Model\BehaviorOrInterest $behaviorOrInterest behaviorOrInterest
+     * @param \TencentAds\Model\BehaviorOrInterest|mixed $behaviorOrInterest behaviorOrInterest
      *
      * @return $this
      */
@@ -1112,7 +1112,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets airQualityIndex
      *
-     * @param string[] $airQualityIndex airQualityIndex
+     * @param string[]|mixed $airQualityIndex airQualityIndex
      *
      * @return $this
      */
@@ -1136,7 +1136,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets wechatOfficialAccountCategory
      *
-     * @param int[] $wechatOfficialAccountCategory wechatOfficialAccountCategory
+     * @param int[]|mixed $wechatOfficialAccountCategory wechatOfficialAccountCategory
      *
      * @return $this
      */
@@ -1160,7 +1160,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets mobileUnionCategory
      *
-     * @param int[] $mobileUnionCategory mobileUnionCategory
+     * @param int[]|mixed $mobileUnionCategory mobileUnionCategory
      *
      * @return $this
      */
@@ -1184,7 +1184,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets financialSituation
      *
-     * @param string[] $financialSituation financialSituation
+     * @param string[]|mixed $financialSituation financialSituation
      *
      * @return $this
      */
@@ -1208,7 +1208,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets consumptionType
      *
-     * @param string[] $consumptionType consumptionType
+     * @param string[]|mixed $consumptionType consumptionType
      *
      * @return $this
      */

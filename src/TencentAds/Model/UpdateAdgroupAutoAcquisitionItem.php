@@ -230,7 +230,7 @@ class UpdateAdgroupAutoAcquisitionItem implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class UpdateAdgroupAutoAcquisitionItem implements ModelInterface, ArrayAccess
     /**
      * Sets autoAcquisitionEnabled
      *
-     * @param bool $autoAcquisitionEnabled autoAcquisitionEnabled
+     * @param bool|mixed $autoAcquisitionEnabled autoAcquisitionEnabled
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class UpdateAdgroupAutoAcquisitionItem implements ModelInterface, ArrayAccess
     /**
      * Sets autoAcquisitionBudget
      *
-     * @param int $autoAcquisitionBudget autoAcquisitionBudget
+     * @param int|mixed $autoAcquisitionBudget autoAcquisitionBudget
      *
      * @return $this
      */

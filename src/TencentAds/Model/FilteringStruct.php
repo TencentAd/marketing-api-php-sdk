@@ -230,7 +230,7 @@ class FilteringStruct implements ModelInterface, ArrayAccess
     /**
      * Sets field
      *
-     * @param string $field field
+     * @param string|mixed $field field
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class FilteringStruct implements ModelInterface, ArrayAccess
     /**
      * Sets operator
      *
-     * @param string $operator operator
+     * @param string|mixed $operator operator
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class FilteringStruct implements ModelInterface, ArrayAccess
     /**
      * Sets values
      *
-     * @param string[] $values values
+     * @param string[]|mixed $values values
      *
      * @return $this
      */

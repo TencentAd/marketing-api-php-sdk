@@ -217,7 +217,7 @@ class AdgroupsUpdateBidAmountResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\AdgroupsUpdateBidAmountListStruct[] $list list
+     * @param \TencentAds\Model\AdgroupsUpdateBidAmountListStruct[]|mixed $list list
      *
      * @return $this
      */

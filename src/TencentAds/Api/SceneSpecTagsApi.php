@@ -92,9 +92,9 @@ class SceneSpecTagsApi
      *
      * 获取场景定向标签
      *
-     * @param  string $type type (required)
-     * @param  int $accountId accountId (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  string|mixed $type type (required)
+     * @param  int|mixed $accountId accountId (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -111,9 +111,9 @@ class SceneSpecTagsApi
      *
      * 获取场景定向标签
      *
-     * @param  string $type (required)
-     * @param  int $accountId (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  string|mixed $type (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -188,9 +188,9 @@ class SceneSpecTagsApi
      *
      * 获取场景定向标签
      *
-     * @param  string $type (required)
-     * @param  int $accountId (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  string|mixed $type (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -210,9 +210,9 @@ class SceneSpecTagsApi
      *
      * 获取场景定向标签
      *
-     * @param  string $type (required)
-     * @param  int $accountId (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  string|mixed $type (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -262,9 +262,9 @@ class SceneSpecTagsApi
     /**
      * Create request for operation 'sceneSpecTagsGet'
      *
-     * @param  string $type (required)
-     * @param  int $accountId (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  string|mixed $type (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

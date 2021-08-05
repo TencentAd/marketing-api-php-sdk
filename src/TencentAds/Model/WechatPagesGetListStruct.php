@@ -296,7 +296,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageId
      *
-     * @param int $pageId pageId
+     * @param int|mixed $pageId pageId
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageName
      *
-     * @param string $pageName pageName
+     * @param string|mixed $pageName pageName
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedTime
      *
-     * @param int $lastModifiedTime lastModifiedTime
+     * @param int|mixed $lastModifiedTime lastModifiedTime
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageTemplateId
      *
-     * @param int $pageTemplateId pageTemplateId
+     * @param int|mixed $pageTemplateId pageTemplateId
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets shareContentSpec
      *
-     * @param \TencentAds\Model\ShareContentSpec $shareContentSpec shareContentSpec
+     * @param \TencentAds\Model\ShareContentSpec|mixed $shareContentSpec shareContentSpec
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets previewUrl
      *
-     * @param string $previewUrl previewUrl
+     * @param string|mixed $previewUrl previewUrl
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageType
      *
-     * @param \TencentAds\Model\PageTypeRead $pageType pageType
+     * @param \TencentAds\Model\PageTypeRead|mixed $pageType pageType
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets sourceType
      *
-     * @param \TencentAds\Model\WechatPageSourceType $sourceType sourceType
+     * @param \TencentAds\Model\WechatPageSourceType|mixed $sourceType sourceType
      *
      * @return $this
      */
@@ -512,7 +512,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoResourceStatus
      *
-     * @param \TencentAds\Model\WechatPageResourceStatus $videoResourceStatus videoResourceStatus
+     * @param \TencentAds\Model\WechatPageResourceStatus|mixed $videoResourceStatus videoResourceStatus
      *
      * @return $this
      */
@@ -536,7 +536,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets canvasType
      *
-     * @param \TencentAds\Model\CanvasType $canvasType canvasType
+     * @param \TencentAds\Model\CanvasType|mixed $canvasType canvasType
      *
      * @return $this
      */
@@ -560,7 +560,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets ownerUid
      *
-     * @param int $ownerUid ownerUid
+     * @param int|mixed $ownerUid ownerUid
      *
      * @return $this
      */
@@ -584,7 +584,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageStatus
      *
-     * @param \TencentAds\Model\PageStatus $pageStatus pageStatus
+     * @param \TencentAds\Model\PageStatus|mixed $pageStatus pageStatus
      *
      * @return $this
      */
@@ -608,7 +608,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageElementsSpecList
      *
-     * @param \TencentAds\Model\PageElementsStruct[] $pageElementsSpecList pageElementsSpecList
+     * @param \TencentAds\Model\PageElementsStruct[]|mixed $pageElementsSpecList pageElementsSpecList
      *
      * @return $this
      */

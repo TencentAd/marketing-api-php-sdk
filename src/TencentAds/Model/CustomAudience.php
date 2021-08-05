@@ -284,7 +284,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Sets audienceId
      *
-     * @param int $audienceId audienceId
+     * @param int|mixed $audienceId audienceId
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param string $name name
+     * @param string|mixed $name name
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \TencentAds\Model\AudienceType $type type
+     * @param \TencentAds\Model\AudienceType|mixed $type type
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \TencentAds\Model\ProcessStatus $status status
+     * @param \TencentAds\Model\ProcessStatus|mixed $status status
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Sets errorCode
      *
-     * @param int $errorCode errorCode
+     * @param int|mixed $errorCode errorCode
      *
      * @return $this
      */
@@ -452,7 +452,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Sets userCount
      *
-     * @param int $userCount userCount
+     * @param int|mixed $userCount userCount
      *
      * @return $this
      */
@@ -476,7 +476,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param string $createdTime createdTime
+     * @param string|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -500,7 +500,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedTime
      *
-     * @param string $lastModifiedTime lastModifiedTime
+     * @param string|mixed $lastModifiedTime lastModifiedTime
      *
      * @return $this
      */
@@ -524,7 +524,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Sets audienceSpec
      *
-     * @param \TencentAds\Model\AudienceSpec $audienceSpec audienceSpec
+     * @param \TencentAds\Model\AudienceSpec|mixed $audienceSpec audienceSpec
      *
      * @return $this
      */
@@ -548,7 +548,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
     /**
      * Sets externalAudienceId
      *
-     * @param string $externalAudienceId externalAudienceId
+     * @param string|mixed $externalAudienceId externalAudienceId
      *
      * @return $this
      */

@@ -218,7 +218,7 @@ class BidAmountSpec implements ModelInterface, ArrayAccess
     /**
      * Sets bidAmount
      *
-     * @param int $bidAmount bidAmount
+     * @param int|mixed $bidAmount bidAmount
      *
      * @return $this
      */

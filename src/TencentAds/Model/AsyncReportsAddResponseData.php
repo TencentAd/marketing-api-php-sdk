@@ -217,7 +217,7 @@ class AsyncReportsAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets taskId
      *
-     * @param int $taskId taskId
+     * @param int|mixed $taskId taskId
      *
      * @return $this
      */

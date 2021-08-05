@@ -254,7 +254,7 @@ class ProductCatalogsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productCatalogId
      *
-     * @param int $productCatalogId productCatalogId
+     * @param int|mixed $productCatalogId productCatalogId
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class ProductCatalogsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productCatalogName
      *
-     * @param string $productCatalogName productCatalogName
+     * @param string|mixed $productCatalogName productCatalogName
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class ProductCatalogsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productCatalogType
      *
-     * @param \TencentAds\Model\CatalogType $productCatalogType productCatalogType
+     * @param \TencentAds\Model\CatalogType|mixed $productCatalogType productCatalogType
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class ProductCatalogsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productCatalogVertical
      *
-     * @param \TencentAds\Model\CatalogVertical $productCatalogVertical productCatalogVertical
+     * @param \TencentAds\Model\CatalogVertical|mixed $productCatalogVertical productCatalogVertical
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class ProductCatalogsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productCatalogStatus
      *
-     * @param \TencentAds\Model\CatalogStatus $productCatalogStatus productCatalogStatus
+     * @param \TencentAds\Model\CatalogStatus|mixed $productCatalogStatus productCatalogStatus
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class ProductCatalogsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productRecommendMethods
      *
-     * @param \TencentAds\Model\RecommendMethod[] $productRecommendMethods productRecommendMethods
+     * @param \TencentAds\Model\RecommendMethod[]|mixed $productRecommendMethods productRecommendMethods
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class ProductCatalogsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets deepLinkEnabled
      *
-     * @param \TencentAds\Model\DeepLinkEnabled $deepLinkEnabled deepLinkEnabled
+     * @param \TencentAds\Model\DeepLinkEnabled|mixed $deepLinkEnabled deepLinkEnabled
      *
      * @return $this
      */

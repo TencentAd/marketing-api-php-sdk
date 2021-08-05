@@ -224,7 +224,7 @@ class BarrageListReadStruct implements ModelInterface, ArrayAccess
     /**
      * Sets id
      *
-     * @param int $id id
+     * @param int|mixed $id id
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class BarrageListReadStruct implements ModelInterface, ArrayAccess
     /**
      * Sets text
      *
-     * @param string $text text
+     * @param string|mixed $text text
      *
      * @return $this
      */

@@ -236,7 +236,7 @@ class AuditSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Sets siteSet
      *
-     * @param \TencentAds\Model\SiteSetDefinition $siteSet siteSet
+     * @param \TencentAds\Model\SiteSetDefinition|mixed $siteSet siteSet
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class AuditSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Sets systemStatus
      *
-     * @param \TencentAds\Model\SysStatus $systemStatus systemStatus
+     * @param \TencentAds\Model\SysStatus|mixed $systemStatus systemStatus
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class AuditSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Sets rejectMessage
      *
-     * @param string $rejectMessage rejectMessage
+     * @param string|mixed $rejectMessage rejectMessage
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class AuditSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Sets elementRejectDetailInfo
      *
-     * @param \TencentAds\Model\ElementRejectDetailInfo[] $elementRejectDetailInfo elementRejectDetailInfo
+     * @param \TencentAds\Model\ElementRejectDetailInfo[]|mixed $elementRejectDetailInfo elementRejectDetailInfo
      *
      * @return $this
      */

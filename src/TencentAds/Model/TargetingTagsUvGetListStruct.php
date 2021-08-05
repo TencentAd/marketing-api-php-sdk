@@ -230,7 +230,7 @@ class TargetingTagsUvGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets categoryId
      *
-     * @param int $categoryId categoryId
+     * @param int|mixed $categoryId categoryId
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class TargetingTagsUvGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets categoryName
      *
-     * @param string $categoryName categoryName
+     * @param string|mixed $categoryName categoryName
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class TargetingTagsUvGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets categoryUv
      *
-     * @param int $categoryUv categoryUv
+     * @param int|mixed $categoryUv categoryUv
      *
      * @return $this
      */

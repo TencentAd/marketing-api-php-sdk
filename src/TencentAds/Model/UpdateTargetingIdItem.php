@@ -224,7 +224,7 @@ class UpdateTargetingIdItem implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class UpdateTargetingIdItem implements ModelInterface, ArrayAccess
     /**
      * Sets targetingId
      *
-     * @param int $targetingId targetingId
+     * @param int|mixed $targetingId targetingId
      *
      * @return $this
      */

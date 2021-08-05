@@ -223,7 +223,7 @@ class BusinessManagerRelationsGetResponseData implements ModelInterface, ArrayAc
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\BusinessManagerRelationsGetListStruct[] $list list
+     * @param \TencentAds\Model\BusinessManagerRelationsGetListStruct[]|mixed $list list
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class BusinessManagerRelationsGetResponseData implements ModelInterface, ArrayAc
     /**
      * Sets pageInfo
      *
-     * @param \TencentAds\Model\Conf $pageInfo pageInfo
+     * @param \TencentAds\Model\Conf|mixed $pageInfo pageInfo
      *
      * @return $this
      */

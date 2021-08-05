@@ -236,7 +236,7 @@ class AuditRejectItem implements ModelInterface, ArrayAccess
     /**
      * Sets feedId
      *
-     * @param int $feedId feedId
+     * @param int|mixed $feedId feedId
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class AuditRejectItem implements ModelInterface, ArrayAccess
     /**
      * Sets productId
      *
-     * @param string $productId productId
+     * @param string|mixed $productId productId
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class AuditRejectItem implements ModelInterface, ArrayAccess
     /**
      * Sets systemStatus
      *
-     * @param \TencentAds\Model\AuditStatus $systemStatus systemStatus
+     * @param \TencentAds\Model\AuditStatus|mixed $systemStatus systemStatus
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class AuditRejectItem implements ModelInterface, ArrayAccess
     /**
      * Sets rejectMessage
      *
-     * @param string $rejectMessage rejectMessage
+     * @param string|mixed $rejectMessage rejectMessage
      *
      * @return $this
      */

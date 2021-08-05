@@ -302,7 +302,7 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets outerLeadsId
      *
-     * @param string $outerLeadsId outerLeadsId
+     * @param string|mixed $outerLeadsId outerLeadsId
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsId
      *
-     * @param int $leadsId leadsId
+     * @param int|mixed $leadsId leadsId
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets clickId
      *
-     * @param string $clickId clickId
+     * @param string|mixed $clickId clickId
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsUserType
      *
-     * @param \TencentAds\Model\LeadsUserType $leadsUserType leadsUserType
+     * @param \TencentAds\Model\LeadsUserType|mixed $leadsUserType leadsUserType
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsUserWechatAppid
      *
-     * @param string $leadsUserWechatAppid leadsUserWechatAppid
+     * @param string|mixed $leadsUserWechatAppid leadsUserWechatAppid
      *
      * @return $this
      */
@@ -422,7 +422,7 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsUserId
      *
-     * @param string $leadsUserId leadsUserId
+     * @param string|mixed $leadsUserId leadsUserId
      *
      * @return $this
      */
@@ -446,7 +446,7 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsTel
      *
-     * @param string $leadsTel leadsTel
+     * @param string|mixed $leadsTel leadsTel
      *
      * @return $this
      */
@@ -470,7 +470,7 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsQq
      *
-     * @param int $leadsQq leadsQq
+     * @param int|mixed $leadsQq leadsQq
      *
      * @return $this
      */
@@ -494,7 +494,7 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsWechat
      *
-     * @param string $leadsWechat leadsWechat
+     * @param string|mixed $leadsWechat leadsWechat
      *
      * @return $this
      */
@@ -518,7 +518,7 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsName
      *
-     * @param string $leadsName leadsName
+     * @param string|mixed $leadsName leadsName
      *
      * @return $this
      */
@@ -542,7 +542,7 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsGender
      *
-     * @param \TencentAds\Model\LeadCluesGenderType $leadsGender leadsGender
+     * @param \TencentAds\Model\LeadCluesGenderType|mixed $leadsGender leadsGender
      *
      * @return $this
      */
@@ -566,7 +566,7 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsEmail
      *
-     * @param string $leadsEmail leadsEmail
+     * @param string|mixed $leadsEmail leadsEmail
      *
      * @return $this
      */
@@ -590,7 +590,7 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsArea
      *
-     * @param string $leadsArea leadsArea
+     * @param string|mixed $leadsArea leadsArea
      *
      * @return $this
      */
@@ -614,7 +614,7 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets bundle
      *
-     * @param string $bundle bundle
+     * @param string|mixed $bundle bundle
      *
      * @return $this
      */
@@ -638,7 +638,7 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets memo
      *
-     * @param string $memo memo
+     * @param string|mixed $memo memo
      *
      * @return $this
      */

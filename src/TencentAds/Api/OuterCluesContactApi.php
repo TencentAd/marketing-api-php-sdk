@@ -92,7 +92,7 @@ class OuterCluesContactApi
      *
      * 更新线索基本信息
      *
-     * @param  \TencentAds\Model\OuterCluesContactUpdateRequest $data data (required)
+     * @param  \TencentAds\Model\OuterCluesContactUpdateRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class OuterCluesContactApi
      *
      * 更新线索基本信息
      *
-     * @param  \TencentAds\Model\OuterCluesContactUpdateRequest $data (required)
+     * @param  \TencentAds\Model\OuterCluesContactUpdateRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class OuterCluesContactApi
      *
      * 更新线索基本信息
      *
-     * @param  \TencentAds\Model\OuterCluesContactUpdateRequest $data (required)
+     * @param  \TencentAds\Model\OuterCluesContactUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class OuterCluesContactApi
      *
      * 更新线索基本信息
      *
-     * @param  \TencentAds\Model\OuterCluesContactUpdateRequest $data (required)
+     * @param  \TencentAds\Model\OuterCluesContactUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class OuterCluesContactApi
     /**
      * Create request for operation 'outerCluesContactUpdate'
      *
-     * @param  \TencentAds\Model\OuterCluesContactUpdateRequest $data (required)
+     * @param  \TencentAds\Model\OuterCluesContactUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

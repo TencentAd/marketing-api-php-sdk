@@ -92,7 +92,7 @@ class OuterCluesApi
      *
      * 外部线索数据导入
      *
-     * @param  \TencentAds\Model\OuterCluesAddRequest $data data (required)
+     * @param  \TencentAds\Model\OuterCluesAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class OuterCluesApi
      *
      * 外部线索数据导入
      *
-     * @param  \TencentAds\Model\OuterCluesAddRequest $data (required)
+     * @param  \TencentAds\Model\OuterCluesAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class OuterCluesApi
      *
      * 外部线索数据导入
      *
-     * @param  \TencentAds\Model\OuterCluesAddRequest $data (required)
+     * @param  \TencentAds\Model\OuterCluesAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class OuterCluesApi
      *
      * 外部线索数据导入
      *
-     * @param  \TencentAds\Model\OuterCluesAddRequest $data (required)
+     * @param  \TencentAds\Model\OuterCluesAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class OuterCluesApi
     /**
      * Create request for operation 'outerCluesAdd'
      *
-     * @param  \TencentAds\Model\OuterCluesAddRequest $data (required)
+     * @param  \TencentAds\Model\OuterCluesAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,7 +374,7 @@ class OuterCluesApi
      *
      * 外部线索状态更新
      *
-     * @param  \TencentAds\Model\OuterCluesUpdateRequest $data data (required)
+     * @param  \TencentAds\Model\OuterCluesUpdateRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -391,7 +391,7 @@ class OuterCluesApi
      *
      * 外部线索状态更新
      *
-     * @param  \TencentAds\Model\OuterCluesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\OuterCluesUpdateRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -466,7 +466,7 @@ class OuterCluesApi
      *
      * 外部线索状态更新
      *
-     * @param  \TencentAds\Model\OuterCluesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\OuterCluesUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -486,7 +486,7 @@ class OuterCluesApi
      *
      * 外部线索状态更新
      *
-     * @param  \TencentAds\Model\OuterCluesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\OuterCluesUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -536,7 +536,7 @@ class OuterCluesApi
     /**
      * Create request for operation 'outerCluesUpdate'
      *
-     * @param  \TencentAds\Model\OuterCluesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\OuterCluesUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

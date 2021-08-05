@@ -92,7 +92,7 @@ class BarrageApi
      *
      * 添加弹幕
      *
-     * @param  \TencentAds\Model\BarrageAddRequest $data data (required)
+     * @param  \TencentAds\Model\BarrageAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class BarrageApi
      *
      * 添加弹幕
      *
-     * @param  \TencentAds\Model\BarrageAddRequest $data (required)
+     * @param  \TencentAds\Model\BarrageAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class BarrageApi
      *
      * 添加弹幕
      *
-     * @param  \TencentAds\Model\BarrageAddRequest $data (required)
+     * @param  \TencentAds\Model\BarrageAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class BarrageApi
      *
      * 添加弹幕
      *
-     * @param  \TencentAds\Model\BarrageAddRequest $data (required)
+     * @param  \TencentAds\Model\BarrageAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class BarrageApi
     /**
      * Create request for operation 'barrageAdd'
      *
-     * @param  \TencentAds\Model\BarrageAddRequest $data (required)
+     * @param  \TencentAds\Model\BarrageAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

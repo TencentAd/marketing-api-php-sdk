@@ -260,7 +260,7 @@ class OptTargetingStruct implements ModelInterface, ArrayAccess
     /**
      * Sets openAutoExpandFlag
      *
-     * @param bool $openAutoExpandFlag openAutoExpandFlag
+     * @param bool|mixed $openAutoExpandFlag openAutoExpandFlag
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class OptTargetingStruct implements ModelInterface, ArrayAccess
     /**
      * Sets expandTargetingRule
      *
-     * @param string[] $expandTargetingRule expandTargetingRule
+     * @param string[]|mixed $expandTargetingRule expandTargetingRule
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class OptTargetingStruct implements ModelInterface, ArrayAccess
     /**
      * Sets openExpandSeedPopulationFlag
      *
-     * @param bool $openExpandSeedPopulationFlag openExpandSeedPopulationFlag
+     * @param bool|mixed $openExpandSeedPopulationFlag openExpandSeedPopulationFlag
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class OptTargetingStruct implements ModelInterface, ArrayAccess
     /**
      * Sets openExpandSeedPopulationSelectedFlag
      *
-     * @param bool $openExpandSeedPopulationSelectedFlag openExpandSeedPopulationSelectedFlag
+     * @param bool|mixed $openExpandSeedPopulationSelectedFlag openExpandSeedPopulationSelectedFlag
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class OptTargetingStruct implements ModelInterface, ArrayAccess
     /**
      * Sets expandSeedPopulations
      *
-     * @param int[] $expandSeedPopulations expandSeedPopulations
+     * @param int[]|mixed $expandSeedPopulations expandSeedPopulations
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class OptTargetingStruct implements ModelInterface, ArrayAccess
     /**
      * Sets addMoreLocardLabelsFlag
      *
-     * @param bool $addMoreLocardLabelsFlag addMoreLocardLabelsFlag
+     * @param bool|mixed $addMoreLocardLabelsFlag addMoreLocardLabelsFlag
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class OptTargetingStruct implements ModelInterface, ArrayAccess
     /**
      * Sets locardBehaviors
      *
-     * @param \TencentAds\Model\LocardBehaviorsListItem[] $locardBehaviors locardBehaviors
+     * @param \TencentAds\Model\LocardBehaviorsListItem[]|mixed $locardBehaviors locardBehaviors
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class OptTargetingStruct implements ModelInterface, ArrayAccess
     /**
      * Sets locardInterests
      *
-     * @param \TencentAds\Model\LocardInterestsListItem[] $locardInterests locardInterests
+     * @param \TencentAds\Model\LocardInterestsListItem[]|mixed $locardInterests locardInterests
      *
      * @return $this
      */

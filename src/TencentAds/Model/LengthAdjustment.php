@@ -224,7 +224,7 @@ class LengthAdjustment implements ModelInterface, ArrayAccess
     /**
      * Sets targetLength
      *
-     * @param int $targetLength targetLength
+     * @param int|mixed $targetLength targetLength
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class LengthAdjustment implements ModelInterface, ArrayAccess
     /**
      * Sets lengthAdjustmentMethod
      *
-     * @param \TencentAds\Model\LengthAdjustmentMethod $lengthAdjustmentMethod lengthAdjustmentMethod
+     * @param \TencentAds\Model\LengthAdjustmentMethod|mixed $lengthAdjustmentMethod lengthAdjustmentMethod
      *
      * @return $this
      */

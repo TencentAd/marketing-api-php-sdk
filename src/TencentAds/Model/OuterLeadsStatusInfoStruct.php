@@ -260,7 +260,7 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets outerLeadsId
      *
-     * @param string $outerLeadsId outerLeadsId
+     * @param string|mixed $outerLeadsId outerLeadsId
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsId
      *
-     * @param int $leadsId leadsId
+     * @param int|mixed $leadsId leadsId
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsTel
      *
-     * @param string $leadsTel leadsTel
+     * @param string|mixed $leadsTel leadsTel
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsQq
      *
-     * @param int $leadsQq leadsQq
+     * @param int|mixed $leadsQq leadsQq
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsWechat
      *
-     * @param string $leadsWechat leadsWechat
+     * @param string|mixed $leadsWechat leadsWechat
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets clickId
      *
-     * @param string $clickId clickId
+     * @param string|mixed $clickId clickId
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets outerLeadsConvertType
      *
-     * @param string $outerLeadsConvertType outerLeadsConvertType
+     * @param string|mixed $outerLeadsConvertType outerLeadsConvertType
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets outerLeadsIneffectReason
      *
-     * @param string $outerLeadsIneffectReason outerLeadsIneffectReason
+     * @param string|mixed $outerLeadsIneffectReason outerLeadsIneffectReason
      *
      * @return $this
      */

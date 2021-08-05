@@ -236,7 +236,7 @@ class TargetingsShareGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets targetingId
      *
-     * @param int $targetingId targetingId
+     * @param int|mixed $targetingId targetingId
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class TargetingsShareGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets shareToAccountId
      *
-     * @param int $shareToAccountId shareToAccountId
+     * @param int|mixed $shareToAccountId shareToAccountId
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class TargetingsShareGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets shareToTargetingId
      *
-     * @param int $shareToTargetingId shareToTargetingId
+     * @param int|mixed $shareToTargetingId shareToTargetingId
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class TargetingsShareGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets sharedTime
      *
-     * @param int $sharedTime sharedTime
+     * @param int|mixed $sharedTime sharedTime
      *
      * @return $this
      */

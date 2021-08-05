@@ -241,7 +241,7 @@ class AdcreativePreviewsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class AdcreativePreviewsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets campaignId
      *
-     * @param int $campaignId campaignId
+     * @param int|mixed $campaignId campaignId
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class AdcreativePreviewsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets userIdType
      *
-     * @param \TencentAds\Model\ViewerIdType $userIdType userIdType
+     * @param \TencentAds\Model\ViewerIdType|mixed $userIdType userIdType
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class AdcreativePreviewsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets userIdList
      *
-     * @param string[] $userIdList userIdList
+     * @param string[]|mixed $userIdList userIdList
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class AdcreativePreviewsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */

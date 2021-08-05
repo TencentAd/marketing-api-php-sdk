@@ -500,7 +500,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -524,7 +524,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsId
      *
-     * @param int $leadsId leadsId
+     * @param int|mixed $leadsId leadsId
      *
      * @return $this
      */
@@ -548,7 +548,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets outerLeadsId
      *
-     * @param string $outerLeadsId outerLeadsId
+     * @param string|mixed $outerLeadsId outerLeadsId
      *
      * @return $this
      */
@@ -572,7 +572,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets clickId
      *
-     * @param string $clickId clickId
+     * @param string|mixed $clickId clickId
      *
      * @return $this
      */
@@ -596,7 +596,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAppid
      *
-     * @param string $wechatAppid wechatAppid
+     * @param string|mixed $wechatAppid wechatAppid
      *
      * @return $this
      */
@@ -620,7 +620,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets agencyId
      *
-     * @param string $agencyId agencyId
+     * @param string|mixed $agencyId agencyId
      *
      * @return $this
      */
@@ -644,7 +644,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets agencyName
      *
-     * @param string $agencyName agencyName
+     * @param string|mixed $agencyName agencyName
      *
      * @return $this
      */
@@ -668,7 +668,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets campaignId
      *
-     * @param int $campaignId campaignId
+     * @param int|mixed $campaignId campaignId
      *
      * @return $this
      */
@@ -692,7 +692,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets campaignName
      *
-     * @param string $campaignName campaignName
+     * @param string|mixed $campaignName campaignName
      *
      * @return $this
      */
@@ -716,7 +716,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param string $adgroupId adgroupId
+     * @param string|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -740,7 +740,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupName
      *
-     * @param string $adgroupName adgroupName
+     * @param string|mixed $adgroupName adgroupName
      *
      * @return $this
      */
@@ -764,7 +764,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets creativeId
      *
-     * @param string $creativeId creativeId
+     * @param string|mixed $creativeId creativeId
      *
      * @return $this
      */
@@ -788,7 +788,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets creativeName
      *
-     * @param string $creativeName creativeName
+     * @param string|mixed $creativeName creativeName
      *
      * @return $this
      */
@@ -812,7 +812,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets componentId
      *
-     * @param string $componentId componentId
+     * @param string|mixed $componentId componentId
      *
      * @return $this
      */
@@ -836,7 +836,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets componentName
      *
-     * @param string $componentName componentName
+     * @param string|mixed $componentName componentName
      *
      * @return $this
      */
@@ -860,7 +860,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageId
      *
-     * @param string $pageId pageId
+     * @param string|mixed $pageId pageId
      *
      * @return $this
      */
@@ -884,7 +884,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageName
      *
-     * @param string $pageName pageName
+     * @param string|mixed $pageName pageName
      *
      * @return $this
      */
@@ -908,7 +908,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageUrl
      *
-     * @param string $pageUrl pageUrl
+     * @param string|mixed $pageUrl pageUrl
      *
      * @return $this
      */
@@ -932,7 +932,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsType
      *
-     * @param \TencentAds\Model\LeadCluesLeadsType $leadsType leadsType
+     * @param \TencentAds\Model\LeadCluesLeadsType|mixed $leadsType leadsType
      *
      * @return $this
      */
@@ -956,7 +956,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsSource
      *
-     * @param string $leadsSource leadsSource
+     * @param string|mixed $leadsSource leadsSource
      *
      * @return $this
      */
@@ -980,7 +980,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsPotentialScore
      *
-     * @param string $leadsPotentialScore leadsPotentialScore
+     * @param string|mixed $leadsPotentialScore leadsPotentialScore
      *
      * @return $this
      */
@@ -1004,7 +1004,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsFollowTag
      *
-     * @param string $leadsFollowTag leadsFollowTag
+     * @param string|mixed $leadsFollowTag leadsFollowTag
      *
      * @return $this
      */
@@ -1028,7 +1028,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets outerLeadsConvertType
      *
-     * @param string $outerLeadsConvertType outerLeadsConvertType
+     * @param string|mixed $outerLeadsConvertType outerLeadsConvertType
      *
      * @return $this
      */
@@ -1052,7 +1052,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets outerLeadsIneffectReason
      *
-     * @param string $outerLeadsIneffectReason outerLeadsIneffectReason
+     * @param string|mixed $outerLeadsIneffectReason outerLeadsIneffectReason
      *
      * @return $this
      */
@@ -1076,7 +1076,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsUserId
      *
-     * @param string $leadsUserId leadsUserId
+     * @param string|mixed $leadsUserId leadsUserId
      *
      * @return $this
      */
@@ -1100,7 +1100,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsUserType
      *
-     * @param \TencentAds\Model\LeadsUserType $leadsUserType leadsUserType
+     * @param \TencentAds\Model\LeadsUserType|mixed $leadsUserType leadsUserType
      *
      * @return $this
      */
@@ -1124,7 +1124,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsUserWechatAppid
      *
-     * @param string $leadsUserWechatAppid leadsUserWechatAppid
+     * @param string|mixed $leadsUserWechatAppid leadsUserWechatAppid
      *
      * @return $this
      */
@@ -1148,7 +1148,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsName
      *
-     * @param string $leadsName leadsName
+     * @param string|mixed $leadsName leadsName
      *
      * @return $this
      */
@@ -1172,7 +1172,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsTelephone
      *
-     * @param string $leadsTelephone leadsTelephone
+     * @param string|mixed $leadsTelephone leadsTelephone
      *
      * @return $this
      */
@@ -1196,7 +1196,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets telephoneLocation
      *
-     * @param string $telephoneLocation telephoneLocation
+     * @param string|mixed $telephoneLocation telephoneLocation
      *
      * @return $this
      */
@@ -1220,7 +1220,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsArea
      *
-     * @param string $leadsArea leadsArea
+     * @param string|mixed $leadsArea leadsArea
      *
      * @return $this
      */
@@ -1244,7 +1244,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsEmail
      *
-     * @param string $leadsEmail leadsEmail
+     * @param string|mixed $leadsEmail leadsEmail
      *
      * @return $this
      */
@@ -1268,7 +1268,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsQq
      *
-     * @param string $leadsQq leadsQq
+     * @param string|mixed $leadsQq leadsQq
      *
      * @return $this
      */
@@ -1292,7 +1292,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsWechat
      *
-     * @param string $leadsWechat leadsWechat
+     * @param string|mixed $leadsWechat leadsWechat
      *
      * @return $this
      */
@@ -1316,7 +1316,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsGender
      *
-     * @param \TencentAds\Model\LeadCluesGenderType $leadsGender leadsGender
+     * @param \TencentAds\Model\LeadCluesGenderType|mixed $leadsGender leadsGender
      *
      * @return $this
      */
@@ -1340,7 +1340,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets nationality
      *
-     * @param string $nationality nationality
+     * @param string|mixed $nationality nationality
      *
      * @return $this
      */
@@ -1364,7 +1364,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets workingYears
      *
-     * @param string $workingYears workingYears
+     * @param string|mixed $workingYears workingYears
      *
      * @return $this
      */
@@ -1388,7 +1388,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets age
      *
-     * @param string $age age
+     * @param string|mixed $age age
      *
      * @return $this
      */
@@ -1412,7 +1412,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets profession
      *
-     * @param string $profession profession
+     * @param string|mixed $profession profession
      *
      * @return $this
      */
@@ -1436,7 +1436,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets idNumber
      *
-     * @param string $idNumber idNumber
+     * @param string|mixed $idNumber idNumber
      *
      * @return $this
      */
@@ -1460,7 +1460,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets address
      *
-     * @param string $address address
+     * @param string|mixed $address address
      *
      * @return $this
      */
@@ -1484,7 +1484,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets bundle
      *
-     * @param string $bundle bundle
+     * @param string|mixed $bundle bundle
      *
      * @return $this
      */
@@ -1508,7 +1508,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets posType
      *
-     * @param int $posType posType
+     * @param int|mixed $posType posType
      *
      * @return $this
      */
@@ -1532,7 +1532,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsCreateTime
      *
-     * @param string $leadsCreateTime leadsCreateTime
+     * @param string|mixed $leadsCreateTime leadsCreateTime
      *
      * @return $this
      */
@@ -1556,7 +1556,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsActionTime
      *
-     * @param string $leadsActionTime leadsActionTime
+     * @param string|mixed $leadsActionTime leadsActionTime
      *
      * @return $this
      */
@@ -1580,7 +1580,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsTags
      *
-     * @param string $leadsTags leadsTags
+     * @param string|mixed $leadsTags leadsTags
      *
      * @return $this
      */
@@ -1604,7 +1604,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets shopName
      *
-     * @param string $shopName shopName
+     * @param string|mixed $shopName shopName
      *
      * @return $this
      */
@@ -1628,7 +1628,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets shopAddress
      *
-     * @param string $shopAddress shopAddress
+     * @param string|mixed $shopAddress shopAddress
      *
      * @return $this
      */

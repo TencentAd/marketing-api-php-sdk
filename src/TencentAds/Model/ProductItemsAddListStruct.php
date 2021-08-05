@@ -224,7 +224,7 @@ class ProductItemsAddListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productId
      *
-     * @param string $productId productId
+     * @param string|mixed $productId productId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class ProductItemsAddListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productOuterId
      *
-     * @param string $productOuterId productOuterId
+     * @param string|mixed $productOuterId productOuterId
      *
      * @return $this
      */

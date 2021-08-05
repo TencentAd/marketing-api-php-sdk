@@ -92,7 +92,7 @@ class PromotedObjectsApi
      *
      * 创建推广目标
      *
-     * @param  \TencentAds\Model\PromotedObjectsAddRequest $data data (required)
+     * @param  \TencentAds\Model\PromotedObjectsAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class PromotedObjectsApi
      *
      * 创建推广目标
      *
-     * @param  \TencentAds\Model\PromotedObjectsAddRequest $data (required)
+     * @param  \TencentAds\Model\PromotedObjectsAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class PromotedObjectsApi
      *
      * 创建推广目标
      *
-     * @param  \TencentAds\Model\PromotedObjectsAddRequest $data (required)
+     * @param  \TencentAds\Model\PromotedObjectsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class PromotedObjectsApi
      *
      * 创建推广目标
      *
-     * @param  \TencentAds\Model\PromotedObjectsAddRequest $data (required)
+     * @param  \TencentAds\Model\PromotedObjectsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class PromotedObjectsApi
     /**
      * Create request for operation 'promotedObjectsAdd'
      *
-     * @param  \TencentAds\Model\PromotedObjectsAddRequest $data (required)
+     * @param  \TencentAds\Model\PromotedObjectsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,11 +374,11 @@ class PromotedObjectsApi
      *
      * 获取推广目标
      *
-     * @param  int $accountId accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -395,11 +395,11 @@ class PromotedObjectsApi
      *
      * 获取推广目标
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -474,11 +474,11 @@ class PromotedObjectsApi
      *
      * 获取推广目标
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -498,11 +498,11 @@ class PromotedObjectsApi
      *
      * 获取推广目标
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -552,11 +552,11 @@ class PromotedObjectsApi
     /**
      * Create request for operation 'promotedObjectsGet'
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -699,7 +699,7 @@ class PromotedObjectsApi
      *
      * 更新推广目标
      *
-     * @param  \TencentAds\Model\PromotedObjectsUpdateRequest $data data (required)
+     * @param  \TencentAds\Model\PromotedObjectsUpdateRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -716,7 +716,7 @@ class PromotedObjectsApi
      *
      * 更新推广目标
      *
-     * @param  \TencentAds\Model\PromotedObjectsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\PromotedObjectsUpdateRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -791,7 +791,7 @@ class PromotedObjectsApi
      *
      * 更新推广目标
      *
-     * @param  \TencentAds\Model\PromotedObjectsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\PromotedObjectsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -811,7 +811,7 @@ class PromotedObjectsApi
      *
      * 更新推广目标
      *
-     * @param  \TencentAds\Model\PromotedObjectsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\PromotedObjectsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -861,7 +861,7 @@ class PromotedObjectsApi
     /**
      * Create request for operation 'promotedObjectsUpdate'
      *
-     * @param  \TencentAds\Model\PromotedObjectsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\PromotedObjectsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

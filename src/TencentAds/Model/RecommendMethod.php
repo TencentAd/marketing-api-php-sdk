@@ -242,7 +242,7 @@ class RecommendMethod implements ModelInterface, ArrayAccess
     /**
      * Sets methodId
      *
-     * @param int $methodId methodId
+     * @param int|mixed $methodId methodId
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class RecommendMethod implements ModelInterface, ArrayAccess
     /**
      * Sets methodName
      *
-     * @param string $methodName methodName
+     * @param string|mixed $methodName methodName
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class RecommendMethod implements ModelInterface, ArrayAccess
     /**
      * Sets methodDescription
      *
-     * @param string $methodDescription methodDescription
+     * @param string|mixed $methodDescription methodDescription
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class RecommendMethod implements ModelInterface, ArrayAccess
     /**
      * Sets subMethodOperators
      *
-     * @param string[] $subMethodOperators subMethodOperators
+     * @param string[]|mixed $subMethodOperators subMethodOperators
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class RecommendMethod implements ModelInterface, ArrayAccess
     /**
      * Sets subMethods
      *
-     * @param \TencentAds\Model\SubMethod[] $subMethods subMethods
+     * @param \TencentAds\Model\SubMethod[]|mixed $subMethods subMethods
      *
      * @return $this
      */

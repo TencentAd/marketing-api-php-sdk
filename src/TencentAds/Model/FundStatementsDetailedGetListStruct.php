@@ -260,7 +260,7 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets balance
      *
-     * @param int $balance balance
+     * @param int|mixed $balance balance
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets time
      *
-     * @param int $time time
+     * @param int|mixed $time time
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets externalBillNo
      *
-     * @param string $externalBillNo externalBillNo
+     * @param string|mixed $externalBillNo externalBillNo
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets tradeTypeExt
      *
-     * @param \TencentAds\Model\TradeTypeExt $tradeTypeExt tradeTypeExt
+     * @param \TencentAds\Model\TradeTypeExt|mixed $tradeTypeExt tradeTypeExt
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets amount
      *
-     * @param int $amount amount
+     * @param int|mixed $amount amount
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class FundStatementsDetailedGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets fundType
      *
-     * @param \TencentAds\Model\AccountTypeMap $fundType fundType
+     * @param \TencentAds\Model\AccountTypeMap|mixed $fundType fundType
      *
      * @return $this
      */

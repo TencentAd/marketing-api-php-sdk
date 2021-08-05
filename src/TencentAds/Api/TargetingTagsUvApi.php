@@ -92,10 +92,10 @@ class TargetingTagsUvApi
      *
      * 获取行为/兴趣/意向标签覆盖人群数
      *
-     * @param  int $accountId accountId (required)
-     * @param  string $categoryType categoryType (required)
-     * @param  int[] $categoryList categoryList (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string|mixed $categoryType categoryType (required)
+     * @param  int[]|mixed $categoryList categoryList (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -112,10 +112,10 @@ class TargetingTagsUvApi
      *
      * 获取行为/兴趣/意向标签覆盖人群数
      *
-     * @param  int $accountId (required)
-     * @param  string $categoryType (required)
-     * @param  int[] $categoryList (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $categoryType (required)
+     * @param  int[]|mixed $categoryList (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -190,10 +190,10 @@ class TargetingTagsUvApi
      *
      * 获取行为/兴趣/意向标签覆盖人群数
      *
-     * @param  int $accountId (required)
-     * @param  string $categoryType (required)
-     * @param  int[] $categoryList (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $categoryType (required)
+     * @param  int[]|mixed $categoryList (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -213,10 +213,10 @@ class TargetingTagsUvApi
      *
      * 获取行为/兴趣/意向标签覆盖人群数
      *
-     * @param  int $accountId (required)
-     * @param  string $categoryType (required)
-     * @param  int[] $categoryList (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $categoryType (required)
+     * @param  int[]|mixed $categoryList (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -266,10 +266,10 @@ class TargetingTagsUvApi
     /**
      * Create request for operation 'targetingTagsUvGet'
      *
-     * @param  int $accountId (required)
-     * @param  string $categoryType (required)
-     * @param  int[] $categoryList (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $categoryType (required)
+     * @param  int[]|mixed $categoryList (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

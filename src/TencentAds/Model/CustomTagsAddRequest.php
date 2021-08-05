@@ -247,7 +247,7 @@ class CustomTagsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -271,7 +271,7 @@ class CustomTagsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets parentTagId
      *
-     * @param int $parentTagId parentTagId
+     * @param int|mixed $parentTagId parentTagId
      *
      * @return $this
      */
@@ -295,7 +295,7 @@ class CustomTagsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param string $name name
+     * @param string|mixed $name name
      *
      * @return $this
      */
@@ -319,7 +319,7 @@ class CustomTagsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -343,7 +343,7 @@ class CustomTagsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets tagCode
      *
-     * @param string $tagCode tagCode
+     * @param string|mixed $tagCode tagCode
      *
      * @return $this
      */
@@ -367,7 +367,7 @@ class CustomTagsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets platform
      *
-     * @param \TencentAds\Model\DataPlatform $platform platform
+     * @param \TencentAds\Model\DataPlatform|mixed $platform platform
      *
      * @return $this
      */

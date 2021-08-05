@@ -224,7 +224,7 @@ class SupportLinkPageType implements ModelInterface, ArrayAccess
     /**
      * Sets required
      *
-     * @param bool $required required
+     * @param bool|mixed $required required
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class SupportLinkPageType implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\SupportLinkPageStruct[] $list list
+     * @param \TencentAds\Model\SupportLinkPageStruct[]|mixed $list list
      *
      * @return $this
      */

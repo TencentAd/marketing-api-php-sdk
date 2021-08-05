@@ -217,7 +217,7 @@ class AdcreativeTemplatePreviewsGetResponseData implements ModelInterface, Array
     /**
      * Sets previewUrl
      *
-     * @param string $previewUrl previewUrl
+     * @param string|mixed $previewUrl previewUrl
      *
      * @return $this
      */

@@ -229,7 +229,7 @@ class CustomAudienceEstimationsGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class CustomAudienceEstimationsGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param string $type type
+     * @param string|mixed $type type
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class CustomAudienceEstimationsGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets audienceSpec
      *
-     * @param \TencentAds\Model\EstimationAudienceSpec $audienceSpec audienceSpec
+     * @param \TencentAds\Model\EstimationAudienceSpec|mixed $audienceSpec audienceSpec
      *
      * @return $this
      */

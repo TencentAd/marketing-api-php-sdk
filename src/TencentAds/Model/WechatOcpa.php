@@ -230,7 +230,7 @@ class WechatOcpa implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObjectType|mixed $promotedObjectType promotedObjectType
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class WechatOcpa implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectId
      *
-     * @param string $promotedObjectId promotedObjectId
+     * @param string|mixed $promotedObjectId promotedObjectId
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class WechatOcpa implements ModelInterface, ArrayAccess
     /**
      * Sets adcreativeTemplateId
      *
-     * @param int $adcreativeTemplateId adcreativeTemplateId
+     * @param int|mixed $adcreativeTemplateId adcreativeTemplateId
      *
      * @return $this
      */

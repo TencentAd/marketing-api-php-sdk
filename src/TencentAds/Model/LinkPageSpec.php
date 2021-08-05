@@ -236,7 +236,7 @@ class LinkPageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets pageId
      *
-     * @param int $pageId pageId
+     * @param int|mixed $pageId pageId
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class LinkPageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets pageUrl
      *
-     * @param string $pageUrl pageUrl
+     * @param string|mixed $pageUrl pageUrl
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class LinkPageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets miniProgramSpec
      *
-     * @param \TencentAds\Model\AdcreativeMiniProgramSpec $miniProgramSpec miniProgramSpec
+     * @param \TencentAds\Model\AdcreativeMiniProgramSpec|mixed $miniProgramSpec miniProgramSpec
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class LinkPageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameSpec
      *
-     * @param \TencentAds\Model\MiniGameSpec $miniGameSpec miniGameSpec
+     * @param \TencentAds\Model\MiniGameSpec|mixed $miniGameSpec miniGameSpec
      *
      * @return $this
      */

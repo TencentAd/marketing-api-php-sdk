@@ -230,7 +230,7 @@ class CompititionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets date
      *
-     * @param string $date date
+     * @param string|mixed $date date
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class CompititionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets hour
      *
-     * @param int $hour hour
+     * @param int|mixed $hour hour
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class CompititionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets compititionScore
      *
-     * @param int $compititionScore compititionScore
+     * @param int|mixed $compititionScore compititionScore
      *
      * @return $this
      */

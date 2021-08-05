@@ -224,7 +224,7 @@ class AdcreativeElementArrayProperty implements ModelInterface, ArrayAccess
     /**
      * Sets minNumber
      *
-     * @param int $minNumber minNumber
+     * @param int|mixed $minNumber minNumber
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class AdcreativeElementArrayProperty implements ModelInterface, ArrayAccess
     /**
      * Sets maxNumber
      *
-     * @param int $maxNumber maxNumber
+     * @param int|mixed $maxNumber maxNumber
      *
      * @return $this
      */

@@ -230,7 +230,7 @@ class CompeteBidDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets score
      *
-     * @param int $score score
+     * @param int|mixed $score score
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class CompeteBidDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets bidAmount
      *
-     * @param int $bidAmount bidAmount
+     * @param int|mixed $bidAmount bidAmount
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class CompeteBidDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets conclusion
      *
-     * @param string $conclusion conclusion
+     * @param string|mixed $conclusion conclusion
      *
      * @return $this
      */

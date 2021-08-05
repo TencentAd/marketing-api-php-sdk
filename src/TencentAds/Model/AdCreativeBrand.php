@@ -230,7 +230,7 @@ class AdCreativeBrand implements ModelInterface, ArrayAccess
     /**
      * Sets brandName
      *
-     * @param string $brandName brandName
+     * @param string|mixed $brandName brandName
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class AdCreativeBrand implements ModelInterface, ArrayAccess
     /**
      * Sets brandImg
      *
-     * @param string $brandImg brandImg
+     * @param string|mixed $brandImg brandImg
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class AdCreativeBrand implements ModelInterface, ArrayAccess
     /**
      * Sets brandDescription
      *
-     * @param string $brandDescription brandDescription
+     * @param string|mixed $brandDescription brandDescription
      *
      * @return $this
      */

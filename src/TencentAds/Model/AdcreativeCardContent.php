@@ -230,7 +230,7 @@ class AdcreativeCardContent implements ModelInterface, ArrayAccess
     /**
      * Sets image
      *
-     * @param string $image image
+     * @param string|mixed $image image
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class AdcreativeCardContent implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class AdcreativeCardContent implements ModelInterface, ArrayAccess
     /**
      * Sets url
      *
-     * @param string $url url
+     * @param string|mixed $url url
      *
      * @return $this
      */

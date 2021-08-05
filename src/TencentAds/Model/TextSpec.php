@@ -254,7 +254,7 @@ class TextSpec implements ModelInterface, ArrayAccess
     /**
      * Sets text
      *
-     * @param string $text text
+     * @param string|mixed $text text
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class TextSpec implements ModelInterface, ArrayAccess
     /**
      * Sets paddingTop
      *
-     * @param int $paddingTop paddingTop
+     * @param int|mixed $paddingTop paddingTop
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class TextSpec implements ModelInterface, ArrayAccess
     /**
      * Sets paddingBottom
      *
-     * @param int $paddingBottom paddingBottom
+     * @param int|mixed $paddingBottom paddingBottom
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class TextSpec implements ModelInterface, ArrayAccess
     /**
      * Sets fontSize
      *
-     * @param int $fontSize fontSize
+     * @param int|mixed $fontSize fontSize
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class TextSpec implements ModelInterface, ArrayAccess
     /**
      * Sets fontColor
      *
-     * @param string $fontColor fontColor
+     * @param string|mixed $fontColor fontColor
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class TextSpec implements ModelInterface, ArrayAccess
     /**
      * Sets textAlignment
      *
-     * @param int $textAlignment textAlignment
+     * @param int|mixed $textAlignment textAlignment
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class TextSpec implements ModelInterface, ArrayAccess
     /**
      * Sets fontStyle
      *
-     * @param int $fontStyle fontStyle
+     * @param int|mixed $fontStyle fontStyle
      *
      * @return $this
      */

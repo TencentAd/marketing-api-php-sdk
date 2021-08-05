@@ -241,7 +241,7 @@ class SplitTestsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class SplitTestsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets splitTestId
      *
-     * @param int $splitTestId splitTestId
+     * @param int|mixed $splitTestId splitTestId
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class SplitTestsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets splitTestStatus
      *
-     * @param \TencentAds\Model\SplitTestStatus $splitTestStatus splitTestStatus
+     * @param \TencentAds\Model\SplitTestStatus|mixed $splitTestStatus splitTestStatus
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class SplitTestsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets splitTestName
      *
-     * @param string $splitTestName splitTestName
+     * @param string|mixed $splitTestName splitTestName
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class SplitTestsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupIdList
      *
-     * @param int[] $adgroupIdList adgroupIdList
+     * @param int[]|mixed $adgroupIdList adgroupIdList
      *
      * @return $this
      */

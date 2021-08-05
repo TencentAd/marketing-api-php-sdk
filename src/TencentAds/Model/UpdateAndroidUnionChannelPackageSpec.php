@@ -230,7 +230,7 @@ class UpdateAndroidUnionChannelPackageSpec implements ModelInterface, ArrayAcces
     /**
      * Sets channelPackageId
      *
-     * @param int $channelPackageId channelPackageId
+     * @param int|mixed $channelPackageId channelPackageId
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class UpdateAndroidUnionChannelPackageSpec implements ModelInterface, ArrayAcces
     /**
      * Sets packageName
      *
-     * @param string $packageName packageName
+     * @param string|mixed $packageName packageName
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class UpdateAndroidUnionChannelPackageSpec implements ModelInterface, ArrayAcces
     /**
      * Sets downloadUrl
      *
-     * @param string $downloadUrl downloadUrl
+     * @param string|mixed $downloadUrl downloadUrl
      *
      * @return $this
      */

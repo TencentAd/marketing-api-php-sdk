@@ -217,7 +217,7 @@ class AdvertiserUpdateDailyBudgetResponseData implements ModelInterface, ArrayAc
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\AdvertiserUpdateDailyBudgetListStruct[] $list list
+     * @param \TencentAds\Model\AdvertiserUpdateDailyBudgetListStruct[]|mixed $list list
      *
      * @return $this
      */

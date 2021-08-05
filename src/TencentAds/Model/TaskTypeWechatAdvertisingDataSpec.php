@@ -224,7 +224,7 @@ class TaskTypeWechatAdvertisingDataSpec implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedTimeRange
      *
-     * @param \TencentAds\Model\LastModifiedTimeRange $lastModifiedTimeRange lastModifiedTimeRange
+     * @param \TencentAds\Model\LastModifiedTimeRange|mixed $lastModifiedTimeRange lastModifiedTimeRange
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class TaskTypeWechatAdvertisingDataSpec implements ModelInterface, ArrayAccess
     /**
      * Sets fields
      *
-     * @param string[] $fields fields
+     * @param string[]|mixed $fields fields
      *
      * @return $this
      */

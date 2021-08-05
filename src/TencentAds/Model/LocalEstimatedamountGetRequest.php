@@ -283,7 +283,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -307,7 +307,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets cityLevel
      *
-     * @param \TencentAds\Model\CityLevel $cityLevel cityLevel
+     * @param \TencentAds\Model\CityLevel|mixed $cityLevel cityLevel
      *
      * @return $this
      */
@@ -331,7 +331,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets packageLevel
      *
-     * @param \TencentAds\Model\PackageLevel $packageLevel packageLevel
+     * @param \TencentAds\Model\PackageLevel|mixed $packageLevel packageLevel
      *
      * @return $this
      */
@@ -355,7 +355,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets poiList
      *
-     * @param string[] $poiList poiList
+     * @param string[]|mixed $poiList poiList
      *
      * @return $this
      */
@@ -379,7 +379,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets optimizationGoal
      *
-     * @param \TencentAds\Model\OptimizationGoal $optimizationGoal optimizationGoal
+     * @param \TencentAds\Model\OptimizationGoal|mixed $optimizationGoal optimizationGoal
      *
      * @return $this
      */
@@ -403,7 +403,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets radius
      *
-     * @param int $radius radius
+     * @param int|mixed $radius radius
      *
      * @return $this
      */
@@ -427,7 +427,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets age
      *
-     * @param \TencentAds\Model\AgeStruct[] $age age
+     * @param \TencentAds\Model\AgeStruct[]|mixed $age age
      *
      * @return $this
      */
@@ -451,7 +451,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets gender
      *
-     * @param string[] $gender gender
+     * @param string[]|mixed $gender gender
      *
      * @return $this
      */
@@ -475,7 +475,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets beginTime
      *
-     * @param string $beginTime beginTime
+     * @param string|mixed $beginTime beginTime
      *
      * @return $this
      */
@@ -499,7 +499,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets endTime
      *
-     * @param string $endTime endTime
+     * @param string|mixed $endTime endTime
      *
      * @return $this
      */
@@ -523,7 +523,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets budget
      *
-     * @param int $budget budget
+     * @param int|mixed $budget budget
      *
      * @return $this
      */
@@ -547,7 +547,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets localBusinessMode
      *
-     * @param \TencentAds\Model\EcoLocalBusinessMode $localBusinessMode localBusinessMode
+     * @param \TencentAds\Model\EcoLocalBusinessMode|mixed $localBusinessMode localBusinessMode
      *
      * @return $this
      */

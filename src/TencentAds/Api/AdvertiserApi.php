@@ -92,7 +92,7 @@ class AdvertiserApi
      *
      * 添加腾讯广告服务商子客
      *
-     * @param  \TencentAds\Model\AdvertiserAddRequest $data data (required)
+     * @param  \TencentAds\Model\AdvertiserAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class AdvertiserApi
      *
      * 添加腾讯广告服务商子客
      *
-     * @param  \TencentAds\Model\AdvertiserAddRequest $data (required)
+     * @param  \TencentAds\Model\AdvertiserAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class AdvertiserApi
      *
      * 添加腾讯广告服务商子客
      *
-     * @param  \TencentAds\Model\AdvertiserAddRequest $data (required)
+     * @param  \TencentAds\Model\AdvertiserAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class AdvertiserApi
      *
      * 添加腾讯广告服务商子客
      *
-     * @param  \TencentAds\Model\AdvertiserAddRequest $data (required)
+     * @param  \TencentAds\Model\AdvertiserAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class AdvertiserApi
     /**
      * Create request for operation 'advertiserAdd'
      *
-     * @param  \TencentAds\Model\AdvertiserAddRequest $data (required)
+     * @param  \TencentAds\Model\AdvertiserAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,11 +374,11 @@ class AdvertiserApi
      *
      * 查询腾讯广告广告主信息
      *
-     * @param  int $accountId accountId (optional)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
-     * @param  string[] $fields fields (optional)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
+     * @param  int|mixed $accountId accountId (optional)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering (optional)
+     * @param  string[]|mixed $fields fields (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -395,11 +395,11 @@ class AdvertiserApi
      *
      * 查询腾讯广告广告主信息
      *
-     * @param  int $accountId (optional)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  string[] $fields (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
+     * @param  int|mixed $accountId (optional)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  string[]|mixed $fields (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -474,11 +474,11 @@ class AdvertiserApi
      *
      * 查询腾讯广告广告主信息
      *
-     * @param  int $accountId (optional)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  string[] $fields (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
+     * @param  int|mixed $accountId (optional)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  string[]|mixed $fields (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -498,11 +498,11 @@ class AdvertiserApi
      *
      * 查询腾讯广告广告主信息
      *
-     * @param  int $accountId (optional)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  string[] $fields (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
+     * @param  int|mixed $accountId (optional)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  string[]|mixed $fields (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -552,11 +552,11 @@ class AdvertiserApi
     /**
      * Create request for operation 'advertiserGet'
      *
-     * @param  int $accountId (optional)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  string[] $fields (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
+     * @param  int|mixed $accountId (optional)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  string[]|mixed $fields (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -693,7 +693,7 @@ class AdvertiserApi
      *
      * 更新腾讯广告广告主信息
      *
-     * @param  \TencentAds\Model\AdvertiserUpdateRequest $data data (required)
+     * @param  \TencentAds\Model\AdvertiserUpdateRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -710,7 +710,7 @@ class AdvertiserApi
      *
      * 更新腾讯广告广告主信息
      *
-     * @param  \TencentAds\Model\AdvertiserUpdateRequest $data (required)
+     * @param  \TencentAds\Model\AdvertiserUpdateRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -785,7 +785,7 @@ class AdvertiserApi
      *
      * 更新腾讯广告广告主信息
      *
-     * @param  \TencentAds\Model\AdvertiserUpdateRequest $data (required)
+     * @param  \TencentAds\Model\AdvertiserUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -805,7 +805,7 @@ class AdvertiserApi
      *
      * 更新腾讯广告广告主信息
      *
-     * @param  \TencentAds\Model\AdvertiserUpdateRequest $data (required)
+     * @param  \TencentAds\Model\AdvertiserUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -855,7 +855,7 @@ class AdvertiserApi
     /**
      * Create request for operation 'advertiserUpdate'
      *
-     * @param  \TencentAds\Model\AdvertiserUpdateRequest $data (required)
+     * @param  \TencentAds\Model\AdvertiserUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -975,7 +975,7 @@ class AdvertiserApi
      *
      * 更新广告主日限额信息
      *
-     * @param  \TencentAds\Model\AdvertiserUpdateDailyBudgetRequest $data data (required)
+     * @param  \TencentAds\Model\AdvertiserUpdateDailyBudgetRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -992,7 +992,7 @@ class AdvertiserApi
      *
      * 更新广告主日限额信息
      *
-     * @param  \TencentAds\Model\AdvertiserUpdateDailyBudgetRequest $data (required)
+     * @param  \TencentAds\Model\AdvertiserUpdateDailyBudgetRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1067,7 +1067,7 @@ class AdvertiserApi
      *
      * 更新广告主日限额信息
      *
-     * @param  \TencentAds\Model\AdvertiserUpdateDailyBudgetRequest $data (required)
+     * @param  \TencentAds\Model\AdvertiserUpdateDailyBudgetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1087,7 +1087,7 @@ class AdvertiserApi
      *
      * 更新广告主日限额信息
      *
-     * @param  \TencentAds\Model\AdvertiserUpdateDailyBudgetRequest $data (required)
+     * @param  \TencentAds\Model\AdvertiserUpdateDailyBudgetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1137,7 +1137,7 @@ class AdvertiserApi
     /**
      * Create request for operation 'advertiserUpdateDailyBudget'
      *
-     * @param  \TencentAds\Model\AdvertiserUpdateDailyBudgetRequest $data (required)
+     * @param  \TencentAds\Model\AdvertiserUpdateDailyBudgetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -92,7 +92,7 @@ class TargetingsShareApi
      *
      * 分享定向
      *
-     * @param  \TencentAds\Model\TargetingsShareAddRequest $data data (required)
+     * @param  \TencentAds\Model\TargetingsShareAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class TargetingsShareApi
      *
      * 分享定向
      *
-     * @param  \TencentAds\Model\TargetingsShareAddRequest $data (required)
+     * @param  \TencentAds\Model\TargetingsShareAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class TargetingsShareApi
      *
      * 分享定向
      *
-     * @param  \TencentAds\Model\TargetingsShareAddRequest $data (required)
+     * @param  \TencentAds\Model\TargetingsShareAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class TargetingsShareApi
      *
      * 分享定向
      *
-     * @param  \TencentAds\Model\TargetingsShareAddRequest $data (required)
+     * @param  \TencentAds\Model\TargetingsShareAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class TargetingsShareApi
     /**
      * Create request for operation 'targetingsShareAdd'
      *
-     * @param  \TencentAds\Model\TargetingsShareAddRequest $data (required)
+     * @param  \TencentAds\Model\TargetingsShareAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,11 +374,11 @@ class TargetingsShareApi
      *
      * 获取定向分享记录
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $targetingId targetingId (required)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $targetingId targetingId (required)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -395,11 +395,11 @@ class TargetingsShareApi
      *
      * 获取定向分享记录
      *
-     * @param  int $accountId (required)
-     * @param  int $targetingId (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $targetingId (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -474,11 +474,11 @@ class TargetingsShareApi
      *
      * 获取定向分享记录
      *
-     * @param  int $accountId (required)
-     * @param  int $targetingId (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $targetingId (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -498,11 +498,11 @@ class TargetingsShareApi
      *
      * 获取定向分享记录
      *
-     * @param  int $accountId (required)
-     * @param  int $targetingId (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $targetingId (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -552,11 +552,11 @@ class TargetingsShareApi
     /**
      * Create request for operation 'targetingsShareGet'
      *
-     * @param  int $accountId (required)
-     * @param  int $targetingId (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $targetingId (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

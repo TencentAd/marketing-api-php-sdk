@@ -278,7 +278,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     /**
      * Sets styleType
      *
-     * @param int $styleType styleType
+     * @param int|mixed $styleType styleType
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     /**
      * Sets imageId
      *
-     * @param string $imageId imageId
+     * @param string|mixed $imageId imageId
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     /**
      * Sets title
      *
-     * @param string $title title
+     * @param string|mixed $title title
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     /**
      * Sets titleColor
      *
-     * @param string $titleColor titleColor
+     * @param string|mixed $titleColor titleColor
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     /**
      * Sets desc
      *
-     * @param string $desc desc
+     * @param string|mixed $desc desc
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     /**
      * Sets descColor
      *
-     * @param string $descColor descColor
+     * @param string|mixed $descColor descColor
      *
      * @return $this
      */
@@ -422,7 +422,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     /**
      * Sets appearType
      *
-     * @param int $appearType appearType
+     * @param int|mixed $appearType appearType
      *
      * @return $this
      */
@@ -446,7 +446,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     /**
      * Sets disappearType
      *
-     * @param int $disappearType disappearType
+     * @param int|mixed $disappearType disappearType
      *
      * @return $this
      */
@@ -470,7 +470,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     /**
      * Sets forbidPageList
      *
-     * @param int[] $forbidPageList forbidPageList
+     * @param int[]|mixed $forbidPageList forbidPageList
      *
      * @return $this
      */
@@ -494,7 +494,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     /**
      * Sets elementType
      *
-     * @param \TencentAds\Model\CanvasFloatElementType $elementType elementType
+     * @param \TencentAds\Model\CanvasFloatElementType|mixed $elementType elementType
      *
      * @return $this
      */
@@ -518,7 +518,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     /**
      * Sets appDownloadSpec
      *
-     * @param \TencentAds\Model\FloatAppDownloadSpec $appDownloadSpec appDownloadSpec
+     * @param \TencentAds\Model\FloatAppDownloadSpec|mixed $appDownloadSpec appDownloadSpec
      *
      * @return $this
      */

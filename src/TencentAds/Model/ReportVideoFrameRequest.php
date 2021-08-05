@@ -235,7 +235,7 @@ class ReportVideoFrameRequest implements ModelInterface, ArrayAccess
     /**
      * Sets filtering
      *
-     * @param \TencentAds\Model\FilteringStruct[] $filtering filtering
+     * @param \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering
      *
      * @return $this
      */
@@ -259,7 +259,7 @@ class ReportVideoFrameRequest implements ModelInterface, ArrayAccess
     /**
      * Sets dateRange
      *
-     * @param \TencentAds\Model\DateRange $dateRange dateRange
+     * @param \TencentAds\Model\DateRange|mixed $dateRange dateRange
      *
      * @return $this
      */
@@ -283,7 +283,7 @@ class ReportVideoFrameRequest implements ModelInterface, ArrayAccess
     /**
      * Sets groupBy
      *
-     * @param string[] $groupBy groupBy
+     * @param string[]|mixed $groupBy groupBy
      *
      * @return $this
      */
@@ -307,7 +307,7 @@ class ReportVideoFrameRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */

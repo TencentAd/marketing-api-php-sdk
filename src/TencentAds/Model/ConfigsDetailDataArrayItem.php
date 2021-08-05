@@ -218,7 +218,7 @@ class ConfigsDetailDataArrayItem implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param string $name name
+     * @param string|mixed $name name
      *
      * @return $this
      */

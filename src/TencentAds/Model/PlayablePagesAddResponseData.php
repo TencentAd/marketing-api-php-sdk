@@ -229,7 +229,7 @@ class PlayablePagesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets landingPageId
      *
-     * @param string $landingPageId landingPageId
+     * @param string|mixed $landingPageId landingPageId
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class PlayablePagesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets playablePageId
      *
-     * @param string $playablePageId playablePageId
+     * @param string|mixed $playablePageId playablePageId
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class PlayablePagesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets playablePageMaterialId
      *
-     * @param string $playablePageMaterialId playablePageMaterialId
+     * @param string|mixed $playablePageMaterialId playablePageMaterialId
      *
      * @return $this
      */

@@ -92,7 +92,7 @@ class AssetPermissionsApi
      *
      * 资产权限授予
      *
-     * @param  \TencentAds\Model\AssetPermissionsAddRequest $data data (required)
+     * @param  \TencentAds\Model\AssetPermissionsAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class AssetPermissionsApi
      *
      * 资产权限授予
      *
-     * @param  \TencentAds\Model\AssetPermissionsAddRequest $data (required)
+     * @param  \TencentAds\Model\AssetPermissionsAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class AssetPermissionsApi
      *
      * 资产权限授予
      *
-     * @param  \TencentAds\Model\AssetPermissionsAddRequest $data (required)
+     * @param  \TencentAds\Model\AssetPermissionsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class AssetPermissionsApi
      *
      * 资产权限授予
      *
-     * @param  \TencentAds\Model\AssetPermissionsAddRequest $data (required)
+     * @param  \TencentAds\Model\AssetPermissionsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class AssetPermissionsApi
     /**
      * Create request for operation 'assetPermissionsAdd'
      *
-     * @param  \TencentAds\Model\AssetPermissionsAddRequest $data (required)
+     * @param  \TencentAds\Model\AssetPermissionsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,7 +374,7 @@ class AssetPermissionsApi
      *
      * 资产权限回收
      *
-     * @param  \TencentAds\Model\AssetPermissionsDeleteRequest $data data (required)
+     * @param  \TencentAds\Model\AssetPermissionsDeleteRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -391,7 +391,7 @@ class AssetPermissionsApi
      *
      * 资产权限回收
      *
-     * @param  \TencentAds\Model\AssetPermissionsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\AssetPermissionsDeleteRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -466,7 +466,7 @@ class AssetPermissionsApi
      *
      * 资产权限回收
      *
-     * @param  \TencentAds\Model\AssetPermissionsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\AssetPermissionsDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -486,7 +486,7 @@ class AssetPermissionsApi
      *
      * 资产权限回收
      *
-     * @param  \TencentAds\Model\AssetPermissionsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\AssetPermissionsDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -536,7 +536,7 @@ class AssetPermissionsApi
     /**
      * Create request for operation 'assetPermissionsDelete'
      *
-     * @param  \TencentAds\Model\AssetPermissionsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\AssetPermissionsDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -259,7 +259,7 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -283,7 +283,7 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \TencentAds\Model\AmUserActionSetType $type type
+     * @param \TencentAds\Model\AmUserActionSetType|mixed $type type
      *
      * @return $this
      */
@@ -307,7 +307,7 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets mobileAppId
      *
-     * @param int $mobileAppId mobileAppId
+     * @param int|mixed $mobileAppId mobileAppId
      *
      * @return $this
      */
@@ -331,7 +331,7 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAppId
      *
-     * @param string $wechatAppId wechatAppId
+     * @param string|mixed $wechatAppId wechatAppId
      *
      * @return $this
      */
@@ -355,7 +355,7 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param string $name name
+     * @param string|mixed $name name
      *
      * @return $this
      */
@@ -379,7 +379,7 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -403,7 +403,7 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets usages
      *
-     * @param string[] $usages usages
+     * @param string[]|mixed $usages usages
      *
      * @return $this
      */
@@ -427,7 +427,7 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets enableConversionClaim
      *
-     * @param bool $enableConversionClaim enableConversionClaim
+     * @param bool|mixed $enableConversionClaim enableConversionClaim
      *
      * @return $this
      */

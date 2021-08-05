@@ -230,7 +230,7 @@ class BusinessManagerRelationsGetListStruct implements ModelInterface, ArrayAcce
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class BusinessManagerRelationsGetListStruct implements ModelInterface, ArrayAcce
     /**
      * Sets corporationName
      *
-     * @param string $corporationName corporationName
+     * @param string|mixed $corporationName corporationName
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class BusinessManagerRelationsGetListStruct implements ModelInterface, ArrayAcce
     /**
      * Sets accountType
      *
-     * @param \TencentAds\Model\BMAccountType $accountType accountType
+     * @param \TencentAds\Model\BMAccountType|mixed $accountType accountType
      *
      * @return $this
      */

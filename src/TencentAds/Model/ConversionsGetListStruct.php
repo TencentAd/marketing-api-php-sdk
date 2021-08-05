@@ -308,7 +308,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets conversionId
      *
-     * @param int $conversionId conversionId
+     * @param int|mixed $conversionId conversionId
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets conversionName
      *
-     * @param string $conversionName conversionName
+     * @param string|mixed $conversionName conversionName
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accessType
      *
-     * @param \TencentAds\Model\AccessType $accessType accessType
+     * @param \TencentAds\Model\AccessType|mixed $accessType accessType
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets claimType
      *
-     * @param \TencentAds\Model\ClaimType $claimType claimType
+     * @param \TencentAds\Model\ClaimType|mixed $claimType claimType
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets feedbackUrl
      *
-     * @param string $feedbackUrl feedbackUrl
+     * @param string|mixed $feedbackUrl feedbackUrl
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets selfAttributed
      *
-     * @param bool $selfAttributed selfAttributed
+     * @param bool|mixed $selfAttributed selfAttributed
      *
      * @return $this
      */
@@ -452,7 +452,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets optimizationGoal
      *
-     * @param \TencentAds\Model\IntOptimizationGoal $optimizationGoal optimizationGoal
+     * @param \TencentAds\Model\IntOptimizationGoal|mixed $optimizationGoal optimizationGoal
      *
      * @return $this
      */
@@ -476,7 +476,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets deepBehaviorOptimizationGoal
      *
-     * @param \TencentAds\Model\IntOptimizationGoal $deepBehaviorOptimizationGoal deepBehaviorOptimizationGoal
+     * @param \TencentAds\Model\IntOptimizationGoal|mixed $deepBehaviorOptimizationGoal deepBehaviorOptimizationGoal
      *
      * @return $this
      */
@@ -500,7 +500,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets deepWorthOptimizationGoal
      *
-     * @param \TencentAds\Model\ConversionOptimizationGoal $deepWorthOptimizationGoal deepWorthOptimizationGoal
+     * @param \TencentAds\Model\ConversionOptimizationGoal|mixed $deepWorthOptimizationGoal deepWorthOptimizationGoal
      *
      * @return $this
      */
@@ -524,7 +524,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets userActionSetId
      *
-     * @param int $userActionSetId userActionSetId
+     * @param int|mixed $userActionSetId userActionSetId
      *
      * @return $this
      */
@@ -548,7 +548,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets userActionSetKey
      *
-     * @param string $userActionSetKey userActionSetKey
+     * @param string|mixed $userActionSetKey userActionSetKey
      *
      * @return $this
      */
@@ -572,7 +572,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets siteSetEnable
      *
-     * @param bool $siteSetEnable siteSetEnable
+     * @param bool|mixed $siteSetEnable siteSetEnable
      *
      * @return $this
      */
@@ -596,7 +596,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets isDeleted
      *
-     * @param bool $isDeleted isDeleted
+     * @param bool|mixed $isDeleted isDeleted
      *
      * @return $this
      */
@@ -620,7 +620,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accessStatus
      *
-     * @param \TencentAds\Model\AccessStatus $accessStatus accessStatus
+     * @param \TencentAds\Model\AccessStatus|mixed $accessStatus accessStatus
      *
      * @return $this
      */
@@ -644,7 +644,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets createSourceType
      *
-     * @param \TencentAds\Model\CreateSourceType $createSourceType createSourceType
+     * @param \TencentAds\Model\CreateSourceType|mixed $createSourceType createSourceType
      *
      * @return $this
      */
@@ -668,7 +668,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appAndroidChannelPackageId
      *
-     * @param string $appAndroidChannelPackageId appAndroidChannelPackageId
+     * @param string|mixed $appAndroidChannelPackageId appAndroidChannelPackageId
      *
      * @return $this
      */

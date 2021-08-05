@@ -230,7 +230,7 @@ class TextRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets minLength
      *
-     * @param int $minLength minLength
+     * @param int|mixed $minLength minLength
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class TextRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets maxLength
      *
-     * @param int $maxLength maxLength
+     * @param int|mixed $maxLength maxLength
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class TextRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets textPattern
      *
-     * @param string $textPattern textPattern
+     * @param string|mixed $textPattern textPattern
      *
      * @return $this
      */

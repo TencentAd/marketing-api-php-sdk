@@ -218,7 +218,7 @@ class GrantBusinessPermission implements ModelInterface, ArrayAccess
     /**
      * Sets grantPermissionTypeList
      *
-     * @param string[] $grantPermissionTypeList grantPermissionTypeList
+     * @param string[]|mixed $grantPermissionTypeList grantPermissionTypeList
      *
      * @return $this
      */

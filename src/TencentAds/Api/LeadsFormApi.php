@@ -92,7 +92,7 @@ class LeadsFormApi
      *
      * 创建表单组件
      *
-     * @param  \TencentAds\Model\LeadsFormAddRequest $data data (required)
+     * @param  \TencentAds\Model\LeadsFormAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class LeadsFormApi
      *
      * 创建表单组件
      *
-     * @param  \TencentAds\Model\LeadsFormAddRequest $data (required)
+     * @param  \TencentAds\Model\LeadsFormAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class LeadsFormApi
      *
      * 创建表单组件
      *
-     * @param  \TencentAds\Model\LeadsFormAddRequest $data (required)
+     * @param  \TencentAds\Model\LeadsFormAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class LeadsFormApi
      *
      * 创建表单组件
      *
-     * @param  \TencentAds\Model\LeadsFormAddRequest $data (required)
+     * @param  \TencentAds\Model\LeadsFormAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class LeadsFormApi
     /**
      * Create request for operation 'leadsFormAdd'
      *
-     * @param  \TencentAds\Model\LeadsFormAddRequest $data (required)
+     * @param  \TencentAds\Model\LeadsFormAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,9 +374,9 @@ class LeadsFormApi
      *
      * 获取表单组件详情
      *
-     * @param  int $accountId accountId (required)
-     * @param  string $componentId componentId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string|mixed $componentId componentId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -393,9 +393,9 @@ class LeadsFormApi
      *
      * 获取表单组件详情
      *
-     * @param  int $accountId (required)
-     * @param  string $componentId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $componentId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -470,9 +470,9 @@ class LeadsFormApi
      *
      * 获取表单组件详情
      *
-     * @param  int $accountId (required)
-     * @param  string $componentId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $componentId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -492,9 +492,9 @@ class LeadsFormApi
      *
      * 获取表单组件详情
      *
-     * @param  int $accountId (required)
-     * @param  string $componentId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $componentId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -544,9 +544,9 @@ class LeadsFormApi
     /**
      * Create request for operation 'leadsFormGet'
      *
-     * @param  int $accountId (required)
-     * @param  string $componentId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $componentId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

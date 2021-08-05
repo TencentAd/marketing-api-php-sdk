@@ -218,7 +218,7 @@ class AsyncReportsGetData implements ModelInterface, ArrayAccess
     /**
      * Sets fileInfoList
      *
-     * @param \TencentAds\Model\AsyncReportsGetFileInfo[] $fileInfoList fileInfoList
+     * @param \TencentAds\Model\AsyncReportsGetFileInfo[]|mixed $fileInfoList fileInfoList
      *
      * @return $this
      */

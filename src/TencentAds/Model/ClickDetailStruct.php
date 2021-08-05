@@ -230,7 +230,7 @@ class ClickDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets effectData
      *
-     * @param \TencentAds\Model\ClickEffectDataStruct $effectData effectData
+     * @param \TencentAds\Model\ClickEffectDataStruct|mixed $effectData effectData
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class ClickDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets effectDataTrends
      *
-     * @param \TencentAds\Model\ClickEffectDataTrendsItem[] $effectDataTrends effectDataTrends
+     * @param \TencentAds\Model\ClickEffectDataTrendsItem[]|mixed $effectDataTrends effectDataTrends
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class ClickDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets targetingLabelContribution
      *
-     * @param \TencentAds\Model\ClickTargetingLabelContributionStruct $targetingLabelContribution targetingLabelContribution
+     * @param \TencentAds\Model\ClickTargetingLabelContributionStruct|mixed $targetingLabelContribution targetingLabelContribution
      *
      * @return $this
      */

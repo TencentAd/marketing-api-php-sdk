@@ -92,7 +92,7 @@ class LocalEndadsmanuallyApi
      *
      * 手动结束广告
      *
-     * @param  \TencentAds\Model\LocalEndadsmanuallyAddRequest $data data (required)
+     * @param  \TencentAds\Model\LocalEndadsmanuallyAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class LocalEndadsmanuallyApi
      *
      * 手动结束广告
      *
-     * @param  \TencentAds\Model\LocalEndadsmanuallyAddRequest $data (required)
+     * @param  \TencentAds\Model\LocalEndadsmanuallyAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class LocalEndadsmanuallyApi
      *
      * 手动结束广告
      *
-     * @param  \TencentAds\Model\LocalEndadsmanuallyAddRequest $data (required)
+     * @param  \TencentAds\Model\LocalEndadsmanuallyAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class LocalEndadsmanuallyApi
      *
      * 手动结束广告
      *
-     * @param  \TencentAds\Model\LocalEndadsmanuallyAddRequest $data (required)
+     * @param  \TencentAds\Model\LocalEndadsmanuallyAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class LocalEndadsmanuallyApi
     /**
      * Create request for operation 'localEndadsmanuallyAdd'
      *
-     * @param  \TencentAds\Model\LocalEndadsmanuallyAddRequest $data (required)
+     * @param  \TencentAds\Model\LocalEndadsmanuallyAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -278,7 +278,7 @@ class ProductTypeDianpingShop implements ModelInterface, ArrayAccess
     /**
      * Sets shopName
      *
-     * @param string $shopName shopName
+     * @param string|mixed $shopName shopName
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class ProductTypeDianpingShop implements ModelInterface, ArrayAccess
     /**
      * Sets address
      *
-     * @param string $address address
+     * @param string|mixed $address address
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class ProductTypeDianpingShop implements ModelInterface, ArrayAccess
     /**
      * Sets city
      *
-     * @param string $city city
+     * @param string|mixed $city city
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class ProductTypeDianpingShop implements ModelInterface, ArrayAccess
     /**
      * Sets district
      *
-     * @param string $district district
+     * @param string|mixed $district district
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class ProductTypeDianpingShop implements ModelInterface, ArrayAccess
     /**
      * Sets businessArea
      *
-     * @param string $businessArea businessArea
+     * @param string|mixed $businessArea businessArea
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class ProductTypeDianpingShop implements ModelInterface, ArrayAccess
     /**
      * Sets streetNumber
      *
-     * @param string $streetNumber streetNumber
+     * @param string|mixed $streetNumber streetNumber
      *
      * @return $this
      */
@@ -422,7 +422,7 @@ class ProductTypeDianpingShop implements ModelInterface, ArrayAccess
     /**
      * Sets longitude
      *
-     * @param double $longitude longitude
+     * @param double|mixed $longitude longitude
      *
      * @return $this
      */
@@ -446,7 +446,7 @@ class ProductTypeDianpingShop implements ModelInterface, ArrayAccess
     /**
      * Sets latitude
      *
-     * @param double $latitude latitude
+     * @param double|mixed $latitude latitude
      *
      * @return $this
      */
@@ -470,7 +470,7 @@ class ProductTypeDianpingShop implements ModelInterface, ArrayAccess
     /**
      * Sets shopDetailUrl
      *
-     * @param string $shopDetailUrl shopDetailUrl
+     * @param string|mixed $shopDetailUrl shopDetailUrl
      *
      * @return $this
      */
@@ -494,7 +494,7 @@ class ProductTypeDianpingShop implements ModelInterface, ArrayAccess
     /**
      * Sets ratings
      *
-     * @param int $ratings ratings
+     * @param int|mixed $ratings ratings
      *
      * @return $this
      */
@@ -518,7 +518,7 @@ class ProductTypeDianpingShop implements ModelInterface, ArrayAccess
     /**
      * Sets averagePrice
      *
-     * @param int $averagePrice averagePrice
+     * @param int|mixed $averagePrice averagePrice
      *
      * @return $this
      */

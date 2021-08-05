@@ -242,7 +242,7 @@ class AdCreativeGetSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adcreativeId
      *
-     * @param int $adcreativeId adcreativeId
+     * @param int|mixed $adcreativeId adcreativeId
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class AdCreativeGetSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adcreativeName
      *
-     * @param string $adcreativeName adcreativeName
+     * @param string|mixed $adcreativeName adcreativeName
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class AdCreativeGetSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adcreativeElements
      *
-     * @param \TencentAds\Model\DpAdcreativeCreativeElementsMp $adcreativeElements adcreativeElements
+     * @param \TencentAds\Model\DpAdcreativeCreativeElementsMp|mixed $adcreativeElements adcreativeElements
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class AdCreativeGetSpec implements ModelInterface, ArrayAccess
     /**
      * Sets pageType
      *
-     * @param \TencentAds\Model\DestinationType $pageType pageType
+     * @param \TencentAds\Model\DestinationType|mixed $pageType pageType
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class AdCreativeGetSpec implements ModelInterface, ArrayAccess
     /**
      * Sets pageSpec
      *
-     * @param \TencentAds\Model\DpPageSpec $pageSpec pageSpec
+     * @param \TencentAds\Model\DpPageSpec|mixed $pageSpec pageSpec
      *
      * @return $this
      */

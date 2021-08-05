@@ -224,7 +224,7 @@ class ElementSwipe implements ModelInterface, ArrayAccess
     /**
      * Sets jumpUrl
      *
-     * @param string $jumpUrl jumpUrl
+     * @param string|mixed $jumpUrl jumpUrl
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class ElementSwipe implements ModelInterface, ArrayAccess
     /**
      * Sets swipeText
      *
-     * @param string $swipeText swipeText
+     * @param string|mixed $swipeText swipeText
      *
      * @return $this
      */

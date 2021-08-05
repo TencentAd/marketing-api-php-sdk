@@ -92,7 +92,7 @@ class XijingPageByComponentsApi
      *
      * 蹊径-基于组件创建落地页
      *
-     * @param  \TencentAds\Model\XijingPageByComponentsAddRequest $data data (required)
+     * @param  \TencentAds\Model\XijingPageByComponentsAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class XijingPageByComponentsApi
      *
      * 蹊径-基于组件创建落地页
      *
-     * @param  \TencentAds\Model\XijingPageByComponentsAddRequest $data (required)
+     * @param  \TencentAds\Model\XijingPageByComponentsAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class XijingPageByComponentsApi
      *
      * 蹊径-基于组件创建落地页
      *
-     * @param  \TencentAds\Model\XijingPageByComponentsAddRequest $data (required)
+     * @param  \TencentAds\Model\XijingPageByComponentsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class XijingPageByComponentsApi
      *
      * 蹊径-基于组件创建落地页
      *
-     * @param  \TencentAds\Model\XijingPageByComponentsAddRequest $data (required)
+     * @param  \TencentAds\Model\XijingPageByComponentsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class XijingPageByComponentsApi
     /**
      * Create request for operation 'xijingPageByComponentsAdd'
      *
-     * @param  \TencentAds\Model\XijingPageByComponentsAddRequest $data (required)
+     * @param  \TencentAds\Model\XijingPageByComponentsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

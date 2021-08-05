@@ -254,7 +254,7 @@ class AuthorizerStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountUin
      *
-     * @param int $accountUin accountUin
+     * @param int|mixed $accountUin accountUin
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class AuthorizerStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class AuthorizerStruct implements ModelInterface, ArrayAccess
     /**
      * Sets scopeList
      *
-     * @param string[] $scopeList scopeList
+     * @param string[]|mixed $scopeList scopeList
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class AuthorizerStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAccountId
      *
-     * @param string $wechatAccountId wechatAccountId
+     * @param string|mixed $wechatAccountId wechatAccountId
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class AuthorizerStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountRoleType
      *
-     * @param \TencentAds\Model\AccountRoleType $accountRoleType accountRoleType
+     * @param \TencentAds\Model\AccountRoleType|mixed $accountRoleType accountRoleType
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class AuthorizerStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountType
      *
-     * @param \TencentAds\Model\AccountType $accountType accountType
+     * @param \TencentAds\Model\AccountType|mixed $accountType accountType
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class AuthorizerStruct implements ModelInterface, ArrayAccess
     /**
      * Sets roleType
      *
-     * @param \TencentAds\Model\RoleType $roleType roleType
+     * @param \TencentAds\Model\RoleType|mixed $roleType roleType
      *
      * @return $this
      */

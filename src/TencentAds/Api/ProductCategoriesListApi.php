@@ -92,14 +92,14 @@ class ProductCategoriesListApi
      *
      * 获取商品类目
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $productCatalogId productCatalogId (required)
-     * @param  int $page page (required)
-     * @param  int $pageSize pageSize (required)
-     * @param  int $level level (optional)
-     * @param  int $categoryId categoryId (optional)
-     * @param  string $categoryName categoryName (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $productCatalogId productCatalogId (required)
+     * @param  int|mixed $page page (required)
+     * @param  int|mixed $pageSize pageSize (required)
+     * @param  int|mixed $level level (optional)
+     * @param  int|mixed $categoryId categoryId (optional)
+     * @param  string|mixed $categoryName categoryName (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -116,14 +116,14 @@ class ProductCategoriesListApi
      *
      * 获取商品类目
      *
-     * @param  int $accountId (required)
-     * @param  int $productCatalogId (required)
-     * @param  int $page (required)
-     * @param  int $pageSize (required)
-     * @param  int $level (optional)
-     * @param  int $categoryId (optional)
-     * @param  string $categoryName (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  int|mixed $page (required)
+     * @param  int|mixed $pageSize (required)
+     * @param  int|mixed $level (optional)
+     * @param  int|mixed $categoryId (optional)
+     * @param  string|mixed $categoryName (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -198,14 +198,14 @@ class ProductCategoriesListApi
      *
      * 获取商品类目
      *
-     * @param  int $accountId (required)
-     * @param  int $productCatalogId (required)
-     * @param  int $page (required)
-     * @param  int $pageSize (required)
-     * @param  int $level (optional)
-     * @param  int $categoryId (optional)
-     * @param  string $categoryName (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  int|mixed $page (required)
+     * @param  int|mixed $pageSize (required)
+     * @param  int|mixed $level (optional)
+     * @param  int|mixed $categoryId (optional)
+     * @param  string|mixed $categoryName (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -225,14 +225,14 @@ class ProductCategoriesListApi
      *
      * 获取商品类目
      *
-     * @param  int $accountId (required)
-     * @param  int $productCatalogId (required)
-     * @param  int $page (required)
-     * @param  int $pageSize (required)
-     * @param  int $level (optional)
-     * @param  int $categoryId (optional)
-     * @param  string $categoryName (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  int|mixed $page (required)
+     * @param  int|mixed $pageSize (required)
+     * @param  int|mixed $level (optional)
+     * @param  int|mixed $categoryId (optional)
+     * @param  string|mixed $categoryName (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -282,14 +282,14 @@ class ProductCategoriesListApi
     /**
      * Create request for operation 'productCategoriesListGet'
      *
-     * @param  int $accountId (required)
-     * @param  int $productCatalogId (required)
-     * @param  int $page (required)
-     * @param  int $pageSize (required)
-     * @param  int $level (optional)
-     * @param  int $categoryId (optional)
-     * @param  string $categoryName (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  int|mixed $page (required)
+     * @param  int|mixed $pageSize (required)
+     * @param  int|mixed $level (optional)
+     * @param  int|mixed $categoryId (optional)
+     * @param  string|mixed $categoryName (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

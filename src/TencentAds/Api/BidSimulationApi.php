@@ -92,7 +92,7 @@ class BidSimulationApi
      *
      * 获取出价模拟信息
      *
-     * @param  \TencentAds\Model\BidSimulationGetRequest $data data (required)
+     * @param  \TencentAds\Model\BidSimulationGetRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class BidSimulationApi
      *
      * 获取出价模拟信息
      *
-     * @param  \TencentAds\Model\BidSimulationGetRequest $data (required)
+     * @param  \TencentAds\Model\BidSimulationGetRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class BidSimulationApi
      *
      * 获取出价模拟信息
      *
-     * @param  \TencentAds\Model\BidSimulationGetRequest $data (required)
+     * @param  \TencentAds\Model\BidSimulationGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class BidSimulationApi
      *
      * 获取出价模拟信息
      *
-     * @param  \TencentAds\Model\BidSimulationGetRequest $data (required)
+     * @param  \TencentAds\Model\BidSimulationGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class BidSimulationApi
     /**
      * Create request for operation 'bidSimulationGet'
      *
-     * @param  \TencentAds\Model\BidSimulationGetRequest $data (required)
+     * @param  \TencentAds\Model\BidSimulationGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

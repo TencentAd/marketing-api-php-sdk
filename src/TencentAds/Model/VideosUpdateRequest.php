@@ -229,7 +229,7 @@ class VideosUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class VideosUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets videoId
      *
-     * @param int $videoId videoId
+     * @param int|mixed $videoId videoId
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class VideosUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */

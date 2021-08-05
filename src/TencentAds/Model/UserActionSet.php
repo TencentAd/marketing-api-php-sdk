@@ -278,7 +278,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Sets userActionSetId
      *
-     * @param int $userActionSetId userActionSetId
+     * @param int|mixed $userActionSetId userActionSetId
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \TencentAds\Model\AmUserActionSetType $type type
+     * @param \TencentAds\Model\AmUserActionSetType|mixed $type type
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Sets mobileAppId
      *
-     * @param int $mobileAppId mobileAppId
+     * @param int|mixed $mobileAppId mobileAppId
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param string $name name
+     * @param string|mixed $name name
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Sets activateStatus
      *
-     * @param bool $activateStatus activateStatus
+     * @param bool|mixed $activateStatus activateStatus
      *
      * @return $this
      */
@@ -422,7 +422,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param string $createdTime createdTime
+     * @param string|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -446,7 +446,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Sets accessWay
      *
-     * @param \TencentAds\Model\ActionSetAccessWayType $accessWay accessWay
+     * @param \TencentAds\Model\ActionSetAccessWayType|mixed $accessWay accessWay
      *
      * @return $this
      */
@@ -470,7 +470,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Sets usages
      *
-     * @param string[] $usages usages
+     * @param string[]|mixed $usages usages
      *
      * @return $this
      */
@@ -494,7 +494,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Sets enableConversionClaim
      *
-     * @param bool $enableConversionClaim enableConversionClaim
+     * @param bool|mixed $enableConversionClaim enableConversionClaim
      *
      * @return $this
      */
@@ -518,7 +518,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Sets permission
      *
-     * @param \TencentAds\Model\Permission $permission permission
+     * @param \TencentAds\Model\Permission|mixed $permission permission
      *
      * @return $this
      */

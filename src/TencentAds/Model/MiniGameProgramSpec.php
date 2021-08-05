@@ -230,7 +230,7 @@ class MiniGameProgramSpec implements ModelInterface, ArrayAccess
     /**
      * Sets title
      *
-     * @param string $title title
+     * @param string|mixed $title title
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class MiniGameProgramSpec implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameProgramId
      *
-     * @param string $miniGameProgramId miniGameProgramId
+     * @param string|mixed $miniGameProgramId miniGameProgramId
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class MiniGameProgramSpec implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameProgramPath
      *
-     * @param string $miniGameProgramPath miniGameProgramPath
+     * @param string|mixed $miniGameProgramPath miniGameProgramPath
      *
      * @return $this
      */

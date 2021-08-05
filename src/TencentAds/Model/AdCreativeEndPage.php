@@ -224,7 +224,7 @@ class AdCreativeEndPage implements ModelInterface, ArrayAccess
     /**
      * Sets endPageType
      *
-     * @param string $endPageType endPageType
+     * @param string|mixed $endPageType endPageType
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class AdCreativeEndPage implements ModelInterface, ArrayAccess
     /**
      * Sets endPageDesc
      *
-     * @param string $endPageDesc endPageDesc
+     * @param string|mixed $endPageDesc endPageDesc
      *
      * @return $this
      */

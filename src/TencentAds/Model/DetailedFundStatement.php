@@ -302,7 +302,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Sets tradeType
      *
-     * @param \TencentAds\Model\WechatAccountTradeType $tradeType tradeType
+     * @param \TencentAds\Model\WechatAccountTradeType|mixed $tradeType tradeType
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Sets time
      *
-     * @param int $time time
+     * @param int|mixed $time time
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Sets amount
      *
-     * @param int $amount amount
+     * @param int|mixed $amount amount
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAccountId
      *
-     * @param string $wechatAccountId wechatAccountId
+     * @param string|mixed $wechatAccountId wechatAccountId
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAccountName
      *
-     * @param string $wechatAccountName wechatAccountName
+     * @param string|mixed $wechatAccountName wechatAccountName
      *
      * @return $this
      */
@@ -422,7 +422,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Sets fundType
      *
-     * @param \TencentAds\Model\WechatMpOpenFundType $fundType fundType
+     * @param \TencentAds\Model\WechatMpOpenFundType|mixed $fundType fundType
      *
      * @return $this
      */
@@ -446,7 +446,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Sets externalBillNo
      *
-     * @param string $externalBillNo externalBillNo
+     * @param string|mixed $externalBillNo externalBillNo
      *
      * @return $this
      */
@@ -470,7 +470,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -494,7 +494,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Sets operator
      *
-     * @param string $operator operator
+     * @param string|mixed $operator operator
      *
      * @return $this
      */
@@ -518,7 +518,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Sets billNo
      *
-     * @param string $billNo billNo
+     * @param string|mixed $billNo billNo
      *
      * @return $this
      */
@@ -542,7 +542,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Sets repaymentChannelType
      *
-     * @param string $repaymentChannelType repaymentChannelType
+     * @param string|mixed $repaymentChannelType repaymentChannelType
      *
      * @return $this
      */
@@ -566,7 +566,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Sets companyName
      *
-     * @param string $companyName companyName
+     * @param string|mixed $companyName companyName
      *
      * @return $this
      */
@@ -590,7 +590,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Sets contactName
      *
-     * @param string $contactName contactName
+     * @param string|mixed $contactName contactName
      *
      * @return $this
      */
@@ -614,7 +614,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Sets contactPhone
      *
-     * @param string $contactPhone contactPhone
+     * @param string|mixed $contactPhone contactPhone
      *
      * @return $this
      */
@@ -638,7 +638,7 @@ class DetailedFundStatement implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \TencentAds\Model\WechatAccountTradeStatus $status status
+     * @param \TencentAds\Model\WechatAccountTradeStatus|mixed $status status
      *
      * @return $this
      */

@@ -235,7 +235,7 @@ class WechatFundTransferAddResponse implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param int $code code
+     * @param int|mixed $code code
      *
      * @return $this
      */
@@ -259,7 +259,7 @@ class WechatFundTransferAddResponse implements ModelInterface, ArrayAccess
     /**
      * Sets message
      *
-     * @param string $message message
+     * @param string|mixed $message message
      *
      * @return $this
      */
@@ -283,7 +283,7 @@ class WechatFundTransferAddResponse implements ModelInterface, ArrayAccess
     /**
      * Sets messageCn
      *
-     * @param string $messageCn messageCn
+     * @param string|mixed $messageCn messageCn
      *
      * @return $this
      */
@@ -307,7 +307,7 @@ class WechatFundTransferAddResponse implements ModelInterface, ArrayAccess
     /**
      * Sets errors
      *
-     * @param \TencentAds\Model\ApiErrorStruct[] $errors errors
+     * @param \TencentAds\Model\ApiErrorStruct[]|mixed $errors errors
      *
      * @return $this
      */

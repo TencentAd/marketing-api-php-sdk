@@ -217,7 +217,7 @@ class UserActionSetsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\UserActionSet[] $list list
+     * @param \TencentAds\Model\UserActionSet[]|mixed $list list
      *
      * @return $this
      */

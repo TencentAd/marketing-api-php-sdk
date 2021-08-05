@@ -218,7 +218,7 @@ class AudienceGrantRelationsGetGrantSpec implements ModelInterface, ArrayAccess
     /**
      * Sets grantToBusinessSpec
      *
-     * @param \TencentAds\Model\AudienceGrantRelationsGetGrantToBusinessSpec $grantToBusinessSpec grantToBusinessSpec
+     * @param \TencentAds\Model\AudienceGrantRelationsGetGrantToBusinessSpec|mixed $grantToBusinessSpec grantToBusinessSpec
      *
      * @return $this
      */

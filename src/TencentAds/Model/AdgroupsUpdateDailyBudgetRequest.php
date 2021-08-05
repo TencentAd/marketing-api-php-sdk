@@ -223,7 +223,7 @@ class AdgroupsUpdateDailyBudgetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class AdgroupsUpdateDailyBudgetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets updateDailyBudgetSpec
      *
-     * @param \TencentAds\Model\AdgroupsUpdateDailyBudgetUpdateDailyBudgetStruct[] $updateDailyBudgetSpec updateDailyBudgetSpec
+     * @param \TencentAds\Model\AdgroupsUpdateDailyBudgetUpdateDailyBudgetStruct[]|mixed $updateDailyBudgetSpec updateDailyBudgetSpec
      *
      * @return $this
      */

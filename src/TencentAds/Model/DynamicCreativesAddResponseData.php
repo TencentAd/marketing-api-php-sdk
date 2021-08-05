@@ -217,7 +217,7 @@ class DynamicCreativesAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets dynamicCreativeId
      *
-     * @param int $dynamicCreativeId dynamicCreativeId
+     * @param int|mixed $dynamicCreativeId dynamicCreativeId
      *
      * @return $this
      */

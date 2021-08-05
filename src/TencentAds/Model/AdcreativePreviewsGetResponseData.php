@@ -217,7 +217,7 @@ class AdcreativePreviewsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\AdcreativePreviewsGetListStruct[] $list list
+     * @param \TencentAds\Model\AdcreativePreviewsGetListStruct[]|mixed $list list
      *
      * @return $this
      */

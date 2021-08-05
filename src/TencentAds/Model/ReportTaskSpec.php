@@ -224,7 +224,7 @@ class ReportTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets level
      *
-     * @param string $level level
+     * @param string|mixed $level level
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class ReportTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets date
      *
-     * @param string $date date
+     * @param string|mixed $date date
      *
      * @return $this
      */

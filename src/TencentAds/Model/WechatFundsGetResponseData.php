@@ -223,7 +223,7 @@ class WechatFundsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\WechatFundsGetListStruct[] $list list
+     * @param \TencentAds\Model\WechatFundsGetListStruct[]|mixed $list list
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class WechatFundsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets memo
      *
-     * @param \TencentAds\Model\Memo $memo memo
+     * @param \TencentAds\Model\Memo|mixed $memo memo
      *
      * @return $this
      */

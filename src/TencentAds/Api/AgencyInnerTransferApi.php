@@ -92,7 +92,7 @@ class AgencyInnerTransferApi
      *
      * 服务商内部划账
      *
-     * @param  \TencentAds\Model\AgencyInnerTransferAddRequest $data data (required)
+     * @param  \TencentAds\Model\AgencyInnerTransferAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class AgencyInnerTransferApi
      *
      * 服务商内部划账
      *
-     * @param  \TencentAds\Model\AgencyInnerTransferAddRequest $data (required)
+     * @param  \TencentAds\Model\AgencyInnerTransferAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class AgencyInnerTransferApi
      *
      * 服务商内部划账
      *
-     * @param  \TencentAds\Model\AgencyInnerTransferAddRequest $data (required)
+     * @param  \TencentAds\Model\AgencyInnerTransferAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class AgencyInnerTransferApi
      *
      * 服务商内部划账
      *
-     * @param  \TencentAds\Model\AgencyInnerTransferAddRequest $data (required)
+     * @param  \TencentAds\Model\AgencyInnerTransferAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class AgencyInnerTransferApi
     /**
      * Create request for operation 'agencyInnerTransferAdd'
      *
-     * @param  \TencentAds\Model\AgencyInnerTransferAddRequest $data (required)
+     * @param  \TencentAds\Model\AgencyInnerTransferAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

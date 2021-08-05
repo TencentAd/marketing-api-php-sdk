@@ -217,7 +217,7 @@ class FundsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\FundsGetListStruct[] $list list
+     * @param \TencentAds\Model\FundsGetListStruct[]|mixed $list list
      *
      * @return $this
      */

@@ -223,7 +223,7 @@ class ProfilesDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class ProfilesDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Sets profileId
      *
-     * @param int $profileId profileId
+     * @param int|mixed $profileId profileId
      *
      * @return $this
      */

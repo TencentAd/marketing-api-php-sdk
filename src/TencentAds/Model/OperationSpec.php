@@ -236,7 +236,7 @@ class OperationSpec implements ModelInterface, ArrayAccess
     /**
      * Sets configureStatusSpec
      *
-     * @param \TencentAds\Model\ConfigureStatusSpec $configureStatusSpec configureStatusSpec
+     * @param \TencentAds\Model\ConfigureStatusSpec|mixed $configureStatusSpec configureStatusSpec
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class OperationSpec implements ModelInterface, ArrayAccess
     /**
      * Sets bidAmountSpec
      *
-     * @param \TencentAds\Model\BidAmountSpec $bidAmountSpec bidAmountSpec
+     * @param \TencentAds\Model\BidAmountSpec|mixed $bidAmountSpec bidAmountSpec
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class OperationSpec implements ModelInterface, ArrayAccess
     /**
      * Sets dateSpec
      *
-     * @param \TencentAds\Model\DateSpec $dateSpec dateSpec
+     * @param \TencentAds\Model\DateSpec|mixed $dateSpec dateSpec
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class OperationSpec implements ModelInterface, ArrayAccess
     /**
      * Sets timeSeriesSpec
      *
-     * @param \TencentAds\Model\TimeSeriesSpec $timeSeriesSpec timeSeriesSpec
+     * @param \TencentAds\Model\TimeSeriesSpec|mixed $timeSeriesSpec timeSeriesSpec
      *
      * @return $this
      */

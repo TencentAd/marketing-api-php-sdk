@@ -236,7 +236,7 @@ class FundsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets balance
      *
-     * @param int $balance balance
+     * @param int|mixed $balance balance
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class FundsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets fundStatus
      *
-     * @param \TencentAds\Model\FundStatus $fundStatus fundStatus
+     * @param \TencentAds\Model\FundStatus|mixed $fundStatus fundStatus
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class FundsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets realtimeCost
      *
-     * @param int $realtimeCost realtimeCost
+     * @param int|mixed $realtimeCost realtimeCost
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class FundsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets fundType
      *
-     * @param \TencentAds\Model\AccountTypeMap $fundType fundType
+     * @param \TencentAds\Model\AccountTypeMap|mixed $fundType fundType
      *
      * @return $this
      */

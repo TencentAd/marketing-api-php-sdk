@@ -92,9 +92,9 @@ class BrandApi
      *
      * 创建品牌形象
      *
-     * @param  int $accountId accountId (required)
-     * @param  string $name name (required)
-     * @param  \SplFileObject $brandImageFile brandImageFile (required)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string|mixed $name name (required)
+     * @param  \SplFileObject|mixed $brandImageFile brandImageFile (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -111,9 +111,9 @@ class BrandApi
      *
      * 创建品牌形象
      *
-     * @param  int $accountId (required)
-     * @param  string $name (required)
-     * @param  \SplFileObject $brandImageFile (required)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $name (required)
+     * @param  \SplFileObject|mixed $brandImageFile (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -188,9 +188,9 @@ class BrandApi
      *
      * 创建品牌形象
      *
-     * @param  int $accountId (required)
-     * @param  string $name (required)
-     * @param  \SplFileObject $brandImageFile (required)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $name (required)
+     * @param  \SplFileObject|mixed $brandImageFile (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -210,9 +210,9 @@ class BrandApi
      *
      * 创建品牌形象
      *
-     * @param  int $accountId (required)
-     * @param  string $name (required)
-     * @param  \SplFileObject $brandImageFile (required)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $name (required)
+     * @param  \SplFileObject|mixed $brandImageFile (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -262,9 +262,9 @@ class BrandApi
     /**
      * Create request for operation 'brandAdd'
      *
-     * @param  int $accountId (required)
-     * @param  string $name (required)
-     * @param  \SplFileObject $brandImageFile (required)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $name (required)
+     * @param  \SplFileObject|mixed $brandImageFile (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -406,10 +406,10 @@ class BrandApi
      *
      * 获取品牌形象列表
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -426,10 +426,10 @@ class BrandApi
      *
      * 获取品牌形象列表
      *
-     * @param  int $accountId (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -504,10 +504,10 @@ class BrandApi
      *
      * 获取品牌形象列表
      *
-     * @param  int $accountId (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -527,10 +527,10 @@ class BrandApi
      *
      * 获取品牌形象列表
      *
-     * @param  int $accountId (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -580,10 +580,10 @@ class BrandApi
     /**
      * Create request for operation 'brandGet'
      *
-     * @param  int $accountId (required)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -236,7 +236,7 @@ class ProductInform implements ModelInterface, ArrayAccess
     /**
      * Sets contentType
      *
-     * @param \TencentAds\Model\ActionProductInformType $contentType contentType
+     * @param \TencentAds\Model\ActionProductInformType|mixed $contentType contentType
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class ProductInform implements ModelInterface, ArrayAccess
     /**
      * Sets productCatalogId
      *
-     * @param string $productCatalogId productCatalogId
+     * @param string|mixed $productCatalogId productCatalogId
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class ProductInform implements ModelInterface, ArrayAccess
     /**
      * Sets productId
      *
-     * @param string[] $productId productId
+     * @param string[]|mixed $productId productId
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class ProductInform implements ModelInterface, ArrayAccess
     /**
      * Sets categoryPath
      *
-     * @param string[] $categoryPath categoryPath
+     * @param string[]|mixed $categoryPath categoryPath
      *
      * @return $this
      */

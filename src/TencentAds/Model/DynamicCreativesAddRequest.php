@@ -343,7 +343,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets dynamicCreativeName
      *
-     * @param string $dynamicCreativeName dynamicCreativeName
+     * @param string|mixed $dynamicCreativeName dynamicCreativeName
      *
      * @return $this
      */
@@ -367,7 +367,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets dynamicCreativeTemplateId
      *
-     * @param int $dynamicCreativeTemplateId dynamicCreativeTemplateId
+     * @param int|mixed $dynamicCreativeTemplateId dynamicCreativeTemplateId
      *
      * @return $this
      */
@@ -391,7 +391,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets dynamicCreativeElements
      *
-     * @param \TencentAds\Model\DynamicCreativeElements $dynamicCreativeElements dynamicCreativeElements
+     * @param \TencentAds\Model\DynamicCreativeElements|mixed $dynamicCreativeElements dynamicCreativeElements
      *
      * @return $this
      */
@@ -415,7 +415,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets campaignType
      *
-     * @param \TencentAds\Model\CampaignType $campaignType campaignType
+     * @param \TencentAds\Model\CampaignType|mixed $campaignType campaignType
      *
      * @return $this
      */
@@ -439,7 +439,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObjectType|mixed $promotedObjectType promotedObjectType
      *
      * @return $this
      */
@@ -463,7 +463,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets pageType
      *
-     * @param \TencentAds\Model\DestinationType $pageType pageType
+     * @param \TencentAds\Model\DestinationType|mixed $pageType pageType
      *
      * @return $this
      */
@@ -487,7 +487,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets automaticSiteEnabled
      *
-     * @param bool $automaticSiteEnabled automaticSiteEnabled
+     * @param bool|mixed $automaticSiteEnabled automaticSiteEnabled
      *
      * @return $this
      */
@@ -511,7 +511,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets siteSet
      *
-     * @param string[] $siteSet siteSet
+     * @param string[]|mixed $siteSet siteSet
      *
      * @return $this
      */
@@ -535,7 +535,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectId
      *
-     * @param string $promotedObjectId promotedObjectId
+     * @param string|mixed $promotedObjectId promotedObjectId
      *
      * @return $this
      */
@@ -559,7 +559,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets pageSpec
      *
-     * @param \TencentAds\Model\DynamicCreativePageSpec $pageSpec pageSpec
+     * @param \TencentAds\Model\DynamicCreativePageSpec|mixed $pageSpec pageSpec
      *
      * @return $this
      */
@@ -583,7 +583,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets deepLinkUrl
      *
-     * @param string $deepLinkUrl deepLinkUrl
+     * @param string|mixed $deepLinkUrl deepLinkUrl
      *
      * @return $this
      */
@@ -607,7 +607,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets impressionTrackingUrl
      *
-     * @param string $impressionTrackingUrl impressionTrackingUrl
+     * @param string|mixed $impressionTrackingUrl impressionTrackingUrl
      *
      * @return $this
      */
@@ -631,7 +631,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets clickTrackingUrl
      *
-     * @param string $clickTrackingUrl clickTrackingUrl
+     * @param string|mixed $clickTrackingUrl clickTrackingUrl
      *
      * @return $this
      */
@@ -655,7 +655,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets feedsVideoCommentSwitch
      *
-     * @param bool $feedsVideoCommentSwitch feedsVideoCommentSwitch
+     * @param bool|mixed $feedsVideoCommentSwitch feedsVideoCommentSwitch
      *
      * @return $this
      */
@@ -679,7 +679,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets unionMarketSwitch
      *
-     * @param bool $unionMarketSwitch unionMarketSwitch
+     * @param bool|mixed $unionMarketSwitch unionMarketSwitch
      *
      * @return $this
      */
@@ -703,7 +703,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets profileId
      *
-     * @param int $profileId profileId
+     * @param int|mixed $profileId profileId
      *
      * @return $this
      */
@@ -727,7 +727,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets dynamicAdcreativeSpec
      *
-     * @param \TencentAds\Model\DynamicAdcreativeSpecForDc $dynamicAdcreativeSpec dynamicAdcreativeSpec
+     * @param \TencentAds\Model\DynamicAdcreativeSpecForDc|mixed $dynamicAdcreativeSpec dynamicAdcreativeSpec
      *
      * @return $this
      */
@@ -751,7 +751,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets videoEndPage
      *
-     * @param \TencentAds\Model\VideoEndPageSpec $videoEndPage videoEndPage
+     * @param \TencentAds\Model\VideoEndPageSpec|mixed $videoEndPage videoEndPage
      *
      * @return $this
      */
@@ -775,7 +775,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets barrageList
      *
-     * @param \TencentAds\Model\BarrageListCreateStruct[] $barrageList barrageList
+     * @param \TencentAds\Model\BarrageListCreateStruct[]|mixed $barrageList barrageList
      *
      * @return $this
      */
@@ -799,7 +799,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets dynamicCreativeGroupUsed
      *
-     * @param \TencentAds\Model\DynamicCreativeGroupUsed $dynamicCreativeGroupUsed dynamicCreativeGroupUsed
+     * @param \TencentAds\Model\DynamicCreativeGroupUsed|mixed $dynamicCreativeGroupUsed dynamicCreativeGroupUsed
      *
      * @return $this
      */
@@ -823,7 +823,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets appGiftPackCode
      *
-     * @param \TencentAds\Model\AppGiftPackCode $appGiftPackCode appGiftPackCode
+     * @param \TencentAds\Model\AppGiftPackCode|mixed $appGiftPackCode appGiftPackCode
      *
      * @return $this
      */
@@ -847,7 +847,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */

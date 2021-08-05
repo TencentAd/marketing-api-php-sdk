@@ -230,7 +230,7 @@ class DiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets timeRange
      *
-     * @param \TencentAds\Model\DiagnosisConclusionSpecTimeRange $timeRange timeRange
+     * @param \TencentAds\Model\DiagnosisConclusionSpecTimeRange|mixed $timeRange timeRange
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class DiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets diagnosisScore
      *
-     * @param int $diagnosisScore diagnosisScore
+     * @param int|mixed $diagnosisScore diagnosisScore
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class DiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets sameIndustryRank
      *
-     * @param int $sameIndustryRank sameIndustryRank
+     * @param int|mixed $sameIndustryRank sameIndustryRank
      *
      * @return $this
      */

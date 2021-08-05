@@ -229,7 +229,7 @@ class OuterCluesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class OuterCluesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets matchType
      *
-     * @param \TencentAds\Model\LeadsMatchType $matchType matchType
+     * @param \TencentAds\Model\LeadsMatchType|mixed $matchType matchType
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class OuterCluesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets leadsConversionStatusList
      *
-     * @param \TencentAds\Model\OuterLeadsStatusInfoStruct[] $leadsConversionStatusList leadsConversionStatusList
+     * @param \TencentAds\Model\OuterLeadsStatusInfoStruct[]|mixed $leadsConversionStatusList leadsConversionStatusList
      *
      * @return $this
      */

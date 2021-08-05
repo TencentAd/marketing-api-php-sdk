@@ -92,14 +92,14 @@ class AssetPrePermissionsApi
      *
      * 获取待确认接收授权列表接口
      *
-     * @param  int $accountId accountId (required)
-     * @param  string $assetType assetType (required)
-     * @param  int $assetId assetId (optional)
-     * @param  string $assetName assetName (optional)
-     * @param  string $pathType pathType (optional)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string|mixed $assetType assetType (required)
+     * @param  int|mixed $assetId assetId (optional)
+     * @param  string|mixed $assetName assetName (optional)
+     * @param  string|mixed $pathType pathType (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -116,14 +116,14 @@ class AssetPrePermissionsApi
      *
      * 获取待确认接收授权列表接口
      *
-     * @param  int $accountId (required)
-     * @param  string $assetType (required)
-     * @param  int $assetId (optional)
-     * @param  string $assetName (optional)
-     * @param  string $pathType (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $assetType (required)
+     * @param  int|mixed $assetId (optional)
+     * @param  string|mixed $assetName (optional)
+     * @param  string|mixed $pathType (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -198,14 +198,14 @@ class AssetPrePermissionsApi
      *
      * 获取待确认接收授权列表接口
      *
-     * @param  int $accountId (required)
-     * @param  string $assetType (required)
-     * @param  int $assetId (optional)
-     * @param  string $assetName (optional)
-     * @param  string $pathType (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $assetType (required)
+     * @param  int|mixed $assetId (optional)
+     * @param  string|mixed $assetName (optional)
+     * @param  string|mixed $pathType (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -225,14 +225,14 @@ class AssetPrePermissionsApi
      *
      * 获取待确认接收授权列表接口
      *
-     * @param  int $accountId (required)
-     * @param  string $assetType (required)
-     * @param  int $assetId (optional)
-     * @param  string $assetName (optional)
-     * @param  string $pathType (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $assetType (required)
+     * @param  int|mixed $assetId (optional)
+     * @param  string|mixed $assetName (optional)
+     * @param  string|mixed $pathType (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -282,14 +282,14 @@ class AssetPrePermissionsApi
     /**
      * Create request for operation 'assetPrePermissionsGet'
      *
-     * @param  int $accountId (required)
-     * @param  string $assetType (required)
-     * @param  int $assetId (optional)
-     * @param  string $assetName (optional)
-     * @param  string $pathType (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $assetType (required)
+     * @param  int|mixed $assetId (optional)
+     * @param  string|mixed $assetName (optional)
+     * @param  string|mixed $pathType (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -447,7 +447,7 @@ class AssetPrePermissionsApi
      *
      * 资产预授权确认
      *
-     * @param  \TencentAds\Model\AssetPrePermissionsUpdateRequest $data data (required)
+     * @param  \TencentAds\Model\AssetPrePermissionsUpdateRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -464,7 +464,7 @@ class AssetPrePermissionsApi
      *
      * 资产预授权确认
      *
-     * @param  \TencentAds\Model\AssetPrePermissionsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\AssetPrePermissionsUpdateRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -539,7 +539,7 @@ class AssetPrePermissionsApi
      *
      * 资产预授权确认
      *
-     * @param  \TencentAds\Model\AssetPrePermissionsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\AssetPrePermissionsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -559,7 +559,7 @@ class AssetPrePermissionsApi
      *
      * 资产预授权确认
      *
-     * @param  \TencentAds\Model\AssetPrePermissionsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\AssetPrePermissionsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -609,7 +609,7 @@ class AssetPrePermissionsApi
     /**
      * Create request for operation 'assetPrePermissionsUpdate'
      *
-     * @param  \TencentAds\Model\AssetPrePermissionsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\AssetPrePermissionsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

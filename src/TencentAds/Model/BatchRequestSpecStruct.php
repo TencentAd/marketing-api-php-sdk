@@ -224,7 +224,7 @@ class BatchRequestSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Sets relativePath
      *
-     * @param string $relativePath relativePath
+     * @param string|mixed $relativePath relativePath
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class BatchRequestSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Sets body
      *
-     * @param string $body body
+     * @param string|mixed $body body
      *
      * @return $this
      */

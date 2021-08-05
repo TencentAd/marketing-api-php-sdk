@@ -230,7 +230,7 @@ class AdcreativeSampleImage implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param string $name name
+     * @param string|mixed $name name
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class AdcreativeSampleImage implements ModelInterface, ArrayAccess
     /**
      * Sets thumb
      *
-     * @param string $thumb thumb
+     * @param string|mixed $thumb thumb
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class AdcreativeSampleImage implements ModelInterface, ArrayAccess
     /**
      * Sets image
      *
-     * @param string $image image
+     * @param string|mixed $image image
      *
      * @return $this
      */

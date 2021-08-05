@@ -272,7 +272,7 @@ class SceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Sets mobileUnion
      *
-     * @param string[] $mobileUnion mobileUnion
+     * @param string[]|mixed $mobileUnion mobileUnion
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class SceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Sets excludeMobileUnion
      *
-     * @param string[] $excludeMobileUnion excludeMobileUnion
+     * @param string[]|mixed $excludeMobileUnion excludeMobileUnion
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class SceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Sets mobileUnionIndustry
      *
-     * @param string[] $mobileUnionIndustry mobileUnionIndustry
+     * @param string[]|mixed $mobileUnionIndustry mobileUnionIndustry
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class SceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Sets unionPositionPackage
      *
-     * @param int[] $unionPositionPackage unionPositionPackage
+     * @param int[]|mixed $unionPositionPackage unionPositionPackage
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class SceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Sets excludeUnionPositionPackage
      *
-     * @param int[] $excludeUnionPositionPackage excludeUnionPositionPackage
+     * @param int[]|mixed $excludeUnionPositionPackage excludeUnionPositionPackage
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class SceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Sets tencentNews
      *
-     * @param string[] $tencentNews tencentNews
+     * @param string[]|mixed $tencentNews tencentNews
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class SceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Sets displayScene
      *
-     * @param string[] $displayScene displayScene
+     * @param string[]|mixed $displayScene displayScene
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class SceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Sets mobileUnionCategory
      *
-     * @param int[] $mobileUnionCategory mobileUnionCategory
+     * @param int[]|mixed $mobileUnionCategory mobileUnionCategory
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class SceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Sets wechatScene
      *
-     * @param \TencentAds\Model\WechatScene $wechatScene wechatScene
+     * @param \TencentAds\Model\WechatScene|mixed $wechatScene wechatScene
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class SceneTargeting implements ModelInterface, ArrayAccess
     /**
      * Sets wechatPosition
      *
-     * @param int[] $wechatPosition wechatPosition
+     * @param int[]|mixed $wechatPosition wechatPosition
      *
      * @return $this
      */

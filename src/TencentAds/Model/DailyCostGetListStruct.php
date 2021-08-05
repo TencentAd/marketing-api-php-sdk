@@ -236,7 +236,7 @@ class DailyCostGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class DailyCostGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAccountId
      *
-     * @param string $wechatAccountId wechatAccountId
+     * @param string|mixed $wechatAccountId wechatAccountId
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class DailyCostGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets date
      *
-     * @param string $date date
+     * @param string|mixed $date date
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class DailyCostGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cost
      *
-     * @param int $cost cost
+     * @param int|mixed $cost cost
      *
      * @return $this
      */

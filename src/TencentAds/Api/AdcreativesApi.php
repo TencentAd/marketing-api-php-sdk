@@ -92,7 +92,7 @@ class AdcreativesApi
      *
      * 创建广告创意
      *
-     * @param  \TencentAds\Model\AdcreativesAddRequest $data data (required)
+     * @param  \TencentAds\Model\AdcreativesAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class AdcreativesApi
      *
      * 创建广告创意
      *
-     * @param  \TencentAds\Model\AdcreativesAddRequest $data (required)
+     * @param  \TencentAds\Model\AdcreativesAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class AdcreativesApi
      *
      * 创建广告创意
      *
-     * @param  \TencentAds\Model\AdcreativesAddRequest $data (required)
+     * @param  \TencentAds\Model\AdcreativesAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class AdcreativesApi
      *
      * 创建广告创意
      *
-     * @param  \TencentAds\Model\AdcreativesAddRequest $data (required)
+     * @param  \TencentAds\Model\AdcreativesAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class AdcreativesApi
     /**
      * Create request for operation 'adcreativesAdd'
      *
-     * @param  \TencentAds\Model\AdcreativesAddRequest $data (required)
+     * @param  \TencentAds\Model\AdcreativesAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,7 +374,7 @@ class AdcreativesApi
      *
      * 删除广告创意
      *
-     * @param  \TencentAds\Model\AdcreativesDeleteRequest $data data (required)
+     * @param  \TencentAds\Model\AdcreativesDeleteRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -391,7 +391,7 @@ class AdcreativesApi
      *
      * 删除广告创意
      *
-     * @param  \TencentAds\Model\AdcreativesDeleteRequest $data (required)
+     * @param  \TencentAds\Model\AdcreativesDeleteRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -466,7 +466,7 @@ class AdcreativesApi
      *
      * 删除广告创意
      *
-     * @param  \TencentAds\Model\AdcreativesDeleteRequest $data (required)
+     * @param  \TencentAds\Model\AdcreativesDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -486,7 +486,7 @@ class AdcreativesApi
      *
      * 删除广告创意
      *
-     * @param  \TencentAds\Model\AdcreativesDeleteRequest $data (required)
+     * @param  \TencentAds\Model\AdcreativesDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -536,7 +536,7 @@ class AdcreativesApi
     /**
      * Create request for operation 'adcreativesDelete'
      *
-     * @param  \TencentAds\Model\AdcreativesDeleteRequest $data (required)
+     * @param  \TencentAds\Model\AdcreativesDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -656,13 +656,13 @@ class AdcreativesApi
      *
      * 获取广告创意
      *
-     * @param  int $accountId accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  bool $isDeleted isDeleted (optional)
-     * @param  bool $linkPageTypeCompatible linkPageTypeCompatible (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  bool|mixed $isDeleted isDeleted (optional)
+     * @param  bool|mixed $linkPageTypeCompatible linkPageTypeCompatible (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -679,13 +679,13 @@ class AdcreativesApi
      *
      * 获取广告创意
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  bool $isDeleted (optional)
-     * @param  bool $linkPageTypeCompatible (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  bool|mixed $isDeleted (optional)
+     * @param  bool|mixed $linkPageTypeCompatible (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -760,13 +760,13 @@ class AdcreativesApi
      *
      * 获取广告创意
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  bool $isDeleted (optional)
-     * @param  bool $linkPageTypeCompatible (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  bool|mixed $isDeleted (optional)
+     * @param  bool|mixed $linkPageTypeCompatible (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -786,13 +786,13 @@ class AdcreativesApi
      *
      * 获取广告创意
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  bool $isDeleted (optional)
-     * @param  bool $linkPageTypeCompatible (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  bool|mixed $isDeleted (optional)
+     * @param  bool|mixed $linkPageTypeCompatible (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -842,13 +842,13 @@ class AdcreativesApi
     /**
      * Create request for operation 'adcreativesGet'
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  bool $isDeleted (optional)
-     * @param  bool $linkPageTypeCompatible (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  bool|mixed $isDeleted (optional)
+     * @param  bool|mixed $linkPageTypeCompatible (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -999,7 +999,7 @@ class AdcreativesApi
      *
      * 更新广告创意
      *
-     * @param  \TencentAds\Model\AdcreativesUpdateRequest $data data (required)
+     * @param  \TencentAds\Model\AdcreativesUpdateRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1016,7 +1016,7 @@ class AdcreativesApi
      *
      * 更新广告创意
      *
-     * @param  \TencentAds\Model\AdcreativesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\AdcreativesUpdateRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1091,7 +1091,7 @@ class AdcreativesApi
      *
      * 更新广告创意
      *
-     * @param  \TencentAds\Model\AdcreativesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\AdcreativesUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1111,7 +1111,7 @@ class AdcreativesApi
      *
      * 更新广告创意
      *
-     * @param  \TencentAds\Model\AdcreativesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\AdcreativesUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1161,7 +1161,7 @@ class AdcreativesApi
     /**
      * Create request for operation 'adcreativesUpdate'
      *
-     * @param  \TencentAds\Model\AdcreativesUpdateRequest $data (required)
+     * @param  \TencentAds\Model\AdcreativesUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -241,7 +241,7 @@ class QualificationsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets industryQualifications
      *
-     * @param \TencentAds\Model\IndustryQualificationsStruct[] $industryQualifications industryQualifications
+     * @param \TencentAds\Model\IndustryQualificationsStruct[]|mixed $industryQualifications industryQualifications
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class QualificationsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets adQualifications
      *
-     * @param \TencentAds\Model\AdQualificationsStruct[] $adQualifications adQualifications
+     * @param \TencentAds\Model\AdQualificationsStruct[]|mixed $adQualifications adQualifications
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class QualificationsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets additionalIndustryQualifications
      *
-     * @param \TencentAds\Model\AdditionalIndustryQualificationsStruct[] $additionalIndustryQualifications additionalIndustryQualifications
+     * @param \TencentAds\Model\AdditionalIndustryQualificationsStruct[]|mixed $additionalIndustryQualifications additionalIndustryQualifications
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class QualificationsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets industryQualificationsWechat
      *
-     * @param \TencentAds\Model\WechatIndustryQualificationsStruct[] $industryQualificationsWechat industryQualificationsWechat
+     * @param \TencentAds\Model\WechatIndustryQualificationsStruct[]|mixed $industryQualificationsWechat industryQualificationsWechat
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class QualificationsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets adQualificationsWechat
      *
-     * @param \TencentAds\Model\WechatAdQualificationsStruct[] $adQualificationsWechat adQualificationsWechat
+     * @param \TencentAds\Model\WechatAdQualificationsStruct[]|mixed $adQualificationsWechat adQualificationsWechat
      *
      * @return $this
      */

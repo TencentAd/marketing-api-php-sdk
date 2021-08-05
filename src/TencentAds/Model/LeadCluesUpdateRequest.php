@@ -223,7 +223,7 @@ class LeadCluesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class LeadCluesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets leads
      *
-     * @param \TencentAds\Model\LeadsStatusInfoStruct[] $leads leads
+     * @param \TencentAds\Model\LeadsStatusInfoStruct[]|mixed $leads leads
      *
      * @return $this
      */

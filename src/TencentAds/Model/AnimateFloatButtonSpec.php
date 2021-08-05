@@ -266,7 +266,7 @@ class AnimateFloatButtonSpec implements ModelInterface, ArrayAccess
     /**
      * Sets linkSpec
      *
-     * @param \TencentAds\Model\LinkSpec $linkSpec linkSpec
+     * @param \TencentAds\Model\LinkSpec|mixed $linkSpec linkSpec
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class AnimateFloatButtonSpec implements ModelInterface, ArrayAccess
     /**
      * Sets appDownloadSpec
      *
-     * @param \TencentAds\Model\AppDownloadSpec $appDownloadSpec appDownloadSpec
+     * @param \TencentAds\Model\AppDownloadSpec|mixed $appDownloadSpec appDownloadSpec
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class AnimateFloatButtonSpec implements ModelInterface, ArrayAccess
     /**
      * Sets followSpec
      *
-     * @param \TencentAds\Model\FollowSpec $followSpec followSpec
+     * @param \TencentAds\Model\FollowSpec|mixed $followSpec followSpec
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class AnimateFloatButtonSpec implements ModelInterface, ArrayAccess
     /**
      * Sets miniProgramSpec
      *
-     * @param \TencentAds\Model\MiniProgramSpec $miniProgramSpec miniProgramSpec
+     * @param \TencentAds\Model\MiniProgramSpec|mixed $miniProgramSpec miniProgramSpec
      *
      * @return $this
      */
@@ -362,7 +362,7 @@ class AnimateFloatButtonSpec implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameProgramSpec
      *
-     * @param \TencentAds\Model\MiniGameProgramSpec $miniGameProgramSpec miniGameProgramSpec
+     * @param \TencentAds\Model\MiniGameProgramSpec|mixed $miniGameProgramSpec miniGameProgramSpec
      *
      * @return $this
      */
@@ -386,7 +386,7 @@ class AnimateFloatButtonSpec implements ModelInterface, ArrayAccess
     /**
      * Sets fengyeSpec
      *
-     * @param \TencentAds\Model\FengyeSpec $fengyeSpec fengyeSpec
+     * @param \TencentAds\Model\FengyeSpec|mixed $fengyeSpec fengyeSpec
      *
      * @return $this
      */
@@ -410,7 +410,7 @@ class AnimateFloatButtonSpec implements ModelInterface, ArrayAccess
     /**
      * Sets cardSpec
      *
-     * @param \TencentAds\Model\CardSpec $cardSpec cardSpec
+     * @param \TencentAds\Model\CardSpec|mixed $cardSpec cardSpec
      *
      * @return $this
      */
@@ -434,7 +434,7 @@ class AnimateFloatButtonSpec implements ModelInterface, ArrayAccess
     /**
      * Sets serviceSpec
      *
-     * @param \TencentAds\Model\ServiceSpec $serviceSpec serviceSpec
+     * @param \TencentAds\Model\ServiceSpec|mixed $serviceSpec serviceSpec
      *
      * @return $this
      */
@@ -458,7 +458,7 @@ class AnimateFloatButtonSpec implements ModelInterface, ArrayAccess
     /**
      * Sets wecomSpec
      *
-     * @param \TencentAds\Model\WecomSpec $wecomSpec wecomSpec
+     * @param \TencentAds\Model\WecomSpec|mixed $wecomSpec wecomSpec
      *
      * @return $this
      */

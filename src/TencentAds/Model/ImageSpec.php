@@ -242,7 +242,7 @@ class ImageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets imageId
      *
-     * @param string $imageId imageId
+     * @param string|mixed $imageId imageId
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class ImageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets width
      *
-     * @param int $width width
+     * @param int|mixed $width width
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class ImageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets height
      *
-     * @param int $height height
+     * @param int|mixed $height height
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class ImageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets paddingTop
      *
-     * @param int $paddingTop paddingTop
+     * @param int|mixed $paddingTop paddingTop
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class ImageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets paddingBottom
      *
-     * @param int $paddingBottom paddingBottom
+     * @param int|mixed $paddingBottom paddingBottom
      *
      * @return $this
      */

@@ -248,7 +248,7 @@ class TargetingDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets targetingDiagnosisScore
      *
-     * @param int $targetingDiagnosisScore targetingDiagnosisScore
+     * @param int|mixed $targetingDiagnosisScore targetingDiagnosisScore
      *
      * @return $this
      */
@@ -272,7 +272,7 @@ class TargetingDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets contractOccupiedScore
      *
-     * @param int $contractOccupiedScore contractOccupiedScore
+     * @param int|mixed $contractOccupiedScore contractOccupiedScore
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class TargetingDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets contractOccupiedSpecList
      *
-     * @param \TencentAds\Model\ContractOccupiedSpec[] $contractOccupiedSpecList contractOccupiedSpecList
+     * @param \TencentAds\Model\ContractOccupiedSpec[]|mixed $contractOccupiedSpecList contractOccupiedSpecList
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class TargetingDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets compititionScore
      *
-     * @param int $compititionScore compititionScore
+     * @param int|mixed $compititionScore compititionScore
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class TargetingDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets compititionSpecList
      *
-     * @param \TencentAds\Model\CompititionSpec[] $compititionSpecList compititionSpecList
+     * @param \TencentAds\Model\CompititionSpec[]|mixed $compititionSpecList compititionSpecList
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class TargetingDiagnosisConclusionSpec implements ModelInterface, ArrayAccess
     /**
      * Sets conclusion
      *
-     * @param string $conclusion conclusion
+     * @param string|mixed $conclusion conclusion
      *
      * @return $this
      */

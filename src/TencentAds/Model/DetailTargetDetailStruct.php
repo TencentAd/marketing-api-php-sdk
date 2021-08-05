@@ -236,7 +236,7 @@ class DetailTargetDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets expandTargetingOpened
      *
-     * @param bool $expandTargetingOpened expandTargetingOpened
+     * @param bool|mixed $expandTargetingOpened expandTargetingOpened
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class DetailTargetDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets score
      *
-     * @param int $score score
+     * @param int|mixed $score score
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class DetailTargetDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets trends
      *
-     * @param \TencentAds\Model\PointStruct[] $trends trends
+     * @param \TencentAds\Model\PointStruct[]|mixed $trends trends
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class DetailTargetDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets conclusion
      *
-     * @param string $conclusion conclusion
+     * @param string|mixed $conclusion conclusion
      *
      * @return $this
      */

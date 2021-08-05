@@ -2906,7 +2906,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -2930,7 +2930,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets hour
      *
-     * @param int $hour hour
+     * @param int|mixed $hour hour
      *
      * @return $this
      */
@@ -2954,7 +2954,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets viewCount
      *
-     * @param int $viewCount viewCount
+     * @param int|mixed $viewCount viewCount
      *
      * @return $this
      */
@@ -2978,7 +2978,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets downloadCount
      *
-     * @param int $downloadCount downloadCount
+     * @param int|mixed $downloadCount downloadCount
      *
      * @return $this
      */
@@ -3002,7 +3002,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets activatedCount
      *
-     * @param int $activatedCount activatedCount
+     * @param int|mixed $activatedCount activatedCount
      *
      * @return $this
      */
@@ -3026,7 +3026,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets activatedRate
      *
-     * @param double $activatedRate activatedRate
+     * @param double|mixed $activatedRate activatedRate
      *
      * @return $this
      */
@@ -3050,7 +3050,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets thousandDisplayPrice
      *
-     * @param int $thousandDisplayPrice thousandDisplayPrice
+     * @param int|mixed $thousandDisplayPrice thousandDisplayPrice
      *
      * @return $this
      */
@@ -3074,7 +3074,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets validClickCount
      *
-     * @param int $validClickCount validClickCount
+     * @param int|mixed $validClickCount validClickCount
      *
      * @return $this
      */
@@ -3098,7 +3098,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets ctr
      *
-     * @param double $ctr ctr
+     * @param double|mixed $ctr ctr
      *
      * @return $this
      */
@@ -3122,7 +3122,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cpc
      *
-     * @param int $cpc cpc
+     * @param int|mixed $cpc cpc
      *
      * @return $this
      */
@@ -3146,7 +3146,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cost
      *
-     * @param int $cost cost
+     * @param int|mixed $cost cost
      *
      * @return $this
      */
@@ -3170,7 +3170,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets keyPageViewCost
      *
-     * @param int $keyPageViewCost keyPageViewCost
+     * @param int|mixed $keyPageViewCost keyPageViewCost
      *
      * @return $this
      */
@@ -3194,7 +3194,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets couponClickCount
      *
-     * @param int $couponClickCount couponClickCount
+     * @param int|mixed $couponClickCount couponClickCount
      *
      * @return $this
      */
@@ -3218,7 +3218,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets couponIssueCount
      *
-     * @param int $couponIssueCount couponIssueCount
+     * @param int|mixed $couponIssueCount couponIssueCount
      *
      * @return $this
      */
@@ -3242,7 +3242,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets couponGetCount
      *
-     * @param int $couponGetCount couponGetCount
+     * @param int|mixed $couponGetCount couponGetCount
      *
      * @return $this
      */
@@ -3266,7 +3266,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets platformPageViewCount
      *
-     * @param int $platformPageViewCount platformPageViewCount
+     * @param int|mixed $platformPageViewCount platformPageViewCount
      *
      * @return $this
      */
@@ -3290,7 +3290,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets platformPageViewRate
      *
-     * @param double $platformPageViewRate platformPageViewRate
+     * @param double|mixed $platformPageViewRate platformPageViewRate
      *
      * @return $this
      */
@@ -3314,7 +3314,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webCommodityPageViewCount
      *
-     * @param int $webCommodityPageViewCount webCommodityPageViewCount
+     * @param int|mixed $webCommodityPageViewCount webCommodityPageViewCount
      *
      * @return $this
      */
@@ -3338,7 +3338,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webCommodityPageViewCost
      *
-     * @param int $webCommodityPageViewCost webCommodityPageViewCost
+     * @param int|mixed $webCommodityPageViewCost webCommodityPageViewCost
      *
      * @return $this
      */
@@ -3362,7 +3362,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webRegisterCount
      *
-     * @param int $webRegisterCount webRegisterCount
+     * @param int|mixed $webRegisterCount webRegisterCount
      *
      * @return $this
      */
@@ -3386,7 +3386,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageConsultCount
      *
-     * @param int $pageConsultCount pageConsultCount
+     * @param int|mixed $pageConsultCount pageConsultCount
      *
      * @return $this
      */
@@ -3410,7 +3410,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageConsultCost
      *
-     * @param int $pageConsultCost pageConsultCost
+     * @param int|mixed $pageConsultCost pageConsultCost
      *
      * @return $this
      */
@@ -3434,7 +3434,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pagePhoneCallDirectCount
      *
-     * @param int $pagePhoneCallDirectCount pagePhoneCallDirectCount
+     * @param int|mixed $pagePhoneCallDirectCount pagePhoneCallDirectCount
      *
      * @return $this
      */
@@ -3458,7 +3458,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pagePhoneCallDirectCost
      *
-     * @param int $pagePhoneCallDirectCost pagePhoneCallDirectCost
+     * @param int|mixed $pagePhoneCallDirectCost pagePhoneCallDirectCost
      *
      * @return $this
      */
@@ -3482,7 +3482,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pagePhoneCallBackCount
      *
-     * @param int $pagePhoneCallBackCount pagePhoneCallBackCount
+     * @param int|mixed $pagePhoneCallBackCount pagePhoneCallBackCount
      *
      * @return $this
      */
@@ -3506,7 +3506,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pagePhoneCallBackCost
      *
-     * @param int $pagePhoneCallBackCost pagePhoneCallBackCost
+     * @param int|mixed $pagePhoneCallBackCost pagePhoneCallBackCost
      *
      * @return $this
      */
@@ -3530,7 +3530,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets ownPageNavigationCount
      *
-     * @param int $ownPageNavigationCount ownPageNavigationCount
+     * @param int|mixed $ownPageNavigationCount ownPageNavigationCount
      *
      * @return $this
      */
@@ -3554,7 +3554,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets ownPageNaviCost
      *
-     * @param int $ownPageNaviCost ownPageNaviCost
+     * @param int|mixed $ownPageNaviCost ownPageNaviCost
      *
      * @return $this
      */
@@ -3578,7 +3578,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets platformPageNavigationCount
      *
-     * @param int $platformPageNavigationCount platformPageNavigationCount
+     * @param int|mixed $platformPageNavigationCount platformPageNavigationCount
      *
      * @return $this
      */
@@ -3602,7 +3602,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets platformPageNavigationCost
      *
-     * @param int $platformPageNavigationCost platformPageNavigationCost
+     * @param int|mixed $platformPageNavigationCost platformPageNavigationCost
      *
      * @return $this
      */
@@ -3626,7 +3626,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets platformShopNavigationCount
      *
-     * @param int $platformShopNavigationCount platformShopNavigationCount
+     * @param int|mixed $platformShopNavigationCount platformShopNavigationCount
      *
      * @return $this
      */
@@ -3650,7 +3650,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets platformShopNavigationCost
      *
-     * @param int $platformShopNavigationCost platformShopNavigationCost
+     * @param int|mixed $platformShopNavigationCost platformShopNavigationCost
      *
      * @return $this
      */
@@ -3674,7 +3674,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webApplicationCount
      *
-     * @param int $webApplicationCount webApplicationCount
+     * @param int|mixed $webApplicationCount webApplicationCount
      *
      * @return $this
      */
@@ -3698,7 +3698,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webApplicationCost
      *
-     * @param int $webApplicationCost webApplicationCost
+     * @param int|mixed $webApplicationCost webApplicationCost
      *
      * @return $this
      */
@@ -3722,7 +3722,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageReservationCount
      *
-     * @param int $pageReservationCount pageReservationCount
+     * @param int|mixed $pageReservationCount pageReservationCount
      *
      * @return $this
      */
@@ -3746,7 +3746,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageReservationRate
      *
-     * @param double $pageReservationRate pageReservationRate
+     * @param double|mixed $pageReservationRate pageReservationRate
      *
      * @return $this
      */
@@ -3770,7 +3770,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageReservationCost
      *
-     * @param int $pageReservationCost pageReservationCost
+     * @param int|mixed $pageReservationCost pageReservationCost
      *
      * @return $this
      */
@@ -3794,7 +3794,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageReservationCostWithPeople
      *
-     * @param int $pageReservationCostWithPeople pageReservationCostWithPeople
+     * @param int|mixed $pageReservationCostWithPeople pageReservationCostWithPeople
      *
      * @return $this
      */
@@ -3818,7 +3818,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets addToCartPrice
      *
-     * @param int $addToCartPrice addToCartPrice
+     * @param int|mixed $addToCartPrice addToCartPrice
      *
      * @return $this
      */
@@ -3842,7 +3842,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets ownPageCouponGetCount
      *
-     * @param int $ownPageCouponGetCount ownPageCouponGetCount
+     * @param int|mixed $ownPageCouponGetCount ownPageCouponGetCount
      *
      * @return $this
      */
@@ -3866,7 +3866,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets ownPageCouponGetCost
      *
-     * @param int $ownPageCouponGetCost ownPageCouponGetCost
+     * @param int|mixed $ownPageCouponGetCost ownPageCouponGetCost
      *
      * @return $this
      */
@@ -3890,7 +3890,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets platformCouponGetCount
      *
-     * @param int $platformCouponGetCount platformCouponGetCount
+     * @param int|mixed $platformCouponGetCount platformCouponGetCount
      *
      * @return $this
      */
@@ -3914,7 +3914,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets platformCouponGetCost
      *
-     * @param int $platformCouponGetCost platformCouponGetCost
+     * @param int|mixed $platformCouponGetCost platformCouponGetCost
      *
      * @return $this
      */
@@ -3938,7 +3938,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webOrderCount
      *
-     * @param int $webOrderCount webOrderCount
+     * @param int|mixed $webOrderCount webOrderCount
      *
      * @return $this
      */
@@ -3962,7 +3962,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webOrderRate
      *
-     * @param double $webOrderRate webOrderRate
+     * @param double|mixed $webOrderRate webOrderRate
      *
      * @return $this
      */
@@ -3986,7 +3986,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appOrderRate
      *
-     * @param double $appOrderRate appOrderRate
+     * @param double|mixed $appOrderRate appOrderRate
      *
      * @return $this
      */
@@ -4010,7 +4010,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webOrderCost
      *
-     * @param int $webOrderCost webOrderCost
+     * @param int|mixed $webOrderCost webOrderCost
      *
      * @return $this
      */
@@ -4034,7 +4034,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webCheckoutAmount
      *
-     * @param int $webCheckoutAmount webCheckoutAmount
+     * @param int|mixed $webCheckoutAmount webCheckoutAmount
      *
      * @return $this
      */
@@ -4058,7 +4058,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webCheckoutCount
      *
-     * @param int $webCheckoutCount webCheckoutCount
+     * @param int|mixed $webCheckoutCount webCheckoutCount
      *
      * @return $this
      */
@@ -4082,7 +4082,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webCheckoutCost
      *
-     * @param int $webCheckoutCost webCheckoutCost
+     * @param int|mixed $webCheckoutCost webCheckoutCost
      *
      * @return $this
      */
@@ -4106,7 +4106,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets orderAmount
      *
-     * @param int $orderAmount orderAmount
+     * @param int|mixed $orderAmount orderAmount
      *
      * @return $this
      */
@@ -4130,7 +4130,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets orderUnitPrice
      *
-     * @param int $orderUnitPrice orderUnitPrice
+     * @param int|mixed $orderUnitPrice orderUnitPrice
      *
      * @return $this
      */
@@ -4154,7 +4154,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets orderRoi
      *
-     * @param double $orderRoi orderRoi
+     * @param double|mixed $orderRoi orderRoi
      *
      * @return $this
      */
@@ -4178,7 +4178,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets deliverCount
      *
-     * @param int $deliverCount deliverCount
+     * @param int|mixed $deliverCount deliverCount
      *
      * @return $this
      */
@@ -4202,7 +4202,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets deliverCost
      *
-     * @param int $deliverCost deliverCost
+     * @param int|mixed $deliverCost deliverCost
      *
      * @return $this
      */
@@ -4226,7 +4226,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets signInCount
      *
-     * @param int $signInCount signInCount
+     * @param int|mixed $signInCount signInCount
      *
      * @return $this
      */
@@ -4250,7 +4250,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets signInCost
      *
-     * @param int $signInCost signInCost
+     * @param int|mixed $signInCost signInCost
      *
      * @return $this
      */
@@ -4274,7 +4274,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets downloadRate
      *
-     * @param double $downloadRate downloadRate
+     * @param double|mixed $downloadRate downloadRate
      *
      * @return $this
      */
@@ -4298,7 +4298,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets downloadCost
      *
-     * @param int $downloadCost downloadCost
+     * @param int|mixed $downloadCost downloadCost
      *
      * @return $this
      */
@@ -4322,7 +4322,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets installCount
      *
-     * @param int $installCount installCount
+     * @param int|mixed $installCount installCount
      *
      * @return $this
      */
@@ -4346,7 +4346,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets installCost
      *
-     * @param int $installCost installCost
+     * @param int|mixed $installCost installCost
      *
      * @return $this
      */
@@ -4370,7 +4370,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets clickActivatedRate
      *
-     * @param double $clickActivatedRate clickActivatedRate
+     * @param double|mixed $clickActivatedRate clickActivatedRate
      *
      * @return $this
      */
@@ -4394,7 +4394,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets activatedCost
      *
-     * @param int $activatedCost activatedCost
+     * @param int|mixed $activatedCost activatedCost
      *
      * @return $this
      */
@@ -4418,7 +4418,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets retentionCount
      *
-     * @param int $retentionCount retentionCount
+     * @param int|mixed $retentionCount retentionCount
      *
      * @return $this
      */
@@ -4442,7 +4442,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets retentionRate
      *
-     * @param double $retentionRate retentionRate
+     * @param double|mixed $retentionRate retentionRate
      *
      * @return $this
      */
@@ -4466,7 +4466,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets retentionCost
      *
-     * @param int $retentionCost retentionCost
+     * @param int|mixed $retentionCost retentionCost
      *
      * @return $this
      */
@@ -4490,7 +4490,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets keyPageViewCount
      *
-     * @param int $keyPageViewCount keyPageViewCount
+     * @param int|mixed $keyPageViewCount keyPageViewCount
      *
      * @return $this
      */
@@ -4514,7 +4514,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appCommodityPageViewCount
      *
-     * @param int $appCommodityPageViewCount appCommodityPageViewCount
+     * @param int|mixed $appCommodityPageViewCount appCommodityPageViewCount
      *
      * @return $this
      */
@@ -4538,7 +4538,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appCommodityPageViewRate
      *
-     * @param double $appCommodityPageViewRate appCommodityPageViewRate
+     * @param double|mixed $appCommodityPageViewRate appCommodityPageViewRate
      *
      * @return $this
      */
@@ -4562,7 +4562,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webCommodityPageViewRate
      *
-     * @param double $webCommodityPageViewRate webCommodityPageViewRate
+     * @param double|mixed $webCommodityPageViewRate webCommodityPageViewRate
      *
      * @return $this
      */
@@ -4586,7 +4586,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appCommodityPageViewCost
      *
-     * @param int $appCommodityPageViewCost appCommodityPageViewCost
+     * @param int|mixed $appCommodityPageViewCost appCommodityPageViewCost
      *
      * @return $this
      */
@@ -4610,7 +4610,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appRegisterCount
      *
-     * @param int $appRegisterCount appRegisterCount
+     * @param int|mixed $appRegisterCount appRegisterCount
      *
      * @return $this
      */
@@ -4634,7 +4634,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appRegisterCost
      *
-     * @param int $appRegisterCost appRegisterCost
+     * @param int|mixed $appRegisterCost appRegisterCost
      *
      * @return $this
      */
@@ -4658,7 +4658,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webRegisterCost
      *
-     * @param int $webRegisterCost webRegisterCost
+     * @param int|mixed $webRegisterCost webRegisterCost
      *
      * @return $this
      */
@@ -4682,7 +4682,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appApplicationCount
      *
-     * @param int $appApplicationCount appApplicationCount
+     * @param int|mixed $appApplicationCount appApplicationCount
      *
      * @return $this
      */
@@ -4706,7 +4706,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appApplicationCost
      *
-     * @param int $appApplicationCost appApplicationCost
+     * @param int|mixed $appApplicationCost appApplicationCost
      *
      * @return $this
      */
@@ -4730,7 +4730,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appAddToCartCount
      *
-     * @param int $appAddToCartCount appAddToCartCount
+     * @param int|mixed $appAddToCartCount appAddToCartCount
      *
      * @return $this
      */
@@ -4754,7 +4754,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets addToCartAmount
      *
-     * @param int $addToCartAmount addToCartAmount
+     * @param int|mixed $addToCartAmount addToCartAmount
      *
      * @return $this
      */
@@ -4778,7 +4778,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appAddToCartCost
      *
-     * @param int $appAddToCartCost appAddToCartCost
+     * @param int|mixed $appAddToCartCost appAddToCartCost
      *
      * @return $this
      */
@@ -4802,7 +4802,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appOrderCount
      *
-     * @param int $appOrderCount appOrderCount
+     * @param int|mixed $appOrderCount appOrderCount
      *
      * @return $this
      */
@@ -4826,7 +4826,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appOrderCost
      *
-     * @param int $appOrderCost appOrderCost
+     * @param int|mixed $appOrderCost appOrderCost
      *
      * @return $this
      */
@@ -4850,7 +4850,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appCheckoutCount
      *
-     * @param int $appCheckoutCount appCheckoutCount
+     * @param int|mixed $appCheckoutCount appCheckoutCount
      *
      * @return $this
      */
@@ -4874,7 +4874,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appCheckoutAmount
      *
-     * @param int $appCheckoutAmount appCheckoutAmount
+     * @param int|mixed $appCheckoutAmount appCheckoutAmount
      *
      * @return $this
      */
@@ -4898,7 +4898,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appCheckoutCost
      *
-     * @param int $appCheckoutCost appCheckoutCost
+     * @param int|mixed $appCheckoutCost appCheckoutCost
      *
      * @return $this
      */
@@ -4922,7 +4922,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets platformCouponClickCount
      *
-     * @param int $platformCouponClickCount platformCouponClickCount
+     * @param int|mixed $platformCouponClickCount platformCouponClickCount
      *
      * @return $this
      */
@@ -4946,7 +4946,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets platformCouponGetRate
      *
-     * @param double $platformCouponGetRate platformCouponGetRate
+     * @param double|mixed $platformCouponGetRate platformCouponGetRate
      *
      * @return $this
      */
@@ -4970,7 +4970,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets couponUsageNumber
      *
-     * @param int $couponUsageNumber couponUsageNumber
+     * @param int|mixed $couponUsageNumber couponUsageNumber
      *
      * @return $this
      */
@@ -4994,7 +4994,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets couponUsageCost
      *
-     * @param int $couponUsageCost couponUsageCost
+     * @param int|mixed $couponUsageCost couponUsageCost
      *
      * @return $this
      */
@@ -5018,7 +5018,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets couponUsageRate
      *
-     * @param double $couponUsageRate couponUsageRate
+     * @param double|mixed $couponUsageRate couponUsageRate
      *
      * @return $this
      */
@@ -5042,7 +5042,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets couponPurchaseRate
      *
-     * @param double $couponPurchaseRate couponPurchaseRate
+     * @param double|mixed $couponPurchaseRate couponPurchaseRate
      *
      * @return $this
      */
@@ -5066,7 +5066,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets followCount
      *
-     * @param int $followCount followCount
+     * @param int|mixed $followCount followCount
      *
      * @return $this
      */
@@ -5090,7 +5090,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets followCost
      *
-     * @param int $followCost followCost
+     * @param int|mixed $followCost followCost
      *
      * @return $this
      */
@@ -5114,7 +5114,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets forwardCount
      *
-     * @param int $forwardCount forwardCount
+     * @param int|mixed $forwardCount forwardCount
      *
      * @return $this
      */
@@ -5138,7 +5138,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets forwardCost
      *
-     * @param int $forwardCost forwardCost
+     * @param int|mixed $forwardCost forwardCost
      *
      * @return $this
      */
@@ -5162,7 +5162,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets readCount
      *
-     * @param int $readCount readCount
+     * @param int|mixed $readCount readCount
      *
      * @return $this
      */
@@ -5186,7 +5186,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets readCost
      *
-     * @param int $readCost readCost
+     * @param int|mixed $readCost readCost
      *
      * @return $this
      */
@@ -5210,7 +5210,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets praiseCount
      *
-     * @param int $praiseCount praiseCount
+     * @param int|mixed $praiseCount praiseCount
      *
      * @return $this
      */
@@ -5234,7 +5234,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets praiseCost
      *
-     * @param int $praiseCost praiseCost
+     * @param int|mixed $praiseCost praiseCost
      *
      * @return $this
      */
@@ -5258,7 +5258,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets commentCount
      *
-     * @param int $commentCount commentCount
+     * @param int|mixed $commentCount commentCount
      *
      * @return $this
      */
@@ -5282,7 +5282,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets commentCost
      *
-     * @param int $commentCost commentCost
+     * @param int|mixed $commentCost commentCost
      *
      * @return $this
      */
@@ -5306,7 +5306,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets intePhoneCount
      *
-     * @param int $intePhoneCount intePhoneCount
+     * @param int|mixed $intePhoneCount intePhoneCount
      *
      * @return $this
      */
@@ -5330,7 +5330,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets phoneCallCount
      *
-     * @param int $phoneCallCount phoneCallCount
+     * @param int|mixed $phoneCallCount phoneCallCount
      *
      * @return $this
      */
@@ -5354,7 +5354,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets externalFormReservationCount
      *
-     * @param int $externalFormReservationCount externalFormReservationCount
+     * @param int|mixed $externalFormReservationCount externalFormReservationCount
      *
      * @return $this
      */
@@ -5378,7 +5378,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appAdPayingUsers
      *
-     * @param int $appAdPayingUsers appAdPayingUsers
+     * @param int|mixed $appAdPayingUsers appAdPayingUsers
      *
      * @return $this
      */
@@ -5402,7 +5402,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adPurValWeb
      *
-     * @param int $adPurValWeb adPurValWeb
+     * @param int|mixed $adPurValWeb adPurValWeb
      *
      * @return $this
      */
@@ -5426,7 +5426,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adPurValApp
      *
-     * @param int $adPurValApp adPurValApp
+     * @param int|mixed $adPurValApp adPurValApp
      *
      * @return $this
      */
@@ -5450,7 +5450,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets order24hCount
      *
-     * @param int $order24hCount order24hCount
+     * @param int|mixed $order24hCount order24hCount
      *
      * @return $this
      */
@@ -5474,7 +5474,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets order24hRate
      *
-     * @param double $order24hRate order24hRate
+     * @param double|mixed $order24hRate order24hRate
      *
      * @return $this
      */
@@ -5498,7 +5498,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets order24hCost
      *
-     * @param int $order24hCost order24hCost
+     * @param int|mixed $order24hCost order24hCost
      *
      * @return $this
      */
@@ -5522,7 +5522,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets order24hAmount
      *
-     * @param int $order24hAmount order24hAmount
+     * @param int|mixed $order24hAmount order24hAmount
      *
      * @return $this
      */
@@ -5546,7 +5546,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets order24hRoi
      *
-     * @param double $order24hRoi order24hRoi
+     * @param double|mixed $order24hRoi order24hRoi
      *
      * @return $this
      */
@@ -5570,7 +5570,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets gameCreateRoleCount
      *
-     * @param int $gameCreateRoleCount gameCreateRoleCount
+     * @param int|mixed $gameCreateRoleCount gameCreateRoleCount
      *
      * @return $this
      */
@@ -5594,7 +5594,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets gameAuthorizeCount
      *
-     * @param int $gameAuthorizeCount gameAuthorizeCount
+     * @param int|mixed $gameAuthorizeCount gameAuthorizeCount
      *
      * @return $this
      */
@@ -5618,7 +5618,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets gameTutorialFinishCount
      *
-     * @param int $gameTutorialFinishCount gameTutorialFinishCount
+     * @param int|mixed $gameTutorialFinishCount gameTutorialFinishCount
      *
      * @return $this
      */
@@ -5642,7 +5642,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets effectiveLeadsCount
      *
-     * @param int $effectiveLeadsCount effectiveLeadsCount
+     * @param int|mixed $effectiveLeadsCount effectiveLeadsCount
      *
      * @return $this
      */
@@ -5666,7 +5666,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets effectiveCost
      *
-     * @param int $effectiveCost effectiveCost
+     * @param int|mixed $effectiveCost effectiveCost
      *
      * @return $this
      */
@@ -5690,7 +5690,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets effectiveReserveCount
      *
-     * @param int $effectiveReserveCount effectiveReserveCount
+     * @param int|mixed $effectiveReserveCount effectiveReserveCount
      *
      * @return $this
      */
@@ -5714,7 +5714,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets effectiveConsultCount
      *
-     * @param int $effectiveConsultCount effectiveConsultCount
+     * @param int|mixed $effectiveConsultCount effectiveConsultCount
      *
      * @return $this
      */
@@ -5738,7 +5738,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets effectivePhoneCount
      *
-     * @param int $effectivePhoneCount effectivePhoneCount
+     * @param int|mixed $effectivePhoneCount effectivePhoneCount
      *
      * @return $this
      */
@@ -5762,7 +5762,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets potentialReserveCount
      *
-     * @param int $potentialReserveCount potentialReserveCount
+     * @param int|mixed $potentialReserveCount potentialReserveCount
      *
      * @return $this
      */
@@ -5786,7 +5786,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets potentialConsultCount
      *
-     * @param int $potentialConsultCount potentialConsultCount
+     * @param int|mixed $potentialConsultCount potentialConsultCount
      *
      * @return $this
      */
@@ -5810,7 +5810,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets potentialPhoneCount
      *
-     * @param int $potentialPhoneCount potentialPhoneCount
+     * @param int|mixed $potentialPhoneCount potentialPhoneCount
      *
      * @return $this
      */
@@ -5834,7 +5834,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appCheckoutRate
      *
-     * @param double $appCheckoutRate appCheckoutRate
+     * @param double|mixed $appCheckoutRate appCheckoutRate
      *
      * @return $this
      */
@@ -5858,7 +5858,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webCheckoutRate
      *
-     * @param double $webCheckoutRate webCheckoutRate
+     * @param double|mixed $webCheckoutRate webCheckoutRate
      *
      * @return $this
      */
@@ -5882,7 +5882,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appActivatedCheckoutRate
      *
-     * @param double $appActivatedCheckoutRate appActivatedCheckoutRate
+     * @param double|mixed $appActivatedCheckoutRate appActivatedCheckoutRate
      *
      * @return $this
      */
@@ -5906,7 +5906,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webActivatedCheckoutRate
      *
-     * @param double $webActivatedCheckoutRate webActivatedCheckoutRate
+     * @param double|mixed $webActivatedCheckoutRate webActivatedCheckoutRate
      *
      * @return $this
      */
@@ -5930,7 +5930,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appRegisterRate
      *
-     * @param double $appRegisterRate appRegisterRate
+     * @param double|mixed $appRegisterRate appRegisterRate
      *
      * @return $this
      */
@@ -5954,7 +5954,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webRegRate
      *
-     * @param double $webRegRate webRegRate
+     * @param double|mixed $webRegRate webRegRate
      *
      * @return $this
      */
@@ -5978,7 +5978,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pagePhoneCallDirectRate
      *
-     * @param double $pagePhoneCallDirectRate pagePhoneCallDirectRate
+     * @param double|mixed $pagePhoneCallDirectRate pagePhoneCallDirectRate
      *
      * @return $this
      */
@@ -6002,7 +6002,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pagePhoneCallBackRate
      *
-     * @param double $pagePhoneCallBackRate pagePhoneCallBackRate
+     * @param double|mixed $pagePhoneCallBackRate pagePhoneCallBackRate
      *
      * @return $this
      */
@@ -6026,7 +6026,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageConsultRate
      *
-     * @param double $pageConsultRate pageConsultRate
+     * @param double|mixed $pageConsultRate pageConsultRate
      *
      * @return $this
      */
@@ -6050,7 +6050,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets deliverRate
      *
-     * @param double $deliverRate deliverRate
+     * @param double|mixed $deliverRate deliverRate
      *
      * @return $this
      */
@@ -6074,7 +6074,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets installRate
      *
-     * @param double $installRate installRate
+     * @param double|mixed $installRate installRate
      *
      * @return $this
      */
@@ -6098,7 +6098,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets arppuCost
      *
-     * @param int $arppuCost arppuCost
+     * @param int|mixed $arppuCost arppuCost
      *
      * @return $this
      */
@@ -6122,7 +6122,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets arpuCost
      *
-     * @param int $arpuCost arpuCost
+     * @param int|mixed $arpuCost arpuCost
      *
      * @return $this
      */
@@ -6146,7 +6146,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webArppuCost
      *
-     * @param int $webArppuCost webArppuCost
+     * @param int|mixed $webArppuCost webArppuCost
      *
      * @return $this
      */
@@ -6170,7 +6170,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webArpuCost
      *
-     * @param int $webArpuCost webArpuCost
+     * @param int|mixed $webArpuCost webArpuCost
      *
      * @return $this
      */
@@ -6194,7 +6194,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appAdPurArpuCost
      *
-     * @param int $appAdPurArpuCost appAdPurArpuCost
+     * @param int|mixed $appAdPurArpuCost appAdPurArpuCost
      *
      * @return $this
      */
@@ -6218,7 +6218,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appAdPurArppuCost
      *
-     * @param int $appAdPurArppuCost appAdPurArppuCost
+     * @param int|mixed $appAdPurArppuCost appAdPurArppuCost
      *
      * @return $this
      */
@@ -6242,7 +6242,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webAdPurArpuCost
      *
-     * @param int $webAdPurArpuCost webAdPurArpuCost
+     * @param int|mixed $webAdPurArpuCost webAdPurArpuCost
      *
      * @return $this
      */
@@ -6266,7 +6266,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cheoutFd
      *
-     * @param int $cheoutFd cheoutFd
+     * @param int|mixed $cheoutFd cheoutFd
      *
      * @return $this
      */
@@ -6290,7 +6290,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cheoutTd
      *
-     * @param int $cheoutTd cheoutTd
+     * @param int|mixed $cheoutTd cheoutTd
      *
      * @return $this
      */
@@ -6314,7 +6314,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cheoutOw
      *
-     * @param int $cheoutOw cheoutOw
+     * @param int|mixed $cheoutOw cheoutOw
      *
      * @return $this
      */
@@ -6338,7 +6338,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cheoutTw
      *
-     * @param int $cheoutTw cheoutTw
+     * @param int|mixed $cheoutTw cheoutTw
      *
      * @return $this
      */
@@ -6362,7 +6362,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cheoutOm
      *
-     * @param int $cheoutOm cheoutOm
+     * @param int|mixed $cheoutOm cheoutOm
      *
      * @return $this
      */
@@ -6386,7 +6386,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cheoutFdReward
      *
-     * @param double $cheoutFdReward cheoutFdReward
+     * @param double|mixed $cheoutFdReward cheoutFdReward
      *
      * @return $this
      */
@@ -6410,7 +6410,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cheoutTdReward
      *
-     * @param double $cheoutTdReward cheoutTdReward
+     * @param double|mixed $cheoutTdReward cheoutTdReward
      *
      * @return $this
      */
@@ -6434,7 +6434,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cheoutOwReward
      *
-     * @param double $cheoutOwReward cheoutOwReward
+     * @param double|mixed $cheoutOwReward cheoutOwReward
      *
      * @return $this
      */
@@ -6458,7 +6458,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cheoutTwReward
      *
-     * @param double $cheoutTwReward cheoutTwReward
+     * @param double|mixed $cheoutTwReward cheoutTwReward
      *
      * @return $this
      */
@@ -6482,7 +6482,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cheoutOmReward
      *
-     * @param double $cheoutOmReward cheoutOmReward
+     * @param double|mixed $cheoutOmReward cheoutOmReward
      *
      * @return $this
      */
@@ -6506,7 +6506,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cheoutTotalReward
      *
-     * @param double $cheoutTotalReward cheoutTotalReward
+     * @param double|mixed $cheoutTotalReward cheoutTotalReward
      *
      * @return $this
      */
@@ -6530,7 +6530,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets fromFollowUv
      *
-     * @param int $fromFollowUv fromFollowUv
+     * @param int|mixed $fromFollowUv fromFollowUv
      *
      * @return $this
      */
@@ -6554,7 +6554,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets fromFollowCost
      *
-     * @param int $fromFollowCost fromFollowCost
+     * @param int|mixed $fromFollowCost fromFollowCost
      *
      * @return $this
      */
@@ -6578,7 +6578,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets addDesktopPv
      *
-     * @param int $addDesktopPv addDesktopPv
+     * @param int|mixed $addDesktopPv addDesktopPv
      *
      * @return $this
      */
@@ -6602,7 +6602,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets addDesktopCost
      *
-     * @param int $addDesktopCost addDesktopCost
+     * @param int|mixed $addDesktopCost addDesktopCost
      *
      * @return $this
      */
@@ -6626,7 +6626,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstPayCount
      *
-     * @param int $firstPayCount firstPayCount
+     * @param int|mixed $firstPayCount firstPayCount
      *
      * @return $this
      */
@@ -6650,7 +6650,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstPayRate
      *
-     * @param double $firstPayRate firstPayRate
+     * @param double|mixed $firstPayRate firstPayRate
      *
      * @return $this
      */
@@ -6674,7 +6674,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets preCreWeb
      *
-     * @param int $preCreWeb preCreWeb
+     * @param int|mixed $preCreWeb preCreWeb
      *
      * @return $this
      */
@@ -6698,7 +6698,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets preCreApp
      *
-     * @param int $preCreApp preCreApp
+     * @param int|mixed $preCreApp preCreApp
      *
      * @return $this
      */
@@ -6722,7 +6722,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets preCreWebVal
      *
-     * @param int $preCreWebVal preCreWebVal
+     * @param int|mixed $preCreWebVal preCreWebVal
      *
      * @return $this
      */
@@ -6746,7 +6746,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets preCreAppVal
      *
-     * @param int $preCreAppVal preCreAppVal
+     * @param int|mixed $preCreAppVal preCreAppVal
      *
      * @return $this
      */
@@ -6770,7 +6770,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets creWeb
      *
-     * @param int $creWeb creWeb
+     * @param int|mixed $creWeb creWeb
      *
      * @return $this
      */
@@ -6794,7 +6794,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets creApp
      *
-     * @param int $creApp creApp
+     * @param int|mixed $creApp creApp
      *
      * @return $this
      */
@@ -6818,7 +6818,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets creWebVal
      *
-     * @param int $creWebVal creWebVal
+     * @param int|mixed $creWebVal creWebVal
      *
      * @return $this
      */
@@ -6842,7 +6842,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets creAppVal
      *
-     * @param int $creAppVal creAppVal
+     * @param int|mixed $creAppVal creAppVal
      *
      * @return $this
      */
@@ -6866,7 +6866,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets withdrDepWeb
      *
-     * @param int $withdrDepWeb withdrDepWeb
+     * @param int|mixed $withdrDepWeb withdrDepWeb
      *
      * @return $this
      */
@@ -6890,7 +6890,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets withdrDepApp
      *
-     * @param int $withdrDepApp withdrDepApp
+     * @param int|mixed $withdrDepApp withdrDepApp
      *
      * @return $this
      */
@@ -6914,7 +6914,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets withdrDepWebVal
      *
-     * @param int $withdrDepWebVal withdrDepWebVal
+     * @param int|mixed $withdrDepWebVal withdrDepWebVal
      *
      * @return $this
      */
@@ -6938,7 +6938,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets withdrDepAppVal
      *
-     * @param int $withdrDepAppVal withdrDepAppVal
+     * @param int|mixed $withdrDepAppVal withdrDepAppVal
      *
      * @return $this
      */
@@ -6962,7 +6962,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstPayCost
      *
-     * @param int $firstPayCost firstPayCost
+     * @param int|mixed $firstPayCost firstPayCost
      *
      * @return $this
      */
@@ -6986,7 +6986,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets landingPageClickCount
      *
-     * @param int $landingPageClickCount landingPageClickCount
+     * @param int|mixed $landingPageClickCount landingPageClickCount
      *
      * @return $this
      */
@@ -7010,7 +7010,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webCartAmount
      *
-     * @param int $webCartAmount webCartAmount
+     * @param int|mixed $webCartAmount webCartAmount
      *
      * @return $this
      */
@@ -7034,7 +7034,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets scanFollowCount
      *
-     * @param int $scanFollowCount scanFollowCount
+     * @param int|mixed $scanFollowCount scanFollowCount
      *
      * @return $this
      */
@@ -7058,7 +7058,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets scanFollowUserCount
      *
-     * @param int $scanFollowUserCount scanFollowUserCount
+     * @param int|mixed $scanFollowUserCount scanFollowUserCount
      *
      * @return $this
      */
@@ -7082,7 +7082,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets scanFollowUserCost
      *
-     * @param int $scanFollowUserCost scanFollowUserCost
+     * @param int|mixed $scanFollowUserCost scanFollowUserCost
      *
      * @return $this
      */
@@ -7106,7 +7106,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets scanFollowUserRate
      *
-     * @param double $scanFollowUserRate scanFollowUserRate
+     * @param double|mixed $scanFollowUserRate scanFollowUserRate
      *
      * @return $this
      */
@@ -7130,7 +7130,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appOrderAmount
      *
-     * @param int $appOrderAmount appOrderAmount
+     * @param int|mixed $appOrderAmount appOrderAmount
      *
      * @return $this
      */
@@ -7154,7 +7154,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webOrderAmount
      *
-     * @param int $webOrderAmount webOrderAmount
+     * @param int|mixed $webOrderAmount webOrderAmount
      *
      * @return $this
      */
@@ -7178,7 +7178,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets phoneConsultCount
      *
-     * @param int $phoneConsultCount phoneConsultCount
+     * @param int|mixed $phoneConsultCount phoneConsultCount
      *
      * @return $this
      */
@@ -7202,7 +7202,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets toolConsultCount
      *
-     * @param int $toolConsultCount toolConsultCount
+     * @param int|mixed $toolConsultCount toolConsultCount
      *
      * @return $this
      */
@@ -7226,7 +7226,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets lotteryLeadsCount
      *
-     * @param int $lotteryLeadsCount lotteryLeadsCount
+     * @param int|mixed $lotteryLeadsCount lotteryLeadsCount
      *
      * @return $this
      */
@@ -7250,7 +7250,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets lotteryLeadsCost
      *
-     * @param int $lotteryLeadsCost lotteryLeadsCost
+     * @param int|mixed $lotteryLeadsCost lotteryLeadsCost
      *
      * @return $this
      */
@@ -7274,7 +7274,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets conversionsCount
      *
-     * @param int $conversionsCount conversionsCount
+     * @param int|mixed $conversionsCount conversionsCount
      *
      * @return $this
      */
@@ -7298,7 +7298,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets conversionsRate
      *
-     * @param double $conversionsRate conversionsRate
+     * @param double|mixed $conversionsRate conversionsRate
      *
      * @return $this
      */
@@ -7322,7 +7322,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets conversionsCost
      *
-     * @param int $conversionsCost conversionsCost
+     * @param int|mixed $conversionsCost conversionsCost
      *
      * @return $this
      */
@@ -7346,7 +7346,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets deepConversionsCount
      *
-     * @param int $deepConversionsCount deepConversionsCount
+     * @param int|mixed $deepConversionsCount deepConversionsCount
      *
      * @return $this
      */
@@ -7370,7 +7370,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets deepConversionsRate
      *
-     * @param double $deepConversionsRate deepConversionsRate
+     * @param double|mixed $deepConversionsRate deepConversionsRate
      *
      * @return $this
      */
@@ -7394,7 +7394,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets deepConversionsCost
      *
-     * @param int $deepConversionsCost deepConversionsCost
+     * @param int|mixed $deepConversionsCost deepConversionsCost
      *
      * @return $this
      */
@@ -7418,7 +7418,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstMemcardWebCount
      *
-     * @param int $firstMemcardWebCount firstMemcardWebCount
+     * @param int|mixed $firstMemcardWebCount firstMemcardWebCount
      *
      * @return $this
      */
@@ -7442,7 +7442,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstMemcardAppCount
      *
-     * @param int $firstMemcardAppCount firstMemcardAppCount
+     * @param int|mixed $firstMemcardAppCount firstMemcardAppCount
      *
      * @return $this
      */
@@ -7466,7 +7466,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets memcardWebCount
      *
-     * @param int $memcardWebCount memcardWebCount
+     * @param int|mixed $memcardWebCount memcardWebCount
      *
      * @return $this
      */
@@ -7490,7 +7490,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets memcardAppCount
      *
-     * @param int $memcardAppCount memcardAppCount
+     * @param int|mixed $memcardAppCount memcardAppCount
      *
      * @return $this
      */
@@ -7514,7 +7514,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstMemcardWebRate
      *
-     * @param double $firstMemcardWebRate firstMemcardWebRate
+     * @param double|mixed $firstMemcardWebRate firstMemcardWebRate
      *
      * @return $this
      */
@@ -7538,7 +7538,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstMemcardAppRate
      *
-     * @param double $firstMemcardAppRate firstMemcardAppRate
+     * @param double|mixed $firstMemcardAppRate firstMemcardAppRate
      *
      * @return $this
      */
@@ -7562,7 +7562,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstMemcardWebCost
      *
-     * @param int $firstMemcardWebCost firstMemcardWebCost
+     * @param int|mixed $firstMemcardWebCost firstMemcardWebCost
      *
      * @return $this
      */
@@ -7586,7 +7586,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstMemcardAppCost
      *
-     * @param int $firstMemcardAppCost firstMemcardAppCost
+     * @param int|mixed $firstMemcardAppCost firstMemcardAppCost
      *
      * @return $this
      */
@@ -7610,7 +7610,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets valuableClickCount
      *
-     * @param int $valuableClickCount valuableClickCount
+     * @param int|mixed $valuableClickCount valuableClickCount
      *
      * @return $this
      */
@@ -7634,7 +7634,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets valuableClickRate
      *
-     * @param double $valuableClickRate valuableClickRate
+     * @param double|mixed $valuableClickRate valuableClickRate
      *
      * @return $this
      */
@@ -7658,7 +7658,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets valuableClickCost
      *
-     * @param int $valuableClickCost valuableClickCost
+     * @param int|mixed $valuableClickCost valuableClickCost
      *
      * @return $this
      */
@@ -7682,7 +7682,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoPlayCount
      *
-     * @param int $videoPlayCount videoPlayCount
+     * @param int|mixed $videoPlayCount videoPlayCount
      *
      * @return $this
      */
@@ -7706,7 +7706,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets clickImageCount
      *
-     * @param int $clickImageCount clickImageCount
+     * @param int|mixed $clickImageCount clickImageCount
      *
      * @return $this
      */
@@ -7730,7 +7730,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets clickDetailCount
      *
-     * @param int $clickDetailCount clickDetailCount
+     * @param int|mixed $clickDetailCount clickDetailCount
      *
      * @return $this
      */
@@ -7754,7 +7754,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets clickHeadCount
      *
-     * @param int $clickHeadCount clickHeadCount
+     * @param int|mixed $clickHeadCount clickHeadCount
      *
      * @return $this
      */
@@ -7778,7 +7778,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets clickNickCount
      *
-     * @param int $clickNickCount clickNickCount
+     * @param int|mixed $clickNickCount clickNickCount
      *
      * @return $this
      */
@@ -7802,7 +7802,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets clickPoiCount
      *
-     * @param int $clickPoiCount clickPoiCount
+     * @param int|mixed $clickPoiCount clickPoiCount
      *
      * @return $this
      */
@@ -7826,7 +7826,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoInnerPlayCount
      *
-     * @param int $videoInnerPlayCount videoInnerPlayCount
+     * @param int|mixed $videoInnerPlayCount videoInnerPlayCount
      *
      * @return $this
      */
@@ -7850,7 +7850,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets lanButtonClickCount
      *
-     * @param int $lanButtonClickCount lanButtonClickCount
+     * @param int|mixed $lanButtonClickCount lanButtonClickCount
      *
      * @return $this
      */
@@ -7874,7 +7874,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets lanJumpButtonClickers
      *
-     * @param int $lanJumpButtonClickers lanJumpButtonClickers
+     * @param int|mixed $lanJumpButtonClickers lanJumpButtonClickers
      *
      * @return $this
      */
@@ -7898,7 +7898,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets lanJumpButtonClickCost
      *
-     * @param int $lanJumpButtonClickCost lanJumpButtonClickCost
+     * @param int|mixed $lanJumpButtonClickCost lanJumpButtonClickCost
      *
      * @return $this
      */
@@ -7922,7 +7922,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets lanJumpButtonCtr
      *
-     * @param double $lanJumpButtonCtr lanJumpButtonCtr
+     * @param double|mixed $lanJumpButtonCtr lanJumpButtonCtr
      *
      * @return $this
      */
@@ -7946,7 +7946,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets lanButtonClickCost
      *
-     * @param int $lanButtonClickCost lanButtonClickCost
+     * @param int|mixed $lanButtonClickCost lanButtonClickCost
      *
      * @return $this
      */
@@ -7970,7 +7970,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cpnClickButtonCount
      *
-     * @param int $cpnClickButtonCount cpnClickButtonCount
+     * @param int|mixed $cpnClickButtonCount cpnClickButtonCount
      *
      * @return $this
      */
@@ -7994,7 +7994,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cpnClickButtonUv
      *
-     * @param int $cpnClickButtonUv cpnClickButtonUv
+     * @param int|mixed $cpnClickButtonUv cpnClickButtonUv
      *
      * @return $this
      */
@@ -8018,7 +8018,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets keyPageUv
      *
-     * @param int $keyPageUv keyPageUv
+     * @param int|mixed $keyPageUv keyPageUv
      *
      * @return $this
      */
@@ -8042,7 +8042,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets specialPageExpUv
      *
-     * @param int $specialPageExpUv specialPageExpUv
+     * @param int|mixed $specialPageExpUv specialPageExpUv
      *
      * @return $this
      */
@@ -8066,7 +8066,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets specialPageExpCost
      *
-     * @param int $specialPageExpCost specialPageExpCost
+     * @param int|mixed $specialPageExpCost specialPageExpCost
      *
      * @return $this
      */
@@ -8090,7 +8090,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets viewCommodityPageUv
      *
-     * @param int $viewCommodityPageUv viewCommodityPageUv
+     * @param int|mixed $viewCommodityPageUv viewCommodityPageUv
      *
      * @return $this
      */
@@ -8114,7 +8114,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets effectLeadsPurchaseCount
      *
-     * @param int $effectLeadsPurchaseCount effectLeadsPurchaseCount
+     * @param int|mixed $effectLeadsPurchaseCount effectLeadsPurchaseCount
      *
      * @return $this
      */
@@ -8138,7 +8138,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets reservationUv
      *
-     * @param int $reservationUv reservationUv
+     * @param int|mixed $reservationUv reservationUv
      *
      * @return $this
      */
@@ -8162,7 +8162,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets overallLeadsPurchaseCount
      *
-     * @param int $overallLeadsPurchaseCount overallLeadsPurchaseCount
+     * @param int|mixed $overallLeadsPurchaseCount overallLeadsPurchaseCount
      *
      * @return $this
      */
@@ -8186,7 +8186,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsPurchaseCount
      *
-     * @param int $leadsPurchaseCount leadsPurchaseCount
+     * @param int|mixed $leadsPurchaseCount leadsPurchaseCount
      *
      * @return $this
      */
@@ -8210,7 +8210,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsPurchaseRate
      *
-     * @param double $leadsPurchaseRate leadsPurchaseRate
+     * @param double|mixed $leadsPurchaseRate leadsPurchaseRate
      *
      * @return $this
      */
@@ -8234,7 +8234,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsPurchaseCost
      *
-     * @param int $leadsPurchaseCost leadsPurchaseCost
+     * @param int|mixed $leadsPurchaseCost leadsPurchaseCost
      *
      * @return $this
      */
@@ -8258,7 +8258,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsPurchaseUv
      *
-     * @param int $leadsPurchaseUv leadsPurchaseUv
+     * @param int|mixed $leadsPurchaseUv leadsPurchaseUv
      *
      * @return $this
      */
@@ -8282,7 +8282,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets validLeadsUv
      *
-     * @param int $validLeadsUv validLeadsUv
+     * @param int|mixed $validLeadsUv validLeadsUv
      *
      * @return $this
      */
@@ -8306,7 +8306,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets phoneCallUv
      *
-     * @param int $phoneCallUv phoneCallUv
+     * @param int|mixed $phoneCallUv phoneCallUv
      *
      * @return $this
      */
@@ -8330,7 +8330,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets validPhoneUv
      *
-     * @param int $validPhoneUv validPhoneUv
+     * @param int|mixed $validPhoneUv validPhoneUv
      *
      * @return $this
      */
@@ -8354,7 +8354,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets potentialCustomerPhoneUv
      *
-     * @param int $potentialCustomerPhoneUv potentialCustomerPhoneUv
+     * @param int|mixed $potentialCustomerPhoneUv potentialCustomerPhoneUv
      *
      * @return $this
      */
@@ -8378,7 +8378,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webRegisterUv
      *
-     * @param int $webRegisterUv webRegisterUv
+     * @param int|mixed $webRegisterUv webRegisterUv
      *
      * @return $this
      */
@@ -8402,7 +8402,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webApplyUv
      *
-     * @param int $webApplyUv webApplyUv
+     * @param int|mixed $webApplyUv webApplyUv
      *
      * @return $this
      */
@@ -8426,7 +8426,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webCreditUv
      *
-     * @param int $webCreditUv webCreditUv
+     * @param int|mixed $webCreditUv webCreditUv
      *
      * @return $this
      */
@@ -8450,7 +8450,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appApplyUv
      *
-     * @param int $appApplyUv appApplyUv
+     * @param int|mixed $appApplyUv appApplyUv
      *
      * @return $this
      */
@@ -8474,7 +8474,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appPreCreditUv
      *
-     * @param int $appPreCreditUv appPreCreditUv
+     * @param int|mixed $appPreCreditUv appPreCreditUv
      *
      * @return $this
      */
@@ -8498,7 +8498,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appCreditUv
      *
-     * @param int $appCreditUv appCreditUv
+     * @param int|mixed $appCreditUv appCreditUv
      *
      * @return $this
      */
@@ -8522,7 +8522,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appWithdrawUv
      *
-     * @param int $appWithdrawUv appWithdrawUv
+     * @param int|mixed $appWithdrawUv appWithdrawUv
      *
      * @return $this
      */
@@ -8546,7 +8546,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAppRegisterUv
      *
-     * @param int $wechatAppRegisterUv wechatAppRegisterUv
+     * @param int|mixed $wechatAppRegisterUv wechatAppRegisterUv
      *
      * @return $this
      */
@@ -8570,7 +8570,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets noInterestCount
      *
-     * @param int $noInterestCount noInterestCount
+     * @param int|mixed $noInterestCount noInterestCount
      *
      * @return $this
      */
@@ -8594,7 +8594,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstDayOrderCount
      *
-     * @param int $firstDayOrderCount firstDayOrderCount
+     * @param int|mixed $firstDayOrderCount firstDayOrderCount
      *
      * @return $this
      */
@@ -8618,7 +8618,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstDayOrderAmount
      *
-     * @param int $firstDayOrderAmount firstDayOrderAmount
+     * @param int|mixed $firstDayOrderAmount firstDayOrderAmount
      *
      * @return $this
      */
@@ -8642,7 +8642,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets addWishlistCount
      *
-     * @param int $addWishlistCount addWishlistCount
+     * @param int|mixed $addWishlistCount addWishlistCount
      *
      * @return $this
      */
@@ -8666,7 +8666,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoOuterPlay10Count
      *
-     * @param int $videoOuterPlay10Count videoOuterPlay10Count
+     * @param int|mixed $videoOuterPlay10Count videoOuterPlay10Count
      *
      * @return $this
      */
@@ -8690,7 +8690,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoOuterPlay25Count
      *
-     * @param int $videoOuterPlay25Count videoOuterPlay25Count
+     * @param int|mixed $videoOuterPlay25Count videoOuterPlay25Count
      *
      * @return $this
      */
@@ -8714,7 +8714,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoOuterPlay50Count
      *
-     * @param int $videoOuterPlay50Count videoOuterPlay50Count
+     * @param int|mixed $videoOuterPlay50Count videoOuterPlay50Count
      *
      * @return $this
      */
@@ -8738,7 +8738,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoOuterPlay75Count
      *
-     * @param int $videoOuterPlay75Count videoOuterPlay75Count
+     * @param int|mixed $videoOuterPlay75Count videoOuterPlay75Count
      *
      * @return $this
      */
@@ -8762,7 +8762,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoOuterPlay95Count
      *
-     * @param int $videoOuterPlay95Count videoOuterPlay95Count
+     * @param int|mixed $videoOuterPlay95Count videoOuterPlay95Count
      *
      * @return $this
      */
@@ -8786,7 +8786,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoOuterPlay100Count
      *
-     * @param int $videoOuterPlay100Count videoOuterPlay100Count
+     * @param int|mixed $videoOuterPlay100Count videoOuterPlay100Count
      *
      * @return $this
      */
@@ -8810,7 +8810,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoOuterPlayTimeCount
      *
-     * @param double $videoOuterPlayTimeCount videoOuterPlayTimeCount
+     * @param double|mixed $videoOuterPlayTimeCount videoOuterPlayTimeCount
      *
      * @return $this
      */
@@ -8834,7 +8834,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoOuterPlayTimeAvgRate
      *
-     * @param double $videoOuterPlayTimeAvgRate videoOuterPlayTimeAvgRate
+     * @param double|mixed $videoOuterPlayTimeAvgRate videoOuterPlayTimeAvgRate
      *
      * @return $this
      */
@@ -8858,7 +8858,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoOuterPlayRate
      *
-     * @param double $videoOuterPlayRate videoOuterPlayRate
+     * @param double|mixed $videoOuterPlayRate videoOuterPlayRate
      *
      * @return $this
      */
@@ -8882,7 +8882,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoOuterPlayCost
      *
-     * @param int $videoOuterPlayCost videoOuterPlayCost
+     * @param int|mixed $videoOuterPlayCost videoOuterPlayCost
      *
      * @return $this
      */
@@ -8906,7 +8906,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoOuterPlayCount
      *
-     * @param int $videoOuterPlayCount videoOuterPlayCount
+     * @param int|mixed $videoOuterPlayCount videoOuterPlayCount
      *
      * @return $this
      */
@@ -8930,7 +8930,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoOuterPlay3sCount
      *
-     * @param int $videoOuterPlay3sCount videoOuterPlay3sCount
+     * @param int|mixed $videoOuterPlay3sCount videoOuterPlay3sCount
      *
      * @return $this
      */
@@ -8954,7 +8954,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoOuterPlay5sCount
      *
-     * @param int $videoOuterPlay5sCount videoOuterPlay5sCount
+     * @param int|mixed $videoOuterPlay5sCount videoOuterPlay5sCount
      *
      * @return $this
      */
@@ -8978,7 +8978,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoOuterPlay7sCount
      *
-     * @param int $videoOuterPlay7sCount videoOuterPlay7sCount
+     * @param int|mixed $videoOuterPlay7sCount videoOuterPlay7sCount
      *
      * @return $this
      */
@@ -9002,7 +9002,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets effectLeadsPurchaseCost
      *
-     * @param int $effectLeadsPurchaseCost effectLeadsPurchaseCost
+     * @param int|mixed $effectLeadsPurchaseCost effectLeadsPurchaseCost
      *
      * @return $this
      */
@@ -9026,7 +9026,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets creWebCost
      *
-     * @param int $creWebCost creWebCost
+     * @param int|mixed $creWebCost creWebCost
      *
      * @return $this
      */
@@ -9050,7 +9050,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets creAppCost
      *
-     * @param int $creAppCost creAppCost
+     * @param int|mixed $creAppCost creAppCost
      *
      * @return $this
      */
@@ -9074,7 +9074,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets preCreWebCost
      *
-     * @param int $preCreWebCost preCreWebCost
+     * @param int|mixed $preCreWebCost preCreWebCost
      *
      * @return $this
      */
@@ -9098,7 +9098,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets preCreAppCost
      *
-     * @param int $preCreAppCost preCreAppCost
+     * @param int|mixed $preCreAppCost preCreAppCost
      *
      * @return $this
      */
@@ -9122,7 +9122,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets storeVisitor
      *
-     * @param int $storeVisitor storeVisitor
+     * @param int|mixed $storeVisitor storeVisitor
      *
      * @return $this
      */
@@ -9146,7 +9146,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets tryOutUser
      *
-     * @param int $tryOutUser tryOutUser
+     * @param int|mixed $tryOutUser tryOutUser
      *
      * @return $this
      */
@@ -9170,7 +9170,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets consultLeaveInfoUsers
      *
-     * @param int $consultLeaveInfoUsers consultLeaveInfoUsers
+     * @param int|mixed $consultLeaveInfoUsers consultLeaveInfoUsers
      *
      * @return $this
      */
@@ -9194,7 +9194,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets activePageViews
      *
-     * @param int $activePageViews activePageViews
+     * @param int|mixed $activePageViews activePageViews
      *
      * @return $this
      */
@@ -9218,7 +9218,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets activePageViewers
      *
-     * @param int $activePageViewers activePageViewers
+     * @param int|mixed $activePageViewers activePageViewers
      *
      * @return $this
      */
@@ -9242,7 +9242,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets activePageInteractionAmount
      *
-     * @param int $activePageInteractionAmount activePageInteractionAmount
+     * @param int|mixed $activePageInteractionAmount activePageInteractionAmount
      *
      * @return $this
      */
@@ -9266,7 +9266,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets activePageInteractionUsers
      *
-     * @param int $activePageInteractionUsers activePageInteractionUsers
+     * @param int|mixed $activePageInteractionUsers activePageInteractionUsers
      *
      * @return $this
      */
@@ -9290,7 +9290,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets joinChatGroupAmount
      *
-     * @param int $joinChatGroupAmount joinChatGroupAmount
+     * @param int|mixed $joinChatGroupAmount joinChatGroupAmount
      *
      * @return $this
      */
@@ -9314,7 +9314,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets joinChatGroupNumberOfPeople
      *
-     * @param int $joinChatGroupNumberOfPeople joinChatGroupNumberOfPeople
+     * @param int|mixed $joinChatGroupNumberOfPeople joinChatGroupNumberOfPeople
      *
      * @return $this
      */
@@ -9338,7 +9338,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets joinChatGroupCostByPeople
      *
-     * @param int $joinChatGroupCostByPeople joinChatGroupCostByPeople
+     * @param int|mixed $joinChatGroupCostByPeople joinChatGroupCostByPeople
      *
      * @return $this
      */
@@ -9362,7 +9362,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets guideToFollowPageViews
      *
-     * @param int $guideToFollowPageViews guideToFollowPageViews
+     * @param int|mixed $guideToFollowPageViews guideToFollowPageViews
      *
      * @return $this
      */
@@ -9386,7 +9386,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets guideToFollowPageViewers
      *
-     * @param int $guideToFollowPageViewers guideToFollowPageViewers
+     * @param int|mixed $guideToFollowPageViewers guideToFollowPageViewers
      *
      * @return $this
      */
@@ -9410,7 +9410,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets guideToFollowPageInteractionAmount
      *
-     * @param int $guideToFollowPageInteractionAmount guideToFollowPageInteractionAmount
+     * @param int|mixed $guideToFollowPageInteractionAmount guideToFollowPageInteractionAmount
      *
      * @return $this
      */
@@ -9434,7 +9434,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets guideToFollowPageInteractionUsers
      *
-     * @param int $guideToFollowPageInteractionUsers guideToFollowPageInteractionUsers
+     * @param int|mixed $guideToFollowPageInteractionUsers guideToFollowPageInteractionUsers
      *
      * @return $this
      */
@@ -9458,7 +9458,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameRegisterUsers
      *
-     * @param int $miniGameRegisterUsers miniGameRegisterUsers
+     * @param int|mixed $miniGameRegisterUsers miniGameRegisterUsers
      *
      * @return $this
      */
@@ -9482,7 +9482,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameRegisterCost
      *
-     * @param int $miniGameRegisterCost miniGameRegisterCost
+     * @param int|mixed $miniGameRegisterCost miniGameRegisterCost
      *
      * @return $this
      */
@@ -9506,7 +9506,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameRegisterRate
      *
-     * @param double $miniGameRegisterRate miniGameRegisterRate
+     * @param double|mixed $miniGameRegisterRate miniGameRegisterRate
      *
      * @return $this
      */
@@ -9530,7 +9530,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameAdMonetizationUsers
      *
-     * @param int $miniGameAdMonetizationUsers miniGameAdMonetizationUsers
+     * @param int|mixed $miniGameAdMonetizationUsers miniGameAdMonetizationUsers
      *
      * @return $this
      */
@@ -9554,7 +9554,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGamePayingCount
      *
-     * @param int $miniGamePayingCount miniGamePayingCount
+     * @param int|mixed $miniGamePayingCount miniGamePayingCount
      *
      * @return $this
      */
@@ -9578,7 +9578,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGamePayingAmount
      *
-     * @param int $miniGamePayingAmount miniGamePayingAmount
+     * @param int|mixed $miniGamePayingAmount miniGamePayingAmount
      *
      * @return $this
      */
@@ -9602,7 +9602,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameFirstPayingUsers
      *
-     * @param int $miniGameFirstPayingUsers miniGameFirstPayingUsers
+     * @param int|mixed $miniGameFirstPayingUsers miniGameFirstPayingUsers
      *
      * @return $this
      */
@@ -9626,7 +9626,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameCreateRoleUsers
      *
-     * @param int $miniGameCreateRoleUsers miniGameCreateRoleUsers
+     * @param int|mixed $miniGameCreateRoleUsers miniGameCreateRoleUsers
      *
      * @return $this
      */
@@ -9650,7 +9650,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameCreateRoleCost
      *
-     * @param int $miniGameCreateRoleCost miniGameCreateRoleCost
+     * @param int|mixed $miniGameCreateRoleCost miniGameCreateRoleCost
      *
      * @return $this
      */
@@ -9674,7 +9674,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameRetentionD1
      *
-     * @param int $miniGameRetentionD1 miniGameRetentionD1
+     * @param int|mixed $miniGameRetentionD1 miniGameRetentionD1
      *
      * @return $this
      */
@@ -9698,7 +9698,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameKeyPageViewers
      *
-     * @param int $miniGameKeyPageViewers miniGameKeyPageViewers
+     * @param int|mixed $miniGameKeyPageViewers miniGameKeyPageViewers
      *
      * @return $this
      */
@@ -9722,7 +9722,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameKeyPageViewCost
      *
-     * @param int $miniGameKeyPageViewCost miniGameKeyPageViewCost
+     * @param int|mixed $miniGameKeyPageViewCost miniGameKeyPageViewCost
      *
      * @return $this
      */
@@ -9746,7 +9746,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameAdMonetizationAmount
      *
-     * @param int $miniGameAdMonetizationAmount miniGameAdMonetizationAmount
+     * @param int|mixed $miniGameAdMonetizationAmount miniGameAdMonetizationAmount
      *
      * @return $this
      */
@@ -9770,7 +9770,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGamePayingAmountByUpload
      *
-     * @param int $miniGamePayingAmountByUpload miniGamePayingAmountByUpload
+     * @param int|mixed $miniGamePayingAmountByUpload miniGamePayingAmountByUpload
      *
      * @return $this
      */
@@ -9794,7 +9794,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGamePayingCountByUpload
      *
-     * @param int $miniGamePayingCountByUpload miniGamePayingCountByUpload
+     * @param int|mixed $miniGamePayingCountByUpload miniGamePayingCountByUpload
      *
      * @return $this
      */
@@ -9818,7 +9818,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets consultLeaveInfoCost
      *
-     * @param int $consultLeaveInfoCost consultLeaveInfoCost
+     * @param int|mixed $consultLeaveInfoCost consultLeaveInfoCost
      *
      * @return $this
      */
@@ -9842,7 +9842,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets purchaseAmountWithCoupon
      *
-     * @param int $purchaseAmountWithCoupon purchaseAmountWithCoupon
+     * @param int|mixed $purchaseAmountWithCoupon purchaseAmountWithCoupon
      *
      * @return $this
      */
@@ -9866,7 +9866,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets purchaseAmountWithCouponCost
      *
-     * @param int $purchaseAmountWithCouponCost purchaseAmountWithCouponCost
+     * @param int|mixed $purchaseAmountWithCouponCost purchaseAmountWithCouponCost
      *
      * @return $this
      */
@@ -9890,7 +9890,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGamePayingAmountClickD1ByUpload
      *
-     * @param int $miniGamePayingAmountClickD1ByUpload miniGamePayingAmountClickD1ByUpload
+     * @param int|mixed $miniGamePayingAmountClickD1ByUpload miniGamePayingAmountClickD1ByUpload
      *
      * @return $this
      */
@@ -9914,7 +9914,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameRetentionD1Rate
      *
-     * @param double $miniGameRetentionD1Rate miniGameRetentionD1Rate
+     * @param double|mixed $miniGameRetentionD1Rate miniGameRetentionD1Rate
      *
      * @return $this
      */
@@ -9938,7 +9938,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameRetentionD1Cost
      *
-     * @param int $miniGameRetentionD1Cost miniGameRetentionD1Cost
+     * @param int|mixed $miniGameRetentionD1Cost miniGameRetentionD1Cost
      *
      * @return $this
      */
@@ -9962,7 +9962,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets keyPageViewRate
      *
-     * @param double $keyPageViewRate keyPageViewRate
+     * @param double|mixed $keyPageViewRate keyPageViewRate
      *
      * @return $this
      */
@@ -9986,7 +9986,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatCostStage1
      *
-     * @param int $wechatCostStage1 wechatCostStage1
+     * @param int|mixed $wechatCostStage1 wechatCostStage1
      *
      * @return $this
      */
@@ -10010,7 +10010,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatCostStage2
      *
-     * @param int $wechatCostStage2 wechatCostStage2
+     * @param int|mixed $wechatCostStage2 wechatCostStage2
      *
      * @return $this
      */
@@ -10034,7 +10034,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatDeepConversionsCountStage1
      *
-     * @param int $wechatDeepConversionsCountStage1 wechatDeepConversionsCountStage1
+     * @param int|mixed $wechatDeepConversionsCountStage1 wechatDeepConversionsCountStage1
      *
      * @return $this
      */
@@ -10058,7 +10058,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatDeepConversionsCountStage2
      *
-     * @param int $wechatDeepConversionsCountStage2 wechatDeepConversionsCountStage2
+     * @param int|mixed $wechatDeepConversionsCountStage2 wechatDeepConversionsCountStage2
      *
      * @return $this
      */
@@ -10082,7 +10082,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatShallowConversionsCountStage1
      *
-     * @param int $wechatShallowConversionsCountStage1 wechatShallowConversionsCountStage1
+     * @param int|mixed $wechatShallowConversionsCountStage1 wechatShallowConversionsCountStage1
      *
      * @return $this
      */
@@ -10106,7 +10106,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatShallowConversionsCountStage2
      *
-     * @param int $wechatShallowConversionsCountStage2 wechatShallowConversionsCountStage2
+     * @param int|mixed $wechatShallowConversionsCountStage2 wechatShallowConversionsCountStage2
      *
      * @return $this
      */
@@ -10130,7 +10130,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets activateRegisterRate
      *
-     * @param double $activateRegisterRate activateRegisterRate
+     * @param double|mixed $activateRegisterRate activateRegisterRate
      *
      * @return $this
      */
@@ -10154,7 +10154,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets keyBehaviorConversionsCount
      *
-     * @param int $keyBehaviorConversionsCount keyBehaviorConversionsCount
+     * @param int|mixed $keyBehaviorConversionsCount keyBehaviorConversionsCount
      *
      * @return $this
      */
@@ -10178,7 +10178,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets keyBehaviorConversionsCost
      *
-     * @param int $keyBehaviorConversionsCost keyBehaviorConversionsCost
+     * @param int|mixed $keyBehaviorConversionsCost keyBehaviorConversionsCost
      *
      * @return $this
      */
@@ -10202,7 +10202,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets keyBehaviorConversionsRate
      *
-     * @param double $keyBehaviorConversionsRate keyBehaviorConversionsRate
+     * @param double|mixed $keyBehaviorConversionsRate keyBehaviorConversionsRate
      *
      * @return $this
      */
@@ -10226,7 +10226,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstDayOrderRoi
      *
-     * @param double $firstDayOrderRoi firstDayOrderRoi
+     * @param double|mixed $firstDayOrderRoi firstDayOrderRoi
      *
      * @return $this
      */
@@ -10250,7 +10250,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameAdMonetizationCost
      *
-     * @param int $miniGameAdMonetizationCost miniGameAdMonetizationCost
+     * @param int|mixed $miniGameAdMonetizationCost miniGameAdMonetizationCost
      *
      * @return $this
      */
@@ -10274,7 +10274,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameAdMonetizationRoi
      *
-     * @param double $miniGameAdMonetizationRoi miniGameAdMonetizationRoi
+     * @param double|mixed $miniGameAdMonetizationRoi miniGameAdMonetizationRoi
      *
      * @return $this
      */
@@ -10298,7 +10298,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameAdMonetizationArpu
      *
-     * @param int $miniGameAdMonetizationArpu miniGameAdMonetizationArpu
+     * @param int|mixed $miniGameAdMonetizationArpu miniGameAdMonetizationArpu
      *
      * @return $this
      */
@@ -10322,7 +10322,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGamePayingRoi
      *
-     * @param double $miniGamePayingRoi miniGamePayingRoi
+     * @param double|mixed $miniGamePayingRoi miniGamePayingRoi
      *
      * @return $this
      */
@@ -10346,7 +10346,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGamePayingArpu
      *
-     * @param int $miniGamePayingArpu miniGamePayingArpu
+     * @param int|mixed $miniGamePayingArpu miniGamePayingArpu
      *
      * @return $this
      */
@@ -10370,7 +10370,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets requestConversionsCount
      *
-     * @param int $requestConversionsCount requestConversionsCount
+     * @param int|mixed $requestConversionsCount requestConversionsCount
      *
      * @return $this
      */
@@ -10394,7 +10394,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets requestConversionsCost
      *
-     * @param int $requestConversionsCost requestConversionsCost
+     * @param int|mixed $requestConversionsCost requestConversionsCost
      *
      * @return $this
      */
@@ -10418,7 +10418,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets incomeVal1
      *
-     * @param int $incomeVal1 incomeVal1
+     * @param int|mixed $incomeVal1 incomeVal1
      *
      * @return $this
      */
@@ -10442,7 +10442,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets incomeVal3
      *
-     * @param int $incomeVal3 incomeVal3
+     * @param int|mixed $incomeVal3 incomeVal3
      *
      * @return $this
      */
@@ -10466,7 +10466,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets incomeVal7
      *
-     * @param int $incomeVal7 incomeVal7
+     * @param int|mixed $incomeVal7 incomeVal7
      *
      * @return $this
      */
@@ -10490,7 +10490,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets incomeVal14
      *
-     * @param int $incomeVal14 incomeVal14
+     * @param int|mixed $incomeVal14 incomeVal14
      *
      * @return $this
      */
@@ -10514,7 +10514,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets incomeRoi1
      *
-     * @param double $incomeRoi1 incomeRoi1
+     * @param double|mixed $incomeRoi1 incomeRoi1
      *
      * @return $this
      */
@@ -10538,7 +10538,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets incomeRoi3
      *
-     * @param double $incomeRoi3 incomeRoi3
+     * @param double|mixed $incomeRoi3 incomeRoi3
      *
      * @return $this
      */
@@ -10562,7 +10562,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets incomeRoi7
      *
-     * @param double $incomeRoi7 incomeRoi7
+     * @param double|mixed $incomeRoi7 incomeRoi7
      *
      * @return $this
      */
@@ -10586,7 +10586,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets incomeRoi14
      *
-     * @param double $incomeRoi14 incomeRoi14
+     * @param double|mixed $incomeRoi14 incomeRoi14
      *
      * @return $this
      */
@@ -10610,7 +10610,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets activatedTotalPaymentCost
      *
-     * @param int $activatedTotalPaymentCost activatedTotalPaymentCost
+     * @param int|mixed $activatedTotalPaymentCost activatedTotalPaymentCost
      *
      * @return $this
      */
@@ -10634,7 +10634,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets paymentAmountActivatedD3
      *
-     * @param int $paymentAmountActivatedD3 paymentAmountActivatedD3
+     * @param int|mixed $paymentAmountActivatedD3 paymentAmountActivatedD3
      *
      * @return $this
      */
@@ -10658,7 +10658,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets paymentAmountActivatedD7
      *
-     * @param int $paymentAmountActivatedD7 paymentAmountActivatedD7
+     * @param int|mixed $paymentAmountActivatedD7 paymentAmountActivatedD7
      *
      * @return $this
      */
@@ -10682,7 +10682,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets paymentAmountActivatedD14
      *
-     * @param int $paymentAmountActivatedD14 paymentAmountActivatedD14
+     * @param int|mixed $paymentAmountActivatedD14 paymentAmountActivatedD14
      *
      * @return $this
      */
@@ -10706,7 +10706,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets paymentAmountActivatedD30
      *
-     * @param int $paymentAmountActivatedD30 paymentAmountActivatedD30
+     * @param int|mixed $paymentAmountActivatedD30 paymentAmountActivatedD30
      *
      * @return $this
      */
@@ -10730,7 +10730,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstDayPayCount
      *
-     * @param int $firstDayPayCount firstDayPayCount
+     * @param int|mixed $firstDayPayCount firstDayPayCount
      *
      * @return $this
      */
@@ -10754,7 +10754,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstDayPayCost
      *
-     * @param int $firstDayPayCost firstDayPayCost
+     * @param int|mixed $firstDayPayCost firstDayPayCost
      *
      * @return $this
      */
@@ -10778,7 +10778,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstDayFirstPayCost
      *
-     * @param int $firstDayFirstPayCost firstDayFirstPayCost
+     * @param int|mixed $firstDayFirstPayCost firstDayFirstPayCost
      *
      * @return $this
      */
@@ -10802,7 +10802,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstDayFirstPayCount
      *
-     * @param int $firstDayFirstPayCount firstDayFirstPayCount
+     * @param int|mixed $firstDayFirstPayCount firstDayFirstPayCount
      *
      * @return $this
      */
@@ -10826,7 +10826,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets paymentCostActivatedD1
      *
-     * @param int $paymentCostActivatedD1 paymentCostActivatedD1
+     * @param int|mixed $paymentCostActivatedD1 paymentCostActivatedD1
      *
      * @return $this
      */
@@ -10850,7 +10850,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstDayPayAmount
      *
-     * @param int $firstDayPayAmount firstDayPayAmount
+     * @param int|mixed $firstDayPayAmount firstDayPayAmount
      *
      * @return $this
      */
@@ -10874,7 +10874,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets roiActivatedD1
      *
-     * @param double $roiActivatedD1 roiActivatedD1
+     * @param double|mixed $roiActivatedD1 roiActivatedD1
      *
      * @return $this
      */
@@ -10898,7 +10898,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets roiActivatedD3
      *
-     * @param double $roiActivatedD3 roiActivatedD3
+     * @param double|mixed $roiActivatedD3 roiActivatedD3
      *
      * @return $this
      */
@@ -10922,7 +10922,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets roiActivatedD7
      *
-     * @param double $roiActivatedD7 roiActivatedD7
+     * @param double|mixed $roiActivatedD7 roiActivatedD7
      *
      * @return $this
      */
@@ -10946,7 +10946,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets roiActivatedD14
      *
-     * @param double $roiActivatedD14 roiActivatedD14
+     * @param double|mixed $roiActivatedD14 roiActivatedD14
      *
      * @return $this
      */
@@ -10970,7 +10970,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstDayAdPurArppuCost
      *
-     * @param int $firstDayAdPurArppuCost firstDayAdPurArppuCost
+     * @param int|mixed $firstDayAdPurArppuCost firstDayAdPurArppuCost
      *
      * @return $this
      */
@@ -10994,7 +10994,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstDayPayAmountArpu
      *
-     * @param int $firstDayPayAmountArpu firstDayPayAmountArpu
+     * @param int|mixed $firstDayPayAmountArpu firstDayPayAmountArpu
      *
      * @return $this
      */
@@ -11018,7 +11018,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstDayPayAmountArppu
      *
-     * @param int $firstDayPayAmountArppu firstDayPayAmountArppu
+     * @param int|mixed $firstDayPayAmountArppu firstDayPayAmountArppu
      *
      * @return $this
      */
@@ -11042,7 +11042,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets roiActivatedD30
      *
-     * @param double $roiActivatedD30 roiActivatedD30
+     * @param double|mixed $roiActivatedD30 roiActivatedD30
      *
      * @return $this
      */
@@ -11066,7 +11066,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstDayFirstPayRate
      *
-     * @param double $firstDayFirstPayRate firstDayFirstPayRate
+     * @param double|mixed $firstDayFirstPayRate firstDayFirstPayRate
      *
      * @return $this
      */
@@ -11090,7 +11090,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameFirstDayAdMonetizationUsers
      *
-     * @param int $miniGameFirstDayAdMonetizationUsers miniGameFirstDayAdMonetizationUsers
+     * @param int|mixed $miniGameFirstDayAdMonetizationUsers miniGameFirstDayAdMonetizationUsers
      *
      * @return $this
      */
@@ -11114,7 +11114,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameFirstDayAdMonetizationAmount
      *
-     * @param int $miniGameFirstDayAdMonetizationAmount miniGameFirstDayAdMonetizationAmount
+     * @param int|mixed $miniGameFirstDayAdMonetizationAmount miniGameFirstDayAdMonetizationAmount
      *
      * @return $this
      */
@@ -11138,7 +11138,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameFirstDayAdPayingCost
      *
-     * @param int $miniGameFirstDayAdPayingCost miniGameFirstDayAdPayingCost
+     * @param int|mixed $miniGameFirstDayAdPayingCost miniGameFirstDayAdPayingCost
      *
      * @return $this
      */
@@ -11162,7 +11162,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameIncomeRoi1
      *
-     * @param double $miniGameIncomeRoi1 miniGameIncomeRoi1
+     * @param double|mixed $miniGameIncomeRoi1 miniGameIncomeRoi1
      *
      * @return $this
      */
@@ -11186,7 +11186,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameFirstDayAdPayingArpu
      *
-     * @param int $miniGameFirstDayAdPayingArpu miniGameFirstDayAdPayingArpu
+     * @param int|mixed $miniGameFirstDayAdPayingArpu miniGameFirstDayAdPayingArpu
      *
      * @return $this
      */
@@ -11210,7 +11210,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGamePayingUsersD1
      *
-     * @param int $miniGamePayingUsersD1 miniGamePayingUsersD1
+     * @param int|mixed $miniGamePayingUsersD1 miniGamePayingUsersD1
      *
      * @return $this
      */
@@ -11234,7 +11234,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGamePayingAmountD1
      *
-     * @param int $miniGamePayingAmountD1 miniGamePayingAmountD1
+     * @param int|mixed $miniGamePayingAmountD1 miniGamePayingAmountD1
      *
      * @return $this
      */
@@ -11258,7 +11258,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameFirstDayPayingRoi
      *
-     * @param double $miniGameFirstDayPayingRoi miniGameFirstDayPayingRoi
+     * @param double|mixed $miniGameFirstDayPayingRoi miniGameFirstDayPayingRoi
      *
      * @return $this
      */
@@ -11282,7 +11282,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGamePayingAmountD1ByUpload
      *
-     * @param int $miniGamePayingAmountD1ByUpload miniGamePayingAmountD1ByUpload
+     * @param int|mixed $miniGamePayingAmountD1ByUpload miniGamePayingAmountD1ByUpload
      *
      * @return $this
      */
@@ -11306,7 +11306,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets mixedMonetizationRoiD1
      *
-     * @param double $mixedMonetizationRoiD1 mixedMonetizationRoiD1
+     * @param double|mixed $mixedMonetizationRoiD1 mixedMonetizationRoiD1
      *
      * @return $this
      */
@@ -11330,7 +11330,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets mixedMonetizationRoiD3
      *
-     * @param double $mixedMonetizationRoiD3 mixedMonetizationRoiD3
+     * @param double|mixed $mixedMonetizationRoiD3 mixedMonetizationRoiD3
      *
      * @return $this
      */
@@ -11354,7 +11354,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets mixedMonetizationRoiD7
      *
-     * @param double $mixedMonetizationRoiD7 mixedMonetizationRoiD7
+     * @param double|mixed $mixedMonetizationRoiD7 mixedMonetizationRoiD7
      *
      * @return $this
      */
@@ -11378,7 +11378,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets mixedMonetizationRoiD14
      *
-     * @param double $mixedMonetizationRoiD14 mixedMonetizationRoiD14
+     * @param double|mixed $mixedMonetizationRoiD14 mixedMonetizationRoiD14
      *
      * @return $this
      */
@@ -11402,7 +11402,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameMixedMonetizationRoiD1
      *
-     * @param double $miniGameMixedMonetizationRoiD1 miniGameMixedMonetizationRoiD1
+     * @param double|mixed $miniGameMixedMonetizationRoiD1 miniGameMixedMonetizationRoiD1
      *
      * @return $this
      */
@@ -11426,7 +11426,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameMixedMonetizationRoiD1ByReporting
      *
-     * @param double $miniGameMixedMonetizationRoiD1ByReporting miniGameMixedMonetizationRoiD1ByReporting
+     * @param double|mixed $miniGameMixedMonetizationRoiD1ByReporting miniGameMixedMonetizationRoiD1ByReporting
      *
      * @return $this
      */
@@ -11450,7 +11450,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameMixedMonetizationRoiD3
      *
-     * @param double $miniGameMixedMonetizationRoiD3 miniGameMixedMonetizationRoiD3
+     * @param double|mixed $miniGameMixedMonetizationRoiD3 miniGameMixedMonetizationRoiD3
      *
      * @return $this
      */
@@ -11474,7 +11474,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameMixedMonetizationRoiD3ByReporting
      *
-     * @param double $miniGameMixedMonetizationRoiD3ByReporting miniGameMixedMonetizationRoiD3ByReporting
+     * @param double|mixed $miniGameMixedMonetizationRoiD3ByReporting miniGameMixedMonetizationRoiD3ByReporting
      *
      * @return $this
      */
@@ -11498,7 +11498,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameMixedMonetizationRoiD7
      *
-     * @param double $miniGameMixedMonetizationRoiD7 miniGameMixedMonetizationRoiD7
+     * @param double|mixed $miniGameMixedMonetizationRoiD7 miniGameMixedMonetizationRoiD7
      *
      * @return $this
      */
@@ -11522,7 +11522,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameMixedMonetizationRoiD7ByReporting
      *
-     * @param double $miniGameMixedMonetizationRoiD7ByReporting miniGameMixedMonetizationRoiD7ByReporting
+     * @param double|mixed $miniGameMixedMonetizationRoiD7ByReporting miniGameMixedMonetizationRoiD7ByReporting
      *
      * @return $this
      */
@@ -11546,7 +11546,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameMixedMonetizationRoiD14
      *
-     * @param double $miniGameMixedMonetizationRoiD14 miniGameMixedMonetizationRoiD14
+     * @param double|mixed $miniGameMixedMonetizationRoiD14 miniGameMixedMonetizationRoiD14
      *
      * @return $this
      */
@@ -11570,7 +11570,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameMixedMonetizationRoiD14ByReporting
      *
-     * @param double $miniGameMixedMonetizationRoiD14ByReporting miniGameMixedMonetizationRoiD14ByReporting
+     * @param double|mixed $miniGameMixedMonetizationRoiD14ByReporting miniGameMixedMonetizationRoiD14ByReporting
      *
      * @return $this
      */
@@ -11594,7 +11594,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adPayingUsersD1
      *
-     * @param int $adPayingUsersD1 adPayingUsersD1
+     * @param int|mixed $adPayingUsersD1 adPayingUsersD1
      *
      * @return $this
      */
@@ -11618,7 +11618,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adPayingCostD1
      *
-     * @param int $adPayingCostD1 adPayingCostD1
+     * @param int|mixed $adPayingCostD1 adPayingCostD1
      *
      * @return $this
      */
@@ -11642,7 +11642,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adPurArpuCostD1
      *
-     * @param int $adPurArpuCostD1 adPurArpuCostD1
+     * @param int|mixed $adPurArpuCostD1 adPurArpuCostD1
      *
      * @return $this
      */
@@ -11666,7 +11666,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adMonetizationPenetrationRatD1
      *
-     * @param double $adMonetizationPenetrationRatD1 adMonetizationPenetrationRatD1
+     * @param double|mixed $adMonetizationPenetrationRatD1 adMonetizationPenetrationRatD1
      *
      * @return $this
      */
@@ -11690,7 +11690,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGamePayingArpuD1
      *
-     * @param int $miniGamePayingArpuD1 miniGamePayingArpuD1
+     * @param int|mixed $miniGamePayingArpuD1 miniGamePayingArpuD1
      *
      * @return $this
      */
@@ -11714,7 +11714,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets campaignId
      *
-     * @param int $campaignId campaignId
+     * @param int|mixed $campaignId campaignId
      *
      * @return $this
      */
@@ -11738,7 +11738,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets campaignName
      *
-     * @param string $campaignName campaignName
+     * @param string|mixed $campaignName campaignName
      *
      * @return $this
      */
@@ -11762,7 +11762,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webAddToCartCount
      *
-     * @param int $webAddToCartCount webAddToCartCount
+     * @param int|mixed $webAddToCartCount webAddToCartCount
      *
      * @return $this
      */
@@ -11786,7 +11786,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webAddToCartCost
      *
-     * @param int $webAddToCartCost webAddToCartCost
+     * @param int|mixed $webAddToCartCost webAddToCartCost
      *
      * @return $this
      */
@@ -11810,7 +11810,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -11834,7 +11834,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupName
      *
-     * @param string $adgroupName adgroupName
+     * @param string|mixed $adgroupName adgroupName
      *
      * @return $this
      */
@@ -11858,7 +11858,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets previewConversionsCount
      *
-     * @param int $previewConversionsCount previewConversionsCount
+     * @param int|mixed $previewConversionsCount previewConversionsCount
      *
      * @return $this
      */
@@ -11882,7 +11882,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets previewDeepConversionsCount
      *
-     * @param int $previewDeepConversionsCount previewDeepConversionsCount
+     * @param int|mixed $previewDeepConversionsCount previewDeepConversionsCount
      *
      * @return $this
      */
@@ -11906,7 +11906,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adId
      *
-     * @param int $adId adId
+     * @param int|mixed $adId adId
      *
      * @return $this
      */
@@ -11930,7 +11930,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adName
      *
-     * @param string $adName adName
+     * @param string|mixed $adName adName
      *
      * @return $this
      */
@@ -11954,7 +11954,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param string $promotedObjectType promotedObjectType
+     * @param string|mixed $promotedObjectType promotedObjectType
      *
      * @return $this
      */
@@ -11978,7 +11978,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectId
      *
-     * @param string $promotedObjectId promotedObjectId
+     * @param string|mixed $promotedObjectId promotedObjectId
      *
      * @return $this
      */
@@ -12002,7 +12002,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAccountId
      *
-     * @param string $wechatAccountId wechatAccountId
+     * @param string|mixed $wechatAccountId wechatAccountId
      *
      * @return $this
      */
@@ -12026,7 +12026,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAgencyId
      *
-     * @param string $wechatAgencyId wechatAgencyId
+     * @param string|mixed $wechatAgencyId wechatAgencyId
      *
      * @return $this
      */
@@ -12050,7 +12050,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets costDeviationRate
      *
-     * @param double $costDeviationRate costDeviationRate
+     * @param double|mixed $costDeviationRate costDeviationRate
      *
      * @return $this
      */
@@ -12074,7 +12074,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets compensationAmount
      *
-     * @param int $compensationAmount compensationAmount
+     * @param int|mixed $compensationAmount compensationAmount
      *
      * @return $this
      */
@@ -12098,7 +12098,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets viewUserCount
      *
-     * @param int $viewUserCount viewUserCount
+     * @param int|mixed $viewUserCount viewUserCount
      *
      * @return $this
      */
@@ -12122,7 +12122,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets avgViewPerUser
      *
-     * @param double $avgViewPerUser avgViewPerUser
+     * @param double|mixed $avgViewPerUser avgViewPerUser
      *
      * @return $this
      */
@@ -12146,7 +12146,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets clickUserCount
      *
-     * @param int $clickUserCount clickUserCount
+     * @param int|mixed $clickUserCount clickUserCount
      *
      * @return $this
      */
@@ -12170,7 +12170,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets imageClickUserCount
      *
-     * @param int $imageClickUserCount imageClickUserCount
+     * @param int|mixed $imageClickUserCount imageClickUserCount
      *
      * @return $this
      */
@@ -12194,7 +12194,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoClickUserCount
      *
-     * @param int $videoClickUserCount videoClickUserCount
+     * @param int|mixed $videoClickUserCount videoClickUserCount
      *
      * @return $this
      */
@@ -12218,7 +12218,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets linkClickUserCount
      *
-     * @param int $linkClickUserCount linkClickUserCount
+     * @param int|mixed $linkClickUserCount linkClickUserCount
      *
      * @return $this
      */
@@ -12242,7 +12242,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets portraitClickUserCount
      *
-     * @param int $portraitClickUserCount portraitClickUserCount
+     * @param int|mixed $portraitClickUserCount portraitClickUserCount
      *
      * @return $this
      */
@@ -12266,7 +12266,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets nicknameClickUserCount
      *
-     * @param int $nicknameClickUserCount nicknameClickUserCount
+     * @param int|mixed $nicknameClickUserCount nicknameClickUserCount
      *
      * @return $this
      */
@@ -12290,7 +12290,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets poiClickUserCount
      *
-     * @param int $poiClickUserCount poiClickUserCount
+     * @param int|mixed $poiClickUserCount poiClickUserCount
      *
      * @return $this
      */
@@ -12314,7 +12314,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets platformKeyPageViewUserCount
      *
-     * @param int $platformKeyPageViewUserCount platformKeyPageViewUserCount
+     * @param int|mixed $platformKeyPageViewUserCount platformKeyPageViewUserCount
      *
      * @return $this
      */
@@ -12338,7 +12338,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets platformKeyPageAvgViewPerUser
      *
-     * @param double $platformKeyPageAvgViewPerUser platformKeyPageAvgViewPerUser
+     * @param double|mixed $platformKeyPageAvgViewPerUser platformKeyPageAvgViewPerUser
      *
      * @return $this
      */
@@ -12362,7 +12362,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets platformKeyPageViewDuration
      *
-     * @param double $platformKeyPageViewDuration platformKeyPageViewDuration
+     * @param double|mixed $platformKeyPageViewDuration platformKeyPageViewDuration
      *
      * @return $this
      */
@@ -12386,7 +12386,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cpnClickButtonCost
      *
-     * @param int $cpnClickButtonCost cpnClickButtonCost
+     * @param int|mixed $cpnClickButtonCost cpnClickButtonCost
      *
      * @return $this
      */
@@ -12410,7 +12410,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets praiseUserCount
      *
-     * @param int $praiseUserCount praiseUserCount
+     * @param int|mixed $praiseUserCount praiseUserCount
      *
      * @return $this
      */
@@ -12434,7 +12434,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets commentUserCount
      *
-     * @param int $commentUserCount commentUserCount
+     * @param int|mixed $commentUserCount commentUserCount
      *
      * @return $this
      */
@@ -12458,7 +12458,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets orderCount
      *
-     * @param int $orderCount orderCount
+     * @param int|mixed $orderCount orderCount
      *
      * @return $this
      */
@@ -12482,7 +12482,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets orderRate
      *
-     * @param double $orderRate orderRate
+     * @param double|mixed $orderRate orderRate
      *
      * @return $this
      */
@@ -12506,7 +12506,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets questReservationPvCost
      *
-     * @param int $questReservationPvCost questReservationPvCost
+     * @param int|mixed $questReservationPvCost questReservationPvCost
      *
      * @return $this
      */
@@ -12530,7 +12530,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsRate
      *
-     * @param double $leadsRate leadsRate
+     * @param double|mixed $leadsRate leadsRate
      *
      * @return $this
      */
@@ -12554,7 +12554,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsUserCount
      *
-     * @param int $leadsUserCount leadsUserCount
+     * @param int|mixed $leadsUserCount leadsUserCount
      *
      * @return $this
      */
@@ -12578,7 +12578,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsCost
      *
-     * @param int $leadsCost leadsCost
+     * @param int|mixed $leadsCost leadsCost
      *
      * @return $this
      */
@@ -12602,7 +12602,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsUserRate
      *
-     * @param double $leadsUserRate leadsUserRate
+     * @param double|mixed $leadsUserRate leadsUserRate
      *
      * @return $this
      */
@@ -12626,7 +12626,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets validLeadsCost
      *
-     * @param int $validLeadsCost validLeadsCost
+     * @param int|mixed $validLeadsCost validLeadsCost
      *
      * @return $this
      */
@@ -12650,7 +12650,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets validLeadsRate
      *
-     * @param double $validLeadsRate validLeadsRate
+     * @param double|mixed $validLeadsRate validLeadsRate
      *
      * @return $this
      */
@@ -12674,7 +12674,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageConsultUserCount
      *
-     * @param int $pageConsultUserCount pageConsultUserCount
+     * @param int|mixed $pageConsultUserCount pageConsultUserCount
      *
      * @return $this
      */
@@ -12698,7 +12698,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets validPageConsultUserCount
      *
-     * @param int $validPageConsultUserCount validPageConsultUserCount
+     * @param int|mixed $validPageConsultUserCount validPageConsultUserCount
      *
      * @return $this
      */
@@ -12722,7 +12722,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets withdrDepWebUserCount
      *
-     * @param int $withdrDepWebUserCount withdrDepWebUserCount
+     * @param int|mixed $withdrDepWebUserCount withdrDepWebUserCount
      *
      * @return $this
      */
@@ -12746,7 +12746,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatMinigameRegisterCost
      *
-     * @param int $wechatMinigameRegisterCost wechatMinigameRegisterCost
+     * @param int|mixed $wechatMinigameRegisterCost wechatMinigameRegisterCost
      *
      * @return $this
      */
@@ -12770,7 +12770,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatMinigameRegisterRate
      *
-     * @param double $wechatMinigameRegisterRate wechatMinigameRegisterRate
+     * @param double|mixed $wechatMinigameRegisterRate wechatMinigameRegisterRate
      *
      * @return $this
      */
@@ -12794,7 +12794,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatMinigameArpu
      *
-     * @param double $wechatMinigameArpu wechatMinigameArpu
+     * @param double|mixed $wechatMinigameArpu wechatMinigameArpu
      *
      * @return $this
      */
@@ -12818,7 +12818,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatMinigameRetentionCount
      *
-     * @param int $wechatMinigameRetentionCount wechatMinigameRetentionCount
+     * @param int|mixed $wechatMinigameRetentionCount wechatMinigameRetentionCount
      *
      * @return $this
      */
@@ -12842,7 +12842,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatMinigameCheckoutCount
      *
-     * @param int $wechatMinigameCheckoutCount wechatMinigameCheckoutCount
+     * @param int|mixed $wechatMinigameCheckoutCount wechatMinigameCheckoutCount
      *
      * @return $this
      */
@@ -12866,7 +12866,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatMinigameCheckoutAmount
      *
-     * @param int $wechatMinigameCheckoutAmount wechatMinigameCheckoutAmount
+     * @param int|mixed $wechatMinigameCheckoutAmount wechatMinigameCheckoutAmount
      *
      * @return $this
      */
@@ -12890,7 +12890,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountFollowCount
      *
-     * @param int $officialAccountFollowCount officialAccountFollowCount
+     * @param int|mixed $officialAccountFollowCount officialAccountFollowCount
      *
      * @return $this
      */
@@ -12914,7 +12914,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountFollowCost
      *
-     * @param int $officialAccountFollowCost officialAccountFollowCost
+     * @param int|mixed $officialAccountFollowCost officialAccountFollowCost
      *
      * @return $this
      */
@@ -12938,7 +12938,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountFollowRate
      *
-     * @param double $officialAccountFollowRate officialAccountFollowRate
+     * @param double|mixed $officialAccountFollowRate officialAccountFollowRate
      *
      * @return $this
      */
@@ -12962,7 +12962,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountRegisterUserCount
      *
-     * @param int $officialAccountRegisterUserCount officialAccountRegisterUserCount
+     * @param int|mixed $officialAccountRegisterUserCount officialAccountRegisterUserCount
      *
      * @return $this
      */
@@ -12986,7 +12986,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountRegisterRate
      *
-     * @param double $officialAccountRegisterRate officialAccountRegisterRate
+     * @param double|mixed $officialAccountRegisterRate officialAccountRegisterRate
      *
      * @return $this
      */
@@ -13010,7 +13010,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountRegisterCost
      *
-     * @param int $officialAccountRegisterCost officialAccountRegisterCost
+     * @param int|mixed $officialAccountRegisterCost officialAccountRegisterCost
      *
      * @return $this
      */
@@ -13034,7 +13034,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountRegisterAmount
      *
-     * @param int $officialAccountRegisterAmount officialAccountRegisterAmount
+     * @param int|mixed $officialAccountRegisterAmount officialAccountRegisterAmount
      *
      * @return $this
      */
@@ -13058,7 +13058,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountRegisterRoi
      *
-     * @param int $officialAccountRegisterRoi officialAccountRegisterRoi
+     * @param int|mixed $officialAccountRegisterRoi officialAccountRegisterRoi
      *
      * @return $this
      */
@@ -13082,7 +13082,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountApplyCount
      *
-     * @param int $officialAccountApplyCount officialAccountApplyCount
+     * @param int|mixed $officialAccountApplyCount officialAccountApplyCount
      *
      * @return $this
      */
@@ -13106,7 +13106,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountApplyUserCount
      *
-     * @param int $officialAccountApplyUserCount officialAccountApplyUserCount
+     * @param int|mixed $officialAccountApplyUserCount officialAccountApplyUserCount
      *
      * @return $this
      */
@@ -13130,7 +13130,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountApplyRate
      *
-     * @param double $officialAccountApplyRate officialAccountApplyRate
+     * @param double|mixed $officialAccountApplyRate officialAccountApplyRate
      *
      * @return $this
      */
@@ -13154,7 +13154,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountApplyCost
      *
-     * @param int $officialAccountApplyCost officialAccountApplyCost
+     * @param int|mixed $officialAccountApplyCost officialAccountApplyCost
      *
      * @return $this
      */
@@ -13178,7 +13178,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountApplyAmount
      *
-     * @param int $officialAccountApplyAmount officialAccountApplyAmount
+     * @param int|mixed $officialAccountApplyAmount officialAccountApplyAmount
      *
      * @return $this
      */
@@ -13202,7 +13202,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountApplyRoi
      *
-     * @param int $officialAccountApplyRoi officialAccountApplyRoi
+     * @param int|mixed $officialAccountApplyRoi officialAccountApplyRoi
      *
      * @return $this
      */
@@ -13226,7 +13226,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountOrderCount
      *
-     * @param int $officialAccountOrderCount officialAccountOrderCount
+     * @param int|mixed $officialAccountOrderCount officialAccountOrderCount
      *
      * @return $this
      */
@@ -13250,7 +13250,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountFirstDayOrderCount
      *
-     * @param int $officialAccountFirstDayOrderCount officialAccountFirstDayOrderCount
+     * @param int|mixed $officialAccountFirstDayOrderCount officialAccountFirstDayOrderCount
      *
      * @return $this
      */
@@ -13274,7 +13274,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountOrderUserCount
      *
-     * @param int $officialAccountOrderUserCount officialAccountOrderUserCount
+     * @param int|mixed $officialAccountOrderUserCount officialAccountOrderUserCount
      *
      * @return $this
      */
@@ -13298,7 +13298,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountOrderRate
      *
-     * @param double $officialAccountOrderRate officialAccountOrderRate
+     * @param double|mixed $officialAccountOrderRate officialAccountOrderRate
      *
      * @return $this
      */
@@ -13322,7 +13322,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountOrderCost
      *
-     * @param int $officialAccountOrderCost officialAccountOrderCost
+     * @param int|mixed $officialAccountOrderCost officialAccountOrderCost
      *
      * @return $this
      */
@@ -13346,7 +13346,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountOrderAmount
      *
-     * @param int $officialAccountOrderAmount officialAccountOrderAmount
+     * @param int|mixed $officialAccountOrderAmount officialAccountOrderAmount
      *
      * @return $this
      */
@@ -13370,7 +13370,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountFirstDayOrderAmount
      *
-     * @param int $officialAccountFirstDayOrderAmount officialAccountFirstDayOrderAmount
+     * @param int|mixed $officialAccountFirstDayOrderAmount officialAccountFirstDayOrderAmount
      *
      * @return $this
      */
@@ -13394,7 +13394,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountOrderRoi
      *
-     * @param int $officialAccountOrderRoi officialAccountOrderRoi
+     * @param int|mixed $officialAccountOrderRoi officialAccountOrderRoi
      *
      * @return $this
      */
@@ -13418,7 +13418,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountConsultCount
      *
-     * @param int $officialAccountConsultCount officialAccountConsultCount
+     * @param int|mixed $officialAccountConsultCount officialAccountConsultCount
      *
      * @return $this
      */
@@ -13442,7 +13442,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountReaderCount
      *
-     * @param int $officialAccountReaderCount officialAccountReaderCount
+     * @param int|mixed $officialAccountReaderCount officialAccountReaderCount
      *
      * @return $this
      */
@@ -13466,7 +13466,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountCreditApplyUserCount
      *
-     * @param int $officialAccountCreditApplyUserCount officialAccountCreditApplyUserCount
+     * @param int|mixed $officialAccountCreditApplyUserCount officialAccountCreditApplyUserCount
      *
      * @return $this
      */
@@ -13490,7 +13490,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets officialAccountCreditUserCount
      *
-     * @param int $officialAccountCreditUserCount officialAccountCreditUserCount
+     * @param int|mixed $officialAccountCreditUserCount officialAccountCreditUserCount
      *
      * @return $this
      */
@@ -13514,7 +13514,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets couponGetCost
      *
-     * @param int $couponGetCost couponGetCost
+     * @param int|mixed $couponGetCost couponGetCost
      *
      * @return $this
      */
@@ -13538,7 +13538,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets couponGetRate
      *
-     * @param double $couponGetRate couponGetRate
+     * @param double|mixed $couponGetRate couponGetRate
      *
      * @return $this
      */
@@ -13562,7 +13562,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets couponUseCount
      *
-     * @param int $couponUseCount couponUseCount
+     * @param int|mixed $couponUseCount couponUseCount
      *
      * @return $this
      */
@@ -13586,7 +13586,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets forwardUserCount
      *
-     * @param int $forwardUserCount forwardUserCount
+     * @param int|mixed $forwardUserCount forwardUserCount
      *
      * @return $this
      */
@@ -13610,7 +13610,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoOuterPlayUserCount
      *
-     * @param int $videoOuterPlayUserCount videoOuterPlayUserCount
+     * @param int|mixed $videoOuterPlayUserCount videoOuterPlayUserCount
      *
      * @return $this
      */
@@ -13634,7 +13634,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoInnerPlayUserCount
      *
-     * @param int $videoInnerPlayUserCount videoInnerPlayUserCount
+     * @param int|mixed $videoInnerPlayUserCount videoInnerPlayUserCount
      *
      * @return $this
      */
@@ -13658,7 +13658,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets poiId
      *
-     * @param string $poiId poiId
+     * @param string|mixed $poiId poiId
      *
      * @return $this
      */

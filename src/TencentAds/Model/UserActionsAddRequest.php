@@ -229,7 +229,7 @@ class UserActionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class UserActionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets userActionSetId
      *
-     * @param int $userActionSetId userActionSetId
+     * @param int|mixed $userActionSetId userActionSetId
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class UserActionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets actions
      *
-     * @param \TencentAds\Model\UserAction[] $actions actions
+     * @param \TencentAds\Model\UserAction[]|mixed $actions actions
      *
      * @return $this
      */

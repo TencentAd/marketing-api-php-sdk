@@ -230,7 +230,7 @@ class CanvasAppIosSpecType implements ModelInterface, ArrayAccess
     /**
      * Sets appIosId
      *
-     * @param string $appIosId appIosId
+     * @param string|mixed $appIosId appIosId
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class CanvasAppIosSpecType implements ModelInterface, ArrayAccess
     /**
      * Sets deepLinkUrl
      *
-     * @param string $deepLinkUrl deepLinkUrl
+     * @param string|mixed $deepLinkUrl deepLinkUrl
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class CanvasAppIosSpecType implements ModelInterface, ArrayAccess
     /**
      * Sets jumpAppstoreType
      *
-     * @param int $jumpAppstoreType jumpAppstoreType
+     * @param int|mixed $jumpAppstoreType jumpAppstoreType
      *
      * @return $this
      */

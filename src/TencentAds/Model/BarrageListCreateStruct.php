@@ -218,7 +218,7 @@ class BarrageListCreateStruct implements ModelInterface, ArrayAccess
     /**
      * Sets id
      *
-     * @param int $id id
+     * @param int|mixed $id id
      *
      * @return $this
      */

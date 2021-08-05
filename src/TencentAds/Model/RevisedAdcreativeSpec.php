@@ -224,7 +224,7 @@ class RevisedAdcreativeSpec implements ModelInterface, ArrayAccess
     /**
      * Sets revisedAdcreativeElements
      *
-     * @param \TencentAds\Model\RevisedAdcreativeElements $revisedAdcreativeElements revisedAdcreativeElements
+     * @param \TencentAds\Model\RevisedAdcreativeElements|mixed $revisedAdcreativeElements revisedAdcreativeElements
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class RevisedAdcreativeSpec implements ModelInterface, ArrayAccess
     /**
      * Sets revisedPageSpec
      *
-     * @param \TencentAds\Model\RevisedPageSpec $revisedPageSpec revisedPageSpec
+     * @param \TencentAds\Model\RevisedPageSpec|mixed $revisedPageSpec revisedPageSpec
      *
      * @return $this
      */

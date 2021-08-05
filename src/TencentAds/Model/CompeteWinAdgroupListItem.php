@@ -230,7 +230,7 @@ class CompeteWinAdgroupListItem implements ModelInterface, ArrayAccess
     /**
      * Sets rank
      *
-     * @param int $rank rank
+     * @param int|mixed $rank rank
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class CompeteWinAdgroupListItem implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class CompeteWinAdgroupListItem implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupName
      *
-     * @param string $adgroupName adgroupName
+     * @param string|mixed $adgroupName adgroupName
      *
      * @return $this
      */

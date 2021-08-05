@@ -302,7 +302,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Sets audienceId
      *
-     * @param int $audienceId audienceId
+     * @param int|mixed $audienceId audienceId
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Sets customAudienceFileId
      *
-     * @param int $customAudienceFileId customAudienceFileId
+     * @param int|mixed $customAudienceFileId customAudienceFileId
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param string $name name
+     * @param string|mixed $name name
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Sets userIdType
      *
-     * @param \TencentAds\Model\UserIdType $userIdType userIdType
+     * @param \TencentAds\Model\UserIdType|mixed $userIdType userIdType
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Sets operationType
      *
-     * @param \TencentAds\Model\OperationType $operationType operationType
+     * @param \TencentAds\Model\OperationType|mixed $operationType operationType
      *
      * @return $this
      */
@@ -422,7 +422,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Sets openAppId
      *
-     * @param string $openAppId openAppId
+     * @param string|mixed $openAppId openAppId
      *
      * @return $this
      */
@@ -446,7 +446,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Sets saltId
      *
-     * @param string $saltId saltId
+     * @param string|mixed $saltId saltId
      *
      * @return $this
      */
@@ -470,7 +470,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Sets processStatus
      *
-     * @param \TencentAds\Model\FileProcessStatus $processStatus processStatus
+     * @param \TencentAds\Model\FileProcessStatus|mixed $processStatus processStatus
      *
      * @return $this
      */
@@ -494,7 +494,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Sets processCode
      *
-     * @param int $processCode processCode
+     * @param int|mixed $processCode processCode
      *
      * @return $this
      */
@@ -518,7 +518,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Sets errorMessage
      *
-     * @param string $errorMessage errorMessage
+     * @param string|mixed $errorMessage errorMessage
      *
      * @return $this
      */
@@ -542,7 +542,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Sets lineCount
      *
-     * @param int $lineCount lineCount
+     * @param int|mixed $lineCount lineCount
      *
      * @return $this
      */
@@ -566,7 +566,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Sets validLineCount
      *
-     * @param int $validLineCount validLineCount
+     * @param int|mixed $validLineCount validLineCount
      *
      * @return $this
      */
@@ -590,7 +590,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Sets userCount
      *
-     * @param int $userCount userCount
+     * @param int|mixed $userCount userCount
      *
      * @return $this
      */
@@ -614,7 +614,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Sets size
      *
-     * @param int $size size
+     * @param int|mixed $size size
      *
      * @return $this
      */
@@ -638,7 +638,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param string $createdTime createdTime
+     * @param string|mixed $createdTime createdTime
      *
      * @return $this
      */

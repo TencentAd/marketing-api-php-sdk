@@ -92,11 +92,11 @@ class VideosApi
      *
      * 添加视频文件
      *
-     * @param  int $accountId accountId (required)
-     * @param  \SplFileObject $videoFile videoFile (required)
-     * @param  string $signature signature (required)
-     * @param  string $description description (optional)
-     * @param  int $adcreativeTemplateId adcreativeTemplateId (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  \SplFileObject|mixed $videoFile videoFile (required)
+     * @param  string|mixed $signature signature (required)
+     * @param  string|mixed $description description (optional)
+     * @param  int|mixed $adcreativeTemplateId adcreativeTemplateId (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -113,11 +113,11 @@ class VideosApi
      *
      * 添加视频文件
      *
-     * @param  int $accountId (required)
-     * @param  \SplFileObject $videoFile (required)
-     * @param  string $signature (required)
-     * @param  string $description (optional)
-     * @param  int $adcreativeTemplateId (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \SplFileObject|mixed $videoFile (required)
+     * @param  string|mixed $signature (required)
+     * @param  string|mixed $description (optional)
+     * @param  int|mixed $adcreativeTemplateId (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -192,11 +192,11 @@ class VideosApi
      *
      * 添加视频文件
      *
-     * @param  int $accountId (required)
-     * @param  \SplFileObject $videoFile (required)
-     * @param  string $signature (required)
-     * @param  string $description (optional)
-     * @param  int $adcreativeTemplateId (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \SplFileObject|mixed $videoFile (required)
+     * @param  string|mixed $signature (required)
+     * @param  string|mixed $description (optional)
+     * @param  int|mixed $adcreativeTemplateId (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -216,11 +216,11 @@ class VideosApi
      *
      * 添加视频文件
      *
-     * @param  int $accountId (required)
-     * @param  \SplFileObject $videoFile (required)
-     * @param  string $signature (required)
-     * @param  string $description (optional)
-     * @param  int $adcreativeTemplateId (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \SplFileObject|mixed $videoFile (required)
+     * @param  string|mixed $signature (required)
+     * @param  string|mixed $description (optional)
+     * @param  int|mixed $adcreativeTemplateId (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -270,11 +270,11 @@ class VideosApi
     /**
      * Create request for operation 'videosAdd'
      *
-     * @param  int $accountId (required)
-     * @param  \SplFileObject $videoFile (required)
-     * @param  string $signature (required)
-     * @param  string $description (optional)
-     * @param  int $adcreativeTemplateId (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \SplFileObject|mixed $videoFile (required)
+     * @param  string|mixed $signature (required)
+     * @param  string|mixed $description (optional)
+     * @param  int|mixed $adcreativeTemplateId (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -424,7 +424,7 @@ class VideosApi
      *
      * 删除视频
      *
-     * @param  \TencentAds\Model\VideosDeleteRequest $data data (required)
+     * @param  \TencentAds\Model\VideosDeleteRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -441,7 +441,7 @@ class VideosApi
      *
      * 删除视频
      *
-     * @param  \TencentAds\Model\VideosDeleteRequest $data (required)
+     * @param  \TencentAds\Model\VideosDeleteRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -516,7 +516,7 @@ class VideosApi
      *
      * 删除视频
      *
-     * @param  \TencentAds\Model\VideosDeleteRequest $data (required)
+     * @param  \TencentAds\Model\VideosDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -536,7 +536,7 @@ class VideosApi
      *
      * 删除视频
      *
-     * @param  \TencentAds\Model\VideosDeleteRequest $data (required)
+     * @param  \TencentAds\Model\VideosDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -586,7 +586,7 @@ class VideosApi
     /**
      * Create request for operation 'videosDelete'
      *
-     * @param  \TencentAds\Model\VideosDeleteRequest $data (required)
+     * @param  \TencentAds\Model\VideosDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -706,11 +706,11 @@ class VideosApi
      *
      * 获取视频文件
      *
-     * @param  int $accountId accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -727,11 +727,11 @@ class VideosApi
      *
      * 获取视频文件
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -806,11 +806,11 @@ class VideosApi
      *
      * 获取视频文件
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -830,11 +830,11 @@ class VideosApi
      *
      * 获取视频文件
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -884,11 +884,11 @@ class VideosApi
     /**
      * Create request for operation 'videosGet'
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1031,7 +1031,7 @@ class VideosApi
      *
      * 修改视频信息
      *
-     * @param  \TencentAds\Model\VideosUpdateRequest $data data (required)
+     * @param  \TencentAds\Model\VideosUpdateRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1048,7 +1048,7 @@ class VideosApi
      *
      * 修改视频信息
      *
-     * @param  \TencentAds\Model\VideosUpdateRequest $data (required)
+     * @param  \TencentAds\Model\VideosUpdateRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1123,7 +1123,7 @@ class VideosApi
      *
      * 修改视频信息
      *
-     * @param  \TencentAds\Model\VideosUpdateRequest $data (required)
+     * @param  \TencentAds\Model\VideosUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1143,7 +1143,7 @@ class VideosApi
      *
      * 修改视频信息
      *
-     * @param  \TencentAds\Model\VideosUpdateRequest $data (required)
+     * @param  \TencentAds\Model\VideosUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1193,7 +1193,7 @@ class VideosApi
     /**
      * Create request for operation 'videosUpdate'
      *
-     * @param  \TencentAds\Model\VideosUpdateRequest $data (required)
+     * @param  \TencentAds\Model\VideosUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

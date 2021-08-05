@@ -92,7 +92,7 @@ class ChannelsApi
      *
      * 创建广告
      *
-     * @param  \TencentAds\Model\ChannelsAddRequest $data data (required)
+     * @param  \TencentAds\Model\ChannelsAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class ChannelsApi
      *
      * 创建广告
      *
-     * @param  \TencentAds\Model\ChannelsAddRequest $data (required)
+     * @param  \TencentAds\Model\ChannelsAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class ChannelsApi
      *
      * 创建广告
      *
-     * @param  \TencentAds\Model\ChannelsAddRequest $data (required)
+     * @param  \TencentAds\Model\ChannelsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class ChannelsApi
      *
      * 创建广告
      *
-     * @param  \TencentAds\Model\ChannelsAddRequest $data (required)
+     * @param  \TencentAds\Model\ChannelsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class ChannelsApi
     /**
      * Create request for operation 'channelsAdd'
      *
-     * @param  \TencentAds\Model\ChannelsAddRequest $data (required)
+     * @param  \TencentAds\Model\ChannelsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,7 +374,7 @@ class ChannelsApi
      *
      * 拉取广告列表
      *
-     * @param  \TencentAds\Model\ChannelsGetRequest $data data (required)
+     * @param  \TencentAds\Model\ChannelsGetRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -391,7 +391,7 @@ class ChannelsApi
      *
      * 拉取广告列表
      *
-     * @param  \TencentAds\Model\ChannelsGetRequest $data (required)
+     * @param  \TencentAds\Model\ChannelsGetRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -466,7 +466,7 @@ class ChannelsApi
      *
      * 拉取广告列表
      *
-     * @param  \TencentAds\Model\ChannelsGetRequest $data (required)
+     * @param  \TencentAds\Model\ChannelsGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -486,7 +486,7 @@ class ChannelsApi
      *
      * 拉取广告列表
      *
-     * @param  \TencentAds\Model\ChannelsGetRequest $data (required)
+     * @param  \TencentAds\Model\ChannelsGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -536,7 +536,7 @@ class ChannelsApi
     /**
      * Create request for operation 'channelsGet'
      *
-     * @param  \TencentAds\Model\ChannelsGetRequest $data (required)
+     * @param  \TencentAds\Model\ChannelsGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -656,7 +656,7 @@ class ChannelsApi
      *
      * 更新广告
      *
-     * @param  \TencentAds\Model\ChannelsUpdateRequest $data data (required)
+     * @param  \TencentAds\Model\ChannelsUpdateRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -673,7 +673,7 @@ class ChannelsApi
      *
      * 更新广告
      *
-     * @param  \TencentAds\Model\ChannelsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\ChannelsUpdateRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -748,7 +748,7 @@ class ChannelsApi
      *
      * 更新广告
      *
-     * @param  \TencentAds\Model\ChannelsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\ChannelsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -768,7 +768,7 @@ class ChannelsApi
      *
      * 更新广告
      *
-     * @param  \TencentAds\Model\ChannelsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\ChannelsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -818,7 +818,7 @@ class ChannelsApi
     /**
      * Create request for operation 'channelsUpdate'
      *
-     * @param  \TencentAds\Model\ChannelsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\ChannelsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

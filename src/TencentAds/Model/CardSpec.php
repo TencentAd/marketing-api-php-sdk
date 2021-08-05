@@ -224,7 +224,7 @@ class CardSpec implements ModelInterface, ArrayAccess
     /**
      * Sets title
      *
-     * @param string $title title
+     * @param string|mixed $title title
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class CardSpec implements ModelInterface, ArrayAccess
     /**
      * Sets cardId
      *
-     * @param string $cardId cardId
+     * @param string|mixed $cardId cardId
      *
      * @return $this
      */

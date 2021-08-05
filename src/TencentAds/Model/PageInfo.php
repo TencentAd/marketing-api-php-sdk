@@ -236,7 +236,7 @@ class PageInfo implements ModelInterface, ArrayAccess
     /**
      * Sets page
      *
-     * @param int $page page
+     * @param int|mixed $page page
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class PageInfo implements ModelInterface, ArrayAccess
     /**
      * Sets pageSize
      *
-     * @param int $pageSize pageSize
+     * @param int|mixed $pageSize pageSize
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class PageInfo implements ModelInterface, ArrayAccess
     /**
      * Sets totalNumber
      *
-     * @param int $totalNumber totalNumber
+     * @param int|mixed $totalNumber totalNumber
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class PageInfo implements ModelInterface, ArrayAccess
     /**
      * Sets totalPage
      *
-     * @param int $totalPage totalPage
+     * @param int|mixed $totalPage totalPage
      *
      * @return $this
      */

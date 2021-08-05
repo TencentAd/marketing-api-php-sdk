@@ -386,7 +386,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets adcreativeName
      *
-     * @param string $adcreativeName adcreativeName
+     * @param string|mixed $adcreativeName adcreativeName
      *
      * @return $this
      */
@@ -410,7 +410,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets siteSet
      *
-     * @param string[] $siteSet siteSet
+     * @param string[]|mixed $siteSet siteSet
      *
      * @return $this
      */
@@ -434,7 +434,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObjectType|mixed $promotedObjectType promotedObjectType
      *
      * @return $this
      */
@@ -458,7 +458,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectId
      *
-     * @param string $promotedObjectId promotedObjectId
+     * @param string|mixed $promotedObjectId promotedObjectId
      *
      * @return $this
      */
@@ -482,7 +482,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets pageType
      *
-     * @param \TencentAds\Model\PageTypeRead $pageType pageType
+     * @param \TencentAds\Model\PageTypeRead|mixed $pageType pageType
      *
      * @return $this
      */
@@ -506,7 +506,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets pageSpec
      *
-     * @param \TencentAds\Model\PageSpec $pageSpec pageSpec
+     * @param \TencentAds\Model\PageSpec|mixed $pageSpec pageSpec
      *
      * @return $this
      */
@@ -530,7 +530,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets qqMiniGameTrackingQueryString
      *
-     * @param string $qqMiniGameTrackingQueryString qqMiniGameTrackingQueryString
+     * @param string|mixed $qqMiniGameTrackingQueryString qqMiniGameTrackingQueryString
      *
      * @return $this
      */
@@ -554,7 +554,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets deepLinkUrl
      *
-     * @param string $deepLinkUrl deepLinkUrl
+     * @param string|mixed $deepLinkUrl deepLinkUrl
      *
      * @return $this
      */
@@ -578,7 +578,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets universalLinkUrl
      *
-     * @param string $universalLinkUrl universalLinkUrl
+     * @param string|mixed $universalLinkUrl universalLinkUrl
      *
      * @return $this
      */
@@ -602,7 +602,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets profileId
      *
-     * @param int $profileId profileId
+     * @param int|mixed $profileId profileId
      *
      * @return $this
      */
@@ -626,7 +626,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -650,7 +650,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedTime
      *
-     * @param int $lastModifiedTime lastModifiedTime
+     * @param int|mixed $lastModifiedTime lastModifiedTime
      *
      * @return $this
      */
@@ -674,7 +674,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets shareContentSpec
      *
-     * @param \TencentAds\Model\ShareContentSpec $shareContentSpec shareContentSpec
+     * @param \TencentAds\Model\ShareContentSpec|mixed $shareContentSpec shareContentSpec
      *
      * @return $this
      */
@@ -698,7 +698,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets dynamicAdcreativeSpec
      *
-     * @param \TencentAds\Model\DynamicAdcreativeSpec $dynamicAdcreativeSpec dynamicAdcreativeSpec
+     * @param \TencentAds\Model\DynamicAdcreativeSpec|mixed $dynamicAdcreativeSpec dynamicAdcreativeSpec
      *
      * @return $this
      */
@@ -722,7 +722,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets isDeleted
      *
-     * @param bool $isDeleted isDeleted
+     * @param bool|mixed $isDeleted isDeleted
      *
      * @return $this
      */
@@ -746,7 +746,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets isDynamicCreative
      *
-     * @param bool $isDynamicCreative isDynamicCreative
+     * @param bool|mixed $isDynamicCreative isDynamicCreative
      *
      * @return $this
      */
@@ -770,7 +770,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets componentId
      *
-     * @param int $componentId componentId
+     * @param int|mixed $componentId componentId
      *
      * @return $this
      */
@@ -794,7 +794,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets onlineEnabled
      *
-     * @param bool $onlineEnabled onlineEnabled
+     * @param bool|mixed $onlineEnabled onlineEnabled
      *
      * @return $this
      */
@@ -818,7 +818,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets revisedAdcreativeSpec
      *
-     * @param \TencentAds\Model\RevisedAdcreativeSpec $revisedAdcreativeSpec revisedAdcreativeSpec
+     * @param \TencentAds\Model\RevisedAdcreativeSpec|mixed $revisedAdcreativeSpec revisedAdcreativeSpec
      *
      * @return $this
      */
@@ -842,7 +842,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets category
      *
-     * @param int[] $category category
+     * @param int[]|mixed $category category
      *
      * @return $this
      */
@@ -866,7 +866,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets label
      *
-     * @param string[] $label label
+     * @param string[]|mixed $label label
      *
      * @return $this
      */
@@ -890,7 +890,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets unionMarketSwitch
      *
-     * @param bool $unionMarketSwitch unionMarketSwitch
+     * @param bool|mixed $unionMarketSwitch unionMarketSwitch
      *
      * @return $this
      */
@@ -914,7 +914,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets playablePageMaterialId
      *
-     * @param string $playablePageMaterialId playablePageMaterialId
+     * @param string|mixed $playablePageMaterialId playablePageMaterialId
      *
      * @return $this
      */
@@ -938,7 +938,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets videoEndPage
      *
-     * @param \TencentAds\Model\VideoEndPageSpec $videoEndPage videoEndPage
+     * @param \TencentAds\Model\VideoEndPageSpec|mixed $videoEndPage videoEndPage
      *
      * @return $this
      */
@@ -962,7 +962,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets feedsVideoCommentSwitch
      *
-     * @param bool $feedsVideoCommentSwitch feedsVideoCommentSwitch
+     * @param bool|mixed $feedsVideoCommentSwitch feedsVideoCommentSwitch
      *
      * @return $this
      */
@@ -986,7 +986,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets conversionDataType
      *
-     * @param \TencentAds\Model\ConversionDataType $conversionDataType conversionDataType
+     * @param \TencentAds\Model\ConversionDataType|mixed $conversionDataType conversionDataType
      *
      * @return $this
      */
@@ -1010,7 +1010,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets conversionTargetType
      *
-     * @param \TencentAds\Model\ConversionTargetType $conversionTargetType conversionTargetType
+     * @param \TencentAds\Model\ConversionTargetType|mixed $conversionTargetType conversionTargetType
      *
      * @return $this
      */
@@ -1034,7 +1034,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets adcreativeTemplateId
      *
-     * @param int $adcreativeTemplateId adcreativeTemplateId
+     * @param int|mixed $adcreativeTemplateId adcreativeTemplateId
      *
      * @return $this
      */
@@ -1058,7 +1058,7 @@ class PreviewAdcreative implements ModelInterface, ArrayAccess
     /**
      * Sets adcreativeElements
      *
-     * @param \TencentAds\Model\AdcreativeCreativeElements $adcreativeElements adcreativeElements
+     * @param \TencentAds\Model\AdcreativeCreativeElements|mixed $adcreativeElements adcreativeElements
      *
      * @return $this
      */

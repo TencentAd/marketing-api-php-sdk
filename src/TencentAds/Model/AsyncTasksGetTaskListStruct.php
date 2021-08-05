@@ -248,7 +248,7 @@ class AsyncTasksGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets taskId
      *
-     * @param int $taskId taskId
+     * @param int|mixed $taskId taskId
      *
      * @return $this
      */
@@ -272,7 +272,7 @@ class AsyncTasksGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets taskName
      *
-     * @param string $taskName taskName
+     * @param string|mixed $taskName taskName
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class AsyncTasksGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets taskType
      *
-     * @param \TencentAds\Model\TaskType $taskType taskType
+     * @param \TencentAds\Model\TaskType|mixed $taskType taskType
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class AsyncTasksGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \TencentAds\Model\TaskStatus $status status
+     * @param \TencentAds\Model\TaskStatus|mixed $status status
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class AsyncTasksGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class AsyncTasksGetTaskListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets result
      *
-     * @param \TencentAds\Model\AsyncTasksGetResult $result result
+     * @param \TencentAds\Model\AsyncTasksGetResult|mixed $result result
      *
      * @return $this
      */

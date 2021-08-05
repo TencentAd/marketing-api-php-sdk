@@ -236,7 +236,7 @@ class CreatePageResponse implements ModelInterface, ArrayAccess
     /**
      * Sets landingPageId
      *
-     * @param int $landingPageId landingPageId
+     * @param int|mixed $landingPageId landingPageId
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class CreatePageResponse implements ModelInterface, ArrayAccess
     /**
      * Sets id
      *
-     * @param string $id id
+     * @param string|mixed $id id
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class CreatePageResponse implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param int $code code
+     * @param int|mixed $code code
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class CreatePageResponse implements ModelInterface, ArrayAccess
     /**
      * Sets message
      *
-     * @param string $message message
+     * @param string|mixed $message message
      *
      * @return $this
      */

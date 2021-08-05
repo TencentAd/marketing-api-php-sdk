@@ -223,7 +223,7 @@ class AdgroupsUpdateBidAmountRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class AdgroupsUpdateBidAmountRequest implements ModelInterface, ArrayAccess
     /**
      * Sets updateBidAmountSpec
      *
-     * @param \TencentAds\Model\UpdateBidAmountStruct[] $updateBidAmountSpec updateBidAmountSpec
+     * @param \TencentAds\Model\UpdateBidAmountStruct[]|mixed $updateBidAmountSpec updateBidAmountSpec
      *
      * @return $this
      */

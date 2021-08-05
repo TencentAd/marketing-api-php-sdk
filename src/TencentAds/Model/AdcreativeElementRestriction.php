@@ -242,7 +242,7 @@ class AdcreativeElementRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets textRestriction
      *
-     * @param \TencentAds\Model\TextRestriction $textRestriction textRestriction
+     * @param \TencentAds\Model\TextRestriction|mixed $textRestriction textRestriction
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class AdcreativeElementRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets imageRestriction
      *
-     * @param \TencentAds\Model\ImageRestriction $imageRestriction imageRestriction
+     * @param \TencentAds\Model\ImageRestriction|mixed $imageRestriction imageRestriction
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class AdcreativeElementRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets urlRestriction
      *
-     * @param \TencentAds\Model\UrlRestriction $urlRestriction urlRestriction
+     * @param \TencentAds\Model\UrlRestriction|mixed $urlRestriction urlRestriction
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class AdcreativeElementRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets videoRestriction
      *
-     * @param \TencentAds\Model\VideoRestriction $videoRestriction videoRestriction
+     * @param \TencentAds\Model\VideoRestriction|mixed $videoRestriction videoRestriction
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class AdcreativeElementRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets numberRestriction
      *
-     * @param \TencentAds\Model\NumberRestriction $numberRestriction numberRestriction
+     * @param \TencentAds\Model\NumberRestriction|mixed $numberRestriction numberRestriction
      *
      * @return $this
      */

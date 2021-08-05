@@ -266,7 +266,7 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets elementType
      *
-     * @param \TencentAds\Model\CanvasPageElementType $elementType elementType
+     * @param \TencentAds\Model\CanvasPageElementType|mixed $elementType elementType
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets topImageSpec
      *
-     * @param \TencentAds\Model\TopImageSpec $topImageSpec topImageSpec
+     * @param \TencentAds\Model\TopImageSpec|mixed $topImageSpec topImageSpec
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets topSliderSpec
      *
-     * @param \TencentAds\Model\TopSliderSpec $topSliderSpec topSliderSpec
+     * @param \TencentAds\Model\TopSliderSpec|mixed $topSliderSpec topSliderSpec
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets topVideoSpec
      *
-     * @param \TencentAds\Model\TopVideoSpec $topVideoSpec topVideoSpec
+     * @param \TencentAds\Model\TopVideoSpec|mixed $topVideoSpec topVideoSpec
      *
      * @return $this
      */
@@ -362,7 +362,7 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets imageSpec
      *
-     * @param \TencentAds\Model\ImageSpec $imageSpec imageSpec
+     * @param \TencentAds\Model\ImageSpec|mixed $imageSpec imageSpec
      *
      * @return $this
      */
@@ -386,7 +386,7 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets sliderSpec
      *
-     * @param \TencentAds\Model\SliderSpec $sliderSpec sliderSpec
+     * @param \TencentAds\Model\SliderSpec|mixed $sliderSpec sliderSpec
      *
      * @return $this
      */
@@ -410,7 +410,7 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoSpec
      *
-     * @param \TencentAds\Model\VideoSpec $videoSpec videoSpec
+     * @param \TencentAds\Model\VideoSpec|mixed $videoSpec videoSpec
      *
      * @return $this
      */
@@ -434,7 +434,7 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets textSpec
      *
-     * @param \TencentAds\Model\TextSpec $textSpec textSpec
+     * @param \TencentAds\Model\TextSpec|mixed $textSpec textSpec
      *
      * @return $this
      */
@@ -458,7 +458,7 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appDownloadSpec
      *
-     * @param \TencentAds\Model\CanvasAppDownloadSpecType $appDownloadSpec appDownloadSpec
+     * @param \TencentAds\Model\CanvasAppDownloadSpecType|mixed $appDownloadSpec appDownloadSpec
      *
      * @return $this
      */

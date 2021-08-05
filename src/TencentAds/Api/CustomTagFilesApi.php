@@ -92,12 +92,12 @@ class CustomTagFilesApi
      *
      * 上传客户标签人群数据文件
      *
-     * @param  int $accountId accountId (required)
-     * @param  string $userIdType userIdType (required)
-     * @param  int $tagId tagId (required)
-     * @param  \SplFileObject $file file (required)
-     * @param  string $operationType operationType (optional)
-     * @param  string $openAppId openAppId (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string|mixed $userIdType userIdType (required)
+     * @param  int|mixed $tagId tagId (required)
+     * @param  \SplFileObject|mixed $file file (required)
+     * @param  string|mixed $operationType operationType (optional)
+     * @param  string|mixed $openAppId openAppId (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -114,12 +114,12 @@ class CustomTagFilesApi
      *
      * 上传客户标签人群数据文件
      *
-     * @param  int $accountId (required)
-     * @param  string $userIdType (required)
-     * @param  int $tagId (required)
-     * @param  \SplFileObject $file (required)
-     * @param  string $operationType (optional)
-     * @param  string $openAppId (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $userIdType (required)
+     * @param  int|mixed $tagId (required)
+     * @param  \SplFileObject|mixed $file (required)
+     * @param  string|mixed $operationType (optional)
+     * @param  string|mixed $openAppId (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -194,12 +194,12 @@ class CustomTagFilesApi
      *
      * 上传客户标签人群数据文件
      *
-     * @param  int $accountId (required)
-     * @param  string $userIdType (required)
-     * @param  int $tagId (required)
-     * @param  \SplFileObject $file (required)
-     * @param  string $operationType (optional)
-     * @param  string $openAppId (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $userIdType (required)
+     * @param  int|mixed $tagId (required)
+     * @param  \SplFileObject|mixed $file (required)
+     * @param  string|mixed $operationType (optional)
+     * @param  string|mixed $openAppId (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -219,12 +219,12 @@ class CustomTagFilesApi
      *
      * 上传客户标签人群数据文件
      *
-     * @param  int $accountId (required)
-     * @param  string $userIdType (required)
-     * @param  int $tagId (required)
-     * @param  \SplFileObject $file (required)
-     * @param  string $operationType (optional)
-     * @param  string $openAppId (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $userIdType (required)
+     * @param  int|mixed $tagId (required)
+     * @param  \SplFileObject|mixed $file (required)
+     * @param  string|mixed $operationType (optional)
+     * @param  string|mixed $openAppId (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -274,12 +274,12 @@ class CustomTagFilesApi
     /**
      * Create request for operation 'customTagFilesAdd'
      *
-     * @param  int $accountId (required)
-     * @param  string $userIdType (required)
-     * @param  int $tagId (required)
-     * @param  \SplFileObject $file (required)
-     * @param  string $operationType (optional)
-     * @param  string $openAppId (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $userIdType (required)
+     * @param  int|mixed $tagId (required)
+     * @param  \SplFileObject|mixed $file (required)
+     * @param  string|mixed $operationType (optional)
+     * @param  string|mixed $openAppId (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -439,11 +439,11 @@ class CustomTagFilesApi
      *
      * 获取客户标签人群文件
      *
-     * @param  int $accountId accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -460,11 +460,11 @@ class CustomTagFilesApi
      *
      * 获取客户标签人群文件
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -539,11 +539,11 @@ class CustomTagFilesApi
      *
      * 获取客户标签人群文件
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -563,11 +563,11 @@ class CustomTagFilesApi
      *
      * 获取客户标签人群文件
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -617,11 +617,11 @@ class CustomTagFilesApi
     /**
      * Create request for operation 'customTagFilesGet'
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

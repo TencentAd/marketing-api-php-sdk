@@ -236,7 +236,7 @@ class Dimension implements ModelInterface, ArrayAccess
     /**
      * Sets second
      *
-     * @param int $second second
+     * @param int|mixed $second second
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class Dimension implements ModelInterface, ArrayAccess
     /**
      * Sets materialId
      *
-     * @param string $materialId materialId
+     * @param string|mixed $materialId materialId
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class Dimension implements ModelInterface, ArrayAccess
     /**
      * Sets date
      *
-     * @param string $date date
+     * @param string|mixed $date date
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class Dimension implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */

@@ -92,7 +92,7 @@ class ComplianceValidationApi
      *
      * 获取广告素材预审结果
      *
-     * @param  \TencentAds\Model\ComplianceValidationGetRequest $data data (required)
+     * @param  \TencentAds\Model\ComplianceValidationGetRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class ComplianceValidationApi
      *
      * 获取广告素材预审结果
      *
-     * @param  \TencentAds\Model\ComplianceValidationGetRequest $data (required)
+     * @param  \TencentAds\Model\ComplianceValidationGetRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class ComplianceValidationApi
      *
      * 获取广告素材预审结果
      *
-     * @param  \TencentAds\Model\ComplianceValidationGetRequest $data (required)
+     * @param  \TencentAds\Model\ComplianceValidationGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class ComplianceValidationApi
      *
      * 获取广告素材预审结果
      *
-     * @param  \TencentAds\Model\ComplianceValidationGetRequest $data (required)
+     * @param  \TencentAds\Model\ComplianceValidationGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class ComplianceValidationApi
     /**
      * Create request for operation 'complianceValidationGet'
      *
-     * @param  \TencentAds\Model\ComplianceValidationGetRequest $data (required)
+     * @param  \TencentAds\Model\ComplianceValidationGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

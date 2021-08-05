@@ -218,7 +218,7 @@ class StatusSpec implements ModelInterface, ArrayAccess
     /**
      * Sets ocpaLearningSpec
      *
-     * @param \TencentAds\Model\OcpaLearningSpec $ocpaLearningSpec ocpaLearningSpec
+     * @param \TencentAds\Model\OcpaLearningSpec|mixed $ocpaLearningSpec ocpaLearningSpec
      *
      * @return $this
      */

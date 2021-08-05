@@ -230,7 +230,7 @@ class Metrics implements ModelInterface, ArrayAccess
     /**
      * Sets videoOuterPlayIndex
      *
-     * @param double $videoOuterPlayIndex videoOuterPlayIndex
+     * @param double|mixed $videoOuterPlayIndex videoOuterPlayIndex
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class Metrics implements ModelInterface, ArrayAccess
     /**
      * Sets videoOuterClickIndex
      *
-     * @param double $videoOuterClickIndex videoOuterClickIndex
+     * @param double|mixed $videoOuterClickIndex videoOuterClickIndex
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class Metrics implements ModelInterface, ArrayAccess
     /**
      * Sets videoOffsetIndex
      *
-     * @param double $videoOffsetIndex videoOffsetIndex
+     * @param double|mixed $videoOffsetIndex videoOffsetIndex
      *
      * @return $this
      */

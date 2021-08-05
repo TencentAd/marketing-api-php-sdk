@@ -223,7 +223,7 @@ class WechatQualificationsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class WechatQualificationsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Sets wechatQualificationId
      *
-     * @param int $wechatQualificationId wechatQualificationId
+     * @param int|mixed $wechatQualificationId wechatQualificationId
      *
      * @return $this
      */

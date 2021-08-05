@@ -247,7 +247,7 @@ class ChannelsGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -271,7 +271,7 @@ class ChannelsGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets dateRange
      *
-     * @param \TencentAds\Model\DpDateRange $dateRange dateRange
+     * @param \TencentAds\Model\DpDateRange|mixed $dateRange dateRange
      *
      * @return $this
      */
@@ -295,7 +295,7 @@ class ChannelsGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets filtering
      *
-     * @param \TencentAds\Model\FilteringStruct[] $filtering filtering
+     * @param \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering
      *
      * @return $this
      */
@@ -319,7 +319,7 @@ class ChannelsGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets level
      *
-     * @param \TencentAds\Model\DpApiReportLevel $level level
+     * @param \TencentAds\Model\DpApiReportLevel|mixed $level level
      *
      * @return $this
      */
@@ -343,7 +343,7 @@ class ChannelsGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets page
      *
-     * @param int $page page
+     * @param int|mixed $page page
      *
      * @return $this
      */
@@ -367,7 +367,7 @@ class ChannelsGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets pageSize
      *
-     * @param int $pageSize pageSize
+     * @param int|mixed $pageSize pageSize
      *
      * @return $this
      */

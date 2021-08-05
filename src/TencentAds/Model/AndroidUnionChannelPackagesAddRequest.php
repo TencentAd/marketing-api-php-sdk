@@ -241,7 +241,7 @@ class AndroidUnionChannelPackagesAddRequest implements ModelInterface, ArrayAcce
     /**
      * Sets androidUnionAppId
      *
-     * @param int $androidUnionAppId androidUnionAppId
+     * @param int|mixed $androidUnionAppId androidUnionAppId
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class AndroidUnionChannelPackagesAddRequest implements ModelInterface, ArrayAcce
     /**
      * Sets packageName
      *
-     * @param string $packageName packageName
+     * @param string|mixed $packageName packageName
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class AndroidUnionChannelPackagesAddRequest implements ModelInterface, ArrayAcce
     /**
      * Sets packageOriginUrl
      *
-     * @param string $packageOriginUrl packageOriginUrl
+     * @param string|mixed $packageOriginUrl packageOriginUrl
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class AndroidUnionChannelPackagesAddRequest implements ModelInterface, ArrayAcce
     /**
      * Sets customizedChannelId
      *
-     * @param string $customizedChannelId customizedChannelId
+     * @param string|mixed $customizedChannelId customizedChannelId
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class AndroidUnionChannelPackagesAddRequest implements ModelInterface, ArrayAcce
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */

@@ -217,7 +217,7 @@ class DplabelAdLabelGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\AdLabelGetListStruct[] $list list
+     * @param \TencentAds\Model\AdLabelGetListStruct[]|mixed $list list
      *
      * @return $this
      */

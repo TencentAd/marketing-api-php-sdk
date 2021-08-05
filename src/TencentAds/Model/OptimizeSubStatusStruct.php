@@ -320,7 +320,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Sets targeting
      *
-     * @param \TencentAds\Model\OptimizeStatus $targeting targeting
+     * @param \TencentAds\Model\OptimizeStatus|mixed $targeting targeting
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Sets targetingExpand
      *
-     * @param \TencentAds\Model\OptimizeStatus $targetingExpand targetingExpand
+     * @param \TencentAds\Model\OptimizeStatus|mixed $targetingExpand targetingExpand
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Sets targetingLocard
      *
-     * @param \TencentAds\Model\OptimizeStatus $targetingLocard targetingLocard
+     * @param \TencentAds\Model\OptimizeStatus|mixed $targetingLocard targetingLocard
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Sets bid
      *
-     * @param \TencentAds\Model\OptimizeStatus $bid bid
+     * @param \TencentAds\Model\OptimizeStatus|mixed $bid bid
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Sets bidStrategy
      *
-     * @param \TencentAds\Model\OptimizeStatus $bidStrategy bidStrategy
+     * @param \TencentAds\Model\OptimizeStatus|mixed $bidStrategy bidStrategy
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Sets bidAmount
      *
-     * @param \TencentAds\Model\OptimizeStatus $bidAmount bidAmount
+     * @param \TencentAds\Model\OptimizeStatus|mixed $bidAmount bidAmount
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Sets budget
      *
-     * @param \TencentAds\Model\OptimizeStatus $budget budget
+     * @param \TencentAds\Model\OptimizeStatus|mixed $budget budget
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Sets dailyBudget
      *
-     * @param \TencentAds\Model\OptimizeStatus $dailyBudget dailyBudget
+     * @param \TencentAds\Model\OptimizeStatus|mixed $dailyBudget dailyBudget
      *
      * @return $this
      */
@@ -512,7 +512,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountBalance
      *
-     * @param \TencentAds\Model\OptimizeStatus $accountBalance accountBalance
+     * @param \TencentAds\Model\OptimizeStatus|mixed $accountBalance accountBalance
      *
      * @return $this
      */
@@ -536,7 +536,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Sets targetingStatusDesc
      *
-     * @param string $targetingStatusDesc targetingStatusDesc
+     * @param string|mixed $targetingStatusDesc targetingStatusDesc
      *
      * @return $this
      */
@@ -560,7 +560,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Sets targetingExpandStatusDesc
      *
-     * @param string $targetingExpandStatusDesc targetingExpandStatusDesc
+     * @param string|mixed $targetingExpandStatusDesc targetingExpandStatusDesc
      *
      * @return $this
      */
@@ -584,7 +584,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Sets targetingLocardStatusDesc
      *
-     * @param string $targetingLocardStatusDesc targetingLocardStatusDesc
+     * @param string|mixed $targetingLocardStatusDesc targetingLocardStatusDesc
      *
      * @return $this
      */
@@ -608,7 +608,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Sets bidStatusDesc
      *
-     * @param string $bidStatusDesc bidStatusDesc
+     * @param string|mixed $bidStatusDesc bidStatusDesc
      *
      * @return $this
      */
@@ -632,7 +632,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Sets bidStrategyStatusDesc
      *
-     * @param string $bidStrategyStatusDesc bidStrategyStatusDesc
+     * @param string|mixed $bidStrategyStatusDesc bidStrategyStatusDesc
      *
      * @return $this
      */
@@ -656,7 +656,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Sets bidAmountStatusDesc
      *
-     * @param string $bidAmountStatusDesc bidAmountStatusDesc
+     * @param string|mixed $bidAmountStatusDesc bidAmountStatusDesc
      *
      * @return $this
      */
@@ -680,7 +680,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Sets budgetStatusDesc
      *
-     * @param string $budgetStatusDesc budgetStatusDesc
+     * @param string|mixed $budgetStatusDesc budgetStatusDesc
      *
      * @return $this
      */
@@ -704,7 +704,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Sets dailyBudgetStatusDesc
      *
-     * @param string $dailyBudgetStatusDesc dailyBudgetStatusDesc
+     * @param string|mixed $dailyBudgetStatusDesc dailyBudgetStatusDesc
      *
      * @return $this
      */
@@ -728,7 +728,7 @@ class OptimizeSubStatusStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountBalanceStatusDesc
      *
-     * @param string $accountBalanceStatusDesc accountBalanceStatusDesc
+     * @param string|mixed $accountBalanceStatusDesc accountBalanceStatusDesc
      *
      * @return $this
      */

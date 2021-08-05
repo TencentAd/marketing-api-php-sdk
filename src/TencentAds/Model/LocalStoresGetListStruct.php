@@ -260,7 +260,7 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets poiId
      *
-     * @param string $poiId poiId
+     * @param string|mixed $poiId poiId
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets localStoreName
      *
-     * @param string $localStoreName localStoreName
+     * @param string|mixed $localStoreName localStoreName
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets localStoreProvince
      *
-     * @param string $localStoreProvince localStoreProvince
+     * @param string|mixed $localStoreProvince localStoreProvince
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets localStoreCity
      *
-     * @param string $localStoreCity localStoreCity
+     * @param string|mixed $localStoreCity localStoreCity
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets localStoreAddress
      *
-     * @param string $localStoreAddress localStoreAddress
+     * @param string|mixed $localStoreAddress localStoreAddress
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedTime
      *
-     * @param int $lastModifiedTime lastModifiedTime
+     * @param int|mixed $lastModifiedTime lastModifiedTime
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets systemStatus
      *
-     * @param \TencentAds\Model\SysStatus $systemStatus systemStatus
+     * @param \TencentAds\Model\SysStatus|mixed $systemStatus systemStatus
      *
      * @return $this
      */

@@ -92,14 +92,14 @@ class CreativetoolsTextApi
      *
      * 获取广告文案
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $maxTextLength maxTextLength (required)
-     * @param  int $categoryFirstLevel categoryFirstLevel (optional)
-     * @param  int $categorySecondLevel categorySecondLevel (optional)
-     * @param  string $keyword keyword (optional)
-     * @param  int[] $filtering filtering (optional)
-     * @param  int $number number (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $maxTextLength maxTextLength (required)
+     * @param  int|mixed $categoryFirstLevel categoryFirstLevel (optional)
+     * @param  int|mixed $categorySecondLevel categorySecondLevel (optional)
+     * @param  string|mixed $keyword keyword (optional)
+     * @param  int[]|mixed $filtering filtering (optional)
+     * @param  int|mixed $number number (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -116,14 +116,14 @@ class CreativetoolsTextApi
      *
      * 获取广告文案
      *
-     * @param  int $accountId (required)
-     * @param  int $maxTextLength (required)
-     * @param  int $categoryFirstLevel (optional)
-     * @param  int $categorySecondLevel (optional)
-     * @param  string $keyword (optional)
-     * @param  int[] $filtering (optional)
-     * @param  int $number (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $maxTextLength (required)
+     * @param  int|mixed $categoryFirstLevel (optional)
+     * @param  int|mixed $categorySecondLevel (optional)
+     * @param  string|mixed $keyword (optional)
+     * @param  int[]|mixed $filtering (optional)
+     * @param  int|mixed $number (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -198,14 +198,14 @@ class CreativetoolsTextApi
      *
      * 获取广告文案
      *
-     * @param  int $accountId (required)
-     * @param  int $maxTextLength (required)
-     * @param  int $categoryFirstLevel (optional)
-     * @param  int $categorySecondLevel (optional)
-     * @param  string $keyword (optional)
-     * @param  int[] $filtering (optional)
-     * @param  int $number (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $maxTextLength (required)
+     * @param  int|mixed $categoryFirstLevel (optional)
+     * @param  int|mixed $categorySecondLevel (optional)
+     * @param  string|mixed $keyword (optional)
+     * @param  int[]|mixed $filtering (optional)
+     * @param  int|mixed $number (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -225,14 +225,14 @@ class CreativetoolsTextApi
      *
      * 获取广告文案
      *
-     * @param  int $accountId (required)
-     * @param  int $maxTextLength (required)
-     * @param  int $categoryFirstLevel (optional)
-     * @param  int $categorySecondLevel (optional)
-     * @param  string $keyword (optional)
-     * @param  int[] $filtering (optional)
-     * @param  int $number (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $maxTextLength (required)
+     * @param  int|mixed $categoryFirstLevel (optional)
+     * @param  int|mixed $categorySecondLevel (optional)
+     * @param  string|mixed $keyword (optional)
+     * @param  int[]|mixed $filtering (optional)
+     * @param  int|mixed $number (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -282,14 +282,14 @@ class CreativetoolsTextApi
     /**
      * Create request for operation 'creativetoolsTextGet'
      *
-     * @param  int $accountId (required)
-     * @param  int $maxTextLength (required)
-     * @param  int $categoryFirstLevel (optional)
-     * @param  int $categorySecondLevel (optional)
-     * @param  string $keyword (optional)
-     * @param  int[] $filtering (optional)
-     * @param  int $number (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $maxTextLength (required)
+     * @param  int|mixed $categoryFirstLevel (optional)
+     * @param  int|mixed $categorySecondLevel (optional)
+     * @param  string|mixed $keyword (optional)
+     * @param  int[]|mixed $filtering (optional)
+     * @param  int|mixed $number (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

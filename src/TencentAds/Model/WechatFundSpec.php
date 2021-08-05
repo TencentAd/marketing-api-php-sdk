@@ -224,7 +224,7 @@ class WechatFundSpec implements ModelInterface, ArrayAccess
     /**
      * Sets usableAmount
      *
-     * @param int $usableAmount usableAmount
+     * @param int|mixed $usableAmount usableAmount
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class WechatFundSpec implements ModelInterface, ArrayAccess
     /**
      * Sets lockedAmount
      *
-     * @param int $lockedAmount lockedAmount
+     * @param int|mixed $lockedAmount lockedAmount
      *
      * @return $this
      */

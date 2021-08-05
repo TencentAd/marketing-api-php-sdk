@@ -224,7 +224,7 @@ class OrderByStruct implements ModelInterface, ArrayAccess
     /**
      * Sets sortField
      *
-     * @param string $sortField sortField
+     * @param string|mixed $sortField sortField
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class OrderByStruct implements ModelInterface, ArrayAccess
     /**
      * Sets sortType
      *
-     * @param \TencentAds\Model\Sortord $sortType sortType
+     * @param \TencentAds\Model\Sortord|mixed $sortType sortType
      *
      * @return $this
      */

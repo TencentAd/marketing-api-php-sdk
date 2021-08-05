@@ -656,7 +656,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets date
      *
-     * @param string $date date
+     * @param string|mixed $date date
      *
      * @return $this
      */
@@ -680,7 +680,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productCatalogId
      *
-     * @param int $productCatalogId productCatalogId
+     * @param int|mixed $productCatalogId productCatalogId
      *
      * @return $this
      */
@@ -704,7 +704,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -728,7 +728,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productOuterId
      *
-     * @param string $productOuterId productOuterId
+     * @param string|mixed $productOuterId productOuterId
      *
      * @return $this
      */
@@ -752,7 +752,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstCategoryId
      *
-     * @param int $firstCategoryId firstCategoryId
+     * @param int|mixed $firstCategoryId firstCategoryId
      *
      * @return $this
      */
@@ -776,7 +776,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets secondCategoryId
      *
-     * @param int $secondCategoryId secondCategoryId
+     * @param int|mixed $secondCategoryId secondCategoryId
      *
      * @return $this
      */
@@ -800,7 +800,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets thirdCategoryId
      *
-     * @param int $thirdCategoryId thirdCategoryId
+     * @param int|mixed $thirdCategoryId thirdCategoryId
      *
      * @return $this
      */
@@ -824,7 +824,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets viewCount
      *
-     * @param int $viewCount viewCount
+     * @param int|mixed $viewCount viewCount
      *
      * @return $this
      */
@@ -848,7 +848,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets validClickCount
      *
-     * @param int $validClickCount validClickCount
+     * @param int|mixed $validClickCount validClickCount
      *
      * @return $this
      */
@@ -872,7 +872,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets ctr
      *
-     * @param double $ctr ctr
+     * @param double|mixed $ctr ctr
      *
      * @return $this
      */
@@ -896,7 +896,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cpc
      *
-     * @param int $cpc cpc
+     * @param int|mixed $cpc cpc
      *
      * @return $this
      */
@@ -920,7 +920,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets thousandDisplayPrice
      *
-     * @param int $thousandDisplayPrice thousandDisplayPrice
+     * @param int|mixed $thousandDisplayPrice thousandDisplayPrice
      *
      * @return $this
      */
@@ -944,7 +944,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cost
      *
-     * @param int $cost cost
+     * @param int|mixed $cost cost
      *
      * @return $this
      */
@@ -968,7 +968,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets activatedCount
      *
-     * @param int $activatedCount activatedCount
+     * @param int|mixed $activatedCount activatedCount
      *
      * @return $this
      */
@@ -992,7 +992,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets activatedCost
      *
-     * @param int $activatedCost activatedCost
+     * @param int|mixed $activatedCost activatedCost
      *
      * @return $this
      */
@@ -1016,7 +1016,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets activatedRate
      *
-     * @param double $activatedRate activatedRate
+     * @param double|mixed $activatedRate activatedRate
      *
      * @return $this
      */
@@ -1040,7 +1040,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webKeyPageViewCost
      *
-     * @param int $webKeyPageViewCost webKeyPageViewCost
+     * @param int|mixed $webKeyPageViewCost webKeyPageViewCost
      *
      * @return $this
      */
@@ -1064,7 +1064,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webCommodityPageViewCount
      *
-     * @param int $webCommodityPageViewCount webCommodityPageViewCount
+     * @param int|mixed $webCommodityPageViewCount webCommodityPageViewCount
      *
      * @return $this
      */
@@ -1088,7 +1088,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webCommodityPageViewCost
      *
-     * @param int $webCommodityPageViewCost webCommodityPageViewCost
+     * @param int|mixed $webCommodityPageViewCost webCommodityPageViewCost
      *
      * @return $this
      */
@@ -1112,7 +1112,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webRegisterCount
      *
-     * @param int $webRegisterCount webRegisterCount
+     * @param int|mixed $webRegisterCount webRegisterCount
      *
      * @return $this
      */
@@ -1136,7 +1136,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pagePhoneCallDirectCount
      *
-     * @param int $pagePhoneCallDirectCount pagePhoneCallDirectCount
+     * @param int|mixed $pagePhoneCallDirectCount pagePhoneCallDirectCount
      *
      * @return $this
      */
@@ -1160,7 +1160,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets ownPageNavigationCount
      *
-     * @param int $ownPageNavigationCount ownPageNavigationCount
+     * @param int|mixed $ownPageNavigationCount ownPageNavigationCount
      *
      * @return $this
      */
@@ -1184,7 +1184,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets ownPageNavigationCost
      *
-     * @param int $ownPageNavigationCost ownPageNavigationCost
+     * @param int|mixed $ownPageNavigationCost ownPageNavigationCost
      *
      * @return $this
      */
@@ -1208,7 +1208,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webApplicationCount
      *
-     * @param int $webApplicationCount webApplicationCount
+     * @param int|mixed $webApplicationCount webApplicationCount
      *
      * @return $this
      */
@@ -1232,7 +1232,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webApplicationCost
      *
-     * @param int $webApplicationCost webApplicationCost
+     * @param int|mixed $webApplicationCost webApplicationCost
      *
      * @return $this
      */
@@ -1256,7 +1256,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webOrderCount
      *
-     * @param int $webOrderCount webOrderCount
+     * @param int|mixed $webOrderCount webOrderCount
      *
      * @return $this
      */
@@ -1280,7 +1280,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webOrderRate
      *
-     * @param double $webOrderRate webOrderRate
+     * @param double|mixed $webOrderRate webOrderRate
      *
      * @return $this
      */
@@ -1304,7 +1304,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appOrderRate
      *
-     * @param double $appOrderRate appOrderRate
+     * @param double|mixed $appOrderRate appOrderRate
      *
      * @return $this
      */
@@ -1328,7 +1328,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webOrderCost
      *
-     * @param int $webOrderCost webOrderCost
+     * @param int|mixed $webOrderCost webOrderCost
      *
      * @return $this
      */
@@ -1352,7 +1352,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webCheckoutAmount
      *
-     * @param int $webCheckoutAmount webCheckoutAmount
+     * @param int|mixed $webCheckoutAmount webCheckoutAmount
      *
      * @return $this
      */
@@ -1376,7 +1376,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webCheckoutCount
      *
-     * @param int $webCheckoutCount webCheckoutCount
+     * @param int|mixed $webCheckoutCount webCheckoutCount
      *
      * @return $this
      */
@@ -1400,7 +1400,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webCheckoutCost
      *
-     * @param int $webCheckoutCost webCheckoutCost
+     * @param int|mixed $webCheckoutCost webCheckoutCost
      *
      * @return $this
      */
@@ -1424,7 +1424,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets downloadRate
      *
-     * @param double $downloadRate downloadRate
+     * @param double|mixed $downloadRate downloadRate
      *
      * @return $this
      */
@@ -1448,7 +1448,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets downloadCost
      *
-     * @param int $downloadCost downloadCost
+     * @param int|mixed $downloadCost downloadCost
      *
      * @return $this
      */
@@ -1472,7 +1472,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets installCost
      *
-     * @param int $installCost installCost
+     * @param int|mixed $installCost installCost
      *
      * @return $this
      */
@@ -1496,7 +1496,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets clickActivatedRate
      *
-     * @param double $clickActivatedRate clickActivatedRate
+     * @param double|mixed $clickActivatedRate clickActivatedRate
      *
      * @return $this
      */
@@ -1520,7 +1520,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets retentionCount
      *
-     * @param int $retentionCount retentionCount
+     * @param int|mixed $retentionCount retentionCount
      *
      * @return $this
      */
@@ -1544,7 +1544,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets retentionRate
      *
-     * @param double $retentionRate retentionRate
+     * @param double|mixed $retentionRate retentionRate
      *
      * @return $this
      */
@@ -1568,7 +1568,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets retentionCost
      *
-     * @param int $retentionCost retentionCost
+     * @param int|mixed $retentionCost retentionCost
      *
      * @return $this
      */
@@ -1592,7 +1592,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appKeyPageViewCount
      *
-     * @param int $appKeyPageViewCount appKeyPageViewCount
+     * @param int|mixed $appKeyPageViewCount appKeyPageViewCount
      *
      * @return $this
      */
@@ -1616,7 +1616,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webKeyPageViewCount
      *
-     * @param int $webKeyPageViewCount webKeyPageViewCount
+     * @param int|mixed $webKeyPageViewCount webKeyPageViewCount
      *
      * @return $this
      */
@@ -1640,7 +1640,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appCommodityPageViewCount
      *
-     * @param int $appCommodityPageViewCount appCommodityPageViewCount
+     * @param int|mixed $appCommodityPageViewCount appCommodityPageViewCount
      *
      * @return $this
      */
@@ -1664,7 +1664,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appCommodityPageViewRate
      *
-     * @param double $appCommodityPageViewRate appCommodityPageViewRate
+     * @param double|mixed $appCommodityPageViewRate appCommodityPageViewRate
      *
      * @return $this
      */
@@ -1688,7 +1688,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets webCommodityPageViewRate
      *
-     * @param double $webCommodityPageViewRate webCommodityPageViewRate
+     * @param double|mixed $webCommodityPageViewRate webCommodityPageViewRate
      *
      * @return $this
      */
@@ -1712,7 +1712,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appCommodityPageViewCost
      *
-     * @param int $appCommodityPageViewCost appCommodityPageViewCost
+     * @param int|mixed $appCommodityPageViewCost appCommodityPageViewCost
      *
      * @return $this
      */
@@ -1736,7 +1736,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appRegisterCount
      *
-     * @param int $appRegisterCount appRegisterCount
+     * @param int|mixed $appRegisterCount appRegisterCount
      *
      * @return $this
      */
@@ -1760,7 +1760,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appRegisterCost
      *
-     * @param int $appRegisterCost appRegisterCost
+     * @param int|mixed $appRegisterCost appRegisterCost
      *
      * @return $this
      */
@@ -1784,7 +1784,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appApplicationCount
      *
-     * @param int $appApplicationCount appApplicationCount
+     * @param int|mixed $appApplicationCount appApplicationCount
      *
      * @return $this
      */
@@ -1808,7 +1808,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appApplicationCost
      *
-     * @param int $appApplicationCost appApplicationCost
+     * @param int|mixed $appApplicationCost appApplicationCost
      *
      * @return $this
      */
@@ -1832,7 +1832,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appOrderCount
      *
-     * @param int $appOrderCount appOrderCount
+     * @param int|mixed $appOrderCount appOrderCount
      *
      * @return $this
      */
@@ -1856,7 +1856,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appOrderCost
      *
-     * @param int $appOrderCost appOrderCost
+     * @param int|mixed $appOrderCost appOrderCost
      *
      * @return $this
      */
@@ -1880,7 +1880,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets followCost
      *
-     * @param int $followCost followCost
+     * @param int|mixed $followCost followCost
      *
      * @return $this
      */
@@ -1904,7 +1904,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets forwardCost
      *
-     * @param int $forwardCost forwardCost
+     * @param int|mixed $forwardCost forwardCost
      *
      * @return $this
      */
@@ -1928,7 +1928,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets readCost
      *
-     * @param int $readCost readCost
+     * @param int|mixed $readCost readCost
      *
      * @return $this
      */
@@ -1952,7 +1952,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets praiseCount
      *
-     * @param int $praiseCount praiseCount
+     * @param int|mixed $praiseCount praiseCount
      *
      * @return $this
      */
@@ -1976,7 +1976,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets praiseCost
      *
-     * @param int $praiseCost praiseCost
+     * @param int|mixed $praiseCost praiseCost
      *
      * @return $this
      */
@@ -2000,7 +2000,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets commentCount
      *
-     * @param int $commentCount commentCount
+     * @param int|mixed $commentCount commentCount
      *
      * @return $this
      */
@@ -2024,7 +2024,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets likeOrComment
      *
-     * @param int $likeOrComment likeOrComment
+     * @param int|mixed $likeOrComment likeOrComment
      *
      * @return $this
      */
@@ -2048,7 +2048,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets commentCost
      *
-     * @param int $commentCost commentCost
+     * @param int|mixed $commentCost commentCost
      *
      * @return $this
      */
@@ -2072,7 +2072,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appCheckoutRate
      *
-     * @param double $appCheckoutRate appCheckoutRate
+     * @param double|mixed $appCheckoutRate appCheckoutRate
      *
      * @return $this
      */
@@ -2096,7 +2096,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appRegisterRate
      *
-     * @param double $appRegisterRate appRegisterRate
+     * @param double|mixed $appRegisterRate appRegisterRate
      *
      * @return $this
      */
@@ -2120,7 +2120,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets impression
      *
-     * @param int $impression impression
+     * @param int|mixed $impression impression
      *
      * @return $this
      */
@@ -2144,7 +2144,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets click
      *
-     * @param int $click click
+     * @param int|mixed $click click
      *
      * @return $this
      */
@@ -2168,7 +2168,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets download
      *
-     * @param int $download download
+     * @param int|mixed $download download
      *
      * @return $this
      */
@@ -2192,7 +2192,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets follow
      *
-     * @param int $follow follow
+     * @param int|mixed $follow follow
      *
      * @return $this
      */
@@ -2216,7 +2216,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets activation
      *
-     * @param int $activation activation
+     * @param int|mixed $activation activation
      *
      * @return $this
      */
@@ -2240,7 +2240,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets share
      *
-     * @param int $share share
+     * @param int|mixed $share share
      *
      * @return $this
      */
@@ -2264,7 +2264,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets read
      *
-     * @param int $read read
+     * @param int|mixed $read read
      *
      * @return $this
      */
@@ -2288,7 +2288,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appPaymentCount
      *
-     * @param int $appPaymentCount appPaymentCount
+     * @param int|mixed $appPaymentCount appPaymentCount
      *
      * @return $this
      */
@@ -2312,7 +2312,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets reservation
      *
-     * @param int $reservation reservation
+     * @param int|mixed $reservation reservation
      *
      * @return $this
      */
@@ -2336,7 +2336,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appInstallation
      *
-     * @param int $appInstallation appInstallation
+     * @param int|mixed $appInstallation appInstallation
      *
      * @return $this
      */
@@ -2360,7 +2360,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appPaymentAmount
      *
-     * @param int $appPaymentAmount appPaymentAmount
+     * @param int|mixed $appPaymentAmount appPaymentAmount
      *
      * @return $this
      */
@@ -2384,7 +2384,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appAddToCarCount
      *
-     * @param int $appAddToCarCount appAddToCarCount
+     * @param int|mixed $appAddToCarCount appAddToCarCount
      *
      * @return $this
      */
@@ -2408,7 +2408,7 @@ class ProductCatalogsReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appAddToCarCost
      *
-     * @param int $appAddToCarCost appAddToCarCost
+     * @param int|mixed $appAddToCarCost appAddToCarCost
      *
      * @return $this
      */

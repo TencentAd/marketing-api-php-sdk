@@ -217,7 +217,7 @@ class WechatAdvertiserLocalBusinessAddResponseData implements ModelInterface, Ar
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */

@@ -236,7 +236,7 @@ class BidSimulateResultItem implements ModelInterface, ArrayAccess
     /**
      * Sets bid
      *
-     * @param int $bid bid
+     * @param int|mixed $bid bid
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class BidSimulateResultItem implements ModelInterface, ArrayAccess
     /**
      * Sets exposeCnt
      *
-     * @param int $exposeCnt exposeCnt
+     * @param int|mixed $exposeCnt exposeCnt
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class BidSimulateResultItem implements ModelInterface, ArrayAccess
     /**
      * Sets clickCnt
      *
-     * @param int $clickCnt clickCnt
+     * @param int|mixed $clickCnt clickCnt
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class BidSimulateResultItem implements ModelInterface, ArrayAccess
     /**
      * Sets conversionCnt
      *
-     * @param int $conversionCnt conversionCnt
+     * @param int|mixed $conversionCnt conversionCnt
      *
      * @return $this
      */

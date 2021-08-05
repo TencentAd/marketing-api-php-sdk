@@ -224,7 +224,7 @@ class HeaderStruct implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param string $name name
+     * @param string|mixed $name name
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class HeaderStruct implements ModelInterface, ArrayAccess
     /**
      * Sets value
      *
-     * @param string $value value
+     * @param string|mixed $value value
      *
      * @return $this
      */

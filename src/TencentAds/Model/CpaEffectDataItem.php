@@ -260,7 +260,7 @@ class CpaEffectDataItem implements ModelInterface, ArrayAccess
     /**
      * Sets rank
      *
-     * @param int $rank rank
+     * @param int|mixed $rank rank
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class CpaEffectDataItem implements ModelInterface, ArrayAccess
     /**
      * Sets conversionCount
      *
-     * @param int $conversionCount conversionCount
+     * @param int|mixed $conversionCount conversionCount
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class CpaEffectDataItem implements ModelInterface, ArrayAccess
     /**
      * Sets cvr
      *
-     * @param double $cvr cvr
+     * @param double|mixed $cvr cvr
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class CpaEffectDataItem implements ModelInterface, ArrayAccess
     /**
      * Sets targetCpa
      *
-     * @param double $targetCpa targetCpa
+     * @param double|mixed $targetCpa targetCpa
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class CpaEffectDataItem implements ModelInterface, ArrayAccess
     /**
      * Sets realCpa
      *
-     * @param double $realCpa realCpa
+     * @param double|mixed $realCpa realCpa
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class CpaEffectDataItem implements ModelInterface, ArrayAccess
     /**
      * Sets cpaBias
      *
-     * @param double $cpaBias cpaBias
+     * @param double|mixed $cpaBias cpaBias
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class CpaEffectDataItem implements ModelInterface, ArrayAccess
     /**
      * Sets industryTopTargetcpa
      *
-     * @param int $industryTopTargetcpa industryTopTargetcpa
+     * @param int|mixed $industryTopTargetcpa industryTopTargetcpa
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class CpaEffectDataItem implements ModelInterface, ArrayAccess
     /**
      * Sets industryAvgTargetcpa
      *
-     * @param int $industryAvgTargetcpa industryAvgTargetcpa
+     * @param int|mixed $industryAvgTargetcpa industryAvgTargetcpa
      *
      * @return $this
      */

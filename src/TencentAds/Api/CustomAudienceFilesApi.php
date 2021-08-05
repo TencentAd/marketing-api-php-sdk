@@ -92,13 +92,13 @@ class CustomAudienceFilesApi
      *
      * 上传客户人群数据文件
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $audienceId audienceId (required)
-     * @param  string $userIdType userIdType (required)
-     * @param  \SplFileObject $file file (required)
-     * @param  string $operationType operationType (optional)
-     * @param  string $openAppId openAppId (optional)
-     * @param  string $saltId saltId (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $audienceId audienceId (required)
+     * @param  string|mixed $userIdType userIdType (required)
+     * @param  \SplFileObject|mixed $file file (required)
+     * @param  string|mixed $operationType operationType (optional)
+     * @param  string|mixed $openAppId openAppId (optional)
+     * @param  string|mixed $saltId saltId (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -115,13 +115,13 @@ class CustomAudienceFilesApi
      *
      * 上传客户人群数据文件
      *
-     * @param  int $accountId (required)
-     * @param  int $audienceId (required)
-     * @param  string $userIdType (required)
-     * @param  \SplFileObject $file (required)
-     * @param  string $operationType (optional)
-     * @param  string $openAppId (optional)
-     * @param  string $saltId (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $audienceId (required)
+     * @param  string|mixed $userIdType (required)
+     * @param  \SplFileObject|mixed $file (required)
+     * @param  string|mixed $operationType (optional)
+     * @param  string|mixed $openAppId (optional)
+     * @param  string|mixed $saltId (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -196,13 +196,13 @@ class CustomAudienceFilesApi
      *
      * 上传客户人群数据文件
      *
-     * @param  int $accountId (required)
-     * @param  int $audienceId (required)
-     * @param  string $userIdType (required)
-     * @param  \SplFileObject $file (required)
-     * @param  string $operationType (optional)
-     * @param  string $openAppId (optional)
-     * @param  string $saltId (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $audienceId (required)
+     * @param  string|mixed $userIdType (required)
+     * @param  \SplFileObject|mixed $file (required)
+     * @param  string|mixed $operationType (optional)
+     * @param  string|mixed $openAppId (optional)
+     * @param  string|mixed $saltId (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -222,13 +222,13 @@ class CustomAudienceFilesApi
      *
      * 上传客户人群数据文件
      *
-     * @param  int $accountId (required)
-     * @param  int $audienceId (required)
-     * @param  string $userIdType (required)
-     * @param  \SplFileObject $file (required)
-     * @param  string $operationType (optional)
-     * @param  string $openAppId (optional)
-     * @param  string $saltId (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $audienceId (required)
+     * @param  string|mixed $userIdType (required)
+     * @param  \SplFileObject|mixed $file (required)
+     * @param  string|mixed $operationType (optional)
+     * @param  string|mixed $openAppId (optional)
+     * @param  string|mixed $saltId (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -278,13 +278,13 @@ class CustomAudienceFilesApi
     /**
      * Create request for operation 'customAudienceFilesAdd'
      *
-     * @param  int $accountId (required)
-     * @param  int $audienceId (required)
-     * @param  string $userIdType (required)
-     * @param  \SplFileObject $file (required)
-     * @param  string $operationType (optional)
-     * @param  string $openAppId (optional)
-     * @param  string $saltId (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $audienceId (required)
+     * @param  string|mixed $userIdType (required)
+     * @param  \SplFileObject|mixed $file (required)
+     * @param  string|mixed $operationType (optional)
+     * @param  string|mixed $openAppId (optional)
+     * @param  string|mixed $saltId (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -448,12 +448,12 @@ class CustomAudienceFilesApi
      *
      * 获取客户人群数据文件
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $audienceId audienceId (optional)
-     * @param  int $customAudienceFileId customAudienceFileId (optional)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $audienceId audienceId (optional)
+     * @param  int|mixed $customAudienceFileId customAudienceFileId (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -470,12 +470,12 @@ class CustomAudienceFilesApi
      *
      * 获取客户人群数据文件
      *
-     * @param  int $accountId (required)
-     * @param  int $audienceId (optional)
-     * @param  int $customAudienceFileId (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $audienceId (optional)
+     * @param  int|mixed $customAudienceFileId (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -550,12 +550,12 @@ class CustomAudienceFilesApi
      *
      * 获取客户人群数据文件
      *
-     * @param  int $accountId (required)
-     * @param  int $audienceId (optional)
-     * @param  int $customAudienceFileId (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $audienceId (optional)
+     * @param  int|mixed $customAudienceFileId (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -575,12 +575,12 @@ class CustomAudienceFilesApi
      *
      * 获取客户人群数据文件
      *
-     * @param  int $accountId (required)
-     * @param  int $audienceId (optional)
-     * @param  int $customAudienceFileId (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $audienceId (optional)
+     * @param  int|mixed $customAudienceFileId (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -630,12 +630,12 @@ class CustomAudienceFilesApi
     /**
      * Create request for operation 'customAudienceFilesGet'
      *
-     * @param  int $accountId (required)
-     * @param  int $audienceId (optional)
-     * @param  int $customAudienceFileId (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $audienceId (optional)
+     * @param  int|mixed $customAudienceFileId (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

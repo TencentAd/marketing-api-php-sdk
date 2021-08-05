@@ -223,7 +223,7 @@ class LocalStoresAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class LocalStoresAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets poiList
      *
-     * @param string[] $poiList poiList
+     * @param string[]|mixed $poiList poiList
      *
      * @return $this
      */

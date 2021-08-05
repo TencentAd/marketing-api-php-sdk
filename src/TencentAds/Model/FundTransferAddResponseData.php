@@ -241,7 +241,7 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets amount
      *
-     * @param int $amount amount
+     * @param int|mixed $amount amount
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets externalBillNo
      *
-     * @param string $externalBillNo externalBillNo
+     * @param string|mixed $externalBillNo externalBillNo
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets fundType
      *
-     * @param \TencentAds\Model\AccountTypeMap $fundType fundType
+     * @param \TencentAds\Model\AccountTypeMap|mixed $fundType fundType
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets time
      *
-     * @param int $time time
+     * @param int|mixed $time time
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets isRepeated
      *
-     * @param bool $isRepeated isRepeated
+     * @param bool|mixed $isRepeated isRepeated
      *
      * @return $this
      */

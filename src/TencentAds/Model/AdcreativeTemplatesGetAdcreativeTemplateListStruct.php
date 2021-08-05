@@ -314,7 +314,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Sets adcreativeTemplateId
      *
-     * @param int $adcreativeTemplateId adcreativeTemplateId
+     * @param int|mixed $adcreativeTemplateId adcreativeTemplateId
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Sets adcreativeTemplateName
      *
-     * @param string $adcreativeTemplateName adcreativeTemplateName
+     * @param string|mixed $adcreativeTemplateName adcreativeTemplateName
      *
      * @return $this
      */
@@ -362,7 +362,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Sets adcreativeTemplateDescription
      *
-     * @param string $adcreativeTemplateDescription adcreativeTemplateDescription
+     * @param string|mixed $adcreativeTemplateDescription adcreativeTemplateDescription
      *
      * @return $this
      */
@@ -386,7 +386,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Sets adcreativeTemplateSize
      *
-     * @param string $adcreativeTemplateSize adcreativeTemplateSize
+     * @param string|mixed $adcreativeTemplateSize adcreativeTemplateSize
      *
      * @return $this
      */
@@ -410,7 +410,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Sets adcreativeTemplateStyle
      *
-     * @param string $adcreativeTemplateStyle adcreativeTemplateStyle
+     * @param string|mixed $adcreativeTemplateStyle adcreativeTemplateStyle
      *
      * @return $this
      */
@@ -434,7 +434,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Sets adcreativeTemplateAppellation
      *
-     * @param string $adcreativeTemplateAppellation adcreativeTemplateAppellation
+     * @param string|mixed $adcreativeTemplateAppellation adcreativeTemplateAppellation
      *
      * @return $this
      */
@@ -458,7 +458,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Sets siteSet
      *
-     * @param \TencentAds\Model\SiteSetDefinition $siteSet siteSet
+     * @param \TencentAds\Model\SiteSetDefinition|mixed $siteSet siteSet
      *
      * @return $this
      */
@@ -482,7 +482,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectTypeWithoutJd $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObjectTypeWithoutJd|mixed $promotedObjectType promotedObjectType
      *
      * @return $this
      */
@@ -506,7 +506,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Sets adcreativeSampleImageList
      *
-     * @param \TencentAds\Model\AdcreativeSampleImage[] $adcreativeSampleImageList adcreativeSampleImageList
+     * @param \TencentAds\Model\AdcreativeSampleImage[]|mixed $adcreativeSampleImageList adcreativeSampleImageList
      *
      * @return $this
      */
@@ -530,7 +530,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Sets adAttributes
      *
-     * @param \TencentAds\Model\AdcreativeElement[] $adAttributes adAttributes
+     * @param \TencentAds\Model\AdcreativeElement[]|mixed $adAttributes adAttributes
      *
      * @return $this
      */
@@ -554,7 +554,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Sets adcreativeAttributes
      *
-     * @param \TencentAds\Model\AdcreativeElement[] $adcreativeAttributes adcreativeAttributes
+     * @param \TencentAds\Model\AdcreativeElement[]|mixed $adcreativeAttributes adcreativeAttributes
      *
      * @return $this
      */
@@ -578,7 +578,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Sets adcreativeElements
      *
-     * @param \TencentAds\Model\AdcreativeElement[] $adcreativeElements adcreativeElements
+     * @param \TencentAds\Model\AdcreativeElement[]|mixed $adcreativeElements adcreativeElements
      *
      * @return $this
      */
@@ -602,7 +602,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Sets supportPageType
      *
-     * @param string[] $supportPageType supportPageType
+     * @param string[]|mixed $supportPageType supportPageType
      *
      * @return $this
      */
@@ -626,7 +626,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Sets landingPageConfig
      *
-     * @param \TencentAds\Model\LandingPageConfig $landingPageConfig landingPageConfig
+     * @param \TencentAds\Model\LandingPageConfig|mixed $landingPageConfig landingPageConfig
      *
      * @return $this
      */
@@ -650,7 +650,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Sets supportBillingSpecList
      *
-     * @param \TencentAds\Model\SupportBillingSpec[] $supportBillingSpecList supportBillingSpecList
+     * @param \TencentAds\Model\SupportBillingSpec[]|mixed $supportBillingSpecList supportBillingSpecList
      *
      * @return $this
      */
@@ -674,7 +674,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Sets supportDynamicAbilitySpecList
      *
-     * @param \TencentAds\Model\SupportDynamicAbilitySpecList $supportDynamicAbilitySpecList supportDynamicAbilitySpecList
+     * @param \TencentAds\Model\SupportDynamicAbilitySpecList|mixed $supportDynamicAbilitySpecList supportDynamicAbilitySpecList
      *
      * @return $this
      */
@@ -698,7 +698,7 @@ class AdcreativeTemplatesGetAdcreativeTemplateListStruct implements ModelInterfa
     /**
      * Sets supportBidModeList
      *
-     * @param string[] $supportBidModeList supportBidModeList
+     * @param string[]|mixed $supportBidModeList supportBidModeList
      *
      * @return $this
      */

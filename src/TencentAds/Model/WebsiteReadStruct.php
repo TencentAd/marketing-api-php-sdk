@@ -236,7 +236,7 @@ class WebsiteReadStruct implements ModelInterface, ArrayAccess
     /**
      * Sets websiteDomain
      *
-     * @param string $websiteDomain websiteDomain
+     * @param string|mixed $websiteDomain websiteDomain
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class WebsiteReadStruct implements ModelInterface, ArrayAccess
     /**
      * Sets icpImageId
      *
-     * @param string $icpImageId icpImageId
+     * @param string|mixed $icpImageId icpImageId
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class WebsiteReadStruct implements ModelInterface, ArrayAccess
     /**
      * Sets systemStatus
      *
-     * @param \TencentAds\Model\WebsiteStatus $systemStatus systemStatus
+     * @param \TencentAds\Model\WebsiteStatus|mixed $systemStatus systemStatus
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class WebsiteReadStruct implements ModelInterface, ArrayAccess
     /**
      * Sets rejectMessage
      *
-     * @param string $rejectMessage rejectMessage
+     * @param string|mixed $rejectMessage rejectMessage
      *
      * @return $this
      */

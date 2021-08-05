@@ -224,7 +224,7 @@ class DateSpec implements ModelInterface, ArrayAccess
     /**
      * Sets beginDate
      *
-     * @param string $beginDate beginDate
+     * @param string|mixed $beginDate beginDate
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class DateSpec implements ModelInterface, ArrayAccess
     /**
      * Sets endDate
      *
-     * @param string $endDate endDate
+     * @param string|mixed $endDate endDate
      *
      * @return $this
      */

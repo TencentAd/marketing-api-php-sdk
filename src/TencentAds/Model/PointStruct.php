@@ -224,7 +224,7 @@ class PointStruct implements ModelInterface, ArrayAccess
     /**
      * Sets time
      *
-     * @param string $time time
+     * @param string|mixed $time time
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class PointStruct implements ModelInterface, ArrayAccess
     /**
      * Sets value
      *
-     * @param double $value value
+     * @param double|mixed $value value
      *
      * @return $this
      */

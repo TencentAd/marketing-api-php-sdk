@@ -223,7 +223,7 @@ class DynamicCreativesGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\DynamicCreativesGetListStruct[] $list list
+     * @param \TencentAds\Model\DynamicCreativesGetListStruct[]|mixed $list list
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class DynamicCreativesGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets pageInfo
      *
-     * @param \TencentAds\Model\ConfPageSize500 $pageInfo pageInfo
+     * @param \TencentAds\Model\ConfPageSize500|mixed $pageInfo pageInfo
      *
      * @return $this
      */

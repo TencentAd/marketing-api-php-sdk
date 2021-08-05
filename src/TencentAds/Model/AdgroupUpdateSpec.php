@@ -248,7 +248,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupName
      *
-     * @param string $adgroupName adgroupName
+     * @param string|mixed $adgroupName adgroupName
      *
      * @return $this
      */
@@ -272,7 +272,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
     /**
      * Sets beginDate
      *
-     * @param string $beginDate beginDate
+     * @param string|mixed $beginDate beginDate
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
     /**
      * Sets configuredStatus
      *
-     * @param \TencentAds\Model\AdStatus $configuredStatus configuredStatus
+     * @param \TencentAds\Model\AdStatus|mixed $configuredStatus configuredStatus
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
     /**
      * Sets targeting
      *
-     * @param \TencentAds\Model\DpWriteTargetingSetting $targeting targeting
+     * @param \TencentAds\Model\DpWriteTargetingSetting|mixed $targeting targeting
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
     /**
      * Sets poiList
      *
-     * @param string[] $poiList poiList
+     * @param string[]|mixed $poiList poiList
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class AdgroupUpdateSpec implements ModelInterface, ArrayAccess
     /**
      * Sets poiRadius
      *
-     * @param int $poiRadius poiRadius
+     * @param int|mixed $poiRadius poiRadius
      *
      * @return $this
      */

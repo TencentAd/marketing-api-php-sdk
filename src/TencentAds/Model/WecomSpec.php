@@ -230,7 +230,7 @@ class WecomSpec implements ModelInterface, ArrayAccess
     /**
      * Sets title
      *
-     * @param string $title title
+     * @param string|mixed $title title
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class WecomSpec implements ModelInterface, ArrayAccess
     /**
      * Sets groupid
      *
-     * @param int $groupid groupid
+     * @param int|mixed $groupid groupid
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class WecomSpec implements ModelInterface, ArrayAccess
     /**
      * Sets setid
      *
-     * @param int $setid setid
+     * @param int|mixed $setid setid
      *
      * @return $this
      */

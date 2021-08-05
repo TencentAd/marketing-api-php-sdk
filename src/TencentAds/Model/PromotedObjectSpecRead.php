@@ -272,7 +272,7 @@ class PromotedObjectSpecRead implements ModelInterface, ArrayAccess
     /**
      * Sets jdItem
      *
-     * @param \TencentAds\Model\EcInfo $jdItem jdItem
+     * @param \TencentAds\Model\EcInfo|mixed $jdItem jdItem
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class PromotedObjectSpecRead implements ModelInterface, ArrayAccess
     /**
      * Sets jdShop
      *
-     * @param \TencentAds\Model\EcInfo $jdShop jdShop
+     * @param \TencentAds\Model\EcInfo|mixed $jdShop jdShop
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class PromotedObjectSpecRead implements ModelInterface, ArrayAccess
     /**
      * Sets appIosSpec
      *
-     * @param \TencentAds\Model\PromotedObjectAppIosSpec $appIosSpec appIosSpec
+     * @param \TencentAds\Model\PromotedObjectAppIosSpec|mixed $appIosSpec appIosSpec
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class PromotedObjectSpecRead implements ModelInterface, ArrayAccess
     /**
      * Sets appAndroidSpec
      *
-     * @param \TencentAds\Model\PromotedObjectAppAndroidSpec $appAndroidSpec appAndroidSpec
+     * @param \TencentAds\Model\PromotedObjectAppAndroidSpec|mixed $appAndroidSpec appAndroidSpec
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class PromotedObjectSpecRead implements ModelInterface, ArrayAccess
     /**
      * Sets appAndroidUnionSpec
      *
-     * @param \TencentAds\Model\AppAndroidUnionSpec $appAndroidUnionSpec appAndroidUnionSpec
+     * @param \TencentAds\Model\AppAndroidUnionSpec|mixed $appAndroidUnionSpec appAndroidUnionSpec
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class PromotedObjectSpecRead implements ModelInterface, ArrayAccess
     /**
      * Sets appAndroidMyappSpec
      *
-     * @param \TencentAds\Model\AppAndroidMyappSpec $appAndroidMyappSpec appAndroidMyappSpec
+     * @param \TencentAds\Model\AppAndroidMyappSpec|mixed $appAndroidMyappSpec appAndroidMyappSpec
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class PromotedObjectSpecRead implements ModelInterface, ArrayAccess
     /**
      * Sets dianpingShop
      *
-     * @param \TencentAds\Model\ProductTypeDianpingShop $dianpingShop dianpingShop
+     * @param \TencentAds\Model\ProductTypeDianpingShop|mixed $dianpingShop dianpingShop
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class PromotedObjectSpecRead implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameWechatSpec
      *
-     * @param \TencentAds\Model\MiniGameWechatSpec $miniGameWechatSpec miniGameWechatSpec
+     * @param \TencentAds\Model\MiniGameWechatSpec|mixed $miniGameWechatSpec miniGameWechatSpec
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class PromotedObjectSpecRead implements ModelInterface, ArrayAccess
     /**
      * Sets qqBrowserMiniProgram
      *
-     * @param \TencentAds\Model\QqBrowserMiniProgram $qqBrowserMiniProgram qqBrowserMiniProgram
+     * @param \TencentAds\Model\QqBrowserMiniProgram|mixed $qqBrowserMiniProgram qqBrowserMiniProgram
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class PromotedObjectSpecRead implements ModelInterface, ArrayAccess
     /**
      * Sets localAdsSpec
      *
-     * @param \TencentAds\Model\LocalAdsSpecRead $localAdsSpec localAdsSpec
+     * @param \TencentAds\Model\LocalAdsSpecRead|mixed $localAdsSpec localAdsSpec
      *
      * @return $this
      */

@@ -224,7 +224,7 @@ class WechatPagesCsgrouplistGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets groupid
      *
-     * @param int $groupid groupid
+     * @param int|mixed $groupid groupid
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class WechatPagesCsgrouplistGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets groupname
      *
-     * @param string $groupname groupname
+     * @param string|mixed $groupname groupname
      *
      * @return $this
      */

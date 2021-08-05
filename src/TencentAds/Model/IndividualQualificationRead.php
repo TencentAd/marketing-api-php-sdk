@@ -224,7 +224,7 @@ class IndividualQualificationRead implements ModelInterface, ArrayAccess
     /**
      * Sets identificationFrontImageId
      *
-     * @param string $identificationFrontImageId identificationFrontImageId
+     * @param string|mixed $identificationFrontImageId identificationFrontImageId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class IndividualQualificationRead implements ModelInterface, ArrayAccess
     /**
      * Sets identificationBackImageId
      *
-     * @param string $identificationBackImageId identificationBackImageId
+     * @param string|mixed $identificationBackImageId identificationBackImageId
      *
      * @return $this
      */

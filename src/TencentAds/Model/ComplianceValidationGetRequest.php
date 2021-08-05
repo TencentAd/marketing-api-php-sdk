@@ -235,7 +235,7 @@ class ComplianceValidationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -259,7 +259,7 @@ class ComplianceValidationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets siteSet
      *
-     * @param \TencentAds\Model\SiteSet $siteSet siteSet
+     * @param \TencentAds\Model\SiteSet|mixed $siteSet siteSet
      *
      * @return $this
      */
@@ -283,7 +283,7 @@ class ComplianceValidationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets imageId
      *
-     * @param string $imageId imageId
+     * @param string|mixed $imageId imageId
      *
      * @return $this
      */
@@ -307,7 +307,7 @@ class ComplianceValidationGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets text
      *
-     * @param string $text text
+     * @param string|mixed $text text
      *
      * @return $this
      */

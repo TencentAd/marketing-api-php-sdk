@@ -332,7 +332,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets updateUnionPositionPackageSpec
      *
-     * @param \TencentAds\Model\UpdateUnionPositionPackageItem[] $updateUnionPositionPackageSpec updateUnionPositionPackageSpec
+     * @param \TencentAds\Model\UpdateUnionPositionPackageItem[]|mixed $updateUnionPositionPackageSpec updateUnionPositionPackageSpec
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets updateExcludeUnionPositionPackageSpec
      *
-     * @param \TencentAds\Model\UpdateExcludeUnionPositionPackageItem[] $updateExcludeUnionPositionPackageSpec updateExcludeUnionPositionPackageSpec
+     * @param \TencentAds\Model\UpdateExcludeUnionPositionPackageItem[]|mixed $updateExcludeUnionPositionPackageSpec updateExcludeUnionPositionPackageSpec
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets updateTargetingIdSpec
      *
-     * @param \TencentAds\Model\UpdateTargetingIdItem[] $updateTargetingIdSpec updateTargetingIdSpec
+     * @param \TencentAds\Model\UpdateTargetingIdItem[]|mixed $updateTargetingIdSpec updateTargetingIdSpec
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets updateBidStrategySpec
      *
-     * @param \TencentAds\Model\UpdateBidStrategyItem[] $updateBidStrategySpec updateBidStrategySpec
+     * @param \TencentAds\Model\UpdateBidStrategyItem[]|mixed $updateBidStrategySpec updateBidStrategySpec
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets updateDeepConversionBehaviorBidSpec
      *
-     * @param \TencentAds\Model\UpdateDeepConversionBehaviorBidItem[] $updateDeepConversionBehaviorBidSpec updateDeepConversionBehaviorBidSpec
+     * @param \TencentAds\Model\UpdateDeepConversionBehaviorBidItem[]|mixed $updateDeepConversionBehaviorBidSpec updateDeepConversionBehaviorBidSpec
      *
      * @return $this
      */
@@ -452,7 +452,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets updateAdgroupAppAndroidChannelPackageIdSpec
      *
-     * @param \TencentAds\Model\UpdateAdgroupAppAndroidChannelPackageIdItem[] $updateAdgroupAppAndroidChannelPackageIdSpec updateAdgroupAppAndroidChannelPackageIdSpec
+     * @param \TencentAds\Model\UpdateAdgroupAppAndroidChannelPackageIdItem[]|mixed $updateAdgroupAppAndroidChannelPackageIdSpec updateAdgroupAppAndroidChannelPackageIdSpec
      *
      * @return $this
      */
@@ -476,7 +476,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets updateCampaignSpeedModeSpec
      *
-     * @param \TencentAds\Model\UpdateCampaignSpeedModeItem[] $updateCampaignSpeedModeSpec updateCampaignSpeedModeSpec
+     * @param \TencentAds\Model\UpdateCampaignSpeedModeItem[]|mixed $updateCampaignSpeedModeSpec updateCampaignSpeedModeSpec
      *
      * @return $this
      */
@@ -500,7 +500,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets deleteCampaignSpec
      *
-     * @param \TencentAds\Model\DeleteCampaignItem[] $deleteCampaignSpec deleteCampaignSpec
+     * @param \TencentAds\Model\DeleteCampaignItem[]|mixed $deleteCampaignSpec deleteCampaignSpec
      *
      * @return $this
      */
@@ -524,7 +524,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets deleteAdgroupSpec
      *
-     * @param \TencentAds\Model\DeleteAdgroupItem[] $deleteAdgroupSpec deleteAdgroupSpec
+     * @param \TencentAds\Model\DeleteAdgroupItem[]|mixed $deleteAdgroupSpec deleteAdgroupSpec
      *
      * @return $this
      */
@@ -548,7 +548,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets deleteAdSpec
      *
-     * @param \TencentAds\Model\DeleteAdItem[] $deleteAdSpec deleteAdSpec
+     * @param \TencentAds\Model\DeleteAdItem[]|mixed $deleteAdSpec deleteAdSpec
      *
      * @return $this
      */
@@ -572,7 +572,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets updateAdgroupDeepConversionWorthRateSpec
      *
-     * @param \TencentAds\Model\UpdateAdgroupDeepConversionWorthRateItem[] $updateAdgroupDeepConversionWorthRateSpec updateAdgroupDeepConversionWorthRateSpec
+     * @param \TencentAds\Model\UpdateAdgroupDeepConversionWorthRateItem[]|mixed $updateAdgroupDeepConversionWorthRateSpec updateAdgroupDeepConversionWorthRateSpec
      *
      * @return $this
      */
@@ -596,7 +596,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets updateAdcreativeDeepLinkUrlSpec
      *
-     * @param \TencentAds\Model\UpdateAdcreativeDeepLinkUrlItem[] $updateAdcreativeDeepLinkUrlSpec updateAdcreativeDeepLinkUrlSpec
+     * @param \TencentAds\Model\UpdateAdcreativeDeepLinkUrlItem[]|mixed $updateAdcreativeDeepLinkUrlSpec updateAdcreativeDeepLinkUrlSpec
      *
      * @return $this
      */
@@ -620,7 +620,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets targetingsShareSpec
      *
-     * @param \TencentAds\Model\TargetingsShareItem[] $targetingsShareSpec targetingsShareSpec
+     * @param \TencentAds\Model\TargetingsShareItem[]|mixed $targetingsShareSpec targetingsShareSpec
      *
      * @return $this
      */
@@ -644,7 +644,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets updateCampaignConfiguredStatusSpec
      *
-     * @param \TencentAds\Model\UpdateCampaignConfiguredStatusItem[] $updateCampaignConfiguredStatusSpec updateCampaignConfiguredStatusSpec
+     * @param \TencentAds\Model\UpdateCampaignConfiguredStatusItem[]|mixed $updateCampaignConfiguredStatusSpec updateCampaignConfiguredStatusSpec
      *
      * @return $this
      */
@@ -668,7 +668,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets updateCampaignDailyBudgetSpec
      *
-     * @param \TencentAds\Model\UpdateCampaignDailyBudgetItem[] $updateCampaignDailyBudgetSpec updateCampaignDailyBudgetSpec
+     * @param \TencentAds\Model\UpdateCampaignDailyBudgetItem[]|mixed $updateCampaignDailyBudgetSpec updateCampaignDailyBudgetSpec
      *
      * @return $this
      */
@@ -692,7 +692,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets updateAdgroupConfiguredStatusSpec
      *
-     * @param \TencentAds\Model\UpdateAdgroupConfiguredStatusItem[] $updateAdgroupConfiguredStatusSpec updateAdgroupConfiguredStatusSpec
+     * @param \TencentAds\Model\UpdateAdgroupConfiguredStatusItem[]|mixed $updateAdgroupConfiguredStatusSpec updateAdgroupConfiguredStatusSpec
      *
      * @return $this
      */
@@ -716,7 +716,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets updateAdgroupDailyBudgetSpec
      *
-     * @param \TencentAds\Model\UpdateAdgroupDailyBudgetItem[] $updateAdgroupDailyBudgetSpec updateAdgroupDailyBudgetSpec
+     * @param \TencentAds\Model\UpdateAdgroupDailyBudgetItem[]|mixed $updateAdgroupDailyBudgetSpec updateAdgroupDailyBudgetSpec
      *
      * @return $this
      */
@@ -740,7 +740,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets updateAdConfiguredStatusSpec
      *
-     * @param \TencentAds\Model\UpdateAdConfiguredStatusItem[] $updateAdConfiguredStatusSpec updateAdConfiguredStatusSpec
+     * @param \TencentAds\Model\UpdateAdConfiguredStatusItem[]|mixed $updateAdConfiguredStatusSpec updateAdConfiguredStatusSpec
      *
      * @return $this
      */
@@ -764,7 +764,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets updateAdgroupAutoAcquisitionSpec
      *
-     * @param \TencentAds\Model\UpdateAdgroupAutoAcquisitionItem[] $updateAdgroupAutoAcquisitionSpec updateAdgroupAutoAcquisitionSpec
+     * @param \TencentAds\Model\UpdateAdgroupAutoAcquisitionItem[]|mixed $updateAdgroupAutoAcquisitionSpec updateAdgroupAutoAcquisitionSpec
      *
      * @return $this
      */
@@ -788,7 +788,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets updateAdcreativeLandingPageSpec
      *
-     * @param \TencentAds\Model\UpdateAdcreativeLandingPageItem[] $updateAdcreativeLandingPageSpec updateAdcreativeLandingPageSpec
+     * @param \TencentAds\Model\UpdateAdcreativeLandingPageItem[]|mixed $updateAdcreativeLandingPageSpec updateAdcreativeLandingPageSpec
      *
      * @return $this
      */

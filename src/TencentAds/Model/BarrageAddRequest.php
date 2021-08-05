@@ -223,7 +223,7 @@ class BarrageAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class BarrageAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets textList
      *
-     * @param string[] $textList textList
+     * @param string[]|mixed $textList textList
      *
      * @return $this
      */

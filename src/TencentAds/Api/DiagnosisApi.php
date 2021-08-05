@@ -92,10 +92,10 @@ class DiagnosisApi
      *
      * 广告诊断分析工具
      *
-     * @param  int $accountId accountId (required)
-     * @param  int[] $adgroupIdList adgroupIdList (required)
-     * @param  \TencentAds\Model\TimeRange $timeRange timeRange (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int[]|mixed $adgroupIdList adgroupIdList (required)
+     * @param  \TencentAds\Model\TimeRange|mixed $timeRange timeRange (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -112,10 +112,10 @@ class DiagnosisApi
      *
      * 广告诊断分析工具
      *
-     * @param  int $accountId (required)
-     * @param  int[] $adgroupIdList (required)
-     * @param  \TencentAds\Model\TimeRange $timeRange (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int[]|mixed $adgroupIdList (required)
+     * @param  \TencentAds\Model\TimeRange|mixed $timeRange (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -190,10 +190,10 @@ class DiagnosisApi
      *
      * 广告诊断分析工具
      *
-     * @param  int $accountId (required)
-     * @param  int[] $adgroupIdList (required)
-     * @param  \TencentAds\Model\TimeRange $timeRange (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int[]|mixed $adgroupIdList (required)
+     * @param  \TencentAds\Model\TimeRange|mixed $timeRange (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -213,10 +213,10 @@ class DiagnosisApi
      *
      * 广告诊断分析工具
      *
-     * @param  int $accountId (required)
-     * @param  int[] $adgroupIdList (required)
-     * @param  \TencentAds\Model\TimeRange $timeRange (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int[]|mixed $adgroupIdList (required)
+     * @param  \TencentAds\Model\TimeRange|mixed $timeRange (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -266,10 +266,10 @@ class DiagnosisApi
     /**
      * Create request for operation 'diagnosisGet'
      *
-     * @param  int $accountId (required)
-     * @param  int[] $adgroupIdList (required)
-     * @param  \TencentAds\Model\TimeRange $timeRange (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int[]|mixed $adgroupIdList (required)
+     * @param  \TencentAds\Model\TimeRange|mixed $timeRange (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

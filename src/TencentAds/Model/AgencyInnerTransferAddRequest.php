@@ -247,7 +247,7 @@ class AgencyInnerTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets fundTypeFrom
      *
-     * @param \TencentAds\Model\AccountTypeMapInnerTransfer $fundTypeFrom fundTypeFrom
+     * @param \TencentAds\Model\AccountTypeMapInnerTransfer|mixed $fundTypeFrom fundTypeFrom
      *
      * @return $this
      */
@@ -271,7 +271,7 @@ class AgencyInnerTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets fundTypeTo
      *
-     * @param \TencentAds\Model\AccountTypeMapInnerTransfer $fundTypeTo fundTypeTo
+     * @param \TencentAds\Model\AccountTypeMapInnerTransfer|mixed $fundTypeTo fundTypeTo
      *
      * @return $this
      */
@@ -295,7 +295,7 @@ class AgencyInnerTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets amount
      *
-     * @param int $amount amount
+     * @param int|mixed $amount amount
      *
      * @return $this
      */
@@ -319,7 +319,7 @@ class AgencyInnerTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets externalBillNo
      *
-     * @param string $externalBillNo externalBillNo
+     * @param string|mixed $externalBillNo externalBillNo
      *
      * @return $this
      */
@@ -343,7 +343,7 @@ class AgencyInnerTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets memo
      *
-     * @param string $memo memo
+     * @param string|mixed $memo memo
      *
      * @return $this
      */
@@ -367,7 +367,7 @@ class AgencyInnerTransferAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */

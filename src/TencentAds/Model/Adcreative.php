@@ -296,7 +296,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Sets adcreativeId
      *
-     * @param int $adcreativeId adcreativeId
+     * @param int|mixed $adcreativeId adcreativeId
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Sets adcreativeName
      *
-     * @param string $adcreativeName adcreativeName
+     * @param string|mixed $adcreativeName adcreativeName
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Sets campaignId
      *
-     * @param int $campaignId campaignId
+     * @param int|mixed $campaignId campaignId
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Sets pageType
      *
-     * @param \TencentAds\Model\PageTypeRead $pageType pageType
+     * @param \TencentAds\Model\PageTypeRead|mixed $pageType pageType
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Sets pageSpec
      *
-     * @param \TencentAds\Model\PageSpec $pageSpec pageSpec
+     * @param \TencentAds\Model\PageSpec|mixed $pageSpec pageSpec
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Sets siteSet
      *
-     * @param string[] $siteSet siteSet
+     * @param string[]|mixed $siteSet siteSet
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObjectType|mixed $promotedObjectType promotedObjectType
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectId
      *
-     * @param string $promotedObjectId promotedObjectId
+     * @param string|mixed $promotedObjectId promotedObjectId
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -512,7 +512,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedTime
      *
-     * @param int $lastModifiedTime lastModifiedTime
+     * @param int|mixed $lastModifiedTime lastModifiedTime
      *
      * @return $this
      */
@@ -536,7 +536,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Sets playablePageMaterialId
      *
-     * @param string $playablePageMaterialId playablePageMaterialId
+     * @param string|mixed $playablePageMaterialId playablePageMaterialId
      *
      * @return $this
      */
@@ -560,7 +560,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Sets videoEndPage
      *
-     * @param \TencentAds\Model\VideoEndPageSpec $videoEndPage videoEndPage
+     * @param \TencentAds\Model\VideoEndPageSpec|mixed $videoEndPage videoEndPage
      *
      * @return $this
      */
@@ -584,7 +584,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Sets adcreativeTemplateId
      *
-     * @param int $adcreativeTemplateId adcreativeTemplateId
+     * @param int|mixed $adcreativeTemplateId adcreativeTemplateId
      *
      * @return $this
      */
@@ -608,7 +608,7 @@ class Adcreative implements ModelInterface, ArrayAccess
     /**
      * Sets adcreativeElements
      *
-     * @param \TencentAds\Model\AdcreativeCreativeElementsRead $adcreativeElements adcreativeElements
+     * @param \TencentAds\Model\AdcreativeCreativeElementsRead|mixed $adcreativeElements adcreativeElements
      *
      * @return $this
      */

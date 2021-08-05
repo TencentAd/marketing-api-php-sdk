@@ -230,7 +230,7 @@ class AgencyRealtimeCostGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cost
      *
-     * @param int $cost cost
+     * @param int|mixed $cost cost
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class AgencyRealtimeCostGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets caculateTime
      *
-     * @param int $caculateTime caculateTime
+     * @param int|mixed $caculateTime caculateTime
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class AgencyRealtimeCostGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets fundType
      *
-     * @param \TencentAds\Model\AccountTypeMap $fundType fundType
+     * @param \TencentAds\Model\AccountTypeMap|mixed $fundType fundType
      *
      * @return $this
      */

@@ -218,7 +218,7 @@ class Intention implements ModelInterface, ArrayAccess
     /**
      * Sets targetingTags
      *
-     * @param int[] $targetingTags targetingTags
+     * @param int[]|mixed $targetingTags targetingTags
      *
      * @return $this
      */

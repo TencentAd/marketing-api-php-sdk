@@ -224,7 +224,7 @@ class UpdateBidStrategyItem implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class UpdateBidStrategyItem implements ModelInterface, ArrayAccess
     /**
      * Sets bidStrategy
      *
-     * @param \TencentAds\Model\BidStrategy $bidStrategy bidStrategy
+     * @param \TencentAds\Model\BidStrategy|mixed $bidStrategy bidStrategy
      *
      * @return $this
      */

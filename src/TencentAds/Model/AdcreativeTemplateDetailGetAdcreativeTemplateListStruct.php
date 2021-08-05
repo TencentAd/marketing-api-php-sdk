@@ -326,7 +326,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
     /**
      * Sets adcreativeTemplateId
      *
-     * @param int $adcreativeTemplateId adcreativeTemplateId
+     * @param int|mixed $adcreativeTemplateId adcreativeTemplateId
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
     /**
      * Sets adcreativeTemplateName
      *
-     * @param string $adcreativeTemplateName adcreativeTemplateName
+     * @param string|mixed $adcreativeTemplateName adcreativeTemplateName
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
     /**
      * Sets adcreativeTemplateDescription
      *
-     * @param string $adcreativeTemplateDescription adcreativeTemplateDescription
+     * @param string|mixed $adcreativeTemplateDescription adcreativeTemplateDescription
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
     /**
      * Sets adcreativeTemplateSize
      *
-     * @param string $adcreativeTemplateSize adcreativeTemplateSize
+     * @param string|mixed $adcreativeTemplateSize adcreativeTemplateSize
      *
      * @return $this
      */
@@ -422,7 +422,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
     /**
      * Sets adcreativeTemplateStyle
      *
-     * @param string $adcreativeTemplateStyle adcreativeTemplateStyle
+     * @param string|mixed $adcreativeTemplateStyle adcreativeTemplateStyle
      *
      * @return $this
      */
@@ -446,7 +446,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
     /**
      * Sets adcreativeSampleImageList
      *
-     * @param \TencentAds\Model\AdcreativeSampleImage[] $adcreativeSampleImageList adcreativeSampleImageList
+     * @param \TencentAds\Model\AdcreativeSampleImage[]|mixed $adcreativeSampleImageList adcreativeSampleImageList
      *
      * @return $this
      */
@@ -470,7 +470,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
     /**
      * Sets adAttributes
      *
-     * @param \TencentAds\Model\AdcreativeElement[] $adAttributes adAttributes
+     * @param \TencentAds\Model\AdcreativeElement[]|mixed $adAttributes adAttributes
      *
      * @return $this
      */
@@ -494,7 +494,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
     /**
      * Sets adcreativeAttributes
      *
-     * @param \TencentAds\Model\AdcreativeElement[] $adcreativeAttributes adcreativeAttributes
+     * @param \TencentAds\Model\AdcreativeElement[]|mixed $adcreativeAttributes adcreativeAttributes
      *
      * @return $this
      */
@@ -518,7 +518,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
     /**
      * Sets adcreativeElements
      *
-     * @param \TencentAds\Model\AdcreativeElement[] $adcreativeElements adcreativeElements
+     * @param \TencentAds\Model\AdcreativeElement[]|mixed $adcreativeElements adcreativeElements
      *
      * @return $this
      */
@@ -542,7 +542,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
     /**
      * Sets supportBillingSpecList
      *
-     * @param \TencentAds\Model\SupportBillingSpec[] $supportBillingSpecList supportBillingSpecList
+     * @param \TencentAds\Model\SupportBillingSpec[]|mixed $supportBillingSpecList supportBillingSpecList
      *
      * @return $this
      */
@@ -566,7 +566,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
     /**
      * Sets supportPageType
      *
-     * @param string[] $supportPageType supportPageType
+     * @param string[]|mixed $supportPageType supportPageType
      *
      * @return $this
      */
@@ -590,7 +590,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
     /**
      * Sets landingPageConfig
      *
-     * @param \TencentAds\Model\LandingPageConfig $landingPageConfig landingPageConfig
+     * @param \TencentAds\Model\LandingPageConfig|mixed $landingPageConfig landingPageConfig
      *
      * @return $this
      */
@@ -614,7 +614,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
     /**
      * Sets unsupportBillingSpecList
      *
-     * @param \TencentAds\Model\UnsupportBillingSpec[] $unsupportBillingSpecList unsupportBillingSpecList
+     * @param \TencentAds\Model\UnsupportBillingSpec[]|mixed $unsupportBillingSpecList unsupportBillingSpecList
      *
      * @return $this
      */
@@ -638,7 +638,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
     /**
      * Sets unsupportAdAttributesSpecList
      *
-     * @param \TencentAds\Model\UnsupportSpec[] $unsupportAdAttributesSpecList unsupportAdAttributesSpecList
+     * @param \TencentAds\Model\UnsupportSpec[]|mixed $unsupportAdAttributesSpecList unsupportAdAttributesSpecList
      *
      * @return $this
      */
@@ -662,7 +662,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
     /**
      * Sets unsupportAdcreativeAttributesSpecList
      *
-     * @param \TencentAds\Model\UnsupportSpec[] $unsupportAdcreativeAttributesSpecList unsupportAdcreativeAttributesSpecList
+     * @param \TencentAds\Model\UnsupportSpec[]|mixed $unsupportAdcreativeAttributesSpecList unsupportAdcreativeAttributesSpecList
      *
      * @return $this
      */
@@ -686,7 +686,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
     /**
      * Sets unsupportSitesetDetailSpec
      *
-     * @param \TencentAds\Model\UnsupportSite[] $unsupportSitesetDetailSpec unsupportSitesetDetailSpec
+     * @param \TencentAds\Model\UnsupportSite[]|mixed $unsupportSitesetDetailSpec unsupportSitesetDetailSpec
      *
      * @return $this
      */
@@ -710,7 +710,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
     /**
      * Sets supportDynamicAbilitySpecList
      *
-     * @param \TencentAds\Model\SupportDynamicAbilitySpecList $supportDynamicAbilitySpecList supportDynamicAbilitySpecList
+     * @param \TencentAds\Model\SupportDynamicAbilitySpecList|mixed $supportDynamicAbilitySpecList supportDynamicAbilitySpecList
      *
      * @return $this
      */
@@ -734,7 +734,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
     /**
      * Sets supportBidModeList
      *
-     * @param string[] $supportBidModeList supportBidModeList
+     * @param string[]|mixed $supportBidModeList supportBidModeList
      *
      * @return $this
      */
@@ -758,7 +758,7 @@ class AdcreativeTemplateDetailGetAdcreativeTemplateListStruct implements ModelIn
     /**
      * Sets unsupportBidModeList
      *
-     * @param \TencentAds\Model\UnsupportBidModeStruct[] $unsupportBidModeList unsupportBidModeList
+     * @param \TencentAds\Model\UnsupportBidModeStruct[]|mixed $unsupportBidModeList unsupportBidModeList
      *
      * @return $this
      */

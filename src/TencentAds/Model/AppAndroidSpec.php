@@ -236,7 +236,7 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
     /**
      * Sets deepLinkUrl
      *
-     * @param string $deepLinkUrl deepLinkUrl
+     * @param string|mixed $deepLinkUrl deepLinkUrl
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
     /**
      * Sets appAndroidId
      *
-     * @param string $appAndroidId appAndroidId
+     * @param string|mixed $appAndroidId appAndroidId
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
     /**
      * Sets appAndroidChannelPackageId
      *
-     * @param string $appAndroidChannelPackageId appAndroidChannelPackageId
+     * @param string|mixed $appAndroidChannelPackageId appAndroidChannelPackageId
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class AppAndroidSpec implements ModelInterface, ArrayAccess
     /**
      * Sets appMarketPackage
      *
-     * @param string $appMarketPackage appMarketPackage
+     * @param string|mixed $appMarketPackage appMarketPackage
      *
      * @return $this
      */

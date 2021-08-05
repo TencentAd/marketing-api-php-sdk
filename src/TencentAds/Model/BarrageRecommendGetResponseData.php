@@ -217,7 +217,7 @@ class BarrageRecommendGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\BarrageRecommendGetListStruct[] $list list
+     * @param \TencentAds\Model\BarrageRecommendGetListStruct[]|mixed $list list
      *
      * @return $this
      */

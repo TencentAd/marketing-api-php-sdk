@@ -224,7 +224,7 @@ class AdQualificationsSpec implements ModelInterface, ArrayAccess
     /**
      * Sets qualificationCode
      *
-     * @param string $qualificationCode qualificationCode
+     * @param string|mixed $qualificationCode qualificationCode
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class AdQualificationsSpec implements ModelInterface, ArrayAccess
     /**
      * Sets imageIdList
      *
-     * @param string[] $imageIdList imageIdList
+     * @param string[]|mixed $imageIdList imageIdList
      *
      * @return $this
      */

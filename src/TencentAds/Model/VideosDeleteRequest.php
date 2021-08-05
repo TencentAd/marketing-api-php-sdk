@@ -223,7 +223,7 @@ class VideosDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class VideosDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Sets videoId
      *
-     * @param int $videoId videoId
+     * @param int|mixed $videoId videoId
      *
      * @return $this
      */

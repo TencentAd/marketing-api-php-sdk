@@ -224,7 +224,7 @@ class DeliveryDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets deliveryUpdateTime
      *
-     * @param string $deliveryUpdateTime deliveryUpdateTime
+     * @param string|mixed $deliveryUpdateTime deliveryUpdateTime
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class DeliveryDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets deliveryDetail
      *
-     * @param string $deliveryDetail deliveryDetail
+     * @param string|mixed $deliveryDetail deliveryDetail
      *
      * @return $this
      */

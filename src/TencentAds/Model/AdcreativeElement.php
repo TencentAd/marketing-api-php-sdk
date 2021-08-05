@@ -272,7 +272,7 @@ class AdcreativeElement implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param string $name name
+     * @param string|mixed $name name
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class AdcreativeElement implements ModelInterface, ArrayAccess
     /**
      * Sets elementType
      *
-     * @param \TencentAds\Model\ElementType $elementType elementType
+     * @param \TencentAds\Model\ElementType|mixed $elementType elementType
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class AdcreativeElement implements ModelInterface, ArrayAccess
     /**
      * Sets fieldType
      *
-     * @param \TencentAds\Model\FieldType $fieldType fieldType
+     * @param \TencentAds\Model\FieldType|mixed $fieldType fieldType
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class AdcreativeElement implements ModelInterface, ArrayAccess
     /**
      * Sets required
      *
-     * @param bool $required required
+     * @param bool|mixed $required required
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class AdcreativeElement implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class AdcreativeElement implements ModelInterface, ArrayAccess
     /**
      * Sets parentName
      *
-     * @param string $parentName parentName
+     * @param string|mixed $parentName parentName
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class AdcreativeElement implements ModelInterface, ArrayAccess
     /**
      * Sets enumProperty
      *
-     * @param \TencentAds\Model\AdcreativeElementEnumProperty $enumProperty enumProperty
+     * @param \TencentAds\Model\AdcreativeElementEnumProperty|mixed $enumProperty enumProperty
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class AdcreativeElement implements ModelInterface, ArrayAccess
     /**
      * Sets arrayProperty
      *
-     * @param \TencentAds\Model\AdcreativeElementArrayProperty $arrayProperty arrayProperty
+     * @param \TencentAds\Model\AdcreativeElementArrayProperty|mixed $arrayProperty arrayProperty
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class AdcreativeElement implements ModelInterface, ArrayAccess
     /**
      * Sets structProperty
      *
-     * @param \TencentAds\Model\AdcreativeElementStructProperty $structProperty structProperty
+     * @param \TencentAds\Model\AdcreativeElementStructProperty|mixed $structProperty structProperty
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class AdcreativeElement implements ModelInterface, ArrayAccess
     /**
      * Sets restriction
      *
-     * @param \TencentAds\Model\AdcreativeElementRestriction $restriction restriction
+     * @param \TencentAds\Model\AdcreativeElementRestriction|mixed $restriction restriction
      *
      * @return $this
      */

@@ -223,7 +223,7 @@ class AdgroupsUpdateConfiguredStatusRequest implements ModelInterface, ArrayAcce
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class AdgroupsUpdateConfiguredStatusRequest implements ModelInterface, ArrayAcce
     /**
      * Sets updateConfiguredStatusSpec
      *
-     * @param \TencentAds\Model\AdgroupsUpdateConfiguredStatusUpdateConfiguredStatusStruct[] $updateConfiguredStatusSpec updateConfiguredStatusSpec
+     * @param \TencentAds\Model\AdgroupsUpdateConfiguredStatusUpdateConfiguredStatusStruct[]|mixed $updateConfiguredStatusSpec updateConfiguredStatusSpec
      *
      * @return $this
      */

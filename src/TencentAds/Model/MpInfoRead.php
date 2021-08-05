@@ -290,7 +290,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAccountId
      *
-     * @param string $wechatAccountId wechatAccountId
+     * @param string|mixed $wechatAccountId wechatAccountId
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAccountName
      *
-     * @param string $wechatAccountName wechatAccountName
+     * @param string|mixed $wechatAccountName wechatAccountName
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Sets systemStatus
      *
-     * @param \TencentAds\Model\WechatCustomerSystemStatus $systemStatus systemStatus
+     * @param \TencentAds\Model\WechatCustomerSystemStatus|mixed $systemStatus systemStatus
      *
      * @return $this
      */
@@ -362,7 +362,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Sets industryName
      *
-     * @param string $industryName industryName
+     * @param string|mixed $industryName industryName
      *
      * @return $this
      */
@@ -386,7 +386,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Sets contactPerson
      *
-     * @param string $contactPerson contactPerson
+     * @param string|mixed $contactPerson contactPerson
      *
      * @return $this
      */
@@ -410,7 +410,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Sets contactPersonTelephone
      *
-     * @param string $contactPersonTelephone contactPersonTelephone
+     * @param string|mixed $contactPersonTelephone contactPersonTelephone
      *
      * @return $this
      */
@@ -434,7 +434,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Sets businessType
      *
-     * @param \TencentAds\Model\WechatBusinessType $businessType businessType
+     * @param \TencentAds\Model\WechatBusinessType|mixed $businessType businessType
      *
      * @return $this
      */
@@ -458,7 +458,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Sets businessContent
      *
-     * @param string $businessContent businessContent
+     * @param string|mixed $businessContent businessContent
      *
      * @return $this
      */
@@ -482,7 +482,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Sets rejectMessage
      *
-     * @param string $rejectMessage rejectMessage
+     * @param string|mixed $rejectMessage rejectMessage
      *
      * @return $this
      */
@@ -506,7 +506,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Sets profilePhoto
      *
-     * @param string $profilePhoto profilePhoto
+     * @param string|mixed $profilePhoto profilePhoto
      *
      * @return $this
      */
@@ -530,7 +530,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Sets brandIntroduction
      *
-     * @param string $brandIntroduction brandIntroduction
+     * @param string|mixed $brandIntroduction brandIntroduction
      *
      * @return $this
      */
@@ -554,7 +554,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Sets introductionUrl
      *
-     * @param string $introductionUrl introductionUrl
+     * @param string|mixed $introductionUrl introductionUrl
      *
      * @return $this
      */
@@ -578,7 +578,7 @@ class MpInfoRead implements ModelInterface, ArrayAccess
     /**
      * Sets systemIndustryId
      *
-     * @param int $systemIndustryId systemIndustryId
+     * @param int|mixed $systemIndustryId systemIndustryId
      *
      * @return $this
      */

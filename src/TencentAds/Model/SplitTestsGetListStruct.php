@@ -272,7 +272,7 @@ class SplitTestsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class SplitTestsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets splitTestId
      *
-     * @param int $splitTestId splitTestId
+     * @param int|mixed $splitTestId splitTestId
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class SplitTestsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets splitTestStatus
      *
-     * @param \TencentAds\Model\SplitTestStatus $splitTestStatus splitTestStatus
+     * @param \TencentAds\Model\SplitTestStatus|mixed $splitTestStatus splitTestStatus
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class SplitTestsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets splitTestName
      *
-     * @param string $splitTestName splitTestName
+     * @param string|mixed $splitTestName splitTestName
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class SplitTestsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets beginTime
      *
-     * @param int $beginTime beginTime
+     * @param int|mixed $beginTime beginTime
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class SplitTestsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets endTime
      *
-     * @param int $endTime endTime
+     * @param int|mixed $endTime endTime
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class SplitTestsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets smartExpandEnabled
      *
-     * @param bool $smartExpandEnabled smartExpandEnabled
+     * @param bool|mixed $smartExpandEnabled smartExpandEnabled
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class SplitTestsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupIdList
      *
-     * @param int[] $adgroupIdList adgroupIdList
+     * @param int[]|mixed $adgroupIdList adgroupIdList
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class SplitTestsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets recommendedRating
      *
-     * @param \TencentAds\Model\RecommendedRating $recommendedRating recommendedRating
+     * @param \TencentAds\Model\RecommendedRating|mixed $recommendedRating recommendedRating
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class SplitTestsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets recommendedAdgroupIdList
      *
-     * @param int[] $recommendedAdgroupIdList recommendedAdgroupIdList
+     * @param int[]|mixed $recommendedAdgroupIdList recommendedAdgroupIdList
      *
      * @return $this
      */

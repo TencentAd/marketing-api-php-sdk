@@ -242,7 +242,7 @@ class Adgroup implements ModelInterface, ArrayAccess
     /**
      * Sets campaignType
      *
-     * @param \TencentAds\Model\CampaignType $campaignType campaignType
+     * @param \TencentAds\Model\CampaignType|mixed $campaignType campaignType
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class Adgroup implements ModelInterface, ArrayAccess
     /**
      * Sets billingEvent
      *
-     * @param \TencentAds\Model\BillingEvent $billingEvent billingEvent
+     * @param \TencentAds\Model\BillingEvent|mixed $billingEvent billingEvent
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class Adgroup implements ModelInterface, ArrayAccess
     /**
      * Sets sceneSpec
      *
-     * @param \TencentAds\Model\SceneTargeting $sceneSpec sceneSpec
+     * @param \TencentAds\Model\SceneTargeting|mixed $sceneSpec sceneSpec
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class Adgroup implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObjectType|mixed $promotedObjectType promotedObjectType
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class Adgroup implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectId
      *
-     * @param string $promotedObjectId promotedObjectId
+     * @param string|mixed $promotedObjectId promotedObjectId
      *
      * @return $this
      */

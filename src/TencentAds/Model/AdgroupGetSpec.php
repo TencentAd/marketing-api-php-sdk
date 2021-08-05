@@ -302,7 +302,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Sets configuredStatus
      *
-     * @param \TencentAds\Model\AdStatus $configuredStatus configuredStatus
+     * @param \TencentAds\Model\AdStatus|mixed $configuredStatus configuredStatus
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupName
      *
-     * @param string $adgroupName adgroupName
+     * @param string|mixed $adgroupName adgroupName
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Sets beginDate
      *
-     * @param string $beginDate beginDate
+     * @param string|mixed $beginDate beginDate
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Sets endDate
      *
-     * @param string $endDate endDate
+     * @param string|mixed $endDate endDate
      *
      * @return $this
      */
@@ -422,7 +422,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Sets optimizationGoal
      *
-     * @param \TencentAds\Model\OptimizationGoal $optimizationGoal optimizationGoal
+     * @param \TencentAds\Model\OptimizationGoal|mixed $optimizationGoal optimizationGoal
      *
      * @return $this
      */
@@ -446,7 +446,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Sets totalBudget
      *
-     * @param int $totalBudget totalBudget
+     * @param int|mixed $totalBudget totalBudget
      *
      * @return $this
      */
@@ -470,7 +470,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Sets targeting
      *
-     * @param \TencentAds\Model\DpWriteTargetingSetting $targeting targeting
+     * @param \TencentAds\Model\DpWriteTargetingSetting|mixed $targeting targeting
      *
      * @return $this
      */
@@ -494,7 +494,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Sets calcStatus
      *
-     * @param \TencentAds\Model\CalculateStatus $calcStatus calcStatus
+     * @param \TencentAds\Model\CalculateStatus|mixed $calcStatus calcStatus
      *
      * @return $this
      */
@@ -518,7 +518,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Sets metricDetail
      *
-     * @param \TencentAds\Model\MetricDetailData $metricDetail metricDetail
+     * @param \TencentAds\Model\MetricDetailData|mixed $metricDetail metricDetail
      *
      * @return $this
      */
@@ -542,7 +542,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Sets rejectMessage
      *
-     * @param string $rejectMessage rejectMessage
+     * @param string|mixed $rejectMessage rejectMessage
      *
      * @return $this
      */
@@ -566,7 +566,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Sets poiList
      *
-     * @param string[] $poiList poiList
+     * @param string[]|mixed $poiList poiList
      *
      * @return $this
      */
@@ -590,7 +590,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Sets coldStartAudience
      *
-     * @param int[] $coldStartAudience coldStartAudience
+     * @param int[]|mixed $coldStartAudience coldStartAudience
      *
      * @return $this
      */
@@ -614,7 +614,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Sets poiRadius
      *
-     * @param int $poiRadius poiRadius
+     * @param int|mixed $poiRadius poiRadius
      *
      * @return $this
      */
@@ -638,7 +638,7 @@ class AdgroupGetSpec implements ModelInterface, ArrayAccess
     /**
      * Sets localBusinessMode
      *
-     * @param \TencentAds\Model\EcoLocalBusinessMode $localBusinessMode localBusinessMode
+     * @param \TencentAds\Model\EcoLocalBusinessMode|mixed $localBusinessMode localBusinessMode
      *
      * @return $this
      */

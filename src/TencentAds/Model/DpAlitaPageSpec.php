@@ -236,7 +236,7 @@ class DpAlitaPageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets buttonTips
      *
-     * @param string $buttonTips buttonTips
+     * @param string|mixed $buttonTips buttonTips
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class DpAlitaPageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets couponTitle
      *
-     * @param string $couponTitle couponTitle
+     * @param string|mixed $couponTitle couponTitle
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class DpAlitaPageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets beginDate
      *
-     * @param string $beginDate beginDate
+     * @param string|mixed $beginDate beginDate
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class DpAlitaPageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets endDate
      *
-     * @param string $endDate endDate
+     * @param string|mixed $endDate endDate
      *
      * @return $this
      */

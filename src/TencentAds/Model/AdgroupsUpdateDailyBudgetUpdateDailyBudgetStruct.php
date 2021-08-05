@@ -224,7 +224,7 @@ class AdgroupsUpdateDailyBudgetUpdateDailyBudgetStruct implements ModelInterface
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class AdgroupsUpdateDailyBudgetUpdateDailyBudgetStruct implements ModelInterface
     /**
      * Sets dailyBudget
      *
-     * @param int $dailyBudget dailyBudget
+     * @param int|mixed $dailyBudget dailyBudget
      *
      * @return $this
      */

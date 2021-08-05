@@ -92,12 +92,12 @@ class LeadsFormListApi
      *
      * 获取表单组件列表
      *
-     * @param  int $accountId accountId (required)
-     * @param  string $beginCreatedTime beginCreatedTime (optional)
-     * @param  string $endCreatedTime endCreatedTime (optional)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string|mixed $beginCreatedTime beginCreatedTime (optional)
+     * @param  string|mixed $endCreatedTime endCreatedTime (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -114,12 +114,12 @@ class LeadsFormListApi
      *
      * 获取表单组件列表
      *
-     * @param  int $accountId (required)
-     * @param  string $beginCreatedTime (optional)
-     * @param  string $endCreatedTime (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $beginCreatedTime (optional)
+     * @param  string|mixed $endCreatedTime (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -194,12 +194,12 @@ class LeadsFormListApi
      *
      * 获取表单组件列表
      *
-     * @param  int $accountId (required)
-     * @param  string $beginCreatedTime (optional)
-     * @param  string $endCreatedTime (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $beginCreatedTime (optional)
+     * @param  string|mixed $endCreatedTime (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -219,12 +219,12 @@ class LeadsFormListApi
      *
      * 获取表单组件列表
      *
-     * @param  int $accountId (required)
-     * @param  string $beginCreatedTime (optional)
-     * @param  string $endCreatedTime (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $beginCreatedTime (optional)
+     * @param  string|mixed $endCreatedTime (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -274,12 +274,12 @@ class LeadsFormListApi
     /**
      * Create request for operation 'leadsFormListGet'
      *
-     * @param  int $accountId (required)
-     * @param  string $beginCreatedTime (optional)
-     * @param  string $endCreatedTime (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $beginCreatedTime (optional)
+     * @param  string|mixed $endCreatedTime (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -410,7 +410,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoId
      *
-     * @param int $videoId videoId
+     * @param int|mixed $videoId videoId
      *
      * @return $this
      */
@@ -434,7 +434,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets width
      *
-     * @param int $width width
+     * @param int|mixed $width width
      *
      * @return $this
      */
@@ -458,7 +458,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets height
      *
-     * @param int $height height
+     * @param int|mixed $height height
      *
      * @return $this
      */
@@ -482,7 +482,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoFrames
      *
-     * @param int $videoFrames videoFrames
+     * @param int|mixed $videoFrames videoFrames
      *
      * @return $this
      */
@@ -506,7 +506,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoFps
      *
-     * @param double $videoFps videoFps
+     * @param double|mixed $videoFps videoFps
      *
      * @return $this
      */
@@ -530,7 +530,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoCodec
      *
-     * @param string $videoCodec videoCodec
+     * @param string|mixed $videoCodec videoCodec
      *
      * @return $this
      */
@@ -554,7 +554,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoBitRate
      *
-     * @param int $videoBitRate videoBitRate
+     * @param int|mixed $videoBitRate videoBitRate
      *
      * @return $this
      */
@@ -578,7 +578,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets audioCodec
      *
-     * @param string $audioCodec audioCodec
+     * @param string|mixed $audioCodec audioCodec
      *
      * @return $this
      */
@@ -602,7 +602,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets audioBitRate
      *
-     * @param int $audioBitRate audioBitRate
+     * @param int|mixed $audioBitRate audioBitRate
      *
      * @return $this
      */
@@ -626,7 +626,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets fileSize
      *
-     * @param int $fileSize fileSize
+     * @param int|mixed $fileSize fileSize
      *
      * @return $this
      */
@@ -650,7 +650,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \TencentAds\Model\MediaType $type type
+     * @param \TencentAds\Model\MediaType|mixed $type type
      *
      * @return $this
      */
@@ -674,7 +674,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets signature
      *
-     * @param string $signature signature
+     * @param string|mixed $signature signature
      *
      * @return $this
      */
@@ -698,7 +698,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets systemStatus
      *
-     * @param \TencentAds\Model\MediaSystemStatus $systemStatus systemStatus
+     * @param \TencentAds\Model\MediaSystemStatus|mixed $systemStatus systemStatus
      *
      * @return $this
      */
@@ -722,7 +722,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -746,7 +746,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets previewUrl
      *
-     * @param string $previewUrl previewUrl
+     * @param string|mixed $previewUrl previewUrl
      *
      * @return $this
      */
@@ -770,7 +770,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets keyFrameImageUrl
      *
-     * @param string $keyFrameImageUrl keyFrameImageUrl
+     * @param string|mixed $keyFrameImageUrl keyFrameImageUrl
      *
      * @return $this
      */
@@ -794,7 +794,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -818,7 +818,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedTime
      *
-     * @param int $lastModifiedTime lastModifiedTime
+     * @param int|mixed $lastModifiedTime lastModifiedTime
      *
      * @return $this
      */
@@ -842,7 +842,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoProfileName
      *
-     * @param string $videoProfileName videoProfileName
+     * @param string|mixed $videoProfileName videoProfileName
      *
      * @return $this
      */
@@ -866,7 +866,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets audioSampleRate
      *
-     * @param int $audioSampleRate audioSampleRate
+     * @param int|mixed $audioSampleRate audioSampleRate
      *
      * @return $this
      */
@@ -890,7 +890,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets maxKeyframeInterval
      *
-     * @param int $maxKeyframeInterval maxKeyframeInterval
+     * @param int|mixed $maxKeyframeInterval maxKeyframeInterval
      *
      * @return $this
      */
@@ -914,7 +914,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets minKeyframeInterval
      *
-     * @param int $minKeyframeInterval minKeyframeInterval
+     * @param int|mixed $minKeyframeInterval minKeyframeInterval
      *
      * @return $this
      */
@@ -938,7 +938,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets sampleAspectRatio
      *
-     * @param string $sampleAspectRatio sampleAspectRatio
+     * @param string|mixed $sampleAspectRatio sampleAspectRatio
      *
      * @return $this
      */
@@ -962,7 +962,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets audioProfileName
      *
-     * @param string $audioProfileName audioProfileName
+     * @param string|mixed $audioProfileName audioProfileName
      *
      * @return $this
      */
@@ -986,7 +986,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets scanType
      *
-     * @param string $scanType scanType
+     * @param string|mixed $scanType scanType
      *
      * @return $this
      */
@@ -1010,7 +1010,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets imageDurationMillisecond
      *
-     * @param int $imageDurationMillisecond imageDurationMillisecond
+     * @param int|mixed $imageDurationMillisecond imageDurationMillisecond
      *
      * @return $this
      */
@@ -1034,7 +1034,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets audioDurationMillisecond
      *
-     * @param int $audioDurationMillisecond audioDurationMillisecond
+     * @param int|mixed $audioDurationMillisecond audioDurationMillisecond
      *
      * @return $this
      */
@@ -1058,7 +1058,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets sourceType
      *
-     * @param \TencentAds\Model\MediaSourceType $sourceType sourceType
+     * @param \TencentAds\Model\MediaSourceType|mixed $sourceType sourceType
      *
      * @return $this
      */
@@ -1082,7 +1082,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productCatalogId
      *
-     * @param string $productCatalogId productCatalogId
+     * @param string|mixed $productCatalogId productCatalogId
      *
      * @return $this
      */
@@ -1106,7 +1106,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productOuterId
      *
-     * @param string $productOuterId productOuterId
+     * @param string|mixed $productOuterId productOuterId
      *
      * @return $this
      */
@@ -1130,7 +1130,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets sourceReferenceId
      *
-     * @param string $sourceReferenceId sourceReferenceId
+     * @param string|mixed $sourceReferenceId sourceReferenceId
      *
      * @return $this
      */
@@ -1154,7 +1154,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets ownerAccountId
      *
-     * @param string $ownerAccountId ownerAccountId
+     * @param string|mixed $ownerAccountId ownerAccountId
      *
      * @return $this
      */
@@ -1178,7 +1178,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \TencentAds\Model\MediaStatusType $status status
+     * @param \TencentAds\Model\MediaStatusType|mixed $status status
      *
      * @return $this
      */

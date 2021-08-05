@@ -230,7 +230,7 @@ class Permission implements ModelInterface, ArrayAccess
     /**
      * Sets canCreateAudience
      *
-     * @param bool $canCreateAudience canCreateAudience
+     * @param bool|mixed $canCreateAudience canCreateAudience
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class Permission implements ModelInterface, ArrayAccess
     /**
      * Sets canExactConversionClaim
      *
-     * @param bool $canExactConversionClaim canExactConversionClaim
+     * @param bool|mixed $canExactConversionClaim canExactConversionClaim
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class Permission implements ModelInterface, ArrayAccess
     /**
      * Sets canAsServing
      *
-     * @param bool $canAsServing canAsServing
+     * @param bool|mixed $canAsServing canAsServing
      *
      * @return $this
      */

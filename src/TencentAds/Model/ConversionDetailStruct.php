@@ -230,7 +230,7 @@ class ConversionDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets effectData
      *
-     * @param \TencentAds\Model\ConversionEffectDataStruct $effectData effectData
+     * @param \TencentAds\Model\ConversionEffectDataStruct|mixed $effectData effectData
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class ConversionDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets effectDataTrends
      *
-     * @param \TencentAds\Model\ConversionEffectDataTrendsItem[] $effectDataTrends effectDataTrends
+     * @param \TencentAds\Model\ConversionEffectDataTrendsItem[]|mixed $effectDataTrends effectDataTrends
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class ConversionDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets targetingLabelContribution
      *
-     * @param \TencentAds\Model\ConversionTargetingLabelContributionStruct $targetingLabelContribution targetingLabelContribution
+     * @param \TencentAds\Model\ConversionTargetingLabelContributionStruct|mixed $targetingLabelContribution targetingLabelContribution
      *
      * @return $this
      */

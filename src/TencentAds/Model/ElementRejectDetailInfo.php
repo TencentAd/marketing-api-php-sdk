@@ -254,7 +254,7 @@ class ElementRejectDetailInfo implements ModelInterface, ArrayAccess
     /**
      * Sets elementName
      *
-     * @param string $elementName elementName
+     * @param string|mixed $elementName elementName
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class ElementRejectDetailInfo implements ModelInterface, ArrayAccess
     /**
      * Sets elementValue
      *
-     * @param string $elementValue elementValue
+     * @param string|mixed $elementValue elementValue
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class ElementRejectDetailInfo implements ModelInterface, ArrayAccess
     /**
      * Sets elementType
      *
-     * @param string $elementType elementType
+     * @param string|mixed $elementType elementType
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class ElementRejectDetailInfo implements ModelInterface, ArrayAccess
     /**
      * Sets reason
      *
-     * @param string $reason reason
+     * @param string|mixed $reason reason
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class ElementRejectDetailInfo implements ModelInterface, ArrayAccess
     /**
      * Sets caseDoc
      *
-     * @param string $caseDoc caseDoc
+     * @param string|mixed $caseDoc caseDoc
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class ElementRejectDetailInfo implements ModelInterface, ArrayAccess
     /**
      * Sets caseContent
      *
-     * @param string $caseContent caseContent
+     * @param string|mixed $caseContent caseContent
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class ElementRejectDetailInfo implements ModelInterface, ArrayAccess
     /**
      * Sets rejectInfoLocation
      *
-     * @param \TencentAds\Model\RejectInfoLocation[] $rejectInfoLocation rejectInfoLocation
+     * @param \TencentAds\Model\RejectInfoLocation[]|mixed $rejectInfoLocation rejectInfoLocation
      *
      * @return $this
      */

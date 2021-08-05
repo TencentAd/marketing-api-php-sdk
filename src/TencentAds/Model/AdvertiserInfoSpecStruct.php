@@ -230,7 +230,7 @@ class AdvertiserInfoSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Sets statusPreAuthorizationNumber
      *
-     * @param int $statusPreAuthorizationNumber statusPreAuthorizationNumber
+     * @param int|mixed $statusPreAuthorizationNumber statusPreAuthorizationNumber
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class AdvertiserInfoSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Sets statusConfirmAuthorizationNumber
      *
-     * @param int $statusConfirmAuthorizationNumber statusConfirmAuthorizationNumber
+     * @param int|mixed $statusConfirmAuthorizationNumber statusConfirmAuthorizationNumber
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class AdvertiserInfoSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Sets statusRequestCancelationNumber
      *
-     * @param int $statusRequestCancelationNumber statusRequestCancelationNumber
+     * @param int|mixed $statusRequestCancelationNumber statusRequestCancelationNumber
      *
      * @return $this
      */

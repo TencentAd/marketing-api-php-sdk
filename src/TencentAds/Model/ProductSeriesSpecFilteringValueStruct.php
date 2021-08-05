@@ -224,7 +224,7 @@ class ProductSeriesSpecFilteringValueStruct implements ModelInterface, ArrayAcce
     /**
      * Sets fieldValue
      *
-     * @param string $fieldValue fieldValue
+     * @param string|mixed $fieldValue fieldValue
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class ProductSeriesSpecFilteringValueStruct implements ModelInterface, ArrayAcce
     /**
      * Sets currencyType
      *
-     * @param \TencentAds\Model\CurrencyType $currencyType currencyType
+     * @param \TencentAds\Model\CurrencyType|mixed $currencyType currencyType
      *
      * @return $this
      */

@@ -217,7 +217,7 @@ class AdsDeleteResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets adId
      *
-     * @param int $adId adId
+     * @param int|mixed $adId adId
      *
      * @return $this
      */

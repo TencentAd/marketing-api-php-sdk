@@ -92,7 +92,7 @@ class ReportApi
      *
      * 获取当日转化效果预估数据
      *
-     * @param  \TencentAds\Model\ReportConversionsPredictRequest $data data (required)
+     * @param  \TencentAds\Model\ReportConversionsPredictRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class ReportApi
      *
      * 获取当日转化效果预估数据
      *
-     * @param  \TencentAds\Model\ReportConversionsPredictRequest $data (required)
+     * @param  \TencentAds\Model\ReportConversionsPredictRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class ReportApi
      *
      * 获取当日转化效果预估数据
      *
-     * @param  \TencentAds\Model\ReportConversionsPredictRequest $data (required)
+     * @param  \TencentAds\Model\ReportConversionsPredictRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class ReportApi
      *
      * 获取当日转化效果预估数据
      *
-     * @param  \TencentAds\Model\ReportConversionsPredictRequest $data (required)
+     * @param  \TencentAds\Model\ReportConversionsPredictRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class ReportApi
     /**
      * Create request for operation 'reportConversionsPredict'
      *
-     * @param  \TencentAds\Model\ReportConversionsPredictRequest $data (required)
+     * @param  \TencentAds\Model\ReportConversionsPredictRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,7 +374,7 @@ class ReportApi
      *
      * 视频流失分析接口
      *
-     * @param  \TencentAds\Model\ReportVideoFrameRequest $data data (required)
+     * @param  \TencentAds\Model\ReportVideoFrameRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -391,7 +391,7 @@ class ReportApi
      *
      * 视频流失分析接口
      *
-     * @param  \TencentAds\Model\ReportVideoFrameRequest $data (required)
+     * @param  \TencentAds\Model\ReportVideoFrameRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -466,7 +466,7 @@ class ReportApi
      *
      * 视频流失分析接口
      *
-     * @param  \TencentAds\Model\ReportVideoFrameRequest $data (required)
+     * @param  \TencentAds\Model\ReportVideoFrameRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -486,7 +486,7 @@ class ReportApi
      *
      * 视频流失分析接口
      *
-     * @param  \TencentAds\Model\ReportVideoFrameRequest $data (required)
+     * @param  \TencentAds\Model\ReportVideoFrameRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -536,7 +536,7 @@ class ReportApi
     /**
      * Create request for operation 'reportVideoFrame'
      *
-     * @param  \TencentAds\Model\ReportVideoFrameRequest $data (required)
+     * @param  \TencentAds\Model\ReportVideoFrameRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

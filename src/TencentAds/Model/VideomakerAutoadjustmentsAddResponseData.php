@@ -223,7 +223,7 @@ class VideomakerAutoadjustmentsAddResponseData implements ModelInterface, ArrayA
     /**
      * Sets code
      *
-     * @param int $code code
+     * @param int|mixed $code code
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class VideomakerAutoadjustmentsAddResponseData implements ModelInterface, ArrayA
     /**
      * Sets taskIds
      *
-     * @param string[] $taskIds taskIds
+     * @param string[]|mixed $taskIds taskIds
      *
      * @return $this
      */

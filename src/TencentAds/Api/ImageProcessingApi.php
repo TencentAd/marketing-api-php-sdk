@@ -92,7 +92,7 @@ class ImageProcessingApi
      *
      * 进行图片处理
      *
-     * @param  \TencentAds\Model\ImageProcessingAddRequest $data data (required)
+     * @param  \TencentAds\Model\ImageProcessingAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class ImageProcessingApi
      *
      * 进行图片处理
      *
-     * @param  \TencentAds\Model\ImageProcessingAddRequest $data (required)
+     * @param  \TencentAds\Model\ImageProcessingAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class ImageProcessingApi
      *
      * 进行图片处理
      *
-     * @param  \TencentAds\Model\ImageProcessingAddRequest $data (required)
+     * @param  \TencentAds\Model\ImageProcessingAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class ImageProcessingApi
      *
      * 进行图片处理
      *
-     * @param  \TencentAds\Model\ImageProcessingAddRequest $data (required)
+     * @param  \TencentAds\Model\ImageProcessingAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class ImageProcessingApi
     /**
      * Create request for operation 'imageProcessingAdd'
      *
-     * @param  \TencentAds\Model\ImageProcessingAddRequest $data (required)
+     * @param  \TencentAds\Model\ImageProcessingAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

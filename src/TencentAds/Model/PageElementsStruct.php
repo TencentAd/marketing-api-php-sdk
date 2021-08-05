@@ -284,7 +284,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets elementShelf
      *
-     * @param \TencentAds\Model\ElementShelf $elementShelf elementShelf
+     * @param \TencentAds\Model\ElementShelf|mixed $elementShelf elementShelf
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets elementFloat
      *
-     * @param \TencentAds\Model\ElementFloat $elementFloat elementFloat
+     * @param \TencentAds\Model\ElementFloat|mixed $elementFloat elementFloat
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets elementGoods
      *
-     * @param \TencentAds\Model\ElementGoods $elementGoods elementGoods
+     * @param \TencentAds\Model\ElementGoods|mixed $elementGoods elementGoods
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets elementSwipe
      *
-     * @param \TencentAds\Model\ElementSwipe $elementSwipe elementSwipe
+     * @param \TencentAds\Model\ElementSwipe|mixed $elementSwipe elementSwipe
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets elementWebview
      *
-     * @param \TencentAds\Model\ElementWebview $elementWebview elementWebview
+     * @param \TencentAds\Model\ElementWebview|mixed $elementWebview elementWebview
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets elementAnimateFloat
      *
-     * @param \TencentAds\Model\ElementAnimateFloat $elementAnimateFloat elementAnimateFloat
+     * @param \TencentAds\Model\ElementAnimateFloat|mixed $elementAnimateFloat elementAnimateFloat
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets imageSpec
      *
-     * @param \TencentAds\Model\ElementImage $imageSpec imageSpec
+     * @param \TencentAds\Model\ElementImage|mixed $imageSpec imageSpec
      *
      * @return $this
      */
@@ -452,7 +452,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets videoSpec
      *
-     * @param \TencentAds\Model\ElementVideo $videoSpec videoSpec
+     * @param \TencentAds\Model\ElementVideo|mixed $videoSpec videoSpec
      *
      * @return $this
      */
@@ -476,7 +476,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets textSpec
      *
-     * @param \TencentAds\Model\ElementText $textSpec textSpec
+     * @param \TencentAds\Model\ElementText|mixed $textSpec textSpec
      *
      * @return $this
      */
@@ -500,7 +500,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets buttonSpec
      *
-     * @param \TencentAds\Model\ElementButtonRead $buttonSpec buttonSpec
+     * @param \TencentAds\Model\ElementButtonRead|mixed $buttonSpec buttonSpec
      *
      * @return $this
      */
@@ -524,7 +524,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets formSpec
      *
-     * @param \TencentAds\Model\ElementForm $formSpec formSpec
+     * @param \TencentAds\Model\ElementForm|mixed $formSpec formSpec
      *
      * @return $this
      */
@@ -548,7 +548,7 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets elementType
      *
-     * @param \TencentAds\Model\PageElementsType $elementType elementType
+     * @param \TencentAds\Model\PageElementsType|mixed $elementType elementType
      *
      * @return $this
      */

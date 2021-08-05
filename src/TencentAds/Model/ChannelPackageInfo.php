@@ -248,7 +248,7 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
     /**
      * Sets androidAppId
      *
-     * @param int $androidAppId androidAppId
+     * @param int|mixed $androidAppId androidAppId
      *
      * @return $this
      */
@@ -272,7 +272,7 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
     /**
      * Sets packageName
      *
-     * @param string $packageName packageName
+     * @param string|mixed $packageName packageName
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \TencentAds\Model\ChannelTaskStatus $status status
+     * @param \TencentAds\Model\ChannelTaskStatus|mixed $status status
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
     /**
      * Sets errorCode
      *
-     * @param \TencentAds\Model\ChannelTaskError $errorCode errorCode
+     * @param \TencentAds\Model\ChannelTaskError|mixed $errorCode errorCode
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedTime
      *
-     * @param int $lastModifiedTime lastModifiedTime
+     * @param int|mixed $lastModifiedTime lastModifiedTime
      *
      * @return $this
      */

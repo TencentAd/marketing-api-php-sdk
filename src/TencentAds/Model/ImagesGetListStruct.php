@@ -326,7 +326,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets imageId
      *
-     * @param string $imageId imageId
+     * @param string|mixed $imageId imageId
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets sourceSignature
      *
-     * @param string $sourceSignature sourceSignature
+     * @param string|mixed $sourceSignature sourceSignature
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets previewUrl
      *
-     * @param string $previewUrl previewUrl
+     * @param string|mixed $previewUrl previewUrl
      *
      * @return $this
      */
@@ -422,7 +422,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets sourceType
      *
-     * @param \TencentAds\Model\ImageSourceType $sourceType sourceType
+     * @param \TencentAds\Model\ImageSourceType|mixed $sourceType sourceType
      *
      * @return $this
      */
@@ -446,7 +446,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets imageUsage
      *
-     * @param \TencentAds\Model\ImageUsage $imageUsage imageUsage
+     * @param \TencentAds\Model\ImageUsage|mixed $imageUsage imageUsage
      *
      * @return $this
      */
@@ -470,7 +470,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -494,7 +494,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedTime
      *
-     * @param int $lastModifiedTime lastModifiedTime
+     * @param int|mixed $lastModifiedTime lastModifiedTime
      *
      * @return $this
      */
@@ -518,7 +518,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productCatalogId
      *
-     * @param int $productCatalogId productCatalogId
+     * @param int|mixed $productCatalogId productCatalogId
      *
      * @return $this
      */
@@ -542,7 +542,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productOuterId
      *
-     * @param string $productOuterId productOuterId
+     * @param string|mixed $productOuterId productOuterId
      *
      * @return $this
      */
@@ -566,7 +566,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets sourceReferenceId
      *
-     * @param string $sourceReferenceId sourceReferenceId
+     * @param string|mixed $sourceReferenceId sourceReferenceId
      *
      * @return $this
      */
@@ -590,7 +590,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets ownerAccountId
      *
-     * @param string $ownerAccountId ownerAccountId
+     * @param string|mixed $ownerAccountId ownerAccountId
      *
      * @return $this
      */
@@ -614,7 +614,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \TencentAds\Model\MediaStatusType $status status
+     * @param \TencentAds\Model\MediaStatusType|mixed $status status
      *
      * @return $this
      */
@@ -638,7 +638,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets sampleAspectRatio
      *
-     * @param string $sampleAspectRatio sampleAspectRatio
+     * @param string|mixed $sampleAspectRatio sampleAspectRatio
      *
      * @return $this
      */
@@ -662,7 +662,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets width
      *
-     * @param int $width width
+     * @param int|mixed $width width
      *
      * @return $this
      */
@@ -686,7 +686,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets height
      *
-     * @param int $height height
+     * @param int|mixed $height height
      *
      * @return $this
      */
@@ -710,7 +710,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets fileSize
      *
-     * @param int $fileSize fileSize
+     * @param int|mixed $fileSize fileSize
      *
      * @return $this
      */
@@ -734,7 +734,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \TencentAds\Model\ImageType $type type
+     * @param \TencentAds\Model\ImageType|mixed $type type
      *
      * @return $this
      */
@@ -758,7 +758,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets signature
      *
-     * @param string $signature signature
+     * @param string|mixed $signature signature
      *
      * @return $this
      */

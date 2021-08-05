@@ -272,7 +272,7 @@ class VideoRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets width
      *
-     * @param int $width width
+     * @param int|mixed $width width
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class VideoRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets height
      *
-     * @param int $height height
+     * @param int|mixed $height height
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class VideoRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets minWidth
      *
-     * @param int $minWidth minWidth
+     * @param int|mixed $minWidth minWidth
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class VideoRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets minHeight
      *
-     * @param int $minHeight minHeight
+     * @param int|mixed $minHeight minHeight
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class VideoRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets ratioWidth
      *
-     * @param int $ratioWidth ratioWidth
+     * @param int|mixed $ratioWidth ratioWidth
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class VideoRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets ratioHeight
      *
-     * @param int $ratioHeight ratioHeight
+     * @param int|mixed $ratioHeight ratioHeight
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class VideoRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets fileSize
      *
-     * @param int $fileSize fileSize
+     * @param int|mixed $fileSize fileSize
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class VideoRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets fileFormat
      *
-     * @param string[] $fileFormat fileFormat
+     * @param string[]|mixed $fileFormat fileFormat
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class VideoRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets minDuration
      *
-     * @param int $minDuration minDuration
+     * @param int|mixed $minDuration minDuration
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class VideoRestriction implements ModelInterface, ArrayAccess
     /**
      * Sets maxDuration
      *
-     * @param int $maxDuration maxDuration
+     * @param int|mixed $maxDuration maxDuration
      *
      * @return $this
      */

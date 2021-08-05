@@ -253,7 +253,7 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param string $name name
+     * @param string|mixed $name name
      *
      * @return $this
      */
@@ -301,7 +301,7 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \TencentAds\Model\AudienceType $type type
+     * @param \TencentAds\Model\AudienceType|mixed $type type
      *
      * @return $this
      */
@@ -325,7 +325,7 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -349,7 +349,7 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets audienceSpec
      *
-     * @param \TencentAds\Model\AudienceSpec $audienceSpec audienceSpec
+     * @param \TencentAds\Model\AudienceSpec|mixed $audienceSpec audienceSpec
      *
      * @return $this
      */
@@ -373,7 +373,7 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets platform
      *
-     * @param \TencentAds\Model\DataPlatform $platform platform
+     * @param \TencentAds\Model\DataPlatform|mixed $platform platform
      *
      * @return $this
      */
@@ -397,7 +397,7 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets externalAudienceId
      *
-     * @param string $externalAudienceId externalAudienceId
+     * @param string|mixed $externalAudienceId externalAudienceId
      *
      * @return $this
      */

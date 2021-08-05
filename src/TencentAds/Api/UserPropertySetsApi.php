@@ -92,7 +92,7 @@ class UserPropertySetsApi
      *
      * 创建用户属性数据源
      *
-     * @param  \TencentAds\Model\UserPropertySetsAddRequest $data data (required)
+     * @param  \TencentAds\Model\UserPropertySetsAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class UserPropertySetsApi
      *
      * 创建用户属性数据源
      *
-     * @param  \TencentAds\Model\UserPropertySetsAddRequest $data (required)
+     * @param  \TencentAds\Model\UserPropertySetsAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class UserPropertySetsApi
      *
      * 创建用户属性数据源
      *
-     * @param  \TencentAds\Model\UserPropertySetsAddRequest $data (required)
+     * @param  \TencentAds\Model\UserPropertySetsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class UserPropertySetsApi
      *
      * 创建用户属性数据源
      *
-     * @param  \TencentAds\Model\UserPropertySetsAddRequest $data (required)
+     * @param  \TencentAds\Model\UserPropertySetsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class UserPropertySetsApi
     /**
      * Create request for operation 'userPropertySetsAdd'
      *
-     * @param  \TencentAds\Model\UserPropertySetsAddRequest $data (required)
+     * @param  \TencentAds\Model\UserPropertySetsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,9 +374,9 @@ class UserPropertySetsApi
      *
      * 获取用户属性数据源
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $userPropertySetId userPropertySetId (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $userPropertySetId userPropertySetId (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -393,9 +393,9 @@ class UserPropertySetsApi
      *
      * 获取用户属性数据源
      *
-     * @param  int $accountId (required)
-     * @param  int $userPropertySetId (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $userPropertySetId (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -470,9 +470,9 @@ class UserPropertySetsApi
      *
      * 获取用户属性数据源
      *
-     * @param  int $accountId (required)
-     * @param  int $userPropertySetId (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $userPropertySetId (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -492,9 +492,9 @@ class UserPropertySetsApi
      *
      * 获取用户属性数据源
      *
-     * @param  int $accountId (required)
-     * @param  int $userPropertySetId (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $userPropertySetId (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -544,9 +544,9 @@ class UserPropertySetsApi
     /**
      * Create request for operation 'userPropertySetsGet'
      *
-     * @param  int $accountId (required)
-     * @param  int $userPropertySetId (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $userPropertySetId (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -678,7 +678,7 @@ class UserPropertySetsApi
      *
      * 更新用户属性数据源
      *
-     * @param  \TencentAds\Model\UserPropertySetsUpdateRequest $data data (required)
+     * @param  \TencentAds\Model\UserPropertySetsUpdateRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -695,7 +695,7 @@ class UserPropertySetsApi
      *
      * 更新用户属性数据源
      *
-     * @param  \TencentAds\Model\UserPropertySetsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\UserPropertySetsUpdateRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -770,7 +770,7 @@ class UserPropertySetsApi
      *
      * 更新用户属性数据源
      *
-     * @param  \TencentAds\Model\UserPropertySetsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\UserPropertySetsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -790,7 +790,7 @@ class UserPropertySetsApi
      *
      * 更新用户属性数据源
      *
-     * @param  \TencentAds\Model\UserPropertySetsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\UserPropertySetsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -840,7 +840,7 @@ class UserPropertySetsApi
     /**
      * Create request for operation 'userPropertySetsUpdate'
      *
-     * @param  \TencentAds\Model\UserPropertySetsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\UserPropertySetsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -92,11 +92,11 @@ class CustomAudienceReportsApi
      *
      * 人群报表
      *
-     * @param  int $accountId accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (required)
-     * @param  \TencentAds\Model\DateRange $dateRange dateRange (required)
-     * @param  string[] $groupBy groupBy (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering (required)
+     * @param  \TencentAds\Model\DateRange|mixed $dateRange dateRange (required)
+     * @param  string[]|mixed $groupBy groupBy (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -113,11 +113,11 @@ class CustomAudienceReportsApi
      *
      * 人群报表
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (required)
-     * @param  \TencentAds\Model\DateRange $dateRange (required)
-     * @param  string[] $groupBy (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (required)
+     * @param  \TencentAds\Model\DateRange|mixed $dateRange (required)
+     * @param  string[]|mixed $groupBy (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -192,11 +192,11 @@ class CustomAudienceReportsApi
      *
      * 人群报表
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (required)
-     * @param  \TencentAds\Model\DateRange $dateRange (required)
-     * @param  string[] $groupBy (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (required)
+     * @param  \TencentAds\Model\DateRange|mixed $dateRange (required)
+     * @param  string[]|mixed $groupBy (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -216,11 +216,11 @@ class CustomAudienceReportsApi
      *
      * 人群报表
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (required)
-     * @param  \TencentAds\Model\DateRange $dateRange (required)
-     * @param  string[] $groupBy (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (required)
+     * @param  \TencentAds\Model\DateRange|mixed $dateRange (required)
+     * @param  string[]|mixed $groupBy (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -270,11 +270,11 @@ class CustomAudienceReportsApi
     /**
      * Create request for operation 'customAudienceReportsGet'
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (required)
-     * @param  \TencentAds\Model\DateRange $dateRange (required)
-     * @param  string[] $groupBy (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (required)
+     * @param  \TencentAds\Model\DateRange|mixed $dateRange (required)
+     * @param  string[]|mixed $groupBy (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

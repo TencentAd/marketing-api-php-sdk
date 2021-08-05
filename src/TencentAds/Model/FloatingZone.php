@@ -254,7 +254,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
     /**
      * Sets floatingZoneSwitch
      *
-     * @param bool $floatingZoneSwitch floatingZoneSwitch
+     * @param bool|mixed $floatingZoneSwitch floatingZoneSwitch
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
     /**
      * Sets floatingZoneImageId
      *
-     * @param string $floatingZoneImageId floatingZoneImageId
+     * @param string|mixed $floatingZoneImageId floatingZoneImageId
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
     /**
      * Sets floatingZoneName
      *
-     * @param string $floatingZoneName floatingZoneName
+     * @param string|mixed $floatingZoneName floatingZoneName
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
     /**
      * Sets floatingZoneDesc
      *
-     * @param string $floatingZoneDesc floatingZoneDesc
+     * @param string|mixed $floatingZoneDesc floatingZoneDesc
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
     /**
      * Sets floatingZoneButtonText
      *
-     * @param string $floatingZoneButtonText floatingZoneButtonText
+     * @param string|mixed $floatingZoneButtonText floatingZoneButtonText
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
     /**
      * Sets floatingZoneType
      *
-     * @param \TencentAds\Model\FloatingZoneType $floatingZoneType floatingZoneType
+     * @param \TencentAds\Model\FloatingZoneType|mixed $floatingZoneType floatingZoneType
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
     /**
      * Sets floatingZoneSingleImageId
      *
-     * @param string $floatingZoneSingleImageId floatingZoneSingleImageId
+     * @param string|mixed $floatingZoneSingleImageId floatingZoneSingleImageId
      *
      * @return $this
      */

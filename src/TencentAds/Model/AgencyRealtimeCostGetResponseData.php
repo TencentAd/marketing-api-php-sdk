@@ -217,7 +217,7 @@ class AgencyRealtimeCostGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\AgencyRealtimeCostGetListStruct[] $list list
+     * @param \TencentAds\Model\AgencyRealtimeCostGetListStruct[]|mixed $list list
      *
      * @return $this
      */

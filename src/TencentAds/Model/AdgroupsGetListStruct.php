@@ -572,7 +572,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets campaignId
      *
-     * @param int $campaignId campaignId
+     * @param int|mixed $campaignId campaignId
      *
      * @return $this
      */
@@ -596,7 +596,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -620,7 +620,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupName
      *
-     * @param string $adgroupName adgroupName
+     * @param string|mixed $adgroupName adgroupName
      *
      * @return $this
      */
@@ -644,7 +644,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets siteSet
      *
-     * @param string[] $siteSet siteSet
+     * @param string[]|mixed $siteSet siteSet
      *
      * @return $this
      */
@@ -668,7 +668,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets automaticSiteEnabled
      *
-     * @param bool $automaticSiteEnabled automaticSiteEnabled
+     * @param bool|mixed $automaticSiteEnabled automaticSiteEnabled
      *
      * @return $this
      */
@@ -692,7 +692,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets optimizationGoal
      *
-     * @param \TencentAds\Model\OptimizationGoal $optimizationGoal optimizationGoal
+     * @param \TencentAds\Model\OptimizationGoal|mixed $optimizationGoal optimizationGoal
      *
      * @return $this
      */
@@ -716,7 +716,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets billingEvent
      *
-     * @param \TencentAds\Model\BillingEvent $billingEvent billingEvent
+     * @param \TencentAds\Model\BillingEvent|mixed $billingEvent billingEvent
      *
      * @return $this
      */
@@ -740,7 +740,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets bidAmount
      *
-     * @param int $bidAmount bidAmount
+     * @param int|mixed $bidAmount bidAmount
      *
      * @return $this
      */
@@ -764,7 +764,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets dailyBudget
      *
-     * @param int $dailyBudget dailyBudget
+     * @param int|mixed $dailyBudget dailyBudget
      *
      * @return $this
      */
@@ -788,7 +788,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObjectType|mixed $promotedObjectType promotedObjectType
      *
      * @return $this
      */
@@ -812,7 +812,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectId
      *
-     * @param string $promotedObjectId promotedObjectId
+     * @param string|mixed $promotedObjectId promotedObjectId
      *
      * @return $this
      */
@@ -836,7 +836,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets appAndroidChannelPackageId
      *
-     * @param string $appAndroidChannelPackageId appAndroidChannelPackageId
+     * @param string|mixed $appAndroidChannelPackageId appAndroidChannelPackageId
      *
      * @return $this
      */
@@ -860,7 +860,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameProgramId
      *
-     * @param string $miniGameProgramId miniGameProgramId
+     * @param string|mixed $miniGameProgramId miniGameProgramId
      *
      * @return $this
      */
@@ -884,7 +884,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets targetingId
      *
-     * @param int $targetingId targetingId
+     * @param int|mixed $targetingId targetingId
      *
      * @return $this
      */
@@ -908,7 +908,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets targeting
      *
-     * @param \TencentAds\Model\ReadTargetingSettingForAdgroup $targeting targeting
+     * @param \TencentAds\Model\ReadTargetingSettingForAdgroup|mixed $targeting targeting
      *
      * @return $this
      */
@@ -932,7 +932,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets targetingTranslation
      *
-     * @param string $targetingTranslation targetingTranslation
+     * @param string|mixed $targetingTranslation targetingTranslation
      *
      * @return $this
      */
@@ -956,7 +956,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets isIncludeUnsupportedTargeting
      *
-     * @param bool $isIncludeUnsupportedTargeting isIncludeUnsupportedTargeting
+     * @param bool|mixed $isIncludeUnsupportedTargeting isIncludeUnsupportedTargeting
      *
      * @return $this
      */
@@ -980,7 +980,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets sceneSpec
      *
-     * @param \TencentAds\Model\SceneTargeting $sceneSpec sceneSpec
+     * @param \TencentAds\Model\SceneTargeting|mixed $sceneSpec sceneSpec
      *
      * @return $this
      */
@@ -1004,7 +1004,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets beginDate
      *
-     * @param string $beginDate beginDate
+     * @param string|mixed $beginDate beginDate
      *
      * @return $this
      */
@@ -1028,7 +1028,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets firstDayBeginTime
      *
-     * @param string $firstDayBeginTime firstDayBeginTime
+     * @param string|mixed $firstDayBeginTime firstDayBeginTime
      *
      * @return $this
      */
@@ -1052,7 +1052,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets endDate
      *
-     * @param string $endDate endDate
+     * @param string|mixed $endDate endDate
      *
      * @return $this
      */
@@ -1076,7 +1076,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets timeSeries
      *
-     * @param string $timeSeries timeSeries
+     * @param string|mixed $timeSeries timeSeries
      *
      * @return $this
      */
@@ -1100,7 +1100,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets configuredStatus
      *
-     * @param \TencentAds\Model\AdStatus $configuredStatus configuredStatus
+     * @param \TencentAds\Model\AdStatus|mixed $configuredStatus configuredStatus
      *
      * @return $this
      */
@@ -1124,7 +1124,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets customizedCategory
      *
-     * @param string $customizedCategory customizedCategory
+     * @param string|mixed $customizedCategory customizedCategory
      *
      * @return $this
      */
@@ -1148,7 +1148,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -1172,7 +1172,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedTime
      *
-     * @param int $lastModifiedTime lastModifiedTime
+     * @param int|mixed $lastModifiedTime lastModifiedTime
      *
      * @return $this
      */
@@ -1196,7 +1196,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adCount
      *
-     * @param int $adCount adCount
+     * @param int|mixed $adCount adCount
      *
      * @return $this
      */
@@ -1220,7 +1220,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets dynamicAdSpec
      *
-     * @param \TencentAds\Model\DynamicAdSpec $dynamicAdSpec dynamicAdSpec
+     * @param \TencentAds\Model\DynamicAdSpec|mixed $dynamicAdSpec dynamicAdSpec
      *
      * @return $this
      */
@@ -1244,7 +1244,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets userActionSets
      *
-     * @param \TencentAds\Model\UserActionSetStruct[] $userActionSets userActionSets
+     * @param \TencentAds\Model\UserActionSetStruct[]|mixed $userActionSets userActionSets
      *
      * @return $this
      */
@@ -1268,7 +1268,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets additionalUserActionSets
      *
-     * @param \TencentAds\Model\UserActionSetStruct[] $additionalUserActionSets additionalUserActionSets
+     * @param \TencentAds\Model\UserActionSetStruct[]|mixed $additionalUserActionSets additionalUserActionSets
      *
      * @return $this
      */
@@ -1292,7 +1292,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets isDeleted
      *
-     * @param bool $isDeleted isDeleted
+     * @param bool|mixed $isDeleted isDeleted
      *
      * @return $this
      */
@@ -1316,7 +1316,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets dynamicCreativeId
      *
-     * @param int $dynamicCreativeId dynamicCreativeId
+     * @param int|mixed $dynamicCreativeId dynamicCreativeId
      *
      * @return $this
      */
@@ -1340,7 +1340,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets isRewardedVideoAd
      *
-     * @param bool $isRewardedVideoAd isRewardedVideoAd
+     * @param bool|mixed $isRewardedVideoAd isRewardedVideoAd
      *
      * @return $this
      */
@@ -1364,7 +1364,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets costGuaranteeMessage
      *
-     * @param string $costGuaranteeMessage costGuaranteeMessage
+     * @param string|mixed $costGuaranteeMessage costGuaranteeMessage
      *
      * @return $this
      */
@@ -1388,7 +1388,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets costGuaranteeStatus
      *
-     * @param \TencentAds\Model\CostGuaranteeStatus $costGuaranteeStatus costGuaranteeStatus
+     * @param \TencentAds\Model\CostGuaranteeStatus|mixed $costGuaranteeStatus costGuaranteeStatus
      *
      * @return $this
      */
@@ -1412,7 +1412,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets bidStrategy
      *
-     * @param \TencentAds\Model\BidStrategy $bidStrategy bidStrategy
+     * @param \TencentAds\Model\BidStrategy|mixed $bidStrategy bidStrategy
      *
      * @return $this
      */
@@ -1436,7 +1436,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets coldStartAudience
      *
-     * @param int[] $coldStartAudience coldStartAudience
+     * @param int[]|mixed $coldStartAudience coldStartAudience
      *
      * @return $this
      */
@@ -1460,7 +1460,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets autoAudience
      *
-     * @param bool $autoAudience autoAudience
+     * @param bool|mixed $autoAudience autoAudience
      *
      * @return $this
      */
@@ -1484,7 +1484,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets expandEnabled
      *
-     * @param bool $expandEnabled expandEnabled
+     * @param bool|mixed $expandEnabled expandEnabled
      *
      * @return $this
      */
@@ -1508,7 +1508,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets expandTargeting
      *
-     * @param string[] $expandTargeting expandTargeting
+     * @param string[]|mixed $expandTargeting expandTargeting
      *
      * @return $this
      */
@@ -1532,7 +1532,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets deepConversionSpec
      *
-     * @param \TencentAds\Model\DeepConversionSpec $deepConversionSpec deepConversionSpec
+     * @param \TencentAds\Model\DeepConversionSpec|mixed $deepConversionSpec deepConversionSpec
      *
      * @return $this
      */
@@ -1556,7 +1556,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets deepOptimizationActionType
      *
-     * @param \TencentAds\Model\DeepOptimizationActionType $deepOptimizationActionType deepOptimizationActionType
+     * @param \TencentAds\Model\DeepOptimizationActionType|mixed $deepOptimizationActionType deepOptimizationActionType
      *
      * @return $this
      */
@@ -1580,7 +1580,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets poiList
      *
-     * @param string[] $poiList poiList
+     * @param string[]|mixed $poiList poiList
      *
      * @return $this
      */
@@ -1604,7 +1604,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets conversionId
      *
-     * @param int $conversionId conversionId
+     * @param int|mixed $conversionId conversionId
      *
      * @return $this
      */
@@ -1628,7 +1628,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets deepConversionBehaviorBid
      *
-     * @param int $deepConversionBehaviorBid deepConversionBehaviorBid
+     * @param int|mixed $deepConversionBehaviorBid deepConversionBehaviorBid
      *
      * @return $this
      */
@@ -1652,7 +1652,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets deepConversionWorthRate
      *
-     * @param double $deepConversionWorthRate deepConversionWorthRate
+     * @param double|mixed $deepConversionWorthRate deepConversionWorthRate
      *
      * @return $this
      */
@@ -1676,7 +1676,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets androidChannelPackageAuditMessage
      *
-     * @param string $androidChannelPackageAuditMessage androidChannelPackageAuditMessage
+     * @param string|mixed $androidChannelPackageAuditMessage androidChannelPackageAuditMessage
      *
      * @return $this
      */
@@ -1700,7 +1700,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets systemStatus
      *
-     * @param \TencentAds\Model\AdgroupSysStatus $systemStatus systemStatus
+     * @param \TencentAds\Model\AdgroupSysStatus|mixed $systemStatus systemStatus
      *
      * @return $this
      */
@@ -1724,7 +1724,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets bidMode
      *
-     * @param \TencentAds\Model\BidMode $bidMode bidMode
+     * @param \TencentAds\Model\BidMode|mixed $bidMode bidMode
      *
      * @return $this
      */
@@ -1748,7 +1748,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \TencentAds\Model\CalcStatus $status status
+     * @param \TencentAds\Model\CalcStatus|mixed $status status
      *
      * @return $this
      */
@@ -1772,7 +1772,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets bidAdjustment
      *
-     * @param \TencentAds\Model\BidAdjustment $bidAdjustment bidAdjustment
+     * @param \TencentAds\Model\BidAdjustment|mixed $bidAdjustment bidAdjustment
      *
      * @return $this
      */
@@ -1796,7 +1796,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets autoAcquisitionEnabled
      *
-     * @param bool $autoAcquisitionEnabled autoAcquisitionEnabled
+     * @param bool|mixed $autoAcquisitionEnabled autoAcquisitionEnabled
      *
      * @return $this
      */
@@ -1820,7 +1820,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets autoAcquisitionBudget
      *
-     * @param int $autoAcquisitionBudget autoAcquisitionBudget
+     * @param int|mixed $autoAcquisitionBudget autoAcquisitionBudget
      *
      * @return $this
      */
@@ -1844,7 +1844,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets creativeDisplayType
      *
-     * @param \TencentAds\Model\CreativeDisplayType $creativeDisplayType creativeDisplayType
+     * @param \TencentAds\Model\CreativeDisplayType|mixed $creativeDisplayType creativeDisplayType
      *
      * @return $this
      */
@@ -1868,7 +1868,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets autoDerivedCreativeEnabled
      *
-     * @param bool $autoDerivedCreativeEnabled autoDerivedCreativeEnabled
+     * @param bool|mixed $autoDerivedCreativeEnabled autoDerivedCreativeEnabled
      *
      * @return $this
      */
@@ -1892,7 +1892,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets smartBidType
      *
-     * @param \TencentAds\Model\SmartBidType $smartBidType smartBidType
+     * @param \TencentAds\Model\SmartBidType|mixed $smartBidType smartBidType
      *
      * @return $this
      */
@@ -1916,7 +1916,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets smartCostCap
      *
-     * @param int $smartCostCap smartCostCap
+     * @param int|mixed $smartCostCap smartCostCap
      *
      * @return $this
      */
@@ -1940,7 +1940,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets marketingScene
      *
-     * @param \TencentAds\Model\MarketingScene $marketingScene marketingScene
+     * @param \TencentAds\Model\MarketingScene|mixed $marketingScene marketingScene
      *
      * @return $this
      */
@@ -1964,7 +1964,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets customAdgroupTag
      *
-     * @param string[] $customAdgroupTag customAdgroupTag
+     * @param string[]|mixed $customAdgroupTag customAdgroupTag
      *
      * @return $this
      */
@@ -1988,7 +1988,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets deepOptimizationType
      *
-     * @param \TencentAds\Model\DeepOptimizationType $deepOptimizationType deepOptimizationType
+     * @param \TencentAds\Model\DeepOptimizationType|mixed $deepOptimizationType deepOptimizationType
      *
      * @return $this
      */

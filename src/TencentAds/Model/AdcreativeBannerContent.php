@@ -230,7 +230,7 @@ class AdcreativeBannerContent implements ModelInterface, ArrayAccess
     /**
      * Sets image
      *
-     * @param string $image image
+     * @param string|mixed $image image
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class AdcreativeBannerContent implements ModelInterface, ArrayAccess
     /**
      * Sets title
      *
-     * @param string $title title
+     * @param string|mixed $title title
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class AdcreativeBannerContent implements ModelInterface, ArrayAccess
     /**
      * Sets url
      *
-     * @param string $url url
+     * @param string|mixed $url url
      *
      * @return $this
      */

@@ -235,7 +235,7 @@ class TargetingsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets targetingName
      *
-     * @param string $targetingName targetingName
+     * @param string|mixed $targetingName targetingName
      *
      * @return $this
      */
@@ -259,7 +259,7 @@ class TargetingsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -283,7 +283,7 @@ class TargetingsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -307,7 +307,7 @@ class TargetingsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets targeting
      *
-     * @param \TencentAds\Model\WriteTargetingSetting $targeting targeting
+     * @param \TencentAds\Model\WriteTargetingSetting|mixed $targeting targeting
      *
      * @return $this
      */

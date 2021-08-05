@@ -224,7 +224,7 @@ class OtherData implements ModelInterface, ArrayAccess
     /**
      * Sets subtitleFile
      *
-     * @param string $subtitleFile subtitleFile
+     * @param string|mixed $subtitleFile subtitleFile
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class OtherData implements ModelInterface, ArrayAccess
     /**
      * Sets audioFile
      *
-     * @param string $audioFile audioFile
+     * @param string|mixed $audioFile audioFile
      *
      * @return $this
      */

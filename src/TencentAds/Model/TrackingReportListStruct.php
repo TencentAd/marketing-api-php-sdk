@@ -278,7 +278,7 @@ class TrackingReportListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets date
      *
-     * @param string $date date
+     * @param string|mixed $date date
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class TrackingReportListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets hour
      *
-     * @param int $hour hour
+     * @param int|mixed $hour hour
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class TrackingReportListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets rawClicks
      *
-     * @param int $rawClicks rawClicks
+     * @param int|mixed $rawClicks rawClicks
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class TrackingReportListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets _1minClicks
      *
-     * @param int $_1minClicks _1minClicks
+     * @param int|mixed $_1minClicks _1minClicks
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class TrackingReportListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets _2minClicks
      *
-     * @param int $_2minClicks _2minClicks
+     * @param int|mixed $_2minClicks _2minClicks
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class TrackingReportListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets _15minClicks
      *
-     * @param int $_15minClicks _15minClicks
+     * @param int|mixed $_15minClicks _15minClicks
      *
      * @return $this
      */
@@ -422,7 +422,7 @@ class TrackingReportListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets requestFail
      *
-     * @param int $requestFail requestFail
+     * @param int|mixed $requestFail requestFail
      *
      * @return $this
      */
@@ -446,7 +446,7 @@ class TrackingReportListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets responseFail
      *
-     * @param int $responseFail responseFail
+     * @param int|mixed $responseFail responseFail
      *
      * @return $this
      */
@@ -470,7 +470,7 @@ class TrackingReportListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets httpStatusError
      *
-     * @param int $httpStatusError httpStatusError
+     * @param int|mixed $httpStatusError httpStatusError
      *
      * @return $this
      */
@@ -494,7 +494,7 @@ class TrackingReportListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets otherError
      *
-     * @param int $otherError otherError
+     * @param int|mixed $otherError otherError
      *
      * @return $this
      */
@@ -518,7 +518,7 @@ class TrackingReportListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets sourceType
      *
-     * @param \TencentAds\Model\SourceType $sourceType sourceType
+     * @param \TencentAds\Model\SourceType|mixed $sourceType sourceType
      *
      * @return $this
      */

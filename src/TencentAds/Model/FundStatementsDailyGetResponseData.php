@@ -217,7 +217,7 @@ class FundStatementsDailyGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\FundStatementsDailyGetListStruct[] $list list
+     * @param \TencentAds\Model\FundStatementsDailyGetListStruct[]|mixed $list list
      *
      * @return $this
      */

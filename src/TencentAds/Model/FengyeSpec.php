@@ -224,7 +224,7 @@ class FengyeSpec implements ModelInterface, ArrayAccess
     /**
      * Sets title
      *
-     * @param string $title title
+     * @param string|mixed $title title
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class FengyeSpec implements ModelInterface, ArrayAccess
     /**
      * Sets fengyeId
      *
-     * @param string $fengyeId fengyeId
+     * @param string|mixed $fengyeId fengyeId
      *
      * @return $this
      */

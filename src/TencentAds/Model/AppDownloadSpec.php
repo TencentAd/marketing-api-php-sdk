@@ -230,7 +230,7 @@ class AppDownloadSpec implements ModelInterface, ArrayAccess
     /**
      * Sets title
      *
-     * @param string $title title
+     * @param string|mixed $title title
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class AppDownloadSpec implements ModelInterface, ArrayAccess
     /**
      * Sets appIosSpec
      *
-     * @param \TencentAds\Model\AppIosSpec $appIosSpec appIosSpec
+     * @param \TencentAds\Model\AppIosSpec|mixed $appIosSpec appIosSpec
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class AppDownloadSpec implements ModelInterface, ArrayAccess
     /**
      * Sets appAndroidSpec
      *
-     * @param \TencentAds\Model\AppAndroidSpec $appAndroidSpec appAndroidSpec
+     * @param \TencentAds\Model\AppAndroidSpec|mixed $appAndroidSpec appAndroidSpec
      *
      * @return $this
      */

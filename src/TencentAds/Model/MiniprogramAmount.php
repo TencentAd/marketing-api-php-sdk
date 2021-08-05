@@ -242,7 +242,7 @@ class MiniprogramAmount implements ModelInterface, ArrayAccess
     /**
      * Sets receivedAmount
      *
-     * @param int $receivedAmount receivedAmount
+     * @param int|mixed $receivedAmount receivedAmount
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class MiniprogramAmount implements ModelInterface, ArrayAccess
     /**
      * Sets usedAmount
      *
-     * @param int $usedAmount usedAmount
+     * @param int|mixed $usedAmount usedAmount
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class MiniprogramAmount implements ModelInterface, ArrayAccess
     /**
      * Sets lockedAmount
      *
-     * @param int $lockedAmount lockedAmount
+     * @param int|mixed $lockedAmount lockedAmount
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class MiniprogramAmount implements ModelInterface, ArrayAccess
     /**
      * Sets repaidAmount
      *
-     * @param int $repaidAmount repaidAmount
+     * @param int|mixed $repaidAmount repaidAmount
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class MiniprogramAmount implements ModelInterface, ArrayAccess
     /**
      * Sets needRepayAmount
      *
-     * @param int $needRepayAmount needRepayAmount
+     * @param int|mixed $needRepayAmount needRepayAmount
      *
      * @return $this
      */

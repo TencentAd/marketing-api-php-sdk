@@ -265,7 +265,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets corporationName
      *
-     * @param string $corporationName corporationName
+     * @param string|mixed $corporationName corporationName
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets certificationImageId
      *
-     * @param string $certificationImageId certificationImageId
+     * @param string|mixed $certificationImageId certificationImageId
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets systemIndustryId
      *
-     * @param int $systemIndustryId systemIndustryId
+     * @param int|mixed $systemIndustryId systemIndustryId
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets introductionUrl
      *
-     * @param string $introductionUrl introductionUrl
+     * @param string|mixed $introductionUrl introductionUrl
      *
      * @return $this
      */
@@ -361,7 +361,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets individualQualification
      *
-     * @param \TencentAds\Model\IndividualQualification $individualQualification individualQualification
+     * @param \TencentAds\Model\IndividualQualification|mixed $individualQualification individualQualification
      *
      * @return $this
      */
@@ -385,7 +385,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets corporateImageName
      *
-     * @param string $corporateImageName corporateImageName
+     * @param string|mixed $corporateImageName corporateImageName
      *
      * @return $this
      */
@@ -409,7 +409,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets contactPersonTelephone
      *
-     * @param string $contactPersonTelephone contactPersonTelephone
+     * @param string|mixed $contactPersonTelephone contactPersonTelephone
      *
      * @return $this
      */
@@ -433,7 +433,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets contactPersonMobile
      *
-     * @param string $contactPersonMobile contactPersonMobile
+     * @param string|mixed $contactPersonMobile contactPersonMobile
      *
      * @return $this
      */
@@ -457,7 +457,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets certificationNumber
      *
-     * @param string $certificationNumber certificationNumber
+     * @param string|mixed $certificationNumber certificationNumber
      *
      * @return $this
      */

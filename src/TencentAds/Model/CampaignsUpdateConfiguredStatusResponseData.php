@@ -217,7 +217,7 @@ class CampaignsUpdateConfiguredStatusResponseData implements ModelInterface, Arr
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\CampaignsUpdateConfiguredStatusListStruct[] $list list
+     * @param \TencentAds\Model\CampaignsUpdateConfiguredStatusListStruct[]|mixed $list list
      *
      * @return $this
      */

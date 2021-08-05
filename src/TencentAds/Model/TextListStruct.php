@@ -224,7 +224,7 @@ class TextListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets text
      *
-     * @param string $text text
+     * @param string|mixed $text text
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class TextListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets tag
      *
-     * @param string $tag tag
+     * @param string|mixed $tag tag
      *
      * @return $this
      */

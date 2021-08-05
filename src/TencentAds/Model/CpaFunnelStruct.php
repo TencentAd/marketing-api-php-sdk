@@ -224,7 +224,7 @@ class CpaFunnelStruct implements ModelInterface, ArrayAccess
     /**
      * Sets biasToday
      *
-     * @param double $biasToday biasToday
+     * @param double|mixed $biasToday biasToday
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class CpaFunnelStruct implements ModelInterface, ArrayAccess
     /**
      * Sets biasOverall
      *
-     * @param double $biasOverall biasOverall
+     * @param double|mixed $biasOverall biasOverall
      *
      * @return $this
      */

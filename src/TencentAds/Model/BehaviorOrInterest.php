@@ -230,7 +230,7 @@ class BehaviorOrInterest implements ModelInterface, ArrayAccess
     /**
      * Sets interest
      *
-     * @param \TencentAds\Model\Interest $interest interest
+     * @param \TencentAds\Model\Interest|mixed $interest interest
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class BehaviorOrInterest implements ModelInterface, ArrayAccess
     /**
      * Sets behavior
      *
-     * @param \TencentAds\Model\BehaviorStruct[] $behavior behavior
+     * @param \TencentAds\Model\BehaviorStruct[]|mixed $behavior behavior
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class BehaviorOrInterest implements ModelInterface, ArrayAccess
     /**
      * Sets intention
      *
-     * @param \TencentAds\Model\Intention $intention intention
+     * @param \TencentAds\Model\Intention|mixed $intention intention
      *
      * @return $this
      */

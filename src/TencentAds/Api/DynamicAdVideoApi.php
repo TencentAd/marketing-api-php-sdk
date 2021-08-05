@@ -92,7 +92,7 @@ class DynamicAdVideoApi
      *
      * 创建用于广告投放的动态广告视频
      *
-     * @param  \TencentAds\Model\DynamicAdVideoAddRequest $data data (required)
+     * @param  \TencentAds\Model\DynamicAdVideoAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class DynamicAdVideoApi
      *
      * 创建用于广告投放的动态广告视频
      *
-     * @param  \TencentAds\Model\DynamicAdVideoAddRequest $data (required)
+     * @param  \TencentAds\Model\DynamicAdVideoAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class DynamicAdVideoApi
      *
      * 创建用于广告投放的动态广告视频
      *
-     * @param  \TencentAds\Model\DynamicAdVideoAddRequest $data (required)
+     * @param  \TencentAds\Model\DynamicAdVideoAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class DynamicAdVideoApi
      *
      * 创建用于广告投放的动态广告视频
      *
-     * @param  \TencentAds\Model\DynamicAdVideoAddRequest $data (required)
+     * @param  \TencentAds\Model\DynamicAdVideoAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class DynamicAdVideoApi
     /**
      * Create request for operation 'dynamicAdVideoAdd'
      *
-     * @param  \TencentAds\Model\DynamicAdVideoAddRequest $data (required)
+     * @param  \TencentAds\Model\DynamicAdVideoAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

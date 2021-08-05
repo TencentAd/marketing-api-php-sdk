@@ -854,7 +854,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets productOuterId
      *
-     * @param string $productOuterId productOuterId
+     * @param string|mixed $productOuterId productOuterId
      *
      * @return $this
      */
@@ -878,7 +878,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets productName
      *
-     * @param string $productName productName
+     * @param string|mixed $productName productName
      *
      * @return $this
      */
@@ -902,7 +902,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -926,7 +926,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param string $createdTime createdTime
+     * @param string|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -950,7 +950,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedTime
      *
-     * @param string $lastModifiedTime lastModifiedTime
+     * @param string|mixed $lastModifiedTime lastModifiedTime
      *
      * @return $this
      */
@@ -974,7 +974,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets expirationTime
      *
-     * @param string $expirationTime expirationTime
+     * @param string|mixed $expirationTime expirationTime
      *
      * @return $this
      */
@@ -998,7 +998,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets imageUrl
      *
-     * @param string $imageUrl imageUrl
+     * @param string|mixed $imageUrl imageUrl
      *
      * @return $this
      */
@@ -1022,7 +1022,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets additionalImageUrl
      *
-     * @param string[] $additionalImageUrl additionalImageUrl
+     * @param string[]|mixed $additionalImageUrl additionalImageUrl
      *
      * @return $this
      */
@@ -1046,7 +1046,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets videoDuration
      *
-     * @param string $videoDuration videoDuration
+     * @param string|mixed $videoDuration videoDuration
      *
      * @return $this
      */
@@ -1070,7 +1070,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets videoUrl
      *
-     * @param string $videoUrl videoUrl
+     * @param string|mixed $videoUrl videoUrl
      *
      * @return $this
      */
@@ -1094,7 +1094,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets playCount
      *
-     * @param int $playCount playCount
+     * @param int|mixed $playCount playCount
      *
      * @return $this
      */
@@ -1118,7 +1118,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets publishTime
      *
-     * @param string $publishTime publishTime
+     * @param string|mixed $publishTime publishTime
      *
      * @return $this
      */
@@ -1142,7 +1142,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets additionalVideoUrl
      *
-     * @param string[] $additionalVideoUrl additionalVideoUrl
+     * @param string[]|mixed $additionalVideoUrl additionalVideoUrl
      *
      * @return $this
      */
@@ -1166,7 +1166,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets pcPageUrl
      *
-     * @param string $pcPageUrl pcPageUrl
+     * @param string|mixed $pcPageUrl pcPageUrl
      *
      * @return $this
      */
@@ -1190,7 +1190,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets mobileH5PageUrl
      *
-     * @param string $mobileH5PageUrl mobileH5PageUrl
+     * @param string|mixed $mobileH5PageUrl mobileH5PageUrl
      *
      * @return $this
      */
@@ -1214,7 +1214,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets androidPageUrl
      *
-     * @param string $androidPageUrl androidPageUrl
+     * @param string|mixed $androidPageUrl androidPageUrl
      *
      * @return $this
      */
@@ -1238,7 +1238,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets iosPageUrl
      *
-     * @param string $iosPageUrl iosPageUrl
+     * @param string|mixed $iosPageUrl iosPageUrl
      *
      * @return $this
      */
@@ -1262,7 +1262,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets wechatPageUrl
      *
-     * @param string $wechatPageUrl wechatPageUrl
+     * @param string|mixed $wechatPageUrl wechatPageUrl
      *
      * @return $this
      */
@@ -1286,7 +1286,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets additionalMobileH5PageUrl
      *
-     * @param string $additionalMobileH5PageUrl additionalMobileH5PageUrl
+     * @param string|mixed $additionalMobileH5PageUrl additionalMobileH5PageUrl
      *
      * @return $this
      */
@@ -1310,7 +1310,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets additionalAndroidPageUrl
      *
-     * @param string $additionalAndroidPageUrl additionalAndroidPageUrl
+     * @param string|mixed $additionalAndroidPageUrl additionalAndroidPageUrl
      *
      * @return $this
      */
@@ -1334,7 +1334,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets additionalIosPageUrl
      *
-     * @param string $additionalIosPageUrl additionalIosPageUrl
+     * @param string|mixed $additionalIosPageUrl additionalIosPageUrl
      *
      * @return $this
      */
@@ -1358,7 +1358,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets additionalWechatPageUrl
      *
-     * @param string $additionalWechatPageUrl additionalWechatPageUrl
+     * @param string|mixed $additionalWechatPageUrl additionalWechatPageUrl
      *
      * @return $this
      */
@@ -1382,7 +1382,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets miniProgramId
      *
-     * @param string $miniProgramId miniProgramId
+     * @param string|mixed $miniProgramId miniProgramId
      *
      * @return $this
      */
@@ -1406,7 +1406,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets miniProgramPath
      *
-     * @param string $miniProgramPath miniProgramPath
+     * @param string|mixed $miniProgramPath miniProgramPath
      *
      * @return $this
      */
@@ -1430,7 +1430,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets additionalMiniProgramId
      *
-     * @param string $additionalMiniProgramId additionalMiniProgramId
+     * @param string|mixed $additionalMiniProgramId additionalMiniProgramId
      *
      * @return $this
      */
@@ -1454,7 +1454,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets additionalMiniProgramPath
      *
-     * @param string $additionalMiniProgramPath additionalMiniProgramPath
+     * @param string|mixed $additionalMiniProgramPath additionalMiniProgramPath
      *
      * @return $this
      */
@@ -1478,7 +1478,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets universalLink
      *
-     * @param string $universalLink universalLink
+     * @param string|mixed $universalLink universalLink
      *
      * @return $this
      */
@@ -1502,7 +1502,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets additionalUniversalLink
      *
-     * @param string $additionalUniversalLink additionalUniversalLink
+     * @param string|mixed $additionalUniversalLink additionalUniversalLink
      *
      * @return $this
      */
@@ -1526,7 +1526,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets productShortName
      *
-     * @param string $productShortName productShortName
+     * @param string|mixed $productShortName productShortName
      *
      * @return $this
      */
@@ -1550,7 +1550,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets price
      *
-     * @param double $price price
+     * @param double|mixed $price price
      *
      * @return $this
      */
@@ -1574,7 +1574,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets originalPrice
      *
-     * @param double $originalPrice originalPrice
+     * @param double|mixed $originalPrice originalPrice
      *
      * @return $this
      */
@@ -1598,7 +1598,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets discount
      *
-     * @param double $discount discount
+     * @param double|mixed $discount discount
      *
      * @return $this
      */
@@ -1622,7 +1622,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets salePrice
      *
-     * @param double $salePrice salePrice
+     * @param double|mixed $salePrice salePrice
      *
      * @return $this
      */
@@ -1646,7 +1646,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets startTime
      *
-     * @param string $startTime startTime
+     * @param string|mixed $startTime startTime
      *
      * @return $this
      */
@@ -1670,7 +1670,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets endTime
      *
-     * @param string $endTime endTime
+     * @param string|mixed $endTime endTime
      *
      * @return $this
      */
@@ -1694,7 +1694,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets salesVolume
      *
-     * @param int $salesVolume salesVolume
+     * @param int|mixed $salesVolume salesVolume
      *
      * @return $this
      */
@@ -1718,7 +1718,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets stockVolume
      *
-     * @param int $stockVolume stockVolume
+     * @param int|mixed $stockVolume stockVolume
      *
      * @return $this
      */
@@ -1742,7 +1742,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets slogan
      *
-     * @param string $slogan slogan
+     * @param string|mixed $slogan slogan
      *
      * @return $this
      */
@@ -1766,7 +1766,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets customLabel
      *
-     * @param string[] $customLabel customLabel
+     * @param string[]|mixed $customLabel customLabel
      *
      * @return $this
      */
@@ -1790,7 +1790,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets firstCategoryId
      *
-     * @param int $firstCategoryId firstCategoryId
+     * @param int|mixed $firstCategoryId firstCategoryId
      *
      * @return $this
      */
@@ -1814,7 +1814,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets secondCategoryId
      *
-     * @param int $secondCategoryId secondCategoryId
+     * @param int|mixed $secondCategoryId secondCategoryId
      *
      * @return $this
      */
@@ -1838,7 +1838,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets thirdCategoryId
      *
-     * @param int $thirdCategoryId thirdCategoryId
+     * @param int|mixed $thirdCategoryId thirdCategoryId
      *
      * @return $this
      */
@@ -1862,7 +1862,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets fourthCategoryId
      *
-     * @param int $fourthCategoryId fourthCategoryId
+     * @param int|mixed $fourthCategoryId fourthCategoryId
      *
      * @return $this
      */
@@ -1886,7 +1886,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets firstCategoryName
      *
-     * @param string $firstCategoryName firstCategoryName
+     * @param string|mixed $firstCategoryName firstCategoryName
      *
      * @return $this
      */
@@ -1910,7 +1910,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets secondCategoryName
      *
-     * @param string $secondCategoryName secondCategoryName
+     * @param string|mixed $secondCategoryName secondCategoryName
      *
      * @return $this
      */
@@ -1934,7 +1934,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets thirdCategoryName
      *
-     * @param string $thirdCategoryName thirdCategoryName
+     * @param string|mixed $thirdCategoryName thirdCategoryName
      *
      * @return $this
      */
@@ -1958,7 +1958,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets fourthCategoryName
      *
-     * @param string $fourthCategoryName fourthCategoryName
+     * @param string|mixed $fourthCategoryName fourthCategoryName
      *
      * @return $this
      */
@@ -1982,7 +1982,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets firstCategoryUrl
      *
-     * @param string $firstCategoryUrl firstCategoryUrl
+     * @param string|mixed $firstCategoryUrl firstCategoryUrl
      *
      * @return $this
      */
@@ -2006,7 +2006,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets secondCategoryUrl
      *
-     * @param string $secondCategoryUrl secondCategoryUrl
+     * @param string|mixed $secondCategoryUrl secondCategoryUrl
      *
      * @return $this
      */
@@ -2030,7 +2030,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets thirdCategoryUrl
      *
-     * @param string $thirdCategoryUrl thirdCategoryUrl
+     * @param string|mixed $thirdCategoryUrl thirdCategoryUrl
      *
      * @return $this
      */
@@ -2054,7 +2054,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets fourthCategoryUrl
      *
-     * @param string $fourthCategoryUrl fourthCategoryUrl
+     * @param string|mixed $fourthCategoryUrl fourthCategoryUrl
      *
      * @return $this
      */
@@ -2078,7 +2078,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets brandId
      *
-     * @param int $brandId brandId
+     * @param int|mixed $brandId brandId
      *
      * @return $this
      */
@@ -2102,7 +2102,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets productBrand
      *
-     * @param string $productBrand productBrand
+     * @param string|mixed $productBrand productBrand
      *
      * @return $this
      */
@@ -2126,7 +2126,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets brandUrl
      *
-     * @param string $brandUrl brandUrl
+     * @param string|mixed $brandUrl brandUrl
      *
      * @return $this
      */
@@ -2150,7 +2150,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets promotionId
      *
-     * @param int $promotionId promotionId
+     * @param int|mixed $promotionId promotionId
      *
      * @return $this
      */
@@ -2174,7 +2174,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets promotionName
      *
-     * @param string $promotionName promotionName
+     * @param string|mixed $promotionName promotionName
      *
      * @return $this
      */
@@ -2198,7 +2198,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets promotionUrl
      *
-     * @param string $promotionUrl promotionUrl
+     * @param string|mixed $promotionUrl promotionUrl
      *
      * @return $this
      */
@@ -2222,7 +2222,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets shopId
      *
-     * @param int $shopId shopId
+     * @param int|mixed $shopId shopId
      *
      * @return $this
      */
@@ -2246,7 +2246,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets shopName
      *
-     * @param string $shopName shopName
+     * @param string|mixed $shopName shopName
      *
      * @return $this
      */
@@ -2270,7 +2270,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets shopUrl
      *
-     * @param string $shopUrl shopUrl
+     * @param string|mixed $shopUrl shopUrl
      *
      * @return $this
      */
@@ -2294,7 +2294,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets shopCustomInfo
      *
-     * @param string $shopCustomInfo shopCustomInfo
+     * @param string|mixed $shopCustomInfo shopCustomInfo
      *
      * @return $this
      */
@@ -2318,7 +2318,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets shopIdList
      *
-     * @param string[] $shopIdList shopIdList
+     * @param string[]|mixed $shopIdList shopIdList
      *
      * @return $this
      */
@@ -2342,7 +2342,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets productViewCount
      *
-     * @param int $productViewCount productViewCount
+     * @param int|mixed $productViewCount productViewCount
      *
      * @return $this
      */
@@ -2366,7 +2366,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets favoriteCount
      *
-     * @param int $favoriteCount favoriteCount
+     * @param int|mixed $favoriteCount favoriteCount
      *
      * @return $this
      */
@@ -2390,7 +2390,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets rating
      *
-     * @param double $rating rating
+     * @param double|mixed $rating rating
      *
      * @return $this
      */
@@ -2414,7 +2414,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets favourableCommentRate
      *
-     * @param double $favourableCommentRate favourableCommentRate
+     * @param double|mixed $favourableCommentRate favourableCommentRate
      *
      * @return $this
      */
@@ -2438,7 +2438,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets productOwnerType
      *
-     * @param \TencentAds\Model\ProductOwnerType $productOwnerType productOwnerType
+     * @param \TencentAds\Model\ProductOwnerType|mixed $productOwnerType productOwnerType
      *
      * @return $this
      */
@@ -2462,7 +2462,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets author
      *
-     * @param string $author author
+     * @param string|mixed $author author
      *
      * @return $this
      */
@@ -2486,7 +2486,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets fullText
      *
-     * @param string $fullText fullText
+     * @param string|mixed $fullText fullText
      *
      * @return $this
      */
@@ -2510,7 +2510,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets likeCount
      *
-     * @param int $likeCount likeCount
+     * @param int|mixed $likeCount likeCount
      *
      * @return $this
      */
@@ -2534,7 +2534,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets forwardCount
      *
-     * @param int $forwardCount forwardCount
+     * @param int|mixed $forwardCount forwardCount
      *
      * @return $this
      */
@@ -2558,7 +2558,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets commentCount
      *
-     * @param int $commentCount commentCount
+     * @param int|mixed $commentCount commentCount
      *
      * @return $this
      */
@@ -2582,7 +2582,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets authorFansCount
      *
-     * @param int $authorFansCount authorFansCount
+     * @param int|mixed $authorFansCount authorFansCount
      *
      * @return $this
      */
@@ -2606,7 +2606,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets semanticLabels
      *
-     * @param string[] $semanticLabels semanticLabels
+     * @param string[]|mixed $semanticLabels semanticLabels
      *
      * @return $this
      */
@@ -2630,7 +2630,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets detailImg
      *
-     * @param string[] $detailImg detailImg
+     * @param string[]|mixed $detailImg detailImg
      *
      * @return $this
      */
@@ -2654,7 +2654,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets showCount
      *
-     * @param int $showCount showCount
+     * @param int|mixed $showCount showCount
      *
      * @return $this
      */
@@ -2678,7 +2678,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets playRate
      *
-     * @param double $playRate playRate
+     * @param double|mixed $playRate playRate
      *
      * @return $this
      */
@@ -2702,7 +2702,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets makeMoneyOnline
      *
-     * @param string $makeMoneyOnline makeMoneyOnline
+     * @param string|mixed $makeMoneyOnline makeMoneyOnline
      *
      * @return $this
      */
@@ -2726,7 +2726,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets liveBroadcast
      *
-     * @param string $liveBroadcast liveBroadcast
+     * @param string|mixed $liveBroadcast liveBroadcast
      *
      * @return $this
      */
@@ -2750,7 +2750,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets platformAttribute
      *
-     * @param string $platformAttribute platformAttribute
+     * @param string|mixed $platformAttribute platformAttribute
      *
      * @return $this
      */
@@ -2774,7 +2774,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets customData
      *
-     * @param string $customData customData
+     * @param string|mixed $customData customData
      *
      * @return $this
      */
@@ -2798,7 +2798,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets shootingPicCount
      *
-     * @param int $shootingPicCount shootingPicCount
+     * @param int|mixed $shootingPicCount shootingPicCount
      *
      * @return $this
      */
@@ -2822,7 +2822,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets fineeditCount
      *
-     * @param int $fineeditCount fineeditCount
+     * @param int|mixed $fineeditCount fineeditCount
      *
      * @return $this
      */
@@ -2846,7 +2846,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets albumPhotoCount
      *
-     * @param int $albumPhotoCount albumPhotoCount
+     * @param int|mixed $albumPhotoCount albumPhotoCount
      *
      * @return $this
      */
@@ -2870,7 +2870,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets albumCount
      *
-     * @param int $albumCount albumCount
+     * @param int|mixed $albumCount albumCount
      *
      * @return $this
      */
@@ -2894,7 +2894,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets frameCount
      *
-     * @param int $frameCount frameCount
+     * @param int|mixed $frameCount frameCount
      *
      * @return $this
      */
@@ -2918,7 +2918,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets country
      *
-     * @param string $country country
+     * @param string|mixed $country country
      *
      * @return $this
      */
@@ -2942,7 +2942,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets province
      *
-     * @param string $province province
+     * @param string|mixed $province province
      *
      * @return $this
      */
@@ -2966,7 +2966,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets city
      *
-     * @param string $city city
+     * @param string|mixed $city city
      *
      * @return $this
      */
@@ -2990,7 +2990,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets district
      *
-     * @param string $district district
+     * @param string|mixed $district district
      *
      * @return $this
      */
@@ -3014,7 +3014,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets address
      *
-     * @param string[] $address address
+     * @param string[]|mixed $address address
      *
      * @return $this
      */
@@ -3038,7 +3038,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets shootingSceneInCount
      *
-     * @param \TencentAds\Model\ShootingSceneInCount $shootingSceneInCount shootingSceneInCount
+     * @param \TencentAds\Model\ShootingSceneInCount|mixed $shootingSceneInCount shootingSceneInCount
      *
      * @return $this
      */
@@ -3062,7 +3062,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets shootingSceneOutCount
      *
-     * @param \TencentAds\Model\ShootingSceneOutCount $shootingSceneOutCount shootingSceneOutCount
+     * @param \TencentAds\Model\ShootingSceneOutCount|mixed $shootingSceneOutCount shootingSceneOutCount
      *
      * @return $this
      */
@@ -3086,7 +3086,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets brideClothing
      *
-     * @param \TencentAds\Model\BrideClothing $brideClothing brideClothing
+     * @param \TencentAds\Model\BrideClothing|mixed $brideClothing brideClothing
      *
      * @return $this
      */
@@ -3110,7 +3110,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets groomClothing
      *
-     * @param \TencentAds\Model\GroomClothing $groomClothing groomClothing
+     * @param \TencentAds\Model\GroomClothing|mixed $groomClothing groomClothing
      *
      * @return $this
      */
@@ -3134,7 +3134,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets clothCount
      *
-     * @param \TencentAds\Model\ClothCount $clothCount clothCount
+     * @param \TencentAds\Model\ClothCount|mixed $clothCount clothCount
      *
      * @return $this
      */
@@ -3158,7 +3158,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets shootingScene
      *
-     * @param \TencentAds\Model\ShootingScene $shootingScene shootingScene
+     * @param \TencentAds\Model\ShootingScene|mixed $shootingScene shootingScene
      *
      * @return $this
      */
@@ -3182,7 +3182,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets setSpecial
      *
-     * @param string[] $setSpecial setSpecial
+     * @param string[]|mixed $setSpecial setSpecial
      *
      * @return $this
      */
@@ -3206,7 +3206,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets shootingStyleCom
      *
-     * @param string[] $shootingStyleCom shootingStyleCom
+     * @param string[]|mixed $shootingStyleCom shootingStyleCom
      *
      * @return $this
      */
@@ -3230,7 +3230,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets shootingSceneDetail
      *
-     * @param string[] $shootingSceneDetail shootingSceneDetail
+     * @param string[]|mixed $shootingSceneDetail shootingSceneDetail
      *
      * @return $this
      */
@@ -3254,7 +3254,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets tourPlaceDomestic
      *
-     * @param \TencentAds\Model\TourPlaceDomestic $tourPlaceDomestic tourPlaceDomestic
+     * @param \TencentAds\Model\TourPlaceDomestic|mixed $tourPlaceDomestic tourPlaceDomestic
      *
      * @return $this
      */
@@ -3278,7 +3278,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets tourPlaceForeign
      *
-     * @param \TencentAds\Model\TourPlaceForeign $tourPlaceForeign tourPlaceForeign
+     * @param \TencentAds\Model\TourPlaceForeign|mixed $tourPlaceForeign tourPlaceForeign
      *
      * @return $this
      */
@@ -3302,7 +3302,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets maxInsuranceQuota
      *
-     * @param double $maxInsuranceQuota maxInsuranceQuota
+     * @param double|mixed $maxInsuranceQuota maxInsuranceQuota
      *
      * @return $this
      */
@@ -3326,7 +3326,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets firstMonthInsuranceFee
      *
-     * @param double $firstMonthInsuranceFee firstMonthInsuranceFee
+     * @param double|mixed $firstMonthInsuranceFee firstMonthInsuranceFee
      *
      * @return $this
      */
@@ -3350,7 +3350,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets maxQuota
      *
-     * @param double $maxQuota maxQuota
+     * @param double|mixed $maxQuota maxQuota
      *
      * @return $this
      */
@@ -3374,7 +3374,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets annualizedRateOfReturn
      *
-     * @param double $annualizedRateOfReturn annualizedRateOfReturn
+     * @param double|mixed $annualizedRateOfReturn annualizedRateOfReturn
      *
      * @return $this
      */
@@ -3398,7 +3398,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     /**
      * Sets riskType
      *
-     * @param \TencentAds\Model\RiskTypeStatus $riskType riskType
+     * @param \TencentAds\Model\RiskTypeStatus|mixed $riskType riskType
      *
      * @return $this
      */

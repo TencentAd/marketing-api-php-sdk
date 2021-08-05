@@ -223,7 +223,7 @@ class XijingPageDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class XijingPageDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Sets pageIdList
      *
-     * @param string[] $pageIdList pageIdList
+     * @param string[]|mixed $pageIdList pageIdList
      *
      * @return $this
      */

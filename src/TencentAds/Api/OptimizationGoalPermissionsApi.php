@@ -92,12 +92,12 @@ class OptimizationGoalPermissionsApi
      *
      * 查询优化目标权限
      *
-     * @param  int $accountId accountId (required)
-     * @param  string[] $siteSet siteSet (required)
-     * @param  string $promotedObjectType promotedObjectType (required)
-     * @param  string $bidMode bidMode (optional)
-     * @param  string $promotedObjectId promotedObjectId (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string[]|mixed $siteSet siteSet (required)
+     * @param  string|mixed $promotedObjectType promotedObjectType (required)
+     * @param  string|mixed $bidMode bidMode (optional)
+     * @param  string|mixed $promotedObjectId promotedObjectId (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -114,12 +114,12 @@ class OptimizationGoalPermissionsApi
      *
      * 查询优化目标权限
      *
-     * @param  int $accountId (required)
-     * @param  string[] $siteSet (required)
-     * @param  string $promotedObjectType (required)
-     * @param  string $bidMode (optional)
-     * @param  string $promotedObjectId (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string[]|mixed $siteSet (required)
+     * @param  string|mixed $promotedObjectType (required)
+     * @param  string|mixed $bidMode (optional)
+     * @param  string|mixed $promotedObjectId (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -194,12 +194,12 @@ class OptimizationGoalPermissionsApi
      *
      * 查询优化目标权限
      *
-     * @param  int $accountId (required)
-     * @param  string[] $siteSet (required)
-     * @param  string $promotedObjectType (required)
-     * @param  string $bidMode (optional)
-     * @param  string $promotedObjectId (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string[]|mixed $siteSet (required)
+     * @param  string|mixed $promotedObjectType (required)
+     * @param  string|mixed $bidMode (optional)
+     * @param  string|mixed $promotedObjectId (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -219,12 +219,12 @@ class OptimizationGoalPermissionsApi
      *
      * 查询优化目标权限
      *
-     * @param  int $accountId (required)
-     * @param  string[] $siteSet (required)
-     * @param  string $promotedObjectType (required)
-     * @param  string $bidMode (optional)
-     * @param  string $promotedObjectId (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string[]|mixed $siteSet (required)
+     * @param  string|mixed $promotedObjectType (required)
+     * @param  string|mixed $bidMode (optional)
+     * @param  string|mixed $promotedObjectId (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -274,12 +274,12 @@ class OptimizationGoalPermissionsApi
     /**
      * Create request for operation 'optimizationGoalPermissionsGet'
      *
-     * @param  int $accountId (required)
-     * @param  string[] $siteSet (required)
-     * @param  string $promotedObjectType (required)
-     * @param  string $bidMode (optional)
-     * @param  string $promotedObjectId (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string[]|mixed $siteSet (required)
+     * @param  string|mixed $promotedObjectType (required)
+     * @param  string|mixed $bidMode (optional)
+     * @param  string|mixed $promotedObjectId (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

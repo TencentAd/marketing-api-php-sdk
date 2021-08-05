@@ -224,7 +224,7 @@ class UpdateCampaignSpeedModeItem implements ModelInterface, ArrayAccess
     /**
      * Sets campaignId
      *
-     * @param int $campaignId campaignId
+     * @param int|mixed $campaignId campaignId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class UpdateCampaignSpeedModeItem implements ModelInterface, ArrayAccess
     /**
      * Sets speedMode
      *
-     * @param \TencentAds\Model\SpeedMode $speedMode speedMode
+     * @param \TencentAds\Model\SpeedMode|mixed $speedMode speedMode
      *
      * @return $this
      */

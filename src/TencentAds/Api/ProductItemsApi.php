@@ -92,7 +92,7 @@ class ProductItemsApi
      *
      * 添加商品
      *
-     * @param  \TencentAds\Model\ProductItemsAddRequest $data data (required)
+     * @param  \TencentAds\Model\ProductItemsAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class ProductItemsApi
      *
      * 添加商品
      *
-     * @param  \TencentAds\Model\ProductItemsAddRequest $data (required)
+     * @param  \TencentAds\Model\ProductItemsAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class ProductItemsApi
      *
      * 添加商品
      *
-     * @param  \TencentAds\Model\ProductItemsAddRequest $data (required)
+     * @param  \TencentAds\Model\ProductItemsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class ProductItemsApi
      *
      * 添加商品
      *
-     * @param  \TencentAds\Model\ProductItemsAddRequest $data (required)
+     * @param  \TencentAds\Model\ProductItemsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class ProductItemsApi
     /**
      * Create request for operation 'productItemsAdd'
      *
-     * @param  \TencentAds\Model\ProductItemsAddRequest $data (required)
+     * @param  \TencentAds\Model\ProductItemsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,10 +374,10 @@ class ProductItemsApi
      *
      * 获取商品
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $productCatalogId productCatalogId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $productCatalogId productCatalogId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -394,10 +394,10 @@ class ProductItemsApi
      *
      * 获取商品
      *
-     * @param  int $accountId (required)
-     * @param  int $productCatalogId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -472,10 +472,10 @@ class ProductItemsApi
      *
      * 获取商品
      *
-     * @param  int $accountId (required)
-     * @param  int $productCatalogId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -495,10 +495,10 @@ class ProductItemsApi
      *
      * 获取商品
      *
-     * @param  int $accountId (required)
-     * @param  int $productCatalogId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -548,10 +548,10 @@ class ProductItemsApi
     /**
      * Create request for operation 'productItemsGet'
      *
-     * @param  int $accountId (required)
-     * @param  int $productCatalogId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -696,7 +696,7 @@ class ProductItemsApi
      *
      * 更新商品信息
      *
-     * @param  \TencentAds\Model\ProductItemsUpdateRequest $data data (required)
+     * @param  \TencentAds\Model\ProductItemsUpdateRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -713,7 +713,7 @@ class ProductItemsApi
      *
      * 更新商品信息
      *
-     * @param  \TencentAds\Model\ProductItemsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\ProductItemsUpdateRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -788,7 +788,7 @@ class ProductItemsApi
      *
      * 更新商品信息
      *
-     * @param  \TencentAds\Model\ProductItemsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\ProductItemsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -808,7 +808,7 @@ class ProductItemsApi
      *
      * 更新商品信息
      *
-     * @param  \TencentAds\Model\ProductItemsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\ProductItemsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -858,7 +858,7 @@ class ProductItemsApi
     /**
      * Create request for operation 'productItemsUpdate'
      *
-     * @param  \TencentAds\Model\ProductItemsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\ProductItemsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

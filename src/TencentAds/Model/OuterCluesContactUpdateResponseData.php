@@ -217,7 +217,7 @@ class OuterCluesContactUpdateResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets failLeadsList
      *
-     * @param \TencentAds\Model\OuterCluesContactUpdateListStruct[] $failLeadsList failLeadsList
+     * @param \TencentAds\Model\OuterCluesContactUpdateListStruct[]|mixed $failLeadsList failLeadsList
      *
      * @return $this
      */

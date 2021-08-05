@@ -218,7 +218,7 @@ class ElementGoods implements ModelInterface, ArrayAccess
     /**
      * Sets goodsButtonSpec
      *
-     * @param \TencentAds\Model\GoodsButtonSpec $goodsButtonSpec goodsButtonSpec
+     * @param \TencentAds\Model\GoodsButtonSpec|mixed $goodsButtonSpec goodsButtonSpec
      *
      * @return $this
      */

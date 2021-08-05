@@ -223,7 +223,7 @@ class VideomakerVideocapturesAddResponseData implements ModelInterface, ArrayAcc
     /**
      * Sets code
      *
-     * @param int $code code
+     * @param int|mixed $code code
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class VideomakerVideocapturesAddResponseData implements ModelInterface, ArrayAcc
     /**
      * Sets videoCaptures
      *
-     * @param \TencentAds\Model\VideoCaptureStruct[] $videoCaptures videoCaptures
+     * @param \TencentAds\Model\VideoCaptureStruct[]|mixed $videoCaptures videoCaptures
      *
      * @return $this
      */

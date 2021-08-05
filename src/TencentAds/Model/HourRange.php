@@ -224,7 +224,7 @@ class HourRange implements ModelInterface, ArrayAccess
     /**
      * Sets beginHour
      *
-     * @param int $beginHour beginHour
+     * @param int|mixed $beginHour beginHour
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class HourRange implements ModelInterface, ArrayAccess
     /**
      * Sets endHour
      *
-     * @param int $endHour endHour
+     * @param int|mixed $endHour endHour
      *
      * @return $this
      */

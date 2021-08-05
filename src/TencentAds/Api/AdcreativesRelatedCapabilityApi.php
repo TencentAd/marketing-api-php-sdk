@@ -92,9 +92,9 @@ class AdcreativesRelatedCapabilityApi
      *
      * 检查广告创意是否可以修改
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $adId adId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $adId adId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -111,9 +111,9 @@ class AdcreativesRelatedCapabilityApi
      *
      * 检查广告创意是否可以修改
      *
-     * @param  int $accountId (required)
-     * @param  int $adId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $adId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -188,9 +188,9 @@ class AdcreativesRelatedCapabilityApi
      *
      * 检查广告创意是否可以修改
      *
-     * @param  int $accountId (required)
-     * @param  int $adId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $adId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -210,9 +210,9 @@ class AdcreativesRelatedCapabilityApi
      *
      * 检查广告创意是否可以修改
      *
-     * @param  int $accountId (required)
-     * @param  int $adId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $adId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -262,9 +262,9 @@ class AdcreativesRelatedCapabilityApi
     /**
      * Create request for operation 'adcreativesRelatedCapabilityGet'
      *
-     * @param  int $accountId (required)
-     * @param  int $adId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $adId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

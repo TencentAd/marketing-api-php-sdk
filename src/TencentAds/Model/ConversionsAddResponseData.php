@@ -217,7 +217,7 @@ class ConversionsAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets conversionId
      *
-     * @param int $conversionId conversionId
+     * @param int|mixed $conversionId conversionId
      *
      * @return $this
      */

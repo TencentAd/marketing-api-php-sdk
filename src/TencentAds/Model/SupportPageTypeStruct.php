@@ -236,7 +236,7 @@ class SupportPageTypeStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageType
      *
-     * @param string $pageType pageType
+     * @param string|mixed $pageType pageType
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class SupportPageTypeStruct implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class SupportPageTypeStruct implements ModelInterface, ArrayAccess
     /**
      * Sets supportLinkNameType
      *
-     * @param \TencentAds\Model\SupportLinkNameType $supportLinkNameType supportLinkNameType
+     * @param \TencentAds\Model\SupportLinkNameType|mixed $supportLinkNameType supportLinkNameType
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class SupportPageTypeStruct implements ModelInterface, ArrayAccess
     /**
      * Sets supportLinkPageType
      *
-     * @param \TencentAds\Model\SupportLinkPageType $supportLinkPageType supportLinkPageType
+     * @param \TencentAds\Model\SupportLinkPageType|mixed $supportLinkPageType supportLinkPageType
      *
      * @return $this
      */

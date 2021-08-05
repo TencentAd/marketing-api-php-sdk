@@ -230,7 +230,7 @@ class TaskTypeCreateAndroidChannelPackageSpec implements ModelInterface, ArrayAc
     /**
      * Sets myappAuthKey
      *
-     * @param string $myappAuthKey myappAuthKey
+     * @param string|mixed $myappAuthKey myappAuthKey
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class TaskTypeCreateAndroidChannelPackageSpec implements ModelInterface, ArrayAc
     /**
      * Sets androidAppId
      *
-     * @param int $androidAppId androidAppId
+     * @param int|mixed $androidAppId androidAppId
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class TaskTypeCreateAndroidChannelPackageSpec implements ModelInterface, ArrayAc
     /**
      * Sets androidChannelPackageSpec
      *
-     * @param \TencentAds\Model\CreateAndroidChannelPackageSpec[] $androidChannelPackageSpec androidChannelPackageSpec
+     * @param \TencentAds\Model\CreateAndroidChannelPackageSpec[]|mixed $androidChannelPackageSpec androidChannelPackageSpec
      *
      * @return $this
      */

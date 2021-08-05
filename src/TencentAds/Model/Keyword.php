@@ -218,7 +218,7 @@ class Keyword implements ModelInterface, ArrayAccess
     /**
      * Sets words
      *
-     * @param string[] $words words
+     * @param string[]|mixed $words words
      *
      * @return $this
      */

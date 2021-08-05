@@ -236,7 +236,7 @@ class DynamicAdSpec implements ModelInterface, ArrayAccess
     /**
      * Sets productCatalogId
      *
-     * @param int $productCatalogId productCatalogId
+     * @param int|mixed $productCatalogId productCatalogId
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class DynamicAdSpec implements ModelInterface, ArrayAccess
     /**
      * Sets productMode
      *
-     * @param \TencentAds\Model\ProductMode $productMode productMode
+     * @param \TencentAds\Model\ProductMode|mixed $productMode productMode
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class DynamicAdSpec implements ModelInterface, ArrayAccess
     /**
      * Sets productSource
      *
-     * @param string $productSource productSource
+     * @param string|mixed $productSource productSource
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class DynamicAdSpec implements ModelInterface, ArrayAccess
     /**
      * Sets productRecommendMethods
      *
-     * @param int[] $productRecommendMethods productRecommendMethods
+     * @param int[]|mixed $productRecommendMethods productRecommendMethods
      *
      * @return $this
      */

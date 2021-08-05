@@ -224,7 +224,7 @@ class DpWriteTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets age
      *
-     * @param \TencentAds\Model\AgeStruct[] $age age
+     * @param \TencentAds\Model\AgeStruct[]|mixed $age age
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class DpWriteTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets gender
      *
-     * @param string[] $gender gender
+     * @param string[]|mixed $gender gender
      *
      * @return $this
      */

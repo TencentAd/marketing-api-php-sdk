@@ -224,7 +224,7 @@ class LastModifiedTimeRange implements ModelInterface, ArrayAccess
     /**
      * Sets beginTime
      *
-     * @param int $beginTime beginTime
+     * @param int|mixed $beginTime beginTime
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class LastModifiedTimeRange implements ModelInterface, ArrayAccess
     /**
      * Sets endTime
      *
-     * @param int $endTime endTime
+     * @param int|mixed $endTime endTime
      *
      * @return $this
      */

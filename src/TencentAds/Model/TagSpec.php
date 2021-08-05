@@ -224,7 +224,7 @@ class TagSpec implements ModelInterface, ArrayAccess
     /**
      * Sets behaviorSpec
      *
-     * @param \TencentAds\Model\BehaviorTargetingTagSpec $behaviorSpec behaviorSpec
+     * @param \TencentAds\Model\BehaviorTargetingTagSpec|mixed $behaviorSpec behaviorSpec
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class TagSpec implements ModelInterface, ArrayAccess
     /**
      * Sets interestSpec
      *
-     * @param \TencentAds\Model\InterestTargetingTagSpec $interestSpec interestSpec
+     * @param \TencentAds\Model\InterestTargetingTagSpec|mixed $interestSpec interestSpec
      *
      * @return $this
      */

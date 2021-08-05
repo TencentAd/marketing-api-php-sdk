@@ -218,7 +218,7 @@ class AdcreativeElementStructProperty implements ModelInterface, ArrayAccess
     /**
      * Sets elementMutualExclusive
      *
-     * @param bool $elementMutualExclusive elementMutualExclusive
+     * @param bool|mixed $elementMutualExclusive elementMutualExclusive
      *
      * @return $this
      */

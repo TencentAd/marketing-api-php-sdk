@@ -242,7 +242,7 @@ class LabelsLabel implements ModelInterface, ArrayAccess
     /**
      * Sets labelId
      *
-     * @param int $labelId labelId
+     * @param int|mixed $labelId labelId
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class LabelsLabel implements ModelInterface, ArrayAccess
     /**
      * Sets audienceId
      *
-     * @param int $audienceId audienceId
+     * @param int|mixed $audienceId audienceId
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class LabelsLabel implements ModelInterface, ArrayAccess
     /**
      * Sets displayLabelName
      *
-     * @param string $displayLabelName displayLabelName
+     * @param string|mixed $displayLabelName displayLabelName
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class LabelsLabel implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class LabelsLabel implements ModelInterface, ArrayAccess
     /**
      * Sets userCount
      *
-     * @param int $userCount userCount
+     * @param int|mixed $userCount userCount
      *
      * @return $this
      */

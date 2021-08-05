@@ -284,7 +284,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Sets audienceId
      *
-     * @param int $audienceId audienceId
+     * @param int|mixed $audienceId audienceId
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Sets campaignId
      *
-     * @param int $campaignId campaignId
+     * @param int|mixed $campaignId campaignId
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Sets wechatAdgroupId
      *
-     * @param int $wechatAdgroupId wechatAdgroupId
+     * @param int|mixed $wechatAdgroupId wechatAdgroupId
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Sets wechatCampaignId
      *
-     * @param int $wechatCampaignId wechatCampaignId
+     * @param int|mixed $wechatCampaignId wechatCampaignId
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Sets modelId
      *
-     * @param int $modelId modelId
+     * @param int|mixed $modelId modelId
      *
      * @return $this
      */
@@ -452,7 +452,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Sets audiencePredictTaskId
      *
-     * @param int $audiencePredictTaskId audiencePredictTaskId
+     * @param int|mixed $audiencePredictTaskId audiencePredictTaskId
      *
      * @return $this
      */
@@ -476,7 +476,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Sets actionType
      *
-     * @param \TencentAds\Model\AdActionType $actionType actionType
+     * @param \TencentAds\Model\AdActionType|mixed $actionType actionType
      *
      * @return $this
      */
@@ -500,7 +500,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Sets cost
      *
-     * @param int $cost cost
+     * @param int|mixed $cost cost
      *
      * @return $this
      */
@@ -524,7 +524,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Sets actionCount
      *
-     * @param int $actionCount actionCount
+     * @param int|mixed $actionCount actionCount
      *
      * @return $this
      */
@@ -548,7 +548,7 @@ class AudienceReport implements ModelInterface, ArrayAccess
     /**
      * Sets userCount
      *
-     * @param int $userCount userCount
+     * @param int|mixed $userCount userCount
      *
      * @return $this
      */

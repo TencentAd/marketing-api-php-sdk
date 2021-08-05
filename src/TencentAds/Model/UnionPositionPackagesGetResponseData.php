@@ -223,7 +223,7 @@ class UnionPositionPackagesGetResponseData implements ModelInterface, ArrayAcces
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\UnionPositionPackagesGetListStruct[] $list list
+     * @param \TencentAds\Model\UnionPositionPackagesGetListStruct[]|mixed $list list
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class UnionPositionPackagesGetResponseData implements ModelInterface, ArrayAcces
     /**
      * Sets pageInfo
      *
-     * @param \TencentAds\Model\PageInfo $pageInfo pageInfo
+     * @param \TencentAds\Model\PageInfo|mixed $pageInfo pageInfo
      *
      * @return $this
      */

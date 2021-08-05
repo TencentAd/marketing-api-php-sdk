@@ -224,7 +224,7 @@ class KeywordSpec implements ModelInterface, ArrayAccess
     /**
      * Sets includeKeyword
      *
-     * @param string[] $includeKeyword includeKeyword
+     * @param string[]|mixed $includeKeyword includeKeyword
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class KeywordSpec implements ModelInterface, ArrayAccess
     /**
      * Sets excludeKeyword
      *
-     * @param string[] $excludeKeyword excludeKeyword
+     * @param string[]|mixed $excludeKeyword excludeKeyword
      *
      * @return $this
      */

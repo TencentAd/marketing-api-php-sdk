@@ -253,7 +253,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets pageTemplateId
      *
-     * @param string $pageTemplateId pageTemplateId
+     * @param string|mixed $pageTemplateId pageTemplateId
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets pageType
      *
-     * @param \TencentAds\Model\TemplatesPageType $pageType pageType
+     * @param \TencentAds\Model\TemplatesPageType|mixed $pageType pageType
      *
      * @return $this
      */
@@ -301,7 +301,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets pageName
      *
-     * @param string $pageName pageName
+     * @param string|mixed $pageName pageName
      *
      * @return $this
      */
@@ -325,7 +325,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets clipboard
      *
-     * @param string $clipboard clipboard
+     * @param string|mixed $clipboard clipboard
      *
      * @return $this
      */
@@ -349,7 +349,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets pageTitle
      *
-     * @param string $pageTitle pageTitle
+     * @param string|mixed $pageTitle pageTitle
      *
      * @return $this
      */
@@ -373,7 +373,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets componentSpecList
      *
-     * @param string[] $componentSpecList componentSpecList
+     * @param string[]|mixed $componentSpecList componentSpecList
      *
      * @return $this
      */
@@ -397,7 +397,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets mobileAppId
      *
-     * @param string $mobileAppId mobileAppId
+     * @param string|mixed $mobileAppId mobileAppId
      *
      * @return $this
      */

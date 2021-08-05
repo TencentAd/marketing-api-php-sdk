@@ -223,7 +223,7 @@ class CustomTagsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class CustomTagsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Sets tagId
      *
-     * @param int $tagId tagId
+     * @param int|mixed $tagId tagId
      *
      * @return $this
      */

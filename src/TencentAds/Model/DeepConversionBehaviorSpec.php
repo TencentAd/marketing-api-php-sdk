@@ -224,7 +224,7 @@ class DeepConversionBehaviorSpec implements ModelInterface, ArrayAccess
     /**
      * Sets goal
      *
-     * @param \TencentAds\Model\OptimizationGoal $goal goal
+     * @param \TencentAds\Model\OptimizationGoal|mixed $goal goal
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class DeepConversionBehaviorSpec implements ModelInterface, ArrayAccess
     /**
      * Sets bidAmount
      *
-     * @param int $bidAmount bidAmount
+     * @param int|mixed $bidAmount bidAmount
      *
      * @return $this
      */

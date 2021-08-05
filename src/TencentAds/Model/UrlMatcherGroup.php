@@ -218,7 +218,7 @@ class UrlMatcherGroup implements ModelInterface, ArrayAccess
     /**
      * Sets urlMatcher
      *
-     * @param \TencentAds\Model\UrlMatcher[] $urlMatcher urlMatcher
+     * @param \TencentAds\Model\UrlMatcher[]|mixed $urlMatcher urlMatcher
      *
      * @return $this
      */

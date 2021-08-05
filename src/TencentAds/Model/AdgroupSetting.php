@@ -278,7 +278,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupName
      *
-     * @param string $adgroupName adgroupName
+     * @param string|mixed $adgroupName adgroupName
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Sets automaticSiteEnabled
      *
-     * @param bool $automaticSiteEnabled automaticSiteEnabled
+     * @param bool|mixed $automaticSiteEnabled automaticSiteEnabled
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Sets siteSet
      *
-     * @param string[] $siteSet siteSet
+     * @param string[]|mixed $siteSet siteSet
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Sets bidType
      *
-     * @param \TencentAds\Model\CostType $bidType bidType
+     * @param \TencentAds\Model\CostType|mixed $bidType bidType
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Sets bidAmount
      *
-     * @param int $bidAmount bidAmount
+     * @param int|mixed $bidAmount bidAmount
      *
      * @return $this
      */
@@ -422,7 +422,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObjectType|mixed $promotedObjectType promotedObjectType
      *
      * @return $this
      */
@@ -446,7 +446,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Sets billingEvent
      *
-     * @param \TencentAds\Model\BillingEvent $billingEvent billingEvent
+     * @param \TencentAds\Model\BillingEvent|mixed $billingEvent billingEvent
      *
      * @return $this
      */
@@ -470,7 +470,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Sets optimizationGoal
      *
-     * @param \TencentAds\Model\OptimizationGoal $optimizationGoal optimizationGoal
+     * @param \TencentAds\Model\OptimizationGoal|mixed $optimizationGoal optimizationGoal
      *
      * @return $this
      */
@@ -494,7 +494,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectId
      *
-     * @param string $promotedObjectId promotedObjectId
+     * @param string|mixed $promotedObjectId promotedObjectId
      *
      * @return $this
      */
@@ -518,7 +518,7 @@ class AdgroupSetting implements ModelInterface, ArrayAccess
     /**
      * Sets timeSeries
      *
-     * @param string $timeSeries timeSeries
+     * @param string|mixed $timeSeries timeSeries
      *
      * @return $this
      */

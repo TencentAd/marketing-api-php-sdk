@@ -92,7 +92,7 @@ class QualificationsApi
      *
      * 创建广告主资质
      *
-     * @param  \TencentAds\Model\QualificationsAddRequest $data data (required)
+     * @param  \TencentAds\Model\QualificationsAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class QualificationsApi
      *
      * 创建广告主资质
      *
-     * @param  \TencentAds\Model\QualificationsAddRequest $data (required)
+     * @param  \TencentAds\Model\QualificationsAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class QualificationsApi
      *
      * 创建广告主资质
      *
-     * @param  \TencentAds\Model\QualificationsAddRequest $data (required)
+     * @param  \TencentAds\Model\QualificationsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class QualificationsApi
      *
      * 创建广告主资质
      *
-     * @param  \TencentAds\Model\QualificationsAddRequest $data (required)
+     * @param  \TencentAds\Model\QualificationsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class QualificationsApi
     /**
      * Create request for operation 'qualificationsAdd'
      *
-     * @param  \TencentAds\Model\QualificationsAddRequest $data (required)
+     * @param  \TencentAds\Model\QualificationsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,7 +374,7 @@ class QualificationsApi
      *
      * 删除广告主资质
      *
-     * @param  \TencentAds\Model\QualificationsDeleteRequest $data data (required)
+     * @param  \TencentAds\Model\QualificationsDeleteRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -391,7 +391,7 @@ class QualificationsApi
      *
      * 删除广告主资质
      *
-     * @param  \TencentAds\Model\QualificationsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\QualificationsDeleteRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -466,7 +466,7 @@ class QualificationsApi
      *
      * 删除广告主资质
      *
-     * @param  \TencentAds\Model\QualificationsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\QualificationsDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -486,7 +486,7 @@ class QualificationsApi
      *
      * 删除广告主资质
      *
-     * @param  \TencentAds\Model\QualificationsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\QualificationsDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -536,7 +536,7 @@ class QualificationsApi
     /**
      * Create request for operation 'qualificationsDelete'
      *
-     * @param  \TencentAds\Model\QualificationsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\QualificationsDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -656,10 +656,10 @@ class QualificationsApi
      *
      * 获取广告主资质
      *
-     * @param  int $accountId accountId (required)
-     * @param  string $qualificationType qualificationType (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string|mixed $qualificationType qualificationType (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -676,10 +676,10 @@ class QualificationsApi
      *
      * 获取广告主资质
      *
-     * @param  int $accountId (required)
-     * @param  string $qualificationType (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $qualificationType (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -754,10 +754,10 @@ class QualificationsApi
      *
      * 获取广告主资质
      *
-     * @param  int $accountId (required)
-     * @param  string $qualificationType (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $qualificationType (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -777,10 +777,10 @@ class QualificationsApi
      *
      * 获取广告主资质
      *
-     * @param  int $accountId (required)
-     * @param  string $qualificationType (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $qualificationType (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -830,10 +830,10 @@ class QualificationsApi
     /**
      * Create request for operation 'qualificationsGet'
      *
-     * @param  int $accountId (required)
-     * @param  string $qualificationType (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $qualificationType (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -978,7 +978,7 @@ class QualificationsApi
      *
      * 更新广告主资质
      *
-     * @param  \TencentAds\Model\QualificationsUpdateRequest $data data (required)
+     * @param  \TencentAds\Model\QualificationsUpdateRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -995,7 +995,7 @@ class QualificationsApi
      *
      * 更新广告主资质
      *
-     * @param  \TencentAds\Model\QualificationsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\QualificationsUpdateRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1070,7 +1070,7 @@ class QualificationsApi
      *
      * 更新广告主资质
      *
-     * @param  \TencentAds\Model\QualificationsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\QualificationsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1090,7 +1090,7 @@ class QualificationsApi
      *
      * 更新广告主资质
      *
-     * @param  \TencentAds\Model\QualificationsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\QualificationsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1140,7 +1140,7 @@ class QualificationsApi
     /**
      * Create request for operation 'qualificationsUpdate'
      *
-     * @param  \TencentAds\Model\QualificationsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\QualificationsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

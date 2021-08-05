@@ -217,7 +217,7 @@ class UnionPositionPackagesAddResponseData implements ModelInterface, ArrayAcces
     /**
      * Sets unionPackageId
      *
-     * @param int $unionPackageId unionPackageId
+     * @param int|mixed $unionPackageId unionPackageId
      *
      * @return $this
      */

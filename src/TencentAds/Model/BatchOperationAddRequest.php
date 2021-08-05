@@ -241,7 +241,7 @@ class BatchOperationAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets resourceType
      *
-     * @param \TencentAds\Model\ResourceType $resourceType resourceType
+     * @param \TencentAds\Model\ResourceType|mixed $resourceType resourceType
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class BatchOperationAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets operationType
      *
-     * @param \TencentAds\Model\BatchOperationType $operationType operationType
+     * @param \TencentAds\Model\BatchOperationType|mixed $operationType operationType
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class BatchOperationAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets resourceIdList
      *
-     * @param int[] $resourceIdList resourceIdList
+     * @param int[]|mixed $resourceIdList resourceIdList
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class BatchOperationAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets operationSpec
      *
-     * @param \TencentAds\Model\OperationSpec $operationSpec operationSpec
+     * @param \TencentAds\Model\OperationSpec|mixed $operationSpec operationSpec
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class BatchOperationAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */

@@ -278,7 +278,7 @@ class CompeteBudgetDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets score
      *
-     * @param int $score score
+     * @param int|mixed $score score
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class CompeteBudgetDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets raiseAccountBalanceFlag
      *
-     * @param bool $raiseAccountBalanceFlag raiseAccountBalanceFlag
+     * @param bool|mixed $raiseAccountBalanceFlag raiseAccountBalanceFlag
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class CompeteBudgetDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets recommendRecharge
      *
-     * @param int $recommendRecharge recommendRecharge
+     * @param int|mixed $recommendRecharge recommendRecharge
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class CompeteBudgetDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountDailyCost
      *
-     * @param int $accountDailyCost accountDailyCost
+     * @param int|mixed $accountDailyCost accountDailyCost
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class CompeteBudgetDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountDayBudget
      *
-     * @param int $accountDayBudget accountDayBudget
+     * @param int|mixed $accountDayBudget accountDayBudget
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class CompeteBudgetDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets campaignDailyCost
      *
-     * @param int $campaignDailyCost campaignDailyCost
+     * @param int|mixed $campaignDailyCost campaignDailyCost
      *
      * @return $this
      */
@@ -422,7 +422,7 @@ class CompeteBudgetDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets campaignDayBudget
      *
-     * @param int $campaignDayBudget campaignDayBudget
+     * @param int|mixed $campaignDayBudget campaignDayBudget
      *
      * @return $this
      */
@@ -446,7 +446,7 @@ class CompeteBudgetDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupDailyCost
      *
-     * @param int $adgroupDailyCost adgroupDailyCost
+     * @param int|mixed $adgroupDailyCost adgroupDailyCost
      *
      * @return $this
      */
@@ -470,7 +470,7 @@ class CompeteBudgetDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupDayBudget
      *
-     * @param int $adgroupDayBudget adgroupDayBudget
+     * @param int|mixed $adgroupDayBudget adgroupDayBudget
      *
      * @return $this
      */
@@ -494,7 +494,7 @@ class CompeteBudgetDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets accountBalance
      *
-     * @param int $accountBalance accountBalance
+     * @param int|mixed $accountBalance accountBalance
      *
      * @return $this
      */
@@ -518,7 +518,7 @@ class CompeteBudgetDetailsStruct implements ModelInterface, ArrayAccess
     /**
      * Sets conclusion
      *
-     * @param string $conclusion conclusion
+     * @param string|mixed $conclusion conclusion
      *
      * @return $this
      */

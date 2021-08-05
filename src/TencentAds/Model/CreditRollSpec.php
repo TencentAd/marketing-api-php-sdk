@@ -230,7 +230,7 @@ class CreditRollSpec implements ModelInterface, ArrayAccess
     /**
      * Sets limitAmount
      *
-     * @param int $limitAmount limitAmount
+     * @param int|mixed $limitAmount limitAmount
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class CreditRollSpec implements ModelInterface, ArrayAccess
     /**
      * Sets usedAmount
      *
-     * @param int $usedAmount usedAmount
+     * @param int|mixed $usedAmount usedAmount
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class CreditRollSpec implements ModelInterface, ArrayAccess
     /**
      * Sets usableAmout
      *
-     * @param int $usableAmout usableAmout
+     * @param int|mixed $usableAmout usableAmout
      *
      * @return $this
      */

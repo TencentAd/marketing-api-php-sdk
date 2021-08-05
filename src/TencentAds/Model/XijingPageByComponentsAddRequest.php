@@ -229,7 +229,7 @@ class XijingPageByComponentsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class XijingPageByComponentsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets isAutoSubmit
      *
-     * @param int $isAutoSubmit isAutoSubmit
+     * @param int|mixed $isAutoSubmit isAutoSubmit
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class XijingPageByComponentsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets pages
      *
-     * @param \TencentAds\Model\XijingPageByComponentsAddPagesStruct[] $pages pages
+     * @param \TencentAds\Model\XijingPageByComponentsAddPagesStruct[]|mixed $pages pages
      *
      * @return $this
      */

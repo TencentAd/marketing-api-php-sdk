@@ -236,7 +236,7 @@ class ShelfSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Sets shelfButtonSpec
      *
-     * @param \TencentAds\Model\ShelfButtonSpec $shelfButtonSpec shelfButtonSpec
+     * @param \TencentAds\Model\ShelfButtonSpec|mixed $shelfButtonSpec shelfButtonSpec
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class ShelfSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Sets title
      *
-     * @param string $title title
+     * @param string|mixed $title title
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class ShelfSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Sets desc
      *
-     * @param string $desc desc
+     * @param string|mixed $desc desc
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class ShelfSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Sets imageIdList
      *
-     * @param string $imageIdList imageIdList
+     * @param string|mixed $imageIdList imageIdList
      *
      * @return $this
      */

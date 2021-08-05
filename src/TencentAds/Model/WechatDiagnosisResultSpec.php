@@ -224,7 +224,7 @@ class WechatDiagnosisResultSpec implements ModelInterface, ArrayAccess
     /**
      * Sets wechatCostDiagnosisResultSpec
      *
-     * @param \TencentAds\Model\WechatCostDiagnosisResultSpec $wechatCostDiagnosisResultSpec wechatCostDiagnosisResultSpec
+     * @param \TencentAds\Model\WechatCostDiagnosisResultSpec|mixed $wechatCostDiagnosisResultSpec wechatCostDiagnosisResultSpec
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class WechatDiagnosisResultSpec implements ModelInterface, ArrayAccess
     /**
      * Sets wechatExposureDiagnosisResultSpec
      *
-     * @param \TencentAds\Model\WechatExposureDiagnosisResultSpec $wechatExposureDiagnosisResultSpec wechatExposureDiagnosisResultSpec
+     * @param \TencentAds\Model\WechatExposureDiagnosisResultSpec|mixed $wechatExposureDiagnosisResultSpec wechatExposureDiagnosisResultSpec
      *
      * @return $this
      */

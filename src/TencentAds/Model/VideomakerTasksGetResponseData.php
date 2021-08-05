@@ -241,7 +241,7 @@ class VideomakerTasksGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets code
      *
-     * @param int $code code
+     * @param int|mixed $code code
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class VideomakerTasksGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets taskId
      *
-     * @param string $taskId taskId
+     * @param string|mixed $taskId taskId
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class VideomakerTasksGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \TencentAds\Model\AdStatus $status status
+     * @param \TencentAds\Model\AdStatus|mixed $status status
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class VideomakerTasksGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets videoId
      *
-     * @param string $videoId videoId
+     * @param string|mixed $videoId videoId
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class VideomakerTasksGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets otherData
      *
-     * @param \TencentAds\Model\OtherData $otherData otherData
+     * @param \TencentAds\Model\OtherData|mixed $otherData otherData
      *
      * @return $this
      */

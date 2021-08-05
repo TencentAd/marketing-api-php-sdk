@@ -223,7 +223,7 @@ class WechatPagesCsgrouplistGetResponseData implements ModelInterface, ArrayAcce
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\WechatPagesCsgrouplistGetListStruct[] $list list
+     * @param \TencentAds\Model\WechatPagesCsgrouplistGetListStruct[]|mixed $list list
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class WechatPagesCsgrouplistGetResponseData implements ModelInterface, ArrayAcce
     /**
      * Sets pageInfo
      *
-     * @param \TencentAds\Model\PageInfo $pageInfo pageInfo
+     * @param \TencentAds\Model\PageInfo|mixed $pageInfo pageInfo
      *
      * @return $this
      */

@@ -224,7 +224,7 @@ class LocardInterestsListItem implements ModelInterface, ArrayAccess
     /**
      * Sets id
      *
-     * @param string $id id
+     * @param string|mixed $id id
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class LocardInterestsListItem implements ModelInterface, ArrayAccess
     /**
      * Sets text
      *
-     * @param string $text text
+     * @param string|mixed $text text
      *
      * @return $this
      */

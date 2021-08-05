@@ -266,7 +266,7 @@ class MpInfoUpdate implements ModelInterface, ArrayAccess
     /**
      * Sets systemIndustryId
      *
-     * @param int $systemIndustryId systemIndustryId
+     * @param int|mixed $systemIndustryId systemIndustryId
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class MpInfoUpdate implements ModelInterface, ArrayAccess
     /**
      * Sets contactPerson
      *
-     * @param string $contactPerson contactPerson
+     * @param string|mixed $contactPerson contactPerson
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class MpInfoUpdate implements ModelInterface, ArrayAccess
     /**
      * Sets contactPersonTelephone
      *
-     * @param string $contactPersonTelephone contactPersonTelephone
+     * @param string|mixed $contactPersonTelephone contactPersonTelephone
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class MpInfoUpdate implements ModelInterface, ArrayAccess
     /**
      * Sets businessType
      *
-     * @param \TencentAds\Model\WechatBusinessType $businessType businessType
+     * @param \TencentAds\Model\WechatBusinessType|mixed $businessType businessType
      *
      * @return $this
      */
@@ -362,7 +362,7 @@ class MpInfoUpdate implements ModelInterface, ArrayAccess
     /**
      * Sets businessContent
      *
-     * @param string $businessContent businessContent
+     * @param string|mixed $businessContent businessContent
      *
      * @return $this
      */
@@ -386,7 +386,7 @@ class MpInfoUpdate implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param string $name name
+     * @param string|mixed $name name
      *
      * @return $this
      */
@@ -410,7 +410,7 @@ class MpInfoUpdate implements ModelInterface, ArrayAccess
     /**
      * Sets profilePhoto
      *
-     * @param string $profilePhoto profilePhoto
+     * @param string|mixed $profilePhoto profilePhoto
      *
      * @return $this
      */
@@ -434,7 +434,7 @@ class MpInfoUpdate implements ModelInterface, ArrayAccess
     /**
      * Sets brandIntroduction
      *
-     * @param string $brandIntroduction brandIntroduction
+     * @param string|mixed $brandIntroduction brandIntroduction
      *
      * @return $this
      */
@@ -458,7 +458,7 @@ class MpInfoUpdate implements ModelInterface, ArrayAccess
     /**
      * Sets introductionUrl
      *
-     * @param string $introductionUrl introductionUrl
+     * @param string|mixed $introductionUrl introductionUrl
      *
      * @return $this
      */

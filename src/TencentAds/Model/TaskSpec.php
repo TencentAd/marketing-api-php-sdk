@@ -296,7 +296,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets reportTaskSpec
      *
-     * @param \TencentAds\Model\ReportTaskSpec $reportTaskSpec reportTaskSpec
+     * @param \TencentAds\Model\ReportTaskSpec|mixed $reportTaskSpec reportTaskSpec
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets taskTypeAdHourlyReportSpec
      *
-     * @param \TencentAds\Model\TaskTypeAdHourlyReportSpec $taskTypeAdHourlyReportSpec taskTypeAdHourlyReportSpec
+     * @param \TencentAds\Model\TaskTypeAdHourlyReportSpec|mixed $taskTypeAdHourlyReportSpec taskTypeAdHourlyReportSpec
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets taskTypeWechatMomentsAdgroupHourlyReportSpec
      *
-     * @param \TencentAds\Model\TaskTypeWechatMomentsAdgroupHourlyReportSpec $taskTypeWechatMomentsAdgroupHourlyReportSpec taskTypeWechatMomentsAdgroupHourlyReportSpec
+     * @param \TencentAds\Model\TaskTypeWechatMomentsAdgroupHourlyReportSpec|mixed $taskTypeWechatMomentsAdgroupHourlyReportSpec taskTypeWechatMomentsAdgroupHourlyReportSpec
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets taskTypeWechatAdgroupHourlyReportSpec
      *
-     * @param \TencentAds\Model\TaskTypeWechatAdgroupHourlyReportSpec $taskTypeWechatAdgroupHourlyReportSpec taskTypeWechatAdgroupHourlyReportSpec
+     * @param \TencentAds\Model\TaskTypeWechatAdgroupHourlyReportSpec|mixed $taskTypeWechatAdgroupHourlyReportSpec taskTypeWechatAdgroupHourlyReportSpec
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets taskTypeWechatAdgroupDailyReportSpec
      *
-     * @param \TencentAds\Model\TaskTypeWechatAdgroupDailyReportSpec $taskTypeWechatAdgroupDailyReportSpec taskTypeWechatAdgroupDailyReportSpec
+     * @param \TencentAds\Model\TaskTypeWechatAdgroupDailyReportSpec|mixed $taskTypeWechatAdgroupDailyReportSpec taskTypeWechatAdgroupDailyReportSpec
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets taskTypeWechatAdHourlyReportSpec
      *
-     * @param \TencentAds\Model\TaskTypeWechatAdHourlyReportSpec $taskTypeWechatAdHourlyReportSpec taskTypeWechatAdHourlyReportSpec
+     * @param \TencentAds\Model\TaskTypeWechatAdHourlyReportSpec|mixed $taskTypeWechatAdHourlyReportSpec taskTypeWechatAdHourlyReportSpec
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets taskTypeWechatAdDailyReportSpec
      *
-     * @param \TencentAds\Model\TaskTypeWechatAdDailyReportSpec $taskTypeWechatAdDailyReportSpec taskTypeWechatAdDailyReportSpec
+     * @param \TencentAds\Model\TaskTypeWechatAdDailyReportSpec|mixed $taskTypeWechatAdDailyReportSpec taskTypeWechatAdDailyReportSpec
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets taskTypeWechatAdvertisingDataSpec
      *
-     * @param \TencentAds\Model\TaskTypeWechatAdvertisingDataSpec $taskTypeWechatAdvertisingDataSpec taskTypeWechatAdvertisingDataSpec
+     * @param \TencentAds\Model\TaskTypeWechatAdvertisingDataSpec|mixed $taskTypeWechatAdvertisingDataSpec taskTypeWechatAdvertisingDataSpec
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets taskTypeWechatPoiHourlyReportSpec
      *
-     * @param \TencentAds\Model\TaskTypeWechatPoiHourlyReportSpec $taskTypeWechatPoiHourlyReportSpec taskTypeWechatPoiHourlyReportSpec
+     * @param \TencentAds\Model\TaskTypeWechatPoiHourlyReportSpec|mixed $taskTypeWechatPoiHourlyReportSpec taskTypeWechatPoiHourlyReportSpec
      *
      * @return $this
      */
@@ -512,7 +512,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets taskTypeCreateAndroidChannelPackageSpec
      *
-     * @param \TencentAds\Model\TaskTypeCreateAndroidChannelPackageSpec $taskTypeCreateAndroidChannelPackageSpec taskTypeCreateAndroidChannelPackageSpec
+     * @param \TencentAds\Model\TaskTypeCreateAndroidChannelPackageSpec|mixed $taskTypeCreateAndroidChannelPackageSpec taskTypeCreateAndroidChannelPackageSpec
      *
      * @return $this
      */
@@ -536,7 +536,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets taskTypeUpdateAndroidChannelPackageSpec
      *
-     * @param \TencentAds\Model\TaskTypeUpdateAndroidChannelPackageSpec $taskTypeUpdateAndroidChannelPackageSpec taskTypeUpdateAndroidChannelPackageSpec
+     * @param \TencentAds\Model\TaskTypeUpdateAndroidChannelPackageSpec|mixed $taskTypeUpdateAndroidChannelPackageSpec taskTypeUpdateAndroidChannelPackageSpec
      *
      * @return $this
      */
@@ -560,7 +560,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets taskTypeCreateAndroidUnionChannelPackageSpec
      *
-     * @param \TencentAds\Model\TaskTypeCreateAndroidUnionChannelPackageSpec $taskTypeCreateAndroidUnionChannelPackageSpec taskTypeCreateAndroidUnionChannelPackageSpec
+     * @param \TencentAds\Model\TaskTypeCreateAndroidUnionChannelPackageSpec|mixed $taskTypeCreateAndroidUnionChannelPackageSpec taskTypeCreateAndroidUnionChannelPackageSpec
      *
      * @return $this
      */
@@ -584,7 +584,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets taskTypeUpdateAndroidUnionChannelPackageSpec
      *
-     * @param \TencentAds\Model\TaskTypeUpdateAndroidUnionChannelPackageSpec $taskTypeUpdateAndroidUnionChannelPackageSpec taskTypeUpdateAndroidUnionChannelPackageSpec
+     * @param \TencentAds\Model\TaskTypeUpdateAndroidUnionChannelPackageSpec|mixed $taskTypeUpdateAndroidUnionChannelPackageSpec taskTypeUpdateAndroidUnionChannelPackageSpec
      *
      * @return $this
      */
@@ -608,7 +608,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
     /**
      * Sets taskTypeUnionPositionReportSpec
      *
-     * @param \TencentAds\Model\TaskTypeUnionPositionReportSpec $taskTypeUnionPositionReportSpec taskTypeUnionPositionReportSpec
+     * @param \TencentAds\Model\TaskTypeUnionPositionReportSpec|mixed $taskTypeUnionPositionReportSpec taskTypeUnionPositionReportSpec
      *
      * @return $this
      */

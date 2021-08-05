@@ -92,13 +92,13 @@ class VideomakerAutoadjustmentsApi
      *
      * 创建智能调整任务
      *
-     * @param  int $accountId accountId (required)
-     * @param  string $adjustmentType adjustmentType (required)
-     * @param  string $videoId videoId (optional)
-     * @param  \SplFileObject $videoFile videoFile (optional)
-     * @param  string $signature signature (optional)
-     * @param  \TencentAds\Model\SmartAdjustment $smartAdjustment smartAdjustment (optional)
-     * @param  \TencentAds\Model\ManualAdjustment $manualAdjustment manualAdjustment (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string|mixed $adjustmentType adjustmentType (required)
+     * @param  string|mixed $videoId videoId (optional)
+     * @param  \SplFileObject|mixed $videoFile videoFile (optional)
+     * @param  string|mixed $signature signature (optional)
+     * @param  \TencentAds\Model\SmartAdjustment|mixed $smartAdjustment smartAdjustment (optional)
+     * @param  \TencentAds\Model\ManualAdjustment|mixed $manualAdjustment manualAdjustment (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -115,13 +115,13 @@ class VideomakerAutoadjustmentsApi
      *
      * 创建智能调整任务
      *
-     * @param  int $accountId (required)
-     * @param  string $adjustmentType (required)
-     * @param  string $videoId (optional)
-     * @param  \SplFileObject $videoFile (optional)
-     * @param  string $signature (optional)
-     * @param  \TencentAds\Model\SmartAdjustment $smartAdjustment (optional)
-     * @param  \TencentAds\Model\ManualAdjustment $manualAdjustment (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $adjustmentType (required)
+     * @param  string|mixed $videoId (optional)
+     * @param  \SplFileObject|mixed $videoFile (optional)
+     * @param  string|mixed $signature (optional)
+     * @param  \TencentAds\Model\SmartAdjustment|mixed $smartAdjustment (optional)
+     * @param  \TencentAds\Model\ManualAdjustment|mixed $manualAdjustment (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -196,13 +196,13 @@ class VideomakerAutoadjustmentsApi
      *
      * 创建智能调整任务
      *
-     * @param  int $accountId (required)
-     * @param  string $adjustmentType (required)
-     * @param  string $videoId (optional)
-     * @param  \SplFileObject $videoFile (optional)
-     * @param  string $signature (optional)
-     * @param  \TencentAds\Model\SmartAdjustment $smartAdjustment (optional)
-     * @param  \TencentAds\Model\ManualAdjustment $manualAdjustment (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $adjustmentType (required)
+     * @param  string|mixed $videoId (optional)
+     * @param  \SplFileObject|mixed $videoFile (optional)
+     * @param  string|mixed $signature (optional)
+     * @param  \TencentAds\Model\SmartAdjustment|mixed $smartAdjustment (optional)
+     * @param  \TencentAds\Model\ManualAdjustment|mixed $manualAdjustment (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -222,13 +222,13 @@ class VideomakerAutoadjustmentsApi
      *
      * 创建智能调整任务
      *
-     * @param  int $accountId (required)
-     * @param  string $adjustmentType (required)
-     * @param  string $videoId (optional)
-     * @param  \SplFileObject $videoFile (optional)
-     * @param  string $signature (optional)
-     * @param  \TencentAds\Model\SmartAdjustment $smartAdjustment (optional)
-     * @param  \TencentAds\Model\ManualAdjustment $manualAdjustment (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $adjustmentType (required)
+     * @param  string|mixed $videoId (optional)
+     * @param  \SplFileObject|mixed $videoFile (optional)
+     * @param  string|mixed $signature (optional)
+     * @param  \TencentAds\Model\SmartAdjustment|mixed $smartAdjustment (optional)
+     * @param  \TencentAds\Model\ManualAdjustment|mixed $manualAdjustment (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -278,13 +278,13 @@ class VideomakerAutoadjustmentsApi
     /**
      * Create request for operation 'videomakerAutoadjustmentsAdd'
      *
-     * @param  int $accountId (required)
-     * @param  string $adjustmentType (required)
-     * @param  string $videoId (optional)
-     * @param  \SplFileObject $videoFile (optional)
-     * @param  string $signature (optional)
-     * @param  \TencentAds\Model\SmartAdjustment $smartAdjustment (optional)
-     * @param  \TencentAds\Model\ManualAdjustment $manualAdjustment (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $adjustmentType (required)
+     * @param  string|mixed $videoId (optional)
+     * @param  \SplFileObject|mixed $videoFile (optional)
+     * @param  string|mixed $signature (optional)
+     * @param  \TencentAds\Model\SmartAdjustment|mixed $smartAdjustment (optional)
+     * @param  \TencentAds\Model\ManualAdjustment|mixed $manualAdjustment (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -266,7 +266,7 @@ class OptBidStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adjustBidStrategyFlag
      *
-     * @param bool $adjustBidStrategyFlag adjustBidStrategyFlag
+     * @param bool|mixed $adjustBidStrategyFlag adjustBidStrategyFlag
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class OptBidStruct implements ModelInterface, ArrayAccess
     /**
      * Sets currentBidStrategy
      *
-     * @param string $currentBidStrategy currentBidStrategy
+     * @param string|mixed $currentBidStrategy currentBidStrategy
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class OptBidStruct implements ModelInterface, ArrayAccess
     /**
      * Sets optimizeBidStrategy
      *
-     * @param string $optimizeBidStrategy optimizeBidStrategy
+     * @param string|mixed $optimizeBidStrategy optimizeBidStrategy
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class OptBidStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adjustBidAmountFlag
      *
-     * @param bool $adjustBidAmountFlag adjustBidAmountFlag
+     * @param bool|mixed $adjustBidAmountFlag adjustBidAmountFlag
      *
      * @return $this
      */
@@ -362,7 +362,7 @@ class OptBidStruct implements ModelInterface, ArrayAccess
     /**
      * Sets currentBidAmount
      *
-     * @param int $currentBidAmount currentBidAmount
+     * @param int|mixed $currentBidAmount currentBidAmount
      *
      * @return $this
      */
@@ -386,7 +386,7 @@ class OptBidStruct implements ModelInterface, ArrayAccess
     /**
      * Sets optimizeBidAmount
      *
-     * @param int $optimizeBidAmount optimizeBidAmount
+     * @param int|mixed $optimizeBidAmount optimizeBidAmount
      *
      * @return $this
      */
@@ -410,7 +410,7 @@ class OptBidStruct implements ModelInterface, ArrayAccess
     /**
      * Sets adjustDeepBidAmountFlag
      *
-     * @param bool $adjustDeepBidAmountFlag adjustDeepBidAmountFlag
+     * @param bool|mixed $adjustDeepBidAmountFlag adjustDeepBidAmountFlag
      *
      * @return $this
      */
@@ -434,7 +434,7 @@ class OptBidStruct implements ModelInterface, ArrayAccess
     /**
      * Sets currentDeepBidAmount
      *
-     * @param int $currentDeepBidAmount currentDeepBidAmount
+     * @param int|mixed $currentDeepBidAmount currentDeepBidAmount
      *
      * @return $this
      */
@@ -458,7 +458,7 @@ class OptBidStruct implements ModelInterface, ArrayAccess
     /**
      * Sets optimizeDeepBidAmount
      *
-     * @param int $optimizeDeepBidAmount optimizeDeepBidAmount
+     * @param int|mixed $optimizeDeepBidAmount optimizeDeepBidAmount
      *
      * @return $this
      */

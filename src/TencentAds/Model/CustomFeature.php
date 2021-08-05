@@ -266,7 +266,7 @@ class CustomFeature implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class CustomFeature implements ModelInterface, ArrayAccess
     /**
      * Sets featureId
      *
-     * @param int $featureId featureId
+     * @param int|mixed $featureId featureId
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class CustomFeature implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param string $name name
+     * @param string|mixed $name name
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class CustomFeature implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -362,7 +362,7 @@ class CustomFeature implements ModelInterface, ArrayAccess
     /**
      * Sets featureClassId
      *
-     * @param int $featureClassId featureClassId
+     * @param int|mixed $featureClassId featureClassId
      *
      * @return $this
      */
@@ -386,7 +386,7 @@ class CustomFeature implements ModelInterface, ArrayAccess
     /**
      * Sets featureSpec
      *
-     * @param \TencentAds\Model\FeatureSpec $featureSpec featureSpec
+     * @param \TencentAds\Model\FeatureSpec|mixed $featureSpec featureSpec
      *
      * @return $this
      */
@@ -410,7 +410,7 @@ class CustomFeature implements ModelInterface, ArrayAccess
     /**
      * Sets isSupportedTimeWindow
      *
-     * @param bool $isSupportedTimeWindow isSupportedTimeWindow
+     * @param bool|mixed $isSupportedTimeWindow isSupportedTimeWindow
      *
      * @return $this
      */
@@ -434,7 +434,7 @@ class CustomFeature implements ModelInterface, ArrayAccess
     /**
      * Sets timeWindow
      *
-     * @param int[] $timeWindow timeWindow
+     * @param int[]|mixed $timeWindow timeWindow
      *
      * @return $this
      */
@@ -458,7 +458,7 @@ class CustomFeature implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param string $createdTime createdTime
+     * @param string|mixed $createdTime createdTime
      *
      * @return $this
      */

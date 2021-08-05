@@ -92,7 +92,7 @@ class UserActionSetsApi
      *
      * 创建用户行为数据源
      *
-     * @param  \TencentAds\Model\UserActionSetsAddRequest $data data (required)
+     * @param  \TencentAds\Model\UserActionSetsAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class UserActionSetsApi
      *
      * 创建用户行为数据源
      *
-     * @param  \TencentAds\Model\UserActionSetsAddRequest $data (required)
+     * @param  \TencentAds\Model\UserActionSetsAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class UserActionSetsApi
      *
      * 创建用户行为数据源
      *
-     * @param  \TencentAds\Model\UserActionSetsAddRequest $data (required)
+     * @param  \TencentAds\Model\UserActionSetsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class UserActionSetsApi
      *
      * 创建用户行为数据源
      *
-     * @param  \TencentAds\Model\UserActionSetsAddRequest $data (required)
+     * @param  \TencentAds\Model\UserActionSetsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class UserActionSetsApi
     /**
      * Create request for operation 'userActionSetsAdd'
      *
-     * @param  \TencentAds\Model\UserActionSetsAddRequest $data (required)
+     * @param  \TencentAds\Model\UserActionSetsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,14 +374,14 @@ class UserActionSetsApi
      *
      * 获取用户行为数据源
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $userActionSetId userActionSetId (optional)
-     * @param  string[] $type type (optional)
-     * @param  int $mobileAppId mobileAppId (optional)
-     * @param  string $wechatAppId wechatAppId (optional)
-     * @param  string $name name (optional)
-     * @param  bool $includePermission includePermission (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $userActionSetId userActionSetId (optional)
+     * @param  string[]|mixed $type type (optional)
+     * @param  int|mixed $mobileAppId mobileAppId (optional)
+     * @param  string|mixed $wechatAppId wechatAppId (optional)
+     * @param  string|mixed $name name (optional)
+     * @param  bool|mixed $includePermission includePermission (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -398,14 +398,14 @@ class UserActionSetsApi
      *
      * 获取用户行为数据源
      *
-     * @param  int $accountId (required)
-     * @param  int $userActionSetId (optional)
-     * @param  string[] $type (optional)
-     * @param  int $mobileAppId (optional)
-     * @param  string $wechatAppId (optional)
-     * @param  string $name (optional)
-     * @param  bool $includePermission (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $userActionSetId (optional)
+     * @param  string[]|mixed $type (optional)
+     * @param  int|mixed $mobileAppId (optional)
+     * @param  string|mixed $wechatAppId (optional)
+     * @param  string|mixed $name (optional)
+     * @param  bool|mixed $includePermission (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -480,14 +480,14 @@ class UserActionSetsApi
      *
      * 获取用户行为数据源
      *
-     * @param  int $accountId (required)
-     * @param  int $userActionSetId (optional)
-     * @param  string[] $type (optional)
-     * @param  int $mobileAppId (optional)
-     * @param  string $wechatAppId (optional)
-     * @param  string $name (optional)
-     * @param  bool $includePermission (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $userActionSetId (optional)
+     * @param  string[]|mixed $type (optional)
+     * @param  int|mixed $mobileAppId (optional)
+     * @param  string|mixed $wechatAppId (optional)
+     * @param  string|mixed $name (optional)
+     * @param  bool|mixed $includePermission (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -507,14 +507,14 @@ class UserActionSetsApi
      *
      * 获取用户行为数据源
      *
-     * @param  int $accountId (required)
-     * @param  int $userActionSetId (optional)
-     * @param  string[] $type (optional)
-     * @param  int $mobileAppId (optional)
-     * @param  string $wechatAppId (optional)
-     * @param  string $name (optional)
-     * @param  bool $includePermission (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $userActionSetId (optional)
+     * @param  string[]|mixed $type (optional)
+     * @param  int|mixed $mobileAppId (optional)
+     * @param  string|mixed $wechatAppId (optional)
+     * @param  string|mixed $name (optional)
+     * @param  bool|mixed $includePermission (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -564,14 +564,14 @@ class UserActionSetsApi
     /**
      * Create request for operation 'userActionSetsGet'
      *
-     * @param  int $accountId (required)
-     * @param  int $userActionSetId (optional)
-     * @param  string[] $type (optional)
-     * @param  int $mobileAppId (optional)
-     * @param  string $wechatAppId (optional)
-     * @param  string $name (optional)
-     * @param  bool $includePermission (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $userActionSetId (optional)
+     * @param  string[]|mixed $type (optional)
+     * @param  int|mixed $mobileAppId (optional)
+     * @param  string|mixed $wechatAppId (optional)
+     * @param  string|mixed $name (optional)
+     * @param  bool|mixed $includePermission (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

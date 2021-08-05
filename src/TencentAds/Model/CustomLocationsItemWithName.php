@@ -230,7 +230,7 @@ class CustomLocationsItemWithName implements ModelInterface, ArrayAccess
     /**
      * Sets longitude
      *
-     * @param double $longitude longitude
+     * @param double|mixed $longitude longitude
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class CustomLocationsItemWithName implements ModelInterface, ArrayAccess
     /**
      * Sets latitude
      *
-     * @param double $latitude latitude
+     * @param double|mixed $latitude latitude
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class CustomLocationsItemWithName implements ModelInterface, ArrayAccess
     /**
      * Sets radius
      *
-     * @param int $radius radius
+     * @param int|mixed $radius radius
      *
      * @return $this
      */

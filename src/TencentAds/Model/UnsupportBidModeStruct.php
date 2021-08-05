@@ -224,7 +224,7 @@ class UnsupportBidModeStruct implements ModelInterface, ArrayAccess
     /**
      * Sets siteSet
      *
-     * @param string[] $siteSet siteSet
+     * @param string[]|mixed $siteSet siteSet
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class UnsupportBidModeStruct implements ModelInterface, ArrayAccess
     /**
      * Sets bidModeList
      *
-     * @param string[] $bidModeList bidModeList
+     * @param string[]|mixed $bidModeList bidModeList
      *
      * @return $this
      */

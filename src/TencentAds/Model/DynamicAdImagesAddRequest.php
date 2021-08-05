@@ -253,7 +253,7 @@ class DynamicAdImagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class DynamicAdImagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets productCatalogId
      *
-     * @param int $productCatalogId productCatalogId
+     * @param int|mixed $productCatalogId productCatalogId
      *
      * @return $this
      */
@@ -301,7 +301,7 @@ class DynamicAdImagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets productMode
      *
-     * @param \TencentAds\Model\ProductMode $productMode productMode
+     * @param \TencentAds\Model\ProductMode|mixed $productMode productMode
      *
      * @return $this
      */
@@ -325,7 +325,7 @@ class DynamicAdImagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets productSource
      *
-     * @param string $productSource productSource
+     * @param string|mixed $productSource productSource
      *
      * @return $this
      */
@@ -349,7 +349,7 @@ class DynamicAdImagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets dynamicAdTemplateSize
      *
-     * @param \TencentAds\Model\DynamicAdTemplateSize $dynamicAdTemplateSize dynamicAdTemplateSize
+     * @param \TencentAds\Model\DynamicAdTemplateSize|mixed $dynamicAdTemplateSize dynamicAdTemplateSize
      *
      * @return $this
      */
@@ -373,7 +373,7 @@ class DynamicAdImagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets dynamicAdTemplateId
      *
-     * @param int $dynamicAdTemplateId dynamicAdTemplateId
+     * @param int|mixed $dynamicAdTemplateId dynamicAdTemplateId
      *
      * @return $this
      */
@@ -397,7 +397,7 @@ class DynamicAdImagesAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets imageMattingEnabled
      *
-     * @param bool $imageMattingEnabled imageMattingEnabled
+     * @param bool|mixed $imageMattingEnabled imageMattingEnabled
      *
      * @return $this
      */

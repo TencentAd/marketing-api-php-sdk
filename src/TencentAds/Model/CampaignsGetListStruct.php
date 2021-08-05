@@ -290,7 +290,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets campaignId
      *
-     * @param int $campaignId campaignId
+     * @param int|mixed $campaignId campaignId
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets campaignName
      *
-     * @param string $campaignName campaignName
+     * @param string|mixed $campaignName campaignName
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets configuredStatus
      *
-     * @param \TencentAds\Model\AdStatus $configuredStatus configuredStatus
+     * @param \TencentAds\Model\AdStatus|mixed $configuredStatus configuredStatus
      *
      * @return $this
      */
@@ -362,7 +362,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets campaignType
      *
-     * @param \TencentAds\Model\CampaignType $campaignType campaignType
+     * @param \TencentAds\Model\CampaignType|mixed $campaignType campaignType
      *
      * @return $this
      */
@@ -386,7 +386,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectType
      *
-     * @param \TencentAds\Model\PromotedObjectType $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\PromotedObjectType|mixed $promotedObjectType promotedObjectType
      *
      * @return $this
      */
@@ -410,7 +410,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets dailyBudget
      *
-     * @param int $dailyBudget dailyBudget
+     * @param int|mixed $dailyBudget dailyBudget
      *
      * @return $this
      */
@@ -434,7 +434,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets totalBudget
      *
-     * @param int $totalBudget totalBudget
+     * @param int|mixed $totalBudget totalBudget
      *
      * @return $this
      */
@@ -458,7 +458,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets budgetReachDate
      *
-     * @param int $budgetReachDate budgetReachDate
+     * @param int|mixed $budgetReachDate budgetReachDate
      *
      * @return $this
      */
@@ -482,7 +482,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -506,7 +506,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedTime
      *
-     * @param int $lastModifiedTime lastModifiedTime
+     * @param int|mixed $lastModifiedTime lastModifiedTime
      *
      * @return $this
      */
@@ -530,7 +530,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets speedMode
      *
-     * @param \TencentAds\Model\SpeedMode $speedMode speedMode
+     * @param \TencentAds\Model\SpeedMode|mixed $speedMode speedMode
      *
      * @return $this
      */
@@ -554,7 +554,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets isDeleted
      *
-     * @param bool $isDeleted isDeleted
+     * @param bool|mixed $isDeleted isDeleted
      *
      * @return $this
      */
@@ -578,7 +578,7 @@ class CampaignsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets isAutoReplenish
      *
-     * @param int $isAutoReplenish isAutoReplenish
+     * @param int|mixed $isAutoReplenish isAutoReplenish
      *
      * @return $this
      */

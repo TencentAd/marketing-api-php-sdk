@@ -224,7 +224,7 @@ class ShortVideoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets shortVideo1
      *
-     * @param int $shortVideo1 shortVideo1
+     * @param int|mixed $shortVideo1 shortVideo1
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class ShortVideoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets shortVideo2
      *
-     * @param int $shortVideo2 shortVideo2
+     * @param int|mixed $shortVideo2 shortVideo2
      *
      * @return $this
      */

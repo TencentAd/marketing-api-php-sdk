@@ -224,7 +224,7 @@ class DeepBehaviorOptimizationGoalPermissionStruct implements ModelInterface, Ar
     /**
      * Sets optimizationGoal
      *
-     * @param \TencentAds\Model\OptimizationGoal $optimizationGoal optimizationGoal
+     * @param \TencentAds\Model\OptimizationGoal|mixed $optimizationGoal optimizationGoal
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class DeepBehaviorOptimizationGoalPermissionStruct implements ModelInterface, Ar
     /**
      * Sets deepBehaviorOptimizationGoalList
      *
-     * @param string[] $deepBehaviorOptimizationGoalList deepBehaviorOptimizationGoalList
+     * @param string[]|mixed $deepBehaviorOptimizationGoalList deepBehaviorOptimizationGoalList
      *
      * @return $this
      */

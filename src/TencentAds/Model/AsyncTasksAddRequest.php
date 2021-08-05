@@ -235,7 +235,7 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -259,7 +259,7 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets taskName
      *
-     * @param string $taskName taskName
+     * @param string|mixed $taskName taskName
      *
      * @return $this
      */
@@ -283,7 +283,7 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets taskType
      *
-     * @param \TencentAds\Model\TaskType $taskType taskType
+     * @param \TencentAds\Model\TaskType|mixed $taskType taskType
      *
      * @return $this
      */
@@ -307,7 +307,7 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets taskSpec
      *
-     * @param \TencentAds\Model\TaskSpec $taskSpec taskSpec
+     * @param \TencentAds\Model\TaskSpec|mixed $taskSpec taskSpec
      *
      * @return $this
      */

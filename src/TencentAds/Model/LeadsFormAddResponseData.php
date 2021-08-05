@@ -217,7 +217,7 @@ class LeadsFormAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets componentId
      *
-     * @param string $componentId componentId
+     * @param string|mixed $componentId componentId
      *
      * @return $this
      */

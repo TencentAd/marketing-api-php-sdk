@@ -223,7 +223,7 @@ class LocalStoresAddressParsingResultGetRequest implements ModelInterface, Array
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class LocalStoresAddressParsingResultGetRequest implements ModelInterface, Array
     /**
      * Sets storeAddressList
      *
-     * @param string[] $storeAddressList storeAddressList
+     * @param string[]|mixed $storeAddressList storeAddressList
      *
      * @return $this
      */

@@ -248,7 +248,7 @@ class TargetingWidenessRateFunnelStruct implements ModelInterface, ArrayAccess
     /**
      * Sets value
      *
-     * @param double $value value
+     * @param double|mixed $value value
      *
      * @return $this
      */
@@ -272,7 +272,7 @@ class TargetingWidenessRateFunnelStruct implements ModelInterface, ArrayAccess
     /**
      * Sets score
      *
-     * @param int $score score
+     * @param int|mixed $score score
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class TargetingWidenessRateFunnelStruct implements ModelInterface, ArrayAccess
     /**
      * Sets scoreDesc
      *
-     * @param string $scoreDesc scoreDesc
+     * @param string|mixed $scoreDesc scoreDesc
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class TargetingWidenessRateFunnelStruct implements ModelInterface, ArrayAccess
     /**
      * Sets rankCategory
      *
-     * @param int $rankCategory rankCategory
+     * @param int|mixed $rankCategory rankCategory
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class TargetingWidenessRateFunnelStruct implements ModelInterface, ArrayAccess
     /**
      * Sets rankSecondCategory
      *
-     * @param int $rankSecondCategory rankSecondCategory
+     * @param int|mixed $rankSecondCategory rankSecondCategory
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class TargetingWidenessRateFunnelStruct implements ModelInterface, ArrayAccess
     /**
      * Sets rankOverall
      *
-     * @param int $rankOverall rankOverall
+     * @param int|mixed $rankOverall rankOverall
      *
      * @return $this
      */

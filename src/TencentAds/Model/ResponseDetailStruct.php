@@ -266,7 +266,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets funnel
      *
-     * @param \TencentAds\Model\DetailFunnelStruct $funnel funnel
+     * @param \TencentAds\Model\DetailFunnelStruct|mixed $funnel funnel
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets targetDetail
      *
-     * @param \TencentAds\Model\DetailTargetDetailStruct $targetDetail targetDetail
+     * @param \TencentAds\Model\DetailTargetDetailStruct|mixed $targetDetail targetDetail
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets competeDetail
      *
-     * @param \TencentAds\Model\DetailCompeteDetailStruct $competeDetail competeDetail
+     * @param \TencentAds\Model\DetailCompeteDetailStruct|mixed $competeDetail competeDetail
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets exposureDetail
      *
-     * @param \TencentAds\Model\ExposureDetailStruct $exposureDetail exposureDetail
+     * @param \TencentAds\Model\ExposureDetailStruct|mixed $exposureDetail exposureDetail
      *
      * @return $this
      */
@@ -362,7 +362,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets clickDetail
      *
-     * @param \TencentAds\Model\ClickDetailStruct $clickDetail clickDetail
+     * @param \TencentAds\Model\ClickDetailStruct|mixed $clickDetail clickDetail
      *
      * @return $this
      */
@@ -386,7 +386,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets conversionDetail
      *
-     * @param \TencentAds\Model\ConversionDetailStruct $conversionDetail conversionDetail
+     * @param \TencentAds\Model\ConversionDetailStruct|mixed $conversionDetail conversionDetail
      *
      * @return $this
      */
@@ -410,7 +410,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets cpaDetail
      *
-     * @param \TencentAds\Model\DetailCpaDetailStruct $cpaDetail cpaDetail
+     * @param \TencentAds\Model\DetailCpaDetailStruct|mixed $cpaDetail cpaDetail
      *
      * @return $this
      */
@@ -434,7 +434,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets creativeDetail
      *
-     * @param \TencentAds\Model\DetailCreativeDetailStruct $creativeDetail creativeDetail
+     * @param \TencentAds\Model\DetailCreativeDetailStruct|mixed $creativeDetail creativeDetail
      *
      * @return $this
      */
@@ -458,7 +458,7 @@ class ResponseDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets optimization
      *
-     * @param \TencentAds\Model\OptimizeContentMainStruct $optimization optimization
+     * @param \TencentAds\Model\OptimizeContentMainStruct|mixed $optimization optimization
      *
      * @return $this
      */

@@ -92,10 +92,10 @@ class WechatQualificationsApi
      *
      * 添加附近推商家资质
      *
-     * @param  int $accountId accountId (required)
-     * @param  string $wechatQualificationType wechatQualificationType (required)
-     * @param  \SplFileObject $wechatQualificationFile wechatQualificationFile (required)
-     * @param  string $wechatQualificationFileSignature wechatQualificationFileSignature (required)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string|mixed $wechatQualificationType wechatQualificationType (required)
+     * @param  \SplFileObject|mixed $wechatQualificationFile wechatQualificationFile (required)
+     * @param  string|mixed $wechatQualificationFileSignature wechatQualificationFileSignature (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -112,10 +112,10 @@ class WechatQualificationsApi
      *
      * 添加附近推商家资质
      *
-     * @param  int $accountId (required)
-     * @param  string $wechatQualificationType (required)
-     * @param  \SplFileObject $wechatQualificationFile (required)
-     * @param  string $wechatQualificationFileSignature (required)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $wechatQualificationType (required)
+     * @param  \SplFileObject|mixed $wechatQualificationFile (required)
+     * @param  string|mixed $wechatQualificationFileSignature (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -190,10 +190,10 @@ class WechatQualificationsApi
      *
      * 添加附近推商家资质
      *
-     * @param  int $accountId (required)
-     * @param  string $wechatQualificationType (required)
-     * @param  \SplFileObject $wechatQualificationFile (required)
-     * @param  string $wechatQualificationFileSignature (required)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $wechatQualificationType (required)
+     * @param  \SplFileObject|mixed $wechatQualificationFile (required)
+     * @param  string|mixed $wechatQualificationFileSignature (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -213,10 +213,10 @@ class WechatQualificationsApi
      *
      * 添加附近推商家资质
      *
-     * @param  int $accountId (required)
-     * @param  string $wechatQualificationType (required)
-     * @param  \SplFileObject $wechatQualificationFile (required)
-     * @param  string $wechatQualificationFileSignature (required)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $wechatQualificationType (required)
+     * @param  \SplFileObject|mixed $wechatQualificationFile (required)
+     * @param  string|mixed $wechatQualificationFileSignature (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -266,10 +266,10 @@ class WechatQualificationsApi
     /**
      * Create request for operation 'wechatQualificationsAdd'
      *
-     * @param  int $accountId (required)
-     * @param  string $wechatQualificationType (required)
-     * @param  \SplFileObject $wechatQualificationFile (required)
-     * @param  string $wechatQualificationFileSignature (required)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $wechatQualificationType (required)
+     * @param  \SplFileObject|mixed $wechatQualificationFile (required)
+     * @param  string|mixed $wechatQualificationFileSignature (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -421,7 +421,7 @@ class WechatQualificationsApi
      *
      * 删除附近推商家资质
      *
-     * @param  \TencentAds\Model\WechatQualificationsDeleteRequest $data data (required)
+     * @param  \TencentAds\Model\WechatQualificationsDeleteRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -438,7 +438,7 @@ class WechatQualificationsApi
      *
      * 删除附近推商家资质
      *
-     * @param  \TencentAds\Model\WechatQualificationsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\WechatQualificationsDeleteRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -513,7 +513,7 @@ class WechatQualificationsApi
      *
      * 删除附近推商家资质
      *
-     * @param  \TencentAds\Model\WechatQualificationsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\WechatQualificationsDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -533,7 +533,7 @@ class WechatQualificationsApi
      *
      * 删除附近推商家资质
      *
-     * @param  \TencentAds\Model\WechatQualificationsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\WechatQualificationsDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -583,7 +583,7 @@ class WechatQualificationsApi
     /**
      * Create request for operation 'wechatQualificationsDelete'
      *
-     * @param  \TencentAds\Model\WechatQualificationsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\WechatQualificationsDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -703,8 +703,8 @@ class WechatQualificationsApi
      *
      * 查询附近推商家资质信息
      *
-     * @param  int $accountId accountId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -721,8 +721,8 @@ class WechatQualificationsApi
      *
      * 查询附近推商家资质信息
      *
-     * @param  int $accountId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -797,8 +797,8 @@ class WechatQualificationsApi
      *
      * 查询附近推商家资质信息
      *
-     * @param  int $accountId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -818,8 +818,8 @@ class WechatQualificationsApi
      *
      * 查询附近推商家资质信息
      *
-     * @param  int $accountId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -869,8 +869,8 @@ class WechatQualificationsApi
     /**
      * Create request for operation 'wechatQualificationsGet'
      *
-     * @param  int $accountId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -236,7 +236,7 @@ class UserPropertySet implements ModelInterface, ArrayAccess
     /**
      * Sets userPropertySetId
      *
-     * @param int $userPropertySetId userPropertySetId
+     * @param int|mixed $userPropertySetId userPropertySetId
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class UserPropertySet implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param string $name name
+     * @param string|mixed $name name
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class UserPropertySet implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class UserPropertySet implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param string $createdTime createdTime
+     * @param string|mixed $createdTime createdTime
      *
      * @return $this
      */

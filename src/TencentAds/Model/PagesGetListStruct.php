@@ -284,7 +284,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageId
      *
-     * @param int $pageId pageId
+     * @param int|mixed $pageId pageId
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageName
      *
-     * @param string $pageName pageName
+     * @param string|mixed $pageName pageName
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets previewUrl
      *
-     * @param string $previewUrl previewUrl
+     * @param string|mixed $previewUrl previewUrl
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int $createdTime createdTime
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedTime
      *
-     * @param int $lastModifiedTime lastModifiedTime
+     * @param int|mixed $lastModifiedTime lastModifiedTime
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets promotedObjectId
      *
-     * @param string $promotedObjectId promotedObjectId
+     * @param string|mixed $promotedObjectId promotedObjectId
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productCatalogId
      *
-     * @param int $productCatalogId productCatalogId
+     * @param int|mixed $productCatalogId productCatalogId
      *
      * @return $this
      */
@@ -452,7 +452,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageType
      *
-     * @param \TencentAds\Model\DestinationTypeRead $pageType pageType
+     * @param \TencentAds\Model\DestinationTypeRead|mixed $pageType pageType
      *
      * @return $this
      */
@@ -476,7 +476,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets playableType
      *
-     * @param \TencentAds\Model\PlayableType $playableType playableType
+     * @param \TencentAds\Model\PlayableType|mixed $playableType playableType
      *
      * @return $this
      */
@@ -500,7 +500,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageStatus
      *
-     * @param \TencentAds\Model\PageStatus $pageStatus pageStatus
+     * @param \TencentAds\Model\PageStatus|mixed $pageStatus pageStatus
      *
      * @return $this
      */
@@ -524,7 +524,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets fengyeSubType
      *
-     * @param \TencentAds\Model\LandingPageFengyeSubType $fengyeSubType fengyeSubType
+     * @param \TencentAds\Model\LandingPageFengyeSubType|mixed $fengyeSubType fengyeSubType
      *
      * @return $this
      */
@@ -548,7 +548,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets ownerUid
      *
-     * @param int $ownerUid ownerUid
+     * @param int|mixed $ownerUid ownerUid
      *
      * @return $this
      */

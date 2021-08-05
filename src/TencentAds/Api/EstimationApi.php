@@ -92,7 +92,7 @@ class EstimationApi
      *
      * 预估覆盖人数
      *
-     * @param  \TencentAds\Model\EstimationGetRequest $data data (required)
+     * @param  \TencentAds\Model\EstimationGetRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class EstimationApi
      *
      * 预估覆盖人数
      *
-     * @param  \TencentAds\Model\EstimationGetRequest $data (required)
+     * @param  \TencentAds\Model\EstimationGetRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class EstimationApi
      *
      * 预估覆盖人数
      *
-     * @param  \TencentAds\Model\EstimationGetRequest $data (required)
+     * @param  \TencentAds\Model\EstimationGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class EstimationApi
      *
      * 预估覆盖人数
      *
-     * @param  \TencentAds\Model\EstimationGetRequest $data (required)
+     * @param  \TencentAds\Model\EstimationGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class EstimationApi
     /**
      * Create request for operation 'estimationGet'
      *
-     * @param  \TencentAds\Model\EstimationGetRequest $data (required)
+     * @param  \TencentAds\Model\EstimationGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

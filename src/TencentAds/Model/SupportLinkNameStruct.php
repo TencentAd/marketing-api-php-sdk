@@ -224,7 +224,7 @@ class SupportLinkNameStruct implements ModelInterface, ArrayAccess
     /**
      * Sets linkNameType
      *
-     * @param string $linkNameType linkNameType
+     * @param string|mixed $linkNameType linkNameType
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class SupportLinkNameStruct implements ModelInterface, ArrayAccess
     /**
      * Sets description
      *
-     * @param string $description description
+     * @param string|mixed $description description
      *
      * @return $this
      */

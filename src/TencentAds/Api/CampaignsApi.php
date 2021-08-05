@@ -92,7 +92,7 @@ class CampaignsApi
      *
      * 创建推广计划
      *
-     * @param  \TencentAds\Model\CampaignsAddRequest $data data (required)
+     * @param  \TencentAds\Model\CampaignsAddRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -109,7 +109,7 @@ class CampaignsApi
      *
      * 创建推广计划
      *
-     * @param  \TencentAds\Model\CampaignsAddRequest $data (required)
+     * @param  \TencentAds\Model\CampaignsAddRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class CampaignsApi
      *
      * 创建推广计划
      *
-     * @param  \TencentAds\Model\CampaignsAddRequest $data (required)
+     * @param  \TencentAds\Model\CampaignsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,7 +204,7 @@ class CampaignsApi
      *
      * 创建推广计划
      *
-     * @param  \TencentAds\Model\CampaignsAddRequest $data (required)
+     * @param  \TencentAds\Model\CampaignsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -254,7 +254,7 @@ class CampaignsApi
     /**
      * Create request for operation 'campaignsAdd'
      *
-     * @param  \TencentAds\Model\CampaignsAddRequest $data (required)
+     * @param  \TencentAds\Model\CampaignsAddRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -374,7 +374,7 @@ class CampaignsApi
      *
      * 删除推广计划
      *
-     * @param  \TencentAds\Model\CampaignsDeleteRequest $data data (required)
+     * @param  \TencentAds\Model\CampaignsDeleteRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -391,7 +391,7 @@ class CampaignsApi
      *
      * 删除推广计划
      *
-     * @param  \TencentAds\Model\CampaignsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\CampaignsDeleteRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -466,7 +466,7 @@ class CampaignsApi
      *
      * 删除推广计划
      *
-     * @param  \TencentAds\Model\CampaignsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\CampaignsDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -486,7 +486,7 @@ class CampaignsApi
      *
      * 删除推广计划
      *
-     * @param  \TencentAds\Model\CampaignsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\CampaignsDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -536,7 +536,7 @@ class CampaignsApi
     /**
      * Create request for operation 'campaignsDelete'
      *
-     * @param  \TencentAds\Model\CampaignsDeleteRequest $data (required)
+     * @param  \TencentAds\Model\CampaignsDeleteRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -656,12 +656,12 @@ class CampaignsApi
      *
      * 获取推广计划
      *
-     * @param  int $accountId accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering filtering (optional)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  bool $isDeleted isDeleted (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  bool|mixed $isDeleted isDeleted (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -678,12 +678,12 @@ class CampaignsApi
      *
      * 获取推广计划
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  bool $isDeleted (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  bool|mixed $isDeleted (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -758,12 +758,12 @@ class CampaignsApi
      *
      * 获取推广计划
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  bool $isDeleted (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  bool|mixed $isDeleted (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -783,12 +783,12 @@ class CampaignsApi
      *
      * 获取推广计划
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  bool $isDeleted (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  bool|mixed $isDeleted (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -838,12 +838,12 @@ class CampaignsApi
     /**
      * Create request for operation 'campaignsGet'
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\FilteringStruct[] $filtering (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  bool $isDeleted (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  bool|mixed $isDeleted (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -990,7 +990,7 @@ class CampaignsApi
      *
      * 更新推广计划
      *
-     * @param  \TencentAds\Model\CampaignsUpdateRequest $data data (required)
+     * @param  \TencentAds\Model\CampaignsUpdateRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1007,7 +1007,7 @@ class CampaignsApi
      *
      * 更新推广计划
      *
-     * @param  \TencentAds\Model\CampaignsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\CampaignsUpdateRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1082,7 +1082,7 @@ class CampaignsApi
      *
      * 更新推广计划
      *
-     * @param  \TencentAds\Model\CampaignsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\CampaignsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1102,7 +1102,7 @@ class CampaignsApi
      *
      * 更新推广计划
      *
-     * @param  \TencentAds\Model\CampaignsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\CampaignsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1152,7 +1152,7 @@ class CampaignsApi
     /**
      * Create request for operation 'campaignsUpdate'
      *
-     * @param  \TencentAds\Model\CampaignsUpdateRequest $data (required)
+     * @param  \TencentAds\Model\CampaignsUpdateRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1272,7 +1272,7 @@ class CampaignsApi
      *
      * 更新推广计划状态
      *
-     * @param  \TencentAds\Model\CampaignsUpdateConfiguredStatusRequest $data data (required)
+     * @param  \TencentAds\Model\CampaignsUpdateConfiguredStatusRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1289,7 +1289,7 @@ class CampaignsApi
      *
      * 更新推广计划状态
      *
-     * @param  \TencentAds\Model\CampaignsUpdateConfiguredStatusRequest $data (required)
+     * @param  \TencentAds\Model\CampaignsUpdateConfiguredStatusRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1364,7 +1364,7 @@ class CampaignsApi
      *
      * 更新推广计划状态
      *
-     * @param  \TencentAds\Model\CampaignsUpdateConfiguredStatusRequest $data (required)
+     * @param  \TencentAds\Model\CampaignsUpdateConfiguredStatusRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1384,7 +1384,7 @@ class CampaignsApi
      *
      * 更新推广计划状态
      *
-     * @param  \TencentAds\Model\CampaignsUpdateConfiguredStatusRequest $data (required)
+     * @param  \TencentAds\Model\CampaignsUpdateConfiguredStatusRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1434,7 +1434,7 @@ class CampaignsApi
     /**
      * Create request for operation 'campaignsUpdateConfiguredStatus'
      *
-     * @param  \TencentAds\Model\CampaignsUpdateConfiguredStatusRequest $data (required)
+     * @param  \TencentAds\Model\CampaignsUpdateConfiguredStatusRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1554,7 +1554,7 @@ class CampaignsApi
      *
      * 更新推广计划日限额信息
      *
-     * @param  \TencentAds\Model\CampaignsUpdateDailyBudgetRequest $data data (required)
+     * @param  \TencentAds\Model\CampaignsUpdateDailyBudgetRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1571,7 +1571,7 @@ class CampaignsApi
      *
      * 更新推广计划日限额信息
      *
-     * @param  \TencentAds\Model\CampaignsUpdateDailyBudgetRequest $data (required)
+     * @param  \TencentAds\Model\CampaignsUpdateDailyBudgetRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1646,7 +1646,7 @@ class CampaignsApi
      *
      * 更新推广计划日限额信息
      *
-     * @param  \TencentAds\Model\CampaignsUpdateDailyBudgetRequest $data (required)
+     * @param  \TencentAds\Model\CampaignsUpdateDailyBudgetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1666,7 +1666,7 @@ class CampaignsApi
      *
      * 更新推广计划日限额信息
      *
-     * @param  \TencentAds\Model\CampaignsUpdateDailyBudgetRequest $data (required)
+     * @param  \TencentAds\Model\CampaignsUpdateDailyBudgetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1716,7 +1716,7 @@ class CampaignsApi
     /**
      * Create request for operation 'campaignsUpdateDailyBudget'
      *
-     * @param  \TencentAds\Model\CampaignsUpdateDailyBudgetRequest $data (required)
+     * @param  \TencentAds\Model\CampaignsUpdateDailyBudgetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

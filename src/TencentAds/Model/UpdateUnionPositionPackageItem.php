@@ -224,7 +224,7 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
     /**
      * Sets adgroupId
      *
-     * @param int $adgroupId adgroupId
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
     /**
      * Sets unionPositionPackage
      *
-     * @param int[] $unionPositionPackage unionPositionPackage
+     * @param int[]|mixed $unionPositionPackage unionPositionPackage
      *
      * @return $this
      */

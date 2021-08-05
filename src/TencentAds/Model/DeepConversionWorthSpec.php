@@ -224,7 +224,7 @@ class DeepConversionWorthSpec implements ModelInterface, ArrayAccess
     /**
      * Sets goal
      *
-     * @param \TencentAds\Model\DeepConversionWorthGoal $goal goal
+     * @param \TencentAds\Model\DeepConversionWorthGoal|mixed $goal goal
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class DeepConversionWorthSpec implements ModelInterface, ArrayAccess
     /**
      * Sets expectedRoi
      *
-     * @param double $expectedRoi expectedRoi
+     * @param double|mixed $expectedRoi expectedRoi
      *
      * @return $this
      */

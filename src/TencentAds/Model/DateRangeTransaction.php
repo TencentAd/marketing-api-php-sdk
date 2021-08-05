@@ -224,7 +224,7 @@ class DateRangeTransaction implements ModelInterface, ArrayAccess
     /**
      * Sets startDate
      *
-     * @param string $startDate startDate
+     * @param string|mixed $startDate startDate
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class DateRangeTransaction implements ModelInterface, ArrayAccess
     /**
      * Sets endDate
      *
-     * @param string $endDate endDate
+     * @param string|mixed $endDate endDate
      *
      * @return $this
      */

@@ -217,7 +217,7 @@ class AdcreativesRelatedCapabilityGetResponseData implements ModelInterface, Arr
     /**
      * Sets queryResult
      *
-     * @param bool $queryResult queryResult
+     * @param bool|mixed $queryResult queryResult
      *
      * @return $this
      */

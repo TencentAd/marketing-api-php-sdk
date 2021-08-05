@@ -236,7 +236,7 @@ class BusinessMdmAccountRelationsGetListStruct implements ModelInterface, ArrayA
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class BusinessMdmAccountRelationsGetListStruct implements ModelInterface, ArrayA
     /**
      * Sets businessId
      *
-     * @param int $businessId businessId
+     * @param int|mixed $businessId businessId
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class BusinessMdmAccountRelationsGetListStruct implements ModelInterface, ArrayA
     /**
      * Sets mdmId
      *
-     * @param int $mdmId mdmId
+     * @param int|mixed $mdmId mdmId
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class BusinessMdmAccountRelationsGetListStruct implements ModelInterface, ArrayA
     /**
      * Sets agencyAccountId
      *
-     * @param int $agencyAccountId agencyAccountId
+     * @param int|mixed $agencyAccountId agencyAccountId
      *
      * @return $this
      */

@@ -218,7 +218,7 @@ class ElementShelf implements ModelInterface, ArrayAccess
     /**
      * Sets shelfSpec
      *
-     * @param \TencentAds\Model\ShelfSpecStruct[] $shelfSpec shelfSpec
+     * @param \TencentAds\Model\ShelfSpecStruct[]|mixed $shelfSpec shelfSpec
      *
      * @return $this
      */

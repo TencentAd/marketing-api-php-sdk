@@ -218,7 +218,7 @@ class ElementVideo implements ModelInterface, ArrayAccess
     /**
      * Sets videoId
      *
-     * @param int $videoId videoId
+     * @param int|mixed $videoId videoId
      *
      * @return $this
      */

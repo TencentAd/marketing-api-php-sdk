@@ -248,7 +248,7 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets poiId
      *
-     * @param string $poiId poiId
+     * @param string|mixed $poiId poiId
      *
      * @return $this
      */
@@ -272,7 +272,7 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets originAddress
      *
-     * @param string $originAddress originAddress
+     * @param string|mixed $originAddress originAddress
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets localStoreName
      *
-     * @param string $localStoreName localStoreName
+     * @param string|mixed $localStoreName localStoreName
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets localStoreProvince
      *
-     * @param string $localStoreProvince localStoreProvince
+     * @param string|mixed $localStoreProvince localStoreProvince
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets localStoreCity
      *
-     * @param string $localStoreCity localStoreCity
+     * @param string|mixed $localStoreCity localStoreCity
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets localStoreAddress
      *
-     * @param string $localStoreAddress localStoreAddress
+     * @param string|mixed $localStoreAddress localStoreAddress
      *
      * @return $this
      */

@@ -92,10 +92,10 @@ class AsyncTaskFilesApi
      *
      * 获取文件接口
      *
-     * @param  int $accountId accountId (required)
-     * @param  int $taskId taskId (required)
-     * @param  int $fileId fileId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $taskId taskId (required)
+     * @param  int|mixed $fileId fileId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -112,10 +112,10 @@ class AsyncTaskFilesApi
      *
      * 获取文件接口
      *
-     * @param  int $accountId (required)
-     * @param  int $taskId (required)
-     * @param  int $fileId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $taskId (required)
+     * @param  int|mixed $fileId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -190,10 +190,10 @@ class AsyncTaskFilesApi
      *
      * 获取文件接口
      *
-     * @param  int $accountId (required)
-     * @param  int $taskId (required)
-     * @param  int $fileId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $taskId (required)
+     * @param  int|mixed $fileId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -213,10 +213,10 @@ class AsyncTaskFilesApi
      *
      * 获取文件接口
      *
-     * @param  int $accountId (required)
-     * @param  int $taskId (required)
-     * @param  int $fileId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $taskId (required)
+     * @param  int|mixed $fileId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -266,10 +266,10 @@ class AsyncTaskFilesApi
     /**
      * Create request for operation 'asyncTaskFilesGet'
      *
-     * @param  int $accountId (required)
-     * @param  int $taskId (required)
-     * @param  int $fileId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $taskId (required)
+     * @param  int|mixed $fileId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

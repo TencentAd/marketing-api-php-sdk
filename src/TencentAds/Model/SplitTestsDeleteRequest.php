@@ -223,7 +223,7 @@ class SplitTestsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Sets accountId
      *
-     * @param int $accountId accountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class SplitTestsDeleteRequest implements ModelInterface, ArrayAccess
     /**
      * Sets splitTestId
      *
-     * @param int $splitTestId splitTestId
+     * @param int|mixed $splitTestId splitTestId
      *
      * @return $this
      */

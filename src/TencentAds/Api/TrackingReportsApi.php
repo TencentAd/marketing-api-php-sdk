@@ -92,15 +92,15 @@ class TrackingReportsApi
      *
      * 点击追踪报表
      *
-     * @param  int $accountId accountId (required)
-     * @param  \TencentAds\Model\DateRange $dateRange dateRange (required)
-     * @param  string $timeGranularity timeGranularity (optional)
-     * @param  string $promotedObjectType promotedObjectType (optional)
-     * @param  string $promotedObjectId promotedObjectId (optional)
-     * @param  string $feedbackUrl feedbackUrl (optional)
-     * @param  int $page page (optional)
-     * @param  int $pageSize pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  \TencentAds\Model\DateRange|mixed $dateRange dateRange (required)
+     * @param  string|mixed $timeGranularity timeGranularity (optional)
+     * @param  string|mixed $promotedObjectType promotedObjectType (optional)
+     * @param  string|mixed $promotedObjectId promotedObjectId (optional)
+     * @param  string|mixed $feedbackUrl feedbackUrl (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -117,15 +117,15 @@ class TrackingReportsApi
      *
      * 点击追踪报表
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\DateRange $dateRange (required)
-     * @param  string $timeGranularity (optional)
-     * @param  string $promotedObjectType (optional)
-     * @param  string $promotedObjectId (optional)
-     * @param  string $feedbackUrl (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\DateRange|mixed $dateRange (required)
+     * @param  string|mixed $timeGranularity (optional)
+     * @param  string|mixed $promotedObjectType (optional)
+     * @param  string|mixed $promotedObjectId (optional)
+     * @param  string|mixed $feedbackUrl (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -200,15 +200,15 @@ class TrackingReportsApi
      *
      * 点击追踪报表
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\DateRange $dateRange (required)
-     * @param  string $timeGranularity (optional)
-     * @param  string $promotedObjectType (optional)
-     * @param  string $promotedObjectId (optional)
-     * @param  string $feedbackUrl (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\DateRange|mixed $dateRange (required)
+     * @param  string|mixed $timeGranularity (optional)
+     * @param  string|mixed $promotedObjectType (optional)
+     * @param  string|mixed $promotedObjectId (optional)
+     * @param  string|mixed $feedbackUrl (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -228,15 +228,15 @@ class TrackingReportsApi
      *
      * 点击追踪报表
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\DateRange $dateRange (required)
-     * @param  string $timeGranularity (optional)
-     * @param  string $promotedObjectType (optional)
-     * @param  string $promotedObjectId (optional)
-     * @param  string $feedbackUrl (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\DateRange|mixed $dateRange (required)
+     * @param  string|mixed $timeGranularity (optional)
+     * @param  string|mixed $promotedObjectType (optional)
+     * @param  string|mixed $promotedObjectId (optional)
+     * @param  string|mixed $feedbackUrl (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -286,15 +286,15 @@ class TrackingReportsApi
     /**
      * Create request for operation 'trackingReportsGet'
      *
-     * @param  int $accountId (required)
-     * @param  \TencentAds\Model\DateRange $dateRange (required)
-     * @param  string $timeGranularity (optional)
-     * @param  string $promotedObjectType (optional)
-     * @param  string $promotedObjectId (optional)
-     * @param  string $feedbackUrl (optional)
-     * @param  int $page (optional)
-     * @param  int $pageSize (optional)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\DateRange|mixed $dateRange (required)
+     * @param  string|mixed $timeGranularity (optional)
+     * @param  string|mixed $promotedObjectType (optional)
+     * @param  string|mixed $promotedObjectId (optional)
+     * @param  string|mixed $feedbackUrl (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

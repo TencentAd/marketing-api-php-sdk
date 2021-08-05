@@ -217,7 +217,7 @@ class TargetingTagsUvGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\TargetingTagsUvGetListStruct[] $list list
+     * @param \TencentAds\Model\TargetingTagsUvGetListStruct[]|mixed $list list
      *
      * @return $this
      */

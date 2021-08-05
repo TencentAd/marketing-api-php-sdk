@@ -92,8 +92,8 @@ class WechatAgencyApi
      *
      * 查询微信公众平台服务商详情信息
      *
-     * @param  int $accountId accountId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -110,8 +110,8 @@ class WechatAgencyApi
      *
      * 查询微信公众平台服务商详情信息
      *
-     * @param  int $accountId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -186,8 +186,8 @@ class WechatAgencyApi
      *
      * 查询微信公众平台服务商详情信息
      *
-     * @param  int $accountId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -207,8 +207,8 @@ class WechatAgencyApi
      *
      * 查询微信公众平台服务商详情信息
      *
-     * @param  int $accountId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -258,8 +258,8 @@ class WechatAgencyApi
     /**
      * Create request for operation 'wechatAgencyGet'
      *
-     * @param  int $accountId (required)
-     * @param  string[] $fields 返回参数的字段列表 (optional)
+     * @param  int|mixed $accountId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

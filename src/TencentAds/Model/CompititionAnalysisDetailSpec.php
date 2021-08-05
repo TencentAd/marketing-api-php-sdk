@@ -284,7 +284,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Sets date
      *
-     * @param string $date date
+     * @param string|mixed $date date
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Sets hour
      *
-     * @param int $hour hour
+     * @param int|mixed $hour hour
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adUserAcceptance
      *
-     * @param int $adUserAcceptance adUserAcceptance
+     * @param int|mixed $adUserAcceptance adUserAcceptance
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adBidAmount
      *
-     * @param int $adBidAmount adBidAmount
+     * @param int|mixed $adBidAmount adBidAmount
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Sets sameIndustryBidAmount
      *
-     * @param int $sameIndustryBidAmount sameIndustryBidAmount
+     * @param int|mixed $sameIndustryBidAmount sameIndustryBidAmount
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Sets winOverAdBidAmount
      *
-     * @param int $winOverAdBidAmount winOverAdBidAmount
+     * @param int|mixed $winOverAdBidAmount winOverAdBidAmount
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adClick
      *
-     * @param int $adClick adClick
+     * @param int|mixed $adClick adClick
      *
      * @return $this
      */
@@ -452,7 +452,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Sets sameIndustryClick
      *
-     * @param int $sameIndustryClick sameIndustryClick
+     * @param int|mixed $sameIndustryClick sameIndustryClick
      *
      * @return $this
      */
@@ -476,7 +476,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Sets winOverAdClick
      *
-     * @param int $winOverAdClick winOverAdClick
+     * @param int|mixed $winOverAdClick winOverAdClick
      *
      * @return $this
      */
@@ -500,7 +500,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Sets adConversion
      *
-     * @param int $adConversion adConversion
+     * @param int|mixed $adConversion adConversion
      *
      * @return $this
      */
@@ -524,7 +524,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Sets sameIndustryConversion
      *
-     * @param int $sameIndustryConversion sameIndustryConversion
+     * @param int|mixed $sameIndustryConversion sameIndustryConversion
      *
      * @return $this
      */
@@ -548,7 +548,7 @@ class CompititionAnalysisDetailSpec implements ModelInterface, ArrayAccess
     /**
      * Sets winOverAdConversion
      *
-     * @param int $winOverAdConversion winOverAdConversion
+     * @param int|mixed $winOverAdConversion winOverAdConversion
      *
      * @return $this
      */

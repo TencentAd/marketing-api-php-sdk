@@ -224,7 +224,7 @@ class DiagnosisConclusionSpecTimeRange implements ModelInterface, ArrayAccess
     /**
      * Sets startTime
      *
-     * @param int $startTime startTime
+     * @param int|mixed $startTime startTime
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class DiagnosisConclusionSpecTimeRange implements ModelInterface, ArrayAccess
     /**
      * Sets endTime
      *
-     * @param int $endTime endTime
+     * @param int|mixed $endTime endTime
      *
      * @return $this
      */
