@@ -62,6 +62,7 @@ class AccountTypeMap
     const UNSUPPORTED = 'FUND_TYPE_UNSUPPORTED';
     const JD_PRIVILEGE = 'FUND_TYPE_JD_PRIVILEGE';
     const JD_WIRELESS_CASH = 'FUND_TYPE_JD_WIRELESS_CASH';
+    const SPECIAL_GIFT = 'FUND_TYPE_SPECIAL_GIFT';
     
     /**
      * Gets allowable values of the enum
@@ -88,6 +89,7 @@ class AccountTypeMap
             self::UNSUPPORTED,
             self::JD_PRIVILEGE,
             self::JD_WIRELESS_CASH,
+            self::SPECIAL_GIFT,
         ];
     }
 }
