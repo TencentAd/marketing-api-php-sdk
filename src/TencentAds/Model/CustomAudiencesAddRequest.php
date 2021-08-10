@@ -61,6 +61,7 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
         'name' => 'string',
         'type' => '\TencentAds\Model\AudienceType',
         'description' => 'string',
+        'cooperated' => 'bool',
         'audienceSpec' => '\TencentAds\Model\AudienceSpec',
         'platform' => '\TencentAds\Model\DataPlatform',
         'externalAudienceId' => 'string'
@@ -76,6 +77,7 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
         'name' => null,
         'type' => null,
         'description' => null,
+        'cooperated' => null,
         'audienceSpec' => null,
         'platform' => null,
         'externalAudienceId' => null
@@ -112,6 +114,7 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
         'name' => 'name',
         'type' => 'type',
         'description' => 'description',
+        'cooperated' => 'cooperated',
         'audienceSpec' => 'audience_spec',
         'platform' => 'platform',
         'externalAudienceId' => 'external_audience_id'
@@ -127,6 +130,7 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
         'name' => 'setName',
         'type' => 'setType',
         'description' => 'setDescription',
+        'cooperated' => 'setCooperated',
         'audienceSpec' => 'setAudienceSpec',
         'platform' => 'setPlatform',
         'externalAudienceId' => 'setExternalAudienceId'
@@ -142,6 +146,7 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
         'name' => 'getName',
         'type' => 'getType',
         'description' => 'getDescription',
+        'cooperated' => 'getCooperated',
         'audienceSpec' => 'getAudienceSpec',
         'platform' => 'getPlatform',
         'externalAudienceId' => 'getExternalAudienceId'
@@ -211,6 +216,7 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
         $this->container['name'] = isset($data['name']) ? $data['name'] : null;
         $this->container['type'] = isset($data['type']) ? $data['type'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
+        $this->container['cooperated'] = isset($data['cooperated']) ? $data['cooperated'] : null;
         $this->container['audienceSpec'] = isset($data['audienceSpec']) ? $data['audienceSpec'] : null;
         $this->container['platform'] = isset($data['platform']) ? $data['platform'] : null;
         $this->container['externalAudienceId'] = isset($data['externalAudienceId']) ? $data['externalAudienceId'] : null;
@@ -332,6 +338,30 @@ class CustomAudiencesAddRequest implements ModelInterface, ArrayAccess
     public function setDescription($description)
     {
         $this->container['description'] = $description;
+
+        return $this;
+    }
+
+    /**
+     * Gets cooperated
+     *
+     * @return bool|mixed
+     */
+    public function getCooperated()
+    {
+        return $this->container['cooperated'];
+    }
+
+    /**
+     * Sets cooperated
+     *
+     * @param bool|mixed $cooperated cooperated
+     *
+     * @return $this
+     */
+    public function setCooperated($cooperated)
+    {
+        $this->container['cooperated'] = $cooperated;
 
         return $this;
     }

@@ -59,6 +59,8 @@ class MetricDetailData implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'cost' => 'int',
+        'validClickCount' => 'int',
+        'ctr' => 'double',
         'expPv' => 'int',
         'canvasCpnCouponsGetPv' => 'int',
         'canvasCpnCouponsCost' => 'int',
@@ -85,6 +87,8 @@ class MetricDetailData implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'cost' => 'int64',
+        'validClickCount' => 'int64',
+        'ctr' => 'double',
         'expPv' => 'int64',
         'canvasCpnCouponsGetPv' => 'int64',
         'canvasCpnCouponsCost' => 'int64',
@@ -132,6 +136,8 @@ class MetricDetailData implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'cost' => 'cost',
+        'validClickCount' => 'valid_click_count',
+        'ctr' => 'ctr',
         'expPv' => 'exp_pv',
         'canvasCpnCouponsGetPv' => 'canvas_cpn_coupons_get_pv',
         'canvasCpnCouponsCost' => 'canvas_cpn_coupons_cost',
@@ -158,6 +164,8 @@ class MetricDetailData implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'cost' => 'setCost',
+        'validClickCount' => 'setValidClickCount',
+        'ctr' => 'setCtr',
         'expPv' => 'setExpPv',
         'canvasCpnCouponsGetPv' => 'setCanvasCpnCouponsGetPv',
         'canvasCpnCouponsCost' => 'setCanvasCpnCouponsCost',
@@ -184,6 +192,8 @@ class MetricDetailData implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'cost' => 'getCost',
+        'validClickCount' => 'getValidClickCount',
+        'ctr' => 'getCtr',
         'expPv' => 'getExpPv',
         'canvasCpnCouponsGetPv' => 'getCanvasCpnCouponsGetPv',
         'canvasCpnCouponsCost' => 'getCanvasCpnCouponsCost',
@@ -264,6 +274,8 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['cost'] = isset($data['cost']) ? $data['cost'] : null;
+        $this->container['validClickCount'] = isset($data['validClickCount']) ? $data['validClickCount'] : null;
+        $this->container['ctr'] = isset($data['ctr']) ? $data['ctr'] : null;
         $this->container['expPv'] = isset($data['expPv']) ? $data['expPv'] : null;
         $this->container['canvasCpnCouponsGetPv'] = isset($data['canvasCpnCouponsGetPv']) ? $data['canvasCpnCouponsGetPv'] : null;
         $this->container['canvasCpnCouponsCost'] = isset($data['canvasCpnCouponsCost']) ? $data['canvasCpnCouponsCost'] : null;
@@ -327,6 +339,54 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     public function setCost($cost)
     {
         $this->container['cost'] = $cost;
+
+        return $this;
+    }
+
+    /**
+     * Gets validClickCount
+     *
+     * @return int|mixed
+     */
+    public function getValidClickCount()
+    {
+        return $this->container['validClickCount'];
+    }
+
+    /**
+     * Sets validClickCount
+     *
+     * @param int|mixed $validClickCount validClickCount
+     *
+     * @return $this
+     */
+    public function setValidClickCount($validClickCount)
+    {
+        $this->container['validClickCount'] = $validClickCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets ctr
+     *
+     * @return double|mixed
+     */
+    public function getCtr()
+    {
+        return $this->container['ctr'];
+    }
+
+    /**
+     * Sets ctr
+     *
+     * @param double|mixed $ctr ctr
+     *
+     * @return $this
+     */
+    public function setCtr($ctr)
+    {
+        $this->container['ctr'] = $ctr;
 
         return $this;
     }

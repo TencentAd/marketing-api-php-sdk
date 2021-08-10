@@ -1,6 +1,6 @@
 <?php
 /**
- * CustomAudiencesUpdateRequest
+ * BarrageGetListStruct
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CustomAudiencesUpdateRequest Class Doc Comment
+ * BarrageGetListStruct Class Doc Comment
  *
  * @category Class
+ * @description 返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
+class BarrageGetListStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'CustomAudiencesUpdateRequest';
+    protected static $swaggerModelName = 'BarrageGetListStruct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,11 +58,9 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'audienceId' => 'int',
-        'name' => 'string',
-        'description' => 'string',
-        'cooperated' => 'bool'
+        'id' => 'int',
+        'text' => 'string',
+        'reviewStatus' => '\TencentAds\Model\SysStatus'
     ];
 
     /**
@@ -70,11 +69,9 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'audienceId' => 'int64',
-        'name' => null,
-        'description' => null,
-        'cooperated' => null
+        'id' => 'int64',
+        'text' => null,
+        'reviewStatus' => null
     ];
 
     /**
@@ -104,11 +101,9 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'audienceId' => 'audience_id',
-        'name' => 'name',
-        'description' => 'description',
-        'cooperated' => 'cooperated'
+        'id' => 'id',
+        'text' => 'text',
+        'reviewStatus' => 'review_status'
     ];
 
     /**
@@ -117,11 +112,9 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'audienceId' => 'setAudienceId',
-        'name' => 'setName',
-        'description' => 'setDescription',
-        'cooperated' => 'setCooperated'
+        'id' => 'setId',
+        'text' => 'setText',
+        'reviewStatus' => 'setReviewStatus'
     ];
 
     /**
@@ -130,11 +123,9 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'audienceId' => 'getAudienceId',
-        'name' => 'getName',
-        'description' => 'getDescription',
-        'cooperated' => 'getCooperated'
+        'id' => 'getId',
+        'text' => 'getText',
+        'reviewStatus' => 'getReviewStatus'
     ];
 
     /**
@@ -197,11 +188,9 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['audienceId'] = isset($data['audienceId']) ? $data['audienceId'] : null;
-        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
-        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
-        $this->container['cooperated'] = isset($data['cooperated']) ? $data['cooperated'] : null;
+        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
+        $this->container['text'] = isset($data['text']) ? $data['text'] : null;
+        $this->container['reviewStatus'] = isset($data['reviewStatus']) ? $data['reviewStatus'] : null;
     }
 
     /**
@@ -229,121 +218,73 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets accountId
+     * Gets id
      *
      * @return int|mixed
      */
-    public function getAccountId()
+    public function getId()
     {
-        return $this->container['accountId'];
+        return $this->container['id'];
     }
 
     /**
-     * Sets accountId
+     * Sets id
      *
-     * @param int|mixed $accountId accountId
+     * @param int|mixed $id id
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setId($id)
     {
-        $this->container['accountId'] = $accountId;
+        $this->container['id'] = $id;
 
         return $this;
     }
 
     /**
-     * Gets audienceId
-     *
-     * @return int|mixed
-     */
-    public function getAudienceId()
-    {
-        return $this->container['audienceId'];
-    }
-
-    /**
-     * Sets audienceId
-     *
-     * @param int|mixed $audienceId audienceId
-     *
-     * @return $this
-     */
-    public function setAudienceId($audienceId)
-    {
-        $this->container['audienceId'] = $audienceId;
-
-        return $this;
-    }
-
-    /**
-     * Gets name
+     * Gets text
      *
      * @return string|mixed
      */
-    public function getName()
+    public function getText()
     {
-        return $this->container['name'];
+        return $this->container['text'];
     }
 
     /**
-     * Sets name
+     * Sets text
      *
-     * @param string|mixed $name name
+     * @param string|mixed $text text
      *
      * @return $this
      */
-    public function setName($name)
+    public function setText($text)
     {
-        $this->container['name'] = $name;
+        $this->container['text'] = $text;
 
         return $this;
     }
 
     /**
-     * Gets description
+     * Gets reviewStatus
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\SysStatus|mixed
      */
-    public function getDescription()
+    public function getReviewStatus()
     {
-        return $this->container['description'];
+        return $this->container['reviewStatus'];
     }
 
     /**
-     * Sets description
+     * Sets reviewStatus
      *
-     * @param string|mixed $description description
+     * @param \TencentAds\Model\SysStatus|mixed $reviewStatus reviewStatus
      *
      * @return $this
      */
-    public function setDescription($description)
+    public function setReviewStatus($reviewStatus)
     {
-        $this->container['description'] = $description;
-
-        return $this;
-    }
-
-    /**
-     * Gets cooperated
-     *
-     * @return bool|mixed
-     */
-    public function getCooperated()
-    {
-        return $this->container['cooperated'];
-    }
-
-    /**
-     * Sets cooperated
-     *
-     * @param bool|mixed $cooperated cooperated
-     *
-     * @return $this
-     */
-    public function setCooperated($cooperated)
-    {
-        $this->container['cooperated'] = $cooperated;
+        $this->container['reviewStatus'] = $reviewStatus;
 
         return $this;
     }

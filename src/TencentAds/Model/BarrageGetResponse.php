@@ -1,6 +1,6 @@
 <?php
 /**
- * CustomAudiencesUpdateRequest
+ * BarrageGetResponse
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CustomAudiencesUpdateRequest Class Doc Comment
+ * BarrageGetResponse Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
+class BarrageGetResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'CustomAudiencesUpdateRequest';
+    protected static $swaggerModelName = 'BarrageGetResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,11 +57,11 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'audienceId' => 'int',
-        'name' => 'string',
-        'description' => 'string',
-        'cooperated' => 'bool'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\BarrageGetResponseData'
     ];
 
     /**
@@ -70,11 +70,11 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'audienceId' => 'int64',
-        'name' => null,
-        'description' => null,
-        'cooperated' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -104,11 +104,11 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'audienceId' => 'audience_id',
-        'name' => 'name',
-        'description' => 'description',
-        'cooperated' => 'cooperated'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -117,11 +117,11 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'audienceId' => 'setAudienceId',
-        'name' => 'setName',
-        'description' => 'setDescription',
-        'cooperated' => 'setCooperated'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -130,11 +130,11 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'audienceId' => 'getAudienceId',
-        'name' => 'getName',
-        'description' => 'getDescription',
-        'cooperated' => 'getCooperated'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -197,11 +197,11 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['audienceId'] = isset($data['audienceId']) ? $data['audienceId'] : null;
-        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
-        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
-        $this->container['cooperated'] = isset($data['cooperated']) ? $data['cooperated'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -229,121 +229,121 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets accountId
+     * Gets code
      *
      * @return int|mixed
      */
-    public function getAccountId()
+    public function getCode()
     {
-        return $this->container['accountId'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets accountId
+     * Sets code
      *
-     * @param int|mixed $accountId accountId
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setCode($code)
     {
-        $this->container['accountId'] = $accountId;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets audienceId
-     *
-     * @return int|mixed
-     */
-    public function getAudienceId()
-    {
-        return $this->container['audienceId'];
-    }
-
-    /**
-     * Sets audienceId
-     *
-     * @param int|mixed $audienceId audienceId
-     *
-     * @return $this
-     */
-    public function setAudienceId($audienceId)
-    {
-        $this->container['audienceId'] = $audienceId;
-
-        return $this;
-    }
-
-    /**
-     * Gets name
+     * Gets message
      *
      * @return string|mixed
      */
-    public function getName()
+    public function getMessage()
     {
-        return $this->container['name'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets name
+     * Sets message
      *
-     * @param string|mixed $name name
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setName($name)
+    public function setMessage($message)
     {
-        $this->container['name'] = $name;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets description
+     * Gets messageCn
      *
      * @return string|mixed
      */
-    public function getDescription()
+    public function getMessageCn()
     {
-        return $this->container['description'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets description
+     * Sets messageCn
      *
-     * @param string|mixed $description description
+     * @param string|mixed $messageCn messageCn
      *
      * @return $this
      */
-    public function setDescription($description)
+    public function setMessageCn($messageCn)
     {
-        $this->container['description'] = $description;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets cooperated
+     * Gets errors
      *
-     * @return bool|mixed
+     * @return \TencentAds\Model\ApiErrorStruct[]|mixed
      */
-    public function getCooperated()
+    public function getErrors()
     {
-        return $this->container['cooperated'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets cooperated
+     * Sets errors
      *
-     * @param bool|mixed $cooperated cooperated
+     * @param \TencentAds\Model\ApiErrorStruct[]|mixed $errors errors
      *
      * @return $this
      */
-    public function setCooperated($cooperated)
+    public function setErrors($errors)
     {
-        $this->container['cooperated'] = $cooperated;
+        $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\BarrageGetResponseData|mixed
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\BarrageGetResponseData|mixed $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }

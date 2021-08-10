@@ -1,6 +1,6 @@
 <?php
 /**
- * CustomAudiencesUpdateRequest
+ * BarrageGetResponseData
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CustomAudiencesUpdateRequest Class Doc Comment
+ * BarrageGetResponseData Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
+class BarrageGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'CustomAudiencesUpdateRequest';
+    protected static $swaggerModelName = 'BarrageGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,11 +57,8 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'audienceId' => 'int',
-        'name' => 'string',
-        'description' => 'string',
-        'cooperated' => 'bool'
+        'list' => '\TencentAds\Model\BarrageGetListStruct[]',
+        'pageInfo' => '\TencentAds\Model\Conf'
     ];
 
     /**
@@ -70,11 +67,8 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'audienceId' => 'int64',
-        'name' => null,
-        'description' => null,
-        'cooperated' => null
+        'list' => null,
+        'pageInfo' => null
     ];
 
     /**
@@ -104,11 +98,8 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'audienceId' => 'audience_id',
-        'name' => 'name',
-        'description' => 'description',
-        'cooperated' => 'cooperated'
+        'list' => 'list',
+        'pageInfo' => 'page_info'
     ];
 
     /**
@@ -117,11 +108,8 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'audienceId' => 'setAudienceId',
-        'name' => 'setName',
-        'description' => 'setDescription',
-        'cooperated' => 'setCooperated'
+        'list' => 'setList',
+        'pageInfo' => 'setPageInfo'
     ];
 
     /**
@@ -130,11 +118,8 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'audienceId' => 'getAudienceId',
-        'name' => 'getName',
-        'description' => 'getDescription',
-        'cooperated' => 'getCooperated'
+        'list' => 'getList',
+        'pageInfo' => 'getPageInfo'
     ];
 
     /**
@@ -197,11 +182,8 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['audienceId'] = isset($data['audienceId']) ? $data['audienceId'] : null;
-        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
-        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
-        $this->container['cooperated'] = isset($data['cooperated']) ? $data['cooperated'] : null;
+        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
+        $this->container['pageInfo'] = isset($data['pageInfo']) ? $data['pageInfo'] : null;
     }
 
     /**
@@ -229,121 +211,49 @@ class CustomAudiencesUpdateRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets accountId
+     * Gets list
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\BarrageGetListStruct[]|mixed
      */
-    public function getAccountId()
+    public function getList()
     {
-        return $this->container['accountId'];
+        return $this->container['list'];
     }
 
     /**
-     * Sets accountId
+     * Sets list
      *
-     * @param int|mixed $accountId accountId
+     * @param \TencentAds\Model\BarrageGetListStruct[]|mixed $list list
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setList($list)
     {
-        $this->container['accountId'] = $accountId;
+        $this->container['list'] = $list;
 
         return $this;
     }
 
     /**
-     * Gets audienceId
+     * Gets pageInfo
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\Conf|mixed
      */
-    public function getAudienceId()
+    public function getPageInfo()
     {
-        return $this->container['audienceId'];
+        return $this->container['pageInfo'];
     }
 
     /**
-     * Sets audienceId
+     * Sets pageInfo
      *
-     * @param int|mixed $audienceId audienceId
+     * @param \TencentAds\Model\Conf|mixed $pageInfo pageInfo
      *
      * @return $this
      */
-    public function setAudienceId($audienceId)
+    public function setPageInfo($pageInfo)
     {
-        $this->container['audienceId'] = $audienceId;
-
-        return $this;
-    }
-
-    /**
-     * Gets name
-     *
-     * @return string|mixed
-     */
-    public function getName()
-    {
-        return $this->container['name'];
-    }
-
-    /**
-     * Sets name
-     *
-     * @param string|mixed $name name
-     *
-     * @return $this
-     */
-    public function setName($name)
-    {
-        $this->container['name'] = $name;
-
-        return $this;
-    }
-
-    /**
-     * Gets description
-     *
-     * @return string|mixed
-     */
-    public function getDescription()
-    {
-        return $this->container['description'];
-    }
-
-    /**
-     * Sets description
-     *
-     * @param string|mixed $description description
-     *
-     * @return $this
-     */
-    public function setDescription($description)
-    {
-        $this->container['description'] = $description;
-
-        return $this;
-    }
-
-    /**
-     * Gets cooperated
-     *
-     * @return bool|mixed
-     */
-    public function getCooperated()
-    {
-        return $this->container['cooperated'];
-    }
-
-    /**
-     * Sets cooperated
-     *
-     * @param bool|mixed $cooperated cooperated
-     *
-     * @return $this
-     */
-    public function setCooperated($cooperated)
-    {
-        $this->container['cooperated'] = $cooperated;
+        $this->container['pageInfo'] = $pageInfo;
 
         return $this;
     }

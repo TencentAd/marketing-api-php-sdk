@@ -68,7 +68,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
         'beginTime' => 'string',
         'endTime' => 'string',
         'budget' => 'int',
-        'localBusinessMode' => '\TencentAds\Model\EcoLocalBusinessMode'
+        'localBusinessMode' => '\TencentAds\Model\ExEcoLocalBusinessMode'
     ];
 
     /**
@@ -537,7 +537,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets localBusinessMode
      *
-     * @return \TencentAds\Model\EcoLocalBusinessMode|mixed
+     * @return \TencentAds\Model\ExEcoLocalBusinessMode|mixed
      */
     public function getLocalBusinessMode()
     {
@@ -547,7 +547,7 @@ class LocalEstimatedamountGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets localBusinessMode
      *
-     * @param \TencentAds\Model\EcoLocalBusinessMode|mixed $localBusinessMode localBusinessMode
+     * @param \TencentAds\Model\ExEcoLocalBusinessMode|mixed $localBusinessMode localBusinessMode
      *
      * @return $this
      */
