@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * WechatPageSourceType Class Doc Comment
  *
  * @category Class
- * @description 视频/图片等素材的创建来源类型
+ * @description 视频/图片/原生页等素材的创建来源类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

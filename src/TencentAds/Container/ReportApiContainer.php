@@ -28,6 +28,40 @@ class ReportApiContainer extends ApiContainer
 
 
     /**
+     * Handle ReportApi reportAdUnion function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function adUnion(array $params = [])
+    {
+        return $this->handleMiddleware('adUnion', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->reportAdUnion($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle ReportApi reportAdUnionAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function adUnionAsync(array $params = [])
+    {
+        return $this->handleMiddleware('adUnion', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->reportAdUnionAsync($data);
+            return $response;
+        });
+    }
+
+
+    /**
      * Handle ReportApi reportConversionsPredict function
      * @param array params
      * @return mixed
