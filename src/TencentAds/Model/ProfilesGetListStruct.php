@@ -58,6 +58,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'ownerId' => 'int',
         'profileType' => '\TencentAds\Model\ProfileType',
         'profileId' => 'int',
         'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
@@ -78,6 +79,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
+        'ownerId' => 'int64',
         'profileType' => null,
         'profileId' => 'int64',
         'promotedObjectType' => null,
@@ -119,6 +121,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'ownerId' => 'owner_id',
         'profileType' => 'profile_type',
         'profileId' => 'profile_id',
         'promotedObjectType' => 'promoted_object_type',
@@ -139,6 +142,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'ownerId' => 'setOwnerId',
         'profileType' => 'setProfileType',
         'profileId' => 'setProfileId',
         'promotedObjectType' => 'setPromotedObjectType',
@@ -159,6 +163,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'ownerId' => 'getOwnerId',
         'profileType' => 'getProfileType',
         'profileId' => 'getProfileId',
         'promotedObjectType' => 'getPromotedObjectType',
@@ -233,6 +238,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['ownerId'] = isset($data['ownerId']) ? $data['ownerId'] : null;
         $this->container['profileType'] = isset($data['profileType']) ? $data['profileType'] : null;
         $this->container['profileId'] = isset($data['profileId']) ? $data['profileId'] : null;
         $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
@@ -270,6 +276,30 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets ownerId
+     *
+     * @return int|mixed
+     */
+    public function getOwnerId()
+    {
+        return $this->container['ownerId'];
+    }
+
+    /**
+     * Sets ownerId
+     *
+     * @param int|mixed $ownerId ownerId
+     *
+     * @return $this
+     */
+    public function setOwnerId($ownerId)
+    {
+        $this->container['ownerId'] = $ownerId;
+
+        return $this;
+    }
 
     /**
      * Gets profileType

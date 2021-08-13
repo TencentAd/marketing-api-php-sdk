@@ -1,6 +1,6 @@
 <?php
 /**
- * AssetPermissionsAddResponse
+ * AssetPermissionsAddResponseData
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AssetPermissionsAddResponse Class Doc Comment
+ * AssetPermissionsAddResponseData Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AssetPermissionsAddResponse implements ModelInterface, ArrayAccess
+class AssetPermissionsAddResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class AssetPermissionsAddResponse implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'AssetPermissionsAddResponse';
+    protected static $swaggerModelName = 'AssetPermissionsAddResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,11 +57,9 @@ class AssetPermissionsAddResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'code' => 'int',
-        'message' => 'string',
-        'messageCn' => 'string',
-        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
-        'data' => '\TencentAds\Model\AssetPermissionsAddResponseData'
+        'failNum' => 'int',
+        'successNum' => 'int',
+        'failReason' => '\TencentAds\Model\FailReasonStruct[]'
     ];
 
     /**
@@ -70,11 +68,9 @@ class AssetPermissionsAddResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'code' => 'int64',
-        'message' => null,
-        'messageCn' => null,
-        'errors' => null,
-        'data' => null
+        'failNum' => 'int64',
+        'successNum' => 'int64',
+        'failReason' => null
     ];
 
     /**
@@ -104,11 +100,9 @@ class AssetPermissionsAddResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'code' => 'code',
-        'message' => 'message',
-        'messageCn' => 'message_cn',
-        'errors' => 'errors',
-        'data' => 'data'
+        'failNum' => 'fail_num',
+        'successNum' => 'success_num',
+        'failReason' => 'fail_reason'
     ];
 
     /**
@@ -117,11 +111,9 @@ class AssetPermissionsAddResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'code' => 'setCode',
-        'message' => 'setMessage',
-        'messageCn' => 'setMessageCn',
-        'errors' => 'setErrors',
-        'data' => 'setData'
+        'failNum' => 'setFailNum',
+        'successNum' => 'setSuccessNum',
+        'failReason' => 'setFailReason'
     ];
 
     /**
@@ -130,11 +122,9 @@ class AssetPermissionsAddResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'code' => 'getCode',
-        'message' => 'getMessage',
-        'messageCn' => 'getMessageCn',
-        'errors' => 'getErrors',
-        'data' => 'getData'
+        'failNum' => 'getFailNum',
+        'successNum' => 'getSuccessNum',
+        'failReason' => 'getFailReason'
     ];
 
     /**
@@ -197,11 +187,9 @@ class AssetPermissionsAddResponse implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
-        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
-        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
-        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
-        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
+        $this->container['failNum'] = isset($data['failNum']) ? $data['failNum'] : null;
+        $this->container['successNum'] = isset($data['successNum']) ? $data['successNum'] : null;
+        $this->container['failReason'] = isset($data['failReason']) ? $data['failReason'] : null;
     }
 
     /**
@@ -229,121 +217,73 @@ class AssetPermissionsAddResponse implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets code
+     * Gets failNum
      *
      * @return int|mixed
      */
-    public function getCode()
+    public function getFailNum()
     {
-        return $this->container['code'];
+        return $this->container['failNum'];
     }
 
     /**
-     * Sets code
+     * Sets failNum
      *
-     * @param int|mixed $code code
+     * @param int|mixed $failNum failNum
      *
      * @return $this
      */
-    public function setCode($code)
+    public function setFailNum($failNum)
     {
-        $this->container['code'] = $code;
+        $this->container['failNum'] = $failNum;
 
         return $this;
     }
 
     /**
-     * Gets message
+     * Gets successNum
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getMessage()
+    public function getSuccessNum()
     {
-        return $this->container['message'];
+        return $this->container['successNum'];
     }
 
     /**
-     * Sets message
+     * Sets successNum
      *
-     * @param string|mixed $message message
+     * @param int|mixed $successNum successNum
      *
      * @return $this
      */
-    public function setMessage($message)
+    public function setSuccessNum($successNum)
     {
-        $this->container['message'] = $message;
+        $this->container['successNum'] = $successNum;
 
         return $this;
     }
 
     /**
-     * Gets messageCn
+     * Gets failReason
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\FailReasonStruct[]|mixed
      */
-    public function getMessageCn()
+    public function getFailReason()
     {
-        return $this->container['messageCn'];
+        return $this->container['failReason'];
     }
 
     /**
-     * Sets messageCn
+     * Sets failReason
      *
-     * @param string|mixed $messageCn messageCn
+     * @param \TencentAds\Model\FailReasonStruct[]|mixed $failReason failReason
      *
      * @return $this
      */
-    public function setMessageCn($messageCn)
+    public function setFailReason($failReason)
     {
-        $this->container['messageCn'] = $messageCn;
-
-        return $this;
-    }
-
-    /**
-     * Gets errors
-     *
-     * @return \TencentAds\Model\ApiErrorStruct[]|mixed
-     */
-    public function getErrors()
-    {
-        return $this->container['errors'];
-    }
-
-    /**
-     * Sets errors
-     *
-     * @param \TencentAds\Model\ApiErrorStruct[]|mixed $errors errors
-     *
-     * @return $this
-     */
-    public function setErrors($errors)
-    {
-        $this->container['errors'] = $errors;
-
-        return $this;
-    }
-
-    /**
-     * Gets data
-     *
-     * @return \TencentAds\Model\AssetPermissionsAddResponseData|mixed
-     */
-    public function getData()
-    {
-        return $this->container['data'];
-    }
-
-    /**
-     * Sets data
-     *
-     * @param \TencentAds\Model\AssetPermissionsAddResponseData|mixed $data data
-     *
-     * @return $this
-     */
-    public function setData($data)
-    {
-        $this->container['data'] = $data;
+        $this->container['failReason'] = $failReason;
 
         return $this;
     }

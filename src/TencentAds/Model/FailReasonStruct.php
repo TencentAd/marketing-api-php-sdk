@@ -1,6 +1,6 @@
 <?php
 /**
- * AssetPermissionsAddResponse
+ * FailReasonStruct
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AssetPermissionsAddResponse Class Doc Comment
+ * FailReasonStruct Class Doc Comment
  *
  * @category Class
+ * @description 资产添加失败信息结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AssetPermissionsAddResponse implements ModelInterface, ArrayAccess
+class FailReasonStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class AssetPermissionsAddResponse implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'AssetPermissionsAddResponse';
+    protected static $swaggerModelName = 'fail_reason_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,11 +58,9 @@ class AssetPermissionsAddResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'code' => 'int',
-        'message' => 'string',
-        'messageCn' => 'string',
-        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
-        'data' => '\TencentAds\Model\AssetPermissionsAddResponseData'
+        'accountId' => 'int',
+        'assetId' => 'int',
+        'message' => 'string'
     ];
 
     /**
@@ -70,11 +69,9 @@ class AssetPermissionsAddResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'code' => 'int64',
-        'message' => null,
-        'messageCn' => null,
-        'errors' => null,
-        'data' => null
+        'accountId' => 'int64',
+        'assetId' => 'int64',
+        'message' => null
     ];
 
     /**
@@ -104,11 +101,9 @@ class AssetPermissionsAddResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'code' => 'code',
-        'message' => 'message',
-        'messageCn' => 'message_cn',
-        'errors' => 'errors',
-        'data' => 'data'
+        'accountId' => 'account_id',
+        'assetId' => 'asset_id',
+        'message' => 'message'
     ];
 
     /**
@@ -117,11 +112,9 @@ class AssetPermissionsAddResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'code' => 'setCode',
-        'message' => 'setMessage',
-        'messageCn' => 'setMessageCn',
-        'errors' => 'setErrors',
-        'data' => 'setData'
+        'accountId' => 'setAccountId',
+        'assetId' => 'setAssetId',
+        'message' => 'setMessage'
     ];
 
     /**
@@ -130,11 +123,9 @@ class AssetPermissionsAddResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'code' => 'getCode',
-        'message' => 'getMessage',
-        'messageCn' => 'getMessageCn',
-        'errors' => 'getErrors',
-        'data' => 'getData'
+        'accountId' => 'getAccountId',
+        'assetId' => 'getAssetId',
+        'message' => 'getMessage'
     ];
 
     /**
@@ -197,11 +188,9 @@ class AssetPermissionsAddResponse implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['assetId'] = isset($data['assetId']) ? $data['assetId'] : null;
         $this->container['message'] = isset($data['message']) ? $data['message'] : null;
-        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
-        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
-        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -229,25 +218,49 @@ class AssetPermissionsAddResponse implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets code
+     * Gets accountId
      *
      * @return int|mixed
      */
-    public function getCode()
+    public function getAccountId()
     {
-        return $this->container['code'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets code
+     * Sets accountId
      *
-     * @param int|mixed $code code
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setCode($code)
+    public function setAccountId($accountId)
     {
-        $this->container['code'] = $code;
+        $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets assetId
+     *
+     * @return int|mixed
+     */
+    public function getAssetId()
+    {
+        return $this->container['assetId'];
+    }
+
+    /**
+     * Sets assetId
+     *
+     * @param int|mixed $assetId assetId
+     *
+     * @return $this
+     */
+    public function setAssetId($assetId)
+    {
+        $this->container['assetId'] = $assetId;
 
         return $this;
     }
@@ -272,78 +285,6 @@ class AssetPermissionsAddResponse implements ModelInterface, ArrayAccess
     public function setMessage($message)
     {
         $this->container['message'] = $message;
-
-        return $this;
-    }
-
-    /**
-     * Gets messageCn
-     *
-     * @return string|mixed
-     */
-    public function getMessageCn()
-    {
-        return $this->container['messageCn'];
-    }
-
-    /**
-     * Sets messageCn
-     *
-     * @param string|mixed $messageCn messageCn
-     *
-     * @return $this
-     */
-    public function setMessageCn($messageCn)
-    {
-        $this->container['messageCn'] = $messageCn;
-
-        return $this;
-    }
-
-    /**
-     * Gets errors
-     *
-     * @return \TencentAds\Model\ApiErrorStruct[]|mixed
-     */
-    public function getErrors()
-    {
-        return $this->container['errors'];
-    }
-
-    /**
-     * Sets errors
-     *
-     * @param \TencentAds\Model\ApiErrorStruct[]|mixed $errors errors
-     *
-     * @return $this
-     */
-    public function setErrors($errors)
-    {
-        $this->container['errors'] = $errors;
-
-        return $this;
-    }
-
-    /**
-     * Gets data
-     *
-     * @return \TencentAds\Model\AssetPermissionsAddResponseData|mixed
-     */
-    public function getData()
-    {
-        return $this->container['data'];
-    }
-
-    /**
-     * Sets data
-     *
-     * @param \TencentAds\Model\AssetPermissionsAddResponseData|mixed $data data
-     *
-     * @return $this
-     */
-    public function setData($data)
-    {
-        $this->container['data'] = $data;
 
         return $this;
     }
