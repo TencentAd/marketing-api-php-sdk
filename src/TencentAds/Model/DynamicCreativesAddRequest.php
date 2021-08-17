@@ -78,6 +78,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'barrageList' => '\TencentAds\Model\BarrageListCreateStruct[]',
         'dynamicCreativeGroupUsed' => '\TencentAds\Model\DynamicCreativeGroupUsed',
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
+        'enableBreakthroughSiteset' => 'bool',
         'accountId' => 'int'
     ];
 
@@ -108,6 +109,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'barrageList' => null,
         'dynamicCreativeGroupUsed' => null,
         'appGiftPackCode' => null,
+        'enableBreakthroughSiteset' => null,
         'accountId' => 'int64'
     ];
 
@@ -159,6 +161,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'barrageList' => 'barrage_list',
         'dynamicCreativeGroupUsed' => 'dynamic_creative_group_used',
         'appGiftPackCode' => 'app_gift_pack_code',
+        'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
         'accountId' => 'account_id'
     ];
 
@@ -189,6 +192,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'barrageList' => 'setBarrageList',
         'dynamicCreativeGroupUsed' => 'setDynamicCreativeGroupUsed',
         'appGiftPackCode' => 'setAppGiftPackCode',
+        'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
         'accountId' => 'setAccountId'
     ];
 
@@ -219,6 +223,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'barrageList' => 'getBarrageList',
         'dynamicCreativeGroupUsed' => 'getDynamicCreativeGroupUsed',
         'appGiftPackCode' => 'getAppGiftPackCode',
+        'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
         'accountId' => 'getAccountId'
     ];
 
@@ -303,6 +308,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         $this->container['barrageList'] = isset($data['barrageList']) ? $data['barrageList'] : null;
         $this->container['dynamicCreativeGroupUsed'] = isset($data['dynamicCreativeGroupUsed']) ? $data['dynamicCreativeGroupUsed'] : null;
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
+        $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -830,6 +836,30 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     public function setAppGiftPackCode($appGiftPackCode)
     {
         $this->container['appGiftPackCode'] = $appGiftPackCode;
+
+        return $this;
+    }
+
+    /**
+     * Gets enableBreakthroughSiteset
+     *
+     * @return bool|mixed
+     */
+    public function getEnableBreakthroughSiteset()
+    {
+        return $this->container['enableBreakthroughSiteset'];
+    }
+
+    /**
+     * Sets enableBreakthroughSiteset
+     *
+     * @param bool|mixed $enableBreakthroughSiteset enableBreakthroughSiteset
+     *
+     * @return $this
+     */
+    public function setEnableBreakthroughSiteset($enableBreakthroughSiteset)
+    {
+        $this->container['enableBreakthroughSiteset'] = $enableBreakthroughSiteset;
 
         return $this;
     }

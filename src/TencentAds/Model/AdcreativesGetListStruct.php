@@ -100,6 +100,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'pageTrackUrl' => 'string',
         'barrageList' => '\TencentAds\Model\BarrageListReadStruct[]',
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
+        'enableBreakthroughSiteset' => 'bool',
         'adcreativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsReadMp'
     ];
@@ -152,6 +153,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'pageTrackUrl' => null,
         'barrageList' => null,
         'appGiftPackCode' => null,
+        'enableBreakthroughSiteset' => null,
         'adcreativeTemplateId' => 'int64',
         'adcreativeElements' => null
     ];
@@ -225,6 +227,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'pageTrackUrl' => 'page_track_url',
         'barrageList' => 'barrage_list',
         'appGiftPackCode' => 'app_gift_pack_code',
+        'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
         'adcreativeTemplateId' => 'adcreative_template_id',
         'adcreativeElements' => 'adcreative_elements'
     ];
@@ -277,6 +280,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'pageTrackUrl' => 'setPageTrackUrl',
         'barrageList' => 'setBarrageList',
         'appGiftPackCode' => 'setAppGiftPackCode',
+        'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
         'adcreativeTemplateId' => 'setAdcreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements'
     ];
@@ -329,6 +333,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'pageTrackUrl' => 'getPageTrackUrl',
         'barrageList' => 'getBarrageList',
         'appGiftPackCode' => 'getAppGiftPackCode',
+        'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
         'adcreativeTemplateId' => 'getAdcreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements'
     ];
@@ -435,6 +440,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['pageTrackUrl'] = isset($data['pageTrackUrl']) ? $data['pageTrackUrl'] : null;
         $this->container['barrageList'] = isset($data['barrageList']) ? $data['barrageList'] : null;
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
+        $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
         $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
     }
@@ -1467,6 +1473,30 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setAppGiftPackCode($appGiftPackCode)
     {
         $this->container['appGiftPackCode'] = $appGiftPackCode;
+
+        return $this;
+    }
+
+    /**
+     * Gets enableBreakthroughSiteset
+     *
+     * @return bool|mixed
+     */
+    public function getEnableBreakthroughSiteset()
+    {
+        return $this->container['enableBreakthroughSiteset'];
+    }
+
+    /**
+     * Sets enableBreakthroughSiteset
+     *
+     * @param bool|mixed $enableBreakthroughSiteset enableBreakthroughSiteset
+     *
+     * @return $this
+     */
+    public function setEnableBreakthroughSiteset($enableBreakthroughSiteset)
+    {
+        $this->container['enableBreakthroughSiteset'] = $enableBreakthroughSiteset;
 
         return $this;
     }

@@ -70,6 +70,7 @@ class Adcreative implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'int',
         'playablePageMaterialId' => 'string',
         'videoEndPage' => '\TencentAds\Model\VideoEndPageSpec',
+        'enableBreakthroughSiteset' => 'bool',
         'adcreativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsRead'
     ];
@@ -92,6 +93,7 @@ class Adcreative implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'int64',
         'playablePageMaterialId' => null,
         'videoEndPage' => null,
+        'enableBreakthroughSiteset' => null,
         'adcreativeTemplateId' => 'int64',
         'adcreativeElements' => null
     ];
@@ -135,6 +137,7 @@ class Adcreative implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'last_modified_time',
         'playablePageMaterialId' => 'playable_page_material_id',
         'videoEndPage' => 'video_end_page',
+        'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
         'adcreativeTemplateId' => 'adcreative_template_id',
         'adcreativeElements' => 'adcreative_elements'
     ];
@@ -157,6 +160,7 @@ class Adcreative implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'setLastModifiedTime',
         'playablePageMaterialId' => 'setPlayablePageMaterialId',
         'videoEndPage' => 'setVideoEndPage',
+        'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
         'adcreativeTemplateId' => 'setAdcreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements'
     ];
@@ -179,6 +183,7 @@ class Adcreative implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'getLastModifiedTime',
         'playablePageMaterialId' => 'getPlayablePageMaterialId',
         'videoEndPage' => 'getVideoEndPage',
+        'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
         'adcreativeTemplateId' => 'getAdcreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements'
     ];
@@ -255,6 +260,7 @@ class Adcreative implements ModelInterface, ArrayAccess
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
         $this->container['playablePageMaterialId'] = isset($data['playablePageMaterialId']) ? $data['playablePageMaterialId'] : null;
         $this->container['videoEndPage'] = isset($data['videoEndPage']) ? $data['videoEndPage'] : null;
+        $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
         $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
     }
@@ -567,6 +573,30 @@ class Adcreative implements ModelInterface, ArrayAccess
     public function setVideoEndPage($videoEndPage)
     {
         $this->container['videoEndPage'] = $videoEndPage;
+
+        return $this;
+    }
+
+    /**
+     * Gets enableBreakthroughSiteset
+     *
+     * @return bool|mixed
+     */
+    public function getEnableBreakthroughSiteset()
+    {
+        return $this->container['enableBreakthroughSiteset'];
+    }
+
+    /**
+     * Sets enableBreakthroughSiteset
+     *
+     * @param bool|mixed $enableBreakthroughSiteset enableBreakthroughSiteset
+     *
+     * @return $this
+     */
+    public function setEnableBreakthroughSiteset($enableBreakthroughSiteset)
+    {
+        $this->container['enableBreakthroughSiteset'] = $enableBreakthroughSiteset;
 
         return $this;
     }

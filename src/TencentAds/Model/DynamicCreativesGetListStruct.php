@@ -83,7 +83,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'videoEndPage' => '\TencentAds\Model\VideoEndPageSpec',
         'barrageList' => '\TencentAds\Model\BarrageListReadStruct[]',
         'dynamicCreativeGroupUsed' => '\TencentAds\Model\DynamicCreativeGroupUsed',
-        'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode'
+        'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
+        'enableBreakthroughSiteset' => 'bool'
     ];
 
     /**
@@ -117,7 +118,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'videoEndPage' => null,
         'barrageList' => null,
         'dynamicCreativeGroupUsed' => null,
-        'appGiftPackCode' => null
+        'appGiftPackCode' => null,
+        'enableBreakthroughSiteset' => null
     ];
 
     /**
@@ -172,7 +174,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'videoEndPage' => 'video_end_page',
         'barrageList' => 'barrage_list',
         'dynamicCreativeGroupUsed' => 'dynamic_creative_group_used',
-        'appGiftPackCode' => 'app_gift_pack_code'
+        'appGiftPackCode' => 'app_gift_pack_code',
+        'enableBreakthroughSiteset' => 'enable_breakthrough_siteset'
     ];
 
     /**
@@ -206,7 +209,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'videoEndPage' => 'setVideoEndPage',
         'barrageList' => 'setBarrageList',
         'dynamicCreativeGroupUsed' => 'setDynamicCreativeGroupUsed',
-        'appGiftPackCode' => 'setAppGiftPackCode'
+        'appGiftPackCode' => 'setAppGiftPackCode',
+        'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset'
     ];
 
     /**
@@ -240,7 +244,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'videoEndPage' => 'getVideoEndPage',
         'barrageList' => 'getBarrageList',
         'dynamicCreativeGroupUsed' => 'getDynamicCreativeGroupUsed',
-        'appGiftPackCode' => 'getAppGiftPackCode'
+        'appGiftPackCode' => 'getAppGiftPackCode',
+        'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset'
     ];
 
     /**
@@ -329,6 +334,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['barrageList'] = isset($data['barrageList']) ? $data['barrageList'] : null;
         $this->container['dynamicCreativeGroupUsed'] = isset($data['dynamicCreativeGroupUsed']) ? $data['dynamicCreativeGroupUsed'] : null;
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
+        $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
     }
 
     /**
@@ -975,6 +981,30 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setAppGiftPackCode($appGiftPackCode)
     {
         $this->container['appGiftPackCode'] = $appGiftPackCode;
+
+        return $this;
+    }
+
+    /**
+     * Gets enableBreakthroughSiteset
+     *
+     * @return bool|mixed
+     */
+    public function getEnableBreakthroughSiteset()
+    {
+        return $this->container['enableBreakthroughSiteset'];
+    }
+
+    /**
+     * Sets enableBreakthroughSiteset
+     *
+     * @param bool|mixed $enableBreakthroughSiteset enableBreakthroughSiteset
+     *
+     * @return $this
+     */
+    public function setEnableBreakthroughSiteset($enableBreakthroughSiteset)
+    {
+        $this->container['enableBreakthroughSiteset'] = $enableBreakthroughSiteset;
 
         return $this;
     }
