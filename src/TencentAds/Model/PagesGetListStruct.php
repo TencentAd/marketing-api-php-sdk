@@ -69,7 +69,8 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'playableType' => '\TencentAds\Model\PlayableType',
         'pageStatus' => '\TencentAds\Model\PageStatus',
         'fengyeSubType' => '\TencentAds\Model\LandingPageFengyeSubType',
-        'ownerUid' => 'int'
+        'ownerUid' => 'int',
+        'quoteCreativeMaterial' => 'bool'
     ];
 
     /**
@@ -89,7 +90,8 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'playableType' => null,
         'pageStatus' => null,
         'fengyeSubType' => null,
-        'ownerUid' => 'int64'
+        'ownerUid' => 'int64',
+        'quoteCreativeMaterial' => null
     ];
 
     /**
@@ -130,7 +132,8 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'playableType' => 'playable_type',
         'pageStatus' => 'page_status',
         'fengyeSubType' => 'fengye_sub_type',
-        'ownerUid' => 'owner_uid'
+        'ownerUid' => 'owner_uid',
+        'quoteCreativeMaterial' => 'quote_creative_material'
     ];
 
     /**
@@ -150,7 +153,8 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'playableType' => 'setPlayableType',
         'pageStatus' => 'setPageStatus',
         'fengyeSubType' => 'setFengyeSubType',
-        'ownerUid' => 'setOwnerUid'
+        'ownerUid' => 'setOwnerUid',
+        'quoteCreativeMaterial' => 'setQuoteCreativeMaterial'
     ];
 
     /**
@@ -170,7 +174,8 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'playableType' => 'getPlayableType',
         'pageStatus' => 'getPageStatus',
         'fengyeSubType' => 'getFengyeSubType',
-        'ownerUid' => 'getOwnerUid'
+        'ownerUid' => 'getOwnerUid',
+        'quoteCreativeMaterial' => 'getQuoteCreativeMaterial'
     ];
 
     /**
@@ -245,6 +250,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['pageStatus'] = isset($data['pageStatus']) ? $data['pageStatus'] : null;
         $this->container['fengyeSubType'] = isset($data['fengyeSubType']) ? $data['fengyeSubType'] : null;
         $this->container['ownerUid'] = isset($data['ownerUid']) ? $data['ownerUid'] : null;
+        $this->container['quoteCreativeMaterial'] = isset($data['quoteCreativeMaterial']) ? $data['quoteCreativeMaterial'] : null;
     }
 
     /**
@@ -555,6 +561,30 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     public function setOwnerUid($ownerUid)
     {
         $this->container['ownerUid'] = $ownerUid;
+
+        return $this;
+    }
+
+    /**
+     * Gets quoteCreativeMaterial
+     *
+     * @return bool|mixed
+     */
+    public function getQuoteCreativeMaterial()
+    {
+        return $this->container['quoteCreativeMaterial'];
+    }
+
+    /**
+     * Sets quoteCreativeMaterial
+     *
+     * @param bool|mixed $quoteCreativeMaterial quoteCreativeMaterial
+     *
+     * @return $this
+     */
+    public function setQuoteCreativeMaterial($quoteCreativeMaterial)
+    {
+        $this->container['quoteCreativeMaterial'] = $quoteCreativeMaterial;
 
         return $this;
     }

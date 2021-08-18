@@ -441,9 +441,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatAgencyId' => 'string',
         'costDeviationRate' => 'double',
         'compensationAmount' => 'int',
-        'viewUserCount' => 'int',
         'avgViewPerUser' => 'double',
-        'clickUserCount' => 'int',
         'imageClickUserCount' => 'int',
         'videoClickUserCount' => 'int',
         'linkClickUserCount' => 'int',
@@ -898,9 +896,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatAgencyId' => null,
         'costDeviationRate' => 'double',
         'compensationAmount' => 'int64',
-        'viewUserCount' => 'int64',
         'avgViewPerUser' => 'double',
-        'clickUserCount' => 'int64',
         'imageClickUserCount' => 'int64',
         'videoClickUserCount' => 'int64',
         'linkClickUserCount' => 'int64',
@@ -1376,9 +1372,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatAgencyId' => 'wechat_agency_id',
         'costDeviationRate' => 'cost_deviation_rate',
         'compensationAmount' => 'compensation_amount',
-        'viewUserCount' => 'view_user_count',
         'avgViewPerUser' => 'avg_view_per_user',
-        'clickUserCount' => 'click_user_count',
         'imageClickUserCount' => 'image_click_user_count',
         'videoClickUserCount' => 'video_click_user_count',
         'linkClickUserCount' => 'link_click_user_count',
@@ -1833,9 +1827,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatAgencyId' => 'setWechatAgencyId',
         'costDeviationRate' => 'setCostDeviationRate',
         'compensationAmount' => 'setCompensationAmount',
-        'viewUserCount' => 'setViewUserCount',
         'avgViewPerUser' => 'setAvgViewPerUser',
-        'clickUserCount' => 'setClickUserCount',
         'imageClickUserCount' => 'setImageClickUserCount',
         'videoClickUserCount' => 'setVideoClickUserCount',
         'linkClickUserCount' => 'setLinkClickUserCount',
@@ -2290,9 +2282,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatAgencyId' => 'getWechatAgencyId',
         'costDeviationRate' => 'getCostDeviationRate',
         'compensationAmount' => 'getCompensationAmount',
-        'viewUserCount' => 'getViewUserCount',
         'avgViewPerUser' => 'getAvgViewPerUser',
-        'clickUserCount' => 'getClickUserCount',
         'imageClickUserCount' => 'getImageClickUserCount',
         'videoClickUserCount' => 'getVideoClickUserCount',
         'linkClickUserCount' => 'getLinkClickUserCount',
@@ -2801,9 +2791,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['wechatAgencyId'] = isset($data['wechatAgencyId']) ? $data['wechatAgencyId'] : null;
         $this->container['costDeviationRate'] = isset($data['costDeviationRate']) ? $data['costDeviationRate'] : null;
         $this->container['compensationAmount'] = isset($data['compensationAmount']) ? $data['compensationAmount'] : null;
-        $this->container['viewUserCount'] = isset($data['viewUserCount']) ? $data['viewUserCount'] : null;
         $this->container['avgViewPerUser'] = isset($data['avgViewPerUser']) ? $data['avgViewPerUser'] : null;
-        $this->container['clickUserCount'] = isset($data['clickUserCount']) ? $data['clickUserCount'] : null;
         $this->container['imageClickUserCount'] = isset($data['imageClickUserCount']) ? $data['imageClickUserCount'] : null;
         $this->container['videoClickUserCount'] = isset($data['videoClickUserCount']) ? $data['videoClickUserCount'] : null;
         $this->container['linkClickUserCount'] = isset($data['linkClickUserCount']) ? $data['linkClickUserCount'] : null;
@@ -12086,30 +12074,6 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets viewUserCount
-     *
-     * @return int|mixed
-     */
-    public function getViewUserCount()
-    {
-        return $this->container['viewUserCount'];
-    }
-
-    /**
-     * Sets viewUserCount
-     *
-     * @param int|mixed $viewUserCount viewUserCount
-     *
-     * @return $this
-     */
-    public function setViewUserCount($viewUserCount)
-    {
-        $this->container['viewUserCount'] = $viewUserCount;
-
-        return $this;
-    }
-
-    /**
      * Gets avgViewPerUser
      *
      * @return double|mixed
@@ -12129,30 +12093,6 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setAvgViewPerUser($avgViewPerUser)
     {
         $this->container['avgViewPerUser'] = $avgViewPerUser;
-
-        return $this;
-    }
-
-    /**
-     * Gets clickUserCount
-     *
-     * @return int|mixed
-     */
-    public function getClickUserCount()
-    {
-        return $this->container['clickUserCount'];
-    }
-
-    /**
-     * Sets clickUserCount
-     *
-     * @param int|mixed $clickUserCount clickUserCount
-     *
-     * @return $this
-     */
-    public function setClickUserCount($clickUserCount)
-    {
-        $this->container['clickUserCount'] = $clickUserCount;
 
         return $this;
     }
