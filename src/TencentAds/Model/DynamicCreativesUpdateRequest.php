@@ -65,9 +65,29 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'clickTrackingUrl' => 'string',
         'feedsVideoCommentSwitch' => 'bool',
         'unionMarketSwitch' => 'bool',
+        'pageType' => '\TencentAds\Model\DestinationType',
+        'pageSpec' => '\TencentAds\Model\DynamicCreativePageSpec',
+        'linkPageType' => '\TencentAds\Model\LinkPageType',
+        'linkNameType' => '\TencentAds\Model\LinkUrlLinkNameType',
+        'linkPageSpec' => '\TencentAds\Model\LinkPageSpec',
+        'conversionDataType' => '\TencentAds\Model\ConversionDataType',
+        'conversionTargetType' => '\TencentAds\Model\ConversionTargetType',
+        'qqMiniGameTrackingQueryString' => 'string',
+        'androidDeepLinkAppId' => 'string',
+        'iosDeepLinkAppId' => 'string',
+        'universalLinkUrl' => 'string',
+        'shareContentSpec' => '\TencentAds\Model\ShareContentSpec',
         'profileId' => 'int',
+        'componentId' => 'int',
+        'onlineEnabled' => 'bool',
+        'revisedAdcreativeSpec' => '\TencentAds\Model\RevisedAdcreativeSpec',
         'videoEndPage' => '\TencentAds\Model\VideoEndPageSpec',
+        'webviewUrl' => 'string',
+        'simpleCanvasSubType' => '\TencentAds\Model\SimpleCanvasSubType',
+        'floatingZone' => '\TencentAds\Model\FloatingZone',
+        'marketingPendantImageId' => 'string',
         'barrageList' => '\TencentAds\Model\BarrageListCreateStruct[]',
+        'countdownSwitch' => 'bool',
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
         'accountId' => 'int'
     ];
@@ -86,9 +106,29 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'clickTrackingUrl' => null,
         'feedsVideoCommentSwitch' => null,
         'unionMarketSwitch' => null,
+        'pageType' => null,
+        'pageSpec' => null,
+        'linkPageType' => null,
+        'linkNameType' => null,
+        'linkPageSpec' => null,
+        'conversionDataType' => null,
+        'conversionTargetType' => null,
+        'qqMiniGameTrackingQueryString' => null,
+        'androidDeepLinkAppId' => null,
+        'iosDeepLinkAppId' => null,
+        'universalLinkUrl' => null,
+        'shareContentSpec' => null,
         'profileId' => 'int64',
+        'componentId' => 'int64',
+        'onlineEnabled' => null,
+        'revisedAdcreativeSpec' => null,
         'videoEndPage' => null,
+        'webviewUrl' => null,
+        'simpleCanvasSubType' => null,
+        'floatingZone' => null,
+        'marketingPendantImageId' => null,
         'barrageList' => null,
+        'countdownSwitch' => null,
         'appGiftPackCode' => null,
         'accountId' => 'int64'
     ];
@@ -128,9 +168,29 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'clickTrackingUrl' => 'click_tracking_url',
         'feedsVideoCommentSwitch' => 'feeds_video_comment_switch',
         'unionMarketSwitch' => 'union_market_switch',
+        'pageType' => 'page_type',
+        'pageSpec' => 'page_spec',
+        'linkPageType' => 'link_page_type',
+        'linkNameType' => 'link_name_type',
+        'linkPageSpec' => 'link_page_spec',
+        'conversionDataType' => 'conversion_data_type',
+        'conversionTargetType' => 'conversion_target_type',
+        'qqMiniGameTrackingQueryString' => 'qq_mini_game_tracking_query_string',
+        'androidDeepLinkAppId' => 'android_deep_link_app_id',
+        'iosDeepLinkAppId' => 'ios_deep_link_app_id',
+        'universalLinkUrl' => 'universal_link_url',
+        'shareContentSpec' => 'share_content_spec',
         'profileId' => 'profile_id',
+        'componentId' => 'component_id',
+        'onlineEnabled' => 'online_enabled',
+        'revisedAdcreativeSpec' => 'revised_adcreative_spec',
         'videoEndPage' => 'video_end_page',
+        'webviewUrl' => 'webview_url',
+        'simpleCanvasSubType' => 'simple_canvas_sub_type',
+        'floatingZone' => 'floating_zone',
+        'marketingPendantImageId' => 'marketing_pendant_image_id',
         'barrageList' => 'barrage_list',
+        'countdownSwitch' => 'countdown_switch',
         'appGiftPackCode' => 'app_gift_pack_code',
         'accountId' => 'account_id'
     ];
@@ -149,9 +209,29 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'clickTrackingUrl' => 'setClickTrackingUrl',
         'feedsVideoCommentSwitch' => 'setFeedsVideoCommentSwitch',
         'unionMarketSwitch' => 'setUnionMarketSwitch',
+        'pageType' => 'setPageType',
+        'pageSpec' => 'setPageSpec',
+        'linkPageType' => 'setLinkPageType',
+        'linkNameType' => 'setLinkNameType',
+        'linkPageSpec' => 'setLinkPageSpec',
+        'conversionDataType' => 'setConversionDataType',
+        'conversionTargetType' => 'setConversionTargetType',
+        'qqMiniGameTrackingQueryString' => 'setQqMiniGameTrackingQueryString',
+        'androidDeepLinkAppId' => 'setAndroidDeepLinkAppId',
+        'iosDeepLinkAppId' => 'setIosDeepLinkAppId',
+        'universalLinkUrl' => 'setUniversalLinkUrl',
+        'shareContentSpec' => 'setShareContentSpec',
         'profileId' => 'setProfileId',
+        'componentId' => 'setComponentId',
+        'onlineEnabled' => 'setOnlineEnabled',
+        'revisedAdcreativeSpec' => 'setRevisedAdcreativeSpec',
         'videoEndPage' => 'setVideoEndPage',
+        'webviewUrl' => 'setWebviewUrl',
+        'simpleCanvasSubType' => 'setSimpleCanvasSubType',
+        'floatingZone' => 'setFloatingZone',
+        'marketingPendantImageId' => 'setMarketingPendantImageId',
         'barrageList' => 'setBarrageList',
+        'countdownSwitch' => 'setCountdownSwitch',
         'appGiftPackCode' => 'setAppGiftPackCode',
         'accountId' => 'setAccountId'
     ];
@@ -170,9 +250,29 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'clickTrackingUrl' => 'getClickTrackingUrl',
         'feedsVideoCommentSwitch' => 'getFeedsVideoCommentSwitch',
         'unionMarketSwitch' => 'getUnionMarketSwitch',
+        'pageType' => 'getPageType',
+        'pageSpec' => 'getPageSpec',
+        'linkPageType' => 'getLinkPageType',
+        'linkNameType' => 'getLinkNameType',
+        'linkPageSpec' => 'getLinkPageSpec',
+        'conversionDataType' => 'getConversionDataType',
+        'conversionTargetType' => 'getConversionTargetType',
+        'qqMiniGameTrackingQueryString' => 'getQqMiniGameTrackingQueryString',
+        'androidDeepLinkAppId' => 'getAndroidDeepLinkAppId',
+        'iosDeepLinkAppId' => 'getIosDeepLinkAppId',
+        'universalLinkUrl' => 'getUniversalLinkUrl',
+        'shareContentSpec' => 'getShareContentSpec',
         'profileId' => 'getProfileId',
+        'componentId' => 'getComponentId',
+        'onlineEnabled' => 'getOnlineEnabled',
+        'revisedAdcreativeSpec' => 'getRevisedAdcreativeSpec',
         'videoEndPage' => 'getVideoEndPage',
+        'webviewUrl' => 'getWebviewUrl',
+        'simpleCanvasSubType' => 'getSimpleCanvasSubType',
+        'floatingZone' => 'getFloatingZone',
+        'marketingPendantImageId' => 'getMarketingPendantImageId',
         'barrageList' => 'getBarrageList',
+        'countdownSwitch' => 'getCountdownSwitch',
         'appGiftPackCode' => 'getAppGiftPackCode',
         'accountId' => 'getAccountId'
     ];
@@ -245,9 +345,29 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['clickTrackingUrl'] = isset($data['clickTrackingUrl']) ? $data['clickTrackingUrl'] : null;
         $this->container['feedsVideoCommentSwitch'] = isset($data['feedsVideoCommentSwitch']) ? $data['feedsVideoCommentSwitch'] : null;
         $this->container['unionMarketSwitch'] = isset($data['unionMarketSwitch']) ? $data['unionMarketSwitch'] : null;
+        $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
+        $this->container['pageSpec'] = isset($data['pageSpec']) ? $data['pageSpec'] : null;
+        $this->container['linkPageType'] = isset($data['linkPageType']) ? $data['linkPageType'] : null;
+        $this->container['linkNameType'] = isset($data['linkNameType']) ? $data['linkNameType'] : null;
+        $this->container['linkPageSpec'] = isset($data['linkPageSpec']) ? $data['linkPageSpec'] : null;
+        $this->container['conversionDataType'] = isset($data['conversionDataType']) ? $data['conversionDataType'] : null;
+        $this->container['conversionTargetType'] = isset($data['conversionTargetType']) ? $data['conversionTargetType'] : null;
+        $this->container['qqMiniGameTrackingQueryString'] = isset($data['qqMiniGameTrackingQueryString']) ? $data['qqMiniGameTrackingQueryString'] : null;
+        $this->container['androidDeepLinkAppId'] = isset($data['androidDeepLinkAppId']) ? $data['androidDeepLinkAppId'] : null;
+        $this->container['iosDeepLinkAppId'] = isset($data['iosDeepLinkAppId']) ? $data['iosDeepLinkAppId'] : null;
+        $this->container['universalLinkUrl'] = isset($data['universalLinkUrl']) ? $data['universalLinkUrl'] : null;
+        $this->container['shareContentSpec'] = isset($data['shareContentSpec']) ? $data['shareContentSpec'] : null;
         $this->container['profileId'] = isset($data['profileId']) ? $data['profileId'] : null;
+        $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
+        $this->container['onlineEnabled'] = isset($data['onlineEnabled']) ? $data['onlineEnabled'] : null;
+        $this->container['revisedAdcreativeSpec'] = isset($data['revisedAdcreativeSpec']) ? $data['revisedAdcreativeSpec'] : null;
         $this->container['videoEndPage'] = isset($data['videoEndPage']) ? $data['videoEndPage'] : null;
+        $this->container['webviewUrl'] = isset($data['webviewUrl']) ? $data['webviewUrl'] : null;
+        $this->container['simpleCanvasSubType'] = isset($data['simpleCanvasSubType']) ? $data['simpleCanvasSubType'] : null;
+        $this->container['floatingZone'] = isset($data['floatingZone']) ? $data['floatingZone'] : null;
+        $this->container['marketingPendantImageId'] = isset($data['marketingPendantImageId']) ? $data['marketingPendantImageId'] : null;
         $this->container['barrageList'] = isset($data['barrageList']) ? $data['barrageList'] : null;
+        $this->container['countdownSwitch'] = isset($data['countdownSwitch']) ? $data['countdownSwitch'] : null;
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
@@ -469,6 +589,294 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets pageType
+     *
+     * @return \TencentAds\Model\DestinationType|mixed
+     */
+    public function getPageType()
+    {
+        return $this->container['pageType'];
+    }
+
+    /**
+     * Sets pageType
+     *
+     * @param \TencentAds\Model\DestinationType|mixed $pageType pageType
+     *
+     * @return $this
+     */
+    public function setPageType($pageType)
+    {
+        $this->container['pageType'] = $pageType;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageSpec
+     *
+     * @return \TencentAds\Model\DynamicCreativePageSpec|mixed
+     */
+    public function getPageSpec()
+    {
+        return $this->container['pageSpec'];
+    }
+
+    /**
+     * Sets pageSpec
+     *
+     * @param \TencentAds\Model\DynamicCreativePageSpec|mixed $pageSpec pageSpec
+     *
+     * @return $this
+     */
+    public function setPageSpec($pageSpec)
+    {
+        $this->container['pageSpec'] = $pageSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets linkPageType
+     *
+     * @return \TencentAds\Model\LinkPageType|mixed
+     */
+    public function getLinkPageType()
+    {
+        return $this->container['linkPageType'];
+    }
+
+    /**
+     * Sets linkPageType
+     *
+     * @param \TencentAds\Model\LinkPageType|mixed $linkPageType linkPageType
+     *
+     * @return $this
+     */
+    public function setLinkPageType($linkPageType)
+    {
+        $this->container['linkPageType'] = $linkPageType;
+
+        return $this;
+    }
+
+    /**
+     * Gets linkNameType
+     *
+     * @return \TencentAds\Model\LinkUrlLinkNameType|mixed
+     */
+    public function getLinkNameType()
+    {
+        return $this->container['linkNameType'];
+    }
+
+    /**
+     * Sets linkNameType
+     *
+     * @param \TencentAds\Model\LinkUrlLinkNameType|mixed $linkNameType linkNameType
+     *
+     * @return $this
+     */
+    public function setLinkNameType($linkNameType)
+    {
+        $this->container['linkNameType'] = $linkNameType;
+
+        return $this;
+    }
+
+    /**
+     * Gets linkPageSpec
+     *
+     * @return \TencentAds\Model\LinkPageSpec|mixed
+     */
+    public function getLinkPageSpec()
+    {
+        return $this->container['linkPageSpec'];
+    }
+
+    /**
+     * Sets linkPageSpec
+     *
+     * @param \TencentAds\Model\LinkPageSpec|mixed $linkPageSpec linkPageSpec
+     *
+     * @return $this
+     */
+    public function setLinkPageSpec($linkPageSpec)
+    {
+        $this->container['linkPageSpec'] = $linkPageSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets conversionDataType
+     *
+     * @return \TencentAds\Model\ConversionDataType|mixed
+     */
+    public function getConversionDataType()
+    {
+        return $this->container['conversionDataType'];
+    }
+
+    /**
+     * Sets conversionDataType
+     *
+     * @param \TencentAds\Model\ConversionDataType|mixed $conversionDataType conversionDataType
+     *
+     * @return $this
+     */
+    public function setConversionDataType($conversionDataType)
+    {
+        $this->container['conversionDataType'] = $conversionDataType;
+
+        return $this;
+    }
+
+    /**
+     * Gets conversionTargetType
+     *
+     * @return \TencentAds\Model\ConversionTargetType|mixed
+     */
+    public function getConversionTargetType()
+    {
+        return $this->container['conversionTargetType'];
+    }
+
+    /**
+     * Sets conversionTargetType
+     *
+     * @param \TencentAds\Model\ConversionTargetType|mixed $conversionTargetType conversionTargetType
+     *
+     * @return $this
+     */
+    public function setConversionTargetType($conversionTargetType)
+    {
+        $this->container['conversionTargetType'] = $conversionTargetType;
+
+        return $this;
+    }
+
+    /**
+     * Gets qqMiniGameTrackingQueryString
+     *
+     * @return string|mixed
+     */
+    public function getQqMiniGameTrackingQueryString()
+    {
+        return $this->container['qqMiniGameTrackingQueryString'];
+    }
+
+    /**
+     * Sets qqMiniGameTrackingQueryString
+     *
+     * @param string|mixed $qqMiniGameTrackingQueryString qqMiniGameTrackingQueryString
+     *
+     * @return $this
+     */
+    public function setQqMiniGameTrackingQueryString($qqMiniGameTrackingQueryString)
+    {
+        $this->container['qqMiniGameTrackingQueryString'] = $qqMiniGameTrackingQueryString;
+
+        return $this;
+    }
+
+    /**
+     * Gets androidDeepLinkAppId
+     *
+     * @return string|mixed
+     */
+    public function getAndroidDeepLinkAppId()
+    {
+        return $this->container['androidDeepLinkAppId'];
+    }
+
+    /**
+     * Sets androidDeepLinkAppId
+     *
+     * @param string|mixed $androidDeepLinkAppId androidDeepLinkAppId
+     *
+     * @return $this
+     */
+    public function setAndroidDeepLinkAppId($androidDeepLinkAppId)
+    {
+        $this->container['androidDeepLinkAppId'] = $androidDeepLinkAppId;
+
+        return $this;
+    }
+
+    /**
+     * Gets iosDeepLinkAppId
+     *
+     * @return string|mixed
+     */
+    public function getIosDeepLinkAppId()
+    {
+        return $this->container['iosDeepLinkAppId'];
+    }
+
+    /**
+     * Sets iosDeepLinkAppId
+     *
+     * @param string|mixed $iosDeepLinkAppId iosDeepLinkAppId
+     *
+     * @return $this
+     */
+    public function setIosDeepLinkAppId($iosDeepLinkAppId)
+    {
+        $this->container['iosDeepLinkAppId'] = $iosDeepLinkAppId;
+
+        return $this;
+    }
+
+    /**
+     * Gets universalLinkUrl
+     *
+     * @return string|mixed
+     */
+    public function getUniversalLinkUrl()
+    {
+        return $this->container['universalLinkUrl'];
+    }
+
+    /**
+     * Sets universalLinkUrl
+     *
+     * @param string|mixed $universalLinkUrl universalLinkUrl
+     *
+     * @return $this
+     */
+    public function setUniversalLinkUrl($universalLinkUrl)
+    {
+        $this->container['universalLinkUrl'] = $universalLinkUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets shareContentSpec
+     *
+     * @return \TencentAds\Model\ShareContentSpec|mixed
+     */
+    public function getShareContentSpec()
+    {
+        return $this->container['shareContentSpec'];
+    }
+
+    /**
+     * Sets shareContentSpec
+     *
+     * @param \TencentAds\Model\ShareContentSpec|mixed $shareContentSpec shareContentSpec
+     *
+     * @return $this
+     */
+    public function setShareContentSpec($shareContentSpec)
+    {
+        $this->container['shareContentSpec'] = $shareContentSpec;
+
+        return $this;
+    }
+
+    /**
      * Gets profileId
      *
      * @return int|mixed
@@ -488,6 +896,78 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setProfileId($profileId)
     {
         $this->container['profileId'] = $profileId;
+
+        return $this;
+    }
+
+    /**
+     * Gets componentId
+     *
+     * @return int|mixed
+     */
+    public function getComponentId()
+    {
+        return $this->container['componentId'];
+    }
+
+    /**
+     * Sets componentId
+     *
+     * @param int|mixed $componentId componentId
+     *
+     * @return $this
+     */
+    public function setComponentId($componentId)
+    {
+        $this->container['componentId'] = $componentId;
+
+        return $this;
+    }
+
+    /**
+     * Gets onlineEnabled
+     *
+     * @return bool|mixed
+     */
+    public function getOnlineEnabled()
+    {
+        return $this->container['onlineEnabled'];
+    }
+
+    /**
+     * Sets onlineEnabled
+     *
+     * @param bool|mixed $onlineEnabled onlineEnabled
+     *
+     * @return $this
+     */
+    public function setOnlineEnabled($onlineEnabled)
+    {
+        $this->container['onlineEnabled'] = $onlineEnabled;
+
+        return $this;
+    }
+
+    /**
+     * Gets revisedAdcreativeSpec
+     *
+     * @return \TencentAds\Model\RevisedAdcreativeSpec|mixed
+     */
+    public function getRevisedAdcreativeSpec()
+    {
+        return $this->container['revisedAdcreativeSpec'];
+    }
+
+    /**
+     * Sets revisedAdcreativeSpec
+     *
+     * @param \TencentAds\Model\RevisedAdcreativeSpec|mixed $revisedAdcreativeSpec revisedAdcreativeSpec
+     *
+     * @return $this
+     */
+    public function setRevisedAdcreativeSpec($revisedAdcreativeSpec)
+    {
+        $this->container['revisedAdcreativeSpec'] = $revisedAdcreativeSpec;
 
         return $this;
     }
@@ -517,6 +997,102 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets webviewUrl
+     *
+     * @return string|mixed
+     */
+    public function getWebviewUrl()
+    {
+        return $this->container['webviewUrl'];
+    }
+
+    /**
+     * Sets webviewUrl
+     *
+     * @param string|mixed $webviewUrl webviewUrl
+     *
+     * @return $this
+     */
+    public function setWebviewUrl($webviewUrl)
+    {
+        $this->container['webviewUrl'] = $webviewUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets simpleCanvasSubType
+     *
+     * @return \TencentAds\Model\SimpleCanvasSubType|mixed
+     */
+    public function getSimpleCanvasSubType()
+    {
+        return $this->container['simpleCanvasSubType'];
+    }
+
+    /**
+     * Sets simpleCanvasSubType
+     *
+     * @param \TencentAds\Model\SimpleCanvasSubType|mixed $simpleCanvasSubType simpleCanvasSubType
+     *
+     * @return $this
+     */
+    public function setSimpleCanvasSubType($simpleCanvasSubType)
+    {
+        $this->container['simpleCanvasSubType'] = $simpleCanvasSubType;
+
+        return $this;
+    }
+
+    /**
+     * Gets floatingZone
+     *
+     * @return \TencentAds\Model\FloatingZone|mixed
+     */
+    public function getFloatingZone()
+    {
+        return $this->container['floatingZone'];
+    }
+
+    /**
+     * Sets floatingZone
+     *
+     * @param \TencentAds\Model\FloatingZone|mixed $floatingZone floatingZone
+     *
+     * @return $this
+     */
+    public function setFloatingZone($floatingZone)
+    {
+        $this->container['floatingZone'] = $floatingZone;
+
+        return $this;
+    }
+
+    /**
+     * Gets marketingPendantImageId
+     *
+     * @return string|mixed
+     */
+    public function getMarketingPendantImageId()
+    {
+        return $this->container['marketingPendantImageId'];
+    }
+
+    /**
+     * Sets marketingPendantImageId
+     *
+     * @param string|mixed $marketingPendantImageId marketingPendantImageId
+     *
+     * @return $this
+     */
+    public function setMarketingPendantImageId($marketingPendantImageId)
+    {
+        $this->container['marketingPendantImageId'] = $marketingPendantImageId;
+
+        return $this;
+    }
+
+    /**
      * Gets barrageList
      *
      * @return \TencentAds\Model\BarrageListCreateStruct[]|mixed
@@ -536,6 +1112,30 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setBarrageList($barrageList)
     {
         $this->container['barrageList'] = $barrageList;
+
+        return $this;
+    }
+
+    /**
+     * Gets countdownSwitch
+     *
+     * @return bool|mixed
+     */
+    public function getCountdownSwitch()
+    {
+        return $this->container['countdownSwitch'];
+    }
+
+    /**
+     * Sets countdownSwitch
+     *
+     * @param bool|mixed $countdownSwitch countdownSwitch
+     *
+     * @return $this
+     */
+    public function setCountdownSwitch($countdownSwitch)
+    {
+        $this->container['countdownSwitch'] = $countdownSwitch;
 
         return $this;
     }

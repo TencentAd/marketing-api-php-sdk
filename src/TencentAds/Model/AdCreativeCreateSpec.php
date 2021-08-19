@@ -59,7 +59,7 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'adcreativeName' => 'string',
-        'creativeTemplateId' => 'int',
+        'adcreativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\DpAdcreativeCreativeElementsMp',
         'pageType' => '\TencentAds\Model\DestinationType',
         'pageSpec' => '\TencentAds\Model\DpPageSpec',
@@ -73,7 +73,7 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'adcreativeName' => null,
-        'creativeTemplateId' => 'int64',
+        'adcreativeTemplateId' => 'int64',
         'adcreativeElements' => null,
         'pageType' => null,
         'pageSpec' => null,
@@ -108,7 +108,7 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'adcreativeName' => 'adcreative_name',
-        'creativeTemplateId' => 'creative_template_id',
+        'adcreativeTemplateId' => 'adcreative_template_id',
         'adcreativeElements' => 'adcreative_elements',
         'pageType' => 'page_type',
         'pageSpec' => 'page_spec',
@@ -122,7 +122,7 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'adcreativeName' => 'setAdcreativeName',
-        'creativeTemplateId' => 'setCreativeTemplateId',
+        'adcreativeTemplateId' => 'setAdcreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements',
         'pageType' => 'setPageType',
         'pageSpec' => 'setPageSpec',
@@ -136,7 +136,7 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'adcreativeName' => 'getAdcreativeName',
-        'creativeTemplateId' => 'getCreativeTemplateId',
+        'adcreativeTemplateId' => 'getAdcreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements',
         'pageType' => 'getPageType',
         'pageSpec' => 'getPageSpec',
@@ -204,7 +204,7 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['adcreativeName'] = isset($data['adcreativeName']) ? $data['adcreativeName'] : null;
-        $this->container['creativeTemplateId'] = isset($data['creativeTemplateId']) ? $data['creativeTemplateId'] : null;
+        $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
         $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
         $this->container['pageSpec'] = isset($data['pageSpec']) ? $data['pageSpec'] : null;
@@ -260,25 +260,25 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets creativeTemplateId
+     * Gets adcreativeTemplateId
      *
      * @return int|mixed
      */
-    public function getCreativeTemplateId()
+    public function getAdcreativeTemplateId()
     {
-        return $this->container['creativeTemplateId'];
+        return $this->container['adcreativeTemplateId'];
     }
 
     /**
-     * Sets creativeTemplateId
+     * Sets adcreativeTemplateId
      *
-     * @param int|mixed $creativeTemplateId creativeTemplateId
+     * @param int|mixed $adcreativeTemplateId adcreativeTemplateId
      *
      * @return $this
      */
-    public function setCreativeTemplateId($creativeTemplateId)
+    public function setAdcreativeTemplateId($adcreativeTemplateId)
     {
-        $this->container['creativeTemplateId'] = $creativeTemplateId;
+        $this->container['adcreativeTemplateId'] = $adcreativeTemplateId;
 
         return $this;
     }

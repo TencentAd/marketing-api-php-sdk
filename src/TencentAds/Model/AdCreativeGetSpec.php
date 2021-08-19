@@ -60,7 +60,7 @@ class AdCreativeGetSpec implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'adcreativeId' => 'int',
         'adcreativeName' => 'string',
-        'creativeTemplateId' => 'int',
+        'adcreativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\DpAdcreativeCreativeElementsMp',
         'pageType' => '\TencentAds\Model\DestinationType',
         'pageSpec' => '\TencentAds\Model\DpPageSpec',
@@ -75,7 +75,7 @@ class AdCreativeGetSpec implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'adcreativeId' => 'int64',
         'adcreativeName' => null,
-        'creativeTemplateId' => 'int64',
+        'adcreativeTemplateId' => 'int64',
         'adcreativeElements' => null,
         'pageType' => null,
         'pageSpec' => null,
@@ -111,7 +111,7 @@ class AdCreativeGetSpec implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'adcreativeId' => 'adcreative_id',
         'adcreativeName' => 'adcreative_name',
-        'creativeTemplateId' => 'creative_template_id',
+        'adcreativeTemplateId' => 'adcreative_template_id',
         'adcreativeElements' => 'adcreative_elements',
         'pageType' => 'page_type',
         'pageSpec' => 'page_spec',
@@ -126,7 +126,7 @@ class AdCreativeGetSpec implements ModelInterface, ArrayAccess
     protected static $setters = [
         'adcreativeId' => 'setAdcreativeId',
         'adcreativeName' => 'setAdcreativeName',
-        'creativeTemplateId' => 'setCreativeTemplateId',
+        'adcreativeTemplateId' => 'setAdcreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements',
         'pageType' => 'setPageType',
         'pageSpec' => 'setPageSpec',
@@ -141,7 +141,7 @@ class AdCreativeGetSpec implements ModelInterface, ArrayAccess
     protected static $getters = [
         'adcreativeId' => 'getAdcreativeId',
         'adcreativeName' => 'getAdcreativeName',
-        'creativeTemplateId' => 'getCreativeTemplateId',
+        'adcreativeTemplateId' => 'getAdcreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements',
         'pageType' => 'getPageType',
         'pageSpec' => 'getPageSpec',
@@ -210,7 +210,7 @@ class AdCreativeGetSpec implements ModelInterface, ArrayAccess
     {
         $this->container['adcreativeId'] = isset($data['adcreativeId']) ? $data['adcreativeId'] : null;
         $this->container['adcreativeName'] = isset($data['adcreativeName']) ? $data['adcreativeName'] : null;
-        $this->container['creativeTemplateId'] = isset($data['creativeTemplateId']) ? $data['creativeTemplateId'] : null;
+        $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
         $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
         $this->container['pageSpec'] = isset($data['pageSpec']) ? $data['pageSpec'] : null;
@@ -290,25 +290,25 @@ class AdCreativeGetSpec implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets creativeTemplateId
+     * Gets adcreativeTemplateId
      *
      * @return int|mixed
      */
-    public function getCreativeTemplateId()
+    public function getAdcreativeTemplateId()
     {
-        return $this->container['creativeTemplateId'];
+        return $this->container['adcreativeTemplateId'];
     }
 
     /**
-     * Sets creativeTemplateId
+     * Sets adcreativeTemplateId
      *
-     * @param int|mixed $creativeTemplateId creativeTemplateId
+     * @param int|mixed $adcreativeTemplateId adcreativeTemplateId
      *
      * @return $this
      */
-    public function setCreativeTemplateId($creativeTemplateId)
+    public function setAdcreativeTemplateId($adcreativeTemplateId)
     {
-        $this->container['creativeTemplateId'] = $creativeTemplateId;
+        $this->container['adcreativeTemplateId'] = $adcreativeTemplateId;
 
         return $this;
     }

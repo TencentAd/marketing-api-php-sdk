@@ -59,7 +59,8 @@ class DpWriteTargetingSetting implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'age' => '\TencentAds\Model\AgeStruct[]',
-        'gender' => 'string[]'
+        'gender' => 'string[]',
+        'education' => 'string[]'
     ];
 
     /**
@@ -69,7 +70,8 @@ class DpWriteTargetingSetting implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'age' => null,
-        'gender' => null
+        'gender' => null,
+        'education' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class DpWriteTargetingSetting implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'age' => 'age',
-        'gender' => 'gender'
+        'gender' => 'gender',
+        'education' => 'education'
     ];
 
     /**
@@ -110,7 +113,8 @@ class DpWriteTargetingSetting implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'age' => 'setAge',
-        'gender' => 'setGender'
+        'gender' => 'setGender',
+        'education' => 'setEducation'
     ];
 
     /**
@@ -120,7 +124,8 @@ class DpWriteTargetingSetting implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'age' => 'getAge',
-        'gender' => 'getGender'
+        'gender' => 'getGender',
+        'education' => 'getEducation'
     ];
 
     /**
@@ -185,6 +190,7 @@ class DpWriteTargetingSetting implements ModelInterface, ArrayAccess
     {
         $this->container['age'] = isset($data['age']) ? $data['age'] : null;
         $this->container['gender'] = isset($data['gender']) ? $data['gender'] : null;
+        $this->container['education'] = isset($data['education']) ? $data['education'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class DpWriteTargetingSetting implements ModelInterface, ArrayAccess
     public function setGender($gender)
     {
         $this->container['gender'] = $gender;
+
+        return $this;
+    }
+
+    /**
+     * Gets education
+     *
+     * @return string[]|mixed
+     */
+    public function getEducation()
+    {
+        return $this->container['education'];
+    }
+
+    /**
+     * Sets education
+     *
+     * @param string[]|mixed $education education
+     *
+     * @return $this
+     */
+    public function setEducation($education)
+    {
+        $this->container['education'] = $education;
 
         return $this;
     }
