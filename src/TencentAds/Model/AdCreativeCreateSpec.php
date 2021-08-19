@@ -59,6 +59,7 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'adcreativeName' => 'string',
+        'creativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\DpAdcreativeCreativeElementsMp',
         'pageType' => '\TencentAds\Model\DestinationType',
         'pageSpec' => '\TencentAds\Model\DpPageSpec',
@@ -72,6 +73,7 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'adcreativeName' => null,
+        'creativeTemplateId' => 'int64',
         'adcreativeElements' => null,
         'pageType' => null,
         'pageSpec' => null,
@@ -106,6 +108,7 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'adcreativeName' => 'adcreative_name',
+        'creativeTemplateId' => 'creative_template_id',
         'adcreativeElements' => 'adcreative_elements',
         'pageType' => 'page_type',
         'pageSpec' => 'page_spec',
@@ -119,6 +122,7 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'adcreativeName' => 'setAdcreativeName',
+        'creativeTemplateId' => 'setCreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements',
         'pageType' => 'setPageType',
         'pageSpec' => 'setPageSpec',
@@ -132,6 +136,7 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'adcreativeName' => 'getAdcreativeName',
+        'creativeTemplateId' => 'getCreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements',
         'pageType' => 'getPageType',
         'pageSpec' => 'getPageSpec',
@@ -199,6 +204,7 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['adcreativeName'] = isset($data['adcreativeName']) ? $data['adcreativeName'] : null;
+        $this->container['creativeTemplateId'] = isset($data['creativeTemplateId']) ? $data['creativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
         $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
         $this->container['pageSpec'] = isset($data['pageSpec']) ? $data['pageSpec'] : null;
@@ -249,6 +255,30 @@ class AdCreativeCreateSpec implements ModelInterface, ArrayAccess
     public function setAdcreativeName($adcreativeName)
     {
         $this->container['adcreativeName'] = $adcreativeName;
+
+        return $this;
+    }
+
+    /**
+     * Gets creativeTemplateId
+     *
+     * @return int|mixed
+     */
+    public function getCreativeTemplateId()
+    {
+        return $this->container['creativeTemplateId'];
+    }
+
+    /**
+     * Sets creativeTemplateId
+     *
+     * @param int|mixed $creativeTemplateId creativeTemplateId
+     *
+     * @return $this
+     */
+    public function setCreativeTemplateId($creativeTemplateId)
+    {
+        $this->container['creativeTemplateId'] = $creativeTemplateId;
 
         return $this;
     }

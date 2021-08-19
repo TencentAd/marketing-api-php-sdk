@@ -43,7 +43,7 @@ class AsyncReportFilesApiContainer extends ApiContainer
             $fileId = isset($params['file_id']) ? $params['file_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
             $response = $this->apiInstance->asyncReportFilesGet($accountId, $taskId, $fileId, $fields);
-            return $this->handleResponse($response);
+            return $response;
         });
     }
 
