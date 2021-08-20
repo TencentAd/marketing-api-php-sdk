@@ -5,6 +5,7 @@ use GuzzleHttp\Client;
 use TencentAds\Container\AdDiagnosisApiContainer;
 use TencentAds\Container\AdLabelApiContainer;
 use TencentAds\Container\AdcreativePreviewsApiContainer;
+use TencentAds\Container\AdcreativePreviewsQrcodeApiContainer;
 use TencentAds\Container\AdcreativeTemplateDetailApiContainer;
 use TencentAds\Container\AdcreativeTemplatePreviewApiContainer;
 use TencentAds\Container\AdcreativeTemplatePreviewsApiContainer;
@@ -155,6 +156,9 @@ class App
 
     /** @var AdcreativePreviewsApiContainer */
     public $adcreativePreviewsApiContainer;
+
+    /** @var AdcreativePreviewsQrcodeApiContainer */
+    public $adcreativePreviewsQrcodeApiContainer;
 
     /** @var AdcreativeTemplateDetailApiContainer */
     public $adcreativeTemplateDetailApiContainer;
@@ -616,6 +620,20 @@ class App
             $this->adcreativePreviewsApiContainer = $container;
         }
         return $this->adcreativePreviewsApiContainer;
+    }
+
+
+    /**
+     * @return AdcreativePreviewsQrcodeApiContainer
+     */
+    public function adcreativePreviewsQrcode()
+    {
+        if (empty($this->adcreativePreviewsQrcodeApiContainer)) {
+            $container = new AdcreativePreviewsQrcodeApiContainer();
+            $container->init($this, $this->getClient());
+            $this->adcreativePreviewsQrcodeApiContainer = $container;
+        }
+        return $this->adcreativePreviewsQrcodeApiContainer;
     }
 
 
