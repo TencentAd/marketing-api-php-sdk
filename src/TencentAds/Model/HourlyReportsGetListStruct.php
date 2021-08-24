@@ -123,6 +123,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activatedCost' => 'int',
         'retentionCount' => 'int',
         'retentionRate' => 'double',
+        'appKeyPageRetentionRate' => 'double',
         'retentionCost' => 'int',
         'keyPageViewCount' => 'int',
         'appCommodityPageViewCount' => 'int',
@@ -578,6 +579,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activatedCost' => 'int64',
         'retentionCount' => 'int64',
         'retentionRate' => 'double',
+        'appKeyPageRetentionRate' => 'double',
         'retentionCost' => 'int64',
         'keyPageViewCount' => 'int64',
         'appCommodityPageViewCount' => 'int64',
@@ -1054,6 +1056,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activatedCost' => 'activated_cost',
         'retentionCount' => 'retention_count',
         'retentionRate' => 'retention_rate',
+        'appKeyPageRetentionRate' => 'app_key_page_retention_rate',
         'retentionCost' => 'retention_cost',
         'keyPageViewCount' => 'key_page_view_count',
         'appCommodityPageViewCount' => 'app_commodity_page_view_count',
@@ -1509,6 +1512,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activatedCost' => 'setActivatedCost',
         'retentionCount' => 'setRetentionCount',
         'retentionRate' => 'setRetentionRate',
+        'appKeyPageRetentionRate' => 'setAppKeyPageRetentionRate',
         'retentionCost' => 'setRetentionCost',
         'keyPageViewCount' => 'setKeyPageViewCount',
         'appCommodityPageViewCount' => 'setAppCommodityPageViewCount',
@@ -1964,6 +1968,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activatedCost' => 'getActivatedCost',
         'retentionCount' => 'getRetentionCount',
         'retentionRate' => 'getRetentionRate',
+        'appKeyPageRetentionRate' => 'getAppKeyPageRetentionRate',
         'retentionCost' => 'getRetentionCost',
         'keyPageViewCount' => 'getKeyPageViewCount',
         'appCommodityPageViewCount' => 'getAppCommodityPageViewCount',
@@ -2473,6 +2478,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['activatedCost'] = isset($data['activatedCost']) ? $data['activatedCost'] : null;
         $this->container['retentionCount'] = isset($data['retentionCount']) ? $data['retentionCount'] : null;
         $this->container['retentionRate'] = isset($data['retentionRate']) ? $data['retentionRate'] : null;
+        $this->container['appKeyPageRetentionRate'] = isset($data['appKeyPageRetentionRate']) ? $data['appKeyPageRetentionRate'] : null;
         $this->container['retentionCost'] = isset($data['retentionCost']) ? $data['retentionCost'] : null;
         $this->container['keyPageViewCount'] = isset($data['keyPageViewCount']) ? $data['keyPageViewCount'] : null;
         $this->container['appCommodityPageViewCount'] = isset($data['appCommodityPageViewCount']) ? $data['appCommodityPageViewCount'] : null;
@@ -4437,6 +4443,30 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setRetentionRate($retentionRate)
     {
         $this->container['retentionRate'] = $retentionRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets appKeyPageRetentionRate
+     *
+     * @return double|mixed
+     */
+    public function getAppKeyPageRetentionRate()
+    {
+        return $this->container['appKeyPageRetentionRate'];
+    }
+
+    /**
+     * Sets appKeyPageRetentionRate
+     *
+     * @param double|mixed $appKeyPageRetentionRate appKeyPageRetentionRate
+     *
+     * @return $this
+     */
+    public function setAppKeyPageRetentionRate($appKeyPageRetentionRate)
+    {
+        $this->container['appKeyPageRetentionRate'] = $appKeyPageRetentionRate;
 
         return $this;
     }
