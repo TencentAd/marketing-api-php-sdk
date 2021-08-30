@@ -69,7 +69,8 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
         'followSpec' => '\TencentAds\Model\FollowSpec',
         'serviceSpec' => '\TencentAds\Model\ServiceSpec',
         'wecomSpec' => '\TencentAds\Model\WecomSpec',
-        'useIcon' => 'int'
+        'useIcon' => 'int',
+        'telSpec' => '\TencentAds\Model\TelSpec'
     ];
 
     /**
@@ -89,7 +90,8 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
         'followSpec' => null,
         'serviceSpec' => null,
         'wecomSpec' => null,
-        'useIcon' => 'int64'
+        'useIcon' => 'int64',
+        'telSpec' => null
     ];
 
     /**
@@ -130,7 +132,8 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
         'followSpec' => 'follow_spec',
         'serviceSpec' => 'service_spec',
         'wecomSpec' => 'wecom_spec',
-        'useIcon' => 'use_icon'
+        'useIcon' => 'use_icon',
+        'telSpec' => 'tel_spec'
     ];
 
     /**
@@ -150,7 +153,8 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
         'followSpec' => 'setFollowSpec',
         'serviceSpec' => 'setServiceSpec',
         'wecomSpec' => 'setWecomSpec',
-        'useIcon' => 'setUseIcon'
+        'useIcon' => 'setUseIcon',
+        'telSpec' => 'setTelSpec'
     ];
 
     /**
@@ -170,7 +174,8 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
         'followSpec' => 'getFollowSpec',
         'serviceSpec' => 'getServiceSpec',
         'wecomSpec' => 'getWecomSpec',
-        'useIcon' => 'getUseIcon'
+        'useIcon' => 'getUseIcon',
+        'telSpec' => 'getTelSpec'
     ];
 
     /**
@@ -245,6 +250,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
         $this->container['serviceSpec'] = isset($data['serviceSpec']) ? $data['serviceSpec'] : null;
         $this->container['wecomSpec'] = isset($data['wecomSpec']) ? $data['wecomSpec'] : null;
         $this->container['useIcon'] = isset($data['useIcon']) ? $data['useIcon'] : null;
+        $this->container['telSpec'] = isset($data['telSpec']) ? $data['telSpec'] : null;
     }
 
     /**
@@ -555,6 +561,30 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     public function setUseIcon($useIcon)
     {
         $this->container['useIcon'] = $useIcon;
+
+        return $this;
+    }
+
+    /**
+     * Gets telSpec
+     *
+     * @return \TencentAds\Model\TelSpec|mixed
+     */
+    public function getTelSpec()
+    {
+        return $this->container['telSpec'];
+    }
+
+    /**
+     * Sets telSpec
+     *
+     * @param \TencentAds\Model\TelSpec|mixed $telSpec telSpec
+     *
+     * @return $this
+     */
+    public function setTelSpec($telSpec)
+    {
+        $this->container['telSpec'] = $telSpec;
 
         return $this;
     }

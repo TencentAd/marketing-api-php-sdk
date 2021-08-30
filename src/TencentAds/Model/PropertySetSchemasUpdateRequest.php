@@ -1,6 +1,6 @@
 <?php
 /**
- * DynamicAdcreativeSpecForDc
+ * PropertySetSchemasUpdateRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DynamicAdcreativeSpecForDc Class Doc Comment
+ * PropertySetSchemasUpdateRequest Class Doc Comment
  *
  * @category Class
- * @description 动态商品广告属性
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
+class PropertySetSchemasUpdateRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dynamic_adcreative_spec_for_dc';
+    protected static $swaggerModelName = 'PropertySetSchemasUpdateRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,9 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'productCatalogId' => 'int',
-        'productMode' => '\TencentAds\Model\AdNum',
-        'productSource' => 'string'
+        'accountId' => 'int',
+        'propertySetId' => 'int',
+        'schemas' => '\TencentAds\Model\Schema[]'
     ];
 
     /**
@@ -69,9 +68,9 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'productCatalogId' => 'int64',
-        'productMode' => null,
-        'productSource' => null
+        'accountId' => 'int64',
+        'propertySetId' => 'int64',
+        'schemas' => null
     ];
 
     /**
@@ -101,9 +100,9 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'productCatalogId' => 'product_catalog_id',
-        'productMode' => 'product_mode',
-        'productSource' => 'product_source'
+        'accountId' => 'account_id',
+        'propertySetId' => 'property_set_id',
+        'schemas' => 'schemas'
     ];
 
     /**
@@ -112,9 +111,9 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'productCatalogId' => 'setProductCatalogId',
-        'productMode' => 'setProductMode',
-        'productSource' => 'setProductSource'
+        'accountId' => 'setAccountId',
+        'propertySetId' => 'setPropertySetId',
+        'schemas' => 'setSchemas'
     ];
 
     /**
@@ -123,9 +122,9 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'productCatalogId' => 'getProductCatalogId',
-        'productMode' => 'getProductMode',
-        'productSource' => 'getProductSource'
+        'accountId' => 'getAccountId',
+        'propertySetId' => 'getPropertySetId',
+        'schemas' => 'getSchemas'
     ];
 
     /**
@@ -188,9 +187,9 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
-        $this->container['productMode'] = isset($data['productMode']) ? $data['productMode'] : null;
-        $this->container['productSource'] = isset($data['productSource']) ? $data['productSource'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['propertySetId'] = isset($data['propertySetId']) ? $data['propertySetId'] : null;
+        $this->container['schemas'] = isset($data['schemas']) ? $data['schemas'] : null;
     }
 
     /**
@@ -218,73 +217,73 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets productCatalogId
+     * Gets accountId
      *
      * @return int|mixed
      */
-    public function getProductCatalogId()
+    public function getAccountId()
     {
-        return $this->container['productCatalogId'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets productCatalogId
+     * Sets accountId
      *
-     * @param int|mixed $productCatalogId productCatalogId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setProductCatalogId($productCatalogId)
+    public function setAccountId($accountId)
     {
-        $this->container['productCatalogId'] = $productCatalogId;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }
 
     /**
-     * Gets productMode
+     * Gets propertySetId
      *
-     * @return \TencentAds\Model\AdNum|mixed
+     * @return int|mixed
      */
-    public function getProductMode()
+    public function getPropertySetId()
     {
-        return $this->container['productMode'];
+        return $this->container['propertySetId'];
     }
 
     /**
-     * Sets productMode
+     * Sets propertySetId
      *
-     * @param \TencentAds\Model\AdNum|mixed $productMode productMode
+     * @param int|mixed $propertySetId propertySetId
      *
      * @return $this
      */
-    public function setProductMode($productMode)
+    public function setPropertySetId($propertySetId)
     {
-        $this->container['productMode'] = $productMode;
+        $this->container['propertySetId'] = $propertySetId;
 
         return $this;
     }
 
     /**
-     * Gets productSource
+     * Gets schemas
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\Schema[]|mixed
      */
-    public function getProductSource()
+    public function getSchemas()
     {
-        return $this->container['productSource'];
+        return $this->container['schemas'];
     }
 
     /**
-     * Sets productSource
+     * Sets schemas
      *
-     * @param string|mixed $productSource productSource
+     * @param \TencentAds\Model\Schema[]|mixed $schemas schemas
      *
      * @return $this
      */
-    public function setProductSource($productSource)
+    public function setSchemas($schemas)
     {
-        $this->container['productSource'] = $productSource;
+        $this->container['schemas'] = $schemas;
 
         return $this;
     }

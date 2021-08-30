@@ -1,6 +1,6 @@
 <?php
 /**
- * DynamicAdcreativeSpecForDc
+ * PropertySetSchemasUpdateResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DynamicAdcreativeSpecForDc Class Doc Comment
+ * PropertySetSchemasUpdateResponse Class Doc Comment
  *
  * @category Class
- * @description 动态商品广告属性
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
+class PropertySetSchemasUpdateResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dynamic_adcreative_spec_for_dc';
+    protected static $swaggerModelName = 'PropertySetSchemasUpdateResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,10 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'productCatalogId' => 'int',
-        'productMode' => '\TencentAds\Model\AdNum',
-        'productSource' => 'string'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]'
     ];
 
     /**
@@ -69,9 +69,10 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'productCatalogId' => 'int64',
-        'productMode' => null,
-        'productSource' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null
     ];
 
     /**
@@ -101,9 +102,10 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'productCatalogId' => 'product_catalog_id',
-        'productMode' => 'product_mode',
-        'productSource' => 'product_source'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors'
     ];
 
     /**
@@ -112,9 +114,10 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'productCatalogId' => 'setProductCatalogId',
-        'productMode' => 'setProductMode',
-        'productSource' => 'setProductSource'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors'
     ];
 
     /**
@@ -123,9 +126,10 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'productCatalogId' => 'getProductCatalogId',
-        'productMode' => 'getProductMode',
-        'productSource' => 'getProductSource'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors'
     ];
 
     /**
@@ -188,9 +192,10 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
-        $this->container['productMode'] = isset($data['productMode']) ? $data['productMode'] : null;
-        $this->container['productSource'] = isset($data['productSource']) ? $data['productSource'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
     }
 
     /**
@@ -218,73 +223,97 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets productCatalogId
+     * Gets code
      *
      * @return int|mixed
      */
-    public function getProductCatalogId()
+    public function getCode()
     {
-        return $this->container['productCatalogId'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets productCatalogId
+     * Sets code
      *
-     * @param int|mixed $productCatalogId productCatalogId
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setProductCatalogId($productCatalogId)
+    public function setCode($code)
     {
-        $this->container['productCatalogId'] = $productCatalogId;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets productMode
-     *
-     * @return \TencentAds\Model\AdNum|mixed
-     */
-    public function getProductMode()
-    {
-        return $this->container['productMode'];
-    }
-
-    /**
-     * Sets productMode
-     *
-     * @param \TencentAds\Model\AdNum|mixed $productMode productMode
-     *
-     * @return $this
-     */
-    public function setProductMode($productMode)
-    {
-        $this->container['productMode'] = $productMode;
-
-        return $this;
-    }
-
-    /**
-     * Gets productSource
+     * Gets message
      *
      * @return string|mixed
      */
-    public function getProductSource()
+    public function getMessage()
     {
-        return $this->container['productSource'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets productSource
+     * Sets message
      *
-     * @param string|mixed $productSource productSource
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setProductSource($productSource)
+    public function setMessage($message)
     {
-        $this->container['productSource'] = $productSource;
+        $this->container['message'] = $message;
+
+        return $this;
+    }
+
+    /**
+     * Gets messageCn
+     *
+     * @return string|mixed
+     */
+    public function getMessageCn()
+    {
+        return $this->container['messageCn'];
+    }
+
+    /**
+     * Sets messageCn
+     *
+     * @param string|mixed $messageCn messageCn
+     *
+     * @return $this
+     */
+    public function setMessageCn($messageCn)
+    {
+        $this->container['messageCn'] = $messageCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets errors
+     *
+     * @return \TencentAds\Model\ApiErrorStruct[]|mixed
+     */
+    public function getErrors()
+    {
+        return $this->container['errors'];
+    }
+
+    /**
+     * Sets errors
+     *
+     * @param \TencentAds\Model\ApiErrorStruct[]|mixed $errors errors
+     *
+     * @return $this
+     */
+    public function setErrors($errors)
+    {
+        $this->container['errors'] = $errors;
 
         return $this;
     }

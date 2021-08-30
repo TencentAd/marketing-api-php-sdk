@@ -1,6 +1,6 @@
 <?php
 /**
- * DynamicAdcreativeSpecForDc
+ * TelSpec
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DynamicAdcreativeSpecForDc Class Doc Comment
+ * TelSpec Class Doc Comment
  *
  * @category Class
- * @description 动态商品广告属性
+ * @description 电话组件信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
+class TelSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dynamic_adcreative_spec_for_dc';
+    protected static $swaggerModelName = 'tel_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,8 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'productCatalogId' => 'int',
-        'productMode' => '\TencentAds\Model\AdNum',
-        'productSource' => 'string'
+        'title' => 'string',
+        'phoneNum' => 'string'
     ];
 
     /**
@@ -69,9 +68,8 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'productCatalogId' => 'int64',
-        'productMode' => null,
-        'productSource' => null
+        'title' => null,
+        'phoneNum' => null
     ];
 
     /**
@@ -101,9 +99,8 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'productCatalogId' => 'product_catalog_id',
-        'productMode' => 'product_mode',
-        'productSource' => 'product_source'
+        'title' => 'title',
+        'phoneNum' => 'phone_num'
     ];
 
     /**
@@ -112,9 +109,8 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'productCatalogId' => 'setProductCatalogId',
-        'productMode' => 'setProductMode',
-        'productSource' => 'setProductSource'
+        'title' => 'setTitle',
+        'phoneNum' => 'setPhoneNum'
     ];
 
     /**
@@ -123,9 +119,8 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'productCatalogId' => 'getProductCatalogId',
-        'productMode' => 'getProductMode',
-        'productSource' => 'getProductSource'
+        'title' => 'getTitle',
+        'phoneNum' => 'getPhoneNum'
     ];
 
     /**
@@ -188,9 +183,8 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
-        $this->container['productMode'] = isset($data['productMode']) ? $data['productMode'] : null;
-        $this->container['productSource'] = isset($data['productSource']) ? $data['productSource'] : null;
+        $this->container['title'] = isset($data['title']) ? $data['title'] : null;
+        $this->container['phoneNum'] = isset($data['phoneNum']) ? $data['phoneNum'] : null;
     }
 
     /**
@@ -218,73 +212,49 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets productCatalogId
-     *
-     * @return int|mixed
-     */
-    public function getProductCatalogId()
-    {
-        return $this->container['productCatalogId'];
-    }
-
-    /**
-     * Sets productCatalogId
-     *
-     * @param int|mixed $productCatalogId productCatalogId
-     *
-     * @return $this
-     */
-    public function setProductCatalogId($productCatalogId)
-    {
-        $this->container['productCatalogId'] = $productCatalogId;
-
-        return $this;
-    }
-
-    /**
-     * Gets productMode
-     *
-     * @return \TencentAds\Model\AdNum|mixed
-     */
-    public function getProductMode()
-    {
-        return $this->container['productMode'];
-    }
-
-    /**
-     * Sets productMode
-     *
-     * @param \TencentAds\Model\AdNum|mixed $productMode productMode
-     *
-     * @return $this
-     */
-    public function setProductMode($productMode)
-    {
-        $this->container['productMode'] = $productMode;
-
-        return $this;
-    }
-
-    /**
-     * Gets productSource
+     * Gets title
      *
      * @return string|mixed
      */
-    public function getProductSource()
+    public function getTitle()
     {
-        return $this->container['productSource'];
+        return $this->container['title'];
     }
 
     /**
-     * Sets productSource
+     * Sets title
      *
-     * @param string|mixed $productSource productSource
+     * @param string|mixed $title title
      *
      * @return $this
      */
-    public function setProductSource($productSource)
+    public function setTitle($title)
     {
-        $this->container['productSource'] = $productSource;
+        $this->container['title'] = $title;
+
+        return $this;
+    }
+
+    /**
+     * Gets phoneNum
+     *
+     * @return string|mixed
+     */
+    public function getPhoneNum()
+    {
+        return $this->container['phoneNum'];
+    }
+
+    /**
+     * Sets phoneNum
+     *
+     * @param string|mixed $phoneNum phoneNum
+     *
+     * @return $this
+     */
+    public function setPhoneNum($phoneNum)
+    {
+        $this->container['phoneNum'] = $phoneNum;
 
         return $this;
     }

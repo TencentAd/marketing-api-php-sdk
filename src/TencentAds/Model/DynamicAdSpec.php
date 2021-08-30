@@ -59,7 +59,7 @@ class DynamicAdSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'productCatalogId' => 'int',
-        'productMode' => '\TencentAds\Model\ProductMode',
+        'productMode' => '\TencentAds\Model\AdNum',
         'productSource' => 'string',
         'productRecommendMethods' => 'int[]'
     ];
@@ -250,7 +250,7 @@ class DynamicAdSpec implements ModelInterface, ArrayAccess
     /**
      * Gets productMode
      *
-     * @return \TencentAds\Model\ProductMode|mixed
+     * @return \TencentAds\Model\AdNum|mixed
      */
     public function getProductMode()
     {
@@ -260,7 +260,7 @@ class DynamicAdSpec implements ModelInterface, ArrayAccess
     /**
      * Sets productMode
      *
-     * @param \TencentAds\Model\ProductMode|mixed $productMode productMode
+     * @param \TencentAds\Model\AdNum|mixed $productMode productMode
      *
      * @return $this
      */

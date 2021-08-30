@@ -73,7 +73,9 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'isDeleted' => 'bool',
         'accessStatus' => '\TencentAds\Model\AccessStatus',
         'createSourceType' => '\TencentAds\Model\CreateSourceType',
-        'appAndroidChannelPackageId' => 'string'
+        'appAndroidChannelPackageId' => 'string',
+        'promotedObjectId' => 'string',
+        'conversionScene' => '\TencentAds\Model\ConversionScene'
     ];
 
     /**
@@ -97,7 +99,9 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'isDeleted' => null,
         'accessStatus' => null,
         'createSourceType' => null,
-        'appAndroidChannelPackageId' => null
+        'appAndroidChannelPackageId' => null,
+        'promotedObjectId' => null,
+        'conversionScene' => null
     ];
 
     /**
@@ -142,7 +146,9 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'isDeleted' => 'is_deleted',
         'accessStatus' => 'access_status',
         'createSourceType' => 'create_source_type',
-        'appAndroidChannelPackageId' => 'app_android_channel_package_id'
+        'appAndroidChannelPackageId' => 'app_android_channel_package_id',
+        'promotedObjectId' => 'promoted_object_id',
+        'conversionScene' => 'conversion_scene'
     ];
 
     /**
@@ -166,7 +172,9 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'isDeleted' => 'setIsDeleted',
         'accessStatus' => 'setAccessStatus',
         'createSourceType' => 'setCreateSourceType',
-        'appAndroidChannelPackageId' => 'setAppAndroidChannelPackageId'
+        'appAndroidChannelPackageId' => 'setAppAndroidChannelPackageId',
+        'promotedObjectId' => 'setPromotedObjectId',
+        'conversionScene' => 'setConversionScene'
     ];
 
     /**
@@ -190,7 +198,9 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'isDeleted' => 'getIsDeleted',
         'accessStatus' => 'getAccessStatus',
         'createSourceType' => 'getCreateSourceType',
-        'appAndroidChannelPackageId' => 'getAppAndroidChannelPackageId'
+        'appAndroidChannelPackageId' => 'getAppAndroidChannelPackageId',
+        'promotedObjectId' => 'getPromotedObjectId',
+        'conversionScene' => 'getConversionScene'
     ];
 
     /**
@@ -269,6 +279,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['accessStatus'] = isset($data['accessStatus']) ? $data['accessStatus'] : null;
         $this->container['createSourceType'] = isset($data['createSourceType']) ? $data['createSourceType'] : null;
         $this->container['appAndroidChannelPackageId'] = isset($data['appAndroidChannelPackageId']) ? $data['appAndroidChannelPackageId'] : null;
+        $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
+        $this->container['conversionScene'] = isset($data['conversionScene']) ? $data['conversionScene'] : null;
     }
 
     /**
@@ -675,6 +687,54 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     public function setAppAndroidChannelPackageId($appAndroidChannelPackageId)
     {
         $this->container['appAndroidChannelPackageId'] = $appAndroidChannelPackageId;
+
+        return $this;
+    }
+
+    /**
+     * Gets promotedObjectId
+     *
+     * @return string|mixed
+     */
+    public function getPromotedObjectId()
+    {
+        return $this->container['promotedObjectId'];
+    }
+
+    /**
+     * Sets promotedObjectId
+     *
+     * @param string|mixed $promotedObjectId promotedObjectId
+     *
+     * @return $this
+     */
+    public function setPromotedObjectId($promotedObjectId)
+    {
+        $this->container['promotedObjectId'] = $promotedObjectId;
+
+        return $this;
+    }
+
+    /**
+     * Gets conversionScene
+     *
+     * @return \TencentAds\Model\ConversionScene|mixed
+     */
+    public function getConversionScene()
+    {
+        return $this->container['conversionScene'];
+    }
+
+    /**
+     * Sets conversionScene
+     *
+     * @param \TencentAds\Model\ConversionScene|mixed $conversionScene conversionScene
+     *
+     * @return $this
+     */
+    public function setConversionScene($conversionScene)
+    {
+        $this->container['conversionScene'] = $conversionScene;
 
         return $this;
     }

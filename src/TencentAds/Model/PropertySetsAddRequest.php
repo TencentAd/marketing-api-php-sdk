@@ -1,6 +1,6 @@
 <?php
 /**
- * DynamicAdcreativeSpecForDc
+ * PropertySetsAddRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DynamicAdcreativeSpecForDc Class Doc Comment
+ * PropertySetsAddRequest Class Doc Comment
  *
  * @category Class
- * @description 动态商品广告属性
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
+class PropertySetsAddRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dynamic_adcreative_spec_for_dc';
+    protected static $swaggerModelName = 'PropertySetsAddRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,10 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'productCatalogId' => 'int',
-        'productMode' => '\TencentAds\Model\AdNum',
-        'productSource' => 'string'
+        'accountId' => 'int',
+        'name' => 'string',
+        'icon' => 'string',
+        'cooperated' => 'bool'
     ];
 
     /**
@@ -69,9 +69,10 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'productCatalogId' => 'int64',
-        'productMode' => null,
-        'productSource' => null
+        'accountId' => 'int64',
+        'name' => null,
+        'icon' => null,
+        'cooperated' => null
     ];
 
     /**
@@ -101,9 +102,10 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'productCatalogId' => 'product_catalog_id',
-        'productMode' => 'product_mode',
-        'productSource' => 'product_source'
+        'accountId' => 'account_id',
+        'name' => 'name',
+        'icon' => 'icon',
+        'cooperated' => 'cooperated'
     ];
 
     /**
@@ -112,9 +114,10 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'productCatalogId' => 'setProductCatalogId',
-        'productMode' => 'setProductMode',
-        'productSource' => 'setProductSource'
+        'accountId' => 'setAccountId',
+        'name' => 'setName',
+        'icon' => 'setIcon',
+        'cooperated' => 'setCooperated'
     ];
 
     /**
@@ -123,9 +126,10 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'productCatalogId' => 'getProductCatalogId',
-        'productMode' => 'getProductMode',
-        'productSource' => 'getProductSource'
+        'accountId' => 'getAccountId',
+        'name' => 'getName',
+        'icon' => 'getIcon',
+        'cooperated' => 'getCooperated'
     ];
 
     /**
@@ -188,9 +192,10 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
-        $this->container['productMode'] = isset($data['productMode']) ? $data['productMode'] : null;
-        $this->container['productSource'] = isset($data['productSource']) ? $data['productSource'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
+        $this->container['icon'] = isset($data['icon']) ? $data['icon'] : null;
+        $this->container['cooperated'] = isset($data['cooperated']) ? $data['cooperated'] : null;
     }
 
     /**
@@ -218,73 +223,97 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets productCatalogId
+     * Gets accountId
      *
      * @return int|mixed
      */
-    public function getProductCatalogId()
+    public function getAccountId()
     {
-        return $this->container['productCatalogId'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets productCatalogId
+     * Sets accountId
      *
-     * @param int|mixed $productCatalogId productCatalogId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setProductCatalogId($productCatalogId)
+    public function setAccountId($accountId)
     {
-        $this->container['productCatalogId'] = $productCatalogId;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }
 
     /**
-     * Gets productMode
-     *
-     * @return \TencentAds\Model\AdNum|mixed
-     */
-    public function getProductMode()
-    {
-        return $this->container['productMode'];
-    }
-
-    /**
-     * Sets productMode
-     *
-     * @param \TencentAds\Model\AdNum|mixed $productMode productMode
-     *
-     * @return $this
-     */
-    public function setProductMode($productMode)
-    {
-        $this->container['productMode'] = $productMode;
-
-        return $this;
-    }
-
-    /**
-     * Gets productSource
+     * Gets name
      *
      * @return string|mixed
      */
-    public function getProductSource()
+    public function getName()
     {
-        return $this->container['productSource'];
+        return $this->container['name'];
     }
 
     /**
-     * Sets productSource
+     * Sets name
      *
-     * @param string|mixed $productSource productSource
+     * @param string|mixed $name name
      *
      * @return $this
      */
-    public function setProductSource($productSource)
+    public function setName($name)
     {
-        $this->container['productSource'] = $productSource;
+        $this->container['name'] = $name;
+
+        return $this;
+    }
+
+    /**
+     * Gets icon
+     *
+     * @return string|mixed
+     */
+    public function getIcon()
+    {
+        return $this->container['icon'];
+    }
+
+    /**
+     * Sets icon
+     *
+     * @param string|mixed $icon icon
+     *
+     * @return $this
+     */
+    public function setIcon($icon)
+    {
+        $this->container['icon'] = $icon;
+
+        return $this;
+    }
+
+    /**
+     * Gets cooperated
+     *
+     * @return bool|mixed
+     */
+    public function getCooperated()
+    {
+        return $this->container['cooperated'];
+    }
+
+    /**
+     * Sets cooperated
+     *
+     * @param bool|mixed $cooperated cooperated
+     *
+     * @return $this
+     */
+    public function setCooperated($cooperated)
+    {
+        $this->container['cooperated'] = $cooperated;
 
         return $this;
     }

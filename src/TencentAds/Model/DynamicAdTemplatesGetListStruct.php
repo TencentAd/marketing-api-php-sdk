@@ -61,7 +61,7 @@ class DynamicAdTemplatesGetListStruct implements ModelInterface, ArrayAccess
         'dynamicAdTemplateId' => 'int',
         'dynamicAdTemplateName' => 'string',
         'dynamicAdTemplateType' => '\TencentAds\Model\DynamicAdTemplateType',
-        'productItemDisplayQuantity' => '\TencentAds\Model\ProductMode',
+        'productItemDisplayQuantity' => '\TencentAds\Model\AdNum',
         'dynamicAdTemplateWidth' => 'int',
         'dynamicAdTemplateHeight' => 'int',
         'imageUrl' => 'string',
@@ -322,7 +322,7 @@ class DynamicAdTemplatesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets productItemDisplayQuantity
      *
-     * @return \TencentAds\Model\ProductMode|mixed
+     * @return \TencentAds\Model\AdNum|mixed
      */
     public function getProductItemDisplayQuantity()
     {
@@ -332,7 +332,7 @@ class DynamicAdTemplatesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets productItemDisplayQuantity
      *
-     * @param \TencentAds\Model\ProductMode|mixed $productItemDisplayQuantity productItemDisplayQuantity
+     * @param \TencentAds\Model\AdNum|mixed $productItemDisplayQuantity productItemDisplayQuantity
      *
      * @return $this
      */

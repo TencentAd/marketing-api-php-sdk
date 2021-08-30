@@ -59,7 +59,7 @@ class DynamicAdcreativeSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'productCatalogId' => 'int',
-        'productMode' => '\TencentAds\Model\ProductMode',
+        'productMode' => '\TencentAds\Model\AdNum',
         'productSource' => 'string',
         'productExposureQuantityMode' => '\TencentAds\Model\ProductItemsQuantity',
         'landingPageUrlType' => '\TencentAds\Model\LandingPageUrlType'
@@ -256,7 +256,7 @@ class DynamicAdcreativeSpec implements ModelInterface, ArrayAccess
     /**
      * Gets productMode
      *
-     * @return \TencentAds\Model\ProductMode|mixed
+     * @return \TencentAds\Model\AdNum|mixed
      */
     public function getProductMode()
     {
@@ -266,7 +266,7 @@ class DynamicAdcreativeSpec implements ModelInterface, ArrayAccess
     /**
      * Sets productMode
      *
-     * @param \TencentAds\Model\ProductMode|mixed $productMode productMode
+     * @param \TencentAds\Model\AdNum|mixed $productMode productMode
      *
      * @return $this
      */

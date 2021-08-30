@@ -1,6 +1,6 @@
 <?php
 /**
- * DynamicAdcreativeSpecForDc
+ * PropertySetsGetResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DynamicAdcreativeSpecForDc Class Doc Comment
+ * PropertySetsGetResponseData Class Doc Comment
  *
  * @category Class
- * @description 动态商品广告属性
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
+class PropertySetsGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dynamic_adcreative_spec_for_dc';
+    protected static $swaggerModelName = 'PropertySetsGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,8 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'productCatalogId' => 'int',
-        'productMode' => '\TencentAds\Model\AdNum',
-        'productSource' => 'string'
+        'list' => '\TencentAds\Model\PropertySet[]',
+        'pageInfo' => '\TencentAds\Model\PageInfo'
     ];
 
     /**
@@ -69,9 +67,8 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'productCatalogId' => 'int64',
-        'productMode' => null,
-        'productSource' => null
+        'list' => null,
+        'pageInfo' => null
     ];
 
     /**
@@ -101,9 +98,8 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'productCatalogId' => 'product_catalog_id',
-        'productMode' => 'product_mode',
-        'productSource' => 'product_source'
+        'list' => 'list',
+        'pageInfo' => 'page_info'
     ];
 
     /**
@@ -112,9 +108,8 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'productCatalogId' => 'setProductCatalogId',
-        'productMode' => 'setProductMode',
-        'productSource' => 'setProductSource'
+        'list' => 'setList',
+        'pageInfo' => 'setPageInfo'
     ];
 
     /**
@@ -123,9 +118,8 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'productCatalogId' => 'getProductCatalogId',
-        'productMode' => 'getProductMode',
-        'productSource' => 'getProductSource'
+        'list' => 'getList',
+        'pageInfo' => 'getPageInfo'
     ];
 
     /**
@@ -188,9 +182,8 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
-        $this->container['productMode'] = isset($data['productMode']) ? $data['productMode'] : null;
-        $this->container['productSource'] = isset($data['productSource']) ? $data['productSource'] : null;
+        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
+        $this->container['pageInfo'] = isset($data['pageInfo']) ? $data['pageInfo'] : null;
     }
 
     /**
@@ -218,73 +211,49 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets productCatalogId
+     * Gets list
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\PropertySet[]|mixed
      */
-    public function getProductCatalogId()
+    public function getList()
     {
-        return $this->container['productCatalogId'];
+        return $this->container['list'];
     }
 
     /**
-     * Sets productCatalogId
+     * Sets list
      *
-     * @param int|mixed $productCatalogId productCatalogId
+     * @param \TencentAds\Model\PropertySet[]|mixed $list list
      *
      * @return $this
      */
-    public function setProductCatalogId($productCatalogId)
+    public function setList($list)
     {
-        $this->container['productCatalogId'] = $productCatalogId;
+        $this->container['list'] = $list;
 
         return $this;
     }
 
     /**
-     * Gets productMode
+     * Gets pageInfo
      *
-     * @return \TencentAds\Model\AdNum|mixed
+     * @return \TencentAds\Model\PageInfo|mixed
      */
-    public function getProductMode()
+    public function getPageInfo()
     {
-        return $this->container['productMode'];
+        return $this->container['pageInfo'];
     }
 
     /**
-     * Sets productMode
+     * Sets pageInfo
      *
-     * @param \TencentAds\Model\AdNum|mixed $productMode productMode
+     * @param \TencentAds\Model\PageInfo|mixed $pageInfo pageInfo
      *
      * @return $this
      */
-    public function setProductMode($productMode)
+    public function setPageInfo($pageInfo)
     {
-        $this->container['productMode'] = $productMode;
-
-        return $this;
-    }
-
-    /**
-     * Gets productSource
-     *
-     * @return string|mixed
-     */
-    public function getProductSource()
-    {
-        return $this->container['productSource'];
-    }
-
-    /**
-     * Sets productSource
-     *
-     * @param string|mixed $productSource productSource
-     *
-     * @return $this
-     */
-    public function setProductSource($productSource)
-    {
-        $this->container['productSource'] = $productSource;
+        $this->container['pageInfo'] = $pageInfo;
 
         return $this;
     }

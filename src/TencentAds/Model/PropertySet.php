@@ -1,6 +1,6 @@
 <?php
 /**
- * DynamicAdcreativeSpecForDc
+ * PropertySet
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DynamicAdcreativeSpecForDc Class Doc Comment
+ * PropertySet Class Doc Comment
  *
  * @category Class
- * @description 动态商品广告属性
+ * @description PropertySet返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
+class PropertySet implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dynamic_adcreative_spec_for_dc';
+    protected static $swaggerModelName = 'property_set';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,14 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'productCatalogId' => 'int',
-        'productMode' => '\TencentAds\Model\AdNum',
-        'productSource' => 'string'
+        'propertySetId' => 'int',
+        'accountId' => 'int',
+        'name' => 'string',
+        'icon' => 'string',
+        'cooperated' => 'bool',
+        'configured' => 'bool',
+        'activated' => 'bool',
+        'createdTime' => 'string'
     ];
 
     /**
@@ -69,9 +74,14 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'productCatalogId' => 'int64',
-        'productMode' => null,
-        'productSource' => null
+        'propertySetId' => 'int64',
+        'accountId' => 'int64',
+        'name' => null,
+        'icon' => null,
+        'cooperated' => null,
+        'configured' => null,
+        'activated' => null,
+        'createdTime' => null
     ];
 
     /**
@@ -101,9 +111,14 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'productCatalogId' => 'product_catalog_id',
-        'productMode' => 'product_mode',
-        'productSource' => 'product_source'
+        'propertySetId' => 'property_set_id',
+        'accountId' => 'account_id',
+        'name' => 'name',
+        'icon' => 'icon',
+        'cooperated' => 'cooperated',
+        'configured' => 'configured',
+        'activated' => 'activated',
+        'createdTime' => 'created_time'
     ];
 
     /**
@@ -112,9 +127,14 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'productCatalogId' => 'setProductCatalogId',
-        'productMode' => 'setProductMode',
-        'productSource' => 'setProductSource'
+        'propertySetId' => 'setPropertySetId',
+        'accountId' => 'setAccountId',
+        'name' => 'setName',
+        'icon' => 'setIcon',
+        'cooperated' => 'setCooperated',
+        'configured' => 'setConfigured',
+        'activated' => 'setActivated',
+        'createdTime' => 'setCreatedTime'
     ];
 
     /**
@@ -123,9 +143,14 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'productCatalogId' => 'getProductCatalogId',
-        'productMode' => 'getProductMode',
-        'productSource' => 'getProductSource'
+        'propertySetId' => 'getPropertySetId',
+        'accountId' => 'getAccountId',
+        'name' => 'getName',
+        'icon' => 'getIcon',
+        'cooperated' => 'getCooperated',
+        'configured' => 'getConfigured',
+        'activated' => 'getActivated',
+        'createdTime' => 'getCreatedTime'
     ];
 
     /**
@@ -188,9 +213,14 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
-        $this->container['productMode'] = isset($data['productMode']) ? $data['productMode'] : null;
-        $this->container['productSource'] = isset($data['productSource']) ? $data['productSource'] : null;
+        $this->container['propertySetId'] = isset($data['propertySetId']) ? $data['propertySetId'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
+        $this->container['icon'] = isset($data['icon']) ? $data['icon'] : null;
+        $this->container['cooperated'] = isset($data['cooperated']) ? $data['cooperated'] : null;
+        $this->container['configured'] = isset($data['configured']) ? $data['configured'] : null;
+        $this->container['activated'] = isset($data['activated']) ? $data['activated'] : null;
+        $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
     }
 
     /**
@@ -218,73 +248,193 @@ class DynamicAdcreativeSpecForDc implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets productCatalogId
+     * Gets propertySetId
      *
      * @return int|mixed
      */
-    public function getProductCatalogId()
+    public function getPropertySetId()
     {
-        return $this->container['productCatalogId'];
+        return $this->container['propertySetId'];
     }
 
     /**
-     * Sets productCatalogId
+     * Sets propertySetId
      *
-     * @param int|mixed $productCatalogId productCatalogId
+     * @param int|mixed $propertySetId propertySetId
      *
      * @return $this
      */
-    public function setProductCatalogId($productCatalogId)
+    public function setPropertySetId($propertySetId)
     {
-        $this->container['productCatalogId'] = $productCatalogId;
+        $this->container['propertySetId'] = $propertySetId;
 
         return $this;
     }
 
     /**
-     * Gets productMode
+     * Gets accountId
      *
-     * @return \TencentAds\Model\AdNum|mixed
+     * @return int|mixed
      */
-    public function getProductMode()
+    public function getAccountId()
     {
-        return $this->container['productMode'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets productMode
+     * Sets accountId
      *
-     * @param \TencentAds\Model\AdNum|mixed $productMode productMode
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setProductMode($productMode)
+    public function setAccountId($accountId)
     {
-        $this->container['productMode'] = $productMode;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }
 
     /**
-     * Gets productSource
+     * Gets name
      *
      * @return string|mixed
      */
-    public function getProductSource()
+    public function getName()
     {
-        return $this->container['productSource'];
+        return $this->container['name'];
     }
 
     /**
-     * Sets productSource
+     * Sets name
      *
-     * @param string|mixed $productSource productSource
+     * @param string|mixed $name name
      *
      * @return $this
      */
-    public function setProductSource($productSource)
+    public function setName($name)
     {
-        $this->container['productSource'] = $productSource;
+        $this->container['name'] = $name;
+
+        return $this;
+    }
+
+    /**
+     * Gets icon
+     *
+     * @return string|mixed
+     */
+    public function getIcon()
+    {
+        return $this->container['icon'];
+    }
+
+    /**
+     * Sets icon
+     *
+     * @param string|mixed $icon icon
+     *
+     * @return $this
+     */
+    public function setIcon($icon)
+    {
+        $this->container['icon'] = $icon;
+
+        return $this;
+    }
+
+    /**
+     * Gets cooperated
+     *
+     * @return bool|mixed
+     */
+    public function getCooperated()
+    {
+        return $this->container['cooperated'];
+    }
+
+    /**
+     * Sets cooperated
+     *
+     * @param bool|mixed $cooperated cooperated
+     *
+     * @return $this
+     */
+    public function setCooperated($cooperated)
+    {
+        $this->container['cooperated'] = $cooperated;
+
+        return $this;
+    }
+
+    /**
+     * Gets configured
+     *
+     * @return bool|mixed
+     */
+    public function getConfigured()
+    {
+        return $this->container['configured'];
+    }
+
+    /**
+     * Sets configured
+     *
+     * @param bool|mixed $configured configured
+     *
+     * @return $this
+     */
+    public function setConfigured($configured)
+    {
+        $this->container['configured'] = $configured;
+
+        return $this;
+    }
+
+    /**
+     * Gets activated
+     *
+     * @return bool|mixed
+     */
+    public function getActivated()
+    {
+        return $this->container['activated'];
+    }
+
+    /**
+     * Sets activated
+     *
+     * @param bool|mixed $activated activated
+     *
+     * @return $this
+     */
+    public function setActivated($activated)
+    {
+        $this->container['activated'] = $activated;
+
+        return $this;
+    }
+
+    /**
+     * Gets createdTime
+     *
+     * @return string|mixed
+     */
+    public function getCreatedTime()
+    {
+        return $this->container['createdTime'];
+    }
+
+    /**
+     * Sets createdTime
+     *
+     * @param string|mixed $createdTime createdTime
+     *
+     * @return $this
+     */
+    public function setCreatedTime($createdTime)
+    {
+        $this->container['createdTime'] = $createdTime;
 
         return $this;
     }
