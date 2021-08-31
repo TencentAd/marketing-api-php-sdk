@@ -60,7 +60,7 @@ class Adgroup implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'campaignType' => '\TencentAds\Model\CampaignType',
         'billingEvent' => '\TencentAds\Model\BillingEvent',
-        'sceneSpec' => '\TencentAds\Model\SceneTargeting',
+        'sceneSpec' => '\TencentAds\Model\SceneTargetingForWrite',
         'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
         'promotedObjectId' => 'string'
     ];
@@ -280,7 +280,7 @@ class Adgroup implements ModelInterface, ArrayAccess
     /**
      * Gets sceneSpec
      *
-     * @return \TencentAds\Model\SceneTargeting|mixed
+     * @return \TencentAds\Model\SceneTargetingForWrite|mixed
      */
     public function getSceneSpec()
     {
@@ -290,7 +290,7 @@ class Adgroup implements ModelInterface, ArrayAccess
     /**
      * Sets sceneSpec
      *
-     * @param \TencentAds\Model\SceneTargeting|mixed $sceneSpec sceneSpec
+     * @param \TencentAds\Model\SceneTargetingForWrite|mixed $sceneSpec sceneSpec
      *
      * @return $this
      */

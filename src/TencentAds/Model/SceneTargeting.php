@@ -63,9 +63,9 @@ class SceneTargeting implements ModelInterface, ArrayAccess
         'mobileUnionIndustry' => 'string[]',
         'unionPositionPackage' => 'int[]',
         'excludeUnionPositionPackage' => 'int[]',
-        'tencentNews' => 'string[]',
         'displayScene' => 'string[]',
         'mobileUnionCategory' => 'int[]',
+        'tencentNews' => 'string[]',
         'wechatScene' => '\TencentAds\Model\WechatScene',
         'wechatPosition' => 'int[]'
     ];
@@ -81,9 +81,9 @@ class SceneTargeting implements ModelInterface, ArrayAccess
         'mobileUnionIndustry' => null,
         'unionPositionPackage' => 'int64',
         'excludeUnionPositionPackage' => 'int64',
-        'tencentNews' => null,
         'displayScene' => null,
         'mobileUnionCategory' => 'int64',
+        'tencentNews' => null,
         'wechatScene' => null,
         'wechatPosition' => 'int64'
     ];
@@ -120,9 +120,9 @@ class SceneTargeting implements ModelInterface, ArrayAccess
         'mobileUnionIndustry' => 'mobile_union_industry',
         'unionPositionPackage' => 'union_position_package',
         'excludeUnionPositionPackage' => 'exclude_union_position_package',
-        'tencentNews' => 'tencent_news',
         'displayScene' => 'display_scene',
         'mobileUnionCategory' => 'mobile_union_category',
+        'tencentNews' => 'tencent_news',
         'wechatScene' => 'wechat_scene',
         'wechatPosition' => 'wechat_position'
     ];
@@ -138,9 +138,9 @@ class SceneTargeting implements ModelInterface, ArrayAccess
         'mobileUnionIndustry' => 'setMobileUnionIndustry',
         'unionPositionPackage' => 'setUnionPositionPackage',
         'excludeUnionPositionPackage' => 'setExcludeUnionPositionPackage',
-        'tencentNews' => 'setTencentNews',
         'displayScene' => 'setDisplayScene',
         'mobileUnionCategory' => 'setMobileUnionCategory',
+        'tencentNews' => 'setTencentNews',
         'wechatScene' => 'setWechatScene',
         'wechatPosition' => 'setWechatPosition'
     ];
@@ -156,9 +156,9 @@ class SceneTargeting implements ModelInterface, ArrayAccess
         'mobileUnionIndustry' => 'getMobileUnionIndustry',
         'unionPositionPackage' => 'getUnionPositionPackage',
         'excludeUnionPositionPackage' => 'getExcludeUnionPositionPackage',
-        'tencentNews' => 'getTencentNews',
         'displayScene' => 'getDisplayScene',
         'mobileUnionCategory' => 'getMobileUnionCategory',
+        'tencentNews' => 'getTencentNews',
         'wechatScene' => 'getWechatScene',
         'wechatPosition' => 'getWechatPosition'
     ];
@@ -228,9 +228,9 @@ class SceneTargeting implements ModelInterface, ArrayAccess
         $this->container['mobileUnionIndustry'] = isset($data['mobileUnionIndustry']) ? $data['mobileUnionIndustry'] : null;
         $this->container['unionPositionPackage'] = isset($data['unionPositionPackage']) ? $data['unionPositionPackage'] : null;
         $this->container['excludeUnionPositionPackage'] = isset($data['excludeUnionPositionPackage']) ? $data['excludeUnionPositionPackage'] : null;
-        $this->container['tencentNews'] = isset($data['tencentNews']) ? $data['tencentNews'] : null;
         $this->container['displayScene'] = isset($data['displayScene']) ? $data['displayScene'] : null;
         $this->container['mobileUnionCategory'] = isset($data['mobileUnionCategory']) ? $data['mobileUnionCategory'] : null;
+        $this->container['tencentNews'] = isset($data['tencentNews']) ? $data['tencentNews'] : null;
         $this->container['wechatScene'] = isset($data['wechatScene']) ? $data['wechatScene'] : null;
         $this->container['wechatPosition'] = isset($data['wechatPosition']) ? $data['wechatPosition'] : null;
     }
@@ -380,30 +380,6 @@ class SceneTargeting implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets tencentNews
-     *
-     * @return string[]|mixed
-     */
-    public function getTencentNews()
-    {
-        return $this->container['tencentNews'];
-    }
-
-    /**
-     * Sets tencentNews
-     *
-     * @param string[]|mixed $tencentNews tencentNews
-     *
-     * @return $this
-     */
-    public function setTencentNews($tencentNews)
-    {
-        $this->container['tencentNews'] = $tencentNews;
-
-        return $this;
-    }
-
-    /**
      * Gets displayScene
      *
      * @return string[]|mixed
@@ -447,6 +423,30 @@ class SceneTargeting implements ModelInterface, ArrayAccess
     public function setMobileUnionCategory($mobileUnionCategory)
     {
         $this->container['mobileUnionCategory'] = $mobileUnionCategory;
+
+        return $this;
+    }
+
+    /**
+     * Gets tencentNews
+     *
+     * @return string[]|mixed
+     */
+    public function getTencentNews()
+    {
+        return $this->container['tencentNews'];
+    }
+
+    /**
+     * Sets tencentNews
+     *
+     * @param string[]|mixed $tencentNews tencentNews
+     *
+     * @return $this
+     */
+    public function setTencentNews($tencentNews)
+    {
+        $this->container['tencentNews'] = $tencentNews;
 
         return $this;
     }

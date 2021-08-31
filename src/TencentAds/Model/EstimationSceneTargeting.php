@@ -60,8 +60,6 @@ class EstimationSceneTargeting implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'displayScene' => 'string[]',
         'mobileUnionCategory' => 'int[]',
-        'mobileUnion' => 'string[]',
-        'excludeMobileUnion' => 'string[]',
         'mobileUnionIndustry' => 'string[]'
     ];
 
@@ -73,8 +71,6 @@ class EstimationSceneTargeting implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'displayScene' => null,
         'mobileUnionCategory' => 'int64',
-        'mobileUnion' => null,
-        'excludeMobileUnion' => null,
         'mobileUnionIndustry' => null
     ];
 
@@ -107,8 +103,6 @@ class EstimationSceneTargeting implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'displayScene' => 'display_scene',
         'mobileUnionCategory' => 'mobile_union_category',
-        'mobileUnion' => 'mobile_union',
-        'excludeMobileUnion' => 'exclude_mobile_union',
         'mobileUnionIndustry' => 'mobile_union_industry'
     ];
 
@@ -120,8 +114,6 @@ class EstimationSceneTargeting implements ModelInterface, ArrayAccess
     protected static $setters = [
         'displayScene' => 'setDisplayScene',
         'mobileUnionCategory' => 'setMobileUnionCategory',
-        'mobileUnion' => 'setMobileUnion',
-        'excludeMobileUnion' => 'setExcludeMobileUnion',
         'mobileUnionIndustry' => 'setMobileUnionIndustry'
     ];
 
@@ -133,8 +125,6 @@ class EstimationSceneTargeting implements ModelInterface, ArrayAccess
     protected static $getters = [
         'displayScene' => 'getDisplayScene',
         'mobileUnionCategory' => 'getMobileUnionCategory',
-        'mobileUnion' => 'getMobileUnion',
-        'excludeMobileUnion' => 'getExcludeMobileUnion',
         'mobileUnionIndustry' => 'getMobileUnionIndustry'
     ];
 
@@ -200,8 +190,6 @@ class EstimationSceneTargeting implements ModelInterface, ArrayAccess
     {
         $this->container['displayScene'] = isset($data['displayScene']) ? $data['displayScene'] : null;
         $this->container['mobileUnionCategory'] = isset($data['mobileUnionCategory']) ? $data['mobileUnionCategory'] : null;
-        $this->container['mobileUnion'] = isset($data['mobileUnion']) ? $data['mobileUnion'] : null;
-        $this->container['excludeMobileUnion'] = isset($data['excludeMobileUnion']) ? $data['excludeMobileUnion'] : null;
         $this->container['mobileUnionIndustry'] = isset($data['mobileUnionIndustry']) ? $data['mobileUnionIndustry'] : null;
     }
 
@@ -273,54 +261,6 @@ class EstimationSceneTargeting implements ModelInterface, ArrayAccess
     public function setMobileUnionCategory($mobileUnionCategory)
     {
         $this->container['mobileUnionCategory'] = $mobileUnionCategory;
-
-        return $this;
-    }
-
-    /**
-     * Gets mobileUnion
-     *
-     * @return string[]|mixed
-     */
-    public function getMobileUnion()
-    {
-        return $this->container['mobileUnion'];
-    }
-
-    /**
-     * Sets mobileUnion
-     *
-     * @param string[]|mixed $mobileUnion mobileUnion
-     *
-     * @return $this
-     */
-    public function setMobileUnion($mobileUnion)
-    {
-        $this->container['mobileUnion'] = $mobileUnion;
-
-        return $this;
-    }
-
-    /**
-     * Gets excludeMobileUnion
-     *
-     * @return string[]|mixed
-     */
-    public function getExcludeMobileUnion()
-    {
-        return $this->container['excludeMobileUnion'];
-    }
-
-    /**
-     * Sets excludeMobileUnion
-     *
-     * @param string[]|mixed $excludeMobileUnion excludeMobileUnion
-     *
-     * @return $this
-     */
-    public function setExcludeMobileUnion($excludeMobileUnion)
-    {
-        $this->container['excludeMobileUnion'] = $excludeMobileUnion;
 
         return $this;
     }
