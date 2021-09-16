@@ -105,6 +105,7 @@ use TencentAds\Container\ReportApiContainer;
 use TencentAds\Container\SceneSpecTagsApiContainer;
 use TencentAds\Container\ShopApiContainer;
 use TencentAds\Container\SplitTestsApiContainer;
+use TencentAds\Container\SubcustomerTransferApiContainer;
 use TencentAds\Container\SystemStatusApiContainer;
 use TencentAds\Container\TargetingTagReportsApiContainer;
 use TencentAds\Container\TargetingTagsApiContainer;
@@ -458,6 +459,9 @@ class App
 
     /** @var SplitTestsApiContainer */
     public $splitTestsApiContainer;
+
+    /** @var SubcustomerTransferApiContainer */
+    public $subcustomerTransferApiContainer;
 
     /** @var SystemStatusApiContainer */
     public $systemStatusApiContainer;
@@ -2028,6 +2032,20 @@ class App
             $this->splitTestsApiContainer = $container;
         }
         return $this->splitTestsApiContainer;
+    }
+
+
+    /**
+     * @return SubcustomerTransferApiContainer
+     */
+    public function subcustomerTransfer()
+    {
+        if (empty($this->subcustomerTransferApiContainer)) {
+            $container = new SubcustomerTransferApiContainer();
+            $container->init($this, $this->getClient());
+            $this->subcustomerTransferApiContainer = $container;
+        }
+        return $this->subcustomerTransferApiContainer;
     }
 
 
