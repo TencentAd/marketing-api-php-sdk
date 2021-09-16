@@ -64,7 +64,8 @@ class AdCreativeGetSpec implements ModelInterface, ArrayAccess
         'adcreativeElements' => '\TencentAds\Model\DpAdcreativeCreativeElementsMp',
         'pageType' => '\TencentAds\Model\DestinationType',
         'pageSpec' => '\TencentAds\Model\DpPageSpec',
-        'profileId' => 'int'
+        'profileId' => 'int',
+        'profileType' => '\TencentAds\Model\LocalProfileType'
     ];
 
     /**
@@ -79,7 +80,8 @@ class AdCreativeGetSpec implements ModelInterface, ArrayAccess
         'adcreativeElements' => null,
         'pageType' => null,
         'pageSpec' => null,
-        'profileId' => 'int64'
+        'profileId' => 'int64',
+        'profileType' => null
     ];
 
     /**
@@ -115,7 +117,8 @@ class AdCreativeGetSpec implements ModelInterface, ArrayAccess
         'adcreativeElements' => 'adcreative_elements',
         'pageType' => 'page_type',
         'pageSpec' => 'page_spec',
-        'profileId' => 'profile_id'
+        'profileId' => 'profile_id',
+        'profileType' => 'profile_type'
     ];
 
     /**
@@ -130,7 +133,8 @@ class AdCreativeGetSpec implements ModelInterface, ArrayAccess
         'adcreativeElements' => 'setAdcreativeElements',
         'pageType' => 'setPageType',
         'pageSpec' => 'setPageSpec',
-        'profileId' => 'setProfileId'
+        'profileId' => 'setProfileId',
+        'profileType' => 'setProfileType'
     ];
 
     /**
@@ -145,7 +149,8 @@ class AdCreativeGetSpec implements ModelInterface, ArrayAccess
         'adcreativeElements' => 'getAdcreativeElements',
         'pageType' => 'getPageType',
         'pageSpec' => 'getPageSpec',
-        'profileId' => 'getProfileId'
+        'profileId' => 'getProfileId',
+        'profileType' => 'getProfileType'
     ];
 
     /**
@@ -215,6 +220,7 @@ class AdCreativeGetSpec implements ModelInterface, ArrayAccess
         $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
         $this->container['pageSpec'] = isset($data['pageSpec']) ? $data['pageSpec'] : null;
         $this->container['profileId'] = isset($data['profileId']) ? $data['profileId'] : null;
+        $this->container['profileType'] = isset($data['profileType']) ? $data['profileType'] : null;
     }
 
     /**
@@ -405,6 +411,30 @@ class AdCreativeGetSpec implements ModelInterface, ArrayAccess
     public function setProfileId($profileId)
     {
         $this->container['profileId'] = $profileId;
+
+        return $this;
+    }
+
+    /**
+     * Gets profileType
+     *
+     * @return \TencentAds\Model\LocalProfileType|mixed
+     */
+    public function getProfileType()
+    {
+        return $this->container['profileType'];
+    }
+
+    /**
+     * Sets profileType
+     *
+     * @param \TencentAds\Model\LocalProfileType|mixed $profileType profileType
+     *
+     * @return $this
+     */
+    public function setProfileType($profileType)
+    {
+        $this->container['profileType'] = $profileType;
 
         return $this;
     }
