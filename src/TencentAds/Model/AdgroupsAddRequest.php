@@ -75,6 +75,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'targetingId' => 'int',
         'targeting' => '\TencentAds\Model\WriteTargetingSettingForAdgroup',
         'sceneSpec' => '\TencentAds\Model\SceneTargetingForWrite',
+        'flowOptimizationEnabled' => 'bool',
         'configuredStatus' => '\TencentAds\Model\AdStatus',
         'customizedCategory' => 'string',
         'dynamicAdSpec' => '\TencentAds\Model\DynamicAdSpec',
@@ -128,6 +129,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'targetingId' => 'int64',
         'targeting' => null,
         'sceneSpec' => null,
+        'flowOptimizationEnabled' => null,
         'configuredStatus' => null,
         'customizedCategory' => null,
         'dynamicAdSpec' => null,
@@ -202,6 +204,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'targetingId' => 'targeting_id',
         'targeting' => 'targeting',
         'sceneSpec' => 'scene_spec',
+        'flowOptimizationEnabled' => 'flow_optimization_enabled',
         'configuredStatus' => 'configured_status',
         'customizedCategory' => 'customized_category',
         'dynamicAdSpec' => 'dynamic_ad_spec',
@@ -255,6 +258,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'targetingId' => 'setTargetingId',
         'targeting' => 'setTargeting',
         'sceneSpec' => 'setSceneSpec',
+        'flowOptimizationEnabled' => 'setFlowOptimizationEnabled',
         'configuredStatus' => 'setConfiguredStatus',
         'customizedCategory' => 'setCustomizedCategory',
         'dynamicAdSpec' => 'setDynamicAdSpec',
@@ -308,6 +312,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'targetingId' => 'getTargetingId',
         'targeting' => 'getTargeting',
         'sceneSpec' => 'getSceneSpec',
+        'flowOptimizationEnabled' => 'getFlowOptimizationEnabled',
         'configuredStatus' => 'getConfiguredStatus',
         'customizedCategory' => 'getCustomizedCategory',
         'dynamicAdSpec' => 'getDynamicAdSpec',
@@ -415,6 +420,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['targetingId'] = isset($data['targetingId']) ? $data['targetingId'] : null;
         $this->container['targeting'] = isset($data['targeting']) ? $data['targeting'] : null;
         $this->container['sceneSpec'] = isset($data['sceneSpec']) ? $data['sceneSpec'] : null;
+        $this->container['flowOptimizationEnabled'] = isset($data['flowOptimizationEnabled']) ? $data['flowOptimizationEnabled'] : null;
         $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
         $this->container['customizedCategory'] = isset($data['customizedCategory']) ? $data['customizedCategory'] : null;
         $this->container['dynamicAdSpec'] = isset($data['dynamicAdSpec']) ? $data['dynamicAdSpec'] : null;
@@ -896,6 +902,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setSceneSpec($sceneSpec)
     {
         $this->container['sceneSpec'] = $sceneSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets flowOptimizationEnabled
+     *
+     * @return bool|mixed
+     */
+    public function getFlowOptimizationEnabled()
+    {
+        return $this->container['flowOptimizationEnabled'];
+    }
+
+    /**
+     * Sets flowOptimizationEnabled
+     *
+     * @param bool|mixed $flowOptimizationEnabled flowOptimizationEnabled
+     *
+     * @return $this
+     */
+    public function setFlowOptimizationEnabled($flowOptimizationEnabled)
+    {
+        $this->container['flowOptimizationEnabled'] = $flowOptimizationEnabled;
 
         return $this;
     }

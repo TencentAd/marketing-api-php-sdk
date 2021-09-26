@@ -76,6 +76,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'targetingTranslation' => 'string',
         'isIncludeUnsupportedTargeting' => 'bool',
         'sceneSpec' => '\TencentAds\Model\SceneTargeting',
+        'flowOptimizationEnabled' => 'bool',
         'beginDate' => 'string',
         'firstDayBeginTime' => 'string',
         'endDate' => 'string',
@@ -143,6 +144,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'targetingTranslation' => null,
         'isIncludeUnsupportedTargeting' => null,
         'sceneSpec' => null,
+        'flowOptimizationEnabled' => null,
         'beginDate' => null,
         'firstDayBeginTime' => null,
         'endDate' => null,
@@ -231,6 +233,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'targetingTranslation' => 'targeting_translation',
         'isIncludeUnsupportedTargeting' => 'is_include_unsupported_targeting',
         'sceneSpec' => 'scene_spec',
+        'flowOptimizationEnabled' => 'flow_optimization_enabled',
         'beginDate' => 'begin_date',
         'firstDayBeginTime' => 'first_day_begin_time',
         'endDate' => 'end_date',
@@ -298,6 +301,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'targetingTranslation' => 'setTargetingTranslation',
         'isIncludeUnsupportedTargeting' => 'setIsIncludeUnsupportedTargeting',
         'sceneSpec' => 'setSceneSpec',
+        'flowOptimizationEnabled' => 'setFlowOptimizationEnabled',
         'beginDate' => 'setBeginDate',
         'firstDayBeginTime' => 'setFirstDayBeginTime',
         'endDate' => 'setEndDate',
@@ -365,6 +369,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'targetingTranslation' => 'getTargetingTranslation',
         'isIncludeUnsupportedTargeting' => 'getIsIncludeUnsupportedTargeting',
         'sceneSpec' => 'getSceneSpec',
+        'flowOptimizationEnabled' => 'getFlowOptimizationEnabled',
         'beginDate' => 'getBeginDate',
         'firstDayBeginTime' => 'getFirstDayBeginTime',
         'endDate' => 'getEndDate',
@@ -486,6 +491,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['targetingTranslation'] = isset($data['targetingTranslation']) ? $data['targetingTranslation'] : null;
         $this->container['isIncludeUnsupportedTargeting'] = isset($data['isIncludeUnsupportedTargeting']) ? $data['isIncludeUnsupportedTargeting'] : null;
         $this->container['sceneSpec'] = isset($data['sceneSpec']) ? $data['sceneSpec'] : null;
+        $this->container['flowOptimizationEnabled'] = isset($data['flowOptimizationEnabled']) ? $data['flowOptimizationEnabled'] : null;
         $this->container['beginDate'] = isset($data['beginDate']) ? $data['beginDate'] : null;
         $this->container['firstDayBeginTime'] = isset($data['firstDayBeginTime']) ? $data['firstDayBeginTime'] : null;
         $this->container['endDate'] = isset($data['endDate']) ? $data['endDate'] : null;
@@ -981,6 +987,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setSceneSpec($sceneSpec)
     {
         $this->container['sceneSpec'] = $sceneSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets flowOptimizationEnabled
+     *
+     * @return bool|mixed
+     */
+    public function getFlowOptimizationEnabled()
+    {
+        return $this->container['flowOptimizationEnabled'];
+    }
+
+    /**
+     * Sets flowOptimizationEnabled
+     *
+     * @param bool|mixed $flowOptimizationEnabled flowOptimizationEnabled
+     *
+     * @return $this
+     */
+    public function setFlowOptimizationEnabled($flowOptimizationEnabled)
+    {
+        $this->container['flowOptimizationEnabled'] = $flowOptimizationEnabled;
 
         return $this;
     }

@@ -48,6 +48,7 @@ class BidStrategy
     const AVERAGE_COST = 'BID_STRATEGY_AVERAGE_COST';
     const TARGET_COST = 'BID_STRATEGY_TARGET_COST';
     const PRIORITY_LOW_COST = 'BID_STRATEGY_PRIORITY_LOW_COST';
+    const PRIORITY_CAP_COST = 'BID_STRATEGY_PRIORITY_CAP_COST';
     
     /**
      * Gets allowable values of the enum
@@ -60,6 +61,7 @@ class BidStrategy
             self::AVERAGE_COST,
             self::TARGET_COST,
             self::PRIORITY_LOW_COST,
+            self::PRIORITY_CAP_COST,
         ];
     }
 }
