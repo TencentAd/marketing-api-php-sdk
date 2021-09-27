@@ -57,7 +57,8 @@ class AdgroupsUpdateDatetimeResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'list' => '\TencentAds\Model\AdgroupsUpdateDatetimeListStruct[]'
+        'list' => '\TencentAds\Model\AdgroupsUpdateDatetimeListStruct[]',
+        'failIdList' => 'int[]'
     ];
 
     /**
@@ -66,7 +67,8 @@ class AdgroupsUpdateDatetimeResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'list' => null
+        'list' => null,
+        'failIdList' => 'int64'
     ];
 
     /**
@@ -96,7 +98,8 @@ class AdgroupsUpdateDatetimeResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'list' => 'list'
+        'list' => 'list',
+        'failIdList' => 'fail_id_list'
     ];
 
     /**
@@ -105,7 +108,8 @@ class AdgroupsUpdateDatetimeResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'list' => 'setList'
+        'list' => 'setList',
+        'failIdList' => 'setFailIdList'
     ];
 
     /**
@@ -114,7 +118,8 @@ class AdgroupsUpdateDatetimeResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'list' => 'getList'
+        'list' => 'getList',
+        'failIdList' => 'getFailIdList'
     ];
 
     /**
@@ -178,6 +183,7 @@ class AdgroupsUpdateDatetimeResponseData implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['list'] = isset($data['list']) ? $data['list'] : null;
+        $this->container['failIdList'] = isset($data['failIdList']) ? $data['failIdList'] : null;
     }
 
     /**
@@ -224,6 +230,30 @@ class AdgroupsUpdateDatetimeResponseData implements ModelInterface, ArrayAccess
     public function setList($list)
     {
         $this->container['list'] = $list;
+
+        return $this;
+    }
+
+    /**
+     * Gets failIdList
+     *
+     * @return int[]|mixed
+     */
+    public function getFailIdList()
+    {
+        return $this->container['failIdList'];
+    }
+
+    /**
+     * Sets failIdList
+     *
+     * @param int[]|mixed $failIdList failIdList
+     *
+     * @return $this
+     */
+    public function setFailIdList($failIdList)
+    {
+        $this->container['failIdList'] = $failIdList;
 
         return $this;
     }

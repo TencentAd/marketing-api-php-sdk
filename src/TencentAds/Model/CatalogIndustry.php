@@ -55,6 +55,9 @@ class CatalogIndustry
     const BANKCARD = 'INDUSTRY_TYPE_BANKCARD';
     const SECURITIES = 'INDUSTRY_TYPE_SECURITIES';
     const ESTATE = 'INDUSTRY_TYPE_ESTATE';
+    const CARRIER = 'INDUSTRY_TYPE_CARRIER';
+    const MERCHANTS = 'INDUSTRY_TYPE_MERCHANTS';
+    const BUSINESS_SERVICE = 'INDUSTRY_TYPE_BUSINESS_SERVICE';
     
     /**
      * Gets allowable values of the enum
@@ -74,6 +77,9 @@ class CatalogIndustry
             self::BANKCARD,
             self::SECURITIES,
             self::ESTATE,
+            self::CARRIER,
+            self::MERCHANTS,
+            self::BUSINESS_SERVICE,
         ];
     }
 }
