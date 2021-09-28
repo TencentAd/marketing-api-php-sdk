@@ -1,6 +1,6 @@
 <?php
 /**
- * LocalStoresAddResponseData
+ * CreateLocalStoreStruct
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * LocalStoresAddResponseData Class Doc Comment
+ * CreateLocalStoreStruct Class Doc Comment
  *
  * @category Class
+ * @description 校验成功的门店poi信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class LocalStoresAddResponseData implements ModelInterface, ArrayAccess
+class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class LocalStoresAddResponseData implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'LocalStoresAddResponseData';
+    protected static $swaggerModelName = 'create_local_store_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,8 +58,8 @@ class LocalStoresAddResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'poiList' => 'string[]',
-        'list' => '\TencentAds\Model\LocalStoresAddListStruct[]'
+        'poiId' => 'string',
+        'oldPoiId' => 'string'
     ];
 
     /**
@@ -67,8 +68,8 @@ class LocalStoresAddResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'poiList' => null,
-        'list' => null
+        'poiId' => null,
+        'oldPoiId' => null
     ];
 
     /**
@@ -98,8 +99,8 @@ class LocalStoresAddResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'poiList' => 'poi_list',
-        'list' => 'list'
+        'poiId' => 'poi_id',
+        'oldPoiId' => 'old_poi_id'
     ];
 
     /**
@@ -108,8 +109,8 @@ class LocalStoresAddResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'poiList' => 'setPoiList',
-        'list' => 'setList'
+        'poiId' => 'setPoiId',
+        'oldPoiId' => 'setOldPoiId'
     ];
 
     /**
@@ -118,8 +119,8 @@ class LocalStoresAddResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'poiList' => 'getPoiList',
-        'list' => 'getList'
+        'poiId' => 'getPoiId',
+        'oldPoiId' => 'getOldPoiId'
     ];
 
     /**
@@ -182,8 +183,8 @@ class LocalStoresAddResponseData implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['poiList'] = isset($data['poiList']) ? $data['poiList'] : null;
-        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
+        $this->container['poiId'] = isset($data['poiId']) ? $data['poiId'] : null;
+        $this->container['oldPoiId'] = isset($data['oldPoiId']) ? $data['oldPoiId'] : null;
     }
 
     /**
@@ -211,49 +212,49 @@ class LocalStoresAddResponseData implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets poiList
+     * Gets poiId
      *
-     * @return string[]|mixed
+     * @return string|mixed
      */
-    public function getPoiList()
+    public function getPoiId()
     {
-        return $this->container['poiList'];
+        return $this->container['poiId'];
     }
 
     /**
-     * Sets poiList
+     * Sets poiId
      *
-     * @param string[]|mixed $poiList poiList
+     * @param string|mixed $poiId poiId
      *
      * @return $this
      */
-    public function setPoiList($poiList)
+    public function setPoiId($poiId)
     {
-        $this->container['poiList'] = $poiList;
+        $this->container['poiId'] = $poiId;
 
         return $this;
     }
 
     /**
-     * Gets list
+     * Gets oldPoiId
      *
-     * @return \TencentAds\Model\LocalStoresAddListStruct[]|mixed
+     * @return string|mixed
      */
-    public function getList()
+    public function getOldPoiId()
     {
-        return $this->container['list'];
+        return $this->container['oldPoiId'];
     }
 
     /**
-     * Sets list
+     * Sets oldPoiId
      *
-     * @param \TencentAds\Model\LocalStoresAddListStruct[]|mixed $list list
+     * @param string|mixed $oldPoiId oldPoiId
      *
      * @return $this
      */
-    public function setList($list)
+    public function setOldPoiId($oldPoiId)
     {
-        $this->container['list'] = $list;
+        $this->container['oldPoiId'] = $oldPoiId;
 
         return $this;
     }

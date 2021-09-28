@@ -58,7 +58,8 @@ class LocalStoresAddRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
-        'poiList' => 'string[]'
+        'poiList' => 'string[]',
+        'localStoreList' => '\TencentAds\Model\CreateLocalStoreStruct[]'
     ];
 
     /**
@@ -68,7 +69,8 @@ class LocalStoresAddRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'accountId' => 'int64',
-        'poiList' => null
+        'poiList' => null,
+        'localStoreList' => null
     ];
 
     /**
@@ -99,7 +101,8 @@ class LocalStoresAddRequest implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'accountId' => 'account_id',
-        'poiList' => 'poi_list'
+        'poiList' => 'poi_list',
+        'localStoreList' => 'local_store_list'
     ];
 
     /**
@@ -109,7 +112,8 @@ class LocalStoresAddRequest implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'accountId' => 'setAccountId',
-        'poiList' => 'setPoiList'
+        'poiList' => 'setPoiList',
+        'localStoreList' => 'setLocalStoreList'
     ];
 
     /**
@@ -119,7 +123,8 @@ class LocalStoresAddRequest implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'accountId' => 'getAccountId',
-        'poiList' => 'getPoiList'
+        'poiList' => 'getPoiList',
+        'localStoreList' => 'getLocalStoreList'
     ];
 
     /**
@@ -184,6 +189,7 @@ class LocalStoresAddRequest implements ModelInterface, ArrayAccess
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['poiList'] = isset($data['poiList']) ? $data['poiList'] : null;
+        $this->container['localStoreList'] = isset($data['localStoreList']) ? $data['localStoreList'] : null;
     }
 
     /**
@@ -254,6 +260,30 @@ class LocalStoresAddRequest implements ModelInterface, ArrayAccess
     public function setPoiList($poiList)
     {
         $this->container['poiList'] = $poiList;
+
+        return $this;
+    }
+
+    /**
+     * Gets localStoreList
+     *
+     * @return \TencentAds\Model\CreateLocalStoreStruct[]|mixed
+     */
+    public function getLocalStoreList()
+    {
+        return $this->container['localStoreList'];
+    }
+
+    /**
+     * Sets localStoreList
+     *
+     * @param \TencentAds\Model\CreateLocalStoreStruct[]|mixed $localStoreList localStoreList
+     *
+     * @return $this
+     */
+    public function setLocalStoreList($localStoreList)
+    {
+        $this->container['localStoreList'] = $localStoreList;
 
         return $this;
     }
