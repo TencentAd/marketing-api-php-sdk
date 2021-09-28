@@ -84,7 +84,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'barrageList' => '\TencentAds\Model\BarrageListReadStruct[]',
         'dynamicCreativeGroupUsed' => '\TencentAds\Model\DynamicCreativeGroupUsed',
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
-        'enableBreakthroughSiteset' => 'bool'
+        'enableBreakthroughSiteset' => 'bool',
+        'creativeTemplateVersionType' => '\TencentAds\Model\CreativeTemplateVersionType'
     ];
 
     /**
@@ -119,7 +120,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'barrageList' => null,
         'dynamicCreativeGroupUsed' => null,
         'appGiftPackCode' => null,
-        'enableBreakthroughSiteset' => null
+        'enableBreakthroughSiteset' => null,
+        'creativeTemplateVersionType' => null
     ];
 
     /**
@@ -175,7 +177,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'barrageList' => 'barrage_list',
         'dynamicCreativeGroupUsed' => 'dynamic_creative_group_used',
         'appGiftPackCode' => 'app_gift_pack_code',
-        'enableBreakthroughSiteset' => 'enable_breakthrough_siteset'
+        'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
+        'creativeTemplateVersionType' => 'creative_template_version_type'
     ];
 
     /**
@@ -210,7 +213,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'barrageList' => 'setBarrageList',
         'dynamicCreativeGroupUsed' => 'setDynamicCreativeGroupUsed',
         'appGiftPackCode' => 'setAppGiftPackCode',
-        'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset'
+        'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
+        'creativeTemplateVersionType' => 'setCreativeTemplateVersionType'
     ];
 
     /**
@@ -245,7 +249,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'barrageList' => 'getBarrageList',
         'dynamicCreativeGroupUsed' => 'getDynamicCreativeGroupUsed',
         'appGiftPackCode' => 'getAppGiftPackCode',
-        'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset'
+        'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
+        'creativeTemplateVersionType' => 'getCreativeTemplateVersionType'
     ];
 
     /**
@@ -335,6 +340,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['dynamicCreativeGroupUsed'] = isset($data['dynamicCreativeGroupUsed']) ? $data['dynamicCreativeGroupUsed'] : null;
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
         $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
+        $this->container['creativeTemplateVersionType'] = isset($data['creativeTemplateVersionType']) ? $data['creativeTemplateVersionType'] : null;
     }
 
     /**
@@ -1005,6 +1011,30 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setEnableBreakthroughSiteset($enableBreakthroughSiteset)
     {
         $this->container['enableBreakthroughSiteset'] = $enableBreakthroughSiteset;
+
+        return $this;
+    }
+
+    /**
+     * Gets creativeTemplateVersionType
+     *
+     * @return \TencentAds\Model\CreativeTemplateVersionType|mixed
+     */
+    public function getCreativeTemplateVersionType()
+    {
+        return $this->container['creativeTemplateVersionType'];
+    }
+
+    /**
+     * Sets creativeTemplateVersionType
+     *
+     * @param \TencentAds\Model\CreativeTemplateVersionType|mixed $creativeTemplateVersionType creativeTemplateVersionType
+     *
+     * @return $this
+     */
+    public function setCreativeTemplateVersionType($creativeTemplateVersionType)
+    {
+        $this->container['creativeTemplateVersionType'] = $creativeTemplateVersionType;
 
         return $this;
     }

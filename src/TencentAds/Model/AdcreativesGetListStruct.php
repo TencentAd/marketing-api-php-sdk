@@ -101,6 +101,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'barrageList' => '\TencentAds\Model\BarrageListReadStruct[]',
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
         'enableBreakthroughSiteset' => 'bool',
+        'creativeTemplateVersionType' => '\TencentAds\Model\CreativeTemplateVersionType',
         'adcreativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsReadMp'
     ];
@@ -154,6 +155,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'barrageList' => null,
         'appGiftPackCode' => null,
         'enableBreakthroughSiteset' => null,
+        'creativeTemplateVersionType' => null,
         'adcreativeTemplateId' => 'int64',
         'adcreativeElements' => null
     ];
@@ -228,6 +230,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'barrageList' => 'barrage_list',
         'appGiftPackCode' => 'app_gift_pack_code',
         'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
+        'creativeTemplateVersionType' => 'creative_template_version_type',
         'adcreativeTemplateId' => 'adcreative_template_id',
         'adcreativeElements' => 'adcreative_elements'
     ];
@@ -281,6 +284,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'barrageList' => 'setBarrageList',
         'appGiftPackCode' => 'setAppGiftPackCode',
         'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
+        'creativeTemplateVersionType' => 'setCreativeTemplateVersionType',
         'adcreativeTemplateId' => 'setAdcreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements'
     ];
@@ -334,6 +338,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'barrageList' => 'getBarrageList',
         'appGiftPackCode' => 'getAppGiftPackCode',
         'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
+        'creativeTemplateVersionType' => 'getCreativeTemplateVersionType',
         'adcreativeTemplateId' => 'getAdcreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements'
     ];
@@ -441,6 +446,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['barrageList'] = isset($data['barrageList']) ? $data['barrageList'] : null;
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
         $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
+        $this->container['creativeTemplateVersionType'] = isset($data['creativeTemplateVersionType']) ? $data['creativeTemplateVersionType'] : null;
         $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
     }
@@ -1497,6 +1503,30 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setEnableBreakthroughSiteset($enableBreakthroughSiteset)
     {
         $this->container['enableBreakthroughSiteset'] = $enableBreakthroughSiteset;
+
+        return $this;
+    }
+
+    /**
+     * Gets creativeTemplateVersionType
+     *
+     * @return \TencentAds\Model\CreativeTemplateVersionType|mixed
+     */
+    public function getCreativeTemplateVersionType()
+    {
+        return $this->container['creativeTemplateVersionType'];
+    }
+
+    /**
+     * Sets creativeTemplateVersionType
+     *
+     * @param \TencentAds\Model\CreativeTemplateVersionType|mixed $creativeTemplateVersionType creativeTemplateVersionType
+     *
+     * @return $this
+     */
+    public function setCreativeTemplateVersionType($creativeTemplateVersionType)
+    {
+        $this->container['creativeTemplateVersionType'] = $creativeTemplateVersionType;
 
         return $this;
     }
