@@ -97,6 +97,8 @@ use TencentAds\Container\ProductSeriesApiContainer;
 use TencentAds\Container\ProductsSystemStatusApiContainer;
 use TencentAds\Container\ProfilesApiContainer;
 use TencentAds\Container\PromotedObjectsApiContainer;
+use TencentAds\Container\PropertyFileSessionsApiContainer;
+use TencentAds\Container\PropertyFilesApiContainer;
 use TencentAds\Container\PropertySetSchemasApiContainer;
 use TencentAds\Container\PropertySetsApiContainer;
 use TencentAds\Container\QualificationsApiContainer;
@@ -435,6 +437,12 @@ class App
 
     /** @var PromotedObjectsApiContainer */
     public $promotedObjectsApiContainer;
+
+    /** @var PropertyFileSessionsApiContainer */
+    public $propertyFileSessionsApiContainer;
+
+    /** @var PropertyFilesApiContainer */
+    public $propertyFilesApiContainer;
 
     /** @var PropertySetSchemasApiContainer */
     public $propertySetSchemasApiContainer;
@@ -1920,6 +1928,34 @@ class App
             $this->promotedObjectsApiContainer = $container;
         }
         return $this->promotedObjectsApiContainer;
+    }
+
+
+    /**
+     * @return PropertyFileSessionsApiContainer
+     */
+    public function propertyFileSessions()
+    {
+        if (empty($this->propertyFileSessionsApiContainer)) {
+            $container = new PropertyFileSessionsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->propertyFileSessionsApiContainer = $container;
+        }
+        return $this->propertyFileSessionsApiContainer;
+    }
+
+
+    /**
+     * @return PropertyFilesApiContainer
+     */
+    public function propertyFiles()
+    {
+        if (empty($this->propertyFilesApiContainer)) {
+            $container = new PropertyFilesApiContainer();
+            $container->init($this, $this->getClient());
+            $this->propertyFilesApiContainer = $container;
+        }
+        return $this->propertyFilesApiContainer;
     }
 
 
