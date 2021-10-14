@@ -1,6 +1,6 @@
 <?php
 /**
- * LocalStoresSearchInfoGetListStruct
+ * LocalStoresUpdateListStruct
  *
  * PHP version 5
  *
@@ -33,7 +33,7 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * LocalStoresSearchInfoGetListStruct Class Doc Comment
+ * LocalStoresUpdateListStruct Class Doc Comment
  *
  * @category Class
  * @description 返回结构
@@ -41,7 +41,7 @@ use \TencentAds\ObjectSerializer;
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
+class LocalStoresUpdateListStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'LocalStoresSearchInfoGetListStruct';
+    protected static $swaggerModelName = 'LocalStoresUpdateListStruct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization

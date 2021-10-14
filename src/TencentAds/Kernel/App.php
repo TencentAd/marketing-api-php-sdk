@@ -80,7 +80,9 @@ use TencentAds\Container\LocalEndadsmanuallyApiContainer;
 use TencentAds\Container\LocalEstimatedamountApiContainer;
 use TencentAds\Container\LocalStoresAddressParsingResultApiContainer;
 use TencentAds\Container\LocalStoresApiContainer;
+use TencentAds\Container\LocalStoresCategoriesApiContainer;
 use TencentAds\Container\LocalStoresSearchInfoApiContainer;
+use TencentAds\Container\LocalStoresWxpayMerchantsApiContainer;
 use TencentAds\Container\OauthApiContainer;
 use TencentAds\Container\OptimizationGoalPermissionsApiContainer;
 use TencentAds\Container\OuterCluesApiContainer;
@@ -387,8 +389,14 @@ class App
     /** @var LocalStoresApiContainer */
     public $localStoresApiContainer;
 
+    /** @var LocalStoresCategoriesApiContainer */
+    public $localStoresCategoriesApiContainer;
+
     /** @var LocalStoresSearchInfoApiContainer */
     public $localStoresSearchInfoApiContainer;
+
+    /** @var LocalStoresWxpayMerchantsApiContainer */
+    public $localStoresWxpayMerchantsApiContainer;
 
     /** @var OauthApiContainer */
     public $oauthApiContainer;
@@ -1694,6 +1702,20 @@ class App
 
 
     /**
+     * @return LocalStoresCategoriesApiContainer
+     */
+    public function localStoresCategories()
+    {
+        if (empty($this->localStoresCategoriesApiContainer)) {
+            $container = new LocalStoresCategoriesApiContainer();
+            $container->init($this, $this->getClient());
+            $this->localStoresCategoriesApiContainer = $container;
+        }
+        return $this->localStoresCategoriesApiContainer;
+    }
+
+
+    /**
      * @return LocalStoresSearchInfoApiContainer
      */
     public function localStoresSearchInfo()
@@ -1704,6 +1726,20 @@ class App
             $this->localStoresSearchInfoApiContainer = $container;
         }
         return $this->localStoresSearchInfoApiContainer;
+    }
+
+
+    /**
+     * @return LocalStoresWxpayMerchantsApiContainer
+     */
+    public function localStoresWxpayMerchants()
+    {
+        if (empty($this->localStoresWxpayMerchantsApiContainer)) {
+            $container = new LocalStoresWxpayMerchantsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->localStoresWxpayMerchantsApiContainer = $container;
+        }
+        return $this->localStoresWxpayMerchantsApiContainer;
     }
 
 

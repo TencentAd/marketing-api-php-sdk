@@ -63,6 +63,8 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         'localStoreProvince' => 'string',
         'localStoreCity' => 'string',
         'localStoreAddress' => 'string',
+        'localStoreBizInfo' => '\TencentAds\Model\LocalStoreBizInfoStruct',
+        'wechatEcosystemAccounts' => '\TencentAds\Model\WechatEcosystemAccounts',
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
         'systemStatus' => '\TencentAds\Model\SysStatus'
@@ -79,6 +81,8 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         'localStoreProvince' => null,
         'localStoreCity' => null,
         'localStoreAddress' => null,
+        'localStoreBizInfo' => null,
+        'wechatEcosystemAccounts' => null,
         'createdTime' => 'int64',
         'lastModifiedTime' => 'int64',
         'systemStatus' => null
@@ -116,6 +120,8 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         'localStoreProvince' => 'local_store_province',
         'localStoreCity' => 'local_store_city',
         'localStoreAddress' => 'local_store_address',
+        'localStoreBizInfo' => 'local_store_biz_info',
+        'wechatEcosystemAccounts' => 'wechat_ecosystem_accounts',
         'createdTime' => 'created_time',
         'lastModifiedTime' => 'last_modified_time',
         'systemStatus' => 'system_status'
@@ -132,6 +138,8 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         'localStoreProvince' => 'setLocalStoreProvince',
         'localStoreCity' => 'setLocalStoreCity',
         'localStoreAddress' => 'setLocalStoreAddress',
+        'localStoreBizInfo' => 'setLocalStoreBizInfo',
+        'wechatEcosystemAccounts' => 'setWechatEcosystemAccounts',
         'createdTime' => 'setCreatedTime',
         'lastModifiedTime' => 'setLastModifiedTime',
         'systemStatus' => 'setSystemStatus'
@@ -148,6 +156,8 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         'localStoreProvince' => 'getLocalStoreProvince',
         'localStoreCity' => 'getLocalStoreCity',
         'localStoreAddress' => 'getLocalStoreAddress',
+        'localStoreBizInfo' => 'getLocalStoreBizInfo',
+        'wechatEcosystemAccounts' => 'getWechatEcosystemAccounts',
         'createdTime' => 'getCreatedTime',
         'lastModifiedTime' => 'getLastModifiedTime',
         'systemStatus' => 'getSystemStatus'
@@ -218,6 +228,8 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         $this->container['localStoreProvince'] = isset($data['localStoreProvince']) ? $data['localStoreProvince'] : null;
         $this->container['localStoreCity'] = isset($data['localStoreCity']) ? $data['localStoreCity'] : null;
         $this->container['localStoreAddress'] = isset($data['localStoreAddress']) ? $data['localStoreAddress'] : null;
+        $this->container['localStoreBizInfo'] = isset($data['localStoreBizInfo']) ? $data['localStoreBizInfo'] : null;
+        $this->container['wechatEcosystemAccounts'] = isset($data['wechatEcosystemAccounts']) ? $data['wechatEcosystemAccounts'] : null;
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
         $this->container['systemStatus'] = isset($data['systemStatus']) ? $data['systemStatus'] : null;
@@ -363,6 +375,54 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
     public function setLocalStoreAddress($localStoreAddress)
     {
         $this->container['localStoreAddress'] = $localStoreAddress;
+
+        return $this;
+    }
+
+    /**
+     * Gets localStoreBizInfo
+     *
+     * @return \TencentAds\Model\LocalStoreBizInfoStruct|mixed
+     */
+    public function getLocalStoreBizInfo()
+    {
+        return $this->container['localStoreBizInfo'];
+    }
+
+    /**
+     * Sets localStoreBizInfo
+     *
+     * @param \TencentAds\Model\LocalStoreBizInfoStruct|mixed $localStoreBizInfo localStoreBizInfo
+     *
+     * @return $this
+     */
+    public function setLocalStoreBizInfo($localStoreBizInfo)
+    {
+        $this->container['localStoreBizInfo'] = $localStoreBizInfo;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatEcosystemAccounts
+     *
+     * @return \TencentAds\Model\WechatEcosystemAccounts|mixed
+     */
+    public function getWechatEcosystemAccounts()
+    {
+        return $this->container['wechatEcosystemAccounts'];
+    }
+
+    /**
+     * Sets wechatEcosystemAccounts
+     *
+     * @param \TencentAds\Model\WechatEcosystemAccounts|mixed $wechatEcosystemAccounts wechatEcosystemAccounts
+     *
+     * @return $this
+     */
+    public function setWechatEcosystemAccounts($wechatEcosystemAccounts)
+    {
+        $this->container['wechatEcosystemAccounts'] = $wechatEcosystemAccounts;
 
         return $this;
     }

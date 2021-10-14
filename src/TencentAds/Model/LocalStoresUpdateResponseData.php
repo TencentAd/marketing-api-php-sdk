@@ -1,6 +1,6 @@
 <?php
 /**
- * CreateLocalStoreStruct
+ * LocalStoresUpdateResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CreateLocalStoreStruct Class Doc Comment
+ * LocalStoresUpdateResponseData Class Doc Comment
  *
  * @category Class
- * @description 校验成功的门店poi信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
+class LocalStoresUpdateResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'create_local_store_struct';
+    protected static $swaggerModelName = 'LocalStoresUpdateResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,7 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'poiId' => 'string',
-        'localStoreBizInfo' => '\TencentAds\Model\LocalStoreBizInfoStruct',
-        'wechatEcosystemAccounts' => '\TencentAds\Model\WechatEcosystemAccounts'
+        'list' => '\TencentAds\Model\LocalStoresUpdateListStruct[]'
     ];
 
     /**
@@ -69,9 +66,7 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'poiId' => null,
-        'localStoreBizInfo' => null,
-        'wechatEcosystemAccounts' => null
+        'list' => null
     ];
 
     /**
@@ -101,9 +96,7 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'poiId' => 'poi_id',
-        'localStoreBizInfo' => 'local_store_biz_info',
-        'wechatEcosystemAccounts' => 'wechat_ecosystem_accounts'
+        'list' => 'list'
     ];
 
     /**
@@ -112,9 +105,7 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'poiId' => 'setPoiId',
-        'localStoreBizInfo' => 'setLocalStoreBizInfo',
-        'wechatEcosystemAccounts' => 'setWechatEcosystemAccounts'
+        'list' => 'setList'
     ];
 
     /**
@@ -123,9 +114,7 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'poiId' => 'getPoiId',
-        'localStoreBizInfo' => 'getLocalStoreBizInfo',
-        'wechatEcosystemAccounts' => 'getWechatEcosystemAccounts'
+        'list' => 'getList'
     ];
 
     /**
@@ -188,9 +177,7 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['poiId'] = isset($data['poiId']) ? $data['poiId'] : null;
-        $this->container['localStoreBizInfo'] = isset($data['localStoreBizInfo']) ? $data['localStoreBizInfo'] : null;
-        $this->container['wechatEcosystemAccounts'] = isset($data['wechatEcosystemAccounts']) ? $data['wechatEcosystemAccounts'] : null;
+        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
     }
 
     /**
@@ -218,73 +205,25 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets poiId
+     * Gets list
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\LocalStoresUpdateListStruct[]|mixed
      */
-    public function getPoiId()
+    public function getList()
     {
-        return $this->container['poiId'];
+        return $this->container['list'];
     }
 
     /**
-     * Sets poiId
+     * Sets list
      *
-     * @param string|mixed $poiId poiId
+     * @param \TencentAds\Model\LocalStoresUpdateListStruct[]|mixed $list list
      *
      * @return $this
      */
-    public function setPoiId($poiId)
+    public function setList($list)
     {
-        $this->container['poiId'] = $poiId;
-
-        return $this;
-    }
-
-    /**
-     * Gets localStoreBizInfo
-     *
-     * @return \TencentAds\Model\LocalStoreBizInfoStruct|mixed
-     */
-    public function getLocalStoreBizInfo()
-    {
-        return $this->container['localStoreBizInfo'];
-    }
-
-    /**
-     * Sets localStoreBizInfo
-     *
-     * @param \TencentAds\Model\LocalStoreBizInfoStruct|mixed $localStoreBizInfo localStoreBizInfo
-     *
-     * @return $this
-     */
-    public function setLocalStoreBizInfo($localStoreBizInfo)
-    {
-        $this->container['localStoreBizInfo'] = $localStoreBizInfo;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatEcosystemAccounts
-     *
-     * @return \TencentAds\Model\WechatEcosystemAccounts|mixed
-     */
-    public function getWechatEcosystemAccounts()
-    {
-        return $this->container['wechatEcosystemAccounts'];
-    }
-
-    /**
-     * Sets wechatEcosystemAccounts
-     *
-     * @param \TencentAds\Model\WechatEcosystemAccounts|mixed $wechatEcosystemAccounts wechatEcosystemAccounts
-     *
-     * @return $this
-     */
-    public function setWechatEcosystemAccounts($wechatEcosystemAccounts)
-    {
-        $this->container['wechatEcosystemAccounts'] = $wechatEcosystemAccounts;
+        $this->container['list'] = $list;
 
         return $this;
     }

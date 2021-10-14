@@ -1,6 +1,6 @@
 <?php
 /**
- * CreateLocalStoreStruct
+ * CustomerProfileAgeStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CreateLocalStoreStruct Class Doc Comment
+ * CustomerProfileAgeStruct Class Doc Comment
  *
  * @category Class
- * @description 校验成功的门店poi信息
+ * @description 年龄信息结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
+class CustomerProfileAgeStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'create_local_store_struct';
+    protected static $swaggerModelName = 'customer_profile_age_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,8 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'poiId' => 'string',
-        'localStoreBizInfo' => '\TencentAds\Model\LocalStoreBizInfoStruct',
-        'wechatEcosystemAccounts' => '\TencentAds\Model\WechatEcosystemAccounts'
+        'min' => 'int',
+        'max' => 'int'
     ];
 
     /**
@@ -69,9 +68,8 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'poiId' => null,
-        'localStoreBizInfo' => null,
-        'wechatEcosystemAccounts' => null
+        'min' => 'int64',
+        'max' => 'int64'
     ];
 
     /**
@@ -101,9 +99,8 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'poiId' => 'poi_id',
-        'localStoreBizInfo' => 'local_store_biz_info',
-        'wechatEcosystemAccounts' => 'wechat_ecosystem_accounts'
+        'min' => 'min',
+        'max' => 'max'
     ];
 
     /**
@@ -112,9 +109,8 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'poiId' => 'setPoiId',
-        'localStoreBizInfo' => 'setLocalStoreBizInfo',
-        'wechatEcosystemAccounts' => 'setWechatEcosystemAccounts'
+        'min' => 'setMin',
+        'max' => 'setMax'
     ];
 
     /**
@@ -123,9 +119,8 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'poiId' => 'getPoiId',
-        'localStoreBizInfo' => 'getLocalStoreBizInfo',
-        'wechatEcosystemAccounts' => 'getWechatEcosystemAccounts'
+        'min' => 'getMin',
+        'max' => 'getMax'
     ];
 
     /**
@@ -188,9 +183,8 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['poiId'] = isset($data['poiId']) ? $data['poiId'] : null;
-        $this->container['localStoreBizInfo'] = isset($data['localStoreBizInfo']) ? $data['localStoreBizInfo'] : null;
-        $this->container['wechatEcosystemAccounts'] = isset($data['wechatEcosystemAccounts']) ? $data['wechatEcosystemAccounts'] : null;
+        $this->container['min'] = isset($data['min']) ? $data['min'] : null;
+        $this->container['max'] = isset($data['max']) ? $data['max'] : null;
     }
 
     /**
@@ -218,73 +212,49 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets poiId
+     * Gets min
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getPoiId()
+    public function getMin()
     {
-        return $this->container['poiId'];
+        return $this->container['min'];
     }
 
     /**
-     * Sets poiId
+     * Sets min
      *
-     * @param string|mixed $poiId poiId
+     * @param int|mixed $min min
      *
      * @return $this
      */
-    public function setPoiId($poiId)
+    public function setMin($min)
     {
-        $this->container['poiId'] = $poiId;
+        $this->container['min'] = $min;
 
         return $this;
     }
 
     /**
-     * Gets localStoreBizInfo
+     * Gets max
      *
-     * @return \TencentAds\Model\LocalStoreBizInfoStruct|mixed
+     * @return int|mixed
      */
-    public function getLocalStoreBizInfo()
+    public function getMax()
     {
-        return $this->container['localStoreBizInfo'];
+        return $this->container['max'];
     }
 
     /**
-     * Sets localStoreBizInfo
+     * Sets max
      *
-     * @param \TencentAds\Model\LocalStoreBizInfoStruct|mixed $localStoreBizInfo localStoreBizInfo
+     * @param int|mixed $max max
      *
      * @return $this
      */
-    public function setLocalStoreBizInfo($localStoreBizInfo)
+    public function setMax($max)
     {
-        $this->container['localStoreBizInfo'] = $localStoreBizInfo;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatEcosystemAccounts
-     *
-     * @return \TencentAds\Model\WechatEcosystemAccounts|mixed
-     */
-    public function getWechatEcosystemAccounts()
-    {
-        return $this->container['wechatEcosystemAccounts'];
-    }
-
-    /**
-     * Sets wechatEcosystemAccounts
-     *
-     * @param \TencentAds\Model\WechatEcosystemAccounts|mixed $wechatEcosystemAccounts wechatEcosystemAccounts
-     *
-     * @return $this
-     */
-    public function setWechatEcosystemAccounts($wechatEcosystemAccounts)
-    {
-        $this->container['wechatEcosystemAccounts'] = $wechatEcosystemAccounts;
+        $this->container['max'] = $max;
 
         return $this;
     }

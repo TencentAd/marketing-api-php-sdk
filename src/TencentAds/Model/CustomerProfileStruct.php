@@ -1,6 +1,6 @@
 <?php
 /**
- * LocalStoresSearchInfoGetListStruct
+ * CustomerProfileStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * LocalStoresSearchInfoGetListStruct Class Doc Comment
+ * CustomerProfileStruct Class Doc Comment
  *
  * @category Class
- * @description 返回结构
+ * @description 门店经营信息用户画像
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
+class CustomerProfileStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'LocalStoresSearchInfoGetListStruct';
+    protected static $swaggerModelName = 'customer_profile_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,13 +58,10 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'poiId' => 'string',
-        'localStoreName' => 'string',
-        'localStoreProvince' => 'string',
-        'localStoreCity' => 'string',
-        'localStoreAddress' => 'string',
-        'localStoreBizInfo' => '\TencentAds\Model\LocalStoreBizInfoStruct',
-        'wechatEcosystemAccounts' => '\TencentAds\Model\WechatEcosystemAccounts'
+        'gender' => '\TencentAds\Model\LocalStoreCustomerProfileGender',
+        'age' => '\TencentAds\Model\CustomerProfileAgeStruct[]',
+        'income' => '\TencentAds\Model\CustomerProfileIncomeStruct[]',
+        'vehicle' => 'string[]'
     ];
 
     /**
@@ -73,13 +70,10 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'poiId' => null,
-        'localStoreName' => null,
-        'localStoreProvince' => null,
-        'localStoreCity' => null,
-        'localStoreAddress' => null,
-        'localStoreBizInfo' => null,
-        'wechatEcosystemAccounts' => null
+        'gender' => null,
+        'age' => null,
+        'income' => null,
+        'vehicle' => null
     ];
 
     /**
@@ -109,13 +103,10 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'poiId' => 'poi_id',
-        'localStoreName' => 'local_store_name',
-        'localStoreProvince' => 'local_store_province',
-        'localStoreCity' => 'local_store_city',
-        'localStoreAddress' => 'local_store_address',
-        'localStoreBizInfo' => 'local_store_biz_info',
-        'wechatEcosystemAccounts' => 'wechat_ecosystem_accounts'
+        'gender' => 'gender',
+        'age' => 'age',
+        'income' => 'income',
+        'vehicle' => 'vehicle'
     ];
 
     /**
@@ -124,13 +115,10 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'poiId' => 'setPoiId',
-        'localStoreName' => 'setLocalStoreName',
-        'localStoreProvince' => 'setLocalStoreProvince',
-        'localStoreCity' => 'setLocalStoreCity',
-        'localStoreAddress' => 'setLocalStoreAddress',
-        'localStoreBizInfo' => 'setLocalStoreBizInfo',
-        'wechatEcosystemAccounts' => 'setWechatEcosystemAccounts'
+        'gender' => 'setGender',
+        'age' => 'setAge',
+        'income' => 'setIncome',
+        'vehicle' => 'setVehicle'
     ];
 
     /**
@@ -139,13 +127,10 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'poiId' => 'getPoiId',
-        'localStoreName' => 'getLocalStoreName',
-        'localStoreProvince' => 'getLocalStoreProvince',
-        'localStoreCity' => 'getLocalStoreCity',
-        'localStoreAddress' => 'getLocalStoreAddress',
-        'localStoreBizInfo' => 'getLocalStoreBizInfo',
-        'wechatEcosystemAccounts' => 'getWechatEcosystemAccounts'
+        'gender' => 'getGender',
+        'age' => 'getAge',
+        'income' => 'getIncome',
+        'vehicle' => 'getVehicle'
     ];
 
     /**
@@ -208,13 +193,10 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['poiId'] = isset($data['poiId']) ? $data['poiId'] : null;
-        $this->container['localStoreName'] = isset($data['localStoreName']) ? $data['localStoreName'] : null;
-        $this->container['localStoreProvince'] = isset($data['localStoreProvince']) ? $data['localStoreProvince'] : null;
-        $this->container['localStoreCity'] = isset($data['localStoreCity']) ? $data['localStoreCity'] : null;
-        $this->container['localStoreAddress'] = isset($data['localStoreAddress']) ? $data['localStoreAddress'] : null;
-        $this->container['localStoreBizInfo'] = isset($data['localStoreBizInfo']) ? $data['localStoreBizInfo'] : null;
-        $this->container['wechatEcosystemAccounts'] = isset($data['wechatEcosystemAccounts']) ? $data['wechatEcosystemAccounts'] : null;
+        $this->container['gender'] = isset($data['gender']) ? $data['gender'] : null;
+        $this->container['age'] = isset($data['age']) ? $data['age'] : null;
+        $this->container['income'] = isset($data['income']) ? $data['income'] : null;
+        $this->container['vehicle'] = isset($data['vehicle']) ? $data['vehicle'] : null;
     }
 
     /**
@@ -242,169 +224,97 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets poiId
+     * Gets gender
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\LocalStoreCustomerProfileGender|mixed
      */
-    public function getPoiId()
+    public function getGender()
     {
-        return $this->container['poiId'];
+        return $this->container['gender'];
     }
 
     /**
-     * Sets poiId
+     * Sets gender
      *
-     * @param string|mixed $poiId poiId
+     * @param \TencentAds\Model\LocalStoreCustomerProfileGender|mixed $gender gender
      *
      * @return $this
      */
-    public function setPoiId($poiId)
+    public function setGender($gender)
     {
-        $this->container['poiId'] = $poiId;
+        $this->container['gender'] = $gender;
 
         return $this;
     }
 
     /**
-     * Gets localStoreName
+     * Gets age
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\CustomerProfileAgeStruct[]|mixed
      */
-    public function getLocalStoreName()
+    public function getAge()
     {
-        return $this->container['localStoreName'];
+        return $this->container['age'];
     }
 
     /**
-     * Sets localStoreName
+     * Sets age
      *
-     * @param string|mixed $localStoreName localStoreName
+     * @param \TencentAds\Model\CustomerProfileAgeStruct[]|mixed $age age
      *
      * @return $this
      */
-    public function setLocalStoreName($localStoreName)
+    public function setAge($age)
     {
-        $this->container['localStoreName'] = $localStoreName;
+        $this->container['age'] = $age;
 
         return $this;
     }
 
     /**
-     * Gets localStoreProvince
+     * Gets income
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\CustomerProfileIncomeStruct[]|mixed
      */
-    public function getLocalStoreProvince()
+    public function getIncome()
     {
-        return $this->container['localStoreProvince'];
+        return $this->container['income'];
     }
 
     /**
-     * Sets localStoreProvince
+     * Sets income
      *
-     * @param string|mixed $localStoreProvince localStoreProvince
+     * @param \TencentAds\Model\CustomerProfileIncomeStruct[]|mixed $income income
      *
      * @return $this
      */
-    public function setLocalStoreProvince($localStoreProvince)
+    public function setIncome($income)
     {
-        $this->container['localStoreProvince'] = $localStoreProvince;
+        $this->container['income'] = $income;
 
         return $this;
     }
 
     /**
-     * Gets localStoreCity
+     * Gets vehicle
      *
-     * @return string|mixed
+     * @return string[]|mixed
      */
-    public function getLocalStoreCity()
+    public function getVehicle()
     {
-        return $this->container['localStoreCity'];
+        return $this->container['vehicle'];
     }
 
     /**
-     * Sets localStoreCity
+     * Sets vehicle
      *
-     * @param string|mixed $localStoreCity localStoreCity
+     * @param string[]|mixed $vehicle vehicle
      *
      * @return $this
      */
-    public function setLocalStoreCity($localStoreCity)
+    public function setVehicle($vehicle)
     {
-        $this->container['localStoreCity'] = $localStoreCity;
-
-        return $this;
-    }
-
-    /**
-     * Gets localStoreAddress
-     *
-     * @return string|mixed
-     */
-    public function getLocalStoreAddress()
-    {
-        return $this->container['localStoreAddress'];
-    }
-
-    /**
-     * Sets localStoreAddress
-     *
-     * @param string|mixed $localStoreAddress localStoreAddress
-     *
-     * @return $this
-     */
-    public function setLocalStoreAddress($localStoreAddress)
-    {
-        $this->container['localStoreAddress'] = $localStoreAddress;
-
-        return $this;
-    }
-
-    /**
-     * Gets localStoreBizInfo
-     *
-     * @return \TencentAds\Model\LocalStoreBizInfoStruct|mixed
-     */
-    public function getLocalStoreBizInfo()
-    {
-        return $this->container['localStoreBizInfo'];
-    }
-
-    /**
-     * Sets localStoreBizInfo
-     *
-     * @param \TencentAds\Model\LocalStoreBizInfoStruct|mixed $localStoreBizInfo localStoreBizInfo
-     *
-     * @return $this
-     */
-    public function setLocalStoreBizInfo($localStoreBizInfo)
-    {
-        $this->container['localStoreBizInfo'] = $localStoreBizInfo;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatEcosystemAccounts
-     *
-     * @return \TencentAds\Model\WechatEcosystemAccounts|mixed
-     */
-    public function getWechatEcosystemAccounts()
-    {
-        return $this->container['wechatEcosystemAccounts'];
-    }
-
-    /**
-     * Sets wechatEcosystemAccounts
-     *
-     * @param \TencentAds\Model\WechatEcosystemAccounts|mixed $wechatEcosystemAccounts wechatEcosystemAccounts
-     *
-     * @return $this
-     */
-    public function setWechatEcosystemAccounts($wechatEcosystemAccounts)
-    {
-        $this->container['wechatEcosystemAccounts'] = $wechatEcosystemAccounts;
+        $this->container['vehicle'] = $vehicle;
 
         return $this;
     }

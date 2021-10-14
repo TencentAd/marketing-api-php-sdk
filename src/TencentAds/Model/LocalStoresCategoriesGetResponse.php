@@ -1,6 +1,6 @@
 <?php
 /**
- * LocalStoresSearchInfoGetListStruct
+ * LocalStoresCategoriesGetResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * LocalStoresSearchInfoGetListStruct Class Doc Comment
+ * LocalStoresCategoriesGetResponse Class Doc Comment
  *
  * @category Class
- * @description 返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
+class LocalStoresCategoriesGetResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'LocalStoresSearchInfoGetListStruct';
+    protected static $swaggerModelName = 'LocalStoresCategoriesGetResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,13 +57,11 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'poiId' => 'string',
-        'localStoreName' => 'string',
-        'localStoreProvince' => 'string',
-        'localStoreCity' => 'string',
-        'localStoreAddress' => 'string',
-        'localStoreBizInfo' => '\TencentAds\Model\LocalStoreBizInfoStruct',
-        'wechatEcosystemAccounts' => '\TencentAds\Model\WechatEcosystemAccounts'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\LocalStoresCategoriesGetResponseData'
     ];
 
     /**
@@ -73,13 +70,11 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'poiId' => null,
-        'localStoreName' => null,
-        'localStoreProvince' => null,
-        'localStoreCity' => null,
-        'localStoreAddress' => null,
-        'localStoreBizInfo' => null,
-        'wechatEcosystemAccounts' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -109,13 +104,11 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'poiId' => 'poi_id',
-        'localStoreName' => 'local_store_name',
-        'localStoreProvince' => 'local_store_province',
-        'localStoreCity' => 'local_store_city',
-        'localStoreAddress' => 'local_store_address',
-        'localStoreBizInfo' => 'local_store_biz_info',
-        'wechatEcosystemAccounts' => 'wechat_ecosystem_accounts'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -124,13 +117,11 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'poiId' => 'setPoiId',
-        'localStoreName' => 'setLocalStoreName',
-        'localStoreProvince' => 'setLocalStoreProvince',
-        'localStoreCity' => 'setLocalStoreCity',
-        'localStoreAddress' => 'setLocalStoreAddress',
-        'localStoreBizInfo' => 'setLocalStoreBizInfo',
-        'wechatEcosystemAccounts' => 'setWechatEcosystemAccounts'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -139,13 +130,11 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'poiId' => 'getPoiId',
-        'localStoreName' => 'getLocalStoreName',
-        'localStoreProvince' => 'getLocalStoreProvince',
-        'localStoreCity' => 'getLocalStoreCity',
-        'localStoreAddress' => 'getLocalStoreAddress',
-        'localStoreBizInfo' => 'getLocalStoreBizInfo',
-        'wechatEcosystemAccounts' => 'getWechatEcosystemAccounts'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -208,13 +197,11 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['poiId'] = isset($data['poiId']) ? $data['poiId'] : null;
-        $this->container['localStoreName'] = isset($data['localStoreName']) ? $data['localStoreName'] : null;
-        $this->container['localStoreProvince'] = isset($data['localStoreProvince']) ? $data['localStoreProvince'] : null;
-        $this->container['localStoreCity'] = isset($data['localStoreCity']) ? $data['localStoreCity'] : null;
-        $this->container['localStoreAddress'] = isset($data['localStoreAddress']) ? $data['localStoreAddress'] : null;
-        $this->container['localStoreBizInfo'] = isset($data['localStoreBizInfo']) ? $data['localStoreBizInfo'] : null;
-        $this->container['wechatEcosystemAccounts'] = isset($data['wechatEcosystemAccounts']) ? $data['wechatEcosystemAccounts'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -242,169 +229,121 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets poiId
+     * Gets code
+     *
+     * @return int|mixed
+     */
+    public function getCode()
+    {
+        return $this->container['code'];
+    }
+
+    /**
+     * Sets code
+     *
+     * @param int|mixed $code code
+     *
+     * @return $this
+     */
+    public function setCode($code)
+    {
+        $this->container['code'] = $code;
+
+        return $this;
+    }
+
+    /**
+     * Gets message
      *
      * @return string|mixed
      */
-    public function getPoiId()
+    public function getMessage()
     {
-        return $this->container['poiId'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets poiId
+     * Sets message
      *
-     * @param string|mixed $poiId poiId
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setPoiId($poiId)
+    public function setMessage($message)
     {
-        $this->container['poiId'] = $poiId;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets localStoreName
+     * Gets messageCn
      *
      * @return string|mixed
      */
-    public function getLocalStoreName()
+    public function getMessageCn()
     {
-        return $this->container['localStoreName'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets localStoreName
+     * Sets messageCn
      *
-     * @param string|mixed $localStoreName localStoreName
+     * @param string|mixed $messageCn messageCn
      *
      * @return $this
      */
-    public function setLocalStoreName($localStoreName)
+    public function setMessageCn($messageCn)
     {
-        $this->container['localStoreName'] = $localStoreName;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets localStoreProvince
+     * Gets errors
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\ApiErrorStruct[]|mixed
      */
-    public function getLocalStoreProvince()
+    public function getErrors()
     {
-        return $this->container['localStoreProvince'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets localStoreProvince
+     * Sets errors
      *
-     * @param string|mixed $localStoreProvince localStoreProvince
+     * @param \TencentAds\Model\ApiErrorStruct[]|mixed $errors errors
      *
      * @return $this
      */
-    public function setLocalStoreProvince($localStoreProvince)
+    public function setErrors($errors)
     {
-        $this->container['localStoreProvince'] = $localStoreProvince;
+        $this->container['errors'] = $errors;
 
         return $this;
     }
 
     /**
-     * Gets localStoreCity
+     * Gets data
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\LocalStoresCategoriesGetResponseData|mixed
      */
-    public function getLocalStoreCity()
+    public function getData()
     {
-        return $this->container['localStoreCity'];
+        return $this->container['data'];
     }
 
     /**
-     * Sets localStoreCity
+     * Sets data
      *
-     * @param string|mixed $localStoreCity localStoreCity
+     * @param \TencentAds\Model\LocalStoresCategoriesGetResponseData|mixed $data data
      *
      * @return $this
      */
-    public function setLocalStoreCity($localStoreCity)
+    public function setData($data)
     {
-        $this->container['localStoreCity'] = $localStoreCity;
-
-        return $this;
-    }
-
-    /**
-     * Gets localStoreAddress
-     *
-     * @return string|mixed
-     */
-    public function getLocalStoreAddress()
-    {
-        return $this->container['localStoreAddress'];
-    }
-
-    /**
-     * Sets localStoreAddress
-     *
-     * @param string|mixed $localStoreAddress localStoreAddress
-     *
-     * @return $this
-     */
-    public function setLocalStoreAddress($localStoreAddress)
-    {
-        $this->container['localStoreAddress'] = $localStoreAddress;
-
-        return $this;
-    }
-
-    /**
-     * Gets localStoreBizInfo
-     *
-     * @return \TencentAds\Model\LocalStoreBizInfoStruct|mixed
-     */
-    public function getLocalStoreBizInfo()
-    {
-        return $this->container['localStoreBizInfo'];
-    }
-
-    /**
-     * Sets localStoreBizInfo
-     *
-     * @param \TencentAds\Model\LocalStoreBizInfoStruct|mixed $localStoreBizInfo localStoreBizInfo
-     *
-     * @return $this
-     */
-    public function setLocalStoreBizInfo($localStoreBizInfo)
-    {
-        $this->container['localStoreBizInfo'] = $localStoreBizInfo;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatEcosystemAccounts
-     *
-     * @return \TencentAds\Model\WechatEcosystemAccounts|mixed
-     */
-    public function getWechatEcosystemAccounts()
-    {
-        return $this->container['wechatEcosystemAccounts'];
-    }
-
-    /**
-     * Sets wechatEcosystemAccounts
-     *
-     * @param \TencentAds\Model\WechatEcosystemAccounts|mixed $wechatEcosystemAccounts wechatEcosystemAccounts
-     *
-     * @return $this
-     */
-    public function setWechatEcosystemAccounts($wechatEcosystemAccounts)
-    {
-        $this->container['wechatEcosystemAccounts'] = $wechatEcosystemAccounts;
+        $this->container['data'] = $data;
 
         return $this;
     }

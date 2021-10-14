@@ -1,6 +1,6 @@
 <?php
 /**
- * LocalStoresSearchInfoGetListStruct
+ * LocalStoresCategoriesGetListStruct
  *
  * PHP version 5
  *
@@ -33,7 +33,7 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * LocalStoresSearchInfoGetListStruct Class Doc Comment
+ * LocalStoresCategoriesGetListStruct Class Doc Comment
  *
  * @category Class
  * @description 返回结构
@@ -41,7 +41,7 @@ use \TencentAds\ObjectSerializer;
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
+class LocalStoresCategoriesGetListStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'LocalStoresSearchInfoGetListStruct';
+    protected static $swaggerModelName = 'LocalStoresCategoriesGetListStruct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,13 +58,12 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'poiId' => 'string',
-        'localStoreName' => 'string',
-        'localStoreProvince' => 'string',
-        'localStoreCity' => 'string',
-        'localStoreAddress' => 'string',
-        'localStoreBizInfo' => '\TencentAds\Model\LocalStoreBizInfoStruct',
-        'wechatEcosystemAccounts' => '\TencentAds\Model\WechatEcosystemAccounts'
+        'verticalId' => 'int',
+        'verticalName' => 'string',
+        'categoryId' => 'int',
+        'parentCategoryId' => 'int',
+        'categoryName' => 'string',
+        'level' => 'int'
     ];
 
     /**
@@ -73,13 +72,12 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'poiId' => null,
-        'localStoreName' => null,
-        'localStoreProvince' => null,
-        'localStoreCity' => null,
-        'localStoreAddress' => null,
-        'localStoreBizInfo' => null,
-        'wechatEcosystemAccounts' => null
+        'verticalId' => 'int64',
+        'verticalName' => null,
+        'categoryId' => 'int64',
+        'parentCategoryId' => 'int64',
+        'categoryName' => null,
+        'level' => 'int64'
     ];
 
     /**
@@ -109,13 +107,12 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'poiId' => 'poi_id',
-        'localStoreName' => 'local_store_name',
-        'localStoreProvince' => 'local_store_province',
-        'localStoreCity' => 'local_store_city',
-        'localStoreAddress' => 'local_store_address',
-        'localStoreBizInfo' => 'local_store_biz_info',
-        'wechatEcosystemAccounts' => 'wechat_ecosystem_accounts'
+        'verticalId' => 'vertical_id',
+        'verticalName' => 'vertical_name',
+        'categoryId' => 'category_id',
+        'parentCategoryId' => 'parent_category_id',
+        'categoryName' => 'category_name',
+        'level' => 'level'
     ];
 
     /**
@@ -124,13 +121,12 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'poiId' => 'setPoiId',
-        'localStoreName' => 'setLocalStoreName',
-        'localStoreProvince' => 'setLocalStoreProvince',
-        'localStoreCity' => 'setLocalStoreCity',
-        'localStoreAddress' => 'setLocalStoreAddress',
-        'localStoreBizInfo' => 'setLocalStoreBizInfo',
-        'wechatEcosystemAccounts' => 'setWechatEcosystemAccounts'
+        'verticalId' => 'setVerticalId',
+        'verticalName' => 'setVerticalName',
+        'categoryId' => 'setCategoryId',
+        'parentCategoryId' => 'setParentCategoryId',
+        'categoryName' => 'setCategoryName',
+        'level' => 'setLevel'
     ];
 
     /**
@@ -139,13 +135,12 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'poiId' => 'getPoiId',
-        'localStoreName' => 'getLocalStoreName',
-        'localStoreProvince' => 'getLocalStoreProvince',
-        'localStoreCity' => 'getLocalStoreCity',
-        'localStoreAddress' => 'getLocalStoreAddress',
-        'localStoreBizInfo' => 'getLocalStoreBizInfo',
-        'wechatEcosystemAccounts' => 'getWechatEcosystemAccounts'
+        'verticalId' => 'getVerticalId',
+        'verticalName' => 'getVerticalName',
+        'categoryId' => 'getCategoryId',
+        'parentCategoryId' => 'getParentCategoryId',
+        'categoryName' => 'getCategoryName',
+        'level' => 'getLevel'
     ];
 
     /**
@@ -208,13 +203,12 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['poiId'] = isset($data['poiId']) ? $data['poiId'] : null;
-        $this->container['localStoreName'] = isset($data['localStoreName']) ? $data['localStoreName'] : null;
-        $this->container['localStoreProvince'] = isset($data['localStoreProvince']) ? $data['localStoreProvince'] : null;
-        $this->container['localStoreCity'] = isset($data['localStoreCity']) ? $data['localStoreCity'] : null;
-        $this->container['localStoreAddress'] = isset($data['localStoreAddress']) ? $data['localStoreAddress'] : null;
-        $this->container['localStoreBizInfo'] = isset($data['localStoreBizInfo']) ? $data['localStoreBizInfo'] : null;
-        $this->container['wechatEcosystemAccounts'] = isset($data['wechatEcosystemAccounts']) ? $data['wechatEcosystemAccounts'] : null;
+        $this->container['verticalId'] = isset($data['verticalId']) ? $data['verticalId'] : null;
+        $this->container['verticalName'] = isset($data['verticalName']) ? $data['verticalName'] : null;
+        $this->container['categoryId'] = isset($data['categoryId']) ? $data['categoryId'] : null;
+        $this->container['parentCategoryId'] = isset($data['parentCategoryId']) ? $data['parentCategoryId'] : null;
+        $this->container['categoryName'] = isset($data['categoryName']) ? $data['categoryName'] : null;
+        $this->container['level'] = isset($data['level']) ? $data['level'] : null;
     }
 
     /**
@@ -242,169 +236,145 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets poiId
+     * Gets verticalId
+     *
+     * @return int|mixed
+     */
+    public function getVerticalId()
+    {
+        return $this->container['verticalId'];
+    }
+
+    /**
+     * Sets verticalId
+     *
+     * @param int|mixed $verticalId verticalId
+     *
+     * @return $this
+     */
+    public function setVerticalId($verticalId)
+    {
+        $this->container['verticalId'] = $verticalId;
+
+        return $this;
+    }
+
+    /**
+     * Gets verticalName
      *
      * @return string|mixed
      */
-    public function getPoiId()
+    public function getVerticalName()
     {
-        return $this->container['poiId'];
+        return $this->container['verticalName'];
     }
 
     /**
-     * Sets poiId
+     * Sets verticalName
      *
-     * @param string|mixed $poiId poiId
+     * @param string|mixed $verticalName verticalName
      *
      * @return $this
      */
-    public function setPoiId($poiId)
+    public function setVerticalName($verticalName)
     {
-        $this->container['poiId'] = $poiId;
+        $this->container['verticalName'] = $verticalName;
 
         return $this;
     }
 
     /**
-     * Gets localStoreName
+     * Gets categoryId
+     *
+     * @return int|mixed
+     */
+    public function getCategoryId()
+    {
+        return $this->container['categoryId'];
+    }
+
+    /**
+     * Sets categoryId
+     *
+     * @param int|mixed $categoryId categoryId
+     *
+     * @return $this
+     */
+    public function setCategoryId($categoryId)
+    {
+        $this->container['categoryId'] = $categoryId;
+
+        return $this;
+    }
+
+    /**
+     * Gets parentCategoryId
+     *
+     * @return int|mixed
+     */
+    public function getParentCategoryId()
+    {
+        return $this->container['parentCategoryId'];
+    }
+
+    /**
+     * Sets parentCategoryId
+     *
+     * @param int|mixed $parentCategoryId parentCategoryId
+     *
+     * @return $this
+     */
+    public function setParentCategoryId($parentCategoryId)
+    {
+        $this->container['parentCategoryId'] = $parentCategoryId;
+
+        return $this;
+    }
+
+    /**
+     * Gets categoryName
      *
      * @return string|mixed
      */
-    public function getLocalStoreName()
+    public function getCategoryName()
     {
-        return $this->container['localStoreName'];
+        return $this->container['categoryName'];
     }
 
     /**
-     * Sets localStoreName
+     * Sets categoryName
      *
-     * @param string|mixed $localStoreName localStoreName
+     * @param string|mixed $categoryName categoryName
      *
      * @return $this
      */
-    public function setLocalStoreName($localStoreName)
+    public function setCategoryName($categoryName)
     {
-        $this->container['localStoreName'] = $localStoreName;
+        $this->container['categoryName'] = $categoryName;
 
         return $this;
     }
 
     /**
-     * Gets localStoreProvince
+     * Gets level
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getLocalStoreProvince()
+    public function getLevel()
     {
-        return $this->container['localStoreProvince'];
+        return $this->container['level'];
     }
 
     /**
-     * Sets localStoreProvince
+     * Sets level
      *
-     * @param string|mixed $localStoreProvince localStoreProvince
+     * @param int|mixed $level level
      *
      * @return $this
      */
-    public function setLocalStoreProvince($localStoreProvince)
+    public function setLevel($level)
     {
-        $this->container['localStoreProvince'] = $localStoreProvince;
-
-        return $this;
-    }
-
-    /**
-     * Gets localStoreCity
-     *
-     * @return string|mixed
-     */
-    public function getLocalStoreCity()
-    {
-        return $this->container['localStoreCity'];
-    }
-
-    /**
-     * Sets localStoreCity
-     *
-     * @param string|mixed $localStoreCity localStoreCity
-     *
-     * @return $this
-     */
-    public function setLocalStoreCity($localStoreCity)
-    {
-        $this->container['localStoreCity'] = $localStoreCity;
-
-        return $this;
-    }
-
-    /**
-     * Gets localStoreAddress
-     *
-     * @return string|mixed
-     */
-    public function getLocalStoreAddress()
-    {
-        return $this->container['localStoreAddress'];
-    }
-
-    /**
-     * Sets localStoreAddress
-     *
-     * @param string|mixed $localStoreAddress localStoreAddress
-     *
-     * @return $this
-     */
-    public function setLocalStoreAddress($localStoreAddress)
-    {
-        $this->container['localStoreAddress'] = $localStoreAddress;
-
-        return $this;
-    }
-
-    /**
-     * Gets localStoreBizInfo
-     *
-     * @return \TencentAds\Model\LocalStoreBizInfoStruct|mixed
-     */
-    public function getLocalStoreBizInfo()
-    {
-        return $this->container['localStoreBizInfo'];
-    }
-
-    /**
-     * Sets localStoreBizInfo
-     *
-     * @param \TencentAds\Model\LocalStoreBizInfoStruct|mixed $localStoreBizInfo localStoreBizInfo
-     *
-     * @return $this
-     */
-    public function setLocalStoreBizInfo($localStoreBizInfo)
-    {
-        $this->container['localStoreBizInfo'] = $localStoreBizInfo;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatEcosystemAccounts
-     *
-     * @return \TencentAds\Model\WechatEcosystemAccounts|mixed
-     */
-    public function getWechatEcosystemAccounts()
-    {
-        return $this->container['wechatEcosystemAccounts'];
-    }
-
-    /**
-     * Sets wechatEcosystemAccounts
-     *
-     * @param \TencentAds\Model\WechatEcosystemAccounts|mixed $wechatEcosystemAccounts wechatEcosystemAccounts
-     *
-     * @return $this
-     */
-    public function setWechatEcosystemAccounts($wechatEcosystemAccounts)
-    {
-        $this->container['wechatEcosystemAccounts'] = $wechatEcosystemAccounts;
+        $this->container['level'] = $level;
 
         return $this;
     }

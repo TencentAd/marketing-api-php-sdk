@@ -1,6 +1,6 @@
 <?php
 /**
- * CreateLocalStoreStruct
+ * PeakPeriod
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CreateLocalStoreStruct Class Doc Comment
+ * PeakPeriod Class Doc Comment
  *
  * @category Class
- * @description 校验成功的门店poi信息
+ * @description 门店高峰时间段
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
+class PeakPeriod implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'create_local_store_struct';
+    protected static $swaggerModelName = 'peak_period';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,8 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'poiId' => 'string',
-        'localStoreBizInfo' => '\TencentAds\Model\LocalStoreBizInfoStruct',
-        'wechatEcosystemAccounts' => '\TencentAds\Model\WechatEcosystemAccounts'
+        'timeSeries' => 'string',
+        'date' => '\TencentAds\Model\LocalStorePeakPeriodDate'
     ];
 
     /**
@@ -69,9 +68,8 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'poiId' => null,
-        'localStoreBizInfo' => null,
-        'wechatEcosystemAccounts' => null
+        'timeSeries' => null,
+        'date' => null
     ];
 
     /**
@@ -101,9 +99,8 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'poiId' => 'poi_id',
-        'localStoreBizInfo' => 'local_store_biz_info',
-        'wechatEcosystemAccounts' => 'wechat_ecosystem_accounts'
+        'timeSeries' => 'time_series',
+        'date' => 'date'
     ];
 
     /**
@@ -112,9 +109,8 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'poiId' => 'setPoiId',
-        'localStoreBizInfo' => 'setLocalStoreBizInfo',
-        'wechatEcosystemAccounts' => 'setWechatEcosystemAccounts'
+        'timeSeries' => 'setTimeSeries',
+        'date' => 'setDate'
     ];
 
     /**
@@ -123,9 +119,8 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'poiId' => 'getPoiId',
-        'localStoreBizInfo' => 'getLocalStoreBizInfo',
-        'wechatEcosystemAccounts' => 'getWechatEcosystemAccounts'
+        'timeSeries' => 'getTimeSeries',
+        'date' => 'getDate'
     ];
 
     /**
@@ -188,9 +183,8 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['poiId'] = isset($data['poiId']) ? $data['poiId'] : null;
-        $this->container['localStoreBizInfo'] = isset($data['localStoreBizInfo']) ? $data['localStoreBizInfo'] : null;
-        $this->container['wechatEcosystemAccounts'] = isset($data['wechatEcosystemAccounts']) ? $data['wechatEcosystemAccounts'] : null;
+        $this->container['timeSeries'] = isset($data['timeSeries']) ? $data['timeSeries'] : null;
+        $this->container['date'] = isset($data['date']) ? $data['date'] : null;
     }
 
     /**
@@ -218,73 +212,49 @@ class CreateLocalStoreStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets poiId
+     * Gets timeSeries
      *
      * @return string|mixed
      */
-    public function getPoiId()
+    public function getTimeSeries()
     {
-        return $this->container['poiId'];
+        return $this->container['timeSeries'];
     }
 
     /**
-     * Sets poiId
+     * Sets timeSeries
      *
-     * @param string|mixed $poiId poiId
+     * @param string|mixed $timeSeries timeSeries
      *
      * @return $this
      */
-    public function setPoiId($poiId)
+    public function setTimeSeries($timeSeries)
     {
-        $this->container['poiId'] = $poiId;
+        $this->container['timeSeries'] = $timeSeries;
 
         return $this;
     }
 
     /**
-     * Gets localStoreBizInfo
+     * Gets date
      *
-     * @return \TencentAds\Model\LocalStoreBizInfoStruct|mixed
+     * @return \TencentAds\Model\LocalStorePeakPeriodDate|mixed
      */
-    public function getLocalStoreBizInfo()
+    public function getDate()
     {
-        return $this->container['localStoreBizInfo'];
+        return $this->container['date'];
     }
 
     /**
-     * Sets localStoreBizInfo
+     * Sets date
      *
-     * @param \TencentAds\Model\LocalStoreBizInfoStruct|mixed $localStoreBizInfo localStoreBizInfo
+     * @param \TencentAds\Model\LocalStorePeakPeriodDate|mixed $date date
      *
      * @return $this
      */
-    public function setLocalStoreBizInfo($localStoreBizInfo)
+    public function setDate($date)
     {
-        $this->container['localStoreBizInfo'] = $localStoreBizInfo;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatEcosystemAccounts
-     *
-     * @return \TencentAds\Model\WechatEcosystemAccounts|mixed
-     */
-    public function getWechatEcosystemAccounts()
-    {
-        return $this->container['wechatEcosystemAccounts'];
-    }
-
-    /**
-     * Sets wechatEcosystemAccounts
-     *
-     * @param \TencentAds\Model\WechatEcosystemAccounts|mixed $wechatEcosystemAccounts wechatEcosystemAccounts
-     *
-     * @return $this
-     */
-    public function setWechatEcosystemAccounts($wechatEcosystemAccounts)
-    {
-        $this->container['wechatEcosystemAccounts'] = $wechatEcosystemAccounts;
+        $this->container['date'] = $date;
 
         return $this;
     }

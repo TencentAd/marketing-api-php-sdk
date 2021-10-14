@@ -1,6 +1,6 @@
 <?php
 /**
- * LocalStoresSearchInfoGetListStruct
+ * UpdateLocalStoreStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * LocalStoresSearchInfoGetListStruct Class Doc Comment
+ * UpdateLocalStoreStruct Class Doc Comment
  *
  * @category Class
- * @description 返回结构
+ * @description 校验成功的门店poi信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
+class UpdateLocalStoreStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'LocalStoresSearchInfoGetListStruct';
+    protected static $swaggerModelName = 'update_local_store_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -59,10 +59,6 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'poiId' => 'string',
-        'localStoreName' => 'string',
-        'localStoreProvince' => 'string',
-        'localStoreCity' => 'string',
-        'localStoreAddress' => 'string',
         'localStoreBizInfo' => '\TencentAds\Model\LocalStoreBizInfoStruct',
         'wechatEcosystemAccounts' => '\TencentAds\Model\WechatEcosystemAccounts'
     ];
@@ -74,10 +70,6 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'poiId' => null,
-        'localStoreName' => null,
-        'localStoreProvince' => null,
-        'localStoreCity' => null,
-        'localStoreAddress' => null,
         'localStoreBizInfo' => null,
         'wechatEcosystemAccounts' => null
     ];
@@ -110,10 +102,6 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'poiId' => 'poi_id',
-        'localStoreName' => 'local_store_name',
-        'localStoreProvince' => 'local_store_province',
-        'localStoreCity' => 'local_store_city',
-        'localStoreAddress' => 'local_store_address',
         'localStoreBizInfo' => 'local_store_biz_info',
         'wechatEcosystemAccounts' => 'wechat_ecosystem_accounts'
     ];
@@ -125,10 +113,6 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'poiId' => 'setPoiId',
-        'localStoreName' => 'setLocalStoreName',
-        'localStoreProvince' => 'setLocalStoreProvince',
-        'localStoreCity' => 'setLocalStoreCity',
-        'localStoreAddress' => 'setLocalStoreAddress',
         'localStoreBizInfo' => 'setLocalStoreBizInfo',
         'wechatEcosystemAccounts' => 'setWechatEcosystemAccounts'
     ];
@@ -140,10 +124,6 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'poiId' => 'getPoiId',
-        'localStoreName' => 'getLocalStoreName',
-        'localStoreProvince' => 'getLocalStoreProvince',
-        'localStoreCity' => 'getLocalStoreCity',
-        'localStoreAddress' => 'getLocalStoreAddress',
         'localStoreBizInfo' => 'getLocalStoreBizInfo',
         'wechatEcosystemAccounts' => 'getWechatEcosystemAccounts'
     ];
@@ -209,10 +189,6 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['poiId'] = isset($data['poiId']) ? $data['poiId'] : null;
-        $this->container['localStoreName'] = isset($data['localStoreName']) ? $data['localStoreName'] : null;
-        $this->container['localStoreProvince'] = isset($data['localStoreProvince']) ? $data['localStoreProvince'] : null;
-        $this->container['localStoreCity'] = isset($data['localStoreCity']) ? $data['localStoreCity'] : null;
-        $this->container['localStoreAddress'] = isset($data['localStoreAddress']) ? $data['localStoreAddress'] : null;
         $this->container['localStoreBizInfo'] = isset($data['localStoreBizInfo']) ? $data['localStoreBizInfo'] : null;
         $this->container['wechatEcosystemAccounts'] = isset($data['wechatEcosystemAccounts']) ? $data['wechatEcosystemAccounts'] : null;
     }
@@ -261,102 +237,6 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
     public function setPoiId($poiId)
     {
         $this->container['poiId'] = $poiId;
-
-        return $this;
-    }
-
-    /**
-     * Gets localStoreName
-     *
-     * @return string|mixed
-     */
-    public function getLocalStoreName()
-    {
-        return $this->container['localStoreName'];
-    }
-
-    /**
-     * Sets localStoreName
-     *
-     * @param string|mixed $localStoreName localStoreName
-     *
-     * @return $this
-     */
-    public function setLocalStoreName($localStoreName)
-    {
-        $this->container['localStoreName'] = $localStoreName;
-
-        return $this;
-    }
-
-    /**
-     * Gets localStoreProvince
-     *
-     * @return string|mixed
-     */
-    public function getLocalStoreProvince()
-    {
-        return $this->container['localStoreProvince'];
-    }
-
-    /**
-     * Sets localStoreProvince
-     *
-     * @param string|mixed $localStoreProvince localStoreProvince
-     *
-     * @return $this
-     */
-    public function setLocalStoreProvince($localStoreProvince)
-    {
-        $this->container['localStoreProvince'] = $localStoreProvince;
-
-        return $this;
-    }
-
-    /**
-     * Gets localStoreCity
-     *
-     * @return string|mixed
-     */
-    public function getLocalStoreCity()
-    {
-        return $this->container['localStoreCity'];
-    }
-
-    /**
-     * Sets localStoreCity
-     *
-     * @param string|mixed $localStoreCity localStoreCity
-     *
-     * @return $this
-     */
-    public function setLocalStoreCity($localStoreCity)
-    {
-        $this->container['localStoreCity'] = $localStoreCity;
-
-        return $this;
-    }
-
-    /**
-     * Gets localStoreAddress
-     *
-     * @return string|mixed
-     */
-    public function getLocalStoreAddress()
-    {
-        return $this->container['localStoreAddress'];
-    }
-
-    /**
-     * Sets localStoreAddress
-     *
-     * @param string|mixed $localStoreAddress localStoreAddress
-     *
-     * @return $this
-     */
-    public function setLocalStoreAddress($localStoreAddress)
-    {
-        $this->container['localStoreAddress'] = $localStoreAddress;
 
         return $this;
     }
