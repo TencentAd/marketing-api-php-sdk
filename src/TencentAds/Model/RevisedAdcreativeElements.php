@@ -79,6 +79,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'countdownTimeType' => '\TencentAds\Model\AdCreativeCountdownTimeType',
         'miniProgramId' => 'string',
         'miniProgramPath' => 'string',
+        'miniProgramPaths' => 'string[]',
         'label' => '\TencentAds\Model\CreativeLabel[]',
         'productTags' => 'string[]',
         'logoDescription' => 'string',
@@ -100,7 +101,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'zipUrl' => 'string',
         'endPage' => '\TencentAds\Model\AdCreativeEndPage',
         'shopImage' => 'string',
-        'headLine' => 'string'
+        'headLine' => 'string',
+        'shopImageStruct' => '\TencentAds\Model\AdCreativeShopImageStruct'
     ];
 
     /**
@@ -130,6 +132,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'countdownTimeType' => null,
         'miniProgramId' => null,
         'miniProgramPath' => null,
+        'miniProgramPaths' => null,
         'label' => null,
         'productTags' => null,
         'logoDescription' => null,
@@ -151,7 +154,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'zipUrl' => null,
         'endPage' => null,
         'shopImage' => null,
-        'headLine' => null
+        'headLine' => null,
+        'shopImageStruct' => null
     ];
 
     /**
@@ -202,6 +206,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'countdownTimeType' => 'countdown_time_type',
         'miniProgramId' => 'mini_program_id',
         'miniProgramPath' => 'mini_program_path',
+        'miniProgramPaths' => 'mini_program_paths',
         'label' => 'label',
         'productTags' => 'product_tags',
         'logoDescription' => 'logo_description',
@@ -223,7 +228,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'zipUrl' => 'zip_url',
         'endPage' => 'end_page',
         'shopImage' => 'shop_image',
-        'headLine' => 'head_line'
+        'headLine' => 'head_line',
+        'shopImageStruct' => 'shop_image_struct'
     ];
 
     /**
@@ -253,6 +259,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'countdownTimeType' => 'setCountdownTimeType',
         'miniProgramId' => 'setMiniProgramId',
         'miniProgramPath' => 'setMiniProgramPath',
+        'miniProgramPaths' => 'setMiniProgramPaths',
         'label' => 'setLabel',
         'productTags' => 'setProductTags',
         'logoDescription' => 'setLogoDescription',
@@ -274,7 +281,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'zipUrl' => 'setZipUrl',
         'endPage' => 'setEndPage',
         'shopImage' => 'setShopImage',
-        'headLine' => 'setHeadLine'
+        'headLine' => 'setHeadLine',
+        'shopImageStruct' => 'setShopImageStruct'
     ];
 
     /**
@@ -304,6 +312,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'countdownTimeType' => 'getCountdownTimeType',
         'miniProgramId' => 'getMiniProgramId',
         'miniProgramPath' => 'getMiniProgramPath',
+        'miniProgramPaths' => 'getMiniProgramPaths',
         'label' => 'getLabel',
         'productTags' => 'getProductTags',
         'logoDescription' => 'getLogoDescription',
@@ -325,7 +334,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'zipUrl' => 'getZipUrl',
         'endPage' => 'getEndPage',
         'shopImage' => 'getShopImage',
-        'headLine' => 'getHeadLine'
+        'headLine' => 'getHeadLine',
+        'shopImageStruct' => 'getShopImageStruct'
     ];
 
     /**
@@ -409,6 +419,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         $this->container['countdownTimeType'] = isset($data['countdownTimeType']) ? $data['countdownTimeType'] : null;
         $this->container['miniProgramId'] = isset($data['miniProgramId']) ? $data['miniProgramId'] : null;
         $this->container['miniProgramPath'] = isset($data['miniProgramPath']) ? $data['miniProgramPath'] : null;
+        $this->container['miniProgramPaths'] = isset($data['miniProgramPaths']) ? $data['miniProgramPaths'] : null;
         $this->container['label'] = isset($data['label']) ? $data['label'] : null;
         $this->container['productTags'] = isset($data['productTags']) ? $data['productTags'] : null;
         $this->container['logoDescription'] = isset($data['logoDescription']) ? $data['logoDescription'] : null;
@@ -431,6 +442,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         $this->container['endPage'] = isset($data['endPage']) ? $data['endPage'] : null;
         $this->container['shopImage'] = isset($data['shopImage']) ? $data['shopImage'] : null;
         $this->container['headLine'] = isset($data['headLine']) ? $data['headLine'] : null;
+        $this->container['shopImageStruct'] = isset($data['shopImageStruct']) ? $data['shopImageStruct'] : null;
     }
 
     /**
@@ -962,6 +974,30 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets miniProgramPaths
+     *
+     * @return string[]|mixed
+     */
+    public function getMiniProgramPaths()
+    {
+        return $this->container['miniProgramPaths'];
+    }
+
+    /**
+     * Sets miniProgramPaths
+     *
+     * @param string[]|mixed $miniProgramPaths miniProgramPaths
+     *
+     * @return $this
+     */
+    public function setMiniProgramPaths($miniProgramPaths)
+    {
+        $this->container['miniProgramPaths'] = $miniProgramPaths;
+
+        return $this;
+    }
+
+    /**
      * Gets label
      *
      * @return \TencentAds\Model\CreativeLabel[]|mixed
@@ -1485,6 +1521,30 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     public function setHeadLine($headLine)
     {
         $this->container['headLine'] = $headLine;
+
+        return $this;
+    }
+
+    /**
+     * Gets shopImageStruct
+     *
+     * @return \TencentAds\Model\AdCreativeShopImageStruct|mixed
+     */
+    public function getShopImageStruct()
+    {
+        return $this->container['shopImageStruct'];
+    }
+
+    /**
+     * Sets shopImageStruct
+     *
+     * @param \TencentAds\Model\AdCreativeShopImageStruct|mixed $shopImageStruct shopImageStruct
+     *
+     * @return $this
+     */
+    public function setShopImageStruct($shopImageStruct)
+    {
+        $this->container['shopImageStruct'] = $shopImageStruct;
 
         return $this;
     }

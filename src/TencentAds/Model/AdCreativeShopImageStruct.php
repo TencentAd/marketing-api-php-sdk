@@ -1,6 +1,6 @@
 <?php
 /**
- * MiniProgramSpec
+ * AdCreativeShopImageStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MiniProgramSpec Class Doc Comment
+ * AdCreativeShopImageStruct Class Doc Comment
  *
  * @category Class
- * @description 小程序信息
+ * @description 卖点图
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MiniProgramSpec implements ModelInterface, ArrayAccess
+class AdCreativeShopImageStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class MiniProgramSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'mini_program_spec';
+    protected static $swaggerModelName = 'ad_creative_shop_image_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +58,11 @@ class MiniProgramSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'title' => 'string',
-        'miniProgramId' => 'string',
-        'miniProgramPath' => 'string',
-        'miniProgramPaths' => 'string[]'
+        'shopImageSwitch' => 'bool',
+        'dynamicShopImageSwitch' => 'bool',
+        'shopImageId' => 'string',
+        'shopImageTitle' => 'string',
+        'shopImageDescription' => 'string'
     ];
 
     /**
@@ -70,10 +71,11 @@ class MiniProgramSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'title' => null,
-        'miniProgramId' => null,
-        'miniProgramPath' => null,
-        'miniProgramPaths' => null
+        'shopImageSwitch' => null,
+        'dynamicShopImageSwitch' => null,
+        'shopImageId' => null,
+        'shopImageTitle' => null,
+        'shopImageDescription' => null
     ];
 
     /**
@@ -103,10 +105,11 @@ class MiniProgramSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'title' => 'title',
-        'miniProgramId' => 'mini_program_id',
-        'miniProgramPath' => 'mini_program_path',
-        'miniProgramPaths' => 'mini_program_paths'
+        'shopImageSwitch' => 'shop_image_switch',
+        'dynamicShopImageSwitch' => 'dynamic_shop_image_switch',
+        'shopImageId' => 'shop_image_id',
+        'shopImageTitle' => 'shop_image_title',
+        'shopImageDescription' => 'shop_image_description'
     ];
 
     /**
@@ -115,10 +118,11 @@ class MiniProgramSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'title' => 'setTitle',
-        'miniProgramId' => 'setMiniProgramId',
-        'miniProgramPath' => 'setMiniProgramPath',
-        'miniProgramPaths' => 'setMiniProgramPaths'
+        'shopImageSwitch' => 'setShopImageSwitch',
+        'dynamicShopImageSwitch' => 'setDynamicShopImageSwitch',
+        'shopImageId' => 'setShopImageId',
+        'shopImageTitle' => 'setShopImageTitle',
+        'shopImageDescription' => 'setShopImageDescription'
     ];
 
     /**
@@ -127,10 +131,11 @@ class MiniProgramSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'title' => 'getTitle',
-        'miniProgramId' => 'getMiniProgramId',
-        'miniProgramPath' => 'getMiniProgramPath',
-        'miniProgramPaths' => 'getMiniProgramPaths'
+        'shopImageSwitch' => 'getShopImageSwitch',
+        'dynamicShopImageSwitch' => 'getDynamicShopImageSwitch',
+        'shopImageId' => 'getShopImageId',
+        'shopImageTitle' => 'getShopImageTitle',
+        'shopImageDescription' => 'getShopImageDescription'
     ];
 
     /**
@@ -193,10 +198,11 @@ class MiniProgramSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['title'] = isset($data['title']) ? $data['title'] : null;
-        $this->container['miniProgramId'] = isset($data['miniProgramId']) ? $data['miniProgramId'] : null;
-        $this->container['miniProgramPath'] = isset($data['miniProgramPath']) ? $data['miniProgramPath'] : null;
-        $this->container['miniProgramPaths'] = isset($data['miniProgramPaths']) ? $data['miniProgramPaths'] : null;
+        $this->container['shopImageSwitch'] = isset($data['shopImageSwitch']) ? $data['shopImageSwitch'] : null;
+        $this->container['dynamicShopImageSwitch'] = isset($data['dynamicShopImageSwitch']) ? $data['dynamicShopImageSwitch'] : null;
+        $this->container['shopImageId'] = isset($data['shopImageId']) ? $data['shopImageId'] : null;
+        $this->container['shopImageTitle'] = isset($data['shopImageTitle']) ? $data['shopImageTitle'] : null;
+        $this->container['shopImageDescription'] = isset($data['shopImageDescription']) ? $data['shopImageDescription'] : null;
     }
 
     /**
@@ -224,97 +230,121 @@ class MiniProgramSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets title
+     * Gets shopImageSwitch
      *
-     * @return string|mixed
+     * @return bool|mixed
      */
-    public function getTitle()
+    public function getShopImageSwitch()
     {
-        return $this->container['title'];
+        return $this->container['shopImageSwitch'];
     }
 
     /**
-     * Sets title
+     * Sets shopImageSwitch
      *
-     * @param string|mixed $title title
+     * @param bool|mixed $shopImageSwitch shopImageSwitch
      *
      * @return $this
      */
-    public function setTitle($title)
+    public function setShopImageSwitch($shopImageSwitch)
     {
-        $this->container['title'] = $title;
+        $this->container['shopImageSwitch'] = $shopImageSwitch;
 
         return $this;
     }
 
     /**
-     * Gets miniProgramId
+     * Gets dynamicShopImageSwitch
      *
-     * @return string|mixed
+     * @return bool|mixed
      */
-    public function getMiniProgramId()
+    public function getDynamicShopImageSwitch()
     {
-        return $this->container['miniProgramId'];
+        return $this->container['dynamicShopImageSwitch'];
     }
 
     /**
-     * Sets miniProgramId
+     * Sets dynamicShopImageSwitch
      *
-     * @param string|mixed $miniProgramId miniProgramId
+     * @param bool|mixed $dynamicShopImageSwitch dynamicShopImageSwitch
      *
      * @return $this
      */
-    public function setMiniProgramId($miniProgramId)
+    public function setDynamicShopImageSwitch($dynamicShopImageSwitch)
     {
-        $this->container['miniProgramId'] = $miniProgramId;
+        $this->container['dynamicShopImageSwitch'] = $dynamicShopImageSwitch;
 
         return $this;
     }
 
     /**
-     * Gets miniProgramPath
+     * Gets shopImageId
      *
      * @return string|mixed
      */
-    public function getMiniProgramPath()
+    public function getShopImageId()
     {
-        return $this->container['miniProgramPath'];
+        return $this->container['shopImageId'];
     }
 
     /**
-     * Sets miniProgramPath
+     * Sets shopImageId
      *
-     * @param string|mixed $miniProgramPath miniProgramPath
+     * @param string|mixed $shopImageId shopImageId
      *
      * @return $this
      */
-    public function setMiniProgramPath($miniProgramPath)
+    public function setShopImageId($shopImageId)
     {
-        $this->container['miniProgramPath'] = $miniProgramPath;
+        $this->container['shopImageId'] = $shopImageId;
 
         return $this;
     }
 
     /**
-     * Gets miniProgramPaths
+     * Gets shopImageTitle
      *
-     * @return string[]|mixed
+     * @return string|mixed
      */
-    public function getMiniProgramPaths()
+    public function getShopImageTitle()
     {
-        return $this->container['miniProgramPaths'];
+        return $this->container['shopImageTitle'];
     }
 
     /**
-     * Sets miniProgramPaths
+     * Sets shopImageTitle
      *
-     * @param string[]|mixed $miniProgramPaths miniProgramPaths
+     * @param string|mixed $shopImageTitle shopImageTitle
      *
      * @return $this
      */
-    public function setMiniProgramPaths($miniProgramPaths)
+    public function setShopImageTitle($shopImageTitle)
     {
-        $this->container['miniProgramPaths'] = $miniProgramPaths;
+        $this->container['shopImageTitle'] = $shopImageTitle;
+
+        return $this;
+    }
+
+    /**
+     * Gets shopImageDescription
+     *
+     * @return string|mixed
+     */
+    public function getShopImageDescription()
+    {
+        return $this->container['shopImageDescription'];
+    }
+
+    /**
+     * Sets shopImageDescription
+     *
+     * @param string|mixed $shopImageDescription shopImageDescription
+     *
+     * @return $this
+     */
+    public function setShopImageDescription($shopImageDescription)
+    {
+        $this->container['shopImageDescription'] = $shopImageDescription;
 
         return $this;
     }

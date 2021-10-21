@@ -97,6 +97,7 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'endPage' => '\TencentAds\Model\AdCreativeEndPage',
         'shopImage' => 'string',
         'headLine' => 'string',
+        'shopImageStruct' => '\TencentAds\Model\AdCreativeShopImageStruct',
         'countdownExpiringTimestamp' => 'int'
     ];
 
@@ -145,6 +146,7 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'endPage' => null,
         'shopImage' => null,
         'headLine' => null,
+        'shopImageStruct' => null,
         'countdownExpiringTimestamp' => 'int64'
     ];
 
@@ -214,6 +216,7 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'endPage' => 'end_page',
         'shopImage' => 'shop_image',
         'headLine' => 'head_line',
+        'shopImageStruct' => 'shop_image_struct',
         'countdownExpiringTimestamp' => 'countdown_expiring_timestamp'
     ];
 
@@ -262,6 +265,7 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'endPage' => 'setEndPage',
         'shopImage' => 'setShopImage',
         'headLine' => 'setHeadLine',
+        'shopImageStruct' => 'setShopImageStruct',
         'countdownExpiringTimestamp' => 'setCountdownExpiringTimestamp'
     ];
 
@@ -310,6 +314,7 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'endPage' => 'getEndPage',
         'shopImage' => 'getShopImage',
         'headLine' => 'getHeadLine',
+        'shopImageStruct' => 'getShopImageStruct',
         'countdownExpiringTimestamp' => 'getCountdownExpiringTimestamp'
     ];
 
@@ -412,6 +417,7 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         $this->container['endPage'] = isset($data['endPage']) ? $data['endPage'] : null;
         $this->container['shopImage'] = isset($data['shopImage']) ? $data['shopImage'] : null;
         $this->container['headLine'] = isset($data['headLine']) ? $data['headLine'] : null;
+        $this->container['shopImageStruct'] = isset($data['shopImageStruct']) ? $data['shopImageStruct'] : null;
         $this->container['countdownExpiringTimestamp'] = isset($data['countdownExpiringTimestamp']) ? $data['countdownExpiringTimestamp'] : null;
     }
 
@@ -1371,6 +1377,30 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
     public function setHeadLine($headLine)
     {
         $this->container['headLine'] = $headLine;
+
+        return $this;
+    }
+
+    /**
+     * Gets shopImageStruct
+     *
+     * @return \TencentAds\Model\AdCreativeShopImageStruct|mixed
+     */
+    public function getShopImageStruct()
+    {
+        return $this->container['shopImageStruct'];
+    }
+
+    /**
+     * Sets shopImageStruct
+     *
+     * @param \TencentAds\Model\AdCreativeShopImageStruct|mixed $shopImageStruct shopImageStruct
+     *
+     * @return $this
+     */
+    public function setShopImageStruct($shopImageStruct)
+    {
+        $this->container['shopImageStruct'] = $shopImageStruct;
 
         return $this;
     }

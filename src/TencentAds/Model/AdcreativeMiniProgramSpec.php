@@ -59,7 +59,8 @@ class AdcreativeMiniProgramSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'miniProgramId' => 'string',
-        'miniProgramPath' => 'string'
+        'miniProgramPath' => 'string',
+        'miniProgramPaths' => 'string[]'
     ];
 
     /**
@@ -69,7 +70,8 @@ class AdcreativeMiniProgramSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'miniProgramId' => null,
-        'miniProgramPath' => null
+        'miniProgramPath' => null,
+        'miniProgramPaths' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class AdcreativeMiniProgramSpec implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'miniProgramId' => 'mini_program_id',
-        'miniProgramPath' => 'mini_program_path'
+        'miniProgramPath' => 'mini_program_path',
+        'miniProgramPaths' => 'mini_program_paths'
     ];
 
     /**
@@ -110,7 +113,8 @@ class AdcreativeMiniProgramSpec implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'miniProgramId' => 'setMiniProgramId',
-        'miniProgramPath' => 'setMiniProgramPath'
+        'miniProgramPath' => 'setMiniProgramPath',
+        'miniProgramPaths' => 'setMiniProgramPaths'
     ];
 
     /**
@@ -120,7 +124,8 @@ class AdcreativeMiniProgramSpec implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'miniProgramId' => 'getMiniProgramId',
-        'miniProgramPath' => 'getMiniProgramPath'
+        'miniProgramPath' => 'getMiniProgramPath',
+        'miniProgramPaths' => 'getMiniProgramPaths'
     ];
 
     /**
@@ -185,6 +190,7 @@ class AdcreativeMiniProgramSpec implements ModelInterface, ArrayAccess
     {
         $this->container['miniProgramId'] = isset($data['miniProgramId']) ? $data['miniProgramId'] : null;
         $this->container['miniProgramPath'] = isset($data['miniProgramPath']) ? $data['miniProgramPath'] : null;
+        $this->container['miniProgramPaths'] = isset($data['miniProgramPaths']) ? $data['miniProgramPaths'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class AdcreativeMiniProgramSpec implements ModelInterface, ArrayAccess
     public function setMiniProgramPath($miniProgramPath)
     {
         $this->container['miniProgramPath'] = $miniProgramPath;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniProgramPaths
+     *
+     * @return string[]|mixed
+     */
+    public function getMiniProgramPaths()
+    {
+        return $this->container['miniProgramPaths'];
+    }
+
+    /**
+     * Sets miniProgramPaths
+     *
+     * @param string[]|mixed $miniProgramPaths miniProgramPaths
+     *
+     * @return $this
+     */
+    public function setMiniProgramPaths($miniProgramPaths)
+    {
+        $this->container['miniProgramPaths'] = $miniProgramPaths;
 
         return $this;
     }
