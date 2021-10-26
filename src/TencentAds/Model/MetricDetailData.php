@@ -77,7 +77,14 @@ class MetricDetailData implements ModelInterface, ArrayAccess
         'cvsExpPv' => 'int',
         'cvsExpCost' => 'int',
         'weappExpCost' => 'int',
-        'questReservationUvCost' => 'int'
+        'questReservationUvCost' => 'int',
+        'reachStorePayGmv' => 'int',
+        'reachStorePayUv' => 'int',
+        'reachStorePayPv' => 'int',
+        'reachStorePayRoi' => 'double',
+        'clkPvAvg' => 'double',
+        'reachStorePayArpu' => 'double',
+        'clickUserCount' => 'int'
     ];
 
     /**
@@ -105,7 +112,14 @@ class MetricDetailData implements ModelInterface, ArrayAccess
         'cvsExpPv' => 'int64',
         'cvsExpCost' => 'int64',
         'weappExpCost' => 'int64',
-        'questReservationUvCost' => 'int64'
+        'questReservationUvCost' => 'int64',
+        'reachStorePayGmv' => 'int64',
+        'reachStorePayUv' => 'int64',
+        'reachStorePayPv' => 'int64',
+        'reachStorePayRoi' => 'double',
+        'clkPvAvg' => 'double',
+        'reachStorePayArpu' => 'double',
+        'clickUserCount' => 'int64'
     ];
 
     /**
@@ -154,7 +168,14 @@ class MetricDetailData implements ModelInterface, ArrayAccess
         'cvsExpPv' => 'cvs_exp_pv',
         'cvsExpCost' => 'cvs_exp_cost',
         'weappExpCost' => 'weapp_exp_cost',
-        'questReservationUvCost' => 'quest_reservation_uv_cost'
+        'questReservationUvCost' => 'quest_reservation_uv_cost',
+        'reachStorePayGmv' => 'reach_store_pay_gmv',
+        'reachStorePayUv' => 'reach_store_pay_uv',
+        'reachStorePayPv' => 'reach_store_pay_pv',
+        'reachStorePayRoi' => 'reach_store_pay_roi',
+        'clkPvAvg' => 'clk_pv_avg',
+        'reachStorePayArpu' => 'reach_store_pay_arpu',
+        'clickUserCount' => 'click_user_count'
     ];
 
     /**
@@ -182,7 +203,14 @@ class MetricDetailData implements ModelInterface, ArrayAccess
         'cvsExpPv' => 'setCvsExpPv',
         'cvsExpCost' => 'setCvsExpCost',
         'weappExpCost' => 'setWeappExpCost',
-        'questReservationUvCost' => 'setQuestReservationUvCost'
+        'questReservationUvCost' => 'setQuestReservationUvCost',
+        'reachStorePayGmv' => 'setReachStorePayGmv',
+        'reachStorePayUv' => 'setReachStorePayUv',
+        'reachStorePayPv' => 'setReachStorePayPv',
+        'reachStorePayRoi' => 'setReachStorePayRoi',
+        'clkPvAvg' => 'setClkPvAvg',
+        'reachStorePayArpu' => 'setReachStorePayArpu',
+        'clickUserCount' => 'setClickUserCount'
     ];
 
     /**
@@ -210,7 +238,14 @@ class MetricDetailData implements ModelInterface, ArrayAccess
         'cvsExpPv' => 'getCvsExpPv',
         'cvsExpCost' => 'getCvsExpCost',
         'weappExpCost' => 'getWeappExpCost',
-        'questReservationUvCost' => 'getQuestReservationUvCost'
+        'questReservationUvCost' => 'getQuestReservationUvCost',
+        'reachStorePayGmv' => 'getReachStorePayGmv',
+        'reachStorePayUv' => 'getReachStorePayUv',
+        'reachStorePayPv' => 'getReachStorePayPv',
+        'reachStorePayRoi' => 'getReachStorePayRoi',
+        'clkPvAvg' => 'getClkPvAvg',
+        'reachStorePayArpu' => 'getReachStorePayArpu',
+        'clickUserCount' => 'getClickUserCount'
     ];
 
     /**
@@ -293,6 +328,13 @@ class MetricDetailData implements ModelInterface, ArrayAccess
         $this->container['cvsExpCost'] = isset($data['cvsExpCost']) ? $data['cvsExpCost'] : null;
         $this->container['weappExpCost'] = isset($data['weappExpCost']) ? $data['weappExpCost'] : null;
         $this->container['questReservationUvCost'] = isset($data['questReservationUvCost']) ? $data['questReservationUvCost'] : null;
+        $this->container['reachStorePayGmv'] = isset($data['reachStorePayGmv']) ? $data['reachStorePayGmv'] : null;
+        $this->container['reachStorePayUv'] = isset($data['reachStorePayUv']) ? $data['reachStorePayUv'] : null;
+        $this->container['reachStorePayPv'] = isset($data['reachStorePayPv']) ? $data['reachStorePayPv'] : null;
+        $this->container['reachStorePayRoi'] = isset($data['reachStorePayRoi']) ? $data['reachStorePayRoi'] : null;
+        $this->container['clkPvAvg'] = isset($data['clkPvAvg']) ? $data['clkPvAvg'] : null;
+        $this->container['reachStorePayArpu'] = isset($data['reachStorePayArpu']) ? $data['reachStorePayArpu'] : null;
+        $this->container['clickUserCount'] = isset($data['clickUserCount']) ? $data['clickUserCount'] : null;
     }
 
     /**
@@ -795,6 +837,174 @@ class MetricDetailData implements ModelInterface, ArrayAccess
     public function setQuestReservationUvCost($questReservationUvCost)
     {
         $this->container['questReservationUvCost'] = $questReservationUvCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets reachStorePayGmv
+     *
+     * @return int|mixed
+     */
+    public function getReachStorePayGmv()
+    {
+        return $this->container['reachStorePayGmv'];
+    }
+
+    /**
+     * Sets reachStorePayGmv
+     *
+     * @param int|mixed $reachStorePayGmv reachStorePayGmv
+     *
+     * @return $this
+     */
+    public function setReachStorePayGmv($reachStorePayGmv)
+    {
+        $this->container['reachStorePayGmv'] = $reachStorePayGmv;
+
+        return $this;
+    }
+
+    /**
+     * Gets reachStorePayUv
+     *
+     * @return int|mixed
+     */
+    public function getReachStorePayUv()
+    {
+        return $this->container['reachStorePayUv'];
+    }
+
+    /**
+     * Sets reachStorePayUv
+     *
+     * @param int|mixed $reachStorePayUv reachStorePayUv
+     *
+     * @return $this
+     */
+    public function setReachStorePayUv($reachStorePayUv)
+    {
+        $this->container['reachStorePayUv'] = $reachStorePayUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets reachStorePayPv
+     *
+     * @return int|mixed
+     */
+    public function getReachStorePayPv()
+    {
+        return $this->container['reachStorePayPv'];
+    }
+
+    /**
+     * Sets reachStorePayPv
+     *
+     * @param int|mixed $reachStorePayPv reachStorePayPv
+     *
+     * @return $this
+     */
+    public function setReachStorePayPv($reachStorePayPv)
+    {
+        $this->container['reachStorePayPv'] = $reachStorePayPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets reachStorePayRoi
+     *
+     * @return double|mixed
+     */
+    public function getReachStorePayRoi()
+    {
+        return $this->container['reachStorePayRoi'];
+    }
+
+    /**
+     * Sets reachStorePayRoi
+     *
+     * @param double|mixed $reachStorePayRoi reachStorePayRoi
+     *
+     * @return $this
+     */
+    public function setReachStorePayRoi($reachStorePayRoi)
+    {
+        $this->container['reachStorePayRoi'] = $reachStorePayRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkPvAvg
+     *
+     * @return double|mixed
+     */
+    public function getClkPvAvg()
+    {
+        return $this->container['clkPvAvg'];
+    }
+
+    /**
+     * Sets clkPvAvg
+     *
+     * @param double|mixed $clkPvAvg clkPvAvg
+     *
+     * @return $this
+     */
+    public function setClkPvAvg($clkPvAvg)
+    {
+        $this->container['clkPvAvg'] = $clkPvAvg;
+
+        return $this;
+    }
+
+    /**
+     * Gets reachStorePayArpu
+     *
+     * @return double|mixed
+     */
+    public function getReachStorePayArpu()
+    {
+        return $this->container['reachStorePayArpu'];
+    }
+
+    /**
+     * Sets reachStorePayArpu
+     *
+     * @param double|mixed $reachStorePayArpu reachStorePayArpu
+     *
+     * @return $this
+     */
+    public function setReachStorePayArpu($reachStorePayArpu)
+    {
+        $this->container['reachStorePayArpu'] = $reachStorePayArpu;
+
+        return $this;
+    }
+
+    /**
+     * Gets clickUserCount
+     *
+     * @return int|mixed
+     */
+    public function getClickUserCount()
+    {
+        return $this->container['clickUserCount'];
+    }
+
+    /**
+     * Sets clickUserCount
+     *
+     * @param int|mixed $clickUserCount clickUserCount
+     *
+     * @return $this
+     */
+    public function setClickUserCount($clickUserCount)
+    {
+        $this->container['clickUserCount'] = $clickUserCount;
 
         return $this;
     }

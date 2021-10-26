@@ -96,6 +96,40 @@ class ReportApiContainer extends ApiContainer
 
 
     /**
+     * Handle ReportApi reportLandingPage function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function landingPage(array $params = [])
+    {
+        return $this->handleMiddleware('landingPage', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->reportLandingPage($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle ReportApi reportLandingPageAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function landingPageAsync(array $params = [])
+    {
+        return $this->handleMiddleware('landingPage', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->reportLandingPageAsync($data);
+            return $response;
+        });
+    }
+
+
+    /**
      * Handle ReportApi reportVideoFrame function
      * @param array params
      * @return mixed
