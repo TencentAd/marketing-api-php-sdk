@@ -1,6 +1,6 @@
 <?php
 /**
- * DynamicAdTemplateOwnershipType
+ * ExcludedDay
  *
  * PHP version 5
  *
@@ -31,23 +31,25 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DynamicAdTemplateOwnershipType Class Doc Comment
+ * ExcludedDay Class Doc Comment
  *
  * @category Class
- * @description 动态商品模板所属类型
+ * @description 排除天数
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DynamicAdTemplateOwnershipType
+class ExcludedDay
 {
     /**
      * Possible values of this enum
      */
-    const PRIVATE_TEMPLATE = 'PRIVATE_TEMPLATE';
-    const PUBLIC_TEMPLATE = 'PUBLIC_TEMPLATE';
-    const SELF_OWNED_TEMPLATE = 'SELF_OWNED_TEMPLATE';
-    const GRANTED_TEMPLATE = 'GRANTED_TEMPLATE';
+    const SEVEN_DAY = 'EXCLUDED_DAY_SEVEN_DAY';
+    const ONE_MONTH = 'EXCLUDED_DAY_ONE_MONTH';
+    const TWO_MONTH = 'EXCLUDED_DAY_TWO_MONTH';
+    const THREE_MONTH = 'EXCLUDED_DAY_THREE_MONTH';
+    const SIX_MONTH = 'EXCLUDED_DAY_SIX_MONTH';
+    const ONE_DAY = 'EXCLUDED_DAY_ONE_DAY';
     
     /**
      * Gets allowable values of the enum
@@ -56,10 +58,12 @@ class DynamicAdTemplateOwnershipType
     public static function getAllowableEnumValues()
     {
         return [
-            self::PRIVATE_TEMPLATE,
-            self::PUBLIC_TEMPLATE,
-            self::SELF_OWNED_TEMPLATE,
-            self::GRANTED_TEMPLATE,
+            self::SEVEN_DAY,
+            self::ONE_MONTH,
+            self::TWO_MONTH,
+            self::THREE_MONTH,
+            self::SIX_MONTH,
+            self::ONE_DAY,
         ];
     }
 }

@@ -59,7 +59,8 @@ class ExcludedConvertedAudienceStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'excludedDimension' => '\TencentAds\Model\ExcludedDimension',
-        'conversionBehaviorList' => 'string[]'
+        'conversionBehaviorList' => 'string[]',
+        'excludedDay' => '\TencentAds\Model\ExcludedDay'
     ];
 
     /**
@@ -69,7 +70,8 @@ class ExcludedConvertedAudienceStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'excludedDimension' => null,
-        'conversionBehaviorList' => null
+        'conversionBehaviorList' => null,
+        'excludedDay' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class ExcludedConvertedAudienceStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'excludedDimension' => 'excluded_dimension',
-        'conversionBehaviorList' => 'conversion_behavior_list'
+        'conversionBehaviorList' => 'conversion_behavior_list',
+        'excludedDay' => 'excluded_day'
     ];
 
     /**
@@ -110,7 +113,8 @@ class ExcludedConvertedAudienceStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'excludedDimension' => 'setExcludedDimension',
-        'conversionBehaviorList' => 'setConversionBehaviorList'
+        'conversionBehaviorList' => 'setConversionBehaviorList',
+        'excludedDay' => 'setExcludedDay'
     ];
 
     /**
@@ -120,7 +124,8 @@ class ExcludedConvertedAudienceStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'excludedDimension' => 'getExcludedDimension',
-        'conversionBehaviorList' => 'getConversionBehaviorList'
+        'conversionBehaviorList' => 'getConversionBehaviorList',
+        'excludedDay' => 'getExcludedDay'
     ];
 
     /**
@@ -185,6 +190,7 @@ class ExcludedConvertedAudienceStruct implements ModelInterface, ArrayAccess
     {
         $this->container['excludedDimension'] = isset($data['excludedDimension']) ? $data['excludedDimension'] : null;
         $this->container['conversionBehaviorList'] = isset($data['conversionBehaviorList']) ? $data['conversionBehaviorList'] : null;
+        $this->container['excludedDay'] = isset($data['excludedDay']) ? $data['excludedDay'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class ExcludedConvertedAudienceStruct implements ModelInterface, ArrayAccess
     public function setConversionBehaviorList($conversionBehaviorList)
     {
         $this->container['conversionBehaviorList'] = $conversionBehaviorList;
+
+        return $this;
+    }
+
+    /**
+     * Gets excludedDay
+     *
+     * @return \TencentAds\Model\ExcludedDay|mixed
+     */
+    public function getExcludedDay()
+    {
+        return $this->container['excludedDay'];
+    }
+
+    /**
+     * Sets excludedDay
+     *
+     * @param \TencentAds\Model\ExcludedDay|mixed $excludedDay excludedDay
+     *
+     * @return $this
+     */
+    public function setExcludedDay($excludedDay)
+    {
+        $this->container['excludedDay'] = $excludedDay;
 
         return $this;
     }
