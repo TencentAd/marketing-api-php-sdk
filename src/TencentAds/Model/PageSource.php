@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * PageSource Class Doc Comment
  *
  * @category Class
- * @description 查询类型
+ * @description 查询类型,默认值OWNER。
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

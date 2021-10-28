@@ -62,6 +62,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
         'pageName' => 'string',
         'pageTitle' => 'string',
         'clipboard' => 'string',
+        'pageDeeplink' => 'string',
         'mobileAppId' => 'string',
         'bgColor' => 'string',
         'bgImageId' => 'string',
@@ -78,6 +79,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
         'pageName' => null,
         'pageTitle' => null,
         'clipboard' => null,
+        'pageDeeplink' => null,
         'mobileAppId' => null,
         'bgColor' => null,
         'bgImageId' => null,
@@ -115,6 +117,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
         'pageName' => 'page_name',
         'pageTitle' => 'page_title',
         'clipboard' => 'clipboard',
+        'pageDeeplink' => 'page_deeplink',
         'mobileAppId' => 'mobile_app_id',
         'bgColor' => 'bg_color',
         'bgImageId' => 'bg_image_id',
@@ -131,6 +134,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
         'pageName' => 'setPageName',
         'pageTitle' => 'setPageTitle',
         'clipboard' => 'setClipboard',
+        'pageDeeplink' => 'setPageDeeplink',
         'mobileAppId' => 'setMobileAppId',
         'bgColor' => 'setBgColor',
         'bgImageId' => 'setBgImageId',
@@ -147,6 +151,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
         'pageName' => 'getPageName',
         'pageTitle' => 'getPageTitle',
         'clipboard' => 'getClipboard',
+        'pageDeeplink' => 'getPageDeeplink',
         'mobileAppId' => 'getMobileAppId',
         'bgColor' => 'getBgColor',
         'bgImageId' => 'getBgImageId',
@@ -217,6 +222,7 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
         $this->container['pageName'] = isset($data['pageName']) ? $data['pageName'] : null;
         $this->container['pageTitle'] = isset($data['pageTitle']) ? $data['pageTitle'] : null;
         $this->container['clipboard'] = isset($data['clipboard']) ? $data['clipboard'] : null;
+        $this->container['pageDeeplink'] = isset($data['pageDeeplink']) ? $data['pageDeeplink'] : null;
         $this->container['mobileAppId'] = isset($data['mobileAppId']) ? $data['mobileAppId'] : null;
         $this->container['bgColor'] = isset($data['bgColor']) ? $data['bgColor'] : null;
         $this->container['bgImageId'] = isset($data['bgImageId']) ? $data['bgImageId'] : null;
@@ -339,6 +345,30 @@ class XijingPageByComponentsAddPagesStruct implements ModelInterface, ArrayAcces
     public function setClipboard($clipboard)
     {
         $this->container['clipboard'] = $clipboard;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageDeeplink
+     *
+     * @return string|mixed
+     */
+    public function getPageDeeplink()
+    {
+        return $this->container['pageDeeplink'];
+    }
+
+    /**
+     * Sets pageDeeplink
+     *
+     * @param string|mixed $pageDeeplink pageDeeplink
+     *
+     * @return $this
+     */
+    public function setPageDeeplink($pageDeeplink)
+    {
+        $this->container['pageDeeplink'] = $pageDeeplink;
 
         return $this;
     }

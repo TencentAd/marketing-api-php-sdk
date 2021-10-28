@@ -61,6 +61,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
         'pageType' => '\TencentAds\Model\TemplatesPageType',
         'pageName' => 'string',
         'clipboard' => 'string',
+        'pageDeeplink' => 'string',
         'pageTitle' => 'string',
         'componentSpecList' => 'string[]',
         'mobileAppId' => 'string'
@@ -76,6 +77,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
         'pageType' => null,
         'pageName' => null,
         'clipboard' => null,
+        'pageDeeplink' => null,
         'pageTitle' => null,
         'componentSpecList' => null,
         'mobileAppId' => null
@@ -112,6 +114,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
         'pageType' => 'page_type',
         'pageName' => 'page_name',
         'clipboard' => 'clipboard',
+        'pageDeeplink' => 'page_deeplink',
         'pageTitle' => 'page_title',
         'componentSpecList' => 'component_spec_list',
         'mobileAppId' => 'mobile_app_id'
@@ -127,6 +130,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
         'pageType' => 'setPageType',
         'pageName' => 'setPageName',
         'clipboard' => 'setClipboard',
+        'pageDeeplink' => 'setPageDeeplink',
         'pageTitle' => 'setPageTitle',
         'componentSpecList' => 'setComponentSpecList',
         'mobileAppId' => 'setMobileAppId'
@@ -142,6 +146,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
         'pageType' => 'getPageType',
         'pageName' => 'getPageName',
         'clipboard' => 'getClipboard',
+        'pageDeeplink' => 'getPageDeeplink',
         'pageTitle' => 'getPageTitle',
         'componentSpecList' => 'getComponentSpecList',
         'mobileAppId' => 'getMobileAppId'
@@ -211,6 +216,7 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
         $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
         $this->container['pageName'] = isset($data['pageName']) ? $data['pageName'] : null;
         $this->container['clipboard'] = isset($data['clipboard']) ? $data['clipboard'] : null;
+        $this->container['pageDeeplink'] = isset($data['pageDeeplink']) ? $data['pageDeeplink'] : null;
         $this->container['pageTitle'] = isset($data['pageTitle']) ? $data['pageTitle'] : null;
         $this->container['componentSpecList'] = isset($data['componentSpecList']) ? $data['componentSpecList'] : null;
         $this->container['mobileAppId'] = isset($data['mobileAppId']) ? $data['mobileAppId'] : null;
@@ -332,6 +338,30 @@ class XijingTemplateGetResponseData implements ModelInterface, ArrayAccess
     public function setClipboard($clipboard)
     {
         $this->container['clipboard'] = $clipboard;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageDeeplink
+     *
+     * @return string|mixed
+     */
+    public function getPageDeeplink()
+    {
+        return $this->container['pageDeeplink'];
+    }
+
+    /**
+     * Sets pageDeeplink
+     *
+     * @param string|mixed $pageDeeplink pageDeeplink
+     *
+     * @return $this
+     */
+    public function setPageDeeplink($pageDeeplink)
+    {
+        $this->container['pageDeeplink'] = $pageDeeplink;
 
         return $this;
     }

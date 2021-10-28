@@ -1,6 +1,6 @@
 <?php
 /**
- * XijingPageAddPagesStruct
+ * LandingPageStructure
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * XijingPageAddPagesStruct Class Doc Comment
+ * LandingPageStructure Class Doc Comment
  *
  * @category Class
- * @description 落地页配置结构
+ * @description 跳转落地页信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
+class LandingPageStructure implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'XijingPageAddPagesStruct';
+    protected static $swaggerModelName = 'landing_page_structure';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,14 +58,11 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pageType' => '\TencentAds\Model\TemplatesPageType',
-        'pageName' => 'string',
-        'pageTitle' => 'string',
-        'clipboard' => 'string',
-        'pageDeeplink' => 'string',
-        'mobileAppId' => 'string',
-        'pageTemplateId' => 'string',
-        'componentSpecList' => 'string[]'
+        'pageSpec' => '\TencentAds\Model\PageSpec',
+        'pageType' => '\TencentAds\Model\DestinationType',
+        'linkNameType' => '\TencentAds\Model\LinkUrlLinkNameType',
+        'landingPagePlatform' => '\TencentAds\Model\LandingPagePlatform',
+        'landingPageInfo' => '\TencentAds\Model\LandingPageInfo'
     ];
 
     /**
@@ -74,14 +71,11 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
+        'pageSpec' => null,
         'pageType' => null,
-        'pageName' => null,
-        'pageTitle' => null,
-        'clipboard' => null,
-        'pageDeeplink' => null,
-        'mobileAppId' => null,
-        'pageTemplateId' => null,
-        'componentSpecList' => null
+        'linkNameType' => null,
+        'landingPagePlatform' => null,
+        'landingPageInfo' => null
     ];
 
     /**
@@ -111,14 +105,11 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'pageSpec' => 'page_spec',
         'pageType' => 'page_type',
-        'pageName' => 'page_name',
-        'pageTitle' => 'page_title',
-        'clipboard' => 'clipboard',
-        'pageDeeplink' => 'page_deeplink',
-        'mobileAppId' => 'mobile_app_id',
-        'pageTemplateId' => 'page_template_id',
-        'componentSpecList' => 'component_spec_list'
+        'linkNameType' => 'link_name_type',
+        'landingPagePlatform' => 'landing_page_platform',
+        'landingPageInfo' => 'landing_page_info'
     ];
 
     /**
@@ -127,14 +118,11 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'pageSpec' => 'setPageSpec',
         'pageType' => 'setPageType',
-        'pageName' => 'setPageName',
-        'pageTitle' => 'setPageTitle',
-        'clipboard' => 'setClipboard',
-        'pageDeeplink' => 'setPageDeeplink',
-        'mobileAppId' => 'setMobileAppId',
-        'pageTemplateId' => 'setPageTemplateId',
-        'componentSpecList' => 'setComponentSpecList'
+        'linkNameType' => 'setLinkNameType',
+        'landingPagePlatform' => 'setLandingPagePlatform',
+        'landingPageInfo' => 'setLandingPageInfo'
     ];
 
     /**
@@ -143,14 +131,11 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'pageSpec' => 'getPageSpec',
         'pageType' => 'getPageType',
-        'pageName' => 'getPageName',
-        'pageTitle' => 'getPageTitle',
-        'clipboard' => 'getClipboard',
-        'pageDeeplink' => 'getPageDeeplink',
-        'mobileAppId' => 'getMobileAppId',
-        'pageTemplateId' => 'getPageTemplateId',
-        'componentSpecList' => 'getComponentSpecList'
+        'linkNameType' => 'getLinkNameType',
+        'landingPagePlatform' => 'getLandingPagePlatform',
+        'landingPageInfo' => 'getLandingPageInfo'
     ];
 
     /**
@@ -213,14 +198,11 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['pageSpec'] = isset($data['pageSpec']) ? $data['pageSpec'] : null;
         $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
-        $this->container['pageName'] = isset($data['pageName']) ? $data['pageName'] : null;
-        $this->container['pageTitle'] = isset($data['pageTitle']) ? $data['pageTitle'] : null;
-        $this->container['clipboard'] = isset($data['clipboard']) ? $data['clipboard'] : null;
-        $this->container['pageDeeplink'] = isset($data['pageDeeplink']) ? $data['pageDeeplink'] : null;
-        $this->container['mobileAppId'] = isset($data['mobileAppId']) ? $data['mobileAppId'] : null;
-        $this->container['pageTemplateId'] = isset($data['pageTemplateId']) ? $data['pageTemplateId'] : null;
-        $this->container['componentSpecList'] = isset($data['componentSpecList']) ? $data['componentSpecList'] : null;
+        $this->container['linkNameType'] = isset($data['linkNameType']) ? $data['linkNameType'] : null;
+        $this->container['landingPagePlatform'] = isset($data['landingPagePlatform']) ? $data['landingPagePlatform'] : null;
+        $this->container['landingPageInfo'] = isset($data['landingPageInfo']) ? $data['landingPageInfo'] : null;
     }
 
     /**
@@ -248,9 +230,33 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
 
 
     /**
+     * Gets pageSpec
+     *
+     * @return \TencentAds\Model\PageSpec|mixed
+     */
+    public function getPageSpec()
+    {
+        return $this->container['pageSpec'];
+    }
+
+    /**
+     * Sets pageSpec
+     *
+     * @param \TencentAds\Model\PageSpec|mixed $pageSpec pageSpec
+     *
+     * @return $this
+     */
+    public function setPageSpec($pageSpec)
+    {
+        $this->container['pageSpec'] = $pageSpec;
+
+        return $this;
+    }
+
+    /**
      * Gets pageType
      *
-     * @return \TencentAds\Model\TemplatesPageType|mixed
+     * @return \TencentAds\Model\DestinationType|mixed
      */
     public function getPageType()
     {
@@ -260,7 +266,7 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageType
      *
-     * @param \TencentAds\Model\TemplatesPageType|mixed $pageType pageType
+     * @param \TencentAds\Model\DestinationType|mixed $pageType pageType
      *
      * @return $this
      */
@@ -272,169 +278,73 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets pageName
+     * Gets linkNameType
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\LinkUrlLinkNameType|mixed
      */
-    public function getPageName()
+    public function getLinkNameType()
     {
-        return $this->container['pageName'];
+        return $this->container['linkNameType'];
     }
 
     /**
-     * Sets pageName
+     * Sets linkNameType
      *
-     * @param string|mixed $pageName pageName
+     * @param \TencentAds\Model\LinkUrlLinkNameType|mixed $linkNameType linkNameType
      *
      * @return $this
      */
-    public function setPageName($pageName)
+    public function setLinkNameType($linkNameType)
     {
-        $this->container['pageName'] = $pageName;
+        $this->container['linkNameType'] = $linkNameType;
 
         return $this;
     }
 
     /**
-     * Gets pageTitle
+     * Gets landingPagePlatform
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\LandingPagePlatform|mixed
      */
-    public function getPageTitle()
+    public function getLandingPagePlatform()
     {
-        return $this->container['pageTitle'];
+        return $this->container['landingPagePlatform'];
     }
 
     /**
-     * Sets pageTitle
+     * Sets landingPagePlatform
      *
-     * @param string|mixed $pageTitle pageTitle
+     * @param \TencentAds\Model\LandingPagePlatform|mixed $landingPagePlatform landingPagePlatform
      *
      * @return $this
      */
-    public function setPageTitle($pageTitle)
+    public function setLandingPagePlatform($landingPagePlatform)
     {
-        $this->container['pageTitle'] = $pageTitle;
+        $this->container['landingPagePlatform'] = $landingPagePlatform;
 
         return $this;
     }
 
     /**
-     * Gets clipboard
+     * Gets landingPageInfo
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\LandingPageInfo|mixed
      */
-    public function getClipboard()
+    public function getLandingPageInfo()
     {
-        return $this->container['clipboard'];
+        return $this->container['landingPageInfo'];
     }
 
     /**
-     * Sets clipboard
+     * Sets landingPageInfo
      *
-     * @param string|mixed $clipboard clipboard
+     * @param \TencentAds\Model\LandingPageInfo|mixed $landingPageInfo landingPageInfo
      *
      * @return $this
      */
-    public function setClipboard($clipboard)
+    public function setLandingPageInfo($landingPageInfo)
     {
-        $this->container['clipboard'] = $clipboard;
-
-        return $this;
-    }
-
-    /**
-     * Gets pageDeeplink
-     *
-     * @return string|mixed
-     */
-    public function getPageDeeplink()
-    {
-        return $this->container['pageDeeplink'];
-    }
-
-    /**
-     * Sets pageDeeplink
-     *
-     * @param string|mixed $pageDeeplink pageDeeplink
-     *
-     * @return $this
-     */
-    public function setPageDeeplink($pageDeeplink)
-    {
-        $this->container['pageDeeplink'] = $pageDeeplink;
-
-        return $this;
-    }
-
-    /**
-     * Gets mobileAppId
-     *
-     * @return string|mixed
-     */
-    public function getMobileAppId()
-    {
-        return $this->container['mobileAppId'];
-    }
-
-    /**
-     * Sets mobileAppId
-     *
-     * @param string|mixed $mobileAppId mobileAppId
-     *
-     * @return $this
-     */
-    public function setMobileAppId($mobileAppId)
-    {
-        $this->container['mobileAppId'] = $mobileAppId;
-
-        return $this;
-    }
-
-    /**
-     * Gets pageTemplateId
-     *
-     * @return string|mixed
-     */
-    public function getPageTemplateId()
-    {
-        return $this->container['pageTemplateId'];
-    }
-
-    /**
-     * Sets pageTemplateId
-     *
-     * @param string|mixed $pageTemplateId pageTemplateId
-     *
-     * @return $this
-     */
-    public function setPageTemplateId($pageTemplateId)
-    {
-        $this->container['pageTemplateId'] = $pageTemplateId;
-
-        return $this;
-    }
-
-    /**
-     * Gets componentSpecList
-     *
-     * @return string[]|mixed
-     */
-    public function getComponentSpecList()
-    {
-        return $this->container['componentSpecList'];
-    }
-
-    /**
-     * Sets componentSpecList
-     *
-     * @param string[]|mixed $componentSpecList componentSpecList
-     *
-     * @return $this
-     */
-    public function setComponentSpecList($componentSpecList)
-    {
-        $this->container['componentSpecList'] = $componentSpecList;
+        $this->container['landingPageInfo'] = $landingPageInfo;
 
         return $this;
     }

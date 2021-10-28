@@ -102,7 +102,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'endPage' => '\TencentAds\Model\AdCreativeEndPage',
         'shopImage' => 'string',
         'headLine' => 'string',
-        'shopImageStruct' => '\TencentAds\Model\AdCreativeShopImageStruct'
+        'shopImageStruct' => '\TencentAds\Model\AdCreativeShopImageStruct',
+        'chosenButton' => '\TencentAds\Model\ChosenButton'
     ];
 
     /**
@@ -155,7 +156,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'endPage' => null,
         'shopImage' => null,
         'headLine' => null,
-        'shopImageStruct' => null
+        'shopImageStruct' => null,
+        'chosenButton' => null
     ];
 
     /**
@@ -229,7 +231,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'endPage' => 'end_page',
         'shopImage' => 'shop_image',
         'headLine' => 'head_line',
-        'shopImageStruct' => 'shop_image_struct'
+        'shopImageStruct' => 'shop_image_struct',
+        'chosenButton' => 'chosen_button'
     ];
 
     /**
@@ -282,7 +285,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'endPage' => 'setEndPage',
         'shopImage' => 'setShopImage',
         'headLine' => 'setHeadLine',
-        'shopImageStruct' => 'setShopImageStruct'
+        'shopImageStruct' => 'setShopImageStruct',
+        'chosenButton' => 'setChosenButton'
     ];
 
     /**
@@ -335,7 +339,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'endPage' => 'getEndPage',
         'shopImage' => 'getShopImage',
         'headLine' => 'getHeadLine',
-        'shopImageStruct' => 'getShopImageStruct'
+        'shopImageStruct' => 'getShopImageStruct',
+        'chosenButton' => 'getChosenButton'
     ];
 
     /**
@@ -443,6 +448,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         $this->container['shopImage'] = isset($data['shopImage']) ? $data['shopImage'] : null;
         $this->container['headLine'] = isset($data['headLine']) ? $data['headLine'] : null;
         $this->container['shopImageStruct'] = isset($data['shopImageStruct']) ? $data['shopImageStruct'] : null;
+        $this->container['chosenButton'] = isset($data['chosenButton']) ? $data['chosenButton'] : null;
     }
 
     /**
@@ -1545,6 +1551,30 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     public function setShopImageStruct($shopImageStruct)
     {
         $this->container['shopImageStruct'] = $shopImageStruct;
+
+        return $this;
+    }
+
+    /**
+     * Gets chosenButton
+     *
+     * @return \TencentAds\Model\ChosenButton|mixed
+     */
+    public function getChosenButton()
+    {
+        return $this->container['chosenButton'];
+    }
+
+    /**
+     * Sets chosenButton
+     *
+     * @param \TencentAds\Model\ChosenButton|mixed $chosenButton chosenButton
+     *
+     * @return $this
+     */
+    public function setChosenButton($chosenButton)
+    {
+        $this->container['chosenButton'] = $chosenButton;
 
         return $this;
     }

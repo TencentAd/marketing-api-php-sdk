@@ -1,6 +1,6 @@
 <?php
 /**
- * XijingPageAddPagesStruct
+ * ChosenButton
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * XijingPageAddPagesStruct Class Doc Comment
+ * ChosenButton Class Doc Comment
  *
  * @category Class
- * @description 落地页配置结构
+ * @description 选择按钮
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
+class ChosenButton implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'XijingPageAddPagesStruct';
+    protected static $swaggerModelName = 'chosen_button';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,14 +58,10 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pageType' => '\TencentAds\Model\TemplatesPageType',
-        'pageName' => 'string',
-        'pageTitle' => 'string',
-        'clipboard' => 'string',
-        'pageDeeplink' => 'string',
-        'mobileAppId' => 'string',
-        'pageTemplateId' => 'string',
-        'componentSpecList' => 'string[]'
+        'leftButtonTxt' => 'string',
+        'leftButtonLandingPage' => '\TencentAds\Model\LandingPageStructure',
+        'rightButtonTxt' => 'string',
+        'rightButtonLandingPage' => '\TencentAds\Model\LandingPageStructure'
     ];
 
     /**
@@ -74,14 +70,10 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'pageType' => null,
-        'pageName' => null,
-        'pageTitle' => null,
-        'clipboard' => null,
-        'pageDeeplink' => null,
-        'mobileAppId' => null,
-        'pageTemplateId' => null,
-        'componentSpecList' => null
+        'leftButtonTxt' => null,
+        'leftButtonLandingPage' => null,
+        'rightButtonTxt' => null,
+        'rightButtonLandingPage' => null
     ];
 
     /**
@@ -111,14 +103,10 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'pageType' => 'page_type',
-        'pageName' => 'page_name',
-        'pageTitle' => 'page_title',
-        'clipboard' => 'clipboard',
-        'pageDeeplink' => 'page_deeplink',
-        'mobileAppId' => 'mobile_app_id',
-        'pageTemplateId' => 'page_template_id',
-        'componentSpecList' => 'component_spec_list'
+        'leftButtonTxt' => 'left_button_txt',
+        'leftButtonLandingPage' => 'left_button_landing_page',
+        'rightButtonTxt' => 'right_button_txt',
+        'rightButtonLandingPage' => 'right_button_landing_page'
     ];
 
     /**
@@ -127,14 +115,10 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'pageType' => 'setPageType',
-        'pageName' => 'setPageName',
-        'pageTitle' => 'setPageTitle',
-        'clipboard' => 'setClipboard',
-        'pageDeeplink' => 'setPageDeeplink',
-        'mobileAppId' => 'setMobileAppId',
-        'pageTemplateId' => 'setPageTemplateId',
-        'componentSpecList' => 'setComponentSpecList'
+        'leftButtonTxt' => 'setLeftButtonTxt',
+        'leftButtonLandingPage' => 'setLeftButtonLandingPage',
+        'rightButtonTxt' => 'setRightButtonTxt',
+        'rightButtonLandingPage' => 'setRightButtonLandingPage'
     ];
 
     /**
@@ -143,14 +127,10 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'pageType' => 'getPageType',
-        'pageName' => 'getPageName',
-        'pageTitle' => 'getPageTitle',
-        'clipboard' => 'getClipboard',
-        'pageDeeplink' => 'getPageDeeplink',
-        'mobileAppId' => 'getMobileAppId',
-        'pageTemplateId' => 'getPageTemplateId',
-        'componentSpecList' => 'getComponentSpecList'
+        'leftButtonTxt' => 'getLeftButtonTxt',
+        'leftButtonLandingPage' => 'getLeftButtonLandingPage',
+        'rightButtonTxt' => 'getRightButtonTxt',
+        'rightButtonLandingPage' => 'getRightButtonLandingPage'
     ];
 
     /**
@@ -213,14 +193,10 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
-        $this->container['pageName'] = isset($data['pageName']) ? $data['pageName'] : null;
-        $this->container['pageTitle'] = isset($data['pageTitle']) ? $data['pageTitle'] : null;
-        $this->container['clipboard'] = isset($data['clipboard']) ? $data['clipboard'] : null;
-        $this->container['pageDeeplink'] = isset($data['pageDeeplink']) ? $data['pageDeeplink'] : null;
-        $this->container['mobileAppId'] = isset($data['mobileAppId']) ? $data['mobileAppId'] : null;
-        $this->container['pageTemplateId'] = isset($data['pageTemplateId']) ? $data['pageTemplateId'] : null;
-        $this->container['componentSpecList'] = isset($data['componentSpecList']) ? $data['componentSpecList'] : null;
+        $this->container['leftButtonTxt'] = isset($data['leftButtonTxt']) ? $data['leftButtonTxt'] : null;
+        $this->container['leftButtonLandingPage'] = isset($data['leftButtonLandingPage']) ? $data['leftButtonLandingPage'] : null;
+        $this->container['rightButtonTxt'] = isset($data['rightButtonTxt']) ? $data['rightButtonTxt'] : null;
+        $this->container['rightButtonLandingPage'] = isset($data['rightButtonLandingPage']) ? $data['rightButtonLandingPage'] : null;
     }
 
     /**
@@ -248,193 +224,97 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets pageType
-     *
-     * @return \TencentAds\Model\TemplatesPageType|mixed
-     */
-    public function getPageType()
-    {
-        return $this->container['pageType'];
-    }
-
-    /**
-     * Sets pageType
-     *
-     * @param \TencentAds\Model\TemplatesPageType|mixed $pageType pageType
-     *
-     * @return $this
-     */
-    public function setPageType($pageType)
-    {
-        $this->container['pageType'] = $pageType;
-
-        return $this;
-    }
-
-    /**
-     * Gets pageName
+     * Gets leftButtonTxt
      *
      * @return string|mixed
      */
-    public function getPageName()
+    public function getLeftButtonTxt()
     {
-        return $this->container['pageName'];
+        return $this->container['leftButtonTxt'];
     }
 
     /**
-     * Sets pageName
+     * Sets leftButtonTxt
      *
-     * @param string|mixed $pageName pageName
+     * @param string|mixed $leftButtonTxt leftButtonTxt
      *
      * @return $this
      */
-    public function setPageName($pageName)
+    public function setLeftButtonTxt($leftButtonTxt)
     {
-        $this->container['pageName'] = $pageName;
+        $this->container['leftButtonTxt'] = $leftButtonTxt;
 
         return $this;
     }
 
     /**
-     * Gets pageTitle
+     * Gets leftButtonLandingPage
+     *
+     * @return \TencentAds\Model\LandingPageStructure|mixed
+     */
+    public function getLeftButtonLandingPage()
+    {
+        return $this->container['leftButtonLandingPage'];
+    }
+
+    /**
+     * Sets leftButtonLandingPage
+     *
+     * @param \TencentAds\Model\LandingPageStructure|mixed $leftButtonLandingPage leftButtonLandingPage
+     *
+     * @return $this
+     */
+    public function setLeftButtonLandingPage($leftButtonLandingPage)
+    {
+        $this->container['leftButtonLandingPage'] = $leftButtonLandingPage;
+
+        return $this;
+    }
+
+    /**
+     * Gets rightButtonTxt
      *
      * @return string|mixed
      */
-    public function getPageTitle()
+    public function getRightButtonTxt()
     {
-        return $this->container['pageTitle'];
+        return $this->container['rightButtonTxt'];
     }
 
     /**
-     * Sets pageTitle
+     * Sets rightButtonTxt
      *
-     * @param string|mixed $pageTitle pageTitle
+     * @param string|mixed $rightButtonTxt rightButtonTxt
      *
      * @return $this
      */
-    public function setPageTitle($pageTitle)
+    public function setRightButtonTxt($rightButtonTxt)
     {
-        $this->container['pageTitle'] = $pageTitle;
+        $this->container['rightButtonTxt'] = $rightButtonTxt;
 
         return $this;
     }
 
     /**
-     * Gets clipboard
+     * Gets rightButtonLandingPage
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\LandingPageStructure|mixed
      */
-    public function getClipboard()
+    public function getRightButtonLandingPage()
     {
-        return $this->container['clipboard'];
+        return $this->container['rightButtonLandingPage'];
     }
 
     /**
-     * Sets clipboard
+     * Sets rightButtonLandingPage
      *
-     * @param string|mixed $clipboard clipboard
+     * @param \TencentAds\Model\LandingPageStructure|mixed $rightButtonLandingPage rightButtonLandingPage
      *
      * @return $this
      */
-    public function setClipboard($clipboard)
+    public function setRightButtonLandingPage($rightButtonLandingPage)
     {
-        $this->container['clipboard'] = $clipboard;
-
-        return $this;
-    }
-
-    /**
-     * Gets pageDeeplink
-     *
-     * @return string|mixed
-     */
-    public function getPageDeeplink()
-    {
-        return $this->container['pageDeeplink'];
-    }
-
-    /**
-     * Sets pageDeeplink
-     *
-     * @param string|mixed $pageDeeplink pageDeeplink
-     *
-     * @return $this
-     */
-    public function setPageDeeplink($pageDeeplink)
-    {
-        $this->container['pageDeeplink'] = $pageDeeplink;
-
-        return $this;
-    }
-
-    /**
-     * Gets mobileAppId
-     *
-     * @return string|mixed
-     */
-    public function getMobileAppId()
-    {
-        return $this->container['mobileAppId'];
-    }
-
-    /**
-     * Sets mobileAppId
-     *
-     * @param string|mixed $mobileAppId mobileAppId
-     *
-     * @return $this
-     */
-    public function setMobileAppId($mobileAppId)
-    {
-        $this->container['mobileAppId'] = $mobileAppId;
-
-        return $this;
-    }
-
-    /**
-     * Gets pageTemplateId
-     *
-     * @return string|mixed
-     */
-    public function getPageTemplateId()
-    {
-        return $this->container['pageTemplateId'];
-    }
-
-    /**
-     * Sets pageTemplateId
-     *
-     * @param string|mixed $pageTemplateId pageTemplateId
-     *
-     * @return $this
-     */
-    public function setPageTemplateId($pageTemplateId)
-    {
-        $this->container['pageTemplateId'] = $pageTemplateId;
-
-        return $this;
-    }
-
-    /**
-     * Gets componentSpecList
-     *
-     * @return string[]|mixed
-     */
-    public function getComponentSpecList()
-    {
-        return $this->container['componentSpecList'];
-    }
-
-    /**
-     * Sets componentSpecList
-     *
-     * @param string[]|mixed $componentSpecList componentSpecList
-     *
-     * @return $this
-     */
-    public function setComponentSpecList($componentSpecList)
-    {
-        $this->container['componentSpecList'] = $componentSpecList;
+        $this->container['rightButtonLandingPage'] = $rightButtonLandingPage;
 
         return $this;
     }

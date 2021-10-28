@@ -50,6 +50,7 @@ class SimpleCanvasSubType
     const SLIDE_UP = 'SIMPLE_CANVAS_SUB_TYPE_SLIDE_UP';
     const WEB_STORE = 'SIMPLE_CANVAS_SUB_TYPE_WEB_STORE';
     const RESERVE_LIVE = 'SIMPLE_CANVAS_SUB_TYPE_RESERVE_LIVE';
+    const CHOOSE = 'SIMPLE_CANVAS_SUB_TYPE_CHOOSE';
     
     /**
      * Gets allowable values of the enum
@@ -64,6 +65,7 @@ class SimpleCanvasSubType
             self::SLIDE_UP,
             self::WEB_STORE,
             self::RESERVE_LIVE,
+            self::CHOOSE,
         ];
     }
 }
