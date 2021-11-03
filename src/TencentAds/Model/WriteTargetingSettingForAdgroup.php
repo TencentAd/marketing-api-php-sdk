@@ -88,7 +88,6 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'excludedCustomAudience' => 'int[]',
         'behaviorOrInterest' => '\TencentAds\Model\BehaviorOrInterest',
         'wechatOfficialAccountCategory' => 'int[]',
-        'mobileUnionCategory' => 'int[]',
         'miniGameQqStatus' => 'string[]',
         'excludedConvertedAudience' => '\TencentAds\Model\ExcludedConvertedAudienceStruct'
     ];
@@ -129,7 +128,6 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'excludedCustomAudience' => 'int64',
         'behaviorOrInterest' => null,
         'wechatOfficialAccountCategory' => 'int64',
-        'mobileUnionCategory' => 'int64',
         'miniGameQqStatus' => null,
         'excludedConvertedAudience' => null
     ];
@@ -191,7 +189,6 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'excludedCustomAudience' => 'excluded_custom_audience',
         'behaviorOrInterest' => 'behavior_or_interest',
         'wechatOfficialAccountCategory' => 'wechat_official_account_category',
-        'mobileUnionCategory' => 'mobile_union_category',
         'miniGameQqStatus' => 'mini_game_qq_status',
         'excludedConvertedAudience' => 'excluded_converted_audience'
     ];
@@ -232,7 +229,6 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'excludedCustomAudience' => 'setExcludedCustomAudience',
         'behaviorOrInterest' => 'setBehaviorOrInterest',
         'wechatOfficialAccountCategory' => 'setWechatOfficialAccountCategory',
-        'mobileUnionCategory' => 'setMobileUnionCategory',
         'miniGameQqStatus' => 'setMiniGameQqStatus',
         'excludedConvertedAudience' => 'setExcludedConvertedAudience'
     ];
@@ -273,7 +269,6 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'excludedCustomAudience' => 'getExcludedCustomAudience',
         'behaviorOrInterest' => 'getBehaviorOrInterest',
         'wechatOfficialAccountCategory' => 'getWechatOfficialAccountCategory',
-        'mobileUnionCategory' => 'getMobileUnionCategory',
         'miniGameQqStatus' => 'getMiniGameQqStatus',
         'excludedConvertedAudience' => 'getExcludedConvertedAudience'
     ];
@@ -368,7 +363,6 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         $this->container['excludedCustomAudience'] = isset($data['excludedCustomAudience']) ? $data['excludedCustomAudience'] : null;
         $this->container['behaviorOrInterest'] = isset($data['behaviorOrInterest']) ? $data['behaviorOrInterest'] : null;
         $this->container['wechatOfficialAccountCategory'] = isset($data['wechatOfficialAccountCategory']) ? $data['wechatOfficialAccountCategory'] : null;
-        $this->container['mobileUnionCategory'] = isset($data['mobileUnionCategory']) ? $data['mobileUnionCategory'] : null;
         $this->container['miniGameQqStatus'] = isset($data['miniGameQqStatus']) ? $data['miniGameQqStatus'] : null;
         $this->container['excludedConvertedAudience'] = isset($data['excludedConvertedAudience']) ? $data['excludedConvertedAudience'] : null;
     }
@@ -1113,30 +1107,6 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     public function setWechatOfficialAccountCategory($wechatOfficialAccountCategory)
     {
         $this->container['wechatOfficialAccountCategory'] = $wechatOfficialAccountCategory;
-
-        return $this;
-    }
-
-    /**
-     * Gets mobileUnionCategory
-     *
-     * @return int[]|mixed
-     */
-    public function getMobileUnionCategory()
-    {
-        return $this->container['mobileUnionCategory'];
-    }
-
-    /**
-     * Sets mobileUnionCategory
-     *
-     * @param int[]|mixed $mobileUnionCategory mobileUnionCategory
-     *
-     * @return $this
-     */
-    public function setMobileUnionCategory($mobileUnionCategory)
-    {
-        $this->container['mobileUnionCategory'] = $mobileUnionCategory;
 
         return $this;
     }

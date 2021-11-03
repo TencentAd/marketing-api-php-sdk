@@ -44,6 +44,7 @@ class LandingPageType
     /**
      * Possible values of this enum
      */
+    const LANDING_PAGE_TYPE_UNKNOWN = 'LANDING_PAGE_TYPE_UNKNOWN';
     const LANDING_PAGE_TYPE_ANDROID_APP = 'LANDING_PAGE_TYPE_ANDROID_APP';
     const LANDING_PAGE_TYPE_IOS_APP = 'LANDING_PAGE_TYPE_IOS_APP';
     const LANDING_PAGE_TYPE_FENGYE_WEB = 'LANDING_PAGE_TYPE_FENGYE_WEB';
@@ -114,7 +115,6 @@ class LandingPageType
     const _DEFAULT = 'DEFAULT';
     const DEEP_LINK_IOS = 'DEEP_LINK_IOS';
     const DEEP_LINK_ANDROID = 'DEEP_LINK_ANDROID';
-    const LANDING_PAGE_TYPE_UNKNOWN = 'LANDING_PAGE_TYPE_UNKNOWN';
     
     /**
      * Gets allowable values of the enum
@@ -123,6 +123,7 @@ class LandingPageType
     public static function getAllowableEnumValues()
     {
         return [
+            self::LANDING_PAGE_TYPE_UNKNOWN,
             self::LANDING_PAGE_TYPE_ANDROID_APP,
             self::LANDING_PAGE_TYPE_IOS_APP,
             self::LANDING_PAGE_TYPE_FENGYE_WEB,
@@ -193,7 +194,6 @@ class LandingPageType
             self::_DEFAULT,
             self::DEEP_LINK_IOS,
             self::DEEP_LINK_ANDROID,
-            self::LANDING_PAGE_TYPE_UNKNOWN,
         ];
     }
 }

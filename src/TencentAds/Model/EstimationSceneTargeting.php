@@ -58,9 +58,7 @@ class EstimationSceneTargeting implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'displayScene' => 'string[]',
-        'mobileUnionCategory' => 'int[]',
-        'mobileUnionIndustry' => 'string[]'
+        'displayScene' => 'string[]'
     ];
 
     /**
@@ -69,9 +67,7 @@ class EstimationSceneTargeting implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'displayScene' => null,
-        'mobileUnionCategory' => 'int64',
-        'mobileUnionIndustry' => null
+        'displayScene' => null
     ];
 
     /**
@@ -101,9 +97,7 @@ class EstimationSceneTargeting implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'displayScene' => 'display_scene',
-        'mobileUnionCategory' => 'mobile_union_category',
-        'mobileUnionIndustry' => 'mobile_union_industry'
+        'displayScene' => 'display_scene'
     ];
 
     /**
@@ -112,9 +106,7 @@ class EstimationSceneTargeting implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'displayScene' => 'setDisplayScene',
-        'mobileUnionCategory' => 'setMobileUnionCategory',
-        'mobileUnionIndustry' => 'setMobileUnionIndustry'
+        'displayScene' => 'setDisplayScene'
     ];
 
     /**
@@ -123,9 +115,7 @@ class EstimationSceneTargeting implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'displayScene' => 'getDisplayScene',
-        'mobileUnionCategory' => 'getMobileUnionCategory',
-        'mobileUnionIndustry' => 'getMobileUnionIndustry'
+        'displayScene' => 'getDisplayScene'
     ];
 
     /**
@@ -189,8 +179,6 @@ class EstimationSceneTargeting implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['displayScene'] = isset($data['displayScene']) ? $data['displayScene'] : null;
-        $this->container['mobileUnionCategory'] = isset($data['mobileUnionCategory']) ? $data['mobileUnionCategory'] : null;
-        $this->container['mobileUnionIndustry'] = isset($data['mobileUnionIndustry']) ? $data['mobileUnionIndustry'] : null;
     }
 
     /**
@@ -237,54 +225,6 @@ class EstimationSceneTargeting implements ModelInterface, ArrayAccess
     public function setDisplayScene($displayScene)
     {
         $this->container['displayScene'] = $displayScene;
-
-        return $this;
-    }
-
-    /**
-     * Gets mobileUnionCategory
-     *
-     * @return int[]|mixed
-     */
-    public function getMobileUnionCategory()
-    {
-        return $this->container['mobileUnionCategory'];
-    }
-
-    /**
-     * Sets mobileUnionCategory
-     *
-     * @param int[]|mixed $mobileUnionCategory mobileUnionCategory
-     *
-     * @return $this
-     */
-    public function setMobileUnionCategory($mobileUnionCategory)
-    {
-        $this->container['mobileUnionCategory'] = $mobileUnionCategory;
-
-        return $this;
-    }
-
-    /**
-     * Gets mobileUnionIndustry
-     *
-     * @return string[]|mixed
-     */
-    public function getMobileUnionIndustry()
-    {
-        return $this->container['mobileUnionIndustry'];
-    }
-
-    /**
-     * Sets mobileUnionIndustry
-     *
-     * @param string[]|mixed $mobileUnionIndustry mobileUnionIndustry
-     *
-     * @return $this
-     */
-    public function setMobileUnionIndustry($mobileUnionIndustry)
-    {
-        $this->container['mobileUnionIndustry'] = $mobileUnionIndustry;
 
         return $this;
     }

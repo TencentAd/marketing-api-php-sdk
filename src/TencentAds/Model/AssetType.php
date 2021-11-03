@@ -58,6 +58,7 @@ class AssetType
     const UNION_PACKAGE = 'ASSET_TYPE_UNION_PACKAGE';
     const ACCOUNT_WECHAT_CANVAS = 'ASSET_TYPE_ACCOUNT_WECHAT_CANVAS';
     const PROFILE = 'ASSET_TYPE_PROFILE';
+    const LOCAL_STORE = 'ASSET_TYPE_LOCAL_STORE';
     
     /**
      * Gets allowable values of the enum
@@ -80,6 +81,7 @@ class AssetType
             self::UNION_PACKAGE,
             self::ACCOUNT_WECHAT_CANVAS,
             self::PROFILE,
+            self::LOCAL_STORE,
         ];
     }
 }

@@ -58,11 +58,9 @@ class SceneTargetingForWrite implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'mobileUnionIndustry' => 'string[]',
         'unionPositionPackage' => 'int[]',
         'excludeUnionPositionPackage' => 'int[]',
         'displayScene' => 'string[]',
-        'mobileUnionCategory' => 'int[]',
         'tencentNews' => 'string[]',
         'wechatScene' => '\TencentAds\Model\WechatScene',
         'wechatPosition' => 'int[]'
@@ -74,11 +72,9 @@ class SceneTargetingForWrite implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'mobileUnionIndustry' => null,
         'unionPositionPackage' => 'int64',
         'excludeUnionPositionPackage' => 'int64',
         'displayScene' => null,
-        'mobileUnionCategory' => 'int64',
         'tencentNews' => null,
         'wechatScene' => null,
         'wechatPosition' => 'int64'
@@ -111,11 +107,9 @@ class SceneTargetingForWrite implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'mobileUnionIndustry' => 'mobile_union_industry',
         'unionPositionPackage' => 'union_position_package',
         'excludeUnionPositionPackage' => 'exclude_union_position_package',
         'displayScene' => 'display_scene',
-        'mobileUnionCategory' => 'mobile_union_category',
         'tencentNews' => 'tencent_news',
         'wechatScene' => 'wechat_scene',
         'wechatPosition' => 'wechat_position'
@@ -127,11 +121,9 @@ class SceneTargetingForWrite implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'mobileUnionIndustry' => 'setMobileUnionIndustry',
         'unionPositionPackage' => 'setUnionPositionPackage',
         'excludeUnionPositionPackage' => 'setExcludeUnionPositionPackage',
         'displayScene' => 'setDisplayScene',
-        'mobileUnionCategory' => 'setMobileUnionCategory',
         'tencentNews' => 'setTencentNews',
         'wechatScene' => 'setWechatScene',
         'wechatPosition' => 'setWechatPosition'
@@ -143,11 +135,9 @@ class SceneTargetingForWrite implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'mobileUnionIndustry' => 'getMobileUnionIndustry',
         'unionPositionPackage' => 'getUnionPositionPackage',
         'excludeUnionPositionPackage' => 'getExcludeUnionPositionPackage',
         'displayScene' => 'getDisplayScene',
-        'mobileUnionCategory' => 'getMobileUnionCategory',
         'tencentNews' => 'getTencentNews',
         'wechatScene' => 'getWechatScene',
         'wechatPosition' => 'getWechatPosition'
@@ -213,11 +203,9 @@ class SceneTargetingForWrite implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['mobileUnionIndustry'] = isset($data['mobileUnionIndustry']) ? $data['mobileUnionIndustry'] : null;
         $this->container['unionPositionPackage'] = isset($data['unionPositionPackage']) ? $data['unionPositionPackage'] : null;
         $this->container['excludeUnionPositionPackage'] = isset($data['excludeUnionPositionPackage']) ? $data['excludeUnionPositionPackage'] : null;
         $this->container['displayScene'] = isset($data['displayScene']) ? $data['displayScene'] : null;
-        $this->container['mobileUnionCategory'] = isset($data['mobileUnionCategory']) ? $data['mobileUnionCategory'] : null;
         $this->container['tencentNews'] = isset($data['tencentNews']) ? $data['tencentNews'] : null;
         $this->container['wechatScene'] = isset($data['wechatScene']) ? $data['wechatScene'] : null;
         $this->container['wechatPosition'] = isset($data['wechatPosition']) ? $data['wechatPosition'] : null;
@@ -246,30 +234,6 @@ class SceneTargetingForWrite implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
-
-    /**
-     * Gets mobileUnionIndustry
-     *
-     * @return string[]|mixed
-     */
-    public function getMobileUnionIndustry()
-    {
-        return $this->container['mobileUnionIndustry'];
-    }
-
-    /**
-     * Sets mobileUnionIndustry
-     *
-     * @param string[]|mixed $mobileUnionIndustry mobileUnionIndustry
-     *
-     * @return $this
-     */
-    public function setMobileUnionIndustry($mobileUnionIndustry)
-    {
-        $this->container['mobileUnionIndustry'] = $mobileUnionIndustry;
-
-        return $this;
-    }
 
     /**
      * Gets unionPositionPackage
@@ -339,30 +303,6 @@ class SceneTargetingForWrite implements ModelInterface, ArrayAccess
     public function setDisplayScene($displayScene)
     {
         $this->container['displayScene'] = $displayScene;
-
-        return $this;
-    }
-
-    /**
-     * Gets mobileUnionCategory
-     *
-     * @return int[]|mixed
-     */
-    public function getMobileUnionCategory()
-    {
-        return $this->container['mobileUnionCategory'];
-    }
-
-    /**
-     * Sets mobileUnionCategory
-     *
-     * @param int[]|mixed $mobileUnionCategory mobileUnionCategory
-     *
-     * @return $this
-     */
-    public function setMobileUnionCategory($mobileUnionCategory)
-    {
-        $this->container['mobileUnionCategory'] = $mobileUnionCategory;
 
         return $this;
     }

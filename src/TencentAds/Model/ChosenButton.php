@@ -58,10 +58,10 @@ class ChosenButton implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'leftButtonTxt' => 'string',
-        'leftButtonLandingPage' => '\TencentAds\Model\LandingPageStructure',
-        'rightButtonTxt' => 'string',
-        'rightButtonLandingPage' => '\TencentAds\Model\LandingPageStructure'
+        'chosenButtonText1' => 'string',
+        'chosenButtonLandingPage1' => '\TencentAds\Model\LandingPageStructure',
+        'chosenButtonText2' => 'string',
+        'chosenButtonLandingPage2' => '\TencentAds\Model\LandingPageStructure'
     ];
 
     /**
@@ -70,10 +70,10 @@ class ChosenButton implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'leftButtonTxt' => null,
-        'leftButtonLandingPage' => null,
-        'rightButtonTxt' => null,
-        'rightButtonLandingPage' => null
+        'chosenButtonText1' => null,
+        'chosenButtonLandingPage1' => null,
+        'chosenButtonText2' => null,
+        'chosenButtonLandingPage2' => null
     ];
 
     /**
@@ -103,10 +103,10 @@ class ChosenButton implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'leftButtonTxt' => 'left_button_txt',
-        'leftButtonLandingPage' => 'left_button_landing_page',
-        'rightButtonTxt' => 'right_button_txt',
-        'rightButtonLandingPage' => 'right_button_landing_page'
+        'chosenButtonText1' => 'chosen_button_text1',
+        'chosenButtonLandingPage1' => 'chosen_button_landing_page1',
+        'chosenButtonText2' => 'chosen_button_text2',
+        'chosenButtonLandingPage2' => 'chosen_button_landing_page2'
     ];
 
     /**
@@ -115,10 +115,10 @@ class ChosenButton implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'leftButtonTxt' => 'setLeftButtonTxt',
-        'leftButtonLandingPage' => 'setLeftButtonLandingPage',
-        'rightButtonTxt' => 'setRightButtonTxt',
-        'rightButtonLandingPage' => 'setRightButtonLandingPage'
+        'chosenButtonText1' => 'setChosenButtonText1',
+        'chosenButtonLandingPage1' => 'setChosenButtonLandingPage1',
+        'chosenButtonText2' => 'setChosenButtonText2',
+        'chosenButtonLandingPage2' => 'setChosenButtonLandingPage2'
     ];
 
     /**
@@ -127,10 +127,10 @@ class ChosenButton implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'leftButtonTxt' => 'getLeftButtonTxt',
-        'leftButtonLandingPage' => 'getLeftButtonLandingPage',
-        'rightButtonTxt' => 'getRightButtonTxt',
-        'rightButtonLandingPage' => 'getRightButtonLandingPage'
+        'chosenButtonText1' => 'getChosenButtonText1',
+        'chosenButtonLandingPage1' => 'getChosenButtonLandingPage1',
+        'chosenButtonText2' => 'getChosenButtonText2',
+        'chosenButtonLandingPage2' => 'getChosenButtonLandingPage2'
     ];
 
     /**
@@ -193,10 +193,10 @@ class ChosenButton implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['leftButtonTxt'] = isset($data['leftButtonTxt']) ? $data['leftButtonTxt'] : null;
-        $this->container['leftButtonLandingPage'] = isset($data['leftButtonLandingPage']) ? $data['leftButtonLandingPage'] : null;
-        $this->container['rightButtonTxt'] = isset($data['rightButtonTxt']) ? $data['rightButtonTxt'] : null;
-        $this->container['rightButtonLandingPage'] = isset($data['rightButtonLandingPage']) ? $data['rightButtonLandingPage'] : null;
+        $this->container['chosenButtonText1'] = isset($data['chosenButtonText1']) ? $data['chosenButtonText1'] : null;
+        $this->container['chosenButtonLandingPage1'] = isset($data['chosenButtonLandingPage1']) ? $data['chosenButtonLandingPage1'] : null;
+        $this->container['chosenButtonText2'] = isset($data['chosenButtonText2']) ? $data['chosenButtonText2'] : null;
+        $this->container['chosenButtonLandingPage2'] = isset($data['chosenButtonLandingPage2']) ? $data['chosenButtonLandingPage2'] : null;
     }
 
     /**
@@ -224,97 +224,97 @@ class ChosenButton implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets leftButtonTxt
+     * Gets chosenButtonText1
      *
      * @return string|mixed
      */
-    public function getLeftButtonTxt()
+    public function getChosenButtonText1()
     {
-        return $this->container['leftButtonTxt'];
+        return $this->container['chosenButtonText1'];
     }
 
     /**
-     * Sets leftButtonTxt
+     * Sets chosenButtonText1
      *
-     * @param string|mixed $leftButtonTxt leftButtonTxt
+     * @param string|mixed $chosenButtonText1 chosenButtonText1
      *
      * @return $this
      */
-    public function setLeftButtonTxt($leftButtonTxt)
+    public function setChosenButtonText1($chosenButtonText1)
     {
-        $this->container['leftButtonTxt'] = $leftButtonTxt;
+        $this->container['chosenButtonText1'] = $chosenButtonText1;
 
         return $this;
     }
 
     /**
-     * Gets leftButtonLandingPage
+     * Gets chosenButtonLandingPage1
      *
      * @return \TencentAds\Model\LandingPageStructure|mixed
      */
-    public function getLeftButtonLandingPage()
+    public function getChosenButtonLandingPage1()
     {
-        return $this->container['leftButtonLandingPage'];
+        return $this->container['chosenButtonLandingPage1'];
     }
 
     /**
-     * Sets leftButtonLandingPage
+     * Sets chosenButtonLandingPage1
      *
-     * @param \TencentAds\Model\LandingPageStructure|mixed $leftButtonLandingPage leftButtonLandingPage
+     * @param \TencentAds\Model\LandingPageStructure|mixed $chosenButtonLandingPage1 chosenButtonLandingPage1
      *
      * @return $this
      */
-    public function setLeftButtonLandingPage($leftButtonLandingPage)
+    public function setChosenButtonLandingPage1($chosenButtonLandingPage1)
     {
-        $this->container['leftButtonLandingPage'] = $leftButtonLandingPage;
+        $this->container['chosenButtonLandingPage1'] = $chosenButtonLandingPage1;
 
         return $this;
     }
 
     /**
-     * Gets rightButtonTxt
+     * Gets chosenButtonText2
      *
      * @return string|mixed
      */
-    public function getRightButtonTxt()
+    public function getChosenButtonText2()
     {
-        return $this->container['rightButtonTxt'];
+        return $this->container['chosenButtonText2'];
     }
 
     /**
-     * Sets rightButtonTxt
+     * Sets chosenButtonText2
      *
-     * @param string|mixed $rightButtonTxt rightButtonTxt
+     * @param string|mixed $chosenButtonText2 chosenButtonText2
      *
      * @return $this
      */
-    public function setRightButtonTxt($rightButtonTxt)
+    public function setChosenButtonText2($chosenButtonText2)
     {
-        $this->container['rightButtonTxt'] = $rightButtonTxt;
+        $this->container['chosenButtonText2'] = $chosenButtonText2;
 
         return $this;
     }
 
     /**
-     * Gets rightButtonLandingPage
+     * Gets chosenButtonLandingPage2
      *
      * @return \TencentAds\Model\LandingPageStructure|mixed
      */
-    public function getRightButtonLandingPage()
+    public function getChosenButtonLandingPage2()
     {
-        return $this->container['rightButtonLandingPage'];
+        return $this->container['chosenButtonLandingPage2'];
     }
 
     /**
-     * Sets rightButtonLandingPage
+     * Sets chosenButtonLandingPage2
      *
-     * @param \TencentAds\Model\LandingPageStructure|mixed $rightButtonLandingPage rightButtonLandingPage
+     * @param \TencentAds\Model\LandingPageStructure|mixed $chosenButtonLandingPage2 chosenButtonLandingPage2
      *
      * @return $this
      */
-    public function setRightButtonLandingPage($rightButtonLandingPage)
+    public function setChosenButtonLandingPage2($chosenButtonLandingPage2)
     {
-        $this->container['rightButtonLandingPage'] = $rightButtonLandingPage;
+        $this->container['chosenButtonLandingPage2'] = $chosenButtonLandingPage2;
 
         return $this;
     }
