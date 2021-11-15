@@ -66,8 +66,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'hashPhone' => 'string',
         'sha256Phone' => 'string',
         'hashAndroidId' => 'string',
-        'hashMac' => 'string',
-        'oaid' => 'string',
+        'hashOaid' => 'string',
         'md5Sha256Oaid' => 'string',
         'wechatOpenid' => 'string',
         'wechatUnionid' => 'string',
@@ -88,8 +87,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'hashPhone' => null,
         'sha256Phone' => null,
         'hashAndroidId' => null,
-        'hashMac' => null,
-        'oaid' => null,
+        'hashOaid' => null,
         'md5Sha256Oaid' => null,
         'wechatOpenid' => null,
         'wechatUnionid' => null,
@@ -131,8 +129,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'hashPhone' => 'hash_phone',
         'sha256Phone' => 'sha256_phone',
         'hashAndroidId' => 'hash_android_id',
-        'hashMac' => 'hash_mac',
-        'oaid' => 'oaid',
+        'hashOaid' => 'hash_oaid',
         'md5Sha256Oaid' => 'md5_sha256_oaid',
         'wechatOpenid' => 'wechat_openid',
         'wechatUnionid' => 'wechat_unionid',
@@ -153,8 +150,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'hashPhone' => 'setHashPhone',
         'sha256Phone' => 'setSha256Phone',
         'hashAndroidId' => 'setHashAndroidId',
-        'hashMac' => 'setHashMac',
-        'oaid' => 'setOaid',
+        'hashOaid' => 'setHashOaid',
         'md5Sha256Oaid' => 'setMd5Sha256Oaid',
         'wechatOpenid' => 'setWechatOpenid',
         'wechatUnionid' => 'setWechatUnionid',
@@ -175,8 +171,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'hashPhone' => 'getHashPhone',
         'sha256Phone' => 'getSha256Phone',
         'hashAndroidId' => 'getHashAndroidId',
-        'hashMac' => 'getHashMac',
-        'oaid' => 'getOaid',
+        'hashOaid' => 'getHashOaid',
         'md5Sha256Oaid' => 'getMd5Sha256Oaid',
         'wechatOpenid' => 'getWechatOpenid',
         'wechatUnionid' => 'getWechatUnionid',
@@ -251,8 +246,7 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         $this->container['hashPhone'] = isset($data['hashPhone']) ? $data['hashPhone'] : null;
         $this->container['sha256Phone'] = isset($data['sha256Phone']) ? $data['sha256Phone'] : null;
         $this->container['hashAndroidId'] = isset($data['hashAndroidId']) ? $data['hashAndroidId'] : null;
-        $this->container['hashMac'] = isset($data['hashMac']) ? $data['hashMac'] : null;
-        $this->container['oaid'] = isset($data['oaid']) ? $data['oaid'] : null;
+        $this->container['hashOaid'] = isset($data['hashOaid']) ? $data['hashOaid'] : null;
         $this->container['md5Sha256Oaid'] = isset($data['md5Sha256Oaid']) ? $data['md5Sha256Oaid'] : null;
         $this->container['wechatOpenid'] = isset($data['wechatOpenid']) ? $data['wechatOpenid'] : null;
         $this->container['wechatUnionid'] = isset($data['wechatUnionid']) ? $data['wechatUnionid'] : null;
@@ -476,49 +470,25 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets hashMac
+     * Gets hashOaid
      *
      * @return string|mixed
      */
-    public function getHashMac()
+    public function getHashOaid()
     {
-        return $this->container['hashMac'];
+        return $this->container['hashOaid'];
     }
 
     /**
-     * Sets hashMac
+     * Sets hashOaid
      *
-     * @param string|mixed $hashMac hashMac
+     * @param string|mixed $hashOaid hashOaid
      *
      * @return $this
      */
-    public function setHashMac($hashMac)
+    public function setHashOaid($hashOaid)
     {
-        $this->container['hashMac'] = $hashMac;
-
-        return $this;
-    }
-
-    /**
-     * Gets oaid
-     *
-     * @return string|mixed
-     */
-    public function getOaid()
-    {
-        return $this->container['oaid'];
-    }
-
-    /**
-     * Sets oaid
-     *
-     * @param string|mixed $oaid oaid
-     *
-     * @return $this
-     */
-    public function setOaid($oaid)
-    {
-        $this->container['oaid'] = $oaid;
+        $this->container['hashOaid'] = $hashOaid;
 
         return $this;
     }

@@ -75,7 +75,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'createSourceType' => '\TencentAds\Model\CreateSourceType',
         'appAndroidChannelPackageId' => 'string',
         'promotedObjectId' => 'string',
-        'conversionScene' => '\TencentAds\Model\ConversionScene'
+        'conversionScene' => '\TencentAds\Model\ConversionScene',
+        'ownerId' => 'int'
     ];
 
     /**
@@ -101,7 +102,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'createSourceType' => null,
         'appAndroidChannelPackageId' => null,
         'promotedObjectId' => null,
-        'conversionScene' => null
+        'conversionScene' => null,
+        'ownerId' => 'int64'
     ];
 
     /**
@@ -148,7 +150,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'createSourceType' => 'create_source_type',
         'appAndroidChannelPackageId' => 'app_android_channel_package_id',
         'promotedObjectId' => 'promoted_object_id',
-        'conversionScene' => 'conversion_scene'
+        'conversionScene' => 'conversion_scene',
+        'ownerId' => 'owner_id'
     ];
 
     /**
@@ -174,7 +177,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'createSourceType' => 'setCreateSourceType',
         'appAndroidChannelPackageId' => 'setAppAndroidChannelPackageId',
         'promotedObjectId' => 'setPromotedObjectId',
-        'conversionScene' => 'setConversionScene'
+        'conversionScene' => 'setConversionScene',
+        'ownerId' => 'setOwnerId'
     ];
 
     /**
@@ -200,7 +204,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'createSourceType' => 'getCreateSourceType',
         'appAndroidChannelPackageId' => 'getAppAndroidChannelPackageId',
         'promotedObjectId' => 'getPromotedObjectId',
-        'conversionScene' => 'getConversionScene'
+        'conversionScene' => 'getConversionScene',
+        'ownerId' => 'getOwnerId'
     ];
 
     /**
@@ -281,6 +286,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['appAndroidChannelPackageId'] = isset($data['appAndroidChannelPackageId']) ? $data['appAndroidChannelPackageId'] : null;
         $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
         $this->container['conversionScene'] = isset($data['conversionScene']) ? $data['conversionScene'] : null;
+        $this->container['ownerId'] = isset($data['ownerId']) ? $data['ownerId'] : null;
     }
 
     /**
@@ -735,6 +741,30 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     public function setConversionScene($conversionScene)
     {
         $this->container['conversionScene'] = $conversionScene;
+
+        return $this;
+    }
+
+    /**
+     * Gets ownerId
+     *
+     * @return int|mixed
+     */
+    public function getOwnerId()
+    {
+        return $this->container['ownerId'];
+    }
+
+    /**
+     * Sets ownerId
+     *
+     * @param int|mixed $ownerId ownerId
+     *
+     * @return $this
+     */
+    public function setOwnerId($ownerId)
+    {
+        $this->container['ownerId'] = $ownerId;
 
         return $this;
     }
