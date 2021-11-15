@@ -232,6 +232,10 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'addDesktopPv' => 'int',
         'addDesktopCost' => 'int',
         'firstPayCount' => 'int',
+        'wechatLocalPayCount' => 'int',
+        'wechatLocalPayuserCount' => 'int',
+        'wechatLocalPayAmount' => 'int',
+        'wechatLocalPayRoi' => 'int',
         'firstPayRate' => 'double',
         'preCreWeb' => 'int',
         'preCreApp' => 'int',
@@ -694,6 +698,10 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'addDesktopPv' => 'int64',
         'addDesktopCost' => 'int64',
         'firstPayCount' => 'int64',
+        'wechatLocalPayCount' => 'int64',
+        'wechatLocalPayuserCount' => 'int64',
+        'wechatLocalPayAmount' => 'int64',
+        'wechatLocalPayRoi' => 'int64',
         'firstPayRate' => 'double',
         'preCreWeb' => 'int64',
         'preCreApp' => 'int64',
@@ -1177,6 +1185,10 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'addDesktopPv' => 'add_desktop_pv',
         'addDesktopCost' => 'add_desktop_cost',
         'firstPayCount' => 'first_pay_count',
+        'wechatLocalPayCount' => 'wechat_local_pay_count',
+        'wechatLocalPayuserCount' => 'wechat_local_payuser_count',
+        'wechatLocalPayAmount' => 'wechat_local_pay_amount',
+        'wechatLocalPayRoi' => 'wechat_local_pay_roi',
         'firstPayRate' => 'first_pay_rate',
         'preCreWeb' => 'pre_cre_web',
         'preCreApp' => 'pre_cre_app',
@@ -1639,6 +1651,10 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'addDesktopPv' => 'setAddDesktopPv',
         'addDesktopCost' => 'setAddDesktopCost',
         'firstPayCount' => 'setFirstPayCount',
+        'wechatLocalPayCount' => 'setWechatLocalPayCount',
+        'wechatLocalPayuserCount' => 'setWechatLocalPayuserCount',
+        'wechatLocalPayAmount' => 'setWechatLocalPayAmount',
+        'wechatLocalPayRoi' => 'setWechatLocalPayRoi',
         'firstPayRate' => 'setFirstPayRate',
         'preCreWeb' => 'setPreCreWeb',
         'preCreApp' => 'setPreCreApp',
@@ -2101,6 +2117,10 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'addDesktopPv' => 'getAddDesktopPv',
         'addDesktopCost' => 'getAddDesktopCost',
         'firstPayCount' => 'getFirstPayCount',
+        'wechatLocalPayCount' => 'getWechatLocalPayCount',
+        'wechatLocalPayuserCount' => 'getWechatLocalPayuserCount',
+        'wechatLocalPayAmount' => 'getWechatLocalPayAmount',
+        'wechatLocalPayRoi' => 'getWechatLocalPayRoi',
         'firstPayRate' => 'getFirstPayRate',
         'preCreWeb' => 'getPreCreWeb',
         'preCreApp' => 'getPreCreApp',
@@ -2617,6 +2637,10 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['addDesktopPv'] = isset($data['addDesktopPv']) ? $data['addDesktopPv'] : null;
         $this->container['addDesktopCost'] = isset($data['addDesktopCost']) ? $data['addDesktopCost'] : null;
         $this->container['firstPayCount'] = isset($data['firstPayCount']) ? $data['firstPayCount'] : null;
+        $this->container['wechatLocalPayCount'] = isset($data['wechatLocalPayCount']) ? $data['wechatLocalPayCount'] : null;
+        $this->container['wechatLocalPayuserCount'] = isset($data['wechatLocalPayuserCount']) ? $data['wechatLocalPayuserCount'] : null;
+        $this->container['wechatLocalPayAmount'] = isset($data['wechatLocalPayAmount']) ? $data['wechatLocalPayAmount'] : null;
+        $this->container['wechatLocalPayRoi'] = isset($data['wechatLocalPayRoi']) ? $data['wechatLocalPayRoi'] : null;
         $this->container['firstPayRate'] = isset($data['firstPayRate']) ? $data['firstPayRate'] : null;
         $this->container['preCreWeb'] = isset($data['preCreWeb']) ? $data['preCreWeb'] : null;
         $this->container['preCreApp'] = isset($data['preCreApp']) ? $data['preCreApp'] : null;
@@ -7095,6 +7119,102 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setFirstPayCount($firstPayCount)
     {
         $this->container['firstPayCount'] = $firstPayCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatLocalPayCount
+     *
+     * @return int|mixed
+     */
+    public function getWechatLocalPayCount()
+    {
+        return $this->container['wechatLocalPayCount'];
+    }
+
+    /**
+     * Sets wechatLocalPayCount
+     *
+     * @param int|mixed $wechatLocalPayCount wechatLocalPayCount
+     *
+     * @return $this
+     */
+    public function setWechatLocalPayCount($wechatLocalPayCount)
+    {
+        $this->container['wechatLocalPayCount'] = $wechatLocalPayCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatLocalPayuserCount
+     *
+     * @return int|mixed
+     */
+    public function getWechatLocalPayuserCount()
+    {
+        return $this->container['wechatLocalPayuserCount'];
+    }
+
+    /**
+     * Sets wechatLocalPayuserCount
+     *
+     * @param int|mixed $wechatLocalPayuserCount wechatLocalPayuserCount
+     *
+     * @return $this
+     */
+    public function setWechatLocalPayuserCount($wechatLocalPayuserCount)
+    {
+        $this->container['wechatLocalPayuserCount'] = $wechatLocalPayuserCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatLocalPayAmount
+     *
+     * @return int|mixed
+     */
+    public function getWechatLocalPayAmount()
+    {
+        return $this->container['wechatLocalPayAmount'];
+    }
+
+    /**
+     * Sets wechatLocalPayAmount
+     *
+     * @param int|mixed $wechatLocalPayAmount wechatLocalPayAmount
+     *
+     * @return $this
+     */
+    public function setWechatLocalPayAmount($wechatLocalPayAmount)
+    {
+        $this->container['wechatLocalPayAmount'] = $wechatLocalPayAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatLocalPayRoi
+     *
+     * @return int|mixed
+     */
+    public function getWechatLocalPayRoi()
+    {
+        return $this->container['wechatLocalPayRoi'];
+    }
+
+    /**
+     * Sets wechatLocalPayRoi
+     *
+     * @param int|mixed $wechatLocalPayRoi wechatLocalPayRoi
+     *
+     * @return $this
+     */
+    public function setWechatLocalPayRoi($wechatLocalPayRoi)
+    {
+        $this->container['wechatLocalPayRoi'] = $wechatLocalPayRoi;
 
         return $this;
     }
