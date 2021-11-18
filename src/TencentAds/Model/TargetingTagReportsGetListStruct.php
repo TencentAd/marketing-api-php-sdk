@@ -396,6 +396,28 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationArpu' => 'int',
         'miniGamePayingRoi' => 'double',
         'miniGamePayingArpu' => 'int',
+        'miniGameBfUv' => 'int',
+        'miniGameBfCost' => 'int',
+        'miniGameBfIncomeUv' => 'int',
+        'miniGameBfIncomeAmount' => 'int',
+        'miniGameBfIncomeCost' => 'int',
+        'miniGameBfIncomeRoi' => 'double',
+        'miniGameBfIncomeArpu' => 'int',
+        'miniGameBfIncomeD1Uv' => 'int',
+        'miniGameBfIncomeD1Amount' => 'int',
+        'miniGameBfIncomeD1Cost' => 'int',
+        'miniGameBfIncomeD1Roi' => 'double',
+        'miniGameBfIncomeD1Arpu' => 'int',
+        'miniGameBfPurchaseUv' => 'int',
+        'miniGameBfPurchaseAmount' => 'int',
+        'miniGameBfPurchaseCost' => 'int',
+        'miniGameBfPurchaseRoi' => 'double',
+        'miniGameBfPurchaseArpu' => 'int',
+        'miniGameBfPurchaseD1Uv' => 'int',
+        'miniGameBfPurchaseD1Amount' => 'int',
+        'miniGameBfPurchaseD1Cost' => 'int',
+        'miniGameBfPurchaseD1Roi' => 'double',
+        'miniGameBfPurchaseD1Arpu' => 'int',
         'age' => 'string',
         'regionId' => 'int',
         'cityId' => 'int',
@@ -862,6 +884,28 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationArpu' => 'int64',
         'miniGamePayingRoi' => 'double',
         'miniGamePayingArpu' => 'int64',
+        'miniGameBfUv' => 'int64',
+        'miniGameBfCost' => 'int64',
+        'miniGameBfIncomeUv' => 'int64',
+        'miniGameBfIncomeAmount' => 'int64',
+        'miniGameBfIncomeCost' => 'int64',
+        'miniGameBfIncomeRoi' => 'double',
+        'miniGameBfIncomeArpu' => 'int64',
+        'miniGameBfIncomeD1Uv' => 'int64',
+        'miniGameBfIncomeD1Amount' => 'int64',
+        'miniGameBfIncomeD1Cost' => 'int64',
+        'miniGameBfIncomeD1Roi' => 'double',
+        'miniGameBfIncomeD1Arpu' => 'int64',
+        'miniGameBfPurchaseUv' => 'int64',
+        'miniGameBfPurchaseAmount' => 'int64',
+        'miniGameBfPurchaseCost' => 'int64',
+        'miniGameBfPurchaseRoi' => 'double',
+        'miniGameBfPurchaseArpu' => 'int64',
+        'miniGameBfPurchaseD1Uv' => 'int64',
+        'miniGameBfPurchaseD1Amount' => 'int64',
+        'miniGameBfPurchaseD1Cost' => 'int64',
+        'miniGameBfPurchaseD1Roi' => 'double',
+        'miniGameBfPurchaseD1Arpu' => 'int64',
         'age' => null,
         'regionId' => 'int64',
         'cityId' => 'int64',
@@ -1349,6 +1393,28 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationArpu' => 'mini_game_ad_monetization_arpu',
         'miniGamePayingRoi' => 'mini_game_paying_roi',
         'miniGamePayingArpu' => 'mini_game_paying_arpu',
+        'miniGameBfUv' => 'mini_game_bf_uv',
+        'miniGameBfCost' => 'mini_game_bf_cost',
+        'miniGameBfIncomeUv' => 'mini_game_bf_income_uv',
+        'miniGameBfIncomeAmount' => 'mini_game_bf_income_amount',
+        'miniGameBfIncomeCost' => 'mini_game_bf_income_cost',
+        'miniGameBfIncomeRoi' => 'mini_game_bf_income_roi',
+        'miniGameBfIncomeArpu' => 'mini_game_bf_income_arpu',
+        'miniGameBfIncomeD1Uv' => 'mini_game_bf_income_d1_uv',
+        'miniGameBfIncomeD1Amount' => 'mini_game_bf_income_d1_amount',
+        'miniGameBfIncomeD1Cost' => 'mini_game_bf_income_d1_cost',
+        'miniGameBfIncomeD1Roi' => 'mini_game_bf_income_d1_roi',
+        'miniGameBfIncomeD1Arpu' => 'mini_game_bf_income_d1_arpu',
+        'miniGameBfPurchaseUv' => 'mini_game_bf_purchase_uv',
+        'miniGameBfPurchaseAmount' => 'mini_game_bf_purchase_amount',
+        'miniGameBfPurchaseCost' => 'mini_game_bf_purchase_cost',
+        'miniGameBfPurchaseRoi' => 'mini_game_bf_purchase_roi',
+        'miniGameBfPurchaseArpu' => 'mini_game_bf_purchase_arpu',
+        'miniGameBfPurchaseD1Uv' => 'mini_game_bf_purchase_d1_uv',
+        'miniGameBfPurchaseD1Amount' => 'mini_game_bf_purchase_d1_amount',
+        'miniGameBfPurchaseD1Cost' => 'mini_game_bf_purchase_d1_cost',
+        'miniGameBfPurchaseD1Roi' => 'mini_game_bf_purchase_d1_roi',
+        'miniGameBfPurchaseD1Arpu' => 'mini_game_bf_purchase_d1_arpu',
         'age' => 'age',
         'regionId' => 'region_id',
         'cityId' => 'city_id',
@@ -1815,6 +1881,28 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationArpu' => 'setMiniGameAdMonetizationArpu',
         'miniGamePayingRoi' => 'setMiniGamePayingRoi',
         'miniGamePayingArpu' => 'setMiniGamePayingArpu',
+        'miniGameBfUv' => 'setMiniGameBfUv',
+        'miniGameBfCost' => 'setMiniGameBfCost',
+        'miniGameBfIncomeUv' => 'setMiniGameBfIncomeUv',
+        'miniGameBfIncomeAmount' => 'setMiniGameBfIncomeAmount',
+        'miniGameBfIncomeCost' => 'setMiniGameBfIncomeCost',
+        'miniGameBfIncomeRoi' => 'setMiniGameBfIncomeRoi',
+        'miniGameBfIncomeArpu' => 'setMiniGameBfIncomeArpu',
+        'miniGameBfIncomeD1Uv' => 'setMiniGameBfIncomeD1Uv',
+        'miniGameBfIncomeD1Amount' => 'setMiniGameBfIncomeD1Amount',
+        'miniGameBfIncomeD1Cost' => 'setMiniGameBfIncomeD1Cost',
+        'miniGameBfIncomeD1Roi' => 'setMiniGameBfIncomeD1Roi',
+        'miniGameBfIncomeD1Arpu' => 'setMiniGameBfIncomeD1Arpu',
+        'miniGameBfPurchaseUv' => 'setMiniGameBfPurchaseUv',
+        'miniGameBfPurchaseAmount' => 'setMiniGameBfPurchaseAmount',
+        'miniGameBfPurchaseCost' => 'setMiniGameBfPurchaseCost',
+        'miniGameBfPurchaseRoi' => 'setMiniGameBfPurchaseRoi',
+        'miniGameBfPurchaseArpu' => 'setMiniGameBfPurchaseArpu',
+        'miniGameBfPurchaseD1Uv' => 'setMiniGameBfPurchaseD1Uv',
+        'miniGameBfPurchaseD1Amount' => 'setMiniGameBfPurchaseD1Amount',
+        'miniGameBfPurchaseD1Cost' => 'setMiniGameBfPurchaseD1Cost',
+        'miniGameBfPurchaseD1Roi' => 'setMiniGameBfPurchaseD1Roi',
+        'miniGameBfPurchaseD1Arpu' => 'setMiniGameBfPurchaseD1Arpu',
         'age' => 'setAge',
         'regionId' => 'setRegionId',
         'cityId' => 'setCityId',
@@ -2281,6 +2369,28 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationArpu' => 'getMiniGameAdMonetizationArpu',
         'miniGamePayingRoi' => 'getMiniGamePayingRoi',
         'miniGamePayingArpu' => 'getMiniGamePayingArpu',
+        'miniGameBfUv' => 'getMiniGameBfUv',
+        'miniGameBfCost' => 'getMiniGameBfCost',
+        'miniGameBfIncomeUv' => 'getMiniGameBfIncomeUv',
+        'miniGameBfIncomeAmount' => 'getMiniGameBfIncomeAmount',
+        'miniGameBfIncomeCost' => 'getMiniGameBfIncomeCost',
+        'miniGameBfIncomeRoi' => 'getMiniGameBfIncomeRoi',
+        'miniGameBfIncomeArpu' => 'getMiniGameBfIncomeArpu',
+        'miniGameBfIncomeD1Uv' => 'getMiniGameBfIncomeD1Uv',
+        'miniGameBfIncomeD1Amount' => 'getMiniGameBfIncomeD1Amount',
+        'miniGameBfIncomeD1Cost' => 'getMiniGameBfIncomeD1Cost',
+        'miniGameBfIncomeD1Roi' => 'getMiniGameBfIncomeD1Roi',
+        'miniGameBfIncomeD1Arpu' => 'getMiniGameBfIncomeD1Arpu',
+        'miniGameBfPurchaseUv' => 'getMiniGameBfPurchaseUv',
+        'miniGameBfPurchaseAmount' => 'getMiniGameBfPurchaseAmount',
+        'miniGameBfPurchaseCost' => 'getMiniGameBfPurchaseCost',
+        'miniGameBfPurchaseRoi' => 'getMiniGameBfPurchaseRoi',
+        'miniGameBfPurchaseArpu' => 'getMiniGameBfPurchaseArpu',
+        'miniGameBfPurchaseD1Uv' => 'getMiniGameBfPurchaseD1Uv',
+        'miniGameBfPurchaseD1Amount' => 'getMiniGameBfPurchaseD1Amount',
+        'miniGameBfPurchaseD1Cost' => 'getMiniGameBfPurchaseD1Cost',
+        'miniGameBfPurchaseD1Roi' => 'getMiniGameBfPurchaseD1Roi',
+        'miniGameBfPurchaseD1Arpu' => 'getMiniGameBfPurchaseD1Arpu',
         'age' => 'getAge',
         'regionId' => 'getRegionId',
         'cityId' => 'getCityId',
@@ -2801,6 +2911,28 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGameAdMonetizationArpu'] = isset($data['miniGameAdMonetizationArpu']) ? $data['miniGameAdMonetizationArpu'] : null;
         $this->container['miniGamePayingRoi'] = isset($data['miniGamePayingRoi']) ? $data['miniGamePayingRoi'] : null;
         $this->container['miniGamePayingArpu'] = isset($data['miniGamePayingArpu']) ? $data['miniGamePayingArpu'] : null;
+        $this->container['miniGameBfUv'] = isset($data['miniGameBfUv']) ? $data['miniGameBfUv'] : null;
+        $this->container['miniGameBfCost'] = isset($data['miniGameBfCost']) ? $data['miniGameBfCost'] : null;
+        $this->container['miniGameBfIncomeUv'] = isset($data['miniGameBfIncomeUv']) ? $data['miniGameBfIncomeUv'] : null;
+        $this->container['miniGameBfIncomeAmount'] = isset($data['miniGameBfIncomeAmount']) ? $data['miniGameBfIncomeAmount'] : null;
+        $this->container['miniGameBfIncomeCost'] = isset($data['miniGameBfIncomeCost']) ? $data['miniGameBfIncomeCost'] : null;
+        $this->container['miniGameBfIncomeRoi'] = isset($data['miniGameBfIncomeRoi']) ? $data['miniGameBfIncomeRoi'] : null;
+        $this->container['miniGameBfIncomeArpu'] = isset($data['miniGameBfIncomeArpu']) ? $data['miniGameBfIncomeArpu'] : null;
+        $this->container['miniGameBfIncomeD1Uv'] = isset($data['miniGameBfIncomeD1Uv']) ? $data['miniGameBfIncomeD1Uv'] : null;
+        $this->container['miniGameBfIncomeD1Amount'] = isset($data['miniGameBfIncomeD1Amount']) ? $data['miniGameBfIncomeD1Amount'] : null;
+        $this->container['miniGameBfIncomeD1Cost'] = isset($data['miniGameBfIncomeD1Cost']) ? $data['miniGameBfIncomeD1Cost'] : null;
+        $this->container['miniGameBfIncomeD1Roi'] = isset($data['miniGameBfIncomeD1Roi']) ? $data['miniGameBfIncomeD1Roi'] : null;
+        $this->container['miniGameBfIncomeD1Arpu'] = isset($data['miniGameBfIncomeD1Arpu']) ? $data['miniGameBfIncomeD1Arpu'] : null;
+        $this->container['miniGameBfPurchaseUv'] = isset($data['miniGameBfPurchaseUv']) ? $data['miniGameBfPurchaseUv'] : null;
+        $this->container['miniGameBfPurchaseAmount'] = isset($data['miniGameBfPurchaseAmount']) ? $data['miniGameBfPurchaseAmount'] : null;
+        $this->container['miniGameBfPurchaseCost'] = isset($data['miniGameBfPurchaseCost']) ? $data['miniGameBfPurchaseCost'] : null;
+        $this->container['miniGameBfPurchaseRoi'] = isset($data['miniGameBfPurchaseRoi']) ? $data['miniGameBfPurchaseRoi'] : null;
+        $this->container['miniGameBfPurchaseArpu'] = isset($data['miniGameBfPurchaseArpu']) ? $data['miniGameBfPurchaseArpu'] : null;
+        $this->container['miniGameBfPurchaseD1Uv'] = isset($data['miniGameBfPurchaseD1Uv']) ? $data['miniGameBfPurchaseD1Uv'] : null;
+        $this->container['miniGameBfPurchaseD1Amount'] = isset($data['miniGameBfPurchaseD1Amount']) ? $data['miniGameBfPurchaseD1Amount'] : null;
+        $this->container['miniGameBfPurchaseD1Cost'] = isset($data['miniGameBfPurchaseD1Cost']) ? $data['miniGameBfPurchaseD1Cost'] : null;
+        $this->container['miniGameBfPurchaseD1Roi'] = isset($data['miniGameBfPurchaseD1Roi']) ? $data['miniGameBfPurchaseD1Roi'] : null;
+        $this->container['miniGameBfPurchaseD1Arpu'] = isset($data['miniGameBfPurchaseD1Arpu']) ? $data['miniGameBfPurchaseD1Arpu'] : null;
         $this->container['age'] = isset($data['age']) ? $data['age'] : null;
         $this->container['regionId'] = isset($data['regionId']) ? $data['regionId'] : null;
         $this->container['cityId'] = isset($data['cityId']) ? $data['cityId'] : null;
@@ -11055,6 +11187,534 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setMiniGamePayingArpu($miniGamePayingArpu)
     {
         $this->container['miniGamePayingArpu'] = $miniGamePayingArpu;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfUv
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameBfUv()
+    {
+        return $this->container['miniGameBfUv'];
+    }
+
+    /**
+     * Sets miniGameBfUv
+     *
+     * @param int|mixed $miniGameBfUv miniGameBfUv
+     *
+     * @return $this
+     */
+    public function setMiniGameBfUv($miniGameBfUv)
+    {
+        $this->container['miniGameBfUv'] = $miniGameBfUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfCost
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameBfCost()
+    {
+        return $this->container['miniGameBfCost'];
+    }
+
+    /**
+     * Sets miniGameBfCost
+     *
+     * @param int|mixed $miniGameBfCost miniGameBfCost
+     *
+     * @return $this
+     */
+    public function setMiniGameBfCost($miniGameBfCost)
+    {
+        $this->container['miniGameBfCost'] = $miniGameBfCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfIncomeUv
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameBfIncomeUv()
+    {
+        return $this->container['miniGameBfIncomeUv'];
+    }
+
+    /**
+     * Sets miniGameBfIncomeUv
+     *
+     * @param int|mixed $miniGameBfIncomeUv miniGameBfIncomeUv
+     *
+     * @return $this
+     */
+    public function setMiniGameBfIncomeUv($miniGameBfIncomeUv)
+    {
+        $this->container['miniGameBfIncomeUv'] = $miniGameBfIncomeUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfIncomeAmount
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameBfIncomeAmount()
+    {
+        return $this->container['miniGameBfIncomeAmount'];
+    }
+
+    /**
+     * Sets miniGameBfIncomeAmount
+     *
+     * @param int|mixed $miniGameBfIncomeAmount miniGameBfIncomeAmount
+     *
+     * @return $this
+     */
+    public function setMiniGameBfIncomeAmount($miniGameBfIncomeAmount)
+    {
+        $this->container['miniGameBfIncomeAmount'] = $miniGameBfIncomeAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfIncomeCost
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameBfIncomeCost()
+    {
+        return $this->container['miniGameBfIncomeCost'];
+    }
+
+    /**
+     * Sets miniGameBfIncomeCost
+     *
+     * @param int|mixed $miniGameBfIncomeCost miniGameBfIncomeCost
+     *
+     * @return $this
+     */
+    public function setMiniGameBfIncomeCost($miniGameBfIncomeCost)
+    {
+        $this->container['miniGameBfIncomeCost'] = $miniGameBfIncomeCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfIncomeRoi
+     *
+     * @return double|mixed
+     */
+    public function getMiniGameBfIncomeRoi()
+    {
+        return $this->container['miniGameBfIncomeRoi'];
+    }
+
+    /**
+     * Sets miniGameBfIncomeRoi
+     *
+     * @param double|mixed $miniGameBfIncomeRoi miniGameBfIncomeRoi
+     *
+     * @return $this
+     */
+    public function setMiniGameBfIncomeRoi($miniGameBfIncomeRoi)
+    {
+        $this->container['miniGameBfIncomeRoi'] = $miniGameBfIncomeRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfIncomeArpu
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameBfIncomeArpu()
+    {
+        return $this->container['miniGameBfIncomeArpu'];
+    }
+
+    /**
+     * Sets miniGameBfIncomeArpu
+     *
+     * @param int|mixed $miniGameBfIncomeArpu miniGameBfIncomeArpu
+     *
+     * @return $this
+     */
+    public function setMiniGameBfIncomeArpu($miniGameBfIncomeArpu)
+    {
+        $this->container['miniGameBfIncomeArpu'] = $miniGameBfIncomeArpu;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfIncomeD1Uv
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameBfIncomeD1Uv()
+    {
+        return $this->container['miniGameBfIncomeD1Uv'];
+    }
+
+    /**
+     * Sets miniGameBfIncomeD1Uv
+     *
+     * @param int|mixed $miniGameBfIncomeD1Uv miniGameBfIncomeD1Uv
+     *
+     * @return $this
+     */
+    public function setMiniGameBfIncomeD1Uv($miniGameBfIncomeD1Uv)
+    {
+        $this->container['miniGameBfIncomeD1Uv'] = $miniGameBfIncomeD1Uv;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfIncomeD1Amount
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameBfIncomeD1Amount()
+    {
+        return $this->container['miniGameBfIncomeD1Amount'];
+    }
+
+    /**
+     * Sets miniGameBfIncomeD1Amount
+     *
+     * @param int|mixed $miniGameBfIncomeD1Amount miniGameBfIncomeD1Amount
+     *
+     * @return $this
+     */
+    public function setMiniGameBfIncomeD1Amount($miniGameBfIncomeD1Amount)
+    {
+        $this->container['miniGameBfIncomeD1Amount'] = $miniGameBfIncomeD1Amount;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfIncomeD1Cost
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameBfIncomeD1Cost()
+    {
+        return $this->container['miniGameBfIncomeD1Cost'];
+    }
+
+    /**
+     * Sets miniGameBfIncomeD1Cost
+     *
+     * @param int|mixed $miniGameBfIncomeD1Cost miniGameBfIncomeD1Cost
+     *
+     * @return $this
+     */
+    public function setMiniGameBfIncomeD1Cost($miniGameBfIncomeD1Cost)
+    {
+        $this->container['miniGameBfIncomeD1Cost'] = $miniGameBfIncomeD1Cost;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfIncomeD1Roi
+     *
+     * @return double|mixed
+     */
+    public function getMiniGameBfIncomeD1Roi()
+    {
+        return $this->container['miniGameBfIncomeD1Roi'];
+    }
+
+    /**
+     * Sets miniGameBfIncomeD1Roi
+     *
+     * @param double|mixed $miniGameBfIncomeD1Roi miniGameBfIncomeD1Roi
+     *
+     * @return $this
+     */
+    public function setMiniGameBfIncomeD1Roi($miniGameBfIncomeD1Roi)
+    {
+        $this->container['miniGameBfIncomeD1Roi'] = $miniGameBfIncomeD1Roi;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfIncomeD1Arpu
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameBfIncomeD1Arpu()
+    {
+        return $this->container['miniGameBfIncomeD1Arpu'];
+    }
+
+    /**
+     * Sets miniGameBfIncomeD1Arpu
+     *
+     * @param int|mixed $miniGameBfIncomeD1Arpu miniGameBfIncomeD1Arpu
+     *
+     * @return $this
+     */
+    public function setMiniGameBfIncomeD1Arpu($miniGameBfIncomeD1Arpu)
+    {
+        $this->container['miniGameBfIncomeD1Arpu'] = $miniGameBfIncomeD1Arpu;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfPurchaseUv
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameBfPurchaseUv()
+    {
+        return $this->container['miniGameBfPurchaseUv'];
+    }
+
+    /**
+     * Sets miniGameBfPurchaseUv
+     *
+     * @param int|mixed $miniGameBfPurchaseUv miniGameBfPurchaseUv
+     *
+     * @return $this
+     */
+    public function setMiniGameBfPurchaseUv($miniGameBfPurchaseUv)
+    {
+        $this->container['miniGameBfPurchaseUv'] = $miniGameBfPurchaseUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfPurchaseAmount
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameBfPurchaseAmount()
+    {
+        return $this->container['miniGameBfPurchaseAmount'];
+    }
+
+    /**
+     * Sets miniGameBfPurchaseAmount
+     *
+     * @param int|mixed $miniGameBfPurchaseAmount miniGameBfPurchaseAmount
+     *
+     * @return $this
+     */
+    public function setMiniGameBfPurchaseAmount($miniGameBfPurchaseAmount)
+    {
+        $this->container['miniGameBfPurchaseAmount'] = $miniGameBfPurchaseAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfPurchaseCost
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameBfPurchaseCost()
+    {
+        return $this->container['miniGameBfPurchaseCost'];
+    }
+
+    /**
+     * Sets miniGameBfPurchaseCost
+     *
+     * @param int|mixed $miniGameBfPurchaseCost miniGameBfPurchaseCost
+     *
+     * @return $this
+     */
+    public function setMiniGameBfPurchaseCost($miniGameBfPurchaseCost)
+    {
+        $this->container['miniGameBfPurchaseCost'] = $miniGameBfPurchaseCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfPurchaseRoi
+     *
+     * @return double|mixed
+     */
+    public function getMiniGameBfPurchaseRoi()
+    {
+        return $this->container['miniGameBfPurchaseRoi'];
+    }
+
+    /**
+     * Sets miniGameBfPurchaseRoi
+     *
+     * @param double|mixed $miniGameBfPurchaseRoi miniGameBfPurchaseRoi
+     *
+     * @return $this
+     */
+    public function setMiniGameBfPurchaseRoi($miniGameBfPurchaseRoi)
+    {
+        $this->container['miniGameBfPurchaseRoi'] = $miniGameBfPurchaseRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfPurchaseArpu
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameBfPurchaseArpu()
+    {
+        return $this->container['miniGameBfPurchaseArpu'];
+    }
+
+    /**
+     * Sets miniGameBfPurchaseArpu
+     *
+     * @param int|mixed $miniGameBfPurchaseArpu miniGameBfPurchaseArpu
+     *
+     * @return $this
+     */
+    public function setMiniGameBfPurchaseArpu($miniGameBfPurchaseArpu)
+    {
+        $this->container['miniGameBfPurchaseArpu'] = $miniGameBfPurchaseArpu;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfPurchaseD1Uv
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameBfPurchaseD1Uv()
+    {
+        return $this->container['miniGameBfPurchaseD1Uv'];
+    }
+
+    /**
+     * Sets miniGameBfPurchaseD1Uv
+     *
+     * @param int|mixed $miniGameBfPurchaseD1Uv miniGameBfPurchaseD1Uv
+     *
+     * @return $this
+     */
+    public function setMiniGameBfPurchaseD1Uv($miniGameBfPurchaseD1Uv)
+    {
+        $this->container['miniGameBfPurchaseD1Uv'] = $miniGameBfPurchaseD1Uv;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfPurchaseD1Amount
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameBfPurchaseD1Amount()
+    {
+        return $this->container['miniGameBfPurchaseD1Amount'];
+    }
+
+    /**
+     * Sets miniGameBfPurchaseD1Amount
+     *
+     * @param int|mixed $miniGameBfPurchaseD1Amount miniGameBfPurchaseD1Amount
+     *
+     * @return $this
+     */
+    public function setMiniGameBfPurchaseD1Amount($miniGameBfPurchaseD1Amount)
+    {
+        $this->container['miniGameBfPurchaseD1Amount'] = $miniGameBfPurchaseD1Amount;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfPurchaseD1Cost
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameBfPurchaseD1Cost()
+    {
+        return $this->container['miniGameBfPurchaseD1Cost'];
+    }
+
+    /**
+     * Sets miniGameBfPurchaseD1Cost
+     *
+     * @param int|mixed $miniGameBfPurchaseD1Cost miniGameBfPurchaseD1Cost
+     *
+     * @return $this
+     */
+    public function setMiniGameBfPurchaseD1Cost($miniGameBfPurchaseD1Cost)
+    {
+        $this->container['miniGameBfPurchaseD1Cost'] = $miniGameBfPurchaseD1Cost;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfPurchaseD1Roi
+     *
+     * @return double|mixed
+     */
+    public function getMiniGameBfPurchaseD1Roi()
+    {
+        return $this->container['miniGameBfPurchaseD1Roi'];
+    }
+
+    /**
+     * Sets miniGameBfPurchaseD1Roi
+     *
+     * @param double|mixed $miniGameBfPurchaseD1Roi miniGameBfPurchaseD1Roi
+     *
+     * @return $this
+     */
+    public function setMiniGameBfPurchaseD1Roi($miniGameBfPurchaseD1Roi)
+    {
+        $this->container['miniGameBfPurchaseD1Roi'] = $miniGameBfPurchaseD1Roi;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfPurchaseD1Arpu
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameBfPurchaseD1Arpu()
+    {
+        return $this->container['miniGameBfPurchaseD1Arpu'];
+    }
+
+    /**
+     * Sets miniGameBfPurchaseD1Arpu
+     *
+     * @param int|mixed $miniGameBfPurchaseD1Arpu miniGameBfPurchaseD1Arpu
+     *
+     * @return $this
+     */
+    public function setMiniGameBfPurchaseD1Arpu($miniGameBfPurchaseD1Arpu)
+    {
+        $this->container['miniGameBfPurchaseD1Arpu'] = $miniGameBfPurchaseD1Arpu;
 
         return $this;
     }
