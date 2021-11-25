@@ -58,6 +58,7 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
+        'timeType' => '\TencentAds\Model\TimeType',
         'timeRange' => '\TencentAds\Model\TimeRange',
         'filtering' => '\TencentAds\Model\FilteringStruct[]',
         'page' => 'int',
@@ -72,6 +73,7 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'accountId' => 'int64',
+        'timeType' => null,
         'timeRange' => null,
         'filtering' => null,
         'page' => 'int64',
@@ -107,6 +109,7 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'accountId' => 'account_id',
+        'timeType' => 'time_type',
         'timeRange' => 'time_range',
         'filtering' => 'filtering',
         'page' => 'page',
@@ -121,6 +124,7 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'accountId' => 'setAccountId',
+        'timeType' => 'setTimeType',
         'timeRange' => 'setTimeRange',
         'filtering' => 'setFiltering',
         'page' => 'setPage',
@@ -135,6 +139,7 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'accountId' => 'getAccountId',
+        'timeType' => 'getTimeType',
         'timeRange' => 'getTimeRange',
         'filtering' => 'getFiltering',
         'page' => 'getPage',
@@ -203,6 +208,7 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['timeType'] = isset($data['timeType']) ? $data['timeType'] : null;
         $this->container['timeRange'] = isset($data['timeRange']) ? $data['timeRange'] : null;
         $this->container['filtering'] = isset($data['filtering']) ? $data['filtering'] : null;
         $this->container['page'] = isset($data['page']) ? $data['page'] : null;
@@ -254,6 +260,30 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
     public function setAccountId($accountId)
     {
         $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets timeType
+     *
+     * @return \TencentAds\Model\TimeType|mixed
+     */
+    public function getTimeType()
+    {
+        return $this->container['timeType'];
+    }
+
+    /**
+     * Sets timeType
+     *
+     * @param \TencentAds\Model\TimeType|mixed $timeType timeType
+     *
+     * @return $this
+     */
+    public function setTimeType($timeType)
+    {
+        $this->container['timeType'] = $timeType;
 
         return $this;
     }

@@ -45,12 +45,11 @@ class AssetAccountType
      * Possible values of this enum
      */
     const ACCOUNT_BM = 'ASSET_TYPE_ACCOUNT_BM';
-    const ACCOUNT_AGENCY = 'ASSET_TYPE_ACCOUNT_AGENCY';
     const ACCOUNT_MDM = 'ASSET_TYPE_ACCOUNT_MDM';
     const GROUP_BM = 'ASSET_TYPE_GROUP_BM';
-    const GROUP_AGENCY = 'ASSET_TYPE_GROUP_AGENCY';
     const GROUP_MDM = 'ASSET_TYPE_GROUP_MDM';
     const GROUP_POINT_TO_POINT = 'ASSET_TYPE_GROUP_POINT_TO_POINT';
+    const AGENCY = 'ASSET_TYPE_AGENCY';
     
     /**
      * Gets allowable values of the enum
@@ -60,12 +59,11 @@ class AssetAccountType
     {
         return [
             self::ACCOUNT_BM,
-            self::ACCOUNT_AGENCY,
             self::ACCOUNT_MDM,
             self::GROUP_BM,
-            self::GROUP_AGENCY,
             self::GROUP_MDM,
             self::GROUP_POINT_TO_POINT,
+            self::AGENCY,
         ];
     }
 }

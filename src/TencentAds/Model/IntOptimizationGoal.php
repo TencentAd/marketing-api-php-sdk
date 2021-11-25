@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * IntOptimizationGoal Class Doc Comment
  *
  * @category Class
- * @description 优化目标类型，支持的优化目标及对应的深度优化目标可通过“&lt;a href&#x3D;&#39;/docs/api/tools/capabilities/optimization_goal_permissions_get&#39; target&#x3D;&#39;_blank&#39;&gt;查询优化目标权限&lt;/a&gt;”接口进行查询
+ * @description 优化目标类型，支持的优化目标及对应的深度优化目标可通过“&lt;a target&#x3D;&#39;_blank&#39; href&#x3D;&#39;/docs/api/tools/capabilities/optimization_goal_permissions_get&#39; &gt;查询优化目标权限&lt;/a&gt;”接口进行查询
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

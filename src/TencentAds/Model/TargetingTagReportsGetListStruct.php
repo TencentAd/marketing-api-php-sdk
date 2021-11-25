@@ -418,6 +418,8 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Cost' => 'int',
         'miniGameBfPurchaseD1Roi' => 'double',
         'miniGameBfPurchaseD1Arpu' => 'int',
+        'miniGameCreateRoleRate' => 'double',
+        'consultUvCount' => 'int',
         'age' => 'string',
         'regionId' => 'int',
         'cityId' => 'int',
@@ -537,7 +539,8 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationAmountD3' => 'int',
         'miniGameAdMonetizationAmountD7' => 'int',
         'miniGameAdMonetizationAmountD14' => 'int',
-        'miniGamePayingArpuD1' => 'int'
+        'miniGamePayingArpuD1' => 'int',
+        'miniGamePayD1PlaRate' => 'double'
     ];
 
     /**
@@ -906,6 +909,8 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Cost' => 'int64',
         'miniGameBfPurchaseD1Roi' => 'double',
         'miniGameBfPurchaseD1Arpu' => 'int64',
+        'miniGameCreateRoleRate' => 'double',
+        'consultUvCount' => 'int64',
         'age' => null,
         'regionId' => 'int64',
         'cityId' => 'int64',
@@ -1025,7 +1030,8 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationAmountD3' => 'int64',
         'miniGameAdMonetizationAmountD7' => 'int64',
         'miniGameAdMonetizationAmountD14' => 'int64',
-        'miniGamePayingArpuD1' => 'int64'
+        'miniGamePayingArpuD1' => 'int64',
+        'miniGamePayD1PlaRate' => 'double'
     ];
 
     /**
@@ -1415,6 +1421,8 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Cost' => 'mini_game_bf_purchase_d1_cost',
         'miniGameBfPurchaseD1Roi' => 'mini_game_bf_purchase_d1_roi',
         'miniGameBfPurchaseD1Arpu' => 'mini_game_bf_purchase_d1_arpu',
+        'miniGameCreateRoleRate' => 'mini_game_create_role_rate',
+        'consultUvCount' => 'consult_uv_count',
         'age' => 'age',
         'regionId' => 'region_id',
         'cityId' => 'city_id',
@@ -1534,7 +1542,8 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationAmountD3' => 'mini_game_ad_monetization_amount_d3',
         'miniGameAdMonetizationAmountD7' => 'mini_game_ad_monetization_amount_d7',
         'miniGameAdMonetizationAmountD14' => 'mini_game_ad_monetization_amount_d14',
-        'miniGamePayingArpuD1' => 'mini_game_paying_arpu_d1'
+        'miniGamePayingArpuD1' => 'mini_game_paying_arpu_d1',
+        'miniGamePayD1PlaRate' => 'mini_game_pay_d1_pla_rate'
     ];
 
     /**
@@ -1903,6 +1912,8 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Cost' => 'setMiniGameBfPurchaseD1Cost',
         'miniGameBfPurchaseD1Roi' => 'setMiniGameBfPurchaseD1Roi',
         'miniGameBfPurchaseD1Arpu' => 'setMiniGameBfPurchaseD1Arpu',
+        'miniGameCreateRoleRate' => 'setMiniGameCreateRoleRate',
+        'consultUvCount' => 'setConsultUvCount',
         'age' => 'setAge',
         'regionId' => 'setRegionId',
         'cityId' => 'setCityId',
@@ -2022,7 +2033,8 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationAmountD3' => 'setMiniGameAdMonetizationAmountD3',
         'miniGameAdMonetizationAmountD7' => 'setMiniGameAdMonetizationAmountD7',
         'miniGameAdMonetizationAmountD14' => 'setMiniGameAdMonetizationAmountD14',
-        'miniGamePayingArpuD1' => 'setMiniGamePayingArpuD1'
+        'miniGamePayingArpuD1' => 'setMiniGamePayingArpuD1',
+        'miniGamePayD1PlaRate' => 'setMiniGamePayD1PlaRate'
     ];
 
     /**
@@ -2391,6 +2403,8 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Cost' => 'getMiniGameBfPurchaseD1Cost',
         'miniGameBfPurchaseD1Roi' => 'getMiniGameBfPurchaseD1Roi',
         'miniGameBfPurchaseD1Arpu' => 'getMiniGameBfPurchaseD1Arpu',
+        'miniGameCreateRoleRate' => 'getMiniGameCreateRoleRate',
+        'consultUvCount' => 'getConsultUvCount',
         'age' => 'getAge',
         'regionId' => 'getRegionId',
         'cityId' => 'getCityId',
@@ -2510,7 +2524,8 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationAmountD3' => 'getMiniGameAdMonetizationAmountD3',
         'miniGameAdMonetizationAmountD7' => 'getMiniGameAdMonetizationAmountD7',
         'miniGameAdMonetizationAmountD14' => 'getMiniGameAdMonetizationAmountD14',
-        'miniGamePayingArpuD1' => 'getMiniGamePayingArpuD1'
+        'miniGamePayingArpuD1' => 'getMiniGamePayingArpuD1',
+        'miniGamePayD1PlaRate' => 'getMiniGamePayD1PlaRate'
     ];
 
     /**
@@ -2933,6 +2948,8 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGameBfPurchaseD1Cost'] = isset($data['miniGameBfPurchaseD1Cost']) ? $data['miniGameBfPurchaseD1Cost'] : null;
         $this->container['miniGameBfPurchaseD1Roi'] = isset($data['miniGameBfPurchaseD1Roi']) ? $data['miniGameBfPurchaseD1Roi'] : null;
         $this->container['miniGameBfPurchaseD1Arpu'] = isset($data['miniGameBfPurchaseD1Arpu']) ? $data['miniGameBfPurchaseD1Arpu'] : null;
+        $this->container['miniGameCreateRoleRate'] = isset($data['miniGameCreateRoleRate']) ? $data['miniGameCreateRoleRate'] : null;
+        $this->container['consultUvCount'] = isset($data['consultUvCount']) ? $data['consultUvCount'] : null;
         $this->container['age'] = isset($data['age']) ? $data['age'] : null;
         $this->container['regionId'] = isset($data['regionId']) ? $data['regionId'] : null;
         $this->container['cityId'] = isset($data['cityId']) ? $data['cityId'] : null;
@@ -3053,6 +3070,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGameAdMonetizationAmountD7'] = isset($data['miniGameAdMonetizationAmountD7']) ? $data['miniGameAdMonetizationAmountD7'] : null;
         $this->container['miniGameAdMonetizationAmountD14'] = isset($data['miniGameAdMonetizationAmountD14']) ? $data['miniGameAdMonetizationAmountD14'] : null;
         $this->container['miniGamePayingArpuD1'] = isset($data['miniGamePayingArpuD1']) ? $data['miniGamePayingArpuD1'] : null;
+        $this->container['miniGamePayD1PlaRate'] = isset($data['miniGamePayD1PlaRate']) ? $data['miniGamePayD1PlaRate'] : null;
     }
 
     /**
@@ -11720,6 +11738,54 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets miniGameCreateRoleRate
+     *
+     * @return double|mixed
+     */
+    public function getMiniGameCreateRoleRate()
+    {
+        return $this->container['miniGameCreateRoleRate'];
+    }
+
+    /**
+     * Sets miniGameCreateRoleRate
+     *
+     * @param double|mixed $miniGameCreateRoleRate miniGameCreateRoleRate
+     *
+     * @return $this
+     */
+    public function setMiniGameCreateRoleRate($miniGameCreateRoleRate)
+    {
+        $this->container['miniGameCreateRoleRate'] = $miniGameCreateRoleRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets consultUvCount
+     *
+     * @return int|mixed
+     */
+    public function getConsultUvCount()
+    {
+        return $this->container['consultUvCount'];
+    }
+
+    /**
+     * Sets consultUvCount
+     *
+     * @param int|mixed $consultUvCount consultUvCount
+     *
+     * @return $this
+     */
+    public function setConsultUvCount($consultUvCount)
+    {
+        $this->container['consultUvCount'] = $consultUvCount;
+
+        return $this;
+    }
+
+    /**
      * Gets age
      *
      * @return string|mixed
@@ -14595,6 +14661,30 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setMiniGamePayingArpuD1($miniGamePayingArpuD1)
     {
         $this->container['miniGamePayingArpuD1'] = $miniGamePayingArpuD1;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayD1PlaRate
+     *
+     * @return double|mixed
+     */
+    public function getMiniGamePayD1PlaRate()
+    {
+        return $this->container['miniGamePayD1PlaRate'];
+    }
+
+    /**
+     * Sets miniGamePayD1PlaRate
+     *
+     * @param double|mixed $miniGamePayD1PlaRate miniGamePayD1PlaRate
+     *
+     * @return $this
+     */
+    public function setMiniGamePayD1PlaRate($miniGamePayD1PlaRate)
+    {
+        $this->container['miniGamePayD1PlaRate'] = $miniGamePayD1PlaRate;
 
         return $this;
     }

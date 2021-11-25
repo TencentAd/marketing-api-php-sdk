@@ -1,6 +1,6 @@
 <?php
 /**
- * PathType
+ * TimeType
  *
  * PHP version 5
  *
@@ -31,23 +31,21 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PathType Class Doc Comment
+ * TimeType Class Doc Comment
  *
  * @category Class
- * @description 资产授权路径类型
+ * @description 时间类型，不填默认为TIME_TYPE_ACTION_TIME，此参数会影响到time_range、last_search_after_values、返回数据的排序规则
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PathType
+class TimeType
 {
     /**
      * Possible values of this enum
      */
-    const BM = 'PATH_TYPE_BM';
-    const MDM = 'PATH_TYPE_MDM';
-    const POINT_TO_POINT = 'PATH_TYPE_POINT_TO_POINT';
-    const AGENCY = 'PATH_TYPE_AGENCY';
+    const ACTION_TIME = 'TIME_TYPE_ACTION_TIME';
+    const CREATED_TIME = 'TIME_TYPE_CREATED_TIME';
     
     /**
      * Gets allowable values of the enum
@@ -56,10 +54,8 @@ class PathType
     public static function getAllowableEnumValues()
     {
         return [
-            self::BM,
-            self::MDM,
-            self::POINT_TO_POINT,
-            self::AGENCY,
+            self::ACTION_TIME,
+            self::CREATED_TIME,
         ];
     }
 }

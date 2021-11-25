@@ -416,6 +416,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Cost' => 'int',
         'miniGameBfPurchaseD1Roi' => 'double',
         'miniGameBfPurchaseD1Arpu' => 'int',
+        'miniGameCreateRoleRate' => 'double',
+        'consultUvCount' => 'int',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
         'incomeVal1' => 'int',
@@ -503,6 +505,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationAmountD7' => 'int',
         'miniGameAdMonetizationAmountD14' => 'int',
         'miniGamePayingArpuD1' => 'int',
+        'miniGamePayD1PlaRate' => 'double',
         'campaignId' => 'int',
         'campaignName' => 'string',
         'webAddToCartCount' => 'int',
@@ -949,6 +952,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Cost' => 'int64',
         'miniGameBfPurchaseD1Roi' => 'double',
         'miniGameBfPurchaseD1Arpu' => 'int64',
+        'miniGameCreateRoleRate' => 'double',
+        'consultUvCount' => 'int64',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
         'incomeVal1' => 'int64',
@@ -1036,6 +1041,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationAmountD7' => 'int64',
         'miniGameAdMonetizationAmountD14' => 'int64',
         'miniGamePayingArpuD1' => 'int64',
+        'miniGamePayD1PlaRate' => 'double',
         'campaignId' => 'int64',
         'campaignName' => null,
         'webAddToCartCount' => 'int64',
@@ -1503,6 +1509,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Cost' => 'mini_game_bf_purchase_d1_cost',
         'miniGameBfPurchaseD1Roi' => 'mini_game_bf_purchase_d1_roi',
         'miniGameBfPurchaseD1Arpu' => 'mini_game_bf_purchase_d1_arpu',
+        'miniGameCreateRoleRate' => 'mini_game_create_role_rate',
+        'consultUvCount' => 'consult_uv_count',
         'requestConversionsCount' => 'request_conversions_count',
         'requestConversionsCost' => 'request_conversions_cost',
         'incomeVal1' => 'income_val_1',
@@ -1590,6 +1598,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationAmountD7' => 'mini_game_ad_monetization_amount_d7',
         'miniGameAdMonetizationAmountD14' => 'mini_game_ad_monetization_amount_d14',
         'miniGamePayingArpuD1' => 'mini_game_paying_arpu_d1',
+        'miniGamePayD1PlaRate' => 'mini_game_pay_d1_pla_rate',
         'campaignId' => 'campaign_id',
         'campaignName' => 'campaign_name',
         'webAddToCartCount' => 'web_add_to_cart_count',
@@ -2036,6 +2045,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Cost' => 'setMiniGameBfPurchaseD1Cost',
         'miniGameBfPurchaseD1Roi' => 'setMiniGameBfPurchaseD1Roi',
         'miniGameBfPurchaseD1Arpu' => 'setMiniGameBfPurchaseD1Arpu',
+        'miniGameCreateRoleRate' => 'setMiniGameCreateRoleRate',
+        'consultUvCount' => 'setConsultUvCount',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'requestConversionsCost' => 'setRequestConversionsCost',
         'incomeVal1' => 'setIncomeVal1',
@@ -2123,6 +2134,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationAmountD7' => 'setMiniGameAdMonetizationAmountD7',
         'miniGameAdMonetizationAmountD14' => 'setMiniGameAdMonetizationAmountD14',
         'miniGamePayingArpuD1' => 'setMiniGamePayingArpuD1',
+        'miniGamePayD1PlaRate' => 'setMiniGamePayD1PlaRate',
         'campaignId' => 'setCampaignId',
         'campaignName' => 'setCampaignName',
         'webAddToCartCount' => 'setWebAddToCartCount',
@@ -2569,6 +2581,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Cost' => 'getMiniGameBfPurchaseD1Cost',
         'miniGameBfPurchaseD1Roi' => 'getMiniGameBfPurchaseD1Roi',
         'miniGameBfPurchaseD1Arpu' => 'getMiniGameBfPurchaseD1Arpu',
+        'miniGameCreateRoleRate' => 'getMiniGameCreateRoleRate',
+        'consultUvCount' => 'getConsultUvCount',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'requestConversionsCost' => 'getRequestConversionsCost',
         'incomeVal1' => 'getIncomeVal1',
@@ -2656,6 +2670,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationAmountD7' => 'getMiniGameAdMonetizationAmountD7',
         'miniGameAdMonetizationAmountD14' => 'getMiniGameAdMonetizationAmountD14',
         'miniGamePayingArpuD1' => 'getMiniGamePayingArpuD1',
+        'miniGamePayD1PlaRate' => 'getMiniGamePayD1PlaRate',
         'campaignId' => 'getCampaignId',
         'campaignName' => 'getCampaignName',
         'webAddToCartCount' => 'getWebAddToCartCount',
@@ -3156,6 +3171,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGameBfPurchaseD1Cost'] = isset($data['miniGameBfPurchaseD1Cost']) ? $data['miniGameBfPurchaseD1Cost'] : null;
         $this->container['miniGameBfPurchaseD1Roi'] = isset($data['miniGameBfPurchaseD1Roi']) ? $data['miniGameBfPurchaseD1Roi'] : null;
         $this->container['miniGameBfPurchaseD1Arpu'] = isset($data['miniGameBfPurchaseD1Arpu']) ? $data['miniGameBfPurchaseD1Arpu'] : null;
+        $this->container['miniGameCreateRoleRate'] = isset($data['miniGameCreateRoleRate']) ? $data['miniGameCreateRoleRate'] : null;
+        $this->container['consultUvCount'] = isset($data['consultUvCount']) ? $data['consultUvCount'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
         $this->container['incomeVal1'] = isset($data['incomeVal1']) ? $data['incomeVal1'] : null;
@@ -3243,6 +3260,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGameAdMonetizationAmountD7'] = isset($data['miniGameAdMonetizationAmountD7']) ? $data['miniGameAdMonetizationAmountD7'] : null;
         $this->container['miniGameAdMonetizationAmountD14'] = isset($data['miniGameAdMonetizationAmountD14']) ? $data['miniGameAdMonetizationAmountD14'] : null;
         $this->container['miniGamePayingArpuD1'] = isset($data['miniGamePayingArpuD1']) ? $data['miniGamePayingArpuD1'] : null;
+        $this->container['miniGamePayD1PlaRate'] = isset($data['miniGamePayD1PlaRate']) ? $data['miniGamePayD1PlaRate'] : null;
         $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
         $this->container['campaignName'] = isset($data['campaignName']) ? $data['campaignName'] : null;
         $this->container['webAddToCartCount'] = isset($data['webAddToCartCount']) ? $data['webAddToCartCount'] : null;
@@ -11942,6 +11960,54 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets miniGameCreateRoleRate
+     *
+     * @return double|mixed
+     */
+    public function getMiniGameCreateRoleRate()
+    {
+        return $this->container['miniGameCreateRoleRate'];
+    }
+
+    /**
+     * Sets miniGameCreateRoleRate
+     *
+     * @param double|mixed $miniGameCreateRoleRate miniGameCreateRoleRate
+     *
+     * @return $this
+     */
+    public function setMiniGameCreateRoleRate($miniGameCreateRoleRate)
+    {
+        $this->container['miniGameCreateRoleRate'] = $miniGameCreateRoleRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets consultUvCount
+     *
+     * @return int|mixed
+     */
+    public function getConsultUvCount()
+    {
+        return $this->container['consultUvCount'];
+    }
+
+    /**
+     * Sets consultUvCount
+     *
+     * @param int|mixed $consultUvCount consultUvCount
+     *
+     * @return $this
+     */
+    public function setConsultUvCount($consultUvCount)
+    {
+        $this->container['consultUvCount'] = $consultUvCount;
+
+        return $this;
+    }
+
+    /**
      * Gets requestConversionsCount
      *
      * @return int|mixed
@@ -14025,6 +14091,30 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setMiniGamePayingArpuD1($miniGamePayingArpuD1)
     {
         $this->container['miniGamePayingArpuD1'] = $miniGamePayingArpuD1;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayD1PlaRate
+     *
+     * @return double|mixed
+     */
+    public function getMiniGamePayD1PlaRate()
+    {
+        return $this->container['miniGamePayD1PlaRate'];
+    }
+
+    /**
+     * Sets miniGamePayD1PlaRate
+     *
+     * @param double|mixed $miniGamePayD1PlaRate miniGamePayD1PlaRate
+     *
+     * @return $this
+     */
+    public function setMiniGamePayD1PlaRate($miniGamePayD1PlaRate)
+    {
+        $this->container['miniGamePayD1PlaRate'] = $miniGamePayD1PlaRate;
 
         return $this;
     }

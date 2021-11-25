@@ -120,6 +120,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'headLine' => 'string',
         'shopImageStruct' => '\TencentAds\Model\AdCreativeShopImageStruct',
         'chosenButton' => '\TencentAds\Model\ChosenButton',
+        'livingDescStruct' => '\TencentAds\Model\AdCreativeLivingDescStruct',
         'countdownExpiringTimestamp' => 'int'
     ];
 
@@ -191,6 +192,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'headLine' => null,
         'shopImageStruct' => null,
         'chosenButton' => null,
+        'livingDescStruct' => null,
         'countdownExpiringTimestamp' => 'int64'
     ];
 
@@ -283,6 +285,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'headLine' => 'head_line',
         'shopImageStruct' => 'shop_image_struct',
         'chosenButton' => 'chosen_button',
+        'livingDescStruct' => 'living_desc_struct',
         'countdownExpiringTimestamp' => 'countdown_expiring_timestamp'
     ];
 
@@ -354,6 +357,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'headLine' => 'setHeadLine',
         'shopImageStruct' => 'setShopImageStruct',
         'chosenButton' => 'setChosenButton',
+        'livingDescStruct' => 'setLivingDescStruct',
         'countdownExpiringTimestamp' => 'setCountdownExpiringTimestamp'
     ];
 
@@ -425,6 +429,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'headLine' => 'getHeadLine',
         'shopImageStruct' => 'getShopImageStruct',
         'chosenButton' => 'getChosenButton',
+        'livingDescStruct' => 'getLivingDescStruct',
         'countdownExpiringTimestamp' => 'getCountdownExpiringTimestamp'
     ];
 
@@ -550,6 +555,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         $this->container['headLine'] = isset($data['headLine']) ? $data['headLine'] : null;
         $this->container['shopImageStruct'] = isset($data['shopImageStruct']) ? $data['shopImageStruct'] : null;
         $this->container['chosenButton'] = isset($data['chosenButton']) ? $data['chosenButton'] : null;
+        $this->container['livingDescStruct'] = isset($data['livingDescStruct']) ? $data['livingDescStruct'] : null;
         $this->container['countdownExpiringTimestamp'] = isset($data['countdownExpiringTimestamp']) ? $data['countdownExpiringTimestamp'] : null;
     }
 
@@ -2061,6 +2067,30 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
     public function setChosenButton($chosenButton)
     {
         $this->container['chosenButton'] = $chosenButton;
+
+        return $this;
+    }
+
+    /**
+     * Gets livingDescStruct
+     *
+     * @return \TencentAds\Model\AdCreativeLivingDescStruct|mixed
+     */
+    public function getLivingDescStruct()
+    {
+        return $this->container['livingDescStruct'];
+    }
+
+    /**
+     * Sets livingDescStruct
+     *
+     * @param \TencentAds\Model\AdCreativeLivingDescStruct|mixed $livingDescStruct livingDescStruct
+     *
+     * @return $this
+     */
+    public function setLivingDescStruct($livingDescStruct)
+    {
+        $this->container['livingDescStruct'] = $livingDescStruct;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * TimeRange
+ * AdCreativeLivingDescStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * TimeRange Class Doc Comment
+ * AdCreativeLivingDescStruct Class Doc Comment
  *
  * @category Class
- * @description 时间范围，最长跨度1年。&lt;br&gt;time_type&#x3D;TIME_TYPE_ACTION_TIME时填写线索提交时间，time_type&#x3D;TIME_TYPE_CREATED_TIME时填写线索入库时间
+ * @description 轮播文案
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class TimeRange implements ModelInterface, ArrayAccess
+class AdCreativeLivingDescStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class TimeRange implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'time_range';
+    protected static $swaggerModelName = 'ad_creative_living_desc_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,8 @@ class TimeRange implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'startTime' => 'int',
-        'endTime' => 'int'
+        'livingDescStructSwitch' => 'bool',
+        'livingDescList' => 'string[]'
     ];
 
     /**
@@ -68,8 +68,8 @@ class TimeRange implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'startTime' => 'int64',
-        'endTime' => 'int64'
+        'livingDescStructSwitch' => null,
+        'livingDescList' => null
     ];
 
     /**
@@ -99,8 +99,8 @@ class TimeRange implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'startTime' => 'start_time',
-        'endTime' => 'end_time'
+        'livingDescStructSwitch' => 'living_desc_struct_switch',
+        'livingDescList' => 'living_desc_list'
     ];
 
     /**
@@ -109,8 +109,8 @@ class TimeRange implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'startTime' => 'setStartTime',
-        'endTime' => 'setEndTime'
+        'livingDescStructSwitch' => 'setLivingDescStructSwitch',
+        'livingDescList' => 'setLivingDescList'
     ];
 
     /**
@@ -119,8 +119,8 @@ class TimeRange implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'startTime' => 'getStartTime',
-        'endTime' => 'getEndTime'
+        'livingDescStructSwitch' => 'getLivingDescStructSwitch',
+        'livingDescList' => 'getLivingDescList'
     ];
 
     /**
@@ -183,8 +183,8 @@ class TimeRange implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['startTime'] = isset($data['startTime']) ? $data['startTime'] : null;
-        $this->container['endTime'] = isset($data['endTime']) ? $data['endTime'] : null;
+        $this->container['livingDescStructSwitch'] = isset($data['livingDescStructSwitch']) ? $data['livingDescStructSwitch'] : null;
+        $this->container['livingDescList'] = isset($data['livingDescList']) ? $data['livingDescList'] : null;
     }
 
     /**
@@ -212,49 +212,49 @@ class TimeRange implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets startTime
+     * Gets livingDescStructSwitch
      *
-     * @return int|mixed
+     * @return bool|mixed
      */
-    public function getStartTime()
+    public function getLivingDescStructSwitch()
     {
-        return $this->container['startTime'];
+        return $this->container['livingDescStructSwitch'];
     }
 
     /**
-     * Sets startTime
+     * Sets livingDescStructSwitch
      *
-     * @param int|mixed $startTime startTime
+     * @param bool|mixed $livingDescStructSwitch livingDescStructSwitch
      *
      * @return $this
      */
-    public function setStartTime($startTime)
+    public function setLivingDescStructSwitch($livingDescStructSwitch)
     {
-        $this->container['startTime'] = $startTime;
+        $this->container['livingDescStructSwitch'] = $livingDescStructSwitch;
 
         return $this;
     }
 
     /**
-     * Gets endTime
+     * Gets livingDescList
      *
-     * @return int|mixed
+     * @return string[]|mixed
      */
-    public function getEndTime()
+    public function getLivingDescList()
     {
-        return $this->container['endTime'];
+        return $this->container['livingDescList'];
     }
 
     /**
-     * Sets endTime
+     * Sets livingDescList
      *
-     * @param int|mixed $endTime endTime
+     * @param string[]|mixed $livingDescList livingDescList
      *
      * @return $this
      */
-    public function setEndTime($endTime)
+    public function setLivingDescList($livingDescList)
     {
-        $this->container['endTime'] = $endTime;
+        $this->container['livingDescList'] = $livingDescList;
 
         return $this;
     }
