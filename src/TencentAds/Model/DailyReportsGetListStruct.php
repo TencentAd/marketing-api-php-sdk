@@ -514,6 +514,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'adgroupName' => 'string',
         'previewConversionsCount' => 'int',
         'previewDeepConversionsCount' => 'int',
+        'acquisitionCost' => 'int',
         'adId' => 'int',
         'adName' => 'string',
         'promotedObjectType' => 'string',
@@ -1070,6 +1071,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'adgroupName' => null,
         'previewConversionsCount' => 'int64',
         'previewDeepConversionsCount' => 'int64',
+        'acquisitionCost' => 'int64',
         'adId' => 'int64',
         'adName' => null,
         'promotedObjectType' => null,
@@ -1647,6 +1649,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'adgroupName' => 'adgroup_name',
         'previewConversionsCount' => 'preview_conversions_count',
         'previewDeepConversionsCount' => 'preview_deep_conversions_count',
+        'acquisitionCost' => 'acquisition_cost',
         'adId' => 'ad_id',
         'adName' => 'ad_name',
         'promotedObjectType' => 'promoted_object_type',
@@ -2203,6 +2206,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'adgroupName' => 'setAdgroupName',
         'previewConversionsCount' => 'setPreviewConversionsCount',
         'previewDeepConversionsCount' => 'setPreviewDeepConversionsCount',
+        'acquisitionCost' => 'setAcquisitionCost',
         'adId' => 'setAdId',
         'adName' => 'setAdName',
         'promotedObjectType' => 'setPromotedObjectType',
@@ -2759,6 +2763,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'adgroupName' => 'getAdgroupName',
         'previewConversionsCount' => 'getPreviewConversionsCount',
         'previewDeepConversionsCount' => 'getPreviewDeepConversionsCount',
+        'acquisitionCost' => 'getAcquisitionCost',
         'adId' => 'getAdId',
         'adName' => 'getAdName',
         'promotedObjectType' => 'getPromotedObjectType',
@@ -3369,6 +3374,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['previewConversionsCount'] = isset($data['previewConversionsCount']) ? $data['previewConversionsCount'] : null;
         $this->container['previewDeepConversionsCount'] = isset($data['previewDeepConversionsCount']) ? $data['previewDeepConversionsCount'] : null;
+        $this->container['acquisitionCost'] = isset($data['acquisitionCost']) ? $data['acquisitionCost'] : null;
         $this->container['adId'] = isset($data['adId']) ? $data['adId'] : null;
         $this->container['adName'] = isset($data['adName']) ? $data['adName'] : null;
         $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
@@ -14427,6 +14433,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setPreviewDeepConversionsCount($previewDeepConversionsCount)
     {
         $this->container['previewDeepConversionsCount'] = $previewDeepConversionsCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets acquisitionCost
+     *
+     * @return int|mixed
+     */
+    public function getAcquisitionCost()
+    {
+        return $this->container['acquisitionCost'];
+    }
+
+    /**
+     * Sets acquisitionCost
+     *
+     * @param int|mixed $acquisitionCost acquisitionCost
+     *
+     * @return $this
+     */
+    public function setAcquisitionCost($acquisitionCost)
+    {
+        $this->container['acquisitionCost'] = $acquisitionCost;
 
         return $this;
     }
