@@ -28,6 +28,40 @@ class WechatPagesCsgrouplistApiContainer extends ApiContainer
 
 
     /**
+     * Handle WechatPagesCsgrouplistApi wechatPagesCsgrouplistAdd function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function add(array $params = [])
+    {
+        return $this->handleMiddleware('add', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->wechatPagesCsgrouplistAdd($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle WechatPagesCsgrouplistApi wechatPagesCsgrouplistAddAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function addAsync(array $params = [])
+    {
+        return $this->handleMiddleware('add', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->wechatPagesCsgrouplistAddAsync($data);
+            return $response;
+        });
+    }
+
+
+    /**
      * Handle WechatPagesCsgrouplistApi wechatPagesCsgrouplistGet function
      * @param array params
      * @return mixed
@@ -62,6 +96,40 @@ class WechatPagesCsgrouplistApiContainer extends ApiContainer
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
             $response = $this->apiInstance->wechatPagesCsgrouplistGetAsync($accountId, $page, $pageSize, $fields);
+            return $response;
+        });
+    }
+
+
+    /**
+     * Handle WechatPagesCsgrouplistApi wechatPagesCsgrouplistUpdate function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function update(array $params = [])
+    {
+        return $this->handleMiddleware('update', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->wechatPagesCsgrouplistUpdate($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle WechatPagesCsgrouplistApi wechatPagesCsgrouplistUpdateAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function updateAsync(array $params = [])
+    {
+        return $this->handleMiddleware('update', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->wechatPagesCsgrouplistUpdateAsync($data);
             return $response;
         });
     }
