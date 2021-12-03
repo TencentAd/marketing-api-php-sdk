@@ -63,7 +63,11 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         'localStoreProvince' => 'string',
         'localStoreCity' => 'string',
         'localStoreAddress' => 'string',
-        'localStoreBizInfo' => '\TencentAds\Model\LocalStoreBizInfoStruct',
+        'localStoreStreet' => 'string',
+        'localStoreBusinessArea' => 'string',
+        'localStoreDistrict' => 'string',
+        'localStoreLocation' => '\TencentAds\Model\LocalStoreLocation',
+        'localStoreBizInfo' => '\TencentAds\Model\LocalStoreBizInfoStructRsp',
         'wechatEcosystemAccounts' => '\TencentAds\Model\WechatEcosystemAccounts',
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
@@ -81,6 +85,10 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         'localStoreProvince' => null,
         'localStoreCity' => null,
         'localStoreAddress' => null,
+        'localStoreStreet' => null,
+        'localStoreBusinessArea' => null,
+        'localStoreDistrict' => null,
+        'localStoreLocation' => null,
         'localStoreBizInfo' => null,
         'wechatEcosystemAccounts' => null,
         'createdTime' => 'int64',
@@ -120,6 +128,10 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         'localStoreProvince' => 'local_store_province',
         'localStoreCity' => 'local_store_city',
         'localStoreAddress' => 'local_store_address',
+        'localStoreStreet' => 'local_store_street',
+        'localStoreBusinessArea' => 'local_store_business_area',
+        'localStoreDistrict' => 'local_store_district',
+        'localStoreLocation' => 'local_store_location',
         'localStoreBizInfo' => 'local_store_biz_info',
         'wechatEcosystemAccounts' => 'wechat_ecosystem_accounts',
         'createdTime' => 'created_time',
@@ -138,6 +150,10 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         'localStoreProvince' => 'setLocalStoreProvince',
         'localStoreCity' => 'setLocalStoreCity',
         'localStoreAddress' => 'setLocalStoreAddress',
+        'localStoreStreet' => 'setLocalStoreStreet',
+        'localStoreBusinessArea' => 'setLocalStoreBusinessArea',
+        'localStoreDistrict' => 'setLocalStoreDistrict',
+        'localStoreLocation' => 'setLocalStoreLocation',
         'localStoreBizInfo' => 'setLocalStoreBizInfo',
         'wechatEcosystemAccounts' => 'setWechatEcosystemAccounts',
         'createdTime' => 'setCreatedTime',
@@ -156,6 +172,10 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         'localStoreProvince' => 'getLocalStoreProvince',
         'localStoreCity' => 'getLocalStoreCity',
         'localStoreAddress' => 'getLocalStoreAddress',
+        'localStoreStreet' => 'getLocalStoreStreet',
+        'localStoreBusinessArea' => 'getLocalStoreBusinessArea',
+        'localStoreDistrict' => 'getLocalStoreDistrict',
+        'localStoreLocation' => 'getLocalStoreLocation',
         'localStoreBizInfo' => 'getLocalStoreBizInfo',
         'wechatEcosystemAccounts' => 'getWechatEcosystemAccounts',
         'createdTime' => 'getCreatedTime',
@@ -228,6 +248,10 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         $this->container['localStoreProvince'] = isset($data['localStoreProvince']) ? $data['localStoreProvince'] : null;
         $this->container['localStoreCity'] = isset($data['localStoreCity']) ? $data['localStoreCity'] : null;
         $this->container['localStoreAddress'] = isset($data['localStoreAddress']) ? $data['localStoreAddress'] : null;
+        $this->container['localStoreStreet'] = isset($data['localStoreStreet']) ? $data['localStoreStreet'] : null;
+        $this->container['localStoreBusinessArea'] = isset($data['localStoreBusinessArea']) ? $data['localStoreBusinessArea'] : null;
+        $this->container['localStoreDistrict'] = isset($data['localStoreDistrict']) ? $data['localStoreDistrict'] : null;
+        $this->container['localStoreLocation'] = isset($data['localStoreLocation']) ? $data['localStoreLocation'] : null;
         $this->container['localStoreBizInfo'] = isset($data['localStoreBizInfo']) ? $data['localStoreBizInfo'] : null;
         $this->container['wechatEcosystemAccounts'] = isset($data['wechatEcosystemAccounts']) ? $data['wechatEcosystemAccounts'] : null;
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
@@ -380,9 +404,105 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets localStoreStreet
+     *
+     * @return string|mixed
+     */
+    public function getLocalStoreStreet()
+    {
+        return $this->container['localStoreStreet'];
+    }
+
+    /**
+     * Sets localStoreStreet
+     *
+     * @param string|mixed $localStoreStreet localStoreStreet
+     *
+     * @return $this
+     */
+    public function setLocalStoreStreet($localStoreStreet)
+    {
+        $this->container['localStoreStreet'] = $localStoreStreet;
+
+        return $this;
+    }
+
+    /**
+     * Gets localStoreBusinessArea
+     *
+     * @return string|mixed
+     */
+    public function getLocalStoreBusinessArea()
+    {
+        return $this->container['localStoreBusinessArea'];
+    }
+
+    /**
+     * Sets localStoreBusinessArea
+     *
+     * @param string|mixed $localStoreBusinessArea localStoreBusinessArea
+     *
+     * @return $this
+     */
+    public function setLocalStoreBusinessArea($localStoreBusinessArea)
+    {
+        $this->container['localStoreBusinessArea'] = $localStoreBusinessArea;
+
+        return $this;
+    }
+
+    /**
+     * Gets localStoreDistrict
+     *
+     * @return string|mixed
+     */
+    public function getLocalStoreDistrict()
+    {
+        return $this->container['localStoreDistrict'];
+    }
+
+    /**
+     * Sets localStoreDistrict
+     *
+     * @param string|mixed $localStoreDistrict localStoreDistrict
+     *
+     * @return $this
+     */
+    public function setLocalStoreDistrict($localStoreDistrict)
+    {
+        $this->container['localStoreDistrict'] = $localStoreDistrict;
+
+        return $this;
+    }
+
+    /**
+     * Gets localStoreLocation
+     *
+     * @return \TencentAds\Model\LocalStoreLocation|mixed
+     */
+    public function getLocalStoreLocation()
+    {
+        return $this->container['localStoreLocation'];
+    }
+
+    /**
+     * Sets localStoreLocation
+     *
+     * @param \TencentAds\Model\LocalStoreLocation|mixed $localStoreLocation localStoreLocation
+     *
+     * @return $this
+     */
+    public function setLocalStoreLocation($localStoreLocation)
+    {
+        $this->container['localStoreLocation'] = $localStoreLocation;
+
+        return $this;
+    }
+
+    /**
      * Gets localStoreBizInfo
      *
-     * @return \TencentAds\Model\LocalStoreBizInfoStruct|mixed
+     * @return \TencentAds\Model\LocalStoreBizInfoStructRsp|mixed
      */
     public function getLocalStoreBizInfo()
     {
@@ -392,7 +512,7 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets localStoreBizInfo
      *
-     * @param \TencentAds\Model\LocalStoreBizInfoStruct|mixed $localStoreBizInfo localStoreBizInfo
+     * @param \TencentAds\Model\LocalStoreBizInfoStructRsp|mixed $localStoreBizInfo localStoreBizInfo
      *
      * @return $this
      */

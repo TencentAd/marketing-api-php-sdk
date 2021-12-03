@@ -63,7 +63,7 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
         'localStoreProvince' => 'string',
         'localStoreCity' => 'string',
         'localStoreAddress' => 'string',
-        'localStoreBizInfo' => '\TencentAds\Model\LocalStoreBizInfoStruct',
+        'localStoreBizInfo' => '\TencentAds\Model\LocalStoreBizInfoStructRsp',
         'wechatEcosystemAccounts' => '\TencentAds\Model\WechatEcosystemAccounts'
     ];
 
@@ -364,7 +364,7 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets localStoreBizInfo
      *
-     * @return \TencentAds\Model\LocalStoreBizInfoStruct|mixed
+     * @return \TencentAds\Model\LocalStoreBizInfoStructRsp|mixed
      */
     public function getLocalStoreBizInfo()
     {
@@ -374,7 +374,7 @@ class LocalStoresSearchInfoGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets localStoreBizInfo
      *
-     * @param \TencentAds\Model\LocalStoreBizInfoStruct|mixed $localStoreBizInfo localStoreBizInfo
+     * @param \TencentAds\Model\LocalStoreBizInfoStructRsp|mixed $localStoreBizInfo localStoreBizInfo
      *
      * @return $this
      */

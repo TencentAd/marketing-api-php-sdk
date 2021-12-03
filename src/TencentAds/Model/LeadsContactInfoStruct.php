@@ -72,7 +72,8 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
         'leadsEmail' => 'string',
         'leadsArea' => 'string',
         'bundle' => 'string',
-        'memo' => 'string'
+        'memo' => 'string',
+        'shopName' => 'string'
     ];
 
     /**
@@ -95,7 +96,8 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
         'leadsEmail' => null,
         'leadsArea' => null,
         'bundle' => null,
-        'memo' => null
+        'memo' => null,
+        'shopName' => null
     ];
 
     /**
@@ -139,7 +141,8 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
         'leadsEmail' => 'leads_email',
         'leadsArea' => 'leads_area',
         'bundle' => 'bundle',
-        'memo' => 'memo'
+        'memo' => 'memo',
+        'shopName' => 'shop_name'
     ];
 
     /**
@@ -162,7 +165,8 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
         'leadsEmail' => 'setLeadsEmail',
         'leadsArea' => 'setLeadsArea',
         'bundle' => 'setBundle',
-        'memo' => 'setMemo'
+        'memo' => 'setMemo',
+        'shopName' => 'setShopName'
     ];
 
     /**
@@ -185,7 +189,8 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
         'leadsEmail' => 'getLeadsEmail',
         'leadsArea' => 'getLeadsArea',
         'bundle' => 'getBundle',
-        'memo' => 'getMemo'
+        'memo' => 'getMemo',
+        'shopName' => 'getShopName'
     ];
 
     /**
@@ -263,6 +268,7 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
         $this->container['leadsArea'] = isset($data['leadsArea']) ? $data['leadsArea'] : null;
         $this->container['bundle'] = isset($data['bundle']) ? $data['bundle'] : null;
         $this->container['memo'] = isset($data['memo']) ? $data['memo'] : null;
+        $this->container['shopName'] = isset($data['shopName']) ? $data['shopName'] : null;
     }
 
     /**
@@ -645,6 +651,30 @@ class LeadsContactInfoStruct implements ModelInterface, ArrayAccess
     public function setMemo($memo)
     {
         $this->container['memo'] = $memo;
+
+        return $this;
+    }
+
+    /**
+     * Gets shopName
+     *
+     * @return string|mixed
+     */
+    public function getShopName()
+    {
+        return $this->container['shopName'];
+    }
+
+    /**
+     * Sets shopName
+     *
+     * @param string|mixed $shopName shopName
+     *
+     * @return $this
+     */
+    public function setShopName($shopName)
+    {
+        $this->container['shopName'] = $shopName;
 
         return $this;
     }
