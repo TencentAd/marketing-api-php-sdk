@@ -540,7 +540,15 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationAmountD7' => 'int',
         'miniGameAdMonetizationAmountD14' => 'int',
         'miniGamePayingArpuD1' => 'int',
-        'miniGamePayD1PlaRate' => 'double'
+        'miniGamePayD1PlaRate' => 'double',
+        'activeD3PayCount' => 'int',
+        'activeD7PayCount' => 'int',
+        'activeD14PayCount' => 'int',
+        'activeD30PayCount' => 'int',
+        'activeD7ClickPayRate' => 'double',
+        'activeD7ActivePayRate' => 'double',
+        'activeD7PayCost' => 'int',
+        'miniGameFirstDayPayingPlaRoi' => 'double'
     ];
 
     /**
@@ -1031,7 +1039,15 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationAmountD7' => 'int64',
         'miniGameAdMonetizationAmountD14' => 'int64',
         'miniGamePayingArpuD1' => 'int64',
-        'miniGamePayD1PlaRate' => 'double'
+        'miniGamePayD1PlaRate' => 'double',
+        'activeD3PayCount' => 'int64',
+        'activeD7PayCount' => 'int64',
+        'activeD14PayCount' => 'int64',
+        'activeD30PayCount' => 'int64',
+        'activeD7ClickPayRate' => 'double',
+        'activeD7ActivePayRate' => 'double',
+        'activeD7PayCost' => 'int64',
+        'miniGameFirstDayPayingPlaRoi' => 'double'
     ];
 
     /**
@@ -1543,7 +1559,15 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationAmountD7' => 'mini_game_ad_monetization_amount_d7',
         'miniGameAdMonetizationAmountD14' => 'mini_game_ad_monetization_amount_d14',
         'miniGamePayingArpuD1' => 'mini_game_paying_arpu_d1',
-        'miniGamePayD1PlaRate' => 'mini_game_pay_d1_pla_rate'
+        'miniGamePayD1PlaRate' => 'mini_game_pay_d1_pla_rate',
+        'activeD3PayCount' => 'active_d3_pay_count',
+        'activeD7PayCount' => 'active_d7_pay_count',
+        'activeD14PayCount' => 'active_d14_pay_count',
+        'activeD30PayCount' => 'active_d30_pay_count',
+        'activeD7ClickPayRate' => 'active_d7_click_pay_rate',
+        'activeD7ActivePayRate' => 'active_d7_active_pay_rate',
+        'activeD7PayCost' => 'active_d7_pay_cost',
+        'miniGameFirstDayPayingPlaRoi' => 'mini_game_first_day_paying_pla_roi'
     ];
 
     /**
@@ -2034,7 +2058,15 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationAmountD7' => 'setMiniGameAdMonetizationAmountD7',
         'miniGameAdMonetizationAmountD14' => 'setMiniGameAdMonetizationAmountD14',
         'miniGamePayingArpuD1' => 'setMiniGamePayingArpuD1',
-        'miniGamePayD1PlaRate' => 'setMiniGamePayD1PlaRate'
+        'miniGamePayD1PlaRate' => 'setMiniGamePayD1PlaRate',
+        'activeD3PayCount' => 'setActiveD3PayCount',
+        'activeD7PayCount' => 'setActiveD7PayCount',
+        'activeD14PayCount' => 'setActiveD14PayCount',
+        'activeD30PayCount' => 'setActiveD30PayCount',
+        'activeD7ClickPayRate' => 'setActiveD7ClickPayRate',
+        'activeD7ActivePayRate' => 'setActiveD7ActivePayRate',
+        'activeD7PayCost' => 'setActiveD7PayCost',
+        'miniGameFirstDayPayingPlaRoi' => 'setMiniGameFirstDayPayingPlaRoi'
     ];
 
     /**
@@ -2525,7 +2557,15 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationAmountD7' => 'getMiniGameAdMonetizationAmountD7',
         'miniGameAdMonetizationAmountD14' => 'getMiniGameAdMonetizationAmountD14',
         'miniGamePayingArpuD1' => 'getMiniGamePayingArpuD1',
-        'miniGamePayD1PlaRate' => 'getMiniGamePayD1PlaRate'
+        'miniGamePayD1PlaRate' => 'getMiniGamePayD1PlaRate',
+        'activeD3PayCount' => 'getActiveD3PayCount',
+        'activeD7PayCount' => 'getActiveD7PayCount',
+        'activeD14PayCount' => 'getActiveD14PayCount',
+        'activeD30PayCount' => 'getActiveD30PayCount',
+        'activeD7ClickPayRate' => 'getActiveD7ClickPayRate',
+        'activeD7ActivePayRate' => 'getActiveD7ActivePayRate',
+        'activeD7PayCost' => 'getActiveD7PayCost',
+        'miniGameFirstDayPayingPlaRoi' => 'getMiniGameFirstDayPayingPlaRoi'
     ];
 
     /**
@@ -3071,6 +3111,14 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGameAdMonetizationAmountD14'] = isset($data['miniGameAdMonetizationAmountD14']) ? $data['miniGameAdMonetizationAmountD14'] : null;
         $this->container['miniGamePayingArpuD1'] = isset($data['miniGamePayingArpuD1']) ? $data['miniGamePayingArpuD1'] : null;
         $this->container['miniGamePayD1PlaRate'] = isset($data['miniGamePayD1PlaRate']) ? $data['miniGamePayD1PlaRate'] : null;
+        $this->container['activeD3PayCount'] = isset($data['activeD3PayCount']) ? $data['activeD3PayCount'] : null;
+        $this->container['activeD7PayCount'] = isset($data['activeD7PayCount']) ? $data['activeD7PayCount'] : null;
+        $this->container['activeD14PayCount'] = isset($data['activeD14PayCount']) ? $data['activeD14PayCount'] : null;
+        $this->container['activeD30PayCount'] = isset($data['activeD30PayCount']) ? $data['activeD30PayCount'] : null;
+        $this->container['activeD7ClickPayRate'] = isset($data['activeD7ClickPayRate']) ? $data['activeD7ClickPayRate'] : null;
+        $this->container['activeD7ActivePayRate'] = isset($data['activeD7ActivePayRate']) ? $data['activeD7ActivePayRate'] : null;
+        $this->container['activeD7PayCost'] = isset($data['activeD7PayCost']) ? $data['activeD7PayCost'] : null;
+        $this->container['miniGameFirstDayPayingPlaRoi'] = isset($data['miniGameFirstDayPayingPlaRoi']) ? $data['miniGameFirstDayPayingPlaRoi'] : null;
     }
 
     /**
@@ -14685,6 +14733,198 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setMiniGamePayD1PlaRate($miniGamePayD1PlaRate)
     {
         $this->container['miniGamePayD1PlaRate'] = $miniGamePayD1PlaRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets activeD3PayCount
+     *
+     * @return int|mixed
+     */
+    public function getActiveD3PayCount()
+    {
+        return $this->container['activeD3PayCount'];
+    }
+
+    /**
+     * Sets activeD3PayCount
+     *
+     * @param int|mixed $activeD3PayCount activeD3PayCount
+     *
+     * @return $this
+     */
+    public function setActiveD3PayCount($activeD3PayCount)
+    {
+        $this->container['activeD3PayCount'] = $activeD3PayCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets activeD7PayCount
+     *
+     * @return int|mixed
+     */
+    public function getActiveD7PayCount()
+    {
+        return $this->container['activeD7PayCount'];
+    }
+
+    /**
+     * Sets activeD7PayCount
+     *
+     * @param int|mixed $activeD7PayCount activeD7PayCount
+     *
+     * @return $this
+     */
+    public function setActiveD7PayCount($activeD7PayCount)
+    {
+        $this->container['activeD7PayCount'] = $activeD7PayCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets activeD14PayCount
+     *
+     * @return int|mixed
+     */
+    public function getActiveD14PayCount()
+    {
+        return $this->container['activeD14PayCount'];
+    }
+
+    /**
+     * Sets activeD14PayCount
+     *
+     * @param int|mixed $activeD14PayCount activeD14PayCount
+     *
+     * @return $this
+     */
+    public function setActiveD14PayCount($activeD14PayCount)
+    {
+        $this->container['activeD14PayCount'] = $activeD14PayCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets activeD30PayCount
+     *
+     * @return int|mixed
+     */
+    public function getActiveD30PayCount()
+    {
+        return $this->container['activeD30PayCount'];
+    }
+
+    /**
+     * Sets activeD30PayCount
+     *
+     * @param int|mixed $activeD30PayCount activeD30PayCount
+     *
+     * @return $this
+     */
+    public function setActiveD30PayCount($activeD30PayCount)
+    {
+        $this->container['activeD30PayCount'] = $activeD30PayCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets activeD7ClickPayRate
+     *
+     * @return double|mixed
+     */
+    public function getActiveD7ClickPayRate()
+    {
+        return $this->container['activeD7ClickPayRate'];
+    }
+
+    /**
+     * Sets activeD7ClickPayRate
+     *
+     * @param double|mixed $activeD7ClickPayRate activeD7ClickPayRate
+     *
+     * @return $this
+     */
+    public function setActiveD7ClickPayRate($activeD7ClickPayRate)
+    {
+        $this->container['activeD7ClickPayRate'] = $activeD7ClickPayRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets activeD7ActivePayRate
+     *
+     * @return double|mixed
+     */
+    public function getActiveD7ActivePayRate()
+    {
+        return $this->container['activeD7ActivePayRate'];
+    }
+
+    /**
+     * Sets activeD7ActivePayRate
+     *
+     * @param double|mixed $activeD7ActivePayRate activeD7ActivePayRate
+     *
+     * @return $this
+     */
+    public function setActiveD7ActivePayRate($activeD7ActivePayRate)
+    {
+        $this->container['activeD7ActivePayRate'] = $activeD7ActivePayRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets activeD7PayCost
+     *
+     * @return int|mixed
+     */
+    public function getActiveD7PayCost()
+    {
+        return $this->container['activeD7PayCost'];
+    }
+
+    /**
+     * Sets activeD7PayCost
+     *
+     * @param int|mixed $activeD7PayCost activeD7PayCost
+     *
+     * @return $this
+     */
+    public function setActiveD7PayCost($activeD7PayCost)
+    {
+        $this->container['activeD7PayCost'] = $activeD7PayCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameFirstDayPayingPlaRoi
+     *
+     * @return double|mixed
+     */
+    public function getMiniGameFirstDayPayingPlaRoi()
+    {
+        return $this->container['miniGameFirstDayPayingPlaRoi'];
+    }
+
+    /**
+     * Sets miniGameFirstDayPayingPlaRoi
+     *
+     * @param double|mixed $miniGameFirstDayPayingPlaRoi miniGameFirstDayPayingPlaRoi
+     *
+     * @return $this
+     */
+    public function setMiniGameFirstDayPayingPlaRoi($miniGameFirstDayPayingPlaRoi)
+    {
+        $this->container['miniGameFirstDayPayingPlaRoi'] = $miniGameFirstDayPayingPlaRoi;
 
         return $this;
     }

@@ -164,7 +164,8 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'firstMonthInsuranceFee' => 'double',
         'maxQuota' => 'double',
         'annualizedRateOfReturn' => 'double',
-        'riskType' => '\TencentAds\Model\RiskTypeStatus'
+        'riskType' => '\TencentAds\Model\RiskTypeStatus',
+        'artist' => 'string[]'
     ];
 
     /**
@@ -279,7 +280,8 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'firstMonthInsuranceFee' => 'double',
         'maxQuota' => 'double',
         'annualizedRateOfReturn' => 'double',
-        'riskType' => null
+        'riskType' => null,
+        'artist' => null
     ];
 
     /**
@@ -415,7 +417,8 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'firstMonthInsuranceFee' => 'first_month_insurance_fee',
         'maxQuota' => 'max_quota',
         'annualizedRateOfReturn' => 'annualized_rate_of_return',
-        'riskType' => 'risk_type'
+        'riskType' => 'risk_type',
+        'artist' => 'artist'
     ];
 
     /**
@@ -530,7 +533,8 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'firstMonthInsuranceFee' => 'setFirstMonthInsuranceFee',
         'maxQuota' => 'setMaxQuota',
         'annualizedRateOfReturn' => 'setAnnualizedRateOfReturn',
-        'riskType' => 'setRiskType'
+        'riskType' => 'setRiskType',
+        'artist' => 'setArtist'
     ];
 
     /**
@@ -645,7 +649,8 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'firstMonthInsuranceFee' => 'getFirstMonthInsuranceFee',
         'maxQuota' => 'getMaxQuota',
         'annualizedRateOfReturn' => 'getAnnualizedRateOfReturn',
-        'riskType' => 'getRiskType'
+        'riskType' => 'getRiskType',
+        'artist' => 'getArtist'
     ];
 
     /**
@@ -815,6 +820,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         $this->container['maxQuota'] = isset($data['maxQuota']) ? $data['maxQuota'] : null;
         $this->container['annualizedRateOfReturn'] = isset($data['annualizedRateOfReturn']) ? $data['annualizedRateOfReturn'] : null;
         $this->container['riskType'] = isset($data['riskType']) ? $data['riskType'] : null;
+        $this->container['artist'] = isset($data['artist']) ? $data['artist'] : null;
     }
 
     /**
@@ -3405,6 +3411,30 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     public function setRiskType($riskType)
     {
         $this->container['riskType'] = $riskType;
+
+        return $this;
+    }
+
+    /**
+     * Gets artist
+     *
+     * @return string[]|mixed
+     */
+    public function getArtist()
+    {
+        return $this->container['artist'];
+    }
+
+    /**
+     * Sets artist
+     *
+     * @param string[]|mixed $artist artist
+     *
+     * @return $this
+     */
+    public function setArtist($artist)
+    {
+        $this->container['artist'] = $artist;
 
         return $this;
     }
