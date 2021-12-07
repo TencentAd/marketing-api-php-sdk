@@ -129,6 +129,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'shopImageStruct' => '\TencentAds\Model\AdCreativeShopImageStruct',
         'chosenButton' => '\TencentAds\Model\ChosenButton',
         'livingDescStruct' => '\TencentAds\Model\AdCreativeLivingDescStruct',
+        'floatingZoneStruct' => '\TencentAds\Model\FloatingZone',
         'countdownExpiringTimestamp' => 'int'
     ];
 
@@ -209,6 +210,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'shopImageStruct' => null,
         'chosenButton' => null,
         'livingDescStruct' => null,
+        'floatingZoneStruct' => null,
         'countdownExpiringTimestamp' => 'int64'
     ];
 
@@ -310,6 +312,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'shopImageStruct' => 'shop_image_struct',
         'chosenButton' => 'chosen_button',
         'livingDescStruct' => 'living_desc_struct',
+        'floatingZoneStruct' => 'floating_zone_struct',
         'countdownExpiringTimestamp' => 'countdown_expiring_timestamp'
     ];
 
@@ -390,6 +393,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'shopImageStruct' => 'setShopImageStruct',
         'chosenButton' => 'setChosenButton',
         'livingDescStruct' => 'setLivingDescStruct',
+        'floatingZoneStruct' => 'setFloatingZoneStruct',
         'countdownExpiringTimestamp' => 'setCountdownExpiringTimestamp'
     ];
 
@@ -470,6 +474,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'shopImageStruct' => 'getShopImageStruct',
         'chosenButton' => 'getChosenButton',
         'livingDescStruct' => 'getLivingDescStruct',
+        'floatingZoneStruct' => 'getFloatingZoneStruct',
         'countdownExpiringTimestamp' => 'getCountdownExpiringTimestamp'
     ];
 
@@ -604,6 +609,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         $this->container['shopImageStruct'] = isset($data['shopImageStruct']) ? $data['shopImageStruct'] : null;
         $this->container['chosenButton'] = isset($data['chosenButton']) ? $data['chosenButton'] : null;
         $this->container['livingDescStruct'] = isset($data['livingDescStruct']) ? $data['livingDescStruct'] : null;
+        $this->container['floatingZoneStruct'] = isset($data['floatingZoneStruct']) ? $data['floatingZoneStruct'] : null;
         $this->container['countdownExpiringTimestamp'] = isset($data['countdownExpiringTimestamp']) ? $data['countdownExpiringTimestamp'] : null;
     }
 
@@ -2331,6 +2337,30 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
     public function setLivingDescStruct($livingDescStruct)
     {
         $this->container['livingDescStruct'] = $livingDescStruct;
+
+        return $this;
+    }
+
+    /**
+     * Gets floatingZoneStruct
+     *
+     * @return \TencentAds\Model\FloatingZone|mixed
+     */
+    public function getFloatingZoneStruct()
+    {
+        return $this->container['floatingZoneStruct'];
+    }
+
+    /**
+     * Sets floatingZoneStruct
+     *
+     * @param \TencentAds\Model\FloatingZone|mixed $floatingZoneStruct floatingZoneStruct
+     *
+     * @return $this
+     */
+    public function setFloatingZoneStruct($floatingZoneStruct)
+    {
+        $this->container['floatingZoneStruct'] = $floatingZoneStruct;
 
         return $this;
     }

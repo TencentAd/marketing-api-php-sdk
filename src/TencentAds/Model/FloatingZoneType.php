@@ -47,6 +47,7 @@ class FloatingZoneType
     const UNKNOWN = 'FLOATING_ZONE_TYPE_UNKNOWN';
     const IMAGE_TEXT = 'FLOATING_ZONE_TYPE_IMAGE_TEXT';
     const SINGLE_IMAGE = 'FLOATING_ZONE_TYPE_SINGLE_IMAGE';
+    const MULTI_BUTTON = 'FLOATING_ZONE_TYPE_MULTI_BUTTON';
     
     /**
      * Gets allowable values of the enum
@@ -58,6 +59,7 @@ class FloatingZoneType
             self::UNKNOWN,
             self::IMAGE_TEXT,
             self::SINGLE_IMAGE,
+            self::MULTI_BUTTON,
         ];
     }
 }

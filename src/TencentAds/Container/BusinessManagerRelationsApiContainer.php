@@ -40,8 +40,9 @@ class BusinessManagerRelationsApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $advertiserType = isset($params['advertiser_type']) ? $params['advertiser_type'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->businessManagerRelationsGet($page, $pageSize, $fields);
+            $response = $this->apiInstance->businessManagerRelationsGet($page, $pageSize, $advertiserType, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -58,8 +59,9 @@ class BusinessManagerRelationsApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $advertiserType = isset($params['advertiser_type']) ? $params['advertiser_type'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->businessManagerRelationsGetAsync($page, $pageSize, $fields);
+            $response = $this->apiInstance->businessManagerRelationsGetAsync($page, $pageSize, $advertiserType, $fields);
             return $response;
         });
     }

@@ -94,15 +94,16 @@ class BusinessManagerRelationsApi
      *
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
+     * @param  int|mixed $advertiserType advertiserType (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\BusinessManagerRelationsGetResponse|mixed
      */
-    public function businessManagerRelationsGet($page = null, $pageSize = null, $fields = null)
+    public function businessManagerRelationsGet($page = null, $pageSize = null, $advertiserType = null, $fields = null)
     {
-        list($response) = $this->businessManagerRelationsGetWithHttpInfo($page, $pageSize, $fields);
+        list($response) = $this->businessManagerRelationsGetWithHttpInfo($page, $pageSize, $advertiserType, $fields);
         return $response;
     }
 
@@ -113,16 +114,17 @@ class BusinessManagerRelationsApi
      *
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int|mixed $advertiserType (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\BusinessManagerRelationsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function businessManagerRelationsGetWithHttpInfo($page = null, $pageSize = null, $fields = null)
+    public function businessManagerRelationsGetWithHttpInfo($page = null, $pageSize = null, $advertiserType = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\BusinessManagerRelationsGetResponse';
-        $request = $this->businessManagerRelationsGetRequest($page, $pageSize, $fields);
+        $request = $this->businessManagerRelationsGetRequest($page, $pageSize, $advertiserType, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -190,14 +192,15 @@ class BusinessManagerRelationsApi
      *
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int|mixed $advertiserType (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function businessManagerRelationsGetAsync($page = null, $pageSize = null, $fields = null)
+    public function businessManagerRelationsGetAsync($page = null, $pageSize = null, $advertiserType = null, $fields = null)
     {
-        return $this->businessManagerRelationsGetAsyncWithHttpInfo($page, $pageSize, $fields)
+        return $this->businessManagerRelationsGetAsyncWithHttpInfo($page, $pageSize, $advertiserType, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -212,15 +215,16 @@ class BusinessManagerRelationsApi
      *
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int|mixed $advertiserType (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function businessManagerRelationsGetAsyncWithHttpInfo($page = null, $pageSize = null, $fields = null)
+    public function businessManagerRelationsGetAsyncWithHttpInfo($page = null, $pageSize = null, $advertiserType = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\BusinessManagerRelationsGetResponse';
-        $request = $this->businessManagerRelationsGetRequest($page, $pageSize, $fields);
+        $request = $this->businessManagerRelationsGetRequest($page, $pageSize, $advertiserType, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -264,12 +268,13 @@ class BusinessManagerRelationsApi
      *
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int|mixed $advertiserType (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function businessManagerRelationsGetRequest($page = null, $pageSize = null, $fields = null)
+    protected function businessManagerRelationsGetRequest($page = null, $pageSize = null, $advertiserType = null, $fields = null)
     {
 
         $resourcePath = '/business_manager_relations/get';
@@ -286,6 +291,10 @@ class BusinessManagerRelationsApi
         // query params
         if ($pageSize !== null) {
             $queryParams['page_size'] = ObjectSerializer::toQueryValue($pageSize);
+        }
+        // query params
+        if ($advertiserType !== null) {
+            $queryParams['advertiser_type'] = ObjectSerializer::toQueryValue($advertiserType);
         }
         // query params
         if (is_array($fields)) {

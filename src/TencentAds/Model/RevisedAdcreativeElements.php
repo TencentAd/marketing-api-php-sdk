@@ -104,7 +104,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'headLine' => 'string',
         'shopImageStruct' => '\TencentAds\Model\AdCreativeShopImageStruct',
         'chosenButton' => '\TencentAds\Model\ChosenButton',
-        'livingDescStruct' => '\TencentAds\Model\AdCreativeLivingDescStruct'
+        'livingDescStruct' => '\TencentAds\Model\AdCreativeLivingDescStruct',
+        'floatingZoneStruct' => '\TencentAds\Model\FloatingZone'
     ];
 
     /**
@@ -159,7 +160,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'headLine' => null,
         'shopImageStruct' => null,
         'chosenButton' => null,
-        'livingDescStruct' => null
+        'livingDescStruct' => null,
+        'floatingZoneStruct' => null
     ];
 
     /**
@@ -235,7 +237,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'headLine' => 'head_line',
         'shopImageStruct' => 'shop_image_struct',
         'chosenButton' => 'chosen_button',
-        'livingDescStruct' => 'living_desc_struct'
+        'livingDescStruct' => 'living_desc_struct',
+        'floatingZoneStruct' => 'floating_zone_struct'
     ];
 
     /**
@@ -290,7 +293,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'headLine' => 'setHeadLine',
         'shopImageStruct' => 'setShopImageStruct',
         'chosenButton' => 'setChosenButton',
-        'livingDescStruct' => 'setLivingDescStruct'
+        'livingDescStruct' => 'setLivingDescStruct',
+        'floatingZoneStruct' => 'setFloatingZoneStruct'
     ];
 
     /**
@@ -345,7 +349,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'headLine' => 'getHeadLine',
         'shopImageStruct' => 'getShopImageStruct',
         'chosenButton' => 'getChosenButton',
-        'livingDescStruct' => 'getLivingDescStruct'
+        'livingDescStruct' => 'getLivingDescStruct',
+        'floatingZoneStruct' => 'getFloatingZoneStruct'
     ];
 
     /**
@@ -455,6 +460,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         $this->container['shopImageStruct'] = isset($data['shopImageStruct']) ? $data['shopImageStruct'] : null;
         $this->container['chosenButton'] = isset($data['chosenButton']) ? $data['chosenButton'] : null;
         $this->container['livingDescStruct'] = isset($data['livingDescStruct']) ? $data['livingDescStruct'] : null;
+        $this->container['floatingZoneStruct'] = isset($data['floatingZoneStruct']) ? $data['floatingZoneStruct'] : null;
     }
 
     /**
@@ -1605,6 +1611,30 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     public function setLivingDescStruct($livingDescStruct)
     {
         $this->container['livingDescStruct'] = $livingDescStruct;
+
+        return $this;
+    }
+
+    /**
+     * Gets floatingZoneStruct
+     *
+     * @return \TencentAds\Model\FloatingZone|mixed
+     */
+    public function getFloatingZoneStruct()
+    {
+        return $this->container['floatingZoneStruct'];
+    }
+
+    /**
+     * Sets floatingZoneStruct
+     *
+     * @param \TencentAds\Model\FloatingZone|mixed $floatingZoneStruct floatingZoneStruct
+     *
+     * @return $this
+     */
+    public function setFloatingZoneStruct($floatingZoneStruct)
+    {
+        $this->container['floatingZoneStruct'] = $floatingZoneStruct;
 
         return $this;
     }
