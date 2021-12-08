@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * LinkUrlLinkNameType Class Doc Comment
  *
  * @category Class
- * @description 链接名称类型
+ * @description 转化引导文案
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

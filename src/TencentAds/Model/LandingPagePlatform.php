@@ -59,6 +59,7 @@ class LandingPagePlatform
     const QQ_BROWSER = 'LANDING_PAGE_PLATFORM_QQ_BROWSER';
     const PLAY = 'LANDING_PAGE_PLATFORM_PLAY';
     const YUEBAO = 'LANDING_PAGE_PLATFORM_YUEBAO';
+    const W_EIMOB = 'LANDING_PAGE_PLATFORM_wEIMOB';
     
     /**
      * Gets allowable values of the enum
@@ -82,6 +83,7 @@ class LandingPagePlatform
             self::QQ_BROWSER,
             self::PLAY,
             self::YUEBAO,
+            self::W_EIMOB,
         ];
     }
 }

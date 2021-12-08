@@ -104,6 +104,14 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'endPage' => '\TencentAds\Model\AdCreativeEndPage',
         'shopImage' => 'string',
         'headLine' => 'string',
+        'shopImageStruct' => '\TencentAds\Model\AdCreativeShopImageStruct',
+        'chosenButton' => '\TencentAds\Model\ChosenButton',
+        'livingDescStruct' => '\TencentAds\Model\AdCreativeLivingDescStruct',
+        'floatingZoneStruct' => '\TencentAds\Model\FloatingZone',
+        'leftButton' => 'string',
+        'rightButton' => 'string',
+        'leftCanvas' => 'string',
+        'rightCanvas' => 'string',
         'countdownExpiringTimestamp' => 'int'
     ];
 
@@ -159,6 +167,14 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'endPage' => null,
         'shopImage' => null,
         'headLine' => null,
+        'shopImageStruct' => null,
+        'chosenButton' => null,
+        'livingDescStruct' => null,
+        'floatingZoneStruct' => null,
+        'leftButton' => null,
+        'rightButton' => null,
+        'leftCanvas' => null,
+        'rightCanvas' => null,
         'countdownExpiringTimestamp' => 'int64'
     ];
 
@@ -235,6 +251,14 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'endPage' => 'end_page',
         'shopImage' => 'shop_image',
         'headLine' => 'head_line',
+        'shopImageStruct' => 'shop_image_struct',
+        'chosenButton' => 'chosen_button',
+        'livingDescStruct' => 'living_desc_struct',
+        'floatingZoneStruct' => 'floating_zone_struct',
+        'leftButton' => 'left_button',
+        'rightButton' => 'right_button',
+        'leftCanvas' => 'left_canvas',
+        'rightCanvas' => 'right_canvas',
         'countdownExpiringTimestamp' => 'countdown_expiring_timestamp'
     ];
 
@@ -290,6 +314,14 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'endPage' => 'setEndPage',
         'shopImage' => 'setShopImage',
         'headLine' => 'setHeadLine',
+        'shopImageStruct' => 'setShopImageStruct',
+        'chosenButton' => 'setChosenButton',
+        'livingDescStruct' => 'setLivingDescStruct',
+        'floatingZoneStruct' => 'setFloatingZoneStruct',
+        'leftButton' => 'setLeftButton',
+        'rightButton' => 'setRightButton',
+        'leftCanvas' => 'setLeftCanvas',
+        'rightCanvas' => 'setRightCanvas',
         'countdownExpiringTimestamp' => 'setCountdownExpiringTimestamp'
     ];
 
@@ -345,6 +377,14 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'endPage' => 'getEndPage',
         'shopImage' => 'getShopImage',
         'headLine' => 'getHeadLine',
+        'shopImageStruct' => 'getShopImageStruct',
+        'chosenButton' => 'getChosenButton',
+        'livingDescStruct' => 'getLivingDescStruct',
+        'floatingZoneStruct' => 'getFloatingZoneStruct',
+        'leftButton' => 'getLeftButton',
+        'rightButton' => 'getRightButton',
+        'leftCanvas' => 'getLeftCanvas',
+        'rightCanvas' => 'getRightCanvas',
         'countdownExpiringTimestamp' => 'getCountdownExpiringTimestamp'
     ];
 
@@ -454,6 +494,14 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         $this->container['endPage'] = isset($data['endPage']) ? $data['endPage'] : null;
         $this->container['shopImage'] = isset($data['shopImage']) ? $data['shopImage'] : null;
         $this->container['headLine'] = isset($data['headLine']) ? $data['headLine'] : null;
+        $this->container['shopImageStruct'] = isset($data['shopImageStruct']) ? $data['shopImageStruct'] : null;
+        $this->container['chosenButton'] = isset($data['chosenButton']) ? $data['chosenButton'] : null;
+        $this->container['livingDescStruct'] = isset($data['livingDescStruct']) ? $data['livingDescStruct'] : null;
+        $this->container['floatingZoneStruct'] = isset($data['floatingZoneStruct']) ? $data['floatingZoneStruct'] : null;
+        $this->container['leftButton'] = isset($data['leftButton']) ? $data['leftButton'] : null;
+        $this->container['rightButton'] = isset($data['rightButton']) ? $data['rightButton'] : null;
+        $this->container['leftCanvas'] = isset($data['leftCanvas']) ? $data['leftCanvas'] : null;
+        $this->container['rightCanvas'] = isset($data['rightCanvas']) ? $data['rightCanvas'] : null;
         $this->container['countdownExpiringTimestamp'] = isset($data['countdownExpiringTimestamp']) ? $data['countdownExpiringTimestamp'] : null;
     }
 
@@ -1581,6 +1629,198 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
     public function setHeadLine($headLine)
     {
         $this->container['headLine'] = $headLine;
+
+        return $this;
+    }
+
+    /**
+     * Gets shopImageStruct
+     *
+     * @return \TencentAds\Model\AdCreativeShopImageStruct|mixed
+     */
+    public function getShopImageStruct()
+    {
+        return $this->container['shopImageStruct'];
+    }
+
+    /**
+     * Sets shopImageStruct
+     *
+     * @param \TencentAds\Model\AdCreativeShopImageStruct|mixed $shopImageStruct shopImageStruct
+     *
+     * @return $this
+     */
+    public function setShopImageStruct($shopImageStruct)
+    {
+        $this->container['shopImageStruct'] = $shopImageStruct;
+
+        return $this;
+    }
+
+    /**
+     * Gets chosenButton
+     *
+     * @return \TencentAds\Model\ChosenButton|mixed
+     */
+    public function getChosenButton()
+    {
+        return $this->container['chosenButton'];
+    }
+
+    /**
+     * Sets chosenButton
+     *
+     * @param \TencentAds\Model\ChosenButton|mixed $chosenButton chosenButton
+     *
+     * @return $this
+     */
+    public function setChosenButton($chosenButton)
+    {
+        $this->container['chosenButton'] = $chosenButton;
+
+        return $this;
+    }
+
+    /**
+     * Gets livingDescStruct
+     *
+     * @return \TencentAds\Model\AdCreativeLivingDescStruct|mixed
+     */
+    public function getLivingDescStruct()
+    {
+        return $this->container['livingDescStruct'];
+    }
+
+    /**
+     * Sets livingDescStruct
+     *
+     * @param \TencentAds\Model\AdCreativeLivingDescStruct|mixed $livingDescStruct livingDescStruct
+     *
+     * @return $this
+     */
+    public function setLivingDescStruct($livingDescStruct)
+    {
+        $this->container['livingDescStruct'] = $livingDescStruct;
+
+        return $this;
+    }
+
+    /**
+     * Gets floatingZoneStruct
+     *
+     * @return \TencentAds\Model\FloatingZone|mixed
+     */
+    public function getFloatingZoneStruct()
+    {
+        return $this->container['floatingZoneStruct'];
+    }
+
+    /**
+     * Sets floatingZoneStruct
+     *
+     * @param \TencentAds\Model\FloatingZone|mixed $floatingZoneStruct floatingZoneStruct
+     *
+     * @return $this
+     */
+    public function setFloatingZoneStruct($floatingZoneStruct)
+    {
+        $this->container['floatingZoneStruct'] = $floatingZoneStruct;
+
+        return $this;
+    }
+
+    /**
+     * Gets leftButton
+     *
+     * @return string|mixed
+     */
+    public function getLeftButton()
+    {
+        return $this->container['leftButton'];
+    }
+
+    /**
+     * Sets leftButton
+     *
+     * @param string|mixed $leftButton leftButton
+     *
+     * @return $this
+     */
+    public function setLeftButton($leftButton)
+    {
+        $this->container['leftButton'] = $leftButton;
+
+        return $this;
+    }
+
+    /**
+     * Gets rightButton
+     *
+     * @return string|mixed
+     */
+    public function getRightButton()
+    {
+        return $this->container['rightButton'];
+    }
+
+    /**
+     * Sets rightButton
+     *
+     * @param string|mixed $rightButton rightButton
+     *
+     * @return $this
+     */
+    public function setRightButton($rightButton)
+    {
+        $this->container['rightButton'] = $rightButton;
+
+        return $this;
+    }
+
+    /**
+     * Gets leftCanvas
+     *
+     * @return string|mixed
+     */
+    public function getLeftCanvas()
+    {
+        return $this->container['leftCanvas'];
+    }
+
+    /**
+     * Sets leftCanvas
+     *
+     * @param string|mixed $leftCanvas leftCanvas
+     *
+     * @return $this
+     */
+    public function setLeftCanvas($leftCanvas)
+    {
+        $this->container['leftCanvas'] = $leftCanvas;
+
+        return $this;
+    }
+
+    /**
+     * Gets rightCanvas
+     *
+     * @return string|mixed
+     */
+    public function getRightCanvas()
+    {
+        return $this->container['rightCanvas'];
+    }
+
+    /**
+     * Sets rightCanvas
+     *
+     * @param string|mixed $rightCanvas rightCanvas
+     *
+     * @return $this
+     */
+    public function setRightCanvas($rightCanvas)
+    {
+        $this->container['rightCanvas'] = $rightCanvas;
 
         return $this;
     }

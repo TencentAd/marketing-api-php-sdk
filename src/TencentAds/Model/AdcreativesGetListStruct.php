@@ -102,6 +102,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
         'enableBreakthroughSiteset' => 'bool',
         'creativeTemplateVersionType' => '\TencentAds\Model\CreativeTemplateVersionType',
+        'industryLabel' => 'string',
         'adcreativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsReadMp'
     ];
@@ -156,6 +157,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'appGiftPackCode' => null,
         'enableBreakthroughSiteset' => null,
         'creativeTemplateVersionType' => null,
+        'industryLabel' => null,
         'adcreativeTemplateId' => 'int64',
         'adcreativeElements' => null
     ];
@@ -231,6 +233,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'appGiftPackCode' => 'app_gift_pack_code',
         'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
         'creativeTemplateVersionType' => 'creative_template_version_type',
+        'industryLabel' => 'industry_label',
         'adcreativeTemplateId' => 'adcreative_template_id',
         'adcreativeElements' => 'adcreative_elements'
     ];
@@ -285,6 +288,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'appGiftPackCode' => 'setAppGiftPackCode',
         'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
         'creativeTemplateVersionType' => 'setCreativeTemplateVersionType',
+        'industryLabel' => 'setIndustryLabel',
         'adcreativeTemplateId' => 'setAdcreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements'
     ];
@@ -339,6 +343,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'appGiftPackCode' => 'getAppGiftPackCode',
         'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
         'creativeTemplateVersionType' => 'getCreativeTemplateVersionType',
+        'industryLabel' => 'getIndustryLabel',
         'adcreativeTemplateId' => 'getAdcreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements'
     ];
@@ -447,6 +452,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
         $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
         $this->container['creativeTemplateVersionType'] = isset($data['creativeTemplateVersionType']) ? $data['creativeTemplateVersionType'] : null;
+        $this->container['industryLabel'] = isset($data['industryLabel']) ? $data['industryLabel'] : null;
         $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
     }
@@ -1527,6 +1533,30 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setCreativeTemplateVersionType($creativeTemplateVersionType)
     {
         $this->container['creativeTemplateVersionType'] = $creativeTemplateVersionType;
+
+        return $this;
+    }
+
+    /**
+     * Gets industryLabel
+     *
+     * @return string|mixed
+     */
+    public function getIndustryLabel()
+    {
+        return $this->container['industryLabel'];
+    }
+
+    /**
+     * Sets industryLabel
+     *
+     * @param string|mixed $industryLabel industryLabel
+     *
+     * @return $this
+     */
+    public function setIndustryLabel($industryLabel)
+    {
+        $this->container['industryLabel'] = $industryLabel;
 
         return $this;
     }

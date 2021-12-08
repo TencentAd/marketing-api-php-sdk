@@ -100,6 +100,10 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'shopImageStruct' => '\TencentAds\Model\AdCreativeShopImageStruct',
         'chosenButton' => '\TencentAds\Model\ChosenButton',
         'livingDescStruct' => '\TencentAds\Model\AdCreativeLivingDescStruct',
+        'leftButton' => 'string',
+        'rightButton' => 'string',
+        'leftCanvas' => 'string',
+        'rightCanvas' => 'string',
         'floatingZoneStruct' => '\TencentAds\Model\FloatingZone',
         'countdownExpiringTimestamp' => 'int'
     ];
@@ -152,6 +156,10 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'shopImageStruct' => null,
         'chosenButton' => null,
         'livingDescStruct' => null,
+        'leftButton' => null,
+        'rightButton' => null,
+        'leftCanvas' => null,
+        'rightCanvas' => null,
         'floatingZoneStruct' => null,
         'countdownExpiringTimestamp' => 'int64'
     ];
@@ -225,6 +233,10 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'shopImageStruct' => 'shop_image_struct',
         'chosenButton' => 'chosen_button',
         'livingDescStruct' => 'living_desc_struct',
+        'leftButton' => 'left_button',
+        'rightButton' => 'right_button',
+        'leftCanvas' => 'left_canvas',
+        'rightCanvas' => 'right_canvas',
         'floatingZoneStruct' => 'floating_zone_struct',
         'countdownExpiringTimestamp' => 'countdown_expiring_timestamp'
     ];
@@ -277,6 +289,10 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'shopImageStruct' => 'setShopImageStruct',
         'chosenButton' => 'setChosenButton',
         'livingDescStruct' => 'setLivingDescStruct',
+        'leftButton' => 'setLeftButton',
+        'rightButton' => 'setRightButton',
+        'leftCanvas' => 'setLeftCanvas',
+        'rightCanvas' => 'setRightCanvas',
         'floatingZoneStruct' => 'setFloatingZoneStruct',
         'countdownExpiringTimestamp' => 'setCountdownExpiringTimestamp'
     ];
@@ -329,6 +345,10 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'shopImageStruct' => 'getShopImageStruct',
         'chosenButton' => 'getChosenButton',
         'livingDescStruct' => 'getLivingDescStruct',
+        'leftButton' => 'getLeftButton',
+        'rightButton' => 'getRightButton',
+        'leftCanvas' => 'getLeftCanvas',
+        'rightCanvas' => 'getRightCanvas',
         'floatingZoneStruct' => 'getFloatingZoneStruct',
         'countdownExpiringTimestamp' => 'getCountdownExpiringTimestamp'
     ];
@@ -435,6 +455,10 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         $this->container['shopImageStruct'] = isset($data['shopImageStruct']) ? $data['shopImageStruct'] : null;
         $this->container['chosenButton'] = isset($data['chosenButton']) ? $data['chosenButton'] : null;
         $this->container['livingDescStruct'] = isset($data['livingDescStruct']) ? $data['livingDescStruct'] : null;
+        $this->container['leftButton'] = isset($data['leftButton']) ? $data['leftButton'] : null;
+        $this->container['rightButton'] = isset($data['rightButton']) ? $data['rightButton'] : null;
+        $this->container['leftCanvas'] = isset($data['leftCanvas']) ? $data['leftCanvas'] : null;
+        $this->container['rightCanvas'] = isset($data['rightCanvas']) ? $data['rightCanvas'] : null;
         $this->container['floatingZoneStruct'] = isset($data['floatingZoneStruct']) ? $data['floatingZoneStruct'] : null;
         $this->container['countdownExpiringTimestamp'] = isset($data['countdownExpiringTimestamp']) ? $data['countdownExpiringTimestamp'] : null;
     }
@@ -1467,6 +1491,102 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
     public function setLivingDescStruct($livingDescStruct)
     {
         $this->container['livingDescStruct'] = $livingDescStruct;
+
+        return $this;
+    }
+
+    /**
+     * Gets leftButton
+     *
+     * @return string|mixed
+     */
+    public function getLeftButton()
+    {
+        return $this->container['leftButton'];
+    }
+
+    /**
+     * Sets leftButton
+     *
+     * @param string|mixed $leftButton leftButton
+     *
+     * @return $this
+     */
+    public function setLeftButton($leftButton)
+    {
+        $this->container['leftButton'] = $leftButton;
+
+        return $this;
+    }
+
+    /**
+     * Gets rightButton
+     *
+     * @return string|mixed
+     */
+    public function getRightButton()
+    {
+        return $this->container['rightButton'];
+    }
+
+    /**
+     * Sets rightButton
+     *
+     * @param string|mixed $rightButton rightButton
+     *
+     * @return $this
+     */
+    public function setRightButton($rightButton)
+    {
+        $this->container['rightButton'] = $rightButton;
+
+        return $this;
+    }
+
+    /**
+     * Gets leftCanvas
+     *
+     * @return string|mixed
+     */
+    public function getLeftCanvas()
+    {
+        return $this->container['leftCanvas'];
+    }
+
+    /**
+     * Sets leftCanvas
+     *
+     * @param string|mixed $leftCanvas leftCanvas
+     *
+     * @return $this
+     */
+    public function setLeftCanvas($leftCanvas)
+    {
+        $this->container['leftCanvas'] = $leftCanvas;
+
+        return $this;
+    }
+
+    /**
+     * Gets rightCanvas
+     *
+     * @return string|mixed
+     */
+    public function getRightCanvas()
+    {
+        return $this->container['rightCanvas'];
+    }
+
+    /**
+     * Sets rightCanvas
+     *
+     * @param string|mixed $rightCanvas rightCanvas
+     *
+     * @return $this
+     */
+    public function setRightCanvas($rightCanvas)
+    {
+        $this->container['rightCanvas'] = $rightCanvas;
 
         return $this;
     }

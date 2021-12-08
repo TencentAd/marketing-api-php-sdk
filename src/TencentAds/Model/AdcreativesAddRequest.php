@@ -92,6 +92,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'barrageList' => '\TencentAds\Model\BarrageListCreateStruct[]',
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
         'enableBreakthroughSiteset' => 'bool',
+        'industryLabel' => 'string',
         'accountId' => 'int',
         'adcreativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsMp'
@@ -138,6 +139,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'barrageList' => null,
         'appGiftPackCode' => null,
         'enableBreakthroughSiteset' => null,
+        'industryLabel' => null,
         'accountId' => 'int64',
         'adcreativeTemplateId' => 'int64',
         'adcreativeElements' => null
@@ -205,6 +207,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'barrageList' => 'barrage_list',
         'appGiftPackCode' => 'app_gift_pack_code',
         'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
+        'industryLabel' => 'industry_label',
         'accountId' => 'account_id',
         'adcreativeTemplateId' => 'adcreative_template_id',
         'adcreativeElements' => 'adcreative_elements'
@@ -251,6 +254,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'barrageList' => 'setBarrageList',
         'appGiftPackCode' => 'setAppGiftPackCode',
         'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
+        'industryLabel' => 'setIndustryLabel',
         'accountId' => 'setAccountId',
         'adcreativeTemplateId' => 'setAdcreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements'
@@ -297,6 +301,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'barrageList' => 'getBarrageList',
         'appGiftPackCode' => 'getAppGiftPackCode',
         'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
+        'industryLabel' => 'getIndustryLabel',
         'accountId' => 'getAccountId',
         'adcreativeTemplateId' => 'getAdcreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements'
@@ -397,6 +402,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         $this->container['barrageList'] = isset($data['barrageList']) ? $data['barrageList'] : null;
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
         $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
+        $this->container['industryLabel'] = isset($data['industryLabel']) ? $data['industryLabel'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
@@ -1262,6 +1268,30 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     public function setEnableBreakthroughSiteset($enableBreakthroughSiteset)
     {
         $this->container['enableBreakthroughSiteset'] = $enableBreakthroughSiteset;
+
+        return $this;
+    }
+
+    /**
+     * Gets industryLabel
+     *
+     * @return string|mixed
+     */
+    public function getIndustryLabel()
+    {
+        return $this->container['industryLabel'];
+    }
+
+    /**
+     * Sets industryLabel
+     *
+     * @param string|mixed $industryLabel industryLabel
+     *
+     * @return $this
+     */
+    public function setIndustryLabel($industryLabel)
+    {
+        $this->container['industryLabel'] = $industryLabel;
 
         return $this;
     }

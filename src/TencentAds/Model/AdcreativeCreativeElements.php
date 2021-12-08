@@ -100,7 +100,10 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'shopImageStruct' => '\TencentAds\Model\AdCreativeShopImageStruct',
         'chosenButton' => '\TencentAds\Model\ChosenButton',
         'livingDescStruct' => '\TencentAds\Model\AdCreativeLivingDescStruct',
-        'floatingZoneStruct' => '\TencentAds\Model\FloatingZone',
+        'leftButton' => 'string',
+        'rightButton' => 'string',
+        'leftCanvas' => 'string',
+        'rightCanvas' => 'string',
         'countdownExpiringTimestamp' => 'int'
     ];
 
@@ -152,7 +155,10 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'shopImageStruct' => null,
         'chosenButton' => null,
         'livingDescStruct' => null,
-        'floatingZoneStruct' => null,
+        'leftButton' => null,
+        'rightButton' => null,
+        'leftCanvas' => null,
+        'rightCanvas' => null,
         'countdownExpiringTimestamp' => 'int64'
     ];
 
@@ -225,7 +231,10 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'shopImageStruct' => 'shop_image_struct',
         'chosenButton' => 'chosen_button',
         'livingDescStruct' => 'living_desc_struct',
-        'floatingZoneStruct' => 'floating_zone_struct',
+        'leftButton' => 'left_button',
+        'rightButton' => 'right_button',
+        'leftCanvas' => 'left_canvas',
+        'rightCanvas' => 'right_canvas',
         'countdownExpiringTimestamp' => 'countdown_expiring_timestamp'
     ];
 
@@ -277,7 +286,10 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'shopImageStruct' => 'setShopImageStruct',
         'chosenButton' => 'setChosenButton',
         'livingDescStruct' => 'setLivingDescStruct',
-        'floatingZoneStruct' => 'setFloatingZoneStruct',
+        'leftButton' => 'setLeftButton',
+        'rightButton' => 'setRightButton',
+        'leftCanvas' => 'setLeftCanvas',
+        'rightCanvas' => 'setRightCanvas',
         'countdownExpiringTimestamp' => 'setCountdownExpiringTimestamp'
     ];
 
@@ -329,7 +341,10 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'shopImageStruct' => 'getShopImageStruct',
         'chosenButton' => 'getChosenButton',
         'livingDescStruct' => 'getLivingDescStruct',
-        'floatingZoneStruct' => 'getFloatingZoneStruct',
+        'leftButton' => 'getLeftButton',
+        'rightButton' => 'getRightButton',
+        'leftCanvas' => 'getLeftCanvas',
+        'rightCanvas' => 'getRightCanvas',
         'countdownExpiringTimestamp' => 'getCountdownExpiringTimestamp'
     ];
 
@@ -435,7 +450,10 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         $this->container['shopImageStruct'] = isset($data['shopImageStruct']) ? $data['shopImageStruct'] : null;
         $this->container['chosenButton'] = isset($data['chosenButton']) ? $data['chosenButton'] : null;
         $this->container['livingDescStruct'] = isset($data['livingDescStruct']) ? $data['livingDescStruct'] : null;
-        $this->container['floatingZoneStruct'] = isset($data['floatingZoneStruct']) ? $data['floatingZoneStruct'] : null;
+        $this->container['leftButton'] = isset($data['leftButton']) ? $data['leftButton'] : null;
+        $this->container['rightButton'] = isset($data['rightButton']) ? $data['rightButton'] : null;
+        $this->container['leftCanvas'] = isset($data['leftCanvas']) ? $data['leftCanvas'] : null;
+        $this->container['rightCanvas'] = isset($data['rightCanvas']) ? $data['rightCanvas'] : null;
         $this->container['countdownExpiringTimestamp'] = isset($data['countdownExpiringTimestamp']) ? $data['countdownExpiringTimestamp'] : null;
     }
 
@@ -1472,25 +1490,97 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets floatingZoneStruct
+     * Gets leftButton
      *
-     * @return \TencentAds\Model\FloatingZone|mixed
+     * @return string|mixed
      */
-    public function getFloatingZoneStruct()
+    public function getLeftButton()
     {
-        return $this->container['floatingZoneStruct'];
+        return $this->container['leftButton'];
     }
 
     /**
-     * Sets floatingZoneStruct
+     * Sets leftButton
      *
-     * @param \TencentAds\Model\FloatingZone|mixed $floatingZoneStruct floatingZoneStruct
+     * @param string|mixed $leftButton leftButton
      *
      * @return $this
      */
-    public function setFloatingZoneStruct($floatingZoneStruct)
+    public function setLeftButton($leftButton)
     {
-        $this->container['floatingZoneStruct'] = $floatingZoneStruct;
+        $this->container['leftButton'] = $leftButton;
+
+        return $this;
+    }
+
+    /**
+     * Gets rightButton
+     *
+     * @return string|mixed
+     */
+    public function getRightButton()
+    {
+        return $this->container['rightButton'];
+    }
+
+    /**
+     * Sets rightButton
+     *
+     * @param string|mixed $rightButton rightButton
+     *
+     * @return $this
+     */
+    public function setRightButton($rightButton)
+    {
+        $this->container['rightButton'] = $rightButton;
+
+        return $this;
+    }
+
+    /**
+     * Gets leftCanvas
+     *
+     * @return string|mixed
+     */
+    public function getLeftCanvas()
+    {
+        return $this->container['leftCanvas'];
+    }
+
+    /**
+     * Sets leftCanvas
+     *
+     * @param string|mixed $leftCanvas leftCanvas
+     *
+     * @return $this
+     */
+    public function setLeftCanvas($leftCanvas)
+    {
+        $this->container['leftCanvas'] = $leftCanvas;
+
+        return $this;
+    }
+
+    /**
+     * Gets rightCanvas
+     *
+     * @return string|mixed
+     */
+    public function getRightCanvas()
+    {
+        return $this->container['rightCanvas'];
+    }
+
+    /**
+     * Sets rightCanvas
+     *
+     * @param string|mixed $rightCanvas rightCanvas
+     *
+     * @return $this
+     */
+    public function setRightCanvas($rightCanvas)
+    {
+        $this->container['rightCanvas'] = $rightCanvas;
 
         return $this;
     }

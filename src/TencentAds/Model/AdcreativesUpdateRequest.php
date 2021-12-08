@@ -88,6 +88,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'barrageList' => '\TencentAds\Model\BarrageListCreateStruct[]',
         'dynamicAdcreativeSpec' => '\TencentAds\Model\DynamicAdcreativeSpec',
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
+        'industryLabel' => 'string',
         'accountId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsMp'
     ];
@@ -129,6 +130,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'barrageList' => null,
         'dynamicAdcreativeSpec' => null,
         'appGiftPackCode' => null,
+        'industryLabel' => null,
         'accountId' => 'int64',
         'adcreativeElements' => null
     ];
@@ -191,6 +193,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'barrageList' => 'barrage_list',
         'dynamicAdcreativeSpec' => 'dynamic_adcreative_spec',
         'appGiftPackCode' => 'app_gift_pack_code',
+        'industryLabel' => 'industry_label',
         'accountId' => 'account_id',
         'adcreativeElements' => 'adcreative_elements'
     ];
@@ -232,6 +235,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'barrageList' => 'setBarrageList',
         'dynamicAdcreativeSpec' => 'setDynamicAdcreativeSpec',
         'appGiftPackCode' => 'setAppGiftPackCode',
+        'industryLabel' => 'setIndustryLabel',
         'accountId' => 'setAccountId',
         'adcreativeElements' => 'setAdcreativeElements'
     ];
@@ -273,6 +277,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'barrageList' => 'getBarrageList',
         'dynamicAdcreativeSpec' => 'getDynamicAdcreativeSpec',
         'appGiftPackCode' => 'getAppGiftPackCode',
+        'industryLabel' => 'getIndustryLabel',
         'accountId' => 'getAccountId',
         'adcreativeElements' => 'getAdcreativeElements'
     ];
@@ -368,6 +373,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['barrageList'] = isset($data['barrageList']) ? $data['barrageList'] : null;
         $this->container['dynamicAdcreativeSpec'] = isset($data['dynamicAdcreativeSpec']) ? $data['dynamicAdcreativeSpec'] : null;
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
+        $this->container['industryLabel'] = isset($data['industryLabel']) ? $data['industryLabel'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
     }
@@ -1136,6 +1142,30 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setAppGiftPackCode($appGiftPackCode)
     {
         $this->container['appGiftPackCode'] = $appGiftPackCode;
+
+        return $this;
+    }
+
+    /**
+     * Gets industryLabel
+     *
+     * @return string|mixed
+     */
+    public function getIndustryLabel()
+    {
+        return $this->container['industryLabel'];
+    }
+
+    /**
+     * Sets industryLabel
+     *
+     * @param string|mixed $industryLabel industryLabel
+     *
+     * @return $this
+     */
+    public function setIndustryLabel($industryLabel)
+    {
+        $this->container['industryLabel'] = $industryLabel;
 
         return $this;
     }

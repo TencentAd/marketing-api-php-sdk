@@ -50,6 +50,10 @@ class ConversionDataType
     const ONSHOP = 'CONVERSION_DATA_ONSHOP';
     const ADMETRIC = 'CONVERSION_DATA_ADMETRIC';
     const FRIEND_FOLLOW = 'CONVERSION_DATA_FRIEND_FOLLOW';
+    const FRIEND_WATCH = 'CONVERSION_DATA_FRIEND_WATCH';
+    const INDUSTRY_LABEL = 'CONVERSION_DATA_INDUSTRY_LABEL';
+    const SHOP = 'CONVERSION_DATA_SHOP';
+    const FORM = 'CONVERSION_DATA_FORM';
     
     /**
      * Gets allowable values of the enum
@@ -64,6 +68,10 @@ class ConversionDataType
             self::ONSHOP,
             self::ADMETRIC,
             self::FRIEND_FOLLOW,
+            self::FRIEND_WATCH,
+            self::INDUSTRY_LABEL,
+            self::SHOP,
+            self::FORM,
         ];
     }
 }

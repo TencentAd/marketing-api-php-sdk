@@ -44,13 +44,28 @@ class CanvasType
     /**
      * Possible values of this enum
      */
+    const BUILDING = 'CANVAS_TYPE_BUILDING';
+    const RSTRNT = 'CANVAS_TYPE_RSTRNT';
+    const BASIC = 'CANVAS_TYPE_BASIC';
+    const APP = 'CANVAS_TYPE_APP';
+    const FOLLOW = 'CANVAS_TYPE_FOLLOW';
     const VIDEO = 'CANVAS_TYPE_VIDEO';
     const IMAGE = 'CANVAS_TYPE_IMAGE';
+    const SIMPLE = 'CANVAS_TYPE_SIMPLE';
+    const EGG = 'CANVAS_TYPE_EGG';
+    const SDPA = 'CANVAS_TYPE_SDPA';
     const REWARD = 'CANVAS_TYPE_REWARD';
+    const LOCALCOUPON = 'CANVAS_TYPE_LOCALCOUPON';
     const PORTRAIT_VIDEO = 'CANVAS_TYPE_PORTRAIT_VIDEO';
     const PORTRAIT_VIDEO_2 = 'CANVAS_TYPE_PORTRAIT_VIDEO_2';
     const COMMON_PAGE = 'CANVAS_TYPE_COMMON_PAGE';
+    const EGGS_RANDOM = 'CANVAS_TYPE_EGGS_RANDOM';
+    const EGGS_SINGLE = 'CANVAS_TYPE_EGGS_SINGLE';
+    const EGGS_MOVIE = 'CANVAS_TYPE_EGGS_MOVIE';
     const VERTICAL_VIDEO_NEW_916 = 'CANVAS_TYPE_VERTICAL_VIDEO_NEW_916';
+    const EGGS_RANDOM_SHAKE = 'CANVAS_TYPE_EGGS_RANDOM_SHAKE';
+    const VIDEO_1280_720 = 'CANVAS_TYPE_VIDEO_1280_720';
+    const VIDEO_1280_960 = 'CANVAS_TYPE_VIDEO_1280_960';
     
     /**
      * Gets allowable values of the enum
@@ -59,13 +74,28 @@ class CanvasType
     public static function getAllowableEnumValues()
     {
         return [
+            self::BUILDING,
+            self::RSTRNT,
+            self::BASIC,
+            self::APP,
+            self::FOLLOW,
             self::VIDEO,
             self::IMAGE,
+            self::SIMPLE,
+            self::EGG,
+            self::SDPA,
             self::REWARD,
+            self::LOCALCOUPON,
             self::PORTRAIT_VIDEO,
             self::PORTRAIT_VIDEO_2,
             self::COMMON_PAGE,
+            self::EGGS_RANDOM,
+            self::EGGS_SINGLE,
+            self::EGGS_MOVIE,
             self::VERTICAL_VIDEO_NEW_916,
+            self::EGGS_RANDOM_SHAKE,
+            self::VIDEO_1280_720,
+            self::VIDEO_1280_960,
         ];
     }
 }
