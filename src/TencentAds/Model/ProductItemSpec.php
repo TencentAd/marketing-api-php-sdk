@@ -165,7 +165,47 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'maxQuota' => 'double',
         'annualizedRateOfReturn' => 'double',
         'riskType' => '\TencentAds\Model\RiskTypeStatus',
-        'artist' => 'string[]'
+        'artist' => 'string[]',
+        'trends' => 'int',
+        'payStatus' => '\TencentAds\Model\PayStatus',
+        'wordCount' => 'int',
+        'serialStatus' => '\TencentAds\Model\SerialStatus',
+        'bookJson' => '\TencentAds\Model\BookJson',
+        'ratings' => 'double',
+        'readerCount' => 'int',
+        'recommendedVotesCount' => 'int',
+        'rewardCount' => 'int',
+        'ranking' => 'int',
+        'space' => '\TencentAds\Model\BookLength',
+        'ifNewBook' => 'string',
+        'chapterCount' => 'int',
+        'startedPayChapter' => 'int',
+        'payCount' => 'int',
+        'payAmount' => 'double',
+        'firstPayAmount' => 'double',
+        'leastPayAmount' => 'double',
+        'onetimePayAmount' => 'double',
+        'latestRenewTime' => 'string',
+        'latestRenewChapter' => 'int',
+        'shareCount' => 'int',
+        'downloadCount' => 'int',
+        'payingReaderCount' => 'int',
+        'storySchool' => 'string',
+        'storyRoleIdentity' => 'string',
+        'storyRoleImage' => 'string',
+        'storyEra' => 'string',
+        'storyScene' => 'string',
+        'storyPlot' => 'string',
+        'storyStyle' => 'string',
+        'authorizationStatus' => '\TencentAds\Model\AuthorizationStatus',
+        'originality' => '\TencentAds\Model\Originality',
+        'updateFrequency' => '\TencentAds\Model\UpdateFrequency',
+        'playForm' => '\TencentAds\Model\PlayForm',
+        'playAuthor' => 'string',
+        'playVoice' => '\TencentAds\Model\PlayVoice',
+        'productionSource' => '\TencentAds\Model\ProductionSource',
+        'productionPlace' => '\TencentAds\Model\ProductionPlace',
+        'cartoonColor' => '\TencentAds\Model\CartoonColor'
     ];
 
     /**
@@ -281,7 +321,47 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'maxQuota' => 'double',
         'annualizedRateOfReturn' => 'double',
         'riskType' => null,
-        'artist' => null
+        'artist' => null,
+        'trends' => 'int64',
+        'payStatus' => null,
+        'wordCount' => 'int64',
+        'serialStatus' => null,
+        'bookJson' => null,
+        'ratings' => 'double',
+        'readerCount' => 'int64',
+        'recommendedVotesCount' => 'int64',
+        'rewardCount' => 'int64',
+        'ranking' => 'int64',
+        'space' => null,
+        'ifNewBook' => null,
+        'chapterCount' => 'int64',
+        'startedPayChapter' => 'int64',
+        'payCount' => 'int64',
+        'payAmount' => 'double',
+        'firstPayAmount' => 'double',
+        'leastPayAmount' => 'double',
+        'onetimePayAmount' => 'double',
+        'latestRenewTime' => null,
+        'latestRenewChapter' => 'int64',
+        'shareCount' => 'int64',
+        'downloadCount' => 'int64',
+        'payingReaderCount' => 'int64',
+        'storySchool' => null,
+        'storyRoleIdentity' => null,
+        'storyRoleImage' => null,
+        'storyEra' => null,
+        'storyScene' => null,
+        'storyPlot' => null,
+        'storyStyle' => null,
+        'authorizationStatus' => null,
+        'originality' => null,
+        'updateFrequency' => null,
+        'playForm' => null,
+        'playAuthor' => null,
+        'playVoice' => null,
+        'productionSource' => null,
+        'productionPlace' => null,
+        'cartoonColor' => null
     ];
 
     /**
@@ -418,7 +498,47 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'maxQuota' => 'max_quota',
         'annualizedRateOfReturn' => 'annualized_rate_of_return',
         'riskType' => 'risk_type',
-        'artist' => 'artist'
+        'artist' => 'artist',
+        'trends' => 'trends',
+        'payStatus' => 'pay_status',
+        'wordCount' => 'word_count',
+        'serialStatus' => 'serial_status',
+        'bookJson' => 'book_json',
+        'ratings' => 'ratings',
+        'readerCount' => 'reader_count',
+        'recommendedVotesCount' => 'recommended_votes_count',
+        'rewardCount' => 'reward_count',
+        'ranking' => 'ranking',
+        'space' => 'space',
+        'ifNewBook' => 'if_new_book',
+        'chapterCount' => 'chapter_count',
+        'startedPayChapter' => 'started_pay_chapter',
+        'payCount' => 'pay_count',
+        'payAmount' => 'pay_amount',
+        'firstPayAmount' => 'first_pay_amount',
+        'leastPayAmount' => 'least_pay_amount',
+        'onetimePayAmount' => 'onetime_pay_amount',
+        'latestRenewTime' => 'latest_renew_time',
+        'latestRenewChapter' => 'latest_renew_chapter',
+        'shareCount' => 'share_count',
+        'downloadCount' => 'download_count',
+        'payingReaderCount' => 'paying_reader_count',
+        'storySchool' => 'story_school',
+        'storyRoleIdentity' => 'story_role_identity',
+        'storyRoleImage' => 'story_role_image',
+        'storyEra' => 'story_era',
+        'storyScene' => 'story_scene',
+        'storyPlot' => 'story_plot',
+        'storyStyle' => 'story_style',
+        'authorizationStatus' => 'authorization_status',
+        'originality' => 'originality',
+        'updateFrequency' => 'update_frequency',
+        'playForm' => 'play_form',
+        'playAuthor' => 'play_author',
+        'playVoice' => 'play_voice',
+        'productionSource' => 'production_source',
+        'productionPlace' => 'production_place',
+        'cartoonColor' => 'cartoon_color'
     ];
 
     /**
@@ -534,7 +654,47 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'maxQuota' => 'setMaxQuota',
         'annualizedRateOfReturn' => 'setAnnualizedRateOfReturn',
         'riskType' => 'setRiskType',
-        'artist' => 'setArtist'
+        'artist' => 'setArtist',
+        'trends' => 'setTrends',
+        'payStatus' => 'setPayStatus',
+        'wordCount' => 'setWordCount',
+        'serialStatus' => 'setSerialStatus',
+        'bookJson' => 'setBookJson',
+        'ratings' => 'setRatings',
+        'readerCount' => 'setReaderCount',
+        'recommendedVotesCount' => 'setRecommendedVotesCount',
+        'rewardCount' => 'setRewardCount',
+        'ranking' => 'setRanking',
+        'space' => 'setSpace',
+        'ifNewBook' => 'setIfNewBook',
+        'chapterCount' => 'setChapterCount',
+        'startedPayChapter' => 'setStartedPayChapter',
+        'payCount' => 'setPayCount',
+        'payAmount' => 'setPayAmount',
+        'firstPayAmount' => 'setFirstPayAmount',
+        'leastPayAmount' => 'setLeastPayAmount',
+        'onetimePayAmount' => 'setOnetimePayAmount',
+        'latestRenewTime' => 'setLatestRenewTime',
+        'latestRenewChapter' => 'setLatestRenewChapter',
+        'shareCount' => 'setShareCount',
+        'downloadCount' => 'setDownloadCount',
+        'payingReaderCount' => 'setPayingReaderCount',
+        'storySchool' => 'setStorySchool',
+        'storyRoleIdentity' => 'setStoryRoleIdentity',
+        'storyRoleImage' => 'setStoryRoleImage',
+        'storyEra' => 'setStoryEra',
+        'storyScene' => 'setStoryScene',
+        'storyPlot' => 'setStoryPlot',
+        'storyStyle' => 'setStoryStyle',
+        'authorizationStatus' => 'setAuthorizationStatus',
+        'originality' => 'setOriginality',
+        'updateFrequency' => 'setUpdateFrequency',
+        'playForm' => 'setPlayForm',
+        'playAuthor' => 'setPlayAuthor',
+        'playVoice' => 'setPlayVoice',
+        'productionSource' => 'setProductionSource',
+        'productionPlace' => 'setProductionPlace',
+        'cartoonColor' => 'setCartoonColor'
     ];
 
     /**
@@ -650,7 +810,47 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'maxQuota' => 'getMaxQuota',
         'annualizedRateOfReturn' => 'getAnnualizedRateOfReturn',
         'riskType' => 'getRiskType',
-        'artist' => 'getArtist'
+        'artist' => 'getArtist',
+        'trends' => 'getTrends',
+        'payStatus' => 'getPayStatus',
+        'wordCount' => 'getWordCount',
+        'serialStatus' => 'getSerialStatus',
+        'bookJson' => 'getBookJson',
+        'ratings' => 'getRatings',
+        'readerCount' => 'getReaderCount',
+        'recommendedVotesCount' => 'getRecommendedVotesCount',
+        'rewardCount' => 'getRewardCount',
+        'ranking' => 'getRanking',
+        'space' => 'getSpace',
+        'ifNewBook' => 'getIfNewBook',
+        'chapterCount' => 'getChapterCount',
+        'startedPayChapter' => 'getStartedPayChapter',
+        'payCount' => 'getPayCount',
+        'payAmount' => 'getPayAmount',
+        'firstPayAmount' => 'getFirstPayAmount',
+        'leastPayAmount' => 'getLeastPayAmount',
+        'onetimePayAmount' => 'getOnetimePayAmount',
+        'latestRenewTime' => 'getLatestRenewTime',
+        'latestRenewChapter' => 'getLatestRenewChapter',
+        'shareCount' => 'getShareCount',
+        'downloadCount' => 'getDownloadCount',
+        'payingReaderCount' => 'getPayingReaderCount',
+        'storySchool' => 'getStorySchool',
+        'storyRoleIdentity' => 'getStoryRoleIdentity',
+        'storyRoleImage' => 'getStoryRoleImage',
+        'storyEra' => 'getStoryEra',
+        'storyScene' => 'getStoryScene',
+        'storyPlot' => 'getStoryPlot',
+        'storyStyle' => 'getStoryStyle',
+        'authorizationStatus' => 'getAuthorizationStatus',
+        'originality' => 'getOriginality',
+        'updateFrequency' => 'getUpdateFrequency',
+        'playForm' => 'getPlayForm',
+        'playAuthor' => 'getPlayAuthor',
+        'playVoice' => 'getPlayVoice',
+        'productionSource' => 'getProductionSource',
+        'productionPlace' => 'getProductionPlace',
+        'cartoonColor' => 'getCartoonColor'
     ];
 
     /**
@@ -821,6 +1021,46 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         $this->container['annualizedRateOfReturn'] = isset($data['annualizedRateOfReturn']) ? $data['annualizedRateOfReturn'] : null;
         $this->container['riskType'] = isset($data['riskType']) ? $data['riskType'] : null;
         $this->container['artist'] = isset($data['artist']) ? $data['artist'] : null;
+        $this->container['trends'] = isset($data['trends']) ? $data['trends'] : null;
+        $this->container['payStatus'] = isset($data['payStatus']) ? $data['payStatus'] : null;
+        $this->container['wordCount'] = isset($data['wordCount']) ? $data['wordCount'] : null;
+        $this->container['serialStatus'] = isset($data['serialStatus']) ? $data['serialStatus'] : null;
+        $this->container['bookJson'] = isset($data['bookJson']) ? $data['bookJson'] : null;
+        $this->container['ratings'] = isset($data['ratings']) ? $data['ratings'] : null;
+        $this->container['readerCount'] = isset($data['readerCount']) ? $data['readerCount'] : null;
+        $this->container['recommendedVotesCount'] = isset($data['recommendedVotesCount']) ? $data['recommendedVotesCount'] : null;
+        $this->container['rewardCount'] = isset($data['rewardCount']) ? $data['rewardCount'] : null;
+        $this->container['ranking'] = isset($data['ranking']) ? $data['ranking'] : null;
+        $this->container['space'] = isset($data['space']) ? $data['space'] : null;
+        $this->container['ifNewBook'] = isset($data['ifNewBook']) ? $data['ifNewBook'] : null;
+        $this->container['chapterCount'] = isset($data['chapterCount']) ? $data['chapterCount'] : null;
+        $this->container['startedPayChapter'] = isset($data['startedPayChapter']) ? $data['startedPayChapter'] : null;
+        $this->container['payCount'] = isset($data['payCount']) ? $data['payCount'] : null;
+        $this->container['payAmount'] = isset($data['payAmount']) ? $data['payAmount'] : null;
+        $this->container['firstPayAmount'] = isset($data['firstPayAmount']) ? $data['firstPayAmount'] : null;
+        $this->container['leastPayAmount'] = isset($data['leastPayAmount']) ? $data['leastPayAmount'] : null;
+        $this->container['onetimePayAmount'] = isset($data['onetimePayAmount']) ? $data['onetimePayAmount'] : null;
+        $this->container['latestRenewTime'] = isset($data['latestRenewTime']) ? $data['latestRenewTime'] : null;
+        $this->container['latestRenewChapter'] = isset($data['latestRenewChapter']) ? $data['latestRenewChapter'] : null;
+        $this->container['shareCount'] = isset($data['shareCount']) ? $data['shareCount'] : null;
+        $this->container['downloadCount'] = isset($data['downloadCount']) ? $data['downloadCount'] : null;
+        $this->container['payingReaderCount'] = isset($data['payingReaderCount']) ? $data['payingReaderCount'] : null;
+        $this->container['storySchool'] = isset($data['storySchool']) ? $data['storySchool'] : null;
+        $this->container['storyRoleIdentity'] = isset($data['storyRoleIdentity']) ? $data['storyRoleIdentity'] : null;
+        $this->container['storyRoleImage'] = isset($data['storyRoleImage']) ? $data['storyRoleImage'] : null;
+        $this->container['storyEra'] = isset($data['storyEra']) ? $data['storyEra'] : null;
+        $this->container['storyScene'] = isset($data['storyScene']) ? $data['storyScene'] : null;
+        $this->container['storyPlot'] = isset($data['storyPlot']) ? $data['storyPlot'] : null;
+        $this->container['storyStyle'] = isset($data['storyStyle']) ? $data['storyStyle'] : null;
+        $this->container['authorizationStatus'] = isset($data['authorizationStatus']) ? $data['authorizationStatus'] : null;
+        $this->container['originality'] = isset($data['originality']) ? $data['originality'] : null;
+        $this->container['updateFrequency'] = isset($data['updateFrequency']) ? $data['updateFrequency'] : null;
+        $this->container['playForm'] = isset($data['playForm']) ? $data['playForm'] : null;
+        $this->container['playAuthor'] = isset($data['playAuthor']) ? $data['playAuthor'] : null;
+        $this->container['playVoice'] = isset($data['playVoice']) ? $data['playVoice'] : null;
+        $this->container['productionSource'] = isset($data['productionSource']) ? $data['productionSource'] : null;
+        $this->container['productionPlace'] = isset($data['productionPlace']) ? $data['productionPlace'] : null;
+        $this->container['cartoonColor'] = isset($data['cartoonColor']) ? $data['cartoonColor'] : null;
     }
 
     /**
@@ -3435,6 +3675,966 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     public function setArtist($artist)
     {
         $this->container['artist'] = $artist;
+
+        return $this;
+    }
+
+    /**
+     * Gets trends
+     *
+     * @return int|mixed
+     */
+    public function getTrends()
+    {
+        return $this->container['trends'];
+    }
+
+    /**
+     * Sets trends
+     *
+     * @param int|mixed $trends trends
+     *
+     * @return $this
+     */
+    public function setTrends($trends)
+    {
+        $this->container['trends'] = $trends;
+
+        return $this;
+    }
+
+    /**
+     * Gets payStatus
+     *
+     * @return \TencentAds\Model\PayStatus|mixed
+     */
+    public function getPayStatus()
+    {
+        return $this->container['payStatus'];
+    }
+
+    /**
+     * Sets payStatus
+     *
+     * @param \TencentAds\Model\PayStatus|mixed $payStatus payStatus
+     *
+     * @return $this
+     */
+    public function setPayStatus($payStatus)
+    {
+        $this->container['payStatus'] = $payStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets wordCount
+     *
+     * @return int|mixed
+     */
+    public function getWordCount()
+    {
+        return $this->container['wordCount'];
+    }
+
+    /**
+     * Sets wordCount
+     *
+     * @param int|mixed $wordCount wordCount
+     *
+     * @return $this
+     */
+    public function setWordCount($wordCount)
+    {
+        $this->container['wordCount'] = $wordCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets serialStatus
+     *
+     * @return \TencentAds\Model\SerialStatus|mixed
+     */
+    public function getSerialStatus()
+    {
+        return $this->container['serialStatus'];
+    }
+
+    /**
+     * Sets serialStatus
+     *
+     * @param \TencentAds\Model\SerialStatus|mixed $serialStatus serialStatus
+     *
+     * @return $this
+     */
+    public function setSerialStatus($serialStatus)
+    {
+        $this->container['serialStatus'] = $serialStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets bookJson
+     *
+     * @return \TencentAds\Model\BookJson|mixed
+     */
+    public function getBookJson()
+    {
+        return $this->container['bookJson'];
+    }
+
+    /**
+     * Sets bookJson
+     *
+     * @param \TencentAds\Model\BookJson|mixed $bookJson bookJson
+     *
+     * @return $this
+     */
+    public function setBookJson($bookJson)
+    {
+        $this->container['bookJson'] = $bookJson;
+
+        return $this;
+    }
+
+    /**
+     * Gets ratings
+     *
+     * @return double|mixed
+     */
+    public function getRatings()
+    {
+        return $this->container['ratings'];
+    }
+
+    /**
+     * Sets ratings
+     *
+     * @param double|mixed $ratings ratings
+     *
+     * @return $this
+     */
+    public function setRatings($ratings)
+    {
+        $this->container['ratings'] = $ratings;
+
+        return $this;
+    }
+
+    /**
+     * Gets readerCount
+     *
+     * @return int|mixed
+     */
+    public function getReaderCount()
+    {
+        return $this->container['readerCount'];
+    }
+
+    /**
+     * Sets readerCount
+     *
+     * @param int|mixed $readerCount readerCount
+     *
+     * @return $this
+     */
+    public function setReaderCount($readerCount)
+    {
+        $this->container['readerCount'] = $readerCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets recommendedVotesCount
+     *
+     * @return int|mixed
+     */
+    public function getRecommendedVotesCount()
+    {
+        return $this->container['recommendedVotesCount'];
+    }
+
+    /**
+     * Sets recommendedVotesCount
+     *
+     * @param int|mixed $recommendedVotesCount recommendedVotesCount
+     *
+     * @return $this
+     */
+    public function setRecommendedVotesCount($recommendedVotesCount)
+    {
+        $this->container['recommendedVotesCount'] = $recommendedVotesCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets rewardCount
+     *
+     * @return int|mixed
+     */
+    public function getRewardCount()
+    {
+        return $this->container['rewardCount'];
+    }
+
+    /**
+     * Sets rewardCount
+     *
+     * @param int|mixed $rewardCount rewardCount
+     *
+     * @return $this
+     */
+    public function setRewardCount($rewardCount)
+    {
+        $this->container['rewardCount'] = $rewardCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets ranking
+     *
+     * @return int|mixed
+     */
+    public function getRanking()
+    {
+        return $this->container['ranking'];
+    }
+
+    /**
+     * Sets ranking
+     *
+     * @param int|mixed $ranking ranking
+     *
+     * @return $this
+     */
+    public function setRanking($ranking)
+    {
+        $this->container['ranking'] = $ranking;
+
+        return $this;
+    }
+
+    /**
+     * Gets space
+     *
+     * @return \TencentAds\Model\BookLength|mixed
+     */
+    public function getSpace()
+    {
+        return $this->container['space'];
+    }
+
+    /**
+     * Sets space
+     *
+     * @param \TencentAds\Model\BookLength|mixed $space space
+     *
+     * @return $this
+     */
+    public function setSpace($space)
+    {
+        $this->container['space'] = $space;
+
+        return $this;
+    }
+
+    /**
+     * Gets ifNewBook
+     *
+     * @return string|mixed
+     */
+    public function getIfNewBook()
+    {
+        return $this->container['ifNewBook'];
+    }
+
+    /**
+     * Sets ifNewBook
+     *
+     * @param string|mixed $ifNewBook ifNewBook
+     *
+     * @return $this
+     */
+    public function setIfNewBook($ifNewBook)
+    {
+        $this->container['ifNewBook'] = $ifNewBook;
+
+        return $this;
+    }
+
+    /**
+     * Gets chapterCount
+     *
+     * @return int|mixed
+     */
+    public function getChapterCount()
+    {
+        return $this->container['chapterCount'];
+    }
+
+    /**
+     * Sets chapterCount
+     *
+     * @param int|mixed $chapterCount chapterCount
+     *
+     * @return $this
+     */
+    public function setChapterCount($chapterCount)
+    {
+        $this->container['chapterCount'] = $chapterCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets startedPayChapter
+     *
+     * @return int|mixed
+     */
+    public function getStartedPayChapter()
+    {
+        return $this->container['startedPayChapter'];
+    }
+
+    /**
+     * Sets startedPayChapter
+     *
+     * @param int|mixed $startedPayChapter startedPayChapter
+     *
+     * @return $this
+     */
+    public function setStartedPayChapter($startedPayChapter)
+    {
+        $this->container['startedPayChapter'] = $startedPayChapter;
+
+        return $this;
+    }
+
+    /**
+     * Gets payCount
+     *
+     * @return int|mixed
+     */
+    public function getPayCount()
+    {
+        return $this->container['payCount'];
+    }
+
+    /**
+     * Sets payCount
+     *
+     * @param int|mixed $payCount payCount
+     *
+     * @return $this
+     */
+    public function setPayCount($payCount)
+    {
+        $this->container['payCount'] = $payCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets payAmount
+     *
+     * @return double|mixed
+     */
+    public function getPayAmount()
+    {
+        return $this->container['payAmount'];
+    }
+
+    /**
+     * Sets payAmount
+     *
+     * @param double|mixed $payAmount payAmount
+     *
+     * @return $this
+     */
+    public function setPayAmount($payAmount)
+    {
+        $this->container['payAmount'] = $payAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstPayAmount
+     *
+     * @return double|mixed
+     */
+    public function getFirstPayAmount()
+    {
+        return $this->container['firstPayAmount'];
+    }
+
+    /**
+     * Sets firstPayAmount
+     *
+     * @param double|mixed $firstPayAmount firstPayAmount
+     *
+     * @return $this
+     */
+    public function setFirstPayAmount($firstPayAmount)
+    {
+        $this->container['firstPayAmount'] = $firstPayAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets leastPayAmount
+     *
+     * @return double|mixed
+     */
+    public function getLeastPayAmount()
+    {
+        return $this->container['leastPayAmount'];
+    }
+
+    /**
+     * Sets leastPayAmount
+     *
+     * @param double|mixed $leastPayAmount leastPayAmount
+     *
+     * @return $this
+     */
+    public function setLeastPayAmount($leastPayAmount)
+    {
+        $this->container['leastPayAmount'] = $leastPayAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets onetimePayAmount
+     *
+     * @return double|mixed
+     */
+    public function getOnetimePayAmount()
+    {
+        return $this->container['onetimePayAmount'];
+    }
+
+    /**
+     * Sets onetimePayAmount
+     *
+     * @param double|mixed $onetimePayAmount onetimePayAmount
+     *
+     * @return $this
+     */
+    public function setOnetimePayAmount($onetimePayAmount)
+    {
+        $this->container['onetimePayAmount'] = $onetimePayAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets latestRenewTime
+     *
+     * @return string|mixed
+     */
+    public function getLatestRenewTime()
+    {
+        return $this->container['latestRenewTime'];
+    }
+
+    /**
+     * Sets latestRenewTime
+     *
+     * @param string|mixed $latestRenewTime latestRenewTime
+     *
+     * @return $this
+     */
+    public function setLatestRenewTime($latestRenewTime)
+    {
+        $this->container['latestRenewTime'] = $latestRenewTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets latestRenewChapter
+     *
+     * @return int|mixed
+     */
+    public function getLatestRenewChapter()
+    {
+        return $this->container['latestRenewChapter'];
+    }
+
+    /**
+     * Sets latestRenewChapter
+     *
+     * @param int|mixed $latestRenewChapter latestRenewChapter
+     *
+     * @return $this
+     */
+    public function setLatestRenewChapter($latestRenewChapter)
+    {
+        $this->container['latestRenewChapter'] = $latestRenewChapter;
+
+        return $this;
+    }
+
+    /**
+     * Gets shareCount
+     *
+     * @return int|mixed
+     */
+    public function getShareCount()
+    {
+        return $this->container['shareCount'];
+    }
+
+    /**
+     * Sets shareCount
+     *
+     * @param int|mixed $shareCount shareCount
+     *
+     * @return $this
+     */
+    public function setShareCount($shareCount)
+    {
+        $this->container['shareCount'] = $shareCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets downloadCount
+     *
+     * @return int|mixed
+     */
+    public function getDownloadCount()
+    {
+        return $this->container['downloadCount'];
+    }
+
+    /**
+     * Sets downloadCount
+     *
+     * @param int|mixed $downloadCount downloadCount
+     *
+     * @return $this
+     */
+    public function setDownloadCount($downloadCount)
+    {
+        $this->container['downloadCount'] = $downloadCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets payingReaderCount
+     *
+     * @return int|mixed
+     */
+    public function getPayingReaderCount()
+    {
+        return $this->container['payingReaderCount'];
+    }
+
+    /**
+     * Sets payingReaderCount
+     *
+     * @param int|mixed $payingReaderCount payingReaderCount
+     *
+     * @return $this
+     */
+    public function setPayingReaderCount($payingReaderCount)
+    {
+        $this->container['payingReaderCount'] = $payingReaderCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets storySchool
+     *
+     * @return string|mixed
+     */
+    public function getStorySchool()
+    {
+        return $this->container['storySchool'];
+    }
+
+    /**
+     * Sets storySchool
+     *
+     * @param string|mixed $storySchool storySchool
+     *
+     * @return $this
+     */
+    public function setStorySchool($storySchool)
+    {
+        $this->container['storySchool'] = $storySchool;
+
+        return $this;
+    }
+
+    /**
+     * Gets storyRoleIdentity
+     *
+     * @return string|mixed
+     */
+    public function getStoryRoleIdentity()
+    {
+        return $this->container['storyRoleIdentity'];
+    }
+
+    /**
+     * Sets storyRoleIdentity
+     *
+     * @param string|mixed $storyRoleIdentity storyRoleIdentity
+     *
+     * @return $this
+     */
+    public function setStoryRoleIdentity($storyRoleIdentity)
+    {
+        $this->container['storyRoleIdentity'] = $storyRoleIdentity;
+
+        return $this;
+    }
+
+    /**
+     * Gets storyRoleImage
+     *
+     * @return string|mixed
+     */
+    public function getStoryRoleImage()
+    {
+        return $this->container['storyRoleImage'];
+    }
+
+    /**
+     * Sets storyRoleImage
+     *
+     * @param string|mixed $storyRoleImage storyRoleImage
+     *
+     * @return $this
+     */
+    public function setStoryRoleImage($storyRoleImage)
+    {
+        $this->container['storyRoleImage'] = $storyRoleImage;
+
+        return $this;
+    }
+
+    /**
+     * Gets storyEra
+     *
+     * @return string|mixed
+     */
+    public function getStoryEra()
+    {
+        return $this->container['storyEra'];
+    }
+
+    /**
+     * Sets storyEra
+     *
+     * @param string|mixed $storyEra storyEra
+     *
+     * @return $this
+     */
+    public function setStoryEra($storyEra)
+    {
+        $this->container['storyEra'] = $storyEra;
+
+        return $this;
+    }
+
+    /**
+     * Gets storyScene
+     *
+     * @return string|mixed
+     */
+    public function getStoryScene()
+    {
+        return $this->container['storyScene'];
+    }
+
+    /**
+     * Sets storyScene
+     *
+     * @param string|mixed $storyScene storyScene
+     *
+     * @return $this
+     */
+    public function setStoryScene($storyScene)
+    {
+        $this->container['storyScene'] = $storyScene;
+
+        return $this;
+    }
+
+    /**
+     * Gets storyPlot
+     *
+     * @return string|mixed
+     */
+    public function getStoryPlot()
+    {
+        return $this->container['storyPlot'];
+    }
+
+    /**
+     * Sets storyPlot
+     *
+     * @param string|mixed $storyPlot storyPlot
+     *
+     * @return $this
+     */
+    public function setStoryPlot($storyPlot)
+    {
+        $this->container['storyPlot'] = $storyPlot;
+
+        return $this;
+    }
+
+    /**
+     * Gets storyStyle
+     *
+     * @return string|mixed
+     */
+    public function getStoryStyle()
+    {
+        return $this->container['storyStyle'];
+    }
+
+    /**
+     * Sets storyStyle
+     *
+     * @param string|mixed $storyStyle storyStyle
+     *
+     * @return $this
+     */
+    public function setStoryStyle($storyStyle)
+    {
+        $this->container['storyStyle'] = $storyStyle;
+
+        return $this;
+    }
+
+    /**
+     * Gets authorizationStatus
+     *
+     * @return \TencentAds\Model\AuthorizationStatus|mixed
+     */
+    public function getAuthorizationStatus()
+    {
+        return $this->container['authorizationStatus'];
+    }
+
+    /**
+     * Sets authorizationStatus
+     *
+     * @param \TencentAds\Model\AuthorizationStatus|mixed $authorizationStatus authorizationStatus
+     *
+     * @return $this
+     */
+    public function setAuthorizationStatus($authorizationStatus)
+    {
+        $this->container['authorizationStatus'] = $authorizationStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets originality
+     *
+     * @return \TencentAds\Model\Originality|mixed
+     */
+    public function getOriginality()
+    {
+        return $this->container['originality'];
+    }
+
+    /**
+     * Sets originality
+     *
+     * @param \TencentAds\Model\Originality|mixed $originality originality
+     *
+     * @return $this
+     */
+    public function setOriginality($originality)
+    {
+        $this->container['originality'] = $originality;
+
+        return $this;
+    }
+
+    /**
+     * Gets updateFrequency
+     *
+     * @return \TencentAds\Model\UpdateFrequency|mixed
+     */
+    public function getUpdateFrequency()
+    {
+        return $this->container['updateFrequency'];
+    }
+
+    /**
+     * Sets updateFrequency
+     *
+     * @param \TencentAds\Model\UpdateFrequency|mixed $updateFrequency updateFrequency
+     *
+     * @return $this
+     */
+    public function setUpdateFrequency($updateFrequency)
+    {
+        $this->container['updateFrequency'] = $updateFrequency;
+
+        return $this;
+    }
+
+    /**
+     * Gets playForm
+     *
+     * @return \TencentAds\Model\PlayForm|mixed
+     */
+    public function getPlayForm()
+    {
+        return $this->container['playForm'];
+    }
+
+    /**
+     * Sets playForm
+     *
+     * @param \TencentAds\Model\PlayForm|mixed $playForm playForm
+     *
+     * @return $this
+     */
+    public function setPlayForm($playForm)
+    {
+        $this->container['playForm'] = $playForm;
+
+        return $this;
+    }
+
+    /**
+     * Gets playAuthor
+     *
+     * @return string|mixed
+     */
+    public function getPlayAuthor()
+    {
+        return $this->container['playAuthor'];
+    }
+
+    /**
+     * Sets playAuthor
+     *
+     * @param string|mixed $playAuthor playAuthor
+     *
+     * @return $this
+     */
+    public function setPlayAuthor($playAuthor)
+    {
+        $this->container['playAuthor'] = $playAuthor;
+
+        return $this;
+    }
+
+    /**
+     * Gets playVoice
+     *
+     * @return \TencentAds\Model\PlayVoice|mixed
+     */
+    public function getPlayVoice()
+    {
+        return $this->container['playVoice'];
+    }
+
+    /**
+     * Sets playVoice
+     *
+     * @param \TencentAds\Model\PlayVoice|mixed $playVoice playVoice
+     *
+     * @return $this
+     */
+    public function setPlayVoice($playVoice)
+    {
+        $this->container['playVoice'] = $playVoice;
+
+        return $this;
+    }
+
+    /**
+     * Gets productionSource
+     *
+     * @return \TencentAds\Model\ProductionSource|mixed
+     */
+    public function getProductionSource()
+    {
+        return $this->container['productionSource'];
+    }
+
+    /**
+     * Sets productionSource
+     *
+     * @param \TencentAds\Model\ProductionSource|mixed $productionSource productionSource
+     *
+     * @return $this
+     */
+    public function setProductionSource($productionSource)
+    {
+        $this->container['productionSource'] = $productionSource;
+
+        return $this;
+    }
+
+    /**
+     * Gets productionPlace
+     *
+     * @return \TencentAds\Model\ProductionPlace|mixed
+     */
+    public function getProductionPlace()
+    {
+        return $this->container['productionPlace'];
+    }
+
+    /**
+     * Sets productionPlace
+     *
+     * @param \TencentAds\Model\ProductionPlace|mixed $productionPlace productionPlace
+     *
+     * @return $this
+     */
+    public function setProductionPlace($productionPlace)
+    {
+        $this->container['productionPlace'] = $productionPlace;
+
+        return $this;
+    }
+
+    /**
+     * Gets cartoonColor
+     *
+     * @return \TencentAds\Model\CartoonColor|mixed
+     */
+    public function getCartoonColor()
+    {
+        return $this->container['cartoonColor'];
+    }
+
+    /**
+     * Sets cartoonColor
+     *
+     * @param \TencentAds\Model\CartoonColor|mixed $cartoonColor cartoonColor
+     *
+     * @return $this
+     */
+    public function setCartoonColor($cartoonColor)
+    {
+        $this->container['cartoonColor'] = $cartoonColor;
 
         return $this;
     }

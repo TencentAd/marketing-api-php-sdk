@@ -97,6 +97,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'floatingZone' => '\TencentAds\Model\FloatingZone',
         'marketingPendantImageId' => 'string',
         'countdownSwitch' => 'bool',
+        'source' => '\TencentAds\Model\AdCreativeSource',
         'pageTrackUrl' => 'string',
         'barrageList' => '\TencentAds\Model\BarrageListReadStruct[]',
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
@@ -152,6 +153,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'floatingZone' => null,
         'marketingPendantImageId' => null,
         'countdownSwitch' => null,
+        'source' => null,
         'pageTrackUrl' => null,
         'barrageList' => null,
         'appGiftPackCode' => null,
@@ -228,6 +230,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'floatingZone' => 'floating_zone',
         'marketingPendantImageId' => 'marketing_pendant_image_id',
         'countdownSwitch' => 'countdown_switch',
+        'source' => 'source',
         'pageTrackUrl' => 'page_track_url',
         'barrageList' => 'barrage_list',
         'appGiftPackCode' => 'app_gift_pack_code',
@@ -283,6 +286,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'floatingZone' => 'setFloatingZone',
         'marketingPendantImageId' => 'setMarketingPendantImageId',
         'countdownSwitch' => 'setCountdownSwitch',
+        'source' => 'setSource',
         'pageTrackUrl' => 'setPageTrackUrl',
         'barrageList' => 'setBarrageList',
         'appGiftPackCode' => 'setAppGiftPackCode',
@@ -338,6 +342,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'floatingZone' => 'getFloatingZone',
         'marketingPendantImageId' => 'getMarketingPendantImageId',
         'countdownSwitch' => 'getCountdownSwitch',
+        'source' => 'getSource',
         'pageTrackUrl' => 'getPageTrackUrl',
         'barrageList' => 'getBarrageList',
         'appGiftPackCode' => 'getAppGiftPackCode',
@@ -447,6 +452,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['floatingZone'] = isset($data['floatingZone']) ? $data['floatingZone'] : null;
         $this->container['marketingPendantImageId'] = isset($data['marketingPendantImageId']) ? $data['marketingPendantImageId'] : null;
         $this->container['countdownSwitch'] = isset($data['countdownSwitch']) ? $data['countdownSwitch'] : null;
+        $this->container['source'] = isset($data['source']) ? $data['source'] : null;
         $this->container['pageTrackUrl'] = isset($data['pageTrackUrl']) ? $data['pageTrackUrl'] : null;
         $this->container['barrageList'] = isset($data['barrageList']) ? $data['barrageList'] : null;
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
@@ -1413,6 +1419,30 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setCountdownSwitch($countdownSwitch)
     {
         $this->container['countdownSwitch'] = $countdownSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets source
+     *
+     * @return \TencentAds\Model\AdCreativeSource|mixed
+     */
+    public function getSource()
+    {
+        return $this->container['source'];
+    }
+
+    /**
+     * Sets source
+     *
+     * @param \TencentAds\Model\AdCreativeSource|mixed $source source
+     *
+     * @return $this
+     */
+    public function setSource($source)
+    {
+        $this->container['source'] = $source;
 
         return $this;
     }

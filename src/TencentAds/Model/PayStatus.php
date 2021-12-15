@@ -1,6 +1,6 @@
 <?php
 /**
- * MediaSourceType
+ * PayStatus
  *
  * PHP version 5
  *
@@ -31,25 +31,25 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MediaSourceType Class Doc Comment
+ * PayStatus Class Doc Comment
  *
  * @category Class
- * @description 视频来源
+ * @description 书籍的付费状态
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MediaSourceType
+class PayStatus
 {
     /**
      * Possible values of this enum
      */
-    const UNSUPPORTED = 'SOURCE_TYPE_UNSUPPORTED';
-    const LOCAL = 'SOURCE_TYPE_LOCAL';
-    const API = 'SOURCE_TYPE_API';
-    const VIDEO_MAKER_XSJ = 'SOURCE_TYPE_VIDEO_MAKER_XSJ';
-    const TCC = 'SOURCE_TYPE_TCC';
-    const DERIVE = 'SOURCE_TYPE_DERIVE';
+    const STATUS_FREE = 'PAY_STATUS_FREE';
+    const STATUS_PAID = 'PAY_STATUS_PAID';
+    const STATUS_MEMBER = 'PAY_STATUS_MEMBER';
+    const PENDING = 'PAY_PENDING';
+    const OK = 'PAY_OK';
+    const REFUND = 'PAY_REFUND';
     
     /**
      * Gets allowable values of the enum
@@ -58,12 +58,12 @@ class MediaSourceType
     public static function getAllowableEnumValues()
     {
         return [
-            self::UNSUPPORTED,
-            self::LOCAL,
-            self::API,
-            self::VIDEO_MAKER_XSJ,
-            self::TCC,
-            self::DERIVE,
+            self::STATUS_FREE,
+            self::STATUS_PAID,
+            self::STATUS_MEMBER,
+            self::PENDING,
+            self::OK,
+            self::REFUND,
         ];
     }
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * MediaSourceType
+ * ProductionPlace
  *
  * PHP version 5
  *
@@ -31,25 +31,24 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MediaSourceType Class Doc Comment
+ * ProductionPlace Class Doc Comment
  *
  * @category Class
- * @description 视频来源
+ * @description 内容产地，作品产地，主要用于漫画类作品
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MediaSourceType
+class ProductionPlace
 {
     /**
      * Possible values of this enum
      */
-    const UNSUPPORTED = 'SOURCE_TYPE_UNSUPPORTED';
-    const LOCAL = 'SOURCE_TYPE_LOCAL';
-    const API = 'SOURCE_TYPE_API';
-    const VIDEO_MAKER_XSJ = 'SOURCE_TYPE_VIDEO_MAKER_XSJ';
-    const TCC = 'SOURCE_TYPE_TCC';
-    const DERIVE = 'SOURCE_TYPE_DERIVE';
+    const JP = 'PRODUCTION_PLACE_JP';
+    const RK = 'PRODUCTION_PLACE_RK';
+    const US = 'PRODUCTION_PLACE_US';
+    const CN = 'PRODUCTION_PLACE_CN';
+    const OTHER = 'PRODUCTION_PLACE_OTHER';
     
     /**
      * Gets allowable values of the enum
@@ -58,12 +57,11 @@ class MediaSourceType
     public static function getAllowableEnumValues()
     {
         return [
-            self::UNSUPPORTED,
-            self::LOCAL,
-            self::API,
-            self::VIDEO_MAKER_XSJ,
-            self::TCC,
-            self::DERIVE,
+            self::JP,
+            self::RK,
+            self::US,
+            self::CN,
+            self::OTHER,
         ];
     }
 }

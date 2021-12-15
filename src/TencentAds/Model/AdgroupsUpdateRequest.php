@@ -89,6 +89,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoAcquisitionEnabled' => 'bool',
         'autoAcquisitionBudget' => 'int',
         'autoDerivedCreativeEnabled' => 'bool',
+        'autoDerivedCreativeStatus' => '\TencentAds\Model\AutoDerivedCreativeStatus',
         'userActionSets' => '\TencentAds\Model\UserActionSetStruct[]',
         'dynamicAdSpec' => '\TencentAds\Model\DynamicAdSpec',
         'customAdgroupTag' => 'string[]',
@@ -133,6 +134,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoAcquisitionEnabled' => null,
         'autoAcquisitionBudget' => 'int64',
         'autoDerivedCreativeEnabled' => null,
+        'autoDerivedCreativeStatus' => null,
         'userActionSets' => null,
         'dynamicAdSpec' => null,
         'customAdgroupTag' => null,
@@ -198,6 +200,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoAcquisitionEnabled' => 'auto_acquisition_enabled',
         'autoAcquisitionBudget' => 'auto_acquisition_budget',
         'autoDerivedCreativeEnabled' => 'auto_derived_creative_enabled',
+        'autoDerivedCreativeStatus' => 'auto_derived_creative_status',
         'userActionSets' => 'user_action_sets',
         'dynamicAdSpec' => 'dynamic_ad_spec',
         'customAdgroupTag' => 'custom_adgroup_tag',
@@ -242,6 +245,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoAcquisitionEnabled' => 'setAutoAcquisitionEnabled',
         'autoAcquisitionBudget' => 'setAutoAcquisitionBudget',
         'autoDerivedCreativeEnabled' => 'setAutoDerivedCreativeEnabled',
+        'autoDerivedCreativeStatus' => 'setAutoDerivedCreativeStatus',
         'userActionSets' => 'setUserActionSets',
         'dynamicAdSpec' => 'setDynamicAdSpec',
         'customAdgroupTag' => 'setCustomAdgroupTag',
@@ -286,6 +290,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoAcquisitionEnabled' => 'getAutoAcquisitionEnabled',
         'autoAcquisitionBudget' => 'getAutoAcquisitionBudget',
         'autoDerivedCreativeEnabled' => 'getAutoDerivedCreativeEnabled',
+        'autoDerivedCreativeStatus' => 'getAutoDerivedCreativeStatus',
         'userActionSets' => 'getUserActionSets',
         'dynamicAdSpec' => 'getDynamicAdSpec',
         'customAdgroupTag' => 'getCustomAdgroupTag',
@@ -384,6 +389,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['autoAcquisitionEnabled'] = isset($data['autoAcquisitionEnabled']) ? $data['autoAcquisitionEnabled'] : null;
         $this->container['autoAcquisitionBudget'] = isset($data['autoAcquisitionBudget']) ? $data['autoAcquisitionBudget'] : null;
         $this->container['autoDerivedCreativeEnabled'] = isset($data['autoDerivedCreativeEnabled']) ? $data['autoDerivedCreativeEnabled'] : null;
+        $this->container['autoDerivedCreativeStatus'] = isset($data['autoDerivedCreativeStatus']) ? $data['autoDerivedCreativeStatus'] : null;
         $this->container['userActionSets'] = isset($data['userActionSets']) ? $data['userActionSets'] : null;
         $this->container['dynamicAdSpec'] = isset($data['dynamicAdSpec']) ? $data['dynamicAdSpec'] : null;
         $this->container['customAdgroupTag'] = isset($data['customAdgroupTag']) ? $data['customAdgroupTag'] : null;
@@ -1178,6 +1184,30 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setAutoDerivedCreativeEnabled($autoDerivedCreativeEnabled)
     {
         $this->container['autoDerivedCreativeEnabled'] = $autoDerivedCreativeEnabled;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoDerivedCreativeStatus
+     *
+     * @return \TencentAds\Model\AutoDerivedCreativeStatus|mixed
+     */
+    public function getAutoDerivedCreativeStatus()
+    {
+        return $this->container['autoDerivedCreativeStatus'];
+    }
+
+    /**
+     * Sets autoDerivedCreativeStatus
+     *
+     * @param \TencentAds\Model\AutoDerivedCreativeStatus|mixed $autoDerivedCreativeStatus autoDerivedCreativeStatus
+     *
+     * @return $this
+     */
+    public function setAutoDerivedCreativeStatus($autoDerivedCreativeStatus)
+    {
+        $this->container['autoDerivedCreativeStatus'] = $autoDerivedCreativeStatus;
 
         return $this;
     }

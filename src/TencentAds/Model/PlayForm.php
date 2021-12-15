@@ -1,6 +1,6 @@
 <?php
 /**
- * MediaSourceType
+ * PlayForm
  *
  * PHP version 5
  *
@@ -31,25 +31,22 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MediaSourceType Class Doc Comment
+ * PlayForm Class Doc Comment
  *
  * @category Class
- * @description 视频来源
+ * @description 播讲形式，作品展现形式，主要用于音频类作品
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MediaSourceType
+class PlayForm
 {
     /**
      * Possible values of this enum
      */
-    const UNSUPPORTED = 'SOURCE_TYPE_UNSUPPORTED';
-    const LOCAL = 'SOURCE_TYPE_LOCAL';
-    const API = 'SOURCE_TYPE_API';
-    const VIDEO_MAKER_XSJ = 'SOURCE_TYPE_VIDEO_MAKER_XSJ';
-    const TCC = 'SOURCE_TYPE_TCC';
-    const DERIVE = 'SOURCE_TYPE_DERIVE';
+    const ONE = 'PLAY_FORM_BY_ONE';
+    const TWO = 'PLAY_FORM_BY_TWO';
+    const MULTI = 'PLAY_FORM_BY_MULTI';
     
     /**
      * Gets allowable values of the enum
@@ -58,12 +55,9 @@ class MediaSourceType
     public static function getAllowableEnumValues()
     {
         return [
-            self::UNSUPPORTED,
-            self::LOCAL,
-            self::API,
-            self::VIDEO_MAKER_XSJ,
-            self::TCC,
-            self::DERIVE,
+            self::ONE,
+            self::TWO,
+            self::MULTI,
         ];
     }
 }

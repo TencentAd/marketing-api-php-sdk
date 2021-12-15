@@ -1,6 +1,6 @@
 <?php
 /**
- * MediaSourceType
+ * CartoonColor
  *
  * PHP version 5
  *
@@ -31,25 +31,21 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MediaSourceType Class Doc Comment
+ * CartoonColor Class Doc Comment
  *
  * @category Class
- * @description 视频来源
+ * @description 漫画色彩，作品产地，主要用于漫画类作品
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MediaSourceType
+class CartoonColor
 {
     /**
      * Possible values of this enum
      */
-    const UNSUPPORTED = 'SOURCE_TYPE_UNSUPPORTED';
-    const LOCAL = 'SOURCE_TYPE_LOCAL';
-    const API = 'SOURCE_TYPE_API';
-    const VIDEO_MAKER_XSJ = 'SOURCE_TYPE_VIDEO_MAKER_XSJ';
-    const TCC = 'SOURCE_TYPE_TCC';
-    const DERIVE = 'SOURCE_TYPE_DERIVE';
+    const MULTI = 'CARTOON_COLOR_MULTI';
+    const BLACK_WHITE = 'CARTOON_COLOR_BLACK_WHITE';
     
     /**
      * Gets allowable values of the enum
@@ -58,12 +54,8 @@ class MediaSourceType
     public static function getAllowableEnumValues()
     {
         return [
-            self::UNSUPPORTED,
-            self::LOCAL,
-            self::API,
-            self::VIDEO_MAKER_XSJ,
-            self::TCC,
-            self::DERIVE,
+            self::MULTI,
+            self::BLACK_WHITE,
         ];
     }
 }
