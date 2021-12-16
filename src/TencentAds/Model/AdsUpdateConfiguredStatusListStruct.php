@@ -60,7 +60,8 @@ class AdsUpdateConfiguredStatusListStruct implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'code' => 'int',
         'message' => 'string',
-        'messageCn' => 'string'
+        'messageCn' => 'string',
+        'adId' => 'int'
     ];
 
     /**
@@ -71,7 +72,8 @@ class AdsUpdateConfiguredStatusListStruct implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'code' => 'int64',
         'message' => null,
-        'messageCn' => null
+        'messageCn' => null,
+        'adId' => 'int64'
     ];
 
     /**
@@ -103,7 +105,8 @@ class AdsUpdateConfiguredStatusListStruct implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'code' => 'code',
         'message' => 'message',
-        'messageCn' => 'message_cn'
+        'messageCn' => 'message_cn',
+        'adId' => 'ad_id'
     ];
 
     /**
@@ -114,7 +117,8 @@ class AdsUpdateConfiguredStatusListStruct implements ModelInterface, ArrayAccess
     protected static $setters = [
         'code' => 'setCode',
         'message' => 'setMessage',
-        'messageCn' => 'setMessageCn'
+        'messageCn' => 'setMessageCn',
+        'adId' => 'setAdId'
     ];
 
     /**
@@ -125,7 +129,8 @@ class AdsUpdateConfiguredStatusListStruct implements ModelInterface, ArrayAccess
     protected static $getters = [
         'code' => 'getCode',
         'message' => 'getMessage',
-        'messageCn' => 'getMessageCn'
+        'messageCn' => 'getMessageCn',
+        'adId' => 'getAdId'
     ];
 
     /**
@@ -191,6 +196,7 @@ class AdsUpdateConfiguredStatusListStruct implements ModelInterface, ArrayAccess
         $this->container['code'] = isset($data['code']) ? $data['code'] : null;
         $this->container['message'] = isset($data['message']) ? $data['message'] : null;
         $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['adId'] = isset($data['adId']) ? $data['adId'] : null;
     }
 
     /**
@@ -285,6 +291,30 @@ class AdsUpdateConfiguredStatusListStruct implements ModelInterface, ArrayAccess
     public function setMessageCn($messageCn)
     {
         $this->container['messageCn'] = $messageCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets adId
+     *
+     * @return int|mixed
+     */
+    public function getAdId()
+    {
+        return $this->container['adId'];
+    }
+
+    /**
+     * Sets adId
+     *
+     * @param int|mixed $adId adId
+     *
+     * @return $this
+     */
+    public function setAdId($adId)
+    {
+        $this->container['adId'] = $adId;
 
         return $this;
     }

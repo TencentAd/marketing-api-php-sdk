@@ -60,7 +60,8 @@ class AdvertiserUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcce
     protected static $swaggerTypes = [
         'code' => 'int',
         'message' => 'string',
-        'messageCn' => 'string'
+        'messageCn' => 'string',
+        'accountId' => 'int'
     ];
 
     /**
@@ -71,7 +72,8 @@ class AdvertiserUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcce
     protected static $swaggerFormats = [
         'code' => 'int64',
         'message' => null,
-        'messageCn' => null
+        'messageCn' => null,
+        'accountId' => 'int64'
     ];
 
     /**
@@ -103,7 +105,8 @@ class AdvertiserUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcce
     protected static $attributeMap = [
         'code' => 'code',
         'message' => 'message',
-        'messageCn' => 'message_cn'
+        'messageCn' => 'message_cn',
+        'accountId' => 'account_id'
     ];
 
     /**
@@ -114,7 +117,8 @@ class AdvertiserUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcce
     protected static $setters = [
         'code' => 'setCode',
         'message' => 'setMessage',
-        'messageCn' => 'setMessageCn'
+        'messageCn' => 'setMessageCn',
+        'accountId' => 'setAccountId'
     ];
 
     /**
@@ -125,7 +129,8 @@ class AdvertiserUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcce
     protected static $getters = [
         'code' => 'getCode',
         'message' => 'getMessage',
-        'messageCn' => 'getMessageCn'
+        'messageCn' => 'getMessageCn',
+        'accountId' => 'getAccountId'
     ];
 
     /**
@@ -191,6 +196,7 @@ class AdvertiserUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcce
         $this->container['code'] = isset($data['code']) ? $data['code'] : null;
         $this->container['message'] = isset($data['message']) ? $data['message'] : null;
         $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
     /**
@@ -285,6 +291,30 @@ class AdvertiserUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcce
     public function setMessageCn($messageCn)
     {
         $this->container['messageCn'] = $messageCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets accountId
+     *
+     * @return int|mixed
+     */
+    public function getAccountId()
+    {
+        return $this->container['accountId'];
+    }
+
+    /**
+     * Sets accountId
+     *
+     * @param int|mixed $accountId accountId
+     *
+     * @return $this
+     */
+    public function setAccountId($accountId)
+    {
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }

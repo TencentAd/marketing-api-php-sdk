@@ -60,7 +60,8 @@ class CampaignsUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcces
     protected static $swaggerTypes = [
         'code' => 'int',
         'message' => 'string',
-        'messageCn' => 'string'
+        'messageCn' => 'string',
+        'campaignId' => 'int'
     ];
 
     /**
@@ -71,7 +72,8 @@ class CampaignsUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcces
     protected static $swaggerFormats = [
         'code' => 'int64',
         'message' => null,
-        'messageCn' => null
+        'messageCn' => null,
+        'campaignId' => 'int64'
     ];
 
     /**
@@ -103,7 +105,8 @@ class CampaignsUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcces
     protected static $attributeMap = [
         'code' => 'code',
         'message' => 'message',
-        'messageCn' => 'message_cn'
+        'messageCn' => 'message_cn',
+        'campaignId' => 'campaign_id'
     ];
 
     /**
@@ -114,7 +117,8 @@ class CampaignsUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcces
     protected static $setters = [
         'code' => 'setCode',
         'message' => 'setMessage',
-        'messageCn' => 'setMessageCn'
+        'messageCn' => 'setMessageCn',
+        'campaignId' => 'setCampaignId'
     ];
 
     /**
@@ -125,7 +129,8 @@ class CampaignsUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcces
     protected static $getters = [
         'code' => 'getCode',
         'message' => 'getMessage',
-        'messageCn' => 'getMessageCn'
+        'messageCn' => 'getMessageCn',
+        'campaignId' => 'getCampaignId'
     ];
 
     /**
@@ -191,6 +196,7 @@ class CampaignsUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcces
         $this->container['code'] = isset($data['code']) ? $data['code'] : null;
         $this->container['message'] = isset($data['message']) ? $data['message'] : null;
         $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
     }
 
     /**
@@ -285,6 +291,30 @@ class CampaignsUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcces
     public function setMessageCn($messageCn)
     {
         $this->container['messageCn'] = $messageCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets campaignId
+     *
+     * @return int|mixed
+     */
+    public function getCampaignId()
+    {
+        return $this->container['campaignId'];
+    }
+
+    /**
+     * Sets campaignId
+     *
+     * @param int|mixed $campaignId campaignId
+     *
+     * @return $this
+     */
+    public function setCampaignId($campaignId)
+    {
+        $this->container['campaignId'] = $campaignId;
 
         return $this;
     }

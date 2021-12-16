@@ -60,7 +60,8 @@ class AdgroupsUpdateDatetimeListStruct implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'code' => 'int',
         'message' => 'string',
-        'messageCn' => 'string'
+        'messageCn' => 'string',
+        'adgroupId' => 'int'
     ];
 
     /**
@@ -71,7 +72,8 @@ class AdgroupsUpdateDatetimeListStruct implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'code' => 'int64',
         'message' => null,
-        'messageCn' => null
+        'messageCn' => null,
+        'adgroupId' => 'int64'
     ];
 
     /**
@@ -103,7 +105,8 @@ class AdgroupsUpdateDatetimeListStruct implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'code' => 'code',
         'message' => 'message',
-        'messageCn' => 'message_cn'
+        'messageCn' => 'message_cn',
+        'adgroupId' => 'adgroup_id'
     ];
 
     /**
@@ -114,7 +117,8 @@ class AdgroupsUpdateDatetimeListStruct implements ModelInterface, ArrayAccess
     protected static $setters = [
         'code' => 'setCode',
         'message' => 'setMessage',
-        'messageCn' => 'setMessageCn'
+        'messageCn' => 'setMessageCn',
+        'adgroupId' => 'setAdgroupId'
     ];
 
     /**
@@ -125,7 +129,8 @@ class AdgroupsUpdateDatetimeListStruct implements ModelInterface, ArrayAccess
     protected static $getters = [
         'code' => 'getCode',
         'message' => 'getMessage',
-        'messageCn' => 'getMessageCn'
+        'messageCn' => 'getMessageCn',
+        'adgroupId' => 'getAdgroupId'
     ];
 
     /**
@@ -191,6 +196,7 @@ class AdgroupsUpdateDatetimeListStruct implements ModelInterface, ArrayAccess
         $this->container['code'] = isset($data['code']) ? $data['code'] : null;
         $this->container['message'] = isset($data['message']) ? $data['message'] : null;
         $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
     }
 
     /**
@@ -285,6 +291,30 @@ class AdgroupsUpdateDatetimeListStruct implements ModelInterface, ArrayAccess
     public function setMessageCn($messageCn)
     {
         $this->container['messageCn'] = $messageCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets adgroupId
+     *
+     * @return int|mixed
+     */
+    public function getAdgroupId()
+    {
+        return $this->container['adgroupId'];
+    }
+
+    /**
+     * Sets adgroupId
+     *
+     * @param int|mixed $adgroupId adgroupId
+     *
+     * @return $this
+     */
+    public function setAdgroupId($adgroupId)
+    {
+        $this->container['adgroupId'] = $adgroupId;
 
         return $this;
     }
