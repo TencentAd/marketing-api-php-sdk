@@ -8,6 +8,7 @@ use TencentAds\Helper\Url;
 use TencentAds\Kernel\ApiContainer;
 use TencentAds\Kernel\BatchHandler;
 use TencentAds\Kernel\BatchResponse;
+use TencentAds\Kernel\SerializerHandler;
 use TencentAds\TencentAds;
 
 class BatchRequest extends ApiContainer
@@ -28,7 +29,11 @@ class BatchRequest extends ApiContainer
             'batch_request_spec' => $batchRequestSpec,
             'account_id' => $accountId,
         ]);
-        $responses = $data->getList();
+        if ($this->app->getSerializerType() == SerializerHandler::SERIALIZER_TYPE_ARRAY) {
+            $responses = $data['list'];
+        } else {
+            $responses = $data->getList();
+        }
         $batchHandler = BatchHandler::getInstance();
         return $batchHandler->getResponses($batchRequest, $responses);
     }

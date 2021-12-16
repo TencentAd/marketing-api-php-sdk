@@ -52,7 +52,7 @@ class BatchResponse
             }
             if ($data['code'] != 0) {
                 $self->e = new TencentAdsResponseException(
-                    $response['message'], $response['code'], [], null, $response['message_cn']
+                    $data['message'], $data['code'], [], null, $data['message_cn']
                 );
             }
             if (isset($data['data'])) {

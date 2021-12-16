@@ -11,6 +11,7 @@ use GuzzleHttp\Client;
 use Monolog\Logger;
 use TencentAds\Exception\TencentAdsSDKException;
 use TencentAds\Kernel\Log;
+use TencentAds\Kernel\SerializerHandler;
 use TencentAds\Kernel\Tools;
 use TencentAds\Middleware\AuthMiddleware;
 use TencentAds\Middleware\DiffHostMiddleware;
@@ -32,7 +33,7 @@ class TencentAds extends Tools
      * SDK version
      * @var string
      */
-    protected $version = '1.1.31';
+    protected $version = '1.1.32';
 
     /**
      * SDK version
@@ -194,6 +195,14 @@ class TencentAds extends Tools
     {
         $this->globalConfig['serializer'] = $type;
         return $this;
+    }
+
+    public function getSerializerType()
+    {
+        if (!empty($this->globalConfig['serializer'])) {
+            return $this->globalConfig['serializer'];
+        }
+        return SerializerHandler::SERIALIZER_TYPE_CLASS;
     }
 
     /**

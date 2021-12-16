@@ -5,6 +5,7 @@ namespace TencentAds\Tools;
 use TencentAds\ApiException;
 use TencentAds\Kernel\ApiContainer;
 use TencentAds\Exception\TencentAdsSDKException;
+use TencentAds\Kernel\SerializerHandler;
 
 class RapidAddAds extends ApiContainer
 {
@@ -156,10 +157,18 @@ class RapidAddAds extends ApiContainer
         $func = function () use ($campaignRequest) {
             $campaignResponse = $this->app->campaigns()
                                           ->add($campaignRequest);
-            if (!empty($campaignResponse->getCampaignId())) {
-                $this->campaignId = $campaignResponse->getCampaignId();
+            if ($this->app->getSerializerType() == SerializerHandler::SERIALIZER_TYPE_ARRAY) {
+                if (!empty($campaignResponse['campaign_id'])) {
+                    $this->campaignId = $campaignResponse['campaign_id'];
 
-                return true;
+                    return true;
+                }
+            } else {
+                if (!empty($campaignResponse->getCampaignId())) {
+                    $this->campaignId = $campaignResponse->getCampaignId();
+
+                    return true;
+                }
             }
 
             return null;
@@ -227,31 +236,53 @@ class RapidAddAds extends ApiContainer
                         case 'adgroups/add':
                             $adgroupList = $this->app->adgroups()
                                                      ->get($getParam);
-                            if (!empty($adgroupList) && !empty($adgroupList->getList()) && count($adgroupList->getList()) == 1) {
-                                $this->adgroupId = $adgroupList->getList()[0]->getAdgroupId();
+                            if ($this->app->getSerializerType() == SerializerHandler::SERIALIZER_TYPE_ARRAY) {
+                                if (!empty($adgroupList) && !empty($adgroupList['list']) && count($adgroupList['list']) == 1) {
+                                    $this->adgroupId = $adgroupList['list'][0]['adgroup_id'];
+                                } else {
+                                    $nextRoundBatchParam [] = $this->batchParam[$key];
+                                }
                             } else {
-                                $nextRoundBatchParam [] = $this->batchParam[$key];
+                                if (!empty($adgroupList) && !empty($adgroupList->getList()) && count($adgroupList->getList()) == 1) {
+                                    $this->adgroupId = $adgroupList->getList()[0]->getAdgroupId();
+                                } else {
+                                    $nextRoundBatchParam [] = $this->batchParam[$key];
+                                }
                             }
                             break;
                         case 'adcreatives/add':
                             $adcreativeList = $this->app->adcreatives()
                                                         ->get($getParam);
-                            if (!empty($adcreativeList) && !empty($adcreativeList->getList()) && count($adcreativeList->getList()) == 1) {
-                                $this->adcreativeId = $adcreativeList->getList()[0]->getAdcreativeId();
+                            if ($this->app->getSerializerType() == SerializerHandler::SERIALIZER_TYPE_ARRAY) {
+                                if (!empty($adcreativeList) && !empty($adcreativeList['list']) && count($adcreativeList['list']) == 1) {
+                                    $this->adcreativeId = $adcreativeList['list'][0]['adcreative_id'];
+                                } else {
+                                    $nextRoundBatchParam [] = $this->batchParam[$key];
+                                }
                             } else {
-                                $nextRoundBatchParam [] = $this->batchParam[$key];
+                                if (!empty($adcreativeList) && !empty($adcreativeList->getList()) && count($adcreativeList->getList()) == 1) {
+                                    $this->adcreativeId = $adcreativeList->getList()[0]->getAdcreativeId();
+                                } else {
+                                    $nextRoundBatchParam [] = $this->batchParam[$key];
+                                }
                             }
                             break;
                     }
                 } else {
                     switch ($action) {
                         case 'adgroups/add':
-                            $this->adgroupId = $response->getData()
-                                                        ->getAdgroupId();
+                            if ($this->app->getSerializerType() == SerializerHandler::SERIALIZER_TYPE_ARRAY) {
+                                $this->adgroupId = $response->getData()['adgroup_id'];
+                            } else {
+                                $this->adgroupId = $response->getData()->getAdgroupId();
+                            }
                             break;
                         case 'adcreatives/add':
-                            $this->adcreativeId = $response->getData()
-                                                           ->getAdcreativeId();
+                            if ($this->app->getSerializerType() == SerializerHandler::SERIALIZER_TYPE_ARRAY) {
+                                $this->adcreativeId = $response->getData()['adcreative_id'];
+                            } else {
+                                $this->adcreativeId = $response->getData()->getAdcreativeId();
+                            }
                             break;
                     }
                 }
@@ -320,10 +351,18 @@ class RapidAddAds extends ApiContainer
             try {
                 $adResponse = $this->app->ads()
                                         ->add($adRequest);
-                if (!empty($adResponse->getAdId())) {
-                    $this->adId = $adResponse->getAdId();
+                if ($this->app->getSerializerType() == SerializerHandler::SERIALIZER_TYPE_ARRAY) {
+                    if (!empty($adResponse['ad_id'])) {
+                        $this->adId = $adResponse['ad_id'];
 
-                    return true;
+                        return true;
+                    }
+                } else {
+                    if (!empty($adResponse->getAdId())) {
+                        $this->adId = $adResponse->getAdId();
+
+                        return true;
+                    }
                 }
             } catch (ApiException $e) {
                 // 先获取，排除因超时失败的
@@ -339,10 +378,18 @@ class RapidAddAds extends ApiContainer
                                             ],
                                         ],
                                     ]);
-                if (!empty($adList) && !empty($adList->getList()) && count($adList->getList()) == 1) {
-                    $this->adId = $adList->getList()[0]->getAdId();
+                if ($this->app->getSerializerType() == SerializerHandler::SERIALIZER_TYPE_ARRAY) {
+                    if (!empty($adList) && !empty($adList['list']) && count($adList['list']) == 1) {
+                        $this->adId = $adList-['list'][0]['ad_id'];
 
-                    return true;
+                        return true;
+                    }
+                } else {
+                    if (!empty($adList) && !empty($adList->getList()) && count($adList->getList()) == 1) {
+                        $this->adId = $adList->getList()[0]->getAdId();
+
+                        return true;
+                    }
                 }
             }
 
