@@ -44,7 +44,8 @@ class ComponentsPageType
     /**
      * Possible values of this enum
      */
-    const PAGE_TYPE_XIJING_ANDROID = 'PAGE_TYPE_XIJING_ANDROID';
+    const ANDROID = 'PAGE_TYPE_XIJING_ANDROID';
+    const IOS = 'PAGE_TYPE_XIJING_IOS';
     
     /**
      * Gets allowable values of the enum
@@ -53,7 +54,8 @@ class ComponentsPageType
     public static function getAllowableEnumValues()
     {
         return [
-            self::PAGE_TYPE_XIJING_ANDROID,
+            self::ANDROID,
+            self::IOS,
         ];
     }
 }
