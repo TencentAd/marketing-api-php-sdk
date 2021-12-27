@@ -514,6 +514,15 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activeD7ActivePayRate' => 'double',
         'activeD7PayCost' => 'int',
         'miniGameFirstDayPayingPlaRoi' => 'double',
+        'miniGameFirstPayPlaCost' => 'int',
+        'miniGamePayD3Roi' => 'double',
+        'miniGamePayD7Roi' => 'int',
+        'miniGamePayD14Roi' => 'double',
+        'miniGamePayD30Roi' => 'double',
+        'miniGamePayD3PlaRoi' => 'double',
+        'miniGamePayD7PlaRoi' => 'double',
+        'miniGamePayD14PlaRoi' => 'double',
+        'miniGamePayD30PlaRoi' => 'double',
         'campaignId' => 'int',
         'campaignName' => 'string',
         'webAddToCartCount' => 'int',
@@ -1059,6 +1068,15 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activeD7ActivePayRate' => 'double',
         'activeD7PayCost' => 'int64',
         'miniGameFirstDayPayingPlaRoi' => 'double',
+        'miniGameFirstPayPlaCost' => 'int64',
+        'miniGamePayD3Roi' => 'double',
+        'miniGamePayD7Roi' => 'int64',
+        'miniGamePayD14Roi' => 'double',
+        'miniGamePayD30Roi' => 'double',
+        'miniGamePayD3PlaRoi' => 'double',
+        'miniGamePayD7PlaRoi' => 'double',
+        'miniGamePayD14PlaRoi' => 'double',
+        'miniGamePayD30PlaRoi' => 'double',
         'campaignId' => 'int64',
         'campaignName' => null,
         'webAddToCartCount' => 'int64',
@@ -1625,6 +1643,15 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activeD7ActivePayRate' => 'active_d7_active_pay_rate',
         'activeD7PayCost' => 'active_d7_pay_cost',
         'miniGameFirstDayPayingPlaRoi' => 'mini_game_first_day_paying_pla_roi',
+        'miniGameFirstPayPlaCost' => 'mini_game_first_pay_pla_cost',
+        'miniGamePayD3Roi' => 'mini_game_pay_d3_roi',
+        'miniGamePayD7Roi' => 'mini_game_pay_d7_roi',
+        'miniGamePayD14Roi' => 'mini_game_pay_d14_roi',
+        'miniGamePayD30Roi' => 'mini_game_pay_d30_roi',
+        'miniGamePayD3PlaRoi' => 'mini_game_pay_d3_pla_roi',
+        'miniGamePayD7PlaRoi' => 'mini_game_pay_d7_pla_roi',
+        'miniGamePayD14PlaRoi' => 'mini_game_pay_d14_pla_roi',
+        'miniGamePayD30PlaRoi' => 'mini_game_pay_d30_pla_roi',
         'campaignId' => 'campaign_id',
         'campaignName' => 'campaign_name',
         'webAddToCartCount' => 'web_add_to_cart_count',
@@ -2170,6 +2197,15 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activeD7ActivePayRate' => 'setActiveD7ActivePayRate',
         'activeD7PayCost' => 'setActiveD7PayCost',
         'miniGameFirstDayPayingPlaRoi' => 'setMiniGameFirstDayPayingPlaRoi',
+        'miniGameFirstPayPlaCost' => 'setMiniGameFirstPayPlaCost',
+        'miniGamePayD3Roi' => 'setMiniGamePayD3Roi',
+        'miniGamePayD7Roi' => 'setMiniGamePayD7Roi',
+        'miniGamePayD14Roi' => 'setMiniGamePayD14Roi',
+        'miniGamePayD30Roi' => 'setMiniGamePayD30Roi',
+        'miniGamePayD3PlaRoi' => 'setMiniGamePayD3PlaRoi',
+        'miniGamePayD7PlaRoi' => 'setMiniGamePayD7PlaRoi',
+        'miniGamePayD14PlaRoi' => 'setMiniGamePayD14PlaRoi',
+        'miniGamePayD30PlaRoi' => 'setMiniGamePayD30PlaRoi',
         'campaignId' => 'setCampaignId',
         'campaignName' => 'setCampaignName',
         'webAddToCartCount' => 'setWebAddToCartCount',
@@ -2715,6 +2751,15 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activeD7ActivePayRate' => 'getActiveD7ActivePayRate',
         'activeD7PayCost' => 'getActiveD7PayCost',
         'miniGameFirstDayPayingPlaRoi' => 'getMiniGameFirstDayPayingPlaRoi',
+        'miniGameFirstPayPlaCost' => 'getMiniGameFirstPayPlaCost',
+        'miniGamePayD3Roi' => 'getMiniGamePayD3Roi',
+        'miniGamePayD7Roi' => 'getMiniGamePayD7Roi',
+        'miniGamePayD14Roi' => 'getMiniGamePayD14Roi',
+        'miniGamePayD30Roi' => 'getMiniGamePayD30Roi',
+        'miniGamePayD3PlaRoi' => 'getMiniGamePayD3PlaRoi',
+        'miniGamePayD7PlaRoi' => 'getMiniGamePayD7PlaRoi',
+        'miniGamePayD14PlaRoi' => 'getMiniGamePayD14PlaRoi',
+        'miniGamePayD30PlaRoi' => 'getMiniGamePayD30PlaRoi',
         'campaignId' => 'getCampaignId',
         'campaignName' => 'getCampaignName',
         'webAddToCartCount' => 'getWebAddToCartCount',
@@ -3314,6 +3359,15 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['activeD7ActivePayRate'] = isset($data['activeD7ActivePayRate']) ? $data['activeD7ActivePayRate'] : null;
         $this->container['activeD7PayCost'] = isset($data['activeD7PayCost']) ? $data['activeD7PayCost'] : null;
         $this->container['miniGameFirstDayPayingPlaRoi'] = isset($data['miniGameFirstDayPayingPlaRoi']) ? $data['miniGameFirstDayPayingPlaRoi'] : null;
+        $this->container['miniGameFirstPayPlaCost'] = isset($data['miniGameFirstPayPlaCost']) ? $data['miniGameFirstPayPlaCost'] : null;
+        $this->container['miniGamePayD3Roi'] = isset($data['miniGamePayD3Roi']) ? $data['miniGamePayD3Roi'] : null;
+        $this->container['miniGamePayD7Roi'] = isset($data['miniGamePayD7Roi']) ? $data['miniGamePayD7Roi'] : null;
+        $this->container['miniGamePayD14Roi'] = isset($data['miniGamePayD14Roi']) ? $data['miniGamePayD14Roi'] : null;
+        $this->container['miniGamePayD30Roi'] = isset($data['miniGamePayD30Roi']) ? $data['miniGamePayD30Roi'] : null;
+        $this->container['miniGamePayD3PlaRoi'] = isset($data['miniGamePayD3PlaRoi']) ? $data['miniGamePayD3PlaRoi'] : null;
+        $this->container['miniGamePayD7PlaRoi'] = isset($data['miniGamePayD7PlaRoi']) ? $data['miniGamePayD7PlaRoi'] : null;
+        $this->container['miniGamePayD14PlaRoi'] = isset($data['miniGamePayD14PlaRoi']) ? $data['miniGamePayD14PlaRoi'] : null;
+        $this->container['miniGamePayD30PlaRoi'] = isset($data['miniGamePayD30PlaRoi']) ? $data['miniGamePayD30PlaRoi'] : null;
         $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
         $this->container['campaignName'] = isset($data['campaignName']) ? $data['campaignName'] : null;
         $this->container['webAddToCartCount'] = isset($data['webAddToCartCount']) ? $data['webAddToCartCount'] : null;
@@ -14361,6 +14415,222 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setMiniGameFirstDayPayingPlaRoi($miniGameFirstDayPayingPlaRoi)
     {
         $this->container['miniGameFirstDayPayingPlaRoi'] = $miniGameFirstDayPayingPlaRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameFirstPayPlaCost
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameFirstPayPlaCost()
+    {
+        return $this->container['miniGameFirstPayPlaCost'];
+    }
+
+    /**
+     * Sets miniGameFirstPayPlaCost
+     *
+     * @param int|mixed $miniGameFirstPayPlaCost miniGameFirstPayPlaCost
+     *
+     * @return $this
+     */
+    public function setMiniGameFirstPayPlaCost($miniGameFirstPayPlaCost)
+    {
+        $this->container['miniGameFirstPayPlaCost'] = $miniGameFirstPayPlaCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayD3Roi
+     *
+     * @return double|mixed
+     */
+    public function getMiniGamePayD3Roi()
+    {
+        return $this->container['miniGamePayD3Roi'];
+    }
+
+    /**
+     * Sets miniGamePayD3Roi
+     *
+     * @param double|mixed $miniGamePayD3Roi miniGamePayD3Roi
+     *
+     * @return $this
+     */
+    public function setMiniGamePayD3Roi($miniGamePayD3Roi)
+    {
+        $this->container['miniGamePayD3Roi'] = $miniGamePayD3Roi;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayD7Roi
+     *
+     * @return int|mixed
+     */
+    public function getMiniGamePayD7Roi()
+    {
+        return $this->container['miniGamePayD7Roi'];
+    }
+
+    /**
+     * Sets miniGamePayD7Roi
+     *
+     * @param int|mixed $miniGamePayD7Roi miniGamePayD7Roi
+     *
+     * @return $this
+     */
+    public function setMiniGamePayD7Roi($miniGamePayD7Roi)
+    {
+        $this->container['miniGamePayD7Roi'] = $miniGamePayD7Roi;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayD14Roi
+     *
+     * @return double|mixed
+     */
+    public function getMiniGamePayD14Roi()
+    {
+        return $this->container['miniGamePayD14Roi'];
+    }
+
+    /**
+     * Sets miniGamePayD14Roi
+     *
+     * @param double|mixed $miniGamePayD14Roi miniGamePayD14Roi
+     *
+     * @return $this
+     */
+    public function setMiniGamePayD14Roi($miniGamePayD14Roi)
+    {
+        $this->container['miniGamePayD14Roi'] = $miniGamePayD14Roi;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayD30Roi
+     *
+     * @return double|mixed
+     */
+    public function getMiniGamePayD30Roi()
+    {
+        return $this->container['miniGamePayD30Roi'];
+    }
+
+    /**
+     * Sets miniGamePayD30Roi
+     *
+     * @param double|mixed $miniGamePayD30Roi miniGamePayD30Roi
+     *
+     * @return $this
+     */
+    public function setMiniGamePayD30Roi($miniGamePayD30Roi)
+    {
+        $this->container['miniGamePayD30Roi'] = $miniGamePayD30Roi;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayD3PlaRoi
+     *
+     * @return double|mixed
+     */
+    public function getMiniGamePayD3PlaRoi()
+    {
+        return $this->container['miniGamePayD3PlaRoi'];
+    }
+
+    /**
+     * Sets miniGamePayD3PlaRoi
+     *
+     * @param double|mixed $miniGamePayD3PlaRoi miniGamePayD3PlaRoi
+     *
+     * @return $this
+     */
+    public function setMiniGamePayD3PlaRoi($miniGamePayD3PlaRoi)
+    {
+        $this->container['miniGamePayD3PlaRoi'] = $miniGamePayD3PlaRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayD7PlaRoi
+     *
+     * @return double|mixed
+     */
+    public function getMiniGamePayD7PlaRoi()
+    {
+        return $this->container['miniGamePayD7PlaRoi'];
+    }
+
+    /**
+     * Sets miniGamePayD7PlaRoi
+     *
+     * @param double|mixed $miniGamePayD7PlaRoi miniGamePayD7PlaRoi
+     *
+     * @return $this
+     */
+    public function setMiniGamePayD7PlaRoi($miniGamePayD7PlaRoi)
+    {
+        $this->container['miniGamePayD7PlaRoi'] = $miniGamePayD7PlaRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayD14PlaRoi
+     *
+     * @return double|mixed
+     */
+    public function getMiniGamePayD14PlaRoi()
+    {
+        return $this->container['miniGamePayD14PlaRoi'];
+    }
+
+    /**
+     * Sets miniGamePayD14PlaRoi
+     *
+     * @param double|mixed $miniGamePayD14PlaRoi miniGamePayD14PlaRoi
+     *
+     * @return $this
+     */
+    public function setMiniGamePayD14PlaRoi($miniGamePayD14PlaRoi)
+    {
+        $this->container['miniGamePayD14PlaRoi'] = $miniGamePayD14PlaRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayD30PlaRoi
+     *
+     * @return double|mixed
+     */
+    public function getMiniGamePayD30PlaRoi()
+    {
+        return $this->container['miniGamePayD30PlaRoi'];
+    }
+
+    /**
+     * Sets miniGamePayD30PlaRoi
+     *
+     * @param double|mixed $miniGamePayD30PlaRoi miniGamePayD30PlaRoi
+     *
+     * @return $this
+     */
+    public function setMiniGamePayD30PlaRoi($miniGamePayD30PlaRoi)
+    {
+        $this->container['miniGamePayD30PlaRoi'] = $miniGamePayD30PlaRoi;
 
         return $this;
     }
