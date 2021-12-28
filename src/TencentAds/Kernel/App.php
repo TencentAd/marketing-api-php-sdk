@@ -61,6 +61,7 @@ use TencentAds\Container\DplabelAdLabelApiContainer;
 use TencentAds\Container\DynamicAdImagesApiContainer;
 use TencentAds\Container\DynamicAdTemplatesApiContainer;
 use TencentAds\Container\DynamicAdVideoApiContainer;
+use TencentAds\Container\DynamicAdVideoTemplatesApiContainer;
 use TencentAds\Container\DynamicCreativesApiContainer;
 use TencentAds\Container\EcommerceOrderApiContainer;
 use TencentAds\Container\EstimationApiContainer;
@@ -334,6 +335,9 @@ class App
 
     /** @var DynamicAdVideoApiContainer */
     public $dynamicAdVideoApiContainer;
+
+    /** @var DynamicAdVideoTemplatesApiContainer */
+    public $dynamicAdVideoTemplatesApiContainer;
 
     /** @var DynamicCreativesApiContainer */
     public $dynamicCreativesApiContainer;
@@ -1444,6 +1448,20 @@ class App
             $this->dynamicAdVideoApiContainer = $container;
         }
         return $this->dynamicAdVideoApiContainer;
+    }
+
+
+    /**
+     * @return DynamicAdVideoTemplatesApiContainer
+     */
+    public function dynamicAdVideoTemplates()
+    {
+        if (empty($this->dynamicAdVideoTemplatesApiContainer)) {
+            $container = new DynamicAdVideoTemplatesApiContainer();
+            $container->init($this, $this->getClient());
+            $this->dynamicAdVideoTemplatesApiContainer = $container;
+        }
+        return $this->dynamicAdVideoTemplatesApiContainer;
     }
 
 
