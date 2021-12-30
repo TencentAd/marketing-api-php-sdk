@@ -89,7 +89,7 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'behaviorOrInterest' => '\TencentAds\Model\BehaviorOrInterest',
         'wechatOfficialAccountCategory' => 'int[]',
         'miniGameQqStatus' => 'string[]',
-        'excludedConvertedAudience' => '\TencentAds\Model\ExcludedConvertedAudienceStruct'
+        'excludedConvertedAudience' => '\TencentAds\Model\ExcludedConvertedAudience'
     ];
 
     /**
@@ -1138,7 +1138,7 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Gets excludedConvertedAudience
      *
-     * @return \TencentAds\Model\ExcludedConvertedAudienceStruct|mixed
+     * @return \TencentAds\Model\ExcludedConvertedAudience|mixed
      */
     public function getExcludedConvertedAudience()
     {
@@ -1148,7 +1148,7 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     /**
      * Sets excludedConvertedAudience
      *
-     * @param \TencentAds\Model\ExcludedConvertedAudienceStruct|mixed $excludedConvertedAudience excludedConvertedAudience
+     * @param \TencentAds\Model\ExcludedConvertedAudience|mixed $excludedConvertedAudience excludedConvertedAudience
      *
      * @return $this
      */

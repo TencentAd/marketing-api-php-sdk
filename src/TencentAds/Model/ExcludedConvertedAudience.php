@@ -1,6 +1,6 @@
 <?php
 /**
- * ExcludedConvertedAudienceStruct
+ * ExcludedConvertedAudience
  *
  * PHP version 5
  *
@@ -33,7 +33,7 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ExcludedConvertedAudienceStruct Class Doc Comment
+ * ExcludedConvertedAudience Class Doc Comment
  *
  * @category Class
  * @description 排除已转化用户定向
@@ -41,7 +41,7 @@ use \TencentAds\ObjectSerializer;
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ExcludedConvertedAudienceStruct implements ModelInterface, ArrayAccess
+class ExcludedConvertedAudience implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class ExcludedConvertedAudienceStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'excluded_converted_audience_struct';
+    protected static $swaggerModelName = 'excluded_converted_audience';
 
     /**
       * Array of property to type mappings. Used for (de)serialization

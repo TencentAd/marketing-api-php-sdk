@@ -96,7 +96,7 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
         'deprecatedCustomAudience' => 'int[]',
         'deprecatedExcludedCustomAudience' => 'int[]',
         'deprecatedRegion' => 'int[]',
-        'excludedConvertedAudience' => '\TencentAds\Model\ExcludedConvertedAudienceStruct'
+        'excludedConvertedAudience' => '\TencentAds\Model\ExcludedConvertedAudience'
     ];
 
     /**
@@ -1348,7 +1348,7 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets excludedConvertedAudience
      *
-     * @return \TencentAds\Model\ExcludedConvertedAudienceStruct|mixed
+     * @return \TencentAds\Model\ExcludedConvertedAudience|mixed
      */
     public function getExcludedConvertedAudience()
     {
@@ -1358,7 +1358,7 @@ class ReadTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets excludedConvertedAudience
      *
-     * @param \TencentAds\Model\ExcludedConvertedAudienceStruct|mixed $excludedConvertedAudience excludedConvertedAudience
+     * @param \TencentAds\Model\ExcludedConvertedAudience|mixed $excludedConvertedAudience excludedConvertedAudience
      *
      * @return $this
      */

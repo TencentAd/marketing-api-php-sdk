@@ -87,7 +87,7 @@ class WriteTargetingSetting implements ModelInterface, ArrayAccess
         'customAudience' => 'int[]',
         'excludedCustomAudience' => 'int[]',
         'behaviorOrInterest' => '\TencentAds\Model\BehaviorOrInterest',
-        'excludedConvertedAudience' => '\TencentAds\Model\ExcludedConvertedAudienceStruct'
+        'excludedConvertedAudience' => '\TencentAds\Model\ExcludedConvertedAudience'
     ];
 
     /**
@@ -1078,7 +1078,7 @@ class WriteTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Gets excludedConvertedAudience
      *
-     * @return \TencentAds\Model\ExcludedConvertedAudienceStruct|mixed
+     * @return \TencentAds\Model\ExcludedConvertedAudience|mixed
      */
     public function getExcludedConvertedAudience()
     {
@@ -1088,7 +1088,7 @@ class WriteTargetingSetting implements ModelInterface, ArrayAccess
     /**
      * Sets excludedConvertedAudience
      *
-     * @param \TencentAds\Model\ExcludedConvertedAudienceStruct|mixed $excludedConvertedAudience excludedConvertedAudience
+     * @param \TencentAds\Model\ExcludedConvertedAudience|mixed $excludedConvertedAudience excludedConvertedAudience
      *
      * @return $this
      */
