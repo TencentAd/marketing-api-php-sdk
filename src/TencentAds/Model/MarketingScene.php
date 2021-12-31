@@ -47,6 +47,7 @@ class MarketingScene
     const _DEFAULT = 'DEFAULT';
     const GAME_RESERVATION = 'GAME_RESERVATION';
     const GAME_PROMOTION = 'GAME_PROMOTION';
+    const APP_ACTIVE_PROMOTION = 'APP_ACTIVE_PROMOTION';
     
     /**
      * Gets allowable values of the enum
@@ -58,6 +59,7 @@ class MarketingScene
             self::_DEFAULT,
             self::GAME_RESERVATION,
             self::GAME_PROMOTION,
+            self::APP_ACTIVE_PROMOTION,
         ];
     }
 }
