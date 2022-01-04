@@ -44,12 +44,12 @@ class PayStatus
     /**
      * Possible values of this enum
      */
-    const STATUS_FREE = 'PAY_STATUS_FREE';
-    const STATUS_PAID = 'PAY_STATUS_PAID';
-    const STATUS_MEMBER = 'PAY_STATUS_MEMBER';
     const PENDING = 'PAY_PENDING';
     const OK = 'PAY_OK';
     const REFUND = 'PAY_REFUND';
+    const STATUS_FREE = 'PAY_STATUS_FREE';
+    const STATUS_PAID = 'PAY_STATUS_PAID';
+    const STATUS_MEMBER = 'PAY_STATUS_MEMBER';
     
     /**
      * Gets allowable values of the enum
@@ -58,12 +58,12 @@ class PayStatus
     public static function getAllowableEnumValues()
     {
         return [
-            self::STATUS_FREE,
-            self::STATUS_PAID,
-            self::STATUS_MEMBER,
             self::PENDING,
             self::OK,
             self::REFUND,
+            self::STATUS_FREE,
+            self::STATUS_PAID,
+            self::STATUS_MEMBER,
         ];
     }
 }
