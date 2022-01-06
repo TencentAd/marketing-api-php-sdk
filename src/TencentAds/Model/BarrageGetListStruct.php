@@ -60,7 +60,7 @@ class BarrageGetListStruct implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'id' => 'int',
         'text' => 'string',
-        'reviewStatus' => '\TencentAds\Model\SysStatus'
+        'reviewStatus' => '\TencentAds\Model\AdStatus'
     ];
 
     /**
@@ -268,7 +268,7 @@ class BarrageGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets reviewStatus
      *
-     * @return \TencentAds\Model\SysStatus|mixed
+     * @return \TencentAds\Model\AdStatus|mixed
      */
     public function getReviewStatus()
     {
@@ -278,7 +278,7 @@ class BarrageGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets reviewStatus
      *
-     * @param \TencentAds\Model\SysStatus|mixed $reviewStatus reviewStatus
+     * @param \TencentAds\Model\AdStatus|mixed $reviewStatus reviewStatus
      *
      * @return $this
      */

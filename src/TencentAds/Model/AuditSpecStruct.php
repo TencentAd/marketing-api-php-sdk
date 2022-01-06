@@ -59,7 +59,7 @@ class AuditSpecStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'siteSet' => '\TencentAds\Model\SiteSetDefinition',
-        'systemStatus' => '\TencentAds\Model\SysStatus',
+        'systemStatus' => '\TencentAds\Model\AdStatus',
         'rejectMessage' => 'string',
         'elementRejectDetailInfo' => '\TencentAds\Model\ElementRejectDetailInfo[]'
     ];
@@ -250,7 +250,7 @@ class AuditSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Gets systemStatus
      *
-     * @return \TencentAds\Model\SysStatus|mixed
+     * @return \TencentAds\Model\AdStatus|mixed
      */
     public function getSystemStatus()
     {
@@ -260,7 +260,7 @@ class AuditSpecStruct implements ModelInterface, ArrayAccess
     /**
      * Sets systemStatus
      *
-     * @param \TencentAds\Model\SysStatus|mixed $systemStatus systemStatus
+     * @param \TencentAds\Model\AdStatus|mixed $systemStatus systemStatus
      *
      * @return $this
      */

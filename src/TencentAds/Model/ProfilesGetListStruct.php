@@ -70,7 +70,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
         'profileUrl' => 'string',
-        'systemStatus' => '\TencentAds\Model\SysStatus'
+        'systemStatus' => '\TencentAds\Model\AdStatus'
     ];
 
     /**
@@ -568,7 +568,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets systemStatus
      *
-     * @return \TencentAds\Model\SysStatus|mixed
+     * @return \TencentAds\Model\AdStatus|mixed
      */
     public function getSystemStatus()
     {
@@ -578,7 +578,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets systemStatus
      *
-     * @param \TencentAds\Model\SysStatus|mixed $systemStatus systemStatus
+     * @param \TencentAds\Model\AdStatus|mixed $systemStatus systemStatus
      *
      * @return $this
      */

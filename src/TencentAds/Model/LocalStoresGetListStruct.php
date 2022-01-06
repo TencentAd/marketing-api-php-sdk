@@ -71,7 +71,7 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         'wechatEcosystemAccounts' => '\TencentAds\Model\WechatEcosystemAccounts',
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
-        'systemStatus' => '\TencentAds\Model\SysStatus'
+        'systemStatus' => '\TencentAds\Model\AdStatus'
     ];
 
     /**
@@ -598,7 +598,7 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets systemStatus
      *
-     * @return \TencentAds\Model\SysStatus|mixed
+     * @return \TencentAds\Model\AdStatus|mixed
      */
     public function getSystemStatus()
     {
@@ -608,7 +608,7 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets systemStatus
      *
-     * @param \TencentAds\Model\SysStatus|mixed $systemStatus systemStatus
+     * @param \TencentAds\Model\AdStatus|mixed $systemStatus systemStatus
      *
      * @return $this
      */

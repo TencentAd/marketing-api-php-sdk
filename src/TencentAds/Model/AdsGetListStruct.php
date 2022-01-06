@@ -65,7 +65,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
         'adcreativeId' => 'int',
         'adcreative' => '\TencentAds\Model\Adcreative',
         'configuredStatus' => '\TencentAds\Model\AdStatus',
-        'systemStatus' => '\TencentAds\Model\SysStatus',
+        'systemStatus' => '\TencentAds\Model\AdStatus',
         'auditSpec' => '\TencentAds\Model\AuditSpecStruct[]',
         'impressionTrackingUrl' => 'string',
         'clickTrackingUrl' => 'string',
@@ -472,7 +472,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets systemStatus
      *
-     * @return \TencentAds\Model\SysStatus|mixed
+     * @return \TencentAds\Model\AdStatus|mixed
      */
     public function getSystemStatus()
     {
@@ -482,7 +482,7 @@ class AdsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets systemStatus
      *
-     * @param \TencentAds\Model\SysStatus|mixed $systemStatus systemStatus
+     * @param \TencentAds\Model\AdStatus|mixed $systemStatus systemStatus
      *
      * @return $this
      */
