@@ -64,11 +64,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
         'floatingZoneDesc' => 'string',
         'floatingZoneButtonText' => 'string',
         'floatingZoneType' => '\TencentAds\Model\FloatingZoneType',
-        'floatingZoneSingleImageId' => 'string',
-        'chosenButtonText1' => 'string',
-        'chosenButtonLandingPage1' => '\TencentAds\Model\LandingPageStructure',
-        'chosenButtonText2' => 'string',
-        'chosenButtonLandingPage2' => '\TencentAds\Model\LandingPageStructure'
+        'floatingZoneSingleImageId' => 'string'
     ];
 
     /**
@@ -83,11 +79,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
         'floatingZoneDesc' => null,
         'floatingZoneButtonText' => null,
         'floatingZoneType' => null,
-        'floatingZoneSingleImageId' => null,
-        'chosenButtonText1' => null,
-        'chosenButtonLandingPage1' => null,
-        'chosenButtonText2' => null,
-        'chosenButtonLandingPage2' => null
+        'floatingZoneSingleImageId' => null
     ];
 
     /**
@@ -123,11 +115,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
         'floatingZoneDesc' => 'floating_zone_desc',
         'floatingZoneButtonText' => 'floating_zone_button_text',
         'floatingZoneType' => 'floating_zone_type',
-        'floatingZoneSingleImageId' => 'floating_zone_single_image_id',
-        'chosenButtonText1' => 'chosen_button_text1',
-        'chosenButtonLandingPage1' => 'chosen_button_landing_page1',
-        'chosenButtonText2' => 'chosen_button_text2',
-        'chosenButtonLandingPage2' => 'chosen_button_landing_page2'
+        'floatingZoneSingleImageId' => 'floating_zone_single_image_id'
     ];
 
     /**
@@ -142,11 +130,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
         'floatingZoneDesc' => 'setFloatingZoneDesc',
         'floatingZoneButtonText' => 'setFloatingZoneButtonText',
         'floatingZoneType' => 'setFloatingZoneType',
-        'floatingZoneSingleImageId' => 'setFloatingZoneSingleImageId',
-        'chosenButtonText1' => 'setChosenButtonText1',
-        'chosenButtonLandingPage1' => 'setChosenButtonLandingPage1',
-        'chosenButtonText2' => 'setChosenButtonText2',
-        'chosenButtonLandingPage2' => 'setChosenButtonLandingPage2'
+        'floatingZoneSingleImageId' => 'setFloatingZoneSingleImageId'
     ];
 
     /**
@@ -161,11 +145,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
         'floatingZoneDesc' => 'getFloatingZoneDesc',
         'floatingZoneButtonText' => 'getFloatingZoneButtonText',
         'floatingZoneType' => 'getFloatingZoneType',
-        'floatingZoneSingleImageId' => 'getFloatingZoneSingleImageId',
-        'chosenButtonText1' => 'getChosenButtonText1',
-        'chosenButtonLandingPage1' => 'getChosenButtonLandingPage1',
-        'chosenButtonText2' => 'getChosenButtonText2',
-        'chosenButtonLandingPage2' => 'getChosenButtonLandingPage2'
+        'floatingZoneSingleImageId' => 'getFloatingZoneSingleImageId'
     ];
 
     /**
@@ -235,10 +215,6 @@ class FloatingZone implements ModelInterface, ArrayAccess
         $this->container['floatingZoneButtonText'] = isset($data['floatingZoneButtonText']) ? $data['floatingZoneButtonText'] : null;
         $this->container['floatingZoneType'] = isset($data['floatingZoneType']) ? $data['floatingZoneType'] : null;
         $this->container['floatingZoneSingleImageId'] = isset($data['floatingZoneSingleImageId']) ? $data['floatingZoneSingleImageId'] : null;
-        $this->container['chosenButtonText1'] = isset($data['chosenButtonText1']) ? $data['chosenButtonText1'] : null;
-        $this->container['chosenButtonLandingPage1'] = isset($data['chosenButtonLandingPage1']) ? $data['chosenButtonLandingPage1'] : null;
-        $this->container['chosenButtonText2'] = isset($data['chosenButtonText2']) ? $data['chosenButtonText2'] : null;
-        $this->container['chosenButtonLandingPage2'] = isset($data['chosenButtonLandingPage2']) ? $data['chosenButtonLandingPage2'] : null;
     }
 
     /**
@@ -429,102 +405,6 @@ class FloatingZone implements ModelInterface, ArrayAccess
     public function setFloatingZoneSingleImageId($floatingZoneSingleImageId)
     {
         $this->container['floatingZoneSingleImageId'] = $floatingZoneSingleImageId;
-
-        return $this;
-    }
-
-    /**
-     * Gets chosenButtonText1
-     *
-     * @return string|mixed
-     */
-    public function getChosenButtonText1()
-    {
-        return $this->container['chosenButtonText1'];
-    }
-
-    /**
-     * Sets chosenButtonText1
-     *
-     * @param string|mixed $chosenButtonText1 chosenButtonText1
-     *
-     * @return $this
-     */
-    public function setChosenButtonText1($chosenButtonText1)
-    {
-        $this->container['chosenButtonText1'] = $chosenButtonText1;
-
-        return $this;
-    }
-
-    /**
-     * Gets chosenButtonLandingPage1
-     *
-     * @return \TencentAds\Model\LandingPageStructure|mixed
-     */
-    public function getChosenButtonLandingPage1()
-    {
-        return $this->container['chosenButtonLandingPage1'];
-    }
-
-    /**
-     * Sets chosenButtonLandingPage1
-     *
-     * @param \TencentAds\Model\LandingPageStructure|mixed $chosenButtonLandingPage1 chosenButtonLandingPage1
-     *
-     * @return $this
-     */
-    public function setChosenButtonLandingPage1($chosenButtonLandingPage1)
-    {
-        $this->container['chosenButtonLandingPage1'] = $chosenButtonLandingPage1;
-
-        return $this;
-    }
-
-    /**
-     * Gets chosenButtonText2
-     *
-     * @return string|mixed
-     */
-    public function getChosenButtonText2()
-    {
-        return $this->container['chosenButtonText2'];
-    }
-
-    /**
-     * Sets chosenButtonText2
-     *
-     * @param string|mixed $chosenButtonText2 chosenButtonText2
-     *
-     * @return $this
-     */
-    public function setChosenButtonText2($chosenButtonText2)
-    {
-        $this->container['chosenButtonText2'] = $chosenButtonText2;
-
-        return $this;
-    }
-
-    /**
-     * Gets chosenButtonLandingPage2
-     *
-     * @return \TencentAds\Model\LandingPageStructure|mixed
-     */
-    public function getChosenButtonLandingPage2()
-    {
-        return $this->container['chosenButtonLandingPage2'];
-    }
-
-    /**
-     * Sets chosenButtonLandingPage2
-     *
-     * @param \TencentAds\Model\LandingPageStructure|mixed $chosenButtonLandingPage2 chosenButtonLandingPage2
-     *
-     * @return $this
-     */
-    public function setChosenButtonLandingPage2($chosenButtonLandingPage2)
-    {
-        $this->container['chosenButtonLandingPage2'] = $chosenButtonLandingPage2;
 
         return $this;
     }

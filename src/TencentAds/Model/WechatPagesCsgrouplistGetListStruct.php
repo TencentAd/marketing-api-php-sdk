@@ -58,8 +58,8 @@ class WechatPagesCsgrouplistGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'groupid' => 'int',
-        'groupname' => 'string'
+        'groupId' => 'int',
+        'groupName' => 'string'
     ];
 
     /**
@@ -68,8 +68,8 @@ class WechatPagesCsgrouplistGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'groupid' => 'int64',
-        'groupname' => null
+        'groupId' => 'int64',
+        'groupName' => null
     ];
 
     /**
@@ -99,8 +99,8 @@ class WechatPagesCsgrouplistGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'groupid' => 'groupid',
-        'groupname' => 'groupname'
+        'groupId' => 'group_id',
+        'groupName' => 'group_name'
     ];
 
     /**
@@ -109,8 +109,8 @@ class WechatPagesCsgrouplistGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'groupid' => 'setGroupid',
-        'groupname' => 'setGroupname'
+        'groupId' => 'setGroupId',
+        'groupName' => 'setGroupName'
     ];
 
     /**
@@ -119,8 +119,8 @@ class WechatPagesCsgrouplistGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'groupid' => 'getGroupid',
-        'groupname' => 'getGroupname'
+        'groupId' => 'getGroupId',
+        'groupName' => 'getGroupName'
     ];
 
     /**
@@ -183,8 +183,8 @@ class WechatPagesCsgrouplistGetListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['groupid'] = isset($data['groupid']) ? $data['groupid'] : null;
-        $this->container['groupname'] = isset($data['groupname']) ? $data['groupname'] : null;
+        $this->container['groupId'] = isset($data['groupId']) ? $data['groupId'] : null;
+        $this->container['groupName'] = isset($data['groupName']) ? $data['groupName'] : null;
     }
 
     /**
@@ -212,49 +212,49 @@ class WechatPagesCsgrouplistGetListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets groupid
+     * Gets groupId
      *
      * @return int|mixed
      */
-    public function getGroupid()
+    public function getGroupId()
     {
-        return $this->container['groupid'];
+        return $this->container['groupId'];
     }
 
     /**
-     * Sets groupid
+     * Sets groupId
      *
-     * @param int|mixed $groupid groupid
+     * @param int|mixed $groupId groupId
      *
      * @return $this
      */
-    public function setGroupid($groupid)
+    public function setGroupId($groupId)
     {
-        $this->container['groupid'] = $groupid;
+        $this->container['groupId'] = $groupId;
 
         return $this;
     }
 
     /**
-     * Gets groupname
+     * Gets groupName
      *
      * @return string|mixed
      */
-    public function getGroupname()
+    public function getGroupName()
     {
-        return $this->container['groupname'];
+        return $this->container['groupName'];
     }
 
     /**
-     * Sets groupname
+     * Sets groupName
      *
-     * @param string|mixed $groupname groupname
+     * @param string|mixed $groupName groupName
      *
      * @return $this
      */
-    public function setGroupname($groupname)
+    public function setGroupName($groupName)
     {
-        $this->container['groupname'] = $groupname;
+        $this->container['groupName'] = $groupName;
 
         return $this;
     }

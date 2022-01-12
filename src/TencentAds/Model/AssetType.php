@@ -59,6 +59,7 @@ class AssetType
     const ACCOUNT_WECHAT_CANVAS = 'ASSET_TYPE_ACCOUNT_WECHAT_CANVAS';
     const PROFILE = 'ASSET_TYPE_PROFILE';
     const LOCAL_STORE = 'ASSET_TYPE_LOCAL_STORE';
+    const INTERACTIVE_PRIVATE_TEMPLATE = 'ASSET_TYPE_INTERACTIVE_PRIVATE_TEMPLATE';
     
     /**
      * Gets allowable values of the enum
@@ -82,6 +83,7 @@ class AssetType
             self::ACCOUNT_WECHAT_CANVAS,
             self::PROFILE,
             self::LOCAL_STORE,
+            self::INTERACTIVE_PRIVATE_TEMPLATE,
         ];
     }
 }
