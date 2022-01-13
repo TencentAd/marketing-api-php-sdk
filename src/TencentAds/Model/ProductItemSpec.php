@@ -66,6 +66,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'expirationTime' => 'string',
         'imageUrl' => 'string',
         'additionalImageUrl' => 'string[]',
+        'hiddenLandingImgUrl' => 'string[]',
         'videoDuration' => 'string',
         'videoUrl' => 'string',
         'playCount' => 'int',
@@ -205,7 +206,8 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'playVoice' => '\TencentAds\Model\PlayVoice',
         'productionSource' => '\TencentAds\Model\ProductionSource',
         'productionPlace' => '\TencentAds\Model\ProductionPlace',
-        'cartoonColor' => '\TencentAds\Model\CartoonColor'
+        'cartoonColor' => '\TencentAds\Model\CartoonColor',
+        'maxQuotaV2' => '\TencentAds\Model\MaxQuotaEnum'
     ];
 
     /**
@@ -222,6 +224,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'expirationTime' => null,
         'imageUrl' => null,
         'additionalImageUrl' => null,
+        'hiddenLandingImgUrl' => null,
         'videoDuration' => null,
         'videoUrl' => null,
         'playCount' => 'int64',
@@ -361,7 +364,8 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'playVoice' => null,
         'productionSource' => null,
         'productionPlace' => null,
-        'cartoonColor' => null
+        'cartoonColor' => null,
+        'maxQuotaV2' => null
     ];
 
     /**
@@ -399,6 +403,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'expirationTime' => 'expiration_time',
         'imageUrl' => 'image_url',
         'additionalImageUrl' => 'additional_image_url',
+        'hiddenLandingImgUrl' => 'hidden_landing_img_url',
         'videoDuration' => 'video_duration',
         'videoUrl' => 'video_url',
         'playCount' => 'play_count',
@@ -538,7 +543,8 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'playVoice' => 'play_voice',
         'productionSource' => 'production_source',
         'productionPlace' => 'production_place',
-        'cartoonColor' => 'cartoon_color'
+        'cartoonColor' => 'cartoon_color',
+        'maxQuotaV2' => 'max_quota_v2'
     ];
 
     /**
@@ -555,6 +561,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'expirationTime' => 'setExpirationTime',
         'imageUrl' => 'setImageUrl',
         'additionalImageUrl' => 'setAdditionalImageUrl',
+        'hiddenLandingImgUrl' => 'setHiddenLandingImgUrl',
         'videoDuration' => 'setVideoDuration',
         'videoUrl' => 'setVideoUrl',
         'playCount' => 'setPlayCount',
@@ -694,7 +701,8 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'playVoice' => 'setPlayVoice',
         'productionSource' => 'setProductionSource',
         'productionPlace' => 'setProductionPlace',
-        'cartoonColor' => 'setCartoonColor'
+        'cartoonColor' => 'setCartoonColor',
+        'maxQuotaV2' => 'setMaxQuotaV2'
     ];
 
     /**
@@ -711,6 +719,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'expirationTime' => 'getExpirationTime',
         'imageUrl' => 'getImageUrl',
         'additionalImageUrl' => 'getAdditionalImageUrl',
+        'hiddenLandingImgUrl' => 'getHiddenLandingImgUrl',
         'videoDuration' => 'getVideoDuration',
         'videoUrl' => 'getVideoUrl',
         'playCount' => 'getPlayCount',
@@ -850,7 +859,8 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'playVoice' => 'getPlayVoice',
         'productionSource' => 'getProductionSource',
         'productionPlace' => 'getProductionPlace',
-        'cartoonColor' => 'getCartoonColor'
+        'cartoonColor' => 'getCartoonColor',
+        'maxQuotaV2' => 'getMaxQuotaV2'
     ];
 
     /**
@@ -921,6 +931,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         $this->container['expirationTime'] = isset($data['expirationTime']) ? $data['expirationTime'] : null;
         $this->container['imageUrl'] = isset($data['imageUrl']) ? $data['imageUrl'] : null;
         $this->container['additionalImageUrl'] = isset($data['additionalImageUrl']) ? $data['additionalImageUrl'] : null;
+        $this->container['hiddenLandingImgUrl'] = isset($data['hiddenLandingImgUrl']) ? $data['hiddenLandingImgUrl'] : null;
         $this->container['videoDuration'] = isset($data['videoDuration']) ? $data['videoDuration'] : null;
         $this->container['videoUrl'] = isset($data['videoUrl']) ? $data['videoUrl'] : null;
         $this->container['playCount'] = isset($data['playCount']) ? $data['playCount'] : null;
@@ -1061,6 +1072,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         $this->container['productionSource'] = isset($data['productionSource']) ? $data['productionSource'] : null;
         $this->container['productionPlace'] = isset($data['productionPlace']) ? $data['productionPlace'] : null;
         $this->container['cartoonColor'] = isset($data['cartoonColor']) ? $data['cartoonColor'] : null;
+        $this->container['maxQuotaV2'] = isset($data['maxQuotaV2']) ? $data['maxQuotaV2'] : null;
     }
 
     /**
@@ -1275,6 +1287,30 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     public function setAdditionalImageUrl($additionalImageUrl)
     {
         $this->container['additionalImageUrl'] = $additionalImageUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets hiddenLandingImgUrl
+     *
+     * @return string[]|mixed
+     */
+    public function getHiddenLandingImgUrl()
+    {
+        return $this->container['hiddenLandingImgUrl'];
+    }
+
+    /**
+     * Sets hiddenLandingImgUrl
+     *
+     * @param string[]|mixed $hiddenLandingImgUrl hiddenLandingImgUrl
+     *
+     * @return $this
+     */
+    public function setHiddenLandingImgUrl($hiddenLandingImgUrl)
+    {
+        $this->container['hiddenLandingImgUrl'] = $hiddenLandingImgUrl;
 
         return $this;
     }
@@ -4635,6 +4671,30 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     public function setCartoonColor($cartoonColor)
     {
         $this->container['cartoonColor'] = $cartoonColor;
+
+        return $this;
+    }
+
+    /**
+     * Gets maxQuotaV2
+     *
+     * @return \TencentAds\Model\MaxQuotaEnum|mixed
+     */
+    public function getMaxQuotaV2()
+    {
+        return $this->container['maxQuotaV2'];
+    }
+
+    /**
+     * Sets maxQuotaV2
+     *
+     * @param \TencentAds\Model\MaxQuotaEnum|mixed $maxQuotaV2 maxQuotaV2
+     *
+     * @return $this
+     */
+    public function setMaxQuotaV2($maxQuotaV2)
+    {
+        $this->container['maxQuotaV2'] = $maxQuotaV2;
 
         return $this;
     }
