@@ -1,6 +1,6 @@
 <?php
 /**
- * DynamicProductSpec
+ * InfoStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DynamicProductSpec Class Doc Comment
+ * InfoStruct Class Doc Comment
  *
  * @category Class
- * @description 动态多商品广告落地页信息
+ * @description 配置信息要求说明
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DynamicProductSpec implements ModelInterface, ArrayAccess
+class InfoStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dynamic_product_spec';
+    protected static $swaggerModelName = 'info_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,13 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pageUrl' => 'string',
-        'miniProgramPaths' => 'string[]'
+        'desc' => 'string',
+        'width' => 'int',
+        'height' => 'int',
+        'maxLength' => 'int',
+        'infoNumberOnly' => 'bool',
+        'max' => 'int',
+        'min' => 'int'
     ];
 
     /**
@@ -68,8 +73,13 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'pageUrl' => null,
-        'miniProgramPaths' => null
+        'desc' => null,
+        'width' => 'int64',
+        'height' => 'int64',
+        'maxLength' => 'int64',
+        'infoNumberOnly' => null,
+        'max' => 'int64',
+        'min' => 'int64'
     ];
 
     /**
@@ -99,8 +109,13 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'pageUrl' => 'page_url',
-        'miniProgramPaths' => 'mini_program_paths'
+        'desc' => 'desc',
+        'width' => 'width',
+        'height' => 'height',
+        'maxLength' => 'max_length',
+        'infoNumberOnly' => 'info_number_only',
+        'max' => 'max',
+        'min' => 'min'
     ];
 
     /**
@@ -109,8 +124,13 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'pageUrl' => 'setPageUrl',
-        'miniProgramPaths' => 'setMiniProgramPaths'
+        'desc' => 'setDesc',
+        'width' => 'setWidth',
+        'height' => 'setHeight',
+        'maxLength' => 'setMaxLength',
+        'infoNumberOnly' => 'setInfoNumberOnly',
+        'max' => 'setMax',
+        'min' => 'setMin'
     ];
 
     /**
@@ -119,8 +139,13 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'pageUrl' => 'getPageUrl',
-        'miniProgramPaths' => 'getMiniProgramPaths'
+        'desc' => 'getDesc',
+        'width' => 'getWidth',
+        'height' => 'getHeight',
+        'maxLength' => 'getMaxLength',
+        'infoNumberOnly' => 'getInfoNumberOnly',
+        'max' => 'getMax',
+        'min' => 'getMin'
     ];
 
     /**
@@ -183,8 +208,13 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['pageUrl'] = isset($data['pageUrl']) ? $data['pageUrl'] : null;
-        $this->container['miniProgramPaths'] = isset($data['miniProgramPaths']) ? $data['miniProgramPaths'] : null;
+        $this->container['desc'] = isset($data['desc']) ? $data['desc'] : null;
+        $this->container['width'] = isset($data['width']) ? $data['width'] : null;
+        $this->container['height'] = isset($data['height']) ? $data['height'] : null;
+        $this->container['maxLength'] = isset($data['maxLength']) ? $data['maxLength'] : null;
+        $this->container['infoNumberOnly'] = isset($data['infoNumberOnly']) ? $data['infoNumberOnly'] : null;
+        $this->container['max'] = isset($data['max']) ? $data['max'] : null;
+        $this->container['min'] = isset($data['min']) ? $data['min'] : null;
     }
 
     /**
@@ -212,49 +242,169 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets pageUrl
+     * Gets desc
      *
      * @return string|mixed
      */
-    public function getPageUrl()
+    public function getDesc()
     {
-        return $this->container['pageUrl'];
+        return $this->container['desc'];
     }
 
     /**
-     * Sets pageUrl
+     * Sets desc
      *
-     * @param string|mixed $pageUrl pageUrl
+     * @param string|mixed $desc desc
      *
      * @return $this
      */
-    public function setPageUrl($pageUrl)
+    public function setDesc($desc)
     {
-        $this->container['pageUrl'] = $pageUrl;
+        $this->container['desc'] = $desc;
 
         return $this;
     }
 
     /**
-     * Gets miniProgramPaths
+     * Gets width
      *
-     * @return string[]|mixed
+     * @return int|mixed
      */
-    public function getMiniProgramPaths()
+    public function getWidth()
     {
-        return $this->container['miniProgramPaths'];
+        return $this->container['width'];
     }
 
     /**
-     * Sets miniProgramPaths
+     * Sets width
      *
-     * @param string[]|mixed $miniProgramPaths miniProgramPaths
+     * @param int|mixed $width width
      *
      * @return $this
      */
-    public function setMiniProgramPaths($miniProgramPaths)
+    public function setWidth($width)
     {
-        $this->container['miniProgramPaths'] = $miniProgramPaths;
+        $this->container['width'] = $width;
+
+        return $this;
+    }
+
+    /**
+     * Gets height
+     *
+     * @return int|mixed
+     */
+    public function getHeight()
+    {
+        return $this->container['height'];
+    }
+
+    /**
+     * Sets height
+     *
+     * @param int|mixed $height height
+     *
+     * @return $this
+     */
+    public function setHeight($height)
+    {
+        $this->container['height'] = $height;
+
+        return $this;
+    }
+
+    /**
+     * Gets maxLength
+     *
+     * @return int|mixed
+     */
+    public function getMaxLength()
+    {
+        return $this->container['maxLength'];
+    }
+
+    /**
+     * Sets maxLength
+     *
+     * @param int|mixed $maxLength maxLength
+     *
+     * @return $this
+     */
+    public function setMaxLength($maxLength)
+    {
+        $this->container['maxLength'] = $maxLength;
+
+        return $this;
+    }
+
+    /**
+     * Gets infoNumberOnly
+     *
+     * @return bool|mixed
+     */
+    public function getInfoNumberOnly()
+    {
+        return $this->container['infoNumberOnly'];
+    }
+
+    /**
+     * Sets infoNumberOnly
+     *
+     * @param bool|mixed $infoNumberOnly infoNumberOnly
+     *
+     * @return $this
+     */
+    public function setInfoNumberOnly($infoNumberOnly)
+    {
+        $this->container['infoNumberOnly'] = $infoNumberOnly;
+
+        return $this;
+    }
+
+    /**
+     * Gets max
+     *
+     * @return int|mixed
+     */
+    public function getMax()
+    {
+        return $this->container['max'];
+    }
+
+    /**
+     * Sets max
+     *
+     * @param int|mixed $max max
+     *
+     * @return $this
+     */
+    public function setMax($max)
+    {
+        $this->container['max'] = $max;
+
+        return $this;
+    }
+
+    /**
+     * Gets min
+     *
+     * @return int|mixed
+     */
+    public function getMin()
+    {
+        return $this->container['min'];
+    }
+
+    /**
+     * Sets min
+     *
+     * @param int|mixed $min min
+     *
+     * @return $this
+     */
+    public function setMin($min)
+    {
+        $this->container['min'] = $min;
 
         return $this;
     }

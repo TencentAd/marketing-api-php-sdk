@@ -148,11 +148,13 @@ use TencentAds\Container\WechatPagesCustomApiContainer;
 use TencentAds\Container\WechatPagesGrantinfoApiContainer;
 use TencentAds\Container\WechatQualificationsApiContainer;
 use TencentAds\Container\WildcardsApiContainer;
+use TencentAds\Container\XijingComplexTemplateApiContainer;
 use TencentAds\Container\XijingPageApiContainer;
 use TencentAds\Container\XijingPageByComponentsApiContainer;
 use TencentAds\Container\XijingPageInteractiveApiContainer;
 use TencentAds\Container\XijingPageListApiContainer;
 use TencentAds\Container\XijingTemplateApiContainer;
+use TencentAds\Container\XijingTemplateListApiContainer;
 
 class App
 {
@@ -597,6 +599,9 @@ class App
     /** @var WildcardsApiContainer */
     public $wildcardsApiContainer;
 
+    /** @var XijingComplexTemplateApiContainer */
+    public $xijingComplexTemplateApiContainer;
+
     /** @var XijingPageApiContainer */
     public $xijingPageApiContainer;
 
@@ -611,6 +616,9 @@ class App
 
     /** @var XijingTemplateApiContainer */
     public $xijingTemplateApiContainer;
+
+    /** @var XijingTemplateListApiContainer */
+    public $xijingTemplateListApiContainer;
 
 
     /**
@@ -2670,6 +2678,20 @@ class App
 
 
     /**
+     * @return XijingComplexTemplateApiContainer
+     */
+    public function xijingComplexTemplate()
+    {
+        if (empty($this->xijingComplexTemplateApiContainer)) {
+            $container = new XijingComplexTemplateApiContainer();
+            $container->init($this, $this->getClient());
+            $this->xijingComplexTemplateApiContainer = $container;
+        }
+        return $this->xijingComplexTemplateApiContainer;
+    }
+
+
+    /**
      * @return XijingPageApiContainer
      */
     public function xijingPage()
@@ -2736,5 +2758,19 @@ class App
             $this->xijingTemplateApiContainer = $container;
         }
         return $this->xijingTemplateApiContainer;
+    }
+
+
+    /**
+     * @return XijingTemplateListApiContainer
+     */
+    public function xijingTemplateList()
+    {
+        if (empty($this->xijingTemplateListApiContainer)) {
+            $container = new XijingTemplateListApiContainer();
+            $container->init($this, $this->getClient());
+            $this->xijingTemplateListApiContainer = $container;
+        }
+        return $this->xijingTemplateListApiContainer;
     }
 }

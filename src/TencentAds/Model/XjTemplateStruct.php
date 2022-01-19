@@ -1,6 +1,6 @@
 <?php
 /**
- * DynamicProductSpec
+ * XjTemplateStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DynamicProductSpec Class Doc Comment
+ * XjTemplateStruct Class Doc Comment
  *
  * @category Class
- * @description 动态多商品广告落地页信息
+ * @description 获取模板列表数据结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DynamicProductSpec implements ModelInterface, ArrayAccess
+class XjTemplateStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dynamic_product_spec';
+    protected static $swaggerModelName = 'xj_template_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,13 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pageUrl' => 'string',
-        'miniProgramPaths' => 'string[]'
+        'pageTemplateId' => 'string',
+        'templateOwnerId' => 'int',
+        'pageTemplateName' => 'string',
+        'pageTemplateCoverUrl' => 'string',
+        'playableType' => '\TencentAds\Model\PlayableType',
+        'labels' => 'string[]',
+        'isComplex' => 'bool'
     ];
 
     /**
@@ -68,8 +73,13 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'pageUrl' => null,
-        'miniProgramPaths' => null
+        'pageTemplateId' => null,
+        'templateOwnerId' => 'int64',
+        'pageTemplateName' => null,
+        'pageTemplateCoverUrl' => null,
+        'playableType' => null,
+        'labels' => null,
+        'isComplex' => null
     ];
 
     /**
@@ -99,8 +109,13 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'pageUrl' => 'page_url',
-        'miniProgramPaths' => 'mini_program_paths'
+        'pageTemplateId' => 'page_template_id',
+        'templateOwnerId' => 'template_owner_id',
+        'pageTemplateName' => 'page_template_name',
+        'pageTemplateCoverUrl' => 'page_template_cover_url',
+        'playableType' => 'playable_type',
+        'labels' => 'labels',
+        'isComplex' => 'is_complex'
     ];
 
     /**
@@ -109,8 +124,13 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'pageUrl' => 'setPageUrl',
-        'miniProgramPaths' => 'setMiniProgramPaths'
+        'pageTemplateId' => 'setPageTemplateId',
+        'templateOwnerId' => 'setTemplateOwnerId',
+        'pageTemplateName' => 'setPageTemplateName',
+        'pageTemplateCoverUrl' => 'setPageTemplateCoverUrl',
+        'playableType' => 'setPlayableType',
+        'labels' => 'setLabels',
+        'isComplex' => 'setIsComplex'
     ];
 
     /**
@@ -119,8 +139,13 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'pageUrl' => 'getPageUrl',
-        'miniProgramPaths' => 'getMiniProgramPaths'
+        'pageTemplateId' => 'getPageTemplateId',
+        'templateOwnerId' => 'getTemplateOwnerId',
+        'pageTemplateName' => 'getPageTemplateName',
+        'pageTemplateCoverUrl' => 'getPageTemplateCoverUrl',
+        'playableType' => 'getPlayableType',
+        'labels' => 'getLabels',
+        'isComplex' => 'getIsComplex'
     ];
 
     /**
@@ -183,8 +208,13 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['pageUrl'] = isset($data['pageUrl']) ? $data['pageUrl'] : null;
-        $this->container['miniProgramPaths'] = isset($data['miniProgramPaths']) ? $data['miniProgramPaths'] : null;
+        $this->container['pageTemplateId'] = isset($data['pageTemplateId']) ? $data['pageTemplateId'] : null;
+        $this->container['templateOwnerId'] = isset($data['templateOwnerId']) ? $data['templateOwnerId'] : null;
+        $this->container['pageTemplateName'] = isset($data['pageTemplateName']) ? $data['pageTemplateName'] : null;
+        $this->container['pageTemplateCoverUrl'] = isset($data['pageTemplateCoverUrl']) ? $data['pageTemplateCoverUrl'] : null;
+        $this->container['playableType'] = isset($data['playableType']) ? $data['playableType'] : null;
+        $this->container['labels'] = isset($data['labels']) ? $data['labels'] : null;
+        $this->container['isComplex'] = isset($data['isComplex']) ? $data['isComplex'] : null;
     }
 
     /**
@@ -212,49 +242,169 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets pageUrl
+     * Gets pageTemplateId
      *
      * @return string|mixed
      */
-    public function getPageUrl()
+    public function getPageTemplateId()
     {
-        return $this->container['pageUrl'];
+        return $this->container['pageTemplateId'];
     }
 
     /**
-     * Sets pageUrl
+     * Sets pageTemplateId
      *
-     * @param string|mixed $pageUrl pageUrl
+     * @param string|mixed $pageTemplateId pageTemplateId
      *
      * @return $this
      */
-    public function setPageUrl($pageUrl)
+    public function setPageTemplateId($pageTemplateId)
     {
-        $this->container['pageUrl'] = $pageUrl;
+        $this->container['pageTemplateId'] = $pageTemplateId;
 
         return $this;
     }
 
     /**
-     * Gets miniProgramPaths
+     * Gets templateOwnerId
      *
-     * @return string[]|mixed
+     * @return int|mixed
      */
-    public function getMiniProgramPaths()
+    public function getTemplateOwnerId()
     {
-        return $this->container['miniProgramPaths'];
+        return $this->container['templateOwnerId'];
     }
 
     /**
-     * Sets miniProgramPaths
+     * Sets templateOwnerId
      *
-     * @param string[]|mixed $miniProgramPaths miniProgramPaths
+     * @param int|mixed $templateOwnerId templateOwnerId
      *
      * @return $this
      */
-    public function setMiniProgramPaths($miniProgramPaths)
+    public function setTemplateOwnerId($templateOwnerId)
     {
-        $this->container['miniProgramPaths'] = $miniProgramPaths;
+        $this->container['templateOwnerId'] = $templateOwnerId;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageTemplateName
+     *
+     * @return string|mixed
+     */
+    public function getPageTemplateName()
+    {
+        return $this->container['pageTemplateName'];
+    }
+
+    /**
+     * Sets pageTemplateName
+     *
+     * @param string|mixed $pageTemplateName pageTemplateName
+     *
+     * @return $this
+     */
+    public function setPageTemplateName($pageTemplateName)
+    {
+        $this->container['pageTemplateName'] = $pageTemplateName;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageTemplateCoverUrl
+     *
+     * @return string|mixed
+     */
+    public function getPageTemplateCoverUrl()
+    {
+        return $this->container['pageTemplateCoverUrl'];
+    }
+
+    /**
+     * Sets pageTemplateCoverUrl
+     *
+     * @param string|mixed $pageTemplateCoverUrl pageTemplateCoverUrl
+     *
+     * @return $this
+     */
+    public function setPageTemplateCoverUrl($pageTemplateCoverUrl)
+    {
+        $this->container['pageTemplateCoverUrl'] = $pageTemplateCoverUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets playableType
+     *
+     * @return \TencentAds\Model\PlayableType|mixed
+     */
+    public function getPlayableType()
+    {
+        return $this->container['playableType'];
+    }
+
+    /**
+     * Sets playableType
+     *
+     * @param \TencentAds\Model\PlayableType|mixed $playableType playableType
+     *
+     * @return $this
+     */
+    public function setPlayableType($playableType)
+    {
+        $this->container['playableType'] = $playableType;
+
+        return $this;
+    }
+
+    /**
+     * Gets labels
+     *
+     * @return string[]|mixed
+     */
+    public function getLabels()
+    {
+        return $this->container['labels'];
+    }
+
+    /**
+     * Sets labels
+     *
+     * @param string[]|mixed $labels labels
+     *
+     * @return $this
+     */
+    public function setLabels($labels)
+    {
+        $this->container['labels'] = $labels;
+
+        return $this;
+    }
+
+    /**
+     * Gets isComplex
+     *
+     * @return bool|mixed
+     */
+    public function getIsComplex()
+    {
+        return $this->container['isComplex'];
+    }
+
+    /**
+     * Sets isComplex
+     *
+     * @param bool|mixed $isComplex isComplex
+     *
+     * @return $this
+     */
+    public function setIsComplex($isComplex)
+    {
+        $this->container['isComplex'] = $isComplex;
 
         return $this;
     }

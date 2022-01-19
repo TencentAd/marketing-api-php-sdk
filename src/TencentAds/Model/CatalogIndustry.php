@@ -60,6 +60,9 @@ class CatalogIndustry
     const BUSINESS_SERVICE = 'INDUSTRY_TYPE_BUSINESS_SERVICE';
     const DECORATION_BUILDING_MATERIAL = 'INDUSTRY_TYPE_DECORATION_BUILDING_MATERIAL';
     const HOTEL = 'INDUSTRY_TYPE_HOTEL';
+    const CAR_ONLINE_PLATFORM = 'INDUSTRY_TYPE_CAR_ONLINE_PLATFORM';
+    const CAR_AFTERMARKET = 'INDUSTRY_TYPE_CAR_AFTERMARKET';
+    const CAR_TRAVEL_SERVICE = 'INDUSTRY_TYPE_CAR_TRAVEL_SERVICE';
     
     /**
      * Gets allowable values of the enum
@@ -84,6 +87,9 @@ class CatalogIndustry
             self::BUSINESS_SERVICE,
             self::DECORATION_BUILDING_MATERIAL,
             self::HOTEL,
+            self::CAR_ONLINE_PLATFORM,
+            self::CAR_AFTERMARKET,
+            self::CAR_TRAVEL_SERVICE,
         ];
     }
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * DynamicProductSpec
+ * XijingTemplateListGetResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DynamicProductSpec Class Doc Comment
+ * XijingTemplateListGetResponse Class Doc Comment
  *
  * @category Class
- * @description 动态多商品广告落地页信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DynamicProductSpec implements ModelInterface, ArrayAccess
+class XijingTemplateListGetResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dynamic_product_spec';
+    protected static $swaggerModelName = 'XijingTemplateListGetResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,11 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pageUrl' => 'string',
-        'miniProgramPaths' => 'string[]'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\XijingTemplateListGetResponseData'
     ];
 
     /**
@@ -68,8 +70,11 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'pageUrl' => null,
-        'miniProgramPaths' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -99,8 +104,11 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'pageUrl' => 'page_url',
-        'miniProgramPaths' => 'mini_program_paths'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -109,8 +117,11 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'pageUrl' => 'setPageUrl',
-        'miniProgramPaths' => 'setMiniProgramPaths'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -119,8 +130,11 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'pageUrl' => 'getPageUrl',
-        'miniProgramPaths' => 'getMiniProgramPaths'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -183,8 +197,11 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['pageUrl'] = isset($data['pageUrl']) ? $data['pageUrl'] : null;
-        $this->container['miniProgramPaths'] = isset($data['miniProgramPaths']) ? $data['miniProgramPaths'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -212,49 +229,121 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets pageUrl
+     * Gets code
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getPageUrl()
+    public function getCode()
     {
-        return $this->container['pageUrl'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets pageUrl
+     * Sets code
      *
-     * @param string|mixed $pageUrl pageUrl
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setPageUrl($pageUrl)
+    public function setCode($code)
     {
-        $this->container['pageUrl'] = $pageUrl;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets miniProgramPaths
+     * Gets message
      *
-     * @return string[]|mixed
+     * @return string|mixed
      */
-    public function getMiniProgramPaths()
+    public function getMessage()
     {
-        return $this->container['miniProgramPaths'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets miniProgramPaths
+     * Sets message
      *
-     * @param string[]|mixed $miniProgramPaths miniProgramPaths
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setMiniProgramPaths($miniProgramPaths)
+    public function setMessage($message)
     {
-        $this->container['miniProgramPaths'] = $miniProgramPaths;
+        $this->container['message'] = $message;
+
+        return $this;
+    }
+
+    /**
+     * Gets messageCn
+     *
+     * @return string|mixed
+     */
+    public function getMessageCn()
+    {
+        return $this->container['messageCn'];
+    }
+
+    /**
+     * Sets messageCn
+     *
+     * @param string|mixed $messageCn messageCn
+     *
+     * @return $this
+     */
+    public function setMessageCn($messageCn)
+    {
+        $this->container['messageCn'] = $messageCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets errors
+     *
+     * @return \TencentAds\Model\ApiErrorStruct[]|mixed
+     */
+    public function getErrors()
+    {
+        return $this->container['errors'];
+    }
+
+    /**
+     * Sets errors
+     *
+     * @param \TencentAds\Model\ApiErrorStruct[]|mixed $errors errors
+     *
+     * @return $this
+     */
+    public function setErrors($errors)
+    {
+        $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\XijingTemplateListGetResponseData|mixed
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\XijingTemplateListGetResponseData|mixed $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }

@@ -207,7 +207,10 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'productionSource' => '\TencentAds\Model\ProductionSource',
         'productionPlace' => '\TencentAds\Model\ProductionPlace',
         'cartoonColor' => '\TencentAds\Model\CartoonColor',
-        'maxQuotaV2' => '\TencentAds\Model\MaxQuotaEnum'
+        'maxQuotaV2' => '\TencentAds\Model\MaxQuotaEnum',
+        'customUrl' => 'string',
+        'additionalCustomUrl' => 'string',
+        'productBarcode' => 'string'
     ];
 
     /**
@@ -365,7 +368,10 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'productionSource' => null,
         'productionPlace' => null,
         'cartoonColor' => null,
-        'maxQuotaV2' => null
+        'maxQuotaV2' => null,
+        'customUrl' => null,
+        'additionalCustomUrl' => null,
+        'productBarcode' => null
     ];
 
     /**
@@ -544,7 +550,10 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'productionSource' => 'production_source',
         'productionPlace' => 'production_place',
         'cartoonColor' => 'cartoon_color',
-        'maxQuotaV2' => 'max_quota_v2'
+        'maxQuotaV2' => 'max_quota_v2',
+        'customUrl' => 'custom_url',
+        'additionalCustomUrl' => 'additional_custom_url',
+        'productBarcode' => 'product_barcode'
     ];
 
     /**
@@ -702,7 +711,10 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'productionSource' => 'setProductionSource',
         'productionPlace' => 'setProductionPlace',
         'cartoonColor' => 'setCartoonColor',
-        'maxQuotaV2' => 'setMaxQuotaV2'
+        'maxQuotaV2' => 'setMaxQuotaV2',
+        'customUrl' => 'setCustomUrl',
+        'additionalCustomUrl' => 'setAdditionalCustomUrl',
+        'productBarcode' => 'setProductBarcode'
     ];
 
     /**
@@ -860,7 +872,10 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'productionSource' => 'getProductionSource',
         'productionPlace' => 'getProductionPlace',
         'cartoonColor' => 'getCartoonColor',
-        'maxQuotaV2' => 'getMaxQuotaV2'
+        'maxQuotaV2' => 'getMaxQuotaV2',
+        'customUrl' => 'getCustomUrl',
+        'additionalCustomUrl' => 'getAdditionalCustomUrl',
+        'productBarcode' => 'getProductBarcode'
     ];
 
     /**
@@ -1073,6 +1088,9 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         $this->container['productionPlace'] = isset($data['productionPlace']) ? $data['productionPlace'] : null;
         $this->container['cartoonColor'] = isset($data['cartoonColor']) ? $data['cartoonColor'] : null;
         $this->container['maxQuotaV2'] = isset($data['maxQuotaV2']) ? $data['maxQuotaV2'] : null;
+        $this->container['customUrl'] = isset($data['customUrl']) ? $data['customUrl'] : null;
+        $this->container['additionalCustomUrl'] = isset($data['additionalCustomUrl']) ? $data['additionalCustomUrl'] : null;
+        $this->container['productBarcode'] = isset($data['productBarcode']) ? $data['productBarcode'] : null;
     }
 
     /**
@@ -4695,6 +4713,78 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     public function setMaxQuotaV2($maxQuotaV2)
     {
         $this->container['maxQuotaV2'] = $maxQuotaV2;
+
+        return $this;
+    }
+
+    /**
+     * Gets customUrl
+     *
+     * @return string|mixed
+     */
+    public function getCustomUrl()
+    {
+        return $this->container['customUrl'];
+    }
+
+    /**
+     * Sets customUrl
+     *
+     * @param string|mixed $customUrl customUrl
+     *
+     * @return $this
+     */
+    public function setCustomUrl($customUrl)
+    {
+        $this->container['customUrl'] = $customUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets additionalCustomUrl
+     *
+     * @return string|mixed
+     */
+    public function getAdditionalCustomUrl()
+    {
+        return $this->container['additionalCustomUrl'];
+    }
+
+    /**
+     * Sets additionalCustomUrl
+     *
+     * @param string|mixed $additionalCustomUrl additionalCustomUrl
+     *
+     * @return $this
+     */
+    public function setAdditionalCustomUrl($additionalCustomUrl)
+    {
+        $this->container['additionalCustomUrl'] = $additionalCustomUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets productBarcode
+     *
+     * @return string|mixed
+     */
+    public function getProductBarcode()
+    {
+        return $this->container['productBarcode'];
+    }
+
+    /**
+     * Sets productBarcode
+     *
+     * @param string|mixed $productBarcode productBarcode
+     *
+     * @return $this
+     */
+    public function setProductBarcode($productBarcode)
+    {
+        $this->container['productBarcode'] = $productBarcode;
 
         return $this;
     }

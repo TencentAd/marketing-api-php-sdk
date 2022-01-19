@@ -58,6 +58,7 @@ class XijingPageListGetResponseData implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'list' => '\TencentAds\Model\PageStruct[]',
+        'pageInfo' => '\TencentAds\Model\PageInfo',
         'totalPages' => 'int',
         'pageSize' => 'int',
         'pageIndex' => 'int'
@@ -70,6 +71,7 @@ class XijingPageListGetResponseData implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'list' => null,
+        'pageInfo' => null,
         'totalPages' => 'int64',
         'pageSize' => 'int64',
         'pageIndex' => 'int64'
@@ -103,6 +105,7 @@ class XijingPageListGetResponseData implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'list' => 'list',
+        'pageInfo' => 'page_info',
         'totalPages' => 'total_pages',
         'pageSize' => 'page_size',
         'pageIndex' => 'page_index'
@@ -115,6 +118,7 @@ class XijingPageListGetResponseData implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'list' => 'setList',
+        'pageInfo' => 'setPageInfo',
         'totalPages' => 'setTotalPages',
         'pageSize' => 'setPageSize',
         'pageIndex' => 'setPageIndex'
@@ -127,6 +131,7 @@ class XijingPageListGetResponseData implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'list' => 'getList',
+        'pageInfo' => 'getPageInfo',
         'totalPages' => 'getTotalPages',
         'pageSize' => 'getPageSize',
         'pageIndex' => 'getPageIndex'
@@ -193,6 +198,7 @@ class XijingPageListGetResponseData implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['list'] = isset($data['list']) ? $data['list'] : null;
+        $this->container['pageInfo'] = isset($data['pageInfo']) ? $data['pageInfo'] : null;
         $this->container['totalPages'] = isset($data['totalPages']) ? $data['totalPages'] : null;
         $this->container['pageSize'] = isset($data['pageSize']) ? $data['pageSize'] : null;
         $this->container['pageIndex'] = isset($data['pageIndex']) ? $data['pageIndex'] : null;
@@ -242,6 +248,30 @@ class XijingPageListGetResponseData implements ModelInterface, ArrayAccess
     public function setList($list)
     {
         $this->container['list'] = $list;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageInfo
+     *
+     * @return \TencentAds\Model\PageInfo|mixed
+     */
+    public function getPageInfo()
+    {
+        return $this->container['pageInfo'];
+    }
+
+    /**
+     * Sets pageInfo
+     *
+     * @param \TencentAds\Model\PageInfo|mixed $pageInfo pageInfo
+     *
+     * @return $this
+     */
+    public function setPageInfo($pageInfo)
+    {
+        $this->container['pageInfo'] = $pageInfo;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * DynamicProductSpec
+ * XjConfigStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DynamicProductSpec Class Doc Comment
+ * XjConfigStruct Class Doc Comment
  *
  * @category Class
- * @description 动态多商品广告落地页信息
+ * @description 配置信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DynamicProductSpec implements ModelInterface, ArrayAccess
+class XjConfigStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dynamic_product_spec';
+    protected static $swaggerModelName = 'xj_config_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,9 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pageUrl' => 'string',
-        'miniProgramPaths' => 'string[]'
+        'id' => 'string',
+        'type' => '\TencentAds\Model\ComplexPageConfigType',
+        'info' => '\TencentAds\Model\InfoStruct'
     ];
 
     /**
@@ -68,8 +69,9 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'pageUrl' => null,
-        'miniProgramPaths' => null
+        'id' => null,
+        'type' => null,
+        'info' => null
     ];
 
     /**
@@ -99,8 +101,9 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'pageUrl' => 'page_url',
-        'miniProgramPaths' => 'mini_program_paths'
+        'id' => 'id',
+        'type' => 'type',
+        'info' => 'info'
     ];
 
     /**
@@ -109,8 +112,9 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'pageUrl' => 'setPageUrl',
-        'miniProgramPaths' => 'setMiniProgramPaths'
+        'id' => 'setId',
+        'type' => 'setType',
+        'info' => 'setInfo'
     ];
 
     /**
@@ -119,8 +123,9 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'pageUrl' => 'getPageUrl',
-        'miniProgramPaths' => 'getMiniProgramPaths'
+        'id' => 'getId',
+        'type' => 'getType',
+        'info' => 'getInfo'
     ];
 
     /**
@@ -183,8 +188,9 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['pageUrl'] = isset($data['pageUrl']) ? $data['pageUrl'] : null;
-        $this->container['miniProgramPaths'] = isset($data['miniProgramPaths']) ? $data['miniProgramPaths'] : null;
+        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
+        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
+        $this->container['info'] = isset($data['info']) ? $data['info'] : null;
     }
 
     /**
@@ -212,49 +218,73 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets pageUrl
+     * Gets id
      *
      * @return string|mixed
      */
-    public function getPageUrl()
+    public function getId()
     {
-        return $this->container['pageUrl'];
+        return $this->container['id'];
     }
 
     /**
-     * Sets pageUrl
+     * Sets id
      *
-     * @param string|mixed $pageUrl pageUrl
+     * @param string|mixed $id id
      *
      * @return $this
      */
-    public function setPageUrl($pageUrl)
+    public function setId($id)
     {
-        $this->container['pageUrl'] = $pageUrl;
+        $this->container['id'] = $id;
 
         return $this;
     }
 
     /**
-     * Gets miniProgramPaths
+     * Gets type
      *
-     * @return string[]|mixed
+     * @return \TencentAds\Model\ComplexPageConfigType|mixed
      */
-    public function getMiniProgramPaths()
+    public function getType()
     {
-        return $this->container['miniProgramPaths'];
+        return $this->container['type'];
     }
 
     /**
-     * Sets miniProgramPaths
+     * Sets type
      *
-     * @param string[]|mixed $miniProgramPaths miniProgramPaths
+     * @param \TencentAds\Model\ComplexPageConfigType|mixed $type type
      *
      * @return $this
      */
-    public function setMiniProgramPaths($miniProgramPaths)
+    public function setType($type)
     {
-        $this->container['miniProgramPaths'] = $miniProgramPaths;
+        $this->container['type'] = $type;
+
+        return $this;
+    }
+
+    /**
+     * Gets info
+     *
+     * @return \TencentAds\Model\InfoStruct|mixed
+     */
+    public function getInfo()
+    {
+        return $this->container['info'];
+    }
+
+    /**
+     * Sets info
+     *
+     * @param \TencentAds\Model\InfoStruct|mixed $info info
+     *
+     * @return $this
+     */
+    public function setInfo($info)
+    {
+        $this->container['info'] = $info;
 
         return $this;
     }

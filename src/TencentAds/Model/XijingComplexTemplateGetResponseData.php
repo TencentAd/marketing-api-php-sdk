@@ -1,6 +1,6 @@
 <?php
 /**
- * DynamicProductSpec
+ * XijingComplexTemplateGetResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DynamicProductSpec Class Doc Comment
+ * XijingComplexTemplateGetResponseData Class Doc Comment
  *
  * @category Class
- * @description 动态多商品广告落地页信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DynamicProductSpec implements ModelInterface, ArrayAccess
+class XijingComplexTemplateGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dynamic_product_spec';
+    protected static $swaggerModelName = 'XijingComplexTemplateGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,12 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pageUrl' => 'string',
-        'miniProgramPaths' => 'string[]'
+        'pageTemplateId' => 'string',
+        'pageTemplateName' => 'string',
+        'pageTemplateCoverUrl' => 'string',
+        'pageName' => 'string',
+        'pageTitle' => 'string',
+        'pageConfig' => '\TencentAds\Model\XjConfigStruct[]'
     ];
 
     /**
@@ -68,8 +71,12 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'pageUrl' => null,
-        'miniProgramPaths' => null
+        'pageTemplateId' => null,
+        'pageTemplateName' => null,
+        'pageTemplateCoverUrl' => null,
+        'pageName' => null,
+        'pageTitle' => null,
+        'pageConfig' => null
     ];
 
     /**
@@ -99,8 +106,12 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'pageUrl' => 'page_url',
-        'miniProgramPaths' => 'mini_program_paths'
+        'pageTemplateId' => 'page_template_id',
+        'pageTemplateName' => 'page_template_name',
+        'pageTemplateCoverUrl' => 'page_template_cover_url',
+        'pageName' => 'page_name',
+        'pageTitle' => 'page_title',
+        'pageConfig' => 'page_config'
     ];
 
     /**
@@ -109,8 +120,12 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'pageUrl' => 'setPageUrl',
-        'miniProgramPaths' => 'setMiniProgramPaths'
+        'pageTemplateId' => 'setPageTemplateId',
+        'pageTemplateName' => 'setPageTemplateName',
+        'pageTemplateCoverUrl' => 'setPageTemplateCoverUrl',
+        'pageName' => 'setPageName',
+        'pageTitle' => 'setPageTitle',
+        'pageConfig' => 'setPageConfig'
     ];
 
     /**
@@ -119,8 +134,12 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'pageUrl' => 'getPageUrl',
-        'miniProgramPaths' => 'getMiniProgramPaths'
+        'pageTemplateId' => 'getPageTemplateId',
+        'pageTemplateName' => 'getPageTemplateName',
+        'pageTemplateCoverUrl' => 'getPageTemplateCoverUrl',
+        'pageName' => 'getPageName',
+        'pageTitle' => 'getPageTitle',
+        'pageConfig' => 'getPageConfig'
     ];
 
     /**
@@ -183,8 +202,12 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['pageUrl'] = isset($data['pageUrl']) ? $data['pageUrl'] : null;
-        $this->container['miniProgramPaths'] = isset($data['miniProgramPaths']) ? $data['miniProgramPaths'] : null;
+        $this->container['pageTemplateId'] = isset($data['pageTemplateId']) ? $data['pageTemplateId'] : null;
+        $this->container['pageTemplateName'] = isset($data['pageTemplateName']) ? $data['pageTemplateName'] : null;
+        $this->container['pageTemplateCoverUrl'] = isset($data['pageTemplateCoverUrl']) ? $data['pageTemplateCoverUrl'] : null;
+        $this->container['pageName'] = isset($data['pageName']) ? $data['pageName'] : null;
+        $this->container['pageTitle'] = isset($data['pageTitle']) ? $data['pageTitle'] : null;
+        $this->container['pageConfig'] = isset($data['pageConfig']) ? $data['pageConfig'] : null;
     }
 
     /**
@@ -212,49 +235,145 @@ class DynamicProductSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets pageUrl
+     * Gets pageTemplateId
      *
      * @return string|mixed
      */
-    public function getPageUrl()
+    public function getPageTemplateId()
     {
-        return $this->container['pageUrl'];
+        return $this->container['pageTemplateId'];
     }
 
     /**
-     * Sets pageUrl
+     * Sets pageTemplateId
      *
-     * @param string|mixed $pageUrl pageUrl
+     * @param string|mixed $pageTemplateId pageTemplateId
      *
      * @return $this
      */
-    public function setPageUrl($pageUrl)
+    public function setPageTemplateId($pageTemplateId)
     {
-        $this->container['pageUrl'] = $pageUrl;
+        $this->container['pageTemplateId'] = $pageTemplateId;
 
         return $this;
     }
 
     /**
-     * Gets miniProgramPaths
+     * Gets pageTemplateName
      *
-     * @return string[]|mixed
+     * @return string|mixed
      */
-    public function getMiniProgramPaths()
+    public function getPageTemplateName()
     {
-        return $this->container['miniProgramPaths'];
+        return $this->container['pageTemplateName'];
     }
 
     /**
-     * Sets miniProgramPaths
+     * Sets pageTemplateName
      *
-     * @param string[]|mixed $miniProgramPaths miniProgramPaths
+     * @param string|mixed $pageTemplateName pageTemplateName
      *
      * @return $this
      */
-    public function setMiniProgramPaths($miniProgramPaths)
+    public function setPageTemplateName($pageTemplateName)
     {
-        $this->container['miniProgramPaths'] = $miniProgramPaths;
+        $this->container['pageTemplateName'] = $pageTemplateName;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageTemplateCoverUrl
+     *
+     * @return string|mixed
+     */
+    public function getPageTemplateCoverUrl()
+    {
+        return $this->container['pageTemplateCoverUrl'];
+    }
+
+    /**
+     * Sets pageTemplateCoverUrl
+     *
+     * @param string|mixed $pageTemplateCoverUrl pageTemplateCoverUrl
+     *
+     * @return $this
+     */
+    public function setPageTemplateCoverUrl($pageTemplateCoverUrl)
+    {
+        $this->container['pageTemplateCoverUrl'] = $pageTemplateCoverUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageName
+     *
+     * @return string|mixed
+     */
+    public function getPageName()
+    {
+        return $this->container['pageName'];
+    }
+
+    /**
+     * Sets pageName
+     *
+     * @param string|mixed $pageName pageName
+     *
+     * @return $this
+     */
+    public function setPageName($pageName)
+    {
+        $this->container['pageName'] = $pageName;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageTitle
+     *
+     * @return string|mixed
+     */
+    public function getPageTitle()
+    {
+        return $this->container['pageTitle'];
+    }
+
+    /**
+     * Sets pageTitle
+     *
+     * @param string|mixed $pageTitle pageTitle
+     *
+     * @return $this
+     */
+    public function setPageTitle($pageTitle)
+    {
+        $this->container['pageTitle'] = $pageTitle;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageConfig
+     *
+     * @return \TencentAds\Model\XjConfigStruct[]|mixed
+     */
+    public function getPageConfig()
+    {
+        return $this->container['pageConfig'];
+    }
+
+    /**
+     * Sets pageConfig
+     *
+     * @param \TencentAds\Model\XjConfigStruct[]|mixed $pageConfig pageConfig
+     *
+     * @return $this
+     */
+    public function setPageConfig($pageConfig)
+    {
+        $this->container['pageConfig'] = $pageConfig;
 
         return $this;
     }
