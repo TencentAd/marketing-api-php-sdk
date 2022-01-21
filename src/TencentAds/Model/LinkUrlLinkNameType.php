@@ -92,6 +92,7 @@ class LinkUrlLinkNameType
     const MORE_ABOUT_OFFICIAL_ACCOUNT_CHT = 'MORE_ABOUT_OFFICIAL_ACCOUNT_CHT';
     const FOLLOW_OFFICIAL_ACCOUNT_CHT = 'FOLLOW_OFFICIAL_ACCOUNT_CHT';
     const GET_FOR_FREE = 'GET_FOR_FREE';
+    const WATCH_VIDEO = 'WATCH_VIDEO';
     
     /**
      * Gets allowable values of the enum
@@ -148,6 +149,7 @@ class LinkUrlLinkNameType
             self::MORE_ABOUT_OFFICIAL_ACCOUNT_CHT,
             self::FOLLOW_OFFICIAL_ACCOUNT_CHT,
             self::GET_FOR_FREE,
+            self::WATCH_VIDEO,
         ];
     }
 }
