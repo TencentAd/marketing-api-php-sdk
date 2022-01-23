@@ -1,6 +1,6 @@
 <?php
 /**
- * ProductItemsAddRequest
+ * AdditionalUserActionSetStruct
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ProductItemsAddRequest Class Doc Comment
+ * AdditionalUserActionSetStruct Class Doc Comment
  *
  * @category Class
+ * @description 用户行为数据源结构体
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ProductItemsAddRequest implements ModelInterface, ArrayAccess
+class AdditionalUserActionSetStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class ProductItemsAddRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'ProductItemsAddRequest';
+    protected static $swaggerModelName = 'additional_user_action_set_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,11 +58,8 @@ class ProductItemsAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'productCatalogId' => 'int',
-        'feedId' => 'int',
-        'requestSource' => 'string',
-        'productItemSpecList' => '\TencentAds\Model\ProductItemSpec[]'
+        'type' => '\TencentAds\Model\UserActionSetType',
+        'id' => 'int'
     ];
 
     /**
@@ -70,11 +68,8 @@ class ProductItemsAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'productCatalogId' => 'int64',
-        'feedId' => 'int64',
-        'requestSource' => null,
-        'productItemSpecList' => null
+        'type' => null,
+        'id' => 'int64'
     ];
 
     /**
@@ -104,11 +99,8 @@ class ProductItemsAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'productCatalogId' => 'product_catalog_id',
-        'feedId' => 'feed_id',
-        'requestSource' => 'request_source',
-        'productItemSpecList' => 'product_item_spec_list'
+        'type' => 'type',
+        'id' => 'id'
     ];
 
     /**
@@ -117,11 +109,8 @@ class ProductItemsAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'productCatalogId' => 'setProductCatalogId',
-        'feedId' => 'setFeedId',
-        'requestSource' => 'setRequestSource',
-        'productItemSpecList' => 'setProductItemSpecList'
+        'type' => 'setType',
+        'id' => 'setId'
     ];
 
     /**
@@ -130,11 +119,8 @@ class ProductItemsAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'productCatalogId' => 'getProductCatalogId',
-        'feedId' => 'getFeedId',
-        'requestSource' => 'getRequestSource',
-        'productItemSpecList' => 'getProductItemSpecList'
+        'type' => 'getType',
+        'id' => 'getId'
     ];
 
     /**
@@ -197,11 +183,8 @@ class ProductItemsAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
-        $this->container['feedId'] = isset($data['feedId']) ? $data['feedId'] : null;
-        $this->container['requestSource'] = isset($data['requestSource']) ? $data['requestSource'] : null;
-        $this->container['productItemSpecList'] = isset($data['productItemSpecList']) ? $data['productItemSpecList'] : null;
+        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
+        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
     }
 
     /**
@@ -229,121 +212,49 @@ class ProductItemsAddRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets accountId
+     * Gets type
+     *
+     * @return \TencentAds\Model\UserActionSetType|mixed
+     */
+    public function getType()
+    {
+        return $this->container['type'];
+    }
+
+    /**
+     * Sets type
+     *
+     * @param \TencentAds\Model\UserActionSetType|mixed $type type
+     *
+     * @return $this
+     */
+    public function setType($type)
+    {
+        $this->container['type'] = $type;
+
+        return $this;
+    }
+
+    /**
+     * Gets id
      *
      * @return int|mixed
      */
-    public function getAccountId()
+    public function getId()
     {
-        return $this->container['accountId'];
+        return $this->container['id'];
     }
 
     /**
-     * Sets accountId
+     * Sets id
      *
-     * @param int|mixed $accountId accountId
+     * @param int|mixed $id id
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setId($id)
     {
-        $this->container['accountId'] = $accountId;
-
-        return $this;
-    }
-
-    /**
-     * Gets productCatalogId
-     *
-     * @return int|mixed
-     */
-    public function getProductCatalogId()
-    {
-        return $this->container['productCatalogId'];
-    }
-
-    /**
-     * Sets productCatalogId
-     *
-     * @param int|mixed $productCatalogId productCatalogId
-     *
-     * @return $this
-     */
-    public function setProductCatalogId($productCatalogId)
-    {
-        $this->container['productCatalogId'] = $productCatalogId;
-
-        return $this;
-    }
-
-    /**
-     * Gets feedId
-     *
-     * @return int|mixed
-     */
-    public function getFeedId()
-    {
-        return $this->container['feedId'];
-    }
-
-    /**
-     * Sets feedId
-     *
-     * @param int|mixed $feedId feedId
-     *
-     * @return $this
-     */
-    public function setFeedId($feedId)
-    {
-        $this->container['feedId'] = $feedId;
-
-        return $this;
-    }
-
-    /**
-     * Gets requestSource
-     *
-     * @return string|mixed
-     */
-    public function getRequestSource()
-    {
-        return $this->container['requestSource'];
-    }
-
-    /**
-     * Sets requestSource
-     *
-     * @param string|mixed $requestSource requestSource
-     *
-     * @return $this
-     */
-    public function setRequestSource($requestSource)
-    {
-        $this->container['requestSource'] = $requestSource;
-
-        return $this;
-    }
-
-    /**
-     * Gets productItemSpecList
-     *
-     * @return \TencentAds\Model\ProductItemSpec[]|mixed
-     */
-    public function getProductItemSpecList()
-    {
-        return $this->container['productItemSpecList'];
-    }
-
-    /**
-     * Sets productItemSpecList
-     *
-     * @param \TencentAds\Model\ProductItemSpec[]|mixed $productItemSpecList productItemSpecList
-     *
-     * @return $this
-     */
-    public function setProductItemSpecList($productItemSpecList)
-    {
-        $this->container['productItemSpecList'] = $productItemSpecList;
+        $this->container['id'] = $id;
 
         return $this;
     }

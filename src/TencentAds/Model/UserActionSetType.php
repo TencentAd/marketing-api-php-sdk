@@ -47,6 +47,9 @@ class UserActionSetType
     const WEB = 'USER_ACTION_SET_TYPE_WEB';
     const IOS = 'USER_ACTION_SET_TYPE_IOS';
     const ANDROID = 'USER_ACTION_SET_TYPE_ANDROID';
+    const WECHAT = 'USER_ACTION_SET_TYPE_WECHAT';
+    const WECHAT_MINI_PROGRAM = 'USER_ACTION_SET_TYPE_WECHAT_MINI_PROGRAM';
+    const WECHAT_MINI_GAME = 'USER_ACTION_SET_TYPE_WECHAT_MINI_GAME';
     
     /**
      * Gets allowable values of the enum
@@ -58,6 +61,9 @@ class UserActionSetType
             self::WEB,
             self::IOS,
             self::ANDROID,
+            self::WECHAT,
+            self::WECHAT_MINI_PROGRAM,
+            self::WECHAT_MINI_GAME,
         ];
     }
 }

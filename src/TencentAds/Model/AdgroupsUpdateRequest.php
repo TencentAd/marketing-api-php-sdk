@@ -74,7 +74,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'flowOptimizationEnabled' => 'bool',
         'configuredStatus' => '\TencentAds\Model\AdStatus',
         'customizedCategory' => 'string',
-        'additionalUserActionSets' => '\TencentAds\Model\UserActionSetStruct[]',
+        'additionalUserActionSets' => '\TencentAds\Model\AdditionalUserActionSetStruct[]',
         'bidStrategy' => '\TencentAds\Model\BidStrategy',
         'coldStartAudience' => 'int[]',
         'autoAudience' => 'bool',
@@ -831,7 +831,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets additionalUserActionSets
      *
-     * @return \TencentAds\Model\UserActionSetStruct[]|mixed
+     * @return \TencentAds\Model\AdditionalUserActionSetStruct[]|mixed
      */
     public function getAdditionalUserActionSets()
     {
@@ -841,7 +841,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets additionalUserActionSets
      *
-     * @param \TencentAds\Model\UserActionSetStruct[]|mixed $additionalUserActionSets additionalUserActionSets
+     * @param \TencentAds\Model\AdditionalUserActionSetStruct[]|mixed $additionalUserActionSets additionalUserActionSets
      *
      * @return $this
      */

@@ -208,6 +208,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'productionPlace' => '\TencentAds\Model\ProductionPlace',
         'cartoonColor' => '\TencentAds\Model\CartoonColor',
         'maxQuotaV2' => '\TencentAds\Model\MaxQuotaEnum',
+        'standardCatalogProductHashId' => 'int',
         'customUrl' => 'string',
         'additionalCustomUrl' => 'string',
         'productBarcode' => 'string'
@@ -369,6 +370,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'productionPlace' => null,
         'cartoonColor' => null,
         'maxQuotaV2' => null,
+        'standardCatalogProductHashId' => 'int64',
         'customUrl' => null,
         'additionalCustomUrl' => null,
         'productBarcode' => null
@@ -551,6 +553,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'productionPlace' => 'production_place',
         'cartoonColor' => 'cartoon_color',
         'maxQuotaV2' => 'max_quota_v2',
+        'standardCatalogProductHashId' => 'standard_catalog_product_hash_id',
         'customUrl' => 'custom_url',
         'additionalCustomUrl' => 'additional_custom_url',
         'productBarcode' => 'product_barcode'
@@ -712,6 +715,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'productionPlace' => 'setProductionPlace',
         'cartoonColor' => 'setCartoonColor',
         'maxQuotaV2' => 'setMaxQuotaV2',
+        'standardCatalogProductHashId' => 'setStandardCatalogProductHashId',
         'customUrl' => 'setCustomUrl',
         'additionalCustomUrl' => 'setAdditionalCustomUrl',
         'productBarcode' => 'setProductBarcode'
@@ -873,6 +877,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'productionPlace' => 'getProductionPlace',
         'cartoonColor' => 'getCartoonColor',
         'maxQuotaV2' => 'getMaxQuotaV2',
+        'standardCatalogProductHashId' => 'getStandardCatalogProductHashId',
         'customUrl' => 'getCustomUrl',
         'additionalCustomUrl' => 'getAdditionalCustomUrl',
         'productBarcode' => 'getProductBarcode'
@@ -1088,6 +1093,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         $this->container['productionPlace'] = isset($data['productionPlace']) ? $data['productionPlace'] : null;
         $this->container['cartoonColor'] = isset($data['cartoonColor']) ? $data['cartoonColor'] : null;
         $this->container['maxQuotaV2'] = isset($data['maxQuotaV2']) ? $data['maxQuotaV2'] : null;
+        $this->container['standardCatalogProductHashId'] = isset($data['standardCatalogProductHashId']) ? $data['standardCatalogProductHashId'] : null;
         $this->container['customUrl'] = isset($data['customUrl']) ? $data['customUrl'] : null;
         $this->container['additionalCustomUrl'] = isset($data['additionalCustomUrl']) ? $data['additionalCustomUrl'] : null;
         $this->container['productBarcode'] = isset($data['productBarcode']) ? $data['productBarcode'] : null;
@@ -4713,6 +4719,30 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     public function setMaxQuotaV2($maxQuotaV2)
     {
         $this->container['maxQuotaV2'] = $maxQuotaV2;
+
+        return $this;
+    }
+
+    /**
+     * Gets standardCatalogProductHashId
+     *
+     * @return int|mixed
+     */
+    public function getStandardCatalogProductHashId()
+    {
+        return $this->container['standardCatalogProductHashId'];
+    }
+
+    /**
+     * Sets standardCatalogProductHashId
+     *
+     * @param int|mixed $standardCatalogProductHashId standardCatalogProductHashId
+     *
+     * @return $this
+     */
+    public function setStandardCatalogProductHashId($standardCatalogProductHashId)
+    {
+        $this->container['standardCatalogProductHashId'] = $standardCatalogProductHashId;
 
         return $this;
     }
