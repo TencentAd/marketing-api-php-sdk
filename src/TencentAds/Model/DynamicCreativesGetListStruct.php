@@ -85,7 +85,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'dynamicCreativeGroupUsed' => '\TencentAds\Model\DynamicCreativeGroupUsed',
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
         'enableBreakthroughSiteset' => 'bool',
-        'creativeTemplateVersionType' => '\TencentAds\Model\CreativeTemplateVersionType'
+        'creativeTemplateVersionType' => '\TencentAds\Model\CreativeTemplateVersionType',
+        'creativeTemplateCategory' => 'string'
     ];
 
     /**
@@ -121,7 +122,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'dynamicCreativeGroupUsed' => null,
         'appGiftPackCode' => null,
         'enableBreakthroughSiteset' => null,
-        'creativeTemplateVersionType' => null
+        'creativeTemplateVersionType' => null,
+        'creativeTemplateCategory' => null
     ];
 
     /**
@@ -178,7 +180,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'dynamicCreativeGroupUsed' => 'dynamic_creative_group_used',
         'appGiftPackCode' => 'app_gift_pack_code',
         'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
-        'creativeTemplateVersionType' => 'creative_template_version_type'
+        'creativeTemplateVersionType' => 'creative_template_version_type',
+        'creativeTemplateCategory' => 'creative_template_category'
     ];
 
     /**
@@ -214,7 +217,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'dynamicCreativeGroupUsed' => 'setDynamicCreativeGroupUsed',
         'appGiftPackCode' => 'setAppGiftPackCode',
         'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
-        'creativeTemplateVersionType' => 'setCreativeTemplateVersionType'
+        'creativeTemplateVersionType' => 'setCreativeTemplateVersionType',
+        'creativeTemplateCategory' => 'setCreativeTemplateCategory'
     ];
 
     /**
@@ -250,7 +254,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'dynamicCreativeGroupUsed' => 'getDynamicCreativeGroupUsed',
         'appGiftPackCode' => 'getAppGiftPackCode',
         'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
-        'creativeTemplateVersionType' => 'getCreativeTemplateVersionType'
+        'creativeTemplateVersionType' => 'getCreativeTemplateVersionType',
+        'creativeTemplateCategory' => 'getCreativeTemplateCategory'
     ];
 
     /**
@@ -341,6 +346,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
         $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
         $this->container['creativeTemplateVersionType'] = isset($data['creativeTemplateVersionType']) ? $data['creativeTemplateVersionType'] : null;
+        $this->container['creativeTemplateCategory'] = isset($data['creativeTemplateCategory']) ? $data['creativeTemplateCategory'] : null;
     }
 
     /**
@@ -1035,6 +1041,30 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setCreativeTemplateVersionType($creativeTemplateVersionType)
     {
         $this->container['creativeTemplateVersionType'] = $creativeTemplateVersionType;
+
+        return $this;
+    }
+
+    /**
+     * Gets creativeTemplateCategory
+     *
+     * @return string|mixed
+     */
+    public function getCreativeTemplateCategory()
+    {
+        return $this->container['creativeTemplateCategory'];
+    }
+
+    /**
+     * Sets creativeTemplateCategory
+     *
+     * @param string|mixed $creativeTemplateCategory creativeTemplateCategory
+     *
+     * @return $this
+     */
+    public function setCreativeTemplateCategory($creativeTemplateCategory)
+    {
+        $this->container['creativeTemplateCategory'] = $creativeTemplateCategory;
 
         return $this;
     }
