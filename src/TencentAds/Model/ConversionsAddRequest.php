@@ -71,6 +71,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'optimizationGoal' => '\TencentAds\Model\IntOptimizationGoal',
         'deepBehaviorOptimizationGoal' => '\TencentAds\Model\IntOptimizationGoal',
         'deepWorthOptimizationGoal' => '\TencentAds\Model\ConversionOptimizationGoal',
+        'deepWorthAdvancedGoal' => '\TencentAds\Model\ConversionOptimizationGoal',
         'userActionSetId' => 'int'
     ];
 
@@ -94,6 +95,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'optimizationGoal' => null,
         'deepBehaviorOptimizationGoal' => null,
         'deepWorthOptimizationGoal' => null,
+        'deepWorthAdvancedGoal' => null,
         'userActionSetId' => 'int64'
     ];
 
@@ -138,6 +140,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'optimizationGoal' => 'optimization_goal',
         'deepBehaviorOptimizationGoal' => 'deep_behavior_optimization_goal',
         'deepWorthOptimizationGoal' => 'deep_worth_optimization_goal',
+        'deepWorthAdvancedGoal' => 'deep_worth_advanced_goal',
         'userActionSetId' => 'user_action_set_id'
     ];
 
@@ -161,6 +164,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'optimizationGoal' => 'setOptimizationGoal',
         'deepBehaviorOptimizationGoal' => 'setDeepBehaviorOptimizationGoal',
         'deepWorthOptimizationGoal' => 'setDeepWorthOptimizationGoal',
+        'deepWorthAdvancedGoal' => 'setDeepWorthAdvancedGoal',
         'userActionSetId' => 'setUserActionSetId'
     ];
 
@@ -184,6 +188,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'optimizationGoal' => 'getOptimizationGoal',
         'deepBehaviorOptimizationGoal' => 'getDeepBehaviorOptimizationGoal',
         'deepWorthOptimizationGoal' => 'getDeepWorthOptimizationGoal',
+        'deepWorthAdvancedGoal' => 'getDeepWorthAdvancedGoal',
         'userActionSetId' => 'getUserActionSetId'
     ];
 
@@ -261,6 +266,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         $this->container['optimizationGoal'] = isset($data['optimizationGoal']) ? $data['optimizationGoal'] : null;
         $this->container['deepBehaviorOptimizationGoal'] = isset($data['deepBehaviorOptimizationGoal']) ? $data['deepBehaviorOptimizationGoal'] : null;
         $this->container['deepWorthOptimizationGoal'] = isset($data['deepWorthOptimizationGoal']) ? $data['deepWorthOptimizationGoal'] : null;
+        $this->container['deepWorthAdvancedGoal'] = isset($data['deepWorthAdvancedGoal']) ? $data['deepWorthAdvancedGoal'] : null;
         $this->container['userActionSetId'] = isset($data['userActionSetId']) ? $data['userActionSetId'] : null;
     }
 
@@ -620,6 +626,30 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     public function setDeepWorthOptimizationGoal($deepWorthOptimizationGoal)
     {
         $this->container['deepWorthOptimizationGoal'] = $deepWorthOptimizationGoal;
+
+        return $this;
+    }
+
+    /**
+     * Gets deepWorthAdvancedGoal
+     *
+     * @return \TencentAds\Model\ConversionOptimizationGoal|mixed
+     */
+    public function getDeepWorthAdvancedGoal()
+    {
+        return $this->container['deepWorthAdvancedGoal'];
+    }
+
+    /**
+     * Sets deepWorthAdvancedGoal
+     *
+     * @param \TencentAds\Model\ConversionOptimizationGoal|mixed $deepWorthAdvancedGoal deepWorthAdvancedGoal
+     *
+     * @return $this
+     */
+    public function setDeepWorthAdvancedGoal($deepWorthAdvancedGoal)
+    {
+        $this->container['deepWorthAdvancedGoal'] = $deepWorthAdvancedGoal;
 
         return $this;
     }

@@ -46,6 +46,7 @@ class DeepConversionType
      */
     const WORTH = 'DEEP_CONVERSION_WORTH';
     const BEHAVIOR = 'DEEP_CONVERSION_BEHAVIOR';
+    const WORTH_ADVANCED = 'DEEP_CONVERSION_WORTH_ADVANCED';
     
     /**
      * Gets allowable values of the enum
@@ -56,6 +57,7 @@ class DeepConversionType
         return [
             self::WORTH,
             self::BEHAVIOR,
+            self::WORTH_ADVANCED,
         ];
     }
 }

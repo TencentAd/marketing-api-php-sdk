@@ -76,7 +76,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'appAndroidChannelPackageId' => 'string',
         'promotedObjectId' => 'string',
         'conversionScene' => '\TencentAds\Model\ConversionScene',
-        'ownerId' => 'int'
+        'ownerId' => 'int',
+        'deepWorthAdvancedGoal' => '\TencentAds\Model\ConversionOptimizationGoal'
     ];
 
     /**
@@ -103,7 +104,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'appAndroidChannelPackageId' => null,
         'promotedObjectId' => null,
         'conversionScene' => null,
-        'ownerId' => 'int64'
+        'ownerId' => 'int64',
+        'deepWorthAdvancedGoal' => null
     ];
 
     /**
@@ -151,7 +153,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'appAndroidChannelPackageId' => 'app_android_channel_package_id',
         'promotedObjectId' => 'promoted_object_id',
         'conversionScene' => 'conversion_scene',
-        'ownerId' => 'owner_id'
+        'ownerId' => 'owner_id',
+        'deepWorthAdvancedGoal' => 'deep_worth_advanced_goal'
     ];
 
     /**
@@ -178,7 +181,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'appAndroidChannelPackageId' => 'setAppAndroidChannelPackageId',
         'promotedObjectId' => 'setPromotedObjectId',
         'conversionScene' => 'setConversionScene',
-        'ownerId' => 'setOwnerId'
+        'ownerId' => 'setOwnerId',
+        'deepWorthAdvancedGoal' => 'setDeepWorthAdvancedGoal'
     ];
 
     /**
@@ -205,7 +209,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'appAndroidChannelPackageId' => 'getAppAndroidChannelPackageId',
         'promotedObjectId' => 'getPromotedObjectId',
         'conversionScene' => 'getConversionScene',
-        'ownerId' => 'getOwnerId'
+        'ownerId' => 'getOwnerId',
+        'deepWorthAdvancedGoal' => 'getDeepWorthAdvancedGoal'
     ];
 
     /**
@@ -287,6 +292,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
         $this->container['conversionScene'] = isset($data['conversionScene']) ? $data['conversionScene'] : null;
         $this->container['ownerId'] = isset($data['ownerId']) ? $data['ownerId'] : null;
+        $this->container['deepWorthAdvancedGoal'] = isset($data['deepWorthAdvancedGoal']) ? $data['deepWorthAdvancedGoal'] : null;
     }
 
     /**
@@ -765,6 +771,30 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     public function setOwnerId($ownerId)
     {
         $this->container['ownerId'] = $ownerId;
+
+        return $this;
+    }
+
+    /**
+     * Gets deepWorthAdvancedGoal
+     *
+     * @return \TencentAds\Model\ConversionOptimizationGoal|mixed
+     */
+    public function getDeepWorthAdvancedGoal()
+    {
+        return $this->container['deepWorthAdvancedGoal'];
+    }
+
+    /**
+     * Sets deepWorthAdvancedGoal
+     *
+     * @param \TencentAds\Model\ConversionOptimizationGoal|mixed $deepWorthAdvancedGoal deepWorthAdvancedGoal
+     *
+     * @return $this
+     */
+    public function setDeepWorthAdvancedGoal($deepWorthAdvancedGoal)
+    {
+        $this->container['deepWorthAdvancedGoal'] = $deepWorthAdvancedGoal;
 
         return $this;
     }

@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * ConversionOptimizationGoal Class Doc Comment
  *
  * @category Class
- * @description 深度优化ROI目标，深度优化行为目标和深度优化ROI目标仅可填写其中一个
+ * @description 深度优化ROI目标，深度优化行为目标、深度优化ROI和深度强化ROI目标仅可填写其中一个
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
