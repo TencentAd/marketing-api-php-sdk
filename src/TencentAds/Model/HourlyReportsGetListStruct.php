@@ -418,6 +418,21 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Arpu' => 'int',
         'miniGameCreateRoleRate' => 'double',
         'consultUvCount' => 'int',
+        'videoFollowCount' => 'int',
+        'videoHeartCount' => 'int',
+        'videoCommentCount' => 'int',
+        'videoLiveSubscribeCount' => 'int',
+        'videoLiveExpCount' => 'int',
+        'videoLiveHeartCount' => 'int',
+        'videoLiveCommentCount' => 'int',
+        'videoLiveShareCount' => 'int',
+        'videoLiveCickCommodityCount' => 'int',
+        'videoLiveExpUserCount' => 'int',
+        'videoLiveHeartUserCount' => 'int',
+        'videoLiveCommentUserCount' => 'int',
+        'videoLiveShareUserCount' => 'int',
+        'videoLiveClickCommodityUserCount' => 'int',
+        'videoLiveCommodityBubbleExpCount' => 'int',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
         'incomeVal1' => 'int',
@@ -972,6 +987,21 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Arpu' => 'int64',
         'miniGameCreateRoleRate' => 'double',
         'consultUvCount' => 'int64',
+        'videoFollowCount' => 'int64',
+        'videoHeartCount' => 'int64',
+        'videoCommentCount' => 'int64',
+        'videoLiveSubscribeCount' => 'int64',
+        'videoLiveExpCount' => 'int64',
+        'videoLiveHeartCount' => 'int64',
+        'videoLiveCommentCount' => 'int64',
+        'videoLiveShareCount' => 'int64',
+        'videoLiveCickCommodityCount' => 'int64',
+        'videoLiveExpUserCount' => 'int64',
+        'videoLiveHeartUserCount' => 'int64',
+        'videoLiveCommentUserCount' => 'int64',
+        'videoLiveShareUserCount' => 'int64',
+        'videoLiveClickCommodityUserCount' => 'int64',
+        'videoLiveCommodityBubbleExpCount' => 'int64',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
         'incomeVal1' => 'int64',
@@ -1547,6 +1577,21 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Arpu' => 'mini_game_bf_purchase_d1_arpu',
         'miniGameCreateRoleRate' => 'mini_game_create_role_rate',
         'consultUvCount' => 'consult_uv_count',
+        'videoFollowCount' => 'video_follow_count',
+        'videoHeartCount' => 'video_heart_count',
+        'videoCommentCount' => 'video_comment_count',
+        'videoLiveSubscribeCount' => 'video_live_subscribe_count',
+        'videoLiveExpCount' => 'video_live_exp_count',
+        'videoLiveHeartCount' => 'video_live_heart_count',
+        'videoLiveCommentCount' => 'video_live_comment_count',
+        'videoLiveShareCount' => 'video_live_share_count',
+        'videoLiveCickCommodityCount' => 'video_live_cick_commodity_count',
+        'videoLiveExpUserCount' => 'video_live_exp_user_count',
+        'videoLiveHeartUserCount' => 'video_live_heart_user_count',
+        'videoLiveCommentUserCount' => 'video_live_comment_user_count',
+        'videoLiveShareUserCount' => 'video_live_share_user_count',
+        'videoLiveClickCommodityUserCount' => 'video_live_click_commodity_user_count',
+        'videoLiveCommodityBubbleExpCount' => 'video_live_commodity_bubble_exp_count',
         'requestConversionsCount' => 'request_conversions_count',
         'requestConversionsCost' => 'request_conversions_cost',
         'incomeVal1' => 'income_val_1',
@@ -2101,6 +2146,21 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Arpu' => 'setMiniGameBfPurchaseD1Arpu',
         'miniGameCreateRoleRate' => 'setMiniGameCreateRoleRate',
         'consultUvCount' => 'setConsultUvCount',
+        'videoFollowCount' => 'setVideoFollowCount',
+        'videoHeartCount' => 'setVideoHeartCount',
+        'videoCommentCount' => 'setVideoCommentCount',
+        'videoLiveSubscribeCount' => 'setVideoLiveSubscribeCount',
+        'videoLiveExpCount' => 'setVideoLiveExpCount',
+        'videoLiveHeartCount' => 'setVideoLiveHeartCount',
+        'videoLiveCommentCount' => 'setVideoLiveCommentCount',
+        'videoLiveShareCount' => 'setVideoLiveShareCount',
+        'videoLiveCickCommodityCount' => 'setVideoLiveCickCommodityCount',
+        'videoLiveExpUserCount' => 'setVideoLiveExpUserCount',
+        'videoLiveHeartUserCount' => 'setVideoLiveHeartUserCount',
+        'videoLiveCommentUserCount' => 'setVideoLiveCommentUserCount',
+        'videoLiveShareUserCount' => 'setVideoLiveShareUserCount',
+        'videoLiveClickCommodityUserCount' => 'setVideoLiveClickCommodityUserCount',
+        'videoLiveCommodityBubbleExpCount' => 'setVideoLiveCommodityBubbleExpCount',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'requestConversionsCost' => 'setRequestConversionsCost',
         'incomeVal1' => 'setIncomeVal1',
@@ -2655,6 +2715,21 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Arpu' => 'getMiniGameBfPurchaseD1Arpu',
         'miniGameCreateRoleRate' => 'getMiniGameCreateRoleRate',
         'consultUvCount' => 'getConsultUvCount',
+        'videoFollowCount' => 'getVideoFollowCount',
+        'videoHeartCount' => 'getVideoHeartCount',
+        'videoCommentCount' => 'getVideoCommentCount',
+        'videoLiveSubscribeCount' => 'getVideoLiveSubscribeCount',
+        'videoLiveExpCount' => 'getVideoLiveExpCount',
+        'videoLiveHeartCount' => 'getVideoLiveHeartCount',
+        'videoLiveCommentCount' => 'getVideoLiveCommentCount',
+        'videoLiveShareCount' => 'getVideoLiveShareCount',
+        'videoLiveCickCommodityCount' => 'getVideoLiveCickCommodityCount',
+        'videoLiveExpUserCount' => 'getVideoLiveExpUserCount',
+        'videoLiveHeartUserCount' => 'getVideoLiveHeartUserCount',
+        'videoLiveCommentUserCount' => 'getVideoLiveCommentUserCount',
+        'videoLiveShareUserCount' => 'getVideoLiveShareUserCount',
+        'videoLiveClickCommodityUserCount' => 'getVideoLiveClickCommodityUserCount',
+        'videoLiveCommodityBubbleExpCount' => 'getVideoLiveCommodityBubbleExpCount',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'requestConversionsCost' => 'getRequestConversionsCost',
         'incomeVal1' => 'getIncomeVal1',
@@ -3263,6 +3338,21 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGameBfPurchaseD1Arpu'] = isset($data['miniGameBfPurchaseD1Arpu']) ? $data['miniGameBfPurchaseD1Arpu'] : null;
         $this->container['miniGameCreateRoleRate'] = isset($data['miniGameCreateRoleRate']) ? $data['miniGameCreateRoleRate'] : null;
         $this->container['consultUvCount'] = isset($data['consultUvCount']) ? $data['consultUvCount'] : null;
+        $this->container['videoFollowCount'] = isset($data['videoFollowCount']) ? $data['videoFollowCount'] : null;
+        $this->container['videoHeartCount'] = isset($data['videoHeartCount']) ? $data['videoHeartCount'] : null;
+        $this->container['videoCommentCount'] = isset($data['videoCommentCount']) ? $data['videoCommentCount'] : null;
+        $this->container['videoLiveSubscribeCount'] = isset($data['videoLiveSubscribeCount']) ? $data['videoLiveSubscribeCount'] : null;
+        $this->container['videoLiveExpCount'] = isset($data['videoLiveExpCount']) ? $data['videoLiveExpCount'] : null;
+        $this->container['videoLiveHeartCount'] = isset($data['videoLiveHeartCount']) ? $data['videoLiveHeartCount'] : null;
+        $this->container['videoLiveCommentCount'] = isset($data['videoLiveCommentCount']) ? $data['videoLiveCommentCount'] : null;
+        $this->container['videoLiveShareCount'] = isset($data['videoLiveShareCount']) ? $data['videoLiveShareCount'] : null;
+        $this->container['videoLiveCickCommodityCount'] = isset($data['videoLiveCickCommodityCount']) ? $data['videoLiveCickCommodityCount'] : null;
+        $this->container['videoLiveExpUserCount'] = isset($data['videoLiveExpUserCount']) ? $data['videoLiveExpUserCount'] : null;
+        $this->container['videoLiveHeartUserCount'] = isset($data['videoLiveHeartUserCount']) ? $data['videoLiveHeartUserCount'] : null;
+        $this->container['videoLiveCommentUserCount'] = isset($data['videoLiveCommentUserCount']) ? $data['videoLiveCommentUserCount'] : null;
+        $this->container['videoLiveShareUserCount'] = isset($data['videoLiveShareUserCount']) ? $data['videoLiveShareUserCount'] : null;
+        $this->container['videoLiveClickCommodityUserCount'] = isset($data['videoLiveClickCommodityUserCount']) ? $data['videoLiveClickCommodityUserCount'] : null;
+        $this->container['videoLiveCommodityBubbleExpCount'] = isset($data['videoLiveCommodityBubbleExpCount']) ? $data['videoLiveCommodityBubbleExpCount'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
         $this->container['incomeVal1'] = isset($data['incomeVal1']) ? $data['incomeVal1'] : null;
@@ -12111,6 +12201,366 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setConsultUvCount($consultUvCount)
     {
         $this->container['consultUvCount'] = $consultUvCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoFollowCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoFollowCount()
+    {
+        return $this->container['videoFollowCount'];
+    }
+
+    /**
+     * Sets videoFollowCount
+     *
+     * @param int|mixed $videoFollowCount videoFollowCount
+     *
+     * @return $this
+     */
+    public function setVideoFollowCount($videoFollowCount)
+    {
+        $this->container['videoFollowCount'] = $videoFollowCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoHeartCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoHeartCount()
+    {
+        return $this->container['videoHeartCount'];
+    }
+
+    /**
+     * Sets videoHeartCount
+     *
+     * @param int|mixed $videoHeartCount videoHeartCount
+     *
+     * @return $this
+     */
+    public function setVideoHeartCount($videoHeartCount)
+    {
+        $this->container['videoHeartCount'] = $videoHeartCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoCommentCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoCommentCount()
+    {
+        return $this->container['videoCommentCount'];
+    }
+
+    /**
+     * Sets videoCommentCount
+     *
+     * @param int|mixed $videoCommentCount videoCommentCount
+     *
+     * @return $this
+     */
+    public function setVideoCommentCount($videoCommentCount)
+    {
+        $this->container['videoCommentCount'] = $videoCommentCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveSubscribeCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveSubscribeCount()
+    {
+        return $this->container['videoLiveSubscribeCount'];
+    }
+
+    /**
+     * Sets videoLiveSubscribeCount
+     *
+     * @param int|mixed $videoLiveSubscribeCount videoLiveSubscribeCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveSubscribeCount($videoLiveSubscribeCount)
+    {
+        $this->container['videoLiveSubscribeCount'] = $videoLiveSubscribeCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveExpCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveExpCount()
+    {
+        return $this->container['videoLiveExpCount'];
+    }
+
+    /**
+     * Sets videoLiveExpCount
+     *
+     * @param int|mixed $videoLiveExpCount videoLiveExpCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveExpCount($videoLiveExpCount)
+    {
+        $this->container['videoLiveExpCount'] = $videoLiveExpCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveHeartCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveHeartCount()
+    {
+        return $this->container['videoLiveHeartCount'];
+    }
+
+    /**
+     * Sets videoLiveHeartCount
+     *
+     * @param int|mixed $videoLiveHeartCount videoLiveHeartCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveHeartCount($videoLiveHeartCount)
+    {
+        $this->container['videoLiveHeartCount'] = $videoLiveHeartCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveCommentCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveCommentCount()
+    {
+        return $this->container['videoLiveCommentCount'];
+    }
+
+    /**
+     * Sets videoLiveCommentCount
+     *
+     * @param int|mixed $videoLiveCommentCount videoLiveCommentCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveCommentCount($videoLiveCommentCount)
+    {
+        $this->container['videoLiveCommentCount'] = $videoLiveCommentCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveShareCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveShareCount()
+    {
+        return $this->container['videoLiveShareCount'];
+    }
+
+    /**
+     * Sets videoLiveShareCount
+     *
+     * @param int|mixed $videoLiveShareCount videoLiveShareCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveShareCount($videoLiveShareCount)
+    {
+        $this->container['videoLiveShareCount'] = $videoLiveShareCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveCickCommodityCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveCickCommodityCount()
+    {
+        return $this->container['videoLiveCickCommodityCount'];
+    }
+
+    /**
+     * Sets videoLiveCickCommodityCount
+     *
+     * @param int|mixed $videoLiveCickCommodityCount videoLiveCickCommodityCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveCickCommodityCount($videoLiveCickCommodityCount)
+    {
+        $this->container['videoLiveCickCommodityCount'] = $videoLiveCickCommodityCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveExpUserCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveExpUserCount()
+    {
+        return $this->container['videoLiveExpUserCount'];
+    }
+
+    /**
+     * Sets videoLiveExpUserCount
+     *
+     * @param int|mixed $videoLiveExpUserCount videoLiveExpUserCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveExpUserCount($videoLiveExpUserCount)
+    {
+        $this->container['videoLiveExpUserCount'] = $videoLiveExpUserCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveHeartUserCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveHeartUserCount()
+    {
+        return $this->container['videoLiveHeartUserCount'];
+    }
+
+    /**
+     * Sets videoLiveHeartUserCount
+     *
+     * @param int|mixed $videoLiveHeartUserCount videoLiveHeartUserCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveHeartUserCount($videoLiveHeartUserCount)
+    {
+        $this->container['videoLiveHeartUserCount'] = $videoLiveHeartUserCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveCommentUserCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveCommentUserCount()
+    {
+        return $this->container['videoLiveCommentUserCount'];
+    }
+
+    /**
+     * Sets videoLiveCommentUserCount
+     *
+     * @param int|mixed $videoLiveCommentUserCount videoLiveCommentUserCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveCommentUserCount($videoLiveCommentUserCount)
+    {
+        $this->container['videoLiveCommentUserCount'] = $videoLiveCommentUserCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveShareUserCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveShareUserCount()
+    {
+        return $this->container['videoLiveShareUserCount'];
+    }
+
+    /**
+     * Sets videoLiveShareUserCount
+     *
+     * @param int|mixed $videoLiveShareUserCount videoLiveShareUserCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveShareUserCount($videoLiveShareUserCount)
+    {
+        $this->container['videoLiveShareUserCount'] = $videoLiveShareUserCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveClickCommodityUserCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveClickCommodityUserCount()
+    {
+        return $this->container['videoLiveClickCommodityUserCount'];
+    }
+
+    /**
+     * Sets videoLiveClickCommodityUserCount
+     *
+     * @param int|mixed $videoLiveClickCommodityUserCount videoLiveClickCommodityUserCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveClickCommodityUserCount($videoLiveClickCommodityUserCount)
+    {
+        $this->container['videoLiveClickCommodityUserCount'] = $videoLiveClickCommodityUserCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveCommodityBubbleExpCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveCommodityBubbleExpCount()
+    {
+        return $this->container['videoLiveCommodityBubbleExpCount'];
+    }
+
+    /**
+     * Sets videoLiveCommodityBubbleExpCount
+     *
+     * @param int|mixed $videoLiveCommodityBubbleExpCount videoLiveCommodityBubbleExpCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveCommodityBubbleExpCount($videoLiveCommodityBubbleExpCount)
+    {
+        $this->container['videoLiveCommodityBubbleExpCount'] = $videoLiveCommodityBubbleExpCount;
 
         return $this;
     }
