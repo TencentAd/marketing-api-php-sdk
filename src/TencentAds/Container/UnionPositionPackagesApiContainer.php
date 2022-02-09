@@ -135,4 +135,38 @@ class UnionPositionPackagesApiContainer extends ApiContainer
             return $response;
         });
     }
+
+
+    /**
+     * Handle UnionPositionPackagesApi unionPositionPackagesUpdate function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function update(array $params = [])
+    {
+        return $this->handleMiddleware('update', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->unionPositionPackagesUpdate($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle UnionPositionPackagesApi unionPositionPackagesUpdateAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function updateAsync(array $params = [])
+    {
+        return $this->handleMiddleware('update', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->unionPositionPackagesUpdateAsync($data);
+            return $response;
+        });
+    }
 }
