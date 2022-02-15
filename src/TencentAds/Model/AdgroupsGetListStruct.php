@@ -117,7 +117,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'smartBidType' => '\TencentAds\Model\SmartBidType',
         'smartCostCap' => 'int',
         'marketingScene' => '\TencentAds\Model\MarketingScene',
-        'customAdgroupTag' => 'string[]'
+        'customAdgroupTag' => 'string[]',
+        'smartTargeting' => '\TencentAds\Model\SmartTargeting'
     ];
 
     /**
@@ -185,7 +186,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'smartBidType' => null,
         'smartCostCap' => 'int64',
         'marketingScene' => null,
-        'customAdgroupTag' => null
+        'customAdgroupTag' => null,
+        'smartTargeting' => null
     ];
 
     /**
@@ -274,7 +276,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'smartBidType' => 'smart_bid_type',
         'smartCostCap' => 'smart_cost_cap',
         'marketingScene' => 'marketing_scene',
-        'customAdgroupTag' => 'custom_adgroup_tag'
+        'customAdgroupTag' => 'custom_adgroup_tag',
+        'smartTargeting' => 'smart_targeting'
     ];
 
     /**
@@ -342,7 +345,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'smartBidType' => 'setSmartBidType',
         'smartCostCap' => 'setSmartCostCap',
         'marketingScene' => 'setMarketingScene',
-        'customAdgroupTag' => 'setCustomAdgroupTag'
+        'customAdgroupTag' => 'setCustomAdgroupTag',
+        'smartTargeting' => 'setSmartTargeting'
     ];
 
     /**
@@ -410,7 +414,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'smartBidType' => 'getSmartBidType',
         'smartCostCap' => 'getSmartCostCap',
         'marketingScene' => 'getMarketingScene',
-        'customAdgroupTag' => 'getCustomAdgroupTag'
+        'customAdgroupTag' => 'getCustomAdgroupTag',
+        'smartTargeting' => 'getSmartTargeting'
     ];
 
     /**
@@ -533,6 +538,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['smartCostCap'] = isset($data['smartCostCap']) ? $data['smartCostCap'] : null;
         $this->container['marketingScene'] = isset($data['marketingScene']) ? $data['marketingScene'] : null;
         $this->container['customAdgroupTag'] = isset($data['customAdgroupTag']) ? $data['customAdgroupTag'] : null;
+        $this->container['smartTargeting'] = isset($data['smartTargeting']) ? $data['smartTargeting'] : null;
     }
 
     /**
@@ -1995,6 +2001,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setCustomAdgroupTag($customAdgroupTag)
     {
         $this->container['customAdgroupTag'] = $customAdgroupTag;
+
+        return $this;
+    }
+
+    /**
+     * Gets smartTargeting
+     *
+     * @return \TencentAds\Model\SmartTargeting|mixed
+     */
+    public function getSmartTargeting()
+    {
+        return $this->container['smartTargeting'];
+    }
+
+    /**
+     * Sets smartTargeting
+     *
+     * @param \TencentAds\Model\SmartTargeting|mixed $smartTargeting smartTargeting
+     *
+     * @return $this
+     */
+    public function setSmartTargeting($smartTargeting)
+    {
+        $this->container['smartTargeting'] = $smartTargeting;
 
         return $this;
     }

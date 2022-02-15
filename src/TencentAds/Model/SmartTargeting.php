@@ -1,6 +1,6 @@
 <?php
 /**
- * TemperatureStruct
+ * SmartTargeting
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * TemperatureStruct Class Doc Comment
+ * SmartTargeting Class Doc Comment
  *
  * @category Class
- * @description 温度信息结构
+ * @description 智能定向功能,功能灰度开放，如需使用可联系您的运营接口同学。&lt;br&gt;智能定向功能与自动扩量/系统优选相关字段不可同时设置。
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class TemperatureStruct implements ModelInterface, ArrayAccess
+class SmartTargeting implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class TemperatureStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'temperature_struct';
+    protected static $swaggerModelName = 'smart_targeting';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,10 @@ class TemperatureStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'min' => 'int',
-        'max' => 'int'
+        'smartTargetingVersion' => 'int',
+        'smartTargetingSwitch' => 'bool',
+        'startAudience' => 'int[]',
+        'unbreakableTargeting' => '\TencentAds\Model\UnbreakableTargetingSetting'
     ];
 
     /**
@@ -68,8 +70,10 @@ class TemperatureStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'min' => 'int64',
-        'max' => 'int64'
+        'smartTargetingVersion' => 'int64',
+        'smartTargetingSwitch' => null,
+        'startAudience' => 'int64',
+        'unbreakableTargeting' => null
     ];
 
     /**
@@ -99,8 +103,10 @@ class TemperatureStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'min' => 'min',
-        'max' => 'max'
+        'smartTargetingVersion' => 'smart_targeting_version',
+        'smartTargetingSwitch' => 'smart_targeting_switch',
+        'startAudience' => 'start_audience',
+        'unbreakableTargeting' => 'unbreakable_targeting'
     ];
 
     /**
@@ -109,8 +115,10 @@ class TemperatureStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'min' => 'setMin',
-        'max' => 'setMax'
+        'smartTargetingVersion' => 'setSmartTargetingVersion',
+        'smartTargetingSwitch' => 'setSmartTargetingSwitch',
+        'startAudience' => 'setStartAudience',
+        'unbreakableTargeting' => 'setUnbreakableTargeting'
     ];
 
     /**
@@ -119,8 +127,10 @@ class TemperatureStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'min' => 'getMin',
-        'max' => 'getMax'
+        'smartTargetingVersion' => 'getSmartTargetingVersion',
+        'smartTargetingSwitch' => 'getSmartTargetingSwitch',
+        'startAudience' => 'getStartAudience',
+        'unbreakableTargeting' => 'getUnbreakableTargeting'
     ];
 
     /**
@@ -183,8 +193,10 @@ class TemperatureStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['min'] = isset($data['min']) ? $data['min'] : null;
-        $this->container['max'] = isset($data['max']) ? $data['max'] : null;
+        $this->container['smartTargetingVersion'] = isset($data['smartTargetingVersion']) ? $data['smartTargetingVersion'] : null;
+        $this->container['smartTargetingSwitch'] = isset($data['smartTargetingSwitch']) ? $data['smartTargetingSwitch'] : null;
+        $this->container['startAudience'] = isset($data['startAudience']) ? $data['startAudience'] : null;
+        $this->container['unbreakableTargeting'] = isset($data['unbreakableTargeting']) ? $data['unbreakableTargeting'] : null;
     }
 
     /**
@@ -212,49 +224,97 @@ class TemperatureStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets min
+     * Gets smartTargetingVersion
      *
      * @return int|mixed
      */
-    public function getMin()
+    public function getSmartTargetingVersion()
     {
-        return $this->container['min'];
+        return $this->container['smartTargetingVersion'];
     }
 
     /**
-     * Sets min
+     * Sets smartTargetingVersion
      *
-     * @param int|mixed $min min
+     * @param int|mixed $smartTargetingVersion smartTargetingVersion
      *
      * @return $this
      */
-    public function setMin($min)
+    public function setSmartTargetingVersion($smartTargetingVersion)
     {
-        $this->container['min'] = $min;
+        $this->container['smartTargetingVersion'] = $smartTargetingVersion;
 
         return $this;
     }
 
     /**
-     * Gets max
+     * Gets smartTargetingSwitch
      *
-     * @return int|mixed
+     * @return bool|mixed
      */
-    public function getMax()
+    public function getSmartTargetingSwitch()
     {
-        return $this->container['max'];
+        return $this->container['smartTargetingSwitch'];
     }
 
     /**
-     * Sets max
+     * Sets smartTargetingSwitch
      *
-     * @param int|mixed $max max
+     * @param bool|mixed $smartTargetingSwitch smartTargetingSwitch
      *
      * @return $this
      */
-    public function setMax($max)
+    public function setSmartTargetingSwitch($smartTargetingSwitch)
     {
-        $this->container['max'] = $max;
+        $this->container['smartTargetingSwitch'] = $smartTargetingSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets startAudience
+     *
+     * @return int[]|mixed
+     */
+    public function getStartAudience()
+    {
+        return $this->container['startAudience'];
+    }
+
+    /**
+     * Sets startAudience
+     *
+     * @param int[]|mixed $startAudience startAudience
+     *
+     * @return $this
+     */
+    public function setStartAudience($startAudience)
+    {
+        $this->container['startAudience'] = $startAudience;
+
+        return $this;
+    }
+
+    /**
+     * Gets unbreakableTargeting
+     *
+     * @return \TencentAds\Model\UnbreakableTargetingSetting|mixed
+     */
+    public function getUnbreakableTargeting()
+    {
+        return $this->container['unbreakableTargeting'];
+    }
+
+    /**
+     * Sets unbreakableTargeting
+     *
+     * @param \TencentAds\Model\UnbreakableTargetingSetting|mixed $unbreakableTargeting unbreakableTargeting
+     *
+     * @return $this
+     */
+    public function setUnbreakableTargeting($unbreakableTargeting)
+    {
+        $this->container['unbreakableTargeting'] = $unbreakableTargeting;
 
         return $this;
     }

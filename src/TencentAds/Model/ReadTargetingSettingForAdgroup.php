@@ -71,13 +71,6 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'networkType' => 'string[]',
         'networkOperator' => 'string[]',
         'networkScene' => 'string[]',
-        'dressingIndex' => 'string[]',
-        'uvIndex' => 'string[]',
-        'makeupIndex' => 'string[]',
-        'climate' => 'string[]',
-        'temperature' => '\TencentAds\Model\TemperatureStruct[]',
-        'airQualityIndex' => 'string[]',
-        'appInstallStatus' => 'string[]',
         'consumptionStatus' => 'string[]',
         'gameConsumptionLevel' => 'string[]',
         'residentialCommunityPrice' => '\TencentAds\Model\ResidentialCommunityPriceStruct[]',
@@ -119,13 +112,6 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'networkType' => null,
         'networkOperator' => null,
         'networkScene' => null,
-        'dressingIndex' => null,
-        'uvIndex' => null,
-        'makeupIndex' => null,
-        'climate' => null,
-        'temperature' => null,
-        'airQualityIndex' => null,
-        'appInstallStatus' => null,
         'consumptionStatus' => null,
         'gameConsumptionLevel' => null,
         'residentialCommunityPrice' => null,
@@ -188,13 +174,6 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'networkType' => 'network_type',
         'networkOperator' => 'network_operator',
         'networkScene' => 'network_scene',
-        'dressingIndex' => 'dressing_index',
-        'uvIndex' => 'uv_index',
-        'makeupIndex' => 'makeup_index',
-        'climate' => 'climate',
-        'temperature' => 'temperature',
-        'airQualityIndex' => 'air_quality_index',
-        'appInstallStatus' => 'app_install_status',
         'consumptionStatus' => 'consumption_status',
         'gameConsumptionLevel' => 'game_consumption_level',
         'residentialCommunityPrice' => 'residential_community_price',
@@ -236,13 +215,6 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'networkType' => 'setNetworkType',
         'networkOperator' => 'setNetworkOperator',
         'networkScene' => 'setNetworkScene',
-        'dressingIndex' => 'setDressingIndex',
-        'uvIndex' => 'setUvIndex',
-        'makeupIndex' => 'setMakeupIndex',
-        'climate' => 'setClimate',
-        'temperature' => 'setTemperature',
-        'airQualityIndex' => 'setAirQualityIndex',
-        'appInstallStatus' => 'setAppInstallStatus',
         'consumptionStatus' => 'setConsumptionStatus',
         'gameConsumptionLevel' => 'setGameConsumptionLevel',
         'residentialCommunityPrice' => 'setResidentialCommunityPrice',
@@ -284,13 +256,6 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'networkType' => 'getNetworkType',
         'networkOperator' => 'getNetworkOperator',
         'networkScene' => 'getNetworkScene',
-        'dressingIndex' => 'getDressingIndex',
-        'uvIndex' => 'getUvIndex',
-        'makeupIndex' => 'getMakeupIndex',
-        'climate' => 'getClimate',
-        'temperature' => 'getTemperature',
-        'airQualityIndex' => 'getAirQualityIndex',
-        'appInstallStatus' => 'getAppInstallStatus',
         'consumptionStatus' => 'getConsumptionStatus',
         'gameConsumptionLevel' => 'getGameConsumptionLevel',
         'residentialCommunityPrice' => 'getResidentialCommunityPrice',
@@ -386,13 +351,6 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         $this->container['networkType'] = isset($data['networkType']) ? $data['networkType'] : null;
         $this->container['networkOperator'] = isset($data['networkOperator']) ? $data['networkOperator'] : null;
         $this->container['networkScene'] = isset($data['networkScene']) ? $data['networkScene'] : null;
-        $this->container['dressingIndex'] = isset($data['dressingIndex']) ? $data['dressingIndex'] : null;
-        $this->container['uvIndex'] = isset($data['uvIndex']) ? $data['uvIndex'] : null;
-        $this->container['makeupIndex'] = isset($data['makeupIndex']) ? $data['makeupIndex'] : null;
-        $this->container['climate'] = isset($data['climate']) ? $data['climate'] : null;
-        $this->container['temperature'] = isset($data['temperature']) ? $data['temperature'] : null;
-        $this->container['airQualityIndex'] = isset($data['airQualityIndex']) ? $data['airQualityIndex'] : null;
-        $this->container['appInstallStatus'] = isset($data['appInstallStatus']) ? $data['appInstallStatus'] : null;
         $this->container['consumptionStatus'] = isset($data['consumptionStatus']) ? $data['consumptionStatus'] : null;
         $this->container['gameConsumptionLevel'] = isset($data['gameConsumptionLevel']) ? $data['gameConsumptionLevel'] : null;
         $this->container['residentialCommunityPrice'] = isset($data['residentialCommunityPrice']) ? $data['residentialCommunityPrice'] : null;
@@ -747,174 +705,6 @@ class ReadTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     public function setNetworkScene($networkScene)
     {
         $this->container['networkScene'] = $networkScene;
-
-        return $this;
-    }
-
-    /**
-     * Gets dressingIndex
-     *
-     * @return string[]|mixed
-     */
-    public function getDressingIndex()
-    {
-        return $this->container['dressingIndex'];
-    }
-
-    /**
-     * Sets dressingIndex
-     *
-     * @param string[]|mixed $dressingIndex dressingIndex
-     *
-     * @return $this
-     */
-    public function setDressingIndex($dressingIndex)
-    {
-        $this->container['dressingIndex'] = $dressingIndex;
-
-        return $this;
-    }
-
-    /**
-     * Gets uvIndex
-     *
-     * @return string[]|mixed
-     */
-    public function getUvIndex()
-    {
-        return $this->container['uvIndex'];
-    }
-
-    /**
-     * Sets uvIndex
-     *
-     * @param string[]|mixed $uvIndex uvIndex
-     *
-     * @return $this
-     */
-    public function setUvIndex($uvIndex)
-    {
-        $this->container['uvIndex'] = $uvIndex;
-
-        return $this;
-    }
-
-    /**
-     * Gets makeupIndex
-     *
-     * @return string[]|mixed
-     */
-    public function getMakeupIndex()
-    {
-        return $this->container['makeupIndex'];
-    }
-
-    /**
-     * Sets makeupIndex
-     *
-     * @param string[]|mixed $makeupIndex makeupIndex
-     *
-     * @return $this
-     */
-    public function setMakeupIndex($makeupIndex)
-    {
-        $this->container['makeupIndex'] = $makeupIndex;
-
-        return $this;
-    }
-
-    /**
-     * Gets climate
-     *
-     * @return string[]|mixed
-     */
-    public function getClimate()
-    {
-        return $this->container['climate'];
-    }
-
-    /**
-     * Sets climate
-     *
-     * @param string[]|mixed $climate climate
-     *
-     * @return $this
-     */
-    public function setClimate($climate)
-    {
-        $this->container['climate'] = $climate;
-
-        return $this;
-    }
-
-    /**
-     * Gets temperature
-     *
-     * @return \TencentAds\Model\TemperatureStruct[]|mixed
-     */
-    public function getTemperature()
-    {
-        return $this->container['temperature'];
-    }
-
-    /**
-     * Sets temperature
-     *
-     * @param \TencentAds\Model\TemperatureStruct[]|mixed $temperature temperature
-     *
-     * @return $this
-     */
-    public function setTemperature($temperature)
-    {
-        $this->container['temperature'] = $temperature;
-
-        return $this;
-    }
-
-    /**
-     * Gets airQualityIndex
-     *
-     * @return string[]|mixed
-     */
-    public function getAirQualityIndex()
-    {
-        return $this->container['airQualityIndex'];
-    }
-
-    /**
-     * Sets airQualityIndex
-     *
-     * @param string[]|mixed $airQualityIndex airQualityIndex
-     *
-     * @return $this
-     */
-    public function setAirQualityIndex($airQualityIndex)
-    {
-        $this->container['airQualityIndex'] = $airQualityIndex;
-
-        return $this;
-    }
-
-    /**
-     * Gets appInstallStatus
-     *
-     * @return string[]|mixed
-     */
-    public function getAppInstallStatus()
-    {
-        return $this->container['appInstallStatus'];
-    }
-
-    /**
-     * Sets appInstallStatus
-     *
-     * @param string[]|mixed $appInstallStatus appInstallStatus
-     *
-     * @return $this
-     */
-    public function setAppInstallStatus($appInstallStatus)
-    {
-        $this->container['appInstallStatus'] = $appInstallStatus;
 
         return $this;
     }
