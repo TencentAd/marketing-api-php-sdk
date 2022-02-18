@@ -1,6 +1,6 @@
 <?php
 /**
- * BookJson
+ * Chapter
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * BookJson Class Doc Comment
+ * Chapter Class Doc Comment
  *
  * @category Class
- * @description 小说章节内容
+ * @description 小说章节信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class BookJson implements ModelInterface, ArrayAccess
+class Chapter implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class BookJson implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'book_json';
+    protected static $swaggerModelName = 'chapter';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,7 +58,9 @@ class BookJson implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'chapters' => '\TencentAds\Model\Chapter[]'
+        'subtitle' => 'string',
+        'chapterid' => 'int',
+        'text' => 'string[]'
     ];
 
     /**
@@ -67,7 +69,9 @@ class BookJson implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'chapters' => null
+        'subtitle' => null,
+        'chapterid' => 'int64',
+        'text' => null
     ];
 
     /**
@@ -97,7 +101,9 @@ class BookJson implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'chapters' => 'chapters'
+        'subtitle' => 'subtitle',
+        'chapterid' => 'chapterid',
+        'text' => 'text'
     ];
 
     /**
@@ -106,7 +112,9 @@ class BookJson implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'chapters' => 'setChapters'
+        'subtitle' => 'setSubtitle',
+        'chapterid' => 'setChapterid',
+        'text' => 'setText'
     ];
 
     /**
@@ -115,7 +123,9 @@ class BookJson implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'chapters' => 'getChapters'
+        'subtitle' => 'getSubtitle',
+        'chapterid' => 'getChapterid',
+        'text' => 'getText'
     ];
 
     /**
@@ -178,7 +188,9 @@ class BookJson implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['chapters'] = isset($data['chapters']) ? $data['chapters'] : null;
+        $this->container['subtitle'] = isset($data['subtitle']) ? $data['subtitle'] : null;
+        $this->container['chapterid'] = isset($data['chapterid']) ? $data['chapterid'] : null;
+        $this->container['text'] = isset($data['text']) ? $data['text'] : null;
     }
 
     /**
@@ -206,25 +218,73 @@ class BookJson implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets chapters
+     * Gets subtitle
      *
-     * @return \TencentAds\Model\Chapter[]|mixed
+     * @return string|mixed
      */
-    public function getChapters()
+    public function getSubtitle()
     {
-        return $this->container['chapters'];
+        return $this->container['subtitle'];
     }
 
     /**
-     * Sets chapters
+     * Sets subtitle
      *
-     * @param \TencentAds\Model\Chapter[]|mixed $chapters chapters
+     * @param string|mixed $subtitle subtitle
      *
      * @return $this
      */
-    public function setChapters($chapters)
+    public function setSubtitle($subtitle)
     {
-        $this->container['chapters'] = $chapters;
+        $this->container['subtitle'] = $subtitle;
+
+        return $this;
+    }
+
+    /**
+     * Gets chapterid
+     *
+     * @return int|mixed
+     */
+    public function getChapterid()
+    {
+        return $this->container['chapterid'];
+    }
+
+    /**
+     * Sets chapterid
+     *
+     * @param int|mixed $chapterid chapterid
+     *
+     * @return $this
+     */
+    public function setChapterid($chapterid)
+    {
+        $this->container['chapterid'] = $chapterid;
+
+        return $this;
+    }
+
+    /**
+     * Gets text
+     *
+     * @return string[]|mixed
+     */
+    public function getText()
+    {
+        return $this->container['text'];
+    }
+
+    /**
+     * Sets text
+     *
+     * @param string[]|mixed $text text
+     *
+     * @return $this
+     */
+    public function setText($text)
+    {
+        $this->container['text'] = $text;
 
         return $this;
     }

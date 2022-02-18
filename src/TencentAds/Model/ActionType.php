@@ -108,6 +108,10 @@ class ActionType
     const ADD_CUSTOMER_PAGE_INTERACTIVE = 'ADD_CUSTOMER_PAGE_INTERACTIVE';
     const CUSTOMER_PROMOTION_PAGE_VIEW = 'CUSTOMER_PROMOTION_PAGE_VIEW';
     const CUSTOMER_PROMOTION_PAGE_INTERACTIVE = 'CUSTOMER_PROMOTION_PAGE_INTERACTIVE';
+    const ABNORMAL_ACTION = 'ABNORMAL_ACTION';
+    const APP_MSDK_ADCOST = 'APP_MSDK_ADCOST';
+    const LIVE_STREAM = 'LIVE_STREAM';
+    const SCANCODE_WX = 'SCANCODE_WX';
     const AD_CLICK = 'AD_CLICK';
     const AD_IMPRESSION = 'AD_IMPRESSION';
     
@@ -182,6 +186,10 @@ class ActionType
             self::ADD_CUSTOMER_PAGE_INTERACTIVE,
             self::CUSTOMER_PROMOTION_PAGE_VIEW,
             self::CUSTOMER_PROMOTION_PAGE_INTERACTIVE,
+            self::ABNORMAL_ACTION,
+            self::APP_MSDK_ADCOST,
+            self::LIVE_STREAM,
+            self::SCANCODE_WX,
             self::AD_CLICK,
             self::AD_IMPRESSION,
         ];
