@@ -105,6 +105,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'conversionId' => 'int',
         'deepConversionBehaviorBid' => 'int',
         'deepConversionWorthRate' => 'double',
+        'deepConversionWorthAdvancedRate' => 'double',
         'androidChannelPackageAuditMessage' => 'string',
         'systemStatus' => '\TencentAds\Model\AdgroupSysStatus',
         'bidMode' => '\TencentAds\Model\BidMode',
@@ -174,6 +175,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'conversionId' => 'int64',
         'deepConversionBehaviorBid' => 'int64',
         'deepConversionWorthRate' => 'double',
+        'deepConversionWorthAdvancedRate' => 'double',
         'androidChannelPackageAuditMessage' => null,
         'systemStatus' => null,
         'bidMode' => null,
@@ -264,6 +266,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'conversionId' => 'conversion_id',
         'deepConversionBehaviorBid' => 'deep_conversion_behavior_bid',
         'deepConversionWorthRate' => 'deep_conversion_worth_rate',
+        'deepConversionWorthAdvancedRate' => 'deep_conversion_worth_advanced_rate',
         'androidChannelPackageAuditMessage' => 'android_channel_package_audit_message',
         'systemStatus' => 'system_status',
         'bidMode' => 'bid_mode',
@@ -333,6 +336,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'conversionId' => 'setConversionId',
         'deepConversionBehaviorBid' => 'setDeepConversionBehaviorBid',
         'deepConversionWorthRate' => 'setDeepConversionWorthRate',
+        'deepConversionWorthAdvancedRate' => 'setDeepConversionWorthAdvancedRate',
         'androidChannelPackageAuditMessage' => 'setAndroidChannelPackageAuditMessage',
         'systemStatus' => 'setSystemStatus',
         'bidMode' => 'setBidMode',
@@ -402,6 +406,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'conversionId' => 'getConversionId',
         'deepConversionBehaviorBid' => 'getDeepConversionBehaviorBid',
         'deepConversionWorthRate' => 'getDeepConversionWorthRate',
+        'deepConversionWorthAdvancedRate' => 'getDeepConversionWorthAdvancedRate',
         'androidChannelPackageAuditMessage' => 'getAndroidChannelPackageAuditMessage',
         'systemStatus' => 'getSystemStatus',
         'bidMode' => 'getBidMode',
@@ -525,6 +530,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['conversionId'] = isset($data['conversionId']) ? $data['conversionId'] : null;
         $this->container['deepConversionBehaviorBid'] = isset($data['deepConversionBehaviorBid']) ? $data['deepConversionBehaviorBid'] : null;
         $this->container['deepConversionWorthRate'] = isset($data['deepConversionWorthRate']) ? $data['deepConversionWorthRate'] : null;
+        $this->container['deepConversionWorthAdvancedRate'] = isset($data['deepConversionWorthAdvancedRate']) ? $data['deepConversionWorthAdvancedRate'] : null;
         $this->container['androidChannelPackageAuditMessage'] = isset($data['androidChannelPackageAuditMessage']) ? $data['androidChannelPackageAuditMessage'] : null;
         $this->container['systemStatus'] = isset($data['systemStatus']) ? $data['systemStatus'] : null;
         $this->container['bidMode'] = isset($data['bidMode']) ? $data['bidMode'] : null;
@@ -1689,6 +1695,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setDeepConversionWorthRate($deepConversionWorthRate)
     {
         $this->container['deepConversionWorthRate'] = $deepConversionWorthRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets deepConversionWorthAdvancedRate
+     *
+     * @return double|mixed
+     */
+    public function getDeepConversionWorthAdvancedRate()
+    {
+        return $this->container['deepConversionWorthAdvancedRate'];
+    }
+
+    /**
+     * Sets deepConversionWorthAdvancedRate
+     *
+     * @param double|mixed $deepConversionWorthAdvancedRate deepConversionWorthAdvancedRate
+     *
+     * @return $this
+     */
+    public function setDeepConversionWorthAdvancedRate($deepConversionWorthAdvancedRate)
+    {
+        $this->container['deepConversionWorthAdvancedRate'] = $deepConversionWorthAdvancedRate;
 
         return $this;
     }

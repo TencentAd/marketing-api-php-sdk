@@ -1,6 +1,6 @@
 <?php
 /**
- * DeepConversionSpec
+ * DeepConversionWorthAdvancedSpec
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DeepConversionSpec Class Doc Comment
+ * DeepConversionWorthAdvancedSpec Class Doc Comment
  *
  * @category Class
- * @description oCPC/oCPM深度优化内容
+ * @description oCPC/oCPM 强化 ROI 配置
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DeepConversionSpec implements ModelInterface, ArrayAccess
+class DeepConversionWorthAdvancedSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class DeepConversionSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'deep_conversion_spec';
+    protected static $swaggerModelName = 'deep_conversion_worth_advanced_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +58,8 @@ class DeepConversionSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'deepConversionType' => '\TencentAds\Model\DeepConversionType',
-        'deepConversionBehaviorSpec' => '\TencentAds\Model\DeepConversionBehaviorSpec',
-        'deepConversionWorthSpec' => '\TencentAds\Model\DeepConversionWorthSpec',
-        'deepConversionWorthAdvancedSpec' => '\TencentAds\Model\DeepConversionWorthAdvancedSpec'
+        'goal' => '\TencentAds\Model\DeepConversionWorthGoal',
+        'expectedRoi' => 'double'
     ];
 
     /**
@@ -70,10 +68,8 @@ class DeepConversionSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'deepConversionType' => null,
-        'deepConversionBehaviorSpec' => null,
-        'deepConversionWorthSpec' => null,
-        'deepConversionWorthAdvancedSpec' => null
+        'goal' => null,
+        'expectedRoi' => 'double'
     ];
 
     /**
@@ -103,10 +99,8 @@ class DeepConversionSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'deepConversionType' => 'deep_conversion_type',
-        'deepConversionBehaviorSpec' => 'deep_conversion_behavior_spec',
-        'deepConversionWorthSpec' => 'deep_conversion_worth_spec',
-        'deepConversionWorthAdvancedSpec' => 'deep_conversion_worth_advanced_spec'
+        'goal' => 'goal',
+        'expectedRoi' => 'expected_roi'
     ];
 
     /**
@@ -115,10 +109,8 @@ class DeepConversionSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'deepConversionType' => 'setDeepConversionType',
-        'deepConversionBehaviorSpec' => 'setDeepConversionBehaviorSpec',
-        'deepConversionWorthSpec' => 'setDeepConversionWorthSpec',
-        'deepConversionWorthAdvancedSpec' => 'setDeepConversionWorthAdvancedSpec'
+        'goal' => 'setGoal',
+        'expectedRoi' => 'setExpectedRoi'
     ];
 
     /**
@@ -127,10 +119,8 @@ class DeepConversionSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'deepConversionType' => 'getDeepConversionType',
-        'deepConversionBehaviorSpec' => 'getDeepConversionBehaviorSpec',
-        'deepConversionWorthSpec' => 'getDeepConversionWorthSpec',
-        'deepConversionWorthAdvancedSpec' => 'getDeepConversionWorthAdvancedSpec'
+        'goal' => 'getGoal',
+        'expectedRoi' => 'getExpectedRoi'
     ];
 
     /**
@@ -193,10 +183,8 @@ class DeepConversionSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['deepConversionType'] = isset($data['deepConversionType']) ? $data['deepConversionType'] : null;
-        $this->container['deepConversionBehaviorSpec'] = isset($data['deepConversionBehaviorSpec']) ? $data['deepConversionBehaviorSpec'] : null;
-        $this->container['deepConversionWorthSpec'] = isset($data['deepConversionWorthSpec']) ? $data['deepConversionWorthSpec'] : null;
-        $this->container['deepConversionWorthAdvancedSpec'] = isset($data['deepConversionWorthAdvancedSpec']) ? $data['deepConversionWorthAdvancedSpec'] : null;
+        $this->container['goal'] = isset($data['goal']) ? $data['goal'] : null;
+        $this->container['expectedRoi'] = isset($data['expectedRoi']) ? $data['expectedRoi'] : null;
     }
 
     /**
@@ -224,97 +212,49 @@ class DeepConversionSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets deepConversionType
+     * Gets goal
      *
-     * @return \TencentAds\Model\DeepConversionType|mixed
+     * @return \TencentAds\Model\DeepConversionWorthGoal|mixed
      */
-    public function getDeepConversionType()
+    public function getGoal()
     {
-        return $this->container['deepConversionType'];
+        return $this->container['goal'];
     }
 
     /**
-     * Sets deepConversionType
+     * Sets goal
      *
-     * @param \TencentAds\Model\DeepConversionType|mixed $deepConversionType deepConversionType
+     * @param \TencentAds\Model\DeepConversionWorthGoal|mixed $goal goal
      *
      * @return $this
      */
-    public function setDeepConversionType($deepConversionType)
+    public function setGoal($goal)
     {
-        $this->container['deepConversionType'] = $deepConversionType;
+        $this->container['goal'] = $goal;
 
         return $this;
     }
 
     /**
-     * Gets deepConversionBehaviorSpec
+     * Gets expectedRoi
      *
-     * @return \TencentAds\Model\DeepConversionBehaviorSpec|mixed
+     * @return double|mixed
      */
-    public function getDeepConversionBehaviorSpec()
+    public function getExpectedRoi()
     {
-        return $this->container['deepConversionBehaviorSpec'];
+        return $this->container['expectedRoi'];
     }
 
     /**
-     * Sets deepConversionBehaviorSpec
+     * Sets expectedRoi
      *
-     * @param \TencentAds\Model\DeepConversionBehaviorSpec|mixed $deepConversionBehaviorSpec deepConversionBehaviorSpec
+     * @param double|mixed $expectedRoi expectedRoi
      *
      * @return $this
      */
-    public function setDeepConversionBehaviorSpec($deepConversionBehaviorSpec)
+    public function setExpectedRoi($expectedRoi)
     {
-        $this->container['deepConversionBehaviorSpec'] = $deepConversionBehaviorSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets deepConversionWorthSpec
-     *
-     * @return \TencentAds\Model\DeepConversionWorthSpec|mixed
-     */
-    public function getDeepConversionWorthSpec()
-    {
-        return $this->container['deepConversionWorthSpec'];
-    }
-
-    /**
-     * Sets deepConversionWorthSpec
-     *
-     * @param \TencentAds\Model\DeepConversionWorthSpec|mixed $deepConversionWorthSpec deepConversionWorthSpec
-     *
-     * @return $this
-     */
-    public function setDeepConversionWorthSpec($deepConversionWorthSpec)
-    {
-        $this->container['deepConversionWorthSpec'] = $deepConversionWorthSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets deepConversionWorthAdvancedSpec
-     *
-     * @return \TencentAds\Model\DeepConversionWorthAdvancedSpec|mixed
-     */
-    public function getDeepConversionWorthAdvancedSpec()
-    {
-        return $this->container['deepConversionWorthAdvancedSpec'];
-    }
-
-    /**
-     * Sets deepConversionWorthAdvancedSpec
-     *
-     * @param \TencentAds\Model\DeepConversionWorthAdvancedSpec|mixed $deepConversionWorthAdvancedSpec deepConversionWorthAdvancedSpec
-     *
-     * @return $this
-     */
-    public function setDeepConversionWorthAdvancedSpec($deepConversionWorthAdvancedSpec)
-    {
-        $this->container['deepConversionWorthAdvancedSpec'] = $deepConversionWorthAdvancedSpec;
+        $this->container['expectedRoi'] = $expectedRoi;
 
         return $this;
     }
