@@ -69,7 +69,9 @@ class LocalStoreBizInfoStruct implements ModelInterface, ArrayAccess
         'secondCategoryName' => 'string',
         'thirdCategoryName' => 'string',
         'fourthCategoryName' => 'string',
-        'peakPeriod' => '\TencentAds\Model\PeakPeriod[]'
+        'peakPeriod' => '\TencentAds\Model\PeakPeriod[]',
+        'openingStatus' => '\TencentAds\Model\LocalStoreOpeningStatus',
+        'star' => 'double'
     ];
 
     /**
@@ -89,7 +91,9 @@ class LocalStoreBizInfoStruct implements ModelInterface, ArrayAccess
         'secondCategoryName' => null,
         'thirdCategoryName' => null,
         'fourthCategoryName' => null,
-        'peakPeriod' => null
+        'peakPeriod' => null,
+        'openingStatus' => null,
+        'star' => 'double'
     ];
 
     /**
@@ -130,7 +134,9 @@ class LocalStoreBizInfoStruct implements ModelInterface, ArrayAccess
         'secondCategoryName' => 'second_category_name',
         'thirdCategoryName' => 'third_category_name',
         'fourthCategoryName' => 'fourth_category_name',
-        'peakPeriod' => 'peak_period'
+        'peakPeriod' => 'peak_period',
+        'openingStatus' => 'opening_status',
+        'star' => 'star'
     ];
 
     /**
@@ -150,7 +156,9 @@ class LocalStoreBizInfoStruct implements ModelInterface, ArrayAccess
         'secondCategoryName' => 'setSecondCategoryName',
         'thirdCategoryName' => 'setThirdCategoryName',
         'fourthCategoryName' => 'setFourthCategoryName',
-        'peakPeriod' => 'setPeakPeriod'
+        'peakPeriod' => 'setPeakPeriod',
+        'openingStatus' => 'setOpeningStatus',
+        'star' => 'setStar'
     ];
 
     /**
@@ -170,7 +178,9 @@ class LocalStoreBizInfoStruct implements ModelInterface, ArrayAccess
         'secondCategoryName' => 'getSecondCategoryName',
         'thirdCategoryName' => 'getThirdCategoryName',
         'fourthCategoryName' => 'getFourthCategoryName',
-        'peakPeriod' => 'getPeakPeriod'
+        'peakPeriod' => 'getPeakPeriod',
+        'openingStatus' => 'getOpeningStatus',
+        'star' => 'getStar'
     ];
 
     /**
@@ -245,6 +255,8 @@ class LocalStoreBizInfoStruct implements ModelInterface, ArrayAccess
         $this->container['thirdCategoryName'] = isset($data['thirdCategoryName']) ? $data['thirdCategoryName'] : null;
         $this->container['fourthCategoryName'] = isset($data['fourthCategoryName']) ? $data['fourthCategoryName'] : null;
         $this->container['peakPeriod'] = isset($data['peakPeriod']) ? $data['peakPeriod'] : null;
+        $this->container['openingStatus'] = isset($data['openingStatus']) ? $data['openingStatus'] : null;
+        $this->container['star'] = isset($data['star']) ? $data['star'] : null;
     }
 
     /**
@@ -555,6 +567,54 @@ class LocalStoreBizInfoStruct implements ModelInterface, ArrayAccess
     public function setPeakPeriod($peakPeriod)
     {
         $this->container['peakPeriod'] = $peakPeriod;
+
+        return $this;
+    }
+
+    /**
+     * Gets openingStatus
+     *
+     * @return \TencentAds\Model\LocalStoreOpeningStatus|mixed
+     */
+    public function getOpeningStatus()
+    {
+        return $this->container['openingStatus'];
+    }
+
+    /**
+     * Sets openingStatus
+     *
+     * @param \TencentAds\Model\LocalStoreOpeningStatus|mixed $openingStatus openingStatus
+     *
+     * @return $this
+     */
+    public function setOpeningStatus($openingStatus)
+    {
+        $this->container['openingStatus'] = $openingStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets star
+     *
+     * @return double|mixed
+     */
+    public function getStar()
+    {
+        return $this->container['star'];
+    }
+
+    /**
+     * Sets star
+     *
+     * @param double|mixed $star star
+     *
+     * @return $this
+     */
+    public function setStar($star)
+    {
+        $this->container['star'] = $star;
 
         return $this;
     }

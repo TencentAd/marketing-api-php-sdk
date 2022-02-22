@@ -7,7 +7,9 @@ use TencentAds\Container\AdLabelApiContainer;
 use TencentAds\Container\AdParamApiContainer;
 use TencentAds\Container\AdcreativePreviewsApiContainer;
 use TencentAds\Container\AdcreativePreviewsQrcodeApiContainer;
+use TencentAds\Container\AdcreativeTemplateApiContainer;
 use TencentAds\Container\AdcreativeTemplateDetailApiContainer;
+use TencentAds\Container\AdcreativeTemplateListApiContainer;
 use TencentAds\Container\AdcreativeTemplatePreviewApiContainer;
 use TencentAds\Container\AdcreativeTemplatePreviewsApiContainer;
 use TencentAds\Container\AdcreativeTemplatesApiContainer;
@@ -176,8 +178,14 @@ class App
     /** @var AdcreativePreviewsQrcodeApiContainer */
     public $adcreativePreviewsQrcodeApiContainer;
 
+    /** @var AdcreativeTemplateApiContainer */
+    public $adcreativeTemplateApiContainer;
+
     /** @var AdcreativeTemplateDetailApiContainer */
     public $adcreativeTemplateDetailApiContainer;
+
+    /** @var AdcreativeTemplateListApiContainer */
+    public $adcreativeTemplateListApiContainer;
 
     /** @var AdcreativeTemplatePreviewApiContainer */
     public $adcreativeTemplatePreviewApiContainer;
@@ -704,6 +712,20 @@ class App
 
 
     /**
+     * @return AdcreativeTemplateApiContainer
+     */
+    public function adcreativeTemplate()
+    {
+        if (empty($this->adcreativeTemplateApiContainer)) {
+            $container = new AdcreativeTemplateApiContainer();
+            $container->init($this, $this->getClient());
+            $this->adcreativeTemplateApiContainer = $container;
+        }
+        return $this->adcreativeTemplateApiContainer;
+    }
+
+
+    /**
      * @return AdcreativeTemplateDetailApiContainer
      */
     public function adcreativeTemplateDetail()
@@ -714,6 +736,20 @@ class App
             $this->adcreativeTemplateDetailApiContainer = $container;
         }
         return $this->adcreativeTemplateDetailApiContainer;
+    }
+
+
+    /**
+     * @return AdcreativeTemplateListApiContainer
+     */
+    public function adcreativeTemplateList()
+    {
+        if (empty($this->adcreativeTemplateListApiContainer)) {
+            $container = new AdcreativeTemplateListApiContainer();
+            $container->init($this, $this->getClient());
+            $this->adcreativeTemplateListApiContainer = $container;
+        }
+        return $this->adcreativeTemplateListApiContainer;
     }
 
 
