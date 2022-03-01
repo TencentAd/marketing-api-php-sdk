@@ -79,6 +79,7 @@ use TencentAds\Container\LabelsApiContainer;
 use TencentAds\Container\LeadCluesApiContainer;
 use TencentAds\Container\LeadsFormApiContainer;
 use TencentAds\Container\LeadsFormListApiContainer;
+use TencentAds\Container\LeadsInvalidPayApiContainer;
 use TencentAds\Container\LocalApiContainer;
 use TencentAds\Container\LocalEndadsmanuallyApiContainer;
 use TencentAds\Container\LocalEstimatedamountApiContainer;
@@ -393,6 +394,9 @@ class App
 
     /** @var LeadsFormListApiContainer */
     public $leadsFormListApiContainer;
+
+    /** @var LeadsInvalidPayApiContainer */
+    public $leadsInvalidPayApiContainer;
 
     /** @var LocalApiContainer */
     public $localApiContainer;
@@ -1716,6 +1720,20 @@ class App
             $this->leadsFormListApiContainer = $container;
         }
         return $this->leadsFormListApiContainer;
+    }
+
+
+    /**
+     * @return LeadsInvalidPayApiContainer
+     */
+    public function leadsInvalidPay()
+    {
+        if (empty($this->leadsInvalidPayApiContainer)) {
+            $container = new LeadsInvalidPayApiContainer();
+            $container->init($this, $this->getClient());
+            $this->leadsInvalidPayApiContainer = $container;
+        }
+        return $this->leadsInvalidPayApiContainer;
     }
 
 
