@@ -104,6 +104,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'enableBreakthroughSiteset' => 'bool',
         'creativeTemplateVersionType' => '\TencentAds\Model\CreativeTemplateVersionType',
         'industryLabel' => 'string',
+        'unionMarketSpec' => '\TencentAds\Model\UnionMarketSpec',
         'creativeTemplateCategory' => 'string',
         'adcreativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsReadMp'
@@ -161,6 +162,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'enableBreakthroughSiteset' => null,
         'creativeTemplateVersionType' => null,
         'industryLabel' => null,
+        'unionMarketSpec' => null,
         'creativeTemplateCategory' => null,
         'adcreativeTemplateId' => 'int64',
         'adcreativeElements' => null
@@ -239,6 +241,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
         'creativeTemplateVersionType' => 'creative_template_version_type',
         'industryLabel' => 'industry_label',
+        'unionMarketSpec' => 'union_market_spec',
         'creativeTemplateCategory' => 'creative_template_category',
         'adcreativeTemplateId' => 'adcreative_template_id',
         'adcreativeElements' => 'adcreative_elements'
@@ -296,6 +299,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
         'creativeTemplateVersionType' => 'setCreativeTemplateVersionType',
         'industryLabel' => 'setIndustryLabel',
+        'unionMarketSpec' => 'setUnionMarketSpec',
         'creativeTemplateCategory' => 'setCreativeTemplateCategory',
         'adcreativeTemplateId' => 'setAdcreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements'
@@ -353,6 +357,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
         'creativeTemplateVersionType' => 'getCreativeTemplateVersionType',
         'industryLabel' => 'getIndustryLabel',
+        'unionMarketSpec' => 'getUnionMarketSpec',
         'creativeTemplateCategory' => 'getCreativeTemplateCategory',
         'adcreativeTemplateId' => 'getAdcreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements'
@@ -464,6 +469,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
         $this->container['creativeTemplateVersionType'] = isset($data['creativeTemplateVersionType']) ? $data['creativeTemplateVersionType'] : null;
         $this->container['industryLabel'] = isset($data['industryLabel']) ? $data['industryLabel'] : null;
+        $this->container['unionMarketSpec'] = isset($data['unionMarketSpec']) ? $data['unionMarketSpec'] : null;
         $this->container['creativeTemplateCategory'] = isset($data['creativeTemplateCategory']) ? $data['creativeTemplateCategory'] : null;
         $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
@@ -1593,6 +1599,30 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setIndustryLabel($industryLabel)
     {
         $this->container['industryLabel'] = $industryLabel;
+
+        return $this;
+    }
+
+    /**
+     * Gets unionMarketSpec
+     *
+     * @return \TencentAds\Model\UnionMarketSpec|mixed
+     */
+    public function getUnionMarketSpec()
+    {
+        return $this->container['unionMarketSpec'];
+    }
+
+    /**
+     * Sets unionMarketSpec
+     *
+     * @param \TencentAds\Model\UnionMarketSpec|mixed $unionMarketSpec unionMarketSpec
+     *
+     * @return $this
+     */
+    public function setUnionMarketSpec($unionMarketSpec)
+    {
+        $this->container['unionMarketSpec'] = $unionMarketSpec;
 
         return $this;
     }

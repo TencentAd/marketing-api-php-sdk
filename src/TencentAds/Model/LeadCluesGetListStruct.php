@@ -71,6 +71,10 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'adgroupName' => 'string',
         'creativeId' => 'string',
         'creativeName' => 'string',
+        'adId' => 'int',
+        'adName' => 'string',
+        'adcreativeId' => 'int',
+        'adcreativeName' => 'string',
         'componentId' => 'string',
         'componentName' => 'string',
         'pageId' => 'string',
@@ -127,6 +131,10 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'adgroupName' => null,
         'creativeId' => null,
         'creativeName' => null,
+        'adId' => 'int64',
+        'adName' => null,
+        'adcreativeId' => 'int64',
+        'adcreativeName' => null,
         'componentId' => null,
         'componentName' => null,
         'pageId' => null,
@@ -204,6 +212,10 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'adgroupName' => 'adgroup_name',
         'creativeId' => 'creative_id',
         'creativeName' => 'creative_name',
+        'adId' => 'ad_id',
+        'adName' => 'ad_name',
+        'adcreativeId' => 'adcreative_id',
+        'adcreativeName' => 'adcreative_name',
         'componentId' => 'component_id',
         'componentName' => 'component_name',
         'pageId' => 'page_id',
@@ -260,6 +272,10 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'adgroupName' => 'setAdgroupName',
         'creativeId' => 'setCreativeId',
         'creativeName' => 'setCreativeName',
+        'adId' => 'setAdId',
+        'adName' => 'setAdName',
+        'adcreativeId' => 'setAdcreativeId',
+        'adcreativeName' => 'setAdcreativeName',
         'componentId' => 'setComponentId',
         'componentName' => 'setComponentName',
         'pageId' => 'setPageId',
@@ -316,6 +332,10 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'adgroupName' => 'getAdgroupName',
         'creativeId' => 'getCreativeId',
         'creativeName' => 'getCreativeName',
+        'adId' => 'getAdId',
+        'adName' => 'getAdName',
+        'adcreativeId' => 'getAdcreativeId',
+        'adcreativeName' => 'getAdcreativeName',
         'componentId' => 'getComponentId',
         'componentName' => 'getComponentName',
         'pageId' => 'getPageId',
@@ -426,6 +446,10 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['creativeId'] = isset($data['creativeId']) ? $data['creativeId'] : null;
         $this->container['creativeName'] = isset($data['creativeName']) ? $data['creativeName'] : null;
+        $this->container['adId'] = isset($data['adId']) ? $data['adId'] : null;
+        $this->container['adName'] = isset($data['adName']) ? $data['adName'] : null;
+        $this->container['adcreativeId'] = isset($data['adcreativeId']) ? $data['adcreativeId'] : null;
+        $this->container['adcreativeName'] = isset($data['adcreativeName']) ? $data['adcreativeName'] : null;
         $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
         $this->container['componentName'] = isset($data['componentName']) ? $data['componentName'] : null;
         $this->container['pageId'] = isset($data['pageId']) ? $data['pageId'] : null;
@@ -795,6 +819,102 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     public function setCreativeName($creativeName)
     {
         $this->container['creativeName'] = $creativeName;
+
+        return $this;
+    }
+
+    /**
+     * Gets adId
+     *
+     * @return int|mixed
+     */
+    public function getAdId()
+    {
+        return $this->container['adId'];
+    }
+
+    /**
+     * Sets adId
+     *
+     * @param int|mixed $adId adId
+     *
+     * @return $this
+     */
+    public function setAdId($adId)
+    {
+        $this->container['adId'] = $adId;
+
+        return $this;
+    }
+
+    /**
+     * Gets adName
+     *
+     * @return string|mixed
+     */
+    public function getAdName()
+    {
+        return $this->container['adName'];
+    }
+
+    /**
+     * Sets adName
+     *
+     * @param string|mixed $adName adName
+     *
+     * @return $this
+     */
+    public function setAdName($adName)
+    {
+        $this->container['adName'] = $adName;
+
+        return $this;
+    }
+
+    /**
+     * Gets adcreativeId
+     *
+     * @return int|mixed
+     */
+    public function getAdcreativeId()
+    {
+        return $this->container['adcreativeId'];
+    }
+
+    /**
+     * Sets adcreativeId
+     *
+     * @param int|mixed $adcreativeId adcreativeId
+     *
+     * @return $this
+     */
+    public function setAdcreativeId($adcreativeId)
+    {
+        $this->container['adcreativeId'] = $adcreativeId;
+
+        return $this;
+    }
+
+    /**
+     * Gets adcreativeName
+     *
+     * @return string|mixed
+     */
+    public function getAdcreativeName()
+    {
+        return $this->container['adcreativeName'];
+    }
+
+    /**
+     * Sets adcreativeName
+     *
+     * @param string|mixed $adcreativeName adcreativeName
+     *
+     * @return $this
+     */
+    public function setAdcreativeName($adcreativeName)
+    {
+        $this->container['adcreativeName'] = $adcreativeName;
 
         return $this;
     }

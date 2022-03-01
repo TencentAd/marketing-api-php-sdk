@@ -86,6 +86,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
         'enableBreakthroughSiteset' => 'bool',
         'creativeTemplateVersionType' => '\TencentAds\Model\CreativeTemplateVersionType',
+        'unionMarketSpec' => '\TencentAds\Model\UnionMarketSpec',
         'creativeTemplateCategory' => 'string'
     ];
 
@@ -123,6 +124,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'appGiftPackCode' => null,
         'enableBreakthroughSiteset' => null,
         'creativeTemplateVersionType' => null,
+        'unionMarketSpec' => null,
         'creativeTemplateCategory' => null
     ];
 
@@ -181,6 +183,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'appGiftPackCode' => 'app_gift_pack_code',
         'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
         'creativeTemplateVersionType' => 'creative_template_version_type',
+        'unionMarketSpec' => 'union_market_spec',
         'creativeTemplateCategory' => 'creative_template_category'
     ];
 
@@ -218,6 +221,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'appGiftPackCode' => 'setAppGiftPackCode',
         'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
         'creativeTemplateVersionType' => 'setCreativeTemplateVersionType',
+        'unionMarketSpec' => 'setUnionMarketSpec',
         'creativeTemplateCategory' => 'setCreativeTemplateCategory'
     ];
 
@@ -255,6 +259,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'appGiftPackCode' => 'getAppGiftPackCode',
         'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
         'creativeTemplateVersionType' => 'getCreativeTemplateVersionType',
+        'unionMarketSpec' => 'getUnionMarketSpec',
         'creativeTemplateCategory' => 'getCreativeTemplateCategory'
     ];
 
@@ -346,6 +351,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
         $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
         $this->container['creativeTemplateVersionType'] = isset($data['creativeTemplateVersionType']) ? $data['creativeTemplateVersionType'] : null;
+        $this->container['unionMarketSpec'] = isset($data['unionMarketSpec']) ? $data['unionMarketSpec'] : null;
         $this->container['creativeTemplateCategory'] = isset($data['creativeTemplateCategory']) ? $data['creativeTemplateCategory'] : null;
     }
 
@@ -1041,6 +1047,30 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setCreativeTemplateVersionType($creativeTemplateVersionType)
     {
         $this->container['creativeTemplateVersionType'] = $creativeTemplateVersionType;
+
+        return $this;
+    }
+
+    /**
+     * Gets unionMarketSpec
+     *
+     * @return \TencentAds\Model\UnionMarketSpec|mixed
+     */
+    public function getUnionMarketSpec()
+    {
+        return $this->container['unionMarketSpec'];
+    }
+
+    /**
+     * Sets unionMarketSpec
+     *
+     * @param \TencentAds\Model\UnionMarketSpec|mixed $unionMarketSpec unionMarketSpec
+     *
+     * @return $this
+     */
+    public function setUnionMarketSpec($unionMarketSpec)
+    {
+        $this->container['unionMarketSpec'] = $unionMarketSpec;
 
         return $this;
     }

@@ -89,6 +89,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'dynamicAdcreativeSpec' => '\TencentAds\Model\DynamicAdcreativeSpec',
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
         'industryLabel' => 'string',
+        'unionMarketSpec' => '\TencentAds\Model\UnionMarketSpec',
         'accountId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsMp'
     ];
@@ -131,6 +132,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'dynamicAdcreativeSpec' => null,
         'appGiftPackCode' => null,
         'industryLabel' => null,
+        'unionMarketSpec' => null,
         'accountId' => 'int64',
         'adcreativeElements' => null
     ];
@@ -194,6 +196,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'dynamicAdcreativeSpec' => 'dynamic_adcreative_spec',
         'appGiftPackCode' => 'app_gift_pack_code',
         'industryLabel' => 'industry_label',
+        'unionMarketSpec' => 'union_market_spec',
         'accountId' => 'account_id',
         'adcreativeElements' => 'adcreative_elements'
     ];
@@ -236,6 +239,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'dynamicAdcreativeSpec' => 'setDynamicAdcreativeSpec',
         'appGiftPackCode' => 'setAppGiftPackCode',
         'industryLabel' => 'setIndustryLabel',
+        'unionMarketSpec' => 'setUnionMarketSpec',
         'accountId' => 'setAccountId',
         'adcreativeElements' => 'setAdcreativeElements'
     ];
@@ -278,6 +282,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'dynamicAdcreativeSpec' => 'getDynamicAdcreativeSpec',
         'appGiftPackCode' => 'getAppGiftPackCode',
         'industryLabel' => 'getIndustryLabel',
+        'unionMarketSpec' => 'getUnionMarketSpec',
         'accountId' => 'getAccountId',
         'adcreativeElements' => 'getAdcreativeElements'
     ];
@@ -374,6 +379,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['dynamicAdcreativeSpec'] = isset($data['dynamicAdcreativeSpec']) ? $data['dynamicAdcreativeSpec'] : null;
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
         $this->container['industryLabel'] = isset($data['industryLabel']) ? $data['industryLabel'] : null;
+        $this->container['unionMarketSpec'] = isset($data['unionMarketSpec']) ? $data['unionMarketSpec'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
     }
@@ -1166,6 +1172,30 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setIndustryLabel($industryLabel)
     {
         $this->container['industryLabel'] = $industryLabel;
+
+        return $this;
+    }
+
+    /**
+     * Gets unionMarketSpec
+     *
+     * @return \TencentAds\Model\UnionMarketSpec|mixed
+     */
+    public function getUnionMarketSpec()
+    {
+        return $this->container['unionMarketSpec'];
+    }
+
+    /**
+     * Sets unionMarketSpec
+     *
+     * @param \TencentAds\Model\UnionMarketSpec|mixed $unionMarketSpec unionMarketSpec
+     *
+     * @return $this
+     */
+    public function setUnionMarketSpec($unionMarketSpec)
+    {
+        $this->container['unionMarketSpec'] = $unionMarketSpec;
 
         return $this;
     }

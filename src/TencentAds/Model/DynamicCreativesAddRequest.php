@@ -95,6 +95,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'bool',
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
         'enableBreakthroughSiteset' => 'bool',
+        'unionMarketSpec' => '\TencentAds\Model\UnionMarketSpec',
         'accountId' => 'int'
     ];
 
@@ -142,6 +143,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => null,
         'appGiftPackCode' => null,
         'enableBreakthroughSiteset' => null,
+        'unionMarketSpec' => null,
         'accountId' => 'int64'
     ];
 
@@ -210,6 +212,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'countdown_switch',
         'appGiftPackCode' => 'app_gift_pack_code',
         'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
+        'unionMarketSpec' => 'union_market_spec',
         'accountId' => 'account_id'
     ];
 
@@ -257,6 +260,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'setCountdownSwitch',
         'appGiftPackCode' => 'setAppGiftPackCode',
         'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
+        'unionMarketSpec' => 'setUnionMarketSpec',
         'accountId' => 'setAccountId'
     ];
 
@@ -304,6 +308,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'getCountdownSwitch',
         'appGiftPackCode' => 'getAppGiftPackCode',
         'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
+        'unionMarketSpec' => 'getUnionMarketSpec',
         'accountId' => 'getAccountId'
     ];
 
@@ -405,6 +410,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         $this->container['countdownSwitch'] = isset($data['countdownSwitch']) ? $data['countdownSwitch'] : null;
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
         $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
+        $this->container['unionMarketSpec'] = isset($data['unionMarketSpec']) ? $data['unionMarketSpec'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1340,6 +1346,30 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     public function setEnableBreakthroughSiteset($enableBreakthroughSiteset)
     {
         $this->container['enableBreakthroughSiteset'] = $enableBreakthroughSiteset;
+
+        return $this;
+    }
+
+    /**
+     * Gets unionMarketSpec
+     *
+     * @return \TencentAds\Model\UnionMarketSpec|mixed
+     */
+    public function getUnionMarketSpec()
+    {
+        return $this->container['unionMarketSpec'];
+    }
+
+    /**
+     * Sets unionMarketSpec
+     *
+     * @param \TencentAds\Model\UnionMarketSpec|mixed $unionMarketSpec unionMarketSpec
+     *
+     * @return $this
+     */
+    public function setUnionMarketSpec($unionMarketSpec)
+    {
+        $this->container['unionMarketSpec'] = $unionMarketSpec;
 
         return $this;
     }

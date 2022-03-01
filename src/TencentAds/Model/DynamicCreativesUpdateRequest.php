@@ -89,6 +89,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'barrageList' => '\TencentAds\Model\BarrageListCreateStruct[]',
         'countdownSwitch' => 'bool',
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
+        'unionMarketSpec' => '\TencentAds\Model\UnionMarketSpec',
         'accountId' => 'int'
     ];
 
@@ -130,6 +131,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'barrageList' => null,
         'countdownSwitch' => null,
         'appGiftPackCode' => null,
+        'unionMarketSpec' => null,
         'accountId' => 'int64'
     ];
 
@@ -192,6 +194,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'barrageList' => 'barrage_list',
         'countdownSwitch' => 'countdown_switch',
         'appGiftPackCode' => 'app_gift_pack_code',
+        'unionMarketSpec' => 'union_market_spec',
         'accountId' => 'account_id'
     ];
 
@@ -233,6 +236,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'barrageList' => 'setBarrageList',
         'countdownSwitch' => 'setCountdownSwitch',
         'appGiftPackCode' => 'setAppGiftPackCode',
+        'unionMarketSpec' => 'setUnionMarketSpec',
         'accountId' => 'setAccountId'
     ];
 
@@ -274,6 +278,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'barrageList' => 'getBarrageList',
         'countdownSwitch' => 'getCountdownSwitch',
         'appGiftPackCode' => 'getAppGiftPackCode',
+        'unionMarketSpec' => 'getUnionMarketSpec',
         'accountId' => 'getAccountId'
     ];
 
@@ -369,6 +374,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['barrageList'] = isset($data['barrageList']) ? $data['barrageList'] : null;
         $this->container['countdownSwitch'] = isset($data['countdownSwitch']) ? $data['countdownSwitch'] : null;
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
+        $this->container['unionMarketSpec'] = isset($data['unionMarketSpec']) ? $data['unionMarketSpec'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1160,6 +1166,30 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setAppGiftPackCode($appGiftPackCode)
     {
         $this->container['appGiftPackCode'] = $appGiftPackCode;
+
+        return $this;
+    }
+
+    /**
+     * Gets unionMarketSpec
+     *
+     * @return \TencentAds\Model\UnionMarketSpec|mixed
+     */
+    public function getUnionMarketSpec()
+    {
+        return $this->container['unionMarketSpec'];
+    }
+
+    /**
+     * Sets unionMarketSpec
+     *
+     * @param \TencentAds\Model\UnionMarketSpec|mixed $unionMarketSpec unionMarketSpec
+     *
+     * @return $this
+     */
+    public function setUnionMarketSpec($unionMarketSpec)
+    {
+        $this->container['unionMarketSpec'] = $unionMarketSpec;
 
         return $this;
     }
