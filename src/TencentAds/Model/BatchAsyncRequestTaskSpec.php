@@ -77,7 +77,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDailyBudgetSpec' => '\TencentAds\Model\UpdateAdgroupDailyBudgetItem[]',
         'updateAdConfiguredStatusSpec' => '\TencentAds\Model\UpdateAdConfiguredStatusItem[]',
         'updateAdgroupAutoAcquisitionSpec' => '\TencentAds\Model\UpdateAdgroupAutoAcquisitionItem[]',
-        'updateAdcreativeLandingPageSpec' => '\TencentAds\Model\UpdateAdcreativeLandingPageItem[]'
+        'updateAdcreativeLandingPageSpec' => '\TencentAds\Model\UpdateAdcreativeLandingPageItem[]',
+        'updateAdgroupDeepConversionWorthAdvancedRateSpec' => '\TencentAds\Model\UpdateAdgroupDeepConversionWorthAdvancedRateItem[]'
     ];
 
     /**
@@ -105,7 +106,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDailyBudgetSpec' => null,
         'updateAdConfiguredStatusSpec' => null,
         'updateAdgroupAutoAcquisitionSpec' => null,
-        'updateAdcreativeLandingPageSpec' => null
+        'updateAdcreativeLandingPageSpec' => null,
+        'updateAdgroupDeepConversionWorthAdvancedRateSpec' => null
     ];
 
     /**
@@ -154,7 +156,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDailyBudgetSpec' => 'update_adgroup_daily_budget_spec',
         'updateAdConfiguredStatusSpec' => 'update_ad_configured_status_spec',
         'updateAdgroupAutoAcquisitionSpec' => 'update_adgroup_auto_acquisition_spec',
-        'updateAdcreativeLandingPageSpec' => 'update_adcreative_landing_page_spec'
+        'updateAdcreativeLandingPageSpec' => 'update_adcreative_landing_page_spec',
+        'updateAdgroupDeepConversionWorthAdvancedRateSpec' => 'update_adgroup_deep_conversion_worth_advanced_rate_spec'
     ];
 
     /**
@@ -182,7 +185,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDailyBudgetSpec' => 'setUpdateAdgroupDailyBudgetSpec',
         'updateAdConfiguredStatusSpec' => 'setUpdateAdConfiguredStatusSpec',
         'updateAdgroupAutoAcquisitionSpec' => 'setUpdateAdgroupAutoAcquisitionSpec',
-        'updateAdcreativeLandingPageSpec' => 'setUpdateAdcreativeLandingPageSpec'
+        'updateAdcreativeLandingPageSpec' => 'setUpdateAdcreativeLandingPageSpec',
+        'updateAdgroupDeepConversionWorthAdvancedRateSpec' => 'setUpdateAdgroupDeepConversionWorthAdvancedRateSpec'
     ];
 
     /**
@@ -210,7 +214,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDailyBudgetSpec' => 'getUpdateAdgroupDailyBudgetSpec',
         'updateAdConfiguredStatusSpec' => 'getUpdateAdConfiguredStatusSpec',
         'updateAdgroupAutoAcquisitionSpec' => 'getUpdateAdgroupAutoAcquisitionSpec',
-        'updateAdcreativeLandingPageSpec' => 'getUpdateAdcreativeLandingPageSpec'
+        'updateAdcreativeLandingPageSpec' => 'getUpdateAdcreativeLandingPageSpec',
+        'updateAdgroupDeepConversionWorthAdvancedRateSpec' => 'getUpdateAdgroupDeepConversionWorthAdvancedRateSpec'
     ];
 
     /**
@@ -293,6 +298,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         $this->container['updateAdConfiguredStatusSpec'] = isset($data['updateAdConfiguredStatusSpec']) ? $data['updateAdConfiguredStatusSpec'] : null;
         $this->container['updateAdgroupAutoAcquisitionSpec'] = isset($data['updateAdgroupAutoAcquisitionSpec']) ? $data['updateAdgroupAutoAcquisitionSpec'] : null;
         $this->container['updateAdcreativeLandingPageSpec'] = isset($data['updateAdcreativeLandingPageSpec']) ? $data['updateAdcreativeLandingPageSpec'] : null;
+        $this->container['updateAdgroupDeepConversionWorthAdvancedRateSpec'] = isset($data['updateAdgroupDeepConversionWorthAdvancedRateSpec']) ? $data['updateAdgroupDeepConversionWorthAdvancedRateSpec'] : null;
     }
 
     /**
@@ -795,6 +801,30 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     public function setUpdateAdcreativeLandingPageSpec($updateAdcreativeLandingPageSpec)
     {
         $this->container['updateAdcreativeLandingPageSpec'] = $updateAdcreativeLandingPageSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets updateAdgroupDeepConversionWorthAdvancedRateSpec
+     *
+     * @return \TencentAds\Model\UpdateAdgroupDeepConversionWorthAdvancedRateItem[]|mixed
+     */
+    public function getUpdateAdgroupDeepConversionWorthAdvancedRateSpec()
+    {
+        return $this->container['updateAdgroupDeepConversionWorthAdvancedRateSpec'];
+    }
+
+    /**
+     * Sets updateAdgroupDeepConversionWorthAdvancedRateSpec
+     *
+     * @param \TencentAds\Model\UpdateAdgroupDeepConversionWorthAdvancedRateItem[]|mixed $updateAdgroupDeepConversionWorthAdvancedRateSpec updateAdgroupDeepConversionWorthAdvancedRateSpec
+     *
+     * @return $this
+     */
+    public function setUpdateAdgroupDeepConversionWorthAdvancedRateSpec($updateAdgroupDeepConversionWorthAdvancedRateSpec)
+    {
+        $this->container['updateAdgroupDeepConversionWorthAdvancedRateSpec'] = $updateAdgroupDeepConversionWorthAdvancedRateSpec;
 
         return $this;
     }
