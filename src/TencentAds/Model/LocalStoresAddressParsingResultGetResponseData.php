@@ -58,7 +58,8 @@ class LocalStoresAddressParsingResultGetResponseData implements ModelInterface, 
       */
     protected static $swaggerTypes = [
         'successList' => '\TencentAds\Model\SuccessPoiInfoStruct[]',
-        'failList' => 'string[]'
+        'failList' => 'string[]',
+        'sensitiveList' => 'string[]'
     ];
 
     /**
@@ -68,7 +69,8 @@ class LocalStoresAddressParsingResultGetResponseData implements ModelInterface, 
       */
     protected static $swaggerFormats = [
         'successList' => null,
-        'failList' => null
+        'failList' => null,
+        'sensitiveList' => null
     ];
 
     /**
@@ -99,7 +101,8 @@ class LocalStoresAddressParsingResultGetResponseData implements ModelInterface, 
      */
     protected static $attributeMap = [
         'successList' => 'success_list',
-        'failList' => 'fail_list'
+        'failList' => 'fail_list',
+        'sensitiveList' => 'sensitive_list'
     ];
 
     /**
@@ -109,7 +112,8 @@ class LocalStoresAddressParsingResultGetResponseData implements ModelInterface, 
      */
     protected static $setters = [
         'successList' => 'setSuccessList',
-        'failList' => 'setFailList'
+        'failList' => 'setFailList',
+        'sensitiveList' => 'setSensitiveList'
     ];
 
     /**
@@ -119,7 +123,8 @@ class LocalStoresAddressParsingResultGetResponseData implements ModelInterface, 
      */
     protected static $getters = [
         'successList' => 'getSuccessList',
-        'failList' => 'getFailList'
+        'failList' => 'getFailList',
+        'sensitiveList' => 'getSensitiveList'
     ];
 
     /**
@@ -184,6 +189,7 @@ class LocalStoresAddressParsingResultGetResponseData implements ModelInterface, 
     {
         $this->container['successList'] = isset($data['successList']) ? $data['successList'] : null;
         $this->container['failList'] = isset($data['failList']) ? $data['failList'] : null;
+        $this->container['sensitiveList'] = isset($data['sensitiveList']) ? $data['sensitiveList'] : null;
     }
 
     /**
@@ -254,6 +260,30 @@ class LocalStoresAddressParsingResultGetResponseData implements ModelInterface, 
     public function setFailList($failList)
     {
         $this->container['failList'] = $failList;
+
+        return $this;
+    }
+
+    /**
+     * Gets sensitiveList
+     *
+     * @return string[]|mixed
+     */
+    public function getSensitiveList()
+    {
+        return $this->container['sensitiveList'];
+    }
+
+    /**
+     * Sets sensitiveList
+     *
+     * @param string[]|mixed $sensitiveList sensitiveList
+     *
+     * @return $this
+     */
+    public function setSensitiveList($sensitiveList)
+    {
+        $this->container['sensitiveList'] = $sensitiveList;
 
         return $this;
     }
