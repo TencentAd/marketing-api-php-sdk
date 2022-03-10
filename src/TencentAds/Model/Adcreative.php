@@ -71,6 +71,7 @@ class Adcreative implements ModelInterface, ArrayAccess
         'playablePageMaterialId' => 'string',
         'videoEndPage' => '\TencentAds\Model\VideoEndPageSpec',
         'enableBreakthroughSiteset' => 'bool',
+        'creativeTemplateCategory' => 'string',
         'adcreativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsRead'
     ];
@@ -94,6 +95,7 @@ class Adcreative implements ModelInterface, ArrayAccess
         'playablePageMaterialId' => null,
         'videoEndPage' => null,
         'enableBreakthroughSiteset' => null,
+        'creativeTemplateCategory' => null,
         'adcreativeTemplateId' => 'int64',
         'adcreativeElements' => null
     ];
@@ -138,6 +140,7 @@ class Adcreative implements ModelInterface, ArrayAccess
         'playablePageMaterialId' => 'playable_page_material_id',
         'videoEndPage' => 'video_end_page',
         'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
+        'creativeTemplateCategory' => 'creative_template_category',
         'adcreativeTemplateId' => 'adcreative_template_id',
         'adcreativeElements' => 'adcreative_elements'
     ];
@@ -161,6 +164,7 @@ class Adcreative implements ModelInterface, ArrayAccess
         'playablePageMaterialId' => 'setPlayablePageMaterialId',
         'videoEndPage' => 'setVideoEndPage',
         'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
+        'creativeTemplateCategory' => 'setCreativeTemplateCategory',
         'adcreativeTemplateId' => 'setAdcreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements'
     ];
@@ -184,6 +188,7 @@ class Adcreative implements ModelInterface, ArrayAccess
         'playablePageMaterialId' => 'getPlayablePageMaterialId',
         'videoEndPage' => 'getVideoEndPage',
         'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
+        'creativeTemplateCategory' => 'getCreativeTemplateCategory',
         'adcreativeTemplateId' => 'getAdcreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements'
     ];
@@ -261,6 +266,7 @@ class Adcreative implements ModelInterface, ArrayAccess
         $this->container['playablePageMaterialId'] = isset($data['playablePageMaterialId']) ? $data['playablePageMaterialId'] : null;
         $this->container['videoEndPage'] = isset($data['videoEndPage']) ? $data['videoEndPage'] : null;
         $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
+        $this->container['creativeTemplateCategory'] = isset($data['creativeTemplateCategory']) ? $data['creativeTemplateCategory'] : null;
         $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
     }
@@ -597,6 +603,30 @@ class Adcreative implements ModelInterface, ArrayAccess
     public function setEnableBreakthroughSiteset($enableBreakthroughSiteset)
     {
         $this->container['enableBreakthroughSiteset'] = $enableBreakthroughSiteset;
+
+        return $this;
+    }
+
+    /**
+     * Gets creativeTemplateCategory
+     *
+     * @return string|mixed
+     */
+    public function getCreativeTemplateCategory()
+    {
+        return $this->container['creativeTemplateCategory'];
+    }
+
+    /**
+     * Sets creativeTemplateCategory
+     *
+     * @param string|mixed $creativeTemplateCategory creativeTemplateCategory
+     *
+     * @return $this
+     */
+    public function setCreativeTemplateCategory($creativeTemplateCategory)
+    {
+        $this->container['creativeTemplateCategory'] = $creativeTemplateCategory;
 
         return $this;
     }

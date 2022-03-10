@@ -69,6 +69,7 @@ class PromotedObjectTypeWithoutJd
     const COUPON_WECHAT = 'PROMOTED_OBJECT_TYPE_COUPON_WECHAT';
     const MINI_GAME_QQ = 'PROMOTED_OBJECT_TYPE_MINI_GAME_QQ';
     const MINI_PROGRAM_WECHAT = 'PROMOTED_OBJECT_TYPE_MINI_PROGRAM_WECHAT';
+    const APP_QUICK_APP = 'PROMOTED_OBJECT_TYPE_APP_QUICK_APP';
     
     /**
      * Gets allowable values of the enum
@@ -102,6 +103,7 @@ class PromotedObjectTypeWithoutJd
             self::COUPON_WECHAT,
             self::MINI_GAME_QQ,
             self::MINI_PROGRAM_WECHAT,
+            self::APP_QUICK_APP,
         ];
     }
 }

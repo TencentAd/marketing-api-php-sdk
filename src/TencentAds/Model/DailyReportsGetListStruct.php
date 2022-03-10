@@ -94,6 +94,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'webApplicationCost' => 'int',
         'pageReservationCount' => 'int',
         'pageReservationByDisplayCount' => 'int',
+        'pageReservationByClickCount' => 'int',
         'pageReservationRate' => 'double',
         'pageReservationCost' => 'int',
         'pageReservationCostWithPeople' => 'int',
@@ -106,19 +107,24 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'platformCouponGetCost' => 'int',
         'webOrderCount' => 'int',
         'orderByDisplayCount' => 'int',
+        'orderByClickCount' => 'int',
         'webOrderRate' => 'double',
         'orderByDisplayRate' => 'double',
+        'orderByClickRate' => 'double',
         'appOrderRate' => 'double',
         'webOrderCost' => 'int',
         'orderByDisplayCost' => 'int',
+        'orderByClickCost' => 'int',
         'webCheckoutAmount' => 'int',
         'webCheckoutCount' => 'int',
         'webCheckoutCost' => 'int',
         'orderAmount' => 'int',
         'orderByDisplayAmount' => 'int',
+        'orderByClickAmount' => 'int',
         'orderUnitPrice' => 'int',
         'orderRoi' => 'double',
         'orderByDisplayRoi' => 'double',
+        'orderByClickRoi' => 'double',
         'deliverCount' => 'int',
         'deliverCost' => 'int',
         'signInCount' => 'int',
@@ -131,17 +137,23 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activatedCost' => 'int',
         'retentionCount' => 'int',
         'retentionRate' => 'double',
+        'appRetentionD3Rate' => 'double',
+        'appRetentionD5Rate' => 'double',
+        'appRetentionD7Rate' => 'double',
         'appKeyPageRetentionRate' => 'double',
         'retentionCost' => 'int',
         'keyPageViewCount' => 'int',
         'keyPageViewByDisplayCount' => 'int',
+        'keyPageViewByClickCount' => 'int',
         'appCommodityPageViewCount' => 'int',
         'appCommodityPageViewByDisplayCount' => 'int',
+        'appCommodityPageViewByClickCount' => 'int',
         'appCommodityPageViewRate' => 'double',
         'webCommodityPageViewRate' => 'double',
         'appCommodityPageViewCost' => 'int',
         'appRegisterCount' => 'int',
         'registerByDisplayCount' => 'int',
+        'registerByClickCount' => 'int',
         'appRegisterCost' => 'int',
         'webRegisterCost' => 'int',
         'appApplicationCount' => 'int',
@@ -153,6 +165,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'appOrderCost' => 'int',
         'appCheckoutCount' => 'int',
         'appCheckoutByDisplayCount' => 'int',
+        'appCheckoutByClickCount' => 'int',
         'appCheckoutAmount' => 'int',
         'appCheckoutCost' => 'int',
         'platformCouponClickCount' => 'int',
@@ -179,12 +192,15 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'adPurValApp' => 'int',
         'order24hCount' => 'int',
         'order24hByDisplayCount' => 'int',
+        'order24hByClickCount' => 'int',
         'order24hRate' => 'double',
         'order24hCost' => 'int',
         'order24hAmount' => 'int',
         'order24hByDisplayAmount' => 'int',
+        'order24hByClickAmount' => 'int',
         'order24hRoi' => 'double',
         'order24hByDisplayRoi' => 'double',
+        'order24hByClickRoi' => 'double',
         'gameCreateRoleCount' => 'int',
         'gameAuthorizeCount' => 'int',
         'gameTutorialFinishCount' => 'int',
@@ -227,8 +243,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'cheoutTotalReward' => 'double',
         'fromFollowUv' => 'int',
         'fromFollowByDisplayUv' => 'int',
+        'fromFollowByClickUv' => 'int',
         'fromFollowCost' => 'int',
         'fromFollowByDisplayCost' => 'int',
+        'fromFollowByClickCost' => 'int',
         'addDesktopPv' => 'int',
         'addDesktopCost' => 'int',
         'firstPayCount' => 'int',
@@ -263,11 +281,14 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'lotteryLeadsCount' => 'int',
         'lotteryLeadsCost' => 'int',
         'conversionsCount' => 'int',
+        'conversionsByClickCount' => 'int',
         'conversionsByDisplayCount' => 'int',
         'conversionsRate' => 'double',
         'conversionsByDisplayRate' => 'double',
+        'conversionsByClickRate' => 'double',
         'conversionsCost' => 'int',
         'conversionsByDisplayCost' => 'int',
+        'conversionsByClickCost' => 'int',
         'deepConversionsCount' => 'int',
         'deepConversionsRate' => 'double',
         'deepConversionsCost' => 'int',
@@ -322,8 +343,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'noInterestCount' => 'int',
         'firstDayOrderCount' => 'int',
         'firstDayOrderByDisplayCount' => 'int',
+        'firstDayOrderByClickCount' => 'int',
         'firstDayOrderAmount' => 'int',
         'firstDayOrderByDisplayAmount' => 'int',
+        'firstDayOrderByClickAmount' => 'int',
         'addWishlistCount' => 'int',
         'videoOuterPlay10Count' => 'int',
         'videoOuterPlay25Count' => 'int',
@@ -368,6 +391,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameCreateRoleUsers' => 'int',
         'miniGameCreateRoleCost' => 'int',
         'miniGameRetentionD1' => 'int',
+        'appRetentionD3Uv' => 'int',
+        'appRetentionD5Uv' => 'int',
+        'appRetentionD7Uv' => 'int',
         'miniGameKeyPageViewers' => 'int',
         'miniGameKeyPageViewCost' => 'int',
         'miniGameAdMonetizationAmount' => 'int',
@@ -379,6 +405,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayingAmountClickD1ByUpload' => 'int',
         'miniGameRetentionD1Rate' => 'double',
         'miniGameRetentionD1Cost' => 'int',
+        'appRetentionD3Cost' => 'int',
+        'appRetentionD5Cost' => 'int',
+        'appRetentionD7Cost' => 'int',
         'keyPageViewRate' => 'double',
         'wechatCostStage1' => 'int',
         'wechatCostStage2' => 'int',
@@ -445,6 +474,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'incomeRoi3' => 'double',
         'incomeRoi7' => 'double',
         'incomeRoi14' => 'double',
+        'activeD5FirstPayUv' => 'int',
         'activatedTotalPaymentCost' => 'int',
         'paymentAmountActivatedD3' => 'int',
         'paymentAmountActivatedD7' => 'int',
@@ -485,6 +515,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameD30PayPlaCount' => 'int',
         'roiActivatedD30' => 'double',
         'firstDayFirstPayRate' => 'double',
+        'activeD5FirstPayCost' => 'int',
         'miniGameFirstDayAdMonetizationUsers' => 'int',
         'miniGameFirstDayAdMonetizationAmount' => 'int',
         'miniGameFirstDayAdPayingCost' => 'int',
@@ -523,6 +554,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationAmountD14' => 'int',
         'miniGamePayingArpuD1' => 'int',
         'miniGamePayD1PlaRate' => 'double',
+        'activeD5ClickFirstPayRate' => 'double',
         'activeD3PayCount' => 'int',
         'activeD7PayCount' => 'int',
         'activeD14PayCount' => 'int',
@@ -638,7 +670,14 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'couponUseCount' => 'int',
         'forwardUserCount' => 'int',
         'videoOuterPlayUserCount' => 'int',
-        'videoInnerPlayUserCount' => 'int'
+        'videoInnerPlayUserCount' => 'int',
+        'channelsHalfScreenCardExpPv' => 'int',
+        'channelsHalfScreenButtonClkPv' => 'int',
+        'channelsMatchReadPv' => 'int',
+        'channelsMatchHeartPv' => 'int',
+        'channelsMatchCommentPv' => 'int',
+        'channelsMatchSharePv' => 'int',
+        'exportId' => 'int'
     ];
 
     /**
@@ -683,6 +722,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'webApplicationCost' => 'int64',
         'pageReservationCount' => 'int64',
         'pageReservationByDisplayCount' => 'int64',
+        'pageReservationByClickCount' => 'int64',
         'pageReservationRate' => 'double',
         'pageReservationCost' => 'int64',
         'pageReservationCostWithPeople' => 'int64',
@@ -695,19 +735,24 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'platformCouponGetCost' => 'int64',
         'webOrderCount' => 'int64',
         'orderByDisplayCount' => 'int64',
+        'orderByClickCount' => 'int64',
         'webOrderRate' => 'double',
         'orderByDisplayRate' => 'double',
+        'orderByClickRate' => 'double',
         'appOrderRate' => 'double',
         'webOrderCost' => 'int64',
         'orderByDisplayCost' => 'int64',
+        'orderByClickCost' => 'int64',
         'webCheckoutAmount' => 'int64',
         'webCheckoutCount' => 'int64',
         'webCheckoutCost' => 'int64',
         'orderAmount' => 'int64',
         'orderByDisplayAmount' => 'int64',
+        'orderByClickAmount' => 'int64',
         'orderUnitPrice' => 'int64',
         'orderRoi' => 'double',
         'orderByDisplayRoi' => 'double',
+        'orderByClickRoi' => 'double',
         'deliverCount' => 'int64',
         'deliverCost' => 'int64',
         'signInCount' => 'int64',
@@ -720,17 +765,23 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activatedCost' => 'int64',
         'retentionCount' => 'int64',
         'retentionRate' => 'double',
+        'appRetentionD3Rate' => 'double',
+        'appRetentionD5Rate' => 'double',
+        'appRetentionD7Rate' => 'double',
         'appKeyPageRetentionRate' => 'double',
         'retentionCost' => 'int64',
         'keyPageViewCount' => 'int64',
         'keyPageViewByDisplayCount' => 'int64',
+        'keyPageViewByClickCount' => 'int64',
         'appCommodityPageViewCount' => 'int64',
         'appCommodityPageViewByDisplayCount' => 'int64',
+        'appCommodityPageViewByClickCount' => 'int64',
         'appCommodityPageViewRate' => 'double',
         'webCommodityPageViewRate' => 'double',
         'appCommodityPageViewCost' => 'int64',
         'appRegisterCount' => 'int64',
         'registerByDisplayCount' => 'int64',
+        'registerByClickCount' => 'int64',
         'appRegisterCost' => 'int64',
         'webRegisterCost' => 'int64',
         'appApplicationCount' => 'int64',
@@ -742,6 +793,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'appOrderCost' => 'int64',
         'appCheckoutCount' => 'int64',
         'appCheckoutByDisplayCount' => 'int64',
+        'appCheckoutByClickCount' => 'int64',
         'appCheckoutAmount' => 'int64',
         'appCheckoutCost' => 'int64',
         'platformCouponClickCount' => 'int64',
@@ -768,12 +820,15 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'adPurValApp' => 'int64',
         'order24hCount' => 'int64',
         'order24hByDisplayCount' => 'int64',
+        'order24hByClickCount' => 'int64',
         'order24hRate' => 'double',
         'order24hCost' => 'int64',
         'order24hAmount' => 'int64',
         'order24hByDisplayAmount' => 'int64',
+        'order24hByClickAmount' => 'int64',
         'order24hRoi' => 'double',
         'order24hByDisplayRoi' => 'double',
+        'order24hByClickRoi' => 'double',
         'gameCreateRoleCount' => 'int64',
         'gameAuthorizeCount' => 'int64',
         'gameTutorialFinishCount' => 'int64',
@@ -816,8 +871,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'cheoutTotalReward' => 'double',
         'fromFollowUv' => 'int64',
         'fromFollowByDisplayUv' => 'int64',
+        'fromFollowByClickUv' => 'int64',
         'fromFollowCost' => 'int64',
         'fromFollowByDisplayCost' => 'int64',
+        'fromFollowByClickCost' => 'int64',
         'addDesktopPv' => 'int64',
         'addDesktopCost' => 'int64',
         'firstPayCount' => 'int64',
@@ -852,11 +909,14 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'lotteryLeadsCount' => 'int64',
         'lotteryLeadsCost' => 'int64',
         'conversionsCount' => 'int64',
+        'conversionsByClickCount' => 'int64',
         'conversionsByDisplayCount' => 'int64',
         'conversionsRate' => 'double',
         'conversionsByDisplayRate' => 'double',
+        'conversionsByClickRate' => 'double',
         'conversionsCost' => 'int64',
         'conversionsByDisplayCost' => 'int64',
+        'conversionsByClickCost' => 'int64',
         'deepConversionsCount' => 'int64',
         'deepConversionsRate' => 'double',
         'deepConversionsCost' => 'int64',
@@ -911,8 +971,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'noInterestCount' => 'int64',
         'firstDayOrderCount' => 'int64',
         'firstDayOrderByDisplayCount' => 'int64',
+        'firstDayOrderByClickCount' => 'int64',
         'firstDayOrderAmount' => 'int64',
         'firstDayOrderByDisplayAmount' => 'int64',
+        'firstDayOrderByClickAmount' => 'int64',
         'addWishlistCount' => 'int64',
         'videoOuterPlay10Count' => 'int64',
         'videoOuterPlay25Count' => 'int64',
@@ -957,6 +1019,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameCreateRoleUsers' => 'int64',
         'miniGameCreateRoleCost' => 'int64',
         'miniGameRetentionD1' => 'int64',
+        'appRetentionD3Uv' => 'int64',
+        'appRetentionD5Uv' => 'int64',
+        'appRetentionD7Uv' => 'int64',
         'miniGameKeyPageViewers' => 'int64',
         'miniGameKeyPageViewCost' => 'int64',
         'miniGameAdMonetizationAmount' => 'int64',
@@ -968,6 +1033,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayingAmountClickD1ByUpload' => 'int64',
         'miniGameRetentionD1Rate' => 'double',
         'miniGameRetentionD1Cost' => 'int64',
+        'appRetentionD3Cost' => 'int64',
+        'appRetentionD5Cost' => 'int64',
+        'appRetentionD7Cost' => 'int64',
         'keyPageViewRate' => 'double',
         'wechatCostStage1' => 'int64',
         'wechatCostStage2' => 'int64',
@@ -1034,6 +1102,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'incomeRoi3' => 'double',
         'incomeRoi7' => 'double',
         'incomeRoi14' => 'double',
+        'activeD5FirstPayUv' => 'int64',
         'activatedTotalPaymentCost' => 'int64',
         'paymentAmountActivatedD3' => 'int64',
         'paymentAmountActivatedD7' => 'int64',
@@ -1074,6 +1143,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameD30PayPlaCount' => 'int64',
         'roiActivatedD30' => 'double',
         'firstDayFirstPayRate' => 'double',
+        'activeD5FirstPayCost' => 'int64',
         'miniGameFirstDayAdMonetizationUsers' => 'int64',
         'miniGameFirstDayAdMonetizationAmount' => 'int64',
         'miniGameFirstDayAdPayingCost' => 'int64',
@@ -1112,6 +1182,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationAmountD14' => 'int64',
         'miniGamePayingArpuD1' => 'int64',
         'miniGamePayD1PlaRate' => 'double',
+        'activeD5ClickFirstPayRate' => 'double',
         'activeD3PayCount' => 'int64',
         'activeD7PayCount' => 'int64',
         'activeD14PayCount' => 'int64',
@@ -1227,7 +1298,14 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'couponUseCount' => 'int64',
         'forwardUserCount' => 'int64',
         'videoOuterPlayUserCount' => 'int64',
-        'videoInnerPlayUserCount' => 'int64'
+        'videoInnerPlayUserCount' => 'int64',
+        'channelsHalfScreenCardExpPv' => 'int64',
+        'channelsHalfScreenButtonClkPv' => 'int64',
+        'channelsMatchReadPv' => 'int64',
+        'channelsMatchHeartPv' => 'int64',
+        'channelsMatchCommentPv' => 'int64',
+        'channelsMatchSharePv' => 'int64',
+        'exportId' => 'int64'
     ];
 
     /**
@@ -1293,6 +1371,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'webApplicationCost' => 'web_application_cost',
         'pageReservationCount' => 'page_reservation_count',
         'pageReservationByDisplayCount' => 'page_reservation_by_display_count',
+        'pageReservationByClickCount' => 'page_reservation_by_click_count',
         'pageReservationRate' => 'page_reservation_rate',
         'pageReservationCost' => 'page_reservation_cost',
         'pageReservationCostWithPeople' => 'page_reservation_cost_with_people',
@@ -1305,19 +1384,24 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'platformCouponGetCost' => 'platform_coupon_get_cost',
         'webOrderCount' => 'web_order_count',
         'orderByDisplayCount' => 'order_by_display_count',
+        'orderByClickCount' => 'order_by_click_count',
         'webOrderRate' => 'web_order_rate',
         'orderByDisplayRate' => 'order_by_display_rate',
+        'orderByClickRate' => 'order_by_click_rate',
         'appOrderRate' => 'app_order_rate',
         'webOrderCost' => 'web_order_cost',
         'orderByDisplayCost' => 'order_by_display_cost',
+        'orderByClickCost' => 'order_by_click_cost',
         'webCheckoutAmount' => 'web_checkout_amount',
         'webCheckoutCount' => 'web_checkout_count',
         'webCheckoutCost' => 'web_checkout_cost',
         'orderAmount' => 'order_amount',
         'orderByDisplayAmount' => 'order_by_display_amount',
+        'orderByClickAmount' => 'order_by_click_amount',
         'orderUnitPrice' => 'order_unit_price',
         'orderRoi' => 'order_roi',
         'orderByDisplayRoi' => 'order_by_display_roi',
+        'orderByClickRoi' => 'order_by_click_roi',
         'deliverCount' => 'deliver_count',
         'deliverCost' => 'deliver_cost',
         'signInCount' => 'sign_in_count',
@@ -1330,17 +1414,23 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activatedCost' => 'activated_cost',
         'retentionCount' => 'retention_count',
         'retentionRate' => 'retention_rate',
+        'appRetentionD3Rate' => 'app_retention_d3_rate',
+        'appRetentionD5Rate' => 'app_retention_d5_rate',
+        'appRetentionD7Rate' => 'app_retention_d7_rate',
         'appKeyPageRetentionRate' => 'app_key_page_retention_rate',
         'retentionCost' => 'retention_cost',
         'keyPageViewCount' => 'key_page_view_count',
         'keyPageViewByDisplayCount' => 'key_page_view_by_display_count',
+        'keyPageViewByClickCount' => 'key_page_view_by_click_count',
         'appCommodityPageViewCount' => 'app_commodity_page_view_count',
         'appCommodityPageViewByDisplayCount' => 'app_commodity_page_view_by_display_count',
+        'appCommodityPageViewByClickCount' => 'app_commodity_page_view_by_click_count',
         'appCommodityPageViewRate' => 'app_commodity_page_view_rate',
         'webCommodityPageViewRate' => 'web_commodity_page_view_rate',
         'appCommodityPageViewCost' => 'app_commodity_page_view_cost',
         'appRegisterCount' => 'app_register_count',
         'registerByDisplayCount' => 'register_by_display_count',
+        'registerByClickCount' => 'register_by_click_count',
         'appRegisterCost' => 'app_register_cost',
         'webRegisterCost' => 'web_register_cost',
         'appApplicationCount' => 'app_application_count',
@@ -1352,6 +1442,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'appOrderCost' => 'app_order_cost',
         'appCheckoutCount' => 'app_checkout_count',
         'appCheckoutByDisplayCount' => 'app_checkout_by_display_count',
+        'appCheckoutByClickCount' => 'app_checkout_by_click_count',
         'appCheckoutAmount' => 'app_checkout_amount',
         'appCheckoutCost' => 'app_checkout_cost',
         'platformCouponClickCount' => 'platform_coupon_click_count',
@@ -1378,12 +1469,15 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'adPurValApp' => 'ad_pur_val_app',
         'order24hCount' => 'order_24h_count',
         'order24hByDisplayCount' => 'order_24h_by_display_count',
+        'order24hByClickCount' => 'order_24h_by_click_count',
         'order24hRate' => 'order_24h_rate',
         'order24hCost' => 'order_24h_cost',
         'order24hAmount' => 'order_24h_amount',
         'order24hByDisplayAmount' => 'order_24h_by_display_amount',
+        'order24hByClickAmount' => 'order_24h_by_click_amount',
         'order24hRoi' => 'order_24h_roi',
         'order24hByDisplayRoi' => 'order_24h_by_display_roi',
+        'order24hByClickRoi' => 'order_24h_by_click_roi',
         'gameCreateRoleCount' => 'game_create_role_count',
         'gameAuthorizeCount' => 'game_authorize_count',
         'gameTutorialFinishCount' => 'game_tutorial_finish_count',
@@ -1426,8 +1520,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'cheoutTotalReward' => 'cheout_total_reward',
         'fromFollowUv' => 'from_follow_uv',
         'fromFollowByDisplayUv' => 'from_follow_by_display_uv',
+        'fromFollowByClickUv' => 'from_follow_by_click_uv',
         'fromFollowCost' => 'from_follow_cost',
         'fromFollowByDisplayCost' => 'from_follow_by_display_cost',
+        'fromFollowByClickCost' => 'from_follow_by_click_cost',
         'addDesktopPv' => 'add_desktop_pv',
         'addDesktopCost' => 'add_desktop_cost',
         'firstPayCount' => 'first_pay_count',
@@ -1462,11 +1558,14 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'lotteryLeadsCount' => 'lottery_leads_count',
         'lotteryLeadsCost' => 'lottery_leads_cost',
         'conversionsCount' => 'conversions_count',
+        'conversionsByClickCount' => 'conversions_by_click_count',
         'conversionsByDisplayCount' => 'conversions_by_display_count',
         'conversionsRate' => 'conversions_rate',
         'conversionsByDisplayRate' => 'conversions_by_display_rate',
+        'conversionsByClickRate' => 'conversions_by_click_rate',
         'conversionsCost' => 'conversions_cost',
         'conversionsByDisplayCost' => 'conversions_by_display_cost',
+        'conversionsByClickCost' => 'conversions_by_click_cost',
         'deepConversionsCount' => 'deep_conversions_count',
         'deepConversionsRate' => 'deep_conversions_rate',
         'deepConversionsCost' => 'deep_conversions_cost',
@@ -1521,8 +1620,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'noInterestCount' => 'no_interest_count',
         'firstDayOrderCount' => 'first_day_order_count',
         'firstDayOrderByDisplayCount' => 'first_day_order_by_display_count',
+        'firstDayOrderByClickCount' => 'first_day_order_by_click_count',
         'firstDayOrderAmount' => 'first_day_order_amount',
         'firstDayOrderByDisplayAmount' => 'first_day_order_by_display_amount',
+        'firstDayOrderByClickAmount' => 'first_day_order_by_click_amount',
         'addWishlistCount' => 'add_wishlist_count',
         'videoOuterPlay10Count' => 'video_outer_play10_count',
         'videoOuterPlay25Count' => 'video_outer_play25_count',
@@ -1567,6 +1668,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameCreateRoleUsers' => 'mini_game_create_role_users',
         'miniGameCreateRoleCost' => 'mini_game_create_role_cost',
         'miniGameRetentionD1' => 'mini_game_retention_d1',
+        'appRetentionD3Uv' => 'app_retention_d3_uv',
+        'appRetentionD5Uv' => 'app_retention_d5_uv',
+        'appRetentionD7Uv' => 'app_retention_d7_uv',
         'miniGameKeyPageViewers' => 'mini_game_key_page_viewers',
         'miniGameKeyPageViewCost' => 'mini_game_key_page_view_cost',
         'miniGameAdMonetizationAmount' => 'mini_game_ad_monetization_amount',
@@ -1578,6 +1682,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayingAmountClickD1ByUpload' => 'mini_game_paying_amount_click_d1_by_upload',
         'miniGameRetentionD1Rate' => 'mini_game_retention_d1_rate',
         'miniGameRetentionD1Cost' => 'mini_game_retention_d1_cost',
+        'appRetentionD3Cost' => 'app_retention_d3_cost',
+        'appRetentionD5Cost' => 'app_retention_d5_cost',
+        'appRetentionD7Cost' => 'app_retention_d7_cost',
         'keyPageViewRate' => 'key_page_view_rate',
         'wechatCostStage1' => 'wechat_cost_stage1',
         'wechatCostStage2' => 'wechat_cost_stage2',
@@ -1644,6 +1751,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'incomeRoi3' => 'income_roi_3',
         'incomeRoi7' => 'income_roi_7',
         'incomeRoi14' => 'income_roi_14',
+        'activeD5FirstPayUv' => 'active_d5_first_pay_uv',
         'activatedTotalPaymentCost' => 'activated_total_payment_cost',
         'paymentAmountActivatedD3' => 'payment_amount_activated_d3',
         'paymentAmountActivatedD7' => 'payment_amount_activated_d7',
@@ -1684,6 +1792,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameD30PayPlaCount' => 'mini_game_d30_pay_pla_count',
         'roiActivatedD30' => 'roi_activated_d30',
         'firstDayFirstPayRate' => 'first_day_first_pay_rate',
+        'activeD5FirstPayCost' => 'active_d5_first_pay_cost',
         'miniGameFirstDayAdMonetizationUsers' => 'mini_game_first_day_ad_monetization_users',
         'miniGameFirstDayAdMonetizationAmount' => 'mini_game_first_day_ad_monetization_amount',
         'miniGameFirstDayAdPayingCost' => 'mini_game_first_day_ad_paying_cost',
@@ -1722,6 +1831,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationAmountD14' => 'mini_game_ad_monetization_amount_d14',
         'miniGamePayingArpuD1' => 'mini_game_paying_arpu_d1',
         'miniGamePayD1PlaRate' => 'mini_game_pay_d1_pla_rate',
+        'activeD5ClickFirstPayRate' => 'active_d5_click_first_pay_rate',
         'activeD3PayCount' => 'active_d3_pay_count',
         'activeD7PayCount' => 'active_d7_pay_count',
         'activeD14PayCount' => 'active_d14_pay_count',
@@ -1837,7 +1947,14 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'couponUseCount' => 'coupon_use_count',
         'forwardUserCount' => 'forward_user_count',
         'videoOuterPlayUserCount' => 'video_outer_play_user_count',
-        'videoInnerPlayUserCount' => 'video_inner_play_user_count'
+        'videoInnerPlayUserCount' => 'video_inner_play_user_count',
+        'channelsHalfScreenCardExpPv' => 'channels_half_screen_card_exp_pv',
+        'channelsHalfScreenButtonClkPv' => 'channels_half_screen_button_clk_pv',
+        'channelsMatchReadPv' => 'channels_match_read_pv',
+        'channelsMatchHeartPv' => 'channels_match_heart_pv',
+        'channelsMatchCommentPv' => 'channels_match_comment_pv',
+        'channelsMatchSharePv' => 'channels_match_share_pv',
+        'exportId' => 'export_id'
     ];
 
     /**
@@ -1882,6 +1999,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'webApplicationCost' => 'setWebApplicationCost',
         'pageReservationCount' => 'setPageReservationCount',
         'pageReservationByDisplayCount' => 'setPageReservationByDisplayCount',
+        'pageReservationByClickCount' => 'setPageReservationByClickCount',
         'pageReservationRate' => 'setPageReservationRate',
         'pageReservationCost' => 'setPageReservationCost',
         'pageReservationCostWithPeople' => 'setPageReservationCostWithPeople',
@@ -1894,19 +2012,24 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'platformCouponGetCost' => 'setPlatformCouponGetCost',
         'webOrderCount' => 'setWebOrderCount',
         'orderByDisplayCount' => 'setOrderByDisplayCount',
+        'orderByClickCount' => 'setOrderByClickCount',
         'webOrderRate' => 'setWebOrderRate',
         'orderByDisplayRate' => 'setOrderByDisplayRate',
+        'orderByClickRate' => 'setOrderByClickRate',
         'appOrderRate' => 'setAppOrderRate',
         'webOrderCost' => 'setWebOrderCost',
         'orderByDisplayCost' => 'setOrderByDisplayCost',
+        'orderByClickCost' => 'setOrderByClickCost',
         'webCheckoutAmount' => 'setWebCheckoutAmount',
         'webCheckoutCount' => 'setWebCheckoutCount',
         'webCheckoutCost' => 'setWebCheckoutCost',
         'orderAmount' => 'setOrderAmount',
         'orderByDisplayAmount' => 'setOrderByDisplayAmount',
+        'orderByClickAmount' => 'setOrderByClickAmount',
         'orderUnitPrice' => 'setOrderUnitPrice',
         'orderRoi' => 'setOrderRoi',
         'orderByDisplayRoi' => 'setOrderByDisplayRoi',
+        'orderByClickRoi' => 'setOrderByClickRoi',
         'deliverCount' => 'setDeliverCount',
         'deliverCost' => 'setDeliverCost',
         'signInCount' => 'setSignInCount',
@@ -1919,17 +2042,23 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activatedCost' => 'setActivatedCost',
         'retentionCount' => 'setRetentionCount',
         'retentionRate' => 'setRetentionRate',
+        'appRetentionD3Rate' => 'setAppRetentionD3Rate',
+        'appRetentionD5Rate' => 'setAppRetentionD5Rate',
+        'appRetentionD7Rate' => 'setAppRetentionD7Rate',
         'appKeyPageRetentionRate' => 'setAppKeyPageRetentionRate',
         'retentionCost' => 'setRetentionCost',
         'keyPageViewCount' => 'setKeyPageViewCount',
         'keyPageViewByDisplayCount' => 'setKeyPageViewByDisplayCount',
+        'keyPageViewByClickCount' => 'setKeyPageViewByClickCount',
         'appCommodityPageViewCount' => 'setAppCommodityPageViewCount',
         'appCommodityPageViewByDisplayCount' => 'setAppCommodityPageViewByDisplayCount',
+        'appCommodityPageViewByClickCount' => 'setAppCommodityPageViewByClickCount',
         'appCommodityPageViewRate' => 'setAppCommodityPageViewRate',
         'webCommodityPageViewRate' => 'setWebCommodityPageViewRate',
         'appCommodityPageViewCost' => 'setAppCommodityPageViewCost',
         'appRegisterCount' => 'setAppRegisterCount',
         'registerByDisplayCount' => 'setRegisterByDisplayCount',
+        'registerByClickCount' => 'setRegisterByClickCount',
         'appRegisterCost' => 'setAppRegisterCost',
         'webRegisterCost' => 'setWebRegisterCost',
         'appApplicationCount' => 'setAppApplicationCount',
@@ -1941,6 +2070,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'appOrderCost' => 'setAppOrderCost',
         'appCheckoutCount' => 'setAppCheckoutCount',
         'appCheckoutByDisplayCount' => 'setAppCheckoutByDisplayCount',
+        'appCheckoutByClickCount' => 'setAppCheckoutByClickCount',
         'appCheckoutAmount' => 'setAppCheckoutAmount',
         'appCheckoutCost' => 'setAppCheckoutCost',
         'platformCouponClickCount' => 'setPlatformCouponClickCount',
@@ -1967,12 +2097,15 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'adPurValApp' => 'setAdPurValApp',
         'order24hCount' => 'setOrder24hCount',
         'order24hByDisplayCount' => 'setOrder24hByDisplayCount',
+        'order24hByClickCount' => 'setOrder24hByClickCount',
         'order24hRate' => 'setOrder24hRate',
         'order24hCost' => 'setOrder24hCost',
         'order24hAmount' => 'setOrder24hAmount',
         'order24hByDisplayAmount' => 'setOrder24hByDisplayAmount',
+        'order24hByClickAmount' => 'setOrder24hByClickAmount',
         'order24hRoi' => 'setOrder24hRoi',
         'order24hByDisplayRoi' => 'setOrder24hByDisplayRoi',
+        'order24hByClickRoi' => 'setOrder24hByClickRoi',
         'gameCreateRoleCount' => 'setGameCreateRoleCount',
         'gameAuthorizeCount' => 'setGameAuthorizeCount',
         'gameTutorialFinishCount' => 'setGameTutorialFinishCount',
@@ -2015,8 +2148,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'cheoutTotalReward' => 'setCheoutTotalReward',
         'fromFollowUv' => 'setFromFollowUv',
         'fromFollowByDisplayUv' => 'setFromFollowByDisplayUv',
+        'fromFollowByClickUv' => 'setFromFollowByClickUv',
         'fromFollowCost' => 'setFromFollowCost',
         'fromFollowByDisplayCost' => 'setFromFollowByDisplayCost',
+        'fromFollowByClickCost' => 'setFromFollowByClickCost',
         'addDesktopPv' => 'setAddDesktopPv',
         'addDesktopCost' => 'setAddDesktopCost',
         'firstPayCount' => 'setFirstPayCount',
@@ -2051,11 +2186,14 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'lotteryLeadsCount' => 'setLotteryLeadsCount',
         'lotteryLeadsCost' => 'setLotteryLeadsCost',
         'conversionsCount' => 'setConversionsCount',
+        'conversionsByClickCount' => 'setConversionsByClickCount',
         'conversionsByDisplayCount' => 'setConversionsByDisplayCount',
         'conversionsRate' => 'setConversionsRate',
         'conversionsByDisplayRate' => 'setConversionsByDisplayRate',
+        'conversionsByClickRate' => 'setConversionsByClickRate',
         'conversionsCost' => 'setConversionsCost',
         'conversionsByDisplayCost' => 'setConversionsByDisplayCost',
+        'conversionsByClickCost' => 'setConversionsByClickCost',
         'deepConversionsCount' => 'setDeepConversionsCount',
         'deepConversionsRate' => 'setDeepConversionsRate',
         'deepConversionsCost' => 'setDeepConversionsCost',
@@ -2110,8 +2248,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'noInterestCount' => 'setNoInterestCount',
         'firstDayOrderCount' => 'setFirstDayOrderCount',
         'firstDayOrderByDisplayCount' => 'setFirstDayOrderByDisplayCount',
+        'firstDayOrderByClickCount' => 'setFirstDayOrderByClickCount',
         'firstDayOrderAmount' => 'setFirstDayOrderAmount',
         'firstDayOrderByDisplayAmount' => 'setFirstDayOrderByDisplayAmount',
+        'firstDayOrderByClickAmount' => 'setFirstDayOrderByClickAmount',
         'addWishlistCount' => 'setAddWishlistCount',
         'videoOuterPlay10Count' => 'setVideoOuterPlay10Count',
         'videoOuterPlay25Count' => 'setVideoOuterPlay25Count',
@@ -2156,6 +2296,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameCreateRoleUsers' => 'setMiniGameCreateRoleUsers',
         'miniGameCreateRoleCost' => 'setMiniGameCreateRoleCost',
         'miniGameRetentionD1' => 'setMiniGameRetentionD1',
+        'appRetentionD3Uv' => 'setAppRetentionD3Uv',
+        'appRetentionD5Uv' => 'setAppRetentionD5Uv',
+        'appRetentionD7Uv' => 'setAppRetentionD7Uv',
         'miniGameKeyPageViewers' => 'setMiniGameKeyPageViewers',
         'miniGameKeyPageViewCost' => 'setMiniGameKeyPageViewCost',
         'miniGameAdMonetizationAmount' => 'setMiniGameAdMonetizationAmount',
@@ -2167,6 +2310,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayingAmountClickD1ByUpload' => 'setMiniGamePayingAmountClickD1ByUpload',
         'miniGameRetentionD1Rate' => 'setMiniGameRetentionD1Rate',
         'miniGameRetentionD1Cost' => 'setMiniGameRetentionD1Cost',
+        'appRetentionD3Cost' => 'setAppRetentionD3Cost',
+        'appRetentionD5Cost' => 'setAppRetentionD5Cost',
+        'appRetentionD7Cost' => 'setAppRetentionD7Cost',
         'keyPageViewRate' => 'setKeyPageViewRate',
         'wechatCostStage1' => 'setWechatCostStage1',
         'wechatCostStage2' => 'setWechatCostStage2',
@@ -2233,6 +2379,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'incomeRoi3' => 'setIncomeRoi3',
         'incomeRoi7' => 'setIncomeRoi7',
         'incomeRoi14' => 'setIncomeRoi14',
+        'activeD5FirstPayUv' => 'setActiveD5FirstPayUv',
         'activatedTotalPaymentCost' => 'setActivatedTotalPaymentCost',
         'paymentAmountActivatedD3' => 'setPaymentAmountActivatedD3',
         'paymentAmountActivatedD7' => 'setPaymentAmountActivatedD7',
@@ -2273,6 +2420,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameD30PayPlaCount' => 'setMiniGameD30PayPlaCount',
         'roiActivatedD30' => 'setRoiActivatedD30',
         'firstDayFirstPayRate' => 'setFirstDayFirstPayRate',
+        'activeD5FirstPayCost' => 'setActiveD5FirstPayCost',
         'miniGameFirstDayAdMonetizationUsers' => 'setMiniGameFirstDayAdMonetizationUsers',
         'miniGameFirstDayAdMonetizationAmount' => 'setMiniGameFirstDayAdMonetizationAmount',
         'miniGameFirstDayAdPayingCost' => 'setMiniGameFirstDayAdPayingCost',
@@ -2311,6 +2459,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationAmountD14' => 'setMiniGameAdMonetizationAmountD14',
         'miniGamePayingArpuD1' => 'setMiniGamePayingArpuD1',
         'miniGamePayD1PlaRate' => 'setMiniGamePayD1PlaRate',
+        'activeD5ClickFirstPayRate' => 'setActiveD5ClickFirstPayRate',
         'activeD3PayCount' => 'setActiveD3PayCount',
         'activeD7PayCount' => 'setActiveD7PayCount',
         'activeD14PayCount' => 'setActiveD14PayCount',
@@ -2426,7 +2575,14 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'couponUseCount' => 'setCouponUseCount',
         'forwardUserCount' => 'setForwardUserCount',
         'videoOuterPlayUserCount' => 'setVideoOuterPlayUserCount',
-        'videoInnerPlayUserCount' => 'setVideoInnerPlayUserCount'
+        'videoInnerPlayUserCount' => 'setVideoInnerPlayUserCount',
+        'channelsHalfScreenCardExpPv' => 'setChannelsHalfScreenCardExpPv',
+        'channelsHalfScreenButtonClkPv' => 'setChannelsHalfScreenButtonClkPv',
+        'channelsMatchReadPv' => 'setChannelsMatchReadPv',
+        'channelsMatchHeartPv' => 'setChannelsMatchHeartPv',
+        'channelsMatchCommentPv' => 'setChannelsMatchCommentPv',
+        'channelsMatchSharePv' => 'setChannelsMatchSharePv',
+        'exportId' => 'setExportId'
     ];
 
     /**
@@ -2471,6 +2627,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'webApplicationCost' => 'getWebApplicationCost',
         'pageReservationCount' => 'getPageReservationCount',
         'pageReservationByDisplayCount' => 'getPageReservationByDisplayCount',
+        'pageReservationByClickCount' => 'getPageReservationByClickCount',
         'pageReservationRate' => 'getPageReservationRate',
         'pageReservationCost' => 'getPageReservationCost',
         'pageReservationCostWithPeople' => 'getPageReservationCostWithPeople',
@@ -2483,19 +2640,24 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'platformCouponGetCost' => 'getPlatformCouponGetCost',
         'webOrderCount' => 'getWebOrderCount',
         'orderByDisplayCount' => 'getOrderByDisplayCount',
+        'orderByClickCount' => 'getOrderByClickCount',
         'webOrderRate' => 'getWebOrderRate',
         'orderByDisplayRate' => 'getOrderByDisplayRate',
+        'orderByClickRate' => 'getOrderByClickRate',
         'appOrderRate' => 'getAppOrderRate',
         'webOrderCost' => 'getWebOrderCost',
         'orderByDisplayCost' => 'getOrderByDisplayCost',
+        'orderByClickCost' => 'getOrderByClickCost',
         'webCheckoutAmount' => 'getWebCheckoutAmount',
         'webCheckoutCount' => 'getWebCheckoutCount',
         'webCheckoutCost' => 'getWebCheckoutCost',
         'orderAmount' => 'getOrderAmount',
         'orderByDisplayAmount' => 'getOrderByDisplayAmount',
+        'orderByClickAmount' => 'getOrderByClickAmount',
         'orderUnitPrice' => 'getOrderUnitPrice',
         'orderRoi' => 'getOrderRoi',
         'orderByDisplayRoi' => 'getOrderByDisplayRoi',
+        'orderByClickRoi' => 'getOrderByClickRoi',
         'deliverCount' => 'getDeliverCount',
         'deliverCost' => 'getDeliverCost',
         'signInCount' => 'getSignInCount',
@@ -2508,17 +2670,23 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activatedCost' => 'getActivatedCost',
         'retentionCount' => 'getRetentionCount',
         'retentionRate' => 'getRetentionRate',
+        'appRetentionD3Rate' => 'getAppRetentionD3Rate',
+        'appRetentionD5Rate' => 'getAppRetentionD5Rate',
+        'appRetentionD7Rate' => 'getAppRetentionD7Rate',
         'appKeyPageRetentionRate' => 'getAppKeyPageRetentionRate',
         'retentionCost' => 'getRetentionCost',
         'keyPageViewCount' => 'getKeyPageViewCount',
         'keyPageViewByDisplayCount' => 'getKeyPageViewByDisplayCount',
+        'keyPageViewByClickCount' => 'getKeyPageViewByClickCount',
         'appCommodityPageViewCount' => 'getAppCommodityPageViewCount',
         'appCommodityPageViewByDisplayCount' => 'getAppCommodityPageViewByDisplayCount',
+        'appCommodityPageViewByClickCount' => 'getAppCommodityPageViewByClickCount',
         'appCommodityPageViewRate' => 'getAppCommodityPageViewRate',
         'webCommodityPageViewRate' => 'getWebCommodityPageViewRate',
         'appCommodityPageViewCost' => 'getAppCommodityPageViewCost',
         'appRegisterCount' => 'getAppRegisterCount',
         'registerByDisplayCount' => 'getRegisterByDisplayCount',
+        'registerByClickCount' => 'getRegisterByClickCount',
         'appRegisterCost' => 'getAppRegisterCost',
         'webRegisterCost' => 'getWebRegisterCost',
         'appApplicationCount' => 'getAppApplicationCount',
@@ -2530,6 +2698,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'appOrderCost' => 'getAppOrderCost',
         'appCheckoutCount' => 'getAppCheckoutCount',
         'appCheckoutByDisplayCount' => 'getAppCheckoutByDisplayCount',
+        'appCheckoutByClickCount' => 'getAppCheckoutByClickCount',
         'appCheckoutAmount' => 'getAppCheckoutAmount',
         'appCheckoutCost' => 'getAppCheckoutCost',
         'platformCouponClickCount' => 'getPlatformCouponClickCount',
@@ -2556,12 +2725,15 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'adPurValApp' => 'getAdPurValApp',
         'order24hCount' => 'getOrder24hCount',
         'order24hByDisplayCount' => 'getOrder24hByDisplayCount',
+        'order24hByClickCount' => 'getOrder24hByClickCount',
         'order24hRate' => 'getOrder24hRate',
         'order24hCost' => 'getOrder24hCost',
         'order24hAmount' => 'getOrder24hAmount',
         'order24hByDisplayAmount' => 'getOrder24hByDisplayAmount',
+        'order24hByClickAmount' => 'getOrder24hByClickAmount',
         'order24hRoi' => 'getOrder24hRoi',
         'order24hByDisplayRoi' => 'getOrder24hByDisplayRoi',
+        'order24hByClickRoi' => 'getOrder24hByClickRoi',
         'gameCreateRoleCount' => 'getGameCreateRoleCount',
         'gameAuthorizeCount' => 'getGameAuthorizeCount',
         'gameTutorialFinishCount' => 'getGameTutorialFinishCount',
@@ -2604,8 +2776,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'cheoutTotalReward' => 'getCheoutTotalReward',
         'fromFollowUv' => 'getFromFollowUv',
         'fromFollowByDisplayUv' => 'getFromFollowByDisplayUv',
+        'fromFollowByClickUv' => 'getFromFollowByClickUv',
         'fromFollowCost' => 'getFromFollowCost',
         'fromFollowByDisplayCost' => 'getFromFollowByDisplayCost',
+        'fromFollowByClickCost' => 'getFromFollowByClickCost',
         'addDesktopPv' => 'getAddDesktopPv',
         'addDesktopCost' => 'getAddDesktopCost',
         'firstPayCount' => 'getFirstPayCount',
@@ -2640,11 +2814,14 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'lotteryLeadsCount' => 'getLotteryLeadsCount',
         'lotteryLeadsCost' => 'getLotteryLeadsCost',
         'conversionsCount' => 'getConversionsCount',
+        'conversionsByClickCount' => 'getConversionsByClickCount',
         'conversionsByDisplayCount' => 'getConversionsByDisplayCount',
         'conversionsRate' => 'getConversionsRate',
         'conversionsByDisplayRate' => 'getConversionsByDisplayRate',
+        'conversionsByClickRate' => 'getConversionsByClickRate',
         'conversionsCost' => 'getConversionsCost',
         'conversionsByDisplayCost' => 'getConversionsByDisplayCost',
+        'conversionsByClickCost' => 'getConversionsByClickCost',
         'deepConversionsCount' => 'getDeepConversionsCount',
         'deepConversionsRate' => 'getDeepConversionsRate',
         'deepConversionsCost' => 'getDeepConversionsCost',
@@ -2699,8 +2876,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'noInterestCount' => 'getNoInterestCount',
         'firstDayOrderCount' => 'getFirstDayOrderCount',
         'firstDayOrderByDisplayCount' => 'getFirstDayOrderByDisplayCount',
+        'firstDayOrderByClickCount' => 'getFirstDayOrderByClickCount',
         'firstDayOrderAmount' => 'getFirstDayOrderAmount',
         'firstDayOrderByDisplayAmount' => 'getFirstDayOrderByDisplayAmount',
+        'firstDayOrderByClickAmount' => 'getFirstDayOrderByClickAmount',
         'addWishlistCount' => 'getAddWishlistCount',
         'videoOuterPlay10Count' => 'getVideoOuterPlay10Count',
         'videoOuterPlay25Count' => 'getVideoOuterPlay25Count',
@@ -2745,6 +2924,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameCreateRoleUsers' => 'getMiniGameCreateRoleUsers',
         'miniGameCreateRoleCost' => 'getMiniGameCreateRoleCost',
         'miniGameRetentionD1' => 'getMiniGameRetentionD1',
+        'appRetentionD3Uv' => 'getAppRetentionD3Uv',
+        'appRetentionD5Uv' => 'getAppRetentionD5Uv',
+        'appRetentionD7Uv' => 'getAppRetentionD7Uv',
         'miniGameKeyPageViewers' => 'getMiniGameKeyPageViewers',
         'miniGameKeyPageViewCost' => 'getMiniGameKeyPageViewCost',
         'miniGameAdMonetizationAmount' => 'getMiniGameAdMonetizationAmount',
@@ -2756,6 +2938,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayingAmountClickD1ByUpload' => 'getMiniGamePayingAmountClickD1ByUpload',
         'miniGameRetentionD1Rate' => 'getMiniGameRetentionD1Rate',
         'miniGameRetentionD1Cost' => 'getMiniGameRetentionD1Cost',
+        'appRetentionD3Cost' => 'getAppRetentionD3Cost',
+        'appRetentionD5Cost' => 'getAppRetentionD5Cost',
+        'appRetentionD7Cost' => 'getAppRetentionD7Cost',
         'keyPageViewRate' => 'getKeyPageViewRate',
         'wechatCostStage1' => 'getWechatCostStage1',
         'wechatCostStage2' => 'getWechatCostStage2',
@@ -2822,6 +3007,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'incomeRoi3' => 'getIncomeRoi3',
         'incomeRoi7' => 'getIncomeRoi7',
         'incomeRoi14' => 'getIncomeRoi14',
+        'activeD5FirstPayUv' => 'getActiveD5FirstPayUv',
         'activatedTotalPaymentCost' => 'getActivatedTotalPaymentCost',
         'paymentAmountActivatedD3' => 'getPaymentAmountActivatedD3',
         'paymentAmountActivatedD7' => 'getPaymentAmountActivatedD7',
@@ -2862,6 +3048,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameD30PayPlaCount' => 'getMiniGameD30PayPlaCount',
         'roiActivatedD30' => 'getRoiActivatedD30',
         'firstDayFirstPayRate' => 'getFirstDayFirstPayRate',
+        'activeD5FirstPayCost' => 'getActiveD5FirstPayCost',
         'miniGameFirstDayAdMonetizationUsers' => 'getMiniGameFirstDayAdMonetizationUsers',
         'miniGameFirstDayAdMonetizationAmount' => 'getMiniGameFirstDayAdMonetizationAmount',
         'miniGameFirstDayAdPayingCost' => 'getMiniGameFirstDayAdPayingCost',
@@ -2900,6 +3087,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationAmountD14' => 'getMiniGameAdMonetizationAmountD14',
         'miniGamePayingArpuD1' => 'getMiniGamePayingArpuD1',
         'miniGamePayD1PlaRate' => 'getMiniGamePayD1PlaRate',
+        'activeD5ClickFirstPayRate' => 'getActiveD5ClickFirstPayRate',
         'activeD3PayCount' => 'getActiveD3PayCount',
         'activeD7PayCount' => 'getActiveD7PayCount',
         'activeD14PayCount' => 'getActiveD14PayCount',
@@ -3015,7 +3203,14 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'couponUseCount' => 'getCouponUseCount',
         'forwardUserCount' => 'getForwardUserCount',
         'videoOuterPlayUserCount' => 'getVideoOuterPlayUserCount',
-        'videoInnerPlayUserCount' => 'getVideoInnerPlayUserCount'
+        'videoInnerPlayUserCount' => 'getVideoInnerPlayUserCount',
+        'channelsHalfScreenCardExpPv' => 'getChannelsHalfScreenCardExpPv',
+        'channelsHalfScreenButtonClkPv' => 'getChannelsHalfScreenButtonClkPv',
+        'channelsMatchReadPv' => 'getChannelsMatchReadPv',
+        'channelsMatchHeartPv' => 'getChannelsMatchHeartPv',
+        'channelsMatchCommentPv' => 'getChannelsMatchCommentPv',
+        'channelsMatchSharePv' => 'getChannelsMatchSharePv',
+        'exportId' => 'getExportId'
     ];
 
     /**
@@ -3114,6 +3309,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['webApplicationCost'] = isset($data['webApplicationCost']) ? $data['webApplicationCost'] : null;
         $this->container['pageReservationCount'] = isset($data['pageReservationCount']) ? $data['pageReservationCount'] : null;
         $this->container['pageReservationByDisplayCount'] = isset($data['pageReservationByDisplayCount']) ? $data['pageReservationByDisplayCount'] : null;
+        $this->container['pageReservationByClickCount'] = isset($data['pageReservationByClickCount']) ? $data['pageReservationByClickCount'] : null;
         $this->container['pageReservationRate'] = isset($data['pageReservationRate']) ? $data['pageReservationRate'] : null;
         $this->container['pageReservationCost'] = isset($data['pageReservationCost']) ? $data['pageReservationCost'] : null;
         $this->container['pageReservationCostWithPeople'] = isset($data['pageReservationCostWithPeople']) ? $data['pageReservationCostWithPeople'] : null;
@@ -3126,19 +3322,24 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['platformCouponGetCost'] = isset($data['platformCouponGetCost']) ? $data['platformCouponGetCost'] : null;
         $this->container['webOrderCount'] = isset($data['webOrderCount']) ? $data['webOrderCount'] : null;
         $this->container['orderByDisplayCount'] = isset($data['orderByDisplayCount']) ? $data['orderByDisplayCount'] : null;
+        $this->container['orderByClickCount'] = isset($data['orderByClickCount']) ? $data['orderByClickCount'] : null;
         $this->container['webOrderRate'] = isset($data['webOrderRate']) ? $data['webOrderRate'] : null;
         $this->container['orderByDisplayRate'] = isset($data['orderByDisplayRate']) ? $data['orderByDisplayRate'] : null;
+        $this->container['orderByClickRate'] = isset($data['orderByClickRate']) ? $data['orderByClickRate'] : null;
         $this->container['appOrderRate'] = isset($data['appOrderRate']) ? $data['appOrderRate'] : null;
         $this->container['webOrderCost'] = isset($data['webOrderCost']) ? $data['webOrderCost'] : null;
         $this->container['orderByDisplayCost'] = isset($data['orderByDisplayCost']) ? $data['orderByDisplayCost'] : null;
+        $this->container['orderByClickCost'] = isset($data['orderByClickCost']) ? $data['orderByClickCost'] : null;
         $this->container['webCheckoutAmount'] = isset($data['webCheckoutAmount']) ? $data['webCheckoutAmount'] : null;
         $this->container['webCheckoutCount'] = isset($data['webCheckoutCount']) ? $data['webCheckoutCount'] : null;
         $this->container['webCheckoutCost'] = isset($data['webCheckoutCost']) ? $data['webCheckoutCost'] : null;
         $this->container['orderAmount'] = isset($data['orderAmount']) ? $data['orderAmount'] : null;
         $this->container['orderByDisplayAmount'] = isset($data['orderByDisplayAmount']) ? $data['orderByDisplayAmount'] : null;
+        $this->container['orderByClickAmount'] = isset($data['orderByClickAmount']) ? $data['orderByClickAmount'] : null;
         $this->container['orderUnitPrice'] = isset($data['orderUnitPrice']) ? $data['orderUnitPrice'] : null;
         $this->container['orderRoi'] = isset($data['orderRoi']) ? $data['orderRoi'] : null;
         $this->container['orderByDisplayRoi'] = isset($data['orderByDisplayRoi']) ? $data['orderByDisplayRoi'] : null;
+        $this->container['orderByClickRoi'] = isset($data['orderByClickRoi']) ? $data['orderByClickRoi'] : null;
         $this->container['deliverCount'] = isset($data['deliverCount']) ? $data['deliverCount'] : null;
         $this->container['deliverCost'] = isset($data['deliverCost']) ? $data['deliverCost'] : null;
         $this->container['signInCount'] = isset($data['signInCount']) ? $data['signInCount'] : null;
@@ -3151,17 +3352,23 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['activatedCost'] = isset($data['activatedCost']) ? $data['activatedCost'] : null;
         $this->container['retentionCount'] = isset($data['retentionCount']) ? $data['retentionCount'] : null;
         $this->container['retentionRate'] = isset($data['retentionRate']) ? $data['retentionRate'] : null;
+        $this->container['appRetentionD3Rate'] = isset($data['appRetentionD3Rate']) ? $data['appRetentionD3Rate'] : null;
+        $this->container['appRetentionD5Rate'] = isset($data['appRetentionD5Rate']) ? $data['appRetentionD5Rate'] : null;
+        $this->container['appRetentionD7Rate'] = isset($data['appRetentionD7Rate']) ? $data['appRetentionD7Rate'] : null;
         $this->container['appKeyPageRetentionRate'] = isset($data['appKeyPageRetentionRate']) ? $data['appKeyPageRetentionRate'] : null;
         $this->container['retentionCost'] = isset($data['retentionCost']) ? $data['retentionCost'] : null;
         $this->container['keyPageViewCount'] = isset($data['keyPageViewCount']) ? $data['keyPageViewCount'] : null;
         $this->container['keyPageViewByDisplayCount'] = isset($data['keyPageViewByDisplayCount']) ? $data['keyPageViewByDisplayCount'] : null;
+        $this->container['keyPageViewByClickCount'] = isset($data['keyPageViewByClickCount']) ? $data['keyPageViewByClickCount'] : null;
         $this->container['appCommodityPageViewCount'] = isset($data['appCommodityPageViewCount']) ? $data['appCommodityPageViewCount'] : null;
         $this->container['appCommodityPageViewByDisplayCount'] = isset($data['appCommodityPageViewByDisplayCount']) ? $data['appCommodityPageViewByDisplayCount'] : null;
+        $this->container['appCommodityPageViewByClickCount'] = isset($data['appCommodityPageViewByClickCount']) ? $data['appCommodityPageViewByClickCount'] : null;
         $this->container['appCommodityPageViewRate'] = isset($data['appCommodityPageViewRate']) ? $data['appCommodityPageViewRate'] : null;
         $this->container['webCommodityPageViewRate'] = isset($data['webCommodityPageViewRate']) ? $data['webCommodityPageViewRate'] : null;
         $this->container['appCommodityPageViewCost'] = isset($data['appCommodityPageViewCost']) ? $data['appCommodityPageViewCost'] : null;
         $this->container['appRegisterCount'] = isset($data['appRegisterCount']) ? $data['appRegisterCount'] : null;
         $this->container['registerByDisplayCount'] = isset($data['registerByDisplayCount']) ? $data['registerByDisplayCount'] : null;
+        $this->container['registerByClickCount'] = isset($data['registerByClickCount']) ? $data['registerByClickCount'] : null;
         $this->container['appRegisterCost'] = isset($data['appRegisterCost']) ? $data['appRegisterCost'] : null;
         $this->container['webRegisterCost'] = isset($data['webRegisterCost']) ? $data['webRegisterCost'] : null;
         $this->container['appApplicationCount'] = isset($data['appApplicationCount']) ? $data['appApplicationCount'] : null;
@@ -3173,6 +3380,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['appOrderCost'] = isset($data['appOrderCost']) ? $data['appOrderCost'] : null;
         $this->container['appCheckoutCount'] = isset($data['appCheckoutCount']) ? $data['appCheckoutCount'] : null;
         $this->container['appCheckoutByDisplayCount'] = isset($data['appCheckoutByDisplayCount']) ? $data['appCheckoutByDisplayCount'] : null;
+        $this->container['appCheckoutByClickCount'] = isset($data['appCheckoutByClickCount']) ? $data['appCheckoutByClickCount'] : null;
         $this->container['appCheckoutAmount'] = isset($data['appCheckoutAmount']) ? $data['appCheckoutAmount'] : null;
         $this->container['appCheckoutCost'] = isset($data['appCheckoutCost']) ? $data['appCheckoutCost'] : null;
         $this->container['platformCouponClickCount'] = isset($data['platformCouponClickCount']) ? $data['platformCouponClickCount'] : null;
@@ -3199,12 +3407,15 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['adPurValApp'] = isset($data['adPurValApp']) ? $data['adPurValApp'] : null;
         $this->container['order24hCount'] = isset($data['order24hCount']) ? $data['order24hCount'] : null;
         $this->container['order24hByDisplayCount'] = isset($data['order24hByDisplayCount']) ? $data['order24hByDisplayCount'] : null;
+        $this->container['order24hByClickCount'] = isset($data['order24hByClickCount']) ? $data['order24hByClickCount'] : null;
         $this->container['order24hRate'] = isset($data['order24hRate']) ? $data['order24hRate'] : null;
         $this->container['order24hCost'] = isset($data['order24hCost']) ? $data['order24hCost'] : null;
         $this->container['order24hAmount'] = isset($data['order24hAmount']) ? $data['order24hAmount'] : null;
         $this->container['order24hByDisplayAmount'] = isset($data['order24hByDisplayAmount']) ? $data['order24hByDisplayAmount'] : null;
+        $this->container['order24hByClickAmount'] = isset($data['order24hByClickAmount']) ? $data['order24hByClickAmount'] : null;
         $this->container['order24hRoi'] = isset($data['order24hRoi']) ? $data['order24hRoi'] : null;
         $this->container['order24hByDisplayRoi'] = isset($data['order24hByDisplayRoi']) ? $data['order24hByDisplayRoi'] : null;
+        $this->container['order24hByClickRoi'] = isset($data['order24hByClickRoi']) ? $data['order24hByClickRoi'] : null;
         $this->container['gameCreateRoleCount'] = isset($data['gameCreateRoleCount']) ? $data['gameCreateRoleCount'] : null;
         $this->container['gameAuthorizeCount'] = isset($data['gameAuthorizeCount']) ? $data['gameAuthorizeCount'] : null;
         $this->container['gameTutorialFinishCount'] = isset($data['gameTutorialFinishCount']) ? $data['gameTutorialFinishCount'] : null;
@@ -3247,8 +3458,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['cheoutTotalReward'] = isset($data['cheoutTotalReward']) ? $data['cheoutTotalReward'] : null;
         $this->container['fromFollowUv'] = isset($data['fromFollowUv']) ? $data['fromFollowUv'] : null;
         $this->container['fromFollowByDisplayUv'] = isset($data['fromFollowByDisplayUv']) ? $data['fromFollowByDisplayUv'] : null;
+        $this->container['fromFollowByClickUv'] = isset($data['fromFollowByClickUv']) ? $data['fromFollowByClickUv'] : null;
         $this->container['fromFollowCost'] = isset($data['fromFollowCost']) ? $data['fromFollowCost'] : null;
         $this->container['fromFollowByDisplayCost'] = isset($data['fromFollowByDisplayCost']) ? $data['fromFollowByDisplayCost'] : null;
+        $this->container['fromFollowByClickCost'] = isset($data['fromFollowByClickCost']) ? $data['fromFollowByClickCost'] : null;
         $this->container['addDesktopPv'] = isset($data['addDesktopPv']) ? $data['addDesktopPv'] : null;
         $this->container['addDesktopCost'] = isset($data['addDesktopCost']) ? $data['addDesktopCost'] : null;
         $this->container['firstPayCount'] = isset($data['firstPayCount']) ? $data['firstPayCount'] : null;
@@ -3283,11 +3496,14 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['lotteryLeadsCount'] = isset($data['lotteryLeadsCount']) ? $data['lotteryLeadsCount'] : null;
         $this->container['lotteryLeadsCost'] = isset($data['lotteryLeadsCost']) ? $data['lotteryLeadsCost'] : null;
         $this->container['conversionsCount'] = isset($data['conversionsCount']) ? $data['conversionsCount'] : null;
+        $this->container['conversionsByClickCount'] = isset($data['conversionsByClickCount']) ? $data['conversionsByClickCount'] : null;
         $this->container['conversionsByDisplayCount'] = isset($data['conversionsByDisplayCount']) ? $data['conversionsByDisplayCount'] : null;
         $this->container['conversionsRate'] = isset($data['conversionsRate']) ? $data['conversionsRate'] : null;
         $this->container['conversionsByDisplayRate'] = isset($data['conversionsByDisplayRate']) ? $data['conversionsByDisplayRate'] : null;
+        $this->container['conversionsByClickRate'] = isset($data['conversionsByClickRate']) ? $data['conversionsByClickRate'] : null;
         $this->container['conversionsCost'] = isset($data['conversionsCost']) ? $data['conversionsCost'] : null;
         $this->container['conversionsByDisplayCost'] = isset($data['conversionsByDisplayCost']) ? $data['conversionsByDisplayCost'] : null;
+        $this->container['conversionsByClickCost'] = isset($data['conversionsByClickCost']) ? $data['conversionsByClickCost'] : null;
         $this->container['deepConversionsCount'] = isset($data['deepConversionsCount']) ? $data['deepConversionsCount'] : null;
         $this->container['deepConversionsRate'] = isset($data['deepConversionsRate']) ? $data['deepConversionsRate'] : null;
         $this->container['deepConversionsCost'] = isset($data['deepConversionsCost']) ? $data['deepConversionsCost'] : null;
@@ -3342,8 +3558,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['noInterestCount'] = isset($data['noInterestCount']) ? $data['noInterestCount'] : null;
         $this->container['firstDayOrderCount'] = isset($data['firstDayOrderCount']) ? $data['firstDayOrderCount'] : null;
         $this->container['firstDayOrderByDisplayCount'] = isset($data['firstDayOrderByDisplayCount']) ? $data['firstDayOrderByDisplayCount'] : null;
+        $this->container['firstDayOrderByClickCount'] = isset($data['firstDayOrderByClickCount']) ? $data['firstDayOrderByClickCount'] : null;
         $this->container['firstDayOrderAmount'] = isset($data['firstDayOrderAmount']) ? $data['firstDayOrderAmount'] : null;
         $this->container['firstDayOrderByDisplayAmount'] = isset($data['firstDayOrderByDisplayAmount']) ? $data['firstDayOrderByDisplayAmount'] : null;
+        $this->container['firstDayOrderByClickAmount'] = isset($data['firstDayOrderByClickAmount']) ? $data['firstDayOrderByClickAmount'] : null;
         $this->container['addWishlistCount'] = isset($data['addWishlistCount']) ? $data['addWishlistCount'] : null;
         $this->container['videoOuterPlay10Count'] = isset($data['videoOuterPlay10Count']) ? $data['videoOuterPlay10Count'] : null;
         $this->container['videoOuterPlay25Count'] = isset($data['videoOuterPlay25Count']) ? $data['videoOuterPlay25Count'] : null;
@@ -3388,6 +3606,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGameCreateRoleUsers'] = isset($data['miniGameCreateRoleUsers']) ? $data['miniGameCreateRoleUsers'] : null;
         $this->container['miniGameCreateRoleCost'] = isset($data['miniGameCreateRoleCost']) ? $data['miniGameCreateRoleCost'] : null;
         $this->container['miniGameRetentionD1'] = isset($data['miniGameRetentionD1']) ? $data['miniGameRetentionD1'] : null;
+        $this->container['appRetentionD3Uv'] = isset($data['appRetentionD3Uv']) ? $data['appRetentionD3Uv'] : null;
+        $this->container['appRetentionD5Uv'] = isset($data['appRetentionD5Uv']) ? $data['appRetentionD5Uv'] : null;
+        $this->container['appRetentionD7Uv'] = isset($data['appRetentionD7Uv']) ? $data['appRetentionD7Uv'] : null;
         $this->container['miniGameKeyPageViewers'] = isset($data['miniGameKeyPageViewers']) ? $data['miniGameKeyPageViewers'] : null;
         $this->container['miniGameKeyPageViewCost'] = isset($data['miniGameKeyPageViewCost']) ? $data['miniGameKeyPageViewCost'] : null;
         $this->container['miniGameAdMonetizationAmount'] = isset($data['miniGameAdMonetizationAmount']) ? $data['miniGameAdMonetizationAmount'] : null;
@@ -3399,6 +3620,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGamePayingAmountClickD1ByUpload'] = isset($data['miniGamePayingAmountClickD1ByUpload']) ? $data['miniGamePayingAmountClickD1ByUpload'] : null;
         $this->container['miniGameRetentionD1Rate'] = isset($data['miniGameRetentionD1Rate']) ? $data['miniGameRetentionD1Rate'] : null;
         $this->container['miniGameRetentionD1Cost'] = isset($data['miniGameRetentionD1Cost']) ? $data['miniGameRetentionD1Cost'] : null;
+        $this->container['appRetentionD3Cost'] = isset($data['appRetentionD3Cost']) ? $data['appRetentionD3Cost'] : null;
+        $this->container['appRetentionD5Cost'] = isset($data['appRetentionD5Cost']) ? $data['appRetentionD5Cost'] : null;
+        $this->container['appRetentionD7Cost'] = isset($data['appRetentionD7Cost']) ? $data['appRetentionD7Cost'] : null;
         $this->container['keyPageViewRate'] = isset($data['keyPageViewRate']) ? $data['keyPageViewRate'] : null;
         $this->container['wechatCostStage1'] = isset($data['wechatCostStage1']) ? $data['wechatCostStage1'] : null;
         $this->container['wechatCostStage2'] = isset($data['wechatCostStage2']) ? $data['wechatCostStage2'] : null;
@@ -3465,6 +3689,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['incomeRoi3'] = isset($data['incomeRoi3']) ? $data['incomeRoi3'] : null;
         $this->container['incomeRoi7'] = isset($data['incomeRoi7']) ? $data['incomeRoi7'] : null;
         $this->container['incomeRoi14'] = isset($data['incomeRoi14']) ? $data['incomeRoi14'] : null;
+        $this->container['activeD5FirstPayUv'] = isset($data['activeD5FirstPayUv']) ? $data['activeD5FirstPayUv'] : null;
         $this->container['activatedTotalPaymentCost'] = isset($data['activatedTotalPaymentCost']) ? $data['activatedTotalPaymentCost'] : null;
         $this->container['paymentAmountActivatedD3'] = isset($data['paymentAmountActivatedD3']) ? $data['paymentAmountActivatedD3'] : null;
         $this->container['paymentAmountActivatedD7'] = isset($data['paymentAmountActivatedD7']) ? $data['paymentAmountActivatedD7'] : null;
@@ -3505,6 +3730,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGameD30PayPlaCount'] = isset($data['miniGameD30PayPlaCount']) ? $data['miniGameD30PayPlaCount'] : null;
         $this->container['roiActivatedD30'] = isset($data['roiActivatedD30']) ? $data['roiActivatedD30'] : null;
         $this->container['firstDayFirstPayRate'] = isset($data['firstDayFirstPayRate']) ? $data['firstDayFirstPayRate'] : null;
+        $this->container['activeD5FirstPayCost'] = isset($data['activeD5FirstPayCost']) ? $data['activeD5FirstPayCost'] : null;
         $this->container['miniGameFirstDayAdMonetizationUsers'] = isset($data['miniGameFirstDayAdMonetizationUsers']) ? $data['miniGameFirstDayAdMonetizationUsers'] : null;
         $this->container['miniGameFirstDayAdMonetizationAmount'] = isset($data['miniGameFirstDayAdMonetizationAmount']) ? $data['miniGameFirstDayAdMonetizationAmount'] : null;
         $this->container['miniGameFirstDayAdPayingCost'] = isset($data['miniGameFirstDayAdPayingCost']) ? $data['miniGameFirstDayAdPayingCost'] : null;
@@ -3543,6 +3769,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGameAdMonetizationAmountD14'] = isset($data['miniGameAdMonetizationAmountD14']) ? $data['miniGameAdMonetizationAmountD14'] : null;
         $this->container['miniGamePayingArpuD1'] = isset($data['miniGamePayingArpuD1']) ? $data['miniGamePayingArpuD1'] : null;
         $this->container['miniGamePayD1PlaRate'] = isset($data['miniGamePayD1PlaRate']) ? $data['miniGamePayD1PlaRate'] : null;
+        $this->container['activeD5ClickFirstPayRate'] = isset($data['activeD5ClickFirstPayRate']) ? $data['activeD5ClickFirstPayRate'] : null;
         $this->container['activeD3PayCount'] = isset($data['activeD3PayCount']) ? $data['activeD3PayCount'] : null;
         $this->container['activeD7PayCount'] = isset($data['activeD7PayCount']) ? $data['activeD7PayCount'] : null;
         $this->container['activeD14PayCount'] = isset($data['activeD14PayCount']) ? $data['activeD14PayCount'] : null;
@@ -3659,6 +3886,13 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['forwardUserCount'] = isset($data['forwardUserCount']) ? $data['forwardUserCount'] : null;
         $this->container['videoOuterPlayUserCount'] = isset($data['videoOuterPlayUserCount']) ? $data['videoOuterPlayUserCount'] : null;
         $this->container['videoInnerPlayUserCount'] = isset($data['videoInnerPlayUserCount']) ? $data['videoInnerPlayUserCount'] : null;
+        $this->container['channelsHalfScreenCardExpPv'] = isset($data['channelsHalfScreenCardExpPv']) ? $data['channelsHalfScreenCardExpPv'] : null;
+        $this->container['channelsHalfScreenButtonClkPv'] = isset($data['channelsHalfScreenButtonClkPv']) ? $data['channelsHalfScreenButtonClkPv'] : null;
+        $this->container['channelsMatchReadPv'] = isset($data['channelsMatchReadPv']) ? $data['channelsMatchReadPv'] : null;
+        $this->container['channelsMatchHeartPv'] = isset($data['channelsMatchHeartPv']) ? $data['channelsMatchHeartPv'] : null;
+        $this->container['channelsMatchCommentPv'] = isset($data['channelsMatchCommentPv']) ? $data['channelsMatchCommentPv'] : null;
+        $this->container['channelsMatchSharePv'] = isset($data['channelsMatchSharePv']) ? $data['channelsMatchSharePv'] : null;
+        $this->container['exportId'] = isset($data['exportId']) ? $data['exportId'] : null;
     }
 
     /**
@@ -4550,6 +4784,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets pageReservationByClickCount
+     *
+     * @return int|mixed
+     */
+    public function getPageReservationByClickCount()
+    {
+        return $this->container['pageReservationByClickCount'];
+    }
+
+    /**
+     * Sets pageReservationByClickCount
+     *
+     * @param int|mixed $pageReservationByClickCount pageReservationByClickCount
+     *
+     * @return $this
+     */
+    public function setPageReservationByClickCount($pageReservationByClickCount)
+    {
+        $this->container['pageReservationByClickCount'] = $pageReservationByClickCount;
+
+        return $this;
+    }
+
+    /**
      * Gets pageReservationRate
      *
      * @return double|mixed
@@ -4838,6 +5096,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets orderByClickCount
+     *
+     * @return int|mixed
+     */
+    public function getOrderByClickCount()
+    {
+        return $this->container['orderByClickCount'];
+    }
+
+    /**
+     * Sets orderByClickCount
+     *
+     * @param int|mixed $orderByClickCount orderByClickCount
+     *
+     * @return $this
+     */
+    public function setOrderByClickCount($orderByClickCount)
+    {
+        $this->container['orderByClickCount'] = $orderByClickCount;
+
+        return $this;
+    }
+
+    /**
      * Gets webOrderRate
      *
      * @return double|mixed
@@ -4881,6 +5163,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setOrderByDisplayRate($orderByDisplayRate)
     {
         $this->container['orderByDisplayRate'] = $orderByDisplayRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderByClickRate
+     *
+     * @return double|mixed
+     */
+    public function getOrderByClickRate()
+    {
+        return $this->container['orderByClickRate'];
+    }
+
+    /**
+     * Sets orderByClickRate
+     *
+     * @param double|mixed $orderByClickRate orderByClickRate
+     *
+     * @return $this
+     */
+    public function setOrderByClickRate($orderByClickRate)
+    {
+        $this->container['orderByClickRate'] = $orderByClickRate;
 
         return $this;
     }
@@ -4953,6 +5259,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setOrderByDisplayCost($orderByDisplayCost)
     {
         $this->container['orderByDisplayCost'] = $orderByDisplayCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderByClickCost
+     *
+     * @return int|mixed
+     */
+    public function getOrderByClickCost()
+    {
+        return $this->container['orderByClickCost'];
+    }
+
+    /**
+     * Sets orderByClickCost
+     *
+     * @param int|mixed $orderByClickCost orderByClickCost
+     *
+     * @return $this
+     */
+    public function setOrderByClickCost($orderByClickCost)
+    {
+        $this->container['orderByClickCost'] = $orderByClickCost;
 
         return $this;
     }
@@ -5078,6 +5408,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets orderByClickAmount
+     *
+     * @return int|mixed
+     */
+    public function getOrderByClickAmount()
+    {
+        return $this->container['orderByClickAmount'];
+    }
+
+    /**
+     * Sets orderByClickAmount
+     *
+     * @param int|mixed $orderByClickAmount orderByClickAmount
+     *
+     * @return $this
+     */
+    public function setOrderByClickAmount($orderByClickAmount)
+    {
+        $this->container['orderByClickAmount'] = $orderByClickAmount;
+
+        return $this;
+    }
+
+    /**
      * Gets orderUnitPrice
      *
      * @return int|mixed
@@ -5145,6 +5499,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setOrderByDisplayRoi($orderByDisplayRoi)
     {
         $this->container['orderByDisplayRoi'] = $orderByDisplayRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderByClickRoi
+     *
+     * @return double|mixed
+     */
+    public function getOrderByClickRoi()
+    {
+        return $this->container['orderByClickRoi'];
+    }
+
+    /**
+     * Sets orderByClickRoi
+     *
+     * @param double|mixed $orderByClickRoi orderByClickRoi
+     *
+     * @return $this
+     */
+    public function setOrderByClickRoi($orderByClickRoi)
+    {
+        $this->container['orderByClickRoi'] = $orderByClickRoi;
 
         return $this;
     }
@@ -5438,6 +5816,78 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets appRetentionD3Rate
+     *
+     * @return double|mixed
+     */
+    public function getAppRetentionD3Rate()
+    {
+        return $this->container['appRetentionD3Rate'];
+    }
+
+    /**
+     * Sets appRetentionD3Rate
+     *
+     * @param double|mixed $appRetentionD3Rate appRetentionD3Rate
+     *
+     * @return $this
+     */
+    public function setAppRetentionD3Rate($appRetentionD3Rate)
+    {
+        $this->container['appRetentionD3Rate'] = $appRetentionD3Rate;
+
+        return $this;
+    }
+
+    /**
+     * Gets appRetentionD5Rate
+     *
+     * @return double|mixed
+     */
+    public function getAppRetentionD5Rate()
+    {
+        return $this->container['appRetentionD5Rate'];
+    }
+
+    /**
+     * Sets appRetentionD5Rate
+     *
+     * @param double|mixed $appRetentionD5Rate appRetentionD5Rate
+     *
+     * @return $this
+     */
+    public function setAppRetentionD5Rate($appRetentionD5Rate)
+    {
+        $this->container['appRetentionD5Rate'] = $appRetentionD5Rate;
+
+        return $this;
+    }
+
+    /**
+     * Gets appRetentionD7Rate
+     *
+     * @return double|mixed
+     */
+    public function getAppRetentionD7Rate()
+    {
+        return $this->container['appRetentionD7Rate'];
+    }
+
+    /**
+     * Sets appRetentionD7Rate
+     *
+     * @param double|mixed $appRetentionD7Rate appRetentionD7Rate
+     *
+     * @return $this
+     */
+    public function setAppRetentionD7Rate($appRetentionD7Rate)
+    {
+        $this->container['appRetentionD7Rate'] = $appRetentionD7Rate;
+
+        return $this;
+    }
+
+    /**
      * Gets appKeyPageRetentionRate
      *
      * @return double|mixed
@@ -5534,6 +5984,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets keyPageViewByClickCount
+     *
+     * @return int|mixed
+     */
+    public function getKeyPageViewByClickCount()
+    {
+        return $this->container['keyPageViewByClickCount'];
+    }
+
+    /**
+     * Sets keyPageViewByClickCount
+     *
+     * @param int|mixed $keyPageViewByClickCount keyPageViewByClickCount
+     *
+     * @return $this
+     */
+    public function setKeyPageViewByClickCount($keyPageViewByClickCount)
+    {
+        $this->container['keyPageViewByClickCount'] = $keyPageViewByClickCount;
+
+        return $this;
+    }
+
+    /**
      * Gets appCommodityPageViewCount
      *
      * @return int|mixed
@@ -5577,6 +6051,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setAppCommodityPageViewByDisplayCount($appCommodityPageViewByDisplayCount)
     {
         $this->container['appCommodityPageViewByDisplayCount'] = $appCommodityPageViewByDisplayCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets appCommodityPageViewByClickCount
+     *
+     * @return int|mixed
+     */
+    public function getAppCommodityPageViewByClickCount()
+    {
+        return $this->container['appCommodityPageViewByClickCount'];
+    }
+
+    /**
+     * Sets appCommodityPageViewByClickCount
+     *
+     * @param int|mixed $appCommodityPageViewByClickCount appCommodityPageViewByClickCount
+     *
+     * @return $this
+     */
+    public function setAppCommodityPageViewByClickCount($appCommodityPageViewByClickCount)
+    {
+        $this->container['appCommodityPageViewByClickCount'] = $appCommodityPageViewByClickCount;
 
         return $this;
     }
@@ -5697,6 +6195,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setRegisterByDisplayCount($registerByDisplayCount)
     {
         $this->container['registerByDisplayCount'] = $registerByDisplayCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets registerByClickCount
+     *
+     * @return int|mixed
+     */
+    public function getRegisterByClickCount()
+    {
+        return $this->container['registerByClickCount'];
+    }
+
+    /**
+     * Sets registerByClickCount
+     *
+     * @param int|mixed $registerByClickCount registerByClickCount
+     *
+     * @return $this
+     */
+    public function setRegisterByClickCount($registerByClickCount)
+    {
+        $this->container['registerByClickCount'] = $registerByClickCount;
 
         return $this;
     }
@@ -5961,6 +6483,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setAppCheckoutByDisplayCount($appCheckoutByDisplayCount)
     {
         $this->container['appCheckoutByDisplayCount'] = $appCheckoutByDisplayCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets appCheckoutByClickCount
+     *
+     * @return int|mixed
+     */
+    public function getAppCheckoutByClickCount()
+    {
+        return $this->container['appCheckoutByClickCount'];
+    }
+
+    /**
+     * Sets appCheckoutByClickCount
+     *
+     * @param int|mixed $appCheckoutByClickCount appCheckoutByClickCount
+     *
+     * @return $this
+     */
+    public function setAppCheckoutByClickCount($appCheckoutByClickCount)
+    {
+        $this->container['appCheckoutByClickCount'] = $appCheckoutByClickCount;
 
         return $this;
     }
@@ -6590,6 +7136,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets order24hByClickCount
+     *
+     * @return int|mixed
+     */
+    public function getOrder24hByClickCount()
+    {
+        return $this->container['order24hByClickCount'];
+    }
+
+    /**
+     * Sets order24hByClickCount
+     *
+     * @param int|mixed $order24hByClickCount order24hByClickCount
+     *
+     * @return $this
+     */
+    public function setOrder24hByClickCount($order24hByClickCount)
+    {
+        $this->container['order24hByClickCount'] = $order24hByClickCount;
+
+        return $this;
+    }
+
+    /**
      * Gets order24hRate
      *
      * @return double|mixed
@@ -6686,6 +7256,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets order24hByClickAmount
+     *
+     * @return int|mixed
+     */
+    public function getOrder24hByClickAmount()
+    {
+        return $this->container['order24hByClickAmount'];
+    }
+
+    /**
+     * Sets order24hByClickAmount
+     *
+     * @param int|mixed $order24hByClickAmount order24hByClickAmount
+     *
+     * @return $this
+     */
+    public function setOrder24hByClickAmount($order24hByClickAmount)
+    {
+        $this->container['order24hByClickAmount'] = $order24hByClickAmount;
+
+        return $this;
+    }
+
+    /**
      * Gets order24hRoi
      *
      * @return double|mixed
@@ -6729,6 +7323,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setOrder24hByDisplayRoi($order24hByDisplayRoi)
     {
         $this->container['order24hByDisplayRoi'] = $order24hByDisplayRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets order24hByClickRoi
+     *
+     * @return double|mixed
+     */
+    public function getOrder24hByClickRoi()
+    {
+        return $this->container['order24hByClickRoi'];
+    }
+
+    /**
+     * Sets order24hByClickRoi
+     *
+     * @param double|mixed $order24hByClickRoi order24hByClickRoi
+     *
+     * @return $this
+     */
+    public function setOrder24hByClickRoi($order24hByClickRoi)
+    {
+        $this->container['order24hByClickRoi'] = $order24hByClickRoi;
 
         return $this;
     }
@@ -7742,6 +8360,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets fromFollowByClickUv
+     *
+     * @return int|mixed
+     */
+    public function getFromFollowByClickUv()
+    {
+        return $this->container['fromFollowByClickUv'];
+    }
+
+    /**
+     * Sets fromFollowByClickUv
+     *
+     * @param int|mixed $fromFollowByClickUv fromFollowByClickUv
+     *
+     * @return $this
+     */
+    public function setFromFollowByClickUv($fromFollowByClickUv)
+    {
+        $this->container['fromFollowByClickUv'] = $fromFollowByClickUv;
+
+        return $this;
+    }
+
+    /**
      * Gets fromFollowCost
      *
      * @return int|mixed
@@ -7785,6 +8427,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setFromFollowByDisplayCost($fromFollowByDisplayCost)
     {
         $this->container['fromFollowByDisplayCost'] = $fromFollowByDisplayCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets fromFollowByClickCost
+     *
+     * @return int|mixed
+     */
+    public function getFromFollowByClickCost()
+    {
+        return $this->container['fromFollowByClickCost'];
+    }
+
+    /**
+     * Sets fromFollowByClickCost
+     *
+     * @param int|mixed $fromFollowByClickCost fromFollowByClickCost
+     *
+     * @return $this
+     */
+    public function setFromFollowByClickCost($fromFollowByClickCost)
+    {
+        $this->container['fromFollowByClickCost'] = $fromFollowByClickCost;
 
         return $this;
     }
@@ -8606,6 +9272,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets conversionsByClickCount
+     *
+     * @return int|mixed
+     */
+    public function getConversionsByClickCount()
+    {
+        return $this->container['conversionsByClickCount'];
+    }
+
+    /**
+     * Sets conversionsByClickCount
+     *
+     * @param int|mixed $conversionsByClickCount conversionsByClickCount
+     *
+     * @return $this
+     */
+    public function setConversionsByClickCount($conversionsByClickCount)
+    {
+        $this->container['conversionsByClickCount'] = $conversionsByClickCount;
+
+        return $this;
+    }
+
+    /**
      * Gets conversionsByDisplayCount
      *
      * @return int|mixed
@@ -8678,6 +9368,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets conversionsByClickRate
+     *
+     * @return double|mixed
+     */
+    public function getConversionsByClickRate()
+    {
+        return $this->container['conversionsByClickRate'];
+    }
+
+    /**
+     * Sets conversionsByClickRate
+     *
+     * @param double|mixed $conversionsByClickRate conversionsByClickRate
+     *
+     * @return $this
+     */
+    public function setConversionsByClickRate($conversionsByClickRate)
+    {
+        $this->container['conversionsByClickRate'] = $conversionsByClickRate;
+
+        return $this;
+    }
+
+    /**
      * Gets conversionsCost
      *
      * @return int|mixed
@@ -8721,6 +9435,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setConversionsByDisplayCost($conversionsByDisplayCost)
     {
         $this->container['conversionsByDisplayCost'] = $conversionsByDisplayCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets conversionsByClickCost
+     *
+     * @return int|mixed
+     */
+    public function getConversionsByClickCost()
+    {
+        return $this->container['conversionsByClickCost'];
+    }
+
+    /**
+     * Sets conversionsByClickCost
+     *
+     * @param int|mixed $conversionsByClickCost conversionsByClickCost
+     *
+     * @return $this
+     */
+    public function setConversionsByClickCost($conversionsByClickCost)
+    {
+        $this->container['conversionsByClickCost'] = $conversionsByClickCost;
 
         return $this;
     }
@@ -10022,6 +10760,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets firstDayOrderByClickCount
+     *
+     * @return int|mixed
+     */
+    public function getFirstDayOrderByClickCount()
+    {
+        return $this->container['firstDayOrderByClickCount'];
+    }
+
+    /**
+     * Sets firstDayOrderByClickCount
+     *
+     * @param int|mixed $firstDayOrderByClickCount firstDayOrderByClickCount
+     *
+     * @return $this
+     */
+    public function setFirstDayOrderByClickCount($firstDayOrderByClickCount)
+    {
+        $this->container['firstDayOrderByClickCount'] = $firstDayOrderByClickCount;
+
+        return $this;
+    }
+
+    /**
      * Gets firstDayOrderAmount
      *
      * @return int|mixed
@@ -10065,6 +10827,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setFirstDayOrderByDisplayAmount($firstDayOrderByDisplayAmount)
     {
         $this->container['firstDayOrderByDisplayAmount'] = $firstDayOrderByDisplayAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstDayOrderByClickAmount
+     *
+     * @return int|mixed
+     */
+    public function getFirstDayOrderByClickAmount()
+    {
+        return $this->container['firstDayOrderByClickAmount'];
+    }
+
+    /**
+     * Sets firstDayOrderByClickAmount
+     *
+     * @param int|mixed $firstDayOrderByClickAmount firstDayOrderByClickAmount
+     *
+     * @return $this
+     */
+    public function setFirstDayOrderByClickAmount($firstDayOrderByClickAmount)
+    {
+        $this->container['firstDayOrderByClickAmount'] = $firstDayOrderByClickAmount;
 
         return $this;
     }
@@ -11126,6 +11912,78 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets appRetentionD3Uv
+     *
+     * @return int|mixed
+     */
+    public function getAppRetentionD3Uv()
+    {
+        return $this->container['appRetentionD3Uv'];
+    }
+
+    /**
+     * Sets appRetentionD3Uv
+     *
+     * @param int|mixed $appRetentionD3Uv appRetentionD3Uv
+     *
+     * @return $this
+     */
+    public function setAppRetentionD3Uv($appRetentionD3Uv)
+    {
+        $this->container['appRetentionD3Uv'] = $appRetentionD3Uv;
+
+        return $this;
+    }
+
+    /**
+     * Gets appRetentionD5Uv
+     *
+     * @return int|mixed
+     */
+    public function getAppRetentionD5Uv()
+    {
+        return $this->container['appRetentionD5Uv'];
+    }
+
+    /**
+     * Sets appRetentionD5Uv
+     *
+     * @param int|mixed $appRetentionD5Uv appRetentionD5Uv
+     *
+     * @return $this
+     */
+    public function setAppRetentionD5Uv($appRetentionD5Uv)
+    {
+        $this->container['appRetentionD5Uv'] = $appRetentionD5Uv;
+
+        return $this;
+    }
+
+    /**
+     * Gets appRetentionD7Uv
+     *
+     * @return int|mixed
+     */
+    public function getAppRetentionD7Uv()
+    {
+        return $this->container['appRetentionD7Uv'];
+    }
+
+    /**
+     * Sets appRetentionD7Uv
+     *
+     * @param int|mixed $appRetentionD7Uv appRetentionD7Uv
+     *
+     * @return $this
+     */
+    public function setAppRetentionD7Uv($appRetentionD7Uv)
+    {
+        $this->container['appRetentionD7Uv'] = $appRetentionD7Uv;
+
+        return $this;
+    }
+
+    /**
      * Gets miniGameKeyPageViewers
      *
      * @return int|mixed
@@ -11385,6 +12243,78 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setMiniGameRetentionD1Cost($miniGameRetentionD1Cost)
     {
         $this->container['miniGameRetentionD1Cost'] = $miniGameRetentionD1Cost;
+
+        return $this;
+    }
+
+    /**
+     * Gets appRetentionD3Cost
+     *
+     * @return int|mixed
+     */
+    public function getAppRetentionD3Cost()
+    {
+        return $this->container['appRetentionD3Cost'];
+    }
+
+    /**
+     * Sets appRetentionD3Cost
+     *
+     * @param int|mixed $appRetentionD3Cost appRetentionD3Cost
+     *
+     * @return $this
+     */
+    public function setAppRetentionD3Cost($appRetentionD3Cost)
+    {
+        $this->container['appRetentionD3Cost'] = $appRetentionD3Cost;
+
+        return $this;
+    }
+
+    /**
+     * Gets appRetentionD5Cost
+     *
+     * @return int|mixed
+     */
+    public function getAppRetentionD5Cost()
+    {
+        return $this->container['appRetentionD5Cost'];
+    }
+
+    /**
+     * Sets appRetentionD5Cost
+     *
+     * @param int|mixed $appRetentionD5Cost appRetentionD5Cost
+     *
+     * @return $this
+     */
+    public function setAppRetentionD5Cost($appRetentionD5Cost)
+    {
+        $this->container['appRetentionD5Cost'] = $appRetentionD5Cost;
+
+        return $this;
+    }
+
+    /**
+     * Gets appRetentionD7Cost
+     *
+     * @return int|mixed
+     */
+    public function getAppRetentionD7Cost()
+    {
+        return $this->container['appRetentionD7Cost'];
+    }
+
+    /**
+     * Sets appRetentionD7Cost
+     *
+     * @param int|mixed $appRetentionD7Cost appRetentionD7Cost
+     *
+     * @return $this
+     */
+    public function setAppRetentionD7Cost($appRetentionD7Cost)
+    {
+        $this->container['appRetentionD7Cost'] = $appRetentionD7Cost;
 
         return $this;
     }
@@ -12974,6 +13904,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets activeD5FirstPayUv
+     *
+     * @return int|mixed
+     */
+    public function getActiveD5FirstPayUv()
+    {
+        return $this->container['activeD5FirstPayUv'];
+    }
+
+    /**
+     * Sets activeD5FirstPayUv
+     *
+     * @param int|mixed $activeD5FirstPayUv activeD5FirstPayUv
+     *
+     * @return $this
+     */
+    public function setActiveD5FirstPayUv($activeD5FirstPayUv)
+    {
+        $this->container['activeD5FirstPayUv'] = $activeD5FirstPayUv;
+
+        return $this;
+    }
+
+    /**
      * Gets activatedTotalPaymentCost
      *
      * @return int|mixed
@@ -13934,6 +14888,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets activeD5FirstPayCost
+     *
+     * @return int|mixed
+     */
+    public function getActiveD5FirstPayCost()
+    {
+        return $this->container['activeD5FirstPayCost'];
+    }
+
+    /**
+     * Sets activeD5FirstPayCost
+     *
+     * @param int|mixed $activeD5FirstPayCost activeD5FirstPayCost
+     *
+     * @return $this
+     */
+    public function setActiveD5FirstPayCost($activeD5FirstPayCost)
+    {
+        $this->container['activeD5FirstPayCost'] = $activeD5FirstPayCost;
+
+        return $this;
+    }
+
+    /**
      * Gets miniGameFirstDayAdMonetizationUsers
      *
      * @return int|mixed
@@ -14841,6 +15819,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setMiniGamePayD1PlaRate($miniGamePayD1PlaRate)
     {
         $this->container['miniGamePayD1PlaRate'] = $miniGamePayD1PlaRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets activeD5ClickFirstPayRate
+     *
+     * @return double|mixed
+     */
+    public function getActiveD5ClickFirstPayRate()
+    {
+        return $this->container['activeD5ClickFirstPayRate'];
+    }
+
+    /**
+     * Sets activeD5ClickFirstPayRate
+     *
+     * @param double|mixed $activeD5ClickFirstPayRate activeD5ClickFirstPayRate
+     *
+     * @return $this
+     */
+    public function setActiveD5ClickFirstPayRate($activeD5ClickFirstPayRate)
+    {
+        $this->container['activeD5ClickFirstPayRate'] = $activeD5ClickFirstPayRate;
 
         return $this;
     }
@@ -17625,6 +18627,174 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setVideoInnerPlayUserCount($videoInnerPlayUserCount)
     {
         $this->container['videoInnerPlayUserCount'] = $videoInnerPlayUserCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets channelsHalfScreenCardExpPv
+     *
+     * @return int|mixed
+     */
+    public function getChannelsHalfScreenCardExpPv()
+    {
+        return $this->container['channelsHalfScreenCardExpPv'];
+    }
+
+    /**
+     * Sets channelsHalfScreenCardExpPv
+     *
+     * @param int|mixed $channelsHalfScreenCardExpPv channelsHalfScreenCardExpPv
+     *
+     * @return $this
+     */
+    public function setChannelsHalfScreenCardExpPv($channelsHalfScreenCardExpPv)
+    {
+        $this->container['channelsHalfScreenCardExpPv'] = $channelsHalfScreenCardExpPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets channelsHalfScreenButtonClkPv
+     *
+     * @return int|mixed
+     */
+    public function getChannelsHalfScreenButtonClkPv()
+    {
+        return $this->container['channelsHalfScreenButtonClkPv'];
+    }
+
+    /**
+     * Sets channelsHalfScreenButtonClkPv
+     *
+     * @param int|mixed $channelsHalfScreenButtonClkPv channelsHalfScreenButtonClkPv
+     *
+     * @return $this
+     */
+    public function setChannelsHalfScreenButtonClkPv($channelsHalfScreenButtonClkPv)
+    {
+        $this->container['channelsHalfScreenButtonClkPv'] = $channelsHalfScreenButtonClkPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets channelsMatchReadPv
+     *
+     * @return int|mixed
+     */
+    public function getChannelsMatchReadPv()
+    {
+        return $this->container['channelsMatchReadPv'];
+    }
+
+    /**
+     * Sets channelsMatchReadPv
+     *
+     * @param int|mixed $channelsMatchReadPv channelsMatchReadPv
+     *
+     * @return $this
+     */
+    public function setChannelsMatchReadPv($channelsMatchReadPv)
+    {
+        $this->container['channelsMatchReadPv'] = $channelsMatchReadPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets channelsMatchHeartPv
+     *
+     * @return int|mixed
+     */
+    public function getChannelsMatchHeartPv()
+    {
+        return $this->container['channelsMatchHeartPv'];
+    }
+
+    /**
+     * Sets channelsMatchHeartPv
+     *
+     * @param int|mixed $channelsMatchHeartPv channelsMatchHeartPv
+     *
+     * @return $this
+     */
+    public function setChannelsMatchHeartPv($channelsMatchHeartPv)
+    {
+        $this->container['channelsMatchHeartPv'] = $channelsMatchHeartPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets channelsMatchCommentPv
+     *
+     * @return int|mixed
+     */
+    public function getChannelsMatchCommentPv()
+    {
+        return $this->container['channelsMatchCommentPv'];
+    }
+
+    /**
+     * Sets channelsMatchCommentPv
+     *
+     * @param int|mixed $channelsMatchCommentPv channelsMatchCommentPv
+     *
+     * @return $this
+     */
+    public function setChannelsMatchCommentPv($channelsMatchCommentPv)
+    {
+        $this->container['channelsMatchCommentPv'] = $channelsMatchCommentPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets channelsMatchSharePv
+     *
+     * @return int|mixed
+     */
+    public function getChannelsMatchSharePv()
+    {
+        return $this->container['channelsMatchSharePv'];
+    }
+
+    /**
+     * Sets channelsMatchSharePv
+     *
+     * @param int|mixed $channelsMatchSharePv channelsMatchSharePv
+     *
+     * @return $this
+     */
+    public function setChannelsMatchSharePv($channelsMatchSharePv)
+    {
+        $this->container['channelsMatchSharePv'] = $channelsMatchSharePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets exportId
+     *
+     * @return int|mixed
+     */
+    public function getExportId()
+    {
+        return $this->container['exportId'];
+    }
+
+    /**
+     * Sets exportId
+     *
+     * @param int|mixed $exportId exportId
+     *
+     * @return $this
+     */
+    public function setExportId($exportId)
+    {
+        $this->container['exportId'] = $exportId;
 
         return $this;
     }
