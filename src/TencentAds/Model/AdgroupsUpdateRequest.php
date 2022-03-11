@@ -95,6 +95,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'dynamicAdSpec' => '\TencentAds\Model\DynamicAdSpec',
         'customAdgroupTag' => 'string[]',
         'smartTargeting' => '\TencentAds\Model\SmartTargeting',
+        'dynamicCreativeIdSet' => 'int[]',
         'accountId' => 'int'
     ];
 
@@ -142,6 +143,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'dynamicAdSpec' => null,
         'customAdgroupTag' => null,
         'smartTargeting' => null,
+        'dynamicCreativeIdSet' => 'int64',
         'accountId' => 'int64'
     ];
 
@@ -210,6 +212,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'dynamicAdSpec' => 'dynamic_ad_spec',
         'customAdgroupTag' => 'custom_adgroup_tag',
         'smartTargeting' => 'smart_targeting',
+        'dynamicCreativeIdSet' => 'dynamic_creative_id_set',
         'accountId' => 'account_id'
     ];
 
@@ -257,6 +260,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'dynamicAdSpec' => 'setDynamicAdSpec',
         'customAdgroupTag' => 'setCustomAdgroupTag',
         'smartTargeting' => 'setSmartTargeting',
+        'dynamicCreativeIdSet' => 'setDynamicCreativeIdSet',
         'accountId' => 'setAccountId'
     ];
 
@@ -304,6 +308,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'dynamicAdSpec' => 'getDynamicAdSpec',
         'customAdgroupTag' => 'getCustomAdgroupTag',
         'smartTargeting' => 'getSmartTargeting',
+        'dynamicCreativeIdSet' => 'getDynamicCreativeIdSet',
         'accountId' => 'getAccountId'
     ];
 
@@ -405,6 +410,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['dynamicAdSpec'] = isset($data['dynamicAdSpec']) ? $data['dynamicAdSpec'] : null;
         $this->container['customAdgroupTag'] = isset($data['customAdgroupTag']) ? $data['customAdgroupTag'] : null;
         $this->container['smartTargeting'] = isset($data['smartTargeting']) ? $data['smartTargeting'] : null;
+        $this->container['dynamicCreativeIdSet'] = isset($data['dynamicCreativeIdSet']) ? $data['dynamicCreativeIdSet'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1340,6 +1346,30 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setSmartTargeting($smartTargeting)
     {
         $this->container['smartTargeting'] = $smartTargeting;
+
+        return $this;
+    }
+
+    /**
+     * Gets dynamicCreativeIdSet
+     *
+     * @return int[]|mixed
+     */
+    public function getDynamicCreativeIdSet()
+    {
+        return $this->container['dynamicCreativeIdSet'];
+    }
+
+    /**
+     * Sets dynamicCreativeIdSet
+     *
+     * @param int[]|mixed $dynamicCreativeIdSet dynamicCreativeIdSet
+     *
+     * @return $this
+     */
+    public function setDynamicCreativeIdSet($dynamicCreativeIdSet)
+    {
+        $this->container['dynamicCreativeIdSet'] = $dynamicCreativeIdSet;
 
         return $this;
     }

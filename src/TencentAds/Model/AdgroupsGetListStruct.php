@@ -119,7 +119,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'smartCostCap' => 'int',
         'marketingScene' => '\TencentAds\Model\MarketingScene',
         'customAdgroupTag' => 'string[]',
-        'smartTargeting' => '\TencentAds\Model\SmartTargeting'
+        'smartTargeting' => '\TencentAds\Model\SmartTargeting',
+        'dynamicCreativeIdSet' => 'int[]'
     ];
 
     /**
@@ -189,7 +190,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'smartCostCap' => 'int64',
         'marketingScene' => null,
         'customAdgroupTag' => null,
-        'smartTargeting' => null
+        'smartTargeting' => null,
+        'dynamicCreativeIdSet' => 'int64'
     ];
 
     /**
@@ -280,7 +282,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'smartCostCap' => 'smart_cost_cap',
         'marketingScene' => 'marketing_scene',
         'customAdgroupTag' => 'custom_adgroup_tag',
-        'smartTargeting' => 'smart_targeting'
+        'smartTargeting' => 'smart_targeting',
+        'dynamicCreativeIdSet' => 'dynamic_creative_id_set'
     ];
 
     /**
@@ -350,7 +353,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'smartCostCap' => 'setSmartCostCap',
         'marketingScene' => 'setMarketingScene',
         'customAdgroupTag' => 'setCustomAdgroupTag',
-        'smartTargeting' => 'setSmartTargeting'
+        'smartTargeting' => 'setSmartTargeting',
+        'dynamicCreativeIdSet' => 'setDynamicCreativeIdSet'
     ];
 
     /**
@@ -420,7 +424,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'smartCostCap' => 'getSmartCostCap',
         'marketingScene' => 'getMarketingScene',
         'customAdgroupTag' => 'getCustomAdgroupTag',
-        'smartTargeting' => 'getSmartTargeting'
+        'smartTargeting' => 'getSmartTargeting',
+        'dynamicCreativeIdSet' => 'getDynamicCreativeIdSet'
     ];
 
     /**
@@ -545,6 +550,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['marketingScene'] = isset($data['marketingScene']) ? $data['marketingScene'] : null;
         $this->container['customAdgroupTag'] = isset($data['customAdgroupTag']) ? $data['customAdgroupTag'] : null;
         $this->container['smartTargeting'] = isset($data['smartTargeting']) ? $data['smartTargeting'] : null;
+        $this->container['dynamicCreativeIdSet'] = isset($data['dynamicCreativeIdSet']) ? $data['dynamicCreativeIdSet'] : null;
     }
 
     /**
@@ -2055,6 +2061,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setSmartTargeting($smartTargeting)
     {
         $this->container['smartTargeting'] = $smartTargeting;
+
+        return $this;
+    }
+
+    /**
+     * Gets dynamicCreativeIdSet
+     *
+     * @return int[]|mixed
+     */
+    public function getDynamicCreativeIdSet()
+    {
+        return $this->container['dynamicCreativeIdSet'];
+    }
+
+    /**
+     * Sets dynamicCreativeIdSet
+     *
+     * @param int[]|mixed $dynamicCreativeIdSet dynamicCreativeIdSet
+     *
+     * @return $this
+     */
+    public function setDynamicCreativeIdSet($dynamicCreativeIdSet)
+    {
+        $this->container['dynamicCreativeIdSet'] = $dynamicCreativeIdSet;
 
         return $this;
     }

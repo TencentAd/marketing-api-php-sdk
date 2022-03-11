@@ -105,7 +105,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'shopImageStruct' => '\TencentAds\Model\AdCreativeShopImageStruct',
         'chosenButton' => '\TencentAds\Model\ChosenButton',
         'livingDescStruct' => '\TencentAds\Model\AdCreativeLivingDescStruct',
-        'floatingZoneStruct' => '\TencentAds\Model\FloatingZone'
+        'floatingZoneStruct' => '\TencentAds\Model\FloatingZone',
+        'canvasShareImage' => 'string'
     ];
 
     /**
@@ -161,7 +162,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'shopImageStruct' => null,
         'chosenButton' => null,
         'livingDescStruct' => null,
-        'floatingZoneStruct' => null
+        'floatingZoneStruct' => null,
+        'canvasShareImage' => null
     ];
 
     /**
@@ -238,7 +240,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'shopImageStruct' => 'shop_image_struct',
         'chosenButton' => 'chosen_button',
         'livingDescStruct' => 'living_desc_struct',
-        'floatingZoneStruct' => 'floating_zone_struct'
+        'floatingZoneStruct' => 'floating_zone_struct',
+        'canvasShareImage' => 'canvas_share_image'
     ];
 
     /**
@@ -294,7 +297,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'shopImageStruct' => 'setShopImageStruct',
         'chosenButton' => 'setChosenButton',
         'livingDescStruct' => 'setLivingDescStruct',
-        'floatingZoneStruct' => 'setFloatingZoneStruct'
+        'floatingZoneStruct' => 'setFloatingZoneStruct',
+        'canvasShareImage' => 'setCanvasShareImage'
     ];
 
     /**
@@ -350,7 +354,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'shopImageStruct' => 'getShopImageStruct',
         'chosenButton' => 'getChosenButton',
         'livingDescStruct' => 'getLivingDescStruct',
-        'floatingZoneStruct' => 'getFloatingZoneStruct'
+        'floatingZoneStruct' => 'getFloatingZoneStruct',
+        'canvasShareImage' => 'getCanvasShareImage'
     ];
 
     /**
@@ -461,6 +466,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         $this->container['chosenButton'] = isset($data['chosenButton']) ? $data['chosenButton'] : null;
         $this->container['livingDescStruct'] = isset($data['livingDescStruct']) ? $data['livingDescStruct'] : null;
         $this->container['floatingZoneStruct'] = isset($data['floatingZoneStruct']) ? $data['floatingZoneStruct'] : null;
+        $this->container['canvasShareImage'] = isset($data['canvasShareImage']) ? $data['canvasShareImage'] : null;
     }
 
     /**
@@ -1635,6 +1641,30 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     public function setFloatingZoneStruct($floatingZoneStruct)
     {
         $this->container['floatingZoneStruct'] = $floatingZoneStruct;
+
+        return $this;
+    }
+
+    /**
+     * Gets canvasShareImage
+     *
+     * @return string|mixed
+     */
+    public function getCanvasShareImage()
+    {
+        return $this->container['canvasShareImage'];
+    }
+
+    /**
+     * Sets canvasShareImage
+     *
+     * @param string|mixed $canvasShareImage canvasShareImage
+     *
+     * @return $this
+     */
+    public function setCanvasShareImage($canvasShareImage)
+    {
+        $this->container['canvasShareImage'] = $canvasShareImage;
 
         return $this;
     }

@@ -105,6 +105,7 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'leftCanvas' => 'string',
         'rightCanvas' => 'string',
         'floatingZoneStruct' => '\TencentAds\Model\FloatingZone',
+        'canvasShareImage' => 'string',
         'countdownExpiringTimestamp' => 'int'
     ];
 
@@ -161,6 +162,7 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'leftCanvas' => null,
         'rightCanvas' => null,
         'floatingZoneStruct' => null,
+        'canvasShareImage' => null,
         'countdownExpiringTimestamp' => 'int64'
     ];
 
@@ -238,6 +240,7 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'leftCanvas' => 'left_canvas',
         'rightCanvas' => 'right_canvas',
         'floatingZoneStruct' => 'floating_zone_struct',
+        'canvasShareImage' => 'canvas_share_image',
         'countdownExpiringTimestamp' => 'countdown_expiring_timestamp'
     ];
 
@@ -294,6 +297,7 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'leftCanvas' => 'setLeftCanvas',
         'rightCanvas' => 'setRightCanvas',
         'floatingZoneStruct' => 'setFloatingZoneStruct',
+        'canvasShareImage' => 'setCanvasShareImage',
         'countdownExpiringTimestamp' => 'setCountdownExpiringTimestamp'
     ];
 
@@ -350,6 +354,7 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'leftCanvas' => 'getLeftCanvas',
         'rightCanvas' => 'getRightCanvas',
         'floatingZoneStruct' => 'getFloatingZoneStruct',
+        'canvasShareImage' => 'getCanvasShareImage',
         'countdownExpiringTimestamp' => 'getCountdownExpiringTimestamp'
     ];
 
@@ -460,6 +465,7 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         $this->container['leftCanvas'] = isset($data['leftCanvas']) ? $data['leftCanvas'] : null;
         $this->container['rightCanvas'] = isset($data['rightCanvas']) ? $data['rightCanvas'] : null;
         $this->container['floatingZoneStruct'] = isset($data['floatingZoneStruct']) ? $data['floatingZoneStruct'] : null;
+        $this->container['canvasShareImage'] = isset($data['canvasShareImage']) ? $data['canvasShareImage'] : null;
         $this->container['countdownExpiringTimestamp'] = isset($data['countdownExpiringTimestamp']) ? $data['countdownExpiringTimestamp'] : null;
     }
 
@@ -1611,6 +1617,30 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
     public function setFloatingZoneStruct($floatingZoneStruct)
     {
         $this->container['floatingZoneStruct'] = $floatingZoneStruct;
+
+        return $this;
+    }
+
+    /**
+     * Gets canvasShareImage
+     *
+     * @return string|mixed
+     */
+    public function getCanvasShareImage()
+    {
+        return $this->container['canvasShareImage'];
+    }
+
+    /**
+     * Sets canvasShareImage
+     *
+     * @param string|mixed $canvasShareImage canvasShareImage
+     *
+     * @return $this
+     */
+    public function setCanvasShareImage($canvasShareImage)
+    {
+        $this->container['canvasShareImage'] = $canvasShareImage;
 
         return $this;
     }

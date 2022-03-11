@@ -104,6 +104,7 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'rightButton' => 'string',
         'leftCanvas' => 'string',
         'rightCanvas' => 'string',
+        'canvasShareImage' => 'string',
         'countdownExpiringTimestamp' => 'int'
     ];
 
@@ -159,6 +160,7 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'rightButton' => null,
         'leftCanvas' => null,
         'rightCanvas' => null,
+        'canvasShareImage' => null,
         'countdownExpiringTimestamp' => 'int64'
     ];
 
@@ -235,6 +237,7 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'rightButton' => 'right_button',
         'leftCanvas' => 'left_canvas',
         'rightCanvas' => 'right_canvas',
+        'canvasShareImage' => 'canvas_share_image',
         'countdownExpiringTimestamp' => 'countdown_expiring_timestamp'
     ];
 
@@ -290,6 +293,7 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'rightButton' => 'setRightButton',
         'leftCanvas' => 'setLeftCanvas',
         'rightCanvas' => 'setRightCanvas',
+        'canvasShareImage' => 'setCanvasShareImage',
         'countdownExpiringTimestamp' => 'setCountdownExpiringTimestamp'
     ];
 
@@ -345,6 +349,7 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'rightButton' => 'getRightButton',
         'leftCanvas' => 'getLeftCanvas',
         'rightCanvas' => 'getRightCanvas',
+        'canvasShareImage' => 'getCanvasShareImage',
         'countdownExpiringTimestamp' => 'getCountdownExpiringTimestamp'
     ];
 
@@ -454,6 +459,7 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         $this->container['rightButton'] = isset($data['rightButton']) ? $data['rightButton'] : null;
         $this->container['leftCanvas'] = isset($data['leftCanvas']) ? $data['leftCanvas'] : null;
         $this->container['rightCanvas'] = isset($data['rightCanvas']) ? $data['rightCanvas'] : null;
+        $this->container['canvasShareImage'] = isset($data['canvasShareImage']) ? $data['canvasShareImage'] : null;
         $this->container['countdownExpiringTimestamp'] = isset($data['countdownExpiringTimestamp']) ? $data['countdownExpiringTimestamp'] : null;
     }
 
@@ -1581,6 +1587,30 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
     public function setRightCanvas($rightCanvas)
     {
         $this->container['rightCanvas'] = $rightCanvas;
+
+        return $this;
+    }
+
+    /**
+     * Gets canvasShareImage
+     *
+     * @return string|mixed
+     */
+    public function getCanvasShareImage()
+    {
+        return $this->container['canvasShareImage'];
+    }
+
+    /**
+     * Sets canvasShareImage
+     *
+     * @param string|mixed $canvasShareImage canvasShareImage
+     *
+     * @return $this
+     */
+    public function setCanvasShareImage($canvasShareImage)
+    {
+        $this->container['canvasShareImage'] = $canvasShareImage;
 
         return $this;
     }
