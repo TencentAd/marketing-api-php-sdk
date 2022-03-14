@@ -1,6 +1,6 @@
 <?php
 /**
- * MiniGameSpec
+ * ReviewElementPrereviewResultsGetResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MiniGameSpec Class Doc Comment
+ * ReviewElementPrereviewResultsGetResponseData Class Doc Comment
  *
  * @category Class
- * @description 小游戏落地页信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MiniGameSpec implements ModelInterface, ArrayAccess
+class ReviewElementPrereviewResultsGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'mini_game_spec';
+    protected static $swaggerModelName = 'ReviewElementPrereviewResultsGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'miniGameTrackingParameter' => 'string',
-        'miniGameOpenlink' => 'string'
+        'list' => '\TencentAds\Model\ElementPrereviewStruct[]'
     ];
 
     /**
@@ -68,8 +66,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'miniGameTrackingParameter' => null,
-        'miniGameOpenlink' => null
+        'list' => null
     ];
 
     /**
@@ -99,8 +96,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'miniGameTrackingParameter' => 'mini_game_tracking_parameter',
-        'miniGameOpenlink' => 'mini_game_openlink'
+        'list' => 'list'
     ];
 
     /**
@@ -109,8 +105,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'miniGameTrackingParameter' => 'setMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'setMiniGameOpenlink'
+        'list' => 'setList'
     ];
 
     /**
@@ -119,8 +114,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'miniGameTrackingParameter' => 'getMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'getMiniGameOpenlink'
+        'list' => 'getList'
     ];
 
     /**
@@ -183,8 +177,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['miniGameTrackingParameter'] = isset($data['miniGameTrackingParameter']) ? $data['miniGameTrackingParameter'] : null;
-        $this->container['miniGameOpenlink'] = isset($data['miniGameOpenlink']) ? $data['miniGameOpenlink'] : null;
+        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
     }
 
     /**
@@ -212,49 +205,25 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets miniGameTrackingParameter
+     * Gets list
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\ElementPrereviewStruct[]|mixed
      */
-    public function getMiniGameTrackingParameter()
+    public function getList()
     {
-        return $this->container['miniGameTrackingParameter'];
+        return $this->container['list'];
     }
 
     /**
-     * Sets miniGameTrackingParameter
+     * Sets list
      *
-     * @param string|mixed $miniGameTrackingParameter miniGameTrackingParameter
+     * @param \TencentAds\Model\ElementPrereviewStruct[]|mixed $list list
      *
      * @return $this
      */
-    public function setMiniGameTrackingParameter($miniGameTrackingParameter)
+    public function setList($list)
     {
-        $this->container['miniGameTrackingParameter'] = $miniGameTrackingParameter;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameOpenlink
-     *
-     * @return string|mixed
-     */
-    public function getMiniGameOpenlink()
-    {
-        return $this->container['miniGameOpenlink'];
-    }
-
-    /**
-     * Sets miniGameOpenlink
-     *
-     * @param string|mixed $miniGameOpenlink miniGameOpenlink
-     *
-     * @return $this
-     */
-    public function setMiniGameOpenlink($miniGameOpenlink)
-    {
-        $this->container['miniGameOpenlink'] = $miniGameOpenlink;
+        $this->container['list'] = $list;
 
         return $this;
     }

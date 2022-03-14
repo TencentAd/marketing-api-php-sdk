@@ -1,6 +1,6 @@
 <?php
 /**
- * MiniGameSpec
+ * PreReviewDetailStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MiniGameSpec Class Doc Comment
+ * PreReviewDetailStruct Class Doc Comment
  *
  * @category Class
- * @description 小游戏落地页信息
+ * @description 元素预审结果明细
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MiniGameSpec implements ModelInterface, ArrayAccess
+class PreReviewDetailStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'mini_game_spec';
+    protected static $swaggerModelName = 'pre_review_detail_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,9 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'miniGameTrackingParameter' => 'string',
-        'miniGameOpenlink' => 'string'
+        'siteSet' => '\TencentAds\Model\IntSiteSetDefinition',
+        'preReviewResult' => '\TencentAds\Model\GroupRiskLevel',
+        'rejectReasonDetail' => '\TencentAds\Model\RejectReasonDetailStruct[]'
     ];
 
     /**
@@ -68,8 +69,9 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'miniGameTrackingParameter' => null,
-        'miniGameOpenlink' => null
+        'siteSet' => null,
+        'preReviewResult' => null,
+        'rejectReasonDetail' => null
     ];
 
     /**
@@ -99,8 +101,9 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'miniGameTrackingParameter' => 'mini_game_tracking_parameter',
-        'miniGameOpenlink' => 'mini_game_openlink'
+        'siteSet' => 'site_set',
+        'preReviewResult' => 'pre_review_result',
+        'rejectReasonDetail' => 'reject_reason_detail'
     ];
 
     /**
@@ -109,8 +112,9 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'miniGameTrackingParameter' => 'setMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'setMiniGameOpenlink'
+        'siteSet' => 'setSiteSet',
+        'preReviewResult' => 'setPreReviewResult',
+        'rejectReasonDetail' => 'setRejectReasonDetail'
     ];
 
     /**
@@ -119,8 +123,9 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'miniGameTrackingParameter' => 'getMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'getMiniGameOpenlink'
+        'siteSet' => 'getSiteSet',
+        'preReviewResult' => 'getPreReviewResult',
+        'rejectReasonDetail' => 'getRejectReasonDetail'
     ];
 
     /**
@@ -183,8 +188,9 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['miniGameTrackingParameter'] = isset($data['miniGameTrackingParameter']) ? $data['miniGameTrackingParameter'] : null;
-        $this->container['miniGameOpenlink'] = isset($data['miniGameOpenlink']) ? $data['miniGameOpenlink'] : null;
+        $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
+        $this->container['preReviewResult'] = isset($data['preReviewResult']) ? $data['preReviewResult'] : null;
+        $this->container['rejectReasonDetail'] = isset($data['rejectReasonDetail']) ? $data['rejectReasonDetail'] : null;
     }
 
     /**
@@ -212,49 +218,73 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets miniGameTrackingParameter
+     * Gets siteSet
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\IntSiteSetDefinition|mixed
      */
-    public function getMiniGameTrackingParameter()
+    public function getSiteSet()
     {
-        return $this->container['miniGameTrackingParameter'];
+        return $this->container['siteSet'];
     }
 
     /**
-     * Sets miniGameTrackingParameter
+     * Sets siteSet
      *
-     * @param string|mixed $miniGameTrackingParameter miniGameTrackingParameter
+     * @param \TencentAds\Model\IntSiteSetDefinition|mixed $siteSet siteSet
      *
      * @return $this
      */
-    public function setMiniGameTrackingParameter($miniGameTrackingParameter)
+    public function setSiteSet($siteSet)
     {
-        $this->container['miniGameTrackingParameter'] = $miniGameTrackingParameter;
+        $this->container['siteSet'] = $siteSet;
 
         return $this;
     }
 
     /**
-     * Gets miniGameOpenlink
+     * Gets preReviewResult
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\GroupRiskLevel|mixed
      */
-    public function getMiniGameOpenlink()
+    public function getPreReviewResult()
     {
-        return $this->container['miniGameOpenlink'];
+        return $this->container['preReviewResult'];
     }
 
     /**
-     * Sets miniGameOpenlink
+     * Sets preReviewResult
      *
-     * @param string|mixed $miniGameOpenlink miniGameOpenlink
+     * @param \TencentAds\Model\GroupRiskLevel|mixed $preReviewResult preReviewResult
      *
      * @return $this
      */
-    public function setMiniGameOpenlink($miniGameOpenlink)
+    public function setPreReviewResult($preReviewResult)
     {
-        $this->container['miniGameOpenlink'] = $miniGameOpenlink;
+        $this->container['preReviewResult'] = $preReviewResult;
+
+        return $this;
+    }
+
+    /**
+     * Gets rejectReasonDetail
+     *
+     * @return \TencentAds\Model\RejectReasonDetailStruct[]|mixed
+     */
+    public function getRejectReasonDetail()
+    {
+        return $this->container['rejectReasonDetail'];
+    }
+
+    /**
+     * Sets rejectReasonDetail
+     *
+     * @param \TencentAds\Model\RejectReasonDetailStruct[]|mixed $rejectReasonDetail rejectReasonDetail
+     *
+     * @return $this
+     */
+    public function setRejectReasonDetail($rejectReasonDetail)
+    {
+        $this->container['rejectReasonDetail'] = $rejectReasonDetail;
 
         return $this;
     }

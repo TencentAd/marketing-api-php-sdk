@@ -61,7 +61,7 @@ class LinkPageSpec implements ModelInterface, ArrayAccess
         'pageId' => 'int',
         'pageUrl' => 'string',
         'miniProgramSpec' => '\TencentAds\Model\AdcreativeMiniProgramSpec',
-        'miniGameSpec' => '\TencentAds\Model\MiniGameSpec'
+        'miniGameSpec' => '\TencentAds\Model\LinkMiniGameSpec'
     ];
 
     /**
@@ -298,7 +298,7 @@ class LinkPageSpec implements ModelInterface, ArrayAccess
     /**
      * Gets miniGameSpec
      *
-     * @return \TencentAds\Model\MiniGameSpec|mixed
+     * @return \TencentAds\Model\LinkMiniGameSpec|mixed
      */
     public function getMiniGameSpec()
     {
@@ -308,7 +308,7 @@ class LinkPageSpec implements ModelInterface, ArrayAccess
     /**
      * Sets miniGameSpec
      *
-     * @param \TencentAds\Model\MiniGameSpec|mixed $miniGameSpec miniGameSpec
+     * @param \TencentAds\Model\LinkMiniGameSpec|mixed $miniGameSpec miniGameSpec
      *
      * @return $this
      */

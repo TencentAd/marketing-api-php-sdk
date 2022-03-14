@@ -1,6 +1,6 @@
 <?php
 /**
- * MiniGameSpec
+ * UrgeResultStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MiniGameSpec Class Doc Comment
+ * UrgeResultStruct Class Doc Comment
  *
  * @category Class
- * @description 小游戏落地页信息
+ * @description 创意催审结果实体
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MiniGameSpec implements ModelInterface, ArrayAccess
+class UrgeResultStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'mini_game_spec';
+    protected static $swaggerModelName = 'urge_result_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,9 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'miniGameTrackingParameter' => 'string',
-        'miniGameOpenlink' => 'string'
+        'adId' => 'int',
+        'urgeResult' => '\TencentAds\Model\CreativeUrgeResult',
+        'urgeMsg' => 'string'
     ];
 
     /**
@@ -68,8 +69,9 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'miniGameTrackingParameter' => null,
-        'miniGameOpenlink' => null
+        'adId' => 'int64',
+        'urgeResult' => null,
+        'urgeMsg' => null
     ];
 
     /**
@@ -99,8 +101,9 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'miniGameTrackingParameter' => 'mini_game_tracking_parameter',
-        'miniGameOpenlink' => 'mini_game_openlink'
+        'adId' => 'ad_id',
+        'urgeResult' => 'urge_result',
+        'urgeMsg' => 'urge_msg'
     ];
 
     /**
@@ -109,8 +112,9 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'miniGameTrackingParameter' => 'setMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'setMiniGameOpenlink'
+        'adId' => 'setAdId',
+        'urgeResult' => 'setUrgeResult',
+        'urgeMsg' => 'setUrgeMsg'
     ];
 
     /**
@@ -119,8 +123,9 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'miniGameTrackingParameter' => 'getMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'getMiniGameOpenlink'
+        'adId' => 'getAdId',
+        'urgeResult' => 'getUrgeResult',
+        'urgeMsg' => 'getUrgeMsg'
     ];
 
     /**
@@ -183,8 +188,9 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['miniGameTrackingParameter'] = isset($data['miniGameTrackingParameter']) ? $data['miniGameTrackingParameter'] : null;
-        $this->container['miniGameOpenlink'] = isset($data['miniGameOpenlink']) ? $data['miniGameOpenlink'] : null;
+        $this->container['adId'] = isset($data['adId']) ? $data['adId'] : null;
+        $this->container['urgeResult'] = isset($data['urgeResult']) ? $data['urgeResult'] : null;
+        $this->container['urgeMsg'] = isset($data['urgeMsg']) ? $data['urgeMsg'] : null;
     }
 
     /**
@@ -212,49 +218,73 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets miniGameTrackingParameter
+     * Gets adId
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getMiniGameTrackingParameter()
+    public function getAdId()
     {
-        return $this->container['miniGameTrackingParameter'];
+        return $this->container['adId'];
     }
 
     /**
-     * Sets miniGameTrackingParameter
+     * Sets adId
      *
-     * @param string|mixed $miniGameTrackingParameter miniGameTrackingParameter
+     * @param int|mixed $adId adId
      *
      * @return $this
      */
-    public function setMiniGameTrackingParameter($miniGameTrackingParameter)
+    public function setAdId($adId)
     {
-        $this->container['miniGameTrackingParameter'] = $miniGameTrackingParameter;
+        $this->container['adId'] = $adId;
 
         return $this;
     }
 
     /**
-     * Gets miniGameOpenlink
+     * Gets urgeResult
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\CreativeUrgeResult|mixed
      */
-    public function getMiniGameOpenlink()
+    public function getUrgeResult()
     {
-        return $this->container['miniGameOpenlink'];
+        return $this->container['urgeResult'];
     }
 
     /**
-     * Sets miniGameOpenlink
+     * Sets urgeResult
      *
-     * @param string|mixed $miniGameOpenlink miniGameOpenlink
+     * @param \TencentAds\Model\CreativeUrgeResult|mixed $urgeResult urgeResult
      *
      * @return $this
      */
-    public function setMiniGameOpenlink($miniGameOpenlink)
+    public function setUrgeResult($urgeResult)
     {
-        $this->container['miniGameOpenlink'] = $miniGameOpenlink;
+        $this->container['urgeResult'] = $urgeResult;
+
+        return $this;
+    }
+
+    /**
+     * Gets urgeMsg
+     *
+     * @return string|mixed
+     */
+    public function getUrgeMsg()
+    {
+        return $this->container['urgeMsg'];
+    }
+
+    /**
+     * Sets urgeMsg
+     *
+     * @param string|mixed $urgeMsg urgeMsg
+     *
+     * @return $this
+     */
+    public function setUrgeMsg($urgeMsg)
+    {
+        $this->container['urgeMsg'] = $urgeMsg;
 
         return $this;
     }

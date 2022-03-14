@@ -1,6 +1,6 @@
 <?php
 /**
- * MiniGameSpec
+ * WechatPagesCsgroupStatusUpdateRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MiniGameSpec Class Doc Comment
+ * WechatPagesCsgroupStatusUpdateRequest Class Doc Comment
  *
  * @category Class
- * @description 小游戏落地页信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MiniGameSpec implements ModelInterface, ArrayAccess
+class WechatPagesCsgroupStatusUpdateRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'mini_game_spec';
+    protected static $swaggerModelName = 'WechatPagesCsgroupStatusUpdateRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,10 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'miniGameTrackingParameter' => 'string',
-        'miniGameOpenlink' => 'string'
+        'accountId' => 'int',
+        'corpId' => 'string',
+        'userid' => 'string',
+        'status' => 'int'
     ];
 
     /**
@@ -68,8 +69,10 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'miniGameTrackingParameter' => null,
-        'miniGameOpenlink' => null
+        'accountId' => 'int64',
+        'corpId' => null,
+        'userid' => null,
+        'status' => 'int64'
     ];
 
     /**
@@ -99,8 +102,10 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'miniGameTrackingParameter' => 'mini_game_tracking_parameter',
-        'miniGameOpenlink' => 'mini_game_openlink'
+        'accountId' => 'account_id',
+        'corpId' => 'corp_id',
+        'userid' => 'userid',
+        'status' => 'status'
     ];
 
     /**
@@ -109,8 +114,10 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'miniGameTrackingParameter' => 'setMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'setMiniGameOpenlink'
+        'accountId' => 'setAccountId',
+        'corpId' => 'setCorpId',
+        'userid' => 'setUserid',
+        'status' => 'setStatus'
     ];
 
     /**
@@ -119,8 +126,10 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'miniGameTrackingParameter' => 'getMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'getMiniGameOpenlink'
+        'accountId' => 'getAccountId',
+        'corpId' => 'getCorpId',
+        'userid' => 'getUserid',
+        'status' => 'getStatus'
     ];
 
     /**
@@ -183,8 +192,10 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['miniGameTrackingParameter'] = isset($data['miniGameTrackingParameter']) ? $data['miniGameTrackingParameter'] : null;
-        $this->container['miniGameOpenlink'] = isset($data['miniGameOpenlink']) ? $data['miniGameOpenlink'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['corpId'] = isset($data['corpId']) ? $data['corpId'] : null;
+        $this->container['userid'] = isset($data['userid']) ? $data['userid'] : null;
+        $this->container['status'] = isset($data['status']) ? $data['status'] : null;
     }
 
     /**
@@ -212,49 +223,97 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets miniGameTrackingParameter
+     * Gets accountId
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getMiniGameTrackingParameter()
+    public function getAccountId()
     {
-        return $this->container['miniGameTrackingParameter'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets miniGameTrackingParameter
+     * Sets accountId
      *
-     * @param string|mixed $miniGameTrackingParameter miniGameTrackingParameter
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setMiniGameTrackingParameter($miniGameTrackingParameter)
+    public function setAccountId($accountId)
     {
-        $this->container['miniGameTrackingParameter'] = $miniGameTrackingParameter;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }
 
     /**
-     * Gets miniGameOpenlink
+     * Gets corpId
      *
      * @return string|mixed
      */
-    public function getMiniGameOpenlink()
+    public function getCorpId()
     {
-        return $this->container['miniGameOpenlink'];
+        return $this->container['corpId'];
     }
 
     /**
-     * Sets miniGameOpenlink
+     * Sets corpId
      *
-     * @param string|mixed $miniGameOpenlink miniGameOpenlink
+     * @param string|mixed $corpId corpId
      *
      * @return $this
      */
-    public function setMiniGameOpenlink($miniGameOpenlink)
+    public function setCorpId($corpId)
     {
-        $this->container['miniGameOpenlink'] = $miniGameOpenlink;
+        $this->container['corpId'] = $corpId;
+
+        return $this;
+    }
+
+    /**
+     * Gets userid
+     *
+     * @return string|mixed
+     */
+    public function getUserid()
+    {
+        return $this->container['userid'];
+    }
+
+    /**
+     * Sets userid
+     *
+     * @param string|mixed $userid userid
+     *
+     * @return $this
+     */
+    public function setUserid($userid)
+    {
+        $this->container['userid'] = $userid;
+
+        return $this;
+    }
+
+    /**
+     * Gets status
+     *
+     * @return int|mixed
+     */
+    public function getStatus()
+    {
+        return $this->container['status'];
+    }
+
+    /**
+     * Sets status
+     *
+     * @param int|mixed $status status
+     *
+     * @return $this
+     */
+    public function setStatus($status)
+    {
+        $this->container['status'] = $status;
 
         return $this;
     }

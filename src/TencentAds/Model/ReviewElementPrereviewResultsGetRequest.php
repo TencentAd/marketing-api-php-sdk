@@ -1,6 +1,6 @@
 <?php
 /**
- * MiniGameSpec
+ * ReviewElementPrereviewResultsGetRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MiniGameSpec Class Doc Comment
+ * ReviewElementPrereviewResultsGetRequest Class Doc Comment
  *
  * @category Class
- * @description 小游戏落地页信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MiniGameSpec implements ModelInterface, ArrayAccess
+class ReviewElementPrereviewResultsGetRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'mini_game_spec';
+    protected static $swaggerModelName = 'ReviewElementPrereviewResultsGetRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,10 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'miniGameTrackingParameter' => 'string',
-        'miniGameOpenlink' => 'string'
+        'accountId' => 'int',
+        'adgroupId' => 'int',
+        'elements' => '\TencentAds\Model\ElementStruct[]',
+        'supplement' => '\TencentAds\Model\SupplementStruct[]'
     ];
 
     /**
@@ -68,8 +69,10 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'miniGameTrackingParameter' => null,
-        'miniGameOpenlink' => null
+        'accountId' => 'int64',
+        'adgroupId' => 'int64',
+        'elements' => null,
+        'supplement' => null
     ];
 
     /**
@@ -99,8 +102,10 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'miniGameTrackingParameter' => 'mini_game_tracking_parameter',
-        'miniGameOpenlink' => 'mini_game_openlink'
+        'accountId' => 'account_id',
+        'adgroupId' => 'adgroup_id',
+        'elements' => 'elements',
+        'supplement' => 'supplement'
     ];
 
     /**
@@ -109,8 +114,10 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'miniGameTrackingParameter' => 'setMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'setMiniGameOpenlink'
+        'accountId' => 'setAccountId',
+        'adgroupId' => 'setAdgroupId',
+        'elements' => 'setElements',
+        'supplement' => 'setSupplement'
     ];
 
     /**
@@ -119,8 +126,10 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'miniGameTrackingParameter' => 'getMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'getMiniGameOpenlink'
+        'accountId' => 'getAccountId',
+        'adgroupId' => 'getAdgroupId',
+        'elements' => 'getElements',
+        'supplement' => 'getSupplement'
     ];
 
     /**
@@ -183,8 +192,10 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['miniGameTrackingParameter'] = isset($data['miniGameTrackingParameter']) ? $data['miniGameTrackingParameter'] : null;
-        $this->container['miniGameOpenlink'] = isset($data['miniGameOpenlink']) ? $data['miniGameOpenlink'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
+        $this->container['elements'] = isset($data['elements']) ? $data['elements'] : null;
+        $this->container['supplement'] = isset($data['supplement']) ? $data['supplement'] : null;
     }
 
     /**
@@ -212,49 +223,97 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets miniGameTrackingParameter
+     * Gets accountId
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getMiniGameTrackingParameter()
+    public function getAccountId()
     {
-        return $this->container['miniGameTrackingParameter'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets miniGameTrackingParameter
+     * Sets accountId
      *
-     * @param string|mixed $miniGameTrackingParameter miniGameTrackingParameter
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setMiniGameTrackingParameter($miniGameTrackingParameter)
+    public function setAccountId($accountId)
     {
-        $this->container['miniGameTrackingParameter'] = $miniGameTrackingParameter;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }
 
     /**
-     * Gets miniGameOpenlink
+     * Gets adgroupId
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getMiniGameOpenlink()
+    public function getAdgroupId()
     {
-        return $this->container['miniGameOpenlink'];
+        return $this->container['adgroupId'];
     }
 
     /**
-     * Sets miniGameOpenlink
+     * Sets adgroupId
      *
-     * @param string|mixed $miniGameOpenlink miniGameOpenlink
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
-    public function setMiniGameOpenlink($miniGameOpenlink)
+    public function setAdgroupId($adgroupId)
     {
-        $this->container['miniGameOpenlink'] = $miniGameOpenlink;
+        $this->container['adgroupId'] = $adgroupId;
+
+        return $this;
+    }
+
+    /**
+     * Gets elements
+     *
+     * @return \TencentAds\Model\ElementStruct[]|mixed
+     */
+    public function getElements()
+    {
+        return $this->container['elements'];
+    }
+
+    /**
+     * Sets elements
+     *
+     * @param \TencentAds\Model\ElementStruct[]|mixed $elements elements
+     *
+     * @return $this
+     */
+    public function setElements($elements)
+    {
+        $this->container['elements'] = $elements;
+
+        return $this;
+    }
+
+    /**
+     * Gets supplement
+     *
+     * @return \TencentAds\Model\SupplementStruct[]|mixed
+     */
+    public function getSupplement()
+    {
+        return $this->container['supplement'];
+    }
+
+    /**
+     * Sets supplement
+     *
+     * @param \TencentAds\Model\SupplementStruct[]|mixed $supplement supplement
+     *
+     * @return $this
+     */
+    public function setSupplement($supplement)
+    {
+        $this->container['supplement'] = $supplement;
 
         return $this;
     }

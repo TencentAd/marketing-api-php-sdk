@@ -1,6 +1,6 @@
 <?php
 /**
- * MiniGameSpec
+ * ReviewUrgeCreativesAddRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MiniGameSpec Class Doc Comment
+ * ReviewUrgeCreativesAddRequest Class Doc Comment
  *
  * @category Class
- * @description 小游戏落地页信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MiniGameSpec implements ModelInterface, ArrayAccess
+class ReviewUrgeCreativesAddRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'mini_game_spec';
+    protected static $swaggerModelName = 'ReviewUrgeCreativesAddRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,8 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'miniGameTrackingParameter' => 'string',
-        'miniGameOpenlink' => 'string'
+        'accountId' => 'int',
+        'adIdList' => 'int[]'
     ];
 
     /**
@@ -68,8 +67,8 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'miniGameTrackingParameter' => null,
-        'miniGameOpenlink' => null
+        'accountId' => 'int64',
+        'adIdList' => 'int64'
     ];
 
     /**
@@ -99,8 +98,8 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'miniGameTrackingParameter' => 'mini_game_tracking_parameter',
-        'miniGameOpenlink' => 'mini_game_openlink'
+        'accountId' => 'account_id',
+        'adIdList' => 'ad_id_list'
     ];
 
     /**
@@ -109,8 +108,8 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'miniGameTrackingParameter' => 'setMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'setMiniGameOpenlink'
+        'accountId' => 'setAccountId',
+        'adIdList' => 'setAdIdList'
     ];
 
     /**
@@ -119,8 +118,8 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'miniGameTrackingParameter' => 'getMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'getMiniGameOpenlink'
+        'accountId' => 'getAccountId',
+        'adIdList' => 'getAdIdList'
     ];
 
     /**
@@ -183,8 +182,8 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['miniGameTrackingParameter'] = isset($data['miniGameTrackingParameter']) ? $data['miniGameTrackingParameter'] : null;
-        $this->container['miniGameOpenlink'] = isset($data['miniGameOpenlink']) ? $data['miniGameOpenlink'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['adIdList'] = isset($data['adIdList']) ? $data['adIdList'] : null;
     }
 
     /**
@@ -212,49 +211,49 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets miniGameTrackingParameter
+     * Gets accountId
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getMiniGameTrackingParameter()
+    public function getAccountId()
     {
-        return $this->container['miniGameTrackingParameter'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets miniGameTrackingParameter
+     * Sets accountId
      *
-     * @param string|mixed $miniGameTrackingParameter miniGameTrackingParameter
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setMiniGameTrackingParameter($miniGameTrackingParameter)
+    public function setAccountId($accountId)
     {
-        $this->container['miniGameTrackingParameter'] = $miniGameTrackingParameter;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }
 
     /**
-     * Gets miniGameOpenlink
+     * Gets adIdList
      *
-     * @return string|mixed
+     * @return int[]|mixed
      */
-    public function getMiniGameOpenlink()
+    public function getAdIdList()
     {
-        return $this->container['miniGameOpenlink'];
+        return $this->container['adIdList'];
     }
 
     /**
-     * Sets miniGameOpenlink
+     * Sets adIdList
      *
-     * @param string|mixed $miniGameOpenlink miniGameOpenlink
+     * @param int[]|mixed $adIdList adIdList
      *
      * @return $this
      */
-    public function setMiniGameOpenlink($miniGameOpenlink)
+    public function setAdIdList($adIdList)
     {
-        $this->container['miniGameOpenlink'] = $miniGameOpenlink;
+        $this->container['adIdList'] = $adIdList;
 
         return $this;
     }

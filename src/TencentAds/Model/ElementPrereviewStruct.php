@@ -1,6 +1,6 @@
 <?php
 /**
- * MiniGameSpec
+ * ElementPrereviewStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MiniGameSpec Class Doc Comment
+ * ElementPrereviewStruct Class Doc Comment
  *
  * @category Class
- * @description 小游戏落地页信息
+ * @description 预审结果实体
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MiniGameSpec implements ModelInterface, ArrayAccess
+class ElementPrereviewStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'mini_game_spec';
+    protected static $swaggerModelName = 'element_prereview_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,10 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'miniGameTrackingParameter' => 'string',
-        'miniGameOpenlink' => 'string'
+        'elementType' => '\TencentAds\Model\PreReviewElementType',
+        'elementContent' => 'string',
+        'riskLevel' => '\TencentAds\Model\RiskLevel',
+        'preReviewDetails' => '\TencentAds\Model\PreReviewDetailStruct[]'
     ];
 
     /**
@@ -68,8 +70,10 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'miniGameTrackingParameter' => null,
-        'miniGameOpenlink' => null
+        'elementType' => null,
+        'elementContent' => null,
+        'riskLevel' => null,
+        'preReviewDetails' => null
     ];
 
     /**
@@ -99,8 +103,10 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'miniGameTrackingParameter' => 'mini_game_tracking_parameter',
-        'miniGameOpenlink' => 'mini_game_openlink'
+        'elementType' => 'element_type',
+        'elementContent' => 'element_content',
+        'riskLevel' => 'risk_level',
+        'preReviewDetails' => 'pre_review_details'
     ];
 
     /**
@@ -109,8 +115,10 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'miniGameTrackingParameter' => 'setMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'setMiniGameOpenlink'
+        'elementType' => 'setElementType',
+        'elementContent' => 'setElementContent',
+        'riskLevel' => 'setRiskLevel',
+        'preReviewDetails' => 'setPreReviewDetails'
     ];
 
     /**
@@ -119,8 +127,10 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'miniGameTrackingParameter' => 'getMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'getMiniGameOpenlink'
+        'elementType' => 'getElementType',
+        'elementContent' => 'getElementContent',
+        'riskLevel' => 'getRiskLevel',
+        'preReviewDetails' => 'getPreReviewDetails'
     ];
 
     /**
@@ -183,8 +193,10 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['miniGameTrackingParameter'] = isset($data['miniGameTrackingParameter']) ? $data['miniGameTrackingParameter'] : null;
-        $this->container['miniGameOpenlink'] = isset($data['miniGameOpenlink']) ? $data['miniGameOpenlink'] : null;
+        $this->container['elementType'] = isset($data['elementType']) ? $data['elementType'] : null;
+        $this->container['elementContent'] = isset($data['elementContent']) ? $data['elementContent'] : null;
+        $this->container['riskLevel'] = isset($data['riskLevel']) ? $data['riskLevel'] : null;
+        $this->container['preReviewDetails'] = isset($data['preReviewDetails']) ? $data['preReviewDetails'] : null;
     }
 
     /**
@@ -212,49 +224,97 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets miniGameTrackingParameter
+     * Gets elementType
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\PreReviewElementType|mixed
      */
-    public function getMiniGameTrackingParameter()
+    public function getElementType()
     {
-        return $this->container['miniGameTrackingParameter'];
+        return $this->container['elementType'];
     }
 
     /**
-     * Sets miniGameTrackingParameter
+     * Sets elementType
      *
-     * @param string|mixed $miniGameTrackingParameter miniGameTrackingParameter
+     * @param \TencentAds\Model\PreReviewElementType|mixed $elementType elementType
      *
      * @return $this
      */
-    public function setMiniGameTrackingParameter($miniGameTrackingParameter)
+    public function setElementType($elementType)
     {
-        $this->container['miniGameTrackingParameter'] = $miniGameTrackingParameter;
+        $this->container['elementType'] = $elementType;
 
         return $this;
     }
 
     /**
-     * Gets miniGameOpenlink
+     * Gets elementContent
      *
      * @return string|mixed
      */
-    public function getMiniGameOpenlink()
+    public function getElementContent()
     {
-        return $this->container['miniGameOpenlink'];
+        return $this->container['elementContent'];
     }
 
     /**
-     * Sets miniGameOpenlink
+     * Sets elementContent
      *
-     * @param string|mixed $miniGameOpenlink miniGameOpenlink
+     * @param string|mixed $elementContent elementContent
      *
      * @return $this
      */
-    public function setMiniGameOpenlink($miniGameOpenlink)
+    public function setElementContent($elementContent)
     {
-        $this->container['miniGameOpenlink'] = $miniGameOpenlink;
+        $this->container['elementContent'] = $elementContent;
+
+        return $this;
+    }
+
+    /**
+     * Gets riskLevel
+     *
+     * @return \TencentAds\Model\RiskLevel|mixed
+     */
+    public function getRiskLevel()
+    {
+        return $this->container['riskLevel'];
+    }
+
+    /**
+     * Sets riskLevel
+     *
+     * @param \TencentAds\Model\RiskLevel|mixed $riskLevel riskLevel
+     *
+     * @return $this
+     */
+    public function setRiskLevel($riskLevel)
+    {
+        $this->container['riskLevel'] = $riskLevel;
+
+        return $this;
+    }
+
+    /**
+     * Gets preReviewDetails
+     *
+     * @return \TencentAds\Model\PreReviewDetailStruct[]|mixed
+     */
+    public function getPreReviewDetails()
+    {
+        return $this->container['preReviewDetails'];
+    }
+
+    /**
+     * Sets preReviewDetails
+     *
+     * @param \TencentAds\Model\PreReviewDetailStruct[]|mixed $preReviewDetails preReviewDetails
+     *
+     * @return $this
+     */
+    public function setPreReviewDetails($preReviewDetails)
+    {
+        $this->container['preReviewDetails'] = $preReviewDetails;
 
         return $this;
     }

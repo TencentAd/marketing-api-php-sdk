@@ -1,6 +1,6 @@
 <?php
 /**
- * MiniGameSpec
+ * ElementStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MiniGameSpec Class Doc Comment
+ * ElementStruct Class Doc Comment
  *
  * @category Class
- * @description 小游戏落地页信息
+ * @description 元素信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MiniGameSpec implements ModelInterface, ArrayAccess
+class ElementStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'mini_game_spec';
+    protected static $swaggerModelName = 'element_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,9 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'miniGameTrackingParameter' => 'string',
-        'miniGameOpenlink' => 'string'
+        'elementType' => '\TencentAds\Model\PreReviewElementType',
+        'elementContent' => 'string',
+        'elementKey' => '\TencentAds\Model\PreReviewElementKey'
     ];
 
     /**
@@ -68,8 +69,9 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'miniGameTrackingParameter' => null,
-        'miniGameOpenlink' => null
+        'elementType' => null,
+        'elementContent' => null,
+        'elementKey' => null
     ];
 
     /**
@@ -99,8 +101,9 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'miniGameTrackingParameter' => 'mini_game_tracking_parameter',
-        'miniGameOpenlink' => 'mini_game_openlink'
+        'elementType' => 'element_type',
+        'elementContent' => 'element_content',
+        'elementKey' => 'element_key'
     ];
 
     /**
@@ -109,8 +112,9 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'miniGameTrackingParameter' => 'setMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'setMiniGameOpenlink'
+        'elementType' => 'setElementType',
+        'elementContent' => 'setElementContent',
+        'elementKey' => 'setElementKey'
     ];
 
     /**
@@ -119,8 +123,9 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'miniGameTrackingParameter' => 'getMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'getMiniGameOpenlink'
+        'elementType' => 'getElementType',
+        'elementContent' => 'getElementContent',
+        'elementKey' => 'getElementKey'
     ];
 
     /**
@@ -183,8 +188,9 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['miniGameTrackingParameter'] = isset($data['miniGameTrackingParameter']) ? $data['miniGameTrackingParameter'] : null;
-        $this->container['miniGameOpenlink'] = isset($data['miniGameOpenlink']) ? $data['miniGameOpenlink'] : null;
+        $this->container['elementType'] = isset($data['elementType']) ? $data['elementType'] : null;
+        $this->container['elementContent'] = isset($data['elementContent']) ? $data['elementContent'] : null;
+        $this->container['elementKey'] = isset($data['elementKey']) ? $data['elementKey'] : null;
     }
 
     /**
@@ -212,49 +218,73 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets miniGameTrackingParameter
+     * Gets elementType
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\PreReviewElementType|mixed
      */
-    public function getMiniGameTrackingParameter()
+    public function getElementType()
     {
-        return $this->container['miniGameTrackingParameter'];
+        return $this->container['elementType'];
     }
 
     /**
-     * Sets miniGameTrackingParameter
+     * Sets elementType
      *
-     * @param string|mixed $miniGameTrackingParameter miniGameTrackingParameter
+     * @param \TencentAds\Model\PreReviewElementType|mixed $elementType elementType
      *
      * @return $this
      */
-    public function setMiniGameTrackingParameter($miniGameTrackingParameter)
+    public function setElementType($elementType)
     {
-        $this->container['miniGameTrackingParameter'] = $miniGameTrackingParameter;
+        $this->container['elementType'] = $elementType;
 
         return $this;
     }
 
     /**
-     * Gets miniGameOpenlink
+     * Gets elementContent
      *
      * @return string|mixed
      */
-    public function getMiniGameOpenlink()
+    public function getElementContent()
     {
-        return $this->container['miniGameOpenlink'];
+        return $this->container['elementContent'];
     }
 
     /**
-     * Sets miniGameOpenlink
+     * Sets elementContent
      *
-     * @param string|mixed $miniGameOpenlink miniGameOpenlink
+     * @param string|mixed $elementContent elementContent
      *
      * @return $this
      */
-    public function setMiniGameOpenlink($miniGameOpenlink)
+    public function setElementContent($elementContent)
     {
-        $this->container['miniGameOpenlink'] = $miniGameOpenlink;
+        $this->container['elementContent'] = $elementContent;
+
+        return $this;
+    }
+
+    /**
+     * Gets elementKey
+     *
+     * @return \TencentAds\Model\PreReviewElementKey|mixed
+     */
+    public function getElementKey()
+    {
+        return $this->container['elementKey'];
+    }
+
+    /**
+     * Sets elementKey
+     *
+     * @param \TencentAds\Model\PreReviewElementKey|mixed $elementKey elementKey
+     *
+     * @return $this
+     */
+    public function setElementKey($elementKey)
+    {
+        $this->container['elementKey'] = $elementKey;
 
         return $this;
     }

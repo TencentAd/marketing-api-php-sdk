@@ -1,6 +1,6 @@
 <?php
 /**
- * MiniGameSpec
+ * ReviewUrgeCreativesAddResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MiniGameSpec Class Doc Comment
+ * ReviewUrgeCreativesAddResponse Class Doc Comment
  *
  * @category Class
- * @description 小游戏落地页信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MiniGameSpec implements ModelInterface, ArrayAccess
+class ReviewUrgeCreativesAddResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'mini_game_spec';
+    protected static $swaggerModelName = 'ReviewUrgeCreativesAddResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,11 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'miniGameTrackingParameter' => 'string',
-        'miniGameOpenlink' => 'string'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\ReviewUrgeCreativesAddResponseData'
     ];
 
     /**
@@ -68,8 +70,11 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'miniGameTrackingParameter' => null,
-        'miniGameOpenlink' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -99,8 +104,11 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'miniGameTrackingParameter' => 'mini_game_tracking_parameter',
-        'miniGameOpenlink' => 'mini_game_openlink'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -109,8 +117,11 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'miniGameTrackingParameter' => 'setMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'setMiniGameOpenlink'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -119,8 +130,11 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'miniGameTrackingParameter' => 'getMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'getMiniGameOpenlink'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -183,8 +197,11 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['miniGameTrackingParameter'] = isset($data['miniGameTrackingParameter']) ? $data['miniGameTrackingParameter'] : null;
-        $this->container['miniGameOpenlink'] = isset($data['miniGameOpenlink']) ? $data['miniGameOpenlink'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -212,49 +229,121 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets miniGameTrackingParameter
+     * Gets code
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getMiniGameTrackingParameter()
+    public function getCode()
     {
-        return $this->container['miniGameTrackingParameter'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets miniGameTrackingParameter
+     * Sets code
      *
-     * @param string|mixed $miniGameTrackingParameter miniGameTrackingParameter
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setMiniGameTrackingParameter($miniGameTrackingParameter)
+    public function setCode($code)
     {
-        $this->container['miniGameTrackingParameter'] = $miniGameTrackingParameter;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets miniGameOpenlink
+     * Gets message
      *
      * @return string|mixed
      */
-    public function getMiniGameOpenlink()
+    public function getMessage()
     {
-        return $this->container['miniGameOpenlink'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets miniGameOpenlink
+     * Sets message
      *
-     * @param string|mixed $miniGameOpenlink miniGameOpenlink
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setMiniGameOpenlink($miniGameOpenlink)
+    public function setMessage($message)
     {
-        $this->container['miniGameOpenlink'] = $miniGameOpenlink;
+        $this->container['message'] = $message;
+
+        return $this;
+    }
+
+    /**
+     * Gets messageCn
+     *
+     * @return string|mixed
+     */
+    public function getMessageCn()
+    {
+        return $this->container['messageCn'];
+    }
+
+    /**
+     * Sets messageCn
+     *
+     * @param string|mixed $messageCn messageCn
+     *
+     * @return $this
+     */
+    public function setMessageCn($messageCn)
+    {
+        $this->container['messageCn'] = $messageCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets errors
+     *
+     * @return \TencentAds\Model\ApiErrorStruct[]|mixed
+     */
+    public function getErrors()
+    {
+        return $this->container['errors'];
+    }
+
+    /**
+     * Sets errors
+     *
+     * @param \TencentAds\Model\ApiErrorStruct[]|mixed $errors errors
+     *
+     * @return $this
+     */
+    public function setErrors($errors)
+    {
+        $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\ReviewUrgeCreativesAddResponseData|mixed
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\ReviewUrgeCreativesAddResponseData|mixed $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }

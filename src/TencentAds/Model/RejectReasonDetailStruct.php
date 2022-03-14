@@ -1,6 +1,6 @@
 <?php
 /**
- * MiniGameSpec
+ * RejectReasonDetailStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MiniGameSpec Class Doc Comment
+ * RejectReasonDetailStruct Class Doc Comment
  *
  * @category Class
- * @description 小游戏落地页信息
+ * @description 拒绝原因明细
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MiniGameSpec implements ModelInterface, ArrayAccess
+class RejectReasonDetailStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'mini_game_spec';
+    protected static $swaggerModelName = 'reject_reason_detail_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,11 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'miniGameTrackingParameter' => 'string',
-        'miniGameOpenlink' => 'string'
+        'rejectReasonId' => 'string',
+        'rejectReasonContent' => 'string',
+        'caseDoc' => 'string',
+        'caseContent' => 'string',
+        'rejectInfoLocation' => '\TencentAds\Model\RejectInfoLocation[]'
     ];
 
     /**
@@ -68,8 +71,11 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'miniGameTrackingParameter' => null,
-        'miniGameOpenlink' => null
+        'rejectReasonId' => null,
+        'rejectReasonContent' => null,
+        'caseDoc' => null,
+        'caseContent' => null,
+        'rejectInfoLocation' => null
     ];
 
     /**
@@ -99,8 +105,11 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'miniGameTrackingParameter' => 'mini_game_tracking_parameter',
-        'miniGameOpenlink' => 'mini_game_openlink'
+        'rejectReasonId' => 'reject_reason_id',
+        'rejectReasonContent' => 'reject_reason_content',
+        'caseDoc' => 'case_doc',
+        'caseContent' => 'case_content',
+        'rejectInfoLocation' => 'reject_info_location'
     ];
 
     /**
@@ -109,8 +118,11 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'miniGameTrackingParameter' => 'setMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'setMiniGameOpenlink'
+        'rejectReasonId' => 'setRejectReasonId',
+        'rejectReasonContent' => 'setRejectReasonContent',
+        'caseDoc' => 'setCaseDoc',
+        'caseContent' => 'setCaseContent',
+        'rejectInfoLocation' => 'setRejectInfoLocation'
     ];
 
     /**
@@ -119,8 +131,11 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'miniGameTrackingParameter' => 'getMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'getMiniGameOpenlink'
+        'rejectReasonId' => 'getRejectReasonId',
+        'rejectReasonContent' => 'getRejectReasonContent',
+        'caseDoc' => 'getCaseDoc',
+        'caseContent' => 'getCaseContent',
+        'rejectInfoLocation' => 'getRejectInfoLocation'
     ];
 
     /**
@@ -183,8 +198,11 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['miniGameTrackingParameter'] = isset($data['miniGameTrackingParameter']) ? $data['miniGameTrackingParameter'] : null;
-        $this->container['miniGameOpenlink'] = isset($data['miniGameOpenlink']) ? $data['miniGameOpenlink'] : null;
+        $this->container['rejectReasonId'] = isset($data['rejectReasonId']) ? $data['rejectReasonId'] : null;
+        $this->container['rejectReasonContent'] = isset($data['rejectReasonContent']) ? $data['rejectReasonContent'] : null;
+        $this->container['caseDoc'] = isset($data['caseDoc']) ? $data['caseDoc'] : null;
+        $this->container['caseContent'] = isset($data['caseContent']) ? $data['caseContent'] : null;
+        $this->container['rejectInfoLocation'] = isset($data['rejectInfoLocation']) ? $data['rejectInfoLocation'] : null;
     }
 
     /**
@@ -212,49 +230,121 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets miniGameTrackingParameter
+     * Gets rejectReasonId
      *
      * @return string|mixed
      */
-    public function getMiniGameTrackingParameter()
+    public function getRejectReasonId()
     {
-        return $this->container['miniGameTrackingParameter'];
+        return $this->container['rejectReasonId'];
     }
 
     /**
-     * Sets miniGameTrackingParameter
+     * Sets rejectReasonId
      *
-     * @param string|mixed $miniGameTrackingParameter miniGameTrackingParameter
+     * @param string|mixed $rejectReasonId rejectReasonId
      *
      * @return $this
      */
-    public function setMiniGameTrackingParameter($miniGameTrackingParameter)
+    public function setRejectReasonId($rejectReasonId)
     {
-        $this->container['miniGameTrackingParameter'] = $miniGameTrackingParameter;
+        $this->container['rejectReasonId'] = $rejectReasonId;
 
         return $this;
     }
 
     /**
-     * Gets miniGameOpenlink
+     * Gets rejectReasonContent
      *
      * @return string|mixed
      */
-    public function getMiniGameOpenlink()
+    public function getRejectReasonContent()
     {
-        return $this->container['miniGameOpenlink'];
+        return $this->container['rejectReasonContent'];
     }
 
     /**
-     * Sets miniGameOpenlink
+     * Sets rejectReasonContent
      *
-     * @param string|mixed $miniGameOpenlink miniGameOpenlink
+     * @param string|mixed $rejectReasonContent rejectReasonContent
      *
      * @return $this
      */
-    public function setMiniGameOpenlink($miniGameOpenlink)
+    public function setRejectReasonContent($rejectReasonContent)
     {
-        $this->container['miniGameOpenlink'] = $miniGameOpenlink;
+        $this->container['rejectReasonContent'] = $rejectReasonContent;
+
+        return $this;
+    }
+
+    /**
+     * Gets caseDoc
+     *
+     * @return string|mixed
+     */
+    public function getCaseDoc()
+    {
+        return $this->container['caseDoc'];
+    }
+
+    /**
+     * Sets caseDoc
+     *
+     * @param string|mixed $caseDoc caseDoc
+     *
+     * @return $this
+     */
+    public function setCaseDoc($caseDoc)
+    {
+        $this->container['caseDoc'] = $caseDoc;
+
+        return $this;
+    }
+
+    /**
+     * Gets caseContent
+     *
+     * @return string|mixed
+     */
+    public function getCaseContent()
+    {
+        return $this->container['caseContent'];
+    }
+
+    /**
+     * Sets caseContent
+     *
+     * @param string|mixed $caseContent caseContent
+     *
+     * @return $this
+     */
+    public function setCaseContent($caseContent)
+    {
+        $this->container['caseContent'] = $caseContent;
+
+        return $this;
+    }
+
+    /**
+     * Gets rejectInfoLocation
+     *
+     * @return \TencentAds\Model\RejectInfoLocation[]|mixed
+     */
+    public function getRejectInfoLocation()
+    {
+        return $this->container['rejectInfoLocation'];
+    }
+
+    /**
+     * Sets rejectInfoLocation
+     *
+     * @param \TencentAds\Model\RejectInfoLocation[]|mixed $rejectInfoLocation rejectInfoLocation
+     *
+     * @return $this
+     */
+    public function setRejectInfoLocation($rejectInfoLocation)
+    {
+        $this->container['rejectInfoLocation'] = $rejectInfoLocation;
 
         return $this;
     }

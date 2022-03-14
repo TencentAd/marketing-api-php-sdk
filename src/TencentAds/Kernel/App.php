@@ -111,6 +111,8 @@ use TencentAds\Container\PropertySetsApiContainer;
 use TencentAds\Container\QualificationsApiContainer;
 use TencentAds\Container\RealtimeCostApiContainer;
 use TencentAds\Container\ReportApiContainer;
+use TencentAds\Container\ReviewElementPrereviewResultsApiContainer;
+use TencentAds\Container\ReviewUrgeCreativesApiContainer;
 use TencentAds\Container\SceneSpecTagsApiContainer;
 use TencentAds\Container\ShopApiContainer;
 use TencentAds\Container\SplitTestsApiContainer;
@@ -145,6 +147,7 @@ use TencentAds\Container\WechatFundStatementsDetailedApiContainer;
 use TencentAds\Container\WechatFundTransferApiContainer;
 use TencentAds\Container\WechatFundsApiContainer;
 use TencentAds\Container\WechatPagesApiContainer;
+use TencentAds\Container\WechatPagesCsgroupStatusApiContainer;
 use TencentAds\Container\WechatPagesCsgroupUserApiContainer;
 use TencentAds\Container\WechatPagesCsgrouplistApiContainer;
 use TencentAds\Container\WechatPagesCustomApiContainer;
@@ -491,6 +494,12 @@ class App
     /** @var ReportApiContainer */
     public $reportApiContainer;
 
+    /** @var ReviewElementPrereviewResultsApiContainer */
+    public $reviewElementPrereviewResultsApiContainer;
+
+    /** @var ReviewUrgeCreativesApiContainer */
+    public $reviewUrgeCreativesApiContainer;
+
     /** @var SceneSpecTagsApiContainer */
     public $sceneSpecTagsApiContainer;
 
@@ -592,6 +601,9 @@ class App
 
     /** @var WechatPagesApiContainer */
     public $wechatPagesApiContainer;
+
+    /** @var WechatPagesCsgroupStatusApiContainer */
+    public $wechatPagesCsgroupStatusApiContainer;
 
     /** @var WechatPagesCsgroupUserApiContainer */
     public $wechatPagesCsgroupUserApiContainer;
@@ -2172,6 +2184,34 @@ class App
 
 
     /**
+     * @return ReviewElementPrereviewResultsApiContainer
+     */
+    public function reviewElementPrereviewResults()
+    {
+        if (empty($this->reviewElementPrereviewResultsApiContainer)) {
+            $container = new ReviewElementPrereviewResultsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->reviewElementPrereviewResultsApiContainer = $container;
+        }
+        return $this->reviewElementPrereviewResultsApiContainer;
+    }
+
+
+    /**
+     * @return ReviewUrgeCreativesApiContainer
+     */
+    public function reviewUrgeCreatives()
+    {
+        if (empty($this->reviewUrgeCreativesApiContainer)) {
+            $container = new ReviewUrgeCreativesApiContainer();
+            $container->init($this, $this->getClient());
+            $this->reviewUrgeCreativesApiContainer = $container;
+        }
+        return $this->reviewUrgeCreativesApiContainer;
+    }
+
+
+    /**
      * @return SceneSpecTagsApiContainer
      */
     public function sceneSpecTags()
@@ -2644,6 +2684,20 @@ class App
             $this->wechatPagesApiContainer = $container;
         }
         return $this->wechatPagesApiContainer;
+    }
+
+
+    /**
+     * @return WechatPagesCsgroupStatusApiContainer
+     */
+    public function wechatPagesCsgroupStatus()
+    {
+        if (empty($this->wechatPagesCsgroupStatusApiContainer)) {
+            $container = new WechatPagesCsgroupStatusApiContainer();
+            $container->init($this, $this->getClient());
+            $this->wechatPagesCsgroupStatusApiContainer = $container;
+        }
+        return $this->wechatPagesCsgroupStatusApiContainer;
     }
 
 

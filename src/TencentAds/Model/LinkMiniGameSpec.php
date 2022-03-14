@@ -1,6 +1,6 @@
 <?php
 /**
- * MiniGameSpec
+ * LinkMiniGameSpec
  *
  * PHP version 5
  *
@@ -33,7 +33,7 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MiniGameSpec Class Doc Comment
+ * LinkMiniGameSpec Class Doc Comment
  *
  * @category Class
  * @description 小游戏落地页信息
@@ -41,7 +41,7 @@ use \TencentAds\ObjectSerializer;
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MiniGameSpec implements ModelInterface, ArrayAccess
+class LinkMiniGameSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'mini_game_spec';
+    protected static $swaggerModelName = 'link_mini_game_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'miniGameTrackingParameter' => 'string',
-        'miniGameOpenlink' => 'string'
+        'miniGameTrackingParameter' => 'string'
     ];
 
     /**
@@ -68,8 +67,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'miniGameTrackingParameter' => null,
-        'miniGameOpenlink' => null
+        'miniGameTrackingParameter' => null
     ];
 
     /**
@@ -99,8 +97,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'miniGameTrackingParameter' => 'mini_game_tracking_parameter',
-        'miniGameOpenlink' => 'mini_game_openlink'
+        'miniGameTrackingParameter' => 'mini_game_tracking_parameter'
     ];
 
     /**
@@ -109,8 +106,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'miniGameTrackingParameter' => 'setMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'setMiniGameOpenlink'
+        'miniGameTrackingParameter' => 'setMiniGameTrackingParameter'
     ];
 
     /**
@@ -119,8 +115,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'miniGameTrackingParameter' => 'getMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'getMiniGameOpenlink'
+        'miniGameTrackingParameter' => 'getMiniGameTrackingParameter'
     ];
 
     /**
@@ -184,7 +179,6 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['miniGameTrackingParameter'] = isset($data['miniGameTrackingParameter']) ? $data['miniGameTrackingParameter'] : null;
-        $this->container['miniGameOpenlink'] = isset($data['miniGameOpenlink']) ? $data['miniGameOpenlink'] : null;
     }
 
     /**
@@ -231,30 +225,6 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
     public function setMiniGameTrackingParameter($miniGameTrackingParameter)
     {
         $this->container['miniGameTrackingParameter'] = $miniGameTrackingParameter;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameOpenlink
-     *
-     * @return string|mixed
-     */
-    public function getMiniGameOpenlink()
-    {
-        return $this->container['miniGameOpenlink'];
-    }
-
-    /**
-     * Sets miniGameOpenlink
-     *
-     * @param string|mixed $miniGameOpenlink miniGameOpenlink
-     *
-     * @return $this
-     */
-    public function setMiniGameOpenlink($miniGameOpenlink)
-    {
-        $this->container['miniGameOpenlink'] = $miniGameOpenlink;
 
         return $this;
     }
