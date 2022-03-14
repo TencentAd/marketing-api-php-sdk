@@ -50,6 +50,7 @@ class MediaSourceType
     const VIDEO_MAKER_XSJ = 'SOURCE_TYPE_VIDEO_MAKER_XSJ';
     const TCC = 'SOURCE_TYPE_TCC';
     const DERIVE = 'SOURCE_TYPE_DERIVE';
+    const DERIVATION = 'SOURCE_TYPE_DERIVATION';
     
     /**
      * Gets allowable values of the enum
@@ -64,6 +65,7 @@ class MediaSourceType
             self::VIDEO_MAKER_XSJ,
             self::TCC,
             self::DERIVE,
+            self::DERIVATION,
         ];
     }
 }
