@@ -1,6 +1,6 @@
 <?php
 /**
- * BidAdjustment
+ * RegionGroupPackageStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * BidAdjustment Class Doc Comment
+ * RegionGroupPackageStruct Class Doc Comment
  *
  * @category Class
- * @description 出价系数设置内容，仅当投放oCPC、oCPM广告时可使用
+ * @description 分城市出价
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class BidAdjustment implements ModelInterface, ArrayAccess
+class RegionGroupPackageStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class BidAdjustment implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'bid_adjustment';
+    protected static $swaggerModelName = 'region_group_package_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,9 @@ class BidAdjustment implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'siteSetPackage' => '\TencentAds\Model\SiteSetPackageStruct[]',
-        'regionGroupPackage' => '\TencentAds\Model\RegionGroupPackageStruct[]'
+        'regionList' => 'int[]',
+        'bidCoefficient' => 'double',
+        'deepBidCoefficient' => 'double'
     ];
 
     /**
@@ -68,8 +69,9 @@ class BidAdjustment implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'siteSetPackage' => null,
-        'regionGroupPackage' => null
+        'regionList' => 'int64',
+        'bidCoefficient' => 'double',
+        'deepBidCoefficient' => 'double'
     ];
 
     /**
@@ -99,8 +101,9 @@ class BidAdjustment implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'siteSetPackage' => 'site_set_package',
-        'regionGroupPackage' => 'region_group_package'
+        'regionList' => 'region_list',
+        'bidCoefficient' => 'bid_coefficient',
+        'deepBidCoefficient' => 'deep_bid_coefficient'
     ];
 
     /**
@@ -109,8 +112,9 @@ class BidAdjustment implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'siteSetPackage' => 'setSiteSetPackage',
-        'regionGroupPackage' => 'setRegionGroupPackage'
+        'regionList' => 'setRegionList',
+        'bidCoefficient' => 'setBidCoefficient',
+        'deepBidCoefficient' => 'setDeepBidCoefficient'
     ];
 
     /**
@@ -119,8 +123,9 @@ class BidAdjustment implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'siteSetPackage' => 'getSiteSetPackage',
-        'regionGroupPackage' => 'getRegionGroupPackage'
+        'regionList' => 'getRegionList',
+        'bidCoefficient' => 'getBidCoefficient',
+        'deepBidCoefficient' => 'getDeepBidCoefficient'
     ];
 
     /**
@@ -183,8 +188,9 @@ class BidAdjustment implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['siteSetPackage'] = isset($data['siteSetPackage']) ? $data['siteSetPackage'] : null;
-        $this->container['regionGroupPackage'] = isset($data['regionGroupPackage']) ? $data['regionGroupPackage'] : null;
+        $this->container['regionList'] = isset($data['regionList']) ? $data['regionList'] : null;
+        $this->container['bidCoefficient'] = isset($data['bidCoefficient']) ? $data['bidCoefficient'] : null;
+        $this->container['deepBidCoefficient'] = isset($data['deepBidCoefficient']) ? $data['deepBidCoefficient'] : null;
     }
 
     /**
@@ -212,49 +218,73 @@ class BidAdjustment implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets siteSetPackage
+     * Gets regionList
      *
-     * @return \TencentAds\Model\SiteSetPackageStruct[]|mixed
+     * @return int[]|mixed
      */
-    public function getSiteSetPackage()
+    public function getRegionList()
     {
-        return $this->container['siteSetPackage'];
+        return $this->container['regionList'];
     }
 
     /**
-     * Sets siteSetPackage
+     * Sets regionList
      *
-     * @param \TencentAds\Model\SiteSetPackageStruct[]|mixed $siteSetPackage siteSetPackage
+     * @param int[]|mixed $regionList regionList
      *
      * @return $this
      */
-    public function setSiteSetPackage($siteSetPackage)
+    public function setRegionList($regionList)
     {
-        $this->container['siteSetPackage'] = $siteSetPackage;
+        $this->container['regionList'] = $regionList;
 
         return $this;
     }
 
     /**
-     * Gets regionGroupPackage
+     * Gets bidCoefficient
      *
-     * @return \TencentAds\Model\RegionGroupPackageStruct[]|mixed
+     * @return double|mixed
      */
-    public function getRegionGroupPackage()
+    public function getBidCoefficient()
     {
-        return $this->container['regionGroupPackage'];
+        return $this->container['bidCoefficient'];
     }
 
     /**
-     * Sets regionGroupPackage
+     * Sets bidCoefficient
      *
-     * @param \TencentAds\Model\RegionGroupPackageStruct[]|mixed $regionGroupPackage regionGroupPackage
+     * @param double|mixed $bidCoefficient bidCoefficient
      *
      * @return $this
      */
-    public function setRegionGroupPackage($regionGroupPackage)
+    public function setBidCoefficient($bidCoefficient)
     {
-        $this->container['regionGroupPackage'] = $regionGroupPackage;
+        $this->container['bidCoefficient'] = $bidCoefficient;
+
+        return $this;
+    }
+
+    /**
+     * Gets deepBidCoefficient
+     *
+     * @return double|mixed
+     */
+    public function getDeepBidCoefficient()
+    {
+        return $this->container['deepBidCoefficient'];
+    }
+
+    /**
+     * Sets deepBidCoefficient
+     *
+     * @param double|mixed $deepBidCoefficient deepBidCoefficient
+     *
+     * @return $this
+     */
+    public function setDeepBidCoefficient($deepBidCoefficient)
+    {
+        $this->container['deepBidCoefficient'] = $deepBidCoefficient;
 
         return $this;
     }
