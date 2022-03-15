@@ -48,6 +48,10 @@ class DynamicAdTemplateOwnershipType
     const PUBLIC_TEMPLATE = 'PUBLIC_TEMPLATE';
     const SELF_OWNED_TEMPLATE = 'SELF_OWNED_TEMPLATE';
     const GRANTED_TEMPLATE = 'GRANTED_TEMPLATE';
+    const ALL = 'ALL';
+    const SELF_OWNED = 'SELF_OWNED';
+    const GRANTED = 'GRANTED';
+    const PRODUCT_CATALOG_OWNED = 'PRODUCT_CATALOG_OWNED';
     
     /**
      * Gets allowable values of the enum
@@ -60,6 +64,10 @@ class DynamicAdTemplateOwnershipType
             self::PUBLIC_TEMPLATE,
             self::SELF_OWNED_TEMPLATE,
             self::GRANTED_TEMPLATE,
+            self::ALL,
+            self::SELF_OWNED,
+            self::GRANTED,
+            self::PRODUCT_CATALOG_OWNED,
         ];
     }
 }

@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * AdNum Class Doc Comment
  *
  * @category Class
- * @description 用于投放的的商品数量
+ * @description 动态商品广告（DPA）类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
