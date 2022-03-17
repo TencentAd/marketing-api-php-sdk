@@ -114,6 +114,7 @@ class LandingPageType
     const H5 = 'H5';
     const MINI_PROGRAM = 'MINI_PROGRAM';
     const UNIVERSAL_LINK = 'UNIVERSAL_LINK';
+    const LANDING_PAGE_TYPE_FENGSHU_MINI_PROGRAM = 'LANDING_PAGE_TYPE_FENGSHU_MINI_PROGRAM';
     const _DEFAULT = 'DEFAULT';
     const DEEP_LINK_IOS = 'DEEP_LINK_IOS';
     const DEEP_LINK_ANDROID = 'DEEP_LINK_ANDROID';
@@ -195,6 +196,7 @@ class LandingPageType
             self::H5,
             self::MINI_PROGRAM,
             self::UNIVERSAL_LINK,
+            self::LANDING_PAGE_TYPE_FENGSHU_MINI_PROGRAM,
             self::_DEFAULT,
             self::DEEP_LINK_IOS,
             self::DEEP_LINK_ANDROID,

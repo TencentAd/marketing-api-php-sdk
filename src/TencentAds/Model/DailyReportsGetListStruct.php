@@ -464,6 +464,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoLiveShareUserCount' => 'int',
         'videoLiveClickCommodityUserCount' => 'int',
         'videoLiveCommodityBubbleExpCount' => 'int',
+        'scanCodeAddFansUv' => 'int',
+        'scanCodeAddFansCount' => 'int',
+        'scanCodeAddFansUvCost' => 'int',
+        'scanCodeAddFansCountCost' => 'int',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
         'incomeVal1' => 'int',
@@ -1092,6 +1096,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoLiveShareUserCount' => 'int64',
         'videoLiveClickCommodityUserCount' => 'int64',
         'videoLiveCommodityBubbleExpCount' => 'int64',
+        'scanCodeAddFansUv' => 'int64',
+        'scanCodeAddFansCount' => 'int64',
+        'scanCodeAddFansUvCost' => 'int64',
+        'scanCodeAddFansCountCost' => 'int64',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
         'incomeVal1' => 'int64',
@@ -1741,6 +1749,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoLiveShareUserCount' => 'video_live_share_user_count',
         'videoLiveClickCommodityUserCount' => 'video_live_click_commodity_user_count',
         'videoLiveCommodityBubbleExpCount' => 'video_live_commodity_bubble_exp_count',
+        'scanCodeAddFansUv' => 'scan_code_add_fans_uv',
+        'scanCodeAddFansCount' => 'scan_code_add_fans_count',
+        'scanCodeAddFansUvCost' => 'scan_code_add_fans_uv_cost',
+        'scanCodeAddFansCountCost' => 'scan_code_add_fans_count_cost',
         'requestConversionsCount' => 'request_conversions_count',
         'requestConversionsCost' => 'request_conversions_cost',
         'incomeVal1' => 'income_val_1',
@@ -2369,6 +2381,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoLiveShareUserCount' => 'setVideoLiveShareUserCount',
         'videoLiveClickCommodityUserCount' => 'setVideoLiveClickCommodityUserCount',
         'videoLiveCommodityBubbleExpCount' => 'setVideoLiveCommodityBubbleExpCount',
+        'scanCodeAddFansUv' => 'setScanCodeAddFansUv',
+        'scanCodeAddFansCount' => 'setScanCodeAddFansCount',
+        'scanCodeAddFansUvCost' => 'setScanCodeAddFansUvCost',
+        'scanCodeAddFansCountCost' => 'setScanCodeAddFansCountCost',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'requestConversionsCost' => 'setRequestConversionsCost',
         'incomeVal1' => 'setIncomeVal1',
@@ -2997,6 +3013,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoLiveShareUserCount' => 'getVideoLiveShareUserCount',
         'videoLiveClickCommodityUserCount' => 'getVideoLiveClickCommodityUserCount',
         'videoLiveCommodityBubbleExpCount' => 'getVideoLiveCommodityBubbleExpCount',
+        'scanCodeAddFansUv' => 'getScanCodeAddFansUv',
+        'scanCodeAddFansCount' => 'getScanCodeAddFansCount',
+        'scanCodeAddFansUvCost' => 'getScanCodeAddFansUvCost',
+        'scanCodeAddFansCountCost' => 'getScanCodeAddFansCountCost',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'requestConversionsCost' => 'getRequestConversionsCost',
         'incomeVal1' => 'getIncomeVal1',
@@ -3679,6 +3699,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['videoLiveShareUserCount'] = isset($data['videoLiveShareUserCount']) ? $data['videoLiveShareUserCount'] : null;
         $this->container['videoLiveClickCommodityUserCount'] = isset($data['videoLiveClickCommodityUserCount']) ? $data['videoLiveClickCommodityUserCount'] : null;
         $this->container['videoLiveCommodityBubbleExpCount'] = isset($data['videoLiveCommodityBubbleExpCount']) ? $data['videoLiveCommodityBubbleExpCount'] : null;
+        $this->container['scanCodeAddFansUv'] = isset($data['scanCodeAddFansUv']) ? $data['scanCodeAddFansUv'] : null;
+        $this->container['scanCodeAddFansCount'] = isset($data['scanCodeAddFansCount']) ? $data['scanCodeAddFansCount'] : null;
+        $this->container['scanCodeAddFansUvCost'] = isset($data['scanCodeAddFansUvCost']) ? $data['scanCodeAddFansUvCost'] : null;
+        $this->container['scanCodeAddFansCountCost'] = isset($data['scanCodeAddFansCountCost']) ? $data['scanCodeAddFansCountCost'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
         $this->container['incomeVal1'] = isset($data['incomeVal1']) ? $data['incomeVal1'] : null;
@@ -13659,6 +13683,102 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setVideoLiveCommodityBubbleExpCount($videoLiveCommodityBubbleExpCount)
     {
         $this->container['videoLiveCommodityBubbleExpCount'] = $videoLiveCommodityBubbleExpCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets scanCodeAddFansUv
+     *
+     * @return int|mixed
+     */
+    public function getScanCodeAddFansUv()
+    {
+        return $this->container['scanCodeAddFansUv'];
+    }
+
+    /**
+     * Sets scanCodeAddFansUv
+     *
+     * @param int|mixed $scanCodeAddFansUv scanCodeAddFansUv
+     *
+     * @return $this
+     */
+    public function setScanCodeAddFansUv($scanCodeAddFansUv)
+    {
+        $this->container['scanCodeAddFansUv'] = $scanCodeAddFansUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets scanCodeAddFansCount
+     *
+     * @return int|mixed
+     */
+    public function getScanCodeAddFansCount()
+    {
+        return $this->container['scanCodeAddFansCount'];
+    }
+
+    /**
+     * Sets scanCodeAddFansCount
+     *
+     * @param int|mixed $scanCodeAddFansCount scanCodeAddFansCount
+     *
+     * @return $this
+     */
+    public function setScanCodeAddFansCount($scanCodeAddFansCount)
+    {
+        $this->container['scanCodeAddFansCount'] = $scanCodeAddFansCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets scanCodeAddFansUvCost
+     *
+     * @return int|mixed
+     */
+    public function getScanCodeAddFansUvCost()
+    {
+        return $this->container['scanCodeAddFansUvCost'];
+    }
+
+    /**
+     * Sets scanCodeAddFansUvCost
+     *
+     * @param int|mixed $scanCodeAddFansUvCost scanCodeAddFansUvCost
+     *
+     * @return $this
+     */
+    public function setScanCodeAddFansUvCost($scanCodeAddFansUvCost)
+    {
+        $this->container['scanCodeAddFansUvCost'] = $scanCodeAddFansUvCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets scanCodeAddFansCountCost
+     *
+     * @return int|mixed
+     */
+    public function getScanCodeAddFansCountCost()
+    {
+        return $this->container['scanCodeAddFansCountCost'];
+    }
+
+    /**
+     * Sets scanCodeAddFansCountCost
+     *
+     * @param int|mixed $scanCodeAddFansCountCost scanCodeAddFansCountCost
+     *
+     * @return $this
+     */
+    public function setScanCodeAddFansCountCost($scanCodeAddFansCountCost)
+    {
+        $this->container['scanCodeAddFansCountCost'] = $scanCodeAddFansCountCost;
 
         return $this;
     }

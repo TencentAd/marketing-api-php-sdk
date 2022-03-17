@@ -449,6 +449,10 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Arpu' => 'int',
         'miniGameCreateRoleRate' => 'double',
         'consultUvCount' => 'int',
+        'scanCodeAddFansUv' => 'int',
+        'scanCodeAddFansCount' => 'int',
+        'scanCodeAddFansUvCost' => 'int',
+        'scanCodeAddFansCountCost' => 'int',
         'age' => 'string',
         'regionId' => 'int',
         'cityId' => 'int',
@@ -989,6 +993,10 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Arpu' => 'int64',
         'miniGameCreateRoleRate' => 'double',
         'consultUvCount' => 'int64',
+        'scanCodeAddFansUv' => 'int64',
+        'scanCodeAddFansCount' => 'int64',
+        'scanCodeAddFansUvCost' => 'int64',
+        'scanCodeAddFansCountCost' => 'int64',
         'age' => null,
         'regionId' => 'int64',
         'cityId' => 'int64',
@@ -1550,6 +1558,10 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Arpu' => 'mini_game_bf_purchase_d1_arpu',
         'miniGameCreateRoleRate' => 'mini_game_create_role_rate',
         'consultUvCount' => 'consult_uv_count',
+        'scanCodeAddFansUv' => 'scan_code_add_fans_uv',
+        'scanCodeAddFansCount' => 'scan_code_add_fans_count',
+        'scanCodeAddFansUvCost' => 'scan_code_add_fans_uv_cost',
+        'scanCodeAddFansCountCost' => 'scan_code_add_fans_count_cost',
         'age' => 'age',
         'regionId' => 'region_id',
         'cityId' => 'city_id',
@@ -2090,6 +2102,10 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Arpu' => 'setMiniGameBfPurchaseD1Arpu',
         'miniGameCreateRoleRate' => 'setMiniGameCreateRoleRate',
         'consultUvCount' => 'setConsultUvCount',
+        'scanCodeAddFansUv' => 'setScanCodeAddFansUv',
+        'scanCodeAddFansCount' => 'setScanCodeAddFansCount',
+        'scanCodeAddFansUvCost' => 'setScanCodeAddFansUvCost',
+        'scanCodeAddFansCountCost' => 'setScanCodeAddFansCountCost',
         'age' => 'setAge',
         'regionId' => 'setRegionId',
         'cityId' => 'setCityId',
@@ -2630,6 +2646,10 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Arpu' => 'getMiniGameBfPurchaseD1Arpu',
         'miniGameCreateRoleRate' => 'getMiniGameCreateRoleRate',
         'consultUvCount' => 'getConsultUvCount',
+        'scanCodeAddFansUv' => 'getScanCodeAddFansUv',
+        'scanCodeAddFansCount' => 'getScanCodeAddFansCount',
+        'scanCodeAddFansUvCost' => 'getScanCodeAddFansUvCost',
+        'scanCodeAddFansCountCost' => 'getScanCodeAddFansCountCost',
         'age' => 'getAge',
         'regionId' => 'getRegionId',
         'cityId' => 'getCityId',
@@ -3224,6 +3244,10 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGameBfPurchaseD1Arpu'] = isset($data['miniGameBfPurchaseD1Arpu']) ? $data['miniGameBfPurchaseD1Arpu'] : null;
         $this->container['miniGameCreateRoleRate'] = isset($data['miniGameCreateRoleRate']) ? $data['miniGameCreateRoleRate'] : null;
         $this->container['consultUvCount'] = isset($data['consultUvCount']) ? $data['consultUvCount'] : null;
+        $this->container['scanCodeAddFansUv'] = isset($data['scanCodeAddFansUv']) ? $data['scanCodeAddFansUv'] : null;
+        $this->container['scanCodeAddFansCount'] = isset($data['scanCodeAddFansCount']) ? $data['scanCodeAddFansCount'] : null;
+        $this->container['scanCodeAddFansUvCost'] = isset($data['scanCodeAddFansUvCost']) ? $data['scanCodeAddFansUvCost'] : null;
+        $this->container['scanCodeAddFansCountCost'] = isset($data['scanCodeAddFansCountCost']) ? $data['scanCodeAddFansCountCost'] : null;
         $this->container['age'] = isset($data['age']) ? $data['age'] : null;
         $this->container['regionId'] = isset($data['regionId']) ? $data['regionId'] : null;
         $this->container['cityId'] = isset($data['cityId']) ? $data['cityId'] : null;
@@ -12771,6 +12795,102 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setConsultUvCount($consultUvCount)
     {
         $this->container['consultUvCount'] = $consultUvCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets scanCodeAddFansUv
+     *
+     * @return int|mixed
+     */
+    public function getScanCodeAddFansUv()
+    {
+        return $this->container['scanCodeAddFansUv'];
+    }
+
+    /**
+     * Sets scanCodeAddFansUv
+     *
+     * @param int|mixed $scanCodeAddFansUv scanCodeAddFansUv
+     *
+     * @return $this
+     */
+    public function setScanCodeAddFansUv($scanCodeAddFansUv)
+    {
+        $this->container['scanCodeAddFansUv'] = $scanCodeAddFansUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets scanCodeAddFansCount
+     *
+     * @return int|mixed
+     */
+    public function getScanCodeAddFansCount()
+    {
+        return $this->container['scanCodeAddFansCount'];
+    }
+
+    /**
+     * Sets scanCodeAddFansCount
+     *
+     * @param int|mixed $scanCodeAddFansCount scanCodeAddFansCount
+     *
+     * @return $this
+     */
+    public function setScanCodeAddFansCount($scanCodeAddFansCount)
+    {
+        $this->container['scanCodeAddFansCount'] = $scanCodeAddFansCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets scanCodeAddFansUvCost
+     *
+     * @return int|mixed
+     */
+    public function getScanCodeAddFansUvCost()
+    {
+        return $this->container['scanCodeAddFansUvCost'];
+    }
+
+    /**
+     * Sets scanCodeAddFansUvCost
+     *
+     * @param int|mixed $scanCodeAddFansUvCost scanCodeAddFansUvCost
+     *
+     * @return $this
+     */
+    public function setScanCodeAddFansUvCost($scanCodeAddFansUvCost)
+    {
+        $this->container['scanCodeAddFansUvCost'] = $scanCodeAddFansUvCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets scanCodeAddFansCountCost
+     *
+     * @return int|mixed
+     */
+    public function getScanCodeAddFansCountCost()
+    {
+        return $this->container['scanCodeAddFansCountCost'];
+    }
+
+    /**
+     * Sets scanCodeAddFansCountCost
+     *
+     * @param int|mixed $scanCodeAddFansCountCost scanCodeAddFansCountCost
+     *
+     * @return $this
+     */
+    public function setScanCodeAddFansCountCost($scanCodeAddFansCountCost)
+    {
+        $this->container['scanCodeAddFansCountCost'] = $scanCodeAddFansCountCost;
 
         return $this;
     }

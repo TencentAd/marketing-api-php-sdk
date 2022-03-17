@@ -59,6 +59,8 @@ class LandingPagePlatform
     const QQ_BROWSER = 'LANDING_PAGE_PLATFORM_QQ_BROWSER';
     const PLAY = 'LANDING_PAGE_PLATFORM_PLAY';
     const YUEBAO = 'LANDING_PAGE_PLATFORM_YUEBAO';
+    const HEBANG = 'LANDING_PAGE_PLATFORM_HEBANG';
+    const HELIANG = 'LANDING_PAGE_PLATFORM_HELIANG';
     const W_EIMOB = 'LANDING_PAGE_PLATFORM_wEIMOB';
     
     /**
@@ -83,6 +85,8 @@ class LandingPagePlatform
             self::QQ_BROWSER,
             self::PLAY,
             self::YUEBAO,
+            self::HEBANG,
+            self::HELIANG,
             self::W_EIMOB,
         ];
     }
