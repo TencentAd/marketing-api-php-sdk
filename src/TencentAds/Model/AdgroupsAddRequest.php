@@ -80,7 +80,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'customizedCategory' => 'string',
         'dynamicAdSpec' => '\TencentAds\Model\DynamicAdSpec',
         'userActionSets' => '\TencentAds\Model\UserActionSetStruct[]',
-        'additionalUserActionSets' => '\TencentAds\Model\AdditionalUserActionSetStruct[]',
+        'additionalUserActionSets' => '\TencentAds\Model\UserActionSetStruct[]',
         'dynamicCreativeId' => 'int',
         'bidStrategy' => '\TencentAds\Model\BidStrategy',
         'coldStartAudience' => 'int[]',
@@ -1047,7 +1047,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets additionalUserActionSets
      *
-     * @return \TencentAds\Model\AdditionalUserActionSetStruct[]|mixed
+     * @return \TencentAds\Model\UserActionSetStruct[]|mixed
      */
     public function getAdditionalUserActionSets()
     {
@@ -1057,7 +1057,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets additionalUserActionSets
      *
-     * @param \TencentAds\Model\AdditionalUserActionSetStruct[]|mixed $additionalUserActionSets additionalUserActionSets
+     * @param \TencentAds\Model\UserActionSetStruct[]|mixed $additionalUserActionSets additionalUserActionSets
      *
      * @return $this
      */
