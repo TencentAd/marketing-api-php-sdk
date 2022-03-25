@@ -71,6 +71,7 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'networkType' => 'string[]',
         'networkOperator' => 'string[]',
         'networkScene' => 'string[]',
+        'appInstallStatus' => 'string[]',
         'consumptionStatus' => 'string[]',
         'gameConsumptionLevel' => 'string[]',
         'residentialCommunityPrice' => '\TencentAds\Model\ResidentialCommunityPriceStruct[]',
@@ -104,6 +105,7 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'networkType' => null,
         'networkOperator' => null,
         'networkScene' => null,
+        'appInstallStatus' => null,
         'consumptionStatus' => null,
         'gameConsumptionLevel' => null,
         'residentialCommunityPrice' => null,
@@ -158,6 +160,7 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'networkType' => 'network_type',
         'networkOperator' => 'network_operator',
         'networkScene' => 'network_scene',
+        'appInstallStatus' => 'app_install_status',
         'consumptionStatus' => 'consumption_status',
         'gameConsumptionLevel' => 'game_consumption_level',
         'residentialCommunityPrice' => 'residential_community_price',
@@ -191,6 +194,7 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'networkType' => 'setNetworkType',
         'networkOperator' => 'setNetworkOperator',
         'networkScene' => 'setNetworkScene',
+        'appInstallStatus' => 'setAppInstallStatus',
         'consumptionStatus' => 'setConsumptionStatus',
         'gameConsumptionLevel' => 'setGameConsumptionLevel',
         'residentialCommunityPrice' => 'setResidentialCommunityPrice',
@@ -224,6 +228,7 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'networkType' => 'getNetworkType',
         'networkOperator' => 'getNetworkOperator',
         'networkScene' => 'getNetworkScene',
+        'appInstallStatus' => 'getAppInstallStatus',
         'consumptionStatus' => 'getConsumptionStatus',
         'gameConsumptionLevel' => 'getGameConsumptionLevel',
         'residentialCommunityPrice' => 'getResidentialCommunityPrice',
@@ -311,6 +316,7 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         $this->container['networkType'] = isset($data['networkType']) ? $data['networkType'] : null;
         $this->container['networkOperator'] = isset($data['networkOperator']) ? $data['networkOperator'] : null;
         $this->container['networkScene'] = isset($data['networkScene']) ? $data['networkScene'] : null;
+        $this->container['appInstallStatus'] = isset($data['appInstallStatus']) ? $data['appInstallStatus'] : null;
         $this->container['consumptionStatus'] = isset($data['consumptionStatus']) ? $data['consumptionStatus'] : null;
         $this->container['gameConsumptionLevel'] = isset($data['gameConsumptionLevel']) ? $data['gameConsumptionLevel'] : null;
         $this->container['residentialCommunityPrice'] = isset($data['residentialCommunityPrice']) ? $data['residentialCommunityPrice'] : null;
@@ -657,6 +663,30 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     public function setNetworkScene($networkScene)
     {
         $this->container['networkScene'] = $networkScene;
+
+        return $this;
+    }
+
+    /**
+     * Gets appInstallStatus
+     *
+     * @return string[]|mixed
+     */
+    public function getAppInstallStatus()
+    {
+        return $this->container['appInstallStatus'];
+    }
+
+    /**
+     * Sets appInstallStatus
+     *
+     * @param string[]|mixed $appInstallStatus appInstallStatus
+     *
+     * @return $this
+     */
+    public function setAppInstallStatus($appInstallStatus)
+    {
+        $this->container['appInstallStatus'] = $appInstallStatus;
 
         return $this;
     }

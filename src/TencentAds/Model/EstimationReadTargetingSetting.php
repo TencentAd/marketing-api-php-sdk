@@ -70,6 +70,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
         'networkType' => 'string[]',
         'networkOperator' => 'string[]',
         'networkScene' => 'string[]',
+        'appInstallStatus' => 'string[]',
         'miniGameQqStatus' => 'string[]',
         'consumptionStatus' => 'string[]',
         'gameConsumptionLevel' => 'string[]',
@@ -106,6 +107,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
         'networkType' => null,
         'networkOperator' => null,
         'networkScene' => null,
+        'appInstallStatus' => null,
         'miniGameQqStatus' => null,
         'consumptionStatus' => null,
         'gameConsumptionLevel' => null,
@@ -163,6 +165,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
         'networkType' => 'network_type',
         'networkOperator' => 'network_operator',
         'networkScene' => 'network_scene',
+        'appInstallStatus' => 'app_install_status',
         'miniGameQqStatus' => 'mini_game_qq_status',
         'consumptionStatus' => 'consumption_status',
         'gameConsumptionLevel' => 'game_consumption_level',
@@ -199,6 +202,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
         'networkType' => 'setNetworkType',
         'networkOperator' => 'setNetworkOperator',
         'networkScene' => 'setNetworkScene',
+        'appInstallStatus' => 'setAppInstallStatus',
         'miniGameQqStatus' => 'setMiniGameQqStatus',
         'consumptionStatus' => 'setConsumptionStatus',
         'gameConsumptionLevel' => 'setGameConsumptionLevel',
@@ -235,6 +239,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
         'networkType' => 'getNetworkType',
         'networkOperator' => 'getNetworkOperator',
         'networkScene' => 'getNetworkScene',
+        'appInstallStatus' => 'getAppInstallStatus',
         'miniGameQqStatus' => 'getMiniGameQqStatus',
         'consumptionStatus' => 'getConsumptionStatus',
         'gameConsumptionLevel' => 'getGameConsumptionLevel',
@@ -325,6 +330,7 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
         $this->container['networkType'] = isset($data['networkType']) ? $data['networkType'] : null;
         $this->container['networkOperator'] = isset($data['networkOperator']) ? $data['networkOperator'] : null;
         $this->container['networkScene'] = isset($data['networkScene']) ? $data['networkScene'] : null;
+        $this->container['appInstallStatus'] = isset($data['appInstallStatus']) ? $data['appInstallStatus'] : null;
         $this->container['miniGameQqStatus'] = isset($data['miniGameQqStatus']) ? $data['miniGameQqStatus'] : null;
         $this->container['consumptionStatus'] = isset($data['consumptionStatus']) ? $data['consumptionStatus'] : null;
         $this->container['gameConsumptionLevel'] = isset($data['gameConsumptionLevel']) ? $data['gameConsumptionLevel'] : null;
@@ -651,6 +657,30 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     public function setNetworkScene($networkScene)
     {
         $this->container['networkScene'] = $networkScene;
+
+        return $this;
+    }
+
+    /**
+     * Gets appInstallStatus
+     *
+     * @return string[]|mixed
+     */
+    public function getAppInstallStatus()
+    {
+        return $this->container['appInstallStatus'];
+    }
+
+    /**
+     * Sets appInstallStatus
+     *
+     * @param string[]|mixed $appInstallStatus appInstallStatus
+     *
+     * @return $this
+     */
+    public function setAppInstallStatus($appInstallStatus)
+    {
+        $this->container['appInstallStatus'] = $appInstallStatus;
 
         return $this;
     }
