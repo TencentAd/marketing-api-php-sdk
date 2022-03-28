@@ -120,7 +120,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'marketingScene' => '\TencentAds\Model\MarketingScene',
         'customAdgroupTag' => 'string[]',
         'smartTargeting' => '\TencentAds\Model\SmartTargeting',
-        'dynamicCreativeIdSet' => 'int[]'
+        'dynamicCreativeIdSet' => 'int[]',
+        'systemStatusExplanation' => 'string'
     ];
 
     /**
@@ -191,7 +192,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'marketingScene' => null,
         'customAdgroupTag' => null,
         'smartTargeting' => null,
-        'dynamicCreativeIdSet' => 'int64'
+        'dynamicCreativeIdSet' => 'int64',
+        'systemStatusExplanation' => null
     ];
 
     /**
@@ -283,7 +285,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'marketingScene' => 'marketing_scene',
         'customAdgroupTag' => 'custom_adgroup_tag',
         'smartTargeting' => 'smart_targeting',
-        'dynamicCreativeIdSet' => 'dynamic_creative_id_set'
+        'dynamicCreativeIdSet' => 'dynamic_creative_id_set',
+        'systemStatusExplanation' => 'system_status_explanation'
     ];
 
     /**
@@ -354,7 +357,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'marketingScene' => 'setMarketingScene',
         'customAdgroupTag' => 'setCustomAdgroupTag',
         'smartTargeting' => 'setSmartTargeting',
-        'dynamicCreativeIdSet' => 'setDynamicCreativeIdSet'
+        'dynamicCreativeIdSet' => 'setDynamicCreativeIdSet',
+        'systemStatusExplanation' => 'setSystemStatusExplanation'
     ];
 
     /**
@@ -425,7 +429,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'marketingScene' => 'getMarketingScene',
         'customAdgroupTag' => 'getCustomAdgroupTag',
         'smartTargeting' => 'getSmartTargeting',
-        'dynamicCreativeIdSet' => 'getDynamicCreativeIdSet'
+        'dynamicCreativeIdSet' => 'getDynamicCreativeIdSet',
+        'systemStatusExplanation' => 'getSystemStatusExplanation'
     ];
 
     /**
@@ -551,6 +556,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['customAdgroupTag'] = isset($data['customAdgroupTag']) ? $data['customAdgroupTag'] : null;
         $this->container['smartTargeting'] = isset($data['smartTargeting']) ? $data['smartTargeting'] : null;
         $this->container['dynamicCreativeIdSet'] = isset($data['dynamicCreativeIdSet']) ? $data['dynamicCreativeIdSet'] : null;
+        $this->container['systemStatusExplanation'] = isset($data['systemStatusExplanation']) ? $data['systemStatusExplanation'] : null;
     }
 
     /**
@@ -2085,6 +2091,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setDynamicCreativeIdSet($dynamicCreativeIdSet)
     {
         $this->container['dynamicCreativeIdSet'] = $dynamicCreativeIdSet;
+
+        return $this;
+    }
+
+    /**
+     * Gets systemStatusExplanation
+     *
+     * @return string|mixed
+     */
+    public function getSystemStatusExplanation()
+    {
+        return $this->container['systemStatusExplanation'];
+    }
+
+    /**
+     * Sets systemStatusExplanation
+     *
+     * @param string|mixed $systemStatusExplanation systemStatusExplanation
+     *
+     * @return $this
+     */
+    public function setSystemStatusExplanation($systemStatusExplanation)
+    {
+        $this->container['systemStatusExplanation'] = $systemStatusExplanation;
 
         return $this;
     }
