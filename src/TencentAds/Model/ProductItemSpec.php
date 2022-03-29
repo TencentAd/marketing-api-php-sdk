@@ -211,7 +211,10 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'standardCatalogProductHashId' => 'int',
         'customUrl' => 'string',
         'additionalCustomUrl' => 'string',
-        'productBarcode' => 'string'
+        'productBarcode' => 'string',
+        'businessPrice' => '\TencentAds\Model\BusinessPrice',
+        'initialTotalInvestment' => '\TencentAds\Model\InitialTotalInvestment',
+        'businessAudience' => '\TencentAds\Model\BusinessAudience'
     ];
 
     /**
@@ -373,7 +376,10 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'standardCatalogProductHashId' => 'int64',
         'customUrl' => null,
         'additionalCustomUrl' => null,
-        'productBarcode' => null
+        'productBarcode' => null,
+        'businessPrice' => null,
+        'initialTotalInvestment' => null,
+        'businessAudience' => null
     ];
 
     /**
@@ -556,7 +562,10 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'standardCatalogProductHashId' => 'standard_catalog_product_hash_id',
         'customUrl' => 'custom_url',
         'additionalCustomUrl' => 'additional_custom_url',
-        'productBarcode' => 'product_barcode'
+        'productBarcode' => 'product_barcode',
+        'businessPrice' => 'business_price',
+        'initialTotalInvestment' => 'initial_total_investment',
+        'businessAudience' => 'business_audience'
     ];
 
     /**
@@ -718,7 +727,10 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'standardCatalogProductHashId' => 'setStandardCatalogProductHashId',
         'customUrl' => 'setCustomUrl',
         'additionalCustomUrl' => 'setAdditionalCustomUrl',
-        'productBarcode' => 'setProductBarcode'
+        'productBarcode' => 'setProductBarcode',
+        'businessPrice' => 'setBusinessPrice',
+        'initialTotalInvestment' => 'setInitialTotalInvestment',
+        'businessAudience' => 'setBusinessAudience'
     ];
 
     /**
@@ -880,7 +892,10 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'standardCatalogProductHashId' => 'getStandardCatalogProductHashId',
         'customUrl' => 'getCustomUrl',
         'additionalCustomUrl' => 'getAdditionalCustomUrl',
-        'productBarcode' => 'getProductBarcode'
+        'productBarcode' => 'getProductBarcode',
+        'businessPrice' => 'getBusinessPrice',
+        'initialTotalInvestment' => 'getInitialTotalInvestment',
+        'businessAudience' => 'getBusinessAudience'
     ];
 
     /**
@@ -1097,6 +1112,9 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         $this->container['customUrl'] = isset($data['customUrl']) ? $data['customUrl'] : null;
         $this->container['additionalCustomUrl'] = isset($data['additionalCustomUrl']) ? $data['additionalCustomUrl'] : null;
         $this->container['productBarcode'] = isset($data['productBarcode']) ? $data['productBarcode'] : null;
+        $this->container['businessPrice'] = isset($data['businessPrice']) ? $data['businessPrice'] : null;
+        $this->container['initialTotalInvestment'] = isset($data['initialTotalInvestment']) ? $data['initialTotalInvestment'] : null;
+        $this->container['businessAudience'] = isset($data['businessAudience']) ? $data['businessAudience'] : null;
     }
 
     /**
@@ -4815,6 +4833,78 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     public function setProductBarcode($productBarcode)
     {
         $this->container['productBarcode'] = $productBarcode;
+
+        return $this;
+    }
+
+    /**
+     * Gets businessPrice
+     *
+     * @return \TencentAds\Model\BusinessPrice|mixed
+     */
+    public function getBusinessPrice()
+    {
+        return $this->container['businessPrice'];
+    }
+
+    /**
+     * Sets businessPrice
+     *
+     * @param \TencentAds\Model\BusinessPrice|mixed $businessPrice businessPrice
+     *
+     * @return $this
+     */
+    public function setBusinessPrice($businessPrice)
+    {
+        $this->container['businessPrice'] = $businessPrice;
+
+        return $this;
+    }
+
+    /**
+     * Gets initialTotalInvestment
+     *
+     * @return \TencentAds\Model\InitialTotalInvestment|mixed
+     */
+    public function getInitialTotalInvestment()
+    {
+        return $this->container['initialTotalInvestment'];
+    }
+
+    /**
+     * Sets initialTotalInvestment
+     *
+     * @param \TencentAds\Model\InitialTotalInvestment|mixed $initialTotalInvestment initialTotalInvestment
+     *
+     * @return $this
+     */
+    public function setInitialTotalInvestment($initialTotalInvestment)
+    {
+        $this->container['initialTotalInvestment'] = $initialTotalInvestment;
+
+        return $this;
+    }
+
+    /**
+     * Gets businessAudience
+     *
+     * @return \TencentAds\Model\BusinessAudience|mixed
+     */
+    public function getBusinessAudience()
+    {
+        return $this->container['businessAudience'];
+    }
+
+    /**
+     * Sets businessAudience
+     *
+     * @param \TencentAds\Model\BusinessAudience|mixed $businessAudience businessAudience
+     *
+     * @return $this
+     */
+    public function setBusinessAudience($businessAudience)
+    {
+        $this->container['businessAudience'] = $businessAudience;
 
         return $this;
     }
