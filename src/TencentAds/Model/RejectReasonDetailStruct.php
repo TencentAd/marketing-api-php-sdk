@@ -62,7 +62,7 @@ class RejectReasonDetailStruct implements ModelInterface, ArrayAccess
         'rejectReasonContent' => 'string',
         'caseDoc' => 'string',
         'caseContent' => 'string',
-        'rejectInfoLocation' => '\TencentAds\Model\RejectInfoLocation[]'
+        'rejectInfoLocations' => '\TencentAds\Model\PrereviewRejectInfoLocationStruct[]'
     ];
 
     /**
@@ -75,7 +75,7 @@ class RejectReasonDetailStruct implements ModelInterface, ArrayAccess
         'rejectReasonContent' => null,
         'caseDoc' => null,
         'caseContent' => null,
-        'rejectInfoLocation' => null
+        'rejectInfoLocations' => null
     ];
 
     /**
@@ -109,7 +109,7 @@ class RejectReasonDetailStruct implements ModelInterface, ArrayAccess
         'rejectReasonContent' => 'reject_reason_content',
         'caseDoc' => 'case_doc',
         'caseContent' => 'case_content',
-        'rejectInfoLocation' => 'reject_info_location'
+        'rejectInfoLocations' => 'reject_info_locations'
     ];
 
     /**
@@ -122,7 +122,7 @@ class RejectReasonDetailStruct implements ModelInterface, ArrayAccess
         'rejectReasonContent' => 'setRejectReasonContent',
         'caseDoc' => 'setCaseDoc',
         'caseContent' => 'setCaseContent',
-        'rejectInfoLocation' => 'setRejectInfoLocation'
+        'rejectInfoLocations' => 'setRejectInfoLocations'
     ];
 
     /**
@@ -135,7 +135,7 @@ class RejectReasonDetailStruct implements ModelInterface, ArrayAccess
         'rejectReasonContent' => 'getRejectReasonContent',
         'caseDoc' => 'getCaseDoc',
         'caseContent' => 'getCaseContent',
-        'rejectInfoLocation' => 'getRejectInfoLocation'
+        'rejectInfoLocations' => 'getRejectInfoLocations'
     ];
 
     /**
@@ -202,7 +202,7 @@ class RejectReasonDetailStruct implements ModelInterface, ArrayAccess
         $this->container['rejectReasonContent'] = isset($data['rejectReasonContent']) ? $data['rejectReasonContent'] : null;
         $this->container['caseDoc'] = isset($data['caseDoc']) ? $data['caseDoc'] : null;
         $this->container['caseContent'] = isset($data['caseContent']) ? $data['caseContent'] : null;
-        $this->container['rejectInfoLocation'] = isset($data['rejectInfoLocation']) ? $data['rejectInfoLocation'] : null;
+        $this->container['rejectInfoLocations'] = isset($data['rejectInfoLocations']) ? $data['rejectInfoLocations'] : null;
     }
 
     /**
@@ -326,25 +326,25 @@ class RejectReasonDetailStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets rejectInfoLocation
+     * Gets rejectInfoLocations
      *
-     * @return \TencentAds\Model\RejectInfoLocation[]|mixed
+     * @return \TencentAds\Model\PrereviewRejectInfoLocationStruct[]|mixed
      */
-    public function getRejectInfoLocation()
+    public function getRejectInfoLocations()
     {
-        return $this->container['rejectInfoLocation'];
+        return $this->container['rejectInfoLocations'];
     }
 
     /**
-     * Sets rejectInfoLocation
+     * Sets rejectInfoLocations
      *
-     * @param \TencentAds\Model\RejectInfoLocation[]|mixed $rejectInfoLocation rejectInfoLocation
+     * @param \TencentAds\Model\PrereviewRejectInfoLocationStruct[]|mixed $rejectInfoLocations rejectInfoLocations
      *
      * @return $this
      */
-    public function setRejectInfoLocation($rejectInfoLocation)
+    public function setRejectInfoLocations($rejectInfoLocations)
     {
-        $this->container['rejectInfoLocation'] = $rejectInfoLocation;
+        $this->container['rejectInfoLocations'] = $rejectInfoLocations;
 
         return $this;
     }

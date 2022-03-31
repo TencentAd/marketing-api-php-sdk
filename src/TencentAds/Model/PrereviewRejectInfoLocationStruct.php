@@ -1,6 +1,6 @@
 <?php
 /**
- * ReviewUrgeCreativesAddResponseData
+ * PrereviewRejectInfoLocationStruct
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ReviewUrgeCreativesAddResponseData Class Doc Comment
+ * PrereviewRejectInfoLocationStruct Class Doc Comment
  *
  * @category Class
+ * @description 标注位置信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ReviewUrgeCreativesAddResponseData implements ModelInterface, ArrayAccess
+class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class ReviewUrgeCreativesAddResponseData implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'ReviewUrgeCreativesAddResponseData';
+    protected static $swaggerModelName = 'prereview_reject_info_location_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,7 +58,14 @@ class ReviewUrgeCreativesAddResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'list' => '\TencentAds\Model\UrgeResultStruct[]'
+        'x' => 'int',
+        'y' => 'int',
+        'width' => 'int',
+        'height' => 'int',
+        'timeSecond' => 'int',
+        'locationImgUrl' => 'string',
+        'imgUrl' => 'string',
+        'relatedImgUrl' => 'string'
     ];
 
     /**
@@ -66,7 +74,14 @@ class ReviewUrgeCreativesAddResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'list' => null
+        'x' => 'int64',
+        'y' => 'int64',
+        'width' => 'int64',
+        'height' => 'int64',
+        'timeSecond' => 'int64',
+        'locationImgUrl' => null,
+        'imgUrl' => null,
+        'relatedImgUrl' => null
     ];
 
     /**
@@ -96,7 +111,14 @@ class ReviewUrgeCreativesAddResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'list' => 'list'
+        'x' => 'x',
+        'y' => 'y',
+        'width' => 'width',
+        'height' => 'height',
+        'timeSecond' => 'time_second',
+        'locationImgUrl' => 'location_img_url',
+        'imgUrl' => 'img_url',
+        'relatedImgUrl' => 'related_img_url'
     ];
 
     /**
@@ -105,7 +127,14 @@ class ReviewUrgeCreativesAddResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'list' => 'setList'
+        'x' => 'setX',
+        'y' => 'setY',
+        'width' => 'setWidth',
+        'height' => 'setHeight',
+        'timeSecond' => 'setTimeSecond',
+        'locationImgUrl' => 'setLocationImgUrl',
+        'imgUrl' => 'setImgUrl',
+        'relatedImgUrl' => 'setRelatedImgUrl'
     ];
 
     /**
@@ -114,7 +143,14 @@ class ReviewUrgeCreativesAddResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'list' => 'getList'
+        'x' => 'getX',
+        'y' => 'getY',
+        'width' => 'getWidth',
+        'height' => 'getHeight',
+        'timeSecond' => 'getTimeSecond',
+        'locationImgUrl' => 'getLocationImgUrl',
+        'imgUrl' => 'getImgUrl',
+        'relatedImgUrl' => 'getRelatedImgUrl'
     ];
 
     /**
@@ -177,7 +213,14 @@ class ReviewUrgeCreativesAddResponseData implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
+        $this->container['x'] = isset($data['x']) ? $data['x'] : null;
+        $this->container['y'] = isset($data['y']) ? $data['y'] : null;
+        $this->container['width'] = isset($data['width']) ? $data['width'] : null;
+        $this->container['height'] = isset($data['height']) ? $data['height'] : null;
+        $this->container['timeSecond'] = isset($data['timeSecond']) ? $data['timeSecond'] : null;
+        $this->container['locationImgUrl'] = isset($data['locationImgUrl']) ? $data['locationImgUrl'] : null;
+        $this->container['imgUrl'] = isset($data['imgUrl']) ? $data['imgUrl'] : null;
+        $this->container['relatedImgUrl'] = isset($data['relatedImgUrl']) ? $data['relatedImgUrl'] : null;
     }
 
     /**
@@ -205,25 +248,193 @@ class ReviewUrgeCreativesAddResponseData implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets list
+     * Gets x
      *
-     * @return \TencentAds\Model\UrgeResultStruct[]|mixed
+     * @return int|mixed
      */
-    public function getList()
+    public function getX()
     {
-        return $this->container['list'];
+        return $this->container['x'];
     }
 
     /**
-     * Sets list
+     * Sets x
      *
-     * @param \TencentAds\Model\UrgeResultStruct[]|mixed $list list
+     * @param int|mixed $x x
      *
      * @return $this
      */
-    public function setList($list)
+    public function setX($x)
     {
-        $this->container['list'] = $list;
+        $this->container['x'] = $x;
+
+        return $this;
+    }
+
+    /**
+     * Gets y
+     *
+     * @return int|mixed
+     */
+    public function getY()
+    {
+        return $this->container['y'];
+    }
+
+    /**
+     * Sets y
+     *
+     * @param int|mixed $y y
+     *
+     * @return $this
+     */
+    public function setY($y)
+    {
+        $this->container['y'] = $y;
+
+        return $this;
+    }
+
+    /**
+     * Gets width
+     *
+     * @return int|mixed
+     */
+    public function getWidth()
+    {
+        return $this->container['width'];
+    }
+
+    /**
+     * Sets width
+     *
+     * @param int|mixed $width width
+     *
+     * @return $this
+     */
+    public function setWidth($width)
+    {
+        $this->container['width'] = $width;
+
+        return $this;
+    }
+
+    /**
+     * Gets height
+     *
+     * @return int|mixed
+     */
+    public function getHeight()
+    {
+        return $this->container['height'];
+    }
+
+    /**
+     * Sets height
+     *
+     * @param int|mixed $height height
+     *
+     * @return $this
+     */
+    public function setHeight($height)
+    {
+        $this->container['height'] = $height;
+
+        return $this;
+    }
+
+    /**
+     * Gets timeSecond
+     *
+     * @return int|mixed
+     */
+    public function getTimeSecond()
+    {
+        return $this->container['timeSecond'];
+    }
+
+    /**
+     * Sets timeSecond
+     *
+     * @param int|mixed $timeSecond timeSecond
+     *
+     * @return $this
+     */
+    public function setTimeSecond($timeSecond)
+    {
+        $this->container['timeSecond'] = $timeSecond;
+
+        return $this;
+    }
+
+    /**
+     * Gets locationImgUrl
+     *
+     * @return string|mixed
+     */
+    public function getLocationImgUrl()
+    {
+        return $this->container['locationImgUrl'];
+    }
+
+    /**
+     * Sets locationImgUrl
+     *
+     * @param string|mixed $locationImgUrl locationImgUrl
+     *
+     * @return $this
+     */
+    public function setLocationImgUrl($locationImgUrl)
+    {
+        $this->container['locationImgUrl'] = $locationImgUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets imgUrl
+     *
+     * @return string|mixed
+     */
+    public function getImgUrl()
+    {
+        return $this->container['imgUrl'];
+    }
+
+    /**
+     * Sets imgUrl
+     *
+     * @param string|mixed $imgUrl imgUrl
+     *
+     * @return $this
+     */
+    public function setImgUrl($imgUrl)
+    {
+        $this->container['imgUrl'] = $imgUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets relatedImgUrl
+     *
+     * @return string|mixed
+     */
+    public function getRelatedImgUrl()
+    {
+        return $this->container['relatedImgUrl'];
+    }
+
+    /**
+     * Sets relatedImgUrl
+     *
+     * @param string|mixed $relatedImgUrl relatedImgUrl
+     *
+     * @return $this
+     */
+    public function setRelatedImgUrl($relatedImgUrl)
+    {
+        $this->container['relatedImgUrl'] = $relatedImgUrl;
 
         return $this;
     }

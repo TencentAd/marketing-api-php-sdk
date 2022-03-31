@@ -113,7 +113,6 @@ use TencentAds\Container\QualificationsApiContainer;
 use TencentAds\Container\RealtimeCostApiContainer;
 use TencentAds\Container\ReportApiContainer;
 use TencentAds\Container\ReviewElementPrereviewResultsApiContainer;
-use TencentAds\Container\ReviewUrgeCreativesApiContainer;
 use TencentAds\Container\SceneSpecTagsApiContainer;
 use TencentAds\Container\ShopApiContainer;
 use TencentAds\Container\SplitTestsApiContainer;
@@ -500,9 +499,6 @@ class App
 
     /** @var ReviewElementPrereviewResultsApiContainer */
     public $reviewElementPrereviewResultsApiContainer;
-
-    /** @var ReviewUrgeCreativesApiContainer */
-    public $reviewUrgeCreativesApiContainer;
 
     /** @var SceneSpecTagsApiContainer */
     public $sceneSpecTagsApiContainer;
@@ -2212,20 +2208,6 @@ class App
             $this->reviewElementPrereviewResultsApiContainer = $container;
         }
         return $this->reviewElementPrereviewResultsApiContainer;
-    }
-
-
-    /**
-     * @return ReviewUrgeCreativesApiContainer
-     */
-    public function reviewUrgeCreatives()
-    {
-        if (empty($this->reviewUrgeCreativesApiContainer)) {
-            $container = new ReviewUrgeCreativesApiContainer();
-            $container->init($this, $this->getClient());
-            $this->reviewUrgeCreativesApiContainer = $container;
-        }
-        return $this->reviewUrgeCreativesApiContainer;
     }
 
 

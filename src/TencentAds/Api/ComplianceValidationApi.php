@@ -90,7 +90,7 @@ class ComplianceValidationApi
     /**
      * Operation complianceValidationGet
      *
-     * 获取广告素材预审结果
+     * 获取广告素材预审结果(待废弃)
      *
      * @param  \TencentAds\Model\ComplianceValidationGetRequest|mixed $data data (required)
      *
@@ -107,7 +107,7 @@ class ComplianceValidationApi
     /**
      * Operation complianceValidationGetWithHttpInfo
      *
-     * 获取广告素材预审结果
+     * 获取广告素材预审结果(待废弃)
      *
      * @param  \TencentAds\Model\ComplianceValidationGetRequest|mixed $data (required)
      *
@@ -182,7 +182,7 @@ class ComplianceValidationApi
     /**
      * Operation complianceValidationGetAsync
      *
-     * 获取广告素材预审结果
+     * 获取广告素材预审结果(待废弃)
      *
      * @param  \TencentAds\Model\ComplianceValidationGetRequest|mixed $data (required)
      *
@@ -202,7 +202,7 @@ class ComplianceValidationApi
     /**
      * Operation complianceValidationGetAsyncWithHttpInfo
      *
-     * 获取广告素材预审结果
+     * 获取广告素材预审结果(待废弃)
      *
      * @param  \TencentAds\Model\ComplianceValidationGetRequest|mixed $data (required)
      *
