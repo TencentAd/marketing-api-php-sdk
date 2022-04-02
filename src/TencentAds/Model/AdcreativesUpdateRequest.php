@@ -90,6 +90,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
         'industryLabel' => 'string',
         'unionMarketSpec' => '\TencentAds\Model\UnionMarketSpec',
+        'androidQuickAppSpec' => '\TencentAds\Model\AndroidQuickAppSpec',
         'accountId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsMp'
     ];
@@ -133,6 +134,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'appGiftPackCode' => null,
         'industryLabel' => null,
         'unionMarketSpec' => null,
+        'androidQuickAppSpec' => null,
         'accountId' => 'int64',
         'adcreativeElements' => null
     ];
@@ -197,6 +199,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'appGiftPackCode' => 'app_gift_pack_code',
         'industryLabel' => 'industry_label',
         'unionMarketSpec' => 'union_market_spec',
+        'androidQuickAppSpec' => 'android_quick_app_spec',
         'accountId' => 'account_id',
         'adcreativeElements' => 'adcreative_elements'
     ];
@@ -240,6 +243,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'appGiftPackCode' => 'setAppGiftPackCode',
         'industryLabel' => 'setIndustryLabel',
         'unionMarketSpec' => 'setUnionMarketSpec',
+        'androidQuickAppSpec' => 'setAndroidQuickAppSpec',
         'accountId' => 'setAccountId',
         'adcreativeElements' => 'setAdcreativeElements'
     ];
@@ -283,6 +287,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'appGiftPackCode' => 'getAppGiftPackCode',
         'industryLabel' => 'getIndustryLabel',
         'unionMarketSpec' => 'getUnionMarketSpec',
+        'androidQuickAppSpec' => 'getAndroidQuickAppSpec',
         'accountId' => 'getAccountId',
         'adcreativeElements' => 'getAdcreativeElements'
     ];
@@ -380,6 +385,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
         $this->container['industryLabel'] = isset($data['industryLabel']) ? $data['industryLabel'] : null;
         $this->container['unionMarketSpec'] = isset($data['unionMarketSpec']) ? $data['unionMarketSpec'] : null;
+        $this->container['androidQuickAppSpec'] = isset($data['androidQuickAppSpec']) ? $data['androidQuickAppSpec'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
     }
@@ -1196,6 +1202,30 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setUnionMarketSpec($unionMarketSpec)
     {
         $this->container['unionMarketSpec'] = $unionMarketSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets androidQuickAppSpec
+     *
+     * @return \TencentAds\Model\AndroidQuickAppSpec|mixed
+     */
+    public function getAndroidQuickAppSpec()
+    {
+        return $this->container['androidQuickAppSpec'];
+    }
+
+    /**
+     * Sets androidQuickAppSpec
+     *
+     * @param \TencentAds\Model\AndroidQuickAppSpec|mixed $androidQuickAppSpec androidQuickAppSpec
+     *
+     * @return $this
+     */
+    public function setAndroidQuickAppSpec($androidQuickAppSpec)
+    {
+        $this->container['androidQuickAppSpec'] = $androidQuickAppSpec;
 
         return $this;
     }

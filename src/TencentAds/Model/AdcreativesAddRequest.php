@@ -94,6 +94,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'enableBreakthroughSiteset' => 'bool',
         'industryLabel' => 'string',
         'unionMarketSpec' => '\TencentAds\Model\UnionMarketSpec',
+        'androidQuickAppSpec' => '\TencentAds\Model\AndroidQuickAppSpec',
         'accountId' => 'int',
         'adcreativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsMp'
@@ -142,6 +143,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'enableBreakthroughSiteset' => null,
         'industryLabel' => null,
         'unionMarketSpec' => null,
+        'androidQuickAppSpec' => null,
         'accountId' => 'int64',
         'adcreativeTemplateId' => 'int64',
         'adcreativeElements' => null
@@ -211,6 +213,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
         'industryLabel' => 'industry_label',
         'unionMarketSpec' => 'union_market_spec',
+        'androidQuickAppSpec' => 'android_quick_app_spec',
         'accountId' => 'account_id',
         'adcreativeTemplateId' => 'adcreative_template_id',
         'adcreativeElements' => 'adcreative_elements'
@@ -259,6 +262,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
         'industryLabel' => 'setIndustryLabel',
         'unionMarketSpec' => 'setUnionMarketSpec',
+        'androidQuickAppSpec' => 'setAndroidQuickAppSpec',
         'accountId' => 'setAccountId',
         'adcreativeTemplateId' => 'setAdcreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements'
@@ -307,6 +311,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
         'industryLabel' => 'getIndustryLabel',
         'unionMarketSpec' => 'getUnionMarketSpec',
+        'androidQuickAppSpec' => 'getAndroidQuickAppSpec',
         'accountId' => 'getAccountId',
         'adcreativeTemplateId' => 'getAdcreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements'
@@ -409,6 +414,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
         $this->container['industryLabel'] = isset($data['industryLabel']) ? $data['industryLabel'] : null;
         $this->container['unionMarketSpec'] = isset($data['unionMarketSpec']) ? $data['unionMarketSpec'] : null;
+        $this->container['androidQuickAppSpec'] = isset($data['androidQuickAppSpec']) ? $data['androidQuickAppSpec'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
@@ -1322,6 +1328,30 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     public function setUnionMarketSpec($unionMarketSpec)
     {
         $this->container['unionMarketSpec'] = $unionMarketSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets androidQuickAppSpec
+     *
+     * @return \TencentAds\Model\AndroidQuickAppSpec|mixed
+     */
+    public function getAndroidQuickAppSpec()
+    {
+        return $this->container['androidQuickAppSpec'];
+    }
+
+    /**
+     * Sets androidQuickAppSpec
+     *
+     * @param \TencentAds\Model\AndroidQuickAppSpec|mixed $androidQuickAppSpec androidQuickAppSpec
+     *
+     * @return $this
+     */
+    public function setAndroidQuickAppSpec($androidQuickAppSpec)
+    {
+        $this->container['androidQuickAppSpec'] = $androidQuickAppSpec;
 
         return $this;
     }

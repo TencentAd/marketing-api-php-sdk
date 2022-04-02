@@ -1,6 +1,6 @@
 <?php
 /**
- * CampaignType
+ * AndroidQuickAppJumpType
  *
  * PHP version 5
  *
@@ -31,26 +31,22 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CampaignType Class Doc Comment
+ * AndroidQuickAppJumpType Class Doc Comment
  *
  * @category Class
- * @description 推广计划类型
+ * @description 安卓快应用跳转类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CampaignType
+class AndroidQuickAppJumpType
 {
     /**
      * Possible values of this enum
      */
-    const SEARCH = 'CAMPAIGN_TYPE_SEARCH';
-    const NORMAL = 'CAMPAIGN_TYPE_NORMAL';
-    const CONTRACT = 'CAMPAIGN_TYPE_CONTRACT';
-    const WECHAT_OFFICIAL_ACCOUNTS = 'CAMPAIGN_TYPE_WECHAT_OFFICIAL_ACCOUNTS';
-    const WECHAT_MOMENTS = 'CAMPAIGN_TYPE_WECHAT_MOMENTS';
-    const UNSUPPORTED = 'CAMPAIGN_TYPE_UNSUPPORTED';
-    const REWARDQUEST = 'CAMPAIGN_TYPE_REWARDQUEST';
+    const UNKNOWN = 'ANDROID_QUICK_APP_JUMP_TYPE_UNKNOWN';
+    const _DEFAULT = 'ANDROID_QUICK_APP_JUMP_TYPE_DEFAULT';
+    const LANDING_PAGE = 'ANDROID_QUICK_APP_JUMP_TYPE_LANDING_PAGE';
     
     /**
      * Gets allowable values of the enum
@@ -59,13 +55,9 @@ class CampaignType
     public static function getAllowableEnumValues()
     {
         return [
-            self::SEARCH,
-            self::NORMAL,
-            self::CONTRACT,
-            self::WECHAT_OFFICIAL_ACCOUNTS,
-            self::WECHAT_MOMENTS,
-            self::UNSUPPORTED,
-            self::REWARDQUEST,
+            self::UNKNOWN,
+            self::_DEFAULT,
+            self::LANDING_PAGE,
         ];
     }
 }

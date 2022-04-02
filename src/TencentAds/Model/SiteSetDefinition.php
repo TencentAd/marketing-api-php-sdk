@@ -84,6 +84,7 @@ class SiteSetDefinition
     const MINI_GAME_QQ = 'SITE_SET_MINI_GAME_QQ';
     const MOBILE_GAME = 'SITE_SET_MOBILE_GAME';
     const TENCENT_VIDEO_OTT = 'SITE_SET_TENCENT_VIDEO_OTT';
+    const CHANNELS = 'SITE_SET_CHANNELS';
     
     /**
      * Gets allowable values of the enum
@@ -132,6 +133,7 @@ class SiteSetDefinition
             self::MINI_GAME_QQ,
             self::MOBILE_GAME,
             self::TENCENT_VIDEO_OTT,
+            self::CHANNELS,
         ];
     }
 }

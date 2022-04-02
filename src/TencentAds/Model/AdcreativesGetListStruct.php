@@ -106,6 +106,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'industryLabel' => 'string',
         'unionMarketSpec' => '\TencentAds\Model\UnionMarketSpec',
         'creativeTemplateCategory' => 'string',
+        'androidQuickAppSpec' => '\TencentAds\Model\AndroidQuickAppSpec',
         'adcreativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsReadMp'
     ];
@@ -164,6 +165,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'industryLabel' => null,
         'unionMarketSpec' => null,
         'creativeTemplateCategory' => null,
+        'androidQuickAppSpec' => null,
         'adcreativeTemplateId' => 'int64',
         'adcreativeElements' => null
     ];
@@ -243,6 +245,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'industryLabel' => 'industry_label',
         'unionMarketSpec' => 'union_market_spec',
         'creativeTemplateCategory' => 'creative_template_category',
+        'androidQuickAppSpec' => 'android_quick_app_spec',
         'adcreativeTemplateId' => 'adcreative_template_id',
         'adcreativeElements' => 'adcreative_elements'
     ];
@@ -301,6 +304,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'industryLabel' => 'setIndustryLabel',
         'unionMarketSpec' => 'setUnionMarketSpec',
         'creativeTemplateCategory' => 'setCreativeTemplateCategory',
+        'androidQuickAppSpec' => 'setAndroidQuickAppSpec',
         'adcreativeTemplateId' => 'setAdcreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements'
     ];
@@ -359,6 +363,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'industryLabel' => 'getIndustryLabel',
         'unionMarketSpec' => 'getUnionMarketSpec',
         'creativeTemplateCategory' => 'getCreativeTemplateCategory',
+        'androidQuickAppSpec' => 'getAndroidQuickAppSpec',
         'adcreativeTemplateId' => 'getAdcreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements'
     ];
@@ -471,6 +476,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['industryLabel'] = isset($data['industryLabel']) ? $data['industryLabel'] : null;
         $this->container['unionMarketSpec'] = isset($data['unionMarketSpec']) ? $data['unionMarketSpec'] : null;
         $this->container['creativeTemplateCategory'] = isset($data['creativeTemplateCategory']) ? $data['creativeTemplateCategory'] : null;
+        $this->container['androidQuickAppSpec'] = isset($data['androidQuickAppSpec']) ? $data['androidQuickAppSpec'] : null;
         $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
     }
@@ -1647,6 +1653,30 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setCreativeTemplateCategory($creativeTemplateCategory)
     {
         $this->container['creativeTemplateCategory'] = $creativeTemplateCategory;
+
+        return $this;
+    }
+
+    /**
+     * Gets androidQuickAppSpec
+     *
+     * @return \TencentAds\Model\AndroidQuickAppSpec|mixed
+     */
+    public function getAndroidQuickAppSpec()
+    {
+        return $this->container['androidQuickAppSpec'];
+    }
+
+    /**
+     * Sets androidQuickAppSpec
+     *
+     * @param \TencentAds\Model\AndroidQuickAppSpec|mixed $androidQuickAppSpec androidQuickAppSpec
+     *
+     * @return $this
+     */
+    public function setAndroidQuickAppSpec($androidQuickAppSpec)
+    {
+        $this->container['androidQuickAppSpec'] = $androidQuickAppSpec;
 
         return $this;
     }
