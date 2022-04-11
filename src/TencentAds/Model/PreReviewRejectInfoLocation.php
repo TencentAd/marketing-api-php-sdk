@@ -1,6 +1,6 @@
 <?php
 /**
- * PrereviewRejectInfoLocationStruct
+ * PreReviewRejectInfoLocation
  *
  * PHP version 5
  *
@@ -33,7 +33,7 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PrereviewRejectInfoLocationStruct Class Doc Comment
+ * PreReviewRejectInfoLocation Class Doc Comment
  *
  * @category Class
  * @description 标注位置信息
@@ -41,7 +41,7 @@ use \TencentAds\ObjectSerializer;
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
+class PreReviewRejectInfoLocation implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'prereview_reject_info_location_struct';
+    protected static $swaggerModelName = 'pre_review_reject_info_location';
 
     /**
       * Array of property to type mappings. Used for (de)serialization

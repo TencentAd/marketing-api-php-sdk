@@ -1,6 +1,6 @@
 <?php
 /**
- * PrereviewRejectInfoLocationStruct
+ * PreReviewResultRejectReasonDetailStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PrereviewRejectInfoLocationStruct Class Doc Comment
+ * PreReviewResultRejectReasonDetailStruct Class Doc Comment
  *
  * @category Class
- * @description 标注位置信息
+ * @description 拒绝原因明细
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
+class PreReviewResultRejectReasonDetailStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'prereview_reject_info_location_struct';
+    protected static $swaggerModelName = 'pre_review_result_reject_reason_detail_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,14 +58,11 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'x' => 'int',
-        'y' => 'int',
-        'width' => 'int',
-        'height' => 'int',
-        'timeSecond' => 'double',
-        'locationImgUrl' => 'string',
-        'imgUrl' => 'string',
-        'relatedImgUrl' => 'string'
+        'rejectReasonId' => 'string',
+        'rejectReasonContent' => 'string',
+        'caseDoc' => 'string',
+        'caseContent' => 'string',
+        'rejectInfoLocations' => '\TencentAds\Model\PreReviewRejectInfoLocation[]'
     ];
 
     /**
@@ -74,14 +71,11 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'x' => 'int64',
-        'y' => 'int64',
-        'width' => 'int64',
-        'height' => 'int64',
-        'timeSecond' => 'double',
-        'locationImgUrl' => null,
-        'imgUrl' => null,
-        'relatedImgUrl' => null
+        'rejectReasonId' => null,
+        'rejectReasonContent' => null,
+        'caseDoc' => null,
+        'caseContent' => null,
+        'rejectInfoLocations' => null
     ];
 
     /**
@@ -111,14 +105,11 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'x' => 'x',
-        'y' => 'y',
-        'width' => 'width',
-        'height' => 'height',
-        'timeSecond' => 'time_second',
-        'locationImgUrl' => 'location_img_url',
-        'imgUrl' => 'img_url',
-        'relatedImgUrl' => 'related_img_url'
+        'rejectReasonId' => 'reject_reason_id',
+        'rejectReasonContent' => 'reject_reason_content',
+        'caseDoc' => 'case_doc',
+        'caseContent' => 'case_content',
+        'rejectInfoLocations' => 'reject_info_locations'
     ];
 
     /**
@@ -127,14 +118,11 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'x' => 'setX',
-        'y' => 'setY',
-        'width' => 'setWidth',
-        'height' => 'setHeight',
-        'timeSecond' => 'setTimeSecond',
-        'locationImgUrl' => 'setLocationImgUrl',
-        'imgUrl' => 'setImgUrl',
-        'relatedImgUrl' => 'setRelatedImgUrl'
+        'rejectReasonId' => 'setRejectReasonId',
+        'rejectReasonContent' => 'setRejectReasonContent',
+        'caseDoc' => 'setCaseDoc',
+        'caseContent' => 'setCaseContent',
+        'rejectInfoLocations' => 'setRejectInfoLocations'
     ];
 
     /**
@@ -143,14 +131,11 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'x' => 'getX',
-        'y' => 'getY',
-        'width' => 'getWidth',
-        'height' => 'getHeight',
-        'timeSecond' => 'getTimeSecond',
-        'locationImgUrl' => 'getLocationImgUrl',
-        'imgUrl' => 'getImgUrl',
-        'relatedImgUrl' => 'getRelatedImgUrl'
+        'rejectReasonId' => 'getRejectReasonId',
+        'rejectReasonContent' => 'getRejectReasonContent',
+        'caseDoc' => 'getCaseDoc',
+        'caseContent' => 'getCaseContent',
+        'rejectInfoLocations' => 'getRejectInfoLocations'
     ];
 
     /**
@@ -213,14 +198,11 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['x'] = isset($data['x']) ? $data['x'] : null;
-        $this->container['y'] = isset($data['y']) ? $data['y'] : null;
-        $this->container['width'] = isset($data['width']) ? $data['width'] : null;
-        $this->container['height'] = isset($data['height']) ? $data['height'] : null;
-        $this->container['timeSecond'] = isset($data['timeSecond']) ? $data['timeSecond'] : null;
-        $this->container['locationImgUrl'] = isset($data['locationImgUrl']) ? $data['locationImgUrl'] : null;
-        $this->container['imgUrl'] = isset($data['imgUrl']) ? $data['imgUrl'] : null;
-        $this->container['relatedImgUrl'] = isset($data['relatedImgUrl']) ? $data['relatedImgUrl'] : null;
+        $this->container['rejectReasonId'] = isset($data['rejectReasonId']) ? $data['rejectReasonId'] : null;
+        $this->container['rejectReasonContent'] = isset($data['rejectReasonContent']) ? $data['rejectReasonContent'] : null;
+        $this->container['caseDoc'] = isset($data['caseDoc']) ? $data['caseDoc'] : null;
+        $this->container['caseContent'] = isset($data['caseContent']) ? $data['caseContent'] : null;
+        $this->container['rejectInfoLocations'] = isset($data['rejectInfoLocations']) ? $data['rejectInfoLocations'] : null;
     }
 
     /**
@@ -248,193 +230,121 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets x
-     *
-     * @return int|mixed
-     */
-    public function getX()
-    {
-        return $this->container['x'];
-    }
-
-    /**
-     * Sets x
-     *
-     * @param int|mixed $x x
-     *
-     * @return $this
-     */
-    public function setX($x)
-    {
-        $this->container['x'] = $x;
-
-        return $this;
-    }
-
-    /**
-     * Gets y
-     *
-     * @return int|mixed
-     */
-    public function getY()
-    {
-        return $this->container['y'];
-    }
-
-    /**
-     * Sets y
-     *
-     * @param int|mixed $y y
-     *
-     * @return $this
-     */
-    public function setY($y)
-    {
-        $this->container['y'] = $y;
-
-        return $this;
-    }
-
-    /**
-     * Gets width
-     *
-     * @return int|mixed
-     */
-    public function getWidth()
-    {
-        return $this->container['width'];
-    }
-
-    /**
-     * Sets width
-     *
-     * @param int|mixed $width width
-     *
-     * @return $this
-     */
-    public function setWidth($width)
-    {
-        $this->container['width'] = $width;
-
-        return $this;
-    }
-
-    /**
-     * Gets height
-     *
-     * @return int|mixed
-     */
-    public function getHeight()
-    {
-        return $this->container['height'];
-    }
-
-    /**
-     * Sets height
-     *
-     * @param int|mixed $height height
-     *
-     * @return $this
-     */
-    public function setHeight($height)
-    {
-        $this->container['height'] = $height;
-
-        return $this;
-    }
-
-    /**
-     * Gets timeSecond
-     *
-     * @return double|mixed
-     */
-    public function getTimeSecond()
-    {
-        return $this->container['timeSecond'];
-    }
-
-    /**
-     * Sets timeSecond
-     *
-     * @param double|mixed $timeSecond timeSecond
-     *
-     * @return $this
-     */
-    public function setTimeSecond($timeSecond)
-    {
-        $this->container['timeSecond'] = $timeSecond;
-
-        return $this;
-    }
-
-    /**
-     * Gets locationImgUrl
+     * Gets rejectReasonId
      *
      * @return string|mixed
      */
-    public function getLocationImgUrl()
+    public function getRejectReasonId()
     {
-        return $this->container['locationImgUrl'];
+        return $this->container['rejectReasonId'];
     }
 
     /**
-     * Sets locationImgUrl
+     * Sets rejectReasonId
      *
-     * @param string|mixed $locationImgUrl locationImgUrl
+     * @param string|mixed $rejectReasonId rejectReasonId
      *
      * @return $this
      */
-    public function setLocationImgUrl($locationImgUrl)
+    public function setRejectReasonId($rejectReasonId)
     {
-        $this->container['locationImgUrl'] = $locationImgUrl;
+        $this->container['rejectReasonId'] = $rejectReasonId;
 
         return $this;
     }
 
     /**
-     * Gets imgUrl
+     * Gets rejectReasonContent
      *
      * @return string|mixed
      */
-    public function getImgUrl()
+    public function getRejectReasonContent()
     {
-        return $this->container['imgUrl'];
+        return $this->container['rejectReasonContent'];
     }
 
     /**
-     * Sets imgUrl
+     * Sets rejectReasonContent
      *
-     * @param string|mixed $imgUrl imgUrl
+     * @param string|mixed $rejectReasonContent rejectReasonContent
      *
      * @return $this
      */
-    public function setImgUrl($imgUrl)
+    public function setRejectReasonContent($rejectReasonContent)
     {
-        $this->container['imgUrl'] = $imgUrl;
+        $this->container['rejectReasonContent'] = $rejectReasonContent;
 
         return $this;
     }
 
     /**
-     * Gets relatedImgUrl
+     * Gets caseDoc
      *
      * @return string|mixed
      */
-    public function getRelatedImgUrl()
+    public function getCaseDoc()
     {
-        return $this->container['relatedImgUrl'];
+        return $this->container['caseDoc'];
     }
 
     /**
-     * Sets relatedImgUrl
+     * Sets caseDoc
      *
-     * @param string|mixed $relatedImgUrl relatedImgUrl
+     * @param string|mixed $caseDoc caseDoc
      *
      * @return $this
      */
-    public function setRelatedImgUrl($relatedImgUrl)
+    public function setCaseDoc($caseDoc)
     {
-        $this->container['relatedImgUrl'] = $relatedImgUrl;
+        $this->container['caseDoc'] = $caseDoc;
+
+        return $this;
+    }
+
+    /**
+     * Gets caseContent
+     *
+     * @return string|mixed
+     */
+    public function getCaseContent()
+    {
+        return $this->container['caseContent'];
+    }
+
+    /**
+     * Sets caseContent
+     *
+     * @param string|mixed $caseContent caseContent
+     *
+     * @return $this
+     */
+    public function setCaseContent($caseContent)
+    {
+        $this->container['caseContent'] = $caseContent;
+
+        return $this;
+    }
+
+    /**
+     * Gets rejectInfoLocations
+     *
+     * @return \TencentAds\Model\PreReviewRejectInfoLocation[]|mixed
+     */
+    public function getRejectInfoLocations()
+    {
+        return $this->container['rejectInfoLocations'];
+    }
+
+    /**
+     * Sets rejectInfoLocations
+     *
+     * @param \TencentAds\Model\PreReviewRejectInfoLocation[]|mixed $rejectInfoLocations rejectInfoLocations
+     *
+     * @return $this
+     */
+    public function setRejectInfoLocations($rejectInfoLocations)
+    {
+        $this->container['rejectInfoLocations'] = $rejectInfoLocations;
 
         return $this;
     }

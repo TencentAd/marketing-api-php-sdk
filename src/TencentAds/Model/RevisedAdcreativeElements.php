@@ -74,7 +74,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'bottomText' => 'string',
         'excitationText' => 'string',
         'countdownBegin' => 'int',
-        'countdown' => 'int',
+        'countdownExpiringTimestamp' => 'int',
         'countdownPrice' => 'string',
         'countdownTimeType' => '\TencentAds\Model\AdCreativeCountdownTimeType',
         'miniProgramId' => 'string',
@@ -100,7 +100,6 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'fullScreenImage' => 'string',
         'zipUrl' => 'string',
         'endPage' => '\TencentAds\Model\AdCreativeEndPage',
-        'shopImage' => 'string',
         'headLine' => 'string',
         'shopImageStruct' => '\TencentAds\Model\AdCreativeShopImageStruct',
         'chosenButton' => '\TencentAds\Model\ChosenButton',
@@ -131,7 +130,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'bottomText' => null,
         'excitationText' => null,
         'countdownBegin' => 'int64',
-        'countdown' => 'int64',
+        'countdownExpiringTimestamp' => 'int64',
         'countdownPrice' => null,
         'countdownTimeType' => null,
         'miniProgramId' => null,
@@ -157,7 +156,6 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'fullScreenImage' => null,
         'zipUrl' => null,
         'endPage' => null,
-        'shopImage' => null,
         'headLine' => null,
         'shopImageStruct' => null,
         'chosenButton' => null,
@@ -209,7 +207,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'bottomText' => 'bottom_text',
         'excitationText' => 'excitation_text',
         'countdownBegin' => 'countdown_begin',
-        'countdown' => 'countdown',
+        'countdownExpiringTimestamp' => 'countdown_expiring_timestamp',
         'countdownPrice' => 'countdown_price',
         'countdownTimeType' => 'countdown_time_type',
         'miniProgramId' => 'mini_program_id',
@@ -235,7 +233,6 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'fullScreenImage' => 'full_screen_image',
         'zipUrl' => 'zip_url',
         'endPage' => 'end_page',
-        'shopImage' => 'shop_image',
         'headLine' => 'head_line',
         'shopImageStruct' => 'shop_image_struct',
         'chosenButton' => 'chosen_button',
@@ -266,7 +263,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'bottomText' => 'setBottomText',
         'excitationText' => 'setExcitationText',
         'countdownBegin' => 'setCountdownBegin',
-        'countdown' => 'setCountdown',
+        'countdownExpiringTimestamp' => 'setCountdownExpiringTimestamp',
         'countdownPrice' => 'setCountdownPrice',
         'countdownTimeType' => 'setCountdownTimeType',
         'miniProgramId' => 'setMiniProgramId',
@@ -292,7 +289,6 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'fullScreenImage' => 'setFullScreenImage',
         'zipUrl' => 'setZipUrl',
         'endPage' => 'setEndPage',
-        'shopImage' => 'setShopImage',
         'headLine' => 'setHeadLine',
         'shopImageStruct' => 'setShopImageStruct',
         'chosenButton' => 'setChosenButton',
@@ -323,7 +319,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'bottomText' => 'getBottomText',
         'excitationText' => 'getExcitationText',
         'countdownBegin' => 'getCountdownBegin',
-        'countdown' => 'getCountdown',
+        'countdownExpiringTimestamp' => 'getCountdownExpiringTimestamp',
         'countdownPrice' => 'getCountdownPrice',
         'countdownTimeType' => 'getCountdownTimeType',
         'miniProgramId' => 'getMiniProgramId',
@@ -349,7 +345,6 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'fullScreenImage' => 'getFullScreenImage',
         'zipUrl' => 'getZipUrl',
         'endPage' => 'getEndPage',
-        'shopImage' => 'getShopImage',
         'headLine' => 'getHeadLine',
         'shopImageStruct' => 'getShopImageStruct',
         'chosenButton' => 'getChosenButton',
@@ -434,7 +429,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         $this->container['bottomText'] = isset($data['bottomText']) ? $data['bottomText'] : null;
         $this->container['excitationText'] = isset($data['excitationText']) ? $data['excitationText'] : null;
         $this->container['countdownBegin'] = isset($data['countdownBegin']) ? $data['countdownBegin'] : null;
-        $this->container['countdown'] = isset($data['countdown']) ? $data['countdown'] : null;
+        $this->container['countdownExpiringTimestamp'] = isset($data['countdownExpiringTimestamp']) ? $data['countdownExpiringTimestamp'] : null;
         $this->container['countdownPrice'] = isset($data['countdownPrice']) ? $data['countdownPrice'] : null;
         $this->container['countdownTimeType'] = isset($data['countdownTimeType']) ? $data['countdownTimeType'] : null;
         $this->container['miniProgramId'] = isset($data['miniProgramId']) ? $data['miniProgramId'] : null;
@@ -460,7 +455,6 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         $this->container['fullScreenImage'] = isset($data['fullScreenImage']) ? $data['fullScreenImage'] : null;
         $this->container['zipUrl'] = isset($data['zipUrl']) ? $data['zipUrl'] : null;
         $this->container['endPage'] = isset($data['endPage']) ? $data['endPage'] : null;
-        $this->container['shopImage'] = isset($data['shopImage']) ? $data['shopImage'] : null;
         $this->container['headLine'] = isset($data['headLine']) ? $data['headLine'] : null;
         $this->container['shopImageStruct'] = isset($data['shopImageStruct']) ? $data['shopImageStruct'] : null;
         $this->container['chosenButton'] = isset($data['chosenButton']) ? $data['chosenButton'] : null;
@@ -878,25 +872,25 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets countdown
+     * Gets countdownExpiringTimestamp
      *
      * @return int|mixed
      */
-    public function getCountdown()
+    public function getCountdownExpiringTimestamp()
     {
-        return $this->container['countdown'];
+        return $this->container['countdownExpiringTimestamp'];
     }
 
     /**
-     * Sets countdown
+     * Sets countdownExpiringTimestamp
      *
-     * @param int|mixed $countdown countdown
+     * @param int|mixed $countdownExpiringTimestamp countdownExpiringTimestamp
      *
      * @return $this
      */
-    public function setCountdown($countdown)
+    public function setCountdownExpiringTimestamp($countdownExpiringTimestamp)
     {
-        $this->container['countdown'] = $countdown;
+        $this->container['countdownExpiringTimestamp'] = $countdownExpiringTimestamp;
 
         return $this;
     }
@@ -1497,30 +1491,6 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     public function setEndPage($endPage)
     {
         $this->container['endPage'] = $endPage;
-
-        return $this;
-    }
-
-    /**
-     * Gets shopImage
-     *
-     * @return string|mixed
-     */
-    public function getShopImage()
-    {
-        return $this->container['shopImage'];
-    }
-
-    /**
-     * Sets shopImage
-     *
-     * @param string|mixed $shopImage shopImage
-     *
-     * @return $this
-     */
-    public function setShopImage($shopImage)
-    {
-        $this->container['shopImage'] = $shopImage;
 
         return $this;
     }

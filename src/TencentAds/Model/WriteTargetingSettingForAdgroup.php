@@ -62,21 +62,16 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'gender' => 'string[]',
         'education' => 'string[]',
         'maritalStatus' => 'string[]',
-        'workingStatus' => 'string[]',
         'geoLocation' => '\TencentAds\Model\GeoLocations',
         'userOs' => 'string[]',
-        'newDevice' => 'string[]',
         'devicePrice' => 'string[]',
         'deviceBrandModel' => '\TencentAds\Model\DeviceBrandModel',
         'networkType' => 'string[]',
         'networkOperator' => 'string[]',
-        'networkScene' => 'string[]',
         'appInstallStatus' => 'string[]',
         'consumptionStatus' => 'string[]',
         'gameConsumptionLevel' => 'string[]',
-        'residentialCommunityPrice' => '\TencentAds\Model\ResidentialCommunityPriceStruct[]',
         'financialSituation' => 'string[]',
-        'consumptionType' => 'string[]',
         'wechatAdBehavior' => '\TencentAds\Model\WechatAdBehavior',
         'customAudience' => 'int[]',
         'excludedCustomAudience' => 'int[]',
@@ -96,21 +91,16 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'gender' => null,
         'education' => null,
         'maritalStatus' => null,
-        'workingStatus' => null,
         'geoLocation' => null,
         'userOs' => null,
-        'newDevice' => null,
         'devicePrice' => null,
         'deviceBrandModel' => null,
         'networkType' => null,
         'networkOperator' => null,
-        'networkScene' => null,
         'appInstallStatus' => null,
         'consumptionStatus' => null,
         'gameConsumptionLevel' => null,
-        'residentialCommunityPrice' => null,
         'financialSituation' => null,
-        'consumptionType' => null,
         'wechatAdBehavior' => null,
         'customAudience' => 'int64',
         'excludedCustomAudience' => 'int64',
@@ -151,21 +141,16 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'gender' => 'gender',
         'education' => 'education',
         'maritalStatus' => 'marital_status',
-        'workingStatus' => 'working_status',
         'geoLocation' => 'geo_location',
         'userOs' => 'user_os',
-        'newDevice' => 'new_device',
         'devicePrice' => 'device_price',
         'deviceBrandModel' => 'device_brand_model',
         'networkType' => 'network_type',
         'networkOperator' => 'network_operator',
-        'networkScene' => 'network_scene',
         'appInstallStatus' => 'app_install_status',
         'consumptionStatus' => 'consumption_status',
         'gameConsumptionLevel' => 'game_consumption_level',
-        'residentialCommunityPrice' => 'residential_community_price',
         'financialSituation' => 'financial_situation',
-        'consumptionType' => 'consumption_type',
         'wechatAdBehavior' => 'wechat_ad_behavior',
         'customAudience' => 'custom_audience',
         'excludedCustomAudience' => 'excluded_custom_audience',
@@ -185,21 +170,16 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'gender' => 'setGender',
         'education' => 'setEducation',
         'maritalStatus' => 'setMaritalStatus',
-        'workingStatus' => 'setWorkingStatus',
         'geoLocation' => 'setGeoLocation',
         'userOs' => 'setUserOs',
-        'newDevice' => 'setNewDevice',
         'devicePrice' => 'setDevicePrice',
         'deviceBrandModel' => 'setDeviceBrandModel',
         'networkType' => 'setNetworkType',
         'networkOperator' => 'setNetworkOperator',
-        'networkScene' => 'setNetworkScene',
         'appInstallStatus' => 'setAppInstallStatus',
         'consumptionStatus' => 'setConsumptionStatus',
         'gameConsumptionLevel' => 'setGameConsumptionLevel',
-        'residentialCommunityPrice' => 'setResidentialCommunityPrice',
         'financialSituation' => 'setFinancialSituation',
-        'consumptionType' => 'setConsumptionType',
         'wechatAdBehavior' => 'setWechatAdBehavior',
         'customAudience' => 'setCustomAudience',
         'excludedCustomAudience' => 'setExcludedCustomAudience',
@@ -219,21 +199,16 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         'gender' => 'getGender',
         'education' => 'getEducation',
         'maritalStatus' => 'getMaritalStatus',
-        'workingStatus' => 'getWorkingStatus',
         'geoLocation' => 'getGeoLocation',
         'userOs' => 'getUserOs',
-        'newDevice' => 'getNewDevice',
         'devicePrice' => 'getDevicePrice',
         'deviceBrandModel' => 'getDeviceBrandModel',
         'networkType' => 'getNetworkType',
         'networkOperator' => 'getNetworkOperator',
-        'networkScene' => 'getNetworkScene',
         'appInstallStatus' => 'getAppInstallStatus',
         'consumptionStatus' => 'getConsumptionStatus',
         'gameConsumptionLevel' => 'getGameConsumptionLevel',
-        'residentialCommunityPrice' => 'getResidentialCommunityPrice',
         'financialSituation' => 'getFinancialSituation',
-        'consumptionType' => 'getConsumptionType',
         'wechatAdBehavior' => 'getWechatAdBehavior',
         'customAudience' => 'getCustomAudience',
         'excludedCustomAudience' => 'getExcludedCustomAudience',
@@ -307,21 +282,16 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
         $this->container['gender'] = isset($data['gender']) ? $data['gender'] : null;
         $this->container['education'] = isset($data['education']) ? $data['education'] : null;
         $this->container['maritalStatus'] = isset($data['maritalStatus']) ? $data['maritalStatus'] : null;
-        $this->container['workingStatus'] = isset($data['workingStatus']) ? $data['workingStatus'] : null;
         $this->container['geoLocation'] = isset($data['geoLocation']) ? $data['geoLocation'] : null;
         $this->container['userOs'] = isset($data['userOs']) ? $data['userOs'] : null;
-        $this->container['newDevice'] = isset($data['newDevice']) ? $data['newDevice'] : null;
         $this->container['devicePrice'] = isset($data['devicePrice']) ? $data['devicePrice'] : null;
         $this->container['deviceBrandModel'] = isset($data['deviceBrandModel']) ? $data['deviceBrandModel'] : null;
         $this->container['networkType'] = isset($data['networkType']) ? $data['networkType'] : null;
         $this->container['networkOperator'] = isset($data['networkOperator']) ? $data['networkOperator'] : null;
-        $this->container['networkScene'] = isset($data['networkScene']) ? $data['networkScene'] : null;
         $this->container['appInstallStatus'] = isset($data['appInstallStatus']) ? $data['appInstallStatus'] : null;
         $this->container['consumptionStatus'] = isset($data['consumptionStatus']) ? $data['consumptionStatus'] : null;
         $this->container['gameConsumptionLevel'] = isset($data['gameConsumptionLevel']) ? $data['gameConsumptionLevel'] : null;
-        $this->container['residentialCommunityPrice'] = isset($data['residentialCommunityPrice']) ? $data['residentialCommunityPrice'] : null;
         $this->container['financialSituation'] = isset($data['financialSituation']) ? $data['financialSituation'] : null;
-        $this->container['consumptionType'] = isset($data['consumptionType']) ? $data['consumptionType'] : null;
         $this->container['wechatAdBehavior'] = isset($data['wechatAdBehavior']) ? $data['wechatAdBehavior'] : null;
         $this->container['customAudience'] = isset($data['customAudience']) ? $data['customAudience'] : null;
         $this->container['excludedCustomAudience'] = isset($data['excludedCustomAudience']) ? $data['excludedCustomAudience'] : null;
@@ -452,30 +422,6 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets workingStatus
-     *
-     * @return string[]|mixed
-     */
-    public function getWorkingStatus()
-    {
-        return $this->container['workingStatus'];
-    }
-
-    /**
-     * Sets workingStatus
-     *
-     * @param string[]|mixed $workingStatus workingStatus
-     *
-     * @return $this
-     */
-    public function setWorkingStatus($workingStatus)
-    {
-        $this->container['workingStatus'] = $workingStatus;
-
-        return $this;
-    }
-
-    /**
      * Gets geoLocation
      *
      * @return \TencentAds\Model\GeoLocations|mixed
@@ -519,30 +465,6 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     public function setUserOs($userOs)
     {
         $this->container['userOs'] = $userOs;
-
-        return $this;
-    }
-
-    /**
-     * Gets newDevice
-     *
-     * @return string[]|mixed
-     */
-    public function getNewDevice()
-    {
-        return $this->container['newDevice'];
-    }
-
-    /**
-     * Sets newDevice
-     *
-     * @param string[]|mixed $newDevice newDevice
-     *
-     * @return $this
-     */
-    public function setNewDevice($newDevice)
-    {
-        $this->container['newDevice'] = $newDevice;
 
         return $this;
     }
@@ -644,30 +566,6 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets networkScene
-     *
-     * @return string[]|mixed
-     */
-    public function getNetworkScene()
-    {
-        return $this->container['networkScene'];
-    }
-
-    /**
-     * Sets networkScene
-     *
-     * @param string[]|mixed $networkScene networkScene
-     *
-     * @return $this
-     */
-    public function setNetworkScene($networkScene)
-    {
-        $this->container['networkScene'] = $networkScene;
-
-        return $this;
-    }
-
-    /**
      * Gets appInstallStatus
      *
      * @return string[]|mixed
@@ -740,30 +638,6 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets residentialCommunityPrice
-     *
-     * @return \TencentAds\Model\ResidentialCommunityPriceStruct[]|mixed
-     */
-    public function getResidentialCommunityPrice()
-    {
-        return $this->container['residentialCommunityPrice'];
-    }
-
-    /**
-     * Sets residentialCommunityPrice
-     *
-     * @param \TencentAds\Model\ResidentialCommunityPriceStruct[]|mixed $residentialCommunityPrice residentialCommunityPrice
-     *
-     * @return $this
-     */
-    public function setResidentialCommunityPrice($residentialCommunityPrice)
-    {
-        $this->container['residentialCommunityPrice'] = $residentialCommunityPrice;
-
-        return $this;
-    }
-
-    /**
      * Gets financialSituation
      *
      * @return string[]|mixed
@@ -783,30 +657,6 @@ class WriteTargetingSettingForAdgroup implements ModelInterface, ArrayAccess
     public function setFinancialSituation($financialSituation)
     {
         $this->container['financialSituation'] = $financialSituation;
-
-        return $this;
-    }
-
-    /**
-     * Gets consumptionType
-     *
-     * @return string[]|mixed
-     */
-    public function getConsumptionType()
-    {
-        return $this->container['consumptionType'];
-    }
-
-    /**
-     * Sets consumptionType
-     *
-     * @param string[]|mixed $consumptionType consumptionType
-     *
-     * @return $this
-     */
-    public function setConsumptionType($consumptionType)
-    {
-        $this->container['consumptionType'] = $consumptionType;
 
         return $this;
     }

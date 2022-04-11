@@ -453,6 +453,59 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'scanCodeAddFansCount' => 'int',
         'scanCodeAddFansUvCost' => 'int',
         'scanCodeAddFansCountCost' => 'int',
+        'bizFollowCount' => 'int',
+        'bizFollowUv' => 'int',
+        'bizFollowCost' => 'int',
+        'bizFollowRate' => 'double',
+        'bizRegCount' => 'int',
+        'bizRegUv' => 'int',
+        'bizRegRate' => 'double',
+        'bizRegCost' => 'int',
+        'bizRegOrderAmount' => 'int',
+        'bizRegRoi' => 'double',
+        'bizReservationCount' => 'int',
+        'bizReservationUv' => 'int',
+        'bizReservationRate' => 'double',
+        'bizReservationCost' => 'int',
+        'bizReservationAmount' => 'int',
+        'bizReservationRoi' => 'double',
+        'bizOrderCount' => 'int',
+        'bizOrderUv' => 'int',
+        'bizOrderRate' => 'double',
+        'bizOrderCost' => 'int',
+        'bizOrderRoi' => 'double',
+        'bizOrderAmount' => 'int',
+        'biz1dOrderCount' => 'int',
+        'biz1dOrderAmount' => 'int',
+        'bizPurchaseCount' => 'int',
+        'bizPurchaseAmount' => 'int',
+        'bizPurchaseRoi' => 'double',
+        'bizConsultCount' => 'int',
+        'bizReadingCount' => 'int',
+        'bizPageApplyCount' => 'int',
+        'bizPageApplyUv' => 'int',
+        'bizPageApplyCost' => 'int',
+        'bizPageApplyRate' => 'double',
+        'bizCreditCount' => 'int',
+        'bizCreditCost' => 'int',
+        'bizCreditRate' => 'double',
+        'bizCreditUv' => 'int',
+        'bizDepositCount' => 'int',
+        'biz1dPurchaseCount' => 'int',
+        'biz1dPurchaseAmount' => 'int',
+        'biz3dPurchaseCount' => 'int',
+        'biz3dPurchaseAmount' => 'int',
+        'biz7dPurchaseCount' => 'int',
+        'biz7dPurchaseAmount' => 'int',
+        'biz15dPurchaseCount' => 'int',
+        'biz15dPurchaseAmount' => 'int',
+        'biz30dPurchaseCount' => 'int',
+        'biz30dPurchaseAmount' => 'int',
+        'biz1dPurchaseRoi' => 'double',
+        'biz3dPurchaseRoi' => 'double',
+        'biz7dPurchaseRoi' => 'double',
+        'biz15dPurchaseRoi' => 'double',
+        'biz30dPurchaseRoi' => 'double',
         'age' => 'string',
         'regionId' => 'int',
         'cityId' => 'int',
@@ -997,6 +1050,59 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'scanCodeAddFansCount' => 'int64',
         'scanCodeAddFansUvCost' => 'int64',
         'scanCodeAddFansCountCost' => 'int64',
+        'bizFollowCount' => 'int64',
+        'bizFollowUv' => 'int64',
+        'bizFollowCost' => 'int64',
+        'bizFollowRate' => 'double',
+        'bizRegCount' => 'int64',
+        'bizRegUv' => 'int64',
+        'bizRegRate' => 'double',
+        'bizRegCost' => 'int64',
+        'bizRegOrderAmount' => 'int64',
+        'bizRegRoi' => 'double',
+        'bizReservationCount' => 'int64',
+        'bizReservationUv' => 'int64',
+        'bizReservationRate' => 'double',
+        'bizReservationCost' => 'int64',
+        'bizReservationAmount' => 'int64',
+        'bizReservationRoi' => 'double',
+        'bizOrderCount' => 'int64',
+        'bizOrderUv' => 'int64',
+        'bizOrderRate' => 'double',
+        'bizOrderCost' => 'int64',
+        'bizOrderRoi' => 'double',
+        'bizOrderAmount' => 'int64',
+        'biz1dOrderCount' => 'int64',
+        'biz1dOrderAmount' => 'int64',
+        'bizPurchaseCount' => 'int64',
+        'bizPurchaseAmount' => 'int64',
+        'bizPurchaseRoi' => 'double',
+        'bizConsultCount' => 'int64',
+        'bizReadingCount' => 'int64',
+        'bizPageApplyCount' => 'int64',
+        'bizPageApplyUv' => 'int64',
+        'bizPageApplyCost' => 'int64',
+        'bizPageApplyRate' => 'double',
+        'bizCreditCount' => 'int64',
+        'bizCreditCost' => 'int64',
+        'bizCreditRate' => 'double',
+        'bizCreditUv' => 'int64',
+        'bizDepositCount' => 'int64',
+        'biz1dPurchaseCount' => 'int64',
+        'biz1dPurchaseAmount' => 'int64',
+        'biz3dPurchaseCount' => 'int64',
+        'biz3dPurchaseAmount' => 'int64',
+        'biz7dPurchaseCount' => 'int64',
+        'biz7dPurchaseAmount' => 'int64',
+        'biz15dPurchaseCount' => 'int64',
+        'biz15dPurchaseAmount' => 'int64',
+        'biz30dPurchaseCount' => 'int64',
+        'biz30dPurchaseAmount' => 'int64',
+        'biz1dPurchaseRoi' => 'double',
+        'biz3dPurchaseRoi' => 'double',
+        'biz7dPurchaseRoi' => 'double',
+        'biz15dPurchaseRoi' => 'double',
+        'biz30dPurchaseRoi' => 'double',
         'age' => null,
         'regionId' => 'int64',
         'cityId' => 'int64',
@@ -1562,6 +1668,59 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'scanCodeAddFansCount' => 'scan_code_add_fans_count',
         'scanCodeAddFansUvCost' => 'scan_code_add_fans_uv_cost',
         'scanCodeAddFansCountCost' => 'scan_code_add_fans_count_cost',
+        'bizFollowCount' => 'biz_follow_count',
+        'bizFollowUv' => 'biz_follow_uv',
+        'bizFollowCost' => 'biz_follow_cost',
+        'bizFollowRate' => 'biz_follow_rate',
+        'bizRegCount' => 'biz_reg_count',
+        'bizRegUv' => 'biz_reg_uv',
+        'bizRegRate' => 'biz_reg_rate',
+        'bizRegCost' => 'biz_reg_cost',
+        'bizRegOrderAmount' => 'biz_reg_order_amount',
+        'bizRegRoi' => 'biz_reg_roi',
+        'bizReservationCount' => 'biz_reservation_count',
+        'bizReservationUv' => 'biz_reservation_uv',
+        'bizReservationRate' => 'biz_reservation_rate',
+        'bizReservationCost' => 'biz_reservation_cost',
+        'bizReservationAmount' => 'biz_reservation_amount',
+        'bizReservationRoi' => 'biz_reservation_roi',
+        'bizOrderCount' => 'biz_order_count',
+        'bizOrderUv' => 'biz_order_uv',
+        'bizOrderRate' => 'biz_order_rate',
+        'bizOrderCost' => 'biz_order_cost',
+        'bizOrderRoi' => 'biz_order_roi',
+        'bizOrderAmount' => 'biz_order_amount',
+        'biz1dOrderCount' => 'biz_1d_order_count',
+        'biz1dOrderAmount' => 'biz_1d_order_amount',
+        'bizPurchaseCount' => 'biz_purchase_count',
+        'bizPurchaseAmount' => 'biz_purchase_amount',
+        'bizPurchaseRoi' => 'biz_purchase_roi',
+        'bizConsultCount' => 'biz_consult_count',
+        'bizReadingCount' => 'biz_reading_count',
+        'bizPageApplyCount' => 'biz_page_apply_count',
+        'bizPageApplyUv' => 'biz_page_apply_uv',
+        'bizPageApplyCost' => 'biz_page_apply_cost',
+        'bizPageApplyRate' => 'biz_page_apply_rate',
+        'bizCreditCount' => 'biz_credit_count',
+        'bizCreditCost' => 'biz_credit_cost',
+        'bizCreditRate' => 'biz_credit_rate',
+        'bizCreditUv' => 'biz_credit_uv',
+        'bizDepositCount' => 'biz_deposit_count',
+        'biz1dPurchaseCount' => 'biz_1d_purchase_count',
+        'biz1dPurchaseAmount' => 'biz_1d_purchase_amount',
+        'biz3dPurchaseCount' => 'biz_3d_purchase_count',
+        'biz3dPurchaseAmount' => 'biz_3d_purchase_amount',
+        'biz7dPurchaseCount' => 'biz_7d_purchase_count',
+        'biz7dPurchaseAmount' => 'biz_7d_purchase_amount',
+        'biz15dPurchaseCount' => 'biz_15d_purchase_count',
+        'biz15dPurchaseAmount' => 'biz_15d_purchase_amount',
+        'biz30dPurchaseCount' => 'biz_30d_purchase_count',
+        'biz30dPurchaseAmount' => 'biz_30d_purchase_amount',
+        'biz1dPurchaseRoi' => 'biz_1d_purchase_roi',
+        'biz3dPurchaseRoi' => 'biz_3d_purchase_roi',
+        'biz7dPurchaseRoi' => 'biz_7d_purchase_roi',
+        'biz15dPurchaseRoi' => 'biz_15d_purchase_roi',
+        'biz30dPurchaseRoi' => 'biz_30d_purchase_roi',
         'age' => 'age',
         'regionId' => 'region_id',
         'cityId' => 'city_id',
@@ -2106,6 +2265,59 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'scanCodeAddFansCount' => 'setScanCodeAddFansCount',
         'scanCodeAddFansUvCost' => 'setScanCodeAddFansUvCost',
         'scanCodeAddFansCountCost' => 'setScanCodeAddFansCountCost',
+        'bizFollowCount' => 'setBizFollowCount',
+        'bizFollowUv' => 'setBizFollowUv',
+        'bizFollowCost' => 'setBizFollowCost',
+        'bizFollowRate' => 'setBizFollowRate',
+        'bizRegCount' => 'setBizRegCount',
+        'bizRegUv' => 'setBizRegUv',
+        'bizRegRate' => 'setBizRegRate',
+        'bizRegCost' => 'setBizRegCost',
+        'bizRegOrderAmount' => 'setBizRegOrderAmount',
+        'bizRegRoi' => 'setBizRegRoi',
+        'bizReservationCount' => 'setBizReservationCount',
+        'bizReservationUv' => 'setBizReservationUv',
+        'bizReservationRate' => 'setBizReservationRate',
+        'bizReservationCost' => 'setBizReservationCost',
+        'bizReservationAmount' => 'setBizReservationAmount',
+        'bizReservationRoi' => 'setBizReservationRoi',
+        'bizOrderCount' => 'setBizOrderCount',
+        'bizOrderUv' => 'setBizOrderUv',
+        'bizOrderRate' => 'setBizOrderRate',
+        'bizOrderCost' => 'setBizOrderCost',
+        'bizOrderRoi' => 'setBizOrderRoi',
+        'bizOrderAmount' => 'setBizOrderAmount',
+        'biz1dOrderCount' => 'setBiz1dOrderCount',
+        'biz1dOrderAmount' => 'setBiz1dOrderAmount',
+        'bizPurchaseCount' => 'setBizPurchaseCount',
+        'bizPurchaseAmount' => 'setBizPurchaseAmount',
+        'bizPurchaseRoi' => 'setBizPurchaseRoi',
+        'bizConsultCount' => 'setBizConsultCount',
+        'bizReadingCount' => 'setBizReadingCount',
+        'bizPageApplyCount' => 'setBizPageApplyCount',
+        'bizPageApplyUv' => 'setBizPageApplyUv',
+        'bizPageApplyCost' => 'setBizPageApplyCost',
+        'bizPageApplyRate' => 'setBizPageApplyRate',
+        'bizCreditCount' => 'setBizCreditCount',
+        'bizCreditCost' => 'setBizCreditCost',
+        'bizCreditRate' => 'setBizCreditRate',
+        'bizCreditUv' => 'setBizCreditUv',
+        'bizDepositCount' => 'setBizDepositCount',
+        'biz1dPurchaseCount' => 'setBiz1dPurchaseCount',
+        'biz1dPurchaseAmount' => 'setBiz1dPurchaseAmount',
+        'biz3dPurchaseCount' => 'setBiz3dPurchaseCount',
+        'biz3dPurchaseAmount' => 'setBiz3dPurchaseAmount',
+        'biz7dPurchaseCount' => 'setBiz7dPurchaseCount',
+        'biz7dPurchaseAmount' => 'setBiz7dPurchaseAmount',
+        'biz15dPurchaseCount' => 'setBiz15dPurchaseCount',
+        'biz15dPurchaseAmount' => 'setBiz15dPurchaseAmount',
+        'biz30dPurchaseCount' => 'setBiz30dPurchaseCount',
+        'biz30dPurchaseAmount' => 'setBiz30dPurchaseAmount',
+        'biz1dPurchaseRoi' => 'setBiz1dPurchaseRoi',
+        'biz3dPurchaseRoi' => 'setBiz3dPurchaseRoi',
+        'biz7dPurchaseRoi' => 'setBiz7dPurchaseRoi',
+        'biz15dPurchaseRoi' => 'setBiz15dPurchaseRoi',
+        'biz30dPurchaseRoi' => 'setBiz30dPurchaseRoi',
         'age' => 'setAge',
         'regionId' => 'setRegionId',
         'cityId' => 'setCityId',
@@ -2650,6 +2862,59 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'scanCodeAddFansCount' => 'getScanCodeAddFansCount',
         'scanCodeAddFansUvCost' => 'getScanCodeAddFansUvCost',
         'scanCodeAddFansCountCost' => 'getScanCodeAddFansCountCost',
+        'bizFollowCount' => 'getBizFollowCount',
+        'bizFollowUv' => 'getBizFollowUv',
+        'bizFollowCost' => 'getBizFollowCost',
+        'bizFollowRate' => 'getBizFollowRate',
+        'bizRegCount' => 'getBizRegCount',
+        'bizRegUv' => 'getBizRegUv',
+        'bizRegRate' => 'getBizRegRate',
+        'bizRegCost' => 'getBizRegCost',
+        'bizRegOrderAmount' => 'getBizRegOrderAmount',
+        'bizRegRoi' => 'getBizRegRoi',
+        'bizReservationCount' => 'getBizReservationCount',
+        'bizReservationUv' => 'getBizReservationUv',
+        'bizReservationRate' => 'getBizReservationRate',
+        'bizReservationCost' => 'getBizReservationCost',
+        'bizReservationAmount' => 'getBizReservationAmount',
+        'bizReservationRoi' => 'getBizReservationRoi',
+        'bizOrderCount' => 'getBizOrderCount',
+        'bizOrderUv' => 'getBizOrderUv',
+        'bizOrderRate' => 'getBizOrderRate',
+        'bizOrderCost' => 'getBizOrderCost',
+        'bizOrderRoi' => 'getBizOrderRoi',
+        'bizOrderAmount' => 'getBizOrderAmount',
+        'biz1dOrderCount' => 'getBiz1dOrderCount',
+        'biz1dOrderAmount' => 'getBiz1dOrderAmount',
+        'bizPurchaseCount' => 'getBizPurchaseCount',
+        'bizPurchaseAmount' => 'getBizPurchaseAmount',
+        'bizPurchaseRoi' => 'getBizPurchaseRoi',
+        'bizConsultCount' => 'getBizConsultCount',
+        'bizReadingCount' => 'getBizReadingCount',
+        'bizPageApplyCount' => 'getBizPageApplyCount',
+        'bizPageApplyUv' => 'getBizPageApplyUv',
+        'bizPageApplyCost' => 'getBizPageApplyCost',
+        'bizPageApplyRate' => 'getBizPageApplyRate',
+        'bizCreditCount' => 'getBizCreditCount',
+        'bizCreditCost' => 'getBizCreditCost',
+        'bizCreditRate' => 'getBizCreditRate',
+        'bizCreditUv' => 'getBizCreditUv',
+        'bizDepositCount' => 'getBizDepositCount',
+        'biz1dPurchaseCount' => 'getBiz1dPurchaseCount',
+        'biz1dPurchaseAmount' => 'getBiz1dPurchaseAmount',
+        'biz3dPurchaseCount' => 'getBiz3dPurchaseCount',
+        'biz3dPurchaseAmount' => 'getBiz3dPurchaseAmount',
+        'biz7dPurchaseCount' => 'getBiz7dPurchaseCount',
+        'biz7dPurchaseAmount' => 'getBiz7dPurchaseAmount',
+        'biz15dPurchaseCount' => 'getBiz15dPurchaseCount',
+        'biz15dPurchaseAmount' => 'getBiz15dPurchaseAmount',
+        'biz30dPurchaseCount' => 'getBiz30dPurchaseCount',
+        'biz30dPurchaseAmount' => 'getBiz30dPurchaseAmount',
+        'biz1dPurchaseRoi' => 'getBiz1dPurchaseRoi',
+        'biz3dPurchaseRoi' => 'getBiz3dPurchaseRoi',
+        'biz7dPurchaseRoi' => 'getBiz7dPurchaseRoi',
+        'biz15dPurchaseRoi' => 'getBiz15dPurchaseRoi',
+        'biz30dPurchaseRoi' => 'getBiz30dPurchaseRoi',
         'age' => 'getAge',
         'regionId' => 'getRegionId',
         'cityId' => 'getCityId',
@@ -3248,6 +3513,59 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['scanCodeAddFansCount'] = isset($data['scanCodeAddFansCount']) ? $data['scanCodeAddFansCount'] : null;
         $this->container['scanCodeAddFansUvCost'] = isset($data['scanCodeAddFansUvCost']) ? $data['scanCodeAddFansUvCost'] : null;
         $this->container['scanCodeAddFansCountCost'] = isset($data['scanCodeAddFansCountCost']) ? $data['scanCodeAddFansCountCost'] : null;
+        $this->container['bizFollowCount'] = isset($data['bizFollowCount']) ? $data['bizFollowCount'] : null;
+        $this->container['bizFollowUv'] = isset($data['bizFollowUv']) ? $data['bizFollowUv'] : null;
+        $this->container['bizFollowCost'] = isset($data['bizFollowCost']) ? $data['bizFollowCost'] : null;
+        $this->container['bizFollowRate'] = isset($data['bizFollowRate']) ? $data['bizFollowRate'] : null;
+        $this->container['bizRegCount'] = isset($data['bizRegCount']) ? $data['bizRegCount'] : null;
+        $this->container['bizRegUv'] = isset($data['bizRegUv']) ? $data['bizRegUv'] : null;
+        $this->container['bizRegRate'] = isset($data['bizRegRate']) ? $data['bizRegRate'] : null;
+        $this->container['bizRegCost'] = isset($data['bizRegCost']) ? $data['bizRegCost'] : null;
+        $this->container['bizRegOrderAmount'] = isset($data['bizRegOrderAmount']) ? $data['bizRegOrderAmount'] : null;
+        $this->container['bizRegRoi'] = isset($data['bizRegRoi']) ? $data['bizRegRoi'] : null;
+        $this->container['bizReservationCount'] = isset($data['bizReservationCount']) ? $data['bizReservationCount'] : null;
+        $this->container['bizReservationUv'] = isset($data['bizReservationUv']) ? $data['bizReservationUv'] : null;
+        $this->container['bizReservationRate'] = isset($data['bizReservationRate']) ? $data['bizReservationRate'] : null;
+        $this->container['bizReservationCost'] = isset($data['bizReservationCost']) ? $data['bizReservationCost'] : null;
+        $this->container['bizReservationAmount'] = isset($data['bizReservationAmount']) ? $data['bizReservationAmount'] : null;
+        $this->container['bizReservationRoi'] = isset($data['bizReservationRoi']) ? $data['bizReservationRoi'] : null;
+        $this->container['bizOrderCount'] = isset($data['bizOrderCount']) ? $data['bizOrderCount'] : null;
+        $this->container['bizOrderUv'] = isset($data['bizOrderUv']) ? $data['bizOrderUv'] : null;
+        $this->container['bizOrderRate'] = isset($data['bizOrderRate']) ? $data['bizOrderRate'] : null;
+        $this->container['bizOrderCost'] = isset($data['bizOrderCost']) ? $data['bizOrderCost'] : null;
+        $this->container['bizOrderRoi'] = isset($data['bizOrderRoi']) ? $data['bizOrderRoi'] : null;
+        $this->container['bizOrderAmount'] = isset($data['bizOrderAmount']) ? $data['bizOrderAmount'] : null;
+        $this->container['biz1dOrderCount'] = isset($data['biz1dOrderCount']) ? $data['biz1dOrderCount'] : null;
+        $this->container['biz1dOrderAmount'] = isset($data['biz1dOrderAmount']) ? $data['biz1dOrderAmount'] : null;
+        $this->container['bizPurchaseCount'] = isset($data['bizPurchaseCount']) ? $data['bizPurchaseCount'] : null;
+        $this->container['bizPurchaseAmount'] = isset($data['bizPurchaseAmount']) ? $data['bizPurchaseAmount'] : null;
+        $this->container['bizPurchaseRoi'] = isset($data['bizPurchaseRoi']) ? $data['bizPurchaseRoi'] : null;
+        $this->container['bizConsultCount'] = isset($data['bizConsultCount']) ? $data['bizConsultCount'] : null;
+        $this->container['bizReadingCount'] = isset($data['bizReadingCount']) ? $data['bizReadingCount'] : null;
+        $this->container['bizPageApplyCount'] = isset($data['bizPageApplyCount']) ? $data['bizPageApplyCount'] : null;
+        $this->container['bizPageApplyUv'] = isset($data['bizPageApplyUv']) ? $data['bizPageApplyUv'] : null;
+        $this->container['bizPageApplyCost'] = isset($data['bizPageApplyCost']) ? $data['bizPageApplyCost'] : null;
+        $this->container['bizPageApplyRate'] = isset($data['bizPageApplyRate']) ? $data['bizPageApplyRate'] : null;
+        $this->container['bizCreditCount'] = isset($data['bizCreditCount']) ? $data['bizCreditCount'] : null;
+        $this->container['bizCreditCost'] = isset($data['bizCreditCost']) ? $data['bizCreditCost'] : null;
+        $this->container['bizCreditRate'] = isset($data['bizCreditRate']) ? $data['bizCreditRate'] : null;
+        $this->container['bizCreditUv'] = isset($data['bizCreditUv']) ? $data['bizCreditUv'] : null;
+        $this->container['bizDepositCount'] = isset($data['bizDepositCount']) ? $data['bizDepositCount'] : null;
+        $this->container['biz1dPurchaseCount'] = isset($data['biz1dPurchaseCount']) ? $data['biz1dPurchaseCount'] : null;
+        $this->container['biz1dPurchaseAmount'] = isset($data['biz1dPurchaseAmount']) ? $data['biz1dPurchaseAmount'] : null;
+        $this->container['biz3dPurchaseCount'] = isset($data['biz3dPurchaseCount']) ? $data['biz3dPurchaseCount'] : null;
+        $this->container['biz3dPurchaseAmount'] = isset($data['biz3dPurchaseAmount']) ? $data['biz3dPurchaseAmount'] : null;
+        $this->container['biz7dPurchaseCount'] = isset($data['biz7dPurchaseCount']) ? $data['biz7dPurchaseCount'] : null;
+        $this->container['biz7dPurchaseAmount'] = isset($data['biz7dPurchaseAmount']) ? $data['biz7dPurchaseAmount'] : null;
+        $this->container['biz15dPurchaseCount'] = isset($data['biz15dPurchaseCount']) ? $data['biz15dPurchaseCount'] : null;
+        $this->container['biz15dPurchaseAmount'] = isset($data['biz15dPurchaseAmount']) ? $data['biz15dPurchaseAmount'] : null;
+        $this->container['biz30dPurchaseCount'] = isset($data['biz30dPurchaseCount']) ? $data['biz30dPurchaseCount'] : null;
+        $this->container['biz30dPurchaseAmount'] = isset($data['biz30dPurchaseAmount']) ? $data['biz30dPurchaseAmount'] : null;
+        $this->container['biz1dPurchaseRoi'] = isset($data['biz1dPurchaseRoi']) ? $data['biz1dPurchaseRoi'] : null;
+        $this->container['biz3dPurchaseRoi'] = isset($data['biz3dPurchaseRoi']) ? $data['biz3dPurchaseRoi'] : null;
+        $this->container['biz7dPurchaseRoi'] = isset($data['biz7dPurchaseRoi']) ? $data['biz7dPurchaseRoi'] : null;
+        $this->container['biz15dPurchaseRoi'] = isset($data['biz15dPurchaseRoi']) ? $data['biz15dPurchaseRoi'] : null;
+        $this->container['biz30dPurchaseRoi'] = isset($data['biz30dPurchaseRoi']) ? $data['biz30dPurchaseRoi'] : null;
         $this->container['age'] = isset($data['age']) ? $data['age'] : null;
         $this->container['regionId'] = isset($data['regionId']) ? $data['regionId'] : null;
         $this->container['cityId'] = isset($data['cityId']) ? $data['cityId'] : null;
@@ -12891,6 +13209,1278 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setScanCodeAddFansCountCost($scanCodeAddFansCountCost)
     {
         $this->container['scanCodeAddFansCountCost'] = $scanCodeAddFansCountCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizFollowCount
+     *
+     * @return int|mixed
+     */
+    public function getBizFollowCount()
+    {
+        return $this->container['bizFollowCount'];
+    }
+
+    /**
+     * Sets bizFollowCount
+     *
+     * @param int|mixed $bizFollowCount bizFollowCount
+     *
+     * @return $this
+     */
+    public function setBizFollowCount($bizFollowCount)
+    {
+        $this->container['bizFollowCount'] = $bizFollowCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizFollowUv
+     *
+     * @return int|mixed
+     */
+    public function getBizFollowUv()
+    {
+        return $this->container['bizFollowUv'];
+    }
+
+    /**
+     * Sets bizFollowUv
+     *
+     * @param int|mixed $bizFollowUv bizFollowUv
+     *
+     * @return $this
+     */
+    public function setBizFollowUv($bizFollowUv)
+    {
+        $this->container['bizFollowUv'] = $bizFollowUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizFollowCost
+     *
+     * @return int|mixed
+     */
+    public function getBizFollowCost()
+    {
+        return $this->container['bizFollowCost'];
+    }
+
+    /**
+     * Sets bizFollowCost
+     *
+     * @param int|mixed $bizFollowCost bizFollowCost
+     *
+     * @return $this
+     */
+    public function setBizFollowCost($bizFollowCost)
+    {
+        $this->container['bizFollowCost'] = $bizFollowCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizFollowRate
+     *
+     * @return double|mixed
+     */
+    public function getBizFollowRate()
+    {
+        return $this->container['bizFollowRate'];
+    }
+
+    /**
+     * Sets bizFollowRate
+     *
+     * @param double|mixed $bizFollowRate bizFollowRate
+     *
+     * @return $this
+     */
+    public function setBizFollowRate($bizFollowRate)
+    {
+        $this->container['bizFollowRate'] = $bizFollowRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizRegCount
+     *
+     * @return int|mixed
+     */
+    public function getBizRegCount()
+    {
+        return $this->container['bizRegCount'];
+    }
+
+    /**
+     * Sets bizRegCount
+     *
+     * @param int|mixed $bizRegCount bizRegCount
+     *
+     * @return $this
+     */
+    public function setBizRegCount($bizRegCount)
+    {
+        $this->container['bizRegCount'] = $bizRegCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizRegUv
+     *
+     * @return int|mixed
+     */
+    public function getBizRegUv()
+    {
+        return $this->container['bizRegUv'];
+    }
+
+    /**
+     * Sets bizRegUv
+     *
+     * @param int|mixed $bizRegUv bizRegUv
+     *
+     * @return $this
+     */
+    public function setBizRegUv($bizRegUv)
+    {
+        $this->container['bizRegUv'] = $bizRegUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizRegRate
+     *
+     * @return double|mixed
+     */
+    public function getBizRegRate()
+    {
+        return $this->container['bizRegRate'];
+    }
+
+    /**
+     * Sets bizRegRate
+     *
+     * @param double|mixed $bizRegRate bizRegRate
+     *
+     * @return $this
+     */
+    public function setBizRegRate($bizRegRate)
+    {
+        $this->container['bizRegRate'] = $bizRegRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizRegCost
+     *
+     * @return int|mixed
+     */
+    public function getBizRegCost()
+    {
+        return $this->container['bizRegCost'];
+    }
+
+    /**
+     * Sets bizRegCost
+     *
+     * @param int|mixed $bizRegCost bizRegCost
+     *
+     * @return $this
+     */
+    public function setBizRegCost($bizRegCost)
+    {
+        $this->container['bizRegCost'] = $bizRegCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizRegOrderAmount
+     *
+     * @return int|mixed
+     */
+    public function getBizRegOrderAmount()
+    {
+        return $this->container['bizRegOrderAmount'];
+    }
+
+    /**
+     * Sets bizRegOrderAmount
+     *
+     * @param int|mixed $bizRegOrderAmount bizRegOrderAmount
+     *
+     * @return $this
+     */
+    public function setBizRegOrderAmount($bizRegOrderAmount)
+    {
+        $this->container['bizRegOrderAmount'] = $bizRegOrderAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizRegRoi
+     *
+     * @return double|mixed
+     */
+    public function getBizRegRoi()
+    {
+        return $this->container['bizRegRoi'];
+    }
+
+    /**
+     * Sets bizRegRoi
+     *
+     * @param double|mixed $bizRegRoi bizRegRoi
+     *
+     * @return $this
+     */
+    public function setBizRegRoi($bizRegRoi)
+    {
+        $this->container['bizRegRoi'] = $bizRegRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizReservationCount
+     *
+     * @return int|mixed
+     */
+    public function getBizReservationCount()
+    {
+        return $this->container['bizReservationCount'];
+    }
+
+    /**
+     * Sets bizReservationCount
+     *
+     * @param int|mixed $bizReservationCount bizReservationCount
+     *
+     * @return $this
+     */
+    public function setBizReservationCount($bizReservationCount)
+    {
+        $this->container['bizReservationCount'] = $bizReservationCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizReservationUv
+     *
+     * @return int|mixed
+     */
+    public function getBizReservationUv()
+    {
+        return $this->container['bizReservationUv'];
+    }
+
+    /**
+     * Sets bizReservationUv
+     *
+     * @param int|mixed $bizReservationUv bizReservationUv
+     *
+     * @return $this
+     */
+    public function setBizReservationUv($bizReservationUv)
+    {
+        $this->container['bizReservationUv'] = $bizReservationUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizReservationRate
+     *
+     * @return double|mixed
+     */
+    public function getBizReservationRate()
+    {
+        return $this->container['bizReservationRate'];
+    }
+
+    /**
+     * Sets bizReservationRate
+     *
+     * @param double|mixed $bizReservationRate bizReservationRate
+     *
+     * @return $this
+     */
+    public function setBizReservationRate($bizReservationRate)
+    {
+        $this->container['bizReservationRate'] = $bizReservationRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizReservationCost
+     *
+     * @return int|mixed
+     */
+    public function getBizReservationCost()
+    {
+        return $this->container['bizReservationCost'];
+    }
+
+    /**
+     * Sets bizReservationCost
+     *
+     * @param int|mixed $bizReservationCost bizReservationCost
+     *
+     * @return $this
+     */
+    public function setBizReservationCost($bizReservationCost)
+    {
+        $this->container['bizReservationCost'] = $bizReservationCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizReservationAmount
+     *
+     * @return int|mixed
+     */
+    public function getBizReservationAmount()
+    {
+        return $this->container['bizReservationAmount'];
+    }
+
+    /**
+     * Sets bizReservationAmount
+     *
+     * @param int|mixed $bizReservationAmount bizReservationAmount
+     *
+     * @return $this
+     */
+    public function setBizReservationAmount($bizReservationAmount)
+    {
+        $this->container['bizReservationAmount'] = $bizReservationAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizReservationRoi
+     *
+     * @return double|mixed
+     */
+    public function getBizReservationRoi()
+    {
+        return $this->container['bizReservationRoi'];
+    }
+
+    /**
+     * Sets bizReservationRoi
+     *
+     * @param double|mixed $bizReservationRoi bizReservationRoi
+     *
+     * @return $this
+     */
+    public function setBizReservationRoi($bizReservationRoi)
+    {
+        $this->container['bizReservationRoi'] = $bizReservationRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizOrderCount
+     *
+     * @return int|mixed
+     */
+    public function getBizOrderCount()
+    {
+        return $this->container['bizOrderCount'];
+    }
+
+    /**
+     * Sets bizOrderCount
+     *
+     * @param int|mixed $bizOrderCount bizOrderCount
+     *
+     * @return $this
+     */
+    public function setBizOrderCount($bizOrderCount)
+    {
+        $this->container['bizOrderCount'] = $bizOrderCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizOrderUv
+     *
+     * @return int|mixed
+     */
+    public function getBizOrderUv()
+    {
+        return $this->container['bizOrderUv'];
+    }
+
+    /**
+     * Sets bizOrderUv
+     *
+     * @param int|mixed $bizOrderUv bizOrderUv
+     *
+     * @return $this
+     */
+    public function setBizOrderUv($bizOrderUv)
+    {
+        $this->container['bizOrderUv'] = $bizOrderUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizOrderRate
+     *
+     * @return double|mixed
+     */
+    public function getBizOrderRate()
+    {
+        return $this->container['bizOrderRate'];
+    }
+
+    /**
+     * Sets bizOrderRate
+     *
+     * @param double|mixed $bizOrderRate bizOrderRate
+     *
+     * @return $this
+     */
+    public function setBizOrderRate($bizOrderRate)
+    {
+        $this->container['bizOrderRate'] = $bizOrderRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizOrderCost
+     *
+     * @return int|mixed
+     */
+    public function getBizOrderCost()
+    {
+        return $this->container['bizOrderCost'];
+    }
+
+    /**
+     * Sets bizOrderCost
+     *
+     * @param int|mixed $bizOrderCost bizOrderCost
+     *
+     * @return $this
+     */
+    public function setBizOrderCost($bizOrderCost)
+    {
+        $this->container['bizOrderCost'] = $bizOrderCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizOrderRoi
+     *
+     * @return double|mixed
+     */
+    public function getBizOrderRoi()
+    {
+        return $this->container['bizOrderRoi'];
+    }
+
+    /**
+     * Sets bizOrderRoi
+     *
+     * @param double|mixed $bizOrderRoi bizOrderRoi
+     *
+     * @return $this
+     */
+    public function setBizOrderRoi($bizOrderRoi)
+    {
+        $this->container['bizOrderRoi'] = $bizOrderRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizOrderAmount
+     *
+     * @return int|mixed
+     */
+    public function getBizOrderAmount()
+    {
+        return $this->container['bizOrderAmount'];
+    }
+
+    /**
+     * Sets bizOrderAmount
+     *
+     * @param int|mixed $bizOrderAmount bizOrderAmount
+     *
+     * @return $this
+     */
+    public function setBizOrderAmount($bizOrderAmount)
+    {
+        $this->container['bizOrderAmount'] = $bizOrderAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz1dOrderCount
+     *
+     * @return int|mixed
+     */
+    public function getBiz1dOrderCount()
+    {
+        return $this->container['biz1dOrderCount'];
+    }
+
+    /**
+     * Sets biz1dOrderCount
+     *
+     * @param int|mixed $biz1dOrderCount biz1dOrderCount
+     *
+     * @return $this
+     */
+    public function setBiz1dOrderCount($biz1dOrderCount)
+    {
+        $this->container['biz1dOrderCount'] = $biz1dOrderCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz1dOrderAmount
+     *
+     * @return int|mixed
+     */
+    public function getBiz1dOrderAmount()
+    {
+        return $this->container['biz1dOrderAmount'];
+    }
+
+    /**
+     * Sets biz1dOrderAmount
+     *
+     * @param int|mixed $biz1dOrderAmount biz1dOrderAmount
+     *
+     * @return $this
+     */
+    public function setBiz1dOrderAmount($biz1dOrderAmount)
+    {
+        $this->container['biz1dOrderAmount'] = $biz1dOrderAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizPurchaseCount
+     *
+     * @return int|mixed
+     */
+    public function getBizPurchaseCount()
+    {
+        return $this->container['bizPurchaseCount'];
+    }
+
+    /**
+     * Sets bizPurchaseCount
+     *
+     * @param int|mixed $bizPurchaseCount bizPurchaseCount
+     *
+     * @return $this
+     */
+    public function setBizPurchaseCount($bizPurchaseCount)
+    {
+        $this->container['bizPurchaseCount'] = $bizPurchaseCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizPurchaseAmount
+     *
+     * @return int|mixed
+     */
+    public function getBizPurchaseAmount()
+    {
+        return $this->container['bizPurchaseAmount'];
+    }
+
+    /**
+     * Sets bizPurchaseAmount
+     *
+     * @param int|mixed $bizPurchaseAmount bizPurchaseAmount
+     *
+     * @return $this
+     */
+    public function setBizPurchaseAmount($bizPurchaseAmount)
+    {
+        $this->container['bizPurchaseAmount'] = $bizPurchaseAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizPurchaseRoi
+     *
+     * @return double|mixed
+     */
+    public function getBizPurchaseRoi()
+    {
+        return $this->container['bizPurchaseRoi'];
+    }
+
+    /**
+     * Sets bizPurchaseRoi
+     *
+     * @param double|mixed $bizPurchaseRoi bizPurchaseRoi
+     *
+     * @return $this
+     */
+    public function setBizPurchaseRoi($bizPurchaseRoi)
+    {
+        $this->container['bizPurchaseRoi'] = $bizPurchaseRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizConsultCount
+     *
+     * @return int|mixed
+     */
+    public function getBizConsultCount()
+    {
+        return $this->container['bizConsultCount'];
+    }
+
+    /**
+     * Sets bizConsultCount
+     *
+     * @param int|mixed $bizConsultCount bizConsultCount
+     *
+     * @return $this
+     */
+    public function setBizConsultCount($bizConsultCount)
+    {
+        $this->container['bizConsultCount'] = $bizConsultCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizReadingCount
+     *
+     * @return int|mixed
+     */
+    public function getBizReadingCount()
+    {
+        return $this->container['bizReadingCount'];
+    }
+
+    /**
+     * Sets bizReadingCount
+     *
+     * @param int|mixed $bizReadingCount bizReadingCount
+     *
+     * @return $this
+     */
+    public function setBizReadingCount($bizReadingCount)
+    {
+        $this->container['bizReadingCount'] = $bizReadingCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizPageApplyCount
+     *
+     * @return int|mixed
+     */
+    public function getBizPageApplyCount()
+    {
+        return $this->container['bizPageApplyCount'];
+    }
+
+    /**
+     * Sets bizPageApplyCount
+     *
+     * @param int|mixed $bizPageApplyCount bizPageApplyCount
+     *
+     * @return $this
+     */
+    public function setBizPageApplyCount($bizPageApplyCount)
+    {
+        $this->container['bizPageApplyCount'] = $bizPageApplyCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizPageApplyUv
+     *
+     * @return int|mixed
+     */
+    public function getBizPageApplyUv()
+    {
+        return $this->container['bizPageApplyUv'];
+    }
+
+    /**
+     * Sets bizPageApplyUv
+     *
+     * @param int|mixed $bizPageApplyUv bizPageApplyUv
+     *
+     * @return $this
+     */
+    public function setBizPageApplyUv($bizPageApplyUv)
+    {
+        $this->container['bizPageApplyUv'] = $bizPageApplyUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizPageApplyCost
+     *
+     * @return int|mixed
+     */
+    public function getBizPageApplyCost()
+    {
+        return $this->container['bizPageApplyCost'];
+    }
+
+    /**
+     * Sets bizPageApplyCost
+     *
+     * @param int|mixed $bizPageApplyCost bizPageApplyCost
+     *
+     * @return $this
+     */
+    public function setBizPageApplyCost($bizPageApplyCost)
+    {
+        $this->container['bizPageApplyCost'] = $bizPageApplyCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizPageApplyRate
+     *
+     * @return double|mixed
+     */
+    public function getBizPageApplyRate()
+    {
+        return $this->container['bizPageApplyRate'];
+    }
+
+    /**
+     * Sets bizPageApplyRate
+     *
+     * @param double|mixed $bizPageApplyRate bizPageApplyRate
+     *
+     * @return $this
+     */
+    public function setBizPageApplyRate($bizPageApplyRate)
+    {
+        $this->container['bizPageApplyRate'] = $bizPageApplyRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizCreditCount
+     *
+     * @return int|mixed
+     */
+    public function getBizCreditCount()
+    {
+        return $this->container['bizCreditCount'];
+    }
+
+    /**
+     * Sets bizCreditCount
+     *
+     * @param int|mixed $bizCreditCount bizCreditCount
+     *
+     * @return $this
+     */
+    public function setBizCreditCount($bizCreditCount)
+    {
+        $this->container['bizCreditCount'] = $bizCreditCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizCreditCost
+     *
+     * @return int|mixed
+     */
+    public function getBizCreditCost()
+    {
+        return $this->container['bizCreditCost'];
+    }
+
+    /**
+     * Sets bizCreditCost
+     *
+     * @param int|mixed $bizCreditCost bizCreditCost
+     *
+     * @return $this
+     */
+    public function setBizCreditCost($bizCreditCost)
+    {
+        $this->container['bizCreditCost'] = $bizCreditCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizCreditRate
+     *
+     * @return double|mixed
+     */
+    public function getBizCreditRate()
+    {
+        return $this->container['bizCreditRate'];
+    }
+
+    /**
+     * Sets bizCreditRate
+     *
+     * @param double|mixed $bizCreditRate bizCreditRate
+     *
+     * @return $this
+     */
+    public function setBizCreditRate($bizCreditRate)
+    {
+        $this->container['bizCreditRate'] = $bizCreditRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizCreditUv
+     *
+     * @return int|mixed
+     */
+    public function getBizCreditUv()
+    {
+        return $this->container['bizCreditUv'];
+    }
+
+    /**
+     * Sets bizCreditUv
+     *
+     * @param int|mixed $bizCreditUv bizCreditUv
+     *
+     * @return $this
+     */
+    public function setBizCreditUv($bizCreditUv)
+    {
+        $this->container['bizCreditUv'] = $bizCreditUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizDepositCount
+     *
+     * @return int|mixed
+     */
+    public function getBizDepositCount()
+    {
+        return $this->container['bizDepositCount'];
+    }
+
+    /**
+     * Sets bizDepositCount
+     *
+     * @param int|mixed $bizDepositCount bizDepositCount
+     *
+     * @return $this
+     */
+    public function setBizDepositCount($bizDepositCount)
+    {
+        $this->container['bizDepositCount'] = $bizDepositCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz1dPurchaseCount
+     *
+     * @return int|mixed
+     */
+    public function getBiz1dPurchaseCount()
+    {
+        return $this->container['biz1dPurchaseCount'];
+    }
+
+    /**
+     * Sets biz1dPurchaseCount
+     *
+     * @param int|mixed $biz1dPurchaseCount biz1dPurchaseCount
+     *
+     * @return $this
+     */
+    public function setBiz1dPurchaseCount($biz1dPurchaseCount)
+    {
+        $this->container['biz1dPurchaseCount'] = $biz1dPurchaseCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz1dPurchaseAmount
+     *
+     * @return int|mixed
+     */
+    public function getBiz1dPurchaseAmount()
+    {
+        return $this->container['biz1dPurchaseAmount'];
+    }
+
+    /**
+     * Sets biz1dPurchaseAmount
+     *
+     * @param int|mixed $biz1dPurchaseAmount biz1dPurchaseAmount
+     *
+     * @return $this
+     */
+    public function setBiz1dPurchaseAmount($biz1dPurchaseAmount)
+    {
+        $this->container['biz1dPurchaseAmount'] = $biz1dPurchaseAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz3dPurchaseCount
+     *
+     * @return int|mixed
+     */
+    public function getBiz3dPurchaseCount()
+    {
+        return $this->container['biz3dPurchaseCount'];
+    }
+
+    /**
+     * Sets biz3dPurchaseCount
+     *
+     * @param int|mixed $biz3dPurchaseCount biz3dPurchaseCount
+     *
+     * @return $this
+     */
+    public function setBiz3dPurchaseCount($biz3dPurchaseCount)
+    {
+        $this->container['biz3dPurchaseCount'] = $biz3dPurchaseCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz3dPurchaseAmount
+     *
+     * @return int|mixed
+     */
+    public function getBiz3dPurchaseAmount()
+    {
+        return $this->container['biz3dPurchaseAmount'];
+    }
+
+    /**
+     * Sets biz3dPurchaseAmount
+     *
+     * @param int|mixed $biz3dPurchaseAmount biz3dPurchaseAmount
+     *
+     * @return $this
+     */
+    public function setBiz3dPurchaseAmount($biz3dPurchaseAmount)
+    {
+        $this->container['biz3dPurchaseAmount'] = $biz3dPurchaseAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz7dPurchaseCount
+     *
+     * @return int|mixed
+     */
+    public function getBiz7dPurchaseCount()
+    {
+        return $this->container['biz7dPurchaseCount'];
+    }
+
+    /**
+     * Sets biz7dPurchaseCount
+     *
+     * @param int|mixed $biz7dPurchaseCount biz7dPurchaseCount
+     *
+     * @return $this
+     */
+    public function setBiz7dPurchaseCount($biz7dPurchaseCount)
+    {
+        $this->container['biz7dPurchaseCount'] = $biz7dPurchaseCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz7dPurchaseAmount
+     *
+     * @return int|mixed
+     */
+    public function getBiz7dPurchaseAmount()
+    {
+        return $this->container['biz7dPurchaseAmount'];
+    }
+
+    /**
+     * Sets biz7dPurchaseAmount
+     *
+     * @param int|mixed $biz7dPurchaseAmount biz7dPurchaseAmount
+     *
+     * @return $this
+     */
+    public function setBiz7dPurchaseAmount($biz7dPurchaseAmount)
+    {
+        $this->container['biz7dPurchaseAmount'] = $biz7dPurchaseAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz15dPurchaseCount
+     *
+     * @return int|mixed
+     */
+    public function getBiz15dPurchaseCount()
+    {
+        return $this->container['biz15dPurchaseCount'];
+    }
+
+    /**
+     * Sets biz15dPurchaseCount
+     *
+     * @param int|mixed $biz15dPurchaseCount biz15dPurchaseCount
+     *
+     * @return $this
+     */
+    public function setBiz15dPurchaseCount($biz15dPurchaseCount)
+    {
+        $this->container['biz15dPurchaseCount'] = $biz15dPurchaseCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz15dPurchaseAmount
+     *
+     * @return int|mixed
+     */
+    public function getBiz15dPurchaseAmount()
+    {
+        return $this->container['biz15dPurchaseAmount'];
+    }
+
+    /**
+     * Sets biz15dPurchaseAmount
+     *
+     * @param int|mixed $biz15dPurchaseAmount biz15dPurchaseAmount
+     *
+     * @return $this
+     */
+    public function setBiz15dPurchaseAmount($biz15dPurchaseAmount)
+    {
+        $this->container['biz15dPurchaseAmount'] = $biz15dPurchaseAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz30dPurchaseCount
+     *
+     * @return int|mixed
+     */
+    public function getBiz30dPurchaseCount()
+    {
+        return $this->container['biz30dPurchaseCount'];
+    }
+
+    /**
+     * Sets biz30dPurchaseCount
+     *
+     * @param int|mixed $biz30dPurchaseCount biz30dPurchaseCount
+     *
+     * @return $this
+     */
+    public function setBiz30dPurchaseCount($biz30dPurchaseCount)
+    {
+        $this->container['biz30dPurchaseCount'] = $biz30dPurchaseCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz30dPurchaseAmount
+     *
+     * @return int|mixed
+     */
+    public function getBiz30dPurchaseAmount()
+    {
+        return $this->container['biz30dPurchaseAmount'];
+    }
+
+    /**
+     * Sets biz30dPurchaseAmount
+     *
+     * @param int|mixed $biz30dPurchaseAmount biz30dPurchaseAmount
+     *
+     * @return $this
+     */
+    public function setBiz30dPurchaseAmount($biz30dPurchaseAmount)
+    {
+        $this->container['biz30dPurchaseAmount'] = $biz30dPurchaseAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz1dPurchaseRoi
+     *
+     * @return double|mixed
+     */
+    public function getBiz1dPurchaseRoi()
+    {
+        return $this->container['biz1dPurchaseRoi'];
+    }
+
+    /**
+     * Sets biz1dPurchaseRoi
+     *
+     * @param double|mixed $biz1dPurchaseRoi biz1dPurchaseRoi
+     *
+     * @return $this
+     */
+    public function setBiz1dPurchaseRoi($biz1dPurchaseRoi)
+    {
+        $this->container['biz1dPurchaseRoi'] = $biz1dPurchaseRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz3dPurchaseRoi
+     *
+     * @return double|mixed
+     */
+    public function getBiz3dPurchaseRoi()
+    {
+        return $this->container['biz3dPurchaseRoi'];
+    }
+
+    /**
+     * Sets biz3dPurchaseRoi
+     *
+     * @param double|mixed $biz3dPurchaseRoi biz3dPurchaseRoi
+     *
+     * @return $this
+     */
+    public function setBiz3dPurchaseRoi($biz3dPurchaseRoi)
+    {
+        $this->container['biz3dPurchaseRoi'] = $biz3dPurchaseRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz7dPurchaseRoi
+     *
+     * @return double|mixed
+     */
+    public function getBiz7dPurchaseRoi()
+    {
+        return $this->container['biz7dPurchaseRoi'];
+    }
+
+    /**
+     * Sets biz7dPurchaseRoi
+     *
+     * @param double|mixed $biz7dPurchaseRoi biz7dPurchaseRoi
+     *
+     * @return $this
+     */
+    public function setBiz7dPurchaseRoi($biz7dPurchaseRoi)
+    {
+        $this->container['biz7dPurchaseRoi'] = $biz7dPurchaseRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz15dPurchaseRoi
+     *
+     * @return double|mixed
+     */
+    public function getBiz15dPurchaseRoi()
+    {
+        return $this->container['biz15dPurchaseRoi'];
+    }
+
+    /**
+     * Sets biz15dPurchaseRoi
+     *
+     * @param double|mixed $biz15dPurchaseRoi biz15dPurchaseRoi
+     *
+     * @return $this
+     */
+    public function setBiz15dPurchaseRoi($biz15dPurchaseRoi)
+    {
+        $this->container['biz15dPurchaseRoi'] = $biz15dPurchaseRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz30dPurchaseRoi
+     *
+     * @return double|mixed
+     */
+    public function getBiz30dPurchaseRoi()
+    {
+        return $this->container['biz30dPurchaseRoi'];
+    }
+
+    /**
+     * Sets biz30dPurchaseRoi
+     *
+     * @param double|mixed $biz30dPurchaseRoi biz30dPurchaseRoi
+     *
+     * @return $this
+     */
+    public function setBiz30dPurchaseRoi($biz30dPurchaseRoi)
+    {
+        $this->container['biz30dPurchaseRoi'] = $biz30dPurchaseRoi;
 
         return $this;
     }

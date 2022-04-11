@@ -62,31 +62,25 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
         'gender' => 'string[]',
         'education' => 'string[]',
         'maritalStatus' => 'string[]',
-        'workingStatus' => 'string[]',
         'geoLocation' => '\TencentAds\Model\GeoLocations',
         'userOs' => 'string[]',
-        'newDevice' => 'string[]',
         'devicePrice' => 'string[]',
         'networkType' => 'string[]',
         'networkOperator' => 'string[]',
-        'networkScene' => 'string[]',
         'appInstallStatus' => 'string[]',
         'miniGameQqStatus' => 'string[]',
         'consumptionStatus' => 'string[]',
         'gameConsumptionLevel' => 'string[]',
         'paidUser' => 'string[]',
-        'residentialCommunityPrice' => '\TencentAds\Model\ResidentialCommunityPriceStruct[]',
         'wechatAdBehavior' => '\TencentAds\Model\LimitWechatAdBehavior',
         'customAudience' => 'int[]',
         'excludedCustomAudience' => 'int[]',
         'deprecatedCustomAudience' => 'int[]',
         'deprecatedExcludedCustomAudience' => 'int[]',
         'behaviorOrInterest' => '\TencentAds\Model\BehaviorOrInterest',
-        'airQualityIndex' => 'string[]',
         'wechatOfficialAccountCategory' => 'int[]',
         'mobileUnionCategory' => 'int[]',
-        'financialSituation' => 'string[]',
-        'consumptionType' => 'string[]'
+        'financialSituation' => 'string[]'
     ];
 
     /**
@@ -99,31 +93,25 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
         'gender' => null,
         'education' => null,
         'maritalStatus' => null,
-        'workingStatus' => null,
         'geoLocation' => null,
         'userOs' => null,
-        'newDevice' => null,
         'devicePrice' => null,
         'networkType' => null,
         'networkOperator' => null,
-        'networkScene' => null,
         'appInstallStatus' => null,
         'miniGameQqStatus' => null,
         'consumptionStatus' => null,
         'gameConsumptionLevel' => null,
         'paidUser' => null,
-        'residentialCommunityPrice' => null,
         'wechatAdBehavior' => null,
         'customAudience' => 'int64',
         'excludedCustomAudience' => 'int64',
         'deprecatedCustomAudience' => 'int64',
         'deprecatedExcludedCustomAudience' => 'int64',
         'behaviorOrInterest' => null,
-        'airQualityIndex' => null,
         'wechatOfficialAccountCategory' => 'int64',
         'mobileUnionCategory' => 'int64',
-        'financialSituation' => null,
-        'consumptionType' => null
+        'financialSituation' => null
     ];
 
     /**
@@ -157,31 +145,25 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
         'gender' => 'gender',
         'education' => 'education',
         'maritalStatus' => 'marital_status',
-        'workingStatus' => 'working_status',
         'geoLocation' => 'geo_location',
         'userOs' => 'user_os',
-        'newDevice' => 'new_device',
         'devicePrice' => 'device_price',
         'networkType' => 'network_type',
         'networkOperator' => 'network_operator',
-        'networkScene' => 'network_scene',
         'appInstallStatus' => 'app_install_status',
         'miniGameQqStatus' => 'mini_game_qq_status',
         'consumptionStatus' => 'consumption_status',
         'gameConsumptionLevel' => 'game_consumption_level',
         'paidUser' => 'paid_user',
-        'residentialCommunityPrice' => 'residential_community_price',
         'wechatAdBehavior' => 'wechat_ad_behavior',
         'customAudience' => 'custom_audience',
         'excludedCustomAudience' => 'excluded_custom_audience',
         'deprecatedCustomAudience' => 'deprecated_custom_audience',
         'deprecatedExcludedCustomAudience' => 'deprecated_excluded_custom_audience',
         'behaviorOrInterest' => 'behavior_or_interest',
-        'airQualityIndex' => 'air_quality_index',
         'wechatOfficialAccountCategory' => 'wechat_official_account_category',
         'mobileUnionCategory' => 'mobile_union_category',
-        'financialSituation' => 'financial_situation',
-        'consumptionType' => 'consumption_type'
+        'financialSituation' => 'financial_situation'
     ];
 
     /**
@@ -194,31 +176,25 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
         'gender' => 'setGender',
         'education' => 'setEducation',
         'maritalStatus' => 'setMaritalStatus',
-        'workingStatus' => 'setWorkingStatus',
         'geoLocation' => 'setGeoLocation',
         'userOs' => 'setUserOs',
-        'newDevice' => 'setNewDevice',
         'devicePrice' => 'setDevicePrice',
         'networkType' => 'setNetworkType',
         'networkOperator' => 'setNetworkOperator',
-        'networkScene' => 'setNetworkScene',
         'appInstallStatus' => 'setAppInstallStatus',
         'miniGameQqStatus' => 'setMiniGameQqStatus',
         'consumptionStatus' => 'setConsumptionStatus',
         'gameConsumptionLevel' => 'setGameConsumptionLevel',
         'paidUser' => 'setPaidUser',
-        'residentialCommunityPrice' => 'setResidentialCommunityPrice',
         'wechatAdBehavior' => 'setWechatAdBehavior',
         'customAudience' => 'setCustomAudience',
         'excludedCustomAudience' => 'setExcludedCustomAudience',
         'deprecatedCustomAudience' => 'setDeprecatedCustomAudience',
         'deprecatedExcludedCustomAudience' => 'setDeprecatedExcludedCustomAudience',
         'behaviorOrInterest' => 'setBehaviorOrInterest',
-        'airQualityIndex' => 'setAirQualityIndex',
         'wechatOfficialAccountCategory' => 'setWechatOfficialAccountCategory',
         'mobileUnionCategory' => 'setMobileUnionCategory',
-        'financialSituation' => 'setFinancialSituation',
-        'consumptionType' => 'setConsumptionType'
+        'financialSituation' => 'setFinancialSituation'
     ];
 
     /**
@@ -231,31 +207,25 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
         'gender' => 'getGender',
         'education' => 'getEducation',
         'maritalStatus' => 'getMaritalStatus',
-        'workingStatus' => 'getWorkingStatus',
         'geoLocation' => 'getGeoLocation',
         'userOs' => 'getUserOs',
-        'newDevice' => 'getNewDevice',
         'devicePrice' => 'getDevicePrice',
         'networkType' => 'getNetworkType',
         'networkOperator' => 'getNetworkOperator',
-        'networkScene' => 'getNetworkScene',
         'appInstallStatus' => 'getAppInstallStatus',
         'miniGameQqStatus' => 'getMiniGameQqStatus',
         'consumptionStatus' => 'getConsumptionStatus',
         'gameConsumptionLevel' => 'getGameConsumptionLevel',
         'paidUser' => 'getPaidUser',
-        'residentialCommunityPrice' => 'getResidentialCommunityPrice',
         'wechatAdBehavior' => 'getWechatAdBehavior',
         'customAudience' => 'getCustomAudience',
         'excludedCustomAudience' => 'getExcludedCustomAudience',
         'deprecatedCustomAudience' => 'getDeprecatedCustomAudience',
         'deprecatedExcludedCustomAudience' => 'getDeprecatedExcludedCustomAudience',
         'behaviorOrInterest' => 'getBehaviorOrInterest',
-        'airQualityIndex' => 'getAirQualityIndex',
         'wechatOfficialAccountCategory' => 'getWechatOfficialAccountCategory',
         'mobileUnionCategory' => 'getMobileUnionCategory',
-        'financialSituation' => 'getFinancialSituation',
-        'consumptionType' => 'getConsumptionType'
+        'financialSituation' => 'getFinancialSituation'
     ];
 
     /**
@@ -322,31 +292,25 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
         $this->container['gender'] = isset($data['gender']) ? $data['gender'] : null;
         $this->container['education'] = isset($data['education']) ? $data['education'] : null;
         $this->container['maritalStatus'] = isset($data['maritalStatus']) ? $data['maritalStatus'] : null;
-        $this->container['workingStatus'] = isset($data['workingStatus']) ? $data['workingStatus'] : null;
         $this->container['geoLocation'] = isset($data['geoLocation']) ? $data['geoLocation'] : null;
         $this->container['userOs'] = isset($data['userOs']) ? $data['userOs'] : null;
-        $this->container['newDevice'] = isset($data['newDevice']) ? $data['newDevice'] : null;
         $this->container['devicePrice'] = isset($data['devicePrice']) ? $data['devicePrice'] : null;
         $this->container['networkType'] = isset($data['networkType']) ? $data['networkType'] : null;
         $this->container['networkOperator'] = isset($data['networkOperator']) ? $data['networkOperator'] : null;
-        $this->container['networkScene'] = isset($data['networkScene']) ? $data['networkScene'] : null;
         $this->container['appInstallStatus'] = isset($data['appInstallStatus']) ? $data['appInstallStatus'] : null;
         $this->container['miniGameQqStatus'] = isset($data['miniGameQqStatus']) ? $data['miniGameQqStatus'] : null;
         $this->container['consumptionStatus'] = isset($data['consumptionStatus']) ? $data['consumptionStatus'] : null;
         $this->container['gameConsumptionLevel'] = isset($data['gameConsumptionLevel']) ? $data['gameConsumptionLevel'] : null;
         $this->container['paidUser'] = isset($data['paidUser']) ? $data['paidUser'] : null;
-        $this->container['residentialCommunityPrice'] = isset($data['residentialCommunityPrice']) ? $data['residentialCommunityPrice'] : null;
         $this->container['wechatAdBehavior'] = isset($data['wechatAdBehavior']) ? $data['wechatAdBehavior'] : null;
         $this->container['customAudience'] = isset($data['customAudience']) ? $data['customAudience'] : null;
         $this->container['excludedCustomAudience'] = isset($data['excludedCustomAudience']) ? $data['excludedCustomAudience'] : null;
         $this->container['deprecatedCustomAudience'] = isset($data['deprecatedCustomAudience']) ? $data['deprecatedCustomAudience'] : null;
         $this->container['deprecatedExcludedCustomAudience'] = isset($data['deprecatedExcludedCustomAudience']) ? $data['deprecatedExcludedCustomAudience'] : null;
         $this->container['behaviorOrInterest'] = isset($data['behaviorOrInterest']) ? $data['behaviorOrInterest'] : null;
-        $this->container['airQualityIndex'] = isset($data['airQualityIndex']) ? $data['airQualityIndex'] : null;
         $this->container['wechatOfficialAccountCategory'] = isset($data['wechatOfficialAccountCategory']) ? $data['wechatOfficialAccountCategory'] : null;
         $this->container['mobileUnionCategory'] = isset($data['mobileUnionCategory']) ? $data['mobileUnionCategory'] : null;
         $this->container['financialSituation'] = isset($data['financialSituation']) ? $data['financialSituation'] : null;
-        $this->container['consumptionType'] = isset($data['consumptionType']) ? $data['consumptionType'] : null;
     }
 
     /**
@@ -470,30 +434,6 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets workingStatus
-     *
-     * @return string[]|mixed
-     */
-    public function getWorkingStatus()
-    {
-        return $this->container['workingStatus'];
-    }
-
-    /**
-     * Sets workingStatus
-     *
-     * @param string[]|mixed $workingStatus workingStatus
-     *
-     * @return $this
-     */
-    public function setWorkingStatus($workingStatus)
-    {
-        $this->container['workingStatus'] = $workingStatus;
-
-        return $this;
-    }
-
-    /**
      * Gets geoLocation
      *
      * @return \TencentAds\Model\GeoLocations|mixed
@@ -537,30 +477,6 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     public function setUserOs($userOs)
     {
         $this->container['userOs'] = $userOs;
-
-        return $this;
-    }
-
-    /**
-     * Gets newDevice
-     *
-     * @return string[]|mixed
-     */
-    public function getNewDevice()
-    {
-        return $this->container['newDevice'];
-    }
-
-    /**
-     * Sets newDevice
-     *
-     * @param string[]|mixed $newDevice newDevice
-     *
-     * @return $this
-     */
-    public function setNewDevice($newDevice)
-    {
-        $this->container['newDevice'] = $newDevice;
 
         return $this;
     }
@@ -633,30 +549,6 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     public function setNetworkOperator($networkOperator)
     {
         $this->container['networkOperator'] = $networkOperator;
-
-        return $this;
-    }
-
-    /**
-     * Gets networkScene
-     *
-     * @return string[]|mixed
-     */
-    public function getNetworkScene()
-    {
-        return $this->container['networkScene'];
-    }
-
-    /**
-     * Sets networkScene
-     *
-     * @param string[]|mixed $networkScene networkScene
-     *
-     * @return $this
-     */
-    public function setNetworkScene($networkScene)
-    {
-        $this->container['networkScene'] = $networkScene;
 
         return $this;
     }
@@ -777,30 +669,6 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     public function setPaidUser($paidUser)
     {
         $this->container['paidUser'] = $paidUser;
-
-        return $this;
-    }
-
-    /**
-     * Gets residentialCommunityPrice
-     *
-     * @return \TencentAds\Model\ResidentialCommunityPriceStruct[]|mixed
-     */
-    public function getResidentialCommunityPrice()
-    {
-        return $this->container['residentialCommunityPrice'];
-    }
-
-    /**
-     * Sets residentialCommunityPrice
-     *
-     * @param \TencentAds\Model\ResidentialCommunityPriceStruct[]|mixed $residentialCommunityPrice residentialCommunityPrice
-     *
-     * @return $this
-     */
-    public function setResidentialCommunityPrice($residentialCommunityPrice)
-    {
-        $this->container['residentialCommunityPrice'] = $residentialCommunityPrice;
 
         return $this;
     }
@@ -950,30 +818,6 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets airQualityIndex
-     *
-     * @return string[]|mixed
-     */
-    public function getAirQualityIndex()
-    {
-        return $this->container['airQualityIndex'];
-    }
-
-    /**
-     * Sets airQualityIndex
-     *
-     * @param string[]|mixed $airQualityIndex airQualityIndex
-     *
-     * @return $this
-     */
-    public function setAirQualityIndex($airQualityIndex)
-    {
-        $this->container['airQualityIndex'] = $airQualityIndex;
-
-        return $this;
-    }
-
-    /**
      * Gets wechatOfficialAccountCategory
      *
      * @return int[]|mixed
@@ -1041,30 +885,6 @@ class EstimationReadTargetingSetting implements ModelInterface, ArrayAccess
     public function setFinancialSituation($financialSituation)
     {
         $this->container['financialSituation'] = $financialSituation;
-
-        return $this;
-    }
-
-    /**
-     * Gets consumptionType
-     *
-     * @return string[]|mixed
-     */
-    public function getConsumptionType()
-    {
-        return $this->container['consumptionType'];
-    }
-
-    /**
-     * Sets consumptionType
-     *
-     * @param string[]|mixed $consumptionType consumptionType
-     *
-     * @return $this
-     */
-    public function setConsumptionType($consumptionType)
-    {
-        $this->container['consumptionType'] = $consumptionType;
 
         return $this;
     }

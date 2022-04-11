@@ -1,6 +1,6 @@
 <?php
 /**
- * PrereviewRejectInfoLocationStruct
+ * ElementPrereviewResultStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PrereviewRejectInfoLocationStruct Class Doc Comment
+ * ElementPrereviewResultStruct Class Doc Comment
  *
  * @category Class
- * @description 标注位置信息
+ * @description 预审结果实体
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
+class ElementPrereviewResultStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'prereview_reject_info_location_struct';
+    protected static $swaggerModelName = 'element_prereview_result_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,14 +58,10 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'x' => 'int',
-        'y' => 'int',
-        'width' => 'int',
-        'height' => 'int',
-        'timeSecond' => 'double',
-        'locationImgUrl' => 'string',
-        'imgUrl' => 'string',
-        'relatedImgUrl' => 'string'
+        'elementType' => '\TencentAds\Model\PreReviewElementType',
+        'elementContent' => 'string',
+        'riskLevel' => '\TencentAds\Model\RiskLevel',
+        'preReviewDetails' => '\TencentAds\Model\PreReviewResultDetailStruct[]'
     ];
 
     /**
@@ -74,14 +70,10 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'x' => 'int64',
-        'y' => 'int64',
-        'width' => 'int64',
-        'height' => 'int64',
-        'timeSecond' => 'double',
-        'locationImgUrl' => null,
-        'imgUrl' => null,
-        'relatedImgUrl' => null
+        'elementType' => null,
+        'elementContent' => null,
+        'riskLevel' => null,
+        'preReviewDetails' => null
     ];
 
     /**
@@ -111,14 +103,10 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'x' => 'x',
-        'y' => 'y',
-        'width' => 'width',
-        'height' => 'height',
-        'timeSecond' => 'time_second',
-        'locationImgUrl' => 'location_img_url',
-        'imgUrl' => 'img_url',
-        'relatedImgUrl' => 'related_img_url'
+        'elementType' => 'element_type',
+        'elementContent' => 'element_content',
+        'riskLevel' => 'risk_level',
+        'preReviewDetails' => 'pre_review_details'
     ];
 
     /**
@@ -127,14 +115,10 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'x' => 'setX',
-        'y' => 'setY',
-        'width' => 'setWidth',
-        'height' => 'setHeight',
-        'timeSecond' => 'setTimeSecond',
-        'locationImgUrl' => 'setLocationImgUrl',
-        'imgUrl' => 'setImgUrl',
-        'relatedImgUrl' => 'setRelatedImgUrl'
+        'elementType' => 'setElementType',
+        'elementContent' => 'setElementContent',
+        'riskLevel' => 'setRiskLevel',
+        'preReviewDetails' => 'setPreReviewDetails'
     ];
 
     /**
@@ -143,14 +127,10 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'x' => 'getX',
-        'y' => 'getY',
-        'width' => 'getWidth',
-        'height' => 'getHeight',
-        'timeSecond' => 'getTimeSecond',
-        'locationImgUrl' => 'getLocationImgUrl',
-        'imgUrl' => 'getImgUrl',
-        'relatedImgUrl' => 'getRelatedImgUrl'
+        'elementType' => 'getElementType',
+        'elementContent' => 'getElementContent',
+        'riskLevel' => 'getRiskLevel',
+        'preReviewDetails' => 'getPreReviewDetails'
     ];
 
     /**
@@ -213,14 +193,10 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['x'] = isset($data['x']) ? $data['x'] : null;
-        $this->container['y'] = isset($data['y']) ? $data['y'] : null;
-        $this->container['width'] = isset($data['width']) ? $data['width'] : null;
-        $this->container['height'] = isset($data['height']) ? $data['height'] : null;
-        $this->container['timeSecond'] = isset($data['timeSecond']) ? $data['timeSecond'] : null;
-        $this->container['locationImgUrl'] = isset($data['locationImgUrl']) ? $data['locationImgUrl'] : null;
-        $this->container['imgUrl'] = isset($data['imgUrl']) ? $data['imgUrl'] : null;
-        $this->container['relatedImgUrl'] = isset($data['relatedImgUrl']) ? $data['relatedImgUrl'] : null;
+        $this->container['elementType'] = isset($data['elementType']) ? $data['elementType'] : null;
+        $this->container['elementContent'] = isset($data['elementContent']) ? $data['elementContent'] : null;
+        $this->container['riskLevel'] = isset($data['riskLevel']) ? $data['riskLevel'] : null;
+        $this->container['preReviewDetails'] = isset($data['preReviewDetails']) ? $data['preReviewDetails'] : null;
     }
 
     /**
@@ -248,193 +224,97 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets x
+     * Gets elementType
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\PreReviewElementType|mixed
      */
-    public function getX()
+    public function getElementType()
     {
-        return $this->container['x'];
+        return $this->container['elementType'];
     }
 
     /**
-     * Sets x
+     * Sets elementType
      *
-     * @param int|mixed $x x
+     * @param \TencentAds\Model\PreReviewElementType|mixed $elementType elementType
      *
      * @return $this
      */
-    public function setX($x)
+    public function setElementType($elementType)
     {
-        $this->container['x'] = $x;
+        $this->container['elementType'] = $elementType;
 
         return $this;
     }
 
     /**
-     * Gets y
-     *
-     * @return int|mixed
-     */
-    public function getY()
-    {
-        return $this->container['y'];
-    }
-
-    /**
-     * Sets y
-     *
-     * @param int|mixed $y y
-     *
-     * @return $this
-     */
-    public function setY($y)
-    {
-        $this->container['y'] = $y;
-
-        return $this;
-    }
-
-    /**
-     * Gets width
-     *
-     * @return int|mixed
-     */
-    public function getWidth()
-    {
-        return $this->container['width'];
-    }
-
-    /**
-     * Sets width
-     *
-     * @param int|mixed $width width
-     *
-     * @return $this
-     */
-    public function setWidth($width)
-    {
-        $this->container['width'] = $width;
-
-        return $this;
-    }
-
-    /**
-     * Gets height
-     *
-     * @return int|mixed
-     */
-    public function getHeight()
-    {
-        return $this->container['height'];
-    }
-
-    /**
-     * Sets height
-     *
-     * @param int|mixed $height height
-     *
-     * @return $this
-     */
-    public function setHeight($height)
-    {
-        $this->container['height'] = $height;
-
-        return $this;
-    }
-
-    /**
-     * Gets timeSecond
-     *
-     * @return double|mixed
-     */
-    public function getTimeSecond()
-    {
-        return $this->container['timeSecond'];
-    }
-
-    /**
-     * Sets timeSecond
-     *
-     * @param double|mixed $timeSecond timeSecond
-     *
-     * @return $this
-     */
-    public function setTimeSecond($timeSecond)
-    {
-        $this->container['timeSecond'] = $timeSecond;
-
-        return $this;
-    }
-
-    /**
-     * Gets locationImgUrl
+     * Gets elementContent
      *
      * @return string|mixed
      */
-    public function getLocationImgUrl()
+    public function getElementContent()
     {
-        return $this->container['locationImgUrl'];
+        return $this->container['elementContent'];
     }
 
     /**
-     * Sets locationImgUrl
+     * Sets elementContent
      *
-     * @param string|mixed $locationImgUrl locationImgUrl
+     * @param string|mixed $elementContent elementContent
      *
      * @return $this
      */
-    public function setLocationImgUrl($locationImgUrl)
+    public function setElementContent($elementContent)
     {
-        $this->container['locationImgUrl'] = $locationImgUrl;
+        $this->container['elementContent'] = $elementContent;
 
         return $this;
     }
 
     /**
-     * Gets imgUrl
+     * Gets riskLevel
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\RiskLevel|mixed
      */
-    public function getImgUrl()
+    public function getRiskLevel()
     {
-        return $this->container['imgUrl'];
+        return $this->container['riskLevel'];
     }
 
     /**
-     * Sets imgUrl
+     * Sets riskLevel
      *
-     * @param string|mixed $imgUrl imgUrl
+     * @param \TencentAds\Model\RiskLevel|mixed $riskLevel riskLevel
      *
      * @return $this
      */
-    public function setImgUrl($imgUrl)
+    public function setRiskLevel($riskLevel)
     {
-        $this->container['imgUrl'] = $imgUrl;
+        $this->container['riskLevel'] = $riskLevel;
 
         return $this;
     }
 
     /**
-     * Gets relatedImgUrl
+     * Gets preReviewDetails
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\PreReviewResultDetailStruct[]|mixed
      */
-    public function getRelatedImgUrl()
+    public function getPreReviewDetails()
     {
-        return $this->container['relatedImgUrl'];
+        return $this->container['preReviewDetails'];
     }
 
     /**
-     * Sets relatedImgUrl
+     * Sets preReviewDetails
      *
-     * @param string|mixed $relatedImgUrl relatedImgUrl
+     * @param \TencentAds\Model\PreReviewResultDetailStruct[]|mixed $preReviewDetails preReviewDetails
      *
      * @return $this
      */
-    public function setRelatedImgUrl($relatedImgUrl)
+    public function setPreReviewDetails($preReviewDetails)
     {
-        $this->container['relatedImgUrl'] = $relatedImgUrl;
+        $this->container['preReviewDetails'] = $preReviewDetails;
 
         return $this;
     }

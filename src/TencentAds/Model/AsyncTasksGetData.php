@@ -60,7 +60,8 @@ class AsyncTasksGetData implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'fileInfoList' => '\TencentAds\Model\AsyncTasksGetFileInfo[]',
         'channelPackageInfoList' => '\TencentAds\Model\ChannelPackageInfo[]',
-        'unionChannelPackageInfoList' => '\TencentAds\Model\UnionChannelPackageInfo[]'
+        'unionChannelPackageInfoList' => '\TencentAds\Model\UnionChannelPackageInfo[]',
+        'reviewElementPrereviewResultList' => '\TencentAds\Model\ElementPrereviewResultStruct[]'
     ];
 
     /**
@@ -71,7 +72,8 @@ class AsyncTasksGetData implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'fileInfoList' => null,
         'channelPackageInfoList' => null,
-        'unionChannelPackageInfoList' => null
+        'unionChannelPackageInfoList' => null,
+        'reviewElementPrereviewResultList' => null
     ];
 
     /**
@@ -103,7 +105,8 @@ class AsyncTasksGetData implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'fileInfoList' => 'file_info_list',
         'channelPackageInfoList' => 'channel_package_info_list',
-        'unionChannelPackageInfoList' => 'union_channel_package_info_list'
+        'unionChannelPackageInfoList' => 'union_channel_package_info_list',
+        'reviewElementPrereviewResultList' => 'review_element_prereview_result_list'
     ];
 
     /**
@@ -114,7 +117,8 @@ class AsyncTasksGetData implements ModelInterface, ArrayAccess
     protected static $setters = [
         'fileInfoList' => 'setFileInfoList',
         'channelPackageInfoList' => 'setChannelPackageInfoList',
-        'unionChannelPackageInfoList' => 'setUnionChannelPackageInfoList'
+        'unionChannelPackageInfoList' => 'setUnionChannelPackageInfoList',
+        'reviewElementPrereviewResultList' => 'setReviewElementPrereviewResultList'
     ];
 
     /**
@@ -125,7 +129,8 @@ class AsyncTasksGetData implements ModelInterface, ArrayAccess
     protected static $getters = [
         'fileInfoList' => 'getFileInfoList',
         'channelPackageInfoList' => 'getChannelPackageInfoList',
-        'unionChannelPackageInfoList' => 'getUnionChannelPackageInfoList'
+        'unionChannelPackageInfoList' => 'getUnionChannelPackageInfoList',
+        'reviewElementPrereviewResultList' => 'getReviewElementPrereviewResultList'
     ];
 
     /**
@@ -191,6 +196,7 @@ class AsyncTasksGetData implements ModelInterface, ArrayAccess
         $this->container['fileInfoList'] = isset($data['fileInfoList']) ? $data['fileInfoList'] : null;
         $this->container['channelPackageInfoList'] = isset($data['channelPackageInfoList']) ? $data['channelPackageInfoList'] : null;
         $this->container['unionChannelPackageInfoList'] = isset($data['unionChannelPackageInfoList']) ? $data['unionChannelPackageInfoList'] : null;
+        $this->container['reviewElementPrereviewResultList'] = isset($data['reviewElementPrereviewResultList']) ? $data['reviewElementPrereviewResultList'] : null;
     }
 
     /**
@@ -285,6 +291,30 @@ class AsyncTasksGetData implements ModelInterface, ArrayAccess
     public function setUnionChannelPackageInfoList($unionChannelPackageInfoList)
     {
         $this->container['unionChannelPackageInfoList'] = $unionChannelPackageInfoList;
+
+        return $this;
+    }
+
+    /**
+     * Gets reviewElementPrereviewResultList
+     *
+     * @return \TencentAds\Model\ElementPrereviewResultStruct[]|mixed
+     */
+    public function getReviewElementPrereviewResultList()
+    {
+        return $this->container['reviewElementPrereviewResultList'];
+    }
+
+    /**
+     * Sets reviewElementPrereviewResultList
+     *
+     * @param \TencentAds\Model\ElementPrereviewResultStruct[]|mixed $reviewElementPrereviewResultList reviewElementPrereviewResultList
+     *
+     * @return $this
+     */
+    public function setReviewElementPrereviewResultList($reviewElementPrereviewResultList)
+    {
+        $this->container['reviewElementPrereviewResultList'] = $reviewElementPrereviewResultList;
 
         return $this;
     }

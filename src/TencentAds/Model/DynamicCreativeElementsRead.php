@@ -80,6 +80,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'bottomText' => 'string',
         'activityType' => 'string',
         'countdownBegin' => 'int',
+        'countdownExpiringTimestamp' => 'int',
         'countdownPrice' => 'string',
         'countdownTimeType' => '\TencentAds\Model\AdCreativeCountdownTimeType',
         'miniProgramId' => 'string',
@@ -124,14 +125,12 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'longVideoStruct' => '\TencentAds\Model\LongVideoStruct',
         'bannerContent' => '\TencentAds\Model\AdcreativeBannerContent',
         'cardContent' => '\TencentAds\Model\AdcreativeCardContent',
-        'shopImage' => 'string',
         'headLine' => 'string',
         'shopImageStruct' => '\TencentAds\Model\AdCreativeShopImageStruct',
         'chosenButton' => '\TencentAds\Model\ChosenButton',
         'livingDescStruct' => '\TencentAds\Model\AdCreativeLivingDescStruct',
         'floatingZoneStruct' => '\TencentAds\Model\FloatingZone',
-        'canvasShareImage' => 'string',
-        'countdownExpiringTimestamp' => 'int'
+        'canvasShareImage' => 'string'
     ];
 
     /**
@@ -162,6 +161,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'bottomText' => null,
         'activityType' => null,
         'countdownBegin' => 'int64',
+        'countdownExpiringTimestamp' => 'int64',
         'countdownPrice' => null,
         'countdownTimeType' => null,
         'miniProgramId' => null,
@@ -206,14 +206,12 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'longVideoStruct' => null,
         'bannerContent' => null,
         'cardContent' => null,
-        'shopImage' => null,
         'headLine' => null,
         'shopImageStruct' => null,
         'chosenButton' => null,
         'livingDescStruct' => null,
         'floatingZoneStruct' => null,
-        'canvasShareImage' => null,
-        'countdownExpiringTimestamp' => 'int64'
+        'canvasShareImage' => null
     ];
 
     /**
@@ -265,6 +263,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'bottomText' => 'bottom_text',
         'activityType' => 'activity_type',
         'countdownBegin' => 'countdown_begin',
+        'countdownExpiringTimestamp' => 'countdown_expiring_timestamp',
         'countdownPrice' => 'countdown_price',
         'countdownTimeType' => 'countdown_time_type',
         'miniProgramId' => 'mini_program_id',
@@ -309,14 +308,12 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'longVideoStruct' => 'long_video_struct',
         'bannerContent' => 'banner_content',
         'cardContent' => 'card_content',
-        'shopImage' => 'shop_image',
         'headLine' => 'head_line',
         'shopImageStruct' => 'shop_image_struct',
         'chosenButton' => 'chosen_button',
         'livingDescStruct' => 'living_desc_struct',
         'floatingZoneStruct' => 'floating_zone_struct',
-        'canvasShareImage' => 'canvas_share_image',
-        'countdownExpiringTimestamp' => 'countdown_expiring_timestamp'
+        'canvasShareImage' => 'canvas_share_image'
     ];
 
     /**
@@ -347,6 +344,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'bottomText' => 'setBottomText',
         'activityType' => 'setActivityType',
         'countdownBegin' => 'setCountdownBegin',
+        'countdownExpiringTimestamp' => 'setCountdownExpiringTimestamp',
         'countdownPrice' => 'setCountdownPrice',
         'countdownTimeType' => 'setCountdownTimeType',
         'miniProgramId' => 'setMiniProgramId',
@@ -391,14 +389,12 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'longVideoStruct' => 'setLongVideoStruct',
         'bannerContent' => 'setBannerContent',
         'cardContent' => 'setCardContent',
-        'shopImage' => 'setShopImage',
         'headLine' => 'setHeadLine',
         'shopImageStruct' => 'setShopImageStruct',
         'chosenButton' => 'setChosenButton',
         'livingDescStruct' => 'setLivingDescStruct',
         'floatingZoneStruct' => 'setFloatingZoneStruct',
-        'canvasShareImage' => 'setCanvasShareImage',
-        'countdownExpiringTimestamp' => 'setCountdownExpiringTimestamp'
+        'canvasShareImage' => 'setCanvasShareImage'
     ];
 
     /**
@@ -429,6 +425,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'bottomText' => 'getBottomText',
         'activityType' => 'getActivityType',
         'countdownBegin' => 'getCountdownBegin',
+        'countdownExpiringTimestamp' => 'getCountdownExpiringTimestamp',
         'countdownPrice' => 'getCountdownPrice',
         'countdownTimeType' => 'getCountdownTimeType',
         'miniProgramId' => 'getMiniProgramId',
@@ -473,14 +470,12 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'longVideoStruct' => 'getLongVideoStruct',
         'bannerContent' => 'getBannerContent',
         'cardContent' => 'getCardContent',
-        'shopImage' => 'getShopImage',
         'headLine' => 'getHeadLine',
         'shopImageStruct' => 'getShopImageStruct',
         'chosenButton' => 'getChosenButton',
         'livingDescStruct' => 'getLivingDescStruct',
         'floatingZoneStruct' => 'getFloatingZoneStruct',
-        'canvasShareImage' => 'getCanvasShareImage',
-        'countdownExpiringTimestamp' => 'getCountdownExpiringTimestamp'
+        'canvasShareImage' => 'getCanvasShareImage'
     ];
 
     /**
@@ -565,6 +560,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         $this->container['bottomText'] = isset($data['bottomText']) ? $data['bottomText'] : null;
         $this->container['activityType'] = isset($data['activityType']) ? $data['activityType'] : null;
         $this->container['countdownBegin'] = isset($data['countdownBegin']) ? $data['countdownBegin'] : null;
+        $this->container['countdownExpiringTimestamp'] = isset($data['countdownExpiringTimestamp']) ? $data['countdownExpiringTimestamp'] : null;
         $this->container['countdownPrice'] = isset($data['countdownPrice']) ? $data['countdownPrice'] : null;
         $this->container['countdownTimeType'] = isset($data['countdownTimeType']) ? $data['countdownTimeType'] : null;
         $this->container['miniProgramId'] = isset($data['miniProgramId']) ? $data['miniProgramId'] : null;
@@ -609,14 +605,12 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         $this->container['longVideoStruct'] = isset($data['longVideoStruct']) ? $data['longVideoStruct'] : null;
         $this->container['bannerContent'] = isset($data['bannerContent']) ? $data['bannerContent'] : null;
         $this->container['cardContent'] = isset($data['cardContent']) ? $data['cardContent'] : null;
-        $this->container['shopImage'] = isset($data['shopImage']) ? $data['shopImage'] : null;
         $this->container['headLine'] = isset($data['headLine']) ? $data['headLine'] : null;
         $this->container['shopImageStruct'] = isset($data['shopImageStruct']) ? $data['shopImageStruct'] : null;
         $this->container['chosenButton'] = isset($data['chosenButton']) ? $data['chosenButton'] : null;
         $this->container['livingDescStruct'] = isset($data['livingDescStruct']) ? $data['livingDescStruct'] : null;
         $this->container['floatingZoneStruct'] = isset($data['floatingZoneStruct']) ? $data['floatingZoneStruct'] : null;
         $this->container['canvasShareImage'] = isset($data['canvasShareImage']) ? $data['canvasShareImage'] : null;
-        $this->container['countdownExpiringTimestamp'] = isset($data['countdownExpiringTimestamp']) ? $data['countdownExpiringTimestamp'] : null;
     }
 
     /**
@@ -1167,6 +1161,30 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
     public function setCountdownBegin($countdownBegin)
     {
         $this->container['countdownBegin'] = $countdownBegin;
+
+        return $this;
+    }
+
+    /**
+     * Gets countdownExpiringTimestamp
+     *
+     * @return int|mixed
+     */
+    public function getCountdownExpiringTimestamp()
+    {
+        return $this->container['countdownExpiringTimestamp'];
+    }
+
+    /**
+     * Sets countdownExpiringTimestamp
+     *
+     * @param int|mixed $countdownExpiringTimestamp countdownExpiringTimestamp
+     *
+     * @return $this
+     */
+    public function setCountdownExpiringTimestamp($countdownExpiringTimestamp)
+    {
+        $this->container['countdownExpiringTimestamp'] = $countdownExpiringTimestamp;
 
         return $this;
     }
@@ -2228,30 +2246,6 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets shopImage
-     *
-     * @return string|mixed
-     */
-    public function getShopImage()
-    {
-        return $this->container['shopImage'];
-    }
-
-    /**
-     * Sets shopImage
-     *
-     * @param string|mixed $shopImage shopImage
-     *
-     * @return $this
-     */
-    public function setShopImage($shopImage)
-    {
-        $this->container['shopImage'] = $shopImage;
-
-        return $this;
-    }
-
-    /**
      * Gets headLine
      *
      * @return string|mixed
@@ -2391,30 +2385,6 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
     public function setCanvasShareImage($canvasShareImage)
     {
         $this->container['canvasShareImage'] = $canvasShareImage;
-
-        return $this;
-    }
-
-    /**
-     * Gets countdownExpiringTimestamp
-     *
-     * @return int|mixed
-     */
-    public function getCountdownExpiringTimestamp()
-    {
-        return $this->container['countdownExpiringTimestamp'];
-    }
-
-    /**
-     * Sets countdownExpiringTimestamp
-     *
-     * @param int|mixed $countdownExpiringTimestamp countdownExpiringTimestamp
-     *
-     * @return $this
-     */
-    public function setCountdownExpiringTimestamp($countdownExpiringTimestamp)
-    {
-        $this->container['countdownExpiringTimestamp'] = $countdownExpiringTimestamp;
 
         return $this;
     }

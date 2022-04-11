@@ -62,7 +62,7 @@ class RejectInfoLocation implements ModelInterface, ArrayAccess
         'y' => 'int',
         'width' => 'int',
         'height' => 'int',
-        'timeSecond' => 'int',
+        'timeSecond' => 'double',
         'locationImgUrl' => 'string',
         'imgUrl' => 'string',
         'relatedImgUrl' => 'string'
@@ -78,7 +78,7 @@ class RejectInfoLocation implements ModelInterface, ArrayAccess
         'y' => 'int64',
         'width' => 'int64',
         'height' => 'int64',
-        'timeSecond' => 'int64',
+        'timeSecond' => 'double',
         'locationImgUrl' => null,
         'imgUrl' => null,
         'relatedImgUrl' => null
@@ -346,7 +346,7 @@ class RejectInfoLocation implements ModelInterface, ArrayAccess
     /**
      * Gets timeSecond
      *
-     * @return int|mixed
+     * @return double|mixed
      */
     public function getTimeSecond()
     {
@@ -356,7 +356,7 @@ class RejectInfoLocation implements ModelInterface, ArrayAccess
     /**
      * Sets timeSecond
      *
-     * @param int|mixed $timeSecond timeSecond
+     * @param double|mixed $timeSecond timeSecond
      *
      * @return $this
      */

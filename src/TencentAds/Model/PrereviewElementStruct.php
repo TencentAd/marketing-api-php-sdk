@@ -1,6 +1,6 @@
 <?php
 /**
- * PrereviewRejectInfoLocationStruct
+ * PrereviewElementStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PrereviewRejectInfoLocationStruct Class Doc Comment
+ * PrereviewElementStruct Class Doc Comment
  *
  * @category Class
- * @description 标注位置信息
+ * @description 元素信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
+class PrereviewElementStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'prereview_reject_info_location_struct';
+    protected static $swaggerModelName = 'prereview_element_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,14 +58,9 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'x' => 'int',
-        'y' => 'int',
-        'width' => 'int',
-        'height' => 'int',
-        'timeSecond' => 'double',
-        'locationImgUrl' => 'string',
-        'imgUrl' => 'string',
-        'relatedImgUrl' => 'string'
+        'elementType' => '\TencentAds\Model\PreReviewElementType',
+        'elementContent' => 'string',
+        'elementKey' => '\TencentAds\Model\PreReviewElementKey'
     ];
 
     /**
@@ -74,14 +69,9 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'x' => 'int64',
-        'y' => 'int64',
-        'width' => 'int64',
-        'height' => 'int64',
-        'timeSecond' => 'double',
-        'locationImgUrl' => null,
-        'imgUrl' => null,
-        'relatedImgUrl' => null
+        'elementType' => null,
+        'elementContent' => null,
+        'elementKey' => null
     ];
 
     /**
@@ -111,14 +101,9 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'x' => 'x',
-        'y' => 'y',
-        'width' => 'width',
-        'height' => 'height',
-        'timeSecond' => 'time_second',
-        'locationImgUrl' => 'location_img_url',
-        'imgUrl' => 'img_url',
-        'relatedImgUrl' => 'related_img_url'
+        'elementType' => 'element_type',
+        'elementContent' => 'element_content',
+        'elementKey' => 'element_key'
     ];
 
     /**
@@ -127,14 +112,9 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'x' => 'setX',
-        'y' => 'setY',
-        'width' => 'setWidth',
-        'height' => 'setHeight',
-        'timeSecond' => 'setTimeSecond',
-        'locationImgUrl' => 'setLocationImgUrl',
-        'imgUrl' => 'setImgUrl',
-        'relatedImgUrl' => 'setRelatedImgUrl'
+        'elementType' => 'setElementType',
+        'elementContent' => 'setElementContent',
+        'elementKey' => 'setElementKey'
     ];
 
     /**
@@ -143,14 +123,9 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'x' => 'getX',
-        'y' => 'getY',
-        'width' => 'getWidth',
-        'height' => 'getHeight',
-        'timeSecond' => 'getTimeSecond',
-        'locationImgUrl' => 'getLocationImgUrl',
-        'imgUrl' => 'getImgUrl',
-        'relatedImgUrl' => 'getRelatedImgUrl'
+        'elementType' => 'getElementType',
+        'elementContent' => 'getElementContent',
+        'elementKey' => 'getElementKey'
     ];
 
     /**
@@ -213,14 +188,9 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['x'] = isset($data['x']) ? $data['x'] : null;
-        $this->container['y'] = isset($data['y']) ? $data['y'] : null;
-        $this->container['width'] = isset($data['width']) ? $data['width'] : null;
-        $this->container['height'] = isset($data['height']) ? $data['height'] : null;
-        $this->container['timeSecond'] = isset($data['timeSecond']) ? $data['timeSecond'] : null;
-        $this->container['locationImgUrl'] = isset($data['locationImgUrl']) ? $data['locationImgUrl'] : null;
-        $this->container['imgUrl'] = isset($data['imgUrl']) ? $data['imgUrl'] : null;
-        $this->container['relatedImgUrl'] = isset($data['relatedImgUrl']) ? $data['relatedImgUrl'] : null;
+        $this->container['elementType'] = isset($data['elementType']) ? $data['elementType'] : null;
+        $this->container['elementContent'] = isset($data['elementContent']) ? $data['elementContent'] : null;
+        $this->container['elementKey'] = isset($data['elementKey']) ? $data['elementKey'] : null;
     }
 
     /**
@@ -248,193 +218,73 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets x
+     * Gets elementType
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\PreReviewElementType|mixed
      */
-    public function getX()
+    public function getElementType()
     {
-        return $this->container['x'];
+        return $this->container['elementType'];
     }
 
     /**
-     * Sets x
+     * Sets elementType
      *
-     * @param int|mixed $x x
+     * @param \TencentAds\Model\PreReviewElementType|mixed $elementType elementType
      *
      * @return $this
      */
-    public function setX($x)
+    public function setElementType($elementType)
     {
-        $this->container['x'] = $x;
+        $this->container['elementType'] = $elementType;
 
         return $this;
     }
 
     /**
-     * Gets y
-     *
-     * @return int|mixed
-     */
-    public function getY()
-    {
-        return $this->container['y'];
-    }
-
-    /**
-     * Sets y
-     *
-     * @param int|mixed $y y
-     *
-     * @return $this
-     */
-    public function setY($y)
-    {
-        $this->container['y'] = $y;
-
-        return $this;
-    }
-
-    /**
-     * Gets width
-     *
-     * @return int|mixed
-     */
-    public function getWidth()
-    {
-        return $this->container['width'];
-    }
-
-    /**
-     * Sets width
-     *
-     * @param int|mixed $width width
-     *
-     * @return $this
-     */
-    public function setWidth($width)
-    {
-        $this->container['width'] = $width;
-
-        return $this;
-    }
-
-    /**
-     * Gets height
-     *
-     * @return int|mixed
-     */
-    public function getHeight()
-    {
-        return $this->container['height'];
-    }
-
-    /**
-     * Sets height
-     *
-     * @param int|mixed $height height
-     *
-     * @return $this
-     */
-    public function setHeight($height)
-    {
-        $this->container['height'] = $height;
-
-        return $this;
-    }
-
-    /**
-     * Gets timeSecond
-     *
-     * @return double|mixed
-     */
-    public function getTimeSecond()
-    {
-        return $this->container['timeSecond'];
-    }
-
-    /**
-     * Sets timeSecond
-     *
-     * @param double|mixed $timeSecond timeSecond
-     *
-     * @return $this
-     */
-    public function setTimeSecond($timeSecond)
-    {
-        $this->container['timeSecond'] = $timeSecond;
-
-        return $this;
-    }
-
-    /**
-     * Gets locationImgUrl
+     * Gets elementContent
      *
      * @return string|mixed
      */
-    public function getLocationImgUrl()
+    public function getElementContent()
     {
-        return $this->container['locationImgUrl'];
+        return $this->container['elementContent'];
     }
 
     /**
-     * Sets locationImgUrl
+     * Sets elementContent
      *
-     * @param string|mixed $locationImgUrl locationImgUrl
+     * @param string|mixed $elementContent elementContent
      *
      * @return $this
      */
-    public function setLocationImgUrl($locationImgUrl)
+    public function setElementContent($elementContent)
     {
-        $this->container['locationImgUrl'] = $locationImgUrl;
+        $this->container['elementContent'] = $elementContent;
 
         return $this;
     }
 
     /**
-     * Gets imgUrl
+     * Gets elementKey
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\PreReviewElementKey|mixed
      */
-    public function getImgUrl()
+    public function getElementKey()
     {
-        return $this->container['imgUrl'];
+        return $this->container['elementKey'];
     }
 
     /**
-     * Sets imgUrl
+     * Sets elementKey
      *
-     * @param string|mixed $imgUrl imgUrl
+     * @param \TencentAds\Model\PreReviewElementKey|mixed $elementKey elementKey
      *
      * @return $this
      */
-    public function setImgUrl($imgUrl)
+    public function setElementKey($elementKey)
     {
-        $this->container['imgUrl'] = $imgUrl;
-
-        return $this;
-    }
-
-    /**
-     * Gets relatedImgUrl
-     *
-     * @return string|mixed
-     */
-    public function getRelatedImgUrl()
-    {
-        return $this->container['relatedImgUrl'];
-    }
-
-    /**
-     * Sets relatedImgUrl
-     *
-     * @param string|mixed $relatedImgUrl relatedImgUrl
-     *
-     * @return $this
-     */
-    public function setRelatedImgUrl($relatedImgUrl)
-    {
-        $this->container['relatedImgUrl'] = $relatedImgUrl;
+        $this->container['elementKey'] = $elementKey;
 
         return $this;
     }

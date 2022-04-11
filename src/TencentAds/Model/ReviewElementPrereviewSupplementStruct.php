@@ -1,6 +1,6 @@
 <?php
 /**
- * PrereviewRejectInfoLocationStruct
+ * ReviewElementPrereviewSupplementStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PrereviewRejectInfoLocationStruct Class Doc Comment
+ * ReviewElementPrereviewSupplementStruct Class Doc Comment
  *
  * @category Class
- * @description 标注位置信息
+ * @description 补充信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
+class ReviewElementPrereviewSupplementStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'prereview_reject_info_location_struct';
+    protected static $swaggerModelName = 'review_element_prereview_supplement_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,14 +58,9 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'x' => 'int',
-        'y' => 'int',
-        'width' => 'int',
-        'height' => 'int',
-        'timeSecond' => 'double',
-        'locationImgUrl' => 'string',
-        'imgUrl' => 'string',
-        'relatedImgUrl' => 'string'
+        'field' => 'string',
+        'operator' => 'string',
+        'values' => 'string[]'
     ];
 
     /**
@@ -74,14 +69,9 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'x' => 'int64',
-        'y' => 'int64',
-        'width' => 'int64',
-        'height' => 'int64',
-        'timeSecond' => 'double',
-        'locationImgUrl' => null,
-        'imgUrl' => null,
-        'relatedImgUrl' => null
+        'field' => null,
+        'operator' => null,
+        'values' => null
     ];
 
     /**
@@ -111,14 +101,9 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'x' => 'x',
-        'y' => 'y',
-        'width' => 'width',
-        'height' => 'height',
-        'timeSecond' => 'time_second',
-        'locationImgUrl' => 'location_img_url',
-        'imgUrl' => 'img_url',
-        'relatedImgUrl' => 'related_img_url'
+        'field' => 'field',
+        'operator' => 'operator',
+        'values' => 'values'
     ];
 
     /**
@@ -127,14 +112,9 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'x' => 'setX',
-        'y' => 'setY',
-        'width' => 'setWidth',
-        'height' => 'setHeight',
-        'timeSecond' => 'setTimeSecond',
-        'locationImgUrl' => 'setLocationImgUrl',
-        'imgUrl' => 'setImgUrl',
-        'relatedImgUrl' => 'setRelatedImgUrl'
+        'field' => 'setField',
+        'operator' => 'setOperator',
+        'values' => 'setValues'
     ];
 
     /**
@@ -143,14 +123,9 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'x' => 'getX',
-        'y' => 'getY',
-        'width' => 'getWidth',
-        'height' => 'getHeight',
-        'timeSecond' => 'getTimeSecond',
-        'locationImgUrl' => 'getLocationImgUrl',
-        'imgUrl' => 'getImgUrl',
-        'relatedImgUrl' => 'getRelatedImgUrl'
+        'field' => 'getField',
+        'operator' => 'getOperator',
+        'values' => 'getValues'
     ];
 
     /**
@@ -213,14 +188,9 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['x'] = isset($data['x']) ? $data['x'] : null;
-        $this->container['y'] = isset($data['y']) ? $data['y'] : null;
-        $this->container['width'] = isset($data['width']) ? $data['width'] : null;
-        $this->container['height'] = isset($data['height']) ? $data['height'] : null;
-        $this->container['timeSecond'] = isset($data['timeSecond']) ? $data['timeSecond'] : null;
-        $this->container['locationImgUrl'] = isset($data['locationImgUrl']) ? $data['locationImgUrl'] : null;
-        $this->container['imgUrl'] = isset($data['imgUrl']) ? $data['imgUrl'] : null;
-        $this->container['relatedImgUrl'] = isset($data['relatedImgUrl']) ? $data['relatedImgUrl'] : null;
+        $this->container['field'] = isset($data['field']) ? $data['field'] : null;
+        $this->container['operator'] = isset($data['operator']) ? $data['operator'] : null;
+        $this->container['values'] = isset($data['values']) ? $data['values'] : null;
     }
 
     /**
@@ -248,193 +218,73 @@ class PrereviewRejectInfoLocationStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets x
-     *
-     * @return int|mixed
-     */
-    public function getX()
-    {
-        return $this->container['x'];
-    }
-
-    /**
-     * Sets x
-     *
-     * @param int|mixed $x x
-     *
-     * @return $this
-     */
-    public function setX($x)
-    {
-        $this->container['x'] = $x;
-
-        return $this;
-    }
-
-    /**
-     * Gets y
-     *
-     * @return int|mixed
-     */
-    public function getY()
-    {
-        return $this->container['y'];
-    }
-
-    /**
-     * Sets y
-     *
-     * @param int|mixed $y y
-     *
-     * @return $this
-     */
-    public function setY($y)
-    {
-        $this->container['y'] = $y;
-
-        return $this;
-    }
-
-    /**
-     * Gets width
-     *
-     * @return int|mixed
-     */
-    public function getWidth()
-    {
-        return $this->container['width'];
-    }
-
-    /**
-     * Sets width
-     *
-     * @param int|mixed $width width
-     *
-     * @return $this
-     */
-    public function setWidth($width)
-    {
-        $this->container['width'] = $width;
-
-        return $this;
-    }
-
-    /**
-     * Gets height
-     *
-     * @return int|mixed
-     */
-    public function getHeight()
-    {
-        return $this->container['height'];
-    }
-
-    /**
-     * Sets height
-     *
-     * @param int|mixed $height height
-     *
-     * @return $this
-     */
-    public function setHeight($height)
-    {
-        $this->container['height'] = $height;
-
-        return $this;
-    }
-
-    /**
-     * Gets timeSecond
-     *
-     * @return double|mixed
-     */
-    public function getTimeSecond()
-    {
-        return $this->container['timeSecond'];
-    }
-
-    /**
-     * Sets timeSecond
-     *
-     * @param double|mixed $timeSecond timeSecond
-     *
-     * @return $this
-     */
-    public function setTimeSecond($timeSecond)
-    {
-        $this->container['timeSecond'] = $timeSecond;
-
-        return $this;
-    }
-
-    /**
-     * Gets locationImgUrl
+     * Gets field
      *
      * @return string|mixed
      */
-    public function getLocationImgUrl()
+    public function getField()
     {
-        return $this->container['locationImgUrl'];
+        return $this->container['field'];
     }
 
     /**
-     * Sets locationImgUrl
+     * Sets field
      *
-     * @param string|mixed $locationImgUrl locationImgUrl
+     * @param string|mixed $field field
      *
      * @return $this
      */
-    public function setLocationImgUrl($locationImgUrl)
+    public function setField($field)
     {
-        $this->container['locationImgUrl'] = $locationImgUrl;
+        $this->container['field'] = $field;
 
         return $this;
     }
 
     /**
-     * Gets imgUrl
+     * Gets operator
      *
      * @return string|mixed
      */
-    public function getImgUrl()
+    public function getOperator()
     {
-        return $this->container['imgUrl'];
+        return $this->container['operator'];
     }
 
     /**
-     * Sets imgUrl
+     * Sets operator
      *
-     * @param string|mixed $imgUrl imgUrl
+     * @param string|mixed $operator operator
      *
      * @return $this
      */
-    public function setImgUrl($imgUrl)
+    public function setOperator($operator)
     {
-        $this->container['imgUrl'] = $imgUrl;
+        $this->container['operator'] = $operator;
 
         return $this;
     }
 
     /**
-     * Gets relatedImgUrl
+     * Gets values
      *
-     * @return string|mixed
+     * @return string[]|mixed
      */
-    public function getRelatedImgUrl()
+    public function getValues()
     {
-        return $this->container['relatedImgUrl'];
+        return $this->container['values'];
     }
 
     /**
-     * Sets relatedImgUrl
+     * Sets values
      *
-     * @param string|mixed $relatedImgUrl relatedImgUrl
+     * @param string[]|mixed $values values
      *
      * @return $this
      */
-    public function setRelatedImgUrl($relatedImgUrl)
+    public function setValues($values)
     {
-        $this->container['relatedImgUrl'] = $relatedImgUrl;
+        $this->container['values'] = $values;
 
         return $this;
     }
