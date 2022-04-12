@@ -1,6 +1,6 @@
 <?php
 /**
- * MiniGameSpec
+ * AdCreativeMiniGameOpenlinkPageSpec
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MiniGameSpec Class Doc Comment
+ * AdCreativeMiniGameOpenlinkPageSpec Class Doc Comment
  *
  * @category Class
- * @description 小游戏落地页信息
+ * @description 小游戏蹊径落地页
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MiniGameSpec implements ModelInterface, ArrayAccess
+class AdCreativeMiniGameOpenlinkPageSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'mini_game_spec';
+    protected static $swaggerModelName = 'ad_creative_mini_game_openlink_page_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,8 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'miniGameTrackingParameter' => 'string',
-        'miniGameOpenlink' => 'string',
-        'miniGameOpenlinkPageSpec' => '\TencentAds\Model\AdCreativeMiniGameOpenlinkPageSpec'
+        'landingPageType' => '\TencentAds\Model\LandingPageType',
+        'landingPageId' => 'int'
     ];
 
     /**
@@ -69,9 +68,8 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'miniGameTrackingParameter' => null,
-        'miniGameOpenlink' => null,
-        'miniGameOpenlinkPageSpec' => null
+        'landingPageType' => null,
+        'landingPageId' => 'int64'
     ];
 
     /**
@@ -101,9 +99,8 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'miniGameTrackingParameter' => 'mini_game_tracking_parameter',
-        'miniGameOpenlink' => 'mini_game_openlink',
-        'miniGameOpenlinkPageSpec' => 'mini_game_openlink_page_spec'
+        'landingPageType' => 'landing_page_type',
+        'landingPageId' => 'landing_page_id'
     ];
 
     /**
@@ -112,9 +109,8 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'miniGameTrackingParameter' => 'setMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'setMiniGameOpenlink',
-        'miniGameOpenlinkPageSpec' => 'setMiniGameOpenlinkPageSpec'
+        'landingPageType' => 'setLandingPageType',
+        'landingPageId' => 'setLandingPageId'
     ];
 
     /**
@@ -123,9 +119,8 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'miniGameTrackingParameter' => 'getMiniGameTrackingParameter',
-        'miniGameOpenlink' => 'getMiniGameOpenlink',
-        'miniGameOpenlinkPageSpec' => 'getMiniGameOpenlinkPageSpec'
+        'landingPageType' => 'getLandingPageType',
+        'landingPageId' => 'getLandingPageId'
     ];
 
     /**
@@ -188,9 +183,8 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['miniGameTrackingParameter'] = isset($data['miniGameTrackingParameter']) ? $data['miniGameTrackingParameter'] : null;
-        $this->container['miniGameOpenlink'] = isset($data['miniGameOpenlink']) ? $data['miniGameOpenlink'] : null;
-        $this->container['miniGameOpenlinkPageSpec'] = isset($data['miniGameOpenlinkPageSpec']) ? $data['miniGameOpenlinkPageSpec'] : null;
+        $this->container['landingPageType'] = isset($data['landingPageType']) ? $data['landingPageType'] : null;
+        $this->container['landingPageId'] = isset($data['landingPageId']) ? $data['landingPageId'] : null;
     }
 
     /**
@@ -218,73 +212,49 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets miniGameTrackingParameter
+     * Gets landingPageType
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\LandingPageType|mixed
      */
-    public function getMiniGameTrackingParameter()
+    public function getLandingPageType()
     {
-        return $this->container['miniGameTrackingParameter'];
+        return $this->container['landingPageType'];
     }
 
     /**
-     * Sets miniGameTrackingParameter
+     * Sets landingPageType
      *
-     * @param string|mixed $miniGameTrackingParameter miniGameTrackingParameter
+     * @param \TencentAds\Model\LandingPageType|mixed $landingPageType landingPageType
      *
      * @return $this
      */
-    public function setMiniGameTrackingParameter($miniGameTrackingParameter)
+    public function setLandingPageType($landingPageType)
     {
-        $this->container['miniGameTrackingParameter'] = $miniGameTrackingParameter;
+        $this->container['landingPageType'] = $landingPageType;
 
         return $this;
     }
 
     /**
-     * Gets miniGameOpenlink
+     * Gets landingPageId
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getMiniGameOpenlink()
+    public function getLandingPageId()
     {
-        return $this->container['miniGameOpenlink'];
+        return $this->container['landingPageId'];
     }
 
     /**
-     * Sets miniGameOpenlink
+     * Sets landingPageId
      *
-     * @param string|mixed $miniGameOpenlink miniGameOpenlink
+     * @param int|mixed $landingPageId landingPageId
      *
      * @return $this
      */
-    public function setMiniGameOpenlink($miniGameOpenlink)
+    public function setLandingPageId($landingPageId)
     {
-        $this->container['miniGameOpenlink'] = $miniGameOpenlink;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameOpenlinkPageSpec
-     *
-     * @return \TencentAds\Model\AdCreativeMiniGameOpenlinkPageSpec|mixed
-     */
-    public function getMiniGameOpenlinkPageSpec()
-    {
-        return $this->container['miniGameOpenlinkPageSpec'];
-    }
-
-    /**
-     * Sets miniGameOpenlinkPageSpec
-     *
-     * @param \TencentAds\Model\AdCreativeMiniGameOpenlinkPageSpec|mixed $miniGameOpenlinkPageSpec miniGameOpenlinkPageSpec
-     *
-     * @return $this
-     */
-    public function setMiniGameOpenlinkPageSpec($miniGameOpenlinkPageSpec)
-    {
-        $this->container['miniGameOpenlinkPageSpec'] = $miniGameOpenlinkPageSpec;
+        $this->container['landingPageId'] = $landingPageId;
 
         return $this;
     }

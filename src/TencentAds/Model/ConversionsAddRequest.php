@@ -72,7 +72,8 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'deepBehaviorOptimizationGoal' => '\TencentAds\Model\IntOptimizationGoal',
         'deepWorthOptimizationGoal' => '\TencentAds\Model\ConversionOptimizationGoal',
         'deepWorthAdvancedGoal' => '\TencentAds\Model\ConversionOptimizationGoal',
-        'userActionSetId' => 'int'
+        'userActionSetId' => 'int',
+        'conversionLinkId' => 'int'
     ];
 
     /**
@@ -96,7 +97,8 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'deepBehaviorOptimizationGoal' => null,
         'deepWorthOptimizationGoal' => null,
         'deepWorthAdvancedGoal' => null,
-        'userActionSetId' => 'int64'
+        'userActionSetId' => 'int64',
+        'conversionLinkId' => 'int64'
     ];
 
     /**
@@ -141,7 +143,8 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'deepBehaviorOptimizationGoal' => 'deep_behavior_optimization_goal',
         'deepWorthOptimizationGoal' => 'deep_worth_optimization_goal',
         'deepWorthAdvancedGoal' => 'deep_worth_advanced_goal',
-        'userActionSetId' => 'user_action_set_id'
+        'userActionSetId' => 'user_action_set_id',
+        'conversionLinkId' => 'conversion_link_id'
     ];
 
     /**
@@ -165,7 +168,8 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'deepBehaviorOptimizationGoal' => 'setDeepBehaviorOptimizationGoal',
         'deepWorthOptimizationGoal' => 'setDeepWorthOptimizationGoal',
         'deepWorthAdvancedGoal' => 'setDeepWorthAdvancedGoal',
-        'userActionSetId' => 'setUserActionSetId'
+        'userActionSetId' => 'setUserActionSetId',
+        'conversionLinkId' => 'setConversionLinkId'
     ];
 
     /**
@@ -189,7 +193,8 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'deepBehaviorOptimizationGoal' => 'getDeepBehaviorOptimizationGoal',
         'deepWorthOptimizationGoal' => 'getDeepWorthOptimizationGoal',
         'deepWorthAdvancedGoal' => 'getDeepWorthAdvancedGoal',
-        'userActionSetId' => 'getUserActionSetId'
+        'userActionSetId' => 'getUserActionSetId',
+        'conversionLinkId' => 'getConversionLinkId'
     ];
 
     /**
@@ -268,6 +273,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         $this->container['deepWorthOptimizationGoal'] = isset($data['deepWorthOptimizationGoal']) ? $data['deepWorthOptimizationGoal'] : null;
         $this->container['deepWorthAdvancedGoal'] = isset($data['deepWorthAdvancedGoal']) ? $data['deepWorthAdvancedGoal'] : null;
         $this->container['userActionSetId'] = isset($data['userActionSetId']) ? $data['userActionSetId'] : null;
+        $this->container['conversionLinkId'] = isset($data['conversionLinkId']) ? $data['conversionLinkId'] : null;
     }
 
     /**
@@ -674,6 +680,30 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     public function setUserActionSetId($userActionSetId)
     {
         $this->container['userActionSetId'] = $userActionSetId;
+
+        return $this;
+    }
+
+    /**
+     * Gets conversionLinkId
+     *
+     * @return int|mixed
+     */
+    public function getConversionLinkId()
+    {
+        return $this->container['conversionLinkId'];
+    }
+
+    /**
+     * Sets conversionLinkId
+     *
+     * @param int|mixed $conversionLinkId conversionLinkId
+     *
+     * @return $this
+     */
+    public function setConversionLinkId($conversionLinkId)
+    {
+        $this->container['conversionLinkId'] = $conversionLinkId;
 
         return $this;
     }

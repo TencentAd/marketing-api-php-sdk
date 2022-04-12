@@ -77,7 +77,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectId' => 'string',
         'conversionScene' => '\TencentAds\Model\ConversionScene',
         'ownerId' => 'int',
-        'deepWorthAdvancedGoal' => '\TencentAds\Model\ConversionOptimizationGoal'
+        'deepWorthAdvancedGoal' => '\TencentAds\Model\ConversionOptimizationGoal',
+        'conversionLinkId' => 'int'
     ];
 
     /**
@@ -105,7 +106,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectId' => null,
         'conversionScene' => null,
         'ownerId' => 'int64',
-        'deepWorthAdvancedGoal' => null
+        'deepWorthAdvancedGoal' => null,
+        'conversionLinkId' => 'int64'
     ];
 
     /**
@@ -154,7 +156,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectId' => 'promoted_object_id',
         'conversionScene' => 'conversion_scene',
         'ownerId' => 'owner_id',
-        'deepWorthAdvancedGoal' => 'deep_worth_advanced_goal'
+        'deepWorthAdvancedGoal' => 'deep_worth_advanced_goal',
+        'conversionLinkId' => 'conversion_link_id'
     ];
 
     /**
@@ -182,7 +185,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectId' => 'setPromotedObjectId',
         'conversionScene' => 'setConversionScene',
         'ownerId' => 'setOwnerId',
-        'deepWorthAdvancedGoal' => 'setDeepWorthAdvancedGoal'
+        'deepWorthAdvancedGoal' => 'setDeepWorthAdvancedGoal',
+        'conversionLinkId' => 'setConversionLinkId'
     ];
 
     /**
@@ -210,7 +214,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectId' => 'getPromotedObjectId',
         'conversionScene' => 'getConversionScene',
         'ownerId' => 'getOwnerId',
-        'deepWorthAdvancedGoal' => 'getDeepWorthAdvancedGoal'
+        'deepWorthAdvancedGoal' => 'getDeepWorthAdvancedGoal',
+        'conversionLinkId' => 'getConversionLinkId'
     ];
 
     /**
@@ -293,6 +298,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['conversionScene'] = isset($data['conversionScene']) ? $data['conversionScene'] : null;
         $this->container['ownerId'] = isset($data['ownerId']) ? $data['ownerId'] : null;
         $this->container['deepWorthAdvancedGoal'] = isset($data['deepWorthAdvancedGoal']) ? $data['deepWorthAdvancedGoal'] : null;
+        $this->container['conversionLinkId'] = isset($data['conversionLinkId']) ? $data['conversionLinkId'] : null;
     }
 
     /**
@@ -795,6 +801,30 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     public function setDeepWorthAdvancedGoal($deepWorthAdvancedGoal)
     {
         $this->container['deepWorthAdvancedGoal'] = $deepWorthAdvancedGoal;
+
+        return $this;
+    }
+
+    /**
+     * Gets conversionLinkId
+     *
+     * @return int|mixed
+     */
+    public function getConversionLinkId()
+    {
+        return $this->container['conversionLinkId'];
+    }
+
+    /**
+     * Sets conversionLinkId
+     *
+     * @param int|mixed $conversionLinkId conversionLinkId
+     *
+     * @return $this
+     */
+    public function setConversionLinkId($conversionLinkId)
+    {
+        $this->container['conversionLinkId'] = $conversionLinkId;
 
         return $this;
     }
