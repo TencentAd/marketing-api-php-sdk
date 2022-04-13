@@ -93,7 +93,7 @@ class PagesApi
      * 获取落地页列表
      *
      * @param  int|mixed $accountId accountId (required)
-     * @param  string|mixed $promotedObjectType promotedObjectType (required)
+     * @param  string|mixed $promotedObjectType promotedObjectType (optional)
      * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering (optional)
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
@@ -103,7 +103,7 @@ class PagesApi
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\PagesGetResponse|mixed
      */
-    public function pagesGet($accountId, $promotedObjectType, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function pagesGet($accountId, $promotedObjectType = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         list($response) = $this->pagesGetWithHttpInfo($accountId, $promotedObjectType, $filtering, $page, $pageSize, $fields);
         return $response;
@@ -115,7 +115,7 @@ class PagesApi
      * 获取落地页列表
      *
      * @param  int|mixed $accountId (required)
-     * @param  string|mixed $promotedObjectType (required)
+     * @param  string|mixed $promotedObjectType (optional)
      * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
@@ -125,7 +125,7 @@ class PagesApi
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\PagesGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function pagesGetWithHttpInfo($accountId, $promotedObjectType, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function pagesGetWithHttpInfo($accountId, $promotedObjectType = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\PagesGetResponse';
         $request = $this->pagesGetRequest($accountId, $promotedObjectType, $filtering, $page, $pageSize, $fields);
@@ -195,7 +195,7 @@ class PagesApi
      * 获取落地页列表
      *
      * @param  int|mixed $accountId (required)
-     * @param  string|mixed $promotedObjectType (required)
+     * @param  string|mixed $promotedObjectType (optional)
      * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
@@ -204,7 +204,7 @@ class PagesApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function pagesGetAsync($accountId, $promotedObjectType, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function pagesGetAsync($accountId, $promotedObjectType = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         return $this->pagesGetAsyncWithHttpInfo($accountId, $promotedObjectType, $filtering, $page, $pageSize, $fields)
             ->then(
@@ -220,7 +220,7 @@ class PagesApi
      * 获取落地页列表
      *
      * @param  int|mixed $accountId (required)
-     * @param  string|mixed $promotedObjectType (required)
+     * @param  string|mixed $promotedObjectType (optional)
      * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
@@ -229,7 +229,7 @@ class PagesApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function pagesGetAsyncWithHttpInfo($accountId, $promotedObjectType, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function pagesGetAsyncWithHttpInfo($accountId, $promotedObjectType = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\PagesGetResponse';
         $request = $this->pagesGetRequest($accountId, $promotedObjectType, $filtering, $page, $pageSize, $fields);
@@ -275,7 +275,7 @@ class PagesApi
      * Create request for operation 'pagesGet'
      *
      * @param  int|mixed $accountId (required)
-     * @param  string|mixed $promotedObjectType (required)
+     * @param  string|mixed $promotedObjectType (optional)
      * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
@@ -284,18 +284,12 @@ class PagesApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function pagesGetRequest($accountId, $promotedObjectType, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    protected function pagesGetRequest($accountId, $promotedObjectType = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
             throw new \InvalidArgumentException(
                 'Missing the required parameter $accountId when calling pagesGet'
-            );
-        }
-        // verify the required parameter 'promotedObjectType' is set
-        if ($promotedObjectType === null || (is_array($promotedObjectType) && count($promotedObjectType) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $promotedObjectType when calling pagesGet'
             );
         }
 
