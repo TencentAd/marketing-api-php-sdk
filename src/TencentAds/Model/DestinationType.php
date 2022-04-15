@@ -82,6 +82,7 @@ class DestinationType
     const WECHAT_MOMENTS_SUBSCRIPTION = 'PAGE_TYPE_WECHAT_MOMENTS_SUBSCRIPTION';
     const WECHAT_RED_PACKET_COVER = 'PAGE_TYPE_WECHAT_RED_PACKET_COVER';
     const WECHAT_VIDEO_TOPIC = 'PAGE_TYPE_WECHAT_VIDEO_TOPIC';
+    const CHANNELS_HALF_CARD = 'PAGE_TYPE_CHANNELS_HALF_CARD';
     
     /**
      * Gets allowable values of the enum
@@ -128,6 +129,7 @@ class DestinationType
             self::WECHAT_MOMENTS_SUBSCRIPTION,
             self::WECHAT_RED_PACKET_COVER,
             self::WECHAT_VIDEO_TOPIC,
+            self::CHANNELS_HALF_CARD,
         ];
     }
 }
