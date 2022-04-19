@@ -130,7 +130,8 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'chosenButton' => '\TencentAds\Model\ChosenButton',
         'livingDescStruct' => '\TencentAds\Model\AdCreativeLivingDescStruct',
         'floatingZoneStruct' => '\TencentAds\Model\FloatingZone',
-        'canvasShareImage' => 'string'
+        'canvasShareImage' => 'string',
+        'wegameInfoSpec' => '\TencentAds\Model\WegameInfoSpec'
     ];
 
     /**
@@ -211,7 +212,8 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'chosenButton' => null,
         'livingDescStruct' => null,
         'floatingZoneStruct' => null,
-        'canvasShareImage' => null
+        'canvasShareImage' => null,
+        'wegameInfoSpec' => null
     ];
 
     /**
@@ -313,7 +315,8 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'chosenButton' => 'chosen_button',
         'livingDescStruct' => 'living_desc_struct',
         'floatingZoneStruct' => 'floating_zone_struct',
-        'canvasShareImage' => 'canvas_share_image'
+        'canvasShareImage' => 'canvas_share_image',
+        'wegameInfoSpec' => 'wegame_info_spec'
     ];
 
     /**
@@ -394,7 +397,8 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'chosenButton' => 'setChosenButton',
         'livingDescStruct' => 'setLivingDescStruct',
         'floatingZoneStruct' => 'setFloatingZoneStruct',
-        'canvasShareImage' => 'setCanvasShareImage'
+        'canvasShareImage' => 'setCanvasShareImage',
+        'wegameInfoSpec' => 'setWegameInfoSpec'
     ];
 
     /**
@@ -475,7 +479,8 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'chosenButton' => 'getChosenButton',
         'livingDescStruct' => 'getLivingDescStruct',
         'floatingZoneStruct' => 'getFloatingZoneStruct',
-        'canvasShareImage' => 'getCanvasShareImage'
+        'canvasShareImage' => 'getCanvasShareImage',
+        'wegameInfoSpec' => 'getWegameInfoSpec'
     ];
 
     /**
@@ -611,6 +616,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         $this->container['livingDescStruct'] = isset($data['livingDescStruct']) ? $data['livingDescStruct'] : null;
         $this->container['floatingZoneStruct'] = isset($data['floatingZoneStruct']) ? $data['floatingZoneStruct'] : null;
         $this->container['canvasShareImage'] = isset($data['canvasShareImage']) ? $data['canvasShareImage'] : null;
+        $this->container['wegameInfoSpec'] = isset($data['wegameInfoSpec']) ? $data['wegameInfoSpec'] : null;
     }
 
     /**
@@ -2385,6 +2391,30 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
     public function setCanvasShareImage($canvasShareImage)
     {
         $this->container['canvasShareImage'] = $canvasShareImage;
+
+        return $this;
+    }
+
+    /**
+     * Gets wegameInfoSpec
+     *
+     * @return \TencentAds\Model\WegameInfoSpec|mixed
+     */
+    public function getWegameInfoSpec()
+    {
+        return $this->container['wegameInfoSpec'];
+    }
+
+    /**
+     * Sets wegameInfoSpec
+     *
+     * @param \TencentAds\Model\WegameInfoSpec|mixed $wegameInfoSpec wegameInfoSpec
+     *
+     * @return $this
+     */
+    public function setWegameInfoSpec($wegameInfoSpec)
+    {
+        $this->container['wegameInfoSpec'] = $wegameInfoSpec;
 
         return $this;
     }

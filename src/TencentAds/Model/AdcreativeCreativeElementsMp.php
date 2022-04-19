@@ -105,7 +105,8 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'leftCanvas' => 'string',
         'rightCanvas' => 'string',
         'floatingZoneStruct' => '\TencentAds\Model\FloatingZone',
-        'canvasShareImage' => 'string'
+        'canvasShareImage' => 'string',
+        'wegameInfoSpec' => '\TencentAds\Model\WegameInfoSpec'
     ];
 
     /**
@@ -161,7 +162,8 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'leftCanvas' => null,
         'rightCanvas' => null,
         'floatingZoneStruct' => null,
-        'canvasShareImage' => null
+        'canvasShareImage' => null,
+        'wegameInfoSpec' => null
     ];
 
     /**
@@ -238,7 +240,8 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'leftCanvas' => 'left_canvas',
         'rightCanvas' => 'right_canvas',
         'floatingZoneStruct' => 'floating_zone_struct',
-        'canvasShareImage' => 'canvas_share_image'
+        'canvasShareImage' => 'canvas_share_image',
+        'wegameInfoSpec' => 'wegame_info_spec'
     ];
 
     /**
@@ -294,7 +297,8 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'leftCanvas' => 'setLeftCanvas',
         'rightCanvas' => 'setRightCanvas',
         'floatingZoneStruct' => 'setFloatingZoneStruct',
-        'canvasShareImage' => 'setCanvasShareImage'
+        'canvasShareImage' => 'setCanvasShareImage',
+        'wegameInfoSpec' => 'setWegameInfoSpec'
     ];
 
     /**
@@ -350,7 +354,8 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'leftCanvas' => 'getLeftCanvas',
         'rightCanvas' => 'getRightCanvas',
         'floatingZoneStruct' => 'getFloatingZoneStruct',
-        'canvasShareImage' => 'getCanvasShareImage'
+        'canvasShareImage' => 'getCanvasShareImage',
+        'wegameInfoSpec' => 'getWegameInfoSpec'
     ];
 
     /**
@@ -461,6 +466,7 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         $this->container['rightCanvas'] = isset($data['rightCanvas']) ? $data['rightCanvas'] : null;
         $this->container['floatingZoneStruct'] = isset($data['floatingZoneStruct']) ? $data['floatingZoneStruct'] : null;
         $this->container['canvasShareImage'] = isset($data['canvasShareImage']) ? $data['canvasShareImage'] : null;
+        $this->container['wegameInfoSpec'] = isset($data['wegameInfoSpec']) ? $data['wegameInfoSpec'] : null;
     }
 
     /**
@@ -1635,6 +1641,30 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
     public function setCanvasShareImage($canvasShareImage)
     {
         $this->container['canvasShareImage'] = $canvasShareImage;
+
+        return $this;
+    }
+
+    /**
+     * Gets wegameInfoSpec
+     *
+     * @return \TencentAds\Model\WegameInfoSpec|mixed
+     */
+    public function getWegameInfoSpec()
+    {
+        return $this->container['wegameInfoSpec'];
+    }
+
+    /**
+     * Sets wegameInfoSpec
+     *
+     * @param \TencentAds\Model\WegameInfoSpec|mixed $wegameInfoSpec wegameInfoSpec
+     *
+     * @return $this
+     */
+    public function setWegameInfoSpec($wegameInfoSpec)
+    {
+        $this->container['wegameInfoSpec'] = $wegameInfoSpec;
 
         return $this;
     }
