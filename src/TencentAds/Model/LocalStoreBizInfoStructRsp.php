@@ -70,7 +70,8 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         'thirdCategoryName' => 'string',
         'fourthCategoryName' => 'string',
         'peakPeriod' => '\TencentAds\Model\PeakPeriod[]',
-        'openingStatus' => '\TencentAds\Model\LocalStoreOpeningStatus'
+        'openingStatus' => '\TencentAds\Model\LocalStoreOpeningStatus',
+        'level' => '\TencentAds\Model\LocalStoreLevel'
     ];
 
     /**
@@ -91,7 +92,8 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         'thirdCategoryName' => null,
         'fourthCategoryName' => null,
         'peakPeriod' => null,
-        'openingStatus' => null
+        'openingStatus' => null,
+        'level' => null
     ];
 
     /**
@@ -133,7 +135,8 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         'thirdCategoryName' => 'third_category_name',
         'fourthCategoryName' => 'fourth_category_name',
         'peakPeriod' => 'peak_period',
-        'openingStatus' => 'opening_status'
+        'openingStatus' => 'opening_status',
+        'level' => 'level'
     ];
 
     /**
@@ -154,7 +157,8 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         'thirdCategoryName' => 'setThirdCategoryName',
         'fourthCategoryName' => 'setFourthCategoryName',
         'peakPeriod' => 'setPeakPeriod',
-        'openingStatus' => 'setOpeningStatus'
+        'openingStatus' => 'setOpeningStatus',
+        'level' => 'setLevel'
     ];
 
     /**
@@ -175,7 +179,8 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         'thirdCategoryName' => 'getThirdCategoryName',
         'fourthCategoryName' => 'getFourthCategoryName',
         'peakPeriod' => 'getPeakPeriod',
-        'openingStatus' => 'getOpeningStatus'
+        'openingStatus' => 'getOpeningStatus',
+        'level' => 'getLevel'
     ];
 
     /**
@@ -251,6 +256,7 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         $this->container['fourthCategoryName'] = isset($data['fourthCategoryName']) ? $data['fourthCategoryName'] : null;
         $this->container['peakPeriod'] = isset($data['peakPeriod']) ? $data['peakPeriod'] : null;
         $this->container['openingStatus'] = isset($data['openingStatus']) ? $data['openingStatus'] : null;
+        $this->container['level'] = isset($data['level']) ? $data['level'] : null;
     }
 
     /**
@@ -585,6 +591,30 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
     public function setOpeningStatus($openingStatus)
     {
         $this->container['openingStatus'] = $openingStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets level
+     *
+     * @return \TencentAds\Model\LocalStoreLevel|mixed
+     */
+    public function getLevel()
+    {
+        return $this->container['level'];
+    }
+
+    /**
+     * Sets level
+     *
+     * @param \TencentAds\Model\LocalStoreLevel|mixed $level level
+     *
+     * @return $this
+     */
+    public function setLevel($level)
+    {
+        $this->container['level'] = $level;
 
         return $this;
     }

@@ -112,6 +112,17 @@ class ActionType
     const APP_MSDK_ADCOST = 'APP_MSDK_ADCOST';
     const LIVE_STREAM = 'LIVE_STREAM';
     const SCANCODE_WX = 'SCANCODE_WX';
+    const STAY_PAY_7 = 'STAY_PAY_7';
+    const STAY_PAY_15 = 'STAY_PAY_15';
+    const STAY_PAY_30 = 'STAY_PAY_30';
+    const INSURANCE_PAY = 'INSURANCE_PAY';
+    const RESERVATION_CHECK = 'RESERVATION_CHECK';
+    const PARTICIPATED = 'PARTICIPATED';
+    const COMPLETED = 'COMPLETED';
+    const REGULAR_PRICE_COURSE = 'REGULAR_PRICE_COURSE';
+    const DROP_OUT = 'DROP_OUT';
+    const CONFIRM_DELIVERY_ORDER = 'CONFIRM_DELIVERY_ORDER';
+    const CANCEL_DELIVERY_ORDER = 'CANCEL_DELIVERY_ORDER';
     const AD_CLICK = 'AD_CLICK';
     const AD_IMPRESSION = 'AD_IMPRESSION';
     
@@ -190,6 +201,17 @@ class ActionType
             self::APP_MSDK_ADCOST,
             self::LIVE_STREAM,
             self::SCANCODE_WX,
+            self::STAY_PAY_7,
+            self::STAY_PAY_15,
+            self::STAY_PAY_30,
+            self::INSURANCE_PAY,
+            self::RESERVATION_CHECK,
+            self::PARTICIPATED,
+            self::COMPLETED,
+            self::REGULAR_PRICE_COURSE,
+            self::DROP_OUT,
+            self::CONFIRM_DELIVERY_ORDER,
+            self::CANCEL_DELIVERY_ORDER,
             self::AD_CLICK,
             self::AD_IMPRESSION,
         ];

@@ -71,7 +71,8 @@ class LocalStoreBizInfoStruct implements ModelInterface, ArrayAccess
         'fourthCategoryName' => 'string',
         'peakPeriod' => '\TencentAds\Model\PeakPeriod[]',
         'openingStatus' => '\TencentAds\Model\LocalStoreOpeningStatus',
-        'star' => 'double'
+        'star' => 'double',
+        'level' => '\TencentAds\Model\LocalStoreLevel'
     ];
 
     /**
@@ -93,7 +94,8 @@ class LocalStoreBizInfoStruct implements ModelInterface, ArrayAccess
         'fourthCategoryName' => null,
         'peakPeriod' => null,
         'openingStatus' => null,
-        'star' => 'double'
+        'star' => 'double',
+        'level' => null
     ];
 
     /**
@@ -136,7 +138,8 @@ class LocalStoreBizInfoStruct implements ModelInterface, ArrayAccess
         'fourthCategoryName' => 'fourth_category_name',
         'peakPeriod' => 'peak_period',
         'openingStatus' => 'opening_status',
-        'star' => 'star'
+        'star' => 'star',
+        'level' => 'level'
     ];
 
     /**
@@ -158,7 +161,8 @@ class LocalStoreBizInfoStruct implements ModelInterface, ArrayAccess
         'fourthCategoryName' => 'setFourthCategoryName',
         'peakPeriod' => 'setPeakPeriod',
         'openingStatus' => 'setOpeningStatus',
-        'star' => 'setStar'
+        'star' => 'setStar',
+        'level' => 'setLevel'
     ];
 
     /**
@@ -180,7 +184,8 @@ class LocalStoreBizInfoStruct implements ModelInterface, ArrayAccess
         'fourthCategoryName' => 'getFourthCategoryName',
         'peakPeriod' => 'getPeakPeriod',
         'openingStatus' => 'getOpeningStatus',
-        'star' => 'getStar'
+        'star' => 'getStar',
+        'level' => 'getLevel'
     ];
 
     /**
@@ -257,6 +262,7 @@ class LocalStoreBizInfoStruct implements ModelInterface, ArrayAccess
         $this->container['peakPeriod'] = isset($data['peakPeriod']) ? $data['peakPeriod'] : null;
         $this->container['openingStatus'] = isset($data['openingStatus']) ? $data['openingStatus'] : null;
         $this->container['star'] = isset($data['star']) ? $data['star'] : null;
+        $this->container['level'] = isset($data['level']) ? $data['level'] : null;
     }
 
     /**
@@ -615,6 +621,30 @@ class LocalStoreBizInfoStruct implements ModelInterface, ArrayAccess
     public function setStar($star)
     {
         $this->container['star'] = $star;
+
+        return $this;
+    }
+
+    /**
+     * Gets level
+     *
+     * @return \TencentAds\Model\LocalStoreLevel|mixed
+     */
+    public function getLevel()
+    {
+        return $this->container['level'];
+    }
+
+    /**
+     * Sets level
+     *
+     * @param \TencentAds\Model\LocalStoreLevel|mixed $level level
+     *
+     * @return $this
+     */
+    public function setLevel($level)
+    {
+        $this->container['level'] = $level;
 
         return $this;
     }

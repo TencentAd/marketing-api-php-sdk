@@ -70,7 +70,9 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'md5Sha256Oaid' => 'string',
         'wechatOpenid' => 'string',
         'wechatUnionid' => 'string',
-        'wechatAppId' => 'string'
+        'wechatAppId' => 'string',
+        'caid' => 'string',
+        'caidVersion' => 'int'
     ];
 
     /**
@@ -91,7 +93,9 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'md5Sha256Oaid' => null,
         'wechatOpenid' => null,
         'wechatUnionid' => null,
-        'wechatAppId' => null
+        'wechatAppId' => null,
+        'caid' => null,
+        'caidVersion' => 'int64'
     ];
 
     /**
@@ -133,7 +137,9 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'md5Sha256Oaid' => 'md5_sha256_oaid',
         'wechatOpenid' => 'wechat_openid',
         'wechatUnionid' => 'wechat_unionid',
-        'wechatAppId' => 'wechat_app_id'
+        'wechatAppId' => 'wechat_app_id',
+        'caid' => 'caid',
+        'caidVersion' => 'caid_version'
     ];
 
     /**
@@ -154,7 +160,9 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'md5Sha256Oaid' => 'setMd5Sha256Oaid',
         'wechatOpenid' => 'setWechatOpenid',
         'wechatUnionid' => 'setWechatUnionid',
-        'wechatAppId' => 'setWechatAppId'
+        'wechatAppId' => 'setWechatAppId',
+        'caid' => 'setCaid',
+        'caidVersion' => 'setCaidVersion'
     ];
 
     /**
@@ -175,7 +183,9 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'md5Sha256Oaid' => 'getMd5Sha256Oaid',
         'wechatOpenid' => 'getWechatOpenid',
         'wechatUnionid' => 'getWechatUnionid',
-        'wechatAppId' => 'getWechatAppId'
+        'wechatAppId' => 'getWechatAppId',
+        'caid' => 'getCaid',
+        'caidVersion' => 'getCaidVersion'
     ];
 
     /**
@@ -251,6 +261,8 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         $this->container['wechatOpenid'] = isset($data['wechatOpenid']) ? $data['wechatOpenid'] : null;
         $this->container['wechatUnionid'] = isset($data['wechatUnionid']) ? $data['wechatUnionid'] : null;
         $this->container['wechatAppId'] = isset($data['wechatAppId']) ? $data['wechatAppId'] : null;
+        $this->container['caid'] = isset($data['caid']) ? $data['caid'] : null;
+        $this->container['caidVersion'] = isset($data['caidVersion']) ? $data['caidVersion'] : null;
     }
 
     /**
@@ -585,6 +597,54 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     public function setWechatAppId($wechatAppId)
     {
         $this->container['wechatAppId'] = $wechatAppId;
+
+        return $this;
+    }
+
+    /**
+     * Gets caid
+     *
+     * @return string|mixed
+     */
+    public function getCaid()
+    {
+        return $this->container['caid'];
+    }
+
+    /**
+     * Sets caid
+     *
+     * @param string|mixed $caid caid
+     *
+     * @return $this
+     */
+    public function setCaid($caid)
+    {
+        $this->container['caid'] = $caid;
+
+        return $this;
+    }
+
+    /**
+     * Gets caidVersion
+     *
+     * @return int|mixed
+     */
+    public function getCaidVersion()
+    {
+        return $this->container['caidVersion'];
+    }
+
+    /**
+     * Sets caidVersion
+     *
+     * @param int|mixed $caidVersion caidVersion
+     *
+     * @return $this
+     */
+    public function setCaidVersion($caidVersion)
+    {
+        $this->container['caidVersion'] = $caidVersion;
 
         return $this;
     }
