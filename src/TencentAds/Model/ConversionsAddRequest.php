@@ -73,9 +73,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'deepWorthOptimizationGoal' => '\TencentAds\Model\ConversionOptimizationGoal',
         'deepWorthAdvancedGoal' => '\TencentAds\Model\ConversionOptimizationGoal',
         'userActionSetId' => 'int',
-        'conversionLinkId' => 'int',
-        'impressionFeedbackUrl' => 'string',
-        'attributionWindow' => 'int'
+        'conversionLinkId' => 'int'
     ];
 
     /**
@@ -100,9 +98,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'deepWorthOptimizationGoal' => null,
         'deepWorthAdvancedGoal' => null,
         'userActionSetId' => 'int64',
-        'conversionLinkId' => 'int64',
-        'impressionFeedbackUrl' => null,
-        'attributionWindow' => 'int64'
+        'conversionLinkId' => 'int64'
     ];
 
     /**
@@ -148,9 +144,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'deepWorthOptimizationGoal' => 'deep_worth_optimization_goal',
         'deepWorthAdvancedGoal' => 'deep_worth_advanced_goal',
         'userActionSetId' => 'user_action_set_id',
-        'conversionLinkId' => 'conversion_link_id',
-        'impressionFeedbackUrl' => 'impression_feedback_url',
-        'attributionWindow' => 'attribution_window'
+        'conversionLinkId' => 'conversion_link_id'
     ];
 
     /**
@@ -175,9 +169,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'deepWorthOptimizationGoal' => 'setDeepWorthOptimizationGoal',
         'deepWorthAdvancedGoal' => 'setDeepWorthAdvancedGoal',
         'userActionSetId' => 'setUserActionSetId',
-        'conversionLinkId' => 'setConversionLinkId',
-        'impressionFeedbackUrl' => 'setImpressionFeedbackUrl',
-        'attributionWindow' => 'setAttributionWindow'
+        'conversionLinkId' => 'setConversionLinkId'
     ];
 
     /**
@@ -202,9 +194,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'deepWorthOptimizationGoal' => 'getDeepWorthOptimizationGoal',
         'deepWorthAdvancedGoal' => 'getDeepWorthAdvancedGoal',
         'userActionSetId' => 'getUserActionSetId',
-        'conversionLinkId' => 'getConversionLinkId',
-        'impressionFeedbackUrl' => 'getImpressionFeedbackUrl',
-        'attributionWindow' => 'getAttributionWindow'
+        'conversionLinkId' => 'getConversionLinkId'
     ];
 
     /**
@@ -284,8 +274,6 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         $this->container['deepWorthAdvancedGoal'] = isset($data['deepWorthAdvancedGoal']) ? $data['deepWorthAdvancedGoal'] : null;
         $this->container['userActionSetId'] = isset($data['userActionSetId']) ? $data['userActionSetId'] : null;
         $this->container['conversionLinkId'] = isset($data['conversionLinkId']) ? $data['conversionLinkId'] : null;
-        $this->container['impressionFeedbackUrl'] = isset($data['impressionFeedbackUrl']) ? $data['impressionFeedbackUrl'] : null;
-        $this->container['attributionWindow'] = isset($data['attributionWindow']) ? $data['attributionWindow'] : null;
     }
 
     /**
@@ -716,54 +704,6 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     public function setConversionLinkId($conversionLinkId)
     {
         $this->container['conversionLinkId'] = $conversionLinkId;
-
-        return $this;
-    }
-
-    /**
-     * Gets impressionFeedbackUrl
-     *
-     * @return string|mixed
-     */
-    public function getImpressionFeedbackUrl()
-    {
-        return $this->container['impressionFeedbackUrl'];
-    }
-
-    /**
-     * Sets impressionFeedbackUrl
-     *
-     * @param string|mixed $impressionFeedbackUrl impressionFeedbackUrl
-     *
-     * @return $this
-     */
-    public function setImpressionFeedbackUrl($impressionFeedbackUrl)
-    {
-        $this->container['impressionFeedbackUrl'] = $impressionFeedbackUrl;
-
-        return $this;
-    }
-
-    /**
-     * Gets attributionWindow
-     *
-     * @return int|mixed
-     */
-    public function getAttributionWindow()
-    {
-        return $this->container['attributionWindow'];
-    }
-
-    /**
-     * Sets attributionWindow
-     *
-     * @param int|mixed $attributionWindow attributionWindow
-     *
-     * @return $this
-     */
-    public function setAttributionWindow($attributionWindow)
-    {
-        $this->container['attributionWindow'] = $attributionWindow;
 
         return $this;
     }
