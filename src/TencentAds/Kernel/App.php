@@ -89,6 +89,10 @@ use TencentAds\Container\LocalStoresApiContainer;
 use TencentAds\Container\LocalStoresCategoriesApiContainer;
 use TencentAds\Container\LocalStoresSearchInfoApiContainer;
 use TencentAds\Container\LocalStoresWxpayMerchantsApiContainer;
+use TencentAds\Container\MergeFundTypeDailyBalanceReportApiContainer;
+use TencentAds\Container\MergeFundTypeFundStatementsDetailedApiContainer;
+use TencentAds\Container\MergeFundTypeFundsApiContainer;
+use TencentAds\Container\MergeFundTypeSubcustomerTransferApiContainer;
 use TencentAds\Container\OauthApiContainer;
 use TencentAds\Container\OptimizationGoalPermissionsApiContainer;
 use TencentAds\Container\OuterCluesApiContainer;
@@ -427,6 +431,18 @@ class App
 
     /** @var LocalStoresWxpayMerchantsApiContainer */
     public $localStoresWxpayMerchantsApiContainer;
+
+    /** @var MergeFundTypeDailyBalanceReportApiContainer */
+    public $mergeFundTypeDailyBalanceReportApiContainer;
+
+    /** @var MergeFundTypeFundStatementsDetailedApiContainer */
+    public $mergeFundTypeFundStatementsDetailedApiContainer;
+
+    /** @var MergeFundTypeFundsApiContainer */
+    public $mergeFundTypeFundsApiContainer;
+
+    /** @var MergeFundTypeSubcustomerTransferApiContainer */
+    public $mergeFundTypeSubcustomerTransferApiContainer;
 
     /** @var OauthApiContainer */
     public $oauthApiContainer;
@@ -1872,6 +1888,62 @@ class App
             $this->localStoresWxpayMerchantsApiContainer = $container;
         }
         return $this->localStoresWxpayMerchantsApiContainer;
+    }
+
+
+    /**
+     * @return MergeFundTypeDailyBalanceReportApiContainer
+     */
+    public function mergeFundTypeDailyBalanceReport()
+    {
+        if (empty($this->mergeFundTypeDailyBalanceReportApiContainer)) {
+            $container = new MergeFundTypeDailyBalanceReportApiContainer();
+            $container->init($this, $this->getClient());
+            $this->mergeFundTypeDailyBalanceReportApiContainer = $container;
+        }
+        return $this->mergeFundTypeDailyBalanceReportApiContainer;
+    }
+
+
+    /**
+     * @return MergeFundTypeFundStatementsDetailedApiContainer
+     */
+    public function mergeFundTypeFundStatementsDetailed()
+    {
+        if (empty($this->mergeFundTypeFundStatementsDetailedApiContainer)) {
+            $container = new MergeFundTypeFundStatementsDetailedApiContainer();
+            $container->init($this, $this->getClient());
+            $this->mergeFundTypeFundStatementsDetailedApiContainer = $container;
+        }
+        return $this->mergeFundTypeFundStatementsDetailedApiContainer;
+    }
+
+
+    /**
+     * @return MergeFundTypeFundsApiContainer
+     */
+    public function mergeFundTypeFunds()
+    {
+        if (empty($this->mergeFundTypeFundsApiContainer)) {
+            $container = new MergeFundTypeFundsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->mergeFundTypeFundsApiContainer = $container;
+        }
+        return $this->mergeFundTypeFundsApiContainer;
+    }
+
+
+    /**
+     * @return MergeFundTypeSubcustomerTransferApiContainer
+     */
+    public function mergeFundTypeSubcustomerTransfer()
+    {
+        if (empty($this->mergeFundTypeSubcustomerTransferApiContainer)) {
+            $container = new MergeFundTypeSubcustomerTransferApiContainer();
+            $container->init($this, $this->getClient());
+            $this->mergeFundTypeSubcustomerTransferApiContainer = $container;
+        }
+        return $this->mergeFundTypeSubcustomerTransferApiContainer;
     }
 
 
