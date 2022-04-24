@@ -253,7 +253,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatLocalPayCount' => 'int',
         'wechatLocalPayuserCount' => 'int',
         'wechatLocalPayAmount' => 'int',
-        'wechatLocalPayRoi' => 'int',
+        'wechatLocalPayRoi' => 'double',
         'firstPayRate' => 'double',
         'preCreWeb' => 'int',
         'preCreApp' => 'int',
@@ -640,7 +640,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameFirstDayPayingPlaRoi' => 'double',
         'miniGameFirstPayPlaCost' => 'int',
         'miniGamePayD3Roi' => 'double',
-        'miniGamePayD7Roi' => 'int',
+        'miniGamePayD7Roi' => 'double',
         'miniGamePayD14Roi' => 'double',
         'miniGamePayD30Roi' => 'double',
         'miniGamePayD3PlaRoi' => 'double',
@@ -850,7 +850,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'wechatLocalPayCount' => 'int64',
         'wechatLocalPayuserCount' => 'int64',
         'wechatLocalPayAmount' => 'int64',
-        'wechatLocalPayRoi' => 'int64',
+        'wechatLocalPayRoi' => 'double',
         'firstPayRate' => 'double',
         'preCreWeb' => 'int64',
         'preCreApp' => 'int64',
@@ -1237,7 +1237,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameFirstDayPayingPlaRoi' => 'double',
         'miniGameFirstPayPlaCost' => 'int64',
         'miniGamePayD3Roi' => 'double',
-        'miniGamePayD7Roi' => 'int64',
+        'miniGamePayD7Roi' => 'double',
         'miniGamePayD14Roi' => 'double',
         'miniGamePayD30Roi' => 'double',
         'miniGamePayD3PlaRoi' => 'double',
@@ -8416,7 +8416,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets wechatLocalPayRoi
      *
-     * @return int|mixed
+     * @return double|mixed
      */
     public function getWechatLocalPayRoi()
     {
@@ -8426,7 +8426,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets wechatLocalPayRoi
      *
-     * @param int|mixed $wechatLocalPayRoi wechatLocalPayRoi
+     * @param double|mixed $wechatLocalPayRoi wechatLocalPayRoi
      *
      * @return $this
      */
@@ -17704,7 +17704,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets miniGamePayD7Roi
      *
-     * @return int|mixed
+     * @return double|mixed
      */
     public function getMiniGamePayD7Roi()
     {
@@ -17714,7 +17714,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets miniGamePayD7Roi
      *
-     * @param int|mixed $miniGamePayD7Roi miniGamePayD7Roi
+     * @param double|mixed $miniGamePayD7Roi miniGamePayD7Roi
      *
      * @return $this
      */

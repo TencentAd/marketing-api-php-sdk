@@ -67,6 +67,9 @@ class RoleType
     const AGENCY_MDM_TREASURER = 'ROLE_TYPE_AGENCY_MDM_TREASURER';
     const AGENCY_MDM_OBSERVER = 'ROLE_TYPE_AGENCY_MDM_OBSERVER';
     const AGENCY_MDM_OPERATOR = 'ROLE_TYPE_AGENCY_MDM_OPERATOR';
+    const AGENCY_ORBAC = 'ROLE_TYPE_AGENCY_ORBAC';
+    const AGENCY_DESIGNER = 'ROLE_TYPE_AGENCY_DESIGNER';
+    const SUB_AGENCY_ADMIN = 'ROLE_TYPE_SUB_AGENCY_ADMIN';
     
     /**
      * Gets allowable values of the enum
@@ -98,6 +101,9 @@ class RoleType
             self::AGENCY_MDM_TREASURER,
             self::AGENCY_MDM_OBSERVER,
             self::AGENCY_MDM_OPERATOR,
+            self::AGENCY_ORBAC,
+            self::AGENCY_DESIGNER,
+            self::SUB_AGENCY_ADMIN,
         ];
     }
 }

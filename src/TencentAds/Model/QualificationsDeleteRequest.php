@@ -59,6 +59,7 @@ class QualificationsDeleteRequest implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'qualificationType' => '\TencentAds\Model\QualificationType',
         'qualificationId' => 'int',
+        'qualificationIdList' => 'int[]',
         'accountId' => 'int'
     ];
 
@@ -70,6 +71,7 @@ class QualificationsDeleteRequest implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'qualificationType' => null,
         'qualificationId' => 'int64',
+        'qualificationIdList' => 'int64',
         'accountId' => 'int64'
     ];
 
@@ -102,6 +104,7 @@ class QualificationsDeleteRequest implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'qualificationType' => 'qualification_type',
         'qualificationId' => 'qualification_id',
+        'qualificationIdList' => 'qualification_id_list',
         'accountId' => 'account_id'
     ];
 
@@ -113,6 +116,7 @@ class QualificationsDeleteRequest implements ModelInterface, ArrayAccess
     protected static $setters = [
         'qualificationType' => 'setQualificationType',
         'qualificationId' => 'setQualificationId',
+        'qualificationIdList' => 'setQualificationIdList',
         'accountId' => 'setAccountId'
     ];
 
@@ -124,6 +128,7 @@ class QualificationsDeleteRequest implements ModelInterface, ArrayAccess
     protected static $getters = [
         'qualificationType' => 'getQualificationType',
         'qualificationId' => 'getQualificationId',
+        'qualificationIdList' => 'getQualificationIdList',
         'accountId' => 'getAccountId'
     ];
 
@@ -189,6 +194,7 @@ class QualificationsDeleteRequest implements ModelInterface, ArrayAccess
     {
         $this->container['qualificationType'] = isset($data['qualificationType']) ? $data['qualificationType'] : null;
         $this->container['qualificationId'] = isset($data['qualificationId']) ? $data['qualificationId'] : null;
+        $this->container['qualificationIdList'] = isset($data['qualificationIdList']) ? $data['qualificationIdList'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -260,6 +266,30 @@ class QualificationsDeleteRequest implements ModelInterface, ArrayAccess
     public function setQualificationId($qualificationId)
     {
         $this->container['qualificationId'] = $qualificationId;
+
+        return $this;
+    }
+
+    /**
+     * Gets qualificationIdList
+     *
+     * @return int[]|mixed
+     */
+    public function getQualificationIdList()
+    {
+        return $this->container['qualificationIdList'];
+    }
+
+    /**
+     * Sets qualificationIdList
+     *
+     * @param int[]|mixed $qualificationIdList qualificationIdList
+     *
+     * @return $this
+     */
+    public function setQualificationIdList($qualificationIdList)
+    {
+        $this->container['qualificationIdList'] = $qualificationIdList;
 
         return $this;
     }

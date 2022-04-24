@@ -57,7 +57,8 @@ class QualificationsDeleteResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'qualificationId' => 'int'
+        'qualificationId' => 'int',
+        'qualificationIdList' => 'int[]'
     ];
 
     /**
@@ -66,7 +67,8 @@ class QualificationsDeleteResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'qualificationId' => 'int64'
+        'qualificationId' => 'int64',
+        'qualificationIdList' => 'int64'
     ];
 
     /**
@@ -96,7 +98,8 @@ class QualificationsDeleteResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'qualificationId' => 'qualification_id'
+        'qualificationId' => 'qualification_id',
+        'qualificationIdList' => 'qualification_id_list'
     ];
 
     /**
@@ -105,7 +108,8 @@ class QualificationsDeleteResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'qualificationId' => 'setQualificationId'
+        'qualificationId' => 'setQualificationId',
+        'qualificationIdList' => 'setQualificationIdList'
     ];
 
     /**
@@ -114,7 +118,8 @@ class QualificationsDeleteResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'qualificationId' => 'getQualificationId'
+        'qualificationId' => 'getQualificationId',
+        'qualificationIdList' => 'getQualificationIdList'
     ];
 
     /**
@@ -178,6 +183,7 @@ class QualificationsDeleteResponseData implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['qualificationId'] = isset($data['qualificationId']) ? $data['qualificationId'] : null;
+        $this->container['qualificationIdList'] = isset($data['qualificationIdList']) ? $data['qualificationIdList'] : null;
     }
 
     /**
@@ -224,6 +230,30 @@ class QualificationsDeleteResponseData implements ModelInterface, ArrayAccess
     public function setQualificationId($qualificationId)
     {
         $this->container['qualificationId'] = $qualificationId;
+
+        return $this;
+    }
+
+    /**
+     * Gets qualificationIdList
+     *
+     * @return int[]|mixed
+     */
+    public function getQualificationIdList()
+    {
+        return $this->container['qualificationIdList'];
+    }
+
+    /**
+     * Sets qualificationIdList
+     *
+     * @param int[]|mixed $qualificationIdList qualificationIdList
+     *
+     * @return $this
+     */
+    public function setQualificationIdList($qualificationIdList)
+    {
+        $this->container['qualificationIdList'] = $qualificationIdList;
 
         return $this;
     }
