@@ -77,6 +77,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'agencyAccountId' => 'int',
         'operators' => '\TencentAds\Model\AdvertiserOperatorStruct[]',
         'memo' => 'string',
+        'areaCode' => 'int',
         'accountId' => 'int',
         'adQualificationImage' => 'string[]',
         'certificationImage' => 'string',
@@ -115,6 +116,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'agencyAccountId' => 'int64',
         'operators' => null,
         'memo' => null,
+        'areaCode' => 'int64',
         'accountId' => 'int64',
         'adQualificationImage' => null,
         'certificationImage' => null,
@@ -174,6 +176,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'agencyAccountId' => 'agency_account_id',
         'operators' => 'operators',
         'memo' => 'memo',
+        'areaCode' => 'area_code',
         'accountId' => 'account_id',
         'adQualificationImage' => 'ad_qualification_image',
         'certificationImage' => 'certification_image',
@@ -212,6 +215,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'agencyAccountId' => 'setAgencyAccountId',
         'operators' => 'setOperators',
         'memo' => 'setMemo',
+        'areaCode' => 'setAreaCode',
         'accountId' => 'setAccountId',
         'adQualificationImage' => 'setAdQualificationImage',
         'certificationImage' => 'setCertificationImage',
@@ -250,6 +254,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'agencyAccountId' => 'getAgencyAccountId',
         'operators' => 'getOperators',
         'memo' => 'getMemo',
+        'areaCode' => 'getAreaCode',
         'accountId' => 'getAccountId',
         'adQualificationImage' => 'getAdQualificationImage',
         'certificationImage' => 'getCertificationImage',
@@ -342,6 +347,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         $this->container['agencyAccountId'] = isset($data['agencyAccountId']) ? $data['agencyAccountId'] : null;
         $this->container['operators'] = isset($data['operators']) ? $data['operators'] : null;
         $this->container['memo'] = isset($data['memo']) ? $data['memo'] : null;
+        $this->container['areaCode'] = isset($data['areaCode']) ? $data['areaCode'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['adQualificationImage'] = isset($data['adQualificationImage']) ? $data['adQualificationImage'] : null;
         $this->container['certificationImage'] = isset($data['certificationImage']) ? $data['certificationImage'] : null;
@@ -831,6 +837,30 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     public function setMemo($memo)
     {
         $this->container['memo'] = $memo;
+
+        return $this;
+    }
+
+    /**
+     * Gets areaCode
+     *
+     * @return int|mixed
+     */
+    public function getAreaCode()
+    {
+        return $this->container['areaCode'];
+    }
+
+    /**
+     * Sets areaCode
+     *
+     * @param int|mixed $areaCode areaCode
+     *
+     * @return $this
+     */
+    public function setAreaCode($areaCode)
+    {
+        $this->container['areaCode'] = $areaCode;
 
         return $this;
     }

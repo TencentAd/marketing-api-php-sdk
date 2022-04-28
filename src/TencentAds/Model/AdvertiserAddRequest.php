@@ -65,7 +65,8 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
         'corporateImageName' => 'string',
         'contactPersonTelephone' => 'string',
         'contactPersonMobile' => 'string',
-        'certificationNumber' => 'string'
+        'certificationNumber' => 'string',
+        'areaCode' => 'int'
     ];
 
     /**
@@ -82,7 +83,8 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
         'corporateImageName' => null,
         'contactPersonTelephone' => null,
         'contactPersonMobile' => null,
-        'certificationNumber' => null
+        'certificationNumber' => null,
+        'areaCode' => 'int64'
     ];
 
     /**
@@ -120,7 +122,8 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
         'corporateImageName' => 'corporate_image_name',
         'contactPersonTelephone' => 'contact_person_telephone',
         'contactPersonMobile' => 'contact_person_mobile',
-        'certificationNumber' => 'certification_number'
+        'certificationNumber' => 'certification_number',
+        'areaCode' => 'area_code'
     ];
 
     /**
@@ -137,7 +140,8 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
         'corporateImageName' => 'setCorporateImageName',
         'contactPersonTelephone' => 'setContactPersonTelephone',
         'contactPersonMobile' => 'setContactPersonMobile',
-        'certificationNumber' => 'setCertificationNumber'
+        'certificationNumber' => 'setCertificationNumber',
+        'areaCode' => 'setAreaCode'
     ];
 
     /**
@@ -154,7 +158,8 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
         'corporateImageName' => 'getCorporateImageName',
         'contactPersonTelephone' => 'getContactPersonTelephone',
         'contactPersonMobile' => 'getContactPersonMobile',
-        'certificationNumber' => 'getCertificationNumber'
+        'certificationNumber' => 'getCertificationNumber',
+        'areaCode' => 'getAreaCode'
     ];
 
     /**
@@ -226,6 +231,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
         $this->container['contactPersonTelephone'] = isset($data['contactPersonTelephone']) ? $data['contactPersonTelephone'] : null;
         $this->container['contactPersonMobile'] = isset($data['contactPersonMobile']) ? $data['contactPersonMobile'] : null;
         $this->container['certificationNumber'] = isset($data['certificationNumber']) ? $data['certificationNumber'] : null;
+        $this->container['areaCode'] = isset($data['areaCode']) ? $data['areaCode'] : null;
     }
 
     /**
@@ -464,6 +470,30 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     public function setCertificationNumber($certificationNumber)
     {
         $this->container['certificationNumber'] = $certificationNumber;
+
+        return $this;
+    }
+
+    /**
+     * Gets areaCode
+     *
+     * @return int|mixed
+     */
+    public function getAreaCode()
+    {
+        return $this->container['areaCode'];
+    }
+
+    /**
+     * Sets areaCode
+     *
+     * @param int|mixed $areaCode areaCode
+     *
+     * @return $this
+     */
+    public function setAreaCode($areaCode)
+    {
+        $this->container['areaCode'] = $areaCode;
 
         return $this;
     }

@@ -68,7 +68,8 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
         'contactPersonTelephone' => 'string',
         'contactPersonMobile' => 'string',
         'wechatSpec' => '\TencentAds\Model\MpInfoUpdate',
-        'websites' => '\TencentAds\Model\WebsiteUpdateStruct[]'
+        'websites' => '\TencentAds\Model\WebsiteUpdateStruct[]',
+        'areaCode' => 'int'
     ];
 
     /**
@@ -88,7 +89,8 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
         'contactPersonTelephone' => null,
         'contactPersonMobile' => null,
         'wechatSpec' => null,
-        'websites' => null
+        'websites' => null,
+        'areaCode' => 'int64'
     ];
 
     /**
@@ -129,7 +131,8 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
         'contactPersonTelephone' => 'contact_person_telephone',
         'contactPersonMobile' => 'contact_person_mobile',
         'wechatSpec' => 'wechat_spec',
-        'websites' => 'websites'
+        'websites' => 'websites',
+        'areaCode' => 'area_code'
     ];
 
     /**
@@ -149,7 +152,8 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
         'contactPersonTelephone' => 'setContactPersonTelephone',
         'contactPersonMobile' => 'setContactPersonMobile',
         'wechatSpec' => 'setWechatSpec',
-        'websites' => 'setWebsites'
+        'websites' => 'setWebsites',
+        'areaCode' => 'setAreaCode'
     ];
 
     /**
@@ -169,7 +173,8 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
         'contactPersonTelephone' => 'getContactPersonTelephone',
         'contactPersonMobile' => 'getContactPersonMobile',
         'wechatSpec' => 'getWechatSpec',
-        'websites' => 'getWebsites'
+        'websites' => 'getWebsites',
+        'areaCode' => 'getAreaCode'
     ];
 
     /**
@@ -244,6 +249,7 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['contactPersonMobile'] = isset($data['contactPersonMobile']) ? $data['contactPersonMobile'] : null;
         $this->container['wechatSpec'] = isset($data['wechatSpec']) ? $data['wechatSpec'] : null;
         $this->container['websites'] = isset($data['websites']) ? $data['websites'] : null;
+        $this->container['areaCode'] = isset($data['areaCode']) ? $data['areaCode'] : null;
     }
 
     /**
@@ -554,6 +560,30 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     public function setWebsites($websites)
     {
         $this->container['websites'] = $websites;
+
+        return $this;
+    }
+
+    /**
+     * Gets areaCode
+     *
+     * @return int|mixed
+     */
+    public function getAreaCode()
+    {
+        return $this->container['areaCode'];
+    }
+
+    /**
+     * Sets areaCode
+     *
+     * @param int|mixed $areaCode areaCode
+     *
+     * @return $this
+     */
+    public function setAreaCode($areaCode)
+    {
+        $this->container['areaCode'] = $areaCode;
 
         return $this;
     }
