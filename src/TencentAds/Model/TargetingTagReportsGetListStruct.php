@@ -506,6 +506,9 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'biz7dPurchaseRoi' => 'double',
         'biz15dPurchaseRoi' => 'double',
         'biz30dPurchaseRoi' => 'double',
+        'stayPay7dPv' => 'int',
+        'stayPay15dPv' => 'int',
+        'stayPay30dPv' => 'int',
         'age' => 'string',
         'regionId' => 'int',
         'cityId' => 'int',
@@ -1103,6 +1106,9 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'biz7dPurchaseRoi' => 'double',
         'biz15dPurchaseRoi' => 'double',
         'biz30dPurchaseRoi' => 'double',
+        'stayPay7dPv' => 'int64',
+        'stayPay15dPv' => 'int64',
+        'stayPay30dPv' => 'int64',
         'age' => null,
         'regionId' => 'int64',
         'cityId' => 'int64',
@@ -1721,6 +1727,9 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'biz7dPurchaseRoi' => 'biz_7d_purchase_roi',
         'biz15dPurchaseRoi' => 'biz_15d_purchase_roi',
         'biz30dPurchaseRoi' => 'biz_30d_purchase_roi',
+        'stayPay7dPv' => 'stay_pay_7d_pv',
+        'stayPay15dPv' => 'stay_pay_15d_pv',
+        'stayPay30dPv' => 'stay_pay_30d_pv',
         'age' => 'age',
         'regionId' => 'region_id',
         'cityId' => 'city_id',
@@ -2318,6 +2327,9 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'biz7dPurchaseRoi' => 'setBiz7dPurchaseRoi',
         'biz15dPurchaseRoi' => 'setBiz15dPurchaseRoi',
         'biz30dPurchaseRoi' => 'setBiz30dPurchaseRoi',
+        'stayPay7dPv' => 'setStayPay7dPv',
+        'stayPay15dPv' => 'setStayPay15dPv',
+        'stayPay30dPv' => 'setStayPay30dPv',
         'age' => 'setAge',
         'regionId' => 'setRegionId',
         'cityId' => 'setCityId',
@@ -2915,6 +2927,9 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'biz7dPurchaseRoi' => 'getBiz7dPurchaseRoi',
         'biz15dPurchaseRoi' => 'getBiz15dPurchaseRoi',
         'biz30dPurchaseRoi' => 'getBiz30dPurchaseRoi',
+        'stayPay7dPv' => 'getStayPay7dPv',
+        'stayPay15dPv' => 'getStayPay15dPv',
+        'stayPay30dPv' => 'getStayPay30dPv',
         'age' => 'getAge',
         'regionId' => 'getRegionId',
         'cityId' => 'getCityId',
@@ -3566,6 +3581,9 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['biz7dPurchaseRoi'] = isset($data['biz7dPurchaseRoi']) ? $data['biz7dPurchaseRoi'] : null;
         $this->container['biz15dPurchaseRoi'] = isset($data['biz15dPurchaseRoi']) ? $data['biz15dPurchaseRoi'] : null;
         $this->container['biz30dPurchaseRoi'] = isset($data['biz30dPurchaseRoi']) ? $data['biz30dPurchaseRoi'] : null;
+        $this->container['stayPay7dPv'] = isset($data['stayPay7dPv']) ? $data['stayPay7dPv'] : null;
+        $this->container['stayPay15dPv'] = isset($data['stayPay15dPv']) ? $data['stayPay15dPv'] : null;
+        $this->container['stayPay30dPv'] = isset($data['stayPay30dPv']) ? $data['stayPay30dPv'] : null;
         $this->container['age'] = isset($data['age']) ? $data['age'] : null;
         $this->container['regionId'] = isset($data['regionId']) ? $data['regionId'] : null;
         $this->container['cityId'] = isset($data['cityId']) ? $data['cityId'] : null;
@@ -14481,6 +14499,78 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setBiz30dPurchaseRoi($biz30dPurchaseRoi)
     {
         $this->container['biz30dPurchaseRoi'] = $biz30dPurchaseRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets stayPay7dPv
+     *
+     * @return int|mixed
+     */
+    public function getStayPay7dPv()
+    {
+        return $this->container['stayPay7dPv'];
+    }
+
+    /**
+     * Sets stayPay7dPv
+     *
+     * @param int|mixed $stayPay7dPv stayPay7dPv
+     *
+     * @return $this
+     */
+    public function setStayPay7dPv($stayPay7dPv)
+    {
+        $this->container['stayPay7dPv'] = $stayPay7dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets stayPay15dPv
+     *
+     * @return int|mixed
+     */
+    public function getStayPay15dPv()
+    {
+        return $this->container['stayPay15dPv'];
+    }
+
+    /**
+     * Sets stayPay15dPv
+     *
+     * @param int|mixed $stayPay15dPv stayPay15dPv
+     *
+     * @return $this
+     */
+    public function setStayPay15dPv($stayPay15dPv)
+    {
+        $this->container['stayPay15dPv'] = $stayPay15dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets stayPay30dPv
+     *
+     * @return int|mixed
+     */
+    public function getStayPay30dPv()
+    {
+        return $this->container['stayPay30dPv'];
+    }
+
+    /**
+     * Sets stayPay30dPv
+     *
+     * @param int|mixed $stayPay30dPv stayPay30dPv
+     *
+     * @return $this
+     */
+    public function setStayPay30dPv($stayPay30dPv)
+    {
+        $this->container['stayPay30dPv'] = $stayPay30dPv;
 
         return $this;
     }

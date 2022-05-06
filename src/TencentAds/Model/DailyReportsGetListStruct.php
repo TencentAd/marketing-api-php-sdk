@@ -521,6 +521,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'biz7dPurchaseRoi' => 'double',
         'biz15dPurchaseRoi' => 'double',
         'biz30dPurchaseRoi' => 'double',
+        'stayPay7dPv' => 'int',
+        'stayPay15dPv' => 'int',
+        'stayPay30dPv' => 'int',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
         'incomeVal1' => 'int',
@@ -734,7 +737,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'channelsMatchHeartPv' => 'int',
         'channelsMatchCommentPv' => 'int',
         'channelsMatchSharePv' => 'int',
-        'exportId' => 'int'
+        'exportId' => 'string'
     ];
 
     /**
@@ -1206,6 +1209,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'biz7dPurchaseRoi' => 'double',
         'biz15dPurchaseRoi' => 'double',
         'biz30dPurchaseRoi' => 'double',
+        'stayPay7dPv' => 'int64',
+        'stayPay15dPv' => 'int64',
+        'stayPay30dPv' => 'int64',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
         'incomeVal1' => 'int64',
@@ -1419,7 +1425,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'channelsMatchHeartPv' => 'int64',
         'channelsMatchCommentPv' => 'int64',
         'channelsMatchSharePv' => 'int64',
-        'exportId' => 'int64'
+        'exportId' => null
     ];
 
     /**
@@ -1912,6 +1918,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'biz7dPurchaseRoi' => 'biz_7d_purchase_roi',
         'biz15dPurchaseRoi' => 'biz_15d_purchase_roi',
         'biz30dPurchaseRoi' => 'biz_30d_purchase_roi',
+        'stayPay7dPv' => 'stay_pay_7d_pv',
+        'stayPay15dPv' => 'stay_pay_15d_pv',
+        'stayPay30dPv' => 'stay_pay_30d_pv',
         'requestConversionsCount' => 'request_conversions_count',
         'requestConversionsCost' => 'request_conversions_cost',
         'incomeVal1' => 'income_val_1',
@@ -2597,6 +2606,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'biz7dPurchaseRoi' => 'setBiz7dPurchaseRoi',
         'biz15dPurchaseRoi' => 'setBiz15dPurchaseRoi',
         'biz30dPurchaseRoi' => 'setBiz30dPurchaseRoi',
+        'stayPay7dPv' => 'setStayPay7dPv',
+        'stayPay15dPv' => 'setStayPay15dPv',
+        'stayPay30dPv' => 'setStayPay30dPv',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'requestConversionsCost' => 'setRequestConversionsCost',
         'incomeVal1' => 'setIncomeVal1',
@@ -3282,6 +3294,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'biz7dPurchaseRoi' => 'getBiz7dPurchaseRoi',
         'biz15dPurchaseRoi' => 'getBiz15dPurchaseRoi',
         'biz30dPurchaseRoi' => 'getBiz30dPurchaseRoi',
+        'stayPay7dPv' => 'getStayPay7dPv',
+        'stayPay15dPv' => 'getStayPay15dPv',
+        'stayPay30dPv' => 'getStayPay30dPv',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'requestConversionsCost' => 'getRequestConversionsCost',
         'incomeVal1' => 'getIncomeVal1',
@@ -4021,6 +4036,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['biz7dPurchaseRoi'] = isset($data['biz7dPurchaseRoi']) ? $data['biz7dPurchaseRoi'] : null;
         $this->container['biz15dPurchaseRoi'] = isset($data['biz15dPurchaseRoi']) ? $data['biz15dPurchaseRoi'] : null;
         $this->container['biz30dPurchaseRoi'] = isset($data['biz30dPurchaseRoi']) ? $data['biz30dPurchaseRoi'] : null;
+        $this->container['stayPay7dPv'] = isset($data['stayPay7dPv']) ? $data['stayPay7dPv'] : null;
+        $this->container['stayPay15dPv'] = isset($data['stayPay15dPv']) ? $data['stayPay15dPv'] : null;
+        $this->container['stayPay30dPv'] = isset($data['stayPay30dPv']) ? $data['stayPay30dPv'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
         $this->container['incomeVal1'] = isset($data['incomeVal1']) ? $data['incomeVal1'] : null;
@@ -15374,6 +15392,78 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets stayPay7dPv
+     *
+     * @return int|mixed
+     */
+    public function getStayPay7dPv()
+    {
+        return $this->container['stayPay7dPv'];
+    }
+
+    /**
+     * Sets stayPay7dPv
+     *
+     * @param int|mixed $stayPay7dPv stayPay7dPv
+     *
+     * @return $this
+     */
+    public function setStayPay7dPv($stayPay7dPv)
+    {
+        $this->container['stayPay7dPv'] = $stayPay7dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets stayPay15dPv
+     *
+     * @return int|mixed
+     */
+    public function getStayPay15dPv()
+    {
+        return $this->container['stayPay15dPv'];
+    }
+
+    /**
+     * Sets stayPay15dPv
+     *
+     * @param int|mixed $stayPay15dPv stayPay15dPv
+     *
+     * @return $this
+     */
+    public function setStayPay15dPv($stayPay15dPv)
+    {
+        $this->container['stayPay15dPv'] = $stayPay15dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets stayPay30dPv
+     *
+     * @return int|mixed
+     */
+    public function getStayPay30dPv()
+    {
+        return $this->container['stayPay30dPv'];
+    }
+
+    /**
+     * Sets stayPay30dPv
+     *
+     * @param int|mixed $stayPay30dPv stayPay30dPv
+     *
+     * @return $this
+     */
+    public function setStayPay30dPv($stayPay30dPv)
+    {
+        $this->container['stayPay30dPv'] = $stayPay30dPv;
+
+        return $this;
+    }
+
+    /**
      * Gets requestConversionsCount
      *
      * @return int|mixed
@@ -20488,7 +20578,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets exportId
      *
-     * @return int|mixed
+     * @return string|mixed
      */
     public function getExportId()
     {
@@ -20498,7 +20588,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets exportId
      *
-     * @param int|mixed $exportId exportId
+     * @param string|mixed $exportId exportId
      *
      * @return $this
      */
