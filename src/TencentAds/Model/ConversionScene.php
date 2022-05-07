@@ -50,6 +50,8 @@ class ConversionScene
     const WECHAT_MINI_PROGRAM = 'CONVERSION_SCENE_WECHAT_MINI_PROGRAM';
     const WECHAT_MINI_GAME = 'CONVERSION_SCENE_WECHAT_MINI_GAME';
     const QQ_MINI_GAME = 'CONVERSION_SCENE_QQ_MINI_GAME';
+    const QUICK_APP = 'CONVERSION_SCENE_QUICK_APP';
+    const WE_COM = 'CONVERSION_SCENE_WE_COM';
     
     /**
      * Gets allowable values of the enum
@@ -64,6 +66,8 @@ class ConversionScene
             self::WECHAT_MINI_PROGRAM,
             self::WECHAT_MINI_GAME,
             self::QQ_MINI_GAME,
+            self::QUICK_APP,
+            self::WE_COM,
         ];
     }
 }

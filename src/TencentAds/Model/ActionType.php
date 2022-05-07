@@ -123,6 +123,10 @@ class ActionType
     const DROP_OUT = 'DROP_OUT';
     const CONFIRM_DELIVERY_ORDER = 'CONFIRM_DELIVERY_ORDER';
     const CANCEL_DELIVERY_ORDER = 'CANCEL_DELIVERY_ORDER';
+    const OPEN_ACCOUNT = 'OPEN_ACCOUNT';
+    const DEPOSIT = 'DEPOSIT';
+    const TRADE = 'TRADE';
+    const SECURITY_NEGATIVE = 'SECURITY_NEGATIVE';
     const AD_CLICK = 'AD_CLICK';
     const AD_IMPRESSION = 'AD_IMPRESSION';
     
@@ -212,6 +216,10 @@ class ActionType
             self::DROP_OUT,
             self::CONFIRM_DELIVERY_ORDER,
             self::CANCEL_DELIVERY_ORDER,
+            self::OPEN_ACCOUNT,
+            self::DEPOSIT,
+            self::TRADE,
+            self::SECURITY_NEGATIVE,
             self::AD_CLICK,
             self::AD_IMPRESSION,
         ];

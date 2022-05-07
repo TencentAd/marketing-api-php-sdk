@@ -85,6 +85,7 @@ class SiteSetDefinition
     const MOBILE_GAME = 'SITE_SET_MOBILE_GAME';
     const TENCENT_VIDEO_OTT = 'SITE_SET_TENCENT_VIDEO_OTT';
     const CHANNELS = 'SITE_SET_CHANNELS';
+    const OVERSEAS_UNION = 'SITE_SET_OVERSEAS_UNION';
     
     /**
      * Gets allowable values of the enum
@@ -134,6 +135,7 @@ class SiteSetDefinition
             self::MOBILE_GAME,
             self::TENCENT_VIDEO_OTT,
             self::CHANNELS,
+            self::OVERSEAS_UNION,
         ];
     }
 }
