@@ -329,7 +329,11 @@ class PropertySetSchemasApi
 
             } else {
                 // for HTTP post (form)
-                $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                if (class_exists('\GuzzleHttp\Psr7\Query')) {
+                    $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
+                } else {
+                    $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                }
             }
         }
 
@@ -360,7 +364,11 @@ class PropertySetSchemasApi
             $headers
         );
 
-        $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        if (class_exists('\GuzzleHttp\Psr7\Query')) {
+            $query = \GuzzleHttp\Psr7\Query::build($queryParams);
+        } else {
+            $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        }
         return new Request(
             'POST',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
@@ -639,7 +647,11 @@ class PropertySetSchemasApi
 
             } else {
                 // for HTTP post (form)
-                $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                if (class_exists('\GuzzleHttp\Psr7\Query')) {
+                    $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
+                } else {
+                    $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                }
             }
         }
 
@@ -670,7 +682,11 @@ class PropertySetSchemasApi
             $headers
         );
 
-        $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        if (class_exists('\GuzzleHttp\Psr7\Query')) {
+            $query = \GuzzleHttp\Psr7\Query::build($queryParams);
+        } else {
+            $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        }
         return new Request(
             'GET',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
@@ -921,7 +937,11 @@ class PropertySetSchemasApi
 
             } else {
                 // for HTTP post (form)
-                $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                if (class_exists('\GuzzleHttp\Psr7\Query')) {
+                    $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
+                } else {
+                    $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                }
             }
         }
 
@@ -952,7 +972,11 @@ class PropertySetSchemasApi
             $headers
         );
 
-        $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        if (class_exists('\GuzzleHttp\Psr7\Query')) {
+            $query = \GuzzleHttp\Psr7\Query::build($queryParams);
+        } else {
+            $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        }
         return new Request(
             'POST',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),

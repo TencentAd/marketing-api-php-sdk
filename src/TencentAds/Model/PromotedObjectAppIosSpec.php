@@ -62,10 +62,12 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
         'version' => 'string',
         'icon' => 'string',
         'icon512' => 'string',
+        'iconImageId' => 'string',
         'averageRating' => 'string',
         'packageSize' => 'string',
         'genres' => 'string[]',
-        'packageDownloadUrl' => 'string'
+        'packageDownloadUrl' => 'string',
+        'childrenPrivacyProtection' => '\TencentAds\Model\ChildrenPrivacyProtection'
     ];
 
     /**
@@ -78,10 +80,12 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
         'version' => null,
         'icon' => null,
         'icon512' => null,
+        'iconImageId' => null,
         'averageRating' => null,
         'packageSize' => null,
         'genres' => null,
-        'packageDownloadUrl' => null
+        'packageDownloadUrl' => null,
+        'childrenPrivacyProtection' => null
     ];
 
     /**
@@ -115,10 +119,12 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
         'version' => 'version',
         'icon' => 'icon',
         'icon512' => 'icon_512',
+        'iconImageId' => 'icon_image_id',
         'averageRating' => 'average_rating',
         'packageSize' => 'package_size',
         'genres' => 'genres',
-        'packageDownloadUrl' => 'package_download_url'
+        'packageDownloadUrl' => 'package_download_url',
+        'childrenPrivacyProtection' => 'children_privacy_protection'
     ];
 
     /**
@@ -131,10 +137,12 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
         'version' => 'setVersion',
         'icon' => 'setIcon',
         'icon512' => 'setIcon512',
+        'iconImageId' => 'setIconImageId',
         'averageRating' => 'setAverageRating',
         'packageSize' => 'setPackageSize',
         'genres' => 'setGenres',
-        'packageDownloadUrl' => 'setPackageDownloadUrl'
+        'packageDownloadUrl' => 'setPackageDownloadUrl',
+        'childrenPrivacyProtection' => 'setChildrenPrivacyProtection'
     ];
 
     /**
@@ -147,10 +155,12 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
         'version' => 'getVersion',
         'icon' => 'getIcon',
         'icon512' => 'getIcon512',
+        'iconImageId' => 'getIconImageId',
         'averageRating' => 'getAverageRating',
         'packageSize' => 'getPackageSize',
         'genres' => 'getGenres',
-        'packageDownloadUrl' => 'getPackageDownloadUrl'
+        'packageDownloadUrl' => 'getPackageDownloadUrl',
+        'childrenPrivacyProtection' => 'getChildrenPrivacyProtection'
     ];
 
     /**
@@ -217,10 +227,12 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
         $this->container['version'] = isset($data['version']) ? $data['version'] : null;
         $this->container['icon'] = isset($data['icon']) ? $data['icon'] : null;
         $this->container['icon512'] = isset($data['icon512']) ? $data['icon512'] : null;
+        $this->container['iconImageId'] = isset($data['iconImageId']) ? $data['iconImageId'] : null;
         $this->container['averageRating'] = isset($data['averageRating']) ? $data['averageRating'] : null;
         $this->container['packageSize'] = isset($data['packageSize']) ? $data['packageSize'] : null;
         $this->container['genres'] = isset($data['genres']) ? $data['genres'] : null;
         $this->container['packageDownloadUrl'] = isset($data['packageDownloadUrl']) ? $data['packageDownloadUrl'] : null;
+        $this->container['childrenPrivacyProtection'] = isset($data['childrenPrivacyProtection']) ? $data['childrenPrivacyProtection'] : null;
     }
 
     /**
@@ -344,6 +356,30 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets iconImageId
+     *
+     * @return string|mixed
+     */
+    public function getIconImageId()
+    {
+        return $this->container['iconImageId'];
+    }
+
+    /**
+     * Sets iconImageId
+     *
+     * @param string|mixed $iconImageId iconImageId
+     *
+     * @return $this
+     */
+    public function setIconImageId($iconImageId)
+    {
+        $this->container['iconImageId'] = $iconImageId;
+
+        return $this;
+    }
+
+    /**
      * Gets averageRating
      *
      * @return string|mixed
@@ -435,6 +471,30 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
     public function setPackageDownloadUrl($packageDownloadUrl)
     {
         $this->container['packageDownloadUrl'] = $packageDownloadUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets childrenPrivacyProtection
+     *
+     * @return \TencentAds\Model\ChildrenPrivacyProtection|mixed
+     */
+    public function getChildrenPrivacyProtection()
+    {
+        return $this->container['childrenPrivacyProtection'];
+    }
+
+    /**
+     * Sets childrenPrivacyProtection
+     *
+     * @param \TencentAds\Model\ChildrenPrivacyProtection|mixed $childrenPrivacyProtection childrenPrivacyProtection
+     *
+     * @return $this
+     */
+    public function setChildrenPrivacyProtection($childrenPrivacyProtection)
+    {
+        $this->container['childrenPrivacyProtection'] = $childrenPrivacyProtection;
 
         return $this;
     }

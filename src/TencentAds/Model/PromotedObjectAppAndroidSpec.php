@@ -61,11 +61,13 @@ class PromotedObjectAppAndroidSpec implements ModelInterface, ArrayAccess
         'packname' => 'string',
         'version' => 'string',
         'icon' => 'string',
+        'iconImageId' => 'string',
         'averageRating' => 'string',
         'packageSize' => 'string',
         'genres' => 'string[]',
         'packageDownloadUrl' => 'string',
-        'channelPackageSpec' => '\TencentAds\Model\ChannelPackageSpecStruct[]'
+        'channelPackageSpec' => '\TencentAds\Model\ChannelPackageSpecStruct[]',
+        'childrenPrivacyProtection' => '\TencentAds\Model\ChildrenPrivacyProtection'
     ];
 
     /**
@@ -77,11 +79,13 @@ class PromotedObjectAppAndroidSpec implements ModelInterface, ArrayAccess
         'packname' => null,
         'version' => null,
         'icon' => null,
+        'iconImageId' => null,
         'averageRating' => null,
         'packageSize' => null,
         'genres' => null,
         'packageDownloadUrl' => null,
-        'channelPackageSpec' => null
+        'channelPackageSpec' => null,
+        'childrenPrivacyProtection' => null
     ];
 
     /**
@@ -114,11 +118,13 @@ class PromotedObjectAppAndroidSpec implements ModelInterface, ArrayAccess
         'packname' => 'packname',
         'version' => 'version',
         'icon' => 'icon',
+        'iconImageId' => 'icon_image_id',
         'averageRating' => 'average_rating',
         'packageSize' => 'package_size',
         'genres' => 'genres',
         'packageDownloadUrl' => 'package_download_url',
-        'channelPackageSpec' => 'channel_package_spec'
+        'channelPackageSpec' => 'channel_package_spec',
+        'childrenPrivacyProtection' => 'children_privacy_protection'
     ];
 
     /**
@@ -130,11 +136,13 @@ class PromotedObjectAppAndroidSpec implements ModelInterface, ArrayAccess
         'packname' => 'setPackname',
         'version' => 'setVersion',
         'icon' => 'setIcon',
+        'iconImageId' => 'setIconImageId',
         'averageRating' => 'setAverageRating',
         'packageSize' => 'setPackageSize',
         'genres' => 'setGenres',
         'packageDownloadUrl' => 'setPackageDownloadUrl',
-        'channelPackageSpec' => 'setChannelPackageSpec'
+        'channelPackageSpec' => 'setChannelPackageSpec',
+        'childrenPrivacyProtection' => 'setChildrenPrivacyProtection'
     ];
 
     /**
@@ -146,11 +154,13 @@ class PromotedObjectAppAndroidSpec implements ModelInterface, ArrayAccess
         'packname' => 'getPackname',
         'version' => 'getVersion',
         'icon' => 'getIcon',
+        'iconImageId' => 'getIconImageId',
         'averageRating' => 'getAverageRating',
         'packageSize' => 'getPackageSize',
         'genres' => 'getGenres',
         'packageDownloadUrl' => 'getPackageDownloadUrl',
-        'channelPackageSpec' => 'getChannelPackageSpec'
+        'channelPackageSpec' => 'getChannelPackageSpec',
+        'childrenPrivacyProtection' => 'getChildrenPrivacyProtection'
     ];
 
     /**
@@ -216,11 +226,13 @@ class PromotedObjectAppAndroidSpec implements ModelInterface, ArrayAccess
         $this->container['packname'] = isset($data['packname']) ? $data['packname'] : null;
         $this->container['version'] = isset($data['version']) ? $data['version'] : null;
         $this->container['icon'] = isset($data['icon']) ? $data['icon'] : null;
+        $this->container['iconImageId'] = isset($data['iconImageId']) ? $data['iconImageId'] : null;
         $this->container['averageRating'] = isset($data['averageRating']) ? $data['averageRating'] : null;
         $this->container['packageSize'] = isset($data['packageSize']) ? $data['packageSize'] : null;
         $this->container['genres'] = isset($data['genres']) ? $data['genres'] : null;
         $this->container['packageDownloadUrl'] = isset($data['packageDownloadUrl']) ? $data['packageDownloadUrl'] : null;
         $this->container['channelPackageSpec'] = isset($data['channelPackageSpec']) ? $data['channelPackageSpec'] : null;
+        $this->container['childrenPrivacyProtection'] = isset($data['childrenPrivacyProtection']) ? $data['childrenPrivacyProtection'] : null;
     }
 
     /**
@@ -315,6 +327,30 @@ class PromotedObjectAppAndroidSpec implements ModelInterface, ArrayAccess
     public function setIcon($icon)
     {
         $this->container['icon'] = $icon;
+
+        return $this;
+    }
+
+    /**
+     * Gets iconImageId
+     *
+     * @return string|mixed
+     */
+    public function getIconImageId()
+    {
+        return $this->container['iconImageId'];
+    }
+
+    /**
+     * Sets iconImageId
+     *
+     * @param string|mixed $iconImageId iconImageId
+     *
+     * @return $this
+     */
+    public function setIconImageId($iconImageId)
+    {
+        $this->container['iconImageId'] = $iconImageId;
 
         return $this;
     }
@@ -435,6 +471,30 @@ class PromotedObjectAppAndroidSpec implements ModelInterface, ArrayAccess
     public function setChannelPackageSpec($channelPackageSpec)
     {
         $this->container['channelPackageSpec'] = $channelPackageSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets childrenPrivacyProtection
+     *
+     * @return \TencentAds\Model\ChildrenPrivacyProtection|mixed
+     */
+    public function getChildrenPrivacyProtection()
+    {
+        return $this->container['childrenPrivacyProtection'];
+    }
+
+    /**
+     * Sets childrenPrivacyProtection
+     *
+     * @param \TencentAds\Model\ChildrenPrivacyProtection|mixed $childrenPrivacyProtection childrenPrivacyProtection
+     *
+     * @return $this
+     */
+    public function setChildrenPrivacyProtection($childrenPrivacyProtection)
+    {
+        $this->container['childrenPrivacyProtection'] = $childrenPrivacyProtection;
 
         return $this;
     }

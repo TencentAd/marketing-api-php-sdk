@@ -324,7 +324,11 @@ class VideomakerAutoadjustmentsApi
         // form params
         if ($videoFile !== null) {
             $multipart = true;
-            $formParams['video_file'] = \GuzzleHttp\Psr7\try_fopen(ObjectSerializer::toFormValue($videoFile), 'rb');
+            if (class_exists('\GuzzleHttp\Psr7\Utils')) {
+                $formParams['video_file'] = \GuzzleHttp\Psr7\Utils::tryFopen(ObjectSerializer::toFormValue($videoFile), 'rb');
+            } else {
+                $formParams['video_file'] = \GuzzleHttp\Psr7\try_fopen(ObjectSerializer::toFormValue($videoFile), 'rb');
+            }
         }
         // form params
         if ($signature !== null) {
@@ -391,7 +395,11 @@ class VideomakerAutoadjustmentsApi
 
             } else {
                 // for HTTP post (form)
-                $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                if (class_exists('\GuzzleHttp\Psr7\Query')) {
+                    $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
+                } else {
+                    $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                }
             }
         }
 
@@ -422,7 +430,11 @@ class VideomakerAutoadjustmentsApi
             $headers
         );
 
-        $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        if (class_exists('\GuzzleHttp\Psr7\Query')) {
+            $query = \GuzzleHttp\Psr7\Query::build($queryParams);
+        } else {
+            $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        }
         return new Request(
             'POST',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),

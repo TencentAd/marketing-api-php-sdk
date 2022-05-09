@@ -321,7 +321,11 @@ class WechatQualificationsApi
         // form params
         if ($wechatQualificationFile !== null) {
             $multipart = true;
-            $formParams['wechat_qualification_file'] = \GuzzleHttp\Psr7\try_fopen(ObjectSerializer::toFormValue($wechatQualificationFile), 'rb');
+            if (class_exists('\GuzzleHttp\Psr7\Utils')) {
+                $formParams['wechat_qualification_file'] = \GuzzleHttp\Psr7\Utils::tryFopen(ObjectSerializer::toFormValue($wechatQualificationFile), 'rb');
+            } else {
+                $formParams['wechat_qualification_file'] = \GuzzleHttp\Psr7\try_fopen(ObjectSerializer::toFormValue($wechatQualificationFile), 'rb');
+            }
         }
         // form params
         if ($wechatQualificationFileSignature !== null) {
@@ -376,7 +380,11 @@ class WechatQualificationsApi
 
             } else {
                 // for HTTP post (form)
-                $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                if (class_exists('\GuzzleHttp\Psr7\Query')) {
+                    $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
+                } else {
+                    $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                }
             }
         }
 
@@ -407,7 +415,11 @@ class WechatQualificationsApi
             $headers
         );
 
-        $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        if (class_exists('\GuzzleHttp\Psr7\Query')) {
+            $query = \GuzzleHttp\Psr7\Query::build($queryParams);
+        } else {
+            $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        }
         return new Request(
             'POST',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
@@ -658,7 +670,11 @@ class WechatQualificationsApi
 
             } else {
                 // for HTTP post (form)
-                $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                if (class_exists('\GuzzleHttp\Psr7\Query')) {
+                    $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
+                } else {
+                    $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                }
             }
         }
 
@@ -689,7 +705,11 @@ class WechatQualificationsApi
             $headers
         );
 
-        $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        if (class_exists('\GuzzleHttp\Psr7\Query')) {
+            $query = \GuzzleHttp\Psr7\Query::build($queryParams);
+        } else {
+            $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        }
         return new Request(
             'POST',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
@@ -953,7 +973,11 @@ class WechatQualificationsApi
 
             } else {
                 // for HTTP post (form)
-                $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                if (class_exists('\GuzzleHttp\Psr7\Query')) {
+                    $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
+                } else {
+                    $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                }
             }
         }
 
@@ -984,7 +1008,11 @@ class WechatQualificationsApi
             $headers
         );
 
-        $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        if (class_exists('\GuzzleHttp\Psr7\Query')) {
+            $query = \GuzzleHttp\Psr7\Query::build($queryParams);
+        } else {
+            $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        }
         return new Request(
             'GET',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),

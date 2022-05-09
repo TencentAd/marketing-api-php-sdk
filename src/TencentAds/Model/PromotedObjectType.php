@@ -45,6 +45,7 @@ class PromotedObjectType
      * Possible values of this enum
      */
     const APP_ANDROID = 'PROMOTED_OBJECT_TYPE_APP_ANDROID';
+    const APP_ANDROID_GOOGLE_PLAY = 'PROMOTED_OBJECT_TYPE_APP_ANDROID_GOOGLE_PLAY';
     const APP_IOS = 'PROMOTED_OBJECT_TYPE_APP_IOS';
     const DIANPING_SHOP = 'PROMOTED_OBJECT_TYPE_DIANPING_SHOP';
     const ECOMMERCE = 'PROMOTED_OBJECT_TYPE_ECOMMERCE';
@@ -83,6 +84,7 @@ class PromotedObjectType
     {
         return [
             self::APP_ANDROID,
+            self::APP_ANDROID_GOOGLE_PLAY,
             self::APP_IOS,
             self::DIANPING_SHOP,
             self::ECOMMERCE,

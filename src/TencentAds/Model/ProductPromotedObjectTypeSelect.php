@@ -45,6 +45,7 @@ class ProductPromotedObjectTypeSelect
      * Possible values of this enum
      */
     const APP_ANDROID = 'PROMOTED_OBJECT_TYPE_APP_ANDROID';
+    const APP_ANDROID_GOOGLE_PLAY = 'PROMOTED_OBJECT_TYPE_APP_ANDROID_GOOGLE_PLAY';
     const APP_IOS = 'PROMOTED_OBJECT_TYPE_APP_IOS';
     const APP_ANDROID_MYAPP = 'PROMOTED_OBJECT_TYPE_APP_ANDROID_MYAPP';
     const APP_ANDROID_UNION = 'PROMOTED_OBJECT_TYPE_APP_ANDROID_UNION';
@@ -67,6 +68,7 @@ class ProductPromotedObjectTypeSelect
     {
         return [
             self::APP_ANDROID,
+            self::APP_ANDROID_GOOGLE_PLAY,
             self::APP_IOS,
             self::APP_ANDROID_MYAPP,
             self::APP_ANDROID_UNION,

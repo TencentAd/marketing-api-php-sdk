@@ -340,7 +340,11 @@ class CustomAudienceFilesApi
         // form params
         if ($file !== null) {
             $multipart = true;
-            $formParams['file'] = \GuzzleHttp\Psr7\try_fopen(ObjectSerializer::toFormValue($file), 'rb');
+            if (class_exists('\GuzzleHttp\Psr7\Utils')) {
+                $formParams['file'] = \GuzzleHttp\Psr7\Utils::tryFopen(ObjectSerializer::toFormValue($file), 'rb');
+            } else {
+                $formParams['file'] = \GuzzleHttp\Psr7\try_fopen(ObjectSerializer::toFormValue($file), 'rb');
+            }
         }
         // form params
         if ($operationType !== null) {
@@ -403,7 +407,11 @@ class CustomAudienceFilesApi
 
             } else {
                 // for HTTP post (form)
-                $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                if (class_exists('\GuzzleHttp\Psr7\Query')) {
+                    $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
+                } else {
+                    $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                }
             }
         }
 
@@ -434,7 +442,11 @@ class CustomAudienceFilesApi
             $headers
         );
 
-        $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        if (class_exists('\GuzzleHttp\Psr7\Query')) {
+            $query = \GuzzleHttp\Psr7\Query::build($queryParams);
+        } else {
+            $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        }
         return new Request(
             'POST',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
@@ -734,7 +746,11 @@ class CustomAudienceFilesApi
 
             } else {
                 // for HTTP post (form)
-                $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                if (class_exists('\GuzzleHttp\Psr7\Query')) {
+                    $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
+                } else {
+                    $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                }
             }
         }
 
@@ -765,7 +781,11 @@ class CustomAudienceFilesApi
             $headers
         );
 
-        $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        if (class_exists('\GuzzleHttp\Psr7\Query')) {
+            $query = \GuzzleHttp\Psr7\Query::build($queryParams);
+        } else {
+            $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        }
         return new Request(
             'GET',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),

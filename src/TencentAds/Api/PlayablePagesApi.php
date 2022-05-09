@@ -310,7 +310,11 @@ class PlayablePagesApi
         // form params
         if ($materialFile !== null) {
             $multipart = true;
-            $formParams['material_file'] = \GuzzleHttp\Psr7\try_fopen(ObjectSerializer::toFormValue($materialFile), 'rb');
+            if (class_exists('\GuzzleHttp\Psr7\Utils')) {
+                $formParams['material_file'] = \GuzzleHttp\Psr7\Utils::tryFopen(ObjectSerializer::toFormValue($materialFile), 'rb');
+            } else {
+                $formParams['material_file'] = \GuzzleHttp\Psr7\try_fopen(ObjectSerializer::toFormValue($materialFile), 'rb');
+            }
         }
         // body params
         $_tempBody = null;
@@ -361,7 +365,11 @@ class PlayablePagesApi
 
             } else {
                 // for HTTP post (form)
-                $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                if (class_exists('\GuzzleHttp\Psr7\Query')) {
+                    $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
+                } else {
+                    $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                }
             }
         }
 
@@ -392,7 +400,11 @@ class PlayablePagesApi
             $headers
         );
 
-        $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        if (class_exists('\GuzzleHttp\Psr7\Query')) {
+            $query = \GuzzleHttp\Psr7\Query::build($queryParams);
+        } else {
+            $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        }
         return new Request(
             'POST',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
@@ -686,7 +698,11 @@ class PlayablePagesApi
 
             } else {
                 // for HTTP post (form)
-                $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                if (class_exists('\GuzzleHttp\Psr7\Query')) {
+                    $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
+                } else {
+                    $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                }
             }
         }
 
@@ -717,7 +733,11 @@ class PlayablePagesApi
             $headers
         );
 
-        $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        if (class_exists('\GuzzleHttp\Psr7\Query')) {
+            $query = \GuzzleHttp\Psr7\Query::build($queryParams);
+        } else {
+            $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        }
         return new Request(
             'GET',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),

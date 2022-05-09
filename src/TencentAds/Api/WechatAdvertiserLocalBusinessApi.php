@@ -389,7 +389,11 @@ class WechatAdvertiserLocalBusinessApi
         // form params
         if ($headImage !== null) {
             $multipart = true;
-            $formParams['head_image'] = \GuzzleHttp\Psr7\try_fopen(ObjectSerializer::toFormValue($headImage), 'rb');
+            if (class_exists('\GuzzleHttp\Psr7\Utils')) {
+                $formParams['head_image'] = \GuzzleHttp\Psr7\Utils::tryFopen(ObjectSerializer::toFormValue($headImage), 'rb');
+            } else {
+                $formParams['head_image'] = \GuzzleHttp\Psr7\try_fopen(ObjectSerializer::toFormValue($headImage), 'rb');
+            }
         }
         // form params
         if ($name !== null) {
@@ -484,7 +488,11 @@ class WechatAdvertiserLocalBusinessApi
 
             } else {
                 // for HTTP post (form)
-                $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                if (class_exists('\GuzzleHttp\Psr7\Query')) {
+                    $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
+                } else {
+                    $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                }
             }
         }
 
@@ -515,7 +523,11 @@ class WechatAdvertiserLocalBusinessApi
             $headers
         );
 
-        $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        if (class_exists('\GuzzleHttp\Psr7\Query')) {
+            $query = \GuzzleHttp\Psr7\Query::build($queryParams);
+        } else {
+            $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        }
         return new Request(
             'POST',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
@@ -779,7 +791,11 @@ class WechatAdvertiserLocalBusinessApi
 
             } else {
                 // for HTTP post (form)
-                $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                if (class_exists('\GuzzleHttp\Psr7\Query')) {
+                    $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
+                } else {
+                    $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                }
             }
         }
 
@@ -810,7 +826,11 @@ class WechatAdvertiserLocalBusinessApi
             $headers
         );
 
-        $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        if (class_exists('\GuzzleHttp\Psr7\Query')) {
+            $query = \GuzzleHttp\Psr7\Query::build($queryParams);
+        } else {
+            $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        }
         return new Request(
             'GET',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
@@ -1121,7 +1141,11 @@ class WechatAdvertiserLocalBusinessApi
         // form params
         if ($headImage !== null) {
             $multipart = true;
-            $formParams['head_image'] = \GuzzleHttp\Psr7\try_fopen(ObjectSerializer::toFormValue($headImage), 'rb');
+            if (class_exists('\GuzzleHttp\Psr7\Utils')) {
+                $formParams['head_image'] = \GuzzleHttp\Psr7\Utils::tryFopen(ObjectSerializer::toFormValue($headImage), 'rb');
+            } else {
+                $formParams['head_image'] = \GuzzleHttp\Psr7\try_fopen(ObjectSerializer::toFormValue($headImage), 'rb');
+            }
         }
         // form params
         if ($name !== null) {
@@ -1216,7 +1240,11 @@ class WechatAdvertiserLocalBusinessApi
 
             } else {
                 // for HTTP post (form)
-                $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                if (class_exists('\GuzzleHttp\Psr7\Query')) {
+                    $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
+                } else {
+                    $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                }
             }
         }
 
@@ -1247,7 +1275,11 @@ class WechatAdvertiserLocalBusinessApi
             $headers
         );
 
-        $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        if (class_exists('\GuzzleHttp\Psr7\Query')) {
+            $query = \GuzzleHttp\Psr7\Query::build($queryParams);
+        } else {
+            $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        }
         return new Request(
             'POST',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
