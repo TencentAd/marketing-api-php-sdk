@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * PeakPeriod Class Doc Comment
  *
  * @category Class
- * @description 门店高峰时间段
+ * @description 门店高峰时间段信息结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

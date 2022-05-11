@@ -63,12 +63,12 @@ class LocalStoresUpdateListStruct implements ModelInterface, ArrayAccess
         'localStoreProvince' => 'string',
         'localStoreCity' => 'string',
         'localStoreAddress' => 'string',
+        'localStoreBizInfo' => '\TencentAds\Model\LocalStoreBizInfoStructRsp',
+        'wechatEcosystemAccounts' => '\TencentAds\Model\WechatEcosystemAccounts',
         'localStoreStreet' => 'string',
         'localStoreBusinessArea' => 'string',
         'localStoreDistrict' => 'string',
-        'localStoreLocation' => '\TencentAds\Model\LocalStoreLocation',
-        'localStoreBizInfo' => '\TencentAds\Model\LocalStoreBizInfoStructRsp',
-        'wechatEcosystemAccounts' => '\TencentAds\Model\WechatEcosystemAccounts'
+        'localStoreLocation' => '\TencentAds\Model\LocalStoreLocation'
     ];
 
     /**
@@ -82,12 +82,12 @@ class LocalStoresUpdateListStruct implements ModelInterface, ArrayAccess
         'localStoreProvince' => null,
         'localStoreCity' => null,
         'localStoreAddress' => null,
+        'localStoreBizInfo' => null,
+        'wechatEcosystemAccounts' => null,
         'localStoreStreet' => null,
         'localStoreBusinessArea' => null,
         'localStoreDistrict' => null,
-        'localStoreLocation' => null,
-        'localStoreBizInfo' => null,
-        'wechatEcosystemAccounts' => null
+        'localStoreLocation' => null
     ];
 
     /**
@@ -122,12 +122,12 @@ class LocalStoresUpdateListStruct implements ModelInterface, ArrayAccess
         'localStoreProvince' => 'local_store_province',
         'localStoreCity' => 'local_store_city',
         'localStoreAddress' => 'local_store_address',
+        'localStoreBizInfo' => 'local_store_biz_info',
+        'wechatEcosystemAccounts' => 'wechat_ecosystem_accounts',
         'localStoreStreet' => 'local_store_street',
         'localStoreBusinessArea' => 'local_store_business_area',
         'localStoreDistrict' => 'local_store_district',
-        'localStoreLocation' => 'local_store_location',
-        'localStoreBizInfo' => 'local_store_biz_info',
-        'wechatEcosystemAccounts' => 'wechat_ecosystem_accounts'
+        'localStoreLocation' => 'local_store_location'
     ];
 
     /**
@@ -141,12 +141,12 @@ class LocalStoresUpdateListStruct implements ModelInterface, ArrayAccess
         'localStoreProvince' => 'setLocalStoreProvince',
         'localStoreCity' => 'setLocalStoreCity',
         'localStoreAddress' => 'setLocalStoreAddress',
+        'localStoreBizInfo' => 'setLocalStoreBizInfo',
+        'wechatEcosystemAccounts' => 'setWechatEcosystemAccounts',
         'localStoreStreet' => 'setLocalStoreStreet',
         'localStoreBusinessArea' => 'setLocalStoreBusinessArea',
         'localStoreDistrict' => 'setLocalStoreDistrict',
-        'localStoreLocation' => 'setLocalStoreLocation',
-        'localStoreBizInfo' => 'setLocalStoreBizInfo',
-        'wechatEcosystemAccounts' => 'setWechatEcosystemAccounts'
+        'localStoreLocation' => 'setLocalStoreLocation'
     ];
 
     /**
@@ -160,12 +160,12 @@ class LocalStoresUpdateListStruct implements ModelInterface, ArrayAccess
         'localStoreProvince' => 'getLocalStoreProvince',
         'localStoreCity' => 'getLocalStoreCity',
         'localStoreAddress' => 'getLocalStoreAddress',
+        'localStoreBizInfo' => 'getLocalStoreBizInfo',
+        'wechatEcosystemAccounts' => 'getWechatEcosystemAccounts',
         'localStoreStreet' => 'getLocalStoreStreet',
         'localStoreBusinessArea' => 'getLocalStoreBusinessArea',
         'localStoreDistrict' => 'getLocalStoreDistrict',
-        'localStoreLocation' => 'getLocalStoreLocation',
-        'localStoreBizInfo' => 'getLocalStoreBizInfo',
-        'wechatEcosystemAccounts' => 'getWechatEcosystemAccounts'
+        'localStoreLocation' => 'getLocalStoreLocation'
     ];
 
     /**
@@ -233,12 +233,12 @@ class LocalStoresUpdateListStruct implements ModelInterface, ArrayAccess
         $this->container['localStoreProvince'] = isset($data['localStoreProvince']) ? $data['localStoreProvince'] : null;
         $this->container['localStoreCity'] = isset($data['localStoreCity']) ? $data['localStoreCity'] : null;
         $this->container['localStoreAddress'] = isset($data['localStoreAddress']) ? $data['localStoreAddress'] : null;
+        $this->container['localStoreBizInfo'] = isset($data['localStoreBizInfo']) ? $data['localStoreBizInfo'] : null;
+        $this->container['wechatEcosystemAccounts'] = isset($data['wechatEcosystemAccounts']) ? $data['wechatEcosystemAccounts'] : null;
         $this->container['localStoreStreet'] = isset($data['localStoreStreet']) ? $data['localStoreStreet'] : null;
         $this->container['localStoreBusinessArea'] = isset($data['localStoreBusinessArea']) ? $data['localStoreBusinessArea'] : null;
         $this->container['localStoreDistrict'] = isset($data['localStoreDistrict']) ? $data['localStoreDistrict'] : null;
         $this->container['localStoreLocation'] = isset($data['localStoreLocation']) ? $data['localStoreLocation'] : null;
-        $this->container['localStoreBizInfo'] = isset($data['localStoreBizInfo']) ? $data['localStoreBizInfo'] : null;
-        $this->container['wechatEcosystemAccounts'] = isset($data['wechatEcosystemAccounts']) ? $data['wechatEcosystemAccounts'] : null;
     }
 
     /**
@@ -386,6 +386,54 @@ class LocalStoresUpdateListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets localStoreBizInfo
+     *
+     * @return \TencentAds\Model\LocalStoreBizInfoStructRsp|mixed
+     */
+    public function getLocalStoreBizInfo()
+    {
+        return $this->container['localStoreBizInfo'];
+    }
+
+    /**
+     * Sets localStoreBizInfo
+     *
+     * @param \TencentAds\Model\LocalStoreBizInfoStructRsp|mixed $localStoreBizInfo localStoreBizInfo
+     *
+     * @return $this
+     */
+    public function setLocalStoreBizInfo($localStoreBizInfo)
+    {
+        $this->container['localStoreBizInfo'] = $localStoreBizInfo;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatEcosystemAccounts
+     *
+     * @return \TencentAds\Model\WechatEcosystemAccounts|mixed
+     */
+    public function getWechatEcosystemAccounts()
+    {
+        return $this->container['wechatEcosystemAccounts'];
+    }
+
+    /**
+     * Sets wechatEcosystemAccounts
+     *
+     * @param \TencentAds\Model\WechatEcosystemAccounts|mixed $wechatEcosystemAccounts wechatEcosystemAccounts
+     *
+     * @return $this
+     */
+    public function setWechatEcosystemAccounts($wechatEcosystemAccounts)
+    {
+        $this->container['wechatEcosystemAccounts'] = $wechatEcosystemAccounts;
+
+        return $this;
+    }
+
+    /**
      * Gets localStoreStreet
      *
      * @return string|mixed
@@ -477,54 +525,6 @@ class LocalStoresUpdateListStruct implements ModelInterface, ArrayAccess
     public function setLocalStoreLocation($localStoreLocation)
     {
         $this->container['localStoreLocation'] = $localStoreLocation;
-
-        return $this;
-    }
-
-    /**
-     * Gets localStoreBizInfo
-     *
-     * @return \TencentAds\Model\LocalStoreBizInfoStructRsp|mixed
-     */
-    public function getLocalStoreBizInfo()
-    {
-        return $this->container['localStoreBizInfo'];
-    }
-
-    /**
-     * Sets localStoreBizInfo
-     *
-     * @param \TencentAds\Model\LocalStoreBizInfoStructRsp|mixed $localStoreBizInfo localStoreBizInfo
-     *
-     * @return $this
-     */
-    public function setLocalStoreBizInfo($localStoreBizInfo)
-    {
-        $this->container['localStoreBizInfo'] = $localStoreBizInfo;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatEcosystemAccounts
-     *
-     * @return \TencentAds\Model\WechatEcosystemAccounts|mixed
-     */
-    public function getWechatEcosystemAccounts()
-    {
-        return $this->container['wechatEcosystemAccounts'];
-    }
-
-    /**
-     * Sets wechatEcosystemAccounts
-     *
-     * @param \TencentAds\Model\WechatEcosystemAccounts|mixed $wechatEcosystemAccounts wechatEcosystemAccounts
-     *
-     * @return $this
-     */
-    public function setWechatEcosystemAccounts($wechatEcosystemAccounts)
-    {
-        $this->container['wechatEcosystemAccounts'] = $wechatEcosystemAccounts;
 
         return $this;
     }

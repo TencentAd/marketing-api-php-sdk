@@ -74,6 +74,7 @@ class DestinationTypeRead
     const WECHAT_VIDEO_TOPIC = 'PAGE_TYPE_WECHAT_VIDEO_TOPIC';
     const ARTICAL_WECHAT = 'PAGE_TYPE_ARTICAL_WECHAT';
     const CHANNELS_HALF_CARD = 'PAGE_TYPE_CHANNELS_HALF_CARD';
+    const TSA_OTT = 'PAGE_TYPE_TSA_OTT';
     
     /**
      * Gets allowable values of the enum
@@ -112,6 +113,7 @@ class DestinationTypeRead
             self::WECHAT_VIDEO_TOPIC,
             self::ARTICAL_WECHAT,
             self::CHANNELS_HALF_CARD,
+            self::TSA_OTT,
         ];
     }
 }

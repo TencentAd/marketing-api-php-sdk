@@ -67,7 +67,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'int',
         'adLockStatus' => '\TencentAds\Model\AdLockStatus',
         'targetingTranslation' => 'string',
-        'targetingSourceType' => '\TencentAds\Model\TargetingPkgSourceType',
+        'targetingSourceType' => '\TencentAds\Model\TargetingSourceType',
         'shareFromAccountId' => 'int',
         'shareFromTargetingId' => 'int',
         'targeting' => '\TencentAds\Model\ReadTargetingSetting'
@@ -496,7 +496,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets targetingSourceType
      *
-     * @return \TencentAds\Model\TargetingPkgSourceType|mixed
+     * @return \TencentAds\Model\TargetingSourceType|mixed
      */
     public function getTargetingSourceType()
     {
@@ -506,7 +506,7 @@ class TargetingsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets targetingSourceType
      *
-     * @param \TencentAds\Model\TargetingPkgSourceType|mixed $targetingSourceType targetingSourceType
+     * @param \TencentAds\Model\TargetingSourceType|mixed $targetingSourceType targetingSourceType
      *
      * @return $this
      */

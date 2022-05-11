@@ -46,6 +46,7 @@ class LocalProfileType
      */
     const _DEFAULT = 'LOCAL_PROFILE_TYPE_DEFAULT';
     const CUSTOMIZED = 'LOCAL_PROFILE_TYPE_CUSTOMIZED';
+    const INVAILD = 'LOCAL_PROFILE_TYPE_INVAILD';
     
     /**
      * Gets allowable values of the enum
@@ -56,6 +57,7 @@ class LocalProfileType
         return [
             self::_DEFAULT,
             self::CUSTOMIZED,
+            self::INVAILD,
         ];
     }
 }

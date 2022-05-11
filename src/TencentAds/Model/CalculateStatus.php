@@ -84,6 +84,11 @@ class CalculateStatus
     const WECHAT_CHANNELS_READY = 'CALCULATE_STATUS_WECHAT_CHANNELS_READY';
     const ENABLE = 'CALCULATE_STATUS_ENABLE';
     const EXCLUDE_DEL = 'CALCULATE_STATUS_EXCLUDE_DEL';
+    const LOCAL_WEPAY_OK = 'CALCULATE_STATUS_LOCAL_WEPAY_OK';
+    const LOCAL_WEPAY_REFUND = 'CALCULATE_STATUS_LOCAL_WEPAY_REFUND';
+    const CAM_TOTAL_LIMIT = 'CALCULATE_STATUS_CAM_TOTAL_LIMIT';
+    const ACTIVE_LATEOFFLINE = 'CALCULATE_STATUS_ACTIVE_LATEOFFLINE';
+    const PART_ACTIVE_LATEOFFLINE = 'CALCULATE_STATUS_PART_ACTIVE_LATEOFFLINE';
     
     /**
      * Gets allowable values of the enum
@@ -132,6 +137,11 @@ class CalculateStatus
             self::WECHAT_CHANNELS_READY,
             self::ENABLE,
             self::EXCLUDE_DEL,
+            self::LOCAL_WEPAY_OK,
+            self::LOCAL_WEPAY_REFUND,
+            self::CAM_TOTAL_LIMIT,
+            self::ACTIVE_LATEOFFLINE,
+            self::PART_ACTIVE_LATEOFFLINE,
         ];
     }
 }

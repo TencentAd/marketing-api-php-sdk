@@ -47,6 +47,7 @@ class TimeGranularity
     const DAILY = 'DAILY';
     const HOURLY = 'HOURLY';
     const SUMMARY = 'SUMMARY';
+    const UNKNOWN = 'UNKNOWN';
     
     /**
      * Gets allowable values of the enum
@@ -58,6 +59,7 @@ class TimeGranularity
             self::DAILY,
             self::HOURLY,
             self::SUMMARY,
+            self::UNKNOWN,
         ];
     }
 }

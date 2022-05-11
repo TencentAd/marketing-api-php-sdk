@@ -1,6 +1,6 @@
 <?php
 /**
- * LocalStoreLevel
+ * TargetingSourceType
  *
  * PHP version 5
  *
@@ -31,24 +31,21 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * LocalStoreLevel Class Doc Comment
+ * TargetingSourceType Class Doc Comment
  *
  * @category Class
- * @description 门店等级
+ * @description 定向包来源，自建或者来自分享
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class LocalStoreLevel
+class TargetingSourceType
 {
     /**
      * Possible values of this enum
      */
-    const UNDERPERFORMED = 'UNDERPERFORMED';
-    const NEED_IMPROVED = 'NEED_IMPROVED';
-    const GOOD = 'GOOD';
-    const GOOD_PLUS = 'GOOD_PLUS';
-    const OUTSTANDING = 'OUTSTANDING';
+    const CREATE = 'TARGETING_SOURCE_TYPE_CREATE';
+    const SHARE = 'TARGETING_SOURCE_TYPE_SHARE';
     
     /**
      * Gets allowable values of the enum
@@ -57,11 +54,8 @@ class LocalStoreLevel
     public static function getAllowableEnumValues()
     {
         return [
-            self::UNDERPERFORMED,
-            self::NEED_IMPROVED,
-            self::GOOD,
-            self::GOOD_PLUS,
-            self::OUTSTANDING,
+            self::CREATE,
+            self::SHARE,
         ];
     }
 }

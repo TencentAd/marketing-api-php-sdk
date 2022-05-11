@@ -48,6 +48,7 @@ class EcoLocalBusinessMode
     const LEADS_COUPON = 'LOCAL_BUSINESS_MODE_LEADS_COUPON';
     const LEADS_RESERVATION = 'LOCAL_BUSINESS_MODE_LEADS_RESERVATION';
     const SHOP_VOUCHER = 'LOCAL_BUSINESS_MODE_SHOP_VOUCHER';
+    const TAKEAWAY = 'LOCAL_BUSINESS_MODE_TAKEAWAY';
     
     /**
      * Gets allowable values of the enum
@@ -60,6 +61,7 @@ class EcoLocalBusinessMode
             self::LEADS_COUPON,
             self::LEADS_RESERVATION,
             self::SHOP_VOUCHER,
+            self::TAKEAWAY,
         ];
     }
 }
