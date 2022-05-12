@@ -139,7 +139,6 @@ use TencentAds\Container\VideomakerSubtitlesApiContainer;
 use TencentAds\Container\VideomakerTasksApiContainer;
 use TencentAds\Container\VideomakerVideocapturesApiContainer;
 use TencentAds\Container\VideosApiContainer;
-use TencentAds\Container\WechatAdFollowersApiContainer;
 use TencentAds\Container\WechatAdLabelsApiContainer;
 use TencentAds\Container\WechatAdvertiserApiContainer;
 use TencentAds\Container\WechatAdvertiserDetailApiContainer;
@@ -581,9 +580,6 @@ class App
 
     /** @var VideosApiContainer */
     public $videosApiContainer;
-
-    /** @var WechatAdFollowersApiContainer */
-    public $wechatAdFollowersApiContainer;
 
     /** @var WechatAdLabelsApiContainer */
     public $wechatAdLabelsApiContainer;
@@ -2588,20 +2584,6 @@ class App
             $this->videosApiContainer = $container;
         }
         return $this->videosApiContainer;
-    }
-
-
-    /**
-     * @return WechatAdFollowersApiContainer
-     */
-    public function wechatAdFollowers()
-    {
-        if (empty($this->wechatAdFollowersApiContainer)) {
-            $container = new WechatAdFollowersApiContainer();
-            $container->init($this, $this->getClient());
-            $this->wechatAdFollowersApiContainer = $container;
-        }
-        return $this->wechatAdFollowersApiContainer;
     }
 
 
