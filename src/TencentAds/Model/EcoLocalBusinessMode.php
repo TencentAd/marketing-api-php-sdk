@@ -45,10 +45,10 @@ class EcoLocalBusinessMode
      * Possible values of this enum
      */
     const _DEFAULT = 'LOCAL_BUSINESS_MODE_DEFAULT';
-    const TAKEAWAY = 'LOCAL_BUSINESS_MODE_TAKEAWAY';
     const LEADS_COUPON = 'LOCAL_BUSINESS_MODE_LEADS_COUPON';
     const LEADS_RESERVATION = 'LOCAL_BUSINESS_MODE_LEADS_RESERVATION';
     const SHOP_VOUCHER = 'LOCAL_BUSINESS_MODE_SHOP_VOUCHER';
+    const TAKEAWAY = 'LOCAL_BUSINESS_MODE_TAKEAWAY';
     
     /**
      * Gets allowable values of the enum
@@ -58,10 +58,10 @@ class EcoLocalBusinessMode
     {
         return [
             self::_DEFAULT,
-            self::TAKEAWAY,
             self::LEADS_COUPON,
             self::LEADS_RESERVATION,
             self::SHOP_VOUCHER,
+            self::TAKEAWAY,
         ];
     }
 }

@@ -62,7 +62,6 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
         'version' => 'string',
         'icon' => 'string',
         'icon512' => 'string',
-        'iconImageId' => 'string',
         'averageRating' => 'string',
         'packageSize' => 'string',
         'genres' => 'string[]',
@@ -80,7 +79,6 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
         'version' => null,
         'icon' => null,
         'icon512' => null,
-        'iconImageId' => null,
         'averageRating' => null,
         'packageSize' => null,
         'genres' => null,
@@ -119,7 +117,6 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
         'version' => 'version',
         'icon' => 'icon',
         'icon512' => 'icon_512',
-        'iconImageId' => 'icon_image_id',
         'averageRating' => 'average_rating',
         'packageSize' => 'package_size',
         'genres' => 'genres',
@@ -137,7 +134,6 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
         'version' => 'setVersion',
         'icon' => 'setIcon',
         'icon512' => 'setIcon512',
-        'iconImageId' => 'setIconImageId',
         'averageRating' => 'setAverageRating',
         'packageSize' => 'setPackageSize',
         'genres' => 'setGenres',
@@ -155,7 +151,6 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
         'version' => 'getVersion',
         'icon' => 'getIcon',
         'icon512' => 'getIcon512',
-        'iconImageId' => 'getIconImageId',
         'averageRating' => 'getAverageRating',
         'packageSize' => 'getPackageSize',
         'genres' => 'getGenres',
@@ -227,7 +222,6 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
         $this->container['version'] = isset($data['version']) ? $data['version'] : null;
         $this->container['icon'] = isset($data['icon']) ? $data['icon'] : null;
         $this->container['icon512'] = isset($data['icon512']) ? $data['icon512'] : null;
-        $this->container['iconImageId'] = isset($data['iconImageId']) ? $data['iconImageId'] : null;
         $this->container['averageRating'] = isset($data['averageRating']) ? $data['averageRating'] : null;
         $this->container['packageSize'] = isset($data['packageSize']) ? $data['packageSize'] : null;
         $this->container['genres'] = isset($data['genres']) ? $data['genres'] : null;
@@ -351,30 +345,6 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
     public function setIcon512($icon512)
     {
         $this->container['icon512'] = $icon512;
-
-        return $this;
-    }
-
-    /**
-     * Gets iconImageId
-     *
-     * @return string|mixed
-     */
-    public function getIconImageId()
-    {
-        return $this->container['iconImageId'];
-    }
-
-    /**
-     * Sets iconImageId
-     *
-     * @param string|mixed $iconImageId iconImageId
-     *
-     * @return $this
-     */
-    public function setIconImageId($iconImageId)
-    {
-        $this->container['iconImageId'] = $iconImageId;
 
         return $this;
     }

@@ -44,7 +44,6 @@ class CalculateStatus
     /**
      * Possible values of this enum
      */
-    const UNKNOWN = 'CALCULATE_STATUS_UNKNOWN';
     const NORMAL = 'CALCULATE_STATUS_NORMAL';
     const PENDING = 'CALCULATE_STATUS_PENDING';
     const DENIED = 'CALCULATE_STATUS_DENIED';
@@ -71,24 +70,25 @@ class CalculateStatus
     const ACTIVE_CAM_LIMIT = 'CALCULATE_STATUS_ACTIVE_CAM_LIMIT';
     const ACTIVE_CAM_PAUSED = 'CALCULATE_STATUS_ACTIVE_CAM_PAUSED';
     const PART_ENABLE = 'CALCULATE_STATUS_PART_ENABLE';
-    const ACTIVE_AD_LIMIT = 'CALCULATE_STATUS_ACTIVE_AD_LIMIT';
     const UNAUDIT_RE = 'CALCULATE_STATUS_UNAUDIT_RE';
     const PART_READY = 'CALCULATE_STATUS_PART_READY';
     const PART_ACTIVE = 'CALCULATE_STATUS_PART_ACTIVE';
     const PART_PREPARE = 'CALCULATE_STATUS_PART_PREPARE';
     const PART_INVALID = 'CALCULATE_STATUS_PART_INVALID';
+    const LOCAL_WEPAY_PENDING = 'CALCULATE_STATUS_LOCAL_WEPAY_PENDING';
+    const AD_PARTIAL_NORMAL = 'CALCULATE_STATUS_AD_PARTIAL_NORMAL';
+    const AD_PARTIAL_PENDING = 'CALCULATE_STATUS_AD_PARTIAL_PENDING';
+    const UNKNOWN = 'CALCULATE_STATUS_UNKNOWN';
+    const ACTIVE_AD_LIMIT = 'CALCULATE_STATUS_ACTIVE_AD_LIMIT';
     const WECHAT_CHANNELS_STOP = 'CALCULATE_STATUS_WECHAT_CHANNELS_STOP';
     const WECHAT_CHANNELS_READY = 'CALCULATE_STATUS_WECHAT_CHANNELS_READY';
-    const LOCAL_WEPAY_PENDING = 'CALCULATE_STATUS_LOCAL_WEPAY_PENDING';
+    const ENABLE = 'CALCULATE_STATUS_ENABLE';
+    const EXCLUDE_DEL = 'CALCULATE_STATUS_EXCLUDE_DEL';
     const LOCAL_WEPAY_OK = 'CALCULATE_STATUS_LOCAL_WEPAY_OK';
     const LOCAL_WEPAY_REFUND = 'CALCULATE_STATUS_LOCAL_WEPAY_REFUND';
     const CAM_TOTAL_LIMIT = 'CALCULATE_STATUS_CAM_TOTAL_LIMIT';
     const ACTIVE_LATEOFFLINE = 'CALCULATE_STATUS_ACTIVE_LATEOFFLINE';
     const PART_ACTIVE_LATEOFFLINE = 'CALCULATE_STATUS_PART_ACTIVE_LATEOFFLINE';
-    const ENABLE = 'CALCULATE_STATUS_ENABLE';
-    const EXCLUDE_DEL = 'CALCULATE_STATUS_EXCLUDE_DEL';
-    const AD_PARTIAL_NORMAL = 'CALCULATE_STATUS_AD_PARTIAL_NORMAL';
-    const AD_PARTIAL_PENDING = 'CALCULATE_STATUS_AD_PARTIAL_PENDING';
     
     /**
      * Gets allowable values of the enum
@@ -97,7 +97,6 @@ class CalculateStatus
     public static function getAllowableEnumValues()
     {
         return [
-            self::UNKNOWN,
             self::NORMAL,
             self::PENDING,
             self::DENIED,
@@ -124,24 +123,25 @@ class CalculateStatus
             self::ACTIVE_CAM_LIMIT,
             self::ACTIVE_CAM_PAUSED,
             self::PART_ENABLE,
-            self::ACTIVE_AD_LIMIT,
             self::UNAUDIT_RE,
             self::PART_READY,
             self::PART_ACTIVE,
             self::PART_PREPARE,
             self::PART_INVALID,
+            self::LOCAL_WEPAY_PENDING,
+            self::AD_PARTIAL_NORMAL,
+            self::AD_PARTIAL_PENDING,
+            self::UNKNOWN,
+            self::ACTIVE_AD_LIMIT,
             self::WECHAT_CHANNELS_STOP,
             self::WECHAT_CHANNELS_READY,
-            self::LOCAL_WEPAY_PENDING,
+            self::ENABLE,
+            self::EXCLUDE_DEL,
             self::LOCAL_WEPAY_OK,
             self::LOCAL_WEPAY_REFUND,
             self::CAM_TOTAL_LIMIT,
             self::ACTIVE_LATEOFFLINE,
             self::PART_ACTIVE_LATEOFFLINE,
-            self::ENABLE,
-            self::EXCLUDE_DEL,
-            self::AD_PARTIAL_NORMAL,
-            self::AD_PARTIAL_PENDING,
         ];
     }
 }

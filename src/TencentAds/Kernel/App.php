@@ -56,7 +56,6 @@ use TencentAds\Container\CustomFeaturesApiContainer;
 use TencentAds\Container\CustomTagFilesApiContainer;
 use TencentAds\Container\CustomTagsApiContainer;
 use TencentAds\Container\DailyBalanceReportApiContainer;
-use TencentAds\Container\DailyCostApiContainer;
 use TencentAds\Container\DailyReportsApiContainer;
 use TencentAds\Container\DiagnosisApiContainer;
 use TencentAds\Container\DplabelAdLabelApiContainer;
@@ -140,12 +139,7 @@ use TencentAds\Container\VideomakerTasksApiContainer;
 use TencentAds\Container\VideomakerVideocapturesApiContainer;
 use TencentAds\Container\VideosApiContainer;
 use TencentAds\Container\WechatAdLabelsApiContainer;
-use TencentAds\Container\WechatAdvertiserApiContainer;
-use TencentAds\Container\WechatAdvertiserDetailApiContainer;
 use TencentAds\Container\WechatAdvertiserLocalBusinessApiContainer;
-use TencentAds\Container\WechatAdvertiserSpecificationApiContainer;
-use TencentAds\Container\WechatAgencyApiContainer;
-use TencentAds\Container\WechatDailyCostApiContainer;
 use TencentAds\Container\WechatFundStatementsDetailedApiContainer;
 use TencentAds\Container\WechatFundTransferApiContainer;
 use TencentAds\Container\WechatFundsApiContainer;
@@ -331,9 +325,6 @@ class App
 
     /** @var DailyBalanceReportApiContainer */
     public $dailyBalanceReportApiContainer;
-
-    /** @var DailyCostApiContainer */
-    public $dailyCostApiContainer;
 
     /** @var DailyReportsApiContainer */
     public $dailyReportsApiContainer;
@@ -584,23 +575,8 @@ class App
     /** @var WechatAdLabelsApiContainer */
     public $wechatAdLabelsApiContainer;
 
-    /** @var WechatAdvertiserApiContainer */
-    public $wechatAdvertiserApiContainer;
-
-    /** @var WechatAdvertiserDetailApiContainer */
-    public $wechatAdvertiserDetailApiContainer;
-
     /** @var WechatAdvertiserLocalBusinessApiContainer */
     public $wechatAdvertiserLocalBusinessApiContainer;
-
-    /** @var WechatAdvertiserSpecificationApiContainer */
-    public $wechatAdvertiserSpecificationApiContainer;
-
-    /** @var WechatAgencyApiContainer */
-    public $wechatAgencyApiContainer;
-
-    /** @var WechatDailyCostApiContainer */
-    public $wechatDailyCostApiContainer;
 
     /** @var WechatFundStatementsDetailedApiContainer */
     public $wechatFundStatementsDetailedApiContainer;
@@ -1422,20 +1398,6 @@ class App
             $this->dailyBalanceReportApiContainer = $container;
         }
         return $this->dailyBalanceReportApiContainer;
-    }
-
-
-    /**
-     * @return DailyCostApiContainer
-     */
-    public function dailyCost()
-    {
-        if (empty($this->dailyCostApiContainer)) {
-            $container = new DailyCostApiContainer();
-            $container->init($this, $this->getClient());
-            $this->dailyCostApiContainer = $container;
-        }
-        return $this->dailyCostApiContainer;
     }
 
 
@@ -2602,34 +2564,6 @@ class App
 
 
     /**
-     * @return WechatAdvertiserApiContainer
-     */
-    public function wechatAdvertiser()
-    {
-        if (empty($this->wechatAdvertiserApiContainer)) {
-            $container = new WechatAdvertiserApiContainer();
-            $container->init($this, $this->getClient());
-            $this->wechatAdvertiserApiContainer = $container;
-        }
-        return $this->wechatAdvertiserApiContainer;
-    }
-
-
-    /**
-     * @return WechatAdvertiserDetailApiContainer
-     */
-    public function wechatAdvertiserDetail()
-    {
-        if (empty($this->wechatAdvertiserDetailApiContainer)) {
-            $container = new WechatAdvertiserDetailApiContainer();
-            $container->init($this, $this->getClient());
-            $this->wechatAdvertiserDetailApiContainer = $container;
-        }
-        return $this->wechatAdvertiserDetailApiContainer;
-    }
-
-
-    /**
      * @return WechatAdvertiserLocalBusinessApiContainer
      */
     public function wechatAdvertiserLocalBusiness()
@@ -2640,48 +2574,6 @@ class App
             $this->wechatAdvertiserLocalBusinessApiContainer = $container;
         }
         return $this->wechatAdvertiserLocalBusinessApiContainer;
-    }
-
-
-    /**
-     * @return WechatAdvertiserSpecificationApiContainer
-     */
-    public function wechatAdvertiserSpecification()
-    {
-        if (empty($this->wechatAdvertiserSpecificationApiContainer)) {
-            $container = new WechatAdvertiserSpecificationApiContainer();
-            $container->init($this, $this->getClient());
-            $this->wechatAdvertiserSpecificationApiContainer = $container;
-        }
-        return $this->wechatAdvertiserSpecificationApiContainer;
-    }
-
-
-    /**
-     * @return WechatAgencyApiContainer
-     */
-    public function wechatAgency()
-    {
-        if (empty($this->wechatAgencyApiContainer)) {
-            $container = new WechatAgencyApiContainer();
-            $container->init($this, $this->getClient());
-            $this->wechatAgencyApiContainer = $container;
-        }
-        return $this->wechatAgencyApiContainer;
-    }
-
-
-    /**
-     * @return WechatDailyCostApiContainer
-     */
-    public function wechatDailyCost()
-    {
-        if (empty($this->wechatDailyCostApiContainer)) {
-            $container = new WechatDailyCostApiContainer();
-            $container->init($this, $this->getClient());
-            $this->wechatDailyCostApiContainer = $container;
-        }
-        return $this->wechatDailyCostApiContainer;
     }
 
 
