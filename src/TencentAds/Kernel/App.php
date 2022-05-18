@@ -107,6 +107,8 @@ use TencentAds\Container\ProductItemsVerticalsApiContainer;
 use TencentAds\Container\ProductSeriesApiContainer;
 use TencentAds\Container\ProductsSystemStatusApiContainer;
 use TencentAds\Container\ProfilesApiContainer;
+use TencentAds\Container\ProgrammedApiContainer;
+use TencentAds\Container\ProgrammedTemplateApiContainer;
 use TencentAds\Container\PromotedObjectsApiContainer;
 use TencentAds\Container\PropertyFileSessionsApiContainer;
 use TencentAds\Container\PropertyFilesApiContainer;
@@ -478,6 +480,12 @@ class App
 
     /** @var ProfilesApiContainer */
     public $profilesApiContainer;
+
+    /** @var ProgrammedApiContainer */
+    public $programmedApiContainer;
+
+    /** @var ProgrammedTemplateApiContainer */
+    public $programmedTemplateApiContainer;
 
     /** @var PromotedObjectsApiContainer */
     public $promotedObjectsApiContainer;
@@ -2112,6 +2120,34 @@ class App
             $this->profilesApiContainer = $container;
         }
         return $this->profilesApiContainer;
+    }
+
+
+    /**
+     * @return ProgrammedApiContainer
+     */
+    public function programmed()
+    {
+        if (empty($this->programmedApiContainer)) {
+            $container = new ProgrammedApiContainer();
+            $container->init($this, $this->getClient());
+            $this->programmedApiContainer = $container;
+        }
+        return $this->programmedApiContainer;
+    }
+
+
+    /**
+     * @return ProgrammedTemplateApiContainer
+     */
+    public function programmedTemplate()
+    {
+        if (empty($this->programmedTemplateApiContainer)) {
+            $container = new ProgrammedTemplateApiContainer();
+            $container->init($this, $this->getClient());
+            $this->programmedTemplateApiContainer = $container;
+        }
+        return $this->programmedTemplateApiContainer;
     }
 
 

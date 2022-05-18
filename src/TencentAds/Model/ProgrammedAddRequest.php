@@ -1,6 +1,6 @@
 <?php
 /**
- * FundTransferAddRequest
+ * ProgrammedAddRequest
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * FundTransferAddRequest Class Doc Comment
+ * ProgrammedAddRequest Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class FundTransferAddRequest implements ModelInterface, ArrayAccess
+class ProgrammedAddRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'FundTransferAddRequest';
+    protected static $swaggerModelName = 'ProgrammedAddRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,13 +57,10 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'amount' => 'int',
-        'transferType' => 'string',
-        'externalBillNo' => 'string',
-        'memo' => 'string',
-        'transferTryBest' => 'int',
         'accountId' => 'int',
-        'fundType' => '\TencentAds\Model\AccountTypeMap'
+        'adMetadata' => '\TencentAds\Model\AdMetadataStruct',
+        'autoDerivedProgramCreativeSwitch' => 'bool',
+        'createMaterialGroups' => '\TencentAds\Model\MaterialGroupCreateStruct[]'
     ];
 
     /**
@@ -72,13 +69,10 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'amount' => 'int64',
-        'transferType' => null,
-        'externalBillNo' => null,
-        'memo' => null,
-        'transferTryBest' => 'int64',
         'accountId' => 'int64',
-        'fundType' => null
+        'adMetadata' => null,
+        'autoDerivedProgramCreativeSwitch' => null,
+        'createMaterialGroups' => null
     ];
 
     /**
@@ -108,13 +102,10 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'amount' => 'amount',
-        'transferType' => 'transfer_type',
-        'externalBillNo' => 'external_bill_no',
-        'memo' => 'memo',
-        'transferTryBest' => 'transfer_try_best',
         'accountId' => 'account_id',
-        'fundType' => 'fund_type'
+        'adMetadata' => 'ad_metadata',
+        'autoDerivedProgramCreativeSwitch' => 'auto_derived_program_creative_switch',
+        'createMaterialGroups' => 'create_material_groups'
     ];
 
     /**
@@ -123,13 +114,10 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'amount' => 'setAmount',
-        'transferType' => 'setTransferType',
-        'externalBillNo' => 'setExternalBillNo',
-        'memo' => 'setMemo',
-        'transferTryBest' => 'setTransferTryBest',
         'accountId' => 'setAccountId',
-        'fundType' => 'setFundType'
+        'adMetadata' => 'setAdMetadata',
+        'autoDerivedProgramCreativeSwitch' => 'setAutoDerivedProgramCreativeSwitch',
+        'createMaterialGroups' => 'setCreateMaterialGroups'
     ];
 
     /**
@@ -138,13 +126,10 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'amount' => 'getAmount',
-        'transferType' => 'getTransferType',
-        'externalBillNo' => 'getExternalBillNo',
-        'memo' => 'getMemo',
-        'transferTryBest' => 'getTransferTryBest',
         'accountId' => 'getAccountId',
-        'fundType' => 'getFundType'
+        'adMetadata' => 'getAdMetadata',
+        'autoDerivedProgramCreativeSwitch' => 'getAutoDerivedProgramCreativeSwitch',
+        'createMaterialGroups' => 'getCreateMaterialGroups'
     ];
 
     /**
@@ -207,13 +192,10 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
-        $this->container['transferType'] = isset($data['transferType']) ? $data['transferType'] : null;
-        $this->container['externalBillNo'] = isset($data['externalBillNo']) ? $data['externalBillNo'] : null;
-        $this->container['memo'] = isset($data['memo']) ? $data['memo'] : null;
-        $this->container['transferTryBest'] = isset($data['transferTryBest']) ? $data['transferTryBest'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['fundType'] = isset($data['fundType']) ? $data['fundType'] : null;
+        $this->container['adMetadata'] = isset($data['adMetadata']) ? $data['adMetadata'] : null;
+        $this->container['autoDerivedProgramCreativeSwitch'] = isset($data['autoDerivedProgramCreativeSwitch']) ? $data['autoDerivedProgramCreativeSwitch'] : null;
+        $this->container['createMaterialGroups'] = isset($data['createMaterialGroups']) ? $data['createMaterialGroups'] : null;
     }
 
     /**
@@ -241,126 +223,6 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets amount
-     *
-     * @return int|mixed
-     */
-    public function getAmount()
-    {
-        return $this->container['amount'];
-    }
-
-    /**
-     * Sets amount
-     *
-     * @param int|mixed $amount amount
-     *
-     * @return $this
-     */
-    public function setAmount($amount)
-    {
-        $this->container['amount'] = $amount;
-
-        return $this;
-    }
-
-    /**
-     * Gets transferType
-     *
-     * @return string|mixed
-     */
-    public function getTransferType()
-    {
-        return $this->container['transferType'];
-    }
-
-    /**
-     * Sets transferType
-     *
-     * @param string|mixed $transferType transferType
-     *
-     * @return $this
-     */
-    public function setTransferType($transferType)
-    {
-        $this->container['transferType'] = $transferType;
-
-        return $this;
-    }
-
-    /**
-     * Gets externalBillNo
-     *
-     * @return string|mixed
-     */
-    public function getExternalBillNo()
-    {
-        return $this->container['externalBillNo'];
-    }
-
-    /**
-     * Sets externalBillNo
-     *
-     * @param string|mixed $externalBillNo externalBillNo
-     *
-     * @return $this
-     */
-    public function setExternalBillNo($externalBillNo)
-    {
-        $this->container['externalBillNo'] = $externalBillNo;
-
-        return $this;
-    }
-
-    /**
-     * Gets memo
-     *
-     * @return string|mixed
-     */
-    public function getMemo()
-    {
-        return $this->container['memo'];
-    }
-
-    /**
-     * Sets memo
-     *
-     * @param string|mixed $memo memo
-     *
-     * @return $this
-     */
-    public function setMemo($memo)
-    {
-        $this->container['memo'] = $memo;
-
-        return $this;
-    }
-
-    /**
-     * Gets transferTryBest
-     *
-     * @return int|mixed
-     */
-    public function getTransferTryBest()
-    {
-        return $this->container['transferTryBest'];
-    }
-
-    /**
-     * Sets transferTryBest
-     *
-     * @param int|mixed $transferTryBest transferTryBest
-     *
-     * @return $this
-     */
-    public function setTransferTryBest($transferTryBest)
-    {
-        $this->container['transferTryBest'] = $transferTryBest;
-
-        return $this;
-    }
-
-    /**
      * Gets accountId
      *
      * @return int|mixed
@@ -385,25 +247,73 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets fundType
+     * Gets adMetadata
      *
-     * @return \TencentAds\Model\AccountTypeMap|mixed
+     * @return \TencentAds\Model\AdMetadataStruct|mixed
      */
-    public function getFundType()
+    public function getAdMetadata()
     {
-        return $this->container['fundType'];
+        return $this->container['adMetadata'];
     }
 
     /**
-     * Sets fundType
+     * Sets adMetadata
      *
-     * @param \TencentAds\Model\AccountTypeMap|mixed $fundType fundType
+     * @param \TencentAds\Model\AdMetadataStruct|mixed $adMetadata adMetadata
      *
      * @return $this
      */
-    public function setFundType($fundType)
+    public function setAdMetadata($adMetadata)
     {
-        $this->container['fundType'] = $fundType;
+        $this->container['adMetadata'] = $adMetadata;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoDerivedProgramCreativeSwitch
+     *
+     * @return bool|mixed
+     */
+    public function getAutoDerivedProgramCreativeSwitch()
+    {
+        return $this->container['autoDerivedProgramCreativeSwitch'];
+    }
+
+    /**
+     * Sets autoDerivedProgramCreativeSwitch
+     *
+     * @param bool|mixed $autoDerivedProgramCreativeSwitch autoDerivedProgramCreativeSwitch
+     *
+     * @return $this
+     */
+    public function setAutoDerivedProgramCreativeSwitch($autoDerivedProgramCreativeSwitch)
+    {
+        $this->container['autoDerivedProgramCreativeSwitch'] = $autoDerivedProgramCreativeSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets createMaterialGroups
+     *
+     * @return \TencentAds\Model\MaterialGroupCreateStruct[]|mixed
+     */
+    public function getCreateMaterialGroups()
+    {
+        return $this->container['createMaterialGroups'];
+    }
+
+    /**
+     * Sets createMaterialGroups
+     *
+     * @param \TencentAds\Model\MaterialGroupCreateStruct[]|mixed $createMaterialGroups createMaterialGroups
+     *
+     * @return $this
+     */
+    public function setCreateMaterialGroups($createMaterialGroups)
+    {
+        $this->container['createMaterialGroups'] = $createMaterialGroups;
 
         return $this;
     }

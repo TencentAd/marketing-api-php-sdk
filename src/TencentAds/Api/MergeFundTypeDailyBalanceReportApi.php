@@ -90,7 +90,7 @@ class MergeFundTypeDailyBalanceReportApi
     /**
      * Operation mergeFundTypeDailyBalanceReportGet
      *
-     * 获取资金合并类资金账户日结明细
+     * 获取资金合并类型资金账户日结明细
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  \TencentAds\Model\DateRangeTransaction|mixed $dateRange dateRange (required)
@@ -111,7 +111,7 @@ class MergeFundTypeDailyBalanceReportApi
     /**
      * Operation mergeFundTypeDailyBalanceReportGetWithHttpInfo
      *
-     * 获取资金合并类资金账户日结明细
+     * 获取资金合并类型资金账户日结明细
      *
      * @param  int|mixed $accountId (required)
      * @param  \TencentAds\Model\DateRangeTransaction|mixed $dateRange (required)
@@ -190,7 +190,7 @@ class MergeFundTypeDailyBalanceReportApi
     /**
      * Operation mergeFundTypeDailyBalanceReportGetAsync
      *
-     * 获取资金合并类资金账户日结明细
+     * 获取资金合并类型资金账户日结明细
      *
      * @param  int|mixed $accountId (required)
      * @param  \TencentAds\Model\DateRangeTransaction|mixed $dateRange (required)
@@ -214,7 +214,7 @@ class MergeFundTypeDailyBalanceReportApi
     /**
      * Operation mergeFundTypeDailyBalanceReportGetAsyncWithHttpInfo
      *
-     * 获取资金合并类资金账户日结明细
+     * 获取资金合并类型资金账户日结明细
      *
      * @param  int|mixed $accountId (required)
      * @param  \TencentAds\Model\DateRangeTransaction|mixed $dateRange (required)

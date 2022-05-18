@@ -1,6 +1,6 @@
 <?php
 /**
- * FundTransferAddRequest
+ * SortByStruct
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * FundTransferAddRequest Class Doc Comment
+ * SortByStruct Class Doc Comment
  *
  * @category Class
+ * @description 排序
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class FundTransferAddRequest implements ModelInterface, ArrayAccess
+class SortByStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'FundTransferAddRequest';
+    protected static $swaggerModelName = 'sort_by_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,13 +58,8 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'amount' => 'int',
-        'transferType' => 'string',
-        'externalBillNo' => 'string',
-        'memo' => 'string',
-        'transferTryBest' => 'int',
-        'accountId' => 'int',
-        'fundType' => '\TencentAds\Model\AccountTypeMap'
+        'field' => '\TencentAds\Model\FieldTypeEnum',
+        'desc' => '\TencentAds\Model\Sort'
     ];
 
     /**
@@ -72,13 +68,8 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'amount' => 'int64',
-        'transferType' => null,
-        'externalBillNo' => null,
-        'memo' => null,
-        'transferTryBest' => 'int64',
-        'accountId' => 'int64',
-        'fundType' => null
+        'field' => null,
+        'desc' => null
     ];
 
     /**
@@ -108,13 +99,8 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'amount' => 'amount',
-        'transferType' => 'transfer_type',
-        'externalBillNo' => 'external_bill_no',
-        'memo' => 'memo',
-        'transferTryBest' => 'transfer_try_best',
-        'accountId' => 'account_id',
-        'fundType' => 'fund_type'
+        'field' => 'field',
+        'desc' => 'desc'
     ];
 
     /**
@@ -123,13 +109,8 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'amount' => 'setAmount',
-        'transferType' => 'setTransferType',
-        'externalBillNo' => 'setExternalBillNo',
-        'memo' => 'setMemo',
-        'transferTryBest' => 'setTransferTryBest',
-        'accountId' => 'setAccountId',
-        'fundType' => 'setFundType'
+        'field' => 'setField',
+        'desc' => 'setDesc'
     ];
 
     /**
@@ -138,13 +119,8 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'amount' => 'getAmount',
-        'transferType' => 'getTransferType',
-        'externalBillNo' => 'getExternalBillNo',
-        'memo' => 'getMemo',
-        'transferTryBest' => 'getTransferTryBest',
-        'accountId' => 'getAccountId',
-        'fundType' => 'getFundType'
+        'field' => 'getField',
+        'desc' => 'getDesc'
     ];
 
     /**
@@ -207,13 +183,8 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
-        $this->container['transferType'] = isset($data['transferType']) ? $data['transferType'] : null;
-        $this->container['externalBillNo'] = isset($data['externalBillNo']) ? $data['externalBillNo'] : null;
-        $this->container['memo'] = isset($data['memo']) ? $data['memo'] : null;
-        $this->container['transferTryBest'] = isset($data['transferTryBest']) ? $data['transferTryBest'] : null;
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['fundType'] = isset($data['fundType']) ? $data['fundType'] : null;
+        $this->container['field'] = isset($data['field']) ? $data['field'] : null;
+        $this->container['desc'] = isset($data['desc']) ? $data['desc'] : null;
     }
 
     /**
@@ -241,169 +212,49 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets amount
+     * Gets field
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\FieldTypeEnum|mixed
      */
-    public function getAmount()
+    public function getField()
     {
-        return $this->container['amount'];
+        return $this->container['field'];
     }
 
     /**
-     * Sets amount
+     * Sets field
      *
-     * @param int|mixed $amount amount
+     * @param \TencentAds\Model\FieldTypeEnum|mixed $field field
      *
      * @return $this
      */
-    public function setAmount($amount)
+    public function setField($field)
     {
-        $this->container['amount'] = $amount;
+        $this->container['field'] = $field;
 
         return $this;
     }
 
     /**
-     * Gets transferType
+     * Gets desc
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\Sort|mixed
      */
-    public function getTransferType()
+    public function getDesc()
     {
-        return $this->container['transferType'];
+        return $this->container['desc'];
     }
 
     /**
-     * Sets transferType
+     * Sets desc
      *
-     * @param string|mixed $transferType transferType
+     * @param \TencentAds\Model\Sort|mixed $desc desc
      *
      * @return $this
      */
-    public function setTransferType($transferType)
+    public function setDesc($desc)
     {
-        $this->container['transferType'] = $transferType;
-
-        return $this;
-    }
-
-    /**
-     * Gets externalBillNo
-     *
-     * @return string|mixed
-     */
-    public function getExternalBillNo()
-    {
-        return $this->container['externalBillNo'];
-    }
-
-    /**
-     * Sets externalBillNo
-     *
-     * @param string|mixed $externalBillNo externalBillNo
-     *
-     * @return $this
-     */
-    public function setExternalBillNo($externalBillNo)
-    {
-        $this->container['externalBillNo'] = $externalBillNo;
-
-        return $this;
-    }
-
-    /**
-     * Gets memo
-     *
-     * @return string|mixed
-     */
-    public function getMemo()
-    {
-        return $this->container['memo'];
-    }
-
-    /**
-     * Sets memo
-     *
-     * @param string|mixed $memo memo
-     *
-     * @return $this
-     */
-    public function setMemo($memo)
-    {
-        $this->container['memo'] = $memo;
-
-        return $this;
-    }
-
-    /**
-     * Gets transferTryBest
-     *
-     * @return int|mixed
-     */
-    public function getTransferTryBest()
-    {
-        return $this->container['transferTryBest'];
-    }
-
-    /**
-     * Sets transferTryBest
-     *
-     * @param int|mixed $transferTryBest transferTryBest
-     *
-     * @return $this
-     */
-    public function setTransferTryBest($transferTryBest)
-    {
-        $this->container['transferTryBest'] = $transferTryBest;
-
-        return $this;
-    }
-
-    /**
-     * Gets accountId
-     *
-     * @return int|mixed
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int|mixed $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
-
-        return $this;
-    }
-
-    /**
-     * Gets fundType
-     *
-     * @return \TencentAds\Model\AccountTypeMap|mixed
-     */
-    public function getFundType()
-    {
-        return $this->container['fundType'];
-    }
-
-    /**
-     * Sets fundType
-     *
-     * @param \TencentAds\Model\AccountTypeMap|mixed $fundType fundType
-     *
-     * @return $this
-     */
-    public function setFundType($fundType)
-    {
-        $this->container['fundType'] = $fundType;
+        $this->container['desc'] = $desc;
 
         return $this;
     }

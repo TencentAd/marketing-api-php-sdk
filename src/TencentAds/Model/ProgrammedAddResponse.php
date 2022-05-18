@@ -1,6 +1,6 @@
 <?php
 /**
- * FundTransferAddRequest
+ * ProgrammedAddResponse
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * FundTransferAddRequest Class Doc Comment
+ * ProgrammedAddResponse Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class FundTransferAddRequest implements ModelInterface, ArrayAccess
+class ProgrammedAddResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'FundTransferAddRequest';
+    protected static $swaggerModelName = 'ProgrammedAddResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,13 +57,11 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'amount' => 'int',
-        'transferType' => 'string',
-        'externalBillNo' => 'string',
-        'memo' => 'string',
-        'transferTryBest' => 'int',
-        'accountId' => 'int',
-        'fundType' => '\TencentAds\Model\AccountTypeMap'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\ProgrammedAddResponseData'
     ];
 
     /**
@@ -72,13 +70,11 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'amount' => 'int64',
-        'transferType' => null,
-        'externalBillNo' => null,
-        'memo' => null,
-        'transferTryBest' => 'int64',
-        'accountId' => 'int64',
-        'fundType' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -108,13 +104,11 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'amount' => 'amount',
-        'transferType' => 'transfer_type',
-        'externalBillNo' => 'external_bill_no',
-        'memo' => 'memo',
-        'transferTryBest' => 'transfer_try_best',
-        'accountId' => 'account_id',
-        'fundType' => 'fund_type'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -123,13 +117,11 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'amount' => 'setAmount',
-        'transferType' => 'setTransferType',
-        'externalBillNo' => 'setExternalBillNo',
-        'memo' => 'setMemo',
-        'transferTryBest' => 'setTransferTryBest',
-        'accountId' => 'setAccountId',
-        'fundType' => 'setFundType'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -138,13 +130,11 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'amount' => 'getAmount',
-        'transferType' => 'getTransferType',
-        'externalBillNo' => 'getExternalBillNo',
-        'memo' => 'getMemo',
-        'transferTryBest' => 'getTransferTryBest',
-        'accountId' => 'getAccountId',
-        'fundType' => 'getFundType'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -207,13 +197,11 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
-        $this->container['transferType'] = isset($data['transferType']) ? $data['transferType'] : null;
-        $this->container['externalBillNo'] = isset($data['externalBillNo']) ? $data['externalBillNo'] : null;
-        $this->container['memo'] = isset($data['memo']) ? $data['memo'] : null;
-        $this->container['transferTryBest'] = isset($data['transferTryBest']) ? $data['transferTryBest'] : null;
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['fundType'] = isset($data['fundType']) ? $data['fundType'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -241,169 +229,121 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets amount
+     * Gets code
      *
      * @return int|mixed
      */
-    public function getAmount()
+    public function getCode()
     {
-        return $this->container['amount'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets amount
+     * Sets code
      *
-     * @param int|mixed $amount amount
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setAmount($amount)
+    public function setCode($code)
     {
-        $this->container['amount'] = $amount;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets transferType
+     * Gets message
      *
      * @return string|mixed
      */
-    public function getTransferType()
+    public function getMessage()
     {
-        return $this->container['transferType'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets transferType
+     * Sets message
      *
-     * @param string|mixed $transferType transferType
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setTransferType($transferType)
+    public function setMessage($message)
     {
-        $this->container['transferType'] = $transferType;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets externalBillNo
+     * Gets messageCn
      *
      * @return string|mixed
      */
-    public function getExternalBillNo()
+    public function getMessageCn()
     {
-        return $this->container['externalBillNo'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets externalBillNo
+     * Sets messageCn
      *
-     * @param string|mixed $externalBillNo externalBillNo
+     * @param string|mixed $messageCn messageCn
      *
      * @return $this
      */
-    public function setExternalBillNo($externalBillNo)
+    public function setMessageCn($messageCn)
     {
-        $this->container['externalBillNo'] = $externalBillNo;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets memo
+     * Gets errors
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\ApiErrorStruct[]|mixed
      */
-    public function getMemo()
+    public function getErrors()
     {
-        return $this->container['memo'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets memo
+     * Sets errors
      *
-     * @param string|mixed $memo memo
+     * @param \TencentAds\Model\ApiErrorStruct[]|mixed $errors errors
      *
      * @return $this
      */
-    public function setMemo($memo)
+    public function setErrors($errors)
     {
-        $this->container['memo'] = $memo;
+        $this->container['errors'] = $errors;
 
         return $this;
     }
 
     /**
-     * Gets transferTryBest
+     * Gets data
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\ProgrammedAddResponseData|mixed
      */
-    public function getTransferTryBest()
+    public function getData()
     {
-        return $this->container['transferTryBest'];
+        return $this->container['data'];
     }
 
     /**
-     * Sets transferTryBest
+     * Sets data
      *
-     * @param int|mixed $transferTryBest transferTryBest
+     * @param \TencentAds\Model\ProgrammedAddResponseData|mixed $data data
      *
      * @return $this
      */
-    public function setTransferTryBest($transferTryBest)
+    public function setData($data)
     {
-        $this->container['transferTryBest'] = $transferTryBest;
-
-        return $this;
-    }
-
-    /**
-     * Gets accountId
-     *
-     * @return int|mixed
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int|mixed $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
-
-        return $this;
-    }
-
-    /**
-     * Gets fundType
-     *
-     * @return \TencentAds\Model\AccountTypeMap|mixed
-     */
-    public function getFundType()
-    {
-        return $this->container['fundType'];
-    }
-
-    /**
-     * Sets fundType
-     *
-     * @param \TencentAds\Model\AccountTypeMap|mixed $fundType fundType
-     *
-     * @return $this
-     */
-    public function setFundType($fundType)
-    {
-        $this->container['fundType'] = $fundType;
+        $this->container['data'] = $data;
 
         return $this;
     }

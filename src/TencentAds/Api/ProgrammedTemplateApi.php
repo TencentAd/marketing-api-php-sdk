@@ -1,6 +1,6 @@
 <?php
 /**
- * MergeFundTypeFundsApi
+ * ProgrammedTemplateApi
  * PHP version 5
  *
  * @category Class
@@ -40,14 +40,14 @@ use TencentAds\HeaderSelector;
 use TencentAds\ObjectSerializer;
 
 /**
- * MergeFundTypeFundsApi Class Doc Comment
+ * ProgrammedTemplateApi Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MergeFundTypeFundsApi
+class ProgrammedTemplateApi
 {
     /**
      * @var ClientInterface
@@ -88,39 +88,37 @@ class MergeFundTypeFundsApi
     }
 
     /**
-     * Operation mergeFundTypeFundsGet
+     * Operation programmedTemplateGet
      *
-     * 获取资金合并类型资金账户信息
+     * 获取模板列表接口
      *
-     * @param  int|mixed $accountId accountId (required)
-     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
+     * @param  \TencentAds\Model\ProgrammedTemplateGetRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\MergeFundTypeFundsGetResponse|mixed
+     * @return \TencentAds\Model\ProgrammedTemplateGetResponse|mixed
      */
-    public function mergeFundTypeFundsGet($accountId, $fields = null)
+    public function programmedTemplateGet($data)
     {
-        list($response) = $this->mergeFundTypeFundsGetWithHttpInfo($accountId, $fields);
+        list($response) = $this->programmedTemplateGetWithHttpInfo($data);
         return $response;
     }
 
     /**
-     * Operation mergeFundTypeFundsGetWithHttpInfo
+     * Operation programmedTemplateGetWithHttpInfo
      *
-     * 获取资金合并类型资金账户信息
+     * 获取模板列表接口
      *
-     * @param  int|mixed $accountId (required)
-     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
+     * @param  \TencentAds\Model\ProgrammedTemplateGetRequest|mixed $data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \TencentAds\Model\MergeFundTypeFundsGetResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TencentAds\Model\ProgrammedTemplateGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function mergeFundTypeFundsGetWithHttpInfo($accountId, $fields = null)
+    public function programmedTemplateGetWithHttpInfo($data)
     {
-        $returnType = '\TencentAds\Model\MergeFundTypeFundsGetResponse';
-        $request = $this->mergeFundTypeFundsGetRequest($accountId, $fields);
+        $returnType = '\TencentAds\Model\ProgrammedTemplateGetResponse';
+        $request = $this->programmedTemplateGetRequest($data);
 
         try {
             $options = $this->createHttpClientOption();
@@ -171,7 +169,7 @@ class MergeFundTypeFundsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\TencentAds\Model\MergeFundTypeFundsGetResponse',
+                        '\TencentAds\Model\ProgrammedTemplateGetResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -182,19 +180,18 @@ class MergeFundTypeFundsApi
     }
 
     /**
-     * Operation mergeFundTypeFundsGetAsync
+     * Operation programmedTemplateGetAsync
      *
-     * 获取资金合并类型资金账户信息
+     * 获取模板列表接口
      *
-     * @param  int|mixed $accountId (required)
-     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
+     * @param  \TencentAds\Model\ProgrammedTemplateGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function mergeFundTypeFundsGetAsync($accountId, $fields = null)
+    public function programmedTemplateGetAsync($data)
     {
-        return $this->mergeFundTypeFundsGetAsyncWithHttpInfo($accountId, $fields)
+        return $this->programmedTemplateGetAsyncWithHttpInfo($data)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -203,20 +200,19 @@ class MergeFundTypeFundsApi
     }
 
     /**
-     * Operation mergeFundTypeFundsGetAsyncWithHttpInfo
+     * Operation programmedTemplateGetAsyncWithHttpInfo
      *
-     * 获取资金合并类型资金账户信息
+     * 获取模板列表接口
      *
-     * @param  int|mixed $accountId (required)
-     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
+     * @param  \TencentAds\Model\ProgrammedTemplateGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function mergeFundTypeFundsGetAsyncWithHttpInfo($accountId, $fields = null)
+    public function programmedTemplateGetAsyncWithHttpInfo($data)
     {
-        $returnType = '\TencentAds\Model\MergeFundTypeFundsGetResponse';
-        $request = $this->mergeFundTypeFundsGetRequest($accountId, $fields);
+        $returnType = '\TencentAds\Model\ProgrammedTemplateGetResponse';
+        $request = $this->programmedTemplateGetRequest($data);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -256,47 +252,38 @@ class MergeFundTypeFundsApi
     }
 
     /**
-     * Create request for operation 'mergeFundTypeFundsGet'
+     * Create request for operation 'programmedTemplateGet'
      *
-     * @param  int|mixed $accountId (required)
-     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
+     * @param  \TencentAds\Model\ProgrammedTemplateGetRequest|mixed $data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function mergeFundTypeFundsGetRequest($accountId, $fields = null)
+    protected function programmedTemplateGetRequest($data)
     {
-        // verify the required parameter 'accountId' is set
-        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
+        // verify the required parameter 'data' is set
+        if ($data === null || (is_array($data) && count($data) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $accountId when calling mergeFundTypeFundsGet'
+                'Missing the required parameter $data when calling programmedTemplateGet'
             );
         }
 
-        $resourcePath = '/merge_fund_type_funds/get';
+        $resourcePath = '/programmed_template/get';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
         $httpBody = '';
         $multipart = false;
 
-        // query params
-        if ($accountId !== null) {
-            $queryParams['account_id'] = ObjectSerializer::toQueryValue($accountId);
-        }
-        // query params
-        if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
-        } else
-        if ($fields !== null) {
-            $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);
-        }
 
 
         // body params
         $_tempBody = null;
+        if (isset($data)) {
+            $_tempBody = $data;
+        }
 
-        if (in_array('multipart/form-data', ['text/plain'])) {
+        if (in_array('multipart/form-data', ['application/json', 'application/xml'])) {
             $multipart = true;
         }
         if ($multipart) {
@@ -306,7 +293,7 @@ class MergeFundTypeFundsApi
         } else {
             $headers = $this->headerSelector->selectHeaders(
                 ['application/json'],
-                ['text/plain']
+                ['application/json', 'application/xml']
             );
         }
 
@@ -383,7 +370,7 @@ class MergeFundTypeFundsApi
             $query = \GuzzleHttp\Psr7\build_query($queryParams);
         }
         return new Request(
-            'GET',
+            'POST',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
             $headers,
             $httpBody

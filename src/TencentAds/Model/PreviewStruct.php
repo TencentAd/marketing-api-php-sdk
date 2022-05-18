@@ -1,6 +1,6 @@
 <?php
 /**
- * FundTransferAddRequest
+ * PreviewStruct
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * FundTransferAddRequest Class Doc Comment
+ * PreviewStruct Class Doc Comment
  *
  * @category Class
+ * @description 预览数据
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class FundTransferAddRequest implements ModelInterface, ArrayAccess
+class PreviewStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'FundTransferAddRequest';
+    protected static $swaggerModelName = 'preview_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,13 +58,11 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'amount' => 'int',
-        'transferType' => 'string',
-        'externalBillNo' => 'string',
-        'memo' => 'string',
-        'transferTryBest' => 'int',
-        'accountId' => 'int',
-        'fundType' => '\TencentAds\Model\AccountTypeMap'
+        'materialDerivePreviewId' => 'int',
+        'templateId' => 'int',
+        'templatePreviewUrl' => 'string',
+        'templateName' => 'string',
+        'dimension' => '\TencentAds\Model\DimensionStruct'
     ];
 
     /**
@@ -72,13 +71,11 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'amount' => 'int64',
-        'transferType' => null,
-        'externalBillNo' => null,
-        'memo' => null,
-        'transferTryBest' => 'int64',
-        'accountId' => 'int64',
-        'fundType' => null
+        'materialDerivePreviewId' => 'int64',
+        'templateId' => 'int64',
+        'templatePreviewUrl' => null,
+        'templateName' => null,
+        'dimension' => null
     ];
 
     /**
@@ -108,13 +105,11 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'amount' => 'amount',
-        'transferType' => 'transfer_type',
-        'externalBillNo' => 'external_bill_no',
-        'memo' => 'memo',
-        'transferTryBest' => 'transfer_try_best',
-        'accountId' => 'account_id',
-        'fundType' => 'fund_type'
+        'materialDerivePreviewId' => 'material_derive_preview_id',
+        'templateId' => 'template_id',
+        'templatePreviewUrl' => 'template_preview_url',
+        'templateName' => 'template_name',
+        'dimension' => 'dimension'
     ];
 
     /**
@@ -123,13 +118,11 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'amount' => 'setAmount',
-        'transferType' => 'setTransferType',
-        'externalBillNo' => 'setExternalBillNo',
-        'memo' => 'setMemo',
-        'transferTryBest' => 'setTransferTryBest',
-        'accountId' => 'setAccountId',
-        'fundType' => 'setFundType'
+        'materialDerivePreviewId' => 'setMaterialDerivePreviewId',
+        'templateId' => 'setTemplateId',
+        'templatePreviewUrl' => 'setTemplatePreviewUrl',
+        'templateName' => 'setTemplateName',
+        'dimension' => 'setDimension'
     ];
 
     /**
@@ -138,13 +131,11 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'amount' => 'getAmount',
-        'transferType' => 'getTransferType',
-        'externalBillNo' => 'getExternalBillNo',
-        'memo' => 'getMemo',
-        'transferTryBest' => 'getTransferTryBest',
-        'accountId' => 'getAccountId',
-        'fundType' => 'getFundType'
+        'materialDerivePreviewId' => 'getMaterialDerivePreviewId',
+        'templateId' => 'getTemplateId',
+        'templatePreviewUrl' => 'getTemplatePreviewUrl',
+        'templateName' => 'getTemplateName',
+        'dimension' => 'getDimension'
     ];
 
     /**
@@ -207,13 +198,11 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
-        $this->container['transferType'] = isset($data['transferType']) ? $data['transferType'] : null;
-        $this->container['externalBillNo'] = isset($data['externalBillNo']) ? $data['externalBillNo'] : null;
-        $this->container['memo'] = isset($data['memo']) ? $data['memo'] : null;
-        $this->container['transferTryBest'] = isset($data['transferTryBest']) ? $data['transferTryBest'] : null;
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['fundType'] = isset($data['fundType']) ? $data['fundType'] : null;
+        $this->container['materialDerivePreviewId'] = isset($data['materialDerivePreviewId']) ? $data['materialDerivePreviewId'] : null;
+        $this->container['templateId'] = isset($data['templateId']) ? $data['templateId'] : null;
+        $this->container['templatePreviewUrl'] = isset($data['templatePreviewUrl']) ? $data['templatePreviewUrl'] : null;
+        $this->container['templateName'] = isset($data['templateName']) ? $data['templateName'] : null;
+        $this->container['dimension'] = isset($data['dimension']) ? $data['dimension'] : null;
     }
 
     /**
@@ -241,169 +230,121 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets amount
+     * Gets materialDerivePreviewId
      *
      * @return int|mixed
      */
-    public function getAmount()
+    public function getMaterialDerivePreviewId()
     {
-        return $this->container['amount'];
+        return $this->container['materialDerivePreviewId'];
     }
 
     /**
-     * Sets amount
+     * Sets materialDerivePreviewId
      *
-     * @param int|mixed $amount amount
+     * @param int|mixed $materialDerivePreviewId materialDerivePreviewId
      *
      * @return $this
      */
-    public function setAmount($amount)
+    public function setMaterialDerivePreviewId($materialDerivePreviewId)
     {
-        $this->container['amount'] = $amount;
+        $this->container['materialDerivePreviewId'] = $materialDerivePreviewId;
 
         return $this;
     }
 
     /**
-     * Gets transferType
-     *
-     * @return string|mixed
-     */
-    public function getTransferType()
-    {
-        return $this->container['transferType'];
-    }
-
-    /**
-     * Sets transferType
-     *
-     * @param string|mixed $transferType transferType
-     *
-     * @return $this
-     */
-    public function setTransferType($transferType)
-    {
-        $this->container['transferType'] = $transferType;
-
-        return $this;
-    }
-
-    /**
-     * Gets externalBillNo
-     *
-     * @return string|mixed
-     */
-    public function getExternalBillNo()
-    {
-        return $this->container['externalBillNo'];
-    }
-
-    /**
-     * Sets externalBillNo
-     *
-     * @param string|mixed $externalBillNo externalBillNo
-     *
-     * @return $this
-     */
-    public function setExternalBillNo($externalBillNo)
-    {
-        $this->container['externalBillNo'] = $externalBillNo;
-
-        return $this;
-    }
-
-    /**
-     * Gets memo
-     *
-     * @return string|mixed
-     */
-    public function getMemo()
-    {
-        return $this->container['memo'];
-    }
-
-    /**
-     * Sets memo
-     *
-     * @param string|mixed $memo memo
-     *
-     * @return $this
-     */
-    public function setMemo($memo)
-    {
-        $this->container['memo'] = $memo;
-
-        return $this;
-    }
-
-    /**
-     * Gets transferTryBest
+     * Gets templateId
      *
      * @return int|mixed
      */
-    public function getTransferTryBest()
+    public function getTemplateId()
     {
-        return $this->container['transferTryBest'];
+        return $this->container['templateId'];
     }
 
     /**
-     * Sets transferTryBest
+     * Sets templateId
      *
-     * @param int|mixed $transferTryBest transferTryBest
+     * @param int|mixed $templateId templateId
      *
      * @return $this
      */
-    public function setTransferTryBest($transferTryBest)
+    public function setTemplateId($templateId)
     {
-        $this->container['transferTryBest'] = $transferTryBest;
+        $this->container['templateId'] = $templateId;
 
         return $this;
     }
 
     /**
-     * Gets accountId
+     * Gets templatePreviewUrl
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getAccountId()
+    public function getTemplatePreviewUrl()
     {
-        return $this->container['accountId'];
+        return $this->container['templatePreviewUrl'];
     }
 
     /**
-     * Sets accountId
+     * Sets templatePreviewUrl
      *
-     * @param int|mixed $accountId accountId
+     * @param string|mixed $templatePreviewUrl templatePreviewUrl
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setTemplatePreviewUrl($templatePreviewUrl)
     {
-        $this->container['accountId'] = $accountId;
+        $this->container['templatePreviewUrl'] = $templatePreviewUrl;
 
         return $this;
     }
 
     /**
-     * Gets fundType
+     * Gets templateName
      *
-     * @return \TencentAds\Model\AccountTypeMap|mixed
+     * @return string|mixed
      */
-    public function getFundType()
+    public function getTemplateName()
     {
-        return $this->container['fundType'];
+        return $this->container['templateName'];
     }
 
     /**
-     * Sets fundType
+     * Sets templateName
      *
-     * @param \TencentAds\Model\AccountTypeMap|mixed $fundType fundType
+     * @param string|mixed $templateName templateName
      *
      * @return $this
      */
-    public function setFundType($fundType)
+    public function setTemplateName($templateName)
     {
-        $this->container['fundType'] = $fundType;
+        $this->container['templateName'] = $templateName;
+
+        return $this;
+    }
+
+    /**
+     * Gets dimension
+     *
+     * @return \TencentAds\Model\DimensionStruct|mixed
+     */
+    public function getDimension()
+    {
+        return $this->container['dimension'];
+    }
+
+    /**
+     * Sets dimension
+     *
+     * @param \TencentAds\Model\DimensionStruct|mixed $dimension dimension
+     *
+     * @return $this
+     */
+    public function setDimension($dimension)
+    {
+        $this->container['dimension'] = $dimension;
 
         return $this;
     }

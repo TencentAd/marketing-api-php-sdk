@@ -1,6 +1,6 @@
 <?php
 /**
- * FundTransferAddRequest
+ * AdMetadataStruct
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * FundTransferAddRequest Class Doc Comment
+ * AdMetadataStruct Class Doc Comment
  *
  * @category Class
+ * @description 广告元数据
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class FundTransferAddRequest implements ModelInterface, ArrayAccess
+class AdMetadataStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'FundTransferAddRequest';
+    protected static $swaggerModelName = 'ad_metadata_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,13 +58,11 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'amount' => 'int',
-        'transferType' => 'string',
-        'externalBillNo' => 'string',
-        'memo' => 'string',
-        'transferTryBest' => 'int',
-        'accountId' => 'int',
-        'fundType' => '\TencentAds\Model\AccountTypeMap'
+        'productInfos' => '\TencentAds\Model\ProductInfoStruct[]',
+        'siteSets' => 'string[]',
+        'automaticSiteEnabled' => 'bool',
+        'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
+        'bidMode' => '\TencentAds\Model\BidMode'
     ];
 
     /**
@@ -72,13 +71,11 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'amount' => 'int64',
-        'transferType' => null,
-        'externalBillNo' => null,
-        'memo' => null,
-        'transferTryBest' => 'int64',
-        'accountId' => 'int64',
-        'fundType' => null
+        'productInfos' => null,
+        'siteSets' => null,
+        'automaticSiteEnabled' => null,
+        'promotedObjectType' => null,
+        'bidMode' => null
     ];
 
     /**
@@ -108,13 +105,11 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'amount' => 'amount',
-        'transferType' => 'transfer_type',
-        'externalBillNo' => 'external_bill_no',
-        'memo' => 'memo',
-        'transferTryBest' => 'transfer_try_best',
-        'accountId' => 'account_id',
-        'fundType' => 'fund_type'
+        'productInfos' => 'product_infos',
+        'siteSets' => 'site_sets',
+        'automaticSiteEnabled' => 'automatic_site_enabled',
+        'promotedObjectType' => 'promoted_object_type',
+        'bidMode' => 'bid_mode'
     ];
 
     /**
@@ -123,13 +118,11 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'amount' => 'setAmount',
-        'transferType' => 'setTransferType',
-        'externalBillNo' => 'setExternalBillNo',
-        'memo' => 'setMemo',
-        'transferTryBest' => 'setTransferTryBest',
-        'accountId' => 'setAccountId',
-        'fundType' => 'setFundType'
+        'productInfos' => 'setProductInfos',
+        'siteSets' => 'setSiteSets',
+        'automaticSiteEnabled' => 'setAutomaticSiteEnabled',
+        'promotedObjectType' => 'setPromotedObjectType',
+        'bidMode' => 'setBidMode'
     ];
 
     /**
@@ -138,13 +131,11 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'amount' => 'getAmount',
-        'transferType' => 'getTransferType',
-        'externalBillNo' => 'getExternalBillNo',
-        'memo' => 'getMemo',
-        'transferTryBest' => 'getTransferTryBest',
-        'accountId' => 'getAccountId',
-        'fundType' => 'getFundType'
+        'productInfos' => 'getProductInfos',
+        'siteSets' => 'getSiteSets',
+        'automaticSiteEnabled' => 'getAutomaticSiteEnabled',
+        'promotedObjectType' => 'getPromotedObjectType',
+        'bidMode' => 'getBidMode'
     ];
 
     /**
@@ -207,13 +198,11 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
-        $this->container['transferType'] = isset($data['transferType']) ? $data['transferType'] : null;
-        $this->container['externalBillNo'] = isset($data['externalBillNo']) ? $data['externalBillNo'] : null;
-        $this->container['memo'] = isset($data['memo']) ? $data['memo'] : null;
-        $this->container['transferTryBest'] = isset($data['transferTryBest']) ? $data['transferTryBest'] : null;
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['fundType'] = isset($data['fundType']) ? $data['fundType'] : null;
+        $this->container['productInfos'] = isset($data['productInfos']) ? $data['productInfos'] : null;
+        $this->container['siteSets'] = isset($data['siteSets']) ? $data['siteSets'] : null;
+        $this->container['automaticSiteEnabled'] = isset($data['automaticSiteEnabled']) ? $data['automaticSiteEnabled'] : null;
+        $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
+        $this->container['bidMode'] = isset($data['bidMode']) ? $data['bidMode'] : null;
     }
 
     /**
@@ -241,169 +230,121 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets amount
+     * Gets productInfos
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\ProductInfoStruct[]|mixed
      */
-    public function getAmount()
+    public function getProductInfos()
     {
-        return $this->container['amount'];
+        return $this->container['productInfos'];
     }
 
     /**
-     * Sets amount
+     * Sets productInfos
      *
-     * @param int|mixed $amount amount
+     * @param \TencentAds\Model\ProductInfoStruct[]|mixed $productInfos productInfos
      *
      * @return $this
      */
-    public function setAmount($amount)
+    public function setProductInfos($productInfos)
     {
-        $this->container['amount'] = $amount;
+        $this->container['productInfos'] = $productInfos;
 
         return $this;
     }
 
     /**
-     * Gets transferType
+     * Gets siteSets
      *
-     * @return string|mixed
+     * @return string[]|mixed
      */
-    public function getTransferType()
+    public function getSiteSets()
     {
-        return $this->container['transferType'];
+        return $this->container['siteSets'];
     }
 
     /**
-     * Sets transferType
+     * Sets siteSets
      *
-     * @param string|mixed $transferType transferType
+     * @param string[]|mixed $siteSets siteSets
      *
      * @return $this
      */
-    public function setTransferType($transferType)
+    public function setSiteSets($siteSets)
     {
-        $this->container['transferType'] = $transferType;
+        $this->container['siteSets'] = $siteSets;
 
         return $this;
     }
 
     /**
-     * Gets externalBillNo
+     * Gets automaticSiteEnabled
      *
-     * @return string|mixed
+     * @return bool|mixed
      */
-    public function getExternalBillNo()
+    public function getAutomaticSiteEnabled()
     {
-        return $this->container['externalBillNo'];
+        return $this->container['automaticSiteEnabled'];
     }
 
     /**
-     * Sets externalBillNo
+     * Sets automaticSiteEnabled
      *
-     * @param string|mixed $externalBillNo externalBillNo
+     * @param bool|mixed $automaticSiteEnabled automaticSiteEnabled
      *
      * @return $this
      */
-    public function setExternalBillNo($externalBillNo)
+    public function setAutomaticSiteEnabled($automaticSiteEnabled)
     {
-        $this->container['externalBillNo'] = $externalBillNo;
+        $this->container['automaticSiteEnabled'] = $automaticSiteEnabled;
 
         return $this;
     }
 
     /**
-     * Gets memo
+     * Gets promotedObjectType
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\PromotedObjectType|mixed
      */
-    public function getMemo()
+    public function getPromotedObjectType()
     {
-        return $this->container['memo'];
+        return $this->container['promotedObjectType'];
     }
 
     /**
-     * Sets memo
+     * Sets promotedObjectType
      *
-     * @param string|mixed $memo memo
+     * @param \TencentAds\Model\PromotedObjectType|mixed $promotedObjectType promotedObjectType
      *
      * @return $this
      */
-    public function setMemo($memo)
+    public function setPromotedObjectType($promotedObjectType)
     {
-        $this->container['memo'] = $memo;
+        $this->container['promotedObjectType'] = $promotedObjectType;
 
         return $this;
     }
 
     /**
-     * Gets transferTryBest
+     * Gets bidMode
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\BidMode|mixed
      */
-    public function getTransferTryBest()
+    public function getBidMode()
     {
-        return $this->container['transferTryBest'];
+        return $this->container['bidMode'];
     }
 
     /**
-     * Sets transferTryBest
+     * Sets bidMode
      *
-     * @param int|mixed $transferTryBest transferTryBest
+     * @param \TencentAds\Model\BidMode|mixed $bidMode bidMode
      *
      * @return $this
      */
-    public function setTransferTryBest($transferTryBest)
+    public function setBidMode($bidMode)
     {
-        $this->container['transferTryBest'] = $transferTryBest;
-
-        return $this;
-    }
-
-    /**
-     * Gets accountId
-     *
-     * @return int|mixed
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int|mixed $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
-
-        return $this;
-    }
-
-    /**
-     * Gets fundType
-     *
-     * @return \TencentAds\Model\AccountTypeMap|mixed
-     */
-    public function getFundType()
-    {
-        return $this->container['fundType'];
-    }
-
-    /**
-     * Sets fundType
-     *
-     * @param \TencentAds\Model\AccountTypeMap|mixed $fundType fundType
-     *
-     * @return $this
-     */
-    public function setFundType($fundType)
-    {
-        $this->container['fundType'] = $fundType;
+        $this->container['bidMode'] = $bidMode;
 
         return $this;
     }
