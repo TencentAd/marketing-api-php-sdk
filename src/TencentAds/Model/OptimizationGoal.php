@@ -112,6 +112,9 @@ class OptimizationGoal
     const CORE_ACTION = 'OPTIMIZATIONGOAL_CORE_ACTION';
     const ONE_DAY_RETENTION_RATIO = 'OPTIMIZATIONGOAL_ONE_DAY_RETENTION_RATIO';
     const PROMOTION_READ_ARTICLE = 'OPTIMIZATIONGOAL_PROMOTION_READ_ARTICLE';
+    const RESERVATION_CHECK = 'OPTIMIZATIONGOAL_RESERVATION_CHECK';
+    const OPEN_ACCOUNT = 'OPTIMIZATIONGOAL_OPEN_ACCOUNT';
+    const SEVEN_DAY_ECOMMERCE_ORDER = 'OPTIMIZATIONGOAL_SEVEN_DAY_ECOMMERCE_ORDER';
     
     /**
      * Gets allowable values of the enum
@@ -188,6 +191,9 @@ class OptimizationGoal
             self::CORE_ACTION,
             self::ONE_DAY_RETENTION_RATIO,
             self::PROMOTION_READ_ARTICLE,
+            self::RESERVATION_CHECK,
+            self::OPEN_ACCOUNT,
+            self::SEVEN_DAY_ECOMMERCE_ORDER,
         ];
     }
 }

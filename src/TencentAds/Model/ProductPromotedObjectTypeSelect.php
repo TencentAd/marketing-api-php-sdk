@@ -59,6 +59,7 @@ class ProductPromotedObjectTypeSelect
     const JD = 'PROMOTED_OBJECT_TYPE_JD';
     const WECHAT_OFFICIAL_ACCOUNT = 'PROMOTED_OBJECT_TYPE_WECHAT_OFFICIAL_ACCOUNT';
     const APP_QUICK_APP = 'PROMOTED_OBJECT_TYPE_APP_QUICK_APP';
+    const WECHAT_CHANNELS = 'PROMOTED_OBJECT_TYPE_WECHAT_CHANNELS';
     
     /**
      * Gets allowable values of the enum
@@ -82,6 +83,7 @@ class ProductPromotedObjectTypeSelect
             self::JD,
             self::WECHAT_OFFICIAL_ACCOUNT,
             self::APP_QUICK_APP,
+            self::WECHAT_CHANNELS,
         ];
     }
 }
