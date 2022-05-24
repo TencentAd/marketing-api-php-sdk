@@ -65,8 +65,7 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
         'averageRating' => 'string',
         'packageSize' => 'string',
         'genres' => 'string[]',
-        'packageDownloadUrl' => 'string',
-        'childrenPrivacyProtection' => '\TencentAds\Model\ChildrenPrivacyProtection'
+        'packageDownloadUrl' => 'string'
     ];
 
     /**
@@ -82,8 +81,7 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
         'averageRating' => null,
         'packageSize' => null,
         'genres' => null,
-        'packageDownloadUrl' => null,
-        'childrenPrivacyProtection' => null
+        'packageDownloadUrl' => null
     ];
 
     /**
@@ -120,8 +118,7 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
         'averageRating' => 'average_rating',
         'packageSize' => 'package_size',
         'genres' => 'genres',
-        'packageDownloadUrl' => 'package_download_url',
-        'childrenPrivacyProtection' => 'children_privacy_protection'
+        'packageDownloadUrl' => 'package_download_url'
     ];
 
     /**
@@ -137,8 +134,7 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
         'averageRating' => 'setAverageRating',
         'packageSize' => 'setPackageSize',
         'genres' => 'setGenres',
-        'packageDownloadUrl' => 'setPackageDownloadUrl',
-        'childrenPrivacyProtection' => 'setChildrenPrivacyProtection'
+        'packageDownloadUrl' => 'setPackageDownloadUrl'
     ];
 
     /**
@@ -154,8 +150,7 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
         'averageRating' => 'getAverageRating',
         'packageSize' => 'getPackageSize',
         'genres' => 'getGenres',
-        'packageDownloadUrl' => 'getPackageDownloadUrl',
-        'childrenPrivacyProtection' => 'getChildrenPrivacyProtection'
+        'packageDownloadUrl' => 'getPackageDownloadUrl'
     ];
 
     /**
@@ -226,7 +221,6 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
         $this->container['packageSize'] = isset($data['packageSize']) ? $data['packageSize'] : null;
         $this->container['genres'] = isset($data['genres']) ? $data['genres'] : null;
         $this->container['packageDownloadUrl'] = isset($data['packageDownloadUrl']) ? $data['packageDownloadUrl'] : null;
-        $this->container['childrenPrivacyProtection'] = isset($data['childrenPrivacyProtection']) ? $data['childrenPrivacyProtection'] : null;
     }
 
     /**
@@ -441,30 +435,6 @@ class PromotedObjectAppIosSpec implements ModelInterface, ArrayAccess
     public function setPackageDownloadUrl($packageDownloadUrl)
     {
         $this->container['packageDownloadUrl'] = $packageDownloadUrl;
-
-        return $this;
-    }
-
-    /**
-     * Gets childrenPrivacyProtection
-     *
-     * @return \TencentAds\Model\ChildrenPrivacyProtection|mixed
-     */
-    public function getChildrenPrivacyProtection()
-    {
-        return $this->container['childrenPrivacyProtection'];
-    }
-
-    /**
-     * Sets childrenPrivacyProtection
-     *
-     * @param \TencentAds\Model\ChildrenPrivacyProtection|mixed $childrenPrivacyProtection childrenPrivacyProtection
-     *
-     * @return $this
-     */
-    public function setChildrenPrivacyProtection($childrenPrivacyProtection)
-    {
-        $this->container['childrenPrivacyProtection'] = $childrenPrivacyProtection;
 
         return $this;
     }

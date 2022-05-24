@@ -65,8 +65,7 @@ class PromotedObjectAppAndroidSpec implements ModelInterface, ArrayAccess
         'packageSize' => 'string',
         'genres' => 'string[]',
         'packageDownloadUrl' => 'string',
-        'channelPackageSpec' => '\TencentAds\Model\ChannelPackageSpecStruct[]',
-        'childrenPrivacyProtection' => '\TencentAds\Model\ChildrenPrivacyProtection'
+        'channelPackageSpec' => '\TencentAds\Model\ChannelPackageSpecStruct[]'
     ];
 
     /**
@@ -82,8 +81,7 @@ class PromotedObjectAppAndroidSpec implements ModelInterface, ArrayAccess
         'packageSize' => null,
         'genres' => null,
         'packageDownloadUrl' => null,
-        'channelPackageSpec' => null,
-        'childrenPrivacyProtection' => null
+        'channelPackageSpec' => null
     ];
 
     /**
@@ -120,8 +118,7 @@ class PromotedObjectAppAndroidSpec implements ModelInterface, ArrayAccess
         'packageSize' => 'package_size',
         'genres' => 'genres',
         'packageDownloadUrl' => 'package_download_url',
-        'channelPackageSpec' => 'channel_package_spec',
-        'childrenPrivacyProtection' => 'children_privacy_protection'
+        'channelPackageSpec' => 'channel_package_spec'
     ];
 
     /**
@@ -137,8 +134,7 @@ class PromotedObjectAppAndroidSpec implements ModelInterface, ArrayAccess
         'packageSize' => 'setPackageSize',
         'genres' => 'setGenres',
         'packageDownloadUrl' => 'setPackageDownloadUrl',
-        'channelPackageSpec' => 'setChannelPackageSpec',
-        'childrenPrivacyProtection' => 'setChildrenPrivacyProtection'
+        'channelPackageSpec' => 'setChannelPackageSpec'
     ];
 
     /**
@@ -154,8 +150,7 @@ class PromotedObjectAppAndroidSpec implements ModelInterface, ArrayAccess
         'packageSize' => 'getPackageSize',
         'genres' => 'getGenres',
         'packageDownloadUrl' => 'getPackageDownloadUrl',
-        'channelPackageSpec' => 'getChannelPackageSpec',
-        'childrenPrivacyProtection' => 'getChildrenPrivacyProtection'
+        'channelPackageSpec' => 'getChannelPackageSpec'
     ];
 
     /**
@@ -226,7 +221,6 @@ class PromotedObjectAppAndroidSpec implements ModelInterface, ArrayAccess
         $this->container['genres'] = isset($data['genres']) ? $data['genres'] : null;
         $this->container['packageDownloadUrl'] = isset($data['packageDownloadUrl']) ? $data['packageDownloadUrl'] : null;
         $this->container['channelPackageSpec'] = isset($data['channelPackageSpec']) ? $data['channelPackageSpec'] : null;
-        $this->container['childrenPrivacyProtection'] = isset($data['childrenPrivacyProtection']) ? $data['childrenPrivacyProtection'] : null;
     }
 
     /**
@@ -441,30 +435,6 @@ class PromotedObjectAppAndroidSpec implements ModelInterface, ArrayAccess
     public function setChannelPackageSpec($channelPackageSpec)
     {
         $this->container['channelPackageSpec'] = $channelPackageSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets childrenPrivacyProtection
-     *
-     * @return \TencentAds\Model\ChildrenPrivacyProtection|mixed
-     */
-    public function getChildrenPrivacyProtection()
-    {
-        return $this->container['childrenPrivacyProtection'];
-    }
-
-    /**
-     * Sets childrenPrivacyProtection
-     *
-     * @param \TencentAds\Model\ChildrenPrivacyProtection|mixed $childrenPrivacyProtection childrenPrivacyProtection
-     *
-     * @return $this
-     */
-    public function setChildrenPrivacyProtection($childrenPrivacyProtection)
-    {
-        $this->container['childrenPrivacyProtection'] = $childrenPrivacyProtection;
 
         return $this;
     }
