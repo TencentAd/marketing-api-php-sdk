@@ -61,7 +61,9 @@ class ChannelPackageStruct implements ModelInterface, ArrayAccess
         'appAndroidChannelPackageId' => 'string',
         'packageName' => 'string',
         'systemStatus' => '\TencentAds\Model\UnionPackageSysStatus',
-        'packageOriginUrl' => 'string'
+        'packageOriginUrl' => 'string',
+        'createdTime' => 'int',
+        'lastModifiedTime' => 'int'
     ];
 
     /**
@@ -73,7 +75,9 @@ class ChannelPackageStruct implements ModelInterface, ArrayAccess
         'appAndroidChannelPackageId' => null,
         'packageName' => null,
         'systemStatus' => null,
-        'packageOriginUrl' => null
+        'packageOriginUrl' => null,
+        'createdTime' => 'int64',
+        'lastModifiedTime' => 'int64'
     ];
 
     /**
@@ -106,7 +110,9 @@ class ChannelPackageStruct implements ModelInterface, ArrayAccess
         'appAndroidChannelPackageId' => 'app_android_channel_package_id',
         'packageName' => 'package_name',
         'systemStatus' => 'system_status',
-        'packageOriginUrl' => 'package_origin_url'
+        'packageOriginUrl' => 'package_origin_url',
+        'createdTime' => 'created_time',
+        'lastModifiedTime' => 'last_modified_time'
     ];
 
     /**
@@ -118,7 +124,9 @@ class ChannelPackageStruct implements ModelInterface, ArrayAccess
         'appAndroidChannelPackageId' => 'setAppAndroidChannelPackageId',
         'packageName' => 'setPackageName',
         'systemStatus' => 'setSystemStatus',
-        'packageOriginUrl' => 'setPackageOriginUrl'
+        'packageOriginUrl' => 'setPackageOriginUrl',
+        'createdTime' => 'setCreatedTime',
+        'lastModifiedTime' => 'setLastModifiedTime'
     ];
 
     /**
@@ -130,7 +138,9 @@ class ChannelPackageStruct implements ModelInterface, ArrayAccess
         'appAndroidChannelPackageId' => 'getAppAndroidChannelPackageId',
         'packageName' => 'getPackageName',
         'systemStatus' => 'getSystemStatus',
-        'packageOriginUrl' => 'getPackageOriginUrl'
+        'packageOriginUrl' => 'getPackageOriginUrl',
+        'createdTime' => 'getCreatedTime',
+        'lastModifiedTime' => 'getLastModifiedTime'
     ];
 
     /**
@@ -197,6 +207,8 @@ class ChannelPackageStruct implements ModelInterface, ArrayAccess
         $this->container['packageName'] = isset($data['packageName']) ? $data['packageName'] : null;
         $this->container['systemStatus'] = isset($data['systemStatus']) ? $data['systemStatus'] : null;
         $this->container['packageOriginUrl'] = isset($data['packageOriginUrl']) ? $data['packageOriginUrl'] : null;
+        $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
+        $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
     }
 
     /**
@@ -315,6 +327,54 @@ class ChannelPackageStruct implements ModelInterface, ArrayAccess
     public function setPackageOriginUrl($packageOriginUrl)
     {
         $this->container['packageOriginUrl'] = $packageOriginUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets createdTime
+     *
+     * @return int|mixed
+     */
+    public function getCreatedTime()
+    {
+        return $this->container['createdTime'];
+    }
+
+    /**
+     * Sets createdTime
+     *
+     * @param int|mixed $createdTime createdTime
+     *
+     * @return $this
+     */
+    public function setCreatedTime($createdTime)
+    {
+        $this->container['createdTime'] = $createdTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets lastModifiedTime
+     *
+     * @return int|mixed
+     */
+    public function getLastModifiedTime()
+    {
+        return $this->container['lastModifiedTime'];
+    }
+
+    /**
+     * Sets lastModifiedTime
+     *
+     * @param int|mixed $lastModifiedTime lastModifiedTime
+     *
+     * @return $this
+     */
+    public function setLastModifiedTime($lastModifiedTime)
+    {
+        $this->container['lastModifiedTime'] = $lastModifiedTime;
 
         return $this;
     }
