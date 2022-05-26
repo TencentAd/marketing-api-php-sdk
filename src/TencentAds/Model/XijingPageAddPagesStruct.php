@@ -64,6 +64,7 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
         'clipboard' => 'string',
         'pageDeeplink' => 'string',
         'mobileAppId' => 'string',
+        'formId' => 'string',
         'pageTemplateId' => 'string',
         'componentSpecList' => 'string[]'
     ];
@@ -80,6 +81,7 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
         'clipboard' => null,
         'pageDeeplink' => null,
         'mobileAppId' => null,
+        'formId' => null,
         'pageTemplateId' => null,
         'componentSpecList' => null
     ];
@@ -117,6 +119,7 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
         'clipboard' => 'clipboard',
         'pageDeeplink' => 'page_deeplink',
         'mobileAppId' => 'mobile_app_id',
+        'formId' => 'form_id',
         'pageTemplateId' => 'page_template_id',
         'componentSpecList' => 'component_spec_list'
     ];
@@ -133,6 +136,7 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
         'clipboard' => 'setClipboard',
         'pageDeeplink' => 'setPageDeeplink',
         'mobileAppId' => 'setMobileAppId',
+        'formId' => 'setFormId',
         'pageTemplateId' => 'setPageTemplateId',
         'componentSpecList' => 'setComponentSpecList'
     ];
@@ -149,6 +153,7 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
         'clipboard' => 'getClipboard',
         'pageDeeplink' => 'getPageDeeplink',
         'mobileAppId' => 'getMobileAppId',
+        'formId' => 'getFormId',
         'pageTemplateId' => 'getPageTemplateId',
         'componentSpecList' => 'getComponentSpecList'
     ];
@@ -219,6 +224,7 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
         $this->container['clipboard'] = isset($data['clipboard']) ? $data['clipboard'] : null;
         $this->container['pageDeeplink'] = isset($data['pageDeeplink']) ? $data['pageDeeplink'] : null;
         $this->container['mobileAppId'] = isset($data['mobileAppId']) ? $data['mobileAppId'] : null;
+        $this->container['formId'] = isset($data['formId']) ? $data['formId'] : null;
         $this->container['pageTemplateId'] = isset($data['pageTemplateId']) ? $data['pageTemplateId'] : null;
         $this->container['componentSpecList'] = isset($data['componentSpecList']) ? $data['componentSpecList'] : null;
     }
@@ -387,6 +393,30 @@ class XijingPageAddPagesStruct implements ModelInterface, ArrayAccess
     public function setMobileAppId($mobileAppId)
     {
         $this->container['mobileAppId'] = $mobileAppId;
+
+        return $this;
+    }
+
+    /**
+     * Gets formId
+     *
+     * @return string|mixed
+     */
+    public function getFormId()
+    {
+        return $this->container['formId'];
+    }
+
+    /**
+     * Sets formId
+     *
+     * @param string|mixed $formId formId
+     *
+     * @return $this
+     */
+    public function setFormId($formId)
+    {
+        $this->container['formId'] = $formId;
 
         return $this;
     }

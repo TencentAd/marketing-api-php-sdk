@@ -649,7 +649,18 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD3PlaRoi' => 'double',
         'miniGamePayD7PlaRoi' => 'double',
         'miniGamePayD14PlaRoi' => 'double',
-        'miniGamePayD30PlaRoi' => 'double'
+        'miniGamePayD30PlaRoi' => 'double',
+        'minigame1dPayCount' => 'int',
+        'minigame3dIncomeUv' => 'int',
+        'minigame3dIncomeCount' => 'int',
+        'minigame7dIncomeUv' => 'int',
+        'minigame7dIncomeCount' => 'int',
+        'minigame3dIncomeRoi' => 'double',
+        'minigame7dIncomeRoi' => 'double',
+        'minigame24hPayUv' => 'int',
+        'minigame24hPayAmount' => 'int',
+        'minigame24hPayRoi' => 'double',
+        'minigame24hPayArpu' => 'int'
     ];
 
     /**
@@ -1249,7 +1260,18 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD3PlaRoi' => 'double',
         'miniGamePayD7PlaRoi' => 'double',
         'miniGamePayD14PlaRoi' => 'double',
-        'miniGamePayD30PlaRoi' => 'double'
+        'miniGamePayD30PlaRoi' => 'double',
+        'minigame1dPayCount' => 'int64',
+        'minigame3dIncomeUv' => 'int64',
+        'minigame3dIncomeCount' => 'int64',
+        'minigame7dIncomeUv' => 'int64',
+        'minigame7dIncomeCount' => 'int64',
+        'minigame3dIncomeRoi' => 'double',
+        'minigame7dIncomeRoi' => 'double',
+        'minigame24hPayUv' => 'int64',
+        'minigame24hPayAmount' => 'int64',
+        'minigame24hPayRoi' => 'double',
+        'minigame24hPayArpu' => 'int64'
     ];
 
     /**
@@ -1870,7 +1892,18 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD3PlaRoi' => 'mini_game_pay_d3_pla_roi',
         'miniGamePayD7PlaRoi' => 'mini_game_pay_d7_pla_roi',
         'miniGamePayD14PlaRoi' => 'mini_game_pay_d14_pla_roi',
-        'miniGamePayD30PlaRoi' => 'mini_game_pay_d30_pla_roi'
+        'miniGamePayD30PlaRoi' => 'mini_game_pay_d30_pla_roi',
+        'minigame1dPayCount' => 'minigame_1d_pay_count',
+        'minigame3dIncomeUv' => 'minigame_3d_income_uv',
+        'minigame3dIncomeCount' => 'minigame_3d_income_count',
+        'minigame7dIncomeUv' => 'minigame_7d_income_uv',
+        'minigame7dIncomeCount' => 'minigame_7d_income_count',
+        'minigame3dIncomeRoi' => 'minigame_3d_income_roi',
+        'minigame7dIncomeRoi' => 'minigame_7d_income_roi',
+        'minigame24hPayUv' => 'minigame_24h_pay_uv',
+        'minigame24hPayAmount' => 'minigame_24h_pay_amount',
+        'minigame24hPayRoi' => 'minigame_24h_pay_roi',
+        'minigame24hPayArpu' => 'minigame_24h_pay_arpu'
     ];
 
     /**
@@ -2470,7 +2503,18 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD3PlaRoi' => 'setMiniGamePayD3PlaRoi',
         'miniGamePayD7PlaRoi' => 'setMiniGamePayD7PlaRoi',
         'miniGamePayD14PlaRoi' => 'setMiniGamePayD14PlaRoi',
-        'miniGamePayD30PlaRoi' => 'setMiniGamePayD30PlaRoi'
+        'miniGamePayD30PlaRoi' => 'setMiniGamePayD30PlaRoi',
+        'minigame1dPayCount' => 'setMinigame1dPayCount',
+        'minigame3dIncomeUv' => 'setMinigame3dIncomeUv',
+        'minigame3dIncomeCount' => 'setMinigame3dIncomeCount',
+        'minigame7dIncomeUv' => 'setMinigame7dIncomeUv',
+        'minigame7dIncomeCount' => 'setMinigame7dIncomeCount',
+        'minigame3dIncomeRoi' => 'setMinigame3dIncomeRoi',
+        'minigame7dIncomeRoi' => 'setMinigame7dIncomeRoi',
+        'minigame24hPayUv' => 'setMinigame24hPayUv',
+        'minigame24hPayAmount' => 'setMinigame24hPayAmount',
+        'minigame24hPayRoi' => 'setMinigame24hPayRoi',
+        'minigame24hPayArpu' => 'setMinigame24hPayArpu'
     ];
 
     /**
@@ -3070,7 +3114,18 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD3PlaRoi' => 'getMiniGamePayD3PlaRoi',
         'miniGamePayD7PlaRoi' => 'getMiniGamePayD7PlaRoi',
         'miniGamePayD14PlaRoi' => 'getMiniGamePayD14PlaRoi',
-        'miniGamePayD30PlaRoi' => 'getMiniGamePayD30PlaRoi'
+        'miniGamePayD30PlaRoi' => 'getMiniGamePayD30PlaRoi',
+        'minigame1dPayCount' => 'getMinigame1dPayCount',
+        'minigame3dIncomeUv' => 'getMinigame3dIncomeUv',
+        'minigame3dIncomeCount' => 'getMinigame3dIncomeCount',
+        'minigame7dIncomeUv' => 'getMinigame7dIncomeUv',
+        'minigame7dIncomeCount' => 'getMinigame7dIncomeCount',
+        'minigame3dIncomeRoi' => 'getMinigame3dIncomeRoi',
+        'minigame7dIncomeRoi' => 'getMinigame7dIncomeRoi',
+        'minigame24hPayUv' => 'getMinigame24hPayUv',
+        'minigame24hPayAmount' => 'getMinigame24hPayAmount',
+        'minigame24hPayRoi' => 'getMinigame24hPayRoi',
+        'minigame24hPayArpu' => 'getMinigame24hPayArpu'
     ];
 
     /**
@@ -3725,6 +3780,17 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGamePayD7PlaRoi'] = isset($data['miniGamePayD7PlaRoi']) ? $data['miniGamePayD7PlaRoi'] : null;
         $this->container['miniGamePayD14PlaRoi'] = isset($data['miniGamePayD14PlaRoi']) ? $data['miniGamePayD14PlaRoi'] : null;
         $this->container['miniGamePayD30PlaRoi'] = isset($data['miniGamePayD30PlaRoi']) ? $data['miniGamePayD30PlaRoi'] : null;
+        $this->container['minigame1dPayCount'] = isset($data['minigame1dPayCount']) ? $data['minigame1dPayCount'] : null;
+        $this->container['minigame3dIncomeUv'] = isset($data['minigame3dIncomeUv']) ? $data['minigame3dIncomeUv'] : null;
+        $this->container['minigame3dIncomeCount'] = isset($data['minigame3dIncomeCount']) ? $data['minigame3dIncomeCount'] : null;
+        $this->container['minigame7dIncomeUv'] = isset($data['minigame7dIncomeUv']) ? $data['minigame7dIncomeUv'] : null;
+        $this->container['minigame7dIncomeCount'] = isset($data['minigame7dIncomeCount']) ? $data['minigame7dIncomeCount'] : null;
+        $this->container['minigame3dIncomeRoi'] = isset($data['minigame3dIncomeRoi']) ? $data['minigame3dIncomeRoi'] : null;
+        $this->container['minigame7dIncomeRoi'] = isset($data['minigame7dIncomeRoi']) ? $data['minigame7dIncomeRoi'] : null;
+        $this->container['minigame24hPayUv'] = isset($data['minigame24hPayUv']) ? $data['minigame24hPayUv'] : null;
+        $this->container['minigame24hPayAmount'] = isset($data['minigame24hPayAmount']) ? $data['minigame24hPayAmount'] : null;
+        $this->container['minigame24hPayRoi'] = isset($data['minigame24hPayRoi']) ? $data['minigame24hPayRoi'] : null;
+        $this->container['minigame24hPayArpu'] = isset($data['minigame24hPayArpu']) ? $data['minigame24hPayArpu'] : null;
     }
 
     /**
@@ -17955,6 +18021,270 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setMiniGamePayD30PlaRoi($miniGamePayD30PlaRoi)
     {
         $this->container['miniGamePayD30PlaRoi'] = $miniGamePayD30PlaRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets minigame1dPayCount
+     *
+     * @return int|mixed
+     */
+    public function getMinigame1dPayCount()
+    {
+        return $this->container['minigame1dPayCount'];
+    }
+
+    /**
+     * Sets minigame1dPayCount
+     *
+     * @param int|mixed $minigame1dPayCount minigame1dPayCount
+     *
+     * @return $this
+     */
+    public function setMinigame1dPayCount($minigame1dPayCount)
+    {
+        $this->container['minigame1dPayCount'] = $minigame1dPayCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets minigame3dIncomeUv
+     *
+     * @return int|mixed
+     */
+    public function getMinigame3dIncomeUv()
+    {
+        return $this->container['minigame3dIncomeUv'];
+    }
+
+    /**
+     * Sets minigame3dIncomeUv
+     *
+     * @param int|mixed $minigame3dIncomeUv minigame3dIncomeUv
+     *
+     * @return $this
+     */
+    public function setMinigame3dIncomeUv($minigame3dIncomeUv)
+    {
+        $this->container['minigame3dIncomeUv'] = $minigame3dIncomeUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets minigame3dIncomeCount
+     *
+     * @return int|mixed
+     */
+    public function getMinigame3dIncomeCount()
+    {
+        return $this->container['minigame3dIncomeCount'];
+    }
+
+    /**
+     * Sets minigame3dIncomeCount
+     *
+     * @param int|mixed $minigame3dIncomeCount minigame3dIncomeCount
+     *
+     * @return $this
+     */
+    public function setMinigame3dIncomeCount($minigame3dIncomeCount)
+    {
+        $this->container['minigame3dIncomeCount'] = $minigame3dIncomeCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets minigame7dIncomeUv
+     *
+     * @return int|mixed
+     */
+    public function getMinigame7dIncomeUv()
+    {
+        return $this->container['minigame7dIncomeUv'];
+    }
+
+    /**
+     * Sets minigame7dIncomeUv
+     *
+     * @param int|mixed $minigame7dIncomeUv minigame7dIncomeUv
+     *
+     * @return $this
+     */
+    public function setMinigame7dIncomeUv($minigame7dIncomeUv)
+    {
+        $this->container['minigame7dIncomeUv'] = $minigame7dIncomeUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets minigame7dIncomeCount
+     *
+     * @return int|mixed
+     */
+    public function getMinigame7dIncomeCount()
+    {
+        return $this->container['minigame7dIncomeCount'];
+    }
+
+    /**
+     * Sets minigame7dIncomeCount
+     *
+     * @param int|mixed $minigame7dIncomeCount minigame7dIncomeCount
+     *
+     * @return $this
+     */
+    public function setMinigame7dIncomeCount($minigame7dIncomeCount)
+    {
+        $this->container['minigame7dIncomeCount'] = $minigame7dIncomeCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets minigame3dIncomeRoi
+     *
+     * @return double|mixed
+     */
+    public function getMinigame3dIncomeRoi()
+    {
+        return $this->container['minigame3dIncomeRoi'];
+    }
+
+    /**
+     * Sets minigame3dIncomeRoi
+     *
+     * @param double|mixed $minigame3dIncomeRoi minigame3dIncomeRoi
+     *
+     * @return $this
+     */
+    public function setMinigame3dIncomeRoi($minigame3dIncomeRoi)
+    {
+        $this->container['minigame3dIncomeRoi'] = $minigame3dIncomeRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets minigame7dIncomeRoi
+     *
+     * @return double|mixed
+     */
+    public function getMinigame7dIncomeRoi()
+    {
+        return $this->container['minigame7dIncomeRoi'];
+    }
+
+    /**
+     * Sets minigame7dIncomeRoi
+     *
+     * @param double|mixed $minigame7dIncomeRoi minigame7dIncomeRoi
+     *
+     * @return $this
+     */
+    public function setMinigame7dIncomeRoi($minigame7dIncomeRoi)
+    {
+        $this->container['minigame7dIncomeRoi'] = $minigame7dIncomeRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets minigame24hPayUv
+     *
+     * @return int|mixed
+     */
+    public function getMinigame24hPayUv()
+    {
+        return $this->container['minigame24hPayUv'];
+    }
+
+    /**
+     * Sets minigame24hPayUv
+     *
+     * @param int|mixed $minigame24hPayUv minigame24hPayUv
+     *
+     * @return $this
+     */
+    public function setMinigame24hPayUv($minigame24hPayUv)
+    {
+        $this->container['minigame24hPayUv'] = $minigame24hPayUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets minigame24hPayAmount
+     *
+     * @return int|mixed
+     */
+    public function getMinigame24hPayAmount()
+    {
+        return $this->container['minigame24hPayAmount'];
+    }
+
+    /**
+     * Sets minigame24hPayAmount
+     *
+     * @param int|mixed $minigame24hPayAmount minigame24hPayAmount
+     *
+     * @return $this
+     */
+    public function setMinigame24hPayAmount($minigame24hPayAmount)
+    {
+        $this->container['minigame24hPayAmount'] = $minigame24hPayAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets minigame24hPayRoi
+     *
+     * @return double|mixed
+     */
+    public function getMinigame24hPayRoi()
+    {
+        return $this->container['minigame24hPayRoi'];
+    }
+
+    /**
+     * Sets minigame24hPayRoi
+     *
+     * @param double|mixed $minigame24hPayRoi minigame24hPayRoi
+     *
+     * @return $this
+     */
+    public function setMinigame24hPayRoi($minigame24hPayRoi)
+    {
+        $this->container['minigame24hPayRoi'] = $minigame24hPayRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets minigame24hPayArpu
+     *
+     * @return int|mixed
+     */
+    public function getMinigame24hPayArpu()
+    {
+        return $this->container['minigame24hPayArpu'];
+    }
+
+    /**
+     * Sets minigame24hPayArpu
+     *
+     * @param int|mixed $minigame24hPayArpu minigame24hPayArpu
+     *
+     * @return $this
+     */
+    public function setMinigame24hPayArpu($minigame24hPayArpu)
+    {
+        $this->container['minigame24hPayArpu'] = $minigame24hPayArpu;
 
         return $this;
     }
