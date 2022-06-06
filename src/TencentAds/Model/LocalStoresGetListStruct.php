@@ -74,7 +74,8 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         'localStoreAdcode' => 'int',
         'localStoreDistrict' => 'string',
         'localStoreStreet' => 'string',
-        'localStoreBusinessArea' => 'string'
+        'localStoreBusinessArea' => 'string',
+        'localStoreRemark' => 'string'
     ];
 
     /**
@@ -99,7 +100,8 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         'localStoreAdcode' => 'int64',
         'localStoreDistrict' => null,
         'localStoreStreet' => null,
-        'localStoreBusinessArea' => null
+        'localStoreBusinessArea' => null,
+        'localStoreRemark' => null
     ];
 
     /**
@@ -145,7 +147,8 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         'localStoreAdcode' => 'local_store_adcode',
         'localStoreDistrict' => 'local_store_district',
         'localStoreStreet' => 'local_store_street',
-        'localStoreBusinessArea' => 'local_store_business_area'
+        'localStoreBusinessArea' => 'local_store_business_area',
+        'localStoreRemark' => 'local_store_remark'
     ];
 
     /**
@@ -170,7 +173,8 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         'localStoreAdcode' => 'setLocalStoreAdcode',
         'localStoreDistrict' => 'setLocalStoreDistrict',
         'localStoreStreet' => 'setLocalStoreStreet',
-        'localStoreBusinessArea' => 'setLocalStoreBusinessArea'
+        'localStoreBusinessArea' => 'setLocalStoreBusinessArea',
+        'localStoreRemark' => 'setLocalStoreRemark'
     ];
 
     /**
@@ -195,7 +199,8 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         'localStoreAdcode' => 'getLocalStoreAdcode',
         'localStoreDistrict' => 'getLocalStoreDistrict',
         'localStoreStreet' => 'getLocalStoreStreet',
-        'localStoreBusinessArea' => 'getLocalStoreBusinessArea'
+        'localStoreBusinessArea' => 'getLocalStoreBusinessArea',
+        'localStoreRemark' => 'getLocalStoreRemark'
     ];
 
     /**
@@ -275,6 +280,7 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         $this->container['localStoreDistrict'] = isset($data['localStoreDistrict']) ? $data['localStoreDistrict'] : null;
         $this->container['localStoreStreet'] = isset($data['localStoreStreet']) ? $data['localStoreStreet'] : null;
         $this->container['localStoreBusinessArea'] = isset($data['localStoreBusinessArea']) ? $data['localStoreBusinessArea'] : null;
+        $this->container['localStoreRemark'] = isset($data['localStoreRemark']) ? $data['localStoreRemark'] : null;
     }
 
     /**
@@ -705,6 +711,30 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
     public function setLocalStoreBusinessArea($localStoreBusinessArea)
     {
         $this->container['localStoreBusinessArea'] = $localStoreBusinessArea;
+
+        return $this;
+    }
+
+    /**
+     * Gets localStoreRemark
+     *
+     * @return string|mixed
+     */
+    public function getLocalStoreRemark()
+    {
+        return $this->container['localStoreRemark'];
+    }
+
+    /**
+     * Sets localStoreRemark
+     *
+     * @param string|mixed $localStoreRemark localStoreRemark
+     *
+     * @return $this
+     */
+    public function setLocalStoreRemark($localStoreRemark)
+    {
+        $this->container['localStoreRemark'] = $localStoreRemark;
 
         return $this;
     }

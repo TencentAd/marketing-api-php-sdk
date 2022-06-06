@@ -70,6 +70,7 @@ class DynamicAdTemplateSize
     const _240_180 = 'SIZE_240_180';
     const _230_152 = 'SIZE_230_152';
     const _147_147 = 'SIZE_147_147';
+    const _540_276 = 'SIZE_540_276';
     
     /**
      * Gets allowable values of the enum
@@ -104,6 +105,7 @@ class DynamicAdTemplateSize
             self::_240_180,
             self::_230_152,
             self::_147_147,
+            self::_540_276,
         ];
     }
 }

@@ -63,6 +63,11 @@ class AccountTypeMap
     const JD_PRIVILEGE = 'FUND_TYPE_JD_PRIVILEGE';
     const JD_WIRELESS_CASH = 'FUND_TYPE_JD_WIRELESS_CASH';
     const SPECIAL_GIFT = 'FUND_TYPE_SPECIAL_GIFT';
+    const MP_GAME_DEVELOPER_WORKING_FUND = 'FUND_TYPE_MP_GAME_DEVELOPER_WORKING_FUND';
+    const MP_GAME_DEVELOPER_GIFT = 'FUND_TYPE_MP_GAME_DEVELOPER_GIFT';
+    const FLOW_SOURCE_AD_FUND = 'FUND_TYPE_FLOW_SOURCE_AD_FUND';
+    const ANDROID_ORIENTED_GIFT = 'FUND_TYPE_ANDROID_ORIENTED_GIFT';
+    const LOCATION_PROMOTION_REWARDS = 'FUND_TYPE_LOCATION_PROMOTION_REWARDS';
     
     /**
      * Gets allowable values of the enum
@@ -90,6 +95,11 @@ class AccountTypeMap
             self::JD_PRIVILEGE,
             self::JD_WIRELESS_CASH,
             self::SPECIAL_GIFT,
+            self::MP_GAME_DEVELOPER_WORKING_FUND,
+            self::MP_GAME_DEVELOPER_GIFT,
+            self::FLOW_SOURCE_AD_FUND,
+            self::ANDROID_ORIENTED_GIFT,
+            self::LOCATION_PROMOTION_REWARDS,
         ];
     }
 }

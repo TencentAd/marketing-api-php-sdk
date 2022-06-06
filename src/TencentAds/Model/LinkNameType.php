@@ -92,6 +92,11 @@ class LinkNameType
     const FOLLOW_OFFICIAL_ACCOUNT_CHT = 'FOLLOW_OFFICIAL_ACCOUNT_CHT';
     const GET_FOR_FREE = 'GET_FOR_FREE';
     const WATCH_VIDEO = 'WATCH_VIDEO';
+    const CARNIVAL_618 = 'CARNIVAL_618';
+    const SURPRISE_618 = 'SURPRISE_618';
+    const DISCOUNT_618 = 'DISCOUNT_618';
+    const GO_618_VENUE = 'GO_618_VENUE';
+    const GET_618_WELFARE = 'GET_618_WELFARE';
     
     /**
      * Gets allowable values of the enum
@@ -148,6 +153,11 @@ class LinkNameType
             self::FOLLOW_OFFICIAL_ACCOUNT_CHT,
             self::GET_FOR_FREE,
             self::WATCH_VIDEO,
+            self::CARNIVAL_618,
+            self::SURPRISE_618,
+            self::DISCOUNT_618,
+            self::GO_618_VENUE,
+            self::GET_618_WELFARE,
         ];
     }
 }

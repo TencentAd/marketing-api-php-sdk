@@ -92,6 +92,11 @@ class LinkUrlLinkNameType
     const MORE_ABOUT_OFFICIAL_ACCOUNT_CHT = 'MORE_ABOUT_OFFICIAL_ACCOUNT_CHT';
     const FOLLOW_OFFICIAL_ACCOUNT_CHT = 'FOLLOW_OFFICIAL_ACCOUNT_CHT';
     const GET_FOR_FREE = 'GET_FOR_FREE';
+    const CARNIVAL_618 = 'CARNIVAL_618';
+    const SURPRISE_618 = 'SURPRISE_618';
+    const DISCOUNT_618 = 'DISCOUNT_618';
+    const GO_618_VENUE = 'GO_618_VENUE';
+    const GET_618_WELFARE = 'GET_618_WELFARE';
     const WATCH_VIDEO = 'WATCH_VIDEO';
     
     /**
@@ -149,6 +154,11 @@ class LinkUrlLinkNameType
             self::MORE_ABOUT_OFFICIAL_ACCOUNT_CHT,
             self::FOLLOW_OFFICIAL_ACCOUNT_CHT,
             self::GET_FOR_FREE,
+            self::CARNIVAL_618,
+            self::SURPRISE_618,
+            self::DISCOUNT_618,
+            self::GO_618_VENUE,
+            self::GET_618_WELFARE,
             self::WATCH_VIDEO,
         ];
     }
