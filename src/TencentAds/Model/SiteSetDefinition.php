@@ -86,6 +86,7 @@ class SiteSetDefinition
     const TENCENT_VIDEO_OTT = 'SITE_SET_TENCENT_VIDEO_OTT';
     const CHANNELS = 'SITE_SET_CHANNELS';
     const OVERSEAS_UNION = 'SITE_SET_OVERSEAS_UNION';
+    const WECHAT_SEARCH = 'SITE_SET_WECHAT_SEARCH';
     
     /**
      * Gets allowable values of the enum
@@ -136,6 +137,7 @@ class SiteSetDefinition
             self::TENCENT_VIDEO_OTT,
             self::CHANNELS,
             self::OVERSEAS_UNION,
+            self::WECHAT_SEARCH,
         ];
     }
 }
