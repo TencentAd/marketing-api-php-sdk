@@ -90,6 +90,8 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'bool',
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
         'unionMarketSpec' => '\TencentAds\Model\UnionMarketSpec',
+        'headClickType' => '\TencentAds\Model\HeadClickType',
+        'headClickSpec' => '\TencentAds\Model\HeadClickSpec',
         'accountId' => 'int'
     ];
 
@@ -132,6 +134,8 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => null,
         'appGiftPackCode' => null,
         'unionMarketSpec' => null,
+        'headClickType' => null,
+        'headClickSpec' => null,
         'accountId' => 'int64'
     ];
 
@@ -195,6 +199,8 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'countdown_switch',
         'appGiftPackCode' => 'app_gift_pack_code',
         'unionMarketSpec' => 'union_market_spec',
+        'headClickType' => 'head_click_type',
+        'headClickSpec' => 'head_click_spec',
         'accountId' => 'account_id'
     ];
 
@@ -237,6 +243,8 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'setCountdownSwitch',
         'appGiftPackCode' => 'setAppGiftPackCode',
         'unionMarketSpec' => 'setUnionMarketSpec',
+        'headClickType' => 'setHeadClickType',
+        'headClickSpec' => 'setHeadClickSpec',
         'accountId' => 'setAccountId'
     ];
 
@@ -279,6 +287,8 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'getCountdownSwitch',
         'appGiftPackCode' => 'getAppGiftPackCode',
         'unionMarketSpec' => 'getUnionMarketSpec',
+        'headClickType' => 'getHeadClickType',
+        'headClickSpec' => 'getHeadClickSpec',
         'accountId' => 'getAccountId'
     ];
 
@@ -375,6 +385,8 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['countdownSwitch'] = isset($data['countdownSwitch']) ? $data['countdownSwitch'] : null;
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
         $this->container['unionMarketSpec'] = isset($data['unionMarketSpec']) ? $data['unionMarketSpec'] : null;
+        $this->container['headClickType'] = isset($data['headClickType']) ? $data['headClickType'] : null;
+        $this->container['headClickSpec'] = isset($data['headClickSpec']) ? $data['headClickSpec'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1190,6 +1202,54 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setUnionMarketSpec($unionMarketSpec)
     {
         $this->container['unionMarketSpec'] = $unionMarketSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets headClickType
+     *
+     * @return \TencentAds\Model\HeadClickType|mixed
+     */
+    public function getHeadClickType()
+    {
+        return $this->container['headClickType'];
+    }
+
+    /**
+     * Sets headClickType
+     *
+     * @param \TencentAds\Model\HeadClickType|mixed $headClickType headClickType
+     *
+     * @return $this
+     */
+    public function setHeadClickType($headClickType)
+    {
+        $this->container['headClickType'] = $headClickType;
+
+        return $this;
+    }
+
+    /**
+     * Gets headClickSpec
+     *
+     * @return \TencentAds\Model\HeadClickSpec|mixed
+     */
+    public function getHeadClickSpec()
+    {
+        return $this->container['headClickSpec'];
+    }
+
+    /**
+     * Sets headClickSpec
+     *
+     * @param \TencentAds\Model\HeadClickSpec|mixed $headClickSpec headClickSpec
+     *
+     * @return $this
+     */
+    public function setHeadClickSpec($headClickSpec)
+    {
+        $this->container['headClickSpec'] = $headClickSpec;
 
         return $this;
     }

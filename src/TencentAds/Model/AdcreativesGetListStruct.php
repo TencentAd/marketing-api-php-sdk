@@ -99,6 +99,8 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'bool',
         'source' => '\TencentAds\Model\AdCreativeSource',
         'pageTrackUrl' => 'string',
+        'headClickType' => '\TencentAds\Model\HeadClickType',
+        'headClickSpec' => '\TencentAds\Model\HeadClickSpec',
         'barrageList' => '\TencentAds\Model\BarrageListReadStruct[]',
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
         'enableBreakthroughSiteset' => 'bool',
@@ -158,6 +160,8 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'countdownSwitch' => null,
         'source' => null,
         'pageTrackUrl' => null,
+        'headClickType' => null,
+        'headClickSpec' => null,
         'barrageList' => null,
         'appGiftPackCode' => null,
         'enableBreakthroughSiteset' => null,
@@ -238,6 +242,8 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'countdown_switch',
         'source' => 'source',
         'pageTrackUrl' => 'page_track_url',
+        'headClickType' => 'head_click_type',
+        'headClickSpec' => 'head_click_spec',
         'barrageList' => 'barrage_list',
         'appGiftPackCode' => 'app_gift_pack_code',
         'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
@@ -297,6 +303,8 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'setCountdownSwitch',
         'source' => 'setSource',
         'pageTrackUrl' => 'setPageTrackUrl',
+        'headClickType' => 'setHeadClickType',
+        'headClickSpec' => 'setHeadClickSpec',
         'barrageList' => 'setBarrageList',
         'appGiftPackCode' => 'setAppGiftPackCode',
         'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
@@ -356,6 +364,8 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'getCountdownSwitch',
         'source' => 'getSource',
         'pageTrackUrl' => 'getPageTrackUrl',
+        'headClickType' => 'getHeadClickType',
+        'headClickSpec' => 'getHeadClickSpec',
         'barrageList' => 'getBarrageList',
         'appGiftPackCode' => 'getAppGiftPackCode',
         'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
@@ -469,6 +479,8 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['countdownSwitch'] = isset($data['countdownSwitch']) ? $data['countdownSwitch'] : null;
         $this->container['source'] = isset($data['source']) ? $data['source'] : null;
         $this->container['pageTrackUrl'] = isset($data['pageTrackUrl']) ? $data['pageTrackUrl'] : null;
+        $this->container['headClickType'] = isset($data['headClickType']) ? $data['headClickType'] : null;
+        $this->container['headClickSpec'] = isset($data['headClickSpec']) ? $data['headClickSpec'] : null;
         $this->container['barrageList'] = isset($data['barrageList']) ? $data['barrageList'] : null;
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
         $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
@@ -1485,6 +1497,54 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setPageTrackUrl($pageTrackUrl)
     {
         $this->container['pageTrackUrl'] = $pageTrackUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets headClickType
+     *
+     * @return \TencentAds\Model\HeadClickType|mixed
+     */
+    public function getHeadClickType()
+    {
+        return $this->container['headClickType'];
+    }
+
+    /**
+     * Sets headClickType
+     *
+     * @param \TencentAds\Model\HeadClickType|mixed $headClickType headClickType
+     *
+     * @return $this
+     */
+    public function setHeadClickType($headClickType)
+    {
+        $this->container['headClickType'] = $headClickType;
+
+        return $this;
+    }
+
+    /**
+     * Gets headClickSpec
+     *
+     * @return \TencentAds\Model\HeadClickSpec|mixed
+     */
+    public function getHeadClickSpec()
+    {
+        return $this->container['headClickSpec'];
+    }
+
+    /**
+     * Sets headClickSpec
+     *
+     * @param \TencentAds\Model\HeadClickSpec|mixed $headClickSpec headClickSpec
+     *
+     * @return $this
+     */
+    public function setHeadClickSpec($headClickSpec)
+    {
+        $this->container['headClickSpec'] = $headClickSpec;
 
         return $this;
     }

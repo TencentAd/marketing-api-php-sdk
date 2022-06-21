@@ -85,6 +85,8 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'floatingZone' => '\TencentAds\Model\FloatingZone',
         'marketingPendantImageId' => 'string',
         'countdownSwitch' => 'bool',
+        'headClickType' => '\TencentAds\Model\HeadClickType',
+        'headClickSpec' => '\TencentAds\Model\HeadClickSpec',
         'barrageList' => '\TencentAds\Model\BarrageListCreateStruct[]',
         'dynamicAdcreativeSpec' => '\TencentAds\Model\DynamicAdcreativeSpec',
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
@@ -129,6 +131,8 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'floatingZone' => null,
         'marketingPendantImageId' => null,
         'countdownSwitch' => null,
+        'headClickType' => null,
+        'headClickSpec' => null,
         'barrageList' => null,
         'dynamicAdcreativeSpec' => null,
         'appGiftPackCode' => null,
@@ -194,6 +198,8 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'floatingZone' => 'floating_zone',
         'marketingPendantImageId' => 'marketing_pendant_image_id',
         'countdownSwitch' => 'countdown_switch',
+        'headClickType' => 'head_click_type',
+        'headClickSpec' => 'head_click_spec',
         'barrageList' => 'barrage_list',
         'dynamicAdcreativeSpec' => 'dynamic_adcreative_spec',
         'appGiftPackCode' => 'app_gift_pack_code',
@@ -238,6 +244,8 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'floatingZone' => 'setFloatingZone',
         'marketingPendantImageId' => 'setMarketingPendantImageId',
         'countdownSwitch' => 'setCountdownSwitch',
+        'headClickType' => 'setHeadClickType',
+        'headClickSpec' => 'setHeadClickSpec',
         'barrageList' => 'setBarrageList',
         'dynamicAdcreativeSpec' => 'setDynamicAdcreativeSpec',
         'appGiftPackCode' => 'setAppGiftPackCode',
@@ -282,6 +290,8 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'floatingZone' => 'getFloatingZone',
         'marketingPendantImageId' => 'getMarketingPendantImageId',
         'countdownSwitch' => 'getCountdownSwitch',
+        'headClickType' => 'getHeadClickType',
+        'headClickSpec' => 'getHeadClickSpec',
         'barrageList' => 'getBarrageList',
         'dynamicAdcreativeSpec' => 'getDynamicAdcreativeSpec',
         'appGiftPackCode' => 'getAppGiftPackCode',
@@ -380,6 +390,8 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['floatingZone'] = isset($data['floatingZone']) ? $data['floatingZone'] : null;
         $this->container['marketingPendantImageId'] = isset($data['marketingPendantImageId']) ? $data['marketingPendantImageId'] : null;
         $this->container['countdownSwitch'] = isset($data['countdownSwitch']) ? $data['countdownSwitch'] : null;
+        $this->container['headClickType'] = isset($data['headClickType']) ? $data['headClickType'] : null;
+        $this->container['headClickSpec'] = isset($data['headClickSpec']) ? $data['headClickSpec'] : null;
         $this->container['barrageList'] = isset($data['barrageList']) ? $data['barrageList'] : null;
         $this->container['dynamicAdcreativeSpec'] = isset($data['dynamicAdcreativeSpec']) ? $data['dynamicAdcreativeSpec'] : null;
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
@@ -1082,6 +1094,54 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setCountdownSwitch($countdownSwitch)
     {
         $this->container['countdownSwitch'] = $countdownSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets headClickType
+     *
+     * @return \TencentAds\Model\HeadClickType|mixed
+     */
+    public function getHeadClickType()
+    {
+        return $this->container['headClickType'];
+    }
+
+    /**
+     * Sets headClickType
+     *
+     * @param \TencentAds\Model\HeadClickType|mixed $headClickType headClickType
+     *
+     * @return $this
+     */
+    public function setHeadClickType($headClickType)
+    {
+        $this->container['headClickType'] = $headClickType;
+
+        return $this;
+    }
+
+    /**
+     * Gets headClickSpec
+     *
+     * @return \TencentAds\Model\HeadClickSpec|mixed
+     */
+    public function getHeadClickSpec()
+    {
+        return $this->container['headClickSpec'];
+    }
+
+    /**
+     * Sets headClickSpec
+     *
+     * @param \TencentAds\Model\HeadClickSpec|mixed $headClickSpec headClickSpec
+     *
+     * @return $this
+     */
+    public function setHeadClickSpec($headClickSpec)
+    {
+        $this->container['headClickSpec'] = $headClickSpec;
 
         return $this;
     }

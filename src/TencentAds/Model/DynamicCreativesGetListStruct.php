@@ -87,7 +87,9 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'enableBreakthroughSiteset' => 'bool',
         'creativeTemplateVersionType' => '\TencentAds\Model\CreativeTemplateVersionType',
         'unionMarketSpec' => '\TencentAds\Model\UnionMarketSpec',
-        'creativeTemplateCategory' => 'string'
+        'creativeTemplateCategory' => 'string',
+        'headClickType' => '\TencentAds\Model\HeadClickType',
+        'headClickSpec' => '\TencentAds\Model\HeadClickSpec'
     ];
 
     /**
@@ -125,7 +127,9 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'enableBreakthroughSiteset' => null,
         'creativeTemplateVersionType' => null,
         'unionMarketSpec' => null,
-        'creativeTemplateCategory' => null
+        'creativeTemplateCategory' => null,
+        'headClickType' => null,
+        'headClickSpec' => null
     ];
 
     /**
@@ -184,7 +188,9 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
         'creativeTemplateVersionType' => 'creative_template_version_type',
         'unionMarketSpec' => 'union_market_spec',
-        'creativeTemplateCategory' => 'creative_template_category'
+        'creativeTemplateCategory' => 'creative_template_category',
+        'headClickType' => 'head_click_type',
+        'headClickSpec' => 'head_click_spec'
     ];
 
     /**
@@ -222,7 +228,9 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
         'creativeTemplateVersionType' => 'setCreativeTemplateVersionType',
         'unionMarketSpec' => 'setUnionMarketSpec',
-        'creativeTemplateCategory' => 'setCreativeTemplateCategory'
+        'creativeTemplateCategory' => 'setCreativeTemplateCategory',
+        'headClickType' => 'setHeadClickType',
+        'headClickSpec' => 'setHeadClickSpec'
     ];
 
     /**
@@ -260,7 +268,9 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
         'creativeTemplateVersionType' => 'getCreativeTemplateVersionType',
         'unionMarketSpec' => 'getUnionMarketSpec',
-        'creativeTemplateCategory' => 'getCreativeTemplateCategory'
+        'creativeTemplateCategory' => 'getCreativeTemplateCategory',
+        'headClickType' => 'getHeadClickType',
+        'headClickSpec' => 'getHeadClickSpec'
     ];
 
     /**
@@ -353,6 +363,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['creativeTemplateVersionType'] = isset($data['creativeTemplateVersionType']) ? $data['creativeTemplateVersionType'] : null;
         $this->container['unionMarketSpec'] = isset($data['unionMarketSpec']) ? $data['unionMarketSpec'] : null;
         $this->container['creativeTemplateCategory'] = isset($data['creativeTemplateCategory']) ? $data['creativeTemplateCategory'] : null;
+        $this->container['headClickType'] = isset($data['headClickType']) ? $data['headClickType'] : null;
+        $this->container['headClickSpec'] = isset($data['headClickSpec']) ? $data['headClickSpec'] : null;
     }
 
     /**
@@ -1095,6 +1107,54 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setCreativeTemplateCategory($creativeTemplateCategory)
     {
         $this->container['creativeTemplateCategory'] = $creativeTemplateCategory;
+
+        return $this;
+    }
+
+    /**
+     * Gets headClickType
+     *
+     * @return \TencentAds\Model\HeadClickType|mixed
+     */
+    public function getHeadClickType()
+    {
+        return $this->container['headClickType'];
+    }
+
+    /**
+     * Sets headClickType
+     *
+     * @param \TencentAds\Model\HeadClickType|mixed $headClickType headClickType
+     *
+     * @return $this
+     */
+    public function setHeadClickType($headClickType)
+    {
+        $this->container['headClickType'] = $headClickType;
+
+        return $this;
+    }
+
+    /**
+     * Gets headClickSpec
+     *
+     * @return \TencentAds\Model\HeadClickSpec|mixed
+     */
+    public function getHeadClickSpec()
+    {
+        return $this->container['headClickSpec'];
+    }
+
+    /**
+     * Sets headClickSpec
+     *
+     * @param \TencentAds\Model\HeadClickSpec|mixed $headClickSpec headClickSpec
+     *
+     * @return $this
+     */
+    public function setHeadClickSpec($headClickSpec)
+    {
+        $this->container['headClickSpec'] = $headClickSpec;
 
         return $this;
     }

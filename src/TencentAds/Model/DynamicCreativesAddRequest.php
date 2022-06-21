@@ -96,6 +96,8 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
         'enableBreakthroughSiteset' => 'bool',
         'unionMarketSpec' => '\TencentAds\Model\UnionMarketSpec',
+        'headClickType' => '\TencentAds\Model\HeadClickType',
+        'headClickSpec' => '\TencentAds\Model\HeadClickSpec',
         'accountId' => 'int'
     ];
 
@@ -144,6 +146,8 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'appGiftPackCode' => null,
         'enableBreakthroughSiteset' => null,
         'unionMarketSpec' => null,
+        'headClickType' => null,
+        'headClickSpec' => null,
         'accountId' => 'int64'
     ];
 
@@ -213,6 +217,8 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'appGiftPackCode' => 'app_gift_pack_code',
         'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
         'unionMarketSpec' => 'union_market_spec',
+        'headClickType' => 'head_click_type',
+        'headClickSpec' => 'head_click_spec',
         'accountId' => 'account_id'
     ];
 
@@ -261,6 +267,8 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'appGiftPackCode' => 'setAppGiftPackCode',
         'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
         'unionMarketSpec' => 'setUnionMarketSpec',
+        'headClickType' => 'setHeadClickType',
+        'headClickSpec' => 'setHeadClickSpec',
         'accountId' => 'setAccountId'
     ];
 
@@ -309,6 +317,8 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'appGiftPackCode' => 'getAppGiftPackCode',
         'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
         'unionMarketSpec' => 'getUnionMarketSpec',
+        'headClickType' => 'getHeadClickType',
+        'headClickSpec' => 'getHeadClickSpec',
         'accountId' => 'getAccountId'
     ];
 
@@ -411,6 +421,8 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
         $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
         $this->container['unionMarketSpec'] = isset($data['unionMarketSpec']) ? $data['unionMarketSpec'] : null;
+        $this->container['headClickType'] = isset($data['headClickType']) ? $data['headClickType'] : null;
+        $this->container['headClickSpec'] = isset($data['headClickSpec']) ? $data['headClickSpec'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1370,6 +1382,54 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     public function setUnionMarketSpec($unionMarketSpec)
     {
         $this->container['unionMarketSpec'] = $unionMarketSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets headClickType
+     *
+     * @return \TencentAds\Model\HeadClickType|mixed
+     */
+    public function getHeadClickType()
+    {
+        return $this->container['headClickType'];
+    }
+
+    /**
+     * Sets headClickType
+     *
+     * @param \TencentAds\Model\HeadClickType|mixed $headClickType headClickType
+     *
+     * @return $this
+     */
+    public function setHeadClickType($headClickType)
+    {
+        $this->container['headClickType'] = $headClickType;
+
+        return $this;
+    }
+
+    /**
+     * Gets headClickSpec
+     *
+     * @return \TencentAds\Model\HeadClickSpec|mixed
+     */
+    public function getHeadClickSpec()
+    {
+        return $this->container['headClickSpec'];
+    }
+
+    /**
+     * Sets headClickSpec
+     *
+     * @param \TencentAds\Model\HeadClickSpec|mixed $headClickSpec headClickSpec
+     *
+     * @return $this
+     */
+    public function setHeadClickSpec($headClickSpec)
+    {
+        $this->container['headClickSpec'] = $headClickSpec;
 
         return $this;
     }

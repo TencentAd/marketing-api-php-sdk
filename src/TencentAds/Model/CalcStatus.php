@@ -62,6 +62,11 @@ class CalcStatus
     const ACTIVE_AD_LIMIT = 'STATUS_ACTIVE_AD_LIMIT';
     const PART_READY = 'STATUS_PART_READY';
     const PART_ACTIVE = 'STATUS_PART_ACTIVE';
+    const TO_LOCK_FLOW = 'STATUS_TO_LOCK_FLOW';
+    const LOCKING_FLOW = 'STATUS_LOCKING_FLOW';
+    const LOCK_FLOW_SUCCESS = 'STATUS_LOCK_FLOW_SUCCESS';
+    const LOCK_FLOW_FAIL = 'STATUS_LOCK_FLOW_FAIL';
+    const FLOW_CANCELLED = 'STATUS_FLOW_CANCELLED';
     
     /**
      * Gets allowable values of the enum
@@ -88,6 +93,11 @@ class CalcStatus
             self::ACTIVE_AD_LIMIT,
             self::PART_READY,
             self::PART_ACTIVE,
+            self::TO_LOCK_FLOW,
+            self::LOCKING_FLOW,
+            self::LOCK_FLOW_SUCCESS,
+            self::LOCK_FLOW_FAIL,
+            self::FLOW_CANCELLED,
         ];
     }
 }
