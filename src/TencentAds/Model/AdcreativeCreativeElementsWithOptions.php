@@ -112,7 +112,8 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'rightButton' => 'string',
         'leftCanvas' => 'string',
         'rightCanvas' => 'string',
-        'wegameInfoSpec' => '\TencentAds\Model\WegameInfoSpec'
+        'wegameInfoSpec' => '\TencentAds\Model\WegameInfoSpec',
+        'wechatChannelsSpec' => '\TencentAds\Model\AdCreativeWechatChannelsSpec'
     ];
 
     /**
@@ -175,7 +176,8 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'rightButton' => null,
         'leftCanvas' => null,
         'rightCanvas' => null,
-        'wegameInfoSpec' => null
+        'wegameInfoSpec' => null,
+        'wechatChannelsSpec' => null
     ];
 
     /**
@@ -259,7 +261,8 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'rightButton' => 'right_button',
         'leftCanvas' => 'left_canvas',
         'rightCanvas' => 'right_canvas',
-        'wegameInfoSpec' => 'wegame_info_spec'
+        'wegameInfoSpec' => 'wegame_info_spec',
+        'wechatChannelsSpec' => 'wechat_channels_spec'
     ];
 
     /**
@@ -322,7 +325,8 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'rightButton' => 'setRightButton',
         'leftCanvas' => 'setLeftCanvas',
         'rightCanvas' => 'setRightCanvas',
-        'wegameInfoSpec' => 'setWegameInfoSpec'
+        'wegameInfoSpec' => 'setWegameInfoSpec',
+        'wechatChannelsSpec' => 'setWechatChannelsSpec'
     ];
 
     /**
@@ -385,7 +389,8 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'rightButton' => 'getRightButton',
         'leftCanvas' => 'getLeftCanvas',
         'rightCanvas' => 'getRightCanvas',
-        'wegameInfoSpec' => 'getWegameInfoSpec'
+        'wegameInfoSpec' => 'getWegameInfoSpec',
+        'wechatChannelsSpec' => 'getWechatChannelsSpec'
     ];
 
     /**
@@ -503,6 +508,7 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         $this->container['leftCanvas'] = isset($data['leftCanvas']) ? $data['leftCanvas'] : null;
         $this->container['rightCanvas'] = isset($data['rightCanvas']) ? $data['rightCanvas'] : null;
         $this->container['wegameInfoSpec'] = isset($data['wegameInfoSpec']) ? $data['wegameInfoSpec'] : null;
+        $this->container['wechatChannelsSpec'] = isset($data['wechatChannelsSpec']) ? $data['wechatChannelsSpec'] : null;
     }
 
     /**
@@ -1845,6 +1851,30 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
     public function setWegameInfoSpec($wegameInfoSpec)
     {
         $this->container['wegameInfoSpec'] = $wegameInfoSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsSpec
+     *
+     * @return \TencentAds\Model\AdCreativeWechatChannelsSpec|mixed
+     */
+    public function getWechatChannelsSpec()
+    {
+        return $this->container['wechatChannelsSpec'];
+    }
+
+    /**
+     * Sets wechatChannelsSpec
+     *
+     * @param \TencentAds\Model\AdCreativeWechatChannelsSpec|mixed $wechatChannelsSpec wechatChannelsSpec
+     *
+     * @return $this
+     */
+    public function setWechatChannelsSpec($wechatChannelsSpec)
+    {
+        $this->container['wechatChannelsSpec'] = $wechatChannelsSpec;
 
         return $this;
     }
