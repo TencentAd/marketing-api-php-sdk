@@ -52,6 +52,7 @@ class CanvasPageElementType
     const VIDEO = 'VIDEO';
     const TEXT = 'TEXT';
     const APP_DOWNLOAD = 'APP_DOWNLOAD';
+    const WEAPP = 'WEAPP';
     
     /**
      * Gets allowable values of the enum
@@ -68,6 +69,7 @@ class CanvasPageElementType
             self::VIDEO,
             self::TEXT,
             self::APP_DOWNLOAD,
+            self::WEAPP,
         ];
     }
 }

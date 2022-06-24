@@ -66,7 +66,8 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
         'sliderSpec' => '\TencentAds\Model\SliderSpec',
         'videoSpec' => '\TencentAds\Model\VideoSpec',
         'textSpec' => '\TencentAds\Model\TextSpec',
-        'appDownloadSpec' => '\TencentAds\Model\CanvasAppDownloadSpecType'
+        'appDownloadSpec' => '\TencentAds\Model\CanvasAppDownloadSpecType',
+        'weappSpec' => '\TencentAds\Model\WeappSpec'
     ];
 
     /**
@@ -83,7 +84,8 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
         'sliderSpec' => null,
         'videoSpec' => null,
         'textSpec' => null,
-        'appDownloadSpec' => null
+        'appDownloadSpec' => null,
+        'weappSpec' => null
     ];
 
     /**
@@ -121,7 +123,8 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
         'sliderSpec' => 'slider_spec',
         'videoSpec' => 'video_spec',
         'textSpec' => 'text_spec',
-        'appDownloadSpec' => 'app_download_spec'
+        'appDownloadSpec' => 'app_download_spec',
+        'weappSpec' => 'weapp_spec'
     ];
 
     /**
@@ -138,7 +141,8 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
         'sliderSpec' => 'setSliderSpec',
         'videoSpec' => 'setVideoSpec',
         'textSpec' => 'setTextSpec',
-        'appDownloadSpec' => 'setAppDownloadSpec'
+        'appDownloadSpec' => 'setAppDownloadSpec',
+        'weappSpec' => 'setWeappSpec'
     ];
 
     /**
@@ -155,7 +159,8 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
         'sliderSpec' => 'getSliderSpec',
         'videoSpec' => 'getVideoSpec',
         'textSpec' => 'getTextSpec',
-        'appDownloadSpec' => 'getAppDownloadSpec'
+        'appDownloadSpec' => 'getAppDownloadSpec',
+        'weappSpec' => 'getWeappSpec'
     ];
 
     /**
@@ -227,6 +232,7 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
         $this->container['videoSpec'] = isset($data['videoSpec']) ? $data['videoSpec'] : null;
         $this->container['textSpec'] = isset($data['textSpec']) ? $data['textSpec'] : null;
         $this->container['appDownloadSpec'] = isset($data['appDownloadSpec']) ? $data['appDownloadSpec'] : null;
+        $this->container['weappSpec'] = isset($data['weappSpec']) ? $data['weappSpec'] : null;
     }
 
     /**
@@ -465,6 +471,30 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
     public function setAppDownloadSpec($appDownloadSpec)
     {
         $this->container['appDownloadSpec'] = $appDownloadSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets weappSpec
+     *
+     * @return \TencentAds\Model\WeappSpec|mixed
+     */
+    public function getWeappSpec()
+    {
+        return $this->container['weappSpec'];
+    }
+
+    /**
+     * Sets weappSpec
+     *
+     * @param \TencentAds\Model\WeappSpec|mixed $weappSpec weappSpec
+     *
+     * @return $this
+     */
+    public function setWeappSpec($weappSpec)
+    {
+        $this->container['weappSpec'] = $weappSpec;
 
         return $this;
     }
