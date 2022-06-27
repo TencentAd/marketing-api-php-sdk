@@ -47,10 +47,10 @@ class BidMode
     const CPC = 'BID_MODE_CPC';
     const CPA = 'BID_MODE_CPA';
     const CPM = 'BID_MODE_CPM';
+    const CPT = 'BID_MODE_CPT';
     const OCPC = 'BID_MODE_OCPC';
     const OCPA = 'BID_MODE_OCPA';
     const OCPM = 'BID_MODE_OCPM';
-    const CPT = 'BID_MODE_CPT';
     
     /**
      * Gets allowable values of the enum
@@ -62,10 +62,10 @@ class BidMode
             self::CPC,
             self::CPA,
             self::CPM,
+            self::CPT,
             self::OCPC,
             self::OCPA,
             self::OCPM,
-            self::CPT,
         ];
     }
 }
