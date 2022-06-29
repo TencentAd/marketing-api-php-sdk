@@ -425,6 +425,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationArpu' => 'int',
         'miniGamePayingRoi' => 'double',
         'miniGamePayingArpu' => 'int',
+        'zoneHeaderClickCount' => 'int',
+        'basicInfoClientCount' => 'int',
+        'accountInfoClickCount' => 'int',
+        'activityInfoClickCount' => 'int',
         'miniGameBfUv' => 'int',
         'miniGameBfCost' => 'int',
         'miniGameBfIncomeUv' => 'int',
@@ -1124,6 +1128,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationArpu' => 'int64',
         'miniGamePayingRoi' => 'double',
         'miniGamePayingArpu' => 'int64',
+        'zoneHeaderClickCount' => 'int64',
+        'basicInfoClientCount' => 'int64',
+        'accountInfoClickCount' => 'int64',
+        'activityInfoClickCount' => 'int64',
         'miniGameBfUv' => 'int64',
         'miniGameBfCost' => 'int64',
         'miniGameBfIncomeUv' => 'int64',
@@ -1844,6 +1852,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationArpu' => 'mini_game_ad_monetization_arpu',
         'miniGamePayingRoi' => 'mini_game_paying_roi',
         'miniGamePayingArpu' => 'mini_game_paying_arpu',
+        'zoneHeaderClickCount' => 'zone_header_click_count',
+        'basicInfoClientCount' => 'basic_info_client_count',
+        'accountInfoClickCount' => 'account_info_click_count',
+        'activityInfoClickCount' => 'activity_info_click_count',
         'miniGameBfUv' => 'mini_game_bf_uv',
         'miniGameBfCost' => 'mini_game_bf_cost',
         'miniGameBfIncomeUv' => 'mini_game_bf_income_uv',
@@ -2543,6 +2555,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationArpu' => 'setMiniGameAdMonetizationArpu',
         'miniGamePayingRoi' => 'setMiniGamePayingRoi',
         'miniGamePayingArpu' => 'setMiniGamePayingArpu',
+        'zoneHeaderClickCount' => 'setZoneHeaderClickCount',
+        'basicInfoClientCount' => 'setBasicInfoClientCount',
+        'accountInfoClickCount' => 'setAccountInfoClickCount',
+        'activityInfoClickCount' => 'setActivityInfoClickCount',
         'miniGameBfUv' => 'setMiniGameBfUv',
         'miniGameBfCost' => 'setMiniGameBfCost',
         'miniGameBfIncomeUv' => 'setMiniGameBfIncomeUv',
@@ -3242,6 +3258,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameAdMonetizationArpu' => 'getMiniGameAdMonetizationArpu',
         'miniGamePayingRoi' => 'getMiniGamePayingRoi',
         'miniGamePayingArpu' => 'getMiniGamePayingArpu',
+        'zoneHeaderClickCount' => 'getZoneHeaderClickCount',
+        'basicInfoClientCount' => 'getBasicInfoClientCount',
+        'accountInfoClickCount' => 'getAccountInfoClickCount',
+        'activityInfoClickCount' => 'getActivityInfoClickCount',
         'miniGameBfUv' => 'getMiniGameBfUv',
         'miniGameBfCost' => 'getMiniGameBfCost',
         'miniGameBfIncomeUv' => 'getMiniGameBfIncomeUv',
@@ -3995,6 +4015,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGameAdMonetizationArpu'] = isset($data['miniGameAdMonetizationArpu']) ? $data['miniGameAdMonetizationArpu'] : null;
         $this->container['miniGamePayingRoi'] = isset($data['miniGamePayingRoi']) ? $data['miniGamePayingRoi'] : null;
         $this->container['miniGamePayingArpu'] = isset($data['miniGamePayingArpu']) ? $data['miniGamePayingArpu'] : null;
+        $this->container['zoneHeaderClickCount'] = isset($data['zoneHeaderClickCount']) ? $data['zoneHeaderClickCount'] : null;
+        $this->container['basicInfoClientCount'] = isset($data['basicInfoClientCount']) ? $data['basicInfoClientCount'] : null;
+        $this->container['accountInfoClickCount'] = isset($data['accountInfoClickCount']) ? $data['accountInfoClickCount'] : null;
+        $this->container['activityInfoClickCount'] = isset($data['activityInfoClickCount']) ? $data['activityInfoClickCount'] : null;
         $this->container['miniGameBfUv'] = isset($data['miniGameBfUv']) ? $data['miniGameBfUv'] : null;
         $this->container['miniGameBfCost'] = isset($data['miniGameBfCost']) ? $data['miniGameBfCost'] : null;
         $this->container['miniGameBfIncomeUv'] = isset($data['miniGameBfIncomeUv']) ? $data['miniGameBfIncomeUv'] : null;
@@ -13149,6 +13173,102 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setMiniGamePayingArpu($miniGamePayingArpu)
     {
         $this->container['miniGamePayingArpu'] = $miniGamePayingArpu;
+
+        return $this;
+    }
+
+    /**
+     * Gets zoneHeaderClickCount
+     *
+     * @return int|mixed
+     */
+    public function getZoneHeaderClickCount()
+    {
+        return $this->container['zoneHeaderClickCount'];
+    }
+
+    /**
+     * Sets zoneHeaderClickCount
+     *
+     * @param int|mixed $zoneHeaderClickCount zoneHeaderClickCount
+     *
+     * @return $this
+     */
+    public function setZoneHeaderClickCount($zoneHeaderClickCount)
+    {
+        $this->container['zoneHeaderClickCount'] = $zoneHeaderClickCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets basicInfoClientCount
+     *
+     * @return int|mixed
+     */
+    public function getBasicInfoClientCount()
+    {
+        return $this->container['basicInfoClientCount'];
+    }
+
+    /**
+     * Sets basicInfoClientCount
+     *
+     * @param int|mixed $basicInfoClientCount basicInfoClientCount
+     *
+     * @return $this
+     */
+    public function setBasicInfoClientCount($basicInfoClientCount)
+    {
+        $this->container['basicInfoClientCount'] = $basicInfoClientCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets accountInfoClickCount
+     *
+     * @return int|mixed
+     */
+    public function getAccountInfoClickCount()
+    {
+        return $this->container['accountInfoClickCount'];
+    }
+
+    /**
+     * Sets accountInfoClickCount
+     *
+     * @param int|mixed $accountInfoClickCount accountInfoClickCount
+     *
+     * @return $this
+     */
+    public function setAccountInfoClickCount($accountInfoClickCount)
+    {
+        $this->container['accountInfoClickCount'] = $accountInfoClickCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets activityInfoClickCount
+     *
+     * @return int|mixed
+     */
+    public function getActivityInfoClickCount()
+    {
+        return $this->container['activityInfoClickCount'];
+    }
+
+    /**
+     * Sets activityInfoClickCount
+     *
+     * @param int|mixed $activityInfoClickCount activityInfoClickCount
+     *
+     * @return $this
+     */
+    public function setActivityInfoClickCount($activityInfoClickCount)
+    {
+        $this->container['activityInfoClickCount'] = $activityInfoClickCount;
 
         return $this;
     }

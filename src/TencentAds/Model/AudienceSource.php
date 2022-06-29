@@ -1,6 +1,6 @@
 <?php
 /**
- * SearchBrandAreaType
+ * AudienceSource
  *
  * PHP version 5
  *
@@ -31,21 +31,22 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * SearchBrandAreaType Class Doc Comment
+ * AudienceSource Class Doc Comment
  *
  * @category Class
- * @description 搜索广告品牌官方区类型
+ * @description 人群来源
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class SearchBrandAreaType
+class AudienceSource
 {
     /**
      * Possible values of this enum
      */
-    const UNKOWN = 'UNKOWN';
-    const WECHAT_SEARCH = 'WECHAT_SEARCH';
+    const ADVERTISER_OWN_DATA = 'ADVERTISER_OWN_DATA';
+    const TENCENT_DATA = 'TENCENT_DATA';
+    const UNKNOWN = 'UNKNOWN';
     
     /**
      * Gets allowable values of the enum
@@ -54,8 +55,9 @@ class SearchBrandAreaType
     public static function getAllowableEnumValues()
     {
         return [
-            self::UNKOWN,
-            self::WECHAT_SEARCH,
+            self::ADVERTISER_OWN_DATA,
+            self::TENCENT_DATA,
+            self::UNKNOWN,
         ];
     }
 }

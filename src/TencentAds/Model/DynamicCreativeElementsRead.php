@@ -131,8 +131,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'livingDescStruct' => '\TencentAds\Model\AdCreativeLivingDescStruct',
         'floatingZoneStruct' => '\TencentAds\Model\FloatingZone',
         'canvasShareImage' => 'string',
-        'wegameInfoSpec' => '\TencentAds\Model\WegameInfoSpec',
-        'searchBrandArea' => '\TencentAds\Model\SearchBrandAreaStruct'
+        'wegameInfoSpec' => '\TencentAds\Model\WegameInfoSpec'
     ];
 
     /**
@@ -214,8 +213,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'livingDescStruct' => null,
         'floatingZoneStruct' => null,
         'canvasShareImage' => null,
-        'wegameInfoSpec' => null,
-        'searchBrandArea' => null
+        'wegameInfoSpec' => null
     ];
 
     /**
@@ -318,8 +316,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'livingDescStruct' => 'living_desc_struct',
         'floatingZoneStruct' => 'floating_zone_struct',
         'canvasShareImage' => 'canvas_share_image',
-        'wegameInfoSpec' => 'wegame_info_spec',
-        'searchBrandArea' => 'search_brand_area'
+        'wegameInfoSpec' => 'wegame_info_spec'
     ];
 
     /**
@@ -401,8 +398,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'livingDescStruct' => 'setLivingDescStruct',
         'floatingZoneStruct' => 'setFloatingZoneStruct',
         'canvasShareImage' => 'setCanvasShareImage',
-        'wegameInfoSpec' => 'setWegameInfoSpec',
-        'searchBrandArea' => 'setSearchBrandArea'
+        'wegameInfoSpec' => 'setWegameInfoSpec'
     ];
 
     /**
@@ -484,8 +480,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'livingDescStruct' => 'getLivingDescStruct',
         'floatingZoneStruct' => 'getFloatingZoneStruct',
         'canvasShareImage' => 'getCanvasShareImage',
-        'wegameInfoSpec' => 'getWegameInfoSpec',
-        'searchBrandArea' => 'getSearchBrandArea'
+        'wegameInfoSpec' => 'getWegameInfoSpec'
     ];
 
     /**
@@ -622,7 +617,6 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         $this->container['floatingZoneStruct'] = isset($data['floatingZoneStruct']) ? $data['floatingZoneStruct'] : null;
         $this->container['canvasShareImage'] = isset($data['canvasShareImage']) ? $data['canvasShareImage'] : null;
         $this->container['wegameInfoSpec'] = isset($data['wegameInfoSpec']) ? $data['wegameInfoSpec'] : null;
-        $this->container['searchBrandArea'] = isset($data['searchBrandArea']) ? $data['searchBrandArea'] : null;
     }
 
     /**
@@ -2421,30 +2415,6 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
     public function setWegameInfoSpec($wegameInfoSpec)
     {
         $this->container['wegameInfoSpec'] = $wegameInfoSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets searchBrandArea
-     *
-     * @return \TencentAds\Model\SearchBrandAreaStruct|mixed
-     */
-    public function getSearchBrandArea()
-    {
-        return $this->container['searchBrandArea'];
-    }
-
-    /**
-     * Sets searchBrandArea
-     *
-     * @param \TencentAds\Model\SearchBrandAreaStruct|mixed $searchBrandArea searchBrandArea
-     *
-     * @return $this
-     */
-    public function setSearchBrandArea($searchBrandArea)
-    {
-        $this->container['searchBrandArea'] = $searchBrandArea;
 
         return $this;
     }

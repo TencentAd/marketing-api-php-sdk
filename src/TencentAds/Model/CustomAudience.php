@@ -64,6 +64,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
         'description' => 'string',
         'cooperated' => 'bool',
         'type' => '\TencentAds\Model\AudienceType',
+        'source' => '\TencentAds\Model\AudienceSource',
         'status' => '\TencentAds\Model\ProcessStatus',
         'errorCode' => 'int',
         'userCount' => 'int',
@@ -85,6 +86,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
         'description' => null,
         'cooperated' => null,
         'type' => null,
+        'source' => null,
         'status' => null,
         'errorCode' => 'int64',
         'userCount' => 'int64',
@@ -127,6 +129,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
         'description' => 'description',
         'cooperated' => 'cooperated',
         'type' => 'type',
+        'source' => 'source',
         'status' => 'status',
         'errorCode' => 'error_code',
         'userCount' => 'user_count',
@@ -148,6 +151,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
         'description' => 'setDescription',
         'cooperated' => 'setCooperated',
         'type' => 'setType',
+        'source' => 'setSource',
         'status' => 'setStatus',
         'errorCode' => 'setErrorCode',
         'userCount' => 'setUserCount',
@@ -169,6 +173,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
         'description' => 'getDescription',
         'cooperated' => 'getCooperated',
         'type' => 'getType',
+        'source' => 'getSource',
         'status' => 'getStatus',
         'errorCode' => 'getErrorCode',
         'userCount' => 'getUserCount',
@@ -244,6 +249,7 @@ class CustomAudience implements ModelInterface, ArrayAccess
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
         $this->container['cooperated'] = isset($data['cooperated']) ? $data['cooperated'] : null;
         $this->container['type'] = isset($data['type']) ? $data['type'] : null;
+        $this->container['source'] = isset($data['source']) ? $data['source'] : null;
         $this->container['status'] = isset($data['status']) ? $data['status'] : null;
         $this->container['errorCode'] = isset($data['errorCode']) ? $data['errorCode'] : null;
         $this->container['userCount'] = isset($data['userCount']) ? $data['userCount'] : null;
@@ -417,6 +423,30 @@ class CustomAudience implements ModelInterface, ArrayAccess
     public function setType($type)
     {
         $this->container['type'] = $type;
+
+        return $this;
+    }
+
+    /**
+     * Gets source
+     *
+     * @return \TencentAds\Model\AudienceSource|mixed
+     */
+    public function getSource()
+    {
+        return $this->container['source'];
+    }
+
+    /**
+     * Sets source
+     *
+     * @param \TencentAds\Model\AudienceSource|mixed $source source
+     *
+     * @return $this
+     */
+    public function setSource($source)
+    {
+        $this->container['source'] = $source;
 
         return $this;
     }

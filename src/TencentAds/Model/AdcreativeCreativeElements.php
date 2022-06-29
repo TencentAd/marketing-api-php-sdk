@@ -105,8 +105,7 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'leftCanvas' => 'string',
         'rightCanvas' => 'string',
         'canvasShareImage' => 'string',
-        'wegameInfoSpec' => '\TencentAds\Model\WegameInfoSpec',
-        'searchBrandArea' => '\TencentAds\Model\SearchBrandAreaStruct'
+        'wegameInfoSpec' => '\TencentAds\Model\WegameInfoSpec'
     ];
 
     /**
@@ -162,8 +161,7 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'leftCanvas' => null,
         'rightCanvas' => null,
         'canvasShareImage' => null,
-        'wegameInfoSpec' => null,
-        'searchBrandArea' => null
+        'wegameInfoSpec' => null
     ];
 
     /**
@@ -240,8 +238,7 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'leftCanvas' => 'left_canvas',
         'rightCanvas' => 'right_canvas',
         'canvasShareImage' => 'canvas_share_image',
-        'wegameInfoSpec' => 'wegame_info_spec',
-        'searchBrandArea' => 'search_brand_area'
+        'wegameInfoSpec' => 'wegame_info_spec'
     ];
 
     /**
@@ -297,8 +294,7 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'leftCanvas' => 'setLeftCanvas',
         'rightCanvas' => 'setRightCanvas',
         'canvasShareImage' => 'setCanvasShareImage',
-        'wegameInfoSpec' => 'setWegameInfoSpec',
-        'searchBrandArea' => 'setSearchBrandArea'
+        'wegameInfoSpec' => 'setWegameInfoSpec'
     ];
 
     /**
@@ -354,8 +350,7 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'leftCanvas' => 'getLeftCanvas',
         'rightCanvas' => 'getRightCanvas',
         'canvasShareImage' => 'getCanvasShareImage',
-        'wegameInfoSpec' => 'getWegameInfoSpec',
-        'searchBrandArea' => 'getSearchBrandArea'
+        'wegameInfoSpec' => 'getWegameInfoSpec'
     ];
 
     /**
@@ -466,7 +461,6 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         $this->container['rightCanvas'] = isset($data['rightCanvas']) ? $data['rightCanvas'] : null;
         $this->container['canvasShareImage'] = isset($data['canvasShareImage']) ? $data['canvasShareImage'] : null;
         $this->container['wegameInfoSpec'] = isset($data['wegameInfoSpec']) ? $data['wegameInfoSpec'] : null;
-        $this->container['searchBrandArea'] = isset($data['searchBrandArea']) ? $data['searchBrandArea'] : null;
     }
 
     /**
@@ -1641,30 +1635,6 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
     public function setWegameInfoSpec($wegameInfoSpec)
     {
         $this->container['wegameInfoSpec'] = $wegameInfoSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets searchBrandArea
-     *
-     * @return \TencentAds\Model\SearchBrandAreaStruct|mixed
-     */
-    public function getSearchBrandArea()
-    {
-        return $this->container['searchBrandArea'];
-    }
-
-    /**
-     * Sets searchBrandArea
-     *
-     * @param \TencentAds\Model\SearchBrandAreaStruct|mixed $searchBrandArea searchBrandArea
-     *
-     * @return $this
-     */
-    public function setSearchBrandArea($searchBrandArea)
-    {
-        $this->container['searchBrandArea'] = $searchBrandArea;
 
         return $this;
     }
