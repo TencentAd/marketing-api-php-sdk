@@ -62,6 +62,7 @@ class CalcStatus
     const ACTIVE_AD_LIMIT = 'STATUS_ACTIVE_AD_LIMIT';
     const PART_READY = 'STATUS_PART_READY';
     const PART_ACTIVE = 'STATUS_PART_ACTIVE';
+    const CREATING = 'STATUS_CREATING';
     const TRACKING_URL_SUSPEND = 'STATUS_TRACKING_URL_SUSPEND';
     const TO_LOCK_FLOW = 'STATUS_TO_LOCK_FLOW';
     const LOCKING_FLOW = 'STATUS_LOCKING_FLOW';
@@ -94,6 +95,7 @@ class CalcStatus
             self::ACTIVE_AD_LIMIT,
             self::PART_READY,
             self::PART_ACTIVE,
+            self::CREATING,
             self::TRACKING_URL_SUSPEND,
             self::TO_LOCK_FLOW,
             self::LOCKING_FLOW,

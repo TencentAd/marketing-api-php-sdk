@@ -98,6 +98,8 @@ class LinkUrlLinkNameType
     const GO_618_VENUE = 'GO_618_VENUE';
     const GET_618_WELFARE = 'GET_618_WELFARE';
     const WATCH_VIDEO = 'WATCH_VIDEO';
+    const CONTACT_CUSTOMER_SERVICE = 'CONTACT_CUSTOMER_SERVICE';
+    const CONTACT_BUSINESS = 'CONTACT_BUSINESS';
     
     /**
      * Gets allowable values of the enum
@@ -160,6 +162,8 @@ class LinkUrlLinkNameType
             self::GO_618_VENUE,
             self::GET_618_WELFARE,
             self::WATCH_VIDEO,
+            self::CONTACT_CUSTOMER_SERVICE,
+            self::CONTACT_BUSINESS,
         ];
     }
 }

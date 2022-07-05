@@ -97,6 +97,8 @@ class LinkNameType
     const DISCOUNT_618 = 'DISCOUNT_618';
     const GO_618_VENUE = 'GO_618_VENUE';
     const GET_618_WELFARE = 'GET_618_WELFARE';
+    const CONTACT_CUSTOMER_SERVICE = 'CONTACT_CUSTOMER_SERVICE';
+    const CONTACT_BUSINESS = 'CONTACT_BUSINESS';
     
     /**
      * Gets allowable values of the enum
@@ -158,6 +160,8 @@ class LinkNameType
             self::DISCOUNT_618,
             self::GO_618_VENUE,
             self::GET_618_WELFARE,
+            self::CONTACT_CUSTOMER_SERVICE,
+            self::CONTACT_BUSINESS,
         ];
     }
 }

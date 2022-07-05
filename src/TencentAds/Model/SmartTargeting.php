@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * SmartTargeting Class Doc Comment
  *
  * @category Class
- * @description 智能定向功能,功能灰度开放，如需使用可联系您的运营接口同学。&lt;br&gt;智能定向功能与自动扩量/系统优选相关字段不可同时设置。
+ * @description 智能定向功能,功能灰度开放，如需使用可联系您的运营接口同学。&lt;br&gt;智能定向功能与自动扩量/系统优选相关字段不可同时设置。2022年6月30日起，智能定向无法与行为兴趣意向、“二方人群”人群包同时使用
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

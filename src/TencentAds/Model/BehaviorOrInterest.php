@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * BehaviorOrInterest Class Doc Comment
  *
  * @category Class
- * @description 行为兴趣意向定向
+ * @description 行为兴趣意向定向，2022年6月30日起，该定向将无法在竞价oCPC、oCPM场景使用。
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
