@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * CreativeDisplayType Class Doc Comment
  *
  * @category Class
- * @description 创意展示类型
+ * @description 创意展示类型，不填该字段默认优选模式
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
