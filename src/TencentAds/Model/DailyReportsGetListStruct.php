@@ -528,6 +528,16 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'int',
         'stayPay15dPv' => 'int',
         'stayPay30dPv' => 'int',
+        'liveStreamCommodityShopBagClkPv' => 'int',
+        'liveStreamCommodityShopListExpPv' => 'int',
+        'liveStreamCommodityBubbleClkPv' => 'int',
+        'liveStreamOrderPv' => 'int',
+        'liveStreamOrderAmount' => 'int',
+        'bizPreCreditPv' => 'int',
+        'bizPreCreditUv' => 'int',
+        'bizPreCreditUvCost' => 'int',
+        'bizWithdrawDepositsUv' => 'int',
+        'bizWithdrawDepositsUvCost' => 'int',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
         'incomeVal1' => 'int',
@@ -1231,6 +1241,16 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'int64',
         'stayPay15dPv' => 'int64',
         'stayPay30dPv' => 'int64',
+        'liveStreamCommodityShopBagClkPv' => 'int64',
+        'liveStreamCommodityShopListExpPv' => 'int64',
+        'liveStreamCommodityBubbleClkPv' => 'int64',
+        'liveStreamOrderPv' => 'int64',
+        'liveStreamOrderAmount' => 'int64',
+        'bizPreCreditPv' => 'int64',
+        'bizPreCreditUv' => 'int64',
+        'bizPreCreditUvCost' => 'int64',
+        'bizWithdrawDepositsUv' => 'int64',
+        'bizWithdrawDepositsUvCost' => 'int64',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
         'incomeVal1' => 'int64',
@@ -1955,6 +1975,16 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'stay_pay_7d_pv',
         'stayPay15dPv' => 'stay_pay_15d_pv',
         'stayPay30dPv' => 'stay_pay_30d_pv',
+        'liveStreamCommodityShopBagClkPv' => 'live_stream_commodity_shop_bag_clk_pv',
+        'liveStreamCommodityShopListExpPv' => 'live_stream_commodity_shop_list_exp_pv',
+        'liveStreamCommodityBubbleClkPv' => 'live_stream_commodity_bubble_clk_pv',
+        'liveStreamOrderPv' => 'live_stream_order_pv',
+        'liveStreamOrderAmount' => 'live_stream_order_amount',
+        'bizPreCreditPv' => 'biz_pre_credit_pv',
+        'bizPreCreditUv' => 'biz_pre_credit_uv',
+        'bizPreCreditUvCost' => 'biz_pre_credit_uv_cost',
+        'bizWithdrawDepositsUv' => 'biz_withdraw_deposits_uv',
+        'bizWithdrawDepositsUvCost' => 'biz_withdraw_deposits_uv_cost',
         'requestConversionsCount' => 'request_conversions_count',
         'requestConversionsCost' => 'request_conversions_cost',
         'incomeVal1' => 'income_val_1',
@@ -2658,6 +2688,16 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'setStayPay7dPv',
         'stayPay15dPv' => 'setStayPay15dPv',
         'stayPay30dPv' => 'setStayPay30dPv',
+        'liveStreamCommodityShopBagClkPv' => 'setLiveStreamCommodityShopBagClkPv',
+        'liveStreamCommodityShopListExpPv' => 'setLiveStreamCommodityShopListExpPv',
+        'liveStreamCommodityBubbleClkPv' => 'setLiveStreamCommodityBubbleClkPv',
+        'liveStreamOrderPv' => 'setLiveStreamOrderPv',
+        'liveStreamOrderAmount' => 'setLiveStreamOrderAmount',
+        'bizPreCreditPv' => 'setBizPreCreditPv',
+        'bizPreCreditUv' => 'setBizPreCreditUv',
+        'bizPreCreditUvCost' => 'setBizPreCreditUvCost',
+        'bizWithdrawDepositsUv' => 'setBizWithdrawDepositsUv',
+        'bizWithdrawDepositsUvCost' => 'setBizWithdrawDepositsUvCost',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'requestConversionsCost' => 'setRequestConversionsCost',
         'incomeVal1' => 'setIncomeVal1',
@@ -3361,6 +3401,16 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'getStayPay7dPv',
         'stayPay15dPv' => 'getStayPay15dPv',
         'stayPay30dPv' => 'getStayPay30dPv',
+        'liveStreamCommodityShopBagClkPv' => 'getLiveStreamCommodityShopBagClkPv',
+        'liveStreamCommodityShopListExpPv' => 'getLiveStreamCommodityShopListExpPv',
+        'liveStreamCommodityBubbleClkPv' => 'getLiveStreamCommodityBubbleClkPv',
+        'liveStreamOrderPv' => 'getLiveStreamOrderPv',
+        'liveStreamOrderAmount' => 'getLiveStreamOrderAmount',
+        'bizPreCreditPv' => 'getBizPreCreditPv',
+        'bizPreCreditUv' => 'getBizPreCreditUv',
+        'bizPreCreditUvCost' => 'getBizPreCreditUvCost',
+        'bizWithdrawDepositsUv' => 'getBizWithdrawDepositsUv',
+        'bizWithdrawDepositsUvCost' => 'getBizWithdrawDepositsUvCost',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'requestConversionsCost' => 'getRequestConversionsCost',
         'incomeVal1' => 'getIncomeVal1',
@@ -4118,6 +4168,16 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['stayPay7dPv'] = isset($data['stayPay7dPv']) ? $data['stayPay7dPv'] : null;
         $this->container['stayPay15dPv'] = isset($data['stayPay15dPv']) ? $data['stayPay15dPv'] : null;
         $this->container['stayPay30dPv'] = isset($data['stayPay30dPv']) ? $data['stayPay30dPv'] : null;
+        $this->container['liveStreamCommodityShopBagClkPv'] = isset($data['liveStreamCommodityShopBagClkPv']) ? $data['liveStreamCommodityShopBagClkPv'] : null;
+        $this->container['liveStreamCommodityShopListExpPv'] = isset($data['liveStreamCommodityShopListExpPv']) ? $data['liveStreamCommodityShopListExpPv'] : null;
+        $this->container['liveStreamCommodityBubbleClkPv'] = isset($data['liveStreamCommodityBubbleClkPv']) ? $data['liveStreamCommodityBubbleClkPv'] : null;
+        $this->container['liveStreamOrderPv'] = isset($data['liveStreamOrderPv']) ? $data['liveStreamOrderPv'] : null;
+        $this->container['liveStreamOrderAmount'] = isset($data['liveStreamOrderAmount']) ? $data['liveStreamOrderAmount'] : null;
+        $this->container['bizPreCreditPv'] = isset($data['bizPreCreditPv']) ? $data['bizPreCreditPv'] : null;
+        $this->container['bizPreCreditUv'] = isset($data['bizPreCreditUv']) ? $data['bizPreCreditUv'] : null;
+        $this->container['bizPreCreditUvCost'] = isset($data['bizPreCreditUvCost']) ? $data['bizPreCreditUvCost'] : null;
+        $this->container['bizWithdrawDepositsUv'] = isset($data['bizWithdrawDepositsUv']) ? $data['bizWithdrawDepositsUv'] : null;
+        $this->container['bizWithdrawDepositsUvCost'] = isset($data['bizWithdrawDepositsUvCost']) ? $data['bizWithdrawDepositsUvCost'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
         $this->container['incomeVal1'] = isset($data['incomeVal1']) ? $data['incomeVal1'] : null;
@@ -15645,6 +15705,246 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setStayPay30dPv($stayPay30dPv)
     {
         $this->container['stayPay30dPv'] = $stayPay30dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveStreamCommodityShopBagClkPv
+     *
+     * @return int|mixed
+     */
+    public function getLiveStreamCommodityShopBagClkPv()
+    {
+        return $this->container['liveStreamCommodityShopBagClkPv'];
+    }
+
+    /**
+     * Sets liveStreamCommodityShopBagClkPv
+     *
+     * @param int|mixed $liveStreamCommodityShopBagClkPv liveStreamCommodityShopBagClkPv
+     *
+     * @return $this
+     */
+    public function setLiveStreamCommodityShopBagClkPv($liveStreamCommodityShopBagClkPv)
+    {
+        $this->container['liveStreamCommodityShopBagClkPv'] = $liveStreamCommodityShopBagClkPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveStreamCommodityShopListExpPv
+     *
+     * @return int|mixed
+     */
+    public function getLiveStreamCommodityShopListExpPv()
+    {
+        return $this->container['liveStreamCommodityShopListExpPv'];
+    }
+
+    /**
+     * Sets liveStreamCommodityShopListExpPv
+     *
+     * @param int|mixed $liveStreamCommodityShopListExpPv liveStreamCommodityShopListExpPv
+     *
+     * @return $this
+     */
+    public function setLiveStreamCommodityShopListExpPv($liveStreamCommodityShopListExpPv)
+    {
+        $this->container['liveStreamCommodityShopListExpPv'] = $liveStreamCommodityShopListExpPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveStreamCommodityBubbleClkPv
+     *
+     * @return int|mixed
+     */
+    public function getLiveStreamCommodityBubbleClkPv()
+    {
+        return $this->container['liveStreamCommodityBubbleClkPv'];
+    }
+
+    /**
+     * Sets liveStreamCommodityBubbleClkPv
+     *
+     * @param int|mixed $liveStreamCommodityBubbleClkPv liveStreamCommodityBubbleClkPv
+     *
+     * @return $this
+     */
+    public function setLiveStreamCommodityBubbleClkPv($liveStreamCommodityBubbleClkPv)
+    {
+        $this->container['liveStreamCommodityBubbleClkPv'] = $liveStreamCommodityBubbleClkPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveStreamOrderPv
+     *
+     * @return int|mixed
+     */
+    public function getLiveStreamOrderPv()
+    {
+        return $this->container['liveStreamOrderPv'];
+    }
+
+    /**
+     * Sets liveStreamOrderPv
+     *
+     * @param int|mixed $liveStreamOrderPv liveStreamOrderPv
+     *
+     * @return $this
+     */
+    public function setLiveStreamOrderPv($liveStreamOrderPv)
+    {
+        $this->container['liveStreamOrderPv'] = $liveStreamOrderPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveStreamOrderAmount
+     *
+     * @return int|mixed
+     */
+    public function getLiveStreamOrderAmount()
+    {
+        return $this->container['liveStreamOrderAmount'];
+    }
+
+    /**
+     * Sets liveStreamOrderAmount
+     *
+     * @param int|mixed $liveStreamOrderAmount liveStreamOrderAmount
+     *
+     * @return $this
+     */
+    public function setLiveStreamOrderAmount($liveStreamOrderAmount)
+    {
+        $this->container['liveStreamOrderAmount'] = $liveStreamOrderAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizPreCreditPv
+     *
+     * @return int|mixed
+     */
+    public function getBizPreCreditPv()
+    {
+        return $this->container['bizPreCreditPv'];
+    }
+
+    /**
+     * Sets bizPreCreditPv
+     *
+     * @param int|mixed $bizPreCreditPv bizPreCreditPv
+     *
+     * @return $this
+     */
+    public function setBizPreCreditPv($bizPreCreditPv)
+    {
+        $this->container['bizPreCreditPv'] = $bizPreCreditPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizPreCreditUv
+     *
+     * @return int|mixed
+     */
+    public function getBizPreCreditUv()
+    {
+        return $this->container['bizPreCreditUv'];
+    }
+
+    /**
+     * Sets bizPreCreditUv
+     *
+     * @param int|mixed $bizPreCreditUv bizPreCreditUv
+     *
+     * @return $this
+     */
+    public function setBizPreCreditUv($bizPreCreditUv)
+    {
+        $this->container['bizPreCreditUv'] = $bizPreCreditUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizPreCreditUvCost
+     *
+     * @return int|mixed
+     */
+    public function getBizPreCreditUvCost()
+    {
+        return $this->container['bizPreCreditUvCost'];
+    }
+
+    /**
+     * Sets bizPreCreditUvCost
+     *
+     * @param int|mixed $bizPreCreditUvCost bizPreCreditUvCost
+     *
+     * @return $this
+     */
+    public function setBizPreCreditUvCost($bizPreCreditUvCost)
+    {
+        $this->container['bizPreCreditUvCost'] = $bizPreCreditUvCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizWithdrawDepositsUv
+     *
+     * @return int|mixed
+     */
+    public function getBizWithdrawDepositsUv()
+    {
+        return $this->container['bizWithdrawDepositsUv'];
+    }
+
+    /**
+     * Sets bizWithdrawDepositsUv
+     *
+     * @param int|mixed $bizWithdrawDepositsUv bizWithdrawDepositsUv
+     *
+     * @return $this
+     */
+    public function setBizWithdrawDepositsUv($bizWithdrawDepositsUv)
+    {
+        $this->container['bizWithdrawDepositsUv'] = $bizWithdrawDepositsUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizWithdrawDepositsUvCost
+     *
+     * @return int|mixed
+     */
+    public function getBizWithdrawDepositsUvCost()
+    {
+        return $this->container['bizWithdrawDepositsUvCost'];
+    }
+
+    /**
+     * Sets bizWithdrawDepositsUvCost
+     *
+     * @param int|mixed $bizWithdrawDepositsUvCost bizWithdrawDepositsUvCost
+     *
+     * @return $this
+     */
+    public function setBizWithdrawDepositsUvCost($bizWithdrawDepositsUvCost)
+    {
+        $this->container['bizWithdrawDepositsUvCost'] = $bizWithdrawDepositsUvCost;
 
         return $this;
     }
