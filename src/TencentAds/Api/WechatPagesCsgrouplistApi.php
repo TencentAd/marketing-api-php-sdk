@@ -385,15 +385,16 @@ class WechatPagesCsgrouplistApi
      * @param  int|mixed $accountId accountId (required)
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string|mixed $cropId cropId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\WechatPagesCsgrouplistGetResponse|mixed
      */
-    public function wechatPagesCsgrouplistGet($accountId, $page = null, $pageSize = null, $fields = null)
+    public function wechatPagesCsgrouplistGet($accountId, $page = null, $pageSize = null, $cropId = null, $fields = null)
     {
-        list($response) = $this->wechatPagesCsgrouplistGetWithHttpInfo($accountId, $page, $pageSize, $fields);
+        list($response) = $this->wechatPagesCsgrouplistGetWithHttpInfo($accountId, $page, $pageSize, $cropId, $fields);
         return $response;
     }
 
@@ -405,16 +406,17 @@ class WechatPagesCsgrouplistApi
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $cropId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\WechatPagesCsgrouplistGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function wechatPagesCsgrouplistGetWithHttpInfo($accountId, $page = null, $pageSize = null, $fields = null)
+    public function wechatPagesCsgrouplistGetWithHttpInfo($accountId, $page = null, $pageSize = null, $cropId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\WechatPagesCsgrouplistGetResponse';
-        $request = $this->wechatPagesCsgrouplistGetRequest($accountId, $page, $pageSize, $fields);
+        $request = $this->wechatPagesCsgrouplistGetRequest($accountId, $page, $pageSize, $cropId, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -483,14 +485,15 @@ class WechatPagesCsgrouplistApi
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $cropId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function wechatPagesCsgrouplistGetAsync($accountId, $page = null, $pageSize = null, $fields = null)
+    public function wechatPagesCsgrouplistGetAsync($accountId, $page = null, $pageSize = null, $cropId = null, $fields = null)
     {
-        return $this->wechatPagesCsgrouplistGetAsyncWithHttpInfo($accountId, $page, $pageSize, $fields)
+        return $this->wechatPagesCsgrouplistGetAsyncWithHttpInfo($accountId, $page, $pageSize, $cropId, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -506,15 +509,16 @@ class WechatPagesCsgrouplistApi
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $cropId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function wechatPagesCsgrouplistGetAsyncWithHttpInfo($accountId, $page = null, $pageSize = null, $fields = null)
+    public function wechatPagesCsgrouplistGetAsyncWithHttpInfo($accountId, $page = null, $pageSize = null, $cropId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\WechatPagesCsgrouplistGetResponse';
-        $request = $this->wechatPagesCsgrouplistGetRequest($accountId, $page, $pageSize, $fields);
+        $request = $this->wechatPagesCsgrouplistGetRequest($accountId, $page, $pageSize, $cropId, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -559,12 +563,13 @@ class WechatPagesCsgrouplistApi
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $cropId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function wechatPagesCsgrouplistGetRequest($accountId, $page = null, $pageSize = null, $fields = null)
+    protected function wechatPagesCsgrouplistGetRequest($accountId, $page = null, $pageSize = null, $cropId = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -591,6 +596,10 @@ class WechatPagesCsgrouplistApi
         // query params
         if ($pageSize !== null) {
             $queryParams['page_size'] = ObjectSerializer::toQueryValue($pageSize);
+        }
+        // query params
+        if ($cropId !== null) {
+            $queryParams['crop_id'] = ObjectSerializer::toQueryValue($cropId);
         }
         // query params
         if (is_array($fields)) {

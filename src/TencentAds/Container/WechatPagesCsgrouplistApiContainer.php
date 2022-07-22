@@ -75,8 +75,9 @@ class WechatPagesCsgrouplistApiContainer extends ApiContainer
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $cropId = isset($params['crop_id']) ? $params['crop_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->wechatPagesCsgrouplistGet($accountId, $page, $pageSize, $fields);
+            $response = $this->apiInstance->wechatPagesCsgrouplistGet($accountId, $page, $pageSize, $cropId, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -94,8 +95,9 @@ class WechatPagesCsgrouplistApiContainer extends ApiContainer
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $cropId = isset($params['crop_id']) ? $params['crop_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->wechatPagesCsgrouplistGetAsync($accountId, $page, $pageSize, $fields);
+            $response = $this->apiInstance->wechatPagesCsgrouplistGetAsync($accountId, $page, $pageSize, $cropId, $fields);
             return $response;
         });
     }

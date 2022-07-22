@@ -40,12 +40,13 @@ class AdcreativeTemplateApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $promotedObjectType = isset($params['promoted_object_type']) ? $params['promoted_object_type'] : null;
-            $adcreativeTemplateId = isset($params['adcreative_template_id']) ? $params['adcreative_template_id'] : null;
             $siteSet = isset($params['site_set']) ? $params['site_set'] : null;
             $automaticSiteEnabled = isset($params['automatic_site_enabled']) ? $params['automatic_site_enabled'] : null;
             $isDynamicCreative = isset($params['is_dynamic_creative']) ? $params['is_dynamic_creative'] : null;
+            $adcreativeTemplateId = isset($params['adcreative_template_id']) ? $params['adcreative_template_id'] : null;
+            $dynamicCreativeType = isset($params['dynamic_creative_type']) ? $params['dynamic_creative_type'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->adcreativeTemplateGet($accountId, $promotedObjectType, $adcreativeTemplateId, $siteSet, $automaticSiteEnabled, $isDynamicCreative, $fields);
+            $response = $this->apiInstance->adcreativeTemplateGet($accountId, $promotedObjectType, $siteSet, $automaticSiteEnabled, $isDynamicCreative, $adcreativeTemplateId, $dynamicCreativeType, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -62,12 +63,13 @@ class AdcreativeTemplateApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $promotedObjectType = isset($params['promoted_object_type']) ? $params['promoted_object_type'] : null;
-            $adcreativeTemplateId = isset($params['adcreative_template_id']) ? $params['adcreative_template_id'] : null;
             $siteSet = isset($params['site_set']) ? $params['site_set'] : null;
             $automaticSiteEnabled = isset($params['automatic_site_enabled']) ? $params['automatic_site_enabled'] : null;
             $isDynamicCreative = isset($params['is_dynamic_creative']) ? $params['is_dynamic_creative'] : null;
+            $adcreativeTemplateId = isset($params['adcreative_template_id']) ? $params['adcreative_template_id'] : null;
+            $dynamicCreativeType = isset($params['dynamic_creative_type']) ? $params['dynamic_creative_type'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->adcreativeTemplateGetAsync($accountId, $promotedObjectType, $adcreativeTemplateId, $siteSet, $automaticSiteEnabled, $isDynamicCreative, $fields);
+            $response = $this->apiInstance->adcreativeTemplateGetAsync($accountId, $promotedObjectType, $siteSet, $automaticSiteEnabled, $isDynamicCreative, $adcreativeTemplateId, $dynamicCreativeType, $fields);
             return $response;
         });
     }

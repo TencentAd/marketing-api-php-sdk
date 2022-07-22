@@ -67,7 +67,9 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
         'videoSpec' => '\TencentAds\Model\VideoSpec',
         'textSpec' => '\TencentAds\Model\TextSpec',
         'appDownloadSpec' => '\TencentAds\Model\CanvasAppDownloadSpecType',
-        'weappSpec' => '\TencentAds\Model\WeappSpec'
+        'weappSpec' => '\TencentAds\Model\WeappSpec',
+        'ghSpec' => '\TencentAds\Model\GhSpec',
+        'enterpriseWxSpec' => '\TencentAds\Model\EnterpriseWxSpec'
     ];
 
     /**
@@ -85,7 +87,9 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
         'videoSpec' => null,
         'textSpec' => null,
         'appDownloadSpec' => null,
-        'weappSpec' => null
+        'weappSpec' => null,
+        'ghSpec' => null,
+        'enterpriseWxSpec' => null
     ];
 
     /**
@@ -124,7 +128,9 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
         'videoSpec' => 'video_spec',
         'textSpec' => 'text_spec',
         'appDownloadSpec' => 'app_download_spec',
-        'weappSpec' => 'weapp_spec'
+        'weappSpec' => 'weapp_spec',
+        'ghSpec' => 'gh_spec',
+        'enterpriseWxSpec' => 'enterprise_wx_spec'
     ];
 
     /**
@@ -142,7 +148,9 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
         'videoSpec' => 'setVideoSpec',
         'textSpec' => 'setTextSpec',
         'appDownloadSpec' => 'setAppDownloadSpec',
-        'weappSpec' => 'setWeappSpec'
+        'weappSpec' => 'setWeappSpec',
+        'ghSpec' => 'setGhSpec',
+        'enterpriseWxSpec' => 'setEnterpriseWxSpec'
     ];
 
     /**
@@ -160,7 +168,9 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
         'videoSpec' => 'getVideoSpec',
         'textSpec' => 'getTextSpec',
         'appDownloadSpec' => 'getAppDownloadSpec',
-        'weappSpec' => 'getWeappSpec'
+        'weappSpec' => 'getWeappSpec',
+        'ghSpec' => 'getGhSpec',
+        'enterpriseWxSpec' => 'getEnterpriseWxSpec'
     ];
 
     /**
@@ -233,6 +243,8 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
         $this->container['textSpec'] = isset($data['textSpec']) ? $data['textSpec'] : null;
         $this->container['appDownloadSpec'] = isset($data['appDownloadSpec']) ? $data['appDownloadSpec'] : null;
         $this->container['weappSpec'] = isset($data['weappSpec']) ? $data['weappSpec'] : null;
+        $this->container['ghSpec'] = isset($data['ghSpec']) ? $data['ghSpec'] : null;
+        $this->container['enterpriseWxSpec'] = isset($data['enterpriseWxSpec']) ? $data['enterpriseWxSpec'] : null;
     }
 
     /**
@@ -495,6 +507,54 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
     public function setWeappSpec($weappSpec)
     {
         $this->container['weappSpec'] = $weappSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets ghSpec
+     *
+     * @return \TencentAds\Model\GhSpec|mixed
+     */
+    public function getGhSpec()
+    {
+        return $this->container['ghSpec'];
+    }
+
+    /**
+     * Sets ghSpec
+     *
+     * @param \TencentAds\Model\GhSpec|mixed $ghSpec ghSpec
+     *
+     * @return $this
+     */
+    public function setGhSpec($ghSpec)
+    {
+        $this->container['ghSpec'] = $ghSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets enterpriseWxSpec
+     *
+     * @return \TencentAds\Model\EnterpriseWxSpec|mixed
+     */
+    public function getEnterpriseWxSpec()
+    {
+        return $this->container['enterpriseWxSpec'];
+    }
+
+    /**
+     * Sets enterpriseWxSpec
+     *
+     * @param \TencentAds\Model\EnterpriseWxSpec|mixed $enterpriseWxSpec enterpriseWxSpec
+     *
+     * @return $this
+     */
+    public function setEnterpriseWxSpec($enterpriseWxSpec)
+    {
+        $this->container['enterpriseWxSpec'] = $enterpriseWxSpec;
 
         return $this;
     }

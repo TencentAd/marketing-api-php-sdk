@@ -1,6 +1,6 @@
 <?php
 /**
- * CanvasPageElementType
+ * DynamicCreativeType
  *
  * PHP version 5
  *
@@ -31,30 +31,21 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CanvasPageElementType Class Doc Comment
+ * DynamicCreativeType Class Doc Comment
  *
  * @category Class
- * @description 原生页中组件类型
+ * @description 动态创意类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CanvasPageElementType
+class DynamicCreativeType
 {
     /**
      * Possible values of this enum
      */
-    const TOP_IMAGE = 'TOP_IMAGE';
-    const TOP_SLIDER = 'TOP_SLIDER';
-    const TOP_VIDEO = 'TOP_VIDEO';
-    const IMAGE = 'IMAGE';
-    const SLIDER = 'SLIDER';
-    const VIDEO = 'VIDEO';
-    const TEXT = 'TEXT';
-    const APP_DOWNLOAD = 'APP_DOWNLOAD';
-    const WEAPP = 'WEAPP';
-    const GH = 'GH';
-    const ENTERPRISE_WX = 'ENTERPRISE_WX';
+    const COMMON = 'DYNAMIC_CREATIVE_TYPE_COMMON';
+    const PROGRAM = 'DYNAMIC_CREATIVE_TYPE_PROGRAM';
     
     /**
      * Gets allowable values of the enum
@@ -63,17 +54,8 @@ class CanvasPageElementType
     public static function getAllowableEnumValues()
     {
         return [
-            self::TOP_IMAGE,
-            self::TOP_SLIDER,
-            self::TOP_VIDEO,
-            self::IMAGE,
-            self::SLIDER,
-            self::VIDEO,
-            self::TEXT,
-            self::APP_DOWNLOAD,
-            self::WEAPP,
-            self::GH,
-            self::ENTERPRISE_WX,
+            self::COMMON,
+            self::PROGRAM,
         ];
     }
 }

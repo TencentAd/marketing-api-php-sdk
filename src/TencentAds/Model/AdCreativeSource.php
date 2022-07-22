@@ -47,6 +47,7 @@ class AdCreativeSource
     const SOURCE_NORMAL = 'AD_CREATIVE_SOURCE_NORMAL';
     const AUTO_DERIVE = 'AD_CREATIVE_AUTO_DERIVE';
     const AUTO_GENERATE = 'AD_CREATIVE_AUTO_GENERATE';
+    const PAGE_DERIVE = 'AD_CREATIVE_PAGE_DERIVE';
     
     /**
      * Gets allowable values of the enum
@@ -58,6 +59,7 @@ class AdCreativeSource
             self::SOURCE_NORMAL,
             self::AUTO_DERIVE,
             self::AUTO_GENERATE,
+            self::PAGE_DERIVE,
         ];
     }
 }

@@ -87,6 +87,7 @@ class SiteSetDefinition
     const CHANNELS = 'SITE_SET_CHANNELS';
     const OVERSEAS_UNION = 'SITE_SET_OVERSEAS_UNION';
     const WECHAT_SEARCH = 'SITE_SET_WECHAT_SEARCH';
+    const WECHAT_PLUGIN = 'SITE_SET_WECHAT_PLUGIN';
     
     /**
      * Gets allowable values of the enum
@@ -138,6 +139,7 @@ class SiteSetDefinition
             self::CHANNELS,
             self::OVERSEAS_UNION,
             self::WECHAT_SEARCH,
+            self::WECHAT_PLUGIN,
         ];
     }
 }
