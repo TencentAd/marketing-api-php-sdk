@@ -116,6 +116,7 @@ class OptimizationGoal
     const OPEN_ACCOUNT = 'OPTIMIZATIONGOAL_OPEN_ACCOUNT';
     const SEVEN_DAY_ECOMMERCE_ORDER = 'OPTIMIZATIONGOAL_SEVEN_DAY_ECOMMERCE_ORDER';
     const ADD_WECHAT = 'OPTIMIZATIONGOAL_ADD_WECHAT';
+    const WECOM_CONSULT = 'OPTIMIZATIONGOAL_WECOM_CONSULT';
     
     /**
      * Gets allowable values of the enum
@@ -196,6 +197,7 @@ class OptimizationGoal
             self::OPEN_ACCOUNT,
             self::SEVEN_DAY_ECOMMERCE_ORDER,
             self::ADD_WECHAT,
+            self::WECOM_CONSULT,
         ];
     }
 }
