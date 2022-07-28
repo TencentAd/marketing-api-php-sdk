@@ -62,6 +62,40 @@ class ProductItemsApiContainer extends ApiContainer
 
 
     /**
+     * Handle ProductItemsApi productItemsBatchUpdate function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function batchUpdate(array $params = [])
+    {
+        return $this->handleMiddleware('batchUpdate', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->productItemsBatchUpdate($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle ProductItemsApi productItemsBatchUpdateAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function batchUpdateAsync(array $params = [])
+    {
+        return $this->handleMiddleware('batchUpdate', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->productItemsBatchUpdateAsync($data);
+            return $response;
+        });
+    }
+
+
+    /**
      * Handle ProductItemsApi productItemsGet function
      * @param array params
      * @return mixed

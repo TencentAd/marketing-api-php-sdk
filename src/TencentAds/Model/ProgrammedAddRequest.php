@@ -60,6 +60,7 @@ class ProgrammedAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'int',
         'adMetadata' => '\TencentAds\Model\AdMetadataStruct',
         'autoDerivedProgramCreativeSwitch' => 'bool',
+        'standardSwitch' => 'bool',
         'createMaterialGroups' => '\TencentAds\Model\MaterialGroupCreateStruct[]'
     ];
 
@@ -72,6 +73,7 @@ class ProgrammedAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'int64',
         'adMetadata' => null,
         'autoDerivedProgramCreativeSwitch' => null,
+        'standardSwitch' => null,
         'createMaterialGroups' => null
     ];
 
@@ -105,6 +107,7 @@ class ProgrammedAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'account_id',
         'adMetadata' => 'ad_metadata',
         'autoDerivedProgramCreativeSwitch' => 'auto_derived_program_creative_switch',
+        'standardSwitch' => 'standard_switch',
         'createMaterialGroups' => 'create_material_groups'
     ];
 
@@ -117,6 +120,7 @@ class ProgrammedAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'setAccountId',
         'adMetadata' => 'setAdMetadata',
         'autoDerivedProgramCreativeSwitch' => 'setAutoDerivedProgramCreativeSwitch',
+        'standardSwitch' => 'setStandardSwitch',
         'createMaterialGroups' => 'setCreateMaterialGroups'
     ];
 
@@ -129,6 +133,7 @@ class ProgrammedAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'getAccountId',
         'adMetadata' => 'getAdMetadata',
         'autoDerivedProgramCreativeSwitch' => 'getAutoDerivedProgramCreativeSwitch',
+        'standardSwitch' => 'getStandardSwitch',
         'createMaterialGroups' => 'getCreateMaterialGroups'
     ];
 
@@ -195,6 +200,7 @@ class ProgrammedAddRequest implements ModelInterface, ArrayAccess
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['adMetadata'] = isset($data['adMetadata']) ? $data['adMetadata'] : null;
         $this->container['autoDerivedProgramCreativeSwitch'] = isset($data['autoDerivedProgramCreativeSwitch']) ? $data['autoDerivedProgramCreativeSwitch'] : null;
+        $this->container['standardSwitch'] = isset($data['standardSwitch']) ? $data['standardSwitch'] : null;
         $this->container['createMaterialGroups'] = isset($data['createMaterialGroups']) ? $data['createMaterialGroups'] : null;
     }
 
@@ -290,6 +296,30 @@ class ProgrammedAddRequest implements ModelInterface, ArrayAccess
     public function setAutoDerivedProgramCreativeSwitch($autoDerivedProgramCreativeSwitch)
     {
         $this->container['autoDerivedProgramCreativeSwitch'] = $autoDerivedProgramCreativeSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets standardSwitch
+     *
+     * @return bool|mixed
+     */
+    public function getStandardSwitch()
+    {
+        return $this->container['standardSwitch'];
+    }
+
+    /**
+     * Sets standardSwitch
+     *
+     * @param bool|mixed $standardSwitch standardSwitch
+     *
+     * @return $this
+     */
+    public function setStandardSwitch($standardSwitch)
+    {
+        $this->container['standardSwitch'] = $standardSwitch;
 
         return $this;
     }

@@ -96,6 +96,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'customAdgroupTag' => 'string[]',
         'smartTargeting' => '\TencentAds\Model\SmartTargeting',
         'dynamicCreativeIdSet' => 'int[]',
+        'autoDerivedLandingPageSwitch' => 'bool',
         'accountId' => 'int'
     ];
 
@@ -144,6 +145,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'customAdgroupTag' => null,
         'smartTargeting' => null,
         'dynamicCreativeIdSet' => 'int64',
+        'autoDerivedLandingPageSwitch' => null,
         'accountId' => 'int64'
     ];
 
@@ -213,6 +215,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'customAdgroupTag' => 'custom_adgroup_tag',
         'smartTargeting' => 'smart_targeting',
         'dynamicCreativeIdSet' => 'dynamic_creative_id_set',
+        'autoDerivedLandingPageSwitch' => 'auto_derived_landing_page_switch',
         'accountId' => 'account_id'
     ];
 
@@ -261,6 +264,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'customAdgroupTag' => 'setCustomAdgroupTag',
         'smartTargeting' => 'setSmartTargeting',
         'dynamicCreativeIdSet' => 'setDynamicCreativeIdSet',
+        'autoDerivedLandingPageSwitch' => 'setAutoDerivedLandingPageSwitch',
         'accountId' => 'setAccountId'
     ];
 
@@ -309,6 +313,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'customAdgroupTag' => 'getCustomAdgroupTag',
         'smartTargeting' => 'getSmartTargeting',
         'dynamicCreativeIdSet' => 'getDynamicCreativeIdSet',
+        'autoDerivedLandingPageSwitch' => 'getAutoDerivedLandingPageSwitch',
         'accountId' => 'getAccountId'
     ];
 
@@ -411,6 +416,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['customAdgroupTag'] = isset($data['customAdgroupTag']) ? $data['customAdgroupTag'] : null;
         $this->container['smartTargeting'] = isset($data['smartTargeting']) ? $data['smartTargeting'] : null;
         $this->container['dynamicCreativeIdSet'] = isset($data['dynamicCreativeIdSet']) ? $data['dynamicCreativeIdSet'] : null;
+        $this->container['autoDerivedLandingPageSwitch'] = isset($data['autoDerivedLandingPageSwitch']) ? $data['autoDerivedLandingPageSwitch'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1370,6 +1376,30 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setDynamicCreativeIdSet($dynamicCreativeIdSet)
     {
         $this->container['dynamicCreativeIdSet'] = $dynamicCreativeIdSet;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoDerivedLandingPageSwitch
+     *
+     * @return bool|mixed
+     */
+    public function getAutoDerivedLandingPageSwitch()
+    {
+        return $this->container['autoDerivedLandingPageSwitch'];
+    }
+
+    /**
+     * Sets autoDerivedLandingPageSwitch
+     *
+     * @param bool|mixed $autoDerivedLandingPageSwitch autoDerivedLandingPageSwitch
+     *
+     * @return $this
+     */
+    public function setAutoDerivedLandingPageSwitch($autoDerivedLandingPageSwitch)
+    {
+        $this->container['autoDerivedLandingPageSwitch'] = $autoDerivedLandingPageSwitch;
 
         return $this;
     }

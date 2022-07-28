@@ -121,7 +121,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'customAdgroupTag' => 'string[]',
         'smartTargeting' => '\TencentAds\Model\SmartTargeting',
         'dynamicCreativeIdSet' => 'int[]',
-        'systemStatusExplanation' => 'string'
+        'systemStatusExplanation' => 'string',
+        'autoDerivedLandingPageSwitch' => 'bool'
     ];
 
     /**
@@ -193,7 +194,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'customAdgroupTag' => null,
         'smartTargeting' => null,
         'dynamicCreativeIdSet' => 'int64',
-        'systemStatusExplanation' => null
+        'systemStatusExplanation' => null,
+        'autoDerivedLandingPageSwitch' => null
     ];
 
     /**
@@ -286,7 +288,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'customAdgroupTag' => 'custom_adgroup_tag',
         'smartTargeting' => 'smart_targeting',
         'dynamicCreativeIdSet' => 'dynamic_creative_id_set',
-        'systemStatusExplanation' => 'system_status_explanation'
+        'systemStatusExplanation' => 'system_status_explanation',
+        'autoDerivedLandingPageSwitch' => 'auto_derived_landing_page_switch'
     ];
 
     /**
@@ -358,7 +361,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'customAdgroupTag' => 'setCustomAdgroupTag',
         'smartTargeting' => 'setSmartTargeting',
         'dynamicCreativeIdSet' => 'setDynamicCreativeIdSet',
-        'systemStatusExplanation' => 'setSystemStatusExplanation'
+        'systemStatusExplanation' => 'setSystemStatusExplanation',
+        'autoDerivedLandingPageSwitch' => 'setAutoDerivedLandingPageSwitch'
     ];
 
     /**
@@ -430,7 +434,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'customAdgroupTag' => 'getCustomAdgroupTag',
         'smartTargeting' => 'getSmartTargeting',
         'dynamicCreativeIdSet' => 'getDynamicCreativeIdSet',
-        'systemStatusExplanation' => 'getSystemStatusExplanation'
+        'systemStatusExplanation' => 'getSystemStatusExplanation',
+        'autoDerivedLandingPageSwitch' => 'getAutoDerivedLandingPageSwitch'
     ];
 
     /**
@@ -557,6 +562,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['smartTargeting'] = isset($data['smartTargeting']) ? $data['smartTargeting'] : null;
         $this->container['dynamicCreativeIdSet'] = isset($data['dynamicCreativeIdSet']) ? $data['dynamicCreativeIdSet'] : null;
         $this->container['systemStatusExplanation'] = isset($data['systemStatusExplanation']) ? $data['systemStatusExplanation'] : null;
+        $this->container['autoDerivedLandingPageSwitch'] = isset($data['autoDerivedLandingPageSwitch']) ? $data['autoDerivedLandingPageSwitch'] : null;
     }
 
     /**
@@ -2115,6 +2121,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setSystemStatusExplanation($systemStatusExplanation)
     {
         $this->container['systemStatusExplanation'] = $systemStatusExplanation;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoDerivedLandingPageSwitch
+     *
+     * @return bool|mixed
+     */
+    public function getAutoDerivedLandingPageSwitch()
+    {
+        return $this->container['autoDerivedLandingPageSwitch'];
+    }
+
+    /**
+     * Sets autoDerivedLandingPageSwitch
+     *
+     * @param bool|mixed $autoDerivedLandingPageSwitch autoDerivedLandingPageSwitch
+     *
+     * @return $this
+     */
+    public function setAutoDerivedLandingPageSwitch($autoDerivedLandingPageSwitch)
+    {
+        $this->container['autoDerivedLandingPageSwitch'] = $autoDerivedLandingPageSwitch;
 
         return $this;
     }

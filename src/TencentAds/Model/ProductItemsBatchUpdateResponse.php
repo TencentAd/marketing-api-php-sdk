@@ -1,6 +1,6 @@
 <?php
 /**
- * ProgrammedUpdateRequest
+ * ProductItemsBatchUpdateResponse
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ProgrammedUpdateRequest Class Doc Comment
+ * ProductItemsBatchUpdateResponse Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
+class ProductItemsBatchUpdateResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'ProgrammedUpdateRequest';
+    protected static $swaggerModelName = 'ProductItemsBatchUpdateResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,11 +57,10 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'materialDeriveId' => 'int',
-        'autoDerivedProgramCreativeSwitch' => 'bool',
-        'standardSwitch' => 'bool',
-        'updateMaterialGroups' => '\TencentAds\Model\MaterialGroupUpdateStruct[]'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]'
     ];
 
     /**
@@ -70,11 +69,10 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'materialDeriveId' => 'int64',
-        'autoDerivedProgramCreativeSwitch' => null,
-        'standardSwitch' => null,
-        'updateMaterialGroups' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null
     ];
 
     /**
@@ -104,11 +102,10 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'materialDeriveId' => 'material_derive_id',
-        'autoDerivedProgramCreativeSwitch' => 'auto_derived_program_creative_switch',
-        'standardSwitch' => 'standard_switch',
-        'updateMaterialGroups' => 'update_material_groups'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors'
     ];
 
     /**
@@ -117,11 +114,10 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'materialDeriveId' => 'setMaterialDeriveId',
-        'autoDerivedProgramCreativeSwitch' => 'setAutoDerivedProgramCreativeSwitch',
-        'standardSwitch' => 'setStandardSwitch',
-        'updateMaterialGroups' => 'setUpdateMaterialGroups'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors'
     ];
 
     /**
@@ -130,11 +126,10 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'materialDeriveId' => 'getMaterialDeriveId',
-        'autoDerivedProgramCreativeSwitch' => 'getAutoDerivedProgramCreativeSwitch',
-        'standardSwitch' => 'getStandardSwitch',
-        'updateMaterialGroups' => 'getUpdateMaterialGroups'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors'
     ];
 
     /**
@@ -197,11 +192,10 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['materialDeriveId'] = isset($data['materialDeriveId']) ? $data['materialDeriveId'] : null;
-        $this->container['autoDerivedProgramCreativeSwitch'] = isset($data['autoDerivedProgramCreativeSwitch']) ? $data['autoDerivedProgramCreativeSwitch'] : null;
-        $this->container['standardSwitch'] = isset($data['standardSwitch']) ? $data['standardSwitch'] : null;
-        $this->container['updateMaterialGroups'] = isset($data['updateMaterialGroups']) ? $data['updateMaterialGroups'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
     }
 
     /**
@@ -229,121 +223,97 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets accountId
+     * Gets code
      *
      * @return int|mixed
      */
-    public function getAccountId()
+    public function getCode()
     {
-        return $this->container['accountId'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets accountId
+     * Sets code
      *
-     * @param int|mixed $accountId accountId
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setCode($code)
     {
-        $this->container['accountId'] = $accountId;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets materialDeriveId
+     * Gets message
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getMaterialDeriveId()
+    public function getMessage()
     {
-        return $this->container['materialDeriveId'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets materialDeriveId
+     * Sets message
      *
-     * @param int|mixed $materialDeriveId materialDeriveId
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setMaterialDeriveId($materialDeriveId)
+    public function setMessage($message)
     {
-        $this->container['materialDeriveId'] = $materialDeriveId;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets autoDerivedProgramCreativeSwitch
+     * Gets messageCn
      *
-     * @return bool|mixed
+     * @return string|mixed
      */
-    public function getAutoDerivedProgramCreativeSwitch()
+    public function getMessageCn()
     {
-        return $this->container['autoDerivedProgramCreativeSwitch'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets autoDerivedProgramCreativeSwitch
+     * Sets messageCn
      *
-     * @param bool|mixed $autoDerivedProgramCreativeSwitch autoDerivedProgramCreativeSwitch
+     * @param string|mixed $messageCn messageCn
      *
      * @return $this
      */
-    public function setAutoDerivedProgramCreativeSwitch($autoDerivedProgramCreativeSwitch)
+    public function setMessageCn($messageCn)
     {
-        $this->container['autoDerivedProgramCreativeSwitch'] = $autoDerivedProgramCreativeSwitch;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets standardSwitch
+     * Gets errors
      *
-     * @return bool|mixed
+     * @return \TencentAds\Model\ApiErrorStruct[]|mixed
      */
-    public function getStandardSwitch()
+    public function getErrors()
     {
-        return $this->container['standardSwitch'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets standardSwitch
+     * Sets errors
      *
-     * @param bool|mixed $standardSwitch standardSwitch
+     * @param \TencentAds\Model\ApiErrorStruct[]|mixed $errors errors
      *
      * @return $this
      */
-    public function setStandardSwitch($standardSwitch)
+    public function setErrors($errors)
     {
-        $this->container['standardSwitch'] = $standardSwitch;
-
-        return $this;
-    }
-
-    /**
-     * Gets updateMaterialGroups
-     *
-     * @return \TencentAds\Model\MaterialGroupUpdateStruct[]|mixed
-     */
-    public function getUpdateMaterialGroups()
-    {
-        return $this->container['updateMaterialGroups'];
-    }
-
-    /**
-     * Sets updateMaterialGroups
-     *
-     * @param \TencentAds\Model\MaterialGroupUpdateStruct[]|mixed $updateMaterialGroups updateMaterialGroups
-     *
-     * @return $this
-     */
-    public function setUpdateMaterialGroups($updateMaterialGroups)
-    {
-        $this->container['updateMaterialGroups'] = $updateMaterialGroups;
+        $this->container['errors'] = $errors;
 
         return $this;
     }

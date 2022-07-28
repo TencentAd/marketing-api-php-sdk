@@ -1,6 +1,6 @@
 <?php
 /**
- * ProgrammedUpdateRequest
+ * ProductItemsBatchUpdateRequest
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ProgrammedUpdateRequest Class Doc Comment
+ * ProductItemsBatchUpdateRequest Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
+class ProductItemsBatchUpdateRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'ProgrammedUpdateRequest';
+    protected static $swaggerModelName = 'ProductItemsBatchUpdateRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +58,8 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
-        'materialDeriveId' => 'int',
-        'autoDerivedProgramCreativeSwitch' => 'bool',
-        'standardSwitch' => 'bool',
-        'updateMaterialGroups' => '\TencentAds\Model\MaterialGroupUpdateStruct[]'
+        'catalogId' => 'int',
+        'productUpdateList' => '\TencentAds\Model\ProductUpdateItem[]'
     ];
 
     /**
@@ -71,10 +69,8 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'accountId' => 'int64',
-        'materialDeriveId' => 'int64',
-        'autoDerivedProgramCreativeSwitch' => null,
-        'standardSwitch' => null,
-        'updateMaterialGroups' => null
+        'catalogId' => 'int64',
+        'productUpdateList' => null
     ];
 
     /**
@@ -105,10 +101,8 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'accountId' => 'account_id',
-        'materialDeriveId' => 'material_derive_id',
-        'autoDerivedProgramCreativeSwitch' => 'auto_derived_program_creative_switch',
-        'standardSwitch' => 'standard_switch',
-        'updateMaterialGroups' => 'update_material_groups'
+        'catalogId' => 'catalog_id',
+        'productUpdateList' => 'product_update_list'
     ];
 
     /**
@@ -118,10 +112,8 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'accountId' => 'setAccountId',
-        'materialDeriveId' => 'setMaterialDeriveId',
-        'autoDerivedProgramCreativeSwitch' => 'setAutoDerivedProgramCreativeSwitch',
-        'standardSwitch' => 'setStandardSwitch',
-        'updateMaterialGroups' => 'setUpdateMaterialGroups'
+        'catalogId' => 'setCatalogId',
+        'productUpdateList' => 'setProductUpdateList'
     ];
 
     /**
@@ -131,10 +123,8 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'accountId' => 'getAccountId',
-        'materialDeriveId' => 'getMaterialDeriveId',
-        'autoDerivedProgramCreativeSwitch' => 'getAutoDerivedProgramCreativeSwitch',
-        'standardSwitch' => 'getStandardSwitch',
-        'updateMaterialGroups' => 'getUpdateMaterialGroups'
+        'catalogId' => 'getCatalogId',
+        'productUpdateList' => 'getProductUpdateList'
     ];
 
     /**
@@ -198,10 +188,8 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['materialDeriveId'] = isset($data['materialDeriveId']) ? $data['materialDeriveId'] : null;
-        $this->container['autoDerivedProgramCreativeSwitch'] = isset($data['autoDerivedProgramCreativeSwitch']) ? $data['autoDerivedProgramCreativeSwitch'] : null;
-        $this->container['standardSwitch'] = isset($data['standardSwitch']) ? $data['standardSwitch'] : null;
-        $this->container['updateMaterialGroups'] = isset($data['updateMaterialGroups']) ? $data['updateMaterialGroups'] : null;
+        $this->container['catalogId'] = isset($data['catalogId']) ? $data['catalogId'] : null;
+        $this->container['productUpdateList'] = isset($data['productUpdateList']) ? $data['productUpdateList'] : null;
     }
 
     /**
@@ -253,97 +241,49 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets materialDeriveId
+     * Gets catalogId
      *
      * @return int|mixed
      */
-    public function getMaterialDeriveId()
+    public function getCatalogId()
     {
-        return $this->container['materialDeriveId'];
+        return $this->container['catalogId'];
     }
 
     /**
-     * Sets materialDeriveId
+     * Sets catalogId
      *
-     * @param int|mixed $materialDeriveId materialDeriveId
+     * @param int|mixed $catalogId catalogId
      *
      * @return $this
      */
-    public function setMaterialDeriveId($materialDeriveId)
+    public function setCatalogId($catalogId)
     {
-        $this->container['materialDeriveId'] = $materialDeriveId;
+        $this->container['catalogId'] = $catalogId;
 
         return $this;
     }
 
     /**
-     * Gets autoDerivedProgramCreativeSwitch
+     * Gets productUpdateList
      *
-     * @return bool|mixed
+     * @return \TencentAds\Model\ProductUpdateItem[]|mixed
      */
-    public function getAutoDerivedProgramCreativeSwitch()
+    public function getProductUpdateList()
     {
-        return $this->container['autoDerivedProgramCreativeSwitch'];
+        return $this->container['productUpdateList'];
     }
 
     /**
-     * Sets autoDerivedProgramCreativeSwitch
+     * Sets productUpdateList
      *
-     * @param bool|mixed $autoDerivedProgramCreativeSwitch autoDerivedProgramCreativeSwitch
+     * @param \TencentAds\Model\ProductUpdateItem[]|mixed $productUpdateList productUpdateList
      *
      * @return $this
      */
-    public function setAutoDerivedProgramCreativeSwitch($autoDerivedProgramCreativeSwitch)
+    public function setProductUpdateList($productUpdateList)
     {
-        $this->container['autoDerivedProgramCreativeSwitch'] = $autoDerivedProgramCreativeSwitch;
-
-        return $this;
-    }
-
-    /**
-     * Gets standardSwitch
-     *
-     * @return bool|mixed
-     */
-    public function getStandardSwitch()
-    {
-        return $this->container['standardSwitch'];
-    }
-
-    /**
-     * Sets standardSwitch
-     *
-     * @param bool|mixed $standardSwitch standardSwitch
-     *
-     * @return $this
-     */
-    public function setStandardSwitch($standardSwitch)
-    {
-        $this->container['standardSwitch'] = $standardSwitch;
-
-        return $this;
-    }
-
-    /**
-     * Gets updateMaterialGroups
-     *
-     * @return \TencentAds\Model\MaterialGroupUpdateStruct[]|mixed
-     */
-    public function getUpdateMaterialGroups()
-    {
-        return $this->container['updateMaterialGroups'];
-    }
-
-    /**
-     * Sets updateMaterialGroups
-     *
-     * @param \TencentAds\Model\MaterialGroupUpdateStruct[]|mixed $updateMaterialGroups updateMaterialGroups
-     *
-     * @return $this
-     */
-    public function setUpdateMaterialGroups($updateMaterialGroups)
-    {
-        $this->container['updateMaterialGroups'] = $updateMaterialGroups;
+        $this->container['productUpdateList'] = $productUpdateList;
 
         return $this;
     }

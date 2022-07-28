@@ -108,6 +108,7 @@ class IntOptimizationGoal
     const OPEN_ACCOUNT = 'OPTIMIZATIONGOAL_OPEN_ACCOUNT';
     const SEVEN_DAY_ECOMMERCE_ORDER = 'OPTIMIZATIONGOAL_SEVEN_DAY_ECOMMERCE_ORDER';
     const ADD_WECHAT = 'OPTIMIZATIONGOAL_ADD_WECHAT';
+    const WECOM_CONSULT = 'OPTIMIZATIONGOAL_WECOM_CONSULT';
     const PAGE_EFFECTIVE_PHONE_CALL = 'OPTIMIZATIONGOAL_PAGE_EFFECTIVE_PHONE_CALL';
     
     /**
@@ -181,6 +182,7 @@ class IntOptimizationGoal
             self::OPEN_ACCOUNT,
             self::SEVEN_DAY_ECOMMERCE_ORDER,
             self::ADD_WECHAT,
+            self::WECOM_CONSULT,
             self::PAGE_EFFECTIVE_PHONE_CALL,
         ];
     }

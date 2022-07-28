@@ -60,7 +60,9 @@ class MaterialStruct implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'type' => '\TencentAds\Model\MaterialTypeEnum',
         'mediaId' => 'string',
-        'materialName' => 'string'
+        'materialName' => 'string',
+        'originMediaId' => 'string',
+        'url' => 'string'
     ];
 
     /**
@@ -71,7 +73,9 @@ class MaterialStruct implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'type' => null,
         'mediaId' => null,
-        'materialName' => null
+        'materialName' => null,
+        'originMediaId' => null,
+        'url' => null
     ];
 
     /**
@@ -103,7 +107,9 @@ class MaterialStruct implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'type' => 'type',
         'mediaId' => 'media_id',
-        'materialName' => 'material_name'
+        'materialName' => 'material_name',
+        'originMediaId' => 'origin_media_id',
+        'url' => 'url'
     ];
 
     /**
@@ -114,7 +120,9 @@ class MaterialStruct implements ModelInterface, ArrayAccess
     protected static $setters = [
         'type' => 'setType',
         'mediaId' => 'setMediaId',
-        'materialName' => 'setMaterialName'
+        'materialName' => 'setMaterialName',
+        'originMediaId' => 'setOriginMediaId',
+        'url' => 'setUrl'
     ];
 
     /**
@@ -125,7 +133,9 @@ class MaterialStruct implements ModelInterface, ArrayAccess
     protected static $getters = [
         'type' => 'getType',
         'mediaId' => 'getMediaId',
-        'materialName' => 'getMaterialName'
+        'materialName' => 'getMaterialName',
+        'originMediaId' => 'getOriginMediaId',
+        'url' => 'getUrl'
     ];
 
     /**
@@ -191,6 +201,8 @@ class MaterialStruct implements ModelInterface, ArrayAccess
         $this->container['type'] = isset($data['type']) ? $data['type'] : null;
         $this->container['mediaId'] = isset($data['mediaId']) ? $data['mediaId'] : null;
         $this->container['materialName'] = isset($data['materialName']) ? $data['materialName'] : null;
+        $this->container['originMediaId'] = isset($data['originMediaId']) ? $data['originMediaId'] : null;
+        $this->container['url'] = isset($data['url']) ? $data['url'] : null;
     }
 
     /**
@@ -285,6 +297,54 @@ class MaterialStruct implements ModelInterface, ArrayAccess
     public function setMaterialName($materialName)
     {
         $this->container['materialName'] = $materialName;
+
+        return $this;
+    }
+
+    /**
+     * Gets originMediaId
+     *
+     * @return string|mixed
+     */
+    public function getOriginMediaId()
+    {
+        return $this->container['originMediaId'];
+    }
+
+    /**
+     * Sets originMediaId
+     *
+     * @param string|mixed $originMediaId originMediaId
+     *
+     * @return $this
+     */
+    public function setOriginMediaId($originMediaId)
+    {
+        $this->container['originMediaId'] = $originMediaId;
+
+        return $this;
+    }
+
+    /**
+     * Gets url
+     *
+     * @return string|mixed
+     */
+    public function getUrl()
+    {
+        return $this->container['url'];
+    }
+
+    /**
+     * Sets url
+     *
+     * @param string|mixed $url url
+     *
+     * @return $this
+     */
+    public function setUrl($url)
+    {
+        $this->container['url'] = $url;
 
         return $this;
     }
