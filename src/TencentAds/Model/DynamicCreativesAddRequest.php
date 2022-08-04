@@ -96,8 +96,6 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
         'enableBreakthroughSiteset' => 'bool',
         'unionMarketSpec' => '\TencentAds\Model\UnionMarketSpec',
-        'programCreativeInfo' => '\TencentAds\Model\ProgramCreativeInfo',
-        'dynamicCreativeType' => '\TencentAds\Model\DynamicCreativeType',
         'headClickType' => '\TencentAds\Model\HeadClickType',
         'headClickSpec' => '\TencentAds\Model\HeadClickSpec',
         'accountId' => 'int'
@@ -148,8 +146,6 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'appGiftPackCode' => null,
         'enableBreakthroughSiteset' => null,
         'unionMarketSpec' => null,
-        'programCreativeInfo' => null,
-        'dynamicCreativeType' => null,
         'headClickType' => null,
         'headClickSpec' => null,
         'accountId' => 'int64'
@@ -221,8 +217,6 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'appGiftPackCode' => 'app_gift_pack_code',
         'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
         'unionMarketSpec' => 'union_market_spec',
-        'programCreativeInfo' => 'program_creative_info',
-        'dynamicCreativeType' => 'dynamic_creative_type',
         'headClickType' => 'head_click_type',
         'headClickSpec' => 'head_click_spec',
         'accountId' => 'account_id'
@@ -273,8 +267,6 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'appGiftPackCode' => 'setAppGiftPackCode',
         'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
         'unionMarketSpec' => 'setUnionMarketSpec',
-        'programCreativeInfo' => 'setProgramCreativeInfo',
-        'dynamicCreativeType' => 'setDynamicCreativeType',
         'headClickType' => 'setHeadClickType',
         'headClickSpec' => 'setHeadClickSpec',
         'accountId' => 'setAccountId'
@@ -325,8 +317,6 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'appGiftPackCode' => 'getAppGiftPackCode',
         'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
         'unionMarketSpec' => 'getUnionMarketSpec',
-        'programCreativeInfo' => 'getProgramCreativeInfo',
-        'dynamicCreativeType' => 'getDynamicCreativeType',
         'headClickType' => 'getHeadClickType',
         'headClickSpec' => 'getHeadClickSpec',
         'accountId' => 'getAccountId'
@@ -431,8 +421,6 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
         $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
         $this->container['unionMarketSpec'] = isset($data['unionMarketSpec']) ? $data['unionMarketSpec'] : null;
-        $this->container['programCreativeInfo'] = isset($data['programCreativeInfo']) ? $data['programCreativeInfo'] : null;
-        $this->container['dynamicCreativeType'] = isset($data['dynamicCreativeType']) ? $data['dynamicCreativeType'] : null;
         $this->container['headClickType'] = isset($data['headClickType']) ? $data['headClickType'] : null;
         $this->container['headClickSpec'] = isset($data['headClickSpec']) ? $data['headClickSpec'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
@@ -1394,54 +1382,6 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     public function setUnionMarketSpec($unionMarketSpec)
     {
         $this->container['unionMarketSpec'] = $unionMarketSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets programCreativeInfo
-     *
-     * @return \TencentAds\Model\ProgramCreativeInfo|mixed
-     */
-    public function getProgramCreativeInfo()
-    {
-        return $this->container['programCreativeInfo'];
-    }
-
-    /**
-     * Sets programCreativeInfo
-     *
-     * @param \TencentAds\Model\ProgramCreativeInfo|mixed $programCreativeInfo programCreativeInfo
-     *
-     * @return $this
-     */
-    public function setProgramCreativeInfo($programCreativeInfo)
-    {
-        $this->container['programCreativeInfo'] = $programCreativeInfo;
-
-        return $this;
-    }
-
-    /**
-     * Gets dynamicCreativeType
-     *
-     * @return \TencentAds\Model\DynamicCreativeType|mixed
-     */
-    public function getDynamicCreativeType()
-    {
-        return $this->container['dynamicCreativeType'];
-    }
-
-    /**
-     * Sets dynamicCreativeType
-     *
-     * @param \TencentAds\Model\DynamicCreativeType|mixed $dynamicCreativeType dynamicCreativeType
-     *
-     * @return $this
-     */
-    public function setDynamicCreativeType($dynamicCreativeType)
-    {
-        $this->container['dynamicCreativeType'] = $dynamicCreativeType;
 
         return $this;
     }
