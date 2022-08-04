@@ -59,7 +59,9 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'index' => 'int',
-        'outerLeadsId' => 'string'
+        'outerLeadsId' => 'string',
+        'detailedErrCode' => 'string',
+        'detailedErrMsg' => 'string'
     ];
 
     /**
@@ -69,7 +71,9 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'index' => 'int64',
-        'outerLeadsId' => null
+        'outerLeadsId' => null,
+        'detailedErrCode' => null,
+        'detailedErrMsg' => null
     ];
 
     /**
@@ -100,7 +104,9 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'index' => 'index',
-        'outerLeadsId' => 'outer_leads_id'
+        'outerLeadsId' => 'outer_leads_id',
+        'detailedErrCode' => 'detailed_err_code',
+        'detailedErrMsg' => 'detailed_err_msg'
     ];
 
     /**
@@ -110,7 +116,9 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'index' => 'setIndex',
-        'outerLeadsId' => 'setOuterLeadsId'
+        'outerLeadsId' => 'setOuterLeadsId',
+        'detailedErrCode' => 'setDetailedErrCode',
+        'detailedErrMsg' => 'setDetailedErrMsg'
     ];
 
     /**
@@ -120,7 +128,9 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'index' => 'getIndex',
-        'outerLeadsId' => 'getOuterLeadsId'
+        'outerLeadsId' => 'getOuterLeadsId',
+        'detailedErrCode' => 'getDetailedErrCode',
+        'detailedErrMsg' => 'getDetailedErrMsg'
     ];
 
     /**
@@ -185,6 +195,8 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
     {
         $this->container['index'] = isset($data['index']) ? $data['index'] : null;
         $this->container['outerLeadsId'] = isset($data['outerLeadsId']) ? $data['outerLeadsId'] : null;
+        $this->container['detailedErrCode'] = isset($data['detailedErrCode']) ? $data['detailedErrCode'] : null;
+        $this->container['detailedErrMsg'] = isset($data['detailedErrMsg']) ? $data['detailedErrMsg'] : null;
     }
 
     /**
@@ -255,6 +267,54 @@ class OuterCluesAddListStruct implements ModelInterface, ArrayAccess
     public function setOuterLeadsId($outerLeadsId)
     {
         $this->container['outerLeadsId'] = $outerLeadsId;
+
+        return $this;
+    }
+
+    /**
+     * Gets detailedErrCode
+     *
+     * @return string|mixed
+     */
+    public function getDetailedErrCode()
+    {
+        return $this->container['detailedErrCode'];
+    }
+
+    /**
+     * Sets detailedErrCode
+     *
+     * @param string|mixed $detailedErrCode detailedErrCode
+     *
+     * @return $this
+     */
+    public function setDetailedErrCode($detailedErrCode)
+    {
+        $this->container['detailedErrCode'] = $detailedErrCode;
+
+        return $this;
+    }
+
+    /**
+     * Gets detailedErrMsg
+     *
+     * @return string|mixed
+     */
+    public function getDetailedErrMsg()
+    {
+        return $this->container['detailedErrMsg'];
+    }
+
+    /**
+     * Sets detailedErrMsg
+     *
+     * @param string|mixed $detailedErrMsg detailedErrMsg
+     *
+     * @return $this
+     */
+    public function setDetailedErrMsg($detailedErrMsg)
+    {
+        $this->container['detailedErrMsg'] = $detailedErrMsg;
 
         return $this;
     }

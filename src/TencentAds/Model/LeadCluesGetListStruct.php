@@ -81,6 +81,8 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'pageName' => 'string',
         'pageUrl' => 'string',
         'leadsType' => '\TencentAds\Model\LeadCluesLeadsType',
+        'leadsSubType' => 'string',
+        'chatId' => 'string',
         'leadsSource' => 'string',
         'leadsPotentialScore' => 'string',
         'leadsFollowTag' => 'string',
@@ -109,7 +111,15 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'leadsActionTime' => 'string',
         'leadsTags' => 'string',
         'shopName' => 'string',
-        'shopAddress' => 'string'
+        'shopAddress' => 'string',
+        'callMiddleNum' => 'string',
+        'callConsumerHotline' => 'string',
+        'callTouchTag' => 'string',
+        'callDuration' => 'string',
+        'callRecordUrl' => 'string',
+        'layerFormContent' => 'string',
+        'nickName' => 'string',
+        'isBroadCastLeads' => 'string'
     ];
 
     /**
@@ -141,6 +151,8 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'pageName' => null,
         'pageUrl' => null,
         'leadsType' => null,
+        'leadsSubType' => null,
+        'chatId' => null,
         'leadsSource' => null,
         'leadsPotentialScore' => null,
         'leadsFollowTag' => null,
@@ -169,7 +181,15 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'leadsActionTime' => null,
         'leadsTags' => null,
         'shopName' => null,
-        'shopAddress' => null
+        'shopAddress' => null,
+        'callMiddleNum' => null,
+        'callConsumerHotline' => null,
+        'callTouchTag' => null,
+        'callDuration' => null,
+        'callRecordUrl' => null,
+        'layerFormContent' => null,
+        'nickName' => null,
+        'isBroadCastLeads' => null
     ];
 
     /**
@@ -222,6 +242,8 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'pageName' => 'page_name',
         'pageUrl' => 'page_url',
         'leadsType' => 'leads_type',
+        'leadsSubType' => 'leads_sub_type',
+        'chatId' => 'chat_id',
         'leadsSource' => 'leads_source',
         'leadsPotentialScore' => 'leads_potential_score',
         'leadsFollowTag' => 'leads_follow_tag',
@@ -250,7 +272,15 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'leadsActionTime' => 'leads_action_time',
         'leadsTags' => 'leads_tags',
         'shopName' => 'shop_name',
-        'shopAddress' => 'shop_address'
+        'shopAddress' => 'shop_address',
+        'callMiddleNum' => 'call_middle_num',
+        'callConsumerHotline' => 'call_consumer_hotline',
+        'callTouchTag' => 'call_touch_tag',
+        'callDuration' => 'call_duration',
+        'callRecordUrl' => 'call_record_url',
+        'layerFormContent' => 'layer_form_content',
+        'nickName' => 'nick_name',
+        'isBroadCastLeads' => 'is_broad_cast_leads'
     ];
 
     /**
@@ -282,6 +312,8 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'pageName' => 'setPageName',
         'pageUrl' => 'setPageUrl',
         'leadsType' => 'setLeadsType',
+        'leadsSubType' => 'setLeadsSubType',
+        'chatId' => 'setChatId',
         'leadsSource' => 'setLeadsSource',
         'leadsPotentialScore' => 'setLeadsPotentialScore',
         'leadsFollowTag' => 'setLeadsFollowTag',
@@ -310,7 +342,15 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'leadsActionTime' => 'setLeadsActionTime',
         'leadsTags' => 'setLeadsTags',
         'shopName' => 'setShopName',
-        'shopAddress' => 'setShopAddress'
+        'shopAddress' => 'setShopAddress',
+        'callMiddleNum' => 'setCallMiddleNum',
+        'callConsumerHotline' => 'setCallConsumerHotline',
+        'callTouchTag' => 'setCallTouchTag',
+        'callDuration' => 'setCallDuration',
+        'callRecordUrl' => 'setCallRecordUrl',
+        'layerFormContent' => 'setLayerFormContent',
+        'nickName' => 'setNickName',
+        'isBroadCastLeads' => 'setIsBroadCastLeads'
     ];
 
     /**
@@ -342,6 +382,8 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'pageName' => 'getPageName',
         'pageUrl' => 'getPageUrl',
         'leadsType' => 'getLeadsType',
+        'leadsSubType' => 'getLeadsSubType',
+        'chatId' => 'getChatId',
         'leadsSource' => 'getLeadsSource',
         'leadsPotentialScore' => 'getLeadsPotentialScore',
         'leadsFollowTag' => 'getLeadsFollowTag',
@@ -370,7 +412,15 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'leadsActionTime' => 'getLeadsActionTime',
         'leadsTags' => 'getLeadsTags',
         'shopName' => 'getShopName',
-        'shopAddress' => 'getShopAddress'
+        'shopAddress' => 'getShopAddress',
+        'callMiddleNum' => 'getCallMiddleNum',
+        'callConsumerHotline' => 'getCallConsumerHotline',
+        'callTouchTag' => 'getCallTouchTag',
+        'callDuration' => 'getCallDuration',
+        'callRecordUrl' => 'getCallRecordUrl',
+        'layerFormContent' => 'getLayerFormContent',
+        'nickName' => 'getNickName',
+        'isBroadCastLeads' => 'getIsBroadCastLeads'
     ];
 
     /**
@@ -456,6 +506,8 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['pageName'] = isset($data['pageName']) ? $data['pageName'] : null;
         $this->container['pageUrl'] = isset($data['pageUrl']) ? $data['pageUrl'] : null;
         $this->container['leadsType'] = isset($data['leadsType']) ? $data['leadsType'] : null;
+        $this->container['leadsSubType'] = isset($data['leadsSubType']) ? $data['leadsSubType'] : null;
+        $this->container['chatId'] = isset($data['chatId']) ? $data['chatId'] : null;
         $this->container['leadsSource'] = isset($data['leadsSource']) ? $data['leadsSource'] : null;
         $this->container['leadsPotentialScore'] = isset($data['leadsPotentialScore']) ? $data['leadsPotentialScore'] : null;
         $this->container['leadsFollowTag'] = isset($data['leadsFollowTag']) ? $data['leadsFollowTag'] : null;
@@ -485,6 +537,14 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['leadsTags'] = isset($data['leadsTags']) ? $data['leadsTags'] : null;
         $this->container['shopName'] = isset($data['shopName']) ? $data['shopName'] : null;
         $this->container['shopAddress'] = isset($data['shopAddress']) ? $data['shopAddress'] : null;
+        $this->container['callMiddleNum'] = isset($data['callMiddleNum']) ? $data['callMiddleNum'] : null;
+        $this->container['callConsumerHotline'] = isset($data['callConsumerHotline']) ? $data['callConsumerHotline'] : null;
+        $this->container['callTouchTag'] = isset($data['callTouchTag']) ? $data['callTouchTag'] : null;
+        $this->container['callDuration'] = isset($data['callDuration']) ? $data['callDuration'] : null;
+        $this->container['callRecordUrl'] = isset($data['callRecordUrl']) ? $data['callRecordUrl'] : null;
+        $this->container['layerFormContent'] = isset($data['layerFormContent']) ? $data['layerFormContent'] : null;
+        $this->container['nickName'] = isset($data['nickName']) ? $data['nickName'] : null;
+        $this->container['isBroadCastLeads'] = isset($data['isBroadCastLeads']) ? $data['isBroadCastLeads'] : null;
     }
 
     /**
@@ -1059,6 +1119,54 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     public function setLeadsType($leadsType)
     {
         $this->container['leadsType'] = $leadsType;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsSubType
+     *
+     * @return string|mixed
+     */
+    public function getLeadsSubType()
+    {
+        return $this->container['leadsSubType'];
+    }
+
+    /**
+     * Sets leadsSubType
+     *
+     * @param string|mixed $leadsSubType leadsSubType
+     *
+     * @return $this
+     */
+    public function setLeadsSubType($leadsSubType)
+    {
+        $this->container['leadsSubType'] = $leadsSubType;
+
+        return $this;
+    }
+
+    /**
+     * Gets chatId
+     *
+     * @return string|mixed
+     */
+    public function getChatId()
+    {
+        return $this->container['chatId'];
+    }
+
+    /**
+     * Sets chatId
+     *
+     * @param string|mixed $chatId chatId
+     *
+     * @return $this
+     */
+    public function setChatId($chatId)
+    {
+        $this->container['chatId'] = $chatId;
 
         return $this;
     }
@@ -1755,6 +1863,198 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     public function setShopAddress($shopAddress)
     {
         $this->container['shopAddress'] = $shopAddress;
+
+        return $this;
+    }
+
+    /**
+     * Gets callMiddleNum
+     *
+     * @return string|mixed
+     */
+    public function getCallMiddleNum()
+    {
+        return $this->container['callMiddleNum'];
+    }
+
+    /**
+     * Sets callMiddleNum
+     *
+     * @param string|mixed $callMiddleNum callMiddleNum
+     *
+     * @return $this
+     */
+    public function setCallMiddleNum($callMiddleNum)
+    {
+        $this->container['callMiddleNum'] = $callMiddleNum;
+
+        return $this;
+    }
+
+    /**
+     * Gets callConsumerHotline
+     *
+     * @return string|mixed
+     */
+    public function getCallConsumerHotline()
+    {
+        return $this->container['callConsumerHotline'];
+    }
+
+    /**
+     * Sets callConsumerHotline
+     *
+     * @param string|mixed $callConsumerHotline callConsumerHotline
+     *
+     * @return $this
+     */
+    public function setCallConsumerHotline($callConsumerHotline)
+    {
+        $this->container['callConsumerHotline'] = $callConsumerHotline;
+
+        return $this;
+    }
+
+    /**
+     * Gets callTouchTag
+     *
+     * @return string|mixed
+     */
+    public function getCallTouchTag()
+    {
+        return $this->container['callTouchTag'];
+    }
+
+    /**
+     * Sets callTouchTag
+     *
+     * @param string|mixed $callTouchTag callTouchTag
+     *
+     * @return $this
+     */
+    public function setCallTouchTag($callTouchTag)
+    {
+        $this->container['callTouchTag'] = $callTouchTag;
+
+        return $this;
+    }
+
+    /**
+     * Gets callDuration
+     *
+     * @return string|mixed
+     */
+    public function getCallDuration()
+    {
+        return $this->container['callDuration'];
+    }
+
+    /**
+     * Sets callDuration
+     *
+     * @param string|mixed $callDuration callDuration
+     *
+     * @return $this
+     */
+    public function setCallDuration($callDuration)
+    {
+        $this->container['callDuration'] = $callDuration;
+
+        return $this;
+    }
+
+    /**
+     * Gets callRecordUrl
+     *
+     * @return string|mixed
+     */
+    public function getCallRecordUrl()
+    {
+        return $this->container['callRecordUrl'];
+    }
+
+    /**
+     * Sets callRecordUrl
+     *
+     * @param string|mixed $callRecordUrl callRecordUrl
+     *
+     * @return $this
+     */
+    public function setCallRecordUrl($callRecordUrl)
+    {
+        $this->container['callRecordUrl'] = $callRecordUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets layerFormContent
+     *
+     * @return string|mixed
+     */
+    public function getLayerFormContent()
+    {
+        return $this->container['layerFormContent'];
+    }
+
+    /**
+     * Sets layerFormContent
+     *
+     * @param string|mixed $layerFormContent layerFormContent
+     *
+     * @return $this
+     */
+    public function setLayerFormContent($layerFormContent)
+    {
+        $this->container['layerFormContent'] = $layerFormContent;
+
+        return $this;
+    }
+
+    /**
+     * Gets nickName
+     *
+     * @return string|mixed
+     */
+    public function getNickName()
+    {
+        return $this->container['nickName'];
+    }
+
+    /**
+     * Sets nickName
+     *
+     * @param string|mixed $nickName nickName
+     *
+     * @return $this
+     */
+    public function setNickName($nickName)
+    {
+        $this->container['nickName'] = $nickName;
+
+        return $this;
+    }
+
+    /**
+     * Gets isBroadCastLeads
+     *
+     * @return string|mixed
+     */
+    public function getIsBroadCastLeads()
+    {
+        return $this->container['isBroadCastLeads'];
+    }
+
+    /**
+     * Sets isBroadCastLeads
+     *
+     * @param string|mixed $isBroadCastLeads isBroadCastLeads
+     *
+     * @return $this
+     */
+    public function setIsBroadCastLeads($isBroadCastLeads)
+    {
+        $this->container['isBroadCastLeads'] = $isBroadCastLeads;
 
         return $this;
     }

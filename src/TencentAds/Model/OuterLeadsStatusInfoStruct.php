@@ -65,7 +65,8 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
         'leadsWechat' => 'string',
         'clickId' => 'string',
         'outerLeadsConvertType' => 'string',
-        'outerLeadsIneffectReason' => 'string'
+        'outerLeadsIneffectReason' => 'string',
+        'customizedTags' => '\TencentAds\Model\CustomizedTagsStruct[]'
     ];
 
     /**
@@ -81,7 +82,8 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
         'leadsWechat' => null,
         'clickId' => null,
         'outerLeadsConvertType' => null,
-        'outerLeadsIneffectReason' => null
+        'outerLeadsIneffectReason' => null,
+        'customizedTags' => null
     ];
 
     /**
@@ -118,7 +120,8 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
         'leadsWechat' => 'leads_wechat',
         'clickId' => 'click_id',
         'outerLeadsConvertType' => 'outer_leads_convert_type',
-        'outerLeadsIneffectReason' => 'outer_leads_ineffect_reason'
+        'outerLeadsIneffectReason' => 'outer_leads_ineffect_reason',
+        'customizedTags' => 'customized_tags'
     ];
 
     /**
@@ -134,7 +137,8 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
         'leadsWechat' => 'setLeadsWechat',
         'clickId' => 'setClickId',
         'outerLeadsConvertType' => 'setOuterLeadsConvertType',
-        'outerLeadsIneffectReason' => 'setOuterLeadsIneffectReason'
+        'outerLeadsIneffectReason' => 'setOuterLeadsIneffectReason',
+        'customizedTags' => 'setCustomizedTags'
     ];
 
     /**
@@ -150,7 +154,8 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
         'leadsWechat' => 'getLeadsWechat',
         'clickId' => 'getClickId',
         'outerLeadsConvertType' => 'getOuterLeadsConvertType',
-        'outerLeadsIneffectReason' => 'getOuterLeadsIneffectReason'
+        'outerLeadsIneffectReason' => 'getOuterLeadsIneffectReason',
+        'customizedTags' => 'getCustomizedTags'
     ];
 
     /**
@@ -221,6 +226,7 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
         $this->container['clickId'] = isset($data['clickId']) ? $data['clickId'] : null;
         $this->container['outerLeadsConvertType'] = isset($data['outerLeadsConvertType']) ? $data['outerLeadsConvertType'] : null;
         $this->container['outerLeadsIneffectReason'] = isset($data['outerLeadsIneffectReason']) ? $data['outerLeadsIneffectReason'] : null;
+        $this->container['customizedTags'] = isset($data['customizedTags']) ? $data['customizedTags'] : null;
     }
 
     /**
@@ -435,6 +441,30 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     public function setOuterLeadsIneffectReason($outerLeadsIneffectReason)
     {
         $this->container['outerLeadsIneffectReason'] = $outerLeadsIneffectReason;
+
+        return $this;
+    }
+
+    /**
+     * Gets customizedTags
+     *
+     * @return \TencentAds\Model\CustomizedTagsStruct[]|mixed
+     */
+    public function getCustomizedTags()
+    {
+        return $this->container['customizedTags'];
+    }
+
+    /**
+     * Sets customizedTags
+     *
+     * @param \TencentAds\Model\CustomizedTagsStruct[]|mixed $customizedTags customizedTags
+     *
+     * @return $this
+     */
+    public function setCustomizedTags($customizedTags)
+    {
+        $this->container['customizedTags'] = $customizedTags;
 
         return $this;
     }

@@ -536,6 +536,18 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'bizPreCreditUvCost' => 'int',
         'bizWithdrawDepositsUv' => 'int',
         'bizWithdrawDepositsUvCost' => 'int',
+        'cheoutPv1d' => 'int',
+        'cheoutPv3d' => 'int',
+        'cheoutPv5d' => 'int',
+        'cheoutPv7d' => 'int',
+        'cheout1dCost' => 'int',
+        'cheout3dCost' => 'int',
+        'cheout5dCost' => 'int',
+        'cheout7dCost' => 'int',
+        'cheout1dRate' => 'double',
+        'cheout3dRate' => 'double',
+        'cheout5dRate' => 'double',
+        'cheout7dRate' => 'double',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
         'incomeVal1' => 'int',
@@ -1222,6 +1234,18 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'bizPreCreditUvCost' => 'int64',
         'bizWithdrawDepositsUv' => 'int64',
         'bizWithdrawDepositsUvCost' => 'int64',
+        'cheoutPv1d' => 'int64',
+        'cheoutPv3d' => 'int64',
+        'cheoutPv5d' => 'int64',
+        'cheoutPv7d' => 'int64',
+        'cheout1dCost' => 'int64',
+        'cheout3dCost' => 'int64',
+        'cheout5dCost' => 'int64',
+        'cheout7dCost' => 'int64',
+        'cheout1dRate' => 'double',
+        'cheout3dRate' => 'double',
+        'cheout5dRate' => 'double',
+        'cheout7dRate' => 'double',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
         'incomeVal1' => 'int64',
@@ -1929,6 +1953,18 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'bizPreCreditUvCost' => 'biz_pre_credit_uv_cost',
         'bizWithdrawDepositsUv' => 'biz_withdraw_deposits_uv',
         'bizWithdrawDepositsUvCost' => 'biz_withdraw_deposits_uv_cost',
+        'cheoutPv1d' => 'cheout_pv_1d',
+        'cheoutPv3d' => 'cheout_pv_3d',
+        'cheoutPv5d' => 'cheout_pv_5d',
+        'cheoutPv7d' => 'cheout_pv_7d',
+        'cheout1dCost' => 'cheout_1d_cost',
+        'cheout3dCost' => 'cheout_3d_cost',
+        'cheout5dCost' => 'cheout_5d_cost',
+        'cheout7dCost' => 'cheout_7d_cost',
+        'cheout1dRate' => 'cheout_1d_rate',
+        'cheout3dRate' => 'cheout_3d_rate',
+        'cheout5dRate' => 'cheout_5d_rate',
+        'cheout7dRate' => 'cheout_7d_rate',
         'requestConversionsCount' => 'request_conversions_count',
         'requestConversionsCost' => 'request_conversions_cost',
         'incomeVal1' => 'income_val_1',
@@ -2615,6 +2651,18 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'bizPreCreditUvCost' => 'setBizPreCreditUvCost',
         'bizWithdrawDepositsUv' => 'setBizWithdrawDepositsUv',
         'bizWithdrawDepositsUvCost' => 'setBizWithdrawDepositsUvCost',
+        'cheoutPv1d' => 'setCheoutPv1d',
+        'cheoutPv3d' => 'setCheoutPv3d',
+        'cheoutPv5d' => 'setCheoutPv5d',
+        'cheoutPv7d' => 'setCheoutPv7d',
+        'cheout1dCost' => 'setCheout1dCost',
+        'cheout3dCost' => 'setCheout3dCost',
+        'cheout5dCost' => 'setCheout5dCost',
+        'cheout7dCost' => 'setCheout7dCost',
+        'cheout1dRate' => 'setCheout1dRate',
+        'cheout3dRate' => 'setCheout3dRate',
+        'cheout5dRate' => 'setCheout5dRate',
+        'cheout7dRate' => 'setCheout7dRate',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'requestConversionsCost' => 'setRequestConversionsCost',
         'incomeVal1' => 'setIncomeVal1',
@@ -3301,6 +3349,18 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'bizPreCreditUvCost' => 'getBizPreCreditUvCost',
         'bizWithdrawDepositsUv' => 'getBizWithdrawDepositsUv',
         'bizWithdrawDepositsUvCost' => 'getBizWithdrawDepositsUvCost',
+        'cheoutPv1d' => 'getCheoutPv1d',
+        'cheoutPv3d' => 'getCheoutPv3d',
+        'cheoutPv5d' => 'getCheoutPv5d',
+        'cheoutPv7d' => 'getCheoutPv7d',
+        'cheout1dCost' => 'getCheout1dCost',
+        'cheout3dCost' => 'getCheout3dCost',
+        'cheout5dCost' => 'getCheout5dCost',
+        'cheout7dCost' => 'getCheout7dCost',
+        'cheout1dRate' => 'getCheout1dRate',
+        'cheout3dRate' => 'getCheout3dRate',
+        'cheout5dRate' => 'getCheout5dRate',
+        'cheout7dRate' => 'getCheout7dRate',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'requestConversionsCost' => 'getRequestConversionsCost',
         'incomeVal1' => 'getIncomeVal1',
@@ -4041,6 +4101,18 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['bizPreCreditUvCost'] = isset($data['bizPreCreditUvCost']) ? $data['bizPreCreditUvCost'] : null;
         $this->container['bizWithdrawDepositsUv'] = isset($data['bizWithdrawDepositsUv']) ? $data['bizWithdrawDepositsUv'] : null;
         $this->container['bizWithdrawDepositsUvCost'] = isset($data['bizWithdrawDepositsUvCost']) ? $data['bizWithdrawDepositsUvCost'] : null;
+        $this->container['cheoutPv1d'] = isset($data['cheoutPv1d']) ? $data['cheoutPv1d'] : null;
+        $this->container['cheoutPv3d'] = isset($data['cheoutPv3d']) ? $data['cheoutPv3d'] : null;
+        $this->container['cheoutPv5d'] = isset($data['cheoutPv5d']) ? $data['cheoutPv5d'] : null;
+        $this->container['cheoutPv7d'] = isset($data['cheoutPv7d']) ? $data['cheoutPv7d'] : null;
+        $this->container['cheout1dCost'] = isset($data['cheout1dCost']) ? $data['cheout1dCost'] : null;
+        $this->container['cheout3dCost'] = isset($data['cheout3dCost']) ? $data['cheout3dCost'] : null;
+        $this->container['cheout5dCost'] = isset($data['cheout5dCost']) ? $data['cheout5dCost'] : null;
+        $this->container['cheout7dCost'] = isset($data['cheout7dCost']) ? $data['cheout7dCost'] : null;
+        $this->container['cheout1dRate'] = isset($data['cheout1dRate']) ? $data['cheout1dRate'] : null;
+        $this->container['cheout3dRate'] = isset($data['cheout3dRate']) ? $data['cheout3dRate'] : null;
+        $this->container['cheout5dRate'] = isset($data['cheout5dRate']) ? $data['cheout5dRate'] : null;
+        $this->container['cheout7dRate'] = isset($data['cheout7dRate']) ? $data['cheout7dRate'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
         $this->container['incomeVal1'] = isset($data['incomeVal1']) ? $data['incomeVal1'] : null;
@@ -15735,6 +15807,294 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setBizWithdrawDepositsUvCost($bizWithdrawDepositsUvCost)
     {
         $this->container['bizWithdrawDepositsUvCost'] = $bizWithdrawDepositsUvCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets cheoutPv1d
+     *
+     * @return int|mixed
+     */
+    public function getCheoutPv1d()
+    {
+        return $this->container['cheoutPv1d'];
+    }
+
+    /**
+     * Sets cheoutPv1d
+     *
+     * @param int|mixed $cheoutPv1d cheoutPv1d
+     *
+     * @return $this
+     */
+    public function setCheoutPv1d($cheoutPv1d)
+    {
+        $this->container['cheoutPv1d'] = $cheoutPv1d;
+
+        return $this;
+    }
+
+    /**
+     * Gets cheoutPv3d
+     *
+     * @return int|mixed
+     */
+    public function getCheoutPv3d()
+    {
+        return $this->container['cheoutPv3d'];
+    }
+
+    /**
+     * Sets cheoutPv3d
+     *
+     * @param int|mixed $cheoutPv3d cheoutPv3d
+     *
+     * @return $this
+     */
+    public function setCheoutPv3d($cheoutPv3d)
+    {
+        $this->container['cheoutPv3d'] = $cheoutPv3d;
+
+        return $this;
+    }
+
+    /**
+     * Gets cheoutPv5d
+     *
+     * @return int|mixed
+     */
+    public function getCheoutPv5d()
+    {
+        return $this->container['cheoutPv5d'];
+    }
+
+    /**
+     * Sets cheoutPv5d
+     *
+     * @param int|mixed $cheoutPv5d cheoutPv5d
+     *
+     * @return $this
+     */
+    public function setCheoutPv5d($cheoutPv5d)
+    {
+        $this->container['cheoutPv5d'] = $cheoutPv5d;
+
+        return $this;
+    }
+
+    /**
+     * Gets cheoutPv7d
+     *
+     * @return int|mixed
+     */
+    public function getCheoutPv7d()
+    {
+        return $this->container['cheoutPv7d'];
+    }
+
+    /**
+     * Sets cheoutPv7d
+     *
+     * @param int|mixed $cheoutPv7d cheoutPv7d
+     *
+     * @return $this
+     */
+    public function setCheoutPv7d($cheoutPv7d)
+    {
+        $this->container['cheoutPv7d'] = $cheoutPv7d;
+
+        return $this;
+    }
+
+    /**
+     * Gets cheout1dCost
+     *
+     * @return int|mixed
+     */
+    public function getCheout1dCost()
+    {
+        return $this->container['cheout1dCost'];
+    }
+
+    /**
+     * Sets cheout1dCost
+     *
+     * @param int|mixed $cheout1dCost cheout1dCost
+     *
+     * @return $this
+     */
+    public function setCheout1dCost($cheout1dCost)
+    {
+        $this->container['cheout1dCost'] = $cheout1dCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets cheout3dCost
+     *
+     * @return int|mixed
+     */
+    public function getCheout3dCost()
+    {
+        return $this->container['cheout3dCost'];
+    }
+
+    /**
+     * Sets cheout3dCost
+     *
+     * @param int|mixed $cheout3dCost cheout3dCost
+     *
+     * @return $this
+     */
+    public function setCheout3dCost($cheout3dCost)
+    {
+        $this->container['cheout3dCost'] = $cheout3dCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets cheout5dCost
+     *
+     * @return int|mixed
+     */
+    public function getCheout5dCost()
+    {
+        return $this->container['cheout5dCost'];
+    }
+
+    /**
+     * Sets cheout5dCost
+     *
+     * @param int|mixed $cheout5dCost cheout5dCost
+     *
+     * @return $this
+     */
+    public function setCheout5dCost($cheout5dCost)
+    {
+        $this->container['cheout5dCost'] = $cheout5dCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets cheout7dCost
+     *
+     * @return int|mixed
+     */
+    public function getCheout7dCost()
+    {
+        return $this->container['cheout7dCost'];
+    }
+
+    /**
+     * Sets cheout7dCost
+     *
+     * @param int|mixed $cheout7dCost cheout7dCost
+     *
+     * @return $this
+     */
+    public function setCheout7dCost($cheout7dCost)
+    {
+        $this->container['cheout7dCost'] = $cheout7dCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets cheout1dRate
+     *
+     * @return double|mixed
+     */
+    public function getCheout1dRate()
+    {
+        return $this->container['cheout1dRate'];
+    }
+
+    /**
+     * Sets cheout1dRate
+     *
+     * @param double|mixed $cheout1dRate cheout1dRate
+     *
+     * @return $this
+     */
+    public function setCheout1dRate($cheout1dRate)
+    {
+        $this->container['cheout1dRate'] = $cheout1dRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets cheout3dRate
+     *
+     * @return double|mixed
+     */
+    public function getCheout3dRate()
+    {
+        return $this->container['cheout3dRate'];
+    }
+
+    /**
+     * Sets cheout3dRate
+     *
+     * @param double|mixed $cheout3dRate cheout3dRate
+     *
+     * @return $this
+     */
+    public function setCheout3dRate($cheout3dRate)
+    {
+        $this->container['cheout3dRate'] = $cheout3dRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets cheout5dRate
+     *
+     * @return double|mixed
+     */
+    public function getCheout5dRate()
+    {
+        return $this->container['cheout5dRate'];
+    }
+
+    /**
+     * Sets cheout5dRate
+     *
+     * @param double|mixed $cheout5dRate cheout5dRate
+     *
+     * @return $this
+     */
+    public function setCheout5dRate($cheout5dRate)
+    {
+        $this->container['cheout5dRate'] = $cheout5dRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets cheout7dRate
+     *
+     * @return double|mixed
+     */
+    public function getCheout7dRate()
+    {
+        return $this->container['cheout7dRate'];
+    }
+
+    /**
+     * Sets cheout7dRate
+     *
+     * @param double|mixed $cheout7dRate cheout7dRate
+     *
+     * @return $this
+     */
+    public function setCheout7dRate($cheout7dRate)
+    {
+        $this->container['cheout7dRate'] = $cheout7dRate;
 
         return $this;
     }

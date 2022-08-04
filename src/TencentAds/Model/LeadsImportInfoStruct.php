@@ -68,6 +68,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         'leadsUserId' => 'string',
         'leadsUserType' => '\TencentAds\Model\LeadsUserType',
         'leadsUserWechatAppid' => 'string',
+        'leadsActionTime' => 'string',
         'leadsName' => 'string',
         'leadsGender' => '\TencentAds\Model\LeadCluesGenderType',
         'leadsEmail' => 'string',
@@ -76,7 +77,18 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         'outerLeadsConvertType' => 'string',
         'outerLeadsIneffectReason' => 'string',
         'outerLeadsComefrom' => '\TencentAds\Model\ActionChannelType',
-        'memo' => 'string'
+        'memo' => 'string',
+        'wechatAgencyId' => 'string',
+        'leadsAge' => 'string',
+        'leadsIdNumber' => 'string',
+        'leadsNationality' => 'string',
+        'leadsAddress' => 'string',
+        'leadsCompany' => 'string',
+        'leadsProfession' => 'string',
+        'leadsWorkingYears' => 'string',
+        'leadsPageId' => 'string',
+        'leadsPageName' => 'string',
+        'leadsPageUrl' => 'string'
     ];
 
     /**
@@ -95,6 +107,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         'leadsUserId' => null,
         'leadsUserType' => null,
         'leadsUserWechatAppid' => null,
+        'leadsActionTime' => null,
         'leadsName' => null,
         'leadsGender' => null,
         'leadsEmail' => null,
@@ -103,7 +116,18 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         'outerLeadsConvertType' => null,
         'outerLeadsIneffectReason' => null,
         'outerLeadsComefrom' => null,
-        'memo' => null
+        'memo' => null,
+        'wechatAgencyId' => null,
+        'leadsAge' => null,
+        'leadsIdNumber' => null,
+        'leadsNationality' => null,
+        'leadsAddress' => null,
+        'leadsCompany' => null,
+        'leadsProfession' => null,
+        'leadsWorkingYears' => null,
+        'leadsPageId' => null,
+        'leadsPageName' => null,
+        'leadsPageUrl' => null
     ];
 
     /**
@@ -143,6 +167,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         'leadsUserId' => 'leads_user_id',
         'leadsUserType' => 'leads_user_type',
         'leadsUserWechatAppid' => 'leads_user_wechat_appid',
+        'leadsActionTime' => 'leads_action_time',
         'leadsName' => 'leads_name',
         'leadsGender' => 'leads_gender',
         'leadsEmail' => 'leads_email',
@@ -151,7 +176,18 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         'outerLeadsConvertType' => 'outer_leads_convert_type',
         'outerLeadsIneffectReason' => 'outer_leads_ineffect_reason',
         'outerLeadsComefrom' => 'outer_leads_comefrom',
-        'memo' => 'memo'
+        'memo' => 'memo',
+        'wechatAgencyId' => 'wechat_agency_id',
+        'leadsAge' => 'leads_age',
+        'leadsIdNumber' => 'leads_id_number',
+        'leadsNationality' => 'leads_nationality',
+        'leadsAddress' => 'leads_address',
+        'leadsCompany' => 'leads_company',
+        'leadsProfession' => 'leads_profession',
+        'leadsWorkingYears' => 'leads_working_years',
+        'leadsPageId' => 'leads_page_id',
+        'leadsPageName' => 'leads_page_name',
+        'leadsPageUrl' => 'leads_page_url'
     ];
 
     /**
@@ -170,6 +206,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         'leadsUserId' => 'setLeadsUserId',
         'leadsUserType' => 'setLeadsUserType',
         'leadsUserWechatAppid' => 'setLeadsUserWechatAppid',
+        'leadsActionTime' => 'setLeadsActionTime',
         'leadsName' => 'setLeadsName',
         'leadsGender' => 'setLeadsGender',
         'leadsEmail' => 'setLeadsEmail',
@@ -178,7 +215,18 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         'outerLeadsConvertType' => 'setOuterLeadsConvertType',
         'outerLeadsIneffectReason' => 'setOuterLeadsIneffectReason',
         'outerLeadsComefrom' => 'setOuterLeadsComefrom',
-        'memo' => 'setMemo'
+        'memo' => 'setMemo',
+        'wechatAgencyId' => 'setWechatAgencyId',
+        'leadsAge' => 'setLeadsAge',
+        'leadsIdNumber' => 'setLeadsIdNumber',
+        'leadsNationality' => 'setLeadsNationality',
+        'leadsAddress' => 'setLeadsAddress',
+        'leadsCompany' => 'setLeadsCompany',
+        'leadsProfession' => 'setLeadsProfession',
+        'leadsWorkingYears' => 'setLeadsWorkingYears',
+        'leadsPageId' => 'setLeadsPageId',
+        'leadsPageName' => 'setLeadsPageName',
+        'leadsPageUrl' => 'setLeadsPageUrl'
     ];
 
     /**
@@ -197,6 +245,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         'leadsUserId' => 'getLeadsUserId',
         'leadsUserType' => 'getLeadsUserType',
         'leadsUserWechatAppid' => 'getLeadsUserWechatAppid',
+        'leadsActionTime' => 'getLeadsActionTime',
         'leadsName' => 'getLeadsName',
         'leadsGender' => 'getLeadsGender',
         'leadsEmail' => 'getLeadsEmail',
@@ -205,7 +254,18 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         'outerLeadsConvertType' => 'getOuterLeadsConvertType',
         'outerLeadsIneffectReason' => 'getOuterLeadsIneffectReason',
         'outerLeadsComefrom' => 'getOuterLeadsComefrom',
-        'memo' => 'getMemo'
+        'memo' => 'getMemo',
+        'wechatAgencyId' => 'getWechatAgencyId',
+        'leadsAge' => 'getLeadsAge',
+        'leadsIdNumber' => 'getLeadsIdNumber',
+        'leadsNationality' => 'getLeadsNationality',
+        'leadsAddress' => 'getLeadsAddress',
+        'leadsCompany' => 'getLeadsCompany',
+        'leadsProfession' => 'getLeadsProfession',
+        'leadsWorkingYears' => 'getLeadsWorkingYears',
+        'leadsPageId' => 'getLeadsPageId',
+        'leadsPageName' => 'getLeadsPageName',
+        'leadsPageUrl' => 'getLeadsPageUrl'
     ];
 
     /**
@@ -278,6 +338,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         $this->container['leadsUserId'] = isset($data['leadsUserId']) ? $data['leadsUserId'] : null;
         $this->container['leadsUserType'] = isset($data['leadsUserType']) ? $data['leadsUserType'] : null;
         $this->container['leadsUserWechatAppid'] = isset($data['leadsUserWechatAppid']) ? $data['leadsUserWechatAppid'] : null;
+        $this->container['leadsActionTime'] = isset($data['leadsActionTime']) ? $data['leadsActionTime'] : null;
         $this->container['leadsName'] = isset($data['leadsName']) ? $data['leadsName'] : null;
         $this->container['leadsGender'] = isset($data['leadsGender']) ? $data['leadsGender'] : null;
         $this->container['leadsEmail'] = isset($data['leadsEmail']) ? $data['leadsEmail'] : null;
@@ -287,6 +348,17 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         $this->container['outerLeadsIneffectReason'] = isset($data['outerLeadsIneffectReason']) ? $data['outerLeadsIneffectReason'] : null;
         $this->container['outerLeadsComefrom'] = isset($data['outerLeadsComefrom']) ? $data['outerLeadsComefrom'] : null;
         $this->container['memo'] = isset($data['memo']) ? $data['memo'] : null;
+        $this->container['wechatAgencyId'] = isset($data['wechatAgencyId']) ? $data['wechatAgencyId'] : null;
+        $this->container['leadsAge'] = isset($data['leadsAge']) ? $data['leadsAge'] : null;
+        $this->container['leadsIdNumber'] = isset($data['leadsIdNumber']) ? $data['leadsIdNumber'] : null;
+        $this->container['leadsNationality'] = isset($data['leadsNationality']) ? $data['leadsNationality'] : null;
+        $this->container['leadsAddress'] = isset($data['leadsAddress']) ? $data['leadsAddress'] : null;
+        $this->container['leadsCompany'] = isset($data['leadsCompany']) ? $data['leadsCompany'] : null;
+        $this->container['leadsProfession'] = isset($data['leadsProfession']) ? $data['leadsProfession'] : null;
+        $this->container['leadsWorkingYears'] = isset($data['leadsWorkingYears']) ? $data['leadsWorkingYears'] : null;
+        $this->container['leadsPageId'] = isset($data['leadsPageId']) ? $data['leadsPageId'] : null;
+        $this->container['leadsPageName'] = isset($data['leadsPageName']) ? $data['leadsPageName'] : null;
+        $this->container['leadsPageUrl'] = isset($data['leadsPageUrl']) ? $data['leadsPageUrl'] : null;
     }
 
     /**
@@ -554,6 +626,30 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets leadsActionTime
+     *
+     * @return string|mixed
+     */
+    public function getLeadsActionTime()
+    {
+        return $this->container['leadsActionTime'];
+    }
+
+    /**
+     * Sets leadsActionTime
+     *
+     * @param string|mixed $leadsActionTime leadsActionTime
+     *
+     * @return $this
+     */
+    public function setLeadsActionTime($leadsActionTime)
+    {
+        $this->container['leadsActionTime'] = $leadsActionTime;
+
+        return $this;
+    }
+
+    /**
      * Gets leadsName
      *
      * @return string|mixed
@@ -765,6 +861,270 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     public function setMemo($memo)
     {
         $this->container['memo'] = $memo;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatAgencyId
+     *
+     * @return string|mixed
+     */
+    public function getWechatAgencyId()
+    {
+        return $this->container['wechatAgencyId'];
+    }
+
+    /**
+     * Sets wechatAgencyId
+     *
+     * @param string|mixed $wechatAgencyId wechatAgencyId
+     *
+     * @return $this
+     */
+    public function setWechatAgencyId($wechatAgencyId)
+    {
+        $this->container['wechatAgencyId'] = $wechatAgencyId;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsAge
+     *
+     * @return string|mixed
+     */
+    public function getLeadsAge()
+    {
+        return $this->container['leadsAge'];
+    }
+
+    /**
+     * Sets leadsAge
+     *
+     * @param string|mixed $leadsAge leadsAge
+     *
+     * @return $this
+     */
+    public function setLeadsAge($leadsAge)
+    {
+        $this->container['leadsAge'] = $leadsAge;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsIdNumber
+     *
+     * @return string|mixed
+     */
+    public function getLeadsIdNumber()
+    {
+        return $this->container['leadsIdNumber'];
+    }
+
+    /**
+     * Sets leadsIdNumber
+     *
+     * @param string|mixed $leadsIdNumber leadsIdNumber
+     *
+     * @return $this
+     */
+    public function setLeadsIdNumber($leadsIdNumber)
+    {
+        $this->container['leadsIdNumber'] = $leadsIdNumber;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsNationality
+     *
+     * @return string|mixed
+     */
+    public function getLeadsNationality()
+    {
+        return $this->container['leadsNationality'];
+    }
+
+    /**
+     * Sets leadsNationality
+     *
+     * @param string|mixed $leadsNationality leadsNationality
+     *
+     * @return $this
+     */
+    public function setLeadsNationality($leadsNationality)
+    {
+        $this->container['leadsNationality'] = $leadsNationality;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsAddress
+     *
+     * @return string|mixed
+     */
+    public function getLeadsAddress()
+    {
+        return $this->container['leadsAddress'];
+    }
+
+    /**
+     * Sets leadsAddress
+     *
+     * @param string|mixed $leadsAddress leadsAddress
+     *
+     * @return $this
+     */
+    public function setLeadsAddress($leadsAddress)
+    {
+        $this->container['leadsAddress'] = $leadsAddress;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsCompany
+     *
+     * @return string|mixed
+     */
+    public function getLeadsCompany()
+    {
+        return $this->container['leadsCompany'];
+    }
+
+    /**
+     * Sets leadsCompany
+     *
+     * @param string|mixed $leadsCompany leadsCompany
+     *
+     * @return $this
+     */
+    public function setLeadsCompany($leadsCompany)
+    {
+        $this->container['leadsCompany'] = $leadsCompany;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsProfession
+     *
+     * @return string|mixed
+     */
+    public function getLeadsProfession()
+    {
+        return $this->container['leadsProfession'];
+    }
+
+    /**
+     * Sets leadsProfession
+     *
+     * @param string|mixed $leadsProfession leadsProfession
+     *
+     * @return $this
+     */
+    public function setLeadsProfession($leadsProfession)
+    {
+        $this->container['leadsProfession'] = $leadsProfession;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsWorkingYears
+     *
+     * @return string|mixed
+     */
+    public function getLeadsWorkingYears()
+    {
+        return $this->container['leadsWorkingYears'];
+    }
+
+    /**
+     * Sets leadsWorkingYears
+     *
+     * @param string|mixed $leadsWorkingYears leadsWorkingYears
+     *
+     * @return $this
+     */
+    public function setLeadsWorkingYears($leadsWorkingYears)
+    {
+        $this->container['leadsWorkingYears'] = $leadsWorkingYears;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsPageId
+     *
+     * @return string|mixed
+     */
+    public function getLeadsPageId()
+    {
+        return $this->container['leadsPageId'];
+    }
+
+    /**
+     * Sets leadsPageId
+     *
+     * @param string|mixed $leadsPageId leadsPageId
+     *
+     * @return $this
+     */
+    public function setLeadsPageId($leadsPageId)
+    {
+        $this->container['leadsPageId'] = $leadsPageId;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsPageName
+     *
+     * @return string|mixed
+     */
+    public function getLeadsPageName()
+    {
+        return $this->container['leadsPageName'];
+    }
+
+    /**
+     * Sets leadsPageName
+     *
+     * @param string|mixed $leadsPageName leadsPageName
+     *
+     * @return $this
+     */
+    public function setLeadsPageName($leadsPageName)
+    {
+        $this->container['leadsPageName'] = $leadsPageName;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsPageUrl
+     *
+     * @return string|mixed
+     */
+    public function getLeadsPageUrl()
+    {
+        return $this->container['leadsPageUrl'];
+    }
+
+    /**
+     * Sets leadsPageUrl
+     *
+     * @param string|mixed $leadsPageUrl leadsPageUrl
+     *
+     * @return $this
+     */
+    public function setLeadsPageUrl($leadsPageUrl)
+    {
+        $this->container['leadsPageUrl'] = $leadsPageUrl;
 
         return $this;
     }

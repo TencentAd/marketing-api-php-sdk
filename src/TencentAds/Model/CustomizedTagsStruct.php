@@ -1,6 +1,6 @@
 <?php
 /**
- * OuterCluesAddRequest
+ * CustomizedTagsStruct
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * OuterCluesAddRequest Class Doc Comment
+ * CustomizedTagsStruct Class Doc Comment
  *
  * @category Class
+ * @description 自定义标签集合
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class OuterCluesAddRequest implements ModelInterface, ArrayAccess
+class CustomizedTagsStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class OuterCluesAddRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'OuterCluesAddRequest';
+    protected static $swaggerModelName = 'customized_tags_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,10 +58,7 @@ class OuterCluesAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'matchType' => '\TencentAds\Model\LeadsMatchType',
-        'leadsInfoList' => '\TencentAds\Model\LeadsImportInfoStruct[]',
-        'customizedTags' => '\TencentAds\Model\CustomizedTagsStruct[]'
+        
     ];
 
     /**
@@ -69,10 +67,7 @@ class OuterCluesAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'matchType' => null,
-        'leadsInfoList' => null,
-        'customizedTags' => null
+        
     ];
 
     /**
@@ -102,10 +97,7 @@ class OuterCluesAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'matchType' => 'match_type',
-        'leadsInfoList' => 'leads_info_list',
-        'customizedTags' => 'customized_tags'
+        
     ];
 
     /**
@@ -114,10 +106,7 @@ class OuterCluesAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'matchType' => 'setMatchType',
-        'leadsInfoList' => 'setLeadsInfoList',
-        'customizedTags' => 'setCustomizedTags'
+        
     ];
 
     /**
@@ -126,10 +115,7 @@ class OuterCluesAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'matchType' => 'getMatchType',
-        'leadsInfoList' => 'getLeadsInfoList',
-        'customizedTags' => 'getCustomizedTags'
+        
     ];
 
     /**
@@ -192,10 +178,6 @@ class OuterCluesAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['matchType'] = isset($data['matchType']) ? $data['matchType'] : null;
-        $this->container['leadsInfoList'] = isset($data['leadsInfoList']) ? $data['leadsInfoList'] : null;
-        $this->container['customizedTags'] = isset($data['customizedTags']) ? $data['customizedTags'] : null;
     }
 
     /**
@@ -221,102 +203,6 @@ class OuterCluesAddRequest implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
-
-    /**
-     * Gets accountId
-     *
-     * @return int|mixed
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int|mixed $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
-
-        return $this;
-    }
-
-    /**
-     * Gets matchType
-     *
-     * @return \TencentAds\Model\LeadsMatchType|mixed
-     */
-    public function getMatchType()
-    {
-        return $this->container['matchType'];
-    }
-
-    /**
-     * Sets matchType
-     *
-     * @param \TencentAds\Model\LeadsMatchType|mixed $matchType matchType
-     *
-     * @return $this
-     */
-    public function setMatchType($matchType)
-    {
-        $this->container['matchType'] = $matchType;
-
-        return $this;
-    }
-
-    /**
-     * Gets leadsInfoList
-     *
-     * @return \TencentAds\Model\LeadsImportInfoStruct[]|mixed
-     */
-    public function getLeadsInfoList()
-    {
-        return $this->container['leadsInfoList'];
-    }
-
-    /**
-     * Sets leadsInfoList
-     *
-     * @param \TencentAds\Model\LeadsImportInfoStruct[]|mixed $leadsInfoList leadsInfoList
-     *
-     * @return $this
-     */
-    public function setLeadsInfoList($leadsInfoList)
-    {
-        $this->container['leadsInfoList'] = $leadsInfoList;
-
-        return $this;
-    }
-
-    /**
-     * Gets customizedTags
-     *
-     * @return \TencentAds\Model\CustomizedTagsStruct[]|mixed
-     */
-    public function getCustomizedTags()
-    {
-        return $this->container['customizedTags'];
-    }
-
-    /**
-     * Sets customizedTags
-     *
-     * @param \TencentAds\Model\CustomizedTagsStruct[]|mixed $customizedTags customizedTags
-     *
-     * @return $this
-     */
-    public function setCustomizedTags($customizedTags)
-    {
-        $this->container['customizedTags'] = $customizedTags;
-
-        return $this;
-    }
     /**
      * Returns true if offset exists. False otherwise.
      *

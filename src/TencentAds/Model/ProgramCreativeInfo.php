@@ -1,6 +1,6 @@
 <?php
 /**
- * OuterCluesAddRequest
+ * ProgramCreativeInfo
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * OuterCluesAddRequest Class Doc Comment
+ * ProgramCreativeInfo Class Doc Comment
  *
  * @category Class
+ * @description 动态创意（升级版）信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class OuterCluesAddRequest implements ModelInterface, ArrayAccess
+class ProgramCreativeInfo implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class OuterCluesAddRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'OuterCluesAddRequest';
+    protected static $swaggerModelName = 'program_creative_info';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,10 +58,8 @@ class OuterCluesAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'matchType' => '\TencentAds\Model\LeadsMatchType',
-        'leadsInfoList' => '\TencentAds\Model\LeadsImportInfoStruct[]',
-        'customizedTags' => '\TencentAds\Model\CustomizedTagsStruct[]'
+        'materialDeriveId' => 'int',
+        'bidMode' => '\TencentAds\Model\BidMode'
     ];
 
     /**
@@ -69,10 +68,8 @@ class OuterCluesAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'matchType' => null,
-        'leadsInfoList' => null,
-        'customizedTags' => null
+        'materialDeriveId' => 'int64',
+        'bidMode' => null
     ];
 
     /**
@@ -102,10 +99,8 @@ class OuterCluesAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'matchType' => 'match_type',
-        'leadsInfoList' => 'leads_info_list',
-        'customizedTags' => 'customized_tags'
+        'materialDeriveId' => 'material_derive_id',
+        'bidMode' => 'bid_mode'
     ];
 
     /**
@@ -114,10 +109,8 @@ class OuterCluesAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'matchType' => 'setMatchType',
-        'leadsInfoList' => 'setLeadsInfoList',
-        'customizedTags' => 'setCustomizedTags'
+        'materialDeriveId' => 'setMaterialDeriveId',
+        'bidMode' => 'setBidMode'
     ];
 
     /**
@@ -126,10 +119,8 @@ class OuterCluesAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'matchType' => 'getMatchType',
-        'leadsInfoList' => 'getLeadsInfoList',
-        'customizedTags' => 'getCustomizedTags'
+        'materialDeriveId' => 'getMaterialDeriveId',
+        'bidMode' => 'getBidMode'
     ];
 
     /**
@@ -192,10 +183,8 @@ class OuterCluesAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['matchType'] = isset($data['matchType']) ? $data['matchType'] : null;
-        $this->container['leadsInfoList'] = isset($data['leadsInfoList']) ? $data['leadsInfoList'] : null;
-        $this->container['customizedTags'] = isset($data['customizedTags']) ? $data['customizedTags'] : null;
+        $this->container['materialDeriveId'] = isset($data['materialDeriveId']) ? $data['materialDeriveId'] : null;
+        $this->container['bidMode'] = isset($data['bidMode']) ? $data['bidMode'] : null;
     }
 
     /**
@@ -223,97 +212,49 @@ class OuterCluesAddRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets accountId
+     * Gets materialDeriveId
      *
      * @return int|mixed
      */
-    public function getAccountId()
+    public function getMaterialDeriveId()
     {
-        return $this->container['accountId'];
+        return $this->container['materialDeriveId'];
     }
 
     /**
-     * Sets accountId
+     * Sets materialDeriveId
      *
-     * @param int|mixed $accountId accountId
+     * @param int|mixed $materialDeriveId materialDeriveId
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setMaterialDeriveId($materialDeriveId)
     {
-        $this->container['accountId'] = $accountId;
+        $this->container['materialDeriveId'] = $materialDeriveId;
 
         return $this;
     }
 
     /**
-     * Gets matchType
+     * Gets bidMode
      *
-     * @return \TencentAds\Model\LeadsMatchType|mixed
+     * @return \TencentAds\Model\BidMode|mixed
      */
-    public function getMatchType()
+    public function getBidMode()
     {
-        return $this->container['matchType'];
+        return $this->container['bidMode'];
     }
 
     /**
-     * Sets matchType
+     * Sets bidMode
      *
-     * @param \TencentAds\Model\LeadsMatchType|mixed $matchType matchType
+     * @param \TencentAds\Model\BidMode|mixed $bidMode bidMode
      *
      * @return $this
      */
-    public function setMatchType($matchType)
+    public function setBidMode($bidMode)
     {
-        $this->container['matchType'] = $matchType;
-
-        return $this;
-    }
-
-    /**
-     * Gets leadsInfoList
-     *
-     * @return \TencentAds\Model\LeadsImportInfoStruct[]|mixed
-     */
-    public function getLeadsInfoList()
-    {
-        return $this->container['leadsInfoList'];
-    }
-
-    /**
-     * Sets leadsInfoList
-     *
-     * @param \TencentAds\Model\LeadsImportInfoStruct[]|mixed $leadsInfoList leadsInfoList
-     *
-     * @return $this
-     */
-    public function setLeadsInfoList($leadsInfoList)
-    {
-        $this->container['leadsInfoList'] = $leadsInfoList;
-
-        return $this;
-    }
-
-    /**
-     * Gets customizedTags
-     *
-     * @return \TencentAds\Model\CustomizedTagsStruct[]|mixed
-     */
-    public function getCustomizedTags()
-    {
-        return $this->container['customizedTags'];
-    }
-
-    /**
-     * Sets customizedTags
-     *
-     * @param \TencentAds\Model\CustomizedTagsStruct[]|mixed $customizedTags customizedTags
-     *
-     * @return $this
-     */
-    public function setCustomizedTags($customizedTags)
-    {
-        $this->container['customizedTags'] = $customizedTags;
+        $this->container['bidMode'] = $bidMode;
 
         return $this;
     }
