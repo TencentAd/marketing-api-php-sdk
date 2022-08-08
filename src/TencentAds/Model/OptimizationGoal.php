@@ -117,6 +117,7 @@ class OptimizationGoal
     const SEVEN_DAY_ECOMMERCE_ORDER = 'OPTIMIZATIONGOAL_SEVEN_DAY_ECOMMERCE_ORDER';
     const ADD_WECHAT = 'OPTIMIZATIONGOAL_ADD_WECHAT';
     const WECOM_CONSULT = 'OPTIMIZATIONGOAL_WECOM_CONSULT';
+    const ADD_GROUP = 'OPTIMIZATIONGOAL_ADD_GROUP';
     
     /**
      * Gets allowable values of the enum
@@ -198,6 +199,7 @@ class OptimizationGoal
             self::SEVEN_DAY_ECOMMERCE_ORDER,
             self::ADD_WECHAT,
             self::WECOM_CONSULT,
+            self::ADD_GROUP,
         ];
     }
 }

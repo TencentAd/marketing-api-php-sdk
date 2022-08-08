@@ -109,6 +109,7 @@ class IntOptimizationGoal
     const SEVEN_DAY_ECOMMERCE_ORDER = 'OPTIMIZATIONGOAL_SEVEN_DAY_ECOMMERCE_ORDER';
     const ADD_WECHAT = 'OPTIMIZATIONGOAL_ADD_WECHAT';
     const WECOM_CONSULT = 'OPTIMIZATIONGOAL_WECOM_CONSULT';
+    const ADD_GROUP = 'OPTIMIZATIONGOAL_ADD_GROUP';
     const PAGE_EFFECTIVE_PHONE_CALL = 'OPTIMIZATIONGOAL_PAGE_EFFECTIVE_PHONE_CALL';
     
     /**
@@ -183,6 +184,7 @@ class IntOptimizationGoal
             self::SEVEN_DAY_ECOMMERCE_ORDER,
             self::ADD_WECHAT,
             self::WECOM_CONSULT,
+            self::ADD_GROUP,
             self::PAGE_EFFECTIVE_PHONE_CALL,
         ];
     }

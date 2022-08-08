@@ -352,6 +352,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoOuterPlay25Count' => 'int',
         'videoOuterPlay50Count' => 'int',
         'videoOuterPlay75Count' => 'int',
+        'videoOuterPlay90Count' => 'int',
         'videoOuterPlay95Count' => 'int',
         'videoOuterPlay100Count' => 'int',
         'videoOuterPlayTimeCount' => 'double',
@@ -1077,6 +1078,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoOuterPlay25Count' => 'int64',
         'videoOuterPlay50Count' => 'int64',
         'videoOuterPlay75Count' => 'int64',
+        'videoOuterPlay90Count' => 'int64',
         'videoOuterPlay95Count' => 'int64',
         'videoOuterPlay100Count' => 'int64',
         'videoOuterPlayTimeCount' => 'double',
@@ -1823,6 +1825,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoOuterPlay25Count' => 'video_outer_play25_count',
         'videoOuterPlay50Count' => 'video_outer_play50_count',
         'videoOuterPlay75Count' => 'video_outer_play75_count',
+        'videoOuterPlay90Count' => 'video_outer_play90_count',
         'videoOuterPlay95Count' => 'video_outer_play95_count',
         'videoOuterPlay100Count' => 'video_outer_play100_count',
         'videoOuterPlayTimeCount' => 'video_outer_play_time_count',
@@ -2548,6 +2551,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoOuterPlay25Count' => 'setVideoOuterPlay25Count',
         'videoOuterPlay50Count' => 'setVideoOuterPlay50Count',
         'videoOuterPlay75Count' => 'setVideoOuterPlay75Count',
+        'videoOuterPlay90Count' => 'setVideoOuterPlay90Count',
         'videoOuterPlay95Count' => 'setVideoOuterPlay95Count',
         'videoOuterPlay100Count' => 'setVideoOuterPlay100Count',
         'videoOuterPlayTimeCount' => 'setVideoOuterPlayTimeCount',
@@ -3273,6 +3277,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoOuterPlay25Count' => 'getVideoOuterPlay25Count',
         'videoOuterPlay50Count' => 'getVideoOuterPlay50Count',
         'videoOuterPlay75Count' => 'getVideoOuterPlay75Count',
+        'videoOuterPlay90Count' => 'getVideoOuterPlay90Count',
         'videoOuterPlay95Count' => 'getVideoOuterPlay95Count',
         'videoOuterPlay100Count' => 'getVideoOuterPlay100Count',
         'videoOuterPlayTimeCount' => 'getVideoOuterPlayTimeCount',
@@ -4052,6 +4057,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['videoOuterPlay25Count'] = isset($data['videoOuterPlay25Count']) ? $data['videoOuterPlay25Count'] : null;
         $this->container['videoOuterPlay50Count'] = isset($data['videoOuterPlay50Count']) ? $data['videoOuterPlay50Count'] : null;
         $this->container['videoOuterPlay75Count'] = isset($data['videoOuterPlay75Count']) ? $data['videoOuterPlay75Count'] : null;
+        $this->container['videoOuterPlay90Count'] = isset($data['videoOuterPlay90Count']) ? $data['videoOuterPlay90Count'] : null;
         $this->container['videoOuterPlay95Count'] = isset($data['videoOuterPlay95Count']) ? $data['videoOuterPlay95Count'] : null;
         $this->container['videoOuterPlay100Count'] = isset($data['videoOuterPlay100Count']) ? $data['videoOuterPlay100Count'] : null;
         $this->container['videoOuterPlayTimeCount'] = isset($data['videoOuterPlayTimeCount']) ? $data['videoOuterPlayTimeCount'] : null;
@@ -11553,6 +11559,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setVideoOuterPlay75Count($videoOuterPlay75Count)
     {
         $this->container['videoOuterPlay75Count'] = $videoOuterPlay75Count;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay90Count
+     *
+     * @return int|mixed
+     */
+    public function getVideoOuterPlay90Count()
+    {
+        return $this->container['videoOuterPlay90Count'];
+    }
+
+    /**
+     * Sets videoOuterPlay90Count
+     *
+     * @param int|mixed $videoOuterPlay90Count videoOuterPlay90Count
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay90Count($videoOuterPlay90Count)
+    {
+        $this->container['videoOuterPlay90Count'] = $videoOuterPlay90Count;
 
         return $this;
     }

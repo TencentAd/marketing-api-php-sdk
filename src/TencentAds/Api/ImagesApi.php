@@ -99,14 +99,17 @@ class ImagesApi
      * @param  string|mixed $bytes bytes (optional)
      * @param  string|mixed $imageUsage imageUsage (optional)
      * @param  string|mixed $description description (optional)
+     * @param  int|mixed $resizeWidth resizeWidth (optional)
+     * @param  int|mixed $resizeHeight resizeHeight (optional)
+     * @param  int|mixed $resizeFileSize resizeFileSize (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\ImagesAddResponse|mixed
      */
-    public function imagesAdd($accountId, $uploadType, $signature, $file = null, $bytes = null, $imageUsage = null, $description = null)
+    public function imagesAdd($accountId, $uploadType, $signature, $file = null, $bytes = null, $imageUsage = null, $description = null, $resizeWidth = null, $resizeHeight = null, $resizeFileSize = null)
     {
-        list($response) = $this->imagesAddWithHttpInfo($accountId, $uploadType, $signature, $file, $bytes, $imageUsage, $description);
+        list($response) = $this->imagesAddWithHttpInfo($accountId, $uploadType, $signature, $file, $bytes, $imageUsage, $description, $resizeWidth, $resizeHeight, $resizeFileSize);
         return $response;
     }
 
@@ -122,15 +125,18 @@ class ImagesApi
      * @param  string|mixed $bytes (optional)
      * @param  string|mixed $imageUsage (optional)
      * @param  string|mixed $description (optional)
+     * @param  int|mixed $resizeWidth (optional)
+     * @param  int|mixed $resizeHeight (optional)
+     * @param  int|mixed $resizeFileSize (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\ImagesAddResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function imagesAddWithHttpInfo($accountId, $uploadType, $signature, $file = null, $bytes = null, $imageUsage = null, $description = null)
+    public function imagesAddWithHttpInfo($accountId, $uploadType, $signature, $file = null, $bytes = null, $imageUsage = null, $description = null, $resizeWidth = null, $resizeHeight = null, $resizeFileSize = null)
     {
         $returnType = '\TencentAds\Model\ImagesAddResponse';
-        $request = $this->imagesAddRequest($accountId, $uploadType, $signature, $file, $bytes, $imageUsage, $description);
+        $request = $this->imagesAddRequest($accountId, $uploadType, $signature, $file, $bytes, $imageUsage, $description, $resizeWidth, $resizeHeight, $resizeFileSize);
 
         try {
             $options = $this->createHttpClientOption();
@@ -203,13 +209,16 @@ class ImagesApi
      * @param  string|mixed $bytes (optional)
      * @param  string|mixed $imageUsage (optional)
      * @param  string|mixed $description (optional)
+     * @param  int|mixed $resizeWidth (optional)
+     * @param  int|mixed $resizeHeight (optional)
+     * @param  int|mixed $resizeFileSize (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function imagesAddAsync($accountId, $uploadType, $signature, $file = null, $bytes = null, $imageUsage = null, $description = null)
+    public function imagesAddAsync($accountId, $uploadType, $signature, $file = null, $bytes = null, $imageUsage = null, $description = null, $resizeWidth = null, $resizeHeight = null, $resizeFileSize = null)
     {
-        return $this->imagesAddAsyncWithHttpInfo($accountId, $uploadType, $signature, $file, $bytes, $imageUsage, $description)
+        return $this->imagesAddAsyncWithHttpInfo($accountId, $uploadType, $signature, $file, $bytes, $imageUsage, $description, $resizeWidth, $resizeHeight, $resizeFileSize)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -229,14 +238,17 @@ class ImagesApi
      * @param  string|mixed $bytes (optional)
      * @param  string|mixed $imageUsage (optional)
      * @param  string|mixed $description (optional)
+     * @param  int|mixed $resizeWidth (optional)
+     * @param  int|mixed $resizeHeight (optional)
+     * @param  int|mixed $resizeFileSize (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function imagesAddAsyncWithHttpInfo($accountId, $uploadType, $signature, $file = null, $bytes = null, $imageUsage = null, $description = null)
+    public function imagesAddAsyncWithHttpInfo($accountId, $uploadType, $signature, $file = null, $bytes = null, $imageUsage = null, $description = null, $resizeWidth = null, $resizeHeight = null, $resizeFileSize = null)
     {
         $returnType = '\TencentAds\Model\ImagesAddResponse';
-        $request = $this->imagesAddRequest($accountId, $uploadType, $signature, $file, $bytes, $imageUsage, $description);
+        $request = $this->imagesAddRequest($accountId, $uploadType, $signature, $file, $bytes, $imageUsage, $description, $resizeWidth, $resizeHeight, $resizeFileSize);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -285,11 +297,14 @@ class ImagesApi
      * @param  string|mixed $bytes (optional)
      * @param  string|mixed $imageUsage (optional)
      * @param  string|mixed $description (optional)
+     * @param  int|mixed $resizeWidth (optional)
+     * @param  int|mixed $resizeHeight (optional)
+     * @param  int|mixed $resizeFileSize (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function imagesAddRequest($accountId, $uploadType, $signature, $file = null, $bytes = null, $imageUsage = null, $description = null)
+    protected function imagesAddRequest($accountId, $uploadType, $signature, $file = null, $bytes = null, $imageUsage = null, $description = null, $resizeWidth = null, $resizeHeight = null, $resizeFileSize = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -351,6 +366,18 @@ class ImagesApi
         // form params
         if ($description !== null) {
             $formParams['description'] = ObjectSerializer::toFormValue($description);
+        }
+        // form params
+        if ($resizeWidth !== null) {
+            $formParams['resize_width'] = ObjectSerializer::toFormValue($resizeWidth);
+        }
+        // form params
+        if ($resizeHeight !== null) {
+            $formParams['resize_height'] = ObjectSerializer::toFormValue($resizeHeight);
+        }
+        // form params
+        if ($resizeFileSize !== null) {
+            $formParams['resize_file_size'] = ObjectSerializer::toFormValue($resizeFileSize);
         }
         // body params
         $_tempBody = null;

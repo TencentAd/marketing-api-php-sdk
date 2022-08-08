@@ -45,7 +45,10 @@ class ImagesApiContainer extends ApiContainer
             $bytes = isset($params['bytes']) ? $params['bytes'] : null;
             $imageUsage = isset($params['image_usage']) ? $params['image_usage'] : null;
             $description = isset($params['description']) ? $params['description'] : null;
-            $response = $this->apiInstance->imagesAdd($accountId, $uploadType, $signature, $file, $bytes, $imageUsage, $description);
+            $resizeWidth = isset($params['resize_width']) ? $params['resize_width'] : null;
+            $resizeHeight = isset($params['resize_height']) ? $params['resize_height'] : null;
+            $resizeFileSize = isset($params['resize_file_size']) ? $params['resize_file_size'] : null;
+            $response = $this->apiInstance->imagesAdd($accountId, $uploadType, $signature, $file, $bytes, $imageUsage, $description, $resizeWidth, $resizeHeight, $resizeFileSize);
             return $this->handleResponse($response);
         });
     }
@@ -67,7 +70,10 @@ class ImagesApiContainer extends ApiContainer
             $bytes = isset($params['bytes']) ? $params['bytes'] : null;
             $imageUsage = isset($params['image_usage']) ? $params['image_usage'] : null;
             $description = isset($params['description']) ? $params['description'] : null;
-            $response = $this->apiInstance->imagesAddAsync($accountId, $uploadType, $signature, $file, $bytes, $imageUsage, $description);
+            $resizeWidth = isset($params['resize_width']) ? $params['resize_width'] : null;
+            $resizeHeight = isset($params['resize_height']) ? $params['resize_height'] : null;
+            $resizeFileSize = isset($params['resize_file_size']) ? $params['resize_file_size'] : null;
+            $response = $this->apiInstance->imagesAddAsync($accountId, $uploadType, $signature, $file, $bytes, $imageUsage, $description, $resizeWidth, $resizeHeight, $resizeFileSize);
             return $response;
         });
     }
