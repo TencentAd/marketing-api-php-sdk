@@ -59,7 +59,8 @@ class AdCreativeWechatChannelsSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'exportId' => 'string',
-        'username' => 'string'
+        'username' => 'string',
+        'livePromotedType' => '\TencentAds\Model\LivePromotedType'
     ];
 
     /**
@@ -69,7 +70,8 @@ class AdCreativeWechatChannelsSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'exportId' => null,
-        'username' => null
+        'username' => null,
+        'livePromotedType' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class AdCreativeWechatChannelsSpec implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'exportId' => 'export_id',
-        'username' => 'username'
+        'username' => 'username',
+        'livePromotedType' => 'live_promoted_type'
     ];
 
     /**
@@ -110,7 +113,8 @@ class AdCreativeWechatChannelsSpec implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'exportId' => 'setExportId',
-        'username' => 'setUsername'
+        'username' => 'setUsername',
+        'livePromotedType' => 'setLivePromotedType'
     ];
 
     /**
@@ -120,7 +124,8 @@ class AdCreativeWechatChannelsSpec implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'exportId' => 'getExportId',
-        'username' => 'getUsername'
+        'username' => 'getUsername',
+        'livePromotedType' => 'getLivePromotedType'
     ];
 
     /**
@@ -185,6 +190,7 @@ class AdCreativeWechatChannelsSpec implements ModelInterface, ArrayAccess
     {
         $this->container['exportId'] = isset($data['exportId']) ? $data['exportId'] : null;
         $this->container['username'] = isset($data['username']) ? $data['username'] : null;
+        $this->container['livePromotedType'] = isset($data['livePromotedType']) ? $data['livePromotedType'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class AdCreativeWechatChannelsSpec implements ModelInterface, ArrayAccess
     public function setUsername($username)
     {
         $this->container['username'] = $username;
+
+        return $this;
+    }
+
+    /**
+     * Gets livePromotedType
+     *
+     * @return \TencentAds\Model\LivePromotedType|mixed
+     */
+    public function getLivePromotedType()
+    {
+        return $this->container['livePromotedType'];
+    }
+
+    /**
+     * Sets livePromotedType
+     *
+     * @param \TencentAds\Model\LivePromotedType|mixed $livePromotedType livePromotedType
+     *
+     * @return $this
+     */
+    public function setLivePromotedType($livePromotedType)
+    {
+        $this->container['livePromotedType'] = $livePromotedType;
 
         return $this;
     }
