@@ -58,7 +58,8 @@ class CustomizedTagsStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        
+        'tagGroupName' => 'string',
+        'tagNameList' => 'string[]'
     ];
 
     /**
@@ -67,7 +68,8 @@ class CustomizedTagsStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        
+        'tagGroupName' => null,
+        'tagNameList' => null
     ];
 
     /**
@@ -97,7 +99,8 @@ class CustomizedTagsStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        
+        'tagGroupName' => 'tag_group_name',
+        'tagNameList' => 'tag_name_list'
     ];
 
     /**
@@ -106,7 +109,8 @@ class CustomizedTagsStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        
+        'tagGroupName' => 'setTagGroupName',
+        'tagNameList' => 'setTagNameList'
     ];
 
     /**
@@ -115,7 +119,8 @@ class CustomizedTagsStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        
+        'tagGroupName' => 'getTagGroupName',
+        'tagNameList' => 'getTagNameList'
     ];
 
     /**
@@ -178,6 +183,8 @@ class CustomizedTagsStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['tagGroupName'] = isset($data['tagGroupName']) ? $data['tagGroupName'] : null;
+        $this->container['tagNameList'] = isset($data['tagNameList']) ? $data['tagNameList'] : null;
     }
 
     /**
@@ -203,6 +210,54 @@ class CustomizedTagsStruct implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets tagGroupName
+     *
+     * @return string|mixed
+     */
+    public function getTagGroupName()
+    {
+        return $this->container['tagGroupName'];
+    }
+
+    /**
+     * Sets tagGroupName
+     *
+     * @param string|mixed $tagGroupName tagGroupName
+     *
+     * @return $this
+     */
+    public function setTagGroupName($tagGroupName)
+    {
+        $this->container['tagGroupName'] = $tagGroupName;
+
+        return $this;
+    }
+
+    /**
+     * Gets tagNameList
+     *
+     * @return string[]|mixed
+     */
+    public function getTagNameList()
+    {
+        return $this->container['tagNameList'];
+    }
+
+    /**
+     * Sets tagNameList
+     *
+     * @param string[]|mixed $tagNameList tagNameList
+     *
+     * @return $this
+     */
+    public function setTagNameList($tagNameList)
+    {
+        $this->container['tagNameList'] = $tagNameList;
+
+        return $this;
+    }
     /**
      * Returns true if offset exists. False otherwise.
      *
