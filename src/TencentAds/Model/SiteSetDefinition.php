@@ -88,6 +88,7 @@ class SiteSetDefinition
     const OVERSEAS_UNION = 'SITE_SET_OVERSEAS_UNION';
     const WECHAT_SEARCH = 'SITE_SET_WECHAT_SEARCH';
     const WECHAT_PLUGIN = 'SITE_SET_WECHAT_PLUGIN';
+    const QBSEARCH = 'SITE_SET_QBSEARCH';
     
     /**
      * Gets allowable values of the enum
@@ -140,6 +141,7 @@ class SiteSetDefinition
             self::OVERSEAS_UNION,
             self::WECHAT_SEARCH,
             self::WECHAT_PLUGIN,
+            self::QBSEARCH,
         ];
     }
 }

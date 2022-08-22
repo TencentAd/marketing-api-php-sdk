@@ -52,6 +52,7 @@ class TaskScope
     const AD = 'TASK_SCOPE_AD';
     const ADCREATIVE = 'TASK_SCOPE_ADCREATIVE';
     const PROJECT = 'TASK_SCOPE_PROJECT';
+    const BIDWORD = 'TASK_SCOPE_BIDWORD';
     
     /**
      * Gets allowable values of the enum
@@ -68,6 +69,7 @@ class TaskScope
             self::AD,
             self::ADCREATIVE,
             self::PROJECT,
+            self::BIDWORD,
         ];
     }
 }
