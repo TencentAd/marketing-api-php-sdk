@@ -527,6 +527,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'int',
         'stayPay15dPv' => 'int',
         'stayPay30dPv' => 'int',
+        'liveStreamCrtClickCnt' => 'int',
         'liveStreamCommodityShopBagClkPv' => 'int',
         'liveStreamCommodityShopListExpPv' => 'int',
         'liveStreamCommodityBubbleClkPv' => 'int',
@@ -1226,6 +1227,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'int64',
         'stayPay15dPv' => 'int64',
         'stayPay30dPv' => 'int64',
+        'liveStreamCrtClickCnt' => 'int64',
         'liveStreamCommodityShopBagClkPv' => 'int64',
         'liveStreamCommodityShopListExpPv' => 'int64',
         'liveStreamCommodityBubbleClkPv' => 'int64',
@@ -1946,6 +1948,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'stay_pay_7d_pv',
         'stayPay15dPv' => 'stay_pay_15d_pv',
         'stayPay30dPv' => 'stay_pay_30d_pv',
+        'liveStreamCrtClickCnt' => 'live_stream_crt_click_cnt',
         'liveStreamCommodityShopBagClkPv' => 'live_stream_commodity_shop_bag_clk_pv',
         'liveStreamCommodityShopListExpPv' => 'live_stream_commodity_shop_list_exp_pv',
         'liveStreamCommodityBubbleClkPv' => 'live_stream_commodity_bubble_clk_pv',
@@ -2645,6 +2648,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'setStayPay7dPv',
         'stayPay15dPv' => 'setStayPay15dPv',
         'stayPay30dPv' => 'setStayPay30dPv',
+        'liveStreamCrtClickCnt' => 'setLiveStreamCrtClickCnt',
         'liveStreamCommodityShopBagClkPv' => 'setLiveStreamCommodityShopBagClkPv',
         'liveStreamCommodityShopListExpPv' => 'setLiveStreamCommodityShopListExpPv',
         'liveStreamCommodityBubbleClkPv' => 'setLiveStreamCommodityBubbleClkPv',
@@ -3344,6 +3348,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'getStayPay7dPv',
         'stayPay15dPv' => 'getStayPay15dPv',
         'stayPay30dPv' => 'getStayPay30dPv',
+        'liveStreamCrtClickCnt' => 'getLiveStreamCrtClickCnt',
         'liveStreamCommodityShopBagClkPv' => 'getLiveStreamCommodityShopBagClkPv',
         'liveStreamCommodityShopListExpPv' => 'getLiveStreamCommodityShopListExpPv',
         'liveStreamCommodityBubbleClkPv' => 'getLiveStreamCommodityBubbleClkPv',
@@ -4097,6 +4102,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['stayPay7dPv'] = isset($data['stayPay7dPv']) ? $data['stayPay7dPv'] : null;
         $this->container['stayPay15dPv'] = isset($data['stayPay15dPv']) ? $data['stayPay15dPv'] : null;
         $this->container['stayPay30dPv'] = isset($data['stayPay30dPv']) ? $data['stayPay30dPv'] : null;
+        $this->container['liveStreamCrtClickCnt'] = isset($data['liveStreamCrtClickCnt']) ? $data['liveStreamCrtClickCnt'] : null;
         $this->container['liveStreamCommodityShopBagClkPv'] = isset($data['liveStreamCommodityShopBagClkPv']) ? $data['liveStreamCommodityShopBagClkPv'] : null;
         $this->container['liveStreamCommodityShopListExpPv'] = isset($data['liveStreamCommodityShopListExpPv']) ? $data['liveStreamCommodityShopListExpPv'] : null;
         $this->container['liveStreamCommodityBubbleClkPv'] = isset($data['liveStreamCommodityBubbleClkPv']) ? $data['liveStreamCommodityBubbleClkPv'] : null;
@@ -15597,6 +15603,30 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setStayPay30dPv($stayPay30dPv)
     {
         $this->container['stayPay30dPv'] = $stayPay30dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveStreamCrtClickCnt
+     *
+     * @return int|mixed
+     */
+    public function getLiveStreamCrtClickCnt()
+    {
+        return $this->container['liveStreamCrtClickCnt'];
+    }
+
+    /**
+     * Sets liveStreamCrtClickCnt
+     *
+     * @param int|mixed $liveStreamCrtClickCnt liveStreamCrtClickCnt
+     *
+     * @return $this
+     */
+    public function setLiveStreamCrtClickCnt($liveStreamCrtClickCnt)
+    {
+        $this->container['liveStreamCrtClickCnt'] = $liveStreamCrtClickCnt;
 
         return $this;
     }

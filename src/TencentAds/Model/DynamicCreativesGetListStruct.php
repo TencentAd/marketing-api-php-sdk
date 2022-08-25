@@ -88,6 +88,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'creativeTemplateVersionType' => '\TencentAds\Model\CreativeTemplateVersionType',
         'unionMarketSpec' => '\TencentAds\Model\UnionMarketSpec',
         'creativeTemplateCategory' => 'string',
+        'autoDerivedProgramCreativeSwitch' => 'bool',
         'programCreativeInfo' => '\TencentAds\Model\ProgramCreativeInfo',
         'dynamicCreativeType' => '\TencentAds\Model\DynamicCreativeType',
         'headClickType' => '\TencentAds\Model\HeadClickType',
@@ -130,6 +131,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'creativeTemplateVersionType' => null,
         'unionMarketSpec' => null,
         'creativeTemplateCategory' => null,
+        'autoDerivedProgramCreativeSwitch' => null,
         'programCreativeInfo' => null,
         'dynamicCreativeType' => null,
         'headClickType' => null,
@@ -193,6 +195,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'creativeTemplateVersionType' => 'creative_template_version_type',
         'unionMarketSpec' => 'union_market_spec',
         'creativeTemplateCategory' => 'creative_template_category',
+        'autoDerivedProgramCreativeSwitch' => 'auto_derived_program_creative_switch',
         'programCreativeInfo' => 'program_creative_info',
         'dynamicCreativeType' => 'dynamic_creative_type',
         'headClickType' => 'head_click_type',
@@ -235,6 +238,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'creativeTemplateVersionType' => 'setCreativeTemplateVersionType',
         'unionMarketSpec' => 'setUnionMarketSpec',
         'creativeTemplateCategory' => 'setCreativeTemplateCategory',
+        'autoDerivedProgramCreativeSwitch' => 'setAutoDerivedProgramCreativeSwitch',
         'programCreativeInfo' => 'setProgramCreativeInfo',
         'dynamicCreativeType' => 'setDynamicCreativeType',
         'headClickType' => 'setHeadClickType',
@@ -277,6 +281,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'creativeTemplateVersionType' => 'getCreativeTemplateVersionType',
         'unionMarketSpec' => 'getUnionMarketSpec',
         'creativeTemplateCategory' => 'getCreativeTemplateCategory',
+        'autoDerivedProgramCreativeSwitch' => 'getAutoDerivedProgramCreativeSwitch',
         'programCreativeInfo' => 'getProgramCreativeInfo',
         'dynamicCreativeType' => 'getDynamicCreativeType',
         'headClickType' => 'getHeadClickType',
@@ -373,6 +378,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['creativeTemplateVersionType'] = isset($data['creativeTemplateVersionType']) ? $data['creativeTemplateVersionType'] : null;
         $this->container['unionMarketSpec'] = isset($data['unionMarketSpec']) ? $data['unionMarketSpec'] : null;
         $this->container['creativeTemplateCategory'] = isset($data['creativeTemplateCategory']) ? $data['creativeTemplateCategory'] : null;
+        $this->container['autoDerivedProgramCreativeSwitch'] = isset($data['autoDerivedProgramCreativeSwitch']) ? $data['autoDerivedProgramCreativeSwitch'] : null;
         $this->container['programCreativeInfo'] = isset($data['programCreativeInfo']) ? $data['programCreativeInfo'] : null;
         $this->container['dynamicCreativeType'] = isset($data['dynamicCreativeType']) ? $data['dynamicCreativeType'] : null;
         $this->container['headClickType'] = isset($data['headClickType']) ? $data['headClickType'] : null;
@@ -1119,6 +1125,30 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setCreativeTemplateCategory($creativeTemplateCategory)
     {
         $this->container['creativeTemplateCategory'] = $creativeTemplateCategory;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoDerivedProgramCreativeSwitch
+     *
+     * @return bool|mixed
+     */
+    public function getAutoDerivedProgramCreativeSwitch()
+    {
+        return $this->container['autoDerivedProgramCreativeSwitch'];
+    }
+
+    /**
+     * Sets autoDerivedProgramCreativeSwitch
+     *
+     * @param bool|mixed $autoDerivedProgramCreativeSwitch autoDerivedProgramCreativeSwitch
+     *
+     * @return $this
+     */
+    public function setAutoDerivedProgramCreativeSwitch($autoDerivedProgramCreativeSwitch)
+    {
+        $this->container['autoDerivedProgramCreativeSwitch'] = $autoDerivedProgramCreativeSwitch;
 
         return $this;
     }

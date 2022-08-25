@@ -90,6 +90,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'bool',
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
         'unionMarketSpec' => '\TencentAds\Model\UnionMarketSpec',
+        'autoDerivedProgramCreativeSwitch' => 'bool',
         'headClickType' => '\TencentAds\Model\HeadClickType',
         'headClickSpec' => '\TencentAds\Model\HeadClickSpec',
         'accountId' => 'int'
@@ -134,6 +135,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => null,
         'appGiftPackCode' => null,
         'unionMarketSpec' => null,
+        'autoDerivedProgramCreativeSwitch' => null,
         'headClickType' => null,
         'headClickSpec' => null,
         'accountId' => 'int64'
@@ -199,6 +201,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'countdown_switch',
         'appGiftPackCode' => 'app_gift_pack_code',
         'unionMarketSpec' => 'union_market_spec',
+        'autoDerivedProgramCreativeSwitch' => 'auto_derived_program_creative_switch',
         'headClickType' => 'head_click_type',
         'headClickSpec' => 'head_click_spec',
         'accountId' => 'account_id'
@@ -243,6 +246,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'setCountdownSwitch',
         'appGiftPackCode' => 'setAppGiftPackCode',
         'unionMarketSpec' => 'setUnionMarketSpec',
+        'autoDerivedProgramCreativeSwitch' => 'setAutoDerivedProgramCreativeSwitch',
         'headClickType' => 'setHeadClickType',
         'headClickSpec' => 'setHeadClickSpec',
         'accountId' => 'setAccountId'
@@ -287,6 +291,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'getCountdownSwitch',
         'appGiftPackCode' => 'getAppGiftPackCode',
         'unionMarketSpec' => 'getUnionMarketSpec',
+        'autoDerivedProgramCreativeSwitch' => 'getAutoDerivedProgramCreativeSwitch',
         'headClickType' => 'getHeadClickType',
         'headClickSpec' => 'getHeadClickSpec',
         'accountId' => 'getAccountId'
@@ -385,6 +390,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['countdownSwitch'] = isset($data['countdownSwitch']) ? $data['countdownSwitch'] : null;
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
         $this->container['unionMarketSpec'] = isset($data['unionMarketSpec']) ? $data['unionMarketSpec'] : null;
+        $this->container['autoDerivedProgramCreativeSwitch'] = isset($data['autoDerivedProgramCreativeSwitch']) ? $data['autoDerivedProgramCreativeSwitch'] : null;
         $this->container['headClickType'] = isset($data['headClickType']) ? $data['headClickType'] : null;
         $this->container['headClickSpec'] = isset($data['headClickSpec']) ? $data['headClickSpec'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
@@ -1202,6 +1208,30 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setUnionMarketSpec($unionMarketSpec)
     {
         $this->container['unionMarketSpec'] = $unionMarketSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoDerivedProgramCreativeSwitch
+     *
+     * @return bool|mixed
+     */
+    public function getAutoDerivedProgramCreativeSwitch()
+    {
+        return $this->container['autoDerivedProgramCreativeSwitch'];
+    }
+
+    /**
+     * Sets autoDerivedProgramCreativeSwitch
+     *
+     * @param bool|mixed $autoDerivedProgramCreativeSwitch autoDerivedProgramCreativeSwitch
+     *
+     * @return $this
+     */
+    public function setAutoDerivedProgramCreativeSwitch($autoDerivedProgramCreativeSwitch)
+    {
+        $this->container['autoDerivedProgramCreativeSwitch'] = $autoDerivedProgramCreativeSwitch;
 
         return $this;
     }

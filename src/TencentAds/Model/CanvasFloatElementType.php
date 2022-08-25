@@ -45,6 +45,9 @@ class CanvasFloatElementType
      * Possible values of this enum
      */
     const APP_DOWNLOAD = 'APP_DOWNLOAD';
+    const WEAPP = 'WEAPP';
+    const GH = 'GH';
+    const ENTERPRISE_WX = 'ENTERPRISE_WX';
     
     /**
      * Gets allowable values of the enum
@@ -54,6 +57,9 @@ class CanvasFloatElementType
     {
         return [
             self::APP_DOWNLOAD,
+            self::WEAPP,
+            self::GH,
+            self::ENTERPRISE_WX,
         ];
     }
 }

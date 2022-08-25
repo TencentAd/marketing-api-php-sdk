@@ -68,7 +68,10 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
         'disappearType' => 'int',
         'forbidPageList' => 'int[]',
         'elementType' => '\TencentAds\Model\CanvasFloatElementType',
-        'appDownloadSpec' => '\TencentAds\Model\FloatAppDownloadSpec'
+        'appDownloadSpec' => '\TencentAds\Model\FloatAppDownloadSpec',
+        'weappSpec' => '\TencentAds\Model\FloatWeappSpec',
+        'ghSpec' => '\TencentAds\Model\FloatGhSpec',
+        'enterpriseWxSpec' => '\TencentAds\Model\FloatEnterpriseWxSpec'
     ];
 
     /**
@@ -87,7 +90,10 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
         'disappearType' => 'int64',
         'forbidPageList' => 'int64',
         'elementType' => null,
-        'appDownloadSpec' => null
+        'appDownloadSpec' => null,
+        'weappSpec' => null,
+        'ghSpec' => null,
+        'enterpriseWxSpec' => null
     ];
 
     /**
@@ -127,7 +133,10 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
         'disappearType' => 'disappear_type',
         'forbidPageList' => 'forbid_page_list',
         'elementType' => 'element_type',
-        'appDownloadSpec' => 'app_download_spec'
+        'appDownloadSpec' => 'app_download_spec',
+        'weappSpec' => 'weapp_spec',
+        'ghSpec' => 'gh_spec',
+        'enterpriseWxSpec' => 'enterprise_wx_spec'
     ];
 
     /**
@@ -146,7 +155,10 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
         'disappearType' => 'setDisappearType',
         'forbidPageList' => 'setForbidPageList',
         'elementType' => 'setElementType',
-        'appDownloadSpec' => 'setAppDownloadSpec'
+        'appDownloadSpec' => 'setAppDownloadSpec',
+        'weappSpec' => 'setWeappSpec',
+        'ghSpec' => 'setGhSpec',
+        'enterpriseWxSpec' => 'setEnterpriseWxSpec'
     ];
 
     /**
@@ -165,7 +177,10 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
         'disappearType' => 'getDisappearType',
         'forbidPageList' => 'getForbidPageList',
         'elementType' => 'getElementType',
-        'appDownloadSpec' => 'getAppDownloadSpec'
+        'appDownloadSpec' => 'getAppDownloadSpec',
+        'weappSpec' => 'getWeappSpec',
+        'ghSpec' => 'getGhSpec',
+        'enterpriseWxSpec' => 'getEnterpriseWxSpec'
     ];
 
     /**
@@ -239,6 +254,9 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
         $this->container['forbidPageList'] = isset($data['forbidPageList']) ? $data['forbidPageList'] : null;
         $this->container['elementType'] = isset($data['elementType']) ? $data['elementType'] : null;
         $this->container['appDownloadSpec'] = isset($data['appDownloadSpec']) ? $data['appDownloadSpec'] : null;
+        $this->container['weappSpec'] = isset($data['weappSpec']) ? $data['weappSpec'] : null;
+        $this->container['ghSpec'] = isset($data['ghSpec']) ? $data['ghSpec'] : null;
+        $this->container['enterpriseWxSpec'] = isset($data['enterpriseWxSpec']) ? $data['enterpriseWxSpec'] : null;
     }
 
     /**
@@ -525,6 +543,78 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     public function setAppDownloadSpec($appDownloadSpec)
     {
         $this->container['appDownloadSpec'] = $appDownloadSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets weappSpec
+     *
+     * @return \TencentAds\Model\FloatWeappSpec|mixed
+     */
+    public function getWeappSpec()
+    {
+        return $this->container['weappSpec'];
+    }
+
+    /**
+     * Sets weappSpec
+     *
+     * @param \TencentAds\Model\FloatWeappSpec|mixed $weappSpec weappSpec
+     *
+     * @return $this
+     */
+    public function setWeappSpec($weappSpec)
+    {
+        $this->container['weappSpec'] = $weappSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets ghSpec
+     *
+     * @return \TencentAds\Model\FloatGhSpec|mixed
+     */
+    public function getGhSpec()
+    {
+        return $this->container['ghSpec'];
+    }
+
+    /**
+     * Sets ghSpec
+     *
+     * @param \TencentAds\Model\FloatGhSpec|mixed $ghSpec ghSpec
+     *
+     * @return $this
+     */
+    public function setGhSpec($ghSpec)
+    {
+        $this->container['ghSpec'] = $ghSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets enterpriseWxSpec
+     *
+     * @return \TencentAds\Model\FloatEnterpriseWxSpec|mixed
+     */
+    public function getEnterpriseWxSpec()
+    {
+        return $this->container['enterpriseWxSpec'];
+    }
+
+    /**
+     * Sets enterpriseWxSpec
+     *
+     * @param \TencentAds\Model\FloatEnterpriseWxSpec|mixed $enterpriseWxSpec enterpriseWxSpec
+     *
+     * @return $this
+     */
+    public function setEnterpriseWxSpec($enterpriseWxSpec)
+    {
+        $this->container['enterpriseWxSpec'] = $enterpriseWxSpec;
 
         return $this;
     }

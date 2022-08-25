@@ -464,6 +464,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoLiveShareCount' => 'int',
         'videoLiveCickCommodityCount' => 'int',
         'videoLiveExpUserCount' => 'int',
+        'liveStreamExpUv' => 'int',
         'videoLiveHeartUserCount' => 'int',
         'videoLiveCommentUserCount' => 'int',
         'videoLiveShareUserCount' => 'int',
@@ -529,6 +530,8 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'int',
         'stayPay15dPv' => 'int',
         'stayPay30dPv' => 'int',
+        'liveStreamCrtClickCnt' => 'int',
+        'liveStreamAvgTime' => 'double',
         'liveStreamCommodityShopBagClkPv' => 'int',
         'liveStreamCommodityShopListExpPv' => 'int',
         'liveStreamCommodityBubbleClkPv' => 'int',
@@ -1190,6 +1193,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoLiveShareCount' => 'int64',
         'videoLiveCickCommodityCount' => 'int64',
         'videoLiveExpUserCount' => 'int64',
+        'liveStreamExpUv' => 'int64',
         'videoLiveHeartUserCount' => 'int64',
         'videoLiveCommentUserCount' => 'int64',
         'videoLiveShareUserCount' => 'int64',
@@ -1255,6 +1259,8 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'int64',
         'stayPay15dPv' => 'int64',
         'stayPay30dPv' => 'int64',
+        'liveStreamCrtClickCnt' => 'int64',
+        'liveStreamAvgTime' => 'double',
         'liveStreamCommodityShopBagClkPv' => 'int64',
         'liveStreamCommodityShopListExpPv' => 'int64',
         'liveStreamCommodityBubbleClkPv' => 'int64',
@@ -1937,6 +1943,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoLiveShareCount' => 'video_live_share_count',
         'videoLiveCickCommodityCount' => 'video_live_cick_commodity_count',
         'videoLiveExpUserCount' => 'video_live_exp_user_count',
+        'liveStreamExpUv' => 'live_stream_exp_uv',
         'videoLiveHeartUserCount' => 'video_live_heart_user_count',
         'videoLiveCommentUserCount' => 'video_live_comment_user_count',
         'videoLiveShareUserCount' => 'video_live_share_user_count',
@@ -2002,6 +2009,8 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'stay_pay_7d_pv',
         'stayPay15dPv' => 'stay_pay_15d_pv',
         'stayPay30dPv' => 'stay_pay_30d_pv',
+        'liveStreamCrtClickCnt' => 'live_stream_crt_click_cnt',
+        'liveStreamAvgTime' => 'live_stream_avg_time',
         'liveStreamCommodityShopBagClkPv' => 'live_stream_commodity_shop_bag_clk_pv',
         'liveStreamCommodityShopListExpPv' => 'live_stream_commodity_shop_list_exp_pv',
         'liveStreamCommodityBubbleClkPv' => 'live_stream_commodity_bubble_clk_pv',
@@ -2663,6 +2672,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoLiveShareCount' => 'setVideoLiveShareCount',
         'videoLiveCickCommodityCount' => 'setVideoLiveCickCommodityCount',
         'videoLiveExpUserCount' => 'setVideoLiveExpUserCount',
+        'liveStreamExpUv' => 'setLiveStreamExpUv',
         'videoLiveHeartUserCount' => 'setVideoLiveHeartUserCount',
         'videoLiveCommentUserCount' => 'setVideoLiveCommentUserCount',
         'videoLiveShareUserCount' => 'setVideoLiveShareUserCount',
@@ -2728,6 +2738,8 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'setStayPay7dPv',
         'stayPay15dPv' => 'setStayPay15dPv',
         'stayPay30dPv' => 'setStayPay30dPv',
+        'liveStreamCrtClickCnt' => 'setLiveStreamCrtClickCnt',
+        'liveStreamAvgTime' => 'setLiveStreamAvgTime',
         'liveStreamCommodityShopBagClkPv' => 'setLiveStreamCommodityShopBagClkPv',
         'liveStreamCommodityShopListExpPv' => 'setLiveStreamCommodityShopListExpPv',
         'liveStreamCommodityBubbleClkPv' => 'setLiveStreamCommodityBubbleClkPv',
@@ -3389,6 +3401,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoLiveShareCount' => 'getVideoLiveShareCount',
         'videoLiveCickCommodityCount' => 'getVideoLiveCickCommodityCount',
         'videoLiveExpUserCount' => 'getVideoLiveExpUserCount',
+        'liveStreamExpUv' => 'getLiveStreamExpUv',
         'videoLiveHeartUserCount' => 'getVideoLiveHeartUserCount',
         'videoLiveCommentUserCount' => 'getVideoLiveCommentUserCount',
         'videoLiveShareUserCount' => 'getVideoLiveShareUserCount',
@@ -3454,6 +3467,8 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'getStayPay7dPv',
         'stayPay15dPv' => 'getStayPay15dPv',
         'stayPay30dPv' => 'getStayPay30dPv',
+        'liveStreamCrtClickCnt' => 'getLiveStreamCrtClickCnt',
+        'liveStreamAvgTime' => 'getLiveStreamAvgTime',
         'liveStreamCommodityShopBagClkPv' => 'getLiveStreamCommodityShopBagClkPv',
         'liveStreamCommodityShopListExpPv' => 'getLiveStreamCommodityShopListExpPv',
         'liveStreamCommodityBubbleClkPv' => 'getLiveStreamCommodityBubbleClkPv',
@@ -4169,6 +4184,7 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['videoLiveShareCount'] = isset($data['videoLiveShareCount']) ? $data['videoLiveShareCount'] : null;
         $this->container['videoLiveCickCommodityCount'] = isset($data['videoLiveCickCommodityCount']) ? $data['videoLiveCickCommodityCount'] : null;
         $this->container['videoLiveExpUserCount'] = isset($data['videoLiveExpUserCount']) ? $data['videoLiveExpUserCount'] : null;
+        $this->container['liveStreamExpUv'] = isset($data['liveStreamExpUv']) ? $data['liveStreamExpUv'] : null;
         $this->container['videoLiveHeartUserCount'] = isset($data['videoLiveHeartUserCount']) ? $data['videoLiveHeartUserCount'] : null;
         $this->container['videoLiveCommentUserCount'] = isset($data['videoLiveCommentUserCount']) ? $data['videoLiveCommentUserCount'] : null;
         $this->container['videoLiveShareUserCount'] = isset($data['videoLiveShareUserCount']) ? $data['videoLiveShareUserCount'] : null;
@@ -4234,6 +4250,8 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['stayPay7dPv'] = isset($data['stayPay7dPv']) ? $data['stayPay7dPv'] : null;
         $this->container['stayPay15dPv'] = isset($data['stayPay15dPv']) ? $data['stayPay15dPv'] : null;
         $this->container['stayPay30dPv'] = isset($data['stayPay30dPv']) ? $data['stayPay30dPv'] : null;
+        $this->container['liveStreamCrtClickCnt'] = isset($data['liveStreamCrtClickCnt']) ? $data['liveStreamCrtClickCnt'] : null;
+        $this->container['liveStreamAvgTime'] = isset($data['liveStreamAvgTime']) ? $data['liveStreamAvgTime'] : null;
         $this->container['liveStreamCommodityShopBagClkPv'] = isset($data['liveStreamCommodityShopBagClkPv']) ? $data['liveStreamCommodityShopBagClkPv'] : null;
         $this->container['liveStreamCommodityShopListExpPv'] = isset($data['liveStreamCommodityShopListExpPv']) ? $data['liveStreamCommodityShopListExpPv'] : null;
         $this->container['liveStreamCommodityBubbleClkPv'] = isset($data['liveStreamCommodityBubbleClkPv']) ? $data['liveStreamCommodityBubbleClkPv'] : null;
@@ -14252,6 +14270,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets liveStreamExpUv
+     *
+     * @return int|mixed
+     */
+    public function getLiveStreamExpUv()
+    {
+        return $this->container['liveStreamExpUv'];
+    }
+
+    /**
+     * Sets liveStreamExpUv
+     *
+     * @param int|mixed $liveStreamExpUv liveStreamExpUv
+     *
+     * @return $this
+     */
+    public function setLiveStreamExpUv($liveStreamExpUv)
+    {
+        $this->container['liveStreamExpUv'] = $liveStreamExpUv;
+
+        return $this;
+    }
+
+    /**
      * Gets videoLiveHeartUserCount
      *
      * @return int|mixed
@@ -15807,6 +15849,54 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setStayPay30dPv($stayPay30dPv)
     {
         $this->container['stayPay30dPv'] = $stayPay30dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveStreamCrtClickCnt
+     *
+     * @return int|mixed
+     */
+    public function getLiveStreamCrtClickCnt()
+    {
+        return $this->container['liveStreamCrtClickCnt'];
+    }
+
+    /**
+     * Sets liveStreamCrtClickCnt
+     *
+     * @param int|mixed $liveStreamCrtClickCnt liveStreamCrtClickCnt
+     *
+     * @return $this
+     */
+    public function setLiveStreamCrtClickCnt($liveStreamCrtClickCnt)
+    {
+        $this->container['liveStreamCrtClickCnt'] = $liveStreamCrtClickCnt;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveStreamAvgTime
+     *
+     * @return double|mixed
+     */
+    public function getLiveStreamAvgTime()
+    {
+        return $this->container['liveStreamAvgTime'];
+    }
+
+    /**
+     * Sets liveStreamAvgTime
+     *
+     * @param double|mixed $liveStreamAvgTime liveStreamAvgTime
+     *
+     * @return $this
+     */
+    public function setLiveStreamAvgTime($liveStreamAvgTime)
+    {
+        $this->container['liveStreamAvgTime'] = $liveStreamAvgTime;
 
         return $this;
     }

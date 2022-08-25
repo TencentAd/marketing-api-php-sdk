@@ -454,6 +454,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Arpu' => 'int',
         'miniGameCreateRoleRate' => 'double',
         'consultUvCount' => 'int',
+        'liveStreamExpUv' => 'int',
         'scanCodeAddFansUv' => 'int',
         'scanCodeAddFansCount' => 'int',
         'scanCodeAddFansUvCost' => 'int',
@@ -514,6 +515,8 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'int',
         'stayPay15dPv' => 'int',
         'stayPay30dPv' => 'int',
+        'liveStreamCrtClickCnt' => 'int',
+        'liveStreamAvgTime' => 'double',
         'liveStreamCommodityShopBagClkPv' => 'int',
         'liveStreamCommodityShopListExpPv' => 'int',
         'liveStreamCommodityBubbleClkPv' => 'int',
@@ -1092,6 +1095,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Arpu' => 'int64',
         'miniGameCreateRoleRate' => 'double',
         'consultUvCount' => 'int64',
+        'liveStreamExpUv' => 'int64',
         'scanCodeAddFansUv' => 'int64',
         'scanCodeAddFansCount' => 'int64',
         'scanCodeAddFansUvCost' => 'int64',
@@ -1152,6 +1156,8 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'int64',
         'stayPay15dPv' => 'int64',
         'stayPay30dPv' => 'int64',
+        'liveStreamCrtClickCnt' => 'int64',
+        'liveStreamAvgTime' => 'double',
         'liveStreamCommodityShopBagClkPv' => 'int64',
         'liveStreamCommodityShopListExpPv' => 'int64',
         'liveStreamCommodityBubbleClkPv' => 'int64',
@@ -1751,6 +1757,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Arpu' => 'mini_game_bf_purchase_d1_arpu',
         'miniGameCreateRoleRate' => 'mini_game_create_role_rate',
         'consultUvCount' => 'consult_uv_count',
+        'liveStreamExpUv' => 'live_stream_exp_uv',
         'scanCodeAddFansUv' => 'scan_code_add_fans_uv',
         'scanCodeAddFansCount' => 'scan_code_add_fans_count',
         'scanCodeAddFansUvCost' => 'scan_code_add_fans_uv_cost',
@@ -1811,6 +1818,8 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'stay_pay_7d_pv',
         'stayPay15dPv' => 'stay_pay_15d_pv',
         'stayPay30dPv' => 'stay_pay_30d_pv',
+        'liveStreamCrtClickCnt' => 'live_stream_crt_click_cnt',
+        'liveStreamAvgTime' => 'live_stream_avg_time',
         'liveStreamCommodityShopBagClkPv' => 'live_stream_commodity_shop_bag_clk_pv',
         'liveStreamCommodityShopListExpPv' => 'live_stream_commodity_shop_list_exp_pv',
         'liveStreamCommodityBubbleClkPv' => 'live_stream_commodity_bubble_clk_pv',
@@ -2389,6 +2398,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Arpu' => 'setMiniGameBfPurchaseD1Arpu',
         'miniGameCreateRoleRate' => 'setMiniGameCreateRoleRate',
         'consultUvCount' => 'setConsultUvCount',
+        'liveStreamExpUv' => 'setLiveStreamExpUv',
         'scanCodeAddFansUv' => 'setScanCodeAddFansUv',
         'scanCodeAddFansCount' => 'setScanCodeAddFansCount',
         'scanCodeAddFansUvCost' => 'setScanCodeAddFansUvCost',
@@ -2449,6 +2459,8 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'setStayPay7dPv',
         'stayPay15dPv' => 'setStayPay15dPv',
         'stayPay30dPv' => 'setStayPay30dPv',
+        'liveStreamCrtClickCnt' => 'setLiveStreamCrtClickCnt',
+        'liveStreamAvgTime' => 'setLiveStreamAvgTime',
         'liveStreamCommodityShopBagClkPv' => 'setLiveStreamCommodityShopBagClkPv',
         'liveStreamCommodityShopListExpPv' => 'setLiveStreamCommodityShopListExpPv',
         'liveStreamCommodityBubbleClkPv' => 'setLiveStreamCommodityBubbleClkPv',
@@ -3027,6 +3039,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Arpu' => 'getMiniGameBfPurchaseD1Arpu',
         'miniGameCreateRoleRate' => 'getMiniGameCreateRoleRate',
         'consultUvCount' => 'getConsultUvCount',
+        'liveStreamExpUv' => 'getLiveStreamExpUv',
         'scanCodeAddFansUv' => 'getScanCodeAddFansUv',
         'scanCodeAddFansCount' => 'getScanCodeAddFansCount',
         'scanCodeAddFansUvCost' => 'getScanCodeAddFansUvCost',
@@ -3087,6 +3100,8 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'getStayPay7dPv',
         'stayPay15dPv' => 'getStayPay15dPv',
         'stayPay30dPv' => 'getStayPay30dPv',
+        'liveStreamCrtClickCnt' => 'getLiveStreamCrtClickCnt',
+        'liveStreamAvgTime' => 'getLiveStreamAvgTime',
         'liveStreamCommodityShopBagClkPv' => 'getLiveStreamCommodityShopBagClkPv',
         'liveStreamCommodityShopListExpPv' => 'getLiveStreamCommodityShopListExpPv',
         'liveStreamCommodityBubbleClkPv' => 'getLiveStreamCommodityBubbleClkPv',
@@ -3719,6 +3734,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGameBfPurchaseD1Arpu'] = isset($data['miniGameBfPurchaseD1Arpu']) ? $data['miniGameBfPurchaseD1Arpu'] : null;
         $this->container['miniGameCreateRoleRate'] = isset($data['miniGameCreateRoleRate']) ? $data['miniGameCreateRoleRate'] : null;
         $this->container['consultUvCount'] = isset($data['consultUvCount']) ? $data['consultUvCount'] : null;
+        $this->container['liveStreamExpUv'] = isset($data['liveStreamExpUv']) ? $data['liveStreamExpUv'] : null;
         $this->container['scanCodeAddFansUv'] = isset($data['scanCodeAddFansUv']) ? $data['scanCodeAddFansUv'] : null;
         $this->container['scanCodeAddFansCount'] = isset($data['scanCodeAddFansCount']) ? $data['scanCodeAddFansCount'] : null;
         $this->container['scanCodeAddFansUvCost'] = isset($data['scanCodeAddFansUvCost']) ? $data['scanCodeAddFansUvCost'] : null;
@@ -3779,6 +3795,8 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['stayPay7dPv'] = isset($data['stayPay7dPv']) ? $data['stayPay7dPv'] : null;
         $this->container['stayPay15dPv'] = isset($data['stayPay15dPv']) ? $data['stayPay15dPv'] : null;
         $this->container['stayPay30dPv'] = isset($data['stayPay30dPv']) ? $data['stayPay30dPv'] : null;
+        $this->container['liveStreamCrtClickCnt'] = isset($data['liveStreamCrtClickCnt']) ? $data['liveStreamCrtClickCnt'] : null;
+        $this->container['liveStreamAvgTime'] = isset($data['liveStreamAvgTime']) ? $data['liveStreamAvgTime'] : null;
         $this->container['liveStreamCommodityShopBagClkPv'] = isset($data['liveStreamCommodityShopBagClkPv']) ? $data['liveStreamCommodityShopBagClkPv'] : null;
         $this->container['liveStreamCommodityShopListExpPv'] = isset($data['liveStreamCommodityShopListExpPv']) ? $data['liveStreamCommodityShopListExpPv'] : null;
         $this->container['liveStreamCommodityBubbleClkPv'] = isset($data['liveStreamCommodityBubbleClkPv']) ? $data['liveStreamCommodityBubbleClkPv'] : null;
@@ -13484,6 +13502,30 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets liveStreamExpUv
+     *
+     * @return int|mixed
+     */
+    public function getLiveStreamExpUv()
+    {
+        return $this->container['liveStreamExpUv'];
+    }
+
+    /**
+     * Sets liveStreamExpUv
+     *
+     * @param int|mixed $liveStreamExpUv liveStreamExpUv
+     *
+     * @return $this
+     */
+    public function setLiveStreamExpUv($liveStreamExpUv)
+    {
+        $this->container['liveStreamExpUv'] = $liveStreamExpUv;
+
+        return $this;
+    }
+
+    /**
      * Gets scanCodeAddFansUv
      *
      * @return int|mixed
@@ -14919,6 +14961,54 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setStayPay30dPv($stayPay30dPv)
     {
         $this->container['stayPay30dPv'] = $stayPay30dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveStreamCrtClickCnt
+     *
+     * @return int|mixed
+     */
+    public function getLiveStreamCrtClickCnt()
+    {
+        return $this->container['liveStreamCrtClickCnt'];
+    }
+
+    /**
+     * Sets liveStreamCrtClickCnt
+     *
+     * @param int|mixed $liveStreamCrtClickCnt liveStreamCrtClickCnt
+     *
+     * @return $this
+     */
+    public function setLiveStreamCrtClickCnt($liveStreamCrtClickCnt)
+    {
+        $this->container['liveStreamCrtClickCnt'] = $liveStreamCrtClickCnt;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveStreamAvgTime
+     *
+     * @return double|mixed
+     */
+    public function getLiveStreamAvgTime()
+    {
+        return $this->container['liveStreamAvgTime'];
+    }
+
+    /**
+     * Sets liveStreamAvgTime
+     *
+     * @param double|mixed $liveStreamAvgTime liveStreamAvgTime
+     *
+     * @return $this
+     */
+    public function setLiveStreamAvgTime($liveStreamAvgTime)
+    {
+        $this->container['liveStreamAvgTime'] = $liveStreamAvgTime;
 
         return $this;
     }

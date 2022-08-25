@@ -96,6 +96,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
         'enableBreakthroughSiteset' => 'bool',
         'unionMarketSpec' => '\TencentAds\Model\UnionMarketSpec',
+        'autoDerivedProgramCreativeSwitch' => 'bool',
         'programCreativeInfo' => '\TencentAds\Model\ProgramCreativeInfo',
         'dynamicCreativeType' => '\TencentAds\Model\DynamicCreativeType',
         'headClickType' => '\TencentAds\Model\HeadClickType',
@@ -148,6 +149,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'appGiftPackCode' => null,
         'enableBreakthroughSiteset' => null,
         'unionMarketSpec' => null,
+        'autoDerivedProgramCreativeSwitch' => null,
         'programCreativeInfo' => null,
         'dynamicCreativeType' => null,
         'headClickType' => null,
@@ -221,6 +223,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'appGiftPackCode' => 'app_gift_pack_code',
         'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
         'unionMarketSpec' => 'union_market_spec',
+        'autoDerivedProgramCreativeSwitch' => 'auto_derived_program_creative_switch',
         'programCreativeInfo' => 'program_creative_info',
         'dynamicCreativeType' => 'dynamic_creative_type',
         'headClickType' => 'head_click_type',
@@ -273,6 +276,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'appGiftPackCode' => 'setAppGiftPackCode',
         'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
         'unionMarketSpec' => 'setUnionMarketSpec',
+        'autoDerivedProgramCreativeSwitch' => 'setAutoDerivedProgramCreativeSwitch',
         'programCreativeInfo' => 'setProgramCreativeInfo',
         'dynamicCreativeType' => 'setDynamicCreativeType',
         'headClickType' => 'setHeadClickType',
@@ -325,6 +329,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'appGiftPackCode' => 'getAppGiftPackCode',
         'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
         'unionMarketSpec' => 'getUnionMarketSpec',
+        'autoDerivedProgramCreativeSwitch' => 'getAutoDerivedProgramCreativeSwitch',
         'programCreativeInfo' => 'getProgramCreativeInfo',
         'dynamicCreativeType' => 'getDynamicCreativeType',
         'headClickType' => 'getHeadClickType',
@@ -431,6 +436,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
         $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
         $this->container['unionMarketSpec'] = isset($data['unionMarketSpec']) ? $data['unionMarketSpec'] : null;
+        $this->container['autoDerivedProgramCreativeSwitch'] = isset($data['autoDerivedProgramCreativeSwitch']) ? $data['autoDerivedProgramCreativeSwitch'] : null;
         $this->container['programCreativeInfo'] = isset($data['programCreativeInfo']) ? $data['programCreativeInfo'] : null;
         $this->container['dynamicCreativeType'] = isset($data['dynamicCreativeType']) ? $data['dynamicCreativeType'] : null;
         $this->container['headClickType'] = isset($data['headClickType']) ? $data['headClickType'] : null;
@@ -1394,6 +1400,30 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     public function setUnionMarketSpec($unionMarketSpec)
     {
         $this->container['unionMarketSpec'] = $unionMarketSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoDerivedProgramCreativeSwitch
+     *
+     * @return bool|mixed
+     */
+    public function getAutoDerivedProgramCreativeSwitch()
+    {
+        return $this->container['autoDerivedProgramCreativeSwitch'];
+    }
+
+    /**
+     * Sets autoDerivedProgramCreativeSwitch
+     *
+     * @param bool|mixed $autoDerivedProgramCreativeSwitch autoDerivedProgramCreativeSwitch
+     *
+     * @return $this
+     */
+    public function setAutoDerivedProgramCreativeSwitch($autoDerivedProgramCreativeSwitch)
+    {
+        $this->container['autoDerivedProgramCreativeSwitch'] = $autoDerivedProgramCreativeSwitch;
 
         return $this;
     }
