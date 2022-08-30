@@ -61,7 +61,8 @@ class DeepConversionSpec implements ModelInterface, ArrayAccess
         'deepConversionType' => '\TencentAds\Model\DeepConversionType',
         'deepConversionBehaviorSpec' => '\TencentAds\Model\DeepConversionBehaviorSpec',
         'deepConversionWorthSpec' => '\TencentAds\Model\DeepConversionWorthSpec',
-        'deepConversionWorthAdvancedSpec' => '\TencentAds\Model\DeepConversionWorthAdvancedSpec'
+        'deepConversionWorthAdvancedSpec' => '\TencentAds\Model\DeepConversionWorthAdvancedSpec',
+        'deepConversionBehaviorAdvancedSpec' => '\TencentAds\Model\DeepConversionBehaviorAdvancedSpec'
     ];
 
     /**
@@ -73,7 +74,8 @@ class DeepConversionSpec implements ModelInterface, ArrayAccess
         'deepConversionType' => null,
         'deepConversionBehaviorSpec' => null,
         'deepConversionWorthSpec' => null,
-        'deepConversionWorthAdvancedSpec' => null
+        'deepConversionWorthAdvancedSpec' => null,
+        'deepConversionBehaviorAdvancedSpec' => null
     ];
 
     /**
@@ -106,7 +108,8 @@ class DeepConversionSpec implements ModelInterface, ArrayAccess
         'deepConversionType' => 'deep_conversion_type',
         'deepConversionBehaviorSpec' => 'deep_conversion_behavior_spec',
         'deepConversionWorthSpec' => 'deep_conversion_worth_spec',
-        'deepConversionWorthAdvancedSpec' => 'deep_conversion_worth_advanced_spec'
+        'deepConversionWorthAdvancedSpec' => 'deep_conversion_worth_advanced_spec',
+        'deepConversionBehaviorAdvancedSpec' => 'deep_conversion_behavior_advanced_spec'
     ];
 
     /**
@@ -118,7 +121,8 @@ class DeepConversionSpec implements ModelInterface, ArrayAccess
         'deepConversionType' => 'setDeepConversionType',
         'deepConversionBehaviorSpec' => 'setDeepConversionBehaviorSpec',
         'deepConversionWorthSpec' => 'setDeepConversionWorthSpec',
-        'deepConversionWorthAdvancedSpec' => 'setDeepConversionWorthAdvancedSpec'
+        'deepConversionWorthAdvancedSpec' => 'setDeepConversionWorthAdvancedSpec',
+        'deepConversionBehaviorAdvancedSpec' => 'setDeepConversionBehaviorAdvancedSpec'
     ];
 
     /**
@@ -130,7 +134,8 @@ class DeepConversionSpec implements ModelInterface, ArrayAccess
         'deepConversionType' => 'getDeepConversionType',
         'deepConversionBehaviorSpec' => 'getDeepConversionBehaviorSpec',
         'deepConversionWorthSpec' => 'getDeepConversionWorthSpec',
-        'deepConversionWorthAdvancedSpec' => 'getDeepConversionWorthAdvancedSpec'
+        'deepConversionWorthAdvancedSpec' => 'getDeepConversionWorthAdvancedSpec',
+        'deepConversionBehaviorAdvancedSpec' => 'getDeepConversionBehaviorAdvancedSpec'
     ];
 
     /**
@@ -197,6 +202,7 @@ class DeepConversionSpec implements ModelInterface, ArrayAccess
         $this->container['deepConversionBehaviorSpec'] = isset($data['deepConversionBehaviorSpec']) ? $data['deepConversionBehaviorSpec'] : null;
         $this->container['deepConversionWorthSpec'] = isset($data['deepConversionWorthSpec']) ? $data['deepConversionWorthSpec'] : null;
         $this->container['deepConversionWorthAdvancedSpec'] = isset($data['deepConversionWorthAdvancedSpec']) ? $data['deepConversionWorthAdvancedSpec'] : null;
+        $this->container['deepConversionBehaviorAdvancedSpec'] = isset($data['deepConversionBehaviorAdvancedSpec']) ? $data['deepConversionBehaviorAdvancedSpec'] : null;
     }
 
     /**
@@ -315,6 +321,30 @@ class DeepConversionSpec implements ModelInterface, ArrayAccess
     public function setDeepConversionWorthAdvancedSpec($deepConversionWorthAdvancedSpec)
     {
         $this->container['deepConversionWorthAdvancedSpec'] = $deepConversionWorthAdvancedSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets deepConversionBehaviorAdvancedSpec
+     *
+     * @return \TencentAds\Model\DeepConversionBehaviorAdvancedSpec|mixed
+     */
+    public function getDeepConversionBehaviorAdvancedSpec()
+    {
+        return $this->container['deepConversionBehaviorAdvancedSpec'];
+    }
+
+    /**
+     * Sets deepConversionBehaviorAdvancedSpec
+     *
+     * @param \TencentAds\Model\DeepConversionBehaviorAdvancedSpec|mixed $deepConversionBehaviorAdvancedSpec deepConversionBehaviorAdvancedSpec
+     *
+     * @return $this
+     */
+    public function setDeepConversionBehaviorAdvancedSpec($deepConversionBehaviorAdvancedSpec)
+    {
+        $this->container['deepConversionBehaviorAdvancedSpec'] = $deepConversionBehaviorAdvancedSpec;
 
         return $this;
     }

@@ -85,6 +85,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'deepConversionBehaviorBid' => 'int',
         'deepConversionWorthRate' => 'double',
         'deepConversionWorthAdvancedRate' => 'double',
+        'deepConversionBehaviorAdvancedBid' => 'int',
         'bidMode' => '\TencentAds\Model\BidMode',
         'bidAdjustment' => '\TencentAds\Model\BidAdjustment',
         'autoAcquisitionEnabled' => 'bool',
@@ -134,6 +135,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'deepConversionBehaviorBid' => 'int64',
         'deepConversionWorthRate' => 'double',
         'deepConversionWorthAdvancedRate' => 'double',
+        'deepConversionBehaviorAdvancedBid' => 'int64',
         'bidMode' => null,
         'bidAdjustment' => null,
         'autoAcquisitionEnabled' => null,
@@ -204,6 +206,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'deepConversionBehaviorBid' => 'deep_conversion_behavior_bid',
         'deepConversionWorthRate' => 'deep_conversion_worth_rate',
         'deepConversionWorthAdvancedRate' => 'deep_conversion_worth_advanced_rate',
+        'deepConversionBehaviorAdvancedBid' => 'deep_conversion_behavior_advanced_bid',
         'bidMode' => 'bid_mode',
         'bidAdjustment' => 'bid_adjustment',
         'autoAcquisitionEnabled' => 'auto_acquisition_enabled',
@@ -253,6 +256,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'deepConversionBehaviorBid' => 'setDeepConversionBehaviorBid',
         'deepConversionWorthRate' => 'setDeepConversionWorthRate',
         'deepConversionWorthAdvancedRate' => 'setDeepConversionWorthAdvancedRate',
+        'deepConversionBehaviorAdvancedBid' => 'setDeepConversionBehaviorAdvancedBid',
         'bidMode' => 'setBidMode',
         'bidAdjustment' => 'setBidAdjustment',
         'autoAcquisitionEnabled' => 'setAutoAcquisitionEnabled',
@@ -302,6 +306,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'deepConversionBehaviorBid' => 'getDeepConversionBehaviorBid',
         'deepConversionWorthRate' => 'getDeepConversionWorthRate',
         'deepConversionWorthAdvancedRate' => 'getDeepConversionWorthAdvancedRate',
+        'deepConversionBehaviorAdvancedBid' => 'getDeepConversionBehaviorAdvancedBid',
         'bidMode' => 'getBidMode',
         'bidAdjustment' => 'getBidAdjustment',
         'autoAcquisitionEnabled' => 'getAutoAcquisitionEnabled',
@@ -405,6 +410,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['deepConversionBehaviorBid'] = isset($data['deepConversionBehaviorBid']) ? $data['deepConversionBehaviorBid'] : null;
         $this->container['deepConversionWorthRate'] = isset($data['deepConversionWorthRate']) ? $data['deepConversionWorthRate'] : null;
         $this->container['deepConversionWorthAdvancedRate'] = isset($data['deepConversionWorthAdvancedRate']) ? $data['deepConversionWorthAdvancedRate'] : null;
+        $this->container['deepConversionBehaviorAdvancedBid'] = isset($data['deepConversionBehaviorAdvancedBid']) ? $data['deepConversionBehaviorAdvancedBid'] : null;
         $this->container['bidMode'] = isset($data['bidMode']) ? $data['bidMode'] : null;
         $this->container['bidAdjustment'] = isset($data['bidAdjustment']) ? $data['bidAdjustment'] : null;
         $this->container['autoAcquisitionEnabled'] = isset($data['autoAcquisitionEnabled']) ? $data['autoAcquisitionEnabled'] : null;
@@ -1112,6 +1118,30 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setDeepConversionWorthAdvancedRate($deepConversionWorthAdvancedRate)
     {
         $this->container['deepConversionWorthAdvancedRate'] = $deepConversionWorthAdvancedRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets deepConversionBehaviorAdvancedBid
+     *
+     * @return int|mixed
+     */
+    public function getDeepConversionBehaviorAdvancedBid()
+    {
+        return $this->container['deepConversionBehaviorAdvancedBid'];
+    }
+
+    /**
+     * Sets deepConversionBehaviorAdvancedBid
+     *
+     * @param int|mixed $deepConversionBehaviorAdvancedBid deepConversionBehaviorAdvancedBid
+     *
+     * @return $this
+     */
+    public function setDeepConversionBehaviorAdvancedBid($deepConversionBehaviorAdvancedBid)
+    {
+        $this->container['deepConversionBehaviorAdvancedBid'] = $deepConversionBehaviorAdvancedBid;
 
         return $this;
     }
