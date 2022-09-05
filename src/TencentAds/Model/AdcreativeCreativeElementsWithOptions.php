@@ -113,7 +113,8 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'leftCanvas' => 'string',
         'rightCanvas' => 'string',
         'wegameInfoSpec' => '\TencentAds\Model\WegameInfoSpec',
-        'wechatChannelsSpec' => '\TencentAds\Model\AdCreativeWechatChannelsSpec'
+        'wechatChannelsSpec' => '\TencentAds\Model\AdCreativeWechatChannelsSpec',
+        'finderObjectVisibility' => 'bool'
     ];
 
     /**
@@ -177,7 +178,8 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'leftCanvas' => null,
         'rightCanvas' => null,
         'wegameInfoSpec' => null,
-        'wechatChannelsSpec' => null
+        'wechatChannelsSpec' => null,
+        'finderObjectVisibility' => null
     ];
 
     /**
@@ -262,7 +264,8 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'leftCanvas' => 'left_canvas',
         'rightCanvas' => 'right_canvas',
         'wegameInfoSpec' => 'wegame_info_spec',
-        'wechatChannelsSpec' => 'wechat_channels_spec'
+        'wechatChannelsSpec' => 'wechat_channels_spec',
+        'finderObjectVisibility' => 'finder_object_visibility'
     ];
 
     /**
@@ -326,7 +329,8 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'leftCanvas' => 'setLeftCanvas',
         'rightCanvas' => 'setRightCanvas',
         'wegameInfoSpec' => 'setWegameInfoSpec',
-        'wechatChannelsSpec' => 'setWechatChannelsSpec'
+        'wechatChannelsSpec' => 'setWechatChannelsSpec',
+        'finderObjectVisibility' => 'setFinderObjectVisibility'
     ];
 
     /**
@@ -390,7 +394,8 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         'leftCanvas' => 'getLeftCanvas',
         'rightCanvas' => 'getRightCanvas',
         'wegameInfoSpec' => 'getWegameInfoSpec',
-        'wechatChannelsSpec' => 'getWechatChannelsSpec'
+        'wechatChannelsSpec' => 'getWechatChannelsSpec',
+        'finderObjectVisibility' => 'getFinderObjectVisibility'
     ];
 
     /**
@@ -509,6 +514,7 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
         $this->container['rightCanvas'] = isset($data['rightCanvas']) ? $data['rightCanvas'] : null;
         $this->container['wegameInfoSpec'] = isset($data['wegameInfoSpec']) ? $data['wegameInfoSpec'] : null;
         $this->container['wechatChannelsSpec'] = isset($data['wechatChannelsSpec']) ? $data['wechatChannelsSpec'] : null;
+        $this->container['finderObjectVisibility'] = isset($data['finderObjectVisibility']) ? $data['finderObjectVisibility'] : null;
     }
 
     /**
@@ -1875,6 +1881,30 @@ class AdcreativeCreativeElementsWithOptions implements ModelInterface, ArrayAcce
     public function setWechatChannelsSpec($wechatChannelsSpec)
     {
         $this->container['wechatChannelsSpec'] = $wechatChannelsSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets finderObjectVisibility
+     *
+     * @return bool|mixed
+     */
+    public function getFinderObjectVisibility()
+    {
+        return $this->container['finderObjectVisibility'];
+    }
+
+    /**
+     * Sets finderObjectVisibility
+     *
+     * @param bool|mixed $finderObjectVisibility finderObjectVisibility
+     *
+     * @return $this
+     */
+    public function setFinderObjectVisibility($finderObjectVisibility)
+    {
+        $this->container['finderObjectVisibility'] = $finderObjectVisibility;
 
         return $this;
     }

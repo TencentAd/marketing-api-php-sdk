@@ -106,7 +106,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'livingDescStruct' => '\TencentAds\Model\AdCreativeLivingDescStruct',
         'floatingZoneStruct' => '\TencentAds\Model\FloatingZone',
         'canvasShareImage' => 'string',
-        'wegameInfoSpec' => '\TencentAds\Model\WegameInfoSpec'
+        'wegameInfoSpec' => '\TencentAds\Model\WegameInfoSpec',
+        'finderObjectVisibility' => 'bool'
     ];
 
     /**
@@ -163,7 +164,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'livingDescStruct' => null,
         'floatingZoneStruct' => null,
         'canvasShareImage' => null,
-        'wegameInfoSpec' => null
+        'wegameInfoSpec' => null,
+        'finderObjectVisibility' => null
     ];
 
     /**
@@ -241,7 +243,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'livingDescStruct' => 'living_desc_struct',
         'floatingZoneStruct' => 'floating_zone_struct',
         'canvasShareImage' => 'canvas_share_image',
-        'wegameInfoSpec' => 'wegame_info_spec'
+        'wegameInfoSpec' => 'wegame_info_spec',
+        'finderObjectVisibility' => 'finder_object_visibility'
     ];
 
     /**
@@ -298,7 +301,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'livingDescStruct' => 'setLivingDescStruct',
         'floatingZoneStruct' => 'setFloatingZoneStruct',
         'canvasShareImage' => 'setCanvasShareImage',
-        'wegameInfoSpec' => 'setWegameInfoSpec'
+        'wegameInfoSpec' => 'setWegameInfoSpec',
+        'finderObjectVisibility' => 'setFinderObjectVisibility'
     ];
 
     /**
@@ -355,7 +359,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'livingDescStruct' => 'getLivingDescStruct',
         'floatingZoneStruct' => 'getFloatingZoneStruct',
         'canvasShareImage' => 'getCanvasShareImage',
-        'wegameInfoSpec' => 'getWegameInfoSpec'
+        'wegameInfoSpec' => 'getWegameInfoSpec',
+        'finderObjectVisibility' => 'getFinderObjectVisibility'
     ];
 
     /**
@@ -467,6 +472,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         $this->container['floatingZoneStruct'] = isset($data['floatingZoneStruct']) ? $data['floatingZoneStruct'] : null;
         $this->container['canvasShareImage'] = isset($data['canvasShareImage']) ? $data['canvasShareImage'] : null;
         $this->container['wegameInfoSpec'] = isset($data['wegameInfoSpec']) ? $data['wegameInfoSpec'] : null;
+        $this->container['finderObjectVisibility'] = isset($data['finderObjectVisibility']) ? $data['finderObjectVisibility'] : null;
     }
 
     /**
@@ -1665,6 +1671,30 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     public function setWegameInfoSpec($wegameInfoSpec)
     {
         $this->container['wegameInfoSpec'] = $wegameInfoSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets finderObjectVisibility
+     *
+     * @return bool|mixed
+     */
+    public function getFinderObjectVisibility()
+    {
+        return $this->container['finderObjectVisibility'];
+    }
+
+    /**
+     * Sets finderObjectVisibility
+     *
+     * @param bool|mixed $finderObjectVisibility finderObjectVisibility
+     *
+     * @return $this
+     */
+    public function setFinderObjectVisibility($finderObjectVisibility)
+    {
+        $this->container['finderObjectVisibility'] = $finderObjectVisibility;
 
         return $this;
     }

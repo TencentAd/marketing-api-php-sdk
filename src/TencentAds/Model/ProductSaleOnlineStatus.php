@@ -1,6 +1,6 @@
 <?php
 /**
- * ProductSaleStatus
+ * ProductSaleOnlineStatus
  *
  * PHP version 5
  *
@@ -31,20 +31,19 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ProductSaleStatus Class Doc Comment
+ * ProductSaleOnlineStatus Class Doc Comment
  *
  * @category Class
- * @description 商品在线状态
+ * @description 商品销售状态，详见 &lt;a href&#x3D;&#39;sale_status&#39; target&#x3D;&#39;_blank&#39;&gt;[商品销售状态]&lt;/a&gt;
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ProductSaleStatus
+class ProductSaleOnlineStatus
 {
     /**
      * Possible values of this enum
      */
-    const UNKNOWN = 'PRODUCT_SALE_STATUS_UNKNOWN';
     const ONLINE = 'PRODUCT_SALE_STATUS_ONLINE';
     const OFFLINE = 'PRODUCT_SALE_STATUS_OFFLINE';
     
@@ -55,7 +54,6 @@ class ProductSaleStatus
     public static function getAllowableEnumValues()
     {
         return [
-            self::UNKNOWN,
             self::ONLINE,
             self::OFFLINE,
         ];
