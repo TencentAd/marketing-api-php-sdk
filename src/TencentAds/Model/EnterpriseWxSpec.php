@@ -58,7 +58,7 @@ class EnterpriseWxSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'cropId' => 'string',
+        'corpId' => 'string',
         'groupId' => 'int',
         'btnTitle' => 'string',
         'fontColor' => 'string',
@@ -76,7 +76,7 @@ class EnterpriseWxSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'cropId' => null,
+        'corpId' => null,
         'groupId' => 'int64',
         'btnTitle' => null,
         'fontColor' => null,
@@ -115,7 +115,7 @@ class EnterpriseWxSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'cropId' => 'crop_id',
+        'corpId' => 'corp_id',
         'groupId' => 'group_id',
         'btnTitle' => 'btn_title',
         'fontColor' => 'font_color',
@@ -133,7 +133,7 @@ class EnterpriseWxSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'cropId' => 'setCropId',
+        'corpId' => 'setCorpId',
         'groupId' => 'setGroupId',
         'btnTitle' => 'setBtnTitle',
         'fontColor' => 'setFontColor',
@@ -151,7 +151,7 @@ class EnterpriseWxSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'cropId' => 'getCropId',
+        'corpId' => 'getCorpId',
         'groupId' => 'getGroupId',
         'btnTitle' => 'getBtnTitle',
         'fontColor' => 'getFontColor',
@@ -223,7 +223,7 @@ class EnterpriseWxSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['cropId'] = isset($data['cropId']) ? $data['cropId'] : null;
+        $this->container['corpId'] = isset($data['corpId']) ? $data['corpId'] : null;
         $this->container['groupId'] = isset($data['groupId']) ? $data['groupId'] : null;
         $this->container['btnTitle'] = isset($data['btnTitle']) ? $data['btnTitle'] : null;
         $this->container['fontColor'] = isset($data['fontColor']) ? $data['fontColor'] : null;
@@ -260,25 +260,25 @@ class EnterpriseWxSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets cropId
+     * Gets corpId
      *
      * @return string|mixed
      */
-    public function getCropId()
+    public function getCorpId()
     {
-        return $this->container['cropId'];
+        return $this->container['corpId'];
     }
 
     /**
-     * Sets cropId
+     * Sets corpId
      *
-     * @param string|mixed $cropId cropId
+     * @param string|mixed $corpId corpId
      *
      * @return $this
      */
-    public function setCropId($cropId)
+    public function setCorpId($corpId)
     {
-        $this->container['cropId'] = $cropId;
+        $this->container['corpId'] = $corpId;
 
         return $this;
     }

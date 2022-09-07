@@ -60,6 +60,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'title' => 'string',
         'url' => 'string',
+        'linkSpec' => '\TencentAds\Model\LinkSpec',
         'appIosSpec' => '\TencentAds\Model\AppIosSpec',
         'appAndroidSpec' => '\TencentAds\Model\AppAndroidSpec',
         'miniProgramSpec' => '\TencentAds\Model\MiniProgramSpec',
@@ -81,6 +82,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'title' => null,
         'url' => null,
+        'linkSpec' => null,
         'appIosSpec' => null,
         'appAndroidSpec' => null,
         'miniProgramSpec' => null,
@@ -123,6 +125,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'title' => 'title',
         'url' => 'url',
+        'linkSpec' => 'link_spec',
         'appIosSpec' => 'app_ios_spec',
         'appAndroidSpec' => 'app_android_spec',
         'miniProgramSpec' => 'mini_program_spec',
@@ -144,6 +147,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     protected static $setters = [
         'title' => 'setTitle',
         'url' => 'setUrl',
+        'linkSpec' => 'setLinkSpec',
         'appIosSpec' => 'setAppIosSpec',
         'appAndroidSpec' => 'setAppAndroidSpec',
         'miniProgramSpec' => 'setMiniProgramSpec',
@@ -165,6 +169,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     protected static $getters = [
         'title' => 'getTitle',
         'url' => 'getUrl',
+        'linkSpec' => 'getLinkSpec',
         'appIosSpec' => 'getAppIosSpec',
         'appAndroidSpec' => 'getAppAndroidSpec',
         'miniProgramSpec' => 'getMiniProgramSpec',
@@ -240,6 +245,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     {
         $this->container['title'] = isset($data['title']) ? $data['title'] : null;
         $this->container['url'] = isset($data['url']) ? $data['url'] : null;
+        $this->container['linkSpec'] = isset($data['linkSpec']) ? $data['linkSpec'] : null;
         $this->container['appIosSpec'] = isset($data['appIosSpec']) ? $data['appIosSpec'] : null;
         $this->container['appAndroidSpec'] = isset($data['appAndroidSpec']) ? $data['appAndroidSpec'] : null;
         $this->container['miniProgramSpec'] = isset($data['miniProgramSpec']) ? $data['miniProgramSpec'] : null;
@@ -321,6 +327,30 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     public function setUrl($url)
     {
         $this->container['url'] = $url;
+
+        return $this;
+    }
+
+    /**
+     * Gets linkSpec
+     *
+     * @return \TencentAds\Model\LinkSpec|mixed
+     */
+    public function getLinkSpec()
+    {
+        return $this->container['linkSpec'];
+    }
+
+    /**
+     * Sets linkSpec
+     *
+     * @param \TencentAds\Model\LinkSpec|mixed $linkSpec linkSpec
+     *
+     * @return $this
+     */
+    public function setLinkSpec($linkSpec)
+    {
+        $this->container['linkSpec'] = $linkSpec;
 
         return $this;
     }

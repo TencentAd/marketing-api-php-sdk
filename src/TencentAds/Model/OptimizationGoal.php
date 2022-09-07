@@ -118,6 +118,7 @@ class OptimizationGoal
     const ADD_WECHAT = 'OPTIMIZATIONGOAL_ADD_WECHAT';
     const WECOM_CONSULT = 'OPTIMIZATIONGOAL_WECOM_CONSULT';
     const ADD_GROUP = 'OPTIMIZATIONGOAL_ADD_GROUP';
+    const QUICK_ORDER = 'OPTIMIZATIONGOAL_QUICK_ORDER';
     
     /**
      * Gets allowable values of the enum
@@ -200,6 +201,7 @@ class OptimizationGoal
             self::ADD_WECHAT,
             self::WECOM_CONSULT,
             self::ADD_GROUP,
+            self::QUICK_ORDER,
         ];
     }
 }

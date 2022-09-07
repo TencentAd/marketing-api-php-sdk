@@ -59,7 +59,9 @@ class LinkSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'title' => 'string',
-        'url' => 'string'
+        'url' => 'string',
+        'deepLinkAndroidSpec' => '\TencentAds\Model\DeepLinkAppAndroidSpec',
+        'deepLinkIosSpec' => '\TencentAds\Model\DeepLinkAppIosSpec'
     ];
 
     /**
@@ -69,7 +71,9 @@ class LinkSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'title' => null,
-        'url' => null
+        'url' => null,
+        'deepLinkAndroidSpec' => null,
+        'deepLinkIosSpec' => null
     ];
 
     /**
@@ -100,7 +104,9 @@ class LinkSpec implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'title' => 'title',
-        'url' => 'url'
+        'url' => 'url',
+        'deepLinkAndroidSpec' => 'deep_link_android_spec',
+        'deepLinkIosSpec' => 'deep_link_ios_spec'
     ];
 
     /**
@@ -110,7 +116,9 @@ class LinkSpec implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'title' => 'setTitle',
-        'url' => 'setUrl'
+        'url' => 'setUrl',
+        'deepLinkAndroidSpec' => 'setDeepLinkAndroidSpec',
+        'deepLinkIosSpec' => 'setDeepLinkIosSpec'
     ];
 
     /**
@@ -120,7 +128,9 @@ class LinkSpec implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'title' => 'getTitle',
-        'url' => 'getUrl'
+        'url' => 'getUrl',
+        'deepLinkAndroidSpec' => 'getDeepLinkAndroidSpec',
+        'deepLinkIosSpec' => 'getDeepLinkIosSpec'
     ];
 
     /**
@@ -185,6 +195,8 @@ class LinkSpec implements ModelInterface, ArrayAccess
     {
         $this->container['title'] = isset($data['title']) ? $data['title'] : null;
         $this->container['url'] = isset($data['url']) ? $data['url'] : null;
+        $this->container['deepLinkAndroidSpec'] = isset($data['deepLinkAndroidSpec']) ? $data['deepLinkAndroidSpec'] : null;
+        $this->container['deepLinkIosSpec'] = isset($data['deepLinkIosSpec']) ? $data['deepLinkIosSpec'] : null;
     }
 
     /**
@@ -255,6 +267,54 @@ class LinkSpec implements ModelInterface, ArrayAccess
     public function setUrl($url)
     {
         $this->container['url'] = $url;
+
+        return $this;
+    }
+
+    /**
+     * Gets deepLinkAndroidSpec
+     *
+     * @return \TencentAds\Model\DeepLinkAppAndroidSpec|mixed
+     */
+    public function getDeepLinkAndroidSpec()
+    {
+        return $this->container['deepLinkAndroidSpec'];
+    }
+
+    /**
+     * Sets deepLinkAndroidSpec
+     *
+     * @param \TencentAds\Model\DeepLinkAppAndroidSpec|mixed $deepLinkAndroidSpec deepLinkAndroidSpec
+     *
+     * @return $this
+     */
+    public function setDeepLinkAndroidSpec($deepLinkAndroidSpec)
+    {
+        $this->container['deepLinkAndroidSpec'] = $deepLinkAndroidSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets deepLinkIosSpec
+     *
+     * @return \TencentAds\Model\DeepLinkAppIosSpec|mixed
+     */
+    public function getDeepLinkIosSpec()
+    {
+        return $this->container['deepLinkIosSpec'];
+    }
+
+    /**
+     * Sets deepLinkIosSpec
+     *
+     * @param \TencentAds\Model\DeepLinkAppIosSpec|mixed $deepLinkIosSpec deepLinkIosSpec
+     *
+     * @return $this
+     */
+    public function setDeepLinkIosSpec($deepLinkIosSpec)
+    {
+        $this->container['deepLinkIosSpec'] = $deepLinkIosSpec;
 
         return $this;
     }

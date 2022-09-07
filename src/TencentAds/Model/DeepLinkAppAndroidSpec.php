@@ -1,6 +1,6 @@
 <?php
 /**
- * FloatEnterpriseWxSpec
+ * DeepLinkAppAndroidSpec
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * FloatEnterpriseWxSpec Class Doc Comment
+ * DeepLinkAppAndroidSpec Class Doc Comment
  *
  * @category Class
- * @description 添加商家微信组件元素
+ * @description Android应用信息元素
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class FloatEnterpriseWxSpec implements ModelInterface, ArrayAccess
+class DeepLinkAppAndroidSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class FloatEnterpriseWxSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'float_enterprise_wx_spec';
+    protected static $swaggerModelName = 'deep_link_app_android_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,12 +58,8 @@ class FloatEnterpriseWxSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'corpId' => 'string',
-        'groupId' => 'int',
-        'btnTitle' => 'string',
-        'fontColor' => 'string',
-        'btnBgColorTheme' => 'string',
-        'btnFontType' => 'int'
+        'deepLinkUrl' => 'string',
+        'appAndroidId' => 'string'
     ];
 
     /**
@@ -72,12 +68,8 @@ class FloatEnterpriseWxSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'corpId' => null,
-        'groupId' => 'int64',
-        'btnTitle' => null,
-        'fontColor' => null,
-        'btnBgColorTheme' => null,
-        'btnFontType' => 'int64'
+        'deepLinkUrl' => null,
+        'appAndroidId' => null
     ];
 
     /**
@@ -107,12 +99,8 @@ class FloatEnterpriseWxSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'corpId' => 'corp_id',
-        'groupId' => 'group_id',
-        'btnTitle' => 'btn_title',
-        'fontColor' => 'font_color',
-        'btnBgColorTheme' => 'btn_bg_color_theme',
-        'btnFontType' => 'btn_font_type'
+        'deepLinkUrl' => 'deep_link_url',
+        'appAndroidId' => 'app_android_id'
     ];
 
     /**
@@ -121,12 +109,8 @@ class FloatEnterpriseWxSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'corpId' => 'setCorpId',
-        'groupId' => 'setGroupId',
-        'btnTitle' => 'setBtnTitle',
-        'fontColor' => 'setFontColor',
-        'btnBgColorTheme' => 'setBtnBgColorTheme',
-        'btnFontType' => 'setBtnFontType'
+        'deepLinkUrl' => 'setDeepLinkUrl',
+        'appAndroidId' => 'setAppAndroidId'
     ];
 
     /**
@@ -135,12 +119,8 @@ class FloatEnterpriseWxSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'corpId' => 'getCorpId',
-        'groupId' => 'getGroupId',
-        'btnTitle' => 'getBtnTitle',
-        'fontColor' => 'getFontColor',
-        'btnBgColorTheme' => 'getBtnBgColorTheme',
-        'btnFontType' => 'getBtnFontType'
+        'deepLinkUrl' => 'getDeepLinkUrl',
+        'appAndroidId' => 'getAppAndroidId'
     ];
 
     /**
@@ -203,12 +183,8 @@ class FloatEnterpriseWxSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['corpId'] = isset($data['corpId']) ? $data['corpId'] : null;
-        $this->container['groupId'] = isset($data['groupId']) ? $data['groupId'] : null;
-        $this->container['btnTitle'] = isset($data['btnTitle']) ? $data['btnTitle'] : null;
-        $this->container['fontColor'] = isset($data['fontColor']) ? $data['fontColor'] : null;
-        $this->container['btnBgColorTheme'] = isset($data['btnBgColorTheme']) ? $data['btnBgColorTheme'] : null;
-        $this->container['btnFontType'] = isset($data['btnFontType']) ? $data['btnFontType'] : null;
+        $this->container['deepLinkUrl'] = isset($data['deepLinkUrl']) ? $data['deepLinkUrl'] : null;
+        $this->container['appAndroidId'] = isset($data['appAndroidId']) ? $data['appAndroidId'] : null;
     }
 
     /**
@@ -236,145 +212,49 @@ class FloatEnterpriseWxSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets corpId
+     * Gets deepLinkUrl
      *
      * @return string|mixed
      */
-    public function getCorpId()
+    public function getDeepLinkUrl()
     {
-        return $this->container['corpId'];
+        return $this->container['deepLinkUrl'];
     }
 
     /**
-     * Sets corpId
+     * Sets deepLinkUrl
      *
-     * @param string|mixed $corpId corpId
+     * @param string|mixed $deepLinkUrl deepLinkUrl
      *
      * @return $this
      */
-    public function setCorpId($corpId)
+    public function setDeepLinkUrl($deepLinkUrl)
     {
-        $this->container['corpId'] = $corpId;
+        $this->container['deepLinkUrl'] = $deepLinkUrl;
 
         return $this;
     }
 
     /**
-     * Gets groupId
-     *
-     * @return int|mixed
-     */
-    public function getGroupId()
-    {
-        return $this->container['groupId'];
-    }
-
-    /**
-     * Sets groupId
-     *
-     * @param int|mixed $groupId groupId
-     *
-     * @return $this
-     */
-    public function setGroupId($groupId)
-    {
-        $this->container['groupId'] = $groupId;
-
-        return $this;
-    }
-
-    /**
-     * Gets btnTitle
+     * Gets appAndroidId
      *
      * @return string|mixed
      */
-    public function getBtnTitle()
+    public function getAppAndroidId()
     {
-        return $this->container['btnTitle'];
+        return $this->container['appAndroidId'];
     }
 
     /**
-     * Sets btnTitle
+     * Sets appAndroidId
      *
-     * @param string|mixed $btnTitle btnTitle
+     * @param string|mixed $appAndroidId appAndroidId
      *
      * @return $this
      */
-    public function setBtnTitle($btnTitle)
+    public function setAppAndroidId($appAndroidId)
     {
-        $this->container['btnTitle'] = $btnTitle;
-
-        return $this;
-    }
-
-    /**
-     * Gets fontColor
-     *
-     * @return string|mixed
-     */
-    public function getFontColor()
-    {
-        return $this->container['fontColor'];
-    }
-
-    /**
-     * Sets fontColor
-     *
-     * @param string|mixed $fontColor fontColor
-     *
-     * @return $this
-     */
-    public function setFontColor($fontColor)
-    {
-        $this->container['fontColor'] = $fontColor;
-
-        return $this;
-    }
-
-    /**
-     * Gets btnBgColorTheme
-     *
-     * @return string|mixed
-     */
-    public function getBtnBgColorTheme()
-    {
-        return $this->container['btnBgColorTheme'];
-    }
-
-    /**
-     * Sets btnBgColorTheme
-     *
-     * @param string|mixed $btnBgColorTheme btnBgColorTheme
-     *
-     * @return $this
-     */
-    public function setBtnBgColorTheme($btnBgColorTheme)
-    {
-        $this->container['btnBgColorTheme'] = $btnBgColorTheme;
-
-        return $this;
-    }
-
-    /**
-     * Gets btnFontType
-     *
-     * @return int|mixed
-     */
-    public function getBtnFontType()
-    {
-        return $this->container['btnFontType'];
-    }
-
-    /**
-     * Sets btnFontType
-     *
-     * @param int|mixed $btnFontType btnFontType
-     *
-     * @return $this
-     */
-    public function setBtnFontType($btnFontType)
-    {
-        $this->container['btnFontType'] = $btnFontType;
+        $this->container['appAndroidId'] = $appAndroidId;
 
         return $this;
     }

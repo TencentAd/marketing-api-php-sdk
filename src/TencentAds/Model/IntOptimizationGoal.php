@@ -110,6 +110,7 @@ class IntOptimizationGoal
     const ADD_WECHAT = 'OPTIMIZATIONGOAL_ADD_WECHAT';
     const WECOM_CONSULT = 'OPTIMIZATIONGOAL_WECOM_CONSULT';
     const ADD_GROUP = 'OPTIMIZATIONGOAL_ADD_GROUP';
+    const QUICK_ORDER = 'OPTIMIZATIONGOAL_QUICK_ORDER';
     const PAGE_EFFECTIVE_PHONE_CALL = 'OPTIMIZATIONGOAL_PAGE_EFFECTIVE_PHONE_CALL';
     
     /**
@@ -185,6 +186,7 @@ class IntOptimizationGoal
             self::ADD_WECHAT,
             self::WECOM_CONSULT,
             self::ADD_GROUP,
+            self::QUICK_ORDER,
             self::PAGE_EFFECTIVE_PHONE_CALL,
         ];
     }

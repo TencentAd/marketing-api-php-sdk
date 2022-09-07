@@ -69,6 +69,7 @@ class CalcStatus
     const LOCK_FLOW_SUCCESS = 'STATUS_LOCK_FLOW_SUCCESS';
     const LOCK_FLOW_FAIL = 'STATUS_LOCK_FLOW_FAIL';
     const FLOW_CANCELLED = 'STATUS_FLOW_CANCELLED';
+    const CAMPAIGN_SUSPEND = 'STATUS_CAMPAIGN_SUSPEND';
     
     /**
      * Gets allowable values of the enum
@@ -102,6 +103,7 @@ class CalcStatus
             self::LOCK_FLOW_SUCCESS,
             self::LOCK_FLOW_FAIL,
             self::FLOW_CANCELLED,
+            self::CAMPAIGN_SUSPEND,
         ];
     }
 }
