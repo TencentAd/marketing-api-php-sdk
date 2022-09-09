@@ -28,6 +28,40 @@ class ProductSeriesApiContainer extends ApiContainer
 
 
     /**
+     * Handle ProductSeriesApi productSeriesAdd function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function add(array $params = [])
+    {
+        return $this->handleMiddleware('add', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->productSeriesAdd($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle ProductSeriesApi productSeriesAddAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function addAsync(array $params = [])
+    {
+        return $this->handleMiddleware('add', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->productSeriesAddAsync($data);
+            return $response;
+        });
+    }
+
+
+    /**
      * Handle ProductSeriesApi productSeriesGet function
      * @param array params
      * @return mixed

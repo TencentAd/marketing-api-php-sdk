@@ -72,6 +72,7 @@ class Adcreative implements ModelInterface, ArrayAccess
         'videoEndPage' => '\TencentAds\Model\VideoEndPageSpec',
         'enableBreakthroughSiteset' => 'bool',
         'creativeTemplateCategory' => 'string',
+        'keywordIdList' => 'int[]',
         'adcreativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsRead'
     ];
@@ -96,6 +97,7 @@ class Adcreative implements ModelInterface, ArrayAccess
         'videoEndPage' => null,
         'enableBreakthroughSiteset' => null,
         'creativeTemplateCategory' => null,
+        'keywordIdList' => 'int64',
         'adcreativeTemplateId' => 'int64',
         'adcreativeElements' => null
     ];
@@ -141,6 +143,7 @@ class Adcreative implements ModelInterface, ArrayAccess
         'videoEndPage' => 'video_end_page',
         'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
         'creativeTemplateCategory' => 'creative_template_category',
+        'keywordIdList' => 'keyword_id_list',
         'adcreativeTemplateId' => 'adcreative_template_id',
         'adcreativeElements' => 'adcreative_elements'
     ];
@@ -165,6 +168,7 @@ class Adcreative implements ModelInterface, ArrayAccess
         'videoEndPage' => 'setVideoEndPage',
         'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
         'creativeTemplateCategory' => 'setCreativeTemplateCategory',
+        'keywordIdList' => 'setKeywordIdList',
         'adcreativeTemplateId' => 'setAdcreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements'
     ];
@@ -189,6 +193,7 @@ class Adcreative implements ModelInterface, ArrayAccess
         'videoEndPage' => 'getVideoEndPage',
         'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
         'creativeTemplateCategory' => 'getCreativeTemplateCategory',
+        'keywordIdList' => 'getKeywordIdList',
         'adcreativeTemplateId' => 'getAdcreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements'
     ];
@@ -267,6 +272,7 @@ class Adcreative implements ModelInterface, ArrayAccess
         $this->container['videoEndPage'] = isset($data['videoEndPage']) ? $data['videoEndPage'] : null;
         $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
         $this->container['creativeTemplateCategory'] = isset($data['creativeTemplateCategory']) ? $data['creativeTemplateCategory'] : null;
+        $this->container['keywordIdList'] = isset($data['keywordIdList']) ? $data['keywordIdList'] : null;
         $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
     }
@@ -627,6 +633,30 @@ class Adcreative implements ModelInterface, ArrayAccess
     public function setCreativeTemplateCategory($creativeTemplateCategory)
     {
         $this->container['creativeTemplateCategory'] = $creativeTemplateCategory;
+
+        return $this;
+    }
+
+    /**
+     * Gets keywordIdList
+     *
+     * @return int[]|mixed
+     */
+    public function getKeywordIdList()
+    {
+        return $this->container['keywordIdList'];
+    }
+
+    /**
+     * Sets keywordIdList
+     *
+     * @param int[]|mixed $keywordIdList keywordIdList
+     *
+     * @return $this
+     */
+    public function setKeywordIdList($keywordIdList)
+    {
+        $this->container['keywordIdList'] = $keywordIdList;
 
         return $this;
     }
