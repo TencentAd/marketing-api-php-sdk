@@ -75,7 +75,9 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'userActionSetId' => 'int',
         'conversionLinkId' => 'int',
         'impressionFeedbackUrl' => 'string',
-        'attributionWindow' => 'int'
+        'attributionWindow' => 'int',
+        'deepBehaviorAdvancedGoal' => '\TencentAds\Model\IntOptimizationGoal',
+        'deepOptimizationGoalType' => '\TencentAds\Model\DeepOptimizationGoalType'
     ];
 
     /**
@@ -102,7 +104,9 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'userActionSetId' => 'int64',
         'conversionLinkId' => 'int64',
         'impressionFeedbackUrl' => null,
-        'attributionWindow' => 'int64'
+        'attributionWindow' => 'int64',
+        'deepBehaviorAdvancedGoal' => null,
+        'deepOptimizationGoalType' => null
     ];
 
     /**
@@ -150,7 +154,9 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'userActionSetId' => 'user_action_set_id',
         'conversionLinkId' => 'conversion_link_id',
         'impressionFeedbackUrl' => 'impression_feedback_url',
-        'attributionWindow' => 'attribution_window'
+        'attributionWindow' => 'attribution_window',
+        'deepBehaviorAdvancedGoal' => 'deep_behavior_advanced_goal',
+        'deepOptimizationGoalType' => 'deep_optimization_goal_type'
     ];
 
     /**
@@ -177,7 +183,9 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'userActionSetId' => 'setUserActionSetId',
         'conversionLinkId' => 'setConversionLinkId',
         'impressionFeedbackUrl' => 'setImpressionFeedbackUrl',
-        'attributionWindow' => 'setAttributionWindow'
+        'attributionWindow' => 'setAttributionWindow',
+        'deepBehaviorAdvancedGoal' => 'setDeepBehaviorAdvancedGoal',
+        'deepOptimizationGoalType' => 'setDeepOptimizationGoalType'
     ];
 
     /**
@@ -204,7 +212,9 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'userActionSetId' => 'getUserActionSetId',
         'conversionLinkId' => 'getConversionLinkId',
         'impressionFeedbackUrl' => 'getImpressionFeedbackUrl',
-        'attributionWindow' => 'getAttributionWindow'
+        'attributionWindow' => 'getAttributionWindow',
+        'deepBehaviorAdvancedGoal' => 'getDeepBehaviorAdvancedGoal',
+        'deepOptimizationGoalType' => 'getDeepOptimizationGoalType'
     ];
 
     /**
@@ -286,6 +296,8 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         $this->container['conversionLinkId'] = isset($data['conversionLinkId']) ? $data['conversionLinkId'] : null;
         $this->container['impressionFeedbackUrl'] = isset($data['impressionFeedbackUrl']) ? $data['impressionFeedbackUrl'] : null;
         $this->container['attributionWindow'] = isset($data['attributionWindow']) ? $data['attributionWindow'] : null;
+        $this->container['deepBehaviorAdvancedGoal'] = isset($data['deepBehaviorAdvancedGoal']) ? $data['deepBehaviorAdvancedGoal'] : null;
+        $this->container['deepOptimizationGoalType'] = isset($data['deepOptimizationGoalType']) ? $data['deepOptimizationGoalType'] : null;
     }
 
     /**
@@ -764,6 +776,54 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     public function setAttributionWindow($attributionWindow)
     {
         $this->container['attributionWindow'] = $attributionWindow;
+
+        return $this;
+    }
+
+    /**
+     * Gets deepBehaviorAdvancedGoal
+     *
+     * @return \TencentAds\Model\IntOptimizationGoal|mixed
+     */
+    public function getDeepBehaviorAdvancedGoal()
+    {
+        return $this->container['deepBehaviorAdvancedGoal'];
+    }
+
+    /**
+     * Sets deepBehaviorAdvancedGoal
+     *
+     * @param \TencentAds\Model\IntOptimizationGoal|mixed $deepBehaviorAdvancedGoal deepBehaviorAdvancedGoal
+     *
+     * @return $this
+     */
+    public function setDeepBehaviorAdvancedGoal($deepBehaviorAdvancedGoal)
+    {
+        $this->container['deepBehaviorAdvancedGoal'] = $deepBehaviorAdvancedGoal;
+
+        return $this;
+    }
+
+    /**
+     * Gets deepOptimizationGoalType
+     *
+     * @return \TencentAds\Model\DeepOptimizationGoalType|mixed
+     */
+    public function getDeepOptimizationGoalType()
+    {
+        return $this->container['deepOptimizationGoalType'];
+    }
+
+    /**
+     * Sets deepOptimizationGoalType
+     *
+     * @param \TencentAds\Model\DeepOptimizationGoalType|mixed $deepOptimizationGoalType deepOptimizationGoalType
+     *
+     * @return $this
+     */
+    public function setDeepOptimizationGoalType($deepOptimizationGoalType)
+    {
+        $this->container['deepOptimizationGoalType'] = $deepOptimizationGoalType;
 
         return $this;
     }

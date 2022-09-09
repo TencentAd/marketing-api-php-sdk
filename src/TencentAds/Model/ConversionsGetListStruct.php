@@ -80,7 +80,11 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepWorthAdvancedGoal' => '\TencentAds\Model\ConversionOptimizationGoal',
         'conversionLinkId' => 'int',
         'impressionFeedbackUrl' => 'string',
-        'attributionWindow' => 'int'
+        'attributionWindow' => 'int',
+        'deepBehaviorAdvancedGoal' => '\TencentAds\Model\IntOptimizationGoal',
+        'deepBehaviorAdvancedGoalMinPrice' => 'int',
+        'deepBehaviorAdvancedGoalMaxPrice' => 'int',
+        'deepOptimizationGoalType' => '\TencentAds\Model\DeepOptimizationGoalType'
     ];
 
     /**
@@ -111,7 +115,11 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepWorthAdvancedGoal' => null,
         'conversionLinkId' => 'int64',
         'impressionFeedbackUrl' => null,
-        'attributionWindow' => 'int64'
+        'attributionWindow' => 'int64',
+        'deepBehaviorAdvancedGoal' => null,
+        'deepBehaviorAdvancedGoalMinPrice' => 'int64',
+        'deepBehaviorAdvancedGoalMaxPrice' => 'int64',
+        'deepOptimizationGoalType' => null
     ];
 
     /**
@@ -163,7 +171,11 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepWorthAdvancedGoal' => 'deep_worth_advanced_goal',
         'conversionLinkId' => 'conversion_link_id',
         'impressionFeedbackUrl' => 'impression_feedback_url',
-        'attributionWindow' => 'attribution_window'
+        'attributionWindow' => 'attribution_window',
+        'deepBehaviorAdvancedGoal' => 'deep_behavior_advanced_goal',
+        'deepBehaviorAdvancedGoalMinPrice' => 'deep_behavior_advanced_goal_min_price',
+        'deepBehaviorAdvancedGoalMaxPrice' => 'deep_behavior_advanced_goal_max_price',
+        'deepOptimizationGoalType' => 'deep_optimization_goal_type'
     ];
 
     /**
@@ -194,7 +206,11 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepWorthAdvancedGoal' => 'setDeepWorthAdvancedGoal',
         'conversionLinkId' => 'setConversionLinkId',
         'impressionFeedbackUrl' => 'setImpressionFeedbackUrl',
-        'attributionWindow' => 'setAttributionWindow'
+        'attributionWindow' => 'setAttributionWindow',
+        'deepBehaviorAdvancedGoal' => 'setDeepBehaviorAdvancedGoal',
+        'deepBehaviorAdvancedGoalMinPrice' => 'setDeepBehaviorAdvancedGoalMinPrice',
+        'deepBehaviorAdvancedGoalMaxPrice' => 'setDeepBehaviorAdvancedGoalMaxPrice',
+        'deepOptimizationGoalType' => 'setDeepOptimizationGoalType'
     ];
 
     /**
@@ -225,7 +241,11 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepWorthAdvancedGoal' => 'getDeepWorthAdvancedGoal',
         'conversionLinkId' => 'getConversionLinkId',
         'impressionFeedbackUrl' => 'getImpressionFeedbackUrl',
-        'attributionWindow' => 'getAttributionWindow'
+        'attributionWindow' => 'getAttributionWindow',
+        'deepBehaviorAdvancedGoal' => 'getDeepBehaviorAdvancedGoal',
+        'deepBehaviorAdvancedGoalMinPrice' => 'getDeepBehaviorAdvancedGoalMinPrice',
+        'deepBehaviorAdvancedGoalMaxPrice' => 'getDeepBehaviorAdvancedGoalMaxPrice',
+        'deepOptimizationGoalType' => 'getDeepOptimizationGoalType'
     ];
 
     /**
@@ -311,6 +331,10 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['conversionLinkId'] = isset($data['conversionLinkId']) ? $data['conversionLinkId'] : null;
         $this->container['impressionFeedbackUrl'] = isset($data['impressionFeedbackUrl']) ? $data['impressionFeedbackUrl'] : null;
         $this->container['attributionWindow'] = isset($data['attributionWindow']) ? $data['attributionWindow'] : null;
+        $this->container['deepBehaviorAdvancedGoal'] = isset($data['deepBehaviorAdvancedGoal']) ? $data['deepBehaviorAdvancedGoal'] : null;
+        $this->container['deepBehaviorAdvancedGoalMinPrice'] = isset($data['deepBehaviorAdvancedGoalMinPrice']) ? $data['deepBehaviorAdvancedGoalMinPrice'] : null;
+        $this->container['deepBehaviorAdvancedGoalMaxPrice'] = isset($data['deepBehaviorAdvancedGoalMaxPrice']) ? $data['deepBehaviorAdvancedGoalMaxPrice'] : null;
+        $this->container['deepOptimizationGoalType'] = isset($data['deepOptimizationGoalType']) ? $data['deepOptimizationGoalType'] : null;
     }
 
     /**
@@ -885,6 +909,102 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     public function setAttributionWindow($attributionWindow)
     {
         $this->container['attributionWindow'] = $attributionWindow;
+
+        return $this;
+    }
+
+    /**
+     * Gets deepBehaviorAdvancedGoal
+     *
+     * @return \TencentAds\Model\IntOptimizationGoal|mixed
+     */
+    public function getDeepBehaviorAdvancedGoal()
+    {
+        return $this->container['deepBehaviorAdvancedGoal'];
+    }
+
+    /**
+     * Sets deepBehaviorAdvancedGoal
+     *
+     * @param \TencentAds\Model\IntOptimizationGoal|mixed $deepBehaviorAdvancedGoal deepBehaviorAdvancedGoal
+     *
+     * @return $this
+     */
+    public function setDeepBehaviorAdvancedGoal($deepBehaviorAdvancedGoal)
+    {
+        $this->container['deepBehaviorAdvancedGoal'] = $deepBehaviorAdvancedGoal;
+
+        return $this;
+    }
+
+    /**
+     * Gets deepBehaviorAdvancedGoalMinPrice
+     *
+     * @return int|mixed
+     */
+    public function getDeepBehaviorAdvancedGoalMinPrice()
+    {
+        return $this->container['deepBehaviorAdvancedGoalMinPrice'];
+    }
+
+    /**
+     * Sets deepBehaviorAdvancedGoalMinPrice
+     *
+     * @param int|mixed $deepBehaviorAdvancedGoalMinPrice deepBehaviorAdvancedGoalMinPrice
+     *
+     * @return $this
+     */
+    public function setDeepBehaviorAdvancedGoalMinPrice($deepBehaviorAdvancedGoalMinPrice)
+    {
+        $this->container['deepBehaviorAdvancedGoalMinPrice'] = $deepBehaviorAdvancedGoalMinPrice;
+
+        return $this;
+    }
+
+    /**
+     * Gets deepBehaviorAdvancedGoalMaxPrice
+     *
+     * @return int|mixed
+     */
+    public function getDeepBehaviorAdvancedGoalMaxPrice()
+    {
+        return $this->container['deepBehaviorAdvancedGoalMaxPrice'];
+    }
+
+    /**
+     * Sets deepBehaviorAdvancedGoalMaxPrice
+     *
+     * @param int|mixed $deepBehaviorAdvancedGoalMaxPrice deepBehaviorAdvancedGoalMaxPrice
+     *
+     * @return $this
+     */
+    public function setDeepBehaviorAdvancedGoalMaxPrice($deepBehaviorAdvancedGoalMaxPrice)
+    {
+        $this->container['deepBehaviorAdvancedGoalMaxPrice'] = $deepBehaviorAdvancedGoalMaxPrice;
+
+        return $this;
+    }
+
+    /**
+     * Gets deepOptimizationGoalType
+     *
+     * @return \TencentAds\Model\DeepOptimizationGoalType|mixed
+     */
+    public function getDeepOptimizationGoalType()
+    {
+        return $this->container['deepOptimizationGoalType'];
+    }
+
+    /**
+     * Sets deepOptimizationGoalType
+     *
+     * @param \TencentAds\Model\DeepOptimizationGoalType|mixed $deepOptimizationGoalType deepOptimizationGoalType
+     *
+     * @return $this
+     */
+    public function setDeepOptimizationGoalType($deepOptimizationGoalType)
+    {
+        $this->container['deepOptimizationGoalType'] = $deepOptimizationGoalType;
 
         return $this;
     }
