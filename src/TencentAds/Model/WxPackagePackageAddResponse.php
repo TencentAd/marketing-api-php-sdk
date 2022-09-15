@@ -1,6 +1,6 @@
 <?php
 /**
- * WechatPagesGrantinfoGetListStruct
+ * WxPackagePackageAddResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * WechatPagesGrantinfoGetListStruct Class Doc Comment
+ * WxPackagePackageAddResponse Class Doc Comment
  *
  * @category Class
- * @description 返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
+class WxPackagePackageAddResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'WechatPagesGrantinfoGetListStruct';
+    protected static $swaggerModelName = 'WxPackagePackageAddResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,10 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'ownerAccountId' => 'int',
-        'ownerAccountName' => 'string',
-        'createdTime' => 'string'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]'
     ];
 
     /**
@@ -69,9 +69,10 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'ownerAccountId' => 'int64',
-        'ownerAccountName' => null,
-        'createdTime' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null
     ];
 
     /**
@@ -101,9 +102,10 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'ownerAccountId' => 'owner_account_id',
-        'ownerAccountName' => 'owner_account_name',
-        'createdTime' => 'created_time'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors'
     ];
 
     /**
@@ -112,9 +114,10 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'ownerAccountId' => 'setOwnerAccountId',
-        'ownerAccountName' => 'setOwnerAccountName',
-        'createdTime' => 'setCreatedTime'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors'
     ];
 
     /**
@@ -123,9 +126,10 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'ownerAccountId' => 'getOwnerAccountId',
-        'ownerAccountName' => 'getOwnerAccountName',
-        'createdTime' => 'getCreatedTime'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors'
     ];
 
     /**
@@ -188,9 +192,10 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['ownerAccountId'] = isset($data['ownerAccountId']) ? $data['ownerAccountId'] : null;
-        $this->container['ownerAccountName'] = isset($data['ownerAccountName']) ? $data['ownerAccountName'] : null;
-        $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
     }
 
     /**
@@ -218,73 +223,97 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets ownerAccountId
+     * Gets code
      *
      * @return int|mixed
      */
-    public function getOwnerAccountId()
+    public function getCode()
     {
-        return $this->container['ownerAccountId'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets ownerAccountId
+     * Sets code
      *
-     * @param int|mixed $ownerAccountId ownerAccountId
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setOwnerAccountId($ownerAccountId)
+    public function setCode($code)
     {
-        $this->container['ownerAccountId'] = $ownerAccountId;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets ownerAccountName
+     * Gets message
      *
      * @return string|mixed
      */
-    public function getOwnerAccountName()
+    public function getMessage()
     {
-        return $this->container['ownerAccountName'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets ownerAccountName
+     * Sets message
      *
-     * @param string|mixed $ownerAccountName ownerAccountName
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setOwnerAccountName($ownerAccountName)
+    public function setMessage($message)
     {
-        $this->container['ownerAccountName'] = $ownerAccountName;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets createdTime
+     * Gets messageCn
      *
      * @return string|mixed
      */
-    public function getCreatedTime()
+    public function getMessageCn()
     {
-        return $this->container['createdTime'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets createdTime
+     * Sets messageCn
      *
-     * @param string|mixed $createdTime createdTime
+     * @param string|mixed $messageCn messageCn
      *
      * @return $this
      */
-    public function setCreatedTime($createdTime)
+    public function setMessageCn($messageCn)
     {
-        $this->container['createdTime'] = $createdTime;
+        $this->container['messageCn'] = $messageCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets errors
+     *
+     * @return \TencentAds\Model\ApiErrorStruct[]|mixed
+     */
+    public function getErrors()
+    {
+        return $this->container['errors'];
+    }
+
+    /**
+     * Sets errors
+     *
+     * @param \TencentAds\Model\ApiErrorStruct[]|mixed $errors errors
+     *
+     * @return $this
+     */
+    public function setErrors($errors)
+    {
+        $this->container['errors'] = $errors;
 
         return $this;
     }

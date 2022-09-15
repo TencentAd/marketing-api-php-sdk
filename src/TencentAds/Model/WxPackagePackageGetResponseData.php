@@ -1,6 +1,6 @@
 <?php
 /**
- * WechatPagesGrantinfoGetListStruct
+ * WxPackagePackageGetResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * WechatPagesGrantinfoGetListStruct Class Doc Comment
+ * WxPackagePackageGetResponseData Class Doc Comment
  *
  * @category Class
- * @description 返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
+class WxPackagePackageGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'WechatPagesGrantinfoGetListStruct';
+    protected static $swaggerModelName = 'WxPackagePackageGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,8 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'ownerAccountId' => 'int',
-        'ownerAccountName' => 'string',
-        'createdTime' => 'string'
+        'pageInfo' => '\TencentAds\Model\PageInfo',
+        'list' => '\TencentAds\Model\PackageInfoStruct[]'
     ];
 
     /**
@@ -69,9 +67,8 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'ownerAccountId' => 'int64',
-        'ownerAccountName' => null,
-        'createdTime' => null
+        'pageInfo' => null,
+        'list' => null
     ];
 
     /**
@@ -101,9 +98,8 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'ownerAccountId' => 'owner_account_id',
-        'ownerAccountName' => 'owner_account_name',
-        'createdTime' => 'created_time'
+        'pageInfo' => 'page_info',
+        'list' => 'list'
     ];
 
     /**
@@ -112,9 +108,8 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'ownerAccountId' => 'setOwnerAccountId',
-        'ownerAccountName' => 'setOwnerAccountName',
-        'createdTime' => 'setCreatedTime'
+        'pageInfo' => 'setPageInfo',
+        'list' => 'setList'
     ];
 
     /**
@@ -123,9 +118,8 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'ownerAccountId' => 'getOwnerAccountId',
-        'ownerAccountName' => 'getOwnerAccountName',
-        'createdTime' => 'getCreatedTime'
+        'pageInfo' => 'getPageInfo',
+        'list' => 'getList'
     ];
 
     /**
@@ -188,9 +182,8 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['ownerAccountId'] = isset($data['ownerAccountId']) ? $data['ownerAccountId'] : null;
-        $this->container['ownerAccountName'] = isset($data['ownerAccountName']) ? $data['ownerAccountName'] : null;
-        $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
+        $this->container['pageInfo'] = isset($data['pageInfo']) ? $data['pageInfo'] : null;
+        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
     }
 
     /**
@@ -218,73 +211,49 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets ownerAccountId
+     * Gets pageInfo
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\PageInfo|mixed
      */
-    public function getOwnerAccountId()
+    public function getPageInfo()
     {
-        return $this->container['ownerAccountId'];
+        return $this->container['pageInfo'];
     }
 
     /**
-     * Sets ownerAccountId
+     * Sets pageInfo
      *
-     * @param int|mixed $ownerAccountId ownerAccountId
+     * @param \TencentAds\Model\PageInfo|mixed $pageInfo pageInfo
      *
      * @return $this
      */
-    public function setOwnerAccountId($ownerAccountId)
+    public function setPageInfo($pageInfo)
     {
-        $this->container['ownerAccountId'] = $ownerAccountId;
+        $this->container['pageInfo'] = $pageInfo;
 
         return $this;
     }
 
     /**
-     * Gets ownerAccountName
+     * Gets list
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\PackageInfoStruct[]|mixed
      */
-    public function getOwnerAccountName()
+    public function getList()
     {
-        return $this->container['ownerAccountName'];
+        return $this->container['list'];
     }
 
     /**
-     * Sets ownerAccountName
+     * Sets list
      *
-     * @param string|mixed $ownerAccountName ownerAccountName
+     * @param \TencentAds\Model\PackageInfoStruct[]|mixed $list list
      *
      * @return $this
      */
-    public function setOwnerAccountName($ownerAccountName)
+    public function setList($list)
     {
-        $this->container['ownerAccountName'] = $ownerAccountName;
-
-        return $this;
-    }
-
-    /**
-     * Gets createdTime
-     *
-     * @return string|mixed
-     */
-    public function getCreatedTime()
-    {
-        return $this->container['createdTime'];
-    }
-
-    /**
-     * Sets createdTime
-     *
-     * @param string|mixed $createdTime createdTime
-     *
-     * @return $this
-     */
-    public function setCreatedTime($createdTime)
-    {
-        $this->container['createdTime'] = $createdTime;
+        $this->container['list'] = $list;
 
         return $this;
     }

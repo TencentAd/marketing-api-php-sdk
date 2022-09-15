@@ -153,6 +153,8 @@ use TencentAds\Container\WechatPagesCustomApiContainer;
 use TencentAds\Container\WechatPagesGrantinfoApiContainer;
 use TencentAds\Container\WechatQualificationsApiContainer;
 use TencentAds\Container\WildcardsApiContainer;
+use TencentAds\Container\WxPackageAccountApiContainer;
+use TencentAds\Container\WxPackagePackageApiContainer;
 use TencentAds\Container\XijingComplexTemplateApiContainer;
 use TencentAds\Container\XijingPageApiContainer;
 use TencentAds\Container\XijingPageByComponentsApiContainer;
@@ -618,6 +620,12 @@ class App
 
     /** @var WildcardsApiContainer */
     public $wildcardsApiContainer;
+
+    /** @var WxPackageAccountApiContainer */
+    public $wxPackageAccountApiContainer;
+
+    /** @var WxPackagePackageApiContainer */
+    public $wxPackagePackageApiContainer;
 
     /** @var XijingComplexTemplateApiContainer */
     public $xijingComplexTemplateApiContainer;
@@ -2764,6 +2772,34 @@ class App
             $this->wildcardsApiContainer = $container;
         }
         return $this->wildcardsApiContainer;
+    }
+
+
+    /**
+     * @return WxPackageAccountApiContainer
+     */
+    public function wxPackageAccount()
+    {
+        if (empty($this->wxPackageAccountApiContainer)) {
+            $container = new WxPackageAccountApiContainer();
+            $container->init($this, $this->getClient());
+            $this->wxPackageAccountApiContainer = $container;
+        }
+        return $this->wxPackageAccountApiContainer;
+    }
+
+
+    /**
+     * @return WxPackagePackageApiContainer
+     */
+    public function wxPackagePackage()
+    {
+        if (empty($this->wxPackagePackageApiContainer)) {
+            $container = new WxPackagePackageApiContainer();
+            $container->init($this, $this->getClient());
+            $this->wxPackagePackageApiContainer = $container;
+        }
+        return $this->wxPackagePackageApiContainer;
     }
 
 

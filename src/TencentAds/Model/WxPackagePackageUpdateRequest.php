@@ -1,6 +1,6 @@
 <?php
 /**
- * WechatPagesGrantinfoGetListStruct
+ * WxPackagePackageUpdateRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * WechatPagesGrantinfoGetListStruct Class Doc Comment
+ * WxPackagePackageUpdateRequest Class Doc Comment
  *
  * @category Class
- * @description 返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
+class WxPackagePackageUpdateRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'WechatPagesGrantinfoGetListStruct';
+    protected static $swaggerModelName = 'WxPackagePackageUpdateRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,10 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'ownerAccountId' => 'int',
-        'ownerAccountName' => 'string',
-        'createdTime' => 'string'
+        'accountId' => 'int',
+        'packageId' => 'int',
+        'packageName' => 'string',
+        'wechatIds' => 'string'
     ];
 
     /**
@@ -69,9 +69,10 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'ownerAccountId' => 'int64',
-        'ownerAccountName' => null,
-        'createdTime' => null
+        'accountId' => 'int64',
+        'packageId' => 'int64',
+        'packageName' => null,
+        'wechatIds' => null
     ];
 
     /**
@@ -101,9 +102,10 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'ownerAccountId' => 'owner_account_id',
-        'ownerAccountName' => 'owner_account_name',
-        'createdTime' => 'created_time'
+        'accountId' => 'account_id',
+        'packageId' => 'package_id',
+        'packageName' => 'package_name',
+        'wechatIds' => 'wechat_ids'
     ];
 
     /**
@@ -112,9 +114,10 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'ownerAccountId' => 'setOwnerAccountId',
-        'ownerAccountName' => 'setOwnerAccountName',
-        'createdTime' => 'setCreatedTime'
+        'accountId' => 'setAccountId',
+        'packageId' => 'setPackageId',
+        'packageName' => 'setPackageName',
+        'wechatIds' => 'setWechatIds'
     ];
 
     /**
@@ -123,9 +126,10 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'ownerAccountId' => 'getOwnerAccountId',
-        'ownerAccountName' => 'getOwnerAccountName',
-        'createdTime' => 'getCreatedTime'
+        'accountId' => 'getAccountId',
+        'packageId' => 'getPackageId',
+        'packageName' => 'getPackageName',
+        'wechatIds' => 'getWechatIds'
     ];
 
     /**
@@ -188,9 +192,10 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['ownerAccountId'] = isset($data['ownerAccountId']) ? $data['ownerAccountId'] : null;
-        $this->container['ownerAccountName'] = isset($data['ownerAccountName']) ? $data['ownerAccountName'] : null;
-        $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['packageId'] = isset($data['packageId']) ? $data['packageId'] : null;
+        $this->container['packageName'] = isset($data['packageName']) ? $data['packageName'] : null;
+        $this->container['wechatIds'] = isset($data['wechatIds']) ? $data['wechatIds'] : null;
     }
 
     /**
@@ -218,73 +223,97 @@ class WechatPagesGrantinfoGetListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets ownerAccountId
+     * Gets accountId
      *
      * @return int|mixed
      */
-    public function getOwnerAccountId()
+    public function getAccountId()
     {
-        return $this->container['ownerAccountId'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets ownerAccountId
+     * Sets accountId
      *
-     * @param int|mixed $ownerAccountId ownerAccountId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setOwnerAccountId($ownerAccountId)
+    public function setAccountId($accountId)
     {
-        $this->container['ownerAccountId'] = $ownerAccountId;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }
 
     /**
-     * Gets ownerAccountName
+     * Gets packageId
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getOwnerAccountName()
+    public function getPackageId()
     {
-        return $this->container['ownerAccountName'];
+        return $this->container['packageId'];
     }
 
     /**
-     * Sets ownerAccountName
+     * Sets packageId
      *
-     * @param string|mixed $ownerAccountName ownerAccountName
+     * @param int|mixed $packageId packageId
      *
      * @return $this
      */
-    public function setOwnerAccountName($ownerAccountName)
+    public function setPackageId($packageId)
     {
-        $this->container['ownerAccountName'] = $ownerAccountName;
+        $this->container['packageId'] = $packageId;
 
         return $this;
     }
 
     /**
-     * Gets createdTime
+     * Gets packageName
      *
      * @return string|mixed
      */
-    public function getCreatedTime()
+    public function getPackageName()
     {
-        return $this->container['createdTime'];
+        return $this->container['packageName'];
     }
 
     /**
-     * Sets createdTime
+     * Sets packageName
      *
-     * @param string|mixed $createdTime createdTime
+     * @param string|mixed $packageName packageName
      *
      * @return $this
      */
-    public function setCreatedTime($createdTime)
+    public function setPackageName($packageName)
     {
-        $this->container['createdTime'] = $createdTime;
+        $this->container['packageName'] = $packageName;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatIds
+     *
+     * @return string|mixed
+     */
+    public function getWechatIds()
+    {
+        return $this->container['wechatIds'];
+    }
+
+    /**
+     * Sets wechatIds
+     *
+     * @param string|mixed $wechatIds wechatIds
+     *
+     * @return $this
+     */
+    public function setWechatIds($wechatIds)
+    {
+        $this->container['wechatIds'] = $wechatIds;
 
         return $this;
     }

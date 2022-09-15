@@ -66,6 +66,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'optimizationGoal' => '\TencentAds\Model\OptimizationGoal',
         'billingEvent' => '\TencentAds\Model\BillingEvent',
         'bidAmount' => 'int',
+        'totalBudget' => 'int',
         'dailyBudget' => 'int',
         'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
         'promotedObjectId' => 'string',
@@ -140,6 +141,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'optimizationGoal' => null,
         'billingEvent' => null,
         'bidAmount' => 'int64',
+        'totalBudget' => 'int64',
         'dailyBudget' => 'int64',
         'promotedObjectType' => null,
         'promotedObjectId' => null,
@@ -235,6 +237,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'optimizationGoal' => 'optimization_goal',
         'billingEvent' => 'billing_event',
         'bidAmount' => 'bid_amount',
+        'totalBudget' => 'total_budget',
         'dailyBudget' => 'daily_budget',
         'promotedObjectType' => 'promoted_object_type',
         'promotedObjectId' => 'promoted_object_id',
@@ -309,6 +312,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'optimizationGoal' => 'setOptimizationGoal',
         'billingEvent' => 'setBillingEvent',
         'bidAmount' => 'setBidAmount',
+        'totalBudget' => 'setTotalBudget',
         'dailyBudget' => 'setDailyBudget',
         'promotedObjectType' => 'setPromotedObjectType',
         'promotedObjectId' => 'setPromotedObjectId',
@@ -383,6 +387,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'optimizationGoal' => 'getOptimizationGoal',
         'billingEvent' => 'getBillingEvent',
         'bidAmount' => 'getBidAmount',
+        'totalBudget' => 'getTotalBudget',
         'dailyBudget' => 'getDailyBudget',
         'promotedObjectType' => 'getPromotedObjectType',
         'promotedObjectId' => 'getPromotedObjectId',
@@ -511,6 +516,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['optimizationGoal'] = isset($data['optimizationGoal']) ? $data['optimizationGoal'] : null;
         $this->container['billingEvent'] = isset($data['billingEvent']) ? $data['billingEvent'] : null;
         $this->container['bidAmount'] = isset($data['bidAmount']) ? $data['bidAmount'] : null;
+        $this->container['totalBudget'] = isset($data['totalBudget']) ? $data['totalBudget'] : null;
         $this->container['dailyBudget'] = isset($data['dailyBudget']) ? $data['dailyBudget'] : null;
         $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
         $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
@@ -783,6 +789,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setBidAmount($bidAmount)
     {
         $this->container['bidAmount'] = $bidAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets totalBudget
+     *
+     * @return int|mixed
+     */
+    public function getTotalBudget()
+    {
+        return $this->container['totalBudget'];
+    }
+
+    /**
+     * Sets totalBudget
+     *
+     * @param int|mixed $totalBudget totalBudget
+     *
+     * @return $this
+     */
+    public function setTotalBudget($totalBudget)
+    {
+        $this->container['totalBudget'] = $totalBudget;
 
         return $this;
     }
