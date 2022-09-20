@@ -463,7 +463,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoLiveCommentCount' => 'int',
         'videoLiveShareCount' => 'int',
         'videoLiveCickCommodityCount' => 'int',
-        'videoLiveExpUserCount' => 'int',
         'liveStreamExpUv' => 'int',
         'videoLiveHeartUserCount' => 'int',
         'videoLiveCommentUserCount' => 'int',
@@ -1192,7 +1191,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoLiveCommentCount' => 'int64',
         'videoLiveShareCount' => 'int64',
         'videoLiveCickCommodityCount' => 'int64',
-        'videoLiveExpUserCount' => 'int64',
         'liveStreamExpUv' => 'int64',
         'videoLiveHeartUserCount' => 'int64',
         'videoLiveCommentUserCount' => 'int64',
@@ -1942,7 +1940,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoLiveCommentCount' => 'video_live_comment_count',
         'videoLiveShareCount' => 'video_live_share_count',
         'videoLiveCickCommodityCount' => 'video_live_cick_commodity_count',
-        'videoLiveExpUserCount' => 'video_live_exp_user_count',
         'liveStreamExpUv' => 'live_stream_exp_uv',
         'videoLiveHeartUserCount' => 'video_live_heart_user_count',
         'videoLiveCommentUserCount' => 'video_live_comment_user_count',
@@ -2671,7 +2668,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoLiveCommentCount' => 'setVideoLiveCommentCount',
         'videoLiveShareCount' => 'setVideoLiveShareCount',
         'videoLiveCickCommodityCount' => 'setVideoLiveCickCommodityCount',
-        'videoLiveExpUserCount' => 'setVideoLiveExpUserCount',
         'liveStreamExpUv' => 'setLiveStreamExpUv',
         'videoLiveHeartUserCount' => 'setVideoLiveHeartUserCount',
         'videoLiveCommentUserCount' => 'setVideoLiveCommentUserCount',
@@ -3400,7 +3396,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoLiveCommentCount' => 'getVideoLiveCommentCount',
         'videoLiveShareCount' => 'getVideoLiveShareCount',
         'videoLiveCickCommodityCount' => 'getVideoLiveCickCommodityCount',
-        'videoLiveExpUserCount' => 'getVideoLiveExpUserCount',
         'liveStreamExpUv' => 'getLiveStreamExpUv',
         'videoLiveHeartUserCount' => 'getVideoLiveHeartUserCount',
         'videoLiveCommentUserCount' => 'getVideoLiveCommentUserCount',
@@ -4183,7 +4178,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['videoLiveCommentCount'] = isset($data['videoLiveCommentCount']) ? $data['videoLiveCommentCount'] : null;
         $this->container['videoLiveShareCount'] = isset($data['videoLiveShareCount']) ? $data['videoLiveShareCount'] : null;
         $this->container['videoLiveCickCommodityCount'] = isset($data['videoLiveCickCommodityCount']) ? $data['videoLiveCickCommodityCount'] : null;
-        $this->container['videoLiveExpUserCount'] = isset($data['videoLiveExpUserCount']) ? $data['videoLiveExpUserCount'] : null;
         $this->container['liveStreamExpUv'] = isset($data['liveStreamExpUv']) ? $data['liveStreamExpUv'] : null;
         $this->container['videoLiveHeartUserCount'] = isset($data['videoLiveHeartUserCount']) ? $data['videoLiveHeartUserCount'] : null;
         $this->container['videoLiveCommentUserCount'] = isset($data['videoLiveCommentUserCount']) ? $data['videoLiveCommentUserCount'] : null;
@@ -14241,30 +14235,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setVideoLiveCickCommodityCount($videoLiveCickCommodityCount)
     {
         $this->container['videoLiveCickCommodityCount'] = $videoLiveCickCommodityCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoLiveExpUserCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoLiveExpUserCount()
-    {
-        return $this->container['videoLiveExpUserCount'];
-    }
-
-    /**
-     * Sets videoLiveExpUserCount
-     *
-     * @param int|mixed $videoLiveExpUserCount videoLiveExpUserCount
-     *
-     * @return $this
-     */
-    public function setVideoLiveExpUserCount($videoLiveExpUserCount)
-    {
-        $this->container['videoLiveExpUserCount'] = $videoLiveExpUserCount;
 
         return $this;
     }
