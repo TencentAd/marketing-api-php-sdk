@@ -1,6 +1,6 @@
 <?php
 /**
- * DynamicCreativeType
+ * LandingPageMediaType
  *
  * PHP version 5
  *
@@ -31,22 +31,23 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DynamicCreativeType Class Doc Comment
+ * LandingPageMediaType Class Doc Comment
  *
  * @category Class
- * @description 动态创意类型
+ * @description 落地页媒体平台类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DynamicCreativeType
+class LandingPageMediaType
 {
     /**
      * Possible values of this enum
      */
-    const COMMON = 'DYNAMIC_CREATIVE_TYPE_COMMON';
-    const PROGRAM = 'DYNAMIC_CREATIVE_TYPE_PROGRAM';
-    const COMPONENT = 'DYNAMIC_CREATIVE_TYPE_COMPONENT';
+    const _DEFAULT = 'DEFAULT';
+    const ALL = 'ALL';
+    const SCREEN_PC = 'SCREEN_PC';
+    const SCREEN_PHONE = 'SCREEN_PHONE';
     
     /**
      * Gets allowable values of the enum
@@ -55,9 +56,10 @@ class DynamicCreativeType
     public static function getAllowableEnumValues()
     {
         return [
-            self::COMMON,
-            self::PROGRAM,
-            self::COMPONENT,
+            self::_DEFAULT,
+            self::ALL,
+            self::SCREEN_PC,
+            self::SCREEN_PHONE,
         ];
     }
 }

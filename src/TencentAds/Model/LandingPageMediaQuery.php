@@ -1,6 +1,6 @@
 <?php
 /**
- * LandingPageStructure
+ * LandingPageMediaQuery
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * LandingPageStructure Class Doc Comment
+ * LandingPageMediaQuery Class Doc Comment
  *
  * @category Class
- * @description 跳转落地页信息
+ * @description 落地页适用场景描述
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class LandingPageStructure implements ModelInterface, ArrayAccess
+class LandingPageMediaQuery implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class LandingPageStructure implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'landing_page_structure';
+    protected static $swaggerModelName = 'landing_page_media_query';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,12 +58,7 @@ class LandingPageStructure implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pageSpec' => '\TencentAds\Model\PageSpec',
-        'pageType' => '\TencentAds\Model\DestinationType',
-        'linkNameType' => '\TencentAds\Model\LinkUrlLinkNameType',
-        'landingPagePlatform' => '\TencentAds\Model\LandingPagePlatform',
-        'landingPageInfo' => '\TencentAds\Model\LandingPageInfo',
-        'mediaQuery' => '\TencentAds\Model\LandingPageMediaQuery'
+        'mediaType' => '\TencentAds\Model\LandingPageMediaType'
     ];
 
     /**
@@ -72,12 +67,7 @@ class LandingPageStructure implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'pageSpec' => null,
-        'pageType' => null,
-        'linkNameType' => null,
-        'landingPagePlatform' => null,
-        'landingPageInfo' => null,
-        'mediaQuery' => null
+        'mediaType' => null
     ];
 
     /**
@@ -107,12 +97,7 @@ class LandingPageStructure implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'pageSpec' => 'page_spec',
-        'pageType' => 'page_type',
-        'linkNameType' => 'link_name_type',
-        'landingPagePlatform' => 'landing_page_platform',
-        'landingPageInfo' => 'landing_page_info',
-        'mediaQuery' => 'media_query'
+        'mediaType' => 'media_type'
     ];
 
     /**
@@ -121,12 +106,7 @@ class LandingPageStructure implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'pageSpec' => 'setPageSpec',
-        'pageType' => 'setPageType',
-        'linkNameType' => 'setLinkNameType',
-        'landingPagePlatform' => 'setLandingPagePlatform',
-        'landingPageInfo' => 'setLandingPageInfo',
-        'mediaQuery' => 'setMediaQuery'
+        'mediaType' => 'setMediaType'
     ];
 
     /**
@@ -135,12 +115,7 @@ class LandingPageStructure implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'pageSpec' => 'getPageSpec',
-        'pageType' => 'getPageType',
-        'linkNameType' => 'getLinkNameType',
-        'landingPagePlatform' => 'getLandingPagePlatform',
-        'landingPageInfo' => 'getLandingPageInfo',
-        'mediaQuery' => 'getMediaQuery'
+        'mediaType' => 'getMediaType'
     ];
 
     /**
@@ -203,12 +178,7 @@ class LandingPageStructure implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['pageSpec'] = isset($data['pageSpec']) ? $data['pageSpec'] : null;
-        $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
-        $this->container['linkNameType'] = isset($data['linkNameType']) ? $data['linkNameType'] : null;
-        $this->container['landingPagePlatform'] = isset($data['landingPagePlatform']) ? $data['landingPagePlatform'] : null;
-        $this->container['landingPageInfo'] = isset($data['landingPageInfo']) ? $data['landingPageInfo'] : null;
-        $this->container['mediaQuery'] = isset($data['mediaQuery']) ? $data['mediaQuery'] : null;
+        $this->container['mediaType'] = isset($data['mediaType']) ? $data['mediaType'] : null;
     }
 
     /**
@@ -236,145 +206,25 @@ class LandingPageStructure implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets pageSpec
+     * Gets mediaType
      *
-     * @return \TencentAds\Model\PageSpec|mixed
+     * @return \TencentAds\Model\LandingPageMediaType|mixed
      */
-    public function getPageSpec()
+    public function getMediaType()
     {
-        return $this->container['pageSpec'];
+        return $this->container['mediaType'];
     }
 
     /**
-     * Sets pageSpec
+     * Sets mediaType
      *
-     * @param \TencentAds\Model\PageSpec|mixed $pageSpec pageSpec
+     * @param \TencentAds\Model\LandingPageMediaType|mixed $mediaType mediaType
      *
      * @return $this
      */
-    public function setPageSpec($pageSpec)
+    public function setMediaType($mediaType)
     {
-        $this->container['pageSpec'] = $pageSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets pageType
-     *
-     * @return \TencentAds\Model\DestinationType|mixed
-     */
-    public function getPageType()
-    {
-        return $this->container['pageType'];
-    }
-
-    /**
-     * Sets pageType
-     *
-     * @param \TencentAds\Model\DestinationType|mixed $pageType pageType
-     *
-     * @return $this
-     */
-    public function setPageType($pageType)
-    {
-        $this->container['pageType'] = $pageType;
-
-        return $this;
-    }
-
-    /**
-     * Gets linkNameType
-     *
-     * @return \TencentAds\Model\LinkUrlLinkNameType|mixed
-     */
-    public function getLinkNameType()
-    {
-        return $this->container['linkNameType'];
-    }
-
-    /**
-     * Sets linkNameType
-     *
-     * @param \TencentAds\Model\LinkUrlLinkNameType|mixed $linkNameType linkNameType
-     *
-     * @return $this
-     */
-    public function setLinkNameType($linkNameType)
-    {
-        $this->container['linkNameType'] = $linkNameType;
-
-        return $this;
-    }
-
-    /**
-     * Gets landingPagePlatform
-     *
-     * @return \TencentAds\Model\LandingPagePlatform|mixed
-     */
-    public function getLandingPagePlatform()
-    {
-        return $this->container['landingPagePlatform'];
-    }
-
-    /**
-     * Sets landingPagePlatform
-     *
-     * @param \TencentAds\Model\LandingPagePlatform|mixed $landingPagePlatform landingPagePlatform
-     *
-     * @return $this
-     */
-    public function setLandingPagePlatform($landingPagePlatform)
-    {
-        $this->container['landingPagePlatform'] = $landingPagePlatform;
-
-        return $this;
-    }
-
-    /**
-     * Gets landingPageInfo
-     *
-     * @return \TencentAds\Model\LandingPageInfo|mixed
-     */
-    public function getLandingPageInfo()
-    {
-        return $this->container['landingPageInfo'];
-    }
-
-    /**
-     * Sets landingPageInfo
-     *
-     * @param \TencentAds\Model\LandingPageInfo|mixed $landingPageInfo landingPageInfo
-     *
-     * @return $this
-     */
-    public function setLandingPageInfo($landingPageInfo)
-    {
-        $this->container['landingPageInfo'] = $landingPageInfo;
-
-        return $this;
-    }
-
-    /**
-     * Gets mediaQuery
-     *
-     * @return \TencentAds\Model\LandingPageMediaQuery|mixed
-     */
-    public function getMediaQuery()
-    {
-        return $this->container['mediaQuery'];
-    }
-
-    /**
-     * Sets mediaQuery
-     *
-     * @param \TencentAds\Model\LandingPageMediaQuery|mixed $mediaQuery mediaQuery
-     *
-     * @return $this
-     */
-    public function setMediaQuery($mediaQuery)
-    {
-        $this->container['mediaQuery'] = $mediaQuery;
+        $this->container['mediaType'] = $mediaType;
 
         return $this;
     }

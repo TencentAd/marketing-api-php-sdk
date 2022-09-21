@@ -72,6 +72,7 @@ class ElementType
     const ANIMATION_EFFECT = 'ANIMATION_EFFECT';
     const LABEL = 'LABEL';
     const LANDING_PAGE_STRUCT = 'LANDING_PAGE_STRUCT';
+    const COMPONENT = 'COMPONENT';
     
     /**
      * Gets allowable values of the enum
@@ -108,6 +109,7 @@ class ElementType
             self::ANIMATION_EFFECT,
             self::LABEL,
             self::LANDING_PAGE_STRUCT,
+            self::COMPONENT,
         ];
     }
 }
