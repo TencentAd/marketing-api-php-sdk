@@ -75,6 +75,7 @@ class DestinationTypeRead
     const ARTICAL_WECHAT = 'PAGE_TYPE_ARTICAL_WECHAT';
     const CHANNELS_HALF_CARD = 'PAGE_TYPE_CHANNELS_HALF_CARD';
     const TSA_OTT = 'PAGE_TYPE_TSA_OTT';
+    const NOT_USED = 'PAGE_TYPE_NOT_USED';
     
     /**
      * Gets allowable values of the enum
@@ -114,6 +115,7 @@ class DestinationTypeRead
             self::ARTICAL_WECHAT,
             self::CHANNELS_HALF_CARD,
             self::TSA_OTT,
+            self::NOT_USED,
         ];
     }
 }
