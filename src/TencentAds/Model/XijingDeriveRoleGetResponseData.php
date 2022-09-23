@@ -1,6 +1,6 @@
 <?php
 /**
- * AndroidUnionChannelPackagesAddResponse
+ * XijingDeriveRoleGetResponseData
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AndroidUnionChannelPackagesAddResponse Class Doc Comment
+ * XijingDeriveRoleGetResponseData Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AndroidUnionChannelPackagesAddResponse implements ModelInterface, ArrayAccess
+class XijingDeriveRoleGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class AndroidUnionChannelPackagesAddResponse implements ModelInterface, ArrayAcc
       *
       * @var string
       */
-    protected static $swaggerModelName = 'AndroidUnionChannelPackagesAddResponse';
+    protected static $swaggerModelName = 'XijingDeriveRoleGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,11 +57,7 @@ class AndroidUnionChannelPackagesAddResponse implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'code' => 'int',
-        'message' => 'string',
-        'messageCn' => 'string',
-        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
-        'data' => '\TencentAds\Model\AndroidUnionChannelPackagesAddResponseData'
+        'token' => 'string'
     ];
 
     /**
@@ -70,11 +66,7 @@ class AndroidUnionChannelPackagesAddResponse implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'code' => 'int64',
-        'message' => null,
-        'messageCn' => null,
-        'errors' => null,
-        'data' => null
+        'token' => null
     ];
 
     /**
@@ -104,11 +96,7 @@ class AndroidUnionChannelPackagesAddResponse implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $attributeMap = [
-        'code' => 'code',
-        'message' => 'message',
-        'messageCn' => 'message_cn',
-        'errors' => 'errors',
-        'data' => 'data'
+        'token' => 'token'
     ];
 
     /**
@@ -117,11 +105,7 @@ class AndroidUnionChannelPackagesAddResponse implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        'code' => 'setCode',
-        'message' => 'setMessage',
-        'messageCn' => 'setMessageCn',
-        'errors' => 'setErrors',
-        'data' => 'setData'
+        'token' => 'setToken'
     ];
 
     /**
@@ -130,11 +114,7 @@ class AndroidUnionChannelPackagesAddResponse implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        'code' => 'getCode',
-        'message' => 'getMessage',
-        'messageCn' => 'getMessageCn',
-        'errors' => 'getErrors',
-        'data' => 'getData'
+        'token' => 'getToken'
     ];
 
     /**
@@ -197,11 +177,7 @@ class AndroidUnionChannelPackagesAddResponse implements ModelInterface, ArrayAcc
      */
     public function __construct(array $data = null)
     {
-        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
-        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
-        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
-        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
-        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
+        $this->container['token'] = isset($data['token']) ? $data['token'] : null;
     }
 
     /**
@@ -229,121 +205,25 @@ class AndroidUnionChannelPackagesAddResponse implements ModelInterface, ArrayAcc
 
 
     /**
-     * Gets code
-     *
-     * @return int|mixed
-     */
-    public function getCode()
-    {
-        return $this->container['code'];
-    }
-
-    /**
-     * Sets code
-     *
-     * @param int|mixed $code code
-     *
-     * @return $this
-     */
-    public function setCode($code)
-    {
-        $this->container['code'] = $code;
-
-        return $this;
-    }
-
-    /**
-     * Gets message
+     * Gets token
      *
      * @return string|mixed
      */
-    public function getMessage()
+    public function getToken()
     {
-        return $this->container['message'];
+        return $this->container['token'];
     }
 
     /**
-     * Sets message
+     * Sets token
      *
-     * @param string|mixed $message message
+     * @param string|mixed $token token
      *
      * @return $this
      */
-    public function setMessage($message)
+    public function setToken($token)
     {
-        $this->container['message'] = $message;
-
-        return $this;
-    }
-
-    /**
-     * Gets messageCn
-     *
-     * @return string|mixed
-     */
-    public function getMessageCn()
-    {
-        return $this->container['messageCn'];
-    }
-
-    /**
-     * Sets messageCn
-     *
-     * @param string|mixed $messageCn messageCn
-     *
-     * @return $this
-     */
-    public function setMessageCn($messageCn)
-    {
-        $this->container['messageCn'] = $messageCn;
-
-        return $this;
-    }
-
-    /**
-     * Gets errors
-     *
-     * @return \TencentAds\Model\ApiErrorStruct[]|mixed
-     */
-    public function getErrors()
-    {
-        return $this->container['errors'];
-    }
-
-    /**
-     * Sets errors
-     *
-     * @param \TencentAds\Model\ApiErrorStruct[]|mixed $errors errors
-     *
-     * @return $this
-     */
-    public function setErrors($errors)
-    {
-        $this->container['errors'] = $errors;
-
-        return $this;
-    }
-
-    /**
-     * Gets data
-     *
-     * @return \TencentAds\Model\AndroidUnionChannelPackagesAddResponseData|mixed
-     */
-    public function getData()
-    {
-        return $this->container['data'];
-    }
-
-    /**
-     * Sets data
-     *
-     * @param \TencentAds\Model\AndroidUnionChannelPackagesAddResponseData|mixed $data data
-     *
-     * @return $this
-     */
-    public function setData($data)
-    {
-        $this->container['data'] = $data;
+        $this->container['token'] = $token;
 
         return $this;
     }

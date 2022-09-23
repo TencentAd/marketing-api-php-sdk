@@ -1,6 +1,6 @@
 <?php
 /**
- * AndroidUnionChannelPackagesUpdateResponseData
+ * XijingDeriveTempTokenGetResponseData
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AndroidUnionChannelPackagesUpdateResponseData Class Doc Comment
+ * XijingDeriveTempTokenGetResponseData Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AndroidUnionChannelPackagesUpdateResponseData implements ModelInterface, ArrayAccess
+class XijingDeriveTempTokenGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class AndroidUnionChannelPackagesUpdateResponseData implements ModelInterface, A
       *
       * @var string
       */
-    protected static $swaggerModelName = 'AndroidUnionChannelPackagesUpdateResponseData';
+    protected static $swaggerModelName = 'XijingDeriveTempTokenGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,7 +57,8 @@ class AndroidUnionChannelPackagesUpdateResponseData implements ModelInterface, A
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'taskId' => 'int'
+        'tempToken' => 'string',
+        'expiresIn' => 'int'
     ];
 
     /**
@@ -66,7 +67,8 @@ class AndroidUnionChannelPackagesUpdateResponseData implements ModelInterface, A
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'taskId' => 'int64'
+        'tempToken' => null,
+        'expiresIn' => 'int64'
     ];
 
     /**
@@ -96,7 +98,8 @@ class AndroidUnionChannelPackagesUpdateResponseData implements ModelInterface, A
      * @var string[]
      */
     protected static $attributeMap = [
-        'taskId' => 'task_id'
+        'tempToken' => 'temp_token',
+        'expiresIn' => 'expires_in'
     ];
 
     /**
@@ -105,7 +108,8 @@ class AndroidUnionChannelPackagesUpdateResponseData implements ModelInterface, A
      * @var string[]
      */
     protected static $setters = [
-        'taskId' => 'setTaskId'
+        'tempToken' => 'setTempToken',
+        'expiresIn' => 'setExpiresIn'
     ];
 
     /**
@@ -114,7 +118,8 @@ class AndroidUnionChannelPackagesUpdateResponseData implements ModelInterface, A
      * @var string[]
      */
     protected static $getters = [
-        'taskId' => 'getTaskId'
+        'tempToken' => 'getTempToken',
+        'expiresIn' => 'getExpiresIn'
     ];
 
     /**
@@ -177,7 +182,8 @@ class AndroidUnionChannelPackagesUpdateResponseData implements ModelInterface, A
      */
     public function __construct(array $data = null)
     {
-        $this->container['taskId'] = isset($data['taskId']) ? $data['taskId'] : null;
+        $this->container['tempToken'] = isset($data['tempToken']) ? $data['tempToken'] : null;
+        $this->container['expiresIn'] = isset($data['expiresIn']) ? $data['expiresIn'] : null;
     }
 
     /**
@@ -205,25 +211,49 @@ class AndroidUnionChannelPackagesUpdateResponseData implements ModelInterface, A
 
 
     /**
-     * Gets taskId
+     * Gets tempToken
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getTaskId()
+    public function getTempToken()
     {
-        return $this->container['taskId'];
+        return $this->container['tempToken'];
     }
 
     /**
-     * Sets taskId
+     * Sets tempToken
      *
-     * @param int|mixed $taskId taskId
+     * @param string|mixed $tempToken tempToken
      *
      * @return $this
      */
-    public function setTaskId($taskId)
+    public function setTempToken($tempToken)
     {
-        $this->container['taskId'] = $taskId;
+        $this->container['tempToken'] = $tempToken;
+
+        return $this;
+    }
+
+    /**
+     * Gets expiresIn
+     *
+     * @return int|mixed
+     */
+    public function getExpiresIn()
+    {
+        return $this->container['expiresIn'];
+    }
+
+    /**
+     * Sets expiresIn
+     *
+     * @param int|mixed $expiresIn expiresIn
+     *
+     * @return $this
+     */
+    public function setExpiresIn($expiresIn)
+    {
+        $this->container['expiresIn'] = $expiresIn;
 
         return $this;
     }

@@ -101,6 +101,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'dynamicCreativeType' => '\TencentAds\Model\DynamicCreativeType',
         'headClickType' => '\TencentAds\Model\HeadClickType',
         'headClickSpec' => '\TencentAds\Model\HeadClickSpec',
+        'campaignId' => 'int',
         'accountId' => 'int'
     ];
 
@@ -154,6 +155,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'dynamicCreativeType' => null,
         'headClickType' => null,
         'headClickSpec' => null,
+        'campaignId' => 'int64',
         'accountId' => 'int64'
     ];
 
@@ -228,6 +230,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'dynamicCreativeType' => 'dynamic_creative_type',
         'headClickType' => 'head_click_type',
         'headClickSpec' => 'head_click_spec',
+        'campaignId' => 'campaign_id',
         'accountId' => 'account_id'
     ];
 
@@ -281,6 +284,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'dynamicCreativeType' => 'setDynamicCreativeType',
         'headClickType' => 'setHeadClickType',
         'headClickSpec' => 'setHeadClickSpec',
+        'campaignId' => 'setCampaignId',
         'accountId' => 'setAccountId'
     ];
 
@@ -334,6 +338,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'dynamicCreativeType' => 'getDynamicCreativeType',
         'headClickType' => 'getHeadClickType',
         'headClickSpec' => 'getHeadClickSpec',
+        'campaignId' => 'getCampaignId',
         'accountId' => 'getAccountId'
     ];
 
@@ -441,6 +446,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         $this->container['dynamicCreativeType'] = isset($data['dynamicCreativeType']) ? $data['dynamicCreativeType'] : null;
         $this->container['headClickType'] = isset($data['headClickType']) ? $data['headClickType'] : null;
         $this->container['headClickSpec'] = isset($data['headClickSpec']) ? $data['headClickSpec'] : null;
+        $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1520,6 +1526,30 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     public function setHeadClickSpec($headClickSpec)
     {
         $this->container['headClickSpec'] = $headClickSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets campaignId
+     *
+     * @return int|mixed
+     */
+    public function getCampaignId()
+    {
+        return $this->container['campaignId'];
+    }
+
+    /**
+     * Sets campaignId
+     *
+     * @param int|mixed $campaignId campaignId
+     *
+     * @return $this
+     */
+    public function setCampaignId($campaignId)
+    {
+        $this->container['campaignId'] = $campaignId;
 
         return $this;
     }

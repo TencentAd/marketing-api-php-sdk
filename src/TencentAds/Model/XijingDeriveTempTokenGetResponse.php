@@ -1,6 +1,6 @@
 <?php
 /**
- * AndroidUnionChannelPackagesAddRequest
+ * XijingDeriveTempTokenGetResponse
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AndroidUnionChannelPackagesAddRequest Class Doc Comment
+ * XijingDeriveTempTokenGetResponse Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AndroidUnionChannelPackagesAddRequest implements ModelInterface, ArrayAccess
+class XijingDeriveTempTokenGetResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class AndroidUnionChannelPackagesAddRequest implements ModelInterface, ArrayAcce
       *
       * @var string
       */
-    protected static $swaggerModelName = 'AndroidUnionChannelPackagesAddRequest';
+    protected static $swaggerModelName = 'XijingDeriveTempTokenGetResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,11 +57,11 @@ class AndroidUnionChannelPackagesAddRequest implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'androidUnionAppId' => 'int',
-        'packageName' => 'string',
-        'packageOriginUrl' => 'string',
-        'customizedChannelId' => 'string',
-        'accountId' => 'int'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\XijingDeriveTempTokenGetResponseData'
     ];
 
     /**
@@ -70,11 +70,11 @@ class AndroidUnionChannelPackagesAddRequest implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'androidUnionAppId' => 'int64',
-        'packageName' => null,
-        'packageOriginUrl' => null,
-        'customizedChannelId' => null,
-        'accountId' => 'int64'
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -104,11 +104,11 @@ class AndroidUnionChannelPackagesAddRequest implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $attributeMap = [
-        'androidUnionAppId' => 'android_union_app_id',
-        'packageName' => 'package_name',
-        'packageOriginUrl' => 'package_origin_url',
-        'customizedChannelId' => 'customized_channel_id',
-        'accountId' => 'account_id'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -117,11 +117,11 @@ class AndroidUnionChannelPackagesAddRequest implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'androidUnionAppId' => 'setAndroidUnionAppId',
-        'packageName' => 'setPackageName',
-        'packageOriginUrl' => 'setPackageOriginUrl',
-        'customizedChannelId' => 'setCustomizedChannelId',
-        'accountId' => 'setAccountId'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -130,11 +130,11 @@ class AndroidUnionChannelPackagesAddRequest implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'androidUnionAppId' => 'getAndroidUnionAppId',
-        'packageName' => 'getPackageName',
-        'packageOriginUrl' => 'getPackageOriginUrl',
-        'customizedChannelId' => 'getCustomizedChannelId',
-        'accountId' => 'getAccountId'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -197,11 +197,11 @@ class AndroidUnionChannelPackagesAddRequest implements ModelInterface, ArrayAcce
      */
     public function __construct(array $data = null)
     {
-        $this->container['androidUnionAppId'] = isset($data['androidUnionAppId']) ? $data['androidUnionAppId'] : null;
-        $this->container['packageName'] = isset($data['packageName']) ? $data['packageName'] : null;
-        $this->container['packageOriginUrl'] = isset($data['packageOriginUrl']) ? $data['packageOriginUrl'] : null;
-        $this->container['customizedChannelId'] = isset($data['customizedChannelId']) ? $data['customizedChannelId'] : null;
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -229,121 +229,121 @@ class AndroidUnionChannelPackagesAddRequest implements ModelInterface, ArrayAcce
 
 
     /**
-     * Gets androidUnionAppId
+     * Gets code
      *
      * @return int|mixed
      */
-    public function getAndroidUnionAppId()
+    public function getCode()
     {
-        return $this->container['androidUnionAppId'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets androidUnionAppId
+     * Sets code
      *
-     * @param int|mixed $androidUnionAppId androidUnionAppId
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setAndroidUnionAppId($androidUnionAppId)
+    public function setCode($code)
     {
-        $this->container['androidUnionAppId'] = $androidUnionAppId;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets packageName
+     * Gets message
      *
      * @return string|mixed
      */
-    public function getPackageName()
+    public function getMessage()
     {
-        return $this->container['packageName'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets packageName
+     * Sets message
      *
-     * @param string|mixed $packageName packageName
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setPackageName($packageName)
+    public function setMessage($message)
     {
-        $this->container['packageName'] = $packageName;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets packageOriginUrl
+     * Gets messageCn
      *
      * @return string|mixed
      */
-    public function getPackageOriginUrl()
+    public function getMessageCn()
     {
-        return $this->container['packageOriginUrl'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets packageOriginUrl
+     * Sets messageCn
      *
-     * @param string|mixed $packageOriginUrl packageOriginUrl
+     * @param string|mixed $messageCn messageCn
      *
      * @return $this
      */
-    public function setPackageOriginUrl($packageOriginUrl)
+    public function setMessageCn($messageCn)
     {
-        $this->container['packageOriginUrl'] = $packageOriginUrl;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets customizedChannelId
+     * Gets errors
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\ApiErrorStruct[]|mixed
      */
-    public function getCustomizedChannelId()
+    public function getErrors()
     {
-        return $this->container['customizedChannelId'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets customizedChannelId
+     * Sets errors
      *
-     * @param string|mixed $customizedChannelId customizedChannelId
+     * @param \TencentAds\Model\ApiErrorStruct[]|mixed $errors errors
      *
      * @return $this
      */
-    public function setCustomizedChannelId($customizedChannelId)
+    public function setErrors($errors)
     {
-        $this->container['customizedChannelId'] = $customizedChannelId;
+        $this->container['errors'] = $errors;
 
         return $this;
     }
 
     /**
-     * Gets accountId
+     * Gets data
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\XijingDeriveTempTokenGetResponseData|mixed
      */
-    public function getAccountId()
+    public function getData()
     {
-        return $this->container['accountId'];
+        return $this->container['data'];
     }
 
     /**
-     * Sets accountId
+     * Sets data
      *
-     * @param int|mixed $accountId accountId
+     * @param \TencentAds\Model\XijingDeriveTempTokenGetResponseData|mixed $data data
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setData($data)
     {
-        $this->container['accountId'] = $accountId;
+        $this->container['data'] = $data;
 
         return $this;
     }

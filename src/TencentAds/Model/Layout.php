@@ -1,6 +1,6 @@
 <?php
 /**
- * AndroidUnionChannelPackagesGetResponse
+ * Layout
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AndroidUnionChannelPackagesGetResponse Class Doc Comment
+ * Layout Class Doc Comment
  *
  * @category Class
+ * @description 虚拟人坐标
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AndroidUnionChannelPackagesGetResponse implements ModelInterface, ArrayAccess
+class Layout implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class AndroidUnionChannelPackagesGetResponse implements ModelInterface, ArrayAcc
       *
       * @var string
       */
-    protected static $swaggerModelName = 'AndroidUnionChannelPackagesGetResponse';
+    protected static $swaggerModelName = 'layout';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,11 +58,10 @@ class AndroidUnionChannelPackagesGetResponse implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'code' => 'int',
-        'message' => 'string',
-        'messageCn' => 'string',
-        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
-        'data' => '\TencentAds\Model\AndroidUnionChannelPackagesGetResponseData'
+        'x' => 'int',
+        'y' => 'int',
+        'w' => 'int',
+        'h' => 'int'
     ];
 
     /**
@@ -70,11 +70,10 @@ class AndroidUnionChannelPackagesGetResponse implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'code' => 'int64',
-        'message' => null,
-        'messageCn' => null,
-        'errors' => null,
-        'data' => null
+        'x' => 'int64',
+        'y' => 'int64',
+        'w' => 'int64',
+        'h' => 'int64'
     ];
 
     /**
@@ -104,11 +103,10 @@ class AndroidUnionChannelPackagesGetResponse implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $attributeMap = [
-        'code' => 'code',
-        'message' => 'message',
-        'messageCn' => 'message_cn',
-        'errors' => 'errors',
-        'data' => 'data'
+        'x' => 'x',
+        'y' => 'y',
+        'w' => 'w',
+        'h' => 'h'
     ];
 
     /**
@@ -117,11 +115,10 @@ class AndroidUnionChannelPackagesGetResponse implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        'code' => 'setCode',
-        'message' => 'setMessage',
-        'messageCn' => 'setMessageCn',
-        'errors' => 'setErrors',
-        'data' => 'setData'
+        'x' => 'setX',
+        'y' => 'setY',
+        'w' => 'setW',
+        'h' => 'setH'
     ];
 
     /**
@@ -130,11 +127,10 @@ class AndroidUnionChannelPackagesGetResponse implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        'code' => 'getCode',
-        'message' => 'getMessage',
-        'messageCn' => 'getMessageCn',
-        'errors' => 'getErrors',
-        'data' => 'getData'
+        'x' => 'getX',
+        'y' => 'getY',
+        'w' => 'getW',
+        'h' => 'getH'
     ];
 
     /**
@@ -197,11 +193,10 @@ class AndroidUnionChannelPackagesGetResponse implements ModelInterface, ArrayAcc
      */
     public function __construct(array $data = null)
     {
-        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
-        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
-        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
-        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
-        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
+        $this->container['x'] = isset($data['x']) ? $data['x'] : null;
+        $this->container['y'] = isset($data['y']) ? $data['y'] : null;
+        $this->container['w'] = isset($data['w']) ? $data['w'] : null;
+        $this->container['h'] = isset($data['h']) ? $data['h'] : null;
     }
 
     /**
@@ -229,121 +224,97 @@ class AndroidUnionChannelPackagesGetResponse implements ModelInterface, ArrayAcc
 
 
     /**
-     * Gets code
+     * Gets x
      *
      * @return int|mixed
      */
-    public function getCode()
+    public function getX()
     {
-        return $this->container['code'];
+        return $this->container['x'];
     }
 
     /**
-     * Sets code
+     * Sets x
      *
-     * @param int|mixed $code code
+     * @param int|mixed $x x
      *
      * @return $this
      */
-    public function setCode($code)
+    public function setX($x)
     {
-        $this->container['code'] = $code;
+        $this->container['x'] = $x;
 
         return $this;
     }
 
     /**
-     * Gets message
+     * Gets y
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getMessage()
+    public function getY()
     {
-        return $this->container['message'];
+        return $this->container['y'];
     }
 
     /**
-     * Sets message
+     * Sets y
      *
-     * @param string|mixed $message message
+     * @param int|mixed $y y
      *
      * @return $this
      */
-    public function setMessage($message)
+    public function setY($y)
     {
-        $this->container['message'] = $message;
+        $this->container['y'] = $y;
 
         return $this;
     }
 
     /**
-     * Gets messageCn
+     * Gets w
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getMessageCn()
+    public function getW()
     {
-        return $this->container['messageCn'];
+        return $this->container['w'];
     }
 
     /**
-     * Sets messageCn
+     * Sets w
      *
-     * @param string|mixed $messageCn messageCn
+     * @param int|mixed $w w
      *
      * @return $this
      */
-    public function setMessageCn($messageCn)
+    public function setW($w)
     {
-        $this->container['messageCn'] = $messageCn;
+        $this->container['w'] = $w;
 
         return $this;
     }
 
     /**
-     * Gets errors
+     * Gets h
      *
-     * @return \TencentAds\Model\ApiErrorStruct[]|mixed
+     * @return int|mixed
      */
-    public function getErrors()
+    public function getH()
     {
-        return $this->container['errors'];
+        return $this->container['h'];
     }
 
     /**
-     * Sets errors
+     * Sets h
      *
-     * @param \TencentAds\Model\ApiErrorStruct[]|mixed $errors errors
+     * @param int|mixed $h h
      *
      * @return $this
      */
-    public function setErrors($errors)
+    public function setH($h)
     {
-        $this->container['errors'] = $errors;
-
-        return $this;
-    }
-
-    /**
-     * Gets data
-     *
-     * @return \TencentAds\Model\AndroidUnionChannelPackagesGetResponseData|mixed
-     */
-    public function getData()
-    {
-        return $this->container['data'];
-    }
-
-    /**
-     * Sets data
-     *
-     * @param \TencentAds\Model\AndroidUnionChannelPackagesGetResponseData|mixed $data data
-     *
-     * @return $this
-     */
-    public function setData($data)
-    {
-        $this->container['data'] = $data;
+        $this->container['h'] = $h;
 
         return $this;
     }

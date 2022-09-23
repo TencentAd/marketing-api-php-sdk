@@ -21,7 +21,6 @@ use TencentAds\Container\AdvertiserApiContainer;
 use TencentAds\Container\AgencyInnerTransferApiContainer;
 use TencentAds\Container\AgencyRealtimeCostApiContainer;
 use TencentAds\Container\AndroidChannelPackagesApiContainer;
-use TencentAds\Container\AndroidUnionChannelPackagesApiContainer;
 use TencentAds\Container\AppAndroidChannelPackagesApiContainer;
 use TencentAds\Container\AssetPermissionsApiContainer;
 use TencentAds\Container\AssetPrePermissionsApiContainer;
@@ -156,6 +155,8 @@ use TencentAds\Container\WildcardsApiContainer;
 use TencentAds\Container\WxPackageAccountApiContainer;
 use TencentAds\Container\WxPackagePackageApiContainer;
 use TencentAds\Container\XijingComplexTemplateApiContainer;
+use TencentAds\Container\XijingDeriveRoleApiContainer;
+use TencentAds\Container\XijingDeriveTempTokenApiContainer;
 use TencentAds\Container\XijingPageApiContainer;
 use TencentAds\Container\XijingPageByComponentsApiContainer;
 use TencentAds\Container\XijingPageInteractiveApiContainer;
@@ -224,9 +225,6 @@ class App
 
     /** @var AndroidChannelPackagesApiContainer */
     public $androidChannelPackagesApiContainer;
-
-    /** @var AndroidUnionChannelPackagesApiContainer */
-    public $androidUnionChannelPackagesApiContainer;
 
     /** @var AppAndroidChannelPackagesApiContainer */
     public $appAndroidChannelPackagesApiContainer;
@@ -630,6 +628,12 @@ class App
     /** @var XijingComplexTemplateApiContainer */
     public $xijingComplexTemplateApiContainer;
 
+    /** @var XijingDeriveRoleApiContainer */
+    public $xijingDeriveRoleApiContainer;
+
+    /** @var XijingDeriveTempTokenApiContainer */
+    public $xijingDeriveTempTokenApiContainer;
+
     /** @var XijingPageApiContainer */
     public $xijingPageApiContainer;
 
@@ -924,20 +928,6 @@ class App
             $this->androidChannelPackagesApiContainer = $container;
         }
         return $this->androidChannelPackagesApiContainer;
-    }
-
-
-    /**
-     * @return AndroidUnionChannelPackagesApiContainer
-     */
-    public function androidUnionChannelPackages()
-    {
-        if (empty($this->androidUnionChannelPackagesApiContainer)) {
-            $container = new AndroidUnionChannelPackagesApiContainer();
-            $container->init($this, $this->getClient());
-            $this->androidUnionChannelPackagesApiContainer = $container;
-        }
-        return $this->androidUnionChannelPackagesApiContainer;
     }
 
 
@@ -2814,6 +2804,34 @@ class App
             $this->xijingComplexTemplateApiContainer = $container;
         }
         return $this->xijingComplexTemplateApiContainer;
+    }
+
+
+    /**
+     * @return XijingDeriveRoleApiContainer
+     */
+    public function xijingDeriveRole()
+    {
+        if (empty($this->xijingDeriveRoleApiContainer)) {
+            $container = new XijingDeriveRoleApiContainer();
+            $container->init($this, $this->getClient());
+            $this->xijingDeriveRoleApiContainer = $container;
+        }
+        return $this->xijingDeriveRoleApiContainer;
+    }
+
+
+    /**
+     * @return XijingDeriveTempTokenApiContainer
+     */
+    public function xijingDeriveTempToken()
+    {
+        if (empty($this->xijingDeriveTempTokenApiContainer)) {
+            $container = new XijingDeriveTempTokenApiContainer();
+            $container->init($this, $this->getClient());
+            $this->xijingDeriveTempTokenApiContainer = $container;
+        }
+        return $this->xijingDeriveTempTokenApiContainer;
     }
 
 

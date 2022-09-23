@@ -1,6 +1,6 @@
 <?php
 /**
- * AndroidUnionChannelPackagesAddResponseData
+ * XijingDeriveRoleGetRequest
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AndroidUnionChannelPackagesAddResponseData Class Doc Comment
+ * XijingDeriveRoleGetRequest Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AndroidUnionChannelPackagesAddResponseData implements ModelInterface, ArrayAccess
+class XijingDeriveRoleGetRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class AndroidUnionChannelPackagesAddResponseData implements ModelInterface, Arra
       *
       * @var string
       */
-    protected static $swaggerModelName = 'AndroidUnionChannelPackagesAddResponseData';
+    protected static $swaggerModelName = 'XijingDeriveRoleGetRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,9 +57,13 @@ class AndroidUnionChannelPackagesAddResponseData implements ModelInterface, Arra
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'appAndroidChannelPackageId' => 'string',
-        'packageName' => 'string',
-        'packageStatus' => '\TencentAds\Model\PackageStatus'
+        'accountId' => 'int',
+        'roleId' => 'string',
+        'copywriting' => 'string',
+        'layout' => '\TencentAds\Model\Layout',
+        'isLoop' => 'bool',
+        'isClose' => 'bool',
+        'isDownload' => 'bool'
     ];
 
     /**
@@ -68,9 +72,13 @@ class AndroidUnionChannelPackagesAddResponseData implements ModelInterface, Arra
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'appAndroidChannelPackageId' => null,
-        'packageName' => null,
-        'packageStatus' => null
+        'accountId' => 'int64',
+        'roleId' => null,
+        'copywriting' => null,
+        'layout' => null,
+        'isLoop' => null,
+        'isClose' => null,
+        'isDownload' => null
     ];
 
     /**
@@ -100,9 +108,13 @@ class AndroidUnionChannelPackagesAddResponseData implements ModelInterface, Arra
      * @var string[]
      */
     protected static $attributeMap = [
-        'appAndroidChannelPackageId' => 'app_android_channel_package_id',
-        'packageName' => 'package_name',
-        'packageStatus' => 'package_status'
+        'accountId' => 'account_id',
+        'roleId' => 'role_id',
+        'copywriting' => 'copywriting',
+        'layout' => 'layout',
+        'isLoop' => 'is_loop',
+        'isClose' => 'is_close',
+        'isDownload' => 'is_download'
     ];
 
     /**
@@ -111,9 +123,13 @@ class AndroidUnionChannelPackagesAddResponseData implements ModelInterface, Arra
      * @var string[]
      */
     protected static $setters = [
-        'appAndroidChannelPackageId' => 'setAppAndroidChannelPackageId',
-        'packageName' => 'setPackageName',
-        'packageStatus' => 'setPackageStatus'
+        'accountId' => 'setAccountId',
+        'roleId' => 'setRoleId',
+        'copywriting' => 'setCopywriting',
+        'layout' => 'setLayout',
+        'isLoop' => 'setIsLoop',
+        'isClose' => 'setIsClose',
+        'isDownload' => 'setIsDownload'
     ];
 
     /**
@@ -122,9 +138,13 @@ class AndroidUnionChannelPackagesAddResponseData implements ModelInterface, Arra
      * @var string[]
      */
     protected static $getters = [
-        'appAndroidChannelPackageId' => 'getAppAndroidChannelPackageId',
-        'packageName' => 'getPackageName',
-        'packageStatus' => 'getPackageStatus'
+        'accountId' => 'getAccountId',
+        'roleId' => 'getRoleId',
+        'copywriting' => 'getCopywriting',
+        'layout' => 'getLayout',
+        'isLoop' => 'getIsLoop',
+        'isClose' => 'getIsClose',
+        'isDownload' => 'getIsDownload'
     ];
 
     /**
@@ -187,9 +207,13 @@ class AndroidUnionChannelPackagesAddResponseData implements ModelInterface, Arra
      */
     public function __construct(array $data = null)
     {
-        $this->container['appAndroidChannelPackageId'] = isset($data['appAndroidChannelPackageId']) ? $data['appAndroidChannelPackageId'] : null;
-        $this->container['packageName'] = isset($data['packageName']) ? $data['packageName'] : null;
-        $this->container['packageStatus'] = isset($data['packageStatus']) ? $data['packageStatus'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['roleId'] = isset($data['roleId']) ? $data['roleId'] : null;
+        $this->container['copywriting'] = isset($data['copywriting']) ? $data['copywriting'] : null;
+        $this->container['layout'] = isset($data['layout']) ? $data['layout'] : null;
+        $this->container['isLoop'] = isset($data['isLoop']) ? $data['isLoop'] : null;
+        $this->container['isClose'] = isset($data['isClose']) ? $data['isClose'] : null;
+        $this->container['isDownload'] = isset($data['isDownload']) ? $data['isDownload'] : null;
     }
 
     /**
@@ -217,73 +241,169 @@ class AndroidUnionChannelPackagesAddResponseData implements ModelInterface, Arra
 
 
     /**
-     * Gets appAndroidChannelPackageId
+     * Gets accountId
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getAppAndroidChannelPackageId()
+    public function getAccountId()
     {
-        return $this->container['appAndroidChannelPackageId'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets appAndroidChannelPackageId
+     * Sets accountId
      *
-     * @param string|mixed $appAndroidChannelPackageId appAndroidChannelPackageId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setAppAndroidChannelPackageId($appAndroidChannelPackageId)
+    public function setAccountId($accountId)
     {
-        $this->container['appAndroidChannelPackageId'] = $appAndroidChannelPackageId;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }
 
     /**
-     * Gets packageName
+     * Gets roleId
      *
      * @return string|mixed
      */
-    public function getPackageName()
+    public function getRoleId()
     {
-        return $this->container['packageName'];
+        return $this->container['roleId'];
     }
 
     /**
-     * Sets packageName
+     * Sets roleId
      *
-     * @param string|mixed $packageName packageName
+     * @param string|mixed $roleId roleId
      *
      * @return $this
      */
-    public function setPackageName($packageName)
+    public function setRoleId($roleId)
     {
-        $this->container['packageName'] = $packageName;
+        $this->container['roleId'] = $roleId;
 
         return $this;
     }
 
     /**
-     * Gets packageStatus
+     * Gets copywriting
      *
-     * @return \TencentAds\Model\PackageStatus|mixed
+     * @return string|mixed
      */
-    public function getPackageStatus()
+    public function getCopywriting()
     {
-        return $this->container['packageStatus'];
+        return $this->container['copywriting'];
     }
 
     /**
-     * Sets packageStatus
+     * Sets copywriting
      *
-     * @param \TencentAds\Model\PackageStatus|mixed $packageStatus packageStatus
+     * @param string|mixed $copywriting copywriting
      *
      * @return $this
      */
-    public function setPackageStatus($packageStatus)
+    public function setCopywriting($copywriting)
     {
-        $this->container['packageStatus'] = $packageStatus;
+        $this->container['copywriting'] = $copywriting;
+
+        return $this;
+    }
+
+    /**
+     * Gets layout
+     *
+     * @return \TencentAds\Model\Layout|mixed
+     */
+    public function getLayout()
+    {
+        return $this->container['layout'];
+    }
+
+    /**
+     * Sets layout
+     *
+     * @param \TencentAds\Model\Layout|mixed $layout layout
+     *
+     * @return $this
+     */
+    public function setLayout($layout)
+    {
+        $this->container['layout'] = $layout;
+
+        return $this;
+    }
+
+    /**
+     * Gets isLoop
+     *
+     * @return bool|mixed
+     */
+    public function getIsLoop()
+    {
+        return $this->container['isLoop'];
+    }
+
+    /**
+     * Sets isLoop
+     *
+     * @param bool|mixed $isLoop isLoop
+     *
+     * @return $this
+     */
+    public function setIsLoop($isLoop)
+    {
+        $this->container['isLoop'] = $isLoop;
+
+        return $this;
+    }
+
+    /**
+     * Gets isClose
+     *
+     * @return bool|mixed
+     */
+    public function getIsClose()
+    {
+        return $this->container['isClose'];
+    }
+
+    /**
+     * Sets isClose
+     *
+     * @param bool|mixed $isClose isClose
+     *
+     * @return $this
+     */
+    public function setIsClose($isClose)
+    {
+        $this->container['isClose'] = $isClose;
+
+        return $this;
+    }
+
+    /**
+     * Gets isDownload
+     *
+     * @return bool|mixed
+     */
+    public function getIsDownload()
+    {
+        return $this->container['isDownload'];
+    }
+
+    /**
+     * Sets isDownload
+     *
+     * @param bool|mixed $isDownload isDownload
+     *
+     * @return $this
+     */
+    public function setIsDownload($isDownload)
+    {
+        $this->container['isDownload'] = $isDownload;
 
         return $this;
     }

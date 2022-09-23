@@ -1,6 +1,6 @@
 <?php
 /**
- * AndroidUnionChannelPackagesUpdateRequest
+ * XijingDeriveTempTokenGetRequest
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AndroidUnionChannelPackagesUpdateRequest Class Doc Comment
+ * XijingDeriveTempTokenGetRequest Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AndroidUnionChannelPackagesUpdateRequest implements ModelInterface, ArrayAccess
+class XijingDeriveTempTokenGetRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class AndroidUnionChannelPackagesUpdateRequest implements ModelInterface, ArrayA
       *
       * @var string
       */
-    protected static $swaggerModelName = 'AndroidUnionChannelPackagesUpdateRequest';
+    protected static $swaggerModelName = 'XijingDeriveTempTokenGetRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,7 @@ class AndroidUnionChannelPackagesUpdateRequest implements ModelInterface, ArrayA
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
-        'androidUnionAppId' => 'int',
-        'appAndroidChannelPackageId' => 'string'
+        'token' => 'string'
     ];
 
     /**
@@ -69,8 +68,7 @@ class AndroidUnionChannelPackagesUpdateRequest implements ModelInterface, ArrayA
       */
     protected static $swaggerFormats = [
         'accountId' => 'int64',
-        'androidUnionAppId' => 'int64',
-        'appAndroidChannelPackageId' => null
+        'token' => null
     ];
 
     /**
@@ -101,8 +99,7 @@ class AndroidUnionChannelPackagesUpdateRequest implements ModelInterface, ArrayA
      */
     protected static $attributeMap = [
         'accountId' => 'account_id',
-        'androidUnionAppId' => 'android_union_app_id',
-        'appAndroidChannelPackageId' => 'app_android_channel_package_id'
+        'token' => 'token'
     ];
 
     /**
@@ -112,8 +109,7 @@ class AndroidUnionChannelPackagesUpdateRequest implements ModelInterface, ArrayA
      */
     protected static $setters = [
         'accountId' => 'setAccountId',
-        'androidUnionAppId' => 'setAndroidUnionAppId',
-        'appAndroidChannelPackageId' => 'setAppAndroidChannelPackageId'
+        'token' => 'setToken'
     ];
 
     /**
@@ -123,8 +119,7 @@ class AndroidUnionChannelPackagesUpdateRequest implements ModelInterface, ArrayA
      */
     protected static $getters = [
         'accountId' => 'getAccountId',
-        'androidUnionAppId' => 'getAndroidUnionAppId',
-        'appAndroidChannelPackageId' => 'getAppAndroidChannelPackageId'
+        'token' => 'getToken'
     ];
 
     /**
@@ -188,8 +183,7 @@ class AndroidUnionChannelPackagesUpdateRequest implements ModelInterface, ArrayA
     public function __construct(array $data = null)
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['androidUnionAppId'] = isset($data['androidUnionAppId']) ? $data['androidUnionAppId'] : null;
-        $this->container['appAndroidChannelPackageId'] = isset($data['appAndroidChannelPackageId']) ? $data['appAndroidChannelPackageId'] : null;
+        $this->container['token'] = isset($data['token']) ? $data['token'] : null;
     }
 
     /**
@@ -241,49 +235,25 @@ class AndroidUnionChannelPackagesUpdateRequest implements ModelInterface, ArrayA
     }
 
     /**
-     * Gets androidUnionAppId
-     *
-     * @return int|mixed
-     */
-    public function getAndroidUnionAppId()
-    {
-        return $this->container['androidUnionAppId'];
-    }
-
-    /**
-     * Sets androidUnionAppId
-     *
-     * @param int|mixed $androidUnionAppId androidUnionAppId
-     *
-     * @return $this
-     */
-    public function setAndroidUnionAppId($androidUnionAppId)
-    {
-        $this->container['androidUnionAppId'] = $androidUnionAppId;
-
-        return $this;
-    }
-
-    /**
-     * Gets appAndroidChannelPackageId
+     * Gets token
      *
      * @return string|mixed
      */
-    public function getAppAndroidChannelPackageId()
+    public function getToken()
     {
-        return $this->container['appAndroidChannelPackageId'];
+        return $this->container['token'];
     }
 
     /**
-     * Sets appAndroidChannelPackageId
+     * Sets token
      *
-     * @param string|mixed $appAndroidChannelPackageId appAndroidChannelPackageId
+     * @param string|mixed $token token
      *
      * @return $this
      */
-    public function setAppAndroidChannelPackageId($appAndroidChannelPackageId)
+    public function setToken($token)
     {
-        $this->container['appAndroidChannelPackageId'] = $appAndroidChannelPackageId;
+        $this->container['token'] = $token;
 
         return $this;
     }
