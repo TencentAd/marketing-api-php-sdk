@@ -20,7 +20,6 @@ use TencentAds\Container\AdsApiContainer;
 use TencentAds\Container\AdvertiserApiContainer;
 use TencentAds\Container\AgencyInnerTransferApiContainer;
 use TencentAds\Container\AgencyRealtimeCostApiContainer;
-use TencentAds\Container\AndroidChannelPackagesApiContainer;
 use TencentAds\Container\AppAndroidChannelPackagesApiContainer;
 use TencentAds\Container\AssetPermissionsApiContainer;
 use TencentAds\Container\AssetPrePermissionsApiContainer;
@@ -222,9 +221,6 @@ class App
 
     /** @var AgencyRealtimeCostApiContainer */
     public $agencyRealtimeCostApiContainer;
-
-    /** @var AndroidChannelPackagesApiContainer */
-    public $androidChannelPackagesApiContainer;
 
     /** @var AppAndroidChannelPackagesApiContainer */
     public $appAndroidChannelPackagesApiContainer;
@@ -914,20 +910,6 @@ class App
             $this->agencyRealtimeCostApiContainer = $container;
         }
         return $this->agencyRealtimeCostApiContainer;
-    }
-
-
-    /**
-     * @return AndroidChannelPackagesApiContainer
-     */
-    public function androidChannelPackages()
-    {
-        if (empty($this->androidChannelPackagesApiContainer)) {
-            $container = new AndroidChannelPackagesApiContainer();
-            $container->init($this, $this->getClient());
-            $this->androidChannelPackagesApiContainer = $container;
-        }
-        return $this->androidChannelPackagesApiContainer;
     }
 
 
