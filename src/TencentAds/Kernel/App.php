@@ -65,6 +65,7 @@ use TencentAds\Container\DynamicAdVideoTemplatesApiContainer;
 use TencentAds\Container\DynamicCreativesApiContainer;
 use TencentAds\Container\EcommerceOrderApiContainer;
 use TencentAds\Container\EstimationApiContainer;
+use TencentAds\Container\ExtendPackageApiContainer;
 use TencentAds\Container\FundStatementsDailyApiContainer;
 use TencentAds\Container\FundStatementsDetailedApiContainer;
 use TencentAds\Container\FundTransferApiContainer;
@@ -154,6 +155,7 @@ use TencentAds\Container\WildcardsApiContainer;
 use TencentAds\Container\WxPackageAccountApiContainer;
 use TencentAds\Container\WxPackagePackageApiContainer;
 use TencentAds\Container\XijingComplexTemplateApiContainer;
+use TencentAds\Container\XijingDeriveClickEffectApiContainer;
 use TencentAds\Container\XijingDeriveRoleApiContainer;
 use TencentAds\Container\XijingDeriveTempTokenApiContainer;
 use TencentAds\Container\XijingPageApiContainer;
@@ -356,6 +358,9 @@ class App
 
     /** @var EstimationApiContainer */
     public $estimationApiContainer;
+
+    /** @var ExtendPackageApiContainer */
+    public $extendPackageApiContainer;
 
     /** @var FundStatementsDailyApiContainer */
     public $fundStatementsDailyApiContainer;
@@ -623,6 +628,9 @@ class App
 
     /** @var XijingComplexTemplateApiContainer */
     public $xijingComplexTemplateApiContainer;
+
+    /** @var XijingDeriveClickEffectApiContainer */
+    public $xijingDeriveClickEffectApiContainer;
 
     /** @var XijingDeriveRoleApiContainer */
     public $xijingDeriveRoleApiContainer;
@@ -1540,6 +1548,20 @@ class App
             $this->estimationApiContainer = $container;
         }
         return $this->estimationApiContainer;
+    }
+
+
+    /**
+     * @return ExtendPackageApiContainer
+     */
+    public function extendPackage()
+    {
+        if (empty($this->extendPackageApiContainer)) {
+            $container = new ExtendPackageApiContainer();
+            $container->init($this, $this->getClient());
+            $this->extendPackageApiContainer = $container;
+        }
+        return $this->extendPackageApiContainer;
     }
 
 
@@ -2786,6 +2808,20 @@ class App
             $this->xijingComplexTemplateApiContainer = $container;
         }
         return $this->xijingComplexTemplateApiContainer;
+    }
+
+
+    /**
+     * @return XijingDeriveClickEffectApiContainer
+     */
+    public function xijingDeriveClickEffect()
+    {
+        if (empty($this->xijingDeriveClickEffectApiContainer)) {
+            $container = new XijingDeriveClickEffectApiContainer();
+            $container->init($this, $this->getClient());
+            $this->xijingDeriveClickEffectApiContainer = $container;
+        }
+        return $this->xijingDeriveClickEffectApiContainer;
     }
 
 
