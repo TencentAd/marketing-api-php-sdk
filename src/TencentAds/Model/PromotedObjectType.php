@@ -75,6 +75,8 @@ class PromotedObjectType
     const WECHAT_OFFICIAL_ACCOUNT = 'PROMOTED_OBJECT_TYPE_WECHAT_OFFICIAL_ACCOUNT';
     const MINI_PROGRAM_WECHAT = 'PROMOTED_OBJECT_TYPE_MINI_PROGRAM_WECHAT';
     const APP_QUICK_APP = 'PROMOTED_OBJECT_TYPE_APP_QUICK_APP';
+    const WECHAT_ARTICLE = 'PROMOTED_OBJECT_TYPE_WECHAT_ARTICLE';
+    const WECHAT_PAY_COUPON = 'PROMOTED_OBJECT_TYPE_WECHAT_PAY_COUPON';
     
     /**
      * Gets allowable values of the enum
@@ -114,6 +116,8 @@ class PromotedObjectType
             self::WECHAT_OFFICIAL_ACCOUNT,
             self::MINI_PROGRAM_WECHAT,
             self::APP_QUICK_APP,
+            self::WECHAT_ARTICLE,
+            self::WECHAT_PAY_COUPON,
         ];
     }
 }
