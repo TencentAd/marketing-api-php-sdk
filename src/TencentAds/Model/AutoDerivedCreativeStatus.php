@@ -48,6 +48,7 @@ class AutoDerivedCreativeStatus
     const INITIATED = 'AUTO_DERIVED_CREATIVE_STATUS_INITIATED';
     const SUCCESS = 'AUTO_DERIVED_CREATIVE_STATUS_SUCCESS';
     const FAIL = 'AUTO_DERIVED_CREATIVE_STATUS_FAIL';
+    const RUNNING = 'AUTO_DERIVED_CREATIVE_STATUS_RUNNING';
     
     /**
      * Gets allowable values of the enum
@@ -60,6 +61,7 @@ class AutoDerivedCreativeStatus
             self::INITIATED,
             self::SUCCESS,
             self::FAIL,
+            self::RUNNING,
         ];
     }
 }
