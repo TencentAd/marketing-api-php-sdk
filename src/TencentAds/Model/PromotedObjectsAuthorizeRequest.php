@@ -1,6 +1,6 @@
 <?php
 /**
- * AdLabelGetListStruct
+ * PromotedObjectsAuthorizeRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AdLabelGetListStruct Class Doc Comment
+ * PromotedObjectsAuthorizeRequest Class Doc Comment
  *
  * @category Class
- * @description 返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AdLabelGetListStruct implements ModelInterface, ArrayAccess
+class PromotedObjectsAuthorizeRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'AdLabelGetListStruct';
+    protected static $swaggerModelName = 'PromotedObjectsAuthorizeRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,13 +57,12 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'labelCategory' => 'string',
-        'label' => 'string[]',
-        'icon' => '\TencentAds\Model\LabelIconItem[]',
-        'labelType' => '\TencentAds\Model\LabelType',
-        'labelTypeName' => 'string',
-        'labelRemark' => '\TencentAds\Model\LabelRemarkItem[]',
-        'labelStructs' => '\TencentAds\Model\LabelStruct[]'
+        'accountId' => 'int',
+        'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
+        'promotedObjectName' => 'string',
+        'authSpec' => '\TencentAds\Model\AuthSpec',
+        'authBeginDate' => 'int',
+        'authTtl' => 'int'
     ];
 
     /**
@@ -73,13 +71,12 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'labelCategory' => null,
-        'label' => null,
-        'icon' => null,
-        'labelType' => null,
-        'labelTypeName' => null,
-        'labelRemark' => null,
-        'labelStructs' => null
+        'accountId' => 'int64',
+        'promotedObjectType' => null,
+        'promotedObjectName' => null,
+        'authSpec' => null,
+        'authBeginDate' => 'int64',
+        'authTtl' => 'int64'
     ];
 
     /**
@@ -109,13 +106,12 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'labelCategory' => 'label_category',
-        'label' => 'label',
-        'icon' => 'icon',
-        'labelType' => 'label_type',
-        'labelTypeName' => 'label_type_name',
-        'labelRemark' => 'label_remark',
-        'labelStructs' => 'label_structs'
+        'accountId' => 'account_id',
+        'promotedObjectType' => 'promoted_object_type',
+        'promotedObjectName' => 'promoted_object_name',
+        'authSpec' => 'auth_spec',
+        'authBeginDate' => 'auth_begin_date',
+        'authTtl' => 'auth_ttl'
     ];
 
     /**
@@ -124,13 +120,12 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'labelCategory' => 'setLabelCategory',
-        'label' => 'setLabel',
-        'icon' => 'setIcon',
-        'labelType' => 'setLabelType',
-        'labelTypeName' => 'setLabelTypeName',
-        'labelRemark' => 'setLabelRemark',
-        'labelStructs' => 'setLabelStructs'
+        'accountId' => 'setAccountId',
+        'promotedObjectType' => 'setPromotedObjectType',
+        'promotedObjectName' => 'setPromotedObjectName',
+        'authSpec' => 'setAuthSpec',
+        'authBeginDate' => 'setAuthBeginDate',
+        'authTtl' => 'setAuthTtl'
     ];
 
     /**
@@ -139,13 +134,12 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'labelCategory' => 'getLabelCategory',
-        'label' => 'getLabel',
-        'icon' => 'getIcon',
-        'labelType' => 'getLabelType',
-        'labelTypeName' => 'getLabelTypeName',
-        'labelRemark' => 'getLabelRemark',
-        'labelStructs' => 'getLabelStructs'
+        'accountId' => 'getAccountId',
+        'promotedObjectType' => 'getPromotedObjectType',
+        'promotedObjectName' => 'getPromotedObjectName',
+        'authSpec' => 'getAuthSpec',
+        'authBeginDate' => 'getAuthBeginDate',
+        'authTtl' => 'getAuthTtl'
     ];
 
     /**
@@ -208,13 +202,12 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['labelCategory'] = isset($data['labelCategory']) ? $data['labelCategory'] : null;
-        $this->container['label'] = isset($data['label']) ? $data['label'] : null;
-        $this->container['icon'] = isset($data['icon']) ? $data['icon'] : null;
-        $this->container['labelType'] = isset($data['labelType']) ? $data['labelType'] : null;
-        $this->container['labelTypeName'] = isset($data['labelTypeName']) ? $data['labelTypeName'] : null;
-        $this->container['labelRemark'] = isset($data['labelRemark']) ? $data['labelRemark'] : null;
-        $this->container['labelStructs'] = isset($data['labelStructs']) ? $data['labelStructs'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
+        $this->container['promotedObjectName'] = isset($data['promotedObjectName']) ? $data['promotedObjectName'] : null;
+        $this->container['authSpec'] = isset($data['authSpec']) ? $data['authSpec'] : null;
+        $this->container['authBeginDate'] = isset($data['authBeginDate']) ? $data['authBeginDate'] : null;
+        $this->container['authTtl'] = isset($data['authTtl']) ? $data['authTtl'] : null;
     }
 
     /**
@@ -242,169 +235,145 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets labelCategory
+     * Gets accountId
+     *
+     * @return int|mixed
+     */
+    public function getAccountId()
+    {
+        return $this->container['accountId'];
+    }
+
+    /**
+     * Sets accountId
+     *
+     * @param int|mixed $accountId accountId
+     *
+     * @return $this
+     */
+    public function setAccountId($accountId)
+    {
+        $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets promotedObjectType
+     *
+     * @return \TencentAds\Model\PromotedObjectType|mixed
+     */
+    public function getPromotedObjectType()
+    {
+        return $this->container['promotedObjectType'];
+    }
+
+    /**
+     * Sets promotedObjectType
+     *
+     * @param \TencentAds\Model\PromotedObjectType|mixed $promotedObjectType promotedObjectType
+     *
+     * @return $this
+     */
+    public function setPromotedObjectType($promotedObjectType)
+    {
+        $this->container['promotedObjectType'] = $promotedObjectType;
+
+        return $this;
+    }
+
+    /**
+     * Gets promotedObjectName
      *
      * @return string|mixed
      */
-    public function getLabelCategory()
+    public function getPromotedObjectName()
     {
-        return $this->container['labelCategory'];
+        return $this->container['promotedObjectName'];
     }
 
     /**
-     * Sets labelCategory
+     * Sets promotedObjectName
      *
-     * @param string|mixed $labelCategory labelCategory
+     * @param string|mixed $promotedObjectName promotedObjectName
      *
      * @return $this
      */
-    public function setLabelCategory($labelCategory)
+    public function setPromotedObjectName($promotedObjectName)
     {
-        $this->container['labelCategory'] = $labelCategory;
+        $this->container['promotedObjectName'] = $promotedObjectName;
 
         return $this;
     }
 
     /**
-     * Gets label
+     * Gets authSpec
      *
-     * @return string[]|mixed
+     * @return \TencentAds\Model\AuthSpec|mixed
      */
-    public function getLabel()
+    public function getAuthSpec()
     {
-        return $this->container['label'];
+        return $this->container['authSpec'];
     }
 
     /**
-     * Sets label
+     * Sets authSpec
      *
-     * @param string[]|mixed $label label
+     * @param \TencentAds\Model\AuthSpec|mixed $authSpec authSpec
      *
      * @return $this
      */
-    public function setLabel($label)
+    public function setAuthSpec($authSpec)
     {
-        $this->container['label'] = $label;
+        $this->container['authSpec'] = $authSpec;
 
         return $this;
     }
 
     /**
-     * Gets icon
+     * Gets authBeginDate
      *
-     * @return \TencentAds\Model\LabelIconItem[]|mixed
+     * @return int|mixed
      */
-    public function getIcon()
+    public function getAuthBeginDate()
     {
-        return $this->container['icon'];
+        return $this->container['authBeginDate'];
     }
 
     /**
-     * Sets icon
+     * Sets authBeginDate
      *
-     * @param \TencentAds\Model\LabelIconItem[]|mixed $icon icon
+     * @param int|mixed $authBeginDate authBeginDate
      *
      * @return $this
      */
-    public function setIcon($icon)
+    public function setAuthBeginDate($authBeginDate)
     {
-        $this->container['icon'] = $icon;
+        $this->container['authBeginDate'] = $authBeginDate;
 
         return $this;
     }
 
     /**
-     * Gets labelType
+     * Gets authTtl
      *
-     * @return \TencentAds\Model\LabelType|mixed
+     * @return int|mixed
      */
-    public function getLabelType()
+    public function getAuthTtl()
     {
-        return $this->container['labelType'];
+        return $this->container['authTtl'];
     }
 
     /**
-     * Sets labelType
+     * Sets authTtl
      *
-     * @param \TencentAds\Model\LabelType|mixed $labelType labelType
+     * @param int|mixed $authTtl authTtl
      *
      * @return $this
      */
-    public function setLabelType($labelType)
+    public function setAuthTtl($authTtl)
     {
-        $this->container['labelType'] = $labelType;
-
-        return $this;
-    }
-
-    /**
-     * Gets labelTypeName
-     *
-     * @return string|mixed
-     */
-    public function getLabelTypeName()
-    {
-        return $this->container['labelTypeName'];
-    }
-
-    /**
-     * Sets labelTypeName
-     *
-     * @param string|mixed $labelTypeName labelTypeName
-     *
-     * @return $this
-     */
-    public function setLabelTypeName($labelTypeName)
-    {
-        $this->container['labelTypeName'] = $labelTypeName;
-
-        return $this;
-    }
-
-    /**
-     * Gets labelRemark
-     *
-     * @return \TencentAds\Model\LabelRemarkItem[]|mixed
-     */
-    public function getLabelRemark()
-    {
-        return $this->container['labelRemark'];
-    }
-
-    /**
-     * Sets labelRemark
-     *
-     * @param \TencentAds\Model\LabelRemarkItem[]|mixed $labelRemark labelRemark
-     *
-     * @return $this
-     */
-    public function setLabelRemark($labelRemark)
-    {
-        $this->container['labelRemark'] = $labelRemark;
-
-        return $this;
-    }
-
-    /**
-     * Gets labelStructs
-     *
-     * @return \TencentAds\Model\LabelStruct[]|mixed
-     */
-    public function getLabelStructs()
-    {
-        return $this->container['labelStructs'];
-    }
-
-    /**
-     * Sets labelStructs
-     *
-     * @param \TencentAds\Model\LabelStruct[]|mixed $labelStructs labelStructs
-     *
-     * @return $this
-     */
-    public function setLabelStructs($labelStructs)
-    {
-        $this->container['labelStructs'] = $labelStructs;
+        $this->container['authTtl'] = $authTtl;
 
         return $this;
     }

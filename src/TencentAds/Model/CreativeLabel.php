@@ -59,7 +59,8 @@ class CreativeLabel implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'content' => 'string',
-        'type' => '\TencentAds\Model\LabelType'
+        'type' => '\TencentAds\Model\LabelType',
+        'displayContent' => 'string'
     ];
 
     /**
@@ -69,7 +70,8 @@ class CreativeLabel implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'content' => null,
-        'type' => null
+        'type' => null,
+        'displayContent' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class CreativeLabel implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'content' => 'content',
-        'type' => 'type'
+        'type' => 'type',
+        'displayContent' => 'display_content'
     ];
 
     /**
@@ -110,7 +113,8 @@ class CreativeLabel implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'content' => 'setContent',
-        'type' => 'setType'
+        'type' => 'setType',
+        'displayContent' => 'setDisplayContent'
     ];
 
     /**
@@ -120,7 +124,8 @@ class CreativeLabel implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'content' => 'getContent',
-        'type' => 'getType'
+        'type' => 'getType',
+        'displayContent' => 'getDisplayContent'
     ];
 
     /**
@@ -185,6 +190,7 @@ class CreativeLabel implements ModelInterface, ArrayAccess
     {
         $this->container['content'] = isset($data['content']) ? $data['content'] : null;
         $this->container['type'] = isset($data['type']) ? $data['type'] : null;
+        $this->container['displayContent'] = isset($data['displayContent']) ? $data['displayContent'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class CreativeLabel implements ModelInterface, ArrayAccess
     public function setType($type)
     {
         $this->container['type'] = $type;
+
+        return $this;
+    }
+
+    /**
+     * Gets displayContent
+     *
+     * @return string|mixed
+     */
+    public function getDisplayContent()
+    {
+        return $this->container['displayContent'];
+    }
+
+    /**
+     * Sets displayContent
+     *
+     * @param string|mixed $displayContent displayContent
+     *
+     * @return $this
+     */
+    public function setDisplayContent($displayContent)
+    {
+        $this->container['displayContent'] = $displayContent;
 
         return $this;
     }

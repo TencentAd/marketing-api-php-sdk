@@ -1,6 +1,6 @@
 <?php
 /**
- * AdLabelGetListStruct
+ * AuthSpec
  *
  * PHP version 5
  *
@@ -33,7 +33,7 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AdLabelGetListStruct Class Doc Comment
+ * AuthSpec Class Doc Comment
  *
  * @category Class
  * @description 返回结构
@@ -41,7 +41,7 @@ use \TencentAds\ObjectSerializer;
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AdLabelGetListStruct implements ModelInterface, ArrayAccess
+class AuthSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'AdLabelGetListStruct';
+    protected static $swaggerModelName = 'auth_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,13 +58,8 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'labelCategory' => 'string',
-        'label' => 'string[]',
-        'icon' => '\TencentAds\Model\LabelIconItem[]',
-        'labelType' => '\TencentAds\Model\LabelType',
-        'labelTypeName' => 'string',
-        'labelRemark' => '\TencentAds\Model\LabelRemarkItem[]',
-        'labelStructs' => '\TencentAds\Model\LabelStruct[]'
+        'certificationList' => '\TencentAds\Model\Certification[]',
+        'relationship' => '\TencentAds\Model\PromotedObjectAuthRelationship'
     ];
 
     /**
@@ -73,13 +68,8 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'labelCategory' => null,
-        'label' => null,
-        'icon' => null,
-        'labelType' => null,
-        'labelTypeName' => null,
-        'labelRemark' => null,
-        'labelStructs' => null
+        'certificationList' => null,
+        'relationship' => null
     ];
 
     /**
@@ -109,13 +99,8 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'labelCategory' => 'label_category',
-        'label' => 'label',
-        'icon' => 'icon',
-        'labelType' => 'label_type',
-        'labelTypeName' => 'label_type_name',
-        'labelRemark' => 'label_remark',
-        'labelStructs' => 'label_structs'
+        'certificationList' => 'certification_list',
+        'relationship' => 'relationship'
     ];
 
     /**
@@ -124,13 +109,8 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'labelCategory' => 'setLabelCategory',
-        'label' => 'setLabel',
-        'icon' => 'setIcon',
-        'labelType' => 'setLabelType',
-        'labelTypeName' => 'setLabelTypeName',
-        'labelRemark' => 'setLabelRemark',
-        'labelStructs' => 'setLabelStructs'
+        'certificationList' => 'setCertificationList',
+        'relationship' => 'setRelationship'
     ];
 
     /**
@@ -139,13 +119,8 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'labelCategory' => 'getLabelCategory',
-        'label' => 'getLabel',
-        'icon' => 'getIcon',
-        'labelType' => 'getLabelType',
-        'labelTypeName' => 'getLabelTypeName',
-        'labelRemark' => 'getLabelRemark',
-        'labelStructs' => 'getLabelStructs'
+        'certificationList' => 'getCertificationList',
+        'relationship' => 'getRelationship'
     ];
 
     /**
@@ -208,13 +183,8 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['labelCategory'] = isset($data['labelCategory']) ? $data['labelCategory'] : null;
-        $this->container['label'] = isset($data['label']) ? $data['label'] : null;
-        $this->container['icon'] = isset($data['icon']) ? $data['icon'] : null;
-        $this->container['labelType'] = isset($data['labelType']) ? $data['labelType'] : null;
-        $this->container['labelTypeName'] = isset($data['labelTypeName']) ? $data['labelTypeName'] : null;
-        $this->container['labelRemark'] = isset($data['labelRemark']) ? $data['labelRemark'] : null;
-        $this->container['labelStructs'] = isset($data['labelStructs']) ? $data['labelStructs'] : null;
+        $this->container['certificationList'] = isset($data['certificationList']) ? $data['certificationList'] : null;
+        $this->container['relationship'] = isset($data['relationship']) ? $data['relationship'] : null;
     }
 
     /**
@@ -242,169 +212,49 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets labelCategory
+     * Gets certificationList
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\Certification[]|mixed
      */
-    public function getLabelCategory()
+    public function getCertificationList()
     {
-        return $this->container['labelCategory'];
+        return $this->container['certificationList'];
     }
 
     /**
-     * Sets labelCategory
+     * Sets certificationList
      *
-     * @param string|mixed $labelCategory labelCategory
+     * @param \TencentAds\Model\Certification[]|mixed $certificationList certificationList
      *
      * @return $this
      */
-    public function setLabelCategory($labelCategory)
+    public function setCertificationList($certificationList)
     {
-        $this->container['labelCategory'] = $labelCategory;
+        $this->container['certificationList'] = $certificationList;
 
         return $this;
     }
 
     /**
-     * Gets label
+     * Gets relationship
      *
-     * @return string[]|mixed
+     * @return \TencentAds\Model\PromotedObjectAuthRelationship|mixed
      */
-    public function getLabel()
+    public function getRelationship()
     {
-        return $this->container['label'];
+        return $this->container['relationship'];
     }
 
     /**
-     * Sets label
+     * Sets relationship
      *
-     * @param string[]|mixed $label label
+     * @param \TencentAds\Model\PromotedObjectAuthRelationship|mixed $relationship relationship
      *
      * @return $this
      */
-    public function setLabel($label)
+    public function setRelationship($relationship)
     {
-        $this->container['label'] = $label;
-
-        return $this;
-    }
-
-    /**
-     * Gets icon
-     *
-     * @return \TencentAds\Model\LabelIconItem[]|mixed
-     */
-    public function getIcon()
-    {
-        return $this->container['icon'];
-    }
-
-    /**
-     * Sets icon
-     *
-     * @param \TencentAds\Model\LabelIconItem[]|mixed $icon icon
-     *
-     * @return $this
-     */
-    public function setIcon($icon)
-    {
-        $this->container['icon'] = $icon;
-
-        return $this;
-    }
-
-    /**
-     * Gets labelType
-     *
-     * @return \TencentAds\Model\LabelType|mixed
-     */
-    public function getLabelType()
-    {
-        return $this->container['labelType'];
-    }
-
-    /**
-     * Sets labelType
-     *
-     * @param \TencentAds\Model\LabelType|mixed $labelType labelType
-     *
-     * @return $this
-     */
-    public function setLabelType($labelType)
-    {
-        $this->container['labelType'] = $labelType;
-
-        return $this;
-    }
-
-    /**
-     * Gets labelTypeName
-     *
-     * @return string|mixed
-     */
-    public function getLabelTypeName()
-    {
-        return $this->container['labelTypeName'];
-    }
-
-    /**
-     * Sets labelTypeName
-     *
-     * @param string|mixed $labelTypeName labelTypeName
-     *
-     * @return $this
-     */
-    public function setLabelTypeName($labelTypeName)
-    {
-        $this->container['labelTypeName'] = $labelTypeName;
-
-        return $this;
-    }
-
-    /**
-     * Gets labelRemark
-     *
-     * @return \TencentAds\Model\LabelRemarkItem[]|mixed
-     */
-    public function getLabelRemark()
-    {
-        return $this->container['labelRemark'];
-    }
-
-    /**
-     * Sets labelRemark
-     *
-     * @param \TencentAds\Model\LabelRemarkItem[]|mixed $labelRemark labelRemark
-     *
-     * @return $this
-     */
-    public function setLabelRemark($labelRemark)
-    {
-        $this->container['labelRemark'] = $labelRemark;
-
-        return $this;
-    }
-
-    /**
-     * Gets labelStructs
-     *
-     * @return \TencentAds\Model\LabelStruct[]|mixed
-     */
-    public function getLabelStructs()
-    {
-        return $this->container['labelStructs'];
-    }
-
-    /**
-     * Sets labelStructs
-     *
-     * @param \TencentAds\Model\LabelStruct[]|mixed $labelStructs labelStructs
-     *
-     * @return $this
-     */
-    public function setLabelStructs($labelStructs)
-    {
-        $this->container['labelStructs'] = $labelStructs;
+        $this->container['relationship'] = $relationship;
 
         return $this;
     }

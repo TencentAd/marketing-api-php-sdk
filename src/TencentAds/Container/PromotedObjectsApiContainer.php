@@ -62,6 +62,74 @@ class PromotedObjectsApiContainer extends ApiContainer
 
 
     /**
+     * Handle PromotedObjectsApi promotedObjectsAuthorize function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function authorize(array $params = [])
+    {
+        return $this->handleMiddleware('authorize', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->promotedObjectsAuthorize($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle PromotedObjectsApi promotedObjectsAuthorizeAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function authorizeAsync(array $params = [])
+    {
+        return $this->handleMiddleware('authorize', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->promotedObjectsAuthorizeAsync($data);
+            return $response;
+        });
+    }
+
+
+    /**
+     * Handle PromotedObjectsApi promotedObjectsDelete function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function delete(array $params = [])
+    {
+        return $this->handleMiddleware('delete', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->promotedObjectsDelete($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle PromotedObjectsApi promotedObjectsDeleteAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function deleteAsync(array $params = [])
+    {
+        return $this->handleMiddleware('delete', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->promotedObjectsDeleteAsync($data);
+            return $response;
+        });
+    }
+
+
+    /**
      * Handle PromotedObjectsApi promotedObjectsGet function
      * @param array params
      * @return mixed

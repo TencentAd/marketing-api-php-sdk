@@ -1,6 +1,6 @@
 <?php
 /**
- * LabelType
+ * PromotedObjectAuthRelationship
  *
  * PHP version 5
  *
@@ -31,25 +31,22 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * LabelType Class Doc Comment
+ * PromotedObjectAuthRelationship Class Doc Comment
  *
  * @category Class
- * @description 创意标签类型
+ * @description 授权主体关系
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class LabelType
+class PromotedObjectAuthRelationship
 {
     /**
      * Possible values of this enum
      */
-    const UNKNOWN = 'LABEL_TYPE_UNKNOWN';
-    const COMMON = 'LABEL_TYPE_COMMON';
-    const PROMOTIONAL = 'LABEL_TYPE_PROMOTIONAL';
-    const CUSTOMIZETEXT = 'LABEL_TYPE_CUSTOMIZETEXT';
-    const ICON = 'LABEL_TYPE_ICON';
-    const DYNAMIC = 'LABEL_TYPE_DYNAMIC';
+    const UNKNOWN = 'RELATIONSHIP_UNKNOWN';
+    const CORPORATION = 'RELATIONSHIP_CORPORATION';
+    const EMPLOYMENT = 'RELATIONSHIP_EMPLOYMENT';
     
     /**
      * Gets allowable values of the enum
@@ -59,11 +56,8 @@ class LabelType
     {
         return [
             self::UNKNOWN,
-            self::COMMON,
-            self::PROMOTIONAL,
-            self::CUSTOMIZETEXT,
-            self::ICON,
-            self::DYNAMIC,
+            self::CORPORATION,
+            self::EMPLOYMENT,
         ];
     }
 }

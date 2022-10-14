@@ -108,6 +108,7 @@ use TencentAds\Container\ProductsSystemStatusApiContainer;
 use TencentAds\Container\ProfilesApiContainer;
 use TencentAds\Container\ProgrammedApiContainer;
 use TencentAds\Container\ProgrammedTemplateApiContainer;
+use TencentAds\Container\PromotedObjectAuthorizationApiContainer;
 use TencentAds\Container\PromotedObjectsApiContainer;
 use TencentAds\Container\PropertyFileSessionsApiContainer;
 use TencentAds\Container\PropertyFilesApiContainer;
@@ -487,6 +488,9 @@ class App
 
     /** @var ProgrammedTemplateApiContainer */
     public $programmedTemplateApiContainer;
+
+    /** @var PromotedObjectAuthorizationApiContainer */
+    public $promotedObjectAuthorizationApiContainer;
 
     /** @var PromotedObjectsApiContainer */
     public $promotedObjectsApiContainer;
@@ -2150,6 +2154,20 @@ class App
             $this->programmedTemplateApiContainer = $container;
         }
         return $this->programmedTemplateApiContainer;
+    }
+
+
+    /**
+     * @return PromotedObjectAuthorizationApiContainer
+     */
+    public function promotedObjectAuthorization()
+    {
+        if (empty($this->promotedObjectAuthorizationApiContainer)) {
+            $container = new PromotedObjectAuthorizationApiContainer();
+            $container->init($this, $this->getClient());
+            $this->promotedObjectAuthorizationApiContainer = $container;
+        }
+        return $this->promotedObjectAuthorizationApiContainer;
     }
 
 

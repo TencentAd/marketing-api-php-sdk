@@ -48,7 +48,6 @@ class TaskDetailResultType
     const FAIL = 'TASK_DETAIL_RESULT_TYPE_FAIL';
     const SUCCESS = 'TASK_DETAIL_RESULT_TYPE_SUCCESS';
     const SYSTEM_ERROR = 'TASK_DETAIL_RESULT_TYPE_SYSTEM_ERROR';
-    const PROCESSING = 'TASK_DETAIL_RESULT_TYPE_PROCESSING';
     
     /**
      * Gets allowable values of the enum
@@ -61,7 +60,6 @@ class TaskDetailResultType
             self::FAIL,
             self::SUCCESS,
             self::SYSTEM_ERROR,
-            self::PROCESSING,
         ];
     }
 }

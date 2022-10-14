@@ -1,6 +1,6 @@
 <?php
 /**
- * AdLabelGetListStruct
+ * PromotedObjectsAuthorizeResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AdLabelGetListStruct Class Doc Comment
+ * PromotedObjectsAuthorizeResponseData Class Doc Comment
  *
  * @category Class
- * @description 返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AdLabelGetListStruct implements ModelInterface, ArrayAccess
+class PromotedObjectsAuthorizeResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'AdLabelGetListStruct';
+    protected static $swaggerModelName = 'PromotedObjectsAuthorizeResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,13 +57,11 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'labelCategory' => 'string',
-        'label' => 'string[]',
-        'icon' => '\TencentAds\Model\LabelIconItem[]',
-        'labelType' => '\TencentAds\Model\LabelType',
-        'labelTypeName' => 'string',
-        'labelRemark' => '\TencentAds\Model\LabelRemarkItem[]',
-        'labelStructs' => '\TencentAds\Model\LabelStruct[]'
+        'promotedObjectId' => 'string',
+        'qrCodeUrl' => 'string',
+        'description' => 'string',
+        'expiredTime' => 'int',
+        'agreement' => 'string'
     ];
 
     /**
@@ -73,13 +70,11 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'labelCategory' => null,
-        'label' => null,
-        'icon' => null,
-        'labelType' => null,
-        'labelTypeName' => null,
-        'labelRemark' => null,
-        'labelStructs' => null
+        'promotedObjectId' => null,
+        'qrCodeUrl' => null,
+        'description' => null,
+        'expiredTime' => 'int64',
+        'agreement' => null
     ];
 
     /**
@@ -109,13 +104,11 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'labelCategory' => 'label_category',
-        'label' => 'label',
-        'icon' => 'icon',
-        'labelType' => 'label_type',
-        'labelTypeName' => 'label_type_name',
-        'labelRemark' => 'label_remark',
-        'labelStructs' => 'label_structs'
+        'promotedObjectId' => 'promoted_object_id',
+        'qrCodeUrl' => 'qr_code_url',
+        'description' => 'description',
+        'expiredTime' => 'expired_time',
+        'agreement' => 'agreement'
     ];
 
     /**
@@ -124,13 +117,11 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'labelCategory' => 'setLabelCategory',
-        'label' => 'setLabel',
-        'icon' => 'setIcon',
-        'labelType' => 'setLabelType',
-        'labelTypeName' => 'setLabelTypeName',
-        'labelRemark' => 'setLabelRemark',
-        'labelStructs' => 'setLabelStructs'
+        'promotedObjectId' => 'setPromotedObjectId',
+        'qrCodeUrl' => 'setQrCodeUrl',
+        'description' => 'setDescription',
+        'expiredTime' => 'setExpiredTime',
+        'agreement' => 'setAgreement'
     ];
 
     /**
@@ -139,13 +130,11 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'labelCategory' => 'getLabelCategory',
-        'label' => 'getLabel',
-        'icon' => 'getIcon',
-        'labelType' => 'getLabelType',
-        'labelTypeName' => 'getLabelTypeName',
-        'labelRemark' => 'getLabelRemark',
-        'labelStructs' => 'getLabelStructs'
+        'promotedObjectId' => 'getPromotedObjectId',
+        'qrCodeUrl' => 'getQrCodeUrl',
+        'description' => 'getDescription',
+        'expiredTime' => 'getExpiredTime',
+        'agreement' => 'getAgreement'
     ];
 
     /**
@@ -208,13 +197,11 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['labelCategory'] = isset($data['labelCategory']) ? $data['labelCategory'] : null;
-        $this->container['label'] = isset($data['label']) ? $data['label'] : null;
-        $this->container['icon'] = isset($data['icon']) ? $data['icon'] : null;
-        $this->container['labelType'] = isset($data['labelType']) ? $data['labelType'] : null;
-        $this->container['labelTypeName'] = isset($data['labelTypeName']) ? $data['labelTypeName'] : null;
-        $this->container['labelRemark'] = isset($data['labelRemark']) ? $data['labelRemark'] : null;
-        $this->container['labelStructs'] = isset($data['labelStructs']) ? $data['labelStructs'] : null;
+        $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
+        $this->container['qrCodeUrl'] = isset($data['qrCodeUrl']) ? $data['qrCodeUrl'] : null;
+        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
+        $this->container['expiredTime'] = isset($data['expiredTime']) ? $data['expiredTime'] : null;
+        $this->container['agreement'] = isset($data['agreement']) ? $data['agreement'] : null;
     }
 
     /**
@@ -242,169 +229,121 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets labelCategory
+     * Gets promotedObjectId
      *
      * @return string|mixed
      */
-    public function getLabelCategory()
+    public function getPromotedObjectId()
     {
-        return $this->container['labelCategory'];
+        return $this->container['promotedObjectId'];
     }
 
     /**
-     * Sets labelCategory
+     * Sets promotedObjectId
      *
-     * @param string|mixed $labelCategory labelCategory
+     * @param string|mixed $promotedObjectId promotedObjectId
      *
      * @return $this
      */
-    public function setLabelCategory($labelCategory)
+    public function setPromotedObjectId($promotedObjectId)
     {
-        $this->container['labelCategory'] = $labelCategory;
+        $this->container['promotedObjectId'] = $promotedObjectId;
 
         return $this;
     }
 
     /**
-     * Gets label
-     *
-     * @return string[]|mixed
-     */
-    public function getLabel()
-    {
-        return $this->container['label'];
-    }
-
-    /**
-     * Sets label
-     *
-     * @param string[]|mixed $label label
-     *
-     * @return $this
-     */
-    public function setLabel($label)
-    {
-        $this->container['label'] = $label;
-
-        return $this;
-    }
-
-    /**
-     * Gets icon
-     *
-     * @return \TencentAds\Model\LabelIconItem[]|mixed
-     */
-    public function getIcon()
-    {
-        return $this->container['icon'];
-    }
-
-    /**
-     * Sets icon
-     *
-     * @param \TencentAds\Model\LabelIconItem[]|mixed $icon icon
-     *
-     * @return $this
-     */
-    public function setIcon($icon)
-    {
-        $this->container['icon'] = $icon;
-
-        return $this;
-    }
-
-    /**
-     * Gets labelType
-     *
-     * @return \TencentAds\Model\LabelType|mixed
-     */
-    public function getLabelType()
-    {
-        return $this->container['labelType'];
-    }
-
-    /**
-     * Sets labelType
-     *
-     * @param \TencentAds\Model\LabelType|mixed $labelType labelType
-     *
-     * @return $this
-     */
-    public function setLabelType($labelType)
-    {
-        $this->container['labelType'] = $labelType;
-
-        return $this;
-    }
-
-    /**
-     * Gets labelTypeName
+     * Gets qrCodeUrl
      *
      * @return string|mixed
      */
-    public function getLabelTypeName()
+    public function getQrCodeUrl()
     {
-        return $this->container['labelTypeName'];
+        return $this->container['qrCodeUrl'];
     }
 
     /**
-     * Sets labelTypeName
+     * Sets qrCodeUrl
      *
-     * @param string|mixed $labelTypeName labelTypeName
+     * @param string|mixed $qrCodeUrl qrCodeUrl
      *
      * @return $this
      */
-    public function setLabelTypeName($labelTypeName)
+    public function setQrCodeUrl($qrCodeUrl)
     {
-        $this->container['labelTypeName'] = $labelTypeName;
+        $this->container['qrCodeUrl'] = $qrCodeUrl;
 
         return $this;
     }
 
     /**
-     * Gets labelRemark
+     * Gets description
      *
-     * @return \TencentAds\Model\LabelRemarkItem[]|mixed
+     * @return string|mixed
      */
-    public function getLabelRemark()
+    public function getDescription()
     {
-        return $this->container['labelRemark'];
+        return $this->container['description'];
     }
 
     /**
-     * Sets labelRemark
+     * Sets description
      *
-     * @param \TencentAds\Model\LabelRemarkItem[]|mixed $labelRemark labelRemark
+     * @param string|mixed $description description
      *
      * @return $this
      */
-    public function setLabelRemark($labelRemark)
+    public function setDescription($description)
     {
-        $this->container['labelRemark'] = $labelRemark;
+        $this->container['description'] = $description;
 
         return $this;
     }
 
     /**
-     * Gets labelStructs
+     * Gets expiredTime
      *
-     * @return \TencentAds\Model\LabelStruct[]|mixed
+     * @return int|mixed
      */
-    public function getLabelStructs()
+    public function getExpiredTime()
     {
-        return $this->container['labelStructs'];
+        return $this->container['expiredTime'];
     }
 
     /**
-     * Sets labelStructs
+     * Sets expiredTime
      *
-     * @param \TencentAds\Model\LabelStruct[]|mixed $labelStructs labelStructs
+     * @param int|mixed $expiredTime expiredTime
      *
      * @return $this
      */
-    public function setLabelStructs($labelStructs)
+    public function setExpiredTime($expiredTime)
     {
-        $this->container['labelStructs'] = $labelStructs;
+        $this->container['expiredTime'] = $expiredTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets agreement
+     *
+     * @return string|mixed
+     */
+    public function getAgreement()
+    {
+        return $this->container['agreement'];
+    }
+
+    /**
+     * Sets agreement
+     *
+     * @param string|mixed $agreement agreement
+     *
+     * @return $this
+     */
+    public function setAgreement($agreement)
+    {
+        $this->container['agreement'] = $agreement;
 
         return $this;
     }

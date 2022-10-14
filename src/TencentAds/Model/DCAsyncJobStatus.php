@@ -1,6 +1,6 @@
 <?php
 /**
- * LabelType
+ * DCAsyncJobStatus
  *
  * PHP version 5
  *
@@ -31,25 +31,24 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * LabelType Class Doc Comment
+ * DCAsyncJobStatus Class Doc Comment
  *
  * @category Class
- * @description 创意标签类型
+ * @description 异步任务状态
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class LabelType
+class DCAsyncJobStatus
 {
     /**
      * Possible values of this enum
      */
-    const UNKNOWN = 'LABEL_TYPE_UNKNOWN';
-    const COMMON = 'LABEL_TYPE_COMMON';
-    const PROMOTIONAL = 'LABEL_TYPE_PROMOTIONAL';
-    const CUSTOMIZETEXT = 'LABEL_TYPE_CUSTOMIZETEXT';
-    const ICON = 'LABEL_TYPE_ICON';
-    const DYNAMIC = 'LABEL_TYPE_DYNAMIC';
+    const PENDING = 'DC_ASYNC_JOB_STATUS_PENDING';
+    const FAIL = 'DC_ASYNC_JOB_STATUS_FAIL';
+    const SUCCESS = 'DC_ASYNC_JOB_STATUS_SUCCESS';
+    const SYSTEM_ERROR = 'DC_ASYNC_JOB_STATUS_SYSTEM_ERROR';
+    const PROCESSING = 'DC_ASYNC_JOB_STATUS_PROCESSING';
     
     /**
      * Gets allowable values of the enum
@@ -58,12 +57,11 @@ class LabelType
     public static function getAllowableEnumValues()
     {
         return [
-            self::UNKNOWN,
-            self::COMMON,
-            self::PROMOTIONAL,
-            self::CUSTOMIZETEXT,
-            self::ICON,
-            self::DYNAMIC,
+            self::PENDING,
+            self::FAIL,
+            self::SUCCESS,
+            self::SYSTEM_ERROR,
+            self::PROCESSING,
         ];
     }
 }

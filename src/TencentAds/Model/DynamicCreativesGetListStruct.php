@@ -92,7 +92,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'programCreativeInfo' => '\TencentAds\Model\ProgramCreativeInfo',
         'dynamicCreativeType' => '\TencentAds\Model\DynamicCreativeType',
         'headClickType' => '\TencentAds\Model\HeadClickType',
-        'headClickSpec' => '\TencentAds\Model\HeadClickSpec'
+        'headClickSpec' => '\TencentAds\Model\HeadClickSpec',
+        'asyncJobStatus' => '\TencentAds\Model\DCAsyncJobStatus'
     ];
 
     /**
@@ -135,7 +136,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'programCreativeInfo' => null,
         'dynamicCreativeType' => null,
         'headClickType' => null,
-        'headClickSpec' => null
+        'headClickSpec' => null,
+        'asyncJobStatus' => null
     ];
 
     /**
@@ -199,7 +201,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'programCreativeInfo' => 'program_creative_info',
         'dynamicCreativeType' => 'dynamic_creative_type',
         'headClickType' => 'head_click_type',
-        'headClickSpec' => 'head_click_spec'
+        'headClickSpec' => 'head_click_spec',
+        'asyncJobStatus' => 'async_job_status'
     ];
 
     /**
@@ -242,7 +245,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'programCreativeInfo' => 'setProgramCreativeInfo',
         'dynamicCreativeType' => 'setDynamicCreativeType',
         'headClickType' => 'setHeadClickType',
-        'headClickSpec' => 'setHeadClickSpec'
+        'headClickSpec' => 'setHeadClickSpec',
+        'asyncJobStatus' => 'setAsyncJobStatus'
     ];
 
     /**
@@ -285,7 +289,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'programCreativeInfo' => 'getProgramCreativeInfo',
         'dynamicCreativeType' => 'getDynamicCreativeType',
         'headClickType' => 'getHeadClickType',
-        'headClickSpec' => 'getHeadClickSpec'
+        'headClickSpec' => 'getHeadClickSpec',
+        'asyncJobStatus' => 'getAsyncJobStatus'
     ];
 
     /**
@@ -383,6 +388,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['dynamicCreativeType'] = isset($data['dynamicCreativeType']) ? $data['dynamicCreativeType'] : null;
         $this->container['headClickType'] = isset($data['headClickType']) ? $data['headClickType'] : null;
         $this->container['headClickSpec'] = isset($data['headClickSpec']) ? $data['headClickSpec'] : null;
+        $this->container['asyncJobStatus'] = isset($data['asyncJobStatus']) ? $data['asyncJobStatus'] : null;
     }
 
     /**
@@ -1245,6 +1251,30 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setHeadClickSpec($headClickSpec)
     {
         $this->container['headClickSpec'] = $headClickSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets asyncJobStatus
+     *
+     * @return \TencentAds\Model\DCAsyncJobStatus|mixed
+     */
+    public function getAsyncJobStatus()
+    {
+        return $this->container['asyncJobStatus'];
+    }
+
+    /**
+     * Sets asyncJobStatus
+     *
+     * @param \TencentAds\Model\DCAsyncJobStatus|mixed $asyncJobStatus asyncJobStatus
+     *
+     * @return $this
+     */
+    public function setAsyncJobStatus($asyncJobStatus)
+    {
+        $this->container['asyncJobStatus'] = $asyncJobStatus;
 
         return $this;
     }

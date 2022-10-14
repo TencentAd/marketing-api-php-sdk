@@ -1,6 +1,6 @@
 <?php
 /**
- * AdLabelGetListStruct
+ * Certification
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AdLabelGetListStruct Class Doc Comment
+ * Certification Class Doc Comment
  *
  * @category Class
- * @description 返回结构
+ * @description 资质
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AdLabelGetListStruct implements ModelInterface, ArrayAccess
+class Certification implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'AdLabelGetListStruct';
+    protected static $swaggerModelName = 'certification';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,13 +58,13 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'labelCategory' => 'string',
-        'label' => 'string[]',
-        'icon' => '\TencentAds\Model\LabelIconItem[]',
-        'labelType' => '\TencentAds\Model\LabelType',
-        'labelTypeName' => 'string',
-        'labelRemark' => '\TencentAds\Model\LabelRemarkItem[]',
-        'labelStructs' => '\TencentAds\Model\LabelStruct[]'
+        'certificationImage' => 'string',
+        'certificationImagePageNo' => 'int',
+        'certificationCode' => 'string',
+        'certificationName' => 'string',
+        'certificationNumber' => 'string',
+        'certificationId' => 'int',
+        'certificationImageId' => 'string'
     ];
 
     /**
@@ -73,13 +73,13 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'labelCategory' => null,
-        'label' => null,
-        'icon' => null,
-        'labelType' => null,
-        'labelTypeName' => null,
-        'labelRemark' => null,
-        'labelStructs' => null
+        'certificationImage' => null,
+        'certificationImagePageNo' => 'int64',
+        'certificationCode' => null,
+        'certificationName' => null,
+        'certificationNumber' => null,
+        'certificationId' => 'int64',
+        'certificationImageId' => null
     ];
 
     /**
@@ -109,13 +109,13 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'labelCategory' => 'label_category',
-        'label' => 'label',
-        'icon' => 'icon',
-        'labelType' => 'label_type',
-        'labelTypeName' => 'label_type_name',
-        'labelRemark' => 'label_remark',
-        'labelStructs' => 'label_structs'
+        'certificationImage' => 'certification_image',
+        'certificationImagePageNo' => 'certification_image_page_no',
+        'certificationCode' => 'certification_code',
+        'certificationName' => 'certification_name',
+        'certificationNumber' => 'certification_number',
+        'certificationId' => 'certification_id',
+        'certificationImageId' => 'certification_image_id'
     ];
 
     /**
@@ -124,13 +124,13 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'labelCategory' => 'setLabelCategory',
-        'label' => 'setLabel',
-        'icon' => 'setIcon',
-        'labelType' => 'setLabelType',
-        'labelTypeName' => 'setLabelTypeName',
-        'labelRemark' => 'setLabelRemark',
-        'labelStructs' => 'setLabelStructs'
+        'certificationImage' => 'setCertificationImage',
+        'certificationImagePageNo' => 'setCertificationImagePageNo',
+        'certificationCode' => 'setCertificationCode',
+        'certificationName' => 'setCertificationName',
+        'certificationNumber' => 'setCertificationNumber',
+        'certificationId' => 'setCertificationId',
+        'certificationImageId' => 'setCertificationImageId'
     ];
 
     /**
@@ -139,13 +139,13 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'labelCategory' => 'getLabelCategory',
-        'label' => 'getLabel',
-        'icon' => 'getIcon',
-        'labelType' => 'getLabelType',
-        'labelTypeName' => 'getLabelTypeName',
-        'labelRemark' => 'getLabelRemark',
-        'labelStructs' => 'getLabelStructs'
+        'certificationImage' => 'getCertificationImage',
+        'certificationImagePageNo' => 'getCertificationImagePageNo',
+        'certificationCode' => 'getCertificationCode',
+        'certificationName' => 'getCertificationName',
+        'certificationNumber' => 'getCertificationNumber',
+        'certificationId' => 'getCertificationId',
+        'certificationImageId' => 'getCertificationImageId'
     ];
 
     /**
@@ -208,13 +208,13 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['labelCategory'] = isset($data['labelCategory']) ? $data['labelCategory'] : null;
-        $this->container['label'] = isset($data['label']) ? $data['label'] : null;
-        $this->container['icon'] = isset($data['icon']) ? $data['icon'] : null;
-        $this->container['labelType'] = isset($data['labelType']) ? $data['labelType'] : null;
-        $this->container['labelTypeName'] = isset($data['labelTypeName']) ? $data['labelTypeName'] : null;
-        $this->container['labelRemark'] = isset($data['labelRemark']) ? $data['labelRemark'] : null;
-        $this->container['labelStructs'] = isset($data['labelStructs']) ? $data['labelStructs'] : null;
+        $this->container['certificationImage'] = isset($data['certificationImage']) ? $data['certificationImage'] : null;
+        $this->container['certificationImagePageNo'] = isset($data['certificationImagePageNo']) ? $data['certificationImagePageNo'] : null;
+        $this->container['certificationCode'] = isset($data['certificationCode']) ? $data['certificationCode'] : null;
+        $this->container['certificationName'] = isset($data['certificationName']) ? $data['certificationName'] : null;
+        $this->container['certificationNumber'] = isset($data['certificationNumber']) ? $data['certificationNumber'] : null;
+        $this->container['certificationId'] = isset($data['certificationId']) ? $data['certificationId'] : null;
+        $this->container['certificationImageId'] = isset($data['certificationImageId']) ? $data['certificationImageId'] : null;
     }
 
     /**
@@ -242,169 +242,169 @@ class AdLabelGetListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets labelCategory
+     * Gets certificationImage
      *
      * @return string|mixed
      */
-    public function getLabelCategory()
+    public function getCertificationImage()
     {
-        return $this->container['labelCategory'];
+        return $this->container['certificationImage'];
     }
 
     /**
-     * Sets labelCategory
+     * Sets certificationImage
      *
-     * @param string|mixed $labelCategory labelCategory
+     * @param string|mixed $certificationImage certificationImage
      *
      * @return $this
      */
-    public function setLabelCategory($labelCategory)
+    public function setCertificationImage($certificationImage)
     {
-        $this->container['labelCategory'] = $labelCategory;
+        $this->container['certificationImage'] = $certificationImage;
 
         return $this;
     }
 
     /**
-     * Gets label
+     * Gets certificationImagePageNo
      *
-     * @return string[]|mixed
+     * @return int|mixed
      */
-    public function getLabel()
+    public function getCertificationImagePageNo()
     {
-        return $this->container['label'];
+        return $this->container['certificationImagePageNo'];
     }
 
     /**
-     * Sets label
+     * Sets certificationImagePageNo
      *
-     * @param string[]|mixed $label label
+     * @param int|mixed $certificationImagePageNo certificationImagePageNo
      *
      * @return $this
      */
-    public function setLabel($label)
+    public function setCertificationImagePageNo($certificationImagePageNo)
     {
-        $this->container['label'] = $label;
+        $this->container['certificationImagePageNo'] = $certificationImagePageNo;
 
         return $this;
     }
 
     /**
-     * Gets icon
-     *
-     * @return \TencentAds\Model\LabelIconItem[]|mixed
-     */
-    public function getIcon()
-    {
-        return $this->container['icon'];
-    }
-
-    /**
-     * Sets icon
-     *
-     * @param \TencentAds\Model\LabelIconItem[]|mixed $icon icon
-     *
-     * @return $this
-     */
-    public function setIcon($icon)
-    {
-        $this->container['icon'] = $icon;
-
-        return $this;
-    }
-
-    /**
-     * Gets labelType
-     *
-     * @return \TencentAds\Model\LabelType|mixed
-     */
-    public function getLabelType()
-    {
-        return $this->container['labelType'];
-    }
-
-    /**
-     * Sets labelType
-     *
-     * @param \TencentAds\Model\LabelType|mixed $labelType labelType
-     *
-     * @return $this
-     */
-    public function setLabelType($labelType)
-    {
-        $this->container['labelType'] = $labelType;
-
-        return $this;
-    }
-
-    /**
-     * Gets labelTypeName
+     * Gets certificationCode
      *
      * @return string|mixed
      */
-    public function getLabelTypeName()
+    public function getCertificationCode()
     {
-        return $this->container['labelTypeName'];
+        return $this->container['certificationCode'];
     }
 
     /**
-     * Sets labelTypeName
+     * Sets certificationCode
      *
-     * @param string|mixed $labelTypeName labelTypeName
+     * @param string|mixed $certificationCode certificationCode
      *
      * @return $this
      */
-    public function setLabelTypeName($labelTypeName)
+    public function setCertificationCode($certificationCode)
     {
-        $this->container['labelTypeName'] = $labelTypeName;
+        $this->container['certificationCode'] = $certificationCode;
 
         return $this;
     }
 
     /**
-     * Gets labelRemark
+     * Gets certificationName
      *
-     * @return \TencentAds\Model\LabelRemarkItem[]|mixed
+     * @return string|mixed
      */
-    public function getLabelRemark()
+    public function getCertificationName()
     {
-        return $this->container['labelRemark'];
+        return $this->container['certificationName'];
     }
 
     /**
-     * Sets labelRemark
+     * Sets certificationName
      *
-     * @param \TencentAds\Model\LabelRemarkItem[]|mixed $labelRemark labelRemark
+     * @param string|mixed $certificationName certificationName
      *
      * @return $this
      */
-    public function setLabelRemark($labelRemark)
+    public function setCertificationName($certificationName)
     {
-        $this->container['labelRemark'] = $labelRemark;
+        $this->container['certificationName'] = $certificationName;
 
         return $this;
     }
 
     /**
-     * Gets labelStructs
+     * Gets certificationNumber
      *
-     * @return \TencentAds\Model\LabelStruct[]|mixed
+     * @return string|mixed
      */
-    public function getLabelStructs()
+    public function getCertificationNumber()
     {
-        return $this->container['labelStructs'];
+        return $this->container['certificationNumber'];
     }
 
     /**
-     * Sets labelStructs
+     * Sets certificationNumber
      *
-     * @param \TencentAds\Model\LabelStruct[]|mixed $labelStructs labelStructs
+     * @param string|mixed $certificationNumber certificationNumber
      *
      * @return $this
      */
-    public function setLabelStructs($labelStructs)
+    public function setCertificationNumber($certificationNumber)
     {
-        $this->container['labelStructs'] = $labelStructs;
+        $this->container['certificationNumber'] = $certificationNumber;
+
+        return $this;
+    }
+
+    /**
+     * Gets certificationId
+     *
+     * @return int|mixed
+     */
+    public function getCertificationId()
+    {
+        return $this->container['certificationId'];
+    }
+
+    /**
+     * Sets certificationId
+     *
+     * @param int|mixed $certificationId certificationId
+     *
+     * @return $this
+     */
+    public function setCertificationId($certificationId)
+    {
+        $this->container['certificationId'] = $certificationId;
+
+        return $this;
+    }
+
+    /**
+     * Gets certificationImageId
+     *
+     * @return string|mixed
+     */
+    public function getCertificationImageId()
+    {
+        return $this->container['certificationImageId'];
+    }
+
+    /**
+     * Sets certificationImageId
+     *
+     * @param string|mixed $certificationImageId certificationImageId
+     *
+     * @return $this
+     */
+    public function setCertificationImageId($certificationImageId)
+    {
+        $this->container['certificationImageId'] = $certificationImageId;
 
         return $this;
     }
