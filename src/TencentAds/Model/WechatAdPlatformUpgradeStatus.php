@@ -1,6 +1,6 @@
 <?php
 /**
- * HeadClickType
+ * WechatAdPlatformUpgradeStatus
  *
  * PHP version 5
  *
@@ -31,28 +31,21 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * HeadClickType Class Doc Comment
+ * WechatAdPlatformUpgradeStatus Class Doc Comment
  *
  * @category Class
- * @description 头像点击跳转信息
+ * @description 微信公众号账户升级状态
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class HeadClickType
+class WechatAdPlatformUpgradeStatus
 {
     /**
      * Possible values of this enum
      */
-    const _DEFAULT = 'HEAD_CLICK_TYPE_DEFAULT';
-    const CUSTOMIZED = 'HEAD_CLICK_TYPE_CUSTOMIZED';
-    const CELEBRITY_ACCOUNT = 'HEAD_CLICK_TYPE_CELEBRITY_ACCOUNT';
-    const VIRTUAL_ACCOUNT = 'HEAD_CLICK_TYPE_VIRTUAL_ACCOUNT';
-    const LIVE_PROFILE = 'HEAD_CLICK_TYPE_LIVE_PROFILE';
-    const LIVE_EVENT = 'HEAD_CLICK_TYPE_LIVE_EVENT';
-    const BRAND_PROGRAM = 'HEAD_CLICK_TYPE_BRAND_PROGRAM';
-    const CNY_PROFILE = 'HEAD_CLICK_TYPE_CNY_PROFILE';
-    const SEARCH_BRAND_AREA = 'HEAD_CLICK_TYPE_SEARCH_BRAND_AREA';
+    const UPGRADED = 'UPGRADED';
+    const NOT_UPGRADED = 'NOT_UPGRADED';
     
     /**
      * Gets allowable values of the enum
@@ -61,15 +54,8 @@ class HeadClickType
     public static function getAllowableEnumValues()
     {
         return [
-            self::_DEFAULT,
-            self::CUSTOMIZED,
-            self::CELEBRITY_ACCOUNT,
-            self::VIRTUAL_ACCOUNT,
-            self::LIVE_PROFILE,
-            self::LIVE_EVENT,
-            self::BRAND_PROGRAM,
-            self::CNY_PROFILE,
-            self::SEARCH_BRAND_AREA,
+            self::UPGRADED,
+            self::NOT_UPGRADED,
         ];
     }
 }

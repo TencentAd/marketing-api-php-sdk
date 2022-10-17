@@ -152,6 +152,7 @@ use TencentAds\Container\WechatPagesCsgrouplistApiContainer;
 use TencentAds\Container\WechatPagesCustomApiContainer;
 use TencentAds\Container\WechatPagesGrantinfoApiContainer;
 use TencentAds\Container\WechatQualificationsApiContainer;
+use TencentAds\Container\WeixinOfficialAccountsUpgradeStatusApiContainer;
 use TencentAds\Container\WildcardsApiContainer;
 use TencentAds\Container\WxPackageAccountApiContainer;
 use TencentAds\Container\WxPackagePackageApiContainer;
@@ -620,6 +621,9 @@ class App
 
     /** @var WechatQualificationsApiContainer */
     public $wechatQualificationsApiContainer;
+
+    /** @var WeixinOfficialAccountsUpgradeStatusApiContainer */
+    public $weixinOfficialAccountsUpgradeStatusApiContainer;
 
     /** @var WildcardsApiContainer */
     public $wildcardsApiContainer;
@@ -2770,6 +2774,20 @@ class App
             $this->wechatQualificationsApiContainer = $container;
         }
         return $this->wechatQualificationsApiContainer;
+    }
+
+
+    /**
+     * @return WeixinOfficialAccountsUpgradeStatusApiContainer
+     */
+    public function weixinOfficialAccountsUpgradeStatus()
+    {
+        if (empty($this->weixinOfficialAccountsUpgradeStatusApiContainer)) {
+            $container = new WeixinOfficialAccountsUpgradeStatusApiContainer();
+            $container->init($this, $this->getClient());
+            $this->weixinOfficialAccountsUpgradeStatusApiContainer = $container;
+        }
+        return $this->weixinOfficialAccountsUpgradeStatusApiContainer;
     }
 
 

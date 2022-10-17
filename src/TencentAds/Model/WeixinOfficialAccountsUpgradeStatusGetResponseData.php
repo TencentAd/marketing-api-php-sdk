@@ -1,6 +1,6 @@
 <?php
 /**
- * HeadClickSpec
+ * WeixinOfficialAccountsUpgradeStatusGetResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * HeadClickSpec Class Doc Comment
+ * WeixinOfficialAccountsUpgradeStatusGetResponseData Class Doc Comment
  *
  * @category Class
- * @description 头像点击跳转信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class HeadClickSpec implements ModelInterface, ArrayAccess
+class WeixinOfficialAccountsUpgradeStatusGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'head_click_spec';
+    protected static $swaggerModelName = 'WeixinOfficialAccountsUpgradeStatusGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'brandAppId' => 'string',
-        'searchBrandAreaKeyword' => 'string'
+        'status' => '\TencentAds\Model\WechatAdPlatformUpgradeStatus'
     ];
 
     /**
@@ -68,8 +66,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'brandAppId' => null,
-        'searchBrandAreaKeyword' => null
+        'status' => null
     ];
 
     /**
@@ -99,8 +96,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'brandAppId' => 'brand_app_id',
-        'searchBrandAreaKeyword' => 'search_brand_area_keyword'
+        'status' => 'status'
     ];
 
     /**
@@ -109,8 +105,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'brandAppId' => 'setBrandAppId',
-        'searchBrandAreaKeyword' => 'setSearchBrandAreaKeyword'
+        'status' => 'setStatus'
     ];
 
     /**
@@ -119,8 +114,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'brandAppId' => 'getBrandAppId',
-        'searchBrandAreaKeyword' => 'getSearchBrandAreaKeyword'
+        'status' => 'getStatus'
     ];
 
     /**
@@ -183,8 +177,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['brandAppId'] = isset($data['brandAppId']) ? $data['brandAppId'] : null;
-        $this->container['searchBrandAreaKeyword'] = isset($data['searchBrandAreaKeyword']) ? $data['searchBrandAreaKeyword'] : null;
+        $this->container['status'] = isset($data['status']) ? $data['status'] : null;
     }
 
     /**
@@ -212,49 +205,25 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets brandAppId
+     * Gets status
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\WechatAdPlatformUpgradeStatus|mixed
      */
-    public function getBrandAppId()
+    public function getStatus()
     {
-        return $this->container['brandAppId'];
+        return $this->container['status'];
     }
 
     /**
-     * Sets brandAppId
+     * Sets status
      *
-     * @param string|mixed $brandAppId brandAppId
+     * @param \TencentAds\Model\WechatAdPlatformUpgradeStatus|mixed $status status
      *
      * @return $this
      */
-    public function setBrandAppId($brandAppId)
+    public function setStatus($status)
     {
-        $this->container['brandAppId'] = $brandAppId;
-
-        return $this;
-    }
-
-    /**
-     * Gets searchBrandAreaKeyword
-     *
-     * @return string|mixed
-     */
-    public function getSearchBrandAreaKeyword()
-    {
-        return $this->container['searchBrandAreaKeyword'];
-    }
-
-    /**
-     * Sets searchBrandAreaKeyword
-     *
-     * @param string|mixed $searchBrandAreaKeyword searchBrandAreaKeyword
-     *
-     * @return $this
-     */
-    public function setSearchBrandAreaKeyword($searchBrandAreaKeyword)
-    {
-        $this->container['searchBrandAreaKeyword'] = $searchBrandAreaKeyword;
+        $this->container['status'] = $status;
 
         return $this;
     }

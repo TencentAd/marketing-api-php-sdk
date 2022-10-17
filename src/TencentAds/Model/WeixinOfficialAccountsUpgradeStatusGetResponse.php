@@ -1,6 +1,6 @@
 <?php
 /**
- * HeadClickSpec
+ * WeixinOfficialAccountsUpgradeStatusGetResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * HeadClickSpec Class Doc Comment
+ * WeixinOfficialAccountsUpgradeStatusGetResponse Class Doc Comment
  *
  * @category Class
- * @description 头像点击跳转信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class HeadClickSpec implements ModelInterface, ArrayAccess
+class WeixinOfficialAccountsUpgradeStatusGetResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'head_click_spec';
+    protected static $swaggerModelName = 'WeixinOfficialAccountsUpgradeStatusGetResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,11 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'brandAppId' => 'string',
-        'searchBrandAreaKeyword' => 'string'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\WeixinOfficialAccountsUpgradeStatusGetResponseData'
     ];
 
     /**
@@ -68,8 +70,11 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'brandAppId' => null,
-        'searchBrandAreaKeyword' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -99,8 +104,11 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'brandAppId' => 'brand_app_id',
-        'searchBrandAreaKeyword' => 'search_brand_area_keyword'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -109,8 +117,11 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'brandAppId' => 'setBrandAppId',
-        'searchBrandAreaKeyword' => 'setSearchBrandAreaKeyword'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -119,8 +130,11 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'brandAppId' => 'getBrandAppId',
-        'searchBrandAreaKeyword' => 'getSearchBrandAreaKeyword'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -183,8 +197,11 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['brandAppId'] = isset($data['brandAppId']) ? $data['brandAppId'] : null;
-        $this->container['searchBrandAreaKeyword'] = isset($data['searchBrandAreaKeyword']) ? $data['searchBrandAreaKeyword'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -212,49 +229,121 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets brandAppId
+     * Gets code
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getBrandAppId()
+    public function getCode()
     {
-        return $this->container['brandAppId'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets brandAppId
+     * Sets code
      *
-     * @param string|mixed $brandAppId brandAppId
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setBrandAppId($brandAppId)
+    public function setCode($code)
     {
-        $this->container['brandAppId'] = $brandAppId;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets searchBrandAreaKeyword
+     * Gets message
      *
      * @return string|mixed
      */
-    public function getSearchBrandAreaKeyword()
+    public function getMessage()
     {
-        return $this->container['searchBrandAreaKeyword'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets searchBrandAreaKeyword
+     * Sets message
      *
-     * @param string|mixed $searchBrandAreaKeyword searchBrandAreaKeyword
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setSearchBrandAreaKeyword($searchBrandAreaKeyword)
+    public function setMessage($message)
     {
-        $this->container['searchBrandAreaKeyword'] = $searchBrandAreaKeyword;
+        $this->container['message'] = $message;
+
+        return $this;
+    }
+
+    /**
+     * Gets messageCn
+     *
+     * @return string|mixed
+     */
+    public function getMessageCn()
+    {
+        return $this->container['messageCn'];
+    }
+
+    /**
+     * Sets messageCn
+     *
+     * @param string|mixed $messageCn messageCn
+     *
+     * @return $this
+     */
+    public function setMessageCn($messageCn)
+    {
+        $this->container['messageCn'] = $messageCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets errors
+     *
+     * @return \TencentAds\Model\ApiErrorStruct[]|mixed
+     */
+    public function getErrors()
+    {
+        return $this->container['errors'];
+    }
+
+    /**
+     * Sets errors
+     *
+     * @param \TencentAds\Model\ApiErrorStruct[]|mixed $errors errors
+     *
+     * @return $this
+     */
+    public function setErrors($errors)
+    {
+        $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\WeixinOfficialAccountsUpgradeStatusGetResponseData|mixed
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\WeixinOfficialAccountsUpgradeStatusGetResponseData|mixed $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }
