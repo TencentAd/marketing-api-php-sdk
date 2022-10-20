@@ -1,6 +1,6 @@
 <?php
 /**
- * DestinationTypeRead
+ * WechatPagePageType
  *
  * PHP version 5
  *
@@ -31,7 +31,7 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DestinationTypeRead Class Doc Comment
+ * WechatPagePageType Class Doc Comment
  *
  * @category Class
  * @description 落地页类型
@@ -39,7 +39,7 @@ use \TencentAds\ObjectSerializer;
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DestinationTypeRead
+class WechatPagePageType
 {
     /**
      * Possible values of this enum

@@ -678,15 +678,16 @@ class AdcreativesApi
      * @param  int|mixed $pageSize pageSize (optional)
      * @param  bool|mixed $isDeleted isDeleted (optional)
      * @param  bool|mixed $linkPageTypeCompatible linkPageTypeCompatible (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\AdcreativesGetResponse|mixed
      */
-    public function adcreativesGet($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $linkPageTypeCompatible = null, $fields = null)
+    public function adcreativesGet($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $linkPageTypeCompatible = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
-        list($response) = $this->adcreativesGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $linkPageTypeCompatible, $fields);
+        list($response) = $this->adcreativesGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $linkPageTypeCompatible, $weixinOfficialAccountsUpgradeEnabled, $fields);
         return $response;
     }
 
@@ -701,16 +702,17 @@ class AdcreativesApi
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
      * @param  bool|mixed $linkPageTypeCompatible (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\AdcreativesGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function adcreativesGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $linkPageTypeCompatible = null, $fields = null)
+    public function adcreativesGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $linkPageTypeCompatible = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\AdcreativesGetResponse';
-        $request = $this->adcreativesGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $linkPageTypeCompatible, $fields);
+        $request = $this->adcreativesGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $linkPageTypeCompatible, $weixinOfficialAccountsUpgradeEnabled, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -782,14 +784,15 @@ class AdcreativesApi
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
      * @param  bool|mixed $linkPageTypeCompatible (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function adcreativesGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $linkPageTypeCompatible = null, $fields = null)
+    public function adcreativesGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $linkPageTypeCompatible = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
-        return $this->adcreativesGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $linkPageTypeCompatible, $fields)
+        return $this->adcreativesGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $linkPageTypeCompatible, $weixinOfficialAccountsUpgradeEnabled, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -808,15 +811,16 @@ class AdcreativesApi
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
      * @param  bool|mixed $linkPageTypeCompatible (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function adcreativesGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $linkPageTypeCompatible = null, $fields = null)
+    public function adcreativesGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $linkPageTypeCompatible = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\AdcreativesGetResponse';
-        $request = $this->adcreativesGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $linkPageTypeCompatible, $fields);
+        $request = $this->adcreativesGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $linkPageTypeCompatible, $weixinOfficialAccountsUpgradeEnabled, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -864,12 +868,13 @@ class AdcreativesApi
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
      * @param  bool|mixed $linkPageTypeCompatible (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function adcreativesGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $linkPageTypeCompatible = null, $fields = null)
+    protected function adcreativesGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $linkPageTypeCompatible = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -911,6 +916,10 @@ class AdcreativesApi
         // query params
         if ($linkPageTypeCompatible !== null) {
             $queryParams['link_page_type_compatible'] = ObjectSerializer::toQueryValue($linkPageTypeCompatible);
+        }
+        // query params
+        if ($weixinOfficialAccountsUpgradeEnabled !== null) {
+            $queryParams['weixin_official_accounts_upgrade_enabled'] = ObjectSerializer::toQueryValue($weixinOfficialAccountsUpgradeEnabled);
         }
         // query params
         if (is_array($fields)) {

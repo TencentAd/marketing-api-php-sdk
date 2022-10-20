@@ -102,14 +102,15 @@ class HourlyReportsApi
      * @param  int|mixed $pageSize pageSize (optional)
      * @param  string|mixed $timeLine timeLine (optional)
      * @param  string[]|mixed $fields fields (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled weixinOfficialAccountsUpgradeEnabled (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\HourlyReportsGetResponse|mixed
      */
-    public function hourlyReportsGet($accountId, $level, $dateRange, $filtering = null, $groupBy = null, $orderBy = null, $page = null, $pageSize = null, $timeLine = null, $fields = null)
+    public function hourlyReportsGet($accountId, $level, $dateRange, $filtering = null, $groupBy = null, $orderBy = null, $page = null, $pageSize = null, $timeLine = null, $fields = null, $weixinOfficialAccountsUpgradeEnabled = null)
     {
-        list($response) = $this->hourlyReportsGetWithHttpInfo($accountId, $level, $dateRange, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $fields);
+        list($response) = $this->hourlyReportsGetWithHttpInfo($accountId, $level, $dateRange, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $fields, $weixinOfficialAccountsUpgradeEnabled);
         return $response;
     }
 
@@ -128,15 +129,16 @@ class HourlyReportsApi
      * @param  int|mixed $pageSize (optional)
      * @param  string|mixed $timeLine (optional)
      * @param  string[]|mixed $fields (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\HourlyReportsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function hourlyReportsGetWithHttpInfo($accountId, $level, $dateRange, $filtering = null, $groupBy = null, $orderBy = null, $page = null, $pageSize = null, $timeLine = null, $fields = null)
+    public function hourlyReportsGetWithHttpInfo($accountId, $level, $dateRange, $filtering = null, $groupBy = null, $orderBy = null, $page = null, $pageSize = null, $timeLine = null, $fields = null, $weixinOfficialAccountsUpgradeEnabled = null)
     {
         $returnType = '\TencentAds\Model\HourlyReportsGetResponse';
-        $request = $this->hourlyReportsGetRequest($accountId, $level, $dateRange, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $fields);
+        $request = $this->hourlyReportsGetRequest($accountId, $level, $dateRange, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $fields, $weixinOfficialAccountsUpgradeEnabled);
 
         try {
             $options = $this->createHttpClientOption();
@@ -212,13 +214,14 @@ class HourlyReportsApi
      * @param  int|mixed $pageSize (optional)
      * @param  string|mixed $timeLine (optional)
      * @param  string[]|mixed $fields (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function hourlyReportsGetAsync($accountId, $level, $dateRange, $filtering = null, $groupBy = null, $orderBy = null, $page = null, $pageSize = null, $timeLine = null, $fields = null)
+    public function hourlyReportsGetAsync($accountId, $level, $dateRange, $filtering = null, $groupBy = null, $orderBy = null, $page = null, $pageSize = null, $timeLine = null, $fields = null, $weixinOfficialAccountsUpgradeEnabled = null)
     {
-        return $this->hourlyReportsGetAsyncWithHttpInfo($accountId, $level, $dateRange, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $fields)
+        return $this->hourlyReportsGetAsyncWithHttpInfo($accountId, $level, $dateRange, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $fields, $weixinOfficialAccountsUpgradeEnabled)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -241,14 +244,15 @@ class HourlyReportsApi
      * @param  int|mixed $pageSize (optional)
      * @param  string|mixed $timeLine (optional)
      * @param  string[]|mixed $fields (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function hourlyReportsGetAsyncWithHttpInfo($accountId, $level, $dateRange, $filtering = null, $groupBy = null, $orderBy = null, $page = null, $pageSize = null, $timeLine = null, $fields = null)
+    public function hourlyReportsGetAsyncWithHttpInfo($accountId, $level, $dateRange, $filtering = null, $groupBy = null, $orderBy = null, $page = null, $pageSize = null, $timeLine = null, $fields = null, $weixinOfficialAccountsUpgradeEnabled = null)
     {
         $returnType = '\TencentAds\Model\HourlyReportsGetResponse';
-        $request = $this->hourlyReportsGetRequest($accountId, $level, $dateRange, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $fields);
+        $request = $this->hourlyReportsGetRequest($accountId, $level, $dateRange, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $fields, $weixinOfficialAccountsUpgradeEnabled);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -300,11 +304,12 @@ class HourlyReportsApi
      * @param  int|mixed $pageSize (optional)
      * @param  string|mixed $timeLine (optional)
      * @param  string[]|mixed $fields (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function hourlyReportsGetRequest($accountId, $level, $dateRange, $filtering = null, $groupBy = null, $orderBy = null, $page = null, $pageSize = null, $timeLine = null, $fields = null)
+    protected function hourlyReportsGetRequest($accountId, $level, $dateRange, $filtering = null, $groupBy = null, $orderBy = null, $page = null, $pageSize = null, $timeLine = null, $fields = null, $weixinOfficialAccountsUpgradeEnabled = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -383,6 +388,10 @@ class HourlyReportsApi
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);
+        }
+        // query params
+        if ($weixinOfficialAccountsUpgradeEnabled !== null) {
+            $queryParams['weixin_official_accounts_upgrade_enabled'] = ObjectSerializer::toQueryValue($weixinOfficialAccountsUpgradeEnabled);
         }
 
 

@@ -95,15 +95,16 @@ class AsyncReportFilesApi
      * @param  int|mixed $accountId accountId (required)
      * @param  int|mixed $taskId taskId (required)
      * @param  int|mixed $fileId fileId (required)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string|mixed
      */
-    public function asyncReportFilesGet($accountId, $taskId, $fileId, $fields = null)
+    public function asyncReportFilesGet($accountId, $taskId, $fileId, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
-        list($response) = $this->asyncReportFilesGetWithHttpInfo($accountId, $taskId, $fileId, $fields);
+        list($response) = $this->asyncReportFilesGetWithHttpInfo($accountId, $taskId, $fileId, $weixinOfficialAccountsUpgradeEnabled, $fields);
         return $response;
     }
 
@@ -115,16 +116,17 @@ class AsyncReportFilesApi
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $taskId (required)
      * @param  int|mixed $fileId (required)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function asyncReportFilesGetWithHttpInfo($accountId, $taskId, $fileId, $fields = null)
+    public function asyncReportFilesGetWithHttpInfo($accountId, $taskId, $fileId, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
         $returnType = 'string';
-        $request = $this->asyncReportFilesGetRequest($accountId, $taskId, $fileId, $fields);
+        $request = $this->asyncReportFilesGetRequest($accountId, $taskId, $fileId, $weixinOfficialAccountsUpgradeEnabled, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -193,14 +195,15 @@ class AsyncReportFilesApi
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $taskId (required)
      * @param  int|mixed $fileId (required)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function asyncReportFilesGetAsync($accountId, $taskId, $fileId, $fields = null)
+    public function asyncReportFilesGetAsync($accountId, $taskId, $fileId, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
-        return $this->asyncReportFilesGetAsyncWithHttpInfo($accountId, $taskId, $fileId, $fields)
+        return $this->asyncReportFilesGetAsyncWithHttpInfo($accountId, $taskId, $fileId, $weixinOfficialAccountsUpgradeEnabled, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -216,15 +219,16 @@ class AsyncReportFilesApi
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $taskId (required)
      * @param  int|mixed $fileId (required)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function asyncReportFilesGetAsyncWithHttpInfo($accountId, $taskId, $fileId, $fields = null)
+    public function asyncReportFilesGetAsyncWithHttpInfo($accountId, $taskId, $fileId, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
         $returnType = 'string';
-        $request = $this->asyncReportFilesGetRequest($accountId, $taskId, $fileId, $fields);
+        $request = $this->asyncReportFilesGetRequest($accountId, $taskId, $fileId, $weixinOfficialAccountsUpgradeEnabled, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -269,12 +273,13 @@ class AsyncReportFilesApi
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $taskId (required)
      * @param  int|mixed $fileId (required)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function asyncReportFilesGetRequest($accountId, $taskId, $fileId, $fields = null)
+    protected function asyncReportFilesGetRequest($accountId, $taskId, $fileId, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -313,6 +318,10 @@ class AsyncReportFilesApi
         // query params
         if ($fileId !== null) {
             $queryParams['file_id'] = ObjectSerializer::toQueryValue($fileId);
+        }
+        // query params
+        if ($weixinOfficialAccountsUpgradeEnabled !== null) {
+            $queryParams['weixin_official_accounts_upgrade_enabled'] = ObjectSerializer::toQueryValue($weixinOfficialAccountsUpgradeEnabled);
         }
         // query params
         if (is_array($fields)) {

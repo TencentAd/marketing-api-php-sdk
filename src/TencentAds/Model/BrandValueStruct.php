@@ -1,6 +1,6 @@
 <?php
 /**
- * AsyncTasksAddRequest
+ * BrandValueStruct
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AsyncTasksAddRequest Class Doc Comment
+ * BrandValueStruct Class Doc Comment
  *
  * @category Class
+ * @description 品牌形象结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
+class BrandValueStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'AsyncTasksAddRequest';
+    protected static $swaggerModelName = 'brand_value_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,11 +58,8 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'taskName' => 'string',
-        'taskType' => '\TencentAds\Model\TaskType',
-        'taskSpec' => '\TencentAds\Model\TaskSpec',
-        'weixinOfficialAccountsUpgradeEnabled' => 'bool'
+        'brandImg' => '\TencentAds\Model\ImageStruct',
+        'brandName' => 'string'
     ];
 
     /**
@@ -70,11 +68,8 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'taskName' => null,
-        'taskType' => null,
-        'taskSpec' => null,
-        'weixinOfficialAccountsUpgradeEnabled' => null
+        'brandImg' => null,
+        'brandName' => null
     ];
 
     /**
@@ -104,11 +99,8 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'taskName' => 'task_name',
-        'taskType' => 'task_type',
-        'taskSpec' => 'task_spec',
-        'weixinOfficialAccountsUpgradeEnabled' => 'weixin_official_accounts_upgrade_enabled'
+        'brandImg' => 'brand_img',
+        'brandName' => 'brand_name'
     ];
 
     /**
@@ -117,11 +109,8 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'taskName' => 'setTaskName',
-        'taskType' => 'setTaskType',
-        'taskSpec' => 'setTaskSpec',
-        'weixinOfficialAccountsUpgradeEnabled' => 'setWeixinOfficialAccountsUpgradeEnabled'
+        'brandImg' => 'setBrandImg',
+        'brandName' => 'setBrandName'
     ];
 
     /**
@@ -130,11 +119,8 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'taskName' => 'getTaskName',
-        'taskType' => 'getTaskType',
-        'taskSpec' => 'getTaskSpec',
-        'weixinOfficialAccountsUpgradeEnabled' => 'getWeixinOfficialAccountsUpgradeEnabled'
+        'brandImg' => 'getBrandImg',
+        'brandName' => 'getBrandName'
     ];
 
     /**
@@ -197,11 +183,8 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['taskName'] = isset($data['taskName']) ? $data['taskName'] : null;
-        $this->container['taskType'] = isset($data['taskType']) ? $data['taskType'] : null;
-        $this->container['taskSpec'] = isset($data['taskSpec']) ? $data['taskSpec'] : null;
-        $this->container['weixinOfficialAccountsUpgradeEnabled'] = isset($data['weixinOfficialAccountsUpgradeEnabled']) ? $data['weixinOfficialAccountsUpgradeEnabled'] : null;
+        $this->container['brandImg'] = isset($data['brandImg']) ? $data['brandImg'] : null;
+        $this->container['brandName'] = isset($data['brandName']) ? $data['brandName'] : null;
     }
 
     /**
@@ -229,121 +212,49 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets accountId
+     * Gets brandImg
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\ImageStruct|mixed
      */
-    public function getAccountId()
+    public function getBrandImg()
     {
-        return $this->container['accountId'];
+        return $this->container['brandImg'];
     }
 
     /**
-     * Sets accountId
+     * Sets brandImg
      *
-     * @param int|mixed $accountId accountId
+     * @param \TencentAds\Model\ImageStruct|mixed $brandImg brandImg
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setBrandImg($brandImg)
     {
-        $this->container['accountId'] = $accountId;
+        $this->container['brandImg'] = $brandImg;
 
         return $this;
     }
 
     /**
-     * Gets taskName
+     * Gets brandName
      *
      * @return string|mixed
      */
-    public function getTaskName()
+    public function getBrandName()
     {
-        return $this->container['taskName'];
+        return $this->container['brandName'];
     }
 
     /**
-     * Sets taskName
+     * Sets brandName
      *
-     * @param string|mixed $taskName taskName
+     * @param string|mixed $brandName brandName
      *
      * @return $this
      */
-    public function setTaskName($taskName)
+    public function setBrandName($brandName)
     {
-        $this->container['taskName'] = $taskName;
-
-        return $this;
-    }
-
-    /**
-     * Gets taskType
-     *
-     * @return \TencentAds\Model\TaskType|mixed
-     */
-    public function getTaskType()
-    {
-        return $this->container['taskType'];
-    }
-
-    /**
-     * Sets taskType
-     *
-     * @param \TencentAds\Model\TaskType|mixed $taskType taskType
-     *
-     * @return $this
-     */
-    public function setTaskType($taskType)
-    {
-        $this->container['taskType'] = $taskType;
-
-        return $this;
-    }
-
-    /**
-     * Gets taskSpec
-     *
-     * @return \TencentAds\Model\TaskSpec|mixed
-     */
-    public function getTaskSpec()
-    {
-        return $this->container['taskSpec'];
-    }
-
-    /**
-     * Sets taskSpec
-     *
-     * @param \TencentAds\Model\TaskSpec|mixed $taskSpec taskSpec
-     *
-     * @return $this
-     */
-    public function setTaskSpec($taskSpec)
-    {
-        $this->container['taskSpec'] = $taskSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets weixinOfficialAccountsUpgradeEnabled
-     *
-     * @return bool|mixed
-     */
-    public function getWeixinOfficialAccountsUpgradeEnabled()
-    {
-        return $this->container['weixinOfficialAccountsUpgradeEnabled'];
-    }
-
-    /**
-     * Sets weixinOfficialAccountsUpgradeEnabled
-     *
-     * @param bool|mixed $weixinOfficialAccountsUpgradeEnabled weixinOfficialAccountsUpgradeEnabled
-     *
-     * @return $this
-     */
-    public function setWeixinOfficialAccountsUpgradeEnabled($weixinOfficialAccountsUpgradeEnabled)
-    {
-        $this->container['weixinOfficialAccountsUpgradeEnabled'] = $weixinOfficialAccountsUpgradeEnabled;
+        $this->container['brandName'] = $brandName;
 
         return $this;
     }

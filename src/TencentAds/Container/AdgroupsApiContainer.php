@@ -111,8 +111,9 @@ class AdgroupsApiContainer extends ApiContainer
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $isDeleted = isset($params['is_deleted']) ? $params['is_deleted'] : null;
+            $weixinOfficialAccountsUpgradeEnabled = isset($params['weixin_official_accounts_upgrade_enabled']) ? $params['weixin_official_accounts_upgrade_enabled'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->adgroupsGet($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+            $response = $this->apiInstance->adgroupsGet($accountId, $filtering, $page, $pageSize, $isDeleted, $weixinOfficialAccountsUpgradeEnabled, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -132,8 +133,9 @@ class AdgroupsApiContainer extends ApiContainer
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $isDeleted = isset($params['is_deleted']) ? $params['is_deleted'] : null;
+            $weixinOfficialAccountsUpgradeEnabled = isset($params['weixin_official_accounts_upgrade_enabled']) ? $params['weixin_official_accounts_upgrade_enabled'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->adgroupsGetAsync($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+            $response = $this->apiInstance->adgroupsGetAsync($accountId, $filtering, $page, $pageSize, $isDeleted, $weixinOfficialAccountsUpgradeEnabled, $fields);
             return $response;
         });
     }

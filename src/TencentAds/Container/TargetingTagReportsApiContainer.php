@@ -49,8 +49,9 @@ class TargetingTagReportsApiContainer extends ApiContainer
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $timeLine = isset($params['time_line']) ? $params['time_line'] : null;
+            $weixinOfficialAccountsUpgradeEnabled = isset($params['weixin_official_accounts_upgrade_enabled']) ? $params['weixin_official_accounts_upgrade_enabled'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->targetingTagReportsGet($accountId, $type, $level, $dateRange, $posType, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $fields);
+            $response = $this->apiInstance->targetingTagReportsGet($accountId, $type, $level, $dateRange, $posType, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $weixinOfficialAccountsUpgradeEnabled, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -76,8 +77,9 @@ class TargetingTagReportsApiContainer extends ApiContainer
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $timeLine = isset($params['time_line']) ? $params['time_line'] : null;
+            $weixinOfficialAccountsUpgradeEnabled = isset($params['weixin_official_accounts_upgrade_enabled']) ? $params['weixin_official_accounts_upgrade_enabled'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->targetingTagReportsGetAsync($accountId, $type, $level, $dateRange, $posType, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $fields);
+            $response = $this->apiInstance->targetingTagReportsGetAsync($accountId, $type, $level, $dateRange, $posType, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $weixinOfficialAccountsUpgradeEnabled, $fields);
             return $response;
         });
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * AsyncTasksAddRequest
+ * VideoStruct
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AsyncTasksAddRequest Class Doc Comment
+ * VideoStruct Class Doc Comment
  *
  * @category Class
+ * @description 视频结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
+class VideoStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'AsyncTasksAddRequest';
+    protected static $swaggerModelName = 'video_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,11 +58,8 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'taskName' => 'string',
-        'taskType' => '\TencentAds\Model\TaskType',
-        'taskSpec' => '\TencentAds\Model\TaskSpec',
-        'weixinOfficialAccountsUpgradeEnabled' => 'bool'
+        'videoId' => 'string',
+        'videoUrl' => 'string'
     ];
 
     /**
@@ -70,11 +68,8 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'taskName' => null,
-        'taskType' => null,
-        'taskSpec' => null,
-        'weixinOfficialAccountsUpgradeEnabled' => null
+        'videoId' => null,
+        'videoUrl' => null
     ];
 
     /**
@@ -104,11 +99,8 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'taskName' => 'task_name',
-        'taskType' => 'task_type',
-        'taskSpec' => 'task_spec',
-        'weixinOfficialAccountsUpgradeEnabled' => 'weixin_official_accounts_upgrade_enabled'
+        'videoId' => 'video_id',
+        'videoUrl' => 'video_url'
     ];
 
     /**
@@ -117,11 +109,8 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'taskName' => 'setTaskName',
-        'taskType' => 'setTaskType',
-        'taskSpec' => 'setTaskSpec',
-        'weixinOfficialAccountsUpgradeEnabled' => 'setWeixinOfficialAccountsUpgradeEnabled'
+        'videoId' => 'setVideoId',
+        'videoUrl' => 'setVideoUrl'
     ];
 
     /**
@@ -130,11 +119,8 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'taskName' => 'getTaskName',
-        'taskType' => 'getTaskType',
-        'taskSpec' => 'getTaskSpec',
-        'weixinOfficialAccountsUpgradeEnabled' => 'getWeixinOfficialAccountsUpgradeEnabled'
+        'videoId' => 'getVideoId',
+        'videoUrl' => 'getVideoUrl'
     ];
 
     /**
@@ -197,11 +183,8 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['taskName'] = isset($data['taskName']) ? $data['taskName'] : null;
-        $this->container['taskType'] = isset($data['taskType']) ? $data['taskType'] : null;
-        $this->container['taskSpec'] = isset($data['taskSpec']) ? $data['taskSpec'] : null;
-        $this->container['weixinOfficialAccountsUpgradeEnabled'] = isset($data['weixinOfficialAccountsUpgradeEnabled']) ? $data['weixinOfficialAccountsUpgradeEnabled'] : null;
+        $this->container['videoId'] = isset($data['videoId']) ? $data['videoId'] : null;
+        $this->container['videoUrl'] = isset($data['videoUrl']) ? $data['videoUrl'] : null;
     }
 
     /**
@@ -229,121 +212,49 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets accountId
-     *
-     * @return int|mixed
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int|mixed $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
-
-        return $this;
-    }
-
-    /**
-     * Gets taskName
+     * Gets videoId
      *
      * @return string|mixed
      */
-    public function getTaskName()
+    public function getVideoId()
     {
-        return $this->container['taskName'];
+        return $this->container['videoId'];
     }
 
     /**
-     * Sets taskName
+     * Sets videoId
      *
-     * @param string|mixed $taskName taskName
+     * @param string|mixed $videoId videoId
      *
      * @return $this
      */
-    public function setTaskName($taskName)
+    public function setVideoId($videoId)
     {
-        $this->container['taskName'] = $taskName;
+        $this->container['videoId'] = $videoId;
 
         return $this;
     }
 
     /**
-     * Gets taskType
+     * Gets videoUrl
      *
-     * @return \TencentAds\Model\TaskType|mixed
+     * @return string|mixed
      */
-    public function getTaskType()
+    public function getVideoUrl()
     {
-        return $this->container['taskType'];
+        return $this->container['videoUrl'];
     }
 
     /**
-     * Sets taskType
+     * Sets videoUrl
      *
-     * @param \TencentAds\Model\TaskType|mixed $taskType taskType
+     * @param string|mixed $videoUrl videoUrl
      *
      * @return $this
      */
-    public function setTaskType($taskType)
+    public function setVideoUrl($videoUrl)
     {
-        $this->container['taskType'] = $taskType;
-
-        return $this;
-    }
-
-    /**
-     * Gets taskSpec
-     *
-     * @return \TencentAds\Model\TaskSpec|mixed
-     */
-    public function getTaskSpec()
-    {
-        return $this->container['taskSpec'];
-    }
-
-    /**
-     * Sets taskSpec
-     *
-     * @param \TencentAds\Model\TaskSpec|mixed $taskSpec taskSpec
-     *
-     * @return $this
-     */
-    public function setTaskSpec($taskSpec)
-    {
-        $this->container['taskSpec'] = $taskSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets weixinOfficialAccountsUpgradeEnabled
-     *
-     * @return bool|mixed
-     */
-    public function getWeixinOfficialAccountsUpgradeEnabled()
-    {
-        return $this->container['weixinOfficialAccountsUpgradeEnabled'];
-    }
-
-    /**
-     * Sets weixinOfficialAccountsUpgradeEnabled
-     *
-     * @param bool|mixed $weixinOfficialAccountsUpgradeEnabled weixinOfficialAccountsUpgradeEnabled
-     *
-     * @return $this
-     */
-    public function setWeixinOfficialAccountsUpgradeEnabled($weixinOfficialAccountsUpgradeEnabled)
-    {
-        $this->container['weixinOfficialAccountsUpgradeEnabled'] = $weixinOfficialAccountsUpgradeEnabled;
+        $this->container['videoUrl'] = $videoUrl;
 
         return $this;
     }

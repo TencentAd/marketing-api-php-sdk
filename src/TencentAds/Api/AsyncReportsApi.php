@@ -386,15 +386,16 @@ class AsyncReportsApi
      * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering (optional)
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\AsyncReportsGetResponse|mixed
      */
-    public function asyncReportsGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function asyncReportsGet($accountId, $filtering = null, $page = null, $pageSize = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
-        list($response) = $this->asyncReportsGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $fields);
+        list($response) = $this->asyncReportsGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $weixinOfficialAccountsUpgradeEnabled, $fields);
         return $response;
     }
 
@@ -407,16 +408,17 @@ class AsyncReportsApi
      * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\AsyncReportsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function asyncReportsGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function asyncReportsGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\AsyncReportsGetResponse';
-        $request = $this->asyncReportsGetRequest($accountId, $filtering, $page, $pageSize, $fields);
+        $request = $this->asyncReportsGetRequest($accountId, $filtering, $page, $pageSize, $weixinOfficialAccountsUpgradeEnabled, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -486,14 +488,15 @@ class AsyncReportsApi
      * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function asyncReportsGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function asyncReportsGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
-        return $this->asyncReportsGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $fields)
+        return $this->asyncReportsGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $weixinOfficialAccountsUpgradeEnabled, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -510,15 +513,16 @@ class AsyncReportsApi
      * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function asyncReportsGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function asyncReportsGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\AsyncReportsGetResponse';
-        $request = $this->asyncReportsGetRequest($accountId, $filtering, $page, $pageSize, $fields);
+        $request = $this->asyncReportsGetRequest($accountId, $filtering, $page, $pageSize, $weixinOfficialAccountsUpgradeEnabled, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -564,12 +568,13 @@ class AsyncReportsApi
      * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function asyncReportsGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    protected function asyncReportsGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -603,6 +608,10 @@ class AsyncReportsApi
         // query params
         if ($pageSize !== null) {
             $queryParams['page_size'] = ObjectSerializer::toQueryValue($pageSize);
+        }
+        // query params
+        if ($weixinOfficialAccountsUpgradeEnabled !== null) {
+            $queryParams['weixin_official_accounts_upgrade_enabled'] = ObjectSerializer::toQueryValue($weixinOfficialAccountsUpgradeEnabled);
         }
         // query params
         if (is_array($fields)) {

@@ -65,7 +65,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'int',
         'promotedObjectId' => 'string',
         'productCatalogId' => 'int',
-        'pageType' => '\TencentAds\Model\DestinationTypeRead',
+        'pageType' => '\TencentAds\Model\WechatPagePageType',
         'playableType' => '\TencentAds\Model\PlayableType',
         'pageStatus' => '\TencentAds\Model\PageStatus',
         'fengyeSubType' => '\TencentAds\Model\LandingPageFengyeSubType',
@@ -448,7 +448,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageType
      *
-     * @return \TencentAds\Model\DestinationTypeRead|mixed
+     * @return \TencentAds\Model\WechatPagePageType|mixed
      */
     public function getPageType()
     {
@@ -458,7 +458,7 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageType
      *
-     * @param \TencentAds\Model\DestinationTypeRead|mixed $pageType pageType
+     * @param \TencentAds\Model\WechatPagePageType|mixed $pageType pageType
      *
      * @return $this
      */

@@ -65,7 +65,8 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
         'timeLine' => '\TencentAds\Model\TimeLine',
         'groupBy' => 'string[]',
         'granularity' => '\TencentAds\Model\TimeGranularity',
-        'date' => 'string'
+        'date' => 'string',
+        'weixinOfficialAccountsUpgradeEnabled' => 'bool'
     ];
 
     /**
@@ -82,7 +83,8 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
         'timeLine' => null,
         'groupBy' => null,
         'granularity' => null,
-        'date' => null
+        'date' => null,
+        'weixinOfficialAccountsUpgradeEnabled' => null
     ];
 
     /**
@@ -120,7 +122,8 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
         'timeLine' => 'time_line',
         'groupBy' => 'group_by',
         'granularity' => 'granularity',
-        'date' => 'date'
+        'date' => 'date',
+        'weixinOfficialAccountsUpgradeEnabled' => 'weixin_official_accounts_upgrade_enabled'
     ];
 
     /**
@@ -137,7 +140,8 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
         'timeLine' => 'setTimeLine',
         'groupBy' => 'setGroupBy',
         'granularity' => 'setGranularity',
-        'date' => 'setDate'
+        'date' => 'setDate',
+        'weixinOfficialAccountsUpgradeEnabled' => 'setWeixinOfficialAccountsUpgradeEnabled'
     ];
 
     /**
@@ -154,7 +158,8 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
         'timeLine' => 'getTimeLine',
         'groupBy' => 'getGroupBy',
         'granularity' => 'getGranularity',
-        'date' => 'getDate'
+        'date' => 'getDate',
+        'weixinOfficialAccountsUpgradeEnabled' => 'getWeixinOfficialAccountsUpgradeEnabled'
     ];
 
     /**
@@ -226,6 +231,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
         $this->container['groupBy'] = isset($data['groupBy']) ? $data['groupBy'] : null;
         $this->container['granularity'] = isset($data['granularity']) ? $data['granularity'] : null;
         $this->container['date'] = isset($data['date']) ? $data['date'] : null;
+        $this->container['weixinOfficialAccountsUpgradeEnabled'] = isset($data['weixinOfficialAccountsUpgradeEnabled']) ? $data['weixinOfficialAccountsUpgradeEnabled'] : null;
     }
 
     /**
@@ -464,6 +470,30 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
     public function setDate($date)
     {
         $this->container['date'] = $date;
+
+        return $this;
+    }
+
+    /**
+     * Gets weixinOfficialAccountsUpgradeEnabled
+     *
+     * @return bool|mixed
+     */
+    public function getWeixinOfficialAccountsUpgradeEnabled()
+    {
+        return $this->container['weixinOfficialAccountsUpgradeEnabled'];
+    }
+
+    /**
+     * Sets weixinOfficialAccountsUpgradeEnabled
+     *
+     * @param bool|mixed $weixinOfficialAccountsUpgradeEnabled weixinOfficialAccountsUpgradeEnabled
+     *
+     * @return $this
+     */
+    public function setWeixinOfficialAccountsUpgradeEnabled($weixinOfficialAccountsUpgradeEnabled)
+    {
+        $this->container['weixinOfficialAccountsUpgradeEnabled'] = $weixinOfficialAccountsUpgradeEnabled;
 
         return $this;
     }

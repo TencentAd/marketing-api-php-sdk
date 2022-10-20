@@ -677,15 +677,16 @@ class AdsApi
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
      * @param  bool|mixed $isDeleted isDeleted (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\AdsGetResponse|mixed
      */
-    public function adsGet($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function adsGet($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
-        list($response) = $this->adsGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+        list($response) = $this->adsGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $weixinOfficialAccountsUpgradeEnabled, $fields);
         return $response;
     }
 
@@ -699,16 +700,17 @@ class AdsApi
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\AdsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function adsGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function adsGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\AdsGetResponse';
-        $request = $this->adsGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+        $request = $this->adsGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $weixinOfficialAccountsUpgradeEnabled, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -779,14 +781,15 @@ class AdsApi
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function adsGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function adsGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
-        return $this->adsGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $fields)
+        return $this->adsGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $weixinOfficialAccountsUpgradeEnabled, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -804,15 +807,16 @@ class AdsApi
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function adsGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function adsGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\AdsGetResponse';
-        $request = $this->adsGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+        $request = $this->adsGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $weixinOfficialAccountsUpgradeEnabled, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -859,12 +863,13 @@ class AdsApi
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function adsGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    protected function adsGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -902,6 +907,10 @@ class AdsApi
         // query params
         if ($isDeleted !== null) {
             $queryParams['is_deleted'] = ObjectSerializer::toQueryValue($isDeleted);
+        }
+        // query params
+        if ($weixinOfficialAccountsUpgradeEnabled !== null) {
+            $queryParams['weixin_official_accounts_upgrade_enabled'] = ObjectSerializer::toQueryValue($weixinOfficialAccountsUpgradeEnabled);
         }
         // query params
         if (is_array($fields)) {

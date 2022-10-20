@@ -41,8 +41,9 @@ class AsyncReportFilesApiContainer extends ApiContainer
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $taskId = isset($params['task_id']) ? $params['task_id'] : null;
             $fileId = isset($params['file_id']) ? $params['file_id'] : null;
+            $weixinOfficialAccountsUpgradeEnabled = isset($params['weixin_official_accounts_upgrade_enabled']) ? $params['weixin_official_accounts_upgrade_enabled'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->asyncReportFilesGet($accountId, $taskId, $fileId, $fields);
+            $response = $this->apiInstance->asyncReportFilesGet($accountId, $taskId, $fileId, $weixinOfficialAccountsUpgradeEnabled, $fields);
             return $response;
         });
     }
@@ -60,8 +61,9 @@ class AsyncReportFilesApiContainer extends ApiContainer
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $taskId = isset($params['task_id']) ? $params['task_id'] : null;
             $fileId = isset($params['file_id']) ? $params['file_id'] : null;
+            $weixinOfficialAccountsUpgradeEnabled = isset($params['weixin_official_accounts_upgrade_enabled']) ? $params['weixin_official_accounts_upgrade_enabled'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->asyncReportFilesGetAsync($accountId, $taskId, $fileId, $fields);
+            $response = $this->apiInstance->asyncReportFilesGetAsync($accountId, $taskId, $fileId, $weixinOfficialAccountsUpgradeEnabled, $fields);
             return $response;
         });
     }

@@ -48,7 +48,8 @@ class HourlyReportsApiContainer extends ApiContainer
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $timeLine = isset($params['time_line']) ? $params['time_line'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->hourlyReportsGet($accountId, $level, $dateRange, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $fields);
+            $weixinOfficialAccountsUpgradeEnabled = isset($params['weixin_official_accounts_upgrade_enabled']) ? $params['weixin_official_accounts_upgrade_enabled'] : null;
+            $response = $this->apiInstance->hourlyReportsGet($accountId, $level, $dateRange, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $fields, $weixinOfficialAccountsUpgradeEnabled);
             return $this->handleResponse($response);
         });
     }
@@ -73,7 +74,8 @@ class HourlyReportsApiContainer extends ApiContainer
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $timeLine = isset($params['time_line']) ? $params['time_line'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->hourlyReportsGetAsync($accountId, $level, $dateRange, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $fields);
+            $weixinOfficialAccountsUpgradeEnabled = isset($params['weixin_official_accounts_upgrade_enabled']) ? $params['weixin_official_accounts_upgrade_enabled'] : null;
+            $response = $this->apiInstance->hourlyReportsGetAsync($accountId, $level, $dateRange, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $fields, $weixinOfficialAccountsUpgradeEnabled);
             return $response;
         });
     }

@@ -112,8 +112,9 @@ class AdcreativesApiContainer extends ApiContainer
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $isDeleted = isset($params['is_deleted']) ? $params['is_deleted'] : null;
             $linkPageTypeCompatible = isset($params['link_page_type_compatible']) ? $params['link_page_type_compatible'] : null;
+            $weixinOfficialAccountsUpgradeEnabled = isset($params['weixin_official_accounts_upgrade_enabled']) ? $params['weixin_official_accounts_upgrade_enabled'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->adcreativesGet($accountId, $filtering, $page, $pageSize, $isDeleted, $linkPageTypeCompatible, $fields);
+            $response = $this->apiInstance->adcreativesGet($accountId, $filtering, $page, $pageSize, $isDeleted, $linkPageTypeCompatible, $weixinOfficialAccountsUpgradeEnabled, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -134,8 +135,9 @@ class AdcreativesApiContainer extends ApiContainer
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $isDeleted = isset($params['is_deleted']) ? $params['is_deleted'] : null;
             $linkPageTypeCompatible = isset($params['link_page_type_compatible']) ? $params['link_page_type_compatible'] : null;
+            $weixinOfficialAccountsUpgradeEnabled = isset($params['weixin_official_accounts_upgrade_enabled']) ? $params['weixin_official_accounts_upgrade_enabled'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->adcreativesGetAsync($accountId, $filtering, $page, $pageSize, $isDeleted, $linkPageTypeCompatible, $fields);
+            $response = $this->apiInstance->adcreativesGetAsync($accountId, $filtering, $page, $pageSize, $isDeleted, $linkPageTypeCompatible, $weixinOfficialAccountsUpgradeEnabled, $fields);
             return $response;
         });
     }

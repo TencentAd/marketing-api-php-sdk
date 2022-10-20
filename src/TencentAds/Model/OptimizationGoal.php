@@ -119,6 +119,7 @@ class OptimizationGoal
     const WECOM_CONSULT = 'OPTIMIZATIONGOAL_WECOM_CONSULT';
     const ADD_GROUP = 'OPTIMIZATIONGOAL_ADD_GROUP';
     const QUICK_ORDER = 'OPTIMIZATIONGOAL_QUICK_ORDER';
+    const PRE_PAY = 'OPTIMIZATIONGOAL_PRE_PAY';
     
     /**
      * Gets allowable values of the enum
@@ -202,6 +203,7 @@ class OptimizationGoal
             self::WECOM_CONSULT,
             self::ADD_GROUP,
             self::QUICK_ORDER,
+            self::PRE_PAY,
         ];
     }
 }

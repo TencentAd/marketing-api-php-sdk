@@ -1,6 +1,6 @@
 <?php
 /**
- * AsyncTasksAddRequest
+ * LongSublinkStruct
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AsyncTasksAddRequest Class Doc Comment
+ * LongSublinkStruct Class Doc Comment
  *
  * @category Class
+ * @description 长子链结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
+class LongSublinkStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'AsyncTasksAddRequest';
+    protected static $swaggerModelName = 'long_sublink_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,11 +58,9 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'taskName' => 'string',
-        'taskType' => '\TencentAds\Model\TaskType',
-        'taskSpec' => '\TencentAds\Model\TaskSpec',
-        'weixinOfficialAccountsUpgradeEnabled' => 'bool'
+        'text' => 'string',
+        'jumpInfo' => '\TencentAds\Model\LandingPageStructure[]',
+        'tag' => 'string'
     ];
 
     /**
@@ -70,11 +69,9 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'taskName' => null,
-        'taskType' => null,
-        'taskSpec' => null,
-        'weixinOfficialAccountsUpgradeEnabled' => null
+        'text' => null,
+        'jumpInfo' => null,
+        'tag' => null
     ];
 
     /**
@@ -104,11 +101,9 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'taskName' => 'task_name',
-        'taskType' => 'task_type',
-        'taskSpec' => 'task_spec',
-        'weixinOfficialAccountsUpgradeEnabled' => 'weixin_official_accounts_upgrade_enabled'
+        'text' => 'text',
+        'jumpInfo' => 'jump_info',
+        'tag' => 'tag'
     ];
 
     /**
@@ -117,11 +112,9 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'taskName' => 'setTaskName',
-        'taskType' => 'setTaskType',
-        'taskSpec' => 'setTaskSpec',
-        'weixinOfficialAccountsUpgradeEnabled' => 'setWeixinOfficialAccountsUpgradeEnabled'
+        'text' => 'setText',
+        'jumpInfo' => 'setJumpInfo',
+        'tag' => 'setTag'
     ];
 
     /**
@@ -130,11 +123,9 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'taskName' => 'getTaskName',
-        'taskType' => 'getTaskType',
-        'taskSpec' => 'getTaskSpec',
-        'weixinOfficialAccountsUpgradeEnabled' => 'getWeixinOfficialAccountsUpgradeEnabled'
+        'text' => 'getText',
+        'jumpInfo' => 'getJumpInfo',
+        'tag' => 'getTag'
     ];
 
     /**
@@ -197,11 +188,9 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['taskName'] = isset($data['taskName']) ? $data['taskName'] : null;
-        $this->container['taskType'] = isset($data['taskType']) ? $data['taskType'] : null;
-        $this->container['taskSpec'] = isset($data['taskSpec']) ? $data['taskSpec'] : null;
-        $this->container['weixinOfficialAccountsUpgradeEnabled'] = isset($data['weixinOfficialAccountsUpgradeEnabled']) ? $data['weixinOfficialAccountsUpgradeEnabled'] : null;
+        $this->container['text'] = isset($data['text']) ? $data['text'] : null;
+        $this->container['jumpInfo'] = isset($data['jumpInfo']) ? $data['jumpInfo'] : null;
+        $this->container['tag'] = isset($data['tag']) ? $data['tag'] : null;
     }
 
     /**
@@ -229,121 +218,73 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets accountId
-     *
-     * @return int|mixed
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int|mixed $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
-
-        return $this;
-    }
-
-    /**
-     * Gets taskName
+     * Gets text
      *
      * @return string|mixed
      */
-    public function getTaskName()
+    public function getText()
     {
-        return $this->container['taskName'];
+        return $this->container['text'];
     }
 
     /**
-     * Sets taskName
+     * Sets text
      *
-     * @param string|mixed $taskName taskName
+     * @param string|mixed $text text
      *
      * @return $this
      */
-    public function setTaskName($taskName)
+    public function setText($text)
     {
-        $this->container['taskName'] = $taskName;
+        $this->container['text'] = $text;
 
         return $this;
     }
 
     /**
-     * Gets taskType
+     * Gets jumpInfo
      *
-     * @return \TencentAds\Model\TaskType|mixed
+     * @return \TencentAds\Model\LandingPageStructure[]|mixed
      */
-    public function getTaskType()
+    public function getJumpInfo()
     {
-        return $this->container['taskType'];
+        return $this->container['jumpInfo'];
     }
 
     /**
-     * Sets taskType
+     * Sets jumpInfo
      *
-     * @param \TencentAds\Model\TaskType|mixed $taskType taskType
+     * @param \TencentAds\Model\LandingPageStructure[]|mixed $jumpInfo jumpInfo
      *
      * @return $this
      */
-    public function setTaskType($taskType)
+    public function setJumpInfo($jumpInfo)
     {
-        $this->container['taskType'] = $taskType;
+        $this->container['jumpInfo'] = $jumpInfo;
 
         return $this;
     }
 
     /**
-     * Gets taskSpec
+     * Gets tag
      *
-     * @return \TencentAds\Model\TaskSpec|mixed
+     * @return string|mixed
      */
-    public function getTaskSpec()
+    public function getTag()
     {
-        return $this->container['taskSpec'];
+        return $this->container['tag'];
     }
 
     /**
-     * Sets taskSpec
+     * Sets tag
      *
-     * @param \TencentAds\Model\TaskSpec|mixed $taskSpec taskSpec
+     * @param string|mixed $tag tag
      *
      * @return $this
      */
-    public function setTaskSpec($taskSpec)
+    public function setTag($tag)
     {
-        $this->container['taskSpec'] = $taskSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets weixinOfficialAccountsUpgradeEnabled
-     *
-     * @return bool|mixed
-     */
-    public function getWeixinOfficialAccountsUpgradeEnabled()
-    {
-        return $this->container['weixinOfficialAccountsUpgradeEnabled'];
-    }
-
-    /**
-     * Sets weixinOfficialAccountsUpgradeEnabled
-     *
-     * @param bool|mixed $weixinOfficialAccountsUpgradeEnabled weixinOfficialAccountsUpgradeEnabled
-     *
-     * @return $this
-     */
-    public function setWeixinOfficialAccountsUpgradeEnabled($weixinOfficialAccountsUpgradeEnabled)
-    {
-        $this->container['weixinOfficialAccountsUpgradeEnabled'] = $weixinOfficialAccountsUpgradeEnabled;
+        $this->container['tag'] = $tag;
 
         return $this;
     }

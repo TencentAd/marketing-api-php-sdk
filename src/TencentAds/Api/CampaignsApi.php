@@ -677,15 +677,16 @@ class CampaignsApi
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
      * @param  bool|mixed $isDeleted isDeleted (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\CampaignsGetResponse|mixed
      */
-    public function campaignsGet($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function campaignsGet($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
-        list($response) = $this->campaignsGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+        list($response) = $this->campaignsGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $weixinOfficialAccountsUpgradeEnabled, $fields);
         return $response;
     }
 
@@ -699,16 +700,17 @@ class CampaignsApi
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\CampaignsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function campaignsGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function campaignsGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\CampaignsGetResponse';
-        $request = $this->campaignsGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+        $request = $this->campaignsGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $weixinOfficialAccountsUpgradeEnabled, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -779,14 +781,15 @@ class CampaignsApi
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function campaignsGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function campaignsGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
-        return $this->campaignsGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $fields)
+        return $this->campaignsGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $weixinOfficialAccountsUpgradeEnabled, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -804,15 +807,16 @@ class CampaignsApi
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function campaignsGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function campaignsGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\CampaignsGetResponse';
-        $request = $this->campaignsGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+        $request = $this->campaignsGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $weixinOfficialAccountsUpgradeEnabled, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -859,12 +863,13 @@ class CampaignsApi
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function campaignsGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    protected function campaignsGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -902,6 +907,10 @@ class CampaignsApi
         // query params
         if ($isDeleted !== null) {
             $queryParams['is_deleted'] = ObjectSerializer::toQueryValue($isDeleted);
+        }
+        // query params
+        if ($weixinOfficialAccountsUpgradeEnabled !== null) {
+            $queryParams['weixin_official_accounts_upgrade_enabled'] = ObjectSerializer::toQueryValue($weixinOfficialAccountsUpgradeEnabled);
         }
         // query params
         if (is_array($fields)) {

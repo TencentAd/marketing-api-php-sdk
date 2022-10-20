@@ -132,7 +132,23 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'floatingZoneStruct' => '\TencentAds\Model\FloatingZone',
         'canvasShareImage' => 'string',
         'wegameInfoSpec' => '\TencentAds\Model\WegameInfoSpec',
-        'finderObjectVisibility' => 'bool'
+        'finderObjectVisibility' => 'bool',
+        'titleComponentOptions' => '\TencentAds\Model\TextComponentOption[]',
+        'descriptionComponentOptions' => '\TencentAds\Model\TextComponentOption[]',
+        'imageComponentOptions' => '\TencentAds\Model\ImageComponentOption[]',
+        'imageListComponentOptions' => '\TencentAds\Model\ImageListComponentOption[]',
+        'imageTextListComponentOptions' => '\TencentAds\Model\ImageTextListComponentOption[]',
+        'image2ComponentOptions' => '\TencentAds\Model\ImageComponentOption[]',
+        'landingPageComponentOptions' => '\TencentAds\Model\LandingPageComponentOption[]',
+        'brandComponentOptions' => '\TencentAds\Model\BrandComponentOption[]',
+        'longSublinkComponentOptions' => '\TencentAds\Model\LongSublinkComponentOption[]',
+        'longSublinkListComponentOptions' => '\TencentAds\Model\LongSublinkListComponentOption[]',
+        'shortSublinkComponentOptions' => '\TencentAds\Model\ShortSublinkComponentOption[]',
+        'shortSublinkListComponentOptions' => '\TencentAds\Model\ShortSublinkListComponentOption[]',
+        'videoComponentOptions' => '\TencentAds\Model\VideoComponentOption[]',
+        'consultComponentOptions' => '\TencentAds\Model\ConsultComponentOption[]',
+        'phoneComponentOptions' => '\TencentAds\Model\PhoneComponentOption[]',
+        'formComponentOptions' => '\TencentAds\Model\FormComponentOption[]'
     ];
 
     /**
@@ -215,7 +231,23 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'floatingZoneStruct' => null,
         'canvasShareImage' => null,
         'wegameInfoSpec' => null,
-        'finderObjectVisibility' => null
+        'finderObjectVisibility' => null,
+        'titleComponentOptions' => null,
+        'descriptionComponentOptions' => null,
+        'imageComponentOptions' => null,
+        'imageListComponentOptions' => null,
+        'imageTextListComponentOptions' => null,
+        'image2ComponentOptions' => null,
+        'landingPageComponentOptions' => null,
+        'brandComponentOptions' => null,
+        'longSublinkComponentOptions' => null,
+        'longSublinkListComponentOptions' => null,
+        'shortSublinkComponentOptions' => null,
+        'shortSublinkListComponentOptions' => null,
+        'videoComponentOptions' => null,
+        'consultComponentOptions' => null,
+        'phoneComponentOptions' => null,
+        'formComponentOptions' => null
     ];
 
     /**
@@ -319,7 +351,23 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'floatingZoneStruct' => 'floating_zone_struct',
         'canvasShareImage' => 'canvas_share_image',
         'wegameInfoSpec' => 'wegame_info_spec',
-        'finderObjectVisibility' => 'finder_object_visibility'
+        'finderObjectVisibility' => 'finder_object_visibility',
+        'titleComponentOptions' => 'title_component_options',
+        'descriptionComponentOptions' => 'description_component_options',
+        'imageComponentOptions' => 'image_component_options',
+        'imageListComponentOptions' => 'image_list_component_options',
+        'imageTextListComponentOptions' => 'image_text_list_component_options',
+        'image2ComponentOptions' => 'image2_component_options',
+        'landingPageComponentOptions' => 'landing_page_component_options',
+        'brandComponentOptions' => 'brand_component_options',
+        'longSublinkComponentOptions' => 'long_sublink_component_options',
+        'longSublinkListComponentOptions' => 'long_sublink_list_component_options',
+        'shortSublinkComponentOptions' => 'short_sublink_component_options',
+        'shortSublinkListComponentOptions' => 'short_sublink_list_component_options',
+        'videoComponentOptions' => 'video_component_options',
+        'consultComponentOptions' => 'consult_component_options',
+        'phoneComponentOptions' => 'phone_component_options',
+        'formComponentOptions' => 'form_component_options'
     ];
 
     /**
@@ -402,7 +450,23 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'floatingZoneStruct' => 'setFloatingZoneStruct',
         'canvasShareImage' => 'setCanvasShareImage',
         'wegameInfoSpec' => 'setWegameInfoSpec',
-        'finderObjectVisibility' => 'setFinderObjectVisibility'
+        'finderObjectVisibility' => 'setFinderObjectVisibility',
+        'titleComponentOptions' => 'setTitleComponentOptions',
+        'descriptionComponentOptions' => 'setDescriptionComponentOptions',
+        'imageComponentOptions' => 'setImageComponentOptions',
+        'imageListComponentOptions' => 'setImageListComponentOptions',
+        'imageTextListComponentOptions' => 'setImageTextListComponentOptions',
+        'image2ComponentOptions' => 'setImage2ComponentOptions',
+        'landingPageComponentOptions' => 'setLandingPageComponentOptions',
+        'brandComponentOptions' => 'setBrandComponentOptions',
+        'longSublinkComponentOptions' => 'setLongSublinkComponentOptions',
+        'longSublinkListComponentOptions' => 'setLongSublinkListComponentOptions',
+        'shortSublinkComponentOptions' => 'setShortSublinkComponentOptions',
+        'shortSublinkListComponentOptions' => 'setShortSublinkListComponentOptions',
+        'videoComponentOptions' => 'setVideoComponentOptions',
+        'consultComponentOptions' => 'setConsultComponentOptions',
+        'phoneComponentOptions' => 'setPhoneComponentOptions',
+        'formComponentOptions' => 'setFormComponentOptions'
     ];
 
     /**
@@ -485,7 +549,23 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'floatingZoneStruct' => 'getFloatingZoneStruct',
         'canvasShareImage' => 'getCanvasShareImage',
         'wegameInfoSpec' => 'getWegameInfoSpec',
-        'finderObjectVisibility' => 'getFinderObjectVisibility'
+        'finderObjectVisibility' => 'getFinderObjectVisibility',
+        'titleComponentOptions' => 'getTitleComponentOptions',
+        'descriptionComponentOptions' => 'getDescriptionComponentOptions',
+        'imageComponentOptions' => 'getImageComponentOptions',
+        'imageListComponentOptions' => 'getImageListComponentOptions',
+        'imageTextListComponentOptions' => 'getImageTextListComponentOptions',
+        'image2ComponentOptions' => 'getImage2ComponentOptions',
+        'landingPageComponentOptions' => 'getLandingPageComponentOptions',
+        'brandComponentOptions' => 'getBrandComponentOptions',
+        'longSublinkComponentOptions' => 'getLongSublinkComponentOptions',
+        'longSublinkListComponentOptions' => 'getLongSublinkListComponentOptions',
+        'shortSublinkComponentOptions' => 'getShortSublinkComponentOptions',
+        'shortSublinkListComponentOptions' => 'getShortSublinkListComponentOptions',
+        'videoComponentOptions' => 'getVideoComponentOptions',
+        'consultComponentOptions' => 'getConsultComponentOptions',
+        'phoneComponentOptions' => 'getPhoneComponentOptions',
+        'formComponentOptions' => 'getFormComponentOptions'
     ];
 
     /**
@@ -623,6 +703,22 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         $this->container['canvasShareImage'] = isset($data['canvasShareImage']) ? $data['canvasShareImage'] : null;
         $this->container['wegameInfoSpec'] = isset($data['wegameInfoSpec']) ? $data['wegameInfoSpec'] : null;
         $this->container['finderObjectVisibility'] = isset($data['finderObjectVisibility']) ? $data['finderObjectVisibility'] : null;
+        $this->container['titleComponentOptions'] = isset($data['titleComponentOptions']) ? $data['titleComponentOptions'] : null;
+        $this->container['descriptionComponentOptions'] = isset($data['descriptionComponentOptions']) ? $data['descriptionComponentOptions'] : null;
+        $this->container['imageComponentOptions'] = isset($data['imageComponentOptions']) ? $data['imageComponentOptions'] : null;
+        $this->container['imageListComponentOptions'] = isset($data['imageListComponentOptions']) ? $data['imageListComponentOptions'] : null;
+        $this->container['imageTextListComponentOptions'] = isset($data['imageTextListComponentOptions']) ? $data['imageTextListComponentOptions'] : null;
+        $this->container['image2ComponentOptions'] = isset($data['image2ComponentOptions']) ? $data['image2ComponentOptions'] : null;
+        $this->container['landingPageComponentOptions'] = isset($data['landingPageComponentOptions']) ? $data['landingPageComponentOptions'] : null;
+        $this->container['brandComponentOptions'] = isset($data['brandComponentOptions']) ? $data['brandComponentOptions'] : null;
+        $this->container['longSublinkComponentOptions'] = isset($data['longSublinkComponentOptions']) ? $data['longSublinkComponentOptions'] : null;
+        $this->container['longSublinkListComponentOptions'] = isset($data['longSublinkListComponentOptions']) ? $data['longSublinkListComponentOptions'] : null;
+        $this->container['shortSublinkComponentOptions'] = isset($data['shortSublinkComponentOptions']) ? $data['shortSublinkComponentOptions'] : null;
+        $this->container['shortSublinkListComponentOptions'] = isset($data['shortSublinkListComponentOptions']) ? $data['shortSublinkListComponentOptions'] : null;
+        $this->container['videoComponentOptions'] = isset($data['videoComponentOptions']) ? $data['videoComponentOptions'] : null;
+        $this->container['consultComponentOptions'] = isset($data['consultComponentOptions']) ? $data['consultComponentOptions'] : null;
+        $this->container['phoneComponentOptions'] = isset($data['phoneComponentOptions']) ? $data['phoneComponentOptions'] : null;
+        $this->container['formComponentOptions'] = isset($data['formComponentOptions']) ? $data['formComponentOptions'] : null;
     }
 
     /**
@@ -2445,6 +2541,390 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
     public function setFinderObjectVisibility($finderObjectVisibility)
     {
         $this->container['finderObjectVisibility'] = $finderObjectVisibility;
+
+        return $this;
+    }
+
+    /**
+     * Gets titleComponentOptions
+     *
+     * @return \TencentAds\Model\TextComponentOption[]|mixed
+     */
+    public function getTitleComponentOptions()
+    {
+        return $this->container['titleComponentOptions'];
+    }
+
+    /**
+     * Sets titleComponentOptions
+     *
+     * @param \TencentAds\Model\TextComponentOption[]|mixed $titleComponentOptions titleComponentOptions
+     *
+     * @return $this
+     */
+    public function setTitleComponentOptions($titleComponentOptions)
+    {
+        $this->container['titleComponentOptions'] = $titleComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets descriptionComponentOptions
+     *
+     * @return \TencentAds\Model\TextComponentOption[]|mixed
+     */
+    public function getDescriptionComponentOptions()
+    {
+        return $this->container['descriptionComponentOptions'];
+    }
+
+    /**
+     * Sets descriptionComponentOptions
+     *
+     * @param \TencentAds\Model\TextComponentOption[]|mixed $descriptionComponentOptions descriptionComponentOptions
+     *
+     * @return $this
+     */
+    public function setDescriptionComponentOptions($descriptionComponentOptions)
+    {
+        $this->container['descriptionComponentOptions'] = $descriptionComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets imageComponentOptions
+     *
+     * @return \TencentAds\Model\ImageComponentOption[]|mixed
+     */
+    public function getImageComponentOptions()
+    {
+        return $this->container['imageComponentOptions'];
+    }
+
+    /**
+     * Sets imageComponentOptions
+     *
+     * @param \TencentAds\Model\ImageComponentOption[]|mixed $imageComponentOptions imageComponentOptions
+     *
+     * @return $this
+     */
+    public function setImageComponentOptions($imageComponentOptions)
+    {
+        $this->container['imageComponentOptions'] = $imageComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets imageListComponentOptions
+     *
+     * @return \TencentAds\Model\ImageListComponentOption[]|mixed
+     */
+    public function getImageListComponentOptions()
+    {
+        return $this->container['imageListComponentOptions'];
+    }
+
+    /**
+     * Sets imageListComponentOptions
+     *
+     * @param \TencentAds\Model\ImageListComponentOption[]|mixed $imageListComponentOptions imageListComponentOptions
+     *
+     * @return $this
+     */
+    public function setImageListComponentOptions($imageListComponentOptions)
+    {
+        $this->container['imageListComponentOptions'] = $imageListComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets imageTextListComponentOptions
+     *
+     * @return \TencentAds\Model\ImageTextListComponentOption[]|mixed
+     */
+    public function getImageTextListComponentOptions()
+    {
+        return $this->container['imageTextListComponentOptions'];
+    }
+
+    /**
+     * Sets imageTextListComponentOptions
+     *
+     * @param \TencentAds\Model\ImageTextListComponentOption[]|mixed $imageTextListComponentOptions imageTextListComponentOptions
+     *
+     * @return $this
+     */
+    public function setImageTextListComponentOptions($imageTextListComponentOptions)
+    {
+        $this->container['imageTextListComponentOptions'] = $imageTextListComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets image2ComponentOptions
+     *
+     * @return \TencentAds\Model\ImageComponentOption[]|mixed
+     */
+    public function getImage2ComponentOptions()
+    {
+        return $this->container['image2ComponentOptions'];
+    }
+
+    /**
+     * Sets image2ComponentOptions
+     *
+     * @param \TencentAds\Model\ImageComponentOption[]|mixed $image2ComponentOptions image2ComponentOptions
+     *
+     * @return $this
+     */
+    public function setImage2ComponentOptions($image2ComponentOptions)
+    {
+        $this->container['image2ComponentOptions'] = $image2ComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets landingPageComponentOptions
+     *
+     * @return \TencentAds\Model\LandingPageComponentOption[]|mixed
+     */
+    public function getLandingPageComponentOptions()
+    {
+        return $this->container['landingPageComponentOptions'];
+    }
+
+    /**
+     * Sets landingPageComponentOptions
+     *
+     * @param \TencentAds\Model\LandingPageComponentOption[]|mixed $landingPageComponentOptions landingPageComponentOptions
+     *
+     * @return $this
+     */
+    public function setLandingPageComponentOptions($landingPageComponentOptions)
+    {
+        $this->container['landingPageComponentOptions'] = $landingPageComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets brandComponentOptions
+     *
+     * @return \TencentAds\Model\BrandComponentOption[]|mixed
+     */
+    public function getBrandComponentOptions()
+    {
+        return $this->container['brandComponentOptions'];
+    }
+
+    /**
+     * Sets brandComponentOptions
+     *
+     * @param \TencentAds\Model\BrandComponentOption[]|mixed $brandComponentOptions brandComponentOptions
+     *
+     * @return $this
+     */
+    public function setBrandComponentOptions($brandComponentOptions)
+    {
+        $this->container['brandComponentOptions'] = $brandComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets longSublinkComponentOptions
+     *
+     * @return \TencentAds\Model\LongSublinkComponentOption[]|mixed
+     */
+    public function getLongSublinkComponentOptions()
+    {
+        return $this->container['longSublinkComponentOptions'];
+    }
+
+    /**
+     * Sets longSublinkComponentOptions
+     *
+     * @param \TencentAds\Model\LongSublinkComponentOption[]|mixed $longSublinkComponentOptions longSublinkComponentOptions
+     *
+     * @return $this
+     */
+    public function setLongSublinkComponentOptions($longSublinkComponentOptions)
+    {
+        $this->container['longSublinkComponentOptions'] = $longSublinkComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets longSublinkListComponentOptions
+     *
+     * @return \TencentAds\Model\LongSublinkListComponentOption[]|mixed
+     */
+    public function getLongSublinkListComponentOptions()
+    {
+        return $this->container['longSublinkListComponentOptions'];
+    }
+
+    /**
+     * Sets longSublinkListComponentOptions
+     *
+     * @param \TencentAds\Model\LongSublinkListComponentOption[]|mixed $longSublinkListComponentOptions longSublinkListComponentOptions
+     *
+     * @return $this
+     */
+    public function setLongSublinkListComponentOptions($longSublinkListComponentOptions)
+    {
+        $this->container['longSublinkListComponentOptions'] = $longSublinkListComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets shortSublinkComponentOptions
+     *
+     * @return \TencentAds\Model\ShortSublinkComponentOption[]|mixed
+     */
+    public function getShortSublinkComponentOptions()
+    {
+        return $this->container['shortSublinkComponentOptions'];
+    }
+
+    /**
+     * Sets shortSublinkComponentOptions
+     *
+     * @param \TencentAds\Model\ShortSublinkComponentOption[]|mixed $shortSublinkComponentOptions shortSublinkComponentOptions
+     *
+     * @return $this
+     */
+    public function setShortSublinkComponentOptions($shortSublinkComponentOptions)
+    {
+        $this->container['shortSublinkComponentOptions'] = $shortSublinkComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets shortSublinkListComponentOptions
+     *
+     * @return \TencentAds\Model\ShortSublinkListComponentOption[]|mixed
+     */
+    public function getShortSublinkListComponentOptions()
+    {
+        return $this->container['shortSublinkListComponentOptions'];
+    }
+
+    /**
+     * Sets shortSublinkListComponentOptions
+     *
+     * @param \TencentAds\Model\ShortSublinkListComponentOption[]|mixed $shortSublinkListComponentOptions shortSublinkListComponentOptions
+     *
+     * @return $this
+     */
+    public function setShortSublinkListComponentOptions($shortSublinkListComponentOptions)
+    {
+        $this->container['shortSublinkListComponentOptions'] = $shortSublinkListComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoComponentOptions
+     *
+     * @return \TencentAds\Model\VideoComponentOption[]|mixed
+     */
+    public function getVideoComponentOptions()
+    {
+        return $this->container['videoComponentOptions'];
+    }
+
+    /**
+     * Sets videoComponentOptions
+     *
+     * @param \TencentAds\Model\VideoComponentOption[]|mixed $videoComponentOptions videoComponentOptions
+     *
+     * @return $this
+     */
+    public function setVideoComponentOptions($videoComponentOptions)
+    {
+        $this->container['videoComponentOptions'] = $videoComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets consultComponentOptions
+     *
+     * @return \TencentAds\Model\ConsultComponentOption[]|mixed
+     */
+    public function getConsultComponentOptions()
+    {
+        return $this->container['consultComponentOptions'];
+    }
+
+    /**
+     * Sets consultComponentOptions
+     *
+     * @param \TencentAds\Model\ConsultComponentOption[]|mixed $consultComponentOptions consultComponentOptions
+     *
+     * @return $this
+     */
+    public function setConsultComponentOptions($consultComponentOptions)
+    {
+        $this->container['consultComponentOptions'] = $consultComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets phoneComponentOptions
+     *
+     * @return \TencentAds\Model\PhoneComponentOption[]|mixed
+     */
+    public function getPhoneComponentOptions()
+    {
+        return $this->container['phoneComponentOptions'];
+    }
+
+    /**
+     * Sets phoneComponentOptions
+     *
+     * @param \TencentAds\Model\PhoneComponentOption[]|mixed $phoneComponentOptions phoneComponentOptions
+     *
+     * @return $this
+     */
+    public function setPhoneComponentOptions($phoneComponentOptions)
+    {
+        $this->container['phoneComponentOptions'] = $phoneComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets formComponentOptions
+     *
+     * @return \TencentAds\Model\FormComponentOption[]|mixed
+     */
+    public function getFormComponentOptions()
+    {
+        return $this->container['formComponentOptions'];
+    }
+
+    /**
+     * Sets formComponentOptions
+     *
+     * @param \TencentAds\Model\FormComponentOption[]|mixed $formComponentOptions formComponentOptions
+     *
+     * @return $this
+     */
+    public function setFormComponentOptions($formComponentOptions)
+    {
+        $this->container['formComponentOptions'] = $formComponentOptions;
 
         return $this;
     }

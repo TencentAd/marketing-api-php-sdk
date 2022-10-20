@@ -103,15 +103,16 @@ class TargetingTagReportsApi
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
      * @param  string|mixed $timeLine timeLine (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\TargetingTagReportsGetResponse|mixed
      */
-    public function targetingTagReportsGet($accountId, $type, $level, $dateRange, $posType = null, $filtering = null, $groupBy = null, $orderBy = null, $page = null, $pageSize = null, $timeLine = null, $fields = null)
+    public function targetingTagReportsGet($accountId, $type, $level, $dateRange, $posType = null, $filtering = null, $groupBy = null, $orderBy = null, $page = null, $pageSize = null, $timeLine = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
-        list($response) = $this->targetingTagReportsGetWithHttpInfo($accountId, $type, $level, $dateRange, $posType, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $fields);
+        list($response) = $this->targetingTagReportsGetWithHttpInfo($accountId, $type, $level, $dateRange, $posType, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $weixinOfficialAccountsUpgradeEnabled, $fields);
         return $response;
     }
 
@@ -131,16 +132,17 @@ class TargetingTagReportsApi
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  string|mixed $timeLine (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\TargetingTagReportsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function targetingTagReportsGetWithHttpInfo($accountId, $type, $level, $dateRange, $posType = null, $filtering = null, $groupBy = null, $orderBy = null, $page = null, $pageSize = null, $timeLine = null, $fields = null)
+    public function targetingTagReportsGetWithHttpInfo($accountId, $type, $level, $dateRange, $posType = null, $filtering = null, $groupBy = null, $orderBy = null, $page = null, $pageSize = null, $timeLine = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\TargetingTagReportsGetResponse';
-        $request = $this->targetingTagReportsGetRequest($accountId, $type, $level, $dateRange, $posType, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $fields);
+        $request = $this->targetingTagReportsGetRequest($accountId, $type, $level, $dateRange, $posType, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $weixinOfficialAccountsUpgradeEnabled, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -217,14 +219,15 @@ class TargetingTagReportsApi
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  string|mixed $timeLine (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function targetingTagReportsGetAsync($accountId, $type, $level, $dateRange, $posType = null, $filtering = null, $groupBy = null, $orderBy = null, $page = null, $pageSize = null, $timeLine = null, $fields = null)
+    public function targetingTagReportsGetAsync($accountId, $type, $level, $dateRange, $posType = null, $filtering = null, $groupBy = null, $orderBy = null, $page = null, $pageSize = null, $timeLine = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
-        return $this->targetingTagReportsGetAsyncWithHttpInfo($accountId, $type, $level, $dateRange, $posType, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $fields)
+        return $this->targetingTagReportsGetAsyncWithHttpInfo($accountId, $type, $level, $dateRange, $posType, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $weixinOfficialAccountsUpgradeEnabled, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -248,15 +251,16 @@ class TargetingTagReportsApi
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  string|mixed $timeLine (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function targetingTagReportsGetAsyncWithHttpInfo($accountId, $type, $level, $dateRange, $posType = null, $filtering = null, $groupBy = null, $orderBy = null, $page = null, $pageSize = null, $timeLine = null, $fields = null)
+    public function targetingTagReportsGetAsyncWithHttpInfo($accountId, $type, $level, $dateRange, $posType = null, $filtering = null, $groupBy = null, $orderBy = null, $page = null, $pageSize = null, $timeLine = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\TargetingTagReportsGetResponse';
-        $request = $this->targetingTagReportsGetRequest($accountId, $type, $level, $dateRange, $posType, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $fields);
+        $request = $this->targetingTagReportsGetRequest($accountId, $type, $level, $dateRange, $posType, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $weixinOfficialAccountsUpgradeEnabled, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -309,12 +313,13 @@ class TargetingTagReportsApi
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  string|mixed $timeLine (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function targetingTagReportsGetRequest($accountId, $type, $level, $dateRange, $posType = null, $filtering = null, $groupBy = null, $orderBy = null, $page = null, $pageSize = null, $timeLine = null, $fields = null)
+    protected function targetingTagReportsGetRequest($accountId, $type, $level, $dateRange, $posType = null, $filtering = null, $groupBy = null, $orderBy = null, $page = null, $pageSize = null, $timeLine = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -400,6 +405,10 @@ class TargetingTagReportsApi
         // query params
         if ($timeLine !== null) {
             $queryParams['time_line'] = ObjectSerializer::toQueryValue($timeLine);
+        }
+        // query params
+        if ($weixinOfficialAccountsUpgradeEnabled !== null) {
+            $queryParams['weixin_official_accounts_upgrade_enabled'] = ObjectSerializer::toQueryValue($weixinOfficialAccountsUpgradeEnabled);
         }
         // query params
         if (is_array($fields)) {

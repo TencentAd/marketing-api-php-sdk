@@ -677,15 +677,16 @@ class AdgroupsApi
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
      * @param  bool|mixed $isDeleted isDeleted (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\AdgroupsGetResponse|mixed
      */
-    public function adgroupsGet($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function adgroupsGet($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
-        list($response) = $this->adgroupsGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+        list($response) = $this->adgroupsGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $weixinOfficialAccountsUpgradeEnabled, $fields);
         return $response;
     }
 
@@ -699,16 +700,17 @@ class AdgroupsApi
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\AdgroupsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function adgroupsGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function adgroupsGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\AdgroupsGetResponse';
-        $request = $this->adgroupsGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+        $request = $this->adgroupsGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $weixinOfficialAccountsUpgradeEnabled, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -779,14 +781,15 @@ class AdgroupsApi
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function adgroupsGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function adgroupsGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
-        return $this->adgroupsGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $fields)
+        return $this->adgroupsGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $weixinOfficialAccountsUpgradeEnabled, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -804,15 +807,16 @@ class AdgroupsApi
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function adgroupsGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function adgroupsGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\AdgroupsGetResponse';
-        $request = $this->adgroupsGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+        $request = $this->adgroupsGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $weixinOfficialAccountsUpgradeEnabled, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -859,12 +863,13 @@ class AdgroupsApi
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
+     * @param  bool|mixed $weixinOfficialAccountsUpgradeEnabled (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function adgroupsGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    protected function adgroupsGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $weixinOfficialAccountsUpgradeEnabled = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -902,6 +907,10 @@ class AdgroupsApi
         // query params
         if ($isDeleted !== null) {
             $queryParams['is_deleted'] = ObjectSerializer::toQueryValue($isDeleted);
+        }
+        // query params
+        if ($weixinOfficialAccountsUpgradeEnabled !== null) {
+            $queryParams['weixin_official_accounts_upgrade_enabled'] = ObjectSerializer::toQueryValue($weixinOfficialAccountsUpgradeEnabled);
         }
         // query params
         if (is_array($fields)) {
