@@ -148,7 +148,8 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'videoComponentOptions' => '\TencentAds\Model\VideoComponentOption[]',
         'consultComponentOptions' => '\TencentAds\Model\ConsultComponentOption[]',
         'phoneComponentOptions' => '\TencentAds\Model\PhoneComponentOption[]',
-        'formComponentOptions' => '\TencentAds\Model\FormComponentOption[]'
+        'formComponentOptions' => '\TencentAds\Model\FormComponentOption[]',
+        'imageListJumpInfo' => '\TencentAds\Model\LandingPageStructure[]'
     ];
 
     /**
@@ -247,7 +248,8 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'videoComponentOptions' => null,
         'consultComponentOptions' => null,
         'phoneComponentOptions' => null,
-        'formComponentOptions' => null
+        'formComponentOptions' => null,
+        'imageListJumpInfo' => null
     ];
 
     /**
@@ -367,7 +369,8 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'videoComponentOptions' => 'video_component_options',
         'consultComponentOptions' => 'consult_component_options',
         'phoneComponentOptions' => 'phone_component_options',
-        'formComponentOptions' => 'form_component_options'
+        'formComponentOptions' => 'form_component_options',
+        'imageListJumpInfo' => 'image_list_jump_info'
     ];
 
     /**
@@ -466,7 +469,8 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'videoComponentOptions' => 'setVideoComponentOptions',
         'consultComponentOptions' => 'setConsultComponentOptions',
         'phoneComponentOptions' => 'setPhoneComponentOptions',
-        'formComponentOptions' => 'setFormComponentOptions'
+        'formComponentOptions' => 'setFormComponentOptions',
+        'imageListJumpInfo' => 'setImageListJumpInfo'
     ];
 
     /**
@@ -565,7 +569,8 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'videoComponentOptions' => 'getVideoComponentOptions',
         'consultComponentOptions' => 'getConsultComponentOptions',
         'phoneComponentOptions' => 'getPhoneComponentOptions',
-        'formComponentOptions' => 'getFormComponentOptions'
+        'formComponentOptions' => 'getFormComponentOptions',
+        'imageListJumpInfo' => 'getImageListJumpInfo'
     ];
 
     /**
@@ -719,6 +724,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         $this->container['consultComponentOptions'] = isset($data['consultComponentOptions']) ? $data['consultComponentOptions'] : null;
         $this->container['phoneComponentOptions'] = isset($data['phoneComponentOptions']) ? $data['phoneComponentOptions'] : null;
         $this->container['formComponentOptions'] = isset($data['formComponentOptions']) ? $data['formComponentOptions'] : null;
+        $this->container['imageListJumpInfo'] = isset($data['imageListJumpInfo']) ? $data['imageListJumpInfo'] : null;
     }
 
     /**
@@ -2925,6 +2931,30 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
     public function setFormComponentOptions($formComponentOptions)
     {
         $this->container['formComponentOptions'] = $formComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets imageListJumpInfo
+     *
+     * @return \TencentAds\Model\LandingPageStructure[]|mixed
+     */
+    public function getImageListJumpInfo()
+    {
+        return $this->container['imageListJumpInfo'];
+    }
+
+    /**
+     * Sets imageListJumpInfo
+     *
+     * @param \TencentAds\Model\LandingPageStructure[]|mixed $imageListJumpInfo imageListJumpInfo
+     *
+     * @return $this
+     */
+    public function setImageListJumpInfo($imageListJumpInfo)
+    {
+        $this->container['imageListJumpInfo'] = $imageListJumpInfo;
 
         return $this;
     }

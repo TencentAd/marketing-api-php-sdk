@@ -56,6 +56,7 @@ class CostType
     const COSTTYPE_CPM = 'COSTTYPE_CPM';
     const COSTTYPE_CPD = 'COSTTYPE_CPD';
     const COSTTYPE_CPT = 'COSTTYPE_CPT';
+    const BID_TYPE_CPO = 'BID_TYPE_CPO';
     
     /**
      * Gets allowable values of the enum
@@ -76,6 +77,7 @@ class CostType
             self::COSTTYPE_CPM,
             self::COSTTYPE_CPD,
             self::COSTTYPE_CPT,
+            self::BID_TYPE_CPO,
         ];
     }
 }

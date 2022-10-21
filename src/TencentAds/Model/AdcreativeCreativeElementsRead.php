@@ -124,7 +124,8 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'floatingZoneStruct' => '\TencentAds\Model\FloatingZone',
         'canvasShareImage' => 'string',
         'wegameInfoSpec' => '\TencentAds\Model\WegameInfoSpec',
-        'finderObjectVisibility' => 'bool'
+        'finderObjectVisibility' => 'bool',
+        'imageListJumpInfo' => '\TencentAds\Model\LandingPageStructure[]'
     ];
 
     /**
@@ -199,7 +200,8 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'floatingZoneStruct' => null,
         'canvasShareImage' => null,
         'wegameInfoSpec' => null,
-        'finderObjectVisibility' => null
+        'finderObjectVisibility' => null,
+        'imageListJumpInfo' => null
     ];
 
     /**
@@ -295,7 +297,8 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'floatingZoneStruct' => 'floating_zone_struct',
         'canvasShareImage' => 'canvas_share_image',
         'wegameInfoSpec' => 'wegame_info_spec',
-        'finderObjectVisibility' => 'finder_object_visibility'
+        'finderObjectVisibility' => 'finder_object_visibility',
+        'imageListJumpInfo' => 'image_list_jump_info'
     ];
 
     /**
@@ -370,7 +373,8 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'floatingZoneStruct' => 'setFloatingZoneStruct',
         'canvasShareImage' => 'setCanvasShareImage',
         'wegameInfoSpec' => 'setWegameInfoSpec',
-        'finderObjectVisibility' => 'setFinderObjectVisibility'
+        'finderObjectVisibility' => 'setFinderObjectVisibility',
+        'imageListJumpInfo' => 'setImageListJumpInfo'
     ];
 
     /**
@@ -445,7 +449,8 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         'floatingZoneStruct' => 'getFloatingZoneStruct',
         'canvasShareImage' => 'getCanvasShareImage',
         'wegameInfoSpec' => 'getWegameInfoSpec',
-        'finderObjectVisibility' => 'getFinderObjectVisibility'
+        'finderObjectVisibility' => 'getFinderObjectVisibility',
+        'imageListJumpInfo' => 'getImageListJumpInfo'
     ];
 
     /**
@@ -575,6 +580,7 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
         $this->container['canvasShareImage'] = isset($data['canvasShareImage']) ? $data['canvasShareImage'] : null;
         $this->container['wegameInfoSpec'] = isset($data['wegameInfoSpec']) ? $data['wegameInfoSpec'] : null;
         $this->container['finderObjectVisibility'] = isset($data['finderObjectVisibility']) ? $data['finderObjectVisibility'] : null;
+        $this->container['imageListJumpInfo'] = isset($data['imageListJumpInfo']) ? $data['imageListJumpInfo'] : null;
     }
 
     /**
@@ -2205,6 +2211,30 @@ class AdcreativeCreativeElementsRead implements ModelInterface, ArrayAccess
     public function setFinderObjectVisibility($finderObjectVisibility)
     {
         $this->container['finderObjectVisibility'] = $finderObjectVisibility;
+
+        return $this;
+    }
+
+    /**
+     * Gets imageListJumpInfo
+     *
+     * @return \TencentAds\Model\LandingPageStructure[]|mixed
+     */
+    public function getImageListJumpInfo()
+    {
+        return $this->container['imageListJumpInfo'];
+    }
+
+    /**
+     * Sets imageListJumpInfo
+     *
+     * @param \TencentAds\Model\LandingPageStructure[]|mixed $imageListJumpInfo imageListJumpInfo
+     *
+     * @return $this
+     */
+    public function setImageListJumpInfo($imageListJumpInfo)
+    {
+        $this->container['imageListJumpInfo'] = $imageListJumpInfo;
 
         return $this;
     }

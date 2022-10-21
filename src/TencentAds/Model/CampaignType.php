@@ -52,6 +52,7 @@ class CampaignType
     const UNSUPPORTED = 'CAMPAIGN_TYPE_UNSUPPORTED';
     const REWARDQUEST = 'CAMPAIGN_TYPE_REWARDQUEST';
     const OVERSEAS = 'CAMPAIGN_TYPE_OVERSEAS';
+    const FREETRADE = 'CAMPAIGN_TYPE_FREETRADE';
     
     /**
      * Gets allowable values of the enum
@@ -68,6 +69,7 @@ class CampaignType
             self::UNSUPPORTED,
             self::REWARDQUEST,
             self::OVERSEAS,
+            self::FREETRADE,
         ];
     }
 }

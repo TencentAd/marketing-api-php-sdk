@@ -59,7 +59,8 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'code' => 'string',
-        'tips' => 'string'
+        'tips' => 'string',
+        'description' => 'string'
     ];
 
     /**
@@ -69,7 +70,8 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'code' => null,
-        'tips' => null
+        'tips' => null,
+        'description' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'code' => 'code',
-        'tips' => 'tips'
+        'tips' => 'tips',
+        'description' => 'description'
     ];
 
     /**
@@ -110,7 +113,8 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'code' => 'setCode',
-        'tips' => 'setTips'
+        'tips' => 'setTips',
+        'description' => 'setDescription'
     ];
 
     /**
@@ -120,7 +124,8 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'code' => 'getCode',
-        'tips' => 'getTips'
+        'tips' => 'getTips',
+        'description' => 'getDescription'
     ];
 
     /**
@@ -185,6 +190,7 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
     {
         $this->container['code'] = isset($data['code']) ? $data['code'] : null;
         $this->container['tips'] = isset($data['tips']) ? $data['tips'] : null;
+        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
     public function setTips($tips)
     {
         $this->container['tips'] = $tips;
+
+        return $this;
+    }
+
+    /**
+     * Gets description
+     *
+     * @return string|mixed
+     */
+    public function getDescription()
+    {
+        return $this->container['description'];
+    }
+
+    /**
+     * Sets description
+     *
+     * @param string|mixed $description description
+     *
+     * @return $this
+     */
+    public function setDescription($description)
+    {
+        $this->container['description'] = $description;
 
         return $this;
     }

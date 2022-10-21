@@ -89,6 +89,7 @@ class SiteSetDefinition
     const WECHAT_SEARCH = 'SITE_SET_WECHAT_SEARCH';
     const WECHAT_PLUGIN = 'SITE_SET_WECHAT_PLUGIN';
     const QBSEARCH = 'SITE_SET_QBSEARCH';
+    const FREETRADE = 'SITE_SET_FREETRADE';
     
     /**
      * Gets allowable values of the enum
@@ -142,6 +143,7 @@ class SiteSetDefinition
             self::WECHAT_SEARCH,
             self::WECHAT_PLUGIN,
             self::QBSEARCH,
+            self::FREETRADE,
         ];
     }
 }
