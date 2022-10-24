@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * AuthSpec Class Doc Comment
  *
  * @category Class
- * @description 返回结构
+ * @description 授权信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -59,7 +59,8 @@ class AuthSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'certificationList' => '\TencentAds\Model\Certification[]',
-        'relationship' => '\TencentAds\Model\PromotedObjectAuthRelationship'
+        'relationship' => '\TencentAds\Model\PromotedObjectAuthRelationship',
+        'authScope' => '\TencentAds\Model\WechatAuthScope'
     ];
 
     /**
@@ -69,7 +70,8 @@ class AuthSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'certificationList' => null,
-        'relationship' => null
+        'relationship' => null,
+        'authScope' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class AuthSpec implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'certificationList' => 'certification_list',
-        'relationship' => 'relationship'
+        'relationship' => 'relationship',
+        'authScope' => 'auth_scope'
     ];
 
     /**
@@ -110,7 +113,8 @@ class AuthSpec implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'certificationList' => 'setCertificationList',
-        'relationship' => 'setRelationship'
+        'relationship' => 'setRelationship',
+        'authScope' => 'setAuthScope'
     ];
 
     /**
@@ -120,7 +124,8 @@ class AuthSpec implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'certificationList' => 'getCertificationList',
-        'relationship' => 'getRelationship'
+        'relationship' => 'getRelationship',
+        'authScope' => 'getAuthScope'
     ];
 
     /**
@@ -185,6 +190,7 @@ class AuthSpec implements ModelInterface, ArrayAccess
     {
         $this->container['certificationList'] = isset($data['certificationList']) ? $data['certificationList'] : null;
         $this->container['relationship'] = isset($data['relationship']) ? $data['relationship'] : null;
+        $this->container['authScope'] = isset($data['authScope']) ? $data['authScope'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class AuthSpec implements ModelInterface, ArrayAccess
     public function setRelationship($relationship)
     {
         $this->container['relationship'] = $relationship;
+
+        return $this;
+    }
+
+    /**
+     * Gets authScope
+     *
+     * @return \TencentAds\Model\WechatAuthScope|mixed
+     */
+    public function getAuthScope()
+    {
+        return $this->container['authScope'];
+    }
+
+    /**
+     * Sets authScope
+     *
+     * @param \TencentAds\Model\WechatAuthScope|mixed $authScope authScope
+     *
+     * @return $this
+     */
+    public function setAuthScope($authScope)
+    {
+        $this->container['authScope'] = $authScope;
 
         return $this;
     }
