@@ -15,6 +15,7 @@ use TencentAds\Container\AdcreativeTemplatePreviewsApiContainer;
 use TencentAds\Container\AdcreativeTemplatesApiContainer;
 use TencentAds\Container\AdcreativesApiContainer;
 use TencentAds\Container\AdcreativesRelatedCapabilityApiContainer;
+use TencentAds\Container\AdgroupNegativewordsApiContainer;
 use TencentAds\Container\AdgroupsApiContainer;
 use TencentAds\Container\AdsApiContainer;
 use TencentAds\Container\AdvertiserApiContainer;
@@ -36,14 +37,18 @@ use TencentAds\Container\BatchAsyncRequestsApiContainer;
 use TencentAds\Container\BatchOperationApiContainer;
 use TencentAds\Container\BatchRequestsApiContainer;
 use TencentAds\Container\BidSimulationApiContainer;
+use TencentAds\Container\BidwordApiContainer;
+use TencentAds\Container\BidwordRptApiContainer;
 use TencentAds\Container\BrandApiContainer;
 use TencentAds\Container\BusinessManagerRelationsApiContainer;
 use TencentAds\Container\BusinessMdmAccountRelationsApiContainer;
+use TencentAds\Container\CampaignNegativewordsApiContainer;
 use TencentAds\Container\CampaignsApiContainer;
 use TencentAds\Container\CapabilitiesApiContainer;
 use TencentAds\Container\ChannelsApiContainer;
 use TencentAds\Container\ComplianceValidationApiContainer;
 use TencentAds\Container\ConversionsApiContainer;
+use TencentAds\Container\CreativeComponentsApiContainer;
 use TencentAds\Container\CreativetoolsTextApiContainer;
 use TencentAds\Container\CustomAudienceEstimationsApiContainer;
 use TencentAds\Container\CustomAudienceFilesApiContainer;
@@ -115,6 +120,7 @@ use TencentAds\Container\PropertyFilesApiContainer;
 use TencentAds\Container\PropertySetSchemasApiContainer;
 use TencentAds\Container\PropertySetsApiContainer;
 use TencentAds\Container\QualificationsApiContainer;
+use TencentAds\Container\QuerywordRptApiContainer;
 use TencentAds\Container\RealtimeCostApiContainer;
 use TencentAds\Container\ReportApiContainer;
 use TencentAds\Container\ReviewElementPrereviewResultsApiContainer;
@@ -211,6 +217,9 @@ class App
     /** @var AdcreativesRelatedCapabilityApiContainer */
     public $adcreativesRelatedCapabilityApiContainer;
 
+    /** @var AdgroupNegativewordsApiContainer */
+    public $adgroupNegativewordsApiContainer;
+
     /** @var AdgroupsApiContainer */
     public $adgroupsApiContainer;
 
@@ -274,6 +283,12 @@ class App
     /** @var BidSimulationApiContainer */
     public $bidSimulationApiContainer;
 
+    /** @var BidwordApiContainer */
+    public $bidwordApiContainer;
+
+    /** @var BidwordRptApiContainer */
+    public $bidwordRptApiContainer;
+
     /** @var BrandApiContainer */
     public $brandApiContainer;
 
@@ -282,6 +297,9 @@ class App
 
     /** @var BusinessMdmAccountRelationsApiContainer */
     public $businessMdmAccountRelationsApiContainer;
+
+    /** @var CampaignNegativewordsApiContainer */
+    public $campaignNegativewordsApiContainer;
 
     /** @var CampaignsApiContainer */
     public $campaignsApiContainer;
@@ -297,6 +315,9 @@ class App
 
     /** @var ConversionsApiContainer */
     public $conversionsApiContainer;
+
+    /** @var CreativeComponentsApiContainer */
+    public $creativeComponentsApiContainer;
 
     /** @var CreativetoolsTextApiContainer */
     public $creativetoolsTextApiContainer;
@@ -510,6 +531,9 @@ class App
 
     /** @var QualificationsApiContainer */
     public $qualificationsApiContainer;
+
+    /** @var QuerywordRptApiContainer */
+    public $querywordRptApiContainer;
 
     /** @var RealtimeCostApiContainer */
     public $realtimeCostApiContainer;
@@ -860,6 +884,20 @@ class App
 
 
     /**
+     * @return AdgroupNegativewordsApiContainer
+     */
+    public function adgroupNegativewords()
+    {
+        if (empty($this->adgroupNegativewordsApiContainer)) {
+            $container = new AdgroupNegativewordsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->adgroupNegativewordsApiContainer = $container;
+        }
+        return $this->adgroupNegativewordsApiContainer;
+    }
+
+
+    /**
      * @return AdgroupsApiContainer
      */
     public function adgroups()
@@ -1154,6 +1192,34 @@ class App
 
 
     /**
+     * @return BidwordApiContainer
+     */
+    public function bidword()
+    {
+        if (empty($this->bidwordApiContainer)) {
+            $container = new BidwordApiContainer();
+            $container->init($this, $this->getClient());
+            $this->bidwordApiContainer = $container;
+        }
+        return $this->bidwordApiContainer;
+    }
+
+
+    /**
+     * @return BidwordRptApiContainer
+     */
+    public function bidwordRpt()
+    {
+        if (empty($this->bidwordRptApiContainer)) {
+            $container = new BidwordRptApiContainer();
+            $container->init($this, $this->getClient());
+            $this->bidwordRptApiContainer = $container;
+        }
+        return $this->bidwordRptApiContainer;
+    }
+
+
+    /**
      * @return BrandApiContainer
      */
     public function brand()
@@ -1192,6 +1258,20 @@ class App
             $this->businessMdmAccountRelationsApiContainer = $container;
         }
         return $this->businessMdmAccountRelationsApiContainer;
+    }
+
+
+    /**
+     * @return CampaignNegativewordsApiContainer
+     */
+    public function campaignNegativewords()
+    {
+        if (empty($this->campaignNegativewordsApiContainer)) {
+            $container = new CampaignNegativewordsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->campaignNegativewordsApiContainer = $container;
+        }
+        return $this->campaignNegativewordsApiContainer;
     }
 
 
@@ -1262,6 +1342,20 @@ class App
             $this->conversionsApiContainer = $container;
         }
         return $this->conversionsApiContainer;
+    }
+
+
+    /**
+     * @return CreativeComponentsApiContainer
+     */
+    public function creativeComponents()
+    {
+        if (empty($this->creativeComponentsApiContainer)) {
+            $container = new CreativeComponentsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->creativeComponentsApiContainer = $container;
+        }
+        return $this->creativeComponentsApiContainer;
     }
 
 
@@ -2256,6 +2350,20 @@ class App
             $this->qualificationsApiContainer = $container;
         }
         return $this->qualificationsApiContainer;
+    }
+
+
+    /**
+     * @return QuerywordRptApiContainer
+     */
+    public function querywordRpt()
+    {
+        if (empty($this->querywordRptApiContainer)) {
+            $container = new QuerywordRptApiContainer();
+            $container->init($this, $this->getClient());
+            $this->querywordRptApiContainer = $container;
+        }
+        return $this->querywordRptApiContainer;
     }
 
 

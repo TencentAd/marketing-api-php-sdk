@@ -132,6 +132,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'floatingZoneStruct' => '\TencentAds\Model\FloatingZone',
         'canvasShareImage' => 'string',
         'wegameInfoSpec' => '\TencentAds\Model\WegameInfoSpec',
+        'wechatChannelsSpec' => '\TencentAds\Model\AdCreativeWechatChannelsSpec',
         'finderObjectVisibility' => 'bool',
         'titleComponentOptions' => '\TencentAds\Model\TextComponentOption[]',
         'descriptionComponentOptions' => '\TencentAds\Model\TextComponentOption[]',
@@ -232,6 +233,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'floatingZoneStruct' => null,
         'canvasShareImage' => null,
         'wegameInfoSpec' => null,
+        'wechatChannelsSpec' => null,
         'finderObjectVisibility' => null,
         'titleComponentOptions' => null,
         'descriptionComponentOptions' => null,
@@ -353,6 +355,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'floatingZoneStruct' => 'floating_zone_struct',
         'canvasShareImage' => 'canvas_share_image',
         'wegameInfoSpec' => 'wegame_info_spec',
+        'wechatChannelsSpec' => 'wechat_channels_spec',
         'finderObjectVisibility' => 'finder_object_visibility',
         'titleComponentOptions' => 'title_component_options',
         'descriptionComponentOptions' => 'description_component_options',
@@ -453,6 +456,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'floatingZoneStruct' => 'setFloatingZoneStruct',
         'canvasShareImage' => 'setCanvasShareImage',
         'wegameInfoSpec' => 'setWegameInfoSpec',
+        'wechatChannelsSpec' => 'setWechatChannelsSpec',
         'finderObjectVisibility' => 'setFinderObjectVisibility',
         'titleComponentOptions' => 'setTitleComponentOptions',
         'descriptionComponentOptions' => 'setDescriptionComponentOptions',
@@ -553,6 +557,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'floatingZoneStruct' => 'getFloatingZoneStruct',
         'canvasShareImage' => 'getCanvasShareImage',
         'wegameInfoSpec' => 'getWegameInfoSpec',
+        'wechatChannelsSpec' => 'getWechatChannelsSpec',
         'finderObjectVisibility' => 'getFinderObjectVisibility',
         'titleComponentOptions' => 'getTitleComponentOptions',
         'descriptionComponentOptions' => 'getDescriptionComponentOptions',
@@ -707,6 +712,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         $this->container['floatingZoneStruct'] = isset($data['floatingZoneStruct']) ? $data['floatingZoneStruct'] : null;
         $this->container['canvasShareImage'] = isset($data['canvasShareImage']) ? $data['canvasShareImage'] : null;
         $this->container['wegameInfoSpec'] = isset($data['wegameInfoSpec']) ? $data['wegameInfoSpec'] : null;
+        $this->container['wechatChannelsSpec'] = isset($data['wechatChannelsSpec']) ? $data['wechatChannelsSpec'] : null;
         $this->container['finderObjectVisibility'] = isset($data['finderObjectVisibility']) ? $data['finderObjectVisibility'] : null;
         $this->container['titleComponentOptions'] = isset($data['titleComponentOptions']) ? $data['titleComponentOptions'] : null;
         $this->container['descriptionComponentOptions'] = isset($data['descriptionComponentOptions']) ? $data['descriptionComponentOptions'] : null;
@@ -2523,6 +2529,30 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
     public function setWegameInfoSpec($wegameInfoSpec)
     {
         $this->container['wegameInfoSpec'] = $wegameInfoSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsSpec
+     *
+     * @return \TencentAds\Model\AdCreativeWechatChannelsSpec|mixed
+     */
+    public function getWechatChannelsSpec()
+    {
+        return $this->container['wechatChannelsSpec'];
+    }
+
+    /**
+     * Sets wechatChannelsSpec
+     *
+     * @param \TencentAds\Model\AdCreativeWechatChannelsSpec|mixed $wechatChannelsSpec wechatChannelsSpec
+     *
+     * @return $this
+     */
+    public function setWechatChannelsSpec($wechatChannelsSpec)
+    {
+        $this->container['wechatChannelsSpec'] = $wechatChannelsSpec;
 
         return $this;
     }

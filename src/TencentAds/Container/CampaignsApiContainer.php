@@ -62,6 +62,40 @@ class CampaignsApiContainer extends ApiContainer
 
 
     /**
+     * Handle CampaignsApi campaignsAddNegativeword function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function addNegativeword(array $params = [])
+    {
+        return $this->handleMiddleware('addNegativeword', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->campaignsAddNegativeword($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle CampaignsApi campaignsAddNegativewordAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function addNegativewordAsync(array $params = [])
+    {
+        return $this->handleMiddleware('addNegativeword', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->campaignsAddNegativewordAsync($data);
+            return $response;
+        });
+    }
+
+
+    /**
      * Handle CampaignsApi campaignsDelete function
      * @param array params
      * @return mixed
@@ -136,6 +170,40 @@ class CampaignsApiContainer extends ApiContainer
             $weixinOfficialAccountsUpgradeEnabled = isset($params['weixin_official_accounts_upgrade_enabled']) ? $params['weixin_official_accounts_upgrade_enabled'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
             $response = $this->apiInstance->campaignsGetAsync($accountId, $filtering, $page, $pageSize, $isDeleted, $weixinOfficialAccountsUpgradeEnabled, $fields);
+            return $response;
+        });
+    }
+
+
+    /**
+     * Handle CampaignsApi campaignsGetNegativeword function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function getNegativeword(array $params = [])
+    {
+        return $this->handleMiddleware('getNegativeword', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->campaignsGetNegativeword($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle CampaignsApi campaignsGetNegativewordAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function getNegativewordAsync(array $params = [])
+    {
+        return $this->handleMiddleware('getNegativeword', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->campaignsGetNegativewordAsync($data);
             return $response;
         });
     }
@@ -238,6 +306,40 @@ class CampaignsApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $data = $params;
             $response = $this->apiInstance->campaignsUpdateDailyBudgetAsync($data);
+            return $response;
+        });
+    }
+
+
+    /**
+     * Handle CampaignsApi campaignsUpdateNegativeword function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function updateNegativeword(array $params = [])
+    {
+        return $this->handleMiddleware('updateNegativeword', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->campaignsUpdateNegativeword($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle CampaignsApi campaignsUpdateNegativewordAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function updateNegativewordAsync(array $params = [])
+    {
+        return $this->handleMiddleware('updateNegativeword', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->campaignsUpdateNegativewordAsync($data);
             return $response;
         });
     }

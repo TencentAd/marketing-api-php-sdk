@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * TimeRange Class Doc Comment
  *
  * @category Class
- * @description 时间范围，最长跨度1年。&lt;br&gt;time_type&#x3D;TIME_TYPE_ACTION_TIME时填写线索提交时间，time_type&#x3D;TIME_TYPE_CREATED_TIME时填写线索入库时间
+ * @description 起止时间范围
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

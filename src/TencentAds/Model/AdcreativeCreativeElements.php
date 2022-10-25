@@ -106,6 +106,7 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'rightCanvas' => 'string',
         'canvasShareImage' => 'string',
         'wegameInfoSpec' => '\TencentAds\Model\WegameInfoSpec',
+        'wechatChannelsSpec' => '\TencentAds\Model\AdCreativeWechatChannelsSpec',
         'finderObjectVisibility' => 'bool',
         'imageListJumpInfo' => '\TencentAds\Model\LandingPageStructure[]'
     ];
@@ -164,6 +165,7 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'rightCanvas' => null,
         'canvasShareImage' => null,
         'wegameInfoSpec' => null,
+        'wechatChannelsSpec' => null,
         'finderObjectVisibility' => null,
         'imageListJumpInfo' => null
     ];
@@ -243,6 +245,7 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'rightCanvas' => 'right_canvas',
         'canvasShareImage' => 'canvas_share_image',
         'wegameInfoSpec' => 'wegame_info_spec',
+        'wechatChannelsSpec' => 'wechat_channels_spec',
         'finderObjectVisibility' => 'finder_object_visibility',
         'imageListJumpInfo' => 'image_list_jump_info'
     ];
@@ -301,6 +304,7 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'rightCanvas' => 'setRightCanvas',
         'canvasShareImage' => 'setCanvasShareImage',
         'wegameInfoSpec' => 'setWegameInfoSpec',
+        'wechatChannelsSpec' => 'setWechatChannelsSpec',
         'finderObjectVisibility' => 'setFinderObjectVisibility',
         'imageListJumpInfo' => 'setImageListJumpInfo'
     ];
@@ -359,6 +363,7 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         'rightCanvas' => 'getRightCanvas',
         'canvasShareImage' => 'getCanvasShareImage',
         'wegameInfoSpec' => 'getWegameInfoSpec',
+        'wechatChannelsSpec' => 'getWechatChannelsSpec',
         'finderObjectVisibility' => 'getFinderObjectVisibility',
         'imageListJumpInfo' => 'getImageListJumpInfo'
     ];
@@ -471,6 +476,7 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
         $this->container['rightCanvas'] = isset($data['rightCanvas']) ? $data['rightCanvas'] : null;
         $this->container['canvasShareImage'] = isset($data['canvasShareImage']) ? $data['canvasShareImage'] : null;
         $this->container['wegameInfoSpec'] = isset($data['wegameInfoSpec']) ? $data['wegameInfoSpec'] : null;
+        $this->container['wechatChannelsSpec'] = isset($data['wechatChannelsSpec']) ? $data['wechatChannelsSpec'] : null;
         $this->container['finderObjectVisibility'] = isset($data['finderObjectVisibility']) ? $data['finderObjectVisibility'] : null;
         $this->container['imageListJumpInfo'] = isset($data['imageListJumpInfo']) ? $data['imageListJumpInfo'] : null;
     }
@@ -1647,6 +1653,30 @@ class AdcreativeCreativeElements implements ModelInterface, ArrayAccess
     public function setWegameInfoSpec($wegameInfoSpec)
     {
         $this->container['wegameInfoSpec'] = $wegameInfoSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsSpec
+     *
+     * @return \TencentAds\Model\AdCreativeWechatChannelsSpec|mixed
+     */
+    public function getWechatChannelsSpec()
+    {
+        return $this->container['wechatChannelsSpec'];
+    }
+
+    /**
+     * Sets wechatChannelsSpec
+     *
+     * @param \TencentAds\Model\AdCreativeWechatChannelsSpec|mixed $wechatChannelsSpec wechatChannelsSpec
+     *
+     * @return $this
+     */
+    public function setWechatChannelsSpec($wechatChannelsSpec)
+    {
+        $this->container['wechatChannelsSpec'] = $wechatChannelsSpec;
 
         return $this;
     }
