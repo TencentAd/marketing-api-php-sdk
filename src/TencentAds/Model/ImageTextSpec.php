@@ -1,6 +1,6 @@
 <?php
 /**
- * ChannelPackageInfo
+ * ImageTextSpec
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ChannelPackageInfo Class Doc Comment
+ * ImageTextSpec Class Doc Comment
  *
  * @category Class
- * @description 广告渠道包任务处理信息
+ * @description 图文复合组件元素
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ChannelPackageInfo implements ModelInterface, ArrayAccess
+class ImageTextSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'channel_package_info';
+    protected static $swaggerModelName = 'image_text_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,13 +58,10 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'androidAppId' => 'int',
-        'packageName' => 'string',
-        'status' => '\TencentAds\Model\ChannelTaskStatus',
-        'errorCode' => '\TencentAds\Model\ChannelTaskError',
-        'createdTime' => 'int',
-        'lastModifiedTime' => 'int',
-        'channelPackageId' => 'string'
+        'paddingTop' => 'int',
+        'paddingBottom' => 'int',
+        'alignMode' => 'int',
+        'imageTextItem' => '\TencentAds\Model\ImageTextItemStruct[]'
     ];
 
     /**
@@ -73,13 +70,10 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'androidAppId' => 'int64',
-        'packageName' => null,
-        'status' => null,
-        'errorCode' => null,
-        'createdTime' => 'int64',
-        'lastModifiedTime' => 'int64',
-        'channelPackageId' => null
+        'paddingTop' => 'int64',
+        'paddingBottom' => 'int64',
+        'alignMode' => 'int64',
+        'imageTextItem' => null
     ];
 
     /**
@@ -109,13 +103,10 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'androidAppId' => 'android_app_id',
-        'packageName' => 'package_name',
-        'status' => 'status',
-        'errorCode' => 'error_code',
-        'createdTime' => 'created_time',
-        'lastModifiedTime' => 'last_modified_time',
-        'channelPackageId' => 'channel_package_id'
+        'paddingTop' => 'padding_top',
+        'paddingBottom' => 'padding_bottom',
+        'alignMode' => 'align_mode',
+        'imageTextItem' => 'image_text_item'
     ];
 
     /**
@@ -124,13 +115,10 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'androidAppId' => 'setAndroidAppId',
-        'packageName' => 'setPackageName',
-        'status' => 'setStatus',
-        'errorCode' => 'setErrorCode',
-        'createdTime' => 'setCreatedTime',
-        'lastModifiedTime' => 'setLastModifiedTime',
-        'channelPackageId' => 'setChannelPackageId'
+        'paddingTop' => 'setPaddingTop',
+        'paddingBottom' => 'setPaddingBottom',
+        'alignMode' => 'setAlignMode',
+        'imageTextItem' => 'setImageTextItem'
     ];
 
     /**
@@ -139,13 +127,10 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'androidAppId' => 'getAndroidAppId',
-        'packageName' => 'getPackageName',
-        'status' => 'getStatus',
-        'errorCode' => 'getErrorCode',
-        'createdTime' => 'getCreatedTime',
-        'lastModifiedTime' => 'getLastModifiedTime',
-        'channelPackageId' => 'getChannelPackageId'
+        'paddingTop' => 'getPaddingTop',
+        'paddingBottom' => 'getPaddingBottom',
+        'alignMode' => 'getAlignMode',
+        'imageTextItem' => 'getImageTextItem'
     ];
 
     /**
@@ -208,13 +193,10 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['androidAppId'] = isset($data['androidAppId']) ? $data['androidAppId'] : null;
-        $this->container['packageName'] = isset($data['packageName']) ? $data['packageName'] : null;
-        $this->container['status'] = isset($data['status']) ? $data['status'] : null;
-        $this->container['errorCode'] = isset($data['errorCode']) ? $data['errorCode'] : null;
-        $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
-        $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
-        $this->container['channelPackageId'] = isset($data['channelPackageId']) ? $data['channelPackageId'] : null;
+        $this->container['paddingTop'] = isset($data['paddingTop']) ? $data['paddingTop'] : null;
+        $this->container['paddingBottom'] = isset($data['paddingBottom']) ? $data['paddingBottom'] : null;
+        $this->container['alignMode'] = isset($data['alignMode']) ? $data['alignMode'] : null;
+        $this->container['imageTextItem'] = isset($data['imageTextItem']) ? $data['imageTextItem'] : null;
     }
 
     /**
@@ -242,169 +224,97 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets androidAppId
+     * Gets paddingTop
      *
      * @return int|mixed
      */
-    public function getAndroidAppId()
+    public function getPaddingTop()
     {
-        return $this->container['androidAppId'];
+        return $this->container['paddingTop'];
     }
 
     /**
-     * Sets androidAppId
+     * Sets paddingTop
      *
-     * @param int|mixed $androidAppId androidAppId
+     * @param int|mixed $paddingTop paddingTop
      *
      * @return $this
      */
-    public function setAndroidAppId($androidAppId)
+    public function setPaddingTop($paddingTop)
     {
-        $this->container['androidAppId'] = $androidAppId;
+        $this->container['paddingTop'] = $paddingTop;
 
         return $this;
     }
 
     /**
-     * Gets packageName
-     *
-     * @return string|mixed
-     */
-    public function getPackageName()
-    {
-        return $this->container['packageName'];
-    }
-
-    /**
-     * Sets packageName
-     *
-     * @param string|mixed $packageName packageName
-     *
-     * @return $this
-     */
-    public function setPackageName($packageName)
-    {
-        $this->container['packageName'] = $packageName;
-
-        return $this;
-    }
-
-    /**
-     * Gets status
-     *
-     * @return \TencentAds\Model\ChannelTaskStatus|mixed
-     */
-    public function getStatus()
-    {
-        return $this->container['status'];
-    }
-
-    /**
-     * Sets status
-     *
-     * @param \TencentAds\Model\ChannelTaskStatus|mixed $status status
-     *
-     * @return $this
-     */
-    public function setStatus($status)
-    {
-        $this->container['status'] = $status;
-
-        return $this;
-    }
-
-    /**
-     * Gets errorCode
-     *
-     * @return \TencentAds\Model\ChannelTaskError|mixed
-     */
-    public function getErrorCode()
-    {
-        return $this->container['errorCode'];
-    }
-
-    /**
-     * Sets errorCode
-     *
-     * @param \TencentAds\Model\ChannelTaskError|mixed $errorCode errorCode
-     *
-     * @return $this
-     */
-    public function setErrorCode($errorCode)
-    {
-        $this->container['errorCode'] = $errorCode;
-
-        return $this;
-    }
-
-    /**
-     * Gets createdTime
+     * Gets paddingBottom
      *
      * @return int|mixed
      */
-    public function getCreatedTime()
+    public function getPaddingBottom()
     {
-        return $this->container['createdTime'];
+        return $this->container['paddingBottom'];
     }
 
     /**
-     * Sets createdTime
+     * Sets paddingBottom
      *
-     * @param int|mixed $createdTime createdTime
+     * @param int|mixed $paddingBottom paddingBottom
      *
      * @return $this
      */
-    public function setCreatedTime($createdTime)
+    public function setPaddingBottom($paddingBottom)
     {
-        $this->container['createdTime'] = $createdTime;
+        $this->container['paddingBottom'] = $paddingBottom;
 
         return $this;
     }
 
     /**
-     * Gets lastModifiedTime
+     * Gets alignMode
      *
      * @return int|mixed
      */
-    public function getLastModifiedTime()
+    public function getAlignMode()
     {
-        return $this->container['lastModifiedTime'];
+        return $this->container['alignMode'];
     }
 
     /**
-     * Sets lastModifiedTime
+     * Sets alignMode
      *
-     * @param int|mixed $lastModifiedTime lastModifiedTime
+     * @param int|mixed $alignMode alignMode
      *
      * @return $this
      */
-    public function setLastModifiedTime($lastModifiedTime)
+    public function setAlignMode($alignMode)
     {
-        $this->container['lastModifiedTime'] = $lastModifiedTime;
+        $this->container['alignMode'] = $alignMode;
 
         return $this;
     }
 
     /**
-     * Gets channelPackageId
+     * Gets imageTextItem
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\ImageTextItemStruct[]|mixed
      */
-    public function getChannelPackageId()
+    public function getImageTextItem()
     {
-        return $this->container['channelPackageId'];
+        return $this->container['imageTextItem'];
     }
 
     /**
-     * Sets channelPackageId
+     * Sets imageTextItem
      *
-     * @param string|mixed $channelPackageId channelPackageId
+     * @param \TencentAds\Model\ImageTextItemStruct[]|mixed $imageTextItem imageTextItem
      *
      * @return $this
      */
-    public function setChannelPackageId($channelPackageId)
+    public function setImageTextItem($imageTextItem)
     {
-        $this->container['channelPackageId'] = $channelPackageId;
+        $this->container['imageTextItem'] = $imageTextItem;
 
         return $this;
     }

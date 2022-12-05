@@ -1,6 +1,6 @@
 <?php
 /**
- * ChannelPackageInfo
+ * WechatServiceSpec
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ChannelPackageInfo Class Doc Comment
+ * WechatServiceSpec Class Doc Comment
  *
  * @category Class
- * @description 广告渠道包任务处理信息
+ * @description 微信客服元素
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ChannelPackageInfo implements ModelInterface, ArrayAccess
+class WechatServiceSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'channel_package_info';
+    protected static $swaggerModelName = 'wechat_service_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,13 +58,7 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'androidAppId' => 'int',
-        'packageName' => 'string',
-        'status' => '\TencentAds\Model\ChannelTaskStatus',
-        'errorCode' => '\TencentAds\Model\ChannelTaskError',
-        'createdTime' => 'int',
-        'lastModifiedTime' => 'int',
-        'channelPackageId' => 'string'
+        'wechatServiceUrl' => 'string'
     ];
 
     /**
@@ -73,13 +67,7 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'androidAppId' => 'int64',
-        'packageName' => null,
-        'status' => null,
-        'errorCode' => null,
-        'createdTime' => 'int64',
-        'lastModifiedTime' => 'int64',
-        'channelPackageId' => null
+        'wechatServiceUrl' => null
     ];
 
     /**
@@ -109,13 +97,7 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'androidAppId' => 'android_app_id',
-        'packageName' => 'package_name',
-        'status' => 'status',
-        'errorCode' => 'error_code',
-        'createdTime' => 'created_time',
-        'lastModifiedTime' => 'last_modified_time',
-        'channelPackageId' => 'channel_package_id'
+        'wechatServiceUrl' => 'wechat_service_url'
     ];
 
     /**
@@ -124,13 +106,7 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'androidAppId' => 'setAndroidAppId',
-        'packageName' => 'setPackageName',
-        'status' => 'setStatus',
-        'errorCode' => 'setErrorCode',
-        'createdTime' => 'setCreatedTime',
-        'lastModifiedTime' => 'setLastModifiedTime',
-        'channelPackageId' => 'setChannelPackageId'
+        'wechatServiceUrl' => 'setWechatServiceUrl'
     ];
 
     /**
@@ -139,13 +115,7 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'androidAppId' => 'getAndroidAppId',
-        'packageName' => 'getPackageName',
-        'status' => 'getStatus',
-        'errorCode' => 'getErrorCode',
-        'createdTime' => 'getCreatedTime',
-        'lastModifiedTime' => 'getLastModifiedTime',
-        'channelPackageId' => 'getChannelPackageId'
+        'wechatServiceUrl' => 'getWechatServiceUrl'
     ];
 
     /**
@@ -208,13 +178,7 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['androidAppId'] = isset($data['androidAppId']) ? $data['androidAppId'] : null;
-        $this->container['packageName'] = isset($data['packageName']) ? $data['packageName'] : null;
-        $this->container['status'] = isset($data['status']) ? $data['status'] : null;
-        $this->container['errorCode'] = isset($data['errorCode']) ? $data['errorCode'] : null;
-        $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
-        $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
-        $this->container['channelPackageId'] = isset($data['channelPackageId']) ? $data['channelPackageId'] : null;
+        $this->container['wechatServiceUrl'] = isset($data['wechatServiceUrl']) ? $data['wechatServiceUrl'] : null;
     }
 
     /**
@@ -242,169 +206,25 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets androidAppId
-     *
-     * @return int|mixed
-     */
-    public function getAndroidAppId()
-    {
-        return $this->container['androidAppId'];
-    }
-
-    /**
-     * Sets androidAppId
-     *
-     * @param int|mixed $androidAppId androidAppId
-     *
-     * @return $this
-     */
-    public function setAndroidAppId($androidAppId)
-    {
-        $this->container['androidAppId'] = $androidAppId;
-
-        return $this;
-    }
-
-    /**
-     * Gets packageName
+     * Gets wechatServiceUrl
      *
      * @return string|mixed
      */
-    public function getPackageName()
+    public function getWechatServiceUrl()
     {
-        return $this->container['packageName'];
+        return $this->container['wechatServiceUrl'];
     }
 
     /**
-     * Sets packageName
+     * Sets wechatServiceUrl
      *
-     * @param string|mixed $packageName packageName
+     * @param string|mixed $wechatServiceUrl wechatServiceUrl
      *
      * @return $this
      */
-    public function setPackageName($packageName)
+    public function setWechatServiceUrl($wechatServiceUrl)
     {
-        $this->container['packageName'] = $packageName;
-
-        return $this;
-    }
-
-    /**
-     * Gets status
-     *
-     * @return \TencentAds\Model\ChannelTaskStatus|mixed
-     */
-    public function getStatus()
-    {
-        return $this->container['status'];
-    }
-
-    /**
-     * Sets status
-     *
-     * @param \TencentAds\Model\ChannelTaskStatus|mixed $status status
-     *
-     * @return $this
-     */
-    public function setStatus($status)
-    {
-        $this->container['status'] = $status;
-
-        return $this;
-    }
-
-    /**
-     * Gets errorCode
-     *
-     * @return \TencentAds\Model\ChannelTaskError|mixed
-     */
-    public function getErrorCode()
-    {
-        return $this->container['errorCode'];
-    }
-
-    /**
-     * Sets errorCode
-     *
-     * @param \TencentAds\Model\ChannelTaskError|mixed $errorCode errorCode
-     *
-     * @return $this
-     */
-    public function setErrorCode($errorCode)
-    {
-        $this->container['errorCode'] = $errorCode;
-
-        return $this;
-    }
-
-    /**
-     * Gets createdTime
-     *
-     * @return int|mixed
-     */
-    public function getCreatedTime()
-    {
-        return $this->container['createdTime'];
-    }
-
-    /**
-     * Sets createdTime
-     *
-     * @param int|mixed $createdTime createdTime
-     *
-     * @return $this
-     */
-    public function setCreatedTime($createdTime)
-    {
-        $this->container['createdTime'] = $createdTime;
-
-        return $this;
-    }
-
-    /**
-     * Gets lastModifiedTime
-     *
-     * @return int|mixed
-     */
-    public function getLastModifiedTime()
-    {
-        return $this->container['lastModifiedTime'];
-    }
-
-    /**
-     * Sets lastModifiedTime
-     *
-     * @param int|mixed $lastModifiedTime lastModifiedTime
-     *
-     * @return $this
-     */
-    public function setLastModifiedTime($lastModifiedTime)
-    {
-        $this->container['lastModifiedTime'] = $lastModifiedTime;
-
-        return $this;
-    }
-
-    /**
-     * Gets channelPackageId
-     *
-     * @return string|mixed
-     */
-    public function getChannelPackageId()
-    {
-        return $this->container['channelPackageId'];
-    }
-
-    /**
-     * Sets channelPackageId
-     *
-     * @param string|mixed $channelPackageId channelPackageId
-     *
-     * @return $this
-     */
-    public function setChannelPackageId($channelPackageId)
-    {
-        $this->container['channelPackageId'] = $channelPackageId;
+        $this->container['wechatServiceUrl'] = $wechatServiceUrl;
 
         return $this;
     }

@@ -69,7 +69,8 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
         'appDownloadSpec' => '\TencentAds\Model\CanvasAppDownloadSpecType',
         'weappSpec' => '\TencentAds\Model\WeappSpec',
         'ghSpec' => '\TencentAds\Model\GhSpec',
-        'enterpriseWxSpec' => '\TencentAds\Model\EnterpriseWxSpec'
+        'enterpriseWxSpec' => '\TencentAds\Model\EnterpriseWxSpec',
+        'imageTextSpec' => '\TencentAds\Model\ImageTextSpec'
     ];
 
     /**
@@ -89,7 +90,8 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
         'appDownloadSpec' => null,
         'weappSpec' => null,
         'ghSpec' => null,
-        'enterpriseWxSpec' => null
+        'enterpriseWxSpec' => null,
+        'imageTextSpec' => null
     ];
 
     /**
@@ -130,7 +132,8 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
         'appDownloadSpec' => 'app_download_spec',
         'weappSpec' => 'weapp_spec',
         'ghSpec' => 'gh_spec',
-        'enterpriseWxSpec' => 'enterprise_wx_spec'
+        'enterpriseWxSpec' => 'enterprise_wx_spec',
+        'imageTextSpec' => 'image_text_spec'
     ];
 
     /**
@@ -150,7 +153,8 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
         'appDownloadSpec' => 'setAppDownloadSpec',
         'weappSpec' => 'setWeappSpec',
         'ghSpec' => 'setGhSpec',
-        'enterpriseWxSpec' => 'setEnterpriseWxSpec'
+        'enterpriseWxSpec' => 'setEnterpriseWxSpec',
+        'imageTextSpec' => 'setImageTextSpec'
     ];
 
     /**
@@ -170,7 +174,8 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
         'appDownloadSpec' => 'getAppDownloadSpec',
         'weappSpec' => 'getWeappSpec',
         'ghSpec' => 'getGhSpec',
-        'enterpriseWxSpec' => 'getEnterpriseWxSpec'
+        'enterpriseWxSpec' => 'getEnterpriseWxSpec',
+        'imageTextSpec' => 'getImageTextSpec'
     ];
 
     /**
@@ -245,6 +250,7 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
         $this->container['weappSpec'] = isset($data['weappSpec']) ? $data['weappSpec'] : null;
         $this->container['ghSpec'] = isset($data['ghSpec']) ? $data['ghSpec'] : null;
         $this->container['enterpriseWxSpec'] = isset($data['enterpriseWxSpec']) ? $data['enterpriseWxSpec'] : null;
+        $this->container['imageTextSpec'] = isset($data['imageTextSpec']) ? $data['imageTextSpec'] : null;
     }
 
     /**
@@ -555,6 +561,30 @@ class PageElementsSpecListStruct implements ModelInterface, ArrayAccess
     public function setEnterpriseWxSpec($enterpriseWxSpec)
     {
         $this->container['enterpriseWxSpec'] = $enterpriseWxSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets imageTextSpec
+     *
+     * @return \TencentAds\Model\ImageTextSpec|mixed
+     */
+    public function getImageTextSpec()
+    {
+        return $this->container['imageTextSpec'];
+    }
+
+    /**
+     * Sets imageTextSpec
+     *
+     * @param \TencentAds\Model\ImageTextSpec|mixed $imageTextSpec imageTextSpec
+     *
+     * @return $this
+     */
+    public function setImageTextSpec($imageTextSpec)
+    {
+        $this->container['imageTextSpec'] = $imageTextSpec;
 
         return $this;
     }

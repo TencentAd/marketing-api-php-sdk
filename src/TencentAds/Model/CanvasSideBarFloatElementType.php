@@ -1,6 +1,6 @@
 <?php
 /**
- * CanvasGlobalElementType
+ * CanvasSideBarFloatElementType
  *
  * PHP version 5
  *
@@ -31,21 +31,22 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CanvasGlobalElementType Class Doc Comment
+ * CanvasSideBarFloatElementType Class Doc Comment
  *
  * @category Class
- * @description 全局组件类型
+ * @description 侧边悬浮组件转化类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CanvasGlobalElementType
+class CanvasSideBarFloatElementType
 {
     /**
      * Possible values of this enum
      */
-    const FLOAT_BUTTON = 'FLOAT_BUTTON';
-    const SIDE_BAR_FLOAT_BUTTON = 'SIDE_BAR_FLOAT_BUTTON';
+    const TEL = 'TEL';
+    const WX_SERVICE = 'WX_SERVICE';
+    const ENTERPRISE_WX = 'ENTERPRISE_WX';
     
     /**
      * Gets allowable values of the enum
@@ -54,8 +55,9 @@ class CanvasGlobalElementType
     public static function getAllowableEnumValues()
     {
         return [
-            self::FLOAT_BUTTON,
-            self::SIDE_BAR_FLOAT_BUTTON,
+            self::TEL,
+            self::WX_SERVICE,
+            self::ENTERPRISE_WX,
         ];
     }
 }

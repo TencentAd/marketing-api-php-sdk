@@ -55,6 +55,7 @@ class CanvasPageElementType
     const WEAPP = 'WEAPP';
     const GH = 'GH';
     const ENTERPRISE_WX = 'ENTERPRISE_WX';
+    const IMAGE_TEXT = 'IMAGE_TEXT';
     
     /**
      * Gets allowable values of the enum
@@ -74,6 +75,7 @@ class CanvasPageElementType
             self::WEAPP,
             self::GH,
             self::ENTERPRISE_WX,
+            self::IMAGE_TEXT,
         ];
     }
 }

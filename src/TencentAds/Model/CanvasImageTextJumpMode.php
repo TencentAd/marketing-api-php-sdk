@@ -1,6 +1,6 @@
 <?php
 /**
- * CanvasGlobalElementType
+ * CanvasImageTextJumpMode
  *
  * PHP version 5
  *
@@ -31,21 +31,21 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CanvasGlobalElementType Class Doc Comment
+ * CanvasImageTextJumpMode Class Doc Comment
  *
  * @category Class
- * @description 全局组件类型
+ * @description 图文复合组件跳转方式，默认为btn_jump
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CanvasGlobalElementType
+class CanvasImageTextJumpMode
 {
     /**
      * Possible values of this enum
      */
-    const FLOAT_BUTTON = 'FLOAT_BUTTON';
-    const SIDE_BAR_FLOAT_BUTTON = 'SIDE_BAR_FLOAT_BUTTON';
+    const BTN_JUMP = 'btn_jump';
+    const TOTAL_JUMP = 'total_jump';
     
     /**
      * Gets allowable values of the enum
@@ -54,8 +54,8 @@ class CanvasGlobalElementType
     public static function getAllowableEnumValues()
     {
         return [
-            self::FLOAT_BUTTON,
-            self::SIDE_BAR_FLOAT_BUTTON,
+            self::BTN_JUMP,
+            self::TOTAL_JUMP,
         ];
     }
 }

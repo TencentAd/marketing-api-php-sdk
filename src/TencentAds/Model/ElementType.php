@@ -57,6 +57,7 @@ class ElementType
     const ELEMENT_TYPE_FORM = 'ELEMENT_TYPE_FORM';
     const ELEMENT_TYPE_CONSULT = 'ELEMENT_TYPE_CONSULT';
     const ELEMENT_TYPE_NUMBER = 'ELEMENT_TYPE_NUMBER';
+    const ELEMENT_TYPE_LANDING_PAGE_STRUCT = 'ELEMENT_TYPE_LANDING_PAGE_STRUCT';
     const STRUCT = 'STRUCT';
     const TEXT = 'TEXT';
     const URL = 'URL';
@@ -94,6 +95,7 @@ class ElementType
             self::ELEMENT_TYPE_FORM,
             self::ELEMENT_TYPE_CONSULT,
             self::ELEMENT_TYPE_NUMBER,
+            self::ELEMENT_TYPE_LANDING_PAGE_STRUCT,
             self::STRUCT,
             self::TEXT,
             self::URL,

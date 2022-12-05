@@ -109,7 +109,8 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'wegameInfoSpec' => '\TencentAds\Model\WegameInfoSpec',
         'wechatChannelsSpec' => '\TencentAds\Model\AdCreativeWechatChannelsSpec',
         'finderObjectVisibility' => 'bool',
-        'imageListJumpInfo' => '\TencentAds\Model\LandingPageStructure[]'
+        'imageListJumpInfo' => '\TencentAds\Model\LandingPageStructure[]',
+        'buttonTextJumpInfo' => '\TencentAds\Model\LandingPageStructure'
     ];
 
     /**
@@ -169,7 +170,8 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'wegameInfoSpec' => null,
         'wechatChannelsSpec' => null,
         'finderObjectVisibility' => null,
-        'imageListJumpInfo' => null
+        'imageListJumpInfo' => null,
+        'buttonTextJumpInfo' => null
     ];
 
     /**
@@ -250,7 +252,8 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'wegameInfoSpec' => 'wegame_info_spec',
         'wechatChannelsSpec' => 'wechat_channels_spec',
         'finderObjectVisibility' => 'finder_object_visibility',
-        'imageListJumpInfo' => 'image_list_jump_info'
+        'imageListJumpInfo' => 'image_list_jump_info',
+        'buttonTextJumpInfo' => 'button_text_jump_info'
     ];
 
     /**
@@ -310,7 +313,8 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'wegameInfoSpec' => 'setWegameInfoSpec',
         'wechatChannelsSpec' => 'setWechatChannelsSpec',
         'finderObjectVisibility' => 'setFinderObjectVisibility',
-        'imageListJumpInfo' => 'setImageListJumpInfo'
+        'imageListJumpInfo' => 'setImageListJumpInfo',
+        'buttonTextJumpInfo' => 'setButtonTextJumpInfo'
     ];
 
     /**
@@ -370,7 +374,8 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'wegameInfoSpec' => 'getWegameInfoSpec',
         'wechatChannelsSpec' => 'getWechatChannelsSpec',
         'finderObjectVisibility' => 'getFinderObjectVisibility',
-        'imageListJumpInfo' => 'getImageListJumpInfo'
+        'imageListJumpInfo' => 'getImageListJumpInfo',
+        'buttonTextJumpInfo' => 'getButtonTextJumpInfo'
     ];
 
     /**
@@ -485,6 +490,7 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         $this->container['wechatChannelsSpec'] = isset($data['wechatChannelsSpec']) ? $data['wechatChannelsSpec'] : null;
         $this->container['finderObjectVisibility'] = isset($data['finderObjectVisibility']) ? $data['finderObjectVisibility'] : null;
         $this->container['imageListJumpInfo'] = isset($data['imageListJumpInfo']) ? $data['imageListJumpInfo'] : null;
+        $this->container['buttonTextJumpInfo'] = isset($data['buttonTextJumpInfo']) ? $data['buttonTextJumpInfo'] : null;
     }
 
     /**
@@ -1755,6 +1761,30 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
     public function setImageListJumpInfo($imageListJumpInfo)
     {
         $this->container['imageListJumpInfo'] = $imageListJumpInfo;
+
+        return $this;
+    }
+
+    /**
+     * Gets buttonTextJumpInfo
+     *
+     * @return \TencentAds\Model\LandingPageStructure|mixed
+     */
+    public function getButtonTextJumpInfo()
+    {
+        return $this->container['buttonTextJumpInfo'];
+    }
+
+    /**
+     * Sets buttonTextJumpInfo
+     *
+     * @param \TencentAds\Model\LandingPageStructure|mixed $buttonTextJumpInfo buttonTextJumpInfo
+     *
+     * @return $this
+     */
+    public function setButtonTextJumpInfo($buttonTextJumpInfo)
+    {
+        $this->container['buttonTextJumpInfo'] = $buttonTextJumpInfo;
 
         return $this;
     }

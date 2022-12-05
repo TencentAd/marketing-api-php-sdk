@@ -1,6 +1,6 @@
 <?php
 /**
- * ChannelPackageInfo
+ * SideBarFloatSpecSpec
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ChannelPackageInfo Class Doc Comment
+ * SideBarFloatSpecSpec Class Doc Comment
  *
  * @category Class
- * @description 广告渠道包任务处理信息
+ * @description 侧边悬浮组件元素
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ChannelPackageInfo implements ModelInterface, ArrayAccess
+class SideBarFloatSpecSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'channel_package_info';
+    protected static $swaggerModelName = 'side_bar_float_spec_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,13 +58,12 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'androidAppId' => 'int',
-        'packageName' => 'string',
-        'status' => '\TencentAds\Model\ChannelTaskStatus',
-        'errorCode' => '\TencentAds\Model\ChannelTaskError',
-        'createdTime' => 'int',
-        'lastModifiedTime' => 'int',
-        'channelPackageId' => 'string'
+        'wording' => 'string',
+        'titleColor' => 'string',
+        'elemType' => '\TencentAds\Model\CanvasSideBarFloatElementType',
+        'telSpec' => '\TencentAds\Model\SideBarFloatTelSpec',
+        'wechatServiceSpec' => '\TencentAds\Model\WechatServiceSpec',
+        'enterpriseWxSpec' => '\TencentAds\Model\EnterpriseWxSpec'
     ];
 
     /**
@@ -73,13 +72,12 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'androidAppId' => 'int64',
-        'packageName' => null,
-        'status' => null,
-        'errorCode' => null,
-        'createdTime' => 'int64',
-        'lastModifiedTime' => 'int64',
-        'channelPackageId' => null
+        'wording' => null,
+        'titleColor' => null,
+        'elemType' => null,
+        'telSpec' => null,
+        'wechatServiceSpec' => null,
+        'enterpriseWxSpec' => null
     ];
 
     /**
@@ -109,13 +107,12 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'androidAppId' => 'android_app_id',
-        'packageName' => 'package_name',
-        'status' => 'status',
-        'errorCode' => 'error_code',
-        'createdTime' => 'created_time',
-        'lastModifiedTime' => 'last_modified_time',
-        'channelPackageId' => 'channel_package_id'
+        'wording' => 'wording',
+        'titleColor' => 'title_color',
+        'elemType' => 'elem_type',
+        'telSpec' => 'tel_spec',
+        'wechatServiceSpec' => 'wechat_service_spec',
+        'enterpriseWxSpec' => 'enterprise_wx_spec'
     ];
 
     /**
@@ -124,13 +121,12 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'androidAppId' => 'setAndroidAppId',
-        'packageName' => 'setPackageName',
-        'status' => 'setStatus',
-        'errorCode' => 'setErrorCode',
-        'createdTime' => 'setCreatedTime',
-        'lastModifiedTime' => 'setLastModifiedTime',
-        'channelPackageId' => 'setChannelPackageId'
+        'wording' => 'setWording',
+        'titleColor' => 'setTitleColor',
+        'elemType' => 'setElemType',
+        'telSpec' => 'setTelSpec',
+        'wechatServiceSpec' => 'setWechatServiceSpec',
+        'enterpriseWxSpec' => 'setEnterpriseWxSpec'
     ];
 
     /**
@@ -139,13 +135,12 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'androidAppId' => 'getAndroidAppId',
-        'packageName' => 'getPackageName',
-        'status' => 'getStatus',
-        'errorCode' => 'getErrorCode',
-        'createdTime' => 'getCreatedTime',
-        'lastModifiedTime' => 'getLastModifiedTime',
-        'channelPackageId' => 'getChannelPackageId'
+        'wording' => 'getWording',
+        'titleColor' => 'getTitleColor',
+        'elemType' => 'getElemType',
+        'telSpec' => 'getTelSpec',
+        'wechatServiceSpec' => 'getWechatServiceSpec',
+        'enterpriseWxSpec' => 'getEnterpriseWxSpec'
     ];
 
     /**
@@ -208,13 +203,12 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['androidAppId'] = isset($data['androidAppId']) ? $data['androidAppId'] : null;
-        $this->container['packageName'] = isset($data['packageName']) ? $data['packageName'] : null;
-        $this->container['status'] = isset($data['status']) ? $data['status'] : null;
-        $this->container['errorCode'] = isset($data['errorCode']) ? $data['errorCode'] : null;
-        $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
-        $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
-        $this->container['channelPackageId'] = isset($data['channelPackageId']) ? $data['channelPackageId'] : null;
+        $this->container['wording'] = isset($data['wording']) ? $data['wording'] : null;
+        $this->container['titleColor'] = isset($data['titleColor']) ? $data['titleColor'] : null;
+        $this->container['elemType'] = isset($data['elemType']) ? $data['elemType'] : null;
+        $this->container['telSpec'] = isset($data['telSpec']) ? $data['telSpec'] : null;
+        $this->container['wechatServiceSpec'] = isset($data['wechatServiceSpec']) ? $data['wechatServiceSpec'] : null;
+        $this->container['enterpriseWxSpec'] = isset($data['enterpriseWxSpec']) ? $data['enterpriseWxSpec'] : null;
     }
 
     /**
@@ -242,169 +236,145 @@ class ChannelPackageInfo implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets androidAppId
-     *
-     * @return int|mixed
-     */
-    public function getAndroidAppId()
-    {
-        return $this->container['androidAppId'];
-    }
-
-    /**
-     * Sets androidAppId
-     *
-     * @param int|mixed $androidAppId androidAppId
-     *
-     * @return $this
-     */
-    public function setAndroidAppId($androidAppId)
-    {
-        $this->container['androidAppId'] = $androidAppId;
-
-        return $this;
-    }
-
-    /**
-     * Gets packageName
+     * Gets wording
      *
      * @return string|mixed
      */
-    public function getPackageName()
+    public function getWording()
     {
-        return $this->container['packageName'];
+        return $this->container['wording'];
     }
 
     /**
-     * Sets packageName
+     * Sets wording
      *
-     * @param string|mixed $packageName packageName
+     * @param string|mixed $wording wording
      *
      * @return $this
      */
-    public function setPackageName($packageName)
+    public function setWording($wording)
     {
-        $this->container['packageName'] = $packageName;
+        $this->container['wording'] = $wording;
 
         return $this;
     }
 
     /**
-     * Gets status
-     *
-     * @return \TencentAds\Model\ChannelTaskStatus|mixed
-     */
-    public function getStatus()
-    {
-        return $this->container['status'];
-    }
-
-    /**
-     * Sets status
-     *
-     * @param \TencentAds\Model\ChannelTaskStatus|mixed $status status
-     *
-     * @return $this
-     */
-    public function setStatus($status)
-    {
-        $this->container['status'] = $status;
-
-        return $this;
-    }
-
-    /**
-     * Gets errorCode
-     *
-     * @return \TencentAds\Model\ChannelTaskError|mixed
-     */
-    public function getErrorCode()
-    {
-        return $this->container['errorCode'];
-    }
-
-    /**
-     * Sets errorCode
-     *
-     * @param \TencentAds\Model\ChannelTaskError|mixed $errorCode errorCode
-     *
-     * @return $this
-     */
-    public function setErrorCode($errorCode)
-    {
-        $this->container['errorCode'] = $errorCode;
-
-        return $this;
-    }
-
-    /**
-     * Gets createdTime
-     *
-     * @return int|mixed
-     */
-    public function getCreatedTime()
-    {
-        return $this->container['createdTime'];
-    }
-
-    /**
-     * Sets createdTime
-     *
-     * @param int|mixed $createdTime createdTime
-     *
-     * @return $this
-     */
-    public function setCreatedTime($createdTime)
-    {
-        $this->container['createdTime'] = $createdTime;
-
-        return $this;
-    }
-
-    /**
-     * Gets lastModifiedTime
-     *
-     * @return int|mixed
-     */
-    public function getLastModifiedTime()
-    {
-        return $this->container['lastModifiedTime'];
-    }
-
-    /**
-     * Sets lastModifiedTime
-     *
-     * @param int|mixed $lastModifiedTime lastModifiedTime
-     *
-     * @return $this
-     */
-    public function setLastModifiedTime($lastModifiedTime)
-    {
-        $this->container['lastModifiedTime'] = $lastModifiedTime;
-
-        return $this;
-    }
-
-    /**
-     * Gets channelPackageId
+     * Gets titleColor
      *
      * @return string|mixed
      */
-    public function getChannelPackageId()
+    public function getTitleColor()
     {
-        return $this->container['channelPackageId'];
+        return $this->container['titleColor'];
     }
 
     /**
-     * Sets channelPackageId
+     * Sets titleColor
      *
-     * @param string|mixed $channelPackageId channelPackageId
+     * @param string|mixed $titleColor titleColor
      *
      * @return $this
      */
-    public function setChannelPackageId($channelPackageId)
+    public function setTitleColor($titleColor)
     {
-        $this->container['channelPackageId'] = $channelPackageId;
+        $this->container['titleColor'] = $titleColor;
+
+        return $this;
+    }
+
+    /**
+     * Gets elemType
+     *
+     * @return \TencentAds\Model\CanvasSideBarFloatElementType|mixed
+     */
+    public function getElemType()
+    {
+        return $this->container['elemType'];
+    }
+
+    /**
+     * Sets elemType
+     *
+     * @param \TencentAds\Model\CanvasSideBarFloatElementType|mixed $elemType elemType
+     *
+     * @return $this
+     */
+    public function setElemType($elemType)
+    {
+        $this->container['elemType'] = $elemType;
+
+        return $this;
+    }
+
+    /**
+     * Gets telSpec
+     *
+     * @return \TencentAds\Model\SideBarFloatTelSpec|mixed
+     */
+    public function getTelSpec()
+    {
+        return $this->container['telSpec'];
+    }
+
+    /**
+     * Sets telSpec
+     *
+     * @param \TencentAds\Model\SideBarFloatTelSpec|mixed $telSpec telSpec
+     *
+     * @return $this
+     */
+    public function setTelSpec($telSpec)
+    {
+        $this->container['telSpec'] = $telSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatServiceSpec
+     *
+     * @return \TencentAds\Model\WechatServiceSpec|mixed
+     */
+    public function getWechatServiceSpec()
+    {
+        return $this->container['wechatServiceSpec'];
+    }
+
+    /**
+     * Sets wechatServiceSpec
+     *
+     * @param \TencentAds\Model\WechatServiceSpec|mixed $wechatServiceSpec wechatServiceSpec
+     *
+     * @return $this
+     */
+    public function setWechatServiceSpec($wechatServiceSpec)
+    {
+        $this->container['wechatServiceSpec'] = $wechatServiceSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets enterpriseWxSpec
+     *
+     * @return \TencentAds\Model\EnterpriseWxSpec|mixed
+     */
+    public function getEnterpriseWxSpec()
+    {
+        return $this->container['enterpriseWxSpec'];
+    }
+
+    /**
+     * Sets enterpriseWxSpec
+     *
+     * @param \TencentAds\Model\EnterpriseWxSpec|mixed $enterpriseWxSpec enterpriseWxSpec
+     *
+     * @return $this
+     */
+    public function setEnterpriseWxSpec($enterpriseWxSpec)
+    {
+        $this->container['enterpriseWxSpec'] = $enterpriseWxSpec;
 
         return $this;
     }

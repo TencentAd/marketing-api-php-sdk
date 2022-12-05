@@ -670,6 +670,8 @@ class BidwordApi
     /**
      * Operation bidwordGet
      *
+     * 获取关键词
+     *
      * @param  \TencentAds\Model\BidwordGetRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
@@ -684,6 +686,8 @@ class BidwordApi
 
     /**
      * Operation bidwordGetWithHttpInfo
+     *
+     * 获取关键词
      *
      * @param  \TencentAds\Model\BidwordGetRequest|mixed $data (required)
      *
@@ -758,7 +762,7 @@ class BidwordApi
     /**
      * Operation bidwordGetAsync
      *
-     * 
+     * 获取关键词
      *
      * @param  \TencentAds\Model\BidwordGetRequest|mixed $data (required)
      *
@@ -778,7 +782,7 @@ class BidwordApi
     /**
      * Operation bidwordGetAsyncWithHttpInfo
      *
-     * 
+     * 获取关键词
      *
      * @param  \TencentAds\Model\BidwordGetRequest|mixed $data (required)
      *

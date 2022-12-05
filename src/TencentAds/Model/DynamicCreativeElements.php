@@ -124,7 +124,9 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'consultComponentOptions' => '\TencentAds\Model\ConsultComponentOption[]',
         'phoneComponentOptions' => '\TencentAds\Model\PhoneComponentOption[]',
         'formComponentOptions' => '\TencentAds\Model\FormComponentOption[]',
-        'imageListJumpInfo' => '\TencentAds\Model\LandingPageStructure[]'
+        'holidayLogoComponentOptions' => '\TencentAds\Model\HolidayLogoComponentOption[]',
+        'imageListJumpInfo' => '\TencentAds\Model\LandingPageStructure[]',
+        'excitationText' => 'string'
     ];
 
     /**
@@ -199,7 +201,9 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'consultComponentOptions' => null,
         'phoneComponentOptions' => null,
         'formComponentOptions' => null,
-        'imageListJumpInfo' => null
+        'holidayLogoComponentOptions' => null,
+        'imageListJumpInfo' => null,
+        'excitationText' => null
     ];
 
     /**
@@ -295,7 +299,9 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'consultComponentOptions' => 'consult_component_options',
         'phoneComponentOptions' => 'phone_component_options',
         'formComponentOptions' => 'form_component_options',
-        'imageListJumpInfo' => 'image_list_jump_info'
+        'holidayLogoComponentOptions' => 'holiday_logo_component_options',
+        'imageListJumpInfo' => 'image_list_jump_info',
+        'excitationText' => 'excitation_text'
     ];
 
     /**
@@ -370,7 +376,9 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'consultComponentOptions' => 'setConsultComponentOptions',
         'phoneComponentOptions' => 'setPhoneComponentOptions',
         'formComponentOptions' => 'setFormComponentOptions',
-        'imageListJumpInfo' => 'setImageListJumpInfo'
+        'holidayLogoComponentOptions' => 'setHolidayLogoComponentOptions',
+        'imageListJumpInfo' => 'setImageListJumpInfo',
+        'excitationText' => 'setExcitationText'
     ];
 
     /**
@@ -445,7 +453,9 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'consultComponentOptions' => 'getConsultComponentOptions',
         'phoneComponentOptions' => 'getPhoneComponentOptions',
         'formComponentOptions' => 'getFormComponentOptions',
-        'imageListJumpInfo' => 'getImageListJumpInfo'
+        'holidayLogoComponentOptions' => 'getHolidayLogoComponentOptions',
+        'imageListJumpInfo' => 'getImageListJumpInfo',
+        'excitationText' => 'getExcitationText'
     ];
 
     /**
@@ -574,7 +584,9 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         $this->container['consultComponentOptions'] = isset($data['consultComponentOptions']) ? $data['consultComponentOptions'] : null;
         $this->container['phoneComponentOptions'] = isset($data['phoneComponentOptions']) ? $data['phoneComponentOptions'] : null;
         $this->container['formComponentOptions'] = isset($data['formComponentOptions']) ? $data['formComponentOptions'] : null;
+        $this->container['holidayLogoComponentOptions'] = isset($data['holidayLogoComponentOptions']) ? $data['holidayLogoComponentOptions'] : null;
         $this->container['imageListJumpInfo'] = isset($data['imageListJumpInfo']) ? $data['imageListJumpInfo'] : null;
+        $this->container['excitationText'] = isset($data['excitationText']) ? $data['excitationText'] : null;
     }
 
     /**
@@ -2186,6 +2198,30 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets holidayLogoComponentOptions
+     *
+     * @return \TencentAds\Model\HolidayLogoComponentOption[]|mixed
+     */
+    public function getHolidayLogoComponentOptions()
+    {
+        return $this->container['holidayLogoComponentOptions'];
+    }
+
+    /**
+     * Sets holidayLogoComponentOptions
+     *
+     * @param \TencentAds\Model\HolidayLogoComponentOption[]|mixed $holidayLogoComponentOptions holidayLogoComponentOptions
+     *
+     * @return $this
+     */
+    public function setHolidayLogoComponentOptions($holidayLogoComponentOptions)
+    {
+        $this->container['holidayLogoComponentOptions'] = $holidayLogoComponentOptions;
+
+        return $this;
+    }
+
+    /**
      * Gets imageListJumpInfo
      *
      * @return \TencentAds\Model\LandingPageStructure[]|mixed
@@ -2205,6 +2241,30 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     public function setImageListJumpInfo($imageListJumpInfo)
     {
         $this->container['imageListJumpInfo'] = $imageListJumpInfo;
+
+        return $this;
+    }
+
+    /**
+     * Gets excitationText
+     *
+     * @return string|mixed
+     */
+    public function getExcitationText()
+    {
+        return $this->container['excitationText'];
+    }
+
+    /**
+     * Sets excitationText
+     *
+     * @param string|mixed $excitationText excitationText
+     *
+     * @return $this
+     */
+    public function setExcitationText($excitationText)
+    {
+        $this->container['excitationText'] = $excitationText;
 
         return $this;
     }

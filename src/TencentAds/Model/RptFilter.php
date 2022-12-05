@@ -58,7 +58,7 @@ class RptFilter implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'timeRange' => '\TencentAds\Model\TimeRange',
+        'timeRange' => '\TencentAds\Model\DateTimeRange',
         'reportOnly' => 'int',
         'timeDimension' => 'int',
         'timeLine' => 'int'
@@ -226,7 +226,7 @@ class RptFilter implements ModelInterface, ArrayAccess
     /**
      * Gets timeRange
      *
-     * @return \TencentAds\Model\TimeRange|mixed
+     * @return \TencentAds\Model\DateTimeRange|mixed
      */
     public function getTimeRange()
     {
@@ -236,7 +236,7 @@ class RptFilter implements ModelInterface, ArrayAccess
     /**
      * Sets timeRange
      *
-     * @param \TencentAds\Model\TimeRange|mixed $timeRange timeRange
+     * @param \TencentAds\Model\DateTimeRange|mixed $timeRange timeRange
      *
      * @return $this
      */

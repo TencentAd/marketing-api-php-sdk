@@ -97,6 +97,7 @@ class LinkUrlLinkNameType
     const DISCOUNT_618 = 'DISCOUNT_618';
     const GO_618_VENUE = 'GO_618_VENUE';
     const GET_618_WELFARE = 'GET_618_WELFARE';
+    const CHECK_IT_OUT = 'CHECK_IT_OUT';
     const WATCH_VIDEO = 'WATCH_VIDEO';
     const CONTACT_CUSTOMER_SERVICE = 'CONTACT_CUSTOMER_SERVICE';
     const CONTACT_BUSINESS = 'CONTACT_BUSINESS';
@@ -161,6 +162,7 @@ class LinkUrlLinkNameType
             self::DISCOUNT_618,
             self::GO_618_VENUE,
             self::GET_618_WELFARE,
+            self::CHECK_IT_OUT,
             self::WATCH_VIDEO,
             self::CONTACT_CUSTOMER_SERVICE,
             self::CONTACT_BUSINESS,

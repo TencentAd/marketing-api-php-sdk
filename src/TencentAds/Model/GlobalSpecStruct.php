@@ -59,7 +59,8 @@ class GlobalSpecStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'elementType' => '\TencentAds\Model\CanvasGlobalElementType',
-        'floatButtonSpec' => '\TencentAds\Model\CanvasFloatButtonSpecType'
+        'floatButtonSpec' => '\TencentAds\Model\CanvasFloatButtonSpecType',
+        'sideBarFloatSpec' => '\TencentAds\Model\SideBarFloatSpecSpec'
     ];
 
     /**
@@ -69,7 +70,8 @@ class GlobalSpecStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'elementType' => null,
-        'floatButtonSpec' => null
+        'floatButtonSpec' => null,
+        'sideBarFloatSpec' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class GlobalSpecStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'elementType' => 'element_type',
-        'floatButtonSpec' => 'float_button_spec'
+        'floatButtonSpec' => 'float_button_spec',
+        'sideBarFloatSpec' => 'side_bar_float_spec'
     ];
 
     /**
@@ -110,7 +113,8 @@ class GlobalSpecStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'elementType' => 'setElementType',
-        'floatButtonSpec' => 'setFloatButtonSpec'
+        'floatButtonSpec' => 'setFloatButtonSpec',
+        'sideBarFloatSpec' => 'setSideBarFloatSpec'
     ];
 
     /**
@@ -120,7 +124,8 @@ class GlobalSpecStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'elementType' => 'getElementType',
-        'floatButtonSpec' => 'getFloatButtonSpec'
+        'floatButtonSpec' => 'getFloatButtonSpec',
+        'sideBarFloatSpec' => 'getSideBarFloatSpec'
     ];
 
     /**
@@ -185,6 +190,7 @@ class GlobalSpecStruct implements ModelInterface, ArrayAccess
     {
         $this->container['elementType'] = isset($data['elementType']) ? $data['elementType'] : null;
         $this->container['floatButtonSpec'] = isset($data['floatButtonSpec']) ? $data['floatButtonSpec'] : null;
+        $this->container['sideBarFloatSpec'] = isset($data['sideBarFloatSpec']) ? $data['sideBarFloatSpec'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class GlobalSpecStruct implements ModelInterface, ArrayAccess
     public function setFloatButtonSpec($floatButtonSpec)
     {
         $this->container['floatButtonSpec'] = $floatButtonSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets sideBarFloatSpec
+     *
+     * @return \TencentAds\Model\SideBarFloatSpecSpec|mixed
+     */
+    public function getSideBarFloatSpec()
+    {
+        return $this->container['sideBarFloatSpec'];
+    }
+
+    /**
+     * Sets sideBarFloatSpec
+     *
+     * @param \TencentAds\Model\SideBarFloatSpecSpec|mixed $sideBarFloatSpec sideBarFloatSpec
+     *
+     * @return $this
+     */
+    public function setSideBarFloatSpec($sideBarFloatSpec)
+    {
+        $this->container['sideBarFloatSpec'] = $sideBarFloatSpec;
 
         return $this;
     }
