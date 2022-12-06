@@ -64,7 +64,8 @@ class BidwordRptGetRequest implements ModelInterface, ArrayAccess
         'page' => 'int',
         'pageSize' => 'int',
         'rptFilter' => '\TencentAds\Model\RptFilter',
-        'bizFilter' => '\TencentAds\Model\BizFilter'
+        'bizFilter' => '\TencentAds\Model\BizFilter',
+        'queryType' => 'int[]'
     ];
 
     /**
@@ -80,7 +81,8 @@ class BidwordRptGetRequest implements ModelInterface, ArrayAccess
         'page' => 'int64',
         'pageSize' => 'int64',
         'rptFilter' => null,
-        'bizFilter' => null
+        'bizFilter' => null,
+        'queryType' => 'int64'
     ];
 
     /**
@@ -117,7 +119,8 @@ class BidwordRptGetRequest implements ModelInterface, ArrayAccess
         'page' => 'page',
         'pageSize' => 'page_size',
         'rptFilter' => 'rpt_filter',
-        'bizFilter' => 'biz_filter'
+        'bizFilter' => 'biz_filter',
+        'queryType' => 'query_type'
     ];
 
     /**
@@ -133,7 +136,8 @@ class BidwordRptGetRequest implements ModelInterface, ArrayAccess
         'page' => 'setPage',
         'pageSize' => 'setPageSize',
         'rptFilter' => 'setRptFilter',
-        'bizFilter' => 'setBizFilter'
+        'bizFilter' => 'setBizFilter',
+        'queryType' => 'setQueryType'
     ];
 
     /**
@@ -149,7 +153,8 @@ class BidwordRptGetRequest implements ModelInterface, ArrayAccess
         'page' => 'getPage',
         'pageSize' => 'getPageSize',
         'rptFilter' => 'getRptFilter',
-        'bizFilter' => 'getBizFilter'
+        'bizFilter' => 'getBizFilter',
+        'queryType' => 'getQueryType'
     ];
 
     /**
@@ -220,6 +225,7 @@ class BidwordRptGetRequest implements ModelInterface, ArrayAccess
         $this->container['pageSize'] = isset($data['pageSize']) ? $data['pageSize'] : null;
         $this->container['rptFilter'] = isset($data['rptFilter']) ? $data['rptFilter'] : null;
         $this->container['bizFilter'] = isset($data['bizFilter']) ? $data['bizFilter'] : null;
+        $this->container['queryType'] = isset($data['queryType']) ? $data['queryType'] : null;
     }
 
     /**
@@ -434,6 +440,30 @@ class BidwordRptGetRequest implements ModelInterface, ArrayAccess
     public function setBizFilter($bizFilter)
     {
         $this->container['bizFilter'] = $bizFilter;
+
+        return $this;
+    }
+
+    /**
+     * Gets queryType
+     *
+     * @return int[]|mixed
+     */
+    public function getQueryType()
+    {
+        return $this->container['queryType'];
+    }
+
+    /**
+     * Sets queryType
+     *
+     * @param int[]|mixed $queryType queryType
+     *
+     * @return $this
+     */
+    public function setQueryType($queryType)
+    {
+        $this->container['queryType'] = $queryType;
 
         return $this;
     }

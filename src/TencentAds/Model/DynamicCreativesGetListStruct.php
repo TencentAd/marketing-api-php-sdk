@@ -93,7 +93,9 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'dynamicCreativeType' => '\TencentAds\Model\DynamicCreativeType',
         'headClickType' => '\TencentAds\Model\HeadClickType',
         'headClickSpec' => '\TencentAds\Model\HeadClickSpec',
-        'asyncJobStatus' => '\TencentAds\Model\DCAsyncJobStatus'
+        'asyncJobStatus' => '\TencentAds\Model\DCAsyncJobStatus',
+        'pageTrackUrl' => 'string',
+        'industryLabel' => 'string'
     ];
 
     /**
@@ -137,7 +139,9 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'dynamicCreativeType' => null,
         'headClickType' => null,
         'headClickSpec' => null,
-        'asyncJobStatus' => null
+        'asyncJobStatus' => null,
+        'pageTrackUrl' => null,
+        'industryLabel' => null
     ];
 
     /**
@@ -202,7 +206,9 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'dynamicCreativeType' => 'dynamic_creative_type',
         'headClickType' => 'head_click_type',
         'headClickSpec' => 'head_click_spec',
-        'asyncJobStatus' => 'async_job_status'
+        'asyncJobStatus' => 'async_job_status',
+        'pageTrackUrl' => 'page_track_url',
+        'industryLabel' => 'industry_label'
     ];
 
     /**
@@ -246,7 +252,9 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'dynamicCreativeType' => 'setDynamicCreativeType',
         'headClickType' => 'setHeadClickType',
         'headClickSpec' => 'setHeadClickSpec',
-        'asyncJobStatus' => 'setAsyncJobStatus'
+        'asyncJobStatus' => 'setAsyncJobStatus',
+        'pageTrackUrl' => 'setPageTrackUrl',
+        'industryLabel' => 'setIndustryLabel'
     ];
 
     /**
@@ -290,7 +298,9 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'dynamicCreativeType' => 'getDynamicCreativeType',
         'headClickType' => 'getHeadClickType',
         'headClickSpec' => 'getHeadClickSpec',
-        'asyncJobStatus' => 'getAsyncJobStatus'
+        'asyncJobStatus' => 'getAsyncJobStatus',
+        'pageTrackUrl' => 'getPageTrackUrl',
+        'industryLabel' => 'getIndustryLabel'
     ];
 
     /**
@@ -389,6 +399,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['headClickType'] = isset($data['headClickType']) ? $data['headClickType'] : null;
         $this->container['headClickSpec'] = isset($data['headClickSpec']) ? $data['headClickSpec'] : null;
         $this->container['asyncJobStatus'] = isset($data['asyncJobStatus']) ? $data['asyncJobStatus'] : null;
+        $this->container['pageTrackUrl'] = isset($data['pageTrackUrl']) ? $data['pageTrackUrl'] : null;
+        $this->container['industryLabel'] = isset($data['industryLabel']) ? $data['industryLabel'] : null;
     }
 
     /**
@@ -1275,6 +1287,54 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setAsyncJobStatus($asyncJobStatus)
     {
         $this->container['asyncJobStatus'] = $asyncJobStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageTrackUrl
+     *
+     * @return string|mixed
+     */
+    public function getPageTrackUrl()
+    {
+        return $this->container['pageTrackUrl'];
+    }
+
+    /**
+     * Sets pageTrackUrl
+     *
+     * @param string|mixed $pageTrackUrl pageTrackUrl
+     *
+     * @return $this
+     */
+    public function setPageTrackUrl($pageTrackUrl)
+    {
+        $this->container['pageTrackUrl'] = $pageTrackUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets industryLabel
+     *
+     * @return string|mixed
+     */
+    public function getIndustryLabel()
+    {
+        return $this->container['industryLabel'];
+    }
+
+    /**
+     * Sets industryLabel
+     *
+     * @param string|mixed $industryLabel industryLabel
+     *
+     * @return $this
+     */
+    public function setIndustryLabel($industryLabel)
+    {
+        $this->container['industryLabel'] = $industryLabel;
 
         return $this;
     }

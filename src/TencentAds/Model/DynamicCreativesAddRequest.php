@@ -102,6 +102,8 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'headClickType' => '\TencentAds\Model\HeadClickType',
         'headClickSpec' => '\TencentAds\Model\HeadClickSpec',
         'campaignId' => 'int',
+        'pageTrackUrl' => 'string',
+        'industryLabel' => 'string',
         'accountId' => 'int'
     ];
 
@@ -156,6 +158,8 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'headClickType' => null,
         'headClickSpec' => null,
         'campaignId' => 'int64',
+        'pageTrackUrl' => null,
+        'industryLabel' => null,
         'accountId' => 'int64'
     ];
 
@@ -231,6 +235,8 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'headClickType' => 'head_click_type',
         'headClickSpec' => 'head_click_spec',
         'campaignId' => 'campaign_id',
+        'pageTrackUrl' => 'page_track_url',
+        'industryLabel' => 'industry_label',
         'accountId' => 'account_id'
     ];
 
@@ -285,6 +291,8 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'headClickType' => 'setHeadClickType',
         'headClickSpec' => 'setHeadClickSpec',
         'campaignId' => 'setCampaignId',
+        'pageTrackUrl' => 'setPageTrackUrl',
+        'industryLabel' => 'setIndustryLabel',
         'accountId' => 'setAccountId'
     ];
 
@@ -339,6 +347,8 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'headClickType' => 'getHeadClickType',
         'headClickSpec' => 'getHeadClickSpec',
         'campaignId' => 'getCampaignId',
+        'pageTrackUrl' => 'getPageTrackUrl',
+        'industryLabel' => 'getIndustryLabel',
         'accountId' => 'getAccountId'
     ];
 
@@ -447,6 +457,8 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         $this->container['headClickType'] = isset($data['headClickType']) ? $data['headClickType'] : null;
         $this->container['headClickSpec'] = isset($data['headClickSpec']) ? $data['headClickSpec'] : null;
         $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
+        $this->container['pageTrackUrl'] = isset($data['pageTrackUrl']) ? $data['pageTrackUrl'] : null;
+        $this->container['industryLabel'] = isset($data['industryLabel']) ? $data['industryLabel'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1550,6 +1562,54 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     public function setCampaignId($campaignId)
     {
         $this->container['campaignId'] = $campaignId;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageTrackUrl
+     *
+     * @return string|mixed
+     */
+    public function getPageTrackUrl()
+    {
+        return $this->container['pageTrackUrl'];
+    }
+
+    /**
+     * Sets pageTrackUrl
+     *
+     * @param string|mixed $pageTrackUrl pageTrackUrl
+     *
+     * @return $this
+     */
+    public function setPageTrackUrl($pageTrackUrl)
+    {
+        $this->container['pageTrackUrl'] = $pageTrackUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets industryLabel
+     *
+     * @return string|mixed
+     */
+    public function getIndustryLabel()
+    {
+        return $this->container['industryLabel'];
+    }
+
+    /**
+     * Sets industryLabel
+     *
+     * @param string|mixed $industryLabel industryLabel
+     *
+     * @return $this
+     */
+    public function setIndustryLabel($industryLabel)
+    {
+        $this->container['industryLabel'] = $industryLabel;
 
         return $this;
     }

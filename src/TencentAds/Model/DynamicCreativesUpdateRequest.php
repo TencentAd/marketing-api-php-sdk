@@ -94,6 +94,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'headClickType' => '\TencentAds\Model\HeadClickType',
         'headClickSpec' => '\TencentAds\Model\HeadClickSpec',
         'campaignId' => 'int',
+        'industryLabel' => 'string',
         'accountId' => 'int'
     ];
 
@@ -140,6 +141,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'headClickType' => null,
         'headClickSpec' => null,
         'campaignId' => 'int64',
+        'industryLabel' => null,
         'accountId' => 'int64'
     ];
 
@@ -207,6 +209,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'headClickType' => 'head_click_type',
         'headClickSpec' => 'head_click_spec',
         'campaignId' => 'campaign_id',
+        'industryLabel' => 'industry_label',
         'accountId' => 'account_id'
     ];
 
@@ -253,6 +256,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'headClickType' => 'setHeadClickType',
         'headClickSpec' => 'setHeadClickSpec',
         'campaignId' => 'setCampaignId',
+        'industryLabel' => 'setIndustryLabel',
         'accountId' => 'setAccountId'
     ];
 
@@ -299,6 +303,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'headClickType' => 'getHeadClickType',
         'headClickSpec' => 'getHeadClickSpec',
         'campaignId' => 'getCampaignId',
+        'industryLabel' => 'getIndustryLabel',
         'accountId' => 'getAccountId'
     ];
 
@@ -399,6 +404,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['headClickType'] = isset($data['headClickType']) ? $data['headClickType'] : null;
         $this->container['headClickSpec'] = isset($data['headClickSpec']) ? $data['headClickSpec'] : null;
         $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
+        $this->container['industryLabel'] = isset($data['industryLabel']) ? $data['industryLabel'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1310,6 +1316,30 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setCampaignId($campaignId)
     {
         $this->container['campaignId'] = $campaignId;
+
+        return $this;
+    }
+
+    /**
+     * Gets industryLabel
+     *
+     * @return string|mixed
+     */
+    public function getIndustryLabel()
+    {
+        return $this->container['industryLabel'];
+    }
+
+    /**
+     * Sets industryLabel
+     *
+     * @param string|mixed $industryLabel industryLabel
+     *
+     * @return $this
+     */
+    public function setIndustryLabel($industryLabel)
+    {
+        $this->container['industryLabel'] = $industryLabel;
 
         return $this;
     }
