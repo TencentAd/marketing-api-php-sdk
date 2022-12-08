@@ -109,6 +109,9 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'wegameInfoSpec' => '\TencentAds\Model\WegameInfoSpec',
         'wechatChannelsSpec' => '\TencentAds\Model\AdCreativeWechatChannelsSpec',
         'finderObjectVisibility' => 'bool',
+        'actionButtonComponentOptions' => '\TencentAds\Model\ActionButtonComponentOption[]',
+        'chosenButtonComponentOptions' => '\TencentAds\Model\ChosenButtonComponentOption[]',
+        'video2ComponentOptions' => '\TencentAds\Model\VideoComponentOption[]',
         'imageListJumpInfo' => '\TencentAds\Model\LandingPageStructure[]'
     ];
 
@@ -169,6 +172,9 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'wegameInfoSpec' => null,
         'wechatChannelsSpec' => null,
         'finderObjectVisibility' => null,
+        'actionButtonComponentOptions' => null,
+        'chosenButtonComponentOptions' => null,
+        'video2ComponentOptions' => null,
         'imageListJumpInfo' => null
     ];
 
@@ -250,6 +256,9 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'wegameInfoSpec' => 'wegame_info_spec',
         'wechatChannelsSpec' => 'wechat_channels_spec',
         'finderObjectVisibility' => 'finder_object_visibility',
+        'actionButtonComponentOptions' => 'action_button_component_options',
+        'chosenButtonComponentOptions' => 'chosen_button_component_options',
+        'video2ComponentOptions' => 'video2_component_options',
         'imageListJumpInfo' => 'image_list_jump_info'
     ];
 
@@ -310,6 +319,9 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'wegameInfoSpec' => 'setWegameInfoSpec',
         'wechatChannelsSpec' => 'setWechatChannelsSpec',
         'finderObjectVisibility' => 'setFinderObjectVisibility',
+        'actionButtonComponentOptions' => 'setActionButtonComponentOptions',
+        'chosenButtonComponentOptions' => 'setChosenButtonComponentOptions',
+        'video2ComponentOptions' => 'setVideo2ComponentOptions',
         'imageListJumpInfo' => 'setImageListJumpInfo'
     ];
 
@@ -370,6 +382,9 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'wegameInfoSpec' => 'getWegameInfoSpec',
         'wechatChannelsSpec' => 'getWechatChannelsSpec',
         'finderObjectVisibility' => 'getFinderObjectVisibility',
+        'actionButtonComponentOptions' => 'getActionButtonComponentOptions',
+        'chosenButtonComponentOptions' => 'getChosenButtonComponentOptions',
+        'video2ComponentOptions' => 'getVideo2ComponentOptions',
         'imageListJumpInfo' => 'getImageListJumpInfo'
     ];
 
@@ -484,6 +499,9 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         $this->container['wegameInfoSpec'] = isset($data['wegameInfoSpec']) ? $data['wegameInfoSpec'] : null;
         $this->container['wechatChannelsSpec'] = isset($data['wechatChannelsSpec']) ? $data['wechatChannelsSpec'] : null;
         $this->container['finderObjectVisibility'] = isset($data['finderObjectVisibility']) ? $data['finderObjectVisibility'] : null;
+        $this->container['actionButtonComponentOptions'] = isset($data['actionButtonComponentOptions']) ? $data['actionButtonComponentOptions'] : null;
+        $this->container['chosenButtonComponentOptions'] = isset($data['chosenButtonComponentOptions']) ? $data['chosenButtonComponentOptions'] : null;
+        $this->container['video2ComponentOptions'] = isset($data['video2ComponentOptions']) ? $data['video2ComponentOptions'] : null;
         $this->container['imageListJumpInfo'] = isset($data['imageListJumpInfo']) ? $data['imageListJumpInfo'] : null;
     }
 
@@ -1731,6 +1749,78 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     public function setFinderObjectVisibility($finderObjectVisibility)
     {
         $this->container['finderObjectVisibility'] = $finderObjectVisibility;
+
+        return $this;
+    }
+
+    /**
+     * Gets actionButtonComponentOptions
+     *
+     * @return \TencentAds\Model\ActionButtonComponentOption[]|mixed
+     */
+    public function getActionButtonComponentOptions()
+    {
+        return $this->container['actionButtonComponentOptions'];
+    }
+
+    /**
+     * Sets actionButtonComponentOptions
+     *
+     * @param \TencentAds\Model\ActionButtonComponentOption[]|mixed $actionButtonComponentOptions actionButtonComponentOptions
+     *
+     * @return $this
+     */
+    public function setActionButtonComponentOptions($actionButtonComponentOptions)
+    {
+        $this->container['actionButtonComponentOptions'] = $actionButtonComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets chosenButtonComponentOptions
+     *
+     * @return \TencentAds\Model\ChosenButtonComponentOption[]|mixed
+     */
+    public function getChosenButtonComponentOptions()
+    {
+        return $this->container['chosenButtonComponentOptions'];
+    }
+
+    /**
+     * Sets chosenButtonComponentOptions
+     *
+     * @param \TencentAds\Model\ChosenButtonComponentOption[]|mixed $chosenButtonComponentOptions chosenButtonComponentOptions
+     *
+     * @return $this
+     */
+    public function setChosenButtonComponentOptions($chosenButtonComponentOptions)
+    {
+        $this->container['chosenButtonComponentOptions'] = $chosenButtonComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets video2ComponentOptions
+     *
+     * @return \TencentAds\Model\VideoComponentOption[]|mixed
+     */
+    public function getVideo2ComponentOptions()
+    {
+        return $this->container['video2ComponentOptions'];
+    }
+
+    /**
+     * Sets video2ComponentOptions
+     *
+     * @param \TencentAds\Model\VideoComponentOption[]|mixed $video2ComponentOptions video2ComponentOptions
+     *
+     * @return $this
+     */
+    public function setVideo2ComponentOptions($video2ComponentOptions)
+    {
+        $this->container['video2ComponentOptions'] = $video2ComponentOptions;
 
         return $this;
     }

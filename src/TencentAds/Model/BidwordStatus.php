@@ -50,6 +50,8 @@ class BidwordStatus
     const BID_PRICE_LOWER = 'BIDWORD_STATUS_BID_PRICE_LOWER';
     const BID_PRICE_PARTIALLY_LOWER = 'BIDWORD_STATUS_BID_PRICE_PARTIALLY_LOWER';
     const NORMAL = 'BIDWORD_STATUS_NORMAL';
+    const DISPLAY_LIMITED = 'BIDWORD_STATUS_DISPLAY_LIMITED';
+    const NORMAL_BUT_NOT_FILL = 'BIDWORD_STATUS_NORMAL_BUT_NOT_FILL';
     
     /**
      * Gets allowable values of the enum
@@ -64,6 +66,8 @@ class BidwordStatus
             self::BID_PRICE_LOWER,
             self::BID_PRICE_PARTIALLY_LOWER,
             self::NORMAL,
+            self::DISPLAY_LIMITED,
+            self::NORMAL_BUT_NOT_FILL,
         ];
     }
 }

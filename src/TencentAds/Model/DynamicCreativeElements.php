@@ -125,6 +125,9 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'phoneComponentOptions' => '\TencentAds\Model\PhoneComponentOption[]',
         'formComponentOptions' => '\TencentAds\Model\FormComponentOption[]',
         'holidayLogoComponentOptions' => '\TencentAds\Model\HolidayLogoComponentOption[]',
+        'actionButtonComponentOptions' => '\TencentAds\Model\ActionButtonComponentOption[]',
+        'chosenButtonComponentOptions' => '\TencentAds\Model\ChosenButtonComponentOption[]',
+        'video2ComponentOptions' => '\TencentAds\Model\VideoComponentOption[]',
         'imageListJumpInfo' => '\TencentAds\Model\LandingPageStructure[]',
         'excitationText' => 'string'
     ];
@@ -202,6 +205,9 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'phoneComponentOptions' => null,
         'formComponentOptions' => null,
         'holidayLogoComponentOptions' => null,
+        'actionButtonComponentOptions' => null,
+        'chosenButtonComponentOptions' => null,
+        'video2ComponentOptions' => null,
         'imageListJumpInfo' => null,
         'excitationText' => null
     ];
@@ -300,6 +306,9 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'phoneComponentOptions' => 'phone_component_options',
         'formComponentOptions' => 'form_component_options',
         'holidayLogoComponentOptions' => 'holiday_logo_component_options',
+        'actionButtonComponentOptions' => 'action_button_component_options',
+        'chosenButtonComponentOptions' => 'chosen_button_component_options',
+        'video2ComponentOptions' => 'video2_component_options',
         'imageListJumpInfo' => 'image_list_jump_info',
         'excitationText' => 'excitation_text'
     ];
@@ -377,6 +386,9 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'phoneComponentOptions' => 'setPhoneComponentOptions',
         'formComponentOptions' => 'setFormComponentOptions',
         'holidayLogoComponentOptions' => 'setHolidayLogoComponentOptions',
+        'actionButtonComponentOptions' => 'setActionButtonComponentOptions',
+        'chosenButtonComponentOptions' => 'setChosenButtonComponentOptions',
+        'video2ComponentOptions' => 'setVideo2ComponentOptions',
         'imageListJumpInfo' => 'setImageListJumpInfo',
         'excitationText' => 'setExcitationText'
     ];
@@ -454,6 +466,9 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'phoneComponentOptions' => 'getPhoneComponentOptions',
         'formComponentOptions' => 'getFormComponentOptions',
         'holidayLogoComponentOptions' => 'getHolidayLogoComponentOptions',
+        'actionButtonComponentOptions' => 'getActionButtonComponentOptions',
+        'chosenButtonComponentOptions' => 'getChosenButtonComponentOptions',
+        'video2ComponentOptions' => 'getVideo2ComponentOptions',
         'imageListJumpInfo' => 'getImageListJumpInfo',
         'excitationText' => 'getExcitationText'
     ];
@@ -585,6 +600,9 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         $this->container['phoneComponentOptions'] = isset($data['phoneComponentOptions']) ? $data['phoneComponentOptions'] : null;
         $this->container['formComponentOptions'] = isset($data['formComponentOptions']) ? $data['formComponentOptions'] : null;
         $this->container['holidayLogoComponentOptions'] = isset($data['holidayLogoComponentOptions']) ? $data['holidayLogoComponentOptions'] : null;
+        $this->container['actionButtonComponentOptions'] = isset($data['actionButtonComponentOptions']) ? $data['actionButtonComponentOptions'] : null;
+        $this->container['chosenButtonComponentOptions'] = isset($data['chosenButtonComponentOptions']) ? $data['chosenButtonComponentOptions'] : null;
+        $this->container['video2ComponentOptions'] = isset($data['video2ComponentOptions']) ? $data['video2ComponentOptions'] : null;
         $this->container['imageListJumpInfo'] = isset($data['imageListJumpInfo']) ? $data['imageListJumpInfo'] : null;
         $this->container['excitationText'] = isset($data['excitationText']) ? $data['excitationText'] : null;
     }
@@ -2217,6 +2235,78 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     public function setHolidayLogoComponentOptions($holidayLogoComponentOptions)
     {
         $this->container['holidayLogoComponentOptions'] = $holidayLogoComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets actionButtonComponentOptions
+     *
+     * @return \TencentAds\Model\ActionButtonComponentOption[]|mixed
+     */
+    public function getActionButtonComponentOptions()
+    {
+        return $this->container['actionButtonComponentOptions'];
+    }
+
+    /**
+     * Sets actionButtonComponentOptions
+     *
+     * @param \TencentAds\Model\ActionButtonComponentOption[]|mixed $actionButtonComponentOptions actionButtonComponentOptions
+     *
+     * @return $this
+     */
+    public function setActionButtonComponentOptions($actionButtonComponentOptions)
+    {
+        $this->container['actionButtonComponentOptions'] = $actionButtonComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets chosenButtonComponentOptions
+     *
+     * @return \TencentAds\Model\ChosenButtonComponentOption[]|mixed
+     */
+    public function getChosenButtonComponentOptions()
+    {
+        return $this->container['chosenButtonComponentOptions'];
+    }
+
+    /**
+     * Sets chosenButtonComponentOptions
+     *
+     * @param \TencentAds\Model\ChosenButtonComponentOption[]|mixed $chosenButtonComponentOptions chosenButtonComponentOptions
+     *
+     * @return $this
+     */
+    public function setChosenButtonComponentOptions($chosenButtonComponentOptions)
+    {
+        $this->container['chosenButtonComponentOptions'] = $chosenButtonComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets video2ComponentOptions
+     *
+     * @return \TencentAds\Model\VideoComponentOption[]|mixed
+     */
+    public function getVideo2ComponentOptions()
+    {
+        return $this->container['video2ComponentOptions'];
+    }
+
+    /**
+     * Sets video2ComponentOptions
+     *
+     * @param \TencentAds\Model\VideoComponentOption[]|mixed $video2ComponentOptions video2ComponentOptions
+     *
+     * @return $this
+     */
+    public function setVideo2ComponentOptions($video2ComponentOptions)
+    {
+        $this->container['video2ComponentOptions'] = $video2ComponentOptions;
 
         return $this;
     }

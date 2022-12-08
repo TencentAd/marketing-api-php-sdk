@@ -64,7 +64,8 @@ class SplitChannelPackageData implements ModelInterface, ArrayAccess
         'channelId' => 'string',
         'systemStatus' => '\TencentAds\Model\UnionPackageSysStatus',
         'createdTime' => 'int',
-        'lastModifiedTime' => 'int'
+        'lastModifiedTime' => 'int',
+        'customizedChannelId' => 'string'
     ];
 
     /**
@@ -79,7 +80,8 @@ class SplitChannelPackageData implements ModelInterface, ArrayAccess
         'channelId' => null,
         'systemStatus' => null,
         'createdTime' => 'int64',
-        'lastModifiedTime' => 'int64'
+        'lastModifiedTime' => 'int64',
+        'customizedChannelId' => null
     ];
 
     /**
@@ -115,7 +117,8 @@ class SplitChannelPackageData implements ModelInterface, ArrayAccess
         'channelId' => 'channel_id',
         'systemStatus' => 'system_status',
         'createdTime' => 'created_time',
-        'lastModifiedTime' => 'last_modified_time'
+        'lastModifiedTime' => 'last_modified_time',
+        'customizedChannelId' => 'customized_channel_id'
     ];
 
     /**
@@ -130,7 +133,8 @@ class SplitChannelPackageData implements ModelInterface, ArrayAccess
         'channelId' => 'setChannelId',
         'systemStatus' => 'setSystemStatus',
         'createdTime' => 'setCreatedTime',
-        'lastModifiedTime' => 'setLastModifiedTime'
+        'lastModifiedTime' => 'setLastModifiedTime',
+        'customizedChannelId' => 'setCustomizedChannelId'
     ];
 
     /**
@@ -145,7 +149,8 @@ class SplitChannelPackageData implements ModelInterface, ArrayAccess
         'channelId' => 'getChannelId',
         'systemStatus' => 'getSystemStatus',
         'createdTime' => 'getCreatedTime',
-        'lastModifiedTime' => 'getLastModifiedTime'
+        'lastModifiedTime' => 'getLastModifiedTime',
+        'customizedChannelId' => 'getCustomizedChannelId'
     ];
 
     /**
@@ -215,6 +220,7 @@ class SplitChannelPackageData implements ModelInterface, ArrayAccess
         $this->container['systemStatus'] = isset($data['systemStatus']) ? $data['systemStatus'] : null;
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
+        $this->container['customizedChannelId'] = isset($data['customizedChannelId']) ? $data['customizedChannelId'] : null;
     }
 
     /**
@@ -405,6 +411,30 @@ class SplitChannelPackageData implements ModelInterface, ArrayAccess
     public function setLastModifiedTime($lastModifiedTime)
     {
         $this->container['lastModifiedTime'] = $lastModifiedTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets customizedChannelId
+     *
+     * @return string|mixed
+     */
+    public function getCustomizedChannelId()
+    {
+        return $this->container['customizedChannelId'];
+    }
+
+    /**
+     * Sets customizedChannelId
+     *
+     * @param string|mixed $customizedChannelId customizedChannelId
+     *
+     * @return $this
+     */
+    public function setCustomizedChannelId($customizedChannelId)
+    {
+        $this->container['customizedChannelId'] = $customizedChannelId;
 
         return $this;
     }

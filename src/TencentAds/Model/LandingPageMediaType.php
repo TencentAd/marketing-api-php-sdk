@@ -48,6 +48,8 @@ class LandingPageMediaType
     const ALL = 'ALL';
     const SCREEN_PC = 'SCREEN_PC';
     const SCREEN_PHONE = 'SCREEN_PHONE';
+    const OS_ANDROID = 'OS_ANDROID';
+    const OS_IOS = 'OS_IOS';
     
     /**
      * Gets allowable values of the enum
@@ -60,6 +62,8 @@ class LandingPageMediaType
             self::ALL,
             self::SCREEN_PC,
             self::SCREEN_PHONE,
+            self::OS_ANDROID,
+            self::OS_IOS,
         ];
     }
 }

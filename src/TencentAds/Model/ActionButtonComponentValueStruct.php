@@ -1,6 +1,6 @@
 <?php
 /**
- * CreateSplitChannelStruct
+ * ActionButtonComponentValueStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CreateSplitChannelStruct Class Doc Comment
+ * ActionButtonComponentValueStruct Class Doc Comment
  *
  * @category Class
- * @description 渠道号信息
+ * @description 行动按钮结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
+class ActionButtonComponentValueStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'create_split_channel_struct';
+    protected static $swaggerModelName = 'action_button_component_value_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,8 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'channelId' => 'string',
-        'channelName' => 'string',
-        'customizedChannelId' => 'string'
+        'buttonText' => 'string',
+        'jumpInfo' => '\TencentAds\Model\LandingPageStructure[]'
     ];
 
     /**
@@ -69,9 +68,8 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'channelId' => null,
-        'channelName' => null,
-        'customizedChannelId' => null
+        'buttonText' => null,
+        'jumpInfo' => null
     ];
 
     /**
@@ -101,9 +99,8 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'channelId' => 'channel_id',
-        'channelName' => 'channel_name',
-        'customizedChannelId' => 'customized_channel_id'
+        'buttonText' => 'button_text',
+        'jumpInfo' => 'jump_info'
     ];
 
     /**
@@ -112,9 +109,8 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'channelId' => 'setChannelId',
-        'channelName' => 'setChannelName',
-        'customizedChannelId' => 'setCustomizedChannelId'
+        'buttonText' => 'setButtonText',
+        'jumpInfo' => 'setJumpInfo'
     ];
 
     /**
@@ -123,9 +119,8 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'channelId' => 'getChannelId',
-        'channelName' => 'getChannelName',
-        'customizedChannelId' => 'getCustomizedChannelId'
+        'buttonText' => 'getButtonText',
+        'jumpInfo' => 'getJumpInfo'
     ];
 
     /**
@@ -188,9 +183,8 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['channelId'] = isset($data['channelId']) ? $data['channelId'] : null;
-        $this->container['channelName'] = isset($data['channelName']) ? $data['channelName'] : null;
-        $this->container['customizedChannelId'] = isset($data['customizedChannelId']) ? $data['customizedChannelId'] : null;
+        $this->container['buttonText'] = isset($data['buttonText']) ? $data['buttonText'] : null;
+        $this->container['jumpInfo'] = isset($data['jumpInfo']) ? $data['jumpInfo'] : null;
     }
 
     /**
@@ -218,73 +212,49 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets channelId
+     * Gets buttonText
      *
      * @return string|mixed
      */
-    public function getChannelId()
+    public function getButtonText()
     {
-        return $this->container['channelId'];
+        return $this->container['buttonText'];
     }
 
     /**
-     * Sets channelId
+     * Sets buttonText
      *
-     * @param string|mixed $channelId channelId
+     * @param string|mixed $buttonText buttonText
      *
      * @return $this
      */
-    public function setChannelId($channelId)
+    public function setButtonText($buttonText)
     {
-        $this->container['channelId'] = $channelId;
+        $this->container['buttonText'] = $buttonText;
 
         return $this;
     }
 
     /**
-     * Gets channelName
+     * Gets jumpInfo
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\LandingPageStructure[]|mixed
      */
-    public function getChannelName()
+    public function getJumpInfo()
     {
-        return $this->container['channelName'];
+        return $this->container['jumpInfo'];
     }
 
     /**
-     * Sets channelName
+     * Sets jumpInfo
      *
-     * @param string|mixed $channelName channelName
+     * @param \TencentAds\Model\LandingPageStructure[]|mixed $jumpInfo jumpInfo
      *
      * @return $this
      */
-    public function setChannelName($channelName)
+    public function setJumpInfo($jumpInfo)
     {
-        $this->container['channelName'] = $channelName;
-
-        return $this;
-    }
-
-    /**
-     * Gets customizedChannelId
-     *
-     * @return string|mixed
-     */
-    public function getCustomizedChannelId()
-    {
-        return $this->container['customizedChannelId'];
-    }
-
-    /**
-     * Sets customizedChannelId
-     *
-     * @param string|mixed $customizedChannelId customizedChannelId
-     *
-     * @return $this
-     */
-    public function setCustomizedChannelId($customizedChannelId)
-    {
-        $this->container['customizedChannelId'] = $customizedChannelId;
+        $this->container['jumpInfo'] = $jumpInfo;
 
         return $this;
     }

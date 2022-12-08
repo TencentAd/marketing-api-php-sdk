@@ -47,8 +47,6 @@ class BidwordMatchType
     const EXACT_MATCH = 'EXACT_MATCH';
     const WIDE_MATCH = 'WIDE_MATCH';
     const WORD_MATCH = 'WORD_MATCH';
-    const RECOMMEND_BY_WORD = 'RECOMMEND_BY_WORD';
-    const RECOMMEND_BY_INDUSTRY = 'RECOMMEND_BY_INDUSTRY';
     
     /**
      * Gets allowable values of the enum
@@ -60,8 +58,6 @@ class BidwordMatchType
             self::EXACT_MATCH,
             self::WIDE_MATCH,
             self::WORD_MATCH,
-            self::RECOMMEND_BY_WORD,
-            self::RECOMMEND_BY_INDUSTRY,
         ];
     }
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * CreateSplitChannelStruct
+ * ChosenButtonComponentOption
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CreateSplitChannelStruct Class Doc Comment
+ * ChosenButtonComponentOption Class Doc Comment
  *
  * @category Class
- * @description 渠道号信息
+ * @description 选择按钮组件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
+class ChosenButtonComponentOption implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'create_split_channel_struct';
+    protected static $swaggerModelName = 'chosen_button_component_option';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,8 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'channelId' => 'string',
-        'channelName' => 'string',
-        'customizedChannelId' => 'string'
+        'componentId' => 'int',
+        'value' => '\TencentAds\Model\ChosenButtonComponentValueStruct'
     ];
 
     /**
@@ -69,9 +68,8 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'channelId' => null,
-        'channelName' => null,
-        'customizedChannelId' => null
+        'componentId' => 'int64',
+        'value' => null
     ];
 
     /**
@@ -101,9 +99,8 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'channelId' => 'channel_id',
-        'channelName' => 'channel_name',
-        'customizedChannelId' => 'customized_channel_id'
+        'componentId' => 'component_id',
+        'value' => 'value'
     ];
 
     /**
@@ -112,9 +109,8 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'channelId' => 'setChannelId',
-        'channelName' => 'setChannelName',
-        'customizedChannelId' => 'setCustomizedChannelId'
+        'componentId' => 'setComponentId',
+        'value' => 'setValue'
     ];
 
     /**
@@ -123,9 +119,8 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'channelId' => 'getChannelId',
-        'channelName' => 'getChannelName',
-        'customizedChannelId' => 'getCustomizedChannelId'
+        'componentId' => 'getComponentId',
+        'value' => 'getValue'
     ];
 
     /**
@@ -188,9 +183,8 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['channelId'] = isset($data['channelId']) ? $data['channelId'] : null;
-        $this->container['channelName'] = isset($data['channelName']) ? $data['channelName'] : null;
-        $this->container['customizedChannelId'] = isset($data['customizedChannelId']) ? $data['customizedChannelId'] : null;
+        $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
+        $this->container['value'] = isset($data['value']) ? $data['value'] : null;
     }
 
     /**
@@ -218,73 +212,49 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets channelId
+     * Gets componentId
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getChannelId()
+    public function getComponentId()
     {
-        return $this->container['channelId'];
+        return $this->container['componentId'];
     }
 
     /**
-     * Sets channelId
+     * Sets componentId
      *
-     * @param string|mixed $channelId channelId
+     * @param int|mixed $componentId componentId
      *
      * @return $this
      */
-    public function setChannelId($channelId)
+    public function setComponentId($componentId)
     {
-        $this->container['channelId'] = $channelId;
+        $this->container['componentId'] = $componentId;
 
         return $this;
     }
 
     /**
-     * Gets channelName
+     * Gets value
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\ChosenButtonComponentValueStruct|mixed
      */
-    public function getChannelName()
+    public function getValue()
     {
-        return $this->container['channelName'];
+        return $this->container['value'];
     }
 
     /**
-     * Sets channelName
+     * Sets value
      *
-     * @param string|mixed $channelName channelName
+     * @param \TencentAds\Model\ChosenButtonComponentValueStruct|mixed $value value
      *
      * @return $this
      */
-    public function setChannelName($channelName)
+    public function setValue($value)
     {
-        $this->container['channelName'] = $channelName;
-
-        return $this;
-    }
-
-    /**
-     * Gets customizedChannelId
-     *
-     * @return string|mixed
-     */
-    public function getCustomizedChannelId()
-    {
-        return $this->container['customizedChannelId'];
-    }
-
-    /**
-     * Sets customizedChannelId
-     *
-     * @param string|mixed $customizedChannelId customizedChannelId
-     *
-     * @return $this
-     */
-    public function setCustomizedChannelId($customizedChannelId)
-    {
-        $this->container['customizedChannelId'] = $customizedChannelId;
+        $this->container['value'] = $value;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * CreateSplitChannelStruct
+ * ChosenButtonComponentValueStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CreateSplitChannelStruct Class Doc Comment
+ * ChosenButtonComponentValueStruct Class Doc Comment
  *
  * @category Class
- * @description 渠道号信息
+ * @description 选择按钮结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
+class ChosenButtonComponentValueStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'create_split_channel_struct';
+    protected static $swaggerModelName = 'chosen_button_component_value_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,10 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'channelId' => 'string',
-        'channelName' => 'string',
-        'customizedChannelId' => 'string'
+        'leftButtonText' => 'string',
+        'leftJumpInfo' => '\TencentAds\Model\LandingPageStructure[]',
+        'rightButtonText' => 'string',
+        'rightJumpInfo' => '\TencentAds\Model\LandingPageStructure[]'
     ];
 
     /**
@@ -69,9 +70,10 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'channelId' => null,
-        'channelName' => null,
-        'customizedChannelId' => null
+        'leftButtonText' => null,
+        'leftJumpInfo' => null,
+        'rightButtonText' => null,
+        'rightJumpInfo' => null
     ];
 
     /**
@@ -101,9 +103,10 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'channelId' => 'channel_id',
-        'channelName' => 'channel_name',
-        'customizedChannelId' => 'customized_channel_id'
+        'leftButtonText' => 'left_button_text',
+        'leftJumpInfo' => 'left_jump_info',
+        'rightButtonText' => 'right_button_text',
+        'rightJumpInfo' => 'right_jump_info'
     ];
 
     /**
@@ -112,9 +115,10 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'channelId' => 'setChannelId',
-        'channelName' => 'setChannelName',
-        'customizedChannelId' => 'setCustomizedChannelId'
+        'leftButtonText' => 'setLeftButtonText',
+        'leftJumpInfo' => 'setLeftJumpInfo',
+        'rightButtonText' => 'setRightButtonText',
+        'rightJumpInfo' => 'setRightJumpInfo'
     ];
 
     /**
@@ -123,9 +127,10 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'channelId' => 'getChannelId',
-        'channelName' => 'getChannelName',
-        'customizedChannelId' => 'getCustomizedChannelId'
+        'leftButtonText' => 'getLeftButtonText',
+        'leftJumpInfo' => 'getLeftJumpInfo',
+        'rightButtonText' => 'getRightButtonText',
+        'rightJumpInfo' => 'getRightJumpInfo'
     ];
 
     /**
@@ -188,9 +193,10 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['channelId'] = isset($data['channelId']) ? $data['channelId'] : null;
-        $this->container['channelName'] = isset($data['channelName']) ? $data['channelName'] : null;
-        $this->container['customizedChannelId'] = isset($data['customizedChannelId']) ? $data['customizedChannelId'] : null;
+        $this->container['leftButtonText'] = isset($data['leftButtonText']) ? $data['leftButtonText'] : null;
+        $this->container['leftJumpInfo'] = isset($data['leftJumpInfo']) ? $data['leftJumpInfo'] : null;
+        $this->container['rightButtonText'] = isset($data['rightButtonText']) ? $data['rightButtonText'] : null;
+        $this->container['rightJumpInfo'] = isset($data['rightJumpInfo']) ? $data['rightJumpInfo'] : null;
     }
 
     /**
@@ -218,73 +224,97 @@ class CreateSplitChannelStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets channelId
+     * Gets leftButtonText
      *
      * @return string|mixed
      */
-    public function getChannelId()
+    public function getLeftButtonText()
     {
-        return $this->container['channelId'];
+        return $this->container['leftButtonText'];
     }
 
     /**
-     * Sets channelId
+     * Sets leftButtonText
      *
-     * @param string|mixed $channelId channelId
+     * @param string|mixed $leftButtonText leftButtonText
      *
      * @return $this
      */
-    public function setChannelId($channelId)
+    public function setLeftButtonText($leftButtonText)
     {
-        $this->container['channelId'] = $channelId;
+        $this->container['leftButtonText'] = $leftButtonText;
 
         return $this;
     }
 
     /**
-     * Gets channelName
+     * Gets leftJumpInfo
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\LandingPageStructure[]|mixed
      */
-    public function getChannelName()
+    public function getLeftJumpInfo()
     {
-        return $this->container['channelName'];
+        return $this->container['leftJumpInfo'];
     }
 
     /**
-     * Sets channelName
+     * Sets leftJumpInfo
      *
-     * @param string|mixed $channelName channelName
+     * @param \TencentAds\Model\LandingPageStructure[]|mixed $leftJumpInfo leftJumpInfo
      *
      * @return $this
      */
-    public function setChannelName($channelName)
+    public function setLeftJumpInfo($leftJumpInfo)
     {
-        $this->container['channelName'] = $channelName;
+        $this->container['leftJumpInfo'] = $leftJumpInfo;
 
         return $this;
     }
 
     /**
-     * Gets customizedChannelId
+     * Gets rightButtonText
      *
      * @return string|mixed
      */
-    public function getCustomizedChannelId()
+    public function getRightButtonText()
     {
-        return $this->container['customizedChannelId'];
+        return $this->container['rightButtonText'];
     }
 
     /**
-     * Sets customizedChannelId
+     * Sets rightButtonText
      *
-     * @param string|mixed $customizedChannelId customizedChannelId
+     * @param string|mixed $rightButtonText rightButtonText
      *
      * @return $this
      */
-    public function setCustomizedChannelId($customizedChannelId)
+    public function setRightButtonText($rightButtonText)
     {
-        $this->container['customizedChannelId'] = $customizedChannelId;
+        $this->container['rightButtonText'] = $rightButtonText;
+
+        return $this;
+    }
+
+    /**
+     * Gets rightJumpInfo
+     *
+     * @return \TencentAds\Model\LandingPageStructure[]|mixed
+     */
+    public function getRightJumpInfo()
+    {
+        return $this->container['rightJumpInfo'];
+    }
+
+    /**
+     * Sets rightJumpInfo
+     *
+     * @param \TencentAds\Model\LandingPageStructure[]|mixed $rightJumpInfo rightJumpInfo
+     *
+     * @return $this
+     */
+    public function setRightJumpInfo($rightJumpInfo)
+    {
+        $this->container['rightJumpInfo'] = $rightJumpInfo;
 
         return $this;
     }
