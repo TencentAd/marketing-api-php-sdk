@@ -428,6 +428,18 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'basicInfoClientCount' => 'int',
         'accountInfoClickCount' => 'int',
         'activityInfoClickCount' => 'int',
+        'clkRedpocketBtnGetPv' => 'int',
+        'clkRedpocketBtnSharePv' => 'int',
+        'clkRedpocketBtnJumpPv' => 'int',
+        'clkGoodsHeaderPv' => 'int',
+        'clkGoodsInfoPv' => 'int',
+        'clkGoodsRecommendPv' => 'int',
+        'clkMiddleShowwindowPv' => 'int',
+        'clkFooterPv' => 'int',
+        'clkMiddleGoodsPv' => 'int',
+        'clkMiddleBtnPv' => 'int',
+        'clkMiddleSectionPv' => 'int',
+        'clkMiddleGridviewPv' => 'int',
         'miniGameBfUv' => 'int',
         'miniGameBfCost' => 'int',
         'miniGameBfIncomeUv' => 'int',
@@ -1127,6 +1139,18 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'basicInfoClientCount' => 'int64',
         'accountInfoClickCount' => 'int64',
         'activityInfoClickCount' => 'int64',
+        'clkRedpocketBtnGetPv' => 'int64',
+        'clkRedpocketBtnSharePv' => 'int64',
+        'clkRedpocketBtnJumpPv' => 'int64',
+        'clkGoodsHeaderPv' => 'int64',
+        'clkGoodsInfoPv' => 'int64',
+        'clkGoodsRecommendPv' => 'int64',
+        'clkMiddleShowwindowPv' => 'int64',
+        'clkFooterPv' => 'int64',
+        'clkMiddleGoodsPv' => 'int64',
+        'clkMiddleBtnPv' => 'int64',
+        'clkMiddleSectionPv' => 'int64',
+        'clkMiddleGridviewPv' => 'int64',
         'miniGameBfUv' => 'int64',
         'miniGameBfCost' => 'int64',
         'miniGameBfIncomeUv' => 'int64',
@@ -1847,6 +1871,18 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'basicInfoClientCount' => 'basic_info_client_count',
         'accountInfoClickCount' => 'account_info_click_count',
         'activityInfoClickCount' => 'activity_info_click_count',
+        'clkRedpocketBtnGetPv' => 'clk_redpocket_btn_get_pv',
+        'clkRedpocketBtnSharePv' => 'clk_redpocket_btn_share_pv',
+        'clkRedpocketBtnJumpPv' => 'clk_redpocket_btn_jump_pv',
+        'clkGoodsHeaderPv' => 'clk_goods_header_pv',
+        'clkGoodsInfoPv' => 'clk_goods_info_pv',
+        'clkGoodsRecommendPv' => 'clk_goods_recommend_pv',
+        'clkMiddleShowwindowPv' => 'clk_middle_showwindow_pv',
+        'clkFooterPv' => 'clk_footer_pv',
+        'clkMiddleGoodsPv' => 'clk_middle_goods_pv',
+        'clkMiddleBtnPv' => 'clk_middle_btn_pv',
+        'clkMiddleSectionPv' => 'clk_middle_section_pv',
+        'clkMiddleGridviewPv' => 'clk_middle_gridview_pv',
         'miniGameBfUv' => 'mini_game_bf_uv',
         'miniGameBfCost' => 'mini_game_bf_cost',
         'miniGameBfIncomeUv' => 'mini_game_bf_income_uv',
@@ -2546,6 +2582,18 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'basicInfoClientCount' => 'setBasicInfoClientCount',
         'accountInfoClickCount' => 'setAccountInfoClickCount',
         'activityInfoClickCount' => 'setActivityInfoClickCount',
+        'clkRedpocketBtnGetPv' => 'setClkRedpocketBtnGetPv',
+        'clkRedpocketBtnSharePv' => 'setClkRedpocketBtnSharePv',
+        'clkRedpocketBtnJumpPv' => 'setClkRedpocketBtnJumpPv',
+        'clkGoodsHeaderPv' => 'setClkGoodsHeaderPv',
+        'clkGoodsInfoPv' => 'setClkGoodsInfoPv',
+        'clkGoodsRecommendPv' => 'setClkGoodsRecommendPv',
+        'clkMiddleShowwindowPv' => 'setClkMiddleShowwindowPv',
+        'clkFooterPv' => 'setClkFooterPv',
+        'clkMiddleGoodsPv' => 'setClkMiddleGoodsPv',
+        'clkMiddleBtnPv' => 'setClkMiddleBtnPv',
+        'clkMiddleSectionPv' => 'setClkMiddleSectionPv',
+        'clkMiddleGridviewPv' => 'setClkMiddleGridviewPv',
         'miniGameBfUv' => 'setMiniGameBfUv',
         'miniGameBfCost' => 'setMiniGameBfCost',
         'miniGameBfIncomeUv' => 'setMiniGameBfIncomeUv',
@@ -3245,6 +3293,18 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'basicInfoClientCount' => 'getBasicInfoClientCount',
         'accountInfoClickCount' => 'getAccountInfoClickCount',
         'activityInfoClickCount' => 'getActivityInfoClickCount',
+        'clkRedpocketBtnGetPv' => 'getClkRedpocketBtnGetPv',
+        'clkRedpocketBtnSharePv' => 'getClkRedpocketBtnSharePv',
+        'clkRedpocketBtnJumpPv' => 'getClkRedpocketBtnJumpPv',
+        'clkGoodsHeaderPv' => 'getClkGoodsHeaderPv',
+        'clkGoodsInfoPv' => 'getClkGoodsInfoPv',
+        'clkGoodsRecommendPv' => 'getClkGoodsRecommendPv',
+        'clkMiddleShowwindowPv' => 'getClkMiddleShowwindowPv',
+        'clkFooterPv' => 'getClkFooterPv',
+        'clkMiddleGoodsPv' => 'getClkMiddleGoodsPv',
+        'clkMiddleBtnPv' => 'getClkMiddleBtnPv',
+        'clkMiddleSectionPv' => 'getClkMiddleSectionPv',
+        'clkMiddleGridviewPv' => 'getClkMiddleGridviewPv',
         'miniGameBfUv' => 'getMiniGameBfUv',
         'miniGameBfCost' => 'getMiniGameBfCost',
         'miniGameBfIncomeUv' => 'getMiniGameBfIncomeUv',
@@ -3998,6 +4058,18 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['basicInfoClientCount'] = isset($data['basicInfoClientCount']) ? $data['basicInfoClientCount'] : null;
         $this->container['accountInfoClickCount'] = isset($data['accountInfoClickCount']) ? $data['accountInfoClickCount'] : null;
         $this->container['activityInfoClickCount'] = isset($data['activityInfoClickCount']) ? $data['activityInfoClickCount'] : null;
+        $this->container['clkRedpocketBtnGetPv'] = isset($data['clkRedpocketBtnGetPv']) ? $data['clkRedpocketBtnGetPv'] : null;
+        $this->container['clkRedpocketBtnSharePv'] = isset($data['clkRedpocketBtnSharePv']) ? $data['clkRedpocketBtnSharePv'] : null;
+        $this->container['clkRedpocketBtnJumpPv'] = isset($data['clkRedpocketBtnJumpPv']) ? $data['clkRedpocketBtnJumpPv'] : null;
+        $this->container['clkGoodsHeaderPv'] = isset($data['clkGoodsHeaderPv']) ? $data['clkGoodsHeaderPv'] : null;
+        $this->container['clkGoodsInfoPv'] = isset($data['clkGoodsInfoPv']) ? $data['clkGoodsInfoPv'] : null;
+        $this->container['clkGoodsRecommendPv'] = isset($data['clkGoodsRecommendPv']) ? $data['clkGoodsRecommendPv'] : null;
+        $this->container['clkMiddleShowwindowPv'] = isset($data['clkMiddleShowwindowPv']) ? $data['clkMiddleShowwindowPv'] : null;
+        $this->container['clkFooterPv'] = isset($data['clkFooterPv']) ? $data['clkFooterPv'] : null;
+        $this->container['clkMiddleGoodsPv'] = isset($data['clkMiddleGoodsPv']) ? $data['clkMiddleGoodsPv'] : null;
+        $this->container['clkMiddleBtnPv'] = isset($data['clkMiddleBtnPv']) ? $data['clkMiddleBtnPv'] : null;
+        $this->container['clkMiddleSectionPv'] = isset($data['clkMiddleSectionPv']) ? $data['clkMiddleSectionPv'] : null;
+        $this->container['clkMiddleGridviewPv'] = isset($data['clkMiddleGridviewPv']) ? $data['clkMiddleGridviewPv'] : null;
         $this->container['miniGameBfUv'] = isset($data['miniGameBfUv']) ? $data['miniGameBfUv'] : null;
         $this->container['miniGameBfCost'] = isset($data['miniGameBfCost']) ? $data['miniGameBfCost'] : null;
         $this->container['miniGameBfIncomeUv'] = isset($data['miniGameBfIncomeUv']) ? $data['miniGameBfIncomeUv'] : null;
@@ -13221,6 +13293,294 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setActivityInfoClickCount($activityInfoClickCount)
     {
         $this->container['activityInfoClickCount'] = $activityInfoClickCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkRedpocketBtnGetPv
+     *
+     * @return int|mixed
+     */
+    public function getClkRedpocketBtnGetPv()
+    {
+        return $this->container['clkRedpocketBtnGetPv'];
+    }
+
+    /**
+     * Sets clkRedpocketBtnGetPv
+     *
+     * @param int|mixed $clkRedpocketBtnGetPv clkRedpocketBtnGetPv
+     *
+     * @return $this
+     */
+    public function setClkRedpocketBtnGetPv($clkRedpocketBtnGetPv)
+    {
+        $this->container['clkRedpocketBtnGetPv'] = $clkRedpocketBtnGetPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkRedpocketBtnSharePv
+     *
+     * @return int|mixed
+     */
+    public function getClkRedpocketBtnSharePv()
+    {
+        return $this->container['clkRedpocketBtnSharePv'];
+    }
+
+    /**
+     * Sets clkRedpocketBtnSharePv
+     *
+     * @param int|mixed $clkRedpocketBtnSharePv clkRedpocketBtnSharePv
+     *
+     * @return $this
+     */
+    public function setClkRedpocketBtnSharePv($clkRedpocketBtnSharePv)
+    {
+        $this->container['clkRedpocketBtnSharePv'] = $clkRedpocketBtnSharePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkRedpocketBtnJumpPv
+     *
+     * @return int|mixed
+     */
+    public function getClkRedpocketBtnJumpPv()
+    {
+        return $this->container['clkRedpocketBtnJumpPv'];
+    }
+
+    /**
+     * Sets clkRedpocketBtnJumpPv
+     *
+     * @param int|mixed $clkRedpocketBtnJumpPv clkRedpocketBtnJumpPv
+     *
+     * @return $this
+     */
+    public function setClkRedpocketBtnJumpPv($clkRedpocketBtnJumpPv)
+    {
+        $this->container['clkRedpocketBtnJumpPv'] = $clkRedpocketBtnJumpPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkGoodsHeaderPv
+     *
+     * @return int|mixed
+     */
+    public function getClkGoodsHeaderPv()
+    {
+        return $this->container['clkGoodsHeaderPv'];
+    }
+
+    /**
+     * Sets clkGoodsHeaderPv
+     *
+     * @param int|mixed $clkGoodsHeaderPv clkGoodsHeaderPv
+     *
+     * @return $this
+     */
+    public function setClkGoodsHeaderPv($clkGoodsHeaderPv)
+    {
+        $this->container['clkGoodsHeaderPv'] = $clkGoodsHeaderPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkGoodsInfoPv
+     *
+     * @return int|mixed
+     */
+    public function getClkGoodsInfoPv()
+    {
+        return $this->container['clkGoodsInfoPv'];
+    }
+
+    /**
+     * Sets clkGoodsInfoPv
+     *
+     * @param int|mixed $clkGoodsInfoPv clkGoodsInfoPv
+     *
+     * @return $this
+     */
+    public function setClkGoodsInfoPv($clkGoodsInfoPv)
+    {
+        $this->container['clkGoodsInfoPv'] = $clkGoodsInfoPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkGoodsRecommendPv
+     *
+     * @return int|mixed
+     */
+    public function getClkGoodsRecommendPv()
+    {
+        return $this->container['clkGoodsRecommendPv'];
+    }
+
+    /**
+     * Sets clkGoodsRecommendPv
+     *
+     * @param int|mixed $clkGoodsRecommendPv clkGoodsRecommendPv
+     *
+     * @return $this
+     */
+    public function setClkGoodsRecommendPv($clkGoodsRecommendPv)
+    {
+        $this->container['clkGoodsRecommendPv'] = $clkGoodsRecommendPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkMiddleShowwindowPv
+     *
+     * @return int|mixed
+     */
+    public function getClkMiddleShowwindowPv()
+    {
+        return $this->container['clkMiddleShowwindowPv'];
+    }
+
+    /**
+     * Sets clkMiddleShowwindowPv
+     *
+     * @param int|mixed $clkMiddleShowwindowPv clkMiddleShowwindowPv
+     *
+     * @return $this
+     */
+    public function setClkMiddleShowwindowPv($clkMiddleShowwindowPv)
+    {
+        $this->container['clkMiddleShowwindowPv'] = $clkMiddleShowwindowPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkFooterPv
+     *
+     * @return int|mixed
+     */
+    public function getClkFooterPv()
+    {
+        return $this->container['clkFooterPv'];
+    }
+
+    /**
+     * Sets clkFooterPv
+     *
+     * @param int|mixed $clkFooterPv clkFooterPv
+     *
+     * @return $this
+     */
+    public function setClkFooterPv($clkFooterPv)
+    {
+        $this->container['clkFooterPv'] = $clkFooterPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkMiddleGoodsPv
+     *
+     * @return int|mixed
+     */
+    public function getClkMiddleGoodsPv()
+    {
+        return $this->container['clkMiddleGoodsPv'];
+    }
+
+    /**
+     * Sets clkMiddleGoodsPv
+     *
+     * @param int|mixed $clkMiddleGoodsPv clkMiddleGoodsPv
+     *
+     * @return $this
+     */
+    public function setClkMiddleGoodsPv($clkMiddleGoodsPv)
+    {
+        $this->container['clkMiddleGoodsPv'] = $clkMiddleGoodsPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkMiddleBtnPv
+     *
+     * @return int|mixed
+     */
+    public function getClkMiddleBtnPv()
+    {
+        return $this->container['clkMiddleBtnPv'];
+    }
+
+    /**
+     * Sets clkMiddleBtnPv
+     *
+     * @param int|mixed $clkMiddleBtnPv clkMiddleBtnPv
+     *
+     * @return $this
+     */
+    public function setClkMiddleBtnPv($clkMiddleBtnPv)
+    {
+        $this->container['clkMiddleBtnPv'] = $clkMiddleBtnPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkMiddleSectionPv
+     *
+     * @return int|mixed
+     */
+    public function getClkMiddleSectionPv()
+    {
+        return $this->container['clkMiddleSectionPv'];
+    }
+
+    /**
+     * Sets clkMiddleSectionPv
+     *
+     * @param int|mixed $clkMiddleSectionPv clkMiddleSectionPv
+     *
+     * @return $this
+     */
+    public function setClkMiddleSectionPv($clkMiddleSectionPv)
+    {
+        $this->container['clkMiddleSectionPv'] = $clkMiddleSectionPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkMiddleGridviewPv
+     *
+     * @return int|mixed
+     */
+    public function getClkMiddleGridviewPv()
+    {
+        return $this->container['clkMiddleGridviewPv'];
+    }
+
+    /**
+     * Sets clkMiddleGridviewPv
+     *
+     * @param int|mixed $clkMiddleGridviewPv clkMiddleGridviewPv
+     *
+     * @return $this
+     */
+    public function setClkMiddleGridviewPv($clkMiddleGridviewPv)
+    {
+        $this->container['clkMiddleGridviewPv'] = $clkMiddleGridviewPv;
 
         return $this;
     }
