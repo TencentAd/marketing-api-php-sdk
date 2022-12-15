@@ -126,7 +126,9 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         'wegameInfoSpec' => '\TencentAds\Model\WegameInfoSpec',
         'wechatChannelsSpec' => '\TencentAds\Model\AdCreativeWechatChannelsSpec',
         'finderObjectVisibility' => 'bool',
-        'imageListJumpInfo' => '\TencentAds\Model\LandingPageStructure[]'
+        'imageListJumpInfo' => '\TencentAds\Model\LandingPageStructure[]',
+        'originVideo' => 'string',
+        'redEnvelopeStruct' => '\TencentAds\Model\RedEnvelopeStruct'
     ];
 
     /**
@@ -203,7 +205,9 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         'wegameInfoSpec' => null,
         'wechatChannelsSpec' => null,
         'finderObjectVisibility' => null,
-        'imageListJumpInfo' => null
+        'imageListJumpInfo' => null,
+        'originVideo' => null,
+        'redEnvelopeStruct' => null
     ];
 
     /**
@@ -301,7 +305,9 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         'wegameInfoSpec' => 'wegame_info_spec',
         'wechatChannelsSpec' => 'wechat_channels_spec',
         'finderObjectVisibility' => 'finder_object_visibility',
-        'imageListJumpInfo' => 'image_list_jump_info'
+        'imageListJumpInfo' => 'image_list_jump_info',
+        'originVideo' => 'origin_video',
+        'redEnvelopeStruct' => 'red_envelope_struct'
     ];
 
     /**
@@ -378,7 +384,9 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         'wegameInfoSpec' => 'setWegameInfoSpec',
         'wechatChannelsSpec' => 'setWechatChannelsSpec',
         'finderObjectVisibility' => 'setFinderObjectVisibility',
-        'imageListJumpInfo' => 'setImageListJumpInfo'
+        'imageListJumpInfo' => 'setImageListJumpInfo',
+        'originVideo' => 'setOriginVideo',
+        'redEnvelopeStruct' => 'setRedEnvelopeStruct'
     ];
 
     /**
@@ -455,7 +463,9 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         'wegameInfoSpec' => 'getWegameInfoSpec',
         'wechatChannelsSpec' => 'getWechatChannelsSpec',
         'finderObjectVisibility' => 'getFinderObjectVisibility',
-        'imageListJumpInfo' => 'getImageListJumpInfo'
+        'imageListJumpInfo' => 'getImageListJumpInfo',
+        'originVideo' => 'getOriginVideo',
+        'redEnvelopeStruct' => 'getRedEnvelopeStruct'
     ];
 
     /**
@@ -587,6 +597,8 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         $this->container['wechatChannelsSpec'] = isset($data['wechatChannelsSpec']) ? $data['wechatChannelsSpec'] : null;
         $this->container['finderObjectVisibility'] = isset($data['finderObjectVisibility']) ? $data['finderObjectVisibility'] : null;
         $this->container['imageListJumpInfo'] = isset($data['imageListJumpInfo']) ? $data['imageListJumpInfo'] : null;
+        $this->container['originVideo'] = isset($data['originVideo']) ? $data['originVideo'] : null;
+        $this->container['redEnvelopeStruct'] = isset($data['redEnvelopeStruct']) ? $data['redEnvelopeStruct'] : null;
     }
 
     /**
@@ -2265,6 +2277,54 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
     public function setImageListJumpInfo($imageListJumpInfo)
     {
         $this->container['imageListJumpInfo'] = $imageListJumpInfo;
+
+        return $this;
+    }
+
+    /**
+     * Gets originVideo
+     *
+     * @return string|mixed
+     */
+    public function getOriginVideo()
+    {
+        return $this->container['originVideo'];
+    }
+
+    /**
+     * Sets originVideo
+     *
+     * @param string|mixed $originVideo originVideo
+     *
+     * @return $this
+     */
+    public function setOriginVideo($originVideo)
+    {
+        $this->container['originVideo'] = $originVideo;
+
+        return $this;
+    }
+
+    /**
+     * Gets redEnvelopeStruct
+     *
+     * @return \TencentAds\Model\RedEnvelopeStruct|mixed
+     */
+    public function getRedEnvelopeStruct()
+    {
+        return $this->container['redEnvelopeStruct'];
+    }
+
+    /**
+     * Sets redEnvelopeStruct
+     *
+     * @param \TencentAds\Model\RedEnvelopeStruct|mixed $redEnvelopeStruct redEnvelopeStruct
+     *
+     * @return $this
+     */
+    public function setRedEnvelopeStruct($redEnvelopeStruct)
+    {
+        $this->container['redEnvelopeStruct'] = $redEnvelopeStruct;
 
         return $this;
     }

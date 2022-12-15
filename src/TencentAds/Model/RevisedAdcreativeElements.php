@@ -112,7 +112,9 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'actionButtonComponentOptions' => '\TencentAds\Model\ActionButtonComponentOption[]',
         'chosenButtonComponentOptions' => '\TencentAds\Model\ChosenButtonComponentOption[]',
         'video2ComponentOptions' => '\TencentAds\Model\VideoComponentOption[]',
-        'imageListJumpInfo' => '\TencentAds\Model\LandingPageStructure[]'
+        'imageListJumpInfo' => '\TencentAds\Model\LandingPageStructure[]',
+        'originVideo' => 'string',
+        'redEnvelopeStruct' => '\TencentAds\Model\RedEnvelopeStruct'
     ];
 
     /**
@@ -175,7 +177,9 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'actionButtonComponentOptions' => null,
         'chosenButtonComponentOptions' => null,
         'video2ComponentOptions' => null,
-        'imageListJumpInfo' => null
+        'imageListJumpInfo' => null,
+        'originVideo' => null,
+        'redEnvelopeStruct' => null
     ];
 
     /**
@@ -259,7 +263,9 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'actionButtonComponentOptions' => 'action_button_component_options',
         'chosenButtonComponentOptions' => 'chosen_button_component_options',
         'video2ComponentOptions' => 'video2_component_options',
-        'imageListJumpInfo' => 'image_list_jump_info'
+        'imageListJumpInfo' => 'image_list_jump_info',
+        'originVideo' => 'origin_video',
+        'redEnvelopeStruct' => 'red_envelope_struct'
     ];
 
     /**
@@ -322,7 +328,9 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'actionButtonComponentOptions' => 'setActionButtonComponentOptions',
         'chosenButtonComponentOptions' => 'setChosenButtonComponentOptions',
         'video2ComponentOptions' => 'setVideo2ComponentOptions',
-        'imageListJumpInfo' => 'setImageListJumpInfo'
+        'imageListJumpInfo' => 'setImageListJumpInfo',
+        'originVideo' => 'setOriginVideo',
+        'redEnvelopeStruct' => 'setRedEnvelopeStruct'
     ];
 
     /**
@@ -385,7 +393,9 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'actionButtonComponentOptions' => 'getActionButtonComponentOptions',
         'chosenButtonComponentOptions' => 'getChosenButtonComponentOptions',
         'video2ComponentOptions' => 'getVideo2ComponentOptions',
-        'imageListJumpInfo' => 'getImageListJumpInfo'
+        'imageListJumpInfo' => 'getImageListJumpInfo',
+        'originVideo' => 'getOriginVideo',
+        'redEnvelopeStruct' => 'getRedEnvelopeStruct'
     ];
 
     /**
@@ -503,6 +513,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         $this->container['chosenButtonComponentOptions'] = isset($data['chosenButtonComponentOptions']) ? $data['chosenButtonComponentOptions'] : null;
         $this->container['video2ComponentOptions'] = isset($data['video2ComponentOptions']) ? $data['video2ComponentOptions'] : null;
         $this->container['imageListJumpInfo'] = isset($data['imageListJumpInfo']) ? $data['imageListJumpInfo'] : null;
+        $this->container['originVideo'] = isset($data['originVideo']) ? $data['originVideo'] : null;
+        $this->container['redEnvelopeStruct'] = isset($data['redEnvelopeStruct']) ? $data['redEnvelopeStruct'] : null;
     }
 
     /**
@@ -1845,6 +1857,54 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     public function setImageListJumpInfo($imageListJumpInfo)
     {
         $this->container['imageListJumpInfo'] = $imageListJumpInfo;
+
+        return $this;
+    }
+
+    /**
+     * Gets originVideo
+     *
+     * @return string|mixed
+     */
+    public function getOriginVideo()
+    {
+        return $this->container['originVideo'];
+    }
+
+    /**
+     * Sets originVideo
+     *
+     * @param string|mixed $originVideo originVideo
+     *
+     * @return $this
+     */
+    public function setOriginVideo($originVideo)
+    {
+        $this->container['originVideo'] = $originVideo;
+
+        return $this;
+    }
+
+    /**
+     * Gets redEnvelopeStruct
+     *
+     * @return \TencentAds\Model\RedEnvelopeStruct|mixed
+     */
+    public function getRedEnvelopeStruct()
+    {
+        return $this->container['redEnvelopeStruct'];
+    }
+
+    /**
+     * Sets redEnvelopeStruct
+     *
+     * @param \TencentAds\Model\RedEnvelopeStruct|mixed $redEnvelopeStruct redEnvelopeStruct
+     *
+     * @return $this
+     */
+    public function setRedEnvelopeStruct($redEnvelopeStruct)
+    {
+        $this->container['redEnvelopeStruct'] = $redEnvelopeStruct;
 
         return $this;
     }
