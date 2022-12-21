@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * TopVideoSpec Class Doc Comment
  *
  * @category Class
- * @description 顶部视频组件元素&lt;br&gt;        视频时长6-30秒. &lt;br&gt;        视频大小不超过20MB. &lt;br&gt;        视频尺寸: 朋友圈常规640*480/640*360/750*1536/750*1334/720*1280,&lt;br&gt;        微信平台账号：朋友圈基础卡片广告:640*360/750*1536, 朋友圈全福式卡片广告:750*&lt;&#x3D;1536 &lt;br&gt;        腾讯广告账号：卡片广告：640*360 &lt;br&gt;        公众号及其他:750*&lt;&#x3D;1536
+ * @description 顶部视频组件元素&lt;br&gt;        视频时长6-30秒. &lt;br&gt;        视频大小不超过20MB. &lt;br&gt;        视频尺寸: 朋友圈常规640*480/640*360/750*1536/750*1334/720*1280/1280*720/1280*960,&lt;br&gt;        微信平台账号：朋友圈基础卡片广告:640*360/750*1536, 朋友圈全福式卡片广告:750*&lt;&#x3D;1536 &lt;br&gt;        腾讯广告账号：卡片广告：640*360 &lt;br&gt;        公众号及其他:750*&lt;&#x3D;1536
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

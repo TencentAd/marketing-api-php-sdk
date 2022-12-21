@@ -131,7 +131,8 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'imageListJumpInfo' => '\TencentAds\Model\LandingPageStructure[]',
         'excitationText' => 'string',
         'originVideo' => 'string',
-        'redEnvelopeStruct' => '\TencentAds\Model\RedEnvelopeStruct'
+        'redEnvelopeStruct' => '\TencentAds\Model\RedEnvelopeStruct',
+        'image3ComponentOptions' => '\TencentAds\Model\ImageComponentOption[]'
     ];
 
     /**
@@ -213,7 +214,8 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'imageListJumpInfo' => null,
         'excitationText' => null,
         'originVideo' => null,
-        'redEnvelopeStruct' => null
+        'redEnvelopeStruct' => null,
+        'image3ComponentOptions' => null
     ];
 
     /**
@@ -316,7 +318,8 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'imageListJumpInfo' => 'image_list_jump_info',
         'excitationText' => 'excitation_text',
         'originVideo' => 'origin_video',
-        'redEnvelopeStruct' => 'red_envelope_struct'
+        'redEnvelopeStruct' => 'red_envelope_struct',
+        'image3ComponentOptions' => 'image3_component_options'
     ];
 
     /**
@@ -398,7 +401,8 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'imageListJumpInfo' => 'setImageListJumpInfo',
         'excitationText' => 'setExcitationText',
         'originVideo' => 'setOriginVideo',
-        'redEnvelopeStruct' => 'setRedEnvelopeStruct'
+        'redEnvelopeStruct' => 'setRedEnvelopeStruct',
+        'image3ComponentOptions' => 'setImage3ComponentOptions'
     ];
 
     /**
@@ -480,7 +484,8 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'imageListJumpInfo' => 'getImageListJumpInfo',
         'excitationText' => 'getExcitationText',
         'originVideo' => 'getOriginVideo',
-        'redEnvelopeStruct' => 'getRedEnvelopeStruct'
+        'redEnvelopeStruct' => 'getRedEnvelopeStruct',
+        'image3ComponentOptions' => 'getImage3ComponentOptions'
     ];
 
     /**
@@ -617,6 +622,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         $this->container['excitationText'] = isset($data['excitationText']) ? $data['excitationText'] : null;
         $this->container['originVideo'] = isset($data['originVideo']) ? $data['originVideo'] : null;
         $this->container['redEnvelopeStruct'] = isset($data['redEnvelopeStruct']) ? $data['redEnvelopeStruct'] : null;
+        $this->container['image3ComponentOptions'] = isset($data['image3ComponentOptions']) ? $data['image3ComponentOptions'] : null;
     }
 
     /**
@@ -2415,6 +2421,30 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     public function setRedEnvelopeStruct($redEnvelopeStruct)
     {
         $this->container['redEnvelopeStruct'] = $redEnvelopeStruct;
+
+        return $this;
+    }
+
+    /**
+     * Gets image3ComponentOptions
+     *
+     * @return \TencentAds\Model\ImageComponentOption[]|mixed
+     */
+    public function getImage3ComponentOptions()
+    {
+        return $this->container['image3ComponentOptions'];
+    }
+
+    /**
+     * Sets image3ComponentOptions
+     *
+     * @param \TencentAds\Model\ImageComponentOption[]|mixed $image3ComponentOptions image3ComponentOptions
+     *
+     * @return $this
+     */
+    public function setImage3ComponentOptions($image3ComponentOptions)
+    {
+        $this->container['image3ComponentOptions'] = $image3ComponentOptions;
 
         return $this;
     }

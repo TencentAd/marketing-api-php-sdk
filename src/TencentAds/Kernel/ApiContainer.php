@@ -156,7 +156,7 @@ class ApiContainer
         if ($response['code'] != 0) {
             $errors = empty($response['errors']) ? [] : $response['errors'];
             throw new TencentAdsResponseException(
-                $response['message'], $response['code'], [], null, $response['message_cn'], $errors
+                $response['message'], $response['code'], [], null, empty($response['message_cn']) ? $response['messageCn'] : $response['message_cn'], $errors
             );
         }
         if (isset($response['data'])) {
