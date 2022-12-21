@@ -48,6 +48,7 @@ class PathType
     const MDM = 'PATH_TYPE_MDM';
     const POINT_TO_POINT = 'PATH_TYPE_POINT_TO_POINT';
     const AGENCY = 'PATH_TYPE_AGENCY';
+    const ACCOUNT = 'PATH_TYPE_ACCOUNT';
     
     /**
      * Gets allowable values of the enum
@@ -60,6 +61,7 @@ class PathType
             self::MDM,
             self::POINT_TO_POINT,
             self::AGENCY,
+            self::ACCOUNT,
         ];
     }
 }

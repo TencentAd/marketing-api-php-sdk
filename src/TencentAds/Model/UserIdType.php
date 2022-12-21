@@ -66,6 +66,7 @@ class UserIdType
     const MD5_SHA256_IMEI = 'MD5_SHA256_IMEI';
     const MD5_SHA256_IDFA = 'MD5_SHA256_IDFA';
     const MD5_SHA256_OAID = 'MD5_SHA256_OAID';
+    const CAID = 'CAID';
     
     /**
      * Gets allowable values of the enum
@@ -96,6 +97,7 @@ class UserIdType
             self::MD5_SHA256_IMEI,
             self::MD5_SHA256_IDFA,
             self::MD5_SHA256_OAID,
+            self::CAID,
         ];
     }
 }
