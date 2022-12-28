@@ -75,7 +75,12 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         'localStoreDistrict' => 'string',
         'localStoreStreet' => 'string',
         'localStoreBusinessArea' => 'string',
-        'localStoreRemark' => 'string'
+        'localStoreRemark' => 'string',
+        'wechatWorkCorpId' => 'int',
+        'wechatCustomerServiceLink' => 'string',
+        'imageSet' => '\TencentAds\Model\ImageSetDataStruct[]',
+        'recommendWords' => '\TencentAds\Model\RecommendWordStruct[]',
+        'isUseStandardizedName' => 'bool'
     ];
 
     /**
@@ -101,7 +106,12 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         'localStoreDistrict' => null,
         'localStoreStreet' => null,
         'localStoreBusinessArea' => null,
-        'localStoreRemark' => null
+        'localStoreRemark' => null,
+        'wechatWorkCorpId' => 'int64',
+        'wechatCustomerServiceLink' => null,
+        'imageSet' => null,
+        'recommendWords' => null,
+        'isUseStandardizedName' => null
     ];
 
     /**
@@ -148,7 +158,12 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         'localStoreDistrict' => 'local_store_district',
         'localStoreStreet' => 'local_store_street',
         'localStoreBusinessArea' => 'local_store_business_area',
-        'localStoreRemark' => 'local_store_remark'
+        'localStoreRemark' => 'local_store_remark',
+        'wechatWorkCorpId' => 'wechat_work_corp_id',
+        'wechatCustomerServiceLink' => 'wechat_customer_service_link',
+        'imageSet' => 'image_set',
+        'recommendWords' => 'recommend_words',
+        'isUseStandardizedName' => 'is_use_standardized_name'
     ];
 
     /**
@@ -174,7 +189,12 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         'localStoreDistrict' => 'setLocalStoreDistrict',
         'localStoreStreet' => 'setLocalStoreStreet',
         'localStoreBusinessArea' => 'setLocalStoreBusinessArea',
-        'localStoreRemark' => 'setLocalStoreRemark'
+        'localStoreRemark' => 'setLocalStoreRemark',
+        'wechatWorkCorpId' => 'setWechatWorkCorpId',
+        'wechatCustomerServiceLink' => 'setWechatCustomerServiceLink',
+        'imageSet' => 'setImageSet',
+        'recommendWords' => 'setRecommendWords',
+        'isUseStandardizedName' => 'setIsUseStandardizedName'
     ];
 
     /**
@@ -200,7 +220,12 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         'localStoreDistrict' => 'getLocalStoreDistrict',
         'localStoreStreet' => 'getLocalStoreStreet',
         'localStoreBusinessArea' => 'getLocalStoreBusinessArea',
-        'localStoreRemark' => 'getLocalStoreRemark'
+        'localStoreRemark' => 'getLocalStoreRemark',
+        'wechatWorkCorpId' => 'getWechatWorkCorpId',
+        'wechatCustomerServiceLink' => 'getWechatCustomerServiceLink',
+        'imageSet' => 'getImageSet',
+        'recommendWords' => 'getRecommendWords',
+        'isUseStandardizedName' => 'getIsUseStandardizedName'
     ];
 
     /**
@@ -281,6 +306,11 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
         $this->container['localStoreStreet'] = isset($data['localStoreStreet']) ? $data['localStoreStreet'] : null;
         $this->container['localStoreBusinessArea'] = isset($data['localStoreBusinessArea']) ? $data['localStoreBusinessArea'] : null;
         $this->container['localStoreRemark'] = isset($data['localStoreRemark']) ? $data['localStoreRemark'] : null;
+        $this->container['wechatWorkCorpId'] = isset($data['wechatWorkCorpId']) ? $data['wechatWorkCorpId'] : null;
+        $this->container['wechatCustomerServiceLink'] = isset($data['wechatCustomerServiceLink']) ? $data['wechatCustomerServiceLink'] : null;
+        $this->container['imageSet'] = isset($data['imageSet']) ? $data['imageSet'] : null;
+        $this->container['recommendWords'] = isset($data['recommendWords']) ? $data['recommendWords'] : null;
+        $this->container['isUseStandardizedName'] = isset($data['isUseStandardizedName']) ? $data['isUseStandardizedName'] : null;
     }
 
     /**
@@ -735,6 +765,126 @@ class LocalStoresGetListStruct implements ModelInterface, ArrayAccess
     public function setLocalStoreRemark($localStoreRemark)
     {
         $this->container['localStoreRemark'] = $localStoreRemark;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatWorkCorpId
+     *
+     * @return int|mixed
+     */
+    public function getWechatWorkCorpId()
+    {
+        return $this->container['wechatWorkCorpId'];
+    }
+
+    /**
+     * Sets wechatWorkCorpId
+     *
+     * @param int|mixed $wechatWorkCorpId wechatWorkCorpId
+     *
+     * @return $this
+     */
+    public function setWechatWorkCorpId($wechatWorkCorpId)
+    {
+        $this->container['wechatWorkCorpId'] = $wechatWorkCorpId;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatCustomerServiceLink
+     *
+     * @return string|mixed
+     */
+    public function getWechatCustomerServiceLink()
+    {
+        return $this->container['wechatCustomerServiceLink'];
+    }
+
+    /**
+     * Sets wechatCustomerServiceLink
+     *
+     * @param string|mixed $wechatCustomerServiceLink wechatCustomerServiceLink
+     *
+     * @return $this
+     */
+    public function setWechatCustomerServiceLink($wechatCustomerServiceLink)
+    {
+        $this->container['wechatCustomerServiceLink'] = $wechatCustomerServiceLink;
+
+        return $this;
+    }
+
+    /**
+     * Gets imageSet
+     *
+     * @return \TencentAds\Model\ImageSetDataStruct[]|mixed
+     */
+    public function getImageSet()
+    {
+        return $this->container['imageSet'];
+    }
+
+    /**
+     * Sets imageSet
+     *
+     * @param \TencentAds\Model\ImageSetDataStruct[]|mixed $imageSet imageSet
+     *
+     * @return $this
+     */
+    public function setImageSet($imageSet)
+    {
+        $this->container['imageSet'] = $imageSet;
+
+        return $this;
+    }
+
+    /**
+     * Gets recommendWords
+     *
+     * @return \TencentAds\Model\RecommendWordStruct[]|mixed
+     */
+    public function getRecommendWords()
+    {
+        return $this->container['recommendWords'];
+    }
+
+    /**
+     * Sets recommendWords
+     *
+     * @param \TencentAds\Model\RecommendWordStruct[]|mixed $recommendWords recommendWords
+     *
+     * @return $this
+     */
+    public function setRecommendWords($recommendWords)
+    {
+        $this->container['recommendWords'] = $recommendWords;
+
+        return $this;
+    }
+
+    /**
+     * Gets isUseStandardizedName
+     *
+     * @return bool|mixed
+     */
+    public function getIsUseStandardizedName()
+    {
+        return $this->container['isUseStandardizedName'];
+    }
+
+    /**
+     * Sets isUseStandardizedName
+     *
+     * @param bool|mixed $isUseStandardizedName isUseStandardizedName
+     *
+     * @return $this
+     */
+    public function setIsUseStandardizedName($isUseStandardizedName)
+    {
+        $this->container['isUseStandardizedName'] = $isUseStandardizedName;
 
         return $this;
     }

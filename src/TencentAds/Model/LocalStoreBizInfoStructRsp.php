@@ -70,6 +70,9 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         'thirdCategoryName' => 'string',
         'fourthCategoryName' => 'string',
         'peakPeriod' => '\TencentAds\Model\PeakPeriod[]',
+        'openingHours' => '\TencentAds\Model\OpeningHours[]',
+        'telephone' => 'string',
+        'specialService' => 'string[]',
         'openingStatus' => '\TencentAds\Model\LocalStoreOpeningStatus'
     ];
 
@@ -91,6 +94,9 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         'thirdCategoryName' => null,
         'fourthCategoryName' => null,
         'peakPeriod' => null,
+        'openingHours' => null,
+        'telephone' => null,
+        'specialService' => null,
         'openingStatus' => null
     ];
 
@@ -133,6 +139,9 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         'thirdCategoryName' => 'third_category_name',
         'fourthCategoryName' => 'fourth_category_name',
         'peakPeriod' => 'peak_period',
+        'openingHours' => 'opening_hours',
+        'telephone' => 'telephone',
+        'specialService' => 'special_service',
         'openingStatus' => 'opening_status'
     ];
 
@@ -154,6 +163,9 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         'thirdCategoryName' => 'setThirdCategoryName',
         'fourthCategoryName' => 'setFourthCategoryName',
         'peakPeriod' => 'setPeakPeriod',
+        'openingHours' => 'setOpeningHours',
+        'telephone' => 'setTelephone',
+        'specialService' => 'setSpecialService',
         'openingStatus' => 'setOpeningStatus'
     ];
 
@@ -175,6 +187,9 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         'thirdCategoryName' => 'getThirdCategoryName',
         'fourthCategoryName' => 'getFourthCategoryName',
         'peakPeriod' => 'getPeakPeriod',
+        'openingHours' => 'getOpeningHours',
+        'telephone' => 'getTelephone',
+        'specialService' => 'getSpecialService',
         'openingStatus' => 'getOpeningStatus'
     ];
 
@@ -250,6 +265,9 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         $this->container['thirdCategoryName'] = isset($data['thirdCategoryName']) ? $data['thirdCategoryName'] : null;
         $this->container['fourthCategoryName'] = isset($data['fourthCategoryName']) ? $data['fourthCategoryName'] : null;
         $this->container['peakPeriod'] = isset($data['peakPeriod']) ? $data['peakPeriod'] : null;
+        $this->container['openingHours'] = isset($data['openingHours']) ? $data['openingHours'] : null;
+        $this->container['telephone'] = isset($data['telephone']) ? $data['telephone'] : null;
+        $this->container['specialService'] = isset($data['specialService']) ? $data['specialService'] : null;
         $this->container['openingStatus'] = isset($data['openingStatus']) ? $data['openingStatus'] : null;
     }
 
@@ -561,6 +579,78 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
     public function setPeakPeriod($peakPeriod)
     {
         $this->container['peakPeriod'] = $peakPeriod;
+
+        return $this;
+    }
+
+    /**
+     * Gets openingHours
+     *
+     * @return \TencentAds\Model\OpeningHours[]|mixed
+     */
+    public function getOpeningHours()
+    {
+        return $this->container['openingHours'];
+    }
+
+    /**
+     * Sets openingHours
+     *
+     * @param \TencentAds\Model\OpeningHours[]|mixed $openingHours openingHours
+     *
+     * @return $this
+     */
+    public function setOpeningHours($openingHours)
+    {
+        $this->container['openingHours'] = $openingHours;
+
+        return $this;
+    }
+
+    /**
+     * Gets telephone
+     *
+     * @return string|mixed
+     */
+    public function getTelephone()
+    {
+        return $this->container['telephone'];
+    }
+
+    /**
+     * Sets telephone
+     *
+     * @param string|mixed $telephone telephone
+     *
+     * @return $this
+     */
+    public function setTelephone($telephone)
+    {
+        $this->container['telephone'] = $telephone;
+
+        return $this;
+    }
+
+    /**
+     * Gets specialService
+     *
+     * @return string[]|mixed
+     */
+    public function getSpecialService()
+    {
+        return $this->container['specialService'];
+    }
+
+    /**
+     * Sets specialService
+     *
+     * @param string[]|mixed $specialService specialService
+     *
+     * @return $this
+     */
+    public function setSpecialService($specialService)
+    {
+        $this->container['specialService'] = $specialService;
 
         return $this;
     }
