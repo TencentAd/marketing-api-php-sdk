@@ -100,14 +100,16 @@ class XijingPageInteractiveApi
      * @param  string|mixed $pageName pageName (required)
      * @param  string|mixed $mobileAppId mobileAppId (required)
      * @param  \SplFileObject|mixed $file file (optional)
+     * @param  string|mixed $transformType transformType (optional)
+     * @param  string|mixed $pageConfig pageConfig (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\XijingPageInteractiveAddResponse|mixed
      */
-    public function xijingPageInteractiveAdd($accountId, $isAutoSubmit, $pageType, $interactivePageType, $pageTitle, $pageName, $mobileAppId, $file = null)
+    public function xijingPageInteractiveAdd($accountId, $isAutoSubmit, $pageType, $interactivePageType, $pageTitle, $pageName, $mobileAppId, $file = null, $transformType = null, $pageConfig = null)
     {
-        list($response) = $this->xijingPageInteractiveAddWithHttpInfo($accountId, $isAutoSubmit, $pageType, $interactivePageType, $pageTitle, $pageName, $mobileAppId, $file);
+        list($response) = $this->xijingPageInteractiveAddWithHttpInfo($accountId, $isAutoSubmit, $pageType, $interactivePageType, $pageTitle, $pageName, $mobileAppId, $file, $transformType, $pageConfig);
         return $response;
     }
 
@@ -124,15 +126,17 @@ class XijingPageInteractiveApi
      * @param  string|mixed $pageName (required)
      * @param  string|mixed $mobileAppId (required)
      * @param  \SplFileObject|mixed $file (optional)
+     * @param  string|mixed $transformType (optional)
+     * @param  string|mixed $pageConfig (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\XijingPageInteractiveAddResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function xijingPageInteractiveAddWithHttpInfo($accountId, $isAutoSubmit, $pageType, $interactivePageType, $pageTitle, $pageName, $mobileAppId, $file = null)
+    public function xijingPageInteractiveAddWithHttpInfo($accountId, $isAutoSubmit, $pageType, $interactivePageType, $pageTitle, $pageName, $mobileAppId, $file = null, $transformType = null, $pageConfig = null)
     {
         $returnType = '\TencentAds\Model\XijingPageInteractiveAddResponse';
-        $request = $this->xijingPageInteractiveAddRequest($accountId, $isAutoSubmit, $pageType, $interactivePageType, $pageTitle, $pageName, $mobileAppId, $file);
+        $request = $this->xijingPageInteractiveAddRequest($accountId, $isAutoSubmit, $pageType, $interactivePageType, $pageTitle, $pageName, $mobileAppId, $file, $transformType, $pageConfig);
 
         try {
             $options = $this->createHttpClientOption();
@@ -206,13 +210,15 @@ class XijingPageInteractiveApi
      * @param  string|mixed $pageName (required)
      * @param  string|mixed $mobileAppId (required)
      * @param  \SplFileObject|mixed $file (optional)
+     * @param  string|mixed $transformType (optional)
+     * @param  string|mixed $pageConfig (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function xijingPageInteractiveAddAsync($accountId, $isAutoSubmit, $pageType, $interactivePageType, $pageTitle, $pageName, $mobileAppId, $file = null)
+    public function xijingPageInteractiveAddAsync($accountId, $isAutoSubmit, $pageType, $interactivePageType, $pageTitle, $pageName, $mobileAppId, $file = null, $transformType = null, $pageConfig = null)
     {
-        return $this->xijingPageInteractiveAddAsyncWithHttpInfo($accountId, $isAutoSubmit, $pageType, $interactivePageType, $pageTitle, $pageName, $mobileAppId, $file)
+        return $this->xijingPageInteractiveAddAsyncWithHttpInfo($accountId, $isAutoSubmit, $pageType, $interactivePageType, $pageTitle, $pageName, $mobileAppId, $file, $transformType, $pageConfig)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -233,14 +239,16 @@ class XijingPageInteractiveApi
      * @param  string|mixed $pageName (required)
      * @param  string|mixed $mobileAppId (required)
      * @param  \SplFileObject|mixed $file (optional)
+     * @param  string|mixed $transformType (optional)
+     * @param  string|mixed $pageConfig (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function xijingPageInteractiveAddAsyncWithHttpInfo($accountId, $isAutoSubmit, $pageType, $interactivePageType, $pageTitle, $pageName, $mobileAppId, $file = null)
+    public function xijingPageInteractiveAddAsyncWithHttpInfo($accountId, $isAutoSubmit, $pageType, $interactivePageType, $pageTitle, $pageName, $mobileAppId, $file = null, $transformType = null, $pageConfig = null)
     {
         $returnType = '\TencentAds\Model\XijingPageInteractiveAddResponse';
-        $request = $this->xijingPageInteractiveAddRequest($accountId, $isAutoSubmit, $pageType, $interactivePageType, $pageTitle, $pageName, $mobileAppId, $file);
+        $request = $this->xijingPageInteractiveAddRequest($accountId, $isAutoSubmit, $pageType, $interactivePageType, $pageTitle, $pageName, $mobileAppId, $file, $transformType, $pageConfig);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -290,11 +298,13 @@ class XijingPageInteractiveApi
      * @param  string|mixed $pageName (required)
      * @param  string|mixed $mobileAppId (required)
      * @param  \SplFileObject|mixed $file (optional)
+     * @param  string|mixed $transformType (optional)
+     * @param  string|mixed $pageConfig (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function xijingPageInteractiveAddRequest($accountId, $isAutoSubmit, $pageType, $interactivePageType, $pageTitle, $pageName, $mobileAppId, $file = null)
+    protected function xijingPageInteractiveAddRequest($accountId, $isAutoSubmit, $pageType, $interactivePageType, $pageTitle, $pageName, $mobileAppId, $file = null, $transformType = null, $pageConfig = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -384,6 +394,14 @@ class XijingPageInteractiveApi
             } else {
                 $formParams['file'] = \GuzzleHttp\Psr7\try_fopen(ObjectSerializer::toFormValue($file), 'rb');
             }
+        }
+        // form params
+        if ($transformType !== null) {
+            $formParams['transform_type'] = ObjectSerializer::toFormValue($transformType);
+        }
+        // form params
+        if ($pageConfig !== null) {
+            $formParams['page_config'] = ObjectSerializer::toFormValue($pageConfig);
         }
         // body params
         $_tempBody = null;

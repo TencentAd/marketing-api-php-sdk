@@ -60,10 +60,10 @@ class AssetType
     const PROFILE = 'ASSET_TYPE_PROFILE';
     const LOCAL_STORE = 'ASSET_TYPE_LOCAL_STORE';
     const INTERACTIVE_PRIVATE_TEMPLATE = 'ASSET_TYPE_INTERACTIVE_PRIVATE_TEMPLATE';
-    const UNION_APP_URL_CHANNEL = 'ASSET_TYPE_UNION_APP_URL_CHANNEL';
     const DN_DATA_SOURCE = 'ASSET_TYPE_DN_DATA_SOURCE';
     const DN_DATA_SET = 'ASSET_TYPE_DN_DATA_SET';
     const DN_FILE = 'ASSET_TYPE_DN_FILE';
+    const UNION_APP_URL_CHANNEL = 'ASSET_TYPE_UNION_APP_URL_CHANNEL';
     
     /**
      * Gets allowable values of the enum
@@ -88,10 +88,10 @@ class AssetType
             self::PROFILE,
             self::LOCAL_STORE,
             self::INTERACTIVE_PRIVATE_TEMPLATE,
-            self::UNION_APP_URL_CHANNEL,
             self::DN_DATA_SOURCE,
             self::DN_DATA_SET,
             self::DN_FILE,
+            self::UNION_APP_URL_CHANNEL,
         ];
     }
 }

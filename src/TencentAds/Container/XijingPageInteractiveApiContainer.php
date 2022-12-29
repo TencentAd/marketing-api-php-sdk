@@ -46,7 +46,9 @@ class XijingPageInteractiveApiContainer extends ApiContainer
             $pageName = isset($params['page_name']) ? $params['page_name'] : null;
             $mobileAppId = isset($params['mobile_app_id']) ? $params['mobile_app_id'] : null;
             $file = isset($params['file']) ? $params['file'] : null;
-            $response = $this->apiInstance->xijingPageInteractiveAdd($accountId, $isAutoSubmit, $pageType, $interactivePageType, $pageTitle, $pageName, $mobileAppId, $file);
+            $transformType = isset($params['transform_type']) ? $params['transform_type'] : null;
+            $pageConfig = isset($params['page_config']) ? $params['page_config'] : null;
+            $response = $this->apiInstance->xijingPageInteractiveAdd($accountId, $isAutoSubmit, $pageType, $interactivePageType, $pageTitle, $pageName, $mobileAppId, $file, $transformType, $pageConfig);
             return $this->handleResponse($response);
         });
     }
@@ -69,7 +71,9 @@ class XijingPageInteractiveApiContainer extends ApiContainer
             $pageName = isset($params['page_name']) ? $params['page_name'] : null;
             $mobileAppId = isset($params['mobile_app_id']) ? $params['mobile_app_id'] : null;
             $file = isset($params['file']) ? $params['file'] : null;
-            $response = $this->apiInstance->xijingPageInteractiveAddAsync($accountId, $isAutoSubmit, $pageType, $interactivePageType, $pageTitle, $pageName, $mobileAppId, $file);
+            $transformType = isset($params['transform_type']) ? $params['transform_type'] : null;
+            $pageConfig = isset($params['page_config']) ? $params['page_config'] : null;
+            $response = $this->apiInstance->xijingPageInteractiveAddAsync($accountId, $isAutoSubmit, $pageType, $interactivePageType, $pageTitle, $pageName, $mobileAppId, $file, $transformType, $pageConfig);
             return $response;
         });
     }
