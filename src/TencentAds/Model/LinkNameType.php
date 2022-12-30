@@ -99,6 +99,7 @@ class LinkNameType
     const GET_618_WELFARE = 'GET_618_WELFARE';
     const CONTACT_CUSTOMER_SERVICE = 'CONTACT_CUSTOMER_SERVICE';
     const CONTACT_BUSINESS = 'CONTACT_BUSINESS';
+    const GO_SCAN = 'GO_SCAN';
     
     /**
      * Gets allowable values of the enum
@@ -162,6 +163,7 @@ class LinkNameType
             self::GET_618_WELFARE,
             self::CONTACT_CUSTOMER_SERVICE,
             self::CONTACT_BUSINESS,
+            self::GO_SCAN,
         ];
     }
 }

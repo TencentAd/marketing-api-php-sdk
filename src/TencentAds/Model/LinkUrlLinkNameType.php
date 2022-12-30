@@ -101,6 +101,7 @@ class LinkUrlLinkNameType
     const WATCH_VIDEO = 'WATCH_VIDEO';
     const CONTACT_CUSTOMER_SERVICE = 'CONTACT_CUSTOMER_SERVICE';
     const CONTACT_BUSINESS = 'CONTACT_BUSINESS';
+    const GO_SCAN = 'GO_SCAN';
     
     /**
      * Gets allowable values of the enum
@@ -166,6 +167,7 @@ class LinkUrlLinkNameType
             self::WATCH_VIDEO,
             self::CONTACT_CUSTOMER_SERVICE,
             self::CONTACT_BUSINESS,
+            self::GO_SCAN,
         ];
     }
 }
