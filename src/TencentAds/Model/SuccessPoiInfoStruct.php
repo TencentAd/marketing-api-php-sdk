@@ -63,7 +63,8 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
         'localStoreName' => 'string',
         'localStoreProvince' => 'string',
         'localStoreCity' => 'string',
-        'localStoreAddress' => 'string'
+        'localStoreAddress' => 'string',
+        'localStoreBusinessArea' => 'string'
     ];
 
     /**
@@ -77,7 +78,8 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
         'localStoreName' => null,
         'localStoreProvince' => null,
         'localStoreCity' => null,
-        'localStoreAddress' => null
+        'localStoreAddress' => null,
+        'localStoreBusinessArea' => null
     ];
 
     /**
@@ -112,7 +114,8 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
         'localStoreName' => 'local_store_name',
         'localStoreProvince' => 'local_store_province',
         'localStoreCity' => 'local_store_city',
-        'localStoreAddress' => 'local_store_address'
+        'localStoreAddress' => 'local_store_address',
+        'localStoreBusinessArea' => 'local_store_business_area'
     ];
 
     /**
@@ -126,7 +129,8 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
         'localStoreName' => 'setLocalStoreName',
         'localStoreProvince' => 'setLocalStoreProvince',
         'localStoreCity' => 'setLocalStoreCity',
-        'localStoreAddress' => 'setLocalStoreAddress'
+        'localStoreAddress' => 'setLocalStoreAddress',
+        'localStoreBusinessArea' => 'setLocalStoreBusinessArea'
     ];
 
     /**
@@ -140,7 +144,8 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
         'localStoreName' => 'getLocalStoreName',
         'localStoreProvince' => 'getLocalStoreProvince',
         'localStoreCity' => 'getLocalStoreCity',
-        'localStoreAddress' => 'getLocalStoreAddress'
+        'localStoreAddress' => 'getLocalStoreAddress',
+        'localStoreBusinessArea' => 'getLocalStoreBusinessArea'
     ];
 
     /**
@@ -209,6 +214,7 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
         $this->container['localStoreProvince'] = isset($data['localStoreProvince']) ? $data['localStoreProvince'] : null;
         $this->container['localStoreCity'] = isset($data['localStoreCity']) ? $data['localStoreCity'] : null;
         $this->container['localStoreAddress'] = isset($data['localStoreAddress']) ? $data['localStoreAddress'] : null;
+        $this->container['localStoreBusinessArea'] = isset($data['localStoreBusinessArea']) ? $data['localStoreBusinessArea'] : null;
     }
 
     /**
@@ -375,6 +381,30 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
     public function setLocalStoreAddress($localStoreAddress)
     {
         $this->container['localStoreAddress'] = $localStoreAddress;
+
+        return $this;
+    }
+
+    /**
+     * Gets localStoreBusinessArea
+     *
+     * @return string|mixed
+     */
+    public function getLocalStoreBusinessArea()
+    {
+        return $this->container['localStoreBusinessArea'];
+    }
+
+    /**
+     * Sets localStoreBusinessArea
+     *
+     * @param string|mixed $localStoreBusinessArea localStoreBusinessArea
+     *
+     * @return $this
+     */
+    public function setLocalStoreBusinessArea($localStoreBusinessArea)
+    {
+        $this->container['localStoreBusinessArea'] = $localStoreBusinessArea;
 
         return $this;
     }

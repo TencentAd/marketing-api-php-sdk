@@ -87,6 +87,7 @@ class PageTypeRead
     const CHANNELS_HALF_CARD = 'PAGE_TYPE_CHANNELS_HALF_CARD';
     const NOT_USED = 'PAGE_TYPE_NOT_USED';
     const TSA_OTT = 'PAGE_TYPE_TSA_OTT';
+    const APP_DEEP_LINK = 'PAGE_TYPE_APP_DEEP_LINK';
     
     /**
      * Gets allowable values of the enum
@@ -138,6 +139,7 @@ class PageTypeRead
             self::CHANNELS_HALF_CARD,
             self::NOT_USED,
             self::TSA_OTT,
+            self::APP_DEEP_LINK,
         ];
     }
 }
