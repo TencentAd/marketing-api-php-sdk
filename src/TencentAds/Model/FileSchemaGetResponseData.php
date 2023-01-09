@@ -1,6 +1,6 @@
 <?php
 /**
- * HeadClickSpec
+ * FileSchemaGetResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * HeadClickSpec Class Doc Comment
+ * FileSchemaGetResponseData Class Doc Comment
  *
  * @category Class
- * @description 头像点击跳转信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class HeadClickSpec implements ModelInterface, ArrayAccess
+class FileSchemaGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'head_click_spec';
+    protected static $swaggerModelName = 'FileSchemaGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'brandAppId' => 'string',
-        'searchBrandAreaKeyword' => 'string',
-        'finderUsername' => 'string'
+        'scenes' => 'string[]',
+        'schema' => '\TencentAds\Model\MktSchemaDefine[]'
     ];
 
     /**
@@ -69,9 +67,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'brandAppId' => null,
-        'searchBrandAreaKeyword' => null,
-        'finderUsername' => null
+        'scenes' => null,
+        'schema' => null
     ];
 
     /**
@@ -101,9 +98,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'brandAppId' => 'brand_app_id',
-        'searchBrandAreaKeyword' => 'search_brand_area_keyword',
-        'finderUsername' => 'finder_username'
+        'scenes' => 'scenes',
+        'schema' => 'schema'
     ];
 
     /**
@@ -112,9 +108,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'brandAppId' => 'setBrandAppId',
-        'searchBrandAreaKeyword' => 'setSearchBrandAreaKeyword',
-        'finderUsername' => 'setFinderUsername'
+        'scenes' => 'setScenes',
+        'schema' => 'setSchema'
     ];
 
     /**
@@ -123,9 +118,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'brandAppId' => 'getBrandAppId',
-        'searchBrandAreaKeyword' => 'getSearchBrandAreaKeyword',
-        'finderUsername' => 'getFinderUsername'
+        'scenes' => 'getScenes',
+        'schema' => 'getSchema'
     ];
 
     /**
@@ -188,9 +182,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['brandAppId'] = isset($data['brandAppId']) ? $data['brandAppId'] : null;
-        $this->container['searchBrandAreaKeyword'] = isset($data['searchBrandAreaKeyword']) ? $data['searchBrandAreaKeyword'] : null;
-        $this->container['finderUsername'] = isset($data['finderUsername']) ? $data['finderUsername'] : null;
+        $this->container['scenes'] = isset($data['scenes']) ? $data['scenes'] : null;
+        $this->container['schema'] = isset($data['schema']) ? $data['schema'] : null;
     }
 
     /**
@@ -218,73 +211,49 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets brandAppId
+     * Gets scenes
      *
-     * @return string|mixed
+     * @return string[]|mixed
      */
-    public function getBrandAppId()
+    public function getScenes()
     {
-        return $this->container['brandAppId'];
+        return $this->container['scenes'];
     }
 
     /**
-     * Sets brandAppId
+     * Sets scenes
      *
-     * @param string|mixed $brandAppId brandAppId
+     * @param string[]|mixed $scenes scenes
      *
      * @return $this
      */
-    public function setBrandAppId($brandAppId)
+    public function setScenes($scenes)
     {
-        $this->container['brandAppId'] = $brandAppId;
+        $this->container['scenes'] = $scenes;
 
         return $this;
     }
 
     /**
-     * Gets searchBrandAreaKeyword
+     * Gets schema
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\MktSchemaDefine[]|mixed
      */
-    public function getSearchBrandAreaKeyword()
+    public function getSchema()
     {
-        return $this->container['searchBrandAreaKeyword'];
+        return $this->container['schema'];
     }
 
     /**
-     * Sets searchBrandAreaKeyword
+     * Sets schema
      *
-     * @param string|mixed $searchBrandAreaKeyword searchBrandAreaKeyword
+     * @param \TencentAds\Model\MktSchemaDefine[]|mixed $schema schema
      *
      * @return $this
      */
-    public function setSearchBrandAreaKeyword($searchBrandAreaKeyword)
+    public function setSchema($schema)
     {
-        $this->container['searchBrandAreaKeyword'] = $searchBrandAreaKeyword;
-
-        return $this;
-    }
-
-    /**
-     * Gets finderUsername
-     *
-     * @return string|mixed
-     */
-    public function getFinderUsername()
-    {
-        return $this->container['finderUsername'];
-    }
-
-    /**
-     * Sets finderUsername
-     *
-     * @param string|mixed $finderUsername finderUsername
-     *
-     * @return $this
-     */
-    public function setFinderUsername($finderUsername)
-    {
-        $this->container['finderUsername'] = $finderUsername;
+        $this->container['schema'] = $schema;
 
         return $this;
     }

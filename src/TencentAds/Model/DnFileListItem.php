@@ -1,6 +1,6 @@
 <?php
 /**
- * HeadClickSpec
+ * DnFileListItem
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * HeadClickSpec Class Doc Comment
+ * DnFileListItem Class Doc Comment
  *
  * @category Class
- * @description 头像点击跳转信息
+ * @description 文件信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class HeadClickSpec implements ModelInterface, ArrayAccess
+class DnFileListItem implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'head_click_spec';
+    protected static $swaggerModelName = 'dn_file_list_item';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,13 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'brandAppId' => 'string',
-        'searchBrandAreaKeyword' => 'string',
-        'finderUsername' => 'string'
+        'fileId' => 'int',
+        'fileName' => 'string',
+        'fileDesc' => 'string',
+        'status' => '\TencentAds\Model\DnFileStatus',
+        'acccessWay' => '\TencentAds\Model\DnFileAccessWayType',
+        'scenes' => '\TencentAds\Model\SceneStatusRead[]',
+        'createTime' => 'string'
     ];
 
     /**
@@ -69,9 +73,13 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'brandAppId' => null,
-        'searchBrandAreaKeyword' => null,
-        'finderUsername' => null
+        'fileId' => 'int64',
+        'fileName' => null,
+        'fileDesc' => null,
+        'status' => null,
+        'acccessWay' => null,
+        'scenes' => null,
+        'createTime' => null
     ];
 
     /**
@@ -101,9 +109,13 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'brandAppId' => 'brand_app_id',
-        'searchBrandAreaKeyword' => 'search_brand_area_keyword',
-        'finderUsername' => 'finder_username'
+        'fileId' => 'file_id',
+        'fileName' => 'file_name',
+        'fileDesc' => 'file_desc',
+        'status' => 'status',
+        'acccessWay' => 'acccess_way',
+        'scenes' => 'scenes',
+        'createTime' => 'create_time'
     ];
 
     /**
@@ -112,9 +124,13 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'brandAppId' => 'setBrandAppId',
-        'searchBrandAreaKeyword' => 'setSearchBrandAreaKeyword',
-        'finderUsername' => 'setFinderUsername'
+        'fileId' => 'setFileId',
+        'fileName' => 'setFileName',
+        'fileDesc' => 'setFileDesc',
+        'status' => 'setStatus',
+        'acccessWay' => 'setAcccessWay',
+        'scenes' => 'setScenes',
+        'createTime' => 'setCreateTime'
     ];
 
     /**
@@ -123,9 +139,13 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'brandAppId' => 'getBrandAppId',
-        'searchBrandAreaKeyword' => 'getSearchBrandAreaKeyword',
-        'finderUsername' => 'getFinderUsername'
+        'fileId' => 'getFileId',
+        'fileName' => 'getFileName',
+        'fileDesc' => 'getFileDesc',
+        'status' => 'getStatus',
+        'acccessWay' => 'getAcccessWay',
+        'scenes' => 'getScenes',
+        'createTime' => 'getCreateTime'
     ];
 
     /**
@@ -188,9 +208,13 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['brandAppId'] = isset($data['brandAppId']) ? $data['brandAppId'] : null;
-        $this->container['searchBrandAreaKeyword'] = isset($data['searchBrandAreaKeyword']) ? $data['searchBrandAreaKeyword'] : null;
-        $this->container['finderUsername'] = isset($data['finderUsername']) ? $data['finderUsername'] : null;
+        $this->container['fileId'] = isset($data['fileId']) ? $data['fileId'] : null;
+        $this->container['fileName'] = isset($data['fileName']) ? $data['fileName'] : null;
+        $this->container['fileDesc'] = isset($data['fileDesc']) ? $data['fileDesc'] : null;
+        $this->container['status'] = isset($data['status']) ? $data['status'] : null;
+        $this->container['acccessWay'] = isset($data['acccessWay']) ? $data['acccessWay'] : null;
+        $this->container['scenes'] = isset($data['scenes']) ? $data['scenes'] : null;
+        $this->container['createTime'] = isset($data['createTime']) ? $data['createTime'] : null;
     }
 
     /**
@@ -218,73 +242,169 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets brandAppId
+     * Gets fileId
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getBrandAppId()
+    public function getFileId()
     {
-        return $this->container['brandAppId'];
+        return $this->container['fileId'];
     }
 
     /**
-     * Sets brandAppId
+     * Sets fileId
      *
-     * @param string|mixed $brandAppId brandAppId
+     * @param int|mixed $fileId fileId
      *
      * @return $this
      */
-    public function setBrandAppId($brandAppId)
+    public function setFileId($fileId)
     {
-        $this->container['brandAppId'] = $brandAppId;
+        $this->container['fileId'] = $fileId;
 
         return $this;
     }
 
     /**
-     * Gets searchBrandAreaKeyword
+     * Gets fileName
      *
      * @return string|mixed
      */
-    public function getSearchBrandAreaKeyword()
+    public function getFileName()
     {
-        return $this->container['searchBrandAreaKeyword'];
+        return $this->container['fileName'];
     }
 
     /**
-     * Sets searchBrandAreaKeyword
+     * Sets fileName
      *
-     * @param string|mixed $searchBrandAreaKeyword searchBrandAreaKeyword
+     * @param string|mixed $fileName fileName
      *
      * @return $this
      */
-    public function setSearchBrandAreaKeyword($searchBrandAreaKeyword)
+    public function setFileName($fileName)
     {
-        $this->container['searchBrandAreaKeyword'] = $searchBrandAreaKeyword;
+        $this->container['fileName'] = $fileName;
 
         return $this;
     }
 
     /**
-     * Gets finderUsername
+     * Gets fileDesc
      *
      * @return string|mixed
      */
-    public function getFinderUsername()
+    public function getFileDesc()
     {
-        return $this->container['finderUsername'];
+        return $this->container['fileDesc'];
     }
 
     /**
-     * Sets finderUsername
+     * Sets fileDesc
      *
-     * @param string|mixed $finderUsername finderUsername
+     * @param string|mixed $fileDesc fileDesc
      *
      * @return $this
      */
-    public function setFinderUsername($finderUsername)
+    public function setFileDesc($fileDesc)
     {
-        $this->container['finderUsername'] = $finderUsername;
+        $this->container['fileDesc'] = $fileDesc;
+
+        return $this;
+    }
+
+    /**
+     * Gets status
+     *
+     * @return \TencentAds\Model\DnFileStatus|mixed
+     */
+    public function getStatus()
+    {
+        return $this->container['status'];
+    }
+
+    /**
+     * Sets status
+     *
+     * @param \TencentAds\Model\DnFileStatus|mixed $status status
+     *
+     * @return $this
+     */
+    public function setStatus($status)
+    {
+        $this->container['status'] = $status;
+
+        return $this;
+    }
+
+    /**
+     * Gets acccessWay
+     *
+     * @return \TencentAds\Model\DnFileAccessWayType|mixed
+     */
+    public function getAcccessWay()
+    {
+        return $this->container['acccessWay'];
+    }
+
+    /**
+     * Sets acccessWay
+     *
+     * @param \TencentAds\Model\DnFileAccessWayType|mixed $acccessWay acccessWay
+     *
+     * @return $this
+     */
+    public function setAcccessWay($acccessWay)
+    {
+        $this->container['acccessWay'] = $acccessWay;
+
+        return $this;
+    }
+
+    /**
+     * Gets scenes
+     *
+     * @return \TencentAds\Model\SceneStatusRead[]|mixed
+     */
+    public function getScenes()
+    {
+        return $this->container['scenes'];
+    }
+
+    /**
+     * Sets scenes
+     *
+     * @param \TencentAds\Model\SceneStatusRead[]|mixed $scenes scenes
+     *
+     * @return $this
+     */
+    public function setScenes($scenes)
+    {
+        $this->container['scenes'] = $scenes;
+
+        return $this;
+    }
+
+    /**
+     * Gets createTime
+     *
+     * @return string|mixed
+     */
+    public function getCreateTime()
+    {
+        return $this->container['createTime'];
+    }
+
+    /**
+     * Sets createTime
+     *
+     * @param string|mixed $createTime createTime
+     *
+     * @return $this
+     */
+    public function setCreateTime($createTime)
+    {
+        $this->container['createTime'] = $createTime;
 
         return $this;
     }

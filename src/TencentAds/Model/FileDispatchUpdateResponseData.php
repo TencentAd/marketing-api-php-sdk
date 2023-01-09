@@ -1,6 +1,6 @@
 <?php
 /**
- * HeadClickSpec
+ * FileDispatchUpdateResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * HeadClickSpec Class Doc Comment
+ * FileDispatchUpdateResponseData Class Doc Comment
  *
  * @category Class
- * @description 头像点击跳转信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class HeadClickSpec implements ModelInterface, ArrayAccess
+class FileDispatchUpdateResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'head_click_spec';
+    protected static $swaggerModelName = 'FileDispatchUpdateResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'brandAppId' => 'string',
-        'searchBrandAreaKeyword' => 'string',
-        'finderUsername' => 'string'
+        'successCount' => 'int',
+        'failList' => '\TencentAds\Model\SingleDispatchScene[]'
     ];
 
     /**
@@ -69,9 +67,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'brandAppId' => null,
-        'searchBrandAreaKeyword' => null,
-        'finderUsername' => null
+        'successCount' => 'int64',
+        'failList' => null
     ];
 
     /**
@@ -101,9 +98,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'brandAppId' => 'brand_app_id',
-        'searchBrandAreaKeyword' => 'search_brand_area_keyword',
-        'finderUsername' => 'finder_username'
+        'successCount' => 'success_count',
+        'failList' => 'fail_list'
     ];
 
     /**
@@ -112,9 +108,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'brandAppId' => 'setBrandAppId',
-        'searchBrandAreaKeyword' => 'setSearchBrandAreaKeyword',
-        'finderUsername' => 'setFinderUsername'
+        'successCount' => 'setSuccessCount',
+        'failList' => 'setFailList'
     ];
 
     /**
@@ -123,9 +118,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'brandAppId' => 'getBrandAppId',
-        'searchBrandAreaKeyword' => 'getSearchBrandAreaKeyword',
-        'finderUsername' => 'getFinderUsername'
+        'successCount' => 'getSuccessCount',
+        'failList' => 'getFailList'
     ];
 
     /**
@@ -188,9 +182,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['brandAppId'] = isset($data['brandAppId']) ? $data['brandAppId'] : null;
-        $this->container['searchBrandAreaKeyword'] = isset($data['searchBrandAreaKeyword']) ? $data['searchBrandAreaKeyword'] : null;
-        $this->container['finderUsername'] = isset($data['finderUsername']) ? $data['finderUsername'] : null;
+        $this->container['successCount'] = isset($data['successCount']) ? $data['successCount'] : null;
+        $this->container['failList'] = isset($data['failList']) ? $data['failList'] : null;
     }
 
     /**
@@ -218,73 +211,49 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets brandAppId
+     * Gets successCount
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getBrandAppId()
+    public function getSuccessCount()
     {
-        return $this->container['brandAppId'];
+        return $this->container['successCount'];
     }
 
     /**
-     * Sets brandAppId
+     * Sets successCount
      *
-     * @param string|mixed $brandAppId brandAppId
+     * @param int|mixed $successCount successCount
      *
      * @return $this
      */
-    public function setBrandAppId($brandAppId)
+    public function setSuccessCount($successCount)
     {
-        $this->container['brandAppId'] = $brandAppId;
+        $this->container['successCount'] = $successCount;
 
         return $this;
     }
 
     /**
-     * Gets searchBrandAreaKeyword
+     * Gets failList
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\SingleDispatchScene[]|mixed
      */
-    public function getSearchBrandAreaKeyword()
+    public function getFailList()
     {
-        return $this->container['searchBrandAreaKeyword'];
+        return $this->container['failList'];
     }
 
     /**
-     * Sets searchBrandAreaKeyword
+     * Sets failList
      *
-     * @param string|mixed $searchBrandAreaKeyword searchBrandAreaKeyword
+     * @param \TencentAds\Model\SingleDispatchScene[]|mixed $failList failList
      *
      * @return $this
      */
-    public function setSearchBrandAreaKeyword($searchBrandAreaKeyword)
+    public function setFailList($failList)
     {
-        $this->container['searchBrandAreaKeyword'] = $searchBrandAreaKeyword;
-
-        return $this;
-    }
-
-    /**
-     * Gets finderUsername
-     *
-     * @return string|mixed
-     */
-    public function getFinderUsername()
-    {
-        return $this->container['finderUsername'];
-    }
-
-    /**
-     * Sets finderUsername
-     *
-     * @param string|mixed $finderUsername finderUsername
-     *
-     * @return $this
-     */
-    public function setFinderUsername($finderUsername)
-    {
-        $this->container['finderUsername'] = $finderUsername;
+        $this->container['failList'] = $failList;
 
         return $this;
     }

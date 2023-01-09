@@ -1,6 +1,6 @@
 <?php
 /**
- * HeadClickSpec
+ * AssetPermissionsScenesUpdateResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * HeadClickSpec Class Doc Comment
+ * AssetPermissionsScenesUpdateResponseData Class Doc Comment
  *
  * @category Class
- * @description 头像点击跳转信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class HeadClickSpec implements ModelInterface, ArrayAccess
+class AssetPermissionsScenesUpdateResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'head_click_spec';
+    protected static $swaggerModelName = 'AssetPermissionsScenesUpdateResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'brandAppId' => 'string',
-        'searchBrandAreaKeyword' => 'string',
-        'finderUsername' => 'string'
+        'successList' => '\TencentAds\Model\DataNexusGrantSuccessListItem[]'
     ];
 
     /**
@@ -69,9 +66,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'brandAppId' => null,
-        'searchBrandAreaKeyword' => null,
-        'finderUsername' => null
+        'successList' => null
     ];
 
     /**
@@ -101,9 +96,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'brandAppId' => 'brand_app_id',
-        'searchBrandAreaKeyword' => 'search_brand_area_keyword',
-        'finderUsername' => 'finder_username'
+        'successList' => 'success_list'
     ];
 
     /**
@@ -112,9 +105,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'brandAppId' => 'setBrandAppId',
-        'searchBrandAreaKeyword' => 'setSearchBrandAreaKeyword',
-        'finderUsername' => 'setFinderUsername'
+        'successList' => 'setSuccessList'
     ];
 
     /**
@@ -123,9 +114,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'brandAppId' => 'getBrandAppId',
-        'searchBrandAreaKeyword' => 'getSearchBrandAreaKeyword',
-        'finderUsername' => 'getFinderUsername'
+        'successList' => 'getSuccessList'
     ];
 
     /**
@@ -188,9 +177,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['brandAppId'] = isset($data['brandAppId']) ? $data['brandAppId'] : null;
-        $this->container['searchBrandAreaKeyword'] = isset($data['searchBrandAreaKeyword']) ? $data['searchBrandAreaKeyword'] : null;
-        $this->container['finderUsername'] = isset($data['finderUsername']) ? $data['finderUsername'] : null;
+        $this->container['successList'] = isset($data['successList']) ? $data['successList'] : null;
     }
 
     /**
@@ -218,73 +205,25 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets brandAppId
+     * Gets successList
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\DataNexusGrantSuccessListItem[]|mixed
      */
-    public function getBrandAppId()
+    public function getSuccessList()
     {
-        return $this->container['brandAppId'];
+        return $this->container['successList'];
     }
 
     /**
-     * Sets brandAppId
+     * Sets successList
      *
-     * @param string|mixed $brandAppId brandAppId
+     * @param \TencentAds\Model\DataNexusGrantSuccessListItem[]|mixed $successList successList
      *
      * @return $this
      */
-    public function setBrandAppId($brandAppId)
+    public function setSuccessList($successList)
     {
-        $this->container['brandAppId'] = $brandAppId;
-
-        return $this;
-    }
-
-    /**
-     * Gets searchBrandAreaKeyword
-     *
-     * @return string|mixed
-     */
-    public function getSearchBrandAreaKeyword()
-    {
-        return $this->container['searchBrandAreaKeyword'];
-    }
-
-    /**
-     * Sets searchBrandAreaKeyword
-     *
-     * @param string|mixed $searchBrandAreaKeyword searchBrandAreaKeyword
-     *
-     * @return $this
-     */
-    public function setSearchBrandAreaKeyword($searchBrandAreaKeyword)
-    {
-        $this->container['searchBrandAreaKeyword'] = $searchBrandAreaKeyword;
-
-        return $this;
-    }
-
-    /**
-     * Gets finderUsername
-     *
-     * @return string|mixed
-     */
-    public function getFinderUsername()
-    {
-        return $this->container['finderUsername'];
-    }
-
-    /**
-     * Sets finderUsername
-     *
-     * @param string|mixed $finderUsername finderUsername
-     *
-     * @return $this
-     */
-    public function setFinderUsername($finderUsername)
-    {
-        $this->container['finderUsername'] = $finderUsername;
+        $this->container['successList'] = $successList;
 
         return $this;
     }

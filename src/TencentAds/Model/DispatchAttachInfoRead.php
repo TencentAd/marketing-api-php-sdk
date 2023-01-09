@@ -1,6 +1,6 @@
 <?php
 /**
- * HeadClickSpec
+ * DispatchAttachInfoRead
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * HeadClickSpec Class Doc Comment
+ * DispatchAttachInfoRead Class Doc Comment
  *
  * @category Class
- * @description 头像点击跳转信息
+ * @description 文件分发附属信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class HeadClickSpec implements ModelInterface, ArrayAccess
+class DispatchAttachInfoRead implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'head_click_spec';
+    protected static $swaggerModelName = 'dispatch_attach_info_read';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'brandAppId' => 'string',
-        'searchBrandAreaKeyword' => 'string',
-        'finderUsername' => 'string'
+        'dataSourceId' => 'int'
     ];
 
     /**
@@ -69,9 +67,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'brandAppId' => null,
-        'searchBrandAreaKeyword' => null,
-        'finderUsername' => null
+        'dataSourceId' => 'int64'
     ];
 
     /**
@@ -101,9 +97,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'brandAppId' => 'brand_app_id',
-        'searchBrandAreaKeyword' => 'search_brand_area_keyword',
-        'finderUsername' => 'finder_username'
+        'dataSourceId' => 'data_source_id'
     ];
 
     /**
@@ -112,9 +106,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'brandAppId' => 'setBrandAppId',
-        'searchBrandAreaKeyword' => 'setSearchBrandAreaKeyword',
-        'finderUsername' => 'setFinderUsername'
+        'dataSourceId' => 'setDataSourceId'
     ];
 
     /**
@@ -123,9 +115,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'brandAppId' => 'getBrandAppId',
-        'searchBrandAreaKeyword' => 'getSearchBrandAreaKeyword',
-        'finderUsername' => 'getFinderUsername'
+        'dataSourceId' => 'getDataSourceId'
     ];
 
     /**
@@ -188,9 +178,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['brandAppId'] = isset($data['brandAppId']) ? $data['brandAppId'] : null;
-        $this->container['searchBrandAreaKeyword'] = isset($data['searchBrandAreaKeyword']) ? $data['searchBrandAreaKeyword'] : null;
-        $this->container['finderUsername'] = isset($data['finderUsername']) ? $data['finderUsername'] : null;
+        $this->container['dataSourceId'] = isset($data['dataSourceId']) ? $data['dataSourceId'] : null;
     }
 
     /**
@@ -218,73 +206,25 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets brandAppId
+     * Gets dataSourceId
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getBrandAppId()
+    public function getDataSourceId()
     {
-        return $this->container['brandAppId'];
+        return $this->container['dataSourceId'];
     }
 
     /**
-     * Sets brandAppId
+     * Sets dataSourceId
      *
-     * @param string|mixed $brandAppId brandAppId
+     * @param int|mixed $dataSourceId dataSourceId
      *
      * @return $this
      */
-    public function setBrandAppId($brandAppId)
+    public function setDataSourceId($dataSourceId)
     {
-        $this->container['brandAppId'] = $brandAppId;
-
-        return $this;
-    }
-
-    /**
-     * Gets searchBrandAreaKeyword
-     *
-     * @return string|mixed
-     */
-    public function getSearchBrandAreaKeyword()
-    {
-        return $this->container['searchBrandAreaKeyword'];
-    }
-
-    /**
-     * Sets searchBrandAreaKeyword
-     *
-     * @param string|mixed $searchBrandAreaKeyword searchBrandAreaKeyword
-     *
-     * @return $this
-     */
-    public function setSearchBrandAreaKeyword($searchBrandAreaKeyword)
-    {
-        $this->container['searchBrandAreaKeyword'] = $searchBrandAreaKeyword;
-
-        return $this;
-    }
-
-    /**
-     * Gets finderUsername
-     *
-     * @return string|mixed
-     */
-    public function getFinderUsername()
-    {
-        return $this->container['finderUsername'];
-    }
-
-    /**
-     * Sets finderUsername
-     *
-     * @param string|mixed $finderUsername finderUsername
-     *
-     * @return $this
-     */
-    public function setFinderUsername($finderUsername)
-    {
-        $this->container['finderUsername'] = $finderUsername;
+        $this->container['dataSourceId'] = $dataSourceId;
 
         return $this;
     }

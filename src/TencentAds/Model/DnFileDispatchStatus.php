@@ -1,6 +1,6 @@
 <?php
 /**
- * PathType
+ * DnFileDispatchStatus
  *
  * PHP version 5
  *
@@ -31,23 +31,23 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PathType Class Doc Comment
+ * DnFileDispatchStatus Class Doc Comment
  *
  * @category Class
- * @description 资产授权路径类型
+ * @description 文件分发状态
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PathType
+class DnFileDispatchStatus
 {
     /**
      * Possible values of this enum
      */
-    const BM = 'PATH_TYPE_BM';
-    const MDM = 'PATH_TYPE_MDM';
-    const POINT_TO_POINT = 'PATH_TYPE_POINT_TO_POINT';
-    const AGENCY = 'PATH_TYPE_AGENCY';
+    const UN_DISPATCHED = 'UN_DISPATCHED';
+    const DISPATCHING = 'DISPATCHING';
+    const DISPATCHED = 'DISPATCHED';
+    const BE_CANCELLING = 'BE_CANCELLING';
     
     /**
      * Gets allowable values of the enum
@@ -56,10 +56,10 @@ class PathType
     public static function getAllowableEnumValues()
     {
         return [
-            self::BM,
-            self::MDM,
-            self::POINT_TO_POINT,
-            self::AGENCY,
+            self::UN_DISPATCHED,
+            self::DISPATCHING,
+            self::DISPATCHED,
+            self::BE_CANCELLING,
         ];
     }
 }

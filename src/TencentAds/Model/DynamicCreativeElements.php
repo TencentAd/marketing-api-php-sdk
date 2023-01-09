@@ -132,6 +132,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'excitationText' => 'string',
         'originVideo' => 'string',
         'redEnvelopeStruct' => '\TencentAds\Model\RedEnvelopeStruct',
+        'buttonTextJumpInfo' => '\TencentAds\Model\LandingPageStructure',
         'image3ComponentOptions' => '\TencentAds\Model\ImageComponentOption[]'
     ];
 
@@ -215,6 +216,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'excitationText' => null,
         'originVideo' => null,
         'redEnvelopeStruct' => null,
+        'buttonTextJumpInfo' => null,
         'image3ComponentOptions' => null
     ];
 
@@ -319,6 +321,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'excitationText' => 'excitation_text',
         'originVideo' => 'origin_video',
         'redEnvelopeStruct' => 'red_envelope_struct',
+        'buttonTextJumpInfo' => 'button_text_jump_info',
         'image3ComponentOptions' => 'image3_component_options'
     ];
 
@@ -402,6 +405,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'excitationText' => 'setExcitationText',
         'originVideo' => 'setOriginVideo',
         'redEnvelopeStruct' => 'setRedEnvelopeStruct',
+        'buttonTextJumpInfo' => 'setButtonTextJumpInfo',
         'image3ComponentOptions' => 'setImage3ComponentOptions'
     ];
 
@@ -485,6 +489,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         'excitationText' => 'getExcitationText',
         'originVideo' => 'getOriginVideo',
         'redEnvelopeStruct' => 'getRedEnvelopeStruct',
+        'buttonTextJumpInfo' => 'getButtonTextJumpInfo',
         'image3ComponentOptions' => 'getImage3ComponentOptions'
     ];
 
@@ -622,6 +627,7 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
         $this->container['excitationText'] = isset($data['excitationText']) ? $data['excitationText'] : null;
         $this->container['originVideo'] = isset($data['originVideo']) ? $data['originVideo'] : null;
         $this->container['redEnvelopeStruct'] = isset($data['redEnvelopeStruct']) ? $data['redEnvelopeStruct'] : null;
+        $this->container['buttonTextJumpInfo'] = isset($data['buttonTextJumpInfo']) ? $data['buttonTextJumpInfo'] : null;
         $this->container['image3ComponentOptions'] = isset($data['image3ComponentOptions']) ? $data['image3ComponentOptions'] : null;
     }
 
@@ -2421,6 +2427,30 @@ class DynamicCreativeElements implements ModelInterface, ArrayAccess
     public function setRedEnvelopeStruct($redEnvelopeStruct)
     {
         $this->container['redEnvelopeStruct'] = $redEnvelopeStruct;
+
+        return $this;
+    }
+
+    /**
+     * Gets buttonTextJumpInfo
+     *
+     * @return \TencentAds\Model\LandingPageStructure|mixed
+     */
+    public function getButtonTextJumpInfo()
+    {
+        return $this->container['buttonTextJumpInfo'];
+    }
+
+    /**
+     * Sets buttonTextJumpInfo
+     *
+     * @param \TencentAds\Model\LandingPageStructure|mixed $buttonTextJumpInfo buttonTextJumpInfo
+     *
+     * @return $this
+     */
+    public function setButtonTextJumpInfo($buttonTextJumpInfo)
+    {
+        $this->container['buttonTextJumpInfo'] = $buttonTextJumpInfo;
 
         return $this;
     }

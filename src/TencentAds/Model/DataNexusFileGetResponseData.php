@@ -1,6 +1,6 @@
 <?php
 /**
- * HeadClickSpec
+ * DataNexusFileGetResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * HeadClickSpec Class Doc Comment
+ * DataNexusFileGetResponseData Class Doc Comment
  *
  * @category Class
- * @description 头像点击跳转信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class HeadClickSpec implements ModelInterface, ArrayAccess
+class DataNexusFileGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'head_click_spec';
+    protected static $swaggerModelName = 'DataNexusFileGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'brandAppId' => 'string',
-        'searchBrandAreaKeyword' => 'string',
-        'finderUsername' => 'string'
+        'pageInfo' => '\TencentAds\Model\PageInfo',
+        'list' => '\TencentAds\Model\DnFileListItem[]'
     ];
 
     /**
@@ -69,9 +67,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'brandAppId' => null,
-        'searchBrandAreaKeyword' => null,
-        'finderUsername' => null
+        'pageInfo' => null,
+        'list' => null
     ];
 
     /**
@@ -101,9 +98,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'brandAppId' => 'brand_app_id',
-        'searchBrandAreaKeyword' => 'search_brand_area_keyword',
-        'finderUsername' => 'finder_username'
+        'pageInfo' => 'page_info',
+        'list' => 'list'
     ];
 
     /**
@@ -112,9 +108,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'brandAppId' => 'setBrandAppId',
-        'searchBrandAreaKeyword' => 'setSearchBrandAreaKeyword',
-        'finderUsername' => 'setFinderUsername'
+        'pageInfo' => 'setPageInfo',
+        'list' => 'setList'
     ];
 
     /**
@@ -123,9 +118,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'brandAppId' => 'getBrandAppId',
-        'searchBrandAreaKeyword' => 'getSearchBrandAreaKeyword',
-        'finderUsername' => 'getFinderUsername'
+        'pageInfo' => 'getPageInfo',
+        'list' => 'getList'
     ];
 
     /**
@@ -188,9 +182,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['brandAppId'] = isset($data['brandAppId']) ? $data['brandAppId'] : null;
-        $this->container['searchBrandAreaKeyword'] = isset($data['searchBrandAreaKeyword']) ? $data['searchBrandAreaKeyword'] : null;
-        $this->container['finderUsername'] = isset($data['finderUsername']) ? $data['finderUsername'] : null;
+        $this->container['pageInfo'] = isset($data['pageInfo']) ? $data['pageInfo'] : null;
+        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
     }
 
     /**
@@ -218,73 +211,49 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets brandAppId
+     * Gets pageInfo
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\PageInfo|mixed
      */
-    public function getBrandAppId()
+    public function getPageInfo()
     {
-        return $this->container['brandAppId'];
+        return $this->container['pageInfo'];
     }
 
     /**
-     * Sets brandAppId
+     * Sets pageInfo
      *
-     * @param string|mixed $brandAppId brandAppId
+     * @param \TencentAds\Model\PageInfo|mixed $pageInfo pageInfo
      *
      * @return $this
      */
-    public function setBrandAppId($brandAppId)
+    public function setPageInfo($pageInfo)
     {
-        $this->container['brandAppId'] = $brandAppId;
+        $this->container['pageInfo'] = $pageInfo;
 
         return $this;
     }
 
     /**
-     * Gets searchBrandAreaKeyword
+     * Gets list
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\DnFileListItem[]|mixed
      */
-    public function getSearchBrandAreaKeyword()
+    public function getList()
     {
-        return $this->container['searchBrandAreaKeyword'];
+        return $this->container['list'];
     }
 
     /**
-     * Sets searchBrandAreaKeyword
+     * Sets list
      *
-     * @param string|mixed $searchBrandAreaKeyword searchBrandAreaKeyword
+     * @param \TencentAds\Model\DnFileListItem[]|mixed $list list
      *
      * @return $this
      */
-    public function setSearchBrandAreaKeyword($searchBrandAreaKeyword)
+    public function setList($list)
     {
-        $this->container['searchBrandAreaKeyword'] = $searchBrandAreaKeyword;
-
-        return $this;
-    }
-
-    /**
-     * Gets finderUsername
-     *
-     * @return string|mixed
-     */
-    public function getFinderUsername()
-    {
-        return $this->container['finderUsername'];
-    }
-
-    /**
-     * Sets finderUsername
-     *
-     * @param string|mixed $finderUsername finderUsername
-     *
-     * @return $this
-     */
-    public function setFinderUsername($finderUsername)
-    {
-        $this->container['finderUsername'] = $finderUsername;
+        $this->container['list'] = $list;
 
         return $this;
     }

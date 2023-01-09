@@ -1,6 +1,6 @@
 <?php
 /**
- * ActionSetAccessWayType
+ * DnFileAccessWayType
  *
  * PHP version 5
  *
@@ -31,7 +31,7 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ActionSetAccessWayType Class Doc Comment
+ * DnFileAccessWayType Class Doc Comment
  *
  * @category Class
  * @description 数据源来源
@@ -39,7 +39,7 @@ use \TencentAds\ObjectSerializer;
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ActionSetAccessWayType
+class DnFileAccessWayType
 {
     /**
      * Possible values of this enum

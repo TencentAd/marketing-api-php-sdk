@@ -1,6 +1,6 @@
 <?php
 /**
- * HeadClickSpec
+ * AssetPermissionsScenesUpdateRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * HeadClickSpec Class Doc Comment
+ * AssetPermissionsScenesUpdateRequest Class Doc Comment
  *
  * @category Class
- * @description 头像点击跳转信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class HeadClickSpec implements ModelInterface, ArrayAccess
+class AssetPermissionsScenesUpdateRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'head_click_spec';
+    protected static $swaggerModelName = 'AssetPermissionsScenesUpdateRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,12 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'brandAppId' => 'string',
-        'searchBrandAreaKeyword' => 'string',
-        'finderUsername' => 'string'
+        'accountId' => 'int',
+        'assetType' => '\TencentAds\Model\AssetType',
+        'assetId' => 'int',
+        'licensingAccountId' => 'int',
+        'pathType' => '\TencentAds\Model\PathType',
+        'permissionList' => 'string[]'
     ];
 
     /**
@@ -69,9 +71,12 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'brandAppId' => null,
-        'searchBrandAreaKeyword' => null,
-        'finderUsername' => null
+        'accountId' => 'int64',
+        'assetType' => null,
+        'assetId' => 'int64',
+        'licensingAccountId' => 'int64',
+        'pathType' => null,
+        'permissionList' => null
     ];
 
     /**
@@ -101,9 +106,12 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'brandAppId' => 'brand_app_id',
-        'searchBrandAreaKeyword' => 'search_brand_area_keyword',
-        'finderUsername' => 'finder_username'
+        'accountId' => 'account_id',
+        'assetType' => 'asset_type',
+        'assetId' => 'asset_id',
+        'licensingAccountId' => 'licensing_account_id',
+        'pathType' => 'path_type',
+        'permissionList' => 'permission_list'
     ];
 
     /**
@@ -112,9 +120,12 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'brandAppId' => 'setBrandAppId',
-        'searchBrandAreaKeyword' => 'setSearchBrandAreaKeyword',
-        'finderUsername' => 'setFinderUsername'
+        'accountId' => 'setAccountId',
+        'assetType' => 'setAssetType',
+        'assetId' => 'setAssetId',
+        'licensingAccountId' => 'setLicensingAccountId',
+        'pathType' => 'setPathType',
+        'permissionList' => 'setPermissionList'
     ];
 
     /**
@@ -123,9 +134,12 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'brandAppId' => 'getBrandAppId',
-        'searchBrandAreaKeyword' => 'getSearchBrandAreaKeyword',
-        'finderUsername' => 'getFinderUsername'
+        'accountId' => 'getAccountId',
+        'assetType' => 'getAssetType',
+        'assetId' => 'getAssetId',
+        'licensingAccountId' => 'getLicensingAccountId',
+        'pathType' => 'getPathType',
+        'permissionList' => 'getPermissionList'
     ];
 
     /**
@@ -188,9 +202,12 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['brandAppId'] = isset($data['brandAppId']) ? $data['brandAppId'] : null;
-        $this->container['searchBrandAreaKeyword'] = isset($data['searchBrandAreaKeyword']) ? $data['searchBrandAreaKeyword'] : null;
-        $this->container['finderUsername'] = isset($data['finderUsername']) ? $data['finderUsername'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['assetType'] = isset($data['assetType']) ? $data['assetType'] : null;
+        $this->container['assetId'] = isset($data['assetId']) ? $data['assetId'] : null;
+        $this->container['licensingAccountId'] = isset($data['licensingAccountId']) ? $data['licensingAccountId'] : null;
+        $this->container['pathType'] = isset($data['pathType']) ? $data['pathType'] : null;
+        $this->container['permissionList'] = isset($data['permissionList']) ? $data['permissionList'] : null;
     }
 
     /**
@@ -218,73 +235,145 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets brandAppId
+     * Gets accountId
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getBrandAppId()
+    public function getAccountId()
     {
-        return $this->container['brandAppId'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets brandAppId
+     * Sets accountId
      *
-     * @param string|mixed $brandAppId brandAppId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setBrandAppId($brandAppId)
+    public function setAccountId($accountId)
     {
-        $this->container['brandAppId'] = $brandAppId;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }
 
     /**
-     * Gets searchBrandAreaKeyword
+     * Gets assetType
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\AssetType|mixed
      */
-    public function getSearchBrandAreaKeyword()
+    public function getAssetType()
     {
-        return $this->container['searchBrandAreaKeyword'];
+        return $this->container['assetType'];
     }
 
     /**
-     * Sets searchBrandAreaKeyword
+     * Sets assetType
      *
-     * @param string|mixed $searchBrandAreaKeyword searchBrandAreaKeyword
+     * @param \TencentAds\Model\AssetType|mixed $assetType assetType
      *
      * @return $this
      */
-    public function setSearchBrandAreaKeyword($searchBrandAreaKeyword)
+    public function setAssetType($assetType)
     {
-        $this->container['searchBrandAreaKeyword'] = $searchBrandAreaKeyword;
+        $this->container['assetType'] = $assetType;
 
         return $this;
     }
 
     /**
-     * Gets finderUsername
+     * Gets assetId
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getFinderUsername()
+    public function getAssetId()
     {
-        return $this->container['finderUsername'];
+        return $this->container['assetId'];
     }
 
     /**
-     * Sets finderUsername
+     * Sets assetId
      *
-     * @param string|mixed $finderUsername finderUsername
+     * @param int|mixed $assetId assetId
      *
      * @return $this
      */
-    public function setFinderUsername($finderUsername)
+    public function setAssetId($assetId)
     {
-        $this->container['finderUsername'] = $finderUsername;
+        $this->container['assetId'] = $assetId;
+
+        return $this;
+    }
+
+    /**
+     * Gets licensingAccountId
+     *
+     * @return int|mixed
+     */
+    public function getLicensingAccountId()
+    {
+        return $this->container['licensingAccountId'];
+    }
+
+    /**
+     * Sets licensingAccountId
+     *
+     * @param int|mixed $licensingAccountId licensingAccountId
+     *
+     * @return $this
+     */
+    public function setLicensingAccountId($licensingAccountId)
+    {
+        $this->container['licensingAccountId'] = $licensingAccountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets pathType
+     *
+     * @return \TencentAds\Model\PathType|mixed
+     */
+    public function getPathType()
+    {
+        return $this->container['pathType'];
+    }
+
+    /**
+     * Sets pathType
+     *
+     * @param \TencentAds\Model\PathType|mixed $pathType pathType
+     *
+     * @return $this
+     */
+    public function setPathType($pathType)
+    {
+        $this->container['pathType'] = $pathType;
+
+        return $this;
+    }
+
+    /**
+     * Gets permissionList
+     *
+     * @return string[]|mixed
+     */
+    public function getPermissionList()
+    {
+        return $this->container['permissionList'];
+    }
+
+    /**
+     * Sets permissionList
+     *
+     * @param string[]|mixed $permissionList permissionList
+     *
+     * @return $this
+     */
+    public function setPermissionList($permissionList)
+    {
+        $this->container['permissionList'] = $permissionList;
 
         return $this;
     }

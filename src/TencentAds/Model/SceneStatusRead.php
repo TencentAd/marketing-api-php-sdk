@@ -1,6 +1,6 @@
 <?php
 /**
- * HeadClickSpec
+ * SceneStatusRead
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * HeadClickSpec Class Doc Comment
+ * SceneStatusRead Class Doc Comment
  *
  * @category Class
- * @description 头像点击跳转信息
+ * @description 场景分发状态
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class HeadClickSpec implements ModelInterface, ArrayAccess
+class SceneStatusRead implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'head_click_spec';
+    protected static $swaggerModelName = 'scene_status_read';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,9 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'brandAppId' => 'string',
-        'searchBrandAreaKeyword' => 'string',
-        'finderUsername' => 'string'
+        'scene' => '\TencentAds\Model\FileAvailableScene',
+        'dispathchStatus' => '\TencentAds\Model\DnFileDispatchStatus',
+        'attachInfo' => '\TencentAds\Model\DispatchAttachInfoRead'
     ];
 
     /**
@@ -69,9 +69,9 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'brandAppId' => null,
-        'searchBrandAreaKeyword' => null,
-        'finderUsername' => null
+        'scene' => null,
+        'dispathchStatus' => null,
+        'attachInfo' => null
     ];
 
     /**
@@ -101,9 +101,9 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'brandAppId' => 'brand_app_id',
-        'searchBrandAreaKeyword' => 'search_brand_area_keyword',
-        'finderUsername' => 'finder_username'
+        'scene' => 'scene',
+        'dispathchStatus' => 'dispathch_status',
+        'attachInfo' => 'attach_info'
     ];
 
     /**
@@ -112,9 +112,9 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'brandAppId' => 'setBrandAppId',
-        'searchBrandAreaKeyword' => 'setSearchBrandAreaKeyword',
-        'finderUsername' => 'setFinderUsername'
+        'scene' => 'setScene',
+        'dispathchStatus' => 'setDispathchStatus',
+        'attachInfo' => 'setAttachInfo'
     ];
 
     /**
@@ -123,9 +123,9 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'brandAppId' => 'getBrandAppId',
-        'searchBrandAreaKeyword' => 'getSearchBrandAreaKeyword',
-        'finderUsername' => 'getFinderUsername'
+        'scene' => 'getScene',
+        'dispathchStatus' => 'getDispathchStatus',
+        'attachInfo' => 'getAttachInfo'
     ];
 
     /**
@@ -188,9 +188,9 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['brandAppId'] = isset($data['brandAppId']) ? $data['brandAppId'] : null;
-        $this->container['searchBrandAreaKeyword'] = isset($data['searchBrandAreaKeyword']) ? $data['searchBrandAreaKeyword'] : null;
-        $this->container['finderUsername'] = isset($data['finderUsername']) ? $data['finderUsername'] : null;
+        $this->container['scene'] = isset($data['scene']) ? $data['scene'] : null;
+        $this->container['dispathchStatus'] = isset($data['dispathchStatus']) ? $data['dispathchStatus'] : null;
+        $this->container['attachInfo'] = isset($data['attachInfo']) ? $data['attachInfo'] : null;
     }
 
     /**
@@ -218,73 +218,73 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets brandAppId
+     * Gets scene
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\FileAvailableScene|mixed
      */
-    public function getBrandAppId()
+    public function getScene()
     {
-        return $this->container['brandAppId'];
+        return $this->container['scene'];
     }
 
     /**
-     * Sets brandAppId
+     * Sets scene
      *
-     * @param string|mixed $brandAppId brandAppId
+     * @param \TencentAds\Model\FileAvailableScene|mixed $scene scene
      *
      * @return $this
      */
-    public function setBrandAppId($brandAppId)
+    public function setScene($scene)
     {
-        $this->container['brandAppId'] = $brandAppId;
+        $this->container['scene'] = $scene;
 
         return $this;
     }
 
     /**
-     * Gets searchBrandAreaKeyword
+     * Gets dispathchStatus
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\DnFileDispatchStatus|mixed
      */
-    public function getSearchBrandAreaKeyword()
+    public function getDispathchStatus()
     {
-        return $this->container['searchBrandAreaKeyword'];
+        return $this->container['dispathchStatus'];
     }
 
     /**
-     * Sets searchBrandAreaKeyword
+     * Sets dispathchStatus
      *
-     * @param string|mixed $searchBrandAreaKeyword searchBrandAreaKeyword
+     * @param \TencentAds\Model\DnFileDispatchStatus|mixed $dispathchStatus dispathchStatus
      *
      * @return $this
      */
-    public function setSearchBrandAreaKeyword($searchBrandAreaKeyword)
+    public function setDispathchStatus($dispathchStatus)
     {
-        $this->container['searchBrandAreaKeyword'] = $searchBrandAreaKeyword;
+        $this->container['dispathchStatus'] = $dispathchStatus;
 
         return $this;
     }
 
     /**
-     * Gets finderUsername
+     * Gets attachInfo
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\DispatchAttachInfoRead|mixed
      */
-    public function getFinderUsername()
+    public function getAttachInfo()
     {
-        return $this->container['finderUsername'];
+        return $this->container['attachInfo'];
     }
 
     /**
-     * Sets finderUsername
+     * Sets attachInfo
      *
-     * @param string|mixed $finderUsername finderUsername
+     * @param \TencentAds\Model\DispatchAttachInfoRead|mixed $attachInfo attachInfo
      *
      * @return $this
      */
-    public function setFinderUsername($finderUsername)
+    public function setAttachInfo($attachInfo)
     {
-        $this->container['finderUsername'] = $finderUsername;
+        $this->container['attachInfo'] = $attachInfo;
 
         return $this;
     }

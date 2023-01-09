@@ -1,6 +1,6 @@
 <?php
 /**
- * PathType
+ * FileDispatchSwitch
  *
  * PHP version 5
  *
@@ -31,23 +31,21 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PathType Class Doc Comment
+ * FileDispatchSwitch Class Doc Comment
  *
  * @category Class
- * @description 资产授权路径类型
+ * @description 是否开启自动分发，如打开开关，文件上传后会自动分发给所选应用场景
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PathType
+class FileDispatchSwitch
 {
     /**
      * Possible values of this enum
      */
-    const BM = 'PATH_TYPE_BM';
-    const MDM = 'PATH_TYPE_MDM';
-    const POINT_TO_POINT = 'PATH_TYPE_POINT_TO_POINT';
-    const AGENCY = 'PATH_TYPE_AGENCY';
+    const ON = 'SWITCH_ON';
+    const OFF = 'SWITCH_OFF';
     
     /**
      * Gets allowable values of the enum
@@ -56,10 +54,8 @@ class PathType
     public static function getAllowableEnumValues()
     {
         return [
-            self::BM,
-            self::MDM,
-            self::POINT_TO_POINT,
-            self::AGENCY,
+            self::ON,
+            self::OFF,
         ];
     }
 }

@@ -65,7 +65,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
         'description' => 'string',
         'activateStatus' => 'bool',
         'createdTime' => 'string',
-        'accessWay' => '\TencentAds\Model\ActionSetAccessWayType',
+        'accessWay' => '\TencentAds\Model\DnFileAccessWayType',
         'usages' => 'string[]',
         'enableConversionClaim' => 'bool',
         'permission' => '\TencentAds\Model\Permission'
@@ -436,7 +436,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Gets accessWay
      *
-     * @return \TencentAds\Model\ActionSetAccessWayType|mixed
+     * @return \TencentAds\Model\DnFileAccessWayType|mixed
      */
     public function getAccessWay()
     {
@@ -446,7 +446,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Sets accessWay
      *
-     * @param \TencentAds\Model\ActionSetAccessWayType|mixed $accessWay accessWay
+     * @param \TencentAds\Model\DnFileAccessWayType|mixed $accessWay accessWay
      *
      * @return $this
      */

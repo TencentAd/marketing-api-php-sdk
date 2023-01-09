@@ -114,7 +114,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'video2ComponentOptions' => '\TencentAds\Model\VideoComponentOption[]',
         'imageListJumpInfo' => '\TencentAds\Model\LandingPageStructure[]',
         'originVideo' => 'string',
-        'redEnvelopeStruct' => '\TencentAds\Model\RedEnvelopeStruct'
+        'redEnvelopeStruct' => '\TencentAds\Model\RedEnvelopeStruct',
+        'buttonTextJumpInfo' => '\TencentAds\Model\LandingPageStructure'
     ];
 
     /**
@@ -179,7 +180,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'video2ComponentOptions' => null,
         'imageListJumpInfo' => null,
         'originVideo' => null,
-        'redEnvelopeStruct' => null
+        'redEnvelopeStruct' => null,
+        'buttonTextJumpInfo' => null
     ];
 
     /**
@@ -265,7 +267,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'video2ComponentOptions' => 'video2_component_options',
         'imageListJumpInfo' => 'image_list_jump_info',
         'originVideo' => 'origin_video',
-        'redEnvelopeStruct' => 'red_envelope_struct'
+        'redEnvelopeStruct' => 'red_envelope_struct',
+        'buttonTextJumpInfo' => 'button_text_jump_info'
     ];
 
     /**
@@ -330,7 +333,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'video2ComponentOptions' => 'setVideo2ComponentOptions',
         'imageListJumpInfo' => 'setImageListJumpInfo',
         'originVideo' => 'setOriginVideo',
-        'redEnvelopeStruct' => 'setRedEnvelopeStruct'
+        'redEnvelopeStruct' => 'setRedEnvelopeStruct',
+        'buttonTextJumpInfo' => 'setButtonTextJumpInfo'
     ];
 
     /**
@@ -395,7 +399,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'video2ComponentOptions' => 'getVideo2ComponentOptions',
         'imageListJumpInfo' => 'getImageListJumpInfo',
         'originVideo' => 'getOriginVideo',
-        'redEnvelopeStruct' => 'getRedEnvelopeStruct'
+        'redEnvelopeStruct' => 'getRedEnvelopeStruct',
+        'buttonTextJumpInfo' => 'getButtonTextJumpInfo'
     ];
 
     /**
@@ -515,6 +520,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         $this->container['imageListJumpInfo'] = isset($data['imageListJumpInfo']) ? $data['imageListJumpInfo'] : null;
         $this->container['originVideo'] = isset($data['originVideo']) ? $data['originVideo'] : null;
         $this->container['redEnvelopeStruct'] = isset($data['redEnvelopeStruct']) ? $data['redEnvelopeStruct'] : null;
+        $this->container['buttonTextJumpInfo'] = isset($data['buttonTextJumpInfo']) ? $data['buttonTextJumpInfo'] : null;
     }
 
     /**
@@ -1905,6 +1911,30 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     public function setRedEnvelopeStruct($redEnvelopeStruct)
     {
         $this->container['redEnvelopeStruct'] = $redEnvelopeStruct;
+
+        return $this;
+    }
+
+    /**
+     * Gets buttonTextJumpInfo
+     *
+     * @return \TencentAds\Model\LandingPageStructure|mixed
+     */
+    public function getButtonTextJumpInfo()
+    {
+        return $this->container['buttonTextJumpInfo'];
+    }
+
+    /**
+     * Sets buttonTextJumpInfo
+     *
+     * @param \TencentAds\Model\LandingPageStructure|mixed $buttonTextJumpInfo buttonTextJumpInfo
+     *
+     * @return $this
+     */
+    public function setButtonTextJumpInfo($buttonTextJumpInfo)
+    {
+        $this->container['buttonTextJumpInfo'] = $buttonTextJumpInfo;
 
         return $this;
     }

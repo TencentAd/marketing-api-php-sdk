@@ -1,6 +1,6 @@
 <?php
 /**
- * HeadClickSpec
+ * DataNexusGrantSuccessListItem
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * HeadClickSpec Class Doc Comment
+ * DataNexusGrantSuccessListItem Class Doc Comment
  *
  * @category Class
- * @description 头像点击跳转信息
+ * @description 授权成功信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class HeadClickSpec implements ModelInterface, ArrayAccess
+class DataNexusGrantSuccessListItem implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'head_click_spec';
+    protected static $swaggerModelName = 'data_nexus_grant_success_list_item';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'brandAppId' => 'string',
-        'searchBrandAreaKeyword' => 'string',
-        'finderUsername' => 'string'
+        'assetId' => 'int',
+        'failReason' => 'string'
     ];
 
     /**
@@ -69,9 +68,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'brandAppId' => null,
-        'searchBrandAreaKeyword' => null,
-        'finderUsername' => null
+        'assetId' => 'int64',
+        'failReason' => null
     ];
 
     /**
@@ -101,9 +99,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'brandAppId' => 'brand_app_id',
-        'searchBrandAreaKeyword' => 'search_brand_area_keyword',
-        'finderUsername' => 'finder_username'
+        'assetId' => 'asset_id',
+        'failReason' => 'fail_reason'
     ];
 
     /**
@@ -112,9 +109,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'brandAppId' => 'setBrandAppId',
-        'searchBrandAreaKeyword' => 'setSearchBrandAreaKeyword',
-        'finderUsername' => 'setFinderUsername'
+        'assetId' => 'setAssetId',
+        'failReason' => 'setFailReason'
     ];
 
     /**
@@ -123,9 +119,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'brandAppId' => 'getBrandAppId',
-        'searchBrandAreaKeyword' => 'getSearchBrandAreaKeyword',
-        'finderUsername' => 'getFinderUsername'
+        'assetId' => 'getAssetId',
+        'failReason' => 'getFailReason'
     ];
 
     /**
@@ -188,9 +183,8 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['brandAppId'] = isset($data['brandAppId']) ? $data['brandAppId'] : null;
-        $this->container['searchBrandAreaKeyword'] = isset($data['searchBrandAreaKeyword']) ? $data['searchBrandAreaKeyword'] : null;
-        $this->container['finderUsername'] = isset($data['finderUsername']) ? $data['finderUsername'] : null;
+        $this->container['assetId'] = isset($data['assetId']) ? $data['assetId'] : null;
+        $this->container['failReason'] = isset($data['failReason']) ? $data['failReason'] : null;
     }
 
     /**
@@ -218,73 +212,49 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets brandAppId
+     * Gets assetId
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getBrandAppId()
+    public function getAssetId()
     {
-        return $this->container['brandAppId'];
+        return $this->container['assetId'];
     }
 
     /**
-     * Sets brandAppId
+     * Sets assetId
      *
-     * @param string|mixed $brandAppId brandAppId
+     * @param int|mixed $assetId assetId
      *
      * @return $this
      */
-    public function setBrandAppId($brandAppId)
+    public function setAssetId($assetId)
     {
-        $this->container['brandAppId'] = $brandAppId;
+        $this->container['assetId'] = $assetId;
 
         return $this;
     }
 
     /**
-     * Gets searchBrandAreaKeyword
+     * Gets failReason
      *
      * @return string|mixed
      */
-    public function getSearchBrandAreaKeyword()
+    public function getFailReason()
     {
-        return $this->container['searchBrandAreaKeyword'];
+        return $this->container['failReason'];
     }
 
     /**
-     * Sets searchBrandAreaKeyword
+     * Sets failReason
      *
-     * @param string|mixed $searchBrandAreaKeyword searchBrandAreaKeyword
+     * @param string|mixed $failReason failReason
      *
      * @return $this
      */
-    public function setSearchBrandAreaKeyword($searchBrandAreaKeyword)
+    public function setFailReason($failReason)
     {
-        $this->container['searchBrandAreaKeyword'] = $searchBrandAreaKeyword;
-
-        return $this;
-    }
-
-    /**
-     * Gets finderUsername
-     *
-     * @return string|mixed
-     */
-    public function getFinderUsername()
-    {
-        return $this->container['finderUsername'];
-    }
-
-    /**
-     * Sets finderUsername
-     *
-     * @param string|mixed $finderUsername finderUsername
-     *
-     * @return $this
-     */
-    public function setFinderUsername($finderUsername)
-    {
-        $this->container['finderUsername'] = $finderUsername;
+        $this->container['failReason'] = $failReason;
 
         return $this;
     }

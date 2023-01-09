@@ -1,6 +1,6 @@
 <?php
 /**
- * PathType
+ * SearchExpansionSwitch
  *
  * PHP version 5
  *
@@ -31,23 +31,22 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PathType Class Doc Comment
+ * SearchExpansionSwitch Class Doc Comment
  *
  * @category Class
- * @description 资产授权路径类型
+ * @description 搜索扩量开关
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PathType
+class SearchExpansionSwitch
 {
     /**
      * Possible values of this enum
      */
-    const BM = 'PATH_TYPE_BM';
-    const MDM = 'PATH_TYPE_MDM';
-    const POINT_TO_POINT = 'PATH_TYPE_POINT_TO_POINT';
-    const AGENCY = 'PATH_TYPE_AGENCY';
+    const UNKNOWN = 'SEARCH_EXPANSION_SWITCH_UNKNOWN';
+    const OPEN = 'SEARCH_EXPANSION_SWITCH_OPEN';
+    const CLOSE = 'SEARCH_EXPANSION_SWITCH_CLOSE';
     
     /**
      * Gets allowable values of the enum
@@ -56,10 +55,9 @@ class PathType
     public static function getAllowableEnumValues()
     {
         return [
-            self::BM,
-            self::MDM,
-            self::POINT_TO_POINT,
-            self::AGENCY,
+            self::UNKNOWN,
+            self::OPEN,
+            self::CLOSE,
         ];
     }
 }

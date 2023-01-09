@@ -1,6 +1,6 @@
 <?php
 /**
- * HeadClickSpec
+ * MktSchemaDefine
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * HeadClickSpec Class Doc Comment
+ * MktSchemaDefine Class Doc Comment
  *
  * @category Class
- * @description 头像点击跳转信息
+ * @description Schema列定义
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class HeadClickSpec implements ModelInterface, ArrayAccess
+class MktSchemaDefine implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'head_click_spec';
+    protected static $swaggerModelName = 'mkt_schema_define';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,11 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'brandAppId' => 'string',
-        'searchBrandAreaKeyword' => 'string',
-        'finderUsername' => 'string'
+        'name' => 'string',
+        'colKey' => '\TencentAds\Model\FileSchemaColKey',
+        'index' => 'int',
+        'required' => 'bool',
+        'options' => '\TencentAds\Model\MktSchemaDefineOption[]'
     ];
 
     /**
@@ -69,9 +71,11 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'brandAppId' => null,
-        'searchBrandAreaKeyword' => null,
-        'finderUsername' => null
+        'name' => null,
+        'colKey' => null,
+        'index' => 'int64',
+        'required' => null,
+        'options' => null
     ];
 
     /**
@@ -101,9 +105,11 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'brandAppId' => 'brand_app_id',
-        'searchBrandAreaKeyword' => 'search_brand_area_keyword',
-        'finderUsername' => 'finder_username'
+        'name' => 'name',
+        'colKey' => 'col_key',
+        'index' => 'index',
+        'required' => 'required',
+        'options' => 'options'
     ];
 
     /**
@@ -112,9 +118,11 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'brandAppId' => 'setBrandAppId',
-        'searchBrandAreaKeyword' => 'setSearchBrandAreaKeyword',
-        'finderUsername' => 'setFinderUsername'
+        'name' => 'setName',
+        'colKey' => 'setColKey',
+        'index' => 'setIndex',
+        'required' => 'setRequired',
+        'options' => 'setOptions'
     ];
 
     /**
@@ -123,9 +131,11 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'brandAppId' => 'getBrandAppId',
-        'searchBrandAreaKeyword' => 'getSearchBrandAreaKeyword',
-        'finderUsername' => 'getFinderUsername'
+        'name' => 'getName',
+        'colKey' => 'getColKey',
+        'index' => 'getIndex',
+        'required' => 'getRequired',
+        'options' => 'getOptions'
     ];
 
     /**
@@ -188,9 +198,11 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['brandAppId'] = isset($data['brandAppId']) ? $data['brandAppId'] : null;
-        $this->container['searchBrandAreaKeyword'] = isset($data['searchBrandAreaKeyword']) ? $data['searchBrandAreaKeyword'] : null;
-        $this->container['finderUsername'] = isset($data['finderUsername']) ? $data['finderUsername'] : null;
+        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
+        $this->container['colKey'] = isset($data['colKey']) ? $data['colKey'] : null;
+        $this->container['index'] = isset($data['index']) ? $data['index'] : null;
+        $this->container['required'] = isset($data['required']) ? $data['required'] : null;
+        $this->container['options'] = isset($data['options']) ? $data['options'] : null;
     }
 
     /**
@@ -218,73 +230,121 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets brandAppId
+     * Gets name
      *
      * @return string|mixed
      */
-    public function getBrandAppId()
+    public function getName()
     {
-        return $this->container['brandAppId'];
+        return $this->container['name'];
     }
 
     /**
-     * Sets brandAppId
+     * Sets name
      *
-     * @param string|mixed $brandAppId brandAppId
+     * @param string|mixed $name name
      *
      * @return $this
      */
-    public function setBrandAppId($brandAppId)
+    public function setName($name)
     {
-        $this->container['brandAppId'] = $brandAppId;
+        $this->container['name'] = $name;
 
         return $this;
     }
 
     /**
-     * Gets searchBrandAreaKeyword
+     * Gets colKey
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\FileSchemaColKey|mixed
      */
-    public function getSearchBrandAreaKeyword()
+    public function getColKey()
     {
-        return $this->container['searchBrandAreaKeyword'];
+        return $this->container['colKey'];
     }
 
     /**
-     * Sets searchBrandAreaKeyword
+     * Sets colKey
      *
-     * @param string|mixed $searchBrandAreaKeyword searchBrandAreaKeyword
+     * @param \TencentAds\Model\FileSchemaColKey|mixed $colKey colKey
      *
      * @return $this
      */
-    public function setSearchBrandAreaKeyword($searchBrandAreaKeyword)
+    public function setColKey($colKey)
     {
-        $this->container['searchBrandAreaKeyword'] = $searchBrandAreaKeyword;
+        $this->container['colKey'] = $colKey;
 
         return $this;
     }
 
     /**
-     * Gets finderUsername
+     * Gets index
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getFinderUsername()
+    public function getIndex()
     {
-        return $this->container['finderUsername'];
+        return $this->container['index'];
     }
 
     /**
-     * Sets finderUsername
+     * Sets index
      *
-     * @param string|mixed $finderUsername finderUsername
+     * @param int|mixed $index index
      *
      * @return $this
      */
-    public function setFinderUsername($finderUsername)
+    public function setIndex($index)
     {
-        $this->container['finderUsername'] = $finderUsername;
+        $this->container['index'] = $index;
+
+        return $this;
+    }
+
+    /**
+     * Gets required
+     *
+     * @return bool|mixed
+     */
+    public function getRequired()
+    {
+        return $this->container['required'];
+    }
+
+    /**
+     * Sets required
+     *
+     * @param bool|mixed $required required
+     *
+     * @return $this
+     */
+    public function setRequired($required)
+    {
+        $this->container['required'] = $required;
+
+        return $this;
+    }
+
+    /**
+     * Gets options
+     *
+     * @return \TencentAds\Model\MktSchemaDefineOption[]|mixed
+     */
+    public function getOptions()
+    {
+        return $this->container['options'];
+    }
+
+    /**
+     * Sets options
+     *
+     * @param \TencentAds\Model\MktSchemaDefineOption[]|mixed $options options
+     *
+     * @return $this
+     */
+    public function setOptions($options)
+    {
+        $this->container['options'] = $options;
 
         return $this;
     }

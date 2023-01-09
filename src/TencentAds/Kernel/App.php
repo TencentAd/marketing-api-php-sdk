@@ -23,6 +23,7 @@ use TencentAds\Container\AgencyInnerTransferApiContainer;
 use TencentAds\Container\AgencyRealtimeCostApiContainer;
 use TencentAds\Container\AppAndroidChannelPackagesApiContainer;
 use TencentAds\Container\AssetPermissionsApiContainer;
+use TencentAds\Container\AssetPermissionsScenesApiContainer;
 use TencentAds\Container\AssetPrePermissionsApiContainer;
 use TencentAds\Container\AsyncReportFilesApiContainer;
 use TencentAds\Container\AsyncReportsApiContainer;
@@ -60,6 +61,10 @@ use TencentAds\Container\CustomTagFilesApiContainer;
 use TencentAds\Container\CustomTagsApiContainer;
 use TencentAds\Container\DailyBalanceReportApiContainer;
 use TencentAds\Container\DailyReportsApiContainer;
+use TencentAds\Container\DataNexusFileApiContainer;
+use TencentAds\Container\DataSetApiContainer;
+use TencentAds\Container\DataSourceApiContainer;
+use TencentAds\Container\DataSourceDispatchApiContainer;
 use TencentAds\Container\DiagnosisApiContainer;
 use TencentAds\Container\DplabelAdLabelApiContainer;
 use TencentAds\Container\DynamicAdImageTemplatesApiContainer;
@@ -71,6 +76,8 @@ use TencentAds\Container\DynamicCreativesApiContainer;
 use TencentAds\Container\EcommerceOrderApiContainer;
 use TencentAds\Container\EstimationApiContainer;
 use TencentAds\Container\ExtendPackageApiContainer;
+use TencentAds\Container\FileDispatchApiContainer;
+use TencentAds\Container\FileSchemaApiContainer;
 use TencentAds\Container\FundStatementsDailyApiContainer;
 use TencentAds\Container\FundStatementsDetailedApiContainer;
 use TencentAds\Container\FundTransferApiContainer;
@@ -241,6 +248,9 @@ class App
     /** @var AssetPermissionsApiContainer */
     public $assetPermissionsApiContainer;
 
+    /** @var AssetPermissionsScenesApiContainer */
+    public $assetPermissionsScenesApiContainer;
+
     /** @var AssetPrePermissionsApiContainer */
     public $assetPrePermissionsApiContainer;
 
@@ -352,6 +362,18 @@ class App
     /** @var DailyReportsApiContainer */
     public $dailyReportsApiContainer;
 
+    /** @var DataNexusFileApiContainer */
+    public $dataNexusFileApiContainer;
+
+    /** @var DataSetApiContainer */
+    public $dataSetApiContainer;
+
+    /** @var DataSourceApiContainer */
+    public $dataSourceApiContainer;
+
+    /** @var DataSourceDispatchApiContainer */
+    public $dataSourceDispatchApiContainer;
+
     /** @var DiagnosisApiContainer */
     public $diagnosisApiContainer;
 
@@ -384,6 +406,12 @@ class App
 
     /** @var ExtendPackageApiContainer */
     public $extendPackageApiContainer;
+
+    /** @var FileDispatchApiContainer */
+    public $fileDispatchApiContainer;
+
+    /** @var FileSchemaApiContainer */
+    public $fileSchemaApiContainer;
 
     /** @var FundStatementsDailyApiContainer */
     public $fundStatementsDailyApiContainer;
@@ -996,6 +1024,20 @@ class App
 
 
     /**
+     * @return AssetPermissionsScenesApiContainer
+     */
+    public function assetPermissionsScenes()
+    {
+        if (empty($this->assetPermissionsScenesApiContainer)) {
+            $container = new AssetPermissionsScenesApiContainer();
+            $container->init($this, $this->getClient());
+            $this->assetPermissionsScenesApiContainer = $container;
+        }
+        return $this->assetPermissionsScenesApiContainer;
+    }
+
+
+    /**
      * @return AssetPrePermissionsApiContainer
      */
     public function assetPrePermissions()
@@ -1514,6 +1556,62 @@ class App
 
 
     /**
+     * @return DataNexusFileApiContainer
+     */
+    public function dataNexusFile()
+    {
+        if (empty($this->dataNexusFileApiContainer)) {
+            $container = new DataNexusFileApiContainer();
+            $container->init($this, $this->getClient());
+            $this->dataNexusFileApiContainer = $container;
+        }
+        return $this->dataNexusFileApiContainer;
+    }
+
+
+    /**
+     * @return DataSetApiContainer
+     */
+    public function dataSet()
+    {
+        if (empty($this->dataSetApiContainer)) {
+            $container = new DataSetApiContainer();
+            $container->init($this, $this->getClient());
+            $this->dataSetApiContainer = $container;
+        }
+        return $this->dataSetApiContainer;
+    }
+
+
+    /**
+     * @return DataSourceApiContainer
+     */
+    public function dataSource()
+    {
+        if (empty($this->dataSourceApiContainer)) {
+            $container = new DataSourceApiContainer();
+            $container->init($this, $this->getClient());
+            $this->dataSourceApiContainer = $container;
+        }
+        return $this->dataSourceApiContainer;
+    }
+
+
+    /**
+     * @return DataSourceDispatchApiContainer
+     */
+    public function dataSourceDispatch()
+    {
+        if (empty($this->dataSourceDispatchApiContainer)) {
+            $container = new DataSourceDispatchApiContainer();
+            $container->init($this, $this->getClient());
+            $this->dataSourceDispatchApiContainer = $container;
+        }
+        return $this->dataSourceDispatchApiContainer;
+    }
+
+
+    /**
      * @return DiagnosisApiContainer
      */
     public function diagnosis()
@@ -1664,6 +1762,34 @@ class App
             $this->extendPackageApiContainer = $container;
         }
         return $this->extendPackageApiContainer;
+    }
+
+
+    /**
+     * @return FileDispatchApiContainer
+     */
+    public function fileDispatch()
+    {
+        if (empty($this->fileDispatchApiContainer)) {
+            $container = new FileDispatchApiContainer();
+            $container->init($this, $this->getClient());
+            $this->fileDispatchApiContainer = $container;
+        }
+        return $this->fileDispatchApiContainer;
+    }
+
+
+    /**
+     * @return FileSchemaApiContainer
+     */
+    public function fileSchema()
+    {
+        if (empty($this->fileSchemaApiContainer)) {
+            $container = new FileSchemaApiContainer();
+            $container->init($this, $this->getClient());
+            $this->fileSchemaApiContainer = $container;
+        }
+        return $this->fileSchemaApiContainer;
     }
 
 

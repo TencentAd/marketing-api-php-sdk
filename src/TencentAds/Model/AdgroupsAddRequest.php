@@ -107,6 +107,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'smartTargeting' => '\TencentAds\Model\SmartTargeting',
         'dynamicCreativeIdSet' => 'int[]',
         'autoDerivedLandingPageSwitch' => 'bool',
+        'searchExpansionSwitch' => '\TencentAds\Model\SearchExpansionSwitch',
+        'searchExpandTargetingSwitch' => '\TencentAds\Model\SearchExpandTargetingSwitch',
         'accountId' => 'int'
     ];
 
@@ -166,6 +168,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'smartTargeting' => null,
         'dynamicCreativeIdSet' => 'int64',
         'autoDerivedLandingPageSwitch' => null,
+        'searchExpansionSwitch' => null,
+        'searchExpandTargetingSwitch' => null,
         'accountId' => 'int64'
     ];
 
@@ -246,6 +250,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'smartTargeting' => 'smart_targeting',
         'dynamicCreativeIdSet' => 'dynamic_creative_id_set',
         'autoDerivedLandingPageSwitch' => 'auto_derived_landing_page_switch',
+        'searchExpansionSwitch' => 'search_expansion_switch',
+        'searchExpandTargetingSwitch' => 'search_expand_targeting_switch',
         'accountId' => 'account_id'
     ];
 
@@ -305,6 +311,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'smartTargeting' => 'setSmartTargeting',
         'dynamicCreativeIdSet' => 'setDynamicCreativeIdSet',
         'autoDerivedLandingPageSwitch' => 'setAutoDerivedLandingPageSwitch',
+        'searchExpansionSwitch' => 'setSearchExpansionSwitch',
+        'searchExpandTargetingSwitch' => 'setSearchExpandTargetingSwitch',
         'accountId' => 'setAccountId'
     ];
 
@@ -364,6 +372,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'smartTargeting' => 'getSmartTargeting',
         'dynamicCreativeIdSet' => 'getDynamicCreativeIdSet',
         'autoDerivedLandingPageSwitch' => 'getAutoDerivedLandingPageSwitch',
+        'searchExpansionSwitch' => 'getSearchExpansionSwitch',
+        'searchExpandTargetingSwitch' => 'getSearchExpandTargetingSwitch',
         'accountId' => 'getAccountId'
     ];
 
@@ -477,6 +487,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['smartTargeting'] = isset($data['smartTargeting']) ? $data['smartTargeting'] : null;
         $this->container['dynamicCreativeIdSet'] = isset($data['dynamicCreativeIdSet']) ? $data['dynamicCreativeIdSet'] : null;
         $this->container['autoDerivedLandingPageSwitch'] = isset($data['autoDerivedLandingPageSwitch']) ? $data['autoDerivedLandingPageSwitch'] : null;
+        $this->container['searchExpansionSwitch'] = isset($data['searchExpansionSwitch']) ? $data['searchExpansionSwitch'] : null;
+        $this->container['searchExpandTargetingSwitch'] = isset($data['searchExpandTargetingSwitch']) ? $data['searchExpandTargetingSwitch'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1700,6 +1712,54 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setAutoDerivedLandingPageSwitch($autoDerivedLandingPageSwitch)
     {
         $this->container['autoDerivedLandingPageSwitch'] = $autoDerivedLandingPageSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets searchExpansionSwitch
+     *
+     * @return \TencentAds\Model\SearchExpansionSwitch|mixed
+     */
+    public function getSearchExpansionSwitch()
+    {
+        return $this->container['searchExpansionSwitch'];
+    }
+
+    /**
+     * Sets searchExpansionSwitch
+     *
+     * @param \TencentAds\Model\SearchExpansionSwitch|mixed $searchExpansionSwitch searchExpansionSwitch
+     *
+     * @return $this
+     */
+    public function setSearchExpansionSwitch($searchExpansionSwitch)
+    {
+        $this->container['searchExpansionSwitch'] = $searchExpansionSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets searchExpandTargetingSwitch
+     *
+     * @return \TencentAds\Model\SearchExpandTargetingSwitch|mixed
+     */
+    public function getSearchExpandTargetingSwitch()
+    {
+        return $this->container['searchExpandTargetingSwitch'];
+    }
+
+    /**
+     * Sets searchExpandTargetingSwitch
+     *
+     * @param \TencentAds\Model\SearchExpandTargetingSwitch|mixed $searchExpandTargetingSwitch searchExpandTargetingSwitch
+     *
+     * @return $this
+     */
+    public function setSearchExpandTargetingSwitch($searchExpandTargetingSwitch)
+    {
+        $this->container['searchExpandTargetingSwitch'] = $searchExpandTargetingSwitch;
 
         return $this;
     }

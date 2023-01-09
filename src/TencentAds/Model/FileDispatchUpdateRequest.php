@@ -1,6 +1,6 @@
 <?php
 /**
- * HeadClickSpec
+ * FileDispatchUpdateRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * HeadClickSpec Class Doc Comment
+ * FileDispatchUpdateRequest Class Doc Comment
  *
  * @category Class
- * @description 头像点击跳转信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class HeadClickSpec implements ModelInterface, ArrayAccess
+class FileDispatchUpdateRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'head_click_spec';
+    protected static $swaggerModelName = 'FileDispatchUpdateRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,9 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'brandAppId' => 'string',
-        'searchBrandAreaKeyword' => 'string',
-        'finderUsername' => 'string'
+        'accountId' => 'int',
+        'switchType' => '\TencentAds\Model\FileDispatchSwitch',
+        'scenes' => '\TencentAds\Model\SingleDispatchScene[]'
     ];
 
     /**
@@ -69,9 +68,9 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'brandAppId' => null,
-        'searchBrandAreaKeyword' => null,
-        'finderUsername' => null
+        'accountId' => 'int64',
+        'switchType' => null,
+        'scenes' => null
     ];
 
     /**
@@ -101,9 +100,9 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'brandAppId' => 'brand_app_id',
-        'searchBrandAreaKeyword' => 'search_brand_area_keyword',
-        'finderUsername' => 'finder_username'
+        'accountId' => 'account_id',
+        'switchType' => 'switch_type',
+        'scenes' => 'scenes'
     ];
 
     /**
@@ -112,9 +111,9 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'brandAppId' => 'setBrandAppId',
-        'searchBrandAreaKeyword' => 'setSearchBrandAreaKeyword',
-        'finderUsername' => 'setFinderUsername'
+        'accountId' => 'setAccountId',
+        'switchType' => 'setSwitchType',
+        'scenes' => 'setScenes'
     ];
 
     /**
@@ -123,9 +122,9 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'brandAppId' => 'getBrandAppId',
-        'searchBrandAreaKeyword' => 'getSearchBrandAreaKeyword',
-        'finderUsername' => 'getFinderUsername'
+        'accountId' => 'getAccountId',
+        'switchType' => 'getSwitchType',
+        'scenes' => 'getScenes'
     ];
 
     /**
@@ -188,9 +187,9 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['brandAppId'] = isset($data['brandAppId']) ? $data['brandAppId'] : null;
-        $this->container['searchBrandAreaKeyword'] = isset($data['searchBrandAreaKeyword']) ? $data['searchBrandAreaKeyword'] : null;
-        $this->container['finderUsername'] = isset($data['finderUsername']) ? $data['finderUsername'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['switchType'] = isset($data['switchType']) ? $data['switchType'] : null;
+        $this->container['scenes'] = isset($data['scenes']) ? $data['scenes'] : null;
     }
 
     /**
@@ -218,73 +217,73 @@ class HeadClickSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets brandAppId
+     * Gets accountId
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getBrandAppId()
+    public function getAccountId()
     {
-        return $this->container['brandAppId'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets brandAppId
+     * Sets accountId
      *
-     * @param string|mixed $brandAppId brandAppId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setBrandAppId($brandAppId)
+    public function setAccountId($accountId)
     {
-        $this->container['brandAppId'] = $brandAppId;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }
 
     /**
-     * Gets searchBrandAreaKeyword
+     * Gets switchType
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\FileDispatchSwitch|mixed
      */
-    public function getSearchBrandAreaKeyword()
+    public function getSwitchType()
     {
-        return $this->container['searchBrandAreaKeyword'];
+        return $this->container['switchType'];
     }
 
     /**
-     * Sets searchBrandAreaKeyword
+     * Sets switchType
      *
-     * @param string|mixed $searchBrandAreaKeyword searchBrandAreaKeyword
+     * @param \TencentAds\Model\FileDispatchSwitch|mixed $switchType switchType
      *
      * @return $this
      */
-    public function setSearchBrandAreaKeyword($searchBrandAreaKeyword)
+    public function setSwitchType($switchType)
     {
-        $this->container['searchBrandAreaKeyword'] = $searchBrandAreaKeyword;
+        $this->container['switchType'] = $switchType;
 
         return $this;
     }
 
     /**
-     * Gets finderUsername
+     * Gets scenes
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\SingleDispatchScene[]|mixed
      */
-    public function getFinderUsername()
+    public function getScenes()
     {
-        return $this->container['finderUsername'];
+        return $this->container['scenes'];
     }
 
     /**
-     * Sets finderUsername
+     * Sets scenes
      *
-     * @param string|mixed $finderUsername finderUsername
+     * @param \TencentAds\Model\SingleDispatchScene[]|mixed $scenes scenes
      *
      * @return $this
      */
-    public function setFinderUsername($finderUsername)
+    public function setScenes($scenes)
     {
-        $this->container['finderUsername'] = $finderUsername;
+        $this->container['scenes'] = $scenes;
 
         return $this;
     }
