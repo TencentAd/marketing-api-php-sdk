@@ -561,6 +561,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'cheout3dRate' => 'double',
         'cheout5dRate' => 'double',
         'cheout7dRate' => 'double',
+        'clkRedpocketShakePv' => 'int',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
         'incomeVal1' => 'int',
@@ -1272,6 +1273,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'cheout3dRate' => 'double',
         'cheout5dRate' => 'double',
         'cheout7dRate' => 'double',
+        'clkRedpocketShakePv' => 'int64',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
         'incomeVal1' => 'int64',
@@ -2004,6 +2006,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'cheout3dRate' => 'cheout_3d_rate',
         'cheout5dRate' => 'cheout_5d_rate',
         'cheout7dRate' => 'cheout_7d_rate',
+        'clkRedpocketShakePv' => 'clk_redpocket_shake_pv',
         'requestConversionsCount' => 'request_conversions_count',
         'requestConversionsCost' => 'request_conversions_cost',
         'incomeVal1' => 'income_val_1',
@@ -2715,6 +2718,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'cheout3dRate' => 'setCheout3dRate',
         'cheout5dRate' => 'setCheout5dRate',
         'cheout7dRate' => 'setCheout7dRate',
+        'clkRedpocketShakePv' => 'setClkRedpocketShakePv',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'requestConversionsCost' => 'setRequestConversionsCost',
         'incomeVal1' => 'setIncomeVal1',
@@ -3426,6 +3430,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'cheout3dRate' => 'getCheout3dRate',
         'cheout5dRate' => 'getCheout5dRate',
         'cheout7dRate' => 'getCheout7dRate',
+        'clkRedpocketShakePv' => 'getClkRedpocketShakePv',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'requestConversionsCost' => 'getRequestConversionsCost',
         'incomeVal1' => 'getIncomeVal1',
@@ -4191,6 +4196,7 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['cheout3dRate'] = isset($data['cheout3dRate']) ? $data['cheout3dRate'] : null;
         $this->container['cheout5dRate'] = isset($data['cheout5dRate']) ? $data['cheout5dRate'] : null;
         $this->container['cheout7dRate'] = isset($data['cheout7dRate']) ? $data['cheout7dRate'] : null;
+        $this->container['clkRedpocketShakePv'] = isset($data['clkRedpocketShakePv']) ? $data['clkRedpocketShakePv'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
         $this->container['incomeVal1'] = isset($data['incomeVal1']) ? $data['incomeVal1'] : null;
@@ -16485,6 +16491,30 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setCheout7dRate($cheout7dRate)
     {
         $this->container['cheout7dRate'] = $cheout7dRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkRedpocketShakePv
+     *
+     * @return int|mixed
+     */
+    public function getClkRedpocketShakePv()
+    {
+        return $this->container['clkRedpocketShakePv'];
+    }
+
+    /**
+     * Sets clkRedpocketShakePv
+     *
+     * @param int|mixed $clkRedpocketShakePv clkRedpocketShakePv
+     *
+     * @return $this
+     */
+    public function setClkRedpocketShakePv($clkRedpocketShakePv)
+    {
+        $this->container['clkRedpocketShakePv'] = $clkRedpocketShakePv;
 
         return $this;
     }

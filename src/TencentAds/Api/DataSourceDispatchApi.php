@@ -90,7 +90,7 @@ class DataSourceDispatchApi
     /**
      * Operation dataSourceDispatchUpdate
      *
-     * 数据源分发
+     * 数据源分发关系更新
      *
      * @param  \TencentAds\Model\DataSourceDispatchUpdateRequest|mixed $data data (required)
      *
@@ -107,7 +107,7 @@ class DataSourceDispatchApi
     /**
      * Operation dataSourceDispatchUpdateWithHttpInfo
      *
-     * 数据源分发
+     * 数据源分发关系更新
      *
      * @param  \TencentAds\Model\DataSourceDispatchUpdateRequest|mixed $data (required)
      *
@@ -182,7 +182,7 @@ class DataSourceDispatchApi
     /**
      * Operation dataSourceDispatchUpdateAsync
      *
-     * 数据源分发
+     * 数据源分发关系更新
      *
      * @param  \TencentAds\Model\DataSourceDispatchUpdateRequest|mixed $data (required)
      *
@@ -202,7 +202,7 @@ class DataSourceDispatchApi
     /**
      * Operation dataSourceDispatchUpdateAsyncWithHttpInfo
      *
-     * 数据源分发
+     * 数据源分发关系更新
      *
      * @param  \TencentAds\Model\DataSourceDispatchUpdateRequest|mixed $data (required)
      *

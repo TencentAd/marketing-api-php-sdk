@@ -57,7 +57,8 @@ class DataSourceDispatchUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int'
+        'accountId' => 'int',
+        'dataSourceScenes' => '\TencentAds\Model\SingleDataSourceScenes[]'
     ];
 
     /**
@@ -66,7 +67,8 @@ class DataSourceDispatchUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64'
+        'accountId' => 'int64',
+        'dataSourceScenes' => null
     ];
 
     /**
@@ -96,7 +98,8 @@ class DataSourceDispatchUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id'
+        'accountId' => 'account_id',
+        'dataSourceScenes' => 'data_source_scenes'
     ];
 
     /**
@@ -105,7 +108,8 @@ class DataSourceDispatchUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId'
+        'accountId' => 'setAccountId',
+        'dataSourceScenes' => 'setDataSourceScenes'
     ];
 
     /**
@@ -114,7 +118,8 @@ class DataSourceDispatchUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId'
+        'accountId' => 'getAccountId',
+        'dataSourceScenes' => 'getDataSourceScenes'
     ];
 
     /**
@@ -178,6 +183,7 @@ class DataSourceDispatchUpdateRequest implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['dataSourceScenes'] = isset($data['dataSourceScenes']) ? $data['dataSourceScenes'] : null;
     }
 
     /**
@@ -224,6 +230,30 @@ class DataSourceDispatchUpdateRequest implements ModelInterface, ArrayAccess
     public function setAccountId($accountId)
     {
         $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets dataSourceScenes
+     *
+     * @return \TencentAds\Model\SingleDataSourceScenes[]|mixed
+     */
+    public function getDataSourceScenes()
+    {
+        return $this->container['dataSourceScenes'];
+    }
+
+    /**
+     * Sets dataSourceScenes
+     *
+     * @param \TencentAds\Model\SingleDataSourceScenes[]|mixed $dataSourceScenes dataSourceScenes
+     *
+     * @return $this
+     */
+    public function setDataSourceScenes($dataSourceScenes)
+    {
+        $this->container['dataSourceScenes'] = $dataSourceScenes;
 
         return $this;
     }

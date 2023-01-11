@@ -1,6 +1,6 @@
 <?php
 /**
- * SceneSpecTagsType
+ * DataSourceType
  *
  * PHP version 5
  *
@@ -31,25 +31,29 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * SceneSpecTagsType Class Doc Comment
+ * DataSourceType Class Doc Comment
  *
  * @category Class
- * @description 场景定向标签类型
+ * @description 数据源类型标识，枚举列表：{ WEB, ANDROID, IOS, OFFLINE, WECHAT, WECHAT_MINI_PROGRAM, WECHAT_MINI_GAME }
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class SceneSpecTagsType
+class DataSourceType
 {
     /**
      * Possible values of this enum
      */
-    const WECHAT_POSITION = 'WECHAT_POSITION';
-    const OFFICIAL_ACCOUNT_MEDIA_CATEGORY = 'OFFICIAL_ACCOUNT_MEDIA_CATEGORY';
-    const MINI_PROGRAM_AND_MINI_GAME = 'MINI_PROGRAM_AND_MINI_GAME';
-    const PAY_SCENE = 'PAY_SCENE';
-    const MOBILE_UNION_CATEGORY = 'MOBILE_UNION_CATEGORY';
-    const WECHAT_CHANNELS_SCENE = 'WECHAT_CHANNELS_SCENE';
+    const DATA_SOURCE_TYPE_FILE = 'DATA_SOURCE_TYPE_FILE';
+    const DATA_SOURCE_TYPE_STREAM = 'DATA_SOURCE_TYPE_STREAM';
+    const DATA_SOURCE_TYPE_SITE = 'DATA_SOURCE_TYPE_SITE';
+    const WEB = 'WEB';
+    const ANDROID = 'ANDROID';
+    const IOS = 'IOS';
+    const OFFLINE = 'OFFLINE';
+    const WECHAT = 'WECHAT';
+    const WECHAT_MINI_PROGRAM = 'WECHAT_MINI_PROGRAM';
+    const WECHAT_MINI_GAME = 'WECHAT_MINI_GAME';
     
     /**
      * Gets allowable values of the enum
@@ -58,12 +62,16 @@ class SceneSpecTagsType
     public static function getAllowableEnumValues()
     {
         return [
-            self::WECHAT_POSITION,
-            self::OFFICIAL_ACCOUNT_MEDIA_CATEGORY,
-            self::MINI_PROGRAM_AND_MINI_GAME,
-            self::PAY_SCENE,
-            self::MOBILE_UNION_CATEGORY,
-            self::WECHAT_CHANNELS_SCENE,
+            self::DATA_SOURCE_TYPE_FILE,
+            self::DATA_SOURCE_TYPE_STREAM,
+            self::DATA_SOURCE_TYPE_SITE,
+            self::WEB,
+            self::ANDROID,
+            self::IOS,
+            self::OFFLINE,
+            self::WECHAT,
+            self::WECHAT_MINI_PROGRAM,
+            self::WECHAT_MINI_GAME,
         ];
     }
 }

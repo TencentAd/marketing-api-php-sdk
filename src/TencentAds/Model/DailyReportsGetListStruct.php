@@ -565,6 +565,8 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'cheout3dRate' => 'double',
         'cheout5dRate' => 'double',
         'cheout7dRate' => 'double',
+        'clkRedpocketShakePv' => 'int',
+        'clkRedpocketShakeUv' => 'int',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
         'incomeVal1' => 'int',
@@ -1305,6 +1307,8 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'cheout3dRate' => 'double',
         'cheout5dRate' => 'double',
         'cheout7dRate' => 'double',
+        'clkRedpocketShakePv' => 'int64',
+        'clkRedpocketShakeUv' => 'int64',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
         'incomeVal1' => 'int64',
@@ -2066,6 +2070,8 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'cheout3dRate' => 'cheout_3d_rate',
         'cheout5dRate' => 'cheout_5d_rate',
         'cheout7dRate' => 'cheout_7d_rate',
+        'clkRedpocketShakePv' => 'clk_redpocket_shake_pv',
+        'clkRedpocketShakeUv' => 'clk_redpocket_shake_uv',
         'requestConversionsCount' => 'request_conversions_count',
         'requestConversionsCost' => 'request_conversions_cost',
         'incomeVal1' => 'income_val_1',
@@ -2806,6 +2812,8 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'cheout3dRate' => 'setCheout3dRate',
         'cheout5dRate' => 'setCheout5dRate',
         'cheout7dRate' => 'setCheout7dRate',
+        'clkRedpocketShakePv' => 'setClkRedpocketShakePv',
+        'clkRedpocketShakeUv' => 'setClkRedpocketShakeUv',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'requestConversionsCost' => 'setRequestConversionsCost',
         'incomeVal1' => 'setIncomeVal1',
@@ -3546,6 +3554,8 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'cheout3dRate' => 'getCheout3dRate',
         'cheout5dRate' => 'getCheout5dRate',
         'cheout7dRate' => 'getCheout7dRate',
+        'clkRedpocketShakePv' => 'getClkRedpocketShakePv',
+        'clkRedpocketShakeUv' => 'getClkRedpocketShakeUv',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'requestConversionsCost' => 'getRequestConversionsCost',
         'incomeVal1' => 'getIncomeVal1',
@@ -4340,6 +4350,8 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['cheout3dRate'] = isset($data['cheout3dRate']) ? $data['cheout3dRate'] : null;
         $this->container['cheout5dRate'] = isset($data['cheout5dRate']) ? $data['cheout5dRate'] : null;
         $this->container['cheout7dRate'] = isset($data['cheout7dRate']) ? $data['cheout7dRate'] : null;
+        $this->container['clkRedpocketShakePv'] = isset($data['clkRedpocketShakePv']) ? $data['clkRedpocketShakePv'] : null;
+        $this->container['clkRedpocketShakeUv'] = isset($data['clkRedpocketShakeUv']) ? $data['clkRedpocketShakeUv'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
         $this->container['incomeVal1'] = isset($data['incomeVal1']) ? $data['incomeVal1'] : null;
@@ -16755,6 +16767,54 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setCheout7dRate($cheout7dRate)
     {
         $this->container['cheout7dRate'] = $cheout7dRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkRedpocketShakePv
+     *
+     * @return int|mixed
+     */
+    public function getClkRedpocketShakePv()
+    {
+        return $this->container['clkRedpocketShakePv'];
+    }
+
+    /**
+     * Sets clkRedpocketShakePv
+     *
+     * @param int|mixed $clkRedpocketShakePv clkRedpocketShakePv
+     *
+     * @return $this
+     */
+    public function setClkRedpocketShakePv($clkRedpocketShakePv)
+    {
+        $this->container['clkRedpocketShakePv'] = $clkRedpocketShakePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkRedpocketShakeUv
+     *
+     * @return int|mixed
+     */
+    public function getClkRedpocketShakeUv()
+    {
+        return $this->container['clkRedpocketShakeUv'];
+    }
+
+    /**
+     * Sets clkRedpocketShakeUv
+     *
+     * @param int|mixed $clkRedpocketShakeUv clkRedpocketShakeUv
+     *
+     * @return $this
+     */
+    public function setClkRedpocketShakeUv($clkRedpocketShakeUv)
+    {
+        $this->container['clkRedpocketShakeUv'] = $clkRedpocketShakeUv;
 
         return $this;
     }

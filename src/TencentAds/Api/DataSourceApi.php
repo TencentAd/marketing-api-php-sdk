@@ -380,35 +380,39 @@ class DataSourceApi
     /**
      * Operation dataSourceGet
      *
-     * 获取数据源
+     * 查询数据源
      *
-     * @param  \TencentAds\Model\DataSourceGetRequest|mixed $data data (required)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $dataSourceId dataSourceId (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\DataSourceGetResponse|mixed
      */
-    public function dataSourceGet($data)
+    public function dataSourceGet($accountId, $dataSourceId = null, $fields = null)
     {
-        list($response) = $this->dataSourceGetWithHttpInfo($data);
+        list($response) = $this->dataSourceGetWithHttpInfo($accountId, $dataSourceId, $fields);
         return $response;
     }
 
     /**
      * Operation dataSourceGetWithHttpInfo
      *
-     * 获取数据源
+     * 查询数据源
      *
-     * @param  \TencentAds\Model\DataSourceGetRequest|mixed $data (required)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $dataSourceId (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\DataSourceGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function dataSourceGetWithHttpInfo($data)
+    public function dataSourceGetWithHttpInfo($accountId, $dataSourceId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\DataSourceGetResponse';
-        $request = $this->dataSourceGetRequest($data);
+        $request = $this->dataSourceGetRequest($accountId, $dataSourceId, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -472,16 +476,18 @@ class DataSourceApi
     /**
      * Operation dataSourceGetAsync
      *
-     * 获取数据源
+     * 查询数据源
      *
-     * @param  \TencentAds\Model\DataSourceGetRequest|mixed $data (required)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $dataSourceId (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function dataSourceGetAsync($data)
+    public function dataSourceGetAsync($accountId, $dataSourceId = null, $fields = null)
     {
-        return $this->dataSourceGetAsyncWithHttpInfo($data)
+        return $this->dataSourceGetAsyncWithHttpInfo($accountId, $dataSourceId, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -492,17 +498,19 @@ class DataSourceApi
     /**
      * Operation dataSourceGetAsyncWithHttpInfo
      *
-     * 获取数据源
+     * 查询数据源
      *
-     * @param  \TencentAds\Model\DataSourceGetRequest|mixed $data (required)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $dataSourceId (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function dataSourceGetAsyncWithHttpInfo($data)
+    public function dataSourceGetAsyncWithHttpInfo($accountId, $dataSourceId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\DataSourceGetResponse';
-        $request = $this->dataSourceGetRequest($data);
+        $request = $this->dataSourceGetRequest($accountId, $dataSourceId, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -544,17 +552,19 @@ class DataSourceApi
     /**
      * Create request for operation 'dataSourceGet'
      *
-     * @param  \TencentAds\Model\DataSourceGetRequest|mixed $data (required)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $dataSourceId (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function dataSourceGetRequest($data)
+    protected function dataSourceGetRequest($accountId, $dataSourceId = null, $fields = null)
     {
-        // verify the required parameter 'data' is set
-        if ($data === null || (is_array($data) && count($data) === 0)) {
+        // verify the required parameter 'accountId' is set
+        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $data when calling dataSourceGet'
+                'Missing the required parameter $accountId when calling dataSourceGet'
             );
         }
 
@@ -565,15 +575,27 @@ class DataSourceApi
         $httpBody = '';
         $multipart = false;
 
+        // query params
+        if ($accountId !== null) {
+            $queryParams['account_id'] = ObjectSerializer::toQueryValue($accountId);
+        }
+        // query params
+        if ($dataSourceId !== null) {
+            $queryParams['data_source_id'] = ObjectSerializer::toQueryValue($dataSourceId);
+        }
+        // query params
+        if (is_array($fields)) {
+            $queryParams['fields'] = $fields;
+        } else
+        if ($fields !== null) {
+            $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);
+        }
 
 
         // body params
         $_tempBody = null;
-        if (isset($data)) {
-            $_tempBody = $data;
-        }
 
-        if (in_array('multipart/form-data', ['application/json', 'application/xml'])) {
+        if (in_array('multipart/form-data', ['text/plain'])) {
             $multipart = true;
         }
         if ($multipart) {
@@ -583,7 +605,7 @@ class DataSourceApi
         } else {
             $headers = $this->headerSelector->selectHeaders(
                 ['application/json'],
-                ['application/json', 'application/xml']
+                ['text/plain']
             );
         }
 
@@ -660,7 +682,7 @@ class DataSourceApi
             $query = \GuzzleHttp\Psr7\build_query($queryParams);
         }
         return new Request(
-            'POST',
+            'GET',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
             $headers,
             $httpBody

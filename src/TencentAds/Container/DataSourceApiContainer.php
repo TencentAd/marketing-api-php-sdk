@@ -72,8 +72,10 @@ class DataSourceApiContainer extends ApiContainer
     {
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
-            $data = $params;
-            $response = $this->apiInstance->dataSourceGet($data);
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $dataSourceId = isset($params['data_source_id']) ? $params['data_source_id'] : null;
+            $fields = isset($params['fields']) ? $params['fields'] : null;
+            $response = $this->apiInstance->dataSourceGet($accountId, $dataSourceId, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -88,8 +90,10 @@ class DataSourceApiContainer extends ApiContainer
     {
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
-            $data = $params;
-            $response = $this->apiInstance->dataSourceGetAsync($data);
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $dataSourceId = isset($params['data_source_id']) ? $params['data_source_id'] : null;
+            $fields = isset($params['fields']) ? $params['fields'] : null;
+            $response = $this->apiInstance->dataSourceGetAsync($accountId, $dataSourceId, $fields);
             return $response;
         });
     }

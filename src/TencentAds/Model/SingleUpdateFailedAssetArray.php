@@ -1,6 +1,6 @@
 <?php
 /**
- * DataSetAddRequest
+ * SingleUpdateFailedAssetArray
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DataSetAddRequest Class Doc Comment
+ * SingleUpdateFailedAssetArray Class Doc Comment
  *
  * @category Class
+ * @description 资产列表
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DataSetAddRequest implements ModelInterface, ArrayAccess
+class SingleUpdateFailedAssetArray implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'DataSetAddRequest';
+    protected static $swaggerModelName = 'single_update_failed_asset_array';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,9 +58,7 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'dataSourceId' => 'int',
-        'envType' => 'int'
+        
     ];
 
     /**
@@ -68,9 +67,7 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'dataSourceId' => 'int64',
-        'envType' => 'int64'
+        
     ];
 
     /**
@@ -100,9 +97,7 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'dataSourceId' => 'data_source_id',
-        'envType' => 'env_type'
+        
     ];
 
     /**
@@ -111,9 +106,7 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'dataSourceId' => 'setDataSourceId',
-        'envType' => 'setEnvType'
+        
     ];
 
     /**
@@ -122,9 +115,7 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'dataSourceId' => 'getDataSourceId',
-        'envType' => 'getEnvType'
+        
     ];
 
     /**
@@ -187,9 +178,6 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['dataSourceId'] = isset($data['dataSourceId']) ? $data['dataSourceId'] : null;
-        $this->container['envType'] = isset($data['envType']) ? $data['envType'] : null;
     }
 
     /**
@@ -199,7 +187,7 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalidProperties = [];
+        $invalidProperties = parent::listInvalidProperties();
 
         return $invalidProperties;
     }
@@ -215,78 +203,6 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
-
-    /**
-     * Gets accountId
-     *
-     * @return int|mixed
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int|mixed $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
-
-        return $this;
-    }
-
-    /**
-     * Gets dataSourceId
-     *
-     * @return int|mixed
-     */
-    public function getDataSourceId()
-    {
-        return $this->container['dataSourceId'];
-    }
-
-    /**
-     * Sets dataSourceId
-     *
-     * @param int|mixed $dataSourceId dataSourceId
-     *
-     * @return $this
-     */
-    public function setDataSourceId($dataSourceId)
-    {
-        $this->container['dataSourceId'] = $dataSourceId;
-
-        return $this;
-    }
-
-    /**
-     * Gets envType
-     *
-     * @return int|mixed
-     */
-    public function getEnvType()
-    {
-        return $this->container['envType'];
-    }
-
-    /**
-     * Sets envType
-     *
-     * @param int|mixed $envType envType
-     *
-     * @return $this
-     */
-    public function setEnvType($envType)
-    {
-        $this->container['envType'] = $envType;
-
-        return $this;
-    }
     /**
      * Returns true if offset exists. False otherwise.
      *

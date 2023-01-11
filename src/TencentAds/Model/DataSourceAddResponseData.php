@@ -1,6 +1,6 @@
 <?php
 /**
- * DataSetAddRequest
+ * DataSourceAddResponseData
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DataSetAddRequest Class Doc Comment
+ * DataSourceAddResponseData Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DataSetAddRequest implements ModelInterface, ArrayAccess
+class DataSourceAddResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'DataSetAddRequest';
+    protected static $swaggerModelName = 'DataSourceAddResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,9 +57,7 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'dataSourceId' => 'int',
-        'envType' => 'int'
+        'dataSourceId' => 'int'
     ];
 
     /**
@@ -68,9 +66,7 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'dataSourceId' => 'int64',
-        'envType' => 'int64'
+        'dataSourceId' => 'int64'
     ];
 
     /**
@@ -100,9 +96,7 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'dataSourceId' => 'data_source_id',
-        'envType' => 'env_type'
+        'dataSourceId' => 'data_source_id'
     ];
 
     /**
@@ -111,9 +105,7 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'dataSourceId' => 'setDataSourceId',
-        'envType' => 'setEnvType'
+        'dataSourceId' => 'setDataSourceId'
     ];
 
     /**
@@ -122,9 +114,7 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'dataSourceId' => 'getDataSourceId',
-        'envType' => 'getEnvType'
+        'dataSourceId' => 'getDataSourceId'
     ];
 
     /**
@@ -187,9 +177,7 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['dataSourceId'] = isset($data['dataSourceId']) ? $data['dataSourceId'] : null;
-        $this->container['envType'] = isset($data['envType']) ? $data['envType'] : null;
     }
 
     /**
@@ -217,30 +205,6 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets accountId
-     *
-     * @return int|mixed
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int|mixed $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
-
-        return $this;
-    }
-
-    /**
      * Gets dataSourceId
      *
      * @return int|mixed
@@ -260,30 +224,6 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
     public function setDataSourceId($dataSourceId)
     {
         $this->container['dataSourceId'] = $dataSourceId;
-
-        return $this;
-    }
-
-    /**
-     * Gets envType
-     *
-     * @return int|mixed
-     */
-    public function getEnvType()
-    {
-        return $this->container['envType'];
-    }
-
-    /**
-     * Sets envType
-     *
-     * @param int|mixed $envType envType
-     *
-     * @return $this
-     */
-    public function setEnvType($envType)
-    {
-        $this->container['envType'] = $envType;
 
         return $this;
     }

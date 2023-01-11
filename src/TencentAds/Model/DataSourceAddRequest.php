@@ -58,7 +58,10 @@ class DataSourceAddRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
-        'dataSourceId' => 'int'
+        'type' => '\TencentAds\Model\DataSourceType',
+        'mobileAppId' => 'int',
+        'wechatAppId' => 'string',
+        'name' => 'string'
     ];
 
     /**
@@ -68,7 +71,10 @@ class DataSourceAddRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'accountId' => 'int64',
-        'dataSourceId' => 'int64'
+        'type' => null,
+        'mobileAppId' => 'int64',
+        'wechatAppId' => null,
+        'name' => null
     ];
 
     /**
@@ -99,7 +105,10 @@ class DataSourceAddRequest implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'accountId' => 'account_id',
-        'dataSourceId' => 'data_source_id'
+        'type' => 'type',
+        'mobileAppId' => 'mobile_app_id',
+        'wechatAppId' => 'wechat_app_id',
+        'name' => 'name'
     ];
 
     /**
@@ -109,7 +118,10 @@ class DataSourceAddRequest implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'accountId' => 'setAccountId',
-        'dataSourceId' => 'setDataSourceId'
+        'type' => 'setType',
+        'mobileAppId' => 'setMobileAppId',
+        'wechatAppId' => 'setWechatAppId',
+        'name' => 'setName'
     ];
 
     /**
@@ -119,7 +131,10 @@ class DataSourceAddRequest implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'accountId' => 'getAccountId',
-        'dataSourceId' => 'getDataSourceId'
+        'type' => 'getType',
+        'mobileAppId' => 'getMobileAppId',
+        'wechatAppId' => 'getWechatAppId',
+        'name' => 'getName'
     ];
 
     /**
@@ -183,7 +198,10 @@ class DataSourceAddRequest implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['dataSourceId'] = isset($data['dataSourceId']) ? $data['dataSourceId'] : null;
+        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
+        $this->container['mobileAppId'] = isset($data['mobileAppId']) ? $data['mobileAppId'] : null;
+        $this->container['wechatAppId'] = isset($data['wechatAppId']) ? $data['wechatAppId'] : null;
+        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
     }
 
     /**
@@ -235,25 +253,97 @@ class DataSourceAddRequest implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets dataSourceId
+     * Gets type
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\DataSourceType|mixed
      */
-    public function getDataSourceId()
+    public function getType()
     {
-        return $this->container['dataSourceId'];
+        return $this->container['type'];
     }
 
     /**
-     * Sets dataSourceId
+     * Sets type
      *
-     * @param int|mixed $dataSourceId dataSourceId
+     * @param \TencentAds\Model\DataSourceType|mixed $type type
      *
      * @return $this
      */
-    public function setDataSourceId($dataSourceId)
+    public function setType($type)
     {
-        $this->container['dataSourceId'] = $dataSourceId;
+        $this->container['type'] = $type;
+
+        return $this;
+    }
+
+    /**
+     * Gets mobileAppId
+     *
+     * @return int|mixed
+     */
+    public function getMobileAppId()
+    {
+        return $this->container['mobileAppId'];
+    }
+
+    /**
+     * Sets mobileAppId
+     *
+     * @param int|mixed $mobileAppId mobileAppId
+     *
+     * @return $this
+     */
+    public function setMobileAppId($mobileAppId)
+    {
+        $this->container['mobileAppId'] = $mobileAppId;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatAppId
+     *
+     * @return string|mixed
+     */
+    public function getWechatAppId()
+    {
+        return $this->container['wechatAppId'];
+    }
+
+    /**
+     * Sets wechatAppId
+     *
+     * @param string|mixed $wechatAppId wechatAppId
+     *
+     * @return $this
+     */
+    public function setWechatAppId($wechatAppId)
+    {
+        $this->container['wechatAppId'] = $wechatAppId;
+
+        return $this;
+    }
+
+    /**
+     * Gets name
+     *
+     * @return string|mixed
+     */
+    public function getName()
+    {
+        return $this->container['name'];
+    }
+
+    /**
+     * Sets name
+     *
+     * @param string|mixed $name name
+     *
+     * @return $this
+     */
+    public function setName($name)
+    {
+        $this->container['name'] = $name;
 
         return $this;
     }

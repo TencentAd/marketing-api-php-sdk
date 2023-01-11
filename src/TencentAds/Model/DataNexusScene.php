@@ -1,6 +1,6 @@
 <?php
 /**
- * SceneSpecTagsType
+ * DataNexusScene
  *
  * PHP version 5
  *
@@ -31,25 +31,23 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * SceneSpecTagsType Class Doc Comment
+ * DataNexusScene Class Doc Comment
  *
  * @category Class
- * @description 场景定向标签类型
+ * @description 应用场景
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class SceneSpecTagsType
+class DataNexusScene
 {
     /**
      * Possible values of this enum
      */
-    const WECHAT_POSITION = 'WECHAT_POSITION';
-    const OFFICIAL_ACCOUNT_MEDIA_CATEGORY = 'OFFICIAL_ACCOUNT_MEDIA_CATEGORY';
-    const MINI_PROGRAM_AND_MINI_GAME = 'MINI_PROGRAM_AND_MINI_GAME';
-    const PAY_SCENE = 'PAY_SCENE';
-    const MOBILE_UNION_CATEGORY = 'MOBILE_UNION_CATEGORY';
-    const WECHAT_CHANNELS_SCENE = 'WECHAT_CHANNELS_SCENE';
+    const DMP = 'DMP';
+    const TRANSFORMATION_ATTRIBUTION = 'TRANSFORMATION_ATTRIBUTION';
+    const PKAM = 'PKAM';
+    const DPA = 'DPA';
     
     /**
      * Gets allowable values of the enum
@@ -58,12 +56,10 @@ class SceneSpecTagsType
     public static function getAllowableEnumValues()
     {
         return [
-            self::WECHAT_POSITION,
-            self::OFFICIAL_ACCOUNT_MEDIA_CATEGORY,
-            self::MINI_PROGRAM_AND_MINI_GAME,
-            self::PAY_SCENE,
-            self::MOBILE_UNION_CATEGORY,
-            self::WECHAT_CHANNELS_SCENE,
+            self::DMP,
+            self::TRANSFORMATION_ATTRIBUTION,
+            self::PKAM,
+            self::DPA,
         ];
     }
 }

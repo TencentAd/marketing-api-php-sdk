@@ -1,6 +1,6 @@
 <?php
 /**
- * DataSetAddRequest
+ * SingleUpdateFail
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DataSetAddRequest Class Doc Comment
+ * SingleUpdateFail Class Doc Comment
  *
  * @category Class
+ * @description 数据源分发详情
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DataSetAddRequest implements ModelInterface, ArrayAccess
+class SingleUpdateFail implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'DataSetAddRequest';
+    protected static $swaggerModelName = 'single_update_fail';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,9 +58,9 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
         'dataSourceId' => 'int',
-        'envType' => 'int'
+        'scenes' => '\TencentAds\Model\SingleUpdateFailedScenes[]',
+        'failReason' => 'string'
     ];
 
     /**
@@ -68,9 +69,9 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
         'dataSourceId' => 'int64',
-        'envType' => 'int64'
+        'scenes' => null,
+        'failReason' => null
     ];
 
     /**
@@ -100,9 +101,9 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
         'dataSourceId' => 'data_source_id',
-        'envType' => 'env_type'
+        'scenes' => 'scenes',
+        'failReason' => 'fail_reason'
     ];
 
     /**
@@ -111,9 +112,9 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
         'dataSourceId' => 'setDataSourceId',
-        'envType' => 'setEnvType'
+        'scenes' => 'setScenes',
+        'failReason' => 'setFailReason'
     ];
 
     /**
@@ -122,9 +123,9 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
         'dataSourceId' => 'getDataSourceId',
-        'envType' => 'getEnvType'
+        'scenes' => 'getScenes',
+        'failReason' => 'getFailReason'
     ];
 
     /**
@@ -187,9 +188,9 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['dataSourceId'] = isset($data['dataSourceId']) ? $data['dataSourceId'] : null;
-        $this->container['envType'] = isset($data['envType']) ? $data['envType'] : null;
+        $this->container['scenes'] = isset($data['scenes']) ? $data['scenes'] : null;
+        $this->container['failReason'] = isset($data['failReason']) ? $data['failReason'] : null;
     }
 
     /**
@@ -217,30 +218,6 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets accountId
-     *
-     * @return int|mixed
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int|mixed $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
-
-        return $this;
-    }
-
-    /**
      * Gets dataSourceId
      *
      * @return int|mixed
@@ -265,25 +242,49 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets envType
+     * Gets scenes
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\SingleUpdateFailedScenes[]|mixed
      */
-    public function getEnvType()
+    public function getScenes()
     {
-        return $this->container['envType'];
+        return $this->container['scenes'];
     }
 
     /**
-     * Sets envType
+     * Sets scenes
      *
-     * @param int|mixed $envType envType
+     * @param \TencentAds\Model\SingleUpdateFailedScenes[]|mixed $scenes scenes
      *
      * @return $this
      */
-    public function setEnvType($envType)
+    public function setScenes($scenes)
     {
-        $this->container['envType'] = $envType;
+        $this->container['scenes'] = $scenes;
+
+        return $this;
+    }
+
+    /**
+     * Gets failReason
+     *
+     * @return string|mixed
+     */
+    public function getFailReason()
+    {
+        return $this->container['failReason'];
+    }
+
+    /**
+     * Sets failReason
+     *
+     * @param string|mixed $failReason failReason
+     *
+     * @return $this
+     */
+    public function setFailReason($failReason)
+    {
+        $this->container['failReason'] = $failReason;
 
         return $this;
     }

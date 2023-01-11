@@ -1,6 +1,6 @@
 <?php
 /**
- * DataSetAddRequest
+ * DataSourceDispatchUpdateResponseData
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DataSetAddRequest Class Doc Comment
+ * DataSourceDispatchUpdateResponseData Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DataSetAddRequest implements ModelInterface, ArrayAccess
+class DataSourceDispatchUpdateResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'DataSetAddRequest';
+    protected static $swaggerModelName = 'DataSourceDispatchUpdateResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,9 +57,8 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'dataSourceId' => 'int',
-        'envType' => 'int'
+        'successCount' => 'int',
+        'failList' => '\TencentAds\Model\SingleUpdateFail[]'
     ];
 
     /**
@@ -68,9 +67,8 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'dataSourceId' => 'int64',
-        'envType' => 'int64'
+        'successCount' => 'int64',
+        'failList' => null
     ];
 
     /**
@@ -100,9 +98,8 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'dataSourceId' => 'data_source_id',
-        'envType' => 'env_type'
+        'successCount' => 'success_count',
+        'failList' => 'fail_list'
     ];
 
     /**
@@ -111,9 +108,8 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'dataSourceId' => 'setDataSourceId',
-        'envType' => 'setEnvType'
+        'successCount' => 'setSuccessCount',
+        'failList' => 'setFailList'
     ];
 
     /**
@@ -122,9 +118,8 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'dataSourceId' => 'getDataSourceId',
-        'envType' => 'getEnvType'
+        'successCount' => 'getSuccessCount',
+        'failList' => 'getFailList'
     ];
 
     /**
@@ -187,9 +182,8 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['dataSourceId'] = isset($data['dataSourceId']) ? $data['dataSourceId'] : null;
-        $this->container['envType'] = isset($data['envType']) ? $data['envType'] : null;
+        $this->container['successCount'] = isset($data['successCount']) ? $data['successCount'] : null;
+        $this->container['failList'] = isset($data['failList']) ? $data['failList'] : null;
     }
 
     /**
@@ -217,73 +211,49 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets accountId
+     * Gets successCount
      *
      * @return int|mixed
      */
-    public function getAccountId()
+    public function getSuccessCount()
     {
-        return $this->container['accountId'];
+        return $this->container['successCount'];
     }
 
     /**
-     * Sets accountId
+     * Sets successCount
      *
-     * @param int|mixed $accountId accountId
+     * @param int|mixed $successCount successCount
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setSuccessCount($successCount)
     {
-        $this->container['accountId'] = $accountId;
+        $this->container['successCount'] = $successCount;
 
         return $this;
     }
 
     /**
-     * Gets dataSourceId
+     * Gets failList
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\SingleUpdateFail[]|mixed
      */
-    public function getDataSourceId()
+    public function getFailList()
     {
-        return $this->container['dataSourceId'];
+        return $this->container['failList'];
     }
 
     /**
-     * Sets dataSourceId
+     * Sets failList
      *
-     * @param int|mixed $dataSourceId dataSourceId
+     * @param \TencentAds\Model\SingleUpdateFail[]|mixed $failList failList
      *
      * @return $this
      */
-    public function setDataSourceId($dataSourceId)
+    public function setFailList($failList)
     {
-        $this->container['dataSourceId'] = $dataSourceId;
-
-        return $this;
-    }
-
-    /**
-     * Gets envType
-     *
-     * @return int|mixed
-     */
-    public function getEnvType()
-    {
-        return $this->container['envType'];
-    }
-
-    /**
-     * Sets envType
-     *
-     * @param int|mixed $envType envType
-     *
-     * @return $this
-     */
-    public function setEnvType($envType)
-    {
-        $this->container['envType'] = $envType;
+        $this->container['failList'] = $failList;
 
         return $this;
     }

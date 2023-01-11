@@ -112,6 +112,7 @@ class IntOptimizationGoal
     const ADD_GROUP = 'OPTIMIZATIONGOAL_ADD_GROUP';
     const QUICK_ORDER = 'OPTIMIZATIONGOAL_QUICK_ORDER';
     const PRE_PAY = 'OPTIMIZATIONGOAL_PRE_PAY';
+    const PAGE_ONLINE_CONSULT_ACTIVE_ONE_MSG = 'OPTIMIZATIONGOAL_PAGE_ONLINE_CONSULT_ACTIVE_ONE_MSG';
     const PAGE_EFFECTIVE_PHONE_CALL = 'OPTIMIZATIONGOAL_PAGE_EFFECTIVE_PHONE_CALL';
     
     /**
@@ -189,6 +190,7 @@ class IntOptimizationGoal
             self::ADD_GROUP,
             self::QUICK_ORDER,
             self::PRE_PAY,
+            self::PAGE_ONLINE_CONSULT_ACTIVE_ONE_MSG,
             self::PAGE_EFFECTIVE_PHONE_CALL,
         ];
     }

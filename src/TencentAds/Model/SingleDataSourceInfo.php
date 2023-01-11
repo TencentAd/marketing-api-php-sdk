@@ -1,6 +1,6 @@
 <?php
 /**
- * DataSetAddRequest
+ * SingleDataSourceInfo
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DataSetAddRequest Class Doc Comment
+ * SingleDataSourceInfo Class Doc Comment
  *
  * @category Class
+ * @description 数据源详情
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DataSetAddRequest implements ModelInterface, ArrayAccess
+class SingleDataSourceInfo implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'DataSetAddRequest';
+    protected static $swaggerModelName = 'single_data_source_info';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,9 +58,15 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
         'dataSourceId' => 'int',
-        'envType' => 'int'
+        'type' => '\TencentAds\Model\DataSourceType',
+        'mobileAppId' => 'int',
+        'wechatAppId' => 'string',
+        'name' => 'string',
+        'createdTime' => 'string',
+        'accessWay' => '\TencentAds\Model\AccessWay',
+        'dataSets' => '\TencentAds\Model\SingleDataSet[]',
+        'scenes' => '\TencentAds\Model\DataSourceScene[]'
     ];
 
     /**
@@ -68,9 +75,15 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
         'dataSourceId' => 'int64',
-        'envType' => 'int64'
+        'type' => null,
+        'mobileAppId' => 'int64',
+        'wechatAppId' => null,
+        'name' => null,
+        'createdTime' => null,
+        'accessWay' => null,
+        'dataSets' => null,
+        'scenes' => null
     ];
 
     /**
@@ -100,9 +113,15 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
         'dataSourceId' => 'data_source_id',
-        'envType' => 'env_type'
+        'type' => 'type',
+        'mobileAppId' => 'mobile_app_id',
+        'wechatAppId' => 'wechat_app_id',
+        'name' => 'name',
+        'createdTime' => 'created_time',
+        'accessWay' => 'access_way',
+        'dataSets' => 'data_sets',
+        'scenes' => 'scenes'
     ];
 
     /**
@@ -111,9 +130,15 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
         'dataSourceId' => 'setDataSourceId',
-        'envType' => 'setEnvType'
+        'type' => 'setType',
+        'mobileAppId' => 'setMobileAppId',
+        'wechatAppId' => 'setWechatAppId',
+        'name' => 'setName',
+        'createdTime' => 'setCreatedTime',
+        'accessWay' => 'setAccessWay',
+        'dataSets' => 'setDataSets',
+        'scenes' => 'setScenes'
     ];
 
     /**
@@ -122,9 +147,15 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
         'dataSourceId' => 'getDataSourceId',
-        'envType' => 'getEnvType'
+        'type' => 'getType',
+        'mobileAppId' => 'getMobileAppId',
+        'wechatAppId' => 'getWechatAppId',
+        'name' => 'getName',
+        'createdTime' => 'getCreatedTime',
+        'accessWay' => 'getAccessWay',
+        'dataSets' => 'getDataSets',
+        'scenes' => 'getScenes'
     ];
 
     /**
@@ -187,9 +218,15 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['dataSourceId'] = isset($data['dataSourceId']) ? $data['dataSourceId'] : null;
-        $this->container['envType'] = isset($data['envType']) ? $data['envType'] : null;
+        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
+        $this->container['mobileAppId'] = isset($data['mobileAppId']) ? $data['mobileAppId'] : null;
+        $this->container['wechatAppId'] = isset($data['wechatAppId']) ? $data['wechatAppId'] : null;
+        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
+        $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
+        $this->container['accessWay'] = isset($data['accessWay']) ? $data['accessWay'] : null;
+        $this->container['dataSets'] = isset($data['dataSets']) ? $data['dataSets'] : null;
+        $this->container['scenes'] = isset($data['scenes']) ? $data['scenes'] : null;
     }
 
     /**
@@ -217,30 +254,6 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets accountId
-     *
-     * @return int|mixed
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int|mixed $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
-
-        return $this;
-    }
-
-    /**
      * Gets dataSourceId
      *
      * @return int|mixed
@@ -265,25 +278,193 @@ class DataSetAddRequest implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets envType
+     * Gets type
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\DataSourceType|mixed
      */
-    public function getEnvType()
+    public function getType()
     {
-        return $this->container['envType'];
+        return $this->container['type'];
     }
 
     /**
-     * Sets envType
+     * Sets type
      *
-     * @param int|mixed $envType envType
+     * @param \TencentAds\Model\DataSourceType|mixed $type type
      *
      * @return $this
      */
-    public function setEnvType($envType)
+    public function setType($type)
     {
-        $this->container['envType'] = $envType;
+        $this->container['type'] = $type;
+
+        return $this;
+    }
+
+    /**
+     * Gets mobileAppId
+     *
+     * @return int|mixed
+     */
+    public function getMobileAppId()
+    {
+        return $this->container['mobileAppId'];
+    }
+
+    /**
+     * Sets mobileAppId
+     *
+     * @param int|mixed $mobileAppId mobileAppId
+     *
+     * @return $this
+     */
+    public function setMobileAppId($mobileAppId)
+    {
+        $this->container['mobileAppId'] = $mobileAppId;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatAppId
+     *
+     * @return string|mixed
+     */
+    public function getWechatAppId()
+    {
+        return $this->container['wechatAppId'];
+    }
+
+    /**
+     * Sets wechatAppId
+     *
+     * @param string|mixed $wechatAppId wechatAppId
+     *
+     * @return $this
+     */
+    public function setWechatAppId($wechatAppId)
+    {
+        $this->container['wechatAppId'] = $wechatAppId;
+
+        return $this;
+    }
+
+    /**
+     * Gets name
+     *
+     * @return string|mixed
+     */
+    public function getName()
+    {
+        return $this->container['name'];
+    }
+
+    /**
+     * Sets name
+     *
+     * @param string|mixed $name name
+     *
+     * @return $this
+     */
+    public function setName($name)
+    {
+        $this->container['name'] = $name;
+
+        return $this;
+    }
+
+    /**
+     * Gets createdTime
+     *
+     * @return string|mixed
+     */
+    public function getCreatedTime()
+    {
+        return $this->container['createdTime'];
+    }
+
+    /**
+     * Sets createdTime
+     *
+     * @param string|mixed $createdTime createdTime
+     *
+     * @return $this
+     */
+    public function setCreatedTime($createdTime)
+    {
+        $this->container['createdTime'] = $createdTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets accessWay
+     *
+     * @return \TencentAds\Model\AccessWay|mixed
+     */
+    public function getAccessWay()
+    {
+        return $this->container['accessWay'];
+    }
+
+    /**
+     * Sets accessWay
+     *
+     * @param \TencentAds\Model\AccessWay|mixed $accessWay accessWay
+     *
+     * @return $this
+     */
+    public function setAccessWay($accessWay)
+    {
+        $this->container['accessWay'] = $accessWay;
+
+        return $this;
+    }
+
+    /**
+     * Gets dataSets
+     *
+     * @return \TencentAds\Model\SingleDataSet[]|mixed
+     */
+    public function getDataSets()
+    {
+        return $this->container['dataSets'];
+    }
+
+    /**
+     * Sets dataSets
+     *
+     * @param \TencentAds\Model\SingleDataSet[]|mixed $dataSets dataSets
+     *
+     * @return $this
+     */
+    public function setDataSets($dataSets)
+    {
+        $this->container['dataSets'] = $dataSets;
+
+        return $this;
+    }
+
+    /**
+     * Gets scenes
+     *
+     * @return \TencentAds\Model\DataSourceScene[]|mixed
+     */
+    public function getScenes()
+    {
+        return $this->container['scenes'];
+    }
+
+    /**
+     * Sets scenes
+     *
+     * @param \TencentAds\Model\DataSourceScene[]|mixed $scenes scenes
+     *
+     * @return $this
+     */
+    public function setScenes($scenes)
+    {
+        $this->container['scenes'] = $scenes;
 
         return $this;
     }
