@@ -64,7 +64,9 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
         'localStoreProvince' => 'string',
         'localStoreCity' => 'string',
         'localStoreAddress' => 'string',
-        'localStoreBusinessArea' => 'string'
+        'localStoreBusinessArea' => 'string',
+        'localStoreStreet' => 'string',
+        'localStoreDistrict' => 'string'
     ];
 
     /**
@@ -79,7 +81,9 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
         'localStoreProvince' => null,
         'localStoreCity' => null,
         'localStoreAddress' => null,
-        'localStoreBusinessArea' => null
+        'localStoreBusinessArea' => null,
+        'localStoreStreet' => null,
+        'localStoreDistrict' => null
     ];
 
     /**
@@ -115,7 +119,9 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
         'localStoreProvince' => 'local_store_province',
         'localStoreCity' => 'local_store_city',
         'localStoreAddress' => 'local_store_address',
-        'localStoreBusinessArea' => 'local_store_business_area'
+        'localStoreBusinessArea' => 'local_store_business_area',
+        'localStoreStreet' => 'local_store_street',
+        'localStoreDistrict' => 'local_store_district'
     ];
 
     /**
@@ -130,7 +136,9 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
         'localStoreProvince' => 'setLocalStoreProvince',
         'localStoreCity' => 'setLocalStoreCity',
         'localStoreAddress' => 'setLocalStoreAddress',
-        'localStoreBusinessArea' => 'setLocalStoreBusinessArea'
+        'localStoreBusinessArea' => 'setLocalStoreBusinessArea',
+        'localStoreStreet' => 'setLocalStoreStreet',
+        'localStoreDistrict' => 'setLocalStoreDistrict'
     ];
 
     /**
@@ -145,7 +153,9 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
         'localStoreProvince' => 'getLocalStoreProvince',
         'localStoreCity' => 'getLocalStoreCity',
         'localStoreAddress' => 'getLocalStoreAddress',
-        'localStoreBusinessArea' => 'getLocalStoreBusinessArea'
+        'localStoreBusinessArea' => 'getLocalStoreBusinessArea',
+        'localStoreStreet' => 'getLocalStoreStreet',
+        'localStoreDistrict' => 'getLocalStoreDistrict'
     ];
 
     /**
@@ -215,6 +225,8 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
         $this->container['localStoreCity'] = isset($data['localStoreCity']) ? $data['localStoreCity'] : null;
         $this->container['localStoreAddress'] = isset($data['localStoreAddress']) ? $data['localStoreAddress'] : null;
         $this->container['localStoreBusinessArea'] = isset($data['localStoreBusinessArea']) ? $data['localStoreBusinessArea'] : null;
+        $this->container['localStoreStreet'] = isset($data['localStoreStreet']) ? $data['localStoreStreet'] : null;
+        $this->container['localStoreDistrict'] = isset($data['localStoreDistrict']) ? $data['localStoreDistrict'] : null;
     }
 
     /**
@@ -405,6 +417,54 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
     public function setLocalStoreBusinessArea($localStoreBusinessArea)
     {
         $this->container['localStoreBusinessArea'] = $localStoreBusinessArea;
+
+        return $this;
+    }
+
+    /**
+     * Gets localStoreStreet
+     *
+     * @return string|mixed
+     */
+    public function getLocalStoreStreet()
+    {
+        return $this->container['localStoreStreet'];
+    }
+
+    /**
+     * Sets localStoreStreet
+     *
+     * @param string|mixed $localStoreStreet localStoreStreet
+     *
+     * @return $this
+     */
+    public function setLocalStoreStreet($localStoreStreet)
+    {
+        $this->container['localStoreStreet'] = $localStoreStreet;
+
+        return $this;
+    }
+
+    /**
+     * Gets localStoreDistrict
+     *
+     * @return string|mixed
+     */
+    public function getLocalStoreDistrict()
+    {
+        return $this->container['localStoreDistrict'];
+    }
+
+    /**
+     * Sets localStoreDistrict
+     *
+     * @param string|mixed $localStoreDistrict localStoreDistrict
+     *
+     * @return $this
+     */
+    public function setLocalStoreDistrict($localStoreDistrict)
+    {
+        $this->container['localStoreDistrict'] = $localStoreDistrict;
 
         return $this;
     }
