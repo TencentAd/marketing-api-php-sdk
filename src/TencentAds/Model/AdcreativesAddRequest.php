@@ -97,6 +97,8 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'industryLabel' => 'string',
         'unionMarketSpec' => '\TencentAds\Model\UnionMarketSpec',
         'androidQuickAppSpec' => '\TencentAds\Model\AndroidQuickAppSpec',
+        'liveVideoMode' => '\TencentAds\Model\LiveVideoMode',
+        'liveVideoSubMode' => '\TencentAds\Model\LiveVideoSubMode',
         'accountId' => 'int',
         'adcreativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsMp'
@@ -148,6 +150,8 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'industryLabel' => null,
         'unionMarketSpec' => null,
         'androidQuickAppSpec' => null,
+        'liveVideoMode' => null,
+        'liveVideoSubMode' => null,
         'accountId' => 'int64',
         'adcreativeTemplateId' => 'int64',
         'adcreativeElements' => null
@@ -220,6 +224,8 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'industryLabel' => 'industry_label',
         'unionMarketSpec' => 'union_market_spec',
         'androidQuickAppSpec' => 'android_quick_app_spec',
+        'liveVideoMode' => 'live_video_mode',
+        'liveVideoSubMode' => 'live_video_sub_mode',
         'accountId' => 'account_id',
         'adcreativeTemplateId' => 'adcreative_template_id',
         'adcreativeElements' => 'adcreative_elements'
@@ -271,6 +277,8 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'industryLabel' => 'setIndustryLabel',
         'unionMarketSpec' => 'setUnionMarketSpec',
         'androidQuickAppSpec' => 'setAndroidQuickAppSpec',
+        'liveVideoMode' => 'setLiveVideoMode',
+        'liveVideoSubMode' => 'setLiveVideoSubMode',
         'accountId' => 'setAccountId',
         'adcreativeTemplateId' => 'setAdcreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements'
@@ -322,6 +330,8 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'industryLabel' => 'getIndustryLabel',
         'unionMarketSpec' => 'getUnionMarketSpec',
         'androidQuickAppSpec' => 'getAndroidQuickAppSpec',
+        'liveVideoMode' => 'getLiveVideoMode',
+        'liveVideoSubMode' => 'getLiveVideoSubMode',
         'accountId' => 'getAccountId',
         'adcreativeTemplateId' => 'getAdcreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements'
@@ -427,6 +437,8 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         $this->container['industryLabel'] = isset($data['industryLabel']) ? $data['industryLabel'] : null;
         $this->container['unionMarketSpec'] = isset($data['unionMarketSpec']) ? $data['unionMarketSpec'] : null;
         $this->container['androidQuickAppSpec'] = isset($data['androidQuickAppSpec']) ? $data['androidQuickAppSpec'] : null;
+        $this->container['liveVideoMode'] = isset($data['liveVideoMode']) ? $data['liveVideoMode'] : null;
+        $this->container['liveVideoSubMode'] = isset($data['liveVideoSubMode']) ? $data['liveVideoSubMode'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
@@ -1412,6 +1424,54 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     public function setAndroidQuickAppSpec($androidQuickAppSpec)
     {
         $this->container['androidQuickAppSpec'] = $androidQuickAppSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveVideoMode
+     *
+     * @return \TencentAds\Model\LiveVideoMode|mixed
+     */
+    public function getLiveVideoMode()
+    {
+        return $this->container['liveVideoMode'];
+    }
+
+    /**
+     * Sets liveVideoMode
+     *
+     * @param \TencentAds\Model\LiveVideoMode|mixed $liveVideoMode liveVideoMode
+     *
+     * @return $this
+     */
+    public function setLiveVideoMode($liveVideoMode)
+    {
+        $this->container['liveVideoMode'] = $liveVideoMode;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveVideoSubMode
+     *
+     * @return \TencentAds\Model\LiveVideoSubMode|mixed
+     */
+    public function getLiveVideoSubMode()
+    {
+        return $this->container['liveVideoSubMode'];
+    }
+
+    /**
+     * Sets liveVideoSubMode
+     *
+     * @param \TencentAds\Model\LiveVideoSubMode|mixed $liveVideoSubMode liveVideoSubMode
+     *
+     * @return $this
+     */
+    public function setLiveVideoSubMode($liveVideoSubMode)
+    {
+        $this->container['liveVideoSubMode'] = $liveVideoSubMode;
 
         return $this;
     }
