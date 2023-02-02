@@ -567,6 +567,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'cheout7dRate' => 'double',
         'clkRedpocketShakePv' => 'int',
         'clkRedpocketShakeUv' => 'int',
+        'regAllDedupPv' => 'int',
+        'regDedupPv' => 'int',
+        'regCostPla' => 'int',
+        'regClickRatePla' => 'double',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
         'incomeVal1' => 'int',
@@ -1309,6 +1313,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'cheout7dRate' => 'double',
         'clkRedpocketShakePv' => 'int64',
         'clkRedpocketShakeUv' => 'int64',
+        'regAllDedupPv' => 'int64',
+        'regDedupPv' => 'int64',
+        'regCostPla' => 'int64',
+        'regClickRatePla' => 'double',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
         'incomeVal1' => 'int64',
@@ -2072,6 +2080,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'cheout7dRate' => 'cheout_7d_rate',
         'clkRedpocketShakePv' => 'clk_redpocket_shake_pv',
         'clkRedpocketShakeUv' => 'clk_redpocket_shake_uv',
+        'regAllDedupPv' => 'reg_all_dedup_pv',
+        'regDedupPv' => 'reg_dedup_pv',
+        'regCostPla' => 'reg_cost_pla',
+        'regClickRatePla' => 'reg_click_rate_pla',
         'requestConversionsCount' => 'request_conversions_count',
         'requestConversionsCost' => 'request_conversions_cost',
         'incomeVal1' => 'income_val_1',
@@ -2814,6 +2826,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'cheout7dRate' => 'setCheout7dRate',
         'clkRedpocketShakePv' => 'setClkRedpocketShakePv',
         'clkRedpocketShakeUv' => 'setClkRedpocketShakeUv',
+        'regAllDedupPv' => 'setRegAllDedupPv',
+        'regDedupPv' => 'setRegDedupPv',
+        'regCostPla' => 'setRegCostPla',
+        'regClickRatePla' => 'setRegClickRatePla',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'requestConversionsCost' => 'setRequestConversionsCost',
         'incomeVal1' => 'setIncomeVal1',
@@ -3556,6 +3572,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'cheout7dRate' => 'getCheout7dRate',
         'clkRedpocketShakePv' => 'getClkRedpocketShakePv',
         'clkRedpocketShakeUv' => 'getClkRedpocketShakeUv',
+        'regAllDedupPv' => 'getRegAllDedupPv',
+        'regDedupPv' => 'getRegDedupPv',
+        'regCostPla' => 'getRegCostPla',
+        'regClickRatePla' => 'getRegClickRatePla',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'requestConversionsCost' => 'getRequestConversionsCost',
         'incomeVal1' => 'getIncomeVal1',
@@ -4352,6 +4372,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['cheout7dRate'] = isset($data['cheout7dRate']) ? $data['cheout7dRate'] : null;
         $this->container['clkRedpocketShakePv'] = isset($data['clkRedpocketShakePv']) ? $data['clkRedpocketShakePv'] : null;
         $this->container['clkRedpocketShakeUv'] = isset($data['clkRedpocketShakeUv']) ? $data['clkRedpocketShakeUv'] : null;
+        $this->container['regAllDedupPv'] = isset($data['regAllDedupPv']) ? $data['regAllDedupPv'] : null;
+        $this->container['regDedupPv'] = isset($data['regDedupPv']) ? $data['regDedupPv'] : null;
+        $this->container['regCostPla'] = isset($data['regCostPla']) ? $data['regCostPla'] : null;
+        $this->container['regClickRatePla'] = isset($data['regClickRatePla']) ? $data['regClickRatePla'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
         $this->container['incomeVal1'] = isset($data['incomeVal1']) ? $data['incomeVal1'] : null;
@@ -16815,6 +16839,102 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setClkRedpocketShakeUv($clkRedpocketShakeUv)
     {
         $this->container['clkRedpocketShakeUv'] = $clkRedpocketShakeUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets regAllDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getRegAllDedupPv()
+    {
+        return $this->container['regAllDedupPv'];
+    }
+
+    /**
+     * Sets regAllDedupPv
+     *
+     * @param int|mixed $regAllDedupPv regAllDedupPv
+     *
+     * @return $this
+     */
+    public function setRegAllDedupPv($regAllDedupPv)
+    {
+        $this->container['regAllDedupPv'] = $regAllDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets regDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getRegDedupPv()
+    {
+        return $this->container['regDedupPv'];
+    }
+
+    /**
+     * Sets regDedupPv
+     *
+     * @param int|mixed $regDedupPv regDedupPv
+     *
+     * @return $this
+     */
+    public function setRegDedupPv($regDedupPv)
+    {
+        $this->container['regDedupPv'] = $regDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets regCostPla
+     *
+     * @return int|mixed
+     */
+    public function getRegCostPla()
+    {
+        return $this->container['regCostPla'];
+    }
+
+    /**
+     * Sets regCostPla
+     *
+     * @param int|mixed $regCostPla regCostPla
+     *
+     * @return $this
+     */
+    public function setRegCostPla($regCostPla)
+    {
+        $this->container['regCostPla'] = $regCostPla;
+
+        return $this;
+    }
+
+    /**
+     * Gets regClickRatePla
+     *
+     * @return double|mixed
+     */
+    public function getRegClickRatePla()
+    {
+        return $this->container['regClickRatePla'];
+    }
+
+    /**
+     * Sets regClickRatePla
+     *
+     * @param double|mixed $regClickRatePla regClickRatePla
+     *
+     * @return $this
+     */
+    public function setRegClickRatePla($regClickRatePla)
+    {
+        $this->container['regClickRatePla'] = $regClickRatePla;
 
         return $this;
     }

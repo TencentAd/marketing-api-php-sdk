@@ -92,6 +92,8 @@ class SiteSetDefinition
     const SITE_SET_QBSEARCH = 'SITE_SET_QBSEARCH';
     const SITE_SET_FREETRADE_FINDER = 'SITE_SET_FREETRADE_FINDER';
     const SITE_SET_BROWSER_MOBILE = 'SITE_SET_BROWSER_MOBILE';
+    const SITE_SET_SEARCH_SCENE = 'SITE_SET_SEARCH_SCENE';
+    const SITE_SET_BROWSER_PC = 'SITE_SET_BROWSER_PC';
     const SITESET_WECHAT_PLUGIN = 'SITESET_WECHAT_PLUGIN';
     
     /**
@@ -149,6 +151,8 @@ class SiteSetDefinition
             self::SITE_SET_QBSEARCH,
             self::SITE_SET_FREETRADE_FINDER,
             self::SITE_SET_BROWSER_MOBILE,
+            self::SITE_SET_SEARCH_SCENE,
+            self::SITE_SET_BROWSER_PC,
             self::SITESET_WECHAT_PLUGIN,
         ];
     }
