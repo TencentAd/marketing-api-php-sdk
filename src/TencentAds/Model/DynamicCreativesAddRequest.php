@@ -104,6 +104,8 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'campaignId' => 'int',
         'pageTrackUrl' => 'string',
         'industryLabel' => 'string',
+        'sublinkSwitch' => '\TencentAds\Model\AdvertiserSublinkSwitch',
+        'picMaterialSwitch' => '\TencentAds\Model\AdvertiserPicMaterialSwitch',
         'accountId' => 'int'
     ];
 
@@ -160,6 +162,8 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'campaignId' => 'int64',
         'pageTrackUrl' => null,
         'industryLabel' => null,
+        'sublinkSwitch' => null,
+        'picMaterialSwitch' => null,
         'accountId' => 'int64'
     ];
 
@@ -237,6 +241,8 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'campaignId' => 'campaign_id',
         'pageTrackUrl' => 'page_track_url',
         'industryLabel' => 'industry_label',
+        'sublinkSwitch' => 'sublink_switch',
+        'picMaterialSwitch' => 'pic_material_switch',
         'accountId' => 'account_id'
     ];
 
@@ -293,6 +299,8 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'campaignId' => 'setCampaignId',
         'pageTrackUrl' => 'setPageTrackUrl',
         'industryLabel' => 'setIndustryLabel',
+        'sublinkSwitch' => 'setSublinkSwitch',
+        'picMaterialSwitch' => 'setPicMaterialSwitch',
         'accountId' => 'setAccountId'
     ];
 
@@ -349,6 +357,8 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'campaignId' => 'getCampaignId',
         'pageTrackUrl' => 'getPageTrackUrl',
         'industryLabel' => 'getIndustryLabel',
+        'sublinkSwitch' => 'getSublinkSwitch',
+        'picMaterialSwitch' => 'getPicMaterialSwitch',
         'accountId' => 'getAccountId'
     ];
 
@@ -459,6 +469,8 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
         $this->container['pageTrackUrl'] = isset($data['pageTrackUrl']) ? $data['pageTrackUrl'] : null;
         $this->container['industryLabel'] = isset($data['industryLabel']) ? $data['industryLabel'] : null;
+        $this->container['sublinkSwitch'] = isset($data['sublinkSwitch']) ? $data['sublinkSwitch'] : null;
+        $this->container['picMaterialSwitch'] = isset($data['picMaterialSwitch']) ? $data['picMaterialSwitch'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1610,6 +1622,54 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     public function setIndustryLabel($industryLabel)
     {
         $this->container['industryLabel'] = $industryLabel;
+
+        return $this;
+    }
+
+    /**
+     * Gets sublinkSwitch
+     *
+     * @return \TencentAds\Model\AdvertiserSublinkSwitch|mixed
+     */
+    public function getSublinkSwitch()
+    {
+        return $this->container['sublinkSwitch'];
+    }
+
+    /**
+     * Sets sublinkSwitch
+     *
+     * @param \TencentAds\Model\AdvertiserSublinkSwitch|mixed $sublinkSwitch sublinkSwitch
+     *
+     * @return $this
+     */
+    public function setSublinkSwitch($sublinkSwitch)
+    {
+        $this->container['sublinkSwitch'] = $sublinkSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets picMaterialSwitch
+     *
+     * @return \TencentAds\Model\AdvertiserPicMaterialSwitch|mixed
+     */
+    public function getPicMaterialSwitch()
+    {
+        return $this->container['picMaterialSwitch'];
+    }
+
+    /**
+     * Sets picMaterialSwitch
+     *
+     * @param \TencentAds\Model\AdvertiserPicMaterialSwitch|mixed $picMaterialSwitch picMaterialSwitch
+     *
+     * @return $this
+     */
+    public function setPicMaterialSwitch($picMaterialSwitch)
+    {
+        $this->container['picMaterialSwitch'] = $picMaterialSwitch;
 
         return $this;
     }

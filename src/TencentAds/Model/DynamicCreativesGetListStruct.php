@@ -95,7 +95,9 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'headClickSpec' => '\TencentAds\Model\HeadClickSpec',
         'asyncJobStatus' => '\TencentAds\Model\DCAsyncJobStatus',
         'pageTrackUrl' => 'string',
-        'industryLabel' => 'string'
+        'industryLabel' => 'string',
+        'sublinkSwitch' => '\TencentAds\Model\AdvertiserSublinkSwitch',
+        'picMaterialSwitch' => '\TencentAds\Model\AdvertiserPicMaterialSwitch'
     ];
 
     /**
@@ -141,7 +143,9 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'headClickSpec' => null,
         'asyncJobStatus' => null,
         'pageTrackUrl' => null,
-        'industryLabel' => null
+        'industryLabel' => null,
+        'sublinkSwitch' => null,
+        'picMaterialSwitch' => null
     ];
 
     /**
@@ -208,7 +212,9 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'headClickSpec' => 'head_click_spec',
         'asyncJobStatus' => 'async_job_status',
         'pageTrackUrl' => 'page_track_url',
-        'industryLabel' => 'industry_label'
+        'industryLabel' => 'industry_label',
+        'sublinkSwitch' => 'sublink_switch',
+        'picMaterialSwitch' => 'pic_material_switch'
     ];
 
     /**
@@ -254,7 +260,9 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'headClickSpec' => 'setHeadClickSpec',
         'asyncJobStatus' => 'setAsyncJobStatus',
         'pageTrackUrl' => 'setPageTrackUrl',
-        'industryLabel' => 'setIndustryLabel'
+        'industryLabel' => 'setIndustryLabel',
+        'sublinkSwitch' => 'setSublinkSwitch',
+        'picMaterialSwitch' => 'setPicMaterialSwitch'
     ];
 
     /**
@@ -300,7 +308,9 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'headClickSpec' => 'getHeadClickSpec',
         'asyncJobStatus' => 'getAsyncJobStatus',
         'pageTrackUrl' => 'getPageTrackUrl',
-        'industryLabel' => 'getIndustryLabel'
+        'industryLabel' => 'getIndustryLabel',
+        'sublinkSwitch' => 'getSublinkSwitch',
+        'picMaterialSwitch' => 'getPicMaterialSwitch'
     ];
 
     /**
@@ -401,6 +411,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['asyncJobStatus'] = isset($data['asyncJobStatus']) ? $data['asyncJobStatus'] : null;
         $this->container['pageTrackUrl'] = isset($data['pageTrackUrl']) ? $data['pageTrackUrl'] : null;
         $this->container['industryLabel'] = isset($data['industryLabel']) ? $data['industryLabel'] : null;
+        $this->container['sublinkSwitch'] = isset($data['sublinkSwitch']) ? $data['sublinkSwitch'] : null;
+        $this->container['picMaterialSwitch'] = isset($data['picMaterialSwitch']) ? $data['picMaterialSwitch'] : null;
     }
 
     /**
@@ -1335,6 +1347,54 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setIndustryLabel($industryLabel)
     {
         $this->container['industryLabel'] = $industryLabel;
+
+        return $this;
+    }
+
+    /**
+     * Gets sublinkSwitch
+     *
+     * @return \TencentAds\Model\AdvertiserSublinkSwitch|mixed
+     */
+    public function getSublinkSwitch()
+    {
+        return $this->container['sublinkSwitch'];
+    }
+
+    /**
+     * Sets sublinkSwitch
+     *
+     * @param \TencentAds\Model\AdvertiserSublinkSwitch|mixed $sublinkSwitch sublinkSwitch
+     *
+     * @return $this
+     */
+    public function setSublinkSwitch($sublinkSwitch)
+    {
+        $this->container['sublinkSwitch'] = $sublinkSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets picMaterialSwitch
+     *
+     * @return \TencentAds\Model\AdvertiserPicMaterialSwitch|mixed
+     */
+    public function getPicMaterialSwitch()
+    {
+        return $this->container['picMaterialSwitch'];
+    }
+
+    /**
+     * Sets picMaterialSwitch
+     *
+     * @param \TencentAds\Model\AdvertiserPicMaterialSwitch|mixed $picMaterialSwitch picMaterialSwitch
+     *
+     * @return $this
+     */
+    public function setPicMaterialSwitch($picMaterialSwitch)
+    {
+        $this->container['picMaterialSwitch'] = $picMaterialSwitch;
 
         return $this;
     }
