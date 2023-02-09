@@ -1,6 +1,6 @@
 <?php
 /**
- * AdcreativePreviewSpec
+ * BidwordFlowGetResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AdcreativePreviewSpec Class Doc Comment
+ * BidwordFlowGetResponse Class Doc Comment
  *
  * @category Class
- * @description 预览信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
+class BidwordFlowGetResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'adcreative_preview_spec';
+    protected static $swaggerModelName = 'BidwordFlowGetResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,13 +57,11 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adcreativeTemplateId' => 'int',
-        'siteSet' => 'string[]',
-        'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
-        'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElements',
-        'promotedObjectId' => 'string',
-        'pageType' => '\TencentAds\Model\DestinationType',
-        'pageSpec' => '\TencentAds\Model\PreviewPageSpec'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\BidwordFlowGetResponseData'
     ];
 
     /**
@@ -73,13 +70,11 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adcreativeTemplateId' => 'int64',
-        'siteSet' => null,
-        'promotedObjectType' => null,
-        'adcreativeElements' => null,
-        'promotedObjectId' => null,
-        'pageType' => null,
-        'pageSpec' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -109,13 +104,11 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adcreativeTemplateId' => 'adcreative_template_id',
-        'siteSet' => 'site_set',
-        'promotedObjectType' => 'promoted_object_type',
-        'adcreativeElements' => 'adcreative_elements',
-        'promotedObjectId' => 'promoted_object_id',
-        'pageType' => 'page_type',
-        'pageSpec' => 'page_spec'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -124,13 +117,11 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adcreativeTemplateId' => 'setAdcreativeTemplateId',
-        'siteSet' => 'setSiteSet',
-        'promotedObjectType' => 'setPromotedObjectType',
-        'adcreativeElements' => 'setAdcreativeElements',
-        'promotedObjectId' => 'setPromotedObjectId',
-        'pageType' => 'setPageType',
-        'pageSpec' => 'setPageSpec'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -139,13 +130,11 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adcreativeTemplateId' => 'getAdcreativeTemplateId',
-        'siteSet' => 'getSiteSet',
-        'promotedObjectType' => 'getPromotedObjectType',
-        'adcreativeElements' => 'getAdcreativeElements',
-        'promotedObjectId' => 'getPromotedObjectId',
-        'pageType' => 'getPageType',
-        'pageSpec' => 'getPageSpec'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -208,13 +197,11 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
-        $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
-        $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
-        $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
-        $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
-        $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
-        $this->container['pageSpec'] = isset($data['pageSpec']) ? $data['pageSpec'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -242,169 +229,121 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets adcreativeTemplateId
+     * Gets code
      *
      * @return int|mixed
      */
-    public function getAdcreativeTemplateId()
+    public function getCode()
     {
-        return $this->container['adcreativeTemplateId'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets adcreativeTemplateId
+     * Sets code
      *
-     * @param int|mixed $adcreativeTemplateId adcreativeTemplateId
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setAdcreativeTemplateId($adcreativeTemplateId)
+    public function setCode($code)
     {
-        $this->container['adcreativeTemplateId'] = $adcreativeTemplateId;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets siteSet
-     *
-     * @return string[]|mixed
-     */
-    public function getSiteSet()
-    {
-        return $this->container['siteSet'];
-    }
-
-    /**
-     * Sets siteSet
-     *
-     * @param string[]|mixed $siteSet siteSet
-     *
-     * @return $this
-     */
-    public function setSiteSet($siteSet)
-    {
-        $this->container['siteSet'] = $siteSet;
-
-        return $this;
-    }
-
-    /**
-     * Gets promotedObjectType
-     *
-     * @return \TencentAds\Model\PromotedObjectType|mixed
-     */
-    public function getPromotedObjectType()
-    {
-        return $this->container['promotedObjectType'];
-    }
-
-    /**
-     * Sets promotedObjectType
-     *
-     * @param \TencentAds\Model\PromotedObjectType|mixed $promotedObjectType promotedObjectType
-     *
-     * @return $this
-     */
-    public function setPromotedObjectType($promotedObjectType)
-    {
-        $this->container['promotedObjectType'] = $promotedObjectType;
-
-        return $this;
-    }
-
-    /**
-     * Gets adcreativeElements
-     *
-     * @return \TencentAds\Model\AdcreativeCreativeElements|mixed
-     */
-    public function getAdcreativeElements()
-    {
-        return $this->container['adcreativeElements'];
-    }
-
-    /**
-     * Sets adcreativeElements
-     *
-     * @param \TencentAds\Model\AdcreativeCreativeElements|mixed $adcreativeElements adcreativeElements
-     *
-     * @return $this
-     */
-    public function setAdcreativeElements($adcreativeElements)
-    {
-        $this->container['adcreativeElements'] = $adcreativeElements;
-
-        return $this;
-    }
-
-    /**
-     * Gets promotedObjectId
+     * Gets message
      *
      * @return string|mixed
      */
-    public function getPromotedObjectId()
+    public function getMessage()
     {
-        return $this->container['promotedObjectId'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets promotedObjectId
+     * Sets message
      *
-     * @param string|mixed $promotedObjectId promotedObjectId
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setPromotedObjectId($promotedObjectId)
+    public function setMessage($message)
     {
-        $this->container['promotedObjectId'] = $promotedObjectId;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets pageType
+     * Gets messageCn
      *
-     * @return \TencentAds\Model\DestinationType|mixed
+     * @return string|mixed
      */
-    public function getPageType()
+    public function getMessageCn()
     {
-        return $this->container['pageType'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets pageType
+     * Sets messageCn
      *
-     * @param \TencentAds\Model\DestinationType|mixed $pageType pageType
+     * @param string|mixed $messageCn messageCn
      *
      * @return $this
      */
-    public function setPageType($pageType)
+    public function setMessageCn($messageCn)
     {
-        $this->container['pageType'] = $pageType;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets pageSpec
+     * Gets errors
      *
-     * @return \TencentAds\Model\PreviewPageSpec|mixed
+     * @return \TencentAds\Model\ApiErrorStruct[]|mixed
      */
-    public function getPageSpec()
+    public function getErrors()
     {
-        return $this->container['pageSpec'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets pageSpec
+     * Sets errors
      *
-     * @param \TencentAds\Model\PreviewPageSpec|mixed $pageSpec pageSpec
+     * @param \TencentAds\Model\ApiErrorStruct[]|mixed $errors errors
      *
      * @return $this
      */
-    public function setPageSpec($pageSpec)
+    public function setErrors($errors)
     {
-        $this->container['pageSpec'] = $pageSpec;
+        $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\BidwordFlowGetResponseData|mixed
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\BidwordFlowGetResponseData|mixed $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }

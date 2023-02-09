@@ -1,6 +1,6 @@
 <?php
 /**
- * WechatPagePageType
+ * DestinationTypeRead
  *
  * PHP version 5
  *
@@ -31,7 +31,7 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * WechatPagePageType Class Doc Comment
+ * DestinationTypeRead Class Doc Comment
  *
  * @category Class
  * @description 落地页类型
@@ -39,7 +39,7 @@ use \TencentAds\ObjectSerializer;
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class WechatPagePageType
+class DestinationTypeRead
 {
     /**
      * Possible values of this enum
@@ -57,6 +57,8 @@ class WechatPagePageType
     const CHANNELS_WATCH_LIVE = 'PAGE_TYPE_CHANNELS_WATCH_LIVE';
     const CHANNELS_RESERVE_LIVE = 'PAGE_TYPE_CHANNELS_RESERVE_LIVE';
     const WECHAT_STATUS_FOOTER = 'PAGE_TYPE_WECHAT_STATUS_FOOTER';
+    const WECHAT_CONSULT = 'PAGE_TYPE_WECHAT_CONSULT';
+    const WECOM_CONSULT = 'PAGE_TYPE_WECOM_CONSULT';
     const YOUZAN_SINGLE = 'PAGE_TYPE_YOUZAN_SINGLE';
     const YOUZAN_TOGETHER = 'PAGE_TYPE_YOUZAN_TOGETHER';
     const YOUZAN_WECHAT_MINIPROGRAM = 'PAGE_TYPE_YOUZAN_WECHAT_MINIPROGRAM';
@@ -98,6 +100,8 @@ class WechatPagePageType
             self::CHANNELS_WATCH_LIVE,
             self::CHANNELS_RESERVE_LIVE,
             self::WECHAT_STATUS_FOOTER,
+            self::WECHAT_CONSULT,
+            self::WECOM_CONSULT,
             self::YOUZAN_SINGLE,
             self::YOUZAN_TOGETHER,
             self::YOUZAN_WECHAT_MINIPROGRAM,

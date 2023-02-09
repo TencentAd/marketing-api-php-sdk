@@ -39,6 +39,7 @@ use TencentAds\Container\BatchOperationApiContainer;
 use TencentAds\Container\BatchRequestsApiContainer;
 use TencentAds\Container\BidSimulationApiContainer;
 use TencentAds\Container\BidwordApiContainer;
+use TencentAds\Container\BidwordFlowApiContainer;
 use TencentAds\Container\BidwordRptApiContainer;
 use TencentAds\Container\BrandApiContainer;
 use TencentAds\Container\BusinessManagerRelationsApiContainer;
@@ -295,6 +296,9 @@ class App
 
     /** @var BidwordApiContainer */
     public $bidwordApiContainer;
+
+    /** @var BidwordFlowApiContainer */
+    public $bidwordFlowApiContainer;
 
     /** @var BidwordRptApiContainer */
     public $bidwordRptApiContainer;
@@ -1244,6 +1248,20 @@ class App
             $this->bidwordApiContainer = $container;
         }
         return $this->bidwordApiContainer;
+    }
+
+
+    /**
+     * @return BidwordFlowApiContainer
+     */
+    public function bidwordFlow()
+    {
+        if (empty($this->bidwordFlowApiContainer)) {
+            $container = new BidwordFlowApiContainer();
+            $container->init($this, $this->getClient());
+            $this->bidwordFlowApiContainer = $container;
+        }
+        return $this->bidwordFlowApiContainer;
     }
 
 

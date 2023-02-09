@@ -1,6 +1,6 @@
 <?php
 /**
- * AdcreativePreviewSpec
+ * BidwordDataStructs
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AdcreativePreviewSpec Class Doc Comment
+ * BidwordDataStructs Class Doc Comment
  *
  * @category Class
- * @description 预览信息
+ * @description 关键词信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
+class BidwordDataStructs implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'adcreative_preview_spec';
+    protected static $swaggerModelName = 'bidword_data_structs';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,13 +58,12 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adcreativeTemplateId' => 'int',
-        'siteSet' => 'string[]',
-        'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
-        'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElements',
-        'promotedObjectId' => 'string',
-        'pageType' => '\TencentAds\Model\DestinationType',
-        'pageSpec' => '\TencentAds\Model\PreviewPageSpec'
+        'bidword' => 'string',
+        'monthQueryCount' => 'int',
+        'clickCount' => 'int',
+        'price' => 'double',
+        'totalAccts' => 'int',
+        'recommendReason' => 'string'
     ];
 
     /**
@@ -73,13 +72,12 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adcreativeTemplateId' => 'int64',
-        'siteSet' => null,
-        'promotedObjectType' => null,
-        'adcreativeElements' => null,
-        'promotedObjectId' => null,
-        'pageType' => null,
-        'pageSpec' => null
+        'bidword' => null,
+        'monthQueryCount' => 'int64',
+        'clickCount' => 'int64',
+        'price' => 'double',
+        'totalAccts' => 'int64',
+        'recommendReason' => null
     ];
 
     /**
@@ -109,13 +107,12 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adcreativeTemplateId' => 'adcreative_template_id',
-        'siteSet' => 'site_set',
-        'promotedObjectType' => 'promoted_object_type',
-        'adcreativeElements' => 'adcreative_elements',
-        'promotedObjectId' => 'promoted_object_id',
-        'pageType' => 'page_type',
-        'pageSpec' => 'page_spec'
+        'bidword' => 'bidword',
+        'monthQueryCount' => 'month_query_count',
+        'clickCount' => 'click_count',
+        'price' => 'price',
+        'totalAccts' => 'total_accts',
+        'recommendReason' => 'recommend_reason'
     ];
 
     /**
@@ -124,13 +121,12 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adcreativeTemplateId' => 'setAdcreativeTemplateId',
-        'siteSet' => 'setSiteSet',
-        'promotedObjectType' => 'setPromotedObjectType',
-        'adcreativeElements' => 'setAdcreativeElements',
-        'promotedObjectId' => 'setPromotedObjectId',
-        'pageType' => 'setPageType',
-        'pageSpec' => 'setPageSpec'
+        'bidword' => 'setBidword',
+        'monthQueryCount' => 'setMonthQueryCount',
+        'clickCount' => 'setClickCount',
+        'price' => 'setPrice',
+        'totalAccts' => 'setTotalAccts',
+        'recommendReason' => 'setRecommendReason'
     ];
 
     /**
@@ -139,13 +135,12 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adcreativeTemplateId' => 'getAdcreativeTemplateId',
-        'siteSet' => 'getSiteSet',
-        'promotedObjectType' => 'getPromotedObjectType',
-        'adcreativeElements' => 'getAdcreativeElements',
-        'promotedObjectId' => 'getPromotedObjectId',
-        'pageType' => 'getPageType',
-        'pageSpec' => 'getPageSpec'
+        'bidword' => 'getBidword',
+        'monthQueryCount' => 'getMonthQueryCount',
+        'clickCount' => 'getClickCount',
+        'price' => 'getPrice',
+        'totalAccts' => 'getTotalAccts',
+        'recommendReason' => 'getRecommendReason'
     ];
 
     /**
@@ -208,13 +203,12 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
-        $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
-        $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
-        $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
-        $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
-        $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
-        $this->container['pageSpec'] = isset($data['pageSpec']) ? $data['pageSpec'] : null;
+        $this->container['bidword'] = isset($data['bidword']) ? $data['bidword'] : null;
+        $this->container['monthQueryCount'] = isset($data['monthQueryCount']) ? $data['monthQueryCount'] : null;
+        $this->container['clickCount'] = isset($data['clickCount']) ? $data['clickCount'] : null;
+        $this->container['price'] = isset($data['price']) ? $data['price'] : null;
+        $this->container['totalAccts'] = isset($data['totalAccts']) ? $data['totalAccts'] : null;
+        $this->container['recommendReason'] = isset($data['recommendReason']) ? $data['recommendReason'] : null;
     }
 
     /**
@@ -242,169 +236,145 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets adcreativeTemplateId
-     *
-     * @return int|mixed
-     */
-    public function getAdcreativeTemplateId()
-    {
-        return $this->container['adcreativeTemplateId'];
-    }
-
-    /**
-     * Sets adcreativeTemplateId
-     *
-     * @param int|mixed $adcreativeTemplateId adcreativeTemplateId
-     *
-     * @return $this
-     */
-    public function setAdcreativeTemplateId($adcreativeTemplateId)
-    {
-        $this->container['adcreativeTemplateId'] = $adcreativeTemplateId;
-
-        return $this;
-    }
-
-    /**
-     * Gets siteSet
-     *
-     * @return string[]|mixed
-     */
-    public function getSiteSet()
-    {
-        return $this->container['siteSet'];
-    }
-
-    /**
-     * Sets siteSet
-     *
-     * @param string[]|mixed $siteSet siteSet
-     *
-     * @return $this
-     */
-    public function setSiteSet($siteSet)
-    {
-        $this->container['siteSet'] = $siteSet;
-
-        return $this;
-    }
-
-    /**
-     * Gets promotedObjectType
-     *
-     * @return \TencentAds\Model\PromotedObjectType|mixed
-     */
-    public function getPromotedObjectType()
-    {
-        return $this->container['promotedObjectType'];
-    }
-
-    /**
-     * Sets promotedObjectType
-     *
-     * @param \TencentAds\Model\PromotedObjectType|mixed $promotedObjectType promotedObjectType
-     *
-     * @return $this
-     */
-    public function setPromotedObjectType($promotedObjectType)
-    {
-        $this->container['promotedObjectType'] = $promotedObjectType;
-
-        return $this;
-    }
-
-    /**
-     * Gets adcreativeElements
-     *
-     * @return \TencentAds\Model\AdcreativeCreativeElements|mixed
-     */
-    public function getAdcreativeElements()
-    {
-        return $this->container['adcreativeElements'];
-    }
-
-    /**
-     * Sets adcreativeElements
-     *
-     * @param \TencentAds\Model\AdcreativeCreativeElements|mixed $adcreativeElements adcreativeElements
-     *
-     * @return $this
-     */
-    public function setAdcreativeElements($adcreativeElements)
-    {
-        $this->container['adcreativeElements'] = $adcreativeElements;
-
-        return $this;
-    }
-
-    /**
-     * Gets promotedObjectId
+     * Gets bidword
      *
      * @return string|mixed
      */
-    public function getPromotedObjectId()
+    public function getBidword()
     {
-        return $this->container['promotedObjectId'];
+        return $this->container['bidword'];
     }
 
     /**
-     * Sets promotedObjectId
+     * Sets bidword
      *
-     * @param string|mixed $promotedObjectId promotedObjectId
+     * @param string|mixed $bidword bidword
      *
      * @return $this
      */
-    public function setPromotedObjectId($promotedObjectId)
+    public function setBidword($bidword)
     {
-        $this->container['promotedObjectId'] = $promotedObjectId;
+        $this->container['bidword'] = $bidword;
 
         return $this;
     }
 
     /**
-     * Gets pageType
+     * Gets monthQueryCount
      *
-     * @return \TencentAds\Model\DestinationType|mixed
+     * @return int|mixed
      */
-    public function getPageType()
+    public function getMonthQueryCount()
     {
-        return $this->container['pageType'];
+        return $this->container['monthQueryCount'];
     }
 
     /**
-     * Sets pageType
+     * Sets monthQueryCount
      *
-     * @param \TencentAds\Model\DestinationType|mixed $pageType pageType
+     * @param int|mixed $monthQueryCount monthQueryCount
      *
      * @return $this
      */
-    public function setPageType($pageType)
+    public function setMonthQueryCount($monthQueryCount)
     {
-        $this->container['pageType'] = $pageType;
+        $this->container['monthQueryCount'] = $monthQueryCount;
 
         return $this;
     }
 
     /**
-     * Gets pageSpec
+     * Gets clickCount
      *
-     * @return \TencentAds\Model\PreviewPageSpec|mixed
+     * @return int|mixed
      */
-    public function getPageSpec()
+    public function getClickCount()
     {
-        return $this->container['pageSpec'];
+        return $this->container['clickCount'];
     }
 
     /**
-     * Sets pageSpec
+     * Sets clickCount
      *
-     * @param \TencentAds\Model\PreviewPageSpec|mixed $pageSpec pageSpec
+     * @param int|mixed $clickCount clickCount
      *
      * @return $this
      */
-    public function setPageSpec($pageSpec)
+    public function setClickCount($clickCount)
     {
-        $this->container['pageSpec'] = $pageSpec;
+        $this->container['clickCount'] = $clickCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets price
+     *
+     * @return double|mixed
+     */
+    public function getPrice()
+    {
+        return $this->container['price'];
+    }
+
+    /**
+     * Sets price
+     *
+     * @param double|mixed $price price
+     *
+     * @return $this
+     */
+    public function setPrice($price)
+    {
+        $this->container['price'] = $price;
+
+        return $this;
+    }
+
+    /**
+     * Gets totalAccts
+     *
+     * @return int|mixed
+     */
+    public function getTotalAccts()
+    {
+        return $this->container['totalAccts'];
+    }
+
+    /**
+     * Sets totalAccts
+     *
+     * @param int|mixed $totalAccts totalAccts
+     *
+     * @return $this
+     */
+    public function setTotalAccts($totalAccts)
+    {
+        $this->container['totalAccts'] = $totalAccts;
+
+        return $this;
+    }
+
+    /**
+     * Gets recommendReason
+     *
+     * @return string|mixed
+     */
+    public function getRecommendReason()
+    {
+        return $this->container['recommendReason'];
+    }
+
+    /**
+     * Sets recommendReason
+     *
+     * @param string|mixed $recommendReason recommendReason
+     *
+     * @return $this
+     */
+    public function setRecommendReason($recommendReason)
+    {
+        $this->container['recommendReason'] = $recommendReason;
 
         return $this;
     }

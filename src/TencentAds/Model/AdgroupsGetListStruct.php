@@ -126,7 +126,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'systemStatusExplanation' => 'string',
         'autoDerivedLandingPageSwitch' => 'bool',
         'searchExpansionSwitch' => '\TencentAds\Model\SearchExpansionSwitch',
-        'searchExpandTargetingSwitch' => '\TencentAds\Model\SearchExpandTargetingSwitch'
+        'searchExpandTargetingSwitch' => '\TencentAds\Model\SearchExpandTargetingSwitch',
+        'autoAcquisitionStatus' => '\TencentAds\Model\AutoAcquisitionStatus'
     ];
 
     /**
@@ -203,7 +204,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'systemStatusExplanation' => null,
         'autoDerivedLandingPageSwitch' => null,
         'searchExpansionSwitch' => null,
-        'searchExpandTargetingSwitch' => null
+        'searchExpandTargetingSwitch' => null,
+        'autoAcquisitionStatus' => null
     ];
 
     /**
@@ -301,7 +303,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'systemStatusExplanation' => 'system_status_explanation',
         'autoDerivedLandingPageSwitch' => 'auto_derived_landing_page_switch',
         'searchExpansionSwitch' => 'search_expansion_switch',
-        'searchExpandTargetingSwitch' => 'search_expand_targeting_switch'
+        'searchExpandTargetingSwitch' => 'search_expand_targeting_switch',
+        'autoAcquisitionStatus' => 'auto_acquisition_status'
     ];
 
     /**
@@ -378,7 +381,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'systemStatusExplanation' => 'setSystemStatusExplanation',
         'autoDerivedLandingPageSwitch' => 'setAutoDerivedLandingPageSwitch',
         'searchExpansionSwitch' => 'setSearchExpansionSwitch',
-        'searchExpandTargetingSwitch' => 'setSearchExpandTargetingSwitch'
+        'searchExpandTargetingSwitch' => 'setSearchExpandTargetingSwitch',
+        'autoAcquisitionStatus' => 'setAutoAcquisitionStatus'
     ];
 
     /**
@@ -455,7 +459,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'systemStatusExplanation' => 'getSystemStatusExplanation',
         'autoDerivedLandingPageSwitch' => 'getAutoDerivedLandingPageSwitch',
         'searchExpansionSwitch' => 'getSearchExpansionSwitch',
-        'searchExpandTargetingSwitch' => 'getSearchExpandTargetingSwitch'
+        'searchExpandTargetingSwitch' => 'getSearchExpandTargetingSwitch',
+        'autoAcquisitionStatus' => 'getAutoAcquisitionStatus'
     ];
 
     /**
@@ -587,6 +592,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['autoDerivedLandingPageSwitch'] = isset($data['autoDerivedLandingPageSwitch']) ? $data['autoDerivedLandingPageSwitch'] : null;
         $this->container['searchExpansionSwitch'] = isset($data['searchExpansionSwitch']) ? $data['searchExpansionSwitch'] : null;
         $this->container['searchExpandTargetingSwitch'] = isset($data['searchExpandTargetingSwitch']) ? $data['searchExpandTargetingSwitch'] : null;
+        $this->container['autoAcquisitionStatus'] = isset($data['autoAcquisitionStatus']) ? $data['autoAcquisitionStatus'] : null;
     }
 
     /**
@@ -2265,6 +2271,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setSearchExpandTargetingSwitch($searchExpandTargetingSwitch)
     {
         $this->container['searchExpandTargetingSwitch'] = $searchExpandTargetingSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoAcquisitionStatus
+     *
+     * @return \TencentAds\Model\AutoAcquisitionStatus|mixed
+     */
+    public function getAutoAcquisitionStatus()
+    {
+        return $this->container['autoAcquisitionStatus'];
+    }
+
+    /**
+     * Sets autoAcquisitionStatus
+     *
+     * @param \TencentAds\Model\AutoAcquisitionStatus|mixed $autoAcquisitionStatus autoAcquisitionStatus
+     *
+     * @return $this
+     */
+    public function setAutoAcquisitionStatus($autoAcquisitionStatus)
+    {
+        $this->container['autoAcquisitionStatus'] = $autoAcquisitionStatus;
 
         return $this;
     }

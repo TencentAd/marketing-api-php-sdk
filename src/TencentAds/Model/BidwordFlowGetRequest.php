@@ -1,6 +1,6 @@
 <?php
 /**
- * AdcreativePreviewSpec
+ * BidwordFlowGetRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * AdcreativePreviewSpec Class Doc Comment
+ * BidwordFlowGetRequest Class Doc Comment
  *
  * @category Class
- * @description 预览信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
+class BidwordFlowGetRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'adcreative_preview_spec';
+    protected static $swaggerModelName = 'BidwordFlowGetRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,13 +57,9 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adcreativeTemplateId' => 'int',
-        'siteSet' => 'string[]',
-        'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
-        'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElements',
-        'promotedObjectId' => 'string',
-        'pageType' => '\TencentAds\Model\DestinationType',
-        'pageSpec' => '\TencentAds\Model\PreviewPageSpec'
+        'accountId' => 'int',
+        'bidwordList' => 'string[]',
+        'orderBy' => '\TencentAds\Model\OrderByStructInfo[]'
     ];
 
     /**
@@ -73,13 +68,9 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adcreativeTemplateId' => 'int64',
-        'siteSet' => null,
-        'promotedObjectType' => null,
-        'adcreativeElements' => null,
-        'promotedObjectId' => null,
-        'pageType' => null,
-        'pageSpec' => null
+        'accountId' => 'int64',
+        'bidwordList' => null,
+        'orderBy' => null
     ];
 
     /**
@@ -109,13 +100,9 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adcreativeTemplateId' => 'adcreative_template_id',
-        'siteSet' => 'site_set',
-        'promotedObjectType' => 'promoted_object_type',
-        'adcreativeElements' => 'adcreative_elements',
-        'promotedObjectId' => 'promoted_object_id',
-        'pageType' => 'page_type',
-        'pageSpec' => 'page_spec'
+        'accountId' => 'account_id',
+        'bidwordList' => 'bidword_list',
+        'orderBy' => 'order_by'
     ];
 
     /**
@@ -124,13 +111,9 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adcreativeTemplateId' => 'setAdcreativeTemplateId',
-        'siteSet' => 'setSiteSet',
-        'promotedObjectType' => 'setPromotedObjectType',
-        'adcreativeElements' => 'setAdcreativeElements',
-        'promotedObjectId' => 'setPromotedObjectId',
-        'pageType' => 'setPageType',
-        'pageSpec' => 'setPageSpec'
+        'accountId' => 'setAccountId',
+        'bidwordList' => 'setBidwordList',
+        'orderBy' => 'setOrderBy'
     ];
 
     /**
@@ -139,13 +122,9 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adcreativeTemplateId' => 'getAdcreativeTemplateId',
-        'siteSet' => 'getSiteSet',
-        'promotedObjectType' => 'getPromotedObjectType',
-        'adcreativeElements' => 'getAdcreativeElements',
-        'promotedObjectId' => 'getPromotedObjectId',
-        'pageType' => 'getPageType',
-        'pageSpec' => 'getPageSpec'
+        'accountId' => 'getAccountId',
+        'bidwordList' => 'getBidwordList',
+        'orderBy' => 'getOrderBy'
     ];
 
     /**
@@ -208,13 +187,9 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
-        $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
-        $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
-        $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
-        $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
-        $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
-        $this->container['pageSpec'] = isset($data['pageSpec']) ? $data['pageSpec'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['bidwordList'] = isset($data['bidwordList']) ? $data['bidwordList'] : null;
+        $this->container['orderBy'] = isset($data['orderBy']) ? $data['orderBy'] : null;
     }
 
     /**
@@ -242,169 +217,73 @@ class AdcreativePreviewSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets adcreativeTemplateId
+     * Gets accountId
      *
      * @return int|mixed
      */
-    public function getAdcreativeTemplateId()
+    public function getAccountId()
     {
-        return $this->container['adcreativeTemplateId'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets adcreativeTemplateId
+     * Sets accountId
      *
-     * @param int|mixed $adcreativeTemplateId adcreativeTemplateId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setAdcreativeTemplateId($adcreativeTemplateId)
+    public function setAccountId($accountId)
     {
-        $this->container['adcreativeTemplateId'] = $adcreativeTemplateId;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }
 
     /**
-     * Gets siteSet
+     * Gets bidwordList
      *
      * @return string[]|mixed
      */
-    public function getSiteSet()
+    public function getBidwordList()
     {
-        return $this->container['siteSet'];
+        return $this->container['bidwordList'];
     }
 
     /**
-     * Sets siteSet
+     * Sets bidwordList
      *
-     * @param string[]|mixed $siteSet siteSet
+     * @param string[]|mixed $bidwordList bidwordList
      *
      * @return $this
      */
-    public function setSiteSet($siteSet)
+    public function setBidwordList($bidwordList)
     {
-        $this->container['siteSet'] = $siteSet;
+        $this->container['bidwordList'] = $bidwordList;
 
         return $this;
     }
 
     /**
-     * Gets promotedObjectType
+     * Gets orderBy
      *
-     * @return \TencentAds\Model\PromotedObjectType|mixed
+     * @return \TencentAds\Model\OrderByStructInfo[]|mixed
      */
-    public function getPromotedObjectType()
+    public function getOrderBy()
     {
-        return $this->container['promotedObjectType'];
+        return $this->container['orderBy'];
     }
 
     /**
-     * Sets promotedObjectType
+     * Sets orderBy
      *
-     * @param \TencentAds\Model\PromotedObjectType|mixed $promotedObjectType promotedObjectType
+     * @param \TencentAds\Model\OrderByStructInfo[]|mixed $orderBy orderBy
      *
      * @return $this
      */
-    public function setPromotedObjectType($promotedObjectType)
+    public function setOrderBy($orderBy)
     {
-        $this->container['promotedObjectType'] = $promotedObjectType;
-
-        return $this;
-    }
-
-    /**
-     * Gets adcreativeElements
-     *
-     * @return \TencentAds\Model\AdcreativeCreativeElements|mixed
-     */
-    public function getAdcreativeElements()
-    {
-        return $this->container['adcreativeElements'];
-    }
-
-    /**
-     * Sets adcreativeElements
-     *
-     * @param \TencentAds\Model\AdcreativeCreativeElements|mixed $adcreativeElements adcreativeElements
-     *
-     * @return $this
-     */
-    public function setAdcreativeElements($adcreativeElements)
-    {
-        $this->container['adcreativeElements'] = $adcreativeElements;
-
-        return $this;
-    }
-
-    /**
-     * Gets promotedObjectId
-     *
-     * @return string|mixed
-     */
-    public function getPromotedObjectId()
-    {
-        return $this->container['promotedObjectId'];
-    }
-
-    /**
-     * Sets promotedObjectId
-     *
-     * @param string|mixed $promotedObjectId promotedObjectId
-     *
-     * @return $this
-     */
-    public function setPromotedObjectId($promotedObjectId)
-    {
-        $this->container['promotedObjectId'] = $promotedObjectId;
-
-        return $this;
-    }
-
-    /**
-     * Gets pageType
-     *
-     * @return \TencentAds\Model\DestinationType|mixed
-     */
-    public function getPageType()
-    {
-        return $this->container['pageType'];
-    }
-
-    /**
-     * Sets pageType
-     *
-     * @param \TencentAds\Model\DestinationType|mixed $pageType pageType
-     *
-     * @return $this
-     */
-    public function setPageType($pageType)
-    {
-        $this->container['pageType'] = $pageType;
-
-        return $this;
-    }
-
-    /**
-     * Gets pageSpec
-     *
-     * @return \TencentAds\Model\PreviewPageSpec|mixed
-     */
-    public function getPageSpec()
-    {
-        return $this->container['pageSpec'];
-    }
-
-    /**
-     * Sets pageSpec
-     *
-     * @param \TencentAds\Model\PreviewPageSpec|mixed $pageSpec pageSpec
-     *
-     * @return $this
-     */
-    public function setPageSpec($pageSpec)
-    {
-        $this->container['pageSpec'] = $pageSpec;
+        $this->container['orderBy'] = $orderBy;
 
         return $this;
     }
