@@ -59,4 +59,48 @@ class PromotedObjectAuthorizationApiContainer extends ApiContainer
             return $response;
         });
     }
+
+
+    /**
+     * Handle PromotedObjectAuthorizationApi promotedObjectAuthorizationGet function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function get(array $params = [])
+    {
+        return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $promotedObjectType = isset($params['promoted_object_type']) ? $params['promoted_object_type'] : null;
+            $promotedObjectName = isset($params['promoted_object_name']) ? $params['promoted_object_name'] : null;
+            $page = isset($params['page']) ? $params['page'] : null;
+            $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $fields = isset($params['fields']) ? $params['fields'] : null;
+            $response = $this->apiInstance->promotedObjectAuthorizationGet($accountId, $promotedObjectType, $promotedObjectName, $page, $pageSize, $fields);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle PromotedObjectAuthorizationApi promotedObjectAuthorizationGetAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function getAsync(array $params = [])
+    {
+        return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $promotedObjectType = isset($params['promoted_object_type']) ? $params['promoted_object_type'] : null;
+            $promotedObjectName = isset($params['promoted_object_name']) ? $params['promoted_object_name'] : null;
+            $page = isset($params['page']) ? $params['page'] : null;
+            $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $fields = isset($params['fields']) ? $params['fields'] : null;
+            $response = $this->apiInstance->promotedObjectAuthorizationGetAsync($accountId, $promotedObjectType, $promotedObjectName, $page, $pageSize, $fields);
+            return $response;
+        });
+    }
 }

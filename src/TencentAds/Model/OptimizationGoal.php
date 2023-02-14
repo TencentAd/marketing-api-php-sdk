@@ -121,6 +121,7 @@ class OptimizationGoal
     const QUICK_ORDER = 'OPTIMIZATIONGOAL_QUICK_ORDER';
     const PRE_PAY = 'OPTIMIZATIONGOAL_PRE_PAY';
     const PAGE_ONLINE_CONSULT_ACTIVE_ONE_MSG = 'OPTIMIZATIONGOAL_PAGE_ONLINE_CONSULT_ACTIVE_ONE_MSG';
+    const CALL_DURATION_THIRTY_SECONDS = 'OPTIMIZATIONGOAL_CALL_DURATION_THIRTY_SECONDS';
     
     /**
      * Gets allowable values of the enum
@@ -206,6 +207,7 @@ class OptimizationGoal
             self::QUICK_ORDER,
             self::PRE_PAY,
             self::PAGE_ONLINE_CONSULT_ACTIVE_ONE_MSG,
+            self::CALL_DURATION_THIRTY_SECONDS,
         ];
     }
 }
