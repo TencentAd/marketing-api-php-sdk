@@ -90,6 +90,8 @@ class LeadsCallRecordApi
     /**
      * Operation leadsCallRecordGet
      *
+     * 获取通话结果
+     *
      * @param  \TencentAds\Model\LeadsCallRecordGetRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
@@ -104,6 +106,8 @@ class LeadsCallRecordApi
 
     /**
      * Operation leadsCallRecordGetWithHttpInfo
+     *
+     * 获取通话结果
      *
      * @param  \TencentAds\Model\LeadsCallRecordGetRequest|mixed $data (required)
      *
@@ -178,7 +182,7 @@ class LeadsCallRecordApi
     /**
      * Operation leadsCallRecordGetAsync
      *
-     * 
+     * 获取通话结果
      *
      * @param  \TencentAds\Model\LeadsCallRecordGetRequest|mixed $data (required)
      *
@@ -198,7 +202,7 @@ class LeadsCallRecordApi
     /**
      * Operation leadsCallRecordGetAsyncWithHttpInfo
      *
-     * 
+     * 获取通话结果
      *
      * @param  \TencentAds\Model\LeadsCallRecordGetRequest|mixed $data (required)
      *

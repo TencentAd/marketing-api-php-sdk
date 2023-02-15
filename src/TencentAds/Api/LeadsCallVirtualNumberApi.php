@@ -90,6 +90,8 @@ class LeadsCallVirtualNumberApi
     /**
      * Operation leadsCallVirtualNumberGet
      *
+     * 获取中间号
+     *
      * @param  \TencentAds\Model\LeadsCallVirtualNumberGetRequest|mixed $data data (required)
      *
      * @throws \TencentAds\ApiException on non-2xx response
@@ -104,6 +106,8 @@ class LeadsCallVirtualNumberApi
 
     /**
      * Operation leadsCallVirtualNumberGetWithHttpInfo
+     *
+     * 获取中间号
      *
      * @param  \TencentAds\Model\LeadsCallVirtualNumberGetRequest|mixed $data (required)
      *
@@ -178,7 +182,7 @@ class LeadsCallVirtualNumberApi
     /**
      * Operation leadsCallVirtualNumberGetAsync
      *
-     * 
+     * 获取中间号
      *
      * @param  \TencentAds\Model\LeadsCallVirtualNumberGetRequest|mixed $data (required)
      *
@@ -198,7 +202,7 @@ class LeadsCallVirtualNumberApi
     /**
      * Operation leadsCallVirtualNumberGetAsyncWithHttpInfo
      *
-     * 
+     * 获取中间号
      *
      * @param  \TencentAds\Model\LeadsCallVirtualNumberGetRequest|mixed $data (required)
      *

@@ -74,6 +74,8 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         'leadsEmail' => 'string',
         'leadsArea' => 'string',
         'bundle' => 'string',
+        'leadsConvertType' => 'string',
+        'leadsIneffectReason' => 'string',
         'outerLeadsConvertType' => 'string',
         'outerLeadsIneffectReason' => 'string',
         'outerLeadsComefrom' => '\TencentAds\Model\ActionChannelType',
@@ -113,6 +115,8 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         'leadsEmail' => null,
         'leadsArea' => null,
         'bundle' => null,
+        'leadsConvertType' => null,
+        'leadsIneffectReason' => null,
         'outerLeadsConvertType' => null,
         'outerLeadsIneffectReason' => null,
         'outerLeadsComefrom' => null,
@@ -173,6 +177,8 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         'leadsEmail' => 'leads_email',
         'leadsArea' => 'leads_area',
         'bundle' => 'bundle',
+        'leadsConvertType' => 'leads_convert_type',
+        'leadsIneffectReason' => 'leads_ineffect_reason',
         'outerLeadsConvertType' => 'outer_leads_convert_type',
         'outerLeadsIneffectReason' => 'outer_leads_ineffect_reason',
         'outerLeadsComefrom' => 'outer_leads_comefrom',
@@ -212,6 +218,8 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         'leadsEmail' => 'setLeadsEmail',
         'leadsArea' => 'setLeadsArea',
         'bundle' => 'setBundle',
+        'leadsConvertType' => 'setLeadsConvertType',
+        'leadsIneffectReason' => 'setLeadsIneffectReason',
         'outerLeadsConvertType' => 'setOuterLeadsConvertType',
         'outerLeadsIneffectReason' => 'setOuterLeadsIneffectReason',
         'outerLeadsComefrom' => 'setOuterLeadsComefrom',
@@ -251,6 +259,8 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         'leadsEmail' => 'getLeadsEmail',
         'leadsArea' => 'getLeadsArea',
         'bundle' => 'getBundle',
+        'leadsConvertType' => 'getLeadsConvertType',
+        'leadsIneffectReason' => 'getLeadsIneffectReason',
         'outerLeadsConvertType' => 'getOuterLeadsConvertType',
         'outerLeadsIneffectReason' => 'getOuterLeadsIneffectReason',
         'outerLeadsComefrom' => 'getOuterLeadsComefrom',
@@ -344,6 +354,8 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         $this->container['leadsEmail'] = isset($data['leadsEmail']) ? $data['leadsEmail'] : null;
         $this->container['leadsArea'] = isset($data['leadsArea']) ? $data['leadsArea'] : null;
         $this->container['bundle'] = isset($data['bundle']) ? $data['bundle'] : null;
+        $this->container['leadsConvertType'] = isset($data['leadsConvertType']) ? $data['leadsConvertType'] : null;
+        $this->container['leadsIneffectReason'] = isset($data['leadsIneffectReason']) ? $data['leadsIneffectReason'] : null;
         $this->container['outerLeadsConvertType'] = isset($data['outerLeadsConvertType']) ? $data['outerLeadsConvertType'] : null;
         $this->container['outerLeadsIneffectReason'] = isset($data['outerLeadsIneffectReason']) ? $data['outerLeadsIneffectReason'] : null;
         $this->container['outerLeadsComefrom'] = isset($data['outerLeadsComefrom']) ? $data['outerLeadsComefrom'] : null;
@@ -765,6 +777,54 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     public function setBundle($bundle)
     {
         $this->container['bundle'] = $bundle;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsConvertType
+     *
+     * @return string|mixed
+     */
+    public function getLeadsConvertType()
+    {
+        return $this->container['leadsConvertType'];
+    }
+
+    /**
+     * Sets leadsConvertType
+     *
+     * @param string|mixed $leadsConvertType leadsConvertType
+     *
+     * @return $this
+     */
+    public function setLeadsConvertType($leadsConvertType)
+    {
+        $this->container['leadsConvertType'] = $leadsConvertType;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsIneffectReason
+     *
+     * @return string|mixed
+     */
+    public function getLeadsIneffectReason()
+    {
+        return $this->container['leadsIneffectReason'];
+    }
+
+    /**
+     * Sets leadsIneffectReason
+     *
+     * @param string|mixed $leadsIneffectReason leadsIneffectReason
+     *
+     * @return $this
+     */
+    public function setLeadsIneffectReason($leadsIneffectReason)
+    {
+        $this->container['leadsIneffectReason'] = $leadsIneffectReason;
 
         return $this;
     }

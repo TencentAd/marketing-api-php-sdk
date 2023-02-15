@@ -64,6 +64,8 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
         'leadsQq' => 'int',
         'leadsWechat' => 'string',
         'clickId' => 'string',
+        'leadsConvertType' => 'string',
+        'leadsIneffectReason' => 'string',
         'outerLeadsConvertType' => 'string',
         'outerLeadsIneffectReason' => 'string',
         'customizedTags' => '\TencentAds\Model\CustomizedTagsStruct[]'
@@ -81,6 +83,8 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
         'leadsQq' => 'int64',
         'leadsWechat' => null,
         'clickId' => null,
+        'leadsConvertType' => null,
+        'leadsIneffectReason' => null,
         'outerLeadsConvertType' => null,
         'outerLeadsIneffectReason' => null,
         'customizedTags' => null
@@ -119,6 +123,8 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
         'leadsQq' => 'leads_qq',
         'leadsWechat' => 'leads_wechat',
         'clickId' => 'click_id',
+        'leadsConvertType' => 'leads_convert_type',
+        'leadsIneffectReason' => 'leads_ineffect_reason',
         'outerLeadsConvertType' => 'outer_leads_convert_type',
         'outerLeadsIneffectReason' => 'outer_leads_ineffect_reason',
         'customizedTags' => 'customized_tags'
@@ -136,6 +142,8 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
         'leadsQq' => 'setLeadsQq',
         'leadsWechat' => 'setLeadsWechat',
         'clickId' => 'setClickId',
+        'leadsConvertType' => 'setLeadsConvertType',
+        'leadsIneffectReason' => 'setLeadsIneffectReason',
         'outerLeadsConvertType' => 'setOuterLeadsConvertType',
         'outerLeadsIneffectReason' => 'setOuterLeadsIneffectReason',
         'customizedTags' => 'setCustomizedTags'
@@ -153,6 +161,8 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
         'leadsQq' => 'getLeadsQq',
         'leadsWechat' => 'getLeadsWechat',
         'clickId' => 'getClickId',
+        'leadsConvertType' => 'getLeadsConvertType',
+        'leadsIneffectReason' => 'getLeadsIneffectReason',
         'outerLeadsConvertType' => 'getOuterLeadsConvertType',
         'outerLeadsIneffectReason' => 'getOuterLeadsIneffectReason',
         'customizedTags' => 'getCustomizedTags'
@@ -224,6 +234,8 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
         $this->container['leadsQq'] = isset($data['leadsQq']) ? $data['leadsQq'] : null;
         $this->container['leadsWechat'] = isset($data['leadsWechat']) ? $data['leadsWechat'] : null;
         $this->container['clickId'] = isset($data['clickId']) ? $data['clickId'] : null;
+        $this->container['leadsConvertType'] = isset($data['leadsConvertType']) ? $data['leadsConvertType'] : null;
+        $this->container['leadsIneffectReason'] = isset($data['leadsIneffectReason']) ? $data['leadsIneffectReason'] : null;
         $this->container['outerLeadsConvertType'] = isset($data['outerLeadsConvertType']) ? $data['outerLeadsConvertType'] : null;
         $this->container['outerLeadsIneffectReason'] = isset($data['outerLeadsIneffectReason']) ? $data['outerLeadsIneffectReason'] : null;
         $this->container['customizedTags'] = isset($data['customizedTags']) ? $data['customizedTags'] : null;
@@ -393,6 +405,54 @@ class OuterLeadsStatusInfoStruct implements ModelInterface, ArrayAccess
     public function setClickId($clickId)
     {
         $this->container['clickId'] = $clickId;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsConvertType
+     *
+     * @return string|mixed
+     */
+    public function getLeadsConvertType()
+    {
+        return $this->container['leadsConvertType'];
+    }
+
+    /**
+     * Sets leadsConvertType
+     *
+     * @param string|mixed $leadsConvertType leadsConvertType
+     *
+     * @return $this
+     */
+    public function setLeadsConvertType($leadsConvertType)
+    {
+        $this->container['leadsConvertType'] = $leadsConvertType;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsIneffectReason
+     *
+     * @return string|mixed
+     */
+    public function getLeadsIneffectReason()
+    {
+        return $this->container['leadsIneffectReason'];
+    }
+
+    /**
+     * Sets leadsIneffectReason
+     *
+     * @param string|mixed $leadsIneffectReason leadsIneffectReason
+     *
+     * @return $this
+     */
+    public function setLeadsIneffectReason($leadsIneffectReason)
+    {
+        $this->container['leadsIneffectReason'] = $leadsIneffectReason;
 
         return $this;
     }

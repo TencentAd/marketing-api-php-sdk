@@ -58,7 +58,7 @@ class AssetPermissionsScenesUpdateRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
-        'assetType' => '\TencentAds\Model\AssetType',
+        'assetType' => '\TencentAds\Model\DnAssetType',
         'assetId' => 'int',
         'licensingAccountId' => 'int',
         'pathType' => '\TencentAds\Model\PathType',
@@ -261,7 +261,7 @@ class AssetPermissionsScenesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Gets assetType
      *
-     * @return \TencentAds\Model\AssetType|mixed
+     * @return \TencentAds\Model\DnAssetType|mixed
      */
     public function getAssetType()
     {
@@ -271,7 +271,7 @@ class AssetPermissionsScenesUpdateRequest implements ModelInterface, ArrayAccess
     /**
      * Sets assetType
      *
-     * @param \TencentAds\Model\AssetType|mixed $assetType assetType
+     * @param \TencentAds\Model\DnAssetType|mixed $assetType assetType
      *
      * @return $this
      */
