@@ -119,7 +119,9 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'callRecordUrl' => 'string',
         'layerFormContent' => 'string',
         'nickName' => 'string',
-        'isBroadCastLeads' => 'string'
+        'isBroadCastLeads' => 'string',
+        'ownerName' => 'string',
+        'allFollowRecords' => 'string'
     ];
 
     /**
@@ -189,7 +191,9 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'callRecordUrl' => null,
         'layerFormContent' => null,
         'nickName' => null,
-        'isBroadCastLeads' => null
+        'isBroadCastLeads' => null,
+        'ownerName' => null,
+        'allFollowRecords' => null
     ];
 
     /**
@@ -280,7 +284,9 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'callRecordUrl' => 'call_record_url',
         'layerFormContent' => 'layer_form_content',
         'nickName' => 'nick_name',
-        'isBroadCastLeads' => 'is_broad_cast_leads'
+        'isBroadCastLeads' => 'is_broad_cast_leads',
+        'ownerName' => 'owner_name',
+        'allFollowRecords' => 'all_follow_records'
     ];
 
     /**
@@ -350,7 +356,9 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'callRecordUrl' => 'setCallRecordUrl',
         'layerFormContent' => 'setLayerFormContent',
         'nickName' => 'setNickName',
-        'isBroadCastLeads' => 'setIsBroadCastLeads'
+        'isBroadCastLeads' => 'setIsBroadCastLeads',
+        'ownerName' => 'setOwnerName',
+        'allFollowRecords' => 'setAllFollowRecords'
     ];
 
     /**
@@ -420,7 +428,9 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'callRecordUrl' => 'getCallRecordUrl',
         'layerFormContent' => 'getLayerFormContent',
         'nickName' => 'getNickName',
-        'isBroadCastLeads' => 'getIsBroadCastLeads'
+        'isBroadCastLeads' => 'getIsBroadCastLeads',
+        'ownerName' => 'getOwnerName',
+        'allFollowRecords' => 'getAllFollowRecords'
     ];
 
     /**
@@ -545,6 +555,8 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['layerFormContent'] = isset($data['layerFormContent']) ? $data['layerFormContent'] : null;
         $this->container['nickName'] = isset($data['nickName']) ? $data['nickName'] : null;
         $this->container['isBroadCastLeads'] = isset($data['isBroadCastLeads']) ? $data['isBroadCastLeads'] : null;
+        $this->container['ownerName'] = isset($data['ownerName']) ? $data['ownerName'] : null;
+        $this->container['allFollowRecords'] = isset($data['allFollowRecords']) ? $data['allFollowRecords'] : null;
     }
 
     /**
@@ -2055,6 +2067,54 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     public function setIsBroadCastLeads($isBroadCastLeads)
     {
         $this->container['isBroadCastLeads'] = $isBroadCastLeads;
+
+        return $this;
+    }
+
+    /**
+     * Gets ownerName
+     *
+     * @return string|mixed
+     */
+    public function getOwnerName()
+    {
+        return $this->container['ownerName'];
+    }
+
+    /**
+     * Sets ownerName
+     *
+     * @param string|mixed $ownerName ownerName
+     *
+     * @return $this
+     */
+    public function setOwnerName($ownerName)
+    {
+        $this->container['ownerName'] = $ownerName;
+
+        return $this;
+    }
+
+    /**
+     * Gets allFollowRecords
+     *
+     * @return string|mixed
+     */
+    public function getAllFollowRecords()
+    {
+        return $this->container['allFollowRecords'];
+    }
+
+    /**
+     * Sets allFollowRecords
+     *
+     * @param string|mixed $allFollowRecords allFollowRecords
+     *
+     * @return $this
+     */
+    public function setAllFollowRecords($allFollowRecords)
+    {
+        $this->container['allFollowRecords'] = $allFollowRecords;
 
         return $this;
     }
