@@ -88,7 +88,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'int',
         'adCount' => 'int',
         'dynamicAdSpec' => '\TencentAds\Model\DynamicAdSpec',
-        'userActionSets' => '\TencentAds\Model\UserActionSetStruct[]',
+        'userActionSets' => '\TencentAds\Model\UserActionSetStructDn[]',
         'additionalUserActionSets' => '\TencentAds\Model\UserActionSetStruct[]',
         'isDeleted' => 'bool',
         'dynamicCreativeId' => 'int',
@@ -1342,7 +1342,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets userActionSets
      *
-     * @return \TencentAds\Model\UserActionSetStruct[]|mixed
+     * @return \TencentAds\Model\UserActionSetStructDn[]|mixed
      */
     public function getUserActionSets()
     {
@@ -1352,7 +1352,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets userActionSets
      *
-     * @param \TencentAds\Model\UserActionSetStruct[]|mixed $userActionSets userActionSets
+     * @param \TencentAds\Model\UserActionSetStructDn[]|mixed $userActionSets userActionSets
      *
      * @return $this
      */
