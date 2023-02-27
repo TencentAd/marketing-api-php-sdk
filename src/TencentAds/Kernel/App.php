@@ -19,6 +19,7 @@ use TencentAds\Container\AdgroupNegativewordsApiContainer;
 use TencentAds\Container\AdgroupsApiContainer;
 use TencentAds\Container\AdsApiContainer;
 use TencentAds\Container\AdvertiserApiContainer;
+use TencentAds\Container\AdvertiserDailyBudgetApiContainer;
 use TencentAds\Container\AgencyInnerTransferApiContainer;
 use TencentAds\Container\AgencyRealtimeCostApiContainer;
 use TencentAds\Container\AppAndroidChannelPackagesApiContainer;
@@ -238,6 +239,9 @@ class App
 
     /** @var AdvertiserApiContainer */
     public $advertiserApiContainer;
+
+    /** @var AdvertiserDailyBudgetApiContainer */
+    public $advertiserDailyBudgetApiContainer;
 
     /** @var AgencyInnerTransferApiContainer */
     public $agencyInnerTransferApiContainer;
@@ -976,6 +980,20 @@ class App
             $this->advertiserApiContainer = $container;
         }
         return $this->advertiserApiContainer;
+    }
+
+
+    /**
+     * @return AdvertiserDailyBudgetApiContainer
+     */
+    public function advertiserDailyBudget()
+    {
+        if (empty($this->advertiserDailyBudgetApiContainer)) {
+            $container = new AdvertiserDailyBudgetApiContainer();
+            $container->init($this, $this->getClient());
+            $this->advertiserDailyBudgetApiContainer = $container;
+        }
+        return $this->advertiserDailyBudgetApiContainer;
     }
 
 
