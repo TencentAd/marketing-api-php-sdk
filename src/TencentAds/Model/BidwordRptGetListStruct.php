@@ -85,7 +85,9 @@ class BidwordRptGetListStruct implements ModelInterface, ArrayAccess
         'deepConversionsCount' => 'string',
         'deepConversionsRate' => 'string',
         'deepConversionsCost' => 'string',
-        'thousandDisplayPrice' => 'string'
+        'thousandDisplayPrice' => 'string',
+        'matchType' => 'int',
+        'matchTypeName' => 'string'
     ];
 
     /**
@@ -121,7 +123,9 @@ class BidwordRptGetListStruct implements ModelInterface, ArrayAccess
         'deepConversionsCount' => null,
         'deepConversionsRate' => null,
         'deepConversionsCost' => null,
-        'thousandDisplayPrice' => null
+        'thousandDisplayPrice' => null,
+        'matchType' => 'int64',
+        'matchTypeName' => null
     ];
 
     /**
@@ -178,7 +182,9 @@ class BidwordRptGetListStruct implements ModelInterface, ArrayAccess
         'deepConversionsCount' => 'deep_conversions_count',
         'deepConversionsRate' => 'deep_conversions_rate',
         'deepConversionsCost' => 'deep_conversions_cost',
-        'thousandDisplayPrice' => 'thousand_display_price'
+        'thousandDisplayPrice' => 'thousand_display_price',
+        'matchType' => 'match_type',
+        'matchTypeName' => 'match_type_name'
     ];
 
     /**
@@ -214,7 +220,9 @@ class BidwordRptGetListStruct implements ModelInterface, ArrayAccess
         'deepConversionsCount' => 'setDeepConversionsCount',
         'deepConversionsRate' => 'setDeepConversionsRate',
         'deepConversionsCost' => 'setDeepConversionsCost',
-        'thousandDisplayPrice' => 'setThousandDisplayPrice'
+        'thousandDisplayPrice' => 'setThousandDisplayPrice',
+        'matchType' => 'setMatchType',
+        'matchTypeName' => 'setMatchTypeName'
     ];
 
     /**
@@ -250,7 +258,9 @@ class BidwordRptGetListStruct implements ModelInterface, ArrayAccess
         'deepConversionsCount' => 'getDeepConversionsCount',
         'deepConversionsRate' => 'getDeepConversionsRate',
         'deepConversionsCost' => 'getDeepConversionsCost',
-        'thousandDisplayPrice' => 'getThousandDisplayPrice'
+        'thousandDisplayPrice' => 'getThousandDisplayPrice',
+        'matchType' => 'getMatchType',
+        'matchTypeName' => 'getMatchTypeName'
     ];
 
     /**
@@ -341,6 +351,8 @@ class BidwordRptGetListStruct implements ModelInterface, ArrayAccess
         $this->container['deepConversionsRate'] = isset($data['deepConversionsRate']) ? $data['deepConversionsRate'] : null;
         $this->container['deepConversionsCost'] = isset($data['deepConversionsCost']) ? $data['deepConversionsCost'] : null;
         $this->container['thousandDisplayPrice'] = isset($data['thousandDisplayPrice']) ? $data['thousandDisplayPrice'] : null;
+        $this->container['matchType'] = isset($data['matchType']) ? $data['matchType'] : null;
+        $this->container['matchTypeName'] = isset($data['matchTypeName']) ? $data['matchTypeName'] : null;
     }
 
     /**
@@ -1035,6 +1047,54 @@ class BidwordRptGetListStruct implements ModelInterface, ArrayAccess
     public function setThousandDisplayPrice($thousandDisplayPrice)
     {
         $this->container['thousandDisplayPrice'] = $thousandDisplayPrice;
+
+        return $this;
+    }
+
+    /**
+     * Gets matchType
+     *
+     * @return int|mixed
+     */
+    public function getMatchType()
+    {
+        return $this->container['matchType'];
+    }
+
+    /**
+     * Sets matchType
+     *
+     * @param int|mixed $matchType matchType
+     *
+     * @return $this
+     */
+    public function setMatchType($matchType)
+    {
+        $this->container['matchType'] = $matchType;
+
+        return $this;
+    }
+
+    /**
+     * Gets matchTypeName
+     *
+     * @return string|mixed
+     */
+    public function getMatchTypeName()
+    {
+        return $this->container['matchTypeName'];
+    }
+
+    /**
+     * Sets matchTypeName
+     *
+     * @param string|mixed $matchTypeName matchTypeName
+     *
+     * @return $this
+     */
+    public function setMatchTypeName($matchTypeName)
+    {
+        $this->container['matchTypeName'] = $matchTypeName;
 
         return $this;
     }

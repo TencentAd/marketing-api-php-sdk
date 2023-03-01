@@ -566,6 +566,16 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'regDedupPv' => 'int',
         'regCostPla' => 'int',
         'regClickRatePla' => 'double',
+        'incomeVal24h' => 'int',
+        'adPayingUsers24h' => 'int',
+        'incomeRoi124h' => 'double',
+        'adPurArpuCostD124h' => 'int',
+        'firstDayAdPurArppuCost24h' => 'int',
+        'incomeVal24hPla' => 'int',
+        'adPayingUsers24hPla' => 'int',
+        'incomeRoi124hPla' => 'double',
+        'adPurArpuCostD124hPla' => 'int',
+        'firstDayAdPurArppuCost24hPla' => 'int',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
         'incomeVal1' => 'int',
@@ -1282,6 +1292,16 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'regDedupPv' => 'int64',
         'regCostPla' => 'int64',
         'regClickRatePla' => 'double',
+        'incomeVal24h' => 'int64',
+        'adPayingUsers24h' => 'int64',
+        'incomeRoi124h' => 'double',
+        'adPurArpuCostD124h' => 'int64',
+        'firstDayAdPurArppuCost24h' => 'int64',
+        'incomeVal24hPla' => 'int64',
+        'adPayingUsers24hPla' => 'int64',
+        'incomeRoi124hPla' => 'double',
+        'adPurArpuCostD124hPla' => 'int64',
+        'firstDayAdPurArppuCost24hPla' => 'int64',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
         'incomeVal1' => 'int64',
@@ -2019,6 +2039,16 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'regDedupPv' => 'reg_dedup_pv',
         'regCostPla' => 'reg_cost_pla',
         'regClickRatePla' => 'reg_click_rate_pla',
+        'incomeVal24h' => 'income_val_24h',
+        'adPayingUsers24h' => 'ad_paying_users_24h',
+        'incomeRoi124h' => 'income_roi_1_24h',
+        'adPurArpuCostD124h' => 'ad_pur_arpu_cost_d1_24h',
+        'firstDayAdPurArppuCost24h' => 'first_day_ad_pur_arppu_cost_24h',
+        'incomeVal24hPla' => 'income_val_24h_pla',
+        'adPayingUsers24hPla' => 'ad_paying_users_24h_pla',
+        'incomeRoi124hPla' => 'income_roi_1_24h_pla',
+        'adPurArpuCostD124hPla' => 'ad_pur_arpu_cost_d1_24h_pla',
+        'firstDayAdPurArppuCost24hPla' => 'first_day_ad_pur_arppu_cost_24h_pla',
         'requestConversionsCount' => 'request_conversions_count',
         'requestConversionsCost' => 'request_conversions_cost',
         'incomeVal1' => 'income_val_1',
@@ -2735,6 +2765,16 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'regDedupPv' => 'setRegDedupPv',
         'regCostPla' => 'setRegCostPla',
         'regClickRatePla' => 'setRegClickRatePla',
+        'incomeVal24h' => 'setIncomeVal24h',
+        'adPayingUsers24h' => 'setAdPayingUsers24h',
+        'incomeRoi124h' => 'setIncomeRoi124h',
+        'adPurArpuCostD124h' => 'setAdPurArpuCostD124h',
+        'firstDayAdPurArppuCost24h' => 'setFirstDayAdPurArppuCost24h',
+        'incomeVal24hPla' => 'setIncomeVal24hPla',
+        'adPayingUsers24hPla' => 'setAdPayingUsers24hPla',
+        'incomeRoi124hPla' => 'setIncomeRoi124hPla',
+        'adPurArpuCostD124hPla' => 'setAdPurArpuCostD124hPla',
+        'firstDayAdPurArppuCost24hPla' => 'setFirstDayAdPurArppuCost24hPla',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'requestConversionsCost' => 'setRequestConversionsCost',
         'incomeVal1' => 'setIncomeVal1',
@@ -3451,6 +3491,16 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'regDedupPv' => 'getRegDedupPv',
         'regCostPla' => 'getRegCostPla',
         'regClickRatePla' => 'getRegClickRatePla',
+        'incomeVal24h' => 'getIncomeVal24h',
+        'adPayingUsers24h' => 'getAdPayingUsers24h',
+        'incomeRoi124h' => 'getIncomeRoi124h',
+        'adPurArpuCostD124h' => 'getAdPurArpuCostD124h',
+        'firstDayAdPurArppuCost24h' => 'getFirstDayAdPurArppuCost24h',
+        'incomeVal24hPla' => 'getIncomeVal24hPla',
+        'adPayingUsers24hPla' => 'getAdPayingUsers24hPla',
+        'incomeRoi124hPla' => 'getIncomeRoi124hPla',
+        'adPurArpuCostD124hPla' => 'getAdPurArpuCostD124hPla',
+        'firstDayAdPurArppuCost24hPla' => 'getFirstDayAdPurArppuCost24hPla',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'requestConversionsCost' => 'getRequestConversionsCost',
         'incomeVal1' => 'getIncomeVal1',
@@ -4221,6 +4271,16 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['regDedupPv'] = isset($data['regDedupPv']) ? $data['regDedupPv'] : null;
         $this->container['regCostPla'] = isset($data['regCostPla']) ? $data['regCostPla'] : null;
         $this->container['regClickRatePla'] = isset($data['regClickRatePla']) ? $data['regClickRatePla'] : null;
+        $this->container['incomeVal24h'] = isset($data['incomeVal24h']) ? $data['incomeVal24h'] : null;
+        $this->container['adPayingUsers24h'] = isset($data['adPayingUsers24h']) ? $data['adPayingUsers24h'] : null;
+        $this->container['incomeRoi124h'] = isset($data['incomeRoi124h']) ? $data['incomeRoi124h'] : null;
+        $this->container['adPurArpuCostD124h'] = isset($data['adPurArpuCostD124h']) ? $data['adPurArpuCostD124h'] : null;
+        $this->container['firstDayAdPurArppuCost24h'] = isset($data['firstDayAdPurArppuCost24h']) ? $data['firstDayAdPurArppuCost24h'] : null;
+        $this->container['incomeVal24hPla'] = isset($data['incomeVal24hPla']) ? $data['incomeVal24hPla'] : null;
+        $this->container['adPayingUsers24hPla'] = isset($data['adPayingUsers24hPla']) ? $data['adPayingUsers24hPla'] : null;
+        $this->container['incomeRoi124hPla'] = isset($data['incomeRoi124hPla']) ? $data['incomeRoi124hPla'] : null;
+        $this->container['adPurArpuCostD124hPla'] = isset($data['adPurArpuCostD124hPla']) ? $data['adPurArpuCostD124hPla'] : null;
+        $this->container['firstDayAdPurArppuCost24hPla'] = isset($data['firstDayAdPurArppuCost24hPla']) ? $data['firstDayAdPurArppuCost24hPla'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
         $this->container['incomeVal1'] = isset($data['incomeVal1']) ? $data['incomeVal1'] : null;
@@ -16635,6 +16695,246 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setRegClickRatePla($regClickRatePla)
     {
         $this->container['regClickRatePla'] = $regClickRatePla;
+
+        return $this;
+    }
+
+    /**
+     * Gets incomeVal24h
+     *
+     * @return int|mixed
+     */
+    public function getIncomeVal24h()
+    {
+        return $this->container['incomeVal24h'];
+    }
+
+    /**
+     * Sets incomeVal24h
+     *
+     * @param int|mixed $incomeVal24h incomeVal24h
+     *
+     * @return $this
+     */
+    public function setIncomeVal24h($incomeVal24h)
+    {
+        $this->container['incomeVal24h'] = $incomeVal24h;
+
+        return $this;
+    }
+
+    /**
+     * Gets adPayingUsers24h
+     *
+     * @return int|mixed
+     */
+    public function getAdPayingUsers24h()
+    {
+        return $this->container['adPayingUsers24h'];
+    }
+
+    /**
+     * Sets adPayingUsers24h
+     *
+     * @param int|mixed $adPayingUsers24h adPayingUsers24h
+     *
+     * @return $this
+     */
+    public function setAdPayingUsers24h($adPayingUsers24h)
+    {
+        $this->container['adPayingUsers24h'] = $adPayingUsers24h;
+
+        return $this;
+    }
+
+    /**
+     * Gets incomeRoi124h
+     *
+     * @return double|mixed
+     */
+    public function getIncomeRoi124h()
+    {
+        return $this->container['incomeRoi124h'];
+    }
+
+    /**
+     * Sets incomeRoi124h
+     *
+     * @param double|mixed $incomeRoi124h incomeRoi124h
+     *
+     * @return $this
+     */
+    public function setIncomeRoi124h($incomeRoi124h)
+    {
+        $this->container['incomeRoi124h'] = $incomeRoi124h;
+
+        return $this;
+    }
+
+    /**
+     * Gets adPurArpuCostD124h
+     *
+     * @return int|mixed
+     */
+    public function getAdPurArpuCostD124h()
+    {
+        return $this->container['adPurArpuCostD124h'];
+    }
+
+    /**
+     * Sets adPurArpuCostD124h
+     *
+     * @param int|mixed $adPurArpuCostD124h adPurArpuCostD124h
+     *
+     * @return $this
+     */
+    public function setAdPurArpuCostD124h($adPurArpuCostD124h)
+    {
+        $this->container['adPurArpuCostD124h'] = $adPurArpuCostD124h;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstDayAdPurArppuCost24h
+     *
+     * @return int|mixed
+     */
+    public function getFirstDayAdPurArppuCost24h()
+    {
+        return $this->container['firstDayAdPurArppuCost24h'];
+    }
+
+    /**
+     * Sets firstDayAdPurArppuCost24h
+     *
+     * @param int|mixed $firstDayAdPurArppuCost24h firstDayAdPurArppuCost24h
+     *
+     * @return $this
+     */
+    public function setFirstDayAdPurArppuCost24h($firstDayAdPurArppuCost24h)
+    {
+        $this->container['firstDayAdPurArppuCost24h'] = $firstDayAdPurArppuCost24h;
+
+        return $this;
+    }
+
+    /**
+     * Gets incomeVal24hPla
+     *
+     * @return int|mixed
+     */
+    public function getIncomeVal24hPla()
+    {
+        return $this->container['incomeVal24hPla'];
+    }
+
+    /**
+     * Sets incomeVal24hPla
+     *
+     * @param int|mixed $incomeVal24hPla incomeVal24hPla
+     *
+     * @return $this
+     */
+    public function setIncomeVal24hPla($incomeVal24hPla)
+    {
+        $this->container['incomeVal24hPla'] = $incomeVal24hPla;
+
+        return $this;
+    }
+
+    /**
+     * Gets adPayingUsers24hPla
+     *
+     * @return int|mixed
+     */
+    public function getAdPayingUsers24hPla()
+    {
+        return $this->container['adPayingUsers24hPla'];
+    }
+
+    /**
+     * Sets adPayingUsers24hPla
+     *
+     * @param int|mixed $adPayingUsers24hPla adPayingUsers24hPla
+     *
+     * @return $this
+     */
+    public function setAdPayingUsers24hPla($adPayingUsers24hPla)
+    {
+        $this->container['adPayingUsers24hPla'] = $adPayingUsers24hPla;
+
+        return $this;
+    }
+
+    /**
+     * Gets incomeRoi124hPla
+     *
+     * @return double|mixed
+     */
+    public function getIncomeRoi124hPla()
+    {
+        return $this->container['incomeRoi124hPla'];
+    }
+
+    /**
+     * Sets incomeRoi124hPla
+     *
+     * @param double|mixed $incomeRoi124hPla incomeRoi124hPla
+     *
+     * @return $this
+     */
+    public function setIncomeRoi124hPla($incomeRoi124hPla)
+    {
+        $this->container['incomeRoi124hPla'] = $incomeRoi124hPla;
+
+        return $this;
+    }
+
+    /**
+     * Gets adPurArpuCostD124hPla
+     *
+     * @return int|mixed
+     */
+    public function getAdPurArpuCostD124hPla()
+    {
+        return $this->container['adPurArpuCostD124hPla'];
+    }
+
+    /**
+     * Sets adPurArpuCostD124hPla
+     *
+     * @param int|mixed $adPurArpuCostD124hPla adPurArpuCostD124hPla
+     *
+     * @return $this
+     */
+    public function setAdPurArpuCostD124hPla($adPurArpuCostD124hPla)
+    {
+        $this->container['adPurArpuCostD124hPla'] = $adPurArpuCostD124hPla;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstDayAdPurArppuCost24hPla
+     *
+     * @return int|mixed
+     */
+    public function getFirstDayAdPurArppuCost24hPla()
+    {
+        return $this->container['firstDayAdPurArppuCost24hPla'];
+    }
+
+    /**
+     * Sets firstDayAdPurArppuCost24hPla
+     *
+     * @param int|mixed $firstDayAdPurArppuCost24hPla firstDayAdPurArppuCost24hPla
+     *
+     * @return $this
+     */
+    public function setFirstDayAdPurArppuCost24hPla($firstDayAdPurArppuCost24hPla)
+    {
+        $this->container['firstDayAdPurArppuCost24hPla'] = $firstDayAdPurArppuCost24hPla;
 
         return $this;
     }

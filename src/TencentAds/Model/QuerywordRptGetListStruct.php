@@ -86,7 +86,9 @@ class QuerywordRptGetListStruct implements ModelInterface, ArrayAccess
         'time' => 'string',
         'thousandDisplayPrice' => 'string',
         'placementGroupId' => 'int',
-        'placementGroupName' => 'string'
+        'placementGroupName' => 'string',
+        'matchType' => 'int',
+        'matchTypeName' => 'string'
     ];
 
     /**
@@ -123,7 +125,9 @@ class QuerywordRptGetListStruct implements ModelInterface, ArrayAccess
         'time' => null,
         'thousandDisplayPrice' => null,
         'placementGroupId' => 'int64',
-        'placementGroupName' => null
+        'placementGroupName' => null,
+        'matchType' => 'int64',
+        'matchTypeName' => null
     ];
 
     /**
@@ -181,7 +185,9 @@ class QuerywordRptGetListStruct implements ModelInterface, ArrayAccess
         'time' => 'time',
         'thousandDisplayPrice' => 'thousand_display_price',
         'placementGroupId' => 'placement_group_id',
-        'placementGroupName' => 'placement_group_name'
+        'placementGroupName' => 'placement_group_name',
+        'matchType' => 'match_type',
+        'matchTypeName' => 'match_type_name'
     ];
 
     /**
@@ -218,7 +224,9 @@ class QuerywordRptGetListStruct implements ModelInterface, ArrayAccess
         'time' => 'setTime',
         'thousandDisplayPrice' => 'setThousandDisplayPrice',
         'placementGroupId' => 'setPlacementGroupId',
-        'placementGroupName' => 'setPlacementGroupName'
+        'placementGroupName' => 'setPlacementGroupName',
+        'matchType' => 'setMatchType',
+        'matchTypeName' => 'setMatchTypeName'
     ];
 
     /**
@@ -255,7 +263,9 @@ class QuerywordRptGetListStruct implements ModelInterface, ArrayAccess
         'time' => 'getTime',
         'thousandDisplayPrice' => 'getThousandDisplayPrice',
         'placementGroupId' => 'getPlacementGroupId',
-        'placementGroupName' => 'getPlacementGroupName'
+        'placementGroupName' => 'getPlacementGroupName',
+        'matchType' => 'getMatchType',
+        'matchTypeName' => 'getMatchTypeName'
     ];
 
     /**
@@ -347,6 +357,8 @@ class QuerywordRptGetListStruct implements ModelInterface, ArrayAccess
         $this->container['thousandDisplayPrice'] = isset($data['thousandDisplayPrice']) ? $data['thousandDisplayPrice'] : null;
         $this->container['placementGroupId'] = isset($data['placementGroupId']) ? $data['placementGroupId'] : null;
         $this->container['placementGroupName'] = isset($data['placementGroupName']) ? $data['placementGroupName'] : null;
+        $this->container['matchType'] = isset($data['matchType']) ? $data['matchType'] : null;
+        $this->container['matchTypeName'] = isset($data['matchTypeName']) ? $data['matchTypeName'] : null;
     }
 
     /**
@@ -1065,6 +1077,54 @@ class QuerywordRptGetListStruct implements ModelInterface, ArrayAccess
     public function setPlacementGroupName($placementGroupName)
     {
         $this->container['placementGroupName'] = $placementGroupName;
+
+        return $this;
+    }
+
+    /**
+     * Gets matchType
+     *
+     * @return int|mixed
+     */
+    public function getMatchType()
+    {
+        return $this->container['matchType'];
+    }
+
+    /**
+     * Sets matchType
+     *
+     * @param int|mixed $matchType matchType
+     *
+     * @return $this
+     */
+    public function setMatchType($matchType)
+    {
+        $this->container['matchType'] = $matchType;
+
+        return $this;
+    }
+
+    /**
+     * Gets matchTypeName
+     *
+     * @return string|mixed
+     */
+    public function getMatchTypeName()
+    {
+        return $this->container['matchTypeName'];
+    }
+
+    /**
+     * Sets matchTypeName
+     *
+     * @param string|mixed $matchTypeName matchTypeName
+     *
+     * @return $this
+     */
+    public function setMatchTypeName($matchTypeName)
+    {
+        $this->container['matchTypeName'] = $matchTypeName;
 
         return $this;
     }

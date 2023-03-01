@@ -159,7 +159,9 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'originVideo' => 'string',
         'redEnvelopeStruct' => '\TencentAds\Model\RedEnvelopeStruct',
         'buttonTextJumpInfo' => '\TencentAds\Model\LandingPageStructure',
-        'image3ComponentOptions' => '\TencentAds\Model\ImageComponentOption[]'
+        'image3ComponentOptions' => '\TencentAds\Model\ImageComponentOption[]',
+        'promotionSublinkComponentOptions' => '\TencentAds\Model\PromotionSublinkComponentOption[]',
+        'wxgamePlayablePageSpec' => '\TencentAds\Model\WxgamePlayablePageSpec'
     ];
 
     /**
@@ -269,7 +271,9 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'originVideo' => null,
         'redEnvelopeStruct' => null,
         'buttonTextJumpInfo' => null,
-        'image3ComponentOptions' => null
+        'image3ComponentOptions' => null,
+        'promotionSublinkComponentOptions' => null,
+        'wxgamePlayablePageSpec' => null
     ];
 
     /**
@@ -400,7 +404,9 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'originVideo' => 'origin_video',
         'redEnvelopeStruct' => 'red_envelope_struct',
         'buttonTextJumpInfo' => 'button_text_jump_info',
-        'image3ComponentOptions' => 'image3_component_options'
+        'image3ComponentOptions' => 'image3_component_options',
+        'promotionSublinkComponentOptions' => 'promotion_sublink_component_options',
+        'wxgamePlayablePageSpec' => 'wxgame_playable_page_spec'
     ];
 
     /**
@@ -510,7 +516,9 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'originVideo' => 'setOriginVideo',
         'redEnvelopeStruct' => 'setRedEnvelopeStruct',
         'buttonTextJumpInfo' => 'setButtonTextJumpInfo',
-        'image3ComponentOptions' => 'setImage3ComponentOptions'
+        'image3ComponentOptions' => 'setImage3ComponentOptions',
+        'promotionSublinkComponentOptions' => 'setPromotionSublinkComponentOptions',
+        'wxgamePlayablePageSpec' => 'setWxgamePlayablePageSpec'
     ];
 
     /**
@@ -620,7 +628,9 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'originVideo' => 'getOriginVideo',
         'redEnvelopeStruct' => 'getRedEnvelopeStruct',
         'buttonTextJumpInfo' => 'getButtonTextJumpInfo',
-        'image3ComponentOptions' => 'getImage3ComponentOptions'
+        'image3ComponentOptions' => 'getImage3ComponentOptions',
+        'promotionSublinkComponentOptions' => 'getPromotionSublinkComponentOptions',
+        'wxgamePlayablePageSpec' => 'getWxgamePlayablePageSpec'
     ];
 
     /**
@@ -785,6 +795,8 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         $this->container['redEnvelopeStruct'] = isset($data['redEnvelopeStruct']) ? $data['redEnvelopeStruct'] : null;
         $this->container['buttonTextJumpInfo'] = isset($data['buttonTextJumpInfo']) ? $data['buttonTextJumpInfo'] : null;
         $this->container['image3ComponentOptions'] = isset($data['image3ComponentOptions']) ? $data['image3ComponentOptions'] : null;
+        $this->container['promotionSublinkComponentOptions'] = isset($data['promotionSublinkComponentOptions']) ? $data['promotionSublinkComponentOptions'] : null;
+        $this->container['wxgamePlayablePageSpec'] = isset($data['wxgamePlayablePageSpec']) ? $data['wxgamePlayablePageSpec'] : null;
     }
 
     /**
@@ -3255,6 +3267,54 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
     public function setImage3ComponentOptions($image3ComponentOptions)
     {
         $this->container['image3ComponentOptions'] = $image3ComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets promotionSublinkComponentOptions
+     *
+     * @return \TencentAds\Model\PromotionSublinkComponentOption[]|mixed
+     */
+    public function getPromotionSublinkComponentOptions()
+    {
+        return $this->container['promotionSublinkComponentOptions'];
+    }
+
+    /**
+     * Sets promotionSublinkComponentOptions
+     *
+     * @param \TencentAds\Model\PromotionSublinkComponentOption[]|mixed $promotionSublinkComponentOptions promotionSublinkComponentOptions
+     *
+     * @return $this
+     */
+    public function setPromotionSublinkComponentOptions($promotionSublinkComponentOptions)
+    {
+        $this->container['promotionSublinkComponentOptions'] = $promotionSublinkComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets wxgamePlayablePageSpec
+     *
+     * @return \TencentAds\Model\WxgamePlayablePageSpec|mixed
+     */
+    public function getWxgamePlayablePageSpec()
+    {
+        return $this->container['wxgamePlayablePageSpec'];
+    }
+
+    /**
+     * Sets wxgamePlayablePageSpec
+     *
+     * @param \TencentAds\Model\WxgamePlayablePageSpec|mixed $wxgamePlayablePageSpec wxgamePlayablePageSpec
+     *
+     * @return $this
+     */
+    public function setWxgamePlayablePageSpec($wxgamePlayablePageSpec)
+    {
+        $this->container['wxgamePlayablePageSpec'] = $wxgamePlayablePageSpec;
 
         return $this;
     }
