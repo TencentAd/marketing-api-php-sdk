@@ -72,7 +72,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'taskTypeCreateAndroidUnionChannelPackageSpec' => '\TencentAds\Model\TaskTypeCreateAndroidUnionChannelPackageSpec',
         'taskTypeUpdateAndroidUnionChannelPackageSpec' => '\TencentAds\Model\TaskTypeUpdateAndroidUnionChannelPackageSpec',
         'taskTypeUnionPositionReportSpec' => '\TencentAds\Model\TaskTypeUnionPositionReportSpec',
-        'taskTypeReviewElementPrereviewResultSpec' => '\TencentAds\Model\TaskTypeReviewElementPrereviewResultSpec'
+        'taskTypeReviewElementPrereviewResultSpec' => '\TencentAds\Model\TaskTypeReviewElementPrereviewResultSpec',
+        'taskTypeSearchDownloadAllSpec' => '\TencentAds\Model\TaskTypeSearchDownloadAllSpec'
     ];
 
     /**
@@ -95,7 +96,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'taskTypeCreateAndroidUnionChannelPackageSpec' => null,
         'taskTypeUpdateAndroidUnionChannelPackageSpec' => null,
         'taskTypeUnionPositionReportSpec' => null,
-        'taskTypeReviewElementPrereviewResultSpec' => null
+        'taskTypeReviewElementPrereviewResultSpec' => null,
+        'taskTypeSearchDownloadAllSpec' => null
     ];
 
     /**
@@ -139,7 +141,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'taskTypeCreateAndroidUnionChannelPackageSpec' => 'task_type_create_android_union_channel_package_spec',
         'taskTypeUpdateAndroidUnionChannelPackageSpec' => 'task_type_update_android_union_channel_package_spec',
         'taskTypeUnionPositionReportSpec' => 'task_type_union_position_report_spec',
-        'taskTypeReviewElementPrereviewResultSpec' => 'task_type_review_element_prereview_result_spec'
+        'taskTypeReviewElementPrereviewResultSpec' => 'task_type_review_element_prereview_result_spec',
+        'taskTypeSearchDownloadAllSpec' => 'task_type_search_download_all_spec'
     ];
 
     /**
@@ -162,7 +165,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'taskTypeCreateAndroidUnionChannelPackageSpec' => 'setTaskTypeCreateAndroidUnionChannelPackageSpec',
         'taskTypeUpdateAndroidUnionChannelPackageSpec' => 'setTaskTypeUpdateAndroidUnionChannelPackageSpec',
         'taskTypeUnionPositionReportSpec' => 'setTaskTypeUnionPositionReportSpec',
-        'taskTypeReviewElementPrereviewResultSpec' => 'setTaskTypeReviewElementPrereviewResultSpec'
+        'taskTypeReviewElementPrereviewResultSpec' => 'setTaskTypeReviewElementPrereviewResultSpec',
+        'taskTypeSearchDownloadAllSpec' => 'setTaskTypeSearchDownloadAllSpec'
     ];
 
     /**
@@ -185,7 +189,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'taskTypeCreateAndroidUnionChannelPackageSpec' => 'getTaskTypeCreateAndroidUnionChannelPackageSpec',
         'taskTypeUpdateAndroidUnionChannelPackageSpec' => 'getTaskTypeUpdateAndroidUnionChannelPackageSpec',
         'taskTypeUnionPositionReportSpec' => 'getTaskTypeUnionPositionReportSpec',
-        'taskTypeReviewElementPrereviewResultSpec' => 'getTaskTypeReviewElementPrereviewResultSpec'
+        'taskTypeReviewElementPrereviewResultSpec' => 'getTaskTypeReviewElementPrereviewResultSpec',
+        'taskTypeSearchDownloadAllSpec' => 'getTaskTypeSearchDownloadAllSpec'
     ];
 
     /**
@@ -263,6 +268,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
         $this->container['taskTypeUpdateAndroidUnionChannelPackageSpec'] = isset($data['taskTypeUpdateAndroidUnionChannelPackageSpec']) ? $data['taskTypeUpdateAndroidUnionChannelPackageSpec'] : null;
         $this->container['taskTypeUnionPositionReportSpec'] = isset($data['taskTypeUnionPositionReportSpec']) ? $data['taskTypeUnionPositionReportSpec'] : null;
         $this->container['taskTypeReviewElementPrereviewResultSpec'] = isset($data['taskTypeReviewElementPrereviewResultSpec']) ? $data['taskTypeReviewElementPrereviewResultSpec'] : null;
+        $this->container['taskTypeSearchDownloadAllSpec'] = isset($data['taskTypeSearchDownloadAllSpec']) ? $data['taskTypeSearchDownloadAllSpec'] : null;
     }
 
     /**
@@ -645,6 +651,30 @@ class TaskSpec implements ModelInterface, ArrayAccess
     public function setTaskTypeReviewElementPrereviewResultSpec($taskTypeReviewElementPrereviewResultSpec)
     {
         $this->container['taskTypeReviewElementPrereviewResultSpec'] = $taskTypeReviewElementPrereviewResultSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets taskTypeSearchDownloadAllSpec
+     *
+     * @return \TencentAds\Model\TaskTypeSearchDownloadAllSpec|mixed
+     */
+    public function getTaskTypeSearchDownloadAllSpec()
+    {
+        return $this->container['taskTypeSearchDownloadAllSpec'];
+    }
+
+    /**
+     * Sets taskTypeSearchDownloadAllSpec
+     *
+     * @param \TencentAds\Model\TaskTypeSearchDownloadAllSpec|mixed $taskTypeSearchDownloadAllSpec taskTypeSearchDownloadAllSpec
+     *
+     * @return $this
+     */
+    public function setTaskTypeSearchDownloadAllSpec($taskTypeSearchDownloadAllSpec)
+    {
+        $this->container['taskTypeSearchDownloadAllSpec'] = $taskTypeSearchDownloadAllSpec;
 
         return $this;
     }

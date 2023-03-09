@@ -1,6 +1,6 @@
 <?php
 /**
- * TopVideoSpec
+ * TaskTypeSearchDownloadAllSpec
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * TopVideoSpec Class Doc Comment
+ * TaskTypeSearchDownloadAllSpec Class Doc Comment
  *
  * @category Class
- * @description 顶部视频组件元素&lt;br&gt;        视频时长6-90秒. &lt;br&gt;        视频尺寸: 朋友圈常规640*480/640*360/750*1536/750*1334/720*1280/1280*720/1280*960,&lt;br&gt;        微信平台账号：朋友圈基础卡片广告:640*360/750*1536, 朋友圈全福式卡片广告:750*&lt;&#x3D;1536 &lt;br&gt;        腾讯广告账号：卡片广告：640*360 &lt;br&gt;        公众号及其他:750*&lt;&#x3D;1536
+ * @description 搜索整账户下载数据查询条件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class TopVideoSpec implements ModelInterface, ArrayAccess
+class TaskTypeSearchDownloadAllSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class TopVideoSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'top_video_spec';
+    protected static $swaggerModelName = 'task_type_search_download_all_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,12 +58,7 @@ class TopVideoSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'videoId' => 'string',
-        'width' => 'int',
-        'height' => 'int',
-        'adLocation' => 'string',
-        'outerStyle' => 'int',
-        'usedForOuter' => 'int'
+        'campaignIds' => 'int[]'
     ];
 
     /**
@@ -72,12 +67,7 @@ class TopVideoSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'videoId' => null,
-        'width' => 'int64',
-        'height' => 'int64',
-        'adLocation' => null,
-        'outerStyle' => 'int64',
-        'usedForOuter' => 'int64'
+        'campaignIds' => 'int64'
     ];
 
     /**
@@ -107,12 +97,7 @@ class TopVideoSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'videoId' => 'video_id',
-        'width' => 'width',
-        'height' => 'height',
-        'adLocation' => 'ad_location',
-        'outerStyle' => 'outer_style',
-        'usedForOuter' => 'used_for_outer'
+        'campaignIds' => 'campaign_ids'
     ];
 
     /**
@@ -121,12 +106,7 @@ class TopVideoSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'videoId' => 'setVideoId',
-        'width' => 'setWidth',
-        'height' => 'setHeight',
-        'adLocation' => 'setAdLocation',
-        'outerStyle' => 'setOuterStyle',
-        'usedForOuter' => 'setUsedForOuter'
+        'campaignIds' => 'setCampaignIds'
     ];
 
     /**
@@ -135,12 +115,7 @@ class TopVideoSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'videoId' => 'getVideoId',
-        'width' => 'getWidth',
-        'height' => 'getHeight',
-        'adLocation' => 'getAdLocation',
-        'outerStyle' => 'getOuterStyle',
-        'usedForOuter' => 'getUsedForOuter'
+        'campaignIds' => 'getCampaignIds'
     ];
 
     /**
@@ -203,12 +178,7 @@ class TopVideoSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['videoId'] = isset($data['videoId']) ? $data['videoId'] : null;
-        $this->container['width'] = isset($data['width']) ? $data['width'] : null;
-        $this->container['height'] = isset($data['height']) ? $data['height'] : null;
-        $this->container['adLocation'] = isset($data['adLocation']) ? $data['adLocation'] : null;
-        $this->container['outerStyle'] = isset($data['outerStyle']) ? $data['outerStyle'] : null;
-        $this->container['usedForOuter'] = isset($data['usedForOuter']) ? $data['usedForOuter'] : null;
+        $this->container['campaignIds'] = isset($data['campaignIds']) ? $data['campaignIds'] : null;
     }
 
     /**
@@ -236,145 +206,25 @@ class TopVideoSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets videoId
+     * Gets campaignIds
      *
-     * @return string|mixed
+     * @return int[]|mixed
      */
-    public function getVideoId()
+    public function getCampaignIds()
     {
-        return $this->container['videoId'];
+        return $this->container['campaignIds'];
     }
 
     /**
-     * Sets videoId
+     * Sets campaignIds
      *
-     * @param string|mixed $videoId videoId
+     * @param int[]|mixed $campaignIds campaignIds
      *
      * @return $this
      */
-    public function setVideoId($videoId)
+    public function setCampaignIds($campaignIds)
     {
-        $this->container['videoId'] = $videoId;
-
-        return $this;
-    }
-
-    /**
-     * Gets width
-     *
-     * @return int|mixed
-     */
-    public function getWidth()
-    {
-        return $this->container['width'];
-    }
-
-    /**
-     * Sets width
-     *
-     * @param int|mixed $width width
-     *
-     * @return $this
-     */
-    public function setWidth($width)
-    {
-        $this->container['width'] = $width;
-
-        return $this;
-    }
-
-    /**
-     * Gets height
-     *
-     * @return int|mixed
-     */
-    public function getHeight()
-    {
-        return $this->container['height'];
-    }
-
-    /**
-     * Sets height
-     *
-     * @param int|mixed $height height
-     *
-     * @return $this
-     */
-    public function setHeight($height)
-    {
-        $this->container['height'] = $height;
-
-        return $this;
-    }
-
-    /**
-     * Gets adLocation
-     *
-     * @return string|mixed
-     */
-    public function getAdLocation()
-    {
-        return $this->container['adLocation'];
-    }
-
-    /**
-     * Sets adLocation
-     *
-     * @param string|mixed $adLocation adLocation
-     *
-     * @return $this
-     */
-    public function setAdLocation($adLocation)
-    {
-        $this->container['adLocation'] = $adLocation;
-
-        return $this;
-    }
-
-    /**
-     * Gets outerStyle
-     *
-     * @return int|mixed
-     */
-    public function getOuterStyle()
-    {
-        return $this->container['outerStyle'];
-    }
-
-    /**
-     * Sets outerStyle
-     *
-     * @param int|mixed $outerStyle outerStyle
-     *
-     * @return $this
-     */
-    public function setOuterStyle($outerStyle)
-    {
-        $this->container['outerStyle'] = $outerStyle;
-
-        return $this;
-    }
-
-    /**
-     * Gets usedForOuter
-     *
-     * @return int|mixed
-     */
-    public function getUsedForOuter()
-    {
-        return $this->container['usedForOuter'];
-    }
-
-    /**
-     * Sets usedForOuter
-     *
-     * @param int|mixed $usedForOuter usedForOuter
-     *
-     * @return $this
-     */
-    public function setUsedForOuter($usedForOuter)
-    {
-        $this->container['usedForOuter'] = $usedForOuter;
+        $this->container['campaignIds'] = $campaignIds;
 
         return $this;
     }
