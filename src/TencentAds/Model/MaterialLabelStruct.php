@@ -1,6 +1,6 @@
 <?php
 /**
- * ConsultComponentValueStruct
+ * MaterialLabelStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ConsultComponentValueStruct Class Doc Comment
+ * MaterialLabelStruct Class Doc Comment
  *
  * @category Class
- * @description 咨询组件
+ * @description 素材标签信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
+class MaterialLabelStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'consult_component_value_struct';
+    protected static $swaggerModelName = 'material_label_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,9 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'jumpInfo' => '\TencentAds\Model\LandingPageStructure[]'
+        'imageId' => 'string',
+        'mediaId' => 'string',
+        'labelList' => '\TencentAds\Model\CustomLabelStruct[]'
     ];
 
     /**
@@ -68,8 +69,9 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'id' => 'int64',
-        'jumpInfo' => null
+        'imageId' => null,
+        'mediaId' => null,
+        'labelList' => null
     ];
 
     /**
@@ -99,8 +101,9 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'jumpInfo' => 'jump_info'
+        'imageId' => 'image_id',
+        'mediaId' => 'media_id',
+        'labelList' => 'label_list'
     ];
 
     /**
@@ -109,8 +112,9 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'jumpInfo' => 'setJumpInfo'
+        'imageId' => 'setImageId',
+        'mediaId' => 'setMediaId',
+        'labelList' => 'setLabelList'
     ];
 
     /**
@@ -119,8 +123,9 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'jumpInfo' => 'getJumpInfo'
+        'imageId' => 'getImageId',
+        'mediaId' => 'getMediaId',
+        'labelList' => 'getLabelList'
     ];
 
     /**
@@ -183,8 +188,9 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
-        $this->container['jumpInfo'] = isset($data['jumpInfo']) ? $data['jumpInfo'] : null;
+        $this->container['imageId'] = isset($data['imageId']) ? $data['imageId'] : null;
+        $this->container['mediaId'] = isset($data['mediaId']) ? $data['mediaId'] : null;
+        $this->container['labelList'] = isset($data['labelList']) ? $data['labelList'] : null;
     }
 
     /**
@@ -212,49 +218,73 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets id
+     * Gets imageId
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getId()
+    public function getImageId()
     {
-        return $this->container['id'];
+        return $this->container['imageId'];
     }
 
     /**
-     * Sets id
+     * Sets imageId
      *
-     * @param int|mixed $id id
+     * @param string|mixed $imageId imageId
      *
      * @return $this
      */
-    public function setId($id)
+    public function setImageId($imageId)
     {
-        $this->container['id'] = $id;
+        $this->container['imageId'] = $imageId;
 
         return $this;
     }
 
     /**
-     * Gets jumpInfo
+     * Gets mediaId
      *
-     * @return \TencentAds\Model\LandingPageStructure[]|mixed
+     * @return string|mixed
      */
-    public function getJumpInfo()
+    public function getMediaId()
     {
-        return $this->container['jumpInfo'];
+        return $this->container['mediaId'];
     }
 
     /**
-     * Sets jumpInfo
+     * Sets mediaId
      *
-     * @param \TencentAds\Model\LandingPageStructure[]|mixed $jumpInfo jumpInfo
+     * @param string|mixed $mediaId mediaId
      *
      * @return $this
      */
-    public function setJumpInfo($jumpInfo)
+    public function setMediaId($mediaId)
     {
-        $this->container['jumpInfo'] = $jumpInfo;
+        $this->container['mediaId'] = $mediaId;
+
+        return $this;
+    }
+
+    /**
+     * Gets labelList
+     *
+     * @return \TencentAds\Model\CustomLabelStruct[]|mixed
+     */
+    public function getLabelList()
+    {
+        return $this->container['labelList'];
+    }
+
+    /**
+     * Sets labelList
+     *
+     * @param \TencentAds\Model\CustomLabelStruct[]|mixed $labelList labelList
+     *
+     * @return $this
+     */
+    public function setLabelList($labelList)
+    {
+        $this->container['labelList'] = $labelList;
 
         return $this;
     }

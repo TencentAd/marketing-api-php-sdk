@@ -1,6 +1,6 @@
 <?php
 /**
- * ConsultComponentValueStruct
+ * CreateLabelStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ConsultComponentValueStruct Class Doc Comment
+ * CreateLabelStruct Class Doc Comment
  *
  * @category Class
- * @description 咨询组件
+ * @description 标签信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
+class CreateLabelStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'consult_component_value_struct';
+    protected static $swaggerModelName = 'create_label_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,11 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'jumpInfo' => '\TencentAds\Model\LandingPageStructure[]'
+        'labelName' => 'string',
+        'firstMaterialLabelLevelId' => 'int',
+        'firstMaterialLabelLevelName' => 'string',
+        'secondMaterialLabelLevelId' => 'int',
+        'secondMaterialLabelLevelName' => 'string'
     ];
 
     /**
@@ -68,8 +71,11 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'id' => 'int64',
-        'jumpInfo' => null
+        'labelName' => null,
+        'firstMaterialLabelLevelId' => 'int64',
+        'firstMaterialLabelLevelName' => null,
+        'secondMaterialLabelLevelId' => 'int64',
+        'secondMaterialLabelLevelName' => null
     ];
 
     /**
@@ -99,8 +105,11 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'jumpInfo' => 'jump_info'
+        'labelName' => 'label_name',
+        'firstMaterialLabelLevelId' => 'first_material_label_level_id',
+        'firstMaterialLabelLevelName' => 'first_material_label_level_name',
+        'secondMaterialLabelLevelId' => 'second_material_label_level_id',
+        'secondMaterialLabelLevelName' => 'second_material_label_level_name'
     ];
 
     /**
@@ -109,8 +118,11 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'jumpInfo' => 'setJumpInfo'
+        'labelName' => 'setLabelName',
+        'firstMaterialLabelLevelId' => 'setFirstMaterialLabelLevelId',
+        'firstMaterialLabelLevelName' => 'setFirstMaterialLabelLevelName',
+        'secondMaterialLabelLevelId' => 'setSecondMaterialLabelLevelId',
+        'secondMaterialLabelLevelName' => 'setSecondMaterialLabelLevelName'
     ];
 
     /**
@@ -119,8 +131,11 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'jumpInfo' => 'getJumpInfo'
+        'labelName' => 'getLabelName',
+        'firstMaterialLabelLevelId' => 'getFirstMaterialLabelLevelId',
+        'firstMaterialLabelLevelName' => 'getFirstMaterialLabelLevelName',
+        'secondMaterialLabelLevelId' => 'getSecondMaterialLabelLevelId',
+        'secondMaterialLabelLevelName' => 'getSecondMaterialLabelLevelName'
     ];
 
     /**
@@ -183,8 +198,11 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
-        $this->container['jumpInfo'] = isset($data['jumpInfo']) ? $data['jumpInfo'] : null;
+        $this->container['labelName'] = isset($data['labelName']) ? $data['labelName'] : null;
+        $this->container['firstMaterialLabelLevelId'] = isset($data['firstMaterialLabelLevelId']) ? $data['firstMaterialLabelLevelId'] : null;
+        $this->container['firstMaterialLabelLevelName'] = isset($data['firstMaterialLabelLevelName']) ? $data['firstMaterialLabelLevelName'] : null;
+        $this->container['secondMaterialLabelLevelId'] = isset($data['secondMaterialLabelLevelId']) ? $data['secondMaterialLabelLevelId'] : null;
+        $this->container['secondMaterialLabelLevelName'] = isset($data['secondMaterialLabelLevelName']) ? $data['secondMaterialLabelLevelName'] : null;
     }
 
     /**
@@ -212,49 +230,121 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets id
+     * Gets labelName
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getId()
+    public function getLabelName()
     {
-        return $this->container['id'];
+        return $this->container['labelName'];
     }
 
     /**
-     * Sets id
+     * Sets labelName
      *
-     * @param int|mixed $id id
+     * @param string|mixed $labelName labelName
      *
      * @return $this
      */
-    public function setId($id)
+    public function setLabelName($labelName)
     {
-        $this->container['id'] = $id;
+        $this->container['labelName'] = $labelName;
 
         return $this;
     }
 
     /**
-     * Gets jumpInfo
+     * Gets firstMaterialLabelLevelId
      *
-     * @return \TencentAds\Model\LandingPageStructure[]|mixed
+     * @return int|mixed
      */
-    public function getJumpInfo()
+    public function getFirstMaterialLabelLevelId()
     {
-        return $this->container['jumpInfo'];
+        return $this->container['firstMaterialLabelLevelId'];
     }
 
     /**
-     * Sets jumpInfo
+     * Sets firstMaterialLabelLevelId
      *
-     * @param \TencentAds\Model\LandingPageStructure[]|mixed $jumpInfo jumpInfo
+     * @param int|mixed $firstMaterialLabelLevelId firstMaterialLabelLevelId
      *
      * @return $this
      */
-    public function setJumpInfo($jumpInfo)
+    public function setFirstMaterialLabelLevelId($firstMaterialLabelLevelId)
     {
-        $this->container['jumpInfo'] = $jumpInfo;
+        $this->container['firstMaterialLabelLevelId'] = $firstMaterialLabelLevelId;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstMaterialLabelLevelName
+     *
+     * @return string|mixed
+     */
+    public function getFirstMaterialLabelLevelName()
+    {
+        return $this->container['firstMaterialLabelLevelName'];
+    }
+
+    /**
+     * Sets firstMaterialLabelLevelName
+     *
+     * @param string|mixed $firstMaterialLabelLevelName firstMaterialLabelLevelName
+     *
+     * @return $this
+     */
+    public function setFirstMaterialLabelLevelName($firstMaterialLabelLevelName)
+    {
+        $this->container['firstMaterialLabelLevelName'] = $firstMaterialLabelLevelName;
+
+        return $this;
+    }
+
+    /**
+     * Gets secondMaterialLabelLevelId
+     *
+     * @return int|mixed
+     */
+    public function getSecondMaterialLabelLevelId()
+    {
+        return $this->container['secondMaterialLabelLevelId'];
+    }
+
+    /**
+     * Sets secondMaterialLabelLevelId
+     *
+     * @param int|mixed $secondMaterialLabelLevelId secondMaterialLabelLevelId
+     *
+     * @return $this
+     */
+    public function setSecondMaterialLabelLevelId($secondMaterialLabelLevelId)
+    {
+        $this->container['secondMaterialLabelLevelId'] = $secondMaterialLabelLevelId;
+
+        return $this;
+    }
+
+    /**
+     * Gets secondMaterialLabelLevelName
+     *
+     * @return string|mixed
+     */
+    public function getSecondMaterialLabelLevelName()
+    {
+        return $this->container['secondMaterialLabelLevelName'];
+    }
+
+    /**
+     * Sets secondMaterialLabelLevelName
+     *
+     * @param string|mixed $secondMaterialLabelLevelName secondMaterialLabelLevelName
+     *
+     * @return $this
+     */
+    public function setSecondMaterialLabelLevelName($secondMaterialLabelLevelName)
+    {
+        $this->container['secondMaterialLabelLevelName'] = $secondMaterialLabelLevelName;
 
         return $this;
     }

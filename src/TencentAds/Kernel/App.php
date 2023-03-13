@@ -103,6 +103,7 @@ use TencentAds\Container\LocalStoresApiContainer;
 use TencentAds\Container\LocalStoresCategoriesApiContainer;
 use TencentAds\Container\LocalStoresSearchInfoApiContainer;
 use TencentAds\Container\LocalStoresWxpayMerchantsApiContainer;
+use TencentAds\Container\MaterialLabelsApiContainer;
 use TencentAds\Container\MergeFundTypeDailyBalanceReportApiContainer;
 use TencentAds\Container\MergeFundTypeFundStatementsDetailedApiContainer;
 use TencentAds\Container\MergeFundTypeFundsApiContainer;
@@ -491,6 +492,9 @@ class App
 
     /** @var LocalStoresWxpayMerchantsApiContainer */
     public $localStoresWxpayMerchantsApiContainer;
+
+    /** @var MaterialLabelsApiContainer */
+    public $materialLabelsApiContainer;
 
     /** @var MergeFundTypeDailyBalanceReportApiContainer */
     public $mergeFundTypeDailyBalanceReportApiContainer;
@@ -2156,6 +2160,20 @@ class App
             $this->localStoresWxpayMerchantsApiContainer = $container;
         }
         return $this->localStoresWxpayMerchantsApiContainer;
+    }
+
+
+    /**
+     * @return MaterialLabelsApiContainer
+     */
+    public function materialLabels()
+    {
+        if (empty($this->materialLabelsApiContainer)) {
+            $container = new MaterialLabelsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->materialLabelsApiContainer = $container;
+        }
+        return $this->materialLabelsApiContainer;
     }
 
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * ConsultComponentValueStruct
+ * MaterialLabelsGetResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ConsultComponentValueStruct Class Doc Comment
+ * MaterialLabelsGetResponseData Class Doc Comment
  *
  * @category Class
- * @description 咨询组件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
+class MaterialLabelsGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'consult_component_value_struct';
+    protected static $swaggerModelName = 'MaterialLabelsGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,7 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'jumpInfo' => '\TencentAds\Model\LandingPageStructure[]'
+        'list' => '\TencentAds\Model\MaterialLabelStruct[]'
     ];
 
     /**
@@ -68,8 +66,7 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'id' => 'int64',
-        'jumpInfo' => null
+        'list' => null
     ];
 
     /**
@@ -99,8 +96,7 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'jumpInfo' => 'jump_info'
+        'list' => 'list'
     ];
 
     /**
@@ -109,8 +105,7 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'jumpInfo' => 'setJumpInfo'
+        'list' => 'setList'
     ];
 
     /**
@@ -119,8 +114,7 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'jumpInfo' => 'getJumpInfo'
+        'list' => 'getList'
     ];
 
     /**
@@ -183,8 +177,7 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
-        $this->container['jumpInfo'] = isset($data['jumpInfo']) ? $data['jumpInfo'] : null;
+        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
     }
 
     /**
@@ -212,49 +205,25 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets id
+     * Gets list
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\MaterialLabelStruct[]|mixed
      */
-    public function getId()
+    public function getList()
     {
-        return $this->container['id'];
+        return $this->container['list'];
     }
 
     /**
-     * Sets id
+     * Sets list
      *
-     * @param int|mixed $id id
+     * @param \TencentAds\Model\MaterialLabelStruct[]|mixed $list list
      *
      * @return $this
      */
-    public function setId($id)
+    public function setList($list)
     {
-        $this->container['id'] = $id;
-
-        return $this;
-    }
-
-    /**
-     * Gets jumpInfo
-     *
-     * @return \TencentAds\Model\LandingPageStructure[]|mixed
-     */
-    public function getJumpInfo()
-    {
-        return $this->container['jumpInfo'];
-    }
-
-    /**
-     * Sets jumpInfo
-     *
-     * @param \TencentAds\Model\LandingPageStructure[]|mixed $jumpInfo jumpInfo
-     *
-     * @return $this
-     */
-    public function setJumpInfo($jumpInfo)
-    {
-        $this->container['jumpInfo'] = $jumpInfo;
+        $this->container['list'] = $list;
 
         return $this;
     }

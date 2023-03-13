@@ -67,7 +67,8 @@ class AuthListStruct implements ModelInterface, ArrayAccess
         'status' => 'int',
         'auditMsg' => 'string',
         'authType' => '\TencentAds\Model\WechatAuthType',
-        'authScope' => '\TencentAds\Model\WechatAuthScope'
+        'authScope' => '\TencentAds\Model\WechatAuthScope',
+        'isAdAcct' => 'bool'
     ];
 
     /**
@@ -85,7 +86,8 @@ class AuthListStruct implements ModelInterface, ArrayAccess
         'status' => 'int64',
         'auditMsg' => null,
         'authType' => null,
-        'authScope' => null
+        'authScope' => null,
+        'isAdAcct' => null
     ];
 
     /**
@@ -124,7 +126,8 @@ class AuthListStruct implements ModelInterface, ArrayAccess
         'status' => 'status',
         'auditMsg' => 'audit_msg',
         'authType' => 'auth_type',
-        'authScope' => 'auth_scope'
+        'authScope' => 'auth_scope',
+        'isAdAcct' => 'is_ad_acct'
     ];
 
     /**
@@ -142,7 +145,8 @@ class AuthListStruct implements ModelInterface, ArrayAccess
         'status' => 'setStatus',
         'auditMsg' => 'setAuditMsg',
         'authType' => 'setAuthType',
-        'authScope' => 'setAuthScope'
+        'authScope' => 'setAuthScope',
+        'isAdAcct' => 'setIsAdAcct'
     ];
 
     /**
@@ -160,7 +164,8 @@ class AuthListStruct implements ModelInterface, ArrayAccess
         'status' => 'getStatus',
         'auditMsg' => 'getAuditMsg',
         'authType' => 'getAuthType',
-        'authScope' => 'getAuthScope'
+        'authScope' => 'getAuthScope',
+        'isAdAcct' => 'getIsAdAcct'
     ];
 
     /**
@@ -233,6 +238,7 @@ class AuthListStruct implements ModelInterface, ArrayAccess
         $this->container['auditMsg'] = isset($data['auditMsg']) ? $data['auditMsg'] : null;
         $this->container['authType'] = isset($data['authType']) ? $data['authType'] : null;
         $this->container['authScope'] = isset($data['authScope']) ? $data['authScope'] : null;
+        $this->container['isAdAcct'] = isset($data['isAdAcct']) ? $data['isAdAcct'] : null;
     }
 
     /**
@@ -495,6 +501,30 @@ class AuthListStruct implements ModelInterface, ArrayAccess
     public function setAuthScope($authScope)
     {
         $this->container['authScope'] = $authScope;
+
+        return $this;
+    }
+
+    /**
+     * Gets isAdAcct
+     *
+     * @return bool|mixed
+     */
+    public function getIsAdAcct()
+    {
+        return $this->container['isAdAcct'];
+    }
+
+    /**
+     * Sets isAdAcct
+     *
+     * @param bool|mixed $isAdAcct isAdAcct
+     *
+     * @return $this
+     */
+    public function setIsAdAcct($isAdAcct)
+    {
+        $this->container['isAdAcct'] = $isAdAcct;
 
         return $this;
     }

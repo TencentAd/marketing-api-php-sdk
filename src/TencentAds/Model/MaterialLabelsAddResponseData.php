@@ -1,6 +1,6 @@
 <?php
 /**
- * ConsultComponentValueStruct
+ * MaterialLabelsAddResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ConsultComponentValueStruct Class Doc Comment
+ * MaterialLabelsAddResponseData Class Doc Comment
  *
  * @category Class
- * @description 咨询组件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
+class MaterialLabelsAddResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'consult_component_value_struct';
+    protected static $swaggerModelName = 'MaterialLabelsAddResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,8 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'jumpInfo' => '\TencentAds\Model\LandingPageStructure[]'
+        'successIdList' => 'string[]',
+        'failIdList' => 'string[]'
     ];
 
     /**
@@ -68,8 +67,8 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'id' => 'int64',
-        'jumpInfo' => null
+        'successIdList' => null,
+        'failIdList' => null
     ];
 
     /**
@@ -99,8 +98,8 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'jumpInfo' => 'jump_info'
+        'successIdList' => 'success_id_list',
+        'failIdList' => 'fail_id_list'
     ];
 
     /**
@@ -109,8 +108,8 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'jumpInfo' => 'setJumpInfo'
+        'successIdList' => 'setSuccessIdList',
+        'failIdList' => 'setFailIdList'
     ];
 
     /**
@@ -119,8 +118,8 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'jumpInfo' => 'getJumpInfo'
+        'successIdList' => 'getSuccessIdList',
+        'failIdList' => 'getFailIdList'
     ];
 
     /**
@@ -183,8 +182,8 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
-        $this->container['jumpInfo'] = isset($data['jumpInfo']) ? $data['jumpInfo'] : null;
+        $this->container['successIdList'] = isset($data['successIdList']) ? $data['successIdList'] : null;
+        $this->container['failIdList'] = isset($data['failIdList']) ? $data['failIdList'] : null;
     }
 
     /**
@@ -212,49 +211,49 @@ class ConsultComponentValueStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets id
+     * Gets successIdList
      *
-     * @return int|mixed
+     * @return string[]|mixed
      */
-    public function getId()
+    public function getSuccessIdList()
     {
-        return $this->container['id'];
+        return $this->container['successIdList'];
     }
 
     /**
-     * Sets id
+     * Sets successIdList
      *
-     * @param int|mixed $id id
+     * @param string[]|mixed $successIdList successIdList
      *
      * @return $this
      */
-    public function setId($id)
+    public function setSuccessIdList($successIdList)
     {
-        $this->container['id'] = $id;
+        $this->container['successIdList'] = $successIdList;
 
         return $this;
     }
 
     /**
-     * Gets jumpInfo
+     * Gets failIdList
      *
-     * @return \TencentAds\Model\LandingPageStructure[]|mixed
+     * @return string[]|mixed
      */
-    public function getJumpInfo()
+    public function getFailIdList()
     {
-        return $this->container['jumpInfo'];
+        return $this->container['failIdList'];
     }
 
     /**
-     * Sets jumpInfo
+     * Sets failIdList
      *
-     * @param \TencentAds\Model\LandingPageStructure[]|mixed $jumpInfo jumpInfo
+     * @param string[]|mixed $failIdList failIdList
      *
      * @return $this
      */
-    public function setJumpInfo($jumpInfo)
+    public function setFailIdList($failIdList)
     {
-        $this->container['jumpInfo'] = $jumpInfo;
+        $this->container['failIdList'] = $failIdList;
 
         return $this;
     }
