@@ -74,7 +74,8 @@ class LocalStoreBizInfoStruct implements ModelInterface, ArrayAccess
         'telephone' => 'string',
         'specialService' => 'string[]',
         'openingStatus' => '\TencentAds\Model\LocalStoreOpeningStatus',
-        'star' => 'double'
+        'star' => 'double',
+        'intro' => 'string'
     ];
 
     /**
@@ -99,7 +100,8 @@ class LocalStoreBizInfoStruct implements ModelInterface, ArrayAccess
         'telephone' => null,
         'specialService' => null,
         'openingStatus' => null,
-        'star' => 'double'
+        'star' => 'double',
+        'intro' => null
     ];
 
     /**
@@ -145,7 +147,8 @@ class LocalStoreBizInfoStruct implements ModelInterface, ArrayAccess
         'telephone' => 'telephone',
         'specialService' => 'special_service',
         'openingStatus' => 'opening_status',
-        'star' => 'star'
+        'star' => 'star',
+        'intro' => 'intro'
     ];
 
     /**
@@ -170,7 +173,8 @@ class LocalStoreBizInfoStruct implements ModelInterface, ArrayAccess
         'telephone' => 'setTelephone',
         'specialService' => 'setSpecialService',
         'openingStatus' => 'setOpeningStatus',
-        'star' => 'setStar'
+        'star' => 'setStar',
+        'intro' => 'setIntro'
     ];
 
     /**
@@ -195,7 +199,8 @@ class LocalStoreBizInfoStruct implements ModelInterface, ArrayAccess
         'telephone' => 'getTelephone',
         'specialService' => 'getSpecialService',
         'openingStatus' => 'getOpeningStatus',
-        'star' => 'getStar'
+        'star' => 'getStar',
+        'intro' => 'getIntro'
     ];
 
     /**
@@ -275,6 +280,7 @@ class LocalStoreBizInfoStruct implements ModelInterface, ArrayAccess
         $this->container['specialService'] = isset($data['specialService']) ? $data['specialService'] : null;
         $this->container['openingStatus'] = isset($data['openingStatus']) ? $data['openingStatus'] : null;
         $this->container['star'] = isset($data['star']) ? $data['star'] : null;
+        $this->container['intro'] = isset($data['intro']) ? $data['intro'] : null;
     }
 
     /**
@@ -705,6 +711,30 @@ class LocalStoreBizInfoStruct implements ModelInterface, ArrayAccess
     public function setStar($star)
     {
         $this->container['star'] = $star;
+
+        return $this;
+    }
+
+    /**
+     * Gets intro
+     *
+     * @return string|mixed
+     */
+    public function getIntro()
+    {
+        return $this->container['intro'];
+    }
+
+    /**
+     * Sets intro
+     *
+     * @param string|mixed $intro intro
+     *
+     * @return $this
+     */
+    public function setIntro($intro)
+    {
+        $this->container['intro'] = $intro;
 
         return $this;
     }

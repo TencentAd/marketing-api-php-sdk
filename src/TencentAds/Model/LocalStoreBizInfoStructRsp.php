@@ -73,7 +73,8 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         'openingHours' => '\TencentAds\Model\OpeningHours[]',
         'telephone' => 'string',
         'specialService' => 'string[]',
-        'openingStatus' => '\TencentAds\Model\LocalStoreOpeningStatus'
+        'openingStatus' => '\TencentAds\Model\LocalStoreOpeningStatus',
+        'intro' => 'string'
     ];
 
     /**
@@ -97,7 +98,8 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         'openingHours' => null,
         'telephone' => null,
         'specialService' => null,
-        'openingStatus' => null
+        'openingStatus' => null,
+        'intro' => null
     ];
 
     /**
@@ -142,7 +144,8 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         'openingHours' => 'opening_hours',
         'telephone' => 'telephone',
         'specialService' => 'special_service',
-        'openingStatus' => 'opening_status'
+        'openingStatus' => 'opening_status',
+        'intro' => 'intro'
     ];
 
     /**
@@ -166,7 +169,8 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         'openingHours' => 'setOpeningHours',
         'telephone' => 'setTelephone',
         'specialService' => 'setSpecialService',
-        'openingStatus' => 'setOpeningStatus'
+        'openingStatus' => 'setOpeningStatus',
+        'intro' => 'setIntro'
     ];
 
     /**
@@ -190,7 +194,8 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         'openingHours' => 'getOpeningHours',
         'telephone' => 'getTelephone',
         'specialService' => 'getSpecialService',
-        'openingStatus' => 'getOpeningStatus'
+        'openingStatus' => 'getOpeningStatus',
+        'intro' => 'getIntro'
     ];
 
     /**
@@ -269,6 +274,7 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         $this->container['telephone'] = isset($data['telephone']) ? $data['telephone'] : null;
         $this->container['specialService'] = isset($data['specialService']) ? $data['specialService'] : null;
         $this->container['openingStatus'] = isset($data['openingStatus']) ? $data['openingStatus'] : null;
+        $this->container['intro'] = isset($data['intro']) ? $data['intro'] : null;
     }
 
     /**
@@ -675,6 +681,30 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
     public function setOpeningStatus($openingStatus)
     {
         $this->container['openingStatus'] = $openingStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets intro
+     *
+     * @return string|mixed
+     */
+    public function getIntro()
+    {
+        return $this->container['intro'];
+    }
+
+    /**
+     * Sets intro
+     *
+     * @param string|mixed $intro intro
+     *
+     * @return $this
+     */
+    public function setIntro($intro)
+    {
+        $this->container['intro'] = $intro;
 
         return $this;
     }

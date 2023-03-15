@@ -1,6 +1,6 @@
 <?php
 /**
- * LeadCluesGetRequest
+ * LeadsCallRecordsGetResponse
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * LeadCluesGetRequest Class Doc Comment
+ * LeadsCallRecordsGetResponse Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class LeadCluesGetRequest implements ModelInterface, ArrayAccess
+class LeadsCallRecordsGetResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'LeadCluesGetRequest';
+    protected static $swaggerModelName = 'LeadsCallRecordsGetResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,12 +57,11 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'timeRange' => '\TencentAds\Model\TimeRange',
-        'filtering' => '\TencentAds\Model\FilteringStruct[]',
-        'page' => 'int',
-        'pageSize' => 'int',
-        'lastSearchAfterValues' => 'string[]'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\LeadsCallRecordsGetResponseData'
     ];
 
     /**
@@ -71,12 +70,11 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'timeRange' => null,
-        'filtering' => null,
-        'page' => 'int64',
-        'pageSize' => 'int64',
-        'lastSearchAfterValues' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -106,12 +104,11 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'timeRange' => 'time_range',
-        'filtering' => 'filtering',
-        'page' => 'page',
-        'pageSize' => 'page_size',
-        'lastSearchAfterValues' => 'last_search_after_values'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -120,12 +117,11 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'timeRange' => 'setTimeRange',
-        'filtering' => 'setFiltering',
-        'page' => 'setPage',
-        'pageSize' => 'setPageSize',
-        'lastSearchAfterValues' => 'setLastSearchAfterValues'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -134,12 +130,11 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'timeRange' => 'getTimeRange',
-        'filtering' => 'getFiltering',
-        'page' => 'getPage',
-        'pageSize' => 'getPageSize',
-        'lastSearchAfterValues' => 'getLastSearchAfterValues'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -202,12 +197,11 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['timeRange'] = isset($data['timeRange']) ? $data['timeRange'] : null;
-        $this->container['filtering'] = isset($data['filtering']) ? $data['filtering'] : null;
-        $this->container['page'] = isset($data['page']) ? $data['page'] : null;
-        $this->container['pageSize'] = isset($data['pageSize']) ? $data['pageSize'] : null;
-        $this->container['lastSearchAfterValues'] = isset($data['lastSearchAfterValues']) ? $data['lastSearchAfterValues'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -235,145 +229,121 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets accountId
+     * Gets code
      *
      * @return int|mixed
      */
-    public function getAccountId()
+    public function getCode()
     {
-        return $this->container['accountId'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets accountId
+     * Sets code
      *
-     * @param int|mixed $accountId accountId
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setCode($code)
     {
-        $this->container['accountId'] = $accountId;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets timeRange
+     * Gets message
      *
-     * @return \TencentAds\Model\TimeRange|mixed
+     * @return string|mixed
      */
-    public function getTimeRange()
+    public function getMessage()
     {
-        return $this->container['timeRange'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets timeRange
+     * Sets message
      *
-     * @param \TencentAds\Model\TimeRange|mixed $timeRange timeRange
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setTimeRange($timeRange)
+    public function setMessage($message)
     {
-        $this->container['timeRange'] = $timeRange;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets filtering
+     * Gets messageCn
      *
-     * @return \TencentAds\Model\FilteringStruct[]|mixed
+     * @return string|mixed
      */
-    public function getFiltering()
+    public function getMessageCn()
     {
-        return $this->container['filtering'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets filtering
+     * Sets messageCn
      *
-     * @param \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering
+     * @param string|mixed $messageCn messageCn
      *
      * @return $this
      */
-    public function setFiltering($filtering)
+    public function setMessageCn($messageCn)
     {
-        $this->container['filtering'] = $filtering;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets page
+     * Gets errors
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\ApiErrorStruct[]|mixed
      */
-    public function getPage()
+    public function getErrors()
     {
-        return $this->container['page'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets page
+     * Sets errors
      *
-     * @param int|mixed $page page
+     * @param \TencentAds\Model\ApiErrorStruct[]|mixed $errors errors
      *
      * @return $this
      */
-    public function setPage($page)
+    public function setErrors($errors)
     {
-        $this->container['page'] = $page;
+        $this->container['errors'] = $errors;
 
         return $this;
     }
 
     /**
-     * Gets pageSize
+     * Gets data
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\LeadsCallRecordsGetResponseData|mixed
      */
-    public function getPageSize()
+    public function getData()
     {
-        return $this->container['pageSize'];
+        return $this->container['data'];
     }
 
     /**
-     * Sets pageSize
+     * Sets data
      *
-     * @param int|mixed $pageSize pageSize
+     * @param \TencentAds\Model\LeadsCallRecordsGetResponseData|mixed $data data
      *
      * @return $this
      */
-    public function setPageSize($pageSize)
+    public function setData($data)
     {
-        $this->container['pageSize'] = $pageSize;
-
-        return $this;
-    }
-
-    /**
-     * Gets lastSearchAfterValues
-     *
-     * @return string[]|mixed
-     */
-    public function getLastSearchAfterValues()
-    {
-        return $this->container['lastSearchAfterValues'];
-    }
-
-    /**
-     * Sets lastSearchAfterValues
-     *
-     * @param string[]|mixed $lastSearchAfterValues lastSearchAfterValues
-     *
-     * @return $this
-     */
-    public function setLastSearchAfterValues($lastSearchAfterValues)
-    {
-        $this->container['lastSearchAfterValues'] = $lastSearchAfterValues;
+        $this->container['data'] = $data;
 
         return $this;
     }

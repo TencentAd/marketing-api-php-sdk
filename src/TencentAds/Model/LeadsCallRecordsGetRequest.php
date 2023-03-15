@@ -1,6 +1,6 @@
 <?php
 /**
- * LeadCluesGetRequest
+ * LeadsCallRecordsGetRequest
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * LeadCluesGetRequest Class Doc Comment
+ * LeadsCallRecordsGetRequest Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class LeadCluesGetRequest implements ModelInterface, ArrayAccess
+class LeadsCallRecordsGetRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'LeadCluesGetRequest';
+    protected static $swaggerModelName = 'LeadsCallRecordsGetRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,11 +58,11 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
-        'timeRange' => '\TencentAds\Model\TimeRange',
-        'filtering' => '\TencentAds\Model\FilteringStruct[]',
-        'page' => 'int',
         'pageSize' => 'int',
-        'lastSearchAfterValues' => 'string[]'
+        'page' => 'int',
+        'startDate' => 'string',
+        'endDate' => 'string',
+        'searchAfter' => 'string'
     ];
 
     /**
@@ -72,11 +72,11 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'accountId' => 'int64',
-        'timeRange' => null,
-        'filtering' => null,
-        'page' => 'int64',
         'pageSize' => 'int64',
-        'lastSearchAfterValues' => null
+        'page' => 'int64',
+        'startDate' => null,
+        'endDate' => null,
+        'searchAfter' => null
     ];
 
     /**
@@ -107,11 +107,11 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'accountId' => 'account_id',
-        'timeRange' => 'time_range',
-        'filtering' => 'filtering',
-        'page' => 'page',
         'pageSize' => 'page_size',
-        'lastSearchAfterValues' => 'last_search_after_values'
+        'page' => 'page',
+        'startDate' => 'start_date',
+        'endDate' => 'end_date',
+        'searchAfter' => 'search_after'
     ];
 
     /**
@@ -121,11 +121,11 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'accountId' => 'setAccountId',
-        'timeRange' => 'setTimeRange',
-        'filtering' => 'setFiltering',
-        'page' => 'setPage',
         'pageSize' => 'setPageSize',
-        'lastSearchAfterValues' => 'setLastSearchAfterValues'
+        'page' => 'setPage',
+        'startDate' => 'setStartDate',
+        'endDate' => 'setEndDate',
+        'searchAfter' => 'setSearchAfter'
     ];
 
     /**
@@ -135,11 +135,11 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'accountId' => 'getAccountId',
-        'timeRange' => 'getTimeRange',
-        'filtering' => 'getFiltering',
-        'page' => 'getPage',
         'pageSize' => 'getPageSize',
-        'lastSearchAfterValues' => 'getLastSearchAfterValues'
+        'page' => 'getPage',
+        'startDate' => 'getStartDate',
+        'endDate' => 'getEndDate',
+        'searchAfter' => 'getSearchAfter'
     ];
 
     /**
@@ -203,11 +203,11 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['timeRange'] = isset($data['timeRange']) ? $data['timeRange'] : null;
-        $this->container['filtering'] = isset($data['filtering']) ? $data['filtering'] : null;
-        $this->container['page'] = isset($data['page']) ? $data['page'] : null;
         $this->container['pageSize'] = isset($data['pageSize']) ? $data['pageSize'] : null;
-        $this->container['lastSearchAfterValues'] = isset($data['lastSearchAfterValues']) ? $data['lastSearchAfterValues'] : null;
+        $this->container['page'] = isset($data['page']) ? $data['page'] : null;
+        $this->container['startDate'] = isset($data['startDate']) ? $data['startDate'] : null;
+        $this->container['endDate'] = isset($data['endDate']) ? $data['endDate'] : null;
+        $this->container['searchAfter'] = isset($data['searchAfter']) ? $data['searchAfter'] : null;
     }
 
     /**
@@ -259,49 +259,25 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets timeRange
+     * Gets pageSize
      *
-     * @return \TencentAds\Model\TimeRange|mixed
+     * @return int|mixed
      */
-    public function getTimeRange()
+    public function getPageSize()
     {
-        return $this->container['timeRange'];
+        return $this->container['pageSize'];
     }
 
     /**
-     * Sets timeRange
+     * Sets pageSize
      *
-     * @param \TencentAds\Model\TimeRange|mixed $timeRange timeRange
+     * @param int|mixed $pageSize pageSize
      *
      * @return $this
      */
-    public function setTimeRange($timeRange)
+    public function setPageSize($pageSize)
     {
-        $this->container['timeRange'] = $timeRange;
-
-        return $this;
-    }
-
-    /**
-     * Gets filtering
-     *
-     * @return \TencentAds\Model\FilteringStruct[]|mixed
-     */
-    public function getFiltering()
-    {
-        return $this->container['filtering'];
-    }
-
-    /**
-     * Sets filtering
-     *
-     * @param \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering
-     *
-     * @return $this
-     */
-    public function setFiltering($filtering)
-    {
-        $this->container['filtering'] = $filtering;
+        $this->container['pageSize'] = $pageSize;
 
         return $this;
     }
@@ -331,49 +307,73 @@ class LeadCluesGetRequest implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets pageSize
+     * Gets startDate
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getPageSize()
+    public function getStartDate()
     {
-        return $this->container['pageSize'];
+        return $this->container['startDate'];
     }
 
     /**
-     * Sets pageSize
+     * Sets startDate
      *
-     * @param int|mixed $pageSize pageSize
+     * @param string|mixed $startDate startDate
      *
      * @return $this
      */
-    public function setPageSize($pageSize)
+    public function setStartDate($startDate)
     {
-        $this->container['pageSize'] = $pageSize;
+        $this->container['startDate'] = $startDate;
 
         return $this;
     }
 
     /**
-     * Gets lastSearchAfterValues
+     * Gets endDate
      *
-     * @return string[]|mixed
+     * @return string|mixed
      */
-    public function getLastSearchAfterValues()
+    public function getEndDate()
     {
-        return $this->container['lastSearchAfterValues'];
+        return $this->container['endDate'];
     }
 
     /**
-     * Sets lastSearchAfterValues
+     * Sets endDate
      *
-     * @param string[]|mixed $lastSearchAfterValues lastSearchAfterValues
+     * @param string|mixed $endDate endDate
      *
      * @return $this
      */
-    public function setLastSearchAfterValues($lastSearchAfterValues)
+    public function setEndDate($endDate)
     {
-        $this->container['lastSearchAfterValues'] = $lastSearchAfterValues;
+        $this->container['endDate'] = $endDate;
+
+        return $this;
+    }
+
+    /**
+     * Gets searchAfter
+     *
+     * @return string|mixed
+     */
+    public function getSearchAfter()
+    {
+        return $this->container['searchAfter'];
+    }
+
+    /**
+     * Sets searchAfter
+     *
+     * @param string|mixed $searchAfter searchAfter
+     *
+     * @return $this
+     */
+    public function setSearchAfter($searchAfter)
+    {
+        $this->container['searchAfter'] = $searchAfter;
 
         return $this;
     }

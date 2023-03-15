@@ -58,7 +58,10 @@ class WechatEcosystemAccounts implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'wxpayMerchantId' => 'int[]'
+        'wxpayMerchantId' => 'int[]',
+        'wechatOfficialAccountId' => 'string',
+        'wechatMiniProgramId' => 'string',
+        'wechatChannelsId' => 'string'
     ];
 
     /**
@@ -67,7 +70,10 @@ class WechatEcosystemAccounts implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'wxpayMerchantId' => 'int64'
+        'wxpayMerchantId' => 'int64',
+        'wechatOfficialAccountId' => null,
+        'wechatMiniProgramId' => null,
+        'wechatChannelsId' => null
     ];
 
     /**
@@ -97,7 +103,10 @@ class WechatEcosystemAccounts implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'wxpayMerchantId' => 'wxpay_merchant_id'
+        'wxpayMerchantId' => 'wxpay_merchant_id',
+        'wechatOfficialAccountId' => 'wechat_official_account_id',
+        'wechatMiniProgramId' => 'wechat_mini_program_id',
+        'wechatChannelsId' => 'wechat_channels_id'
     ];
 
     /**
@@ -106,7 +115,10 @@ class WechatEcosystemAccounts implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'wxpayMerchantId' => 'setWxpayMerchantId'
+        'wxpayMerchantId' => 'setWxpayMerchantId',
+        'wechatOfficialAccountId' => 'setWechatOfficialAccountId',
+        'wechatMiniProgramId' => 'setWechatMiniProgramId',
+        'wechatChannelsId' => 'setWechatChannelsId'
     ];
 
     /**
@@ -115,7 +127,10 @@ class WechatEcosystemAccounts implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'wxpayMerchantId' => 'getWxpayMerchantId'
+        'wxpayMerchantId' => 'getWxpayMerchantId',
+        'wechatOfficialAccountId' => 'getWechatOfficialAccountId',
+        'wechatMiniProgramId' => 'getWechatMiniProgramId',
+        'wechatChannelsId' => 'getWechatChannelsId'
     ];
 
     /**
@@ -179,6 +194,9 @@ class WechatEcosystemAccounts implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['wxpayMerchantId'] = isset($data['wxpayMerchantId']) ? $data['wxpayMerchantId'] : null;
+        $this->container['wechatOfficialAccountId'] = isset($data['wechatOfficialAccountId']) ? $data['wechatOfficialAccountId'] : null;
+        $this->container['wechatMiniProgramId'] = isset($data['wechatMiniProgramId']) ? $data['wechatMiniProgramId'] : null;
+        $this->container['wechatChannelsId'] = isset($data['wechatChannelsId']) ? $data['wechatChannelsId'] : null;
     }
 
     /**
@@ -225,6 +243,78 @@ class WechatEcosystemAccounts implements ModelInterface, ArrayAccess
     public function setWxpayMerchantId($wxpayMerchantId)
     {
         $this->container['wxpayMerchantId'] = $wxpayMerchantId;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatOfficialAccountId
+     *
+     * @return string|mixed
+     */
+    public function getWechatOfficialAccountId()
+    {
+        return $this->container['wechatOfficialAccountId'];
+    }
+
+    /**
+     * Sets wechatOfficialAccountId
+     *
+     * @param string|mixed $wechatOfficialAccountId wechatOfficialAccountId
+     *
+     * @return $this
+     */
+    public function setWechatOfficialAccountId($wechatOfficialAccountId)
+    {
+        $this->container['wechatOfficialAccountId'] = $wechatOfficialAccountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatMiniProgramId
+     *
+     * @return string|mixed
+     */
+    public function getWechatMiniProgramId()
+    {
+        return $this->container['wechatMiniProgramId'];
+    }
+
+    /**
+     * Sets wechatMiniProgramId
+     *
+     * @param string|mixed $wechatMiniProgramId wechatMiniProgramId
+     *
+     * @return $this
+     */
+    public function setWechatMiniProgramId($wechatMiniProgramId)
+    {
+        $this->container['wechatMiniProgramId'] = $wechatMiniProgramId;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsId
+     *
+     * @return string|mixed
+     */
+    public function getWechatChannelsId()
+    {
+        return $this->container['wechatChannelsId'];
+    }
+
+    /**
+     * Sets wechatChannelsId
+     *
+     * @param string|mixed $wechatChannelsId wechatChannelsId
+     *
+     * @return $this
+     */
+    public function setWechatChannelsId($wechatChannelsId)
+    {
+        $this->container['wechatChannelsId'] = $wechatChannelsId;
 
         return $this;
     }

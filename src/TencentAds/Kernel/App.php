@@ -91,6 +91,7 @@ use TencentAds\Container\LabelAudiencesApiContainer;
 use TencentAds\Container\LabelsApiContainer;
 use TencentAds\Container\LeadCluesApiContainer;
 use TencentAds\Container\LeadsCallRecordApiContainer;
+use TencentAds\Container\LeadsCallRecordsApiContainer;
 use TencentAds\Container\LeadsCallVirtualNumberApiContainer;
 use TencentAds\Container\LeadsFormApiContainer;
 use TencentAds\Container\LeadsFormListApiContainer;
@@ -456,6 +457,9 @@ class App
 
     /** @var LeadsCallRecordApiContainer */
     public $leadsCallRecordApiContainer;
+
+    /** @var LeadsCallRecordsApiContainer */
+    public $leadsCallRecordsApiContainer;
 
     /** @var LeadsCallVirtualNumberApiContainer */
     public $leadsCallVirtualNumberApiContainer;
@@ -1992,6 +1996,20 @@ class App
             $this->leadsCallRecordApiContainer = $container;
         }
         return $this->leadsCallRecordApiContainer;
+    }
+
+
+    /**
+     * @return LeadsCallRecordsApiContainer
+     */
+    public function leadsCallRecords()
+    {
+        if (empty($this->leadsCallRecordsApiContainer)) {
+            $container = new LeadsCallRecordsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->leadsCallRecordsApiContainer = $container;
+        }
+        return $this->leadsCallRecordsApiContainer;
     }
 
 
