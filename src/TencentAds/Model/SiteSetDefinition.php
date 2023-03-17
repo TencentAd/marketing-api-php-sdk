@@ -94,6 +94,7 @@ class SiteSetDefinition
     const SITE_SET_BROWSER_MOBILE = 'SITE_SET_BROWSER_MOBILE';
     const SITE_SET_SEARCH_SCENE = 'SITE_SET_SEARCH_SCENE';
     const SITE_SET_BROWSER_PC = 'SITE_SET_BROWSER_PC';
+    const SITE_SET_CHANNELS_CONTENT_PROMOTION = 'SITE_SET_CHANNELS_CONTENT_PROMOTION';
     const SITESET_WECHAT_PLUGIN = 'SITESET_WECHAT_PLUGIN';
     
     /**
@@ -153,6 +154,7 @@ class SiteSetDefinition
             self::SITE_SET_BROWSER_MOBILE,
             self::SITE_SET_SEARCH_SCENE,
             self::SITE_SET_BROWSER_PC,
+            self::SITE_SET_CHANNELS_CONTENT_PROMOTION,
             self::SITESET_WECHAT_PLUGIN,
         ];
     }

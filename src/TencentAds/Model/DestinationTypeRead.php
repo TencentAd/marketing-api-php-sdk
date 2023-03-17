@@ -77,9 +77,9 @@ class DestinationTypeRead
     const WECHAT_VIDEO_TOPIC = 'PAGE_TYPE_WECHAT_VIDEO_TOPIC';
     const ARTICAL_WECHAT = 'PAGE_TYPE_ARTICAL_WECHAT';
     const CHANNELS_HALF_CARD = 'PAGE_TYPE_CHANNELS_HALF_CARD';
-    const TSA_OTT = 'PAGE_TYPE_TSA_OTT';
     const APP_DEEP_LINK = 'PAGE_TYPE_APP_DEEP_LINK';
     const UNIVERSAL_LINK = 'PAGE_TYPE_UNIVERSAL_LINK';
+    const TSA_OTT = 'PAGE_TYPE_TSA_OTT';
     const NOT_USED = 'PAGE_TYPE_NOT_USED';
     
     /**
@@ -122,9 +122,9 @@ class DestinationTypeRead
             self::WECHAT_VIDEO_TOPIC,
             self::ARTICAL_WECHAT,
             self::CHANNELS_HALF_CARD,
-            self::TSA_OTT,
             self::APP_DEEP_LINK,
             self::UNIVERSAL_LINK,
+            self::TSA_OTT,
             self::NOT_USED,
         ];
     }

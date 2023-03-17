@@ -1,6 +1,6 @@
 <?php
 /**
- * CampaignType
+ * BidScene
  *
  * PHP version 5
  *
@@ -31,29 +31,23 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CampaignType Class Doc Comment
+ * BidScene Class Doc Comment
  *
  * @category Class
- * @description 推广计划类型
+ * @description 出价场景，该能力与出价类型(smart_bid_type)/出价策略(bid_strategy)互斥使用
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CampaignType
+class BidScene
 {
     /**
      * Possible values of this enum
      */
-    const SEARCH = 'CAMPAIGN_TYPE_SEARCH';
-    const NORMAL = 'CAMPAIGN_TYPE_NORMAL';
-    const CONTRACT = 'CAMPAIGN_TYPE_CONTRACT';
-    const WECHAT_OFFICIAL_ACCOUNTS = 'CAMPAIGN_TYPE_WECHAT_OFFICIAL_ACCOUNTS';
-    const WECHAT_MOMENTS = 'CAMPAIGN_TYPE_WECHAT_MOMENTS';
-    const UNSUPPORTED = 'CAMPAIGN_TYPE_UNSUPPORTED';
-    const REWARDQUEST = 'CAMPAIGN_TYPE_REWARDQUEST';
-    const OVERSEAS = 'CAMPAIGN_TYPE_OVERSEAS';
-    const FREETRADE = 'CAMPAIGN_TYPE_FREETRADE';
-    const CONTENT_PROMOTION = 'CAMPAIGN_TYPE_CONTENT_PROMOTION';
+    const UNKNOWN = 'BID_SCENE_UNKNOWN';
+    const NORMAL_AVERAGE = 'BID_SCENE_NORMAL_AVERAGE';
+    const NORMAL_TARGET = 'BID_SCENE_NORMAL_TARGET';
+    const NORMAL_MAX = 'BID_SCENE_NORMAL_MAX';
     
     /**
      * Gets allowable values of the enum
@@ -62,16 +56,10 @@ class CampaignType
     public static function getAllowableEnumValues()
     {
         return [
-            self::SEARCH,
-            self::NORMAL,
-            self::CONTRACT,
-            self::WECHAT_OFFICIAL_ACCOUNTS,
-            self::WECHAT_MOMENTS,
-            self::UNSUPPORTED,
-            self::REWARDQUEST,
-            self::OVERSEAS,
-            self::FREETRADE,
-            self::CONTENT_PROMOTION,
+            self::UNKNOWN,
+            self::NORMAL_AVERAGE,
+            self::NORMAL_TARGET,
+            self::NORMAL_MAX,
         ];
     }
 }

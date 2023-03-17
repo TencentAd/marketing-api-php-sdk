@@ -61,6 +61,7 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
         'dailyBudget' => 'int',
         'systemIndustryId' => 'int',
         'corporationName' => 'string',
+        'corporationLicence' => 'string',
         'certificationImageId' => 'string',
         'corporateImageName' => 'string',
         'individualQualification' => '\TencentAds\Model\IndividualQualification',
@@ -82,6 +83,7 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
         'dailyBudget' => 'int64',
         'systemIndustryId' => 'int64',
         'corporationName' => null,
+        'corporationLicence' => null,
         'certificationImageId' => null,
         'corporateImageName' => null,
         'individualQualification' => null,
@@ -124,6 +126,7 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
         'dailyBudget' => 'daily_budget',
         'systemIndustryId' => 'system_industry_id',
         'corporationName' => 'corporation_name',
+        'corporationLicence' => 'corporation_licence',
         'certificationImageId' => 'certification_image_id',
         'corporateImageName' => 'corporate_image_name',
         'individualQualification' => 'individual_qualification',
@@ -145,6 +148,7 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
         'dailyBudget' => 'setDailyBudget',
         'systemIndustryId' => 'setSystemIndustryId',
         'corporationName' => 'setCorporationName',
+        'corporationLicence' => 'setCorporationLicence',
         'certificationImageId' => 'setCertificationImageId',
         'corporateImageName' => 'setCorporateImageName',
         'individualQualification' => 'setIndividualQualification',
@@ -166,6 +170,7 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
         'dailyBudget' => 'getDailyBudget',
         'systemIndustryId' => 'getSystemIndustryId',
         'corporationName' => 'getCorporationName',
+        'corporationLicence' => 'getCorporationLicence',
         'certificationImageId' => 'getCertificationImageId',
         'corporateImageName' => 'getCorporateImageName',
         'individualQualification' => 'getIndividualQualification',
@@ -241,6 +246,7 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['dailyBudget'] = isset($data['dailyBudget']) ? $data['dailyBudget'] : null;
         $this->container['systemIndustryId'] = isset($data['systemIndustryId']) ? $data['systemIndustryId'] : null;
         $this->container['corporationName'] = isset($data['corporationName']) ? $data['corporationName'] : null;
+        $this->container['corporationLicence'] = isset($data['corporationLicence']) ? $data['corporationLicence'] : null;
         $this->container['certificationImageId'] = isset($data['certificationImageId']) ? $data['certificationImageId'] : null;
         $this->container['corporateImageName'] = isset($data['corporateImageName']) ? $data['corporateImageName'] : null;
         $this->container['individualQualification'] = isset($data['individualQualification']) ? $data['individualQualification'] : null;
@@ -368,6 +374,30 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     public function setCorporationName($corporationName)
     {
         $this->container['corporationName'] = $corporationName;
+
+        return $this;
+    }
+
+    /**
+     * Gets corporationLicence
+     *
+     * @return string|mixed
+     */
+    public function getCorporationLicence()
+    {
+        return $this->container['corporationLicence'];
+    }
+
+    /**
+     * Sets corporationLicence
+     *
+     * @param string|mixed $corporationLicence corporationLicence
+     *
+     * @return $this
+     */
+    public function setCorporationLicence($corporationLicence)
+    {
+        $this->container['corporationLicence'] = $corporationLicence;
 
         return $this;
     }

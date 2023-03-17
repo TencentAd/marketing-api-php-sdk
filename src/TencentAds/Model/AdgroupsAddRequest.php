@@ -109,6 +109,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'autoDerivedLandingPageSwitch' => 'bool',
         'searchExpansionSwitch' => '\TencentAds\Model\SearchExpansionSwitch',
         'searchExpandTargetingSwitch' => '\TencentAds\Model\SearchExpandTargetingSwitch',
+        'bidScene' => '\TencentAds\Model\BidScene',
         'accountId' => 'int'
     ];
 
@@ -170,6 +171,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'autoDerivedLandingPageSwitch' => null,
         'searchExpansionSwitch' => null,
         'searchExpandTargetingSwitch' => null,
+        'bidScene' => null,
         'accountId' => 'int64'
     ];
 
@@ -252,6 +254,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'autoDerivedLandingPageSwitch' => 'auto_derived_landing_page_switch',
         'searchExpansionSwitch' => 'search_expansion_switch',
         'searchExpandTargetingSwitch' => 'search_expand_targeting_switch',
+        'bidScene' => 'bid_scene',
         'accountId' => 'account_id'
     ];
 
@@ -313,6 +316,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'autoDerivedLandingPageSwitch' => 'setAutoDerivedLandingPageSwitch',
         'searchExpansionSwitch' => 'setSearchExpansionSwitch',
         'searchExpandTargetingSwitch' => 'setSearchExpandTargetingSwitch',
+        'bidScene' => 'setBidScene',
         'accountId' => 'setAccountId'
     ];
 
@@ -374,6 +378,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'autoDerivedLandingPageSwitch' => 'getAutoDerivedLandingPageSwitch',
         'searchExpansionSwitch' => 'getSearchExpansionSwitch',
         'searchExpandTargetingSwitch' => 'getSearchExpandTargetingSwitch',
+        'bidScene' => 'getBidScene',
         'accountId' => 'getAccountId'
     ];
 
@@ -489,6 +494,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['autoDerivedLandingPageSwitch'] = isset($data['autoDerivedLandingPageSwitch']) ? $data['autoDerivedLandingPageSwitch'] : null;
         $this->container['searchExpansionSwitch'] = isset($data['searchExpansionSwitch']) ? $data['searchExpansionSwitch'] : null;
         $this->container['searchExpandTargetingSwitch'] = isset($data['searchExpandTargetingSwitch']) ? $data['searchExpandTargetingSwitch'] : null;
+        $this->container['bidScene'] = isset($data['bidScene']) ? $data['bidScene'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1760,6 +1766,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setSearchExpandTargetingSwitch($searchExpandTargetingSwitch)
     {
         $this->container['searchExpandTargetingSwitch'] = $searchExpandTargetingSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets bidScene
+     *
+     * @return \TencentAds\Model\BidScene|mixed
+     */
+    public function getBidScene()
+    {
+        return $this->container['bidScene'];
+    }
+
+    /**
+     * Sets bidScene
+     *
+     * @param \TencentAds\Model\BidScene|mixed $bidScene bidScene
+     *
+     * @return $this
+     */
+    public function setBidScene($bidScene)
+    {
+        $this->container['bidScene'] = $bidScene;
 
         return $this;
     }

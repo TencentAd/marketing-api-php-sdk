@@ -127,7 +127,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoDerivedLandingPageSwitch' => 'bool',
         'searchExpansionSwitch' => '\TencentAds\Model\SearchExpansionSwitch',
         'searchExpandTargetingSwitch' => '\TencentAds\Model\SearchExpandTargetingSwitch',
-        'autoAcquisitionStatus' => '\TencentAds\Model\AutoAcquisitionStatus'
+        'autoAcquisitionStatus' => '\TencentAds\Model\AutoAcquisitionStatus',
+        'bidScene' => '\TencentAds\Model\BidScene'
     ];
 
     /**
@@ -205,7 +206,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoDerivedLandingPageSwitch' => null,
         'searchExpansionSwitch' => null,
         'searchExpandTargetingSwitch' => null,
-        'autoAcquisitionStatus' => null
+        'autoAcquisitionStatus' => null,
+        'bidScene' => null
     ];
 
     /**
@@ -304,7 +306,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoDerivedLandingPageSwitch' => 'auto_derived_landing_page_switch',
         'searchExpansionSwitch' => 'search_expansion_switch',
         'searchExpandTargetingSwitch' => 'search_expand_targeting_switch',
-        'autoAcquisitionStatus' => 'auto_acquisition_status'
+        'autoAcquisitionStatus' => 'auto_acquisition_status',
+        'bidScene' => 'bid_scene'
     ];
 
     /**
@@ -382,7 +385,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoDerivedLandingPageSwitch' => 'setAutoDerivedLandingPageSwitch',
         'searchExpansionSwitch' => 'setSearchExpansionSwitch',
         'searchExpandTargetingSwitch' => 'setSearchExpandTargetingSwitch',
-        'autoAcquisitionStatus' => 'setAutoAcquisitionStatus'
+        'autoAcquisitionStatus' => 'setAutoAcquisitionStatus',
+        'bidScene' => 'setBidScene'
     ];
 
     /**
@@ -460,7 +464,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoDerivedLandingPageSwitch' => 'getAutoDerivedLandingPageSwitch',
         'searchExpansionSwitch' => 'getSearchExpansionSwitch',
         'searchExpandTargetingSwitch' => 'getSearchExpandTargetingSwitch',
-        'autoAcquisitionStatus' => 'getAutoAcquisitionStatus'
+        'autoAcquisitionStatus' => 'getAutoAcquisitionStatus',
+        'bidScene' => 'getBidScene'
     ];
 
     /**
@@ -593,6 +598,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['searchExpansionSwitch'] = isset($data['searchExpansionSwitch']) ? $data['searchExpansionSwitch'] : null;
         $this->container['searchExpandTargetingSwitch'] = isset($data['searchExpandTargetingSwitch']) ? $data['searchExpandTargetingSwitch'] : null;
         $this->container['autoAcquisitionStatus'] = isset($data['autoAcquisitionStatus']) ? $data['autoAcquisitionStatus'] : null;
+        $this->container['bidScene'] = isset($data['bidScene']) ? $data['bidScene'] : null;
     }
 
     /**
@@ -2295,6 +2301,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setAutoAcquisitionStatus($autoAcquisitionStatus)
     {
         $this->container['autoAcquisitionStatus'] = $autoAcquisitionStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets bidScene
+     *
+     * @return \TencentAds\Model\BidScene|mixed
+     */
+    public function getBidScene()
+    {
+        return $this->container['bidScene'];
+    }
+
+    /**
+     * Sets bidScene
+     *
+     * @param \TencentAds\Model\BidScene|mixed $bidScene bidScene
+     *
+     * @return $this
+     */
+    public function setBidScene($bidScene)
+    {
+        $this->container['bidScene'] = $bidScene;
 
         return $this;
     }

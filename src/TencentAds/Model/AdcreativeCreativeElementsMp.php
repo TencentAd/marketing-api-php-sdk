@@ -113,7 +113,8 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'buttonTextJumpInfo' => '\TencentAds\Model\LandingPageStructure',
         'originVideo' => 'string',
         'redEnvelopeStruct' => '\TencentAds\Model\RedEnvelopeStruct',
-        'wxgamePlayablePageSpec' => '\TencentAds\Model\WxgamePlayablePageSpec'
+        'wxgamePlayablePageSpec' => '\TencentAds\Model\WxgamePlayablePageSpec',
+        'mainJumpInfo' => '\TencentAds\Model\LandingPageStructure[]'
     ];
 
     /**
@@ -177,7 +178,8 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'buttonTextJumpInfo' => null,
         'originVideo' => null,
         'redEnvelopeStruct' => null,
-        'wxgamePlayablePageSpec' => null
+        'wxgamePlayablePageSpec' => null,
+        'mainJumpInfo' => null
     ];
 
     /**
@@ -262,7 +264,8 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'buttonTextJumpInfo' => 'button_text_jump_info',
         'originVideo' => 'origin_video',
         'redEnvelopeStruct' => 'red_envelope_struct',
-        'wxgamePlayablePageSpec' => 'wxgame_playable_page_spec'
+        'wxgamePlayablePageSpec' => 'wxgame_playable_page_spec',
+        'mainJumpInfo' => 'main_jump_info'
     ];
 
     /**
@@ -326,7 +329,8 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'buttonTextJumpInfo' => 'setButtonTextJumpInfo',
         'originVideo' => 'setOriginVideo',
         'redEnvelopeStruct' => 'setRedEnvelopeStruct',
-        'wxgamePlayablePageSpec' => 'setWxgamePlayablePageSpec'
+        'wxgamePlayablePageSpec' => 'setWxgamePlayablePageSpec',
+        'mainJumpInfo' => 'setMainJumpInfo'
     ];
 
     /**
@@ -390,7 +394,8 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'buttonTextJumpInfo' => 'getButtonTextJumpInfo',
         'originVideo' => 'getOriginVideo',
         'redEnvelopeStruct' => 'getRedEnvelopeStruct',
-        'wxgamePlayablePageSpec' => 'getWxgamePlayablePageSpec'
+        'wxgamePlayablePageSpec' => 'getWxgamePlayablePageSpec',
+        'mainJumpInfo' => 'getMainJumpInfo'
     ];
 
     /**
@@ -509,6 +514,7 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         $this->container['originVideo'] = isset($data['originVideo']) ? $data['originVideo'] : null;
         $this->container['redEnvelopeStruct'] = isset($data['redEnvelopeStruct']) ? $data['redEnvelopeStruct'] : null;
         $this->container['wxgamePlayablePageSpec'] = isset($data['wxgamePlayablePageSpec']) ? $data['wxgamePlayablePageSpec'] : null;
+        $this->container['mainJumpInfo'] = isset($data['mainJumpInfo']) ? $data['mainJumpInfo'] : null;
     }
 
     /**
@@ -1875,6 +1881,30 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
     public function setWxgamePlayablePageSpec($wxgamePlayablePageSpec)
     {
         $this->container['wxgamePlayablePageSpec'] = $wxgamePlayablePageSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets mainJumpInfo
+     *
+     * @return \TencentAds\Model\LandingPageStructure[]|mixed
+     */
+    public function getMainJumpInfo()
+    {
+        return $this->container['mainJumpInfo'];
+    }
+
+    /**
+     * Sets mainJumpInfo
+     *
+     * @param \TencentAds\Model\LandingPageStructure[]|mixed $mainJumpInfo mainJumpInfo
+     *
+     * @return $this
+     */
+    public function setMainJumpInfo($mainJumpInfo)
+    {
+        $this->container['mainJumpInfo'] = $mainJumpInfo;
 
         return $this;
     }

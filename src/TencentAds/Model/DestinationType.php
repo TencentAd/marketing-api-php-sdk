@@ -86,9 +86,9 @@ class DestinationType
     const WECHAT_RED_PACKET_COVER = 'PAGE_TYPE_WECHAT_RED_PACKET_COVER';
     const WECHAT_VIDEO_TOPIC = 'PAGE_TYPE_WECHAT_VIDEO_TOPIC';
     const CHANNELS_HALF_CARD = 'PAGE_TYPE_CHANNELS_HALF_CARD';
-    const NOT_USED = 'PAGE_TYPE_NOT_USED';
     const APP_DEEP_LINK = 'PAGE_TYPE_APP_DEEP_LINK';
     const UNIVERSAL_LINK = 'PAGE_TYPE_UNIVERSAL_LINK';
+    const NOT_USED = 'PAGE_TYPE_NOT_USED';
     
     /**
      * Gets allowable values of the enum
@@ -139,9 +139,9 @@ class DestinationType
             self::WECHAT_RED_PACKET_COVER,
             self::WECHAT_VIDEO_TOPIC,
             self::CHANNELS_HALF_CARD,
-            self::NOT_USED,
             self::APP_DEEP_LINK,
             self::UNIVERSAL_LINK,
+            self::NOT_USED,
         ];
     }
 }
