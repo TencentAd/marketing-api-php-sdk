@@ -75,7 +75,77 @@ class Total implements ModelInterface, ArrayAccess
         'deepConversionsCount' => 'string',
         'deepConversionsRate' => 'string',
         'deepConversionsCost' => 'string',
-        'thousandDisplayPrice' => 'string'
+        'thousandDisplayPrice' => 'string',
+        'bizFollowCount' => 'string',
+        'bizFollowUv' => 'string',
+        'liveStreamAvgTime' => 'string',
+        'liveStreamExpUv' => 'string',
+        'videoLiveHeartUserCount' => 'string',
+        'videoLiveCommentUserCount' => 'string',
+        'videoLiveShareUserCount' => 'string',
+        'videoLiveClickCommodityUserCount' => 'string',
+        'zoneHeaderClickCount' => 'string',
+        'basicInfoClientCount' => 'string',
+        'accountInfoClickCount' => 'string',
+        'activityInfoClickCount' => 'string',
+        'bizRegUv' => 'string',
+        'bizReservationUv' => 'string',
+        'bizOrderUv' => 'string',
+        'bizPageApplyUv' => 'string',
+        'bizCreditUv' => 'string',
+        'bizWithdrawDepositsUv' => 'string',
+        'bizPreCreditUv' => 'string',
+        'bizRegOrderAmount' => 'string',
+        'bizReservationCount' => 'string',
+        'bizReservationAmount' => 'string',
+        'bizOrderCount' => 'string',
+        'bizOrderAmount' => 'string',
+        'biz1dOrderCount' => 'string',
+        'biz1dOrderAmount' => 'string',
+        'bizPurchaseCount' => 'string',
+        'bizPurchaseAmount' => 'string',
+        'bizConsultCount' => 'string',
+        'bizReadingCount' => 'string',
+        'bizPageApplyCount' => 'string',
+        'bizCreditCount' => 'string',
+        'bizDepositCount' => 'string',
+        'biz1dPurchaseCount' => 'string',
+        'biz1dPurchaseAmount' => 'string',
+        'biz3dPurchaseCount' => 'string',
+        'biz3dPurchaseAmount' => 'string',
+        'biz7dPurchaseCount' => 'string',
+        'biz7dPurchaseAmount' => 'string',
+        'biz15dPurchaseCount' => 'string',
+        'biz15dPurchaseAmount' => 'string',
+        'biz30dPurchaseCount' => 'string',
+        'biz30dPurchaseAmount' => 'string',
+        'bizPreCreditPv' => 'string',
+        'videoFollowCount' => 'string',
+        'videoHeartCount' => 'string',
+        'videoCommentCount' => 'string',
+        'videoLiveSubscribeCount' => 'string',
+        'videoLiveExpCount' => 'string',
+        'videoLiveHeartCount' => 'string',
+        'videoLiveCommentCount' => 'string',
+        'videoLiveShareCount' => 'string',
+        'videoLiveCickCommodityCount' => 'string',
+        'videoLiveCommodityBubbleExpCount' => 'string',
+        'liveStreamCommodityBubbleClkPv' => 'string',
+        'liveStreamCommodityShopBagClkPv' => 'string',
+        'liveStreamCommodityShopListExpPv' => 'string',
+        'liveStreamOrderPv' => 'string',
+        'clkRedpocketBtnGetPv' => 'string',
+        'clkRedpocketBtnSharePv' => 'string',
+        'clkRedpocketBtnJumpPv' => 'string',
+        'clkGoodsHeaderPv' => 'string',
+        'clkGoodsInfoPv' => 'string',
+        'clkGoodsRecommendPv' => 'string',
+        'clkMiddleShowwindowPv' => 'string',
+        'clkFooterPv' => 'string',
+        'clkMiddleGoodsPv' => 'string',
+        'clkMiddleBtnPv' => 'string',
+        'clkMiddleSectionPv' => 'string',
+        'clkMiddleGridviewPv' => 'string'
     ];
 
     /**
@@ -101,7 +171,77 @@ class Total implements ModelInterface, ArrayAccess
         'deepConversionsCount' => null,
         'deepConversionsRate' => null,
         'deepConversionsCost' => null,
-        'thousandDisplayPrice' => null
+        'thousandDisplayPrice' => null,
+        'bizFollowCount' => null,
+        'bizFollowUv' => null,
+        'liveStreamAvgTime' => null,
+        'liveStreamExpUv' => null,
+        'videoLiveHeartUserCount' => null,
+        'videoLiveCommentUserCount' => null,
+        'videoLiveShareUserCount' => null,
+        'videoLiveClickCommodityUserCount' => null,
+        'zoneHeaderClickCount' => null,
+        'basicInfoClientCount' => null,
+        'accountInfoClickCount' => null,
+        'activityInfoClickCount' => null,
+        'bizRegUv' => null,
+        'bizReservationUv' => null,
+        'bizOrderUv' => null,
+        'bizPageApplyUv' => null,
+        'bizCreditUv' => null,
+        'bizWithdrawDepositsUv' => null,
+        'bizPreCreditUv' => null,
+        'bizRegOrderAmount' => null,
+        'bizReservationCount' => null,
+        'bizReservationAmount' => null,
+        'bizOrderCount' => null,
+        'bizOrderAmount' => null,
+        'biz1dOrderCount' => null,
+        'biz1dOrderAmount' => null,
+        'bizPurchaseCount' => null,
+        'bizPurchaseAmount' => null,
+        'bizConsultCount' => null,
+        'bizReadingCount' => null,
+        'bizPageApplyCount' => null,
+        'bizCreditCount' => null,
+        'bizDepositCount' => null,
+        'biz1dPurchaseCount' => null,
+        'biz1dPurchaseAmount' => null,
+        'biz3dPurchaseCount' => null,
+        'biz3dPurchaseAmount' => null,
+        'biz7dPurchaseCount' => null,
+        'biz7dPurchaseAmount' => null,
+        'biz15dPurchaseCount' => null,
+        'biz15dPurchaseAmount' => null,
+        'biz30dPurchaseCount' => null,
+        'biz30dPurchaseAmount' => null,
+        'bizPreCreditPv' => null,
+        'videoFollowCount' => null,
+        'videoHeartCount' => null,
+        'videoCommentCount' => null,
+        'videoLiveSubscribeCount' => null,
+        'videoLiveExpCount' => null,
+        'videoLiveHeartCount' => null,
+        'videoLiveCommentCount' => null,
+        'videoLiveShareCount' => null,
+        'videoLiveCickCommodityCount' => null,
+        'videoLiveCommodityBubbleExpCount' => null,
+        'liveStreamCommodityBubbleClkPv' => null,
+        'liveStreamCommodityShopBagClkPv' => null,
+        'liveStreamCommodityShopListExpPv' => null,
+        'liveStreamOrderPv' => null,
+        'clkRedpocketBtnGetPv' => null,
+        'clkRedpocketBtnSharePv' => null,
+        'clkRedpocketBtnJumpPv' => null,
+        'clkGoodsHeaderPv' => null,
+        'clkGoodsInfoPv' => null,
+        'clkGoodsRecommendPv' => null,
+        'clkMiddleShowwindowPv' => null,
+        'clkFooterPv' => null,
+        'clkMiddleGoodsPv' => null,
+        'clkMiddleBtnPv' => null,
+        'clkMiddleSectionPv' => null,
+        'clkMiddleGridviewPv' => null
     ];
 
     /**
@@ -148,7 +288,77 @@ class Total implements ModelInterface, ArrayAccess
         'deepConversionsCount' => 'deep_conversions_count',
         'deepConversionsRate' => 'deep_conversions_rate',
         'deepConversionsCost' => 'deep_conversions_cost',
-        'thousandDisplayPrice' => 'thousand_display_price'
+        'thousandDisplayPrice' => 'thousand_display_price',
+        'bizFollowCount' => 'biz_follow_count',
+        'bizFollowUv' => 'biz_follow_uv',
+        'liveStreamAvgTime' => 'live_stream_avg_time',
+        'liveStreamExpUv' => 'live_stream_exp_uv',
+        'videoLiveHeartUserCount' => 'video_live_heart_user_count',
+        'videoLiveCommentUserCount' => 'video_live_comment_user_count',
+        'videoLiveShareUserCount' => 'video_live_share_user_count',
+        'videoLiveClickCommodityUserCount' => 'video_live_click_commodity_user_count',
+        'zoneHeaderClickCount' => 'zone_header_click_count',
+        'basicInfoClientCount' => 'basic_info_client_count',
+        'accountInfoClickCount' => 'account_info_click_count',
+        'activityInfoClickCount' => 'activity_info_click_count',
+        'bizRegUv' => 'biz_reg_uv',
+        'bizReservationUv' => 'biz_reservation_uv',
+        'bizOrderUv' => 'biz_order_uv',
+        'bizPageApplyUv' => 'biz_page_apply_uv',
+        'bizCreditUv' => 'biz_credit_uv',
+        'bizWithdrawDepositsUv' => 'biz_withdraw_deposits_uv',
+        'bizPreCreditUv' => 'biz_pre_credit_uv',
+        'bizRegOrderAmount' => 'biz_reg_order_amount',
+        'bizReservationCount' => 'biz_reservation_count',
+        'bizReservationAmount' => 'biz_reservation_amount',
+        'bizOrderCount' => 'biz_order_count',
+        'bizOrderAmount' => 'biz_order_amount',
+        'biz1dOrderCount' => 'biz_1d_order_count',
+        'biz1dOrderAmount' => 'biz_1d_order_amount',
+        'bizPurchaseCount' => 'biz_purchase_count',
+        'bizPurchaseAmount' => 'biz_purchase_amount',
+        'bizConsultCount' => 'biz_consult_count',
+        'bizReadingCount' => 'biz_reading_count',
+        'bizPageApplyCount' => 'biz_page_apply_count',
+        'bizCreditCount' => 'biz_credit_count',
+        'bizDepositCount' => 'biz_deposit_count',
+        'biz1dPurchaseCount' => 'biz_1d_purchase_count',
+        'biz1dPurchaseAmount' => 'biz_1d_purchase_amount',
+        'biz3dPurchaseCount' => 'biz_3d_purchase_count',
+        'biz3dPurchaseAmount' => 'biz_3d_purchase_amount',
+        'biz7dPurchaseCount' => 'biz_7d_purchase_count',
+        'biz7dPurchaseAmount' => 'biz_7d_purchase_amount',
+        'biz15dPurchaseCount' => 'biz_15d_purchase_count',
+        'biz15dPurchaseAmount' => 'biz_15d_purchase_amount',
+        'biz30dPurchaseCount' => 'biz_30d_purchase_count',
+        'biz30dPurchaseAmount' => 'biz_30d_purchase_amount',
+        'bizPreCreditPv' => 'biz_pre_credit_pv',
+        'videoFollowCount' => 'video_follow_count',
+        'videoHeartCount' => 'video_heart_count',
+        'videoCommentCount' => 'video_comment_count',
+        'videoLiveSubscribeCount' => 'video_live_subscribe_count',
+        'videoLiveExpCount' => 'video_live_exp_count',
+        'videoLiveHeartCount' => 'video_live_heart_count',
+        'videoLiveCommentCount' => 'video_live_comment_count',
+        'videoLiveShareCount' => 'video_live_share_count',
+        'videoLiveCickCommodityCount' => 'video_live_cick_commodity_count',
+        'videoLiveCommodityBubbleExpCount' => 'video_live_commodity_bubble_exp_count',
+        'liveStreamCommodityBubbleClkPv' => 'live_stream_commodity_bubble_clk_pv',
+        'liveStreamCommodityShopBagClkPv' => 'live_stream_commodity_shop_bag_clk_pv',
+        'liveStreamCommodityShopListExpPv' => 'live_stream_commodity_shop_list_exp_pv',
+        'liveStreamOrderPv' => 'live_stream_order_pv',
+        'clkRedpocketBtnGetPv' => 'clk_redpocket_btn_get_pv',
+        'clkRedpocketBtnSharePv' => 'clk_redpocket_btn_share_pv',
+        'clkRedpocketBtnJumpPv' => 'clk_redpocket_btn_jump_pv',
+        'clkGoodsHeaderPv' => 'clk_goods_header_pv',
+        'clkGoodsInfoPv' => 'clk_goods_info_pv',
+        'clkGoodsRecommendPv' => 'clk_goods_recommend_pv',
+        'clkMiddleShowwindowPv' => 'clk_middle_showwindow_pv',
+        'clkFooterPv' => 'clk_footer_pv',
+        'clkMiddleGoodsPv' => 'clk_middle_goods_pv',
+        'clkMiddleBtnPv' => 'clk_middle_btn_pv',
+        'clkMiddleSectionPv' => 'clk_middle_section_pv',
+        'clkMiddleGridviewPv' => 'clk_middle_gridview_pv'
     ];
 
     /**
@@ -174,7 +384,77 @@ class Total implements ModelInterface, ArrayAccess
         'deepConversionsCount' => 'setDeepConversionsCount',
         'deepConversionsRate' => 'setDeepConversionsRate',
         'deepConversionsCost' => 'setDeepConversionsCost',
-        'thousandDisplayPrice' => 'setThousandDisplayPrice'
+        'thousandDisplayPrice' => 'setThousandDisplayPrice',
+        'bizFollowCount' => 'setBizFollowCount',
+        'bizFollowUv' => 'setBizFollowUv',
+        'liveStreamAvgTime' => 'setLiveStreamAvgTime',
+        'liveStreamExpUv' => 'setLiveStreamExpUv',
+        'videoLiveHeartUserCount' => 'setVideoLiveHeartUserCount',
+        'videoLiveCommentUserCount' => 'setVideoLiveCommentUserCount',
+        'videoLiveShareUserCount' => 'setVideoLiveShareUserCount',
+        'videoLiveClickCommodityUserCount' => 'setVideoLiveClickCommodityUserCount',
+        'zoneHeaderClickCount' => 'setZoneHeaderClickCount',
+        'basicInfoClientCount' => 'setBasicInfoClientCount',
+        'accountInfoClickCount' => 'setAccountInfoClickCount',
+        'activityInfoClickCount' => 'setActivityInfoClickCount',
+        'bizRegUv' => 'setBizRegUv',
+        'bizReservationUv' => 'setBizReservationUv',
+        'bizOrderUv' => 'setBizOrderUv',
+        'bizPageApplyUv' => 'setBizPageApplyUv',
+        'bizCreditUv' => 'setBizCreditUv',
+        'bizWithdrawDepositsUv' => 'setBizWithdrawDepositsUv',
+        'bizPreCreditUv' => 'setBizPreCreditUv',
+        'bizRegOrderAmount' => 'setBizRegOrderAmount',
+        'bizReservationCount' => 'setBizReservationCount',
+        'bizReservationAmount' => 'setBizReservationAmount',
+        'bizOrderCount' => 'setBizOrderCount',
+        'bizOrderAmount' => 'setBizOrderAmount',
+        'biz1dOrderCount' => 'setBiz1dOrderCount',
+        'biz1dOrderAmount' => 'setBiz1dOrderAmount',
+        'bizPurchaseCount' => 'setBizPurchaseCount',
+        'bizPurchaseAmount' => 'setBizPurchaseAmount',
+        'bizConsultCount' => 'setBizConsultCount',
+        'bizReadingCount' => 'setBizReadingCount',
+        'bizPageApplyCount' => 'setBizPageApplyCount',
+        'bizCreditCount' => 'setBizCreditCount',
+        'bizDepositCount' => 'setBizDepositCount',
+        'biz1dPurchaseCount' => 'setBiz1dPurchaseCount',
+        'biz1dPurchaseAmount' => 'setBiz1dPurchaseAmount',
+        'biz3dPurchaseCount' => 'setBiz3dPurchaseCount',
+        'biz3dPurchaseAmount' => 'setBiz3dPurchaseAmount',
+        'biz7dPurchaseCount' => 'setBiz7dPurchaseCount',
+        'biz7dPurchaseAmount' => 'setBiz7dPurchaseAmount',
+        'biz15dPurchaseCount' => 'setBiz15dPurchaseCount',
+        'biz15dPurchaseAmount' => 'setBiz15dPurchaseAmount',
+        'biz30dPurchaseCount' => 'setBiz30dPurchaseCount',
+        'biz30dPurchaseAmount' => 'setBiz30dPurchaseAmount',
+        'bizPreCreditPv' => 'setBizPreCreditPv',
+        'videoFollowCount' => 'setVideoFollowCount',
+        'videoHeartCount' => 'setVideoHeartCount',
+        'videoCommentCount' => 'setVideoCommentCount',
+        'videoLiveSubscribeCount' => 'setVideoLiveSubscribeCount',
+        'videoLiveExpCount' => 'setVideoLiveExpCount',
+        'videoLiveHeartCount' => 'setVideoLiveHeartCount',
+        'videoLiveCommentCount' => 'setVideoLiveCommentCount',
+        'videoLiveShareCount' => 'setVideoLiveShareCount',
+        'videoLiveCickCommodityCount' => 'setVideoLiveCickCommodityCount',
+        'videoLiveCommodityBubbleExpCount' => 'setVideoLiveCommodityBubbleExpCount',
+        'liveStreamCommodityBubbleClkPv' => 'setLiveStreamCommodityBubbleClkPv',
+        'liveStreamCommodityShopBagClkPv' => 'setLiveStreamCommodityShopBagClkPv',
+        'liveStreamCommodityShopListExpPv' => 'setLiveStreamCommodityShopListExpPv',
+        'liveStreamOrderPv' => 'setLiveStreamOrderPv',
+        'clkRedpocketBtnGetPv' => 'setClkRedpocketBtnGetPv',
+        'clkRedpocketBtnSharePv' => 'setClkRedpocketBtnSharePv',
+        'clkRedpocketBtnJumpPv' => 'setClkRedpocketBtnJumpPv',
+        'clkGoodsHeaderPv' => 'setClkGoodsHeaderPv',
+        'clkGoodsInfoPv' => 'setClkGoodsInfoPv',
+        'clkGoodsRecommendPv' => 'setClkGoodsRecommendPv',
+        'clkMiddleShowwindowPv' => 'setClkMiddleShowwindowPv',
+        'clkFooterPv' => 'setClkFooterPv',
+        'clkMiddleGoodsPv' => 'setClkMiddleGoodsPv',
+        'clkMiddleBtnPv' => 'setClkMiddleBtnPv',
+        'clkMiddleSectionPv' => 'setClkMiddleSectionPv',
+        'clkMiddleGridviewPv' => 'setClkMiddleGridviewPv'
     ];
 
     /**
@@ -200,7 +480,77 @@ class Total implements ModelInterface, ArrayAccess
         'deepConversionsCount' => 'getDeepConversionsCount',
         'deepConversionsRate' => 'getDeepConversionsRate',
         'deepConversionsCost' => 'getDeepConversionsCost',
-        'thousandDisplayPrice' => 'getThousandDisplayPrice'
+        'thousandDisplayPrice' => 'getThousandDisplayPrice',
+        'bizFollowCount' => 'getBizFollowCount',
+        'bizFollowUv' => 'getBizFollowUv',
+        'liveStreamAvgTime' => 'getLiveStreamAvgTime',
+        'liveStreamExpUv' => 'getLiveStreamExpUv',
+        'videoLiveHeartUserCount' => 'getVideoLiveHeartUserCount',
+        'videoLiveCommentUserCount' => 'getVideoLiveCommentUserCount',
+        'videoLiveShareUserCount' => 'getVideoLiveShareUserCount',
+        'videoLiveClickCommodityUserCount' => 'getVideoLiveClickCommodityUserCount',
+        'zoneHeaderClickCount' => 'getZoneHeaderClickCount',
+        'basicInfoClientCount' => 'getBasicInfoClientCount',
+        'accountInfoClickCount' => 'getAccountInfoClickCount',
+        'activityInfoClickCount' => 'getActivityInfoClickCount',
+        'bizRegUv' => 'getBizRegUv',
+        'bizReservationUv' => 'getBizReservationUv',
+        'bizOrderUv' => 'getBizOrderUv',
+        'bizPageApplyUv' => 'getBizPageApplyUv',
+        'bizCreditUv' => 'getBizCreditUv',
+        'bizWithdrawDepositsUv' => 'getBizWithdrawDepositsUv',
+        'bizPreCreditUv' => 'getBizPreCreditUv',
+        'bizRegOrderAmount' => 'getBizRegOrderAmount',
+        'bizReservationCount' => 'getBizReservationCount',
+        'bizReservationAmount' => 'getBizReservationAmount',
+        'bizOrderCount' => 'getBizOrderCount',
+        'bizOrderAmount' => 'getBizOrderAmount',
+        'biz1dOrderCount' => 'getBiz1dOrderCount',
+        'biz1dOrderAmount' => 'getBiz1dOrderAmount',
+        'bizPurchaseCount' => 'getBizPurchaseCount',
+        'bizPurchaseAmount' => 'getBizPurchaseAmount',
+        'bizConsultCount' => 'getBizConsultCount',
+        'bizReadingCount' => 'getBizReadingCount',
+        'bizPageApplyCount' => 'getBizPageApplyCount',
+        'bizCreditCount' => 'getBizCreditCount',
+        'bizDepositCount' => 'getBizDepositCount',
+        'biz1dPurchaseCount' => 'getBiz1dPurchaseCount',
+        'biz1dPurchaseAmount' => 'getBiz1dPurchaseAmount',
+        'biz3dPurchaseCount' => 'getBiz3dPurchaseCount',
+        'biz3dPurchaseAmount' => 'getBiz3dPurchaseAmount',
+        'biz7dPurchaseCount' => 'getBiz7dPurchaseCount',
+        'biz7dPurchaseAmount' => 'getBiz7dPurchaseAmount',
+        'biz15dPurchaseCount' => 'getBiz15dPurchaseCount',
+        'biz15dPurchaseAmount' => 'getBiz15dPurchaseAmount',
+        'biz30dPurchaseCount' => 'getBiz30dPurchaseCount',
+        'biz30dPurchaseAmount' => 'getBiz30dPurchaseAmount',
+        'bizPreCreditPv' => 'getBizPreCreditPv',
+        'videoFollowCount' => 'getVideoFollowCount',
+        'videoHeartCount' => 'getVideoHeartCount',
+        'videoCommentCount' => 'getVideoCommentCount',
+        'videoLiveSubscribeCount' => 'getVideoLiveSubscribeCount',
+        'videoLiveExpCount' => 'getVideoLiveExpCount',
+        'videoLiveHeartCount' => 'getVideoLiveHeartCount',
+        'videoLiveCommentCount' => 'getVideoLiveCommentCount',
+        'videoLiveShareCount' => 'getVideoLiveShareCount',
+        'videoLiveCickCommodityCount' => 'getVideoLiveCickCommodityCount',
+        'videoLiveCommodityBubbleExpCount' => 'getVideoLiveCommodityBubbleExpCount',
+        'liveStreamCommodityBubbleClkPv' => 'getLiveStreamCommodityBubbleClkPv',
+        'liveStreamCommodityShopBagClkPv' => 'getLiveStreamCommodityShopBagClkPv',
+        'liveStreamCommodityShopListExpPv' => 'getLiveStreamCommodityShopListExpPv',
+        'liveStreamOrderPv' => 'getLiveStreamOrderPv',
+        'clkRedpocketBtnGetPv' => 'getClkRedpocketBtnGetPv',
+        'clkRedpocketBtnSharePv' => 'getClkRedpocketBtnSharePv',
+        'clkRedpocketBtnJumpPv' => 'getClkRedpocketBtnJumpPv',
+        'clkGoodsHeaderPv' => 'getClkGoodsHeaderPv',
+        'clkGoodsInfoPv' => 'getClkGoodsInfoPv',
+        'clkGoodsRecommendPv' => 'getClkGoodsRecommendPv',
+        'clkMiddleShowwindowPv' => 'getClkMiddleShowwindowPv',
+        'clkFooterPv' => 'getClkFooterPv',
+        'clkMiddleGoodsPv' => 'getClkMiddleGoodsPv',
+        'clkMiddleBtnPv' => 'getClkMiddleBtnPv',
+        'clkMiddleSectionPv' => 'getClkMiddleSectionPv',
+        'clkMiddleGridviewPv' => 'getClkMiddleGridviewPv'
     ];
 
     /**
@@ -281,6 +631,76 @@ class Total implements ModelInterface, ArrayAccess
         $this->container['deepConversionsRate'] = isset($data['deepConversionsRate']) ? $data['deepConversionsRate'] : null;
         $this->container['deepConversionsCost'] = isset($data['deepConversionsCost']) ? $data['deepConversionsCost'] : null;
         $this->container['thousandDisplayPrice'] = isset($data['thousandDisplayPrice']) ? $data['thousandDisplayPrice'] : null;
+        $this->container['bizFollowCount'] = isset($data['bizFollowCount']) ? $data['bizFollowCount'] : null;
+        $this->container['bizFollowUv'] = isset($data['bizFollowUv']) ? $data['bizFollowUv'] : null;
+        $this->container['liveStreamAvgTime'] = isset($data['liveStreamAvgTime']) ? $data['liveStreamAvgTime'] : null;
+        $this->container['liveStreamExpUv'] = isset($data['liveStreamExpUv']) ? $data['liveStreamExpUv'] : null;
+        $this->container['videoLiveHeartUserCount'] = isset($data['videoLiveHeartUserCount']) ? $data['videoLiveHeartUserCount'] : null;
+        $this->container['videoLiveCommentUserCount'] = isset($data['videoLiveCommentUserCount']) ? $data['videoLiveCommentUserCount'] : null;
+        $this->container['videoLiveShareUserCount'] = isset($data['videoLiveShareUserCount']) ? $data['videoLiveShareUserCount'] : null;
+        $this->container['videoLiveClickCommodityUserCount'] = isset($data['videoLiveClickCommodityUserCount']) ? $data['videoLiveClickCommodityUserCount'] : null;
+        $this->container['zoneHeaderClickCount'] = isset($data['zoneHeaderClickCount']) ? $data['zoneHeaderClickCount'] : null;
+        $this->container['basicInfoClientCount'] = isset($data['basicInfoClientCount']) ? $data['basicInfoClientCount'] : null;
+        $this->container['accountInfoClickCount'] = isset($data['accountInfoClickCount']) ? $data['accountInfoClickCount'] : null;
+        $this->container['activityInfoClickCount'] = isset($data['activityInfoClickCount']) ? $data['activityInfoClickCount'] : null;
+        $this->container['bizRegUv'] = isset($data['bizRegUv']) ? $data['bizRegUv'] : null;
+        $this->container['bizReservationUv'] = isset($data['bizReservationUv']) ? $data['bizReservationUv'] : null;
+        $this->container['bizOrderUv'] = isset($data['bizOrderUv']) ? $data['bizOrderUv'] : null;
+        $this->container['bizPageApplyUv'] = isset($data['bizPageApplyUv']) ? $data['bizPageApplyUv'] : null;
+        $this->container['bizCreditUv'] = isset($data['bizCreditUv']) ? $data['bizCreditUv'] : null;
+        $this->container['bizWithdrawDepositsUv'] = isset($data['bizWithdrawDepositsUv']) ? $data['bizWithdrawDepositsUv'] : null;
+        $this->container['bizPreCreditUv'] = isset($data['bizPreCreditUv']) ? $data['bizPreCreditUv'] : null;
+        $this->container['bizRegOrderAmount'] = isset($data['bizRegOrderAmount']) ? $data['bizRegOrderAmount'] : null;
+        $this->container['bizReservationCount'] = isset($data['bizReservationCount']) ? $data['bizReservationCount'] : null;
+        $this->container['bizReservationAmount'] = isset($data['bizReservationAmount']) ? $data['bizReservationAmount'] : null;
+        $this->container['bizOrderCount'] = isset($data['bizOrderCount']) ? $data['bizOrderCount'] : null;
+        $this->container['bizOrderAmount'] = isset($data['bizOrderAmount']) ? $data['bizOrderAmount'] : null;
+        $this->container['biz1dOrderCount'] = isset($data['biz1dOrderCount']) ? $data['biz1dOrderCount'] : null;
+        $this->container['biz1dOrderAmount'] = isset($data['biz1dOrderAmount']) ? $data['biz1dOrderAmount'] : null;
+        $this->container['bizPurchaseCount'] = isset($data['bizPurchaseCount']) ? $data['bizPurchaseCount'] : null;
+        $this->container['bizPurchaseAmount'] = isset($data['bizPurchaseAmount']) ? $data['bizPurchaseAmount'] : null;
+        $this->container['bizConsultCount'] = isset($data['bizConsultCount']) ? $data['bizConsultCount'] : null;
+        $this->container['bizReadingCount'] = isset($data['bizReadingCount']) ? $data['bizReadingCount'] : null;
+        $this->container['bizPageApplyCount'] = isset($data['bizPageApplyCount']) ? $data['bizPageApplyCount'] : null;
+        $this->container['bizCreditCount'] = isset($data['bizCreditCount']) ? $data['bizCreditCount'] : null;
+        $this->container['bizDepositCount'] = isset($data['bizDepositCount']) ? $data['bizDepositCount'] : null;
+        $this->container['biz1dPurchaseCount'] = isset($data['biz1dPurchaseCount']) ? $data['biz1dPurchaseCount'] : null;
+        $this->container['biz1dPurchaseAmount'] = isset($data['biz1dPurchaseAmount']) ? $data['biz1dPurchaseAmount'] : null;
+        $this->container['biz3dPurchaseCount'] = isset($data['biz3dPurchaseCount']) ? $data['biz3dPurchaseCount'] : null;
+        $this->container['biz3dPurchaseAmount'] = isset($data['biz3dPurchaseAmount']) ? $data['biz3dPurchaseAmount'] : null;
+        $this->container['biz7dPurchaseCount'] = isset($data['biz7dPurchaseCount']) ? $data['biz7dPurchaseCount'] : null;
+        $this->container['biz7dPurchaseAmount'] = isset($data['biz7dPurchaseAmount']) ? $data['biz7dPurchaseAmount'] : null;
+        $this->container['biz15dPurchaseCount'] = isset($data['biz15dPurchaseCount']) ? $data['biz15dPurchaseCount'] : null;
+        $this->container['biz15dPurchaseAmount'] = isset($data['biz15dPurchaseAmount']) ? $data['biz15dPurchaseAmount'] : null;
+        $this->container['biz30dPurchaseCount'] = isset($data['biz30dPurchaseCount']) ? $data['biz30dPurchaseCount'] : null;
+        $this->container['biz30dPurchaseAmount'] = isset($data['biz30dPurchaseAmount']) ? $data['biz30dPurchaseAmount'] : null;
+        $this->container['bizPreCreditPv'] = isset($data['bizPreCreditPv']) ? $data['bizPreCreditPv'] : null;
+        $this->container['videoFollowCount'] = isset($data['videoFollowCount']) ? $data['videoFollowCount'] : null;
+        $this->container['videoHeartCount'] = isset($data['videoHeartCount']) ? $data['videoHeartCount'] : null;
+        $this->container['videoCommentCount'] = isset($data['videoCommentCount']) ? $data['videoCommentCount'] : null;
+        $this->container['videoLiveSubscribeCount'] = isset($data['videoLiveSubscribeCount']) ? $data['videoLiveSubscribeCount'] : null;
+        $this->container['videoLiveExpCount'] = isset($data['videoLiveExpCount']) ? $data['videoLiveExpCount'] : null;
+        $this->container['videoLiveHeartCount'] = isset($data['videoLiveHeartCount']) ? $data['videoLiveHeartCount'] : null;
+        $this->container['videoLiveCommentCount'] = isset($data['videoLiveCommentCount']) ? $data['videoLiveCommentCount'] : null;
+        $this->container['videoLiveShareCount'] = isset($data['videoLiveShareCount']) ? $data['videoLiveShareCount'] : null;
+        $this->container['videoLiveCickCommodityCount'] = isset($data['videoLiveCickCommodityCount']) ? $data['videoLiveCickCommodityCount'] : null;
+        $this->container['videoLiveCommodityBubbleExpCount'] = isset($data['videoLiveCommodityBubbleExpCount']) ? $data['videoLiveCommodityBubbleExpCount'] : null;
+        $this->container['liveStreamCommodityBubbleClkPv'] = isset($data['liveStreamCommodityBubbleClkPv']) ? $data['liveStreamCommodityBubbleClkPv'] : null;
+        $this->container['liveStreamCommodityShopBagClkPv'] = isset($data['liveStreamCommodityShopBagClkPv']) ? $data['liveStreamCommodityShopBagClkPv'] : null;
+        $this->container['liveStreamCommodityShopListExpPv'] = isset($data['liveStreamCommodityShopListExpPv']) ? $data['liveStreamCommodityShopListExpPv'] : null;
+        $this->container['liveStreamOrderPv'] = isset($data['liveStreamOrderPv']) ? $data['liveStreamOrderPv'] : null;
+        $this->container['clkRedpocketBtnGetPv'] = isset($data['clkRedpocketBtnGetPv']) ? $data['clkRedpocketBtnGetPv'] : null;
+        $this->container['clkRedpocketBtnSharePv'] = isset($data['clkRedpocketBtnSharePv']) ? $data['clkRedpocketBtnSharePv'] : null;
+        $this->container['clkRedpocketBtnJumpPv'] = isset($data['clkRedpocketBtnJumpPv']) ? $data['clkRedpocketBtnJumpPv'] : null;
+        $this->container['clkGoodsHeaderPv'] = isset($data['clkGoodsHeaderPv']) ? $data['clkGoodsHeaderPv'] : null;
+        $this->container['clkGoodsInfoPv'] = isset($data['clkGoodsInfoPv']) ? $data['clkGoodsInfoPv'] : null;
+        $this->container['clkGoodsRecommendPv'] = isset($data['clkGoodsRecommendPv']) ? $data['clkGoodsRecommendPv'] : null;
+        $this->container['clkMiddleShowwindowPv'] = isset($data['clkMiddleShowwindowPv']) ? $data['clkMiddleShowwindowPv'] : null;
+        $this->container['clkFooterPv'] = isset($data['clkFooterPv']) ? $data['clkFooterPv'] : null;
+        $this->container['clkMiddleGoodsPv'] = isset($data['clkMiddleGoodsPv']) ? $data['clkMiddleGoodsPv'] : null;
+        $this->container['clkMiddleBtnPv'] = isset($data['clkMiddleBtnPv']) ? $data['clkMiddleBtnPv'] : null;
+        $this->container['clkMiddleSectionPv'] = isset($data['clkMiddleSectionPv']) ? $data['clkMiddleSectionPv'] : null;
+        $this->container['clkMiddleGridviewPv'] = isset($data['clkMiddleGridviewPv']) ? $data['clkMiddleGridviewPv'] : null;
     }
 
     /**
@@ -735,6 +1155,1686 @@ class Total implements ModelInterface, ArrayAccess
     public function setThousandDisplayPrice($thousandDisplayPrice)
     {
         $this->container['thousandDisplayPrice'] = $thousandDisplayPrice;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizFollowCount
+     *
+     * @return string|mixed
+     */
+    public function getBizFollowCount()
+    {
+        return $this->container['bizFollowCount'];
+    }
+
+    /**
+     * Sets bizFollowCount
+     *
+     * @param string|mixed $bizFollowCount bizFollowCount
+     *
+     * @return $this
+     */
+    public function setBizFollowCount($bizFollowCount)
+    {
+        $this->container['bizFollowCount'] = $bizFollowCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizFollowUv
+     *
+     * @return string|mixed
+     */
+    public function getBizFollowUv()
+    {
+        return $this->container['bizFollowUv'];
+    }
+
+    /**
+     * Sets bizFollowUv
+     *
+     * @param string|mixed $bizFollowUv bizFollowUv
+     *
+     * @return $this
+     */
+    public function setBizFollowUv($bizFollowUv)
+    {
+        $this->container['bizFollowUv'] = $bizFollowUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveStreamAvgTime
+     *
+     * @return string|mixed
+     */
+    public function getLiveStreamAvgTime()
+    {
+        return $this->container['liveStreamAvgTime'];
+    }
+
+    /**
+     * Sets liveStreamAvgTime
+     *
+     * @param string|mixed $liveStreamAvgTime liveStreamAvgTime
+     *
+     * @return $this
+     */
+    public function setLiveStreamAvgTime($liveStreamAvgTime)
+    {
+        $this->container['liveStreamAvgTime'] = $liveStreamAvgTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveStreamExpUv
+     *
+     * @return string|mixed
+     */
+    public function getLiveStreamExpUv()
+    {
+        return $this->container['liveStreamExpUv'];
+    }
+
+    /**
+     * Sets liveStreamExpUv
+     *
+     * @param string|mixed $liveStreamExpUv liveStreamExpUv
+     *
+     * @return $this
+     */
+    public function setLiveStreamExpUv($liveStreamExpUv)
+    {
+        $this->container['liveStreamExpUv'] = $liveStreamExpUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveHeartUserCount
+     *
+     * @return string|mixed
+     */
+    public function getVideoLiveHeartUserCount()
+    {
+        return $this->container['videoLiveHeartUserCount'];
+    }
+
+    /**
+     * Sets videoLiveHeartUserCount
+     *
+     * @param string|mixed $videoLiveHeartUserCount videoLiveHeartUserCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveHeartUserCount($videoLiveHeartUserCount)
+    {
+        $this->container['videoLiveHeartUserCount'] = $videoLiveHeartUserCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveCommentUserCount
+     *
+     * @return string|mixed
+     */
+    public function getVideoLiveCommentUserCount()
+    {
+        return $this->container['videoLiveCommentUserCount'];
+    }
+
+    /**
+     * Sets videoLiveCommentUserCount
+     *
+     * @param string|mixed $videoLiveCommentUserCount videoLiveCommentUserCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveCommentUserCount($videoLiveCommentUserCount)
+    {
+        $this->container['videoLiveCommentUserCount'] = $videoLiveCommentUserCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveShareUserCount
+     *
+     * @return string|mixed
+     */
+    public function getVideoLiveShareUserCount()
+    {
+        return $this->container['videoLiveShareUserCount'];
+    }
+
+    /**
+     * Sets videoLiveShareUserCount
+     *
+     * @param string|mixed $videoLiveShareUserCount videoLiveShareUserCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveShareUserCount($videoLiveShareUserCount)
+    {
+        $this->container['videoLiveShareUserCount'] = $videoLiveShareUserCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveClickCommodityUserCount
+     *
+     * @return string|mixed
+     */
+    public function getVideoLiveClickCommodityUserCount()
+    {
+        return $this->container['videoLiveClickCommodityUserCount'];
+    }
+
+    /**
+     * Sets videoLiveClickCommodityUserCount
+     *
+     * @param string|mixed $videoLiveClickCommodityUserCount videoLiveClickCommodityUserCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveClickCommodityUserCount($videoLiveClickCommodityUserCount)
+    {
+        $this->container['videoLiveClickCommodityUserCount'] = $videoLiveClickCommodityUserCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets zoneHeaderClickCount
+     *
+     * @return string|mixed
+     */
+    public function getZoneHeaderClickCount()
+    {
+        return $this->container['zoneHeaderClickCount'];
+    }
+
+    /**
+     * Sets zoneHeaderClickCount
+     *
+     * @param string|mixed $zoneHeaderClickCount zoneHeaderClickCount
+     *
+     * @return $this
+     */
+    public function setZoneHeaderClickCount($zoneHeaderClickCount)
+    {
+        $this->container['zoneHeaderClickCount'] = $zoneHeaderClickCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets basicInfoClientCount
+     *
+     * @return string|mixed
+     */
+    public function getBasicInfoClientCount()
+    {
+        return $this->container['basicInfoClientCount'];
+    }
+
+    /**
+     * Sets basicInfoClientCount
+     *
+     * @param string|mixed $basicInfoClientCount basicInfoClientCount
+     *
+     * @return $this
+     */
+    public function setBasicInfoClientCount($basicInfoClientCount)
+    {
+        $this->container['basicInfoClientCount'] = $basicInfoClientCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets accountInfoClickCount
+     *
+     * @return string|mixed
+     */
+    public function getAccountInfoClickCount()
+    {
+        return $this->container['accountInfoClickCount'];
+    }
+
+    /**
+     * Sets accountInfoClickCount
+     *
+     * @param string|mixed $accountInfoClickCount accountInfoClickCount
+     *
+     * @return $this
+     */
+    public function setAccountInfoClickCount($accountInfoClickCount)
+    {
+        $this->container['accountInfoClickCount'] = $accountInfoClickCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets activityInfoClickCount
+     *
+     * @return string|mixed
+     */
+    public function getActivityInfoClickCount()
+    {
+        return $this->container['activityInfoClickCount'];
+    }
+
+    /**
+     * Sets activityInfoClickCount
+     *
+     * @param string|mixed $activityInfoClickCount activityInfoClickCount
+     *
+     * @return $this
+     */
+    public function setActivityInfoClickCount($activityInfoClickCount)
+    {
+        $this->container['activityInfoClickCount'] = $activityInfoClickCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizRegUv
+     *
+     * @return string|mixed
+     */
+    public function getBizRegUv()
+    {
+        return $this->container['bizRegUv'];
+    }
+
+    /**
+     * Sets bizRegUv
+     *
+     * @param string|mixed $bizRegUv bizRegUv
+     *
+     * @return $this
+     */
+    public function setBizRegUv($bizRegUv)
+    {
+        $this->container['bizRegUv'] = $bizRegUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizReservationUv
+     *
+     * @return string|mixed
+     */
+    public function getBizReservationUv()
+    {
+        return $this->container['bizReservationUv'];
+    }
+
+    /**
+     * Sets bizReservationUv
+     *
+     * @param string|mixed $bizReservationUv bizReservationUv
+     *
+     * @return $this
+     */
+    public function setBizReservationUv($bizReservationUv)
+    {
+        $this->container['bizReservationUv'] = $bizReservationUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizOrderUv
+     *
+     * @return string|mixed
+     */
+    public function getBizOrderUv()
+    {
+        return $this->container['bizOrderUv'];
+    }
+
+    /**
+     * Sets bizOrderUv
+     *
+     * @param string|mixed $bizOrderUv bizOrderUv
+     *
+     * @return $this
+     */
+    public function setBizOrderUv($bizOrderUv)
+    {
+        $this->container['bizOrderUv'] = $bizOrderUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizPageApplyUv
+     *
+     * @return string|mixed
+     */
+    public function getBizPageApplyUv()
+    {
+        return $this->container['bizPageApplyUv'];
+    }
+
+    /**
+     * Sets bizPageApplyUv
+     *
+     * @param string|mixed $bizPageApplyUv bizPageApplyUv
+     *
+     * @return $this
+     */
+    public function setBizPageApplyUv($bizPageApplyUv)
+    {
+        $this->container['bizPageApplyUv'] = $bizPageApplyUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizCreditUv
+     *
+     * @return string|mixed
+     */
+    public function getBizCreditUv()
+    {
+        return $this->container['bizCreditUv'];
+    }
+
+    /**
+     * Sets bizCreditUv
+     *
+     * @param string|mixed $bizCreditUv bizCreditUv
+     *
+     * @return $this
+     */
+    public function setBizCreditUv($bizCreditUv)
+    {
+        $this->container['bizCreditUv'] = $bizCreditUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizWithdrawDepositsUv
+     *
+     * @return string|mixed
+     */
+    public function getBizWithdrawDepositsUv()
+    {
+        return $this->container['bizWithdrawDepositsUv'];
+    }
+
+    /**
+     * Sets bizWithdrawDepositsUv
+     *
+     * @param string|mixed $bizWithdrawDepositsUv bizWithdrawDepositsUv
+     *
+     * @return $this
+     */
+    public function setBizWithdrawDepositsUv($bizWithdrawDepositsUv)
+    {
+        $this->container['bizWithdrawDepositsUv'] = $bizWithdrawDepositsUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizPreCreditUv
+     *
+     * @return string|mixed
+     */
+    public function getBizPreCreditUv()
+    {
+        return $this->container['bizPreCreditUv'];
+    }
+
+    /**
+     * Sets bizPreCreditUv
+     *
+     * @param string|mixed $bizPreCreditUv bizPreCreditUv
+     *
+     * @return $this
+     */
+    public function setBizPreCreditUv($bizPreCreditUv)
+    {
+        $this->container['bizPreCreditUv'] = $bizPreCreditUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizRegOrderAmount
+     *
+     * @return string|mixed
+     */
+    public function getBizRegOrderAmount()
+    {
+        return $this->container['bizRegOrderAmount'];
+    }
+
+    /**
+     * Sets bizRegOrderAmount
+     *
+     * @param string|mixed $bizRegOrderAmount bizRegOrderAmount
+     *
+     * @return $this
+     */
+    public function setBizRegOrderAmount($bizRegOrderAmount)
+    {
+        $this->container['bizRegOrderAmount'] = $bizRegOrderAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizReservationCount
+     *
+     * @return string|mixed
+     */
+    public function getBizReservationCount()
+    {
+        return $this->container['bizReservationCount'];
+    }
+
+    /**
+     * Sets bizReservationCount
+     *
+     * @param string|mixed $bizReservationCount bizReservationCount
+     *
+     * @return $this
+     */
+    public function setBizReservationCount($bizReservationCount)
+    {
+        $this->container['bizReservationCount'] = $bizReservationCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizReservationAmount
+     *
+     * @return string|mixed
+     */
+    public function getBizReservationAmount()
+    {
+        return $this->container['bizReservationAmount'];
+    }
+
+    /**
+     * Sets bizReservationAmount
+     *
+     * @param string|mixed $bizReservationAmount bizReservationAmount
+     *
+     * @return $this
+     */
+    public function setBizReservationAmount($bizReservationAmount)
+    {
+        $this->container['bizReservationAmount'] = $bizReservationAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizOrderCount
+     *
+     * @return string|mixed
+     */
+    public function getBizOrderCount()
+    {
+        return $this->container['bizOrderCount'];
+    }
+
+    /**
+     * Sets bizOrderCount
+     *
+     * @param string|mixed $bizOrderCount bizOrderCount
+     *
+     * @return $this
+     */
+    public function setBizOrderCount($bizOrderCount)
+    {
+        $this->container['bizOrderCount'] = $bizOrderCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizOrderAmount
+     *
+     * @return string|mixed
+     */
+    public function getBizOrderAmount()
+    {
+        return $this->container['bizOrderAmount'];
+    }
+
+    /**
+     * Sets bizOrderAmount
+     *
+     * @param string|mixed $bizOrderAmount bizOrderAmount
+     *
+     * @return $this
+     */
+    public function setBizOrderAmount($bizOrderAmount)
+    {
+        $this->container['bizOrderAmount'] = $bizOrderAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz1dOrderCount
+     *
+     * @return string|mixed
+     */
+    public function getBiz1dOrderCount()
+    {
+        return $this->container['biz1dOrderCount'];
+    }
+
+    /**
+     * Sets biz1dOrderCount
+     *
+     * @param string|mixed $biz1dOrderCount biz1dOrderCount
+     *
+     * @return $this
+     */
+    public function setBiz1dOrderCount($biz1dOrderCount)
+    {
+        $this->container['biz1dOrderCount'] = $biz1dOrderCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz1dOrderAmount
+     *
+     * @return string|mixed
+     */
+    public function getBiz1dOrderAmount()
+    {
+        return $this->container['biz1dOrderAmount'];
+    }
+
+    /**
+     * Sets biz1dOrderAmount
+     *
+     * @param string|mixed $biz1dOrderAmount biz1dOrderAmount
+     *
+     * @return $this
+     */
+    public function setBiz1dOrderAmount($biz1dOrderAmount)
+    {
+        $this->container['biz1dOrderAmount'] = $biz1dOrderAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizPurchaseCount
+     *
+     * @return string|mixed
+     */
+    public function getBizPurchaseCount()
+    {
+        return $this->container['bizPurchaseCount'];
+    }
+
+    /**
+     * Sets bizPurchaseCount
+     *
+     * @param string|mixed $bizPurchaseCount bizPurchaseCount
+     *
+     * @return $this
+     */
+    public function setBizPurchaseCount($bizPurchaseCount)
+    {
+        $this->container['bizPurchaseCount'] = $bizPurchaseCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizPurchaseAmount
+     *
+     * @return string|mixed
+     */
+    public function getBizPurchaseAmount()
+    {
+        return $this->container['bizPurchaseAmount'];
+    }
+
+    /**
+     * Sets bizPurchaseAmount
+     *
+     * @param string|mixed $bizPurchaseAmount bizPurchaseAmount
+     *
+     * @return $this
+     */
+    public function setBizPurchaseAmount($bizPurchaseAmount)
+    {
+        $this->container['bizPurchaseAmount'] = $bizPurchaseAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizConsultCount
+     *
+     * @return string|mixed
+     */
+    public function getBizConsultCount()
+    {
+        return $this->container['bizConsultCount'];
+    }
+
+    /**
+     * Sets bizConsultCount
+     *
+     * @param string|mixed $bizConsultCount bizConsultCount
+     *
+     * @return $this
+     */
+    public function setBizConsultCount($bizConsultCount)
+    {
+        $this->container['bizConsultCount'] = $bizConsultCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizReadingCount
+     *
+     * @return string|mixed
+     */
+    public function getBizReadingCount()
+    {
+        return $this->container['bizReadingCount'];
+    }
+
+    /**
+     * Sets bizReadingCount
+     *
+     * @param string|mixed $bizReadingCount bizReadingCount
+     *
+     * @return $this
+     */
+    public function setBizReadingCount($bizReadingCount)
+    {
+        $this->container['bizReadingCount'] = $bizReadingCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizPageApplyCount
+     *
+     * @return string|mixed
+     */
+    public function getBizPageApplyCount()
+    {
+        return $this->container['bizPageApplyCount'];
+    }
+
+    /**
+     * Sets bizPageApplyCount
+     *
+     * @param string|mixed $bizPageApplyCount bizPageApplyCount
+     *
+     * @return $this
+     */
+    public function setBizPageApplyCount($bizPageApplyCount)
+    {
+        $this->container['bizPageApplyCount'] = $bizPageApplyCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizCreditCount
+     *
+     * @return string|mixed
+     */
+    public function getBizCreditCount()
+    {
+        return $this->container['bizCreditCount'];
+    }
+
+    /**
+     * Sets bizCreditCount
+     *
+     * @param string|mixed $bizCreditCount bizCreditCount
+     *
+     * @return $this
+     */
+    public function setBizCreditCount($bizCreditCount)
+    {
+        $this->container['bizCreditCount'] = $bizCreditCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizDepositCount
+     *
+     * @return string|mixed
+     */
+    public function getBizDepositCount()
+    {
+        return $this->container['bizDepositCount'];
+    }
+
+    /**
+     * Sets bizDepositCount
+     *
+     * @param string|mixed $bizDepositCount bizDepositCount
+     *
+     * @return $this
+     */
+    public function setBizDepositCount($bizDepositCount)
+    {
+        $this->container['bizDepositCount'] = $bizDepositCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz1dPurchaseCount
+     *
+     * @return string|mixed
+     */
+    public function getBiz1dPurchaseCount()
+    {
+        return $this->container['biz1dPurchaseCount'];
+    }
+
+    /**
+     * Sets biz1dPurchaseCount
+     *
+     * @param string|mixed $biz1dPurchaseCount biz1dPurchaseCount
+     *
+     * @return $this
+     */
+    public function setBiz1dPurchaseCount($biz1dPurchaseCount)
+    {
+        $this->container['biz1dPurchaseCount'] = $biz1dPurchaseCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz1dPurchaseAmount
+     *
+     * @return string|mixed
+     */
+    public function getBiz1dPurchaseAmount()
+    {
+        return $this->container['biz1dPurchaseAmount'];
+    }
+
+    /**
+     * Sets biz1dPurchaseAmount
+     *
+     * @param string|mixed $biz1dPurchaseAmount biz1dPurchaseAmount
+     *
+     * @return $this
+     */
+    public function setBiz1dPurchaseAmount($biz1dPurchaseAmount)
+    {
+        $this->container['biz1dPurchaseAmount'] = $biz1dPurchaseAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz3dPurchaseCount
+     *
+     * @return string|mixed
+     */
+    public function getBiz3dPurchaseCount()
+    {
+        return $this->container['biz3dPurchaseCount'];
+    }
+
+    /**
+     * Sets biz3dPurchaseCount
+     *
+     * @param string|mixed $biz3dPurchaseCount biz3dPurchaseCount
+     *
+     * @return $this
+     */
+    public function setBiz3dPurchaseCount($biz3dPurchaseCount)
+    {
+        $this->container['biz3dPurchaseCount'] = $biz3dPurchaseCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz3dPurchaseAmount
+     *
+     * @return string|mixed
+     */
+    public function getBiz3dPurchaseAmount()
+    {
+        return $this->container['biz3dPurchaseAmount'];
+    }
+
+    /**
+     * Sets biz3dPurchaseAmount
+     *
+     * @param string|mixed $biz3dPurchaseAmount biz3dPurchaseAmount
+     *
+     * @return $this
+     */
+    public function setBiz3dPurchaseAmount($biz3dPurchaseAmount)
+    {
+        $this->container['biz3dPurchaseAmount'] = $biz3dPurchaseAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz7dPurchaseCount
+     *
+     * @return string|mixed
+     */
+    public function getBiz7dPurchaseCount()
+    {
+        return $this->container['biz7dPurchaseCount'];
+    }
+
+    /**
+     * Sets biz7dPurchaseCount
+     *
+     * @param string|mixed $biz7dPurchaseCount biz7dPurchaseCount
+     *
+     * @return $this
+     */
+    public function setBiz7dPurchaseCount($biz7dPurchaseCount)
+    {
+        $this->container['biz7dPurchaseCount'] = $biz7dPurchaseCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz7dPurchaseAmount
+     *
+     * @return string|mixed
+     */
+    public function getBiz7dPurchaseAmount()
+    {
+        return $this->container['biz7dPurchaseAmount'];
+    }
+
+    /**
+     * Sets biz7dPurchaseAmount
+     *
+     * @param string|mixed $biz7dPurchaseAmount biz7dPurchaseAmount
+     *
+     * @return $this
+     */
+    public function setBiz7dPurchaseAmount($biz7dPurchaseAmount)
+    {
+        $this->container['biz7dPurchaseAmount'] = $biz7dPurchaseAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz15dPurchaseCount
+     *
+     * @return string|mixed
+     */
+    public function getBiz15dPurchaseCount()
+    {
+        return $this->container['biz15dPurchaseCount'];
+    }
+
+    /**
+     * Sets biz15dPurchaseCount
+     *
+     * @param string|mixed $biz15dPurchaseCount biz15dPurchaseCount
+     *
+     * @return $this
+     */
+    public function setBiz15dPurchaseCount($biz15dPurchaseCount)
+    {
+        $this->container['biz15dPurchaseCount'] = $biz15dPurchaseCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz15dPurchaseAmount
+     *
+     * @return string|mixed
+     */
+    public function getBiz15dPurchaseAmount()
+    {
+        return $this->container['biz15dPurchaseAmount'];
+    }
+
+    /**
+     * Sets biz15dPurchaseAmount
+     *
+     * @param string|mixed $biz15dPurchaseAmount biz15dPurchaseAmount
+     *
+     * @return $this
+     */
+    public function setBiz15dPurchaseAmount($biz15dPurchaseAmount)
+    {
+        $this->container['biz15dPurchaseAmount'] = $biz15dPurchaseAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz30dPurchaseCount
+     *
+     * @return string|mixed
+     */
+    public function getBiz30dPurchaseCount()
+    {
+        return $this->container['biz30dPurchaseCount'];
+    }
+
+    /**
+     * Sets biz30dPurchaseCount
+     *
+     * @param string|mixed $biz30dPurchaseCount biz30dPurchaseCount
+     *
+     * @return $this
+     */
+    public function setBiz30dPurchaseCount($biz30dPurchaseCount)
+    {
+        $this->container['biz30dPurchaseCount'] = $biz30dPurchaseCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets biz30dPurchaseAmount
+     *
+     * @return string|mixed
+     */
+    public function getBiz30dPurchaseAmount()
+    {
+        return $this->container['biz30dPurchaseAmount'];
+    }
+
+    /**
+     * Sets biz30dPurchaseAmount
+     *
+     * @param string|mixed $biz30dPurchaseAmount biz30dPurchaseAmount
+     *
+     * @return $this
+     */
+    public function setBiz30dPurchaseAmount($biz30dPurchaseAmount)
+    {
+        $this->container['biz30dPurchaseAmount'] = $biz30dPurchaseAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bizPreCreditPv
+     *
+     * @return string|mixed
+     */
+    public function getBizPreCreditPv()
+    {
+        return $this->container['bizPreCreditPv'];
+    }
+
+    /**
+     * Sets bizPreCreditPv
+     *
+     * @param string|mixed $bizPreCreditPv bizPreCreditPv
+     *
+     * @return $this
+     */
+    public function setBizPreCreditPv($bizPreCreditPv)
+    {
+        $this->container['bizPreCreditPv'] = $bizPreCreditPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoFollowCount
+     *
+     * @return string|mixed
+     */
+    public function getVideoFollowCount()
+    {
+        return $this->container['videoFollowCount'];
+    }
+
+    /**
+     * Sets videoFollowCount
+     *
+     * @param string|mixed $videoFollowCount videoFollowCount
+     *
+     * @return $this
+     */
+    public function setVideoFollowCount($videoFollowCount)
+    {
+        $this->container['videoFollowCount'] = $videoFollowCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoHeartCount
+     *
+     * @return string|mixed
+     */
+    public function getVideoHeartCount()
+    {
+        return $this->container['videoHeartCount'];
+    }
+
+    /**
+     * Sets videoHeartCount
+     *
+     * @param string|mixed $videoHeartCount videoHeartCount
+     *
+     * @return $this
+     */
+    public function setVideoHeartCount($videoHeartCount)
+    {
+        $this->container['videoHeartCount'] = $videoHeartCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoCommentCount
+     *
+     * @return string|mixed
+     */
+    public function getVideoCommentCount()
+    {
+        return $this->container['videoCommentCount'];
+    }
+
+    /**
+     * Sets videoCommentCount
+     *
+     * @param string|mixed $videoCommentCount videoCommentCount
+     *
+     * @return $this
+     */
+    public function setVideoCommentCount($videoCommentCount)
+    {
+        $this->container['videoCommentCount'] = $videoCommentCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveSubscribeCount
+     *
+     * @return string|mixed
+     */
+    public function getVideoLiveSubscribeCount()
+    {
+        return $this->container['videoLiveSubscribeCount'];
+    }
+
+    /**
+     * Sets videoLiveSubscribeCount
+     *
+     * @param string|mixed $videoLiveSubscribeCount videoLiveSubscribeCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveSubscribeCount($videoLiveSubscribeCount)
+    {
+        $this->container['videoLiveSubscribeCount'] = $videoLiveSubscribeCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveExpCount
+     *
+     * @return string|mixed
+     */
+    public function getVideoLiveExpCount()
+    {
+        return $this->container['videoLiveExpCount'];
+    }
+
+    /**
+     * Sets videoLiveExpCount
+     *
+     * @param string|mixed $videoLiveExpCount videoLiveExpCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveExpCount($videoLiveExpCount)
+    {
+        $this->container['videoLiveExpCount'] = $videoLiveExpCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveHeartCount
+     *
+     * @return string|mixed
+     */
+    public function getVideoLiveHeartCount()
+    {
+        return $this->container['videoLiveHeartCount'];
+    }
+
+    /**
+     * Sets videoLiveHeartCount
+     *
+     * @param string|mixed $videoLiveHeartCount videoLiveHeartCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveHeartCount($videoLiveHeartCount)
+    {
+        $this->container['videoLiveHeartCount'] = $videoLiveHeartCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveCommentCount
+     *
+     * @return string|mixed
+     */
+    public function getVideoLiveCommentCount()
+    {
+        return $this->container['videoLiveCommentCount'];
+    }
+
+    /**
+     * Sets videoLiveCommentCount
+     *
+     * @param string|mixed $videoLiveCommentCount videoLiveCommentCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveCommentCount($videoLiveCommentCount)
+    {
+        $this->container['videoLiveCommentCount'] = $videoLiveCommentCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveShareCount
+     *
+     * @return string|mixed
+     */
+    public function getVideoLiveShareCount()
+    {
+        return $this->container['videoLiveShareCount'];
+    }
+
+    /**
+     * Sets videoLiveShareCount
+     *
+     * @param string|mixed $videoLiveShareCount videoLiveShareCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveShareCount($videoLiveShareCount)
+    {
+        $this->container['videoLiveShareCount'] = $videoLiveShareCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveCickCommodityCount
+     *
+     * @return string|mixed
+     */
+    public function getVideoLiveCickCommodityCount()
+    {
+        return $this->container['videoLiveCickCommodityCount'];
+    }
+
+    /**
+     * Sets videoLiveCickCommodityCount
+     *
+     * @param string|mixed $videoLiveCickCommodityCount videoLiveCickCommodityCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveCickCommodityCount($videoLiveCickCommodityCount)
+    {
+        $this->container['videoLiveCickCommodityCount'] = $videoLiveCickCommodityCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveCommodityBubbleExpCount
+     *
+     * @return string|mixed
+     */
+    public function getVideoLiveCommodityBubbleExpCount()
+    {
+        return $this->container['videoLiveCommodityBubbleExpCount'];
+    }
+
+    /**
+     * Sets videoLiveCommodityBubbleExpCount
+     *
+     * @param string|mixed $videoLiveCommodityBubbleExpCount videoLiveCommodityBubbleExpCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveCommodityBubbleExpCount($videoLiveCommodityBubbleExpCount)
+    {
+        $this->container['videoLiveCommodityBubbleExpCount'] = $videoLiveCommodityBubbleExpCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveStreamCommodityBubbleClkPv
+     *
+     * @return string|mixed
+     */
+    public function getLiveStreamCommodityBubbleClkPv()
+    {
+        return $this->container['liveStreamCommodityBubbleClkPv'];
+    }
+
+    /**
+     * Sets liveStreamCommodityBubbleClkPv
+     *
+     * @param string|mixed $liveStreamCommodityBubbleClkPv liveStreamCommodityBubbleClkPv
+     *
+     * @return $this
+     */
+    public function setLiveStreamCommodityBubbleClkPv($liveStreamCommodityBubbleClkPv)
+    {
+        $this->container['liveStreamCommodityBubbleClkPv'] = $liveStreamCommodityBubbleClkPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveStreamCommodityShopBagClkPv
+     *
+     * @return string|mixed
+     */
+    public function getLiveStreamCommodityShopBagClkPv()
+    {
+        return $this->container['liveStreamCommodityShopBagClkPv'];
+    }
+
+    /**
+     * Sets liveStreamCommodityShopBagClkPv
+     *
+     * @param string|mixed $liveStreamCommodityShopBagClkPv liveStreamCommodityShopBagClkPv
+     *
+     * @return $this
+     */
+    public function setLiveStreamCommodityShopBagClkPv($liveStreamCommodityShopBagClkPv)
+    {
+        $this->container['liveStreamCommodityShopBagClkPv'] = $liveStreamCommodityShopBagClkPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveStreamCommodityShopListExpPv
+     *
+     * @return string|mixed
+     */
+    public function getLiveStreamCommodityShopListExpPv()
+    {
+        return $this->container['liveStreamCommodityShopListExpPv'];
+    }
+
+    /**
+     * Sets liveStreamCommodityShopListExpPv
+     *
+     * @param string|mixed $liveStreamCommodityShopListExpPv liveStreamCommodityShopListExpPv
+     *
+     * @return $this
+     */
+    public function setLiveStreamCommodityShopListExpPv($liveStreamCommodityShopListExpPv)
+    {
+        $this->container['liveStreamCommodityShopListExpPv'] = $liveStreamCommodityShopListExpPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveStreamOrderPv
+     *
+     * @return string|mixed
+     */
+    public function getLiveStreamOrderPv()
+    {
+        return $this->container['liveStreamOrderPv'];
+    }
+
+    /**
+     * Sets liveStreamOrderPv
+     *
+     * @param string|mixed $liveStreamOrderPv liveStreamOrderPv
+     *
+     * @return $this
+     */
+    public function setLiveStreamOrderPv($liveStreamOrderPv)
+    {
+        $this->container['liveStreamOrderPv'] = $liveStreamOrderPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkRedpocketBtnGetPv
+     *
+     * @return string|mixed
+     */
+    public function getClkRedpocketBtnGetPv()
+    {
+        return $this->container['clkRedpocketBtnGetPv'];
+    }
+
+    /**
+     * Sets clkRedpocketBtnGetPv
+     *
+     * @param string|mixed $clkRedpocketBtnGetPv clkRedpocketBtnGetPv
+     *
+     * @return $this
+     */
+    public function setClkRedpocketBtnGetPv($clkRedpocketBtnGetPv)
+    {
+        $this->container['clkRedpocketBtnGetPv'] = $clkRedpocketBtnGetPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkRedpocketBtnSharePv
+     *
+     * @return string|mixed
+     */
+    public function getClkRedpocketBtnSharePv()
+    {
+        return $this->container['clkRedpocketBtnSharePv'];
+    }
+
+    /**
+     * Sets clkRedpocketBtnSharePv
+     *
+     * @param string|mixed $clkRedpocketBtnSharePv clkRedpocketBtnSharePv
+     *
+     * @return $this
+     */
+    public function setClkRedpocketBtnSharePv($clkRedpocketBtnSharePv)
+    {
+        $this->container['clkRedpocketBtnSharePv'] = $clkRedpocketBtnSharePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkRedpocketBtnJumpPv
+     *
+     * @return string|mixed
+     */
+    public function getClkRedpocketBtnJumpPv()
+    {
+        return $this->container['clkRedpocketBtnJumpPv'];
+    }
+
+    /**
+     * Sets clkRedpocketBtnJumpPv
+     *
+     * @param string|mixed $clkRedpocketBtnJumpPv clkRedpocketBtnJumpPv
+     *
+     * @return $this
+     */
+    public function setClkRedpocketBtnJumpPv($clkRedpocketBtnJumpPv)
+    {
+        $this->container['clkRedpocketBtnJumpPv'] = $clkRedpocketBtnJumpPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkGoodsHeaderPv
+     *
+     * @return string|mixed
+     */
+    public function getClkGoodsHeaderPv()
+    {
+        return $this->container['clkGoodsHeaderPv'];
+    }
+
+    /**
+     * Sets clkGoodsHeaderPv
+     *
+     * @param string|mixed $clkGoodsHeaderPv clkGoodsHeaderPv
+     *
+     * @return $this
+     */
+    public function setClkGoodsHeaderPv($clkGoodsHeaderPv)
+    {
+        $this->container['clkGoodsHeaderPv'] = $clkGoodsHeaderPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkGoodsInfoPv
+     *
+     * @return string|mixed
+     */
+    public function getClkGoodsInfoPv()
+    {
+        return $this->container['clkGoodsInfoPv'];
+    }
+
+    /**
+     * Sets clkGoodsInfoPv
+     *
+     * @param string|mixed $clkGoodsInfoPv clkGoodsInfoPv
+     *
+     * @return $this
+     */
+    public function setClkGoodsInfoPv($clkGoodsInfoPv)
+    {
+        $this->container['clkGoodsInfoPv'] = $clkGoodsInfoPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkGoodsRecommendPv
+     *
+     * @return string|mixed
+     */
+    public function getClkGoodsRecommendPv()
+    {
+        return $this->container['clkGoodsRecommendPv'];
+    }
+
+    /**
+     * Sets clkGoodsRecommendPv
+     *
+     * @param string|mixed $clkGoodsRecommendPv clkGoodsRecommendPv
+     *
+     * @return $this
+     */
+    public function setClkGoodsRecommendPv($clkGoodsRecommendPv)
+    {
+        $this->container['clkGoodsRecommendPv'] = $clkGoodsRecommendPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkMiddleShowwindowPv
+     *
+     * @return string|mixed
+     */
+    public function getClkMiddleShowwindowPv()
+    {
+        return $this->container['clkMiddleShowwindowPv'];
+    }
+
+    /**
+     * Sets clkMiddleShowwindowPv
+     *
+     * @param string|mixed $clkMiddleShowwindowPv clkMiddleShowwindowPv
+     *
+     * @return $this
+     */
+    public function setClkMiddleShowwindowPv($clkMiddleShowwindowPv)
+    {
+        $this->container['clkMiddleShowwindowPv'] = $clkMiddleShowwindowPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkFooterPv
+     *
+     * @return string|mixed
+     */
+    public function getClkFooterPv()
+    {
+        return $this->container['clkFooterPv'];
+    }
+
+    /**
+     * Sets clkFooterPv
+     *
+     * @param string|mixed $clkFooterPv clkFooterPv
+     *
+     * @return $this
+     */
+    public function setClkFooterPv($clkFooterPv)
+    {
+        $this->container['clkFooterPv'] = $clkFooterPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkMiddleGoodsPv
+     *
+     * @return string|mixed
+     */
+    public function getClkMiddleGoodsPv()
+    {
+        return $this->container['clkMiddleGoodsPv'];
+    }
+
+    /**
+     * Sets clkMiddleGoodsPv
+     *
+     * @param string|mixed $clkMiddleGoodsPv clkMiddleGoodsPv
+     *
+     * @return $this
+     */
+    public function setClkMiddleGoodsPv($clkMiddleGoodsPv)
+    {
+        $this->container['clkMiddleGoodsPv'] = $clkMiddleGoodsPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkMiddleBtnPv
+     *
+     * @return string|mixed
+     */
+    public function getClkMiddleBtnPv()
+    {
+        return $this->container['clkMiddleBtnPv'];
+    }
+
+    /**
+     * Sets clkMiddleBtnPv
+     *
+     * @param string|mixed $clkMiddleBtnPv clkMiddleBtnPv
+     *
+     * @return $this
+     */
+    public function setClkMiddleBtnPv($clkMiddleBtnPv)
+    {
+        $this->container['clkMiddleBtnPv'] = $clkMiddleBtnPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkMiddleSectionPv
+     *
+     * @return string|mixed
+     */
+    public function getClkMiddleSectionPv()
+    {
+        return $this->container['clkMiddleSectionPv'];
+    }
+
+    /**
+     * Sets clkMiddleSectionPv
+     *
+     * @param string|mixed $clkMiddleSectionPv clkMiddleSectionPv
+     *
+     * @return $this
+     */
+    public function setClkMiddleSectionPv($clkMiddleSectionPv)
+    {
+        $this->container['clkMiddleSectionPv'] = $clkMiddleSectionPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkMiddleGridviewPv
+     *
+     * @return string|mixed
+     */
+    public function getClkMiddleGridviewPv()
+    {
+        return $this->container['clkMiddleGridviewPv'];
+    }
+
+    /**
+     * Sets clkMiddleGridviewPv
+     *
+     * @param string|mixed $clkMiddleGridviewPv clkMiddleGridviewPv
+     *
+     * @return $this
+     */
+    public function setClkMiddleGridviewPv($clkMiddleGridviewPv)
+    {
+        $this->container['clkMiddleGridviewPv'] = $clkMiddleGridviewPv;
 
         return $this;
     }

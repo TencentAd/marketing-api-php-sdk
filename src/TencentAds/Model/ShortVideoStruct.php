@@ -59,7 +59,8 @@ class ShortVideoStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'shortVideo1' => 'int',
-        'shortVideo2' => 'int'
+        'shortVideo2' => 'int',
+        'videoCoverImgId' => 'string'
     ];
 
     /**
@@ -69,7 +70,8 @@ class ShortVideoStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'shortVideo1' => 'int64',
-        'shortVideo2' => 'int64'
+        'shortVideo2' => 'int64',
+        'videoCoverImgId' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class ShortVideoStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'shortVideo1' => 'short_video1',
-        'shortVideo2' => 'short_video2'
+        'shortVideo2' => 'short_video2',
+        'videoCoverImgId' => 'video_cover_img_id'
     ];
 
     /**
@@ -110,7 +113,8 @@ class ShortVideoStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'shortVideo1' => 'setShortVideo1',
-        'shortVideo2' => 'setShortVideo2'
+        'shortVideo2' => 'setShortVideo2',
+        'videoCoverImgId' => 'setVideoCoverImgId'
     ];
 
     /**
@@ -120,7 +124,8 @@ class ShortVideoStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'shortVideo1' => 'getShortVideo1',
-        'shortVideo2' => 'getShortVideo2'
+        'shortVideo2' => 'getShortVideo2',
+        'videoCoverImgId' => 'getVideoCoverImgId'
     ];
 
     /**
@@ -185,6 +190,7 @@ class ShortVideoStruct implements ModelInterface, ArrayAccess
     {
         $this->container['shortVideo1'] = isset($data['shortVideo1']) ? $data['shortVideo1'] : null;
         $this->container['shortVideo2'] = isset($data['shortVideo2']) ? $data['shortVideo2'] : null;
+        $this->container['videoCoverImgId'] = isset($data['videoCoverImgId']) ? $data['videoCoverImgId'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class ShortVideoStruct implements ModelInterface, ArrayAccess
     public function setShortVideo2($shortVideo2)
     {
         $this->container['shortVideo2'] = $shortVideo2;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoCoverImgId
+     *
+     * @return string|mixed
+     */
+    public function getVideoCoverImgId()
+    {
+        return $this->container['videoCoverImgId'];
+    }
+
+    /**
+     * Sets videoCoverImgId
+     *
+     * @param string|mixed $videoCoverImgId videoCoverImgId
+     *
+     * @return $this
+     */
+    public function setVideoCoverImgId($videoCoverImgId)
+    {
+        $this->container['videoCoverImgId'] = $videoCoverImgId;
 
         return $this;
     }

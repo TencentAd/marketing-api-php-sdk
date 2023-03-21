@@ -581,6 +581,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'incomeRoi124hPla' => 'double',
         'adPurArpuCostD124hPla' => 'int',
         'firstDayAdPurArppuCost24hPla' => 'int',
+        'clkRelatedVideoPv' => 'int',
+        'clkBrandPediaPv' => 'int',
+        'clkActivityNewsPv' => 'int',
+        'clkLeftGridInfoPv' => 'int',
+        'clkLeftGridMiddlePv' => 'int',
+        'clkRightGridPv' => 'int',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
         'incomeVal1' => 'int',
@@ -1337,6 +1343,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'incomeRoi124hPla' => 'double',
         'adPurArpuCostD124hPla' => 'int64',
         'firstDayAdPurArppuCost24hPla' => 'int64',
+        'clkRelatedVideoPv' => 'int64',
+        'clkBrandPediaPv' => 'int64',
+        'clkActivityNewsPv' => 'int64',
+        'clkLeftGridInfoPv' => 'int64',
+        'clkLeftGridMiddlePv' => 'int64',
+        'clkRightGridPv' => 'int64',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
         'incomeVal1' => 'int64',
@@ -2114,6 +2126,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'incomeRoi124hPla' => 'income_roi_1_24h_pla',
         'adPurArpuCostD124hPla' => 'ad_pur_arpu_cost_d1_24h_pla',
         'firstDayAdPurArppuCost24hPla' => 'first_day_ad_pur_arppu_cost_24h_pla',
+        'clkRelatedVideoPv' => 'clk_related_video_pv',
+        'clkBrandPediaPv' => 'clk_brand_pedia_pv',
+        'clkActivityNewsPv' => 'clk_activity_news_pv',
+        'clkLeftGridInfoPv' => 'clk_left_grid_info_pv',
+        'clkLeftGridMiddlePv' => 'clk_left_grid_middle_pv',
+        'clkRightGridPv' => 'clk_right_grid_pv',
         'requestConversionsCount' => 'request_conversions_count',
         'requestConversionsCost' => 'request_conversions_cost',
         'incomeVal1' => 'income_val_1',
@@ -2870,6 +2888,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'incomeRoi124hPla' => 'setIncomeRoi124hPla',
         'adPurArpuCostD124hPla' => 'setAdPurArpuCostD124hPla',
         'firstDayAdPurArppuCost24hPla' => 'setFirstDayAdPurArppuCost24hPla',
+        'clkRelatedVideoPv' => 'setClkRelatedVideoPv',
+        'clkBrandPediaPv' => 'setClkBrandPediaPv',
+        'clkActivityNewsPv' => 'setClkActivityNewsPv',
+        'clkLeftGridInfoPv' => 'setClkLeftGridInfoPv',
+        'clkLeftGridMiddlePv' => 'setClkLeftGridMiddlePv',
+        'clkRightGridPv' => 'setClkRightGridPv',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'requestConversionsCost' => 'setRequestConversionsCost',
         'incomeVal1' => 'setIncomeVal1',
@@ -3626,6 +3650,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'incomeRoi124hPla' => 'getIncomeRoi124hPla',
         'adPurArpuCostD124hPla' => 'getAdPurArpuCostD124hPla',
         'firstDayAdPurArppuCost24hPla' => 'getFirstDayAdPurArppuCost24hPla',
+        'clkRelatedVideoPv' => 'getClkRelatedVideoPv',
+        'clkBrandPediaPv' => 'getClkBrandPediaPv',
+        'clkActivityNewsPv' => 'getClkActivityNewsPv',
+        'clkLeftGridInfoPv' => 'getClkLeftGridInfoPv',
+        'clkLeftGridMiddlePv' => 'getClkLeftGridMiddlePv',
+        'clkRightGridPv' => 'getClkRightGridPv',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'requestConversionsCost' => 'getRequestConversionsCost',
         'incomeVal1' => 'getIncomeVal1',
@@ -4436,6 +4466,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['incomeRoi124hPla'] = isset($data['incomeRoi124hPla']) ? $data['incomeRoi124hPla'] : null;
         $this->container['adPurArpuCostD124hPla'] = isset($data['adPurArpuCostD124hPla']) ? $data['adPurArpuCostD124hPla'] : null;
         $this->container['firstDayAdPurArppuCost24hPla'] = isset($data['firstDayAdPurArppuCost24hPla']) ? $data['firstDayAdPurArppuCost24hPla'] : null;
+        $this->container['clkRelatedVideoPv'] = isset($data['clkRelatedVideoPv']) ? $data['clkRelatedVideoPv'] : null;
+        $this->container['clkBrandPediaPv'] = isset($data['clkBrandPediaPv']) ? $data['clkBrandPediaPv'] : null;
+        $this->container['clkActivityNewsPv'] = isset($data['clkActivityNewsPv']) ? $data['clkActivityNewsPv'] : null;
+        $this->container['clkLeftGridInfoPv'] = isset($data['clkLeftGridInfoPv']) ? $data['clkLeftGridInfoPv'] : null;
+        $this->container['clkLeftGridMiddlePv'] = isset($data['clkLeftGridMiddlePv']) ? $data['clkLeftGridMiddlePv'] : null;
+        $this->container['clkRightGridPv'] = isset($data['clkRightGridPv']) ? $data['clkRightGridPv'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
         $this->container['incomeVal1'] = isset($data['incomeVal1']) ? $data['incomeVal1'] : null;
@@ -17235,6 +17271,150 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setFirstDayAdPurArppuCost24hPla($firstDayAdPurArppuCost24hPla)
     {
         $this->container['firstDayAdPurArppuCost24hPla'] = $firstDayAdPurArppuCost24hPla;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkRelatedVideoPv
+     *
+     * @return int|mixed
+     */
+    public function getClkRelatedVideoPv()
+    {
+        return $this->container['clkRelatedVideoPv'];
+    }
+
+    /**
+     * Sets clkRelatedVideoPv
+     *
+     * @param int|mixed $clkRelatedVideoPv clkRelatedVideoPv
+     *
+     * @return $this
+     */
+    public function setClkRelatedVideoPv($clkRelatedVideoPv)
+    {
+        $this->container['clkRelatedVideoPv'] = $clkRelatedVideoPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBrandPediaPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBrandPediaPv()
+    {
+        return $this->container['clkBrandPediaPv'];
+    }
+
+    /**
+     * Sets clkBrandPediaPv
+     *
+     * @param int|mixed $clkBrandPediaPv clkBrandPediaPv
+     *
+     * @return $this
+     */
+    public function setClkBrandPediaPv($clkBrandPediaPv)
+    {
+        $this->container['clkBrandPediaPv'] = $clkBrandPediaPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkActivityNewsPv
+     *
+     * @return int|mixed
+     */
+    public function getClkActivityNewsPv()
+    {
+        return $this->container['clkActivityNewsPv'];
+    }
+
+    /**
+     * Sets clkActivityNewsPv
+     *
+     * @param int|mixed $clkActivityNewsPv clkActivityNewsPv
+     *
+     * @return $this
+     */
+    public function setClkActivityNewsPv($clkActivityNewsPv)
+    {
+        $this->container['clkActivityNewsPv'] = $clkActivityNewsPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkLeftGridInfoPv
+     *
+     * @return int|mixed
+     */
+    public function getClkLeftGridInfoPv()
+    {
+        return $this->container['clkLeftGridInfoPv'];
+    }
+
+    /**
+     * Sets clkLeftGridInfoPv
+     *
+     * @param int|mixed $clkLeftGridInfoPv clkLeftGridInfoPv
+     *
+     * @return $this
+     */
+    public function setClkLeftGridInfoPv($clkLeftGridInfoPv)
+    {
+        $this->container['clkLeftGridInfoPv'] = $clkLeftGridInfoPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkLeftGridMiddlePv
+     *
+     * @return int|mixed
+     */
+    public function getClkLeftGridMiddlePv()
+    {
+        return $this->container['clkLeftGridMiddlePv'];
+    }
+
+    /**
+     * Sets clkLeftGridMiddlePv
+     *
+     * @param int|mixed $clkLeftGridMiddlePv clkLeftGridMiddlePv
+     *
+     * @return $this
+     */
+    public function setClkLeftGridMiddlePv($clkLeftGridMiddlePv)
+    {
+        $this->container['clkLeftGridMiddlePv'] = $clkLeftGridMiddlePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkRightGridPv
+     *
+     * @return int|mixed
+     */
+    public function getClkRightGridPv()
+    {
+        return $this->container['clkRightGridPv'];
+    }
+
+    /**
+     * Sets clkRightGridPv
+     *
+     * @param int|mixed $clkRightGridPv clkRightGridPv
+     *
+     * @return $this
+     */
+    public function setClkRightGridPv($clkRightGridPv)
+    {
+        $this->container['clkRightGridPv'] = $clkRightGridPv;
 
         return $this;
     }

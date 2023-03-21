@@ -122,6 +122,10 @@ class OptimizationGoal
     const PRE_PAY = 'OPTIMIZATIONGOAL_PRE_PAY';
     const PAGE_ONLINE_CONSULT_ACTIVE_ONE_MSG = 'OPTIMIZATIONGOAL_PAGE_ONLINE_CONSULT_ACTIVE_ONE_MSG';
     const CALL_DURATION_THIRTY_SECONDS = 'OPTIMIZATIONGOAL_CALL_DURATION_THIRTY_SECONDS';
+    const CLAIM_COURSE = 'OPTIMIZATIONGOAL_CLAIM_COURSE';
+    const QUIT_GROUP = 'OPTIMIZATIONGOAL_QUIT_GROUP';
+    const VIEW_ACQUISITION_CONTENT = 'OPTIMIZATIONGOAL_VIEW_ACQUISITION_CONTENT';
+    const BACK_FLOW = 'OPTIMIZATIONGOAL_BACK_FLOW';
     
     /**
      * Gets allowable values of the enum
@@ -208,6 +212,10 @@ class OptimizationGoal
             self::PRE_PAY,
             self::PAGE_ONLINE_CONSULT_ACTIVE_ONE_MSG,
             self::CALL_DURATION_THIRTY_SECONDS,
+            self::CLAIM_COURSE,
+            self::QUIT_GROUP,
+            self::VIEW_ACQUISITION_CONTENT,
+            self::BACK_FLOW,
         ];
     }
 }
