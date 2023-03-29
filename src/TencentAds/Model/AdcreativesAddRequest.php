@@ -99,6 +99,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'androidQuickAppSpec' => '\TencentAds\Model\AndroidQuickAppSpec',
         'liveVideoMode' => '\TencentAds\Model\LiveVideoMode',
         'liveVideoSubMode' => '\TencentAds\Model\LiveVideoSubMode',
+        'linkNameText' => 'string',
         'accountId' => 'int',
         'adcreativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsMp'
@@ -152,6 +153,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'androidQuickAppSpec' => null,
         'liveVideoMode' => null,
         'liveVideoSubMode' => null,
+        'linkNameText' => null,
         'accountId' => 'int64',
         'adcreativeTemplateId' => 'int64',
         'adcreativeElements' => null
@@ -226,6 +228,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'androidQuickAppSpec' => 'android_quick_app_spec',
         'liveVideoMode' => 'live_video_mode',
         'liveVideoSubMode' => 'live_video_sub_mode',
+        'linkNameText' => 'link_name_text',
         'accountId' => 'account_id',
         'adcreativeTemplateId' => 'adcreative_template_id',
         'adcreativeElements' => 'adcreative_elements'
@@ -279,6 +282,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'androidQuickAppSpec' => 'setAndroidQuickAppSpec',
         'liveVideoMode' => 'setLiveVideoMode',
         'liveVideoSubMode' => 'setLiveVideoSubMode',
+        'linkNameText' => 'setLinkNameText',
         'accountId' => 'setAccountId',
         'adcreativeTemplateId' => 'setAdcreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements'
@@ -332,6 +336,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'androidQuickAppSpec' => 'getAndroidQuickAppSpec',
         'liveVideoMode' => 'getLiveVideoMode',
         'liveVideoSubMode' => 'getLiveVideoSubMode',
+        'linkNameText' => 'getLinkNameText',
         'accountId' => 'getAccountId',
         'adcreativeTemplateId' => 'getAdcreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements'
@@ -439,6 +444,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         $this->container['androidQuickAppSpec'] = isset($data['androidQuickAppSpec']) ? $data['androidQuickAppSpec'] : null;
         $this->container['liveVideoMode'] = isset($data['liveVideoMode']) ? $data['liveVideoMode'] : null;
         $this->container['liveVideoSubMode'] = isset($data['liveVideoSubMode']) ? $data['liveVideoSubMode'] : null;
+        $this->container['linkNameText'] = isset($data['linkNameText']) ? $data['linkNameText'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
@@ -1472,6 +1478,30 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     public function setLiveVideoSubMode($liveVideoSubMode)
     {
         $this->container['liveVideoSubMode'] = $liveVideoSubMode;
+
+        return $this;
+    }
+
+    /**
+     * Gets linkNameText
+     *
+     * @return string|mixed
+     */
+    public function getLinkNameText()
+    {
+        return $this->container['linkNameText'];
+    }
+
+    /**
+     * Sets linkNameText
+     *
+     * @param string|mixed $linkNameText linkNameText
+     *
+     * @return $this
+     */
+    public function setLinkNameText($linkNameText)
+    {
+        $this->container['linkNameText'] = $linkNameText;
 
         return $this;
     }

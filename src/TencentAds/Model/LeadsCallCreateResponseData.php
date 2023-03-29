@@ -1,6 +1,6 @@
 <?php
 /**
- * LeadsCallRecordGetResponseData
+ * LeadsCallCreateResponseData
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * LeadsCallRecordGetResponseData Class Doc Comment
+ * LeadsCallCreateResponseData Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
+class LeadsCallCreateResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'LeadsCallRecordGetResponseData';
+    protected static $swaggerModelName = 'LeadsCallCreateResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,7 +57,7 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'callRecords' => '\TencentAds\Model\CallListStructs[]',
+        'contactId' => 'string',
         'requestId' => 'string'
     ];
 
@@ -67,7 +67,7 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'callRecords' => null,
+        'contactId' => null,
         'requestId' => null
     ];
 
@@ -98,7 +98,7 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'callRecords' => 'call_records',
+        'contactId' => 'contact_id',
         'requestId' => 'request_id'
     ];
 
@@ -108,7 +108,7 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'callRecords' => 'setCallRecords',
+        'contactId' => 'setContactId',
         'requestId' => 'setRequestId'
     ];
 
@@ -118,7 +118,7 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'callRecords' => 'getCallRecords',
+        'contactId' => 'getContactId',
         'requestId' => 'getRequestId'
     ];
 
@@ -182,7 +182,7 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['callRecords'] = isset($data['callRecords']) ? $data['callRecords'] : null;
+        $this->container['contactId'] = isset($data['contactId']) ? $data['contactId'] : null;
         $this->container['requestId'] = isset($data['requestId']) ? $data['requestId'] : null;
     }
 
@@ -211,25 +211,25 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets callRecords
+     * Gets contactId
      *
-     * @return \TencentAds\Model\CallListStructs[]|mixed
+     * @return string|mixed
      */
-    public function getCallRecords()
+    public function getContactId()
     {
-        return $this->container['callRecords'];
+        return $this->container['contactId'];
     }
 
     /**
-     * Sets callRecords
+     * Sets contactId
      *
-     * @param \TencentAds\Model\CallListStructs[]|mixed $callRecords callRecords
+     * @param string|mixed $contactId contactId
      *
      * @return $this
      */
-    public function setCallRecords($callRecords)
+    public function setContactId($contactId)
     {
-        $this->container['callRecords'] = $callRecords;
+        $this->container['contactId'] = $contactId;
 
         return $this;
     }

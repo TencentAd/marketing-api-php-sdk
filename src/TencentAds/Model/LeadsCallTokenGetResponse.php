@@ -1,6 +1,6 @@
 <?php
 /**
- * LeadsCallRecordGetResponseData
+ * LeadsCallTokenGetResponse
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * LeadsCallRecordGetResponseData Class Doc Comment
+ * LeadsCallTokenGetResponse Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
+class LeadsCallTokenGetResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'LeadsCallRecordGetResponseData';
+    protected static $swaggerModelName = 'LeadsCallTokenGetResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,8 +57,11 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'callRecords' => '\TencentAds\Model\CallListStructs[]',
-        'requestId' => 'string'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\LeadsCallTokenGetResponseData'
     ];
 
     /**
@@ -67,8 +70,11 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'callRecords' => null,
-        'requestId' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -98,8 +104,11 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'callRecords' => 'call_records',
-        'requestId' => 'request_id'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -108,8 +117,11 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'callRecords' => 'setCallRecords',
-        'requestId' => 'setRequestId'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -118,8 +130,11 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'callRecords' => 'getCallRecords',
-        'requestId' => 'getRequestId'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -182,8 +197,11 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['callRecords'] = isset($data['callRecords']) ? $data['callRecords'] : null;
-        $this->container['requestId'] = isset($data['requestId']) ? $data['requestId'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -211,49 +229,121 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets callRecords
+     * Gets code
      *
-     * @return \TencentAds\Model\CallListStructs[]|mixed
+     * @return int|mixed
      */
-    public function getCallRecords()
+    public function getCode()
     {
-        return $this->container['callRecords'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets callRecords
+     * Sets code
      *
-     * @param \TencentAds\Model\CallListStructs[]|mixed $callRecords callRecords
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setCallRecords($callRecords)
+    public function setCode($code)
     {
-        $this->container['callRecords'] = $callRecords;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets requestId
+     * Gets message
      *
      * @return string|mixed
      */
-    public function getRequestId()
+    public function getMessage()
     {
-        return $this->container['requestId'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets requestId
+     * Sets message
      *
-     * @param string|mixed $requestId requestId
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setRequestId($requestId)
+    public function setMessage($message)
     {
-        $this->container['requestId'] = $requestId;
+        $this->container['message'] = $message;
+
+        return $this;
+    }
+
+    /**
+     * Gets messageCn
+     *
+     * @return string|mixed
+     */
+    public function getMessageCn()
+    {
+        return $this->container['messageCn'];
+    }
+
+    /**
+     * Sets messageCn
+     *
+     * @param string|mixed $messageCn messageCn
+     *
+     * @return $this
+     */
+    public function setMessageCn($messageCn)
+    {
+        $this->container['messageCn'] = $messageCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets errors
+     *
+     * @return \TencentAds\Model\ApiErrorStruct[]|mixed
+     */
+    public function getErrors()
+    {
+        return $this->container['errors'];
+    }
+
+    /**
+     * Sets errors
+     *
+     * @param \TencentAds\Model\ApiErrorStruct[]|mixed $errors errors
+     *
+     * @return $this
+     */
+    public function setErrors($errors)
+    {
+        $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\LeadsCallTokenGetResponseData|mixed
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\LeadsCallTokenGetResponseData|mixed $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }

@@ -58,7 +58,9 @@ class BizFilter implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'bidwordIdList' => 'int[]'
+        'bidwordIdList' => 'int[]',
+        'campaignType' => '\TencentAds\Model\CampaignType',
+        'bidwordList' => 'string[]'
     ];
 
     /**
@@ -67,7 +69,9 @@ class BizFilter implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'bidwordIdList' => 'int64'
+        'bidwordIdList' => 'int64',
+        'campaignType' => null,
+        'bidwordList' => null
     ];
 
     /**
@@ -97,7 +101,9 @@ class BizFilter implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'bidwordIdList' => 'bidword_id_list'
+        'bidwordIdList' => 'bidword_id_list',
+        'campaignType' => 'campaign_type',
+        'bidwordList' => 'bidword_list'
     ];
 
     /**
@@ -106,7 +112,9 @@ class BizFilter implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'bidwordIdList' => 'setBidwordIdList'
+        'bidwordIdList' => 'setBidwordIdList',
+        'campaignType' => 'setCampaignType',
+        'bidwordList' => 'setBidwordList'
     ];
 
     /**
@@ -115,7 +123,9 @@ class BizFilter implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'bidwordIdList' => 'getBidwordIdList'
+        'bidwordIdList' => 'getBidwordIdList',
+        'campaignType' => 'getCampaignType',
+        'bidwordList' => 'getBidwordList'
     ];
 
     /**
@@ -179,6 +189,8 @@ class BizFilter implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['bidwordIdList'] = isset($data['bidwordIdList']) ? $data['bidwordIdList'] : null;
+        $this->container['campaignType'] = isset($data['campaignType']) ? $data['campaignType'] : null;
+        $this->container['bidwordList'] = isset($data['bidwordList']) ? $data['bidwordList'] : null;
     }
 
     /**
@@ -225,6 +237,54 @@ class BizFilter implements ModelInterface, ArrayAccess
     public function setBidwordIdList($bidwordIdList)
     {
         $this->container['bidwordIdList'] = $bidwordIdList;
+
+        return $this;
+    }
+
+    /**
+     * Gets campaignType
+     *
+     * @return \TencentAds\Model\CampaignType|mixed
+     */
+    public function getCampaignType()
+    {
+        return $this->container['campaignType'];
+    }
+
+    /**
+     * Sets campaignType
+     *
+     * @param \TencentAds\Model\CampaignType|mixed $campaignType campaignType
+     *
+     * @return $this
+     */
+    public function setCampaignType($campaignType)
+    {
+        $this->container['campaignType'] = $campaignType;
+
+        return $this;
+    }
+
+    /**
+     * Gets bidwordList
+     *
+     * @return string[]|mixed
+     */
+    public function getBidwordList()
+    {
+        return $this->container['bidwordList'];
+    }
+
+    /**
+     * Sets bidwordList
+     *
+     * @param string[]|mixed $bidwordList bidwordList
+     *
+     * @return $this
+     */
+    public function setBidwordList($bidwordList)
+    {
+        $this->container['bidwordList'] = $bidwordList;
 
         return $this;
     }

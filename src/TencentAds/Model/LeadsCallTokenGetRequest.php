@@ -1,6 +1,6 @@
 <?php
 /**
- * LeadsCallRecordGetResponseData
+ * LeadsCallTokenGetRequest
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * LeadsCallRecordGetResponseData Class Doc Comment
+ * LeadsCallTokenGetRequest Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
+class LeadsCallTokenGetRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'LeadsCallRecordGetResponseData';
+    protected static $swaggerModelName = 'LeadsCallTokenGetRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,7 +57,8 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'callRecords' => '\TencentAds\Model\CallListStructs[]',
+        'accountId' => 'int',
+        'userId' => 'int',
         'requestId' => 'string'
     ];
 
@@ -67,7 +68,8 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'callRecords' => null,
+        'accountId' => 'int64',
+        'userId' => 'int64',
         'requestId' => null
     ];
 
@@ -98,7 +100,8 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'callRecords' => 'call_records',
+        'accountId' => 'account_id',
+        'userId' => 'user_id',
         'requestId' => 'request_id'
     ];
 
@@ -108,7 +111,8 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'callRecords' => 'setCallRecords',
+        'accountId' => 'setAccountId',
+        'userId' => 'setUserId',
         'requestId' => 'setRequestId'
     ];
 
@@ -118,7 +122,8 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'callRecords' => 'getCallRecords',
+        'accountId' => 'getAccountId',
+        'userId' => 'getUserId',
         'requestId' => 'getRequestId'
     ];
 
@@ -182,7 +187,8 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['callRecords'] = isset($data['callRecords']) ? $data['callRecords'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['userId'] = isset($data['userId']) ? $data['userId'] : null;
         $this->container['requestId'] = isset($data['requestId']) ? $data['requestId'] : null;
     }
 
@@ -211,25 +217,49 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets callRecords
+     * Gets accountId
      *
-     * @return \TencentAds\Model\CallListStructs[]|mixed
+     * @return int|mixed
      */
-    public function getCallRecords()
+    public function getAccountId()
     {
-        return $this->container['callRecords'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets callRecords
+     * Sets accountId
      *
-     * @param \TencentAds\Model\CallListStructs[]|mixed $callRecords callRecords
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setCallRecords($callRecords)
+    public function setAccountId($accountId)
     {
-        $this->container['callRecords'] = $callRecords;
+        $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets userId
+     *
+     * @return int|mixed
+     */
+    public function getUserId()
+    {
+        return $this->container['userId'];
+    }
+
+    /**
+     * Sets userId
+     *
+     * @param int|mixed $userId userId
+     *
+     * @return $this
+     */
+    public function setUserId($userId)
+    {
+        $this->container['userId'] = $userId;
 
         return $this;
     }

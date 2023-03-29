@@ -1,6 +1,6 @@
 <?php
 /**
- * LeadsCallVirtualNumberGetRequest
+ * CallListStructs
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * LeadsCallVirtualNumberGetRequest Class Doc Comment
+ * CallListStructs Class Doc Comment
  *
  * @category Class
+ * @description 通话记录结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class LeadsCallVirtualNumberGetRequest implements ModelInterface, ArrayAccess
+class CallListStructs implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class LeadsCallVirtualNumberGetRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'LeadsCallVirtualNumberGetRequest';
+    protected static $swaggerModelName = 'call_list_structs';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,11 +58,20 @@ class LeadsCallVirtualNumberGetRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'callId' => 'string',
         'accountId' => 'int',
         'leadsId' => 'int',
+        'contactId' => 'string',
         'caller' => 'string',
         'callee' => 'string',
-        'requestId' => 'string'
+        'callDirection' => 'string',
+        'duration' => 'int',
+        'callStartTime' => 'string',
+        'callEndTime' => 'string',
+        'ringTime' => 'string',
+        'answerTime' => 'string',
+        'endStatus' => 'int',
+        'callRecordUrl' => 'string'
     ];
 
     /**
@@ -70,11 +80,20 @@ class LeadsCallVirtualNumberGetRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
+        'callId' => null,
         'accountId' => 'int64',
         'leadsId' => 'int64',
+        'contactId' => null,
         'caller' => null,
         'callee' => null,
-        'requestId' => null
+        'callDirection' => null,
+        'duration' => 'int64',
+        'callStartTime' => null,
+        'callEndTime' => null,
+        'ringTime' => null,
+        'answerTime' => null,
+        'endStatus' => 'int64',
+        'callRecordUrl' => null
     ];
 
     /**
@@ -104,11 +123,20 @@ class LeadsCallVirtualNumberGetRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'callId' => 'call_id',
         'accountId' => 'account_id',
         'leadsId' => 'leads_id',
+        'contactId' => 'contact_id',
         'caller' => 'caller',
         'callee' => 'callee',
-        'requestId' => 'request_id'
+        'callDirection' => 'call_direction',
+        'duration' => 'duration',
+        'callStartTime' => 'call_start_time',
+        'callEndTime' => 'call_end_time',
+        'ringTime' => 'ring_time',
+        'answerTime' => 'answer_time',
+        'endStatus' => 'end_status',
+        'callRecordUrl' => 'call_record_url'
     ];
 
     /**
@@ -117,11 +145,20 @@ class LeadsCallVirtualNumberGetRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'callId' => 'setCallId',
         'accountId' => 'setAccountId',
         'leadsId' => 'setLeadsId',
+        'contactId' => 'setContactId',
         'caller' => 'setCaller',
         'callee' => 'setCallee',
-        'requestId' => 'setRequestId'
+        'callDirection' => 'setCallDirection',
+        'duration' => 'setDuration',
+        'callStartTime' => 'setCallStartTime',
+        'callEndTime' => 'setCallEndTime',
+        'ringTime' => 'setRingTime',
+        'answerTime' => 'setAnswerTime',
+        'endStatus' => 'setEndStatus',
+        'callRecordUrl' => 'setCallRecordUrl'
     ];
 
     /**
@@ -130,11 +167,20 @@ class LeadsCallVirtualNumberGetRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'callId' => 'getCallId',
         'accountId' => 'getAccountId',
         'leadsId' => 'getLeadsId',
+        'contactId' => 'getContactId',
         'caller' => 'getCaller',
         'callee' => 'getCallee',
-        'requestId' => 'getRequestId'
+        'callDirection' => 'getCallDirection',
+        'duration' => 'getDuration',
+        'callStartTime' => 'getCallStartTime',
+        'callEndTime' => 'getCallEndTime',
+        'ringTime' => 'getRingTime',
+        'answerTime' => 'getAnswerTime',
+        'endStatus' => 'getEndStatus',
+        'callRecordUrl' => 'getCallRecordUrl'
     ];
 
     /**
@@ -197,11 +243,20 @@ class LeadsCallVirtualNumberGetRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['callId'] = isset($data['callId']) ? $data['callId'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['leadsId'] = isset($data['leadsId']) ? $data['leadsId'] : null;
+        $this->container['contactId'] = isset($data['contactId']) ? $data['contactId'] : null;
         $this->container['caller'] = isset($data['caller']) ? $data['caller'] : null;
         $this->container['callee'] = isset($data['callee']) ? $data['callee'] : null;
-        $this->container['requestId'] = isset($data['requestId']) ? $data['requestId'] : null;
+        $this->container['callDirection'] = isset($data['callDirection']) ? $data['callDirection'] : null;
+        $this->container['duration'] = isset($data['duration']) ? $data['duration'] : null;
+        $this->container['callStartTime'] = isset($data['callStartTime']) ? $data['callStartTime'] : null;
+        $this->container['callEndTime'] = isset($data['callEndTime']) ? $data['callEndTime'] : null;
+        $this->container['ringTime'] = isset($data['ringTime']) ? $data['ringTime'] : null;
+        $this->container['answerTime'] = isset($data['answerTime']) ? $data['answerTime'] : null;
+        $this->container['endStatus'] = isset($data['endStatus']) ? $data['endStatus'] : null;
+        $this->container['callRecordUrl'] = isset($data['callRecordUrl']) ? $data['callRecordUrl'] : null;
     }
 
     /**
@@ -227,6 +282,30 @@ class LeadsCallVirtualNumberGetRequest implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets callId
+     *
+     * @return string|mixed
+     */
+    public function getCallId()
+    {
+        return $this->container['callId'];
+    }
+
+    /**
+     * Sets callId
+     *
+     * @param string|mixed $callId callId
+     *
+     * @return $this
+     */
+    public function setCallId($callId)
+    {
+        $this->container['callId'] = $callId;
+
+        return $this;
+    }
 
     /**
      * Gets accountId
@@ -272,6 +351,30 @@ class LeadsCallVirtualNumberGetRequest implements ModelInterface, ArrayAccess
     public function setLeadsId($leadsId)
     {
         $this->container['leadsId'] = $leadsId;
+
+        return $this;
+    }
+
+    /**
+     * Gets contactId
+     *
+     * @return string|mixed
+     */
+    public function getContactId()
+    {
+        return $this->container['contactId'];
+    }
+
+    /**
+     * Sets contactId
+     *
+     * @param string|mixed $contactId contactId
+     *
+     * @return $this
+     */
+    public function setContactId($contactId)
+    {
+        $this->container['contactId'] = $contactId;
 
         return $this;
     }
@@ -325,25 +428,193 @@ class LeadsCallVirtualNumberGetRequest implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets requestId
+     * Gets callDirection
      *
      * @return string|mixed
      */
-    public function getRequestId()
+    public function getCallDirection()
     {
-        return $this->container['requestId'];
+        return $this->container['callDirection'];
     }
 
     /**
-     * Sets requestId
+     * Sets callDirection
      *
-     * @param string|mixed $requestId requestId
+     * @param string|mixed $callDirection callDirection
      *
      * @return $this
      */
-    public function setRequestId($requestId)
+    public function setCallDirection($callDirection)
     {
-        $this->container['requestId'] = $requestId;
+        $this->container['callDirection'] = $callDirection;
+
+        return $this;
+    }
+
+    /**
+     * Gets duration
+     *
+     * @return int|mixed
+     */
+    public function getDuration()
+    {
+        return $this->container['duration'];
+    }
+
+    /**
+     * Sets duration
+     *
+     * @param int|mixed $duration duration
+     *
+     * @return $this
+     */
+    public function setDuration($duration)
+    {
+        $this->container['duration'] = $duration;
+
+        return $this;
+    }
+
+    /**
+     * Gets callStartTime
+     *
+     * @return string|mixed
+     */
+    public function getCallStartTime()
+    {
+        return $this->container['callStartTime'];
+    }
+
+    /**
+     * Sets callStartTime
+     *
+     * @param string|mixed $callStartTime callStartTime
+     *
+     * @return $this
+     */
+    public function setCallStartTime($callStartTime)
+    {
+        $this->container['callStartTime'] = $callStartTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets callEndTime
+     *
+     * @return string|mixed
+     */
+    public function getCallEndTime()
+    {
+        return $this->container['callEndTime'];
+    }
+
+    /**
+     * Sets callEndTime
+     *
+     * @param string|mixed $callEndTime callEndTime
+     *
+     * @return $this
+     */
+    public function setCallEndTime($callEndTime)
+    {
+        $this->container['callEndTime'] = $callEndTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets ringTime
+     *
+     * @return string|mixed
+     */
+    public function getRingTime()
+    {
+        return $this->container['ringTime'];
+    }
+
+    /**
+     * Sets ringTime
+     *
+     * @param string|mixed $ringTime ringTime
+     *
+     * @return $this
+     */
+    public function setRingTime($ringTime)
+    {
+        $this->container['ringTime'] = $ringTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets answerTime
+     *
+     * @return string|mixed
+     */
+    public function getAnswerTime()
+    {
+        return $this->container['answerTime'];
+    }
+
+    /**
+     * Sets answerTime
+     *
+     * @param string|mixed $answerTime answerTime
+     *
+     * @return $this
+     */
+    public function setAnswerTime($answerTime)
+    {
+        $this->container['answerTime'] = $answerTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets endStatus
+     *
+     * @return int|mixed
+     */
+    public function getEndStatus()
+    {
+        return $this->container['endStatus'];
+    }
+
+    /**
+     * Sets endStatus
+     *
+     * @param int|mixed $endStatus endStatus
+     *
+     * @return $this
+     */
+    public function setEndStatus($endStatus)
+    {
+        $this->container['endStatus'] = $endStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets callRecordUrl
+     *
+     * @return string|mixed
+     */
+    public function getCallRecordUrl()
+    {
+        return $this->container['callRecordUrl'];
+    }
+
+    /**
+     * Sets callRecordUrl
+     *
+     * @param string|mixed $callRecordUrl callRecordUrl
+     *
+     * @return $this
+     */
+    public function setCallRecordUrl($callRecordUrl)
+    {
+        $this->container['callRecordUrl'] = $callRecordUrl;
 
         return $this;
     }

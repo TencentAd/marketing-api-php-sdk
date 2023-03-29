@@ -1,6 +1,6 @@
 <?php
 /**
- * LeadsCallRecordGetResponseData
+ * LeadsCallCreateRequest
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * LeadsCallRecordGetResponseData Class Doc Comment
+ * LeadsCallCreateRequest Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
+class LeadsCallCreateRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'LeadsCallRecordGetResponseData';
+    protected static $swaggerModelName = 'LeadsCallCreateRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,8 +57,12 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'callRecords' => '\TencentAds\Model\CallListStructs[]',
-        'requestId' => 'string'
+        'accountId' => 'int',
+        'leadsId' => 'int',
+        'userId' => 'int',
+        'calleeNumber' => 'string',
+        'requestId' => 'string',
+        'version' => 'string'
     ];
 
     /**
@@ -67,8 +71,12 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'callRecords' => null,
-        'requestId' => null
+        'accountId' => 'int64',
+        'leadsId' => 'int64',
+        'userId' => 'int64',
+        'calleeNumber' => null,
+        'requestId' => null,
+        'version' => null
     ];
 
     /**
@@ -98,8 +106,12 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'callRecords' => 'call_records',
-        'requestId' => 'request_id'
+        'accountId' => 'account_id',
+        'leadsId' => 'leads_id',
+        'userId' => 'user_id',
+        'calleeNumber' => 'callee_number',
+        'requestId' => 'request_id',
+        'version' => 'version'
     ];
 
     /**
@@ -108,8 +120,12 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'callRecords' => 'setCallRecords',
-        'requestId' => 'setRequestId'
+        'accountId' => 'setAccountId',
+        'leadsId' => 'setLeadsId',
+        'userId' => 'setUserId',
+        'calleeNumber' => 'setCalleeNumber',
+        'requestId' => 'setRequestId',
+        'version' => 'setVersion'
     ];
 
     /**
@@ -118,8 +134,12 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'callRecords' => 'getCallRecords',
-        'requestId' => 'getRequestId'
+        'accountId' => 'getAccountId',
+        'leadsId' => 'getLeadsId',
+        'userId' => 'getUserId',
+        'calleeNumber' => 'getCalleeNumber',
+        'requestId' => 'getRequestId',
+        'version' => 'getVersion'
     ];
 
     /**
@@ -182,8 +202,12 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['callRecords'] = isset($data['callRecords']) ? $data['callRecords'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['leadsId'] = isset($data['leadsId']) ? $data['leadsId'] : null;
+        $this->container['userId'] = isset($data['userId']) ? $data['userId'] : null;
+        $this->container['calleeNumber'] = isset($data['calleeNumber']) ? $data['calleeNumber'] : null;
         $this->container['requestId'] = isset($data['requestId']) ? $data['requestId'] : null;
+        $this->container['version'] = isset($data['version']) ? $data['version'] : null;
     }
 
     /**
@@ -211,25 +235,97 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets callRecords
+     * Gets accountId
      *
-     * @return \TencentAds\Model\CallListStructs[]|mixed
+     * @return int|mixed
      */
-    public function getCallRecords()
+    public function getAccountId()
     {
-        return $this->container['callRecords'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets callRecords
+     * Sets accountId
      *
-     * @param \TencentAds\Model\CallListStructs[]|mixed $callRecords callRecords
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setCallRecords($callRecords)
+    public function setAccountId($accountId)
     {
-        $this->container['callRecords'] = $callRecords;
+        $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsId
+     *
+     * @return int|mixed
+     */
+    public function getLeadsId()
+    {
+        return $this->container['leadsId'];
+    }
+
+    /**
+     * Sets leadsId
+     *
+     * @param int|mixed $leadsId leadsId
+     *
+     * @return $this
+     */
+    public function setLeadsId($leadsId)
+    {
+        $this->container['leadsId'] = $leadsId;
+
+        return $this;
+    }
+
+    /**
+     * Gets userId
+     *
+     * @return int|mixed
+     */
+    public function getUserId()
+    {
+        return $this->container['userId'];
+    }
+
+    /**
+     * Sets userId
+     *
+     * @param int|mixed $userId userId
+     *
+     * @return $this
+     */
+    public function setUserId($userId)
+    {
+        $this->container['userId'] = $userId;
+
+        return $this;
+    }
+
+    /**
+     * Gets calleeNumber
+     *
+     * @return string|mixed
+     */
+    public function getCalleeNumber()
+    {
+        return $this->container['calleeNumber'];
+    }
+
+    /**
+     * Sets calleeNumber
+     *
+     * @param string|mixed $calleeNumber calleeNumber
+     *
+     * @return $this
+     */
+    public function setCalleeNumber($calleeNumber)
+    {
+        $this->container['calleeNumber'] = $calleeNumber;
 
         return $this;
     }
@@ -254,6 +350,30 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
     public function setRequestId($requestId)
     {
         $this->container['requestId'] = $requestId;
+
+        return $this;
+    }
+
+    /**
+     * Gets version
+     *
+     * @return string|mixed
+     */
+    public function getVersion()
+    {
+        return $this->container['version'];
+    }
+
+    /**
+     * Sets version
+     *
+     * @param string|mixed $version version
+     *
+     * @return $this
+     */
+    public function setVersion($version)
+    {
+        $this->container['version'] = $version;
 
         return $this;
     }

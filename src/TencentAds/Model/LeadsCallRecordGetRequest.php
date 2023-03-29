@@ -58,7 +58,9 @@ class LeadsCallRecordGetRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
-        'leadsId' => 'int'
+        'leadsId' => 'int',
+        'requestId' => 'string',
+        'contactId' => 'string'
     ];
 
     /**
@@ -68,7 +70,9 @@ class LeadsCallRecordGetRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'accountId' => 'int64',
-        'leadsId' => 'int64'
+        'leadsId' => 'int64',
+        'requestId' => null,
+        'contactId' => null
     ];
 
     /**
@@ -99,7 +103,9 @@ class LeadsCallRecordGetRequest implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'accountId' => 'account_id',
-        'leadsId' => 'leads_id'
+        'leadsId' => 'leads_id',
+        'requestId' => 'request_id',
+        'contactId' => 'contact_id'
     ];
 
     /**
@@ -109,7 +115,9 @@ class LeadsCallRecordGetRequest implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'accountId' => 'setAccountId',
-        'leadsId' => 'setLeadsId'
+        'leadsId' => 'setLeadsId',
+        'requestId' => 'setRequestId',
+        'contactId' => 'setContactId'
     ];
 
     /**
@@ -119,7 +127,9 @@ class LeadsCallRecordGetRequest implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'accountId' => 'getAccountId',
-        'leadsId' => 'getLeadsId'
+        'leadsId' => 'getLeadsId',
+        'requestId' => 'getRequestId',
+        'contactId' => 'getContactId'
     ];
 
     /**
@@ -184,6 +194,8 @@ class LeadsCallRecordGetRequest implements ModelInterface, ArrayAccess
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['leadsId'] = isset($data['leadsId']) ? $data['leadsId'] : null;
+        $this->container['requestId'] = isset($data['requestId']) ? $data['requestId'] : null;
+        $this->container['contactId'] = isset($data['contactId']) ? $data['contactId'] : null;
     }
 
     /**
@@ -254,6 +266,54 @@ class LeadsCallRecordGetRequest implements ModelInterface, ArrayAccess
     public function setLeadsId($leadsId)
     {
         $this->container['leadsId'] = $leadsId;
+
+        return $this;
+    }
+
+    /**
+     * Gets requestId
+     *
+     * @return string|mixed
+     */
+    public function getRequestId()
+    {
+        return $this->container['requestId'];
+    }
+
+    /**
+     * Sets requestId
+     *
+     * @param string|mixed $requestId requestId
+     *
+     * @return $this
+     */
+    public function setRequestId($requestId)
+    {
+        $this->container['requestId'] = $requestId;
+
+        return $this;
+    }
+
+    /**
+     * Gets contactId
+     *
+     * @return string|mixed
+     */
+    public function getContactId()
+    {
+        return $this->container['contactId'];
+    }
+
+    /**
+     * Sets contactId
+     *
+     * @param string|mixed $contactId contactId
+     *
+     * @return $this
+     */
+    public function setContactId($contactId)
+    {
+        $this->container['contactId'] = $contactId;
 
         return $this;
     }

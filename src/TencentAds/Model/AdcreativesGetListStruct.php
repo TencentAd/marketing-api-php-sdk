@@ -111,6 +111,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'androidQuickAppSpec' => '\TencentAds\Model\AndroidQuickAppSpec',
         'liveVideoMode' => '\TencentAds\Model\LiveVideoMode',
         'liveVideoSubMode' => '\TencentAds\Model\LiveVideoSubMode',
+        'linkNameText' => 'string',
         'adcreativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsReadMp'
     ];
@@ -174,6 +175,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'androidQuickAppSpec' => null,
         'liveVideoMode' => null,
         'liveVideoSubMode' => null,
+        'linkNameText' => null,
         'adcreativeTemplateId' => 'int64',
         'adcreativeElements' => null
     ];
@@ -258,6 +260,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'androidQuickAppSpec' => 'android_quick_app_spec',
         'liveVideoMode' => 'live_video_mode',
         'liveVideoSubMode' => 'live_video_sub_mode',
+        'linkNameText' => 'link_name_text',
         'adcreativeTemplateId' => 'adcreative_template_id',
         'adcreativeElements' => 'adcreative_elements'
     ];
@@ -321,6 +324,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'androidQuickAppSpec' => 'setAndroidQuickAppSpec',
         'liveVideoMode' => 'setLiveVideoMode',
         'liveVideoSubMode' => 'setLiveVideoSubMode',
+        'linkNameText' => 'setLinkNameText',
         'adcreativeTemplateId' => 'setAdcreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements'
     ];
@@ -384,6 +388,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'androidQuickAppSpec' => 'getAndroidQuickAppSpec',
         'liveVideoMode' => 'getLiveVideoMode',
         'liveVideoSubMode' => 'getLiveVideoSubMode',
+        'linkNameText' => 'getLinkNameText',
         'adcreativeTemplateId' => 'getAdcreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements'
     ];
@@ -501,6 +506,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['androidQuickAppSpec'] = isset($data['androidQuickAppSpec']) ? $data['androidQuickAppSpec'] : null;
         $this->container['liveVideoMode'] = isset($data['liveVideoMode']) ? $data['liveVideoMode'] : null;
         $this->container['liveVideoSubMode'] = isset($data['liveVideoSubMode']) ? $data['liveVideoSubMode'] : null;
+        $this->container['linkNameText'] = isset($data['linkNameText']) ? $data['linkNameText'] : null;
         $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
     }
@@ -1797,6 +1803,30 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setLiveVideoSubMode($liveVideoSubMode)
     {
         $this->container['liveVideoSubMode'] = $liveVideoSubMode;
+
+        return $this;
+    }
+
+    /**
+     * Gets linkNameText
+     *
+     * @return string|mixed
+     */
+    public function getLinkNameText()
+    {
+        return $this->container['linkNameText'];
+    }
+
+    /**
+     * Sets linkNameText
+     *
+     * @param string|mixed $linkNameText linkNameText
+     *
+     * @return $this
+     */
+    public function setLinkNameText($linkNameText)
+    {
+        $this->container['linkNameText'] = $linkNameText;
 
         return $this;
     }

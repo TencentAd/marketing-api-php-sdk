@@ -118,7 +118,9 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'buttonTextJumpInfo' => '\TencentAds\Model\LandingPageStructure',
         'promotionSublinkComponentOptions' => '\TencentAds\Model\PromotionSublinkComponentOption[]',
         'wxgamePlayablePageSpec' => '\TencentAds\Model\WxgamePlayablePageSpec',
-        'mainJumpInfo' => '\TencentAds\Model\LandingPageStructure[]'
+        'mainJumpInfo' => '\TencentAds\Model\LandingPageStructure[]',
+        'mdpaTitleComponentOptions' => '\TencentAds\Model\MdpaTitleComponentOption[]',
+        'mdpaDescComponentOptions' => '\TencentAds\Model\MdpaDescComponentOption[]'
     ];
 
     /**
@@ -187,7 +189,9 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'buttonTextJumpInfo' => null,
         'promotionSublinkComponentOptions' => null,
         'wxgamePlayablePageSpec' => null,
-        'mainJumpInfo' => null
+        'mainJumpInfo' => null,
+        'mdpaTitleComponentOptions' => null,
+        'mdpaDescComponentOptions' => null
     ];
 
     /**
@@ -277,7 +281,9 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'buttonTextJumpInfo' => 'button_text_jump_info',
         'promotionSublinkComponentOptions' => 'promotion_sublink_component_options',
         'wxgamePlayablePageSpec' => 'wxgame_playable_page_spec',
-        'mainJumpInfo' => 'main_jump_info'
+        'mainJumpInfo' => 'main_jump_info',
+        'mdpaTitleComponentOptions' => 'mdpa_title_component_options',
+        'mdpaDescComponentOptions' => 'mdpa_desc_component_options'
     ];
 
     /**
@@ -346,7 +352,9 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'buttonTextJumpInfo' => 'setButtonTextJumpInfo',
         'promotionSublinkComponentOptions' => 'setPromotionSublinkComponentOptions',
         'wxgamePlayablePageSpec' => 'setWxgamePlayablePageSpec',
-        'mainJumpInfo' => 'setMainJumpInfo'
+        'mainJumpInfo' => 'setMainJumpInfo',
+        'mdpaTitleComponentOptions' => 'setMdpaTitleComponentOptions',
+        'mdpaDescComponentOptions' => 'setMdpaDescComponentOptions'
     ];
 
     /**
@@ -415,7 +423,9 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'buttonTextJumpInfo' => 'getButtonTextJumpInfo',
         'promotionSublinkComponentOptions' => 'getPromotionSublinkComponentOptions',
         'wxgamePlayablePageSpec' => 'getWxgamePlayablePageSpec',
-        'mainJumpInfo' => 'getMainJumpInfo'
+        'mainJumpInfo' => 'getMainJumpInfo',
+        'mdpaTitleComponentOptions' => 'getMdpaTitleComponentOptions',
+        'mdpaDescComponentOptions' => 'getMdpaDescComponentOptions'
     ];
 
     /**
@@ -539,6 +549,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         $this->container['promotionSublinkComponentOptions'] = isset($data['promotionSublinkComponentOptions']) ? $data['promotionSublinkComponentOptions'] : null;
         $this->container['wxgamePlayablePageSpec'] = isset($data['wxgamePlayablePageSpec']) ? $data['wxgamePlayablePageSpec'] : null;
         $this->container['mainJumpInfo'] = isset($data['mainJumpInfo']) ? $data['mainJumpInfo'] : null;
+        $this->container['mdpaTitleComponentOptions'] = isset($data['mdpaTitleComponentOptions']) ? $data['mdpaTitleComponentOptions'] : null;
+        $this->container['mdpaDescComponentOptions'] = isset($data['mdpaDescComponentOptions']) ? $data['mdpaDescComponentOptions'] : null;
     }
 
     /**
@@ -2025,6 +2037,54 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     public function setMainJumpInfo($mainJumpInfo)
     {
         $this->container['mainJumpInfo'] = $mainJumpInfo;
+
+        return $this;
+    }
+
+    /**
+     * Gets mdpaTitleComponentOptions
+     *
+     * @return \TencentAds\Model\MdpaTitleComponentOption[]|mixed
+     */
+    public function getMdpaTitleComponentOptions()
+    {
+        return $this->container['mdpaTitleComponentOptions'];
+    }
+
+    /**
+     * Sets mdpaTitleComponentOptions
+     *
+     * @param \TencentAds\Model\MdpaTitleComponentOption[]|mixed $mdpaTitleComponentOptions mdpaTitleComponentOptions
+     *
+     * @return $this
+     */
+    public function setMdpaTitleComponentOptions($mdpaTitleComponentOptions)
+    {
+        $this->container['mdpaTitleComponentOptions'] = $mdpaTitleComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets mdpaDescComponentOptions
+     *
+     * @return \TencentAds\Model\MdpaDescComponentOption[]|mixed
+     */
+    public function getMdpaDescComponentOptions()
+    {
+        return $this->container['mdpaDescComponentOptions'];
+    }
+
+    /**
+     * Sets mdpaDescComponentOptions
+     *
+     * @param \TencentAds\Model\MdpaDescComponentOption[]|mixed $mdpaDescComponentOptions mdpaDescComponentOptions
+     *
+     * @return $this
+     */
+    public function setMdpaDescComponentOptions($mdpaDescComponentOptions)
+    {
+        $this->container['mdpaDescComponentOptions'] = $mdpaDescComponentOptions;
 
         return $this;
     }

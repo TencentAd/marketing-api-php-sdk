@@ -97,6 +97,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'industryLabel' => 'string',
         'sublinkSwitch' => '\TencentAds\Model\AdvertiserSublinkSwitch',
         'picMaterialSwitch' => '\TencentAds\Model\AdvertiserPicMaterialSwitch',
+        'linkNameText' => 'string',
         'accountId' => 'int'
     ];
 
@@ -146,6 +147,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'industryLabel' => null,
         'sublinkSwitch' => null,
         'picMaterialSwitch' => null,
+        'linkNameText' => null,
         'accountId' => 'int64'
     ];
 
@@ -216,6 +218,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'industryLabel' => 'industry_label',
         'sublinkSwitch' => 'sublink_switch',
         'picMaterialSwitch' => 'pic_material_switch',
+        'linkNameText' => 'link_name_text',
         'accountId' => 'account_id'
     ];
 
@@ -265,6 +268,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'industryLabel' => 'setIndustryLabel',
         'sublinkSwitch' => 'setSublinkSwitch',
         'picMaterialSwitch' => 'setPicMaterialSwitch',
+        'linkNameText' => 'setLinkNameText',
         'accountId' => 'setAccountId'
     ];
 
@@ -314,6 +318,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'industryLabel' => 'getIndustryLabel',
         'sublinkSwitch' => 'getSublinkSwitch',
         'picMaterialSwitch' => 'getPicMaterialSwitch',
+        'linkNameText' => 'getLinkNameText',
         'accountId' => 'getAccountId'
     ];
 
@@ -417,6 +422,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['industryLabel'] = isset($data['industryLabel']) ? $data['industryLabel'] : null;
         $this->container['sublinkSwitch'] = isset($data['sublinkSwitch']) ? $data['sublinkSwitch'] : null;
         $this->container['picMaterialSwitch'] = isset($data['picMaterialSwitch']) ? $data['picMaterialSwitch'] : null;
+        $this->container['linkNameText'] = isset($data['linkNameText']) ? $data['linkNameText'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1400,6 +1406,30 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setPicMaterialSwitch($picMaterialSwitch)
     {
         $this->container['picMaterialSwitch'] = $picMaterialSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets linkNameText
+     *
+     * @return string|mixed
+     */
+    public function getLinkNameText()
+    {
+        return $this->container['linkNameText'];
+    }
+
+    /**
+     * Sets linkNameText
+     *
+     * @param string|mixed $linkNameText linkNameText
+     *
+     * @return $this
+     */
+    public function setLinkNameText($linkNameText)
+    {
+        $this->container['linkNameText'] = $linkNameText;
 
         return $this;
     }

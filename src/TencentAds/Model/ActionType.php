@@ -129,6 +129,30 @@ class ActionType
     const SECURITY_NEGATIVE = 'SECURITY_NEGATIVE';
     const AD_CLICK = 'AD_CLICK';
     const AD_IMPRESSION = 'AD_IMPRESSION';
+    const SIGN_IN = 'SIGN_IN';
+    const FOLLOW_2 = 'FOLLOW';
+    const ADD_DESKTOP_2 = 'ADD_DESKTOP';
+    const _RETURN_2 = 'RETURN';
+    const LEAVE_INFORMATION_2 = 'LEAVE_INFORMATION';
+    const PURCHASE_COUPON_2 = 'PURCHASE_COUPON';
+    const TRY_OUT_INTENTION = 'TRY_OUT_INTENTION';
+    const INEFFECTIVE_LEADS = 'INEFFECTIVE_LEADS';
+    const READ_ARTICLE = 'READ_ARTICLE';
+    const COMMENT = 'COMMENT';
+    const CARD_CLICK = 'CARD_CLICK';
+    const WECOM_CONSULT = 'WECOM_CONSULT';
+    const BIND_CARD = 'BIND_CARD';
+    const LOW_PRICE_COURSE = 'LOW_PRICE_COURSE';
+    const ADD_WECHAT = 'ADD_WECHAT';
+    const PRE_PAY = 'PRE_PAY';
+    const QUIT_GROUP = 'QUIT_GROUP';
+    const PHONE_CONNECTED = 'PHONE_CONNECTED';
+    const RE_ACTIVE = 'RE_ACTIVE';
+    const CLAIM_COURSE = 'CLAIM_COURSE';
+    const VIEW_ACQUISITION_CONTENT = 'VIEW_ACQUISITION_CONTENT';
+    const TERMINATION = 'TERMINATION';
+    const RENEWAL = 'RENEWAL';
+    const CONSULT_INTENTION = 'CONSULT_INTENTION';
     
     /**
      * Gets allowable values of the enum
@@ -222,6 +246,30 @@ class ActionType
             self::SECURITY_NEGATIVE,
             self::AD_CLICK,
             self::AD_IMPRESSION,
+            self::SIGN_IN,
+            self::FOLLOW_2,
+            self::ADD_DESKTOP_2,
+            self::_RETURN_2,
+            self::LEAVE_INFORMATION_2,
+            self::PURCHASE_COUPON_2,
+            self::TRY_OUT_INTENTION,
+            self::INEFFECTIVE_LEADS,
+            self::READ_ARTICLE,
+            self::COMMENT,
+            self::CARD_CLICK,
+            self::WECOM_CONSULT,
+            self::BIND_CARD,
+            self::LOW_PRICE_COURSE,
+            self::ADD_WECHAT,
+            self::PRE_PAY,
+            self::QUIT_GROUP,
+            self::PHONE_CONNECTED,
+            self::RE_ACTIVE,
+            self::CLAIM_COURSE,
+            self::VIEW_ACQUISITION_CONTENT,
+            self::TERMINATION,
+            self::RENEWAL,
+            self::CONSULT_INTENTION,
         ];
     }
 }

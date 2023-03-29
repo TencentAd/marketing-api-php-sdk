@@ -90,8 +90,10 @@ use TencentAds\Container\ImagesApiContainer;
 use TencentAds\Container\LabelAudiencesApiContainer;
 use TencentAds\Container\LabelsApiContainer;
 use TencentAds\Container\LeadCluesApiContainer;
+use TencentAds\Container\LeadsCallApiContainer;
 use TencentAds\Container\LeadsCallRecordApiContainer;
 use TencentAds\Container\LeadsCallRecordsApiContainer;
+use TencentAds\Container\LeadsCallTokenApiContainer;
 use TencentAds\Container\LeadsCallVirtualNumberApiContainer;
 use TencentAds\Container\LeadsFormApiContainer;
 use TencentAds\Container\LeadsFormListApiContainer;
@@ -455,11 +457,17 @@ class App
     /** @var LeadCluesApiContainer */
     public $leadCluesApiContainer;
 
+    /** @var LeadsCallApiContainer */
+    public $leadsCallApiContainer;
+
     /** @var LeadsCallRecordApiContainer */
     public $leadsCallRecordApiContainer;
 
     /** @var LeadsCallRecordsApiContainer */
     public $leadsCallRecordsApiContainer;
+
+    /** @var LeadsCallTokenApiContainer */
+    public $leadsCallTokenApiContainer;
 
     /** @var LeadsCallVirtualNumberApiContainer */
     public $leadsCallVirtualNumberApiContainer;
@@ -1986,6 +1994,20 @@ class App
 
 
     /**
+     * @return LeadsCallApiContainer
+     */
+    public function leadsCall()
+    {
+        if (empty($this->leadsCallApiContainer)) {
+            $container = new LeadsCallApiContainer();
+            $container->init($this, $this->getClient());
+            $this->leadsCallApiContainer = $container;
+        }
+        return $this->leadsCallApiContainer;
+    }
+
+
+    /**
      * @return LeadsCallRecordApiContainer
      */
     public function leadsCallRecord()
@@ -2010,6 +2032,20 @@ class App
             $this->leadsCallRecordsApiContainer = $container;
         }
         return $this->leadsCallRecordsApiContainer;
+    }
+
+
+    /**
+     * @return LeadsCallTokenApiContainer
+     */
+    public function leadsCallToken()
+    {
+        if (empty($this->leadsCallTokenApiContainer)) {
+            $container = new LeadsCallTokenApiContainer();
+            $container->init($this, $this->getClient());
+            $this->leadsCallTokenApiContainer = $container;
+        }
+        return $this->leadsCallTokenApiContainer;
     }
 
 

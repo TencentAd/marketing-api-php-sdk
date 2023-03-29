@@ -1,6 +1,6 @@
 <?php
 /**
- * LeadsCallRecordGetResponseData
+ * MdpaDescComponentOption
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * LeadsCallRecordGetResponseData Class Doc Comment
+ * MdpaDescComponentOption Class Doc Comment
  *
  * @category Class
+ * @description 商品标题组件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
+class MdpaDescComponentOption implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'LeadsCallRecordGetResponseData';
+    protected static $swaggerModelName = 'mdpa_desc_component_option';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,8 +58,8 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'callRecords' => '\TencentAds\Model\CallListStructs[]',
-        'requestId' => 'string'
+        'componentId' => 'int',
+        'value' => '\TencentAds\Model\MdpaDescComponentValueStruct'
     ];
 
     /**
@@ -67,8 +68,8 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'callRecords' => null,
-        'requestId' => null
+        'componentId' => 'int64',
+        'value' => null
     ];
 
     /**
@@ -98,8 +99,8 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'callRecords' => 'call_records',
-        'requestId' => 'request_id'
+        'componentId' => 'component_id',
+        'value' => 'value'
     ];
 
     /**
@@ -108,8 +109,8 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'callRecords' => 'setCallRecords',
-        'requestId' => 'setRequestId'
+        'componentId' => 'setComponentId',
+        'value' => 'setValue'
     ];
 
     /**
@@ -118,8 +119,8 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'callRecords' => 'getCallRecords',
-        'requestId' => 'getRequestId'
+        'componentId' => 'getComponentId',
+        'value' => 'getValue'
     ];
 
     /**
@@ -182,8 +183,8 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['callRecords'] = isset($data['callRecords']) ? $data['callRecords'] : null;
-        $this->container['requestId'] = isset($data['requestId']) ? $data['requestId'] : null;
+        $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
+        $this->container['value'] = isset($data['value']) ? $data['value'] : null;
     }
 
     /**
@@ -211,49 +212,49 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets callRecords
+     * Gets componentId
      *
-     * @return \TencentAds\Model\CallListStructs[]|mixed
+     * @return int|mixed
      */
-    public function getCallRecords()
+    public function getComponentId()
     {
-        return $this->container['callRecords'];
+        return $this->container['componentId'];
     }
 
     /**
-     * Sets callRecords
+     * Sets componentId
      *
-     * @param \TencentAds\Model\CallListStructs[]|mixed $callRecords callRecords
+     * @param int|mixed $componentId componentId
      *
      * @return $this
      */
-    public function setCallRecords($callRecords)
+    public function setComponentId($componentId)
     {
-        $this->container['callRecords'] = $callRecords;
+        $this->container['componentId'] = $componentId;
 
         return $this;
     }
 
     /**
-     * Gets requestId
+     * Gets value
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\MdpaDescComponentValueStruct|mixed
      */
-    public function getRequestId()
+    public function getValue()
     {
-        return $this->container['requestId'];
+        return $this->container['value'];
     }
 
     /**
-     * Sets requestId
+     * Sets value
      *
-     * @param string|mixed $requestId requestId
+     * @param \TencentAds\Model\MdpaDescComponentValueStruct|mixed $value value
      *
      * @return $this
      */
-    public function setRequestId($requestId)
+    public function setValue($value)
     {
-        $this->container['requestId'] = $requestId;
+        $this->container['value'] = $value;
 
         return $this;
     }

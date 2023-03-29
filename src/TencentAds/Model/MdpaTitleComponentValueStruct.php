@@ -1,6 +1,6 @@
 <?php
 /**
- * LeadsCallRecordGetResponseData
+ * MdpaTitleComponentValueStruct
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * LeadsCallRecordGetResponseData Class Doc Comment
+ * MdpaTitleComponentValueStruct Class Doc Comment
  *
  * @category Class
+ * @description 商品标题组件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
+class MdpaTitleComponentValueStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'LeadsCallRecordGetResponseData';
+    protected static $swaggerModelName = 'mdpa_title_component_value_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,8 +58,7 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'callRecords' => '\TencentAds\Model\CallListStructs[]',
-        'requestId' => 'string'
+        'title' => 'string'
     ];
 
     /**
@@ -67,8 +67,7 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'callRecords' => null,
-        'requestId' => null
+        'title' => null
     ];
 
     /**
@@ -98,8 +97,7 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'callRecords' => 'call_records',
-        'requestId' => 'request_id'
+        'title' => 'title'
     ];
 
     /**
@@ -108,8 +106,7 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'callRecords' => 'setCallRecords',
-        'requestId' => 'setRequestId'
+        'title' => 'setTitle'
     ];
 
     /**
@@ -118,8 +115,7 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'callRecords' => 'getCallRecords',
-        'requestId' => 'getRequestId'
+        'title' => 'getTitle'
     ];
 
     /**
@@ -182,8 +178,7 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['callRecords'] = isset($data['callRecords']) ? $data['callRecords'] : null;
-        $this->container['requestId'] = isset($data['requestId']) ? $data['requestId'] : null;
+        $this->container['title'] = isset($data['title']) ? $data['title'] : null;
     }
 
     /**
@@ -211,49 +206,25 @@ class LeadsCallRecordGetResponseData implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets callRecords
-     *
-     * @return \TencentAds\Model\CallListStructs[]|mixed
-     */
-    public function getCallRecords()
-    {
-        return $this->container['callRecords'];
-    }
-
-    /**
-     * Sets callRecords
-     *
-     * @param \TencentAds\Model\CallListStructs[]|mixed $callRecords callRecords
-     *
-     * @return $this
-     */
-    public function setCallRecords($callRecords)
-    {
-        $this->container['callRecords'] = $callRecords;
-
-        return $this;
-    }
-
-    /**
-     * Gets requestId
+     * Gets title
      *
      * @return string|mixed
      */
-    public function getRequestId()
+    public function getTitle()
     {
-        return $this->container['requestId'];
+        return $this->container['title'];
     }
 
     /**
-     * Sets requestId
+     * Sets title
      *
-     * @param string|mixed $requestId requestId
+     * @param string|mixed $title title
      *
      * @return $this
      */
-    public function setRequestId($requestId)
+    public function setTitle($title)
     {
-        $this->container['requestId'] = $requestId;
+        $this->container['title'] = $title;
 
         return $this;
     }

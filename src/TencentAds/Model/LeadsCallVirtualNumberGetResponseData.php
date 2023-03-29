@@ -58,7 +58,8 @@ class LeadsCallVirtualNumberGetResponseData implements ModelInterface, ArrayAcce
       */
     protected static $swaggerTypes = [
         'virtualNumber' => 'string',
-        'requestId' => 'string'
+        'requestId' => 'string',
+        'contactId' => 'string'
     ];
 
     /**
@@ -68,7 +69,8 @@ class LeadsCallVirtualNumberGetResponseData implements ModelInterface, ArrayAcce
       */
     protected static $swaggerFormats = [
         'virtualNumber' => null,
-        'requestId' => null
+        'requestId' => null,
+        'contactId' => null
     ];
 
     /**
@@ -99,7 +101,8 @@ class LeadsCallVirtualNumberGetResponseData implements ModelInterface, ArrayAcce
      */
     protected static $attributeMap = [
         'virtualNumber' => 'virtual_number',
-        'requestId' => 'request_id'
+        'requestId' => 'request_id',
+        'contactId' => 'contact_id'
     ];
 
     /**
@@ -109,7 +112,8 @@ class LeadsCallVirtualNumberGetResponseData implements ModelInterface, ArrayAcce
      */
     protected static $setters = [
         'virtualNumber' => 'setVirtualNumber',
-        'requestId' => 'setRequestId'
+        'requestId' => 'setRequestId',
+        'contactId' => 'setContactId'
     ];
 
     /**
@@ -119,7 +123,8 @@ class LeadsCallVirtualNumberGetResponseData implements ModelInterface, ArrayAcce
      */
     protected static $getters = [
         'virtualNumber' => 'getVirtualNumber',
-        'requestId' => 'getRequestId'
+        'requestId' => 'getRequestId',
+        'contactId' => 'getContactId'
     ];
 
     /**
@@ -184,6 +189,7 @@ class LeadsCallVirtualNumberGetResponseData implements ModelInterface, ArrayAcce
     {
         $this->container['virtualNumber'] = isset($data['virtualNumber']) ? $data['virtualNumber'] : null;
         $this->container['requestId'] = isset($data['requestId']) ? $data['requestId'] : null;
+        $this->container['contactId'] = isset($data['contactId']) ? $data['contactId'] : null;
     }
 
     /**
@@ -254,6 +260,30 @@ class LeadsCallVirtualNumberGetResponseData implements ModelInterface, ArrayAcce
     public function setRequestId($requestId)
     {
         $this->container['requestId'] = $requestId;
+
+        return $this;
+    }
+
+    /**
+     * Gets contactId
+     *
+     * @return string|mixed
+     */
+    public function getContactId()
+    {
+        return $this->container['contactId'];
+    }
+
+    /**
+     * Sets contactId
+     *
+     * @param string|mixed $contactId contactId
+     *
+     * @return $this
+     */
+    public function setContactId($contactId)
+    {
+        $this->container['contactId'] = $contactId;
 
         return $this;
     }
