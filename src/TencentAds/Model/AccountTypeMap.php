@@ -60,6 +60,7 @@ class AccountTypeMap
     const INTERNAL_QUOTA = 'FUND_TYPE_INTERNAL_QUOTA';
     const TEST_VIRTUAL = 'FUND_TYPE_TEST_VIRTUAL';
     const UNSUPPORTED = 'FUND_TYPE_UNSUPPORTED';
+    const TCC_GIFT = 'FUND_TYPE_TCC_GIFT';
     const JD_PRIVILEGE = 'FUND_TYPE_JD_PRIVILEGE';
     const JD_WIRELESS_CASH = 'FUND_TYPE_JD_WIRELESS_CASH';
     const SPECIAL_GIFT = 'FUND_TYPE_SPECIAL_GIFT';
@@ -68,6 +69,9 @@ class AccountTypeMap
     const FLOW_SOURCE_AD_FUND = 'FUND_TYPE_FLOW_SOURCE_AD_FUND';
     const ANDROID_ORIENTED_GIFT = 'FUND_TYPE_ANDROID_ORIENTED_GIFT';
     const LOCATION_PROMOTION_REWARDS = 'FUND_TYPE_LOCATION_PROMOTION_REWARDS';
+    const GIFT_RESTRICT = 'FUND_TYPE_GIFT_RESTRICT';
+    const DEBT_FIXED = 'FUND_TYPE_DEBT_FIXED';
+    const DEBT_TEMP = 'FUND_TYPE_DEBT_TEMP';
     
     /**
      * Gets allowable values of the enum
@@ -92,6 +96,7 @@ class AccountTypeMap
             self::INTERNAL_QUOTA,
             self::TEST_VIRTUAL,
             self::UNSUPPORTED,
+            self::TCC_GIFT,
             self::JD_PRIVILEGE,
             self::JD_WIRELESS_CASH,
             self::SPECIAL_GIFT,
@@ -100,6 +105,9 @@ class AccountTypeMap
             self::FLOW_SOURCE_AD_FUND,
             self::ANDROID_ORIENTED_GIFT,
             self::LOCATION_PROMOTION_REWARDS,
+            self::GIFT_RESTRICT,
+            self::DEBT_FIXED,
+            self::DEBT_TEMP,
         ];
     }
 }

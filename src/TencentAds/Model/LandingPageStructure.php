@@ -64,7 +64,8 @@ class LandingPageStructure implements ModelInterface, ArrayAccess
         'landingPagePlatform' => '\TencentAds\Model\LandingPagePlatform',
         'landingPageInfo' => '\TencentAds\Model\LandingPageInfo',
         'mediaQuery' => '\TencentAds\Model\LandingPageMediaQuery',
-        'linkNameText' => 'string'
+        'linkNameText' => 'string',
+        'landingPageUrlType' => '\TencentAds\Model\LandingPageUrlType'
     ];
 
     /**
@@ -79,7 +80,8 @@ class LandingPageStructure implements ModelInterface, ArrayAccess
         'landingPagePlatform' => null,
         'landingPageInfo' => null,
         'mediaQuery' => null,
-        'linkNameText' => null
+        'linkNameText' => null,
+        'landingPageUrlType' => null
     ];
 
     /**
@@ -115,7 +117,8 @@ class LandingPageStructure implements ModelInterface, ArrayAccess
         'landingPagePlatform' => 'landing_page_platform',
         'landingPageInfo' => 'landing_page_info',
         'mediaQuery' => 'media_query',
-        'linkNameText' => 'link_name_text'
+        'linkNameText' => 'link_name_text',
+        'landingPageUrlType' => 'landing_page_url_type'
     ];
 
     /**
@@ -130,7 +133,8 @@ class LandingPageStructure implements ModelInterface, ArrayAccess
         'landingPagePlatform' => 'setLandingPagePlatform',
         'landingPageInfo' => 'setLandingPageInfo',
         'mediaQuery' => 'setMediaQuery',
-        'linkNameText' => 'setLinkNameText'
+        'linkNameText' => 'setLinkNameText',
+        'landingPageUrlType' => 'setLandingPageUrlType'
     ];
 
     /**
@@ -145,7 +149,8 @@ class LandingPageStructure implements ModelInterface, ArrayAccess
         'landingPagePlatform' => 'getLandingPagePlatform',
         'landingPageInfo' => 'getLandingPageInfo',
         'mediaQuery' => 'getMediaQuery',
-        'linkNameText' => 'getLinkNameText'
+        'linkNameText' => 'getLinkNameText',
+        'landingPageUrlType' => 'getLandingPageUrlType'
     ];
 
     /**
@@ -215,6 +220,7 @@ class LandingPageStructure implements ModelInterface, ArrayAccess
         $this->container['landingPageInfo'] = isset($data['landingPageInfo']) ? $data['landingPageInfo'] : null;
         $this->container['mediaQuery'] = isset($data['mediaQuery']) ? $data['mediaQuery'] : null;
         $this->container['linkNameText'] = isset($data['linkNameText']) ? $data['linkNameText'] : null;
+        $this->container['landingPageUrlType'] = isset($data['landingPageUrlType']) ? $data['landingPageUrlType'] : null;
     }
 
     /**
@@ -405,6 +411,30 @@ class LandingPageStructure implements ModelInterface, ArrayAccess
     public function setLinkNameText($linkNameText)
     {
         $this->container['linkNameText'] = $linkNameText;
+
+        return $this;
+    }
+
+    /**
+     * Gets landingPageUrlType
+     *
+     * @return \TencentAds\Model\LandingPageUrlType|mixed
+     */
+    public function getLandingPageUrlType()
+    {
+        return $this->container['landingPageUrlType'];
+    }
+
+    /**
+     * Sets landingPageUrlType
+     *
+     * @param \TencentAds\Model\LandingPageUrlType|mixed $landingPageUrlType landingPageUrlType
+     *
+     * @return $this
+     */
+    public function setLandingPageUrlType($landingPageUrlType)
+    {
+        $this->container['landingPageUrlType'] = $landingPageUrlType;
 
         return $this;
     }
