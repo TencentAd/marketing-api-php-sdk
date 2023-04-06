@@ -67,8 +67,8 @@ class ImageTextItemStruct implements ModelInterface, ArrayAccess
         'title' => 'string',
         'desc' => 'string',
         'subElemType' => '\TencentAds\Model\CanvasImageTextElementType',
-        'ghSpec' => '\TencentAds\Model\GhSpec',
-        'enterpriseWxSpec' => '\TencentAds\Model\EnterpriseWxSpec'
+        'ghSpec' => '\TencentAds\Model\FloatGhSpec',
+        'enterpriseWxSpec' => '\TencentAds\Model\FloatEnterpriseWxSpec'
     ];
 
     /**
@@ -484,7 +484,7 @@ class ImageTextItemStruct implements ModelInterface, ArrayAccess
     /**
      * Gets ghSpec
      *
-     * @return \TencentAds\Model\GhSpec|mixed
+     * @return \TencentAds\Model\FloatGhSpec|mixed
      */
     public function getGhSpec()
     {
@@ -494,7 +494,7 @@ class ImageTextItemStruct implements ModelInterface, ArrayAccess
     /**
      * Sets ghSpec
      *
-     * @param \TencentAds\Model\GhSpec|mixed $ghSpec ghSpec
+     * @param \TencentAds\Model\FloatGhSpec|mixed $ghSpec ghSpec
      *
      * @return $this
      */
@@ -508,7 +508,7 @@ class ImageTextItemStruct implements ModelInterface, ArrayAccess
     /**
      * Gets enterpriseWxSpec
      *
-     * @return \TencentAds\Model\EnterpriseWxSpec|mixed
+     * @return \TencentAds\Model\FloatEnterpriseWxSpec|mixed
      */
     public function getEnterpriseWxSpec()
     {
@@ -518,7 +518,7 @@ class ImageTextItemStruct implements ModelInterface, ArrayAccess
     /**
      * Sets enterpriseWxSpec
      *
-     * @param \TencentAds\Model\EnterpriseWxSpec|mixed $enterpriseWxSpec enterpriseWxSpec
+     * @param \TencentAds\Model\FloatEnterpriseWxSpec|mixed $enterpriseWxSpec enterpriseWxSpec
      *
      * @return $this
      */
