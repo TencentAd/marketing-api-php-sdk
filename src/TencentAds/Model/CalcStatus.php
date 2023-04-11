@@ -80,6 +80,8 @@ class CalcStatus
     const FLOW_CANCELLED = 'STATUS_FLOW_CANCELLED';
     const CAMPAIGN_SUSPEND = 'STATUS_CAMPAIGN_SUSPEND';
     const GUARANTEED = 'STATUS_GUARANTEED';
+    const VERIFYING = 'STATUS_VERIFYING';
+    const SETTLED_ACCOUNT = 'STATUS_SETTLED_ACCOUNT';
     
     /**
      * Gets allowable values of the enum
@@ -124,6 +126,8 @@ class CalcStatus
             self::FLOW_CANCELLED,
             self::CAMPAIGN_SUSPEND,
             self::GUARANTEED,
+            self::VERIFYING,
+            self::SETTLED_ACCOUNT,
         ];
     }
 }

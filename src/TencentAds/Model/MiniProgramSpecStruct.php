@@ -1,6 +1,6 @@
 <?php
 /**
- * KeywordLandingPageInfo
+ * MiniProgramSpecStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * KeywordLandingPageInfo Class Doc Comment
+ * MiniProgramSpecStruct Class Doc Comment
  *
  * @category Class
- * @description 落地页数据结构
+ * @description 微信小程序落地页数据结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class KeywordLandingPageInfo implements ModelInterface, ArrayAccess
+class MiniProgramSpecStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class KeywordLandingPageInfo implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'keyword_landing_page_info';
+    protected static $swaggerModelName = 'mini_program_spec_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,12 +58,8 @@ class KeywordLandingPageInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pageType' => '\TencentAds\Model\PageTypeRead',
-        'pageUrl' => 'string',
-        'miniProgramSpec' => '\TencentAds\Model\MiniProgramSpecStruct',
-        'deepLinkSpec' => '\TencentAds\Model\DeepLinkSpecStruct',
-        'universalLinkSpec' => '\TencentAds\Model\UniversalLinkSpecStruct',
-        'xijingSpec' => '\TencentAds\Model\XijingSpecStruct'
+        'miniProgramId' => 'string',
+        'miniProgramPath' => 'string'
     ];
 
     /**
@@ -72,12 +68,8 @@ class KeywordLandingPageInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'pageType' => null,
-        'pageUrl' => null,
-        'miniProgramSpec' => null,
-        'deepLinkSpec' => null,
-        'universalLinkSpec' => null,
-        'xijingSpec' => null
+        'miniProgramId' => null,
+        'miniProgramPath' => null
     ];
 
     /**
@@ -107,12 +99,8 @@ class KeywordLandingPageInfo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'pageType' => 'page_type',
-        'pageUrl' => 'page_url',
-        'miniProgramSpec' => 'mini_program_spec',
-        'deepLinkSpec' => 'deep_link_spec',
-        'universalLinkSpec' => 'universal_link_spec',
-        'xijingSpec' => 'xijing_spec'
+        'miniProgramId' => 'mini_program_id',
+        'miniProgramPath' => 'mini_program_path'
     ];
 
     /**
@@ -121,12 +109,8 @@ class KeywordLandingPageInfo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'pageType' => 'setPageType',
-        'pageUrl' => 'setPageUrl',
-        'miniProgramSpec' => 'setMiniProgramSpec',
-        'deepLinkSpec' => 'setDeepLinkSpec',
-        'universalLinkSpec' => 'setUniversalLinkSpec',
-        'xijingSpec' => 'setXijingSpec'
+        'miniProgramId' => 'setMiniProgramId',
+        'miniProgramPath' => 'setMiniProgramPath'
     ];
 
     /**
@@ -135,12 +119,8 @@ class KeywordLandingPageInfo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'pageType' => 'getPageType',
-        'pageUrl' => 'getPageUrl',
-        'miniProgramSpec' => 'getMiniProgramSpec',
-        'deepLinkSpec' => 'getDeepLinkSpec',
-        'universalLinkSpec' => 'getUniversalLinkSpec',
-        'xijingSpec' => 'getXijingSpec'
+        'miniProgramId' => 'getMiniProgramId',
+        'miniProgramPath' => 'getMiniProgramPath'
     ];
 
     /**
@@ -203,12 +183,8 @@ class KeywordLandingPageInfo implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
-        $this->container['pageUrl'] = isset($data['pageUrl']) ? $data['pageUrl'] : null;
-        $this->container['miniProgramSpec'] = isset($data['miniProgramSpec']) ? $data['miniProgramSpec'] : null;
-        $this->container['deepLinkSpec'] = isset($data['deepLinkSpec']) ? $data['deepLinkSpec'] : null;
-        $this->container['universalLinkSpec'] = isset($data['universalLinkSpec']) ? $data['universalLinkSpec'] : null;
-        $this->container['xijingSpec'] = isset($data['xijingSpec']) ? $data['xijingSpec'] : null;
+        $this->container['miniProgramId'] = isset($data['miniProgramId']) ? $data['miniProgramId'] : null;
+        $this->container['miniProgramPath'] = isset($data['miniProgramPath']) ? $data['miniProgramPath'] : null;
     }
 
     /**
@@ -236,145 +212,49 @@ class KeywordLandingPageInfo implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets pageType
-     *
-     * @return \TencentAds\Model\PageTypeRead|mixed
-     */
-    public function getPageType()
-    {
-        return $this->container['pageType'];
-    }
-
-    /**
-     * Sets pageType
-     *
-     * @param \TencentAds\Model\PageTypeRead|mixed $pageType pageType
-     *
-     * @return $this
-     */
-    public function setPageType($pageType)
-    {
-        $this->container['pageType'] = $pageType;
-
-        return $this;
-    }
-
-    /**
-     * Gets pageUrl
+     * Gets miniProgramId
      *
      * @return string|mixed
      */
-    public function getPageUrl()
+    public function getMiniProgramId()
     {
-        return $this->container['pageUrl'];
+        return $this->container['miniProgramId'];
     }
 
     /**
-     * Sets pageUrl
+     * Sets miniProgramId
      *
-     * @param string|mixed $pageUrl pageUrl
+     * @param string|mixed $miniProgramId miniProgramId
      *
      * @return $this
      */
-    public function setPageUrl($pageUrl)
+    public function setMiniProgramId($miniProgramId)
     {
-        $this->container['pageUrl'] = $pageUrl;
+        $this->container['miniProgramId'] = $miniProgramId;
 
         return $this;
     }
 
     /**
-     * Gets miniProgramSpec
+     * Gets miniProgramPath
      *
-     * @return \TencentAds\Model\MiniProgramSpecStruct|mixed
+     * @return string|mixed
      */
-    public function getMiniProgramSpec()
+    public function getMiniProgramPath()
     {
-        return $this->container['miniProgramSpec'];
+        return $this->container['miniProgramPath'];
     }
 
     /**
-     * Sets miniProgramSpec
+     * Sets miniProgramPath
      *
-     * @param \TencentAds\Model\MiniProgramSpecStruct|mixed $miniProgramSpec miniProgramSpec
+     * @param string|mixed $miniProgramPath miniProgramPath
      *
      * @return $this
      */
-    public function setMiniProgramSpec($miniProgramSpec)
+    public function setMiniProgramPath($miniProgramPath)
     {
-        $this->container['miniProgramSpec'] = $miniProgramSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets deepLinkSpec
-     *
-     * @return \TencentAds\Model\DeepLinkSpecStruct|mixed
-     */
-    public function getDeepLinkSpec()
-    {
-        return $this->container['deepLinkSpec'];
-    }
-
-    /**
-     * Sets deepLinkSpec
-     *
-     * @param \TencentAds\Model\DeepLinkSpecStruct|mixed $deepLinkSpec deepLinkSpec
-     *
-     * @return $this
-     */
-    public function setDeepLinkSpec($deepLinkSpec)
-    {
-        $this->container['deepLinkSpec'] = $deepLinkSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets universalLinkSpec
-     *
-     * @return \TencentAds\Model\UniversalLinkSpecStruct|mixed
-     */
-    public function getUniversalLinkSpec()
-    {
-        return $this->container['universalLinkSpec'];
-    }
-
-    /**
-     * Sets universalLinkSpec
-     *
-     * @param \TencentAds\Model\UniversalLinkSpecStruct|mixed $universalLinkSpec universalLinkSpec
-     *
-     * @return $this
-     */
-    public function setUniversalLinkSpec($universalLinkSpec)
-    {
-        $this->container['universalLinkSpec'] = $universalLinkSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets xijingSpec
-     *
-     * @return \TencentAds\Model\XijingSpecStruct|mixed
-     */
-    public function getXijingSpec()
-    {
-        return $this->container['xijingSpec'];
-    }
-
-    /**
-     * Sets xijingSpec
-     *
-     * @param \TencentAds\Model\XijingSpecStruct|mixed $xijingSpec xijingSpec
-     *
-     * @return $this
-     */
-    public function setXijingSpec($xijingSpec)
-    {
-        $this->container['xijingSpec'] = $xijingSpec;
+        $this->container['miniProgramPath'] = $miniProgramPath;
 
         return $this;
     }

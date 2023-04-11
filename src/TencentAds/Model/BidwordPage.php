@@ -59,7 +59,11 @@ class BidwordPage implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'pageType' => '\TencentAds\Model\PageTypeRead',
-        'pageUrl' => 'string'
+        'pageUrl' => 'string',
+        'miniProgramSpec' => '\TencentAds\Model\MiniProgramSpecStruct',
+        'deepLinkSpec' => '\TencentAds\Model\DeepLinkSpecStruct',
+        'universalLinkSpec' => '\TencentAds\Model\UniversalLinkSpecStruct',
+        'xijingSpec' => '\TencentAds\Model\XijingSpecStruct'
     ];
 
     /**
@@ -69,7 +73,11 @@ class BidwordPage implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'pageType' => null,
-        'pageUrl' => null
+        'pageUrl' => null,
+        'miniProgramSpec' => null,
+        'deepLinkSpec' => null,
+        'universalLinkSpec' => null,
+        'xijingSpec' => null
     ];
 
     /**
@@ -100,7 +108,11 @@ class BidwordPage implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'pageType' => 'page_type',
-        'pageUrl' => 'page_url'
+        'pageUrl' => 'page_url',
+        'miniProgramSpec' => 'mini_program_spec',
+        'deepLinkSpec' => 'deep_link_spec',
+        'universalLinkSpec' => 'universal_link_spec',
+        'xijingSpec' => 'xijing_spec'
     ];
 
     /**
@@ -110,7 +122,11 @@ class BidwordPage implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'pageType' => 'setPageType',
-        'pageUrl' => 'setPageUrl'
+        'pageUrl' => 'setPageUrl',
+        'miniProgramSpec' => 'setMiniProgramSpec',
+        'deepLinkSpec' => 'setDeepLinkSpec',
+        'universalLinkSpec' => 'setUniversalLinkSpec',
+        'xijingSpec' => 'setXijingSpec'
     ];
 
     /**
@@ -120,7 +136,11 @@ class BidwordPage implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'pageType' => 'getPageType',
-        'pageUrl' => 'getPageUrl'
+        'pageUrl' => 'getPageUrl',
+        'miniProgramSpec' => 'getMiniProgramSpec',
+        'deepLinkSpec' => 'getDeepLinkSpec',
+        'universalLinkSpec' => 'getUniversalLinkSpec',
+        'xijingSpec' => 'getXijingSpec'
     ];
 
     /**
@@ -185,6 +205,10 @@ class BidwordPage implements ModelInterface, ArrayAccess
     {
         $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
         $this->container['pageUrl'] = isset($data['pageUrl']) ? $data['pageUrl'] : null;
+        $this->container['miniProgramSpec'] = isset($data['miniProgramSpec']) ? $data['miniProgramSpec'] : null;
+        $this->container['deepLinkSpec'] = isset($data['deepLinkSpec']) ? $data['deepLinkSpec'] : null;
+        $this->container['universalLinkSpec'] = isset($data['universalLinkSpec']) ? $data['universalLinkSpec'] : null;
+        $this->container['xijingSpec'] = isset($data['xijingSpec']) ? $data['xijingSpec'] : null;
     }
 
     /**
@@ -255,6 +279,102 @@ class BidwordPage implements ModelInterface, ArrayAccess
     public function setPageUrl($pageUrl)
     {
         $this->container['pageUrl'] = $pageUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniProgramSpec
+     *
+     * @return \TencentAds\Model\MiniProgramSpecStruct|mixed
+     */
+    public function getMiniProgramSpec()
+    {
+        return $this->container['miniProgramSpec'];
+    }
+
+    /**
+     * Sets miniProgramSpec
+     *
+     * @param \TencentAds\Model\MiniProgramSpecStruct|mixed $miniProgramSpec miniProgramSpec
+     *
+     * @return $this
+     */
+    public function setMiniProgramSpec($miniProgramSpec)
+    {
+        $this->container['miniProgramSpec'] = $miniProgramSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets deepLinkSpec
+     *
+     * @return \TencentAds\Model\DeepLinkSpecStruct|mixed
+     */
+    public function getDeepLinkSpec()
+    {
+        return $this->container['deepLinkSpec'];
+    }
+
+    /**
+     * Sets deepLinkSpec
+     *
+     * @param \TencentAds\Model\DeepLinkSpecStruct|mixed $deepLinkSpec deepLinkSpec
+     *
+     * @return $this
+     */
+    public function setDeepLinkSpec($deepLinkSpec)
+    {
+        $this->container['deepLinkSpec'] = $deepLinkSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets universalLinkSpec
+     *
+     * @return \TencentAds\Model\UniversalLinkSpecStruct|mixed
+     */
+    public function getUniversalLinkSpec()
+    {
+        return $this->container['universalLinkSpec'];
+    }
+
+    /**
+     * Sets universalLinkSpec
+     *
+     * @param \TencentAds\Model\UniversalLinkSpecStruct|mixed $universalLinkSpec universalLinkSpec
+     *
+     * @return $this
+     */
+    public function setUniversalLinkSpec($universalLinkSpec)
+    {
+        $this->container['universalLinkSpec'] = $universalLinkSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets xijingSpec
+     *
+     * @return \TencentAds\Model\XijingSpecStruct|mixed
+     */
+    public function getXijingSpec()
+    {
+        return $this->container['xijingSpec'];
+    }
+
+    /**
+     * Sets xijingSpec
+     *
+     * @param \TencentAds\Model\XijingSpecStruct|mixed $xijingSpec xijingSpec
+     *
+     * @return $this
+     */
+    public function setXijingSpec($xijingSpec)
+    {
+        $this->container['xijingSpec'] = $xijingSpec;
 
         return $this;
     }

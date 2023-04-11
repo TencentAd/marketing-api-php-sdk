@@ -121,6 +121,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'nickName' => 'string',
         'isBroadCastLeads' => 'string',
         'ownerName' => 'string',
+        'ownerId' => 'int',
         'allFollowRecords' => 'string'
     ];
 
@@ -193,6 +194,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'nickName' => null,
         'isBroadCastLeads' => null,
         'ownerName' => null,
+        'ownerId' => 'int64',
         'allFollowRecords' => null
     ];
 
@@ -286,6 +288,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'nickName' => 'nick_name',
         'isBroadCastLeads' => 'is_broad_cast_leads',
         'ownerName' => 'owner_name',
+        'ownerId' => 'owner_id',
         'allFollowRecords' => 'all_follow_records'
     ];
 
@@ -358,6 +361,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'nickName' => 'setNickName',
         'isBroadCastLeads' => 'setIsBroadCastLeads',
         'ownerName' => 'setOwnerName',
+        'ownerId' => 'setOwnerId',
         'allFollowRecords' => 'setAllFollowRecords'
     ];
 
@@ -430,6 +434,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         'nickName' => 'getNickName',
         'isBroadCastLeads' => 'getIsBroadCastLeads',
         'ownerName' => 'getOwnerName',
+        'ownerId' => 'getOwnerId',
         'allFollowRecords' => 'getAllFollowRecords'
     ];
 
@@ -556,6 +561,7 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['nickName'] = isset($data['nickName']) ? $data['nickName'] : null;
         $this->container['isBroadCastLeads'] = isset($data['isBroadCastLeads']) ? $data['isBroadCastLeads'] : null;
         $this->container['ownerName'] = isset($data['ownerName']) ? $data['ownerName'] : null;
+        $this->container['ownerId'] = isset($data['ownerId']) ? $data['ownerId'] : null;
         $this->container['allFollowRecords'] = isset($data['allFollowRecords']) ? $data['allFollowRecords'] : null;
     }
 
@@ -2091,6 +2097,30 @@ class LeadCluesGetListStruct implements ModelInterface, ArrayAccess
     public function setOwnerName($ownerName)
     {
         $this->container['ownerName'] = $ownerName;
+
+        return $this;
+    }
+
+    /**
+     * Gets ownerId
+     *
+     * @return int|mixed
+     */
+    public function getOwnerId()
+    {
+        return $this->container['ownerId'];
+    }
+
+    /**
+     * Sets ownerId
+     *
+     * @param int|mixed $ownerId ownerId
+     *
+     * @return $this
+     */
+    public function setOwnerId($ownerId)
+    {
+        $this->container['ownerId'] = $ownerId;
 
         return $this;
     }

@@ -60,6 +60,8 @@ class ReportLevel
     const CAMPAIGN_WECHAT = 'REPORT_LEVEL_CAMPAIGN_WECHAT';
     const ADGROUP_WECHAT = 'REPORT_LEVEL_ADGROUP_WECHAT';
     const AD_WECHAT = 'REPORT_LEVEL_AD_WECHAT';
+    const BIDWORD = 'REPORT_LEVEL_BIDWORD';
+    const QUERYWORD = 'REPORT_LEVEL_QUERYWORD';
     
     /**
      * Gets allowable values of the enum
@@ -84,6 +86,8 @@ class ReportLevel
             self::CAMPAIGN_WECHAT,
             self::ADGROUP_WECHAT,
             self::AD_WECHAT,
+            self::BIDWORD,
+            self::QUERYWORD,
         ];
     }
 }
