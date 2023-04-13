@@ -60,9 +60,7 @@ class QualificationSpec implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'industrySpec' => '\TencentAds\Model\IndustryQualificationsSpec',
         'adSpec' => '\TencentAds\Model\AdQualificationsSpec',
-        'additionalIndustrySpec' => '\TencentAds\Model\AdditionalIndustryQualificationsSpec',
-        'industryWechatSpec' => '\TencentAds\Model\WechatIndustryQualificationsSpec',
-        'adWechatSpec' => '\TencentAds\Model\WechatAdQualificationsSpec'
+        'additionalIndustrySpec' => '\TencentAds\Model\AdditionalIndustryQualificationsSpec'
     ];
 
     /**
@@ -73,9 +71,7 @@ class QualificationSpec implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'industrySpec' => null,
         'adSpec' => null,
-        'additionalIndustrySpec' => null,
-        'industryWechatSpec' => null,
-        'adWechatSpec' => null
+        'additionalIndustrySpec' => null
     ];
 
     /**
@@ -107,9 +103,7 @@ class QualificationSpec implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'industrySpec' => 'industry_spec',
         'adSpec' => 'ad_spec',
-        'additionalIndustrySpec' => 'additional_industry_spec',
-        'industryWechatSpec' => 'industry_wechat_spec',
-        'adWechatSpec' => 'ad_wechat_spec'
+        'additionalIndustrySpec' => 'additional_industry_spec'
     ];
 
     /**
@@ -120,9 +114,7 @@ class QualificationSpec implements ModelInterface, ArrayAccess
     protected static $setters = [
         'industrySpec' => 'setIndustrySpec',
         'adSpec' => 'setAdSpec',
-        'additionalIndustrySpec' => 'setAdditionalIndustrySpec',
-        'industryWechatSpec' => 'setIndustryWechatSpec',
-        'adWechatSpec' => 'setAdWechatSpec'
+        'additionalIndustrySpec' => 'setAdditionalIndustrySpec'
     ];
 
     /**
@@ -133,9 +125,7 @@ class QualificationSpec implements ModelInterface, ArrayAccess
     protected static $getters = [
         'industrySpec' => 'getIndustrySpec',
         'adSpec' => 'getAdSpec',
-        'additionalIndustrySpec' => 'getAdditionalIndustrySpec',
-        'industryWechatSpec' => 'getIndustryWechatSpec',
-        'adWechatSpec' => 'getAdWechatSpec'
+        'additionalIndustrySpec' => 'getAdditionalIndustrySpec'
     ];
 
     /**
@@ -201,8 +191,6 @@ class QualificationSpec implements ModelInterface, ArrayAccess
         $this->container['industrySpec'] = isset($data['industrySpec']) ? $data['industrySpec'] : null;
         $this->container['adSpec'] = isset($data['adSpec']) ? $data['adSpec'] : null;
         $this->container['additionalIndustrySpec'] = isset($data['additionalIndustrySpec']) ? $data['additionalIndustrySpec'] : null;
-        $this->container['industryWechatSpec'] = isset($data['industryWechatSpec']) ? $data['industryWechatSpec'] : null;
-        $this->container['adWechatSpec'] = isset($data['adWechatSpec']) ? $data['adWechatSpec'] : null;
     }
 
     /**
@@ -297,54 +285,6 @@ class QualificationSpec implements ModelInterface, ArrayAccess
     public function setAdditionalIndustrySpec($additionalIndustrySpec)
     {
         $this->container['additionalIndustrySpec'] = $additionalIndustrySpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets industryWechatSpec
-     *
-     * @return \TencentAds\Model\WechatIndustryQualificationsSpec|mixed
-     */
-    public function getIndustryWechatSpec()
-    {
-        return $this->container['industryWechatSpec'];
-    }
-
-    /**
-     * Sets industryWechatSpec
-     *
-     * @param \TencentAds\Model\WechatIndustryQualificationsSpec|mixed $industryWechatSpec industryWechatSpec
-     *
-     * @return $this
-     */
-    public function setIndustryWechatSpec($industryWechatSpec)
-    {
-        $this->container['industryWechatSpec'] = $industryWechatSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets adWechatSpec
-     *
-     * @return \TencentAds\Model\WechatAdQualificationsSpec|mixed
-     */
-    public function getAdWechatSpec()
-    {
-        return $this->container['adWechatSpec'];
-    }
-
-    /**
-     * Sets adWechatSpec
-     *
-     * @param \TencentAds\Model\WechatAdQualificationsSpec|mixed $adWechatSpec adWechatSpec
-     *
-     * @return $this
-     */
-    public function setAdWechatSpec($adWechatSpec)
-    {
-        $this->container['adWechatSpec'] = $adWechatSpec;
 
         return $this;
     }

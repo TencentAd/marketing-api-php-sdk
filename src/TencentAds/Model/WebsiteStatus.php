@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * WebsiteStatus Class Doc Comment
  *
  * @category Class
- * @description 推广版位系统状态
+ * @description 推广链接系统状态
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

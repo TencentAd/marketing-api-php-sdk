@@ -59,9 +59,7 @@ class QualificationsGetResponseData implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'industryQualifications' => '\TencentAds\Model\IndustryQualificationsStruct[]',
         'adQualifications' => '\TencentAds\Model\AdQualificationsStruct[]',
-        'additionalIndustryQualifications' => '\TencentAds\Model\AdditionalIndustryQualificationsStruct[]',
-        'industryQualificationsWechat' => '\TencentAds\Model\WechatIndustryQualificationsStruct[]',
-        'adQualificationsWechat' => '\TencentAds\Model\WechatAdQualificationsStruct[]'
+        'additionalIndustryQualifications' => '\TencentAds\Model\AdditionalIndustryQualificationsStruct[]'
     ];
 
     /**
@@ -72,9 +70,7 @@ class QualificationsGetResponseData implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'industryQualifications' => null,
         'adQualifications' => null,
-        'additionalIndustryQualifications' => null,
-        'industryQualificationsWechat' => null,
-        'adQualificationsWechat' => null
+        'additionalIndustryQualifications' => null
     ];
 
     /**
@@ -106,9 +102,7 @@ class QualificationsGetResponseData implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'industryQualifications' => 'industry_qualifications',
         'adQualifications' => 'ad_qualifications',
-        'additionalIndustryQualifications' => 'additional_industry_qualifications',
-        'industryQualificationsWechat' => 'industry_qualifications_wechat',
-        'adQualificationsWechat' => 'ad_qualifications_wechat'
+        'additionalIndustryQualifications' => 'additional_industry_qualifications'
     ];
 
     /**
@@ -119,9 +113,7 @@ class QualificationsGetResponseData implements ModelInterface, ArrayAccess
     protected static $setters = [
         'industryQualifications' => 'setIndustryQualifications',
         'adQualifications' => 'setAdQualifications',
-        'additionalIndustryQualifications' => 'setAdditionalIndustryQualifications',
-        'industryQualificationsWechat' => 'setIndustryQualificationsWechat',
-        'adQualificationsWechat' => 'setAdQualificationsWechat'
+        'additionalIndustryQualifications' => 'setAdditionalIndustryQualifications'
     ];
 
     /**
@@ -132,9 +124,7 @@ class QualificationsGetResponseData implements ModelInterface, ArrayAccess
     protected static $getters = [
         'industryQualifications' => 'getIndustryQualifications',
         'adQualifications' => 'getAdQualifications',
-        'additionalIndustryQualifications' => 'getAdditionalIndustryQualifications',
-        'industryQualificationsWechat' => 'getIndustryQualificationsWechat',
-        'adQualificationsWechat' => 'getAdQualificationsWechat'
+        'additionalIndustryQualifications' => 'getAdditionalIndustryQualifications'
     ];
 
     /**
@@ -200,8 +190,6 @@ class QualificationsGetResponseData implements ModelInterface, ArrayAccess
         $this->container['industryQualifications'] = isset($data['industryQualifications']) ? $data['industryQualifications'] : null;
         $this->container['adQualifications'] = isset($data['adQualifications']) ? $data['adQualifications'] : null;
         $this->container['additionalIndustryQualifications'] = isset($data['additionalIndustryQualifications']) ? $data['additionalIndustryQualifications'] : null;
-        $this->container['industryQualificationsWechat'] = isset($data['industryQualificationsWechat']) ? $data['industryQualificationsWechat'] : null;
-        $this->container['adQualificationsWechat'] = isset($data['adQualificationsWechat']) ? $data['adQualificationsWechat'] : null;
     }
 
     /**
@@ -296,54 +284,6 @@ class QualificationsGetResponseData implements ModelInterface, ArrayAccess
     public function setAdditionalIndustryQualifications($additionalIndustryQualifications)
     {
         $this->container['additionalIndustryQualifications'] = $additionalIndustryQualifications;
-
-        return $this;
-    }
-
-    /**
-     * Gets industryQualificationsWechat
-     *
-     * @return \TencentAds\Model\WechatIndustryQualificationsStruct[]|mixed
-     */
-    public function getIndustryQualificationsWechat()
-    {
-        return $this->container['industryQualificationsWechat'];
-    }
-
-    /**
-     * Sets industryQualificationsWechat
-     *
-     * @param \TencentAds\Model\WechatIndustryQualificationsStruct[]|mixed $industryQualificationsWechat industryQualificationsWechat
-     *
-     * @return $this
-     */
-    public function setIndustryQualificationsWechat($industryQualificationsWechat)
-    {
-        $this->container['industryQualificationsWechat'] = $industryQualificationsWechat;
-
-        return $this;
-    }
-
-    /**
-     * Gets adQualificationsWechat
-     *
-     * @return \TencentAds\Model\WechatAdQualificationsStruct[]|mixed
-     */
-    public function getAdQualificationsWechat()
-    {
-        return $this->container['adQualificationsWechat'];
-    }
-
-    /**
-     * Sets adQualificationsWechat
-     *
-     * @param \TencentAds\Model\WechatAdQualificationsStruct[]|mixed $adQualificationsWechat adQualificationsWechat
-     *
-     * @return $this
-     */
-    public function setAdQualificationsWechat($adQualificationsWechat)
-    {
-        $this->container['adQualificationsWechat'] = $adQualificationsWechat;
 
         return $this;
     }

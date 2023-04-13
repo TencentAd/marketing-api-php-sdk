@@ -70,7 +70,6 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'contactPersonEmail' => 'string',
         'contactPersonTelephone' => 'string',
         'contactPersonMobile' => 'string',
-        'wechatSpec' => '\TencentAds\Model\MpInfoRead',
         'websites' => '\TencentAds\Model\WebsiteReadStruct[]',
         'mdmId' => 'int',
         'mdmName' => 'string',
@@ -78,6 +77,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'operators' => '\TencentAds\Model\AdvertiserOperatorStruct[]',
         'memo' => 'string',
         'areaCode' => 'int',
+        'isLocalBusiness' => 'bool',
         'accountId' => 'int',
         'adQualificationImage' => 'string[]',
         'certificationImage' => 'string',
@@ -109,7 +109,6 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'contactPersonEmail' => null,
         'contactPersonTelephone' => null,
         'contactPersonMobile' => null,
-        'wechatSpec' => null,
         'websites' => null,
         'mdmId' => 'int64',
         'mdmName' => null,
@@ -117,6 +116,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'operators' => null,
         'memo' => null,
         'areaCode' => 'int64',
+        'isLocalBusiness' => null,
         'accountId' => 'int64',
         'adQualificationImage' => null,
         'certificationImage' => null,
@@ -169,7 +169,6 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'contactPersonEmail' => 'contact_person_email',
         'contactPersonTelephone' => 'contact_person_telephone',
         'contactPersonMobile' => 'contact_person_mobile',
-        'wechatSpec' => 'wechat_spec',
         'websites' => 'websites',
         'mdmId' => 'mdm_id',
         'mdmName' => 'mdm_name',
@@ -177,6 +176,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'operators' => 'operators',
         'memo' => 'memo',
         'areaCode' => 'area_code',
+        'isLocalBusiness' => 'is_local_business',
         'accountId' => 'account_id',
         'adQualificationImage' => 'ad_qualification_image',
         'certificationImage' => 'certification_image',
@@ -208,7 +208,6 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'contactPersonEmail' => 'setContactPersonEmail',
         'contactPersonTelephone' => 'setContactPersonTelephone',
         'contactPersonMobile' => 'setContactPersonMobile',
-        'wechatSpec' => 'setWechatSpec',
         'websites' => 'setWebsites',
         'mdmId' => 'setMdmId',
         'mdmName' => 'setMdmName',
@@ -216,6 +215,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'operators' => 'setOperators',
         'memo' => 'setMemo',
         'areaCode' => 'setAreaCode',
+        'isLocalBusiness' => 'setIsLocalBusiness',
         'accountId' => 'setAccountId',
         'adQualificationImage' => 'setAdQualificationImage',
         'certificationImage' => 'setCertificationImage',
@@ -247,7 +247,6 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'contactPersonEmail' => 'getContactPersonEmail',
         'contactPersonTelephone' => 'getContactPersonTelephone',
         'contactPersonMobile' => 'getContactPersonMobile',
-        'wechatSpec' => 'getWechatSpec',
         'websites' => 'getWebsites',
         'mdmId' => 'getMdmId',
         'mdmName' => 'getMdmName',
@@ -255,6 +254,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'operators' => 'getOperators',
         'memo' => 'getMemo',
         'areaCode' => 'getAreaCode',
+        'isLocalBusiness' => 'getIsLocalBusiness',
         'accountId' => 'getAccountId',
         'adQualificationImage' => 'getAdQualificationImage',
         'certificationImage' => 'getCertificationImage',
@@ -340,7 +340,6 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         $this->container['contactPersonEmail'] = isset($data['contactPersonEmail']) ? $data['contactPersonEmail'] : null;
         $this->container['contactPersonTelephone'] = isset($data['contactPersonTelephone']) ? $data['contactPersonTelephone'] : null;
         $this->container['contactPersonMobile'] = isset($data['contactPersonMobile']) ? $data['contactPersonMobile'] : null;
-        $this->container['wechatSpec'] = isset($data['wechatSpec']) ? $data['wechatSpec'] : null;
         $this->container['websites'] = isset($data['websites']) ? $data['websites'] : null;
         $this->container['mdmId'] = isset($data['mdmId']) ? $data['mdmId'] : null;
         $this->container['mdmName'] = isset($data['mdmName']) ? $data['mdmName'] : null;
@@ -348,6 +347,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         $this->container['operators'] = isset($data['operators']) ? $data['operators'] : null;
         $this->container['memo'] = isset($data['memo']) ? $data['memo'] : null;
         $this->container['areaCode'] = isset($data['areaCode']) ? $data['areaCode'] : null;
+        $this->container['isLocalBusiness'] = isset($data['isLocalBusiness']) ? $data['isLocalBusiness'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['adQualificationImage'] = isset($data['adQualificationImage']) ? $data['adQualificationImage'] : null;
         $this->container['certificationImage'] = isset($data['certificationImage']) ? $data['certificationImage'] : null;
@@ -674,30 +674,6 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets wechatSpec
-     *
-     * @return \TencentAds\Model\MpInfoRead|mixed
-     */
-    public function getWechatSpec()
-    {
-        return $this->container['wechatSpec'];
-    }
-
-    /**
-     * Sets wechatSpec
-     *
-     * @param \TencentAds\Model\MpInfoRead|mixed $wechatSpec wechatSpec
-     *
-     * @return $this
-     */
-    public function setWechatSpec($wechatSpec)
-    {
-        $this->container['wechatSpec'] = $wechatSpec;
-
-        return $this;
-    }
-
-    /**
      * Gets websites
      *
      * @return \TencentAds\Model\WebsiteReadStruct[]|mixed
@@ -861,6 +837,30 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     public function setAreaCode($areaCode)
     {
         $this->container['areaCode'] = $areaCode;
+
+        return $this;
+    }
+
+    /**
+     * Gets isLocalBusiness
+     *
+     * @return bool|mixed
+     */
+    public function getIsLocalBusiness()
+    {
+        return $this->container['isLocalBusiness'];
+    }
+
+    /**
+     * Sets isLocalBusiness
+     *
+     * @param bool|mixed $isLocalBusiness isLocalBusiness
+     *
+     * @return $this
+     */
+    public function setIsLocalBusiness($isLocalBusiness)
+    {
+        $this->container['isLocalBusiness'] = $isLocalBusiness;
 
         return $this;
     }
