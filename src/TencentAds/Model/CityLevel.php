@@ -48,6 +48,10 @@ class CityLevel
     const SECOND = 'CITY_LEVEL_SECOND';
     const THIRD = 'CITY_LEVEL_THIRD';
     const NONE = 'CITY_LEVEL_NONE';
+    const UNKNOW = 'CITY_LEVEL_UNKNOW';
+    const CORE = 'CITY_LEVEL_CORE';
+    const IMPORTANT = 'CITY_LEVEL_IMPORTANT';
+    const OTHER = 'CITY_LEVEL_OTHER';
     
     /**
      * Gets allowable values of the enum
@@ -60,6 +64,10 @@ class CityLevel
             self::SECOND,
             self::THIRD,
             self::NONE,
+            self::UNKNOW,
+            self::CORE,
+            self::IMPORTANT,
+            self::OTHER,
         ];
     }
 }
