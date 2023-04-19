@@ -714,6 +714,14 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'adName' => 'string',
         'promotedObjectType' => 'string',
         'promotedObjectId' => 'string',
+        'date' => 'string',
+        'matchType' => 'int',
+        'placementGroupId' => 'int',
+        'bidwordId' => 'int',
+        'bidword' => 'string',
+        'placementGroupName' => 'string',
+        'liveStreamExpUv' => 'int',
+        'liveStreamAvgTime' => 'double',
         'wechatAccountId' => 'string',
         'wechatAgencyId' => 'string',
         'costDeviationRate' => 'double',
@@ -1446,6 +1454,14 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'adName' => null,
         'promotedObjectType' => null,
         'promotedObjectId' => null,
+        'date' => null,
+        'matchType' => 'int64',
+        'placementGroupId' => 'int64',
+        'bidwordId' => 'int64',
+        'bidword' => null,
+        'placementGroupName' => null,
+        'liveStreamExpUv' => 'int64',
+        'liveStreamAvgTime' => 'double',
         'wechatAccountId' => null,
         'wechatAgencyId' => null,
         'costDeviationRate' => 'double',
@@ -2199,6 +2215,14 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'adName' => 'ad_name',
         'promotedObjectType' => 'promoted_object_type',
         'promotedObjectId' => 'promoted_object_id',
+        'date' => 'date',
+        'matchType' => 'match_type',
+        'placementGroupId' => 'placement_group_id',
+        'bidwordId' => 'bidword_id',
+        'bidword' => 'bidword',
+        'placementGroupName' => 'placement_group_name',
+        'liveStreamExpUv' => 'live_stream_exp_uv',
+        'liveStreamAvgTime' => 'live_stream_avg_time',
         'wechatAccountId' => 'wechat_account_id',
         'wechatAgencyId' => 'wechat_agency_id',
         'costDeviationRate' => 'cost_deviation_rate',
@@ -2931,6 +2955,14 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'adName' => 'setAdName',
         'promotedObjectType' => 'setPromotedObjectType',
         'promotedObjectId' => 'setPromotedObjectId',
+        'date' => 'setDate',
+        'matchType' => 'setMatchType',
+        'placementGroupId' => 'setPlacementGroupId',
+        'bidwordId' => 'setBidwordId',
+        'bidword' => 'setBidword',
+        'placementGroupName' => 'setPlacementGroupName',
+        'liveStreamExpUv' => 'setLiveStreamExpUv',
+        'liveStreamAvgTime' => 'setLiveStreamAvgTime',
         'wechatAccountId' => 'setWechatAccountId',
         'wechatAgencyId' => 'setWechatAgencyId',
         'costDeviationRate' => 'setCostDeviationRate',
@@ -3663,6 +3695,14 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'adName' => 'getAdName',
         'promotedObjectType' => 'getPromotedObjectType',
         'promotedObjectId' => 'getPromotedObjectId',
+        'date' => 'getDate',
+        'matchType' => 'getMatchType',
+        'placementGroupId' => 'getPlacementGroupId',
+        'bidwordId' => 'getBidwordId',
+        'bidword' => 'getBidword',
+        'placementGroupName' => 'getPlacementGroupName',
+        'liveStreamExpUv' => 'getLiveStreamExpUv',
+        'liveStreamAvgTime' => 'getLiveStreamAvgTime',
         'wechatAccountId' => 'getWechatAccountId',
         'wechatAgencyId' => 'getWechatAgencyId',
         'costDeviationRate' => 'getCostDeviationRate',
@@ -4449,6 +4489,14 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['adName'] = isset($data['adName']) ? $data['adName'] : null;
         $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
         $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
+        $this->container['date'] = isset($data['date']) ? $data['date'] : null;
+        $this->container['matchType'] = isset($data['matchType']) ? $data['matchType'] : null;
+        $this->container['placementGroupId'] = isset($data['placementGroupId']) ? $data['placementGroupId'] : null;
+        $this->container['bidwordId'] = isset($data['bidwordId']) ? $data['bidwordId'] : null;
+        $this->container['bidword'] = isset($data['bidword']) ? $data['bidword'] : null;
+        $this->container['placementGroupName'] = isset($data['placementGroupName']) ? $data['placementGroupName'] : null;
+        $this->container['liveStreamExpUv'] = isset($data['liveStreamExpUv']) ? $data['liveStreamExpUv'] : null;
+        $this->container['liveStreamAvgTime'] = isset($data['liveStreamAvgTime']) ? $data['liveStreamAvgTime'] : null;
         $this->container['wechatAccountId'] = isset($data['wechatAccountId']) ? $data['wechatAccountId'] : null;
         $this->container['wechatAgencyId'] = isset($data['wechatAgencyId']) ? $data['wechatAgencyId'] : null;
         $this->container['costDeviationRate'] = isset($data['costDeviationRate']) ? $data['costDeviationRate'] : null;
@@ -20283,6 +20331,198 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setPromotedObjectId($promotedObjectId)
     {
         $this->container['promotedObjectId'] = $promotedObjectId;
+
+        return $this;
+    }
+
+    /**
+     * Gets date
+     *
+     * @return string|mixed
+     */
+    public function getDate()
+    {
+        return $this->container['date'];
+    }
+
+    /**
+     * Sets date
+     *
+     * @param string|mixed $date date
+     *
+     * @return $this
+     */
+    public function setDate($date)
+    {
+        $this->container['date'] = $date;
+
+        return $this;
+    }
+
+    /**
+     * Gets matchType
+     *
+     * @return int|mixed
+     */
+    public function getMatchType()
+    {
+        return $this->container['matchType'];
+    }
+
+    /**
+     * Sets matchType
+     *
+     * @param int|mixed $matchType matchType
+     *
+     * @return $this
+     */
+    public function setMatchType($matchType)
+    {
+        $this->container['matchType'] = $matchType;
+
+        return $this;
+    }
+
+    /**
+     * Gets placementGroupId
+     *
+     * @return int|mixed
+     */
+    public function getPlacementGroupId()
+    {
+        return $this->container['placementGroupId'];
+    }
+
+    /**
+     * Sets placementGroupId
+     *
+     * @param int|mixed $placementGroupId placementGroupId
+     *
+     * @return $this
+     */
+    public function setPlacementGroupId($placementGroupId)
+    {
+        $this->container['placementGroupId'] = $placementGroupId;
+
+        return $this;
+    }
+
+    /**
+     * Gets bidwordId
+     *
+     * @return int|mixed
+     */
+    public function getBidwordId()
+    {
+        return $this->container['bidwordId'];
+    }
+
+    /**
+     * Sets bidwordId
+     *
+     * @param int|mixed $bidwordId bidwordId
+     *
+     * @return $this
+     */
+    public function setBidwordId($bidwordId)
+    {
+        $this->container['bidwordId'] = $bidwordId;
+
+        return $this;
+    }
+
+    /**
+     * Gets bidword
+     *
+     * @return string|mixed
+     */
+    public function getBidword()
+    {
+        return $this->container['bidword'];
+    }
+
+    /**
+     * Sets bidword
+     *
+     * @param string|mixed $bidword bidword
+     *
+     * @return $this
+     */
+    public function setBidword($bidword)
+    {
+        $this->container['bidword'] = $bidword;
+
+        return $this;
+    }
+
+    /**
+     * Gets placementGroupName
+     *
+     * @return string|mixed
+     */
+    public function getPlacementGroupName()
+    {
+        return $this->container['placementGroupName'];
+    }
+
+    /**
+     * Sets placementGroupName
+     *
+     * @param string|mixed $placementGroupName placementGroupName
+     *
+     * @return $this
+     */
+    public function setPlacementGroupName($placementGroupName)
+    {
+        $this->container['placementGroupName'] = $placementGroupName;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveStreamExpUv
+     *
+     * @return int|mixed
+     */
+    public function getLiveStreamExpUv()
+    {
+        return $this->container['liveStreamExpUv'];
+    }
+
+    /**
+     * Sets liveStreamExpUv
+     *
+     * @param int|mixed $liveStreamExpUv liveStreamExpUv
+     *
+     * @return $this
+     */
+    public function setLiveStreamExpUv($liveStreamExpUv)
+    {
+        $this->container['liveStreamExpUv'] = $liveStreamExpUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveStreamAvgTime
+     *
+     * @return double|mixed
+     */
+    public function getLiveStreamAvgTime()
+    {
+        return $this->container['liveStreamAvgTime'];
+    }
+
+    /**
+     * Sets liveStreamAvgTime
+     *
+     * @param double|mixed $liveStreamAvgTime liveStreamAvgTime
+     *
+     * @return $this
+     */
+    public function setLiveStreamAvgTime($liveStreamAvgTime)
+    {
+        $this->container['liveStreamAvgTime'] = $liveStreamAvgTime;
 
         return $this;
     }

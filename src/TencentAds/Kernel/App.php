@@ -17,6 +17,7 @@ use TencentAds\Container\AdcreativesApiContainer;
 use TencentAds\Container\AdcreativesRelatedCapabilityApiContainer;
 use TencentAds\Container\AdgroupNegativewordsApiContainer;
 use TencentAds\Container\AdgroupsApiContainer;
+use TencentAds\Container\AdqReportsUpgradeStatusApiContainer;
 use TencentAds\Container\AdsApiContainer;
 use TencentAds\Container\AdvertiserApiContainer;
 use TencentAds\Container\AdvertiserDailyBudgetApiContainer;
@@ -237,6 +238,9 @@ class App
 
     /** @var AdgroupsApiContainer */
     public $adgroupsApiContainer;
+
+    /** @var AdqReportsUpgradeStatusApiContainer */
+    public $adqReportsUpgradeStatusApiContainer;
 
     /** @var AdsApiContainer */
     public $adsApiContainer;
@@ -968,6 +972,20 @@ class App
             $this->adgroupsApiContainer = $container;
         }
         return $this->adgroupsApiContainer;
+    }
+
+
+    /**
+     * @return AdqReportsUpgradeStatusApiContainer
+     */
+    public function adqReportsUpgradeStatus()
+    {
+        if (empty($this->adqReportsUpgradeStatusApiContainer)) {
+            $container = new AdqReportsUpgradeStatusApiContainer();
+            $container->init($this, $this->getClient());
+            $this->adqReportsUpgradeStatusApiContainer = $container;
+        }
+        return $this->adqReportsUpgradeStatusApiContainer;
     }
 
 
