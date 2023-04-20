@@ -66,6 +66,8 @@ class AsyncReportLevel
     const CITY_VISITED_IN = 'REPORT_LEVEL_CITY_VISITED_IN';
     const CITY_LIVE_IN = 'REPORT_LEVEL_CITY_LIVE_IN';
     const CITY_TRAVEL_IN = 'REPORT_LEVEL_CITY_TRAVEL_IN';
+    const BIDWORD = 'REPORT_LEVEL_BIDWORD';
+    const QUERYWORD = 'REPORT_LEVEL_QUERYWORD';
     
     /**
      * Gets allowable values of the enum
@@ -96,6 +98,8 @@ class AsyncReportLevel
             self::CITY_VISITED_IN,
             self::CITY_LIVE_IN,
             self::CITY_TRAVEL_IN,
+            self::BIDWORD,
+            self::QUERYWORD,
         ];
     }
 }

@@ -56,12 +56,12 @@ class ReportLevel
     const MATERIAL_VIDEO = 'REPORT_LEVEL_MATERIAL_VIDEO';
     const MATERIAL_IMAGE = 'REPORT_LEVEL_MATERIAL_IMAGE';
     const PRODUCT_CATELOG = 'REPORT_LEVEL_PRODUCT_CATELOG';
+    const BIDWORD = 'REPORT_LEVEL_BIDWORD';
+    const QUERYWORD = 'REPORT_LEVEL_QUERYWORD';
     const ADVERTISER_WECHAT = 'REPORT_LEVEL_ADVERTISER_WECHAT';
     const CAMPAIGN_WECHAT = 'REPORT_LEVEL_CAMPAIGN_WECHAT';
     const ADGROUP_WECHAT = 'REPORT_LEVEL_ADGROUP_WECHAT';
     const AD_WECHAT = 'REPORT_LEVEL_AD_WECHAT';
-    const BIDWORD = 'REPORT_LEVEL_BIDWORD';
-    const QUERYWORD = 'REPORT_LEVEL_QUERYWORD';
     
     /**
      * Gets allowable values of the enum
@@ -82,12 +82,12 @@ class ReportLevel
             self::MATERIAL_VIDEO,
             self::MATERIAL_IMAGE,
             self::PRODUCT_CATELOG,
+            self::BIDWORD,
+            self::QUERYWORD,
             self::ADVERTISER_WECHAT,
             self::CAMPAIGN_WECHAT,
             self::ADGROUP_WECHAT,
             self::AD_WECHAT,
-            self::BIDWORD,
-            self::QUERYWORD,
         ];
     }
 }

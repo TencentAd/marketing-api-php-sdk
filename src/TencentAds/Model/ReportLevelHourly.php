@@ -49,11 +49,11 @@ class ReportLevelHourly
     const ADGROUP = 'REPORT_LEVEL_ADGROUP';
     const AD = 'REPORT_LEVEL_AD';
     const PROMOTED_OBJECT = 'REPORT_LEVEL_PROMOTED_OBJECT';
+    const BIDWORD = 'REPORT_LEVEL_BIDWORD';
     const ADVERTISER_WECHAT = 'REPORT_LEVEL_ADVERTISER_WECHAT';
     const CAMPAIGN_WECHAT = 'REPORT_LEVEL_CAMPAIGN_WECHAT';
     const ADGROUP_WECHAT = 'REPORT_LEVEL_ADGROUP_WECHAT';
     const AD_WECHAT = 'REPORT_LEVEL_AD_WECHAT';
-    const BIDWORD = 'REPORT_LEVEL_BIDWORD';
     
     /**
      * Gets allowable values of the enum
@@ -67,11 +67,11 @@ class ReportLevelHourly
             self::ADGROUP,
             self::AD,
             self::PROMOTED_OBJECT,
+            self::BIDWORD,
             self::ADVERTISER_WECHAT,
             self::CAMPAIGN_WECHAT,
             self::ADGROUP_WECHAT,
             self::AD_WECHAT,
-            self::BIDWORD,
         ];
     }
 }
