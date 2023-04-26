@@ -89,6 +89,7 @@ class DestinationType
     const APP_DEEP_LINK = 'PAGE_TYPE_APP_DEEP_LINK';
     const UNIVERSAL_LINK = 'PAGE_TYPE_UNIVERSAL_LINK';
     const NOT_USED = 'PAGE_TYPE_NOT_USED';
+    const CUSTOM_TV = 'PAGE_TYPE_CUSTOM_TV';
     
     /**
      * Gets allowable values of the enum
@@ -142,6 +143,7 @@ class DestinationType
             self::APP_DEEP_LINK,
             self::UNIVERSAL_LINK,
             self::NOT_USED,
+            self::CUSTOM_TV,
         ];
     }
 }

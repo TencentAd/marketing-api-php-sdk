@@ -91,6 +91,7 @@ class PageTypeRead
     const UNIVERSAL_LINK = 'PAGE_TYPE_UNIVERSAL_LINK';
     const NOT_USED = 'PAGE_TYPE_NOT_USED';
     const TSA_OTT = 'PAGE_TYPE_TSA_OTT';
+    const CUSTOM_TV = 'PAGE_TYPE_CUSTOM_TV';
     
     /**
      * Gets allowable values of the enum
@@ -146,6 +147,7 @@ class PageTypeRead
             self::UNIVERSAL_LINK,
             self::NOT_USED,
             self::TSA_OTT,
+            self::CUSTOM_TV,
         ];
     }
 }

@@ -737,10 +737,8 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'secondCategoryId' => 'int',
         'thirdCategoryId' => 'int',
         'matchType' => 'int',
-        'placementGroupId' => 'int',
         'bidwordId' => 'int',
         'bidword' => 'string',
-        'placementGroupName' => 'string',
         'queryword' => 'string',
         'hour' => 'int',
         'wechatAccountId' => 'string',
@@ -1506,10 +1504,8 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'secondCategoryId' => 'int64',
         'thirdCategoryId' => 'int64',
         'matchType' => 'int64',
-        'placementGroupId' => 'int64',
         'bidwordId' => 'int64',
         'bidword' => null,
-        'placementGroupName' => null,
         'queryword' => null,
         'hour' => 'int64',
         'wechatAccountId' => null,
@@ -2296,10 +2292,8 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'secondCategoryId' => 'second_category_id',
         'thirdCategoryId' => 'third_category_id',
         'matchType' => 'match_type',
-        'placementGroupId' => 'placement_group_id',
         'bidwordId' => 'bidword_id',
         'bidword' => 'bidword',
-        'placementGroupName' => 'placement_group_name',
         'queryword' => 'queryword',
         'hour' => 'hour',
         'wechatAccountId' => 'wechat_account_id',
@@ -3065,10 +3059,8 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'secondCategoryId' => 'setSecondCategoryId',
         'thirdCategoryId' => 'setThirdCategoryId',
         'matchType' => 'setMatchType',
-        'placementGroupId' => 'setPlacementGroupId',
         'bidwordId' => 'setBidwordId',
         'bidword' => 'setBidword',
-        'placementGroupName' => 'setPlacementGroupName',
         'queryword' => 'setQueryword',
         'hour' => 'setHour',
         'wechatAccountId' => 'setWechatAccountId',
@@ -3834,10 +3826,8 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'secondCategoryId' => 'getSecondCategoryId',
         'thirdCategoryId' => 'getThirdCategoryId',
         'matchType' => 'getMatchType',
-        'placementGroupId' => 'getPlacementGroupId',
         'bidwordId' => 'getBidwordId',
         'bidword' => 'getBidword',
-        'placementGroupName' => 'getPlacementGroupName',
         'queryword' => 'getQueryword',
         'hour' => 'getHour',
         'wechatAccountId' => 'getWechatAccountId',
@@ -4657,10 +4647,8 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['secondCategoryId'] = isset($data['secondCategoryId']) ? $data['secondCategoryId'] : null;
         $this->container['thirdCategoryId'] = isset($data['thirdCategoryId']) ? $data['thirdCategoryId'] : null;
         $this->container['matchType'] = isset($data['matchType']) ? $data['matchType'] : null;
-        $this->container['placementGroupId'] = isset($data['placementGroupId']) ? $data['placementGroupId'] : null;
         $this->container['bidwordId'] = isset($data['bidwordId']) ? $data['bidwordId'] : null;
         $this->container['bidword'] = isset($data['bidword']) ? $data['bidword'] : null;
-        $this->container['placementGroupName'] = isset($data['placementGroupName']) ? $data['placementGroupName'] : null;
         $this->container['queryword'] = isset($data['queryword']) ? $data['queryword'] : null;
         $this->container['hour'] = isset($data['hour']) ? $data['hour'] : null;
         $this->container['wechatAccountId'] = isset($data['wechatAccountId']) ? $data['wechatAccountId'] : null;
@@ -21062,30 +21050,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets placementGroupId
-     *
-     * @return int|mixed
-     */
-    public function getPlacementGroupId()
-    {
-        return $this->container['placementGroupId'];
-    }
-
-    /**
-     * Sets placementGroupId
-     *
-     * @param int|mixed $placementGroupId placementGroupId
-     *
-     * @return $this
-     */
-    public function setPlacementGroupId($placementGroupId)
-    {
-        $this->container['placementGroupId'] = $placementGroupId;
-
-        return $this;
-    }
-
-    /**
      * Gets bidwordId
      *
      * @return int|mixed
@@ -21129,30 +21093,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setBidword($bidword)
     {
         $this->container['bidword'] = $bidword;
-
-        return $this;
-    }
-
-    /**
-     * Gets placementGroupName
-     *
-     * @return string|mixed
-     */
-    public function getPlacementGroupName()
-    {
-        return $this->container['placementGroupName'];
-    }
-
-    /**
-     * Sets placementGroupName
-     *
-     * @param string|mixed $placementGroupName placementGroupName
-     *
-     * @return $this
-     */
-    public function setPlacementGroupName($placementGroupName)
-    {
-        $this->container['placementGroupName'] = $placementGroupName;
 
         return $this;
     }

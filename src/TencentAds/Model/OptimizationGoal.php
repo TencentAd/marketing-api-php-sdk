@@ -126,6 +126,9 @@ class OptimizationGoal
     const QUIT_GROUP = 'OPTIMIZATIONGOAL_QUIT_GROUP';
     const VIEW_ACQUISITION_CONTENT = 'OPTIMIZATIONGOAL_VIEW_ACQUISITION_CONTENT';
     const BACK_FLOW = 'OPTIMIZATIONGOAL_BACK_FLOW';
+    const PAGE_ONLINE_CONSULT_THREE_MSG = 'OPTIMIZATIONGOAL_PAGE_ONLINE_CONSULT_THREE_MSG';
+    const RENEWAL = 'OPTIMIZATIONGOAL_RENEWAL';
+    const LOW_PRICE_COURSE = 'OPTIMIZATIONGOAL_LOW_PRICE_COURSE';
     
     /**
      * Gets allowable values of the enum
@@ -216,6 +219,9 @@ class OptimizationGoal
             self::QUIT_GROUP,
             self::VIEW_ACQUISITION_CONTENT,
             self::BACK_FLOW,
+            self::PAGE_ONLINE_CONSULT_THREE_MSG,
+            self::RENEWAL,
+            self::LOW_PRICE_COURSE,
         ];
     }
 }

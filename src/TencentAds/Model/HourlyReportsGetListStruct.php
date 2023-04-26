@@ -716,10 +716,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectId' => 'string',
         'date' => 'string',
         'matchType' => 'int',
-        'placementGroupId' => 'int',
         'bidwordId' => 'int',
         'bidword' => 'string',
-        'placementGroupName' => 'string',
         'liveStreamExpUv' => 'int',
         'liveStreamAvgTime' => 'double',
         'wechatAccountId' => 'string',
@@ -1456,10 +1454,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectId' => null,
         'date' => null,
         'matchType' => 'int64',
-        'placementGroupId' => 'int64',
         'bidwordId' => 'int64',
         'bidword' => null,
-        'placementGroupName' => null,
         'liveStreamExpUv' => 'int64',
         'liveStreamAvgTime' => 'double',
         'wechatAccountId' => null,
@@ -2217,10 +2213,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectId' => 'promoted_object_id',
         'date' => 'date',
         'matchType' => 'match_type',
-        'placementGroupId' => 'placement_group_id',
         'bidwordId' => 'bidword_id',
         'bidword' => 'bidword',
-        'placementGroupName' => 'placement_group_name',
         'liveStreamExpUv' => 'live_stream_exp_uv',
         'liveStreamAvgTime' => 'live_stream_avg_time',
         'wechatAccountId' => 'wechat_account_id',
@@ -2957,10 +2951,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectId' => 'setPromotedObjectId',
         'date' => 'setDate',
         'matchType' => 'setMatchType',
-        'placementGroupId' => 'setPlacementGroupId',
         'bidwordId' => 'setBidwordId',
         'bidword' => 'setBidword',
-        'placementGroupName' => 'setPlacementGroupName',
         'liveStreamExpUv' => 'setLiveStreamExpUv',
         'liveStreamAvgTime' => 'setLiveStreamAvgTime',
         'wechatAccountId' => 'setWechatAccountId',
@@ -3697,10 +3689,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'promotedObjectId' => 'getPromotedObjectId',
         'date' => 'getDate',
         'matchType' => 'getMatchType',
-        'placementGroupId' => 'getPlacementGroupId',
         'bidwordId' => 'getBidwordId',
         'bidword' => 'getBidword',
-        'placementGroupName' => 'getPlacementGroupName',
         'liveStreamExpUv' => 'getLiveStreamExpUv',
         'liveStreamAvgTime' => 'getLiveStreamAvgTime',
         'wechatAccountId' => 'getWechatAccountId',
@@ -4491,10 +4481,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
         $this->container['date'] = isset($data['date']) ? $data['date'] : null;
         $this->container['matchType'] = isset($data['matchType']) ? $data['matchType'] : null;
-        $this->container['placementGroupId'] = isset($data['placementGroupId']) ? $data['placementGroupId'] : null;
         $this->container['bidwordId'] = isset($data['bidwordId']) ? $data['bidwordId'] : null;
         $this->container['bidword'] = isset($data['bidword']) ? $data['bidword'] : null;
-        $this->container['placementGroupName'] = isset($data['placementGroupName']) ? $data['placementGroupName'] : null;
         $this->container['liveStreamExpUv'] = isset($data['liveStreamExpUv']) ? $data['liveStreamExpUv'] : null;
         $this->container['liveStreamAvgTime'] = isset($data['liveStreamAvgTime']) ? $data['liveStreamAvgTime'] : null;
         $this->container['wechatAccountId'] = isset($data['wechatAccountId']) ? $data['wechatAccountId'] : null;
@@ -20384,30 +20372,6 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets placementGroupId
-     *
-     * @return int|mixed
-     */
-    public function getPlacementGroupId()
-    {
-        return $this->container['placementGroupId'];
-    }
-
-    /**
-     * Sets placementGroupId
-     *
-     * @param int|mixed $placementGroupId placementGroupId
-     *
-     * @return $this
-     */
-    public function setPlacementGroupId($placementGroupId)
-    {
-        $this->container['placementGroupId'] = $placementGroupId;
-
-        return $this;
-    }
-
-    /**
      * Gets bidwordId
      *
      * @return int|mixed
@@ -20451,30 +20415,6 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setBidword($bidword)
     {
         $this->container['bidword'] = $bidword;
-
-        return $this;
-    }
-
-    /**
-     * Gets placementGroupName
-     *
-     * @return string|mixed
-     */
-    public function getPlacementGroupName()
-    {
-        return $this->container['placementGroupName'];
-    }
-
-    /**
-     * Sets placementGroupName
-     *
-     * @param string|mixed $placementGroupName placementGroupName
-     *
-     * @return $this
-     */
-    public function setPlacementGroupName($placementGroupName)
-    {
-        $this->container['placementGroupName'] = $placementGroupName;
 
         return $this;
     }

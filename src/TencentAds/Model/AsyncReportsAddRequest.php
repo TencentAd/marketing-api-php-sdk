@@ -66,7 +66,8 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
         'groupBy' => 'string[]',
         'granularity' => '\TencentAds\Model\TimeGranularity',
         'date' => 'string',
-        'weixinOfficialAccountsUpgradeEnabled' => 'bool'
+        'weixinOfficialAccountsUpgradeEnabled' => 'bool',
+        'adqAccountsUpgradeEnabled' => 'bool'
     ];
 
     /**
@@ -84,7 +85,8 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
         'groupBy' => null,
         'granularity' => null,
         'date' => null,
-        'weixinOfficialAccountsUpgradeEnabled' => null
+        'weixinOfficialAccountsUpgradeEnabled' => null,
+        'adqAccountsUpgradeEnabled' => null
     ];
 
     /**
@@ -123,7 +125,8 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
         'groupBy' => 'group_by',
         'granularity' => 'granularity',
         'date' => 'date',
-        'weixinOfficialAccountsUpgradeEnabled' => 'weixin_official_accounts_upgrade_enabled'
+        'weixinOfficialAccountsUpgradeEnabled' => 'weixin_official_accounts_upgrade_enabled',
+        'adqAccountsUpgradeEnabled' => 'adq_accounts_upgrade_enabled'
     ];
 
     /**
@@ -141,7 +144,8 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
         'groupBy' => 'setGroupBy',
         'granularity' => 'setGranularity',
         'date' => 'setDate',
-        'weixinOfficialAccountsUpgradeEnabled' => 'setWeixinOfficialAccountsUpgradeEnabled'
+        'weixinOfficialAccountsUpgradeEnabled' => 'setWeixinOfficialAccountsUpgradeEnabled',
+        'adqAccountsUpgradeEnabled' => 'setAdqAccountsUpgradeEnabled'
     ];
 
     /**
@@ -159,7 +163,8 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
         'groupBy' => 'getGroupBy',
         'granularity' => 'getGranularity',
         'date' => 'getDate',
-        'weixinOfficialAccountsUpgradeEnabled' => 'getWeixinOfficialAccountsUpgradeEnabled'
+        'weixinOfficialAccountsUpgradeEnabled' => 'getWeixinOfficialAccountsUpgradeEnabled',
+        'adqAccountsUpgradeEnabled' => 'getAdqAccountsUpgradeEnabled'
     ];
 
     /**
@@ -232,6 +237,7 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
         $this->container['granularity'] = isset($data['granularity']) ? $data['granularity'] : null;
         $this->container['date'] = isset($data['date']) ? $data['date'] : null;
         $this->container['weixinOfficialAccountsUpgradeEnabled'] = isset($data['weixinOfficialAccountsUpgradeEnabled']) ? $data['weixinOfficialAccountsUpgradeEnabled'] : null;
+        $this->container['adqAccountsUpgradeEnabled'] = isset($data['adqAccountsUpgradeEnabled']) ? $data['adqAccountsUpgradeEnabled'] : null;
     }
 
     /**
@@ -494,6 +500,30 @@ class AsyncReportsAddRequest implements ModelInterface, ArrayAccess
     public function setWeixinOfficialAccountsUpgradeEnabled($weixinOfficialAccountsUpgradeEnabled)
     {
         $this->container['weixinOfficialAccountsUpgradeEnabled'] = $weixinOfficialAccountsUpgradeEnabled;
+
+        return $this;
+    }
+
+    /**
+     * Gets adqAccountsUpgradeEnabled
+     *
+     * @return bool|mixed
+     */
+    public function getAdqAccountsUpgradeEnabled()
+    {
+        return $this->container['adqAccountsUpgradeEnabled'];
+    }
+
+    /**
+     * Sets adqAccountsUpgradeEnabled
+     *
+     * @param bool|mixed $adqAccountsUpgradeEnabled adqAccountsUpgradeEnabled
+     *
+     * @return $this
+     */
+    public function setAdqAccountsUpgradeEnabled($adqAccountsUpgradeEnabled)
+    {
+        $this->container['adqAccountsUpgradeEnabled'] = $adqAccountsUpgradeEnabled;
 
         return $this;
     }

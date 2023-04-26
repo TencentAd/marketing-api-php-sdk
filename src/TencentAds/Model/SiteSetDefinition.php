@@ -44,59 +44,58 @@ class SiteSetDefinition
     /**
      * Possible values of this enum
      */
-    const SITE_SET_QZONE = 'SITE_SET_QZONE';
-    const SITE_SET_QQCLIENT = 'SITE_SET_QQCLIENT';
-    const SITE_SET_MUSIC = 'SITE_SET_MUSIC';
-    const SITE_SET_MOBILE_UNION = 'SITE_SET_MOBILE_UNION';
-    const SITE_SET_QQCOM = 'SITE_SET_QQCOM';
-    const SITE_SET_WECHAT = 'SITE_SET_WECHAT';
-    const SITE_SET_MOBILE_MYAPP = 'SITE_SET_MOBILE_MYAPP';
-    const SITE_SET_MOBILE_YYB = 'SITE_SET_MOBILE_YYB';
-    const SITE_SET_QQSHOPPING = 'SITE_SET_QQSHOPPING';
-    const SITE_SET_MOBILE_INNER = 'SITE_SET_MOBILE_INNER';
-    const SITE_SET_TENCENT_NEWS = 'SITE_SET_TENCENT_NEWS';
-    const SITE_SET_TENCENT_VIDEO = 'SITE_SET_TENCENT_VIDEO';
-    const SITE_SET_TENCENT_KUAIBAO = 'SITE_SET_TENCENT_KUAIBAO';
-    const SITE_SET_PENGYOU = 'SITE_SET_PENGYOU';
-    const SITE_SET_TUAN = 'SITE_SET_TUAN';
-    const SITE_SET_MEISHI = 'SITE_SET_MEISHI';
-    const SITE_SET_PIAO = 'SITE_SET_PIAO';
-    const SITE_SET_MAIL = 'SITE_SET_MAIL';
-    const SITE_SET_PC_UNION = 'SITE_SET_PC_UNION';
-    const SITE_SET_YINGYONGBAO_PC = 'SITE_SET_YINGYONGBAO_PC';
-    const SITE_SET_PAIPAISEARCH = 'SITE_SET_PAIPAISEARCH';
-    const SITE_SET_QQSHOP = 'SITE_SET_QQSHOP';
-    const SITE_SET_PAIPAIDAOGOU = 'SITE_SET_PAIPAIDAOGOU';
-    const SITE_SET_QZONESEARCH = 'SITE_SET_QZONESEARCH';
-    const SITE_SET_WEBUNION_DELETED = 'SITE_SET_WEBUNION_DELETED';
-    const SITE_SET_EXPRESSPORTAL = 'SITE_SET_EXPRESSPORTAL';
-    const SITE_SET_WEIBO = 'SITE_SET_WEIBO';
-    const SITE_SET_WANGGOU = 'SITE_SET_WANGGOU';
-    const SITE_SET_MOBILE_UNION_DELETED = 'SITE_SET_MOBILE_UNION_DELETED';
-    const SITE_SET_THIRDPARTY = 'SITE_SET_THIRDPARTY';
-    const SITE_SET_JD_WAICAI = 'SITE_SET_JD_WAICAI';
-    const SITE_SET_PCQQ = 'SITE_SET_PCQQ';
-    const SITE_SET_KUAISHOU = 'SITE_SET_KUAISHOU';
-    const SITE_SET_KANDIAN = 'SITE_SET_KANDIAN';
-    const SITE_SET_QQ_MUSIC_GAME = 'SITE_SET_QQ_MUSIC_GAME';
-    const SITE_SET_MOMENTS = 'SITE_SET_MOMENTS';
-    const SITE_SET_MINI_GAME_WECHAT = 'SITE_SET_MINI_GAME_WECHAT';
-    const SITE_SET_MINI_GAME_QQ = 'SITE_SET_MINI_GAME_QQ';
-    const SITE_SET_MOBILE_GAME = 'SITE_SET_MOBILE_GAME';
-    const SITE_SET_TENCENT_VIDEO_OTT = 'SITE_SET_TENCENT_VIDEO_OTT';
-    const SITE_SET_CHANNELS = 'SITE_SET_CHANNELS';
-    const SITE_SET_OVERSEAS_UNION = 'SITE_SET_OVERSEAS_UNION';
-    const SITE_SET_WECHAT_SEARCH = 'SITE_SET_WECHAT_SEARCH';
-    const SITE_SET_WECHAT_PLUGIN = 'SITE_SET_WECHAT_PLUGIN';
-    const SITE_SET_FREETRADE = 'SITE_SET_FREETRADE';
-    const SITE_SET_QBSEARCH = 'SITE_SET_QBSEARCH';
-    const SITE_SET_FREETRADE_FINDER = 'SITE_SET_FREETRADE_FINDER';
-    const SITE_SET_BROWSER_MOBILE = 'SITE_SET_BROWSER_MOBILE';
-    const SITE_SET_SEARCH_SCENE = 'SITE_SET_SEARCH_SCENE';
-    const SITE_SET_BROWSER_PC = 'SITE_SET_BROWSER_PC';
-    const SITE_SET_CHANNELS_CONTENT_PROMOTION = 'SITE_SET_CHANNELS_CONTENT_PROMOTION';
-    const SITE_SET_FREETRADE_WEAPP = 'SITE_SET_FREETRADE_WEAPP';
-    const SITESET_WECHAT_PLUGIN = 'SITESET_WECHAT_PLUGIN';
+    const QZONE = 'SITE_SET_QZONE';
+    const QQCLIENT = 'SITE_SET_QQCLIENT';
+    const MUSIC = 'SITE_SET_MUSIC';
+    const MOBILE_UNION = 'SITE_SET_MOBILE_UNION';
+    const QQCOM = 'SITE_SET_QQCOM';
+    const WECHAT = 'SITE_SET_WECHAT';
+    const MOBILE_MYAPP = 'SITE_SET_MOBILE_MYAPP';
+    const MOBILE_YYB = 'SITE_SET_MOBILE_YYB';
+    const QQSHOPPING = 'SITE_SET_QQSHOPPING';
+    const MOBILE_INNER = 'SITE_SET_MOBILE_INNER';
+    const TENCENT_NEWS = 'SITE_SET_TENCENT_NEWS';
+    const TENCENT_VIDEO = 'SITE_SET_TENCENT_VIDEO';
+    const TENCENT_KUAIBAO = 'SITE_SET_TENCENT_KUAIBAO';
+    const PENGYOU = 'SITE_SET_PENGYOU';
+    const TUAN = 'SITE_SET_TUAN';
+    const MEISHI = 'SITE_SET_MEISHI';
+    const PIAO = 'SITE_SET_PIAO';
+    const MAIL = 'SITE_SET_MAIL';
+    const PC_UNION = 'SITE_SET_PC_UNION';
+    const YINGYONGBAO_PC = 'SITE_SET_YINGYONGBAO_PC';
+    const PAIPAISEARCH = 'SITE_SET_PAIPAISEARCH';
+    const QQSHOP = 'SITE_SET_QQSHOP';
+    const PAIPAIDAOGOU = 'SITE_SET_PAIPAIDAOGOU';
+    const QZONESEARCH = 'SITE_SET_QZONESEARCH';
+    const WEBUNION_DELETED = 'SITE_SET_WEBUNION_DELETED';
+    const EXPRESSPORTAL = 'SITE_SET_EXPRESSPORTAL';
+    const WEIBO = 'SITE_SET_WEIBO';
+    const WANGGOU = 'SITE_SET_WANGGOU';
+    const MOBILE_UNION_DELETED = 'SITE_SET_MOBILE_UNION_DELETED';
+    const THIRDPARTY = 'SITE_SET_THIRDPARTY';
+    const JD_WAICAI = 'SITE_SET_JD_WAICAI';
+    const PCQQ = 'SITE_SET_PCQQ';
+    const KUAISHOU = 'SITE_SET_KUAISHOU';
+    const KANDIAN = 'SITE_SET_KANDIAN';
+    const QQ_MUSIC_GAME = 'SITE_SET_QQ_MUSIC_GAME';
+    const MOMENTS = 'SITE_SET_MOMENTS';
+    const MINI_GAME_WECHAT = 'SITE_SET_MINI_GAME_WECHAT';
+    const MINI_GAME_QQ = 'SITE_SET_MINI_GAME_QQ';
+    const MOBILE_GAME = 'SITE_SET_MOBILE_GAME';
+    const TENCENT_VIDEO_OTT = 'SITE_SET_TENCENT_VIDEO_OTT';
+    const CHANNELS = 'SITE_SET_CHANNELS';
+    const OVERSEAS_UNION = 'SITE_SET_OVERSEAS_UNION';
+    const WECHAT_SEARCH = 'SITE_SET_WECHAT_SEARCH';
+    const WECHAT_PLUGIN = 'SITE_SET_WECHAT_PLUGIN';
+    const FREETRADE = 'SITE_SET_FREETRADE';
+    const QBSEARCH = 'SITE_SET_QBSEARCH';
+    const FREETRADE_FINDER = 'SITE_SET_FREETRADE_FINDER';
+    const BROWSER_MOBILE = 'SITE_SET_BROWSER_MOBILE';
+    const SEARCH_SCENE = 'SITE_SET_SEARCH_SCENE';
+    const BROWSER_PC = 'SITE_SET_BROWSER_PC';
+    const CHANNELS_CONTENT_PROMOTION = 'SITE_SET_CHANNELS_CONTENT_PROMOTION';
+    const FREETRADE_WEAPP = 'SITE_SET_FREETRADE_WEAPP';
     
     /**
      * Gets allowable values of the enum
@@ -105,59 +104,58 @@ class SiteSetDefinition
     public static function getAllowableEnumValues()
     {
         return [
-            self::SITE_SET_QZONE,
-            self::SITE_SET_QQCLIENT,
-            self::SITE_SET_MUSIC,
-            self::SITE_SET_MOBILE_UNION,
-            self::SITE_SET_QQCOM,
-            self::SITE_SET_WECHAT,
-            self::SITE_SET_MOBILE_MYAPP,
-            self::SITE_SET_MOBILE_YYB,
-            self::SITE_SET_QQSHOPPING,
-            self::SITE_SET_MOBILE_INNER,
-            self::SITE_SET_TENCENT_NEWS,
-            self::SITE_SET_TENCENT_VIDEO,
-            self::SITE_SET_TENCENT_KUAIBAO,
-            self::SITE_SET_PENGYOU,
-            self::SITE_SET_TUAN,
-            self::SITE_SET_MEISHI,
-            self::SITE_SET_PIAO,
-            self::SITE_SET_MAIL,
-            self::SITE_SET_PC_UNION,
-            self::SITE_SET_YINGYONGBAO_PC,
-            self::SITE_SET_PAIPAISEARCH,
-            self::SITE_SET_QQSHOP,
-            self::SITE_SET_PAIPAIDAOGOU,
-            self::SITE_SET_QZONESEARCH,
-            self::SITE_SET_WEBUNION_DELETED,
-            self::SITE_SET_EXPRESSPORTAL,
-            self::SITE_SET_WEIBO,
-            self::SITE_SET_WANGGOU,
-            self::SITE_SET_MOBILE_UNION_DELETED,
-            self::SITE_SET_THIRDPARTY,
-            self::SITE_SET_JD_WAICAI,
-            self::SITE_SET_PCQQ,
-            self::SITE_SET_KUAISHOU,
-            self::SITE_SET_KANDIAN,
-            self::SITE_SET_QQ_MUSIC_GAME,
-            self::SITE_SET_MOMENTS,
-            self::SITE_SET_MINI_GAME_WECHAT,
-            self::SITE_SET_MINI_GAME_QQ,
-            self::SITE_SET_MOBILE_GAME,
-            self::SITE_SET_TENCENT_VIDEO_OTT,
-            self::SITE_SET_CHANNELS,
-            self::SITE_SET_OVERSEAS_UNION,
-            self::SITE_SET_WECHAT_SEARCH,
-            self::SITE_SET_WECHAT_PLUGIN,
-            self::SITE_SET_FREETRADE,
-            self::SITE_SET_QBSEARCH,
-            self::SITE_SET_FREETRADE_FINDER,
-            self::SITE_SET_BROWSER_MOBILE,
-            self::SITE_SET_SEARCH_SCENE,
-            self::SITE_SET_BROWSER_PC,
-            self::SITE_SET_CHANNELS_CONTENT_PROMOTION,
-            self::SITE_SET_FREETRADE_WEAPP,
-            self::SITESET_WECHAT_PLUGIN,
+            self::QZONE,
+            self::QQCLIENT,
+            self::MUSIC,
+            self::MOBILE_UNION,
+            self::QQCOM,
+            self::WECHAT,
+            self::MOBILE_MYAPP,
+            self::MOBILE_YYB,
+            self::QQSHOPPING,
+            self::MOBILE_INNER,
+            self::TENCENT_NEWS,
+            self::TENCENT_VIDEO,
+            self::TENCENT_KUAIBAO,
+            self::PENGYOU,
+            self::TUAN,
+            self::MEISHI,
+            self::PIAO,
+            self::MAIL,
+            self::PC_UNION,
+            self::YINGYONGBAO_PC,
+            self::PAIPAISEARCH,
+            self::QQSHOP,
+            self::PAIPAIDAOGOU,
+            self::QZONESEARCH,
+            self::WEBUNION_DELETED,
+            self::EXPRESSPORTAL,
+            self::WEIBO,
+            self::WANGGOU,
+            self::MOBILE_UNION_DELETED,
+            self::THIRDPARTY,
+            self::JD_WAICAI,
+            self::PCQQ,
+            self::KUAISHOU,
+            self::KANDIAN,
+            self::QQ_MUSIC_GAME,
+            self::MOMENTS,
+            self::MINI_GAME_WECHAT,
+            self::MINI_GAME_QQ,
+            self::MOBILE_GAME,
+            self::TENCENT_VIDEO_OTT,
+            self::CHANNELS,
+            self::OVERSEAS_UNION,
+            self::WECHAT_SEARCH,
+            self::WECHAT_PLUGIN,
+            self::FREETRADE,
+            self::QBSEARCH,
+            self::FREETRADE_FINDER,
+            self::BROWSER_MOBILE,
+            self::SEARCH_SCENE,
+            self::BROWSER_PC,
+            self::CHANNELS_CONTENT_PROMOTION,
+            self::FREETRADE_WEAPP,
         ];
     }
 }

@@ -81,6 +81,7 @@ class DestinationTypeRead
     const UNIVERSAL_LINK = 'PAGE_TYPE_UNIVERSAL_LINK';
     const TSA_OTT = 'PAGE_TYPE_TSA_OTT';
     const NOT_USED = 'PAGE_TYPE_NOT_USED';
+    const CUSTOM_TV = 'PAGE_TYPE_CUSTOM_TV';
     
     /**
      * Gets allowable values of the enum
@@ -126,6 +127,7 @@ class DestinationTypeRead
             self::UNIVERSAL_LINK,
             self::TSA_OTT,
             self::NOT_USED,
+            self::CUSTOM_TV,
         ];
     }
 }
