@@ -67,6 +67,7 @@ class UserAction implements ModelInterface, ArrayAccess
         'url' => 'string',
         'productInform' => '\TencentAds\Model\ProductInform',
         'channel' => '\TencentAds\Model\ActionChannelType',
+        'extInfo' => '\TencentAds\Model\DeviceInfo',
         'externalActionId' => 'string'
     ];
 
@@ -85,6 +86,7 @@ class UserAction implements ModelInterface, ArrayAccess
         'url' => null,
         'productInform' => null,
         'channel' => null,
+        'extInfo' => null,
         'externalActionId' => null
     ];
 
@@ -124,6 +126,7 @@ class UserAction implements ModelInterface, ArrayAccess
         'url' => 'url',
         'productInform' => 'product_inform',
         'channel' => 'channel',
+        'extInfo' => 'ext_info',
         'externalActionId' => 'external_action_id'
     ];
 
@@ -142,6 +145,7 @@ class UserAction implements ModelInterface, ArrayAccess
         'url' => 'setUrl',
         'productInform' => 'setProductInform',
         'channel' => 'setChannel',
+        'extInfo' => 'setExtInfo',
         'externalActionId' => 'setExternalActionId'
     ];
 
@@ -160,6 +164,7 @@ class UserAction implements ModelInterface, ArrayAccess
         'url' => 'getUrl',
         'productInform' => 'getProductInform',
         'channel' => 'getChannel',
+        'extInfo' => 'getExtInfo',
         'externalActionId' => 'getExternalActionId'
     ];
 
@@ -232,6 +237,7 @@ class UserAction implements ModelInterface, ArrayAccess
         $this->container['url'] = isset($data['url']) ? $data['url'] : null;
         $this->container['productInform'] = isset($data['productInform']) ? $data['productInform'] : null;
         $this->container['channel'] = isset($data['channel']) ? $data['channel'] : null;
+        $this->container['extInfo'] = isset($data['extInfo']) ? $data['extInfo'] : null;
         $this->container['externalActionId'] = isset($data['externalActionId']) ? $data['externalActionId'] : null;
     }
 
@@ -471,6 +477,30 @@ class UserAction implements ModelInterface, ArrayAccess
     public function setChannel($channel)
     {
         $this->container['channel'] = $channel;
+
+        return $this;
+    }
+
+    /**
+     * Gets extInfo
+     *
+     * @return \TencentAds\Model\DeviceInfo|mixed
+     */
+    public function getExtInfo()
+    {
+        return $this->container['extInfo'];
+    }
+
+    /**
+     * Sets extInfo
+     *
+     * @param \TencentAds\Model\DeviceInfo|mixed $extInfo extInfo
+     *
+     * @return $this
+     */
+    public function setExtInfo($extInfo)
+    {
+        $this->container['extInfo'] = $extInfo;
 
         return $this;
     }

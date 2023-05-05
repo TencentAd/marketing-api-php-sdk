@@ -553,6 +553,20 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'incomeRoi124hPla' => 'double',
         'adPurArpuCostD124hPla' => 'int',
         'firstDayAdPurArppuCost24hPla' => 'int',
+        'reservationCheckUv' => 'int',
+        'reservationCheckUvCost' => 'int',
+        'reservationCheckUvRate' => 'double',
+        'tryOutIntentionUv' => 'int',
+        'ineffectiveLeadsUv' => 'int',
+        'classParticipatedFisrtUv' => 'int',
+        'classParticipatedFisrtUvCost' => 'int',
+        'classParticipatedFisrtUvRate' => 'double',
+        'adPurArpuCostD124hReg' => 'int',
+        'adPurArpuCostD124hRegPla' => 'int',
+        'quitChatGroupAmount' => 'int',
+        'quitChatGroupRate' => 'double',
+        'creApplicationRateWeb' => 'double',
+        'creApplicationRateApp' => 'double',
         'age' => 'string',
         'regionId' => 'int',
         'cityId' => 'int',
@@ -1208,6 +1222,20 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'incomeRoi124hPla' => 'double',
         'adPurArpuCostD124hPla' => 'int64',
         'firstDayAdPurArppuCost24hPla' => 'int64',
+        'reservationCheckUv' => 'int64',
+        'reservationCheckUvCost' => 'int64',
+        'reservationCheckUvRate' => 'double',
+        'tryOutIntentionUv' => 'int64',
+        'ineffectiveLeadsUv' => 'int64',
+        'classParticipatedFisrtUv' => 'int64',
+        'classParticipatedFisrtUvCost' => 'int64',
+        'classParticipatedFisrtUvRate' => 'double',
+        'adPurArpuCostD124hReg' => 'int64',
+        'adPurArpuCostD124hRegPla' => 'int64',
+        'quitChatGroupAmount' => 'int64',
+        'quitChatGroupRate' => 'double',
+        'creApplicationRateWeb' => 'double',
+        'creApplicationRateApp' => 'double',
         'age' => null,
         'regionId' => 'int64',
         'cityId' => 'int64',
@@ -1884,6 +1912,20 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'incomeRoi124hPla' => 'income_roi_1_24h_pla',
         'adPurArpuCostD124hPla' => 'ad_pur_arpu_cost_d1_24h_pla',
         'firstDayAdPurArppuCost24hPla' => 'first_day_ad_pur_arppu_cost_24h_pla',
+        'reservationCheckUv' => 'reservation_check_uv',
+        'reservationCheckUvCost' => 'reservation_check_uv_cost',
+        'reservationCheckUvRate' => 'reservation_check_uv_rate',
+        'tryOutIntentionUv' => 'try_out_intention_uv',
+        'ineffectiveLeadsUv' => 'ineffective_leads_uv',
+        'classParticipatedFisrtUv' => 'class_participated_fisrt_uv',
+        'classParticipatedFisrtUvCost' => 'class_participated_fisrt_uv_cost',
+        'classParticipatedFisrtUvRate' => 'class_participated_fisrt_uv_rate',
+        'adPurArpuCostD124hReg' => 'ad_pur_arpu_cost_d1_24h_reg',
+        'adPurArpuCostD124hRegPla' => 'ad_pur_arpu_cost_d1_24h_reg_pla',
+        'quitChatGroupAmount' => 'quit_chat_group_amount',
+        'quitChatGroupRate' => 'quit_chat_group_rate',
+        'creApplicationRateWeb' => 'cre_application_rate_web',
+        'creApplicationRateApp' => 'cre_application_rate_app',
         'age' => 'age',
         'regionId' => 'region_id',
         'cityId' => 'city_id',
@@ -2539,6 +2581,20 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'incomeRoi124hPla' => 'setIncomeRoi124hPla',
         'adPurArpuCostD124hPla' => 'setAdPurArpuCostD124hPla',
         'firstDayAdPurArppuCost24hPla' => 'setFirstDayAdPurArppuCost24hPla',
+        'reservationCheckUv' => 'setReservationCheckUv',
+        'reservationCheckUvCost' => 'setReservationCheckUvCost',
+        'reservationCheckUvRate' => 'setReservationCheckUvRate',
+        'tryOutIntentionUv' => 'setTryOutIntentionUv',
+        'ineffectiveLeadsUv' => 'setIneffectiveLeadsUv',
+        'classParticipatedFisrtUv' => 'setClassParticipatedFisrtUv',
+        'classParticipatedFisrtUvCost' => 'setClassParticipatedFisrtUvCost',
+        'classParticipatedFisrtUvRate' => 'setClassParticipatedFisrtUvRate',
+        'adPurArpuCostD124hReg' => 'setAdPurArpuCostD124hReg',
+        'adPurArpuCostD124hRegPla' => 'setAdPurArpuCostD124hRegPla',
+        'quitChatGroupAmount' => 'setQuitChatGroupAmount',
+        'quitChatGroupRate' => 'setQuitChatGroupRate',
+        'creApplicationRateWeb' => 'setCreApplicationRateWeb',
+        'creApplicationRateApp' => 'setCreApplicationRateApp',
         'age' => 'setAge',
         'regionId' => 'setRegionId',
         'cityId' => 'setCityId',
@@ -3194,6 +3250,20 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'incomeRoi124hPla' => 'getIncomeRoi124hPla',
         'adPurArpuCostD124hPla' => 'getAdPurArpuCostD124hPla',
         'firstDayAdPurArppuCost24hPla' => 'getFirstDayAdPurArppuCost24hPla',
+        'reservationCheckUv' => 'getReservationCheckUv',
+        'reservationCheckUvCost' => 'getReservationCheckUvCost',
+        'reservationCheckUvRate' => 'getReservationCheckUvRate',
+        'tryOutIntentionUv' => 'getTryOutIntentionUv',
+        'ineffectiveLeadsUv' => 'getIneffectiveLeadsUv',
+        'classParticipatedFisrtUv' => 'getClassParticipatedFisrtUv',
+        'classParticipatedFisrtUvCost' => 'getClassParticipatedFisrtUvCost',
+        'classParticipatedFisrtUvRate' => 'getClassParticipatedFisrtUvRate',
+        'adPurArpuCostD124hReg' => 'getAdPurArpuCostD124hReg',
+        'adPurArpuCostD124hRegPla' => 'getAdPurArpuCostD124hRegPla',
+        'quitChatGroupAmount' => 'getQuitChatGroupAmount',
+        'quitChatGroupRate' => 'getQuitChatGroupRate',
+        'creApplicationRateWeb' => 'getCreApplicationRateWeb',
+        'creApplicationRateApp' => 'getCreApplicationRateApp',
         'age' => 'getAge',
         'regionId' => 'getRegionId',
         'cityId' => 'getCityId',
@@ -3903,6 +3973,20 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['incomeRoi124hPla'] = isset($data['incomeRoi124hPla']) ? $data['incomeRoi124hPla'] : null;
         $this->container['adPurArpuCostD124hPla'] = isset($data['adPurArpuCostD124hPla']) ? $data['adPurArpuCostD124hPla'] : null;
         $this->container['firstDayAdPurArppuCost24hPla'] = isset($data['firstDayAdPurArppuCost24hPla']) ? $data['firstDayAdPurArppuCost24hPla'] : null;
+        $this->container['reservationCheckUv'] = isset($data['reservationCheckUv']) ? $data['reservationCheckUv'] : null;
+        $this->container['reservationCheckUvCost'] = isset($data['reservationCheckUvCost']) ? $data['reservationCheckUvCost'] : null;
+        $this->container['reservationCheckUvRate'] = isset($data['reservationCheckUvRate']) ? $data['reservationCheckUvRate'] : null;
+        $this->container['tryOutIntentionUv'] = isset($data['tryOutIntentionUv']) ? $data['tryOutIntentionUv'] : null;
+        $this->container['ineffectiveLeadsUv'] = isset($data['ineffectiveLeadsUv']) ? $data['ineffectiveLeadsUv'] : null;
+        $this->container['classParticipatedFisrtUv'] = isset($data['classParticipatedFisrtUv']) ? $data['classParticipatedFisrtUv'] : null;
+        $this->container['classParticipatedFisrtUvCost'] = isset($data['classParticipatedFisrtUvCost']) ? $data['classParticipatedFisrtUvCost'] : null;
+        $this->container['classParticipatedFisrtUvRate'] = isset($data['classParticipatedFisrtUvRate']) ? $data['classParticipatedFisrtUvRate'] : null;
+        $this->container['adPurArpuCostD124hReg'] = isset($data['adPurArpuCostD124hReg']) ? $data['adPurArpuCostD124hReg'] : null;
+        $this->container['adPurArpuCostD124hRegPla'] = isset($data['adPurArpuCostD124hRegPla']) ? $data['adPurArpuCostD124hRegPla'] : null;
+        $this->container['quitChatGroupAmount'] = isset($data['quitChatGroupAmount']) ? $data['quitChatGroupAmount'] : null;
+        $this->container['quitChatGroupRate'] = isset($data['quitChatGroupRate']) ? $data['quitChatGroupRate'] : null;
+        $this->container['creApplicationRateWeb'] = isset($data['creApplicationRateWeb']) ? $data['creApplicationRateWeb'] : null;
+        $this->container['creApplicationRateApp'] = isset($data['creApplicationRateApp']) ? $data['creApplicationRateApp'] : null;
         $this->container['age'] = isset($data['age']) ? $data['age'] : null;
         $this->container['regionId'] = isset($data['regionId']) ? $data['regionId'] : null;
         $this->container['cityId'] = isset($data['cityId']) ? $data['cityId'] : null;
@@ -15957,6 +16041,342 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setFirstDayAdPurArppuCost24hPla($firstDayAdPurArppuCost24hPla)
     {
         $this->container['firstDayAdPurArppuCost24hPla'] = $firstDayAdPurArppuCost24hPla;
+
+        return $this;
+    }
+
+    /**
+     * Gets reservationCheckUv
+     *
+     * @return int|mixed
+     */
+    public function getReservationCheckUv()
+    {
+        return $this->container['reservationCheckUv'];
+    }
+
+    /**
+     * Sets reservationCheckUv
+     *
+     * @param int|mixed $reservationCheckUv reservationCheckUv
+     *
+     * @return $this
+     */
+    public function setReservationCheckUv($reservationCheckUv)
+    {
+        $this->container['reservationCheckUv'] = $reservationCheckUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets reservationCheckUvCost
+     *
+     * @return int|mixed
+     */
+    public function getReservationCheckUvCost()
+    {
+        return $this->container['reservationCheckUvCost'];
+    }
+
+    /**
+     * Sets reservationCheckUvCost
+     *
+     * @param int|mixed $reservationCheckUvCost reservationCheckUvCost
+     *
+     * @return $this
+     */
+    public function setReservationCheckUvCost($reservationCheckUvCost)
+    {
+        $this->container['reservationCheckUvCost'] = $reservationCheckUvCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets reservationCheckUvRate
+     *
+     * @return double|mixed
+     */
+    public function getReservationCheckUvRate()
+    {
+        return $this->container['reservationCheckUvRate'];
+    }
+
+    /**
+     * Sets reservationCheckUvRate
+     *
+     * @param double|mixed $reservationCheckUvRate reservationCheckUvRate
+     *
+     * @return $this
+     */
+    public function setReservationCheckUvRate($reservationCheckUvRate)
+    {
+        $this->container['reservationCheckUvRate'] = $reservationCheckUvRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets tryOutIntentionUv
+     *
+     * @return int|mixed
+     */
+    public function getTryOutIntentionUv()
+    {
+        return $this->container['tryOutIntentionUv'];
+    }
+
+    /**
+     * Sets tryOutIntentionUv
+     *
+     * @param int|mixed $tryOutIntentionUv tryOutIntentionUv
+     *
+     * @return $this
+     */
+    public function setTryOutIntentionUv($tryOutIntentionUv)
+    {
+        $this->container['tryOutIntentionUv'] = $tryOutIntentionUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets ineffectiveLeadsUv
+     *
+     * @return int|mixed
+     */
+    public function getIneffectiveLeadsUv()
+    {
+        return $this->container['ineffectiveLeadsUv'];
+    }
+
+    /**
+     * Sets ineffectiveLeadsUv
+     *
+     * @param int|mixed $ineffectiveLeadsUv ineffectiveLeadsUv
+     *
+     * @return $this
+     */
+    public function setIneffectiveLeadsUv($ineffectiveLeadsUv)
+    {
+        $this->container['ineffectiveLeadsUv'] = $ineffectiveLeadsUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets classParticipatedFisrtUv
+     *
+     * @return int|mixed
+     */
+    public function getClassParticipatedFisrtUv()
+    {
+        return $this->container['classParticipatedFisrtUv'];
+    }
+
+    /**
+     * Sets classParticipatedFisrtUv
+     *
+     * @param int|mixed $classParticipatedFisrtUv classParticipatedFisrtUv
+     *
+     * @return $this
+     */
+    public function setClassParticipatedFisrtUv($classParticipatedFisrtUv)
+    {
+        $this->container['classParticipatedFisrtUv'] = $classParticipatedFisrtUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets classParticipatedFisrtUvCost
+     *
+     * @return int|mixed
+     */
+    public function getClassParticipatedFisrtUvCost()
+    {
+        return $this->container['classParticipatedFisrtUvCost'];
+    }
+
+    /**
+     * Sets classParticipatedFisrtUvCost
+     *
+     * @param int|mixed $classParticipatedFisrtUvCost classParticipatedFisrtUvCost
+     *
+     * @return $this
+     */
+    public function setClassParticipatedFisrtUvCost($classParticipatedFisrtUvCost)
+    {
+        $this->container['classParticipatedFisrtUvCost'] = $classParticipatedFisrtUvCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets classParticipatedFisrtUvRate
+     *
+     * @return double|mixed
+     */
+    public function getClassParticipatedFisrtUvRate()
+    {
+        return $this->container['classParticipatedFisrtUvRate'];
+    }
+
+    /**
+     * Sets classParticipatedFisrtUvRate
+     *
+     * @param double|mixed $classParticipatedFisrtUvRate classParticipatedFisrtUvRate
+     *
+     * @return $this
+     */
+    public function setClassParticipatedFisrtUvRate($classParticipatedFisrtUvRate)
+    {
+        $this->container['classParticipatedFisrtUvRate'] = $classParticipatedFisrtUvRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets adPurArpuCostD124hReg
+     *
+     * @return int|mixed
+     */
+    public function getAdPurArpuCostD124hReg()
+    {
+        return $this->container['adPurArpuCostD124hReg'];
+    }
+
+    /**
+     * Sets adPurArpuCostD124hReg
+     *
+     * @param int|mixed $adPurArpuCostD124hReg adPurArpuCostD124hReg
+     *
+     * @return $this
+     */
+    public function setAdPurArpuCostD124hReg($adPurArpuCostD124hReg)
+    {
+        $this->container['adPurArpuCostD124hReg'] = $adPurArpuCostD124hReg;
+
+        return $this;
+    }
+
+    /**
+     * Gets adPurArpuCostD124hRegPla
+     *
+     * @return int|mixed
+     */
+    public function getAdPurArpuCostD124hRegPla()
+    {
+        return $this->container['adPurArpuCostD124hRegPla'];
+    }
+
+    /**
+     * Sets adPurArpuCostD124hRegPla
+     *
+     * @param int|mixed $adPurArpuCostD124hRegPla adPurArpuCostD124hRegPla
+     *
+     * @return $this
+     */
+    public function setAdPurArpuCostD124hRegPla($adPurArpuCostD124hRegPla)
+    {
+        $this->container['adPurArpuCostD124hRegPla'] = $adPurArpuCostD124hRegPla;
+
+        return $this;
+    }
+
+    /**
+     * Gets quitChatGroupAmount
+     *
+     * @return int|mixed
+     */
+    public function getQuitChatGroupAmount()
+    {
+        return $this->container['quitChatGroupAmount'];
+    }
+
+    /**
+     * Sets quitChatGroupAmount
+     *
+     * @param int|mixed $quitChatGroupAmount quitChatGroupAmount
+     *
+     * @return $this
+     */
+    public function setQuitChatGroupAmount($quitChatGroupAmount)
+    {
+        $this->container['quitChatGroupAmount'] = $quitChatGroupAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets quitChatGroupRate
+     *
+     * @return double|mixed
+     */
+    public function getQuitChatGroupRate()
+    {
+        return $this->container['quitChatGroupRate'];
+    }
+
+    /**
+     * Sets quitChatGroupRate
+     *
+     * @param double|mixed $quitChatGroupRate quitChatGroupRate
+     *
+     * @return $this
+     */
+    public function setQuitChatGroupRate($quitChatGroupRate)
+    {
+        $this->container['quitChatGroupRate'] = $quitChatGroupRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets creApplicationRateWeb
+     *
+     * @return double|mixed
+     */
+    public function getCreApplicationRateWeb()
+    {
+        return $this->container['creApplicationRateWeb'];
+    }
+
+    /**
+     * Sets creApplicationRateWeb
+     *
+     * @param double|mixed $creApplicationRateWeb creApplicationRateWeb
+     *
+     * @return $this
+     */
+    public function setCreApplicationRateWeb($creApplicationRateWeb)
+    {
+        $this->container['creApplicationRateWeb'] = $creApplicationRateWeb;
+
+        return $this;
+    }
+
+    /**
+     * Gets creApplicationRateApp
+     *
+     * @return double|mixed
+     */
+    public function getCreApplicationRateApp()
+    {
+        return $this->container['creApplicationRateApp'];
+    }
+
+    /**
+     * Sets creApplicationRateApp
+     *
+     * @param double|mixed $creApplicationRateApp creApplicationRateApp
+     *
+     * @return $this
+     */
+    public function setCreApplicationRateApp($creApplicationRateApp)
+    {
+        $this->container['creApplicationRateApp'] = $creApplicationRateApp;
 
         return $this;
     }
