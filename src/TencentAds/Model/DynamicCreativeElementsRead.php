@@ -164,7 +164,9 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'wxgamePlayablePageSpec' => '\TencentAds\Model\WxgamePlayablePageSpec',
         'mainJumpInfo' => '\TencentAds\Model\LandingPageStructure[]',
         'mdpaTitleComponentOptions' => '\TencentAds\Model\MdpaTitleComponentOption[]',
-        'mdpaDescComponentOptions' => '\TencentAds\Model\MdpaDescComponentOption[]'
+        'mdpaDescComponentOptions' => '\TencentAds\Model\MdpaDescComponentOption[]',
+        'listSublinkComponentOptions' => '\TencentAds\Model\ListSublinkComponentOption[]',
+        'imageList3ComponentOptions' => '\TencentAds\Model\ImageListComponentOption[]'
     ];
 
     /**
@@ -279,7 +281,9 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'wxgamePlayablePageSpec' => null,
         'mainJumpInfo' => null,
         'mdpaTitleComponentOptions' => null,
-        'mdpaDescComponentOptions' => null
+        'mdpaDescComponentOptions' => null,
+        'listSublinkComponentOptions' => null,
+        'imageList3ComponentOptions' => null
     ];
 
     /**
@@ -415,7 +419,9 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'wxgamePlayablePageSpec' => 'wxgame_playable_page_spec',
         'mainJumpInfo' => 'main_jump_info',
         'mdpaTitleComponentOptions' => 'mdpa_title_component_options',
-        'mdpaDescComponentOptions' => 'mdpa_desc_component_options'
+        'mdpaDescComponentOptions' => 'mdpa_desc_component_options',
+        'listSublinkComponentOptions' => 'list_sublink_component_options',
+        'imageList3ComponentOptions' => 'image_list3_component_options'
     ];
 
     /**
@@ -530,7 +536,9 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'wxgamePlayablePageSpec' => 'setWxgamePlayablePageSpec',
         'mainJumpInfo' => 'setMainJumpInfo',
         'mdpaTitleComponentOptions' => 'setMdpaTitleComponentOptions',
-        'mdpaDescComponentOptions' => 'setMdpaDescComponentOptions'
+        'mdpaDescComponentOptions' => 'setMdpaDescComponentOptions',
+        'listSublinkComponentOptions' => 'setListSublinkComponentOptions',
+        'imageList3ComponentOptions' => 'setImageList3ComponentOptions'
     ];
 
     /**
@@ -645,7 +653,9 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'wxgamePlayablePageSpec' => 'getWxgamePlayablePageSpec',
         'mainJumpInfo' => 'getMainJumpInfo',
         'mdpaTitleComponentOptions' => 'getMdpaTitleComponentOptions',
-        'mdpaDescComponentOptions' => 'getMdpaDescComponentOptions'
+        'mdpaDescComponentOptions' => 'getMdpaDescComponentOptions',
+        'listSublinkComponentOptions' => 'getListSublinkComponentOptions',
+        'imageList3ComponentOptions' => 'getImageList3ComponentOptions'
     ];
 
     /**
@@ -815,6 +825,8 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         $this->container['mainJumpInfo'] = isset($data['mainJumpInfo']) ? $data['mainJumpInfo'] : null;
         $this->container['mdpaTitleComponentOptions'] = isset($data['mdpaTitleComponentOptions']) ? $data['mdpaTitleComponentOptions'] : null;
         $this->container['mdpaDescComponentOptions'] = isset($data['mdpaDescComponentOptions']) ? $data['mdpaDescComponentOptions'] : null;
+        $this->container['listSublinkComponentOptions'] = isset($data['listSublinkComponentOptions']) ? $data['listSublinkComponentOptions'] : null;
+        $this->container['imageList3ComponentOptions'] = isset($data['imageList3ComponentOptions']) ? $data['imageList3ComponentOptions'] : null;
     }
 
     /**
@@ -3405,6 +3417,54 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
     public function setMdpaDescComponentOptions($mdpaDescComponentOptions)
     {
         $this->container['mdpaDescComponentOptions'] = $mdpaDescComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets listSublinkComponentOptions
+     *
+     * @return \TencentAds\Model\ListSublinkComponentOption[]|mixed
+     */
+    public function getListSublinkComponentOptions()
+    {
+        return $this->container['listSublinkComponentOptions'];
+    }
+
+    /**
+     * Sets listSublinkComponentOptions
+     *
+     * @param \TencentAds\Model\ListSublinkComponentOption[]|mixed $listSublinkComponentOptions listSublinkComponentOptions
+     *
+     * @return $this
+     */
+    public function setListSublinkComponentOptions($listSublinkComponentOptions)
+    {
+        $this->container['listSublinkComponentOptions'] = $listSublinkComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets imageList3ComponentOptions
+     *
+     * @return \TencentAds\Model\ImageListComponentOption[]|mixed
+     */
+    public function getImageList3ComponentOptions()
+    {
+        return $this->container['imageList3ComponentOptions'];
+    }
+
+    /**
+     * Sets imageList3ComponentOptions
+     *
+     * @param \TencentAds\Model\ImageListComponentOption[]|mixed $imageList3ComponentOptions imageList3ComponentOptions
+     *
+     * @return $this
+     */
+    public function setImageList3ComponentOptions($imageList3ComponentOptions)
+    {
+        $this->container['imageList3ComponentOptions'] = $imageList3ComponentOptions;
 
         return $this;
     }

@@ -73,6 +73,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'taskTypeUpdateAndroidUnionChannelPackageSpec' => '\TencentAds\Model\TaskTypeUpdateAndroidUnionChannelPackageSpec',
         'taskTypeUnionPositionReportSpec' => '\TencentAds\Model\TaskTypeUnionPositionReportSpec',
         'taskTypeReviewElementPrereviewResultSpec' => '\TencentAds\Model\TaskTypeReviewElementPrereviewResultSpec',
+        'taskTypeMassiveKeywordRecommendSpec' => '\TencentAds\Model\TaskTypeMassiveKeywordRecommendSpec',
         'taskTypeSearchDownloadAllSpec' => '\TencentAds\Model\TaskTypeSearchDownloadAllSpec'
     ];
 
@@ -97,6 +98,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'taskTypeUpdateAndroidUnionChannelPackageSpec' => null,
         'taskTypeUnionPositionReportSpec' => null,
         'taskTypeReviewElementPrereviewResultSpec' => null,
+        'taskTypeMassiveKeywordRecommendSpec' => null,
         'taskTypeSearchDownloadAllSpec' => null
     ];
 
@@ -142,6 +144,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'taskTypeUpdateAndroidUnionChannelPackageSpec' => 'task_type_update_android_union_channel_package_spec',
         'taskTypeUnionPositionReportSpec' => 'task_type_union_position_report_spec',
         'taskTypeReviewElementPrereviewResultSpec' => 'task_type_review_element_prereview_result_spec',
+        'taskTypeMassiveKeywordRecommendSpec' => 'task_type_massive_keyword_recommend_spec',
         'taskTypeSearchDownloadAllSpec' => 'task_type_search_download_all_spec'
     ];
 
@@ -166,6 +169,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'taskTypeUpdateAndroidUnionChannelPackageSpec' => 'setTaskTypeUpdateAndroidUnionChannelPackageSpec',
         'taskTypeUnionPositionReportSpec' => 'setTaskTypeUnionPositionReportSpec',
         'taskTypeReviewElementPrereviewResultSpec' => 'setTaskTypeReviewElementPrereviewResultSpec',
+        'taskTypeMassiveKeywordRecommendSpec' => 'setTaskTypeMassiveKeywordRecommendSpec',
         'taskTypeSearchDownloadAllSpec' => 'setTaskTypeSearchDownloadAllSpec'
     ];
 
@@ -190,6 +194,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'taskTypeUpdateAndroidUnionChannelPackageSpec' => 'getTaskTypeUpdateAndroidUnionChannelPackageSpec',
         'taskTypeUnionPositionReportSpec' => 'getTaskTypeUnionPositionReportSpec',
         'taskTypeReviewElementPrereviewResultSpec' => 'getTaskTypeReviewElementPrereviewResultSpec',
+        'taskTypeMassiveKeywordRecommendSpec' => 'getTaskTypeMassiveKeywordRecommendSpec',
         'taskTypeSearchDownloadAllSpec' => 'getTaskTypeSearchDownloadAllSpec'
     ];
 
@@ -268,6 +273,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
         $this->container['taskTypeUpdateAndroidUnionChannelPackageSpec'] = isset($data['taskTypeUpdateAndroidUnionChannelPackageSpec']) ? $data['taskTypeUpdateAndroidUnionChannelPackageSpec'] : null;
         $this->container['taskTypeUnionPositionReportSpec'] = isset($data['taskTypeUnionPositionReportSpec']) ? $data['taskTypeUnionPositionReportSpec'] : null;
         $this->container['taskTypeReviewElementPrereviewResultSpec'] = isset($data['taskTypeReviewElementPrereviewResultSpec']) ? $data['taskTypeReviewElementPrereviewResultSpec'] : null;
+        $this->container['taskTypeMassiveKeywordRecommendSpec'] = isset($data['taskTypeMassiveKeywordRecommendSpec']) ? $data['taskTypeMassiveKeywordRecommendSpec'] : null;
         $this->container['taskTypeSearchDownloadAllSpec'] = isset($data['taskTypeSearchDownloadAllSpec']) ? $data['taskTypeSearchDownloadAllSpec'] : null;
     }
 
@@ -651,6 +657,30 @@ class TaskSpec implements ModelInterface, ArrayAccess
     public function setTaskTypeReviewElementPrereviewResultSpec($taskTypeReviewElementPrereviewResultSpec)
     {
         $this->container['taskTypeReviewElementPrereviewResultSpec'] = $taskTypeReviewElementPrereviewResultSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets taskTypeMassiveKeywordRecommendSpec
+     *
+     * @return \TencentAds\Model\TaskTypeMassiveKeywordRecommendSpec|mixed
+     */
+    public function getTaskTypeMassiveKeywordRecommendSpec()
+    {
+        return $this->container['taskTypeMassiveKeywordRecommendSpec'];
+    }
+
+    /**
+     * Sets taskTypeMassiveKeywordRecommendSpec
+     *
+     * @param \TencentAds\Model\TaskTypeMassiveKeywordRecommendSpec|mixed $taskTypeMassiveKeywordRecommendSpec taskTypeMassiveKeywordRecommendSpec
+     *
+     * @return $this
+     */
+    public function setTaskTypeMassiveKeywordRecommendSpec($taskTypeMassiveKeywordRecommendSpec)
+    {
+        $this->container['taskTypeMassiveKeywordRecommendSpec'] = $taskTypeMassiveKeywordRecommendSpec;
 
         return $this;
     }
