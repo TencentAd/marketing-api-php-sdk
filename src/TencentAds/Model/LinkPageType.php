@@ -71,6 +71,7 @@ class LinkPageType
     const XJ_QUICK = 'LINK_PAGE_TYPE_XJ_QUICK';
     const YOUZAN_WECHAT_MINIPROGRAM = 'LINK_PAGE_TYPE_YOUZAN_WECHAT_MINIPROGRAM';
     const WEIMOB_WECHAT_MINIPROGRAM = 'LINK_PAGE_TYPE_WEIMOB_WECHAT_MINIPROGRAM';
+    const ANDROID_DIRECT_DOWNLOAD = 'LINK_PAGE_TYPE_ANDROID_DIRECT_DOWNLOAD';
     
     /**
      * Gets allowable values of the enum
@@ -106,6 +107,7 @@ class LinkPageType
             self::XJ_QUICK,
             self::YOUZAN_WECHAT_MINIPROGRAM,
             self::WEIMOB_WECHAT_MINIPROGRAM,
+            self::ANDROID_DIRECT_DOWNLOAD,
         ];
     }
 }

@@ -46,6 +46,7 @@ class VideoTemplateType
      */
     const IMG_TRANSFORM = 'VIDEO_TEMPLATE_TYPE_IMG_TRANSFORM';
     const TRANSPARENT = 'VIDEO_TEMPLATE_TYPE_TRANSPARENT';
+    const CHANNEL_TRANSPARENT = 'VIDEO_TEMPLATE_TYPE_CHANNEL_TRANSPARENT';
     
     /**
      * Gets allowable values of the enum
@@ -56,6 +57,7 @@ class VideoTemplateType
         return [
             self::IMG_TRANSFORM,
             self::TRANSPARENT,
+            self::CHANNEL_TRANSPARENT,
         ];
     }
 }

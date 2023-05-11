@@ -63,6 +63,7 @@ class AccountTypeMap
     const TCC_GIFT = 'FUND_TYPE_TCC_GIFT';
     const JD_PRIVILEGE = 'FUND_TYPE_JD_PRIVILEGE';
     const JD_WIRELESS_CASH = 'FUND_TYPE_JD_WIRELESS_CASH';
+    const CONTRACT_CREDIT = 'FUND_TYPE_CONTRACT_CREDIT';
     const SPECIAL_GIFT = 'FUND_TYPE_SPECIAL_GIFT';
     const MP_GAME_DEVELOPER_WORKING_FUND = 'FUND_TYPE_MP_GAME_DEVELOPER_WORKING_FUND';
     const MP_GAME_DEVELOPER_GIFT = 'FUND_TYPE_MP_GAME_DEVELOPER_GIFT';
@@ -99,6 +100,7 @@ class AccountTypeMap
             self::TCC_GIFT,
             self::JD_PRIVILEGE,
             self::JD_WIRELESS_CASH,
+            self::CONTRACT_CREDIT,
             self::SPECIAL_GIFT,
             self::MP_GAME_DEVELOPER_WORKING_FUND,
             self::MP_GAME_DEVELOPER_GIFT,

@@ -66,6 +66,8 @@ class DynamicAdVideoTemplatesGetListStruct implements ModelInterface, ArrayAcces
         'coverImageUrl' => 'string',
         'introVideoUrl' => 'string',
         'deliveryVideoUrl' => 'string',
+        'supportChannel' => 'bool',
+        'extra' => '\TencentAds\Model\Extra',
         'subTemplateList' => '\TencentAds\Model\SubTemplateStruct[]'
     ];
 
@@ -83,6 +85,8 @@ class DynamicAdVideoTemplatesGetListStruct implements ModelInterface, ArrayAcces
         'coverImageUrl' => null,
         'introVideoUrl' => null,
         'deliveryVideoUrl' => null,
+        'supportChannel' => null,
+        'extra' => null,
         'subTemplateList' => null
     ];
 
@@ -121,6 +125,8 @@ class DynamicAdVideoTemplatesGetListStruct implements ModelInterface, ArrayAcces
         'coverImageUrl' => 'cover_image_url',
         'introVideoUrl' => 'intro_video_url',
         'deliveryVideoUrl' => 'delivery_video_url',
+        'supportChannel' => 'support_channel',
+        'extra' => 'extra',
         'subTemplateList' => 'sub_template_list'
     ];
 
@@ -138,6 +144,8 @@ class DynamicAdVideoTemplatesGetListStruct implements ModelInterface, ArrayAcces
         'coverImageUrl' => 'setCoverImageUrl',
         'introVideoUrl' => 'setIntroVideoUrl',
         'deliveryVideoUrl' => 'setDeliveryVideoUrl',
+        'supportChannel' => 'setSupportChannel',
+        'extra' => 'setExtra',
         'subTemplateList' => 'setSubTemplateList'
     ];
 
@@ -155,6 +163,8 @@ class DynamicAdVideoTemplatesGetListStruct implements ModelInterface, ArrayAcces
         'coverImageUrl' => 'getCoverImageUrl',
         'introVideoUrl' => 'getIntroVideoUrl',
         'deliveryVideoUrl' => 'getDeliveryVideoUrl',
+        'supportChannel' => 'getSupportChannel',
+        'extra' => 'getExtra',
         'subTemplateList' => 'getSubTemplateList'
     ];
 
@@ -226,6 +236,8 @@ class DynamicAdVideoTemplatesGetListStruct implements ModelInterface, ArrayAcces
         $this->container['coverImageUrl'] = isset($data['coverImageUrl']) ? $data['coverImageUrl'] : null;
         $this->container['introVideoUrl'] = isset($data['introVideoUrl']) ? $data['introVideoUrl'] : null;
         $this->container['deliveryVideoUrl'] = isset($data['deliveryVideoUrl']) ? $data['deliveryVideoUrl'] : null;
+        $this->container['supportChannel'] = isset($data['supportChannel']) ? $data['supportChannel'] : null;
+        $this->container['extra'] = isset($data['extra']) ? $data['extra'] : null;
         $this->container['subTemplateList'] = isset($data['subTemplateList']) ? $data['subTemplateList'] : null;
     }
 
@@ -441,6 +453,54 @@ class DynamicAdVideoTemplatesGetListStruct implements ModelInterface, ArrayAcces
     public function setDeliveryVideoUrl($deliveryVideoUrl)
     {
         $this->container['deliveryVideoUrl'] = $deliveryVideoUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets supportChannel
+     *
+     * @return bool|mixed
+     */
+    public function getSupportChannel()
+    {
+        return $this->container['supportChannel'];
+    }
+
+    /**
+     * Sets supportChannel
+     *
+     * @param bool|mixed $supportChannel supportChannel
+     *
+     * @return $this
+     */
+    public function setSupportChannel($supportChannel)
+    {
+        $this->container['supportChannel'] = $supportChannel;
+
+        return $this;
+    }
+
+    /**
+     * Gets extra
+     *
+     * @return \TencentAds\Model\Extra|mixed
+     */
+    public function getExtra()
+    {
+        return $this->container['extra'];
+    }
+
+    /**
+     * Sets extra
+     *
+     * @param \TencentAds\Model\Extra|mixed $extra extra
+     *
+     * @return $this
+     */
+    public function setExtra($extra)
+    {
+        $this->container['extra'] = $extra;
 
         return $this;
     }

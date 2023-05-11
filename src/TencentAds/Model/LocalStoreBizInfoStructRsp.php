@@ -74,7 +74,8 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         'telephone' => 'string',
         'specialService' => 'string[]',
         'openingStatus' => '\TencentAds\Model\LocalStoreOpeningStatus',
-        'intro' => 'string'
+        'intro' => 'string',
+        'hidePoi' => 'bool'
     ];
 
     /**
@@ -99,7 +100,8 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         'telephone' => null,
         'specialService' => null,
         'openingStatus' => null,
-        'intro' => null
+        'intro' => null,
+        'hidePoi' => null
     ];
 
     /**
@@ -145,7 +147,8 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         'telephone' => 'telephone',
         'specialService' => 'special_service',
         'openingStatus' => 'opening_status',
-        'intro' => 'intro'
+        'intro' => 'intro',
+        'hidePoi' => 'hide_poi'
     ];
 
     /**
@@ -170,7 +173,8 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         'telephone' => 'setTelephone',
         'specialService' => 'setSpecialService',
         'openingStatus' => 'setOpeningStatus',
-        'intro' => 'setIntro'
+        'intro' => 'setIntro',
+        'hidePoi' => 'setHidePoi'
     ];
 
     /**
@@ -195,7 +199,8 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         'telephone' => 'getTelephone',
         'specialService' => 'getSpecialService',
         'openingStatus' => 'getOpeningStatus',
-        'intro' => 'getIntro'
+        'intro' => 'getIntro',
+        'hidePoi' => 'getHidePoi'
     ];
 
     /**
@@ -275,6 +280,7 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
         $this->container['specialService'] = isset($data['specialService']) ? $data['specialService'] : null;
         $this->container['openingStatus'] = isset($data['openingStatus']) ? $data['openingStatus'] : null;
         $this->container['intro'] = isset($data['intro']) ? $data['intro'] : null;
+        $this->container['hidePoi'] = isset($data['hidePoi']) ? $data['hidePoi'] : null;
     }
 
     /**
@@ -705,6 +711,30 @@ class LocalStoreBizInfoStructRsp implements ModelInterface, ArrayAccess
     public function setIntro($intro)
     {
         $this->container['intro'] = $intro;
+
+        return $this;
+    }
+
+    /**
+     * Gets hidePoi
+     *
+     * @return bool|mixed
+     */
+    public function getHidePoi()
+    {
+        return $this->container['hidePoi'];
+    }
+
+    /**
+     * Sets hidePoi
+     *
+     * @param bool|mixed $hidePoi hidePoi
+     *
+     * @return $this
+     */
+    public function setHidePoi($hidePoi)
+    {
+        $this->container['hidePoi'] = $hidePoi;
 
         return $this;
     }

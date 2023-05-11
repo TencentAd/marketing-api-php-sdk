@@ -63,6 +63,7 @@ class AssetType
     const DN_DATA_SOURCE = 'ASSET_TYPE_DN_DATA_SOURCE';
     const DN_DATA_SET = 'ASSET_TYPE_DN_DATA_SET';
     const DN_FILE = 'ASSET_TYPE_DN_FILE';
+    const SEARCH_BRAND_AREA = 'ASSET_TYPE_SEARCH_BRAND_AREA';
     const UNION_APP_URL_CHANNEL = 'ASSET_TYPE_UNION_APP_URL_CHANNEL';
     
     /**
@@ -91,6 +92,7 @@ class AssetType
             self::DN_DATA_SOURCE,
             self::DN_DATA_SET,
             self::DN_FILE,
+            self::SEARCH_BRAND_AREA,
             self::UNION_APP_URL_CHANNEL,
         ];
     }

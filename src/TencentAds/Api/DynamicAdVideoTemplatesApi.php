@@ -96,6 +96,7 @@ class DynamicAdVideoTemplatesApi
      * @param  int|mixed $productCatalogId productCatalogId (required)
      * @param  int|mixed $adcreativeTemplateId adcreativeTemplateId (required)
      * @param  string|mixed $productMode productMode (required)
+     * @param  bool|mixed $supportChannel supportChannel (optional)
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -104,9 +105,9 @@ class DynamicAdVideoTemplatesApi
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\DynamicAdVideoTemplatesGetResponse|mixed
      */
-    public function dynamicAdVideoTemplatesGet($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $page = null, $pageSize = null, $fields = null)
+    public function dynamicAdVideoTemplatesGet($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel = null, $page = null, $pageSize = null, $fields = null)
     {
-        list($response) = $this->dynamicAdVideoTemplatesGetWithHttpInfo($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $page, $pageSize, $fields);
+        list($response) = $this->dynamicAdVideoTemplatesGetWithHttpInfo($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel, $page, $pageSize, $fields);
         return $response;
     }
 
@@ -119,6 +120,7 @@ class DynamicAdVideoTemplatesApi
      * @param  int|mixed $productCatalogId (required)
      * @param  int|mixed $adcreativeTemplateId (required)
      * @param  string|mixed $productMode (required)
+     * @param  bool|mixed $supportChannel (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -127,10 +129,10 @@ class DynamicAdVideoTemplatesApi
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\DynamicAdVideoTemplatesGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function dynamicAdVideoTemplatesGetWithHttpInfo($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $page = null, $pageSize = null, $fields = null)
+    public function dynamicAdVideoTemplatesGetWithHttpInfo($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\DynamicAdVideoTemplatesGetResponse';
-        $request = $this->dynamicAdVideoTemplatesGetRequest($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $page, $pageSize, $fields);
+        $request = $this->dynamicAdVideoTemplatesGetRequest($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel, $page, $pageSize, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -200,6 +202,7 @@ class DynamicAdVideoTemplatesApi
      * @param  int|mixed $productCatalogId (required)
      * @param  int|mixed $adcreativeTemplateId (required)
      * @param  string|mixed $productMode (required)
+     * @param  bool|mixed $supportChannel (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -207,9 +210,9 @@ class DynamicAdVideoTemplatesApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function dynamicAdVideoTemplatesGetAsync($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $page = null, $pageSize = null, $fields = null)
+    public function dynamicAdVideoTemplatesGetAsync($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel = null, $page = null, $pageSize = null, $fields = null)
     {
-        return $this->dynamicAdVideoTemplatesGetAsyncWithHttpInfo($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $page, $pageSize, $fields)
+        return $this->dynamicAdVideoTemplatesGetAsyncWithHttpInfo($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel, $page, $pageSize, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -226,6 +229,7 @@ class DynamicAdVideoTemplatesApi
      * @param  int|mixed $productCatalogId (required)
      * @param  int|mixed $adcreativeTemplateId (required)
      * @param  string|mixed $productMode (required)
+     * @param  bool|mixed $supportChannel (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -233,10 +237,10 @@ class DynamicAdVideoTemplatesApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function dynamicAdVideoTemplatesGetAsyncWithHttpInfo($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $page = null, $pageSize = null, $fields = null)
+    public function dynamicAdVideoTemplatesGetAsyncWithHttpInfo($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\DynamicAdVideoTemplatesGetResponse';
-        $request = $this->dynamicAdVideoTemplatesGetRequest($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $page, $pageSize, $fields);
+        $request = $this->dynamicAdVideoTemplatesGetRequest($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel, $page, $pageSize, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -282,6 +286,7 @@ class DynamicAdVideoTemplatesApi
      * @param  int|mixed $productCatalogId (required)
      * @param  int|mixed $adcreativeTemplateId (required)
      * @param  string|mixed $productMode (required)
+     * @param  bool|mixed $supportChannel (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -289,7 +294,7 @@ class DynamicAdVideoTemplatesApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function dynamicAdVideoTemplatesGetRequest($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $page = null, $pageSize = null, $fields = null)
+    protected function dynamicAdVideoTemplatesGetRequest($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel = null, $page = null, $pageSize = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -338,6 +343,10 @@ class DynamicAdVideoTemplatesApi
         // query params
         if ($productMode !== null) {
             $queryParams['product_mode'] = ObjectSerializer::toQueryValue($productMode);
+        }
+        // query params
+        if ($supportChannel !== null) {
+            $queryParams['support_channel'] = ObjectSerializer::toQueryValue($supportChannel);
         }
         // query params
         if ($page !== null) {

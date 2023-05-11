@@ -79,9 +79,10 @@ class DestinationTypeRead
     const CHANNELS_HALF_CARD = 'PAGE_TYPE_CHANNELS_HALF_CARD';
     const APP_DEEP_LINK = 'PAGE_TYPE_APP_DEEP_LINK';
     const UNIVERSAL_LINK = 'PAGE_TYPE_UNIVERSAL_LINK';
+    const CUSTOM_TV = 'PAGE_TYPE_CUSTOM_TV';
+    const ANDROID_DIRECT_DOWNLOAD = 'PAGE_TYPE_ANDROID_DIRECT_DOWNLOAD';
     const TSA_OTT = 'PAGE_TYPE_TSA_OTT';
     const NOT_USED = 'PAGE_TYPE_NOT_USED';
-    const CUSTOM_TV = 'PAGE_TYPE_CUSTOM_TV';
     
     /**
      * Gets allowable values of the enum
@@ -125,9 +126,10 @@ class DestinationTypeRead
             self::CHANNELS_HALF_CARD,
             self::APP_DEEP_LINK,
             self::UNIVERSAL_LINK,
+            self::CUSTOM_TV,
+            self::ANDROID_DIRECT_DOWNLOAD,
             self::TSA_OTT,
             self::NOT_USED,
-            self::CUSTOM_TV,
         ];
     }
 }

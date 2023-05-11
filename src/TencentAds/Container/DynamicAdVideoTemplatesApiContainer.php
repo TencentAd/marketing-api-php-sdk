@@ -42,10 +42,11 @@ class DynamicAdVideoTemplatesApiContainer extends ApiContainer
             $productCatalogId = isset($params['product_catalog_id']) ? $params['product_catalog_id'] : null;
             $adcreativeTemplateId = isset($params['adcreative_template_id']) ? $params['adcreative_template_id'] : null;
             $productMode = isset($params['product_mode']) ? $params['product_mode'] : null;
+            $supportChannel = isset($params['support_channel']) ? $params['support_channel'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->dynamicAdVideoTemplatesGet($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $page, $pageSize, $fields);
+            $response = $this->apiInstance->dynamicAdVideoTemplatesGet($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel, $page, $pageSize, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -64,10 +65,11 @@ class DynamicAdVideoTemplatesApiContainer extends ApiContainer
             $productCatalogId = isset($params['product_catalog_id']) ? $params['product_catalog_id'] : null;
             $adcreativeTemplateId = isset($params['adcreative_template_id']) ? $params['adcreative_template_id'] : null;
             $productMode = isset($params['product_mode']) ? $params['product_mode'] : null;
+            $supportChannel = isset($params['support_channel']) ? $params['support_channel'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->dynamicAdVideoTemplatesGetAsync($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $page, $pageSize, $fields);
+            $response = $this->apiInstance->dynamicAdVideoTemplatesGetAsync($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel, $page, $pageSize, $fields);
             return $response;
         });
     }
