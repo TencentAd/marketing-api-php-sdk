@@ -62,6 +62,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
         'externalBillNo' => 'string',
         'memo' => 'string',
         'transferTryBest' => 'int',
+        'highFrequencyTransfer' => 'int',
         'accountId' => 'int',
         'fundType' => '\TencentAds\Model\AccountTypeMap'
     ];
@@ -77,6 +78,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
         'externalBillNo' => null,
         'memo' => null,
         'transferTryBest' => 'int64',
+        'highFrequencyTransfer' => 'int64',
         'accountId' => 'int64',
         'fundType' => null
     ];
@@ -113,6 +115,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
         'externalBillNo' => 'external_bill_no',
         'memo' => 'memo',
         'transferTryBest' => 'transfer_try_best',
+        'highFrequencyTransfer' => 'high_frequency_transfer',
         'accountId' => 'account_id',
         'fundType' => 'fund_type'
     ];
@@ -128,6 +131,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
         'externalBillNo' => 'setExternalBillNo',
         'memo' => 'setMemo',
         'transferTryBest' => 'setTransferTryBest',
+        'highFrequencyTransfer' => 'setHighFrequencyTransfer',
         'accountId' => 'setAccountId',
         'fundType' => 'setFundType'
     ];
@@ -143,6 +147,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
         'externalBillNo' => 'getExternalBillNo',
         'memo' => 'getMemo',
         'transferTryBest' => 'getTransferTryBest',
+        'highFrequencyTransfer' => 'getHighFrequencyTransfer',
         'accountId' => 'getAccountId',
         'fundType' => 'getFundType'
     ];
@@ -212,6 +217,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
         $this->container['externalBillNo'] = isset($data['externalBillNo']) ? $data['externalBillNo'] : null;
         $this->container['memo'] = isset($data['memo']) ? $data['memo'] : null;
         $this->container['transferTryBest'] = isset($data['transferTryBest']) ? $data['transferTryBest'] : null;
+        $this->container['highFrequencyTransfer'] = isset($data['highFrequencyTransfer']) ? $data['highFrequencyTransfer'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['fundType'] = isset($data['fundType']) ? $data['fundType'] : null;
     }
@@ -356,6 +362,30 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
     public function setTransferTryBest($transferTryBest)
     {
         $this->container['transferTryBest'] = $transferTryBest;
+
+        return $this;
+    }
+
+    /**
+     * Gets highFrequencyTransfer
+     *
+     * @return int|mixed
+     */
+    public function getHighFrequencyTransfer()
+    {
+        return $this->container['highFrequencyTransfer'];
+    }
+
+    /**
+     * Sets highFrequencyTransfer
+     *
+     * @param int|mixed $highFrequencyTransfer highFrequencyTransfer
+     *
+     * @return $this
+     */
+    public function setHighFrequencyTransfer($highFrequencyTransfer)
+    {
+        $this->container['highFrequencyTransfer'] = $highFrequencyTransfer;
 
         return $this;
     }
