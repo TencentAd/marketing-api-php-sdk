@@ -129,6 +129,7 @@ class OptimizationGoal
     const PAGE_ONLINE_CONSULT_THREE_MSG = 'OPTIMIZATIONGOAL_PAGE_ONLINE_CONSULT_THREE_MSG';
     const RENEWAL = 'OPTIMIZATIONGOAL_RENEWAL';
     const LOW_PRICE_COURSE = 'OPTIMIZATIONGOAL_LOW_PRICE_COURSE';
+    const CONSULT_INTENTION = 'OPTIMIZATIONGOAL_CONSULT_INTENTION';
     
     /**
      * Gets allowable values of the enum
@@ -222,6 +223,7 @@ class OptimizationGoal
             self::PAGE_ONLINE_CONSULT_THREE_MSG,
             self::RENEWAL,
             self::LOW_PRICE_COURSE,
+            self::CONSULT_INTENTION,
         ];
     }
 }
