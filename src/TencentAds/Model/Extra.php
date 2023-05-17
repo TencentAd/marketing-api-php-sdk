@@ -58,8 +58,10 @@ class Extra implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'coverImageTemplateId' => 'int',
+        'coverImageTemplateIntroUrl' => 'string',
         'imageTemplateId' => 'int',
-        'imageTemplateIntroUrl' => 'int',
+        'imageTemplateIntroUrl' => 'string',
         'desc' => 'string',
         'floatingZoneName' => 'string',
         'floatingZoneDesc' => 'string'
@@ -71,8 +73,10 @@ class Extra implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
+        'coverImageTemplateId' => 'int64',
+        'coverImageTemplateIntroUrl' => null,
         'imageTemplateId' => 'int64',
-        'imageTemplateIntroUrl' => 'int64',
+        'imageTemplateIntroUrl' => null,
         'desc' => null,
         'floatingZoneName' => null,
         'floatingZoneDesc' => null
@@ -105,6 +109,8 @@ class Extra implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'coverImageTemplateId' => 'cover_image_template_id',
+        'coverImageTemplateIntroUrl' => 'cover_image_template_intro_url',
         'imageTemplateId' => 'image_template_id',
         'imageTemplateIntroUrl' => 'image_template_intro_url',
         'desc' => 'desc',
@@ -118,6 +124,8 @@ class Extra implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'coverImageTemplateId' => 'setCoverImageTemplateId',
+        'coverImageTemplateIntroUrl' => 'setCoverImageTemplateIntroUrl',
         'imageTemplateId' => 'setImageTemplateId',
         'imageTemplateIntroUrl' => 'setImageTemplateIntroUrl',
         'desc' => 'setDesc',
@@ -131,6 +139,8 @@ class Extra implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'coverImageTemplateId' => 'getCoverImageTemplateId',
+        'coverImageTemplateIntroUrl' => 'getCoverImageTemplateIntroUrl',
         'imageTemplateId' => 'getImageTemplateId',
         'imageTemplateIntroUrl' => 'getImageTemplateIntroUrl',
         'desc' => 'getDesc',
@@ -198,6 +208,8 @@ class Extra implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['coverImageTemplateId'] = isset($data['coverImageTemplateId']) ? $data['coverImageTemplateId'] : null;
+        $this->container['coverImageTemplateIntroUrl'] = isset($data['coverImageTemplateIntroUrl']) ? $data['coverImageTemplateIntroUrl'] : null;
         $this->container['imageTemplateId'] = isset($data['imageTemplateId']) ? $data['imageTemplateId'] : null;
         $this->container['imageTemplateIntroUrl'] = isset($data['imageTemplateIntroUrl']) ? $data['imageTemplateIntroUrl'] : null;
         $this->container['desc'] = isset($data['desc']) ? $data['desc'] : null;
@@ -230,6 +242,54 @@ class Extra implements ModelInterface, ArrayAccess
 
 
     /**
+     * Gets coverImageTemplateId
+     *
+     * @return int|mixed
+     */
+    public function getCoverImageTemplateId()
+    {
+        return $this->container['coverImageTemplateId'];
+    }
+
+    /**
+     * Sets coverImageTemplateId
+     *
+     * @param int|mixed $coverImageTemplateId coverImageTemplateId
+     *
+     * @return $this
+     */
+    public function setCoverImageTemplateId($coverImageTemplateId)
+    {
+        $this->container['coverImageTemplateId'] = $coverImageTemplateId;
+
+        return $this;
+    }
+
+    /**
+     * Gets coverImageTemplateIntroUrl
+     *
+     * @return string|mixed
+     */
+    public function getCoverImageTemplateIntroUrl()
+    {
+        return $this->container['coverImageTemplateIntroUrl'];
+    }
+
+    /**
+     * Sets coverImageTemplateIntroUrl
+     *
+     * @param string|mixed $coverImageTemplateIntroUrl coverImageTemplateIntroUrl
+     *
+     * @return $this
+     */
+    public function setCoverImageTemplateIntroUrl($coverImageTemplateIntroUrl)
+    {
+        $this->container['coverImageTemplateIntroUrl'] = $coverImageTemplateIntroUrl;
+
+        return $this;
+    }
+
+    /**
      * Gets imageTemplateId
      *
      * @return int|mixed
@@ -256,7 +316,7 @@ class Extra implements ModelInterface, ArrayAccess
     /**
      * Gets imageTemplateIntroUrl
      *
-     * @return int|mixed
+     * @return string|mixed
      */
     public function getImageTemplateIntroUrl()
     {
@@ -266,7 +326,7 @@ class Extra implements ModelInterface, ArrayAccess
     /**
      * Sets imageTemplateIntroUrl
      *
-     * @param int|mixed $imageTemplateIntroUrl imageTemplateIntroUrl
+     * @param string|mixed $imageTemplateIntroUrl imageTemplateIntroUrl
      *
      * @return $this
      */
