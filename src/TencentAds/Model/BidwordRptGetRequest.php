@@ -65,7 +65,9 @@ class BidwordRptGetRequest implements ModelInterface, ArrayAccess
         'pageSize' => 'int',
         'rptFilter' => '\TencentAds\Model\RptFilter',
         'bizFilter' => '\TencentAds\Model\BizFilter',
-        'queryType' => 'int[]'
+        'queryType' => 'int[]',
+        'fields' => 'string[]',
+        'useUnifiedReport' => 'bool'
     ];
 
     /**
@@ -82,7 +84,9 @@ class BidwordRptGetRequest implements ModelInterface, ArrayAccess
         'pageSize' => 'int64',
         'rptFilter' => null,
         'bizFilter' => null,
-        'queryType' => 'int64'
+        'queryType' => 'int64',
+        'fields' => null,
+        'useUnifiedReport' => null
     ];
 
     /**
@@ -120,7 +124,9 @@ class BidwordRptGetRequest implements ModelInterface, ArrayAccess
         'pageSize' => 'page_size',
         'rptFilter' => 'rpt_filter',
         'bizFilter' => 'biz_filter',
-        'queryType' => 'query_type'
+        'queryType' => 'query_type',
+        'fields' => 'fields',
+        'useUnifiedReport' => 'use_unified_report'
     ];
 
     /**
@@ -137,7 +143,9 @@ class BidwordRptGetRequest implements ModelInterface, ArrayAccess
         'pageSize' => 'setPageSize',
         'rptFilter' => 'setRptFilter',
         'bizFilter' => 'setBizFilter',
-        'queryType' => 'setQueryType'
+        'queryType' => 'setQueryType',
+        'fields' => 'setFields',
+        'useUnifiedReport' => 'setUseUnifiedReport'
     ];
 
     /**
@@ -154,7 +162,9 @@ class BidwordRptGetRequest implements ModelInterface, ArrayAccess
         'pageSize' => 'getPageSize',
         'rptFilter' => 'getRptFilter',
         'bizFilter' => 'getBizFilter',
-        'queryType' => 'getQueryType'
+        'queryType' => 'getQueryType',
+        'fields' => 'getFields',
+        'useUnifiedReport' => 'getUseUnifiedReport'
     ];
 
     /**
@@ -226,6 +236,8 @@ class BidwordRptGetRequest implements ModelInterface, ArrayAccess
         $this->container['rptFilter'] = isset($data['rptFilter']) ? $data['rptFilter'] : null;
         $this->container['bizFilter'] = isset($data['bizFilter']) ? $data['bizFilter'] : null;
         $this->container['queryType'] = isset($data['queryType']) ? $data['queryType'] : null;
+        $this->container['fields'] = isset($data['fields']) ? $data['fields'] : null;
+        $this->container['useUnifiedReport'] = isset($data['useUnifiedReport']) ? $data['useUnifiedReport'] : null;
     }
 
     /**
@@ -464,6 +476,54 @@ class BidwordRptGetRequest implements ModelInterface, ArrayAccess
     public function setQueryType($queryType)
     {
         $this->container['queryType'] = $queryType;
+
+        return $this;
+    }
+
+    /**
+     * Gets fields
+     *
+     * @return string[]|mixed
+     */
+    public function getFields()
+    {
+        return $this->container['fields'];
+    }
+
+    /**
+     * Sets fields
+     *
+     * @param string[]|mixed $fields fields
+     *
+     * @return $this
+     */
+    public function setFields($fields)
+    {
+        $this->container['fields'] = $fields;
+
+        return $this;
+    }
+
+    /**
+     * Gets useUnifiedReport
+     *
+     * @return bool|mixed
+     */
+    public function getUseUnifiedReport()
+    {
+        return $this->container['useUnifiedReport'];
+    }
+
+    /**
+     * Sets useUnifiedReport
+     *
+     * @param bool|mixed $useUnifiedReport useUnifiedReport
+     *
+     * @return $this
+     */
+    public function setUseUnifiedReport($useUnifiedReport)
+    {
+        $this->container['useUnifiedReport'] = $useUnifiedReport;
 
         return $this;
     }

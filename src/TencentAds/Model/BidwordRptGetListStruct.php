@@ -161,7 +161,29 @@ class BidwordRptGetListStruct implements ModelInterface, ArrayAccess
         'clkMiddleGoodsPv' => 'string',
         'clkMiddleBtnPv' => 'string',
         'clkMiddleSectionPv' => 'string',
-        'clkMiddleGridviewPv' => 'string'
+        'clkMiddleGridviewPv' => 'string',
+        'pageReservationCount' => 'string',
+        'reservationAmount' => 'string',
+        'orderPv' => 'string',
+        'orderAmount' => 'string',
+        'orderFollow1dPv' => 'string',
+        'orderFollow1dAmount' => 'string',
+        'purchasePv' => 'string',
+        'purchaseAmount' => 'string',
+        'applyPv' => 'string',
+        'creditPv' => 'string',
+        'withdrawDepositPv' => 'string',
+        'cheoutPv1d' => 'string',
+        'cheoutFd' => 'string',
+        'cheoutPv3d' => 'string',
+        'cheoutTd' => 'string',
+        'cheoutPv7d' => 'string',
+        'cheoutOw' => 'string',
+        'purchaseClk15dPv' => 'string',
+        'cheout15d' => 'string',
+        'purchaseClk30dPv' => 'string',
+        'cheoutOm' => 'string',
+        'preCreditPv' => 'string'
     ];
 
     /**
@@ -273,7 +295,29 @@ class BidwordRptGetListStruct implements ModelInterface, ArrayAccess
         'clkMiddleGoodsPv' => null,
         'clkMiddleBtnPv' => null,
         'clkMiddleSectionPv' => null,
-        'clkMiddleGridviewPv' => null
+        'clkMiddleGridviewPv' => null,
+        'pageReservationCount' => null,
+        'reservationAmount' => null,
+        'orderPv' => null,
+        'orderAmount' => null,
+        'orderFollow1dPv' => null,
+        'orderFollow1dAmount' => null,
+        'purchasePv' => null,
+        'purchaseAmount' => null,
+        'applyPv' => null,
+        'creditPv' => null,
+        'withdrawDepositPv' => null,
+        'cheoutPv1d' => null,
+        'cheoutFd' => null,
+        'cheoutPv3d' => null,
+        'cheoutTd' => null,
+        'cheoutPv7d' => null,
+        'cheoutOw' => null,
+        'purchaseClk15dPv' => null,
+        'cheout15d' => null,
+        'purchaseClk30dPv' => null,
+        'cheoutOm' => null,
+        'preCreditPv' => null
     ];
 
     /**
@@ -406,7 +450,29 @@ class BidwordRptGetListStruct implements ModelInterface, ArrayAccess
         'clkMiddleGoodsPv' => 'clk_middle_goods_pv',
         'clkMiddleBtnPv' => 'clk_middle_btn_pv',
         'clkMiddleSectionPv' => 'clk_middle_section_pv',
-        'clkMiddleGridviewPv' => 'clk_middle_gridview_pv'
+        'clkMiddleGridviewPv' => 'clk_middle_gridview_pv',
+        'pageReservationCount' => 'page_reservation_count',
+        'reservationAmount' => 'reservation_amount',
+        'orderPv' => 'order_pv',
+        'orderAmount' => 'order_amount',
+        'orderFollow1dPv' => 'order_follow_1d_pv',
+        'orderFollow1dAmount' => 'order_follow_1d_amount',
+        'purchasePv' => 'purchase_pv',
+        'purchaseAmount' => 'purchase_amount',
+        'applyPv' => 'apply_pv',
+        'creditPv' => 'credit_pv',
+        'withdrawDepositPv' => 'withdraw_deposit_pv',
+        'cheoutPv1d' => 'cheout_pv_1d',
+        'cheoutFd' => 'cheout_fd',
+        'cheoutPv3d' => 'cheout_pv_3d',
+        'cheoutTd' => 'cheout_td',
+        'cheoutPv7d' => 'cheout_pv_7d',
+        'cheoutOw' => 'cheout_ow',
+        'purchaseClk15dPv' => 'purchase_clk_15d_pv',
+        'cheout15d' => 'cheout_15d',
+        'purchaseClk30dPv' => 'purchase_clk_30d_pv',
+        'cheoutOm' => 'cheout_om',
+        'preCreditPv' => 'pre_credit_pv'
     ];
 
     /**
@@ -518,7 +584,29 @@ class BidwordRptGetListStruct implements ModelInterface, ArrayAccess
         'clkMiddleGoodsPv' => 'setClkMiddleGoodsPv',
         'clkMiddleBtnPv' => 'setClkMiddleBtnPv',
         'clkMiddleSectionPv' => 'setClkMiddleSectionPv',
-        'clkMiddleGridviewPv' => 'setClkMiddleGridviewPv'
+        'clkMiddleGridviewPv' => 'setClkMiddleGridviewPv',
+        'pageReservationCount' => 'setPageReservationCount',
+        'reservationAmount' => 'setReservationAmount',
+        'orderPv' => 'setOrderPv',
+        'orderAmount' => 'setOrderAmount',
+        'orderFollow1dPv' => 'setOrderFollow1dPv',
+        'orderFollow1dAmount' => 'setOrderFollow1dAmount',
+        'purchasePv' => 'setPurchasePv',
+        'purchaseAmount' => 'setPurchaseAmount',
+        'applyPv' => 'setApplyPv',
+        'creditPv' => 'setCreditPv',
+        'withdrawDepositPv' => 'setWithdrawDepositPv',
+        'cheoutPv1d' => 'setCheoutPv1d',
+        'cheoutFd' => 'setCheoutFd',
+        'cheoutPv3d' => 'setCheoutPv3d',
+        'cheoutTd' => 'setCheoutTd',
+        'cheoutPv7d' => 'setCheoutPv7d',
+        'cheoutOw' => 'setCheoutOw',
+        'purchaseClk15dPv' => 'setPurchaseClk15dPv',
+        'cheout15d' => 'setCheout15d',
+        'purchaseClk30dPv' => 'setPurchaseClk30dPv',
+        'cheoutOm' => 'setCheoutOm',
+        'preCreditPv' => 'setPreCreditPv'
     ];
 
     /**
@@ -630,7 +718,29 @@ class BidwordRptGetListStruct implements ModelInterface, ArrayAccess
         'clkMiddleGoodsPv' => 'getClkMiddleGoodsPv',
         'clkMiddleBtnPv' => 'getClkMiddleBtnPv',
         'clkMiddleSectionPv' => 'getClkMiddleSectionPv',
-        'clkMiddleGridviewPv' => 'getClkMiddleGridviewPv'
+        'clkMiddleGridviewPv' => 'getClkMiddleGridviewPv',
+        'pageReservationCount' => 'getPageReservationCount',
+        'reservationAmount' => 'getReservationAmount',
+        'orderPv' => 'getOrderPv',
+        'orderAmount' => 'getOrderAmount',
+        'orderFollow1dPv' => 'getOrderFollow1dPv',
+        'orderFollow1dAmount' => 'getOrderFollow1dAmount',
+        'purchasePv' => 'getPurchasePv',
+        'purchaseAmount' => 'getPurchaseAmount',
+        'applyPv' => 'getApplyPv',
+        'creditPv' => 'getCreditPv',
+        'withdrawDepositPv' => 'getWithdrawDepositPv',
+        'cheoutPv1d' => 'getCheoutPv1d',
+        'cheoutFd' => 'getCheoutFd',
+        'cheoutPv3d' => 'getCheoutPv3d',
+        'cheoutTd' => 'getCheoutTd',
+        'cheoutPv7d' => 'getCheoutPv7d',
+        'cheoutOw' => 'getCheoutOw',
+        'purchaseClk15dPv' => 'getPurchaseClk15dPv',
+        'cheout15d' => 'getCheout15d',
+        'purchaseClk30dPv' => 'getPurchaseClk30dPv',
+        'cheoutOm' => 'getCheoutOm',
+        'preCreditPv' => 'getPreCreditPv'
     ];
 
     /**
@@ -797,6 +907,28 @@ class BidwordRptGetListStruct implements ModelInterface, ArrayAccess
         $this->container['clkMiddleBtnPv'] = isset($data['clkMiddleBtnPv']) ? $data['clkMiddleBtnPv'] : null;
         $this->container['clkMiddleSectionPv'] = isset($data['clkMiddleSectionPv']) ? $data['clkMiddleSectionPv'] : null;
         $this->container['clkMiddleGridviewPv'] = isset($data['clkMiddleGridviewPv']) ? $data['clkMiddleGridviewPv'] : null;
+        $this->container['pageReservationCount'] = isset($data['pageReservationCount']) ? $data['pageReservationCount'] : null;
+        $this->container['reservationAmount'] = isset($data['reservationAmount']) ? $data['reservationAmount'] : null;
+        $this->container['orderPv'] = isset($data['orderPv']) ? $data['orderPv'] : null;
+        $this->container['orderAmount'] = isset($data['orderAmount']) ? $data['orderAmount'] : null;
+        $this->container['orderFollow1dPv'] = isset($data['orderFollow1dPv']) ? $data['orderFollow1dPv'] : null;
+        $this->container['orderFollow1dAmount'] = isset($data['orderFollow1dAmount']) ? $data['orderFollow1dAmount'] : null;
+        $this->container['purchasePv'] = isset($data['purchasePv']) ? $data['purchasePv'] : null;
+        $this->container['purchaseAmount'] = isset($data['purchaseAmount']) ? $data['purchaseAmount'] : null;
+        $this->container['applyPv'] = isset($data['applyPv']) ? $data['applyPv'] : null;
+        $this->container['creditPv'] = isset($data['creditPv']) ? $data['creditPv'] : null;
+        $this->container['withdrawDepositPv'] = isset($data['withdrawDepositPv']) ? $data['withdrawDepositPv'] : null;
+        $this->container['cheoutPv1d'] = isset($data['cheoutPv1d']) ? $data['cheoutPv1d'] : null;
+        $this->container['cheoutFd'] = isset($data['cheoutFd']) ? $data['cheoutFd'] : null;
+        $this->container['cheoutPv3d'] = isset($data['cheoutPv3d']) ? $data['cheoutPv3d'] : null;
+        $this->container['cheoutTd'] = isset($data['cheoutTd']) ? $data['cheoutTd'] : null;
+        $this->container['cheoutPv7d'] = isset($data['cheoutPv7d']) ? $data['cheoutPv7d'] : null;
+        $this->container['cheoutOw'] = isset($data['cheoutOw']) ? $data['cheoutOw'] : null;
+        $this->container['purchaseClk15dPv'] = isset($data['purchaseClk15dPv']) ? $data['purchaseClk15dPv'] : null;
+        $this->container['cheout15d'] = isset($data['cheout15d']) ? $data['cheout15d'] : null;
+        $this->container['purchaseClk30dPv'] = isset($data['purchaseClk30dPv']) ? $data['purchaseClk30dPv'] : null;
+        $this->container['cheoutOm'] = isset($data['cheoutOm']) ? $data['cheoutOm'] : null;
+        $this->container['preCreditPv'] = isset($data['preCreditPv']) ? $data['preCreditPv'] : null;
     }
 
     /**
@@ -3315,6 +3447,534 @@ class BidwordRptGetListStruct implements ModelInterface, ArrayAccess
     public function setClkMiddleGridviewPv($clkMiddleGridviewPv)
     {
         $this->container['clkMiddleGridviewPv'] = $clkMiddleGridviewPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageReservationCount
+     *
+     * @return string|mixed
+     */
+    public function getPageReservationCount()
+    {
+        return $this->container['pageReservationCount'];
+    }
+
+    /**
+     * Sets pageReservationCount
+     *
+     * @param string|mixed $pageReservationCount pageReservationCount
+     *
+     * @return $this
+     */
+    public function setPageReservationCount($pageReservationCount)
+    {
+        $this->container['pageReservationCount'] = $pageReservationCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets reservationAmount
+     *
+     * @return string|mixed
+     */
+    public function getReservationAmount()
+    {
+        return $this->container['reservationAmount'];
+    }
+
+    /**
+     * Sets reservationAmount
+     *
+     * @param string|mixed $reservationAmount reservationAmount
+     *
+     * @return $this
+     */
+    public function setReservationAmount($reservationAmount)
+    {
+        $this->container['reservationAmount'] = $reservationAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderPv
+     *
+     * @return string|mixed
+     */
+    public function getOrderPv()
+    {
+        return $this->container['orderPv'];
+    }
+
+    /**
+     * Sets orderPv
+     *
+     * @param string|mixed $orderPv orderPv
+     *
+     * @return $this
+     */
+    public function setOrderPv($orderPv)
+    {
+        $this->container['orderPv'] = $orderPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderAmount
+     *
+     * @return string|mixed
+     */
+    public function getOrderAmount()
+    {
+        return $this->container['orderAmount'];
+    }
+
+    /**
+     * Sets orderAmount
+     *
+     * @param string|mixed $orderAmount orderAmount
+     *
+     * @return $this
+     */
+    public function setOrderAmount($orderAmount)
+    {
+        $this->container['orderAmount'] = $orderAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderFollow1dPv
+     *
+     * @return string|mixed
+     */
+    public function getOrderFollow1dPv()
+    {
+        return $this->container['orderFollow1dPv'];
+    }
+
+    /**
+     * Sets orderFollow1dPv
+     *
+     * @param string|mixed $orderFollow1dPv orderFollow1dPv
+     *
+     * @return $this
+     */
+    public function setOrderFollow1dPv($orderFollow1dPv)
+    {
+        $this->container['orderFollow1dPv'] = $orderFollow1dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderFollow1dAmount
+     *
+     * @return string|mixed
+     */
+    public function getOrderFollow1dAmount()
+    {
+        return $this->container['orderFollow1dAmount'];
+    }
+
+    /**
+     * Sets orderFollow1dAmount
+     *
+     * @param string|mixed $orderFollow1dAmount orderFollow1dAmount
+     *
+     * @return $this
+     */
+    public function setOrderFollow1dAmount($orderFollow1dAmount)
+    {
+        $this->container['orderFollow1dAmount'] = $orderFollow1dAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchasePv
+     *
+     * @return string|mixed
+     */
+    public function getPurchasePv()
+    {
+        return $this->container['purchasePv'];
+    }
+
+    /**
+     * Sets purchasePv
+     *
+     * @param string|mixed $purchasePv purchasePv
+     *
+     * @return $this
+     */
+    public function setPurchasePv($purchasePv)
+    {
+        $this->container['purchasePv'] = $purchasePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseAmount
+     *
+     * @return string|mixed
+     */
+    public function getPurchaseAmount()
+    {
+        return $this->container['purchaseAmount'];
+    }
+
+    /**
+     * Sets purchaseAmount
+     *
+     * @param string|mixed $purchaseAmount purchaseAmount
+     *
+     * @return $this
+     */
+    public function setPurchaseAmount($purchaseAmount)
+    {
+        $this->container['purchaseAmount'] = $purchaseAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets applyPv
+     *
+     * @return string|mixed
+     */
+    public function getApplyPv()
+    {
+        return $this->container['applyPv'];
+    }
+
+    /**
+     * Sets applyPv
+     *
+     * @param string|mixed $applyPv applyPv
+     *
+     * @return $this
+     */
+    public function setApplyPv($applyPv)
+    {
+        $this->container['applyPv'] = $applyPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets creditPv
+     *
+     * @return string|mixed
+     */
+    public function getCreditPv()
+    {
+        return $this->container['creditPv'];
+    }
+
+    /**
+     * Sets creditPv
+     *
+     * @param string|mixed $creditPv creditPv
+     *
+     * @return $this
+     */
+    public function setCreditPv($creditPv)
+    {
+        $this->container['creditPv'] = $creditPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets withdrawDepositPv
+     *
+     * @return string|mixed
+     */
+    public function getWithdrawDepositPv()
+    {
+        return $this->container['withdrawDepositPv'];
+    }
+
+    /**
+     * Sets withdrawDepositPv
+     *
+     * @param string|mixed $withdrawDepositPv withdrawDepositPv
+     *
+     * @return $this
+     */
+    public function setWithdrawDepositPv($withdrawDepositPv)
+    {
+        $this->container['withdrawDepositPv'] = $withdrawDepositPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cheoutPv1d
+     *
+     * @return string|mixed
+     */
+    public function getCheoutPv1d()
+    {
+        return $this->container['cheoutPv1d'];
+    }
+
+    /**
+     * Sets cheoutPv1d
+     *
+     * @param string|mixed $cheoutPv1d cheoutPv1d
+     *
+     * @return $this
+     */
+    public function setCheoutPv1d($cheoutPv1d)
+    {
+        $this->container['cheoutPv1d'] = $cheoutPv1d;
+
+        return $this;
+    }
+
+    /**
+     * Gets cheoutFd
+     *
+     * @return string|mixed
+     */
+    public function getCheoutFd()
+    {
+        return $this->container['cheoutFd'];
+    }
+
+    /**
+     * Sets cheoutFd
+     *
+     * @param string|mixed $cheoutFd cheoutFd
+     *
+     * @return $this
+     */
+    public function setCheoutFd($cheoutFd)
+    {
+        $this->container['cheoutFd'] = $cheoutFd;
+
+        return $this;
+    }
+
+    /**
+     * Gets cheoutPv3d
+     *
+     * @return string|mixed
+     */
+    public function getCheoutPv3d()
+    {
+        return $this->container['cheoutPv3d'];
+    }
+
+    /**
+     * Sets cheoutPv3d
+     *
+     * @param string|mixed $cheoutPv3d cheoutPv3d
+     *
+     * @return $this
+     */
+    public function setCheoutPv3d($cheoutPv3d)
+    {
+        $this->container['cheoutPv3d'] = $cheoutPv3d;
+
+        return $this;
+    }
+
+    /**
+     * Gets cheoutTd
+     *
+     * @return string|mixed
+     */
+    public function getCheoutTd()
+    {
+        return $this->container['cheoutTd'];
+    }
+
+    /**
+     * Sets cheoutTd
+     *
+     * @param string|mixed $cheoutTd cheoutTd
+     *
+     * @return $this
+     */
+    public function setCheoutTd($cheoutTd)
+    {
+        $this->container['cheoutTd'] = $cheoutTd;
+
+        return $this;
+    }
+
+    /**
+     * Gets cheoutPv7d
+     *
+     * @return string|mixed
+     */
+    public function getCheoutPv7d()
+    {
+        return $this->container['cheoutPv7d'];
+    }
+
+    /**
+     * Sets cheoutPv7d
+     *
+     * @param string|mixed $cheoutPv7d cheoutPv7d
+     *
+     * @return $this
+     */
+    public function setCheoutPv7d($cheoutPv7d)
+    {
+        $this->container['cheoutPv7d'] = $cheoutPv7d;
+
+        return $this;
+    }
+
+    /**
+     * Gets cheoutOw
+     *
+     * @return string|mixed
+     */
+    public function getCheoutOw()
+    {
+        return $this->container['cheoutOw'];
+    }
+
+    /**
+     * Sets cheoutOw
+     *
+     * @param string|mixed $cheoutOw cheoutOw
+     *
+     * @return $this
+     */
+    public function setCheoutOw($cheoutOw)
+    {
+        $this->container['cheoutOw'] = $cheoutOw;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseClk15dPv
+     *
+     * @return string|mixed
+     */
+    public function getPurchaseClk15dPv()
+    {
+        return $this->container['purchaseClk15dPv'];
+    }
+
+    /**
+     * Sets purchaseClk15dPv
+     *
+     * @param string|mixed $purchaseClk15dPv purchaseClk15dPv
+     *
+     * @return $this
+     */
+    public function setPurchaseClk15dPv($purchaseClk15dPv)
+    {
+        $this->container['purchaseClk15dPv'] = $purchaseClk15dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cheout15d
+     *
+     * @return string|mixed
+     */
+    public function getCheout15d()
+    {
+        return $this->container['cheout15d'];
+    }
+
+    /**
+     * Sets cheout15d
+     *
+     * @param string|mixed $cheout15d cheout15d
+     *
+     * @return $this
+     */
+    public function setCheout15d($cheout15d)
+    {
+        $this->container['cheout15d'] = $cheout15d;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseClk30dPv
+     *
+     * @return string|mixed
+     */
+    public function getPurchaseClk30dPv()
+    {
+        return $this->container['purchaseClk30dPv'];
+    }
+
+    /**
+     * Sets purchaseClk30dPv
+     *
+     * @param string|mixed $purchaseClk30dPv purchaseClk30dPv
+     *
+     * @return $this
+     */
+    public function setPurchaseClk30dPv($purchaseClk30dPv)
+    {
+        $this->container['purchaseClk30dPv'] = $purchaseClk30dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cheoutOm
+     *
+     * @return string|mixed
+     */
+    public function getCheoutOm()
+    {
+        return $this->container['cheoutOm'];
+    }
+
+    /**
+     * Sets cheoutOm
+     *
+     * @param string|mixed $cheoutOm cheoutOm
+     *
+     * @return $this
+     */
+    public function setCheoutOm($cheoutOm)
+    {
+        $this->container['cheoutOm'] = $cheoutOm;
+
+        return $this;
+    }
+
+    /**
+     * Gets preCreditPv
+     *
+     * @return string|mixed
+     */
+    public function getPreCreditPv()
+    {
+        return $this->container['preCreditPv'];
+    }
+
+    /**
+     * Sets preCreditPv
+     *
+     * @param string|mixed $preCreditPv preCreditPv
+     *
+     * @return $this
+     */
+    public function setPreCreditPv($preCreditPv)
+    {
+        $this->container['preCreditPv'] = $preCreditPv;
 
         return $this;
     }
