@@ -130,6 +130,7 @@ class OptimizationGoal
     const RENEWAL = 'OPTIMIZATIONGOAL_RENEWAL';
     const LOW_PRICE_COURSE = 'OPTIMIZATIONGOAL_LOW_PRICE_COURSE';
     const CONSULT_INTENTION = 'OPTIMIZATIONGOAL_CONSULT_INTENTION';
+    const EVERY_DAY_RETENTION = 'OPTIMIZATIONGOAL_EVERY_DAY_RETENTION';
     
     /**
      * Gets allowable values of the enum
@@ -224,6 +225,7 @@ class OptimizationGoal
             self::RENEWAL,
             self::LOW_PRICE_COURSE,
             self::CONSULT_INTENTION,
+            self::EVERY_DAY_RETENTION,
         ];
     }
 }
