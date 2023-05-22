@@ -46,6 +46,7 @@ use TencentAds\Container\BidwordRptApiContainer;
 use TencentAds\Container\BrandApiContainer;
 use TencentAds\Container\BusinessManagerRelationsApiContainer;
 use TencentAds\Container\BusinessMdmAccountRelationsApiContainer;
+use TencentAds\Container\BusinessPointApiContainer;
 use TencentAds\Container\CampaignNegativewordsApiContainer;
 use TencentAds\Container\CampaignsApiContainer;
 use TencentAds\Container\CapabilitiesApiContainer;
@@ -88,6 +89,7 @@ use TencentAds\Container\FundsApiContainer;
 use TencentAds\Container\HourlyReportsApiContainer;
 use TencentAds\Container\ImageProcessingApiContainer;
 use TencentAds\Container\ImagesApiContainer;
+use TencentAds\Container\KeywordRecommendApiContainer;
 use TencentAds\Container\LabelAudiencesApiContainer;
 use TencentAds\Container\LabelsApiContainer;
 use TencentAds\Container\LeadCluesApiContainer;
@@ -326,6 +328,9 @@ class App
     /** @var BusinessMdmAccountRelationsApiContainer */
     public $businessMdmAccountRelationsApiContainer;
 
+    /** @var BusinessPointApiContainer */
+    public $businessPointApiContainer;
+
     /** @var CampaignNegativewordsApiContainer */
     public $campaignNegativewordsApiContainer;
 
@@ -451,6 +456,9 @@ class App
 
     /** @var ImagesApiContainer */
     public $imagesApiContainer;
+
+    /** @var KeywordRecommendApiContainer */
+    public $keywordRecommendApiContainer;
 
     /** @var LabelAudiencesApiContainer */
     public $labelAudiencesApiContainer;
@@ -1382,6 +1390,20 @@ class App
 
 
     /**
+     * @return BusinessPointApiContainer
+     */
+    public function businessPoint()
+    {
+        if (empty($this->businessPointApiContainer)) {
+            $container = new BusinessPointApiContainer();
+            $container->init($this, $this->getClient());
+            $this->businessPointApiContainer = $container;
+        }
+        return $this->businessPointApiContainer;
+    }
+
+
+    /**
      * @return CampaignNegativewordsApiContainer
      */
     public function campaignNegativewords()
@@ -1966,6 +1988,20 @@ class App
             $this->imagesApiContainer = $container;
         }
         return $this->imagesApiContainer;
+    }
+
+
+    /**
+     * @return KeywordRecommendApiContainer
+     */
+    public function keywordRecommend()
+    {
+        if (empty($this->keywordRecommendApiContainer)) {
+            $container = new KeywordRecommendApiContainer();
+            $container->init($this, $this->getClient());
+            $this->keywordRecommendApiContainer = $container;
+        }
+        return $this->keywordRecommendApiContainer;
     }
 
 
