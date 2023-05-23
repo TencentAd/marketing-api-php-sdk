@@ -60,7 +60,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'title' => 'string',
         'url' => 'string',
-        'linkSpec' => '\TencentAds\Model\LinkSpec',
+        'linkSpec' => '\TencentAds\Model\ElementButtonLinkSpec',
         'appIosSpec' => '\TencentAds\Model\AppIosSpec',
         'appAndroidSpec' => '\TencentAds\Model\AppAndroidSpec',
         'miniProgramSpec' => '\TencentAds\Model\MiniProgramSpec',
@@ -334,7 +334,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     /**
      * Gets linkSpec
      *
-     * @return \TencentAds\Model\LinkSpec|mixed
+     * @return \TencentAds\Model\ElementButtonLinkSpec|mixed
      */
     public function getLinkSpec()
     {
@@ -344,7 +344,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     /**
      * Sets linkSpec
      *
-     * @param \TencentAds\Model\LinkSpec|mixed $linkSpec linkSpec
+     * @param \TencentAds\Model\ElementButtonLinkSpec|mixed $linkSpec linkSpec
      *
      * @return $this
      */

@@ -115,6 +115,7 @@ use TencentAds\Container\MergeFundTypeFundStatementsDetailedApiContainer;
 use TencentAds\Container\MergeFundTypeFundsApiContainer;
 use TencentAds\Container\MergeFundTypeSubcustomerTransferApiContainer;
 use TencentAds\Container\OauthApiContainer;
+use TencentAds\Container\ObjectCommentFlagApiContainer;
 use TencentAds\Container\OptimizationGoalPermissionsApiContainer;
 use TencentAds\Container\OuterCluesApiContainer;
 use TencentAds\Container\OuterCluesContactApiContainer;
@@ -534,6 +535,9 @@ class App
 
     /** @var OauthApiContainer */
     public $oauthApiContainer;
+
+    /** @var ObjectCommentFlagApiContainer */
+    public $objectCommentFlagApiContainer;
 
     /** @var OptimizationGoalPermissionsApiContainer */
     public $optimizationGoalPermissionsApiContainer;
@@ -2352,6 +2356,20 @@ class App
             $this->oauthApiContainer = $container;
         }
         return $this->oauthApiContainer;
+    }
+
+
+    /**
+     * @return ObjectCommentFlagApiContainer
+     */
+    public function objectCommentFlag()
+    {
+        if (empty($this->objectCommentFlagApiContainer)) {
+            $container = new ObjectCommentFlagApiContainer();
+            $container->init($this, $this->getClient());
+            $this->objectCommentFlagApiContainer = $container;
+        }
+        return $this->objectCommentFlagApiContainer;
     }
 
 
