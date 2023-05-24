@@ -601,6 +601,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'quitChatGroupRate' => 'double',
         'creApplicationRateWeb' => 'double',
         'creApplicationRateApp' => 'double',
+        'incomePv24hPla' => 'int',
+        'incomePv1dPla' => 'int',
+        'incomePvPla' => 'int',
+        'videoOuterPlay3sRate' => 'double',
+        'appRetentionLt7' => 'double',
+        'appRetentionLt7Cost' => 'int',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
         'incomeVal1' => 'int',
@@ -1382,6 +1388,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'quitChatGroupRate' => 'double',
         'creApplicationRateWeb' => 'double',
         'creApplicationRateApp' => 'double',
+        'incomePv24hPla' => 'int64',
+        'incomePv1dPla' => 'int64',
+        'incomePvPla' => 'int64',
+        'videoOuterPlay3sRate' => 'double',
+        'appRetentionLt7' => 'double',
+        'appRetentionLt7Cost' => 'int64',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
         'incomeVal1' => 'int64',
@@ -2184,6 +2196,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'quitChatGroupRate' => 'quit_chat_group_rate',
         'creApplicationRateWeb' => 'cre_application_rate_web',
         'creApplicationRateApp' => 'cre_application_rate_app',
+        'incomePv24hPla' => 'income_pv_24h_pla',
+        'incomePv1dPla' => 'income_pv_1d_pla',
+        'incomePvPla' => 'income_pv_pla',
+        'videoOuterPlay3sRate' => 'video_outer_play3s_rate',
+        'appRetentionLt7' => 'app_retention_lt7',
+        'appRetentionLt7Cost' => 'app_retention_lt7_cost',
         'requestConversionsCount' => 'request_conversions_count',
         'requestConversionsCost' => 'request_conversions_cost',
         'incomeVal1' => 'income_val_1',
@@ -2965,6 +2983,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'quitChatGroupRate' => 'setQuitChatGroupRate',
         'creApplicationRateWeb' => 'setCreApplicationRateWeb',
         'creApplicationRateApp' => 'setCreApplicationRateApp',
+        'incomePv24hPla' => 'setIncomePv24hPla',
+        'incomePv1dPla' => 'setIncomePv1dPla',
+        'incomePvPla' => 'setIncomePvPla',
+        'videoOuterPlay3sRate' => 'setVideoOuterPlay3sRate',
+        'appRetentionLt7' => 'setAppRetentionLt7',
+        'appRetentionLt7Cost' => 'setAppRetentionLt7Cost',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'requestConversionsCost' => 'setRequestConversionsCost',
         'incomeVal1' => 'setIncomeVal1',
@@ -3746,6 +3770,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'quitChatGroupRate' => 'getQuitChatGroupRate',
         'creApplicationRateWeb' => 'getCreApplicationRateWeb',
         'creApplicationRateApp' => 'getCreApplicationRateApp',
+        'incomePv24hPla' => 'getIncomePv24hPla',
+        'incomePv1dPla' => 'getIncomePv1dPla',
+        'incomePvPla' => 'getIncomePvPla',
+        'videoOuterPlay3sRate' => 'getVideoOuterPlay3sRate',
+        'appRetentionLt7' => 'getAppRetentionLt7',
+        'appRetentionLt7Cost' => 'getAppRetentionLt7Cost',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'requestConversionsCost' => 'getRequestConversionsCost',
         'incomeVal1' => 'getIncomeVal1',
@@ -4581,6 +4611,12 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['quitChatGroupRate'] = isset($data['quitChatGroupRate']) ? $data['quitChatGroupRate'] : null;
         $this->container['creApplicationRateWeb'] = isset($data['creApplicationRateWeb']) ? $data['creApplicationRateWeb'] : null;
         $this->container['creApplicationRateApp'] = isset($data['creApplicationRateApp']) ? $data['creApplicationRateApp'] : null;
+        $this->container['incomePv24hPla'] = isset($data['incomePv24hPla']) ? $data['incomePv24hPla'] : null;
+        $this->container['incomePv1dPla'] = isset($data['incomePv1dPla']) ? $data['incomePv1dPla'] : null;
+        $this->container['incomePvPla'] = isset($data['incomePvPla']) ? $data['incomePvPla'] : null;
+        $this->container['videoOuterPlay3sRate'] = isset($data['videoOuterPlay3sRate']) ? $data['videoOuterPlay3sRate'] : null;
+        $this->container['appRetentionLt7'] = isset($data['appRetentionLt7']) ? $data['appRetentionLt7'] : null;
+        $this->container['appRetentionLt7Cost'] = isset($data['appRetentionLt7Cost']) ? $data['appRetentionLt7Cost'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
         $this->container['incomeVal1'] = isset($data['incomeVal1']) ? $data['incomeVal1'] : null;
@@ -17865,6 +17901,150 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setCreApplicationRateApp($creApplicationRateApp)
     {
         $this->container['creApplicationRateApp'] = $creApplicationRateApp;
+
+        return $this;
+    }
+
+    /**
+     * Gets incomePv24hPla
+     *
+     * @return int|mixed
+     */
+    public function getIncomePv24hPla()
+    {
+        return $this->container['incomePv24hPla'];
+    }
+
+    /**
+     * Sets incomePv24hPla
+     *
+     * @param int|mixed $incomePv24hPla incomePv24hPla
+     *
+     * @return $this
+     */
+    public function setIncomePv24hPla($incomePv24hPla)
+    {
+        $this->container['incomePv24hPla'] = $incomePv24hPla;
+
+        return $this;
+    }
+
+    /**
+     * Gets incomePv1dPla
+     *
+     * @return int|mixed
+     */
+    public function getIncomePv1dPla()
+    {
+        return $this->container['incomePv1dPla'];
+    }
+
+    /**
+     * Sets incomePv1dPla
+     *
+     * @param int|mixed $incomePv1dPla incomePv1dPla
+     *
+     * @return $this
+     */
+    public function setIncomePv1dPla($incomePv1dPla)
+    {
+        $this->container['incomePv1dPla'] = $incomePv1dPla;
+
+        return $this;
+    }
+
+    /**
+     * Gets incomePvPla
+     *
+     * @return int|mixed
+     */
+    public function getIncomePvPla()
+    {
+        return $this->container['incomePvPla'];
+    }
+
+    /**
+     * Sets incomePvPla
+     *
+     * @param int|mixed $incomePvPla incomePvPla
+     *
+     * @return $this
+     */
+    public function setIncomePvPla($incomePvPla)
+    {
+        $this->container['incomePvPla'] = $incomePvPla;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay3sRate
+     *
+     * @return double|mixed
+     */
+    public function getVideoOuterPlay3sRate()
+    {
+        return $this->container['videoOuterPlay3sRate'];
+    }
+
+    /**
+     * Sets videoOuterPlay3sRate
+     *
+     * @param double|mixed $videoOuterPlay3sRate videoOuterPlay3sRate
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay3sRate($videoOuterPlay3sRate)
+    {
+        $this->container['videoOuterPlay3sRate'] = $videoOuterPlay3sRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets appRetentionLt7
+     *
+     * @return double|mixed
+     */
+    public function getAppRetentionLt7()
+    {
+        return $this->container['appRetentionLt7'];
+    }
+
+    /**
+     * Sets appRetentionLt7
+     *
+     * @param double|mixed $appRetentionLt7 appRetentionLt7
+     *
+     * @return $this
+     */
+    public function setAppRetentionLt7($appRetentionLt7)
+    {
+        $this->container['appRetentionLt7'] = $appRetentionLt7;
+
+        return $this;
+    }
+
+    /**
+     * Gets appRetentionLt7Cost
+     *
+     * @return int|mixed
+     */
+    public function getAppRetentionLt7Cost()
+    {
+        return $this->container['appRetentionLt7Cost'];
+    }
+
+    /**
+     * Sets appRetentionLt7Cost
+     *
+     * @param int|mixed $appRetentionLt7Cost appRetentionLt7Cost
+     *
+     * @return $this
+     */
+    public function setAppRetentionLt7Cost($appRetentionLt7Cost)
+    {
+        $this->container['appRetentionLt7Cost'] = $appRetentionLt7Cost;
 
         return $this;
     }
