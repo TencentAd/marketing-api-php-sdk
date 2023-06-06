@@ -82,6 +82,7 @@ class CalcStatus
     const GUARANTEED = 'STATUS_GUARANTEED';
     const VERIFYING = 'STATUS_VERIFYING';
     const SETTLED_ACCOUNT = 'STATUS_SETTLED_ACCOUNT';
+    const PRE_LOCK = 'STATUS_PRE_LOCK';
     
     /**
      * Gets allowable values of the enum
@@ -128,6 +129,7 @@ class CalcStatus
             self::GUARANTEED,
             self::VERIFYING,
             self::SETTLED_ACCOUNT,
+            self::PRE_LOCK,
         ];
     }
 }

@@ -183,7 +183,11 @@ class BidwordRptGetListStruct implements ModelInterface, ArrayAccess
         'cheout15d' => 'string',
         'purchaseClk30dPv' => 'string',
         'cheoutOm' => 'string',
-        'preCreditPv' => 'string'
+        'preCreditPv' => 'string',
+        'expAvgRank' => 'string',
+        'expOverallTopPv' => 'string',
+        'clkTopPv' => 'string',
+        'realCostTop' => 'string'
     ];
 
     /**
@@ -317,7 +321,11 @@ class BidwordRptGetListStruct implements ModelInterface, ArrayAccess
         'cheout15d' => null,
         'purchaseClk30dPv' => null,
         'cheoutOm' => null,
-        'preCreditPv' => null
+        'preCreditPv' => null,
+        'expAvgRank' => null,
+        'expOverallTopPv' => null,
+        'clkTopPv' => null,
+        'realCostTop' => null
     ];
 
     /**
@@ -472,7 +480,11 @@ class BidwordRptGetListStruct implements ModelInterface, ArrayAccess
         'cheout15d' => 'cheout_15d',
         'purchaseClk30dPv' => 'purchase_clk_30d_pv',
         'cheoutOm' => 'cheout_om',
-        'preCreditPv' => 'pre_credit_pv'
+        'preCreditPv' => 'pre_credit_pv',
+        'expAvgRank' => 'exp_avg_rank',
+        'expOverallTopPv' => 'exp_overall_top_pv',
+        'clkTopPv' => 'clk_top_pv',
+        'realCostTop' => 'real_cost_top'
     ];
 
     /**
@@ -606,7 +618,11 @@ class BidwordRptGetListStruct implements ModelInterface, ArrayAccess
         'cheout15d' => 'setCheout15d',
         'purchaseClk30dPv' => 'setPurchaseClk30dPv',
         'cheoutOm' => 'setCheoutOm',
-        'preCreditPv' => 'setPreCreditPv'
+        'preCreditPv' => 'setPreCreditPv',
+        'expAvgRank' => 'setExpAvgRank',
+        'expOverallTopPv' => 'setExpOverallTopPv',
+        'clkTopPv' => 'setClkTopPv',
+        'realCostTop' => 'setRealCostTop'
     ];
 
     /**
@@ -740,7 +756,11 @@ class BidwordRptGetListStruct implements ModelInterface, ArrayAccess
         'cheout15d' => 'getCheout15d',
         'purchaseClk30dPv' => 'getPurchaseClk30dPv',
         'cheoutOm' => 'getCheoutOm',
-        'preCreditPv' => 'getPreCreditPv'
+        'preCreditPv' => 'getPreCreditPv',
+        'expAvgRank' => 'getExpAvgRank',
+        'expOverallTopPv' => 'getExpOverallTopPv',
+        'clkTopPv' => 'getClkTopPv',
+        'realCostTop' => 'getRealCostTop'
     ];
 
     /**
@@ -929,6 +949,10 @@ class BidwordRptGetListStruct implements ModelInterface, ArrayAccess
         $this->container['purchaseClk30dPv'] = isset($data['purchaseClk30dPv']) ? $data['purchaseClk30dPv'] : null;
         $this->container['cheoutOm'] = isset($data['cheoutOm']) ? $data['cheoutOm'] : null;
         $this->container['preCreditPv'] = isset($data['preCreditPv']) ? $data['preCreditPv'] : null;
+        $this->container['expAvgRank'] = isset($data['expAvgRank']) ? $data['expAvgRank'] : null;
+        $this->container['expOverallTopPv'] = isset($data['expOverallTopPv']) ? $data['expOverallTopPv'] : null;
+        $this->container['clkTopPv'] = isset($data['clkTopPv']) ? $data['clkTopPv'] : null;
+        $this->container['realCostTop'] = isset($data['realCostTop']) ? $data['realCostTop'] : null;
     }
 
     /**
@@ -3975,6 +3999,102 @@ class BidwordRptGetListStruct implements ModelInterface, ArrayAccess
     public function setPreCreditPv($preCreditPv)
     {
         $this->container['preCreditPv'] = $preCreditPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets expAvgRank
+     *
+     * @return string|mixed
+     */
+    public function getExpAvgRank()
+    {
+        return $this->container['expAvgRank'];
+    }
+
+    /**
+     * Sets expAvgRank
+     *
+     * @param string|mixed $expAvgRank expAvgRank
+     *
+     * @return $this
+     */
+    public function setExpAvgRank($expAvgRank)
+    {
+        $this->container['expAvgRank'] = $expAvgRank;
+
+        return $this;
+    }
+
+    /**
+     * Gets expOverallTopPv
+     *
+     * @return string|mixed
+     */
+    public function getExpOverallTopPv()
+    {
+        return $this->container['expOverallTopPv'];
+    }
+
+    /**
+     * Sets expOverallTopPv
+     *
+     * @param string|mixed $expOverallTopPv expOverallTopPv
+     *
+     * @return $this
+     */
+    public function setExpOverallTopPv($expOverallTopPv)
+    {
+        $this->container['expOverallTopPv'] = $expOverallTopPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkTopPv
+     *
+     * @return string|mixed
+     */
+    public function getClkTopPv()
+    {
+        return $this->container['clkTopPv'];
+    }
+
+    /**
+     * Sets clkTopPv
+     *
+     * @param string|mixed $clkTopPv clkTopPv
+     *
+     * @return $this
+     */
+    public function setClkTopPv($clkTopPv)
+    {
+        $this->container['clkTopPv'] = $clkTopPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets realCostTop
+     *
+     * @return string|mixed
+     */
+    public function getRealCostTop()
+    {
+        return $this->container['realCostTop'];
+    }
+
+    /**
+     * Sets realCostTop
+     *
+     * @param string|mixed $realCostTop realCostTop
+     *
+     * @return $this
+     */
+    public function setRealCostTop($realCostTop)
+    {
+        $this->container['realCostTop'] = $realCostTop;
 
         return $this;
     }
