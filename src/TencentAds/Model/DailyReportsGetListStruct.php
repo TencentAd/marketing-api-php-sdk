@@ -759,6 +759,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'matchType' => 'int',
         'bidwordId' => 'int',
         'bidword' => 'string',
+        'expOverallTopPv' => 'int',
+        'expAvgRank' => 'double',
+        'clkTopPv' => 'int',
+        'realCostTop' => 'int',
         'queryword' => 'string',
         'hour' => 'int',
         'wechatAccountId' => 'string',
@@ -1546,6 +1550,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'matchType' => 'int64',
         'bidwordId' => 'int64',
         'bidword' => null,
+        'expOverallTopPv' => 'int64',
+        'expAvgRank' => 'double',
+        'clkTopPv' => 'int64',
+        'realCostTop' => 'int64',
         'queryword' => null,
         'hour' => 'int64',
         'wechatAccountId' => null,
@@ -2354,6 +2362,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'matchType' => 'match_type',
         'bidwordId' => 'bidword_id',
         'bidword' => 'bidword',
+        'expOverallTopPv' => 'exp_overall_top_pv',
+        'expAvgRank' => 'exp_avg_rank',
+        'clkTopPv' => 'clk_top_pv',
+        'realCostTop' => 'real_cost_top',
         'queryword' => 'queryword',
         'hour' => 'hour',
         'wechatAccountId' => 'wechat_account_id',
@@ -3141,6 +3153,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'matchType' => 'setMatchType',
         'bidwordId' => 'setBidwordId',
         'bidword' => 'setBidword',
+        'expOverallTopPv' => 'setExpOverallTopPv',
+        'expAvgRank' => 'setExpAvgRank',
+        'clkTopPv' => 'setClkTopPv',
+        'realCostTop' => 'setRealCostTop',
         'queryword' => 'setQueryword',
         'hour' => 'setHour',
         'wechatAccountId' => 'setWechatAccountId',
@@ -3928,6 +3944,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'matchType' => 'getMatchType',
         'bidwordId' => 'getBidwordId',
         'bidword' => 'getBidword',
+        'expOverallTopPv' => 'getExpOverallTopPv',
+        'expAvgRank' => 'getExpAvgRank',
+        'clkTopPv' => 'getClkTopPv',
+        'realCostTop' => 'getRealCostTop',
         'queryword' => 'getQueryword',
         'hour' => 'getHour',
         'wechatAccountId' => 'getWechatAccountId',
@@ -4769,6 +4789,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['matchType'] = isset($data['matchType']) ? $data['matchType'] : null;
         $this->container['bidwordId'] = isset($data['bidwordId']) ? $data['bidwordId'] : null;
         $this->container['bidword'] = isset($data['bidword']) ? $data['bidword'] : null;
+        $this->container['expOverallTopPv'] = isset($data['expOverallTopPv']) ? $data['expOverallTopPv'] : null;
+        $this->container['expAvgRank'] = isset($data['expAvgRank']) ? $data['expAvgRank'] : null;
+        $this->container['clkTopPv'] = isset($data['clkTopPv']) ? $data['clkTopPv'] : null;
+        $this->container['realCostTop'] = isset($data['realCostTop']) ? $data['realCostTop'] : null;
         $this->container['queryword'] = isset($data['queryword']) ? $data['queryword'] : null;
         $this->container['hour'] = isset($data['hour']) ? $data['hour'] : null;
         $this->container['wechatAccountId'] = isset($data['wechatAccountId']) ? $data['wechatAccountId'] : null;
@@ -21693,6 +21717,102 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setBidword($bidword)
     {
         $this->container['bidword'] = $bidword;
+
+        return $this;
+    }
+
+    /**
+     * Gets expOverallTopPv
+     *
+     * @return int|mixed
+     */
+    public function getExpOverallTopPv()
+    {
+        return $this->container['expOverallTopPv'];
+    }
+
+    /**
+     * Sets expOverallTopPv
+     *
+     * @param int|mixed $expOverallTopPv expOverallTopPv
+     *
+     * @return $this
+     */
+    public function setExpOverallTopPv($expOverallTopPv)
+    {
+        $this->container['expOverallTopPv'] = $expOverallTopPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets expAvgRank
+     *
+     * @return double|mixed
+     */
+    public function getExpAvgRank()
+    {
+        return $this->container['expAvgRank'];
+    }
+
+    /**
+     * Sets expAvgRank
+     *
+     * @param double|mixed $expAvgRank expAvgRank
+     *
+     * @return $this
+     */
+    public function setExpAvgRank($expAvgRank)
+    {
+        $this->container['expAvgRank'] = $expAvgRank;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkTopPv
+     *
+     * @return int|mixed
+     */
+    public function getClkTopPv()
+    {
+        return $this->container['clkTopPv'];
+    }
+
+    /**
+     * Sets clkTopPv
+     *
+     * @param int|mixed $clkTopPv clkTopPv
+     *
+     * @return $this
+     */
+    public function setClkTopPv($clkTopPv)
+    {
+        $this->container['clkTopPv'] = $clkTopPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets realCostTop
+     *
+     * @return int|mixed
+     */
+    public function getRealCostTop()
+    {
+        return $this->container['realCostTop'];
+    }
+
+    /**
+     * Sets realCostTop
+     *
+     * @param int|mixed $realCostTop realCostTop
+     *
+     * @return $this
+     */
+    public function setRealCostTop($realCostTop)
+    {
+        $this->container['realCostTop'] = $realCostTop;
 
         return $this;
     }

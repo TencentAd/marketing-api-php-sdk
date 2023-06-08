@@ -58,6 +58,9 @@ class ConversionOptimizationGoal
     const _7_DAY_MONETIZATION_ROAS = 'GOAL_7DAY_MONETIZATION_ROAS';
     const _15_DAY_MONETIZATION_ROAS = 'GOAL_15DAY_MONETIZATION_ROAS';
     const _7_DAY_RETENTION_TIMES = 'GOAL_7DAY_RETENTION_TIMES';
+    const _7_DAY_LONGTERM_PURCHASE_ROAS = 'GOAL_7DAY_LONGTERM_PURCHASE_ROAS';
+    const _14_DAY_LONGTERM_PURCHASE_ROAS = 'GOAL_14DAY_LONGTERM_PURCHASE_ROAS';
+    const _30_DAY_LONGTERM_PURCHASE_ROAS = 'GOAL_30DAY_LONGTERM_PURCHASE_ROAS';
     
     /**
      * Gets allowable values of the enum
@@ -80,6 +83,9 @@ class ConversionOptimizationGoal
             self::_7_DAY_MONETIZATION_ROAS,
             self::_15_DAY_MONETIZATION_ROAS,
             self::_7_DAY_RETENTION_TIMES,
+            self::_7_DAY_LONGTERM_PURCHASE_ROAS,
+            self::_14_DAY_LONGTERM_PURCHASE_ROAS,
+            self::_30_DAY_LONGTERM_PURCHASE_ROAS,
         ];
     }
 }
