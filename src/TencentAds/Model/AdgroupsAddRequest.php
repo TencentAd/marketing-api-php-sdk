@@ -107,7 +107,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'smartTargeting' => '\TencentAds\Model\SmartTargeting',
         'dynamicCreativeIdSet' => 'int[]',
         'autoDerivedLandingPageSwitch' => 'bool',
-        'searchExpansionSwitch' => '\TencentAds\Model\SearchExpansionSwitch',
         'searchExpandTargetingSwitch' => '\TencentAds\Model\SearchExpandTargetingSwitch',
         'bidScene' => '\TencentAds\Model\BidScene',
         'accountId' => 'int'
@@ -169,7 +168,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'smartTargeting' => null,
         'dynamicCreativeIdSet' => 'int64',
         'autoDerivedLandingPageSwitch' => null,
-        'searchExpansionSwitch' => null,
         'searchExpandTargetingSwitch' => null,
         'bidScene' => null,
         'accountId' => 'int64'
@@ -252,7 +250,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'smartTargeting' => 'smart_targeting',
         'dynamicCreativeIdSet' => 'dynamic_creative_id_set',
         'autoDerivedLandingPageSwitch' => 'auto_derived_landing_page_switch',
-        'searchExpansionSwitch' => 'search_expansion_switch',
         'searchExpandTargetingSwitch' => 'search_expand_targeting_switch',
         'bidScene' => 'bid_scene',
         'accountId' => 'account_id'
@@ -314,7 +311,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'smartTargeting' => 'setSmartTargeting',
         'dynamicCreativeIdSet' => 'setDynamicCreativeIdSet',
         'autoDerivedLandingPageSwitch' => 'setAutoDerivedLandingPageSwitch',
-        'searchExpansionSwitch' => 'setSearchExpansionSwitch',
         'searchExpandTargetingSwitch' => 'setSearchExpandTargetingSwitch',
         'bidScene' => 'setBidScene',
         'accountId' => 'setAccountId'
@@ -376,7 +372,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'smartTargeting' => 'getSmartTargeting',
         'dynamicCreativeIdSet' => 'getDynamicCreativeIdSet',
         'autoDerivedLandingPageSwitch' => 'getAutoDerivedLandingPageSwitch',
-        'searchExpansionSwitch' => 'getSearchExpansionSwitch',
         'searchExpandTargetingSwitch' => 'getSearchExpandTargetingSwitch',
         'bidScene' => 'getBidScene',
         'accountId' => 'getAccountId'
@@ -492,7 +487,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['smartTargeting'] = isset($data['smartTargeting']) ? $data['smartTargeting'] : null;
         $this->container['dynamicCreativeIdSet'] = isset($data['dynamicCreativeIdSet']) ? $data['dynamicCreativeIdSet'] : null;
         $this->container['autoDerivedLandingPageSwitch'] = isset($data['autoDerivedLandingPageSwitch']) ? $data['autoDerivedLandingPageSwitch'] : null;
-        $this->container['searchExpansionSwitch'] = isset($data['searchExpansionSwitch']) ? $data['searchExpansionSwitch'] : null;
         $this->container['searchExpandTargetingSwitch'] = isset($data['searchExpandTargetingSwitch']) ? $data['searchExpandTargetingSwitch'] : null;
         $this->container['bidScene'] = isset($data['bidScene']) ? $data['bidScene'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
@@ -1718,30 +1712,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setAutoDerivedLandingPageSwitch($autoDerivedLandingPageSwitch)
     {
         $this->container['autoDerivedLandingPageSwitch'] = $autoDerivedLandingPageSwitch;
-
-        return $this;
-    }
-
-    /**
-     * Gets searchExpansionSwitch
-     *
-     * @return \TencentAds\Model\SearchExpansionSwitch|mixed
-     */
-    public function getSearchExpansionSwitch()
-    {
-        return $this->container['searchExpansionSwitch'];
-    }
-
-    /**
-     * Sets searchExpansionSwitch
-     *
-     * @param \TencentAds\Model\SearchExpansionSwitch|mixed $searchExpansionSwitch searchExpansionSwitch
-     *
-     * @return $this
-     */
-    public function setSearchExpansionSwitch($searchExpansionSwitch)
-    {
-        $this->container['searchExpansionSwitch'] = $searchExpansionSwitch;
 
         return $this;
     }
