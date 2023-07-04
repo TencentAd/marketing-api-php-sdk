@@ -59,7 +59,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'userActionSetId' => 'int',
-        'type' => '\TencentAds\Model\AmUserActionSetType',
+        'type' => '\TencentAds\Model\DataSourceType',
         'mobileAppId' => 'int',
         'name' => 'string',
         'description' => 'string',
@@ -292,7 +292,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \TencentAds\Model\AmUserActionSetType|mixed
+     * @return \TencentAds\Model\DataSourceType|mixed
      */
     public function getType()
     {
@@ -302,7 +302,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \TencentAds\Model\AmUserActionSetType|mixed $type type
+     * @param \TencentAds\Model\DataSourceType|mixed $type type
      *
      * @return $this
      */

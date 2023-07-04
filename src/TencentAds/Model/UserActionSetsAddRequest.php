@@ -58,7 +58,7 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
-        'type' => '\TencentAds\Model\AmUserActionSetType',
+        'type' => '\TencentAds\Model\DataSourceType',
         'mobileAppId' => 'int',
         'wechatAppId' => 'string',
         'name' => 'string',
@@ -273,7 +273,7 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \TencentAds\Model\AmUserActionSetType|mixed
+     * @return \TencentAds\Model\DataSourceType|mixed
      */
     public function getType()
     {
@@ -283,7 +283,7 @@ class UserActionSetsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \TencentAds\Model\AmUserActionSetType|mixed $type type
+     * @param \TencentAds\Model\DataSourceType|mixed $type type
      *
      * @return $this
      */

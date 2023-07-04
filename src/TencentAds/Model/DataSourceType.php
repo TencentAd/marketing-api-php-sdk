@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * DataSourceType Class Doc Comment
  *
  * @category Class
- * @description 数据源类型标识，枚举列表：{ WEB, ANDROID, IOS, OFFLINE, WECHAT, WECHAT_MINI_PROGRAM, WECHAT_MINI_GAME }
+ * @description 用户行为源类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

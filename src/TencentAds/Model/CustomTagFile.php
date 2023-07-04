@@ -64,7 +64,7 @@ class CustomTagFile implements ModelInterface, ArrayAccess
         'userIdType' => '\TencentAds\Model\UserIdType',
         'operationType' => '\TencentAds\Model\OperationType',
         'openAppId' => 'string',
-        'processStatus' => '\TencentAds\Model\FileProcessStatus',
+        'processStatus' => 'int',
         'processCode' => 'int',
         'errorMessage' => 'string',
         'lineCount' => 'int',
@@ -85,7 +85,7 @@ class CustomTagFile implements ModelInterface, ArrayAccess
         'userIdType' => null,
         'operationType' => null,
         'openAppId' => null,
-        'processStatus' => null,
+        'processStatus' => 'int64',
         'processCode' => 'int64',
         'errorMessage' => null,
         'lineCount' => 'int64',
@@ -424,7 +424,7 @@ class CustomTagFile implements ModelInterface, ArrayAccess
     /**
      * Gets processStatus
      *
-     * @return \TencentAds\Model\FileProcessStatus|mixed
+     * @return int|mixed
      */
     public function getProcessStatus()
     {
@@ -434,7 +434,7 @@ class CustomTagFile implements ModelInterface, ArrayAccess
     /**
      * Sets processStatus
      *
-     * @param \TencentAds\Model\FileProcessStatus|mixed $processStatus processStatus
+     * @param int|mixed $processStatus processStatus
      *
      * @return $this
      */
