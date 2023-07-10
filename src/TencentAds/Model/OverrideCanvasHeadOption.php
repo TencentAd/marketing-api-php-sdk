@@ -47,6 +47,7 @@ class OverrideCanvasHeadOption
     const CANVAS_OVERRIDE_CREATIVE = 'OPTION_CANVAS_OVERRIDE_CREATIVE';
     const CREATIVE_OVERRIDE_CANVAS = 'OPTION_CREATIVE_OVERRIDE_CANVAS';
     const KEEP_DIFFERENT = 'OPTION_KEEP_DIFFERENT';
+    const CREATIVE_OVERRIDE_CANVAS_DYNAMIC = 'OPTION_CREATIVE_OVERRIDE_CANVAS_DYNAMIC';
     
     /**
      * Gets allowable values of the enum
@@ -58,6 +59,7 @@ class OverrideCanvasHeadOption
             self::CANVAS_OVERRIDE_CREATIVE,
             self::CREATIVE_OVERRIDE_CANVAS,
             self::KEEP_DIFFERENT,
+            self::CREATIVE_OVERRIDE_CANVAS_DYNAMIC,
         ];
     }
 }

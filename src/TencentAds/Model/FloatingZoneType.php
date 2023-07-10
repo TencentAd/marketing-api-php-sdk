@@ -48,6 +48,7 @@ class FloatingZoneType
     const IMAGE_TEXT = 'FLOATING_ZONE_TYPE_IMAGE_TEXT';
     const SINGLE_IMAGE = 'FLOATING_ZONE_TYPE_SINGLE_IMAGE';
     const MULTI_BUTTON = 'FLOATING_ZONE_TYPE_MULTI_BUTTON';
+    const SLIDER_CARD = 'FLOATING_ZONE_TYPE_SLIDER_CARD';
     
     /**
      * Gets allowable values of the enum
@@ -60,6 +61,7 @@ class FloatingZoneType
             self::IMAGE_TEXT,
             self::SINGLE_IMAGE,
             self::MULTI_BUTTON,
+            self::SLIDER_CARD,
         ];
     }
 }

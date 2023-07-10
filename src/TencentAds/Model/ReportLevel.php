@@ -62,6 +62,7 @@ class ReportLevel
     const CAMPAIGN_WECHAT = 'REPORT_LEVEL_CAMPAIGN_WECHAT';
     const ADGROUP_WECHAT = 'REPORT_LEVEL_ADGROUP_WECHAT';
     const AD_WECHAT = 'REPORT_LEVEL_AD_WECHAT';
+    const PROJECT = 'REPORT_LEVEL_PROJECT';
     
     /**
      * Gets allowable values of the enum
@@ -88,6 +89,7 @@ class ReportLevel
             self::CAMPAIGN_WECHAT,
             self::ADGROUP_WECHAT,
             self::AD_WECHAT,
+            self::PROJECT,
         ];
     }
 }

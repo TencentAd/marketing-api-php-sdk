@@ -1,6 +1,6 @@
 <?php
 /**
- * FileDispatchSwitch
+ * DataNexusScene
  *
  * PHP version 5
  *
@@ -31,21 +31,23 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * FileDispatchSwitch Class Doc Comment
+ * DataNexusScene Class Doc Comment
  *
  * @category Class
- * @description 批量分发开关标识，SWITCH_ON开启，SWITCH_OFF关闭
+ * @description 应用场景
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class FileDispatchSwitch
+class DataNexusScene
 {
     /**
      * Possible values of this enum
      */
-    const ON = 'SWITCH_ON';
-    const OFF = 'SWITCH_OFF';
+    const DMP = 'DMP';
+    const TRANSFORMATION_ATTRIBUTION = 'TRANSFORMATION_ATTRIBUTION';
+    const PKAM = 'PKAM';
+    const DPA = 'DPA';
     
     /**
      * Gets allowable values of the enum
@@ -54,8 +56,10 @@ class FileDispatchSwitch
     public static function getAllowableEnumValues()
     {
         return [
-            self::ON,
-            self::OFF,
+            self::DMP,
+            self::TRANSFORMATION_ATTRIBUTION,
+            self::PKAM,
+            self::DPA,
         ];
     }
 }

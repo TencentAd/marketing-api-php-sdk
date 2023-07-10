@@ -88,7 +88,11 @@ class QuerywordRptGetListStruct implements ModelInterface, ArrayAccess
         'placementGroupId' => 'int',
         'placementGroupName' => 'string',
         'matchType' => 'int',
-        'matchTypeName' => 'string'
+        'matchTypeName' => 'string',
+        'querywordStatus' => 'int',
+        'querywordStatusCn' => 'string',
+        'bidAmount' => 'int',
+        'bidMode' => 'string'
     ];
 
     /**
@@ -127,7 +131,11 @@ class QuerywordRptGetListStruct implements ModelInterface, ArrayAccess
         'placementGroupId' => 'int64',
         'placementGroupName' => null,
         'matchType' => 'int64',
-        'matchTypeName' => null
+        'matchTypeName' => null,
+        'querywordStatus' => 'int64',
+        'querywordStatusCn' => null,
+        'bidAmount' => 'int64',
+        'bidMode' => null
     ];
 
     /**
@@ -187,7 +195,11 @@ class QuerywordRptGetListStruct implements ModelInterface, ArrayAccess
         'placementGroupId' => 'placement_group_id',
         'placementGroupName' => 'placement_group_name',
         'matchType' => 'match_type',
-        'matchTypeName' => 'match_type_name'
+        'matchTypeName' => 'match_type_name',
+        'querywordStatus' => 'queryword_status',
+        'querywordStatusCn' => 'queryword_status_cn',
+        'bidAmount' => 'bid_amount',
+        'bidMode' => 'bid_mode'
     ];
 
     /**
@@ -226,7 +238,11 @@ class QuerywordRptGetListStruct implements ModelInterface, ArrayAccess
         'placementGroupId' => 'setPlacementGroupId',
         'placementGroupName' => 'setPlacementGroupName',
         'matchType' => 'setMatchType',
-        'matchTypeName' => 'setMatchTypeName'
+        'matchTypeName' => 'setMatchTypeName',
+        'querywordStatus' => 'setQuerywordStatus',
+        'querywordStatusCn' => 'setQuerywordStatusCn',
+        'bidAmount' => 'setBidAmount',
+        'bidMode' => 'setBidMode'
     ];
 
     /**
@@ -265,7 +281,11 @@ class QuerywordRptGetListStruct implements ModelInterface, ArrayAccess
         'placementGroupId' => 'getPlacementGroupId',
         'placementGroupName' => 'getPlacementGroupName',
         'matchType' => 'getMatchType',
-        'matchTypeName' => 'getMatchTypeName'
+        'matchTypeName' => 'getMatchTypeName',
+        'querywordStatus' => 'getQuerywordStatus',
+        'querywordStatusCn' => 'getQuerywordStatusCn',
+        'bidAmount' => 'getBidAmount',
+        'bidMode' => 'getBidMode'
     ];
 
     /**
@@ -359,6 +379,10 @@ class QuerywordRptGetListStruct implements ModelInterface, ArrayAccess
         $this->container['placementGroupName'] = isset($data['placementGroupName']) ? $data['placementGroupName'] : null;
         $this->container['matchType'] = isset($data['matchType']) ? $data['matchType'] : null;
         $this->container['matchTypeName'] = isset($data['matchTypeName']) ? $data['matchTypeName'] : null;
+        $this->container['querywordStatus'] = isset($data['querywordStatus']) ? $data['querywordStatus'] : null;
+        $this->container['querywordStatusCn'] = isset($data['querywordStatusCn']) ? $data['querywordStatusCn'] : null;
+        $this->container['bidAmount'] = isset($data['bidAmount']) ? $data['bidAmount'] : null;
+        $this->container['bidMode'] = isset($data['bidMode']) ? $data['bidMode'] : null;
     }
 
     /**
@@ -1125,6 +1149,102 @@ class QuerywordRptGetListStruct implements ModelInterface, ArrayAccess
     public function setMatchTypeName($matchTypeName)
     {
         $this->container['matchTypeName'] = $matchTypeName;
+
+        return $this;
+    }
+
+    /**
+     * Gets querywordStatus
+     *
+     * @return int|mixed
+     */
+    public function getQuerywordStatus()
+    {
+        return $this->container['querywordStatus'];
+    }
+
+    /**
+     * Sets querywordStatus
+     *
+     * @param int|mixed $querywordStatus querywordStatus
+     *
+     * @return $this
+     */
+    public function setQuerywordStatus($querywordStatus)
+    {
+        $this->container['querywordStatus'] = $querywordStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets querywordStatusCn
+     *
+     * @return string|mixed
+     */
+    public function getQuerywordStatusCn()
+    {
+        return $this->container['querywordStatusCn'];
+    }
+
+    /**
+     * Sets querywordStatusCn
+     *
+     * @param string|mixed $querywordStatusCn querywordStatusCn
+     *
+     * @return $this
+     */
+    public function setQuerywordStatusCn($querywordStatusCn)
+    {
+        $this->container['querywordStatusCn'] = $querywordStatusCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets bidAmount
+     *
+     * @return int|mixed
+     */
+    public function getBidAmount()
+    {
+        return $this->container['bidAmount'];
+    }
+
+    /**
+     * Sets bidAmount
+     *
+     * @param int|mixed $bidAmount bidAmount
+     *
+     * @return $this
+     */
+    public function setBidAmount($bidAmount)
+    {
+        $this->container['bidAmount'] = $bidAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bidMode
+     *
+     * @return string|mixed
+     */
+    public function getBidMode()
+    {
+        return $this->container['bidMode'];
+    }
+
+    /**
+     * Sets bidMode
+     *
+     * @param string|mixed $bidMode bidMode
+     *
+     * @return $this
+     */
+    public function setBidMode($bidMode)
+    {
+        $this->container['bidMode'] = $bidMode;
 
         return $this;
     }

@@ -66,6 +66,8 @@ use TencentAds\Container\CustomTagsApiContainer;
 use TencentAds\Container\DailyBalanceReportApiContainer;
 use TencentAds\Container\DailyReportsApiContainer;
 use TencentAds\Container\DataNexusFileApiContainer;
+use TencentAds\Container\DataSetApiContainer;
+use TencentAds\Container\DataSourceDispatchApiContainer;
 use TencentAds\Container\DiagnosisApiContainer;
 use TencentAds\Container\DplabelAdLabelApiContainer;
 use TencentAds\Container\DynamicAdImageTemplatesApiContainer;
@@ -385,6 +387,12 @@ class App
 
     /** @var DataNexusFileApiContainer */
     public $dataNexusFileApiContainer;
+
+    /** @var DataSetApiContainer */
+    public $dataSetApiContainer;
+
+    /** @var DataSourceDispatchApiContainer */
+    public $dataSourceDispatchApiContainer;
 
     /** @var DiagnosisApiContainer */
     public $diagnosisApiContainer;
@@ -1658,6 +1666,34 @@ class App
             $this->dataNexusFileApiContainer = $container;
         }
         return $this->dataNexusFileApiContainer;
+    }
+
+
+    /**
+     * @return DataSetApiContainer
+     */
+    public function dataSet()
+    {
+        if (empty($this->dataSetApiContainer)) {
+            $container = new DataSetApiContainer();
+            $container->init($this, $this->getClient());
+            $this->dataSetApiContainer = $container;
+        }
+        return $this->dataSetApiContainer;
+    }
+
+
+    /**
+     * @return DataSourceDispatchApiContainer
+     */
+    public function dataSourceDispatch()
+    {
+        if (empty($this->dataSourceDispatchApiContainer)) {
+            $container = new DataSourceDispatchApiContainer();
+            $container->init($this, $this->getClient());
+            $this->dataSourceDispatchApiContainer = $container;
+        }
+        return $this->dataSourceDispatchApiContainer;
     }
 
 

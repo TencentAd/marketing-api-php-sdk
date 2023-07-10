@@ -602,6 +602,14 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoOuterPlay3sRate' => 'double',
         'appRetentionLt7' => 'double',
         'appRetentionLt7Cost' => 'int',
+        'clkBreakPv' => 'int',
+        'clkAccountLivingStatusPv' => 'int',
+        'wecomAddPersonalDedupPv' => 'int',
+        'wecomAddPersonalDedupPvCost' => 'int',
+        'afterAddWecomConsultDedupPv' => 'int',
+        'afterAddWecomConsultDedupPvCost' => 'int',
+        'afterAddWecomIntentionDedupPv' => 'int',
+        'afterAddWecomIntentionDedupPvCost' => 'int',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
         'incomeVal1' => 'int',
@@ -1364,6 +1372,14 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoOuterPlay3sRate' => 'double',
         'appRetentionLt7' => 'double',
         'appRetentionLt7Cost' => 'int64',
+        'clkBreakPv' => 'int64',
+        'clkAccountLivingStatusPv' => 'int64',
+        'wecomAddPersonalDedupPv' => 'int64',
+        'wecomAddPersonalDedupPvCost' => 'int64',
+        'afterAddWecomConsultDedupPv' => 'int64',
+        'afterAddWecomConsultDedupPvCost' => 'int64',
+        'afterAddWecomIntentionDedupPv' => 'int64',
+        'afterAddWecomIntentionDedupPvCost' => 'int64',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
         'incomeVal1' => 'int64',
@@ -2147,6 +2163,14 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoOuterPlay3sRate' => 'video_outer_play3s_rate',
         'appRetentionLt7' => 'app_retention_lt7',
         'appRetentionLt7Cost' => 'app_retention_lt7_cost',
+        'clkBreakPv' => 'clk_break_pv',
+        'clkAccountLivingStatusPv' => 'clk_account_living_status_pv',
+        'wecomAddPersonalDedupPv' => 'wecom_add_personal_dedup_pv',
+        'wecomAddPersonalDedupPvCost' => 'wecom_add_personal_dedup_pv_cost',
+        'afterAddWecomConsultDedupPv' => 'after_add_wecom_consult_dedup_pv',
+        'afterAddWecomConsultDedupPvCost' => 'after_add_wecom_consult_dedup_pv_cost',
+        'afterAddWecomIntentionDedupPv' => 'after_add_wecom_intention_dedup_pv',
+        'afterAddWecomIntentionDedupPvCost' => 'after_add_wecom_intention_dedup_pv_cost',
         'requestConversionsCount' => 'request_conversions_count',
         'requestConversionsCost' => 'request_conversions_cost',
         'incomeVal1' => 'income_val_1',
@@ -2909,6 +2933,14 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoOuterPlay3sRate' => 'setVideoOuterPlay3sRate',
         'appRetentionLt7' => 'setAppRetentionLt7',
         'appRetentionLt7Cost' => 'setAppRetentionLt7Cost',
+        'clkBreakPv' => 'setClkBreakPv',
+        'clkAccountLivingStatusPv' => 'setClkAccountLivingStatusPv',
+        'wecomAddPersonalDedupPv' => 'setWecomAddPersonalDedupPv',
+        'wecomAddPersonalDedupPvCost' => 'setWecomAddPersonalDedupPvCost',
+        'afterAddWecomConsultDedupPv' => 'setAfterAddWecomConsultDedupPv',
+        'afterAddWecomConsultDedupPvCost' => 'setAfterAddWecomConsultDedupPvCost',
+        'afterAddWecomIntentionDedupPv' => 'setAfterAddWecomIntentionDedupPv',
+        'afterAddWecomIntentionDedupPvCost' => 'setAfterAddWecomIntentionDedupPvCost',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'requestConversionsCost' => 'setRequestConversionsCost',
         'incomeVal1' => 'setIncomeVal1',
@@ -3671,6 +3703,14 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoOuterPlay3sRate' => 'getVideoOuterPlay3sRate',
         'appRetentionLt7' => 'getAppRetentionLt7',
         'appRetentionLt7Cost' => 'getAppRetentionLt7Cost',
+        'clkBreakPv' => 'getClkBreakPv',
+        'clkAccountLivingStatusPv' => 'getClkAccountLivingStatusPv',
+        'wecomAddPersonalDedupPv' => 'getWecomAddPersonalDedupPv',
+        'wecomAddPersonalDedupPvCost' => 'getWecomAddPersonalDedupPvCost',
+        'afterAddWecomConsultDedupPv' => 'getAfterAddWecomConsultDedupPv',
+        'afterAddWecomConsultDedupPvCost' => 'getAfterAddWecomConsultDedupPvCost',
+        'afterAddWecomIntentionDedupPv' => 'getAfterAddWecomIntentionDedupPv',
+        'afterAddWecomIntentionDedupPvCost' => 'getAfterAddWecomIntentionDedupPvCost',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'requestConversionsCost' => 'getRequestConversionsCost',
         'incomeVal1' => 'getIncomeVal1',
@@ -4487,6 +4527,14 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['videoOuterPlay3sRate'] = isset($data['videoOuterPlay3sRate']) ? $data['videoOuterPlay3sRate'] : null;
         $this->container['appRetentionLt7'] = isset($data['appRetentionLt7']) ? $data['appRetentionLt7'] : null;
         $this->container['appRetentionLt7Cost'] = isset($data['appRetentionLt7Cost']) ? $data['appRetentionLt7Cost'] : null;
+        $this->container['clkBreakPv'] = isset($data['clkBreakPv']) ? $data['clkBreakPv'] : null;
+        $this->container['clkAccountLivingStatusPv'] = isset($data['clkAccountLivingStatusPv']) ? $data['clkAccountLivingStatusPv'] : null;
+        $this->container['wecomAddPersonalDedupPv'] = isset($data['wecomAddPersonalDedupPv']) ? $data['wecomAddPersonalDedupPv'] : null;
+        $this->container['wecomAddPersonalDedupPvCost'] = isset($data['wecomAddPersonalDedupPvCost']) ? $data['wecomAddPersonalDedupPvCost'] : null;
+        $this->container['afterAddWecomConsultDedupPv'] = isset($data['afterAddWecomConsultDedupPv']) ? $data['afterAddWecomConsultDedupPv'] : null;
+        $this->container['afterAddWecomConsultDedupPvCost'] = isset($data['afterAddWecomConsultDedupPvCost']) ? $data['afterAddWecomConsultDedupPvCost'] : null;
+        $this->container['afterAddWecomIntentionDedupPv'] = isset($data['afterAddWecomIntentionDedupPv']) ? $data['afterAddWecomIntentionDedupPv'] : null;
+        $this->container['afterAddWecomIntentionDedupPvCost'] = isset($data['afterAddWecomIntentionDedupPvCost']) ? $data['afterAddWecomIntentionDedupPvCost'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
         $this->container['incomeVal1'] = isset($data['incomeVal1']) ? $data['incomeVal1'] : null;
@@ -17775,6 +17823,198 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setAppRetentionLt7Cost($appRetentionLt7Cost)
     {
         $this->container['appRetentionLt7Cost'] = $appRetentionLt7Cost;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBreakPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBreakPv()
+    {
+        return $this->container['clkBreakPv'];
+    }
+
+    /**
+     * Sets clkBreakPv
+     *
+     * @param int|mixed $clkBreakPv clkBreakPv
+     *
+     * @return $this
+     */
+    public function setClkBreakPv($clkBreakPv)
+    {
+        $this->container['clkBreakPv'] = $clkBreakPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkAccountLivingStatusPv
+     *
+     * @return int|mixed
+     */
+    public function getClkAccountLivingStatusPv()
+    {
+        return $this->container['clkAccountLivingStatusPv'];
+    }
+
+    /**
+     * Sets clkAccountLivingStatusPv
+     *
+     * @param int|mixed $clkAccountLivingStatusPv clkAccountLivingStatusPv
+     *
+     * @return $this
+     */
+    public function setClkAccountLivingStatusPv($clkAccountLivingStatusPv)
+    {
+        $this->container['clkAccountLivingStatusPv'] = $clkAccountLivingStatusPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets wecomAddPersonalDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getWecomAddPersonalDedupPv()
+    {
+        return $this->container['wecomAddPersonalDedupPv'];
+    }
+
+    /**
+     * Sets wecomAddPersonalDedupPv
+     *
+     * @param int|mixed $wecomAddPersonalDedupPv wecomAddPersonalDedupPv
+     *
+     * @return $this
+     */
+    public function setWecomAddPersonalDedupPv($wecomAddPersonalDedupPv)
+    {
+        $this->container['wecomAddPersonalDedupPv'] = $wecomAddPersonalDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets wecomAddPersonalDedupPvCost
+     *
+     * @return int|mixed
+     */
+    public function getWecomAddPersonalDedupPvCost()
+    {
+        return $this->container['wecomAddPersonalDedupPvCost'];
+    }
+
+    /**
+     * Sets wecomAddPersonalDedupPvCost
+     *
+     * @param int|mixed $wecomAddPersonalDedupPvCost wecomAddPersonalDedupPvCost
+     *
+     * @return $this
+     */
+    public function setWecomAddPersonalDedupPvCost($wecomAddPersonalDedupPvCost)
+    {
+        $this->container['wecomAddPersonalDedupPvCost'] = $wecomAddPersonalDedupPvCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets afterAddWecomConsultDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getAfterAddWecomConsultDedupPv()
+    {
+        return $this->container['afterAddWecomConsultDedupPv'];
+    }
+
+    /**
+     * Sets afterAddWecomConsultDedupPv
+     *
+     * @param int|mixed $afterAddWecomConsultDedupPv afterAddWecomConsultDedupPv
+     *
+     * @return $this
+     */
+    public function setAfterAddWecomConsultDedupPv($afterAddWecomConsultDedupPv)
+    {
+        $this->container['afterAddWecomConsultDedupPv'] = $afterAddWecomConsultDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets afterAddWecomConsultDedupPvCost
+     *
+     * @return int|mixed
+     */
+    public function getAfterAddWecomConsultDedupPvCost()
+    {
+        return $this->container['afterAddWecomConsultDedupPvCost'];
+    }
+
+    /**
+     * Sets afterAddWecomConsultDedupPvCost
+     *
+     * @param int|mixed $afterAddWecomConsultDedupPvCost afterAddWecomConsultDedupPvCost
+     *
+     * @return $this
+     */
+    public function setAfterAddWecomConsultDedupPvCost($afterAddWecomConsultDedupPvCost)
+    {
+        $this->container['afterAddWecomConsultDedupPvCost'] = $afterAddWecomConsultDedupPvCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets afterAddWecomIntentionDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getAfterAddWecomIntentionDedupPv()
+    {
+        return $this->container['afterAddWecomIntentionDedupPv'];
+    }
+
+    /**
+     * Sets afterAddWecomIntentionDedupPv
+     *
+     * @param int|mixed $afterAddWecomIntentionDedupPv afterAddWecomIntentionDedupPv
+     *
+     * @return $this
+     */
+    public function setAfterAddWecomIntentionDedupPv($afterAddWecomIntentionDedupPv)
+    {
+        $this->container['afterAddWecomIntentionDedupPv'] = $afterAddWecomIntentionDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets afterAddWecomIntentionDedupPvCost
+     *
+     * @return int|mixed
+     */
+    public function getAfterAddWecomIntentionDedupPvCost()
+    {
+        return $this->container['afterAddWecomIntentionDedupPvCost'];
+    }
+
+    /**
+     * Sets afterAddWecomIntentionDedupPvCost
+     *
+     * @param int|mixed $afterAddWecomIntentionDedupPvCost afterAddWecomIntentionDedupPvCost
+     *
+     * @return $this
+     */
+    public function setAfterAddWecomIntentionDedupPvCost($afterAddWecomIntentionDedupPvCost)
+    {
+        $this->container['afterAddWecomIntentionDedupPvCost'] = $afterAddWecomIntentionDedupPvCost;
 
         return $this;
     }
