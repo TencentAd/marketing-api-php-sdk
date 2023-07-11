@@ -70,7 +70,9 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'pageStatus' => '\TencentAds\Model\PageStatus',
         'fengyeSubType' => '\TencentAds\Model\LandingPageFengyeSubType',
         'ownerUid' => 'int',
-        'quoteCreativeMaterial' => 'bool'
+        'quoteCreativeMaterial' => 'bool',
+        'disableCode' => 'int',
+        'disableMessage' => 'string'
     ];
 
     /**
@@ -91,7 +93,9 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'pageStatus' => null,
         'fengyeSubType' => null,
         'ownerUid' => 'int64',
-        'quoteCreativeMaterial' => null
+        'quoteCreativeMaterial' => null,
+        'disableCode' => 'int64',
+        'disableMessage' => null
     ];
 
     /**
@@ -133,7 +137,9 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'pageStatus' => 'page_status',
         'fengyeSubType' => 'fengye_sub_type',
         'ownerUid' => 'owner_uid',
-        'quoteCreativeMaterial' => 'quote_creative_material'
+        'quoteCreativeMaterial' => 'quote_creative_material',
+        'disableCode' => 'disable_code',
+        'disableMessage' => 'disable_message'
     ];
 
     /**
@@ -154,7 +160,9 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'pageStatus' => 'setPageStatus',
         'fengyeSubType' => 'setFengyeSubType',
         'ownerUid' => 'setOwnerUid',
-        'quoteCreativeMaterial' => 'setQuoteCreativeMaterial'
+        'quoteCreativeMaterial' => 'setQuoteCreativeMaterial',
+        'disableCode' => 'setDisableCode',
+        'disableMessage' => 'setDisableMessage'
     ];
 
     /**
@@ -175,7 +183,9 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         'pageStatus' => 'getPageStatus',
         'fengyeSubType' => 'getFengyeSubType',
         'ownerUid' => 'getOwnerUid',
-        'quoteCreativeMaterial' => 'getQuoteCreativeMaterial'
+        'quoteCreativeMaterial' => 'getQuoteCreativeMaterial',
+        'disableCode' => 'getDisableCode',
+        'disableMessage' => 'getDisableMessage'
     ];
 
     /**
@@ -251,6 +261,8 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['fengyeSubType'] = isset($data['fengyeSubType']) ? $data['fengyeSubType'] : null;
         $this->container['ownerUid'] = isset($data['ownerUid']) ? $data['ownerUid'] : null;
         $this->container['quoteCreativeMaterial'] = isset($data['quoteCreativeMaterial']) ? $data['quoteCreativeMaterial'] : null;
+        $this->container['disableCode'] = isset($data['disableCode']) ? $data['disableCode'] : null;
+        $this->container['disableMessage'] = isset($data['disableMessage']) ? $data['disableMessage'] : null;
     }
 
     /**
@@ -585,6 +597,54 @@ class PagesGetListStruct implements ModelInterface, ArrayAccess
     public function setQuoteCreativeMaterial($quoteCreativeMaterial)
     {
         $this->container['quoteCreativeMaterial'] = $quoteCreativeMaterial;
+
+        return $this;
+    }
+
+    /**
+     * Gets disableCode
+     *
+     * @return int|mixed
+     */
+    public function getDisableCode()
+    {
+        return $this->container['disableCode'];
+    }
+
+    /**
+     * Sets disableCode
+     *
+     * @param int|mixed $disableCode disableCode
+     *
+     * @return $this
+     */
+    public function setDisableCode($disableCode)
+    {
+        $this->container['disableCode'] = $disableCode;
+
+        return $this;
+    }
+
+    /**
+     * Gets disableMessage
+     *
+     * @return string|mixed
+     */
+    public function getDisableMessage()
+    {
+        return $this->container['disableMessage'];
+    }
+
+    /**
+     * Sets disableMessage
+     *
+     * @param string|mixed $disableMessage disableMessage
+     *
+     * @return $this
+     */
+    public function setDisableMessage($disableMessage)
+    {
+        $this->container['disableMessage'] = $disableMessage;
 
         return $this;
     }

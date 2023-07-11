@@ -81,6 +81,8 @@ class DestinationTypeRead
     const UNIVERSAL_LINK = 'PAGE_TYPE_UNIVERSAL_LINK';
     const CUSTOM_TV = 'PAGE_TYPE_CUSTOM_TV';
     const ANDROID_DIRECT_DOWNLOAD = 'PAGE_TYPE_ANDROID_DIRECT_DOWNLOAD';
+    const LINGQUE_H5 = 'PAGE_TYPE_LINGQUE_H5';
+    const LINGQUE_MINI_PROGRAM = 'PAGE_TYPE_LINGQUE_MINI_PROGRAM';
     const TSA_OTT = 'PAGE_TYPE_TSA_OTT';
     const NOT_USED = 'PAGE_TYPE_NOT_USED';
     
@@ -128,6 +130,8 @@ class DestinationTypeRead
             self::UNIVERSAL_LINK,
             self::CUSTOM_TV,
             self::ANDROID_DIRECT_DOWNLOAD,
+            self::LINGQUE_H5,
+            self::LINGQUE_MINI_PROGRAM,
             self::TSA_OTT,
             self::NOT_USED,
         ];
