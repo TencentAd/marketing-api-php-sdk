@@ -77,7 +77,8 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'impressionFeedbackUrl' => 'string',
         'attributionWindow' => 'int',
         'deepBehaviorAdvancedGoal' => '\TencentAds\Model\IntOptimizationGoal',
-        'deepOptimizationGoalType' => '\TencentAds\Model\DeepOptimizationGoalType'
+        'deepOptimizationGoalType' => '\TencentAds\Model\DeepOptimizationGoalType',
+        'forwardLinkAssist' => '\TencentAds\Model\IntOptimizationGoal'
     ];
 
     /**
@@ -106,7 +107,8 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'impressionFeedbackUrl' => null,
         'attributionWindow' => 'int64',
         'deepBehaviorAdvancedGoal' => null,
-        'deepOptimizationGoalType' => null
+        'deepOptimizationGoalType' => null,
+        'forwardLinkAssist' => null
     ];
 
     /**
@@ -156,7 +158,8 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'impressionFeedbackUrl' => 'impression_feedback_url',
         'attributionWindow' => 'attribution_window',
         'deepBehaviorAdvancedGoal' => 'deep_behavior_advanced_goal',
-        'deepOptimizationGoalType' => 'deep_optimization_goal_type'
+        'deepOptimizationGoalType' => 'deep_optimization_goal_type',
+        'forwardLinkAssist' => 'forward_link_assist'
     ];
 
     /**
@@ -185,7 +188,8 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'impressionFeedbackUrl' => 'setImpressionFeedbackUrl',
         'attributionWindow' => 'setAttributionWindow',
         'deepBehaviorAdvancedGoal' => 'setDeepBehaviorAdvancedGoal',
-        'deepOptimizationGoalType' => 'setDeepOptimizationGoalType'
+        'deepOptimizationGoalType' => 'setDeepOptimizationGoalType',
+        'forwardLinkAssist' => 'setForwardLinkAssist'
     ];
 
     /**
@@ -214,7 +218,8 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'impressionFeedbackUrl' => 'getImpressionFeedbackUrl',
         'attributionWindow' => 'getAttributionWindow',
         'deepBehaviorAdvancedGoal' => 'getDeepBehaviorAdvancedGoal',
-        'deepOptimizationGoalType' => 'getDeepOptimizationGoalType'
+        'deepOptimizationGoalType' => 'getDeepOptimizationGoalType',
+        'forwardLinkAssist' => 'getForwardLinkAssist'
     ];
 
     /**
@@ -298,6 +303,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         $this->container['attributionWindow'] = isset($data['attributionWindow']) ? $data['attributionWindow'] : null;
         $this->container['deepBehaviorAdvancedGoal'] = isset($data['deepBehaviorAdvancedGoal']) ? $data['deepBehaviorAdvancedGoal'] : null;
         $this->container['deepOptimizationGoalType'] = isset($data['deepOptimizationGoalType']) ? $data['deepOptimizationGoalType'] : null;
+        $this->container['forwardLinkAssist'] = isset($data['forwardLinkAssist']) ? $data['forwardLinkAssist'] : null;
     }
 
     /**
@@ -824,6 +830,30 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     public function setDeepOptimizationGoalType($deepOptimizationGoalType)
     {
         $this->container['deepOptimizationGoalType'] = $deepOptimizationGoalType;
+
+        return $this;
+    }
+
+    /**
+     * Gets forwardLinkAssist
+     *
+     * @return \TencentAds\Model\IntOptimizationGoal|mixed
+     */
+    public function getForwardLinkAssist()
+    {
+        return $this->container['forwardLinkAssist'];
+    }
+
+    /**
+     * Sets forwardLinkAssist
+     *
+     * @param \TencentAds\Model\IntOptimizationGoal|mixed $forwardLinkAssist forwardLinkAssist
+     *
+     * @return $this
+     */
+    public function setForwardLinkAssist($forwardLinkAssist)
+    {
+        $this->container['forwardLinkAssist'] = $forwardLinkAssist;
 
         return $this;
     }
