@@ -44,17 +44,11 @@ class UserIdType
     /**
      * Possible values of this enum
      */
-    const GDT_OPENID = 'GDT_OPENID';
     const HASH_IDFA = 'HASH_IDFA';
     const HASH_IMEI = 'HASH_IMEI';
-    const HASH_MAC = 'HASH_MAC';
     const HASH_MOBILE_PHONE = 'HASH_MOBILE_PHONE';
-    const HASH_QQ = 'HASH_QQ';
     const IDFA = 'IDFA';
     const IMEI = 'IMEI';
-    const MAC = 'MAC';
-    const MOBILE_QQ_OPENID = 'MOBILE_QQ_OPENID';
-    const QQ = 'QQ';
     const WX_OPENID = 'WX_OPENID';
     const WX_UNIONID = 'WX_UNIONID';
     const WECHAT_OPENID = 'WECHAT_OPENID';
@@ -67,6 +61,12 @@ class UserIdType
     const MD5_SHA256_IDFA = 'MD5_SHA256_IDFA';
     const MD5_SHA256_OAID = 'MD5_SHA256_OAID';
     const CAID = 'CAID';
+    const GDT_OPENID = 'GDT_OPENID';
+    const HASH_MAC = 'HASH_MAC';
+    const HASH_QQ = 'HASH_QQ';
+    const MAC = 'MAC';
+    const MOBILE_QQ_OPENID = 'MOBILE_QQ_OPENID';
+    const QQ = 'QQ';
     
     /**
      * Gets allowable values of the enum
@@ -75,17 +75,11 @@ class UserIdType
     public static function getAllowableEnumValues()
     {
         return [
-            self::GDT_OPENID,
             self::HASH_IDFA,
             self::HASH_IMEI,
-            self::HASH_MAC,
             self::HASH_MOBILE_PHONE,
-            self::HASH_QQ,
             self::IDFA,
             self::IMEI,
-            self::MAC,
-            self::MOBILE_QQ_OPENID,
-            self::QQ,
             self::WX_OPENID,
             self::WX_UNIONID,
             self::WECHAT_OPENID,
@@ -98,6 +92,12 @@ class UserIdType
             self::MD5_SHA256_IDFA,
             self::MD5_SHA256_OAID,
             self::CAID,
+            self::GDT_OPENID,
+            self::HASH_MAC,
+            self::HASH_QQ,
+            self::MAC,
+            self::MOBILE_QQ_OPENID,
+            self::QQ,
         ];
     }
 }

@@ -131,6 +131,7 @@ class OptimizationGoal
     const LOW_PRICE_COURSE = 'OPTIMIZATIONGOAL_LOW_PRICE_COURSE';
     const CONSULT_INTENTION = 'OPTIMIZATIONGOAL_CONSULT_INTENTION';
     const EVERY_DAY_RETENTION = 'OPTIMIZATIONGOAL_EVERY_DAY_RETENTION';
+    const PROMOTION_VIEW_KEY_PAGE_UV = 'OPTIMIZATIONGOAL_PROMOTION_VIEW_KEY_PAGE_UV';
     
     /**
      * Gets allowable values of the enum
@@ -226,6 +227,7 @@ class OptimizationGoal
             self::LOW_PRICE_COURSE,
             self::CONSULT_INTENTION,
             self::EVERY_DAY_RETENTION,
+            self::PROMOTION_VIEW_KEY_PAGE_UV,
         ];
     }
 }
