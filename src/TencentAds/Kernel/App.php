@@ -2,6 +2,7 @@
 namespace TencentAds\Kernel;
 
 use GuzzleHttp\Client;
+use TencentAds\Container\AdAppealQuotaApiContainer;
 use TencentAds\Container\AdDiagnosisApiContainer;
 use TencentAds\Container\AdLabelApiContainer;
 use TencentAds\Container\AdParamApiContainer;
@@ -54,6 +55,7 @@ use TencentAds\Container\ChannelsApiContainer;
 use TencentAds\Container\ComplianceValidationApiContainer;
 use TencentAds\Container\ConversionsApiContainer;
 use TencentAds\Container\CreativeComponentsApiContainer;
+use TencentAds\Container\CreativeSampleProductsApiContainer;
 use TencentAds\Container\CreativetoolsTextApiContainer;
 use TencentAds\Container\CustomAudienceEstimationsApiContainer;
 use TencentAds\Container\CustomAudienceFilesApiContainer;
@@ -65,26 +67,24 @@ use TencentAds\Container\CustomTagFilesApiContainer;
 use TencentAds\Container\CustomTagsApiContainer;
 use TencentAds\Container\DailyBalanceReportApiContainer;
 use TencentAds\Container\DailyReportsApiContainer;
-use TencentAds\Container\DataNexusFileApiContainer;
 use TencentAds\Container\DataSetApiContainer;
 use TencentAds\Container\DataSourceDispatchApiContainer;
 use TencentAds\Container\DiagnosisApiContainer;
 use TencentAds\Container\DplabelAdLabelApiContainer;
 use TencentAds\Container\DynamicAdImageTemplatesApiContainer;
 use TencentAds\Container\DynamicAdImagesApiContainer;
-use TencentAds\Container\DynamicAdTemplatesApiContainer;
 use TencentAds\Container\DynamicAdVideoApiContainer;
 use TencentAds\Container\DynamicAdVideoTemplatesApiContainer;
 use TencentAds\Container\DynamicCreativesApiContainer;
 use TencentAds\Container\EcommerceOrderApiContainer;
 use TencentAds\Container\EstimationApiContainer;
 use TencentAds\Container\ExtendPackageApiContainer;
-use TencentAds\Container\FileDispatchApiContainer;
-use TencentAds\Container\FileSchemaApiContainer;
 use TencentAds\Container\FundStatementsDailyApiContainer;
 use TencentAds\Container\FundStatementsDetailedApiContainer;
 use TencentAds\Container\FundTransferApiContainer;
 use TencentAds\Container\FundsApiContainer;
+use TencentAds\Container\GameFeatureApiContainer;
+use TencentAds\Container\GameFeatureTagsApiContainer;
 use TencentAds\Container\HourlyReportsApiContainer;
 use TencentAds\Container\ImageProcessingApiContainer;
 use TencentAds\Container\ImagesApiContainer;
@@ -141,12 +141,14 @@ use TencentAds\Container\QualificationsApiContainer;
 use TencentAds\Container\QuerywordRptApiContainer;
 use TencentAds\Container\RealtimeCostApiContainer;
 use TencentAds\Container\ReportApiContainer;
+use TencentAds\Container\ReviewAdAppealApiContainer;
 use TencentAds\Container\ReviewElementPrereviewResultsApiContainer;
 use TencentAds\Container\SceneSpecTagsApiContainer;
 use TencentAds\Container\ShopApiContainer;
 use TencentAds\Container\SplitTestsApiContainer;
 use TencentAds\Container\SubcustomerTransferApiContainer;
 use TencentAds\Container\SystemStatusApiContainer;
+use TencentAds\Container\TargetcpaTagApiContainer;
 use TencentAds\Container\TargetingTagReportsApiContainer;
 use TencentAds\Container\TargetingTagsApiContainer;
 use TencentAds\Container\TargetingTagsUvApiContainer;
@@ -195,6 +197,9 @@ class App
 {
     /** @var Client */
     public $client;
+
+    /** @var AdAppealQuotaApiContainer */
+    public $adAppealQuotaApiContainer;
 
     /** @var AdDiagnosisApiContainer */
     public $adDiagnosisApiContainer;
@@ -352,6 +357,9 @@ class App
     /** @var CreativeComponentsApiContainer */
     public $creativeComponentsApiContainer;
 
+    /** @var CreativeSampleProductsApiContainer */
+    public $creativeSampleProductsApiContainer;
+
     /** @var CreativetoolsTextApiContainer */
     public $creativetoolsTextApiContainer;
 
@@ -385,9 +393,6 @@ class App
     /** @var DailyReportsApiContainer */
     public $dailyReportsApiContainer;
 
-    /** @var DataNexusFileApiContainer */
-    public $dataNexusFileApiContainer;
-
     /** @var DataSetApiContainer */
     public $dataSetApiContainer;
 
@@ -405,9 +410,6 @@ class App
 
     /** @var DynamicAdImagesApiContainer */
     public $dynamicAdImagesApiContainer;
-
-    /** @var DynamicAdTemplatesApiContainer */
-    public $dynamicAdTemplatesApiContainer;
 
     /** @var DynamicAdVideoApiContainer */
     public $dynamicAdVideoApiContainer;
@@ -427,12 +429,6 @@ class App
     /** @var ExtendPackageApiContainer */
     public $extendPackageApiContainer;
 
-    /** @var FileDispatchApiContainer */
-    public $fileDispatchApiContainer;
-
-    /** @var FileSchemaApiContainer */
-    public $fileSchemaApiContainer;
-
     /** @var FundStatementsDailyApiContainer */
     public $fundStatementsDailyApiContainer;
 
@@ -444,6 +440,12 @@ class App
 
     /** @var FundsApiContainer */
     public $fundsApiContainer;
+
+    /** @var GameFeatureApiContainer */
+    public $gameFeatureApiContainer;
+
+    /** @var GameFeatureTagsApiContainer */
+    public $gameFeatureTagsApiContainer;
 
     /** @var HourlyReportsApiContainer */
     public $hourlyReportsApiContainer;
@@ -613,6 +615,9 @@ class App
     /** @var ReportApiContainer */
     public $reportApiContainer;
 
+    /** @var ReviewAdAppealApiContainer */
+    public $reviewAdAppealApiContainer;
+
     /** @var ReviewElementPrereviewResultsApiContainer */
     public $reviewElementPrereviewResultsApiContainer;
 
@@ -630,6 +635,9 @@ class App
 
     /** @var SystemStatusApiContainer */
     public $systemStatusApiContainer;
+
+    /** @var TargetcpaTagApiContainer */
+    public $targetcpaTagApiContainer;
 
     /** @var TargetingTagReportsApiContainer */
     public $targetingTagReportsApiContainer;
@@ -770,6 +778,20 @@ class App
             $this->client = new Client();
         }
         return $this->client;
+    }
+
+
+    /**
+     * @return AdAppealQuotaApiContainer
+     */
+    public function adAppealQuota()
+    {
+        if (empty($this->adAppealQuotaApiContainer)) {
+            $container = new AdAppealQuotaApiContainer();
+            $container->init($this, $this->getClient());
+            $this->adAppealQuotaApiContainer = $container;
+        }
+        return $this->adAppealQuotaApiContainer;
     }
 
 
@@ -1502,6 +1524,20 @@ class App
 
 
     /**
+     * @return CreativeSampleProductsApiContainer
+     */
+    public function creativeSampleProducts()
+    {
+        if (empty($this->creativeSampleProductsApiContainer)) {
+            $container = new CreativeSampleProductsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->creativeSampleProductsApiContainer = $container;
+        }
+        return $this->creativeSampleProductsApiContainer;
+    }
+
+
+    /**
      * @return CreativetoolsTextApiContainer
      */
     public function creativetoolsText()
@@ -1656,20 +1692,6 @@ class App
 
 
     /**
-     * @return DataNexusFileApiContainer
-     */
-    public function dataNexusFile()
-    {
-        if (empty($this->dataNexusFileApiContainer)) {
-            $container = new DataNexusFileApiContainer();
-            $container->init($this, $this->getClient());
-            $this->dataNexusFileApiContainer = $container;
-        }
-        return $this->dataNexusFileApiContainer;
-    }
-
-
-    /**
      * @return DataSetApiContainer
      */
     public function dataSet()
@@ -1750,20 +1772,6 @@ class App
             $this->dynamicAdImagesApiContainer = $container;
         }
         return $this->dynamicAdImagesApiContainer;
-    }
-
-
-    /**
-     * @return DynamicAdTemplatesApiContainer
-     */
-    public function dynamicAdTemplates()
-    {
-        if (empty($this->dynamicAdTemplatesApiContainer)) {
-            $container = new DynamicAdTemplatesApiContainer();
-            $container->init($this, $this->getClient());
-            $this->dynamicAdTemplatesApiContainer = $container;
-        }
-        return $this->dynamicAdTemplatesApiContainer;
     }
 
 
@@ -1852,34 +1860,6 @@ class App
 
 
     /**
-     * @return FileDispatchApiContainer
-     */
-    public function fileDispatch()
-    {
-        if (empty($this->fileDispatchApiContainer)) {
-            $container = new FileDispatchApiContainer();
-            $container->init($this, $this->getClient());
-            $this->fileDispatchApiContainer = $container;
-        }
-        return $this->fileDispatchApiContainer;
-    }
-
-
-    /**
-     * @return FileSchemaApiContainer
-     */
-    public function fileSchema()
-    {
-        if (empty($this->fileSchemaApiContainer)) {
-            $container = new FileSchemaApiContainer();
-            $container->init($this, $this->getClient());
-            $this->fileSchemaApiContainer = $container;
-        }
-        return $this->fileSchemaApiContainer;
-    }
-
-
-    /**
      * @return FundStatementsDailyApiContainer
      */
     public function fundStatementsDaily()
@@ -1932,6 +1912,34 @@ class App
             $this->fundsApiContainer = $container;
         }
         return $this->fundsApiContainer;
+    }
+
+
+    /**
+     * @return GameFeatureApiContainer
+     */
+    public function gameFeature()
+    {
+        if (empty($this->gameFeatureApiContainer)) {
+            $container = new GameFeatureApiContainer();
+            $container->init($this, $this->getClient());
+            $this->gameFeatureApiContainer = $container;
+        }
+        return $this->gameFeatureApiContainer;
+    }
+
+
+    /**
+     * @return GameFeatureTagsApiContainer
+     */
+    public function gameFeatureTags()
+    {
+        if (empty($this->gameFeatureTagsApiContainer)) {
+            $container = new GameFeatureTagsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->gameFeatureTagsApiContainer = $container;
+        }
+        return $this->gameFeatureTagsApiContainer;
     }
 
 
@@ -2720,6 +2728,20 @@ class App
 
 
     /**
+     * @return ReviewAdAppealApiContainer
+     */
+    public function reviewAdAppeal()
+    {
+        if (empty($this->reviewAdAppealApiContainer)) {
+            $container = new ReviewAdAppealApiContainer();
+            $container->init($this, $this->getClient());
+            $this->reviewAdAppealApiContainer = $container;
+        }
+        return $this->reviewAdAppealApiContainer;
+    }
+
+
+    /**
      * @return ReviewElementPrereviewResultsApiContainer
      */
     public function reviewElementPrereviewResults()
@@ -2800,6 +2822,20 @@ class App
             $this->systemStatusApiContainer = $container;
         }
         return $this->systemStatusApiContainer;
+    }
+
+
+    /**
+     * @return TargetcpaTagApiContainer
+     */
+    public function targetcpaTag()
+    {
+        if (empty($this->targetcpaTagApiContainer)) {
+            $container = new TargetcpaTagApiContainer();
+            $container->init($this, $this->getClient());
+            $this->targetcpaTagApiContainer = $container;
+        }
+        return $this->targetcpaTagApiContainer;
     }
 
 

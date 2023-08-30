@@ -98,15 +98,14 @@ class CustomAudienceFilesApi
      * @param  \SplFileObject|mixed $file file (required)
      * @param  string|mixed $operationType operationType (optional)
      * @param  string|mixed $openAppId openAppId (optional)
-     * @param  string|mixed $saltId saltId (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\CustomAudienceFilesAddResponse|mixed
      */
-    public function customAudienceFilesAdd($accountId, $audienceId, $userIdType, $file, $operationType = null, $openAppId = null, $saltId = null)
+    public function customAudienceFilesAdd($accountId, $audienceId, $userIdType, $file, $operationType = null, $openAppId = null)
     {
-        list($response) = $this->customAudienceFilesAddWithHttpInfo($accountId, $audienceId, $userIdType, $file, $operationType, $openAppId, $saltId);
+        list($response) = $this->customAudienceFilesAddWithHttpInfo($accountId, $audienceId, $userIdType, $file, $operationType, $openAppId);
         return $response;
     }
 
@@ -121,16 +120,15 @@ class CustomAudienceFilesApi
      * @param  \SplFileObject|mixed $file (required)
      * @param  string|mixed $operationType (optional)
      * @param  string|mixed $openAppId (optional)
-     * @param  string|mixed $saltId (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\CustomAudienceFilesAddResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function customAudienceFilesAddWithHttpInfo($accountId, $audienceId, $userIdType, $file, $operationType = null, $openAppId = null, $saltId = null)
+    public function customAudienceFilesAddWithHttpInfo($accountId, $audienceId, $userIdType, $file, $operationType = null, $openAppId = null)
     {
         $returnType = '\TencentAds\Model\CustomAudienceFilesAddResponse';
-        $request = $this->customAudienceFilesAddRequest($accountId, $audienceId, $userIdType, $file, $operationType, $openAppId, $saltId);
+        $request = $this->customAudienceFilesAddRequest($accountId, $audienceId, $userIdType, $file, $operationType, $openAppId);
 
         try {
             $options = $this->createHttpClientOption();
@@ -202,14 +200,13 @@ class CustomAudienceFilesApi
      * @param  \SplFileObject|mixed $file (required)
      * @param  string|mixed $operationType (optional)
      * @param  string|mixed $openAppId (optional)
-     * @param  string|mixed $saltId (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function customAudienceFilesAddAsync($accountId, $audienceId, $userIdType, $file, $operationType = null, $openAppId = null, $saltId = null)
+    public function customAudienceFilesAddAsync($accountId, $audienceId, $userIdType, $file, $operationType = null, $openAppId = null)
     {
-        return $this->customAudienceFilesAddAsyncWithHttpInfo($accountId, $audienceId, $userIdType, $file, $operationType, $openAppId, $saltId)
+        return $this->customAudienceFilesAddAsyncWithHttpInfo($accountId, $audienceId, $userIdType, $file, $operationType, $openAppId)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -228,15 +225,14 @@ class CustomAudienceFilesApi
      * @param  \SplFileObject|mixed $file (required)
      * @param  string|mixed $operationType (optional)
      * @param  string|mixed $openAppId (optional)
-     * @param  string|mixed $saltId (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function customAudienceFilesAddAsyncWithHttpInfo($accountId, $audienceId, $userIdType, $file, $operationType = null, $openAppId = null, $saltId = null)
+    public function customAudienceFilesAddAsyncWithHttpInfo($accountId, $audienceId, $userIdType, $file, $operationType = null, $openAppId = null)
     {
         $returnType = '\TencentAds\Model\CustomAudienceFilesAddResponse';
-        $request = $this->customAudienceFilesAddRequest($accountId, $audienceId, $userIdType, $file, $operationType, $openAppId, $saltId);
+        $request = $this->customAudienceFilesAddRequest($accountId, $audienceId, $userIdType, $file, $operationType, $openAppId);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -284,12 +280,11 @@ class CustomAudienceFilesApi
      * @param  \SplFileObject|mixed $file (required)
      * @param  string|mixed $operationType (optional)
      * @param  string|mixed $openAppId (optional)
-     * @param  string|mixed $saltId (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function customAudienceFilesAddRequest($accountId, $audienceId, $userIdType, $file, $operationType = null, $openAppId = null, $saltId = null)
+    protected function customAudienceFilesAddRequest($accountId, $audienceId, $userIdType, $file, $operationType = null, $openAppId = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -353,10 +348,6 @@ class CustomAudienceFilesApi
         // form params
         if ($openAppId !== null) {
             $formParams['open_app_id'] = ObjectSerializer::toFormValue($openAppId);
-        }
-        // form params
-        if ($saltId !== null) {
-            $formParams['salt_id'] = ObjectSerializer::toFormValue($saltId);
         }
         // body params
         $_tempBody = null;

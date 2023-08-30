@@ -62,7 +62,6 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'md5Sha256Imei' => 'string',
         'hashIdfa' => 'string',
         'md5Sha256Idfa' => 'string',
-        'gdtOpenid' => 'string',
         'hashPhone' => 'string',
         'sha256Phone' => 'string',
         'hashAndroidId' => 'string',
@@ -85,7 +84,6 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'md5Sha256Imei' => null,
         'hashIdfa' => null,
         'md5Sha256Idfa' => null,
-        'gdtOpenid' => null,
         'hashPhone' => null,
         'sha256Phone' => null,
         'hashAndroidId' => null,
@@ -129,7 +127,6 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'md5Sha256Imei' => 'md5_sha256_imei',
         'hashIdfa' => 'hash_idfa',
         'md5Sha256Idfa' => 'md5_sha256_idfa',
-        'gdtOpenid' => 'gdt_openid',
         'hashPhone' => 'hash_phone',
         'sha256Phone' => 'sha256_phone',
         'hashAndroidId' => 'hash_android_id',
@@ -152,7 +149,6 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'md5Sha256Imei' => 'setMd5Sha256Imei',
         'hashIdfa' => 'setHashIdfa',
         'md5Sha256Idfa' => 'setMd5Sha256Idfa',
-        'gdtOpenid' => 'setGdtOpenid',
         'hashPhone' => 'setHashPhone',
         'sha256Phone' => 'setSha256Phone',
         'hashAndroidId' => 'setHashAndroidId',
@@ -175,7 +171,6 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         'md5Sha256Imei' => 'getMd5Sha256Imei',
         'hashIdfa' => 'getHashIdfa',
         'md5Sha256Idfa' => 'getMd5Sha256Idfa',
-        'gdtOpenid' => 'getGdtOpenid',
         'hashPhone' => 'getHashPhone',
         'sha256Phone' => 'getSha256Phone',
         'hashAndroidId' => 'getHashAndroidId',
@@ -252,7 +247,6 @@ class ActionsUserId implements ModelInterface, ArrayAccess
         $this->container['md5Sha256Imei'] = isset($data['md5Sha256Imei']) ? $data['md5Sha256Imei'] : null;
         $this->container['hashIdfa'] = isset($data['hashIdfa']) ? $data['hashIdfa'] : null;
         $this->container['md5Sha256Idfa'] = isset($data['md5Sha256Idfa']) ? $data['md5Sha256Idfa'] : null;
-        $this->container['gdtOpenid'] = isset($data['gdtOpenid']) ? $data['gdtOpenid'] : null;
         $this->container['hashPhone'] = isset($data['hashPhone']) ? $data['hashPhone'] : null;
         $this->container['sha256Phone'] = isset($data['sha256Phone']) ? $data['sha256Phone'] : null;
         $this->container['hashAndroidId'] = isset($data['hashAndroidId']) ? $data['hashAndroidId'] : null;
@@ -381,30 +375,6 @@ class ActionsUserId implements ModelInterface, ArrayAccess
     public function setMd5Sha256Idfa($md5Sha256Idfa)
     {
         $this->container['md5Sha256Idfa'] = $md5Sha256Idfa;
-
-        return $this;
-    }
-
-    /**
-     * Gets gdtOpenid
-     *
-     * @return string|mixed
-     */
-    public function getGdtOpenid()
-    {
-        return $this->container['gdtOpenid'];
-    }
-
-    /**
-     * Sets gdtOpenid
-     *
-     * @param string|mixed $gdtOpenid gdtOpenid
-     *
-     * @return $this
-     */
-    public function setGdtOpenid($gdtOpenid)
-    {
-        $this->container['gdtOpenid'] = $gdtOpenid;
 
         return $this;
     }

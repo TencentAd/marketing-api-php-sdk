@@ -44,6 +44,9 @@ class DimensionType
     /**
      * Possible values of this enum
      */
+    const CONTENT = 'CONTENT';
+    const RESOURCE_ID = 'RESOURCE_ID';
+    const HYPERLINK = 'HYPERLINK';
     const AGE = 'AGE';
     const GENDER = 'GENDER';
     const EDUCATION = 'EDUCATION';
@@ -60,6 +63,9 @@ class DimensionType
     public static function getAllowableEnumValues()
     {
         return [
+            self::CONTENT,
+            self::RESOURCE_ID,
+            self::HYPERLINK,
             self::AGE,
             self::GENDER,
             self::EDUCATION,

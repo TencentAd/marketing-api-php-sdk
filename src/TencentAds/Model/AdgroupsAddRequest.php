@@ -108,7 +108,9 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'dynamicCreativeIdSet' => 'int[]',
         'autoDerivedLandingPageSwitch' => 'bool',
         'searchExpandTargetingSwitch' => '\TencentAds\Model\SearchExpandTargetingSwitch',
+        'ecomPkamSwitch' => '\TencentAds\Model\EcomPkamSwitch',
         'bidScene' => '\TencentAds\Model\BidScene',
+        'forwardLinkAssist' => '\TencentAds\Model\OptimizationGoal',
         'accountId' => 'int'
     ];
 
@@ -169,7 +171,9 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'dynamicCreativeIdSet' => 'int64',
         'autoDerivedLandingPageSwitch' => null,
         'searchExpandTargetingSwitch' => null,
+        'ecomPkamSwitch' => null,
         'bidScene' => null,
+        'forwardLinkAssist' => null,
         'accountId' => 'int64'
     ];
 
@@ -251,7 +255,9 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'dynamicCreativeIdSet' => 'dynamic_creative_id_set',
         'autoDerivedLandingPageSwitch' => 'auto_derived_landing_page_switch',
         'searchExpandTargetingSwitch' => 'search_expand_targeting_switch',
+        'ecomPkamSwitch' => 'ecom_pkam_switch',
         'bidScene' => 'bid_scene',
+        'forwardLinkAssist' => 'forward_link_assist',
         'accountId' => 'account_id'
     ];
 
@@ -312,7 +318,9 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'dynamicCreativeIdSet' => 'setDynamicCreativeIdSet',
         'autoDerivedLandingPageSwitch' => 'setAutoDerivedLandingPageSwitch',
         'searchExpandTargetingSwitch' => 'setSearchExpandTargetingSwitch',
+        'ecomPkamSwitch' => 'setEcomPkamSwitch',
         'bidScene' => 'setBidScene',
+        'forwardLinkAssist' => 'setForwardLinkAssist',
         'accountId' => 'setAccountId'
     ];
 
@@ -373,7 +381,9 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'dynamicCreativeIdSet' => 'getDynamicCreativeIdSet',
         'autoDerivedLandingPageSwitch' => 'getAutoDerivedLandingPageSwitch',
         'searchExpandTargetingSwitch' => 'getSearchExpandTargetingSwitch',
+        'ecomPkamSwitch' => 'getEcomPkamSwitch',
         'bidScene' => 'getBidScene',
+        'forwardLinkAssist' => 'getForwardLinkAssist',
         'accountId' => 'getAccountId'
     ];
 
@@ -488,7 +498,9 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['dynamicCreativeIdSet'] = isset($data['dynamicCreativeIdSet']) ? $data['dynamicCreativeIdSet'] : null;
         $this->container['autoDerivedLandingPageSwitch'] = isset($data['autoDerivedLandingPageSwitch']) ? $data['autoDerivedLandingPageSwitch'] : null;
         $this->container['searchExpandTargetingSwitch'] = isset($data['searchExpandTargetingSwitch']) ? $data['searchExpandTargetingSwitch'] : null;
+        $this->container['ecomPkamSwitch'] = isset($data['ecomPkamSwitch']) ? $data['ecomPkamSwitch'] : null;
         $this->container['bidScene'] = isset($data['bidScene']) ? $data['bidScene'] : null;
+        $this->container['forwardLinkAssist'] = isset($data['forwardLinkAssist']) ? $data['forwardLinkAssist'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1741,6 +1753,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets ecomPkamSwitch
+     *
+     * @return \TencentAds\Model\EcomPkamSwitch|mixed
+     */
+    public function getEcomPkamSwitch()
+    {
+        return $this->container['ecomPkamSwitch'];
+    }
+
+    /**
+     * Sets ecomPkamSwitch
+     *
+     * @param \TencentAds\Model\EcomPkamSwitch|mixed $ecomPkamSwitch ecomPkamSwitch
+     *
+     * @return $this
+     */
+    public function setEcomPkamSwitch($ecomPkamSwitch)
+    {
+        $this->container['ecomPkamSwitch'] = $ecomPkamSwitch;
+
+        return $this;
+    }
+
+    /**
      * Gets bidScene
      *
      * @return \TencentAds\Model\BidScene|mixed
@@ -1760,6 +1796,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setBidScene($bidScene)
     {
         $this->container['bidScene'] = $bidScene;
+
+        return $this;
+    }
+
+    /**
+     * Gets forwardLinkAssist
+     *
+     * @return \TencentAds\Model\OptimizationGoal|mixed
+     */
+    public function getForwardLinkAssist()
+    {
+        return $this->container['forwardLinkAssist'];
+    }
+
+    /**
+     * Sets forwardLinkAssist
+     *
+     * @param \TencentAds\Model\OptimizationGoal|mixed $forwardLinkAssist forwardLinkAssist
+     *
+     * @return $this
+     */
+    public function setForwardLinkAssist($forwardLinkAssist)
+    {
+        $this->container['forwardLinkAssist'] = $forwardLinkAssist;
 
         return $this;
     }

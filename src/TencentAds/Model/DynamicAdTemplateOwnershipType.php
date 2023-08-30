@@ -51,6 +51,7 @@ class DynamicAdTemplateOwnershipType
     const ALL = 'ALL';
     const SELF_OWNED = 'SELF_OWNED';
     const GRANTED = 'GRANTED';
+    const COMMON = 'COMMON';
     const PRODUCT_CATALOG_OWNED = 'PRODUCT_CATALOG_OWNED';
     
     /**
@@ -67,6 +68,7 @@ class DynamicAdTemplateOwnershipType
             self::ALL,
             self::SELF_OWNED,
             self::GRANTED,
+            self::COMMON,
             self::PRODUCT_CATALOG_OWNED,
         ];
     }

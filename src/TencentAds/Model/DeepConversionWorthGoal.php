@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * DeepConversionWorthGoal Class Doc Comment
  *
  * @category Class
- * @description 优化ROI目标，不可更改，如修改深度优化效果值，需在结构体中传入已设置的优化ROI目标
+ * @description 深度目标优化-优化ROI目标，不可更改，如修改深度优化效果值，需在结构体中传入已设置的优化ROI目标
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

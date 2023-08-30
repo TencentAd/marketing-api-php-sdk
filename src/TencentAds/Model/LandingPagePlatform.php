@@ -63,6 +63,7 @@ class LandingPagePlatform
     const HELIANG = 'LANDING_PAGE_PLATFORM_HELIANG';
     const MADAO = 'LANDING_PAGE_PLATFORM_MADAO';
     const ZHONGZHI = 'LANDING_PAGE_PLATFORM_ZHONGZHI';
+    const LINGQUE = 'LANDING_PAGE_PLATFORM_LINGQUE';
     const W_EIMOB = 'LANDING_PAGE_PLATFORM_wEIMOB';
     
     /**
@@ -91,6 +92,7 @@ class LandingPagePlatform
             self::HELIANG,
             self::MADAO,
             self::ZHONGZHI,
+            self::LINGQUE,
             self::W_EIMOB,
         ];
     }

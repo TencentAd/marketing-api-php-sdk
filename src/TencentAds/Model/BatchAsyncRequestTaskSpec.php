@@ -78,7 +78,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateAdConfiguredStatusSpec' => '\TencentAds\Model\UpdateAdConfiguredStatusItem[]',
         'updateAdgroupAutoAcquisitionSpec' => '\TencentAds\Model\UpdateAdgroupAutoAcquisitionItem[]',
         'updateAdcreativeLandingPageSpec' => '\TencentAds\Model\UpdateAdcreativeLandingPageItem[]',
-        'updateAdgroupDeepConversionWorthAdvancedRateSpec' => '\TencentAds\Model\UpdateAdgroupDeepConversionWorthAdvancedRateItem[]'
+        'updateAdgroupDeepConversionWorthAdvancedRateSpec' => '\TencentAds\Model\UpdateAdgroupDeepConversionWorthAdvancedRateItem[]',
+        'updateDeepConversionBehaviorAdvancedBidSpec' => '\TencentAds\Model\UpdateDeepConversionBehaviorAdvancedBidItem[]'
     ];
 
     /**
@@ -107,7 +108,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateAdConfiguredStatusSpec' => null,
         'updateAdgroupAutoAcquisitionSpec' => null,
         'updateAdcreativeLandingPageSpec' => null,
-        'updateAdgroupDeepConversionWorthAdvancedRateSpec' => null
+        'updateAdgroupDeepConversionWorthAdvancedRateSpec' => null,
+        'updateDeepConversionBehaviorAdvancedBidSpec' => null
     ];
 
     /**
@@ -157,7 +159,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateAdConfiguredStatusSpec' => 'update_ad_configured_status_spec',
         'updateAdgroupAutoAcquisitionSpec' => 'update_adgroup_auto_acquisition_spec',
         'updateAdcreativeLandingPageSpec' => 'update_adcreative_landing_page_spec',
-        'updateAdgroupDeepConversionWorthAdvancedRateSpec' => 'update_adgroup_deep_conversion_worth_advanced_rate_spec'
+        'updateAdgroupDeepConversionWorthAdvancedRateSpec' => 'update_adgroup_deep_conversion_worth_advanced_rate_spec',
+        'updateDeepConversionBehaviorAdvancedBidSpec' => 'update_deep_conversion_behavior_advanced_bid_spec'
     ];
 
     /**
@@ -186,7 +189,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateAdConfiguredStatusSpec' => 'setUpdateAdConfiguredStatusSpec',
         'updateAdgroupAutoAcquisitionSpec' => 'setUpdateAdgroupAutoAcquisitionSpec',
         'updateAdcreativeLandingPageSpec' => 'setUpdateAdcreativeLandingPageSpec',
-        'updateAdgroupDeepConversionWorthAdvancedRateSpec' => 'setUpdateAdgroupDeepConversionWorthAdvancedRateSpec'
+        'updateAdgroupDeepConversionWorthAdvancedRateSpec' => 'setUpdateAdgroupDeepConversionWorthAdvancedRateSpec',
+        'updateDeepConversionBehaviorAdvancedBidSpec' => 'setUpdateDeepConversionBehaviorAdvancedBidSpec'
     ];
 
     /**
@@ -215,7 +219,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateAdConfiguredStatusSpec' => 'getUpdateAdConfiguredStatusSpec',
         'updateAdgroupAutoAcquisitionSpec' => 'getUpdateAdgroupAutoAcquisitionSpec',
         'updateAdcreativeLandingPageSpec' => 'getUpdateAdcreativeLandingPageSpec',
-        'updateAdgroupDeepConversionWorthAdvancedRateSpec' => 'getUpdateAdgroupDeepConversionWorthAdvancedRateSpec'
+        'updateAdgroupDeepConversionWorthAdvancedRateSpec' => 'getUpdateAdgroupDeepConversionWorthAdvancedRateSpec',
+        'updateDeepConversionBehaviorAdvancedBidSpec' => 'getUpdateDeepConversionBehaviorAdvancedBidSpec'
     ];
 
     /**
@@ -299,6 +304,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         $this->container['updateAdgroupAutoAcquisitionSpec'] = isset($data['updateAdgroupAutoAcquisitionSpec']) ? $data['updateAdgroupAutoAcquisitionSpec'] : null;
         $this->container['updateAdcreativeLandingPageSpec'] = isset($data['updateAdcreativeLandingPageSpec']) ? $data['updateAdcreativeLandingPageSpec'] : null;
         $this->container['updateAdgroupDeepConversionWorthAdvancedRateSpec'] = isset($data['updateAdgroupDeepConversionWorthAdvancedRateSpec']) ? $data['updateAdgroupDeepConversionWorthAdvancedRateSpec'] : null;
+        $this->container['updateDeepConversionBehaviorAdvancedBidSpec'] = isset($data['updateDeepConversionBehaviorAdvancedBidSpec']) ? $data['updateDeepConversionBehaviorAdvancedBidSpec'] : null;
     }
 
     /**
@@ -825,6 +831,30 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     public function setUpdateAdgroupDeepConversionWorthAdvancedRateSpec($updateAdgroupDeepConversionWorthAdvancedRateSpec)
     {
         $this->container['updateAdgroupDeepConversionWorthAdvancedRateSpec'] = $updateAdgroupDeepConversionWorthAdvancedRateSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets updateDeepConversionBehaviorAdvancedBidSpec
+     *
+     * @return \TencentAds\Model\UpdateDeepConversionBehaviorAdvancedBidItem[]|mixed
+     */
+    public function getUpdateDeepConversionBehaviorAdvancedBidSpec()
+    {
+        return $this->container['updateDeepConversionBehaviorAdvancedBidSpec'];
+    }
+
+    /**
+     * Sets updateDeepConversionBehaviorAdvancedBidSpec
+     *
+     * @param \TencentAds\Model\UpdateDeepConversionBehaviorAdvancedBidItem[]|mixed $updateDeepConversionBehaviorAdvancedBidSpec updateDeepConversionBehaviorAdvancedBidSpec
+     *
+     * @return $this
+     */
+    public function setUpdateDeepConversionBehaviorAdvancedBidSpec($updateDeepConversionBehaviorAdvancedBidSpec)
+    {
+        $this->container['updateDeepConversionBehaviorAdvancedBidSpec'] = $updateDeepConversionBehaviorAdvancedBidSpec;
 
         return $this;
     }

@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * BidScene Class Doc Comment
  *
  * @category Class
- * @description 出价场景，游戏行业投放端又称\&quot;投放场景\&quot;，该能力与出价类型(smart_bid_type)/出价策略(bid_strategy)互斥使用用
+ * @description 出价场景，游戏行业投放端又称\&quot;投放场景\&quot;，该能力与出价类型(smart_bid_type)/出价策略(bid_strategy)互斥使用
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

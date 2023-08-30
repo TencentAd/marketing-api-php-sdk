@@ -98,6 +98,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'smartTargeting' => '\TencentAds\Model\SmartTargeting',
         'dynamicCreativeIdSet' => 'int[]',
         'autoDerivedLandingPageSwitch' => 'bool',
+        'ecomPkamSwitch' => '\TencentAds\Model\EcomPkamSwitch',
+        'forwardLinkAssist' => '\TencentAds\Model\OptimizationGoal',
         'accountId' => 'int'
     ];
 
@@ -148,6 +150,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'smartTargeting' => null,
         'dynamicCreativeIdSet' => 'int64',
         'autoDerivedLandingPageSwitch' => null,
+        'ecomPkamSwitch' => null,
+        'forwardLinkAssist' => null,
         'accountId' => 'int64'
     ];
 
@@ -219,6 +223,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'smartTargeting' => 'smart_targeting',
         'dynamicCreativeIdSet' => 'dynamic_creative_id_set',
         'autoDerivedLandingPageSwitch' => 'auto_derived_landing_page_switch',
+        'ecomPkamSwitch' => 'ecom_pkam_switch',
+        'forwardLinkAssist' => 'forward_link_assist',
         'accountId' => 'account_id'
     ];
 
@@ -269,6 +275,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'smartTargeting' => 'setSmartTargeting',
         'dynamicCreativeIdSet' => 'setDynamicCreativeIdSet',
         'autoDerivedLandingPageSwitch' => 'setAutoDerivedLandingPageSwitch',
+        'ecomPkamSwitch' => 'setEcomPkamSwitch',
+        'forwardLinkAssist' => 'setForwardLinkAssist',
         'accountId' => 'setAccountId'
     ];
 
@@ -319,6 +327,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'smartTargeting' => 'getSmartTargeting',
         'dynamicCreativeIdSet' => 'getDynamicCreativeIdSet',
         'autoDerivedLandingPageSwitch' => 'getAutoDerivedLandingPageSwitch',
+        'ecomPkamSwitch' => 'getEcomPkamSwitch',
+        'forwardLinkAssist' => 'getForwardLinkAssist',
         'accountId' => 'getAccountId'
     ];
 
@@ -423,6 +433,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['smartTargeting'] = isset($data['smartTargeting']) ? $data['smartTargeting'] : null;
         $this->container['dynamicCreativeIdSet'] = isset($data['dynamicCreativeIdSet']) ? $data['dynamicCreativeIdSet'] : null;
         $this->container['autoDerivedLandingPageSwitch'] = isset($data['autoDerivedLandingPageSwitch']) ? $data['autoDerivedLandingPageSwitch'] : null;
+        $this->container['ecomPkamSwitch'] = isset($data['ecomPkamSwitch']) ? $data['ecomPkamSwitch'] : null;
+        $this->container['forwardLinkAssist'] = isset($data['forwardLinkAssist']) ? $data['forwardLinkAssist'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1430,6 +1442,54 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setAutoDerivedLandingPageSwitch($autoDerivedLandingPageSwitch)
     {
         $this->container['autoDerivedLandingPageSwitch'] = $autoDerivedLandingPageSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets ecomPkamSwitch
+     *
+     * @return \TencentAds\Model\EcomPkamSwitch|mixed
+     */
+    public function getEcomPkamSwitch()
+    {
+        return $this->container['ecomPkamSwitch'];
+    }
+
+    /**
+     * Sets ecomPkamSwitch
+     *
+     * @param \TencentAds\Model\EcomPkamSwitch|mixed $ecomPkamSwitch ecomPkamSwitch
+     *
+     * @return $this
+     */
+    public function setEcomPkamSwitch($ecomPkamSwitch)
+    {
+        $this->container['ecomPkamSwitch'] = $ecomPkamSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets forwardLinkAssist
+     *
+     * @return \TencentAds\Model\OptimizationGoal|mixed
+     */
+    public function getForwardLinkAssist()
+    {
+        return $this->container['forwardLinkAssist'];
+    }
+
+    /**
+     * Sets forwardLinkAssist
+     *
+     * @param \TencentAds\Model\OptimizationGoal|mixed $forwardLinkAssist forwardLinkAssist
+     *
+     * @return $this
+     */
+    public function setForwardLinkAssist($forwardLinkAssist)
+    {
+        $this->container['forwardLinkAssist'] = $forwardLinkAssist;
 
         return $this;
     }

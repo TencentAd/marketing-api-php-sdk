@@ -46,6 +46,7 @@ class PageStatus
      */
     const NORMAL = 'NORMAL';
     const DELETED = 'DELETED';
+    const PENDING = 'PENDING';
     
     /**
      * Gets allowable values of the enum
@@ -56,6 +57,7 @@ class PageStatus
         return [
             self::NORMAL,
             self::DELETED,
+            self::PENDING,
         ];
     }
 }

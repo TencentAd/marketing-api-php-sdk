@@ -63,7 +63,10 @@ class DynamicAdImageTemplatesGetListStruct implements ModelInterface, ArrayAcces
         'productItemDisplayQuantity' => '\TencentAds\Model\AdNum',
         'dynamicAdTemplateWidth' => 'int',
         'dynamicAdTemplateHeight' => 'int',
-        'imageUrl' => 'string'
+        'imageUrl' => 'string',
+        'imageProductFields' => 'string[]',
+        'fillType' => '\TencentAds\Model\TemplateImageFillType',
+        'coverage' => 'double'
     ];
 
     /**
@@ -77,7 +80,10 @@ class DynamicAdImageTemplatesGetListStruct implements ModelInterface, ArrayAcces
         'productItemDisplayQuantity' => null,
         'dynamicAdTemplateWidth' => 'int64',
         'dynamicAdTemplateHeight' => 'int64',
-        'imageUrl' => null
+        'imageUrl' => null,
+        'imageProductFields' => null,
+        'fillType' => null,
+        'coverage' => 'double'
     ];
 
     /**
@@ -112,7 +118,10 @@ class DynamicAdImageTemplatesGetListStruct implements ModelInterface, ArrayAcces
         'productItemDisplayQuantity' => 'product_item_display_quantity',
         'dynamicAdTemplateWidth' => 'dynamic_ad_template_width',
         'dynamicAdTemplateHeight' => 'dynamic_ad_template_height',
-        'imageUrl' => 'image_url'
+        'imageUrl' => 'image_url',
+        'imageProductFields' => 'image_product_fields',
+        'fillType' => 'fill_type',
+        'coverage' => 'coverage'
     ];
 
     /**
@@ -126,7 +135,10 @@ class DynamicAdImageTemplatesGetListStruct implements ModelInterface, ArrayAcces
         'productItemDisplayQuantity' => 'setProductItemDisplayQuantity',
         'dynamicAdTemplateWidth' => 'setDynamicAdTemplateWidth',
         'dynamicAdTemplateHeight' => 'setDynamicAdTemplateHeight',
-        'imageUrl' => 'setImageUrl'
+        'imageUrl' => 'setImageUrl',
+        'imageProductFields' => 'setImageProductFields',
+        'fillType' => 'setFillType',
+        'coverage' => 'setCoverage'
     ];
 
     /**
@@ -140,7 +152,10 @@ class DynamicAdImageTemplatesGetListStruct implements ModelInterface, ArrayAcces
         'productItemDisplayQuantity' => 'getProductItemDisplayQuantity',
         'dynamicAdTemplateWidth' => 'getDynamicAdTemplateWidth',
         'dynamicAdTemplateHeight' => 'getDynamicAdTemplateHeight',
-        'imageUrl' => 'getImageUrl'
+        'imageUrl' => 'getImageUrl',
+        'imageProductFields' => 'getImageProductFields',
+        'fillType' => 'getFillType',
+        'coverage' => 'getCoverage'
     ];
 
     /**
@@ -209,6 +224,9 @@ class DynamicAdImageTemplatesGetListStruct implements ModelInterface, ArrayAcces
         $this->container['dynamicAdTemplateWidth'] = isset($data['dynamicAdTemplateWidth']) ? $data['dynamicAdTemplateWidth'] : null;
         $this->container['dynamicAdTemplateHeight'] = isset($data['dynamicAdTemplateHeight']) ? $data['dynamicAdTemplateHeight'] : null;
         $this->container['imageUrl'] = isset($data['imageUrl']) ? $data['imageUrl'] : null;
+        $this->container['imageProductFields'] = isset($data['imageProductFields']) ? $data['imageProductFields'] : null;
+        $this->container['fillType'] = isset($data['fillType']) ? $data['fillType'] : null;
+        $this->container['coverage'] = isset($data['coverage']) ? $data['coverage'] : null;
     }
 
     /**
@@ -375,6 +393,78 @@ class DynamicAdImageTemplatesGetListStruct implements ModelInterface, ArrayAcces
     public function setImageUrl($imageUrl)
     {
         $this->container['imageUrl'] = $imageUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets imageProductFields
+     *
+     * @return string[]|mixed
+     */
+    public function getImageProductFields()
+    {
+        return $this->container['imageProductFields'];
+    }
+
+    /**
+     * Sets imageProductFields
+     *
+     * @param string[]|mixed $imageProductFields imageProductFields
+     *
+     * @return $this
+     */
+    public function setImageProductFields($imageProductFields)
+    {
+        $this->container['imageProductFields'] = $imageProductFields;
+
+        return $this;
+    }
+
+    /**
+     * Gets fillType
+     *
+     * @return \TencentAds\Model\TemplateImageFillType|mixed
+     */
+    public function getFillType()
+    {
+        return $this->container['fillType'];
+    }
+
+    /**
+     * Sets fillType
+     *
+     * @param \TencentAds\Model\TemplateImageFillType|mixed $fillType fillType
+     *
+     * @return $this
+     */
+    public function setFillType($fillType)
+    {
+        $this->container['fillType'] = $fillType;
+
+        return $this;
+    }
+
+    /**
+     * Gets coverage
+     *
+     * @return double|mixed
+     */
+    public function getCoverage()
+    {
+        return $this->container['coverage'];
+    }
+
+    /**
+     * Sets coverage
+     *
+     * @param double|mixed $coverage coverage
+     *
+     * @return $this
+     */
+    public function setCoverage($coverage)
+    {
+        $this->container['coverage'] = $coverage;
 
         return $this;
     }

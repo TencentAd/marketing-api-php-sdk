@@ -250,6 +250,14 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'addDesktopPv' => 'int',
         'addDesktopCost' => 'int',
         'firstPayCount' => 'int',
+        'miniGamePayD3Uv' => 'int',
+        'miniGamePayD7Uv' => 'int',
+        'miniGamePayD14Uv' => 'int',
+        'miniGamePayD30Uv' => 'int',
+        'miniGameD3PayCount' => 'int',
+        'miniGameD7PayCount' => 'int',
+        'miniGameD14PayCount' => 'int',
+        'miniGameD30PayCount' => 'int',
         'wechatLocalPayCount' => 'int',
         'wechatLocalPayuserCount' => 'int',
         'wechatLocalPayAmount' => 'int',
@@ -386,9 +394,21 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameRegisterCost' => 'int',
         'miniGameRegisterRate' => 'double',
         'miniGameAdMonetizationUsers' => 'int',
+        'miniGameFirstDayAdMonetizationUsers' => 'int',
+        'miniGameFirstDayAdMonetizationAmount' => 'int',
+        'miniGameFirstDayAdPayingCost' => 'int',
+        'miniGameIncomeRoi1' => 'double',
+        'miniGameFirstDayAdPayingArpu' => 'int',
         'miniGamePayingCount' => 'int',
         'miniGamePayingAmount' => 'int',
+        'miniGamePayingUsersD1' => 'int',
+        'miniGamePayingAmountD1' => 'int',
+        'miniGamePayingAmountD3' => 'int',
+        'miniGamePayingAmountD7' => 'int',
+        'miniGamePayingAmountD14' => 'int',
+        'miniGamePayingAmountD30' => 'int',
         'miniGameFirstPayingUsers' => 'int',
+        'miniGameFirstDayPayingRoi' => 'double',
         'miniGameCreateRoleUsers' => 'int',
         'miniGameCreateRoleCost' => 'int',
         'miniGameRetentionD1' => 'int',
@@ -421,6 +441,13 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'keyBehaviorConversionsCost' => 'int',
         'keyBehaviorConversionsRate' => 'double',
         'firstDayOrderRoi' => 'double',
+        'miniGameMixedMonetizationRoiD1' => 'double',
+        'miniGameMixedMonetizationRoiD3' => 'double',
+        'miniGameMixedMonetizationRoiD7' => 'double',
+        'miniGameMixedMonetizationRoiD14' => 'double',
+        'miniGameAdMonetizationAmountD3' => 'int',
+        'miniGameAdMonetizationAmountD7' => 'int',
+        'miniGameAdMonetizationAmountD14' => 'int',
         'miniGameAdMonetizationCost' => 'int',
         'miniGameAdMonetizationRoi' => 'double',
         'miniGameAdMonetizationArpu' => 'int',
@@ -466,6 +493,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Arpu' => 'int',
         'miniGameCreateRoleRate' => 'double',
         'consultUvCount' => 'int',
+        'miniGamePayD3Roi' => 'double',
+        'miniGamePayD7Roi' => 'double',
+        'miniGamePayD14Roi' => 'double',
+        'miniGamePayD30Roi' => 'double',
         'videoFollowCount' => 'int',
         'videoHeartCount' => 'int',
         'videoCommentCount' => 'int',
@@ -541,6 +572,17 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'int',
         'stayPay15dPv' => 'int',
         'stayPay30dPv' => 'int',
+        'minigame1dPayCount' => 'int',
+        'minigame3dIncomeUv' => 'int',
+        'minigame3dIncomeCount' => 'int',
+        'minigame7dIncomeUv' => 'int',
+        'minigame7dIncomeCount' => 'int',
+        'minigame3dIncomeRoi' => 'double',
+        'minigame7dIncomeRoi' => 'double',
+        'minigame24hPayUv' => 'int',
+        'minigame24hPayAmount' => 'int',
+        'minigame24hPayRoi' => 'double',
+        'minigame24hPayArpu' => 'int',
         'liveStreamCrtClickCnt' => 'int',
         'liveStreamAvgTime' => 'double',
         'liveStreamCommodityShopBagClkPv' => 'int',
@@ -648,18 +690,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayingUsersPlaD1' => 'int',
         'miniGameFirstPayPlaAmount' => 'int',
         'miniGamePayD1PlaUv' => 'int',
-        'miniGamePayD3Uv' => 'int',
-        'miniGamePayD7Uv' => 'int',
-        'miniGamePayD14Uv' => 'int',
-        'miniGamePayD30Uv' => 'int',
         'miniGamePayD3PlaUv' => 'int',
         'miniGamePayD7PlaUv' => 'int',
         'miniGamePayD14PlaUv' => 'int',
         'miniGamePayD30PlaUv' => 'int',
-        'miniGameD3PayCount' => 'int',
-        'miniGameD7PayCount' => 'int',
-        'miniGameD14PayCount' => 'int',
-        'miniGameD30PayCount' => 'int',
         'miniGameD3PayPlaCount' => 'int',
         'miniGameD7PayPlaCount' => 'int',
         'miniGameD14PayPlaCount' => 'int',
@@ -667,18 +701,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'roiActivatedD30' => 'double',
         'firstDayFirstPayRate' => 'double',
         'activeD5FirstPayCost' => 'int',
-        'miniGameFirstDayAdMonetizationUsers' => 'int',
-        'miniGameFirstDayAdMonetizationAmount' => 'int',
-        'miniGameFirstDayAdPayingCost' => 'int',
-        'miniGameIncomeRoi1' => 'double',
-        'miniGameFirstDayAdPayingArpu' => 'int',
-        'miniGamePayingUsersD1' => 'int',
-        'miniGamePayingAmountD1' => 'int',
-        'miniGamePayingAmountD3' => 'int',
-        'miniGamePayingAmountD7' => 'int',
-        'miniGamePayingAmountD14' => 'int',
-        'miniGamePayingAmountD30' => 'int',
-        'miniGameFirstDayPayingRoi' => 'double',
         'miniGamePayingAmountD1ByUpload' => 'int',
         'miniGamePayingAmountD3ByUpload' => 'int',
         'miniGamePayingAmountD7ByUpload' => 'int',
@@ -688,21 +710,14 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'mixedMonetizationRoiD3' => 'double',
         'mixedMonetizationRoiD7' => 'double',
         'mixedMonetizationRoiD14' => 'double',
-        'miniGameMixedMonetizationRoiD1' => 'double',
         'miniGameMixedMonetizationRoiD1ByReporting' => 'double',
-        'miniGameMixedMonetizationRoiD3' => 'double',
         'miniGameMixedMonetizationRoiD3ByReporting' => 'double',
-        'miniGameMixedMonetizationRoiD7' => 'double',
         'miniGameMixedMonetizationRoiD7ByReporting' => 'double',
-        'miniGameMixedMonetizationRoiD14' => 'double',
         'miniGameMixedMonetizationRoiD14ByReporting' => 'double',
         'adPayingUsersD1' => 'int',
         'adPayingCostD1' => 'int',
         'adPurArpuCostD1' => 'int',
         'adMonetizationPenetrationRatD1' => 'double',
-        'miniGameAdMonetizationAmountD3' => 'int',
-        'miniGameAdMonetizationAmountD7' => 'int',
-        'miniGameAdMonetizationAmountD14' => 'int',
         'miniGamePayingArpuD1' => 'int',
         'miniGamePayD1PlaRate' => 'double',
         'activeD5ClickFirstPayRate' => 'double',
@@ -715,25 +730,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activeD7PayCost' => 'int',
         'miniGameFirstDayPayingPlaRoi' => 'double',
         'miniGameFirstPayPlaCost' => 'int',
-        'miniGamePayD3Roi' => 'double',
-        'miniGamePayD7Roi' => 'double',
-        'miniGamePayD14Roi' => 'double',
-        'miniGamePayD30Roi' => 'double',
         'miniGamePayD3PlaRoi' => 'double',
         'miniGamePayD7PlaRoi' => 'double',
         'miniGamePayD14PlaRoi' => 'double',
         'miniGamePayD30PlaRoi' => 'double',
-        'minigame1dPayCount' => 'int',
-        'minigame3dIncomeUv' => 'int',
-        'minigame3dIncomeCount' => 'int',
-        'minigame7dIncomeUv' => 'int',
-        'minigame7dIncomeCount' => 'int',
-        'minigame3dIncomeRoi' => 'double',
-        'minigame7dIncomeRoi' => 'double',
-        'minigame24hPayUv' => 'int',
-        'minigame24hPayAmount' => 'int',
-        'minigame24hPayRoi' => 'double',
-        'minigame24hPayArpu' => 'int',
         'campaignId' => 'int',
         'campaignName' => 'string',
         'adgroupId' => 'int',
@@ -1049,6 +1049,14 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'addDesktopPv' => 'int64',
         'addDesktopCost' => 'int64',
         'firstPayCount' => 'int64',
+        'miniGamePayD3Uv' => 'int64',
+        'miniGamePayD7Uv' => 'int64',
+        'miniGamePayD14Uv' => 'int64',
+        'miniGamePayD30Uv' => 'int64',
+        'miniGameD3PayCount' => 'int64',
+        'miniGameD7PayCount' => 'int64',
+        'miniGameD14PayCount' => 'int64',
+        'miniGameD30PayCount' => 'int64',
         'wechatLocalPayCount' => 'int64',
         'wechatLocalPayuserCount' => 'int64',
         'wechatLocalPayAmount' => 'int64',
@@ -1185,9 +1193,21 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameRegisterCost' => 'int64',
         'miniGameRegisterRate' => 'double',
         'miniGameAdMonetizationUsers' => 'int64',
+        'miniGameFirstDayAdMonetizationUsers' => 'int64',
+        'miniGameFirstDayAdMonetizationAmount' => 'int64',
+        'miniGameFirstDayAdPayingCost' => 'int64',
+        'miniGameIncomeRoi1' => 'double',
+        'miniGameFirstDayAdPayingArpu' => 'int64',
         'miniGamePayingCount' => 'int64',
         'miniGamePayingAmount' => 'int64',
+        'miniGamePayingUsersD1' => 'int64',
+        'miniGamePayingAmountD1' => 'int64',
+        'miniGamePayingAmountD3' => 'int64',
+        'miniGamePayingAmountD7' => 'int64',
+        'miniGamePayingAmountD14' => 'int64',
+        'miniGamePayingAmountD30' => 'int64',
         'miniGameFirstPayingUsers' => 'int64',
+        'miniGameFirstDayPayingRoi' => 'double',
         'miniGameCreateRoleUsers' => 'int64',
         'miniGameCreateRoleCost' => 'int64',
         'miniGameRetentionD1' => 'int64',
@@ -1220,6 +1240,13 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'keyBehaviorConversionsCost' => 'int64',
         'keyBehaviorConversionsRate' => 'double',
         'firstDayOrderRoi' => 'double',
+        'miniGameMixedMonetizationRoiD1' => 'double',
+        'miniGameMixedMonetizationRoiD3' => 'double',
+        'miniGameMixedMonetizationRoiD7' => 'double',
+        'miniGameMixedMonetizationRoiD14' => 'double',
+        'miniGameAdMonetizationAmountD3' => 'int64',
+        'miniGameAdMonetizationAmountD7' => 'int64',
+        'miniGameAdMonetizationAmountD14' => 'int64',
         'miniGameAdMonetizationCost' => 'int64',
         'miniGameAdMonetizationRoi' => 'double',
         'miniGameAdMonetizationArpu' => 'int64',
@@ -1265,6 +1292,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Arpu' => 'int64',
         'miniGameCreateRoleRate' => 'double',
         'consultUvCount' => 'int64',
+        'miniGamePayD3Roi' => 'double',
+        'miniGamePayD7Roi' => 'double',
+        'miniGamePayD14Roi' => 'double',
+        'miniGamePayD30Roi' => 'double',
         'videoFollowCount' => 'int64',
         'videoHeartCount' => 'int64',
         'videoCommentCount' => 'int64',
@@ -1340,6 +1371,17 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'int64',
         'stayPay15dPv' => 'int64',
         'stayPay30dPv' => 'int64',
+        'minigame1dPayCount' => 'int64',
+        'minigame3dIncomeUv' => 'int64',
+        'minigame3dIncomeCount' => 'int64',
+        'minigame7dIncomeUv' => 'int64',
+        'minigame7dIncomeCount' => 'int64',
+        'minigame3dIncomeRoi' => 'double',
+        'minigame7dIncomeRoi' => 'double',
+        'minigame24hPayUv' => 'int64',
+        'minigame24hPayAmount' => 'int64',
+        'minigame24hPayRoi' => 'double',
+        'minigame24hPayArpu' => 'int64',
         'liveStreamCrtClickCnt' => 'int64',
         'liveStreamAvgTime' => 'double',
         'liveStreamCommodityShopBagClkPv' => 'int64',
@@ -1447,18 +1489,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayingUsersPlaD1' => 'int64',
         'miniGameFirstPayPlaAmount' => 'int64',
         'miniGamePayD1PlaUv' => 'int64',
-        'miniGamePayD3Uv' => 'int64',
-        'miniGamePayD7Uv' => 'int64',
-        'miniGamePayD14Uv' => 'int64',
-        'miniGamePayD30Uv' => 'int64',
         'miniGamePayD3PlaUv' => 'int64',
         'miniGamePayD7PlaUv' => 'int64',
         'miniGamePayD14PlaUv' => 'int64',
         'miniGamePayD30PlaUv' => 'int64',
-        'miniGameD3PayCount' => 'int64',
-        'miniGameD7PayCount' => 'int64',
-        'miniGameD14PayCount' => 'int64',
-        'miniGameD30PayCount' => 'int64',
         'miniGameD3PayPlaCount' => 'int64',
         'miniGameD7PayPlaCount' => 'int64',
         'miniGameD14PayPlaCount' => 'int64',
@@ -1466,18 +1500,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'roiActivatedD30' => 'double',
         'firstDayFirstPayRate' => 'double',
         'activeD5FirstPayCost' => 'int64',
-        'miniGameFirstDayAdMonetizationUsers' => 'int64',
-        'miniGameFirstDayAdMonetizationAmount' => 'int64',
-        'miniGameFirstDayAdPayingCost' => 'int64',
-        'miniGameIncomeRoi1' => 'double',
-        'miniGameFirstDayAdPayingArpu' => 'int64',
-        'miniGamePayingUsersD1' => 'int64',
-        'miniGamePayingAmountD1' => 'int64',
-        'miniGamePayingAmountD3' => 'int64',
-        'miniGamePayingAmountD7' => 'int64',
-        'miniGamePayingAmountD14' => 'int64',
-        'miniGamePayingAmountD30' => 'int64',
-        'miniGameFirstDayPayingRoi' => 'double',
         'miniGamePayingAmountD1ByUpload' => 'int64',
         'miniGamePayingAmountD3ByUpload' => 'int64',
         'miniGamePayingAmountD7ByUpload' => 'int64',
@@ -1487,21 +1509,14 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'mixedMonetizationRoiD3' => 'double',
         'mixedMonetizationRoiD7' => 'double',
         'mixedMonetizationRoiD14' => 'double',
-        'miniGameMixedMonetizationRoiD1' => 'double',
         'miniGameMixedMonetizationRoiD1ByReporting' => 'double',
-        'miniGameMixedMonetizationRoiD3' => 'double',
         'miniGameMixedMonetizationRoiD3ByReporting' => 'double',
-        'miniGameMixedMonetizationRoiD7' => 'double',
         'miniGameMixedMonetizationRoiD7ByReporting' => 'double',
-        'miniGameMixedMonetizationRoiD14' => 'double',
         'miniGameMixedMonetizationRoiD14ByReporting' => 'double',
         'adPayingUsersD1' => 'int64',
         'adPayingCostD1' => 'int64',
         'adPurArpuCostD1' => 'int64',
         'adMonetizationPenetrationRatD1' => 'double',
-        'miniGameAdMonetizationAmountD3' => 'int64',
-        'miniGameAdMonetizationAmountD7' => 'int64',
-        'miniGameAdMonetizationAmountD14' => 'int64',
         'miniGamePayingArpuD1' => 'int64',
         'miniGamePayD1PlaRate' => 'double',
         'activeD5ClickFirstPayRate' => 'double',
@@ -1514,25 +1529,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activeD7PayCost' => 'int64',
         'miniGameFirstDayPayingPlaRoi' => 'double',
         'miniGameFirstPayPlaCost' => 'int64',
-        'miniGamePayD3Roi' => 'double',
-        'miniGamePayD7Roi' => 'double',
-        'miniGamePayD14Roi' => 'double',
-        'miniGamePayD30Roi' => 'double',
         'miniGamePayD3PlaRoi' => 'double',
         'miniGamePayD7PlaRoi' => 'double',
         'miniGamePayD14PlaRoi' => 'double',
         'miniGamePayD30PlaRoi' => 'double',
-        'minigame1dPayCount' => 'int64',
-        'minigame3dIncomeUv' => 'int64',
-        'minigame3dIncomeCount' => 'int64',
-        'minigame7dIncomeUv' => 'int64',
-        'minigame7dIncomeCount' => 'int64',
-        'minigame3dIncomeRoi' => 'double',
-        'minigame7dIncomeRoi' => 'double',
-        'minigame24hPayUv' => 'int64',
-        'minigame24hPayAmount' => 'int64',
-        'minigame24hPayRoi' => 'double',
-        'minigame24hPayArpu' => 'int64',
         'campaignId' => 'int64',
         'campaignName' => null,
         'adgroupId' => 'int64',
@@ -1869,6 +1869,14 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'addDesktopPv' => 'add_desktop_pv',
         'addDesktopCost' => 'add_desktop_cost',
         'firstPayCount' => 'first_pay_count',
+        'miniGamePayD3Uv' => 'mini_game_pay_d3_uv',
+        'miniGamePayD7Uv' => 'mini_game_pay_d7_uv',
+        'miniGamePayD14Uv' => 'mini_game_pay_d14_uv',
+        'miniGamePayD30Uv' => 'mini_game_pay_d30_uv',
+        'miniGameD3PayCount' => 'mini_game_d3_pay_count',
+        'miniGameD7PayCount' => 'mini_game_d7_pay_count',
+        'miniGameD14PayCount' => 'mini_game_d14_pay_count',
+        'miniGameD30PayCount' => 'mini_game_d30_pay_count',
         'wechatLocalPayCount' => 'wechat_local_pay_count',
         'wechatLocalPayuserCount' => 'wechat_local_payuser_count',
         'wechatLocalPayAmount' => 'wechat_local_pay_amount',
@@ -2005,9 +2013,21 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameRegisterCost' => 'mini_game_register_cost',
         'miniGameRegisterRate' => 'mini_game_register_rate',
         'miniGameAdMonetizationUsers' => 'mini_game_ad_monetization_users',
+        'miniGameFirstDayAdMonetizationUsers' => 'mini_game_first_day_ad_monetization_users',
+        'miniGameFirstDayAdMonetizationAmount' => 'mini_game_first_day_ad_monetization_amount',
+        'miniGameFirstDayAdPayingCost' => 'mini_game_first_day_ad_paying_cost',
+        'miniGameIncomeRoi1' => 'mini_game_income_roi_1',
+        'miniGameFirstDayAdPayingArpu' => 'mini_game_first_day_ad_paying_arpu',
         'miniGamePayingCount' => 'mini_game_paying_count',
         'miniGamePayingAmount' => 'mini_game_paying_amount',
+        'miniGamePayingUsersD1' => 'mini_game_paying_users_d1',
+        'miniGamePayingAmountD1' => 'mini_game_paying_amount_d1',
+        'miniGamePayingAmountD3' => 'mini_game_paying_amount_d3',
+        'miniGamePayingAmountD7' => 'mini_game_paying_amount_d7',
+        'miniGamePayingAmountD14' => 'mini_game_paying_amount_d14',
+        'miniGamePayingAmountD30' => 'mini_game_paying_amount_d30',
         'miniGameFirstPayingUsers' => 'mini_game_first_paying_users',
+        'miniGameFirstDayPayingRoi' => 'mini_game_first_day_paying_roi',
         'miniGameCreateRoleUsers' => 'mini_game_create_role_users',
         'miniGameCreateRoleCost' => 'mini_game_create_role_cost',
         'miniGameRetentionD1' => 'mini_game_retention_d1',
@@ -2040,6 +2060,13 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'keyBehaviorConversionsCost' => 'key_behavior_conversions_cost',
         'keyBehaviorConversionsRate' => 'key_behavior_conversions_rate',
         'firstDayOrderRoi' => 'first_day_order_roi',
+        'miniGameMixedMonetizationRoiD1' => 'mini_game_mixed_monetization_roi_d1',
+        'miniGameMixedMonetizationRoiD3' => 'mini_game_mixed_monetization_roi_d3',
+        'miniGameMixedMonetizationRoiD7' => 'mini_game_mixed_monetization_roi_d7',
+        'miniGameMixedMonetizationRoiD14' => 'mini_game_mixed_monetization_roi_d14',
+        'miniGameAdMonetizationAmountD3' => 'mini_game_ad_monetization_amount_d3',
+        'miniGameAdMonetizationAmountD7' => 'mini_game_ad_monetization_amount_d7',
+        'miniGameAdMonetizationAmountD14' => 'mini_game_ad_monetization_amount_d14',
         'miniGameAdMonetizationCost' => 'mini_game_ad_monetization_cost',
         'miniGameAdMonetizationRoi' => 'mini_game_ad_monetization_roi',
         'miniGameAdMonetizationArpu' => 'mini_game_ad_monetization_arpu',
@@ -2085,6 +2112,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Arpu' => 'mini_game_bf_purchase_d1_arpu',
         'miniGameCreateRoleRate' => 'mini_game_create_role_rate',
         'consultUvCount' => 'consult_uv_count',
+        'miniGamePayD3Roi' => 'mini_game_pay_d3_roi',
+        'miniGamePayD7Roi' => 'mini_game_pay_d7_roi',
+        'miniGamePayD14Roi' => 'mini_game_pay_d14_roi',
+        'miniGamePayD30Roi' => 'mini_game_pay_d30_roi',
         'videoFollowCount' => 'video_follow_count',
         'videoHeartCount' => 'video_heart_count',
         'videoCommentCount' => 'video_comment_count',
@@ -2160,6 +2191,17 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'stay_pay_7d_pv',
         'stayPay15dPv' => 'stay_pay_15d_pv',
         'stayPay30dPv' => 'stay_pay_30d_pv',
+        'minigame1dPayCount' => 'minigame_1d_pay_count',
+        'minigame3dIncomeUv' => 'minigame_3d_income_uv',
+        'minigame3dIncomeCount' => 'minigame_3d_income_count',
+        'minigame7dIncomeUv' => 'minigame_7d_income_uv',
+        'minigame7dIncomeCount' => 'minigame_7d_income_count',
+        'minigame3dIncomeRoi' => 'minigame_3d_income_roi',
+        'minigame7dIncomeRoi' => 'minigame_7d_income_roi',
+        'minigame24hPayUv' => 'minigame_24h_pay_uv',
+        'minigame24hPayAmount' => 'minigame_24h_pay_amount',
+        'minigame24hPayRoi' => 'minigame_24h_pay_roi',
+        'minigame24hPayArpu' => 'minigame_24h_pay_arpu',
         'liveStreamCrtClickCnt' => 'live_stream_crt_click_cnt',
         'liveStreamAvgTime' => 'live_stream_avg_time',
         'liveStreamCommodityShopBagClkPv' => 'live_stream_commodity_shop_bag_clk_pv',
@@ -2267,18 +2309,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayingUsersPlaD1' => 'mini_game_paying_users_pla_d1',
         'miniGameFirstPayPlaAmount' => 'mini_game_first_pay_pla_amount',
         'miniGamePayD1PlaUv' => 'mini_game_pay_d1_pla_uv',
-        'miniGamePayD3Uv' => 'mini_game_pay_d3_uv',
-        'miniGamePayD7Uv' => 'mini_game_pay_d7_uv',
-        'miniGamePayD14Uv' => 'mini_game_pay_d14_uv',
-        'miniGamePayD30Uv' => 'mini_game_pay_d30_uv',
         'miniGamePayD3PlaUv' => 'mini_game_pay_d3_pla_uv',
         'miniGamePayD7PlaUv' => 'mini_game_pay_d7_pla_uv',
         'miniGamePayD14PlaUv' => 'mini_game_pay_d14_pla_uv',
         'miniGamePayD30PlaUv' => 'mini_game_pay_d30_pla_uv',
-        'miniGameD3PayCount' => 'mini_game_d3_pay_count',
-        'miniGameD7PayCount' => 'mini_game_d7_pay_count',
-        'miniGameD14PayCount' => 'mini_game_d14_pay_count',
-        'miniGameD30PayCount' => 'mini_game_d30_pay_count',
         'miniGameD3PayPlaCount' => 'mini_game_d3_pay_pla_count',
         'miniGameD7PayPlaCount' => 'mini_game_d7_pay_pla_count',
         'miniGameD14PayPlaCount' => 'mini_game_d14_pay_pla_count',
@@ -2286,18 +2320,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'roiActivatedD30' => 'roi_activated_d30',
         'firstDayFirstPayRate' => 'first_day_first_pay_rate',
         'activeD5FirstPayCost' => 'active_d5_first_pay_cost',
-        'miniGameFirstDayAdMonetizationUsers' => 'mini_game_first_day_ad_monetization_users',
-        'miniGameFirstDayAdMonetizationAmount' => 'mini_game_first_day_ad_monetization_amount',
-        'miniGameFirstDayAdPayingCost' => 'mini_game_first_day_ad_paying_cost',
-        'miniGameIncomeRoi1' => 'mini_game_income_roi_1',
-        'miniGameFirstDayAdPayingArpu' => 'mini_game_first_day_ad_paying_arpu',
-        'miniGamePayingUsersD1' => 'mini_game_paying_users_d1',
-        'miniGamePayingAmountD1' => 'mini_game_paying_amount_d1',
-        'miniGamePayingAmountD3' => 'mini_game_paying_amount_d3',
-        'miniGamePayingAmountD7' => 'mini_game_paying_amount_d7',
-        'miniGamePayingAmountD14' => 'mini_game_paying_amount_d14',
-        'miniGamePayingAmountD30' => 'mini_game_paying_amount_d30',
-        'miniGameFirstDayPayingRoi' => 'mini_game_first_day_paying_roi',
         'miniGamePayingAmountD1ByUpload' => 'mini_game_paying_amount_d1_by_upload',
         'miniGamePayingAmountD3ByUpload' => 'mini_game_paying_amount_d3_by_upload',
         'miniGamePayingAmountD7ByUpload' => 'mini_game_paying_amount_d7_by_upload',
@@ -2307,21 +2329,14 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'mixedMonetizationRoiD3' => 'mixed_monetization_roi_d3',
         'mixedMonetizationRoiD7' => 'mixed_monetization_roi_d7',
         'mixedMonetizationRoiD14' => 'mixed_monetization_roi_d14',
-        'miniGameMixedMonetizationRoiD1' => 'mini_game_mixed_monetization_roi_d1',
         'miniGameMixedMonetizationRoiD1ByReporting' => 'mini_game_mixed_monetization_roi_d1_by_reporting',
-        'miniGameMixedMonetizationRoiD3' => 'mini_game_mixed_monetization_roi_d3',
         'miniGameMixedMonetizationRoiD3ByReporting' => 'mini_game_mixed_monetization_roi_d3_by_reporting',
-        'miniGameMixedMonetizationRoiD7' => 'mini_game_mixed_monetization_roi_d7',
         'miniGameMixedMonetizationRoiD7ByReporting' => 'mini_game_mixed_monetization_roi_d7_by_reporting',
-        'miniGameMixedMonetizationRoiD14' => 'mini_game_mixed_monetization_roi_d14',
         'miniGameMixedMonetizationRoiD14ByReporting' => 'mini_game_mixed_monetization_roi_d14_by_reporting',
         'adPayingUsersD1' => 'ad_paying_users_d1',
         'adPayingCostD1' => 'ad_paying_cost_d1',
         'adPurArpuCostD1' => 'ad_pur_arpu_cost_d1',
         'adMonetizationPenetrationRatD1' => 'ad_monetization_penetration_rat_d1',
-        'miniGameAdMonetizationAmountD3' => 'mini_game_ad_monetization_amount_d3',
-        'miniGameAdMonetizationAmountD7' => 'mini_game_ad_monetization_amount_d7',
-        'miniGameAdMonetizationAmountD14' => 'mini_game_ad_monetization_amount_d14',
         'miniGamePayingArpuD1' => 'mini_game_paying_arpu_d1',
         'miniGamePayD1PlaRate' => 'mini_game_pay_d1_pla_rate',
         'activeD5ClickFirstPayRate' => 'active_d5_click_first_pay_rate',
@@ -2334,25 +2349,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activeD7PayCost' => 'active_d7_pay_cost',
         'miniGameFirstDayPayingPlaRoi' => 'mini_game_first_day_paying_pla_roi',
         'miniGameFirstPayPlaCost' => 'mini_game_first_pay_pla_cost',
-        'miniGamePayD3Roi' => 'mini_game_pay_d3_roi',
-        'miniGamePayD7Roi' => 'mini_game_pay_d7_roi',
-        'miniGamePayD14Roi' => 'mini_game_pay_d14_roi',
-        'miniGamePayD30Roi' => 'mini_game_pay_d30_roi',
         'miniGamePayD3PlaRoi' => 'mini_game_pay_d3_pla_roi',
         'miniGamePayD7PlaRoi' => 'mini_game_pay_d7_pla_roi',
         'miniGamePayD14PlaRoi' => 'mini_game_pay_d14_pla_roi',
         'miniGamePayD30PlaRoi' => 'mini_game_pay_d30_pla_roi',
-        'minigame1dPayCount' => 'minigame_1d_pay_count',
-        'minigame3dIncomeUv' => 'minigame_3d_income_uv',
-        'minigame3dIncomeCount' => 'minigame_3d_income_count',
-        'minigame7dIncomeUv' => 'minigame_7d_income_uv',
-        'minigame7dIncomeCount' => 'minigame_7d_income_count',
-        'minigame3dIncomeRoi' => 'minigame_3d_income_roi',
-        'minigame7dIncomeRoi' => 'minigame_7d_income_roi',
-        'minigame24hPayUv' => 'minigame_24h_pay_uv',
-        'minigame24hPayAmount' => 'minigame_24h_pay_amount',
-        'minigame24hPayRoi' => 'minigame_24h_pay_roi',
-        'minigame24hPayArpu' => 'minigame_24h_pay_arpu',
         'campaignId' => 'campaign_id',
         'campaignName' => 'campaign_name',
         'adgroupId' => 'adgroup_id',
@@ -2668,6 +2668,14 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'addDesktopPv' => 'setAddDesktopPv',
         'addDesktopCost' => 'setAddDesktopCost',
         'firstPayCount' => 'setFirstPayCount',
+        'miniGamePayD3Uv' => 'setMiniGamePayD3Uv',
+        'miniGamePayD7Uv' => 'setMiniGamePayD7Uv',
+        'miniGamePayD14Uv' => 'setMiniGamePayD14Uv',
+        'miniGamePayD30Uv' => 'setMiniGamePayD30Uv',
+        'miniGameD3PayCount' => 'setMiniGameD3PayCount',
+        'miniGameD7PayCount' => 'setMiniGameD7PayCount',
+        'miniGameD14PayCount' => 'setMiniGameD14PayCount',
+        'miniGameD30PayCount' => 'setMiniGameD30PayCount',
         'wechatLocalPayCount' => 'setWechatLocalPayCount',
         'wechatLocalPayuserCount' => 'setWechatLocalPayuserCount',
         'wechatLocalPayAmount' => 'setWechatLocalPayAmount',
@@ -2804,9 +2812,21 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameRegisterCost' => 'setMiniGameRegisterCost',
         'miniGameRegisterRate' => 'setMiniGameRegisterRate',
         'miniGameAdMonetizationUsers' => 'setMiniGameAdMonetizationUsers',
+        'miniGameFirstDayAdMonetizationUsers' => 'setMiniGameFirstDayAdMonetizationUsers',
+        'miniGameFirstDayAdMonetizationAmount' => 'setMiniGameFirstDayAdMonetizationAmount',
+        'miniGameFirstDayAdPayingCost' => 'setMiniGameFirstDayAdPayingCost',
+        'miniGameIncomeRoi1' => 'setMiniGameIncomeRoi1',
+        'miniGameFirstDayAdPayingArpu' => 'setMiniGameFirstDayAdPayingArpu',
         'miniGamePayingCount' => 'setMiniGamePayingCount',
         'miniGamePayingAmount' => 'setMiniGamePayingAmount',
+        'miniGamePayingUsersD1' => 'setMiniGamePayingUsersD1',
+        'miniGamePayingAmountD1' => 'setMiniGamePayingAmountD1',
+        'miniGamePayingAmountD3' => 'setMiniGamePayingAmountD3',
+        'miniGamePayingAmountD7' => 'setMiniGamePayingAmountD7',
+        'miniGamePayingAmountD14' => 'setMiniGamePayingAmountD14',
+        'miniGamePayingAmountD30' => 'setMiniGamePayingAmountD30',
         'miniGameFirstPayingUsers' => 'setMiniGameFirstPayingUsers',
+        'miniGameFirstDayPayingRoi' => 'setMiniGameFirstDayPayingRoi',
         'miniGameCreateRoleUsers' => 'setMiniGameCreateRoleUsers',
         'miniGameCreateRoleCost' => 'setMiniGameCreateRoleCost',
         'miniGameRetentionD1' => 'setMiniGameRetentionD1',
@@ -2839,6 +2859,13 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'keyBehaviorConversionsCost' => 'setKeyBehaviorConversionsCost',
         'keyBehaviorConversionsRate' => 'setKeyBehaviorConversionsRate',
         'firstDayOrderRoi' => 'setFirstDayOrderRoi',
+        'miniGameMixedMonetizationRoiD1' => 'setMiniGameMixedMonetizationRoiD1',
+        'miniGameMixedMonetizationRoiD3' => 'setMiniGameMixedMonetizationRoiD3',
+        'miniGameMixedMonetizationRoiD7' => 'setMiniGameMixedMonetizationRoiD7',
+        'miniGameMixedMonetizationRoiD14' => 'setMiniGameMixedMonetizationRoiD14',
+        'miniGameAdMonetizationAmountD3' => 'setMiniGameAdMonetizationAmountD3',
+        'miniGameAdMonetizationAmountD7' => 'setMiniGameAdMonetizationAmountD7',
+        'miniGameAdMonetizationAmountD14' => 'setMiniGameAdMonetizationAmountD14',
         'miniGameAdMonetizationCost' => 'setMiniGameAdMonetizationCost',
         'miniGameAdMonetizationRoi' => 'setMiniGameAdMonetizationRoi',
         'miniGameAdMonetizationArpu' => 'setMiniGameAdMonetizationArpu',
@@ -2884,6 +2911,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Arpu' => 'setMiniGameBfPurchaseD1Arpu',
         'miniGameCreateRoleRate' => 'setMiniGameCreateRoleRate',
         'consultUvCount' => 'setConsultUvCount',
+        'miniGamePayD3Roi' => 'setMiniGamePayD3Roi',
+        'miniGamePayD7Roi' => 'setMiniGamePayD7Roi',
+        'miniGamePayD14Roi' => 'setMiniGamePayD14Roi',
+        'miniGamePayD30Roi' => 'setMiniGamePayD30Roi',
         'videoFollowCount' => 'setVideoFollowCount',
         'videoHeartCount' => 'setVideoHeartCount',
         'videoCommentCount' => 'setVideoCommentCount',
@@ -2959,6 +2990,17 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'setStayPay7dPv',
         'stayPay15dPv' => 'setStayPay15dPv',
         'stayPay30dPv' => 'setStayPay30dPv',
+        'minigame1dPayCount' => 'setMinigame1dPayCount',
+        'minigame3dIncomeUv' => 'setMinigame3dIncomeUv',
+        'minigame3dIncomeCount' => 'setMinigame3dIncomeCount',
+        'minigame7dIncomeUv' => 'setMinigame7dIncomeUv',
+        'minigame7dIncomeCount' => 'setMinigame7dIncomeCount',
+        'minigame3dIncomeRoi' => 'setMinigame3dIncomeRoi',
+        'minigame7dIncomeRoi' => 'setMinigame7dIncomeRoi',
+        'minigame24hPayUv' => 'setMinigame24hPayUv',
+        'minigame24hPayAmount' => 'setMinigame24hPayAmount',
+        'minigame24hPayRoi' => 'setMinigame24hPayRoi',
+        'minigame24hPayArpu' => 'setMinigame24hPayArpu',
         'liveStreamCrtClickCnt' => 'setLiveStreamCrtClickCnt',
         'liveStreamAvgTime' => 'setLiveStreamAvgTime',
         'liveStreamCommodityShopBagClkPv' => 'setLiveStreamCommodityShopBagClkPv',
@@ -3066,18 +3108,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayingUsersPlaD1' => 'setMiniGamePayingUsersPlaD1',
         'miniGameFirstPayPlaAmount' => 'setMiniGameFirstPayPlaAmount',
         'miniGamePayD1PlaUv' => 'setMiniGamePayD1PlaUv',
-        'miniGamePayD3Uv' => 'setMiniGamePayD3Uv',
-        'miniGamePayD7Uv' => 'setMiniGamePayD7Uv',
-        'miniGamePayD14Uv' => 'setMiniGamePayD14Uv',
-        'miniGamePayD30Uv' => 'setMiniGamePayD30Uv',
         'miniGamePayD3PlaUv' => 'setMiniGamePayD3PlaUv',
         'miniGamePayD7PlaUv' => 'setMiniGamePayD7PlaUv',
         'miniGamePayD14PlaUv' => 'setMiniGamePayD14PlaUv',
         'miniGamePayD30PlaUv' => 'setMiniGamePayD30PlaUv',
-        'miniGameD3PayCount' => 'setMiniGameD3PayCount',
-        'miniGameD7PayCount' => 'setMiniGameD7PayCount',
-        'miniGameD14PayCount' => 'setMiniGameD14PayCount',
-        'miniGameD30PayCount' => 'setMiniGameD30PayCount',
         'miniGameD3PayPlaCount' => 'setMiniGameD3PayPlaCount',
         'miniGameD7PayPlaCount' => 'setMiniGameD7PayPlaCount',
         'miniGameD14PayPlaCount' => 'setMiniGameD14PayPlaCount',
@@ -3085,18 +3119,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'roiActivatedD30' => 'setRoiActivatedD30',
         'firstDayFirstPayRate' => 'setFirstDayFirstPayRate',
         'activeD5FirstPayCost' => 'setActiveD5FirstPayCost',
-        'miniGameFirstDayAdMonetizationUsers' => 'setMiniGameFirstDayAdMonetizationUsers',
-        'miniGameFirstDayAdMonetizationAmount' => 'setMiniGameFirstDayAdMonetizationAmount',
-        'miniGameFirstDayAdPayingCost' => 'setMiniGameFirstDayAdPayingCost',
-        'miniGameIncomeRoi1' => 'setMiniGameIncomeRoi1',
-        'miniGameFirstDayAdPayingArpu' => 'setMiniGameFirstDayAdPayingArpu',
-        'miniGamePayingUsersD1' => 'setMiniGamePayingUsersD1',
-        'miniGamePayingAmountD1' => 'setMiniGamePayingAmountD1',
-        'miniGamePayingAmountD3' => 'setMiniGamePayingAmountD3',
-        'miniGamePayingAmountD7' => 'setMiniGamePayingAmountD7',
-        'miniGamePayingAmountD14' => 'setMiniGamePayingAmountD14',
-        'miniGamePayingAmountD30' => 'setMiniGamePayingAmountD30',
-        'miniGameFirstDayPayingRoi' => 'setMiniGameFirstDayPayingRoi',
         'miniGamePayingAmountD1ByUpload' => 'setMiniGamePayingAmountD1ByUpload',
         'miniGamePayingAmountD3ByUpload' => 'setMiniGamePayingAmountD3ByUpload',
         'miniGamePayingAmountD7ByUpload' => 'setMiniGamePayingAmountD7ByUpload',
@@ -3106,21 +3128,14 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'mixedMonetizationRoiD3' => 'setMixedMonetizationRoiD3',
         'mixedMonetizationRoiD7' => 'setMixedMonetizationRoiD7',
         'mixedMonetizationRoiD14' => 'setMixedMonetizationRoiD14',
-        'miniGameMixedMonetizationRoiD1' => 'setMiniGameMixedMonetizationRoiD1',
         'miniGameMixedMonetizationRoiD1ByReporting' => 'setMiniGameMixedMonetizationRoiD1ByReporting',
-        'miniGameMixedMonetizationRoiD3' => 'setMiniGameMixedMonetizationRoiD3',
         'miniGameMixedMonetizationRoiD3ByReporting' => 'setMiniGameMixedMonetizationRoiD3ByReporting',
-        'miniGameMixedMonetizationRoiD7' => 'setMiniGameMixedMonetizationRoiD7',
         'miniGameMixedMonetizationRoiD7ByReporting' => 'setMiniGameMixedMonetizationRoiD7ByReporting',
-        'miniGameMixedMonetizationRoiD14' => 'setMiniGameMixedMonetizationRoiD14',
         'miniGameMixedMonetizationRoiD14ByReporting' => 'setMiniGameMixedMonetizationRoiD14ByReporting',
         'adPayingUsersD1' => 'setAdPayingUsersD1',
         'adPayingCostD1' => 'setAdPayingCostD1',
         'adPurArpuCostD1' => 'setAdPurArpuCostD1',
         'adMonetizationPenetrationRatD1' => 'setAdMonetizationPenetrationRatD1',
-        'miniGameAdMonetizationAmountD3' => 'setMiniGameAdMonetizationAmountD3',
-        'miniGameAdMonetizationAmountD7' => 'setMiniGameAdMonetizationAmountD7',
-        'miniGameAdMonetizationAmountD14' => 'setMiniGameAdMonetizationAmountD14',
         'miniGamePayingArpuD1' => 'setMiniGamePayingArpuD1',
         'miniGamePayD1PlaRate' => 'setMiniGamePayD1PlaRate',
         'activeD5ClickFirstPayRate' => 'setActiveD5ClickFirstPayRate',
@@ -3133,25 +3148,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activeD7PayCost' => 'setActiveD7PayCost',
         'miniGameFirstDayPayingPlaRoi' => 'setMiniGameFirstDayPayingPlaRoi',
         'miniGameFirstPayPlaCost' => 'setMiniGameFirstPayPlaCost',
-        'miniGamePayD3Roi' => 'setMiniGamePayD3Roi',
-        'miniGamePayD7Roi' => 'setMiniGamePayD7Roi',
-        'miniGamePayD14Roi' => 'setMiniGamePayD14Roi',
-        'miniGamePayD30Roi' => 'setMiniGamePayD30Roi',
         'miniGamePayD3PlaRoi' => 'setMiniGamePayD3PlaRoi',
         'miniGamePayD7PlaRoi' => 'setMiniGamePayD7PlaRoi',
         'miniGamePayD14PlaRoi' => 'setMiniGamePayD14PlaRoi',
         'miniGamePayD30PlaRoi' => 'setMiniGamePayD30PlaRoi',
-        'minigame1dPayCount' => 'setMinigame1dPayCount',
-        'minigame3dIncomeUv' => 'setMinigame3dIncomeUv',
-        'minigame3dIncomeCount' => 'setMinigame3dIncomeCount',
-        'minigame7dIncomeUv' => 'setMinigame7dIncomeUv',
-        'minigame7dIncomeCount' => 'setMinigame7dIncomeCount',
-        'minigame3dIncomeRoi' => 'setMinigame3dIncomeRoi',
-        'minigame7dIncomeRoi' => 'setMinigame7dIncomeRoi',
-        'minigame24hPayUv' => 'setMinigame24hPayUv',
-        'minigame24hPayAmount' => 'setMinigame24hPayAmount',
-        'minigame24hPayRoi' => 'setMinigame24hPayRoi',
-        'minigame24hPayArpu' => 'setMinigame24hPayArpu',
         'campaignId' => 'setCampaignId',
         'campaignName' => 'setCampaignName',
         'adgroupId' => 'setAdgroupId',
@@ -3467,6 +3467,14 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'addDesktopPv' => 'getAddDesktopPv',
         'addDesktopCost' => 'getAddDesktopCost',
         'firstPayCount' => 'getFirstPayCount',
+        'miniGamePayD3Uv' => 'getMiniGamePayD3Uv',
+        'miniGamePayD7Uv' => 'getMiniGamePayD7Uv',
+        'miniGamePayD14Uv' => 'getMiniGamePayD14Uv',
+        'miniGamePayD30Uv' => 'getMiniGamePayD30Uv',
+        'miniGameD3PayCount' => 'getMiniGameD3PayCount',
+        'miniGameD7PayCount' => 'getMiniGameD7PayCount',
+        'miniGameD14PayCount' => 'getMiniGameD14PayCount',
+        'miniGameD30PayCount' => 'getMiniGameD30PayCount',
         'wechatLocalPayCount' => 'getWechatLocalPayCount',
         'wechatLocalPayuserCount' => 'getWechatLocalPayuserCount',
         'wechatLocalPayAmount' => 'getWechatLocalPayAmount',
@@ -3603,9 +3611,21 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameRegisterCost' => 'getMiniGameRegisterCost',
         'miniGameRegisterRate' => 'getMiniGameRegisterRate',
         'miniGameAdMonetizationUsers' => 'getMiniGameAdMonetizationUsers',
+        'miniGameFirstDayAdMonetizationUsers' => 'getMiniGameFirstDayAdMonetizationUsers',
+        'miniGameFirstDayAdMonetizationAmount' => 'getMiniGameFirstDayAdMonetizationAmount',
+        'miniGameFirstDayAdPayingCost' => 'getMiniGameFirstDayAdPayingCost',
+        'miniGameIncomeRoi1' => 'getMiniGameIncomeRoi1',
+        'miniGameFirstDayAdPayingArpu' => 'getMiniGameFirstDayAdPayingArpu',
         'miniGamePayingCount' => 'getMiniGamePayingCount',
         'miniGamePayingAmount' => 'getMiniGamePayingAmount',
+        'miniGamePayingUsersD1' => 'getMiniGamePayingUsersD1',
+        'miniGamePayingAmountD1' => 'getMiniGamePayingAmountD1',
+        'miniGamePayingAmountD3' => 'getMiniGamePayingAmountD3',
+        'miniGamePayingAmountD7' => 'getMiniGamePayingAmountD7',
+        'miniGamePayingAmountD14' => 'getMiniGamePayingAmountD14',
+        'miniGamePayingAmountD30' => 'getMiniGamePayingAmountD30',
         'miniGameFirstPayingUsers' => 'getMiniGameFirstPayingUsers',
+        'miniGameFirstDayPayingRoi' => 'getMiniGameFirstDayPayingRoi',
         'miniGameCreateRoleUsers' => 'getMiniGameCreateRoleUsers',
         'miniGameCreateRoleCost' => 'getMiniGameCreateRoleCost',
         'miniGameRetentionD1' => 'getMiniGameRetentionD1',
@@ -3638,6 +3658,13 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'keyBehaviorConversionsCost' => 'getKeyBehaviorConversionsCost',
         'keyBehaviorConversionsRate' => 'getKeyBehaviorConversionsRate',
         'firstDayOrderRoi' => 'getFirstDayOrderRoi',
+        'miniGameMixedMonetizationRoiD1' => 'getMiniGameMixedMonetizationRoiD1',
+        'miniGameMixedMonetizationRoiD3' => 'getMiniGameMixedMonetizationRoiD3',
+        'miniGameMixedMonetizationRoiD7' => 'getMiniGameMixedMonetizationRoiD7',
+        'miniGameMixedMonetizationRoiD14' => 'getMiniGameMixedMonetizationRoiD14',
+        'miniGameAdMonetizationAmountD3' => 'getMiniGameAdMonetizationAmountD3',
+        'miniGameAdMonetizationAmountD7' => 'getMiniGameAdMonetizationAmountD7',
+        'miniGameAdMonetizationAmountD14' => 'getMiniGameAdMonetizationAmountD14',
         'miniGameAdMonetizationCost' => 'getMiniGameAdMonetizationCost',
         'miniGameAdMonetizationRoi' => 'getMiniGameAdMonetizationRoi',
         'miniGameAdMonetizationArpu' => 'getMiniGameAdMonetizationArpu',
@@ -3683,6 +3710,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Arpu' => 'getMiniGameBfPurchaseD1Arpu',
         'miniGameCreateRoleRate' => 'getMiniGameCreateRoleRate',
         'consultUvCount' => 'getConsultUvCount',
+        'miniGamePayD3Roi' => 'getMiniGamePayD3Roi',
+        'miniGamePayD7Roi' => 'getMiniGamePayD7Roi',
+        'miniGamePayD14Roi' => 'getMiniGamePayD14Roi',
+        'miniGamePayD30Roi' => 'getMiniGamePayD30Roi',
         'videoFollowCount' => 'getVideoFollowCount',
         'videoHeartCount' => 'getVideoHeartCount',
         'videoCommentCount' => 'getVideoCommentCount',
@@ -3758,6 +3789,17 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'stayPay7dPv' => 'getStayPay7dPv',
         'stayPay15dPv' => 'getStayPay15dPv',
         'stayPay30dPv' => 'getStayPay30dPv',
+        'minigame1dPayCount' => 'getMinigame1dPayCount',
+        'minigame3dIncomeUv' => 'getMinigame3dIncomeUv',
+        'minigame3dIncomeCount' => 'getMinigame3dIncomeCount',
+        'minigame7dIncomeUv' => 'getMinigame7dIncomeUv',
+        'minigame7dIncomeCount' => 'getMinigame7dIncomeCount',
+        'minigame3dIncomeRoi' => 'getMinigame3dIncomeRoi',
+        'minigame7dIncomeRoi' => 'getMinigame7dIncomeRoi',
+        'minigame24hPayUv' => 'getMinigame24hPayUv',
+        'minigame24hPayAmount' => 'getMinigame24hPayAmount',
+        'minigame24hPayRoi' => 'getMinigame24hPayRoi',
+        'minigame24hPayArpu' => 'getMinigame24hPayArpu',
         'liveStreamCrtClickCnt' => 'getLiveStreamCrtClickCnt',
         'liveStreamAvgTime' => 'getLiveStreamAvgTime',
         'liveStreamCommodityShopBagClkPv' => 'getLiveStreamCommodityShopBagClkPv',
@@ -3865,18 +3907,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayingUsersPlaD1' => 'getMiniGamePayingUsersPlaD1',
         'miniGameFirstPayPlaAmount' => 'getMiniGameFirstPayPlaAmount',
         'miniGamePayD1PlaUv' => 'getMiniGamePayD1PlaUv',
-        'miniGamePayD3Uv' => 'getMiniGamePayD3Uv',
-        'miniGamePayD7Uv' => 'getMiniGamePayD7Uv',
-        'miniGamePayD14Uv' => 'getMiniGamePayD14Uv',
-        'miniGamePayD30Uv' => 'getMiniGamePayD30Uv',
         'miniGamePayD3PlaUv' => 'getMiniGamePayD3PlaUv',
         'miniGamePayD7PlaUv' => 'getMiniGamePayD7PlaUv',
         'miniGamePayD14PlaUv' => 'getMiniGamePayD14PlaUv',
         'miniGamePayD30PlaUv' => 'getMiniGamePayD30PlaUv',
-        'miniGameD3PayCount' => 'getMiniGameD3PayCount',
-        'miniGameD7PayCount' => 'getMiniGameD7PayCount',
-        'miniGameD14PayCount' => 'getMiniGameD14PayCount',
-        'miniGameD30PayCount' => 'getMiniGameD30PayCount',
         'miniGameD3PayPlaCount' => 'getMiniGameD3PayPlaCount',
         'miniGameD7PayPlaCount' => 'getMiniGameD7PayPlaCount',
         'miniGameD14PayPlaCount' => 'getMiniGameD14PayPlaCount',
@@ -3884,18 +3918,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'roiActivatedD30' => 'getRoiActivatedD30',
         'firstDayFirstPayRate' => 'getFirstDayFirstPayRate',
         'activeD5FirstPayCost' => 'getActiveD5FirstPayCost',
-        'miniGameFirstDayAdMonetizationUsers' => 'getMiniGameFirstDayAdMonetizationUsers',
-        'miniGameFirstDayAdMonetizationAmount' => 'getMiniGameFirstDayAdMonetizationAmount',
-        'miniGameFirstDayAdPayingCost' => 'getMiniGameFirstDayAdPayingCost',
-        'miniGameIncomeRoi1' => 'getMiniGameIncomeRoi1',
-        'miniGameFirstDayAdPayingArpu' => 'getMiniGameFirstDayAdPayingArpu',
-        'miniGamePayingUsersD1' => 'getMiniGamePayingUsersD1',
-        'miniGamePayingAmountD1' => 'getMiniGamePayingAmountD1',
-        'miniGamePayingAmountD3' => 'getMiniGamePayingAmountD3',
-        'miniGamePayingAmountD7' => 'getMiniGamePayingAmountD7',
-        'miniGamePayingAmountD14' => 'getMiniGamePayingAmountD14',
-        'miniGamePayingAmountD30' => 'getMiniGamePayingAmountD30',
-        'miniGameFirstDayPayingRoi' => 'getMiniGameFirstDayPayingRoi',
         'miniGamePayingAmountD1ByUpload' => 'getMiniGamePayingAmountD1ByUpload',
         'miniGamePayingAmountD3ByUpload' => 'getMiniGamePayingAmountD3ByUpload',
         'miniGamePayingAmountD7ByUpload' => 'getMiniGamePayingAmountD7ByUpload',
@@ -3905,21 +3927,14 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'mixedMonetizationRoiD3' => 'getMixedMonetizationRoiD3',
         'mixedMonetizationRoiD7' => 'getMixedMonetizationRoiD7',
         'mixedMonetizationRoiD14' => 'getMixedMonetizationRoiD14',
-        'miniGameMixedMonetizationRoiD1' => 'getMiniGameMixedMonetizationRoiD1',
         'miniGameMixedMonetizationRoiD1ByReporting' => 'getMiniGameMixedMonetizationRoiD1ByReporting',
-        'miniGameMixedMonetizationRoiD3' => 'getMiniGameMixedMonetizationRoiD3',
         'miniGameMixedMonetizationRoiD3ByReporting' => 'getMiniGameMixedMonetizationRoiD3ByReporting',
-        'miniGameMixedMonetizationRoiD7' => 'getMiniGameMixedMonetizationRoiD7',
         'miniGameMixedMonetizationRoiD7ByReporting' => 'getMiniGameMixedMonetizationRoiD7ByReporting',
-        'miniGameMixedMonetizationRoiD14' => 'getMiniGameMixedMonetizationRoiD14',
         'miniGameMixedMonetizationRoiD14ByReporting' => 'getMiniGameMixedMonetizationRoiD14ByReporting',
         'adPayingUsersD1' => 'getAdPayingUsersD1',
         'adPayingCostD1' => 'getAdPayingCostD1',
         'adPurArpuCostD1' => 'getAdPurArpuCostD1',
         'adMonetizationPenetrationRatD1' => 'getAdMonetizationPenetrationRatD1',
-        'miniGameAdMonetizationAmountD3' => 'getMiniGameAdMonetizationAmountD3',
-        'miniGameAdMonetizationAmountD7' => 'getMiniGameAdMonetizationAmountD7',
-        'miniGameAdMonetizationAmountD14' => 'getMiniGameAdMonetizationAmountD14',
         'miniGamePayingArpuD1' => 'getMiniGamePayingArpuD1',
         'miniGamePayD1PlaRate' => 'getMiniGamePayD1PlaRate',
         'activeD5ClickFirstPayRate' => 'getActiveD5ClickFirstPayRate',
@@ -3932,25 +3947,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'activeD7PayCost' => 'getActiveD7PayCost',
         'miniGameFirstDayPayingPlaRoi' => 'getMiniGameFirstDayPayingPlaRoi',
         'miniGameFirstPayPlaCost' => 'getMiniGameFirstPayPlaCost',
-        'miniGamePayD3Roi' => 'getMiniGamePayD3Roi',
-        'miniGamePayD7Roi' => 'getMiniGamePayD7Roi',
-        'miniGamePayD14Roi' => 'getMiniGamePayD14Roi',
-        'miniGamePayD30Roi' => 'getMiniGamePayD30Roi',
         'miniGamePayD3PlaRoi' => 'getMiniGamePayD3PlaRoi',
         'miniGamePayD7PlaRoi' => 'getMiniGamePayD7PlaRoi',
         'miniGamePayD14PlaRoi' => 'getMiniGamePayD14PlaRoi',
         'miniGamePayD30PlaRoi' => 'getMiniGamePayD30PlaRoi',
-        'minigame1dPayCount' => 'getMinigame1dPayCount',
-        'minigame3dIncomeUv' => 'getMinigame3dIncomeUv',
-        'minigame3dIncomeCount' => 'getMinigame3dIncomeCount',
-        'minigame7dIncomeUv' => 'getMinigame7dIncomeUv',
-        'minigame7dIncomeCount' => 'getMinigame7dIncomeCount',
-        'minigame3dIncomeRoi' => 'getMinigame3dIncomeRoi',
-        'minigame7dIncomeRoi' => 'getMinigame7dIncomeRoi',
-        'minigame24hPayUv' => 'getMinigame24hPayUv',
-        'minigame24hPayAmount' => 'getMinigame24hPayAmount',
-        'minigame24hPayRoi' => 'getMinigame24hPayRoi',
-        'minigame24hPayArpu' => 'getMinigame24hPayArpu',
         'campaignId' => 'getCampaignId',
         'campaignName' => 'getCampaignName',
         'adgroupId' => 'getAdgroupId',
@@ -4320,6 +4320,14 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['addDesktopPv'] = isset($data['addDesktopPv']) ? $data['addDesktopPv'] : null;
         $this->container['addDesktopCost'] = isset($data['addDesktopCost']) ? $data['addDesktopCost'] : null;
         $this->container['firstPayCount'] = isset($data['firstPayCount']) ? $data['firstPayCount'] : null;
+        $this->container['miniGamePayD3Uv'] = isset($data['miniGamePayD3Uv']) ? $data['miniGamePayD3Uv'] : null;
+        $this->container['miniGamePayD7Uv'] = isset($data['miniGamePayD7Uv']) ? $data['miniGamePayD7Uv'] : null;
+        $this->container['miniGamePayD14Uv'] = isset($data['miniGamePayD14Uv']) ? $data['miniGamePayD14Uv'] : null;
+        $this->container['miniGamePayD30Uv'] = isset($data['miniGamePayD30Uv']) ? $data['miniGamePayD30Uv'] : null;
+        $this->container['miniGameD3PayCount'] = isset($data['miniGameD3PayCount']) ? $data['miniGameD3PayCount'] : null;
+        $this->container['miniGameD7PayCount'] = isset($data['miniGameD7PayCount']) ? $data['miniGameD7PayCount'] : null;
+        $this->container['miniGameD14PayCount'] = isset($data['miniGameD14PayCount']) ? $data['miniGameD14PayCount'] : null;
+        $this->container['miniGameD30PayCount'] = isset($data['miniGameD30PayCount']) ? $data['miniGameD30PayCount'] : null;
         $this->container['wechatLocalPayCount'] = isset($data['wechatLocalPayCount']) ? $data['wechatLocalPayCount'] : null;
         $this->container['wechatLocalPayuserCount'] = isset($data['wechatLocalPayuserCount']) ? $data['wechatLocalPayuserCount'] : null;
         $this->container['wechatLocalPayAmount'] = isset($data['wechatLocalPayAmount']) ? $data['wechatLocalPayAmount'] : null;
@@ -4456,9 +4464,21 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGameRegisterCost'] = isset($data['miniGameRegisterCost']) ? $data['miniGameRegisterCost'] : null;
         $this->container['miniGameRegisterRate'] = isset($data['miniGameRegisterRate']) ? $data['miniGameRegisterRate'] : null;
         $this->container['miniGameAdMonetizationUsers'] = isset($data['miniGameAdMonetizationUsers']) ? $data['miniGameAdMonetizationUsers'] : null;
+        $this->container['miniGameFirstDayAdMonetizationUsers'] = isset($data['miniGameFirstDayAdMonetizationUsers']) ? $data['miniGameFirstDayAdMonetizationUsers'] : null;
+        $this->container['miniGameFirstDayAdMonetizationAmount'] = isset($data['miniGameFirstDayAdMonetizationAmount']) ? $data['miniGameFirstDayAdMonetizationAmount'] : null;
+        $this->container['miniGameFirstDayAdPayingCost'] = isset($data['miniGameFirstDayAdPayingCost']) ? $data['miniGameFirstDayAdPayingCost'] : null;
+        $this->container['miniGameIncomeRoi1'] = isset($data['miniGameIncomeRoi1']) ? $data['miniGameIncomeRoi1'] : null;
+        $this->container['miniGameFirstDayAdPayingArpu'] = isset($data['miniGameFirstDayAdPayingArpu']) ? $data['miniGameFirstDayAdPayingArpu'] : null;
         $this->container['miniGamePayingCount'] = isset($data['miniGamePayingCount']) ? $data['miniGamePayingCount'] : null;
         $this->container['miniGamePayingAmount'] = isset($data['miniGamePayingAmount']) ? $data['miniGamePayingAmount'] : null;
+        $this->container['miniGamePayingUsersD1'] = isset($data['miniGamePayingUsersD1']) ? $data['miniGamePayingUsersD1'] : null;
+        $this->container['miniGamePayingAmountD1'] = isset($data['miniGamePayingAmountD1']) ? $data['miniGamePayingAmountD1'] : null;
+        $this->container['miniGamePayingAmountD3'] = isset($data['miniGamePayingAmountD3']) ? $data['miniGamePayingAmountD3'] : null;
+        $this->container['miniGamePayingAmountD7'] = isset($data['miniGamePayingAmountD7']) ? $data['miniGamePayingAmountD7'] : null;
+        $this->container['miniGamePayingAmountD14'] = isset($data['miniGamePayingAmountD14']) ? $data['miniGamePayingAmountD14'] : null;
+        $this->container['miniGamePayingAmountD30'] = isset($data['miniGamePayingAmountD30']) ? $data['miniGamePayingAmountD30'] : null;
         $this->container['miniGameFirstPayingUsers'] = isset($data['miniGameFirstPayingUsers']) ? $data['miniGameFirstPayingUsers'] : null;
+        $this->container['miniGameFirstDayPayingRoi'] = isset($data['miniGameFirstDayPayingRoi']) ? $data['miniGameFirstDayPayingRoi'] : null;
         $this->container['miniGameCreateRoleUsers'] = isset($data['miniGameCreateRoleUsers']) ? $data['miniGameCreateRoleUsers'] : null;
         $this->container['miniGameCreateRoleCost'] = isset($data['miniGameCreateRoleCost']) ? $data['miniGameCreateRoleCost'] : null;
         $this->container['miniGameRetentionD1'] = isset($data['miniGameRetentionD1']) ? $data['miniGameRetentionD1'] : null;
@@ -4491,6 +4511,13 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['keyBehaviorConversionsCost'] = isset($data['keyBehaviorConversionsCost']) ? $data['keyBehaviorConversionsCost'] : null;
         $this->container['keyBehaviorConversionsRate'] = isset($data['keyBehaviorConversionsRate']) ? $data['keyBehaviorConversionsRate'] : null;
         $this->container['firstDayOrderRoi'] = isset($data['firstDayOrderRoi']) ? $data['firstDayOrderRoi'] : null;
+        $this->container['miniGameMixedMonetizationRoiD1'] = isset($data['miniGameMixedMonetizationRoiD1']) ? $data['miniGameMixedMonetizationRoiD1'] : null;
+        $this->container['miniGameMixedMonetizationRoiD3'] = isset($data['miniGameMixedMonetizationRoiD3']) ? $data['miniGameMixedMonetizationRoiD3'] : null;
+        $this->container['miniGameMixedMonetizationRoiD7'] = isset($data['miniGameMixedMonetizationRoiD7']) ? $data['miniGameMixedMonetizationRoiD7'] : null;
+        $this->container['miniGameMixedMonetizationRoiD14'] = isset($data['miniGameMixedMonetizationRoiD14']) ? $data['miniGameMixedMonetizationRoiD14'] : null;
+        $this->container['miniGameAdMonetizationAmountD3'] = isset($data['miniGameAdMonetizationAmountD3']) ? $data['miniGameAdMonetizationAmountD3'] : null;
+        $this->container['miniGameAdMonetizationAmountD7'] = isset($data['miniGameAdMonetizationAmountD7']) ? $data['miniGameAdMonetizationAmountD7'] : null;
+        $this->container['miniGameAdMonetizationAmountD14'] = isset($data['miniGameAdMonetizationAmountD14']) ? $data['miniGameAdMonetizationAmountD14'] : null;
         $this->container['miniGameAdMonetizationCost'] = isset($data['miniGameAdMonetizationCost']) ? $data['miniGameAdMonetizationCost'] : null;
         $this->container['miniGameAdMonetizationRoi'] = isset($data['miniGameAdMonetizationRoi']) ? $data['miniGameAdMonetizationRoi'] : null;
         $this->container['miniGameAdMonetizationArpu'] = isset($data['miniGameAdMonetizationArpu']) ? $data['miniGameAdMonetizationArpu'] : null;
@@ -4536,6 +4563,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGameBfPurchaseD1Arpu'] = isset($data['miniGameBfPurchaseD1Arpu']) ? $data['miniGameBfPurchaseD1Arpu'] : null;
         $this->container['miniGameCreateRoleRate'] = isset($data['miniGameCreateRoleRate']) ? $data['miniGameCreateRoleRate'] : null;
         $this->container['consultUvCount'] = isset($data['consultUvCount']) ? $data['consultUvCount'] : null;
+        $this->container['miniGamePayD3Roi'] = isset($data['miniGamePayD3Roi']) ? $data['miniGamePayD3Roi'] : null;
+        $this->container['miniGamePayD7Roi'] = isset($data['miniGamePayD7Roi']) ? $data['miniGamePayD7Roi'] : null;
+        $this->container['miniGamePayD14Roi'] = isset($data['miniGamePayD14Roi']) ? $data['miniGamePayD14Roi'] : null;
+        $this->container['miniGamePayD30Roi'] = isset($data['miniGamePayD30Roi']) ? $data['miniGamePayD30Roi'] : null;
         $this->container['videoFollowCount'] = isset($data['videoFollowCount']) ? $data['videoFollowCount'] : null;
         $this->container['videoHeartCount'] = isset($data['videoHeartCount']) ? $data['videoHeartCount'] : null;
         $this->container['videoCommentCount'] = isset($data['videoCommentCount']) ? $data['videoCommentCount'] : null;
@@ -4611,6 +4642,17 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['stayPay7dPv'] = isset($data['stayPay7dPv']) ? $data['stayPay7dPv'] : null;
         $this->container['stayPay15dPv'] = isset($data['stayPay15dPv']) ? $data['stayPay15dPv'] : null;
         $this->container['stayPay30dPv'] = isset($data['stayPay30dPv']) ? $data['stayPay30dPv'] : null;
+        $this->container['minigame1dPayCount'] = isset($data['minigame1dPayCount']) ? $data['minigame1dPayCount'] : null;
+        $this->container['minigame3dIncomeUv'] = isset($data['minigame3dIncomeUv']) ? $data['minigame3dIncomeUv'] : null;
+        $this->container['minigame3dIncomeCount'] = isset($data['minigame3dIncomeCount']) ? $data['minigame3dIncomeCount'] : null;
+        $this->container['minigame7dIncomeUv'] = isset($data['minigame7dIncomeUv']) ? $data['minigame7dIncomeUv'] : null;
+        $this->container['minigame7dIncomeCount'] = isset($data['minigame7dIncomeCount']) ? $data['minigame7dIncomeCount'] : null;
+        $this->container['minigame3dIncomeRoi'] = isset($data['minigame3dIncomeRoi']) ? $data['minigame3dIncomeRoi'] : null;
+        $this->container['minigame7dIncomeRoi'] = isset($data['minigame7dIncomeRoi']) ? $data['minigame7dIncomeRoi'] : null;
+        $this->container['minigame24hPayUv'] = isset($data['minigame24hPayUv']) ? $data['minigame24hPayUv'] : null;
+        $this->container['minigame24hPayAmount'] = isset($data['minigame24hPayAmount']) ? $data['minigame24hPayAmount'] : null;
+        $this->container['minigame24hPayRoi'] = isset($data['minigame24hPayRoi']) ? $data['minigame24hPayRoi'] : null;
+        $this->container['minigame24hPayArpu'] = isset($data['minigame24hPayArpu']) ? $data['minigame24hPayArpu'] : null;
         $this->container['liveStreamCrtClickCnt'] = isset($data['liveStreamCrtClickCnt']) ? $data['liveStreamCrtClickCnt'] : null;
         $this->container['liveStreamAvgTime'] = isset($data['liveStreamAvgTime']) ? $data['liveStreamAvgTime'] : null;
         $this->container['liveStreamCommodityShopBagClkPv'] = isset($data['liveStreamCommodityShopBagClkPv']) ? $data['liveStreamCommodityShopBagClkPv'] : null;
@@ -4718,18 +4760,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGamePayingUsersPlaD1'] = isset($data['miniGamePayingUsersPlaD1']) ? $data['miniGamePayingUsersPlaD1'] : null;
         $this->container['miniGameFirstPayPlaAmount'] = isset($data['miniGameFirstPayPlaAmount']) ? $data['miniGameFirstPayPlaAmount'] : null;
         $this->container['miniGamePayD1PlaUv'] = isset($data['miniGamePayD1PlaUv']) ? $data['miniGamePayD1PlaUv'] : null;
-        $this->container['miniGamePayD3Uv'] = isset($data['miniGamePayD3Uv']) ? $data['miniGamePayD3Uv'] : null;
-        $this->container['miniGamePayD7Uv'] = isset($data['miniGamePayD7Uv']) ? $data['miniGamePayD7Uv'] : null;
-        $this->container['miniGamePayD14Uv'] = isset($data['miniGamePayD14Uv']) ? $data['miniGamePayD14Uv'] : null;
-        $this->container['miniGamePayD30Uv'] = isset($data['miniGamePayD30Uv']) ? $data['miniGamePayD30Uv'] : null;
         $this->container['miniGamePayD3PlaUv'] = isset($data['miniGamePayD3PlaUv']) ? $data['miniGamePayD3PlaUv'] : null;
         $this->container['miniGamePayD7PlaUv'] = isset($data['miniGamePayD7PlaUv']) ? $data['miniGamePayD7PlaUv'] : null;
         $this->container['miniGamePayD14PlaUv'] = isset($data['miniGamePayD14PlaUv']) ? $data['miniGamePayD14PlaUv'] : null;
         $this->container['miniGamePayD30PlaUv'] = isset($data['miniGamePayD30PlaUv']) ? $data['miniGamePayD30PlaUv'] : null;
-        $this->container['miniGameD3PayCount'] = isset($data['miniGameD3PayCount']) ? $data['miniGameD3PayCount'] : null;
-        $this->container['miniGameD7PayCount'] = isset($data['miniGameD7PayCount']) ? $data['miniGameD7PayCount'] : null;
-        $this->container['miniGameD14PayCount'] = isset($data['miniGameD14PayCount']) ? $data['miniGameD14PayCount'] : null;
-        $this->container['miniGameD30PayCount'] = isset($data['miniGameD30PayCount']) ? $data['miniGameD30PayCount'] : null;
         $this->container['miniGameD3PayPlaCount'] = isset($data['miniGameD3PayPlaCount']) ? $data['miniGameD3PayPlaCount'] : null;
         $this->container['miniGameD7PayPlaCount'] = isset($data['miniGameD7PayPlaCount']) ? $data['miniGameD7PayPlaCount'] : null;
         $this->container['miniGameD14PayPlaCount'] = isset($data['miniGameD14PayPlaCount']) ? $data['miniGameD14PayPlaCount'] : null;
@@ -4737,18 +4771,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['roiActivatedD30'] = isset($data['roiActivatedD30']) ? $data['roiActivatedD30'] : null;
         $this->container['firstDayFirstPayRate'] = isset($data['firstDayFirstPayRate']) ? $data['firstDayFirstPayRate'] : null;
         $this->container['activeD5FirstPayCost'] = isset($data['activeD5FirstPayCost']) ? $data['activeD5FirstPayCost'] : null;
-        $this->container['miniGameFirstDayAdMonetizationUsers'] = isset($data['miniGameFirstDayAdMonetizationUsers']) ? $data['miniGameFirstDayAdMonetizationUsers'] : null;
-        $this->container['miniGameFirstDayAdMonetizationAmount'] = isset($data['miniGameFirstDayAdMonetizationAmount']) ? $data['miniGameFirstDayAdMonetizationAmount'] : null;
-        $this->container['miniGameFirstDayAdPayingCost'] = isset($data['miniGameFirstDayAdPayingCost']) ? $data['miniGameFirstDayAdPayingCost'] : null;
-        $this->container['miniGameIncomeRoi1'] = isset($data['miniGameIncomeRoi1']) ? $data['miniGameIncomeRoi1'] : null;
-        $this->container['miniGameFirstDayAdPayingArpu'] = isset($data['miniGameFirstDayAdPayingArpu']) ? $data['miniGameFirstDayAdPayingArpu'] : null;
-        $this->container['miniGamePayingUsersD1'] = isset($data['miniGamePayingUsersD1']) ? $data['miniGamePayingUsersD1'] : null;
-        $this->container['miniGamePayingAmountD1'] = isset($data['miniGamePayingAmountD1']) ? $data['miniGamePayingAmountD1'] : null;
-        $this->container['miniGamePayingAmountD3'] = isset($data['miniGamePayingAmountD3']) ? $data['miniGamePayingAmountD3'] : null;
-        $this->container['miniGamePayingAmountD7'] = isset($data['miniGamePayingAmountD7']) ? $data['miniGamePayingAmountD7'] : null;
-        $this->container['miniGamePayingAmountD14'] = isset($data['miniGamePayingAmountD14']) ? $data['miniGamePayingAmountD14'] : null;
-        $this->container['miniGamePayingAmountD30'] = isset($data['miniGamePayingAmountD30']) ? $data['miniGamePayingAmountD30'] : null;
-        $this->container['miniGameFirstDayPayingRoi'] = isset($data['miniGameFirstDayPayingRoi']) ? $data['miniGameFirstDayPayingRoi'] : null;
         $this->container['miniGamePayingAmountD1ByUpload'] = isset($data['miniGamePayingAmountD1ByUpload']) ? $data['miniGamePayingAmountD1ByUpload'] : null;
         $this->container['miniGamePayingAmountD3ByUpload'] = isset($data['miniGamePayingAmountD3ByUpload']) ? $data['miniGamePayingAmountD3ByUpload'] : null;
         $this->container['miniGamePayingAmountD7ByUpload'] = isset($data['miniGamePayingAmountD7ByUpload']) ? $data['miniGamePayingAmountD7ByUpload'] : null;
@@ -4758,21 +4780,14 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['mixedMonetizationRoiD3'] = isset($data['mixedMonetizationRoiD3']) ? $data['mixedMonetizationRoiD3'] : null;
         $this->container['mixedMonetizationRoiD7'] = isset($data['mixedMonetizationRoiD7']) ? $data['mixedMonetizationRoiD7'] : null;
         $this->container['mixedMonetizationRoiD14'] = isset($data['mixedMonetizationRoiD14']) ? $data['mixedMonetizationRoiD14'] : null;
-        $this->container['miniGameMixedMonetizationRoiD1'] = isset($data['miniGameMixedMonetizationRoiD1']) ? $data['miniGameMixedMonetizationRoiD1'] : null;
         $this->container['miniGameMixedMonetizationRoiD1ByReporting'] = isset($data['miniGameMixedMonetizationRoiD1ByReporting']) ? $data['miniGameMixedMonetizationRoiD1ByReporting'] : null;
-        $this->container['miniGameMixedMonetizationRoiD3'] = isset($data['miniGameMixedMonetizationRoiD3']) ? $data['miniGameMixedMonetizationRoiD3'] : null;
         $this->container['miniGameMixedMonetizationRoiD3ByReporting'] = isset($data['miniGameMixedMonetizationRoiD3ByReporting']) ? $data['miniGameMixedMonetizationRoiD3ByReporting'] : null;
-        $this->container['miniGameMixedMonetizationRoiD7'] = isset($data['miniGameMixedMonetizationRoiD7']) ? $data['miniGameMixedMonetizationRoiD7'] : null;
         $this->container['miniGameMixedMonetizationRoiD7ByReporting'] = isset($data['miniGameMixedMonetizationRoiD7ByReporting']) ? $data['miniGameMixedMonetizationRoiD7ByReporting'] : null;
-        $this->container['miniGameMixedMonetizationRoiD14'] = isset($data['miniGameMixedMonetizationRoiD14']) ? $data['miniGameMixedMonetizationRoiD14'] : null;
         $this->container['miniGameMixedMonetizationRoiD14ByReporting'] = isset($data['miniGameMixedMonetizationRoiD14ByReporting']) ? $data['miniGameMixedMonetizationRoiD14ByReporting'] : null;
         $this->container['adPayingUsersD1'] = isset($data['adPayingUsersD1']) ? $data['adPayingUsersD1'] : null;
         $this->container['adPayingCostD1'] = isset($data['adPayingCostD1']) ? $data['adPayingCostD1'] : null;
         $this->container['adPurArpuCostD1'] = isset($data['adPurArpuCostD1']) ? $data['adPurArpuCostD1'] : null;
         $this->container['adMonetizationPenetrationRatD1'] = isset($data['adMonetizationPenetrationRatD1']) ? $data['adMonetizationPenetrationRatD1'] : null;
-        $this->container['miniGameAdMonetizationAmountD3'] = isset($data['miniGameAdMonetizationAmountD3']) ? $data['miniGameAdMonetizationAmountD3'] : null;
-        $this->container['miniGameAdMonetizationAmountD7'] = isset($data['miniGameAdMonetizationAmountD7']) ? $data['miniGameAdMonetizationAmountD7'] : null;
-        $this->container['miniGameAdMonetizationAmountD14'] = isset($data['miniGameAdMonetizationAmountD14']) ? $data['miniGameAdMonetizationAmountD14'] : null;
         $this->container['miniGamePayingArpuD1'] = isset($data['miniGamePayingArpuD1']) ? $data['miniGamePayingArpuD1'] : null;
         $this->container['miniGamePayD1PlaRate'] = isset($data['miniGamePayD1PlaRate']) ? $data['miniGamePayD1PlaRate'] : null;
         $this->container['activeD5ClickFirstPayRate'] = isset($data['activeD5ClickFirstPayRate']) ? $data['activeD5ClickFirstPayRate'] : null;
@@ -4785,25 +4800,10 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['activeD7PayCost'] = isset($data['activeD7PayCost']) ? $data['activeD7PayCost'] : null;
         $this->container['miniGameFirstDayPayingPlaRoi'] = isset($data['miniGameFirstDayPayingPlaRoi']) ? $data['miniGameFirstDayPayingPlaRoi'] : null;
         $this->container['miniGameFirstPayPlaCost'] = isset($data['miniGameFirstPayPlaCost']) ? $data['miniGameFirstPayPlaCost'] : null;
-        $this->container['miniGamePayD3Roi'] = isset($data['miniGamePayD3Roi']) ? $data['miniGamePayD3Roi'] : null;
-        $this->container['miniGamePayD7Roi'] = isset($data['miniGamePayD7Roi']) ? $data['miniGamePayD7Roi'] : null;
-        $this->container['miniGamePayD14Roi'] = isset($data['miniGamePayD14Roi']) ? $data['miniGamePayD14Roi'] : null;
-        $this->container['miniGamePayD30Roi'] = isset($data['miniGamePayD30Roi']) ? $data['miniGamePayD30Roi'] : null;
         $this->container['miniGamePayD3PlaRoi'] = isset($data['miniGamePayD3PlaRoi']) ? $data['miniGamePayD3PlaRoi'] : null;
         $this->container['miniGamePayD7PlaRoi'] = isset($data['miniGamePayD7PlaRoi']) ? $data['miniGamePayD7PlaRoi'] : null;
         $this->container['miniGamePayD14PlaRoi'] = isset($data['miniGamePayD14PlaRoi']) ? $data['miniGamePayD14PlaRoi'] : null;
         $this->container['miniGamePayD30PlaRoi'] = isset($data['miniGamePayD30PlaRoi']) ? $data['miniGamePayD30PlaRoi'] : null;
-        $this->container['minigame1dPayCount'] = isset($data['minigame1dPayCount']) ? $data['minigame1dPayCount'] : null;
-        $this->container['minigame3dIncomeUv'] = isset($data['minigame3dIncomeUv']) ? $data['minigame3dIncomeUv'] : null;
-        $this->container['minigame3dIncomeCount'] = isset($data['minigame3dIncomeCount']) ? $data['minigame3dIncomeCount'] : null;
-        $this->container['minigame7dIncomeUv'] = isset($data['minigame7dIncomeUv']) ? $data['minigame7dIncomeUv'] : null;
-        $this->container['minigame7dIncomeCount'] = isset($data['minigame7dIncomeCount']) ? $data['minigame7dIncomeCount'] : null;
-        $this->container['minigame3dIncomeRoi'] = isset($data['minigame3dIncomeRoi']) ? $data['minigame3dIncomeRoi'] : null;
-        $this->container['minigame7dIncomeRoi'] = isset($data['minigame7dIncomeRoi']) ? $data['minigame7dIncomeRoi'] : null;
-        $this->container['minigame24hPayUv'] = isset($data['minigame24hPayUv']) ? $data['minigame24hPayUv'] : null;
-        $this->container['minigame24hPayAmount'] = isset($data['minigame24hPayAmount']) ? $data['minigame24hPayAmount'] : null;
-        $this->container['minigame24hPayRoi'] = isset($data['minigame24hPayRoi']) ? $data['minigame24hPayRoi'] : null;
-        $this->container['minigame24hPayArpu'] = isset($data['minigame24hPayArpu']) ? $data['minigame24hPayArpu'] : null;
         $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
         $this->container['campaignName'] = isset($data['campaignName']) ? $data['campaignName'] : null;
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
@@ -9554,6 +9554,198 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets miniGamePayD3Uv
+     *
+     * @return int|mixed
+     */
+    public function getMiniGamePayD3Uv()
+    {
+        return $this->container['miniGamePayD3Uv'];
+    }
+
+    /**
+     * Sets miniGamePayD3Uv
+     *
+     * @param int|mixed $miniGamePayD3Uv miniGamePayD3Uv
+     *
+     * @return $this
+     */
+    public function setMiniGamePayD3Uv($miniGamePayD3Uv)
+    {
+        $this->container['miniGamePayD3Uv'] = $miniGamePayD3Uv;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayD7Uv
+     *
+     * @return int|mixed
+     */
+    public function getMiniGamePayD7Uv()
+    {
+        return $this->container['miniGamePayD7Uv'];
+    }
+
+    /**
+     * Sets miniGamePayD7Uv
+     *
+     * @param int|mixed $miniGamePayD7Uv miniGamePayD7Uv
+     *
+     * @return $this
+     */
+    public function setMiniGamePayD7Uv($miniGamePayD7Uv)
+    {
+        $this->container['miniGamePayD7Uv'] = $miniGamePayD7Uv;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayD14Uv
+     *
+     * @return int|mixed
+     */
+    public function getMiniGamePayD14Uv()
+    {
+        return $this->container['miniGamePayD14Uv'];
+    }
+
+    /**
+     * Sets miniGamePayD14Uv
+     *
+     * @param int|mixed $miniGamePayD14Uv miniGamePayD14Uv
+     *
+     * @return $this
+     */
+    public function setMiniGamePayD14Uv($miniGamePayD14Uv)
+    {
+        $this->container['miniGamePayD14Uv'] = $miniGamePayD14Uv;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayD30Uv
+     *
+     * @return int|mixed
+     */
+    public function getMiniGamePayD30Uv()
+    {
+        return $this->container['miniGamePayD30Uv'];
+    }
+
+    /**
+     * Sets miniGamePayD30Uv
+     *
+     * @param int|mixed $miniGamePayD30Uv miniGamePayD30Uv
+     *
+     * @return $this
+     */
+    public function setMiniGamePayD30Uv($miniGamePayD30Uv)
+    {
+        $this->container['miniGamePayD30Uv'] = $miniGamePayD30Uv;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameD3PayCount
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameD3PayCount()
+    {
+        return $this->container['miniGameD3PayCount'];
+    }
+
+    /**
+     * Sets miniGameD3PayCount
+     *
+     * @param int|mixed $miniGameD3PayCount miniGameD3PayCount
+     *
+     * @return $this
+     */
+    public function setMiniGameD3PayCount($miniGameD3PayCount)
+    {
+        $this->container['miniGameD3PayCount'] = $miniGameD3PayCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameD7PayCount
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameD7PayCount()
+    {
+        return $this->container['miniGameD7PayCount'];
+    }
+
+    /**
+     * Sets miniGameD7PayCount
+     *
+     * @param int|mixed $miniGameD7PayCount miniGameD7PayCount
+     *
+     * @return $this
+     */
+    public function setMiniGameD7PayCount($miniGameD7PayCount)
+    {
+        $this->container['miniGameD7PayCount'] = $miniGameD7PayCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameD14PayCount
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameD14PayCount()
+    {
+        return $this->container['miniGameD14PayCount'];
+    }
+
+    /**
+     * Sets miniGameD14PayCount
+     *
+     * @param int|mixed $miniGameD14PayCount miniGameD14PayCount
+     *
+     * @return $this
+     */
+    public function setMiniGameD14PayCount($miniGameD14PayCount)
+    {
+        $this->container['miniGameD14PayCount'] = $miniGameD14PayCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameD30PayCount
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameD30PayCount()
+    {
+        return $this->container['miniGameD30PayCount'];
+    }
+
+    /**
+     * Sets miniGameD30PayCount
+     *
+     * @param int|mixed $miniGameD30PayCount miniGameD30PayCount
+     *
+     * @return $this
+     */
+    public function setMiniGameD30PayCount($miniGameD30PayCount)
+    {
+        $this->container['miniGameD30PayCount'] = $miniGameD30PayCount;
+
+        return $this;
+    }
+
+    /**
      * Gets wechatLocalPayCount
      *
      * @return int|mixed
@@ -12818,6 +13010,126 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets miniGameFirstDayAdMonetizationUsers
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameFirstDayAdMonetizationUsers()
+    {
+        return $this->container['miniGameFirstDayAdMonetizationUsers'];
+    }
+
+    /**
+     * Sets miniGameFirstDayAdMonetizationUsers
+     *
+     * @param int|mixed $miniGameFirstDayAdMonetizationUsers miniGameFirstDayAdMonetizationUsers
+     *
+     * @return $this
+     */
+    public function setMiniGameFirstDayAdMonetizationUsers($miniGameFirstDayAdMonetizationUsers)
+    {
+        $this->container['miniGameFirstDayAdMonetizationUsers'] = $miniGameFirstDayAdMonetizationUsers;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameFirstDayAdMonetizationAmount
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameFirstDayAdMonetizationAmount()
+    {
+        return $this->container['miniGameFirstDayAdMonetizationAmount'];
+    }
+
+    /**
+     * Sets miniGameFirstDayAdMonetizationAmount
+     *
+     * @param int|mixed $miniGameFirstDayAdMonetizationAmount miniGameFirstDayAdMonetizationAmount
+     *
+     * @return $this
+     */
+    public function setMiniGameFirstDayAdMonetizationAmount($miniGameFirstDayAdMonetizationAmount)
+    {
+        $this->container['miniGameFirstDayAdMonetizationAmount'] = $miniGameFirstDayAdMonetizationAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameFirstDayAdPayingCost
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameFirstDayAdPayingCost()
+    {
+        return $this->container['miniGameFirstDayAdPayingCost'];
+    }
+
+    /**
+     * Sets miniGameFirstDayAdPayingCost
+     *
+     * @param int|mixed $miniGameFirstDayAdPayingCost miniGameFirstDayAdPayingCost
+     *
+     * @return $this
+     */
+    public function setMiniGameFirstDayAdPayingCost($miniGameFirstDayAdPayingCost)
+    {
+        $this->container['miniGameFirstDayAdPayingCost'] = $miniGameFirstDayAdPayingCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameIncomeRoi1
+     *
+     * @return double|mixed
+     */
+    public function getMiniGameIncomeRoi1()
+    {
+        return $this->container['miniGameIncomeRoi1'];
+    }
+
+    /**
+     * Sets miniGameIncomeRoi1
+     *
+     * @param double|mixed $miniGameIncomeRoi1 miniGameIncomeRoi1
+     *
+     * @return $this
+     */
+    public function setMiniGameIncomeRoi1($miniGameIncomeRoi1)
+    {
+        $this->container['miniGameIncomeRoi1'] = $miniGameIncomeRoi1;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameFirstDayAdPayingArpu
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameFirstDayAdPayingArpu()
+    {
+        return $this->container['miniGameFirstDayAdPayingArpu'];
+    }
+
+    /**
+     * Sets miniGameFirstDayAdPayingArpu
+     *
+     * @param int|mixed $miniGameFirstDayAdPayingArpu miniGameFirstDayAdPayingArpu
+     *
+     * @return $this
+     */
+    public function setMiniGameFirstDayAdPayingArpu($miniGameFirstDayAdPayingArpu)
+    {
+        $this->container['miniGameFirstDayAdPayingArpu'] = $miniGameFirstDayAdPayingArpu;
+
+        return $this;
+    }
+
+    /**
      * Gets miniGamePayingCount
      *
      * @return int|mixed
@@ -12866,6 +13178,150 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets miniGamePayingUsersD1
+     *
+     * @return int|mixed
+     */
+    public function getMiniGamePayingUsersD1()
+    {
+        return $this->container['miniGamePayingUsersD1'];
+    }
+
+    /**
+     * Sets miniGamePayingUsersD1
+     *
+     * @param int|mixed $miniGamePayingUsersD1 miniGamePayingUsersD1
+     *
+     * @return $this
+     */
+    public function setMiniGamePayingUsersD1($miniGamePayingUsersD1)
+    {
+        $this->container['miniGamePayingUsersD1'] = $miniGamePayingUsersD1;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayingAmountD1
+     *
+     * @return int|mixed
+     */
+    public function getMiniGamePayingAmountD1()
+    {
+        return $this->container['miniGamePayingAmountD1'];
+    }
+
+    /**
+     * Sets miniGamePayingAmountD1
+     *
+     * @param int|mixed $miniGamePayingAmountD1 miniGamePayingAmountD1
+     *
+     * @return $this
+     */
+    public function setMiniGamePayingAmountD1($miniGamePayingAmountD1)
+    {
+        $this->container['miniGamePayingAmountD1'] = $miniGamePayingAmountD1;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayingAmountD3
+     *
+     * @return int|mixed
+     */
+    public function getMiniGamePayingAmountD3()
+    {
+        return $this->container['miniGamePayingAmountD3'];
+    }
+
+    /**
+     * Sets miniGamePayingAmountD3
+     *
+     * @param int|mixed $miniGamePayingAmountD3 miniGamePayingAmountD3
+     *
+     * @return $this
+     */
+    public function setMiniGamePayingAmountD3($miniGamePayingAmountD3)
+    {
+        $this->container['miniGamePayingAmountD3'] = $miniGamePayingAmountD3;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayingAmountD7
+     *
+     * @return int|mixed
+     */
+    public function getMiniGamePayingAmountD7()
+    {
+        return $this->container['miniGamePayingAmountD7'];
+    }
+
+    /**
+     * Sets miniGamePayingAmountD7
+     *
+     * @param int|mixed $miniGamePayingAmountD7 miniGamePayingAmountD7
+     *
+     * @return $this
+     */
+    public function setMiniGamePayingAmountD7($miniGamePayingAmountD7)
+    {
+        $this->container['miniGamePayingAmountD7'] = $miniGamePayingAmountD7;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayingAmountD14
+     *
+     * @return int|mixed
+     */
+    public function getMiniGamePayingAmountD14()
+    {
+        return $this->container['miniGamePayingAmountD14'];
+    }
+
+    /**
+     * Sets miniGamePayingAmountD14
+     *
+     * @param int|mixed $miniGamePayingAmountD14 miniGamePayingAmountD14
+     *
+     * @return $this
+     */
+    public function setMiniGamePayingAmountD14($miniGamePayingAmountD14)
+    {
+        $this->container['miniGamePayingAmountD14'] = $miniGamePayingAmountD14;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayingAmountD30
+     *
+     * @return int|mixed
+     */
+    public function getMiniGamePayingAmountD30()
+    {
+        return $this->container['miniGamePayingAmountD30'];
+    }
+
+    /**
+     * Sets miniGamePayingAmountD30
+     *
+     * @param int|mixed $miniGamePayingAmountD30 miniGamePayingAmountD30
+     *
+     * @return $this
+     */
+    public function setMiniGamePayingAmountD30($miniGamePayingAmountD30)
+    {
+        $this->container['miniGamePayingAmountD30'] = $miniGamePayingAmountD30;
+
+        return $this;
+    }
+
+    /**
      * Gets miniGameFirstPayingUsers
      *
      * @return int|mixed
@@ -12885,6 +13341,30 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setMiniGameFirstPayingUsers($miniGameFirstPayingUsers)
     {
         $this->container['miniGameFirstPayingUsers'] = $miniGameFirstPayingUsers;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameFirstDayPayingRoi
+     *
+     * @return double|mixed
+     */
+    public function getMiniGameFirstDayPayingRoi()
+    {
+        return $this->container['miniGameFirstDayPayingRoi'];
+    }
+
+    /**
+     * Sets miniGameFirstDayPayingRoi
+     *
+     * @param double|mixed $miniGameFirstDayPayingRoi miniGameFirstDayPayingRoi
+     *
+     * @return $this
+     */
+    public function setMiniGameFirstDayPayingRoi($miniGameFirstDayPayingRoi)
+    {
+        $this->container['miniGameFirstDayPayingRoi'] = $miniGameFirstDayPayingRoi;
 
         return $this;
     }
@@ -13653,6 +14133,174 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setFirstDayOrderRoi($firstDayOrderRoi)
     {
         $this->container['firstDayOrderRoi'] = $firstDayOrderRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameMixedMonetizationRoiD1
+     *
+     * @return double|mixed
+     */
+    public function getMiniGameMixedMonetizationRoiD1()
+    {
+        return $this->container['miniGameMixedMonetizationRoiD1'];
+    }
+
+    /**
+     * Sets miniGameMixedMonetizationRoiD1
+     *
+     * @param double|mixed $miniGameMixedMonetizationRoiD1 miniGameMixedMonetizationRoiD1
+     *
+     * @return $this
+     */
+    public function setMiniGameMixedMonetizationRoiD1($miniGameMixedMonetizationRoiD1)
+    {
+        $this->container['miniGameMixedMonetizationRoiD1'] = $miniGameMixedMonetizationRoiD1;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameMixedMonetizationRoiD3
+     *
+     * @return double|mixed
+     */
+    public function getMiniGameMixedMonetizationRoiD3()
+    {
+        return $this->container['miniGameMixedMonetizationRoiD3'];
+    }
+
+    /**
+     * Sets miniGameMixedMonetizationRoiD3
+     *
+     * @param double|mixed $miniGameMixedMonetizationRoiD3 miniGameMixedMonetizationRoiD3
+     *
+     * @return $this
+     */
+    public function setMiniGameMixedMonetizationRoiD3($miniGameMixedMonetizationRoiD3)
+    {
+        $this->container['miniGameMixedMonetizationRoiD3'] = $miniGameMixedMonetizationRoiD3;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameMixedMonetizationRoiD7
+     *
+     * @return double|mixed
+     */
+    public function getMiniGameMixedMonetizationRoiD7()
+    {
+        return $this->container['miniGameMixedMonetizationRoiD7'];
+    }
+
+    /**
+     * Sets miniGameMixedMonetizationRoiD7
+     *
+     * @param double|mixed $miniGameMixedMonetizationRoiD7 miniGameMixedMonetizationRoiD7
+     *
+     * @return $this
+     */
+    public function setMiniGameMixedMonetizationRoiD7($miniGameMixedMonetizationRoiD7)
+    {
+        $this->container['miniGameMixedMonetizationRoiD7'] = $miniGameMixedMonetizationRoiD7;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameMixedMonetizationRoiD14
+     *
+     * @return double|mixed
+     */
+    public function getMiniGameMixedMonetizationRoiD14()
+    {
+        return $this->container['miniGameMixedMonetizationRoiD14'];
+    }
+
+    /**
+     * Sets miniGameMixedMonetizationRoiD14
+     *
+     * @param double|mixed $miniGameMixedMonetizationRoiD14 miniGameMixedMonetizationRoiD14
+     *
+     * @return $this
+     */
+    public function setMiniGameMixedMonetizationRoiD14($miniGameMixedMonetizationRoiD14)
+    {
+        $this->container['miniGameMixedMonetizationRoiD14'] = $miniGameMixedMonetizationRoiD14;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameAdMonetizationAmountD3
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameAdMonetizationAmountD3()
+    {
+        return $this->container['miniGameAdMonetizationAmountD3'];
+    }
+
+    /**
+     * Sets miniGameAdMonetizationAmountD3
+     *
+     * @param int|mixed $miniGameAdMonetizationAmountD3 miniGameAdMonetizationAmountD3
+     *
+     * @return $this
+     */
+    public function setMiniGameAdMonetizationAmountD3($miniGameAdMonetizationAmountD3)
+    {
+        $this->container['miniGameAdMonetizationAmountD3'] = $miniGameAdMonetizationAmountD3;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameAdMonetizationAmountD7
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameAdMonetizationAmountD7()
+    {
+        return $this->container['miniGameAdMonetizationAmountD7'];
+    }
+
+    /**
+     * Sets miniGameAdMonetizationAmountD7
+     *
+     * @param int|mixed $miniGameAdMonetizationAmountD7 miniGameAdMonetizationAmountD7
+     *
+     * @return $this
+     */
+    public function setMiniGameAdMonetizationAmountD7($miniGameAdMonetizationAmountD7)
+    {
+        $this->container['miniGameAdMonetizationAmountD7'] = $miniGameAdMonetizationAmountD7;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameAdMonetizationAmountD14
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameAdMonetizationAmountD14()
+    {
+        return $this->container['miniGameAdMonetizationAmountD14'];
+    }
+
+    /**
+     * Sets miniGameAdMonetizationAmountD14
+     *
+     * @param int|mixed $miniGameAdMonetizationAmountD14 miniGameAdMonetizationAmountD14
+     *
+     * @return $this
+     */
+    public function setMiniGameAdMonetizationAmountD14($miniGameAdMonetizationAmountD14)
+    {
+        $this->container['miniGameAdMonetizationAmountD14'] = $miniGameAdMonetizationAmountD14;
 
         return $this;
     }
@@ -14733,6 +15381,102 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setConsultUvCount($consultUvCount)
     {
         $this->container['consultUvCount'] = $consultUvCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayD3Roi
+     *
+     * @return double|mixed
+     */
+    public function getMiniGamePayD3Roi()
+    {
+        return $this->container['miniGamePayD3Roi'];
+    }
+
+    /**
+     * Sets miniGamePayD3Roi
+     *
+     * @param double|mixed $miniGamePayD3Roi miniGamePayD3Roi
+     *
+     * @return $this
+     */
+    public function setMiniGamePayD3Roi($miniGamePayD3Roi)
+    {
+        $this->container['miniGamePayD3Roi'] = $miniGamePayD3Roi;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayD7Roi
+     *
+     * @return double|mixed
+     */
+    public function getMiniGamePayD7Roi()
+    {
+        return $this->container['miniGamePayD7Roi'];
+    }
+
+    /**
+     * Sets miniGamePayD7Roi
+     *
+     * @param double|mixed $miniGamePayD7Roi miniGamePayD7Roi
+     *
+     * @return $this
+     */
+    public function setMiniGamePayD7Roi($miniGamePayD7Roi)
+    {
+        $this->container['miniGamePayD7Roi'] = $miniGamePayD7Roi;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayD14Roi
+     *
+     * @return double|mixed
+     */
+    public function getMiniGamePayD14Roi()
+    {
+        return $this->container['miniGamePayD14Roi'];
+    }
+
+    /**
+     * Sets miniGamePayD14Roi
+     *
+     * @param double|mixed $miniGamePayD14Roi miniGamePayD14Roi
+     *
+     * @return $this
+     */
+    public function setMiniGamePayD14Roi($miniGamePayD14Roi)
+    {
+        $this->container['miniGamePayD14Roi'] = $miniGamePayD14Roi;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGamePayD30Roi
+     *
+     * @return double|mixed
+     */
+    public function getMiniGamePayD30Roi()
+    {
+        return $this->container['miniGamePayD30Roi'];
+    }
+
+    /**
+     * Sets miniGamePayD30Roi
+     *
+     * @param double|mixed $miniGamePayD30Roi miniGamePayD30Roi
+     *
+     * @return $this
+     */
+    public function setMiniGamePayD30Roi($miniGamePayD30Roi)
+    {
+        $this->container['miniGamePayD30Roi'] = $miniGamePayD30Roi;
 
         return $this;
     }
@@ -16533,6 +17277,270 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setStayPay30dPv($stayPay30dPv)
     {
         $this->container['stayPay30dPv'] = $stayPay30dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets minigame1dPayCount
+     *
+     * @return int|mixed
+     */
+    public function getMinigame1dPayCount()
+    {
+        return $this->container['minigame1dPayCount'];
+    }
+
+    /**
+     * Sets minigame1dPayCount
+     *
+     * @param int|mixed $minigame1dPayCount minigame1dPayCount
+     *
+     * @return $this
+     */
+    public function setMinigame1dPayCount($minigame1dPayCount)
+    {
+        $this->container['minigame1dPayCount'] = $minigame1dPayCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets minigame3dIncomeUv
+     *
+     * @return int|mixed
+     */
+    public function getMinigame3dIncomeUv()
+    {
+        return $this->container['minigame3dIncomeUv'];
+    }
+
+    /**
+     * Sets minigame3dIncomeUv
+     *
+     * @param int|mixed $minigame3dIncomeUv minigame3dIncomeUv
+     *
+     * @return $this
+     */
+    public function setMinigame3dIncomeUv($minigame3dIncomeUv)
+    {
+        $this->container['minigame3dIncomeUv'] = $minigame3dIncomeUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets minigame3dIncomeCount
+     *
+     * @return int|mixed
+     */
+    public function getMinigame3dIncomeCount()
+    {
+        return $this->container['minigame3dIncomeCount'];
+    }
+
+    /**
+     * Sets minigame3dIncomeCount
+     *
+     * @param int|mixed $minigame3dIncomeCount minigame3dIncomeCount
+     *
+     * @return $this
+     */
+    public function setMinigame3dIncomeCount($minigame3dIncomeCount)
+    {
+        $this->container['minigame3dIncomeCount'] = $minigame3dIncomeCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets minigame7dIncomeUv
+     *
+     * @return int|mixed
+     */
+    public function getMinigame7dIncomeUv()
+    {
+        return $this->container['minigame7dIncomeUv'];
+    }
+
+    /**
+     * Sets minigame7dIncomeUv
+     *
+     * @param int|mixed $minigame7dIncomeUv minigame7dIncomeUv
+     *
+     * @return $this
+     */
+    public function setMinigame7dIncomeUv($minigame7dIncomeUv)
+    {
+        $this->container['minigame7dIncomeUv'] = $minigame7dIncomeUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets minigame7dIncomeCount
+     *
+     * @return int|mixed
+     */
+    public function getMinigame7dIncomeCount()
+    {
+        return $this->container['minigame7dIncomeCount'];
+    }
+
+    /**
+     * Sets minigame7dIncomeCount
+     *
+     * @param int|mixed $minigame7dIncomeCount minigame7dIncomeCount
+     *
+     * @return $this
+     */
+    public function setMinigame7dIncomeCount($minigame7dIncomeCount)
+    {
+        $this->container['minigame7dIncomeCount'] = $minigame7dIncomeCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets minigame3dIncomeRoi
+     *
+     * @return double|mixed
+     */
+    public function getMinigame3dIncomeRoi()
+    {
+        return $this->container['minigame3dIncomeRoi'];
+    }
+
+    /**
+     * Sets minigame3dIncomeRoi
+     *
+     * @param double|mixed $minigame3dIncomeRoi minigame3dIncomeRoi
+     *
+     * @return $this
+     */
+    public function setMinigame3dIncomeRoi($minigame3dIncomeRoi)
+    {
+        $this->container['minigame3dIncomeRoi'] = $minigame3dIncomeRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets minigame7dIncomeRoi
+     *
+     * @return double|mixed
+     */
+    public function getMinigame7dIncomeRoi()
+    {
+        return $this->container['minigame7dIncomeRoi'];
+    }
+
+    /**
+     * Sets minigame7dIncomeRoi
+     *
+     * @param double|mixed $minigame7dIncomeRoi minigame7dIncomeRoi
+     *
+     * @return $this
+     */
+    public function setMinigame7dIncomeRoi($minigame7dIncomeRoi)
+    {
+        $this->container['minigame7dIncomeRoi'] = $minigame7dIncomeRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets minigame24hPayUv
+     *
+     * @return int|mixed
+     */
+    public function getMinigame24hPayUv()
+    {
+        return $this->container['minigame24hPayUv'];
+    }
+
+    /**
+     * Sets minigame24hPayUv
+     *
+     * @param int|mixed $minigame24hPayUv minigame24hPayUv
+     *
+     * @return $this
+     */
+    public function setMinigame24hPayUv($minigame24hPayUv)
+    {
+        $this->container['minigame24hPayUv'] = $minigame24hPayUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets minigame24hPayAmount
+     *
+     * @return int|mixed
+     */
+    public function getMinigame24hPayAmount()
+    {
+        return $this->container['minigame24hPayAmount'];
+    }
+
+    /**
+     * Sets minigame24hPayAmount
+     *
+     * @param int|mixed $minigame24hPayAmount minigame24hPayAmount
+     *
+     * @return $this
+     */
+    public function setMinigame24hPayAmount($minigame24hPayAmount)
+    {
+        $this->container['minigame24hPayAmount'] = $minigame24hPayAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets minigame24hPayRoi
+     *
+     * @return double|mixed
+     */
+    public function getMinigame24hPayRoi()
+    {
+        return $this->container['minigame24hPayRoi'];
+    }
+
+    /**
+     * Sets minigame24hPayRoi
+     *
+     * @param double|mixed $minigame24hPayRoi minigame24hPayRoi
+     *
+     * @return $this
+     */
+    public function setMinigame24hPayRoi($minigame24hPayRoi)
+    {
+        $this->container['minigame24hPayRoi'] = $minigame24hPayRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets minigame24hPayArpu
+     *
+     * @return int|mixed
+     */
+    public function getMinigame24hPayArpu()
+    {
+        return $this->container['minigame24hPayArpu'];
+    }
+
+    /**
+     * Sets minigame24hPayArpu
+     *
+     * @param int|mixed $minigame24hPayArpu minigame24hPayArpu
+     *
+     * @return $this
+     */
+    public function setMinigame24hPayArpu($minigame24hPayArpu)
+    {
+        $this->container['minigame24hPayArpu'] = $minigame24hPayArpu;
 
         return $this;
     }
@@ -19106,102 +20114,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets miniGamePayD3Uv
-     *
-     * @return int|mixed
-     */
-    public function getMiniGamePayD3Uv()
-    {
-        return $this->container['miniGamePayD3Uv'];
-    }
-
-    /**
-     * Sets miniGamePayD3Uv
-     *
-     * @param int|mixed $miniGamePayD3Uv miniGamePayD3Uv
-     *
-     * @return $this
-     */
-    public function setMiniGamePayD3Uv($miniGamePayD3Uv)
-    {
-        $this->container['miniGamePayD3Uv'] = $miniGamePayD3Uv;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGamePayD7Uv
-     *
-     * @return int|mixed
-     */
-    public function getMiniGamePayD7Uv()
-    {
-        return $this->container['miniGamePayD7Uv'];
-    }
-
-    /**
-     * Sets miniGamePayD7Uv
-     *
-     * @param int|mixed $miniGamePayD7Uv miniGamePayD7Uv
-     *
-     * @return $this
-     */
-    public function setMiniGamePayD7Uv($miniGamePayD7Uv)
-    {
-        $this->container['miniGamePayD7Uv'] = $miniGamePayD7Uv;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGamePayD14Uv
-     *
-     * @return int|mixed
-     */
-    public function getMiniGamePayD14Uv()
-    {
-        return $this->container['miniGamePayD14Uv'];
-    }
-
-    /**
-     * Sets miniGamePayD14Uv
-     *
-     * @param int|mixed $miniGamePayD14Uv miniGamePayD14Uv
-     *
-     * @return $this
-     */
-    public function setMiniGamePayD14Uv($miniGamePayD14Uv)
-    {
-        $this->container['miniGamePayD14Uv'] = $miniGamePayD14Uv;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGamePayD30Uv
-     *
-     * @return int|mixed
-     */
-    public function getMiniGamePayD30Uv()
-    {
-        return $this->container['miniGamePayD30Uv'];
-    }
-
-    /**
-     * Sets miniGamePayD30Uv
-     *
-     * @param int|mixed $miniGamePayD30Uv miniGamePayD30Uv
-     *
-     * @return $this
-     */
-    public function setMiniGamePayD30Uv($miniGamePayD30Uv)
-    {
-        $this->container['miniGamePayD30Uv'] = $miniGamePayD30Uv;
-
-        return $this;
-    }
-
-    /**
      * Gets miniGamePayD3PlaUv
      *
      * @return int|mixed
@@ -19293,102 +20205,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setMiniGamePayD30PlaUv($miniGamePayD30PlaUv)
     {
         $this->container['miniGamePayD30PlaUv'] = $miniGamePayD30PlaUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameD3PayCount
-     *
-     * @return int|mixed
-     */
-    public function getMiniGameD3PayCount()
-    {
-        return $this->container['miniGameD3PayCount'];
-    }
-
-    /**
-     * Sets miniGameD3PayCount
-     *
-     * @param int|mixed $miniGameD3PayCount miniGameD3PayCount
-     *
-     * @return $this
-     */
-    public function setMiniGameD3PayCount($miniGameD3PayCount)
-    {
-        $this->container['miniGameD3PayCount'] = $miniGameD3PayCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameD7PayCount
-     *
-     * @return int|mixed
-     */
-    public function getMiniGameD7PayCount()
-    {
-        return $this->container['miniGameD7PayCount'];
-    }
-
-    /**
-     * Sets miniGameD7PayCount
-     *
-     * @param int|mixed $miniGameD7PayCount miniGameD7PayCount
-     *
-     * @return $this
-     */
-    public function setMiniGameD7PayCount($miniGameD7PayCount)
-    {
-        $this->container['miniGameD7PayCount'] = $miniGameD7PayCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameD14PayCount
-     *
-     * @return int|mixed
-     */
-    public function getMiniGameD14PayCount()
-    {
-        return $this->container['miniGameD14PayCount'];
-    }
-
-    /**
-     * Sets miniGameD14PayCount
-     *
-     * @param int|mixed $miniGameD14PayCount miniGameD14PayCount
-     *
-     * @return $this
-     */
-    public function setMiniGameD14PayCount($miniGameD14PayCount)
-    {
-        $this->container['miniGameD14PayCount'] = $miniGameD14PayCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameD30PayCount
-     *
-     * @return int|mixed
-     */
-    public function getMiniGameD30PayCount()
-    {
-        return $this->container['miniGameD30PayCount'];
-    }
-
-    /**
-     * Sets miniGameD30PayCount
-     *
-     * @param int|mixed $miniGameD30PayCount miniGameD30PayCount
-     *
-     * @return $this
-     */
-    public function setMiniGameD30PayCount($miniGameD30PayCount)
-    {
-        $this->container['miniGameD30PayCount'] = $miniGameD30PayCount;
 
         return $this;
     }
@@ -19557,294 +20373,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setActiveD5FirstPayCost($activeD5FirstPayCost)
     {
         $this->container['activeD5FirstPayCost'] = $activeD5FirstPayCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameFirstDayAdMonetizationUsers
-     *
-     * @return int|mixed
-     */
-    public function getMiniGameFirstDayAdMonetizationUsers()
-    {
-        return $this->container['miniGameFirstDayAdMonetizationUsers'];
-    }
-
-    /**
-     * Sets miniGameFirstDayAdMonetizationUsers
-     *
-     * @param int|mixed $miniGameFirstDayAdMonetizationUsers miniGameFirstDayAdMonetizationUsers
-     *
-     * @return $this
-     */
-    public function setMiniGameFirstDayAdMonetizationUsers($miniGameFirstDayAdMonetizationUsers)
-    {
-        $this->container['miniGameFirstDayAdMonetizationUsers'] = $miniGameFirstDayAdMonetizationUsers;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameFirstDayAdMonetizationAmount
-     *
-     * @return int|mixed
-     */
-    public function getMiniGameFirstDayAdMonetizationAmount()
-    {
-        return $this->container['miniGameFirstDayAdMonetizationAmount'];
-    }
-
-    /**
-     * Sets miniGameFirstDayAdMonetizationAmount
-     *
-     * @param int|mixed $miniGameFirstDayAdMonetizationAmount miniGameFirstDayAdMonetizationAmount
-     *
-     * @return $this
-     */
-    public function setMiniGameFirstDayAdMonetizationAmount($miniGameFirstDayAdMonetizationAmount)
-    {
-        $this->container['miniGameFirstDayAdMonetizationAmount'] = $miniGameFirstDayAdMonetizationAmount;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameFirstDayAdPayingCost
-     *
-     * @return int|mixed
-     */
-    public function getMiniGameFirstDayAdPayingCost()
-    {
-        return $this->container['miniGameFirstDayAdPayingCost'];
-    }
-
-    /**
-     * Sets miniGameFirstDayAdPayingCost
-     *
-     * @param int|mixed $miniGameFirstDayAdPayingCost miniGameFirstDayAdPayingCost
-     *
-     * @return $this
-     */
-    public function setMiniGameFirstDayAdPayingCost($miniGameFirstDayAdPayingCost)
-    {
-        $this->container['miniGameFirstDayAdPayingCost'] = $miniGameFirstDayAdPayingCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameIncomeRoi1
-     *
-     * @return double|mixed
-     */
-    public function getMiniGameIncomeRoi1()
-    {
-        return $this->container['miniGameIncomeRoi1'];
-    }
-
-    /**
-     * Sets miniGameIncomeRoi1
-     *
-     * @param double|mixed $miniGameIncomeRoi1 miniGameIncomeRoi1
-     *
-     * @return $this
-     */
-    public function setMiniGameIncomeRoi1($miniGameIncomeRoi1)
-    {
-        $this->container['miniGameIncomeRoi1'] = $miniGameIncomeRoi1;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameFirstDayAdPayingArpu
-     *
-     * @return int|mixed
-     */
-    public function getMiniGameFirstDayAdPayingArpu()
-    {
-        return $this->container['miniGameFirstDayAdPayingArpu'];
-    }
-
-    /**
-     * Sets miniGameFirstDayAdPayingArpu
-     *
-     * @param int|mixed $miniGameFirstDayAdPayingArpu miniGameFirstDayAdPayingArpu
-     *
-     * @return $this
-     */
-    public function setMiniGameFirstDayAdPayingArpu($miniGameFirstDayAdPayingArpu)
-    {
-        $this->container['miniGameFirstDayAdPayingArpu'] = $miniGameFirstDayAdPayingArpu;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGamePayingUsersD1
-     *
-     * @return int|mixed
-     */
-    public function getMiniGamePayingUsersD1()
-    {
-        return $this->container['miniGamePayingUsersD1'];
-    }
-
-    /**
-     * Sets miniGamePayingUsersD1
-     *
-     * @param int|mixed $miniGamePayingUsersD1 miniGamePayingUsersD1
-     *
-     * @return $this
-     */
-    public function setMiniGamePayingUsersD1($miniGamePayingUsersD1)
-    {
-        $this->container['miniGamePayingUsersD1'] = $miniGamePayingUsersD1;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGamePayingAmountD1
-     *
-     * @return int|mixed
-     */
-    public function getMiniGamePayingAmountD1()
-    {
-        return $this->container['miniGamePayingAmountD1'];
-    }
-
-    /**
-     * Sets miniGamePayingAmountD1
-     *
-     * @param int|mixed $miniGamePayingAmountD1 miniGamePayingAmountD1
-     *
-     * @return $this
-     */
-    public function setMiniGamePayingAmountD1($miniGamePayingAmountD1)
-    {
-        $this->container['miniGamePayingAmountD1'] = $miniGamePayingAmountD1;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGamePayingAmountD3
-     *
-     * @return int|mixed
-     */
-    public function getMiniGamePayingAmountD3()
-    {
-        return $this->container['miniGamePayingAmountD3'];
-    }
-
-    /**
-     * Sets miniGamePayingAmountD3
-     *
-     * @param int|mixed $miniGamePayingAmountD3 miniGamePayingAmountD3
-     *
-     * @return $this
-     */
-    public function setMiniGamePayingAmountD3($miniGamePayingAmountD3)
-    {
-        $this->container['miniGamePayingAmountD3'] = $miniGamePayingAmountD3;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGamePayingAmountD7
-     *
-     * @return int|mixed
-     */
-    public function getMiniGamePayingAmountD7()
-    {
-        return $this->container['miniGamePayingAmountD7'];
-    }
-
-    /**
-     * Sets miniGamePayingAmountD7
-     *
-     * @param int|mixed $miniGamePayingAmountD7 miniGamePayingAmountD7
-     *
-     * @return $this
-     */
-    public function setMiniGamePayingAmountD7($miniGamePayingAmountD7)
-    {
-        $this->container['miniGamePayingAmountD7'] = $miniGamePayingAmountD7;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGamePayingAmountD14
-     *
-     * @return int|mixed
-     */
-    public function getMiniGamePayingAmountD14()
-    {
-        return $this->container['miniGamePayingAmountD14'];
-    }
-
-    /**
-     * Sets miniGamePayingAmountD14
-     *
-     * @param int|mixed $miniGamePayingAmountD14 miniGamePayingAmountD14
-     *
-     * @return $this
-     */
-    public function setMiniGamePayingAmountD14($miniGamePayingAmountD14)
-    {
-        $this->container['miniGamePayingAmountD14'] = $miniGamePayingAmountD14;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGamePayingAmountD30
-     *
-     * @return int|mixed
-     */
-    public function getMiniGamePayingAmountD30()
-    {
-        return $this->container['miniGamePayingAmountD30'];
-    }
-
-    /**
-     * Sets miniGamePayingAmountD30
-     *
-     * @param int|mixed $miniGamePayingAmountD30 miniGamePayingAmountD30
-     *
-     * @return $this
-     */
-    public function setMiniGamePayingAmountD30($miniGamePayingAmountD30)
-    {
-        $this->container['miniGamePayingAmountD30'] = $miniGamePayingAmountD30;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameFirstDayPayingRoi
-     *
-     * @return double|mixed
-     */
-    public function getMiniGameFirstDayPayingRoi()
-    {
-        return $this->container['miniGameFirstDayPayingRoi'];
-    }
-
-    /**
-     * Sets miniGameFirstDayPayingRoi
-     *
-     * @param double|mixed $miniGameFirstDayPayingRoi miniGameFirstDayPayingRoi
-     *
-     * @return $this
-     */
-    public function setMiniGameFirstDayPayingRoi($miniGameFirstDayPayingRoi)
-    {
-        $this->container['miniGameFirstDayPayingRoi'] = $miniGameFirstDayPayingRoi;
 
         return $this;
     }
@@ -20066,30 +20594,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets miniGameMixedMonetizationRoiD1
-     *
-     * @return double|mixed
-     */
-    public function getMiniGameMixedMonetizationRoiD1()
-    {
-        return $this->container['miniGameMixedMonetizationRoiD1'];
-    }
-
-    /**
-     * Sets miniGameMixedMonetizationRoiD1
-     *
-     * @param double|mixed $miniGameMixedMonetizationRoiD1 miniGameMixedMonetizationRoiD1
-     *
-     * @return $this
-     */
-    public function setMiniGameMixedMonetizationRoiD1($miniGameMixedMonetizationRoiD1)
-    {
-        $this->container['miniGameMixedMonetizationRoiD1'] = $miniGameMixedMonetizationRoiD1;
-
-        return $this;
-    }
-
-    /**
      * Gets miniGameMixedMonetizationRoiD1ByReporting
      *
      * @return double|mixed
@@ -20109,30 +20613,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setMiniGameMixedMonetizationRoiD1ByReporting($miniGameMixedMonetizationRoiD1ByReporting)
     {
         $this->container['miniGameMixedMonetizationRoiD1ByReporting'] = $miniGameMixedMonetizationRoiD1ByReporting;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameMixedMonetizationRoiD3
-     *
-     * @return double|mixed
-     */
-    public function getMiniGameMixedMonetizationRoiD3()
-    {
-        return $this->container['miniGameMixedMonetizationRoiD3'];
-    }
-
-    /**
-     * Sets miniGameMixedMonetizationRoiD3
-     *
-     * @param double|mixed $miniGameMixedMonetizationRoiD3 miniGameMixedMonetizationRoiD3
-     *
-     * @return $this
-     */
-    public function setMiniGameMixedMonetizationRoiD3($miniGameMixedMonetizationRoiD3)
-    {
-        $this->container['miniGameMixedMonetizationRoiD3'] = $miniGameMixedMonetizationRoiD3;
 
         return $this;
     }
@@ -20162,30 +20642,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets miniGameMixedMonetizationRoiD7
-     *
-     * @return double|mixed
-     */
-    public function getMiniGameMixedMonetizationRoiD7()
-    {
-        return $this->container['miniGameMixedMonetizationRoiD7'];
-    }
-
-    /**
-     * Sets miniGameMixedMonetizationRoiD7
-     *
-     * @param double|mixed $miniGameMixedMonetizationRoiD7 miniGameMixedMonetizationRoiD7
-     *
-     * @return $this
-     */
-    public function setMiniGameMixedMonetizationRoiD7($miniGameMixedMonetizationRoiD7)
-    {
-        $this->container['miniGameMixedMonetizationRoiD7'] = $miniGameMixedMonetizationRoiD7;
-
-        return $this;
-    }
-
-    /**
      * Gets miniGameMixedMonetizationRoiD7ByReporting
      *
      * @return double|mixed
@@ -20205,30 +20661,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setMiniGameMixedMonetizationRoiD7ByReporting($miniGameMixedMonetizationRoiD7ByReporting)
     {
         $this->container['miniGameMixedMonetizationRoiD7ByReporting'] = $miniGameMixedMonetizationRoiD7ByReporting;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameMixedMonetizationRoiD14
-     *
-     * @return double|mixed
-     */
-    public function getMiniGameMixedMonetizationRoiD14()
-    {
-        return $this->container['miniGameMixedMonetizationRoiD14'];
-    }
-
-    /**
-     * Sets miniGameMixedMonetizationRoiD14
-     *
-     * @param double|mixed $miniGameMixedMonetizationRoiD14 miniGameMixedMonetizationRoiD14
-     *
-     * @return $this
-     */
-    public function setMiniGameMixedMonetizationRoiD14($miniGameMixedMonetizationRoiD14)
-    {
-        $this->container['miniGameMixedMonetizationRoiD14'] = $miniGameMixedMonetizationRoiD14;
 
         return $this;
     }
@@ -20349,78 +20781,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setAdMonetizationPenetrationRatD1($adMonetizationPenetrationRatD1)
     {
         $this->container['adMonetizationPenetrationRatD1'] = $adMonetizationPenetrationRatD1;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameAdMonetizationAmountD3
-     *
-     * @return int|mixed
-     */
-    public function getMiniGameAdMonetizationAmountD3()
-    {
-        return $this->container['miniGameAdMonetizationAmountD3'];
-    }
-
-    /**
-     * Sets miniGameAdMonetizationAmountD3
-     *
-     * @param int|mixed $miniGameAdMonetizationAmountD3 miniGameAdMonetizationAmountD3
-     *
-     * @return $this
-     */
-    public function setMiniGameAdMonetizationAmountD3($miniGameAdMonetizationAmountD3)
-    {
-        $this->container['miniGameAdMonetizationAmountD3'] = $miniGameAdMonetizationAmountD3;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameAdMonetizationAmountD7
-     *
-     * @return int|mixed
-     */
-    public function getMiniGameAdMonetizationAmountD7()
-    {
-        return $this->container['miniGameAdMonetizationAmountD7'];
-    }
-
-    /**
-     * Sets miniGameAdMonetizationAmountD7
-     *
-     * @param int|mixed $miniGameAdMonetizationAmountD7 miniGameAdMonetizationAmountD7
-     *
-     * @return $this
-     */
-    public function setMiniGameAdMonetizationAmountD7($miniGameAdMonetizationAmountD7)
-    {
-        $this->container['miniGameAdMonetizationAmountD7'] = $miniGameAdMonetizationAmountD7;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameAdMonetizationAmountD14
-     *
-     * @return int|mixed
-     */
-    public function getMiniGameAdMonetizationAmountD14()
-    {
-        return $this->container['miniGameAdMonetizationAmountD14'];
-    }
-
-    /**
-     * Sets miniGameAdMonetizationAmountD14
-     *
-     * @param int|mixed $miniGameAdMonetizationAmountD14 miniGameAdMonetizationAmountD14
-     *
-     * @return $this
-     */
-    public function setMiniGameAdMonetizationAmountD14($miniGameAdMonetizationAmountD14)
-    {
-        $this->container['miniGameAdMonetizationAmountD14'] = $miniGameAdMonetizationAmountD14;
 
         return $this;
     }
@@ -20714,102 +21074,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets miniGamePayD3Roi
-     *
-     * @return double|mixed
-     */
-    public function getMiniGamePayD3Roi()
-    {
-        return $this->container['miniGamePayD3Roi'];
-    }
-
-    /**
-     * Sets miniGamePayD3Roi
-     *
-     * @param double|mixed $miniGamePayD3Roi miniGamePayD3Roi
-     *
-     * @return $this
-     */
-    public function setMiniGamePayD3Roi($miniGamePayD3Roi)
-    {
-        $this->container['miniGamePayD3Roi'] = $miniGamePayD3Roi;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGamePayD7Roi
-     *
-     * @return double|mixed
-     */
-    public function getMiniGamePayD7Roi()
-    {
-        return $this->container['miniGamePayD7Roi'];
-    }
-
-    /**
-     * Sets miniGamePayD7Roi
-     *
-     * @param double|mixed $miniGamePayD7Roi miniGamePayD7Roi
-     *
-     * @return $this
-     */
-    public function setMiniGamePayD7Roi($miniGamePayD7Roi)
-    {
-        $this->container['miniGamePayD7Roi'] = $miniGamePayD7Roi;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGamePayD14Roi
-     *
-     * @return double|mixed
-     */
-    public function getMiniGamePayD14Roi()
-    {
-        return $this->container['miniGamePayD14Roi'];
-    }
-
-    /**
-     * Sets miniGamePayD14Roi
-     *
-     * @param double|mixed $miniGamePayD14Roi miniGamePayD14Roi
-     *
-     * @return $this
-     */
-    public function setMiniGamePayD14Roi($miniGamePayD14Roi)
-    {
-        $this->container['miniGamePayD14Roi'] = $miniGamePayD14Roi;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGamePayD30Roi
-     *
-     * @return double|mixed
-     */
-    public function getMiniGamePayD30Roi()
-    {
-        return $this->container['miniGamePayD30Roi'];
-    }
-
-    /**
-     * Sets miniGamePayD30Roi
-     *
-     * @param double|mixed $miniGamePayD30Roi miniGamePayD30Roi
-     *
-     * @return $this
-     */
-    public function setMiniGamePayD30Roi($miniGamePayD30Roi)
-    {
-        $this->container['miniGamePayD30Roi'] = $miniGamePayD30Roi;
-
-        return $this;
-    }
-
-    /**
      * Gets miniGamePayD3PlaRoi
      *
      * @return double|mixed
@@ -20901,270 +21165,6 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setMiniGamePayD30PlaRoi($miniGamePayD30PlaRoi)
     {
         $this->container['miniGamePayD30PlaRoi'] = $miniGamePayD30PlaRoi;
-
-        return $this;
-    }
-
-    /**
-     * Gets minigame1dPayCount
-     *
-     * @return int|mixed
-     */
-    public function getMinigame1dPayCount()
-    {
-        return $this->container['minigame1dPayCount'];
-    }
-
-    /**
-     * Sets minigame1dPayCount
-     *
-     * @param int|mixed $minigame1dPayCount minigame1dPayCount
-     *
-     * @return $this
-     */
-    public function setMinigame1dPayCount($minigame1dPayCount)
-    {
-        $this->container['minigame1dPayCount'] = $minigame1dPayCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets minigame3dIncomeUv
-     *
-     * @return int|mixed
-     */
-    public function getMinigame3dIncomeUv()
-    {
-        return $this->container['minigame3dIncomeUv'];
-    }
-
-    /**
-     * Sets minigame3dIncomeUv
-     *
-     * @param int|mixed $minigame3dIncomeUv minigame3dIncomeUv
-     *
-     * @return $this
-     */
-    public function setMinigame3dIncomeUv($minigame3dIncomeUv)
-    {
-        $this->container['minigame3dIncomeUv'] = $minigame3dIncomeUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets minigame3dIncomeCount
-     *
-     * @return int|mixed
-     */
-    public function getMinigame3dIncomeCount()
-    {
-        return $this->container['minigame3dIncomeCount'];
-    }
-
-    /**
-     * Sets minigame3dIncomeCount
-     *
-     * @param int|mixed $minigame3dIncomeCount minigame3dIncomeCount
-     *
-     * @return $this
-     */
-    public function setMinigame3dIncomeCount($minigame3dIncomeCount)
-    {
-        $this->container['minigame3dIncomeCount'] = $minigame3dIncomeCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets minigame7dIncomeUv
-     *
-     * @return int|mixed
-     */
-    public function getMinigame7dIncomeUv()
-    {
-        return $this->container['minigame7dIncomeUv'];
-    }
-
-    /**
-     * Sets minigame7dIncomeUv
-     *
-     * @param int|mixed $minigame7dIncomeUv minigame7dIncomeUv
-     *
-     * @return $this
-     */
-    public function setMinigame7dIncomeUv($minigame7dIncomeUv)
-    {
-        $this->container['minigame7dIncomeUv'] = $minigame7dIncomeUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets minigame7dIncomeCount
-     *
-     * @return int|mixed
-     */
-    public function getMinigame7dIncomeCount()
-    {
-        return $this->container['minigame7dIncomeCount'];
-    }
-
-    /**
-     * Sets minigame7dIncomeCount
-     *
-     * @param int|mixed $minigame7dIncomeCount minigame7dIncomeCount
-     *
-     * @return $this
-     */
-    public function setMinigame7dIncomeCount($minigame7dIncomeCount)
-    {
-        $this->container['minigame7dIncomeCount'] = $minigame7dIncomeCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets minigame3dIncomeRoi
-     *
-     * @return double|mixed
-     */
-    public function getMinigame3dIncomeRoi()
-    {
-        return $this->container['minigame3dIncomeRoi'];
-    }
-
-    /**
-     * Sets minigame3dIncomeRoi
-     *
-     * @param double|mixed $minigame3dIncomeRoi minigame3dIncomeRoi
-     *
-     * @return $this
-     */
-    public function setMinigame3dIncomeRoi($minigame3dIncomeRoi)
-    {
-        $this->container['minigame3dIncomeRoi'] = $minigame3dIncomeRoi;
-
-        return $this;
-    }
-
-    /**
-     * Gets minigame7dIncomeRoi
-     *
-     * @return double|mixed
-     */
-    public function getMinigame7dIncomeRoi()
-    {
-        return $this->container['minigame7dIncomeRoi'];
-    }
-
-    /**
-     * Sets minigame7dIncomeRoi
-     *
-     * @param double|mixed $minigame7dIncomeRoi minigame7dIncomeRoi
-     *
-     * @return $this
-     */
-    public function setMinigame7dIncomeRoi($minigame7dIncomeRoi)
-    {
-        $this->container['minigame7dIncomeRoi'] = $minigame7dIncomeRoi;
-
-        return $this;
-    }
-
-    /**
-     * Gets minigame24hPayUv
-     *
-     * @return int|mixed
-     */
-    public function getMinigame24hPayUv()
-    {
-        return $this->container['minigame24hPayUv'];
-    }
-
-    /**
-     * Sets minigame24hPayUv
-     *
-     * @param int|mixed $minigame24hPayUv minigame24hPayUv
-     *
-     * @return $this
-     */
-    public function setMinigame24hPayUv($minigame24hPayUv)
-    {
-        $this->container['minigame24hPayUv'] = $minigame24hPayUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets minigame24hPayAmount
-     *
-     * @return int|mixed
-     */
-    public function getMinigame24hPayAmount()
-    {
-        return $this->container['minigame24hPayAmount'];
-    }
-
-    /**
-     * Sets minigame24hPayAmount
-     *
-     * @param int|mixed $minigame24hPayAmount minigame24hPayAmount
-     *
-     * @return $this
-     */
-    public function setMinigame24hPayAmount($minigame24hPayAmount)
-    {
-        $this->container['minigame24hPayAmount'] = $minigame24hPayAmount;
-
-        return $this;
-    }
-
-    /**
-     * Gets minigame24hPayRoi
-     *
-     * @return double|mixed
-     */
-    public function getMinigame24hPayRoi()
-    {
-        return $this->container['minigame24hPayRoi'];
-    }
-
-    /**
-     * Sets minigame24hPayRoi
-     *
-     * @param double|mixed $minigame24hPayRoi minigame24hPayRoi
-     *
-     * @return $this
-     */
-    public function setMinigame24hPayRoi($minigame24hPayRoi)
-    {
-        $this->container['minigame24hPayRoi'] = $minigame24hPayRoi;
-
-        return $this;
-    }
-
-    /**
-     * Gets minigame24hPayArpu
-     *
-     * @return int|mixed
-     */
-    public function getMinigame24hPayArpu()
-    {
-        return $this->container['minigame24hPayArpu'];
-    }
-
-    /**
-     * Sets minigame24hPayArpu
-     *
-     * @param int|mixed $minigame24hPayArpu minigame24hPayArpu
-     *
-     * @return $this
-     */
-    public function setMinigame24hPayArpu($minigame24hPayArpu)
-    {
-        $this->container['minigame24hPayArpu'] = $minigame24hPayArpu;
 
         return $this;
     }

@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * DeepConversionWorthAdvancedSpec Class Doc Comment
  *
  * @category Class
- * @description oCPC/oCPM 强化 ROI 配置
+ * @description oCPC/oCPM 深度辅助优化-优化ROI
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

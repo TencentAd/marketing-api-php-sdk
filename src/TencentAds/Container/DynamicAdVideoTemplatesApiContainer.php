@@ -45,8 +45,10 @@ class DynamicAdVideoTemplatesApiContainer extends ApiContainer
             $supportChannel = isset($params['support_channel']) ? $params['support_channel'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $templateIdList = isset($params['template_id_list']) ? $params['template_id_list'] : null;
+            $templateName = isset($params['template_name']) ? $params['template_name'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->dynamicAdVideoTemplatesGet($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel, $page, $pageSize, $fields);
+            $response = $this->apiInstance->dynamicAdVideoTemplatesGet($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel, $page, $pageSize, $templateIdList, $templateName, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -68,8 +70,10 @@ class DynamicAdVideoTemplatesApiContainer extends ApiContainer
             $supportChannel = isset($params['support_channel']) ? $params['support_channel'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $templateIdList = isset($params['template_id_list']) ? $params['template_id_list'] : null;
+            $templateName = isset($params['template_name']) ? $params['template_name'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->dynamicAdVideoTemplatesGetAsync($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel, $page, $pageSize, $fields);
+            $response = $this->apiInstance->dynamicAdVideoTemplatesGetAsync($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel, $page, $pageSize, $templateIdList, $templateName, $fields);
             return $response;
         });
     }

@@ -59,7 +59,8 @@ class BidwordRptGetResponseData implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'conf' => '\TencentAds\Model\Conf',
         'list' => '\TencentAds\Model\BidwordRptGetListStruct[]',
-        'total' => '\TencentAds\Model\Total'
+        'total' => '\TencentAds\Model\Total',
+        'reportv3List' => '\TencentAds\Model\ReportStructV3[]'
     ];
 
     /**
@@ -70,7 +71,8 @@ class BidwordRptGetResponseData implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'conf' => null,
         'list' => null,
-        'total' => null
+        'total' => null,
+        'reportv3List' => null
     ];
 
     /**
@@ -102,7 +104,8 @@ class BidwordRptGetResponseData implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'conf' => 'conf',
         'list' => 'list',
-        'total' => 'total'
+        'total' => 'total',
+        'reportv3List' => 'reportv3_list'
     ];
 
     /**
@@ -113,7 +116,8 @@ class BidwordRptGetResponseData implements ModelInterface, ArrayAccess
     protected static $setters = [
         'conf' => 'setConf',
         'list' => 'setList',
-        'total' => 'setTotal'
+        'total' => 'setTotal',
+        'reportv3List' => 'setReportv3List'
     ];
 
     /**
@@ -124,7 +128,8 @@ class BidwordRptGetResponseData implements ModelInterface, ArrayAccess
     protected static $getters = [
         'conf' => 'getConf',
         'list' => 'getList',
-        'total' => 'getTotal'
+        'total' => 'getTotal',
+        'reportv3List' => 'getReportv3List'
     ];
 
     /**
@@ -190,6 +195,7 @@ class BidwordRptGetResponseData implements ModelInterface, ArrayAccess
         $this->container['conf'] = isset($data['conf']) ? $data['conf'] : null;
         $this->container['list'] = isset($data['list']) ? $data['list'] : null;
         $this->container['total'] = isset($data['total']) ? $data['total'] : null;
+        $this->container['reportv3List'] = isset($data['reportv3List']) ? $data['reportv3List'] : null;
     }
 
     /**
@@ -284,6 +290,30 @@ class BidwordRptGetResponseData implements ModelInterface, ArrayAccess
     public function setTotal($total)
     {
         $this->container['total'] = $total;
+
+        return $this;
+    }
+
+    /**
+     * Gets reportv3List
+     *
+     * @return \TencentAds\Model\ReportStructV3[]|mixed
+     */
+    public function getReportv3List()
+    {
+        return $this->container['reportv3List'];
+    }
+
+    /**
+     * Sets reportv3List
+     *
+     * @param \TencentAds\Model\ReportStructV3[]|mixed $reportv3List reportv3List
+     *
+     * @return $this
+     */
+    public function setReportv3List($reportv3List)
+    {
+        $this->container['reportv3List'] = $reportv3List;
 
         return $this;
     }

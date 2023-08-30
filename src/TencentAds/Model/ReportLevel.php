@@ -63,6 +63,10 @@ class ReportLevel
     const ADGROUP_WECHAT = 'REPORT_LEVEL_ADGROUP_WECHAT';
     const AD_WECHAT = 'REPORT_LEVEL_AD_WECHAT';
     const PROJECT = 'REPORT_LEVEL_PROJECT';
+    const AGE = 'REPORT_LEVEL_AGE';
+    const GENDER = 'REPORT_LEVEL_GENDER';
+    const REGION = 'REPORT_LEVEL_REGION';
+    const CITY = 'REPORT_LEVEL_CITY';
     
     /**
      * Gets allowable values of the enum
@@ -90,6 +94,10 @@ class ReportLevel
             self::ADGROUP_WECHAT,
             self::AD_WECHAT,
             self::PROJECT,
+            self::AGE,
+            self::GENDER,
+            self::REGION,
+            self::CITY,
         ];
     }
 }

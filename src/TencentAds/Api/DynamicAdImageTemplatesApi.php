@@ -101,15 +101,17 @@ class DynamicAdImageTemplatesApi
      * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering filtering (optional)
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
+     * @param  int[]|mixed $templateIdList templateIdList (optional)
+     * @param  string|mixed $templateName templateName (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\DynamicAdImageTemplatesGetResponse|mixed
      */
-    public function dynamicAdImageTemplatesGet($accountId, $productCatalogId, $productMode, $dynamicAdTemplateWidth, $dynamicAdTemplateHeight, $dynamicAdTemplateOwnershipType = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function dynamicAdImageTemplatesGet($accountId, $productCatalogId, $productMode, $dynamicAdTemplateWidth, $dynamicAdTemplateHeight, $dynamicAdTemplateOwnershipType = null, $filtering = null, $page = null, $pageSize = null, $templateIdList = null, $templateName = null, $fields = null)
     {
-        list($response) = $this->dynamicAdImageTemplatesGetWithHttpInfo($accountId, $productCatalogId, $productMode, $dynamicAdTemplateWidth, $dynamicAdTemplateHeight, $dynamicAdTemplateOwnershipType, $filtering, $page, $pageSize, $fields);
+        list($response) = $this->dynamicAdImageTemplatesGetWithHttpInfo($accountId, $productCatalogId, $productMode, $dynamicAdTemplateWidth, $dynamicAdTemplateHeight, $dynamicAdTemplateOwnershipType, $filtering, $page, $pageSize, $templateIdList, $templateName, $fields);
         return $response;
     }
 
@@ -127,16 +129,18 @@ class DynamicAdImageTemplatesApi
      * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int[]|mixed $templateIdList (optional)
+     * @param  string|mixed $templateName (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\DynamicAdImageTemplatesGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function dynamicAdImageTemplatesGetWithHttpInfo($accountId, $productCatalogId, $productMode, $dynamicAdTemplateWidth, $dynamicAdTemplateHeight, $dynamicAdTemplateOwnershipType = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function dynamicAdImageTemplatesGetWithHttpInfo($accountId, $productCatalogId, $productMode, $dynamicAdTemplateWidth, $dynamicAdTemplateHeight, $dynamicAdTemplateOwnershipType = null, $filtering = null, $page = null, $pageSize = null, $templateIdList = null, $templateName = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\DynamicAdImageTemplatesGetResponse';
-        $request = $this->dynamicAdImageTemplatesGetRequest($accountId, $productCatalogId, $productMode, $dynamicAdTemplateWidth, $dynamicAdTemplateHeight, $dynamicAdTemplateOwnershipType, $filtering, $page, $pageSize, $fields);
+        $request = $this->dynamicAdImageTemplatesGetRequest($accountId, $productCatalogId, $productMode, $dynamicAdTemplateWidth, $dynamicAdTemplateHeight, $dynamicAdTemplateOwnershipType, $filtering, $page, $pageSize, $templateIdList, $templateName, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -211,14 +215,16 @@ class DynamicAdImageTemplatesApi
      * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int[]|mixed $templateIdList (optional)
+     * @param  string|mixed $templateName (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function dynamicAdImageTemplatesGetAsync($accountId, $productCatalogId, $productMode, $dynamicAdTemplateWidth, $dynamicAdTemplateHeight, $dynamicAdTemplateOwnershipType = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function dynamicAdImageTemplatesGetAsync($accountId, $productCatalogId, $productMode, $dynamicAdTemplateWidth, $dynamicAdTemplateHeight, $dynamicAdTemplateOwnershipType = null, $filtering = null, $page = null, $pageSize = null, $templateIdList = null, $templateName = null, $fields = null)
     {
-        return $this->dynamicAdImageTemplatesGetAsyncWithHttpInfo($accountId, $productCatalogId, $productMode, $dynamicAdTemplateWidth, $dynamicAdTemplateHeight, $dynamicAdTemplateOwnershipType, $filtering, $page, $pageSize, $fields)
+        return $this->dynamicAdImageTemplatesGetAsyncWithHttpInfo($accountId, $productCatalogId, $productMode, $dynamicAdTemplateWidth, $dynamicAdTemplateHeight, $dynamicAdTemplateOwnershipType, $filtering, $page, $pageSize, $templateIdList, $templateName, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -240,15 +246,17 @@ class DynamicAdImageTemplatesApi
      * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int[]|mixed $templateIdList (optional)
+     * @param  string|mixed $templateName (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function dynamicAdImageTemplatesGetAsyncWithHttpInfo($accountId, $productCatalogId, $productMode, $dynamicAdTemplateWidth, $dynamicAdTemplateHeight, $dynamicAdTemplateOwnershipType = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function dynamicAdImageTemplatesGetAsyncWithHttpInfo($accountId, $productCatalogId, $productMode, $dynamicAdTemplateWidth, $dynamicAdTemplateHeight, $dynamicAdTemplateOwnershipType = null, $filtering = null, $page = null, $pageSize = null, $templateIdList = null, $templateName = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\DynamicAdImageTemplatesGetResponse';
-        $request = $this->dynamicAdImageTemplatesGetRequest($accountId, $productCatalogId, $productMode, $dynamicAdTemplateWidth, $dynamicAdTemplateHeight, $dynamicAdTemplateOwnershipType, $filtering, $page, $pageSize, $fields);
+        $request = $this->dynamicAdImageTemplatesGetRequest($accountId, $productCatalogId, $productMode, $dynamicAdTemplateWidth, $dynamicAdTemplateHeight, $dynamicAdTemplateOwnershipType, $filtering, $page, $pageSize, $templateIdList, $templateName, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -299,12 +307,14 @@ class DynamicAdImageTemplatesApi
      * @param  \TencentAds\Model\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int[]|mixed $templateIdList (optional)
+     * @param  string|mixed $templateName (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function dynamicAdImageTemplatesGetRequest($accountId, $productCatalogId, $productMode, $dynamicAdTemplateWidth, $dynamicAdTemplateHeight, $dynamicAdTemplateOwnershipType = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    protected function dynamicAdImageTemplatesGetRequest($accountId, $productCatalogId, $productMode, $dynamicAdTemplateWidth, $dynamicAdTemplateHeight, $dynamicAdTemplateOwnershipType = null, $filtering = null, $page = null, $pageSize = null, $templateIdList = null, $templateName = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -382,6 +392,17 @@ class DynamicAdImageTemplatesApi
         // query params
         if ($pageSize !== null) {
             $queryParams['page_size'] = ObjectSerializer::toQueryValue($pageSize);
+        }
+        // query params
+        if (is_array($templateIdList)) {
+            $queryParams['template_id_list'] = $templateIdList;
+        } else
+        if ($templateIdList !== null) {
+            $queryParams['template_id_list'] = ObjectSerializer::toQueryValue($templateIdList);
+        }
+        // query params
+        if ($templateName !== null) {
+            $queryParams['template_name'] = ObjectSerializer::toQueryValue($templateName);
         }
         // query params
         if (is_array($fields)) {

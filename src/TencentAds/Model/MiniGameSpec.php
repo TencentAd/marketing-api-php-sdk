@@ -60,7 +60,8 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'miniGameTrackingParameter' => 'string',
         'miniGameOpenlink' => 'string',
-        'miniGameOpenlinkPageSpec' => '\TencentAds\Model\AdCreativeMiniGameOpenlinkPageSpec'
+        'miniGameOpenlinkPageSpec' => '\TencentAds\Model\AdCreativeMiniGameOpenlinkPageSpec',
+        'miniGameOpenlinkSwitch' => 'bool'
     ];
 
     /**
@@ -71,7 +72,8 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'miniGameTrackingParameter' => null,
         'miniGameOpenlink' => null,
-        'miniGameOpenlinkPageSpec' => null
+        'miniGameOpenlinkPageSpec' => null,
+        'miniGameOpenlinkSwitch' => null
     ];
 
     /**
@@ -103,7 +105,8 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'miniGameTrackingParameter' => 'mini_game_tracking_parameter',
         'miniGameOpenlink' => 'mini_game_openlink',
-        'miniGameOpenlinkPageSpec' => 'mini_game_openlink_page_spec'
+        'miniGameOpenlinkPageSpec' => 'mini_game_openlink_page_spec',
+        'miniGameOpenlinkSwitch' => 'mini_game_openlink_switch'
     ];
 
     /**
@@ -114,7 +117,8 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
     protected static $setters = [
         'miniGameTrackingParameter' => 'setMiniGameTrackingParameter',
         'miniGameOpenlink' => 'setMiniGameOpenlink',
-        'miniGameOpenlinkPageSpec' => 'setMiniGameOpenlinkPageSpec'
+        'miniGameOpenlinkPageSpec' => 'setMiniGameOpenlinkPageSpec',
+        'miniGameOpenlinkSwitch' => 'setMiniGameOpenlinkSwitch'
     ];
 
     /**
@@ -125,7 +129,8 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
     protected static $getters = [
         'miniGameTrackingParameter' => 'getMiniGameTrackingParameter',
         'miniGameOpenlink' => 'getMiniGameOpenlink',
-        'miniGameOpenlinkPageSpec' => 'getMiniGameOpenlinkPageSpec'
+        'miniGameOpenlinkPageSpec' => 'getMiniGameOpenlinkPageSpec',
+        'miniGameOpenlinkSwitch' => 'getMiniGameOpenlinkSwitch'
     ];
 
     /**
@@ -191,6 +196,7 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
         $this->container['miniGameTrackingParameter'] = isset($data['miniGameTrackingParameter']) ? $data['miniGameTrackingParameter'] : null;
         $this->container['miniGameOpenlink'] = isset($data['miniGameOpenlink']) ? $data['miniGameOpenlink'] : null;
         $this->container['miniGameOpenlinkPageSpec'] = isset($data['miniGameOpenlinkPageSpec']) ? $data['miniGameOpenlinkPageSpec'] : null;
+        $this->container['miniGameOpenlinkSwitch'] = isset($data['miniGameOpenlinkSwitch']) ? $data['miniGameOpenlinkSwitch'] : null;
     }
 
     /**
@@ -285,6 +291,30 @@ class MiniGameSpec implements ModelInterface, ArrayAccess
     public function setMiniGameOpenlinkPageSpec($miniGameOpenlinkPageSpec)
     {
         $this->container['miniGameOpenlinkPageSpec'] = $miniGameOpenlinkPageSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameOpenlinkSwitch
+     *
+     * @return bool|mixed
+     */
+    public function getMiniGameOpenlinkSwitch()
+    {
+        return $this->container['miniGameOpenlinkSwitch'];
+    }
+
+    /**
+     * Sets miniGameOpenlinkSwitch
+     *
+     * @param bool|mixed $miniGameOpenlinkSwitch miniGameOpenlinkSwitch
+     *
+     * @return $this
+     */
+    public function setMiniGameOpenlinkSwitch($miniGameOpenlinkSwitch)
+    {
+        $this->container['miniGameOpenlinkSwitch'] = $miniGameOpenlinkSwitch;
 
         return $this;
     }

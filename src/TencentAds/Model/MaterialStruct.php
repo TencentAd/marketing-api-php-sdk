@@ -58,7 +58,7 @@ class MaterialStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'type' => '\TencentAds\Model\MaterialTypeEnum',
+        'type' => '\TencentAds\Model\TemplateType',
         'mediaId' => 'string',
         'materialName' => 'string',
         'originMediaId' => 'string',
@@ -232,7 +232,7 @@ class MaterialStruct implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \TencentAds\Model\MaterialTypeEnum|mixed
+     * @return \TencentAds\Model\TemplateType|mixed
      */
     public function getType()
     {
@@ -242,7 +242,7 @@ class MaterialStruct implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \TencentAds\Model\MaterialTypeEnum|mixed $type type
+     * @param \TencentAds\Model\TemplateType|mixed $type type
      *
      * @return $this
      */

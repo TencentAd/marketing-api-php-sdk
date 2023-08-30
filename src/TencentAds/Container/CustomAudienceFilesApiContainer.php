@@ -44,8 +44,7 @@ class CustomAudienceFilesApiContainer extends ApiContainer
             $file = isset($params['file']) ? $params['file'] : null;
             $operationType = isset($params['operation_type']) ? $params['operation_type'] : null;
             $openAppId = isset($params['open_app_id']) ? $params['open_app_id'] : null;
-            $saltId = isset($params['salt_id']) ? $params['salt_id'] : null;
-            $response = $this->apiInstance->customAudienceFilesAdd($accountId, $audienceId, $userIdType, $file, $operationType, $openAppId, $saltId);
+            $response = $this->apiInstance->customAudienceFilesAdd($accountId, $audienceId, $userIdType, $file, $operationType, $openAppId);
             return $this->handleResponse($response);
         });
     }
@@ -66,8 +65,7 @@ class CustomAudienceFilesApiContainer extends ApiContainer
             $file = isset($params['file']) ? $params['file'] : null;
             $operationType = isset($params['operation_type']) ? $params['operation_type'] : null;
             $openAppId = isset($params['open_app_id']) ? $params['open_app_id'] : null;
-            $saltId = isset($params['salt_id']) ? $params['salt_id'] : null;
-            $response = $this->apiInstance->customAudienceFilesAddAsync($accountId, $audienceId, $userIdType, $file, $operationType, $openAppId, $saltId);
+            $response = $this->apiInstance->customAudienceFilesAddAsync($accountId, $audienceId, $userIdType, $file, $operationType, $openAppId);
             return $response;
         });
     }

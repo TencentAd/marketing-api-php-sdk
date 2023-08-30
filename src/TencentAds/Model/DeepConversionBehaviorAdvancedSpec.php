@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * DeepConversionBehaviorAdvancedSpec Class Doc Comment
  *
  * @category Class
- * @description oCPC/oCPM 加强转化行为配置
+ * @description oCPC/oCPM 深度辅助优化-优化转化行为
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

@@ -96,6 +96,7 @@ class SiteSetDefinition
     const BROWSER_PC = 'SITE_SET_BROWSER_PC';
     const CHANNELS_CONTENT_PROMOTION = 'SITE_SET_CHANNELS_CONTENT_PROMOTION';
     const FREETRADE_WEAPP = 'SITE_SET_FREETRADE_WEAPP';
+    const TENCENT_AD_NETWORK_OVERSEA = 'SITE_SET_TENCENT_AD_NETWORK_OVERSEA';
     
     /**
      * Gets allowable values of the enum
@@ -156,6 +157,7 @@ class SiteSetDefinition
             self::BROWSER_PC,
             self::CHANNELS_CONTENT_PROMOTION,
             self::FREETRADE_WEAPP,
+            self::TENCENT_AD_NETWORK_OVERSEA,
         ];
     }
 }

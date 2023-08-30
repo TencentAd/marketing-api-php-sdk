@@ -47,8 +47,10 @@ class DynamicAdImageTemplatesApiContainer extends ApiContainer
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $templateIdList = isset($params['template_id_list']) ? $params['template_id_list'] : null;
+            $templateName = isset($params['template_name']) ? $params['template_name'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->dynamicAdImageTemplatesGet($accountId, $productCatalogId, $productMode, $dynamicAdTemplateWidth, $dynamicAdTemplateHeight, $dynamicAdTemplateOwnershipType, $filtering, $page, $pageSize, $fields);
+            $response = $this->apiInstance->dynamicAdImageTemplatesGet($accountId, $productCatalogId, $productMode, $dynamicAdTemplateWidth, $dynamicAdTemplateHeight, $dynamicAdTemplateOwnershipType, $filtering, $page, $pageSize, $templateIdList, $templateName, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -72,8 +74,10 @@ class DynamicAdImageTemplatesApiContainer extends ApiContainer
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $templateIdList = isset($params['template_id_list']) ? $params['template_id_list'] : null;
+            $templateName = isset($params['template_name']) ? $params['template_name'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->dynamicAdImageTemplatesGetAsync($accountId, $productCatalogId, $productMode, $dynamicAdTemplateWidth, $dynamicAdTemplateHeight, $dynamicAdTemplateOwnershipType, $filtering, $page, $pageSize, $fields);
+            $response = $this->apiInstance->dynamicAdImageTemplatesGetAsync($accountId, $productCatalogId, $productMode, $dynamicAdTemplateWidth, $dynamicAdTemplateHeight, $dynamicAdTemplateOwnershipType, $filtering, $page, $pageSize, $templateIdList, $templateName, $fields);
             return $response;
         });
     }

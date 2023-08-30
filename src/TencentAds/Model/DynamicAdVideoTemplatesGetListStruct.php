@@ -67,6 +67,11 @@ class DynamicAdVideoTemplatesGetListStruct implements ModelInterface, ArrayAcces
         'introVideoUrl' => 'string',
         'deliveryVideoUrl' => 'string',
         'supportChannel' => 'bool',
+        'coverage' => 'double',
+        'minVideoDuration' => 'double',
+        'maxVideoDuration' => 'double',
+        'videoProductFields' => 'string[]',
+        'imageProductFields' => 'string[]',
         'extra' => '\TencentAds\Model\Extra',
         'subTemplateList' => '\TencentAds\Model\SubTemplateStruct[]'
     ];
@@ -86,6 +91,11 @@ class DynamicAdVideoTemplatesGetListStruct implements ModelInterface, ArrayAcces
         'introVideoUrl' => null,
         'deliveryVideoUrl' => null,
         'supportChannel' => null,
+        'coverage' => 'double',
+        'minVideoDuration' => 'double',
+        'maxVideoDuration' => 'double',
+        'videoProductFields' => null,
+        'imageProductFields' => null,
         'extra' => null,
         'subTemplateList' => null
     ];
@@ -126,6 +136,11 @@ class DynamicAdVideoTemplatesGetListStruct implements ModelInterface, ArrayAcces
         'introVideoUrl' => 'intro_video_url',
         'deliveryVideoUrl' => 'delivery_video_url',
         'supportChannel' => 'support_channel',
+        'coverage' => 'coverage',
+        'minVideoDuration' => 'min_video_duration',
+        'maxVideoDuration' => 'max_video_duration',
+        'videoProductFields' => 'video_product_fields',
+        'imageProductFields' => 'image_product_fields',
         'extra' => 'extra',
         'subTemplateList' => 'sub_template_list'
     ];
@@ -145,6 +160,11 @@ class DynamicAdVideoTemplatesGetListStruct implements ModelInterface, ArrayAcces
         'introVideoUrl' => 'setIntroVideoUrl',
         'deliveryVideoUrl' => 'setDeliveryVideoUrl',
         'supportChannel' => 'setSupportChannel',
+        'coverage' => 'setCoverage',
+        'minVideoDuration' => 'setMinVideoDuration',
+        'maxVideoDuration' => 'setMaxVideoDuration',
+        'videoProductFields' => 'setVideoProductFields',
+        'imageProductFields' => 'setImageProductFields',
         'extra' => 'setExtra',
         'subTemplateList' => 'setSubTemplateList'
     ];
@@ -164,6 +184,11 @@ class DynamicAdVideoTemplatesGetListStruct implements ModelInterface, ArrayAcces
         'introVideoUrl' => 'getIntroVideoUrl',
         'deliveryVideoUrl' => 'getDeliveryVideoUrl',
         'supportChannel' => 'getSupportChannel',
+        'coverage' => 'getCoverage',
+        'minVideoDuration' => 'getMinVideoDuration',
+        'maxVideoDuration' => 'getMaxVideoDuration',
+        'videoProductFields' => 'getVideoProductFields',
+        'imageProductFields' => 'getImageProductFields',
         'extra' => 'getExtra',
         'subTemplateList' => 'getSubTemplateList'
     ];
@@ -237,6 +262,11 @@ class DynamicAdVideoTemplatesGetListStruct implements ModelInterface, ArrayAcces
         $this->container['introVideoUrl'] = isset($data['introVideoUrl']) ? $data['introVideoUrl'] : null;
         $this->container['deliveryVideoUrl'] = isset($data['deliveryVideoUrl']) ? $data['deliveryVideoUrl'] : null;
         $this->container['supportChannel'] = isset($data['supportChannel']) ? $data['supportChannel'] : null;
+        $this->container['coverage'] = isset($data['coverage']) ? $data['coverage'] : null;
+        $this->container['minVideoDuration'] = isset($data['minVideoDuration']) ? $data['minVideoDuration'] : null;
+        $this->container['maxVideoDuration'] = isset($data['maxVideoDuration']) ? $data['maxVideoDuration'] : null;
+        $this->container['videoProductFields'] = isset($data['videoProductFields']) ? $data['videoProductFields'] : null;
+        $this->container['imageProductFields'] = isset($data['imageProductFields']) ? $data['imageProductFields'] : null;
         $this->container['extra'] = isset($data['extra']) ? $data['extra'] : null;
         $this->container['subTemplateList'] = isset($data['subTemplateList']) ? $data['subTemplateList'] : null;
     }
@@ -477,6 +507,126 @@ class DynamicAdVideoTemplatesGetListStruct implements ModelInterface, ArrayAcces
     public function setSupportChannel($supportChannel)
     {
         $this->container['supportChannel'] = $supportChannel;
+
+        return $this;
+    }
+
+    /**
+     * Gets coverage
+     *
+     * @return double|mixed
+     */
+    public function getCoverage()
+    {
+        return $this->container['coverage'];
+    }
+
+    /**
+     * Sets coverage
+     *
+     * @param double|mixed $coverage coverage
+     *
+     * @return $this
+     */
+    public function setCoverage($coverage)
+    {
+        $this->container['coverage'] = $coverage;
+
+        return $this;
+    }
+
+    /**
+     * Gets minVideoDuration
+     *
+     * @return double|mixed
+     */
+    public function getMinVideoDuration()
+    {
+        return $this->container['minVideoDuration'];
+    }
+
+    /**
+     * Sets minVideoDuration
+     *
+     * @param double|mixed $minVideoDuration minVideoDuration
+     *
+     * @return $this
+     */
+    public function setMinVideoDuration($minVideoDuration)
+    {
+        $this->container['minVideoDuration'] = $minVideoDuration;
+
+        return $this;
+    }
+
+    /**
+     * Gets maxVideoDuration
+     *
+     * @return double|mixed
+     */
+    public function getMaxVideoDuration()
+    {
+        return $this->container['maxVideoDuration'];
+    }
+
+    /**
+     * Sets maxVideoDuration
+     *
+     * @param double|mixed $maxVideoDuration maxVideoDuration
+     *
+     * @return $this
+     */
+    public function setMaxVideoDuration($maxVideoDuration)
+    {
+        $this->container['maxVideoDuration'] = $maxVideoDuration;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoProductFields
+     *
+     * @return string[]|mixed
+     */
+    public function getVideoProductFields()
+    {
+        return $this->container['videoProductFields'];
+    }
+
+    /**
+     * Sets videoProductFields
+     *
+     * @param string[]|mixed $videoProductFields videoProductFields
+     *
+     * @return $this
+     */
+    public function setVideoProductFields($videoProductFields)
+    {
+        $this->container['videoProductFields'] = $videoProductFields;
+
+        return $this;
+    }
+
+    /**
+     * Gets imageProductFields
+     *
+     * @return string[]|mixed
+     */
+    public function getImageProductFields()
+    {
+        return $this->container['imageProductFields'];
+    }
+
+    /**
+     * Sets imageProductFields
+     *
+     * @param string[]|mixed $imageProductFields imageProductFields
+     *
+     * @return $this
+     */
+    public function setImageProductFields($imageProductFields)
+    {
+        $this->container['imageProductFields'] = $imageProductFields;
 
         return $this;
     }
