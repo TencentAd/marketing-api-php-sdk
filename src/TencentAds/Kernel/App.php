@@ -51,7 +51,6 @@ use TencentAds\Container\BusinessPointApiContainer;
 use TencentAds\Container\CampaignNegativewordsApiContainer;
 use TencentAds\Container\CampaignsApiContainer;
 use TencentAds\Container\CapabilitiesApiContainer;
-use TencentAds\Container\ChannelsApiContainer;
 use TencentAds\Container\ComplianceValidationApiContainer;
 use TencentAds\Container\ConversionsApiContainer;
 use TencentAds\Container\CreativeComponentsApiContainer;
@@ -100,9 +99,6 @@ use TencentAds\Container\LeadsCallVirtualNumberApiContainer;
 use TencentAds\Container\LeadsFormApiContainer;
 use TencentAds\Container\LeadsFormListApiContainer;
 use TencentAds\Container\LeadsInvalidPayApiContainer;
-use TencentAds\Container\LocalApiContainer;
-use TencentAds\Container\LocalEndadsmanuallyApiContainer;
-use TencentAds\Container\LocalEstimatedamountApiContainer;
 use TencentAds\Container\LocalStoresAddressParsingResultApiContainer;
 use TencentAds\Container\LocalStoresApiContainer;
 use TencentAds\Container\LocalStoresCategoriesApiContainer;
@@ -144,7 +140,6 @@ use TencentAds\Container\ReportApiContainer;
 use TencentAds\Container\ReviewAdAppealApiContainer;
 use TencentAds\Container\ReviewElementPrereviewResultsApiContainer;
 use TencentAds\Container\SceneSpecTagsApiContainer;
-use TencentAds\Container\ShopApiContainer;
 use TencentAds\Container\SplitTestsApiContainer;
 use TencentAds\Container\SubcustomerTransferApiContainer;
 use TencentAds\Container\SystemStatusApiContainer;
@@ -167,9 +162,7 @@ use TencentAds\Container\VideomakerTasksApiContainer;
 use TencentAds\Container\VideomakerVideocapturesApiContainer;
 use TencentAds\Container\VideosApiContainer;
 use TencentAds\Container\WechatAdLabelsApiContainer;
-use TencentAds\Container\WechatAdvertiserLocalBusinessApiContainer;
 use TencentAds\Container\WechatFundStatementsDetailedApiContainer;
-use TencentAds\Container\WechatFundTransferApiContainer;
 use TencentAds\Container\WechatFundsApiContainer;
 use TencentAds\Container\WechatPagesApiContainer;
 use TencentAds\Container\WechatPagesCsgroupStatusApiContainer;
@@ -177,7 +170,6 @@ use TencentAds\Container\WechatPagesCsgroupUserApiContainer;
 use TencentAds\Container\WechatPagesCsgrouplistApiContainer;
 use TencentAds\Container\WechatPagesCustomApiContainer;
 use TencentAds\Container\WechatPagesGrantinfoApiContainer;
-use TencentAds\Container\WechatQualificationsApiContainer;
 use TencentAds\Container\WeixinOfficialAccountsUpgradeStatusApiContainer;
 use TencentAds\Container\WildcardsApiContainer;
 use TencentAds\Container\WxPackageAccountApiContainer;
@@ -345,9 +337,6 @@ class App
     /** @var CapabilitiesApiContainer */
     public $capabilitiesApiContainer;
 
-    /** @var ChannelsApiContainer */
-    public $channelsApiContainer;
-
     /** @var ComplianceValidationApiContainer */
     public $complianceValidationApiContainer;
 
@@ -492,15 +481,6 @@ class App
     /** @var LeadsInvalidPayApiContainer */
     public $leadsInvalidPayApiContainer;
 
-    /** @var LocalApiContainer */
-    public $localApiContainer;
-
-    /** @var LocalEndadsmanuallyApiContainer */
-    public $localEndadsmanuallyApiContainer;
-
-    /** @var LocalEstimatedamountApiContainer */
-    public $localEstimatedamountApiContainer;
-
     /** @var LocalStoresAddressParsingResultApiContainer */
     public $localStoresAddressParsingResultApiContainer;
 
@@ -624,9 +604,6 @@ class App
     /** @var SceneSpecTagsApiContainer */
     public $sceneSpecTagsApiContainer;
 
-    /** @var ShopApiContainer */
-    public $shopApiContainer;
-
     /** @var SplitTestsApiContainer */
     public $splitTestsApiContainer;
 
@@ -693,14 +670,8 @@ class App
     /** @var WechatAdLabelsApiContainer */
     public $wechatAdLabelsApiContainer;
 
-    /** @var WechatAdvertiserLocalBusinessApiContainer */
-    public $wechatAdvertiserLocalBusinessApiContainer;
-
     /** @var WechatFundStatementsDetailedApiContainer */
     public $wechatFundStatementsDetailedApiContainer;
-
-    /** @var WechatFundTransferApiContainer */
-    public $wechatFundTransferApiContainer;
 
     /** @var WechatFundsApiContainer */
     public $wechatFundsApiContainer;
@@ -722,9 +693,6 @@ class App
 
     /** @var WechatPagesGrantinfoApiContainer */
     public $wechatPagesGrantinfoApiContainer;
-
-    /** @var WechatQualificationsApiContainer */
-    public $wechatQualificationsApiContainer;
 
     /** @var WeixinOfficialAccountsUpgradeStatusApiContainer */
     public $weixinOfficialAccountsUpgradeStatusApiContainer;
@@ -1468,20 +1436,6 @@ class App
 
 
     /**
-     * @return ChannelsApiContainer
-     */
-    public function channels()
-    {
-        if (empty($this->channelsApiContainer)) {
-            $container = new ChannelsApiContainer();
-            $container->init($this, $this->getClient());
-            $this->channelsApiContainer = $container;
-        }
-        return $this->channelsApiContainer;
-    }
-
-
-    /**
      * @return ComplianceValidationApiContainer
      */
     public function complianceValidation()
@@ -2154,48 +2108,6 @@ class App
 
 
     /**
-     * @return LocalApiContainer
-     */
-    public function local()
-    {
-        if (empty($this->localApiContainer)) {
-            $container = new LocalApiContainer();
-            $container->init($this, $this->getClient());
-            $this->localApiContainer = $container;
-        }
-        return $this->localApiContainer;
-    }
-
-
-    /**
-     * @return LocalEndadsmanuallyApiContainer
-     */
-    public function localEndadsmanually()
-    {
-        if (empty($this->localEndadsmanuallyApiContainer)) {
-            $container = new LocalEndadsmanuallyApiContainer();
-            $container->init($this, $this->getClient());
-            $this->localEndadsmanuallyApiContainer = $container;
-        }
-        return $this->localEndadsmanuallyApiContainer;
-    }
-
-
-    /**
-     * @return LocalEstimatedamountApiContainer
-     */
-    public function localEstimatedamount()
-    {
-        if (empty($this->localEstimatedamountApiContainer)) {
-            $container = new LocalEstimatedamountApiContainer();
-            $container->init($this, $this->getClient());
-            $this->localEstimatedamountApiContainer = $container;
-        }
-        return $this->localEstimatedamountApiContainer;
-    }
-
-
-    /**
      * @return LocalStoresAddressParsingResultApiContainer
      */
     public function localStoresAddressParsingResult()
@@ -2770,20 +2682,6 @@ class App
 
 
     /**
-     * @return ShopApiContainer
-     */
-    public function shop()
-    {
-        if (empty($this->shopApiContainer)) {
-            $container = new ShopApiContainer();
-            $container->init($this, $this->getClient());
-            $this->shopApiContainer = $container;
-        }
-        return $this->shopApiContainer;
-    }
-
-
-    /**
      * @return SplitTestsApiContainer
      */
     public function splitTests()
@@ -3092,20 +2990,6 @@ class App
 
 
     /**
-     * @return WechatAdvertiserLocalBusinessApiContainer
-     */
-    public function wechatAdvertiserLocalBusiness()
-    {
-        if (empty($this->wechatAdvertiserLocalBusinessApiContainer)) {
-            $container = new WechatAdvertiserLocalBusinessApiContainer();
-            $container->init($this, $this->getClient());
-            $this->wechatAdvertiserLocalBusinessApiContainer = $container;
-        }
-        return $this->wechatAdvertiserLocalBusinessApiContainer;
-    }
-
-
-    /**
      * @return WechatFundStatementsDetailedApiContainer
      */
     public function wechatFundStatementsDetailed()
@@ -3116,20 +3000,6 @@ class App
             $this->wechatFundStatementsDetailedApiContainer = $container;
         }
         return $this->wechatFundStatementsDetailedApiContainer;
-    }
-
-
-    /**
-     * @return WechatFundTransferApiContainer
-     */
-    public function wechatFundTransfer()
-    {
-        if (empty($this->wechatFundTransferApiContainer)) {
-            $container = new WechatFundTransferApiContainer();
-            $container->init($this, $this->getClient());
-            $this->wechatFundTransferApiContainer = $container;
-        }
-        return $this->wechatFundTransferApiContainer;
     }
 
 
@@ -3228,20 +3098,6 @@ class App
             $this->wechatPagesGrantinfoApiContainer = $container;
         }
         return $this->wechatPagesGrantinfoApiContainer;
-    }
-
-
-    /**
-     * @return WechatQualificationsApiContainer
-     */
-    public function wechatQualifications()
-    {
-        if (empty($this->wechatQualificationsApiContainer)) {
-            $container = new WechatQualificationsApiContainer();
-            $container->init($this, $this->getClient());
-            $this->wechatQualificationsApiContainer = $container;
-        }
-        return $this->wechatQualificationsApiContainer;
     }
 
 

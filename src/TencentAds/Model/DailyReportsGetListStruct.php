@@ -848,7 +848,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'channelsMatchHeartPv' => 'int',
         'channelsMatchCommentPv' => 'int',
         'channelsMatchSharePv' => 'int',
-        'exportId' => 'string'
+        'exportId' => 'string',
+        'projectId' => 'int',
+        'projectName' => 'string'
     ];
 
     /**
@@ -1647,7 +1649,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'channelsMatchHeartPv' => 'int64',
         'channelsMatchCommentPv' => 'int64',
         'channelsMatchSharePv' => 'int64',
-        'exportId' => null
+        'exportId' => null,
+        'projectId' => 'int64',
+        'projectName' => null
     ];
 
     /**
@@ -2467,7 +2471,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'channelsMatchHeartPv' => 'channels_match_heart_pv',
         'channelsMatchCommentPv' => 'channels_match_comment_pv',
         'channelsMatchSharePv' => 'channels_match_share_pv',
-        'exportId' => 'export_id'
+        'exportId' => 'export_id',
+        'projectId' => 'project_id',
+        'projectName' => 'project_name'
     ];
 
     /**
@@ -3266,7 +3272,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'channelsMatchHeartPv' => 'setChannelsMatchHeartPv',
         'channelsMatchCommentPv' => 'setChannelsMatchCommentPv',
         'channelsMatchSharePv' => 'setChannelsMatchSharePv',
-        'exportId' => 'setExportId'
+        'exportId' => 'setExportId',
+        'projectId' => 'setProjectId',
+        'projectName' => 'setProjectName'
     ];
 
     /**
@@ -4065,7 +4073,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'channelsMatchHeartPv' => 'getChannelsMatchHeartPv',
         'channelsMatchCommentPv' => 'getChannelsMatchCommentPv',
         'channelsMatchSharePv' => 'getChannelsMatchSharePv',
-        'exportId' => 'getExportId'
+        'exportId' => 'getExportId',
+        'projectId' => 'getProjectId',
+        'projectName' => 'getProjectName'
     ];
 
     /**
@@ -4919,6 +4929,8 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['channelsMatchCommentPv'] = isset($data['channelsMatchCommentPv']) ? $data['channelsMatchCommentPv'] : null;
         $this->container['channelsMatchSharePv'] = isset($data['channelsMatchSharePv']) ? $data['channelsMatchSharePv'] : null;
         $this->container['exportId'] = isset($data['exportId']) ? $data['exportId'] : null;
+        $this->container['projectId'] = isset($data['projectId']) ? $data['projectId'] : null;
+        $this->container['projectName'] = isset($data['projectName']) ? $data['projectName'] : null;
     }
 
     /**
@@ -23925,6 +23937,54 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setExportId($exportId)
     {
         $this->container['exportId'] = $exportId;
+
+        return $this;
+    }
+
+    /**
+     * Gets projectId
+     *
+     * @return int|mixed
+     */
+    public function getProjectId()
+    {
+        return $this->container['projectId'];
+    }
+
+    /**
+     * Sets projectId
+     *
+     * @param int|mixed $projectId projectId
+     *
+     * @return $this
+     */
+    public function setProjectId($projectId)
+    {
+        $this->container['projectId'] = $projectId;
+
+        return $this;
+    }
+
+    /**
+     * Gets projectName
+     *
+     * @return string|mixed
+     */
+    public function getProjectName()
+    {
+        return $this->container['projectName'];
+    }
+
+    /**
+     * Sets projectName
+     *
+     * @param string|mixed $projectName projectName
+     *
+     * @return $this
+     */
+    public function setProjectName($projectName)
+    {
+        $this->container['projectName'] = $projectName;
 
         return $this;
     }

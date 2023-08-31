@@ -819,7 +819,9 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'forwardUserCount' => 'int',
         'videoOuterPlayUserCount' => 'int',
         'videoInnerPlayUserCount' => 'int',
-        'poiId' => 'string'
+        'poiId' => 'string',
+        'projectId' => 'int',
+        'projectName' => 'string'
     ];
 
     /**
@@ -1589,7 +1591,9 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'forwardUserCount' => 'int64',
         'videoOuterPlayUserCount' => 'int64',
         'videoInnerPlayUserCount' => 'int64',
-        'poiId' => null
+        'poiId' => null,
+        'projectId' => 'int64',
+        'projectName' => null
     ];
 
     /**
@@ -2380,7 +2384,9 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'forwardUserCount' => 'forward_user_count',
         'videoOuterPlayUserCount' => 'video_outer_play_user_count',
         'videoInnerPlayUserCount' => 'video_inner_play_user_count',
-        'poiId' => 'poi_id'
+        'poiId' => 'poi_id',
+        'projectId' => 'project_id',
+        'projectName' => 'project_name'
     ];
 
     /**
@@ -3150,7 +3156,9 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'forwardUserCount' => 'setForwardUserCount',
         'videoOuterPlayUserCount' => 'setVideoOuterPlayUserCount',
         'videoInnerPlayUserCount' => 'setVideoInnerPlayUserCount',
-        'poiId' => 'setPoiId'
+        'poiId' => 'setPoiId',
+        'projectId' => 'setProjectId',
+        'projectName' => 'setProjectName'
     ];
 
     /**
@@ -3920,7 +3928,9 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'forwardUserCount' => 'getForwardUserCount',
         'videoOuterPlayUserCount' => 'getVideoOuterPlayUserCount',
         'videoInnerPlayUserCount' => 'getVideoInnerPlayUserCount',
-        'poiId' => 'getPoiId'
+        'poiId' => 'getPoiId',
+        'projectId' => 'getProjectId',
+        'projectName' => 'getProjectName'
     ];
 
     /**
@@ -4745,6 +4755,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['videoOuterPlayUserCount'] = isset($data['videoOuterPlayUserCount']) ? $data['videoOuterPlayUserCount'] : null;
         $this->container['videoInnerPlayUserCount'] = isset($data['videoInnerPlayUserCount']) ? $data['videoInnerPlayUserCount'] : null;
         $this->container['poiId'] = isset($data['poiId']) ? $data['poiId'] : null;
+        $this->container['projectId'] = isset($data['projectId']) ? $data['projectId'] : null;
+        $this->container['projectName'] = isset($data['projectName']) ? $data['projectName'] : null;
     }
 
     /**
@@ -23055,6 +23067,54 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setPoiId($poiId)
     {
         $this->container['poiId'] = $poiId;
+
+        return $this;
+    }
+
+    /**
+     * Gets projectId
+     *
+     * @return int|mixed
+     */
+    public function getProjectId()
+    {
+        return $this->container['projectId'];
+    }
+
+    /**
+     * Sets projectId
+     *
+     * @param int|mixed $projectId projectId
+     *
+     * @return $this
+     */
+    public function setProjectId($projectId)
+    {
+        $this->container['projectId'] = $projectId;
+
+        return $this;
+    }
+
+    /**
+     * Gets projectName
+     *
+     * @return string|mixed
+     */
+    public function getProjectName()
+    {
+        return $this->container['projectName'];
+    }
+
+    /**
+     * Sets projectName
+     *
+     * @param string|mixed $projectName projectName
+     *
+     * @return $this
+     */
+    public function setProjectName($projectName)
+    {
+        $this->container['projectName'] = $projectName;
 
         return $this;
     }

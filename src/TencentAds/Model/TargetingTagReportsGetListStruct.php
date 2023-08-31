@@ -731,7 +731,9 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD3PlaRoi' => 'double',
         'miniGamePayD7PlaRoi' => 'double',
         'miniGamePayD14PlaRoi' => 'double',
-        'miniGamePayD30PlaRoi' => 'double'
+        'miniGamePayD30PlaRoi' => 'double',
+        'projectId' => 'int',
+        'projectName' => 'string'
     ];
 
     /**
@@ -1413,7 +1415,9 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD3PlaRoi' => 'double',
         'miniGamePayD7PlaRoi' => 'double',
         'miniGamePayD14PlaRoi' => 'double',
-        'miniGamePayD30PlaRoi' => 'double'
+        'miniGamePayD30PlaRoi' => 'double',
+        'projectId' => 'int64',
+        'projectName' => null
     ];
 
     /**
@@ -2116,7 +2120,9 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD3PlaRoi' => 'mini_game_pay_d3_pla_roi',
         'miniGamePayD7PlaRoi' => 'mini_game_pay_d7_pla_roi',
         'miniGamePayD14PlaRoi' => 'mini_game_pay_d14_pla_roi',
-        'miniGamePayD30PlaRoi' => 'mini_game_pay_d30_pla_roi'
+        'miniGamePayD30PlaRoi' => 'mini_game_pay_d30_pla_roi',
+        'projectId' => 'project_id',
+        'projectName' => 'project_name'
     ];
 
     /**
@@ -2798,7 +2804,9 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD3PlaRoi' => 'setMiniGamePayD3PlaRoi',
         'miniGamePayD7PlaRoi' => 'setMiniGamePayD7PlaRoi',
         'miniGamePayD14PlaRoi' => 'setMiniGamePayD14PlaRoi',
-        'miniGamePayD30PlaRoi' => 'setMiniGamePayD30PlaRoi'
+        'miniGamePayD30PlaRoi' => 'setMiniGamePayD30PlaRoi',
+        'projectId' => 'setProjectId',
+        'projectName' => 'setProjectName'
     ];
 
     /**
@@ -3480,7 +3488,9 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD3PlaRoi' => 'getMiniGamePayD3PlaRoi',
         'miniGamePayD7PlaRoi' => 'getMiniGamePayD7PlaRoi',
         'miniGamePayD14PlaRoi' => 'getMiniGamePayD14PlaRoi',
-        'miniGamePayD30PlaRoi' => 'getMiniGamePayD30PlaRoi'
+        'miniGamePayD30PlaRoi' => 'getMiniGamePayD30PlaRoi',
+        'projectId' => 'getProjectId',
+        'projectName' => 'getProjectName'
     ];
 
     /**
@@ -4217,6 +4227,8 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGamePayD7PlaRoi'] = isset($data['miniGamePayD7PlaRoi']) ? $data['miniGamePayD7PlaRoi'] : null;
         $this->container['miniGamePayD14PlaRoi'] = isset($data['miniGamePayD14PlaRoi']) ? $data['miniGamePayD14PlaRoi'] : null;
         $this->container['miniGamePayD30PlaRoi'] = isset($data['miniGamePayD30PlaRoi']) ? $data['miniGamePayD30PlaRoi'] : null;
+        $this->container['projectId'] = isset($data['projectId']) ? $data['projectId'] : null;
+        $this->container['projectName'] = isset($data['projectName']) ? $data['projectName'] : null;
     }
 
     /**
@@ -20415,6 +20427,54 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setMiniGamePayD30PlaRoi($miniGamePayD30PlaRoi)
     {
         $this->container['miniGamePayD30PlaRoi'] = $miniGamePayD30PlaRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets projectId
+     *
+     * @return int|mixed
+     */
+    public function getProjectId()
+    {
+        return $this->container['projectId'];
+    }
+
+    /**
+     * Sets projectId
+     *
+     * @param int|mixed $projectId projectId
+     *
+     * @return $this
+     */
+    public function setProjectId($projectId)
+    {
+        $this->container['projectId'] = $projectId;
+
+        return $this;
+    }
+
+    /**
+     * Gets projectName
+     *
+     * @return string|mixed
+     */
+    public function getProjectName()
+    {
+        return $this->container['projectName'];
+    }
+
+    /**
+     * Sets projectName
+     *
+     * @param string|mixed $projectName projectName
+     *
+     * @return $this
+     */
+    public function setProjectName($projectName)
+    {
+        $this->container['projectName'] = $projectName;
 
         return $this;
     }
