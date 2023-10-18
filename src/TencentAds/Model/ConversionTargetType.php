@@ -68,6 +68,8 @@ class ConversionTargetType
     const EXPERIENCE = 'CONVERSION_TARGET_EXPERIENCE';
     const SETUP = 'CONVERSION_TARGET_SETUP';
     const SECKILL = 'CONVERSION_TARGET_SECKILL';
+    const ADD_WECOM = 'CONVERSION_TARGET_ADD_WECOM';
+    const LIKE = 'CONVERSION_TARGET_LIKE';
     
     /**
      * Gets allowable values of the enum
@@ -100,6 +102,8 @@ class ConversionTargetType
             self::EXPERIENCE,
             self::SETUP,
             self::SECKILL,
+            self::ADD_WECOM,
+            self::LIKE,
         ];
     }
 }

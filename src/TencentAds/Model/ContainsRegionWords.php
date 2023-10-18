@@ -1,6 +1,6 @@
 <?php
 /**
- * DynamicAdTemplateOwnershipType
+ * ContainsRegionWords
  *
  * PHP version 5
  *
@@ -31,29 +31,21 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DynamicAdTemplateOwnershipType Class Doc Comment
+ * ContainsRegionWords Class Doc Comment
  *
  * @category Class
- * @description 动态商品模板所属类型
+ * @description 是否包含非地域词
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DynamicAdTemplateOwnershipType
+class ContainsRegionWords
 {
     /**
      * Possible values of this enum
      */
-    const PRIVATE_TEMPLATE = 'PRIVATE_TEMPLATE';
-    const PUBLIC_TEMPLATE = 'PUBLIC_TEMPLATE';
-    const SELF_OWNED_TEMPLATE = 'SELF_OWNED_TEMPLATE';
-    const GRANTED_TEMPLATE = 'GRANTED_TEMPLATE';
-    const ALL = 'ALL';
-    const SELF_OWNED = 'SELF_OWNED';
-    const GRANTED = 'GRANTED';
-    const COMMON = 'COMMON';
-    const PRODUCT_CATALOG_OWNED = 'PRODUCT_CATALOG_OWNED';
-    const PRODUCT_VIDEO_STRAIGHT_OUT = 'PRODUCT_VIDEO_STRAIGHT_OUT';
+    const ENABLED = 'CONTAINS_REGION_ENABLED';
+    const DISABLED = 'CONTAINS_REGION_DISABLED';
     
     /**
      * Gets allowable values of the enum
@@ -62,16 +54,8 @@ class DynamicAdTemplateOwnershipType
     public static function getAllowableEnumValues()
     {
         return [
-            self::PRIVATE_TEMPLATE,
-            self::PUBLIC_TEMPLATE,
-            self::SELF_OWNED_TEMPLATE,
-            self::GRANTED_TEMPLATE,
-            self::ALL,
-            self::SELF_OWNED,
-            self::GRANTED,
-            self::COMMON,
-            self::PRODUCT_CATALOG_OWNED,
-            self::PRODUCT_VIDEO_STRAIGHT_OUT,
+            self::ENABLED,
+            self::DISABLED,
         ];
     }
 }

@@ -60,7 +60,10 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'code' => 'string',
         'tips' => 'string',
-        'description' => 'string'
+        'description' => 'string',
+        'gameGiftId' => 'string',
+        'gameActId' => 'string',
+        'gameGiftImageId' => 'string'
     ];
 
     /**
@@ -71,7 +74,10 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'code' => null,
         'tips' => null,
-        'description' => null
+        'description' => null,
+        'gameGiftId' => null,
+        'gameActId' => null,
+        'gameGiftImageId' => null
     ];
 
     /**
@@ -103,7 +109,10 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'code' => 'code',
         'tips' => 'tips',
-        'description' => 'description'
+        'description' => 'description',
+        'gameGiftId' => 'game_gift_id',
+        'gameActId' => 'game_act_id',
+        'gameGiftImageId' => 'game_gift_image_id'
     ];
 
     /**
@@ -114,7 +123,10 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
     protected static $setters = [
         'code' => 'setCode',
         'tips' => 'setTips',
-        'description' => 'setDescription'
+        'description' => 'setDescription',
+        'gameGiftId' => 'setGameGiftId',
+        'gameActId' => 'setGameActId',
+        'gameGiftImageId' => 'setGameGiftImageId'
     ];
 
     /**
@@ -125,7 +137,10 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
     protected static $getters = [
         'code' => 'getCode',
         'tips' => 'getTips',
-        'description' => 'getDescription'
+        'description' => 'getDescription',
+        'gameGiftId' => 'getGameGiftId',
+        'gameActId' => 'getGameActId',
+        'gameGiftImageId' => 'getGameGiftImageId'
     ];
 
     /**
@@ -191,6 +206,9 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
         $this->container['code'] = isset($data['code']) ? $data['code'] : null;
         $this->container['tips'] = isset($data['tips']) ? $data['tips'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
+        $this->container['gameGiftId'] = isset($data['gameGiftId']) ? $data['gameGiftId'] : null;
+        $this->container['gameActId'] = isset($data['gameActId']) ? $data['gameActId'] : null;
+        $this->container['gameGiftImageId'] = isset($data['gameGiftImageId']) ? $data['gameGiftImageId'] : null;
     }
 
     /**
@@ -285,6 +303,78 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
     public function setDescription($description)
     {
         $this->container['description'] = $description;
+
+        return $this;
+    }
+
+    /**
+     * Gets gameGiftId
+     *
+     * @return string|mixed
+     */
+    public function getGameGiftId()
+    {
+        return $this->container['gameGiftId'];
+    }
+
+    /**
+     * Sets gameGiftId
+     *
+     * @param string|mixed $gameGiftId gameGiftId
+     *
+     * @return $this
+     */
+    public function setGameGiftId($gameGiftId)
+    {
+        $this->container['gameGiftId'] = $gameGiftId;
+
+        return $this;
+    }
+
+    /**
+     * Gets gameActId
+     *
+     * @return string|mixed
+     */
+    public function getGameActId()
+    {
+        return $this->container['gameActId'];
+    }
+
+    /**
+     * Sets gameActId
+     *
+     * @param string|mixed $gameActId gameActId
+     *
+     * @return $this
+     */
+    public function setGameActId($gameActId)
+    {
+        $this->container['gameActId'] = $gameActId;
+
+        return $this;
+    }
+
+    /**
+     * Gets gameGiftImageId
+     *
+     * @return string|mixed
+     */
+    public function getGameGiftImageId()
+    {
+        return $this->container['gameGiftImageId'];
+    }
+
+    /**
+     * Sets gameGiftImageId
+     *
+     * @param string|mixed $gameGiftImageId gameGiftImageId
+     *
+     * @return $this
+     */
+    public function setGameGiftImageId($gameGiftImageId)
+    {
+        $this->container['gameGiftImageId'] = $gameGiftImageId;
 
         return $this;
     }

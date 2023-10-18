@@ -92,15 +92,25 @@ class CreativeSampleProductsApi
      *
      * 获取创意示例商品列表
      *
-     * @param  \TencentAds\Model\CreativeSampleProductsGetRequest|mixed $data data (required)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $productCatalogId productCatalogId (required)
+     * @param  string[]|mixed $productOuterIds productOuterIds (optional)
+     * @param  int|mixed $productSeriesId productSeriesId (optional)
+     * @param  int|mixed $templateId templateId (optional)
+     * @param  string|mixed $templateType templateType (optional)
+     * @param  string|mixed $imageId imageId (optional)
+     * @param  string|mixed $videoId videoId (optional)
+     * @param  string[]|mixed $productFields productFields (optional)
+     * @param  int|mixed $limit limit (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\CreativeSampleProductsGetResponse|mixed
      */
-    public function creativeSampleProductsGet($data)
+    public function creativeSampleProductsGet($accountId, $productCatalogId, $productOuterIds = null, $productSeriesId = null, $templateId = null, $templateType = null, $imageId = null, $videoId = null, $productFields = null, $limit = null, $fields = null)
     {
-        list($response) = $this->creativeSampleProductsGetWithHttpInfo($data);
+        list($response) = $this->creativeSampleProductsGetWithHttpInfo($accountId, $productCatalogId, $productOuterIds, $productSeriesId, $templateId, $templateType, $imageId, $videoId, $productFields, $limit, $fields);
         return $response;
     }
 
@@ -109,16 +119,26 @@ class CreativeSampleProductsApi
      *
      * 获取创意示例商品列表
      *
-     * @param  \TencentAds\Model\CreativeSampleProductsGetRequest|mixed $data (required)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  string[]|mixed $productOuterIds (optional)
+     * @param  int|mixed $productSeriesId (optional)
+     * @param  int|mixed $templateId (optional)
+     * @param  string|mixed $templateType (optional)
+     * @param  string|mixed $imageId (optional)
+     * @param  string|mixed $videoId (optional)
+     * @param  string[]|mixed $productFields (optional)
+     * @param  int|mixed $limit (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\CreativeSampleProductsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function creativeSampleProductsGetWithHttpInfo($data)
+    public function creativeSampleProductsGetWithHttpInfo($accountId, $productCatalogId, $productOuterIds = null, $productSeriesId = null, $templateId = null, $templateType = null, $imageId = null, $videoId = null, $productFields = null, $limit = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\CreativeSampleProductsGetResponse';
-        $request = $this->creativeSampleProductsGetRequest($data);
+        $request = $this->creativeSampleProductsGetRequest($accountId, $productCatalogId, $productOuterIds, $productSeriesId, $templateId, $templateType, $imageId, $videoId, $productFields, $limit, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -184,14 +204,24 @@ class CreativeSampleProductsApi
      *
      * 获取创意示例商品列表
      *
-     * @param  \TencentAds\Model\CreativeSampleProductsGetRequest|mixed $data (required)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  string[]|mixed $productOuterIds (optional)
+     * @param  int|mixed $productSeriesId (optional)
+     * @param  int|mixed $templateId (optional)
+     * @param  string|mixed $templateType (optional)
+     * @param  string|mixed $imageId (optional)
+     * @param  string|mixed $videoId (optional)
+     * @param  string[]|mixed $productFields (optional)
+     * @param  int|mixed $limit (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function creativeSampleProductsGetAsync($data)
+    public function creativeSampleProductsGetAsync($accountId, $productCatalogId, $productOuterIds = null, $productSeriesId = null, $templateId = null, $templateType = null, $imageId = null, $videoId = null, $productFields = null, $limit = null, $fields = null)
     {
-        return $this->creativeSampleProductsGetAsyncWithHttpInfo($data)
+        return $this->creativeSampleProductsGetAsyncWithHttpInfo($accountId, $productCatalogId, $productOuterIds, $productSeriesId, $templateId, $templateType, $imageId, $videoId, $productFields, $limit, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -204,15 +234,25 @@ class CreativeSampleProductsApi
      *
      * 获取创意示例商品列表
      *
-     * @param  \TencentAds\Model\CreativeSampleProductsGetRequest|mixed $data (required)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  string[]|mixed $productOuterIds (optional)
+     * @param  int|mixed $productSeriesId (optional)
+     * @param  int|mixed $templateId (optional)
+     * @param  string|mixed $templateType (optional)
+     * @param  string|mixed $imageId (optional)
+     * @param  string|mixed $videoId (optional)
+     * @param  string[]|mixed $productFields (optional)
+     * @param  int|mixed $limit (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function creativeSampleProductsGetAsyncWithHttpInfo($data)
+    public function creativeSampleProductsGetAsyncWithHttpInfo($accountId, $productCatalogId, $productOuterIds = null, $productSeriesId = null, $templateId = null, $templateType = null, $imageId = null, $videoId = null, $productFields = null, $limit = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\CreativeSampleProductsGetResponse';
-        $request = $this->creativeSampleProductsGetRequest($data);
+        $request = $this->creativeSampleProductsGetRequest($accountId, $productCatalogId, $productOuterIds, $productSeriesId, $templateId, $templateType, $imageId, $videoId, $productFields, $limit, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -254,17 +294,33 @@ class CreativeSampleProductsApi
     /**
      * Create request for operation 'creativeSampleProductsGet'
      *
-     * @param  \TencentAds\Model\CreativeSampleProductsGetRequest|mixed $data (required)
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  string[]|mixed $productOuterIds (optional)
+     * @param  int|mixed $productSeriesId (optional)
+     * @param  int|mixed $templateId (optional)
+     * @param  string|mixed $templateType (optional)
+     * @param  string|mixed $imageId (optional)
+     * @param  string|mixed $videoId (optional)
+     * @param  string[]|mixed $productFields (optional)
+     * @param  int|mixed $limit (optional)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function creativeSampleProductsGetRequest($data)
+    protected function creativeSampleProductsGetRequest($accountId, $productCatalogId, $productOuterIds = null, $productSeriesId = null, $templateId = null, $templateType = null, $imageId = null, $videoId = null, $productFields = null, $limit = null, $fields = null)
     {
-        // verify the required parameter 'data' is set
-        if ($data === null || (is_array($data) && count($data) === 0)) {
+        // verify the required parameter 'accountId' is set
+        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $data when calling creativeSampleProductsGet'
+                'Missing the required parameter $accountId when calling creativeSampleProductsGet'
+            );
+        }
+        // verify the required parameter 'productCatalogId' is set
+        if ($productCatalogId === null || (is_array($productCatalogId) && count($productCatalogId) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $productCatalogId when calling creativeSampleProductsGet'
             );
         }
 
@@ -275,15 +331,65 @@ class CreativeSampleProductsApi
         $httpBody = '';
         $multipart = false;
 
+        // query params
+        if ($accountId !== null) {
+            $queryParams['account_id'] = ObjectSerializer::toQueryValue($accountId);
+        }
+        // query params
+        if ($productCatalogId !== null) {
+            $queryParams['product_catalog_id'] = ObjectSerializer::toQueryValue($productCatalogId);
+        }
+        // query params
+        if (is_array($productOuterIds)) {
+            $queryParams['product_outer_ids'] = $productOuterIds;
+        } else
+        if ($productOuterIds !== null) {
+            $queryParams['product_outer_ids'] = ObjectSerializer::toQueryValue($productOuterIds);
+        }
+        // query params
+        if ($productSeriesId !== null) {
+            $queryParams['product_series_id'] = ObjectSerializer::toQueryValue($productSeriesId);
+        }
+        // query params
+        if ($templateId !== null) {
+            $queryParams['template_id'] = ObjectSerializer::toQueryValue($templateId);
+        }
+        // query params
+        if ($templateType !== null) {
+            $queryParams['template_type'] = ObjectSerializer::toQueryValue($templateType);
+        }
+        // query params
+        if ($imageId !== null) {
+            $queryParams['image_id'] = ObjectSerializer::toQueryValue($imageId);
+        }
+        // query params
+        if ($videoId !== null) {
+            $queryParams['video_id'] = ObjectSerializer::toQueryValue($videoId);
+        }
+        // query params
+        if (is_array($productFields)) {
+            $queryParams['product_fields'] = $productFields;
+        } else
+        if ($productFields !== null) {
+            $queryParams['product_fields'] = ObjectSerializer::toQueryValue($productFields);
+        }
+        // query params
+        if ($limit !== null) {
+            $queryParams['limit'] = ObjectSerializer::toQueryValue($limit);
+        }
+        // query params
+        if (is_array($fields)) {
+            $queryParams['fields'] = $fields;
+        } else
+        if ($fields !== null) {
+            $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);
+        }
 
 
         // body params
         $_tempBody = null;
-        if (isset($data)) {
-            $_tempBody = $data;
-        }
 
-        if (in_array('multipart/form-data', ['application/json', 'application/xml'])) {
+        if (in_array('multipart/form-data', ['text/plain'])) {
             $multipart = true;
         }
         if ($multipart) {
@@ -293,7 +399,7 @@ class CreativeSampleProductsApi
         } else {
             $headers = $this->headerSelector->selectHeaders(
                 ['application/json'],
-                ['application/json', 'application/xml']
+                ['text/plain']
             );
         }
 
@@ -370,7 +476,7 @@ class CreativeSampleProductsApi
             $query = \GuzzleHttp\Psr7\build_query($queryParams);
         }
         return new Request(
-            'POST',
+            'GET',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
             $headers,
             $httpBody

@@ -59,7 +59,8 @@ class ObjectCommentFlagUpdateRequest implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'accountId' => 'int',
         'adcreativeId' => 'int',
-        'opType' => '\TencentAds\Model\SetObjectCommentFlagOpType'
+        'opType' => '\TencentAds\Model\SetObjectCommentFlagOpType',
+        'commentId' => 'string'
     ];
 
     /**
@@ -70,7 +71,8 @@ class ObjectCommentFlagUpdateRequest implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'accountId' => 'int64',
         'adcreativeId' => 'int64',
-        'opType' => null
+        'opType' => null,
+        'commentId' => null
     ];
 
     /**
@@ -102,7 +104,8 @@ class ObjectCommentFlagUpdateRequest implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'accountId' => 'account_id',
         'adcreativeId' => 'adcreative_id',
-        'opType' => 'op_type'
+        'opType' => 'op_type',
+        'commentId' => 'comment_id'
     ];
 
     /**
@@ -113,7 +116,8 @@ class ObjectCommentFlagUpdateRequest implements ModelInterface, ArrayAccess
     protected static $setters = [
         'accountId' => 'setAccountId',
         'adcreativeId' => 'setAdcreativeId',
-        'opType' => 'setOpType'
+        'opType' => 'setOpType',
+        'commentId' => 'setCommentId'
     ];
 
     /**
@@ -124,7 +128,8 @@ class ObjectCommentFlagUpdateRequest implements ModelInterface, ArrayAccess
     protected static $getters = [
         'accountId' => 'getAccountId',
         'adcreativeId' => 'getAdcreativeId',
-        'opType' => 'getOpType'
+        'opType' => 'getOpType',
+        'commentId' => 'getCommentId'
     ];
 
     /**
@@ -190,6 +195,7 @@ class ObjectCommentFlagUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['adcreativeId'] = isset($data['adcreativeId']) ? $data['adcreativeId'] : null;
         $this->container['opType'] = isset($data['opType']) ? $data['opType'] : null;
+        $this->container['commentId'] = isset($data['commentId']) ? $data['commentId'] : null;
     }
 
     /**
@@ -284,6 +290,30 @@ class ObjectCommentFlagUpdateRequest implements ModelInterface, ArrayAccess
     public function setOpType($opType)
     {
         $this->container['opType'] = $opType;
+
+        return $this;
+    }
+
+    /**
+     * Gets commentId
+     *
+     * @return string|mixed
+     */
+    public function getCommentId()
+    {
+        return $this->container['commentId'];
+    }
+
+    /**
+     * Sets commentId
+     *
+     * @param string|mixed $commentId commentId
+     *
+     * @return $this
+     */
+    public function setCommentId($commentId)
+    {
+        $this->container['commentId'] = $commentId;
 
         return $this;
     }

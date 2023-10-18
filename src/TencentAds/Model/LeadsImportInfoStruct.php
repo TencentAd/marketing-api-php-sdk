@@ -78,7 +78,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
         'leadsIneffectReason' => 'string',
         'outerLeadsConvertType' => 'string',
         'outerLeadsIneffectReason' => 'string',
-        'outerLeadsComefrom' => '\TencentAds\Model\ActionChannelType',
+        'outerLeadsComefrom' => '\TencentAds\Model\OuterLeadsComeFrom',
         'memo' => 'string',
         'wechatAgencyId' => 'string',
         'leadsAge' => 'string',
@@ -880,7 +880,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets outerLeadsComefrom
      *
-     * @return \TencentAds\Model\ActionChannelType|mixed
+     * @return \TencentAds\Model\OuterLeadsComeFrom|mixed
      */
     public function getOuterLeadsComefrom()
     {
@@ -890,7 +890,7 @@ class LeadsImportInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets outerLeadsComefrom
      *
-     * @param \TencentAds\Model\ActionChannelType|mixed $outerLeadsComefrom outerLeadsComefrom
+     * @param \TencentAds\Model\OuterLeadsComeFrom|mixed $outerLeadsComefrom outerLeadsComefrom
      *
      * @return $this
      */

@@ -51,6 +51,7 @@ class ActionChannelType
     const ALIBABA = 'ALIBABA';
     const BAIDU = 'BAIDU';
     const OTHERS = 'OTHERS';
+    const MULTIPLE = 'MULTIPLE';
     const UNKNOWN = 'UNKNOWN';
     
     /**
@@ -67,6 +68,7 @@ class ActionChannelType
             self::ALIBABA,
             self::BAIDU,
             self::OTHERS,
+            self::MULTIPLE,
             self::UNKNOWN,
         ];
     }

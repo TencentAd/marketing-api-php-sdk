@@ -84,6 +84,9 @@ class DestinationTypeRead
     const LINGQUE_H5 = 'PAGE_TYPE_LINGQUE_H5';
     const LINGQUE_MINI_PROGRAM = 'PAGE_TYPE_LINGQUE_MINI_PROGRAM';
     const WECHAT_APPOINTMENT_CARD = 'PAGE_TYPE_WECHAT_APPOINTMENT_CARD';
+    const H5_PROFILE = 'PAGE_TYPE_H5_PROFILE';
+    const SEARCH_BRAND_AREA = 'PAGE_TYPE_SEARCH_BRAND_AREA';
+    const WECHAT_CHANNELS_PROFILE = 'PAGE_TYPE_WECHAT_CHANNELS_PROFILE';
     const TSA_OTT = 'PAGE_TYPE_TSA_OTT';
     const NOT_USED = 'PAGE_TYPE_NOT_USED';
     
@@ -134,6 +137,9 @@ class DestinationTypeRead
             self::LINGQUE_H5,
             self::LINGQUE_MINI_PROGRAM,
             self::WECHAT_APPOINTMENT_CARD,
+            self::H5_PROFILE,
+            self::SEARCH_BRAND_AREA,
+            self::WECHAT_CHANNELS_PROFILE,
             self::TSA_OTT,
             self::NOT_USED,
         ];

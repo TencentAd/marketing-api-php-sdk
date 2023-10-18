@@ -47,6 +47,7 @@ class BidwordMatchType
     const EXACT_MATCH = 'EXACT_MATCH';
     const WIDE_MATCH = 'WIDE_MATCH';
     const WORD_MATCH = 'WORD_MATCH';
+    const PHRASE_MATCH = 'PHRASE_MATCH';
     
     /**
      * Gets allowable values of the enum
@@ -58,6 +59,7 @@ class BidwordMatchType
             self::EXACT_MATCH,
             self::WIDE_MATCH,
             self::WORD_MATCH,
+            self::PHRASE_MATCH,
         ];
     }
 }

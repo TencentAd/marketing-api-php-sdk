@@ -1,6 +1,6 @@
 <?php
 /**
- * DiagnosisGetResponseData
+ * DeleteAdgroupItemClean
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DiagnosisGetResponseData Class Doc Comment
+ * DeleteAdgroupItemClean Class Doc Comment
  *
  * @category Class
+ * @description 删除广告组
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DiagnosisGetResponseData implements ModelInterface, ArrayAccess
+class DeleteAdgroupItemClean implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class DiagnosisGetResponseData implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'DiagnosisGetResponseData';
+    protected static $swaggerModelName = 'delete_adgroup_item_clean';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,8 +58,8 @@ class DiagnosisGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'list' => '\TencentAds\Model\DiagnosisGetListStruct[]',
-        'pageInfo' => '\TencentAds\Model\PageInfo'
+        'adgroupId' => 'int',
+        'accountId' => 'int'
     ];
 
     /**
@@ -67,8 +68,8 @@ class DiagnosisGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'list' => null,
-        'pageInfo' => null
+        'adgroupId' => 'int64',
+        'accountId' => 'int64'
     ];
 
     /**
@@ -98,8 +99,8 @@ class DiagnosisGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'list' => 'list',
-        'pageInfo' => 'page_info'
+        'adgroupId' => 'adgroup_id',
+        'accountId' => 'account_id'
     ];
 
     /**
@@ -108,8 +109,8 @@ class DiagnosisGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'list' => 'setList',
-        'pageInfo' => 'setPageInfo'
+        'adgroupId' => 'setAdgroupId',
+        'accountId' => 'setAccountId'
     ];
 
     /**
@@ -118,8 +119,8 @@ class DiagnosisGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'list' => 'getList',
-        'pageInfo' => 'getPageInfo'
+        'adgroupId' => 'getAdgroupId',
+        'accountId' => 'getAccountId'
     ];
 
     /**
@@ -182,8 +183,8 @@ class DiagnosisGetResponseData implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
-        $this->container['pageInfo'] = isset($data['pageInfo']) ? $data['pageInfo'] : null;
+        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
     /**
@@ -211,49 +212,49 @@ class DiagnosisGetResponseData implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets list
+     * Gets adgroupId
      *
-     * @return \TencentAds\Model\DiagnosisGetListStruct[]|mixed
+     * @return int|mixed
      */
-    public function getList()
+    public function getAdgroupId()
     {
-        return $this->container['list'];
+        return $this->container['adgroupId'];
     }
 
     /**
-     * Sets list
+     * Sets adgroupId
      *
-     * @param \TencentAds\Model\DiagnosisGetListStruct[]|mixed $list list
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
-    public function setList($list)
+    public function setAdgroupId($adgroupId)
     {
-        $this->container['list'] = $list;
+        $this->container['adgroupId'] = $adgroupId;
 
         return $this;
     }
 
     /**
-     * Gets pageInfo
+     * Gets accountId
      *
-     * @return \TencentAds\Model\PageInfo|mixed
+     * @return int|mixed
      */
-    public function getPageInfo()
+    public function getAccountId()
     {
-        return $this->container['pageInfo'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets pageInfo
+     * Sets accountId
      *
-     * @param \TencentAds\Model\PageInfo|mixed $pageInfo pageInfo
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setPageInfo($pageInfo)
+    public function setAccountId($accountId)
     {
-        $this->container['pageInfo'] = $pageInfo;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * IntSiteSetDefinition
+ * PreReviewSiteSetDefinitionString
  *
  * PHP version 5
  *
@@ -31,15 +31,15 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * IntSiteSetDefinition Class Doc Comment
+ * PreReviewSiteSetDefinitionString Class Doc Comment
  *
  * @category Class
- * @description 投放站点集合
+ * @description 预审投放版位集合
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class IntSiteSetDefinition
+class PreReviewSiteSetDefinitionString
 {
     /**
      * Possible values of this enum

@@ -61,7 +61,10 @@ class MassiveKeywordRecommendDataInfo implements ModelInterface, ArrayAccess
         'seedWords' => 'string[]',
         'isFilterPurchasedWords' => '\TencentAds\Model\FilterPurchasedWords',
         'siteSets' => 'string[]',
-        'excludeWords' => 'string[]'
+        'excludeWords' => 'string[]',
+        'containsNonRegionalWords' => '\TencentAds\Model\ContainsRegionWords',
+        'wordProvince' => 'int[]',
+        'wordCity' => 'int[]'
     ];
 
     /**
@@ -73,7 +76,10 @@ class MassiveKeywordRecommendDataInfo implements ModelInterface, ArrayAccess
         'seedWords' => null,
         'isFilterPurchasedWords' => null,
         'siteSets' => null,
-        'excludeWords' => null
+        'excludeWords' => null,
+        'containsNonRegionalWords' => null,
+        'wordProvince' => 'int64',
+        'wordCity' => 'int64'
     ];
 
     /**
@@ -106,7 +112,10 @@ class MassiveKeywordRecommendDataInfo implements ModelInterface, ArrayAccess
         'seedWords' => 'seed_words',
         'isFilterPurchasedWords' => 'is_filter_purchased_words',
         'siteSets' => 'site_sets',
-        'excludeWords' => 'exclude_words'
+        'excludeWords' => 'exclude_words',
+        'containsNonRegionalWords' => 'contains_non_regional_words',
+        'wordProvince' => 'word_province',
+        'wordCity' => 'word_city'
     ];
 
     /**
@@ -118,7 +127,10 @@ class MassiveKeywordRecommendDataInfo implements ModelInterface, ArrayAccess
         'seedWords' => 'setSeedWords',
         'isFilterPurchasedWords' => 'setIsFilterPurchasedWords',
         'siteSets' => 'setSiteSets',
-        'excludeWords' => 'setExcludeWords'
+        'excludeWords' => 'setExcludeWords',
+        'containsNonRegionalWords' => 'setContainsNonRegionalWords',
+        'wordProvince' => 'setWordProvince',
+        'wordCity' => 'setWordCity'
     ];
 
     /**
@@ -130,7 +142,10 @@ class MassiveKeywordRecommendDataInfo implements ModelInterface, ArrayAccess
         'seedWords' => 'getSeedWords',
         'isFilterPurchasedWords' => 'getIsFilterPurchasedWords',
         'siteSets' => 'getSiteSets',
-        'excludeWords' => 'getExcludeWords'
+        'excludeWords' => 'getExcludeWords',
+        'containsNonRegionalWords' => 'getContainsNonRegionalWords',
+        'wordProvince' => 'getWordProvince',
+        'wordCity' => 'getWordCity'
     ];
 
     /**
@@ -197,6 +212,9 @@ class MassiveKeywordRecommendDataInfo implements ModelInterface, ArrayAccess
         $this->container['isFilterPurchasedWords'] = isset($data['isFilterPurchasedWords']) ? $data['isFilterPurchasedWords'] : null;
         $this->container['siteSets'] = isset($data['siteSets']) ? $data['siteSets'] : null;
         $this->container['excludeWords'] = isset($data['excludeWords']) ? $data['excludeWords'] : null;
+        $this->container['containsNonRegionalWords'] = isset($data['containsNonRegionalWords']) ? $data['containsNonRegionalWords'] : null;
+        $this->container['wordProvince'] = isset($data['wordProvince']) ? $data['wordProvince'] : null;
+        $this->container['wordCity'] = isset($data['wordCity']) ? $data['wordCity'] : null;
     }
 
     /**
@@ -315,6 +333,78 @@ class MassiveKeywordRecommendDataInfo implements ModelInterface, ArrayAccess
     public function setExcludeWords($excludeWords)
     {
         $this->container['excludeWords'] = $excludeWords;
+
+        return $this;
+    }
+
+    /**
+     * Gets containsNonRegionalWords
+     *
+     * @return \TencentAds\Model\ContainsRegionWords|mixed
+     */
+    public function getContainsNonRegionalWords()
+    {
+        return $this->container['containsNonRegionalWords'];
+    }
+
+    /**
+     * Sets containsNonRegionalWords
+     *
+     * @param \TencentAds\Model\ContainsRegionWords|mixed $containsNonRegionalWords containsNonRegionalWords
+     *
+     * @return $this
+     */
+    public function setContainsNonRegionalWords($containsNonRegionalWords)
+    {
+        $this->container['containsNonRegionalWords'] = $containsNonRegionalWords;
+
+        return $this;
+    }
+
+    /**
+     * Gets wordProvince
+     *
+     * @return int[]|mixed
+     */
+    public function getWordProvince()
+    {
+        return $this->container['wordProvince'];
+    }
+
+    /**
+     * Sets wordProvince
+     *
+     * @param int[]|mixed $wordProvince wordProvince
+     *
+     * @return $this
+     */
+    public function setWordProvince($wordProvince)
+    {
+        $this->container['wordProvince'] = $wordProvince;
+
+        return $this;
+    }
+
+    /**
+     * Gets wordCity
+     *
+     * @return int[]|mixed
+     */
+    public function getWordCity()
+    {
+        return $this->container['wordCity'];
+    }
+
+    /**
+     * Sets wordCity
+     *
+     * @param int[]|mixed $wordCity wordCity
+     *
+     * @return $this
+     */
+    public function setWordCity($wordCity)
+    {
+        $this->container['wordCity'] = $wordCity;
 
         return $this;
     }

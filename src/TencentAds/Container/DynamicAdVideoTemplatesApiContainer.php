@@ -47,8 +47,9 @@ class DynamicAdVideoTemplatesApiContainer extends ApiContainer
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $templateIdList = isset($params['template_id_list']) ? $params['template_id_list'] : null;
             $templateName = isset($params['template_name']) ? $params['template_name'] : null;
+            $dynamicAdTemplateOwnershipType = isset($params['dynamic_ad_template_ownership_type']) ? $params['dynamic_ad_template_ownership_type'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->dynamicAdVideoTemplatesGet($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel, $page, $pageSize, $templateIdList, $templateName, $fields);
+            $response = $this->apiInstance->dynamicAdVideoTemplatesGet($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel, $page, $pageSize, $templateIdList, $templateName, $dynamicAdTemplateOwnershipType, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -72,8 +73,9 @@ class DynamicAdVideoTemplatesApiContainer extends ApiContainer
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $templateIdList = isset($params['template_id_list']) ? $params['template_id_list'] : null;
             $templateName = isset($params['template_name']) ? $params['template_name'] : null;
+            $dynamicAdTemplateOwnershipType = isset($params['dynamic_ad_template_ownership_type']) ? $params['dynamic_ad_template_ownership_type'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->dynamicAdVideoTemplatesGetAsync($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel, $page, $pageSize, $templateIdList, $templateName, $fields);
+            $response = $this->apiInstance->dynamicAdVideoTemplatesGetAsync($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel, $page, $pageSize, $templateIdList, $templateName, $dynamicAdTemplateOwnershipType, $fields);
             return $response;
         });
     }

@@ -72,8 +72,8 @@ class CreativeSampleProductsGetListStruct implements ModelInterface, ArrayAccess
         'advertisementPortraitImages' => 'string[]',
         'videoUrl' => 'string',
         'adDirectVideos' => 'string[]',
-        'adDirectLandscapeVideos' => 'string[]',
-        'adDirectPortraitVideos' => 'string[]'
+        'adDirectLandscapeVideo' => 'string',
+        'adDirectPortraitVideo' => 'string'
     ];
 
     /**
@@ -96,8 +96,8 @@ class CreativeSampleProductsGetListStruct implements ModelInterface, ArrayAccess
         'advertisementPortraitImages' => null,
         'videoUrl' => null,
         'adDirectVideos' => null,
-        'adDirectLandscapeVideos' => null,
-        'adDirectPortraitVideos' => null
+        'adDirectLandscapeVideo' => null,
+        'adDirectPortraitVideo' => null
     ];
 
     /**
@@ -141,8 +141,8 @@ class CreativeSampleProductsGetListStruct implements ModelInterface, ArrayAccess
         'advertisementPortraitImages' => 'advertisement_portrait_images',
         'videoUrl' => 'video_url',
         'adDirectVideos' => 'ad_direct_videos',
-        'adDirectLandscapeVideos' => 'ad_direct_landscape_videos',
-        'adDirectPortraitVideos' => 'ad_direct_portrait_videos'
+        'adDirectLandscapeVideo' => 'ad_direct_landscape_video',
+        'adDirectPortraitVideo' => 'ad_direct_portrait_video'
     ];
 
     /**
@@ -165,8 +165,8 @@ class CreativeSampleProductsGetListStruct implements ModelInterface, ArrayAccess
         'advertisementPortraitImages' => 'setAdvertisementPortraitImages',
         'videoUrl' => 'setVideoUrl',
         'adDirectVideos' => 'setAdDirectVideos',
-        'adDirectLandscapeVideos' => 'setAdDirectLandscapeVideos',
-        'adDirectPortraitVideos' => 'setAdDirectPortraitVideos'
+        'adDirectLandscapeVideo' => 'setAdDirectLandscapeVideo',
+        'adDirectPortraitVideo' => 'setAdDirectPortraitVideo'
     ];
 
     /**
@@ -189,8 +189,8 @@ class CreativeSampleProductsGetListStruct implements ModelInterface, ArrayAccess
         'advertisementPortraitImages' => 'getAdvertisementPortraitImages',
         'videoUrl' => 'getVideoUrl',
         'adDirectVideos' => 'getAdDirectVideos',
-        'adDirectLandscapeVideos' => 'getAdDirectLandscapeVideos',
-        'adDirectPortraitVideos' => 'getAdDirectPortraitVideos'
+        'adDirectLandscapeVideo' => 'getAdDirectLandscapeVideo',
+        'adDirectPortraitVideo' => 'getAdDirectPortraitVideo'
     ];
 
     /**
@@ -267,8 +267,8 @@ class CreativeSampleProductsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['advertisementPortraitImages'] = isset($data['advertisementPortraitImages']) ? $data['advertisementPortraitImages'] : null;
         $this->container['videoUrl'] = isset($data['videoUrl']) ? $data['videoUrl'] : null;
         $this->container['adDirectVideos'] = isset($data['adDirectVideos']) ? $data['adDirectVideos'] : null;
-        $this->container['adDirectLandscapeVideos'] = isset($data['adDirectLandscapeVideos']) ? $data['adDirectLandscapeVideos'] : null;
-        $this->container['adDirectPortraitVideos'] = isset($data['adDirectPortraitVideos']) ? $data['adDirectPortraitVideos'] : null;
+        $this->container['adDirectLandscapeVideo'] = isset($data['adDirectLandscapeVideo']) ? $data['adDirectLandscapeVideo'] : null;
+        $this->container['adDirectPortraitVideo'] = isset($data['adDirectPortraitVideo']) ? $data['adDirectPortraitVideo'] : null;
     }
 
     /**
@@ -632,49 +632,49 @@ class CreativeSampleProductsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets adDirectLandscapeVideos
+     * Gets adDirectLandscapeVideo
      *
-     * @return string[]|mixed
+     * @return string|mixed
      */
-    public function getAdDirectLandscapeVideos()
+    public function getAdDirectLandscapeVideo()
     {
-        return $this->container['adDirectLandscapeVideos'];
+        return $this->container['adDirectLandscapeVideo'];
     }
 
     /**
-     * Sets adDirectLandscapeVideos
+     * Sets adDirectLandscapeVideo
      *
-     * @param string[]|mixed $adDirectLandscapeVideos adDirectLandscapeVideos
+     * @param string|mixed $adDirectLandscapeVideo adDirectLandscapeVideo
      *
      * @return $this
      */
-    public function setAdDirectLandscapeVideos($adDirectLandscapeVideos)
+    public function setAdDirectLandscapeVideo($adDirectLandscapeVideo)
     {
-        $this->container['adDirectLandscapeVideos'] = $adDirectLandscapeVideos;
+        $this->container['adDirectLandscapeVideo'] = $adDirectLandscapeVideo;
 
         return $this;
     }
 
     /**
-     * Gets adDirectPortraitVideos
+     * Gets adDirectPortraitVideo
      *
-     * @return string[]|mixed
+     * @return string|mixed
      */
-    public function getAdDirectPortraitVideos()
+    public function getAdDirectPortraitVideo()
     {
-        return $this->container['adDirectPortraitVideos'];
+        return $this->container['adDirectPortraitVideo'];
     }
 
     /**
-     * Sets adDirectPortraitVideos
+     * Sets adDirectPortraitVideo
      *
-     * @param string[]|mixed $adDirectPortraitVideos adDirectPortraitVideos
+     * @param string|mixed $adDirectPortraitVideo adDirectPortraitVideo
      *
      * @return $this
      */
-    public function setAdDirectPortraitVideos($adDirectPortraitVideos)
+    public function setAdDirectPortraitVideo($adDirectPortraitVideo)
     {
-        $this->container['adDirectPortraitVideos'] = $adDirectPortraitVideos;
+        $this->container['adDirectPortraitVideo'] = $adDirectPortraitVideo;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * DiagnosisConclusionSpec
+ * UpdateFinderObjectCommentFlagItem
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DiagnosisConclusionSpec Class Doc Comment
+ * UpdateFinderObjectCommentFlagItem Class Doc Comment
  *
  * @category Class
- * @description 整体曝光评估结果
+ * @description 评论精选
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DiagnosisConclusionSpec implements ModelInterface, ArrayAccess
+class UpdateFinderObjectCommentFlagItem implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class DiagnosisConclusionSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'diagnosis_conclusion_spec';
+    protected static $swaggerModelName = 'update_finder_object_comment_flag_item';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,10 @@ class DiagnosisConclusionSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'timeRange' => '\TencentAds\Model\DiagnosisConclusionSpecTimeRange',
-        'diagnosisScore' => 'int',
-        'sameIndustryRank' => 'int'
+        'adcreativeId' => 'int',
+        'opType' => '\TencentAds\Model\SetObjectCommentFlagOpType',
+        'accountId' => 'int',
+        'commentId' => 'string'
     ];
 
     /**
@@ -69,9 +70,10 @@ class DiagnosisConclusionSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'timeRange' => null,
-        'diagnosisScore' => 'int64',
-        'sameIndustryRank' => 'int64'
+        'adcreativeId' => 'int64',
+        'opType' => null,
+        'accountId' => 'int64',
+        'commentId' => null
     ];
 
     /**
@@ -101,9 +103,10 @@ class DiagnosisConclusionSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'timeRange' => 'time_range',
-        'diagnosisScore' => 'diagnosis_score',
-        'sameIndustryRank' => 'same_industry_rank'
+        'adcreativeId' => 'adcreative_id',
+        'opType' => 'op_type',
+        'accountId' => 'account_id',
+        'commentId' => 'comment_id'
     ];
 
     /**
@@ -112,9 +115,10 @@ class DiagnosisConclusionSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'timeRange' => 'setTimeRange',
-        'diagnosisScore' => 'setDiagnosisScore',
-        'sameIndustryRank' => 'setSameIndustryRank'
+        'adcreativeId' => 'setAdcreativeId',
+        'opType' => 'setOpType',
+        'accountId' => 'setAccountId',
+        'commentId' => 'setCommentId'
     ];
 
     /**
@@ -123,9 +127,10 @@ class DiagnosisConclusionSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'timeRange' => 'getTimeRange',
-        'diagnosisScore' => 'getDiagnosisScore',
-        'sameIndustryRank' => 'getSameIndustryRank'
+        'adcreativeId' => 'getAdcreativeId',
+        'opType' => 'getOpType',
+        'accountId' => 'getAccountId',
+        'commentId' => 'getCommentId'
     ];
 
     /**
@@ -188,9 +193,10 @@ class DiagnosisConclusionSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['timeRange'] = isset($data['timeRange']) ? $data['timeRange'] : null;
-        $this->container['diagnosisScore'] = isset($data['diagnosisScore']) ? $data['diagnosisScore'] : null;
-        $this->container['sameIndustryRank'] = isset($data['sameIndustryRank']) ? $data['sameIndustryRank'] : null;
+        $this->container['adcreativeId'] = isset($data['adcreativeId']) ? $data['adcreativeId'] : null;
+        $this->container['opType'] = isset($data['opType']) ? $data['opType'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['commentId'] = isset($data['commentId']) ? $data['commentId'] : null;
     }
 
     /**
@@ -218,73 +224,97 @@ class DiagnosisConclusionSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets timeRange
+     * Gets adcreativeId
      *
-     * @return \TencentAds\Model\DiagnosisConclusionSpecTimeRange|mixed
+     * @return int|mixed
      */
-    public function getTimeRange()
+    public function getAdcreativeId()
     {
-        return $this->container['timeRange'];
+        return $this->container['adcreativeId'];
     }
 
     /**
-     * Sets timeRange
+     * Sets adcreativeId
      *
-     * @param \TencentAds\Model\DiagnosisConclusionSpecTimeRange|mixed $timeRange timeRange
+     * @param int|mixed $adcreativeId adcreativeId
      *
      * @return $this
      */
-    public function setTimeRange($timeRange)
+    public function setAdcreativeId($adcreativeId)
     {
-        $this->container['timeRange'] = $timeRange;
+        $this->container['adcreativeId'] = $adcreativeId;
 
         return $this;
     }
 
     /**
-     * Gets diagnosisScore
+     * Gets opType
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\SetObjectCommentFlagOpType|mixed
      */
-    public function getDiagnosisScore()
+    public function getOpType()
     {
-        return $this->container['diagnosisScore'];
+        return $this->container['opType'];
     }
 
     /**
-     * Sets diagnosisScore
+     * Sets opType
      *
-     * @param int|mixed $diagnosisScore diagnosisScore
+     * @param \TencentAds\Model\SetObjectCommentFlagOpType|mixed $opType opType
      *
      * @return $this
      */
-    public function setDiagnosisScore($diagnosisScore)
+    public function setOpType($opType)
     {
-        $this->container['diagnosisScore'] = $diagnosisScore;
+        $this->container['opType'] = $opType;
 
         return $this;
     }
 
     /**
-     * Gets sameIndustryRank
+     * Gets accountId
      *
      * @return int|mixed
      */
-    public function getSameIndustryRank()
+    public function getAccountId()
     {
-        return $this->container['sameIndustryRank'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets sameIndustryRank
+     * Sets accountId
      *
-     * @param int|mixed $sameIndustryRank sameIndustryRank
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setSameIndustryRank($sameIndustryRank)
+    public function setAccountId($accountId)
     {
-        $this->container['sameIndustryRank'] = $sameIndustryRank;
+        $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets commentId
+     *
+     * @return string|mixed
+     */
+    public function getCommentId()
+    {
+        return $this->container['commentId'];
+    }
+
+    /**
+     * Sets commentId
+     *
+     * @param string|mixed $commentId commentId
+     *
+     * @return $this
+     */
+    public function setCommentId($commentId)
+    {
+        $this->container['commentId'] = $commentId;
 
         return $this;
     }

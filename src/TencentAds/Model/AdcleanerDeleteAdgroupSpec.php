@@ -1,6 +1,6 @@
 <?php
 /**
- * WechatDiagnosisResultSpec
+ * AdcleanerDeleteAdgroupSpec
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * WechatDiagnosisResultSpec Class Doc Comment
+ * AdcleanerDeleteAdgroupSpec Class Doc Comment
  *
  * @category Class
- * @description 微信广告的诊断结论&lt;br&gt;仅微信广告会返回此字段
+ * @description 广告清理工具删除广告
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class WechatDiagnosisResultSpec implements ModelInterface, ArrayAccess
+class AdcleanerDeleteAdgroupSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class WechatDiagnosisResultSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'wechat_diagnosis_result_spec';
+    protected static $swaggerModelName = 'adcleaner_delete_adgroup_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,7 @@ class WechatDiagnosisResultSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'wechatCostDiagnosisResultSpec' => '\TencentAds\Model\WechatCostDiagnosisResultSpec',
-        'wechatExposureDiagnosisResultSpec' => '\TencentAds\Model\WechatExposureDiagnosisResultSpec'
+        'adcleanData' => '\TencentAds\Model\AdcleanDeleteAdgroupData'
     ];
 
     /**
@@ -68,8 +67,7 @@ class WechatDiagnosisResultSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'wechatCostDiagnosisResultSpec' => null,
-        'wechatExposureDiagnosisResultSpec' => null
+        'adcleanData' => null
     ];
 
     /**
@@ -99,8 +97,7 @@ class WechatDiagnosisResultSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'wechatCostDiagnosisResultSpec' => 'wechat_cost_diagnosis_result_spec',
-        'wechatExposureDiagnosisResultSpec' => 'wechat_exposure_diagnosis_result_spec'
+        'adcleanData' => 'adclean_data'
     ];
 
     /**
@@ -109,8 +106,7 @@ class WechatDiagnosisResultSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'wechatCostDiagnosisResultSpec' => 'setWechatCostDiagnosisResultSpec',
-        'wechatExposureDiagnosisResultSpec' => 'setWechatExposureDiagnosisResultSpec'
+        'adcleanData' => 'setAdcleanData'
     ];
 
     /**
@@ -119,8 +115,7 @@ class WechatDiagnosisResultSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'wechatCostDiagnosisResultSpec' => 'getWechatCostDiagnosisResultSpec',
-        'wechatExposureDiagnosisResultSpec' => 'getWechatExposureDiagnosisResultSpec'
+        'adcleanData' => 'getAdcleanData'
     ];
 
     /**
@@ -183,8 +178,7 @@ class WechatDiagnosisResultSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['wechatCostDiagnosisResultSpec'] = isset($data['wechatCostDiagnosisResultSpec']) ? $data['wechatCostDiagnosisResultSpec'] : null;
-        $this->container['wechatExposureDiagnosisResultSpec'] = isset($data['wechatExposureDiagnosisResultSpec']) ? $data['wechatExposureDiagnosisResultSpec'] : null;
+        $this->container['adcleanData'] = isset($data['adcleanData']) ? $data['adcleanData'] : null;
     }
 
     /**
@@ -212,49 +206,25 @@ class WechatDiagnosisResultSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets wechatCostDiagnosisResultSpec
+     * Gets adcleanData
      *
-     * @return \TencentAds\Model\WechatCostDiagnosisResultSpec|mixed
+     * @return \TencentAds\Model\AdcleanDeleteAdgroupData|mixed
      */
-    public function getWechatCostDiagnosisResultSpec()
+    public function getAdcleanData()
     {
-        return $this->container['wechatCostDiagnosisResultSpec'];
+        return $this->container['adcleanData'];
     }
 
     /**
-     * Sets wechatCostDiagnosisResultSpec
+     * Sets adcleanData
      *
-     * @param \TencentAds\Model\WechatCostDiagnosisResultSpec|mixed $wechatCostDiagnosisResultSpec wechatCostDiagnosisResultSpec
+     * @param \TencentAds\Model\AdcleanDeleteAdgroupData|mixed $adcleanData adcleanData
      *
      * @return $this
      */
-    public function setWechatCostDiagnosisResultSpec($wechatCostDiagnosisResultSpec)
+    public function setAdcleanData($adcleanData)
     {
-        $this->container['wechatCostDiagnosisResultSpec'] = $wechatCostDiagnosisResultSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatExposureDiagnosisResultSpec
-     *
-     * @return \TencentAds\Model\WechatExposureDiagnosisResultSpec|mixed
-     */
-    public function getWechatExposureDiagnosisResultSpec()
-    {
-        return $this->container['wechatExposureDiagnosisResultSpec'];
-    }
-
-    /**
-     * Sets wechatExposureDiagnosisResultSpec
-     *
-     * @param \TencentAds\Model\WechatExposureDiagnosisResultSpec|mixed $wechatExposureDiagnosisResultSpec wechatExposureDiagnosisResultSpec
-     *
-     * @return $this
-     */
-    public function setWechatExposureDiagnosisResultSpec($wechatExposureDiagnosisResultSpec)
-    {
-        $this->container['wechatExposureDiagnosisResultSpec'] = $wechatExposureDiagnosisResultSpec;
+        $this->container['adcleanData'] = $adcleanData;
 
         return $this;
     }

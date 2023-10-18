@@ -59,6 +59,7 @@ class DetailListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'scopeObjectId' => 'int',
+        'scopeObjectIdStr' => 'string',
         'scopeObjectName' => 'string',
         'detailResultType' => '\TencentAds\Model\TaskDetailResultType',
         'message' => 'string'
@@ -71,6 +72,7 @@ class DetailListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'scopeObjectId' => 'int64',
+        'scopeObjectIdStr' => null,
         'scopeObjectName' => null,
         'detailResultType' => null,
         'message' => null
@@ -104,6 +106,7 @@ class DetailListStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'scopeObjectId' => 'scope_object_id',
+        'scopeObjectIdStr' => 'scope_object_id_str',
         'scopeObjectName' => 'scope_object_name',
         'detailResultType' => 'detail_result_type',
         'message' => 'message'
@@ -116,6 +119,7 @@ class DetailListStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'scopeObjectId' => 'setScopeObjectId',
+        'scopeObjectIdStr' => 'setScopeObjectIdStr',
         'scopeObjectName' => 'setScopeObjectName',
         'detailResultType' => 'setDetailResultType',
         'message' => 'setMessage'
@@ -128,6 +132,7 @@ class DetailListStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'scopeObjectId' => 'getScopeObjectId',
+        'scopeObjectIdStr' => 'getScopeObjectIdStr',
         'scopeObjectName' => 'getScopeObjectName',
         'detailResultType' => 'getDetailResultType',
         'message' => 'getMessage'
@@ -194,6 +199,7 @@ class DetailListStruct implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['scopeObjectId'] = isset($data['scopeObjectId']) ? $data['scopeObjectId'] : null;
+        $this->container['scopeObjectIdStr'] = isset($data['scopeObjectIdStr']) ? $data['scopeObjectIdStr'] : null;
         $this->container['scopeObjectName'] = isset($data['scopeObjectName']) ? $data['scopeObjectName'] : null;
         $this->container['detailResultType'] = isset($data['detailResultType']) ? $data['detailResultType'] : null;
         $this->container['message'] = isset($data['message']) ? $data['message'] : null;
@@ -243,6 +249,30 @@ class DetailListStruct implements ModelInterface, ArrayAccess
     public function setScopeObjectId($scopeObjectId)
     {
         $this->container['scopeObjectId'] = $scopeObjectId;
+
+        return $this;
+    }
+
+    /**
+     * Gets scopeObjectIdStr
+     *
+     * @return string|mixed
+     */
+    public function getScopeObjectIdStr()
+    {
+        return $this->container['scopeObjectIdStr'];
+    }
+
+    /**
+     * Sets scopeObjectIdStr
+     *
+     * @param string|mixed $scopeObjectIdStr scopeObjectIdStr
+     *
+     * @return $this
+     */
+    public function setScopeObjectIdStr($scopeObjectIdStr)
+    {
+        $this->container['scopeObjectIdStr'] = $scopeObjectIdStr;
 
         return $this;
     }

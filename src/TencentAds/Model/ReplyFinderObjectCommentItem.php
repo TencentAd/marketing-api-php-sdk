@@ -1,6 +1,6 @@
 <?php
 /**
- * CreativeSampleProductsGetRequest
+ * ReplyFinderObjectCommentItem
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CreativeSampleProductsGetRequest Class Doc Comment
+ * ReplyFinderObjectCommentItem Class Doc Comment
  *
  * @category Class
+ * @description 评论回复
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CreativeSampleProductsGetRequest implements ModelInterface, ArrayAccess
+class ReplyFinderObjectCommentItem implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class CreativeSampleProductsGetRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'CreativeSampleProductsGetRequest';
+    protected static $swaggerModelName = 'reply_finder_object_comment_item';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,15 +59,10 @@ class CreativeSampleProductsGetRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
-        'productCatalogId' => 'int',
-        'productOuterIds' => 'string[]',
-        'productSeriesId' => 'int',
-        'templateId' => 'int',
-        'templateType' => '\TencentAds\Model\TemplateType',
-        'imageId' => 'string',
-        'videoId' => 'string',
-        'productFields' => 'string[]',
-        'limit' => 'int'
+        'replyCommentId' => 'string',
+        'exportId' => 'string',
+        'content' => 'string',
+        'adcreativeId' => 'int'
     ];
 
     /**
@@ -76,15 +72,10 @@ class CreativeSampleProductsGetRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'accountId' => 'int64',
-        'productCatalogId' => 'int64',
-        'productOuterIds' => null,
-        'productSeriesId' => 'int64',
-        'templateId' => 'int64',
-        'templateType' => null,
-        'imageId' => null,
-        'videoId' => null,
-        'productFields' => null,
-        'limit' => 'int64'
+        'replyCommentId' => null,
+        'exportId' => null,
+        'content' => null,
+        'adcreativeId' => 'int64'
     ];
 
     /**
@@ -115,15 +106,10 @@ class CreativeSampleProductsGetRequest implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'accountId' => 'account_id',
-        'productCatalogId' => 'product_catalog_id',
-        'productOuterIds' => 'product_outer_ids',
-        'productSeriesId' => 'product_series_id',
-        'templateId' => 'template_id',
-        'templateType' => 'template_type',
-        'imageId' => 'image_id',
-        'videoId' => 'video_id',
-        'productFields' => 'product_fields',
-        'limit' => 'limit'
+        'replyCommentId' => 'reply_comment_id',
+        'exportId' => 'export_id',
+        'content' => 'content',
+        'adcreativeId' => 'adcreative_id'
     ];
 
     /**
@@ -133,15 +119,10 @@ class CreativeSampleProductsGetRequest implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'accountId' => 'setAccountId',
-        'productCatalogId' => 'setProductCatalogId',
-        'productOuterIds' => 'setProductOuterIds',
-        'productSeriesId' => 'setProductSeriesId',
-        'templateId' => 'setTemplateId',
-        'templateType' => 'setTemplateType',
-        'imageId' => 'setImageId',
-        'videoId' => 'setVideoId',
-        'productFields' => 'setProductFields',
-        'limit' => 'setLimit'
+        'replyCommentId' => 'setReplyCommentId',
+        'exportId' => 'setExportId',
+        'content' => 'setContent',
+        'adcreativeId' => 'setAdcreativeId'
     ];
 
     /**
@@ -151,15 +132,10 @@ class CreativeSampleProductsGetRequest implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'accountId' => 'getAccountId',
-        'productCatalogId' => 'getProductCatalogId',
-        'productOuterIds' => 'getProductOuterIds',
-        'productSeriesId' => 'getProductSeriesId',
-        'templateId' => 'getTemplateId',
-        'templateType' => 'getTemplateType',
-        'imageId' => 'getImageId',
-        'videoId' => 'getVideoId',
-        'productFields' => 'getProductFields',
-        'limit' => 'getLimit'
+        'replyCommentId' => 'getReplyCommentId',
+        'exportId' => 'getExportId',
+        'content' => 'getContent',
+        'adcreativeId' => 'getAdcreativeId'
     ];
 
     /**
@@ -223,15 +199,10 @@ class CreativeSampleProductsGetRequest implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
-        $this->container['productOuterIds'] = isset($data['productOuterIds']) ? $data['productOuterIds'] : null;
-        $this->container['productSeriesId'] = isset($data['productSeriesId']) ? $data['productSeriesId'] : null;
-        $this->container['templateId'] = isset($data['templateId']) ? $data['templateId'] : null;
-        $this->container['templateType'] = isset($data['templateType']) ? $data['templateType'] : null;
-        $this->container['imageId'] = isset($data['imageId']) ? $data['imageId'] : null;
-        $this->container['videoId'] = isset($data['videoId']) ? $data['videoId'] : null;
-        $this->container['productFields'] = isset($data['productFields']) ? $data['productFields'] : null;
-        $this->container['limit'] = isset($data['limit']) ? $data['limit'] : null;
+        $this->container['replyCommentId'] = isset($data['replyCommentId']) ? $data['replyCommentId'] : null;
+        $this->container['exportId'] = isset($data['exportId']) ? $data['exportId'] : null;
+        $this->container['content'] = isset($data['content']) ? $data['content'] : null;
+        $this->container['adcreativeId'] = isset($data['adcreativeId']) ? $data['adcreativeId'] : null;
     }
 
     /**
@@ -283,217 +254,97 @@ class CreativeSampleProductsGetRequest implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets productCatalogId
-     *
-     * @return int|mixed
-     */
-    public function getProductCatalogId()
-    {
-        return $this->container['productCatalogId'];
-    }
-
-    /**
-     * Sets productCatalogId
-     *
-     * @param int|mixed $productCatalogId productCatalogId
-     *
-     * @return $this
-     */
-    public function setProductCatalogId($productCatalogId)
-    {
-        $this->container['productCatalogId'] = $productCatalogId;
-
-        return $this;
-    }
-
-    /**
-     * Gets productOuterIds
-     *
-     * @return string[]|mixed
-     */
-    public function getProductOuterIds()
-    {
-        return $this->container['productOuterIds'];
-    }
-
-    /**
-     * Sets productOuterIds
-     *
-     * @param string[]|mixed $productOuterIds productOuterIds
-     *
-     * @return $this
-     */
-    public function setProductOuterIds($productOuterIds)
-    {
-        $this->container['productOuterIds'] = $productOuterIds;
-
-        return $this;
-    }
-
-    /**
-     * Gets productSeriesId
-     *
-     * @return int|mixed
-     */
-    public function getProductSeriesId()
-    {
-        return $this->container['productSeriesId'];
-    }
-
-    /**
-     * Sets productSeriesId
-     *
-     * @param int|mixed $productSeriesId productSeriesId
-     *
-     * @return $this
-     */
-    public function setProductSeriesId($productSeriesId)
-    {
-        $this->container['productSeriesId'] = $productSeriesId;
-
-        return $this;
-    }
-
-    /**
-     * Gets templateId
-     *
-     * @return int|mixed
-     */
-    public function getTemplateId()
-    {
-        return $this->container['templateId'];
-    }
-
-    /**
-     * Sets templateId
-     *
-     * @param int|mixed $templateId templateId
-     *
-     * @return $this
-     */
-    public function setTemplateId($templateId)
-    {
-        $this->container['templateId'] = $templateId;
-
-        return $this;
-    }
-
-    /**
-     * Gets templateType
-     *
-     * @return \TencentAds\Model\TemplateType|mixed
-     */
-    public function getTemplateType()
-    {
-        return $this->container['templateType'];
-    }
-
-    /**
-     * Sets templateType
-     *
-     * @param \TencentAds\Model\TemplateType|mixed $templateType templateType
-     *
-     * @return $this
-     */
-    public function setTemplateType($templateType)
-    {
-        $this->container['templateType'] = $templateType;
-
-        return $this;
-    }
-
-    /**
-     * Gets imageId
+     * Gets replyCommentId
      *
      * @return string|mixed
      */
-    public function getImageId()
+    public function getReplyCommentId()
     {
-        return $this->container['imageId'];
+        return $this->container['replyCommentId'];
     }
 
     /**
-     * Sets imageId
+     * Sets replyCommentId
      *
-     * @param string|mixed $imageId imageId
+     * @param string|mixed $replyCommentId replyCommentId
      *
      * @return $this
      */
-    public function setImageId($imageId)
+    public function setReplyCommentId($replyCommentId)
     {
-        $this->container['imageId'] = $imageId;
+        $this->container['replyCommentId'] = $replyCommentId;
 
         return $this;
     }
 
     /**
-     * Gets videoId
+     * Gets exportId
      *
      * @return string|mixed
      */
-    public function getVideoId()
+    public function getExportId()
     {
-        return $this->container['videoId'];
+        return $this->container['exportId'];
     }
 
     /**
-     * Sets videoId
+     * Sets exportId
      *
-     * @param string|mixed $videoId videoId
+     * @param string|mixed $exportId exportId
      *
      * @return $this
      */
-    public function setVideoId($videoId)
+    public function setExportId($exportId)
     {
-        $this->container['videoId'] = $videoId;
+        $this->container['exportId'] = $exportId;
 
         return $this;
     }
 
     /**
-     * Gets productFields
+     * Gets content
      *
-     * @return string[]|mixed
+     * @return string|mixed
      */
-    public function getProductFields()
+    public function getContent()
     {
-        return $this->container['productFields'];
+        return $this->container['content'];
     }
 
     /**
-     * Sets productFields
+     * Sets content
      *
-     * @param string[]|mixed $productFields productFields
+     * @param string|mixed $content content
      *
      * @return $this
      */
-    public function setProductFields($productFields)
+    public function setContent($content)
     {
-        $this->container['productFields'] = $productFields;
+        $this->container['content'] = $content;
 
         return $this;
     }
 
     /**
-     * Gets limit
+     * Gets adcreativeId
      *
      * @return int|mixed
      */
-    public function getLimit()
+    public function getAdcreativeId()
     {
-        return $this->container['limit'];
+        return $this->container['adcreativeId'];
     }
 
     /**
-     * Sets limit
+     * Sets adcreativeId
      *
-     * @param int|mixed $limit limit
+     * @param int|mixed $adcreativeId adcreativeId
      *
      * @return $this
      */
-    public function setLimit($limit)
+    public function setAdcreativeId($adcreativeId)
     {
-        $this->container['limit'] = $limit;
+        $this->container['adcreativeId'] = $adcreativeId;
 
         return $this;
     }

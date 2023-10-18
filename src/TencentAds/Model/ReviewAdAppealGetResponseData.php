@@ -64,7 +64,9 @@ class ReviewAdAppealGetResponseData implements ModelInterface, ArrayAccess
         'appealReason' => 'string',
         'historyApprovalAdId' => 'int',
         'appealResult' => 'string',
-        'appealStatus' => '\TencentAds\Model\AppealStatus'
+        'appealStatus' => '\TencentAds\Model\AppealStatus',
+        'description' => 'string',
+        'imageList' => 'string[]'
     ];
 
     /**
@@ -80,7 +82,9 @@ class ReviewAdAppealGetResponseData implements ModelInterface, ArrayAccess
         'appealReason' => null,
         'historyApprovalAdId' => 'int64',
         'appealResult' => null,
-        'appealStatus' => null
+        'appealStatus' => null,
+        'description' => null,
+        'imageList' => null
     ];
 
     /**
@@ -117,7 +121,9 @@ class ReviewAdAppealGetResponseData implements ModelInterface, ArrayAccess
         'appealReason' => 'appeal_reason',
         'historyApprovalAdId' => 'history_approval_ad_id',
         'appealResult' => 'appeal_result',
-        'appealStatus' => 'appeal_status'
+        'appealStatus' => 'appeal_status',
+        'description' => 'description',
+        'imageList' => 'image_list'
     ];
 
     /**
@@ -133,7 +139,9 @@ class ReviewAdAppealGetResponseData implements ModelInterface, ArrayAccess
         'appealReason' => 'setAppealReason',
         'historyApprovalAdId' => 'setHistoryApprovalAdId',
         'appealResult' => 'setAppealResult',
-        'appealStatus' => 'setAppealStatus'
+        'appealStatus' => 'setAppealStatus',
+        'description' => 'setDescription',
+        'imageList' => 'setImageList'
     ];
 
     /**
@@ -149,7 +157,9 @@ class ReviewAdAppealGetResponseData implements ModelInterface, ArrayAccess
         'appealReason' => 'getAppealReason',
         'historyApprovalAdId' => 'getHistoryApprovalAdId',
         'appealResult' => 'getAppealResult',
-        'appealStatus' => 'getAppealStatus'
+        'appealStatus' => 'getAppealStatus',
+        'description' => 'getDescription',
+        'imageList' => 'getImageList'
     ];
 
     /**
@@ -220,6 +230,8 @@ class ReviewAdAppealGetResponseData implements ModelInterface, ArrayAccess
         $this->container['historyApprovalAdId'] = isset($data['historyApprovalAdId']) ? $data['historyApprovalAdId'] : null;
         $this->container['appealResult'] = isset($data['appealResult']) ? $data['appealResult'] : null;
         $this->container['appealStatus'] = isset($data['appealStatus']) ? $data['appealStatus'] : null;
+        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
+        $this->container['imageList'] = isset($data['imageList']) ? $data['imageList'] : null;
     }
 
     /**
@@ -434,6 +446,54 @@ class ReviewAdAppealGetResponseData implements ModelInterface, ArrayAccess
     public function setAppealStatus($appealStatus)
     {
         $this->container['appealStatus'] = $appealStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets description
+     *
+     * @return string|mixed
+     */
+    public function getDescription()
+    {
+        return $this->container['description'];
+    }
+
+    /**
+     * Sets description
+     *
+     * @param string|mixed $description description
+     *
+     * @return $this
+     */
+    public function setDescription($description)
+    {
+        $this->container['description'] = $description;
+
+        return $this;
+    }
+
+    /**
+     * Gets imageList
+     *
+     * @return string[]|mixed
+     */
+    public function getImageList()
+    {
+        return $this->container['imageList'];
+    }
+
+    /**
+     * Sets imageList
+     *
+     * @param string[]|mixed $imageList imageList
+     *
+     * @return $this
+     */
+    public function setImageList($imageList)
+    {
+        $this->container['imageList'] = $imageList;
 
         return $this;
     }

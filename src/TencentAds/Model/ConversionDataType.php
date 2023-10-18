@@ -54,6 +54,7 @@ class ConversionDataType
     const INDUSTRY_LABEL = 'CONVERSION_DATA_INDUSTRY_LABEL';
     const SHOP = 'CONVERSION_DATA_SHOP';
     const FORM = 'CONVERSION_DATA_FORM';
+    const PRODUCT_DATA = 'CONVERSION_DATA_PRODUCT_DATA';
     
     /**
      * Gets allowable values of the enum
@@ -72,6 +73,7 @@ class ConversionDataType
             self::INDUSTRY_LABEL,
             self::SHOP,
             self::FORM,
+            self::PRODUCT_DATA,
         ];
     }
 }

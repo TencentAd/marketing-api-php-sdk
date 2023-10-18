@@ -50,8 +50,9 @@ class TargetingTagReportsApiContainer extends ApiContainer
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $timeLine = isset($params['time_line']) ? $params['time_line'] : null;
             $weixinOfficialAccountsUpgradeEnabled = isset($params['weixin_official_accounts_upgrade_enabled']) ? $params['weixin_official_accounts_upgrade_enabled'] : null;
+            $adqAccountsUpgradeEnabled = isset($params['adq_accounts_upgrade_enabled']) ? $params['adq_accounts_upgrade_enabled'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->targetingTagReportsGet($accountId, $type, $level, $dateRange, $posType, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $weixinOfficialAccountsUpgradeEnabled, $fields);
+            $response = $this->apiInstance->targetingTagReportsGet($accountId, $type, $level, $dateRange, $posType, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $weixinOfficialAccountsUpgradeEnabled, $adqAccountsUpgradeEnabled, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -78,8 +79,9 @@ class TargetingTagReportsApiContainer extends ApiContainer
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $timeLine = isset($params['time_line']) ? $params['time_line'] : null;
             $weixinOfficialAccountsUpgradeEnabled = isset($params['weixin_official_accounts_upgrade_enabled']) ? $params['weixin_official_accounts_upgrade_enabled'] : null;
+            $adqAccountsUpgradeEnabled = isset($params['adq_accounts_upgrade_enabled']) ? $params['adq_accounts_upgrade_enabled'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->targetingTagReportsGetAsync($accountId, $type, $level, $dateRange, $posType, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $weixinOfficialAccountsUpgradeEnabled, $fields);
+            $response = $this->apiInstance->targetingTagReportsGetAsync($accountId, $type, $level, $dateRange, $posType, $filtering, $groupBy, $orderBy, $page, $pageSize, $timeLine, $weixinOfficialAccountsUpgradeEnabled, $adqAccountsUpgradeEnabled, $fields);
             return $response;
         });
     }

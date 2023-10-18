@@ -79,7 +79,9 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupAutoAcquisitionSpec' => '\TencentAds\Model\UpdateAdgroupAutoAcquisitionItem[]',
         'updateAdcreativeLandingPageSpec' => '\TencentAds\Model\UpdateAdcreativeLandingPageItem[]',
         'updateAdgroupDeepConversionWorthAdvancedRateSpec' => '\TencentAds\Model\UpdateAdgroupDeepConversionWorthAdvancedRateItem[]',
-        'updateDeepConversionBehaviorAdvancedBidSpec' => '\TencentAds\Model\UpdateDeepConversionBehaviorAdvancedBidItem[]'
+        'updateDeepConversionBehaviorAdvancedBidSpec' => '\TencentAds\Model\UpdateDeepConversionBehaviorAdvancedBidItem[]',
+        'replyFinderObjectCommentSpec' => '\TencentAds\Model\ReplyFinderObjectCommentItem[]',
+        'updateFinderObjectCommentFlagSpec' => '\TencentAds\Model\UpdateFinderObjectCommentFlagItem[]'
     ];
 
     /**
@@ -109,7 +111,9 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupAutoAcquisitionSpec' => null,
         'updateAdcreativeLandingPageSpec' => null,
         'updateAdgroupDeepConversionWorthAdvancedRateSpec' => null,
-        'updateDeepConversionBehaviorAdvancedBidSpec' => null
+        'updateDeepConversionBehaviorAdvancedBidSpec' => null,
+        'replyFinderObjectCommentSpec' => null,
+        'updateFinderObjectCommentFlagSpec' => null
     ];
 
     /**
@@ -160,7 +164,9 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupAutoAcquisitionSpec' => 'update_adgroup_auto_acquisition_spec',
         'updateAdcreativeLandingPageSpec' => 'update_adcreative_landing_page_spec',
         'updateAdgroupDeepConversionWorthAdvancedRateSpec' => 'update_adgroup_deep_conversion_worth_advanced_rate_spec',
-        'updateDeepConversionBehaviorAdvancedBidSpec' => 'update_deep_conversion_behavior_advanced_bid_spec'
+        'updateDeepConversionBehaviorAdvancedBidSpec' => 'update_deep_conversion_behavior_advanced_bid_spec',
+        'replyFinderObjectCommentSpec' => 'reply_finder_object_comment_spec',
+        'updateFinderObjectCommentFlagSpec' => 'update_finder_object_comment_flag_spec'
     ];
 
     /**
@@ -190,7 +196,9 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupAutoAcquisitionSpec' => 'setUpdateAdgroupAutoAcquisitionSpec',
         'updateAdcreativeLandingPageSpec' => 'setUpdateAdcreativeLandingPageSpec',
         'updateAdgroupDeepConversionWorthAdvancedRateSpec' => 'setUpdateAdgroupDeepConversionWorthAdvancedRateSpec',
-        'updateDeepConversionBehaviorAdvancedBidSpec' => 'setUpdateDeepConversionBehaviorAdvancedBidSpec'
+        'updateDeepConversionBehaviorAdvancedBidSpec' => 'setUpdateDeepConversionBehaviorAdvancedBidSpec',
+        'replyFinderObjectCommentSpec' => 'setReplyFinderObjectCommentSpec',
+        'updateFinderObjectCommentFlagSpec' => 'setUpdateFinderObjectCommentFlagSpec'
     ];
 
     /**
@@ -220,7 +228,9 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupAutoAcquisitionSpec' => 'getUpdateAdgroupAutoAcquisitionSpec',
         'updateAdcreativeLandingPageSpec' => 'getUpdateAdcreativeLandingPageSpec',
         'updateAdgroupDeepConversionWorthAdvancedRateSpec' => 'getUpdateAdgroupDeepConversionWorthAdvancedRateSpec',
-        'updateDeepConversionBehaviorAdvancedBidSpec' => 'getUpdateDeepConversionBehaviorAdvancedBidSpec'
+        'updateDeepConversionBehaviorAdvancedBidSpec' => 'getUpdateDeepConversionBehaviorAdvancedBidSpec',
+        'replyFinderObjectCommentSpec' => 'getReplyFinderObjectCommentSpec',
+        'updateFinderObjectCommentFlagSpec' => 'getUpdateFinderObjectCommentFlagSpec'
     ];
 
     /**
@@ -305,6 +315,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         $this->container['updateAdcreativeLandingPageSpec'] = isset($data['updateAdcreativeLandingPageSpec']) ? $data['updateAdcreativeLandingPageSpec'] : null;
         $this->container['updateAdgroupDeepConversionWorthAdvancedRateSpec'] = isset($data['updateAdgroupDeepConversionWorthAdvancedRateSpec']) ? $data['updateAdgroupDeepConversionWorthAdvancedRateSpec'] : null;
         $this->container['updateDeepConversionBehaviorAdvancedBidSpec'] = isset($data['updateDeepConversionBehaviorAdvancedBidSpec']) ? $data['updateDeepConversionBehaviorAdvancedBidSpec'] : null;
+        $this->container['replyFinderObjectCommentSpec'] = isset($data['replyFinderObjectCommentSpec']) ? $data['replyFinderObjectCommentSpec'] : null;
+        $this->container['updateFinderObjectCommentFlagSpec'] = isset($data['updateFinderObjectCommentFlagSpec']) ? $data['updateFinderObjectCommentFlagSpec'] : null;
     }
 
     /**
@@ -855,6 +867,54 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     public function setUpdateDeepConversionBehaviorAdvancedBidSpec($updateDeepConversionBehaviorAdvancedBidSpec)
     {
         $this->container['updateDeepConversionBehaviorAdvancedBidSpec'] = $updateDeepConversionBehaviorAdvancedBidSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets replyFinderObjectCommentSpec
+     *
+     * @return \TencentAds\Model\ReplyFinderObjectCommentItem[]|mixed
+     */
+    public function getReplyFinderObjectCommentSpec()
+    {
+        return $this->container['replyFinderObjectCommentSpec'];
+    }
+
+    /**
+     * Sets replyFinderObjectCommentSpec
+     *
+     * @param \TencentAds\Model\ReplyFinderObjectCommentItem[]|mixed $replyFinderObjectCommentSpec replyFinderObjectCommentSpec
+     *
+     * @return $this
+     */
+    public function setReplyFinderObjectCommentSpec($replyFinderObjectCommentSpec)
+    {
+        $this->container['replyFinderObjectCommentSpec'] = $replyFinderObjectCommentSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets updateFinderObjectCommentFlagSpec
+     *
+     * @return \TencentAds\Model\UpdateFinderObjectCommentFlagItem[]|mixed
+     */
+    public function getUpdateFinderObjectCommentFlagSpec()
+    {
+        return $this->container['updateFinderObjectCommentFlagSpec'];
+    }
+
+    /**
+     * Sets updateFinderObjectCommentFlagSpec
+     *
+     * @param \TencentAds\Model\UpdateFinderObjectCommentFlagItem[]|mixed $updateFinderObjectCommentFlagSpec updateFinderObjectCommentFlagSpec
+     *
+     * @return $this
+     */
+    public function setUpdateFinderObjectCommentFlagSpec($updateFinderObjectCommentFlagSpec)
+    {
+        $this->container['updateFinderObjectCommentFlagSpec'] = $updateFinderObjectCommentFlagSpec;
 
         return $this;
     }

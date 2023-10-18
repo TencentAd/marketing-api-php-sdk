@@ -94,6 +94,9 @@ class PageTypeRead
     const ANDROID_DIRECT_DOWNLOAD = 'PAGE_TYPE_ANDROID_DIRECT_DOWNLOAD';
     const LINGQUE_H5 = 'PAGE_TYPE_LINGQUE_H5';
     const LINGQUE_MINI_PROGRAM = 'PAGE_TYPE_LINGQUE_MINI_PROGRAM';
+    const H5_PROFILE = 'PAGE_TYPE_H5_PROFILE';
+    const SEARCH_BRAND_AREA = 'PAGE_TYPE_SEARCH_BRAND_AREA';
+    const WECHAT_CHANNELS_PROFILE = 'PAGE_TYPE_WECHAT_CHANNELS_PROFILE';
     const TSA_OTT = 'PAGE_TYPE_TSA_OTT';
     
     /**
@@ -153,6 +156,9 @@ class PageTypeRead
             self::ANDROID_DIRECT_DOWNLOAD,
             self::LINGQUE_H5,
             self::LINGQUE_MINI_PROGRAM,
+            self::H5_PROFILE,
+            self::SEARCH_BRAND_AREA,
+            self::WECHAT_CHANNELS_PROFILE,
             self::TSA_OTT,
         ];
     }

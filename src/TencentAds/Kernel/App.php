@@ -68,7 +68,6 @@ use TencentAds\Container\DailyBalanceReportApiContainer;
 use TencentAds\Container\DailyReportsApiContainer;
 use TencentAds\Container\DataSetApiContainer;
 use TencentAds\Container\DataSourceDispatchApiContainer;
-use TencentAds\Container\DiagnosisApiContainer;
 use TencentAds\Container\DplabelAdLabelApiContainer;
 use TencentAds\Container\DynamicAdImageTemplatesApiContainer;
 use TencentAds\Container\DynamicAdImagesApiContainer;
@@ -142,7 +141,6 @@ use TencentAds\Container\ReviewElementPrereviewResultsApiContainer;
 use TencentAds\Container\SceneSpecTagsApiContainer;
 use TencentAds\Container\SplitTestsApiContainer;
 use TencentAds\Container\SubcustomerTransferApiContainer;
-use TencentAds\Container\SystemStatusApiContainer;
 use TencentAds\Container\TargetcpaTagApiContainer;
 use TencentAds\Container\TargetingTagReportsApiContainer;
 use TencentAds\Container\TargetingTagsApiContainer;
@@ -388,9 +386,6 @@ class App
     /** @var DataSourceDispatchApiContainer */
     public $dataSourceDispatchApiContainer;
 
-    /** @var DiagnosisApiContainer */
-    public $diagnosisApiContainer;
-
     /** @var DplabelAdLabelApiContainer */
     public $dplabelAdLabelApiContainer;
 
@@ -609,9 +604,6 @@ class App
 
     /** @var SubcustomerTransferApiContainer */
     public $subcustomerTransferApiContainer;
-
-    /** @var SystemStatusApiContainer */
-    public $systemStatusApiContainer;
 
     /** @var TargetcpaTagApiContainer */
     public $targetcpaTagApiContainer;
@@ -1674,20 +1666,6 @@ class App
 
 
     /**
-     * @return DiagnosisApiContainer
-     */
-    public function diagnosis()
-    {
-        if (empty($this->diagnosisApiContainer)) {
-            $container = new DiagnosisApiContainer();
-            $container->init($this, $this->getClient());
-            $this->diagnosisApiContainer = $container;
-        }
-        return $this->diagnosisApiContainer;
-    }
-
-
-    /**
      * @return DplabelAdLabelApiContainer
      */
     public function dplabelAdLabel()
@@ -2706,20 +2684,6 @@ class App
             $this->subcustomerTransferApiContainer = $container;
         }
         return $this->subcustomerTransferApiContainer;
-    }
-
-
-    /**
-     * @return SystemStatusApiContainer
-     */
-    public function systemStatus()
-    {
-        if (empty($this->systemStatusApiContainer)) {
-            $container = new SystemStatusApiContainer();
-            $container->init($this, $this->getClient());
-            $this->systemStatusApiContainer = $container;
-        }
-        return $this->systemStatusApiContainer;
     }
 
 

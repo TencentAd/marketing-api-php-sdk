@@ -62,7 +62,9 @@ class ReviewAdAppealAddRequest implements ModelInterface, ArrayAccess
         'adId' => 'int',
         'appealDemand' => 'string',
         'appealReason' => 'string',
-        'historyApprovalAdId' => 'int'
+        'historyApprovalAdId' => 'int',
+        'description' => 'string',
+        'imageList' => 'string[]'
     ];
 
     /**
@@ -76,7 +78,9 @@ class ReviewAdAppealAddRequest implements ModelInterface, ArrayAccess
         'adId' => 'int64',
         'appealDemand' => null,
         'appealReason' => null,
-        'historyApprovalAdId' => 'int64'
+        'historyApprovalAdId' => 'int64',
+        'description' => null,
+        'imageList' => null
     ];
 
     /**
@@ -111,7 +115,9 @@ class ReviewAdAppealAddRequest implements ModelInterface, ArrayAccess
         'adId' => 'ad_id',
         'appealDemand' => 'appeal_demand',
         'appealReason' => 'appeal_reason',
-        'historyApprovalAdId' => 'history_approval_ad_id'
+        'historyApprovalAdId' => 'history_approval_ad_id',
+        'description' => 'description',
+        'imageList' => 'image_list'
     ];
 
     /**
@@ -125,7 +131,9 @@ class ReviewAdAppealAddRequest implements ModelInterface, ArrayAccess
         'adId' => 'setAdId',
         'appealDemand' => 'setAppealDemand',
         'appealReason' => 'setAppealReason',
-        'historyApprovalAdId' => 'setHistoryApprovalAdId'
+        'historyApprovalAdId' => 'setHistoryApprovalAdId',
+        'description' => 'setDescription',
+        'imageList' => 'setImageList'
     ];
 
     /**
@@ -139,7 +147,9 @@ class ReviewAdAppealAddRequest implements ModelInterface, ArrayAccess
         'adId' => 'getAdId',
         'appealDemand' => 'getAppealDemand',
         'appealReason' => 'getAppealReason',
-        'historyApprovalAdId' => 'getHistoryApprovalAdId'
+        'historyApprovalAdId' => 'getHistoryApprovalAdId',
+        'description' => 'getDescription',
+        'imageList' => 'getImageList'
     ];
 
     /**
@@ -208,6 +218,8 @@ class ReviewAdAppealAddRequest implements ModelInterface, ArrayAccess
         $this->container['appealDemand'] = isset($data['appealDemand']) ? $data['appealDemand'] : null;
         $this->container['appealReason'] = isset($data['appealReason']) ? $data['appealReason'] : null;
         $this->container['historyApprovalAdId'] = isset($data['historyApprovalAdId']) ? $data['historyApprovalAdId'] : null;
+        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
+        $this->container['imageList'] = isset($data['imageList']) ? $data['imageList'] : null;
     }
 
     /**
@@ -374,6 +386,54 @@ class ReviewAdAppealAddRequest implements ModelInterface, ArrayAccess
     public function setHistoryApprovalAdId($historyApprovalAdId)
     {
         $this->container['historyApprovalAdId'] = $historyApprovalAdId;
+
+        return $this;
+    }
+
+    /**
+     * Gets description
+     *
+     * @return string|mixed
+     */
+    public function getDescription()
+    {
+        return $this->container['description'];
+    }
+
+    /**
+     * Sets description
+     *
+     * @param string|mixed $description description
+     *
+     * @return $this
+     */
+    public function setDescription($description)
+    {
+        $this->container['description'] = $description;
+
+        return $this;
+    }
+
+    /**
+     * Gets imageList
+     *
+     * @return string[]|mixed
+     */
+    public function getImageList()
+    {
+        return $this->container['imageList'];
+    }
+
+    /**
+     * Sets imageList
+     *
+     * @param string[]|mixed $imageList imageList
+     *
+     * @return $this
+     */
+    public function setImageList($imageList)
+    {
+        $this->container['imageList'] = $imageList;
 
         return $this;
     }

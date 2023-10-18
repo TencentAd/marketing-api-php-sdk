@@ -61,6 +61,8 @@ class DynamicAdVideoAddRequest implements ModelInterface, ArrayAccess
         'productCatalogId' => 'int',
         'productMode' => '\TencentAds\Model\AdNum',
         'productSource' => 'string',
+        'productOuterId' => 'string',
+        'productSeriesId' => 'int',
         'videoMaxDuration' => 'int',
         'dynamicAdTemplateId' => 'int'
     ];
@@ -75,6 +77,8 @@ class DynamicAdVideoAddRequest implements ModelInterface, ArrayAccess
         'productCatalogId' => 'int64',
         'productMode' => null,
         'productSource' => null,
+        'productOuterId' => null,
+        'productSeriesId' => 'int64',
         'videoMaxDuration' => 'int64',
         'dynamicAdTemplateId' => 'int64'
     ];
@@ -110,6 +114,8 @@ class DynamicAdVideoAddRequest implements ModelInterface, ArrayAccess
         'productCatalogId' => 'product_catalog_id',
         'productMode' => 'product_mode',
         'productSource' => 'product_source',
+        'productOuterId' => 'product_outer_id',
+        'productSeriesId' => 'product_series_id',
         'videoMaxDuration' => 'video_max_duration',
         'dynamicAdTemplateId' => 'dynamic_ad_template_id'
     ];
@@ -124,6 +130,8 @@ class DynamicAdVideoAddRequest implements ModelInterface, ArrayAccess
         'productCatalogId' => 'setProductCatalogId',
         'productMode' => 'setProductMode',
         'productSource' => 'setProductSource',
+        'productOuterId' => 'setProductOuterId',
+        'productSeriesId' => 'setProductSeriesId',
         'videoMaxDuration' => 'setVideoMaxDuration',
         'dynamicAdTemplateId' => 'setDynamicAdTemplateId'
     ];
@@ -138,6 +146,8 @@ class DynamicAdVideoAddRequest implements ModelInterface, ArrayAccess
         'productCatalogId' => 'getProductCatalogId',
         'productMode' => 'getProductMode',
         'productSource' => 'getProductSource',
+        'productOuterId' => 'getProductOuterId',
+        'productSeriesId' => 'getProductSeriesId',
         'videoMaxDuration' => 'getVideoMaxDuration',
         'dynamicAdTemplateId' => 'getDynamicAdTemplateId'
     ];
@@ -206,6 +216,8 @@ class DynamicAdVideoAddRequest implements ModelInterface, ArrayAccess
         $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
         $this->container['productMode'] = isset($data['productMode']) ? $data['productMode'] : null;
         $this->container['productSource'] = isset($data['productSource']) ? $data['productSource'] : null;
+        $this->container['productOuterId'] = isset($data['productOuterId']) ? $data['productOuterId'] : null;
+        $this->container['productSeriesId'] = isset($data['productSeriesId']) ? $data['productSeriesId'] : null;
         $this->container['videoMaxDuration'] = isset($data['videoMaxDuration']) ? $data['videoMaxDuration'] : null;
         $this->container['dynamicAdTemplateId'] = isset($data['dynamicAdTemplateId']) ? $data['dynamicAdTemplateId'] : null;
     }
@@ -326,6 +338,54 @@ class DynamicAdVideoAddRequest implements ModelInterface, ArrayAccess
     public function setProductSource($productSource)
     {
         $this->container['productSource'] = $productSource;
+
+        return $this;
+    }
+
+    /**
+     * Gets productOuterId
+     *
+     * @return string|mixed
+     */
+    public function getProductOuterId()
+    {
+        return $this->container['productOuterId'];
+    }
+
+    /**
+     * Sets productOuterId
+     *
+     * @param string|mixed $productOuterId productOuterId
+     *
+     * @return $this
+     */
+    public function setProductOuterId($productOuterId)
+    {
+        $this->container['productOuterId'] = $productOuterId;
+
+        return $this;
+    }
+
+    /**
+     * Gets productSeriesId
+     *
+     * @return int|mixed
+     */
+    public function getProductSeriesId()
+    {
+        return $this->container['productSeriesId'];
+    }
+
+    /**
+     * Sets productSeriesId
+     *
+     * @param int|mixed $productSeriesId productSeriesId
+     *
+     * @return $this
+     */
+    public function setProductSeriesId($productSeriesId)
+    {
+        $this->container['productSeriesId'] = $productSeriesId;
 
         return $this;
     }

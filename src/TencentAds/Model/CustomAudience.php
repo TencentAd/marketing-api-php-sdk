@@ -66,6 +66,8 @@ class CustomAudience implements ModelInterface, ArrayAccess
         'type' => '\TencentAds\Model\AudienceType',
         'source' => '\TencentAds\Model\AudienceSource',
         'status' => '\TencentAds\Model\ProcessStatus',
+        'onlineStatus' => '\TencentAds\Model\AudienceOnlineStatus',
+        'isOwn' => 'bool',
         'errorCode' => 'int',
         'userCount' => 'int',
         'createdTime' => 'string',
@@ -88,6 +90,8 @@ class CustomAudience implements ModelInterface, ArrayAccess
         'type' => null,
         'source' => null,
         'status' => null,
+        'onlineStatus' => null,
+        'isOwn' => null,
         'errorCode' => 'int64',
         'userCount' => 'int64',
         'createdTime' => null,
@@ -131,6 +135,8 @@ class CustomAudience implements ModelInterface, ArrayAccess
         'type' => 'type',
         'source' => 'source',
         'status' => 'status',
+        'onlineStatus' => 'online_status',
+        'isOwn' => 'is_own',
         'errorCode' => 'error_code',
         'userCount' => 'user_count',
         'createdTime' => 'created_time',
@@ -153,6 +159,8 @@ class CustomAudience implements ModelInterface, ArrayAccess
         'type' => 'setType',
         'source' => 'setSource',
         'status' => 'setStatus',
+        'onlineStatus' => 'setOnlineStatus',
+        'isOwn' => 'setIsOwn',
         'errorCode' => 'setErrorCode',
         'userCount' => 'setUserCount',
         'createdTime' => 'setCreatedTime',
@@ -175,6 +183,8 @@ class CustomAudience implements ModelInterface, ArrayAccess
         'type' => 'getType',
         'source' => 'getSource',
         'status' => 'getStatus',
+        'onlineStatus' => 'getOnlineStatus',
+        'isOwn' => 'getIsOwn',
         'errorCode' => 'getErrorCode',
         'userCount' => 'getUserCount',
         'createdTime' => 'getCreatedTime',
@@ -251,6 +261,8 @@ class CustomAudience implements ModelInterface, ArrayAccess
         $this->container['type'] = isset($data['type']) ? $data['type'] : null;
         $this->container['source'] = isset($data['source']) ? $data['source'] : null;
         $this->container['status'] = isset($data['status']) ? $data['status'] : null;
+        $this->container['onlineStatus'] = isset($data['onlineStatus']) ? $data['onlineStatus'] : null;
+        $this->container['isOwn'] = isset($data['isOwn']) ? $data['isOwn'] : null;
         $this->container['errorCode'] = isset($data['errorCode']) ? $data['errorCode'] : null;
         $this->container['userCount'] = isset($data['userCount']) ? $data['userCount'] : null;
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
@@ -471,6 +483,54 @@ class CustomAudience implements ModelInterface, ArrayAccess
     public function setStatus($status)
     {
         $this->container['status'] = $status;
+
+        return $this;
+    }
+
+    /**
+     * Gets onlineStatus
+     *
+     * @return \TencentAds\Model\AudienceOnlineStatus|mixed
+     */
+    public function getOnlineStatus()
+    {
+        return $this->container['onlineStatus'];
+    }
+
+    /**
+     * Sets onlineStatus
+     *
+     * @param \TencentAds\Model\AudienceOnlineStatus|mixed $onlineStatus onlineStatus
+     *
+     * @return $this
+     */
+    public function setOnlineStatus($onlineStatus)
+    {
+        $this->container['onlineStatus'] = $onlineStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets isOwn
+     *
+     * @return bool|mixed
+     */
+    public function getIsOwn()
+    {
+        return $this->container['isOwn'];
+    }
+
+    /**
+     * Sets isOwn
+     *
+     * @param bool|mixed $isOwn isOwn
+     *
+     * @return $this
+     */
+    public function setIsOwn($isOwn)
+    {
+        $this->container['isOwn'] = $isOwn;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * SystemStatusGetListStruct
+ * AdcleanUpdateConfiguredStatusData
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * SystemStatusGetListStruct Class Doc Comment
+ * AdcleanUpdateConfiguredStatusData Class Doc Comment
  *
  * @category Class
- * @description 返回结构
+ * @description 广告清理工具-更新广告状态数据
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class SystemStatusGetListStruct implements ModelInterface, ArrayAccess
+class AdcleanUpdateConfiguredStatusData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class SystemStatusGetListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'SystemStatusGetListStruct';
+    protected static $swaggerModelName = 'adclean_update_configured_status_data';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,10 @@ class SystemStatusGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adgroupId' => 'int',
-        'learningStatus' => '\TencentAds\Model\LearningStatus'
+        'isSelectAll' => 'string',
+        'cleanData' => '\TencentAds\Model\UpdateAdgroupConfiguredStatusItemClean[]',
+        'queryInfo' => 'string',
+        'cleanMode' => '\TencentAds\Model\AdCleanMode'
     ];
 
     /**
@@ -68,8 +70,10 @@ class SystemStatusGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adgroupId' => 'int64',
-        'learningStatus' => null
+        'isSelectAll' => null,
+        'cleanData' => null,
+        'queryInfo' => null,
+        'cleanMode' => null
     ];
 
     /**
@@ -99,8 +103,10 @@ class SystemStatusGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adgroupId' => 'adgroup_id',
-        'learningStatus' => 'learning_status'
+        'isSelectAll' => 'is_select_all',
+        'cleanData' => 'clean_data',
+        'queryInfo' => 'query_info',
+        'cleanMode' => 'clean_mode'
     ];
 
     /**
@@ -109,8 +115,10 @@ class SystemStatusGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adgroupId' => 'setAdgroupId',
-        'learningStatus' => 'setLearningStatus'
+        'isSelectAll' => 'setIsSelectAll',
+        'cleanData' => 'setCleanData',
+        'queryInfo' => 'setQueryInfo',
+        'cleanMode' => 'setCleanMode'
     ];
 
     /**
@@ -119,8 +127,10 @@ class SystemStatusGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adgroupId' => 'getAdgroupId',
-        'learningStatus' => 'getLearningStatus'
+        'isSelectAll' => 'getIsSelectAll',
+        'cleanData' => 'getCleanData',
+        'queryInfo' => 'getQueryInfo',
+        'cleanMode' => 'getCleanMode'
     ];
 
     /**
@@ -183,8 +193,10 @@ class SystemStatusGetListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
-        $this->container['learningStatus'] = isset($data['learningStatus']) ? $data['learningStatus'] : null;
+        $this->container['isSelectAll'] = isset($data['isSelectAll']) ? $data['isSelectAll'] : null;
+        $this->container['cleanData'] = isset($data['cleanData']) ? $data['cleanData'] : null;
+        $this->container['queryInfo'] = isset($data['queryInfo']) ? $data['queryInfo'] : null;
+        $this->container['cleanMode'] = isset($data['cleanMode']) ? $data['cleanMode'] : null;
     }
 
     /**
@@ -212,49 +224,97 @@ class SystemStatusGetListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets adgroupId
+     * Gets isSelectAll
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getAdgroupId()
+    public function getIsSelectAll()
     {
-        return $this->container['adgroupId'];
+        return $this->container['isSelectAll'];
     }
 
     /**
-     * Sets adgroupId
+     * Sets isSelectAll
      *
-     * @param int|mixed $adgroupId adgroupId
+     * @param string|mixed $isSelectAll isSelectAll
      *
      * @return $this
      */
-    public function setAdgroupId($adgroupId)
+    public function setIsSelectAll($isSelectAll)
     {
-        $this->container['adgroupId'] = $adgroupId;
+        $this->container['isSelectAll'] = $isSelectAll;
 
         return $this;
     }
 
     /**
-     * Gets learningStatus
+     * Gets cleanData
      *
-     * @return \TencentAds\Model\LearningStatus|mixed
+     * @return \TencentAds\Model\UpdateAdgroupConfiguredStatusItemClean[]|mixed
      */
-    public function getLearningStatus()
+    public function getCleanData()
     {
-        return $this->container['learningStatus'];
+        return $this->container['cleanData'];
     }
 
     /**
-     * Sets learningStatus
+     * Sets cleanData
      *
-     * @param \TencentAds\Model\LearningStatus|mixed $learningStatus learningStatus
+     * @param \TencentAds\Model\UpdateAdgroupConfiguredStatusItemClean[]|mixed $cleanData cleanData
      *
      * @return $this
      */
-    public function setLearningStatus($learningStatus)
+    public function setCleanData($cleanData)
     {
-        $this->container['learningStatus'] = $learningStatus;
+        $this->container['cleanData'] = $cleanData;
+
+        return $this;
+    }
+
+    /**
+     * Gets queryInfo
+     *
+     * @return string|mixed
+     */
+    public function getQueryInfo()
+    {
+        return $this->container['queryInfo'];
+    }
+
+    /**
+     * Sets queryInfo
+     *
+     * @param string|mixed $queryInfo queryInfo
+     *
+     * @return $this
+     */
+    public function setQueryInfo($queryInfo)
+    {
+        $this->container['queryInfo'] = $queryInfo;
+
+        return $this;
+    }
+
+    /**
+     * Gets cleanMode
+     *
+     * @return \TencentAds\Model\AdCleanMode|mixed
+     */
+    public function getCleanMode()
+    {
+        return $this->container['cleanMode'];
+    }
+
+    /**
+     * Sets cleanMode
+     *
+     * @param \TencentAds\Model\AdCleanMode|mixed $cleanMode cleanMode
+     *
+     * @return $this
+     */
+    public function setCleanMode($cleanMode)
+    {
+        $this->container['cleanMode'] = $cleanMode;
 
         return $this;
     }

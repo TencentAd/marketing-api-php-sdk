@@ -1,6 +1,6 @@
 <?php
 /**
- * CompititionSpec
+ * UpdateAdgroupConfiguredStatusItemClean
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CompititionSpec Class Doc Comment
+ * UpdateAdgroupConfiguredStatusItemClean Class Doc Comment
  *
  * @category Class
- * @description 竞争激烈度明细数据
+ * @description 修改广告组客户设置的状态
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CompititionSpec implements ModelInterface, ArrayAccess
+class UpdateAdgroupConfiguredStatusItemClean implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class CompititionSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'compitition_spec';
+    protected static $swaggerModelName = 'update_adgroup_configured_status_item_clean';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,9 @@ class CompititionSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'date' => 'string',
-        'hour' => 'int',
-        'compititionScore' => 'int'
+        'adgroupId' => 'int',
+        'configuredStatus' => '\TencentAds\Model\AdStatus',
+        'accountId' => 'int'
     ];
 
     /**
@@ -69,9 +69,9 @@ class CompititionSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'date' => null,
-        'hour' => 'int64',
-        'compititionScore' => 'int64'
+        'adgroupId' => 'int64',
+        'configuredStatus' => null,
+        'accountId' => 'int64'
     ];
 
     /**
@@ -101,9 +101,9 @@ class CompititionSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'date' => 'date',
-        'hour' => 'hour',
-        'compititionScore' => 'compitition_score'
+        'adgroupId' => 'adgroup_id',
+        'configuredStatus' => 'configured_status',
+        'accountId' => 'account_id'
     ];
 
     /**
@@ -112,9 +112,9 @@ class CompititionSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'date' => 'setDate',
-        'hour' => 'setHour',
-        'compititionScore' => 'setCompititionScore'
+        'adgroupId' => 'setAdgroupId',
+        'configuredStatus' => 'setConfiguredStatus',
+        'accountId' => 'setAccountId'
     ];
 
     /**
@@ -123,9 +123,9 @@ class CompititionSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'date' => 'getDate',
-        'hour' => 'getHour',
-        'compititionScore' => 'getCompititionScore'
+        'adgroupId' => 'getAdgroupId',
+        'configuredStatus' => 'getConfiguredStatus',
+        'accountId' => 'getAccountId'
     ];
 
     /**
@@ -188,9 +188,9 @@ class CompititionSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['date'] = isset($data['date']) ? $data['date'] : null;
-        $this->container['hour'] = isset($data['hour']) ? $data['hour'] : null;
-        $this->container['compititionScore'] = isset($data['compititionScore']) ? $data['compititionScore'] : null;
+        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
+        $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
     /**
@@ -218,73 +218,73 @@ class CompititionSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets date
+     * Gets adgroupId
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getDate()
+    public function getAdgroupId()
     {
-        return $this->container['date'];
+        return $this->container['adgroupId'];
     }
 
     /**
-     * Sets date
+     * Sets adgroupId
      *
-     * @param string|mixed $date date
+     * @param int|mixed $adgroupId adgroupId
      *
      * @return $this
      */
-    public function setDate($date)
+    public function setAdgroupId($adgroupId)
     {
-        $this->container['date'] = $date;
+        $this->container['adgroupId'] = $adgroupId;
 
         return $this;
     }
 
     /**
-     * Gets hour
+     * Gets configuredStatus
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\AdStatus|mixed
      */
-    public function getHour()
+    public function getConfiguredStatus()
     {
-        return $this->container['hour'];
+        return $this->container['configuredStatus'];
     }
 
     /**
-     * Sets hour
+     * Sets configuredStatus
      *
-     * @param int|mixed $hour hour
+     * @param \TencentAds\Model\AdStatus|mixed $configuredStatus configuredStatus
      *
      * @return $this
      */
-    public function setHour($hour)
+    public function setConfiguredStatus($configuredStatus)
     {
-        $this->container['hour'] = $hour;
+        $this->container['configuredStatus'] = $configuredStatus;
 
         return $this;
     }
 
     /**
-     * Gets compititionScore
+     * Gets accountId
      *
      * @return int|mixed
      */
-    public function getCompititionScore()
+    public function getAccountId()
     {
-        return $this->container['compititionScore'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets compititionScore
+     * Sets accountId
      *
-     * @param int|mixed $compititionScore compititionScore
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setCompititionScore($compititionScore)
+    public function setAccountId($accountId)
     {
-        $this->container['compititionScore'] = $compititionScore;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }

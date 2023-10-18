@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * SiteSetDefinition Class Doc Comment
  *
  * @category Class
- * @description 版位信息
+ * @description 投放站点集合
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

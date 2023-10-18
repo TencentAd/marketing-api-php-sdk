@@ -58,7 +58,7 @@ class PreReviewResultDetailStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'siteSet' => '\TencentAds\Model\IntSiteSetDefinition',
+        'siteSet' => '\TencentAds\Model\PreReviewSiteSetDefinitionString',
         'preReviewResult' => '\TencentAds\Model\GroupRiskLevel',
         'rejectReasonDetail' => '\TencentAds\Model\PreReviewResultRejectReasonDetailStruct[]'
     ];
@@ -220,7 +220,7 @@ class PreReviewResultDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Gets siteSet
      *
-     * @return \TencentAds\Model\IntSiteSetDefinition|mixed
+     * @return \TencentAds\Model\PreReviewSiteSetDefinitionString|mixed
      */
     public function getSiteSet()
     {
@@ -230,7 +230,7 @@ class PreReviewResultDetailStruct implements ModelInterface, ArrayAccess
     /**
      * Sets siteSet
      *
-     * @param \TencentAds\Model\IntSiteSetDefinition|mixed $siteSet siteSet
+     * @param \TencentAds\Model\PreReviewSiteSetDefinitionString|mixed $siteSet siteSet
      *
      * @return $this
      */

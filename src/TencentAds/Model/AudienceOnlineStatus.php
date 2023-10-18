@@ -1,6 +1,6 @@
 <?php
 /**
- * StatusType
+ * AudienceOnlineStatus
  *
  * PHP version 5
  *
@@ -31,20 +31,22 @@ namespace TencentAds\Model;
 use \TencentAds\ObjectSerializer;
 
 /**
- * StatusType Class Doc Comment
+ * AudienceOnlineStatus Class Doc Comment
  *
  * @category Class
- * @description 状态类型
+ * @description 人群包在线状态，如果人群包一段时间不更新或者不使用于广告定向，人群包会被下线处理。下线后的人群无法用于广告定向，但是洞察等不受影响。该字段仅在人群包处理状态为成功可用返回和生效
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class StatusType
+class AudienceOnlineStatus
 {
     /**
      * Possible values of this enum
      */
-    const STATUS_TYPE_OCPA_LEARNING = 'STATUS_TYPE_OCPA_LEARNING';
+    const ONLINE = 'ONLINE';
+    const LOADING = 'LOADING';
+    const OFFLINE = 'OFFLINE';
     
     /**
      * Gets allowable values of the enum
@@ -53,7 +55,9 @@ class StatusType
     public static function getAllowableEnumValues()
     {
         return [
-            self::STATUS_TYPE_OCPA_LEARNING,
+            self::ONLINE,
+            self::LOADING,
+            self::OFFLINE,
         ];
     }
 }

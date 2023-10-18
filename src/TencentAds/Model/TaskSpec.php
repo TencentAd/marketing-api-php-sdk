@@ -74,7 +74,9 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'taskTypeUnionPositionReportSpec' => '\TencentAds\Model\TaskTypeUnionPositionReportSpec',
         'taskTypeReviewElementPrereviewResultSpec' => '\TencentAds\Model\TaskTypeReviewElementPrereviewResultSpec',
         'taskTypeMassiveKeywordRecommendSpec' => '\TencentAds\Model\TaskTypeMassiveKeywordRecommendSpec',
-        'taskTypeSearchDownloadAllSpec' => '\TencentAds\Model\TaskTypeSearchDownloadAllSpec'
+        'taskTypeSearchDownloadAllSpec' => '\TencentAds\Model\TaskTypeSearchDownloadAllSpec',
+        'adcleanerUpdateAdgroupConfiguredStatusSpec' => '\TencentAds\Model\AdcleanerUpdateAdgroupConfiguredStatusSpec',
+        'adcleanerDeleteAdgroupSpec' => '\TencentAds\Model\AdcleanerDeleteAdgroupSpec'
     ];
 
     /**
@@ -99,7 +101,9 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'taskTypeUnionPositionReportSpec' => null,
         'taskTypeReviewElementPrereviewResultSpec' => null,
         'taskTypeMassiveKeywordRecommendSpec' => null,
-        'taskTypeSearchDownloadAllSpec' => null
+        'taskTypeSearchDownloadAllSpec' => null,
+        'adcleanerUpdateAdgroupConfiguredStatusSpec' => null,
+        'adcleanerDeleteAdgroupSpec' => null
     ];
 
     /**
@@ -145,7 +149,9 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'taskTypeUnionPositionReportSpec' => 'task_type_union_position_report_spec',
         'taskTypeReviewElementPrereviewResultSpec' => 'task_type_review_element_prereview_result_spec',
         'taskTypeMassiveKeywordRecommendSpec' => 'task_type_massive_keyword_recommend_spec',
-        'taskTypeSearchDownloadAllSpec' => 'task_type_search_download_all_spec'
+        'taskTypeSearchDownloadAllSpec' => 'task_type_search_download_all_spec',
+        'adcleanerUpdateAdgroupConfiguredStatusSpec' => 'adcleaner_update_adgroup_configured_status_spec',
+        'adcleanerDeleteAdgroupSpec' => 'adcleaner_delete_adgroup_spec'
     ];
 
     /**
@@ -170,7 +176,9 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'taskTypeUnionPositionReportSpec' => 'setTaskTypeUnionPositionReportSpec',
         'taskTypeReviewElementPrereviewResultSpec' => 'setTaskTypeReviewElementPrereviewResultSpec',
         'taskTypeMassiveKeywordRecommendSpec' => 'setTaskTypeMassiveKeywordRecommendSpec',
-        'taskTypeSearchDownloadAllSpec' => 'setTaskTypeSearchDownloadAllSpec'
+        'taskTypeSearchDownloadAllSpec' => 'setTaskTypeSearchDownloadAllSpec',
+        'adcleanerUpdateAdgroupConfiguredStatusSpec' => 'setAdcleanerUpdateAdgroupConfiguredStatusSpec',
+        'adcleanerDeleteAdgroupSpec' => 'setAdcleanerDeleteAdgroupSpec'
     ];
 
     /**
@@ -195,7 +203,9 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'taskTypeUnionPositionReportSpec' => 'getTaskTypeUnionPositionReportSpec',
         'taskTypeReviewElementPrereviewResultSpec' => 'getTaskTypeReviewElementPrereviewResultSpec',
         'taskTypeMassiveKeywordRecommendSpec' => 'getTaskTypeMassiveKeywordRecommendSpec',
-        'taskTypeSearchDownloadAllSpec' => 'getTaskTypeSearchDownloadAllSpec'
+        'taskTypeSearchDownloadAllSpec' => 'getTaskTypeSearchDownloadAllSpec',
+        'adcleanerUpdateAdgroupConfiguredStatusSpec' => 'getAdcleanerUpdateAdgroupConfiguredStatusSpec',
+        'adcleanerDeleteAdgroupSpec' => 'getAdcleanerDeleteAdgroupSpec'
     ];
 
     /**
@@ -275,6 +285,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         $this->container['taskTypeReviewElementPrereviewResultSpec'] = isset($data['taskTypeReviewElementPrereviewResultSpec']) ? $data['taskTypeReviewElementPrereviewResultSpec'] : null;
         $this->container['taskTypeMassiveKeywordRecommendSpec'] = isset($data['taskTypeMassiveKeywordRecommendSpec']) ? $data['taskTypeMassiveKeywordRecommendSpec'] : null;
         $this->container['taskTypeSearchDownloadAllSpec'] = isset($data['taskTypeSearchDownloadAllSpec']) ? $data['taskTypeSearchDownloadAllSpec'] : null;
+        $this->container['adcleanerUpdateAdgroupConfiguredStatusSpec'] = isset($data['adcleanerUpdateAdgroupConfiguredStatusSpec']) ? $data['adcleanerUpdateAdgroupConfiguredStatusSpec'] : null;
+        $this->container['adcleanerDeleteAdgroupSpec'] = isset($data['adcleanerDeleteAdgroupSpec']) ? $data['adcleanerDeleteAdgroupSpec'] : null;
     }
 
     /**
@@ -705,6 +717,54 @@ class TaskSpec implements ModelInterface, ArrayAccess
     public function setTaskTypeSearchDownloadAllSpec($taskTypeSearchDownloadAllSpec)
     {
         $this->container['taskTypeSearchDownloadAllSpec'] = $taskTypeSearchDownloadAllSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets adcleanerUpdateAdgroupConfiguredStatusSpec
+     *
+     * @return \TencentAds\Model\AdcleanerUpdateAdgroupConfiguredStatusSpec|mixed
+     */
+    public function getAdcleanerUpdateAdgroupConfiguredStatusSpec()
+    {
+        return $this->container['adcleanerUpdateAdgroupConfiguredStatusSpec'];
+    }
+
+    /**
+     * Sets adcleanerUpdateAdgroupConfiguredStatusSpec
+     *
+     * @param \TencentAds\Model\AdcleanerUpdateAdgroupConfiguredStatusSpec|mixed $adcleanerUpdateAdgroupConfiguredStatusSpec adcleanerUpdateAdgroupConfiguredStatusSpec
+     *
+     * @return $this
+     */
+    public function setAdcleanerUpdateAdgroupConfiguredStatusSpec($adcleanerUpdateAdgroupConfiguredStatusSpec)
+    {
+        $this->container['adcleanerUpdateAdgroupConfiguredStatusSpec'] = $adcleanerUpdateAdgroupConfiguredStatusSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets adcleanerDeleteAdgroupSpec
+     *
+     * @return \TencentAds\Model\AdcleanerDeleteAdgroupSpec|mixed
+     */
+    public function getAdcleanerDeleteAdgroupSpec()
+    {
+        return $this->container['adcleanerDeleteAdgroupSpec'];
+    }
+
+    /**
+     * Sets adcleanerDeleteAdgroupSpec
+     *
+     * @param \TencentAds\Model\AdcleanerDeleteAdgroupSpec|mixed $adcleanerDeleteAdgroupSpec adcleanerDeleteAdgroupSpec
+     *
+     * @return $this
+     */
+    public function setAdcleanerDeleteAdgroupSpec($adcleanerDeleteAdgroupSpec)
+    {
+        $this->container['adcleanerDeleteAdgroupSpec'] = $adcleanerDeleteAdgroupSpec;
 
         return $this;
     }

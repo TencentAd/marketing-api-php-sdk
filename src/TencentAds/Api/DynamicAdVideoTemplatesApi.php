@@ -101,15 +101,16 @@ class DynamicAdVideoTemplatesApi
      * @param  int|mixed $pageSize pageSize (optional)
      * @param  int[]|mixed $templateIdList templateIdList (optional)
      * @param  string|mixed $templateName templateName (optional)
+     * @param  string|mixed $dynamicAdTemplateOwnershipType dynamicAdTemplateOwnershipType (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\DynamicAdVideoTemplatesGetResponse|mixed
      */
-    public function dynamicAdVideoTemplatesGet($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel = null, $page = null, $pageSize = null, $templateIdList = null, $templateName = null, $fields = null)
+    public function dynamicAdVideoTemplatesGet($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel = null, $page = null, $pageSize = null, $templateIdList = null, $templateName = null, $dynamicAdTemplateOwnershipType = null, $fields = null)
     {
-        list($response) = $this->dynamicAdVideoTemplatesGetWithHttpInfo($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel, $page, $pageSize, $templateIdList, $templateName, $fields);
+        list($response) = $this->dynamicAdVideoTemplatesGetWithHttpInfo($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel, $page, $pageSize, $templateIdList, $templateName, $dynamicAdTemplateOwnershipType, $fields);
         return $response;
     }
 
@@ -127,16 +128,17 @@ class DynamicAdVideoTemplatesApi
      * @param  int|mixed $pageSize (optional)
      * @param  int[]|mixed $templateIdList (optional)
      * @param  string|mixed $templateName (optional)
+     * @param  string|mixed $dynamicAdTemplateOwnershipType (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\DynamicAdVideoTemplatesGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function dynamicAdVideoTemplatesGetWithHttpInfo($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel = null, $page = null, $pageSize = null, $templateIdList = null, $templateName = null, $fields = null)
+    public function dynamicAdVideoTemplatesGetWithHttpInfo($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel = null, $page = null, $pageSize = null, $templateIdList = null, $templateName = null, $dynamicAdTemplateOwnershipType = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\DynamicAdVideoTemplatesGetResponse';
-        $request = $this->dynamicAdVideoTemplatesGetRequest($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel, $page, $pageSize, $templateIdList, $templateName, $fields);
+        $request = $this->dynamicAdVideoTemplatesGetRequest($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel, $page, $pageSize, $templateIdList, $templateName, $dynamicAdTemplateOwnershipType, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -211,14 +213,15 @@ class DynamicAdVideoTemplatesApi
      * @param  int|mixed $pageSize (optional)
      * @param  int[]|mixed $templateIdList (optional)
      * @param  string|mixed $templateName (optional)
+     * @param  string|mixed $dynamicAdTemplateOwnershipType (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function dynamicAdVideoTemplatesGetAsync($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel = null, $page = null, $pageSize = null, $templateIdList = null, $templateName = null, $fields = null)
+    public function dynamicAdVideoTemplatesGetAsync($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel = null, $page = null, $pageSize = null, $templateIdList = null, $templateName = null, $dynamicAdTemplateOwnershipType = null, $fields = null)
     {
-        return $this->dynamicAdVideoTemplatesGetAsyncWithHttpInfo($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel, $page, $pageSize, $templateIdList, $templateName, $fields)
+        return $this->dynamicAdVideoTemplatesGetAsyncWithHttpInfo($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel, $page, $pageSize, $templateIdList, $templateName, $dynamicAdTemplateOwnershipType, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -240,15 +243,16 @@ class DynamicAdVideoTemplatesApi
      * @param  int|mixed $pageSize (optional)
      * @param  int[]|mixed $templateIdList (optional)
      * @param  string|mixed $templateName (optional)
+     * @param  string|mixed $dynamicAdTemplateOwnershipType (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function dynamicAdVideoTemplatesGetAsyncWithHttpInfo($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel = null, $page = null, $pageSize = null, $templateIdList = null, $templateName = null, $fields = null)
+    public function dynamicAdVideoTemplatesGetAsyncWithHttpInfo($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel = null, $page = null, $pageSize = null, $templateIdList = null, $templateName = null, $dynamicAdTemplateOwnershipType = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\DynamicAdVideoTemplatesGetResponse';
-        $request = $this->dynamicAdVideoTemplatesGetRequest($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel, $page, $pageSize, $templateIdList, $templateName, $fields);
+        $request = $this->dynamicAdVideoTemplatesGetRequest($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel, $page, $pageSize, $templateIdList, $templateName, $dynamicAdTemplateOwnershipType, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -299,12 +303,13 @@ class DynamicAdVideoTemplatesApi
      * @param  int|mixed $pageSize (optional)
      * @param  int[]|mixed $templateIdList (optional)
      * @param  string|mixed $templateName (optional)
+     * @param  string|mixed $dynamicAdTemplateOwnershipType (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function dynamicAdVideoTemplatesGetRequest($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel = null, $page = null, $pageSize = null, $templateIdList = null, $templateName = null, $fields = null)
+    protected function dynamicAdVideoTemplatesGetRequest($accountId, $productCatalogId, $adcreativeTemplateId, $productMode, $supportChannel = null, $page = null, $pageSize = null, $templateIdList = null, $templateName = null, $dynamicAdTemplateOwnershipType = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -376,6 +381,10 @@ class DynamicAdVideoTemplatesApi
         // query params
         if ($templateName !== null) {
             $queryParams['template_name'] = ObjectSerializer::toQueryValue($templateName);
+        }
+        // query params
+        if ($dynamicAdTemplateOwnershipType !== null) {
+            $queryParams['dynamic_ad_template_ownership_type'] = ObjectSerializer::toQueryValue($dynamicAdTemplateOwnershipType);
         }
         // query params
         if (is_array($fields)) {

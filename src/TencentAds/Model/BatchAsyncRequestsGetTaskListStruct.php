@@ -66,7 +66,8 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
         'resultStatus' => '\TencentAds\Model\TaskResultStatus',
         'createdTime' => 'int',
         'endTime' => 'int',
-        'scopeObjectIdList' => 'int[]'
+        'scopeObjectIdList' => 'int[]',
+        'scopeObjectIdStrList' => 'string[]'
     ];
 
     /**
@@ -83,7 +84,8 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
         'resultStatus' => null,
         'createdTime' => 'int64',
         'endTime' => 'int64',
-        'scopeObjectIdList' => 'int64'
+        'scopeObjectIdList' => 'int64',
+        'scopeObjectIdStrList' => null
     ];
 
     /**
@@ -121,7 +123,8 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
         'resultStatus' => 'result_status',
         'createdTime' => 'created_time',
         'endTime' => 'end_time',
-        'scopeObjectIdList' => 'scope_object_id_list'
+        'scopeObjectIdList' => 'scope_object_id_list',
+        'scopeObjectIdStrList' => 'scope_object_id_str_list'
     ];
 
     /**
@@ -138,7 +141,8 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
         'resultStatus' => 'setResultStatus',
         'createdTime' => 'setCreatedTime',
         'endTime' => 'setEndTime',
-        'scopeObjectIdList' => 'setScopeObjectIdList'
+        'scopeObjectIdList' => 'setScopeObjectIdList',
+        'scopeObjectIdStrList' => 'setScopeObjectIdStrList'
     ];
 
     /**
@@ -155,7 +159,8 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
         'resultStatus' => 'getResultStatus',
         'createdTime' => 'getCreatedTime',
         'endTime' => 'getEndTime',
-        'scopeObjectIdList' => 'getScopeObjectIdList'
+        'scopeObjectIdList' => 'getScopeObjectIdList',
+        'scopeObjectIdStrList' => 'getScopeObjectIdStrList'
     ];
 
     /**
@@ -227,6 +232,7 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
         $this->container['endTime'] = isset($data['endTime']) ? $data['endTime'] : null;
         $this->container['scopeObjectIdList'] = isset($data['scopeObjectIdList']) ? $data['scopeObjectIdList'] : null;
+        $this->container['scopeObjectIdStrList'] = isset($data['scopeObjectIdStrList']) ? $data['scopeObjectIdStrList'] : null;
     }
 
     /**
@@ -465,6 +471,30 @@ class BatchAsyncRequestsGetTaskListStruct implements ModelInterface, ArrayAccess
     public function setScopeObjectIdList($scopeObjectIdList)
     {
         $this->container['scopeObjectIdList'] = $scopeObjectIdList;
+
+        return $this;
+    }
+
+    /**
+     * Gets scopeObjectIdStrList
+     *
+     * @return string[]|mixed
+     */
+    public function getScopeObjectIdStrList()
+    {
+        return $this->container['scopeObjectIdStrList'];
+    }
+
+    /**
+     * Sets scopeObjectIdStrList
+     *
+     * @param string[]|mixed $scopeObjectIdStrList scopeObjectIdStrList
+     *
+     * @return $this
+     */
+    public function setScopeObjectIdStrList($scopeObjectIdStrList)
+    {
+        $this->container['scopeObjectIdStrList'] = $scopeObjectIdStrList;
 
         return $this;
     }
