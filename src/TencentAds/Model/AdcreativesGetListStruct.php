@@ -112,6 +112,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'liveVideoMode' => '\TencentAds\Model\LiveVideoMode',
         'liveVideoSubMode' => '\TencentAds\Model\LiveVideoSubMode',
         'linkNameText' => 'string',
+        'dynamicCreativeId' => 'int',
         'adcreativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsReadMp'
     ];
@@ -176,6 +177,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'liveVideoMode' => null,
         'liveVideoSubMode' => null,
         'linkNameText' => null,
+        'dynamicCreativeId' => 'int64',
         'adcreativeTemplateId' => 'int64',
         'adcreativeElements' => null
     ];
@@ -261,6 +263,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'liveVideoMode' => 'live_video_mode',
         'liveVideoSubMode' => 'live_video_sub_mode',
         'linkNameText' => 'link_name_text',
+        'dynamicCreativeId' => 'dynamic_creative_id',
         'adcreativeTemplateId' => 'adcreative_template_id',
         'adcreativeElements' => 'adcreative_elements'
     ];
@@ -325,6 +328,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'liveVideoMode' => 'setLiveVideoMode',
         'liveVideoSubMode' => 'setLiveVideoSubMode',
         'linkNameText' => 'setLinkNameText',
+        'dynamicCreativeId' => 'setDynamicCreativeId',
         'adcreativeTemplateId' => 'setAdcreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements'
     ];
@@ -389,6 +393,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'liveVideoMode' => 'getLiveVideoMode',
         'liveVideoSubMode' => 'getLiveVideoSubMode',
         'linkNameText' => 'getLinkNameText',
+        'dynamicCreativeId' => 'getDynamicCreativeId',
         'adcreativeTemplateId' => 'getAdcreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements'
     ];
@@ -507,6 +512,7 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['liveVideoMode'] = isset($data['liveVideoMode']) ? $data['liveVideoMode'] : null;
         $this->container['liveVideoSubMode'] = isset($data['liveVideoSubMode']) ? $data['liveVideoSubMode'] : null;
         $this->container['linkNameText'] = isset($data['linkNameText']) ? $data['linkNameText'] : null;
+        $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
         $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
     }
@@ -1827,6 +1833,30 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setLinkNameText($linkNameText)
     {
         $this->container['linkNameText'] = $linkNameText;
+
+        return $this;
+    }
+
+    /**
+     * Gets dynamicCreativeId
+     *
+     * @return int|mixed
+     */
+    public function getDynamicCreativeId()
+    {
+        return $this->container['dynamicCreativeId'];
+    }
+
+    /**
+     * Sets dynamicCreativeId
+     *
+     * @param int|mixed $dynamicCreativeId dynamicCreativeId
+     *
+     * @return $this
+     */
+    public function setDynamicCreativeId($dynamicCreativeId)
+    {
+        $this->container['dynamicCreativeId'] = $dynamicCreativeId;
 
         return $this;
     }

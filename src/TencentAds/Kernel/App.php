@@ -22,7 +22,6 @@ use TencentAds\Container\AdqReportsUpgradeStatusApiContainer;
 use TencentAds\Container\AdsApiContainer;
 use TencentAds\Container\AdvertiserApiContainer;
 use TencentAds\Container\AdvertiserDailyBudgetApiContainer;
-use TencentAds\Container\AgencyInnerTransferApiContainer;
 use TencentAds\Container\AgencyRealtimeCostApiContainer;
 use TencentAds\Container\AppAndroidChannelPackagesApiContainer;
 use TencentAds\Container\AssetPermissionsApiContainer;
@@ -77,7 +76,6 @@ use TencentAds\Container\DynamicCreativesApiContainer;
 use TencentAds\Container\EcommerceOrderApiContainer;
 use TencentAds\Container\EstimationApiContainer;
 use TencentAds\Container\ExtendPackageApiContainer;
-use TencentAds\Container\FundStatementsDailyApiContainer;
 use TencentAds\Container\FundStatementsDetailedApiContainer;
 use TencentAds\Container\FundTransferApiContainer;
 use TencentAds\Container\FundsApiContainer;
@@ -139,6 +137,7 @@ use TencentAds\Container\ReportApiContainer;
 use TencentAds\Container\ReviewAdAppealApiContainer;
 use TencentAds\Container\ReviewElementPrereviewResultsApiContainer;
 use TencentAds\Container\SceneSpecTagsApiContainer;
+use TencentAds\Container\SeedElementQuotaApiContainer;
 use TencentAds\Container\SplitTestsApiContainer;
 use TencentAds\Container\SubcustomerTransferApiContainer;
 use TencentAds\Container\TargetcpaTagApiContainer;
@@ -154,14 +153,16 @@ use TencentAds\Container\UserActionSetsApiContainer;
 use TencentAds\Container\UserActionsApiContainer;
 use TencentAds\Container\UserPropertiesApiContainer;
 use TencentAds\Container\UserPropertySetsApiContainer;
+use TencentAds\Container\VideoChannelDealerDataApiContainer;
+use TencentAds\Container\VideoChannelFansDataApiContainer;
+use TencentAds\Container\VideoChannelLeadsDataApiContainer;
+use TencentAds\Container\VideoChannelLiveDataApiContainer;
 use TencentAds\Container\VideomakerAutoadjustmentsApiContainer;
 use TencentAds\Container\VideomakerSubtitlesApiContainer;
 use TencentAds\Container\VideomakerTasksApiContainer;
 use TencentAds\Container\VideomakerVideocapturesApiContainer;
 use TencentAds\Container\VideosApiContainer;
 use TencentAds\Container\WechatAdLabelsApiContainer;
-use TencentAds\Container\WechatFundStatementsDetailedApiContainer;
-use TencentAds\Container\WechatFundsApiContainer;
 use TencentAds\Container\WechatPagesApiContainer;
 use TencentAds\Container\WechatPagesCsgroupStatusApiContainer;
 use TencentAds\Container\WechatPagesCsgroupUserApiContainer;
@@ -247,9 +248,6 @@ class App
 
     /** @var AdvertiserDailyBudgetApiContainer */
     public $advertiserDailyBudgetApiContainer;
-
-    /** @var AgencyInnerTransferApiContainer */
-    public $agencyInnerTransferApiContainer;
 
     /** @var AgencyRealtimeCostApiContainer */
     public $agencyRealtimeCostApiContainer;
@@ -412,9 +410,6 @@ class App
 
     /** @var ExtendPackageApiContainer */
     public $extendPackageApiContainer;
-
-    /** @var FundStatementsDailyApiContainer */
-    public $fundStatementsDailyApiContainer;
 
     /** @var FundStatementsDetailedApiContainer */
     public $fundStatementsDetailedApiContainer;
@@ -599,6 +594,9 @@ class App
     /** @var SceneSpecTagsApiContainer */
     public $sceneSpecTagsApiContainer;
 
+    /** @var SeedElementQuotaApiContainer */
+    public $seedElementQuotaApiContainer;
+
     /** @var SplitTestsApiContainer */
     public $splitTestsApiContainer;
 
@@ -644,6 +642,18 @@ class App
     /** @var UserPropertySetsApiContainer */
     public $userPropertySetsApiContainer;
 
+    /** @var VideoChannelDealerDataApiContainer */
+    public $videoChannelDealerDataApiContainer;
+
+    /** @var VideoChannelFansDataApiContainer */
+    public $videoChannelFansDataApiContainer;
+
+    /** @var VideoChannelLeadsDataApiContainer */
+    public $videoChannelLeadsDataApiContainer;
+
+    /** @var VideoChannelLiveDataApiContainer */
+    public $videoChannelLiveDataApiContainer;
+
     /** @var VideomakerAutoadjustmentsApiContainer */
     public $videomakerAutoadjustmentsApiContainer;
 
@@ -661,12 +671,6 @@ class App
 
     /** @var WechatAdLabelsApiContainer */
     public $wechatAdLabelsApiContainer;
-
-    /** @var WechatFundStatementsDetailedApiContainer */
-    public $wechatFundStatementsDetailedApiContainer;
-
-    /** @var WechatFundsApiContainer */
-    public $wechatFundsApiContainer;
 
     /** @var WechatPagesApiContainer */
     public $wechatPagesApiContainer;
@@ -1018,20 +1022,6 @@ class App
             $this->advertiserDailyBudgetApiContainer = $container;
         }
         return $this->advertiserDailyBudgetApiContainer;
-    }
-
-
-    /**
-     * @return AgencyInnerTransferApiContainer
-     */
-    public function agencyInnerTransfer()
-    {
-        if (empty($this->agencyInnerTransferApiContainer)) {
-            $container = new AgencyInnerTransferApiContainer();
-            $container->init($this, $this->getClient());
-            $this->agencyInnerTransferApiContainer = $container;
-        }
-        return $this->agencyInnerTransferApiContainer;
     }
 
 
@@ -1788,20 +1778,6 @@ class App
             $this->extendPackageApiContainer = $container;
         }
         return $this->extendPackageApiContainer;
-    }
-
-
-    /**
-     * @return FundStatementsDailyApiContainer
-     */
-    public function fundStatementsDaily()
-    {
-        if (empty($this->fundStatementsDailyApiContainer)) {
-            $container = new FundStatementsDailyApiContainer();
-            $container->init($this, $this->getClient());
-            $this->fundStatementsDailyApiContainer = $container;
-        }
-        return $this->fundStatementsDailyApiContainer;
     }
 
 
@@ -2660,6 +2636,20 @@ class App
 
 
     /**
+     * @return SeedElementQuotaApiContainer
+     */
+    public function seedElementQuota()
+    {
+        if (empty($this->seedElementQuotaApiContainer)) {
+            $container = new SeedElementQuotaApiContainer();
+            $container->init($this, $this->getClient());
+            $this->seedElementQuotaApiContainer = $container;
+        }
+        return $this->seedElementQuotaApiContainer;
+    }
+
+
+    /**
      * @return SplitTestsApiContainer
      */
     public function splitTests()
@@ -2870,6 +2860,62 @@ class App
 
 
     /**
+     * @return VideoChannelDealerDataApiContainer
+     */
+    public function videoChannelDealerData()
+    {
+        if (empty($this->videoChannelDealerDataApiContainer)) {
+            $container = new VideoChannelDealerDataApiContainer();
+            $container->init($this, $this->getClient());
+            $this->videoChannelDealerDataApiContainer = $container;
+        }
+        return $this->videoChannelDealerDataApiContainer;
+    }
+
+
+    /**
+     * @return VideoChannelFansDataApiContainer
+     */
+    public function videoChannelFansData()
+    {
+        if (empty($this->videoChannelFansDataApiContainer)) {
+            $container = new VideoChannelFansDataApiContainer();
+            $container->init($this, $this->getClient());
+            $this->videoChannelFansDataApiContainer = $container;
+        }
+        return $this->videoChannelFansDataApiContainer;
+    }
+
+
+    /**
+     * @return VideoChannelLeadsDataApiContainer
+     */
+    public function videoChannelLeadsData()
+    {
+        if (empty($this->videoChannelLeadsDataApiContainer)) {
+            $container = new VideoChannelLeadsDataApiContainer();
+            $container->init($this, $this->getClient());
+            $this->videoChannelLeadsDataApiContainer = $container;
+        }
+        return $this->videoChannelLeadsDataApiContainer;
+    }
+
+
+    /**
+     * @return VideoChannelLiveDataApiContainer
+     */
+    public function videoChannelLiveData()
+    {
+        if (empty($this->videoChannelLiveDataApiContainer)) {
+            $container = new VideoChannelLiveDataApiContainer();
+            $container->init($this, $this->getClient());
+            $this->videoChannelLiveDataApiContainer = $container;
+        }
+        return $this->videoChannelLiveDataApiContainer;
+    }
+
+
+    /**
      * @return VideomakerAutoadjustmentsApiContainer
      */
     public function videomakerAutoadjustments()
@@ -2950,34 +2996,6 @@ class App
             $this->wechatAdLabelsApiContainer = $container;
         }
         return $this->wechatAdLabelsApiContainer;
-    }
-
-
-    /**
-     * @return WechatFundStatementsDetailedApiContainer
-     */
-    public function wechatFundStatementsDetailed()
-    {
-        if (empty($this->wechatFundStatementsDetailedApiContainer)) {
-            $container = new WechatFundStatementsDetailedApiContainer();
-            $container->init($this, $this->getClient());
-            $this->wechatFundStatementsDetailedApiContainer = $container;
-        }
-        return $this->wechatFundStatementsDetailedApiContainer;
-    }
-
-
-    /**
-     * @return WechatFundsApiContainer
-     */
-    public function wechatFunds()
-    {
-        if (empty($this->wechatFundsApiContainer)) {
-            $container = new WechatFundsApiContainer();
-            $container->init($this, $this->getClient());
-            $this->wechatFundsApiContainer = $container;
-        }
-        return $this->wechatFundsApiContainer;
     }
 
 

@@ -69,6 +69,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'timeSeries' => 'string',
         'automaticSiteEnabled' => 'bool',
         'siteSet' => 'string[]',
+        'explorationStrategy' => '\TencentAds\Model\SiteSetExplorationStrategy',
+        'prioritySiteSet' => 'string[]',
         'dailyBudget' => 'int',
         'promotedObjectId' => 'string',
         'appAndroidChannelPackageId' => 'string',
@@ -111,6 +113,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'ecomPkamSwitch' => '\TencentAds\Model\EcomPkamSwitch',
         'bidScene' => '\TencentAds\Model\BidScene',
         'forwardLinkAssist' => '\TencentAds\Model\OptimizationGoal',
+        'shortPlayPayType' => '\TencentAds\Model\ShortPlayPayType',
+        'sellStrategyId' => 'int',
         'accountId' => 'int'
     ];
 
@@ -132,6 +136,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'timeSeries' => null,
         'automaticSiteEnabled' => null,
         'siteSet' => null,
+        'explorationStrategy' => null,
+        'prioritySiteSet' => null,
         'dailyBudget' => 'int64',
         'promotedObjectId' => null,
         'appAndroidChannelPackageId' => null,
@@ -174,6 +180,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'ecomPkamSwitch' => null,
         'bidScene' => null,
         'forwardLinkAssist' => null,
+        'shortPlayPayType' => null,
+        'sellStrategyId' => 'int64',
         'accountId' => 'int64'
     ];
 
@@ -216,6 +224,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'timeSeries' => 'time_series',
         'automaticSiteEnabled' => 'automatic_site_enabled',
         'siteSet' => 'site_set',
+        'explorationStrategy' => 'exploration_strategy',
+        'prioritySiteSet' => 'priority_site_set',
         'dailyBudget' => 'daily_budget',
         'promotedObjectId' => 'promoted_object_id',
         'appAndroidChannelPackageId' => 'app_android_channel_package_id',
@@ -258,6 +268,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'ecomPkamSwitch' => 'ecom_pkam_switch',
         'bidScene' => 'bid_scene',
         'forwardLinkAssist' => 'forward_link_assist',
+        'shortPlayPayType' => 'short_play_pay_type',
+        'sellStrategyId' => 'sell_strategy_id',
         'accountId' => 'account_id'
     ];
 
@@ -279,6 +291,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'timeSeries' => 'setTimeSeries',
         'automaticSiteEnabled' => 'setAutomaticSiteEnabled',
         'siteSet' => 'setSiteSet',
+        'explorationStrategy' => 'setExplorationStrategy',
+        'prioritySiteSet' => 'setPrioritySiteSet',
         'dailyBudget' => 'setDailyBudget',
         'promotedObjectId' => 'setPromotedObjectId',
         'appAndroidChannelPackageId' => 'setAppAndroidChannelPackageId',
@@ -321,6 +335,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'ecomPkamSwitch' => 'setEcomPkamSwitch',
         'bidScene' => 'setBidScene',
         'forwardLinkAssist' => 'setForwardLinkAssist',
+        'shortPlayPayType' => 'setShortPlayPayType',
+        'sellStrategyId' => 'setSellStrategyId',
         'accountId' => 'setAccountId'
     ];
 
@@ -342,6 +358,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'timeSeries' => 'getTimeSeries',
         'automaticSiteEnabled' => 'getAutomaticSiteEnabled',
         'siteSet' => 'getSiteSet',
+        'explorationStrategy' => 'getExplorationStrategy',
+        'prioritySiteSet' => 'getPrioritySiteSet',
         'dailyBudget' => 'getDailyBudget',
         'promotedObjectId' => 'getPromotedObjectId',
         'appAndroidChannelPackageId' => 'getAppAndroidChannelPackageId',
@@ -384,6 +402,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'ecomPkamSwitch' => 'getEcomPkamSwitch',
         'bidScene' => 'getBidScene',
         'forwardLinkAssist' => 'getForwardLinkAssist',
+        'shortPlayPayType' => 'getShortPlayPayType',
+        'sellStrategyId' => 'getSellStrategyId',
         'accountId' => 'getAccountId'
     ];
 
@@ -459,6 +479,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['timeSeries'] = isset($data['timeSeries']) ? $data['timeSeries'] : null;
         $this->container['automaticSiteEnabled'] = isset($data['automaticSiteEnabled']) ? $data['automaticSiteEnabled'] : null;
         $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
+        $this->container['explorationStrategy'] = isset($data['explorationStrategy']) ? $data['explorationStrategy'] : null;
+        $this->container['prioritySiteSet'] = isset($data['prioritySiteSet']) ? $data['prioritySiteSet'] : null;
         $this->container['dailyBudget'] = isset($data['dailyBudget']) ? $data['dailyBudget'] : null;
         $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
         $this->container['appAndroidChannelPackageId'] = isset($data['appAndroidChannelPackageId']) ? $data['appAndroidChannelPackageId'] : null;
@@ -501,6 +523,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['ecomPkamSwitch'] = isset($data['ecomPkamSwitch']) ? $data['ecomPkamSwitch'] : null;
         $this->container['bidScene'] = isset($data['bidScene']) ? $data['bidScene'] : null;
         $this->container['forwardLinkAssist'] = isset($data['forwardLinkAssist']) ? $data['forwardLinkAssist'] : null;
+        $this->container['shortPlayPayType'] = isset($data['shortPlayPayType']) ? $data['shortPlayPayType'] : null;
+        $this->container['sellStrategyId'] = isset($data['sellStrategyId']) ? $data['sellStrategyId'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -812,6 +836,54 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setSiteSet($siteSet)
     {
         $this->container['siteSet'] = $siteSet;
+
+        return $this;
+    }
+
+    /**
+     * Gets explorationStrategy
+     *
+     * @return \TencentAds\Model\SiteSetExplorationStrategy|mixed
+     */
+    public function getExplorationStrategy()
+    {
+        return $this->container['explorationStrategy'];
+    }
+
+    /**
+     * Sets explorationStrategy
+     *
+     * @param \TencentAds\Model\SiteSetExplorationStrategy|mixed $explorationStrategy explorationStrategy
+     *
+     * @return $this
+     */
+    public function setExplorationStrategy($explorationStrategy)
+    {
+        $this->container['explorationStrategy'] = $explorationStrategy;
+
+        return $this;
+    }
+
+    /**
+     * Gets prioritySiteSet
+     *
+     * @return string[]|mixed
+     */
+    public function getPrioritySiteSet()
+    {
+        return $this->container['prioritySiteSet'];
+    }
+
+    /**
+     * Sets prioritySiteSet
+     *
+     * @param string[]|mixed $prioritySiteSet prioritySiteSet
+     *
+     * @return $this
+     */
+    public function setPrioritySiteSet($prioritySiteSet)
+    {
+        $this->container['prioritySiteSet'] = $prioritySiteSet;
 
         return $this;
     }
@@ -1820,6 +1892,54 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setForwardLinkAssist($forwardLinkAssist)
     {
         $this->container['forwardLinkAssist'] = $forwardLinkAssist;
+
+        return $this;
+    }
+
+    /**
+     * Gets shortPlayPayType
+     *
+     * @return \TencentAds\Model\ShortPlayPayType|mixed
+     */
+    public function getShortPlayPayType()
+    {
+        return $this->container['shortPlayPayType'];
+    }
+
+    /**
+     * Sets shortPlayPayType
+     *
+     * @param \TencentAds\Model\ShortPlayPayType|mixed $shortPlayPayType shortPlayPayType
+     *
+     * @return $this
+     */
+    public function setShortPlayPayType($shortPlayPayType)
+    {
+        $this->container['shortPlayPayType'] = $shortPlayPayType;
+
+        return $this;
+    }
+
+    /**
+     * Gets sellStrategyId
+     *
+     * @return int|mixed
+     */
+    public function getSellStrategyId()
+    {
+        return $this->container['sellStrategyId'];
+    }
+
+    /**
+     * Sets sellStrategyId
+     *
+     * @param int|mixed $sellStrategyId sellStrategyId
+     *
+     * @return $this
+     */
+    public function setSellStrategyId($sellStrategyId)
+    {
+        $this->container['sellStrategyId'] = $sellStrategyId;
 
         return $this;
     }

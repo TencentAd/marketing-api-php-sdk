@@ -86,6 +86,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
         'enableBreakthroughSiteset' => 'bool',
         'creativeTemplateVersionType' => '\TencentAds\Model\CreativeTemplateVersionType',
+        'landingPageOptions' => '\TencentAds\Model\DynamicLandingPageInfoRead[]',
         'unionMarketSpec' => '\TencentAds\Model\UnionMarketSpec',
         'creativeTemplateCategory' => 'string',
         'autoDerivedProgramCreativeSwitch' => 'bool',
@@ -134,6 +135,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'appGiftPackCode' => null,
         'enableBreakthroughSiteset' => null,
         'creativeTemplateVersionType' => null,
+        'landingPageOptions' => null,
         'unionMarketSpec' => null,
         'creativeTemplateCategory' => null,
         'autoDerivedProgramCreativeSwitch' => null,
@@ -203,6 +205,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'appGiftPackCode' => 'app_gift_pack_code',
         'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
         'creativeTemplateVersionType' => 'creative_template_version_type',
+        'landingPageOptions' => 'landing_page_options',
         'unionMarketSpec' => 'union_market_spec',
         'creativeTemplateCategory' => 'creative_template_category',
         'autoDerivedProgramCreativeSwitch' => 'auto_derived_program_creative_switch',
@@ -251,6 +254,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'appGiftPackCode' => 'setAppGiftPackCode',
         'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
         'creativeTemplateVersionType' => 'setCreativeTemplateVersionType',
+        'landingPageOptions' => 'setLandingPageOptions',
         'unionMarketSpec' => 'setUnionMarketSpec',
         'creativeTemplateCategory' => 'setCreativeTemplateCategory',
         'autoDerivedProgramCreativeSwitch' => 'setAutoDerivedProgramCreativeSwitch',
@@ -299,6 +303,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'appGiftPackCode' => 'getAppGiftPackCode',
         'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
         'creativeTemplateVersionType' => 'getCreativeTemplateVersionType',
+        'landingPageOptions' => 'getLandingPageOptions',
         'unionMarketSpec' => 'getUnionMarketSpec',
         'creativeTemplateCategory' => 'getCreativeTemplateCategory',
         'autoDerivedProgramCreativeSwitch' => 'getAutoDerivedProgramCreativeSwitch',
@@ -401,6 +406,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
         $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
         $this->container['creativeTemplateVersionType'] = isset($data['creativeTemplateVersionType']) ? $data['creativeTemplateVersionType'] : null;
+        $this->container['landingPageOptions'] = isset($data['landingPageOptions']) ? $data['landingPageOptions'] : null;
         $this->container['unionMarketSpec'] = isset($data['unionMarketSpec']) ? $data['unionMarketSpec'] : null;
         $this->container['creativeTemplateCategory'] = isset($data['creativeTemplateCategory']) ? $data['creativeTemplateCategory'] : null;
         $this->container['autoDerivedProgramCreativeSwitch'] = isset($data['autoDerivedProgramCreativeSwitch']) ? $data['autoDerivedProgramCreativeSwitch'] : null;
@@ -1107,6 +1113,30 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setCreativeTemplateVersionType($creativeTemplateVersionType)
     {
         $this->container['creativeTemplateVersionType'] = $creativeTemplateVersionType;
+
+        return $this;
+    }
+
+    /**
+     * Gets landingPageOptions
+     *
+     * @return \TencentAds\Model\DynamicLandingPageInfoRead[]|mixed
+     */
+    public function getLandingPageOptions()
+    {
+        return $this->container['landingPageOptions'];
+    }
+
+    /**
+     * Sets landingPageOptions
+     *
+     * @param \TencentAds\Model\DynamicLandingPageInfoRead[]|mixed $landingPageOptions landingPageOptions
+     *
+     * @return $this
+     */
+    public function setLandingPageOptions($landingPageOptions)
+    {
+        $this->container['landingPageOptions'] = $landingPageOptions;
 
         return $this;
     }

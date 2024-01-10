@@ -59,6 +59,7 @@ class AdcreativeTemplatePreviewsGetRequest implements ModelInterface, ArrayAcces
     protected static $swaggerTypes = [
         'adgroupId' => 'int',
         'adIdList' => 'int[]',
+        'dynamicCreativeId' => 'int',
         'adgroup' => '\TencentAds\Model\Adgroup',
         'adList' => '\TencentAds\Model\Ad[]',
         'accountId' => 'int'
@@ -72,6 +73,7 @@ class AdcreativeTemplatePreviewsGetRequest implements ModelInterface, ArrayAcces
     protected static $swaggerFormats = [
         'adgroupId' => 'int64',
         'adIdList' => 'int64',
+        'dynamicCreativeId' => 'int64',
         'adgroup' => null,
         'adList' => null,
         'accountId' => 'int64'
@@ -106,6 +108,7 @@ class AdcreativeTemplatePreviewsGetRequest implements ModelInterface, ArrayAcces
     protected static $attributeMap = [
         'adgroupId' => 'adgroup_id',
         'adIdList' => 'ad_id_list',
+        'dynamicCreativeId' => 'dynamic_creative_id',
         'adgroup' => 'adgroup',
         'adList' => 'ad_list',
         'accountId' => 'account_id'
@@ -119,6 +122,7 @@ class AdcreativeTemplatePreviewsGetRequest implements ModelInterface, ArrayAcces
     protected static $setters = [
         'adgroupId' => 'setAdgroupId',
         'adIdList' => 'setAdIdList',
+        'dynamicCreativeId' => 'setDynamicCreativeId',
         'adgroup' => 'setAdgroup',
         'adList' => 'setAdList',
         'accountId' => 'setAccountId'
@@ -132,6 +136,7 @@ class AdcreativeTemplatePreviewsGetRequest implements ModelInterface, ArrayAcces
     protected static $getters = [
         'adgroupId' => 'getAdgroupId',
         'adIdList' => 'getAdIdList',
+        'dynamicCreativeId' => 'getDynamicCreativeId',
         'adgroup' => 'getAdgroup',
         'adList' => 'getAdList',
         'accountId' => 'getAccountId'
@@ -199,6 +204,7 @@ class AdcreativeTemplatePreviewsGetRequest implements ModelInterface, ArrayAcces
     {
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['adIdList'] = isset($data['adIdList']) ? $data['adIdList'] : null;
+        $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
         $this->container['adgroup'] = isset($data['adgroup']) ? $data['adgroup'] : null;
         $this->container['adList'] = isset($data['adList']) ? $data['adList'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
@@ -272,6 +278,30 @@ class AdcreativeTemplatePreviewsGetRequest implements ModelInterface, ArrayAcces
     public function setAdIdList($adIdList)
     {
         $this->container['adIdList'] = $adIdList;
+
+        return $this;
+    }
+
+    /**
+     * Gets dynamicCreativeId
+     *
+     * @return int|mixed
+     */
+    public function getDynamicCreativeId()
+    {
+        return $this->container['dynamicCreativeId'];
+    }
+
+    /**
+     * Sets dynamicCreativeId
+     *
+     * @param int|mixed $dynamicCreativeId dynamicCreativeId
+     *
+     * @return $this
+     */
+    public function setDynamicCreativeId($dynamicCreativeId)
+    {
+        $this->container['dynamicCreativeId'] = $dynamicCreativeId;
 
         return $this;
     }

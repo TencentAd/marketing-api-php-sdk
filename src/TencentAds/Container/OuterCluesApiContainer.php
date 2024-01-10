@@ -28,6 +28,40 @@ class OuterCluesApiContainer extends ApiContainer
 
 
     /**
+     * Handle OuterCluesApi outerCluesActionTypeReport function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function actionTypeReport(array $params = [])
+    {
+        return $this->handleMiddleware('actionTypeReport', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->outerCluesActionTypeReport($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle OuterCluesApi outerCluesActionTypeReportAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function actionTypeReportAsync(array $params = [])
+    {
+        return $this->handleMiddleware('actionTypeReport', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->outerCluesActionTypeReportAsync($data);
+            return $response;
+        });
+    }
+
+
+    /**
      * Handle OuterCluesApi outerCluesAdd function
      * @param array params
      * @return mixed

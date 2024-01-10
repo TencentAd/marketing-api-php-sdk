@@ -95,6 +95,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'bool',
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
         'enableBreakthroughSiteset' => 'bool',
+        'landingPageOptions' => '\TencentAds\Model\DynamicLandingPageInfo[]',
         'unionMarketSpec' => '\TencentAds\Model\UnionMarketSpec',
         'autoDerivedProgramCreativeSwitch' => 'bool',
         'programCreativeInfo' => '\TencentAds\Model\ProgramCreativeInfo',
@@ -154,6 +155,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => null,
         'appGiftPackCode' => null,
         'enableBreakthroughSiteset' => null,
+        'landingPageOptions' => null,
         'unionMarketSpec' => null,
         'autoDerivedProgramCreativeSwitch' => null,
         'programCreativeInfo' => null,
@@ -234,6 +236,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'countdown_switch',
         'appGiftPackCode' => 'app_gift_pack_code',
         'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
+        'landingPageOptions' => 'landing_page_options',
         'unionMarketSpec' => 'union_market_spec',
         'autoDerivedProgramCreativeSwitch' => 'auto_derived_program_creative_switch',
         'programCreativeInfo' => 'program_creative_info',
@@ -293,6 +296,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'setCountdownSwitch',
         'appGiftPackCode' => 'setAppGiftPackCode',
         'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
+        'landingPageOptions' => 'setLandingPageOptions',
         'unionMarketSpec' => 'setUnionMarketSpec',
         'autoDerivedProgramCreativeSwitch' => 'setAutoDerivedProgramCreativeSwitch',
         'programCreativeInfo' => 'setProgramCreativeInfo',
@@ -352,6 +356,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'countdownSwitch' => 'getCountdownSwitch',
         'appGiftPackCode' => 'getAppGiftPackCode',
         'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
+        'landingPageOptions' => 'getLandingPageOptions',
         'unionMarketSpec' => 'getUnionMarketSpec',
         'autoDerivedProgramCreativeSwitch' => 'getAutoDerivedProgramCreativeSwitch',
         'programCreativeInfo' => 'getProgramCreativeInfo',
@@ -465,6 +470,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         $this->container['countdownSwitch'] = isset($data['countdownSwitch']) ? $data['countdownSwitch'] : null;
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
         $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
+        $this->container['landingPageOptions'] = isset($data['landingPageOptions']) ? $data['landingPageOptions'] : null;
         $this->container['unionMarketSpec'] = isset($data['unionMarketSpec']) ? $data['unionMarketSpec'] : null;
         $this->container['autoDerivedProgramCreativeSwitch'] = isset($data['autoDerivedProgramCreativeSwitch']) ? $data['autoDerivedProgramCreativeSwitch'] : null;
         $this->container['programCreativeInfo'] = isset($data['programCreativeInfo']) ? $data['programCreativeInfo'] : null;
@@ -1412,6 +1418,30 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     public function setEnableBreakthroughSiteset($enableBreakthroughSiteset)
     {
         $this->container['enableBreakthroughSiteset'] = $enableBreakthroughSiteset;
+
+        return $this;
+    }
+
+    /**
+     * Gets landingPageOptions
+     *
+     * @return \TencentAds\Model\DynamicLandingPageInfo[]|mixed
+     */
+    public function getLandingPageOptions()
+    {
+        return $this->container['landingPageOptions'];
+    }
+
+    /**
+     * Sets landingPageOptions
+     *
+     * @param \TencentAds\Model\DynamicLandingPageInfo[]|mixed $landingPageOptions landingPageOptions
+     *
+     * @return $this
+     */
+    public function setLandingPageOptions($landingPageOptions)
+    {
+        $this->container['landingPageOptions'] = $landingPageOptions;
 
         return $this;
     }

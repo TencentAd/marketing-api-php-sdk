@@ -73,6 +73,9 @@ class AccountTypeMap
     const GIFT_RESTRICT = 'FUND_TYPE_GIFT_RESTRICT';
     const DEBT_FIXED = 'FUND_TYPE_DEBT_FIXED';
     const DEBT_TEMP = 'FUND_TYPE_DEBT_TEMP';
+    const SHORT_PLAY_GIFT = 'FUND_TYPE_SHORT_PLAY_GIFT';
+    const GAME_CHARGE_INDIRECT_REWARDS_GIFT = 'FUND_TYPE_GAME_CHARGE_INDIRECT_REWARDS_GIFT';
+    const GAME_CHARGE_DIRECT_REWARDS_GIFT = 'FUND_TYPE_GAME_CHARGE_DIRECT_REWARDS_GIFT';
     
     /**
      * Gets allowable values of the enum
@@ -110,6 +113,9 @@ class AccountTypeMap
             self::GIFT_RESTRICT,
             self::DEBT_FIXED,
             self::DEBT_TEMP,
+            self::SHORT_PLAY_GIFT,
+            self::GAME_CHARGE_INDIRECT_REWARDS_GIFT,
+            self::GAME_CHARGE_DIRECT_REWARDS_GIFT,
         ];
     }
 }

@@ -60,7 +60,8 @@ class AdcreativeMiniProgramSpec implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'miniProgramId' => 'string',
         'miniProgramPath' => 'string',
-        'miniProgramPaths' => 'string[]'
+        'miniProgramPaths' => 'string[]',
+        'miniProgramOpenlinkOption' => '\TencentAds\Model\MiniProgramOpenLinkOption'
     ];
 
     /**
@@ -71,7 +72,8 @@ class AdcreativeMiniProgramSpec implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'miniProgramId' => null,
         'miniProgramPath' => null,
-        'miniProgramPaths' => null
+        'miniProgramPaths' => null,
+        'miniProgramOpenlinkOption' => null
     ];
 
     /**
@@ -103,7 +105,8 @@ class AdcreativeMiniProgramSpec implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'miniProgramId' => 'mini_program_id',
         'miniProgramPath' => 'mini_program_path',
-        'miniProgramPaths' => 'mini_program_paths'
+        'miniProgramPaths' => 'mini_program_paths',
+        'miniProgramOpenlinkOption' => 'mini_program_openlink_option'
     ];
 
     /**
@@ -114,7 +117,8 @@ class AdcreativeMiniProgramSpec implements ModelInterface, ArrayAccess
     protected static $setters = [
         'miniProgramId' => 'setMiniProgramId',
         'miniProgramPath' => 'setMiniProgramPath',
-        'miniProgramPaths' => 'setMiniProgramPaths'
+        'miniProgramPaths' => 'setMiniProgramPaths',
+        'miniProgramOpenlinkOption' => 'setMiniProgramOpenlinkOption'
     ];
 
     /**
@@ -125,7 +129,8 @@ class AdcreativeMiniProgramSpec implements ModelInterface, ArrayAccess
     protected static $getters = [
         'miniProgramId' => 'getMiniProgramId',
         'miniProgramPath' => 'getMiniProgramPath',
-        'miniProgramPaths' => 'getMiniProgramPaths'
+        'miniProgramPaths' => 'getMiniProgramPaths',
+        'miniProgramOpenlinkOption' => 'getMiniProgramOpenlinkOption'
     ];
 
     /**
@@ -191,6 +196,7 @@ class AdcreativeMiniProgramSpec implements ModelInterface, ArrayAccess
         $this->container['miniProgramId'] = isset($data['miniProgramId']) ? $data['miniProgramId'] : null;
         $this->container['miniProgramPath'] = isset($data['miniProgramPath']) ? $data['miniProgramPath'] : null;
         $this->container['miniProgramPaths'] = isset($data['miniProgramPaths']) ? $data['miniProgramPaths'] : null;
+        $this->container['miniProgramOpenlinkOption'] = isset($data['miniProgramOpenlinkOption']) ? $data['miniProgramOpenlinkOption'] : null;
     }
 
     /**
@@ -285,6 +291,30 @@ class AdcreativeMiniProgramSpec implements ModelInterface, ArrayAccess
     public function setMiniProgramPaths($miniProgramPaths)
     {
         $this->container['miniProgramPaths'] = $miniProgramPaths;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniProgramOpenlinkOption
+     *
+     * @return \TencentAds\Model\MiniProgramOpenLinkOption|mixed
+     */
+    public function getMiniProgramOpenlinkOption()
+    {
+        return $this->container['miniProgramOpenlinkOption'];
+    }
+
+    /**
+     * Sets miniProgramOpenlinkOption
+     *
+     * @param \TencentAds\Model\MiniProgramOpenLinkOption|mixed $miniProgramOpenlinkOption miniProgramOpenlinkOption
+     *
+     * @return $this
+     */
+    public function setMiniProgramOpenlinkOption($miniProgramOpenlinkOption)
+    {
+        $this->container['miniProgramOpenlinkOption'] = $miniProgramOpenlinkOption;
 
         return $this;
     }

@@ -89,6 +89,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'barrageList' => '\TencentAds\Model\BarrageListCreateStruct[]',
         'countdownSwitch' => 'bool',
         'appGiftPackCode' => '\TencentAds\Model\AppGiftPackCode',
+        'landingPageOptions' => '\TencentAds\Model\DynamicLandingPageInfo[]',
         'unionMarketSpec' => '\TencentAds\Model\UnionMarketSpec',
         'autoDerivedProgramCreativeSwitch' => 'bool',
         'headClickType' => '\TencentAds\Model\HeadClickType',
@@ -139,6 +140,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'barrageList' => null,
         'countdownSwitch' => null,
         'appGiftPackCode' => null,
+        'landingPageOptions' => null,
         'unionMarketSpec' => null,
         'autoDerivedProgramCreativeSwitch' => null,
         'headClickType' => null,
@@ -210,6 +212,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'barrageList' => 'barrage_list',
         'countdownSwitch' => 'countdown_switch',
         'appGiftPackCode' => 'app_gift_pack_code',
+        'landingPageOptions' => 'landing_page_options',
         'unionMarketSpec' => 'union_market_spec',
         'autoDerivedProgramCreativeSwitch' => 'auto_derived_program_creative_switch',
         'headClickType' => 'head_click_type',
@@ -260,6 +263,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'barrageList' => 'setBarrageList',
         'countdownSwitch' => 'setCountdownSwitch',
         'appGiftPackCode' => 'setAppGiftPackCode',
+        'landingPageOptions' => 'setLandingPageOptions',
         'unionMarketSpec' => 'setUnionMarketSpec',
         'autoDerivedProgramCreativeSwitch' => 'setAutoDerivedProgramCreativeSwitch',
         'headClickType' => 'setHeadClickType',
@@ -310,6 +314,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'barrageList' => 'getBarrageList',
         'countdownSwitch' => 'getCountdownSwitch',
         'appGiftPackCode' => 'getAppGiftPackCode',
+        'landingPageOptions' => 'getLandingPageOptions',
         'unionMarketSpec' => 'getUnionMarketSpec',
         'autoDerivedProgramCreativeSwitch' => 'getAutoDerivedProgramCreativeSwitch',
         'headClickType' => 'getHeadClickType',
@@ -414,6 +419,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['barrageList'] = isset($data['barrageList']) ? $data['barrageList'] : null;
         $this->container['countdownSwitch'] = isset($data['countdownSwitch']) ? $data['countdownSwitch'] : null;
         $this->container['appGiftPackCode'] = isset($data['appGiftPackCode']) ? $data['appGiftPackCode'] : null;
+        $this->container['landingPageOptions'] = isset($data['landingPageOptions']) ? $data['landingPageOptions'] : null;
         $this->container['unionMarketSpec'] = isset($data['unionMarketSpec']) ? $data['unionMarketSpec'] : null;
         $this->container['autoDerivedProgramCreativeSwitch'] = isset($data['autoDerivedProgramCreativeSwitch']) ? $data['autoDerivedProgramCreativeSwitch'] : null;
         $this->container['headClickType'] = isset($data['headClickType']) ? $data['headClickType'] : null;
@@ -1214,6 +1220,30 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setAppGiftPackCode($appGiftPackCode)
     {
         $this->container['appGiftPackCode'] = $appGiftPackCode;
+
+        return $this;
+    }
+
+    /**
+     * Gets landingPageOptions
+     *
+     * @return \TencentAds\Model\DynamicLandingPageInfo[]|mixed
+     */
+    public function getLandingPageOptions()
+    {
+        return $this->container['landingPageOptions'];
+    }
+
+    /**
+     * Sets landingPageOptions
+     *
+     * @param \TencentAds\Model\DynamicLandingPageInfo[]|mixed $landingPageOptions landingPageOptions
+     *
+     * @return $this
+     */
+    public function setLandingPageOptions($landingPageOptions)
+    {
+        $this->container['landingPageOptions'] = $landingPageOptions;
 
         return $this;
     }

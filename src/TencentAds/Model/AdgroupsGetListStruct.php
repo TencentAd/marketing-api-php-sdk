@@ -63,6 +63,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'adgroupName' => 'string',
         'siteSet' => 'string[]',
         'automaticSiteEnabled' => 'bool',
+        'explorationStrategy' => '\TencentAds\Model\SiteSetExplorationStrategy',
+        'prioritySiteSet' => 'string[]',
         'optimizationGoal' => '\TencentAds\Model\OptimizationGoal',
         'billingEvent' => '\TencentAds\Model\BillingEvent',
         'bidAmount' => 'int',
@@ -129,7 +131,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoAcquisitionStatus' => '\TencentAds\Model\AutoAcquisitionStatus',
         'ecomPkamSwitch' => '\TencentAds\Model\EcomPkamSwitch',
         'bidScene' => '\TencentAds\Model\BidScene',
-        'forwardLinkAssist' => '\TencentAds\Model\OptimizationGoal'
+        'forwardLinkAssist' => '\TencentAds\Model\OptimizationGoal',
+        'shortPlayPayType' => '\TencentAds\Model\ShortPlayPayType',
+        'sellStrategyId' => 'int'
     ];
 
     /**
@@ -143,6 +147,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'adgroupName' => null,
         'siteSet' => null,
         'automaticSiteEnabled' => null,
+        'explorationStrategy' => null,
+        'prioritySiteSet' => null,
         'optimizationGoal' => null,
         'billingEvent' => null,
         'bidAmount' => 'int64',
@@ -209,7 +215,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoAcquisitionStatus' => null,
         'ecomPkamSwitch' => null,
         'bidScene' => null,
-        'forwardLinkAssist' => null
+        'forwardLinkAssist' => null,
+        'shortPlayPayType' => null,
+        'sellStrategyId' => 'int64'
     ];
 
     /**
@@ -244,6 +252,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'adgroupName' => 'adgroup_name',
         'siteSet' => 'site_set',
         'automaticSiteEnabled' => 'automatic_site_enabled',
+        'explorationStrategy' => 'exploration_strategy',
+        'prioritySiteSet' => 'priority_site_set',
         'optimizationGoal' => 'optimization_goal',
         'billingEvent' => 'billing_event',
         'bidAmount' => 'bid_amount',
@@ -310,7 +320,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoAcquisitionStatus' => 'auto_acquisition_status',
         'ecomPkamSwitch' => 'ecom_pkam_switch',
         'bidScene' => 'bid_scene',
-        'forwardLinkAssist' => 'forward_link_assist'
+        'forwardLinkAssist' => 'forward_link_assist',
+        'shortPlayPayType' => 'short_play_pay_type',
+        'sellStrategyId' => 'sell_strategy_id'
     ];
 
     /**
@@ -324,6 +336,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'adgroupName' => 'setAdgroupName',
         'siteSet' => 'setSiteSet',
         'automaticSiteEnabled' => 'setAutomaticSiteEnabled',
+        'explorationStrategy' => 'setExplorationStrategy',
+        'prioritySiteSet' => 'setPrioritySiteSet',
         'optimizationGoal' => 'setOptimizationGoal',
         'billingEvent' => 'setBillingEvent',
         'bidAmount' => 'setBidAmount',
@@ -390,7 +404,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoAcquisitionStatus' => 'setAutoAcquisitionStatus',
         'ecomPkamSwitch' => 'setEcomPkamSwitch',
         'bidScene' => 'setBidScene',
-        'forwardLinkAssist' => 'setForwardLinkAssist'
+        'forwardLinkAssist' => 'setForwardLinkAssist',
+        'shortPlayPayType' => 'setShortPlayPayType',
+        'sellStrategyId' => 'setSellStrategyId'
     ];
 
     /**
@@ -404,6 +420,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'adgroupName' => 'getAdgroupName',
         'siteSet' => 'getSiteSet',
         'automaticSiteEnabled' => 'getAutomaticSiteEnabled',
+        'explorationStrategy' => 'getExplorationStrategy',
+        'prioritySiteSet' => 'getPrioritySiteSet',
         'optimizationGoal' => 'getOptimizationGoal',
         'billingEvent' => 'getBillingEvent',
         'bidAmount' => 'getBidAmount',
@@ -470,7 +488,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoAcquisitionStatus' => 'getAutoAcquisitionStatus',
         'ecomPkamSwitch' => 'getEcomPkamSwitch',
         'bidScene' => 'getBidScene',
-        'forwardLinkAssist' => 'getForwardLinkAssist'
+        'forwardLinkAssist' => 'getForwardLinkAssist',
+        'shortPlayPayType' => 'getShortPlayPayType',
+        'sellStrategyId' => 'getSellStrategyId'
     ];
 
     /**
@@ -538,6 +558,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
         $this->container['automaticSiteEnabled'] = isset($data['automaticSiteEnabled']) ? $data['automaticSiteEnabled'] : null;
+        $this->container['explorationStrategy'] = isset($data['explorationStrategy']) ? $data['explorationStrategy'] : null;
+        $this->container['prioritySiteSet'] = isset($data['prioritySiteSet']) ? $data['prioritySiteSet'] : null;
         $this->container['optimizationGoal'] = isset($data['optimizationGoal']) ? $data['optimizationGoal'] : null;
         $this->container['billingEvent'] = isset($data['billingEvent']) ? $data['billingEvent'] : null;
         $this->container['bidAmount'] = isset($data['bidAmount']) ? $data['bidAmount'] : null;
@@ -605,6 +627,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['ecomPkamSwitch'] = isset($data['ecomPkamSwitch']) ? $data['ecomPkamSwitch'] : null;
         $this->container['bidScene'] = isset($data['bidScene']) ? $data['bidScene'] : null;
         $this->container['forwardLinkAssist'] = isset($data['forwardLinkAssist']) ? $data['forwardLinkAssist'] : null;
+        $this->container['shortPlayPayType'] = isset($data['shortPlayPayType']) ? $data['shortPlayPayType'] : null;
+        $this->container['sellStrategyId'] = isset($data['sellStrategyId']) ? $data['sellStrategyId'] : null;
     }
 
     /**
@@ -747,6 +771,54 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setAutomaticSiteEnabled($automaticSiteEnabled)
     {
         $this->container['automaticSiteEnabled'] = $automaticSiteEnabled;
+
+        return $this;
+    }
+
+    /**
+     * Gets explorationStrategy
+     *
+     * @return \TencentAds\Model\SiteSetExplorationStrategy|mixed
+     */
+    public function getExplorationStrategy()
+    {
+        return $this->container['explorationStrategy'];
+    }
+
+    /**
+     * Sets explorationStrategy
+     *
+     * @param \TencentAds\Model\SiteSetExplorationStrategy|mixed $explorationStrategy explorationStrategy
+     *
+     * @return $this
+     */
+    public function setExplorationStrategy($explorationStrategy)
+    {
+        $this->container['explorationStrategy'] = $explorationStrategy;
+
+        return $this;
+    }
+
+    /**
+     * Gets prioritySiteSet
+     *
+     * @return string[]|mixed
+     */
+    public function getPrioritySiteSet()
+    {
+        return $this->container['prioritySiteSet'];
+    }
+
+    /**
+     * Sets prioritySiteSet
+     *
+     * @param string[]|mixed $prioritySiteSet prioritySiteSet
+     *
+     * @return $this
+     */
+    public function setPrioritySiteSet($prioritySiteSet)
+    {
+        $this->container['prioritySiteSet'] = $prioritySiteSet;
 
         return $this;
     }
@@ -2355,6 +2427,54 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setForwardLinkAssist($forwardLinkAssist)
     {
         $this->container['forwardLinkAssist'] = $forwardLinkAssist;
+
+        return $this;
+    }
+
+    /**
+     * Gets shortPlayPayType
+     *
+     * @return \TencentAds\Model\ShortPlayPayType|mixed
+     */
+    public function getShortPlayPayType()
+    {
+        return $this->container['shortPlayPayType'];
+    }
+
+    /**
+     * Sets shortPlayPayType
+     *
+     * @param \TencentAds\Model\ShortPlayPayType|mixed $shortPlayPayType shortPlayPayType
+     *
+     * @return $this
+     */
+    public function setShortPlayPayType($shortPlayPayType)
+    {
+        $this->container['shortPlayPayType'] = $shortPlayPayType;
+
+        return $this;
+    }
+
+    /**
+     * Gets sellStrategyId
+     *
+     * @return int|mixed
+     */
+    public function getSellStrategyId()
+    {
+        return $this->container['sellStrategyId'];
+    }
+
+    /**
+     * Sets sellStrategyId
+     *
+     * @param int|mixed $sellStrategyId sellStrategyId
+     *
+     * @return $this
+     */
+    public function setSellStrategyId($sellStrategyId)
+    {
+        $this->container['sellStrategyId'] = $sellStrategyId;
 
         return $this;
     }

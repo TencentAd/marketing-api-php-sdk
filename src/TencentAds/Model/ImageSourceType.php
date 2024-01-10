@@ -51,6 +51,7 @@ class ImageSourceType
     const QUICK_DRAW = 'SOURCE_TYPE_QUICK_DRAW';
     const VIDEO_SNAPSHOTS = 'SOURCE_TYPE_VIDEO_SNAPSHOTS';
     const TCC = 'SOURCE_TYPE_TCC';
+    const AIGC = 'SOURCE_TYPE_AIGC';
     
     /**
      * Gets allowable values of the enum
@@ -66,6 +67,7 @@ class ImageSourceType
             self::QUICK_DRAW,
             self::VIDEO_SNAPSHOTS,
             self::TCC,
+            self::AIGC,
         ];
     }
 }

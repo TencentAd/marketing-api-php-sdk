@@ -63,7 +63,8 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         'redEnvelopeExtraSceneId' => 'string',
         'redEnvelopeAppearTimeMs' => 'int',
         'redEnvelopeDisappearTimeMs' => 'int',
-        'redEnvelopeOriginExtraSceneId' => 'string'
+        'redEnvelopeOriginExtraSceneId' => 'string',
+        'redBarrageSwitch' => 'bool'
     ];
 
     /**
@@ -77,7 +78,8 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         'redEnvelopeExtraSceneId' => null,
         'redEnvelopeAppearTimeMs' => 'int64',
         'redEnvelopeDisappearTimeMs' => 'int64',
-        'redEnvelopeOriginExtraSceneId' => null
+        'redEnvelopeOriginExtraSceneId' => null,
+        'redBarrageSwitch' => null
     ];
 
     /**
@@ -112,7 +114,8 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         'redEnvelopeExtraSceneId' => 'red_envelope_extra_scene_id',
         'redEnvelopeAppearTimeMs' => 'red_envelope_appear_time_ms',
         'redEnvelopeDisappearTimeMs' => 'red_envelope_disappear_time_ms',
-        'redEnvelopeOriginExtraSceneId' => 'red_envelope_origin_extra_scene_id'
+        'redEnvelopeOriginExtraSceneId' => 'red_envelope_origin_extra_scene_id',
+        'redBarrageSwitch' => 'red_barrage_switch'
     ];
 
     /**
@@ -126,7 +129,8 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         'redEnvelopeExtraSceneId' => 'setRedEnvelopeExtraSceneId',
         'redEnvelopeAppearTimeMs' => 'setRedEnvelopeAppearTimeMs',
         'redEnvelopeDisappearTimeMs' => 'setRedEnvelopeDisappearTimeMs',
-        'redEnvelopeOriginExtraSceneId' => 'setRedEnvelopeOriginExtraSceneId'
+        'redEnvelopeOriginExtraSceneId' => 'setRedEnvelopeOriginExtraSceneId',
+        'redBarrageSwitch' => 'setRedBarrageSwitch'
     ];
 
     /**
@@ -140,7 +144,8 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         'redEnvelopeExtraSceneId' => 'getRedEnvelopeExtraSceneId',
         'redEnvelopeAppearTimeMs' => 'getRedEnvelopeAppearTimeMs',
         'redEnvelopeDisappearTimeMs' => 'getRedEnvelopeDisappearTimeMs',
-        'redEnvelopeOriginExtraSceneId' => 'getRedEnvelopeOriginExtraSceneId'
+        'redEnvelopeOriginExtraSceneId' => 'getRedEnvelopeOriginExtraSceneId',
+        'redBarrageSwitch' => 'getRedBarrageSwitch'
     ];
 
     /**
@@ -209,6 +214,7 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         $this->container['redEnvelopeAppearTimeMs'] = isset($data['redEnvelopeAppearTimeMs']) ? $data['redEnvelopeAppearTimeMs'] : null;
         $this->container['redEnvelopeDisappearTimeMs'] = isset($data['redEnvelopeDisappearTimeMs']) ? $data['redEnvelopeDisappearTimeMs'] : null;
         $this->container['redEnvelopeOriginExtraSceneId'] = isset($data['redEnvelopeOriginExtraSceneId']) ? $data['redEnvelopeOriginExtraSceneId'] : null;
+        $this->container['redBarrageSwitch'] = isset($data['redBarrageSwitch']) ? $data['redBarrageSwitch'] : null;
     }
 
     /**
@@ -375,6 +381,30 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
     public function setRedEnvelopeOriginExtraSceneId($redEnvelopeOriginExtraSceneId)
     {
         $this->container['redEnvelopeOriginExtraSceneId'] = $redEnvelopeOriginExtraSceneId;
+
+        return $this;
+    }
+
+    /**
+     * Gets redBarrageSwitch
+     *
+     * @return bool|mixed
+     */
+    public function getRedBarrageSwitch()
+    {
+        return $this->container['redBarrageSwitch'];
+    }
+
+    /**
+     * Sets redBarrageSwitch
+     *
+     * @param bool|mixed $redBarrageSwitch redBarrageSwitch
+     *
+     * @return $this
+     */
+    public function setRedBarrageSwitch($redBarrageSwitch)
+    {
+        $this->container['redBarrageSwitch'] = $redBarrageSwitch;
 
         return $this;
     }

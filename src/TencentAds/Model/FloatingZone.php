@@ -66,7 +66,8 @@ class FloatingZone implements ModelInterface, ArrayAccess
         'floatingZoneType' => '\TencentAds\Model\FloatingZoneType',
         'floatingZoneSingleImageId' => 'string',
         'floatingZoneBgcolor' => 'string',
-        'floatingZoneJumpInfo' => '\TencentAds\Model\LandingPageStructure[]'
+        'floatingZoneJumpInfo' => '\TencentAds\Model\LandingPageStructure[]',
+        'floatingZoneInfoType' => '\TencentAds\Model\FloatingZoneInfoType'
     ];
 
     /**
@@ -83,7 +84,8 @@ class FloatingZone implements ModelInterface, ArrayAccess
         'floatingZoneType' => null,
         'floatingZoneSingleImageId' => null,
         'floatingZoneBgcolor' => null,
-        'floatingZoneJumpInfo' => null
+        'floatingZoneJumpInfo' => null,
+        'floatingZoneInfoType' => null
     ];
 
     /**
@@ -121,7 +123,8 @@ class FloatingZone implements ModelInterface, ArrayAccess
         'floatingZoneType' => 'floating_zone_type',
         'floatingZoneSingleImageId' => 'floating_zone_single_image_id',
         'floatingZoneBgcolor' => 'floating_zone_bgcolor',
-        'floatingZoneJumpInfo' => 'floating_zone_jump_info'
+        'floatingZoneJumpInfo' => 'floating_zone_jump_info',
+        'floatingZoneInfoType' => 'floating_zone_info_type'
     ];
 
     /**
@@ -138,7 +141,8 @@ class FloatingZone implements ModelInterface, ArrayAccess
         'floatingZoneType' => 'setFloatingZoneType',
         'floatingZoneSingleImageId' => 'setFloatingZoneSingleImageId',
         'floatingZoneBgcolor' => 'setFloatingZoneBgcolor',
-        'floatingZoneJumpInfo' => 'setFloatingZoneJumpInfo'
+        'floatingZoneJumpInfo' => 'setFloatingZoneJumpInfo',
+        'floatingZoneInfoType' => 'setFloatingZoneInfoType'
     ];
 
     /**
@@ -155,7 +159,8 @@ class FloatingZone implements ModelInterface, ArrayAccess
         'floatingZoneType' => 'getFloatingZoneType',
         'floatingZoneSingleImageId' => 'getFloatingZoneSingleImageId',
         'floatingZoneBgcolor' => 'getFloatingZoneBgcolor',
-        'floatingZoneJumpInfo' => 'getFloatingZoneJumpInfo'
+        'floatingZoneJumpInfo' => 'getFloatingZoneJumpInfo',
+        'floatingZoneInfoType' => 'getFloatingZoneInfoType'
     ];
 
     /**
@@ -227,6 +232,7 @@ class FloatingZone implements ModelInterface, ArrayAccess
         $this->container['floatingZoneSingleImageId'] = isset($data['floatingZoneSingleImageId']) ? $data['floatingZoneSingleImageId'] : null;
         $this->container['floatingZoneBgcolor'] = isset($data['floatingZoneBgcolor']) ? $data['floatingZoneBgcolor'] : null;
         $this->container['floatingZoneJumpInfo'] = isset($data['floatingZoneJumpInfo']) ? $data['floatingZoneJumpInfo'] : null;
+        $this->container['floatingZoneInfoType'] = isset($data['floatingZoneInfoType']) ? $data['floatingZoneInfoType'] : null;
     }
 
     /**
@@ -465,6 +471,30 @@ class FloatingZone implements ModelInterface, ArrayAccess
     public function setFloatingZoneJumpInfo($floatingZoneJumpInfo)
     {
         $this->container['floatingZoneJumpInfo'] = $floatingZoneJumpInfo;
+
+        return $this;
+    }
+
+    /**
+     * Gets floatingZoneInfoType
+     *
+     * @return \TencentAds\Model\FloatingZoneInfoType|mixed
+     */
+    public function getFloatingZoneInfoType()
+    {
+        return $this->container['floatingZoneInfoType'];
+    }
+
+    /**
+     * Sets floatingZoneInfoType
+     *
+     * @param \TencentAds\Model\FloatingZoneInfoType|mixed $floatingZoneInfoType floatingZoneInfoType
+     *
+     * @return $this
+     */
+    public function setFloatingZoneInfoType($floatingZoneInfoType)
+    {
+        $this->container['floatingZoneInfoType'] = $floatingZoneInfoType;
 
         return $this;
     }

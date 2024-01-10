@@ -54,6 +54,7 @@ class AccountType
     const TDC = 'ACCOUNT_TYPE_TDC';
     const TONE = 'ACCOUNT_TYPE_TONE';
     const BM = 'ACCOUNT_TYPE_BM';
+    const DATA_NEXUS = 'ACCOUNT_TYPE_DATA_NEXUS';
     
     /**
      * Gets allowable values of the enum
@@ -72,6 +73,7 @@ class AccountType
             self::TDC,
             self::TONE,
             self::BM,
+            self::DATA_NEXUS,
         ];
     }
 }

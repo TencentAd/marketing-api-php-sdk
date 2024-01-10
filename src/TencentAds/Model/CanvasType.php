@@ -68,6 +68,7 @@ class CanvasType
     const VIDEO_1280_960 = 'CANVAS_TYPE_VIDEO_1280_960';
     const PC_EGG_PLOT = 'CANVAS_TYPE_PC_EGG_PLOT';
     const EGGS_RANDOM_HALF = 'CANVAS_TYPE_EGGS_RANDOM_HALF';
+    const EGGS_RANDOM_PICK = 'CANVAS_TYPE_EGGS_RANDOM_PICK';
     
     /**
      * Gets allowable values of the enum
@@ -100,6 +101,7 @@ class CanvasType
             self::VIDEO_1280_960,
             self::PC_EGG_PLOT,
             self::EGGS_RANDOM_HALF,
+            self::EGGS_RANDOM_PICK,
         ];
     }
 }

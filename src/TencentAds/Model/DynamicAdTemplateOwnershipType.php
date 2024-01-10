@@ -53,7 +53,6 @@ class DynamicAdTemplateOwnershipType
     const GRANTED = 'GRANTED';
     const COMMON = 'COMMON';
     const PRODUCT_CATALOG_OWNED = 'PRODUCT_CATALOG_OWNED';
-    const PRODUCT_VIDEO_STRAIGHT_OUT = 'PRODUCT_VIDEO_STRAIGHT_OUT';
     
     /**
      * Gets allowable values of the enum
@@ -71,7 +70,6 @@ class DynamicAdTemplateOwnershipType
             self::GRANTED,
             self::COMMON,
             self::PRODUCT_CATALOG_OWNED,
-            self::PRODUCT_VIDEO_STRAIGHT_OUT,
         ];
     }
 }

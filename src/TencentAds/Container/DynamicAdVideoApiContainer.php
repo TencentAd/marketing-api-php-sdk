@@ -59,4 +59,48 @@ class DynamicAdVideoApiContainer extends ApiContainer
             return $response;
         });
     }
+
+
+    /**
+     * Handle DynamicAdVideoApi dynamicAdVideoGet function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function get(array $params = [])
+    {
+        return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $productCatalogId = isset($params['product_catalog_id']) ? $params['product_catalog_id'] : null;
+            $productMode = isset($params['product_mode']) ? $params['product_mode'] : null;
+            $productOuterId = isset($params['product_outer_id']) ? $params['product_outer_id'] : null;
+            $dynamicAdTemplateId = isset($params['dynamic_ad_template_id']) ? $params['dynamic_ad_template_id'] : null;
+            $fields = isset($params['fields']) ? $params['fields'] : null;
+            $response = $this->apiInstance->dynamicAdVideoGet($accountId, $productCatalogId, $productMode, $productOuterId, $dynamicAdTemplateId, $fields);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle DynamicAdVideoApi dynamicAdVideoGetAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function getAsync(array $params = [])
+    {
+        return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $productCatalogId = isset($params['product_catalog_id']) ? $params['product_catalog_id'] : null;
+            $productMode = isset($params['product_mode']) ? $params['product_mode'] : null;
+            $productOuterId = isset($params['product_outer_id']) ? $params['product_outer_id'] : null;
+            $dynamicAdTemplateId = isset($params['dynamic_ad_template_id']) ? $params['dynamic_ad_template_id'] : null;
+            $fields = isset($params['fields']) ? $params['fields'] : null;
+            $response = $this->apiInstance->dynamicAdVideoGetAsync($accountId, $productCatalogId, $productMode, $productOuterId, $dynamicAdTemplateId, $fields);
+            return $response;
+        });
+    }
 }

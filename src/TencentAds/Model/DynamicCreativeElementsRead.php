@@ -166,7 +166,8 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'mdpaTitleComponentOptions' => '\TencentAds\Model\MdpaTitleComponentOption[]',
         'mdpaDescComponentOptions' => '\TencentAds\Model\MdpaDescComponentOption[]',
         'listSublinkComponentOptions' => '\TencentAds\Model\ListSublinkComponentOption[]',
-        'imageList3ComponentOptions' => '\TencentAds\Model\ImageListComponentOption[]'
+        'imageList3ComponentOptions' => '\TencentAds\Model\ImageListComponentOption[]',
+        'wechatChannelsCoverImgShowType' => '\TencentAds\Model\WechatChannelsCoverImgShowType'
     ];
 
     /**
@@ -283,7 +284,8 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'mdpaTitleComponentOptions' => null,
         'mdpaDescComponentOptions' => null,
         'listSublinkComponentOptions' => null,
-        'imageList3ComponentOptions' => null
+        'imageList3ComponentOptions' => null,
+        'wechatChannelsCoverImgShowType' => null
     ];
 
     /**
@@ -421,7 +423,8 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'mdpaTitleComponentOptions' => 'mdpa_title_component_options',
         'mdpaDescComponentOptions' => 'mdpa_desc_component_options',
         'listSublinkComponentOptions' => 'list_sublink_component_options',
-        'imageList3ComponentOptions' => 'image_list3_component_options'
+        'imageList3ComponentOptions' => 'image_list3_component_options',
+        'wechatChannelsCoverImgShowType' => 'wechat_channels_cover_img_show_type'
     ];
 
     /**
@@ -538,7 +541,8 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'mdpaTitleComponentOptions' => 'setMdpaTitleComponentOptions',
         'mdpaDescComponentOptions' => 'setMdpaDescComponentOptions',
         'listSublinkComponentOptions' => 'setListSublinkComponentOptions',
-        'imageList3ComponentOptions' => 'setImageList3ComponentOptions'
+        'imageList3ComponentOptions' => 'setImageList3ComponentOptions',
+        'wechatChannelsCoverImgShowType' => 'setWechatChannelsCoverImgShowType'
     ];
 
     /**
@@ -655,7 +659,8 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         'mdpaTitleComponentOptions' => 'getMdpaTitleComponentOptions',
         'mdpaDescComponentOptions' => 'getMdpaDescComponentOptions',
         'listSublinkComponentOptions' => 'getListSublinkComponentOptions',
-        'imageList3ComponentOptions' => 'getImageList3ComponentOptions'
+        'imageList3ComponentOptions' => 'getImageList3ComponentOptions',
+        'wechatChannelsCoverImgShowType' => 'getWechatChannelsCoverImgShowType'
     ];
 
     /**
@@ -827,6 +832,7 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
         $this->container['mdpaDescComponentOptions'] = isset($data['mdpaDescComponentOptions']) ? $data['mdpaDescComponentOptions'] : null;
         $this->container['listSublinkComponentOptions'] = isset($data['listSublinkComponentOptions']) ? $data['listSublinkComponentOptions'] : null;
         $this->container['imageList3ComponentOptions'] = isset($data['imageList3ComponentOptions']) ? $data['imageList3ComponentOptions'] : null;
+        $this->container['wechatChannelsCoverImgShowType'] = isset($data['wechatChannelsCoverImgShowType']) ? $data['wechatChannelsCoverImgShowType'] : null;
     }
 
     /**
@@ -3465,6 +3471,30 @@ class DynamicCreativeElementsRead implements ModelInterface, ArrayAccess
     public function setImageList3ComponentOptions($imageList3ComponentOptions)
     {
         $this->container['imageList3ComponentOptions'] = $imageList3ComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsCoverImgShowType
+     *
+     * @return \TencentAds\Model\WechatChannelsCoverImgShowType|mixed
+     */
+    public function getWechatChannelsCoverImgShowType()
+    {
+        return $this->container['wechatChannelsCoverImgShowType'];
+    }
+
+    /**
+     * Sets wechatChannelsCoverImgShowType
+     *
+     * @param \TencentAds\Model\WechatChannelsCoverImgShowType|mixed $wechatChannelsCoverImgShowType wechatChannelsCoverImgShowType
+     *
+     * @return $this
+     */
+    public function setWechatChannelsCoverImgShowType($wechatChannelsCoverImgShowType)
+    {
+        $this->container['wechatChannelsCoverImgShowType'] = $wechatChannelsCoverImgShowType;
 
         return $this;
     }

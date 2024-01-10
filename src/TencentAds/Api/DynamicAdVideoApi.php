@@ -378,6 +378,369 @@ class DynamicAdVideoApi
     }
 
     /**
+     * Operation dynamicAdVideoGet
+     *
+     * 获取广告投放的动态广告视频
+     *
+     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $productCatalogId productCatalogId (required)
+     * @param  string|mixed $productMode productMode (required)
+     * @param  string|mixed $productOuterId productOuterId (required)
+     * @param  int|mixed $dynamicAdTemplateId dynamicAdTemplateId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
+     *
+     * @throws \TencentAds\ApiException on non-2xx response
+     * @throws \InvalidArgumentException
+     * @return \TencentAds\Model\DynamicAdVideoGetResponse|mixed
+     */
+    public function dynamicAdVideoGet($accountId, $productCatalogId, $productMode, $productOuterId, $dynamicAdTemplateId, $fields = null)
+    {
+        list($response) = $this->dynamicAdVideoGetWithHttpInfo($accountId, $productCatalogId, $productMode, $productOuterId, $dynamicAdTemplateId, $fields);
+        return $response;
+    }
+
+    /**
+     * Operation dynamicAdVideoGetWithHttpInfo
+     *
+     * 获取广告投放的动态广告视频
+     *
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  string|mixed $productMode (required)
+     * @param  string|mixed $productOuterId (required)
+     * @param  int|mixed $dynamicAdTemplateId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
+     *
+     * @throws \TencentAds\ApiException on non-2xx response
+     * @throws \InvalidArgumentException
+     * @return array of \TencentAds\Model\DynamicAdVideoGetResponse, HTTP status code, HTTP response headers (array of strings)
+     */
+    public function dynamicAdVideoGetWithHttpInfo($accountId, $productCatalogId, $productMode, $productOuterId, $dynamicAdTemplateId, $fields = null)
+    {
+        $returnType = '\TencentAds\Model\DynamicAdVideoGetResponse';
+        $request = $this->dynamicAdVideoGetRequest($accountId, $productCatalogId, $productMode, $productOuterId, $dynamicAdTemplateId, $fields);
+
+        try {
+            $options = $this->createHttpClientOption();
+            try {
+                $response = $this->client->send($request, $options);
+            } catch (RequestException $e) {
+                throw new ApiException(
+                    "[{$e->getCode()}] {$e->getMessage()}",
+                    $e->getCode(),
+                    $e->getResponse() ? $e->getResponse()->getHeaders() : null,
+                    $e->getResponse() ? $e->getResponse()->getBody()->getContents() : null
+                );
+            }
+
+            $statusCode = $response->getStatusCode();
+
+            if ($statusCode < 200 || $statusCode > 299) {
+                throw new ApiException(
+                    sprintf(
+                        '[%d] Error connecting to the API (%s)',
+                        $statusCode,
+                        $request->getUri()
+                    ),
+                    $statusCode,
+                    $response->getHeaders(),
+                    $response->getBody()
+                );
+            }
+
+            $responseBody = $response->getBody();
+            if ($returnType === '\SplFileObject') {
+                $content = $responseBody; //stream goes to serializer
+            } else {
+                $content = $responseBody->getContents();
+                if ($returnType !== 'string') {
+                    $content = json_decode($content);
+                }
+            }
+
+            return [
+                ObjectSerializer::deserialize($content, $returnType, []),
+                $response->getStatusCode(),
+                $response->getHeaders()
+            ];
+
+        } catch (ApiException $e) {
+            switch ($e->getCode()) {
+                case 200:
+                    $data = ObjectSerializer::deserialize(
+                        $e->getResponseBody(),
+                        '\TencentAds\Model\DynamicAdVideoGetResponse',
+                        $e->getResponseHeaders()
+                    );
+                    $e->setResponseObject($data);
+                    break;
+            }
+            throw $e;
+        }
+    }
+
+    /**
+     * Operation dynamicAdVideoGetAsync
+     *
+     * 获取广告投放的动态广告视频
+     *
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  string|mixed $productMode (required)
+     * @param  string|mixed $productOuterId (required)
+     * @param  int|mixed $dynamicAdTemplateId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function dynamicAdVideoGetAsync($accountId, $productCatalogId, $productMode, $productOuterId, $dynamicAdTemplateId, $fields = null)
+    {
+        return $this->dynamicAdVideoGetAsyncWithHttpInfo($accountId, $productCatalogId, $productMode, $productOuterId, $dynamicAdTemplateId, $fields)
+            ->then(
+                function ($response) {
+                    return $response[0];
+                }
+            );
+    }
+
+    /**
+     * Operation dynamicAdVideoGetAsyncWithHttpInfo
+     *
+     * 获取广告投放的动态广告视频
+     *
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  string|mixed $productMode (required)
+     * @param  string|mixed $productOuterId (required)
+     * @param  int|mixed $dynamicAdTemplateId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function dynamicAdVideoGetAsyncWithHttpInfo($accountId, $productCatalogId, $productMode, $productOuterId, $dynamicAdTemplateId, $fields = null)
+    {
+        $returnType = '\TencentAds\Model\DynamicAdVideoGetResponse';
+        $request = $this->dynamicAdVideoGetRequest($accountId, $productCatalogId, $productMode, $productOuterId, $dynamicAdTemplateId, $fields);
+
+        return $this->client
+            ->sendAsync($request, $this->createHttpClientOption())
+            ->then(
+                function ($response) use ($returnType) {
+                    $responseBody = $response->getBody();
+                    if ($returnType === '\SplFileObject') {
+                        $content = $responseBody; //stream goes to serializer
+                    } else {
+                        $content = $responseBody->getContents();
+                        if ($returnType !== 'string') {
+                            $content = json_decode($content);
+                        }
+                    }
+
+                    return [
+                        ObjectSerializer::deserialize($content, $returnType, []),
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+                },
+                function ($exception) {
+                    $response = $exception->getResponse();
+                    $statusCode = $response->getStatusCode();
+                    throw new ApiException(
+                        sprintf(
+                            '[%d] Error connecting to the API (%s)',
+                            $statusCode,
+                            $exception->getRequest()->getUri()
+                        ),
+                        $statusCode,
+                        $response->getHeaders(),
+                        $response->getBody()
+                    );
+                }
+            );
+    }
+
+    /**
+     * Create request for operation 'dynamicAdVideoGet'
+     *
+     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $productCatalogId (required)
+     * @param  string|mixed $productMode (required)
+     * @param  string|mixed $productOuterId (required)
+     * @param  int|mixed $dynamicAdTemplateId (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Psr7\Request
+     */
+    protected function dynamicAdVideoGetRequest($accountId, $productCatalogId, $productMode, $productOuterId, $dynamicAdTemplateId, $fields = null)
+    {
+        // verify the required parameter 'accountId' is set
+        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $accountId when calling dynamicAdVideoGet'
+            );
+        }
+        // verify the required parameter 'productCatalogId' is set
+        if ($productCatalogId === null || (is_array($productCatalogId) && count($productCatalogId) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $productCatalogId when calling dynamicAdVideoGet'
+            );
+        }
+        // verify the required parameter 'productMode' is set
+        if ($productMode === null || (is_array($productMode) && count($productMode) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $productMode when calling dynamicAdVideoGet'
+            );
+        }
+        // verify the required parameter 'productOuterId' is set
+        if ($productOuterId === null || (is_array($productOuterId) && count($productOuterId) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $productOuterId when calling dynamicAdVideoGet'
+            );
+        }
+        // verify the required parameter 'dynamicAdTemplateId' is set
+        if ($dynamicAdTemplateId === null || (is_array($dynamicAdTemplateId) && count($dynamicAdTemplateId) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $dynamicAdTemplateId when calling dynamicAdVideoGet'
+            );
+        }
+
+        $resourcePath = '/dynamic_ad_video/get';
+        $formParams = [];
+        $queryParams = [];
+        $headerParams = [];
+        $httpBody = '';
+        $multipart = false;
+
+        // query params
+        if ($accountId !== null) {
+            $queryParams['account_id'] = ObjectSerializer::toQueryValue($accountId);
+        }
+        // query params
+        if ($productCatalogId !== null) {
+            $queryParams['product_catalog_id'] = ObjectSerializer::toQueryValue($productCatalogId);
+        }
+        // query params
+        if ($productMode !== null) {
+            $queryParams['product_mode'] = ObjectSerializer::toQueryValue($productMode);
+        }
+        // query params
+        if ($productOuterId !== null) {
+            $queryParams['product_outer_id'] = ObjectSerializer::toQueryValue($productOuterId);
+        }
+        // query params
+        if ($dynamicAdTemplateId !== null) {
+            $queryParams['dynamic_ad_template_id'] = ObjectSerializer::toQueryValue($dynamicAdTemplateId);
+        }
+        // query params
+        if (is_array($fields)) {
+            $queryParams['fields'] = $fields;
+        } else
+        if ($fields !== null) {
+            $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);
+        }
+
+
+        // body params
+        $_tempBody = null;
+
+        if (in_array('multipart/form-data', ['text/plain'])) {
+            $multipart = true;
+        }
+        if ($multipart) {
+            $headers = $this->headerSelector->selectHeadersForMultipart(
+                ['application/json']
+            );
+        } else {
+            $headers = $this->headerSelector->selectHeaders(
+                ['application/json'],
+                ['text/plain']
+            );
+        }
+
+        // for model (json/xml)
+        if (isset($_tempBody)) {
+            // $_tempBody is the method argument, if present
+            $httpBody = $_tempBody;
+            
+            if($headers['Content-Type'] === 'application/json') {
+                // \stdClass has no __toString(), so we should encode it manually
+                if ($httpBody instanceof \stdClass) {
+                    $httpBody = \GuzzleHttp\json_encode($httpBody);
+                }
+                // array has no __toString(), so we should encode it manually
+                if(is_array($httpBody)) {
+                    $httpBody = \GuzzleHttp\json_encode(ObjectSerializer::sanitizeForSerialization($httpBody));
+                }
+            }
+        } elseif (count($formParams) > 0) {
+            if ($multipart) {
+                $multipartContents = [];
+                foreach ($formParams as $formParamName => $formParamValue) {
+                    $multipartContents[] = [
+                        'name' => $formParamName,
+                        'contents' => $formParamValue
+                    ];
+                }
+                // for HTTP post (form)
+                $httpBody = new MultipartStream($multipartContents);
+
+            } elseif ($headers['Content-Type'] === 'application/json') {
+                $httpBody = \GuzzleHttp\json_encode($formParams);
+
+            } else {
+                // for HTTP post (form)
+                if (class_exists('\GuzzleHttp\Psr7\Query')) {
+                    $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
+                } else {
+                    $httpBody = \GuzzleHttp\Psr7\build_query($formParams);
+                }
+            }
+        }
+
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('access_token');
+        if ($apiKey !== null) {
+            $queryParams['access_token'] = $apiKey;
+        }
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('nonce');
+        if ($apiKey !== null) {
+            $queryParams['nonce'] = $apiKey;
+        }
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('timestamp');
+        if ($apiKey !== null) {
+            $queryParams['timestamp'] = $apiKey;
+        }
+
+        $defaultHeaders = [];
+        if ($this->config->getUserAgent()) {
+            $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
+        }
+
+        $headers = array_merge(
+            $defaultHeaders,
+            $headerParams,
+            $headers
+        );
+
+        if (class_exists('\GuzzleHttp\Psr7\Query')) {
+            $query = \GuzzleHttp\Psr7\Query::build($queryParams);
+        } else {
+            $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        }
+        return new Request(
+            'GET',
+            $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
+            $headers,
+            $httpBody
+        );
+    }
+
+    /**
      * Create http client option
      *
      * @throws \RuntimeException on file opening failure

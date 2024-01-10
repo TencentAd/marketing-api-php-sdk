@@ -51,6 +51,7 @@ class MediaSourceType
     const TCC = 'SOURCE_TYPE_TCC';
     const DERIVE = 'SOURCE_TYPE_DERIVE';
     const DERIVATION = 'SOURCE_TYPE_DERIVATION';
+    const AIGC = 'SOURCE_TYPE_AIGC';
     
     /**
      * Gets allowable values of the enum
@@ -66,6 +67,7 @@ class MediaSourceType
             self::TCC,
             self::DERIVE,
             self::DERIVATION,
+            self::AIGC,
         ];
     }
 }

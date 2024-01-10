@@ -48,6 +48,7 @@ class AccountRoleType
     const AGENCY = 'ACCOUNT_ROLE_TYPE_AGENCY';
     const T1 = 'ACCOUNT_ROLE_TYPE_T1';
     const BUSINESS_MANAGER = 'ACCOUNT_ROLE_TYPE_BUSINESS_MANAGER';
+    const DATA_NEXUS = 'ACCOUNT_ROLE_TYPE_DATA_NEXUS';
     
     /**
      * Gets allowable values of the enum
@@ -60,6 +61,7 @@ class AccountRoleType
             self::AGENCY,
             self::T1,
             self::BUSINESS_MANAGER,
+            self::DATA_NEXUS,
         ];
     }
 }

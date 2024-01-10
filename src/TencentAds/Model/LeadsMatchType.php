@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * LeadsMatchType Class Doc Comment
  *
  * @category Class
- * @description 线索匹配类型，不填认为是NONE
+ * @description 线索匹配类型，不填认为时OUTERLEADSID
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

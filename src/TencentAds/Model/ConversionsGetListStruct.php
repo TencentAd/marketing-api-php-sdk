@@ -84,7 +84,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepBehaviorAdvancedGoal' => '\TencentAds\Model\IntOptimizationGoal',
         'deepBehaviorAdvancedGoalMinPrice' => 'int',
         'deepBehaviorAdvancedGoalMaxPrice' => 'int',
-        'deepOptimizationGoalType' => '\TencentAds\Model\DeepOptimizationGoalType'
+        'deepOptimizationGoalType' => '\TencentAds\Model\DeepOptimizationGoalType',
+        'forwardLinkAssist' => '\TencentAds\Model\IntOptimizationGoal'
     ];
 
     /**
@@ -119,7 +120,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepBehaviorAdvancedGoal' => null,
         'deepBehaviorAdvancedGoalMinPrice' => 'int64',
         'deepBehaviorAdvancedGoalMaxPrice' => 'int64',
-        'deepOptimizationGoalType' => null
+        'deepOptimizationGoalType' => null,
+        'forwardLinkAssist' => null
     ];
 
     /**
@@ -175,7 +177,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepBehaviorAdvancedGoal' => 'deep_behavior_advanced_goal',
         'deepBehaviorAdvancedGoalMinPrice' => 'deep_behavior_advanced_goal_min_price',
         'deepBehaviorAdvancedGoalMaxPrice' => 'deep_behavior_advanced_goal_max_price',
-        'deepOptimizationGoalType' => 'deep_optimization_goal_type'
+        'deepOptimizationGoalType' => 'deep_optimization_goal_type',
+        'forwardLinkAssist' => 'forward_link_assist'
     ];
 
     /**
@@ -210,7 +213,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepBehaviorAdvancedGoal' => 'setDeepBehaviorAdvancedGoal',
         'deepBehaviorAdvancedGoalMinPrice' => 'setDeepBehaviorAdvancedGoalMinPrice',
         'deepBehaviorAdvancedGoalMaxPrice' => 'setDeepBehaviorAdvancedGoalMaxPrice',
-        'deepOptimizationGoalType' => 'setDeepOptimizationGoalType'
+        'deepOptimizationGoalType' => 'setDeepOptimizationGoalType',
+        'forwardLinkAssist' => 'setForwardLinkAssist'
     ];
 
     /**
@@ -245,7 +249,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepBehaviorAdvancedGoal' => 'getDeepBehaviorAdvancedGoal',
         'deepBehaviorAdvancedGoalMinPrice' => 'getDeepBehaviorAdvancedGoalMinPrice',
         'deepBehaviorAdvancedGoalMaxPrice' => 'getDeepBehaviorAdvancedGoalMaxPrice',
-        'deepOptimizationGoalType' => 'getDeepOptimizationGoalType'
+        'deepOptimizationGoalType' => 'getDeepOptimizationGoalType',
+        'forwardLinkAssist' => 'getForwardLinkAssist'
     ];
 
     /**
@@ -335,6 +340,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['deepBehaviorAdvancedGoalMinPrice'] = isset($data['deepBehaviorAdvancedGoalMinPrice']) ? $data['deepBehaviorAdvancedGoalMinPrice'] : null;
         $this->container['deepBehaviorAdvancedGoalMaxPrice'] = isset($data['deepBehaviorAdvancedGoalMaxPrice']) ? $data['deepBehaviorAdvancedGoalMaxPrice'] : null;
         $this->container['deepOptimizationGoalType'] = isset($data['deepOptimizationGoalType']) ? $data['deepOptimizationGoalType'] : null;
+        $this->container['forwardLinkAssist'] = isset($data['forwardLinkAssist']) ? $data['forwardLinkAssist'] : null;
     }
 
     /**
@@ -1005,6 +1011,30 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     public function setDeepOptimizationGoalType($deepOptimizationGoalType)
     {
         $this->container['deepOptimizationGoalType'] = $deepOptimizationGoalType;
+
+        return $this;
+    }
+
+    /**
+     * Gets forwardLinkAssist
+     *
+     * @return \TencentAds\Model\IntOptimizationGoal|mixed
+     */
+    public function getForwardLinkAssist()
+    {
+        return $this->container['forwardLinkAssist'];
+    }
+
+    /**
+     * Sets forwardLinkAssist
+     *
+     * @param \TencentAds\Model\IntOptimizationGoal|mixed $forwardLinkAssist forwardLinkAssist
+     *
+     * @return $this
+     */
+    public function setForwardLinkAssist($forwardLinkAssist)
+    {
+        $this->container['forwardLinkAssist'] = $forwardLinkAssist;
 
         return $this;
     }

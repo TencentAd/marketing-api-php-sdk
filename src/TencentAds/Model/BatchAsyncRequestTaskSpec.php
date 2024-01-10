@@ -81,7 +81,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDeepConversionWorthAdvancedRateSpec' => '\TencentAds\Model\UpdateAdgroupDeepConversionWorthAdvancedRateItem[]',
         'updateDeepConversionBehaviorAdvancedBidSpec' => '\TencentAds\Model\UpdateDeepConversionBehaviorAdvancedBidItem[]',
         'replyFinderObjectCommentSpec' => '\TencentAds\Model\ReplyFinderObjectCommentItem[]',
-        'updateFinderObjectCommentFlagSpec' => '\TencentAds\Model\UpdateFinderObjectCommentFlagItem[]'
+        'updateFinderObjectCommentFlagSpec' => '\TencentAds\Model\UpdateFinderObjectCommentFlagItem[]',
+        'deleteFinderObjectCommentSpec' => '\TencentAds\Model\DeleteFinderObjectCommentItem[]'
     ];
 
     /**
@@ -113,7 +114,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDeepConversionWorthAdvancedRateSpec' => null,
         'updateDeepConversionBehaviorAdvancedBidSpec' => null,
         'replyFinderObjectCommentSpec' => null,
-        'updateFinderObjectCommentFlagSpec' => null
+        'updateFinderObjectCommentFlagSpec' => null,
+        'deleteFinderObjectCommentSpec' => null
     ];
 
     /**
@@ -166,7 +168,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDeepConversionWorthAdvancedRateSpec' => 'update_adgroup_deep_conversion_worth_advanced_rate_spec',
         'updateDeepConversionBehaviorAdvancedBidSpec' => 'update_deep_conversion_behavior_advanced_bid_spec',
         'replyFinderObjectCommentSpec' => 'reply_finder_object_comment_spec',
-        'updateFinderObjectCommentFlagSpec' => 'update_finder_object_comment_flag_spec'
+        'updateFinderObjectCommentFlagSpec' => 'update_finder_object_comment_flag_spec',
+        'deleteFinderObjectCommentSpec' => 'delete_finder_object_comment_spec'
     ];
 
     /**
@@ -198,7 +201,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDeepConversionWorthAdvancedRateSpec' => 'setUpdateAdgroupDeepConversionWorthAdvancedRateSpec',
         'updateDeepConversionBehaviorAdvancedBidSpec' => 'setUpdateDeepConversionBehaviorAdvancedBidSpec',
         'replyFinderObjectCommentSpec' => 'setReplyFinderObjectCommentSpec',
-        'updateFinderObjectCommentFlagSpec' => 'setUpdateFinderObjectCommentFlagSpec'
+        'updateFinderObjectCommentFlagSpec' => 'setUpdateFinderObjectCommentFlagSpec',
+        'deleteFinderObjectCommentSpec' => 'setDeleteFinderObjectCommentSpec'
     ];
 
     /**
@@ -230,7 +234,8 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDeepConversionWorthAdvancedRateSpec' => 'getUpdateAdgroupDeepConversionWorthAdvancedRateSpec',
         'updateDeepConversionBehaviorAdvancedBidSpec' => 'getUpdateDeepConversionBehaviorAdvancedBidSpec',
         'replyFinderObjectCommentSpec' => 'getReplyFinderObjectCommentSpec',
-        'updateFinderObjectCommentFlagSpec' => 'getUpdateFinderObjectCommentFlagSpec'
+        'updateFinderObjectCommentFlagSpec' => 'getUpdateFinderObjectCommentFlagSpec',
+        'deleteFinderObjectCommentSpec' => 'getDeleteFinderObjectCommentSpec'
     ];
 
     /**
@@ -317,6 +322,7 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
         $this->container['updateDeepConversionBehaviorAdvancedBidSpec'] = isset($data['updateDeepConversionBehaviorAdvancedBidSpec']) ? $data['updateDeepConversionBehaviorAdvancedBidSpec'] : null;
         $this->container['replyFinderObjectCommentSpec'] = isset($data['replyFinderObjectCommentSpec']) ? $data['replyFinderObjectCommentSpec'] : null;
         $this->container['updateFinderObjectCommentFlagSpec'] = isset($data['updateFinderObjectCommentFlagSpec']) ? $data['updateFinderObjectCommentFlagSpec'] : null;
+        $this->container['deleteFinderObjectCommentSpec'] = isset($data['deleteFinderObjectCommentSpec']) ? $data['deleteFinderObjectCommentSpec'] : null;
     }
 
     /**
@@ -915,6 +921,30 @@ class BatchAsyncRequestTaskSpec implements ModelInterface, ArrayAccess
     public function setUpdateFinderObjectCommentFlagSpec($updateFinderObjectCommentFlagSpec)
     {
         $this->container['updateFinderObjectCommentFlagSpec'] = $updateFinderObjectCommentFlagSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets deleteFinderObjectCommentSpec
+     *
+     * @return \TencentAds\Model\DeleteFinderObjectCommentItem[]|mixed
+     */
+    public function getDeleteFinderObjectCommentSpec()
+    {
+        return $this->container['deleteFinderObjectCommentSpec'];
+    }
+
+    /**
+     * Sets deleteFinderObjectCommentSpec
+     *
+     * @param \TencentAds\Model\DeleteFinderObjectCommentItem[]|mixed $deleteFinderObjectCommentSpec deleteFinderObjectCommentSpec
+     *
+     * @return $this
+     */
+    public function setDeleteFinderObjectCommentSpec($deleteFinderObjectCommentSpec)
+    {
+        $this->container['deleteFinderObjectCommentSpec'] = $deleteFinderObjectCommentSpec;
 
         return $this;
     }

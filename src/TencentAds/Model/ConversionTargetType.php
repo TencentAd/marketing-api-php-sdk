@@ -70,6 +70,8 @@ class ConversionTargetType
     const SECKILL = 'CONVERSION_TARGET_SECKILL';
     const ADD_WECOM = 'CONVERSION_TARGET_ADD_WECOM';
     const LIKE = 'CONVERSION_TARGET_LIKE';
+    const DONATION = 'CONVERSION_TARGET_DONATION';
+    const GOOD_DEED = 'CONVERSION_TARGET_GOOD_DEED';
     
     /**
      * Gets allowable values of the enum
@@ -104,6 +106,8 @@ class ConversionTargetType
             self::SECKILL,
             self::ADD_WECOM,
             self::LIKE,
+            self::DONATION,
+            self::GOOD_DEED,
         ];
     }
 }
