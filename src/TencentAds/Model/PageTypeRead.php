@@ -98,6 +98,7 @@ class PageTypeRead
     const SEARCH_BRAND_AREA = 'PAGE_TYPE_SEARCH_BRAND_AREA';
     const WECHAT_CHANNELS_PROFILE = 'PAGE_TYPE_WECHAT_CHANNELS_PROFILE';
     const TSA_OTT = 'PAGE_TYPE_TSA_OTT';
+    const WECHAT_CHANNELS_SHOP_PRODUCT = 'PAGE_TYPE_WECHAT_CHANNELS_SHOP_PRODUCT';
     
     /**
      * Gets allowable values of the enum
@@ -160,6 +161,7 @@ class PageTypeRead
             self::SEARCH_BRAND_AREA,
             self::WECHAT_CHANNELS_PROFILE,
             self::TSA_OTT,
+            self::WECHAT_CHANNELS_SHOP_PRODUCT,
         ];
     }
 }

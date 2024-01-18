@@ -63,7 +63,8 @@ class PageSpec implements ModelInterface, ArrayAccess
         'miniProgramSpec' => '\TencentAds\Model\AdcreativeMiniProgramSpec',
         'miniGameSpec' => '\TencentAds\Model\MiniGameSpec',
         'overrideCanvasHeadOption' => '\TencentAds\Model\OverrideCanvasHeadOption',
-        'dynamicProductSpec' => '\TencentAds\Model\DynamicProductSpec'
+        'dynamicProductSpec' => '\TencentAds\Model\DynamicProductSpec',
+        'channelsShopProductSpec' => '\TencentAds\Model\ChannelsShopProductSpec'
     ];
 
     /**
@@ -77,7 +78,8 @@ class PageSpec implements ModelInterface, ArrayAccess
         'miniProgramSpec' => null,
         'miniGameSpec' => null,
         'overrideCanvasHeadOption' => null,
-        'dynamicProductSpec' => null
+        'dynamicProductSpec' => null,
+        'channelsShopProductSpec' => null
     ];
 
     /**
@@ -112,7 +114,8 @@ class PageSpec implements ModelInterface, ArrayAccess
         'miniProgramSpec' => 'mini_program_spec',
         'miniGameSpec' => 'mini_game_spec',
         'overrideCanvasHeadOption' => 'override_canvas_head_option',
-        'dynamicProductSpec' => 'dynamic_product_spec'
+        'dynamicProductSpec' => 'dynamic_product_spec',
+        'channelsShopProductSpec' => 'channels_shop_product_spec'
     ];
 
     /**
@@ -126,7 +129,8 @@ class PageSpec implements ModelInterface, ArrayAccess
         'miniProgramSpec' => 'setMiniProgramSpec',
         'miniGameSpec' => 'setMiniGameSpec',
         'overrideCanvasHeadOption' => 'setOverrideCanvasHeadOption',
-        'dynamicProductSpec' => 'setDynamicProductSpec'
+        'dynamicProductSpec' => 'setDynamicProductSpec',
+        'channelsShopProductSpec' => 'setChannelsShopProductSpec'
     ];
 
     /**
@@ -140,7 +144,8 @@ class PageSpec implements ModelInterface, ArrayAccess
         'miniProgramSpec' => 'getMiniProgramSpec',
         'miniGameSpec' => 'getMiniGameSpec',
         'overrideCanvasHeadOption' => 'getOverrideCanvasHeadOption',
-        'dynamicProductSpec' => 'getDynamicProductSpec'
+        'dynamicProductSpec' => 'getDynamicProductSpec',
+        'channelsShopProductSpec' => 'getChannelsShopProductSpec'
     ];
 
     /**
@@ -209,6 +214,7 @@ class PageSpec implements ModelInterface, ArrayAccess
         $this->container['miniGameSpec'] = isset($data['miniGameSpec']) ? $data['miniGameSpec'] : null;
         $this->container['overrideCanvasHeadOption'] = isset($data['overrideCanvasHeadOption']) ? $data['overrideCanvasHeadOption'] : null;
         $this->container['dynamicProductSpec'] = isset($data['dynamicProductSpec']) ? $data['dynamicProductSpec'] : null;
+        $this->container['channelsShopProductSpec'] = isset($data['channelsShopProductSpec']) ? $data['channelsShopProductSpec'] : null;
     }
 
     /**
@@ -375,6 +381,30 @@ class PageSpec implements ModelInterface, ArrayAccess
     public function setDynamicProductSpec($dynamicProductSpec)
     {
         $this->container['dynamicProductSpec'] = $dynamicProductSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets channelsShopProductSpec
+     *
+     * @return \TencentAds\Model\ChannelsShopProductSpec|mixed
+     */
+    public function getChannelsShopProductSpec()
+    {
+        return $this->container['channelsShopProductSpec'];
+    }
+
+    /**
+     * Sets channelsShopProductSpec
+     *
+     * @param \TencentAds\Model\ChannelsShopProductSpec|mixed $channelsShopProductSpec channelsShopProductSpec
+     *
+     * @return $this
+     */
+    public function setChannelsShopProductSpec($channelsShopProductSpec)
+    {
+        $this->container['channelsShopProductSpec'] = $channelsShopProductSpec;
 
         return $this;
     }

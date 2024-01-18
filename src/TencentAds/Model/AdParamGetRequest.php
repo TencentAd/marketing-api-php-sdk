@@ -61,7 +61,7 @@ class AdParamGetRequest implements ModelInterface, ArrayAccess
         'campaignType' => '\TencentAds\Model\CampaignType',
         'promotedObjectType' => '\TencentAds\Model\PromotedObjectType',
         'adcreativeTemplateId' => 'int',
-        'siteSet' => '\TencentAds\Model\SiteSetDefinition',
+        'siteSet' => '\TencentAds\Model\IntSiteSetDefinition',
         'productCatalogId' => 'int'
     ];
 
@@ -333,7 +333,7 @@ class AdParamGetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets siteSet
      *
-     * @return \TencentAds\Model\SiteSetDefinition|mixed
+     * @return \TencentAds\Model\IntSiteSetDefinition|mixed
      */
     public function getSiteSet()
     {
@@ -343,7 +343,7 @@ class AdParamGetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets siteSet
      *
-     * @param \TencentAds\Model\SiteSetDefinition|mixed $siteSet siteSet
+     * @param \TencentAds\Model\IntSiteSetDefinition|mixed $siteSet siteSet
      *
      * @return $this
      */

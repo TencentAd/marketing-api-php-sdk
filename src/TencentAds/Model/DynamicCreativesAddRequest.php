@@ -103,6 +103,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'headClickType' => '\TencentAds\Model\HeadClickType',
         'headClickSpec' => '\TencentAds\Model\HeadClickSpec',
         'campaignId' => 'int',
+        'wechatChannelsTrackingSpec' => '\TencentAds\Model\WechatChannelsTrackingSpec',
         'pageTrackUrl' => 'string',
         'industryLabel' => 'string',
         'sublinkSwitch' => '\TencentAds\Model\AdvertiserSublinkSwitch',
@@ -163,6 +164,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'headClickType' => null,
         'headClickSpec' => null,
         'campaignId' => 'int64',
+        'wechatChannelsTrackingSpec' => null,
         'pageTrackUrl' => null,
         'industryLabel' => null,
         'sublinkSwitch' => null,
@@ -244,6 +246,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'headClickType' => 'head_click_type',
         'headClickSpec' => 'head_click_spec',
         'campaignId' => 'campaign_id',
+        'wechatChannelsTrackingSpec' => 'wechat_channels_tracking_spec',
         'pageTrackUrl' => 'page_track_url',
         'industryLabel' => 'industry_label',
         'sublinkSwitch' => 'sublink_switch',
@@ -304,6 +307,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'headClickType' => 'setHeadClickType',
         'headClickSpec' => 'setHeadClickSpec',
         'campaignId' => 'setCampaignId',
+        'wechatChannelsTrackingSpec' => 'setWechatChannelsTrackingSpec',
         'pageTrackUrl' => 'setPageTrackUrl',
         'industryLabel' => 'setIndustryLabel',
         'sublinkSwitch' => 'setSublinkSwitch',
@@ -364,6 +368,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'headClickType' => 'getHeadClickType',
         'headClickSpec' => 'getHeadClickSpec',
         'campaignId' => 'getCampaignId',
+        'wechatChannelsTrackingSpec' => 'getWechatChannelsTrackingSpec',
         'pageTrackUrl' => 'getPageTrackUrl',
         'industryLabel' => 'getIndustryLabel',
         'sublinkSwitch' => 'getSublinkSwitch',
@@ -478,6 +483,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         $this->container['headClickType'] = isset($data['headClickType']) ? $data['headClickType'] : null;
         $this->container['headClickSpec'] = isset($data['headClickSpec']) ? $data['headClickSpec'] : null;
         $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
+        $this->container['wechatChannelsTrackingSpec'] = isset($data['wechatChannelsTrackingSpec']) ? $data['wechatChannelsTrackingSpec'] : null;
         $this->container['pageTrackUrl'] = isset($data['pageTrackUrl']) ? $data['pageTrackUrl'] : null;
         $this->container['industryLabel'] = isset($data['industryLabel']) ? $data['industryLabel'] : null;
         $this->container['sublinkSwitch'] = isset($data['sublinkSwitch']) ? $data['sublinkSwitch'] : null;
@@ -1610,6 +1616,30 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     public function setCampaignId($campaignId)
     {
         $this->container['campaignId'] = $campaignId;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsTrackingSpec
+     *
+     * @return \TencentAds\Model\WechatChannelsTrackingSpec|mixed
+     */
+    public function getWechatChannelsTrackingSpec()
+    {
+        return $this->container['wechatChannelsTrackingSpec'];
+    }
+
+    /**
+     * Sets wechatChannelsTrackingSpec
+     *
+     * @param \TencentAds\Model\WechatChannelsTrackingSpec|mixed $wechatChannelsTrackingSpec wechatChannelsTrackingSpec
+     *
+     * @return $this
+     */
+    public function setWechatChannelsTrackingSpec($wechatChannelsTrackingSpec)
+    {
+        $this->container['wechatChannelsTrackingSpec'] = $wechatChannelsTrackingSpec;
 
         return $this;
     }

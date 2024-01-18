@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * SiteSetDefinition Class Doc Comment
  *
  * @category Class
- * @description 投放站点集合
+ * @description 版位信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -76,6 +76,7 @@ class SiteSetDefinition
     const THIRDPARTY = 'SITE_SET_THIRDPARTY';
     const JD_WAICAI = 'SITE_SET_JD_WAICAI';
     const PCQQ = 'SITE_SET_PCQQ';
+    const PCAD = 'SITE_SET_PCAD';
     const KUAISHOU = 'SITE_SET_KUAISHOU';
     const KANDIAN = 'SITE_SET_KANDIAN';
     const QQ_MUSIC_GAME = 'SITE_SET_QQ_MUSIC_GAME';
@@ -138,6 +139,7 @@ class SiteSetDefinition
             self::THIRDPARTY,
             self::JD_WAICAI,
             self::PCQQ,
+            self::PCAD,
             self::KUAISHOU,
             self::KANDIAN,
             self::QQ_MUSIC_GAME,

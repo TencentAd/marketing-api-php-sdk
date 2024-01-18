@@ -61,7 +61,8 @@ class LinkPageSpec implements ModelInterface, ArrayAccess
         'pageId' => 'int',
         'pageUrl' => 'string',
         'miniProgramSpec' => '\TencentAds\Model\AdcreativeMiniProgramSpec',
-        'miniGameSpec' => '\TencentAds\Model\LinkMiniGameSpec'
+        'miniGameSpec' => '\TencentAds\Model\LinkMiniGameSpec',
+        'channelsShopProductSpec' => '\TencentAds\Model\ChannelsShopProductSpec'
     ];
 
     /**
@@ -73,7 +74,8 @@ class LinkPageSpec implements ModelInterface, ArrayAccess
         'pageId' => 'int64',
         'pageUrl' => null,
         'miniProgramSpec' => null,
-        'miniGameSpec' => null
+        'miniGameSpec' => null,
+        'channelsShopProductSpec' => null
     ];
 
     /**
@@ -106,7 +108,8 @@ class LinkPageSpec implements ModelInterface, ArrayAccess
         'pageId' => 'page_id',
         'pageUrl' => 'page_url',
         'miniProgramSpec' => 'mini_program_spec',
-        'miniGameSpec' => 'mini_game_spec'
+        'miniGameSpec' => 'mini_game_spec',
+        'channelsShopProductSpec' => 'channels_shop_product_spec'
     ];
 
     /**
@@ -118,7 +121,8 @@ class LinkPageSpec implements ModelInterface, ArrayAccess
         'pageId' => 'setPageId',
         'pageUrl' => 'setPageUrl',
         'miniProgramSpec' => 'setMiniProgramSpec',
-        'miniGameSpec' => 'setMiniGameSpec'
+        'miniGameSpec' => 'setMiniGameSpec',
+        'channelsShopProductSpec' => 'setChannelsShopProductSpec'
     ];
 
     /**
@@ -130,7 +134,8 @@ class LinkPageSpec implements ModelInterface, ArrayAccess
         'pageId' => 'getPageId',
         'pageUrl' => 'getPageUrl',
         'miniProgramSpec' => 'getMiniProgramSpec',
-        'miniGameSpec' => 'getMiniGameSpec'
+        'miniGameSpec' => 'getMiniGameSpec',
+        'channelsShopProductSpec' => 'getChannelsShopProductSpec'
     ];
 
     /**
@@ -197,6 +202,7 @@ class LinkPageSpec implements ModelInterface, ArrayAccess
         $this->container['pageUrl'] = isset($data['pageUrl']) ? $data['pageUrl'] : null;
         $this->container['miniProgramSpec'] = isset($data['miniProgramSpec']) ? $data['miniProgramSpec'] : null;
         $this->container['miniGameSpec'] = isset($data['miniGameSpec']) ? $data['miniGameSpec'] : null;
+        $this->container['channelsShopProductSpec'] = isset($data['channelsShopProductSpec']) ? $data['channelsShopProductSpec'] : null;
     }
 
     /**
@@ -315,6 +321,30 @@ class LinkPageSpec implements ModelInterface, ArrayAccess
     public function setMiniGameSpec($miniGameSpec)
     {
         $this->container['miniGameSpec'] = $miniGameSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets channelsShopProductSpec
+     *
+     * @return \TencentAds\Model\ChannelsShopProductSpec|mixed
+     */
+    public function getChannelsShopProductSpec()
+    {
+        return $this->container['channelsShopProductSpec'];
+    }
+
+    /**
+     * Sets channelsShopProductSpec
+     *
+     * @param \TencentAds\Model\ChannelsShopProductSpec|mixed $channelsShopProductSpec channelsShopProductSpec
+     *
+     * @return $this
+     */
+    public function setChannelsShopProductSpec($channelsShopProductSpec)
+    {
+        $this->container['channelsShopProductSpec'] = $channelsShopProductSpec;
 
         return $this;
     }

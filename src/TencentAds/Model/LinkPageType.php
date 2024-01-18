@@ -74,6 +74,7 @@ class LinkPageType
     const ANDROID_DIRECT_DOWNLOAD = 'LINK_PAGE_TYPE_ANDROID_DIRECT_DOWNLOAD';
     const LINGQUE_H5 = 'LINK_PAGE_TYPE_LINGQUE_H5';
     const LINGQUE_MINI_PROGRAM = 'LINK_PAGE_TYPE_LINGQUE_MINI_PROGRAM';
+    const WECHAT_CHANNELS_SHOP_PRODUCT = 'LINK_PAGE_TYPE_WECHAT_CHANNELS_SHOP_PRODUCT';
     
     /**
      * Gets allowable values of the enum
@@ -112,6 +113,7 @@ class LinkPageType
             self::ANDROID_DIRECT_DOWNLOAD,
             self::LINGQUE_H5,
             self::LINGQUE_MINI_PROGRAM,
+            self::WECHAT_CHANNELS_SHOP_PRODUCT,
         ];
     }
 }

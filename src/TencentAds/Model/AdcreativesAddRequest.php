@@ -97,6 +97,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'industryLabel' => 'string',
         'unionMarketSpec' => '\TencentAds\Model\UnionMarketSpec',
         'androidQuickAppSpec' => '\TencentAds\Model\AndroidQuickAppSpec',
+        'wechatChannelsTrackingSpec' => '\TencentAds\Model\WechatChannelsTrackingSpec',
         'liveVideoMode' => '\TencentAds\Model\LiveVideoMode',
         'liveVideoSubMode' => '\TencentAds\Model\LiveVideoSubMode',
         'linkNameText' => 'string',
@@ -151,6 +152,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'industryLabel' => null,
         'unionMarketSpec' => null,
         'androidQuickAppSpec' => null,
+        'wechatChannelsTrackingSpec' => null,
         'liveVideoMode' => null,
         'liveVideoSubMode' => null,
         'linkNameText' => null,
@@ -226,6 +228,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'industryLabel' => 'industry_label',
         'unionMarketSpec' => 'union_market_spec',
         'androidQuickAppSpec' => 'android_quick_app_spec',
+        'wechatChannelsTrackingSpec' => 'wechat_channels_tracking_spec',
         'liveVideoMode' => 'live_video_mode',
         'liveVideoSubMode' => 'live_video_sub_mode',
         'linkNameText' => 'link_name_text',
@@ -280,6 +283,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'industryLabel' => 'setIndustryLabel',
         'unionMarketSpec' => 'setUnionMarketSpec',
         'androidQuickAppSpec' => 'setAndroidQuickAppSpec',
+        'wechatChannelsTrackingSpec' => 'setWechatChannelsTrackingSpec',
         'liveVideoMode' => 'setLiveVideoMode',
         'liveVideoSubMode' => 'setLiveVideoSubMode',
         'linkNameText' => 'setLinkNameText',
@@ -334,6 +338,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'industryLabel' => 'getIndustryLabel',
         'unionMarketSpec' => 'getUnionMarketSpec',
         'androidQuickAppSpec' => 'getAndroidQuickAppSpec',
+        'wechatChannelsTrackingSpec' => 'getWechatChannelsTrackingSpec',
         'liveVideoMode' => 'getLiveVideoMode',
         'liveVideoSubMode' => 'getLiveVideoSubMode',
         'linkNameText' => 'getLinkNameText',
@@ -442,6 +447,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         $this->container['industryLabel'] = isset($data['industryLabel']) ? $data['industryLabel'] : null;
         $this->container['unionMarketSpec'] = isset($data['unionMarketSpec']) ? $data['unionMarketSpec'] : null;
         $this->container['androidQuickAppSpec'] = isset($data['androidQuickAppSpec']) ? $data['androidQuickAppSpec'] : null;
+        $this->container['wechatChannelsTrackingSpec'] = isset($data['wechatChannelsTrackingSpec']) ? $data['wechatChannelsTrackingSpec'] : null;
         $this->container['liveVideoMode'] = isset($data['liveVideoMode']) ? $data['liveVideoMode'] : null;
         $this->container['liveVideoSubMode'] = isset($data['liveVideoSubMode']) ? $data['liveVideoSubMode'] : null;
         $this->container['linkNameText'] = isset($data['linkNameText']) ? $data['linkNameText'] : null;
@@ -1430,6 +1436,30 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     public function setAndroidQuickAppSpec($androidQuickAppSpec)
     {
         $this->container['androidQuickAppSpec'] = $androidQuickAppSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsTrackingSpec
+     *
+     * @return \TencentAds\Model\WechatChannelsTrackingSpec|mixed
+     */
+    public function getWechatChannelsTrackingSpec()
+    {
+        return $this->container['wechatChannelsTrackingSpec'];
+    }
+
+    /**
+     * Sets wechatChannelsTrackingSpec
+     *
+     * @param \TencentAds\Model\WechatChannelsTrackingSpec|mixed $wechatChannelsTrackingSpec wechatChannelsTrackingSpec
+     *
+     * @return $this
+     */
+    public function setWechatChannelsTrackingSpec($wechatChannelsTrackingSpec)
+    {
+        $this->container['wechatChannelsTrackingSpec'] = $wechatChannelsTrackingSpec;
 
         return $this;
     }

@@ -89,6 +89,7 @@ class DestinationTypeRead
     const WECHAT_CHANNELS_PROFILE = 'PAGE_TYPE_WECHAT_CHANNELS_PROFILE';
     const TSA_OTT = 'PAGE_TYPE_TSA_OTT';
     const NOT_USED = 'PAGE_TYPE_NOT_USED';
+    const WECHAT_CHANNELS_SHOP_PRODUCT = 'PAGE_TYPE_WECHAT_CHANNELS_SHOP_PRODUCT';
     
     /**
      * Gets allowable values of the enum
@@ -142,6 +143,7 @@ class DestinationTypeRead
             self::WECHAT_CHANNELS_PROFILE,
             self::TSA_OTT,
             self::NOT_USED,
+            self::WECHAT_CHANNELS_SHOP_PRODUCT,
         ];
     }
 }

@@ -97,6 +97,7 @@ class DestinationType
     const H5_PROFILE = 'PAGE_TYPE_H5_PROFILE';
     const SEARCH_BRAND_AREA = 'PAGE_TYPE_SEARCH_BRAND_AREA';
     const WECHAT_CHANNELS_PROFILE = 'PAGE_TYPE_WECHAT_CHANNELS_PROFILE';
+    const WECHAT_CHANNELS_SHOP_PRODUCT = 'PAGE_TYPE_WECHAT_CHANNELS_SHOP_PRODUCT';
     
     /**
      * Gets allowable values of the enum
@@ -158,6 +159,7 @@ class DestinationType
             self::H5_PROFILE,
             self::SEARCH_BRAND_AREA,
             self::WECHAT_CHANNELS_PROFILE,
+            self::WECHAT_CHANNELS_SHOP_PRODUCT,
         ];
     }
 }
