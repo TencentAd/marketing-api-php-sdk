@@ -28,6 +28,7 @@
 namespace TencentAds\Kernel\V3;
 
 use GuzzleHttp\Client;
+use TencentAds\Kernel\SerializerHandler;
 use TencentAds\Middleware\Model\MiddlewareRequest;
 use TencentAds\ObjectSerializer;
 use TencentAds\V3\TencentAds;
