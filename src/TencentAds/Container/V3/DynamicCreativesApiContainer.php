@@ -3,8 +3,8 @@ namespace TencentAds\Container\V3;
 
 use GuzzleHttp\Client;
 use TencentAds\Api\V3\DynamicCreativesApi;
-use TencentAds\Kernel\HeaderHandler;
 use TencentAds\Kernel\V3\ApiContainer;
+use TencentAds\Kernel\V3\HeaderHandler;
 use TencentAds\Middleware\Model\MiddlewareRequest;
 use TencentAds\V3\TencentAds;
 

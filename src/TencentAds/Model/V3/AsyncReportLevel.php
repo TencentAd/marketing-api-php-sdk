@@ -53,6 +53,8 @@ class AsyncReportLevel
     const CITY = 'REPORT_LEVEL_CITY';
     const DYNAMIC_CREATIVE = 'REPORT_LEVEL_DYNAMIC_CREATIVE';
     const COMPONENT = 'REPORT_LEVEL_COMPONENT';
+    const MATERIAL_IMAGE = 'REPORT_LEVEL_MATERIAL_IMAGE';
+    const MATERIAL_VIDEO = 'REPORT_LEVEL_MATERIAL_VIDEO';
     
     /**
      * Gets allowable values of the enum
@@ -70,6 +72,8 @@ class AsyncReportLevel
             self::CITY,
             self::DYNAMIC_CREATIVE,
             self::COMPONENT,
+            self::MATERIAL_IMAGE,
+            self::MATERIAL_VIDEO,
         ];
     }
 }
