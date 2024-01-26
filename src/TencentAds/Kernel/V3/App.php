@@ -46,6 +46,7 @@ use TencentAds\Container\V3\MergeFundTypeFundsApiContainer;
 use TencentAds\Container\V3\MergeFundTypeSubcustomerTransferApiContainer;
 use TencentAds\Container\V3\OauthApiContainer;
 use TencentAds\Container\V3\PagesApiContainer;
+use TencentAds\Container\V3\ProfilesApiContainer;
 use TencentAds\Container\V3\ProgrammedApiContainer;
 use TencentAds\Container\V3\ProgrammedTemplateApiContainer;
 use TencentAds\Container\V3\RealtimeCostApiContainer;
@@ -193,6 +194,9 @@ class App
 
     /** @var PagesApiContainer */
     public $pagesApiContainer;
+
+    /** @var ProfilesApiContainer */
+    public $profilesApiContainer;
 
     /** @var ProgrammedApiContainer */
     public $programmedApiContainer;
@@ -850,6 +854,20 @@ class App
             $this->pagesApiContainer = $container;
         }
         return $this->pagesApiContainer;
+    }
+
+
+    /**
+     * @return ProfilesApiContainer
+     */
+    public function profiles()
+    {
+        if (empty($this->profilesApiContainer)) {
+            $container = new ProfilesApiContainer();
+            $container->init($this, $this->getClient());
+            $this->profilesApiContainer = $container;
+        }
+        return $this->profilesApiContainer;
     }
 
 

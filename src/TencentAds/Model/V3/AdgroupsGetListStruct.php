@@ -120,7 +120,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'prioritySiteSet' => 'string[]',
         'ecomPkamSwitch' => '\TencentAds\Model\V3\EcomPkamSwitch',
         'forwardLinkAssist' => '\TencentAds\Model\V3\OptimizationGoal',
-        'conversionName' => 'string'
+        'conversionName' => 'string',
+        'autoAcquisitionStatus' => '\TencentAds\Model\V3\AutoAcquisitionStatus'
     ];
 
     /**
@@ -191,7 +192,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'prioritySiteSet' => null,
         'ecomPkamSwitch' => null,
         'forwardLinkAssist' => null,
-        'conversionName' => null
+        'conversionName' => null,
+        'autoAcquisitionStatus' => null
     ];
 
     /**
@@ -283,7 +285,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'prioritySiteSet' => 'priority_site_set',
         'ecomPkamSwitch' => 'ecom_pkam_switch',
         'forwardLinkAssist' => 'forward_link_assist',
-        'conversionName' => 'conversion_name'
+        'conversionName' => 'conversion_name',
+        'autoAcquisitionStatus' => 'auto_acquisition_status'
     ];
 
     /**
@@ -354,7 +357,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'prioritySiteSet' => 'setPrioritySiteSet',
         'ecomPkamSwitch' => 'setEcomPkamSwitch',
         'forwardLinkAssist' => 'setForwardLinkAssist',
-        'conversionName' => 'setConversionName'
+        'conversionName' => 'setConversionName',
+        'autoAcquisitionStatus' => 'setAutoAcquisitionStatus'
     ];
 
     /**
@@ -425,7 +429,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'prioritySiteSet' => 'getPrioritySiteSet',
         'ecomPkamSwitch' => 'getEcomPkamSwitch',
         'forwardLinkAssist' => 'getForwardLinkAssist',
-        'conversionName' => 'getConversionName'
+        'conversionName' => 'getConversionName',
+        'autoAcquisitionStatus' => 'getAutoAcquisitionStatus'
     ];
 
     /**
@@ -551,6 +556,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['ecomPkamSwitch'] = isset($data['ecomPkamSwitch']) ? $data['ecomPkamSwitch'] : null;
         $this->container['forwardLinkAssist'] = isset($data['forwardLinkAssist']) ? $data['forwardLinkAssist'] : null;
         $this->container['conversionName'] = isset($data['conversionName']) ? $data['conversionName'] : null;
+        $this->container['autoAcquisitionStatus'] = isset($data['autoAcquisitionStatus']) ? $data['autoAcquisitionStatus'] : null;
     }
 
     /**
@@ -2085,6 +2091,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setConversionName($conversionName)
     {
         $this->container['conversionName'] = $conversionName;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoAcquisitionStatus
+     *
+     * @return \TencentAds\Model\V3\AutoAcquisitionStatus|mixed
+     */
+    public function getAutoAcquisitionStatus()
+    {
+        return $this->container['autoAcquisitionStatus'];
+    }
+
+    /**
+     * Sets autoAcquisitionStatus
+     *
+     * @param \TencentAds\Model\V3\AutoAcquisitionStatus|mixed $autoAcquisitionStatus autoAcquisitionStatus
+     *
+     * @return $this
+     */
+    public function setAutoAcquisitionStatus($autoAcquisitionStatus)
+    {
+        $this->container['autoAcquisitionStatus'] = $autoAcquisitionStatus;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * ReportGranularity
+ * AutoAcquisitionStatus
  *
  * PHP version 5
  *
@@ -31,21 +31,27 @@ namespace TencentAds\Model\V3;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ReportGranularity Class Doc Comment
+ * AutoAcquisitionStatus Class Doc Comment
  *
  * @category Class
- * @description 异步报表粒度
+ * @description 
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ReportGranularity
+class AutoAcquisitionStatus
 {
     /**
      * Possible values of this enum
      */
-    const HOURLY = 'HOURLY';
-    const DAILY = 'DAILY';
+    const UNKNOW = 'AUTO_ACQUISTION_STATUS_UNKNOW';
+    const PENDING = 'AUTO_ACQUISTION_STATUS_PENDING';
+    const END_LESS_THAN_24_H = 'AUTO_ACQUISTION_STATUS_END_LESS_THAN_24H';
+    const END_MORE_THAN_24_H = 'AUTO_ACQUISTION_STATUS_END_MORE_THAN_24H';
+    const COMPLETED = 'AUTO_ACQUISTION_STATUS_COMPLETED';
+    const SUSPEND_ON_LEARNING_FAIL = 'AUTO_ACQUISTION_STATUS_SUSPEND_ON_LEARNING_FAIL';
+    const SUSPEND_ON_PLAYING_FAIL = 'AUTO_ACQUISTION_STATUS_SUSPEND_ON_PLAYING_FAIL';
+    const ADVERTISER_CLOSED = 'AUTO_ACQUISTION_STATUS_ADVERTISER_CLOSED';
     
     /**
      * Gets allowable values of the enum
@@ -54,8 +60,14 @@ class ReportGranularity
     public static function getAllowableEnumValues()
     {
         return [
-            self::HOURLY,
-            self::DAILY,
+            self::UNKNOW,
+            self::PENDING,
+            self::END_LESS_THAN_24_H,
+            self::END_MORE_THAN_24_H,
+            self::COMPLETED,
+            self::SUSPEND_ON_LEARNING_FAIL,
+            self::SUSPEND_ON_PLAYING_FAIL,
+            self::ADVERTISER_CLOSED,
         ];
     }
 }

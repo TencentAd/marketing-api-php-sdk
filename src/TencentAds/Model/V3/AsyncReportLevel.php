@@ -55,6 +55,7 @@ class AsyncReportLevel
     const COMPONENT = 'REPORT_LEVEL_COMPONENT';
     const MATERIAL_IMAGE = 'REPORT_LEVEL_MATERIAL_IMAGE';
     const MATERIAL_VIDEO = 'REPORT_LEVEL_MATERIAL_VIDEO';
+    const CHANNEL = 'REPORT_LEVEL_CHANNEL';
     
     /**
      * Gets allowable values of the enum
@@ -74,6 +75,7 @@ class AsyncReportLevel
             self::COMPONENT,
             self::MATERIAL_IMAGE,
             self::MATERIAL_VIDEO,
+            self::CHANNEL,
         ];
     }
 }

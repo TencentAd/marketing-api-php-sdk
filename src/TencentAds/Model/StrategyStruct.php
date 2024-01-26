@@ -1,6 +1,6 @@
 <?php
 /**
- * DynamicCreativePageSpec
+ * StrategyStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DynamicCreativePageSpec Class Doc Comment
+ * StrategyStruct Class Doc Comment
  *
  * @category Class
- * @description 落地页信息
+ * @description 售卖策略结构数据
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
+class StrategyStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dynamic_creative_page_spec';
+    protected static $swaggerModelName = 'strategy_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,13 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pageId' => 'int',
-        'pageUrl' => 'string',
-        'channelsShopProductSpec' => '\TencentAds\Model\ChannelsShopProductSpec'
+        'strategyId' => 'int',
+        'strategyName' => 'string',
+        'episodePrice' => 'double',
+        'minRechargeTier' => 'double',
+        'rechargeNum' => 'int',
+        'strategyStatus' => 'int',
+        'accountId' => 'int'
     ];
 
     /**
@@ -69,9 +73,13 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'pageId' => 'int64',
-        'pageUrl' => null,
-        'channelsShopProductSpec' => null
+        'strategyId' => 'int64',
+        'strategyName' => null,
+        'episodePrice' => 'double',
+        'minRechargeTier' => 'double',
+        'rechargeNum' => 'int64',
+        'strategyStatus' => 'int64',
+        'accountId' => 'int64'
     ];
 
     /**
@@ -101,9 +109,13 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'pageId' => 'page_id',
-        'pageUrl' => 'page_url',
-        'channelsShopProductSpec' => 'channels_shop_product_spec'
+        'strategyId' => 'strategy_id',
+        'strategyName' => 'strategy_name',
+        'episodePrice' => 'episode_price',
+        'minRechargeTier' => 'min_recharge_tier',
+        'rechargeNum' => 'recharge_num',
+        'strategyStatus' => 'strategy_status',
+        'accountId' => 'account_id'
     ];
 
     /**
@@ -112,9 +124,13 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'pageId' => 'setPageId',
-        'pageUrl' => 'setPageUrl',
-        'channelsShopProductSpec' => 'setChannelsShopProductSpec'
+        'strategyId' => 'setStrategyId',
+        'strategyName' => 'setStrategyName',
+        'episodePrice' => 'setEpisodePrice',
+        'minRechargeTier' => 'setMinRechargeTier',
+        'rechargeNum' => 'setRechargeNum',
+        'strategyStatus' => 'setStrategyStatus',
+        'accountId' => 'setAccountId'
     ];
 
     /**
@@ -123,9 +139,13 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'pageId' => 'getPageId',
-        'pageUrl' => 'getPageUrl',
-        'channelsShopProductSpec' => 'getChannelsShopProductSpec'
+        'strategyId' => 'getStrategyId',
+        'strategyName' => 'getStrategyName',
+        'episodePrice' => 'getEpisodePrice',
+        'minRechargeTier' => 'getMinRechargeTier',
+        'rechargeNum' => 'getRechargeNum',
+        'strategyStatus' => 'getStrategyStatus',
+        'accountId' => 'getAccountId'
     ];
 
     /**
@@ -188,9 +208,13 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['pageId'] = isset($data['pageId']) ? $data['pageId'] : null;
-        $this->container['pageUrl'] = isset($data['pageUrl']) ? $data['pageUrl'] : null;
-        $this->container['channelsShopProductSpec'] = isset($data['channelsShopProductSpec']) ? $data['channelsShopProductSpec'] : null;
+        $this->container['strategyId'] = isset($data['strategyId']) ? $data['strategyId'] : null;
+        $this->container['strategyName'] = isset($data['strategyName']) ? $data['strategyName'] : null;
+        $this->container['episodePrice'] = isset($data['episodePrice']) ? $data['episodePrice'] : null;
+        $this->container['minRechargeTier'] = isset($data['minRechargeTier']) ? $data['minRechargeTier'] : null;
+        $this->container['rechargeNum'] = isset($data['rechargeNum']) ? $data['rechargeNum'] : null;
+        $this->container['strategyStatus'] = isset($data['strategyStatus']) ? $data['strategyStatus'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
     /**
@@ -218,73 +242,169 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets pageId
+     * Gets strategyId
      *
      * @return int|mixed
      */
-    public function getPageId()
+    public function getStrategyId()
     {
-        return $this->container['pageId'];
+        return $this->container['strategyId'];
     }
 
     /**
-     * Sets pageId
+     * Sets strategyId
      *
-     * @param int|mixed $pageId pageId
+     * @param int|mixed $strategyId strategyId
      *
      * @return $this
      */
-    public function setPageId($pageId)
+    public function setStrategyId($strategyId)
     {
-        $this->container['pageId'] = $pageId;
+        $this->container['strategyId'] = $strategyId;
 
         return $this;
     }
 
     /**
-     * Gets pageUrl
+     * Gets strategyName
      *
      * @return string|mixed
      */
-    public function getPageUrl()
+    public function getStrategyName()
     {
-        return $this->container['pageUrl'];
+        return $this->container['strategyName'];
     }
 
     /**
-     * Sets pageUrl
+     * Sets strategyName
      *
-     * @param string|mixed $pageUrl pageUrl
+     * @param string|mixed $strategyName strategyName
      *
      * @return $this
      */
-    public function setPageUrl($pageUrl)
+    public function setStrategyName($strategyName)
     {
-        $this->container['pageUrl'] = $pageUrl;
+        $this->container['strategyName'] = $strategyName;
 
         return $this;
     }
 
     /**
-     * Gets channelsShopProductSpec
+     * Gets episodePrice
      *
-     * @return \TencentAds\Model\ChannelsShopProductSpec|mixed
+     * @return double|mixed
      */
-    public function getChannelsShopProductSpec()
+    public function getEpisodePrice()
     {
-        return $this->container['channelsShopProductSpec'];
+        return $this->container['episodePrice'];
     }
 
     /**
-     * Sets channelsShopProductSpec
+     * Sets episodePrice
      *
-     * @param \TencentAds\Model\ChannelsShopProductSpec|mixed $channelsShopProductSpec channelsShopProductSpec
+     * @param double|mixed $episodePrice episodePrice
      *
      * @return $this
      */
-    public function setChannelsShopProductSpec($channelsShopProductSpec)
+    public function setEpisodePrice($episodePrice)
     {
-        $this->container['channelsShopProductSpec'] = $channelsShopProductSpec;
+        $this->container['episodePrice'] = $episodePrice;
+
+        return $this;
+    }
+
+    /**
+     * Gets minRechargeTier
+     *
+     * @return double|mixed
+     */
+    public function getMinRechargeTier()
+    {
+        return $this->container['minRechargeTier'];
+    }
+
+    /**
+     * Sets minRechargeTier
+     *
+     * @param double|mixed $minRechargeTier minRechargeTier
+     *
+     * @return $this
+     */
+    public function setMinRechargeTier($minRechargeTier)
+    {
+        $this->container['minRechargeTier'] = $minRechargeTier;
+
+        return $this;
+    }
+
+    /**
+     * Gets rechargeNum
+     *
+     * @return int|mixed
+     */
+    public function getRechargeNum()
+    {
+        return $this->container['rechargeNum'];
+    }
+
+    /**
+     * Sets rechargeNum
+     *
+     * @param int|mixed $rechargeNum rechargeNum
+     *
+     * @return $this
+     */
+    public function setRechargeNum($rechargeNum)
+    {
+        $this->container['rechargeNum'] = $rechargeNum;
+
+        return $this;
+    }
+
+    /**
+     * Gets strategyStatus
+     *
+     * @return int|mixed
+     */
+    public function getStrategyStatus()
+    {
+        return $this->container['strategyStatus'];
+    }
+
+    /**
+     * Sets strategyStatus
+     *
+     * @param int|mixed $strategyStatus strategyStatus
+     *
+     * @return $this
+     */
+    public function setStrategyStatus($strategyStatus)
+    {
+        $this->container['strategyStatus'] = $strategyStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets accountId
+     *
+     * @return int|mixed
+     */
+    public function getAccountId()
+    {
+        return $this->container['accountId'];
+    }
+
+    /**
+     * Sets accountId
+     *
+     * @param int|mixed $accountId accountId
+     *
+     * @return $this
+     */
+    public function setAccountId($accountId)
+    {
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }

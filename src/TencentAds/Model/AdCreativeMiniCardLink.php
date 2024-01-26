@@ -1,6 +1,6 @@
 <?php
 /**
- * DynamicCreativePageSpec
+ * AdCreativeMiniCardLink
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DynamicCreativePageSpec Class Doc Comment
+ * AdCreativeMiniCardLink Class Doc Comment
  *
  * @category Class
- * @description 落地页信息
+ * @description 图文链接
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
+class AdCreativeMiniCardLink implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dynamic_creative_page_spec';
+    protected static $swaggerModelName = 'ad_creative_mini_card_link';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,9 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pageId' => 'int',
-        'pageUrl' => 'string',
-        'channelsShopProductSpec' => '\TencentAds\Model\ChannelsShopProductSpec'
+        'miniCardLinkDescription' => 'string',
+        'miniCardLinkImage' => 'string',
+        'miniCardLinkButtonText' => 'string'
     ];
 
     /**
@@ -69,9 +69,9 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'pageId' => 'int64',
-        'pageUrl' => null,
-        'channelsShopProductSpec' => null
+        'miniCardLinkDescription' => null,
+        'miniCardLinkImage' => null,
+        'miniCardLinkButtonText' => null
     ];
 
     /**
@@ -101,9 +101,9 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'pageId' => 'page_id',
-        'pageUrl' => 'page_url',
-        'channelsShopProductSpec' => 'channels_shop_product_spec'
+        'miniCardLinkDescription' => 'mini_card_link_description',
+        'miniCardLinkImage' => 'mini_card_link_image',
+        'miniCardLinkButtonText' => 'mini_card_link_button_text'
     ];
 
     /**
@@ -112,9 +112,9 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'pageId' => 'setPageId',
-        'pageUrl' => 'setPageUrl',
-        'channelsShopProductSpec' => 'setChannelsShopProductSpec'
+        'miniCardLinkDescription' => 'setMiniCardLinkDescription',
+        'miniCardLinkImage' => 'setMiniCardLinkImage',
+        'miniCardLinkButtonText' => 'setMiniCardLinkButtonText'
     ];
 
     /**
@@ -123,9 +123,9 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'pageId' => 'getPageId',
-        'pageUrl' => 'getPageUrl',
-        'channelsShopProductSpec' => 'getChannelsShopProductSpec'
+        'miniCardLinkDescription' => 'getMiniCardLinkDescription',
+        'miniCardLinkImage' => 'getMiniCardLinkImage',
+        'miniCardLinkButtonText' => 'getMiniCardLinkButtonText'
     ];
 
     /**
@@ -188,9 +188,9 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['pageId'] = isset($data['pageId']) ? $data['pageId'] : null;
-        $this->container['pageUrl'] = isset($data['pageUrl']) ? $data['pageUrl'] : null;
-        $this->container['channelsShopProductSpec'] = isset($data['channelsShopProductSpec']) ? $data['channelsShopProductSpec'] : null;
+        $this->container['miniCardLinkDescription'] = isset($data['miniCardLinkDescription']) ? $data['miniCardLinkDescription'] : null;
+        $this->container['miniCardLinkImage'] = isset($data['miniCardLinkImage']) ? $data['miniCardLinkImage'] : null;
+        $this->container['miniCardLinkButtonText'] = isset($data['miniCardLinkButtonText']) ? $data['miniCardLinkButtonText'] : null;
     }
 
     /**
@@ -218,73 +218,73 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets pageId
-     *
-     * @return int|mixed
-     */
-    public function getPageId()
-    {
-        return $this->container['pageId'];
-    }
-
-    /**
-     * Sets pageId
-     *
-     * @param int|mixed $pageId pageId
-     *
-     * @return $this
-     */
-    public function setPageId($pageId)
-    {
-        $this->container['pageId'] = $pageId;
-
-        return $this;
-    }
-
-    /**
-     * Gets pageUrl
+     * Gets miniCardLinkDescription
      *
      * @return string|mixed
      */
-    public function getPageUrl()
+    public function getMiniCardLinkDescription()
     {
-        return $this->container['pageUrl'];
+        return $this->container['miniCardLinkDescription'];
     }
 
     /**
-     * Sets pageUrl
+     * Sets miniCardLinkDescription
      *
-     * @param string|mixed $pageUrl pageUrl
+     * @param string|mixed $miniCardLinkDescription miniCardLinkDescription
      *
      * @return $this
      */
-    public function setPageUrl($pageUrl)
+    public function setMiniCardLinkDescription($miniCardLinkDescription)
     {
-        $this->container['pageUrl'] = $pageUrl;
+        $this->container['miniCardLinkDescription'] = $miniCardLinkDescription;
 
         return $this;
     }
 
     /**
-     * Gets channelsShopProductSpec
+     * Gets miniCardLinkImage
      *
-     * @return \TencentAds\Model\ChannelsShopProductSpec|mixed
+     * @return string|mixed
      */
-    public function getChannelsShopProductSpec()
+    public function getMiniCardLinkImage()
     {
-        return $this->container['channelsShopProductSpec'];
+        return $this->container['miniCardLinkImage'];
     }
 
     /**
-     * Sets channelsShopProductSpec
+     * Sets miniCardLinkImage
      *
-     * @param \TencentAds\Model\ChannelsShopProductSpec|mixed $channelsShopProductSpec channelsShopProductSpec
+     * @param string|mixed $miniCardLinkImage miniCardLinkImage
      *
      * @return $this
      */
-    public function setChannelsShopProductSpec($channelsShopProductSpec)
+    public function setMiniCardLinkImage($miniCardLinkImage)
     {
-        $this->container['channelsShopProductSpec'] = $channelsShopProductSpec;
+        $this->container['miniCardLinkImage'] = $miniCardLinkImage;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniCardLinkButtonText
+     *
+     * @return string|mixed
+     */
+    public function getMiniCardLinkButtonText()
+    {
+        return $this->container['miniCardLinkButtonText'];
+    }
+
+    /**
+     * Sets miniCardLinkButtonText
+     *
+     * @param string|mixed $miniCardLinkButtonText miniCardLinkButtonText
+     *
+     * @return $this
+     */
+    public function setMiniCardLinkButtonText($miniCardLinkButtonText)
+    {
+        $this->container['miniCardLinkButtonText'] = $miniCardLinkButtonText;
 
         return $this;
     }

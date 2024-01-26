@@ -1,6 +1,6 @@
 <?php
 /**
- * DynamicCreativePageSpec
+ * LandingPageSellStrategyGetResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DynamicCreativePageSpec Class Doc Comment
+ * LandingPageSellStrategyGetResponse Class Doc Comment
  *
  * @category Class
- * @description 落地页信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
+class LandingPageSellStrategyGetResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dynamic_creative_page_spec';
+    protected static $swaggerModelName = 'LandingPageSellStrategyGetResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,11 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pageId' => 'int',
-        'pageUrl' => 'string',
-        'channelsShopProductSpec' => '\TencentAds\Model\ChannelsShopProductSpec'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\LandingPageSellStrategyGetResponseData'
     ];
 
     /**
@@ -69,9 +70,11 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'pageId' => 'int64',
-        'pageUrl' => null,
-        'channelsShopProductSpec' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -101,9 +104,11 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'pageId' => 'page_id',
-        'pageUrl' => 'page_url',
-        'channelsShopProductSpec' => 'channels_shop_product_spec'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -112,9 +117,11 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'pageId' => 'setPageId',
-        'pageUrl' => 'setPageUrl',
-        'channelsShopProductSpec' => 'setChannelsShopProductSpec'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -123,9 +130,11 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'pageId' => 'getPageId',
-        'pageUrl' => 'getPageUrl',
-        'channelsShopProductSpec' => 'getChannelsShopProductSpec'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -188,9 +197,11 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['pageId'] = isset($data['pageId']) ? $data['pageId'] : null;
-        $this->container['pageUrl'] = isset($data['pageUrl']) ? $data['pageUrl'] : null;
-        $this->container['channelsShopProductSpec'] = isset($data['channelsShopProductSpec']) ? $data['channelsShopProductSpec'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -218,73 +229,121 @@ class DynamicCreativePageSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets pageId
+     * Gets code
      *
      * @return int|mixed
      */
-    public function getPageId()
+    public function getCode()
     {
-        return $this->container['pageId'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets pageId
+     * Sets code
      *
-     * @param int|mixed $pageId pageId
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setPageId($pageId)
+    public function setCode($code)
     {
-        $this->container['pageId'] = $pageId;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets pageUrl
+     * Gets message
      *
      * @return string|mixed
      */
-    public function getPageUrl()
+    public function getMessage()
     {
-        return $this->container['pageUrl'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets pageUrl
+     * Sets message
      *
-     * @param string|mixed $pageUrl pageUrl
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setPageUrl($pageUrl)
+    public function setMessage($message)
     {
-        $this->container['pageUrl'] = $pageUrl;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets channelsShopProductSpec
+     * Gets messageCn
      *
-     * @return \TencentAds\Model\ChannelsShopProductSpec|mixed
+     * @return string|mixed
      */
-    public function getChannelsShopProductSpec()
+    public function getMessageCn()
     {
-        return $this->container['channelsShopProductSpec'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets channelsShopProductSpec
+     * Sets messageCn
      *
-     * @param \TencentAds\Model\ChannelsShopProductSpec|mixed $channelsShopProductSpec channelsShopProductSpec
+     * @param string|mixed $messageCn messageCn
      *
      * @return $this
      */
-    public function setChannelsShopProductSpec($channelsShopProductSpec)
+    public function setMessageCn($messageCn)
     {
-        $this->container['channelsShopProductSpec'] = $channelsShopProductSpec;
+        $this->container['messageCn'] = $messageCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets errors
+     *
+     * @return \TencentAds\Model\ApiErrorStruct[]|mixed
+     */
+    public function getErrors()
+    {
+        return $this->container['errors'];
+    }
+
+    /**
+     * Sets errors
+     *
+     * @param \TencentAds\Model\ApiErrorStruct[]|mixed $errors errors
+     *
+     * @return $this
+     */
+    public function setErrors($errors)
+    {
+        $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\LandingPageSellStrategyGetResponseData|mixed
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\LandingPageSellStrategyGetResponseData|mixed $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }

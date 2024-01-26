@@ -115,7 +115,8 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'redEnvelopeStruct' => '\TencentAds\Model\RedEnvelopeStruct',
         'wxgamePlayablePageSpec' => '\TencentAds\Model\WxgamePlayablePageSpec',
         'mainJumpInfo' => '\TencentAds\Model\LandingPageStructure[]',
-        'wechatChannelsCoverImgShowType' => '\TencentAds\Model\WechatChannelsCoverImgShowType'
+        'wechatChannelsCoverImgShowType' => '\TencentAds\Model\WechatChannelsCoverImgShowType',
+        'miniCardLink' => '\TencentAds\Model\AdCreativeMiniCardLink'
     ];
 
     /**
@@ -181,7 +182,8 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'redEnvelopeStruct' => null,
         'wxgamePlayablePageSpec' => null,
         'mainJumpInfo' => null,
-        'wechatChannelsCoverImgShowType' => null
+        'wechatChannelsCoverImgShowType' => null,
+        'miniCardLink' => null
     ];
 
     /**
@@ -268,7 +270,8 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'redEnvelopeStruct' => 'red_envelope_struct',
         'wxgamePlayablePageSpec' => 'wxgame_playable_page_spec',
         'mainJumpInfo' => 'main_jump_info',
-        'wechatChannelsCoverImgShowType' => 'wechat_channels_cover_img_show_type'
+        'wechatChannelsCoverImgShowType' => 'wechat_channels_cover_img_show_type',
+        'miniCardLink' => 'mini_card_link'
     ];
 
     /**
@@ -334,7 +337,8 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'redEnvelopeStruct' => 'setRedEnvelopeStruct',
         'wxgamePlayablePageSpec' => 'setWxgamePlayablePageSpec',
         'mainJumpInfo' => 'setMainJumpInfo',
-        'wechatChannelsCoverImgShowType' => 'setWechatChannelsCoverImgShowType'
+        'wechatChannelsCoverImgShowType' => 'setWechatChannelsCoverImgShowType',
+        'miniCardLink' => 'setMiniCardLink'
     ];
 
     /**
@@ -400,7 +404,8 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'redEnvelopeStruct' => 'getRedEnvelopeStruct',
         'wxgamePlayablePageSpec' => 'getWxgamePlayablePageSpec',
         'mainJumpInfo' => 'getMainJumpInfo',
-        'wechatChannelsCoverImgShowType' => 'getWechatChannelsCoverImgShowType'
+        'wechatChannelsCoverImgShowType' => 'getWechatChannelsCoverImgShowType',
+        'miniCardLink' => 'getMiniCardLink'
     ];
 
     /**
@@ -521,6 +526,7 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         $this->container['wxgamePlayablePageSpec'] = isset($data['wxgamePlayablePageSpec']) ? $data['wxgamePlayablePageSpec'] : null;
         $this->container['mainJumpInfo'] = isset($data['mainJumpInfo']) ? $data['mainJumpInfo'] : null;
         $this->container['wechatChannelsCoverImgShowType'] = isset($data['wechatChannelsCoverImgShowType']) ? $data['wechatChannelsCoverImgShowType'] : null;
+        $this->container['miniCardLink'] = isset($data['miniCardLink']) ? $data['miniCardLink'] : null;
     }
 
     /**
@@ -1935,6 +1941,30 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
     public function setWechatChannelsCoverImgShowType($wechatChannelsCoverImgShowType)
     {
         $this->container['wechatChannelsCoverImgShowType'] = $wechatChannelsCoverImgShowType;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniCardLink
+     *
+     * @return \TencentAds\Model\AdCreativeMiniCardLink|mixed
+     */
+    public function getMiniCardLink()
+    {
+        return $this->container['miniCardLink'];
+    }
+
+    /**
+     * Sets miniCardLink
+     *
+     * @param \TencentAds\Model\AdCreativeMiniCardLink|mixed $miniCardLink miniCardLink
+     *
+     * @return $this
+     */
+    public function setMiniCardLink($miniCardLink)
+    {
+        $this->container['miniCardLink'] = $miniCardLink;
 
         return $this;
     }

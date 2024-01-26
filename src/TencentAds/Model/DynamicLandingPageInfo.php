@@ -75,7 +75,8 @@ class DynamicLandingPageInfo implements ModelInterface, ArrayAccess
         'unionMarketSwitch' => 'bool',
         'unionMarketSpec' => '\TencentAds\Model\UnionMarketSpec',
         'linkNameText' => 'string',
-        'buttonTextJumpInfo' => '\TencentAds\Model\LandingPageStructure'
+        'buttonTextJumpInfo' => '\TencentAds\Model\LandingPageStructure',
+        'channelsShopProductSpec' => '\TencentAds\Model\ChannelsShopProductSpec'
     ];
 
     /**
@@ -101,7 +102,8 @@ class DynamicLandingPageInfo implements ModelInterface, ArrayAccess
         'unionMarketSwitch' => null,
         'unionMarketSpec' => null,
         'linkNameText' => null,
-        'buttonTextJumpInfo' => null
+        'buttonTextJumpInfo' => null,
+        'channelsShopProductSpec' => null
     ];
 
     /**
@@ -148,7 +150,8 @@ class DynamicLandingPageInfo implements ModelInterface, ArrayAccess
         'unionMarketSwitch' => 'union_market_switch',
         'unionMarketSpec' => 'union_market_spec',
         'linkNameText' => 'link_name_text',
-        'buttonTextJumpInfo' => 'button_text_jump_info'
+        'buttonTextJumpInfo' => 'button_text_jump_info',
+        'channelsShopProductSpec' => 'channels_shop_product_spec'
     ];
 
     /**
@@ -174,7 +177,8 @@ class DynamicLandingPageInfo implements ModelInterface, ArrayAccess
         'unionMarketSwitch' => 'setUnionMarketSwitch',
         'unionMarketSpec' => 'setUnionMarketSpec',
         'linkNameText' => 'setLinkNameText',
-        'buttonTextJumpInfo' => 'setButtonTextJumpInfo'
+        'buttonTextJumpInfo' => 'setButtonTextJumpInfo',
+        'channelsShopProductSpec' => 'setChannelsShopProductSpec'
     ];
 
     /**
@@ -200,7 +204,8 @@ class DynamicLandingPageInfo implements ModelInterface, ArrayAccess
         'unionMarketSwitch' => 'getUnionMarketSwitch',
         'unionMarketSpec' => 'getUnionMarketSpec',
         'linkNameText' => 'getLinkNameText',
-        'buttonTextJumpInfo' => 'getButtonTextJumpInfo'
+        'buttonTextJumpInfo' => 'getButtonTextJumpInfo',
+        'channelsShopProductSpec' => 'getChannelsShopProductSpec'
     ];
 
     /**
@@ -281,6 +286,7 @@ class DynamicLandingPageInfo implements ModelInterface, ArrayAccess
         $this->container['unionMarketSpec'] = isset($data['unionMarketSpec']) ? $data['unionMarketSpec'] : null;
         $this->container['linkNameText'] = isset($data['linkNameText']) ? $data['linkNameText'] : null;
         $this->container['buttonTextJumpInfo'] = isset($data['buttonTextJumpInfo']) ? $data['buttonTextJumpInfo'] : null;
+        $this->container['channelsShopProductSpec'] = isset($data['channelsShopProductSpec']) ? $data['channelsShopProductSpec'] : null;
     }
 
     /**
@@ -735,6 +741,30 @@ class DynamicLandingPageInfo implements ModelInterface, ArrayAccess
     public function setButtonTextJumpInfo($buttonTextJumpInfo)
     {
         $this->container['buttonTextJumpInfo'] = $buttonTextJumpInfo;
+
+        return $this;
+    }
+
+    /**
+     * Gets channelsShopProductSpec
+     *
+     * @return \TencentAds\Model\ChannelsShopProductSpec|mixed
+     */
+    public function getChannelsShopProductSpec()
+    {
+        return $this->container['channelsShopProductSpec'];
+    }
+
+    /**
+     * Sets channelsShopProductSpec
+     *
+     * @param \TencentAds\Model\ChannelsShopProductSpec|mixed $channelsShopProductSpec channelsShopProductSpec
+     *
+     * @return $this
+     */
+    public function setChannelsShopProductSpec($channelsShopProductSpec)
+    {
+        $this->container['channelsShopProductSpec'] = $channelsShopProductSpec;
 
         return $this;
     }

@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * BackupsJumpinfoStruct Class Doc Comment
  *
  * @category Class
- * @description 落地页内容结构定义
+ * @description 兜底落地页内容结构定义
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

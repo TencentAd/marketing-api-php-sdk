@@ -87,6 +87,7 @@ use TencentAds\Container\ImagesApiContainer;
 use TencentAds\Container\KeywordRecommendApiContainer;
 use TencentAds\Container\LabelAudiencesApiContainer;
 use TencentAds\Container\LabelsApiContainer;
+use TencentAds\Container\LandingPageSellStrategyApiContainer;
 use TencentAds\Container\LeadCluesApiContainer;
 use TencentAds\Container\LeadsCallApiContainer;
 use TencentAds\Container\LeadsCallRecordApiContainer;
@@ -444,6 +445,9 @@ class App
 
     /** @var LabelsApiContainer */
     public $labelsApiContainer;
+
+    /** @var LandingPageSellStrategyApiContainer */
+    public $landingPageSellStrategyApiContainer;
 
     /** @var LeadCluesApiContainer */
     public $leadCluesApiContainer;
@@ -1936,6 +1940,20 @@ class App
             $this->labelsApiContainer = $container;
         }
         return $this->labelsApiContainer;
+    }
+
+
+    /**
+     * @return LandingPageSellStrategyApiContainer
+     */
+    public function landingPageSellStrategy()
+    {
+        if (empty($this->landingPageSellStrategyApiContainer)) {
+            $container = new LandingPageSellStrategyApiContainer();
+            $container->init($this, $this->getClient());
+            $this->landingPageSellStrategyApiContainer = $container;
+        }
+        return $this->landingPageSellStrategyApiContainer;
     }
 
 

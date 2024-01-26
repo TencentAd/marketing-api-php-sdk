@@ -122,7 +122,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'mdpaTitleComponentOptions' => '\TencentAds\Model\MdpaTitleComponentOption[]',
         'mdpaDescComponentOptions' => '\TencentAds\Model\MdpaDescComponentOption[]',
         'listSublinkComponentOptions' => '\TencentAds\Model\ListSublinkComponentOption[]',
-        'wechatChannelsCoverImgShowType' => '\TencentAds\Model\WechatChannelsCoverImgShowType'
+        'wechatChannelsCoverImgShowType' => '\TencentAds\Model\WechatChannelsCoverImgShowType',
+        'miniCardLink' => '\TencentAds\Model\AdCreativeMiniCardLink'
     ];
 
     /**
@@ -195,7 +196,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'mdpaTitleComponentOptions' => null,
         'mdpaDescComponentOptions' => null,
         'listSublinkComponentOptions' => null,
-        'wechatChannelsCoverImgShowType' => null
+        'wechatChannelsCoverImgShowType' => null,
+        'miniCardLink' => null
     ];
 
     /**
@@ -289,7 +291,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'mdpaTitleComponentOptions' => 'mdpa_title_component_options',
         'mdpaDescComponentOptions' => 'mdpa_desc_component_options',
         'listSublinkComponentOptions' => 'list_sublink_component_options',
-        'wechatChannelsCoverImgShowType' => 'wechat_channels_cover_img_show_type'
+        'wechatChannelsCoverImgShowType' => 'wechat_channels_cover_img_show_type',
+        'miniCardLink' => 'mini_card_link'
     ];
 
     /**
@@ -362,7 +365,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'mdpaTitleComponentOptions' => 'setMdpaTitleComponentOptions',
         'mdpaDescComponentOptions' => 'setMdpaDescComponentOptions',
         'listSublinkComponentOptions' => 'setListSublinkComponentOptions',
-        'wechatChannelsCoverImgShowType' => 'setWechatChannelsCoverImgShowType'
+        'wechatChannelsCoverImgShowType' => 'setWechatChannelsCoverImgShowType',
+        'miniCardLink' => 'setMiniCardLink'
     ];
 
     /**
@@ -435,7 +439,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'mdpaTitleComponentOptions' => 'getMdpaTitleComponentOptions',
         'mdpaDescComponentOptions' => 'getMdpaDescComponentOptions',
         'listSublinkComponentOptions' => 'getListSublinkComponentOptions',
-        'wechatChannelsCoverImgShowType' => 'getWechatChannelsCoverImgShowType'
+        'wechatChannelsCoverImgShowType' => 'getWechatChannelsCoverImgShowType',
+        'miniCardLink' => 'getMiniCardLink'
     ];
 
     /**
@@ -563,6 +568,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         $this->container['mdpaDescComponentOptions'] = isset($data['mdpaDescComponentOptions']) ? $data['mdpaDescComponentOptions'] : null;
         $this->container['listSublinkComponentOptions'] = isset($data['listSublinkComponentOptions']) ? $data['listSublinkComponentOptions'] : null;
         $this->container['wechatChannelsCoverImgShowType'] = isset($data['wechatChannelsCoverImgShowType']) ? $data['wechatChannelsCoverImgShowType'] : null;
+        $this->container['miniCardLink'] = isset($data['miniCardLink']) ? $data['miniCardLink'] : null;
     }
 
     /**
@@ -2145,6 +2151,30 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     public function setWechatChannelsCoverImgShowType($wechatChannelsCoverImgShowType)
     {
         $this->container['wechatChannelsCoverImgShowType'] = $wechatChannelsCoverImgShowType;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniCardLink
+     *
+     * @return \TencentAds\Model\AdCreativeMiniCardLink|mixed
+     */
+    public function getMiniCardLink()
+    {
+        return $this->container['miniCardLink'];
+    }
+
+    /**
+     * Sets miniCardLink
+     *
+     * @param \TencentAds\Model\AdCreativeMiniCardLink|mixed $miniCardLink miniCardLink
+     *
+     * @return $this
+     */
+    public function setMiniCardLink($miniCardLink)
+    {
+        $this->container['miniCardLink'] = $miniCardLink;
 
         return $this;
     }

@@ -51,6 +51,7 @@ class OperateSuggestion
     const SUSPEND = 'OPERATE_SUGGESTION_SUSPEND';
     const TRAFFIC = 'OPERATE_SUGGESTION_TRAFFIC';
     const KEEP = 'OPERATE_SUGGESTION_KEEP';
+    const LOWPOTENTIAL = 'OPERATE_SUGGESTION_LOWPOTENTIAL';
     
     /**
      * Gets allowable values of the enum
@@ -66,6 +67,7 @@ class OperateSuggestion
             self::SUSPEND,
             self::TRAFFIC,
             self::KEEP,
+            self::LOWPOTENTIAL,
         ];
     }
 }

@@ -66,7 +66,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
         'pageElements' => '\TencentAds\Model\V3\PageElementsStruct[]',
         'shareContentSpec' => '\TencentAds\Model\V3\ShareContentSpec',
         'previewUrl' => 'string',
-        'pageType' => '\TencentAds\Model\V3\PageTypeRead',
+        'pageType' => '\TencentAds\Model\V3\PageType',
         'sourceType' => '\TencentAds\Model\V3\WechatPageSourceType',
         'videoResourceStatus' => '\TencentAds\Model\V3\WechatPageResourceStatus',
         'canvasType' => '\TencentAds\Model\V3\CanvasType',
@@ -478,7 +478,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets pageType
      *
-     * @return \TencentAds\Model\V3\PageTypeRead|mixed
+     * @return \TencentAds\Model\V3\PageType|mixed
      */
     public function getPageType()
     {
@@ -488,7 +488,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets pageType
      *
-     * @param \TencentAds\Model\V3\PageTypeRead|mixed $pageType pageType
+     * @param \TencentAds\Model\V3\PageType|mixed $pageType pageType
      *
      * @return $this
      */

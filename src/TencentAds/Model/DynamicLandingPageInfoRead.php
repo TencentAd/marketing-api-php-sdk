@@ -68,7 +68,8 @@ class DynamicLandingPageInfoRead implements ModelInterface, ArrayAccess
         'webviewUrl' => 'string',
         'simpleCanvasSubType' => '\TencentAds\Model\SimpleCanvasSubType',
         'linkNameText' => 'string',
-        'buttonTextJumpInfo' => '\TencentAds\Model\LandingPageStructure'
+        'buttonTextJumpInfo' => '\TencentAds\Model\LandingPageStructure',
+        'channelsShopProductSpec' => '\TencentAds\Model\ChannelsShopProductSpec'
     ];
 
     /**
@@ -87,7 +88,8 @@ class DynamicLandingPageInfoRead implements ModelInterface, ArrayAccess
         'webviewUrl' => null,
         'simpleCanvasSubType' => null,
         'linkNameText' => null,
-        'buttonTextJumpInfo' => null
+        'buttonTextJumpInfo' => null,
+        'channelsShopProductSpec' => null
     ];
 
     /**
@@ -127,7 +129,8 @@ class DynamicLandingPageInfoRead implements ModelInterface, ArrayAccess
         'webviewUrl' => 'webview_url',
         'simpleCanvasSubType' => 'simple_canvas_sub_type',
         'linkNameText' => 'link_name_text',
-        'buttonTextJumpInfo' => 'button_text_jump_info'
+        'buttonTextJumpInfo' => 'button_text_jump_info',
+        'channelsShopProductSpec' => 'channels_shop_product_spec'
     ];
 
     /**
@@ -146,7 +149,8 @@ class DynamicLandingPageInfoRead implements ModelInterface, ArrayAccess
         'webviewUrl' => 'setWebviewUrl',
         'simpleCanvasSubType' => 'setSimpleCanvasSubType',
         'linkNameText' => 'setLinkNameText',
-        'buttonTextJumpInfo' => 'setButtonTextJumpInfo'
+        'buttonTextJumpInfo' => 'setButtonTextJumpInfo',
+        'channelsShopProductSpec' => 'setChannelsShopProductSpec'
     ];
 
     /**
@@ -165,7 +169,8 @@ class DynamicLandingPageInfoRead implements ModelInterface, ArrayAccess
         'webviewUrl' => 'getWebviewUrl',
         'simpleCanvasSubType' => 'getSimpleCanvasSubType',
         'linkNameText' => 'getLinkNameText',
-        'buttonTextJumpInfo' => 'getButtonTextJumpInfo'
+        'buttonTextJumpInfo' => 'getButtonTextJumpInfo',
+        'channelsShopProductSpec' => 'getChannelsShopProductSpec'
     ];
 
     /**
@@ -239,6 +244,7 @@ class DynamicLandingPageInfoRead implements ModelInterface, ArrayAccess
         $this->container['simpleCanvasSubType'] = isset($data['simpleCanvasSubType']) ? $data['simpleCanvasSubType'] : null;
         $this->container['linkNameText'] = isset($data['linkNameText']) ? $data['linkNameText'] : null;
         $this->container['buttonTextJumpInfo'] = isset($data['buttonTextJumpInfo']) ? $data['buttonTextJumpInfo'] : null;
+        $this->container['channelsShopProductSpec'] = isset($data['channelsShopProductSpec']) ? $data['channelsShopProductSpec'] : null;
     }
 
     /**
@@ -525,6 +531,30 @@ class DynamicLandingPageInfoRead implements ModelInterface, ArrayAccess
     public function setButtonTextJumpInfo($buttonTextJumpInfo)
     {
         $this->container['buttonTextJumpInfo'] = $buttonTextJumpInfo;
+
+        return $this;
+    }
+
+    /**
+     * Gets channelsShopProductSpec
+     *
+     * @return \TencentAds\Model\ChannelsShopProductSpec|mixed
+     */
+    public function getChannelsShopProductSpec()
+    {
+        return $this->container['channelsShopProductSpec'];
+    }
+
+    /**
+     * Sets channelsShopProductSpec
+     *
+     * @param \TencentAds\Model\ChannelsShopProductSpec|mixed $channelsShopProductSpec channelsShopProductSpec
+     *
+     * @return $this
+     */
+    public function setChannelsShopProductSpec($channelsShopProductSpec)
+    {
+        $this->container['channelsShopProductSpec'] = $channelsShopProductSpec;
 
         return $this;
     }
