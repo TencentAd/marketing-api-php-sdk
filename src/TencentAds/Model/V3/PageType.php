@@ -75,6 +75,7 @@ class PageType
     const WECHAT_CHANNELS_PROFILE = 'PAGE_TYPE_WECHAT_CHANNELS_PROFILE';
     const H5 = 'PAGE_TYPE_H5';
     const WECHAT_CHANNELS_FOLLOW_ACCOUNT = 'PAGE_TYPE_WECHAT_CHANNELS_FOLLOW_ACCOUNT';
+    const WECHAT_CHANNELS_SHOP_PRODUCT = 'PAGE_TYPE_WECHAT_CHANNELS_SHOP_PRODUCT';
     const OFFICIAL = 'PAGE_TYPE_OFFICIAL';
     const NOT_USED = 'PAGE_TYPE_NOT_USED';
     
@@ -116,6 +117,7 @@ class PageType
             self::WECHAT_CHANNELS_PROFILE,
             self::H5,
             self::WECHAT_CHANNELS_FOLLOW_ACCOUNT,
+            self::WECHAT_CHANNELS_SHOP_PRODUCT,
             self::OFFICIAL,
             self::NOT_USED,
         ];

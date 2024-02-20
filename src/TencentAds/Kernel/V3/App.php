@@ -3,6 +3,8 @@ namespace TencentAds\Kernel\V3;
 
 use GuzzleHttp\Client;
 use TencentAds\Container\V3\AdDiagnosisApiContainer;
+use TencentAds\Container\V3\AdcreativePreviewsApiContainer;
+use TencentAds\Container\V3\AdcreativePreviewsQrcodeApiContainer;
 use TencentAds\Container\V3\AdgroupNegativewordsApiContainer;
 use TencentAds\Container\V3\AdgroupsApiContainer;
 use TencentAds\Container\V3\AgencyRealtimeCostApiContainer;
@@ -21,6 +23,7 @@ use TencentAds\Container\V3\CustomAudienceFilesApiContainer;
 use TencentAds\Container\V3\CustomAudiencesApiContainer;
 use TencentAds\Container\V3\DailyBalanceReportApiContainer;
 use TencentAds\Container\V3\DailyReportsApiContainer;
+use TencentAds\Container\V3\DynamicCreativeReviewResultsApiContainer;
 use TencentAds\Container\V3\DynamicCreativesApiContainer;
 use TencentAds\Container\V3\EstimationApiContainer;
 use TencentAds\Container\V3\ExtendPackageApiContainer;
@@ -65,6 +68,12 @@ class App
 
     /** @var AdDiagnosisApiContainer */
     public $adDiagnosisApiContainer;
+
+    /** @var AdcreativePreviewsApiContainer */
+    public $adcreativePreviewsApiContainer;
+
+    /** @var AdcreativePreviewsQrcodeApiContainer */
+    public $adcreativePreviewsQrcodeApiContainer;
 
     /** @var AdgroupNegativewordsApiContainer */
     public $adgroupNegativewordsApiContainer;
@@ -119,6 +128,9 @@ class App
 
     /** @var DailyReportsApiContainer */
     public $dailyReportsApiContainer;
+
+    /** @var DynamicCreativeReviewResultsApiContainer */
+    public $dynamicCreativeReviewResultsApiContainer;
 
     /** @var DynamicCreativesApiContainer */
     public $dynamicCreativesApiContainer;
@@ -252,6 +264,34 @@ class App
             $this->adDiagnosisApiContainer = $container;
         }
         return $this->adDiagnosisApiContainer;
+    }
+
+
+    /**
+     * @return AdcreativePreviewsApiContainer
+     */
+    public function adcreativePreviews()
+    {
+        if (empty($this->adcreativePreviewsApiContainer)) {
+            $container = new AdcreativePreviewsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->adcreativePreviewsApiContainer = $container;
+        }
+        return $this->adcreativePreviewsApiContainer;
+    }
+
+
+    /**
+     * @return AdcreativePreviewsQrcodeApiContainer
+     */
+    public function adcreativePreviewsQrcode()
+    {
+        if (empty($this->adcreativePreviewsQrcodeApiContainer)) {
+            $container = new AdcreativePreviewsQrcodeApiContainer();
+            $container->init($this, $this->getClient());
+            $this->adcreativePreviewsQrcodeApiContainer = $container;
+        }
+        return $this->adcreativePreviewsQrcodeApiContainer;
     }
 
 
@@ -504,6 +544,20 @@ class App
             $this->dailyReportsApiContainer = $container;
         }
         return $this->dailyReportsApiContainer;
+    }
+
+
+    /**
+     * @return DynamicCreativeReviewResultsApiContainer
+     */
+    public function dynamicCreativeReviewResults()
+    {
+        if (empty($this->dynamicCreativeReviewResultsApiContainer)) {
+            $container = new DynamicCreativeReviewResultsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->dynamicCreativeReviewResultsApiContainer = $container;
+        }
+        return $this->dynamicCreativeReviewResultsApiContainer;
     }
 
 

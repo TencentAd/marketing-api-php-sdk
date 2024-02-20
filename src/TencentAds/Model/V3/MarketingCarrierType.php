@@ -56,6 +56,7 @@ class MarketingCarrierType
     const MINI_PROGRAM_WECHAT = 'MARKETING_CARRIER_TYPE_MINI_PROGRAM_WECHAT';
     const APP_QUICK_APP = 'MARKETING_CARRIER_TYPE_APP_QUICK_APP';
     const JUMP_PAGE2 = 'MARKETING_CARRIER_TYPE_JUMP_PAGE2';
+    const MINI_PROGRAM_WECHAT2 = 'MARKETING_CARRIER_TYPE_MINI_PROGRAM_WECHAT2';
     
     /**
      * Gets allowable values of the enum
@@ -76,6 +77,7 @@ class MarketingCarrierType
             self::MINI_PROGRAM_WECHAT,
             self::APP_QUICK_APP,
             self::JUMP_PAGE2,
+            self::MINI_PROGRAM_WECHAT2,
         ];
     }
 }

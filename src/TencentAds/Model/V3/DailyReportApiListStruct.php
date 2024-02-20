@@ -864,6 +864,7 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'inviteFriendsToWatchFireworksPv' => 'int',
         'clkBlessingCardPv' => 'int',
         'clkShortcutMenusPv' => 'int',
+        'channelsDetailBtnPv' => 'int',
         'adgroupId' => 'int',
         'adgroupName' => 'string',
         'dynamicCreativeId' => 'int',
@@ -1701,6 +1702,7 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'inviteFriendsToWatchFireworksPv' => 'int64',
         'clkBlessingCardPv' => 'int64',
         'clkShortcutMenusPv' => 'int64',
+        'channelsDetailBtnPv' => 'int64',
         'adgroupId' => 'int64',
         'adgroupName' => null,
         'dynamicCreativeId' => 'int64',
@@ -2559,6 +2561,7 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'inviteFriendsToWatchFireworksPv' => 'invite_friends_to_watch_fireworks_pv',
         'clkBlessingCardPv' => 'clk_blessing_card_pv',
         'clkShortcutMenusPv' => 'clk_shortcut_menus_pv',
+        'channelsDetailBtnPv' => 'channels_detail_btn_pv',
         'adgroupId' => 'adgroup_id',
         'adgroupName' => 'adgroup_name',
         'dynamicCreativeId' => 'dynamic_creative_id',
@@ -3396,6 +3399,7 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'inviteFriendsToWatchFireworksPv' => 'setInviteFriendsToWatchFireworksPv',
         'clkBlessingCardPv' => 'setClkBlessingCardPv',
         'clkShortcutMenusPv' => 'setClkShortcutMenusPv',
+        'channelsDetailBtnPv' => 'setChannelsDetailBtnPv',
         'adgroupId' => 'setAdgroupId',
         'adgroupName' => 'setAdgroupName',
         'dynamicCreativeId' => 'setDynamicCreativeId',
@@ -4233,6 +4237,7 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'inviteFriendsToWatchFireworksPv' => 'getInviteFriendsToWatchFireworksPv',
         'clkBlessingCardPv' => 'getClkBlessingCardPv',
         'clkShortcutMenusPv' => 'getClkShortcutMenusPv',
+        'channelsDetailBtnPv' => 'getChannelsDetailBtnPv',
         'adgroupId' => 'getAdgroupId',
         'adgroupName' => 'getAdgroupName',
         'dynamicCreativeId' => 'getDynamicCreativeId',
@@ -5124,6 +5129,7 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['inviteFriendsToWatchFireworksPv'] = isset($data['inviteFriendsToWatchFireworksPv']) ? $data['inviteFriendsToWatchFireworksPv'] : null;
         $this->container['clkBlessingCardPv'] = isset($data['clkBlessingCardPv']) ? $data['clkBlessingCardPv'] : null;
         $this->container['clkShortcutMenusPv'] = isset($data['clkShortcutMenusPv']) ? $data['clkShortcutMenusPv'] : null;
+        $this->container['channelsDetailBtnPv'] = isset($data['channelsDetailBtnPv']) ? $data['channelsDetailBtnPv'] : null;
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
@@ -24513,6 +24519,30 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setClkShortcutMenusPv($clkShortcutMenusPv)
     {
         $this->container['clkShortcutMenusPv'] = $clkShortcutMenusPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets channelsDetailBtnPv
+     *
+     * @return int|mixed
+     */
+    public function getChannelsDetailBtnPv()
+    {
+        return $this->container['channelsDetailBtnPv'];
+    }
+
+    /**
+     * Sets channelsDetailBtnPv
+     *
+     * @param int|mixed $channelsDetailBtnPv channelsDetailBtnPv
+     *
+     * @return $this
+     */
+    public function setChannelsDetailBtnPv($channelsDetailBtnPv)
+    {
+        $this->container['channelsDetailBtnPv'] = $channelsDetailBtnPv;
 
         return $this;
     }

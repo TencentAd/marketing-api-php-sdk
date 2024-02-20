@@ -63,7 +63,8 @@ class BidwordPage implements ModelInterface, ArrayAccess
         'miniProgramSpec' => '\TencentAds\Model\MiniProgramSpecStruct',
         'deepLinkSpec' => '\TencentAds\Model\DeepLinkSpecStruct',
         'universalLinkSpec' => '\TencentAds\Model\UniversalLinkSpecStruct',
-        'xijingSpec' => '\TencentAds\Model\XijingSpecStruct'
+        'xijingSpec' => '\TencentAds\Model\XijingSpecStruct',
+        'lingqueSpec' => '\TencentAds\Model\LingqueSpecStruct'
     ];
 
     /**
@@ -77,7 +78,8 @@ class BidwordPage implements ModelInterface, ArrayAccess
         'miniProgramSpec' => null,
         'deepLinkSpec' => null,
         'universalLinkSpec' => null,
-        'xijingSpec' => null
+        'xijingSpec' => null,
+        'lingqueSpec' => null
     ];
 
     /**
@@ -112,7 +114,8 @@ class BidwordPage implements ModelInterface, ArrayAccess
         'miniProgramSpec' => 'mini_program_spec',
         'deepLinkSpec' => 'deep_link_spec',
         'universalLinkSpec' => 'universal_link_spec',
-        'xijingSpec' => 'xijing_spec'
+        'xijingSpec' => 'xijing_spec',
+        'lingqueSpec' => 'lingque_spec'
     ];
 
     /**
@@ -126,7 +129,8 @@ class BidwordPage implements ModelInterface, ArrayAccess
         'miniProgramSpec' => 'setMiniProgramSpec',
         'deepLinkSpec' => 'setDeepLinkSpec',
         'universalLinkSpec' => 'setUniversalLinkSpec',
-        'xijingSpec' => 'setXijingSpec'
+        'xijingSpec' => 'setXijingSpec',
+        'lingqueSpec' => 'setLingqueSpec'
     ];
 
     /**
@@ -140,7 +144,8 @@ class BidwordPage implements ModelInterface, ArrayAccess
         'miniProgramSpec' => 'getMiniProgramSpec',
         'deepLinkSpec' => 'getDeepLinkSpec',
         'universalLinkSpec' => 'getUniversalLinkSpec',
-        'xijingSpec' => 'getXijingSpec'
+        'xijingSpec' => 'getXijingSpec',
+        'lingqueSpec' => 'getLingqueSpec'
     ];
 
     /**
@@ -209,6 +214,7 @@ class BidwordPage implements ModelInterface, ArrayAccess
         $this->container['deepLinkSpec'] = isset($data['deepLinkSpec']) ? $data['deepLinkSpec'] : null;
         $this->container['universalLinkSpec'] = isset($data['universalLinkSpec']) ? $data['universalLinkSpec'] : null;
         $this->container['xijingSpec'] = isset($data['xijingSpec']) ? $data['xijingSpec'] : null;
+        $this->container['lingqueSpec'] = isset($data['lingqueSpec']) ? $data['lingqueSpec'] : null;
     }
 
     /**
@@ -375,6 +381,30 @@ class BidwordPage implements ModelInterface, ArrayAccess
     public function setXijingSpec($xijingSpec)
     {
         $this->container['xijingSpec'] = $xijingSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets lingqueSpec
+     *
+     * @return \TencentAds\Model\LingqueSpecStruct|mixed
+     */
+    public function getLingqueSpec()
+    {
+        return $this->container['lingqueSpec'];
+    }
+
+    /**
+     * Sets lingqueSpec
+     *
+     * @param \TencentAds\Model\LingqueSpecStruct|mixed $lingqueSpec lingqueSpec
+     *
+     * @return $this
+     */
+    public function setLingqueSpec($lingqueSpec)
+    {
+        $this->container['lingqueSpec'] = $lingqueSpec;
 
         return $this;
     }

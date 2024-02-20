@@ -790,6 +790,7 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'clkRedpocketBtnSubscribePv' => 'int',
         'inviteFriendsToWatchFireworksPv' => 'int',
         'clkBlessingCardPv' => 'int',
+        'channelsDetailBtnPv' => 'int',
         'ageId' => 'int',
         'cityId' => 'int',
         'regionId' => 'int',
@@ -1535,6 +1536,7 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'clkRedpocketBtnSubscribePv' => 'int64',
         'inviteFriendsToWatchFireworksPv' => 'int64',
         'clkBlessingCardPv' => 'int64',
+        'channelsDetailBtnPv' => 'int64',
         'ageId' => 'int64',
         'cityId' => 'int64',
         'regionId' => 'int64',
@@ -2301,6 +2303,7 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'clkRedpocketBtnSubscribePv' => 'clk_redpocket_btn_subscribe_pv',
         'inviteFriendsToWatchFireworksPv' => 'invite_friends_to_watch_fireworks_pv',
         'clkBlessingCardPv' => 'clk_blessing_card_pv',
+        'channelsDetailBtnPv' => 'channels_detail_btn_pv',
         'ageId' => 'age_id',
         'cityId' => 'city_id',
         'regionId' => 'region_id',
@@ -3046,6 +3049,7 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'clkRedpocketBtnSubscribePv' => 'setClkRedpocketBtnSubscribePv',
         'inviteFriendsToWatchFireworksPv' => 'setInviteFriendsToWatchFireworksPv',
         'clkBlessingCardPv' => 'setClkBlessingCardPv',
+        'channelsDetailBtnPv' => 'setChannelsDetailBtnPv',
         'ageId' => 'setAgeId',
         'cityId' => 'setCityId',
         'regionId' => 'setRegionId',
@@ -3791,6 +3795,7 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'clkRedpocketBtnSubscribePv' => 'getClkRedpocketBtnSubscribePv',
         'inviteFriendsToWatchFireworksPv' => 'getInviteFriendsToWatchFireworksPv',
         'clkBlessingCardPv' => 'getClkBlessingCardPv',
+        'channelsDetailBtnPv' => 'getChannelsDetailBtnPv',
         'ageId' => 'getAgeId',
         'cityId' => 'getCityId',
         'regionId' => 'getRegionId',
@@ -4590,6 +4595,7 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['clkRedpocketBtnSubscribePv'] = isset($data['clkRedpocketBtnSubscribePv']) ? $data['clkRedpocketBtnSubscribePv'] : null;
         $this->container['inviteFriendsToWatchFireworksPv'] = isset($data['inviteFriendsToWatchFireworksPv']) ? $data['inviteFriendsToWatchFireworksPv'] : null;
         $this->container['clkBlessingCardPv'] = isset($data['clkBlessingCardPv']) ? $data['clkBlessingCardPv'] : null;
+        $this->container['channelsDetailBtnPv'] = isset($data['channelsDetailBtnPv']) ? $data['channelsDetailBtnPv'] : null;
         $this->container['ageId'] = isset($data['ageId']) ? $data['ageId'] : null;
         $this->container['cityId'] = isset($data['cityId']) ? $data['cityId'] : null;
         $this->container['regionId'] = isset($data['regionId']) ? $data['regionId'] : null;
@@ -22185,6 +22191,30 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     public function setClkBlessingCardPv($clkBlessingCardPv)
     {
         $this->container['clkBlessingCardPv'] = $clkBlessingCardPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets channelsDetailBtnPv
+     *
+     * @return int|mixed
+     */
+    public function getChannelsDetailBtnPv()
+    {
+        return $this->container['channelsDetailBtnPv'];
+    }
+
+    /**
+     * Sets channelsDetailBtnPv
+     *
+     * @param int|mixed $channelsDetailBtnPv channelsDetailBtnPv
+     *
+     * @return $this
+     */
+    public function setChannelsDetailBtnPv($channelsDetailBtnPv)
+    {
+        $this->container['channelsDetailBtnPv'] = $channelsDetailBtnPv;
 
         return $this;
     }

@@ -135,6 +135,7 @@ class OptimizationGoal
     const LIVE_STREAM_DURATION_1_MIN = 'OPTIMIZATIONGOAL_LIVE_STREAM_DURATION_1MIN';
     const LIVE_STREAM_INTERACTION = 'OPTIMIZATIONGOAL_LIVE_STREAM_INTERACTION';
     const ECOMMERCE_CANCEL_ORDER = 'OPTIMIZATIONGOAL_ECOMMERCE_CANCEL_ORDER';
+    const REGULAR_PRICE_COURSE = 'OPTIMIZATIONGOAL_REGULAR_PRICE_COURSE';
     
     /**
      * Gets allowable values of the enum
@@ -234,6 +235,7 @@ class OptimizationGoal
             self::LIVE_STREAM_DURATION_1_MIN,
             self::LIVE_STREAM_INTERACTION,
             self::ECOMMERCE_CANCEL_ORDER,
+            self::REGULAR_PRICE_COURSE,
         ];
     }
 }

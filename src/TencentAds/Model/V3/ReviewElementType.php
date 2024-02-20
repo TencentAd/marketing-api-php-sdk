@@ -1,6 +1,6 @@
 <?php
 /**
- * ReportDailyLevel
+ * ReviewElementType
  *
  * PHP version 5
  *
@@ -31,28 +31,24 @@ namespace TencentAds\Model\V3;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ReportDailyLevel Class Doc Comment
+ * ReviewElementType Class Doc Comment
  *
  * @category Class
- * @description 获取报表类型级别
+ * @description 元素类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ReportDailyLevel
+class ReviewElementType
 {
     /**
      * Possible values of this enum
      */
-    const ADVERTISER = 'REPORT_LEVEL_ADVERTISER';
-    const ADGROUP = 'REPORT_LEVEL_ADGROUP';
-    const DYNAMIC_CREATIVE = 'REPORT_LEVEL_DYNAMIC_CREATIVE';
-    const COMPONENT = 'REPORT_LEVEL_COMPONENT';
-    const CHANNEL = 'REPORT_LEVEL_CHANNEL';
-    const BIDWORD = 'REPORT_LEVEL_BIDWORD';
-    const MATERIAL_IMAGE = 'REPORT_LEVEL_MATERIAL_IMAGE';
-    const MATERIAL_VIDEO = 'REPORT_LEVEL_MATERIAL_VIDEO';
-    const ADVERTISER_TOTAL = 'REPORT_LEVEL_ADVERTISER_TOTAL';
+    const TEXT = 'ELEMENT_TYPE_TEXT';
+    const URL = 'ELEMENT_TYPE_URL';
+    const IMAGE = 'ELEMENT_TYPE_IMAGE';
+    const VIDEO = 'ELEMENT_TYPE_VIDEO';
+    const SELECT_NONE = 'ELEMENT_TYPE_SELECT_NONE';
     
     /**
      * Gets allowable values of the enum
@@ -61,15 +57,11 @@ class ReportDailyLevel
     public static function getAllowableEnumValues()
     {
         return [
-            self::ADVERTISER,
-            self::ADGROUP,
-            self::DYNAMIC_CREATIVE,
-            self::COMPONENT,
-            self::CHANNEL,
-            self::BIDWORD,
-            self::MATERIAL_IMAGE,
-            self::MATERIAL_VIDEO,
-            self::ADVERTISER_TOTAL,
+            self::TEXT,
+            self::URL,
+            self::IMAGE,
+            self::VIDEO,
+            self::SELECT_NONE,
         ];
     }
 }

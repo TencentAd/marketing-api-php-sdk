@@ -49,6 +49,7 @@ class ReportHourlyLevel
     const DYNAMIC_CREATIVE = 'REPORT_LEVEL_DYNAMIC_CREATIVE';
     const CHANNEL = 'REPORT_LEVEL_CHANNEL';
     const BIDWORD = 'REPORT_LEVEL_BIDWORD';
+    const ADVERTISER_TOTAL = 'REPORT_LEVEL_ADVERTISER_TOTAL';
     
     /**
      * Gets allowable values of the enum
@@ -62,6 +63,7 @@ class ReportHourlyLevel
             self::DYNAMIC_CREATIVE,
             self::CHANNEL,
             self::BIDWORD,
+            self::ADVERTISER_TOTAL,
         ];
     }
 }

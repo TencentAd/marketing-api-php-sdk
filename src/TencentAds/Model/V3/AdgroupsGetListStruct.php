@@ -121,7 +121,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'ecomPkamSwitch' => '\TencentAds\Model\V3\EcomPkamSwitch',
         'forwardLinkAssist' => '\TencentAds\Model\V3\OptimizationGoal',
         'conversionName' => 'string',
-        'autoAcquisitionStatus' => '\TencentAds\Model\V3\AutoAcquisitionStatus'
+        'autoAcquisitionStatus' => '\TencentAds\Model\V3\AutoAcquisitionStatus',
+        'autoAcquisitionStatusText' => 'string',
+        'autoAcquisitionStatusMessage' => 'string'
     ];
 
     /**
@@ -193,7 +195,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'ecomPkamSwitch' => null,
         'forwardLinkAssist' => null,
         'conversionName' => null,
-        'autoAcquisitionStatus' => null
+        'autoAcquisitionStatus' => null,
+        'autoAcquisitionStatusText' => null,
+        'autoAcquisitionStatusMessage' => null
     ];
 
     /**
@@ -286,7 +290,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'ecomPkamSwitch' => 'ecom_pkam_switch',
         'forwardLinkAssist' => 'forward_link_assist',
         'conversionName' => 'conversion_name',
-        'autoAcquisitionStatus' => 'auto_acquisition_status'
+        'autoAcquisitionStatus' => 'auto_acquisition_status',
+        'autoAcquisitionStatusText' => 'auto_acquisition_status_text',
+        'autoAcquisitionStatusMessage' => 'auto_acquisition_status_message'
     ];
 
     /**
@@ -358,7 +364,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'ecomPkamSwitch' => 'setEcomPkamSwitch',
         'forwardLinkAssist' => 'setForwardLinkAssist',
         'conversionName' => 'setConversionName',
-        'autoAcquisitionStatus' => 'setAutoAcquisitionStatus'
+        'autoAcquisitionStatus' => 'setAutoAcquisitionStatus',
+        'autoAcquisitionStatusText' => 'setAutoAcquisitionStatusText',
+        'autoAcquisitionStatusMessage' => 'setAutoAcquisitionStatusMessage'
     ];
 
     /**
@@ -430,7 +438,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'ecomPkamSwitch' => 'getEcomPkamSwitch',
         'forwardLinkAssist' => 'getForwardLinkAssist',
         'conversionName' => 'getConversionName',
-        'autoAcquisitionStatus' => 'getAutoAcquisitionStatus'
+        'autoAcquisitionStatus' => 'getAutoAcquisitionStatus',
+        'autoAcquisitionStatusText' => 'getAutoAcquisitionStatusText',
+        'autoAcquisitionStatusMessage' => 'getAutoAcquisitionStatusMessage'
     ];
 
     /**
@@ -557,6 +567,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['forwardLinkAssist'] = isset($data['forwardLinkAssist']) ? $data['forwardLinkAssist'] : null;
         $this->container['conversionName'] = isset($data['conversionName']) ? $data['conversionName'] : null;
         $this->container['autoAcquisitionStatus'] = isset($data['autoAcquisitionStatus']) ? $data['autoAcquisitionStatus'] : null;
+        $this->container['autoAcquisitionStatusText'] = isset($data['autoAcquisitionStatusText']) ? $data['autoAcquisitionStatusText'] : null;
+        $this->container['autoAcquisitionStatusMessage'] = isset($data['autoAcquisitionStatusMessage']) ? $data['autoAcquisitionStatusMessage'] : null;
     }
 
     /**
@@ -2115,6 +2127,54 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setAutoAcquisitionStatus($autoAcquisitionStatus)
     {
         $this->container['autoAcquisitionStatus'] = $autoAcquisitionStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoAcquisitionStatusText
+     *
+     * @return string|mixed
+     */
+    public function getAutoAcquisitionStatusText()
+    {
+        return $this->container['autoAcquisitionStatusText'];
+    }
+
+    /**
+     * Sets autoAcquisitionStatusText
+     *
+     * @param string|mixed $autoAcquisitionStatusText autoAcquisitionStatusText
+     *
+     * @return $this
+     */
+    public function setAutoAcquisitionStatusText($autoAcquisitionStatusText)
+    {
+        $this->container['autoAcquisitionStatusText'] = $autoAcquisitionStatusText;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoAcquisitionStatusMessage
+     *
+     * @return string|mixed
+     */
+    public function getAutoAcquisitionStatusMessage()
+    {
+        return $this->container['autoAcquisitionStatusMessage'];
+    }
+
+    /**
+     * Sets autoAcquisitionStatusMessage
+     *
+     * @param string|mixed $autoAcquisitionStatusMessage autoAcquisitionStatusMessage
+     *
+     * @return $this
+     */
+    public function setAutoAcquisitionStatusMessage($autoAcquisitionStatusMessage)
+    {
+        $this->container['autoAcquisitionStatusMessage'] = $autoAcquisitionStatusMessage;
 
         return $this;
     }
