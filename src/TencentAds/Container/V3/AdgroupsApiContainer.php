@@ -171,4 +171,106 @@ class AdgroupsApiContainer extends ApiContainer
             return $response;
         });
     }
+
+
+    /**
+     * Handle AdgroupsApi adgroupsUpdateBidAmount function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function updateBidAmount(array $params = [])
+    {
+        return $this->handleMiddleware('updateBidAmount', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->adgroupsUpdateBidAmount($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle AdgroupsApi adgroupsUpdateBidAmountAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function updateBidAmountAsync(array $params = [])
+    {
+        return $this->handleMiddleware('updateBidAmount', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->adgroupsUpdateBidAmountAsync($data);
+            return $response;
+        });
+    }
+
+
+    /**
+     * Handle AdgroupsApi adgroupsUpdateConfiguredStatus function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function updateConfiguredStatus(array $params = [])
+    {
+        return $this->handleMiddleware('updateConfiguredStatus', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->adgroupsUpdateConfiguredStatus($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle AdgroupsApi adgroupsUpdateConfiguredStatusAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function updateConfiguredStatusAsync(array $params = [])
+    {
+        return $this->handleMiddleware('updateConfiguredStatus', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->adgroupsUpdateConfiguredStatusAsync($data);
+            return $response;
+        });
+    }
+
+
+    /**
+     * Handle AdgroupsApi adgroupsUpdateDailyBudget function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function updateDailyBudget(array $params = [])
+    {
+        return $this->handleMiddleware('updateDailyBudget', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->adgroupsUpdateDailyBudget($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle AdgroupsApi adgroupsUpdateDailyBudgetAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function updateDailyBudgetAsync(array $params = [])
+    {
+        return $this->handleMiddleware('updateDailyBudget', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->adgroupsUpdateDailyBudgetAsync($data);
+            return $response;
+        });
+    }
 }

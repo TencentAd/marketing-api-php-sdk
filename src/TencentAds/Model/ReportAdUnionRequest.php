@@ -65,6 +65,7 @@ class ReportAdUnionRequest implements ModelInterface, ArrayAccess
         'pageSize' => 'int',
         'fields' => 'string[]',
         'async' => 'int',
+        'adqAccountsUpgradeEnabled' => 'bool',
         'accountId' => 'int'
     ];
 
@@ -82,6 +83,7 @@ class ReportAdUnionRequest implements ModelInterface, ArrayAccess
         'pageSize' => 'int64',
         'fields' => null,
         'async' => 'int64',
+        'adqAccountsUpgradeEnabled' => null,
         'accountId' => 'int64'
     ];
 
@@ -120,6 +122,7 @@ class ReportAdUnionRequest implements ModelInterface, ArrayAccess
         'pageSize' => 'page_size',
         'fields' => 'fields',
         'async' => 'async',
+        'adqAccountsUpgradeEnabled' => 'adq_accounts_upgrade_enabled',
         'accountId' => 'account_id'
     ];
 
@@ -137,6 +140,7 @@ class ReportAdUnionRequest implements ModelInterface, ArrayAccess
         'pageSize' => 'setPageSize',
         'fields' => 'setFields',
         'async' => 'setAsync',
+        'adqAccountsUpgradeEnabled' => 'setAdqAccountsUpgradeEnabled',
         'accountId' => 'setAccountId'
     ];
 
@@ -154,6 +158,7 @@ class ReportAdUnionRequest implements ModelInterface, ArrayAccess
         'pageSize' => 'getPageSize',
         'fields' => 'getFields',
         'async' => 'getAsync',
+        'adqAccountsUpgradeEnabled' => 'getAdqAccountsUpgradeEnabled',
         'accountId' => 'getAccountId'
     ];
 
@@ -225,6 +230,7 @@ class ReportAdUnionRequest implements ModelInterface, ArrayAccess
         $this->container['pageSize'] = isset($data['pageSize']) ? $data['pageSize'] : null;
         $this->container['fields'] = isset($data['fields']) ? $data['fields'] : null;
         $this->container['async'] = isset($data['async']) ? $data['async'] : null;
+        $this->container['adqAccountsUpgradeEnabled'] = isset($data['adqAccountsUpgradeEnabled']) ? $data['adqAccountsUpgradeEnabled'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -440,6 +446,30 @@ class ReportAdUnionRequest implements ModelInterface, ArrayAccess
     public function setAsync($async)
     {
         $this->container['async'] = $async;
+
+        return $this;
+    }
+
+    /**
+     * Gets adqAccountsUpgradeEnabled
+     *
+     * @return bool|mixed
+     */
+    public function getAdqAccountsUpgradeEnabled()
+    {
+        return $this->container['adqAccountsUpgradeEnabled'];
+    }
+
+    /**
+     * Sets adqAccountsUpgradeEnabled
+     *
+     * @param bool|mixed $adqAccountsUpgradeEnabled adqAccountsUpgradeEnabled
+     *
+     * @return $this
+     */
+    public function setAdqAccountsUpgradeEnabled($adqAccountsUpgradeEnabled)
+    {
+        $this->container['adqAccountsUpgradeEnabled'] = $adqAccountsUpgradeEnabled;
 
         return $this;
     }

@@ -60,14 +60,12 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'targeting' => '\TencentAds\Model\V3\ReadTargetingSetting',
         'adgroupId' => 'int',
-        'targetingId' => 'int',
         'targetingTranslation' => 'string',
         'configuredStatus' => '\TencentAds\Model\V3\ConfiguredStatus',
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
         'isDeleted' => 'bool',
         'systemStatus' => '\TencentAds\Model\V3\CalcAdGroupStatus',
-        'accountId' => 'int',
         'adgroupName' => 'string',
         'marketingGoal' => '\TencentAds\Model\V3\MarketingGoal',
         'marketingSubGoal' => '\TencentAds\Model\V3\MarketingSubGoal',
@@ -134,14 +132,12 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'targeting' => null,
         'adgroupId' => 'int64',
-        'targetingId' => 'int64',
         'targetingTranslation' => null,
         'configuredStatus' => null,
         'createdTime' => 'int64',
         'lastModifiedTime' => 'int64',
         'isDeleted' => null,
         'systemStatus' => null,
-        'accountId' => 'int64',
         'adgroupName' => null,
         'marketingGoal' => null,
         'marketingSubGoal' => null,
@@ -229,14 +225,12 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'targeting' => 'targeting',
         'adgroupId' => 'adgroup_id',
-        'targetingId' => 'targeting_id',
         'targetingTranslation' => 'targeting_translation',
         'configuredStatus' => 'configured_status',
         'createdTime' => 'created_time',
         'lastModifiedTime' => 'last_modified_time',
         'isDeleted' => 'is_deleted',
         'systemStatus' => 'system_status',
-        'accountId' => 'account_id',
         'adgroupName' => 'adgroup_name',
         'marketingGoal' => 'marketing_goal',
         'marketingSubGoal' => 'marketing_sub_goal',
@@ -303,14 +297,12 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     protected static $setters = [
         'targeting' => 'setTargeting',
         'adgroupId' => 'setAdgroupId',
-        'targetingId' => 'setTargetingId',
         'targetingTranslation' => 'setTargetingTranslation',
         'configuredStatus' => 'setConfiguredStatus',
         'createdTime' => 'setCreatedTime',
         'lastModifiedTime' => 'setLastModifiedTime',
         'isDeleted' => 'setIsDeleted',
         'systemStatus' => 'setSystemStatus',
-        'accountId' => 'setAccountId',
         'adgroupName' => 'setAdgroupName',
         'marketingGoal' => 'setMarketingGoal',
         'marketingSubGoal' => 'setMarketingSubGoal',
@@ -377,14 +369,12 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     protected static $getters = [
         'targeting' => 'getTargeting',
         'adgroupId' => 'getAdgroupId',
-        'targetingId' => 'getTargetingId',
         'targetingTranslation' => 'getTargetingTranslation',
         'configuredStatus' => 'getConfiguredStatus',
         'createdTime' => 'getCreatedTime',
         'lastModifiedTime' => 'getLastModifiedTime',
         'isDeleted' => 'getIsDeleted',
         'systemStatus' => 'getSystemStatus',
-        'accountId' => 'getAccountId',
         'adgroupName' => 'getAdgroupName',
         'marketingGoal' => 'getMarketingGoal',
         'marketingSubGoal' => 'getMarketingSubGoal',
@@ -505,14 +495,12 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     {
         $this->container['targeting'] = isset($data['targeting']) ? $data['targeting'] : null;
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
-        $this->container['targetingId'] = isset($data['targetingId']) ? $data['targetingId'] : null;
         $this->container['targetingTranslation'] = isset($data['targetingTranslation']) ? $data['targetingTranslation'] : null;
         $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
         $this->container['isDeleted'] = isset($data['isDeleted']) ? $data['isDeleted'] : null;
         $this->container['systemStatus'] = isset($data['systemStatus']) ? $data['systemStatus'] : null;
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['marketingGoal'] = isset($data['marketingGoal']) ? $data['marketingGoal'] : null;
         $this->container['marketingSubGoal'] = isset($data['marketingSubGoal']) ? $data['marketingSubGoal'] : null;
@@ -639,30 +627,6 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setAdgroupId($adgroupId)
     {
         $this->container['adgroupId'] = $adgroupId;
-
-        return $this;
-    }
-
-    /**
-     * Gets targetingId
-     *
-     * @return int|mixed
-     */
-    public function getTargetingId()
-    {
-        return $this->container['targetingId'];
-    }
-
-    /**
-     * Sets targetingId
-     *
-     * @param int|mixed $targetingId targetingId
-     *
-     * @return $this
-     */
-    public function setTargetingId($targetingId)
-    {
-        $this->container['targetingId'] = $targetingId;
 
         return $this;
     }
@@ -807,30 +771,6 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setSystemStatus($systemStatus)
     {
         $this->container['systemStatus'] = $systemStatus;
-
-        return $this;
-    }
-
-    /**
-     * Gets accountId
-     *
-     * @return int|mixed
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int|mixed $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
 
         return $this;
     }

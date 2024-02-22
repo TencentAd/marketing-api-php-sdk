@@ -60,7 +60,8 @@ class AdCreativeBrand implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'brandName' => 'string',
         'brandImg' => 'string',
-        'brandDescription' => 'string'
+        'brandDescription' => 'string',
+        'mainJumpInfo' => '\TencentAds\Model\LandingPageStructure[]'
     ];
 
     /**
@@ -71,7 +72,8 @@ class AdCreativeBrand implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'brandName' => null,
         'brandImg' => null,
-        'brandDescription' => null
+        'brandDescription' => null,
+        'mainJumpInfo' => null
     ];
 
     /**
@@ -103,7 +105,8 @@ class AdCreativeBrand implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'brandName' => 'brand_name',
         'brandImg' => 'brand_img',
-        'brandDescription' => 'brand_description'
+        'brandDescription' => 'brand_description',
+        'mainJumpInfo' => 'main_jump_info'
     ];
 
     /**
@@ -114,7 +117,8 @@ class AdCreativeBrand implements ModelInterface, ArrayAccess
     protected static $setters = [
         'brandName' => 'setBrandName',
         'brandImg' => 'setBrandImg',
-        'brandDescription' => 'setBrandDescription'
+        'brandDescription' => 'setBrandDescription',
+        'mainJumpInfo' => 'setMainJumpInfo'
     ];
 
     /**
@@ -125,7 +129,8 @@ class AdCreativeBrand implements ModelInterface, ArrayAccess
     protected static $getters = [
         'brandName' => 'getBrandName',
         'brandImg' => 'getBrandImg',
-        'brandDescription' => 'getBrandDescription'
+        'brandDescription' => 'getBrandDescription',
+        'mainJumpInfo' => 'getMainJumpInfo'
     ];
 
     /**
@@ -191,6 +196,7 @@ class AdCreativeBrand implements ModelInterface, ArrayAccess
         $this->container['brandName'] = isset($data['brandName']) ? $data['brandName'] : null;
         $this->container['brandImg'] = isset($data['brandImg']) ? $data['brandImg'] : null;
         $this->container['brandDescription'] = isset($data['brandDescription']) ? $data['brandDescription'] : null;
+        $this->container['mainJumpInfo'] = isset($data['mainJumpInfo']) ? $data['mainJumpInfo'] : null;
     }
 
     /**
@@ -285,6 +291,30 @@ class AdCreativeBrand implements ModelInterface, ArrayAccess
     public function setBrandDescription($brandDescription)
     {
         $this->container['brandDescription'] = $brandDescription;
+
+        return $this;
+    }
+
+    /**
+     * Gets mainJumpInfo
+     *
+     * @return \TencentAds\Model\LandingPageStructure[]|mixed
+     */
+    public function getMainJumpInfo()
+    {
+        return $this->container['mainJumpInfo'];
+    }
+
+    /**
+     * Sets mainJumpInfo
+     *
+     * @param \TencentAds\Model\LandingPageStructure[]|mixed $mainJumpInfo mainJumpInfo
+     *
+     * @return $this
+     */
+    public function setMainJumpInfo($mainJumpInfo)
+    {
+        $this->container['mainJumpInfo'] = $mainJumpInfo;
 
         return $this;
     }

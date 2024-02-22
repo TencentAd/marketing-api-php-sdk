@@ -12,6 +12,7 @@ use TencentAds\Container\V3\AndroidChannelApiContainer;
 use TencentAds\Container\V3\AsyncReportFilesApiContainer;
 use TencentAds\Container\V3\AsyncReportsApiContainer;
 use TencentAds\Container\V3\AudienceGrantRelationsApiContainer;
+use TencentAds\Container\V3\BatchRequestsApiContainer;
 use TencentAds\Container\V3\BidwordApiContainer;
 use TencentAds\Container\V3\BidwordFlowApiContainer;
 use TencentAds\Container\V3\BrandApiContainer;
@@ -95,6 +96,9 @@ class App
 
     /** @var AudienceGrantRelationsApiContainer */
     public $audienceGrantRelationsApiContainer;
+
+    /** @var BatchRequestsApiContainer */
+    public $batchRequestsApiContainer;
 
     /** @var BidwordApiContainer */
     public $bidwordApiContainer;
@@ -390,6 +394,20 @@ class App
             $this->audienceGrantRelationsApiContainer = $container;
         }
         return $this->audienceGrantRelationsApiContainer;
+    }
+
+
+    /**
+     * @return BatchRequestsApiContainer
+     */
+    public function batchRequests()
+    {
+        if (empty($this->batchRequestsApiContainer)) {
+            $container = new BatchRequestsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->batchRequestsApiContainer = $container;
+        }
+        return $this->batchRequestsApiContainer;
     }
 
 
