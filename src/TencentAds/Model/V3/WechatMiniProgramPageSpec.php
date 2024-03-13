@@ -61,7 +61,8 @@ class WechatMiniProgramPageSpec implements ModelInterface, ArrayAccess
         'miniProgramId' => 'string',
         'miniProgramPath' => 'string',
         'miniProgramPaths' => 'string[]',
-        'backupOption' => '\TencentAds\Model\V3\BackUpOption'
+        'backupOption' => '\TencentAds\Model\V3\BackUpOption',
+        'mpaMiniProgramWildcardUrl' => 'string'
     ];
 
     /**
@@ -73,7 +74,8 @@ class WechatMiniProgramPageSpec implements ModelInterface, ArrayAccess
         'miniProgramId' => null,
         'miniProgramPath' => null,
         'miniProgramPaths' => null,
-        'backupOption' => null
+        'backupOption' => null,
+        'mpaMiniProgramWildcardUrl' => null
     ];
 
     /**
@@ -106,7 +108,8 @@ class WechatMiniProgramPageSpec implements ModelInterface, ArrayAccess
         'miniProgramId' => 'mini_program_id',
         'miniProgramPath' => 'mini_program_path',
         'miniProgramPaths' => 'mini_program_paths',
-        'backupOption' => 'backup_option'
+        'backupOption' => 'backup_option',
+        'mpaMiniProgramWildcardUrl' => 'mpa_mini_program_wildcard_url'
     ];
 
     /**
@@ -118,7 +121,8 @@ class WechatMiniProgramPageSpec implements ModelInterface, ArrayAccess
         'miniProgramId' => 'setMiniProgramId',
         'miniProgramPath' => 'setMiniProgramPath',
         'miniProgramPaths' => 'setMiniProgramPaths',
-        'backupOption' => 'setBackupOption'
+        'backupOption' => 'setBackupOption',
+        'mpaMiniProgramWildcardUrl' => 'setMpaMiniProgramWildcardUrl'
     ];
 
     /**
@@ -130,7 +134,8 @@ class WechatMiniProgramPageSpec implements ModelInterface, ArrayAccess
         'miniProgramId' => 'getMiniProgramId',
         'miniProgramPath' => 'getMiniProgramPath',
         'miniProgramPaths' => 'getMiniProgramPaths',
-        'backupOption' => 'getBackupOption'
+        'backupOption' => 'getBackupOption',
+        'mpaMiniProgramWildcardUrl' => 'getMpaMiniProgramWildcardUrl'
     ];
 
     /**
@@ -197,6 +202,7 @@ class WechatMiniProgramPageSpec implements ModelInterface, ArrayAccess
         $this->container['miniProgramPath'] = isset($data['miniProgramPath']) ? $data['miniProgramPath'] : null;
         $this->container['miniProgramPaths'] = isset($data['miniProgramPaths']) ? $data['miniProgramPaths'] : null;
         $this->container['backupOption'] = isset($data['backupOption']) ? $data['backupOption'] : null;
+        $this->container['mpaMiniProgramWildcardUrl'] = isset($data['mpaMiniProgramWildcardUrl']) ? $data['mpaMiniProgramWildcardUrl'] : null;
     }
 
     /**
@@ -315,6 +321,30 @@ class WechatMiniProgramPageSpec implements ModelInterface, ArrayAccess
     public function setBackupOption($backupOption)
     {
         $this->container['backupOption'] = $backupOption;
+
+        return $this;
+    }
+
+    /**
+     * Gets mpaMiniProgramWildcardUrl
+     *
+     * @return string|mixed
+     */
+    public function getMpaMiniProgramWildcardUrl()
+    {
+        return $this->container['mpaMiniProgramWildcardUrl'];
+    }
+
+    /**
+     * Sets mpaMiniProgramWildcardUrl
+     *
+     * @param string|mixed $mpaMiniProgramWildcardUrl mpaMiniProgramWildcardUrl
+     *
+     * @return $this
+     */
+    public function setMpaMiniProgramWildcardUrl($mpaMiniProgramWildcardUrl)
+    {
+        $this->container['mpaMiniProgramWildcardUrl'] = $mpaMiniProgramWildcardUrl;
 
         return $this;
     }

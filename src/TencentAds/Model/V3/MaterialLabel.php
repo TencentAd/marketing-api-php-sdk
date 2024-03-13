@@ -69,7 +69,7 @@ class MaterialLabel implements ModelInterface, ArrayAccess
         'labelSource' => '\TencentAds\Model\V3\MaterialLabelSource',
         'relationImageCount' => 'int',
         'relationMediaCount' => 'int',
-        'businessScenario' => '\TencentAds\Model\V3\BusinessScenario'
+        'businessScenario' => 'int'
     ];
 
     /**
@@ -89,7 +89,7 @@ class MaterialLabel implements ModelInterface, ArrayAccess
         'labelSource' => null,
         'relationImageCount' => 'int64',
         'relationMediaCount' => 'int64',
-        'businessScenario' => null
+        'businessScenario' => 'int64'
     ];
 
     /**
@@ -538,7 +538,7 @@ class MaterialLabel implements ModelInterface, ArrayAccess
     /**
      * Gets businessScenario
      *
-     * @return \TencentAds\Model\V3\BusinessScenario|mixed
+     * @return int|mixed
      */
     public function getBusinessScenario()
     {
@@ -548,7 +548,7 @@ class MaterialLabel implements ModelInterface, ArrayAccess
     /**
      * Sets businessScenario
      *
-     * @param \TencentAds\Model\V3\BusinessScenario|mixed $businessScenario businessScenario
+     * @param int|mixed $businessScenario businessScenario
      *
      * @return $this
      */

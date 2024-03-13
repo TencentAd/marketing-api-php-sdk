@@ -64,7 +64,8 @@ class SimpleCanvasWechatSpec implements ModelInterface, ArrayAccess
         'simpleCanvasShareTitle' => 'string',
         'simpleCanvasShareDesc' => 'string',
         'simpleCanvasWebviewUrl' => 'string',
-        'wechatChannelsLiveReserveId' => 'string'
+        'wechatChannelsLiveReserveId' => 'string',
+        'mpaSimpleCanvasWebviewWildcardUrl' => 'string'
     ];
 
     /**
@@ -79,7 +80,8 @@ class SimpleCanvasWechatSpec implements ModelInterface, ArrayAccess
         'simpleCanvasShareTitle' => null,
         'simpleCanvasShareDesc' => null,
         'simpleCanvasWebviewUrl' => null,
-        'wechatChannelsLiveReserveId' => null
+        'wechatChannelsLiveReserveId' => null,
+        'mpaSimpleCanvasWebviewWildcardUrl' => null
     ];
 
     /**
@@ -115,7 +117,8 @@ class SimpleCanvasWechatSpec implements ModelInterface, ArrayAccess
         'simpleCanvasShareTitle' => 'simple_canvas_share_title',
         'simpleCanvasShareDesc' => 'simple_canvas_share_desc',
         'simpleCanvasWebviewUrl' => 'simple_canvas_webview_url',
-        'wechatChannelsLiveReserveId' => 'wechat_channels_live_reserve_id'
+        'wechatChannelsLiveReserveId' => 'wechat_channels_live_reserve_id',
+        'mpaSimpleCanvasWebviewWildcardUrl' => 'mpa_simple_canvas_webview_wildcard_url'
     ];
 
     /**
@@ -130,7 +133,8 @@ class SimpleCanvasWechatSpec implements ModelInterface, ArrayAccess
         'simpleCanvasShareTitle' => 'setSimpleCanvasShareTitle',
         'simpleCanvasShareDesc' => 'setSimpleCanvasShareDesc',
         'simpleCanvasWebviewUrl' => 'setSimpleCanvasWebviewUrl',
-        'wechatChannelsLiveReserveId' => 'setWechatChannelsLiveReserveId'
+        'wechatChannelsLiveReserveId' => 'setWechatChannelsLiveReserveId',
+        'mpaSimpleCanvasWebviewWildcardUrl' => 'setMpaSimpleCanvasWebviewWildcardUrl'
     ];
 
     /**
@@ -145,7 +149,8 @@ class SimpleCanvasWechatSpec implements ModelInterface, ArrayAccess
         'simpleCanvasShareTitle' => 'getSimpleCanvasShareTitle',
         'simpleCanvasShareDesc' => 'getSimpleCanvasShareDesc',
         'simpleCanvasWebviewUrl' => 'getSimpleCanvasWebviewUrl',
-        'wechatChannelsLiveReserveId' => 'getWechatChannelsLiveReserveId'
+        'wechatChannelsLiveReserveId' => 'getWechatChannelsLiveReserveId',
+        'mpaSimpleCanvasWebviewWildcardUrl' => 'getMpaSimpleCanvasWebviewWildcardUrl'
     ];
 
     /**
@@ -215,6 +220,7 @@ class SimpleCanvasWechatSpec implements ModelInterface, ArrayAccess
         $this->container['simpleCanvasShareDesc'] = isset($data['simpleCanvasShareDesc']) ? $data['simpleCanvasShareDesc'] : null;
         $this->container['simpleCanvasWebviewUrl'] = isset($data['simpleCanvasWebviewUrl']) ? $data['simpleCanvasWebviewUrl'] : null;
         $this->container['wechatChannelsLiveReserveId'] = isset($data['wechatChannelsLiveReserveId']) ? $data['wechatChannelsLiveReserveId'] : null;
+        $this->container['mpaSimpleCanvasWebviewWildcardUrl'] = isset($data['mpaSimpleCanvasWebviewWildcardUrl']) ? $data['mpaSimpleCanvasWebviewWildcardUrl'] : null;
     }
 
     /**
@@ -405,6 +411,30 @@ class SimpleCanvasWechatSpec implements ModelInterface, ArrayAccess
     public function setWechatChannelsLiveReserveId($wechatChannelsLiveReserveId)
     {
         $this->container['wechatChannelsLiveReserveId'] = $wechatChannelsLiveReserveId;
+
+        return $this;
+    }
+
+    /**
+     * Gets mpaSimpleCanvasWebviewWildcardUrl
+     *
+     * @return string|mixed
+     */
+    public function getMpaSimpleCanvasWebviewWildcardUrl()
+    {
+        return $this->container['mpaSimpleCanvasWebviewWildcardUrl'];
+    }
+
+    /**
+     * Sets mpaSimpleCanvasWebviewWildcardUrl
+     *
+     * @param string|mixed $mpaSimpleCanvasWebviewWildcardUrl mpaSimpleCanvasWebviewWildcardUrl
+     *
+     * @return $this
+     */
+    public function setMpaSimpleCanvasWebviewWildcardUrl($mpaSimpleCanvasWebviewWildcardUrl)
+    {
+        $this->container['mpaSimpleCanvasWebviewWildcardUrl'] = $mpaSimpleCanvasWebviewWildcardUrl;
 
         return $this;
     }

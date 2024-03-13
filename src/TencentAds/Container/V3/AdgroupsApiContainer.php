@@ -273,4 +273,38 @@ class AdgroupsApiContainer extends ApiContainer
             return $response;
         });
     }
+
+
+    /**
+     * Handle AdgroupsApi adgroupsUpdateDatetime function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function updateDatetime(array $params = [])
+    {
+        return $this->handleMiddleware('updateDatetime', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->adgroupsUpdateDatetime($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle AdgroupsApi adgroupsUpdateDatetimeAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function updateDatetimeAsync(array $params = [])
+    {
+        return $this->handleMiddleware('updateDatetime', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->adgroupsUpdateDatetimeAsync($data);
+            return $response;
+        });
+    }
 }

@@ -62,7 +62,6 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
         'tips' => 'string',
         'description' => 'string',
         'gameGiftId' => 'string',
-        'gameActId' => 'string',
         'gameGiftImageId' => 'string'
     ];
 
@@ -76,7 +75,6 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
         'tips' => null,
         'description' => null,
         'gameGiftId' => null,
-        'gameActId' => null,
         'gameGiftImageId' => null
     ];
 
@@ -111,7 +109,6 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
         'tips' => 'tips',
         'description' => 'description',
         'gameGiftId' => 'game_gift_id',
-        'gameActId' => 'game_act_id',
         'gameGiftImageId' => 'game_gift_image_id'
     ];
 
@@ -125,7 +122,6 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
         'tips' => 'setTips',
         'description' => 'setDescription',
         'gameGiftId' => 'setGameGiftId',
-        'gameActId' => 'setGameActId',
         'gameGiftImageId' => 'setGameGiftImageId'
     ];
 
@@ -139,7 +135,6 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
         'tips' => 'getTips',
         'description' => 'getDescription',
         'gameGiftId' => 'getGameGiftId',
-        'gameActId' => 'getGameActId',
         'gameGiftImageId' => 'getGameGiftImageId'
     ];
 
@@ -207,7 +202,6 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
         $this->container['tips'] = isset($data['tips']) ? $data['tips'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
         $this->container['gameGiftId'] = isset($data['gameGiftId']) ? $data['gameGiftId'] : null;
-        $this->container['gameActId'] = isset($data['gameActId']) ? $data['gameActId'] : null;
         $this->container['gameGiftImageId'] = isset($data['gameGiftImageId']) ? $data['gameGiftImageId'] : null;
     }
 
@@ -327,30 +321,6 @@ class AppGiftPackCode implements ModelInterface, ArrayAccess
     public function setGameGiftId($gameGiftId)
     {
         $this->container['gameGiftId'] = $gameGiftId;
-
-        return $this;
-    }
-
-    /**
-     * Gets gameActId
-     *
-     * @return string|mixed
-     */
-    public function getGameActId()
-    {
-        return $this->container['gameActId'];
-    }
-
-    /**
-     * Sets gameActId
-     *
-     * @param string|mixed $gameActId gameActId
-     *
-     * @return $this
-     */
-    public function setGameActId($gameActId)
-    {
-        $this->container['gameActId'] = $gameActId;
 
         return $this;
     }

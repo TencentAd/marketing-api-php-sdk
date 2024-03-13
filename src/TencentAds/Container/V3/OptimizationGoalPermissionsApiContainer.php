@@ -1,12 +1,12 @@
 <?php
-namespace TencentAds\Container;
+namespace TencentAds\Container\V3;
 
 use GuzzleHttp\Client;
-use TencentAds\Api\OptimizationGoalPermissionsApi;
-use TencentAds\Kernel\ApiContainer;
-use TencentAds\Kernel\HeaderHandler;
+use TencentAds\Api\V3\OptimizationGoalPermissionsApi;
+use TencentAds\Kernel\V3\ApiContainer;
+use TencentAds\Kernel\V3\HeaderHandler;
 use TencentAds\Middleware\Model\MiddlewareRequest;
-use TencentAds\TencentAds;
+use TencentAds\V3\TencentAds;
 
 class OptimizationGoalPermissionsApiContainer extends ApiContainer
 {
@@ -40,11 +40,14 @@ class OptimizationGoalPermissionsApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $siteSet = isset($params['site_set']) ? $params['site_set'] : null;
-            $promotedObjectType = isset($params['promoted_object_type']) ? $params['promoted_object_type'] : null;
+            $marketingGoal = isset($params['marketing_goal']) ? $params['marketing_goal'] : null;
+            $marketingSubGoal = isset($params['marketing_sub_goal']) ? $params['marketing_sub_goal'] : null;
+            $marketingCarrierType = isset($params['marketing_carrier_type']) ? $params['marketing_carrier_type'] : null;
+            $marketingTargetType = isset($params['marketing_target_type']) ? $params['marketing_target_type'] : null;
             $bidMode = isset($params['bid_mode']) ? $params['bid_mode'] : null;
-            $promotedObjectId = isset($params['promoted_object_id']) ? $params['promoted_object_id'] : null;
+            $marketingCarrierDetail = isset($params['marketing_carrier_detail']) ? $params['marketing_carrier_detail'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->optimizationGoalPermissionsGet($accountId, $siteSet, $promotedObjectType, $bidMode, $promotedObjectId, $fields);
+            $response = $this->apiInstance->optimizationGoalPermissionsGet($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode, $marketingCarrierDetail, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -61,11 +64,14 @@ class OptimizationGoalPermissionsApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $siteSet = isset($params['site_set']) ? $params['site_set'] : null;
-            $promotedObjectType = isset($params['promoted_object_type']) ? $params['promoted_object_type'] : null;
+            $marketingGoal = isset($params['marketing_goal']) ? $params['marketing_goal'] : null;
+            $marketingSubGoal = isset($params['marketing_sub_goal']) ? $params['marketing_sub_goal'] : null;
+            $marketingCarrierType = isset($params['marketing_carrier_type']) ? $params['marketing_carrier_type'] : null;
+            $marketingTargetType = isset($params['marketing_target_type']) ? $params['marketing_target_type'] : null;
             $bidMode = isset($params['bid_mode']) ? $params['bid_mode'] : null;
-            $promotedObjectId = isset($params['promoted_object_id']) ? $params['promoted_object_id'] : null;
+            $marketingCarrierDetail = isset($params['marketing_carrier_detail']) ? $params['marketing_carrier_detail'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->optimizationGoalPermissionsGetAsync($accountId, $siteSet, $promotedObjectType, $bidMode, $promotedObjectId, $fields);
+            $response = $this->apiInstance->optimizationGoalPermissionsGetAsync($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode, $marketingCarrierDetail, $fields);
             return $response;
         });
     }

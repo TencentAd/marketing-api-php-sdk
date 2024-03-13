@@ -58,7 +58,8 @@ class H5PageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pageUrl' => 'string'
+        'pageUrl' => 'string',
+        'mpaH5WildcardUrl' => 'string'
     ];
 
     /**
@@ -67,7 +68,8 @@ class H5PageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'pageUrl' => null
+        'pageUrl' => null,
+        'mpaH5WildcardUrl' => null
     ];
 
     /**
@@ -97,7 +99,8 @@ class H5PageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'pageUrl' => 'page_url'
+        'pageUrl' => 'page_url',
+        'mpaH5WildcardUrl' => 'mpa_h5_wildcard_url'
     ];
 
     /**
@@ -106,7 +109,8 @@ class H5PageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'pageUrl' => 'setPageUrl'
+        'pageUrl' => 'setPageUrl',
+        'mpaH5WildcardUrl' => 'setMpaH5WildcardUrl'
     ];
 
     /**
@@ -115,7 +119,8 @@ class H5PageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'pageUrl' => 'getPageUrl'
+        'pageUrl' => 'getPageUrl',
+        'mpaH5WildcardUrl' => 'getMpaH5WildcardUrl'
     ];
 
     /**
@@ -179,6 +184,7 @@ class H5PageSpec implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['pageUrl'] = isset($data['pageUrl']) ? $data['pageUrl'] : null;
+        $this->container['mpaH5WildcardUrl'] = isset($data['mpaH5WildcardUrl']) ? $data['mpaH5WildcardUrl'] : null;
     }
 
     /**
@@ -225,6 +231,30 @@ class H5PageSpec implements ModelInterface, ArrayAccess
     public function setPageUrl($pageUrl)
     {
         $this->container['pageUrl'] = $pageUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets mpaH5WildcardUrl
+     *
+     * @return string|mixed
+     */
+    public function getMpaH5WildcardUrl()
+    {
+        return $this->container['mpaH5WildcardUrl'];
+    }
+
+    /**
+     * Sets mpaH5WildcardUrl
+     *
+     * @param string|mixed $mpaH5WildcardUrl mpaH5WildcardUrl
+     *
+     * @return $this
+     */
+    public function setMpaH5WildcardUrl($mpaH5WildcardUrl)
+    {
+        $this->container['mpaH5WildcardUrl'] = $mpaH5WildcardUrl;
 
         return $this;
     }

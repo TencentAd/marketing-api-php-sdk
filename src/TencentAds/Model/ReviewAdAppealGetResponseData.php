@@ -66,7 +66,8 @@ class ReviewAdAppealGetResponseData implements ModelInterface, ArrayAccess
         'appealResult' => 'string',
         'appealStatus' => '\TencentAds\Model\AppealStatus',
         'description' => 'string',
-        'imageList' => 'string[]'
+        'imageList' => 'string[]',
+        'replyImageUrlList' => 'string[]'
     ];
 
     /**
@@ -84,7 +85,8 @@ class ReviewAdAppealGetResponseData implements ModelInterface, ArrayAccess
         'appealResult' => null,
         'appealStatus' => null,
         'description' => null,
-        'imageList' => null
+        'imageList' => null,
+        'replyImageUrlList' => null
     ];
 
     /**
@@ -123,7 +125,8 @@ class ReviewAdAppealGetResponseData implements ModelInterface, ArrayAccess
         'appealResult' => 'appeal_result',
         'appealStatus' => 'appeal_status',
         'description' => 'description',
-        'imageList' => 'image_list'
+        'imageList' => 'image_list',
+        'replyImageUrlList' => 'reply_image_url_list'
     ];
 
     /**
@@ -141,7 +144,8 @@ class ReviewAdAppealGetResponseData implements ModelInterface, ArrayAccess
         'appealResult' => 'setAppealResult',
         'appealStatus' => 'setAppealStatus',
         'description' => 'setDescription',
-        'imageList' => 'setImageList'
+        'imageList' => 'setImageList',
+        'replyImageUrlList' => 'setReplyImageUrlList'
     ];
 
     /**
@@ -159,7 +163,8 @@ class ReviewAdAppealGetResponseData implements ModelInterface, ArrayAccess
         'appealResult' => 'getAppealResult',
         'appealStatus' => 'getAppealStatus',
         'description' => 'getDescription',
-        'imageList' => 'getImageList'
+        'imageList' => 'getImageList',
+        'replyImageUrlList' => 'getReplyImageUrlList'
     ];
 
     /**
@@ -232,6 +237,7 @@ class ReviewAdAppealGetResponseData implements ModelInterface, ArrayAccess
         $this->container['appealStatus'] = isset($data['appealStatus']) ? $data['appealStatus'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
         $this->container['imageList'] = isset($data['imageList']) ? $data['imageList'] : null;
+        $this->container['replyImageUrlList'] = isset($data['replyImageUrlList']) ? $data['replyImageUrlList'] : null;
     }
 
     /**
@@ -494,6 +500,30 @@ class ReviewAdAppealGetResponseData implements ModelInterface, ArrayAccess
     public function setImageList($imageList)
     {
         $this->container['imageList'] = $imageList;
+
+        return $this;
+    }
+
+    /**
+     * Gets replyImageUrlList
+     *
+     * @return string[]|mixed
+     */
+    public function getReplyImageUrlList()
+    {
+        return $this->container['replyImageUrlList'];
+    }
+
+    /**
+     * Sets replyImageUrlList
+     *
+     * @param string[]|mixed $replyImageUrlList replyImageUrlList
+     *
+     * @return $this
+     */
+    public function setReplyImageUrlList($replyImageUrlList)
+    {
+        $this->container['replyImageUrlList'] = $replyImageUrlList;
 
         return $this;
     }

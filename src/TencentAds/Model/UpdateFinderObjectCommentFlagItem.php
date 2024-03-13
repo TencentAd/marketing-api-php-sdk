@@ -61,7 +61,8 @@ class UpdateFinderObjectCommentFlagItem implements ModelInterface, ArrayAccess
         'adcreativeId' => 'int',
         'opType' => '\TencentAds\Model\SetObjectCommentFlagOpType',
         'accountId' => 'int',
-        'commentId' => 'string'
+        'commentId' => 'string',
+        'commentLevel' => 'int'
     ];
 
     /**
@@ -73,7 +74,8 @@ class UpdateFinderObjectCommentFlagItem implements ModelInterface, ArrayAccess
         'adcreativeId' => 'int64',
         'opType' => null,
         'accountId' => 'int64',
-        'commentId' => null
+        'commentId' => null,
+        'commentLevel' => 'int64'
     ];
 
     /**
@@ -106,7 +108,8 @@ class UpdateFinderObjectCommentFlagItem implements ModelInterface, ArrayAccess
         'adcreativeId' => 'adcreative_id',
         'opType' => 'op_type',
         'accountId' => 'account_id',
-        'commentId' => 'comment_id'
+        'commentId' => 'comment_id',
+        'commentLevel' => 'comment_level'
     ];
 
     /**
@@ -118,7 +121,8 @@ class UpdateFinderObjectCommentFlagItem implements ModelInterface, ArrayAccess
         'adcreativeId' => 'setAdcreativeId',
         'opType' => 'setOpType',
         'accountId' => 'setAccountId',
-        'commentId' => 'setCommentId'
+        'commentId' => 'setCommentId',
+        'commentLevel' => 'setCommentLevel'
     ];
 
     /**
@@ -130,7 +134,8 @@ class UpdateFinderObjectCommentFlagItem implements ModelInterface, ArrayAccess
         'adcreativeId' => 'getAdcreativeId',
         'opType' => 'getOpType',
         'accountId' => 'getAccountId',
-        'commentId' => 'getCommentId'
+        'commentId' => 'getCommentId',
+        'commentLevel' => 'getCommentLevel'
     ];
 
     /**
@@ -197,6 +202,7 @@ class UpdateFinderObjectCommentFlagItem implements ModelInterface, ArrayAccess
         $this->container['opType'] = isset($data['opType']) ? $data['opType'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['commentId'] = isset($data['commentId']) ? $data['commentId'] : null;
+        $this->container['commentLevel'] = isset($data['commentLevel']) ? $data['commentLevel'] : null;
     }
 
     /**
@@ -315,6 +321,30 @@ class UpdateFinderObjectCommentFlagItem implements ModelInterface, ArrayAccess
     public function setCommentId($commentId)
     {
         $this->container['commentId'] = $commentId;
+
+        return $this;
+    }
+
+    /**
+     * Gets commentLevel
+     *
+     * @return int|mixed
+     */
+    public function getCommentLevel()
+    {
+        return $this->container['commentLevel'];
+    }
+
+    /**
+     * Sets commentLevel
+     *
+     * @param int|mixed $commentLevel commentLevel
+     *
+     * @return $this
+     */
+    public function setCommentLevel($commentLevel)
+    {
+        $this->container['commentLevel'] = $commentLevel;
 
         return $this;
     }

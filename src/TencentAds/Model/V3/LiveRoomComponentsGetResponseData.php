@@ -1,6 +1,6 @@
 <?php
 /**
- * SingleFilter
+ * LiveRoomComponentsGetResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * SingleFilter Class Doc Comment
+ * LiveRoomComponentsGetResponseData Class Doc Comment
  *
  * @category Class
- * @description 过滤条件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class SingleFilter implements ModelInterface, ArrayAccess
+class LiveRoomComponentsGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class SingleFilter implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'single_filter';
+    protected static $swaggerModelName = 'LiveRoomComponentsGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,8 @@ class SingleFilter implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'field' => 'string',
-        'operator' => '\TencentAds\Model\V3\FilterOperator',
-        'values' => 'int[]'
+        'list' => '\TencentAds\Model\V3\LiveRoomComponentStruct[]',
+        'pageInfo' => '\TencentAds\Model\V3\Conf'
     ];
 
     /**
@@ -69,9 +67,8 @@ class SingleFilter implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'field' => null,
-        'operator' => null,
-        'values' => 'int64'
+        'list' => null,
+        'pageInfo' => null
     ];
 
     /**
@@ -101,9 +98,8 @@ class SingleFilter implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'field' => 'field',
-        'operator' => 'operator',
-        'values' => 'values'
+        'list' => 'list',
+        'pageInfo' => 'page_info'
     ];
 
     /**
@@ -112,9 +108,8 @@ class SingleFilter implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'field' => 'setField',
-        'operator' => 'setOperator',
-        'values' => 'setValues'
+        'list' => 'setList',
+        'pageInfo' => 'setPageInfo'
     ];
 
     /**
@@ -123,9 +118,8 @@ class SingleFilter implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'field' => 'getField',
-        'operator' => 'getOperator',
-        'values' => 'getValues'
+        'list' => 'getList',
+        'pageInfo' => 'getPageInfo'
     ];
 
     /**
@@ -188,9 +182,8 @@ class SingleFilter implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['field'] = isset($data['field']) ? $data['field'] : null;
-        $this->container['operator'] = isset($data['operator']) ? $data['operator'] : null;
-        $this->container['values'] = isset($data['values']) ? $data['values'] : null;
+        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
+        $this->container['pageInfo'] = isset($data['pageInfo']) ? $data['pageInfo'] : null;
     }
 
     /**
@@ -218,73 +211,49 @@ class SingleFilter implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets field
+     * Gets list
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\V3\LiveRoomComponentStruct[]|mixed
      */
-    public function getField()
+    public function getList()
     {
-        return $this->container['field'];
+        return $this->container['list'];
     }
 
     /**
-     * Sets field
+     * Sets list
      *
-     * @param string|mixed $field field
+     * @param \TencentAds\Model\V3\LiveRoomComponentStruct[]|mixed $list list
      *
      * @return $this
      */
-    public function setField($field)
+    public function setList($list)
     {
-        $this->container['field'] = $field;
+        $this->container['list'] = $list;
 
         return $this;
     }
 
     /**
-     * Gets operator
+     * Gets pageInfo
      *
-     * @return \TencentAds\Model\V3\FilterOperator|mixed
+     * @return \TencentAds\Model\V3\Conf|mixed
      */
-    public function getOperator()
+    public function getPageInfo()
     {
-        return $this->container['operator'];
+        return $this->container['pageInfo'];
     }
 
     /**
-     * Sets operator
+     * Sets pageInfo
      *
-     * @param \TencentAds\Model\V3\FilterOperator|mixed $operator operator
+     * @param \TencentAds\Model\V3\Conf|mixed $pageInfo pageInfo
      *
      * @return $this
      */
-    public function setOperator($operator)
+    public function setPageInfo($pageInfo)
     {
-        $this->container['operator'] = $operator;
-
-        return $this;
-    }
-
-    /**
-     * Gets values
-     *
-     * @return int[]|mixed
-     */
-    public function getValues()
-    {
-        return $this->container['values'];
-    }
-
-    /**
-     * Sets values
-     *
-     * @param int[]|mixed $values values
-     *
-     * @return $this
-     */
-    public function setValues($values)
-    {
-        $this->container['values'] = $values;
+        $this->container['pageInfo'] = $pageInfo;
 
         return $this;
     }

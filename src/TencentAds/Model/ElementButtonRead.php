@@ -71,7 +71,8 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
         'serviceSpec' => '\TencentAds\Model\ServiceSpec',
         'wecomSpec' => '\TencentAds\Model\WecomSpec',
         'useIcon' => 'int',
-        'telSpec' => '\TencentAds\Model\TelSpec'
+        'telSpec' => '\TencentAds\Model\TelSpec',
+        'videoChannelSpec' => '\TencentAds\Model\VideoChannelSpec'
     ];
 
     /**
@@ -93,7 +94,8 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
         'serviceSpec' => null,
         'wecomSpec' => null,
         'useIcon' => 'int64',
-        'telSpec' => null
+        'telSpec' => null,
+        'videoChannelSpec' => null
     ];
 
     /**
@@ -136,7 +138,8 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
         'serviceSpec' => 'service_spec',
         'wecomSpec' => 'wecom_spec',
         'useIcon' => 'use_icon',
-        'telSpec' => 'tel_spec'
+        'telSpec' => 'tel_spec',
+        'videoChannelSpec' => 'video_channel_spec'
     ];
 
     /**
@@ -158,7 +161,8 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
         'serviceSpec' => 'setServiceSpec',
         'wecomSpec' => 'setWecomSpec',
         'useIcon' => 'setUseIcon',
-        'telSpec' => 'setTelSpec'
+        'telSpec' => 'setTelSpec',
+        'videoChannelSpec' => 'setVideoChannelSpec'
     ];
 
     /**
@@ -180,7 +184,8 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
         'serviceSpec' => 'getServiceSpec',
         'wecomSpec' => 'getWecomSpec',
         'useIcon' => 'getUseIcon',
-        'telSpec' => 'getTelSpec'
+        'telSpec' => 'getTelSpec',
+        'videoChannelSpec' => 'getVideoChannelSpec'
     ];
 
     /**
@@ -257,6 +262,7 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
         $this->container['wecomSpec'] = isset($data['wecomSpec']) ? $data['wecomSpec'] : null;
         $this->container['useIcon'] = isset($data['useIcon']) ? $data['useIcon'] : null;
         $this->container['telSpec'] = isset($data['telSpec']) ? $data['telSpec'] : null;
+        $this->container['videoChannelSpec'] = isset($data['videoChannelSpec']) ? $data['videoChannelSpec'] : null;
     }
 
     /**
@@ -615,6 +621,30 @@ class ElementButtonRead implements ModelInterface, ArrayAccess
     public function setTelSpec($telSpec)
     {
         $this->container['telSpec'] = $telSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoChannelSpec
+     *
+     * @return \TencentAds\Model\VideoChannelSpec|mixed
+     */
+    public function getVideoChannelSpec()
+    {
+        return $this->container['videoChannelSpec'];
+    }
+
+    /**
+     * Sets videoChannelSpec
+     *
+     * @param \TencentAds\Model\VideoChannelSpec|mixed $videoChannelSpec videoChannelSpec
+     *
+     * @return $this
+     */
+    public function setVideoChannelSpec($videoChannelSpec)
+    {
+        $this->container['videoChannelSpec'] = $videoChannelSpec;
 
         return $this;
     }

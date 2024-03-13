@@ -85,7 +85,9 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'configuredStatus' => '\TencentAds\Model\V3\ConfiguredStatus',
         'flowOptimizationEnabled' => 'bool',
         'poiList' => 'string[]',
-        'ecomPkamSwitch' => '\TencentAds\Model\V3\EcomPkamSwitch'
+        'ecomPkamSwitch' => '\TencentAds\Model\V3\EcomPkamSwitch',
+        'costConstraintScene' => '\TencentAds\Model\V3\CostConstraintScene',
+        'customCostCap' => 'int'
     ];
 
     /**
@@ -122,7 +124,9 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'configuredStatus' => null,
         'flowOptimizationEnabled' => null,
         'poiList' => null,
-        'ecomPkamSwitch' => null
+        'ecomPkamSwitch' => null,
+        'costConstraintScene' => null,
+        'customCostCap' => 'int64'
     ];
 
     /**
@@ -180,7 +184,9 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'configuredStatus' => 'configured_status',
         'flowOptimizationEnabled' => 'flow_optimization_enabled',
         'poiList' => 'poi_list',
-        'ecomPkamSwitch' => 'ecom_pkam_switch'
+        'ecomPkamSwitch' => 'ecom_pkam_switch',
+        'costConstraintScene' => 'cost_constraint_scene',
+        'customCostCap' => 'custom_cost_cap'
     ];
 
     /**
@@ -217,7 +223,9 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'configuredStatus' => 'setConfiguredStatus',
         'flowOptimizationEnabled' => 'setFlowOptimizationEnabled',
         'poiList' => 'setPoiList',
-        'ecomPkamSwitch' => 'setEcomPkamSwitch'
+        'ecomPkamSwitch' => 'setEcomPkamSwitch',
+        'costConstraintScene' => 'setCostConstraintScene',
+        'customCostCap' => 'setCustomCostCap'
     ];
 
     /**
@@ -254,7 +262,9 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'configuredStatus' => 'getConfiguredStatus',
         'flowOptimizationEnabled' => 'getFlowOptimizationEnabled',
         'poiList' => 'getPoiList',
-        'ecomPkamSwitch' => 'getEcomPkamSwitch'
+        'ecomPkamSwitch' => 'getEcomPkamSwitch',
+        'costConstraintScene' => 'getCostConstraintScene',
+        'customCostCap' => 'getCustomCostCap'
     ];
 
     /**
@@ -346,6 +356,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['flowOptimizationEnabled'] = isset($data['flowOptimizationEnabled']) ? $data['flowOptimizationEnabled'] : null;
         $this->container['poiList'] = isset($data['poiList']) ? $data['poiList'] : null;
         $this->container['ecomPkamSwitch'] = isset($data['ecomPkamSwitch']) ? $data['ecomPkamSwitch'] : null;
+        $this->container['costConstraintScene'] = isset($data['costConstraintScene']) ? $data['costConstraintScene'] : null;
+        $this->container['customCostCap'] = isset($data['customCostCap']) ? $data['customCostCap'] : null;
     }
 
     /**
@@ -1064,6 +1076,54 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setEcomPkamSwitch($ecomPkamSwitch)
     {
         $this->container['ecomPkamSwitch'] = $ecomPkamSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets costConstraintScene
+     *
+     * @return \TencentAds\Model\V3\CostConstraintScene|mixed
+     */
+    public function getCostConstraintScene()
+    {
+        return $this->container['costConstraintScene'];
+    }
+
+    /**
+     * Sets costConstraintScene
+     *
+     * @param \TencentAds\Model\V3\CostConstraintScene|mixed $costConstraintScene costConstraintScene
+     *
+     * @return $this
+     */
+    public function setCostConstraintScene($costConstraintScene)
+    {
+        $this->container['costConstraintScene'] = $costConstraintScene;
+
+        return $this;
+    }
+
+    /**
+     * Gets customCostCap
+     *
+     * @return int|mixed
+     */
+    public function getCustomCostCap()
+    {
+        return $this->container['customCostCap'];
+    }
+
+    /**
+     * Sets customCostCap
+     *
+     * @param int|mixed $customCostCap customCostCap
+     *
+     * @return $this
+     */
+    public function setCustomCostCap($customCostCap)
+    {
+        $this->container['customCostCap'] = $customCostCap;
 
         return $this;
     }

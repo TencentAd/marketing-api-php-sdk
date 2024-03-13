@@ -100,7 +100,10 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'explorationStrategy' => '\TencentAds\Model\V3\SiteSetExplorationStrategy',
         'prioritySiteSet' => 'string[]',
         'ecomPkamSwitch' => '\TencentAds\Model\V3\EcomPkamSwitch',
-        'forwardLinkAssist' => '\TencentAds\Model\V3\OptimizationGoal'
+        'forwardLinkAssist' => '\TencentAds\Model\V3\OptimizationGoal',
+        'mpaSpec' => '\TencentAds\Model\V3\MpaSpec',
+        'costConstraintScene' => '\TencentAds\Model\V3\CostConstraintScene',
+        'customCostCap' => 'int'
     ];
 
     /**
@@ -152,7 +155,10 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'explorationStrategy' => null,
         'prioritySiteSet' => null,
         'ecomPkamSwitch' => null,
-        'forwardLinkAssist' => null
+        'forwardLinkAssist' => null,
+        'mpaSpec' => null,
+        'costConstraintScene' => null,
+        'customCostCap' => 'int64'
     ];
 
     /**
@@ -225,7 +231,10 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'explorationStrategy' => 'exploration_strategy',
         'prioritySiteSet' => 'priority_site_set',
         'ecomPkamSwitch' => 'ecom_pkam_switch',
-        'forwardLinkAssist' => 'forward_link_assist'
+        'forwardLinkAssist' => 'forward_link_assist',
+        'mpaSpec' => 'mpa_spec',
+        'costConstraintScene' => 'cost_constraint_scene',
+        'customCostCap' => 'custom_cost_cap'
     ];
 
     /**
@@ -277,7 +286,10 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'explorationStrategy' => 'setExplorationStrategy',
         'prioritySiteSet' => 'setPrioritySiteSet',
         'ecomPkamSwitch' => 'setEcomPkamSwitch',
-        'forwardLinkAssist' => 'setForwardLinkAssist'
+        'forwardLinkAssist' => 'setForwardLinkAssist',
+        'mpaSpec' => 'setMpaSpec',
+        'costConstraintScene' => 'setCostConstraintScene',
+        'customCostCap' => 'setCustomCostCap'
     ];
 
     /**
@@ -329,7 +341,10 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'explorationStrategy' => 'getExplorationStrategy',
         'prioritySiteSet' => 'getPrioritySiteSet',
         'ecomPkamSwitch' => 'getEcomPkamSwitch',
-        'forwardLinkAssist' => 'getForwardLinkAssist'
+        'forwardLinkAssist' => 'getForwardLinkAssist',
+        'mpaSpec' => 'getMpaSpec',
+        'costConstraintScene' => 'getCostConstraintScene',
+        'customCostCap' => 'getCustomCostCap'
     ];
 
     /**
@@ -436,6 +451,9 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['prioritySiteSet'] = isset($data['prioritySiteSet']) ? $data['prioritySiteSet'] : null;
         $this->container['ecomPkamSwitch'] = isset($data['ecomPkamSwitch']) ? $data['ecomPkamSwitch'] : null;
         $this->container['forwardLinkAssist'] = isset($data['forwardLinkAssist']) ? $data['forwardLinkAssist'] : null;
+        $this->container['mpaSpec'] = isset($data['mpaSpec']) ? $data['mpaSpec'] : null;
+        $this->container['costConstraintScene'] = isset($data['costConstraintScene']) ? $data['costConstraintScene'] : null;
+        $this->container['customCostCap'] = isset($data['customCostCap']) ? $data['customCostCap'] : null;
     }
 
     /**
@@ -1514,6 +1532,78 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setForwardLinkAssist($forwardLinkAssist)
     {
         $this->container['forwardLinkAssist'] = $forwardLinkAssist;
+
+        return $this;
+    }
+
+    /**
+     * Gets mpaSpec
+     *
+     * @return \TencentAds\Model\V3\MpaSpec|mixed
+     */
+    public function getMpaSpec()
+    {
+        return $this->container['mpaSpec'];
+    }
+
+    /**
+     * Sets mpaSpec
+     *
+     * @param \TencentAds\Model\V3\MpaSpec|mixed $mpaSpec mpaSpec
+     *
+     * @return $this
+     */
+    public function setMpaSpec($mpaSpec)
+    {
+        $this->container['mpaSpec'] = $mpaSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets costConstraintScene
+     *
+     * @return \TencentAds\Model\V3\CostConstraintScene|mixed
+     */
+    public function getCostConstraintScene()
+    {
+        return $this->container['costConstraintScene'];
+    }
+
+    /**
+     * Sets costConstraintScene
+     *
+     * @param \TencentAds\Model\V3\CostConstraintScene|mixed $costConstraintScene costConstraintScene
+     *
+     * @return $this
+     */
+    public function setCostConstraintScene($costConstraintScene)
+    {
+        $this->container['costConstraintScene'] = $costConstraintScene;
+
+        return $this;
+    }
+
+    /**
+     * Gets customCostCap
+     *
+     * @return int|mixed
+     */
+    public function getCustomCostCap()
+    {
+        return $this->container['customCostCap'];
+    }
+
+    /**
+     * Sets customCostCap
+     *
+     * @param int|mixed $customCostCap customCostCap
+     *
+     * @return $this
+     */
+    public function setCustomCostCap($customCostCap)
+    {
+        $this->container['customCostCap'] = $customCostCap;
 
         return $this;
     }

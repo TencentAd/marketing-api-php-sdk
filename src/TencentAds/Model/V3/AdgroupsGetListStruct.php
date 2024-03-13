@@ -121,7 +121,10 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'conversionName' => 'string',
         'autoAcquisitionStatus' => '\TencentAds\Model\V3\AutoAcquisitionStatus',
         'autoAcquisitionStatusText' => 'string',
-        'autoAcquisitionStatusMessage' => 'string'
+        'autoAcquisitionStatusMessage' => 'string',
+        'costConstraintScene' => '\TencentAds\Model\V3\CostConstraintScene',
+        'customCostCap' => 'int',
+        'mpaSpec' => '\TencentAds\Model\V3\MpaSpec'
     ];
 
     /**
@@ -193,7 +196,10 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'conversionName' => null,
         'autoAcquisitionStatus' => null,
         'autoAcquisitionStatusText' => null,
-        'autoAcquisitionStatusMessage' => null
+        'autoAcquisitionStatusMessage' => null,
+        'costConstraintScene' => null,
+        'customCostCap' => 'int64',
+        'mpaSpec' => null
     ];
 
     /**
@@ -286,7 +292,10 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'conversionName' => 'conversion_name',
         'autoAcquisitionStatus' => 'auto_acquisition_status',
         'autoAcquisitionStatusText' => 'auto_acquisition_status_text',
-        'autoAcquisitionStatusMessage' => 'auto_acquisition_status_message'
+        'autoAcquisitionStatusMessage' => 'auto_acquisition_status_message',
+        'costConstraintScene' => 'cost_constraint_scene',
+        'customCostCap' => 'custom_cost_cap',
+        'mpaSpec' => 'mpa_spec'
     ];
 
     /**
@@ -358,7 +367,10 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'conversionName' => 'setConversionName',
         'autoAcquisitionStatus' => 'setAutoAcquisitionStatus',
         'autoAcquisitionStatusText' => 'setAutoAcquisitionStatusText',
-        'autoAcquisitionStatusMessage' => 'setAutoAcquisitionStatusMessage'
+        'autoAcquisitionStatusMessage' => 'setAutoAcquisitionStatusMessage',
+        'costConstraintScene' => 'setCostConstraintScene',
+        'customCostCap' => 'setCustomCostCap',
+        'mpaSpec' => 'setMpaSpec'
     ];
 
     /**
@@ -430,7 +442,10 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'conversionName' => 'getConversionName',
         'autoAcquisitionStatus' => 'getAutoAcquisitionStatus',
         'autoAcquisitionStatusText' => 'getAutoAcquisitionStatusText',
-        'autoAcquisitionStatusMessage' => 'getAutoAcquisitionStatusMessage'
+        'autoAcquisitionStatusMessage' => 'getAutoAcquisitionStatusMessage',
+        'costConstraintScene' => 'getCostConstraintScene',
+        'customCostCap' => 'getCustomCostCap',
+        'mpaSpec' => 'getMpaSpec'
     ];
 
     /**
@@ -557,6 +572,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['autoAcquisitionStatus'] = isset($data['autoAcquisitionStatus']) ? $data['autoAcquisitionStatus'] : null;
         $this->container['autoAcquisitionStatusText'] = isset($data['autoAcquisitionStatusText']) ? $data['autoAcquisitionStatusText'] : null;
         $this->container['autoAcquisitionStatusMessage'] = isset($data['autoAcquisitionStatusMessage']) ? $data['autoAcquisitionStatusMessage'] : null;
+        $this->container['costConstraintScene'] = isset($data['costConstraintScene']) ? $data['costConstraintScene'] : null;
+        $this->container['customCostCap'] = isset($data['customCostCap']) ? $data['customCostCap'] : null;
+        $this->container['mpaSpec'] = isset($data['mpaSpec']) ? $data['mpaSpec'] : null;
     }
 
     /**
@@ -2115,6 +2133,78 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setAutoAcquisitionStatusMessage($autoAcquisitionStatusMessage)
     {
         $this->container['autoAcquisitionStatusMessage'] = $autoAcquisitionStatusMessage;
+
+        return $this;
+    }
+
+    /**
+     * Gets costConstraintScene
+     *
+     * @return \TencentAds\Model\V3\CostConstraintScene|mixed
+     */
+    public function getCostConstraintScene()
+    {
+        return $this->container['costConstraintScene'];
+    }
+
+    /**
+     * Sets costConstraintScene
+     *
+     * @param \TencentAds\Model\V3\CostConstraintScene|mixed $costConstraintScene costConstraintScene
+     *
+     * @return $this
+     */
+    public function setCostConstraintScene($costConstraintScene)
+    {
+        $this->container['costConstraintScene'] = $costConstraintScene;
+
+        return $this;
+    }
+
+    /**
+     * Gets customCostCap
+     *
+     * @return int|mixed
+     */
+    public function getCustomCostCap()
+    {
+        return $this->container['customCostCap'];
+    }
+
+    /**
+     * Sets customCostCap
+     *
+     * @param int|mixed $customCostCap customCostCap
+     *
+     * @return $this
+     */
+    public function setCustomCostCap($customCostCap)
+    {
+        $this->container['customCostCap'] = $customCostCap;
+
+        return $this;
+    }
+
+    /**
+     * Gets mpaSpec
+     *
+     * @return \TencentAds\Model\V3\MpaSpec|mixed
+     */
+    public function getMpaSpec()
+    {
+        return $this->container['mpaSpec'];
+    }
+
+    /**
+     * Sets mpaSpec
+     *
+     * @param \TencentAds\Model\V3\MpaSpec|mixed $mpaSpec mpaSpec
+     *
+     * @return $this
+     */
+    public function setMpaSpec($mpaSpec)
+    {
+        $this->container['mpaSpec'] = $mpaSpec;
 
         return $this;
     }

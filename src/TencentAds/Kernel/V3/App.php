@@ -3,6 +3,8 @@ namespace TencentAds\Kernel\V3;
 
 use GuzzleHttp\Client;
 use TencentAds\Container\V3\AdDiagnosisApiContainer;
+use TencentAds\Container\V3\AdParamApiContainer;
+use TencentAds\Container\V3\AdUnionReportsApiContainer;
 use TencentAds\Container\V3\AdcreativePreviewsApiContainer;
 use TencentAds\Container\V3\AdcreativePreviewsQrcodeApiContainer;
 use TencentAds\Container\V3\AdgroupNegativewordsApiContainer;
@@ -13,6 +15,7 @@ use TencentAds\Container\V3\AsyncReportFilesApiContainer;
 use TencentAds\Container\V3\AsyncReportsApiContainer;
 use TencentAds\Container\V3\AudienceGrantRelationsApiContainer;
 use TencentAds\Container\V3\BatchRequestsApiContainer;
+use TencentAds\Container\V3\BidSimulationApiContainer;
 use TencentAds\Container\V3\BidwordApiContainer;
 use TencentAds\Container\V3\BidwordFlowApiContainer;
 use TencentAds\Container\V3\BrandApiContainer;
@@ -20,12 +23,14 @@ use TencentAds\Container\V3\BusinessPointApiContainer;
 use TencentAds\Container\V3\ConversionsApiContainer;
 use TencentAds\Container\V3\CreativeTemplateApiContainer;
 use TencentAds\Container\V3\CreativeTemplateListApiContainer;
+use TencentAds\Container\V3\CreativetoolsTextApiContainer;
 use TencentAds\Container\V3\CustomAudienceFilesApiContainer;
 use TencentAds\Container\V3\CustomAudiencesApiContainer;
 use TencentAds\Container\V3\DailyBalanceReportApiContainer;
 use TencentAds\Container\V3\DailyReportsApiContainer;
 use TencentAds\Container\V3\DynamicCreativeReviewResultsApiContainer;
 use TencentAds\Container\V3\DynamicCreativesApiContainer;
+use TencentAds\Container\V3\EcommerceOrderApiContainer;
 use TencentAds\Container\V3\EstimationApiContainer;
 use TencentAds\Container\V3\ExtendPackageApiContainer;
 use TencentAds\Container\V3\FundStatementsDetailedApiContainer;
@@ -36,6 +41,8 @@ use TencentAds\Container\V3\GameFeatureTagsApiContainer;
 use TencentAds\Container\V3\HourlyReportsApiContainer;
 use TencentAds\Container\V3\ImagesApiContainer;
 use TencentAds\Container\V3\KeywordRecommendApiContainer;
+use TencentAds\Container\V3\LiveRoomComponentStatusApiContainer;
+use TencentAds\Container\V3\LiveRoomComponentsApiContainer;
 use TencentAds\Container\V3\LocalStoresAddressParsingResultApiContainer;
 use TencentAds\Container\V3\LocalStoresApiContainer;
 use TencentAds\Container\V3\LocalStoresCategoriesApiContainer;
@@ -49,6 +56,7 @@ use TencentAds\Container\V3\MergeFundTypeFundStatementsDetailedApiContainer;
 use TencentAds\Container\V3\MergeFundTypeFundsApiContainer;
 use TencentAds\Container\V3\MergeFundTypeSubcustomerTransferApiContainer;
 use TencentAds\Container\V3\OauthApiContainer;
+use TencentAds\Container\V3\OptimizationGoalPermissionsApiContainer;
 use TencentAds\Container\V3\PagesApiContainer;
 use TencentAds\Container\V3\ProfilesApiContainer;
 use TencentAds\Container\V3\ProgrammedApiContainer;
@@ -69,6 +77,12 @@ class App
 
     /** @var AdDiagnosisApiContainer */
     public $adDiagnosisApiContainer;
+
+    /** @var AdParamApiContainer */
+    public $adParamApiContainer;
+
+    /** @var AdUnionReportsApiContainer */
+    public $adUnionReportsApiContainer;
 
     /** @var AdcreativePreviewsApiContainer */
     public $adcreativePreviewsApiContainer;
@@ -100,6 +114,9 @@ class App
     /** @var BatchRequestsApiContainer */
     public $batchRequestsApiContainer;
 
+    /** @var BidSimulationApiContainer */
+    public $bidSimulationApiContainer;
+
     /** @var BidwordApiContainer */
     public $bidwordApiContainer;
 
@@ -121,6 +138,9 @@ class App
     /** @var CreativeTemplateListApiContainer */
     public $creativeTemplateListApiContainer;
 
+    /** @var CreativetoolsTextApiContainer */
+    public $creativetoolsTextApiContainer;
+
     /** @var CustomAudienceFilesApiContainer */
     public $customAudienceFilesApiContainer;
 
@@ -138,6 +158,9 @@ class App
 
     /** @var DynamicCreativesApiContainer */
     public $dynamicCreativesApiContainer;
+
+    /** @var EcommerceOrderApiContainer */
+    public $ecommerceOrderApiContainer;
 
     /** @var EstimationApiContainer */
     public $estimationApiContainer;
@@ -168,6 +191,12 @@ class App
 
     /** @var KeywordRecommendApiContainer */
     public $keywordRecommendApiContainer;
+
+    /** @var LiveRoomComponentStatusApiContainer */
+    public $liveRoomComponentStatusApiContainer;
+
+    /** @var LiveRoomComponentsApiContainer */
+    public $liveRoomComponentsApiContainer;
 
     /** @var LocalStoresAddressParsingResultApiContainer */
     public $localStoresAddressParsingResultApiContainer;
@@ -207,6 +236,9 @@ class App
 
     /** @var OauthApiContainer */
     public $oauthApiContainer;
+
+    /** @var OptimizationGoalPermissionsApiContainer */
+    public $optimizationGoalPermissionsApiContainer;
 
     /** @var PagesApiContainer */
     public $pagesApiContainer;
@@ -268,6 +300,34 @@ class App
             $this->adDiagnosisApiContainer = $container;
         }
         return $this->adDiagnosisApiContainer;
+    }
+
+
+    /**
+     * @return AdParamApiContainer
+     */
+    public function adParam()
+    {
+        if (empty($this->adParamApiContainer)) {
+            $container = new AdParamApiContainer();
+            $container->init($this, $this->getClient());
+            $this->adParamApiContainer = $container;
+        }
+        return $this->adParamApiContainer;
+    }
+
+
+    /**
+     * @return AdUnionReportsApiContainer
+     */
+    public function adUnionReports()
+    {
+        if (empty($this->adUnionReportsApiContainer)) {
+            $container = new AdUnionReportsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->adUnionReportsApiContainer = $container;
+        }
+        return $this->adUnionReportsApiContainer;
     }
 
 
@@ -412,6 +472,20 @@ class App
 
 
     /**
+     * @return BidSimulationApiContainer
+     */
+    public function bidSimulation()
+    {
+        if (empty($this->bidSimulationApiContainer)) {
+            $container = new BidSimulationApiContainer();
+            $container->init($this, $this->getClient());
+            $this->bidSimulationApiContainer = $container;
+        }
+        return $this->bidSimulationApiContainer;
+    }
+
+
+    /**
      * @return BidwordApiContainer
      */
     public function bidword()
@@ -510,6 +584,20 @@ class App
 
 
     /**
+     * @return CreativetoolsTextApiContainer
+     */
+    public function creativetoolsText()
+    {
+        if (empty($this->creativetoolsTextApiContainer)) {
+            $container = new CreativetoolsTextApiContainer();
+            $container->init($this, $this->getClient());
+            $this->creativetoolsTextApiContainer = $container;
+        }
+        return $this->creativetoolsTextApiContainer;
+    }
+
+
+    /**
      * @return CustomAudienceFilesApiContainer
      */
     public function customAudienceFiles()
@@ -590,6 +678,20 @@ class App
             $this->dynamicCreativesApiContainer = $container;
         }
         return $this->dynamicCreativesApiContainer;
+    }
+
+
+    /**
+     * @return EcommerceOrderApiContainer
+     */
+    public function ecommerceOrder()
+    {
+        if (empty($this->ecommerceOrderApiContainer)) {
+            $container = new EcommerceOrderApiContainer();
+            $container->init($this, $this->getClient());
+            $this->ecommerceOrderApiContainer = $container;
+        }
+        return $this->ecommerceOrderApiContainer;
     }
 
 
@@ -730,6 +832,34 @@ class App
             $this->keywordRecommendApiContainer = $container;
         }
         return $this->keywordRecommendApiContainer;
+    }
+
+
+    /**
+     * @return LiveRoomComponentStatusApiContainer
+     */
+    public function liveRoomComponentStatus()
+    {
+        if (empty($this->liveRoomComponentStatusApiContainer)) {
+            $container = new LiveRoomComponentStatusApiContainer();
+            $container->init($this, $this->getClient());
+            $this->liveRoomComponentStatusApiContainer = $container;
+        }
+        return $this->liveRoomComponentStatusApiContainer;
+    }
+
+
+    /**
+     * @return LiveRoomComponentsApiContainer
+     */
+    public function liveRoomComponents()
+    {
+        if (empty($this->liveRoomComponentsApiContainer)) {
+            $container = new LiveRoomComponentsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->liveRoomComponentsApiContainer = $container;
+        }
+        return $this->liveRoomComponentsApiContainer;
     }
 
 
@@ -912,6 +1042,20 @@ class App
             $this->oauthApiContainer = $container;
         }
         return $this->oauthApiContainer;
+    }
+
+
+    /**
+     * @return OptimizationGoalPermissionsApiContainer
+     */
+    public function optimizationGoalPermissions()
+    {
+        if (empty($this->optimizationGoalPermissionsApiContainer)) {
+            $container = new OptimizationGoalPermissionsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->optimizationGoalPermissionsApiContainer = $container;
+        }
+        return $this->optimizationGoalPermissionsApiContainer;
     }
 
 

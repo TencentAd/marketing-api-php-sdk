@@ -92,6 +92,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoAcquisitionBudget' => 'int',
         'autoDerivedCreativeEnabled' => 'bool',
         'autoDerivedCreativeStatus' => '\TencentAds\Model\AutoDerivedCreativeStatus',
+        'liveVideoMode' => '\TencentAds\Model\LiveVideoMode',
+        'liveVideoSubMode' => '\TencentAds\Model\LiveVideoSubMode',
         'userActionSets' => '\TencentAds\Model\UserActionSetStruct[]',
         'dynamicAdSpec' => '\TencentAds\Model\DynamicAdSpec',
         'customAdgroupTag' => 'string[]',
@@ -143,6 +145,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoAcquisitionBudget' => 'int64',
         'autoDerivedCreativeEnabled' => null,
         'autoDerivedCreativeStatus' => null,
+        'liveVideoMode' => null,
+        'liveVideoSubMode' => null,
         'userActionSets' => null,
         'dynamicAdSpec' => null,
         'customAdgroupTag' => null,
@@ -215,6 +219,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoAcquisitionBudget' => 'auto_acquisition_budget',
         'autoDerivedCreativeEnabled' => 'auto_derived_creative_enabled',
         'autoDerivedCreativeStatus' => 'auto_derived_creative_status',
+        'liveVideoMode' => 'live_video_mode',
+        'liveVideoSubMode' => 'live_video_sub_mode',
         'userActionSets' => 'user_action_sets',
         'dynamicAdSpec' => 'dynamic_ad_spec',
         'customAdgroupTag' => 'custom_adgroup_tag',
@@ -266,6 +272,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoAcquisitionBudget' => 'setAutoAcquisitionBudget',
         'autoDerivedCreativeEnabled' => 'setAutoDerivedCreativeEnabled',
         'autoDerivedCreativeStatus' => 'setAutoDerivedCreativeStatus',
+        'liveVideoMode' => 'setLiveVideoMode',
+        'liveVideoSubMode' => 'setLiveVideoSubMode',
         'userActionSets' => 'setUserActionSets',
         'dynamicAdSpec' => 'setDynamicAdSpec',
         'customAdgroupTag' => 'setCustomAdgroupTag',
@@ -317,6 +325,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoAcquisitionBudget' => 'getAutoAcquisitionBudget',
         'autoDerivedCreativeEnabled' => 'getAutoDerivedCreativeEnabled',
         'autoDerivedCreativeStatus' => 'getAutoDerivedCreativeStatus',
+        'liveVideoMode' => 'getLiveVideoMode',
+        'liveVideoSubMode' => 'getLiveVideoSubMode',
         'userActionSets' => 'getUserActionSets',
         'dynamicAdSpec' => 'getDynamicAdSpec',
         'customAdgroupTag' => 'getCustomAdgroupTag',
@@ -422,6 +432,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['autoAcquisitionBudget'] = isset($data['autoAcquisitionBudget']) ? $data['autoAcquisitionBudget'] : null;
         $this->container['autoDerivedCreativeEnabled'] = isset($data['autoDerivedCreativeEnabled']) ? $data['autoDerivedCreativeEnabled'] : null;
         $this->container['autoDerivedCreativeStatus'] = isset($data['autoDerivedCreativeStatus']) ? $data['autoDerivedCreativeStatus'] : null;
+        $this->container['liveVideoMode'] = isset($data['liveVideoMode']) ? $data['liveVideoMode'] : null;
+        $this->container['liveVideoSubMode'] = isset($data['liveVideoSubMode']) ? $data['liveVideoSubMode'] : null;
         $this->container['userActionSets'] = isset($data['userActionSets']) ? $data['userActionSets'] : null;
         $this->container['dynamicAdSpec'] = isset($data['dynamicAdSpec']) ? $data['dynamicAdSpec'] : null;
         $this->container['customAdgroupTag'] = isset($data['customAdgroupTag']) ? $data['customAdgroupTag'] : null;
@@ -1292,6 +1304,54 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setAutoDerivedCreativeStatus($autoDerivedCreativeStatus)
     {
         $this->container['autoDerivedCreativeStatus'] = $autoDerivedCreativeStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveVideoMode
+     *
+     * @return \TencentAds\Model\LiveVideoMode|mixed
+     */
+    public function getLiveVideoMode()
+    {
+        return $this->container['liveVideoMode'];
+    }
+
+    /**
+     * Sets liveVideoMode
+     *
+     * @param \TencentAds\Model\LiveVideoMode|mixed $liveVideoMode liveVideoMode
+     *
+     * @return $this
+     */
+    public function setLiveVideoMode($liveVideoMode)
+    {
+        $this->container['liveVideoMode'] = $liveVideoMode;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveVideoSubMode
+     *
+     * @return \TencentAds\Model\LiveVideoSubMode|mixed
+     */
+    public function getLiveVideoSubMode()
+    {
+        return $this->container['liveVideoSubMode'];
+    }
+
+    /**
+     * Sets liveVideoSubMode
+     *
+     * @param \TencentAds\Model\LiveVideoSubMode|mixed $liveVideoSubMode liveVideoSubMode
+     *
+     * @return $this
+     */
+    public function setLiveVideoSubMode($liveVideoSubMode)
+    {
+        $this->container['liveVideoSubMode'] = $liveVideoSubMode;
 
         return $this;
     }

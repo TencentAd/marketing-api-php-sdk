@@ -58,7 +58,8 @@ class VideoStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'videoId' => 'string'
+        'videoId' => 'string',
+        'coverId' => 'string'
     ];
 
     /**
@@ -67,7 +68,8 @@ class VideoStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'videoId' => null
+        'videoId' => null,
+        'coverId' => null
     ];
 
     /**
@@ -97,7 +99,8 @@ class VideoStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'videoId' => 'video_id'
+        'videoId' => 'video_id',
+        'coverId' => 'cover_id'
     ];
 
     /**
@@ -106,7 +109,8 @@ class VideoStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'videoId' => 'setVideoId'
+        'videoId' => 'setVideoId',
+        'coverId' => 'setCoverId'
     ];
 
     /**
@@ -115,7 +119,8 @@ class VideoStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'videoId' => 'getVideoId'
+        'videoId' => 'getVideoId',
+        'coverId' => 'getCoverId'
     ];
 
     /**
@@ -179,6 +184,7 @@ class VideoStruct implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['videoId'] = isset($data['videoId']) ? $data['videoId'] : null;
+        $this->container['coverId'] = isset($data['coverId']) ? $data['coverId'] : null;
     }
 
     /**
@@ -225,6 +231,30 @@ class VideoStruct implements ModelInterface, ArrayAccess
     public function setVideoId($videoId)
     {
         $this->container['videoId'] = $videoId;
+
+        return $this;
+    }
+
+    /**
+     * Gets coverId
+     *
+     * @return string|mixed
+     */
+    public function getCoverId()
+    {
+        return $this->container['coverId'];
+    }
+
+    /**
+     * Sets coverId
+     *
+     * @param string|mixed $coverId coverId
+     *
+     * @return $this
+     */
+    public function setCoverId($coverId)
+    {
+        $this->container['coverId'] = $coverId;
 
         return $this;
     }

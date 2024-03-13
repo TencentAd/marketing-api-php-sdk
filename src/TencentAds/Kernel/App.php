@@ -110,7 +110,6 @@ use TencentAds\Container\MergeFundTypeFundsApiContainer;
 use TencentAds\Container\MergeFundTypeSubcustomerTransferApiContainer;
 use TencentAds\Container\OauthApiContainer;
 use TencentAds\Container\ObjectCommentFlagApiContainer;
-use TencentAds\Container\OptimizationGoalPermissionsApiContainer;
 use TencentAds\Container\OuterCluesApiContainer;
 use TencentAds\Container\OuterCluesContactApiContainer;
 use TencentAds\Container\PagesApiContainer;
@@ -514,9 +513,6 @@ class App
 
     /** @var ObjectCommentFlagApiContainer */
     public $objectCommentFlagApiContainer;
-
-    /** @var OptimizationGoalPermissionsApiContainer */
-    public $optimizationGoalPermissionsApiContainer;
 
     /** @var OuterCluesApiContainer */
     public $outerCluesApiContainer;
@@ -2262,20 +2258,6 @@ class App
             $this->objectCommentFlagApiContainer = $container;
         }
         return $this->objectCommentFlagApiContainer;
-    }
-
-
-    /**
-     * @return OptimizationGoalPermissionsApiContainer
-     */
-    public function optimizationGoalPermissions()
-    {
-        if (empty($this->optimizationGoalPermissionsApiContainer)) {
-            $container = new OptimizationGoalPermissionsApiContainer();
-            $container->init($this, $this->getClient());
-            $this->optimizationGoalPermissionsApiContainer = $container;
-        }
-        return $this->optimizationGoalPermissionsApiContainer;
     }
 
 

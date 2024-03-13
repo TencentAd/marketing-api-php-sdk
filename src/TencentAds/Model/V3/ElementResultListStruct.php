@@ -58,6 +58,8 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'imageId' => 'string',
+        'videoId' => 'string',
         'elementName' => 'string',
         'elementValue' => 'string',
         'elementType' => '\TencentAds\Model\V3\ReviewElementType',
@@ -70,6 +72,8 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
+        'imageId' => null,
+        'videoId' => null,
         'elementName' => null,
         'elementValue' => null,
         'elementType' => null,
@@ -103,6 +107,8 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'imageId' => 'image_id',
+        'videoId' => 'video_id',
         'elementName' => 'element_name',
         'elementValue' => 'element_value',
         'elementType' => 'element_type',
@@ -115,6 +121,8 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'imageId' => 'setImageId',
+        'videoId' => 'setVideoId',
         'elementName' => 'setElementName',
         'elementValue' => 'setElementValue',
         'elementType' => 'setElementType',
@@ -127,6 +135,8 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'imageId' => 'getImageId',
+        'videoId' => 'getVideoId',
         'elementName' => 'getElementName',
         'elementValue' => 'getElementValue',
         'elementType' => 'getElementType',
@@ -193,6 +203,8 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['imageId'] = isset($data['imageId']) ? $data['imageId'] : null;
+        $this->container['videoId'] = isset($data['videoId']) ? $data['videoId'] : null;
         $this->container['elementName'] = isset($data['elementName']) ? $data['elementName'] : null;
         $this->container['elementValue'] = isset($data['elementValue']) ? $data['elementValue'] : null;
         $this->container['elementType'] = isset($data['elementType']) ? $data['elementType'] : null;
@@ -222,6 +234,54 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets imageId
+     *
+     * @return string|mixed
+     */
+    public function getImageId()
+    {
+        return $this->container['imageId'];
+    }
+
+    /**
+     * Sets imageId
+     *
+     * @param string|mixed $imageId imageId
+     *
+     * @return $this
+     */
+    public function setImageId($imageId)
+    {
+        $this->container['imageId'] = $imageId;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoId
+     *
+     * @return string|mixed
+     */
+    public function getVideoId()
+    {
+        return $this->container['videoId'];
+    }
+
+    /**
+     * Sets videoId
+     *
+     * @param string|mixed $videoId videoId
+     *
+     * @return $this
+     */
+    public function setVideoId($videoId)
+    {
+        $this->container['videoId'] = $videoId;
+
+        return $this;
+    }
 
     /**
      * Gets elementName

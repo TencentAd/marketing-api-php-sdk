@@ -75,7 +75,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
         'dynamicCreativeStatusInfo' => '\TencentAds\Model\V3\DcInfoStruct[]',
-        'systemStatusExplanation' => 'string'
+        'systemStatusExplanation' => 'string',
+        'marketingAssetVerification' => '\TencentAds\Model\V3\MarketingAssetVerification'
     ];
 
     /**
@@ -101,7 +102,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'int64',
         'lastModifiedTime' => 'int64',
         'dynamicCreativeStatusInfo' => null,
-        'systemStatusExplanation' => null
+        'systemStatusExplanation' => null,
+        'marketingAssetVerification' => null
     ];
 
     /**
@@ -148,7 +150,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'created_time',
         'lastModifiedTime' => 'last_modified_time',
         'dynamicCreativeStatusInfo' => 'dynamic_creative_status_info',
-        'systemStatusExplanation' => 'system_status_explanation'
+        'systemStatusExplanation' => 'system_status_explanation',
+        'marketingAssetVerification' => 'marketing_asset_verification'
     ];
 
     /**
@@ -174,7 +177,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'setCreatedTime',
         'lastModifiedTime' => 'setLastModifiedTime',
         'dynamicCreativeStatusInfo' => 'setDynamicCreativeStatusInfo',
-        'systemStatusExplanation' => 'setSystemStatusExplanation'
+        'systemStatusExplanation' => 'setSystemStatusExplanation',
+        'marketingAssetVerification' => 'setMarketingAssetVerification'
     ];
 
     /**
@@ -200,7 +204,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'getCreatedTime',
         'lastModifiedTime' => 'getLastModifiedTime',
         'dynamicCreativeStatusInfo' => 'getDynamicCreativeStatusInfo',
-        'systemStatusExplanation' => 'getSystemStatusExplanation'
+        'systemStatusExplanation' => 'getSystemStatusExplanation',
+        'marketingAssetVerification' => 'getMarketingAssetVerification'
     ];
 
     /**
@@ -281,6 +286,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
         $this->container['dynamicCreativeStatusInfo'] = isset($data['dynamicCreativeStatusInfo']) ? $data['dynamicCreativeStatusInfo'] : null;
         $this->container['systemStatusExplanation'] = isset($data['systemStatusExplanation']) ? $data['systemStatusExplanation'] : null;
+        $this->container['marketingAssetVerification'] = isset($data['marketingAssetVerification']) ? $data['marketingAssetVerification'] : null;
     }
 
     /**
@@ -735,6 +741,30 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setSystemStatusExplanation($systemStatusExplanation)
     {
         $this->container['systemStatusExplanation'] = $systemStatusExplanation;
+
+        return $this;
+    }
+
+    /**
+     * Gets marketingAssetVerification
+     *
+     * @return \TencentAds\Model\V3\MarketingAssetVerification|mixed
+     */
+    public function getMarketingAssetVerification()
+    {
+        return $this->container['marketingAssetVerification'];
+    }
+
+    /**
+     * Sets marketingAssetVerification
+     *
+     * @param \TencentAds\Model\V3\MarketingAssetVerification|mixed $marketingAssetVerification marketingAssetVerification
+     *
+     * @return $this
+     */
+    public function setMarketingAssetVerification($marketingAssetVerification)
+    {
+        $this->container['marketingAssetVerification'] = $marketingAssetVerification;
 
         return $this;
     }

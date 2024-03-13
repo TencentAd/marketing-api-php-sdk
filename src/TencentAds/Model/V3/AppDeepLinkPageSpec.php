@@ -62,7 +62,10 @@ class AppDeepLinkPageSpec implements ModelInterface, ArrayAccess
         'androidDeepLinkUrl' => 'string',
         'iosDeepLinkAppId' => 'string',
         'iosDeepLinkUrl' => 'string',
-        'universalLinkUrl' => 'string'
+        'universalLinkUrl' => 'string',
+        'mpaAndroidDeepLinkWildcardUrl' => 'string',
+        'mpaIosDeepLinkWildcardUrl' => 'string',
+        'mpaUniversalLinkWildcardUrl' => 'string'
     ];
 
     /**
@@ -75,7 +78,10 @@ class AppDeepLinkPageSpec implements ModelInterface, ArrayAccess
         'androidDeepLinkUrl' => null,
         'iosDeepLinkAppId' => null,
         'iosDeepLinkUrl' => null,
-        'universalLinkUrl' => null
+        'universalLinkUrl' => null,
+        'mpaAndroidDeepLinkWildcardUrl' => null,
+        'mpaIosDeepLinkWildcardUrl' => null,
+        'mpaUniversalLinkWildcardUrl' => null
     ];
 
     /**
@@ -109,7 +115,10 @@ class AppDeepLinkPageSpec implements ModelInterface, ArrayAccess
         'androidDeepLinkUrl' => 'android_deep_link_url',
         'iosDeepLinkAppId' => 'ios_deep_link_app_id',
         'iosDeepLinkUrl' => 'ios_deep_link_url',
-        'universalLinkUrl' => 'universal_link_url'
+        'universalLinkUrl' => 'universal_link_url',
+        'mpaAndroidDeepLinkWildcardUrl' => 'mpa_android_deep_link_wildcard_url',
+        'mpaIosDeepLinkWildcardUrl' => 'mpa_ios_deep_link_wildcard_url',
+        'mpaUniversalLinkWildcardUrl' => 'mpa_universal_link_wildcard_url'
     ];
 
     /**
@@ -122,7 +131,10 @@ class AppDeepLinkPageSpec implements ModelInterface, ArrayAccess
         'androidDeepLinkUrl' => 'setAndroidDeepLinkUrl',
         'iosDeepLinkAppId' => 'setIosDeepLinkAppId',
         'iosDeepLinkUrl' => 'setIosDeepLinkUrl',
-        'universalLinkUrl' => 'setUniversalLinkUrl'
+        'universalLinkUrl' => 'setUniversalLinkUrl',
+        'mpaAndroidDeepLinkWildcardUrl' => 'setMpaAndroidDeepLinkWildcardUrl',
+        'mpaIosDeepLinkWildcardUrl' => 'setMpaIosDeepLinkWildcardUrl',
+        'mpaUniversalLinkWildcardUrl' => 'setMpaUniversalLinkWildcardUrl'
     ];
 
     /**
@@ -135,7 +147,10 @@ class AppDeepLinkPageSpec implements ModelInterface, ArrayAccess
         'androidDeepLinkUrl' => 'getAndroidDeepLinkUrl',
         'iosDeepLinkAppId' => 'getIosDeepLinkAppId',
         'iosDeepLinkUrl' => 'getIosDeepLinkUrl',
-        'universalLinkUrl' => 'getUniversalLinkUrl'
+        'universalLinkUrl' => 'getUniversalLinkUrl',
+        'mpaAndroidDeepLinkWildcardUrl' => 'getMpaAndroidDeepLinkWildcardUrl',
+        'mpaIosDeepLinkWildcardUrl' => 'getMpaIosDeepLinkWildcardUrl',
+        'mpaUniversalLinkWildcardUrl' => 'getMpaUniversalLinkWildcardUrl'
     ];
 
     /**
@@ -203,6 +218,9 @@ class AppDeepLinkPageSpec implements ModelInterface, ArrayAccess
         $this->container['iosDeepLinkAppId'] = isset($data['iosDeepLinkAppId']) ? $data['iosDeepLinkAppId'] : null;
         $this->container['iosDeepLinkUrl'] = isset($data['iosDeepLinkUrl']) ? $data['iosDeepLinkUrl'] : null;
         $this->container['universalLinkUrl'] = isset($data['universalLinkUrl']) ? $data['universalLinkUrl'] : null;
+        $this->container['mpaAndroidDeepLinkWildcardUrl'] = isset($data['mpaAndroidDeepLinkWildcardUrl']) ? $data['mpaAndroidDeepLinkWildcardUrl'] : null;
+        $this->container['mpaIosDeepLinkWildcardUrl'] = isset($data['mpaIosDeepLinkWildcardUrl']) ? $data['mpaIosDeepLinkWildcardUrl'] : null;
+        $this->container['mpaUniversalLinkWildcardUrl'] = isset($data['mpaUniversalLinkWildcardUrl']) ? $data['mpaUniversalLinkWildcardUrl'] : null;
     }
 
     /**
@@ -345,6 +363,78 @@ class AppDeepLinkPageSpec implements ModelInterface, ArrayAccess
     public function setUniversalLinkUrl($universalLinkUrl)
     {
         $this->container['universalLinkUrl'] = $universalLinkUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets mpaAndroidDeepLinkWildcardUrl
+     *
+     * @return string|mixed
+     */
+    public function getMpaAndroidDeepLinkWildcardUrl()
+    {
+        return $this->container['mpaAndroidDeepLinkWildcardUrl'];
+    }
+
+    /**
+     * Sets mpaAndroidDeepLinkWildcardUrl
+     *
+     * @param string|mixed $mpaAndroidDeepLinkWildcardUrl mpaAndroidDeepLinkWildcardUrl
+     *
+     * @return $this
+     */
+    public function setMpaAndroidDeepLinkWildcardUrl($mpaAndroidDeepLinkWildcardUrl)
+    {
+        $this->container['mpaAndroidDeepLinkWildcardUrl'] = $mpaAndroidDeepLinkWildcardUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets mpaIosDeepLinkWildcardUrl
+     *
+     * @return string|mixed
+     */
+    public function getMpaIosDeepLinkWildcardUrl()
+    {
+        return $this->container['mpaIosDeepLinkWildcardUrl'];
+    }
+
+    /**
+     * Sets mpaIosDeepLinkWildcardUrl
+     *
+     * @param string|mixed $mpaIosDeepLinkWildcardUrl mpaIosDeepLinkWildcardUrl
+     *
+     * @return $this
+     */
+    public function setMpaIosDeepLinkWildcardUrl($mpaIosDeepLinkWildcardUrl)
+    {
+        $this->container['mpaIosDeepLinkWildcardUrl'] = $mpaIosDeepLinkWildcardUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets mpaUniversalLinkWildcardUrl
+     *
+     * @return string|mixed
+     */
+    public function getMpaUniversalLinkWildcardUrl()
+    {
+        return $this->container['mpaUniversalLinkWildcardUrl'];
+    }
+
+    /**
+     * Sets mpaUniversalLinkWildcardUrl
+     *
+     * @param string|mixed $mpaUniversalLinkWildcardUrl mpaUniversalLinkWildcardUrl
+     *
+     * @return $this
+     */
+    public function setMpaUniversalLinkWildcardUrl($mpaUniversalLinkWildcardUrl)
+    {
+        $this->container['mpaUniversalLinkWildcardUrl'] = $mpaUniversalLinkWildcardUrl;
 
         return $this;
     }

@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * SysStatus Class Doc Comment
  *
  * @category Class
- * @description 朋友圈头像及昵称跳转页状态
+ * @description 组件状态
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -53,6 +53,7 @@ class SysStatus
     const PREPARE = 'AD_STATUS_PREPARE';
     const DELETED = 'AD_STATUS_DELETED';
     const INVALID = 'AD_STATUS_INVALID';
+    const SUSPEND = 'AD_STATUS_SUSPEND';
     
     /**
      * Gets allowable values of the enum
@@ -70,6 +71,7 @@ class SysStatus
             self::PREPARE,
             self::DELETED,
             self::INVALID,
+            self::SUSPEND,
         ];
     }
 }

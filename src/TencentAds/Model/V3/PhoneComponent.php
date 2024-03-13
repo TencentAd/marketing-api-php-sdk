@@ -58,6 +58,7 @@ class PhoneComponent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'componentId' => 'int',
         'value' => '\TencentAds\Model\V3\PhoneStruct'
     ];
 
@@ -67,6 +68,7 @@ class PhoneComponent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
+        'componentId' => 'int64',
         'value' => null
     ];
 
@@ -97,6 +99,7 @@ class PhoneComponent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'componentId' => 'component_id',
         'value' => 'value'
     ];
 
@@ -106,6 +109,7 @@ class PhoneComponent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'componentId' => 'setComponentId',
         'value' => 'setValue'
     ];
 
@@ -115,6 +119,7 @@ class PhoneComponent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'componentId' => 'getComponentId',
         'value' => 'getValue'
     ];
 
@@ -178,6 +183,7 @@ class PhoneComponent implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
         $this->container['value'] = isset($data['value']) ? $data['value'] : null;
     }
 
@@ -204,6 +210,30 @@ class PhoneComponent implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets componentId
+     *
+     * @return int|mixed
+     */
+    public function getComponentId()
+    {
+        return $this->container['componentId'];
+    }
+
+    /**
+     * Sets componentId
+     *
+     * @param int|mixed $componentId componentId
+     *
+     * @return $this
+     */
+    public function setComponentId($componentId)
+    {
+        $this->container['componentId'] = $componentId;
+
+        return $this;
+    }
 
     /**
      * Gets value

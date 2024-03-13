@@ -383,7 +383,7 @@ class AudienceGrantRelationsApi
      * 获取人群授权信息
      *
      * @param  int|mixed $accountId accountId (required)
-     * @param  \TencentAds\Model\V3\SingleFilter[]|mixed $filtering filtering (optional)
+     * @param  \TencentAds\Model\V3\AudienceGrantRelationsGetSingleFilter[]|mixed $filtering filtering (optional)
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -404,7 +404,7 @@ class AudienceGrantRelationsApi
      * 获取人群授权信息
      *
      * @param  int|mixed $accountId (required)
-     * @param  \TencentAds\Model\V3\SingleFilter[]|mixed $filtering (optional)
+     * @param  \TencentAds\Model\V3\AudienceGrantRelationsGetSingleFilter[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -483,7 +483,7 @@ class AudienceGrantRelationsApi
      * 获取人群授权信息
      *
      * @param  int|mixed $accountId (required)
-     * @param  \TencentAds\Model\V3\SingleFilter[]|mixed $filtering (optional)
+     * @param  \TencentAds\Model\V3\AudienceGrantRelationsGetSingleFilter[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -507,7 +507,7 @@ class AudienceGrantRelationsApi
      * 获取人群授权信息
      *
      * @param  int|mixed $accountId (required)
-     * @param  \TencentAds\Model\V3\SingleFilter[]|mixed $filtering (optional)
+     * @param  \TencentAds\Model\V3\AudienceGrantRelationsGetSingleFilter[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -561,7 +561,7 @@ class AudienceGrantRelationsApi
      * Create request for operation 'audienceGrantRelationsGet'
      *
      * @param  int|mixed $accountId (required)
-     * @param  \TencentAds\Model\V3\SingleFilter[]|mixed $filtering (optional)
+     * @param  \TencentAds\Model\V3\AudienceGrantRelationsGetSingleFilter[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)

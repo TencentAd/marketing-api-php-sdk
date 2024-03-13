@@ -148,6 +148,7 @@ class ActionType
     const TERMINATION = 'TERMINATION';
     const RENEWAL = 'RENEWAL';
     const CONSULT_INTENTION = 'CONSULT_INTENTION';
+    const CLICK_LEADS_COMPONENT = 'CLICK_LEADS_COMPONENT';
     
     /**
      * Gets allowable values of the enum
@@ -260,6 +261,7 @@ class ActionType
             self::TERMINATION,
             self::RENEWAL,
             self::CONSULT_INTENTION,
+            self::CLICK_LEADS_COMPONENT,
         ];
     }
 }
