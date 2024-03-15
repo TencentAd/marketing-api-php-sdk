@@ -57,6 +57,8 @@ class MarketingCarrierType
     const APP_QUICK_APP = 'MARKETING_CARRIER_TYPE_APP_QUICK_APP';
     const JUMP_PAGE2 = 'MARKETING_CARRIER_TYPE_JUMP_PAGE2';
     const MINI_PROGRAM_WECHAT2 = 'MARKETING_CARRIER_TYPE_MINI_PROGRAM_WECHAT2';
+    const PC_GAME = 'MARKETING_CARRIER_TYPE_PC_GAME';
+    const QQ_MINI_GAME = 'MARKETING_CARRIER_TYPE_QQ_MINI_GAME';
     
     /**
      * Gets allowable values of the enum
@@ -78,6 +80,8 @@ class MarketingCarrierType
             self::APP_QUICK_APP,
             self::JUMP_PAGE2,
             self::MINI_PROGRAM_WECHAT2,
+            self::PC_GAME,
+            self::QQ_MINI_GAME,
         ];
     }
 }

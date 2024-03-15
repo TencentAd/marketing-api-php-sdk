@@ -44,6 +44,7 @@ class BusinessScenario
     /**
      * Possible values of this enum
      */
+    const UNKNOWN = 'BUSINESS_SCENARIO_UNKNOWN';
     const CONTENT = 'BUSINESS_SCENARIO_CONTENT';
     const DELIVERY = 'BUSINESS_SCENARIO_DELIVERY';
     
@@ -54,6 +55,7 @@ class BusinessScenario
     public static function getAllowableEnumValues()
     {
         return [
+            self::UNKNOWN,
             self::CONTENT,
             self::DELIVERY,
         ];

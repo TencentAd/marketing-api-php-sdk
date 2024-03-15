@@ -86,7 +86,6 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'imageDurationMillisecond' => 'int',
         'audioDurationMillisecond' => 'int',
         'sourceType' => '\TencentAds\Model\V3\MediaSourceType',
-        'productCatalogId' => 'int',
         'productOuterId' => 'string',
         'sourceReferenceId' => 'string',
         'ownerAccountId' => 'string',
@@ -127,7 +126,6 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'imageDurationMillisecond' => 'int64',
         'audioDurationMillisecond' => 'int64',
         'sourceType' => null,
-        'productCatalogId' => 'int64',
         'productOuterId' => null,
         'sourceReferenceId' => null,
         'ownerAccountId' => null,
@@ -189,7 +187,6 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'imageDurationMillisecond' => 'image_duration_millisecond',
         'audioDurationMillisecond' => 'audio_duration_millisecond',
         'sourceType' => 'source_type',
-        'productCatalogId' => 'product_catalog_id',
         'productOuterId' => 'product_outer_id',
         'sourceReferenceId' => 'source_reference_id',
         'ownerAccountId' => 'owner_account_id',
@@ -230,7 +227,6 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'imageDurationMillisecond' => 'setImageDurationMillisecond',
         'audioDurationMillisecond' => 'setAudioDurationMillisecond',
         'sourceType' => 'setSourceType',
-        'productCatalogId' => 'setProductCatalogId',
         'productOuterId' => 'setProductOuterId',
         'sourceReferenceId' => 'setSourceReferenceId',
         'ownerAccountId' => 'setOwnerAccountId',
@@ -271,7 +267,6 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'imageDurationMillisecond' => 'getImageDurationMillisecond',
         'audioDurationMillisecond' => 'getAudioDurationMillisecond',
         'sourceType' => 'getSourceType',
-        'productCatalogId' => 'getProductCatalogId',
         'productOuterId' => 'getProductOuterId',
         'sourceReferenceId' => 'getSourceReferenceId',
         'ownerAccountId' => 'getOwnerAccountId',
@@ -366,7 +361,6 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         $this->container['imageDurationMillisecond'] = isset($data['imageDurationMillisecond']) ? $data['imageDurationMillisecond'] : null;
         $this->container['audioDurationMillisecond'] = isset($data['audioDurationMillisecond']) ? $data['audioDurationMillisecond'] : null;
         $this->container['sourceType'] = isset($data['sourceType']) ? $data['sourceType'] : null;
-        $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
         $this->container['productOuterId'] = isset($data['productOuterId']) ? $data['productOuterId'] : null;
         $this->container['sourceReferenceId'] = isset($data['sourceReferenceId']) ? $data['sourceReferenceId'] : null;
         $this->container['ownerAccountId'] = isset($data['ownerAccountId']) ? $data['ownerAccountId'] : null;
@@ -1065,30 +1059,6 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     public function setSourceType($sourceType)
     {
         $this->container['sourceType'] = $sourceType;
-
-        return $this;
-    }
-
-    /**
-     * Gets productCatalogId
-     *
-     * @return int|mixed
-     */
-    public function getProductCatalogId()
-    {
-        return $this->container['productCatalogId'];
-    }
-
-    /**
-     * Sets productCatalogId
-     *
-     * @param int|mixed $productCatalogId productCatalogId
-     *
-     * @return $this
-     */
-    public function setProductCatalogId($productCatalogId)
-    {
-        $this->container['productCatalogId'] = $productCatalogId;
 
         return $this;
     }

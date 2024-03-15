@@ -98,6 +98,7 @@ class PromotedAssetType
     const PC_GAME = 'PROMOTED_ASSET_TYPE_PC_GAME';
     const WECHAT_WORK = 'PROMOTED_ASSET_TYPE_WECHAT_WORK';
     const LIVE_STREAM_ROOM = 'PROMOTED_ASSET_TYPE_LIVE_STREAM_ROOM';
+    const PERSONAL_STORE = 'PROMOTED_ASSET_TYPE_PERSONAL_STORE';
     
     /**
      * Gets allowable values of the enum
@@ -160,6 +161,7 @@ class PromotedAssetType
             self::PC_GAME,
             self::WECHAT_WORK,
             self::LIVE_STREAM_ROOM,
+            self::PERSONAL_STORE,
         ];
     }
 }

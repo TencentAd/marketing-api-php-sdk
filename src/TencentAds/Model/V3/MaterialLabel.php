@@ -69,7 +69,7 @@ class MaterialLabel implements ModelInterface, ArrayAccess
         'labelSource' => '\TencentAds\Model\V3\MaterialLabelSource',
         'relationImageCount' => 'int',
         'relationMediaCount' => 'int',
-        'businessScenario' => 'int'
+        'businessScenarioVal' => '\TencentAds\Model\V3\BusinessScenario'
     ];
 
     /**
@@ -89,7 +89,7 @@ class MaterialLabel implements ModelInterface, ArrayAccess
         'labelSource' => null,
         'relationImageCount' => 'int64',
         'relationMediaCount' => 'int64',
-        'businessScenario' => 'int64'
+        'businessScenarioVal' => null
     ];
 
     /**
@@ -130,7 +130,7 @@ class MaterialLabel implements ModelInterface, ArrayAccess
         'labelSource' => 'label_source',
         'relationImageCount' => 'relation_image_count',
         'relationMediaCount' => 'relation_media_count',
-        'businessScenario' => 'business_scenario'
+        'businessScenarioVal' => 'business_scenario_val'
     ];
 
     /**
@@ -150,7 +150,7 @@ class MaterialLabel implements ModelInterface, ArrayAccess
         'labelSource' => 'setLabelSource',
         'relationImageCount' => 'setRelationImageCount',
         'relationMediaCount' => 'setRelationMediaCount',
-        'businessScenario' => 'setBusinessScenario'
+        'businessScenarioVal' => 'setBusinessScenarioVal'
     ];
 
     /**
@@ -170,7 +170,7 @@ class MaterialLabel implements ModelInterface, ArrayAccess
         'labelSource' => 'getLabelSource',
         'relationImageCount' => 'getRelationImageCount',
         'relationMediaCount' => 'getRelationMediaCount',
-        'businessScenario' => 'getBusinessScenario'
+        'businessScenarioVal' => 'getBusinessScenarioVal'
     ];
 
     /**
@@ -244,7 +244,7 @@ class MaterialLabel implements ModelInterface, ArrayAccess
         $this->container['labelSource'] = isset($data['labelSource']) ? $data['labelSource'] : null;
         $this->container['relationImageCount'] = isset($data['relationImageCount']) ? $data['relationImageCount'] : null;
         $this->container['relationMediaCount'] = isset($data['relationMediaCount']) ? $data['relationMediaCount'] : null;
-        $this->container['businessScenario'] = isset($data['businessScenario']) ? $data['businessScenario'] : null;
+        $this->container['businessScenarioVal'] = isset($data['businessScenarioVal']) ? $data['businessScenarioVal'] : null;
     }
 
     /**
@@ -536,25 +536,25 @@ class MaterialLabel implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets businessScenario
+     * Gets businessScenarioVal
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\V3\BusinessScenario|mixed
      */
-    public function getBusinessScenario()
+    public function getBusinessScenarioVal()
     {
-        return $this->container['businessScenario'];
+        return $this->container['businessScenarioVal'];
     }
 
     /**
-     * Sets businessScenario
+     * Sets businessScenarioVal
      *
-     * @param int|mixed $businessScenario businessScenario
+     * @param \TencentAds\Model\V3\BusinessScenario|mixed $businessScenarioVal businessScenarioVal
      *
      * @return $this
      */
-    public function setBusinessScenario($businessScenario)
+    public function setBusinessScenarioVal($businessScenarioVal)
     {
-        $this->container['businessScenario'] = $businessScenario;
+        $this->container['businessScenarioVal'] = $businessScenarioVal;
 
         return $this;
     }

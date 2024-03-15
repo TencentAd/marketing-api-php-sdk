@@ -98,6 +98,7 @@ class MarketingTargetType
     const PC_GAME = 'MARKETING_TARGET_TYPE_PC_GAME';
     const WECHAT_WORK = 'MARKETING_TARGET_TYPE_WECHAT_WORK';
     const LIVE_STREAM_ROOM = 'MARKETING_TARGET_TYPE_LIVE_STREAM_ROOM';
+    const PERSONAL_STORE = 'MARKETING_TARGET_TYPE_PERSONAL_STORE';
     
     /**
      * Gets allowable values of the enum
@@ -160,6 +161,7 @@ class MarketingTargetType
             self::PC_GAME,
             self::WECHAT_WORK,
             self::LIVE_STREAM_ROOM,
+            self::PERSONAL_STORE,
         ];
     }
 }

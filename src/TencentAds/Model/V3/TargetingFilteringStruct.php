@@ -58,7 +58,7 @@ class TargetingFilteringStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'field' => 'string[]',
+        'field' => 'string',
         'operator' => '\TencentAds\Model\V3\FilterOperator',
         'values' => 'string[]'
     ];
@@ -220,7 +220,7 @@ class TargetingFilteringStruct implements ModelInterface, ArrayAccess
     /**
      * Gets field
      *
-     * @return string[]|mixed
+     * @return string|mixed
      */
     public function getField()
     {
@@ -230,7 +230,7 @@ class TargetingFilteringStruct implements ModelInterface, ArrayAccess
     /**
      * Sets field
      *
-     * @param string[]|mixed $field field
+     * @param string|mixed $field field
      *
      * @return $this
      */

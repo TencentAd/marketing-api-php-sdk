@@ -61,8 +61,7 @@ class WxgamePlayablePageStruct implements ModelInterface, ArrayAccess
         'wxgamePlayablePageSwitch' => 'bool',
         'wxgamePlayablePagePath' => 'string',
         'wxgamePlayablePageEndCoverImg' => 'string',
-        'wxgamePlayablePageEndDesc' => 'string',
-        'wxgamePlayablePageOrientation' => '\TencentAds\Model\V3\WxgamePlayablePageOrientation'
+        'wxgamePlayablePageEndDesc' => 'string'
     ];
 
     /**
@@ -74,8 +73,7 @@ class WxgamePlayablePageStruct implements ModelInterface, ArrayAccess
         'wxgamePlayablePageSwitch' => null,
         'wxgamePlayablePagePath' => null,
         'wxgamePlayablePageEndCoverImg' => null,
-        'wxgamePlayablePageEndDesc' => null,
-        'wxgamePlayablePageOrientation' => null
+        'wxgamePlayablePageEndDesc' => null
     ];
 
     /**
@@ -108,8 +106,7 @@ class WxgamePlayablePageStruct implements ModelInterface, ArrayAccess
         'wxgamePlayablePageSwitch' => 'wxgame_playable_page_switch',
         'wxgamePlayablePagePath' => 'wxgame_playable_page_path',
         'wxgamePlayablePageEndCoverImg' => 'wxgame_playable_page_end_cover_img',
-        'wxgamePlayablePageEndDesc' => 'wxgame_playable_page_end_desc',
-        'wxgamePlayablePageOrientation' => 'wxgame_playable_page_orientation'
+        'wxgamePlayablePageEndDesc' => 'wxgame_playable_page_end_desc'
     ];
 
     /**
@@ -121,8 +118,7 @@ class WxgamePlayablePageStruct implements ModelInterface, ArrayAccess
         'wxgamePlayablePageSwitch' => 'setWxgamePlayablePageSwitch',
         'wxgamePlayablePagePath' => 'setWxgamePlayablePagePath',
         'wxgamePlayablePageEndCoverImg' => 'setWxgamePlayablePageEndCoverImg',
-        'wxgamePlayablePageEndDesc' => 'setWxgamePlayablePageEndDesc',
-        'wxgamePlayablePageOrientation' => 'setWxgamePlayablePageOrientation'
+        'wxgamePlayablePageEndDesc' => 'setWxgamePlayablePageEndDesc'
     ];
 
     /**
@@ -134,8 +130,7 @@ class WxgamePlayablePageStruct implements ModelInterface, ArrayAccess
         'wxgamePlayablePageSwitch' => 'getWxgamePlayablePageSwitch',
         'wxgamePlayablePagePath' => 'getWxgamePlayablePagePath',
         'wxgamePlayablePageEndCoverImg' => 'getWxgamePlayablePageEndCoverImg',
-        'wxgamePlayablePageEndDesc' => 'getWxgamePlayablePageEndDesc',
-        'wxgamePlayablePageOrientation' => 'getWxgamePlayablePageOrientation'
+        'wxgamePlayablePageEndDesc' => 'getWxgamePlayablePageEndDesc'
     ];
 
     /**
@@ -202,7 +197,6 @@ class WxgamePlayablePageStruct implements ModelInterface, ArrayAccess
         $this->container['wxgamePlayablePagePath'] = isset($data['wxgamePlayablePagePath']) ? $data['wxgamePlayablePagePath'] : null;
         $this->container['wxgamePlayablePageEndCoverImg'] = isset($data['wxgamePlayablePageEndCoverImg']) ? $data['wxgamePlayablePageEndCoverImg'] : null;
         $this->container['wxgamePlayablePageEndDesc'] = isset($data['wxgamePlayablePageEndDesc']) ? $data['wxgamePlayablePageEndDesc'] : null;
-        $this->container['wxgamePlayablePageOrientation'] = isset($data['wxgamePlayablePageOrientation']) ? $data['wxgamePlayablePageOrientation'] : null;
     }
 
     /**
@@ -321,30 +315,6 @@ class WxgamePlayablePageStruct implements ModelInterface, ArrayAccess
     public function setWxgamePlayablePageEndDesc($wxgamePlayablePageEndDesc)
     {
         $this->container['wxgamePlayablePageEndDesc'] = $wxgamePlayablePageEndDesc;
-
-        return $this;
-    }
-
-    /**
-     * Gets wxgamePlayablePageOrientation
-     *
-     * @return \TencentAds\Model\V3\WxgamePlayablePageOrientation|mixed
-     */
-    public function getWxgamePlayablePageOrientation()
-    {
-        return $this->container['wxgamePlayablePageOrientation'];
-    }
-
-    /**
-     * Sets wxgamePlayablePageOrientation
-     *
-     * @param \TencentAds\Model\V3\WxgamePlayablePageOrientation|mixed $wxgamePlayablePageOrientation wxgamePlayablePageOrientation
-     *
-     * @return $this
-     */
-    public function setWxgamePlayablePageOrientation($wxgamePlayablePageOrientation)
-    {
-        $this->container['wxgamePlayablePageOrientation'] = $wxgamePlayablePageOrientation;
 
         return $this;
     }
