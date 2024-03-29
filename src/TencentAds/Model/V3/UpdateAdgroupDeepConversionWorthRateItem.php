@@ -59,8 +59,7 @@ class UpdateAdgroupDeepConversionWorthRateItem implements ModelInterface, ArrayA
       */
     protected static $swaggerTypes = [
         'adgroupId' => 'int',
-        'deepConversionWorthRate' => 'double',
-        'accountId' => 'int'
+        'deepConversionWorthRate' => 'double'
     ];
 
     /**
@@ -70,8 +69,7 @@ class UpdateAdgroupDeepConversionWorthRateItem implements ModelInterface, ArrayA
       */
     protected static $swaggerFormats = [
         'adgroupId' => 'int64',
-        'deepConversionWorthRate' => 'double',
-        'accountId' => 'int64'
+        'deepConversionWorthRate' => 'double'
     ];
 
     /**
@@ -102,8 +100,7 @@ class UpdateAdgroupDeepConversionWorthRateItem implements ModelInterface, ArrayA
      */
     protected static $attributeMap = [
         'adgroupId' => 'adgroup_id',
-        'deepConversionWorthRate' => 'deep_conversion_worth_rate',
-        'accountId' => 'account_id'
+        'deepConversionWorthRate' => 'deep_conversion_worth_rate'
     ];
 
     /**
@@ -113,8 +110,7 @@ class UpdateAdgroupDeepConversionWorthRateItem implements ModelInterface, ArrayA
      */
     protected static $setters = [
         'adgroupId' => 'setAdgroupId',
-        'deepConversionWorthRate' => 'setDeepConversionWorthRate',
-        'accountId' => 'setAccountId'
+        'deepConversionWorthRate' => 'setDeepConversionWorthRate'
     ];
 
     /**
@@ -124,8 +120,7 @@ class UpdateAdgroupDeepConversionWorthRateItem implements ModelInterface, ArrayA
      */
     protected static $getters = [
         'adgroupId' => 'getAdgroupId',
-        'deepConversionWorthRate' => 'getDeepConversionWorthRate',
-        'accountId' => 'getAccountId'
+        'deepConversionWorthRate' => 'getDeepConversionWorthRate'
     ];
 
     /**
@@ -190,7 +185,6 @@ class UpdateAdgroupDeepConversionWorthRateItem implements ModelInterface, ArrayA
     {
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['deepConversionWorthRate'] = isset($data['deepConversionWorthRate']) ? $data['deepConversionWorthRate'] : null;
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
     /**
@@ -261,30 +255,6 @@ class UpdateAdgroupDeepConversionWorthRateItem implements ModelInterface, ArrayA
     public function setDeepConversionWorthRate($deepConversionWorthRate)
     {
         $this->container['deepConversionWorthRate'] = $deepConversionWorthRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets accountId
-     *
-     * @return int|mixed
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int|mixed $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
 
         return $this;
     }

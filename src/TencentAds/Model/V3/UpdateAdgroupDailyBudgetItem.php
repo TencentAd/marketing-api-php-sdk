@@ -59,8 +59,7 @@ class UpdateAdgroupDailyBudgetItem implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'adgroupId' => 'int',
-        'dailyBudget' => 'int',
-        'accountId' => 'int'
+        'dailyBudget' => 'int'
     ];
 
     /**
@@ -70,8 +69,7 @@ class UpdateAdgroupDailyBudgetItem implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'adgroupId' => 'int64',
-        'dailyBudget' => 'int64',
-        'accountId' => 'int64'
+        'dailyBudget' => 'int64'
     ];
 
     /**
@@ -102,8 +100,7 @@ class UpdateAdgroupDailyBudgetItem implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'adgroupId' => 'adgroup_id',
-        'dailyBudget' => 'daily_budget',
-        'accountId' => 'account_id'
+        'dailyBudget' => 'daily_budget'
     ];
 
     /**
@@ -113,8 +110,7 @@ class UpdateAdgroupDailyBudgetItem implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'adgroupId' => 'setAdgroupId',
-        'dailyBudget' => 'setDailyBudget',
-        'accountId' => 'setAccountId'
+        'dailyBudget' => 'setDailyBudget'
     ];
 
     /**
@@ -124,8 +120,7 @@ class UpdateAdgroupDailyBudgetItem implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'adgroupId' => 'getAdgroupId',
-        'dailyBudget' => 'getDailyBudget',
-        'accountId' => 'getAccountId'
+        'dailyBudget' => 'getDailyBudget'
     ];
 
     /**
@@ -190,7 +185,6 @@ class UpdateAdgroupDailyBudgetItem implements ModelInterface, ArrayAccess
     {
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['dailyBudget'] = isset($data['dailyBudget']) ? $data['dailyBudget'] : null;
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
     /**
@@ -261,30 +255,6 @@ class UpdateAdgroupDailyBudgetItem implements ModelInterface, ArrayAccess
     public function setDailyBudget($dailyBudget)
     {
         $this->container['dailyBudget'] = $dailyBudget;
-
-        return $this;
-    }
-
-    /**
-     * Gets accountId
-     *
-     * @return int|mixed
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int|mixed $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
 
         return $this;
     }

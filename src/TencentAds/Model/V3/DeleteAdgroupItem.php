@@ -58,8 +58,7 @@ class DeleteAdgroupItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adgroupId' => 'int',
-        'accountId' => 'int'
+        'adgroupId' => 'int'
     ];
 
     /**
@@ -68,8 +67,7 @@ class DeleteAdgroupItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adgroupId' => 'int64',
-        'accountId' => 'int64'
+        'adgroupId' => 'int64'
     ];
 
     /**
@@ -99,8 +97,7 @@ class DeleteAdgroupItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adgroupId' => 'adgroup_id',
-        'accountId' => 'account_id'
+        'adgroupId' => 'adgroup_id'
     ];
 
     /**
@@ -109,8 +106,7 @@ class DeleteAdgroupItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adgroupId' => 'setAdgroupId',
-        'accountId' => 'setAccountId'
+        'adgroupId' => 'setAdgroupId'
     ];
 
     /**
@@ -119,8 +115,7 @@ class DeleteAdgroupItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adgroupId' => 'getAdgroupId',
-        'accountId' => 'getAccountId'
+        'adgroupId' => 'getAdgroupId'
     ];
 
     /**
@@ -184,7 +179,6 @@ class DeleteAdgroupItem implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
     /**
@@ -231,30 +225,6 @@ class DeleteAdgroupItem implements ModelInterface, ArrayAccess
     public function setAdgroupId($adgroupId)
     {
         $this->container['adgroupId'] = $adgroupId;
-
-        return $this;
-    }
-
-    /**
-     * Gets accountId
-     *
-     * @return int|mixed
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int|mixed $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
 
         return $this;
     }

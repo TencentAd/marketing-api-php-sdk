@@ -383,7 +383,7 @@ class AsyncTasksApi
      * 获取异步任务
      *
      * @param  int|mixed $accountId accountId (required)
-     * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering filtering (optional)
+     * @param  \TencentAds\Model\V3\AsyncTaskFilteringStruct[]|mixed $filtering filtering (optional)
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -404,7 +404,7 @@ class AsyncTasksApi
      * 获取异步任务
      *
      * @param  int|mixed $accountId (required)
-     * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
+     * @param  \TencentAds\Model\V3\AsyncTaskFilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -483,7 +483,7 @@ class AsyncTasksApi
      * 获取异步任务
      *
      * @param  int|mixed $accountId (required)
-     * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
+     * @param  \TencentAds\Model\V3\AsyncTaskFilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -507,7 +507,7 @@ class AsyncTasksApi
      * 获取异步任务
      *
      * @param  int|mixed $accountId (required)
-     * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
+     * @param  \TencentAds\Model\V3\AsyncTaskFilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -561,7 +561,7 @@ class AsyncTasksApi
      * Create request for operation 'asyncTasksGet'
      *
      * @param  int|mixed $accountId (required)
-     * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
+     * @param  \TencentAds\Model\V3\AsyncTaskFilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)

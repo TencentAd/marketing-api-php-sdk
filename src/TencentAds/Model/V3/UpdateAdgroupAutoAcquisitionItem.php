@@ -60,8 +60,7 @@ class UpdateAdgroupAutoAcquisitionItem implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'adgroupId' => 'int',
         'autoAcquisitionEnabled' => 'bool',
-        'autoAcquisitionBudget' => 'int',
-        'accountId' => 'int'
+        'autoAcquisitionBudget' => 'int'
     ];
 
     /**
@@ -72,8 +71,7 @@ class UpdateAdgroupAutoAcquisitionItem implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'adgroupId' => 'int64',
         'autoAcquisitionEnabled' => null,
-        'autoAcquisitionBudget' => 'int64',
-        'accountId' => 'int64'
+        'autoAcquisitionBudget' => 'int64'
     ];
 
     /**
@@ -105,8 +103,7 @@ class UpdateAdgroupAutoAcquisitionItem implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'adgroupId' => 'adgroup_id',
         'autoAcquisitionEnabled' => 'auto_acquisition_enabled',
-        'autoAcquisitionBudget' => 'auto_acquisition_budget',
-        'accountId' => 'account_id'
+        'autoAcquisitionBudget' => 'auto_acquisition_budget'
     ];
 
     /**
@@ -117,8 +114,7 @@ class UpdateAdgroupAutoAcquisitionItem implements ModelInterface, ArrayAccess
     protected static $setters = [
         'adgroupId' => 'setAdgroupId',
         'autoAcquisitionEnabled' => 'setAutoAcquisitionEnabled',
-        'autoAcquisitionBudget' => 'setAutoAcquisitionBudget',
-        'accountId' => 'setAccountId'
+        'autoAcquisitionBudget' => 'setAutoAcquisitionBudget'
     ];
 
     /**
@@ -129,8 +125,7 @@ class UpdateAdgroupAutoAcquisitionItem implements ModelInterface, ArrayAccess
     protected static $getters = [
         'adgroupId' => 'getAdgroupId',
         'autoAcquisitionEnabled' => 'getAutoAcquisitionEnabled',
-        'autoAcquisitionBudget' => 'getAutoAcquisitionBudget',
-        'accountId' => 'getAccountId'
+        'autoAcquisitionBudget' => 'getAutoAcquisitionBudget'
     ];
 
     /**
@@ -196,7 +191,6 @@ class UpdateAdgroupAutoAcquisitionItem implements ModelInterface, ArrayAccess
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['autoAcquisitionEnabled'] = isset($data['autoAcquisitionEnabled']) ? $data['autoAcquisitionEnabled'] : null;
         $this->container['autoAcquisitionBudget'] = isset($data['autoAcquisitionBudget']) ? $data['autoAcquisitionBudget'] : null;
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
     /**
@@ -291,30 +285,6 @@ class UpdateAdgroupAutoAcquisitionItem implements ModelInterface, ArrayAccess
     public function setAutoAcquisitionBudget($autoAcquisitionBudget)
     {
         $this->container['autoAcquisitionBudget'] = $autoAcquisitionBudget;
-
-        return $this;
-    }
-
-    /**
-     * Gets accountId
-     *
-     * @return int|mixed
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int|mixed $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
 
         return $this;
     }

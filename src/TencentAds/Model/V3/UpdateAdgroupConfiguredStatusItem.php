@@ -59,8 +59,7 @@ class UpdateAdgroupConfiguredStatusItem implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'adgroupId' => 'int',
-        'configuredStatus' => '\TencentAds\Model\V3\ConfiguredStatus',
-        'accountId' => 'int'
+        'configuredStatus' => '\TencentAds\Model\V3\ConfiguredStatus'
     ];
 
     /**
@@ -70,8 +69,7 @@ class UpdateAdgroupConfiguredStatusItem implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'adgroupId' => 'int64',
-        'configuredStatus' => null,
-        'accountId' => 'int64'
+        'configuredStatus' => null
     ];
 
     /**
@@ -102,8 +100,7 @@ class UpdateAdgroupConfiguredStatusItem implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'adgroupId' => 'adgroup_id',
-        'configuredStatus' => 'configured_status',
-        'accountId' => 'account_id'
+        'configuredStatus' => 'configured_status'
     ];
 
     /**
@@ -113,8 +110,7 @@ class UpdateAdgroupConfiguredStatusItem implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'adgroupId' => 'setAdgroupId',
-        'configuredStatus' => 'setConfiguredStatus',
-        'accountId' => 'setAccountId'
+        'configuredStatus' => 'setConfiguredStatus'
     ];
 
     /**
@@ -124,8 +120,7 @@ class UpdateAdgroupConfiguredStatusItem implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'adgroupId' => 'getAdgroupId',
-        'configuredStatus' => 'getConfiguredStatus',
-        'accountId' => 'getAccountId'
+        'configuredStatus' => 'getConfiguredStatus'
     ];
 
     /**
@@ -190,7 +185,6 @@ class UpdateAdgroupConfiguredStatusItem implements ModelInterface, ArrayAccess
     {
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
     /**
@@ -261,30 +255,6 @@ class UpdateAdgroupConfiguredStatusItem implements ModelInterface, ArrayAccess
     public function setConfiguredStatus($configuredStatus)
     {
         $this->container['configuredStatus'] = $configuredStatus;
-
-        return $this;
-    }
-
-    /**
-     * Gets accountId
-     *
-     * @return int|mixed
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int|mixed $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
 
         return $this;
     }

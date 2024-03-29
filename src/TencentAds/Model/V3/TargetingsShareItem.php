@@ -60,8 +60,7 @@ class TargetingsShareItem implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'targetingId' => 'int',
         'shareToAccountId' => 'int',
-        'shareType' => '\TencentAds\Model\V3\TargetingShareType',
-        'isDataModelVersion3' => 'bool'
+        'shareType' => '\TencentAds\Model\V3\TargetingShareType'
     ];
 
     /**
@@ -72,8 +71,7 @@ class TargetingsShareItem implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'targetingId' => 'int64',
         'shareToAccountId' => 'int64',
-        'shareType' => null,
-        'isDataModelVersion3' => null
+        'shareType' => null
     ];
 
     /**
@@ -105,8 +103,7 @@ class TargetingsShareItem implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'targetingId' => 'targeting_id',
         'shareToAccountId' => 'share_to_account_id',
-        'shareType' => 'share_type',
-        'isDataModelVersion3' => 'is_data_model_version3'
+        'shareType' => 'share_type'
     ];
 
     /**
@@ -117,8 +114,7 @@ class TargetingsShareItem implements ModelInterface, ArrayAccess
     protected static $setters = [
         'targetingId' => 'setTargetingId',
         'shareToAccountId' => 'setShareToAccountId',
-        'shareType' => 'setShareType',
-        'isDataModelVersion3' => 'setIsDataModelVersion3'
+        'shareType' => 'setShareType'
     ];
 
     /**
@@ -129,8 +125,7 @@ class TargetingsShareItem implements ModelInterface, ArrayAccess
     protected static $getters = [
         'targetingId' => 'getTargetingId',
         'shareToAccountId' => 'getShareToAccountId',
-        'shareType' => 'getShareType',
-        'isDataModelVersion3' => 'getIsDataModelVersion3'
+        'shareType' => 'getShareType'
     ];
 
     /**
@@ -196,7 +191,6 @@ class TargetingsShareItem implements ModelInterface, ArrayAccess
         $this->container['targetingId'] = isset($data['targetingId']) ? $data['targetingId'] : null;
         $this->container['shareToAccountId'] = isset($data['shareToAccountId']) ? $data['shareToAccountId'] : null;
         $this->container['shareType'] = isset($data['shareType']) ? $data['shareType'] : null;
-        $this->container['isDataModelVersion3'] = isset($data['isDataModelVersion3']) ? $data['isDataModelVersion3'] : null;
     }
 
     /**
@@ -291,30 +285,6 @@ class TargetingsShareItem implements ModelInterface, ArrayAccess
     public function setShareType($shareType)
     {
         $this->container['shareType'] = $shareType;
-
-        return $this;
-    }
-
-    /**
-     * Gets isDataModelVersion3
-     *
-     * @return bool|mixed
-     */
-    public function getIsDataModelVersion3()
-    {
-        return $this->container['isDataModelVersion3'];
-    }
-
-    /**
-     * Sets isDataModelVersion3
-     *
-     * @param bool|mixed $isDataModelVersion3 isDataModelVersion3
-     *
-     * @return $this
-     */
-    public function setIsDataModelVersion3($isDataModelVersion3)
-    {
-        $this->container['isDataModelVersion3'] = $isDataModelVersion3;
 
         return $this;
     }

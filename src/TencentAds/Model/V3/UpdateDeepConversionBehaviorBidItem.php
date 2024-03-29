@@ -59,10 +59,7 @@ class UpdateDeepConversionBehaviorBidItem implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'adgroupId' => 'int',
-        'deepConversionBehaviorBid' => 'int',
-        'accountId' => 'int',
-        'isPotential' => 'bool',
-        'reportPotentialData' => 'string'
+        'deepConversionBehaviorBid' => 'int'
     ];
 
     /**
@@ -72,10 +69,7 @@ class UpdateDeepConversionBehaviorBidItem implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'adgroupId' => 'int64',
-        'deepConversionBehaviorBid' => 'int64',
-        'accountId' => 'int64',
-        'isPotential' => null,
-        'reportPotentialData' => null
+        'deepConversionBehaviorBid' => 'int64'
     ];
 
     /**
@@ -106,10 +100,7 @@ class UpdateDeepConversionBehaviorBidItem implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'adgroupId' => 'adgroup_id',
-        'deepConversionBehaviorBid' => 'deep_conversion_behavior_bid',
-        'accountId' => 'account_id',
-        'isPotential' => 'is_potential',
-        'reportPotentialData' => 'report_potential_data'
+        'deepConversionBehaviorBid' => 'deep_conversion_behavior_bid'
     ];
 
     /**
@@ -119,10 +110,7 @@ class UpdateDeepConversionBehaviorBidItem implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'adgroupId' => 'setAdgroupId',
-        'deepConversionBehaviorBid' => 'setDeepConversionBehaviorBid',
-        'accountId' => 'setAccountId',
-        'isPotential' => 'setIsPotential',
-        'reportPotentialData' => 'setReportPotentialData'
+        'deepConversionBehaviorBid' => 'setDeepConversionBehaviorBid'
     ];
 
     /**
@@ -132,10 +120,7 @@ class UpdateDeepConversionBehaviorBidItem implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'adgroupId' => 'getAdgroupId',
-        'deepConversionBehaviorBid' => 'getDeepConversionBehaviorBid',
-        'accountId' => 'getAccountId',
-        'isPotential' => 'getIsPotential',
-        'reportPotentialData' => 'getReportPotentialData'
+        'deepConversionBehaviorBid' => 'getDeepConversionBehaviorBid'
     ];
 
     /**
@@ -200,9 +185,6 @@ class UpdateDeepConversionBehaviorBidItem implements ModelInterface, ArrayAccess
     {
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['deepConversionBehaviorBid'] = isset($data['deepConversionBehaviorBid']) ? $data['deepConversionBehaviorBid'] : null;
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['isPotential'] = isset($data['isPotential']) ? $data['isPotential'] : null;
-        $this->container['reportPotentialData'] = isset($data['reportPotentialData']) ? $data['reportPotentialData'] : null;
     }
 
     /**
@@ -273,78 +255,6 @@ class UpdateDeepConversionBehaviorBidItem implements ModelInterface, ArrayAccess
     public function setDeepConversionBehaviorBid($deepConversionBehaviorBid)
     {
         $this->container['deepConversionBehaviorBid'] = $deepConversionBehaviorBid;
-
-        return $this;
-    }
-
-    /**
-     * Gets accountId
-     *
-     * @return int|mixed
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int|mixed $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
-
-        return $this;
-    }
-
-    /**
-     * Gets isPotential
-     *
-     * @return bool|mixed
-     */
-    public function getIsPotential()
-    {
-        return $this->container['isPotential'];
-    }
-
-    /**
-     * Sets isPotential
-     *
-     * @param bool|mixed $isPotential isPotential
-     *
-     * @return $this
-     */
-    public function setIsPotential($isPotential)
-    {
-        $this->container['isPotential'] = $isPotential;
-
-        return $this;
-    }
-
-    /**
-     * Gets reportPotentialData
-     *
-     * @return string|mixed
-     */
-    public function getReportPotentialData()
-    {
-        return $this->container['reportPotentialData'];
-    }
-
-    /**
-     * Sets reportPotentialData
-     *
-     * @param string|mixed $reportPotentialData reportPotentialData
-     *
-     * @return $this
-     */
-    public function setReportPotentialData($reportPotentialData)
-    {
-        $this->container['reportPotentialData'] = $reportPotentialData;
 
         return $this;
     }

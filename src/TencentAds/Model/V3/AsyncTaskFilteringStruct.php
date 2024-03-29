@@ -1,6 +1,6 @@
 <?php
 /**
- * UpdateAdgroupDeepConversionWorthAdvancedRateItem
+ * AsyncTaskFilteringStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * UpdateAdgroupDeepConversionWorthAdvancedRateItem Class Doc Comment
+ * AsyncTaskFilteringStruct Class Doc Comment
  *
  * @category Class
- * @description 修改广告组深度优化价值的强化 ROI
+ * @description 过滤条件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class UpdateAdgroupDeepConversionWorthAdvancedRateItem implements ModelInterface, ArrayAccess
+class AsyncTaskFilteringStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class UpdateAdgroupDeepConversionWorthAdvancedRateItem implements ModelInterface
       *
       * @var string
       */
-    protected static $swaggerModelName = 'update_adgroup_deep_conversion_worth_advanced_rate_item';
+    protected static $swaggerModelName = 'async_task_filtering_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,9 @@ class UpdateAdgroupDeepConversionWorthAdvancedRateItem implements ModelInterface
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adgroupId' => 'int',
-        'deepConversionWorthAdvancedRate' => 'double'
+        'field' => 'string',
+        'operator' => '\TencentAds\Model\V3\FilterOperator',
+        'values' => 'string[]'
     ];
 
     /**
@@ -68,8 +69,9 @@ class UpdateAdgroupDeepConversionWorthAdvancedRateItem implements ModelInterface
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adgroupId' => 'int64',
-        'deepConversionWorthAdvancedRate' => 'double'
+        'field' => null,
+        'operator' => null,
+        'values' => null
     ];
 
     /**
@@ -99,8 +101,9 @@ class UpdateAdgroupDeepConversionWorthAdvancedRateItem implements ModelInterface
      * @var string[]
      */
     protected static $attributeMap = [
-        'adgroupId' => 'adgroup_id',
-        'deepConversionWorthAdvancedRate' => 'deep_conversion_worth_advanced_rate'
+        'field' => 'field',
+        'operator' => 'operator',
+        'values' => 'values'
     ];
 
     /**
@@ -109,8 +112,9 @@ class UpdateAdgroupDeepConversionWorthAdvancedRateItem implements ModelInterface
      * @var string[]
      */
     protected static $setters = [
-        'adgroupId' => 'setAdgroupId',
-        'deepConversionWorthAdvancedRate' => 'setDeepConversionWorthAdvancedRate'
+        'field' => 'setField',
+        'operator' => 'setOperator',
+        'values' => 'setValues'
     ];
 
     /**
@@ -119,8 +123,9 @@ class UpdateAdgroupDeepConversionWorthAdvancedRateItem implements ModelInterface
      * @var string[]
      */
     protected static $getters = [
-        'adgroupId' => 'getAdgroupId',
-        'deepConversionWorthAdvancedRate' => 'getDeepConversionWorthAdvancedRate'
+        'field' => 'getField',
+        'operator' => 'getOperator',
+        'values' => 'getValues'
     ];
 
     /**
@@ -183,8 +188,9 @@ class UpdateAdgroupDeepConversionWorthAdvancedRateItem implements ModelInterface
      */
     public function __construct(array $data = null)
     {
-        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
-        $this->container['deepConversionWorthAdvancedRate'] = isset($data['deepConversionWorthAdvancedRate']) ? $data['deepConversionWorthAdvancedRate'] : null;
+        $this->container['field'] = isset($data['field']) ? $data['field'] : null;
+        $this->container['operator'] = isset($data['operator']) ? $data['operator'] : null;
+        $this->container['values'] = isset($data['values']) ? $data['values'] : null;
     }
 
     /**
@@ -212,49 +218,73 @@ class UpdateAdgroupDeepConversionWorthAdvancedRateItem implements ModelInterface
 
 
     /**
-     * Gets adgroupId
+     * Gets field
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getAdgroupId()
+    public function getField()
     {
-        return $this->container['adgroupId'];
+        return $this->container['field'];
     }
 
     /**
-     * Sets adgroupId
+     * Sets field
      *
-     * @param int|mixed $adgroupId adgroupId
+     * @param string|mixed $field field
      *
      * @return $this
      */
-    public function setAdgroupId($adgroupId)
+    public function setField($field)
     {
-        $this->container['adgroupId'] = $adgroupId;
+        $this->container['field'] = $field;
 
         return $this;
     }
 
     /**
-     * Gets deepConversionWorthAdvancedRate
+     * Gets operator
      *
-     * @return double|mixed
+     * @return \TencentAds\Model\V3\FilterOperator|mixed
      */
-    public function getDeepConversionWorthAdvancedRate()
+    public function getOperator()
     {
-        return $this->container['deepConversionWorthAdvancedRate'];
+        return $this->container['operator'];
     }
 
     /**
-     * Sets deepConversionWorthAdvancedRate
+     * Sets operator
      *
-     * @param double|mixed $deepConversionWorthAdvancedRate deepConversionWorthAdvancedRate
+     * @param \TencentAds\Model\V3\FilterOperator|mixed $operator operator
      *
      * @return $this
      */
-    public function setDeepConversionWorthAdvancedRate($deepConversionWorthAdvancedRate)
+    public function setOperator($operator)
     {
-        $this->container['deepConversionWorthAdvancedRate'] = $deepConversionWorthAdvancedRate;
+        $this->container['operator'] = $operator;
+
+        return $this;
+    }
+
+    /**
+     * Gets values
+     *
+     * @return string[]|mixed
+     */
+    public function getValues()
+    {
+        return $this->container['values'];
+    }
+
+    /**
+     * Sets values
+     *
+     * @param string[]|mixed $values values
+     *
+     * @return $this
+     */
+    public function setValues($values)
+    {
+        $this->container['values'] = $values;
 
         return $this;
     }

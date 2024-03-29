@@ -56,8 +56,7 @@ class TencentAds extends App
      * SDK version
      * @var string
      */
-    protected $version = '1.1.52';
-
+    protected $version = '1.1.64';
     /**
      * SDK version
      * @var string
@@ -86,7 +85,6 @@ class TencentAds extends App
     protected $middleware = [
         AuthMiddleware::class,
         DiffHostMiddleware::class,
-        EncodeArrayMiddleware::class,
         LogMiddleware::class,
     ];
 
