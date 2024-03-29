@@ -28,6 +28,74 @@ class MarketingTargetAssetsApiContainer extends ApiContainer
 
 
     /**
+     * Handle MarketingTargetAssetsApi marketingTargetAssetsAdd function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function add(array $params = [])
+    {
+        return $this->handleMiddleware('add', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->marketingTargetAssetsAdd($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle MarketingTargetAssetsApi marketingTargetAssetsAddAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function addAsync(array $params = [])
+    {
+        return $this->handleMiddleware('add', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->marketingTargetAssetsAddAsync($data);
+            return $response;
+        });
+    }
+
+
+    /**
+     * Handle MarketingTargetAssetsApi marketingTargetAssetsDelete function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function delete(array $params = [])
+    {
+        return $this->handleMiddleware('delete', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->marketingTargetAssetsDelete($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle MarketingTargetAssetsApi marketingTargetAssetsDeleteAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function deleteAsync(array $params = [])
+    {
+        return $this->handleMiddleware('delete', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->marketingTargetAssetsDeleteAsync($data);
+            return $response;
+        });
+    }
+
+
+    /**
      * Handle MarketingTargetAssetsApi marketingTargetAssetsGet function
      * @param array params
      * @return mixed
@@ -64,6 +132,40 @@ class MarketingTargetAssetsApiContainer extends ApiContainer
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
             $response = $this->apiInstance->marketingTargetAssetsGetAsync($accountId, $marketingTargetType, $page, $pageSize, $fields);
+            return $response;
+        });
+    }
+
+
+    /**
+     * Handle MarketingTargetAssetsApi marketingTargetAssetsUpdate function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function update(array $params = [])
+    {
+        return $this->handleMiddleware('update', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->marketingTargetAssetsUpdate($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle MarketingTargetAssetsApi marketingTargetAssetsUpdateAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function updateAsync(array $params = [])
+    {
+        return $this->handleMiddleware('update', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->marketingTargetAssetsUpdateAsync($data);
             return $response;
         });
     }

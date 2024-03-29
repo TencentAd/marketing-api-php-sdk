@@ -63,13 +63,14 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
         'corporationName' => 'string',
         'corporationLicence' => 'string',
         'certificationImageId' => 'string',
-        'corporateImageName' => 'string',
         'individualQualification' => '\TencentAds\Model\IndividualQualification',
+        'areaCode' => 'int',
+        'corporateImageName' => 'string',
         'introductionUrl' => 'string',
+        'corporateBrandName' => 'string',
         'contactPersonTelephone' => 'string',
         'contactPersonMobile' => 'string',
-        'websites' => '\TencentAds\Model\WebsiteUpdateStruct[]',
-        'areaCode' => 'int'
+        'websites' => '\TencentAds\Model\WebsiteUpdateStruct[]'
     ];
 
     /**
@@ -84,13 +85,14 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
         'corporationName' => null,
         'corporationLicence' => null,
         'certificationImageId' => null,
-        'corporateImageName' => null,
         'individualQualification' => null,
+        'areaCode' => 'int64',
+        'corporateImageName' => null,
         'introductionUrl' => null,
+        'corporateBrandName' => null,
         'contactPersonTelephone' => null,
         'contactPersonMobile' => null,
-        'websites' => null,
-        'areaCode' => 'int64'
+        'websites' => null
     ];
 
     /**
@@ -126,13 +128,14 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
         'corporationName' => 'corporation_name',
         'corporationLicence' => 'corporation_licence',
         'certificationImageId' => 'certification_image_id',
-        'corporateImageName' => 'corporate_image_name',
         'individualQualification' => 'individual_qualification',
+        'areaCode' => 'area_code',
+        'corporateImageName' => 'corporate_image_name',
         'introductionUrl' => 'introduction_url',
+        'corporateBrandName' => 'corporate_brand_name',
         'contactPersonTelephone' => 'contact_person_telephone',
         'contactPersonMobile' => 'contact_person_mobile',
-        'websites' => 'websites',
-        'areaCode' => 'area_code'
+        'websites' => 'websites'
     ];
 
     /**
@@ -147,13 +150,14 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
         'corporationName' => 'setCorporationName',
         'corporationLicence' => 'setCorporationLicence',
         'certificationImageId' => 'setCertificationImageId',
-        'corporateImageName' => 'setCorporateImageName',
         'individualQualification' => 'setIndividualQualification',
+        'areaCode' => 'setAreaCode',
+        'corporateImageName' => 'setCorporateImageName',
         'introductionUrl' => 'setIntroductionUrl',
+        'corporateBrandName' => 'setCorporateBrandName',
         'contactPersonTelephone' => 'setContactPersonTelephone',
         'contactPersonMobile' => 'setContactPersonMobile',
-        'websites' => 'setWebsites',
-        'areaCode' => 'setAreaCode'
+        'websites' => 'setWebsites'
     ];
 
     /**
@@ -168,13 +172,14 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
         'corporationName' => 'getCorporationName',
         'corporationLicence' => 'getCorporationLicence',
         'certificationImageId' => 'getCertificationImageId',
-        'corporateImageName' => 'getCorporateImageName',
         'individualQualification' => 'getIndividualQualification',
+        'areaCode' => 'getAreaCode',
+        'corporateImageName' => 'getCorporateImageName',
         'introductionUrl' => 'getIntroductionUrl',
+        'corporateBrandName' => 'getCorporateBrandName',
         'contactPersonTelephone' => 'getContactPersonTelephone',
         'contactPersonMobile' => 'getContactPersonMobile',
-        'websites' => 'getWebsites',
-        'areaCode' => 'getAreaCode'
+        'websites' => 'getWebsites'
     ];
 
     /**
@@ -243,13 +248,14 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['corporationName'] = isset($data['corporationName']) ? $data['corporationName'] : null;
         $this->container['corporationLicence'] = isset($data['corporationLicence']) ? $data['corporationLicence'] : null;
         $this->container['certificationImageId'] = isset($data['certificationImageId']) ? $data['certificationImageId'] : null;
-        $this->container['corporateImageName'] = isset($data['corporateImageName']) ? $data['corporateImageName'] : null;
         $this->container['individualQualification'] = isset($data['individualQualification']) ? $data['individualQualification'] : null;
+        $this->container['areaCode'] = isset($data['areaCode']) ? $data['areaCode'] : null;
+        $this->container['corporateImageName'] = isset($data['corporateImageName']) ? $data['corporateImageName'] : null;
         $this->container['introductionUrl'] = isset($data['introductionUrl']) ? $data['introductionUrl'] : null;
+        $this->container['corporateBrandName'] = isset($data['corporateBrandName']) ? $data['corporateBrandName'] : null;
         $this->container['contactPersonTelephone'] = isset($data['contactPersonTelephone']) ? $data['contactPersonTelephone'] : null;
         $this->container['contactPersonMobile'] = isset($data['contactPersonMobile']) ? $data['contactPersonMobile'] : null;
         $this->container['websites'] = isset($data['websites']) ? $data['websites'] : null;
-        $this->container['areaCode'] = isset($data['areaCode']) ? $data['areaCode'] : null;
     }
 
     /**
@@ -421,30 +427,6 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets corporateImageName
-     *
-     * @return string|mixed
-     */
-    public function getCorporateImageName()
-    {
-        return $this->container['corporateImageName'];
-    }
-
-    /**
-     * Sets corporateImageName
-     *
-     * @param string|mixed $corporateImageName corporateImageName
-     *
-     * @return $this
-     */
-    public function setCorporateImageName($corporateImageName)
-    {
-        $this->container['corporateImageName'] = $corporateImageName;
-
-        return $this;
-    }
-
-    /**
      * Gets individualQualification
      *
      * @return \TencentAds\Model\IndividualQualification|mixed
@@ -469,6 +451,54 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets areaCode
+     *
+     * @return int|mixed
+     */
+    public function getAreaCode()
+    {
+        return $this->container['areaCode'];
+    }
+
+    /**
+     * Sets areaCode
+     *
+     * @param int|mixed $areaCode areaCode
+     *
+     * @return $this
+     */
+    public function setAreaCode($areaCode)
+    {
+        $this->container['areaCode'] = $areaCode;
+
+        return $this;
+    }
+
+    /**
+     * Gets corporateImageName
+     *
+     * @return string|mixed
+     */
+    public function getCorporateImageName()
+    {
+        return $this->container['corporateImageName'];
+    }
+
+    /**
+     * Sets corporateImageName
+     *
+     * @param string|mixed $corporateImageName corporateImageName
+     *
+     * @return $this
+     */
+    public function setCorporateImageName($corporateImageName)
+    {
+        $this->container['corporateImageName'] = $corporateImageName;
+
+        return $this;
+    }
+
+    /**
      * Gets introductionUrl
      *
      * @return string|mixed
@@ -488,6 +518,30 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     public function setIntroductionUrl($introductionUrl)
     {
         $this->container['introductionUrl'] = $introductionUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets corporateBrandName
+     *
+     * @return string|mixed
+     */
+    public function getCorporateBrandName()
+    {
+        return $this->container['corporateBrandName'];
+    }
+
+    /**
+     * Sets corporateBrandName
+     *
+     * @param string|mixed $corporateBrandName corporateBrandName
+     *
+     * @return $this
+     */
+    public function setCorporateBrandName($corporateBrandName)
+    {
+        $this->container['corporateBrandName'] = $corporateBrandName;
 
         return $this;
     }
@@ -560,30 +614,6 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     public function setWebsites($websites)
     {
         $this->container['websites'] = $websites;
-
-        return $this;
-    }
-
-    /**
-     * Gets areaCode
-     *
-     * @return int|mixed
-     */
-    public function getAreaCode()
-    {
-        return $this->container['areaCode'];
-    }
-
-    /**
-     * Sets areaCode
-     *
-     * @param int|mixed $areaCode areaCode
-     *
-     * @return $this
-     */
-    public function setAreaCode($areaCode)
-    {
-        $this->container['areaCode'] = $areaCode;
 
         return $this;
     }

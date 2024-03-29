@@ -58,7 +58,7 @@ class AdgroupsUpdateDailyBudgetRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
-        'updateDailyBudgetSpec' => '\TencentAds\Model\V3\UpdateDailyBudgetStruct[]'
+        'updateDailyBudgetSpec' => '\TencentAds\Model\V3\AdgroupsUpdateDailyBudgetUpdateDailyBudgetStruct[]'
     ];
 
     /**
@@ -237,7 +237,7 @@ class AdgroupsUpdateDailyBudgetRequest implements ModelInterface, ArrayAccess
     /**
      * Gets updateDailyBudgetSpec
      *
-     * @return \TencentAds\Model\V3\UpdateDailyBudgetStruct[]|mixed
+     * @return \TencentAds\Model\V3\AdgroupsUpdateDailyBudgetUpdateDailyBudgetStruct[]|mixed
      */
     public function getUpdateDailyBudgetSpec()
     {
@@ -247,7 +247,7 @@ class AdgroupsUpdateDailyBudgetRequest implements ModelInterface, ArrayAccess
     /**
      * Sets updateDailyBudgetSpec
      *
-     * @param \TencentAds\Model\V3\UpdateDailyBudgetStruct[]|mixed $updateDailyBudgetSpec updateDailyBudgetSpec
+     * @param \TencentAds\Model\V3\AdgroupsUpdateDailyBudgetUpdateDailyBudgetStruct[]|mixed $updateDailyBudgetSpec updateDailyBudgetSpec
      *
      * @return $this
      */

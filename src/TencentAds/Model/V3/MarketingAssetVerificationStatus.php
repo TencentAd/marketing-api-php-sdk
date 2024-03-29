@@ -49,6 +49,8 @@ class MarketingAssetVerificationStatus
     const CONSISTENT = 'MARKETING_ASSET_VERIFICATION_STATUS_CONSISTENT';
     const PART_CONSISTENT = 'MARKETING_ASSET_VERIFICATION_STATUS_PART_CONSISTENT';
     const INCONSISTENT = 'MARKETING_ASSET_VERIFICATION_STATUS_INCONSISTENT';
+    const NO_VERIFY = 'MARKETING_ASSET_VERIFICATION_STATUS_NO_VERIFY';
+    const FAILED = 'MARKETING_ASSET_VERIFICATION_STATUS_FAILED';
     
     /**
      * Gets allowable values of the enum
@@ -62,6 +64,8 @@ class MarketingAssetVerificationStatus
             self::CONSISTENT,
             self::PART_CONSISTENT,
             self::INCONSISTENT,
+            self::NO_VERIFY,
+            self::FAILED,
         ];
     }
 }

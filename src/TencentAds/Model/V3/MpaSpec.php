@@ -58,7 +58,7 @@ class MpaSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'recommendMethod' => 'int[]'
+        'recommendMethodIds' => 'int[]'
     ];
 
     /**
@@ -67,7 +67,7 @@ class MpaSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'recommendMethod' => 'int64'
+        'recommendMethodIds' => 'int64'
     ];
 
     /**
@@ -97,7 +97,7 @@ class MpaSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'recommendMethod' => 'recommend_method'
+        'recommendMethodIds' => 'recommend_method_ids'
     ];
 
     /**
@@ -106,7 +106,7 @@ class MpaSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'recommendMethod' => 'setRecommendMethod'
+        'recommendMethodIds' => 'setRecommendMethodIds'
     ];
 
     /**
@@ -115,7 +115,7 @@ class MpaSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'recommendMethod' => 'getRecommendMethod'
+        'recommendMethodIds' => 'getRecommendMethodIds'
     ];
 
     /**
@@ -178,7 +178,7 @@ class MpaSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['recommendMethod'] = isset($data['recommendMethod']) ? $data['recommendMethod'] : null;
+        $this->container['recommendMethodIds'] = isset($data['recommendMethodIds']) ? $data['recommendMethodIds'] : null;
     }
 
     /**
@@ -206,25 +206,25 @@ class MpaSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets recommendMethod
+     * Gets recommendMethodIds
      *
      * @return int[]|mixed
      */
-    public function getRecommendMethod()
+    public function getRecommendMethodIds()
     {
-        return $this->container['recommendMethod'];
+        return $this->container['recommendMethodIds'];
     }
 
     /**
-     * Sets recommendMethod
+     * Sets recommendMethodIds
      *
-     * @param int[]|mixed $recommendMethod recommendMethod
+     * @param int[]|mixed $recommendMethodIds recommendMethodIds
      *
      * @return $this
      */
-    public function setRecommendMethod($recommendMethod)
+    public function setRecommendMethodIds($recommendMethodIds)
     {
-        $this->container['recommendMethod'] = $recommendMethod;
+        $this->container['recommendMethodIds'] = $recommendMethodIds;
 
         return $this;
     }

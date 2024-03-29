@@ -38,9 +38,9 @@ class AgencyRealtimeCostApiContainer extends ApiContainer
     {
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
-            $advertiserId = isset($params['advertiser_id']) ? $params['advertiser_id'] : null;
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->agencyRealtimeCostGet($advertiserId, $fields);
+            $response = $this->apiInstance->agencyRealtimeCostGet($accountId, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -55,9 +55,9 @@ class AgencyRealtimeCostApiContainer extends ApiContainer
     {
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
-            $advertiserId = isset($params['advertiser_id']) ? $params['advertiser_id'] : null;
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->agencyRealtimeCostGetAsync($advertiserId, $fields);
+            $response = $this->apiInstance->agencyRealtimeCostGetAsync($accountId, $fields);
             return $response;
         });
     }

@@ -672,7 +672,7 @@ class WechatPagesApi
      *
      * 获取微信落地页列表
      *
-     * @param  int|mixed $advertiserId advertiserId (required)
+     * @param  int|mixed $accountId accountId (required)
      * @param  int|mixed $ownerUid ownerUid (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering filtering (optional)
      * @param  int|mixed $page page (optional)
@@ -683,9 +683,9 @@ class WechatPagesApi
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\WechatPagesGetResponse|mixed
      */
-    public function wechatPagesGet($advertiserId, $ownerUid = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function wechatPagesGet($accountId, $ownerUid = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
-        list($response) = $this->wechatPagesGetWithHttpInfo($advertiserId, $ownerUid, $filtering, $page, $pageSize, $fields);
+        list($response) = $this->wechatPagesGetWithHttpInfo($accountId, $ownerUid, $filtering, $page, $pageSize, $fields);
         return $response;
     }
 
@@ -694,7 +694,7 @@ class WechatPagesApi
      *
      * 获取微信落地页列表
      *
-     * @param  int|mixed $advertiserId (required)
+     * @param  int|mixed $accountId (required)
      * @param  int|mixed $ownerUid (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
@@ -705,10 +705,10 @@ class WechatPagesApi
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\WechatPagesGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function wechatPagesGetWithHttpInfo($advertiserId, $ownerUid = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function wechatPagesGetWithHttpInfo($accountId, $ownerUid = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\WechatPagesGetResponse';
-        $request = $this->wechatPagesGetRequest($advertiserId, $ownerUid, $filtering, $page, $pageSize, $fields);
+        $request = $this->wechatPagesGetRequest($accountId, $ownerUid, $filtering, $page, $pageSize, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -774,7 +774,7 @@ class WechatPagesApi
      *
      * 获取微信落地页列表
      *
-     * @param  int|mixed $advertiserId (required)
+     * @param  int|mixed $accountId (required)
      * @param  int|mixed $ownerUid (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
@@ -784,9 +784,9 @@ class WechatPagesApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function wechatPagesGetAsync($advertiserId, $ownerUid = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function wechatPagesGetAsync($accountId, $ownerUid = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
-        return $this->wechatPagesGetAsyncWithHttpInfo($advertiserId, $ownerUid, $filtering, $page, $pageSize, $fields)
+        return $this->wechatPagesGetAsyncWithHttpInfo($accountId, $ownerUid, $filtering, $page, $pageSize, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -799,7 +799,7 @@ class WechatPagesApi
      *
      * 获取微信落地页列表
      *
-     * @param  int|mixed $advertiserId (required)
+     * @param  int|mixed $accountId (required)
      * @param  int|mixed $ownerUid (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
@@ -809,10 +809,10 @@ class WechatPagesApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function wechatPagesGetAsyncWithHttpInfo($advertiserId, $ownerUid = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function wechatPagesGetAsyncWithHttpInfo($accountId, $ownerUid = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\WechatPagesGetResponse';
-        $request = $this->wechatPagesGetRequest($advertiserId, $ownerUid, $filtering, $page, $pageSize, $fields);
+        $request = $this->wechatPagesGetRequest($accountId, $ownerUid, $filtering, $page, $pageSize, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -854,7 +854,7 @@ class WechatPagesApi
     /**
      * Create request for operation 'wechatPagesGet'
      *
-     * @param  int|mixed $advertiserId (required)
+     * @param  int|mixed $accountId (required)
      * @param  int|mixed $ownerUid (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
@@ -864,12 +864,12 @@ class WechatPagesApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function wechatPagesGetRequest($advertiserId, $ownerUid = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    protected function wechatPagesGetRequest($accountId, $ownerUid = null, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
-        // verify the required parameter 'advertiserId' is set
-        if ($advertiserId === null || (is_array($advertiserId) && count($advertiserId) === 0)) {
+        // verify the required parameter 'accountId' is set
+        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $advertiserId when calling wechatPagesGet'
+                'Missing the required parameter $accountId when calling wechatPagesGet'
             );
         }
 
@@ -881,8 +881,8 @@ class WechatPagesApi
         $multipart = false;
 
         // query params
-        if ($advertiserId !== null) {
-            $queryParams['advertiser_id'] = ObjectSerializer::toQueryValue($advertiserId);
+        if ($accountId !== null) {
+            $queryParams['account_id'] = ObjectSerializer::toQueryValue($accountId);
         }
         // query params
         if ($ownerUid !== null) {

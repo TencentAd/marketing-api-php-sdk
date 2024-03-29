@@ -69,6 +69,7 @@ class PageSpec implements ModelInterface, ArrayAccess
         'wechatMiniProgramSpec' => '\TencentAds\Model\V3\WechatMiniProgramPageSpec',
         'wechatCanvasMiniProgramSpec' => '\TencentAds\Model\V3\CanvasWechatPageSpec',
         'qqAppMiniProgramSpec' => '\TencentAds\Model\V3\QqAppMiniProgramPageSpec',
+        'qqMiniGameSpec' => '\TencentAds\Model\V3\QqMiniGamePageSpec',
         'simpleWechatCanvasSpec' => '\TencentAds\Model\V3\SimpleCanvasWechatSpec',
         'wechatFocusDialogSpec' => '\TencentAds\Model\V3\WechatFocusDialog',
         'wechatConsultSpec' => '\TencentAds\Model\V3\WechatConsultPageSpec',
@@ -105,6 +106,7 @@ class PageSpec implements ModelInterface, ArrayAccess
         'wechatMiniProgramSpec' => null,
         'wechatCanvasMiniProgramSpec' => null,
         'qqAppMiniProgramSpec' => null,
+        'qqMiniGameSpec' => null,
         'simpleWechatCanvasSpec' => null,
         'wechatFocusDialogSpec' => null,
         'wechatConsultSpec' => null,
@@ -162,6 +164,7 @@ class PageSpec implements ModelInterface, ArrayAccess
         'wechatMiniProgramSpec' => 'wechat_mini_program_spec',
         'wechatCanvasMiniProgramSpec' => 'wechat_canvas_mini_program_spec',
         'qqAppMiniProgramSpec' => 'qq_app_mini_program_spec',
+        'qqMiniGameSpec' => 'qq_mini_game_spec',
         'simpleWechatCanvasSpec' => 'simple_wechat_canvas_spec',
         'wechatFocusDialogSpec' => 'wechat_focus_dialog_spec',
         'wechatConsultSpec' => 'wechat_consult_spec',
@@ -198,6 +201,7 @@ class PageSpec implements ModelInterface, ArrayAccess
         'wechatMiniProgramSpec' => 'setWechatMiniProgramSpec',
         'wechatCanvasMiniProgramSpec' => 'setWechatCanvasMiniProgramSpec',
         'qqAppMiniProgramSpec' => 'setQqAppMiniProgramSpec',
+        'qqMiniGameSpec' => 'setQqMiniGameSpec',
         'simpleWechatCanvasSpec' => 'setSimpleWechatCanvasSpec',
         'wechatFocusDialogSpec' => 'setWechatFocusDialogSpec',
         'wechatConsultSpec' => 'setWechatConsultSpec',
@@ -234,6 +238,7 @@ class PageSpec implements ModelInterface, ArrayAccess
         'wechatMiniProgramSpec' => 'getWechatMiniProgramSpec',
         'wechatCanvasMiniProgramSpec' => 'getWechatCanvasMiniProgramSpec',
         'qqAppMiniProgramSpec' => 'getQqAppMiniProgramSpec',
+        'qqMiniGameSpec' => 'getQqMiniGameSpec',
         'simpleWechatCanvasSpec' => 'getSimpleWechatCanvasSpec',
         'wechatFocusDialogSpec' => 'getWechatFocusDialogSpec',
         'wechatConsultSpec' => 'getWechatConsultSpec',
@@ -324,6 +329,7 @@ class PageSpec implements ModelInterface, ArrayAccess
         $this->container['wechatMiniProgramSpec'] = isset($data['wechatMiniProgramSpec']) ? $data['wechatMiniProgramSpec'] : null;
         $this->container['wechatCanvasMiniProgramSpec'] = isset($data['wechatCanvasMiniProgramSpec']) ? $data['wechatCanvasMiniProgramSpec'] : null;
         $this->container['qqAppMiniProgramSpec'] = isset($data['qqAppMiniProgramSpec']) ? $data['qqAppMiniProgramSpec'] : null;
+        $this->container['qqMiniGameSpec'] = isset($data['qqMiniGameSpec']) ? $data['qqMiniGameSpec'] : null;
         $this->container['simpleWechatCanvasSpec'] = isset($data['simpleWechatCanvasSpec']) ? $data['simpleWechatCanvasSpec'] : null;
         $this->container['wechatFocusDialogSpec'] = isset($data['wechatFocusDialogSpec']) ? $data['wechatFocusDialogSpec'] : null;
         $this->container['wechatConsultSpec'] = isset($data['wechatConsultSpec']) ? $data['wechatConsultSpec'] : null;
@@ -627,6 +633,30 @@ class PageSpec implements ModelInterface, ArrayAccess
     public function setQqAppMiniProgramSpec($qqAppMiniProgramSpec)
     {
         $this->container['qqAppMiniProgramSpec'] = $qqAppMiniProgramSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets qqMiniGameSpec
+     *
+     * @return \TencentAds\Model\V3\QqMiniGamePageSpec|mixed
+     */
+    public function getQqMiniGameSpec()
+    {
+        return $this->container['qqMiniGameSpec'];
+    }
+
+    /**
+     * Sets qqMiniGameSpec
+     *
+     * @param \TencentAds\Model\V3\QqMiniGamePageSpec|mixed $qqMiniGameSpec qqMiniGameSpec
+     *
+     * @return $this
+     */
+    public function setQqMiniGameSpec($qqMiniGameSpec)
+    {
+        $this->container['qqMiniGameSpec'] = $qqMiniGameSpec;
 
         return $this;
     }

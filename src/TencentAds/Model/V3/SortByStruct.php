@@ -59,7 +59,7 @@ class SortByStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'field' => 'string',
-        'desc' => '\TencentAds\Model\V3\SortedType'
+        'desc' => '\TencentAds\Model\V3\Sort'
     ];
 
     /**
@@ -238,7 +238,7 @@ class SortByStruct implements ModelInterface, ArrayAccess
     /**
      * Gets desc
      *
-     * @return \TencentAds\Model\V3\SortedType|mixed
+     * @return \TencentAds\Model\V3\Sort|mixed
      */
     public function getDesc()
     {
@@ -248,7 +248,7 @@ class SortByStruct implements ModelInterface, ArrayAccess
     /**
      * Sets desc
      *
-     * @param \TencentAds\Model\V3\SortedType|mixed $desc desc
+     * @param \TencentAds\Model\V3\Sort|mixed $desc desc
      *
      * @return $this
      */

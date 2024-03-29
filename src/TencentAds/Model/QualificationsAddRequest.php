@@ -57,9 +57,9 @@ class QualificationsAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'accountId' => 'int',
         'qualificationType' => '\TencentAds\Model\QualificationType',
-        'qualificationSpec' => '\TencentAds\Model\QualificationSpec',
-        'accountId' => 'int'
+        'qualificationSpec' => '\TencentAds\Model\QualificationSpec'
     ];
 
     /**
@@ -68,9 +68,9 @@ class QualificationsAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
+        'accountId' => 'int64',
         'qualificationType' => null,
-        'qualificationSpec' => null,
-        'accountId' => 'int64'
+        'qualificationSpec' => null
     ];
 
     /**
@@ -100,9 +100,9 @@ class QualificationsAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'accountId' => 'account_id',
         'qualificationType' => 'qualification_type',
-        'qualificationSpec' => 'qualification_spec',
-        'accountId' => 'account_id'
+        'qualificationSpec' => 'qualification_spec'
     ];
 
     /**
@@ -111,9 +111,9 @@ class QualificationsAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'accountId' => 'setAccountId',
         'qualificationType' => 'setQualificationType',
-        'qualificationSpec' => 'setQualificationSpec',
-        'accountId' => 'setAccountId'
+        'qualificationSpec' => 'setQualificationSpec'
     ];
 
     /**
@@ -122,9 +122,9 @@ class QualificationsAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'accountId' => 'getAccountId',
         'qualificationType' => 'getQualificationType',
-        'qualificationSpec' => 'getQualificationSpec',
-        'accountId' => 'getAccountId'
+        'qualificationSpec' => 'getQualificationSpec'
     ];
 
     /**
@@ -187,9 +187,9 @@ class QualificationsAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['qualificationType'] = isset($data['qualificationType']) ? $data['qualificationType'] : null;
         $this->container['qualificationSpec'] = isset($data['qualificationSpec']) ? $data['qualificationSpec'] : null;
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
     /**
@@ -215,6 +215,30 @@ class QualificationsAddRequest implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets accountId
+     *
+     * @return int|mixed
+     */
+    public function getAccountId()
+    {
+        return $this->container['accountId'];
+    }
+
+    /**
+     * Sets accountId
+     *
+     * @param int|mixed $accountId accountId
+     *
+     * @return $this
+     */
+    public function setAccountId($accountId)
+    {
+        $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
 
     /**
      * Gets qualificationType
@@ -260,30 +284,6 @@ class QualificationsAddRequest implements ModelInterface, ArrayAccess
     public function setQualificationSpec($qualificationSpec)
     {
         $this->container['qualificationSpec'] = $qualificationSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets accountId
-     *
-     * @return int|mixed
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int|mixed $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
 
         return $this;
     }

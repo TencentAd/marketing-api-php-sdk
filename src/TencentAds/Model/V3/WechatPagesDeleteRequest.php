@@ -57,7 +57,7 @@ class WechatPagesDeleteRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'advertiserId' => 'int',
+        'accountId' => 'int',
         'pageId' => 'int'
     ];
 
@@ -67,7 +67,7 @@ class WechatPagesDeleteRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'advertiserId' => 'int64',
+        'accountId' => 'int64',
         'pageId' => 'int64'
     ];
 
@@ -98,7 +98,7 @@ class WechatPagesDeleteRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'advertiserId' => 'advertiser_id',
+        'accountId' => 'account_id',
         'pageId' => 'page_id'
     ];
 
@@ -108,7 +108,7 @@ class WechatPagesDeleteRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'advertiserId' => 'setAdvertiserId',
+        'accountId' => 'setAccountId',
         'pageId' => 'setPageId'
     ];
 
@@ -118,7 +118,7 @@ class WechatPagesDeleteRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'advertiserId' => 'getAdvertiserId',
+        'accountId' => 'getAccountId',
         'pageId' => 'getPageId'
     ];
 
@@ -182,7 +182,7 @@ class WechatPagesDeleteRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['advertiserId'] = isset($data['advertiserId']) ? $data['advertiserId'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['pageId'] = isset($data['pageId']) ? $data['pageId'] : null;
     }
 
@@ -211,25 +211,25 @@ class WechatPagesDeleteRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets advertiserId
+     * Gets accountId
      *
      * @return int|mixed
      */
-    public function getAdvertiserId()
+    public function getAccountId()
     {
-        return $this->container['advertiserId'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets advertiserId
+     * Sets accountId
      *
-     * @param int|mixed $advertiserId advertiserId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setAdvertiserId($advertiserId)
+    public function setAccountId($accountId)
     {
-        $this->container['advertiserId'] = $advertiserId;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }

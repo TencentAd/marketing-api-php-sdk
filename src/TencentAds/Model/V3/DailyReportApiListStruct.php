@@ -884,6 +884,9 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'expOverallTopPosition' => 'int',
         'expOverallTopPv' => 'int',
         'clkTopPv' => 'int',
+        'queryword' => 'string',
+        'adId' => 'int',
+        'triggerType' => 'int',
         'imageId' => 'string',
         'videoId' => 'string',
         'projectId' => 'int',
@@ -1722,6 +1725,9 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'expOverallTopPosition' => 'int64',
         'expOverallTopPv' => 'int64',
         'clkTopPv' => 'int64',
+        'queryword' => null,
+        'adId' => 'int64',
+        'triggerType' => 'int64',
         'imageId' => null,
         'videoId' => null,
         'projectId' => 'int64',
@@ -2581,6 +2587,9 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'expOverallTopPosition' => 'exp_overall_top_position',
         'expOverallTopPv' => 'exp_overall_top_pv',
         'clkTopPv' => 'clk_top_pv',
+        'queryword' => 'queryword',
+        'adId' => 'ad_id',
+        'triggerType' => 'trigger_type',
         'imageId' => 'image_id',
         'videoId' => 'video_id',
         'projectId' => 'project_id',
@@ -3419,6 +3428,9 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'expOverallTopPosition' => 'setExpOverallTopPosition',
         'expOverallTopPv' => 'setExpOverallTopPv',
         'clkTopPv' => 'setClkTopPv',
+        'queryword' => 'setQueryword',
+        'adId' => 'setAdId',
+        'triggerType' => 'setTriggerType',
         'imageId' => 'setImageId',
         'videoId' => 'setVideoId',
         'projectId' => 'setProjectId',
@@ -4257,6 +4269,9 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'expOverallTopPosition' => 'getExpOverallTopPosition',
         'expOverallTopPv' => 'getExpOverallTopPv',
         'clkTopPv' => 'getClkTopPv',
+        'queryword' => 'getQueryword',
+        'adId' => 'getAdId',
+        'triggerType' => 'getTriggerType',
         'imageId' => 'getImageId',
         'videoId' => 'getVideoId',
         'projectId' => 'getProjectId',
@@ -5149,6 +5164,9 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['expOverallTopPosition'] = isset($data['expOverallTopPosition']) ? $data['expOverallTopPosition'] : null;
         $this->container['expOverallTopPv'] = isset($data['expOverallTopPv']) ? $data['expOverallTopPv'] : null;
         $this->container['clkTopPv'] = isset($data['clkTopPv']) ? $data['clkTopPv'] : null;
+        $this->container['queryword'] = isset($data['queryword']) ? $data['queryword'] : null;
+        $this->container['adId'] = isset($data['adId']) ? $data['adId'] : null;
+        $this->container['triggerType'] = isset($data['triggerType']) ? $data['triggerType'] : null;
         $this->container['imageId'] = isset($data['imageId']) ? $data['imageId'] : null;
         $this->container['videoId'] = isset($data['videoId']) ? $data['videoId'] : null;
         $this->container['projectId'] = isset($data['projectId']) ? $data['projectId'] : null;
@@ -24999,6 +25017,78 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setClkTopPv($clkTopPv)
     {
         $this->container['clkTopPv'] = $clkTopPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets queryword
+     *
+     * @return string|mixed
+     */
+    public function getQueryword()
+    {
+        return $this->container['queryword'];
+    }
+
+    /**
+     * Sets queryword
+     *
+     * @param string|mixed $queryword queryword
+     *
+     * @return $this
+     */
+    public function setQueryword($queryword)
+    {
+        $this->container['queryword'] = $queryword;
+
+        return $this;
+    }
+
+    /**
+     * Gets adId
+     *
+     * @return int|mixed
+     */
+    public function getAdId()
+    {
+        return $this->container['adId'];
+    }
+
+    /**
+     * Sets adId
+     *
+     * @param int|mixed $adId adId
+     *
+     * @return $this
+     */
+    public function setAdId($adId)
+    {
+        $this->container['adId'] = $adId;
+
+        return $this;
+    }
+
+    /**
+     * Gets triggerType
+     *
+     * @return int|mixed
+     */
+    public function getTriggerType()
+    {
+        return $this->container['triggerType'];
+    }
+
+    /**
+     * Sets triggerType
+     *
+     * @param int|mixed $triggerType triggerType
+     *
+     * @return $this
+     */
+    public function setTriggerType($triggerType)
+    {
+        $this->container['triggerType'] = $triggerType;
 
         return $this;
     }

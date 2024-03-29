@@ -53,6 +53,7 @@ class PageType
     const FENGYE_ECOMMERCE = 'PAGE_TYPE_FENGYE_ECOMMERCE';
     const XJ_QUICK = 'PAGE_TYPE_XJ_QUICK';
     const QQ_APP_MINI_PROGRAM = 'PAGE_TYPE_QQ_APP_MINI_PROGRAM';
+    const QQ_MINI_GAME = 'PAGE_TYPE_QQ_MINI_GAME';
     const APP_DEEP_LINK = 'PAGE_TYPE_APP_DEEP_LINK';
     const APP_MARKET = 'PAGE_TYPE_APP_MARKET';
     const ANDROID_QUICK_APP = 'PAGE_TYPE_ANDROID_QUICK_APP';
@@ -95,6 +96,7 @@ class PageType
             self::FENGYE_ECOMMERCE,
             self::XJ_QUICK,
             self::QQ_APP_MINI_PROGRAM,
+            self::QQ_MINI_GAME,
             self::APP_DEEP_LINK,
             self::APP_MARKET,
             self::ANDROID_QUICK_APP,

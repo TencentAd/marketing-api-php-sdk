@@ -58,7 +58,7 @@ class MaterialUpdateStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'type' => '\TencentAds\Model\V3\ProgrammedMaterialType',
+        'type' => '\TencentAds\Model\V3\TemplateType',
         'mediaId' => 'int'
     ];
 
@@ -214,7 +214,7 @@ class MaterialUpdateStruct implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \TencentAds\Model\V3\ProgrammedMaterialType|mixed
+     * @return \TencentAds\Model\V3\TemplateType|mixed
      */
     public function getType()
     {
@@ -224,7 +224,7 @@ class MaterialUpdateStruct implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \TencentAds\Model\V3\ProgrammedMaterialType|mixed $type type
+     * @param \TencentAds\Model\V3\TemplateType|mixed $type type
      *
      * @return $this
      */

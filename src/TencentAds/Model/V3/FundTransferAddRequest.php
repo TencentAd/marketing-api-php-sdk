@@ -57,7 +57,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'advertiserId' => 'int',
+        'accountId' => 'int',
         'fundType' => '\TencentAds\Model\V3\AccountTypeMap',
         'amount' => 'int',
         'transferType' => 'string',
@@ -73,7 +73,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'advertiserId' => 'int64',
+        'accountId' => 'int64',
         'fundType' => null,
         'amount' => 'int64',
         'transferType' => null,
@@ -110,7 +110,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'advertiserId' => 'advertiser_id',
+        'accountId' => 'account_id',
         'fundType' => 'fund_type',
         'amount' => 'amount',
         'transferType' => 'transfer_type',
@@ -126,7 +126,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'advertiserId' => 'setAdvertiserId',
+        'accountId' => 'setAccountId',
         'fundType' => 'setFundType',
         'amount' => 'setAmount',
         'transferType' => 'setTransferType',
@@ -142,7 +142,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'advertiserId' => 'getAdvertiserId',
+        'accountId' => 'getAccountId',
         'fundType' => 'getFundType',
         'amount' => 'getAmount',
         'transferType' => 'getTransferType',
@@ -212,7 +212,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['advertiserId'] = isset($data['advertiserId']) ? $data['advertiserId'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['fundType'] = isset($data['fundType']) ? $data['fundType'] : null;
         $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
         $this->container['transferType'] = isset($data['transferType']) ? $data['transferType'] : null;
@@ -247,25 +247,25 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets advertiserId
+     * Gets accountId
      *
      * @return int|mixed
      */
-    public function getAdvertiserId()
+    public function getAccountId()
     {
-        return $this->container['advertiserId'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets advertiserId
+     * Sets accountId
      *
-     * @param int|mixed $advertiserId advertiserId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setAdvertiserId($advertiserId)
+    public function setAccountId($accountId)
     {
-        $this->container['advertiserId'] = $advertiserId;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }

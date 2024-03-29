@@ -22,6 +22,7 @@ use TencentAds\Container\AdqReportsUpgradeStatusApiContainer;
 use TencentAds\Container\AdsApiContainer;
 use TencentAds\Container\AdvertiserApiContainer;
 use TencentAds\Container\AdvertiserDailyBudgetApiContainer;
+use TencentAds\Container\AgencyApiContainer;
 use TencentAds\Container\AgencyRealtimeCostApiContainer;
 use TencentAds\Container\AppAndroidChannelPackagesApiContainer;
 use TencentAds\Container\AssetPermissionsApiContainer;
@@ -249,6 +250,9 @@ class App
 
     /** @var AdvertiserDailyBudgetApiContainer */
     public $advertiserDailyBudgetApiContainer;
+
+    /** @var AgencyApiContainer */
+    public $agencyApiContainer;
 
     /** @var AgencyRealtimeCostApiContainer */
     public $agencyRealtimeCostApiContainer;
@@ -1026,6 +1030,20 @@ class App
             $this->advertiserDailyBudgetApiContainer = $container;
         }
         return $this->advertiserDailyBudgetApiContainer;
+    }
+
+
+    /**
+     * @return AgencyApiContainer
+     */
+    public function agency()
+    {
+        if (empty($this->agencyApiContainer)) {
+            $container = new AgencyApiContainer();
+            $container->init($this, $this->getClient());
+            $this->agencyApiContainer = $container;
+        }
+        return $this->agencyApiContainer;
     }
 
 

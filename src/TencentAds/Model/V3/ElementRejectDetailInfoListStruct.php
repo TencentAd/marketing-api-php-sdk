@@ -61,6 +61,7 @@ class ElementRejectDetailInfoListStruct implements ModelInterface, ArrayAccess
         'elementName' => 'string',
         'elementType' => '\TencentAds\Model\V3\ReviewElementType',
         'elementValue' => 'string',
+        'componentInfo' => '\TencentAds\Model\V3\ComponentInfoCanEmpty',
         'reason' => 'string',
         'reviewStatus' => '\TencentAds\Model\V3\ReviewResultStatus',
         'rejectInfoLocation' => '\TencentAds\Model\V3\RejectInfoLocationListStruct[]'
@@ -75,6 +76,7 @@ class ElementRejectDetailInfoListStruct implements ModelInterface, ArrayAccess
         'elementName' => null,
         'elementType' => null,
         'elementValue' => null,
+        'componentInfo' => null,
         'reason' => null,
         'reviewStatus' => null,
         'rejectInfoLocation' => null
@@ -110,6 +112,7 @@ class ElementRejectDetailInfoListStruct implements ModelInterface, ArrayAccess
         'elementName' => 'element_name',
         'elementType' => 'element_type',
         'elementValue' => 'element_value',
+        'componentInfo' => 'component_info',
         'reason' => 'reason',
         'reviewStatus' => 'review_status',
         'rejectInfoLocation' => 'reject_info_location'
@@ -124,6 +127,7 @@ class ElementRejectDetailInfoListStruct implements ModelInterface, ArrayAccess
         'elementName' => 'setElementName',
         'elementType' => 'setElementType',
         'elementValue' => 'setElementValue',
+        'componentInfo' => 'setComponentInfo',
         'reason' => 'setReason',
         'reviewStatus' => 'setReviewStatus',
         'rejectInfoLocation' => 'setRejectInfoLocation'
@@ -138,6 +142,7 @@ class ElementRejectDetailInfoListStruct implements ModelInterface, ArrayAccess
         'elementName' => 'getElementName',
         'elementType' => 'getElementType',
         'elementValue' => 'getElementValue',
+        'componentInfo' => 'getComponentInfo',
         'reason' => 'getReason',
         'reviewStatus' => 'getReviewStatus',
         'rejectInfoLocation' => 'getRejectInfoLocation'
@@ -206,6 +211,7 @@ class ElementRejectDetailInfoListStruct implements ModelInterface, ArrayAccess
         $this->container['elementName'] = isset($data['elementName']) ? $data['elementName'] : null;
         $this->container['elementType'] = isset($data['elementType']) ? $data['elementType'] : null;
         $this->container['elementValue'] = isset($data['elementValue']) ? $data['elementValue'] : null;
+        $this->container['componentInfo'] = isset($data['componentInfo']) ? $data['componentInfo'] : null;
         $this->container['reason'] = isset($data['reason']) ? $data['reason'] : null;
         $this->container['reviewStatus'] = isset($data['reviewStatus']) ? $data['reviewStatus'] : null;
         $this->container['rejectInfoLocation'] = isset($data['rejectInfoLocation']) ? $data['rejectInfoLocation'] : null;
@@ -303,6 +309,30 @@ class ElementRejectDetailInfoListStruct implements ModelInterface, ArrayAccess
     public function setElementValue($elementValue)
     {
         $this->container['elementValue'] = $elementValue;
+
+        return $this;
+    }
+
+    /**
+     * Gets componentInfo
+     *
+     * @return \TencentAds\Model\V3\ComponentInfoCanEmpty|mixed
+     */
+    public function getComponentInfo()
+    {
+        return $this->container['componentInfo'];
+    }
+
+    /**
+     * Sets componentInfo
+     *
+     * @param \TencentAds\Model\V3\ComponentInfoCanEmpty|mixed $componentInfo componentInfo
+     *
+     * @return $this
+     */
+    public function setComponentInfo($componentInfo)
+    {
+        $this->container['componentInfo'] = $componentInfo;
 
         return $this;
     }

@@ -58,7 +58,8 @@ class AdvertiserGetResponseData implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'list' => '\TencentAds\Model\AdvertiserGetListStruct[]',
-        'pageInfo' => '\TencentAds\Model\Conf'
+        'pageInfo' => '\TencentAds\Model\PageInfo',
+        'cursorPageInfo' => '\TencentAds\Model\CursorPageInfo'
     ];
 
     /**
@@ -68,7 +69,8 @@ class AdvertiserGetResponseData implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'list' => null,
-        'pageInfo' => null
+        'pageInfo' => null,
+        'cursorPageInfo' => null
     ];
 
     /**
@@ -99,7 +101,8 @@ class AdvertiserGetResponseData implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'list' => 'list',
-        'pageInfo' => 'page_info'
+        'pageInfo' => 'page_info',
+        'cursorPageInfo' => 'cursor_page_info'
     ];
 
     /**
@@ -109,7 +112,8 @@ class AdvertiserGetResponseData implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'list' => 'setList',
-        'pageInfo' => 'setPageInfo'
+        'pageInfo' => 'setPageInfo',
+        'cursorPageInfo' => 'setCursorPageInfo'
     ];
 
     /**
@@ -119,7 +123,8 @@ class AdvertiserGetResponseData implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'list' => 'getList',
-        'pageInfo' => 'getPageInfo'
+        'pageInfo' => 'getPageInfo',
+        'cursorPageInfo' => 'getCursorPageInfo'
     ];
 
     /**
@@ -184,6 +189,7 @@ class AdvertiserGetResponseData implements ModelInterface, ArrayAccess
     {
         $this->container['list'] = isset($data['list']) ? $data['list'] : null;
         $this->container['pageInfo'] = isset($data['pageInfo']) ? $data['pageInfo'] : null;
+        $this->container['cursorPageInfo'] = isset($data['cursorPageInfo']) ? $data['cursorPageInfo'] : null;
     }
 
     /**
@@ -237,7 +243,7 @@ class AdvertiserGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets pageInfo
      *
-     * @return \TencentAds\Model\Conf|mixed
+     * @return \TencentAds\Model\PageInfo|mixed
      */
     public function getPageInfo()
     {
@@ -247,13 +253,37 @@ class AdvertiserGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets pageInfo
      *
-     * @param \TencentAds\Model\Conf|mixed $pageInfo pageInfo
+     * @param \TencentAds\Model\PageInfo|mixed $pageInfo pageInfo
      *
      * @return $this
      */
     public function setPageInfo($pageInfo)
     {
         $this->container['pageInfo'] = $pageInfo;
+
+        return $this;
+    }
+
+    /**
+     * Gets cursorPageInfo
+     *
+     * @return \TencentAds\Model\CursorPageInfo|mixed
+     */
+    public function getCursorPageInfo()
+    {
+        return $this->container['cursorPageInfo'];
+    }
+
+    /**
+     * Sets cursorPageInfo
+     *
+     * @param \TencentAds\Model\CursorPageInfo|mixed $cursorPageInfo cursorPageInfo
+     *
+     * @return $this
+     */
+    public function setCursorPageInfo($cursorPageInfo)
+    {
+        $this->container['cursorPageInfo'] = $cursorPageInfo;
 
         return $this;
     }

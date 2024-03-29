@@ -38,14 +38,14 @@ class RealtimeCostApiContainer extends ApiContainer
     {
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
-            $advertiserId = isset($params['advertiser_id']) ? $params['advertiser_id'] : null;
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $level = isset($params['level']) ? $params['level'] : null;
             $date = isset($params['date']) ? $params['date'] : null;
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->realtimeCostGet($advertiserId, $level, $date, $filtering, $page, $pageSize, $fields);
+            $response = $this->apiInstance->realtimeCostGet($accountId, $level, $date, $filtering, $page, $pageSize, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -60,14 +60,14 @@ class RealtimeCostApiContainer extends ApiContainer
     {
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
-            $advertiserId = isset($params['advertiser_id']) ? $params['advertiser_id'] : null;
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $level = isset($params['level']) ? $params['level'] : null;
             $date = isset($params['date']) ? $params['date'] : null;
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->realtimeCostGetAsync($advertiserId, $level, $date, $filtering, $page, $pageSize, $fields);
+            $response = $this->apiInstance->realtimeCostGetAsync($accountId, $level, $date, $filtering, $page, $pageSize, $fields);
             return $response;
         });
     }

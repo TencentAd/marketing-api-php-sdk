@@ -57,7 +57,7 @@ class WechatPagesAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'advertiserId' => 'int',
+        'accountId' => 'int',
         'pageName' => 'string',
         'pageTemplateId' => 'int',
         'pageElements' => '\TencentAds\Model\V3\PageElementsStruct[]',
@@ -70,7 +70,7 @@ class WechatPagesAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'advertiserId' => 'int64',
+        'accountId' => 'int64',
         'pageName' => null,
         'pageTemplateId' => 'int64',
         'pageElements' => null,
@@ -104,7 +104,7 @@ class WechatPagesAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'advertiserId' => 'advertiser_id',
+        'accountId' => 'account_id',
         'pageName' => 'page_name',
         'pageTemplateId' => 'page_template_id',
         'pageElements' => 'page_elements',
@@ -117,7 +117,7 @@ class WechatPagesAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'advertiserId' => 'setAdvertiserId',
+        'accountId' => 'setAccountId',
         'pageName' => 'setPageName',
         'pageTemplateId' => 'setPageTemplateId',
         'pageElements' => 'setPageElements',
@@ -130,7 +130,7 @@ class WechatPagesAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'advertiserId' => 'getAdvertiserId',
+        'accountId' => 'getAccountId',
         'pageName' => 'getPageName',
         'pageTemplateId' => 'getPageTemplateId',
         'pageElements' => 'getPageElements',
@@ -197,7 +197,7 @@ class WechatPagesAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['advertiserId'] = isset($data['advertiserId']) ? $data['advertiserId'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['pageName'] = isset($data['pageName']) ? $data['pageName'] : null;
         $this->container['pageTemplateId'] = isset($data['pageTemplateId']) ? $data['pageTemplateId'] : null;
         $this->container['pageElements'] = isset($data['pageElements']) ? $data['pageElements'] : null;
@@ -229,25 +229,25 @@ class WechatPagesAddRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets advertiserId
+     * Gets accountId
      *
      * @return int|mixed
      */
-    public function getAdvertiserId()
+    public function getAccountId()
     {
-        return $this->container['advertiserId'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets advertiserId
+     * Sets accountId
      *
-     * @param int|mixed $advertiserId advertiserId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setAdvertiserId($advertiserId)
+    public function setAccountId($accountId)
     {
-        $this->container['advertiserId'] = $advertiserId;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }

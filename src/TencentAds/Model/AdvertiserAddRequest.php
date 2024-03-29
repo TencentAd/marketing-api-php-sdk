@@ -58,15 +58,16 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'corporationName' => 'string',
+        'corporationLicence' => 'string',
         'certificationImageId' => 'string',
-        'systemIndustryId' => 'int',
-        'introductionUrl' => 'string',
         'individualQualification' => '\TencentAds\Model\IndividualQualification',
+        'systemIndustryId' => 'int',
+        'areaCode' => 'int',
         'corporateImageName' => 'string',
+        'introductionUrl' => 'string',
+        'corporateBrandName' => 'string',
         'contactPersonTelephone' => 'string',
-        'contactPersonMobile' => 'string',
-        'certificationNumber' => 'string',
-        'areaCode' => 'int'
+        'contactPersonMobile' => 'string'
     ];
 
     /**
@@ -76,15 +77,16 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'corporationName' => null,
+        'corporationLicence' => null,
         'certificationImageId' => null,
-        'systemIndustryId' => 'int64',
-        'introductionUrl' => null,
         'individualQualification' => null,
+        'systemIndustryId' => 'int64',
+        'areaCode' => 'int64',
         'corporateImageName' => null,
+        'introductionUrl' => null,
+        'corporateBrandName' => null,
         'contactPersonTelephone' => null,
-        'contactPersonMobile' => null,
-        'certificationNumber' => null,
-        'areaCode' => 'int64'
+        'contactPersonMobile' => null
     ];
 
     /**
@@ -115,15 +117,16 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'corporationName' => 'corporation_name',
+        'corporationLicence' => 'corporation_licence',
         'certificationImageId' => 'certification_image_id',
-        'systemIndustryId' => 'system_industry_id',
-        'introductionUrl' => 'introduction_url',
         'individualQualification' => 'individual_qualification',
+        'systemIndustryId' => 'system_industry_id',
+        'areaCode' => 'area_code',
         'corporateImageName' => 'corporate_image_name',
+        'introductionUrl' => 'introduction_url',
+        'corporateBrandName' => 'corporate_brand_name',
         'contactPersonTelephone' => 'contact_person_telephone',
-        'contactPersonMobile' => 'contact_person_mobile',
-        'certificationNumber' => 'certification_number',
-        'areaCode' => 'area_code'
+        'contactPersonMobile' => 'contact_person_mobile'
     ];
 
     /**
@@ -133,15 +136,16 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'corporationName' => 'setCorporationName',
+        'corporationLicence' => 'setCorporationLicence',
         'certificationImageId' => 'setCertificationImageId',
-        'systemIndustryId' => 'setSystemIndustryId',
-        'introductionUrl' => 'setIntroductionUrl',
         'individualQualification' => 'setIndividualQualification',
+        'systemIndustryId' => 'setSystemIndustryId',
+        'areaCode' => 'setAreaCode',
         'corporateImageName' => 'setCorporateImageName',
+        'introductionUrl' => 'setIntroductionUrl',
+        'corporateBrandName' => 'setCorporateBrandName',
         'contactPersonTelephone' => 'setContactPersonTelephone',
-        'contactPersonMobile' => 'setContactPersonMobile',
-        'certificationNumber' => 'setCertificationNumber',
-        'areaCode' => 'setAreaCode'
+        'contactPersonMobile' => 'setContactPersonMobile'
     ];
 
     /**
@@ -151,15 +155,16 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'corporationName' => 'getCorporationName',
+        'corporationLicence' => 'getCorporationLicence',
         'certificationImageId' => 'getCertificationImageId',
-        'systemIndustryId' => 'getSystemIndustryId',
-        'introductionUrl' => 'getIntroductionUrl',
         'individualQualification' => 'getIndividualQualification',
+        'systemIndustryId' => 'getSystemIndustryId',
+        'areaCode' => 'getAreaCode',
         'corporateImageName' => 'getCorporateImageName',
+        'introductionUrl' => 'getIntroductionUrl',
+        'corporateBrandName' => 'getCorporateBrandName',
         'contactPersonTelephone' => 'getContactPersonTelephone',
-        'contactPersonMobile' => 'getContactPersonMobile',
-        'certificationNumber' => 'getCertificationNumber',
-        'areaCode' => 'getAreaCode'
+        'contactPersonMobile' => 'getContactPersonMobile'
     ];
 
     /**
@@ -223,15 +228,16 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['corporationName'] = isset($data['corporationName']) ? $data['corporationName'] : null;
+        $this->container['corporationLicence'] = isset($data['corporationLicence']) ? $data['corporationLicence'] : null;
         $this->container['certificationImageId'] = isset($data['certificationImageId']) ? $data['certificationImageId'] : null;
-        $this->container['systemIndustryId'] = isset($data['systemIndustryId']) ? $data['systemIndustryId'] : null;
-        $this->container['introductionUrl'] = isset($data['introductionUrl']) ? $data['introductionUrl'] : null;
         $this->container['individualQualification'] = isset($data['individualQualification']) ? $data['individualQualification'] : null;
+        $this->container['systemIndustryId'] = isset($data['systemIndustryId']) ? $data['systemIndustryId'] : null;
+        $this->container['areaCode'] = isset($data['areaCode']) ? $data['areaCode'] : null;
         $this->container['corporateImageName'] = isset($data['corporateImageName']) ? $data['corporateImageName'] : null;
+        $this->container['introductionUrl'] = isset($data['introductionUrl']) ? $data['introductionUrl'] : null;
+        $this->container['corporateBrandName'] = isset($data['corporateBrandName']) ? $data['corporateBrandName'] : null;
         $this->container['contactPersonTelephone'] = isset($data['contactPersonTelephone']) ? $data['contactPersonTelephone'] : null;
         $this->container['contactPersonMobile'] = isset($data['contactPersonMobile']) ? $data['contactPersonMobile'] : null;
-        $this->container['certificationNumber'] = isset($data['certificationNumber']) ? $data['certificationNumber'] : null;
-        $this->container['areaCode'] = isset($data['areaCode']) ? $data['areaCode'] : null;
     }
 
     /**
@@ -283,6 +289,30 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets corporationLicence
+     *
+     * @return string|mixed
+     */
+    public function getCorporationLicence()
+    {
+        return $this->container['corporationLicence'];
+    }
+
+    /**
+     * Sets corporationLicence
+     *
+     * @param string|mixed $corporationLicence corporationLicence
+     *
+     * @return $this
+     */
+    public function setCorporationLicence($corporationLicence)
+    {
+        $this->container['corporationLicence'] = $corporationLicence;
+
+        return $this;
+    }
+
+    /**
      * Gets certificationImageId
      *
      * @return string|mixed
@@ -302,54 +332,6 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     public function setCertificationImageId($certificationImageId)
     {
         $this->container['certificationImageId'] = $certificationImageId;
-
-        return $this;
-    }
-
-    /**
-     * Gets systemIndustryId
-     *
-     * @return int|mixed
-     */
-    public function getSystemIndustryId()
-    {
-        return $this->container['systemIndustryId'];
-    }
-
-    /**
-     * Sets systemIndustryId
-     *
-     * @param int|mixed $systemIndustryId systemIndustryId
-     *
-     * @return $this
-     */
-    public function setSystemIndustryId($systemIndustryId)
-    {
-        $this->container['systemIndustryId'] = $systemIndustryId;
-
-        return $this;
-    }
-
-    /**
-     * Gets introductionUrl
-     *
-     * @return string|mixed
-     */
-    public function getIntroductionUrl()
-    {
-        return $this->container['introductionUrl'];
-    }
-
-    /**
-     * Sets introductionUrl
-     *
-     * @param string|mixed $introductionUrl introductionUrl
-     *
-     * @return $this
-     */
-    public function setIntroductionUrl($introductionUrl)
-    {
-        $this->container['introductionUrl'] = $introductionUrl;
 
         return $this;
     }
@@ -379,6 +361,54 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets systemIndustryId
+     *
+     * @return int|mixed
+     */
+    public function getSystemIndustryId()
+    {
+        return $this->container['systemIndustryId'];
+    }
+
+    /**
+     * Sets systemIndustryId
+     *
+     * @param int|mixed $systemIndustryId systemIndustryId
+     *
+     * @return $this
+     */
+    public function setSystemIndustryId($systemIndustryId)
+    {
+        $this->container['systemIndustryId'] = $systemIndustryId;
+
+        return $this;
+    }
+
+    /**
+     * Gets areaCode
+     *
+     * @return int|mixed
+     */
+    public function getAreaCode()
+    {
+        return $this->container['areaCode'];
+    }
+
+    /**
+     * Sets areaCode
+     *
+     * @param int|mixed $areaCode areaCode
+     *
+     * @return $this
+     */
+    public function setAreaCode($areaCode)
+    {
+        $this->container['areaCode'] = $areaCode;
+
+        return $this;
+    }
+
+    /**
      * Gets corporateImageName
      *
      * @return string|mixed
@@ -398,6 +428,54 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     public function setCorporateImageName($corporateImageName)
     {
         $this->container['corporateImageName'] = $corporateImageName;
+
+        return $this;
+    }
+
+    /**
+     * Gets introductionUrl
+     *
+     * @return string|mixed
+     */
+    public function getIntroductionUrl()
+    {
+        return $this->container['introductionUrl'];
+    }
+
+    /**
+     * Sets introductionUrl
+     *
+     * @param string|mixed $introductionUrl introductionUrl
+     *
+     * @return $this
+     */
+    public function setIntroductionUrl($introductionUrl)
+    {
+        $this->container['introductionUrl'] = $introductionUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets corporateBrandName
+     *
+     * @return string|mixed
+     */
+    public function getCorporateBrandName()
+    {
+        return $this->container['corporateBrandName'];
+    }
+
+    /**
+     * Sets corporateBrandName
+     *
+     * @param string|mixed $corporateBrandName corporateBrandName
+     *
+     * @return $this
+     */
+    public function setCorporateBrandName($corporateBrandName)
+    {
+        $this->container['corporateBrandName'] = $corporateBrandName;
 
         return $this;
     }
@@ -446,54 +524,6 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     public function setContactPersonMobile($contactPersonMobile)
     {
         $this->container['contactPersonMobile'] = $contactPersonMobile;
-
-        return $this;
-    }
-
-    /**
-     * Gets certificationNumber
-     *
-     * @return string|mixed
-     */
-    public function getCertificationNumber()
-    {
-        return $this->container['certificationNumber'];
-    }
-
-    /**
-     * Sets certificationNumber
-     *
-     * @param string|mixed $certificationNumber certificationNumber
-     *
-     * @return $this
-     */
-    public function setCertificationNumber($certificationNumber)
-    {
-        $this->container['certificationNumber'] = $certificationNumber;
-
-        return $this;
-    }
-
-    /**
-     * Gets areaCode
-     *
-     * @return int|mixed
-     */
-    public function getAreaCode()
-    {
-        return $this->container['areaCode'];
-    }
-
-    /**
-     * Sets areaCode
-     *
-     * @param int|mixed $areaCode areaCode
-     *
-     * @return $this
-     */
-    public function setAreaCode($areaCode)
-    {
-        $this->container['areaCode'] = $areaCode;
 
         return $this;
     }

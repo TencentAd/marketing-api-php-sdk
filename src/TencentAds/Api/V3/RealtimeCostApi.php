@@ -92,7 +92,7 @@ class RealtimeCostApi
      *
      * 获取实时消耗
      *
-     * @param  int|mixed $advertiserId advertiserId (required)
+     * @param  int|mixed $accountId accountId (required)
      * @param  string|mixed $level level (required)
      * @param  string|mixed $date date (required)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering filtering (optional)
@@ -104,9 +104,9 @@ class RealtimeCostApi
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\RealtimeCostGetResponse|mixed
      */
-    public function realtimeCostGet($advertiserId, $level, $date, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function realtimeCostGet($accountId, $level, $date, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
-        list($response) = $this->realtimeCostGetWithHttpInfo($advertiserId, $level, $date, $filtering, $page, $pageSize, $fields);
+        list($response) = $this->realtimeCostGetWithHttpInfo($accountId, $level, $date, $filtering, $page, $pageSize, $fields);
         return $response;
     }
 
@@ -115,7 +115,7 @@ class RealtimeCostApi
      *
      * 获取实时消耗
      *
-     * @param  int|mixed $advertiserId (required)
+     * @param  int|mixed $accountId (required)
      * @param  string|mixed $level (required)
      * @param  string|mixed $date (required)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
@@ -127,10 +127,10 @@ class RealtimeCostApi
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\RealtimeCostGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function realtimeCostGetWithHttpInfo($advertiserId, $level, $date, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function realtimeCostGetWithHttpInfo($accountId, $level, $date, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\RealtimeCostGetResponse';
-        $request = $this->realtimeCostGetRequest($advertiserId, $level, $date, $filtering, $page, $pageSize, $fields);
+        $request = $this->realtimeCostGetRequest($accountId, $level, $date, $filtering, $page, $pageSize, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -196,7 +196,7 @@ class RealtimeCostApi
      *
      * 获取实时消耗
      *
-     * @param  int|mixed $advertiserId (required)
+     * @param  int|mixed $accountId (required)
      * @param  string|mixed $level (required)
      * @param  string|mixed $date (required)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
@@ -207,9 +207,9 @@ class RealtimeCostApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function realtimeCostGetAsync($advertiserId, $level, $date, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function realtimeCostGetAsync($accountId, $level, $date, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
-        return $this->realtimeCostGetAsyncWithHttpInfo($advertiserId, $level, $date, $filtering, $page, $pageSize, $fields)
+        return $this->realtimeCostGetAsyncWithHttpInfo($accountId, $level, $date, $filtering, $page, $pageSize, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -222,7 +222,7 @@ class RealtimeCostApi
      *
      * 获取实时消耗
      *
-     * @param  int|mixed $advertiserId (required)
+     * @param  int|mixed $accountId (required)
      * @param  string|mixed $level (required)
      * @param  string|mixed $date (required)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
@@ -233,10 +233,10 @@ class RealtimeCostApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function realtimeCostGetAsyncWithHttpInfo($advertiserId, $level, $date, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function realtimeCostGetAsyncWithHttpInfo($accountId, $level, $date, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\RealtimeCostGetResponse';
-        $request = $this->realtimeCostGetRequest($advertiserId, $level, $date, $filtering, $page, $pageSize, $fields);
+        $request = $this->realtimeCostGetRequest($accountId, $level, $date, $filtering, $page, $pageSize, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -278,7 +278,7 @@ class RealtimeCostApi
     /**
      * Create request for operation 'realtimeCostGet'
      *
-     * @param  int|mixed $advertiserId (required)
+     * @param  int|mixed $accountId (required)
      * @param  string|mixed $level (required)
      * @param  string|mixed $date (required)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
@@ -289,12 +289,12 @@ class RealtimeCostApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function realtimeCostGetRequest($advertiserId, $level, $date, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    protected function realtimeCostGetRequest($accountId, $level, $date, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
-        // verify the required parameter 'advertiserId' is set
-        if ($advertiserId === null || (is_array($advertiserId) && count($advertiserId) === 0)) {
+        // verify the required parameter 'accountId' is set
+        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $advertiserId when calling realtimeCostGet'
+                'Missing the required parameter $accountId when calling realtimeCostGet'
             );
         }
         // verify the required parameter 'level' is set
@@ -318,8 +318,8 @@ class RealtimeCostApi
         $multipart = false;
 
         // query params
-        if ($advertiserId !== null) {
-            $queryParams['advertiser_id'] = ObjectSerializer::toQueryValue($advertiserId);
+        if ($accountId !== null) {
+            $queryParams['account_id'] = ObjectSerializer::toQueryValue($accountId);
         }
         // query params
         if ($level !== null) {

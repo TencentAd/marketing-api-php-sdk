@@ -92,16 +92,16 @@ class AgencyRealtimeCostApi
      *
      * 服务商当日分账户实时消耗
      *
-     * @param  int|mixed $advertiserId advertiserId (required)
+     * @param  int|mixed $accountId accountId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\AgencyRealtimeCostGetResponse|mixed
      */
-    public function agencyRealtimeCostGet($advertiserId, $fields = null)
+    public function agencyRealtimeCostGet($accountId, $fields = null)
     {
-        list($response) = $this->agencyRealtimeCostGetWithHttpInfo($advertiserId, $fields);
+        list($response) = $this->agencyRealtimeCostGetWithHttpInfo($accountId, $fields);
         return $response;
     }
 
@@ -110,17 +110,17 @@ class AgencyRealtimeCostApi
      *
      * 服务商当日分账户实时消耗
      *
-     * @param  int|mixed $advertiserId (required)
+     * @param  int|mixed $accountId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\AgencyRealtimeCostGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function agencyRealtimeCostGetWithHttpInfo($advertiserId, $fields = null)
+    public function agencyRealtimeCostGetWithHttpInfo($accountId, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\AgencyRealtimeCostGetResponse';
-        $request = $this->agencyRealtimeCostGetRequest($advertiserId, $fields);
+        $request = $this->agencyRealtimeCostGetRequest($accountId, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -186,15 +186,15 @@ class AgencyRealtimeCostApi
      *
      * 服务商当日分账户实时消耗
      *
-     * @param  int|mixed $advertiserId (required)
+     * @param  int|mixed $accountId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function agencyRealtimeCostGetAsync($advertiserId, $fields = null)
+    public function agencyRealtimeCostGetAsync($accountId, $fields = null)
     {
-        return $this->agencyRealtimeCostGetAsyncWithHttpInfo($advertiserId, $fields)
+        return $this->agencyRealtimeCostGetAsyncWithHttpInfo($accountId, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -207,16 +207,16 @@ class AgencyRealtimeCostApi
      *
      * 服务商当日分账户实时消耗
      *
-     * @param  int|mixed $advertiserId (required)
+     * @param  int|mixed $accountId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function agencyRealtimeCostGetAsyncWithHttpInfo($advertiserId, $fields = null)
+    public function agencyRealtimeCostGetAsyncWithHttpInfo($accountId, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\AgencyRealtimeCostGetResponse';
-        $request = $this->agencyRealtimeCostGetRequest($advertiserId, $fields);
+        $request = $this->agencyRealtimeCostGetRequest($accountId, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -258,18 +258,18 @@ class AgencyRealtimeCostApi
     /**
      * Create request for operation 'agencyRealtimeCostGet'
      *
-     * @param  int|mixed $advertiserId (required)
+     * @param  int|mixed $accountId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function agencyRealtimeCostGetRequest($advertiserId, $fields = null)
+    protected function agencyRealtimeCostGetRequest($accountId, $fields = null)
     {
-        // verify the required parameter 'advertiserId' is set
-        if ($advertiserId === null || (is_array($advertiserId) && count($advertiserId) === 0)) {
+        // verify the required parameter 'accountId' is set
+        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $advertiserId when calling agencyRealtimeCostGet'
+                'Missing the required parameter $accountId when calling agencyRealtimeCostGet'
             );
         }
 
@@ -281,8 +281,8 @@ class AgencyRealtimeCostApi
         $multipart = false;
 
         // query params
-        if ($advertiserId !== null) {
-            $queryParams['advertiser_id'] = ObjectSerializer::toQueryValue($advertiserId);
+        if ($accountId !== null) {
+            $queryParams['account_id'] = ObjectSerializer::toQueryValue($accountId);
         }
         // query params
         if (is_array($fields)) {

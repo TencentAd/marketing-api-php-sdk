@@ -58,8 +58,6 @@ class MarketingAssetVerification implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'marketingAssetName' => 'string',
-        'marketingTargetAttr' => '\TencentAds\Model\V3\MarketingTargetAttr',
         'marketingAssetVerificationStatus' => '\TencentAds\Model\V3\MarketingAssetVerificationStatus',
         'marketingAssetVerificationStatusCn' => 'string',
         'landingPageList' => '\TencentAds\Model\V3\MarketingAssetVerificationLandingPageStruct[]'
@@ -71,8 +69,6 @@ class MarketingAssetVerification implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'marketingAssetName' => null,
-        'marketingTargetAttr' => null,
         'marketingAssetVerificationStatus' => null,
         'marketingAssetVerificationStatusCn' => null,
         'landingPageList' => null
@@ -105,8 +101,6 @@ class MarketingAssetVerification implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'marketingAssetName' => 'marketing_asset_name',
-        'marketingTargetAttr' => 'marketing_target_attr',
         'marketingAssetVerificationStatus' => 'marketing_asset_verification_status',
         'marketingAssetVerificationStatusCn' => 'marketing_asset_verification_status_cn',
         'landingPageList' => 'landing_page_list'
@@ -118,8 +112,6 @@ class MarketingAssetVerification implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'marketingAssetName' => 'setMarketingAssetName',
-        'marketingTargetAttr' => 'setMarketingTargetAttr',
         'marketingAssetVerificationStatus' => 'setMarketingAssetVerificationStatus',
         'marketingAssetVerificationStatusCn' => 'setMarketingAssetVerificationStatusCn',
         'landingPageList' => 'setLandingPageList'
@@ -131,8 +123,6 @@ class MarketingAssetVerification implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'marketingAssetName' => 'getMarketingAssetName',
-        'marketingTargetAttr' => 'getMarketingTargetAttr',
         'marketingAssetVerificationStatus' => 'getMarketingAssetVerificationStatus',
         'marketingAssetVerificationStatusCn' => 'getMarketingAssetVerificationStatusCn',
         'landingPageList' => 'getLandingPageList'
@@ -198,8 +188,6 @@ class MarketingAssetVerification implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['marketingAssetName'] = isset($data['marketingAssetName']) ? $data['marketingAssetName'] : null;
-        $this->container['marketingTargetAttr'] = isset($data['marketingTargetAttr']) ? $data['marketingTargetAttr'] : null;
         $this->container['marketingAssetVerificationStatus'] = isset($data['marketingAssetVerificationStatus']) ? $data['marketingAssetVerificationStatus'] : null;
         $this->container['marketingAssetVerificationStatusCn'] = isset($data['marketingAssetVerificationStatusCn']) ? $data['marketingAssetVerificationStatusCn'] : null;
         $this->container['landingPageList'] = isset($data['landingPageList']) ? $data['landingPageList'] : null;
@@ -228,54 +216,6 @@ class MarketingAssetVerification implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
-
-    /**
-     * Gets marketingAssetName
-     *
-     * @return string|mixed
-     */
-    public function getMarketingAssetName()
-    {
-        return $this->container['marketingAssetName'];
-    }
-
-    /**
-     * Sets marketingAssetName
-     *
-     * @param string|mixed $marketingAssetName marketingAssetName
-     *
-     * @return $this
-     */
-    public function setMarketingAssetName($marketingAssetName)
-    {
-        $this->container['marketingAssetName'] = $marketingAssetName;
-
-        return $this;
-    }
-
-    /**
-     * Gets marketingTargetAttr
-     *
-     * @return \TencentAds\Model\V3\MarketingTargetAttr|mixed
-     */
-    public function getMarketingTargetAttr()
-    {
-        return $this->container['marketingTargetAttr'];
-    }
-
-    /**
-     * Sets marketingTargetAttr
-     *
-     * @param \TencentAds\Model\V3\MarketingTargetAttr|mixed $marketingTargetAttr marketingTargetAttr
-     *
-     * @return $this
-     */
-    public function setMarketingTargetAttr($marketingTargetAttr)
-    {
-        $this->container['marketingTargetAttr'] = $marketingTargetAttr;
-
-        return $this;
-    }
 
     /**
      * Gets marketingAssetVerificationStatus

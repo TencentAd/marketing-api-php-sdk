@@ -92,16 +92,16 @@ class FundsApi
      *
      * 获取资金账户信息
      *
-     * @param  int|mixed $advertiserId advertiserId (required)
+     * @param  int|mixed $accountId accountId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\FundsGetResponse|mixed
      */
-    public function fundsGet($advertiserId, $fields = null)
+    public function fundsGet($accountId, $fields = null)
     {
-        list($response) = $this->fundsGetWithHttpInfo($advertiserId, $fields);
+        list($response) = $this->fundsGetWithHttpInfo($accountId, $fields);
         return $response;
     }
 
@@ -110,17 +110,17 @@ class FundsApi
      *
      * 获取资金账户信息
      *
-     * @param  int|mixed $advertiserId (required)
+     * @param  int|mixed $accountId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\FundsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function fundsGetWithHttpInfo($advertiserId, $fields = null)
+    public function fundsGetWithHttpInfo($accountId, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\FundsGetResponse';
-        $request = $this->fundsGetRequest($advertiserId, $fields);
+        $request = $this->fundsGetRequest($accountId, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -186,15 +186,15 @@ class FundsApi
      *
      * 获取资金账户信息
      *
-     * @param  int|mixed $advertiserId (required)
+     * @param  int|mixed $accountId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function fundsGetAsync($advertiserId, $fields = null)
+    public function fundsGetAsync($accountId, $fields = null)
     {
-        return $this->fundsGetAsyncWithHttpInfo($advertiserId, $fields)
+        return $this->fundsGetAsyncWithHttpInfo($accountId, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -207,16 +207,16 @@ class FundsApi
      *
      * 获取资金账户信息
      *
-     * @param  int|mixed $advertiserId (required)
+     * @param  int|mixed $accountId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function fundsGetAsyncWithHttpInfo($advertiserId, $fields = null)
+    public function fundsGetAsyncWithHttpInfo($accountId, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\FundsGetResponse';
-        $request = $this->fundsGetRequest($advertiserId, $fields);
+        $request = $this->fundsGetRequest($accountId, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -258,18 +258,18 @@ class FundsApi
     /**
      * Create request for operation 'fundsGet'
      *
-     * @param  int|mixed $advertiserId (required)
+     * @param  int|mixed $accountId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function fundsGetRequest($advertiserId, $fields = null)
+    protected function fundsGetRequest($accountId, $fields = null)
     {
-        // verify the required parameter 'advertiserId' is set
-        if ($advertiserId === null || (is_array($advertiserId) && count($advertiserId) === 0)) {
+        // verify the required parameter 'accountId' is set
+        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $advertiserId when calling fundsGet'
+                'Missing the required parameter $accountId when calling fundsGet'
             );
         }
 
@@ -281,8 +281,8 @@ class FundsApi
         $multipart = false;
 
         // query params
-        if ($advertiserId !== null) {
-            $queryParams['advertiser_id'] = ObjectSerializer::toQueryValue($advertiserId);
+        if ($accountId !== null) {
+            $queryParams['account_id'] = ObjectSerializer::toQueryValue($accountId);
         }
         // query params
         if (is_array($fields)) {

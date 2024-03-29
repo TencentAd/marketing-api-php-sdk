@@ -92,7 +92,7 @@ class FundStatementsDetailedApi
      *
      * 获取资金流水
      *
-     * @param  int|mixed $advertiserId advertiserId (required)
+     * @param  int|mixed $accountId accountId (required)
      * @param  string|mixed $fundType fundType (required)
      * @param  \TencentAds\Model\V3\DateRangeTransaction|mixed $dateRange dateRange (required)
      * @param  int|mixed $page page (optional)
@@ -103,9 +103,9 @@ class FundStatementsDetailedApi
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\FundStatementsDetailedGetResponse|mixed
      */
-    public function fundStatementsDetailedGet($advertiserId, $fundType, $dateRange, $page = null, $pageSize = null, $fields = null)
+    public function fundStatementsDetailedGet($accountId, $fundType, $dateRange, $page = null, $pageSize = null, $fields = null)
     {
-        list($response) = $this->fundStatementsDetailedGetWithHttpInfo($advertiserId, $fundType, $dateRange, $page, $pageSize, $fields);
+        list($response) = $this->fundStatementsDetailedGetWithHttpInfo($accountId, $fundType, $dateRange, $page, $pageSize, $fields);
         return $response;
     }
 
@@ -114,7 +114,7 @@ class FundStatementsDetailedApi
      *
      * 获取资金流水
      *
-     * @param  int|mixed $advertiserId (required)
+     * @param  int|mixed $accountId (required)
      * @param  string|mixed $fundType (required)
      * @param  \TencentAds\Model\V3\DateRangeTransaction|mixed $dateRange (required)
      * @param  int|mixed $page (optional)
@@ -125,10 +125,10 @@ class FundStatementsDetailedApi
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\FundStatementsDetailedGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function fundStatementsDetailedGetWithHttpInfo($advertiserId, $fundType, $dateRange, $page = null, $pageSize = null, $fields = null)
+    public function fundStatementsDetailedGetWithHttpInfo($accountId, $fundType, $dateRange, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\FundStatementsDetailedGetResponse';
-        $request = $this->fundStatementsDetailedGetRequest($advertiserId, $fundType, $dateRange, $page, $pageSize, $fields);
+        $request = $this->fundStatementsDetailedGetRequest($accountId, $fundType, $dateRange, $page, $pageSize, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -194,7 +194,7 @@ class FundStatementsDetailedApi
      *
      * 获取资金流水
      *
-     * @param  int|mixed $advertiserId (required)
+     * @param  int|mixed $accountId (required)
      * @param  string|mixed $fundType (required)
      * @param  \TencentAds\Model\V3\DateRangeTransaction|mixed $dateRange (required)
      * @param  int|mixed $page (optional)
@@ -204,9 +204,9 @@ class FundStatementsDetailedApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function fundStatementsDetailedGetAsync($advertiserId, $fundType, $dateRange, $page = null, $pageSize = null, $fields = null)
+    public function fundStatementsDetailedGetAsync($accountId, $fundType, $dateRange, $page = null, $pageSize = null, $fields = null)
     {
-        return $this->fundStatementsDetailedGetAsyncWithHttpInfo($advertiserId, $fundType, $dateRange, $page, $pageSize, $fields)
+        return $this->fundStatementsDetailedGetAsyncWithHttpInfo($accountId, $fundType, $dateRange, $page, $pageSize, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -219,7 +219,7 @@ class FundStatementsDetailedApi
      *
      * 获取资金流水
      *
-     * @param  int|mixed $advertiserId (required)
+     * @param  int|mixed $accountId (required)
      * @param  string|mixed $fundType (required)
      * @param  \TencentAds\Model\V3\DateRangeTransaction|mixed $dateRange (required)
      * @param  int|mixed $page (optional)
@@ -229,10 +229,10 @@ class FundStatementsDetailedApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function fundStatementsDetailedGetAsyncWithHttpInfo($advertiserId, $fundType, $dateRange, $page = null, $pageSize = null, $fields = null)
+    public function fundStatementsDetailedGetAsyncWithHttpInfo($accountId, $fundType, $dateRange, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\FundStatementsDetailedGetResponse';
-        $request = $this->fundStatementsDetailedGetRequest($advertiserId, $fundType, $dateRange, $page, $pageSize, $fields);
+        $request = $this->fundStatementsDetailedGetRequest($accountId, $fundType, $dateRange, $page, $pageSize, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -274,7 +274,7 @@ class FundStatementsDetailedApi
     /**
      * Create request for operation 'fundStatementsDetailedGet'
      *
-     * @param  int|mixed $advertiserId (required)
+     * @param  int|mixed $accountId (required)
      * @param  string|mixed $fundType (required)
      * @param  \TencentAds\Model\V3\DateRangeTransaction|mixed $dateRange (required)
      * @param  int|mixed $page (optional)
@@ -284,12 +284,12 @@ class FundStatementsDetailedApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function fundStatementsDetailedGetRequest($advertiserId, $fundType, $dateRange, $page = null, $pageSize = null, $fields = null)
+    protected function fundStatementsDetailedGetRequest($accountId, $fundType, $dateRange, $page = null, $pageSize = null, $fields = null)
     {
-        // verify the required parameter 'advertiserId' is set
-        if ($advertiserId === null || (is_array($advertiserId) && count($advertiserId) === 0)) {
+        // verify the required parameter 'accountId' is set
+        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $advertiserId when calling fundStatementsDetailedGet'
+                'Missing the required parameter $accountId when calling fundStatementsDetailedGet'
             );
         }
         // verify the required parameter 'fundType' is set
@@ -313,8 +313,8 @@ class FundStatementsDetailedApi
         $multipart = false;
 
         // query params
-        if ($advertiserId !== null) {
-            $queryParams['advertiser_id'] = ObjectSerializer::toQueryValue($advertiserId);
+        if ($accountId !== null) {
+            $queryParams['account_id'] = ObjectSerializer::toQueryValue($accountId);
         }
         // query params
         if ($fundType !== null) {

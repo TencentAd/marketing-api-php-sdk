@@ -58,9 +58,6 @@ class IndividualQualification implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'identificationUrl' => 'string',
-        'identificationUrl2' => 'string',
-        'photoUrl' => 'string',
         'identificationFrontImageId' => 'string',
         'identificationBackImageId' => 'string'
     ];
@@ -71,9 +68,6 @@ class IndividualQualification implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'identificationUrl' => null,
-        'identificationUrl2' => null,
-        'photoUrl' => null,
         'identificationFrontImageId' => null,
         'identificationBackImageId' => null
     ];
@@ -105,9 +99,6 @@ class IndividualQualification implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'identificationUrl' => 'identification_url',
-        'identificationUrl2' => 'identification_url2',
-        'photoUrl' => 'photo_url',
         'identificationFrontImageId' => 'identification_front_image_id',
         'identificationBackImageId' => 'identification_back_image_id'
     ];
@@ -118,9 +109,6 @@ class IndividualQualification implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'identificationUrl' => 'setIdentificationUrl',
-        'identificationUrl2' => 'setIdentificationUrl2',
-        'photoUrl' => 'setPhotoUrl',
         'identificationFrontImageId' => 'setIdentificationFrontImageId',
         'identificationBackImageId' => 'setIdentificationBackImageId'
     ];
@@ -131,9 +119,6 @@ class IndividualQualification implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'identificationUrl' => 'getIdentificationUrl',
-        'identificationUrl2' => 'getIdentificationUrl2',
-        'photoUrl' => 'getPhotoUrl',
         'identificationFrontImageId' => 'getIdentificationFrontImageId',
         'identificationBackImageId' => 'getIdentificationBackImageId'
     ];
@@ -198,9 +183,6 @@ class IndividualQualification implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['identificationUrl'] = isset($data['identificationUrl']) ? $data['identificationUrl'] : null;
-        $this->container['identificationUrl2'] = isset($data['identificationUrl2']) ? $data['identificationUrl2'] : null;
-        $this->container['photoUrl'] = isset($data['photoUrl']) ? $data['photoUrl'] : null;
         $this->container['identificationFrontImageId'] = isset($data['identificationFrontImageId']) ? $data['identificationFrontImageId'] : null;
         $this->container['identificationBackImageId'] = isset($data['identificationBackImageId']) ? $data['identificationBackImageId'] : null;
     }
@@ -228,78 +210,6 @@ class IndividualQualification implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
-
-    /**
-     * Gets identificationUrl
-     *
-     * @return string|mixed
-     */
-    public function getIdentificationUrl()
-    {
-        return $this->container['identificationUrl'];
-    }
-
-    /**
-     * Sets identificationUrl
-     *
-     * @param string|mixed $identificationUrl identificationUrl
-     *
-     * @return $this
-     */
-    public function setIdentificationUrl($identificationUrl)
-    {
-        $this->container['identificationUrl'] = $identificationUrl;
-
-        return $this;
-    }
-
-    /**
-     * Gets identificationUrl2
-     *
-     * @return string|mixed
-     */
-    public function getIdentificationUrl2()
-    {
-        return $this->container['identificationUrl2'];
-    }
-
-    /**
-     * Sets identificationUrl2
-     *
-     * @param string|mixed $identificationUrl2 identificationUrl2
-     *
-     * @return $this
-     */
-    public function setIdentificationUrl2($identificationUrl2)
-    {
-        $this->container['identificationUrl2'] = $identificationUrl2;
-
-        return $this;
-    }
-
-    /**
-     * Gets photoUrl
-     *
-     * @return string|mixed
-     */
-    public function getPhotoUrl()
-    {
-        return $this->container['photoUrl'];
-    }
-
-    /**
-     * Sets photoUrl
-     *
-     * @param string|mixed $photoUrl photoUrl
-     *
-     * @return $this
-     */
-    public function setPhotoUrl($photoUrl)
-    {
-        $this->container['photoUrl'] = $photoUrl;
-
-        return $this;
-    }
 
     /**
      * Gets identificationFrontImageId

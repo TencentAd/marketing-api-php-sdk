@@ -60,7 +60,8 @@ class MarketingAssetVerificationLandingPageStruct implements ModelInterface, Arr
     protected static $swaggerTypes = [
         'landingPageName' => 'string',
         'marketingAssetVerificationStatus' => '\TencentAds\Model\V3\MarketingAssetVerificationStatus',
-        'marketingAssetVerificationStatusCn' => 'string'
+        'marketingAssetVerificationStatusCn' => 'string',
+        'jumpInfo' => '\TencentAds\Model\V3\JumpinfoComponent'
     ];
 
     /**
@@ -71,7 +72,8 @@ class MarketingAssetVerificationLandingPageStruct implements ModelInterface, Arr
     protected static $swaggerFormats = [
         'landingPageName' => null,
         'marketingAssetVerificationStatus' => null,
-        'marketingAssetVerificationStatusCn' => null
+        'marketingAssetVerificationStatusCn' => null,
+        'jumpInfo' => null
     ];
 
     /**
@@ -103,7 +105,8 @@ class MarketingAssetVerificationLandingPageStruct implements ModelInterface, Arr
     protected static $attributeMap = [
         'landingPageName' => 'landing_page_name',
         'marketingAssetVerificationStatus' => 'marketing_asset_verification_status',
-        'marketingAssetVerificationStatusCn' => 'marketing_asset_verification_status_cn'
+        'marketingAssetVerificationStatusCn' => 'marketing_asset_verification_status_cn',
+        'jumpInfo' => 'jump_info'
     ];
 
     /**
@@ -114,7 +117,8 @@ class MarketingAssetVerificationLandingPageStruct implements ModelInterface, Arr
     protected static $setters = [
         'landingPageName' => 'setLandingPageName',
         'marketingAssetVerificationStatus' => 'setMarketingAssetVerificationStatus',
-        'marketingAssetVerificationStatusCn' => 'setMarketingAssetVerificationStatusCn'
+        'marketingAssetVerificationStatusCn' => 'setMarketingAssetVerificationStatusCn',
+        'jumpInfo' => 'setJumpInfo'
     ];
 
     /**
@@ -125,7 +129,8 @@ class MarketingAssetVerificationLandingPageStruct implements ModelInterface, Arr
     protected static $getters = [
         'landingPageName' => 'getLandingPageName',
         'marketingAssetVerificationStatus' => 'getMarketingAssetVerificationStatus',
-        'marketingAssetVerificationStatusCn' => 'getMarketingAssetVerificationStatusCn'
+        'marketingAssetVerificationStatusCn' => 'getMarketingAssetVerificationStatusCn',
+        'jumpInfo' => 'getJumpInfo'
     ];
 
     /**
@@ -191,6 +196,7 @@ class MarketingAssetVerificationLandingPageStruct implements ModelInterface, Arr
         $this->container['landingPageName'] = isset($data['landingPageName']) ? $data['landingPageName'] : null;
         $this->container['marketingAssetVerificationStatus'] = isset($data['marketingAssetVerificationStatus']) ? $data['marketingAssetVerificationStatus'] : null;
         $this->container['marketingAssetVerificationStatusCn'] = isset($data['marketingAssetVerificationStatusCn']) ? $data['marketingAssetVerificationStatusCn'] : null;
+        $this->container['jumpInfo'] = isset($data['jumpInfo']) ? $data['jumpInfo'] : null;
     }
 
     /**
@@ -285,6 +291,30 @@ class MarketingAssetVerificationLandingPageStruct implements ModelInterface, Arr
     public function setMarketingAssetVerificationStatusCn($marketingAssetVerificationStatusCn)
     {
         $this->container['marketingAssetVerificationStatusCn'] = $marketingAssetVerificationStatusCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets jumpInfo
+     *
+     * @return \TencentAds\Model\V3\JumpinfoComponent|mixed
+     */
+    public function getJumpInfo()
+    {
+        return $this->container['jumpInfo'];
+    }
+
+    /**
+     * Sets jumpInfo
+     *
+     * @param \TencentAds\Model\V3\JumpinfoComponent|mixed $jumpInfo jumpInfo
+     *
+     * @return $this
+     */
+    public function setJumpInfo($jumpInfo)
+    {
+        $this->container['jumpInfo'] = $jumpInfo;
 
         return $this;
     }

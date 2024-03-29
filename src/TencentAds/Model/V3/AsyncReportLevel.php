@@ -47,6 +47,7 @@ class AsyncReportLevel
     const ADVERTISER = 'REPORT_LEVEL_ADVERTISER';
     const ADGROUP = 'REPORT_LEVEL_ADGROUP';
     const BIDWORD = 'REPORT_LEVEL_BIDWORD';
+    const QUERYWORD = 'REPORT_LEVEL_QUERYWORD';
     const AGE = 'REPORT_LEVEL_AGE';
     const GENDER = 'REPORT_LEVEL_GENDER';
     const REGION = 'REPORT_LEVEL_REGION';
@@ -56,6 +57,7 @@ class AsyncReportLevel
     const MATERIAL_IMAGE = 'REPORT_LEVEL_MATERIAL_IMAGE';
     const MATERIAL_VIDEO = 'REPORT_LEVEL_MATERIAL_VIDEO';
     const CHANNEL = 'REPORT_LEVEL_CHANNEL';
+    const MARKETING_ASSET = 'REPORT_LEVEL_MARKETING_ASSET';
     
     /**
      * Gets allowable values of the enum
@@ -67,6 +69,7 @@ class AsyncReportLevel
             self::ADVERTISER,
             self::ADGROUP,
             self::BIDWORD,
+            self::QUERYWORD,
             self::AGE,
             self::GENDER,
             self::REGION,
@@ -76,6 +79,7 @@ class AsyncReportLevel
             self::MATERIAL_IMAGE,
             self::MATERIAL_VIDEO,
             self::CHANNEL,
+            self::MARKETING_ASSET,
         ];
     }
 }

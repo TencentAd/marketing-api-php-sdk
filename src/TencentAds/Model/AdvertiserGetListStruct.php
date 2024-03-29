@@ -58,14 +58,26 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'accountId' => 'int',
         'dailyBudget' => 'int',
         'systemStatus' => '\TencentAds\Model\CustomerSystemStatus',
+        'rejectMessage' => 'string',
         'corporationName' => 'string',
+        'corporationLicence' => 'string',
         'certificationImageId' => 'string',
+        'certificationImage' => 'string',
+        'identityNumber' => 'string',
         'individualQualification' => '\TencentAds\Model\IndividualQualificationRead',
+        'corporateImageName' => 'string',
+        'corporateImageLogo' => 'string',
+        'systemIndustryId' => 'int',
+        'customizedIndustry' => 'string',
         'introductionUrl' => 'string',
+        'corporateBrandName' => 'string',
         'industryQualificationImageIdList' => 'string[]',
+        'industryQualificationImage' => 'string[]',
         'adQualificationImageIdList' => 'string[]',
+        'adQualificationImage' => 'string[]',
         'contactPerson' => 'string',
         'contactPersonEmail' => 'string',
         'contactPersonTelephone' => 'string',
@@ -77,18 +89,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'operators' => '\TencentAds\Model\AdvertiserOperatorStruct[]',
         'memo' => 'string',
         'areaCode' => 'int',
-        'isLocalBusiness' => 'bool',
-        'accountId' => 'int',
-        'adQualificationImage' => 'string[]',
-        'certificationImage' => 'string',
-        'industryQualificationImage' => 'string[]',
-        'corporateImageName' => 'string',
-        'corporateImageLogo' => 'string',
-        'corporationLicence' => 'string',
-        'customizedIndustry' => 'string',
-        'identityNumber' => 'string',
-        'systemIndustryId' => 'int',
-        'rejectMessage' => 'string'
+        'isLocalBusiness' => 'bool'
     ];
 
     /**
@@ -97,14 +98,26 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
+        'accountId' => 'int64',
         'dailyBudget' => 'int64',
         'systemStatus' => null,
+        'rejectMessage' => null,
         'corporationName' => null,
+        'corporationLicence' => null,
         'certificationImageId' => null,
+        'certificationImage' => null,
+        'identityNumber' => null,
         'individualQualification' => null,
+        'corporateImageName' => null,
+        'corporateImageLogo' => null,
+        'systemIndustryId' => 'int64',
+        'customizedIndustry' => null,
         'introductionUrl' => null,
+        'corporateBrandName' => null,
         'industryQualificationImageIdList' => null,
+        'industryQualificationImage' => null,
         'adQualificationImageIdList' => null,
+        'adQualificationImage' => null,
         'contactPerson' => null,
         'contactPersonEmail' => null,
         'contactPersonTelephone' => null,
@@ -116,18 +129,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'operators' => null,
         'memo' => null,
         'areaCode' => 'int64',
-        'isLocalBusiness' => null,
-        'accountId' => 'int64',
-        'adQualificationImage' => null,
-        'certificationImage' => null,
-        'industryQualificationImage' => null,
-        'corporateImageName' => null,
-        'corporateImageLogo' => null,
-        'corporationLicence' => null,
-        'customizedIndustry' => null,
-        'identityNumber' => null,
-        'systemIndustryId' => 'int64',
-        'rejectMessage' => null
+        'isLocalBusiness' => null
     ];
 
     /**
@@ -157,14 +159,26 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'accountId' => 'account_id',
         'dailyBudget' => 'daily_budget',
         'systemStatus' => 'system_status',
+        'rejectMessage' => 'reject_message',
         'corporationName' => 'corporation_name',
+        'corporationLicence' => 'corporation_licence',
         'certificationImageId' => 'certification_image_id',
+        'certificationImage' => 'certification_image',
+        'identityNumber' => 'identity_number',
         'individualQualification' => 'individual_qualification',
+        'corporateImageName' => 'corporate_image_name',
+        'corporateImageLogo' => 'corporate_image_logo',
+        'systemIndustryId' => 'system_industry_id',
+        'customizedIndustry' => 'customized_industry',
         'introductionUrl' => 'introduction_url',
+        'corporateBrandName' => 'corporate_brand_name',
         'industryQualificationImageIdList' => 'industry_qualification_image_id_list',
+        'industryQualificationImage' => 'industry_qualification_image',
         'adQualificationImageIdList' => 'ad_qualification_image_id_list',
+        'adQualificationImage' => 'ad_qualification_image',
         'contactPerson' => 'contact_person',
         'contactPersonEmail' => 'contact_person_email',
         'contactPersonTelephone' => 'contact_person_telephone',
@@ -176,18 +190,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'operators' => 'operators',
         'memo' => 'memo',
         'areaCode' => 'area_code',
-        'isLocalBusiness' => 'is_local_business',
-        'accountId' => 'account_id',
-        'adQualificationImage' => 'ad_qualification_image',
-        'certificationImage' => 'certification_image',
-        'industryQualificationImage' => 'industry_qualification_image',
-        'corporateImageName' => 'corporate_image_name',
-        'corporateImageLogo' => 'corporate_image_logo',
-        'corporationLicence' => 'corporation_licence',
-        'customizedIndustry' => 'customized_industry',
-        'identityNumber' => 'identity_number',
-        'systemIndustryId' => 'system_industry_id',
-        'rejectMessage' => 'reject_message'
+        'isLocalBusiness' => 'is_local_business'
     ];
 
     /**
@@ -196,14 +199,26 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'accountId' => 'setAccountId',
         'dailyBudget' => 'setDailyBudget',
         'systemStatus' => 'setSystemStatus',
+        'rejectMessage' => 'setRejectMessage',
         'corporationName' => 'setCorporationName',
+        'corporationLicence' => 'setCorporationLicence',
         'certificationImageId' => 'setCertificationImageId',
+        'certificationImage' => 'setCertificationImage',
+        'identityNumber' => 'setIdentityNumber',
         'individualQualification' => 'setIndividualQualification',
+        'corporateImageName' => 'setCorporateImageName',
+        'corporateImageLogo' => 'setCorporateImageLogo',
+        'systemIndustryId' => 'setSystemIndustryId',
+        'customizedIndustry' => 'setCustomizedIndustry',
         'introductionUrl' => 'setIntroductionUrl',
+        'corporateBrandName' => 'setCorporateBrandName',
         'industryQualificationImageIdList' => 'setIndustryQualificationImageIdList',
+        'industryQualificationImage' => 'setIndustryQualificationImage',
         'adQualificationImageIdList' => 'setAdQualificationImageIdList',
+        'adQualificationImage' => 'setAdQualificationImage',
         'contactPerson' => 'setContactPerson',
         'contactPersonEmail' => 'setContactPersonEmail',
         'contactPersonTelephone' => 'setContactPersonTelephone',
@@ -215,18 +230,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'operators' => 'setOperators',
         'memo' => 'setMemo',
         'areaCode' => 'setAreaCode',
-        'isLocalBusiness' => 'setIsLocalBusiness',
-        'accountId' => 'setAccountId',
-        'adQualificationImage' => 'setAdQualificationImage',
-        'certificationImage' => 'setCertificationImage',
-        'industryQualificationImage' => 'setIndustryQualificationImage',
-        'corporateImageName' => 'setCorporateImageName',
-        'corporateImageLogo' => 'setCorporateImageLogo',
-        'corporationLicence' => 'setCorporationLicence',
-        'customizedIndustry' => 'setCustomizedIndustry',
-        'identityNumber' => 'setIdentityNumber',
-        'systemIndustryId' => 'setSystemIndustryId',
-        'rejectMessage' => 'setRejectMessage'
+        'isLocalBusiness' => 'setIsLocalBusiness'
     ];
 
     /**
@@ -235,14 +239,26 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'accountId' => 'getAccountId',
         'dailyBudget' => 'getDailyBudget',
         'systemStatus' => 'getSystemStatus',
+        'rejectMessage' => 'getRejectMessage',
         'corporationName' => 'getCorporationName',
+        'corporationLicence' => 'getCorporationLicence',
         'certificationImageId' => 'getCertificationImageId',
+        'certificationImage' => 'getCertificationImage',
+        'identityNumber' => 'getIdentityNumber',
         'individualQualification' => 'getIndividualQualification',
+        'corporateImageName' => 'getCorporateImageName',
+        'corporateImageLogo' => 'getCorporateImageLogo',
+        'systemIndustryId' => 'getSystemIndustryId',
+        'customizedIndustry' => 'getCustomizedIndustry',
         'introductionUrl' => 'getIntroductionUrl',
+        'corporateBrandName' => 'getCorporateBrandName',
         'industryQualificationImageIdList' => 'getIndustryQualificationImageIdList',
+        'industryQualificationImage' => 'getIndustryQualificationImage',
         'adQualificationImageIdList' => 'getAdQualificationImageIdList',
+        'adQualificationImage' => 'getAdQualificationImage',
         'contactPerson' => 'getContactPerson',
         'contactPersonEmail' => 'getContactPersonEmail',
         'contactPersonTelephone' => 'getContactPersonTelephone',
@@ -254,18 +270,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'operators' => 'getOperators',
         'memo' => 'getMemo',
         'areaCode' => 'getAreaCode',
-        'isLocalBusiness' => 'getIsLocalBusiness',
-        'accountId' => 'getAccountId',
-        'adQualificationImage' => 'getAdQualificationImage',
-        'certificationImage' => 'getCertificationImage',
-        'industryQualificationImage' => 'getIndustryQualificationImage',
-        'corporateImageName' => 'getCorporateImageName',
-        'corporateImageLogo' => 'getCorporateImageLogo',
-        'corporationLicence' => 'getCorporationLicence',
-        'customizedIndustry' => 'getCustomizedIndustry',
-        'identityNumber' => 'getIdentityNumber',
-        'systemIndustryId' => 'getSystemIndustryId',
-        'rejectMessage' => 'getRejectMessage'
+        'isLocalBusiness' => 'getIsLocalBusiness'
     ];
 
     /**
@@ -328,14 +333,26 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['dailyBudget'] = isset($data['dailyBudget']) ? $data['dailyBudget'] : null;
         $this->container['systemStatus'] = isset($data['systemStatus']) ? $data['systemStatus'] : null;
+        $this->container['rejectMessage'] = isset($data['rejectMessage']) ? $data['rejectMessage'] : null;
         $this->container['corporationName'] = isset($data['corporationName']) ? $data['corporationName'] : null;
+        $this->container['corporationLicence'] = isset($data['corporationLicence']) ? $data['corporationLicence'] : null;
         $this->container['certificationImageId'] = isset($data['certificationImageId']) ? $data['certificationImageId'] : null;
+        $this->container['certificationImage'] = isset($data['certificationImage']) ? $data['certificationImage'] : null;
+        $this->container['identityNumber'] = isset($data['identityNumber']) ? $data['identityNumber'] : null;
         $this->container['individualQualification'] = isset($data['individualQualification']) ? $data['individualQualification'] : null;
+        $this->container['corporateImageName'] = isset($data['corporateImageName']) ? $data['corporateImageName'] : null;
+        $this->container['corporateImageLogo'] = isset($data['corporateImageLogo']) ? $data['corporateImageLogo'] : null;
+        $this->container['systemIndustryId'] = isset($data['systemIndustryId']) ? $data['systemIndustryId'] : null;
+        $this->container['customizedIndustry'] = isset($data['customizedIndustry']) ? $data['customizedIndustry'] : null;
         $this->container['introductionUrl'] = isset($data['introductionUrl']) ? $data['introductionUrl'] : null;
+        $this->container['corporateBrandName'] = isset($data['corporateBrandName']) ? $data['corporateBrandName'] : null;
         $this->container['industryQualificationImageIdList'] = isset($data['industryQualificationImageIdList']) ? $data['industryQualificationImageIdList'] : null;
+        $this->container['industryQualificationImage'] = isset($data['industryQualificationImage']) ? $data['industryQualificationImage'] : null;
         $this->container['adQualificationImageIdList'] = isset($data['adQualificationImageIdList']) ? $data['adQualificationImageIdList'] : null;
+        $this->container['adQualificationImage'] = isset($data['adQualificationImage']) ? $data['adQualificationImage'] : null;
         $this->container['contactPerson'] = isset($data['contactPerson']) ? $data['contactPerson'] : null;
         $this->container['contactPersonEmail'] = isset($data['contactPersonEmail']) ? $data['contactPersonEmail'] : null;
         $this->container['contactPersonTelephone'] = isset($data['contactPersonTelephone']) ? $data['contactPersonTelephone'] : null;
@@ -348,17 +365,6 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         $this->container['memo'] = isset($data['memo']) ? $data['memo'] : null;
         $this->container['areaCode'] = isset($data['areaCode']) ? $data['areaCode'] : null;
         $this->container['isLocalBusiness'] = isset($data['isLocalBusiness']) ? $data['isLocalBusiness'] : null;
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['adQualificationImage'] = isset($data['adQualificationImage']) ? $data['adQualificationImage'] : null;
-        $this->container['certificationImage'] = isset($data['certificationImage']) ? $data['certificationImage'] : null;
-        $this->container['industryQualificationImage'] = isset($data['industryQualificationImage']) ? $data['industryQualificationImage'] : null;
-        $this->container['corporateImageName'] = isset($data['corporateImageName']) ? $data['corporateImageName'] : null;
-        $this->container['corporateImageLogo'] = isset($data['corporateImageLogo']) ? $data['corporateImageLogo'] : null;
-        $this->container['corporationLicence'] = isset($data['corporationLicence']) ? $data['corporationLicence'] : null;
-        $this->container['customizedIndustry'] = isset($data['customizedIndustry']) ? $data['customizedIndustry'] : null;
-        $this->container['identityNumber'] = isset($data['identityNumber']) ? $data['identityNumber'] : null;
-        $this->container['systemIndustryId'] = isset($data['systemIndustryId']) ? $data['systemIndustryId'] : null;
-        $this->container['rejectMessage'] = isset($data['rejectMessage']) ? $data['rejectMessage'] : null;
     }
 
     /**
@@ -384,6 +390,30 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets accountId
+     *
+     * @return int|mixed
+     */
+    public function getAccountId()
+    {
+        return $this->container['accountId'];
+    }
+
+    /**
+     * Sets accountId
+     *
+     * @param int|mixed $accountId accountId
+     *
+     * @return $this
+     */
+    public function setAccountId($accountId)
+    {
+        $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
 
     /**
      * Gets dailyBudget
@@ -434,6 +464,30 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets rejectMessage
+     *
+     * @return string|mixed
+     */
+    public function getRejectMessage()
+    {
+        return $this->container['rejectMessage'];
+    }
+
+    /**
+     * Sets rejectMessage
+     *
+     * @param string|mixed $rejectMessage rejectMessage
+     *
+     * @return $this
+     */
+    public function setRejectMessage($rejectMessage)
+    {
+        $this->container['rejectMessage'] = $rejectMessage;
+
+        return $this;
+    }
+
+    /**
      * Gets corporationName
      *
      * @return string|mixed
@@ -453,6 +507,30 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     public function setCorporationName($corporationName)
     {
         $this->container['corporationName'] = $corporationName;
+
+        return $this;
+    }
+
+    /**
+     * Gets corporationLicence
+     *
+     * @return string|mixed
+     */
+    public function getCorporationLicence()
+    {
+        return $this->container['corporationLicence'];
+    }
+
+    /**
+     * Sets corporationLicence
+     *
+     * @param string|mixed $corporationLicence corporationLicence
+     *
+     * @return $this
+     */
+    public function setCorporationLicence($corporationLicence)
+    {
+        $this->container['corporationLicence'] = $corporationLicence;
 
         return $this;
     }
@@ -482,6 +560,54 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets certificationImage
+     *
+     * @return string|mixed
+     */
+    public function getCertificationImage()
+    {
+        return $this->container['certificationImage'];
+    }
+
+    /**
+     * Sets certificationImage
+     *
+     * @param string|mixed $certificationImage certificationImage
+     *
+     * @return $this
+     */
+    public function setCertificationImage($certificationImage)
+    {
+        $this->container['certificationImage'] = $certificationImage;
+
+        return $this;
+    }
+
+    /**
+     * Gets identityNumber
+     *
+     * @return string|mixed
+     */
+    public function getIdentityNumber()
+    {
+        return $this->container['identityNumber'];
+    }
+
+    /**
+     * Sets identityNumber
+     *
+     * @param string|mixed $identityNumber identityNumber
+     *
+     * @return $this
+     */
+    public function setIdentityNumber($identityNumber)
+    {
+        $this->container['identityNumber'] = $identityNumber;
+
+        return $this;
+    }
+
+    /**
      * Gets individualQualification
      *
      * @return \TencentAds\Model\IndividualQualificationRead|mixed
@@ -501,6 +627,102 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     public function setIndividualQualification($individualQualification)
     {
         $this->container['individualQualification'] = $individualQualification;
+
+        return $this;
+    }
+
+    /**
+     * Gets corporateImageName
+     *
+     * @return string|mixed
+     */
+    public function getCorporateImageName()
+    {
+        return $this->container['corporateImageName'];
+    }
+
+    /**
+     * Sets corporateImageName
+     *
+     * @param string|mixed $corporateImageName corporateImageName
+     *
+     * @return $this
+     */
+    public function setCorporateImageName($corporateImageName)
+    {
+        $this->container['corporateImageName'] = $corporateImageName;
+
+        return $this;
+    }
+
+    /**
+     * Gets corporateImageLogo
+     *
+     * @return string|mixed
+     */
+    public function getCorporateImageLogo()
+    {
+        return $this->container['corporateImageLogo'];
+    }
+
+    /**
+     * Sets corporateImageLogo
+     *
+     * @param string|mixed $corporateImageLogo corporateImageLogo
+     *
+     * @return $this
+     */
+    public function setCorporateImageLogo($corporateImageLogo)
+    {
+        $this->container['corporateImageLogo'] = $corporateImageLogo;
+
+        return $this;
+    }
+
+    /**
+     * Gets systemIndustryId
+     *
+     * @return int|mixed
+     */
+    public function getSystemIndustryId()
+    {
+        return $this->container['systemIndustryId'];
+    }
+
+    /**
+     * Sets systemIndustryId
+     *
+     * @param int|mixed $systemIndustryId systemIndustryId
+     *
+     * @return $this
+     */
+    public function setSystemIndustryId($systemIndustryId)
+    {
+        $this->container['systemIndustryId'] = $systemIndustryId;
+
+        return $this;
+    }
+
+    /**
+     * Gets customizedIndustry
+     *
+     * @return string|mixed
+     */
+    public function getCustomizedIndustry()
+    {
+        return $this->container['customizedIndustry'];
+    }
+
+    /**
+     * Sets customizedIndustry
+     *
+     * @param string|mixed $customizedIndustry customizedIndustry
+     *
+     * @return $this
+     */
+    public function setCustomizedIndustry($customizedIndustry)
+    {
+        $this->container['customizedIndustry'] = $customizedIndustry;
 
         return $this;
     }
@@ -530,6 +752,30 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets corporateBrandName
+     *
+     * @return string|mixed
+     */
+    public function getCorporateBrandName()
+    {
+        return $this->container['corporateBrandName'];
+    }
+
+    /**
+     * Sets corporateBrandName
+     *
+     * @param string|mixed $corporateBrandName corporateBrandName
+     *
+     * @return $this
+     */
+    public function setCorporateBrandName($corporateBrandName)
+    {
+        $this->container['corporateBrandName'] = $corporateBrandName;
+
+        return $this;
+    }
+
+    /**
      * Gets industryQualificationImageIdList
      *
      * @return string[]|mixed
@@ -554,6 +800,30 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets industryQualificationImage
+     *
+     * @return string[]|mixed
+     */
+    public function getIndustryQualificationImage()
+    {
+        return $this->container['industryQualificationImage'];
+    }
+
+    /**
+     * Sets industryQualificationImage
+     *
+     * @param string[]|mixed $industryQualificationImage industryQualificationImage
+     *
+     * @return $this
+     */
+    public function setIndustryQualificationImage($industryQualificationImage)
+    {
+        $this->container['industryQualificationImage'] = $industryQualificationImage;
+
+        return $this;
+    }
+
+    /**
      * Gets adQualificationImageIdList
      *
      * @return string[]|mixed
@@ -573,6 +843,30 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     public function setAdQualificationImageIdList($adQualificationImageIdList)
     {
         $this->container['adQualificationImageIdList'] = $adQualificationImageIdList;
+
+        return $this;
+    }
+
+    /**
+     * Gets adQualificationImage
+     *
+     * @return string[]|mixed
+     */
+    public function getAdQualificationImage()
+    {
+        return $this->container['adQualificationImage'];
+    }
+
+    /**
+     * Sets adQualificationImage
+     *
+     * @param string[]|mixed $adQualificationImage adQualificationImage
+     *
+     * @return $this
+     */
+    public function setAdQualificationImage($adQualificationImage)
+    {
+        $this->container['adQualificationImage'] = $adQualificationImage;
 
         return $this;
     }
@@ -861,270 +1155,6 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     public function setIsLocalBusiness($isLocalBusiness)
     {
         $this->container['isLocalBusiness'] = $isLocalBusiness;
-
-        return $this;
-    }
-
-    /**
-     * Gets accountId
-     *
-     * @return int|mixed
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int|mixed $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
-
-        return $this;
-    }
-
-    /**
-     * Gets adQualificationImage
-     *
-     * @return string[]|mixed
-     */
-    public function getAdQualificationImage()
-    {
-        return $this->container['adQualificationImage'];
-    }
-
-    /**
-     * Sets adQualificationImage
-     *
-     * @param string[]|mixed $adQualificationImage adQualificationImage
-     *
-     * @return $this
-     */
-    public function setAdQualificationImage($adQualificationImage)
-    {
-        $this->container['adQualificationImage'] = $adQualificationImage;
-
-        return $this;
-    }
-
-    /**
-     * Gets certificationImage
-     *
-     * @return string|mixed
-     */
-    public function getCertificationImage()
-    {
-        return $this->container['certificationImage'];
-    }
-
-    /**
-     * Sets certificationImage
-     *
-     * @param string|mixed $certificationImage certificationImage
-     *
-     * @return $this
-     */
-    public function setCertificationImage($certificationImage)
-    {
-        $this->container['certificationImage'] = $certificationImage;
-
-        return $this;
-    }
-
-    /**
-     * Gets industryQualificationImage
-     *
-     * @return string[]|mixed
-     */
-    public function getIndustryQualificationImage()
-    {
-        return $this->container['industryQualificationImage'];
-    }
-
-    /**
-     * Sets industryQualificationImage
-     *
-     * @param string[]|mixed $industryQualificationImage industryQualificationImage
-     *
-     * @return $this
-     */
-    public function setIndustryQualificationImage($industryQualificationImage)
-    {
-        $this->container['industryQualificationImage'] = $industryQualificationImage;
-
-        return $this;
-    }
-
-    /**
-     * Gets corporateImageName
-     *
-     * @return string|mixed
-     */
-    public function getCorporateImageName()
-    {
-        return $this->container['corporateImageName'];
-    }
-
-    /**
-     * Sets corporateImageName
-     *
-     * @param string|mixed $corporateImageName corporateImageName
-     *
-     * @return $this
-     */
-    public function setCorporateImageName($corporateImageName)
-    {
-        $this->container['corporateImageName'] = $corporateImageName;
-
-        return $this;
-    }
-
-    /**
-     * Gets corporateImageLogo
-     *
-     * @return string|mixed
-     */
-    public function getCorporateImageLogo()
-    {
-        return $this->container['corporateImageLogo'];
-    }
-
-    /**
-     * Sets corporateImageLogo
-     *
-     * @param string|mixed $corporateImageLogo corporateImageLogo
-     *
-     * @return $this
-     */
-    public function setCorporateImageLogo($corporateImageLogo)
-    {
-        $this->container['corporateImageLogo'] = $corporateImageLogo;
-
-        return $this;
-    }
-
-    /**
-     * Gets corporationLicence
-     *
-     * @return string|mixed
-     */
-    public function getCorporationLicence()
-    {
-        return $this->container['corporationLicence'];
-    }
-
-    /**
-     * Sets corporationLicence
-     *
-     * @param string|mixed $corporationLicence corporationLicence
-     *
-     * @return $this
-     */
-    public function setCorporationLicence($corporationLicence)
-    {
-        $this->container['corporationLicence'] = $corporationLicence;
-
-        return $this;
-    }
-
-    /**
-     * Gets customizedIndustry
-     *
-     * @return string|mixed
-     */
-    public function getCustomizedIndustry()
-    {
-        return $this->container['customizedIndustry'];
-    }
-
-    /**
-     * Sets customizedIndustry
-     *
-     * @param string|mixed $customizedIndustry customizedIndustry
-     *
-     * @return $this
-     */
-    public function setCustomizedIndustry($customizedIndustry)
-    {
-        $this->container['customizedIndustry'] = $customizedIndustry;
-
-        return $this;
-    }
-
-    /**
-     * Gets identityNumber
-     *
-     * @return string|mixed
-     */
-    public function getIdentityNumber()
-    {
-        return $this->container['identityNumber'];
-    }
-
-    /**
-     * Sets identityNumber
-     *
-     * @param string|mixed $identityNumber identityNumber
-     *
-     * @return $this
-     */
-    public function setIdentityNumber($identityNumber)
-    {
-        $this->container['identityNumber'] = $identityNumber;
-
-        return $this;
-    }
-
-    /**
-     * Gets systemIndustryId
-     *
-     * @return int|mixed
-     */
-    public function getSystemIndustryId()
-    {
-        return $this->container['systemIndustryId'];
-    }
-
-    /**
-     * Sets systemIndustryId
-     *
-     * @param int|mixed $systemIndustryId systemIndustryId
-     *
-     * @return $this
-     */
-    public function setSystemIndustryId($systemIndustryId)
-    {
-        $this->container['systemIndustryId'] = $systemIndustryId;
-
-        return $this;
-    }
-
-    /**
-     * Gets rejectMessage
-     *
-     * @return string|mixed
-     */
-    public function getRejectMessage()
-    {
-        return $this->container['rejectMessage'];
-    }
-
-    /**
-     * Sets rejectMessage
-     *
-     * @param string|mixed $rejectMessage rejectMessage
-     *
-     * @return $this
-     */
-    public function setRejectMessage($rejectMessage)
-    {
-        $this->container['rejectMessage'] = $rejectMessage;
 
         return $this;
     }

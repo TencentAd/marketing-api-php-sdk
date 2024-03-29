@@ -103,7 +103,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'forwardLinkAssist' => '\TencentAds\Model\V3\OptimizationGoal',
         'mpaSpec' => '\TencentAds\Model\V3\MpaSpec',
         'costConstraintScene' => '\TencentAds\Model\V3\CostConstraintScene',
-        'customCostCap' => 'int'
+        'customCostCap' => 'int',
+        'dynamicAdType' => '\TencentAds\Model\V3\DynamicAdType'
     ];
 
     /**
@@ -158,7 +159,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'forwardLinkAssist' => null,
         'mpaSpec' => null,
         'costConstraintScene' => null,
-        'customCostCap' => 'int64'
+        'customCostCap' => 'int64',
+        'dynamicAdType' => null
     ];
 
     /**
@@ -234,7 +236,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'forwardLinkAssist' => 'forward_link_assist',
         'mpaSpec' => 'mpa_spec',
         'costConstraintScene' => 'cost_constraint_scene',
-        'customCostCap' => 'custom_cost_cap'
+        'customCostCap' => 'custom_cost_cap',
+        'dynamicAdType' => 'dynamic_ad_type'
     ];
 
     /**
@@ -289,7 +292,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'forwardLinkAssist' => 'setForwardLinkAssist',
         'mpaSpec' => 'setMpaSpec',
         'costConstraintScene' => 'setCostConstraintScene',
-        'customCostCap' => 'setCustomCostCap'
+        'customCostCap' => 'setCustomCostCap',
+        'dynamicAdType' => 'setDynamicAdType'
     ];
 
     /**
@@ -344,7 +348,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'forwardLinkAssist' => 'getForwardLinkAssist',
         'mpaSpec' => 'getMpaSpec',
         'costConstraintScene' => 'getCostConstraintScene',
-        'customCostCap' => 'getCustomCostCap'
+        'customCostCap' => 'getCustomCostCap',
+        'dynamicAdType' => 'getDynamicAdType'
     ];
 
     /**
@@ -454,6 +459,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['mpaSpec'] = isset($data['mpaSpec']) ? $data['mpaSpec'] : null;
         $this->container['costConstraintScene'] = isset($data['costConstraintScene']) ? $data['costConstraintScene'] : null;
         $this->container['customCostCap'] = isset($data['customCostCap']) ? $data['customCostCap'] : null;
+        $this->container['dynamicAdType'] = isset($data['dynamicAdType']) ? $data['dynamicAdType'] : null;
     }
 
     /**
@@ -1604,6 +1610,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setCustomCostCap($customCostCap)
     {
         $this->container['customCostCap'] = $customCostCap;
+
+        return $this;
+    }
+
+    /**
+     * Gets dynamicAdType
+     *
+     * @return \TencentAds\Model\V3\DynamicAdType|mixed
+     */
+    public function getDynamicAdType()
+    {
+        return $this->container['dynamicAdType'];
+    }
+
+    /**
+     * Sets dynamicAdType
+     *
+     * @param \TencentAds\Model\V3\DynamicAdType|mixed $dynamicAdType dynamicAdType
+     *
+     * @return $this
+     */
+    public function setDynamicAdType($dynamicAdType)
+    {
+        $this->container['dynamicAdType'] = $dynamicAdType;
 
         return $this;
     }

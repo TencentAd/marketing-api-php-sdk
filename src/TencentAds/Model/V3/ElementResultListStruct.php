@@ -62,8 +62,10 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
         'videoId' => 'string',
         'elementName' => 'string',
         'elementValue' => 'string',
+        'componentInfo' => '\TencentAds\Model\V3\ComponentInfoCanEmpty',
         'elementType' => '\TencentAds\Model\V3\ReviewElementType',
-        'reviewStatus' => '\TencentAds\Model\V3\ReviewResultStatus'
+        'reviewStatus' => '\TencentAds\Model\V3\ReviewResultStatus',
+        'elementRejectDetailInfo' => '\TencentAds\Model\V3\ComponentElementRejectDetailInfoListStruct[]'
     ];
 
     /**
@@ -76,8 +78,10 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
         'videoId' => null,
         'elementName' => null,
         'elementValue' => null,
+        'componentInfo' => null,
         'elementType' => null,
-        'reviewStatus' => null
+        'reviewStatus' => null,
+        'elementRejectDetailInfo' => null
     ];
 
     /**
@@ -111,8 +115,10 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
         'videoId' => 'video_id',
         'elementName' => 'element_name',
         'elementValue' => 'element_value',
+        'componentInfo' => 'component_info',
         'elementType' => 'element_type',
-        'reviewStatus' => 'review_status'
+        'reviewStatus' => 'review_status',
+        'elementRejectDetailInfo' => 'element_reject_detail_info'
     ];
 
     /**
@@ -125,8 +131,10 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
         'videoId' => 'setVideoId',
         'elementName' => 'setElementName',
         'elementValue' => 'setElementValue',
+        'componentInfo' => 'setComponentInfo',
         'elementType' => 'setElementType',
-        'reviewStatus' => 'setReviewStatus'
+        'reviewStatus' => 'setReviewStatus',
+        'elementRejectDetailInfo' => 'setElementRejectDetailInfo'
     ];
 
     /**
@@ -139,8 +147,10 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
         'videoId' => 'getVideoId',
         'elementName' => 'getElementName',
         'elementValue' => 'getElementValue',
+        'componentInfo' => 'getComponentInfo',
         'elementType' => 'getElementType',
-        'reviewStatus' => 'getReviewStatus'
+        'reviewStatus' => 'getReviewStatus',
+        'elementRejectDetailInfo' => 'getElementRejectDetailInfo'
     ];
 
     /**
@@ -207,8 +217,10 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
         $this->container['videoId'] = isset($data['videoId']) ? $data['videoId'] : null;
         $this->container['elementName'] = isset($data['elementName']) ? $data['elementName'] : null;
         $this->container['elementValue'] = isset($data['elementValue']) ? $data['elementValue'] : null;
+        $this->container['componentInfo'] = isset($data['componentInfo']) ? $data['componentInfo'] : null;
         $this->container['elementType'] = isset($data['elementType']) ? $data['elementType'] : null;
         $this->container['reviewStatus'] = isset($data['reviewStatus']) ? $data['reviewStatus'] : null;
+        $this->container['elementRejectDetailInfo'] = isset($data['elementRejectDetailInfo']) ? $data['elementRejectDetailInfo'] : null;
     }
 
     /**
@@ -332,6 +344,30 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets componentInfo
+     *
+     * @return \TencentAds\Model\V3\ComponentInfoCanEmpty|mixed
+     */
+    public function getComponentInfo()
+    {
+        return $this->container['componentInfo'];
+    }
+
+    /**
+     * Sets componentInfo
+     *
+     * @param \TencentAds\Model\V3\ComponentInfoCanEmpty|mixed $componentInfo componentInfo
+     *
+     * @return $this
+     */
+    public function setComponentInfo($componentInfo)
+    {
+        $this->container['componentInfo'] = $componentInfo;
+
+        return $this;
+    }
+
+    /**
      * Gets elementType
      *
      * @return \TencentAds\Model\V3\ReviewElementType|mixed
@@ -375,6 +411,30 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
     public function setReviewStatus($reviewStatus)
     {
         $this->container['reviewStatus'] = $reviewStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets elementRejectDetailInfo
+     *
+     * @return \TencentAds\Model\V3\ComponentElementRejectDetailInfoListStruct[]|mixed
+     */
+    public function getElementRejectDetailInfo()
+    {
+        return $this->container['elementRejectDetailInfo'];
+    }
+
+    /**
+     * Sets elementRejectDetailInfo
+     *
+     * @param \TencentAds\Model\V3\ComponentElementRejectDetailInfoListStruct[]|mixed $elementRejectDetailInfo elementRejectDetailInfo
+     *
+     * @return $this
+     */
+    public function setElementRejectDetailInfo($elementRejectDetailInfo)
+    {
+        $this->container['elementRejectDetailInfo'] = $elementRejectDetailInfo;
 
         return $this;
     }

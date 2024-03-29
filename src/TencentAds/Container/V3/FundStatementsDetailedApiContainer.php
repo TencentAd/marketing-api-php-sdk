@@ -38,13 +38,13 @@ class FundStatementsDetailedApiContainer extends ApiContainer
     {
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
-            $advertiserId = isset($params['advertiser_id']) ? $params['advertiser_id'] : null;
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $fundType = isset($params['fund_type']) ? $params['fund_type'] : null;
             $dateRange = isset($params['date_range']) ? $params['date_range'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->fundStatementsDetailedGet($advertiserId, $fundType, $dateRange, $page, $pageSize, $fields);
+            $response = $this->apiInstance->fundStatementsDetailedGet($accountId, $fundType, $dateRange, $page, $pageSize, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -59,13 +59,13 @@ class FundStatementsDetailedApiContainer extends ApiContainer
     {
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
-            $advertiserId = isset($params['advertiser_id']) ? $params['advertiser_id'] : null;
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $fundType = isset($params['fund_type']) ? $params['fund_type'] : null;
             $dateRange = isset($params['date_range']) ? $params['date_range'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->fundStatementsDetailedGetAsync($advertiserId, $fundType, $dateRange, $page, $pageSize, $fields);
+            $response = $this->apiInstance->fundStatementsDetailedGetAsync($accountId, $fundType, $dateRange, $page, $pageSize, $fields);
             return $response;
         });
     }

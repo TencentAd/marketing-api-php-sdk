@@ -57,10 +57,10 @@ class QualificationsDeleteRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'accountId' => 'int',
         'qualificationType' => '\TencentAds\Model\QualificationType',
         'qualificationId' => 'int',
-        'qualificationIdList' => 'int[]',
-        'accountId' => 'int'
+        'qualificationIdList' => 'int[]'
     ];
 
     /**
@@ -69,10 +69,10 @@ class QualificationsDeleteRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
+        'accountId' => 'int64',
         'qualificationType' => null,
         'qualificationId' => 'int64',
-        'qualificationIdList' => 'int64',
-        'accountId' => 'int64'
+        'qualificationIdList' => 'int64'
     ];
 
     /**
@@ -102,10 +102,10 @@ class QualificationsDeleteRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'accountId' => 'account_id',
         'qualificationType' => 'qualification_type',
         'qualificationId' => 'qualification_id',
-        'qualificationIdList' => 'qualification_id_list',
-        'accountId' => 'account_id'
+        'qualificationIdList' => 'qualification_id_list'
     ];
 
     /**
@@ -114,10 +114,10 @@ class QualificationsDeleteRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'accountId' => 'setAccountId',
         'qualificationType' => 'setQualificationType',
         'qualificationId' => 'setQualificationId',
-        'qualificationIdList' => 'setQualificationIdList',
-        'accountId' => 'setAccountId'
+        'qualificationIdList' => 'setQualificationIdList'
     ];
 
     /**
@@ -126,10 +126,10 @@ class QualificationsDeleteRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'accountId' => 'getAccountId',
         'qualificationType' => 'getQualificationType',
         'qualificationId' => 'getQualificationId',
-        'qualificationIdList' => 'getQualificationIdList',
-        'accountId' => 'getAccountId'
+        'qualificationIdList' => 'getQualificationIdList'
     ];
 
     /**
@@ -192,10 +192,10 @@ class QualificationsDeleteRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['qualificationType'] = isset($data['qualificationType']) ? $data['qualificationType'] : null;
         $this->container['qualificationId'] = isset($data['qualificationId']) ? $data['qualificationId'] : null;
         $this->container['qualificationIdList'] = isset($data['qualificationIdList']) ? $data['qualificationIdList'] : null;
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
     /**
@@ -221,6 +221,30 @@ class QualificationsDeleteRequest implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets accountId
+     *
+     * @return int|mixed
+     */
+    public function getAccountId()
+    {
+        return $this->container['accountId'];
+    }
+
+    /**
+     * Sets accountId
+     *
+     * @param int|mixed $accountId accountId
+     *
+     * @return $this
+     */
+    public function setAccountId($accountId)
+    {
+        $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
 
     /**
      * Gets qualificationType
@@ -290,30 +314,6 @@ class QualificationsDeleteRequest implements ModelInterface, ArrayAccess
     public function setQualificationIdList($qualificationIdList)
     {
         $this->container['qualificationIdList'] = $qualificationIdList;
-
-        return $this;
-    }
-
-    /**
-     * Gets accountId
-     *
-     * @return int|mixed
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int|mixed $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
 
         return $this;
     }

@@ -50,9 +50,11 @@ class ReportDailyLevel
     const COMPONENT = 'REPORT_LEVEL_COMPONENT';
     const CHANNEL = 'REPORT_LEVEL_CHANNEL';
     const BIDWORD = 'REPORT_LEVEL_BIDWORD';
+    const QUERYWORD = 'REPORT_LEVEL_QUERYWORD';
     const MATERIAL_IMAGE = 'REPORT_LEVEL_MATERIAL_IMAGE';
     const MATERIAL_VIDEO = 'REPORT_LEVEL_MATERIAL_VIDEO';
     const ADVERTISER_TOTAL = 'REPORT_LEVEL_ADVERTISER_TOTAL';
+    const MARKETING_ASSET = 'REPORT_LEVEL_MARKETING_ASSET';
     
     /**
      * Gets allowable values of the enum
@@ -67,9 +69,11 @@ class ReportDailyLevel
             self::COMPONENT,
             self::CHANNEL,
             self::BIDWORD,
+            self::QUERYWORD,
             self::MATERIAL_IMAGE,
             self::MATERIAL_VIDEO,
             self::ADVERTISER_TOTAL,
+            self::MARKETING_ASSET,
         ];
     }
 }

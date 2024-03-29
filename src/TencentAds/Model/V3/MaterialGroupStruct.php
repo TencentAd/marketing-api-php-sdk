@@ -60,7 +60,7 @@ class MaterialGroupStruct implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'materialGroupId' => 'int',
         'ratio' => 'string',
-        'materialType' => '\TencentAds\Model\V3\ProgrammedMaterialType',
+        'materialType' => '\TencentAds\Model\V3\TemplateType',
         'materials' => '\TencentAds\Model\V3\MaterialStruct[]',
         'originalCreativeTemplates' => '\TencentAds\Model\V3\DimensionStruct[]',
         'targetCreativeTemplates' => '\TencentAds\Model\V3\DimensionStruct[]',
@@ -298,7 +298,7 @@ class MaterialGroupStruct implements ModelInterface, ArrayAccess
     /**
      * Gets materialType
      *
-     * @return \TencentAds\Model\V3\ProgrammedMaterialType|mixed
+     * @return \TencentAds\Model\V3\TemplateType|mixed
      */
     public function getMaterialType()
     {
@@ -308,7 +308,7 @@ class MaterialGroupStruct implements ModelInterface, ArrayAccess
     /**
      * Sets materialType
      *
-     * @param \TencentAds\Model\V3\ProgrammedMaterialType|mixed $materialType materialType
+     * @param \TencentAds\Model\V3\TemplateType|mixed $materialType materialType
      *
      * @return $this
      */

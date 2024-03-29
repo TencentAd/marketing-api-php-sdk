@@ -57,10 +57,10 @@ class QualificationsUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'accountId' => 'int',
         'qualificationType' => '\TencentAds\Model\QualificationType',
         'qualificationId' => 'int',
-        'imageIdList' => 'string[]',
-        'accountId' => 'int'
+        'imageIdList' => 'string[]'
     ];
 
     /**
@@ -69,10 +69,10 @@ class QualificationsUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
+        'accountId' => 'int64',
         'qualificationType' => null,
         'qualificationId' => 'int64',
-        'imageIdList' => null,
-        'accountId' => 'int64'
+        'imageIdList' => null
     ];
 
     /**
@@ -102,10 +102,10 @@ class QualificationsUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'accountId' => 'account_id',
         'qualificationType' => 'qualification_type',
         'qualificationId' => 'qualification_id',
-        'imageIdList' => 'image_id_list',
-        'accountId' => 'account_id'
+        'imageIdList' => 'image_id_list'
     ];
 
     /**
@@ -114,10 +114,10 @@ class QualificationsUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'accountId' => 'setAccountId',
         'qualificationType' => 'setQualificationType',
         'qualificationId' => 'setQualificationId',
-        'imageIdList' => 'setImageIdList',
-        'accountId' => 'setAccountId'
+        'imageIdList' => 'setImageIdList'
     ];
 
     /**
@@ -126,10 +126,10 @@ class QualificationsUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'accountId' => 'getAccountId',
         'qualificationType' => 'getQualificationType',
         'qualificationId' => 'getQualificationId',
-        'imageIdList' => 'getImageIdList',
-        'accountId' => 'getAccountId'
+        'imageIdList' => 'getImageIdList'
     ];
 
     /**
@@ -192,10 +192,10 @@ class QualificationsUpdateRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['qualificationType'] = isset($data['qualificationType']) ? $data['qualificationType'] : null;
         $this->container['qualificationId'] = isset($data['qualificationId']) ? $data['qualificationId'] : null;
         $this->container['imageIdList'] = isset($data['imageIdList']) ? $data['imageIdList'] : null;
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
     /**
@@ -221,6 +221,30 @@ class QualificationsUpdateRequest implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets accountId
+     *
+     * @return int|mixed
+     */
+    public function getAccountId()
+    {
+        return $this->container['accountId'];
+    }
+
+    /**
+     * Sets accountId
+     *
+     * @param int|mixed $accountId accountId
+     *
+     * @return $this
+     */
+    public function setAccountId($accountId)
+    {
+        $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
 
     /**
      * Gets qualificationType
@@ -290,30 +314,6 @@ class QualificationsUpdateRequest implements ModelInterface, ArrayAccess
     public function setImageIdList($imageIdList)
     {
         $this->container['imageIdList'] = $imageIdList;
-
-        return $this;
-    }
-
-    /**
-     * Gets accountId
-     *
-     * @return int|mixed
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int|mixed $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
 
         return $this;
     }

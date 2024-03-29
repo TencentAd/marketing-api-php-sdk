@@ -135,4 +135,38 @@ class CustomAudiencesApiContainer extends ApiContainer
             return $response;
         });
     }
+
+
+    /**
+     * Handle CustomAudiencesApi customAudiencesUpdate function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function update(array $params = [])
+    {
+        return $this->handleMiddleware('update', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->customAudiencesUpdate($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle CustomAudiencesApi customAudiencesUpdateAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function updateAsync(array $params = [])
+    {
+        return $this->handleMiddleware('update', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->customAudiencesUpdateAsync($data);
+            return $response;
+        });
+    }
 }
