@@ -312,14 +312,14 @@ class CustomAudienceInsightsApi
         }
         // query params
         if (is_array($dimensionType)) {
-            $queryParams['dimension_type'] = $dimensionType;
+           $queryParams['dimension_type'] = $dimensionType;
         } else
         if ($dimensionType !== null) {
             $queryParams['dimension_type'] = ObjectSerializer::toQueryValue($dimensionType);
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = $fields;
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

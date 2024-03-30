@@ -336,14 +336,14 @@ class AdUnionReportsApi
         }
         // query params
         if (is_array($groupBy)) {
-            $queryParams['group_by'] = $groupBy;
+           $queryParams['group_by'] = json_encode($groupBy);
         } else
         if ($groupBy !== null) {
             $queryParams['group_by'] = ObjectSerializer::toQueryValue($groupBy);
         }
         // query params
         if (is_array($orderBy)) {
-            $queryParams['order_by'] = $orderBy;
+           $queryParams['order_by'] = json_encode($orderBy);
         } else
         if ($orderBy !== null) {
             $queryParams['order_by'] = ObjectSerializer::toQueryValue($orderBy);
@@ -358,7 +358,7 @@ class AdUnionReportsApi
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = json_encode($fields);
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

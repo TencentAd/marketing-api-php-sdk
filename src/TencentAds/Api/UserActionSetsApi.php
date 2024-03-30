@@ -610,7 +610,7 @@ class UserActionSetsApi
         }
         // query params
         if (is_array($type)) {
-            $queryParams['type'] = $type;
+           $queryParams['type'] = $type;
         } else
         if ($type !== null) {
             $queryParams['type'] = ObjectSerializer::toQueryValue($type);
@@ -633,7 +633,7 @@ class UserActionSetsApi
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = $fields;
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

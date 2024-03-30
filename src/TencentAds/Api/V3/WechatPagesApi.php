@@ -890,7 +890,7 @@ class WechatPagesApi
         }
         // query params
         if (is_array($filtering)) {
-            $queryParams['filtering'] = $filtering;
+           $queryParams['filtering'] = json_encode($filtering);
         } else
         if ($filtering !== null) {
             $queryParams['filtering'] = ObjectSerializer::toQueryValue($filtering);
@@ -905,7 +905,7 @@ class WechatPagesApi
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = json_encode($fields);
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

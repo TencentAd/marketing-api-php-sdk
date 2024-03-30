@@ -324,14 +324,14 @@ class LeadsListApi
         }
         // query params
         if (is_array($lastSearchAfterValues)) {
-            $queryParams['last_search_after_values'] = $lastSearchAfterValues;
+           $queryParams['last_search_after_values'] = json_encode($lastSearchAfterValues);
         } else
         if ($lastSearchAfterValues !== null) {
             $queryParams['last_search_after_values'] = ObjectSerializer::toQueryValue($lastSearchAfterValues);
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = json_encode($fields);
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

@@ -351,7 +351,7 @@ class OptimizationGoalPermissionsApi
         }
         // query params
         if (is_array($siteSet)) {
-            $queryParams['site_set'] = $siteSet;
+           $queryParams['site_set'] = json_encode($siteSet);
         } else
         if ($siteSet !== null) {
             $queryParams['site_set'] = ObjectSerializer::toQueryValue($siteSet);
@@ -382,7 +382,7 @@ class OptimizationGoalPermissionsApi
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = json_encode($fields);
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

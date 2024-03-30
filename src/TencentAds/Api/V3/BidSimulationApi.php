@@ -318,14 +318,14 @@ class BidSimulationApi
         }
         // query params
         if (is_array($bidList)) {
-            $queryParams['bid_list'] = $bidList;
+           $queryParams['bid_list'] = json_encode($bidList);
         } else
         if ($bidList !== null) {
             $queryParams['bid_list'] = ObjectSerializer::toQueryValue($bidList);
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = json_encode($fields);
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

@@ -297,14 +297,14 @@ class AdDiagnosisApi
         }
         // query params
         if (is_array($adgroupIdList)) {
-            $queryParams['adgroup_id_list'] = $adgroupIdList;
+           $queryParams['adgroup_id_list'] = json_encode($adgroupIdList);
         } else
         if ($adgroupIdList !== null) {
             $queryParams['adgroup_id_list'] = ObjectSerializer::toQueryValue($adgroupIdList);
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = json_encode($fields);
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

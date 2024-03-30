@@ -306,14 +306,14 @@ class TargetingTagsUvApi
         }
         // query params
         if (is_array($categoryList)) {
-            $queryParams['category_list'] = $categoryList;
+           $queryParams['category_list'] = $categoryList;
         } else
         if ($categoryList !== null) {
             $queryParams['category_list'] = ObjectSerializer::toQueryValue($categoryList);
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = $fields;
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

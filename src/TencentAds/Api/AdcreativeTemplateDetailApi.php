@@ -329,7 +329,7 @@ class AdcreativeTemplateDetailApi
         }
         // query params
         if (is_array($siteSet)) {
-            $queryParams['site_set'] = $siteSet;
+           $queryParams['site_set'] = $siteSet;
         } else
         if ($siteSet !== null) {
             $queryParams['site_set'] = ObjectSerializer::toQueryValue($siteSet);
@@ -340,7 +340,7 @@ class AdcreativeTemplateDetailApi
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = $fields;
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

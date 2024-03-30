@@ -343,7 +343,7 @@ class AdcreativeTemplateListApi
         }
         // query params
         if (is_array($dynamicAbilityType)) {
-            $queryParams['dynamic_ability_type'] = $dynamicAbilityType;
+           $queryParams['dynamic_ability_type'] = $dynamicAbilityType;
         } else
         if ($dynamicAbilityType !== null) {
             $queryParams['dynamic_ability_type'] = ObjectSerializer::toQueryValue($dynamicAbilityType);
@@ -354,7 +354,7 @@ class AdcreativeTemplateListApi
         }
         // query params
         if (is_array($wechatSceneSpecPosition)) {
-            $queryParams['wechat_scene_spec_position'] = $wechatSceneSpecPosition;
+           $queryParams['wechat_scene_spec_position'] = $wechatSceneSpecPosition;
         } else
         if ($wechatSceneSpecPosition !== null) {
             $queryParams['wechat_scene_spec_position'] = ObjectSerializer::toQueryValue($wechatSceneSpecPosition);
@@ -373,7 +373,7 @@ class AdcreativeTemplateListApi
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = $fields;
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

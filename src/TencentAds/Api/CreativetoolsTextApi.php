@@ -338,7 +338,7 @@ class CreativetoolsTextApi
         }
         // query params
         if (is_array($filtering)) {
-            $queryParams['filtering'] = $filtering;
+           $queryParams['filtering'] = $filtering;
         } else
         if ($filtering !== null) {
             $queryParams['filtering'] = ObjectSerializer::toQueryValue($filtering);
@@ -349,7 +349,7 @@ class CreativetoolsTextApi
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = $fields;
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

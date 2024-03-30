@@ -341,7 +341,7 @@ class CreativeSampleProductsApi
         }
         // query params
         if (is_array($productOuterIds)) {
-            $queryParams['product_outer_ids'] = $productOuterIds;
+           $queryParams['product_outer_ids'] = $productOuterIds;
         } else
         if ($productOuterIds !== null) {
             $queryParams['product_outer_ids'] = ObjectSerializer::toQueryValue($productOuterIds);
@@ -368,7 +368,7 @@ class CreativeSampleProductsApi
         }
         // query params
         if (is_array($productFields)) {
-            $queryParams['product_fields'] = $productFields;
+           $queryParams['product_fields'] = $productFields;
         } else
         if ($productFields !== null) {
             $queryParams['product_fields'] = ObjectSerializer::toQueryValue($productFields);
@@ -379,7 +379,7 @@ class CreativeSampleProductsApi
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = $fields;
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

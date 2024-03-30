@@ -293,7 +293,7 @@ class BusinessPointApi
 
         // query params
         if (is_array($siteSets)) {
-            $queryParams['site_sets'] = $siteSets;
+           $queryParams['site_sets'] = json_encode($siteSets);
         } else
         if ($siteSets !== null) {
             $queryParams['site_sets'] = ObjectSerializer::toQueryValue($siteSets);
@@ -304,7 +304,7 @@ class BusinessPointApi
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = json_encode($fields);
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

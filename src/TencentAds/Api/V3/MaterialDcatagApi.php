@@ -586,21 +586,21 @@ class MaterialDcatagApi
         }
         // query params
         if (is_array($imageIdList)) {
-            $queryParams['image_id_list'] = $imageIdList;
+           $queryParams['image_id_list'] = json_encode($imageIdList);
         } else
         if ($imageIdList !== null) {
             $queryParams['image_id_list'] = ObjectSerializer::toQueryValue($imageIdList);
         }
         // query params
         if (is_array($mediaIdList)) {
-            $queryParams['media_id_list'] = $mediaIdList;
+           $queryParams['media_id_list'] = json_encode($mediaIdList);
         } else
         if ($mediaIdList !== null) {
             $queryParams['media_id_list'] = ObjectSerializer::toQueryValue($mediaIdList);
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = json_encode($fields);
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

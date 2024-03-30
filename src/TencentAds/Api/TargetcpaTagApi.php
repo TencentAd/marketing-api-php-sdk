@@ -297,14 +297,14 @@ class TargetcpaTagApi
         }
         // query params
         if (is_array($tagTypes)) {
-            $queryParams['tag_types'] = $tagTypes;
+           $queryParams['tag_types'] = $tagTypes;
         } else
         if ($tagTypes !== null) {
             $queryParams['tag_types'] = ObjectSerializer::toQueryValue($tagTypes);
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = $fields;
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

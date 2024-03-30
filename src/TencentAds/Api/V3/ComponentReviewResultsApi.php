@@ -297,14 +297,14 @@ class ComponentReviewResultsApi
         }
         // query params
         if (is_array($componentIdList)) {
-            $queryParams['component_id_list'] = $componentIdList;
+           $queryParams['component_id_list'] = json_encode($componentIdList);
         } else
         if ($componentIdList !== null) {
             $queryParams['component_id_list'] = ObjectSerializer::toQueryValue($componentIdList);
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = json_encode($fields);
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

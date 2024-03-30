@@ -331,28 +331,28 @@ class ProductCatalogsReportsApi
         }
         // query params
         if (is_array($filtering)) {
-            $queryParams['filtering'] = $filtering;
+           $queryParams['filtering'] = $filtering;
         } else
         if ($filtering !== null) {
             $queryParams['filtering'] = ObjectSerializer::toQueryValue($filtering);
         }
         // query params
         if (is_array($groupBy)) {
-            $queryParams['group_by'] = $groupBy;
+           $queryParams['group_by'] = $groupBy;
         } else
         if ($groupBy !== null) {
             $queryParams['group_by'] = ObjectSerializer::toQueryValue($groupBy);
         }
         // query params
         if (is_array($orderBy)) {
-            $queryParams['order_by'] = $orderBy;
+           $queryParams['order_by'] = $orderBy;
         } else
         if ($orderBy !== null) {
             $queryParams['order_by'] = ObjectSerializer::toQueryValue($orderBy);
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = $fields;
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

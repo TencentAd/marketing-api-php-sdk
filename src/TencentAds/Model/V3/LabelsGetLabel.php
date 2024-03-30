@@ -1,6 +1,6 @@
 <?php
 /**
- * Label
+ * LabelsGetLabel
  *
  * PHP version 5
  *
@@ -33,7 +33,7 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * Label Class Doc Comment
+ * LabelsGetLabel Class Doc Comment
  *
  * @category Class
  * @description label返回结构
@@ -41,7 +41,7 @@ use \TencentAds\ObjectSerializer;
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class Label implements ModelInterface, ArrayAccess
+class LabelsGetLabel implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class Label implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'label';
+    protected static $swaggerModelName = 'LabelsGetLabel';
 
     /**
       * Array of property to type mappings. Used for (de)serialization

@@ -297,14 +297,14 @@ class DynamicCreativeReviewResultsApi
         }
         // query params
         if (is_array($dynamicCreativeIdList)) {
-            $queryParams['dynamic_creative_id_list'] = $dynamicCreativeIdList;
+           $queryParams['dynamic_creative_id_list'] = json_encode($dynamicCreativeIdList);
         } else
         if ($dynamicCreativeIdList !== null) {
             $queryParams['dynamic_creative_id_list'] = ObjectSerializer::toQueryValue($dynamicCreativeIdList);
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = json_encode($fields);
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

@@ -302,21 +302,21 @@ class BidwordFlowApi
         }
         // query params
         if (is_array($bidwordList)) {
-            $queryParams['bidword_list'] = $bidwordList;
+           $queryParams['bidword_list'] = json_encode($bidwordList);
         } else
         if ($bidwordList !== null) {
             $queryParams['bidword_list'] = ObjectSerializer::toQueryValue($bidwordList);
         }
         // query params
         if (is_array($orderBy)) {
-            $queryParams['order_by'] = $orderBy;
+           $queryParams['order_by'] = json_encode($orderBy);
         } else
         if ($orderBy !== null) {
             $queryParams['order_by'] = ObjectSerializer::toQueryValue($orderBy);
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = json_encode($fields);
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

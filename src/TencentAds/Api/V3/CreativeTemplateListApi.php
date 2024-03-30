@@ -378,7 +378,7 @@ class CreativeTemplateListApi
         }
         // query params
         if (is_array($wechatSceneSpecPosition)) {
-            $queryParams['wechat_scene_spec_position'] = $wechatSceneSpecPosition;
+           $queryParams['wechat_scene_spec_position'] = json_encode($wechatSceneSpecPosition);
         } else
         if ($wechatSceneSpecPosition !== null) {
             $queryParams['wechat_scene_spec_position'] = ObjectSerializer::toQueryValue($wechatSceneSpecPosition);
@@ -397,7 +397,7 @@ class CreativeTemplateListApi
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = json_encode($fields);
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

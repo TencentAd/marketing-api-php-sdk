@@ -373,7 +373,7 @@ class XijingPageListApi
         }
         // query params
         if (is_array($pageType)) {
-            $queryParams['page_type'] = $pageType;
+           $queryParams['page_type'] = json_encode($pageType);
         } else
         if ($pageType !== null) {
             $queryParams['page_type'] = ObjectSerializer::toQueryValue($pageType);
@@ -396,14 +396,14 @@ class XijingPageListApi
         }
         // query params
         if (is_array($pagePublishStatus)) {
-            $queryParams['page_publish_status'] = $pagePublishStatus;
+           $queryParams['page_publish_status'] = json_encode($pagePublishStatus);
         } else
         if ($pagePublishStatus !== null) {
             $queryParams['page_publish_status'] = ObjectSerializer::toQueryValue($pagePublishStatus);
         }
         // query params
         if (is_array($pageStatus)) {
-            $queryParams['page_status'] = $pageStatus;
+           $queryParams['page_status'] = json_encode($pageStatus);
         } else
         if ($pageStatus !== null) {
             $queryParams['page_status'] = ObjectSerializer::toQueryValue($pageStatus);
@@ -430,7 +430,7 @@ class XijingPageListApi
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = json_encode($fields);
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

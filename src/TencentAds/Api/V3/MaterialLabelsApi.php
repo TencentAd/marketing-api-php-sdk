@@ -1209,14 +1209,14 @@ class MaterialLabelsApi
         }
         // query params
         if (is_array($firstLabelLevelIdList)) {
-            $queryParams['first_label_level_id_list'] = $firstLabelLevelIdList;
+           $queryParams['first_label_level_id_list'] = json_encode($firstLabelLevelIdList);
         } else
         if ($firstLabelLevelIdList !== null) {
             $queryParams['first_label_level_id_list'] = ObjectSerializer::toQueryValue($firstLabelLevelIdList);
         }
         // query params
         if (is_array($secondLabelLevelIdList)) {
-            $queryParams['second_label_level_id_list'] = $secondLabelLevelIdList;
+           $queryParams['second_label_level_id_list'] = json_encode($secondLabelLevelIdList);
         } else
         if ($secondLabelLevelIdList !== null) {
             $queryParams['second_label_level_id_list'] = ObjectSerializer::toQueryValue($secondLabelLevelIdList);
@@ -1231,7 +1231,7 @@ class MaterialLabelsApi
         }
         // query params
         if (is_array($orderBy)) {
-            $queryParams['order_by'] = $orderBy;
+           $queryParams['order_by'] = json_encode($orderBy);
         } else
         if ($orderBy !== null) {
             $queryParams['order_by'] = ObjectSerializer::toQueryValue($orderBy);
@@ -1246,7 +1246,7 @@ class MaterialLabelsApi
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = json_encode($fields);
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

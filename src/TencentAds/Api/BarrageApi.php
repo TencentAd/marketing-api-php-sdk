@@ -591,7 +591,7 @@ class BarrageApi
         }
         // query params
         if (is_array($idList)) {
-            $queryParams['id_list'] = $idList;
+           $queryParams['id_list'] = $idList;
         } else
         if ($idList !== null) {
             $queryParams['id_list'] = ObjectSerializer::toQueryValue($idList);
@@ -606,7 +606,7 @@ class BarrageApi
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = $fields;
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

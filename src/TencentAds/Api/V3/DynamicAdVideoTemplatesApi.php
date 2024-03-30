@@ -373,7 +373,7 @@ class DynamicAdVideoTemplatesApi
         }
         // query params
         if (is_array($templateIdList)) {
-            $queryParams['template_id_list'] = $templateIdList;
+           $queryParams['template_id_list'] = json_encode($templateIdList);
         } else
         if ($templateIdList !== null) {
             $queryParams['template_id_list'] = ObjectSerializer::toQueryValue($templateIdList);
@@ -388,7 +388,7 @@ class DynamicAdVideoTemplatesApi
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = json_encode($fields);
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

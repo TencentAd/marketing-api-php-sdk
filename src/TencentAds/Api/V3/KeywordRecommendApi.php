@@ -375,7 +375,7 @@ class KeywordRecommendApi
 
         // query params
         if (is_array($siteSets)) {
-            $queryParams['site_sets'] = $siteSets;
+           $queryParams['site_sets'] = json_encode($siteSets);
         } else
         if ($siteSets !== null) {
             $queryParams['site_sets'] = ObjectSerializer::toQueryValue($siteSets);
@@ -394,7 +394,7 @@ class KeywordRecommendApi
         }
         // query params
         if (is_array($queryWord)) {
-            $queryParams['query_word'] = $queryWord;
+           $queryParams['query_word'] = json_encode($queryWord);
         } else
         if ($queryWord !== null) {
             $queryParams['query_word'] = ObjectSerializer::toQueryValue($queryWord);
@@ -413,14 +413,14 @@ class KeywordRecommendApi
         }
         // query params
         if (is_array($includeWord)) {
-            $queryParams['include_word'] = $includeWord;
+           $queryParams['include_word'] = json_encode($includeWord);
         } else
         if ($includeWord !== null) {
             $queryParams['include_word'] = ObjectSerializer::toQueryValue($includeWord);
         }
         // query params
         if (is_array($excludeWord)) {
-            $queryParams['exclude_word'] = $excludeWord;
+           $queryParams['exclude_word'] = json_encode($excludeWord);
         } else
         if ($excludeWord !== null) {
             $queryParams['exclude_word'] = ObjectSerializer::toQueryValue($excludeWord);
@@ -435,35 +435,35 @@ class KeywordRecommendApi
         }
         // query params
         if (is_array($recommendReasons)) {
-            $queryParams['recommend_reasons'] = $recommendReasons;
+           $queryParams['recommend_reasons'] = json_encode($recommendReasons);
         } else
         if ($recommendReasons !== null) {
             $queryParams['recommend_reasons'] = ObjectSerializer::toQueryValue($recommendReasons);
         }
         // query params
         if (is_array($province)) {
-            $queryParams['province'] = $province;
+           $queryParams['province'] = json_encode($province);
         } else
         if ($province !== null) {
             $queryParams['province'] = ObjectSerializer::toQueryValue($province);
         }
         // query params
         if (is_array($city)) {
-            $queryParams['city'] = $city;
+           $queryParams['city'] = json_encode($city);
         } else
         if ($city !== null) {
             $queryParams['city'] = ObjectSerializer::toQueryValue($city);
         }
         // query params
         if (is_array($orderBy)) {
-            $queryParams['order_by'] = $orderBy;
+           $queryParams['order_by'] = json_encode($orderBy);
         } else
         if ($orderBy !== null) {
             $queryParams['order_by'] = ObjectSerializer::toQueryValue($orderBy);
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = json_encode($fields);
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);

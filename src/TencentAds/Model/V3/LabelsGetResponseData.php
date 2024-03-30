@@ -57,7 +57,7 @@ class LabelsGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'list' => '\TencentAds\Model\V3\Label[]',
+        'list' => '\TencentAds\Model\V3\LabelsGetLabel[]',
         'pageInfo' => '\TencentAds\Model\V3\PageInfo'
     ];
 
@@ -213,7 +213,7 @@ class LabelsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\V3\Label[]|mixed
+     * @return \TencentAds\Model\V3\LabelsGetLabel[]|mixed
      */
     public function getList()
     {
@@ -223,7 +223,7 @@ class LabelsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\V3\Label[]|mixed $list list
+     * @param \TencentAds\Model\V3\LabelsGetLabel[]|mixed $list list
      *
      * @return $this
      */

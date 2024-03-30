@@ -328,7 +328,7 @@ class DataSourceDispatchApi
         }
         // query params
         if (is_array($scenes)) {
-            $queryParams['scenes'] = $scenes;
+           $queryParams['scenes'] = json_encode($scenes);
         } else
         if ($scenes !== null) {
             $queryParams['scenes'] = ObjectSerializer::toQueryValue($scenes);
@@ -343,7 +343,7 @@ class DataSourceDispatchApi
         }
         // query params
         if (is_array($fields)) {
-            $queryParams['fields'] = $fields;
+           $queryParams['fields'] = json_encode($fields);
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);
