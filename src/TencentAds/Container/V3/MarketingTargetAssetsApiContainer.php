@@ -108,10 +108,11 @@ class MarketingTargetAssetsApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $marketingTargetType = isset($params['marketing_target_type']) ? $params['marketing_target_type'] : null;
+            $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->marketingTargetAssetsGet($accountId, $marketingTargetType, $page, $pageSize, $fields);
+            $response = $this->apiInstance->marketingTargetAssetsGet($accountId, $marketingTargetType, $filtering, $page, $pageSize, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -128,10 +129,11 @@ class MarketingTargetAssetsApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $marketingTargetType = isset($params['marketing_target_type']) ? $params['marketing_target_type'] : null;
+            $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->marketingTargetAssetsGetAsync($accountId, $marketingTargetType, $page, $pageSize, $fields);
+            $response = $this->apiInstance->marketingTargetAssetsGetAsync($accountId, $marketingTargetType, $filtering, $page, $pageSize, $fields);
             return $response;
         });
     }

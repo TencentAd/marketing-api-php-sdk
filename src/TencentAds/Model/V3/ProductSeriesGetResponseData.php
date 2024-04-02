@@ -1,6 +1,6 @@
 <?php
 /**
- * GetPropertyListStruct
+ * ProductSeriesGetResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * GetPropertyListStruct Class Doc Comment
+ * ProductSeriesGetResponseData Class Doc Comment
  *
  * @category Class
- * @description 返回信息结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class GetPropertyListStruct implements ModelInterface, ArrayAccess
+class ProductSeriesGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class GetPropertyListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'get_property_list_struct';
+    protected static $swaggerModelName = 'ProductSeriesGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,8 @@ class GetPropertyListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'properties' => '\TencentAds\Model\V3\DetailPropertyStruct[]',
-        'extraProperties' => '\TencentAds\Model\V3\ExtraProperty[]'
+        'list' => '\TencentAds\Model\V3\ProductSeriesStruct[]',
+        'pageInfo' => '\TencentAds\Model\V3\Conf'
     ];
 
     /**
@@ -68,8 +67,8 @@ class GetPropertyListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'properties' => null,
-        'extraProperties' => null
+        'list' => null,
+        'pageInfo' => null
     ];
 
     /**
@@ -99,8 +98,8 @@ class GetPropertyListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'properties' => 'properties',
-        'extraProperties' => 'extra_properties'
+        'list' => 'list',
+        'pageInfo' => 'page_info'
     ];
 
     /**
@@ -109,8 +108,8 @@ class GetPropertyListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'properties' => 'setProperties',
-        'extraProperties' => 'setExtraProperties'
+        'list' => 'setList',
+        'pageInfo' => 'setPageInfo'
     ];
 
     /**
@@ -119,8 +118,8 @@ class GetPropertyListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'properties' => 'getProperties',
-        'extraProperties' => 'getExtraProperties'
+        'list' => 'getList',
+        'pageInfo' => 'getPageInfo'
     ];
 
     /**
@@ -183,8 +182,8 @@ class GetPropertyListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['properties'] = isset($data['properties']) ? $data['properties'] : null;
-        $this->container['extraProperties'] = isset($data['extraProperties']) ? $data['extraProperties'] : null;
+        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
+        $this->container['pageInfo'] = isset($data['pageInfo']) ? $data['pageInfo'] : null;
     }
 
     /**
@@ -212,49 +211,49 @@ class GetPropertyListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets properties
+     * Gets list
      *
-     * @return \TencentAds\Model\V3\DetailPropertyStruct[]|mixed
+     * @return \TencentAds\Model\V3\ProductSeriesStruct[]|mixed
      */
-    public function getProperties()
+    public function getList()
     {
-        return $this->container['properties'];
+        return $this->container['list'];
     }
 
     /**
-     * Sets properties
+     * Sets list
      *
-     * @param \TencentAds\Model\V3\DetailPropertyStruct[]|mixed $properties properties
+     * @param \TencentAds\Model\V3\ProductSeriesStruct[]|mixed $list list
      *
      * @return $this
      */
-    public function setProperties($properties)
+    public function setList($list)
     {
-        $this->container['properties'] = $properties;
+        $this->container['list'] = $list;
 
         return $this;
     }
 
     /**
-     * Gets extraProperties
+     * Gets pageInfo
      *
-     * @return \TencentAds\Model\V3\ExtraProperty[]|mixed
+     * @return \TencentAds\Model\V3\Conf|mixed
      */
-    public function getExtraProperties()
+    public function getPageInfo()
     {
-        return $this->container['extraProperties'];
+        return $this->container['pageInfo'];
     }
 
     /**
-     * Sets extraProperties
+     * Sets pageInfo
      *
-     * @param \TencentAds\Model\V3\ExtraProperty[]|mixed $extraProperties extraProperties
+     * @param \TencentAds\Model\V3\Conf|mixed $pageInfo pageInfo
      *
      * @return $this
      */
-    public function setExtraProperties($extraProperties)
+    public function setPageInfo($pageInfo)
     {
-        $this->container['extraProperties'] = $extraProperties;
+        $this->container['pageInfo'] = $pageInfo;
 
         return $this;
     }

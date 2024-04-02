@@ -92,8 +92,11 @@ use TencentAds\Container\V3\OptimizationGoalPermissionsApiContainer;
 use TencentAds\Container\V3\OrganizationAccountRelationApiContainer;
 use TencentAds\Container\V3\PagesApiContainer;
 use TencentAds\Container\V3\ProductCatalogsApiContainer;
+use TencentAds\Container\V3\ProductCategoriesListApiContainer;
 use TencentAds\Container\V3\ProductItemsApiContainer;
+use TencentAds\Container\V3\ProductItemsDetailApiContainer;
 use TencentAds\Container\V3\ProductSeriesApiContainer;
+use TencentAds\Container\V3\ProductsSystemStatusApiContainer;
 use TencentAds\Container\V3\ProfilesApiContainer;
 use TencentAds\Container\V3\ProgrammedApiContainer;
 use TencentAds\Container\V3\ProgrammedTemplateApiContainer;
@@ -105,6 +108,7 @@ use TencentAds\Container\V3\SubcustomerTransferApiContainer;
 use TencentAds\Container\V3\TargetingTagReportsApiContainer;
 use TencentAds\Container\V3\TargetingTagsApiContainer;
 use TencentAds\Container\V3\TargetingTagsUvApiContainer;
+use TencentAds\Container\V3\TargetingsApiContainer;
 use TencentAds\Container\V3\UnionPositionPackagesApiContainer;
 use TencentAds\Container\V3\UserActionSetReportsApiContainer;
 use TencentAds\Container\V3\UserActionSetsApiContainer;
@@ -402,11 +406,20 @@ class App
     /** @var ProductCatalogsApiContainer */
     public $productCatalogsApiContainer;
 
+    /** @var ProductCategoriesListApiContainer */
+    public $productCategoriesListApiContainer;
+
     /** @var ProductItemsApiContainer */
     public $productItemsApiContainer;
 
+    /** @var ProductItemsDetailApiContainer */
+    public $productItemsDetailApiContainer;
+
     /** @var ProductSeriesApiContainer */
     public $productSeriesApiContainer;
+
+    /** @var ProductsSystemStatusApiContainer */
+    public $productsSystemStatusApiContainer;
 
     /** @var ProfilesApiContainer */
     public $profilesApiContainer;
@@ -440,6 +453,9 @@ class App
 
     /** @var TargetingTagsUvApiContainer */
     public $targetingTagsUvApiContainer;
+
+    /** @var TargetingsApiContainer */
+    public $targetingsApiContainer;
 
     /** @var UnionPositionPackagesApiContainer */
     public $unionPositionPackagesApiContainer;
@@ -1778,6 +1794,20 @@ class App
 
 
     /**
+     * @return ProductCategoriesListApiContainer
+     */
+    public function productCategoriesList()
+    {
+        if (empty($this->productCategoriesListApiContainer)) {
+            $container = new ProductCategoriesListApiContainer();
+            $container->init($this, $this->getClient());
+            $this->productCategoriesListApiContainer = $container;
+        }
+        return $this->productCategoriesListApiContainer;
+    }
+
+
+    /**
      * @return ProductItemsApiContainer
      */
     public function productItems()
@@ -1792,6 +1822,20 @@ class App
 
 
     /**
+     * @return ProductItemsDetailApiContainer
+     */
+    public function productItemsDetail()
+    {
+        if (empty($this->productItemsDetailApiContainer)) {
+            $container = new ProductItemsDetailApiContainer();
+            $container->init($this, $this->getClient());
+            $this->productItemsDetailApiContainer = $container;
+        }
+        return $this->productItemsDetailApiContainer;
+    }
+
+
+    /**
      * @return ProductSeriesApiContainer
      */
     public function productSeries()
@@ -1802,6 +1846,20 @@ class App
             $this->productSeriesApiContainer = $container;
         }
         return $this->productSeriesApiContainer;
+    }
+
+
+    /**
+     * @return ProductsSystemStatusApiContainer
+     */
+    public function productsSystemStatus()
+    {
+        if (empty($this->productsSystemStatusApiContainer)) {
+            $container = new ProductsSystemStatusApiContainer();
+            $container->init($this, $this->getClient());
+            $this->productsSystemStatusApiContainer = $container;
+        }
+        return $this->productsSystemStatusApiContainer;
     }
 
 
@@ -1956,6 +2014,20 @@ class App
             $this->targetingTagsUvApiContainer = $container;
         }
         return $this->targetingTagsUvApiContainer;
+    }
+
+
+    /**
+     * @return TargetingsApiContainer
+     */
+    public function targetings()
+    {
+        if (empty($this->targetingsApiContainer)) {
+            $container = new TargetingsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->targetingsApiContainer = $container;
+        }
+        return $this->targetingsApiContainer;
     }
 
 

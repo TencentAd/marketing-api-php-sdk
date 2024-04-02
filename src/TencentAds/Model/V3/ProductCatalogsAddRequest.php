@@ -62,7 +62,8 @@ class ProductCatalogsAddRequest implements ModelInterface, ArrayAccess
         'catalogScaleType' => '\TencentAds\Model\V3\CatalogScale',
         'catalogType' => '\TencentAds\Model\V3\DpaApiCatalogType',
         'industryType' => '\TencentAds\Model\V3\DpaCatalogIndustry',
-        'catalogVersion' => 'int'
+        'catalogVersion' => 'int',
+        'businessUnitId' => 'int'
     ];
 
     /**
@@ -76,7 +77,8 @@ class ProductCatalogsAddRequest implements ModelInterface, ArrayAccess
         'catalogScaleType' => null,
         'catalogType' => null,
         'industryType' => null,
-        'catalogVersion' => 'int64'
+        'catalogVersion' => 'int64',
+        'businessUnitId' => 'int64'
     ];
 
     /**
@@ -111,7 +113,8 @@ class ProductCatalogsAddRequest implements ModelInterface, ArrayAccess
         'catalogScaleType' => 'catalog_scale_type',
         'catalogType' => 'catalog_type',
         'industryType' => 'industry_type',
-        'catalogVersion' => 'catalog_version'
+        'catalogVersion' => 'catalog_version',
+        'businessUnitId' => 'business_unit_id'
     ];
 
     /**
@@ -125,7 +128,8 @@ class ProductCatalogsAddRequest implements ModelInterface, ArrayAccess
         'catalogScaleType' => 'setCatalogScaleType',
         'catalogType' => 'setCatalogType',
         'industryType' => 'setIndustryType',
-        'catalogVersion' => 'setCatalogVersion'
+        'catalogVersion' => 'setCatalogVersion',
+        'businessUnitId' => 'setBusinessUnitId'
     ];
 
     /**
@@ -139,7 +143,8 @@ class ProductCatalogsAddRequest implements ModelInterface, ArrayAccess
         'catalogScaleType' => 'getCatalogScaleType',
         'catalogType' => 'getCatalogType',
         'industryType' => 'getIndustryType',
-        'catalogVersion' => 'getCatalogVersion'
+        'catalogVersion' => 'getCatalogVersion',
+        'businessUnitId' => 'getBusinessUnitId'
     ];
 
     /**
@@ -208,6 +213,7 @@ class ProductCatalogsAddRequest implements ModelInterface, ArrayAccess
         $this->container['catalogType'] = isset($data['catalogType']) ? $data['catalogType'] : null;
         $this->container['industryType'] = isset($data['industryType']) ? $data['industryType'] : null;
         $this->container['catalogVersion'] = isset($data['catalogVersion']) ? $data['catalogVersion'] : null;
+        $this->container['businessUnitId'] = isset($data['businessUnitId']) ? $data['businessUnitId'] : null;
     }
 
     /**
@@ -374,6 +380,30 @@ class ProductCatalogsAddRequest implements ModelInterface, ArrayAccess
     public function setCatalogVersion($catalogVersion)
     {
         $this->container['catalogVersion'] = $catalogVersion;
+
+        return $this;
+    }
+
+    /**
+     * Gets businessUnitId
+     *
+     * @return int|mixed
+     */
+    public function getBusinessUnitId()
+    {
+        return $this->container['businessUnitId'];
+    }
+
+    /**
+     * Sets businessUnitId
+     *
+     * @param int|mixed $businessUnitId businessUnitId
+     *
+     * @return $this
+     */
+    public function setBusinessUnitId($businessUnitId)
+    {
+        $this->container['businessUnitId'] = $businessUnitId;
 
         return $this;
     }

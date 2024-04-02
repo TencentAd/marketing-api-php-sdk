@@ -38,7 +38,7 @@ class ImagesApiContainer extends ApiContainer
     {
         return $this->handleMiddleware('add', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
-            $advertiserId = isset($params['advertiser_id']) ? $params['advertiser_id'] : null;
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $uploadType = isset($params['upload_type']) ? $params['upload_type'] : null;
             $imageSignature = isset($params['image_signature']) ? $params['image_signature'] : null;
             $imageFile = isset($params['image_file']) ? $params['image_file'] : null;
@@ -48,7 +48,7 @@ class ImagesApiContainer extends ApiContainer
             $resizeWidth = isset($params['resize_width']) ? $params['resize_width'] : null;
             $resizeHeight = isset($params['resize_height']) ? $params['resize_height'] : null;
             $resizeFileSize = isset($params['resize_file_size']) ? $params['resize_file_size'] : null;
-            $response = $this->apiInstance->imagesAdd($advertiserId, $uploadType, $imageSignature, $imageFile, $bytes, $imageUsage, $description, $resizeWidth, $resizeHeight, $resizeFileSize);
+            $response = $this->apiInstance->imagesAdd($accountId, $uploadType, $imageSignature, $imageFile, $bytes, $imageUsage, $description, $resizeWidth, $resizeHeight, $resizeFileSize);
             return $this->handleResponse($response);
         });
     }
@@ -63,7 +63,7 @@ class ImagesApiContainer extends ApiContainer
     {
         return $this->handleMiddleware('add', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
-            $advertiserId = isset($params['advertiser_id']) ? $params['advertiser_id'] : null;
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $uploadType = isset($params['upload_type']) ? $params['upload_type'] : null;
             $imageSignature = isset($params['image_signature']) ? $params['image_signature'] : null;
             $imageFile = isset($params['image_file']) ? $params['image_file'] : null;
@@ -73,7 +73,7 @@ class ImagesApiContainer extends ApiContainer
             $resizeWidth = isset($params['resize_width']) ? $params['resize_width'] : null;
             $resizeHeight = isset($params['resize_height']) ? $params['resize_height'] : null;
             $resizeFileSize = isset($params['resize_file_size']) ? $params['resize_file_size'] : null;
-            $response = $this->apiInstance->imagesAddAsync($advertiserId, $uploadType, $imageSignature, $imageFile, $bytes, $imageUsage, $description, $resizeWidth, $resizeHeight, $resizeFileSize);
+            $response = $this->apiInstance->imagesAddAsync($accountId, $uploadType, $imageSignature, $imageFile, $bytes, $imageUsage, $description, $resizeWidth, $resizeHeight, $resizeFileSize);
             return $response;
         });
     }

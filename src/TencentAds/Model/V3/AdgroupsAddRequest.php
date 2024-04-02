@@ -104,6 +104,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'mpaSpec' => '\TencentAds\Model\V3\MpaSpec',
         'costConstraintScene' => '\TencentAds\Model\V3\CostConstraintScene',
         'customCostCap' => 'int',
+        'shortPlayPayType' => '\TencentAds\Model\V3\ShortPlayPayType',
+        'sellStrategyId' => 'int',
         'dynamicAdType' => '\TencentAds\Model\V3\DynamicAdType'
     ];
 
@@ -160,6 +162,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'mpaSpec' => null,
         'costConstraintScene' => null,
         'customCostCap' => 'int64',
+        'shortPlayPayType' => null,
+        'sellStrategyId' => 'int64',
         'dynamicAdType' => null
     ];
 
@@ -237,6 +241,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'mpaSpec' => 'mpa_spec',
         'costConstraintScene' => 'cost_constraint_scene',
         'customCostCap' => 'custom_cost_cap',
+        'shortPlayPayType' => 'short_play_pay_type',
+        'sellStrategyId' => 'sell_strategy_id',
         'dynamicAdType' => 'dynamic_ad_type'
     ];
 
@@ -293,6 +299,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'mpaSpec' => 'setMpaSpec',
         'costConstraintScene' => 'setCostConstraintScene',
         'customCostCap' => 'setCustomCostCap',
+        'shortPlayPayType' => 'setShortPlayPayType',
+        'sellStrategyId' => 'setSellStrategyId',
         'dynamicAdType' => 'setDynamicAdType'
     ];
 
@@ -349,6 +357,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'mpaSpec' => 'getMpaSpec',
         'costConstraintScene' => 'getCostConstraintScene',
         'customCostCap' => 'getCustomCostCap',
+        'shortPlayPayType' => 'getShortPlayPayType',
+        'sellStrategyId' => 'getSellStrategyId',
         'dynamicAdType' => 'getDynamicAdType'
     ];
 
@@ -459,6 +469,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['mpaSpec'] = isset($data['mpaSpec']) ? $data['mpaSpec'] : null;
         $this->container['costConstraintScene'] = isset($data['costConstraintScene']) ? $data['costConstraintScene'] : null;
         $this->container['customCostCap'] = isset($data['customCostCap']) ? $data['customCostCap'] : null;
+        $this->container['shortPlayPayType'] = isset($data['shortPlayPayType']) ? $data['shortPlayPayType'] : null;
+        $this->container['sellStrategyId'] = isset($data['sellStrategyId']) ? $data['sellStrategyId'] : null;
         $this->container['dynamicAdType'] = isset($data['dynamicAdType']) ? $data['dynamicAdType'] : null;
     }
 
@@ -1610,6 +1622,54 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setCustomCostCap($customCostCap)
     {
         $this->container['customCostCap'] = $customCostCap;
+
+        return $this;
+    }
+
+    /**
+     * Gets shortPlayPayType
+     *
+     * @return \TencentAds\Model\V3\ShortPlayPayType|mixed
+     */
+    public function getShortPlayPayType()
+    {
+        return $this->container['shortPlayPayType'];
+    }
+
+    /**
+     * Sets shortPlayPayType
+     *
+     * @param \TencentAds\Model\V3\ShortPlayPayType|mixed $shortPlayPayType shortPlayPayType
+     *
+     * @return $this
+     */
+    public function setShortPlayPayType($shortPlayPayType)
+    {
+        $this->container['shortPlayPayType'] = $shortPlayPayType;
+
+        return $this;
+    }
+
+    /**
+     * Gets sellStrategyId
+     *
+     * @return int|mixed
+     */
+    public function getSellStrategyId()
+    {
+        return $this->container['sellStrategyId'];
+    }
+
+    /**
+     * Sets sellStrategyId
+     *
+     * @param int|mixed $sellStrategyId sellStrategyId
+     *
+     * @return $this
+     */
+    public function setSellStrategyId($sellStrategyId)
+    {
+        $this->container['sellStrategyId'] = $sellStrategyId;
 
         return $this;
     }

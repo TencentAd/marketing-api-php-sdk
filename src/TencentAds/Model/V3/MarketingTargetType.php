@@ -100,6 +100,7 @@ class MarketingTargetType
     const LIVE_STREAM_ROOM = 'MARKETING_TARGET_TYPE_LIVE_STREAM_ROOM';
     const PERSONAL_STORE = 'MARKETING_TARGET_TYPE_PERSONAL_STORE';
     const PLATFORM_CHANNEL = 'MARKETING_TARGET_TYPE_PLATFORM_CHANNEL';
+    const TWO_WHEEL_VEHICLE = 'MARKETING_TARGET_TYPE_TWO_WHEEL_VEHICLE';
     
     /**
      * Gets allowable values of the enum
@@ -164,6 +165,7 @@ class MarketingTargetType
             self::LIVE_STREAM_ROOM,
             self::PERSONAL_STORE,
             self::PLATFORM_CHANNEL,
+            self::TWO_WHEEL_VEHICLE,
         ];
     }
 }

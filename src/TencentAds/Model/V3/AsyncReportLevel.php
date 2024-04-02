@@ -57,6 +57,7 @@ class AsyncReportLevel
     const MATERIAL_IMAGE = 'REPORT_LEVEL_MATERIAL_IMAGE';
     const MATERIAL_VIDEO = 'REPORT_LEVEL_MATERIAL_VIDEO';
     const CHANNEL = 'REPORT_LEVEL_CHANNEL';
+    const LANDING_PAGE = 'REPORT_LEVEL_LANDING_PAGE';
     const MARKETING_ASSET = 'REPORT_LEVEL_MARKETING_ASSET';
     
     /**
@@ -79,6 +80,7 @@ class AsyncReportLevel
             self::MATERIAL_IMAGE,
             self::MATERIAL_VIDEO,
             self::CHANNEL,
+            self::LANDING_PAGE,
             self::MARKETING_ASSET,
         ];
     }

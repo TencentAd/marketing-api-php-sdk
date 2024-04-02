@@ -1,6 +1,6 @@
 <?php
 /**
- * DynamicCreativeStatus
+ * ProductSaleStatus
  *
  * PHP version 5
  *
@@ -31,26 +31,21 @@ namespace TencentAds\Model\V3;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DynamicCreativeStatus Class Doc Comment
+ * ProductSaleStatus Class Doc Comment
  *
  * @category Class
- * @description 动态创意在系统中的状态
+ * @description 商品状态
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DynamicCreativeStatus
+class ProductSaleStatus
 {
     /**
      * Possible values of this enum
      */
-    const PENDING = 'DYNAMIC_CREATIVE_STATUS_PENDING';
-    const DENIED = 'DYNAMIC_CREATIVE_STATUS_DENIED';
-    const ACTIVE = 'DYNAMIC_CREATIVE_STATUS_ACTIVE';
-    const SUSPEND = 'DYNAMIC_CREATIVE_STATUS_SUSPEND';
-    const PREPARE_FAILED = 'DYNAMIC_CREATIVE_STATUS_PREPARE_FAILED';
-    const DELETED = 'DYNAMIC_CREATIVE_STATUS_DELETED';
-    const CREATING = 'DYNAMIC_CREATIVE_STATUS_CREATING';
+    const ONLINE = 'PRODUCT_SALE_STATUS_ONLINE';
+    const OFFLINE = 'PRODUCT_SALE_STATUS_OFFLINE';
     
     /**
      * Gets allowable values of the enum
@@ -59,13 +54,8 @@ class DynamicCreativeStatus
     public static function getAllowableEnumValues()
     {
         return [
-            self::PENDING,
-            self::DENIED,
-            self::ACTIVE,
-            self::SUSPEND,
-            self::PREPARE_FAILED,
-            self::DELETED,
-            self::CREATING,
+            self::ONLINE,
+            self::OFFLINE,
         ];
     }
 }

@@ -1302,7 +1302,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateBidAmount
      *
-     * 更新广告组出价
+     * 批量修改广告组出价
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateBidAmountRequest|mixed $data data (required)
      *
@@ -1319,7 +1319,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateBidAmountWithHttpInfo
      *
-     * 更新广告组出价
+     * 批量修改广告组出价
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateBidAmountRequest|mixed $data (required)
      *
@@ -1394,7 +1394,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateBidAmountAsync
      *
-     * 更新广告组出价
+     * 批量修改广告组出价
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateBidAmountRequest|mixed $data (required)
      *
@@ -1414,7 +1414,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateBidAmountAsyncWithHttpInfo
      *
-     * 更新广告组出价
+     * 批量修改广告组出价
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateBidAmountRequest|mixed $data (required)
      *
@@ -1592,7 +1592,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateConfiguredStatus
      *
-     * 更新广告组状态
+     * 批量修改广告组开启/暂停状态
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateConfiguredStatusRequest|mixed $data data (required)
      *
@@ -1609,7 +1609,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateConfiguredStatusWithHttpInfo
      *
-     * 更新广告组状态
+     * 批量修改广告组开启/暂停状态
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateConfiguredStatusRequest|mixed $data (required)
      *
@@ -1684,7 +1684,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateConfiguredStatusAsync
      *
-     * 更新广告组状态
+     * 批量修改广告组开启/暂停状态
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateConfiguredStatusRequest|mixed $data (required)
      *
@@ -1704,7 +1704,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateConfiguredStatusAsyncWithHttpInfo
      *
-     * 更新广告组状态
+     * 批量修改广告组开启/暂停状态
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateConfiguredStatusRequest|mixed $data (required)
      *
@@ -1882,7 +1882,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateDailyBudget
      *
-     * 更新广告组日限额信息
+     * 批量修改广告组日限额
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateDailyBudgetRequest|mixed $data data (required)
      *
@@ -1899,7 +1899,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateDailyBudgetWithHttpInfo
      *
-     * 更新广告组日限额信息
+     * 批量修改广告组日限额
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateDailyBudgetRequest|mixed $data (required)
      *
@@ -1974,7 +1974,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateDailyBudgetAsync
      *
-     * 更新广告组日限额信息
+     * 批量修改广告组日限额
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateDailyBudgetRequest|mixed $data (required)
      *
@@ -1994,7 +1994,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateDailyBudgetAsyncWithHttpInfo
      *
-     * 更新广告组日限额信息
+     * 批量修改广告组日限额
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateDailyBudgetRequest|mixed $data (required)
      *
@@ -2172,7 +2172,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateDatetime
      *
-     * 更新广告组投放时间
+     * 批量修改广告组投放起止时间
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateDatetimeRequest|mixed $data data (required)
      *
@@ -2189,7 +2189,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateDatetimeWithHttpInfo
      *
-     * 更新广告组投放时间
+     * 批量修改广告组投放起止时间
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateDatetimeRequest|mixed $data (required)
      *
@@ -2264,7 +2264,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateDatetimeAsync
      *
-     * 更新广告组投放时间
+     * 批量修改广告组投放起止时间
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateDatetimeRequest|mixed $data (required)
      *
@@ -2284,7 +2284,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateDatetimeAsyncWithHttpInfo
      *
-     * 更新广告组投放时间
+     * 批量修改广告组投放起止时间
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateDatetimeRequest|mixed $data (required)
      *

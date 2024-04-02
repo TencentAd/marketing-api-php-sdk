@@ -59,4 +59,48 @@ class ProductSeriesApiContainer extends ApiContainer
             return $response;
         });
     }
+
+
+    /**
+     * Handle ProductSeriesApi productSeriesGet function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function get(array $params = [])
+    {
+        return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $catalogId = isset($params['catalog_id']) ? $params['catalog_id'] : null;
+            $filtering = isset($params['filtering']) ? $params['filtering'] : null;
+            $page = isset($params['page']) ? $params['page'] : null;
+            $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $fields = isset($params['fields']) ? $params['fields'] : null;
+            $response = $this->apiInstance->productSeriesGet($accountId, $catalogId, $filtering, $page, $pageSize, $fields);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle ProductSeriesApi productSeriesGetAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function getAsync(array $params = [])
+    {
+        return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $catalogId = isset($params['catalog_id']) ? $params['catalog_id'] : null;
+            $filtering = isset($params['filtering']) ? $params['filtering'] : null;
+            $page = isset($params['page']) ? $params['page'] : null;
+            $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $fields = isset($params['fields']) ? $params['fields'] : null;
+            $response = $this->apiInstance->productSeriesGetAsync($accountId, $catalogId, $filtering, $page, $pageSize, $fields);
+            return $response;
+        });
+    }
 }

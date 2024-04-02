@@ -386,7 +386,7 @@ class AdvertiserApi
      * @param  string|mixed $paginationMode paginationMode (required)
      * @param  int|mixed $pageSize pageSize (required)
      * @param  int|mixed $agencyId agencyId (optional)
-     * @param  int|mixed $advertiserId advertiserId (optional)
+     * @param  int|mixed $accountId accountId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering filtering (optional)
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $cursor cursor (optional)
@@ -395,9 +395,9 @@ class AdvertiserApi
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\AdvertiserGetResponse|mixed
      */
-    public function advertiserGet($fields, $paginationMode, $pageSize, $agencyId = null, $advertiserId = null, $filtering = null, $page = null, $cursor = null)
+    public function advertiserGet($fields, $paginationMode, $pageSize, $agencyId = null, $accountId = null, $filtering = null, $page = null, $cursor = null)
     {
-        list($response) = $this->advertiserGetWithHttpInfo($fields, $paginationMode, $pageSize, $agencyId, $advertiserId, $filtering, $page, $cursor);
+        list($response) = $this->advertiserGetWithHttpInfo($fields, $paginationMode, $pageSize, $agencyId, $accountId, $filtering, $page, $cursor);
         return $response;
     }
 
@@ -410,7 +410,7 @@ class AdvertiserApi
      * @param  string|mixed $paginationMode (required)
      * @param  int|mixed $pageSize (required)
      * @param  int|mixed $agencyId (optional)
-     * @param  int|mixed $advertiserId (optional)
+     * @param  int|mixed $accountId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $cursor (optional)
@@ -419,10 +419,10 @@ class AdvertiserApi
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\AdvertiserGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function advertiserGetWithHttpInfo($fields, $paginationMode, $pageSize, $agencyId = null, $advertiserId = null, $filtering = null, $page = null, $cursor = null)
+    public function advertiserGetWithHttpInfo($fields, $paginationMode, $pageSize, $agencyId = null, $accountId = null, $filtering = null, $page = null, $cursor = null)
     {
         $returnType = '\TencentAds\Model\V3\AdvertiserGetResponse';
-        $request = $this->advertiserGetRequest($fields, $paginationMode, $pageSize, $agencyId, $advertiserId, $filtering, $page, $cursor);
+        $request = $this->advertiserGetRequest($fields, $paginationMode, $pageSize, $agencyId, $accountId, $filtering, $page, $cursor);
 
         try {
             $options = $this->createHttpClientOption();
@@ -492,7 +492,7 @@ class AdvertiserApi
      * @param  string|mixed $paginationMode (required)
      * @param  int|mixed $pageSize (required)
      * @param  int|mixed $agencyId (optional)
-     * @param  int|mixed $advertiserId (optional)
+     * @param  int|mixed $accountId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $cursor (optional)
@@ -500,9 +500,9 @@ class AdvertiserApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function advertiserGetAsync($fields, $paginationMode, $pageSize, $agencyId = null, $advertiserId = null, $filtering = null, $page = null, $cursor = null)
+    public function advertiserGetAsync($fields, $paginationMode, $pageSize, $agencyId = null, $accountId = null, $filtering = null, $page = null, $cursor = null)
     {
-        return $this->advertiserGetAsyncWithHttpInfo($fields, $paginationMode, $pageSize, $agencyId, $advertiserId, $filtering, $page, $cursor)
+        return $this->advertiserGetAsyncWithHttpInfo($fields, $paginationMode, $pageSize, $agencyId, $accountId, $filtering, $page, $cursor)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -519,7 +519,7 @@ class AdvertiserApi
      * @param  string|mixed $paginationMode (required)
      * @param  int|mixed $pageSize (required)
      * @param  int|mixed $agencyId (optional)
-     * @param  int|mixed $advertiserId (optional)
+     * @param  int|mixed $accountId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $cursor (optional)
@@ -527,10 +527,10 @@ class AdvertiserApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function advertiserGetAsyncWithHttpInfo($fields, $paginationMode, $pageSize, $agencyId = null, $advertiserId = null, $filtering = null, $page = null, $cursor = null)
+    public function advertiserGetAsyncWithHttpInfo($fields, $paginationMode, $pageSize, $agencyId = null, $accountId = null, $filtering = null, $page = null, $cursor = null)
     {
         $returnType = '\TencentAds\Model\V3\AdvertiserGetResponse';
-        $request = $this->advertiserGetRequest($fields, $paginationMode, $pageSize, $agencyId, $advertiserId, $filtering, $page, $cursor);
+        $request = $this->advertiserGetRequest($fields, $paginationMode, $pageSize, $agencyId, $accountId, $filtering, $page, $cursor);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -576,7 +576,7 @@ class AdvertiserApi
      * @param  string|mixed $paginationMode (required)
      * @param  int|mixed $pageSize (required)
      * @param  int|mixed $agencyId (optional)
-     * @param  int|mixed $advertiserId (optional)
+     * @param  int|mixed $accountId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $cursor (optional)
@@ -584,7 +584,7 @@ class AdvertiserApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function advertiserGetRequest($fields, $paginationMode, $pageSize, $agencyId = null, $advertiserId = null, $filtering = null, $page = null, $cursor = null)
+    protected function advertiserGetRequest($fields, $paginationMode, $pageSize, $agencyId = null, $accountId = null, $filtering = null, $page = null, $cursor = null)
     {
         // verify the required parameter 'fields' is set
         if ($fields === null || (is_array($fields) && count($fields) === 0)) {
@@ -617,8 +617,8 @@ class AdvertiserApi
             $queryParams['agency_id'] = ObjectSerializer::toQueryValue($agencyId);
         }
         // query params
-        if ($advertiserId !== null) {
-            $queryParams['advertiser_id'] = ObjectSerializer::toQueryValue($advertiserId);
+        if ($accountId !== null) {
+            $queryParams['account_id'] = ObjectSerializer::toQueryValue($accountId);
         }
         // query params
         if (is_array($filtering)) {
@@ -1042,7 +1042,7 @@ class AdvertiserApi
     /**
      * Operation advertiserUpdateDailyBudget
      *
-     * 更新广告主日限额信息
+     * 批量修改广告主日限额
      *
      * @param  \TencentAds\Model\V3\AdvertiserUpdateDailyBudgetRequest|mixed $data data (required)
      *
@@ -1059,7 +1059,7 @@ class AdvertiserApi
     /**
      * Operation advertiserUpdateDailyBudgetWithHttpInfo
      *
-     * 更新广告主日限额信息
+     * 批量修改广告主日限额
      *
      * @param  \TencentAds\Model\V3\AdvertiserUpdateDailyBudgetRequest|mixed $data (required)
      *
@@ -1134,7 +1134,7 @@ class AdvertiserApi
     /**
      * Operation advertiserUpdateDailyBudgetAsync
      *
-     * 更新广告主日限额信息
+     * 批量修改广告主日限额
      *
      * @param  \TencentAds\Model\V3\AdvertiserUpdateDailyBudgetRequest|mixed $data (required)
      *
@@ -1154,7 +1154,7 @@ class AdvertiserApi
     /**
      * Operation advertiserUpdateDailyBudgetAsyncWithHttpInfo
      *
-     * 更新广告主日限额信息
+     * 批量修改广告主日限额
      *
      * @param  \TencentAds\Model\V3\AdvertiserUpdateDailyBudgetRequest|mixed $data (required)
      *

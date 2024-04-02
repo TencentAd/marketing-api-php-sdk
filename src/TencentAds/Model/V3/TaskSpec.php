@@ -68,7 +68,13 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDailyBudgetSpec' => '\TencentAds\Model\V3\UpdateAdgroupDailyBudgetItem[]',
         'updateAdgroupAutoAcquisitionSpec' => '\TencentAds\Model\V3\UpdateAdgroupAutoAcquisitionItem[]',
         'updateAdgroupDeepConversionWorthAdvancedRateSpec' => '\TencentAds\Model\V3\UpdateAdgroupDeepConversionWorthAdvancedRateItem[]',
-        'updateDeepConversionBehaviorAdvancedBidSpec' => '\TencentAds\Model\V3\UpdateDeepConversionBehaviorAdvancedBidItem[]'
+        'updateDeepConversionBehaviorAdvancedBidSpec' => '\TencentAds\Model\V3\UpdateDeepConversionBehaviorAdvancedBidItem[]',
+        'replyFinderObjectCommentSpec' => '\TencentAds\Model\V3\ReplyFinderObjectCommentItem[]',
+        'deleteFinderObjectCommentSpec' => '\TencentAds\Model\V3\DeleteFinderObjectCommentItem[]',
+        'updateFinderObjectCommentFlagSpec' => '\TencentAds\Model\V3\UpdateFinderObjectCommentFlagItem[]',
+        'updateAdgroupTimeSpec' => '\TencentAds\Model\V3\UpdateAdgroupTimeItem[]',
+        'updateAdgroupDateSpec' => '\TencentAds\Model\V3\UpdateAdgroupDateItem[]',
+        'updateAdgroupBidAmountSpec' => '\TencentAds\Model\V3\UpdateAdgroupBidAmountItem[]'
     ];
 
     /**
@@ -87,7 +93,13 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDailyBudgetSpec' => null,
         'updateAdgroupAutoAcquisitionSpec' => null,
         'updateAdgroupDeepConversionWorthAdvancedRateSpec' => null,
-        'updateDeepConversionBehaviorAdvancedBidSpec' => null
+        'updateDeepConversionBehaviorAdvancedBidSpec' => null,
+        'replyFinderObjectCommentSpec' => null,
+        'deleteFinderObjectCommentSpec' => null,
+        'updateFinderObjectCommentFlagSpec' => null,
+        'updateAdgroupTimeSpec' => null,
+        'updateAdgroupDateSpec' => null,
+        'updateAdgroupBidAmountSpec' => null
     ];
 
     /**
@@ -127,7 +139,13 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDailyBudgetSpec' => 'update_adgroup_daily_budget_spec',
         'updateAdgroupAutoAcquisitionSpec' => 'update_adgroup_auto_acquisition_spec',
         'updateAdgroupDeepConversionWorthAdvancedRateSpec' => 'update_adgroup_deep_conversion_worth_advanced_rate_spec',
-        'updateDeepConversionBehaviorAdvancedBidSpec' => 'update_deep_conversion_behavior_advanced_bid_spec'
+        'updateDeepConversionBehaviorAdvancedBidSpec' => 'update_deep_conversion_behavior_advanced_bid_spec',
+        'replyFinderObjectCommentSpec' => 'reply_finder_object_comment_spec',
+        'deleteFinderObjectCommentSpec' => 'delete_finder_object_comment_spec',
+        'updateFinderObjectCommentFlagSpec' => 'update_finder_object_comment_flag_spec',
+        'updateAdgroupTimeSpec' => 'update_adgroup_time_spec',
+        'updateAdgroupDateSpec' => 'update_adgroup_date_spec',
+        'updateAdgroupBidAmountSpec' => 'update_adgroup_bid_amount_spec'
     ];
 
     /**
@@ -146,7 +164,13 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDailyBudgetSpec' => 'setUpdateAdgroupDailyBudgetSpec',
         'updateAdgroupAutoAcquisitionSpec' => 'setUpdateAdgroupAutoAcquisitionSpec',
         'updateAdgroupDeepConversionWorthAdvancedRateSpec' => 'setUpdateAdgroupDeepConversionWorthAdvancedRateSpec',
-        'updateDeepConversionBehaviorAdvancedBidSpec' => 'setUpdateDeepConversionBehaviorAdvancedBidSpec'
+        'updateDeepConversionBehaviorAdvancedBidSpec' => 'setUpdateDeepConversionBehaviorAdvancedBidSpec',
+        'replyFinderObjectCommentSpec' => 'setReplyFinderObjectCommentSpec',
+        'deleteFinderObjectCommentSpec' => 'setDeleteFinderObjectCommentSpec',
+        'updateFinderObjectCommentFlagSpec' => 'setUpdateFinderObjectCommentFlagSpec',
+        'updateAdgroupTimeSpec' => 'setUpdateAdgroupTimeSpec',
+        'updateAdgroupDateSpec' => 'setUpdateAdgroupDateSpec',
+        'updateAdgroupBidAmountSpec' => 'setUpdateAdgroupBidAmountSpec'
     ];
 
     /**
@@ -165,7 +189,13 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDailyBudgetSpec' => 'getUpdateAdgroupDailyBudgetSpec',
         'updateAdgroupAutoAcquisitionSpec' => 'getUpdateAdgroupAutoAcquisitionSpec',
         'updateAdgroupDeepConversionWorthAdvancedRateSpec' => 'getUpdateAdgroupDeepConversionWorthAdvancedRateSpec',
-        'updateDeepConversionBehaviorAdvancedBidSpec' => 'getUpdateDeepConversionBehaviorAdvancedBidSpec'
+        'updateDeepConversionBehaviorAdvancedBidSpec' => 'getUpdateDeepConversionBehaviorAdvancedBidSpec',
+        'replyFinderObjectCommentSpec' => 'getReplyFinderObjectCommentSpec',
+        'deleteFinderObjectCommentSpec' => 'getDeleteFinderObjectCommentSpec',
+        'updateFinderObjectCommentFlagSpec' => 'getUpdateFinderObjectCommentFlagSpec',
+        'updateAdgroupTimeSpec' => 'getUpdateAdgroupTimeSpec',
+        'updateAdgroupDateSpec' => 'getUpdateAdgroupDateSpec',
+        'updateAdgroupBidAmountSpec' => 'getUpdateAdgroupBidAmountSpec'
     ];
 
     /**
@@ -239,6 +269,12 @@ class TaskSpec implements ModelInterface, ArrayAccess
         $this->container['updateAdgroupAutoAcquisitionSpec'] = isset($data['updateAdgroupAutoAcquisitionSpec']) ? $data['updateAdgroupAutoAcquisitionSpec'] : null;
         $this->container['updateAdgroupDeepConversionWorthAdvancedRateSpec'] = isset($data['updateAdgroupDeepConversionWorthAdvancedRateSpec']) ? $data['updateAdgroupDeepConversionWorthAdvancedRateSpec'] : null;
         $this->container['updateDeepConversionBehaviorAdvancedBidSpec'] = isset($data['updateDeepConversionBehaviorAdvancedBidSpec']) ? $data['updateDeepConversionBehaviorAdvancedBidSpec'] : null;
+        $this->container['replyFinderObjectCommentSpec'] = isset($data['replyFinderObjectCommentSpec']) ? $data['replyFinderObjectCommentSpec'] : null;
+        $this->container['deleteFinderObjectCommentSpec'] = isset($data['deleteFinderObjectCommentSpec']) ? $data['deleteFinderObjectCommentSpec'] : null;
+        $this->container['updateFinderObjectCommentFlagSpec'] = isset($data['updateFinderObjectCommentFlagSpec']) ? $data['updateFinderObjectCommentFlagSpec'] : null;
+        $this->container['updateAdgroupTimeSpec'] = isset($data['updateAdgroupTimeSpec']) ? $data['updateAdgroupTimeSpec'] : null;
+        $this->container['updateAdgroupDateSpec'] = isset($data['updateAdgroupDateSpec']) ? $data['updateAdgroupDateSpec'] : null;
+        $this->container['updateAdgroupBidAmountSpec'] = isset($data['updateAdgroupBidAmountSpec']) ? $data['updateAdgroupBidAmountSpec'] : null;
     }
 
     /**
@@ -525,6 +561,150 @@ class TaskSpec implements ModelInterface, ArrayAccess
     public function setUpdateDeepConversionBehaviorAdvancedBidSpec($updateDeepConversionBehaviorAdvancedBidSpec)
     {
         $this->container['updateDeepConversionBehaviorAdvancedBidSpec'] = $updateDeepConversionBehaviorAdvancedBidSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets replyFinderObjectCommentSpec
+     *
+     * @return \TencentAds\Model\V3\ReplyFinderObjectCommentItem[]|mixed
+     */
+    public function getReplyFinderObjectCommentSpec()
+    {
+        return $this->container['replyFinderObjectCommentSpec'];
+    }
+
+    /**
+     * Sets replyFinderObjectCommentSpec
+     *
+     * @param \TencentAds\Model\V3\ReplyFinderObjectCommentItem[]|mixed $replyFinderObjectCommentSpec replyFinderObjectCommentSpec
+     *
+     * @return $this
+     */
+    public function setReplyFinderObjectCommentSpec($replyFinderObjectCommentSpec)
+    {
+        $this->container['replyFinderObjectCommentSpec'] = $replyFinderObjectCommentSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets deleteFinderObjectCommentSpec
+     *
+     * @return \TencentAds\Model\V3\DeleteFinderObjectCommentItem[]|mixed
+     */
+    public function getDeleteFinderObjectCommentSpec()
+    {
+        return $this->container['deleteFinderObjectCommentSpec'];
+    }
+
+    /**
+     * Sets deleteFinderObjectCommentSpec
+     *
+     * @param \TencentAds\Model\V3\DeleteFinderObjectCommentItem[]|mixed $deleteFinderObjectCommentSpec deleteFinderObjectCommentSpec
+     *
+     * @return $this
+     */
+    public function setDeleteFinderObjectCommentSpec($deleteFinderObjectCommentSpec)
+    {
+        $this->container['deleteFinderObjectCommentSpec'] = $deleteFinderObjectCommentSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets updateFinderObjectCommentFlagSpec
+     *
+     * @return \TencentAds\Model\V3\UpdateFinderObjectCommentFlagItem[]|mixed
+     */
+    public function getUpdateFinderObjectCommentFlagSpec()
+    {
+        return $this->container['updateFinderObjectCommentFlagSpec'];
+    }
+
+    /**
+     * Sets updateFinderObjectCommentFlagSpec
+     *
+     * @param \TencentAds\Model\V3\UpdateFinderObjectCommentFlagItem[]|mixed $updateFinderObjectCommentFlagSpec updateFinderObjectCommentFlagSpec
+     *
+     * @return $this
+     */
+    public function setUpdateFinderObjectCommentFlagSpec($updateFinderObjectCommentFlagSpec)
+    {
+        $this->container['updateFinderObjectCommentFlagSpec'] = $updateFinderObjectCommentFlagSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets updateAdgroupTimeSpec
+     *
+     * @return \TencentAds\Model\V3\UpdateAdgroupTimeItem[]|mixed
+     */
+    public function getUpdateAdgroupTimeSpec()
+    {
+        return $this->container['updateAdgroupTimeSpec'];
+    }
+
+    /**
+     * Sets updateAdgroupTimeSpec
+     *
+     * @param \TencentAds\Model\V3\UpdateAdgroupTimeItem[]|mixed $updateAdgroupTimeSpec updateAdgroupTimeSpec
+     *
+     * @return $this
+     */
+    public function setUpdateAdgroupTimeSpec($updateAdgroupTimeSpec)
+    {
+        $this->container['updateAdgroupTimeSpec'] = $updateAdgroupTimeSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets updateAdgroupDateSpec
+     *
+     * @return \TencentAds\Model\V3\UpdateAdgroupDateItem[]|mixed
+     */
+    public function getUpdateAdgroupDateSpec()
+    {
+        return $this->container['updateAdgroupDateSpec'];
+    }
+
+    /**
+     * Sets updateAdgroupDateSpec
+     *
+     * @param \TencentAds\Model\V3\UpdateAdgroupDateItem[]|mixed $updateAdgroupDateSpec updateAdgroupDateSpec
+     *
+     * @return $this
+     */
+    public function setUpdateAdgroupDateSpec($updateAdgroupDateSpec)
+    {
+        $this->container['updateAdgroupDateSpec'] = $updateAdgroupDateSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets updateAdgroupBidAmountSpec
+     *
+     * @return \TencentAds\Model\V3\UpdateAdgroupBidAmountItem[]|mixed
+     */
+    public function getUpdateAdgroupBidAmountSpec()
+    {
+        return $this->container['updateAdgroupBidAmountSpec'];
+    }
+
+    /**
+     * Sets updateAdgroupBidAmountSpec
+     *
+     * @param \TencentAds\Model\V3\UpdateAdgroupBidAmountItem[]|mixed $updateAdgroupBidAmountSpec updateAdgroupBidAmountSpec
+     *
+     * @return $this
+     */
+    public function setUpdateAdgroupBidAmountSpec($updateAdgroupBidAmountSpec)
+    {
+        $this->container['updateAdgroupBidAmountSpec'] = $updateAdgroupBidAmountSpec;
 
         return $this;
     }

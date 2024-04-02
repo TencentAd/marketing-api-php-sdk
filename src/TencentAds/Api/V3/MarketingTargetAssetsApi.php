@@ -674,6 +674,7 @@ class MarketingTargetAssetsApi
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  string|mixed $marketingTargetType marketingTargetType (required)
+     * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering filtering (optional)
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -682,9 +683,9 @@ class MarketingTargetAssetsApi
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\MarketingTargetAssetsGetResponse|mixed
      */
-    public function marketingTargetAssetsGet($accountId, $marketingTargetType, $page = null, $pageSize = null, $fields = null)
+    public function marketingTargetAssetsGet($accountId, $marketingTargetType, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
-        list($response) = $this->marketingTargetAssetsGetWithHttpInfo($accountId, $marketingTargetType, $page, $pageSize, $fields);
+        list($response) = $this->marketingTargetAssetsGetWithHttpInfo($accountId, $marketingTargetType, $filtering, $page, $pageSize, $fields);
         return $response;
     }
 
@@ -695,6 +696,7 @@ class MarketingTargetAssetsApi
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $marketingTargetType (required)
+     * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -703,10 +705,10 @@ class MarketingTargetAssetsApi
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\MarketingTargetAssetsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function marketingTargetAssetsGetWithHttpInfo($accountId, $marketingTargetType, $page = null, $pageSize = null, $fields = null)
+    public function marketingTargetAssetsGetWithHttpInfo($accountId, $marketingTargetType, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\MarketingTargetAssetsGetResponse';
-        $request = $this->marketingTargetAssetsGetRequest($accountId, $marketingTargetType, $page, $pageSize, $fields);
+        $request = $this->marketingTargetAssetsGetRequest($accountId, $marketingTargetType, $filtering, $page, $pageSize, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -774,6 +776,7 @@ class MarketingTargetAssetsApi
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $marketingTargetType (required)
+     * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -781,9 +784,9 @@ class MarketingTargetAssetsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function marketingTargetAssetsGetAsync($accountId, $marketingTargetType, $page = null, $pageSize = null, $fields = null)
+    public function marketingTargetAssetsGetAsync($accountId, $marketingTargetType, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
-        return $this->marketingTargetAssetsGetAsyncWithHttpInfo($accountId, $marketingTargetType, $page, $pageSize, $fields)
+        return $this->marketingTargetAssetsGetAsyncWithHttpInfo($accountId, $marketingTargetType, $filtering, $page, $pageSize, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -798,6 +801,7 @@ class MarketingTargetAssetsApi
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $marketingTargetType (required)
+     * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -805,10 +809,10 @@ class MarketingTargetAssetsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function marketingTargetAssetsGetAsyncWithHttpInfo($accountId, $marketingTargetType, $page = null, $pageSize = null, $fields = null)
+    public function marketingTargetAssetsGetAsyncWithHttpInfo($accountId, $marketingTargetType, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\MarketingTargetAssetsGetResponse';
-        $request = $this->marketingTargetAssetsGetRequest($accountId, $marketingTargetType, $page, $pageSize, $fields);
+        $request = $this->marketingTargetAssetsGetRequest($accountId, $marketingTargetType, $filtering, $page, $pageSize, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -852,6 +856,7 @@ class MarketingTargetAssetsApi
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $marketingTargetType (required)
+     * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -859,7 +864,7 @@ class MarketingTargetAssetsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function marketingTargetAssetsGetRequest($accountId, $marketingTargetType, $page = null, $pageSize = null, $fields = null)
+    protected function marketingTargetAssetsGetRequest($accountId, $marketingTargetType, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -888,6 +893,13 @@ class MarketingTargetAssetsApi
         // query params
         if ($marketingTargetType !== null) {
             $queryParams['marketing_target_type'] = ObjectSerializer::toQueryValue($marketingTargetType);
+        }
+        // query params
+        if (is_array($filtering)) {
+           $queryParams['filtering'] = json_encode($filtering);
+        } else
+        if ($filtering !== null) {
+            $queryParams['filtering'] = ObjectSerializer::toQueryValue($filtering);
         }
         // query params
         if ($page !== null) {

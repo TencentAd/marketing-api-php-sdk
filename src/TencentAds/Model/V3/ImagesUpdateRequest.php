@@ -57,7 +57,7 @@ class ImagesUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'advertiserId' => 'int',
+        'accountId' => 'int',
         'imageId' => 'string',
         'description' => 'string'
     ];
@@ -68,7 +68,7 @@ class ImagesUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'advertiserId' => 'int64',
+        'accountId' => 'int64',
         'imageId' => null,
         'description' => null
     ];
@@ -100,7 +100,7 @@ class ImagesUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'advertiserId' => 'advertiser_id',
+        'accountId' => 'account_id',
         'imageId' => 'image_id',
         'description' => 'description'
     ];
@@ -111,7 +111,7 @@ class ImagesUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'advertiserId' => 'setAdvertiserId',
+        'accountId' => 'setAccountId',
         'imageId' => 'setImageId',
         'description' => 'setDescription'
     ];
@@ -122,7 +122,7 @@ class ImagesUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'advertiserId' => 'getAdvertiserId',
+        'accountId' => 'getAccountId',
         'imageId' => 'getImageId',
         'description' => 'getDescription'
     ];
@@ -187,7 +187,7 @@ class ImagesUpdateRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['advertiserId'] = isset($data['advertiserId']) ? $data['advertiserId'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['imageId'] = isset($data['imageId']) ? $data['imageId'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
     }
@@ -217,25 +217,25 @@ class ImagesUpdateRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets advertiserId
+     * Gets accountId
      *
      * @return int|mixed
      */
-    public function getAdvertiserId()
+    public function getAccountId()
     {
-        return $this->container['advertiserId'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets advertiserId
+     * Sets accountId
      *
-     * @param int|mixed $advertiserId advertiserId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setAdvertiserId($advertiserId)
+    public function setAccountId($accountId)
     {
-        $this->container['advertiserId'] = $advertiserId;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }

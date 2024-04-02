@@ -59,7 +59,7 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'accountId' => 'int',
         'taskName' => 'string',
-        'taskType' => '\TencentAds\Model\V3\TaskType',
+        'taskType' => 'string',
         'taskSpec' => '\TencentAds\Model\V3\ApiTaskSpec'
     ];
 
@@ -273,7 +273,7 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets taskType
      *
-     * @return \TencentAds\Model\V3\TaskType|mixed
+     * @return string|mixed
      */
     public function getTaskType()
     {
@@ -283,7 +283,7 @@ class AsyncTasksAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets taskType
      *
-     * @param \TencentAds\Model\V3\TaskType|mixed $taskType taskType
+     * @param string|mixed $taskType taskType
      *
      * @return $this
      */

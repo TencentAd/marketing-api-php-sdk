@@ -57,7 +57,7 @@ class MarketingTargetAssetPropertyValuesGetResponseData implements ModelInterfac
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'list' => '\TencentAds\Model\V3\GetPropertyListStruct[]',
+        'list' => '\TencentAds\Model\V3\MarketingTargetAssetPropertyValuesGetGetPropertyListStruct[]',
         'pageInfo' => '\TencentAds\Model\V3\PageInfo'
     ];
 
@@ -213,7 +213,7 @@ class MarketingTargetAssetPropertyValuesGetResponseData implements ModelInterfac
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\V3\GetPropertyListStruct[]|mixed
+     * @return \TencentAds\Model\V3\MarketingTargetAssetPropertyValuesGetGetPropertyListStruct[]|mixed
      */
     public function getList()
     {
@@ -223,7 +223,7 @@ class MarketingTargetAssetPropertyValuesGetResponseData implements ModelInterfac
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\V3\GetPropertyListStruct[]|mixed $list list
+     * @param \TencentAds\Model\V3\MarketingTargetAssetPropertyValuesGetGetPropertyListStruct[]|mixed $list list
      *
      * @return $this
      */

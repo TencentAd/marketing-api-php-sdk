@@ -71,7 +71,6 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'configuredStatus' => '\TencentAds\Model\V3\ConfiguredStatus',
         'enableBreakthroughSiteset' => 'bool',
         'isDeleted' => 'bool',
-        'systemStatus' => '\TencentAds\Model\V3\DynamicCreativeStatus',
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
         'dynamicCreativeStatusInfo' => '\TencentAds\Model\V3\DcInfoStruct[]',
@@ -98,7 +97,6 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'configuredStatus' => null,
         'enableBreakthroughSiteset' => null,
         'isDeleted' => null,
-        'systemStatus' => null,
         'createdTime' => 'int64',
         'lastModifiedTime' => 'int64',
         'dynamicCreativeStatusInfo' => null,
@@ -146,7 +144,6 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'configuredStatus' => 'configured_status',
         'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
         'isDeleted' => 'is_deleted',
-        'systemStatus' => 'system_status',
         'createdTime' => 'created_time',
         'lastModifiedTime' => 'last_modified_time',
         'dynamicCreativeStatusInfo' => 'dynamic_creative_status_info',
@@ -173,7 +170,6 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'configuredStatus' => 'setConfiguredStatus',
         'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
         'isDeleted' => 'setIsDeleted',
-        'systemStatus' => 'setSystemStatus',
         'createdTime' => 'setCreatedTime',
         'lastModifiedTime' => 'setLastModifiedTime',
         'dynamicCreativeStatusInfo' => 'setDynamicCreativeStatusInfo',
@@ -200,7 +196,6 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'configuredStatus' => 'getConfiguredStatus',
         'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
         'isDeleted' => 'getIsDeleted',
-        'systemStatus' => 'getSystemStatus',
         'createdTime' => 'getCreatedTime',
         'lastModifiedTime' => 'getLastModifiedTime',
         'dynamicCreativeStatusInfo' => 'getDynamicCreativeStatusInfo',
@@ -281,7 +276,6 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
         $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
         $this->container['isDeleted'] = isset($data['isDeleted']) ? $data['isDeleted'] : null;
-        $this->container['systemStatus'] = isset($data['systemStatus']) ? $data['systemStatus'] : null;
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
         $this->container['dynamicCreativeStatusInfo'] = isset($data['dynamicCreativeStatusInfo']) ? $data['dynamicCreativeStatusInfo'] : null;
@@ -621,30 +615,6 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setIsDeleted($isDeleted)
     {
         $this->container['isDeleted'] = $isDeleted;
-
-        return $this;
-    }
-
-    /**
-     * Gets systemStatus
-     *
-     * @return \TencentAds\Model\V3\DynamicCreativeStatus|mixed
-     */
-    public function getSystemStatus()
-    {
-        return $this->container['systemStatus'];
-    }
-
-    /**
-     * Sets systemStatus
-     *
-     * @param \TencentAds\Model\V3\DynamicCreativeStatus|mixed $systemStatus systemStatus
-     *
-     * @return $this
-     */
-    public function setSystemStatus($systemStatus)
-    {
-        $this->container['systemStatus'] = $systemStatus;
 
         return $this;
     }

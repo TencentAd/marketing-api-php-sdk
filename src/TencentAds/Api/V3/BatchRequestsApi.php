@@ -337,6 +337,21 @@ class BatchRequestsApi
             }
         }
 
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('access_token');
+        if ($apiKey !== null) {
+            $queryParams['access_token'] = $apiKey;
+        }
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('nonce');
+        if ($apiKey !== null) {
+            $queryParams['nonce'] = $apiKey;
+        }
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('timestamp');
+        if ($apiKey !== null) {
+            $queryParams['timestamp'] = $apiKey;
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {

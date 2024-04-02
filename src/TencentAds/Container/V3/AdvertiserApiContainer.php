@@ -76,11 +76,11 @@ class AdvertiserApiContainer extends ApiContainer
             $paginationMode = isset($params['pagination_mode']) ? $params['pagination_mode'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $agencyId = isset($params['agency_id']) ? $params['agency_id'] : null;
-            $advertiserId = isset($params['advertiser_id']) ? $params['advertiser_id'] : null;
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $cursor = isset($params['cursor']) ? $params['cursor'] : null;
-            $response = $this->apiInstance->advertiserGet($fields, $paginationMode, $pageSize, $agencyId, $advertiserId, $filtering, $page, $cursor);
+            $response = $this->apiInstance->advertiserGet($fields, $paginationMode, $pageSize, $agencyId, $accountId, $filtering, $page, $cursor);
             return $this->handleResponse($response);
         });
     }
@@ -99,11 +99,11 @@ class AdvertiserApiContainer extends ApiContainer
             $paginationMode = isset($params['pagination_mode']) ? $params['pagination_mode'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $agencyId = isset($params['agency_id']) ? $params['agency_id'] : null;
-            $advertiserId = isset($params['advertiser_id']) ? $params['advertiser_id'] : null;
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $cursor = isset($params['cursor']) ? $params['cursor'] : null;
-            $response = $this->apiInstance->advertiserGetAsync($fields, $paginationMode, $pageSize, $agencyId, $advertiserId, $filtering, $page, $cursor);
+            $response = $this->apiInstance->advertiserGetAsync($fields, $paginationMode, $pageSize, $agencyId, $accountId, $filtering, $page, $cursor);
             return $response;
         });
     }

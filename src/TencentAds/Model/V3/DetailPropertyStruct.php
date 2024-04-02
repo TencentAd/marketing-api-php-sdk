@@ -64,7 +64,8 @@ class DetailPropertyStruct implements ModelInterface, ArrayAccess
         'isRequired' => 'bool',
         'propertyClass' => '\TencentAds\Model\V3\MarketingAssetAttrClass',
         'propertyType' => 'string',
-        'propertyValue' => 'string[]'
+        'propertyValue' => 'string[]',
+        'recordable' => 'bool'
     ];
 
     /**
@@ -79,7 +80,8 @@ class DetailPropertyStruct implements ModelInterface, ArrayAccess
         'isRequired' => null,
         'propertyClass' => null,
         'propertyType' => null,
-        'propertyValue' => null
+        'propertyValue' => null,
+        'recordable' => null
     ];
 
     /**
@@ -115,7 +117,8 @@ class DetailPropertyStruct implements ModelInterface, ArrayAccess
         'isRequired' => 'is_required',
         'propertyClass' => 'property_class',
         'propertyType' => 'property_type',
-        'propertyValue' => 'property_value'
+        'propertyValue' => 'property_value',
+        'recordable' => 'recordable'
     ];
 
     /**
@@ -130,7 +133,8 @@ class DetailPropertyStruct implements ModelInterface, ArrayAccess
         'isRequired' => 'setIsRequired',
         'propertyClass' => 'setPropertyClass',
         'propertyType' => 'setPropertyType',
-        'propertyValue' => 'setPropertyValue'
+        'propertyValue' => 'setPropertyValue',
+        'recordable' => 'setRecordable'
     ];
 
     /**
@@ -145,7 +149,8 @@ class DetailPropertyStruct implements ModelInterface, ArrayAccess
         'isRequired' => 'getIsRequired',
         'propertyClass' => 'getPropertyClass',
         'propertyType' => 'getPropertyType',
-        'propertyValue' => 'getPropertyValue'
+        'propertyValue' => 'getPropertyValue',
+        'recordable' => 'getRecordable'
     ];
 
     /**
@@ -215,6 +220,7 @@ class DetailPropertyStruct implements ModelInterface, ArrayAccess
         $this->container['propertyClass'] = isset($data['propertyClass']) ? $data['propertyClass'] : null;
         $this->container['propertyType'] = isset($data['propertyType']) ? $data['propertyType'] : null;
         $this->container['propertyValue'] = isset($data['propertyValue']) ? $data['propertyValue'] : null;
+        $this->container['recordable'] = isset($data['recordable']) ? $data['recordable'] : null;
     }
 
     /**
@@ -405,6 +411,30 @@ class DetailPropertyStruct implements ModelInterface, ArrayAccess
     public function setPropertyValue($propertyValue)
     {
         $this->container['propertyValue'] = $propertyValue;
+
+        return $this;
+    }
+
+    /**
+     * Gets recordable
+     *
+     * @return bool|mixed
+     */
+    public function getRecordable()
+    {
+        return $this->container['recordable'];
+    }
+
+    /**
+     * Sets recordable
+     *
+     * @param bool|mixed $recordable recordable
+     *
+     * @return $this
+     */
+    public function setRecordable($recordable)
+    {
+        $this->container['recordable'] = $recordable;
 
         return $this;
     }

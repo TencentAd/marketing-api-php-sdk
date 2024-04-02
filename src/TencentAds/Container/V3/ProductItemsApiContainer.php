@@ -96,6 +96,46 @@ class ProductItemsApiContainer extends ApiContainer
 
 
     /**
+     * Handle ProductItemsApi productItemsGet function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function get(array $params = [])
+    {
+        return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $productCatalogId = isset($params['product_catalog_id']) ? $params['product_catalog_id'] : null;
+            $filtering = isset($params['filtering']) ? $params['filtering'] : null;
+            $fields = isset($params['fields']) ? $params['fields'] : null;
+            $response = $this->apiInstance->productItemsGet($accountId, $productCatalogId, $filtering, $fields);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle ProductItemsApi productItemsGetAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function getAsync(array $params = [])
+    {
+        return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $productCatalogId = isset($params['product_catalog_id']) ? $params['product_catalog_id'] : null;
+            $filtering = isset($params['filtering']) ? $params['filtering'] : null;
+            $fields = isset($params['fields']) ? $params['fields'] : null;
+            $response = $this->apiInstance->productItemsGetAsync($accountId, $productCatalogId, $filtering, $fields);
+            return $response;
+        });
+    }
+
+
+    /**
      * Handle ProductItemsApi productItemsUpdate function
      * @param array params
      * @return mixed

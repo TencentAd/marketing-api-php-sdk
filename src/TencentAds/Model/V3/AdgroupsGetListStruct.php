@@ -124,7 +124,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoAcquisitionStatusMessage' => 'string',
         'costConstraintScene' => '\TencentAds\Model\V3\CostConstraintScene',
         'customCostCap' => 'int',
-        'mpaSpec' => '\TencentAds\Model\V3\MpaSpec'
+        'mpaSpec' => '\TencentAds\Model\V3\MpaSpec',
+        'shortPlayPayType' => '\TencentAds\Model\V3\ShortPlayPayType',
+        'sellStrategyId' => 'int'
     ];
 
     /**
@@ -199,7 +201,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoAcquisitionStatusMessage' => null,
         'costConstraintScene' => null,
         'customCostCap' => 'int64',
-        'mpaSpec' => null
+        'mpaSpec' => null,
+        'shortPlayPayType' => null,
+        'sellStrategyId' => 'int64'
     ];
 
     /**
@@ -295,7 +299,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoAcquisitionStatusMessage' => 'auto_acquisition_status_message',
         'costConstraintScene' => 'cost_constraint_scene',
         'customCostCap' => 'custom_cost_cap',
-        'mpaSpec' => 'mpa_spec'
+        'mpaSpec' => 'mpa_spec',
+        'shortPlayPayType' => 'short_play_pay_type',
+        'sellStrategyId' => 'sell_strategy_id'
     ];
 
     /**
@@ -370,7 +376,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoAcquisitionStatusMessage' => 'setAutoAcquisitionStatusMessage',
         'costConstraintScene' => 'setCostConstraintScene',
         'customCostCap' => 'setCustomCostCap',
-        'mpaSpec' => 'setMpaSpec'
+        'mpaSpec' => 'setMpaSpec',
+        'shortPlayPayType' => 'setShortPlayPayType',
+        'sellStrategyId' => 'setSellStrategyId'
     ];
 
     /**
@@ -445,7 +453,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'autoAcquisitionStatusMessage' => 'getAutoAcquisitionStatusMessage',
         'costConstraintScene' => 'getCostConstraintScene',
         'customCostCap' => 'getCustomCostCap',
-        'mpaSpec' => 'getMpaSpec'
+        'mpaSpec' => 'getMpaSpec',
+        'shortPlayPayType' => 'getShortPlayPayType',
+        'sellStrategyId' => 'getSellStrategyId'
     ];
 
     /**
@@ -575,6 +585,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['costConstraintScene'] = isset($data['costConstraintScene']) ? $data['costConstraintScene'] : null;
         $this->container['customCostCap'] = isset($data['customCostCap']) ? $data['customCostCap'] : null;
         $this->container['mpaSpec'] = isset($data['mpaSpec']) ? $data['mpaSpec'] : null;
+        $this->container['shortPlayPayType'] = isset($data['shortPlayPayType']) ? $data['shortPlayPayType'] : null;
+        $this->container['sellStrategyId'] = isset($data['sellStrategyId']) ? $data['sellStrategyId'] : null;
     }
 
     /**
@@ -2205,6 +2217,54 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setMpaSpec($mpaSpec)
     {
         $this->container['mpaSpec'] = $mpaSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets shortPlayPayType
+     *
+     * @return \TencentAds\Model\V3\ShortPlayPayType|mixed
+     */
+    public function getShortPlayPayType()
+    {
+        return $this->container['shortPlayPayType'];
+    }
+
+    /**
+     * Sets shortPlayPayType
+     *
+     * @param \TencentAds\Model\V3\ShortPlayPayType|mixed $shortPlayPayType shortPlayPayType
+     *
+     * @return $this
+     */
+    public function setShortPlayPayType($shortPlayPayType)
+    {
+        $this->container['shortPlayPayType'] = $shortPlayPayType;
+
+        return $this;
+    }
+
+    /**
+     * Gets sellStrategyId
+     *
+     * @return int|mixed
+     */
+    public function getSellStrategyId()
+    {
+        return $this->container['sellStrategyId'];
+    }
+
+    /**
+     * Sets sellStrategyId
+     *
+     * @param int|mixed $sellStrategyId sellStrategyId
+     *
+     * @return $this
+     */
+    public function setSellStrategyId($sellStrategyId)
+    {
+        $this->container['sellStrategyId'] = $sellStrategyId;
 
         return $this;
     }
