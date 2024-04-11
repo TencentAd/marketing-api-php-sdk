@@ -126,7 +126,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'customCostCap' => 'int',
         'mpaSpec' => '\TencentAds\Model\V3\MpaSpec',
         'shortPlayPayType' => '\TencentAds\Model\V3\ShortPlayPayType',
-        'sellStrategyId' => 'int'
+        'sellStrategyId' => 'int',
+        'ogCompletionType' => '\TencentAds\Model\V3\OgCompletionType'
     ];
 
     /**
@@ -203,7 +204,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'customCostCap' => 'int64',
         'mpaSpec' => null,
         'shortPlayPayType' => null,
-        'sellStrategyId' => 'int64'
+        'sellStrategyId' => 'int64',
+        'ogCompletionType' => null
     ];
 
     /**
@@ -301,7 +303,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'customCostCap' => 'custom_cost_cap',
         'mpaSpec' => 'mpa_spec',
         'shortPlayPayType' => 'short_play_pay_type',
-        'sellStrategyId' => 'sell_strategy_id'
+        'sellStrategyId' => 'sell_strategy_id',
+        'ogCompletionType' => 'og_completion_type'
     ];
 
     /**
@@ -378,7 +381,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'customCostCap' => 'setCustomCostCap',
         'mpaSpec' => 'setMpaSpec',
         'shortPlayPayType' => 'setShortPlayPayType',
-        'sellStrategyId' => 'setSellStrategyId'
+        'sellStrategyId' => 'setSellStrategyId',
+        'ogCompletionType' => 'setOgCompletionType'
     ];
 
     /**
@@ -455,7 +459,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'customCostCap' => 'getCustomCostCap',
         'mpaSpec' => 'getMpaSpec',
         'shortPlayPayType' => 'getShortPlayPayType',
-        'sellStrategyId' => 'getSellStrategyId'
+        'sellStrategyId' => 'getSellStrategyId',
+        'ogCompletionType' => 'getOgCompletionType'
     ];
 
     /**
@@ -587,6 +592,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['mpaSpec'] = isset($data['mpaSpec']) ? $data['mpaSpec'] : null;
         $this->container['shortPlayPayType'] = isset($data['shortPlayPayType']) ? $data['shortPlayPayType'] : null;
         $this->container['sellStrategyId'] = isset($data['sellStrategyId']) ? $data['sellStrategyId'] : null;
+        $this->container['ogCompletionType'] = isset($data['ogCompletionType']) ? $data['ogCompletionType'] : null;
     }
 
     /**
@@ -2265,6 +2271,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setSellStrategyId($sellStrategyId)
     {
         $this->container['sellStrategyId'] = $sellStrategyId;
+
+        return $this;
+    }
+
+    /**
+     * Gets ogCompletionType
+     *
+     * @return \TencentAds\Model\V3\OgCompletionType|mixed
+     */
+    public function getOgCompletionType()
+    {
+        return $this->container['ogCompletionType'];
+    }
+
+    /**
+     * Sets ogCompletionType
+     *
+     * @param \TencentAds\Model\V3\OgCompletionType|mixed $ogCompletionType ogCompletionType
+     *
+     * @return $this
+     */
+    public function setOgCompletionType($ogCompletionType)
+    {
+        $this->container['ogCompletionType'] = $ogCompletionType;
 
         return $this;
     }

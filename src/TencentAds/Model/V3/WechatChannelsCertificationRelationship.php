@@ -1,6 +1,6 @@
 <?php
 /**
- * WechatChannelsCoverImgShowType
+ * WechatChannelsCertificationRelationship
  *
  * PHP version 5
  *
@@ -31,22 +31,22 @@ namespace TencentAds\Model\V3;
 use \TencentAds\ObjectSerializer;
 
 /**
- * WechatChannelsCoverImgShowType Class Doc Comment
+ * WechatChannelsCertificationRelationship Class Doc Comment
  *
  * @category Class
- * @description 视频号封面图显示类型
+ * @description 视频号授权资质主体关系
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class WechatChannelsCoverImgShowType
+class WechatChannelsCertificationRelationship
 {
     /**
      * Possible values of this enum
      */
-    const _DEFAULT = 'COVER_IMG_SHOW_TYPE_DEFAULT';
-    const TITLE = 'COVER_IMG_SHOW_TYPE_TITLE';
-    const CENTER = 'COVER_IMG_SHOW_TYPE_CENTER';
+    const UNKNOWN = 'RELATIONSHIP_UNKNOWN';
+    const CORPORATION = 'RELATIONSHIP_CORPORATION';
+    const EMPLOYMENT = 'RELATIONSHIP_EMPLOYMENT';
     
     /**
      * Gets allowable values of the enum
@@ -55,9 +55,9 @@ class WechatChannelsCoverImgShowType
     public static function getAllowableEnumValues()
     {
         return [
-            self::_DEFAULT,
-            self::TITLE,
-            self::CENTER,
+            self::UNKNOWN,
+            self::CORPORATION,
+            self::EMPLOYMENT,
         ];
     }
 }

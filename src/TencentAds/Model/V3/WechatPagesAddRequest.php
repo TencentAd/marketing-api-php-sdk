@@ -60,7 +60,7 @@ class WechatPagesAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'int',
         'pageName' => 'string',
         'pageTemplateId' => 'int',
-        'pageElements' => '\TencentAds\Model\V3\PageElementsStruct[]',
+        'pageElementsSpecList' => '\TencentAds\Model\V3\PageElementsStruct[]',
         'shareContentSpec' => '\TencentAds\Model\V3\ShareContentSpec'
     ];
 
@@ -73,7 +73,7 @@ class WechatPagesAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'int64',
         'pageName' => null,
         'pageTemplateId' => 'int64',
-        'pageElements' => null,
+        'pageElementsSpecList' => null,
         'shareContentSpec' => null
     ];
 
@@ -107,7 +107,7 @@ class WechatPagesAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'account_id',
         'pageName' => 'page_name',
         'pageTemplateId' => 'page_template_id',
-        'pageElements' => 'page_elements',
+        'pageElementsSpecList' => 'page_elements_spec_list',
         'shareContentSpec' => 'share_content_spec'
     ];
 
@@ -120,7 +120,7 @@ class WechatPagesAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'setAccountId',
         'pageName' => 'setPageName',
         'pageTemplateId' => 'setPageTemplateId',
-        'pageElements' => 'setPageElements',
+        'pageElementsSpecList' => 'setPageElementsSpecList',
         'shareContentSpec' => 'setShareContentSpec'
     ];
 
@@ -133,7 +133,7 @@ class WechatPagesAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'getAccountId',
         'pageName' => 'getPageName',
         'pageTemplateId' => 'getPageTemplateId',
-        'pageElements' => 'getPageElements',
+        'pageElementsSpecList' => 'getPageElementsSpecList',
         'shareContentSpec' => 'getShareContentSpec'
     ];
 
@@ -200,7 +200,7 @@ class WechatPagesAddRequest implements ModelInterface, ArrayAccess
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['pageName'] = isset($data['pageName']) ? $data['pageName'] : null;
         $this->container['pageTemplateId'] = isset($data['pageTemplateId']) ? $data['pageTemplateId'] : null;
-        $this->container['pageElements'] = isset($data['pageElements']) ? $data['pageElements'] : null;
+        $this->container['pageElementsSpecList'] = isset($data['pageElementsSpecList']) ? $data['pageElementsSpecList'] : null;
         $this->container['shareContentSpec'] = isset($data['shareContentSpec']) ? $data['shareContentSpec'] : null;
     }
 
@@ -301,25 +301,25 @@ class WechatPagesAddRequest implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets pageElements
+     * Gets pageElementsSpecList
      *
      * @return \TencentAds\Model\V3\PageElementsStruct[]|mixed
      */
-    public function getPageElements()
+    public function getPageElementsSpecList()
     {
-        return $this->container['pageElements'];
+        return $this->container['pageElementsSpecList'];
     }
 
     /**
-     * Sets pageElements
+     * Sets pageElementsSpecList
      *
-     * @param \TencentAds\Model\V3\PageElementsStruct[]|mixed $pageElements pageElements
+     * @param \TencentAds\Model\V3\PageElementsStruct[]|mixed $pageElementsSpecList pageElementsSpecList
      *
      * @return $this
      */
-    public function setPageElements($pageElements)
+    public function setPageElementsSpecList($pageElementsSpecList)
     {
-        $this->container['pageElements'] = $pageElements;
+        $this->container['pageElementsSpecList'] = $pageElementsSpecList;
 
         return $this;
     }

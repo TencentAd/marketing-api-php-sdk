@@ -73,8 +73,6 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'isDeleted' => 'bool',
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
-        'dynamicCreativeStatusInfo' => '\TencentAds\Model\V3\DcInfoStruct[]',
-        'systemStatusExplanation' => 'string',
         'marketingAssetVerification' => '\TencentAds\Model\V3\MarketingAssetVerification'
     ];
 
@@ -99,8 +97,6 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'isDeleted' => null,
         'createdTime' => 'int64',
         'lastModifiedTime' => 'int64',
-        'dynamicCreativeStatusInfo' => null,
-        'systemStatusExplanation' => null,
         'marketingAssetVerification' => null
     ];
 
@@ -146,8 +142,6 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'isDeleted' => 'is_deleted',
         'createdTime' => 'created_time',
         'lastModifiedTime' => 'last_modified_time',
-        'dynamicCreativeStatusInfo' => 'dynamic_creative_status_info',
-        'systemStatusExplanation' => 'system_status_explanation',
         'marketingAssetVerification' => 'marketing_asset_verification'
     ];
 
@@ -172,8 +166,6 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'isDeleted' => 'setIsDeleted',
         'createdTime' => 'setCreatedTime',
         'lastModifiedTime' => 'setLastModifiedTime',
-        'dynamicCreativeStatusInfo' => 'setDynamicCreativeStatusInfo',
-        'systemStatusExplanation' => 'setSystemStatusExplanation',
         'marketingAssetVerification' => 'setMarketingAssetVerification'
     ];
 
@@ -198,8 +190,6 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'isDeleted' => 'getIsDeleted',
         'createdTime' => 'getCreatedTime',
         'lastModifiedTime' => 'getLastModifiedTime',
-        'dynamicCreativeStatusInfo' => 'getDynamicCreativeStatusInfo',
-        'systemStatusExplanation' => 'getSystemStatusExplanation',
         'marketingAssetVerification' => 'getMarketingAssetVerification'
     ];
 
@@ -278,8 +268,6 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['isDeleted'] = isset($data['isDeleted']) ? $data['isDeleted'] : null;
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
-        $this->container['dynamicCreativeStatusInfo'] = isset($data['dynamicCreativeStatusInfo']) ? $data['dynamicCreativeStatusInfo'] : null;
-        $this->container['systemStatusExplanation'] = isset($data['systemStatusExplanation']) ? $data['systemStatusExplanation'] : null;
         $this->container['marketingAssetVerification'] = isset($data['marketingAssetVerification']) ? $data['marketingAssetVerification'] : null;
     }
 
@@ -663,54 +651,6 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setLastModifiedTime($lastModifiedTime)
     {
         $this->container['lastModifiedTime'] = $lastModifiedTime;
-
-        return $this;
-    }
-
-    /**
-     * Gets dynamicCreativeStatusInfo
-     *
-     * @return \TencentAds\Model\V3\DcInfoStruct[]|mixed
-     */
-    public function getDynamicCreativeStatusInfo()
-    {
-        return $this->container['dynamicCreativeStatusInfo'];
-    }
-
-    /**
-     * Sets dynamicCreativeStatusInfo
-     *
-     * @param \TencentAds\Model\V3\DcInfoStruct[]|mixed $dynamicCreativeStatusInfo dynamicCreativeStatusInfo
-     *
-     * @return $this
-     */
-    public function setDynamicCreativeStatusInfo($dynamicCreativeStatusInfo)
-    {
-        $this->container['dynamicCreativeStatusInfo'] = $dynamicCreativeStatusInfo;
-
-        return $this;
-    }
-
-    /**
-     * Gets systemStatusExplanation
-     *
-     * @return string|mixed
-     */
-    public function getSystemStatusExplanation()
-    {
-        return $this->container['systemStatusExplanation'];
-    }
-
-    /**
-     * Sets systemStatusExplanation
-     *
-     * @param string|mixed $systemStatusExplanation systemStatusExplanation
-     *
-     * @return $this
-     */
-    public function setSystemStatusExplanation($systemStatusExplanation)
-    {
-        $this->container['systemStatusExplanation'] = $systemStatusExplanation;
 
         return $this;
     }

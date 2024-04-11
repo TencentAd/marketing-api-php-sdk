@@ -42,8 +42,9 @@ class PagesApiContainer extends ApiContainer
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $adContext = isset($params['ad_context']) ? $params['ad_context'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->pagesGet($accountId, $filtering, $page, $pageSize, $fields);
+            $response = $this->apiInstance->pagesGet($accountId, $filtering, $page, $pageSize, $adContext, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -62,8 +63,9 @@ class PagesApiContainer extends ApiContainer
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $adContext = isset($params['ad_context']) ? $params['ad_context'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->pagesGetAsync($accountId, $filtering, $page, $pageSize, $fields);
+            $response = $this->apiInstance->pagesGetAsync($accountId, $filtering, $page, $pageSize, $adContext, $fields);
             return $response;
         });
     }

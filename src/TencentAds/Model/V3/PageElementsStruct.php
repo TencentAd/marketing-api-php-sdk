@@ -58,12 +58,12 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'elementsType' => '\TencentAds\Model\V3\PageElementsType',
-        'elementImage' => '\TencentAds\Model\V3\ElementImage',
-        'elementVideo' => '\TencentAds\Model\V3\ElementVideo',
-        'elementText' => '\TencentAds\Model\V3\ElementText',
-        'elementButton' => '\TencentAds\Model\V3\ElementButtonRead',
-        'elementForm' => '\TencentAds\Model\V3\ElementForm',
+        'elementType' => '\TencentAds\Model\V3\PageElementsType',
+        'imageSpec' => '\TencentAds\Model\V3\ElementImage',
+        'videoSpec' => '\TencentAds\Model\V3\ElementVideo',
+        'textSpec' => '\TencentAds\Model\V3\ElementText',
+        'buttonSpec' => '\TencentAds\Model\V3\ElementButtonRead',
+        'formSpec' => '\TencentAds\Model\V3\ElementForm',
         'elementShelf' => '\TencentAds\Model\V3\ElementShelf',
         'elementFloat' => '\TencentAds\Model\V3\ElementFloat',
         'elementGoods' => '\TencentAds\Model\V3\ElementGoods',
@@ -78,12 +78,12 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'elementsType' => null,
-        'elementImage' => null,
-        'elementVideo' => null,
-        'elementText' => null,
-        'elementButton' => null,
-        'elementForm' => null,
+        'elementType' => null,
+        'imageSpec' => null,
+        'videoSpec' => null,
+        'textSpec' => null,
+        'buttonSpec' => null,
+        'formSpec' => null,
         'elementShelf' => null,
         'elementFloat' => null,
         'elementGoods' => null,
@@ -119,12 +119,12 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'elementsType' => 'elements_type',
-        'elementImage' => 'element_image',
-        'elementVideo' => 'element_video',
-        'elementText' => 'element_text',
-        'elementButton' => 'element_button',
-        'elementForm' => 'element_form',
+        'elementType' => 'element_type',
+        'imageSpec' => 'image_spec',
+        'videoSpec' => 'video_spec',
+        'textSpec' => 'text_spec',
+        'buttonSpec' => 'button_spec',
+        'formSpec' => 'form_spec',
         'elementShelf' => 'element_shelf',
         'elementFloat' => 'element_float',
         'elementGoods' => 'element_goods',
@@ -139,12 +139,12 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'elementsType' => 'setElementsType',
-        'elementImage' => 'setElementImage',
-        'elementVideo' => 'setElementVideo',
-        'elementText' => 'setElementText',
-        'elementButton' => 'setElementButton',
-        'elementForm' => 'setElementForm',
+        'elementType' => 'setElementType',
+        'imageSpec' => 'setImageSpec',
+        'videoSpec' => 'setVideoSpec',
+        'textSpec' => 'setTextSpec',
+        'buttonSpec' => 'setButtonSpec',
+        'formSpec' => 'setFormSpec',
         'elementShelf' => 'setElementShelf',
         'elementFloat' => 'setElementFloat',
         'elementGoods' => 'setElementGoods',
@@ -159,12 +159,12 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'elementsType' => 'getElementsType',
-        'elementImage' => 'getElementImage',
-        'elementVideo' => 'getElementVideo',
-        'elementText' => 'getElementText',
-        'elementButton' => 'getElementButton',
-        'elementForm' => 'getElementForm',
+        'elementType' => 'getElementType',
+        'imageSpec' => 'getImageSpec',
+        'videoSpec' => 'getVideoSpec',
+        'textSpec' => 'getTextSpec',
+        'buttonSpec' => 'getButtonSpec',
+        'formSpec' => 'getFormSpec',
         'elementShelf' => 'getElementShelf',
         'elementFloat' => 'getElementFloat',
         'elementGoods' => 'getElementGoods',
@@ -233,12 +233,12 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['elementsType'] = isset($data['elementsType']) ? $data['elementsType'] : null;
-        $this->container['elementImage'] = isset($data['elementImage']) ? $data['elementImage'] : null;
-        $this->container['elementVideo'] = isset($data['elementVideo']) ? $data['elementVideo'] : null;
-        $this->container['elementText'] = isset($data['elementText']) ? $data['elementText'] : null;
-        $this->container['elementButton'] = isset($data['elementButton']) ? $data['elementButton'] : null;
-        $this->container['elementForm'] = isset($data['elementForm']) ? $data['elementForm'] : null;
+        $this->container['elementType'] = isset($data['elementType']) ? $data['elementType'] : null;
+        $this->container['imageSpec'] = isset($data['imageSpec']) ? $data['imageSpec'] : null;
+        $this->container['videoSpec'] = isset($data['videoSpec']) ? $data['videoSpec'] : null;
+        $this->container['textSpec'] = isset($data['textSpec']) ? $data['textSpec'] : null;
+        $this->container['buttonSpec'] = isset($data['buttonSpec']) ? $data['buttonSpec'] : null;
+        $this->container['formSpec'] = isset($data['formSpec']) ? $data['formSpec'] : null;
         $this->container['elementShelf'] = isset($data['elementShelf']) ? $data['elementShelf'] : null;
         $this->container['elementFloat'] = isset($data['elementFloat']) ? $data['elementFloat'] : null;
         $this->container['elementGoods'] = isset($data['elementGoods']) ? $data['elementGoods'] : null;
@@ -272,145 +272,145 @@ class PageElementsStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets elementsType
+     * Gets elementType
      *
      * @return \TencentAds\Model\V3\PageElementsType|mixed
      */
-    public function getElementsType()
+    public function getElementType()
     {
-        return $this->container['elementsType'];
+        return $this->container['elementType'];
     }
 
     /**
-     * Sets elementsType
+     * Sets elementType
      *
-     * @param \TencentAds\Model\V3\PageElementsType|mixed $elementsType elementsType
+     * @param \TencentAds\Model\V3\PageElementsType|mixed $elementType elementType
      *
      * @return $this
      */
-    public function setElementsType($elementsType)
+    public function setElementType($elementType)
     {
-        $this->container['elementsType'] = $elementsType;
+        $this->container['elementType'] = $elementType;
 
         return $this;
     }
 
     /**
-     * Gets elementImage
+     * Gets imageSpec
      *
      * @return \TencentAds\Model\V3\ElementImage|mixed
      */
-    public function getElementImage()
+    public function getImageSpec()
     {
-        return $this->container['elementImage'];
+        return $this->container['imageSpec'];
     }
 
     /**
-     * Sets elementImage
+     * Sets imageSpec
      *
-     * @param \TencentAds\Model\V3\ElementImage|mixed $elementImage elementImage
+     * @param \TencentAds\Model\V3\ElementImage|mixed $imageSpec imageSpec
      *
      * @return $this
      */
-    public function setElementImage($elementImage)
+    public function setImageSpec($imageSpec)
     {
-        $this->container['elementImage'] = $elementImage;
+        $this->container['imageSpec'] = $imageSpec;
 
         return $this;
     }
 
     /**
-     * Gets elementVideo
+     * Gets videoSpec
      *
      * @return \TencentAds\Model\V3\ElementVideo|mixed
      */
-    public function getElementVideo()
+    public function getVideoSpec()
     {
-        return $this->container['elementVideo'];
+        return $this->container['videoSpec'];
     }
 
     /**
-     * Sets elementVideo
+     * Sets videoSpec
      *
-     * @param \TencentAds\Model\V3\ElementVideo|mixed $elementVideo elementVideo
+     * @param \TencentAds\Model\V3\ElementVideo|mixed $videoSpec videoSpec
      *
      * @return $this
      */
-    public function setElementVideo($elementVideo)
+    public function setVideoSpec($videoSpec)
     {
-        $this->container['elementVideo'] = $elementVideo;
+        $this->container['videoSpec'] = $videoSpec;
 
         return $this;
     }
 
     /**
-     * Gets elementText
+     * Gets textSpec
      *
      * @return \TencentAds\Model\V3\ElementText|mixed
      */
-    public function getElementText()
+    public function getTextSpec()
     {
-        return $this->container['elementText'];
+        return $this->container['textSpec'];
     }
 
     /**
-     * Sets elementText
+     * Sets textSpec
      *
-     * @param \TencentAds\Model\V3\ElementText|mixed $elementText elementText
+     * @param \TencentAds\Model\V3\ElementText|mixed $textSpec textSpec
      *
      * @return $this
      */
-    public function setElementText($elementText)
+    public function setTextSpec($textSpec)
     {
-        $this->container['elementText'] = $elementText;
+        $this->container['textSpec'] = $textSpec;
 
         return $this;
     }
 
     /**
-     * Gets elementButton
+     * Gets buttonSpec
      *
      * @return \TencentAds\Model\V3\ElementButtonRead|mixed
      */
-    public function getElementButton()
+    public function getButtonSpec()
     {
-        return $this->container['elementButton'];
+        return $this->container['buttonSpec'];
     }
 
     /**
-     * Sets elementButton
+     * Sets buttonSpec
      *
-     * @param \TencentAds\Model\V3\ElementButtonRead|mixed $elementButton elementButton
+     * @param \TencentAds\Model\V3\ElementButtonRead|mixed $buttonSpec buttonSpec
      *
      * @return $this
      */
-    public function setElementButton($elementButton)
+    public function setButtonSpec($buttonSpec)
     {
-        $this->container['elementButton'] = $elementButton;
+        $this->container['buttonSpec'] = $buttonSpec;
 
         return $this;
     }
 
     /**
-     * Gets elementForm
+     * Gets formSpec
      *
      * @return \TencentAds\Model\V3\ElementForm|mixed
      */
-    public function getElementForm()
+    public function getFormSpec()
     {
-        return $this->container['elementForm'];
+        return $this->container['formSpec'];
     }
 
     /**
-     * Sets elementForm
+     * Sets formSpec
      *
-     * @param \TencentAds\Model\V3\ElementForm|mixed $elementForm elementForm
+     * @param \TencentAds\Model\V3\ElementForm|mixed $formSpec formSpec
      *
      * @return $this
      */
-    public function setElementForm($elementForm)
+    public function setFormSpec($formSpec)
     {
-        $this->container['elementForm'] = $elementForm;
+        $this->container['formSpec'] = $formSpec;
 
         return $this;
     }

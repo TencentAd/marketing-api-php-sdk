@@ -1,6 +1,6 @@
 <?php
 /**
- * DcInfoStruct
+ * WechatPagesCsgrouplistUpdateResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DcInfoStruct Class Doc Comment
+ * WechatPagesCsgrouplistUpdateResponse Class Doc Comment
  *
  * @category Class
- * @description dc状态列表
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DcInfoStruct implements ModelInterface, ArrayAccess
+class WechatPagesCsgrouplistUpdateResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class DcInfoStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dc_info_struct';
+    protected static $swaggerModelName = 'WechatPagesCsgrouplistUpdateResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,10 @@ class DcInfoStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'statusExtraText' => 'string',
-        'dynamicCreativeRetryStatus' => '\TencentAds\Model\V3\DynamicCreativeRetryStatus'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\V3\ApiErrorStruct[]'
     ];
 
     /**
@@ -68,8 +69,10 @@ class DcInfoStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'statusExtraText' => null,
-        'dynamicCreativeRetryStatus' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null
     ];
 
     /**
@@ -99,8 +102,10 @@ class DcInfoStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'statusExtraText' => 'status_extra_text',
-        'dynamicCreativeRetryStatus' => 'dynamic_creative_retry_status'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors'
     ];
 
     /**
@@ -109,8 +114,10 @@ class DcInfoStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'statusExtraText' => 'setStatusExtraText',
-        'dynamicCreativeRetryStatus' => 'setDynamicCreativeRetryStatus'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors'
     ];
 
     /**
@@ -119,8 +126,10 @@ class DcInfoStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'statusExtraText' => 'getStatusExtraText',
-        'dynamicCreativeRetryStatus' => 'getDynamicCreativeRetryStatus'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors'
     ];
 
     /**
@@ -183,8 +192,10 @@ class DcInfoStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['statusExtraText'] = isset($data['statusExtraText']) ? $data['statusExtraText'] : null;
-        $this->container['dynamicCreativeRetryStatus'] = isset($data['dynamicCreativeRetryStatus']) ? $data['dynamicCreativeRetryStatus'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
     }
 
     /**
@@ -212,49 +223,97 @@ class DcInfoStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets statusExtraText
+     * Gets code
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getStatusExtraText()
+    public function getCode()
     {
-        return $this->container['statusExtraText'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets statusExtraText
+     * Sets code
      *
-     * @param string|mixed $statusExtraText statusExtraText
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setStatusExtraText($statusExtraText)
+    public function setCode($code)
     {
-        $this->container['statusExtraText'] = $statusExtraText;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets dynamicCreativeRetryStatus
+     * Gets message
      *
-     * @return \TencentAds\Model\V3\DynamicCreativeRetryStatus|mixed
+     * @return string|mixed
      */
-    public function getDynamicCreativeRetryStatus()
+    public function getMessage()
     {
-        return $this->container['dynamicCreativeRetryStatus'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets dynamicCreativeRetryStatus
+     * Sets message
      *
-     * @param \TencentAds\Model\V3\DynamicCreativeRetryStatus|mixed $dynamicCreativeRetryStatus dynamicCreativeRetryStatus
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setDynamicCreativeRetryStatus($dynamicCreativeRetryStatus)
+    public function setMessage($message)
     {
-        $this->container['dynamicCreativeRetryStatus'] = $dynamicCreativeRetryStatus;
+        $this->container['message'] = $message;
+
+        return $this;
+    }
+
+    /**
+     * Gets messageCn
+     *
+     * @return string|mixed
+     */
+    public function getMessageCn()
+    {
+        return $this->container['messageCn'];
+    }
+
+    /**
+     * Sets messageCn
+     *
+     * @param string|mixed $messageCn messageCn
+     *
+     * @return $this
+     */
+    public function setMessageCn($messageCn)
+    {
+        $this->container['messageCn'] = $messageCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets errors
+     *
+     * @return \TencentAds\Model\V3\ApiErrorStruct[]|mixed
+     */
+    public function getErrors()
+    {
+        return $this->container['errors'];
+    }
+
+    /**
+     * Sets errors
+     *
+     * @param \TencentAds\Model\V3\ApiErrorStruct[]|mixed $errors errors
+     *
+     * @return $this
+     */
+    public function setErrors($errors)
+    {
+        $this->container['errors'] = $errors;
 
         return $this;
     }

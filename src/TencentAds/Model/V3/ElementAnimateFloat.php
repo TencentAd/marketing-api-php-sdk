@@ -58,7 +58,7 @@ class ElementAnimateFloat implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'imageId' => 'string',
+        'imageIdList' => 'string',
         'title' => 'string',
         'desc' => 'string',
         'animateFloatButtonSpec' => '\TencentAds\Model\V3\AnimateFloatButtonSpec'
@@ -70,7 +70,7 @@ class ElementAnimateFloat implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'imageId' => null,
+        'imageIdList' => null,
         'title' => null,
         'desc' => null,
         'animateFloatButtonSpec' => null
@@ -103,7 +103,7 @@ class ElementAnimateFloat implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'imageId' => 'image_id',
+        'imageIdList' => 'image_id_list',
         'title' => 'title',
         'desc' => 'desc',
         'animateFloatButtonSpec' => 'animate_float_button_spec'
@@ -115,7 +115,7 @@ class ElementAnimateFloat implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'imageId' => 'setImageId',
+        'imageIdList' => 'setImageIdList',
         'title' => 'setTitle',
         'desc' => 'setDesc',
         'animateFloatButtonSpec' => 'setAnimateFloatButtonSpec'
@@ -127,7 +127,7 @@ class ElementAnimateFloat implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'imageId' => 'getImageId',
+        'imageIdList' => 'getImageIdList',
         'title' => 'getTitle',
         'desc' => 'getDesc',
         'animateFloatButtonSpec' => 'getAnimateFloatButtonSpec'
@@ -193,7 +193,7 @@ class ElementAnimateFloat implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['imageId'] = isset($data['imageId']) ? $data['imageId'] : null;
+        $this->container['imageIdList'] = isset($data['imageIdList']) ? $data['imageIdList'] : null;
         $this->container['title'] = isset($data['title']) ? $data['title'] : null;
         $this->container['desc'] = isset($data['desc']) ? $data['desc'] : null;
         $this->container['animateFloatButtonSpec'] = isset($data['animateFloatButtonSpec']) ? $data['animateFloatButtonSpec'] : null;
@@ -224,25 +224,25 @@ class ElementAnimateFloat implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets imageId
+     * Gets imageIdList
      *
      * @return string|mixed
      */
-    public function getImageId()
+    public function getImageIdList()
     {
-        return $this->container['imageId'];
+        return $this->container['imageIdList'];
     }
 
     /**
-     * Sets imageId
+     * Sets imageIdList
      *
-     * @param string|mixed $imageId imageId
+     * @param string|mixed $imageIdList imageIdList
      *
      * @return $this
      */
-    public function setImageId($imageId)
+    public function setImageIdList($imageIdList)
     {
-        $this->container['imageId'] = $imageId;
+        $this->container['imageIdList'] = $imageIdList;
 
         return $this;
     }

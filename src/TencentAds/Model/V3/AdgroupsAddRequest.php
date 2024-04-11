@@ -106,7 +106,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'customCostCap' => 'int',
         'shortPlayPayType' => '\TencentAds\Model\V3\ShortPlayPayType',
         'sellStrategyId' => 'int',
-        'dynamicAdType' => '\TencentAds\Model\V3\DynamicAdType'
+        'dynamicAdType' => '\TencentAds\Model\V3\DynamicAdType',
+        'ogCompletionType' => '\TencentAds\Model\V3\OgCompletionType'
     ];
 
     /**
@@ -164,7 +165,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'customCostCap' => 'int64',
         'shortPlayPayType' => null,
         'sellStrategyId' => 'int64',
-        'dynamicAdType' => null
+        'dynamicAdType' => null,
+        'ogCompletionType' => null
     ];
 
     /**
@@ -243,7 +245,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'customCostCap' => 'custom_cost_cap',
         'shortPlayPayType' => 'short_play_pay_type',
         'sellStrategyId' => 'sell_strategy_id',
-        'dynamicAdType' => 'dynamic_ad_type'
+        'dynamicAdType' => 'dynamic_ad_type',
+        'ogCompletionType' => 'og_completion_type'
     ];
 
     /**
@@ -301,7 +304,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'customCostCap' => 'setCustomCostCap',
         'shortPlayPayType' => 'setShortPlayPayType',
         'sellStrategyId' => 'setSellStrategyId',
-        'dynamicAdType' => 'setDynamicAdType'
+        'dynamicAdType' => 'setDynamicAdType',
+        'ogCompletionType' => 'setOgCompletionType'
     ];
 
     /**
@@ -359,7 +363,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'customCostCap' => 'getCustomCostCap',
         'shortPlayPayType' => 'getShortPlayPayType',
         'sellStrategyId' => 'getSellStrategyId',
-        'dynamicAdType' => 'getDynamicAdType'
+        'dynamicAdType' => 'getDynamicAdType',
+        'ogCompletionType' => 'getOgCompletionType'
     ];
 
     /**
@@ -472,6 +477,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['shortPlayPayType'] = isset($data['shortPlayPayType']) ? $data['shortPlayPayType'] : null;
         $this->container['sellStrategyId'] = isset($data['sellStrategyId']) ? $data['sellStrategyId'] : null;
         $this->container['dynamicAdType'] = isset($data['dynamicAdType']) ? $data['dynamicAdType'] : null;
+        $this->container['ogCompletionType'] = isset($data['ogCompletionType']) ? $data['ogCompletionType'] : null;
     }
 
     /**
@@ -1694,6 +1700,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setDynamicAdType($dynamicAdType)
     {
         $this->container['dynamicAdType'] = $dynamicAdType;
+
+        return $this;
+    }
+
+    /**
+     * Gets ogCompletionType
+     *
+     * @return \TencentAds\Model\V3\OgCompletionType|mixed
+     */
+    public function getOgCompletionType()
+    {
+        return $this->container['ogCompletionType'];
+    }
+
+    /**
+     * Sets ogCompletionType
+     *
+     * @param \TencentAds\Model\V3\OgCompletionType|mixed $ogCompletionType ogCompletionType
+     *
+     * @return $this
+     */
+    public function setOgCompletionType($ogCompletionType)
+    {
+        $this->container['ogCompletionType'] = $ogCompletionType;
 
         return $this;
     }

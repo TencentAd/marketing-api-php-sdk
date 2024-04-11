@@ -63,7 +63,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
         'pageTemplateId' => 'int',
-        'pageElements' => '\TencentAds\Model\V3\PageElementsStruct[]',
+        'pageElementsSpecList' => '\TencentAds\Model\V3\PageElementsStruct[]',
         'shareContentSpec' => '\TencentAds\Model\V3\ShareContentSpec',
         'previewUrl' => 'string',
         'pageType' => '\TencentAds\Model\V3\PageType',
@@ -85,7 +85,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'int64',
         'lastModifiedTime' => 'int64',
         'pageTemplateId' => 'int64',
-        'pageElements' => null,
+        'pageElementsSpecList' => null,
         'shareContentSpec' => null,
         'previewUrl' => null,
         'pageType' => null,
@@ -128,7 +128,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'created_time',
         'lastModifiedTime' => 'last_modified_time',
         'pageTemplateId' => 'page_template_id',
-        'pageElements' => 'page_elements',
+        'pageElementsSpecList' => 'page_elements_spec_list',
         'shareContentSpec' => 'share_content_spec',
         'previewUrl' => 'preview_url',
         'pageType' => 'page_type',
@@ -150,7 +150,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'setCreatedTime',
         'lastModifiedTime' => 'setLastModifiedTime',
         'pageTemplateId' => 'setPageTemplateId',
-        'pageElements' => 'setPageElements',
+        'pageElementsSpecList' => 'setPageElementsSpecList',
         'shareContentSpec' => 'setShareContentSpec',
         'previewUrl' => 'setPreviewUrl',
         'pageType' => 'setPageType',
@@ -172,7 +172,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'getCreatedTime',
         'lastModifiedTime' => 'getLastModifiedTime',
         'pageTemplateId' => 'getPageTemplateId',
-        'pageElements' => 'getPageElements',
+        'pageElementsSpecList' => 'getPageElementsSpecList',
         'shareContentSpec' => 'getShareContentSpec',
         'previewUrl' => 'getPreviewUrl',
         'pageType' => 'getPageType',
@@ -248,7 +248,7 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
         $this->container['pageTemplateId'] = isset($data['pageTemplateId']) ? $data['pageTemplateId'] : null;
-        $this->container['pageElements'] = isset($data['pageElements']) ? $data['pageElements'] : null;
+        $this->container['pageElementsSpecList'] = isset($data['pageElementsSpecList']) ? $data['pageElementsSpecList'] : null;
         $this->container['shareContentSpec'] = isset($data['shareContentSpec']) ? $data['shareContentSpec'] : null;
         $this->container['previewUrl'] = isset($data['previewUrl']) ? $data['previewUrl'] : null;
         $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
@@ -404,25 +404,25 @@ class WechatPagesGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets pageElements
+     * Gets pageElementsSpecList
      *
      * @return \TencentAds\Model\V3\PageElementsStruct[]|mixed
      */
-    public function getPageElements()
+    public function getPageElementsSpecList()
     {
-        return $this->container['pageElements'];
+        return $this->container['pageElementsSpecList'];
     }
 
     /**
-     * Sets pageElements
+     * Sets pageElementsSpecList
      *
-     * @param \TencentAds\Model\V3\PageElementsStruct[]|mixed $pageElements pageElements
+     * @param \TencentAds\Model\V3\PageElementsStruct[]|mixed $pageElementsSpecList pageElementsSpecList
      *
      * @return $this
      */
-    public function setPageElements($pageElements)
+    public function setPageElementsSpecList($pageElementsSpecList)
     {
-        $this->container['pageElements'] = $pageElements;
+        $this->container['pageElementsSpecList'] = $pageElementsSpecList;
 
         return $this;
     }

@@ -63,7 +63,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'imageHeight' => 'int',
         'imageFileSize' => 'int',
         'imageType' => '\TencentAds\Model\V3\ImageType',
-        'imageSignature' => 'string',
+        'signature' => 'string',
         'description' => 'string',
         'sourceSignature' => 'string',
         'previewUrl' => 'string',
@@ -90,7 +90,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'imageHeight' => 'int64',
         'imageFileSize' => 'int64',
         'imageType' => null,
-        'imageSignature' => null,
+        'signature' => null,
         'description' => null,
         'sourceSignature' => null,
         'previewUrl' => null,
@@ -138,7 +138,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'imageHeight' => 'image_height',
         'imageFileSize' => 'image_file_size',
         'imageType' => 'image_type',
-        'imageSignature' => 'image_signature',
+        'signature' => 'signature',
         'description' => 'description',
         'sourceSignature' => 'source_signature',
         'previewUrl' => 'preview_url',
@@ -165,7 +165,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'imageHeight' => 'setImageHeight',
         'imageFileSize' => 'setImageFileSize',
         'imageType' => 'setImageType',
-        'imageSignature' => 'setImageSignature',
+        'signature' => 'setSignature',
         'description' => 'setDescription',
         'sourceSignature' => 'setSourceSignature',
         'previewUrl' => 'setPreviewUrl',
@@ -192,7 +192,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'imageHeight' => 'getImageHeight',
         'imageFileSize' => 'getImageFileSize',
         'imageType' => 'getImageType',
-        'imageSignature' => 'getImageSignature',
+        'signature' => 'getSignature',
         'description' => 'getDescription',
         'sourceSignature' => 'getSourceSignature',
         'previewUrl' => 'getPreviewUrl',
@@ -273,7 +273,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['imageHeight'] = isset($data['imageHeight']) ? $data['imageHeight'] : null;
         $this->container['imageFileSize'] = isset($data['imageFileSize']) ? $data['imageFileSize'] : null;
         $this->container['imageType'] = isset($data['imageType']) ? $data['imageType'] : null;
-        $this->container['imageSignature'] = isset($data['imageSignature']) ? $data['imageSignature'] : null;
+        $this->container['signature'] = isset($data['signature']) ? $data['signature'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
         $this->container['sourceSignature'] = isset($data['sourceSignature']) ? $data['sourceSignature'] : null;
         $this->container['previewUrl'] = isset($data['previewUrl']) ? $data['previewUrl'] : null;
@@ -434,25 +434,25 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets imageSignature
+     * Gets signature
      *
      * @return string|mixed
      */
-    public function getImageSignature()
+    public function getSignature()
     {
-        return $this->container['imageSignature'];
+        return $this->container['signature'];
     }
 
     /**
-     * Sets imageSignature
+     * Sets signature
      *
-     * @param string|mixed $imageSignature imageSignature
+     * @param string|mixed $signature signature
      *
      * @return $this
      */
-    public function setImageSignature($imageSignature)
+    public function setSignature($signature)
     {
-        $this->container['imageSignature'] = $imageSignature;
+        $this->container['signature'] = $signature;
 
         return $this;
     }

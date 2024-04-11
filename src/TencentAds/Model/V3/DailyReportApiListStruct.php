@@ -865,6 +865,7 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkBlessingCardPv' => 'int',
         'clkShortcutMenusPv' => 'int',
         'channelsDetailBtnPv' => 'int',
+        'zoneHeaderLiveClickCnt' => 'int',
         'adgroupId' => 'int',
         'adgroupName' => 'string',
         'dynamicCreativeId' => 'int',
@@ -885,8 +886,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'expOverallTopPv' => 'int',
         'clkTopPv' => 'int',
         'queryword' => 'string',
-        'adId' => 'int',
-        'triggerType' => 'int',
         'imageId' => 'string',
         'videoId' => 'string',
         'projectId' => 'int',
@@ -1706,6 +1705,7 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkBlessingCardPv' => 'int64',
         'clkShortcutMenusPv' => 'int64',
         'channelsDetailBtnPv' => 'int64',
+        'zoneHeaderLiveClickCnt' => 'int64',
         'adgroupId' => 'int64',
         'adgroupName' => null,
         'dynamicCreativeId' => 'int64',
@@ -1726,8 +1726,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'expOverallTopPv' => 'int64',
         'clkTopPv' => 'int64',
         'queryword' => null,
-        'adId' => 'int64',
-        'triggerType' => 'int64',
         'imageId' => null,
         'videoId' => null,
         'projectId' => 'int64',
@@ -2568,6 +2566,7 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkBlessingCardPv' => 'clk_blessing_card_pv',
         'clkShortcutMenusPv' => 'clk_shortcut_menus_pv',
         'channelsDetailBtnPv' => 'channels_detail_btn_pv',
+        'zoneHeaderLiveClickCnt' => 'zone_header_live_click_cnt',
         'adgroupId' => 'adgroup_id',
         'adgroupName' => 'adgroup_name',
         'dynamicCreativeId' => 'dynamic_creative_id',
@@ -2588,8 +2587,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'expOverallTopPv' => 'exp_overall_top_pv',
         'clkTopPv' => 'clk_top_pv',
         'queryword' => 'queryword',
-        'adId' => 'ad_id',
-        'triggerType' => 'trigger_type',
         'imageId' => 'image_id',
         'videoId' => 'video_id',
         'projectId' => 'project_id',
@@ -3409,6 +3406,7 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkBlessingCardPv' => 'setClkBlessingCardPv',
         'clkShortcutMenusPv' => 'setClkShortcutMenusPv',
         'channelsDetailBtnPv' => 'setChannelsDetailBtnPv',
+        'zoneHeaderLiveClickCnt' => 'setZoneHeaderLiveClickCnt',
         'adgroupId' => 'setAdgroupId',
         'adgroupName' => 'setAdgroupName',
         'dynamicCreativeId' => 'setDynamicCreativeId',
@@ -3429,8 +3427,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'expOverallTopPv' => 'setExpOverallTopPv',
         'clkTopPv' => 'setClkTopPv',
         'queryword' => 'setQueryword',
-        'adId' => 'setAdId',
-        'triggerType' => 'setTriggerType',
         'imageId' => 'setImageId',
         'videoId' => 'setVideoId',
         'projectId' => 'setProjectId',
@@ -4250,6 +4246,7 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkBlessingCardPv' => 'getClkBlessingCardPv',
         'clkShortcutMenusPv' => 'getClkShortcutMenusPv',
         'channelsDetailBtnPv' => 'getChannelsDetailBtnPv',
+        'zoneHeaderLiveClickCnt' => 'getZoneHeaderLiveClickCnt',
         'adgroupId' => 'getAdgroupId',
         'adgroupName' => 'getAdgroupName',
         'dynamicCreativeId' => 'getDynamicCreativeId',
@@ -4270,8 +4267,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'expOverallTopPv' => 'getExpOverallTopPv',
         'clkTopPv' => 'getClkTopPv',
         'queryword' => 'getQueryword',
-        'adId' => 'getAdId',
-        'triggerType' => 'getTriggerType',
         'imageId' => 'getImageId',
         'videoId' => 'getVideoId',
         'projectId' => 'getProjectId',
@@ -5145,6 +5140,7 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['clkBlessingCardPv'] = isset($data['clkBlessingCardPv']) ? $data['clkBlessingCardPv'] : null;
         $this->container['clkShortcutMenusPv'] = isset($data['clkShortcutMenusPv']) ? $data['clkShortcutMenusPv'] : null;
         $this->container['channelsDetailBtnPv'] = isset($data['channelsDetailBtnPv']) ? $data['channelsDetailBtnPv'] : null;
+        $this->container['zoneHeaderLiveClickCnt'] = isset($data['zoneHeaderLiveClickCnt']) ? $data['zoneHeaderLiveClickCnt'] : null;
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
@@ -5165,8 +5161,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['expOverallTopPv'] = isset($data['expOverallTopPv']) ? $data['expOverallTopPv'] : null;
         $this->container['clkTopPv'] = isset($data['clkTopPv']) ? $data['clkTopPv'] : null;
         $this->container['queryword'] = isset($data['queryword']) ? $data['queryword'] : null;
-        $this->container['adId'] = isset($data['adId']) ? $data['adId'] : null;
-        $this->container['triggerType'] = isset($data['triggerType']) ? $data['triggerType'] : null;
         $this->container['imageId'] = isset($data['imageId']) ? $data['imageId'] : null;
         $this->container['videoId'] = isset($data['videoId']) ? $data['videoId'] : null;
         $this->container['projectId'] = isset($data['projectId']) ? $data['projectId'] : null;
@@ -24566,6 +24560,30 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets zoneHeaderLiveClickCnt
+     *
+     * @return int|mixed
+     */
+    public function getZoneHeaderLiveClickCnt()
+    {
+        return $this->container['zoneHeaderLiveClickCnt'];
+    }
+
+    /**
+     * Sets zoneHeaderLiveClickCnt
+     *
+     * @param int|mixed $zoneHeaderLiveClickCnt zoneHeaderLiveClickCnt
+     *
+     * @return $this
+     */
+    public function setZoneHeaderLiveClickCnt($zoneHeaderLiveClickCnt)
+    {
+        $this->container['zoneHeaderLiveClickCnt'] = $zoneHeaderLiveClickCnt;
+
+        return $this;
+    }
+
+    /**
      * Gets adgroupId
      *
      * @return int|mixed
@@ -25041,54 +25059,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setQueryword($queryword)
     {
         $this->container['queryword'] = $queryword;
-
-        return $this;
-    }
-
-    /**
-     * Gets adId
-     *
-     * @return int|mixed
-     */
-    public function getAdId()
-    {
-        return $this->container['adId'];
-    }
-
-    /**
-     * Sets adId
-     *
-     * @param int|mixed $adId adId
-     *
-     * @return $this
-     */
-    public function setAdId($adId)
-    {
-        $this->container['adId'] = $adId;
-
-        return $this;
-    }
-
-    /**
-     * Gets triggerType
-     *
-     * @return int|mixed
-     */
-    public function getTriggerType()
-    {
-        return $this->container['triggerType'];
-    }
-
-    /**
-     * Sets triggerType
-     *
-     * @param int|mixed $triggerType triggerType
-     *
-     * @return $this
-     */
-    public function setTriggerType($triggerType)
-    {
-        $this->container['triggerType'] = $triggerType;
 
         return $this;
     }

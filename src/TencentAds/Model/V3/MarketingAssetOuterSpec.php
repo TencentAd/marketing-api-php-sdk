@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * MarketingAssetOuterSpec Class Doc Comment
  *
  * @category Class
- * @description 推广内容资产外部ID数据
+ * @description 产品外部ID数据
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

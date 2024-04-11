@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * MarketingTargetType Class Doc Comment
  *
  * @category Class
- * @description 推广内容资产类型
+ * @description 推广产品类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -101,6 +101,7 @@ class MarketingTargetType
     const PERSONAL_STORE = 'MARKETING_TARGET_TYPE_PERSONAL_STORE';
     const PLATFORM_CHANNEL = 'MARKETING_TARGET_TYPE_PLATFORM_CHANNEL';
     const TWO_WHEEL_VEHICLE = 'MARKETING_TARGET_TYPE_TWO_WHEEL_VEHICLE';
+    const GOVERNMENT_AFFAIRS = 'MARKETING_TARGET_TYPE_GOVERNMENT_AFFAIRS';
     
     /**
      * Gets allowable values of the enum
@@ -166,6 +167,7 @@ class MarketingTargetType
             self::PERSONAL_STORE,
             self::PLATFORM_CHANNEL,
             self::TWO_WHEEL_VEHICLE,
+            self::GOVERNMENT_AFFAIRS,
         ];
     }
 }

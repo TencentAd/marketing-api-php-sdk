@@ -1,6 +1,6 @@
 <?php
 /**
- * DynamicCreativeRetryStatus
+ * WechatChannelsAdAccountStatus
  *
  * PHP version 5
  *
@@ -31,23 +31,28 @@ namespace TencentAds\Model\V3;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DynamicCreativeRetryStatus Class Doc Comment
+ * WechatChannelsAdAccountStatus Class Doc Comment
  *
  * @category Class
- * @description 重试状态
+ * @description 视频号开户状态
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DynamicCreativeRetryStatus
+class WechatChannelsAdAccountStatus
 {
     /**
      * Possible values of this enum
      */
-    const UNKNOWN = 'DYNAMIC_CREATIVE_RETRY_STATUS_UNKNOWN';
-    const WAIT_FOR_RETRY = 'DYNAMIC_CREATIVE_RETRY_STATUS_WAIT_FOR_RETRY';
-    const REJECTED = 'DYNAMIC_CREATIVE_RETRY_STATUS_REJECTED';
-    const RETRYING = 'DYNAMIC_CREATIVE_RETRY_STATUS_RETRYING';
+    const PENDING = 'PENDING';
+    const CREATED = 'CREATED';
+    const EXPIRED = 'EXPIRED';
+    const AUDIT_PENDING = 'AUDIT_PENDING';
+    const AUDIT_REFUSED = 'AUDIT_REFUSED';
+    const FROZEN = 'FROZEN';
+    const BANNED = 'BANNED';
+    const DEACTIVATED = 'DEACTIVATED';
+    const CHECK_FAIL = 'CHECK_FAIL';
     
     /**
      * Gets allowable values of the enum
@@ -56,10 +61,15 @@ class DynamicCreativeRetryStatus
     public static function getAllowableEnumValues()
     {
         return [
-            self::UNKNOWN,
-            self::WAIT_FOR_RETRY,
-            self::REJECTED,
-            self::RETRYING,
+            self::PENDING,
+            self::CREATED,
+            self::EXPIRED,
+            self::AUDIT_PENDING,
+            self::AUDIT_REFUSED,
+            self::FROZEN,
+            self::BANNED,
+            self::DEACTIVATED,
+            self::CHECK_FAIL,
         ];
     }
 }

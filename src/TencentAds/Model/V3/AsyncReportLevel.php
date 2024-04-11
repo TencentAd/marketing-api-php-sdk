@@ -59,6 +59,7 @@ class AsyncReportLevel
     const CHANNEL = 'REPORT_LEVEL_CHANNEL';
     const LANDING_PAGE = 'REPORT_LEVEL_LANDING_PAGE';
     const MARKETING_ASSET = 'REPORT_LEVEL_MARKETING_ASSET';
+    const AD_UNION = 'REPORT_LEVEL_AD_UNION';
     
     /**
      * Gets allowable values of the enum
@@ -82,6 +83,7 @@ class AsyncReportLevel
             self::CHANNEL,
             self::LANDING_PAGE,
             self::MARKETING_ASSET,
+            self::AD_UNION,
         ];
     }
 }

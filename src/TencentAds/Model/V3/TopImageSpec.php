@@ -58,7 +58,7 @@ class TopImageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'imageId' => 'string',
+        'imageIdList' => 'string',
         'width' => 'int',
         'height' => 'int',
         'adLocation' => 'string',
@@ -71,7 +71,7 @@ class TopImageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'imageId' => null,
+        'imageIdList' => null,
         'width' => 'int64',
         'height' => 'int64',
         'adLocation' => null,
@@ -105,7 +105,7 @@ class TopImageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'imageId' => 'image_id',
+        'imageIdList' => 'image_id_list',
         'width' => 'width',
         'height' => 'height',
         'adLocation' => 'ad_location',
@@ -118,7 +118,7 @@ class TopImageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'imageId' => 'setImageId',
+        'imageIdList' => 'setImageIdList',
         'width' => 'setWidth',
         'height' => 'setHeight',
         'adLocation' => 'setAdLocation',
@@ -131,7 +131,7 @@ class TopImageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'imageId' => 'getImageId',
+        'imageIdList' => 'getImageIdList',
         'width' => 'getWidth',
         'height' => 'getHeight',
         'adLocation' => 'getAdLocation',
@@ -198,7 +198,7 @@ class TopImageSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['imageId'] = isset($data['imageId']) ? $data['imageId'] : null;
+        $this->container['imageIdList'] = isset($data['imageIdList']) ? $data['imageIdList'] : null;
         $this->container['width'] = isset($data['width']) ? $data['width'] : null;
         $this->container['height'] = isset($data['height']) ? $data['height'] : null;
         $this->container['adLocation'] = isset($data['adLocation']) ? $data['adLocation'] : null;
@@ -230,25 +230,25 @@ class TopImageSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets imageId
+     * Gets imageIdList
      *
      * @return string|mixed
      */
-    public function getImageId()
+    public function getImageIdList()
     {
-        return $this->container['imageId'];
+        return $this->container['imageIdList'];
     }
 
     /**
-     * Sets imageId
+     * Sets imageIdList
      *
-     * @param string|mixed $imageId imageId
+     * @param string|mixed $imageIdList imageIdList
      *
      * @return $this
      */
-    public function setImageId($imageId)
+    public function setImageIdList($imageIdList)
     {
-        $this->container['imageId'] = $imageId;
+        $this->container['imageIdList'] = $imageIdList;
 
         return $this;
     }

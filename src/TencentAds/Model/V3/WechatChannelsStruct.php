@@ -59,11 +59,8 @@ class WechatChannelsStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'livePromotedType' => '\TencentAds\Model\V3\LivePromotedType',
-        'exportId' => 'string',
         'username' => 'string',
-        'exportIdHashValue' => 'int',
-        'finderObjectVisibility' => 'bool',
-        'coverImgShowType' => '\TencentAds\Model\V3\WechatChannelsCoverImgShowType'
+        'finderObjectVisibility' => 'bool'
     ];
 
     /**
@@ -73,11 +70,8 @@ class WechatChannelsStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'livePromotedType' => null,
-        'exportId' => null,
         'username' => null,
-        'exportIdHashValue' => 'int64',
-        'finderObjectVisibility' => null,
-        'coverImgShowType' => null
+        'finderObjectVisibility' => null
     ];
 
     /**
@@ -108,11 +102,8 @@ class WechatChannelsStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'livePromotedType' => 'live_promoted_type',
-        'exportId' => 'export_id',
         'username' => 'username',
-        'exportIdHashValue' => 'export_id_hash_value',
-        'finderObjectVisibility' => 'finder_object_visibility',
-        'coverImgShowType' => 'cover_img_show_type'
+        'finderObjectVisibility' => 'finder_object_visibility'
     ];
 
     /**
@@ -122,11 +113,8 @@ class WechatChannelsStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'livePromotedType' => 'setLivePromotedType',
-        'exportId' => 'setExportId',
         'username' => 'setUsername',
-        'exportIdHashValue' => 'setExportIdHashValue',
-        'finderObjectVisibility' => 'setFinderObjectVisibility',
-        'coverImgShowType' => 'setCoverImgShowType'
+        'finderObjectVisibility' => 'setFinderObjectVisibility'
     ];
 
     /**
@@ -136,11 +124,8 @@ class WechatChannelsStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'livePromotedType' => 'getLivePromotedType',
-        'exportId' => 'getExportId',
         'username' => 'getUsername',
-        'exportIdHashValue' => 'getExportIdHashValue',
-        'finderObjectVisibility' => 'getFinderObjectVisibility',
-        'coverImgShowType' => 'getCoverImgShowType'
+        'finderObjectVisibility' => 'getFinderObjectVisibility'
     ];
 
     /**
@@ -204,11 +189,8 @@ class WechatChannelsStruct implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['livePromotedType'] = isset($data['livePromotedType']) ? $data['livePromotedType'] : null;
-        $this->container['exportId'] = isset($data['exportId']) ? $data['exportId'] : null;
         $this->container['username'] = isset($data['username']) ? $data['username'] : null;
-        $this->container['exportIdHashValue'] = isset($data['exportIdHashValue']) ? $data['exportIdHashValue'] : null;
         $this->container['finderObjectVisibility'] = isset($data['finderObjectVisibility']) ? $data['finderObjectVisibility'] : null;
-        $this->container['coverImgShowType'] = isset($data['coverImgShowType']) ? $data['coverImgShowType'] : null;
     }
 
     /**
@@ -260,30 +242,6 @@ class WechatChannelsStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets exportId
-     *
-     * @return string|mixed
-     */
-    public function getExportId()
-    {
-        return $this->container['exportId'];
-    }
-
-    /**
-     * Sets exportId
-     *
-     * @param string|mixed $exportId exportId
-     *
-     * @return $this
-     */
-    public function setExportId($exportId)
-    {
-        $this->container['exportId'] = $exportId;
-
-        return $this;
-    }
-
-    /**
      * Gets username
      *
      * @return string|mixed
@@ -308,30 +266,6 @@ class WechatChannelsStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets exportIdHashValue
-     *
-     * @return int|mixed
-     */
-    public function getExportIdHashValue()
-    {
-        return $this->container['exportIdHashValue'];
-    }
-
-    /**
-     * Sets exportIdHashValue
-     *
-     * @param int|mixed $exportIdHashValue exportIdHashValue
-     *
-     * @return $this
-     */
-    public function setExportIdHashValue($exportIdHashValue)
-    {
-        $this->container['exportIdHashValue'] = $exportIdHashValue;
-
-        return $this;
-    }
-
-    /**
      * Gets finderObjectVisibility
      *
      * @return bool|mixed
@@ -351,30 +285,6 @@ class WechatChannelsStruct implements ModelInterface, ArrayAccess
     public function setFinderObjectVisibility($finderObjectVisibility)
     {
         $this->container['finderObjectVisibility'] = $finderObjectVisibility;
-
-        return $this;
-    }
-
-    /**
-     * Gets coverImgShowType
-     *
-     * @return \TencentAds\Model\V3\WechatChannelsCoverImgShowType|mixed
-     */
-    public function getCoverImgShowType()
-    {
-        return $this->container['coverImgShowType'];
-    }
-
-    /**
-     * Sets coverImgShowType
-     *
-     * @param \TencentAds\Model\V3\WechatChannelsCoverImgShowType|mixed $coverImgShowType coverImgShowType
-     *
-     * @return $this
-     */
-    public function setCoverImgShowType($coverImgShowType)
-    {
-        $this->container['coverImgShowType'] = $coverImgShowType;
 
         return $this;
     }

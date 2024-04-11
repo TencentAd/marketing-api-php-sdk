@@ -59,7 +59,7 @@ class ShelfSpecStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'shelfButtonSpec' => '\TencentAds\Model\V3\ShelfButtonSpec',
-        'imageId' => 'string',
+        'imageIdList' => 'string',
         'title' => 'string',
         'desc' => 'string'
     ];
@@ -71,7 +71,7 @@ class ShelfSpecStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'shelfButtonSpec' => null,
-        'imageId' => null,
+        'imageIdList' => null,
         'title' => null,
         'desc' => null
     ];
@@ -104,7 +104,7 @@ class ShelfSpecStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'shelfButtonSpec' => 'shelf_button_spec',
-        'imageId' => 'image_id',
+        'imageIdList' => 'image_id_list',
         'title' => 'title',
         'desc' => 'desc'
     ];
@@ -116,7 +116,7 @@ class ShelfSpecStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'shelfButtonSpec' => 'setShelfButtonSpec',
-        'imageId' => 'setImageId',
+        'imageIdList' => 'setImageIdList',
         'title' => 'setTitle',
         'desc' => 'setDesc'
     ];
@@ -128,7 +128,7 @@ class ShelfSpecStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'shelfButtonSpec' => 'getShelfButtonSpec',
-        'imageId' => 'getImageId',
+        'imageIdList' => 'getImageIdList',
         'title' => 'getTitle',
         'desc' => 'getDesc'
     ];
@@ -194,7 +194,7 @@ class ShelfSpecStruct implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['shelfButtonSpec'] = isset($data['shelfButtonSpec']) ? $data['shelfButtonSpec'] : null;
-        $this->container['imageId'] = isset($data['imageId']) ? $data['imageId'] : null;
+        $this->container['imageIdList'] = isset($data['imageIdList']) ? $data['imageIdList'] : null;
         $this->container['title'] = isset($data['title']) ? $data['title'] : null;
         $this->container['desc'] = isset($data['desc']) ? $data['desc'] : null;
     }
@@ -248,25 +248,25 @@ class ShelfSpecStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets imageId
+     * Gets imageIdList
      *
      * @return string|mixed
      */
-    public function getImageId()
+    public function getImageIdList()
     {
-        return $this->container['imageId'];
+        return $this->container['imageIdList'];
     }
 
     /**
-     * Sets imageId
+     * Sets imageIdList
      *
-     * @param string|mixed $imageId imageId
+     * @param string|mixed $imageIdList imageIdList
      *
      * @return $this
      */
-    public function setImageId($imageId)
+    public function setImageIdList($imageIdList)
     {
-        $this->container['imageId'] = $imageId;
+        $this->container['imageIdList'] = $imageIdList;
 
         return $this;
     }
