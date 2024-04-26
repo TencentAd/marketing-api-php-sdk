@@ -59,8 +59,7 @@ class MarketingTargetAssetsUpdateRequest implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'organizationId' => 'int',
         'marketingAssetId' => 'int',
-        'marketingAssetName' => 'string',
-        'properties' => '\TencentAds\Model\V3\PropertyStruct[]'
+        'marketingAssetName' => 'string'
     ];
 
     /**
@@ -71,8 +70,7 @@ class MarketingTargetAssetsUpdateRequest implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'organizationId' => 'int64',
         'marketingAssetId' => 'int64',
-        'marketingAssetName' => null,
-        'properties' => null
+        'marketingAssetName' => null
     ];
 
     /**
@@ -104,8 +102,7 @@ class MarketingTargetAssetsUpdateRequest implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'organizationId' => 'organization_id',
         'marketingAssetId' => 'marketing_asset_id',
-        'marketingAssetName' => 'marketing_asset_name',
-        'properties' => 'properties'
+        'marketingAssetName' => 'marketing_asset_name'
     ];
 
     /**
@@ -116,8 +113,7 @@ class MarketingTargetAssetsUpdateRequest implements ModelInterface, ArrayAccess
     protected static $setters = [
         'organizationId' => 'setOrganizationId',
         'marketingAssetId' => 'setMarketingAssetId',
-        'marketingAssetName' => 'setMarketingAssetName',
-        'properties' => 'setProperties'
+        'marketingAssetName' => 'setMarketingAssetName'
     ];
 
     /**
@@ -128,8 +124,7 @@ class MarketingTargetAssetsUpdateRequest implements ModelInterface, ArrayAccess
     protected static $getters = [
         'organizationId' => 'getOrganizationId',
         'marketingAssetId' => 'getMarketingAssetId',
-        'marketingAssetName' => 'getMarketingAssetName',
-        'properties' => 'getProperties'
+        'marketingAssetName' => 'getMarketingAssetName'
     ];
 
     /**
@@ -195,7 +190,6 @@ class MarketingTargetAssetsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['organizationId'] = isset($data['organizationId']) ? $data['organizationId'] : null;
         $this->container['marketingAssetId'] = isset($data['marketingAssetId']) ? $data['marketingAssetId'] : null;
         $this->container['marketingAssetName'] = isset($data['marketingAssetName']) ? $data['marketingAssetName'] : null;
-        $this->container['properties'] = isset($data['properties']) ? $data['properties'] : null;
     }
 
     /**
@@ -290,30 +284,6 @@ class MarketingTargetAssetsUpdateRequest implements ModelInterface, ArrayAccess
     public function setMarketingAssetName($marketingAssetName)
     {
         $this->container['marketingAssetName'] = $marketingAssetName;
-
-        return $this;
-    }
-
-    /**
-     * Gets properties
-     *
-     * @return \TencentAds\Model\V3\PropertyStruct[]|mixed
-     */
-    public function getProperties()
-    {
-        return $this->container['properties'];
-    }
-
-    /**
-     * Sets properties
-     *
-     * @param \TencentAds\Model\V3\PropertyStruct[]|mixed $properties properties
-     *
-     * @return $this
-     */
-    public function setProperties($properties)
-    {
-        $this->container['properties'] = $properties;
 
         return $this;
     }

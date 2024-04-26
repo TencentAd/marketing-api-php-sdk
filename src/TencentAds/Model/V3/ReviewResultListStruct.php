@@ -60,7 +60,8 @@ class ReviewResultListStruct implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'dynamicCreativeId' => 'int',
         'elementResultList' => '\TencentAds\Model\V3\ElementResultListStruct[]',
-        'siteSetResultList' => '\TencentAds\Model\V3\SiteSetResultListStruct[]'
+        'siteSetResultList' => '\TencentAds\Model\V3\SiteSetResultListStruct[]',
+        'rejectMessageList' => 'string[]'
     ];
 
     /**
@@ -71,7 +72,8 @@ class ReviewResultListStruct implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'dynamicCreativeId' => 'int64',
         'elementResultList' => null,
-        'siteSetResultList' => null
+        'siteSetResultList' => null,
+        'rejectMessageList' => null
     ];
 
     /**
@@ -103,7 +105,8 @@ class ReviewResultListStruct implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'dynamicCreativeId' => 'dynamic_creative_id',
         'elementResultList' => 'element_result_list',
-        'siteSetResultList' => 'site_set_result_list'
+        'siteSetResultList' => 'site_set_result_list',
+        'rejectMessageList' => 'reject_message_list'
     ];
 
     /**
@@ -114,7 +117,8 @@ class ReviewResultListStruct implements ModelInterface, ArrayAccess
     protected static $setters = [
         'dynamicCreativeId' => 'setDynamicCreativeId',
         'elementResultList' => 'setElementResultList',
-        'siteSetResultList' => 'setSiteSetResultList'
+        'siteSetResultList' => 'setSiteSetResultList',
+        'rejectMessageList' => 'setRejectMessageList'
     ];
 
     /**
@@ -125,7 +129,8 @@ class ReviewResultListStruct implements ModelInterface, ArrayAccess
     protected static $getters = [
         'dynamicCreativeId' => 'getDynamicCreativeId',
         'elementResultList' => 'getElementResultList',
-        'siteSetResultList' => 'getSiteSetResultList'
+        'siteSetResultList' => 'getSiteSetResultList',
+        'rejectMessageList' => 'getRejectMessageList'
     ];
 
     /**
@@ -191,6 +196,7 @@ class ReviewResultListStruct implements ModelInterface, ArrayAccess
         $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
         $this->container['elementResultList'] = isset($data['elementResultList']) ? $data['elementResultList'] : null;
         $this->container['siteSetResultList'] = isset($data['siteSetResultList']) ? $data['siteSetResultList'] : null;
+        $this->container['rejectMessageList'] = isset($data['rejectMessageList']) ? $data['rejectMessageList'] : null;
     }
 
     /**
@@ -285,6 +291,30 @@ class ReviewResultListStruct implements ModelInterface, ArrayAccess
     public function setSiteSetResultList($siteSetResultList)
     {
         $this->container['siteSetResultList'] = $siteSetResultList;
+
+        return $this;
+    }
+
+    /**
+     * Gets rejectMessageList
+     *
+     * @return string[]|mixed
+     */
+    public function getRejectMessageList()
+    {
+        return $this->container['rejectMessageList'];
+    }
+
+    /**
+     * Sets rejectMessageList
+     *
+     * @param string[]|mixed $rejectMessageList rejectMessageList
+     *
+     * @return $this
+     */
+    public function setRejectMessageList($rejectMessageList)
+    {
+        $this->container['rejectMessageList'] = $rejectMessageList;
 
         return $this;
     }

@@ -58,7 +58,6 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'campaignId' => 'int',
         'adgroupId' => 'int',
         'bidword' => 'string',
         'bidPrice' => 'int',
@@ -73,7 +72,6 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'campaignId' => 'int64',
         'adgroupId' => 'int64',
         'bidword' => null,
         'bidPrice' => 'int64',
@@ -109,7 +107,6 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'campaignId' => 'campaign_id',
         'adgroupId' => 'adgroup_id',
         'bidword' => 'bidword',
         'bidPrice' => 'bid_price',
@@ -124,7 +121,6 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'campaignId' => 'setCampaignId',
         'adgroupId' => 'setAdgroupId',
         'bidword' => 'setBidword',
         'bidPrice' => 'setBidPrice',
@@ -139,7 +135,6 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'campaignId' => 'getCampaignId',
         'adgroupId' => 'getAdgroupId',
         'bidword' => 'getBidword',
         'bidPrice' => 'getBidPrice',
@@ -208,7 +203,6 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['bidword'] = isset($data['bidword']) ? $data['bidword'] : null;
         $this->container['bidPrice'] = isset($data['bidPrice']) ? $data['bidPrice'] : null;
@@ -240,30 +234,6 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
-
-    /**
-     * Gets campaignId
-     *
-     * @return int|mixed
-     */
-    public function getCampaignId()
-    {
-        return $this->container['campaignId'];
-    }
-
-    /**
-     * Sets campaignId
-     *
-     * @param int|mixed $campaignId campaignId
-     *
-     * @return $this
-     */
-    public function setCampaignId($campaignId)
-    {
-        $this->container['campaignId'] = $campaignId;
-
-        return $this;
-    }
 
     /**
      * Gets adgroupId

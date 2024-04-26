@@ -51,6 +51,10 @@ class CalcAdGroupStatus
     const DELETED = 'ADGROUP_STATUS_DELETED';
     const ACCOUNT_BALANCE_NOT_ENOUGH = 'ADGROUP_STATUS_ACCOUNT_BALANCE_NOT_ENOUGH';
     const DAILY_BUDGET_REACHED = 'ADGROUP_STATUS_DAILY_BUDGET_REACHED';
+    const PARTIAL_ACTIVE = 'ADGROUP_STATUS_PARTIAL_ACTIVE';
+    const CREATIVE_STATUS_PENDING = 'ADGROUP_STATUS_CREATIVE_STATUS_PENDING';
+    const CREATIVE_EMPTY = 'ADGROUP_STATUS_CREATIVE_EMPTY';
+    const JOINT_BUDGET_REACHED = 'ADGROUP_STATUS_JOINT_BUDGET_REACHED';
     
     /**
      * Gets allowable values of the enum
@@ -66,6 +70,10 @@ class CalcAdGroupStatus
             self::DELETED,
             self::ACCOUNT_BALANCE_NOT_ENOUGH,
             self::DAILY_BUDGET_REACHED,
+            self::PARTIAL_ACTIVE,
+            self::CREATIVE_STATUS_PENDING,
+            self::CREATIVE_EMPTY,
+            self::JOINT_BUDGET_REACHED,
         ];
     }
 }

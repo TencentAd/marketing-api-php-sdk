@@ -67,7 +67,8 @@ class FloatingZoneStruct implements ModelInterface, ArrayAccess
         'floatingZoneType' => '\TencentAds\Model\V3\CreativeFloatingZoneType',
         'floatingZoneSingleImageId' => 'string',
         'buttonBaseText' => 'string',
-        'jumpInfo' => '\TencentAds\Model\V3\JumpinfoStruct'
+        'jumpInfo' => '\TencentAds\Model\V3\JumpinfoStruct',
+        'floatingZoneInfoType' => '\TencentAds\Model\V3\FloatingZoneInfoType'
     ];
 
     /**
@@ -85,7 +86,8 @@ class FloatingZoneStruct implements ModelInterface, ArrayAccess
         'floatingZoneType' => null,
         'floatingZoneSingleImageId' => null,
         'buttonBaseText' => null,
-        'jumpInfo' => null
+        'jumpInfo' => null,
+        'floatingZoneInfoType' => null
     ];
 
     /**
@@ -124,7 +126,8 @@ class FloatingZoneStruct implements ModelInterface, ArrayAccess
         'floatingZoneType' => 'floating_zone_type',
         'floatingZoneSingleImageId' => 'floating_zone_single_image_id',
         'buttonBaseText' => 'button_base_text',
-        'jumpInfo' => 'jump_info'
+        'jumpInfo' => 'jump_info',
+        'floatingZoneInfoType' => 'floating_zone_info_type'
     ];
 
     /**
@@ -142,7 +145,8 @@ class FloatingZoneStruct implements ModelInterface, ArrayAccess
         'floatingZoneType' => 'setFloatingZoneType',
         'floatingZoneSingleImageId' => 'setFloatingZoneSingleImageId',
         'buttonBaseText' => 'setButtonBaseText',
-        'jumpInfo' => 'setJumpInfo'
+        'jumpInfo' => 'setJumpInfo',
+        'floatingZoneInfoType' => 'setFloatingZoneInfoType'
     ];
 
     /**
@@ -160,7 +164,8 @@ class FloatingZoneStruct implements ModelInterface, ArrayAccess
         'floatingZoneType' => 'getFloatingZoneType',
         'floatingZoneSingleImageId' => 'getFloatingZoneSingleImageId',
         'buttonBaseText' => 'getButtonBaseText',
-        'jumpInfo' => 'getJumpInfo'
+        'jumpInfo' => 'getJumpInfo',
+        'floatingZoneInfoType' => 'getFloatingZoneInfoType'
     ];
 
     /**
@@ -233,6 +238,7 @@ class FloatingZoneStruct implements ModelInterface, ArrayAccess
         $this->container['floatingZoneSingleImageId'] = isset($data['floatingZoneSingleImageId']) ? $data['floatingZoneSingleImageId'] : null;
         $this->container['buttonBaseText'] = isset($data['buttonBaseText']) ? $data['buttonBaseText'] : null;
         $this->container['jumpInfo'] = isset($data['jumpInfo']) ? $data['jumpInfo'] : null;
+        $this->container['floatingZoneInfoType'] = isset($data['floatingZoneInfoType']) ? $data['floatingZoneInfoType'] : null;
     }
 
     /**
@@ -495,6 +501,30 @@ class FloatingZoneStruct implements ModelInterface, ArrayAccess
     public function setJumpInfo($jumpInfo)
     {
         $this->container['jumpInfo'] = $jumpInfo;
+
+        return $this;
+    }
+
+    /**
+     * Gets floatingZoneInfoType
+     *
+     * @return \TencentAds\Model\V3\FloatingZoneInfoType|mixed
+     */
+    public function getFloatingZoneInfoType()
+    {
+        return $this->container['floatingZoneInfoType'];
+    }
+
+    /**
+     * Sets floatingZoneInfoType
+     *
+     * @param \TencentAds\Model\V3\FloatingZoneInfoType|mixed $floatingZoneInfoType floatingZoneInfoType
+     *
+     * @return $this
+     */
+    public function setFloatingZoneInfoType($floatingZoneInfoType)
+    {
+        $this->container['floatingZoneInfoType'] = $floatingZoneInfoType;
 
         return $this;
     }

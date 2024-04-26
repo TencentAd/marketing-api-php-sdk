@@ -84,7 +84,8 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         'shortVideo' => '\TencentAds\Model\V3\ShortVideoComponent[]',
         'elementStory' => '\TencentAds\Model\V3\ElementStoryComponent[]',
         'wxgamePlayablePage' => '\TencentAds\Model\V3\WxgamePlayablePageComponent[]',
-        'mainJumpInfo' => '\TencentAds\Model\V3\JumpinfoComponent[]'
+        'mainJumpInfo' => '\TencentAds\Model\V3\JumpinfoComponent[]',
+        'appPromotionVideo' => '\TencentAds\Model\V3\AppPromotionVideoComponent[]'
     ];
 
     /**
@@ -119,7 +120,8 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         'shortVideo' => null,
         'elementStory' => null,
         'wxgamePlayablePage' => null,
-        'mainJumpInfo' => null
+        'mainJumpInfo' => null,
+        'appPromotionVideo' => null
     ];
 
     /**
@@ -175,7 +177,8 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         'shortVideo' => 'short_video',
         'elementStory' => 'element_story',
         'wxgamePlayablePage' => 'wxgame_playable_page',
-        'mainJumpInfo' => 'main_jump_info'
+        'mainJumpInfo' => 'main_jump_info',
+        'appPromotionVideo' => 'app_promotion_video'
     ];
 
     /**
@@ -210,7 +213,8 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         'shortVideo' => 'setShortVideo',
         'elementStory' => 'setElementStory',
         'wxgamePlayablePage' => 'setWxgamePlayablePage',
-        'mainJumpInfo' => 'setMainJumpInfo'
+        'mainJumpInfo' => 'setMainJumpInfo',
+        'appPromotionVideo' => 'setAppPromotionVideo'
     ];
 
     /**
@@ -245,7 +249,8 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         'shortVideo' => 'getShortVideo',
         'elementStory' => 'getElementStory',
         'wxgamePlayablePage' => 'getWxgamePlayablePage',
-        'mainJumpInfo' => 'getMainJumpInfo'
+        'mainJumpInfo' => 'getMainJumpInfo',
+        'appPromotionVideo' => 'getAppPromotionVideo'
     ];
 
     /**
@@ -335,6 +340,7 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         $this->container['elementStory'] = isset($data['elementStory']) ? $data['elementStory'] : null;
         $this->container['wxgamePlayablePage'] = isset($data['wxgamePlayablePage']) ? $data['wxgamePlayablePage'] : null;
         $this->container['mainJumpInfo'] = isset($data['mainJumpInfo']) ? $data['mainJumpInfo'] : null;
+        $this->container['appPromotionVideo'] = isset($data['appPromotionVideo']) ? $data['appPromotionVideo'] : null;
     }
 
     /**
@@ -1005,6 +1011,30 @@ class CreativeComponents implements ModelInterface, ArrayAccess
     public function setMainJumpInfo($mainJumpInfo)
     {
         $this->container['mainJumpInfo'] = $mainJumpInfo;
+
+        return $this;
+    }
+
+    /**
+     * Gets appPromotionVideo
+     *
+     * @return \TencentAds\Model\V3\AppPromotionVideoComponent[]|mixed
+     */
+    public function getAppPromotionVideo()
+    {
+        return $this->container['appPromotionVideo'];
+    }
+
+    /**
+     * Sets appPromotionVideo
+     *
+     * @param \TencentAds\Model\V3\AppPromotionVideoComponent[]|mixed $appPromotionVideo appPromotionVideo
+     *
+     * @return $this
+     */
+    public function setAppPromotionVideo($appPromotionVideo)
+    {
+        $this->container['appPromotionVideo'] = $appPromotionVideo;
 
         return $this;
     }

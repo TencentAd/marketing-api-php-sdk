@@ -59,7 +59,8 @@ class PropertyStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'propertyName' => '\TencentAds\Model\V3\PromotedAssetAttrKey',
-        'propertyValue' => 'string[]'
+        'propertyValue' => 'string[]',
+        'propertyClass' => '\TencentAds\Model\V3\MarketingAssetAttrClass'
     ];
 
     /**
@@ -69,7 +70,8 @@ class PropertyStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'propertyName' => null,
-        'propertyValue' => null
+        'propertyValue' => null,
+        'propertyClass' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class PropertyStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'propertyName' => 'property_name',
-        'propertyValue' => 'property_value'
+        'propertyValue' => 'property_value',
+        'propertyClass' => 'property_class'
     ];
 
     /**
@@ -110,7 +113,8 @@ class PropertyStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'propertyName' => 'setPropertyName',
-        'propertyValue' => 'setPropertyValue'
+        'propertyValue' => 'setPropertyValue',
+        'propertyClass' => 'setPropertyClass'
     ];
 
     /**
@@ -120,7 +124,8 @@ class PropertyStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'propertyName' => 'getPropertyName',
-        'propertyValue' => 'getPropertyValue'
+        'propertyValue' => 'getPropertyValue',
+        'propertyClass' => 'getPropertyClass'
     ];
 
     /**
@@ -185,6 +190,7 @@ class PropertyStruct implements ModelInterface, ArrayAccess
     {
         $this->container['propertyName'] = isset($data['propertyName']) ? $data['propertyName'] : null;
         $this->container['propertyValue'] = isset($data['propertyValue']) ? $data['propertyValue'] : null;
+        $this->container['propertyClass'] = isset($data['propertyClass']) ? $data['propertyClass'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class PropertyStruct implements ModelInterface, ArrayAccess
     public function setPropertyValue($propertyValue)
     {
         $this->container['propertyValue'] = $propertyValue;
+
+        return $this;
+    }
+
+    /**
+     * Gets propertyClass
+     *
+     * @return \TencentAds\Model\V3\MarketingAssetAttrClass|mixed
+     */
+    public function getPropertyClass()
+    {
+        return $this->container['propertyClass'];
+    }
+
+    /**
+     * Sets propertyClass
+     *
+     * @param \TencentAds\Model\V3\MarketingAssetAttrClass|mixed $propertyClass propertyClass
+     *
+     * @return $this
+     */
+    public function setPropertyClass($propertyClass)
+    {
+        $this->container['propertyClass'] = $propertyClass;
 
         return $this;
     }

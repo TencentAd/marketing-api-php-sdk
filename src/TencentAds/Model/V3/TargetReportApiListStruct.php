@@ -791,6 +791,9 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'inviteFriendsToWatchFireworksPv' => 'int',
         'clkBlessingCardPv' => 'int',
         'channelsDetailBtnPv' => 'int',
+        'afterAddWecomNegativePv' => 'int',
+        'securityLowPriceOrderPv' => 'int',
+        'securityHighPriceOrderPv' => 'int',
         'ageId' => 'int',
         'cityId' => 'int',
         'regionId' => 'int',
@@ -1537,6 +1540,9 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'inviteFriendsToWatchFireworksPv' => 'int64',
         'clkBlessingCardPv' => 'int64',
         'channelsDetailBtnPv' => 'int64',
+        'afterAddWecomNegativePv' => 'int64',
+        'securityLowPriceOrderPv' => 'int64',
+        'securityHighPriceOrderPv' => 'int64',
         'ageId' => 'int64',
         'cityId' => 'int64',
         'regionId' => 'int64',
@@ -2304,6 +2310,9 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'inviteFriendsToWatchFireworksPv' => 'invite_friends_to_watch_fireworks_pv',
         'clkBlessingCardPv' => 'clk_blessing_card_pv',
         'channelsDetailBtnPv' => 'channels_detail_btn_pv',
+        'afterAddWecomNegativePv' => 'after_add_wecom_negative_pv',
+        'securityLowPriceOrderPv' => 'security_low_price_order_pv',
+        'securityHighPriceOrderPv' => 'security_high_price_order_pv',
         'ageId' => 'age_id',
         'cityId' => 'city_id',
         'regionId' => 'region_id',
@@ -3050,6 +3059,9 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'inviteFriendsToWatchFireworksPv' => 'setInviteFriendsToWatchFireworksPv',
         'clkBlessingCardPv' => 'setClkBlessingCardPv',
         'channelsDetailBtnPv' => 'setChannelsDetailBtnPv',
+        'afterAddWecomNegativePv' => 'setAfterAddWecomNegativePv',
+        'securityLowPriceOrderPv' => 'setSecurityLowPriceOrderPv',
+        'securityHighPriceOrderPv' => 'setSecurityHighPriceOrderPv',
         'ageId' => 'setAgeId',
         'cityId' => 'setCityId',
         'regionId' => 'setRegionId',
@@ -3796,6 +3808,9 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'inviteFriendsToWatchFireworksPv' => 'getInviteFriendsToWatchFireworksPv',
         'clkBlessingCardPv' => 'getClkBlessingCardPv',
         'channelsDetailBtnPv' => 'getChannelsDetailBtnPv',
+        'afterAddWecomNegativePv' => 'getAfterAddWecomNegativePv',
+        'securityLowPriceOrderPv' => 'getSecurityLowPriceOrderPv',
+        'securityHighPriceOrderPv' => 'getSecurityHighPriceOrderPv',
         'ageId' => 'getAgeId',
         'cityId' => 'getCityId',
         'regionId' => 'getRegionId',
@@ -4596,6 +4611,9 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['inviteFriendsToWatchFireworksPv'] = isset($data['inviteFriendsToWatchFireworksPv']) ? $data['inviteFriendsToWatchFireworksPv'] : null;
         $this->container['clkBlessingCardPv'] = isset($data['clkBlessingCardPv']) ? $data['clkBlessingCardPv'] : null;
         $this->container['channelsDetailBtnPv'] = isset($data['channelsDetailBtnPv']) ? $data['channelsDetailBtnPv'] : null;
+        $this->container['afterAddWecomNegativePv'] = isset($data['afterAddWecomNegativePv']) ? $data['afterAddWecomNegativePv'] : null;
+        $this->container['securityLowPriceOrderPv'] = isset($data['securityLowPriceOrderPv']) ? $data['securityLowPriceOrderPv'] : null;
+        $this->container['securityHighPriceOrderPv'] = isset($data['securityHighPriceOrderPv']) ? $data['securityHighPriceOrderPv'] : null;
         $this->container['ageId'] = isset($data['ageId']) ? $data['ageId'] : null;
         $this->container['cityId'] = isset($data['cityId']) ? $data['cityId'] : null;
         $this->container['regionId'] = isset($data['regionId']) ? $data['regionId'] : null;
@@ -22215,6 +22233,78 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     public function setChannelsDetailBtnPv($channelsDetailBtnPv)
     {
         $this->container['channelsDetailBtnPv'] = $channelsDetailBtnPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets afterAddWecomNegativePv
+     *
+     * @return int|mixed
+     */
+    public function getAfterAddWecomNegativePv()
+    {
+        return $this->container['afterAddWecomNegativePv'];
+    }
+
+    /**
+     * Sets afterAddWecomNegativePv
+     *
+     * @param int|mixed $afterAddWecomNegativePv afterAddWecomNegativePv
+     *
+     * @return $this
+     */
+    public function setAfterAddWecomNegativePv($afterAddWecomNegativePv)
+    {
+        $this->container['afterAddWecomNegativePv'] = $afterAddWecomNegativePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets securityLowPriceOrderPv
+     *
+     * @return int|mixed
+     */
+    public function getSecurityLowPriceOrderPv()
+    {
+        return $this->container['securityLowPriceOrderPv'];
+    }
+
+    /**
+     * Sets securityLowPriceOrderPv
+     *
+     * @param int|mixed $securityLowPriceOrderPv securityLowPriceOrderPv
+     *
+     * @return $this
+     */
+    public function setSecurityLowPriceOrderPv($securityLowPriceOrderPv)
+    {
+        $this->container['securityLowPriceOrderPv'] = $securityLowPriceOrderPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets securityHighPriceOrderPv
+     *
+     * @return int|mixed
+     */
+    public function getSecurityHighPriceOrderPv()
+    {
+        return $this->container['securityHighPriceOrderPv'];
+    }
+
+    /**
+     * Sets securityHighPriceOrderPv
+     *
+     * @param int|mixed $securityHighPriceOrderPv securityHighPriceOrderPv
+     *
+     * @return $this
+     */
+    public function setSecurityHighPriceOrderPv($securityHighPriceOrderPv)
+    {
+        $this->container['securityHighPriceOrderPv'] = $securityHighPriceOrderPv;
 
         return $this;
     }

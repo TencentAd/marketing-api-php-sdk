@@ -72,6 +72,7 @@ class ComponentType
     const SHORT_VIDEO = 'SHORT_VIDEO';
     const ELEMENT_STORY = 'ELEMENT_STORY';
     const WXGAME_PLAYABLE_PAGE = 'WXGAME_PLAYABLE_PAGE';
+    const APP_PROMOTION_VIDEO = 'APP_PROMOTION_VIDEO';
     const V2_TITLE = 'V2_TITLE';
     const V2_DESCRIPTION = 'V2_DESCRIPTION';
     const V2_LONG_SUBLINK = 'V2_LONG_SUBLINK';
@@ -139,6 +140,7 @@ class ComponentType
             self::SHORT_VIDEO,
             self::ELEMENT_STORY,
             self::WXGAME_PLAYABLE_PAGE,
+            self::APP_PROMOTION_VIDEO,
             self::V2_TITLE,
             self::V2_DESCRIPTION,
             self::V2_LONG_SUBLINK,

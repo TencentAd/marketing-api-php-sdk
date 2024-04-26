@@ -61,6 +61,7 @@ class MaterialDcatagAddRequest implements ModelInterface, ArrayAccess
         'imageIdList' => 'int[]',
         'mediaIdList' => 'int[]',
         'marketingAssetId' => 'int',
+        'marketingTargetType' => '\TencentAds\Model\V3\MarketingTargetType',
         'dcatagList' => '\TencentAds\Model\V3\Dactag[]'
     ];
 
@@ -74,6 +75,7 @@ class MaterialDcatagAddRequest implements ModelInterface, ArrayAccess
         'imageIdList' => 'int64',
         'mediaIdList' => 'int64',
         'marketingAssetId' => 'int64',
+        'marketingTargetType' => null,
         'dcatagList' => null
     ];
 
@@ -108,6 +110,7 @@ class MaterialDcatagAddRequest implements ModelInterface, ArrayAccess
         'imageIdList' => 'image_id_list',
         'mediaIdList' => 'media_id_list',
         'marketingAssetId' => 'marketing_asset_id',
+        'marketingTargetType' => 'marketing_target_type',
         'dcatagList' => 'dcatag_list'
     ];
 
@@ -121,6 +124,7 @@ class MaterialDcatagAddRequest implements ModelInterface, ArrayAccess
         'imageIdList' => 'setImageIdList',
         'mediaIdList' => 'setMediaIdList',
         'marketingAssetId' => 'setMarketingAssetId',
+        'marketingTargetType' => 'setMarketingTargetType',
         'dcatagList' => 'setDcatagList'
     ];
 
@@ -134,6 +138,7 @@ class MaterialDcatagAddRequest implements ModelInterface, ArrayAccess
         'imageIdList' => 'getImageIdList',
         'mediaIdList' => 'getMediaIdList',
         'marketingAssetId' => 'getMarketingAssetId',
+        'marketingTargetType' => 'getMarketingTargetType',
         'dcatagList' => 'getDcatagList'
     ];
 
@@ -201,6 +206,7 @@ class MaterialDcatagAddRequest implements ModelInterface, ArrayAccess
         $this->container['imageIdList'] = isset($data['imageIdList']) ? $data['imageIdList'] : null;
         $this->container['mediaIdList'] = isset($data['mediaIdList']) ? $data['mediaIdList'] : null;
         $this->container['marketingAssetId'] = isset($data['marketingAssetId']) ? $data['marketingAssetId'] : null;
+        $this->container['marketingTargetType'] = isset($data['marketingTargetType']) ? $data['marketingTargetType'] : null;
         $this->container['dcatagList'] = isset($data['dcatagList']) ? $data['dcatagList'] : null;
     }
 
@@ -320,6 +326,30 @@ class MaterialDcatagAddRequest implements ModelInterface, ArrayAccess
     public function setMarketingAssetId($marketingAssetId)
     {
         $this->container['marketingAssetId'] = $marketingAssetId;
+
+        return $this;
+    }
+
+    /**
+     * Gets marketingTargetType
+     *
+     * @return \TencentAds\Model\V3\MarketingTargetType|mixed
+     */
+    public function getMarketingTargetType()
+    {
+        return $this->container['marketingTargetType'];
+    }
+
+    /**
+     * Sets marketingTargetType
+     *
+     * @param \TencentAds\Model\V3\MarketingTargetType|mixed $marketingTargetType marketingTargetType
+     *
+     * @return $this
+     */
+    public function setMarketingTargetType($marketingTargetType)
+    {
+        $this->container['marketingTargetType'] = $marketingTargetType;
 
         return $this;
     }

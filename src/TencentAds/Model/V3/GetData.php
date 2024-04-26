@@ -61,6 +61,7 @@ class GetData implements ModelInterface, ArrayAccess
         'imageId' => 'int',
         'mediaId' => 'int',
         'marketingAssetId' => 'int',
+        'marketingTargetType' => '\TencentAds\Model\V3\MarketingTargetType',
         'auditStatus' => 'int',
         'auditMsg' => 'string',
         'dcatagList' => '\TencentAds\Model\V3\Dactag[]'
@@ -75,6 +76,7 @@ class GetData implements ModelInterface, ArrayAccess
         'imageId' => 'int64',
         'mediaId' => 'int64',
         'marketingAssetId' => 'int64',
+        'marketingTargetType' => null,
         'auditStatus' => 'int64',
         'auditMsg' => null,
         'dcatagList' => null
@@ -110,6 +112,7 @@ class GetData implements ModelInterface, ArrayAccess
         'imageId' => 'image_id',
         'mediaId' => 'media_id',
         'marketingAssetId' => 'marketing_asset_id',
+        'marketingTargetType' => 'marketing_target_type',
         'auditStatus' => 'audit_status',
         'auditMsg' => 'audit_msg',
         'dcatagList' => 'dcatag_list'
@@ -124,6 +127,7 @@ class GetData implements ModelInterface, ArrayAccess
         'imageId' => 'setImageId',
         'mediaId' => 'setMediaId',
         'marketingAssetId' => 'setMarketingAssetId',
+        'marketingTargetType' => 'setMarketingTargetType',
         'auditStatus' => 'setAuditStatus',
         'auditMsg' => 'setAuditMsg',
         'dcatagList' => 'setDcatagList'
@@ -138,6 +142,7 @@ class GetData implements ModelInterface, ArrayAccess
         'imageId' => 'getImageId',
         'mediaId' => 'getMediaId',
         'marketingAssetId' => 'getMarketingAssetId',
+        'marketingTargetType' => 'getMarketingTargetType',
         'auditStatus' => 'getAuditStatus',
         'auditMsg' => 'getAuditMsg',
         'dcatagList' => 'getDcatagList'
@@ -206,6 +211,7 @@ class GetData implements ModelInterface, ArrayAccess
         $this->container['imageId'] = isset($data['imageId']) ? $data['imageId'] : null;
         $this->container['mediaId'] = isset($data['mediaId']) ? $data['mediaId'] : null;
         $this->container['marketingAssetId'] = isset($data['marketingAssetId']) ? $data['marketingAssetId'] : null;
+        $this->container['marketingTargetType'] = isset($data['marketingTargetType']) ? $data['marketingTargetType'] : null;
         $this->container['auditStatus'] = isset($data['auditStatus']) ? $data['auditStatus'] : null;
         $this->container['auditMsg'] = isset($data['auditMsg']) ? $data['auditMsg'] : null;
         $this->container['dcatagList'] = isset($data['dcatagList']) ? $data['dcatagList'] : null;
@@ -303,6 +309,30 @@ class GetData implements ModelInterface, ArrayAccess
     public function setMarketingAssetId($marketingAssetId)
     {
         $this->container['marketingAssetId'] = $marketingAssetId;
+
+        return $this;
+    }
+
+    /**
+     * Gets marketingTargetType
+     *
+     * @return \TencentAds\Model\V3\MarketingTargetType|mixed
+     */
+    public function getMarketingTargetType()
+    {
+        return $this->container['marketingTargetType'];
+    }
+
+    /**
+     * Sets marketingTargetType
+     *
+     * @param \TencentAds\Model\V3\MarketingTargetType|mixed $marketingTargetType marketingTargetType
+     *
+     * @return $this
+     */
+    public function setMarketingTargetType($marketingTargetType)
+    {
+        $this->container['marketingTargetType'] = $marketingTargetType;
 
         return $this;
     }

@@ -59,10 +59,10 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'imageId' => 'string',
-        'imageWidth' => 'int',
-        'imageHeight' => 'int',
-        'imageFileSize' => 'int',
-        'imageType' => '\TencentAds\Model\V3\ImageType',
+        'width' => 'int',
+        'height' => 'int',
+        'fileSize' => 'int',
+        'type' => '\TencentAds\Model\V3\ImageType',
         'signature' => 'string',
         'description' => 'string',
         'sourceSignature' => 'string',
@@ -86,10 +86,10 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'imageId' => null,
-        'imageWidth' => 'int64',
-        'imageHeight' => 'int64',
-        'imageFileSize' => 'int64',
-        'imageType' => null,
+        'width' => 'int64',
+        'height' => 'int64',
+        'fileSize' => 'int64',
+        'type' => null,
         'signature' => null,
         'description' => null,
         'sourceSignature' => null,
@@ -134,10 +134,10 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'imageId' => 'image_id',
-        'imageWidth' => 'image_width',
-        'imageHeight' => 'image_height',
-        'imageFileSize' => 'image_file_size',
-        'imageType' => 'image_type',
+        'width' => 'width',
+        'height' => 'height',
+        'fileSize' => 'file_size',
+        'type' => 'type',
         'signature' => 'signature',
         'description' => 'description',
         'sourceSignature' => 'source_signature',
@@ -161,10 +161,10 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'imageId' => 'setImageId',
-        'imageWidth' => 'setImageWidth',
-        'imageHeight' => 'setImageHeight',
-        'imageFileSize' => 'setImageFileSize',
-        'imageType' => 'setImageType',
+        'width' => 'setWidth',
+        'height' => 'setHeight',
+        'fileSize' => 'setFileSize',
+        'type' => 'setType',
         'signature' => 'setSignature',
         'description' => 'setDescription',
         'sourceSignature' => 'setSourceSignature',
@@ -188,10 +188,10 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'imageId' => 'getImageId',
-        'imageWidth' => 'getImageWidth',
-        'imageHeight' => 'getImageHeight',
-        'imageFileSize' => 'getImageFileSize',
-        'imageType' => 'getImageType',
+        'width' => 'getWidth',
+        'height' => 'getHeight',
+        'fileSize' => 'getFileSize',
+        'type' => 'getType',
         'signature' => 'getSignature',
         'description' => 'getDescription',
         'sourceSignature' => 'getSourceSignature',
@@ -269,10 +269,10 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['imageId'] = isset($data['imageId']) ? $data['imageId'] : null;
-        $this->container['imageWidth'] = isset($data['imageWidth']) ? $data['imageWidth'] : null;
-        $this->container['imageHeight'] = isset($data['imageHeight']) ? $data['imageHeight'] : null;
-        $this->container['imageFileSize'] = isset($data['imageFileSize']) ? $data['imageFileSize'] : null;
-        $this->container['imageType'] = isset($data['imageType']) ? $data['imageType'] : null;
+        $this->container['width'] = isset($data['width']) ? $data['width'] : null;
+        $this->container['height'] = isset($data['height']) ? $data['height'] : null;
+        $this->container['fileSize'] = isset($data['fileSize']) ? $data['fileSize'] : null;
+        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
         $this->container['signature'] = isset($data['signature']) ? $data['signature'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
         $this->container['sourceSignature'] = isset($data['sourceSignature']) ? $data['sourceSignature'] : null;
@@ -338,97 +338,97 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets imageWidth
+     * Gets width
      *
      * @return int|mixed
      */
-    public function getImageWidth()
+    public function getWidth()
     {
-        return $this->container['imageWidth'];
+        return $this->container['width'];
     }
 
     /**
-     * Sets imageWidth
+     * Sets width
      *
-     * @param int|mixed $imageWidth imageWidth
+     * @param int|mixed $width width
      *
      * @return $this
      */
-    public function setImageWidth($imageWidth)
+    public function setWidth($width)
     {
-        $this->container['imageWidth'] = $imageWidth;
+        $this->container['width'] = $width;
 
         return $this;
     }
 
     /**
-     * Gets imageHeight
+     * Gets height
      *
      * @return int|mixed
      */
-    public function getImageHeight()
+    public function getHeight()
     {
-        return $this->container['imageHeight'];
+        return $this->container['height'];
     }
 
     /**
-     * Sets imageHeight
+     * Sets height
      *
-     * @param int|mixed $imageHeight imageHeight
+     * @param int|mixed $height height
      *
      * @return $this
      */
-    public function setImageHeight($imageHeight)
+    public function setHeight($height)
     {
-        $this->container['imageHeight'] = $imageHeight;
+        $this->container['height'] = $height;
 
         return $this;
     }
 
     /**
-     * Gets imageFileSize
+     * Gets fileSize
      *
      * @return int|mixed
      */
-    public function getImageFileSize()
+    public function getFileSize()
     {
-        return $this->container['imageFileSize'];
+        return $this->container['fileSize'];
     }
 
     /**
-     * Sets imageFileSize
+     * Sets fileSize
      *
-     * @param int|mixed $imageFileSize imageFileSize
+     * @param int|mixed $fileSize fileSize
      *
      * @return $this
      */
-    public function setImageFileSize($imageFileSize)
+    public function setFileSize($fileSize)
     {
-        $this->container['imageFileSize'] = $imageFileSize;
+        $this->container['fileSize'] = $fileSize;
 
         return $this;
     }
 
     /**
-     * Gets imageType
+     * Gets type
      *
      * @return \TencentAds\Model\V3\ImageType|mixed
      */
-    public function getImageType()
+    public function getType()
     {
-        return $this->container['imageType'];
+        return $this->container['type'];
     }
 
     /**
-     * Sets imageType
+     * Sets type
      *
-     * @param \TencentAds\Model\V3\ImageType|mixed $imageType imageType
+     * @param \TencentAds\Model\V3\ImageType|mixed $type type
      *
      * @return $this
      */
-    public function setImageType($imageType)
+    public function setType($type)
     {
-        $this->container['imageType'] = $imageType;
+        $this->container['type'] = $type;
 
         return $this;
     }

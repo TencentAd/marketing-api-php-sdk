@@ -866,6 +866,11 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkShortcutMenusPv' => 'int',
         'channelsDetailBtnPv' => 'int',
         'zoneHeaderLiveClickCnt' => 'int',
+        'clkSliderCardProductPv' => 'int',
+        'clkSliderCardProductUv' => 'int',
+        'afterAddWecomNegativePv' => 'int',
+        'securityLowPriceOrderPv' => 'int',
+        'securityHighPriceOrderPv' => 'int',
         'adgroupId' => 'int',
         'adgroupName' => 'string',
         'dynamicCreativeId' => 'int',
@@ -1706,6 +1711,11 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkShortcutMenusPv' => 'int64',
         'channelsDetailBtnPv' => 'int64',
         'zoneHeaderLiveClickCnt' => 'int64',
+        'clkSliderCardProductPv' => 'int64',
+        'clkSliderCardProductUv' => 'int64',
+        'afterAddWecomNegativePv' => 'int64',
+        'securityLowPriceOrderPv' => 'int64',
+        'securityHighPriceOrderPv' => 'int64',
         'adgroupId' => 'int64',
         'adgroupName' => null,
         'dynamicCreativeId' => 'int64',
@@ -2567,6 +2577,11 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkShortcutMenusPv' => 'clk_shortcut_menus_pv',
         'channelsDetailBtnPv' => 'channels_detail_btn_pv',
         'zoneHeaderLiveClickCnt' => 'zone_header_live_click_cnt',
+        'clkSliderCardProductPv' => 'clk_slider_card_product_pv',
+        'clkSliderCardProductUv' => 'clk_slider_card_product_uv',
+        'afterAddWecomNegativePv' => 'after_add_wecom_negative_pv',
+        'securityLowPriceOrderPv' => 'security_low_price_order_pv',
+        'securityHighPriceOrderPv' => 'security_high_price_order_pv',
         'adgroupId' => 'adgroup_id',
         'adgroupName' => 'adgroup_name',
         'dynamicCreativeId' => 'dynamic_creative_id',
@@ -3407,6 +3422,11 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkShortcutMenusPv' => 'setClkShortcutMenusPv',
         'channelsDetailBtnPv' => 'setChannelsDetailBtnPv',
         'zoneHeaderLiveClickCnt' => 'setZoneHeaderLiveClickCnt',
+        'clkSliderCardProductPv' => 'setClkSliderCardProductPv',
+        'clkSliderCardProductUv' => 'setClkSliderCardProductUv',
+        'afterAddWecomNegativePv' => 'setAfterAddWecomNegativePv',
+        'securityLowPriceOrderPv' => 'setSecurityLowPriceOrderPv',
+        'securityHighPriceOrderPv' => 'setSecurityHighPriceOrderPv',
         'adgroupId' => 'setAdgroupId',
         'adgroupName' => 'setAdgroupName',
         'dynamicCreativeId' => 'setDynamicCreativeId',
@@ -4247,6 +4267,11 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkShortcutMenusPv' => 'getClkShortcutMenusPv',
         'channelsDetailBtnPv' => 'getChannelsDetailBtnPv',
         'zoneHeaderLiveClickCnt' => 'getZoneHeaderLiveClickCnt',
+        'clkSliderCardProductPv' => 'getClkSliderCardProductPv',
+        'clkSliderCardProductUv' => 'getClkSliderCardProductUv',
+        'afterAddWecomNegativePv' => 'getAfterAddWecomNegativePv',
+        'securityLowPriceOrderPv' => 'getSecurityLowPriceOrderPv',
+        'securityHighPriceOrderPv' => 'getSecurityHighPriceOrderPv',
         'adgroupId' => 'getAdgroupId',
         'adgroupName' => 'getAdgroupName',
         'dynamicCreativeId' => 'getDynamicCreativeId',
@@ -5141,6 +5166,11 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['clkShortcutMenusPv'] = isset($data['clkShortcutMenusPv']) ? $data['clkShortcutMenusPv'] : null;
         $this->container['channelsDetailBtnPv'] = isset($data['channelsDetailBtnPv']) ? $data['channelsDetailBtnPv'] : null;
         $this->container['zoneHeaderLiveClickCnt'] = isset($data['zoneHeaderLiveClickCnt']) ? $data['zoneHeaderLiveClickCnt'] : null;
+        $this->container['clkSliderCardProductPv'] = isset($data['clkSliderCardProductPv']) ? $data['clkSliderCardProductPv'] : null;
+        $this->container['clkSliderCardProductUv'] = isset($data['clkSliderCardProductUv']) ? $data['clkSliderCardProductUv'] : null;
+        $this->container['afterAddWecomNegativePv'] = isset($data['afterAddWecomNegativePv']) ? $data['afterAddWecomNegativePv'] : null;
+        $this->container['securityLowPriceOrderPv'] = isset($data['securityLowPriceOrderPv']) ? $data['securityLowPriceOrderPv'] : null;
+        $this->container['securityHighPriceOrderPv'] = isset($data['securityHighPriceOrderPv']) ? $data['securityHighPriceOrderPv'] : null;
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
@@ -24579,6 +24609,126 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setZoneHeaderLiveClickCnt($zoneHeaderLiveClickCnt)
     {
         $this->container['zoneHeaderLiveClickCnt'] = $zoneHeaderLiveClickCnt;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkSliderCardProductPv
+     *
+     * @return int|mixed
+     */
+    public function getClkSliderCardProductPv()
+    {
+        return $this->container['clkSliderCardProductPv'];
+    }
+
+    /**
+     * Sets clkSliderCardProductPv
+     *
+     * @param int|mixed $clkSliderCardProductPv clkSliderCardProductPv
+     *
+     * @return $this
+     */
+    public function setClkSliderCardProductPv($clkSliderCardProductPv)
+    {
+        $this->container['clkSliderCardProductPv'] = $clkSliderCardProductPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkSliderCardProductUv
+     *
+     * @return int|mixed
+     */
+    public function getClkSliderCardProductUv()
+    {
+        return $this->container['clkSliderCardProductUv'];
+    }
+
+    /**
+     * Sets clkSliderCardProductUv
+     *
+     * @param int|mixed $clkSliderCardProductUv clkSliderCardProductUv
+     *
+     * @return $this
+     */
+    public function setClkSliderCardProductUv($clkSliderCardProductUv)
+    {
+        $this->container['clkSliderCardProductUv'] = $clkSliderCardProductUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets afterAddWecomNegativePv
+     *
+     * @return int|mixed
+     */
+    public function getAfterAddWecomNegativePv()
+    {
+        return $this->container['afterAddWecomNegativePv'];
+    }
+
+    /**
+     * Sets afterAddWecomNegativePv
+     *
+     * @param int|mixed $afterAddWecomNegativePv afterAddWecomNegativePv
+     *
+     * @return $this
+     */
+    public function setAfterAddWecomNegativePv($afterAddWecomNegativePv)
+    {
+        $this->container['afterAddWecomNegativePv'] = $afterAddWecomNegativePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets securityLowPriceOrderPv
+     *
+     * @return int|mixed
+     */
+    public function getSecurityLowPriceOrderPv()
+    {
+        return $this->container['securityLowPriceOrderPv'];
+    }
+
+    /**
+     * Sets securityLowPriceOrderPv
+     *
+     * @param int|mixed $securityLowPriceOrderPv securityLowPriceOrderPv
+     *
+     * @return $this
+     */
+    public function setSecurityLowPriceOrderPv($securityLowPriceOrderPv)
+    {
+        $this->container['securityLowPriceOrderPv'] = $securityLowPriceOrderPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets securityHighPriceOrderPv
+     *
+     * @return int|mixed
+     */
+    public function getSecurityHighPriceOrderPv()
+    {
+        return $this->container['securityHighPriceOrderPv'];
+    }
+
+    /**
+     * Sets securityHighPriceOrderPv
+     *
+     * @param int|mixed $securityHighPriceOrderPv securityHighPriceOrderPv
+     *
+     * @return $this
+     */
+    public function setSecurityHighPriceOrderPv($securityHighPriceOrderPv)
+    {
+        $this->container['securityHighPriceOrderPv'] = $securityHighPriceOrderPv;
 
         return $this;
     }

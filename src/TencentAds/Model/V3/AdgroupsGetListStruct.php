@@ -120,8 +120,6 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'forwardLinkAssist' => '\TencentAds\Model\V3\OptimizationGoal',
         'conversionName' => 'string',
         'autoAcquisitionStatus' => '\TencentAds\Model\V3\AutoAcquisitionStatus',
-        'autoAcquisitionStatusText' => 'string',
-        'autoAcquisitionStatusMessage' => 'string',
         'costConstraintScene' => '\TencentAds\Model\V3\CostConstraintScene',
         'customCostCap' => 'int',
         'mpaSpec' => '\TencentAds\Model\V3\MpaSpec',
@@ -198,8 +196,6 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'forwardLinkAssist' => null,
         'conversionName' => null,
         'autoAcquisitionStatus' => null,
-        'autoAcquisitionStatusText' => null,
-        'autoAcquisitionStatusMessage' => null,
         'costConstraintScene' => null,
         'customCostCap' => 'int64',
         'mpaSpec' => null,
@@ -297,8 +293,6 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'forwardLinkAssist' => 'forward_link_assist',
         'conversionName' => 'conversion_name',
         'autoAcquisitionStatus' => 'auto_acquisition_status',
-        'autoAcquisitionStatusText' => 'auto_acquisition_status_text',
-        'autoAcquisitionStatusMessage' => 'auto_acquisition_status_message',
         'costConstraintScene' => 'cost_constraint_scene',
         'customCostCap' => 'custom_cost_cap',
         'mpaSpec' => 'mpa_spec',
@@ -375,8 +369,6 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'forwardLinkAssist' => 'setForwardLinkAssist',
         'conversionName' => 'setConversionName',
         'autoAcquisitionStatus' => 'setAutoAcquisitionStatus',
-        'autoAcquisitionStatusText' => 'setAutoAcquisitionStatusText',
-        'autoAcquisitionStatusMessage' => 'setAutoAcquisitionStatusMessage',
         'costConstraintScene' => 'setCostConstraintScene',
         'customCostCap' => 'setCustomCostCap',
         'mpaSpec' => 'setMpaSpec',
@@ -453,8 +445,6 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'forwardLinkAssist' => 'getForwardLinkAssist',
         'conversionName' => 'getConversionName',
         'autoAcquisitionStatus' => 'getAutoAcquisitionStatus',
-        'autoAcquisitionStatusText' => 'getAutoAcquisitionStatusText',
-        'autoAcquisitionStatusMessage' => 'getAutoAcquisitionStatusMessage',
         'costConstraintScene' => 'getCostConstraintScene',
         'customCostCap' => 'getCustomCostCap',
         'mpaSpec' => 'getMpaSpec',
@@ -585,8 +575,6 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['forwardLinkAssist'] = isset($data['forwardLinkAssist']) ? $data['forwardLinkAssist'] : null;
         $this->container['conversionName'] = isset($data['conversionName']) ? $data['conversionName'] : null;
         $this->container['autoAcquisitionStatus'] = isset($data['autoAcquisitionStatus']) ? $data['autoAcquisitionStatus'] : null;
-        $this->container['autoAcquisitionStatusText'] = isset($data['autoAcquisitionStatusText']) ? $data['autoAcquisitionStatusText'] : null;
-        $this->container['autoAcquisitionStatusMessage'] = isset($data['autoAcquisitionStatusMessage']) ? $data['autoAcquisitionStatusMessage'] : null;
         $this->container['costConstraintScene'] = isset($data['costConstraintScene']) ? $data['costConstraintScene'] : null;
         $this->container['customCostCap'] = isset($data['customCostCap']) ? $data['customCostCap'] : null;
         $this->container['mpaSpec'] = isset($data['mpaSpec']) ? $data['mpaSpec'] : null;
@@ -2103,54 +2091,6 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setAutoAcquisitionStatus($autoAcquisitionStatus)
     {
         $this->container['autoAcquisitionStatus'] = $autoAcquisitionStatus;
-
-        return $this;
-    }
-
-    /**
-     * Gets autoAcquisitionStatusText
-     *
-     * @return string|mixed
-     */
-    public function getAutoAcquisitionStatusText()
-    {
-        return $this->container['autoAcquisitionStatusText'];
-    }
-
-    /**
-     * Sets autoAcquisitionStatusText
-     *
-     * @param string|mixed $autoAcquisitionStatusText autoAcquisitionStatusText
-     *
-     * @return $this
-     */
-    public function setAutoAcquisitionStatusText($autoAcquisitionStatusText)
-    {
-        $this->container['autoAcquisitionStatusText'] = $autoAcquisitionStatusText;
-
-        return $this;
-    }
-
-    /**
-     * Gets autoAcquisitionStatusMessage
-     *
-     * @return string|mixed
-     */
-    public function getAutoAcquisitionStatusMessage()
-    {
-        return $this->container['autoAcquisitionStatusMessage'];
-    }
-
-    /**
-     * Sets autoAcquisitionStatusMessage
-     *
-     * @param string|mixed $autoAcquisitionStatusMessage autoAcquisitionStatusMessage
-     *
-     * @return $this
-     */
-    public function setAutoAcquisitionStatusMessage($autoAcquisitionStatusMessage)
-    {
-        $this->container['autoAcquisitionStatusMessage'] = $autoAcquisitionStatusMessage;
 
         return $this;
     }

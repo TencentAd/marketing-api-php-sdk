@@ -3,7 +3,6 @@ namespace TencentAds\Kernel\V3;
 
 use GuzzleHttp\Client;
 use TencentAds\Container\V3\AccountVersionApiContainer;
-use TencentAds\Container\V3\AdDiagnosisApiContainer;
 use TencentAds\Container\V3\AdLabelApiContainer;
 use TencentAds\Container\V3\AdParamApiContainer;
 use TencentAds\Container\V3\AdUnionReportsApiContainer;
@@ -30,6 +29,8 @@ use TencentAds\Container\V3\BidwordApiContainer;
 use TencentAds\Container\V3\BidwordFlowApiContainer;
 use TencentAds\Container\V3\BrandApiContainer;
 use TencentAds\Container\V3\BusinessPointApiContainer;
+use TencentAds\Container\V3\CommentListApiContainer;
+use TencentAds\Container\V3\ComponentElementUrgeReviewApiContainer;
 use TencentAds\Container\V3\ComponentReviewResultsApiContainer;
 use TencentAds\Container\V3\ConversionsApiContainer;
 use TencentAds\Container\V3\CreativeTemplateApiContainer;
@@ -49,13 +50,17 @@ use TencentAds\Container\V3\DynamicAdVideoTemplatesApiContainer;
 use TencentAds\Container\V3\DynamicCreativeReviewResultsApiContainer;
 use TencentAds\Container\V3\DynamicCreativesApiContainer;
 use TencentAds\Container\V3\EcommerceOrderApiContainer;
+use TencentAds\Container\V3\ElementAppealQuotaApiContainer;
+use TencentAds\Container\V3\ElementAppealReviewApiContainer;
 use TencentAds\Container\V3\EstimationApiContainer;
 use TencentAds\Container\V3\ExtendPackageApiContainer;
+use TencentAds\Container\V3\FinderAdObjectListApiContainer;
 use TencentAds\Container\V3\FundStatementsDetailedApiContainer;
 use TencentAds\Container\V3\FundTransferApiContainer;
 use TencentAds\Container\V3\FundsApiContainer;
 use TencentAds\Container\V3\GameFeatureApiContainer;
 use TencentAds\Container\V3\GameFeatureTagsApiContainer;
+use TencentAds\Container\V3\GetWxGameAppGiftPackApiContainer;
 use TencentAds\Container\V3\HourlyReportsApiContainer;
 use TencentAds\Container\V3\ImageProcessingApiContainer;
 use TencentAds\Container\V3\ImagesApiContainer;
@@ -75,6 +80,7 @@ use TencentAds\Container\V3\LeadsVoipCallApiContainer;
 use TencentAds\Container\V3\LeadsVoipCallTokenApiContainer;
 use TencentAds\Container\V3\LiveRoomComponentStatusApiContainer;
 use TencentAds\Container\V3\LiveRoomComponentsApiContainer;
+use TencentAds\Container\V3\LocalStorePackagesApiContainer;
 use TencentAds\Container\V3\LocalStoresAddressParsingResultApiContainer;
 use TencentAds\Container\V3\LocalStoresApiContainer;
 use TencentAds\Container\V3\LocalStoresCategoriesApiContainer;
@@ -93,6 +99,8 @@ use TencentAds\Container\V3\MergeFundTypeDailyBalanceReportApiContainer;
 use TencentAds\Container\V3\MergeFundTypeFundStatementsDetailedApiContainer;
 use TencentAds\Container\V3\MergeFundTypeFundsApiContainer;
 use TencentAds\Container\V3\MergeFundTypeSubcustomerTransferApiContainer;
+use TencentAds\Container\V3\MuseAiMaterialApiContainer;
+use TencentAds\Container\V3\MuseAiTaskApiContainer;
 use TencentAds\Container\V3\OauthApiContainer;
 use TencentAds\Container\V3\ObjectCommentFlagApiContainer;
 use TencentAds\Container\V3\OptimizationGoalPermissionsApiContainer;
@@ -107,6 +115,7 @@ use TencentAds\Container\V3\ProductSeriesApiContainer;
 use TencentAds\Container\V3\ProductsSystemStatusApiContainer;
 use TencentAds\Container\V3\ProfilesApiContainer;
 use TencentAds\Container\V3\ProgrammedApiContainer;
+use TencentAds\Container\V3\ProgrammedMaterialMappingsApiContainer;
 use TencentAds\Container\V3\ProgrammedTemplateApiContainer;
 use TencentAds\Container\V3\QualificationsApiContainer;
 use TencentAds\Container\V3\RealtimeCostApiContainer;
@@ -163,9 +172,6 @@ class App
 
     /** @var AccountVersionApiContainer */
     public $accountVersionApiContainer;
-
-    /** @var AdDiagnosisApiContainer */
-    public $adDiagnosisApiContainer;
 
     /** @var AdLabelApiContainer */
     public $adLabelApiContainer;
@@ -245,6 +251,12 @@ class App
     /** @var BusinessPointApiContainer */
     public $businessPointApiContainer;
 
+    /** @var CommentListApiContainer */
+    public $commentListApiContainer;
+
+    /** @var ComponentElementUrgeReviewApiContainer */
+    public $componentElementUrgeReviewApiContainer;
+
     /** @var ComponentReviewResultsApiContainer */
     public $componentReviewResultsApiContainer;
 
@@ -302,11 +314,20 @@ class App
     /** @var EcommerceOrderApiContainer */
     public $ecommerceOrderApiContainer;
 
+    /** @var ElementAppealQuotaApiContainer */
+    public $elementAppealQuotaApiContainer;
+
+    /** @var ElementAppealReviewApiContainer */
+    public $elementAppealReviewApiContainer;
+
     /** @var EstimationApiContainer */
     public $estimationApiContainer;
 
     /** @var ExtendPackageApiContainer */
     public $extendPackageApiContainer;
+
+    /** @var FinderAdObjectListApiContainer */
+    public $finderAdObjectListApiContainer;
 
     /** @var FundStatementsDetailedApiContainer */
     public $fundStatementsDetailedApiContainer;
@@ -322,6 +343,9 @@ class App
 
     /** @var GameFeatureTagsApiContainer */
     public $gameFeatureTagsApiContainer;
+
+    /** @var GetWxGameAppGiftPackApiContainer */
+    public $getWxGameAppGiftPackApiContainer;
 
     /** @var HourlyReportsApiContainer */
     public $hourlyReportsApiContainer;
@@ -380,6 +404,9 @@ class App
     /** @var LiveRoomComponentsApiContainer */
     public $liveRoomComponentsApiContainer;
 
+    /** @var LocalStorePackagesApiContainer */
+    public $localStorePackagesApiContainer;
+
     /** @var LocalStoresAddressParsingResultApiContainer */
     public $localStoresAddressParsingResultApiContainer;
 
@@ -434,6 +461,12 @@ class App
     /** @var MergeFundTypeSubcustomerTransferApiContainer */
     public $mergeFundTypeSubcustomerTransferApiContainer;
 
+    /** @var MuseAiMaterialApiContainer */
+    public $museAiMaterialApiContainer;
+
+    /** @var MuseAiTaskApiContainer */
+    public $museAiTaskApiContainer;
+
     /** @var OauthApiContainer */
     public $oauthApiContainer;
 
@@ -475,6 +508,9 @@ class App
 
     /** @var ProgrammedApiContainer */
     public $programmedApiContainer;
+
+    /** @var ProgrammedMaterialMappingsApiContainer */
+    public $programmedMaterialMappingsApiContainer;
 
     /** @var ProgrammedTemplateApiContainer */
     public $programmedTemplateApiContainer;
@@ -644,20 +680,6 @@ class App
             $this->accountVersionApiContainer = $container;
         }
         return $this->accountVersionApiContainer;
-    }
-
-
-    /**
-     * @return AdDiagnosisApiContainer
-     */
-    public function adDiagnosis()
-    {
-        if (empty($this->adDiagnosisApiContainer)) {
-            $container = new AdDiagnosisApiContainer();
-            $container->init($this, $this->getClient());
-            $this->adDiagnosisApiContainer = $container;
-        }
-        return $this->adDiagnosisApiContainer;
     }
 
 
@@ -1026,6 +1048,34 @@ class App
 
 
     /**
+     * @return CommentListApiContainer
+     */
+    public function commentList()
+    {
+        if (empty($this->commentListApiContainer)) {
+            $container = new CommentListApiContainer();
+            $container->init($this, $this->getClient());
+            $this->commentListApiContainer = $container;
+        }
+        return $this->commentListApiContainer;
+    }
+
+
+    /**
+     * @return ComponentElementUrgeReviewApiContainer
+     */
+    public function componentElementUrgeReview()
+    {
+        if (empty($this->componentElementUrgeReviewApiContainer)) {
+            $container = new ComponentElementUrgeReviewApiContainer();
+            $container->init($this, $this->getClient());
+            $this->componentElementUrgeReviewApiContainer = $container;
+        }
+        return $this->componentElementUrgeReviewApiContainer;
+    }
+
+
+    /**
      * @return ComponentReviewResultsApiContainer
      */
     public function componentReviewResults()
@@ -1292,6 +1342,34 @@ class App
 
 
     /**
+     * @return ElementAppealQuotaApiContainer
+     */
+    public function elementAppealQuota()
+    {
+        if (empty($this->elementAppealQuotaApiContainer)) {
+            $container = new ElementAppealQuotaApiContainer();
+            $container->init($this, $this->getClient());
+            $this->elementAppealQuotaApiContainer = $container;
+        }
+        return $this->elementAppealQuotaApiContainer;
+    }
+
+
+    /**
+     * @return ElementAppealReviewApiContainer
+     */
+    public function elementAppealReview()
+    {
+        if (empty($this->elementAppealReviewApiContainer)) {
+            $container = new ElementAppealReviewApiContainer();
+            $container->init($this, $this->getClient());
+            $this->elementAppealReviewApiContainer = $container;
+        }
+        return $this->elementAppealReviewApiContainer;
+    }
+
+
+    /**
      * @return EstimationApiContainer
      */
     public function estimation()
@@ -1316,6 +1394,20 @@ class App
             $this->extendPackageApiContainer = $container;
         }
         return $this->extendPackageApiContainer;
+    }
+
+
+    /**
+     * @return FinderAdObjectListApiContainer
+     */
+    public function finderAdObjectList()
+    {
+        if (empty($this->finderAdObjectListApiContainer)) {
+            $container = new FinderAdObjectListApiContainer();
+            $container->init($this, $this->getClient());
+            $this->finderAdObjectListApiContainer = $container;
+        }
+        return $this->finderAdObjectListApiContainer;
     }
 
 
@@ -1386,6 +1478,20 @@ class App
             $this->gameFeatureTagsApiContainer = $container;
         }
         return $this->gameFeatureTagsApiContainer;
+    }
+
+
+    /**
+     * @return GetWxGameAppGiftPackApiContainer
+     */
+    public function getWxGameAppGiftPack()
+    {
+        if (empty($this->getWxGameAppGiftPackApiContainer)) {
+            $container = new GetWxGameAppGiftPackApiContainer();
+            $container->init($this, $this->getClient());
+            $this->getWxGameAppGiftPackApiContainer = $container;
+        }
+        return $this->getWxGameAppGiftPackApiContainer;
     }
 
 
@@ -1656,6 +1762,20 @@ class App
 
 
     /**
+     * @return LocalStorePackagesApiContainer
+     */
+    public function localStorePackages()
+    {
+        if (empty($this->localStorePackagesApiContainer)) {
+            $container = new LocalStorePackagesApiContainer();
+            $container->init($this, $this->getClient());
+            $this->localStorePackagesApiContainer = $container;
+        }
+        return $this->localStorePackagesApiContainer;
+    }
+
+
+    /**
      * @return LocalStoresAddressParsingResultApiContainer
      */
     public function localStoresAddressParsingResult()
@@ -1908,6 +2028,34 @@ class App
 
 
     /**
+     * @return MuseAiMaterialApiContainer
+     */
+    public function museAiMaterial()
+    {
+        if (empty($this->museAiMaterialApiContainer)) {
+            $container = new MuseAiMaterialApiContainer();
+            $container->init($this, $this->getClient());
+            $this->museAiMaterialApiContainer = $container;
+        }
+        return $this->museAiMaterialApiContainer;
+    }
+
+
+    /**
+     * @return MuseAiTaskApiContainer
+     */
+    public function museAiTask()
+    {
+        if (empty($this->museAiTaskApiContainer)) {
+            $container = new MuseAiTaskApiContainer();
+            $container->init($this, $this->getClient());
+            $this->museAiTaskApiContainer = $container;
+        }
+        return $this->museAiTaskApiContainer;
+    }
+
+
+    /**
      * @return OauthApiContainer
      */
     public function oauth()
@@ -2100,6 +2248,20 @@ class App
             $this->programmedApiContainer = $container;
         }
         return $this->programmedApiContainer;
+    }
+
+
+    /**
+     * @return ProgrammedMaterialMappingsApiContainer
+     */
+    public function programmedMaterialMappings()
+    {
+        if (empty($this->programmedMaterialMappingsApiContainer)) {
+            $container = new ProgrammedMaterialMappingsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->programmedMaterialMappingsApiContainer = $container;
+        }
+        return $this->programmedMaterialMappingsApiContainer;
     }
 
 

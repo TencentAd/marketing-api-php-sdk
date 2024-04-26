@@ -65,7 +65,8 @@ class AdContext implements ModelInterface, ArrayAccess
         'marketingCarrierDetail' => '\TencentAds\Model\V3\MarketingCarrierDetail',
         'marketingAssetId' => 'int',
         'siteSet' => 'string[]',
-        'creativeTemplateId' => 'int'
+        'creativeTemplateId' => 'int',
+        'promotedAssetType' => '\TencentAds\Model\V3\PromotedAssetType'
     ];
 
     /**
@@ -81,7 +82,8 @@ class AdContext implements ModelInterface, ArrayAccess
         'marketingCarrierDetail' => null,
         'marketingAssetId' => 'int64',
         'siteSet' => null,
-        'creativeTemplateId' => 'int64'
+        'creativeTemplateId' => 'int64',
+        'promotedAssetType' => null
     ];
 
     /**
@@ -118,7 +120,8 @@ class AdContext implements ModelInterface, ArrayAccess
         'marketingCarrierDetail' => 'marketing_carrier_detail',
         'marketingAssetId' => 'marketing_asset_id',
         'siteSet' => 'site_set',
-        'creativeTemplateId' => 'creative_template_id'
+        'creativeTemplateId' => 'creative_template_id',
+        'promotedAssetType' => 'promoted_asset_type'
     ];
 
     /**
@@ -134,7 +137,8 @@ class AdContext implements ModelInterface, ArrayAccess
         'marketingCarrierDetail' => 'setMarketingCarrierDetail',
         'marketingAssetId' => 'setMarketingAssetId',
         'siteSet' => 'setSiteSet',
-        'creativeTemplateId' => 'setCreativeTemplateId'
+        'creativeTemplateId' => 'setCreativeTemplateId',
+        'promotedAssetType' => 'setPromotedAssetType'
     ];
 
     /**
@@ -150,7 +154,8 @@ class AdContext implements ModelInterface, ArrayAccess
         'marketingCarrierDetail' => 'getMarketingCarrierDetail',
         'marketingAssetId' => 'getMarketingAssetId',
         'siteSet' => 'getSiteSet',
-        'creativeTemplateId' => 'getCreativeTemplateId'
+        'creativeTemplateId' => 'getCreativeTemplateId',
+        'promotedAssetType' => 'getPromotedAssetType'
     ];
 
     /**
@@ -221,6 +226,7 @@ class AdContext implements ModelInterface, ArrayAccess
         $this->container['marketingAssetId'] = isset($data['marketingAssetId']) ? $data['marketingAssetId'] : null;
         $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
         $this->container['creativeTemplateId'] = isset($data['creativeTemplateId']) ? $data['creativeTemplateId'] : null;
+        $this->container['promotedAssetType'] = isset($data['promotedAssetType']) ? $data['promotedAssetType'] : null;
     }
 
     /**
@@ -435,6 +441,30 @@ class AdContext implements ModelInterface, ArrayAccess
     public function setCreativeTemplateId($creativeTemplateId)
     {
         $this->container['creativeTemplateId'] = $creativeTemplateId;
+
+        return $this;
+    }
+
+    /**
+     * Gets promotedAssetType
+     *
+     * @return \TencentAds\Model\V3\PromotedAssetType|mixed
+     */
+    public function getPromotedAssetType()
+    {
+        return $this->container['promotedAssetType'];
+    }
+
+    /**
+     * Sets promotedAssetType
+     *
+     * @param \TencentAds\Model\V3\PromotedAssetType|mixed $promotedAssetType promotedAssetType
+     *
+     * @return $this
+     */
+    public function setPromotedAssetType($promotedAssetType)
+    {
+        $this->container['promotedAssetType'] = $promotedAssetType;
 
         return $this;
     }
