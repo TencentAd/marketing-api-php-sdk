@@ -1,6 +1,6 @@
 <?php
 /**
- * RtaInfoResponseData
+ * JointBudgetRulesAddResponse
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * RtaInfoResponseData Class Doc Comment
+ * JointBudgetRulesAddResponse Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class RtaInfoResponseData implements ModelInterface, ArrayAccess
+class JointBudgetRulesAddResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class RtaInfoResponseData implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'RtaInfoResponseData';
+    protected static $swaggerModelName = 'JointBudgetRulesAddResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,14 +57,11 @@ class RtaInfoResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'rtaId' => 'int',
-        'rtaName' => 'string',
-        'rtaCompanyName' => 'string',
-        'qpsLimit' => 'int',
-        'cacheTime' => 'int',
-        'enable' => 'int',
-        'rules' => '\TencentAds\Model\V3\Rule[]',
-        'bidurls' => '\TencentAds\Model\V3\BidUrl[]'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\V3\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\V3\JointBudgetRulesAddResponseData'
     ];
 
     /**
@@ -73,14 +70,11 @@ class RtaInfoResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'rtaId' => 'int64',
-        'rtaName' => null,
-        'rtaCompanyName' => null,
-        'qpsLimit' => 'int64',
-        'cacheTime' => 'int64',
-        'enable' => 'int64',
-        'rules' => null,
-        'bidurls' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -110,14 +104,11 @@ class RtaInfoResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'rtaId' => 'RtaId',
-        'rtaName' => 'RtaName',
-        'rtaCompanyName' => 'RtaCompanyName',
-        'qpsLimit' => 'QpsLimit',
-        'cacheTime' => 'CacheTime',
-        'enable' => 'Enable',
-        'rules' => 'rules',
-        'bidurls' => 'bidurls'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -126,14 +117,11 @@ class RtaInfoResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'rtaId' => 'setRtaId',
-        'rtaName' => 'setRtaName',
-        'rtaCompanyName' => 'setRtaCompanyName',
-        'qpsLimit' => 'setQpsLimit',
-        'cacheTime' => 'setCacheTime',
-        'enable' => 'setEnable',
-        'rules' => 'setRules',
-        'bidurls' => 'setBidurls'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -142,14 +130,11 @@ class RtaInfoResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'rtaId' => 'getRtaId',
-        'rtaName' => 'getRtaName',
-        'rtaCompanyName' => 'getRtaCompanyName',
-        'qpsLimit' => 'getQpsLimit',
-        'cacheTime' => 'getCacheTime',
-        'enable' => 'getEnable',
-        'rules' => 'getRules',
-        'bidurls' => 'getBidurls'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -212,14 +197,11 @@ class RtaInfoResponseData implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['rtaId'] = isset($data['rtaId']) ? $data['rtaId'] : null;
-        $this->container['rtaName'] = isset($data['rtaName']) ? $data['rtaName'] : null;
-        $this->container['rtaCompanyName'] = isset($data['rtaCompanyName']) ? $data['rtaCompanyName'] : null;
-        $this->container['qpsLimit'] = isset($data['qpsLimit']) ? $data['qpsLimit'] : null;
-        $this->container['cacheTime'] = isset($data['cacheTime']) ? $data['cacheTime'] : null;
-        $this->container['enable'] = isset($data['enable']) ? $data['enable'] : null;
-        $this->container['rules'] = isset($data['rules']) ? $data['rules'] : null;
-        $this->container['bidurls'] = isset($data['bidurls']) ? $data['bidurls'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -247,193 +229,121 @@ class RtaInfoResponseData implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets rtaId
+     * Gets code
      *
      * @return int|mixed
      */
-    public function getRtaId()
+    public function getCode()
     {
-        return $this->container['rtaId'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets rtaId
+     * Sets code
      *
-     * @param int|mixed $rtaId rtaId
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setRtaId($rtaId)
+    public function setCode($code)
     {
-        $this->container['rtaId'] = $rtaId;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets rtaName
+     * Gets message
      *
      * @return string|mixed
      */
-    public function getRtaName()
+    public function getMessage()
     {
-        return $this->container['rtaName'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets rtaName
+     * Sets message
      *
-     * @param string|mixed $rtaName rtaName
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setRtaName($rtaName)
+    public function setMessage($message)
     {
-        $this->container['rtaName'] = $rtaName;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets rtaCompanyName
+     * Gets messageCn
      *
      * @return string|mixed
      */
-    public function getRtaCompanyName()
+    public function getMessageCn()
     {
-        return $this->container['rtaCompanyName'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets rtaCompanyName
+     * Sets messageCn
      *
-     * @param string|mixed $rtaCompanyName rtaCompanyName
+     * @param string|mixed $messageCn messageCn
      *
      * @return $this
      */
-    public function setRtaCompanyName($rtaCompanyName)
+    public function setMessageCn($messageCn)
     {
-        $this->container['rtaCompanyName'] = $rtaCompanyName;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets qpsLimit
+     * Gets errors
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\V3\ApiErrorStruct[]|mixed
      */
-    public function getQpsLimit()
+    public function getErrors()
     {
-        return $this->container['qpsLimit'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets qpsLimit
+     * Sets errors
      *
-     * @param int|mixed $qpsLimit qpsLimit
+     * @param \TencentAds\Model\V3\ApiErrorStruct[]|mixed $errors errors
      *
      * @return $this
      */
-    public function setQpsLimit($qpsLimit)
+    public function setErrors($errors)
     {
-        $this->container['qpsLimit'] = $qpsLimit;
+        $this->container['errors'] = $errors;
 
         return $this;
     }
 
     /**
-     * Gets cacheTime
+     * Gets data
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\V3\JointBudgetRulesAddResponseData|mixed
      */
-    public function getCacheTime()
+    public function getData()
     {
-        return $this->container['cacheTime'];
+        return $this->container['data'];
     }
 
     /**
-     * Sets cacheTime
+     * Sets data
      *
-     * @param int|mixed $cacheTime cacheTime
+     * @param \TencentAds\Model\V3\JointBudgetRulesAddResponseData|mixed $data data
      *
      * @return $this
      */
-    public function setCacheTime($cacheTime)
+    public function setData($data)
     {
-        $this->container['cacheTime'] = $cacheTime;
-
-        return $this;
-    }
-
-    /**
-     * Gets enable
-     *
-     * @return int|mixed
-     */
-    public function getEnable()
-    {
-        return $this->container['enable'];
-    }
-
-    /**
-     * Sets enable
-     *
-     * @param int|mixed $enable enable
-     *
-     * @return $this
-     */
-    public function setEnable($enable)
-    {
-        $this->container['enable'] = $enable;
-
-        return $this;
-    }
-
-    /**
-     * Gets rules
-     *
-     * @return \TencentAds\Model\V3\Rule[]|mixed
-     */
-    public function getRules()
-    {
-        return $this->container['rules'];
-    }
-
-    /**
-     * Sets rules
-     *
-     * @param \TencentAds\Model\V3\Rule[]|mixed $rules rules
-     *
-     * @return $this
-     */
-    public function setRules($rules)
-    {
-        $this->container['rules'] = $rules;
-
-        return $this;
-    }
-
-    /**
-     * Gets bidurls
-     *
-     * @return \TencentAds\Model\V3\BidUrl[]|mixed
-     */
-    public function getBidurls()
-    {
-        return $this->container['bidurls'];
-    }
-
-    /**
-     * Sets bidurls
-     *
-     * @param \TencentAds\Model\V3\BidUrl[]|mixed $bidurls bidurls
-     *
-     * @return $this
-     */
-    public function setBidurls($bidurls)
-    {
-        $this->container['bidurls'] = $bidurls;
+        $this->container['data'] = $data;
 
         return $this;
     }

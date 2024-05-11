@@ -59,7 +59,8 @@ class AdQualificationsSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'qualificationCode' => 'string',
-        'imageIdList' => 'string[]'
+        'imageIdList' => 'string[]',
+        'expandFieldList' => '\TencentAds\Model\V3\ExpandFieldStruct[]'
     ];
 
     /**
@@ -69,7 +70,8 @@ class AdQualificationsSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'qualificationCode' => null,
-        'imageIdList' => null
+        'imageIdList' => null,
+        'expandFieldList' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class AdQualificationsSpec implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'qualificationCode' => 'qualification_code',
-        'imageIdList' => 'image_id_list'
+        'imageIdList' => 'image_id_list',
+        'expandFieldList' => 'expand_field_list'
     ];
 
     /**
@@ -110,7 +113,8 @@ class AdQualificationsSpec implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'qualificationCode' => 'setQualificationCode',
-        'imageIdList' => 'setImageIdList'
+        'imageIdList' => 'setImageIdList',
+        'expandFieldList' => 'setExpandFieldList'
     ];
 
     /**
@@ -120,7 +124,8 @@ class AdQualificationsSpec implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'qualificationCode' => 'getQualificationCode',
-        'imageIdList' => 'getImageIdList'
+        'imageIdList' => 'getImageIdList',
+        'expandFieldList' => 'getExpandFieldList'
     ];
 
     /**
@@ -185,6 +190,7 @@ class AdQualificationsSpec implements ModelInterface, ArrayAccess
     {
         $this->container['qualificationCode'] = isset($data['qualificationCode']) ? $data['qualificationCode'] : null;
         $this->container['imageIdList'] = isset($data['imageIdList']) ? $data['imageIdList'] : null;
+        $this->container['expandFieldList'] = isset($data['expandFieldList']) ? $data['expandFieldList'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class AdQualificationsSpec implements ModelInterface, ArrayAccess
     public function setImageIdList($imageIdList)
     {
         $this->container['imageIdList'] = $imageIdList;
+
+        return $this;
+    }
+
+    /**
+     * Gets expandFieldList
+     *
+     * @return \TencentAds\Model\V3\ExpandFieldStruct[]|mixed
+     */
+    public function getExpandFieldList()
+    {
+        return $this->container['expandFieldList'];
+    }
+
+    /**
+     * Sets expandFieldList
+     *
+     * @param \TencentAds\Model\V3\ExpandFieldStruct[]|mixed $expandFieldList expandFieldList
+     *
+     * @return $this
+     */
+    public function setExpandFieldList($expandFieldList)
+    {
+        $this->container['expandFieldList'] = $expandFieldList;
 
         return $this;
     }

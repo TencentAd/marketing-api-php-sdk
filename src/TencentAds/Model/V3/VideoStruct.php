@@ -59,7 +59,8 @@ class VideoStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'videoId' => 'string',
-        'coverId' => 'string'
+        'coverId' => 'string',
+        'jumpInfo' => '\TencentAds\Model\V3\JumpinfoStruct'
     ];
 
     /**
@@ -69,7 +70,8 @@ class VideoStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'videoId' => null,
-        'coverId' => null
+        'coverId' => null,
+        'jumpInfo' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class VideoStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'videoId' => 'video_id',
-        'coverId' => 'cover_id'
+        'coverId' => 'cover_id',
+        'jumpInfo' => 'jump_info'
     ];
 
     /**
@@ -110,7 +113,8 @@ class VideoStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'videoId' => 'setVideoId',
-        'coverId' => 'setCoverId'
+        'coverId' => 'setCoverId',
+        'jumpInfo' => 'setJumpInfo'
     ];
 
     /**
@@ -120,7 +124,8 @@ class VideoStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'videoId' => 'getVideoId',
-        'coverId' => 'getCoverId'
+        'coverId' => 'getCoverId',
+        'jumpInfo' => 'getJumpInfo'
     ];
 
     /**
@@ -185,6 +190,7 @@ class VideoStruct implements ModelInterface, ArrayAccess
     {
         $this->container['videoId'] = isset($data['videoId']) ? $data['videoId'] : null;
         $this->container['coverId'] = isset($data['coverId']) ? $data['coverId'] : null;
+        $this->container['jumpInfo'] = isset($data['jumpInfo']) ? $data['jumpInfo'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class VideoStruct implements ModelInterface, ArrayAccess
     public function setCoverId($coverId)
     {
         $this->container['coverId'] = $coverId;
+
+        return $this;
+    }
+
+    /**
+     * Gets jumpInfo
+     *
+     * @return \TencentAds\Model\V3\JumpinfoStruct|mixed
+     */
+    public function getJumpInfo()
+    {
+        return $this->container['jumpInfo'];
+    }
+
+    /**
+     * Sets jumpInfo
+     *
+     * @param \TencentAds\Model\V3\JumpinfoStruct|mixed $jumpInfo jumpInfo
+     *
+     * @return $this
+     */
+    public function setJumpInfo($jumpInfo)
+    {
+        $this->container['jumpInfo'] = $jumpInfo;
 
         return $this;
     }

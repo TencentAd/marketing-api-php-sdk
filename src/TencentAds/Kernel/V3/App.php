@@ -64,6 +64,7 @@ use TencentAds\Container\V3\GetWxGameAppGiftPackApiContainer;
 use TencentAds\Container\V3\HourlyReportsApiContainer;
 use TencentAds\Container\V3\ImageProcessingApiContainer;
 use TencentAds\Container\V3\ImagesApiContainer;
+use TencentAds\Container\V3\JointBudgetRulesApiContainer;
 use TencentAds\Container\V3\KeywordRecommendApiContainer;
 use TencentAds\Container\V3\LabelsApiContainer;
 use TencentAds\Container\V3\LandingPageSellStrategyApiContainer;
@@ -117,10 +118,11 @@ use TencentAds\Container\V3\ProfilesApiContainer;
 use TencentAds\Container\V3\ProgrammedApiContainer;
 use TencentAds\Container\V3\ProgrammedMaterialMappingsApiContainer;
 use TencentAds\Container\V3\ProgrammedTemplateApiContainer;
+use TencentAds\Container\V3\QualificationStructureApiContainer;
 use TencentAds\Container\V3\QualificationsApiContainer;
 use TencentAds\Container\V3\RealtimeCostApiContainer;
 use TencentAds\Container\V3\ReviewElementPrereviewResultsApiContainer;
-use TencentAds\Container\V3\RtaApiContainer;
+use TencentAds\Container\V3\RtaInfoApiContainer;
 use TencentAds\Container\V3\RtaexpApiContainer;
 use TencentAds\Container\V3\RtaexpDataRoiApiContainer;
 use TencentAds\Container\V3\RtaexpDspTagDataApiContainer;
@@ -356,6 +358,9 @@ class App
     /** @var ImagesApiContainer */
     public $imagesApiContainer;
 
+    /** @var JointBudgetRulesApiContainer */
+    public $jointBudgetRulesApiContainer;
+
     /** @var KeywordRecommendApiContainer */
     public $keywordRecommendApiContainer;
 
@@ -515,6 +520,9 @@ class App
     /** @var ProgrammedTemplateApiContainer */
     public $programmedTemplateApiContainer;
 
+    /** @var QualificationStructureApiContainer */
+    public $qualificationStructureApiContainer;
+
     /** @var QualificationsApiContainer */
     public $qualificationsApiContainer;
 
@@ -524,8 +532,8 @@ class App
     /** @var ReviewElementPrereviewResultsApiContainer */
     public $reviewElementPrereviewResultsApiContainer;
 
-    /** @var RtaApiContainer */
-    public $rtaApiContainer;
+    /** @var RtaInfoApiContainer */
+    public $rtaInfoApiContainer;
 
     /** @var RtaexpApiContainer */
     public $rtaexpApiContainer;
@@ -1538,6 +1546,20 @@ class App
 
 
     /**
+     * @return JointBudgetRulesApiContainer
+     */
+    public function jointBudgetRules()
+    {
+        if (empty($this->jointBudgetRulesApiContainer)) {
+            $container = new JointBudgetRulesApiContainer();
+            $container->init($this, $this->getClient());
+            $this->jointBudgetRulesApiContainer = $container;
+        }
+        return $this->jointBudgetRulesApiContainer;
+    }
+
+
+    /**
      * @return KeywordRecommendApiContainer
      */
     public function keywordRecommend()
@@ -2280,6 +2302,20 @@ class App
 
 
     /**
+     * @return QualificationStructureApiContainer
+     */
+    public function qualificationStructure()
+    {
+        if (empty($this->qualificationStructureApiContainer)) {
+            $container = new QualificationStructureApiContainer();
+            $container->init($this, $this->getClient());
+            $this->qualificationStructureApiContainer = $container;
+        }
+        return $this->qualificationStructureApiContainer;
+    }
+
+
+    /**
      * @return QualificationsApiContainer
      */
     public function qualifications()
@@ -2322,16 +2358,16 @@ class App
 
 
     /**
-     * @return RtaApiContainer
+     * @return RtaInfoApiContainer
      */
-    public function rta()
+    public function rtaInfo()
     {
-        if (empty($this->rtaApiContainer)) {
-            $container = new RtaApiContainer();
+        if (empty($this->rtaInfoApiContainer)) {
+            $container = new RtaInfoApiContainer();
             $container->init($this, $this->getClient());
-            $this->rtaApiContainer = $container;
+            $this->rtaInfoApiContainer = $container;
         }
-        return $this->rtaApiContainer;
+        return $this->rtaInfoApiContainer;
     }
 
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * SiteSetResultListStruct
+ * ExpandFieldDefinition
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * SiteSetResultListStruct Class Doc Comment
+ * ExpandFieldDefinition Class Doc Comment
  *
  * @category Class
- * @description 版位粒度审核结果
+ * @description 
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class SiteSetResultListStruct implements ModelInterface, ArrayAccess
+class ExpandFieldDefinition implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'site_set_result_list_struct';
+    protected static $swaggerModelName = 'expand_field_definition';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +58,12 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'siteSet' => '\TencentAds\Model\V3\SiteSetDefinition',
-        'systemStatus' => '\TencentAds\Model\V3\ReviewResultStatus',
-        'rejectMessage' => 'string',
-        'elementRejectDetailInfo' => '\TencentAds\Model\V3\ElementRejectDetailInfoListStruct[]'
+        'fieldName' => 'string',
+        'fieldNameCn' => 'string',
+        'fieldType' => '\TencentAds\Model\V3\QualificationExpandFieldType',
+        'required' => 'bool',
+        'maxLength' => 'int',
+        'options' => 'string[]'
     ];
 
     /**
@@ -70,10 +72,12 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'siteSet' => null,
-        'systemStatus' => null,
-        'rejectMessage' => null,
-        'elementRejectDetailInfo' => null
+        'fieldName' => null,
+        'fieldNameCn' => null,
+        'fieldType' => null,
+        'required' => null,
+        'maxLength' => 'int64',
+        'options' => null
     ];
 
     /**
@@ -103,10 +107,12 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'siteSet' => 'site_set',
-        'systemStatus' => 'system_status',
-        'rejectMessage' => 'reject_message',
-        'elementRejectDetailInfo' => 'element_reject_detail_info'
+        'fieldName' => 'field_name',
+        'fieldNameCn' => 'field_name_cn',
+        'fieldType' => 'field_type',
+        'required' => 'required',
+        'maxLength' => 'max_length',
+        'options' => 'options'
     ];
 
     /**
@@ -115,10 +121,12 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'siteSet' => 'setSiteSet',
-        'systemStatus' => 'setSystemStatus',
-        'rejectMessage' => 'setRejectMessage',
-        'elementRejectDetailInfo' => 'setElementRejectDetailInfo'
+        'fieldName' => 'setFieldName',
+        'fieldNameCn' => 'setFieldNameCn',
+        'fieldType' => 'setFieldType',
+        'required' => 'setRequired',
+        'maxLength' => 'setMaxLength',
+        'options' => 'setOptions'
     ];
 
     /**
@@ -127,10 +135,12 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'siteSet' => 'getSiteSet',
-        'systemStatus' => 'getSystemStatus',
-        'rejectMessage' => 'getRejectMessage',
-        'elementRejectDetailInfo' => 'getElementRejectDetailInfo'
+        'fieldName' => 'getFieldName',
+        'fieldNameCn' => 'getFieldNameCn',
+        'fieldType' => 'getFieldType',
+        'required' => 'getRequired',
+        'maxLength' => 'getMaxLength',
+        'options' => 'getOptions'
     ];
 
     /**
@@ -193,10 +203,12 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
-        $this->container['systemStatus'] = isset($data['systemStatus']) ? $data['systemStatus'] : null;
-        $this->container['rejectMessage'] = isset($data['rejectMessage']) ? $data['rejectMessage'] : null;
-        $this->container['elementRejectDetailInfo'] = isset($data['elementRejectDetailInfo']) ? $data['elementRejectDetailInfo'] : null;
+        $this->container['fieldName'] = isset($data['fieldName']) ? $data['fieldName'] : null;
+        $this->container['fieldNameCn'] = isset($data['fieldNameCn']) ? $data['fieldNameCn'] : null;
+        $this->container['fieldType'] = isset($data['fieldType']) ? $data['fieldType'] : null;
+        $this->container['required'] = isset($data['required']) ? $data['required'] : null;
+        $this->container['maxLength'] = isset($data['maxLength']) ? $data['maxLength'] : null;
+        $this->container['options'] = isset($data['options']) ? $data['options'] : null;
     }
 
     /**
@@ -224,97 +236,145 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets siteSet
-     *
-     * @return \TencentAds\Model\V3\SiteSetDefinition|mixed
-     */
-    public function getSiteSet()
-    {
-        return $this->container['siteSet'];
-    }
-
-    /**
-     * Sets siteSet
-     *
-     * @param \TencentAds\Model\V3\SiteSetDefinition|mixed $siteSet siteSet
-     *
-     * @return $this
-     */
-    public function setSiteSet($siteSet)
-    {
-        $this->container['siteSet'] = $siteSet;
-
-        return $this;
-    }
-
-    /**
-     * Gets systemStatus
-     *
-     * @return \TencentAds\Model\V3\ReviewResultStatus|mixed
-     */
-    public function getSystemStatus()
-    {
-        return $this->container['systemStatus'];
-    }
-
-    /**
-     * Sets systemStatus
-     *
-     * @param \TencentAds\Model\V3\ReviewResultStatus|mixed $systemStatus systemStatus
-     *
-     * @return $this
-     */
-    public function setSystemStatus($systemStatus)
-    {
-        $this->container['systemStatus'] = $systemStatus;
-
-        return $this;
-    }
-
-    /**
-     * Gets rejectMessage
+     * Gets fieldName
      *
      * @return string|mixed
      */
-    public function getRejectMessage()
+    public function getFieldName()
     {
-        return $this->container['rejectMessage'];
+        return $this->container['fieldName'];
     }
 
     /**
-     * Sets rejectMessage
+     * Sets fieldName
      *
-     * @param string|mixed $rejectMessage rejectMessage
+     * @param string|mixed $fieldName fieldName
      *
      * @return $this
      */
-    public function setRejectMessage($rejectMessage)
+    public function setFieldName($fieldName)
     {
-        $this->container['rejectMessage'] = $rejectMessage;
+        $this->container['fieldName'] = $fieldName;
 
         return $this;
     }
 
     /**
-     * Gets elementRejectDetailInfo
+     * Gets fieldNameCn
      *
-     * @return \TencentAds\Model\V3\ElementRejectDetailInfoListStruct[]|mixed
+     * @return string|mixed
      */
-    public function getElementRejectDetailInfo()
+    public function getFieldNameCn()
     {
-        return $this->container['elementRejectDetailInfo'];
+        return $this->container['fieldNameCn'];
     }
 
     /**
-     * Sets elementRejectDetailInfo
+     * Sets fieldNameCn
      *
-     * @param \TencentAds\Model\V3\ElementRejectDetailInfoListStruct[]|mixed $elementRejectDetailInfo elementRejectDetailInfo
+     * @param string|mixed $fieldNameCn fieldNameCn
      *
      * @return $this
      */
-    public function setElementRejectDetailInfo($elementRejectDetailInfo)
+    public function setFieldNameCn($fieldNameCn)
     {
-        $this->container['elementRejectDetailInfo'] = $elementRejectDetailInfo;
+        $this->container['fieldNameCn'] = $fieldNameCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets fieldType
+     *
+     * @return \TencentAds\Model\V3\QualificationExpandFieldType|mixed
+     */
+    public function getFieldType()
+    {
+        return $this->container['fieldType'];
+    }
+
+    /**
+     * Sets fieldType
+     *
+     * @param \TencentAds\Model\V3\QualificationExpandFieldType|mixed $fieldType fieldType
+     *
+     * @return $this
+     */
+    public function setFieldType($fieldType)
+    {
+        $this->container['fieldType'] = $fieldType;
+
+        return $this;
+    }
+
+    /**
+     * Gets required
+     *
+     * @return bool|mixed
+     */
+    public function getRequired()
+    {
+        return $this->container['required'];
+    }
+
+    /**
+     * Sets required
+     *
+     * @param bool|mixed $required required
+     *
+     * @return $this
+     */
+    public function setRequired($required)
+    {
+        $this->container['required'] = $required;
+
+        return $this;
+    }
+
+    /**
+     * Gets maxLength
+     *
+     * @return int|mixed
+     */
+    public function getMaxLength()
+    {
+        return $this->container['maxLength'];
+    }
+
+    /**
+     * Sets maxLength
+     *
+     * @param int|mixed $maxLength maxLength
+     *
+     * @return $this
+     */
+    public function setMaxLength($maxLength)
+    {
+        $this->container['maxLength'] = $maxLength;
+
+        return $this;
+    }
+
+    /**
+     * Gets options
+     *
+     * @return string[]|mixed
+     */
+    public function getOptions()
+    {
+        return $this->container['options'];
+    }
+
+    /**
+     * Sets options
+     *
+     * @param string[]|mixed $options options
+     *
+     * @return $this
+     */
+    public function setOptions($options)
+    {
+        $this->container['options'] = $options;
 
         return $this;
     }

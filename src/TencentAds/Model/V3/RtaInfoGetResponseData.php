@@ -1,6 +1,6 @@
 <?php
 /**
- * SiteSetResultListStruct
+ * RtaInfoGetResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * SiteSetResultListStruct Class Doc Comment
+ * RtaInfoGetResponseData Class Doc Comment
  *
  * @category Class
- * @description 版位粒度审核结果
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class SiteSetResultListStruct implements ModelInterface, ArrayAccess
+class RtaInfoGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'site_set_result_list_struct';
+    protected static $swaggerModelName = 'RtaInfoGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +57,14 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'siteSet' => '\TencentAds\Model\V3\SiteSetDefinition',
-        'systemStatus' => '\TencentAds\Model\V3\ReviewResultStatus',
-        'rejectMessage' => 'string',
-        'elementRejectDetailInfo' => '\TencentAds\Model\V3\ElementRejectDetailInfoListStruct[]'
+        'rtaId' => 'int',
+        'rtaName' => 'string',
+        'rtaCompanyName' => 'string',
+        'qpsLimit' => 'int',
+        'cacheTime' => 'int',
+        'enable' => 'int',
+        'rules' => '\TencentAds\Model\V3\Rule[]',
+        'bidurls' => '\TencentAds\Model\V3\BidUrl[]'
     ];
 
     /**
@@ -70,10 +73,14 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'siteSet' => null,
-        'systemStatus' => null,
-        'rejectMessage' => null,
-        'elementRejectDetailInfo' => null
+        'rtaId' => 'int64',
+        'rtaName' => null,
+        'rtaCompanyName' => null,
+        'qpsLimit' => 'int64',
+        'cacheTime' => 'int64',
+        'enable' => 'int64',
+        'rules' => null,
+        'bidurls' => null
     ];
 
     /**
@@ -103,10 +110,14 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'siteSet' => 'site_set',
-        'systemStatus' => 'system_status',
-        'rejectMessage' => 'reject_message',
-        'elementRejectDetailInfo' => 'element_reject_detail_info'
+        'rtaId' => 'RtaId',
+        'rtaName' => 'RtaName',
+        'rtaCompanyName' => 'RtaCompanyName',
+        'qpsLimit' => 'QpsLimit',
+        'cacheTime' => 'CacheTime',
+        'enable' => 'Enable',
+        'rules' => 'rules',
+        'bidurls' => 'bidurls'
     ];
 
     /**
@@ -115,10 +126,14 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'siteSet' => 'setSiteSet',
-        'systemStatus' => 'setSystemStatus',
-        'rejectMessage' => 'setRejectMessage',
-        'elementRejectDetailInfo' => 'setElementRejectDetailInfo'
+        'rtaId' => 'setRtaId',
+        'rtaName' => 'setRtaName',
+        'rtaCompanyName' => 'setRtaCompanyName',
+        'qpsLimit' => 'setQpsLimit',
+        'cacheTime' => 'setCacheTime',
+        'enable' => 'setEnable',
+        'rules' => 'setRules',
+        'bidurls' => 'setBidurls'
     ];
 
     /**
@@ -127,10 +142,14 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'siteSet' => 'getSiteSet',
-        'systemStatus' => 'getSystemStatus',
-        'rejectMessage' => 'getRejectMessage',
-        'elementRejectDetailInfo' => 'getElementRejectDetailInfo'
+        'rtaId' => 'getRtaId',
+        'rtaName' => 'getRtaName',
+        'rtaCompanyName' => 'getRtaCompanyName',
+        'qpsLimit' => 'getQpsLimit',
+        'cacheTime' => 'getCacheTime',
+        'enable' => 'getEnable',
+        'rules' => 'getRules',
+        'bidurls' => 'getBidurls'
     ];
 
     /**
@@ -193,10 +212,14 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
-        $this->container['systemStatus'] = isset($data['systemStatus']) ? $data['systemStatus'] : null;
-        $this->container['rejectMessage'] = isset($data['rejectMessage']) ? $data['rejectMessage'] : null;
-        $this->container['elementRejectDetailInfo'] = isset($data['elementRejectDetailInfo']) ? $data['elementRejectDetailInfo'] : null;
+        $this->container['rtaId'] = isset($data['rtaId']) ? $data['rtaId'] : null;
+        $this->container['rtaName'] = isset($data['rtaName']) ? $data['rtaName'] : null;
+        $this->container['rtaCompanyName'] = isset($data['rtaCompanyName']) ? $data['rtaCompanyName'] : null;
+        $this->container['qpsLimit'] = isset($data['qpsLimit']) ? $data['qpsLimit'] : null;
+        $this->container['cacheTime'] = isset($data['cacheTime']) ? $data['cacheTime'] : null;
+        $this->container['enable'] = isset($data['enable']) ? $data['enable'] : null;
+        $this->container['rules'] = isset($data['rules']) ? $data['rules'] : null;
+        $this->container['bidurls'] = isset($data['bidurls']) ? $data['bidurls'] : null;
     }
 
     /**
@@ -224,97 +247,193 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets siteSet
+     * Gets rtaId
      *
-     * @return \TencentAds\Model\V3\SiteSetDefinition|mixed
+     * @return int|mixed
      */
-    public function getSiteSet()
+    public function getRtaId()
     {
-        return $this->container['siteSet'];
+        return $this->container['rtaId'];
     }
 
     /**
-     * Sets siteSet
+     * Sets rtaId
      *
-     * @param \TencentAds\Model\V3\SiteSetDefinition|mixed $siteSet siteSet
+     * @param int|mixed $rtaId rtaId
      *
      * @return $this
      */
-    public function setSiteSet($siteSet)
+    public function setRtaId($rtaId)
     {
-        $this->container['siteSet'] = $siteSet;
+        $this->container['rtaId'] = $rtaId;
 
         return $this;
     }
 
     /**
-     * Gets systemStatus
-     *
-     * @return \TencentAds\Model\V3\ReviewResultStatus|mixed
-     */
-    public function getSystemStatus()
-    {
-        return $this->container['systemStatus'];
-    }
-
-    /**
-     * Sets systemStatus
-     *
-     * @param \TencentAds\Model\V3\ReviewResultStatus|mixed $systemStatus systemStatus
-     *
-     * @return $this
-     */
-    public function setSystemStatus($systemStatus)
-    {
-        $this->container['systemStatus'] = $systemStatus;
-
-        return $this;
-    }
-
-    /**
-     * Gets rejectMessage
+     * Gets rtaName
      *
      * @return string|mixed
      */
-    public function getRejectMessage()
+    public function getRtaName()
     {
-        return $this->container['rejectMessage'];
+        return $this->container['rtaName'];
     }
 
     /**
-     * Sets rejectMessage
+     * Sets rtaName
      *
-     * @param string|mixed $rejectMessage rejectMessage
+     * @param string|mixed $rtaName rtaName
      *
      * @return $this
      */
-    public function setRejectMessage($rejectMessage)
+    public function setRtaName($rtaName)
     {
-        $this->container['rejectMessage'] = $rejectMessage;
+        $this->container['rtaName'] = $rtaName;
 
         return $this;
     }
 
     /**
-     * Gets elementRejectDetailInfo
+     * Gets rtaCompanyName
      *
-     * @return \TencentAds\Model\V3\ElementRejectDetailInfoListStruct[]|mixed
+     * @return string|mixed
      */
-    public function getElementRejectDetailInfo()
+    public function getRtaCompanyName()
     {
-        return $this->container['elementRejectDetailInfo'];
+        return $this->container['rtaCompanyName'];
     }
 
     /**
-     * Sets elementRejectDetailInfo
+     * Sets rtaCompanyName
      *
-     * @param \TencentAds\Model\V3\ElementRejectDetailInfoListStruct[]|mixed $elementRejectDetailInfo elementRejectDetailInfo
+     * @param string|mixed $rtaCompanyName rtaCompanyName
      *
      * @return $this
      */
-    public function setElementRejectDetailInfo($elementRejectDetailInfo)
+    public function setRtaCompanyName($rtaCompanyName)
     {
-        $this->container['elementRejectDetailInfo'] = $elementRejectDetailInfo;
+        $this->container['rtaCompanyName'] = $rtaCompanyName;
+
+        return $this;
+    }
+
+    /**
+     * Gets qpsLimit
+     *
+     * @return int|mixed
+     */
+    public function getQpsLimit()
+    {
+        return $this->container['qpsLimit'];
+    }
+
+    /**
+     * Sets qpsLimit
+     *
+     * @param int|mixed $qpsLimit qpsLimit
+     *
+     * @return $this
+     */
+    public function setQpsLimit($qpsLimit)
+    {
+        $this->container['qpsLimit'] = $qpsLimit;
+
+        return $this;
+    }
+
+    /**
+     * Gets cacheTime
+     *
+     * @return int|mixed
+     */
+    public function getCacheTime()
+    {
+        return $this->container['cacheTime'];
+    }
+
+    /**
+     * Sets cacheTime
+     *
+     * @param int|mixed $cacheTime cacheTime
+     *
+     * @return $this
+     */
+    public function setCacheTime($cacheTime)
+    {
+        $this->container['cacheTime'] = $cacheTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets enable
+     *
+     * @return int|mixed
+     */
+    public function getEnable()
+    {
+        return $this->container['enable'];
+    }
+
+    /**
+     * Sets enable
+     *
+     * @param int|mixed $enable enable
+     *
+     * @return $this
+     */
+    public function setEnable($enable)
+    {
+        $this->container['enable'] = $enable;
+
+        return $this;
+    }
+
+    /**
+     * Gets rules
+     *
+     * @return \TencentAds\Model\V3\Rule[]|mixed
+     */
+    public function getRules()
+    {
+        return $this->container['rules'];
+    }
+
+    /**
+     * Sets rules
+     *
+     * @param \TencentAds\Model\V3\Rule[]|mixed $rules rules
+     *
+     * @return $this
+     */
+    public function setRules($rules)
+    {
+        $this->container['rules'] = $rules;
+
+        return $this;
+    }
+
+    /**
+     * Gets bidurls
+     *
+     * @return \TencentAds\Model\V3\BidUrl[]|mixed
+     */
+    public function getBidurls()
+    {
+        return $this->container['bidurls'];
+    }
+
+    /**
+     * Sets bidurls
+     *
+     * @param \TencentAds\Model\V3\BidUrl[]|mixed $bidurls bidurls
+     *
+     * @return $this
+     */
+    public function setBidurls($bidurls)
+    {
+        $this->container['bidurls'] = $bidurls;
 
         return $this;
     }

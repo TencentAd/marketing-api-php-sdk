@@ -64,7 +64,7 @@ class DataFile implements ModelInterface, ArrayAccess
         'userIdType' => '\TencentAds\Model\V3\UserIdType',
         'operationType' => '\TencentAds\Model\V3\OperationType',
         'openAppId' => 'string',
-        'processStatus' => 'int',
+        'processStatus' => '\TencentAds\Model\V3\FileProcessStatus',
         'processCode' => 'int',
         'errorMessage' => 'string',
         'lineCount' => 'int',
@@ -86,7 +86,7 @@ class DataFile implements ModelInterface, ArrayAccess
         'userIdType' => null,
         'operationType' => null,
         'openAppId' => null,
-        'processStatus' => 'int64',
+        'processStatus' => null,
         'processCode' => 'int64',
         'errorMessage' => null,
         'lineCount' => 'int64',
@@ -430,7 +430,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Gets processStatus
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\V3\FileProcessStatus|mixed
      */
     public function getProcessStatus()
     {
@@ -440,7 +440,7 @@ class DataFile implements ModelInterface, ArrayAccess
     /**
      * Sets processStatus
      *
-     * @param int|mixed $processStatus processStatus
+     * @param \TencentAds\Model\V3\FileProcessStatus|mixed $processStatus processStatus
      *
      * @return $this
      */

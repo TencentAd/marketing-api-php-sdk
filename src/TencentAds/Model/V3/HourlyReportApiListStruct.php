@@ -98,11 +98,8 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'previewDeepConversionsCount' => 'int',
         'videoOuterPlayCount' => 'int',
         'videoOuterPlayUserCount' => 'int',
-        'videoTimeTotalCount' => 'double',
-        'videoOuterPlayTotalTimeCount' => 'double',
         'avgUserPlayCount' => 'double',
         'videoOuterPlayTimeCount' => 'double',
-        'videoOuterPlayTimeAvg' => 'double',
         'videoOuterPlayTimeAvgRate' => 'double',
         'videoOuterPlayRate' => 'double',
         'videoOuterPlayCost' => 'int',
@@ -129,7 +126,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'noInterestCount' => 'int',
         'liveStreamCrtClickCnt' => 'int',
         'clickImageCount' => 'int',
-        'clickNickCount' => 'int',
         'clickHeadCount' => 'int',
         'clickDetailCount' => 'int',
         'clickPoiCount' => 'int',
@@ -181,8 +177,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'guideToFollowPageViewers' => 'int',
         'guideToFollowPageInteractionAmount' => 'int',
         'guideToFollowPageInteractionUsers' => 'int',
-        'specialPageExpUv' => 'int',
-        'specialPageExpCost' => 'int',
         'landingPageViewCount' => 'int',
         'landingPageEffectiveRate' => 'double',
         'landingPageUserCount' => 'int',
@@ -375,18 +369,12 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'retentionCount' => 'int',
         'retentionCost' => 'int',
         'retentionRate' => 'double',
-        'appRetentionD2Pv' => 'int',
-        'appRetentionD3Pv' => 'int',
         'appRetentionD3Uv' => 'int',
         'appRetentionD3Cost' => 'int',
         'appRetentionD3Rate' => 'double',
-        'appRetentionD4Pv' => 'int',
-        'appRetentionD5Pv' => 'int',
         'appRetentionD5Uv' => 'int',
         'appRetentionD5Cost' => 'int',
         'appRetentionD5Rate' => 'double',
-        'appRetentionD6Pv' => 'int',
-        'appRetentionD7Pv' => 'int',
         'appRetentionD7Uv' => 'int',
         'appRetentionD7Cost' => 'int',
         'appRetentionD7Rate' => 'double',
@@ -681,45 +669,23 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'liveStreamCommodityBubbleClkPv' => 'int',
         'liveStreamCommodityShopBagClkPv' => 'int',
         'liveStreamCommodityShopListExpPv' => 'int',
-        'channelsLiveExitPlaUv' => 'int',
         'liveStreamAvgTime' => 'double',
-        'followCount' => 'int',
-        'followCost' => 'int',
         'fromFollowUv' => 'int',
         'fromFollowCost' => 'int',
         'fromFollowByDisplayUv' => 'int',
         'fromFollowByDisplayCost' => 'int',
         'fromFollowByClickUv' => 'int',
         'fromFollowByClickCost' => 'int',
-        'bizFollowCount' => 'int',
         'bizFollowRate' => 'double',
         'bizFollowCost' => 'int',
         'bizFollowUv' => 'int',
         'bizConsultCount' => 'int',
         'bizReadingCount' => 'int',
-        'breakFrameExpPv' => 'int',
-        'breakFrameExpUv' => 'int',
         'breakFramePlayPv' => 'int',
         'breakFramePlayUv' => 'int',
-        'breakFramePlayDuration' => 'double',
         'avgBreakFramePlayPerUser' => 'double',
-        'breakFrameIpExpPv' => 'int',
-        'breakFrameIpExpUv' => 'int',
         'breakFrameIpClkPv' => 'int',
         'breakFrameIpClkUv' => 'int',
-        'overallBrandExposure' => 'int',
-        'expHasCostPv' => 'int',
-        'freeExposurePv' => 'int',
-        'brandShareExposurePv' => 'int',
-        'brandShareExposureUv' => 'int',
-        'cvsShareExpToFriendPv' => 'int',
-        'cvsShareExpToFeedPv' => 'int',
-        'cvsShareExpToFriendUv' => 'int',
-        'cvsShareExpToFeedUv' => 'int',
-        'realCpmCost' => 'int',
-        'expRootUv' => 'int',
-        'expFirstSpreadUv' => 'int',
-        'expSecondSpreadUv' => 'int',
         'clkMaterialUv' => 'int',
         'clkMaterialRate' => 'double',
         'clkNickPv' => 'int',
@@ -728,101 +694,28 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkActionBtnPv' => 'int',
         'clkActionBtnUv' => 'int',
         'clkTagCommentPv' => 'int',
-        'clkTagCommentUv' => 'int',
         'clkTagContentPv' => 'int',
-        'clkTagContentUv' => 'int',
         'clkPoiPv' => 'int',
-        'clkPoiUv' => 'int',
-        'clkChoiceLeftPv' => 'int',
-        'clkChoiceLeftUv' => 'int',
-        'clkChoiceRightPv' => 'int',
-        'clkChoiceRightUv' => 'int',
-        'clkCardTagPv' => 'int',
-        'clkCardTagUv' => 'int',
         'clkDetailUv' => 'int',
         'clkDetailRate' => 'double',
         'clkSliderCardBtnPv' => 'int',
-        'clkSliderCardBtnUv' => 'int',
         'cvsBubbleShareClkPv' => 'int',
         'cvsBubbleShareClkUv' => 'int',
         'lpStarPageExpPv' => 'int',
-        'lpStarPageExpUv' => 'int',
-        'lpStarPageClkPv' => 'int',
-        'lpStarPageClkUv' => 'int',
-        'lpStarPageClkRate' => 'double',
         'finderTopicSliderPv' => 'int',
-        'finderTopicSliderUv' => 'int',
-        'finderTopicSliderAutoPv' => 'int',
-        'finderTopicSliderAutoUv' => 'int',
         'finderTopicSliderPerUser' => 'double',
         'finderTopicSliderManualPv' => 'int',
-        'finderTopicSliderManualUv' => 'int',
-        'fullsrcSlidePv' => 'int',
-        'galleryCardSliderPv' => 'int',
-        'galleryCardSliderUv' => 'int',
-        'shareUv' => 'int',
         'shareFriendPv' => 'int',
         'shareFeedPv' => 'int',
         'praiseUv' => 'int',
         'commentUv' => 'int',
-        'praiseCommentPv' => 'int',
-        'praiseCommentRate' => 'double',
-        'praiseCommentSharePv' => 'int',
-        'praiseCommentShareUv' => 'int',
-        'commentAtFriendPv' => 'int',
-        'commentAtFriendUv' => 'int',
-        'commentReplyFristPv' => 'int',
-        'commentReplyFristUv' => 'int',
-        'cvsFavPv' => 'int',
         'engagePv' => 'int',
-        'engageUv' => 'int',
-        'overallEngageUvRate' => 'double',
-        'overallEngagePvRate' => 'double',
         'interactSuccPv' => 'int',
-        'interactSuccUv' => 'int',
-        'interactRootUv' => 'int',
-        'interactFirstSpreadUv' => 'int',
-        'interactSecondSpreadUv' => 'int',
-        'interactRootRate' => 'double',
-        'interactFirstSpreadRate' => 'double',
-        'interactSecondSpreadRate' => 'double',
-        'finderTopicSliderCardExpPv' => 'int',
-        'finderTopicSliderCardClkPv' => 'int',
-        'finderTopicSliderVideoPlayPv' => 'int',
-        'finderTopicSliderVideoPlayUv' => 'int',
-        'stayDurationAll' => 'double',
         'durationPerUser' => 'double',
-        'shortVideoAvgStayTime' => 'double',
-        'stayDurationOuter' => 'double',
         'durationOuterPerUser' => 'double',
-        'shortVideoAvgViewStayTime' => 'double',
-        'stayDurationCvs' => 'double',
         'durationKeyPagePerUser' => 'double',
-        'stayDurationAll02Uv' => 'int',
-        'stayDurationAll02Rate' => 'double',
-        'stayDurationAll34Uv' => 'int',
-        'stayDurationAll34Rate' => 'double',
-        'stayDurationAll510Uv' => 'int',
-        'stayDurationAll510Rate' => 'double',
-        'stayDurationAllAbove10Uv' => 'int',
-        'stayDurationAllAbove10Rate' => 'double',
-        'stayDurationAllAbove5Uv' => 'int',
-        'stayDurationAllAbove5Rate' => 'double',
-        'stayDurationCvs02Uv' => 'int',
-        'stayDurationCvs02Rate' => 'double',
-        'stayDurationCvs39Uv' => 'int',
-        'stayDurationCvs39Rate' => 'double',
-        'stayDurationCvs1029Uv' => 'int',
-        'stayDurationCvs1029Rate' => 'double',
-        'stayDurationCvsAbove30Uv' => 'int',
-        'stayDurationCvsAbove30Rate' => 'double',
-        'stayDurationCvsAbove10Uv' => 'int',
-        'stayDurationCvsAbove10Rate' => 'double',
-        'clkBtnFollowPv' => 'int',
         'clkAdElementPv' => 'int',
-        'clkReadCommentPv' => 'int',
         'channelsPraisePlaPv' => 'int',
-        'expSpreadPv' => 'int',
         'channelsLiveOutEnterPlaUv' => 'int',
         'clkRedpocketBtnGetPv' => 'int',
         'clkRedpocketBtnSharePv' => 'int',
@@ -837,8 +730,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkMiddleSectionPv' => 'int',
         'clkMiddleGridviewPv' => 'int',
         'clkBreakPv' => 'int',
-        'clkStoryBtnPv' => 'int',
-        'clkStoryBtnUv' => 'int',
         'clkRedpocketShakePv' => 'int',
         'clkRedpocketShakeUv' => 'int',
         'clkRelatedVideoPv' => 'int',
@@ -847,22 +738,13 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkLeftGridInfoPv' => 'int',
         'clkLeftGridMiddlePv' => 'int',
         'clkRightGridPv' => 'int',
-        'cheerBannerExpPv' => 'int',
-        'cheerStatusSetSuccPv' => 'int',
-        'cheerStatusSetSuccUv' => 'int',
-        'cheerStatusClkPv' => 'int',
-        'cheerStatusClkUv' => 'int',
         'adMonetizationCost' => 'double',
         'adMonetizationRoi' => 'double',
         'adMonetizationActive3dPv' => 'int',
         'adMonetizationDedupActive3dPv' => 'int',
         'adMonetizationActive7dPv' => 'int',
         'adMonetizationDedupActive7dPv' => 'int',
-        'postBarragePv' => 'int',
-        'postBarrageUv' => 'int',
         'clkRedpocketBtnSubscribePv' => 'int',
-        'inviteFriendsToWatchFireworksPv' => 'int',
-        'clkBlessingCardPv' => 'int',
         'clkShortcutMenusPv' => 'int',
         'channelsDetailBtnPv' => 'int',
         'zoneHeaderLiveClickCnt' => 'int',
@@ -883,7 +765,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'matchType' => 'int',
         'device' => 'int',
         'expAvgRank' => 'double',
-        'expOverallTopPosition' => 'int',
         'expOverallTopPv' => 'int',
         'clkTopPv' => 'int',
         'projectId' => 'int',
@@ -936,11 +817,8 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'previewDeepConversionsCount' => 'int64',
         'videoOuterPlayCount' => 'int64',
         'videoOuterPlayUserCount' => 'int64',
-        'videoTimeTotalCount' => 'double',
-        'videoOuterPlayTotalTimeCount' => 'double',
         'avgUserPlayCount' => 'double',
         'videoOuterPlayTimeCount' => 'double',
-        'videoOuterPlayTimeAvg' => 'double',
         'videoOuterPlayTimeAvgRate' => 'double',
         'videoOuterPlayRate' => 'double',
         'videoOuterPlayCost' => 'int64',
@@ -967,7 +845,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'noInterestCount' => 'int64',
         'liveStreamCrtClickCnt' => 'int64',
         'clickImageCount' => 'int64',
-        'clickNickCount' => 'int64',
         'clickHeadCount' => 'int64',
         'clickDetailCount' => 'int64',
         'clickPoiCount' => 'int64',
@@ -1019,8 +896,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'guideToFollowPageViewers' => 'int64',
         'guideToFollowPageInteractionAmount' => 'int64',
         'guideToFollowPageInteractionUsers' => 'int64',
-        'specialPageExpUv' => 'int64',
-        'specialPageExpCost' => 'int64',
         'landingPageViewCount' => 'int64',
         'landingPageEffectiveRate' => 'double',
         'landingPageUserCount' => 'int64',
@@ -1213,18 +1088,12 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'retentionCount' => 'int64',
         'retentionCost' => 'int64',
         'retentionRate' => 'double',
-        'appRetentionD2Pv' => 'int64',
-        'appRetentionD3Pv' => 'int64',
         'appRetentionD3Uv' => 'int64',
         'appRetentionD3Cost' => 'int64',
         'appRetentionD3Rate' => 'double',
-        'appRetentionD4Pv' => 'int64',
-        'appRetentionD5Pv' => 'int64',
         'appRetentionD5Uv' => 'int64',
         'appRetentionD5Cost' => 'int64',
         'appRetentionD5Rate' => 'double',
-        'appRetentionD6Pv' => 'int64',
-        'appRetentionD7Pv' => 'int64',
         'appRetentionD7Uv' => 'int64',
         'appRetentionD7Cost' => 'int64',
         'appRetentionD7Rate' => 'double',
@@ -1519,45 +1388,23 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'liveStreamCommodityBubbleClkPv' => 'int64',
         'liveStreamCommodityShopBagClkPv' => 'int64',
         'liveStreamCommodityShopListExpPv' => 'int64',
-        'channelsLiveExitPlaUv' => 'int64',
         'liveStreamAvgTime' => 'double',
-        'followCount' => 'int64',
-        'followCost' => 'int64',
         'fromFollowUv' => 'int64',
         'fromFollowCost' => 'int64',
         'fromFollowByDisplayUv' => 'int64',
         'fromFollowByDisplayCost' => 'int64',
         'fromFollowByClickUv' => 'int64',
         'fromFollowByClickCost' => 'int64',
-        'bizFollowCount' => 'int64',
         'bizFollowRate' => 'double',
         'bizFollowCost' => 'int64',
         'bizFollowUv' => 'int64',
         'bizConsultCount' => 'int64',
         'bizReadingCount' => 'int64',
-        'breakFrameExpPv' => 'int64',
-        'breakFrameExpUv' => 'int64',
         'breakFramePlayPv' => 'int64',
         'breakFramePlayUv' => 'int64',
-        'breakFramePlayDuration' => 'double',
         'avgBreakFramePlayPerUser' => 'double',
-        'breakFrameIpExpPv' => 'int64',
-        'breakFrameIpExpUv' => 'int64',
         'breakFrameIpClkPv' => 'int64',
         'breakFrameIpClkUv' => 'int64',
-        'overallBrandExposure' => 'int64',
-        'expHasCostPv' => 'int64',
-        'freeExposurePv' => 'int64',
-        'brandShareExposurePv' => 'int64',
-        'brandShareExposureUv' => 'int64',
-        'cvsShareExpToFriendPv' => 'int64',
-        'cvsShareExpToFeedPv' => 'int64',
-        'cvsShareExpToFriendUv' => 'int64',
-        'cvsShareExpToFeedUv' => 'int64',
-        'realCpmCost' => 'int64',
-        'expRootUv' => 'int64',
-        'expFirstSpreadUv' => 'int64',
-        'expSecondSpreadUv' => 'int64',
         'clkMaterialUv' => 'int64',
         'clkMaterialRate' => 'double',
         'clkNickPv' => 'int64',
@@ -1566,101 +1413,28 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkActionBtnPv' => 'int64',
         'clkActionBtnUv' => 'int64',
         'clkTagCommentPv' => 'int64',
-        'clkTagCommentUv' => 'int64',
         'clkTagContentPv' => 'int64',
-        'clkTagContentUv' => 'int64',
         'clkPoiPv' => 'int64',
-        'clkPoiUv' => 'int64',
-        'clkChoiceLeftPv' => 'int64',
-        'clkChoiceLeftUv' => 'int64',
-        'clkChoiceRightPv' => 'int64',
-        'clkChoiceRightUv' => 'int64',
-        'clkCardTagPv' => 'int64',
-        'clkCardTagUv' => 'int64',
         'clkDetailUv' => 'int64',
         'clkDetailRate' => 'double',
         'clkSliderCardBtnPv' => 'int64',
-        'clkSliderCardBtnUv' => 'int64',
         'cvsBubbleShareClkPv' => 'int64',
         'cvsBubbleShareClkUv' => 'int64',
         'lpStarPageExpPv' => 'int64',
-        'lpStarPageExpUv' => 'int64',
-        'lpStarPageClkPv' => 'int64',
-        'lpStarPageClkUv' => 'int64',
-        'lpStarPageClkRate' => 'double',
         'finderTopicSliderPv' => 'int64',
-        'finderTopicSliderUv' => 'int64',
-        'finderTopicSliderAutoPv' => 'int64',
-        'finderTopicSliderAutoUv' => 'int64',
         'finderTopicSliderPerUser' => 'double',
         'finderTopicSliderManualPv' => 'int64',
-        'finderTopicSliderManualUv' => 'int64',
-        'fullsrcSlidePv' => 'int64',
-        'galleryCardSliderPv' => 'int64',
-        'galleryCardSliderUv' => 'int64',
-        'shareUv' => 'int64',
         'shareFriendPv' => 'int64',
         'shareFeedPv' => 'int64',
         'praiseUv' => 'int64',
         'commentUv' => 'int64',
-        'praiseCommentPv' => 'int64',
-        'praiseCommentRate' => 'double',
-        'praiseCommentSharePv' => 'int64',
-        'praiseCommentShareUv' => 'int64',
-        'commentAtFriendPv' => 'int64',
-        'commentAtFriendUv' => 'int64',
-        'commentReplyFristPv' => 'int64',
-        'commentReplyFristUv' => 'int64',
-        'cvsFavPv' => 'int64',
         'engagePv' => 'int64',
-        'engageUv' => 'int64',
-        'overallEngageUvRate' => 'double',
-        'overallEngagePvRate' => 'double',
         'interactSuccPv' => 'int64',
-        'interactSuccUv' => 'int64',
-        'interactRootUv' => 'int64',
-        'interactFirstSpreadUv' => 'int64',
-        'interactSecondSpreadUv' => 'int64',
-        'interactRootRate' => 'double',
-        'interactFirstSpreadRate' => 'double',
-        'interactSecondSpreadRate' => 'double',
-        'finderTopicSliderCardExpPv' => 'int64',
-        'finderTopicSliderCardClkPv' => 'int64',
-        'finderTopicSliderVideoPlayPv' => 'int64',
-        'finderTopicSliderVideoPlayUv' => 'int64',
-        'stayDurationAll' => 'double',
         'durationPerUser' => 'double',
-        'shortVideoAvgStayTime' => 'double',
-        'stayDurationOuter' => 'double',
         'durationOuterPerUser' => 'double',
-        'shortVideoAvgViewStayTime' => 'double',
-        'stayDurationCvs' => 'double',
         'durationKeyPagePerUser' => 'double',
-        'stayDurationAll02Uv' => 'int64',
-        'stayDurationAll02Rate' => 'double',
-        'stayDurationAll34Uv' => 'int64',
-        'stayDurationAll34Rate' => 'double',
-        'stayDurationAll510Uv' => 'int64',
-        'stayDurationAll510Rate' => 'double',
-        'stayDurationAllAbove10Uv' => 'int64',
-        'stayDurationAllAbove10Rate' => 'double',
-        'stayDurationAllAbove5Uv' => 'int64',
-        'stayDurationAllAbove5Rate' => 'double',
-        'stayDurationCvs02Uv' => 'int64',
-        'stayDurationCvs02Rate' => 'double',
-        'stayDurationCvs39Uv' => 'int64',
-        'stayDurationCvs39Rate' => 'double',
-        'stayDurationCvs1029Uv' => 'int64',
-        'stayDurationCvs1029Rate' => 'double',
-        'stayDurationCvsAbove30Uv' => 'int64',
-        'stayDurationCvsAbove30Rate' => 'double',
-        'stayDurationCvsAbove10Uv' => 'int64',
-        'stayDurationCvsAbove10Rate' => 'double',
-        'clkBtnFollowPv' => 'int64',
         'clkAdElementPv' => 'int64',
-        'clkReadCommentPv' => 'int64',
         'channelsPraisePlaPv' => 'int64',
-        'expSpreadPv' => 'int64',
         'channelsLiveOutEnterPlaUv' => 'int64',
         'clkRedpocketBtnGetPv' => 'int64',
         'clkRedpocketBtnSharePv' => 'int64',
@@ -1675,8 +1449,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkMiddleSectionPv' => 'int64',
         'clkMiddleGridviewPv' => 'int64',
         'clkBreakPv' => 'int64',
-        'clkStoryBtnPv' => 'int64',
-        'clkStoryBtnUv' => 'int64',
         'clkRedpocketShakePv' => 'int64',
         'clkRedpocketShakeUv' => 'int64',
         'clkRelatedVideoPv' => 'int64',
@@ -1685,22 +1457,13 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkLeftGridInfoPv' => 'int64',
         'clkLeftGridMiddlePv' => 'int64',
         'clkRightGridPv' => 'int64',
-        'cheerBannerExpPv' => 'int64',
-        'cheerStatusSetSuccPv' => 'int64',
-        'cheerStatusSetSuccUv' => 'int64',
-        'cheerStatusClkPv' => 'int64',
-        'cheerStatusClkUv' => 'int64',
         'adMonetizationCost' => 'double',
         'adMonetizationRoi' => 'double',
         'adMonetizationActive3dPv' => 'int64',
         'adMonetizationDedupActive3dPv' => 'int64',
         'adMonetizationActive7dPv' => 'int64',
         'adMonetizationDedupActive7dPv' => 'int64',
-        'postBarragePv' => 'int64',
-        'postBarrageUv' => 'int64',
         'clkRedpocketBtnSubscribePv' => 'int64',
-        'inviteFriendsToWatchFireworksPv' => 'int64',
-        'clkBlessingCardPv' => 'int64',
         'clkShortcutMenusPv' => 'int64',
         'channelsDetailBtnPv' => 'int64',
         'zoneHeaderLiveClickCnt' => 'int64',
@@ -1721,7 +1484,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'matchType' => 'int64',
         'device' => 'int64',
         'expAvgRank' => 'double',
-        'expOverallTopPosition' => 'int64',
         'expOverallTopPv' => 'int64',
         'clkTopPv' => 'int64',
         'projectId' => 'int64',
@@ -1795,11 +1557,8 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'previewDeepConversionsCount' => 'preview_deep_conversions_count',
         'videoOuterPlayCount' => 'video_outer_play_count',
         'videoOuterPlayUserCount' => 'video_outer_play_user_count',
-        'videoTimeTotalCount' => 'video_time_total_count',
-        'videoOuterPlayTotalTimeCount' => 'video_outer_play_total_time_count',
         'avgUserPlayCount' => 'avg_user_play_count',
         'videoOuterPlayTimeCount' => 'video_outer_play_time_count',
-        'videoOuterPlayTimeAvg' => 'video_outer_play_time_avg',
         'videoOuterPlayTimeAvgRate' => 'video_outer_play_time_avg_rate',
         'videoOuterPlayRate' => 'video_outer_play_rate',
         'videoOuterPlayCost' => 'video_outer_play_cost',
@@ -1826,7 +1585,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'noInterestCount' => 'no_interest_count',
         'liveStreamCrtClickCnt' => 'live_stream_crt_click_cnt',
         'clickImageCount' => 'click_image_count',
-        'clickNickCount' => 'click_nick_count',
         'clickHeadCount' => 'click_head_count',
         'clickDetailCount' => 'click_detail_count',
         'clickPoiCount' => 'click_poi_count',
@@ -1878,8 +1636,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'guideToFollowPageViewers' => 'guide_to_follow_page_viewers',
         'guideToFollowPageInteractionAmount' => 'guide_to_follow_page_interaction_amount',
         'guideToFollowPageInteractionUsers' => 'guide_to_follow_page_interaction_users',
-        'specialPageExpUv' => 'special_page_exp_uv',
-        'specialPageExpCost' => 'special_page_exp_cost',
         'landingPageViewCount' => 'landing_page_view_count',
         'landingPageEffectiveRate' => 'landing_page_effective_rate',
         'landingPageUserCount' => 'landing_page_user_count',
@@ -2072,18 +1828,12 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'retentionCount' => 'retention_count',
         'retentionCost' => 'retention_cost',
         'retentionRate' => 'retention_rate',
-        'appRetentionD2Pv' => 'app_retention_d2_pv',
-        'appRetentionD3Pv' => 'app_retention_d3_pv',
         'appRetentionD3Uv' => 'app_retention_d3_uv',
         'appRetentionD3Cost' => 'app_retention_d3_cost',
         'appRetentionD3Rate' => 'app_retention_d3_rate',
-        'appRetentionD4Pv' => 'app_retention_d4_pv',
-        'appRetentionD5Pv' => 'app_retention_d5_pv',
         'appRetentionD5Uv' => 'app_retention_d5_uv',
         'appRetentionD5Cost' => 'app_retention_d5_cost',
         'appRetentionD5Rate' => 'app_retention_d5_rate',
-        'appRetentionD6Pv' => 'app_retention_d6_pv',
-        'appRetentionD7Pv' => 'app_retention_d7_pv',
         'appRetentionD7Uv' => 'app_retention_d7_uv',
         'appRetentionD7Cost' => 'app_retention_d7_cost',
         'appRetentionD7Rate' => 'app_retention_d7_rate',
@@ -2378,45 +2128,23 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'liveStreamCommodityBubbleClkPv' => 'live_stream_commodity_bubble_clk_pv',
         'liveStreamCommodityShopBagClkPv' => 'live_stream_commodity_shop_bag_clk_pv',
         'liveStreamCommodityShopListExpPv' => 'live_stream_commodity_shop_list_exp_pv',
-        'channelsLiveExitPlaUv' => 'channels_live_exit_pla_uv',
         'liveStreamAvgTime' => 'live_stream_avg_time',
-        'followCount' => 'follow_count',
-        'followCost' => 'follow_cost',
         'fromFollowUv' => 'from_follow_uv',
         'fromFollowCost' => 'from_follow_cost',
         'fromFollowByDisplayUv' => 'from_follow_by_display_uv',
         'fromFollowByDisplayCost' => 'from_follow_by_display_cost',
         'fromFollowByClickUv' => 'from_follow_by_click_uv',
         'fromFollowByClickCost' => 'from_follow_by_click_cost',
-        'bizFollowCount' => 'biz_follow_count',
         'bizFollowRate' => 'biz_follow_rate',
         'bizFollowCost' => 'biz_follow_cost',
         'bizFollowUv' => 'biz_follow_uv',
         'bizConsultCount' => 'biz_consult_count',
         'bizReadingCount' => 'biz_reading_count',
-        'breakFrameExpPv' => 'break_frame_exp_pv',
-        'breakFrameExpUv' => 'break_frame_exp_uv',
         'breakFramePlayPv' => 'break_frame_play_pv',
         'breakFramePlayUv' => 'break_frame_play_uv',
-        'breakFramePlayDuration' => 'break_frame_play_duration',
         'avgBreakFramePlayPerUser' => 'avg_break_frame_play_per_user',
-        'breakFrameIpExpPv' => 'break_frame_ip_exp_pv',
-        'breakFrameIpExpUv' => 'break_frame_ip_exp_uv',
         'breakFrameIpClkPv' => 'break_frame_ip_clk_pv',
         'breakFrameIpClkUv' => 'break_frame_ip_clk_uv',
-        'overallBrandExposure' => 'overall_brand_exposure',
-        'expHasCostPv' => 'exp_has_cost_pv',
-        'freeExposurePv' => 'free_exposure_pv',
-        'brandShareExposurePv' => 'brand_share_exposure_pv',
-        'brandShareExposureUv' => 'brand_share_exposure_uv',
-        'cvsShareExpToFriendPv' => 'cvs_share_exp_to_friend_pv',
-        'cvsShareExpToFeedPv' => 'cvs_share_exp_to_feed_pv',
-        'cvsShareExpToFriendUv' => 'cvs_share_exp_to_friend_uv',
-        'cvsShareExpToFeedUv' => 'cvs_share_exp_to_feed_uv',
-        'realCpmCost' => 'real_cpm_cost',
-        'expRootUv' => 'exp_root_uv',
-        'expFirstSpreadUv' => 'exp_first_spread_uv',
-        'expSecondSpreadUv' => 'exp_second_spread_uv',
         'clkMaterialUv' => 'clk_material_uv',
         'clkMaterialRate' => 'clk_material_rate',
         'clkNickPv' => 'clk_nick_pv',
@@ -2425,101 +2153,28 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkActionBtnPv' => 'clk_action_btn_pv',
         'clkActionBtnUv' => 'clk_action_btn_uv',
         'clkTagCommentPv' => 'clk_tag_comment_pv',
-        'clkTagCommentUv' => 'clk_tag_comment_uv',
         'clkTagContentPv' => 'clk_tag_content_pv',
-        'clkTagContentUv' => 'clk_tag_content_uv',
         'clkPoiPv' => 'clk_poi_pv',
-        'clkPoiUv' => 'clk_poi_uv',
-        'clkChoiceLeftPv' => 'clk_choice_left_pv',
-        'clkChoiceLeftUv' => 'clk_choice_left_uv',
-        'clkChoiceRightPv' => 'clk_choice_right_pv',
-        'clkChoiceRightUv' => 'clk_choice_right_uv',
-        'clkCardTagPv' => 'clk_card_tag_pv',
-        'clkCardTagUv' => 'clk_card_tag_uv',
         'clkDetailUv' => 'clk_detail_uv',
         'clkDetailRate' => 'clk_detail_rate',
         'clkSliderCardBtnPv' => 'clk_slider_card_btn_pv',
-        'clkSliderCardBtnUv' => 'clk_slider_card_btn_uv',
         'cvsBubbleShareClkPv' => 'cvs_bubble_share_clk_pv',
         'cvsBubbleShareClkUv' => 'cvs_bubble_share_clk_uv',
         'lpStarPageExpPv' => 'lp_star_page_exp_pv',
-        'lpStarPageExpUv' => 'lp_star_page_exp_uv',
-        'lpStarPageClkPv' => 'lp_star_page_clk_pv',
-        'lpStarPageClkUv' => 'lp_star_page_clk_uv',
-        'lpStarPageClkRate' => 'lp_star_page_clk_rate',
         'finderTopicSliderPv' => 'finder_topic_slider_pv',
-        'finderTopicSliderUv' => 'finder_topic_slider_uv',
-        'finderTopicSliderAutoPv' => 'finder_topic_slider_auto_pv',
-        'finderTopicSliderAutoUv' => 'finder_topic_slider_auto_uv',
         'finderTopicSliderPerUser' => 'finder_topic_slider_per_user',
         'finderTopicSliderManualPv' => 'finder_topic_slider_manual_pv',
-        'finderTopicSliderManualUv' => 'finder_topic_slider_manual_uv',
-        'fullsrcSlidePv' => 'fullsrc_slide_pv',
-        'galleryCardSliderPv' => 'gallery_card_slider_pv',
-        'galleryCardSliderUv' => 'gallery_card_slider_uv',
-        'shareUv' => 'share_uv',
         'shareFriendPv' => 'share_friend_pv',
         'shareFeedPv' => 'share_feed_pv',
         'praiseUv' => 'praise_uv',
         'commentUv' => 'comment_uv',
-        'praiseCommentPv' => 'praise_comment_pv',
-        'praiseCommentRate' => 'praise_comment_rate',
-        'praiseCommentSharePv' => 'praise_comment_share_pv',
-        'praiseCommentShareUv' => 'praise_comment_share_uv',
-        'commentAtFriendPv' => 'comment_at_friend_pv',
-        'commentAtFriendUv' => 'comment_at_friend_uv',
-        'commentReplyFristPv' => 'comment_reply_frist_pv',
-        'commentReplyFristUv' => 'comment_reply_frist_uv',
-        'cvsFavPv' => 'cvs_fav_pv',
         'engagePv' => 'engage_pv',
-        'engageUv' => 'engage_uv',
-        'overallEngageUvRate' => 'overall_engage_uv_rate',
-        'overallEngagePvRate' => 'overall_engage_pv_rate',
         'interactSuccPv' => 'interact_succ_pv',
-        'interactSuccUv' => 'interact_succ_uv',
-        'interactRootUv' => 'interact_root_uv',
-        'interactFirstSpreadUv' => 'interact_first_spread_uv',
-        'interactSecondSpreadUv' => 'interact_second_spread_uv',
-        'interactRootRate' => 'interact_root_rate',
-        'interactFirstSpreadRate' => 'interact_first_spread_rate',
-        'interactSecondSpreadRate' => 'interact_second_spread_rate',
-        'finderTopicSliderCardExpPv' => 'finder_topic_slider_card_exp_pv',
-        'finderTopicSliderCardClkPv' => 'finder_topic_slider_card_clk_pv',
-        'finderTopicSliderVideoPlayPv' => 'finder_topic_slider_video_play_pv',
-        'finderTopicSliderVideoPlayUv' => 'finder_topic_slider_video_play_uv',
-        'stayDurationAll' => 'stay_duration_all',
         'durationPerUser' => 'duration_per_user',
-        'shortVideoAvgStayTime' => 'short_video_avg_stay_time',
-        'stayDurationOuter' => 'stay_duration_outer',
         'durationOuterPerUser' => 'duration_outer_per_user',
-        'shortVideoAvgViewStayTime' => 'short_video_avg_view_stay_time',
-        'stayDurationCvs' => 'stay_duration_cvs',
         'durationKeyPagePerUser' => 'duration_key_page_per_user',
-        'stayDurationAll02Uv' => 'stay_duration_all_0_2_uv',
-        'stayDurationAll02Rate' => 'stay_duration_all_0_2_rate',
-        'stayDurationAll34Uv' => 'stay_duration_all_3_4_uv',
-        'stayDurationAll34Rate' => 'stay_duration_all_3_4_rate',
-        'stayDurationAll510Uv' => 'stay_duration_all_5_10_uv',
-        'stayDurationAll510Rate' => 'stay_duration_all_5_10_rate',
-        'stayDurationAllAbove10Uv' => 'stay_duration_all_above_10_uv',
-        'stayDurationAllAbove10Rate' => 'stay_duration_all_above_10_rate',
-        'stayDurationAllAbove5Uv' => 'stay_duration_all_above_5_uv',
-        'stayDurationAllAbove5Rate' => 'stay_duration_all_above_5_rate',
-        'stayDurationCvs02Uv' => 'stay_duration_cvs_0_2_uv',
-        'stayDurationCvs02Rate' => 'stay_duration_cvs_0_2_rate',
-        'stayDurationCvs39Uv' => 'stay_duration_cvs_3_9_uv',
-        'stayDurationCvs39Rate' => 'stay_duration_cvs_3_9_rate',
-        'stayDurationCvs1029Uv' => 'stay_duration_cvs_10_29_uv',
-        'stayDurationCvs1029Rate' => 'stay_duration_cvs_10_29_rate',
-        'stayDurationCvsAbove30Uv' => 'stay_duration_cvs_above_30_uv',
-        'stayDurationCvsAbove30Rate' => 'stay_duration_cvs_above_30_rate',
-        'stayDurationCvsAbove10Uv' => 'stay_duration_cvs_above_10_uv',
-        'stayDurationCvsAbove10Rate' => 'stay_duration_cvs_above_10_rate',
-        'clkBtnFollowPv' => 'clk_btn_follow_pv',
         'clkAdElementPv' => 'clk_ad_element_pv',
-        'clkReadCommentPv' => 'clk_read_comment_pv',
         'channelsPraisePlaPv' => 'channels_praise_pla_pv',
-        'expSpreadPv' => 'exp_spread_pv',
         'channelsLiveOutEnterPlaUv' => 'channels_live_out_enter_pla_uv',
         'clkRedpocketBtnGetPv' => 'clk_redpocket_btn_get_pv',
         'clkRedpocketBtnSharePv' => 'clk_redpocket_btn_share_pv',
@@ -2534,8 +2189,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkMiddleSectionPv' => 'clk_middle_section_pv',
         'clkMiddleGridviewPv' => 'clk_middle_gridview_pv',
         'clkBreakPv' => 'clk_break_pv',
-        'clkStoryBtnPv' => 'clk_story_btn_pv',
-        'clkStoryBtnUv' => 'clk_story_btn_uv',
         'clkRedpocketShakePv' => 'clk_redpocket_shake_pv',
         'clkRedpocketShakeUv' => 'clk_redpocket_shake_uv',
         'clkRelatedVideoPv' => 'clk_related_video_pv',
@@ -2544,22 +2197,13 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkLeftGridInfoPv' => 'clk_left_grid_info_pv',
         'clkLeftGridMiddlePv' => 'clk_left_grid_middle_pv',
         'clkRightGridPv' => 'clk_right_grid_pv',
-        'cheerBannerExpPv' => 'cheer_banner_exp_pv',
-        'cheerStatusSetSuccPv' => 'cheer_status_set_succ_pv',
-        'cheerStatusSetSuccUv' => 'cheer_status_set_succ_uv',
-        'cheerStatusClkPv' => 'cheer_status_clk_pv',
-        'cheerStatusClkUv' => 'cheer_status_clk_uv',
         'adMonetizationCost' => 'ad_monetization_cost',
         'adMonetizationRoi' => 'ad_monetization_roi',
         'adMonetizationActive3dPv' => 'ad_monetization_active_3d_pv',
         'adMonetizationDedupActive3dPv' => 'ad_monetization_dedup_active_3d_pv',
         'adMonetizationActive7dPv' => 'ad_monetization_active_7d_pv',
         'adMonetizationDedupActive7dPv' => 'ad_monetization_dedup_active_7d_pv',
-        'postBarragePv' => 'post_barrage_pv',
-        'postBarrageUv' => 'post_barrage_uv',
         'clkRedpocketBtnSubscribePv' => 'clk_redpocket_btn_subscribe_pv',
-        'inviteFriendsToWatchFireworksPv' => 'invite_friends_to_watch_fireworks_pv',
-        'clkBlessingCardPv' => 'clk_blessing_card_pv',
         'clkShortcutMenusPv' => 'clk_shortcut_menus_pv',
         'channelsDetailBtnPv' => 'channels_detail_btn_pv',
         'zoneHeaderLiveClickCnt' => 'zone_header_live_click_cnt',
@@ -2580,7 +2224,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'matchType' => 'match_type',
         'device' => 'device',
         'expAvgRank' => 'exp_avg_rank',
-        'expOverallTopPosition' => 'exp_overall_top_position',
         'expOverallTopPv' => 'exp_overall_top_pv',
         'clkTopPv' => 'clk_top_pv',
         'projectId' => 'project_id',
@@ -2633,11 +2276,8 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'previewDeepConversionsCount' => 'setPreviewDeepConversionsCount',
         'videoOuterPlayCount' => 'setVideoOuterPlayCount',
         'videoOuterPlayUserCount' => 'setVideoOuterPlayUserCount',
-        'videoTimeTotalCount' => 'setVideoTimeTotalCount',
-        'videoOuterPlayTotalTimeCount' => 'setVideoOuterPlayTotalTimeCount',
         'avgUserPlayCount' => 'setAvgUserPlayCount',
         'videoOuterPlayTimeCount' => 'setVideoOuterPlayTimeCount',
-        'videoOuterPlayTimeAvg' => 'setVideoOuterPlayTimeAvg',
         'videoOuterPlayTimeAvgRate' => 'setVideoOuterPlayTimeAvgRate',
         'videoOuterPlayRate' => 'setVideoOuterPlayRate',
         'videoOuterPlayCost' => 'setVideoOuterPlayCost',
@@ -2664,7 +2304,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'noInterestCount' => 'setNoInterestCount',
         'liveStreamCrtClickCnt' => 'setLiveStreamCrtClickCnt',
         'clickImageCount' => 'setClickImageCount',
-        'clickNickCount' => 'setClickNickCount',
         'clickHeadCount' => 'setClickHeadCount',
         'clickDetailCount' => 'setClickDetailCount',
         'clickPoiCount' => 'setClickPoiCount',
@@ -2716,8 +2355,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'guideToFollowPageViewers' => 'setGuideToFollowPageViewers',
         'guideToFollowPageInteractionAmount' => 'setGuideToFollowPageInteractionAmount',
         'guideToFollowPageInteractionUsers' => 'setGuideToFollowPageInteractionUsers',
-        'specialPageExpUv' => 'setSpecialPageExpUv',
-        'specialPageExpCost' => 'setSpecialPageExpCost',
         'landingPageViewCount' => 'setLandingPageViewCount',
         'landingPageEffectiveRate' => 'setLandingPageEffectiveRate',
         'landingPageUserCount' => 'setLandingPageUserCount',
@@ -2910,18 +2547,12 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'retentionCount' => 'setRetentionCount',
         'retentionCost' => 'setRetentionCost',
         'retentionRate' => 'setRetentionRate',
-        'appRetentionD2Pv' => 'setAppRetentionD2Pv',
-        'appRetentionD3Pv' => 'setAppRetentionD3Pv',
         'appRetentionD3Uv' => 'setAppRetentionD3Uv',
         'appRetentionD3Cost' => 'setAppRetentionD3Cost',
         'appRetentionD3Rate' => 'setAppRetentionD3Rate',
-        'appRetentionD4Pv' => 'setAppRetentionD4Pv',
-        'appRetentionD5Pv' => 'setAppRetentionD5Pv',
         'appRetentionD5Uv' => 'setAppRetentionD5Uv',
         'appRetentionD5Cost' => 'setAppRetentionD5Cost',
         'appRetentionD5Rate' => 'setAppRetentionD5Rate',
-        'appRetentionD6Pv' => 'setAppRetentionD6Pv',
-        'appRetentionD7Pv' => 'setAppRetentionD7Pv',
         'appRetentionD7Uv' => 'setAppRetentionD7Uv',
         'appRetentionD7Cost' => 'setAppRetentionD7Cost',
         'appRetentionD7Rate' => 'setAppRetentionD7Rate',
@@ -3216,45 +2847,23 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'liveStreamCommodityBubbleClkPv' => 'setLiveStreamCommodityBubbleClkPv',
         'liveStreamCommodityShopBagClkPv' => 'setLiveStreamCommodityShopBagClkPv',
         'liveStreamCommodityShopListExpPv' => 'setLiveStreamCommodityShopListExpPv',
-        'channelsLiveExitPlaUv' => 'setChannelsLiveExitPlaUv',
         'liveStreamAvgTime' => 'setLiveStreamAvgTime',
-        'followCount' => 'setFollowCount',
-        'followCost' => 'setFollowCost',
         'fromFollowUv' => 'setFromFollowUv',
         'fromFollowCost' => 'setFromFollowCost',
         'fromFollowByDisplayUv' => 'setFromFollowByDisplayUv',
         'fromFollowByDisplayCost' => 'setFromFollowByDisplayCost',
         'fromFollowByClickUv' => 'setFromFollowByClickUv',
         'fromFollowByClickCost' => 'setFromFollowByClickCost',
-        'bizFollowCount' => 'setBizFollowCount',
         'bizFollowRate' => 'setBizFollowRate',
         'bizFollowCost' => 'setBizFollowCost',
         'bizFollowUv' => 'setBizFollowUv',
         'bizConsultCount' => 'setBizConsultCount',
         'bizReadingCount' => 'setBizReadingCount',
-        'breakFrameExpPv' => 'setBreakFrameExpPv',
-        'breakFrameExpUv' => 'setBreakFrameExpUv',
         'breakFramePlayPv' => 'setBreakFramePlayPv',
         'breakFramePlayUv' => 'setBreakFramePlayUv',
-        'breakFramePlayDuration' => 'setBreakFramePlayDuration',
         'avgBreakFramePlayPerUser' => 'setAvgBreakFramePlayPerUser',
-        'breakFrameIpExpPv' => 'setBreakFrameIpExpPv',
-        'breakFrameIpExpUv' => 'setBreakFrameIpExpUv',
         'breakFrameIpClkPv' => 'setBreakFrameIpClkPv',
         'breakFrameIpClkUv' => 'setBreakFrameIpClkUv',
-        'overallBrandExposure' => 'setOverallBrandExposure',
-        'expHasCostPv' => 'setExpHasCostPv',
-        'freeExposurePv' => 'setFreeExposurePv',
-        'brandShareExposurePv' => 'setBrandShareExposurePv',
-        'brandShareExposureUv' => 'setBrandShareExposureUv',
-        'cvsShareExpToFriendPv' => 'setCvsShareExpToFriendPv',
-        'cvsShareExpToFeedPv' => 'setCvsShareExpToFeedPv',
-        'cvsShareExpToFriendUv' => 'setCvsShareExpToFriendUv',
-        'cvsShareExpToFeedUv' => 'setCvsShareExpToFeedUv',
-        'realCpmCost' => 'setRealCpmCost',
-        'expRootUv' => 'setExpRootUv',
-        'expFirstSpreadUv' => 'setExpFirstSpreadUv',
-        'expSecondSpreadUv' => 'setExpSecondSpreadUv',
         'clkMaterialUv' => 'setClkMaterialUv',
         'clkMaterialRate' => 'setClkMaterialRate',
         'clkNickPv' => 'setClkNickPv',
@@ -3263,101 +2872,28 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkActionBtnPv' => 'setClkActionBtnPv',
         'clkActionBtnUv' => 'setClkActionBtnUv',
         'clkTagCommentPv' => 'setClkTagCommentPv',
-        'clkTagCommentUv' => 'setClkTagCommentUv',
         'clkTagContentPv' => 'setClkTagContentPv',
-        'clkTagContentUv' => 'setClkTagContentUv',
         'clkPoiPv' => 'setClkPoiPv',
-        'clkPoiUv' => 'setClkPoiUv',
-        'clkChoiceLeftPv' => 'setClkChoiceLeftPv',
-        'clkChoiceLeftUv' => 'setClkChoiceLeftUv',
-        'clkChoiceRightPv' => 'setClkChoiceRightPv',
-        'clkChoiceRightUv' => 'setClkChoiceRightUv',
-        'clkCardTagPv' => 'setClkCardTagPv',
-        'clkCardTagUv' => 'setClkCardTagUv',
         'clkDetailUv' => 'setClkDetailUv',
         'clkDetailRate' => 'setClkDetailRate',
         'clkSliderCardBtnPv' => 'setClkSliderCardBtnPv',
-        'clkSliderCardBtnUv' => 'setClkSliderCardBtnUv',
         'cvsBubbleShareClkPv' => 'setCvsBubbleShareClkPv',
         'cvsBubbleShareClkUv' => 'setCvsBubbleShareClkUv',
         'lpStarPageExpPv' => 'setLpStarPageExpPv',
-        'lpStarPageExpUv' => 'setLpStarPageExpUv',
-        'lpStarPageClkPv' => 'setLpStarPageClkPv',
-        'lpStarPageClkUv' => 'setLpStarPageClkUv',
-        'lpStarPageClkRate' => 'setLpStarPageClkRate',
         'finderTopicSliderPv' => 'setFinderTopicSliderPv',
-        'finderTopicSliderUv' => 'setFinderTopicSliderUv',
-        'finderTopicSliderAutoPv' => 'setFinderTopicSliderAutoPv',
-        'finderTopicSliderAutoUv' => 'setFinderTopicSliderAutoUv',
         'finderTopicSliderPerUser' => 'setFinderTopicSliderPerUser',
         'finderTopicSliderManualPv' => 'setFinderTopicSliderManualPv',
-        'finderTopicSliderManualUv' => 'setFinderTopicSliderManualUv',
-        'fullsrcSlidePv' => 'setFullsrcSlidePv',
-        'galleryCardSliderPv' => 'setGalleryCardSliderPv',
-        'galleryCardSliderUv' => 'setGalleryCardSliderUv',
-        'shareUv' => 'setShareUv',
         'shareFriendPv' => 'setShareFriendPv',
         'shareFeedPv' => 'setShareFeedPv',
         'praiseUv' => 'setPraiseUv',
         'commentUv' => 'setCommentUv',
-        'praiseCommentPv' => 'setPraiseCommentPv',
-        'praiseCommentRate' => 'setPraiseCommentRate',
-        'praiseCommentSharePv' => 'setPraiseCommentSharePv',
-        'praiseCommentShareUv' => 'setPraiseCommentShareUv',
-        'commentAtFriendPv' => 'setCommentAtFriendPv',
-        'commentAtFriendUv' => 'setCommentAtFriendUv',
-        'commentReplyFristPv' => 'setCommentReplyFristPv',
-        'commentReplyFristUv' => 'setCommentReplyFristUv',
-        'cvsFavPv' => 'setCvsFavPv',
         'engagePv' => 'setEngagePv',
-        'engageUv' => 'setEngageUv',
-        'overallEngageUvRate' => 'setOverallEngageUvRate',
-        'overallEngagePvRate' => 'setOverallEngagePvRate',
         'interactSuccPv' => 'setInteractSuccPv',
-        'interactSuccUv' => 'setInteractSuccUv',
-        'interactRootUv' => 'setInteractRootUv',
-        'interactFirstSpreadUv' => 'setInteractFirstSpreadUv',
-        'interactSecondSpreadUv' => 'setInteractSecondSpreadUv',
-        'interactRootRate' => 'setInteractRootRate',
-        'interactFirstSpreadRate' => 'setInteractFirstSpreadRate',
-        'interactSecondSpreadRate' => 'setInteractSecondSpreadRate',
-        'finderTopicSliderCardExpPv' => 'setFinderTopicSliderCardExpPv',
-        'finderTopicSliderCardClkPv' => 'setFinderTopicSliderCardClkPv',
-        'finderTopicSliderVideoPlayPv' => 'setFinderTopicSliderVideoPlayPv',
-        'finderTopicSliderVideoPlayUv' => 'setFinderTopicSliderVideoPlayUv',
-        'stayDurationAll' => 'setStayDurationAll',
         'durationPerUser' => 'setDurationPerUser',
-        'shortVideoAvgStayTime' => 'setShortVideoAvgStayTime',
-        'stayDurationOuter' => 'setStayDurationOuter',
         'durationOuterPerUser' => 'setDurationOuterPerUser',
-        'shortVideoAvgViewStayTime' => 'setShortVideoAvgViewStayTime',
-        'stayDurationCvs' => 'setStayDurationCvs',
         'durationKeyPagePerUser' => 'setDurationKeyPagePerUser',
-        'stayDurationAll02Uv' => 'setStayDurationAll02Uv',
-        'stayDurationAll02Rate' => 'setStayDurationAll02Rate',
-        'stayDurationAll34Uv' => 'setStayDurationAll34Uv',
-        'stayDurationAll34Rate' => 'setStayDurationAll34Rate',
-        'stayDurationAll510Uv' => 'setStayDurationAll510Uv',
-        'stayDurationAll510Rate' => 'setStayDurationAll510Rate',
-        'stayDurationAllAbove10Uv' => 'setStayDurationAllAbove10Uv',
-        'stayDurationAllAbove10Rate' => 'setStayDurationAllAbove10Rate',
-        'stayDurationAllAbove5Uv' => 'setStayDurationAllAbove5Uv',
-        'stayDurationAllAbove5Rate' => 'setStayDurationAllAbove5Rate',
-        'stayDurationCvs02Uv' => 'setStayDurationCvs02Uv',
-        'stayDurationCvs02Rate' => 'setStayDurationCvs02Rate',
-        'stayDurationCvs39Uv' => 'setStayDurationCvs39Uv',
-        'stayDurationCvs39Rate' => 'setStayDurationCvs39Rate',
-        'stayDurationCvs1029Uv' => 'setStayDurationCvs1029Uv',
-        'stayDurationCvs1029Rate' => 'setStayDurationCvs1029Rate',
-        'stayDurationCvsAbove30Uv' => 'setStayDurationCvsAbove30Uv',
-        'stayDurationCvsAbove30Rate' => 'setStayDurationCvsAbove30Rate',
-        'stayDurationCvsAbove10Uv' => 'setStayDurationCvsAbove10Uv',
-        'stayDurationCvsAbove10Rate' => 'setStayDurationCvsAbove10Rate',
-        'clkBtnFollowPv' => 'setClkBtnFollowPv',
         'clkAdElementPv' => 'setClkAdElementPv',
-        'clkReadCommentPv' => 'setClkReadCommentPv',
         'channelsPraisePlaPv' => 'setChannelsPraisePlaPv',
-        'expSpreadPv' => 'setExpSpreadPv',
         'channelsLiveOutEnterPlaUv' => 'setChannelsLiveOutEnterPlaUv',
         'clkRedpocketBtnGetPv' => 'setClkRedpocketBtnGetPv',
         'clkRedpocketBtnSharePv' => 'setClkRedpocketBtnSharePv',
@@ -3372,8 +2908,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkMiddleSectionPv' => 'setClkMiddleSectionPv',
         'clkMiddleGridviewPv' => 'setClkMiddleGridviewPv',
         'clkBreakPv' => 'setClkBreakPv',
-        'clkStoryBtnPv' => 'setClkStoryBtnPv',
-        'clkStoryBtnUv' => 'setClkStoryBtnUv',
         'clkRedpocketShakePv' => 'setClkRedpocketShakePv',
         'clkRedpocketShakeUv' => 'setClkRedpocketShakeUv',
         'clkRelatedVideoPv' => 'setClkRelatedVideoPv',
@@ -3382,22 +2916,13 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkLeftGridInfoPv' => 'setClkLeftGridInfoPv',
         'clkLeftGridMiddlePv' => 'setClkLeftGridMiddlePv',
         'clkRightGridPv' => 'setClkRightGridPv',
-        'cheerBannerExpPv' => 'setCheerBannerExpPv',
-        'cheerStatusSetSuccPv' => 'setCheerStatusSetSuccPv',
-        'cheerStatusSetSuccUv' => 'setCheerStatusSetSuccUv',
-        'cheerStatusClkPv' => 'setCheerStatusClkPv',
-        'cheerStatusClkUv' => 'setCheerStatusClkUv',
         'adMonetizationCost' => 'setAdMonetizationCost',
         'adMonetizationRoi' => 'setAdMonetizationRoi',
         'adMonetizationActive3dPv' => 'setAdMonetizationActive3dPv',
         'adMonetizationDedupActive3dPv' => 'setAdMonetizationDedupActive3dPv',
         'adMonetizationActive7dPv' => 'setAdMonetizationActive7dPv',
         'adMonetizationDedupActive7dPv' => 'setAdMonetizationDedupActive7dPv',
-        'postBarragePv' => 'setPostBarragePv',
-        'postBarrageUv' => 'setPostBarrageUv',
         'clkRedpocketBtnSubscribePv' => 'setClkRedpocketBtnSubscribePv',
-        'inviteFriendsToWatchFireworksPv' => 'setInviteFriendsToWatchFireworksPv',
-        'clkBlessingCardPv' => 'setClkBlessingCardPv',
         'clkShortcutMenusPv' => 'setClkShortcutMenusPv',
         'channelsDetailBtnPv' => 'setChannelsDetailBtnPv',
         'zoneHeaderLiveClickCnt' => 'setZoneHeaderLiveClickCnt',
@@ -3418,7 +2943,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'matchType' => 'setMatchType',
         'device' => 'setDevice',
         'expAvgRank' => 'setExpAvgRank',
-        'expOverallTopPosition' => 'setExpOverallTopPosition',
         'expOverallTopPv' => 'setExpOverallTopPv',
         'clkTopPv' => 'setClkTopPv',
         'projectId' => 'setProjectId',
@@ -3471,11 +2995,8 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'previewDeepConversionsCount' => 'getPreviewDeepConversionsCount',
         'videoOuterPlayCount' => 'getVideoOuterPlayCount',
         'videoOuterPlayUserCount' => 'getVideoOuterPlayUserCount',
-        'videoTimeTotalCount' => 'getVideoTimeTotalCount',
-        'videoOuterPlayTotalTimeCount' => 'getVideoOuterPlayTotalTimeCount',
         'avgUserPlayCount' => 'getAvgUserPlayCount',
         'videoOuterPlayTimeCount' => 'getVideoOuterPlayTimeCount',
-        'videoOuterPlayTimeAvg' => 'getVideoOuterPlayTimeAvg',
         'videoOuterPlayTimeAvgRate' => 'getVideoOuterPlayTimeAvgRate',
         'videoOuterPlayRate' => 'getVideoOuterPlayRate',
         'videoOuterPlayCost' => 'getVideoOuterPlayCost',
@@ -3502,7 +3023,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'noInterestCount' => 'getNoInterestCount',
         'liveStreamCrtClickCnt' => 'getLiveStreamCrtClickCnt',
         'clickImageCount' => 'getClickImageCount',
-        'clickNickCount' => 'getClickNickCount',
         'clickHeadCount' => 'getClickHeadCount',
         'clickDetailCount' => 'getClickDetailCount',
         'clickPoiCount' => 'getClickPoiCount',
@@ -3554,8 +3074,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'guideToFollowPageViewers' => 'getGuideToFollowPageViewers',
         'guideToFollowPageInteractionAmount' => 'getGuideToFollowPageInteractionAmount',
         'guideToFollowPageInteractionUsers' => 'getGuideToFollowPageInteractionUsers',
-        'specialPageExpUv' => 'getSpecialPageExpUv',
-        'specialPageExpCost' => 'getSpecialPageExpCost',
         'landingPageViewCount' => 'getLandingPageViewCount',
         'landingPageEffectiveRate' => 'getLandingPageEffectiveRate',
         'landingPageUserCount' => 'getLandingPageUserCount',
@@ -3748,18 +3266,12 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'retentionCount' => 'getRetentionCount',
         'retentionCost' => 'getRetentionCost',
         'retentionRate' => 'getRetentionRate',
-        'appRetentionD2Pv' => 'getAppRetentionD2Pv',
-        'appRetentionD3Pv' => 'getAppRetentionD3Pv',
         'appRetentionD3Uv' => 'getAppRetentionD3Uv',
         'appRetentionD3Cost' => 'getAppRetentionD3Cost',
         'appRetentionD3Rate' => 'getAppRetentionD3Rate',
-        'appRetentionD4Pv' => 'getAppRetentionD4Pv',
-        'appRetentionD5Pv' => 'getAppRetentionD5Pv',
         'appRetentionD5Uv' => 'getAppRetentionD5Uv',
         'appRetentionD5Cost' => 'getAppRetentionD5Cost',
         'appRetentionD5Rate' => 'getAppRetentionD5Rate',
-        'appRetentionD6Pv' => 'getAppRetentionD6Pv',
-        'appRetentionD7Pv' => 'getAppRetentionD7Pv',
         'appRetentionD7Uv' => 'getAppRetentionD7Uv',
         'appRetentionD7Cost' => 'getAppRetentionD7Cost',
         'appRetentionD7Rate' => 'getAppRetentionD7Rate',
@@ -4054,45 +3566,23 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'liveStreamCommodityBubbleClkPv' => 'getLiveStreamCommodityBubbleClkPv',
         'liveStreamCommodityShopBagClkPv' => 'getLiveStreamCommodityShopBagClkPv',
         'liveStreamCommodityShopListExpPv' => 'getLiveStreamCommodityShopListExpPv',
-        'channelsLiveExitPlaUv' => 'getChannelsLiveExitPlaUv',
         'liveStreamAvgTime' => 'getLiveStreamAvgTime',
-        'followCount' => 'getFollowCount',
-        'followCost' => 'getFollowCost',
         'fromFollowUv' => 'getFromFollowUv',
         'fromFollowCost' => 'getFromFollowCost',
         'fromFollowByDisplayUv' => 'getFromFollowByDisplayUv',
         'fromFollowByDisplayCost' => 'getFromFollowByDisplayCost',
         'fromFollowByClickUv' => 'getFromFollowByClickUv',
         'fromFollowByClickCost' => 'getFromFollowByClickCost',
-        'bizFollowCount' => 'getBizFollowCount',
         'bizFollowRate' => 'getBizFollowRate',
         'bizFollowCost' => 'getBizFollowCost',
         'bizFollowUv' => 'getBizFollowUv',
         'bizConsultCount' => 'getBizConsultCount',
         'bizReadingCount' => 'getBizReadingCount',
-        'breakFrameExpPv' => 'getBreakFrameExpPv',
-        'breakFrameExpUv' => 'getBreakFrameExpUv',
         'breakFramePlayPv' => 'getBreakFramePlayPv',
         'breakFramePlayUv' => 'getBreakFramePlayUv',
-        'breakFramePlayDuration' => 'getBreakFramePlayDuration',
         'avgBreakFramePlayPerUser' => 'getAvgBreakFramePlayPerUser',
-        'breakFrameIpExpPv' => 'getBreakFrameIpExpPv',
-        'breakFrameIpExpUv' => 'getBreakFrameIpExpUv',
         'breakFrameIpClkPv' => 'getBreakFrameIpClkPv',
         'breakFrameIpClkUv' => 'getBreakFrameIpClkUv',
-        'overallBrandExposure' => 'getOverallBrandExposure',
-        'expHasCostPv' => 'getExpHasCostPv',
-        'freeExposurePv' => 'getFreeExposurePv',
-        'brandShareExposurePv' => 'getBrandShareExposurePv',
-        'brandShareExposureUv' => 'getBrandShareExposureUv',
-        'cvsShareExpToFriendPv' => 'getCvsShareExpToFriendPv',
-        'cvsShareExpToFeedPv' => 'getCvsShareExpToFeedPv',
-        'cvsShareExpToFriendUv' => 'getCvsShareExpToFriendUv',
-        'cvsShareExpToFeedUv' => 'getCvsShareExpToFeedUv',
-        'realCpmCost' => 'getRealCpmCost',
-        'expRootUv' => 'getExpRootUv',
-        'expFirstSpreadUv' => 'getExpFirstSpreadUv',
-        'expSecondSpreadUv' => 'getExpSecondSpreadUv',
         'clkMaterialUv' => 'getClkMaterialUv',
         'clkMaterialRate' => 'getClkMaterialRate',
         'clkNickPv' => 'getClkNickPv',
@@ -4101,101 +3591,28 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkActionBtnPv' => 'getClkActionBtnPv',
         'clkActionBtnUv' => 'getClkActionBtnUv',
         'clkTagCommentPv' => 'getClkTagCommentPv',
-        'clkTagCommentUv' => 'getClkTagCommentUv',
         'clkTagContentPv' => 'getClkTagContentPv',
-        'clkTagContentUv' => 'getClkTagContentUv',
         'clkPoiPv' => 'getClkPoiPv',
-        'clkPoiUv' => 'getClkPoiUv',
-        'clkChoiceLeftPv' => 'getClkChoiceLeftPv',
-        'clkChoiceLeftUv' => 'getClkChoiceLeftUv',
-        'clkChoiceRightPv' => 'getClkChoiceRightPv',
-        'clkChoiceRightUv' => 'getClkChoiceRightUv',
-        'clkCardTagPv' => 'getClkCardTagPv',
-        'clkCardTagUv' => 'getClkCardTagUv',
         'clkDetailUv' => 'getClkDetailUv',
         'clkDetailRate' => 'getClkDetailRate',
         'clkSliderCardBtnPv' => 'getClkSliderCardBtnPv',
-        'clkSliderCardBtnUv' => 'getClkSliderCardBtnUv',
         'cvsBubbleShareClkPv' => 'getCvsBubbleShareClkPv',
         'cvsBubbleShareClkUv' => 'getCvsBubbleShareClkUv',
         'lpStarPageExpPv' => 'getLpStarPageExpPv',
-        'lpStarPageExpUv' => 'getLpStarPageExpUv',
-        'lpStarPageClkPv' => 'getLpStarPageClkPv',
-        'lpStarPageClkUv' => 'getLpStarPageClkUv',
-        'lpStarPageClkRate' => 'getLpStarPageClkRate',
         'finderTopicSliderPv' => 'getFinderTopicSliderPv',
-        'finderTopicSliderUv' => 'getFinderTopicSliderUv',
-        'finderTopicSliderAutoPv' => 'getFinderTopicSliderAutoPv',
-        'finderTopicSliderAutoUv' => 'getFinderTopicSliderAutoUv',
         'finderTopicSliderPerUser' => 'getFinderTopicSliderPerUser',
         'finderTopicSliderManualPv' => 'getFinderTopicSliderManualPv',
-        'finderTopicSliderManualUv' => 'getFinderTopicSliderManualUv',
-        'fullsrcSlidePv' => 'getFullsrcSlidePv',
-        'galleryCardSliderPv' => 'getGalleryCardSliderPv',
-        'galleryCardSliderUv' => 'getGalleryCardSliderUv',
-        'shareUv' => 'getShareUv',
         'shareFriendPv' => 'getShareFriendPv',
         'shareFeedPv' => 'getShareFeedPv',
         'praiseUv' => 'getPraiseUv',
         'commentUv' => 'getCommentUv',
-        'praiseCommentPv' => 'getPraiseCommentPv',
-        'praiseCommentRate' => 'getPraiseCommentRate',
-        'praiseCommentSharePv' => 'getPraiseCommentSharePv',
-        'praiseCommentShareUv' => 'getPraiseCommentShareUv',
-        'commentAtFriendPv' => 'getCommentAtFriendPv',
-        'commentAtFriendUv' => 'getCommentAtFriendUv',
-        'commentReplyFristPv' => 'getCommentReplyFristPv',
-        'commentReplyFristUv' => 'getCommentReplyFristUv',
-        'cvsFavPv' => 'getCvsFavPv',
         'engagePv' => 'getEngagePv',
-        'engageUv' => 'getEngageUv',
-        'overallEngageUvRate' => 'getOverallEngageUvRate',
-        'overallEngagePvRate' => 'getOverallEngagePvRate',
         'interactSuccPv' => 'getInteractSuccPv',
-        'interactSuccUv' => 'getInteractSuccUv',
-        'interactRootUv' => 'getInteractRootUv',
-        'interactFirstSpreadUv' => 'getInteractFirstSpreadUv',
-        'interactSecondSpreadUv' => 'getInteractSecondSpreadUv',
-        'interactRootRate' => 'getInteractRootRate',
-        'interactFirstSpreadRate' => 'getInteractFirstSpreadRate',
-        'interactSecondSpreadRate' => 'getInteractSecondSpreadRate',
-        'finderTopicSliderCardExpPv' => 'getFinderTopicSliderCardExpPv',
-        'finderTopicSliderCardClkPv' => 'getFinderTopicSliderCardClkPv',
-        'finderTopicSliderVideoPlayPv' => 'getFinderTopicSliderVideoPlayPv',
-        'finderTopicSliderVideoPlayUv' => 'getFinderTopicSliderVideoPlayUv',
-        'stayDurationAll' => 'getStayDurationAll',
         'durationPerUser' => 'getDurationPerUser',
-        'shortVideoAvgStayTime' => 'getShortVideoAvgStayTime',
-        'stayDurationOuter' => 'getStayDurationOuter',
         'durationOuterPerUser' => 'getDurationOuterPerUser',
-        'shortVideoAvgViewStayTime' => 'getShortVideoAvgViewStayTime',
-        'stayDurationCvs' => 'getStayDurationCvs',
         'durationKeyPagePerUser' => 'getDurationKeyPagePerUser',
-        'stayDurationAll02Uv' => 'getStayDurationAll02Uv',
-        'stayDurationAll02Rate' => 'getStayDurationAll02Rate',
-        'stayDurationAll34Uv' => 'getStayDurationAll34Uv',
-        'stayDurationAll34Rate' => 'getStayDurationAll34Rate',
-        'stayDurationAll510Uv' => 'getStayDurationAll510Uv',
-        'stayDurationAll510Rate' => 'getStayDurationAll510Rate',
-        'stayDurationAllAbove10Uv' => 'getStayDurationAllAbove10Uv',
-        'stayDurationAllAbove10Rate' => 'getStayDurationAllAbove10Rate',
-        'stayDurationAllAbove5Uv' => 'getStayDurationAllAbove5Uv',
-        'stayDurationAllAbove5Rate' => 'getStayDurationAllAbove5Rate',
-        'stayDurationCvs02Uv' => 'getStayDurationCvs02Uv',
-        'stayDurationCvs02Rate' => 'getStayDurationCvs02Rate',
-        'stayDurationCvs39Uv' => 'getStayDurationCvs39Uv',
-        'stayDurationCvs39Rate' => 'getStayDurationCvs39Rate',
-        'stayDurationCvs1029Uv' => 'getStayDurationCvs1029Uv',
-        'stayDurationCvs1029Rate' => 'getStayDurationCvs1029Rate',
-        'stayDurationCvsAbove30Uv' => 'getStayDurationCvsAbove30Uv',
-        'stayDurationCvsAbove30Rate' => 'getStayDurationCvsAbove30Rate',
-        'stayDurationCvsAbove10Uv' => 'getStayDurationCvsAbove10Uv',
-        'stayDurationCvsAbove10Rate' => 'getStayDurationCvsAbove10Rate',
-        'clkBtnFollowPv' => 'getClkBtnFollowPv',
         'clkAdElementPv' => 'getClkAdElementPv',
-        'clkReadCommentPv' => 'getClkReadCommentPv',
         'channelsPraisePlaPv' => 'getChannelsPraisePlaPv',
-        'expSpreadPv' => 'getExpSpreadPv',
         'channelsLiveOutEnterPlaUv' => 'getChannelsLiveOutEnterPlaUv',
         'clkRedpocketBtnGetPv' => 'getClkRedpocketBtnGetPv',
         'clkRedpocketBtnSharePv' => 'getClkRedpocketBtnSharePv',
@@ -4210,8 +3627,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkMiddleSectionPv' => 'getClkMiddleSectionPv',
         'clkMiddleGridviewPv' => 'getClkMiddleGridviewPv',
         'clkBreakPv' => 'getClkBreakPv',
-        'clkStoryBtnPv' => 'getClkStoryBtnPv',
-        'clkStoryBtnUv' => 'getClkStoryBtnUv',
         'clkRedpocketShakePv' => 'getClkRedpocketShakePv',
         'clkRedpocketShakeUv' => 'getClkRedpocketShakeUv',
         'clkRelatedVideoPv' => 'getClkRelatedVideoPv',
@@ -4220,22 +3635,13 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkLeftGridInfoPv' => 'getClkLeftGridInfoPv',
         'clkLeftGridMiddlePv' => 'getClkLeftGridMiddlePv',
         'clkRightGridPv' => 'getClkRightGridPv',
-        'cheerBannerExpPv' => 'getCheerBannerExpPv',
-        'cheerStatusSetSuccPv' => 'getCheerStatusSetSuccPv',
-        'cheerStatusSetSuccUv' => 'getCheerStatusSetSuccUv',
-        'cheerStatusClkPv' => 'getCheerStatusClkPv',
-        'cheerStatusClkUv' => 'getCheerStatusClkUv',
         'adMonetizationCost' => 'getAdMonetizationCost',
         'adMonetizationRoi' => 'getAdMonetizationRoi',
         'adMonetizationActive3dPv' => 'getAdMonetizationActive3dPv',
         'adMonetizationDedupActive3dPv' => 'getAdMonetizationDedupActive3dPv',
         'adMonetizationActive7dPv' => 'getAdMonetizationActive7dPv',
         'adMonetizationDedupActive7dPv' => 'getAdMonetizationDedupActive7dPv',
-        'postBarragePv' => 'getPostBarragePv',
-        'postBarrageUv' => 'getPostBarrageUv',
         'clkRedpocketBtnSubscribePv' => 'getClkRedpocketBtnSubscribePv',
-        'inviteFriendsToWatchFireworksPv' => 'getInviteFriendsToWatchFireworksPv',
-        'clkBlessingCardPv' => 'getClkBlessingCardPv',
         'clkShortcutMenusPv' => 'getClkShortcutMenusPv',
         'channelsDetailBtnPv' => 'getChannelsDetailBtnPv',
         'zoneHeaderLiveClickCnt' => 'getZoneHeaderLiveClickCnt',
@@ -4256,7 +3662,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'matchType' => 'getMatchType',
         'device' => 'getDevice',
         'expAvgRank' => 'getExpAvgRank',
-        'expOverallTopPosition' => 'getExpOverallTopPosition',
         'expOverallTopPv' => 'getExpOverallTopPv',
         'clkTopPv' => 'getClkTopPv',
         'projectId' => 'getProjectId',
@@ -4363,11 +3768,8 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['previewDeepConversionsCount'] = isset($data['previewDeepConversionsCount']) ? $data['previewDeepConversionsCount'] : null;
         $this->container['videoOuterPlayCount'] = isset($data['videoOuterPlayCount']) ? $data['videoOuterPlayCount'] : null;
         $this->container['videoOuterPlayUserCount'] = isset($data['videoOuterPlayUserCount']) ? $data['videoOuterPlayUserCount'] : null;
-        $this->container['videoTimeTotalCount'] = isset($data['videoTimeTotalCount']) ? $data['videoTimeTotalCount'] : null;
-        $this->container['videoOuterPlayTotalTimeCount'] = isset($data['videoOuterPlayTotalTimeCount']) ? $data['videoOuterPlayTotalTimeCount'] : null;
         $this->container['avgUserPlayCount'] = isset($data['avgUserPlayCount']) ? $data['avgUserPlayCount'] : null;
         $this->container['videoOuterPlayTimeCount'] = isset($data['videoOuterPlayTimeCount']) ? $data['videoOuterPlayTimeCount'] : null;
-        $this->container['videoOuterPlayTimeAvg'] = isset($data['videoOuterPlayTimeAvg']) ? $data['videoOuterPlayTimeAvg'] : null;
         $this->container['videoOuterPlayTimeAvgRate'] = isset($data['videoOuterPlayTimeAvgRate']) ? $data['videoOuterPlayTimeAvgRate'] : null;
         $this->container['videoOuterPlayRate'] = isset($data['videoOuterPlayRate']) ? $data['videoOuterPlayRate'] : null;
         $this->container['videoOuterPlayCost'] = isset($data['videoOuterPlayCost']) ? $data['videoOuterPlayCost'] : null;
@@ -4394,7 +3796,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['noInterestCount'] = isset($data['noInterestCount']) ? $data['noInterestCount'] : null;
         $this->container['liveStreamCrtClickCnt'] = isset($data['liveStreamCrtClickCnt']) ? $data['liveStreamCrtClickCnt'] : null;
         $this->container['clickImageCount'] = isset($data['clickImageCount']) ? $data['clickImageCount'] : null;
-        $this->container['clickNickCount'] = isset($data['clickNickCount']) ? $data['clickNickCount'] : null;
         $this->container['clickHeadCount'] = isset($data['clickHeadCount']) ? $data['clickHeadCount'] : null;
         $this->container['clickDetailCount'] = isset($data['clickDetailCount']) ? $data['clickDetailCount'] : null;
         $this->container['clickPoiCount'] = isset($data['clickPoiCount']) ? $data['clickPoiCount'] : null;
@@ -4446,8 +3847,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['guideToFollowPageViewers'] = isset($data['guideToFollowPageViewers']) ? $data['guideToFollowPageViewers'] : null;
         $this->container['guideToFollowPageInteractionAmount'] = isset($data['guideToFollowPageInteractionAmount']) ? $data['guideToFollowPageInteractionAmount'] : null;
         $this->container['guideToFollowPageInteractionUsers'] = isset($data['guideToFollowPageInteractionUsers']) ? $data['guideToFollowPageInteractionUsers'] : null;
-        $this->container['specialPageExpUv'] = isset($data['specialPageExpUv']) ? $data['specialPageExpUv'] : null;
-        $this->container['specialPageExpCost'] = isset($data['specialPageExpCost']) ? $data['specialPageExpCost'] : null;
         $this->container['landingPageViewCount'] = isset($data['landingPageViewCount']) ? $data['landingPageViewCount'] : null;
         $this->container['landingPageEffectiveRate'] = isset($data['landingPageEffectiveRate']) ? $data['landingPageEffectiveRate'] : null;
         $this->container['landingPageUserCount'] = isset($data['landingPageUserCount']) ? $data['landingPageUserCount'] : null;
@@ -4640,18 +4039,12 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['retentionCount'] = isset($data['retentionCount']) ? $data['retentionCount'] : null;
         $this->container['retentionCost'] = isset($data['retentionCost']) ? $data['retentionCost'] : null;
         $this->container['retentionRate'] = isset($data['retentionRate']) ? $data['retentionRate'] : null;
-        $this->container['appRetentionD2Pv'] = isset($data['appRetentionD2Pv']) ? $data['appRetentionD2Pv'] : null;
-        $this->container['appRetentionD3Pv'] = isset($data['appRetentionD3Pv']) ? $data['appRetentionD3Pv'] : null;
         $this->container['appRetentionD3Uv'] = isset($data['appRetentionD3Uv']) ? $data['appRetentionD3Uv'] : null;
         $this->container['appRetentionD3Cost'] = isset($data['appRetentionD3Cost']) ? $data['appRetentionD3Cost'] : null;
         $this->container['appRetentionD3Rate'] = isset($data['appRetentionD3Rate']) ? $data['appRetentionD3Rate'] : null;
-        $this->container['appRetentionD4Pv'] = isset($data['appRetentionD4Pv']) ? $data['appRetentionD4Pv'] : null;
-        $this->container['appRetentionD5Pv'] = isset($data['appRetentionD5Pv']) ? $data['appRetentionD5Pv'] : null;
         $this->container['appRetentionD5Uv'] = isset($data['appRetentionD5Uv']) ? $data['appRetentionD5Uv'] : null;
         $this->container['appRetentionD5Cost'] = isset($data['appRetentionD5Cost']) ? $data['appRetentionD5Cost'] : null;
         $this->container['appRetentionD5Rate'] = isset($data['appRetentionD5Rate']) ? $data['appRetentionD5Rate'] : null;
-        $this->container['appRetentionD6Pv'] = isset($data['appRetentionD6Pv']) ? $data['appRetentionD6Pv'] : null;
-        $this->container['appRetentionD7Pv'] = isset($data['appRetentionD7Pv']) ? $data['appRetentionD7Pv'] : null;
         $this->container['appRetentionD7Uv'] = isset($data['appRetentionD7Uv']) ? $data['appRetentionD7Uv'] : null;
         $this->container['appRetentionD7Cost'] = isset($data['appRetentionD7Cost']) ? $data['appRetentionD7Cost'] : null;
         $this->container['appRetentionD7Rate'] = isset($data['appRetentionD7Rate']) ? $data['appRetentionD7Rate'] : null;
@@ -4946,45 +4339,23 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['liveStreamCommodityBubbleClkPv'] = isset($data['liveStreamCommodityBubbleClkPv']) ? $data['liveStreamCommodityBubbleClkPv'] : null;
         $this->container['liveStreamCommodityShopBagClkPv'] = isset($data['liveStreamCommodityShopBagClkPv']) ? $data['liveStreamCommodityShopBagClkPv'] : null;
         $this->container['liveStreamCommodityShopListExpPv'] = isset($data['liveStreamCommodityShopListExpPv']) ? $data['liveStreamCommodityShopListExpPv'] : null;
-        $this->container['channelsLiveExitPlaUv'] = isset($data['channelsLiveExitPlaUv']) ? $data['channelsLiveExitPlaUv'] : null;
         $this->container['liveStreamAvgTime'] = isset($data['liveStreamAvgTime']) ? $data['liveStreamAvgTime'] : null;
-        $this->container['followCount'] = isset($data['followCount']) ? $data['followCount'] : null;
-        $this->container['followCost'] = isset($data['followCost']) ? $data['followCost'] : null;
         $this->container['fromFollowUv'] = isset($data['fromFollowUv']) ? $data['fromFollowUv'] : null;
         $this->container['fromFollowCost'] = isset($data['fromFollowCost']) ? $data['fromFollowCost'] : null;
         $this->container['fromFollowByDisplayUv'] = isset($data['fromFollowByDisplayUv']) ? $data['fromFollowByDisplayUv'] : null;
         $this->container['fromFollowByDisplayCost'] = isset($data['fromFollowByDisplayCost']) ? $data['fromFollowByDisplayCost'] : null;
         $this->container['fromFollowByClickUv'] = isset($data['fromFollowByClickUv']) ? $data['fromFollowByClickUv'] : null;
         $this->container['fromFollowByClickCost'] = isset($data['fromFollowByClickCost']) ? $data['fromFollowByClickCost'] : null;
-        $this->container['bizFollowCount'] = isset($data['bizFollowCount']) ? $data['bizFollowCount'] : null;
         $this->container['bizFollowRate'] = isset($data['bizFollowRate']) ? $data['bizFollowRate'] : null;
         $this->container['bizFollowCost'] = isset($data['bizFollowCost']) ? $data['bizFollowCost'] : null;
         $this->container['bizFollowUv'] = isset($data['bizFollowUv']) ? $data['bizFollowUv'] : null;
         $this->container['bizConsultCount'] = isset($data['bizConsultCount']) ? $data['bizConsultCount'] : null;
         $this->container['bizReadingCount'] = isset($data['bizReadingCount']) ? $data['bizReadingCount'] : null;
-        $this->container['breakFrameExpPv'] = isset($data['breakFrameExpPv']) ? $data['breakFrameExpPv'] : null;
-        $this->container['breakFrameExpUv'] = isset($data['breakFrameExpUv']) ? $data['breakFrameExpUv'] : null;
         $this->container['breakFramePlayPv'] = isset($data['breakFramePlayPv']) ? $data['breakFramePlayPv'] : null;
         $this->container['breakFramePlayUv'] = isset($data['breakFramePlayUv']) ? $data['breakFramePlayUv'] : null;
-        $this->container['breakFramePlayDuration'] = isset($data['breakFramePlayDuration']) ? $data['breakFramePlayDuration'] : null;
         $this->container['avgBreakFramePlayPerUser'] = isset($data['avgBreakFramePlayPerUser']) ? $data['avgBreakFramePlayPerUser'] : null;
-        $this->container['breakFrameIpExpPv'] = isset($data['breakFrameIpExpPv']) ? $data['breakFrameIpExpPv'] : null;
-        $this->container['breakFrameIpExpUv'] = isset($data['breakFrameIpExpUv']) ? $data['breakFrameIpExpUv'] : null;
         $this->container['breakFrameIpClkPv'] = isset($data['breakFrameIpClkPv']) ? $data['breakFrameIpClkPv'] : null;
         $this->container['breakFrameIpClkUv'] = isset($data['breakFrameIpClkUv']) ? $data['breakFrameIpClkUv'] : null;
-        $this->container['overallBrandExposure'] = isset($data['overallBrandExposure']) ? $data['overallBrandExposure'] : null;
-        $this->container['expHasCostPv'] = isset($data['expHasCostPv']) ? $data['expHasCostPv'] : null;
-        $this->container['freeExposurePv'] = isset($data['freeExposurePv']) ? $data['freeExposurePv'] : null;
-        $this->container['brandShareExposurePv'] = isset($data['brandShareExposurePv']) ? $data['brandShareExposurePv'] : null;
-        $this->container['brandShareExposureUv'] = isset($data['brandShareExposureUv']) ? $data['brandShareExposureUv'] : null;
-        $this->container['cvsShareExpToFriendPv'] = isset($data['cvsShareExpToFriendPv']) ? $data['cvsShareExpToFriendPv'] : null;
-        $this->container['cvsShareExpToFeedPv'] = isset($data['cvsShareExpToFeedPv']) ? $data['cvsShareExpToFeedPv'] : null;
-        $this->container['cvsShareExpToFriendUv'] = isset($data['cvsShareExpToFriendUv']) ? $data['cvsShareExpToFriendUv'] : null;
-        $this->container['cvsShareExpToFeedUv'] = isset($data['cvsShareExpToFeedUv']) ? $data['cvsShareExpToFeedUv'] : null;
-        $this->container['realCpmCost'] = isset($data['realCpmCost']) ? $data['realCpmCost'] : null;
-        $this->container['expRootUv'] = isset($data['expRootUv']) ? $data['expRootUv'] : null;
-        $this->container['expFirstSpreadUv'] = isset($data['expFirstSpreadUv']) ? $data['expFirstSpreadUv'] : null;
-        $this->container['expSecondSpreadUv'] = isset($data['expSecondSpreadUv']) ? $data['expSecondSpreadUv'] : null;
         $this->container['clkMaterialUv'] = isset($data['clkMaterialUv']) ? $data['clkMaterialUv'] : null;
         $this->container['clkMaterialRate'] = isset($data['clkMaterialRate']) ? $data['clkMaterialRate'] : null;
         $this->container['clkNickPv'] = isset($data['clkNickPv']) ? $data['clkNickPv'] : null;
@@ -4993,101 +4364,28 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['clkActionBtnPv'] = isset($data['clkActionBtnPv']) ? $data['clkActionBtnPv'] : null;
         $this->container['clkActionBtnUv'] = isset($data['clkActionBtnUv']) ? $data['clkActionBtnUv'] : null;
         $this->container['clkTagCommentPv'] = isset($data['clkTagCommentPv']) ? $data['clkTagCommentPv'] : null;
-        $this->container['clkTagCommentUv'] = isset($data['clkTagCommentUv']) ? $data['clkTagCommentUv'] : null;
         $this->container['clkTagContentPv'] = isset($data['clkTagContentPv']) ? $data['clkTagContentPv'] : null;
-        $this->container['clkTagContentUv'] = isset($data['clkTagContentUv']) ? $data['clkTagContentUv'] : null;
         $this->container['clkPoiPv'] = isset($data['clkPoiPv']) ? $data['clkPoiPv'] : null;
-        $this->container['clkPoiUv'] = isset($data['clkPoiUv']) ? $data['clkPoiUv'] : null;
-        $this->container['clkChoiceLeftPv'] = isset($data['clkChoiceLeftPv']) ? $data['clkChoiceLeftPv'] : null;
-        $this->container['clkChoiceLeftUv'] = isset($data['clkChoiceLeftUv']) ? $data['clkChoiceLeftUv'] : null;
-        $this->container['clkChoiceRightPv'] = isset($data['clkChoiceRightPv']) ? $data['clkChoiceRightPv'] : null;
-        $this->container['clkChoiceRightUv'] = isset($data['clkChoiceRightUv']) ? $data['clkChoiceRightUv'] : null;
-        $this->container['clkCardTagPv'] = isset($data['clkCardTagPv']) ? $data['clkCardTagPv'] : null;
-        $this->container['clkCardTagUv'] = isset($data['clkCardTagUv']) ? $data['clkCardTagUv'] : null;
         $this->container['clkDetailUv'] = isset($data['clkDetailUv']) ? $data['clkDetailUv'] : null;
         $this->container['clkDetailRate'] = isset($data['clkDetailRate']) ? $data['clkDetailRate'] : null;
         $this->container['clkSliderCardBtnPv'] = isset($data['clkSliderCardBtnPv']) ? $data['clkSliderCardBtnPv'] : null;
-        $this->container['clkSliderCardBtnUv'] = isset($data['clkSliderCardBtnUv']) ? $data['clkSliderCardBtnUv'] : null;
         $this->container['cvsBubbleShareClkPv'] = isset($data['cvsBubbleShareClkPv']) ? $data['cvsBubbleShareClkPv'] : null;
         $this->container['cvsBubbleShareClkUv'] = isset($data['cvsBubbleShareClkUv']) ? $data['cvsBubbleShareClkUv'] : null;
         $this->container['lpStarPageExpPv'] = isset($data['lpStarPageExpPv']) ? $data['lpStarPageExpPv'] : null;
-        $this->container['lpStarPageExpUv'] = isset($data['lpStarPageExpUv']) ? $data['lpStarPageExpUv'] : null;
-        $this->container['lpStarPageClkPv'] = isset($data['lpStarPageClkPv']) ? $data['lpStarPageClkPv'] : null;
-        $this->container['lpStarPageClkUv'] = isset($data['lpStarPageClkUv']) ? $data['lpStarPageClkUv'] : null;
-        $this->container['lpStarPageClkRate'] = isset($data['lpStarPageClkRate']) ? $data['lpStarPageClkRate'] : null;
         $this->container['finderTopicSliderPv'] = isset($data['finderTopicSliderPv']) ? $data['finderTopicSliderPv'] : null;
-        $this->container['finderTopicSliderUv'] = isset($data['finderTopicSliderUv']) ? $data['finderTopicSliderUv'] : null;
-        $this->container['finderTopicSliderAutoPv'] = isset($data['finderTopicSliderAutoPv']) ? $data['finderTopicSliderAutoPv'] : null;
-        $this->container['finderTopicSliderAutoUv'] = isset($data['finderTopicSliderAutoUv']) ? $data['finderTopicSliderAutoUv'] : null;
         $this->container['finderTopicSliderPerUser'] = isset($data['finderTopicSliderPerUser']) ? $data['finderTopicSliderPerUser'] : null;
         $this->container['finderTopicSliderManualPv'] = isset($data['finderTopicSliderManualPv']) ? $data['finderTopicSliderManualPv'] : null;
-        $this->container['finderTopicSliderManualUv'] = isset($data['finderTopicSliderManualUv']) ? $data['finderTopicSliderManualUv'] : null;
-        $this->container['fullsrcSlidePv'] = isset($data['fullsrcSlidePv']) ? $data['fullsrcSlidePv'] : null;
-        $this->container['galleryCardSliderPv'] = isset($data['galleryCardSliderPv']) ? $data['galleryCardSliderPv'] : null;
-        $this->container['galleryCardSliderUv'] = isset($data['galleryCardSliderUv']) ? $data['galleryCardSliderUv'] : null;
-        $this->container['shareUv'] = isset($data['shareUv']) ? $data['shareUv'] : null;
         $this->container['shareFriendPv'] = isset($data['shareFriendPv']) ? $data['shareFriendPv'] : null;
         $this->container['shareFeedPv'] = isset($data['shareFeedPv']) ? $data['shareFeedPv'] : null;
         $this->container['praiseUv'] = isset($data['praiseUv']) ? $data['praiseUv'] : null;
         $this->container['commentUv'] = isset($data['commentUv']) ? $data['commentUv'] : null;
-        $this->container['praiseCommentPv'] = isset($data['praiseCommentPv']) ? $data['praiseCommentPv'] : null;
-        $this->container['praiseCommentRate'] = isset($data['praiseCommentRate']) ? $data['praiseCommentRate'] : null;
-        $this->container['praiseCommentSharePv'] = isset($data['praiseCommentSharePv']) ? $data['praiseCommentSharePv'] : null;
-        $this->container['praiseCommentShareUv'] = isset($data['praiseCommentShareUv']) ? $data['praiseCommentShareUv'] : null;
-        $this->container['commentAtFriendPv'] = isset($data['commentAtFriendPv']) ? $data['commentAtFriendPv'] : null;
-        $this->container['commentAtFriendUv'] = isset($data['commentAtFriendUv']) ? $data['commentAtFriendUv'] : null;
-        $this->container['commentReplyFristPv'] = isset($data['commentReplyFristPv']) ? $data['commentReplyFristPv'] : null;
-        $this->container['commentReplyFristUv'] = isset($data['commentReplyFristUv']) ? $data['commentReplyFristUv'] : null;
-        $this->container['cvsFavPv'] = isset($data['cvsFavPv']) ? $data['cvsFavPv'] : null;
         $this->container['engagePv'] = isset($data['engagePv']) ? $data['engagePv'] : null;
-        $this->container['engageUv'] = isset($data['engageUv']) ? $data['engageUv'] : null;
-        $this->container['overallEngageUvRate'] = isset($data['overallEngageUvRate']) ? $data['overallEngageUvRate'] : null;
-        $this->container['overallEngagePvRate'] = isset($data['overallEngagePvRate']) ? $data['overallEngagePvRate'] : null;
         $this->container['interactSuccPv'] = isset($data['interactSuccPv']) ? $data['interactSuccPv'] : null;
-        $this->container['interactSuccUv'] = isset($data['interactSuccUv']) ? $data['interactSuccUv'] : null;
-        $this->container['interactRootUv'] = isset($data['interactRootUv']) ? $data['interactRootUv'] : null;
-        $this->container['interactFirstSpreadUv'] = isset($data['interactFirstSpreadUv']) ? $data['interactFirstSpreadUv'] : null;
-        $this->container['interactSecondSpreadUv'] = isset($data['interactSecondSpreadUv']) ? $data['interactSecondSpreadUv'] : null;
-        $this->container['interactRootRate'] = isset($data['interactRootRate']) ? $data['interactRootRate'] : null;
-        $this->container['interactFirstSpreadRate'] = isset($data['interactFirstSpreadRate']) ? $data['interactFirstSpreadRate'] : null;
-        $this->container['interactSecondSpreadRate'] = isset($data['interactSecondSpreadRate']) ? $data['interactSecondSpreadRate'] : null;
-        $this->container['finderTopicSliderCardExpPv'] = isset($data['finderTopicSliderCardExpPv']) ? $data['finderTopicSliderCardExpPv'] : null;
-        $this->container['finderTopicSliderCardClkPv'] = isset($data['finderTopicSliderCardClkPv']) ? $data['finderTopicSliderCardClkPv'] : null;
-        $this->container['finderTopicSliderVideoPlayPv'] = isset($data['finderTopicSliderVideoPlayPv']) ? $data['finderTopicSliderVideoPlayPv'] : null;
-        $this->container['finderTopicSliderVideoPlayUv'] = isset($data['finderTopicSliderVideoPlayUv']) ? $data['finderTopicSliderVideoPlayUv'] : null;
-        $this->container['stayDurationAll'] = isset($data['stayDurationAll']) ? $data['stayDurationAll'] : null;
         $this->container['durationPerUser'] = isset($data['durationPerUser']) ? $data['durationPerUser'] : null;
-        $this->container['shortVideoAvgStayTime'] = isset($data['shortVideoAvgStayTime']) ? $data['shortVideoAvgStayTime'] : null;
-        $this->container['stayDurationOuter'] = isset($data['stayDurationOuter']) ? $data['stayDurationOuter'] : null;
         $this->container['durationOuterPerUser'] = isset($data['durationOuterPerUser']) ? $data['durationOuterPerUser'] : null;
-        $this->container['shortVideoAvgViewStayTime'] = isset($data['shortVideoAvgViewStayTime']) ? $data['shortVideoAvgViewStayTime'] : null;
-        $this->container['stayDurationCvs'] = isset($data['stayDurationCvs']) ? $data['stayDurationCvs'] : null;
         $this->container['durationKeyPagePerUser'] = isset($data['durationKeyPagePerUser']) ? $data['durationKeyPagePerUser'] : null;
-        $this->container['stayDurationAll02Uv'] = isset($data['stayDurationAll02Uv']) ? $data['stayDurationAll02Uv'] : null;
-        $this->container['stayDurationAll02Rate'] = isset($data['stayDurationAll02Rate']) ? $data['stayDurationAll02Rate'] : null;
-        $this->container['stayDurationAll34Uv'] = isset($data['stayDurationAll34Uv']) ? $data['stayDurationAll34Uv'] : null;
-        $this->container['stayDurationAll34Rate'] = isset($data['stayDurationAll34Rate']) ? $data['stayDurationAll34Rate'] : null;
-        $this->container['stayDurationAll510Uv'] = isset($data['stayDurationAll510Uv']) ? $data['stayDurationAll510Uv'] : null;
-        $this->container['stayDurationAll510Rate'] = isset($data['stayDurationAll510Rate']) ? $data['stayDurationAll510Rate'] : null;
-        $this->container['stayDurationAllAbove10Uv'] = isset($data['stayDurationAllAbove10Uv']) ? $data['stayDurationAllAbove10Uv'] : null;
-        $this->container['stayDurationAllAbove10Rate'] = isset($data['stayDurationAllAbove10Rate']) ? $data['stayDurationAllAbove10Rate'] : null;
-        $this->container['stayDurationAllAbove5Uv'] = isset($data['stayDurationAllAbove5Uv']) ? $data['stayDurationAllAbove5Uv'] : null;
-        $this->container['stayDurationAllAbove5Rate'] = isset($data['stayDurationAllAbove5Rate']) ? $data['stayDurationAllAbove5Rate'] : null;
-        $this->container['stayDurationCvs02Uv'] = isset($data['stayDurationCvs02Uv']) ? $data['stayDurationCvs02Uv'] : null;
-        $this->container['stayDurationCvs02Rate'] = isset($data['stayDurationCvs02Rate']) ? $data['stayDurationCvs02Rate'] : null;
-        $this->container['stayDurationCvs39Uv'] = isset($data['stayDurationCvs39Uv']) ? $data['stayDurationCvs39Uv'] : null;
-        $this->container['stayDurationCvs39Rate'] = isset($data['stayDurationCvs39Rate']) ? $data['stayDurationCvs39Rate'] : null;
-        $this->container['stayDurationCvs1029Uv'] = isset($data['stayDurationCvs1029Uv']) ? $data['stayDurationCvs1029Uv'] : null;
-        $this->container['stayDurationCvs1029Rate'] = isset($data['stayDurationCvs1029Rate']) ? $data['stayDurationCvs1029Rate'] : null;
-        $this->container['stayDurationCvsAbove30Uv'] = isset($data['stayDurationCvsAbove30Uv']) ? $data['stayDurationCvsAbove30Uv'] : null;
-        $this->container['stayDurationCvsAbove30Rate'] = isset($data['stayDurationCvsAbove30Rate']) ? $data['stayDurationCvsAbove30Rate'] : null;
-        $this->container['stayDurationCvsAbove10Uv'] = isset($data['stayDurationCvsAbove10Uv']) ? $data['stayDurationCvsAbove10Uv'] : null;
-        $this->container['stayDurationCvsAbove10Rate'] = isset($data['stayDurationCvsAbove10Rate']) ? $data['stayDurationCvsAbove10Rate'] : null;
-        $this->container['clkBtnFollowPv'] = isset($data['clkBtnFollowPv']) ? $data['clkBtnFollowPv'] : null;
         $this->container['clkAdElementPv'] = isset($data['clkAdElementPv']) ? $data['clkAdElementPv'] : null;
-        $this->container['clkReadCommentPv'] = isset($data['clkReadCommentPv']) ? $data['clkReadCommentPv'] : null;
         $this->container['channelsPraisePlaPv'] = isset($data['channelsPraisePlaPv']) ? $data['channelsPraisePlaPv'] : null;
-        $this->container['expSpreadPv'] = isset($data['expSpreadPv']) ? $data['expSpreadPv'] : null;
         $this->container['channelsLiveOutEnterPlaUv'] = isset($data['channelsLiveOutEnterPlaUv']) ? $data['channelsLiveOutEnterPlaUv'] : null;
         $this->container['clkRedpocketBtnGetPv'] = isset($data['clkRedpocketBtnGetPv']) ? $data['clkRedpocketBtnGetPv'] : null;
         $this->container['clkRedpocketBtnSharePv'] = isset($data['clkRedpocketBtnSharePv']) ? $data['clkRedpocketBtnSharePv'] : null;
@@ -5102,8 +4400,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['clkMiddleSectionPv'] = isset($data['clkMiddleSectionPv']) ? $data['clkMiddleSectionPv'] : null;
         $this->container['clkMiddleGridviewPv'] = isset($data['clkMiddleGridviewPv']) ? $data['clkMiddleGridviewPv'] : null;
         $this->container['clkBreakPv'] = isset($data['clkBreakPv']) ? $data['clkBreakPv'] : null;
-        $this->container['clkStoryBtnPv'] = isset($data['clkStoryBtnPv']) ? $data['clkStoryBtnPv'] : null;
-        $this->container['clkStoryBtnUv'] = isset($data['clkStoryBtnUv']) ? $data['clkStoryBtnUv'] : null;
         $this->container['clkRedpocketShakePv'] = isset($data['clkRedpocketShakePv']) ? $data['clkRedpocketShakePv'] : null;
         $this->container['clkRedpocketShakeUv'] = isset($data['clkRedpocketShakeUv']) ? $data['clkRedpocketShakeUv'] : null;
         $this->container['clkRelatedVideoPv'] = isset($data['clkRelatedVideoPv']) ? $data['clkRelatedVideoPv'] : null;
@@ -5112,22 +4408,13 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['clkLeftGridInfoPv'] = isset($data['clkLeftGridInfoPv']) ? $data['clkLeftGridInfoPv'] : null;
         $this->container['clkLeftGridMiddlePv'] = isset($data['clkLeftGridMiddlePv']) ? $data['clkLeftGridMiddlePv'] : null;
         $this->container['clkRightGridPv'] = isset($data['clkRightGridPv']) ? $data['clkRightGridPv'] : null;
-        $this->container['cheerBannerExpPv'] = isset($data['cheerBannerExpPv']) ? $data['cheerBannerExpPv'] : null;
-        $this->container['cheerStatusSetSuccPv'] = isset($data['cheerStatusSetSuccPv']) ? $data['cheerStatusSetSuccPv'] : null;
-        $this->container['cheerStatusSetSuccUv'] = isset($data['cheerStatusSetSuccUv']) ? $data['cheerStatusSetSuccUv'] : null;
-        $this->container['cheerStatusClkPv'] = isset($data['cheerStatusClkPv']) ? $data['cheerStatusClkPv'] : null;
-        $this->container['cheerStatusClkUv'] = isset($data['cheerStatusClkUv']) ? $data['cheerStatusClkUv'] : null;
         $this->container['adMonetizationCost'] = isset($data['adMonetizationCost']) ? $data['adMonetizationCost'] : null;
         $this->container['adMonetizationRoi'] = isset($data['adMonetizationRoi']) ? $data['adMonetizationRoi'] : null;
         $this->container['adMonetizationActive3dPv'] = isset($data['adMonetizationActive3dPv']) ? $data['adMonetizationActive3dPv'] : null;
         $this->container['adMonetizationDedupActive3dPv'] = isset($data['adMonetizationDedupActive3dPv']) ? $data['adMonetizationDedupActive3dPv'] : null;
         $this->container['adMonetizationActive7dPv'] = isset($data['adMonetizationActive7dPv']) ? $data['adMonetizationActive7dPv'] : null;
         $this->container['adMonetizationDedupActive7dPv'] = isset($data['adMonetizationDedupActive7dPv']) ? $data['adMonetizationDedupActive7dPv'] : null;
-        $this->container['postBarragePv'] = isset($data['postBarragePv']) ? $data['postBarragePv'] : null;
-        $this->container['postBarrageUv'] = isset($data['postBarrageUv']) ? $data['postBarrageUv'] : null;
         $this->container['clkRedpocketBtnSubscribePv'] = isset($data['clkRedpocketBtnSubscribePv']) ? $data['clkRedpocketBtnSubscribePv'] : null;
-        $this->container['inviteFriendsToWatchFireworksPv'] = isset($data['inviteFriendsToWatchFireworksPv']) ? $data['inviteFriendsToWatchFireworksPv'] : null;
-        $this->container['clkBlessingCardPv'] = isset($data['clkBlessingCardPv']) ? $data['clkBlessingCardPv'] : null;
         $this->container['clkShortcutMenusPv'] = isset($data['clkShortcutMenusPv']) ? $data['clkShortcutMenusPv'] : null;
         $this->container['channelsDetailBtnPv'] = isset($data['channelsDetailBtnPv']) ? $data['channelsDetailBtnPv'] : null;
         $this->container['zoneHeaderLiveClickCnt'] = isset($data['zoneHeaderLiveClickCnt']) ? $data['zoneHeaderLiveClickCnt'] : null;
@@ -5148,7 +4435,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['matchType'] = isset($data['matchType']) ? $data['matchType'] : null;
         $this->container['device'] = isset($data['device']) ? $data['device'] : null;
         $this->container['expAvgRank'] = isset($data['expAvgRank']) ? $data['expAvgRank'] : null;
-        $this->container['expOverallTopPosition'] = isset($data['expOverallTopPosition']) ? $data['expOverallTopPosition'] : null;
         $this->container['expOverallTopPv'] = isset($data['expOverallTopPv']) ? $data['expOverallTopPv'] : null;
         $this->container['clkTopPv'] = isset($data['clkTopPv']) ? $data['clkTopPv'] : null;
         $this->container['projectId'] = isset($data['projectId']) ? $data['projectId'] : null;
@@ -6140,54 +5426,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets videoTimeTotalCount
-     *
-     * @return double|mixed
-     */
-    public function getVideoTimeTotalCount()
-    {
-        return $this->container['videoTimeTotalCount'];
-    }
-
-    /**
-     * Sets videoTimeTotalCount
-     *
-     * @param double|mixed $videoTimeTotalCount videoTimeTotalCount
-     *
-     * @return $this
-     */
-    public function setVideoTimeTotalCount($videoTimeTotalCount)
-    {
-        $this->container['videoTimeTotalCount'] = $videoTimeTotalCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlayTotalTimeCount
-     *
-     * @return double|mixed
-     */
-    public function getVideoOuterPlayTotalTimeCount()
-    {
-        return $this->container['videoOuterPlayTotalTimeCount'];
-    }
-
-    /**
-     * Sets videoOuterPlayTotalTimeCount
-     *
-     * @param double|mixed $videoOuterPlayTotalTimeCount videoOuterPlayTotalTimeCount
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlayTotalTimeCount($videoOuterPlayTotalTimeCount)
-    {
-        $this->container['videoOuterPlayTotalTimeCount'] = $videoOuterPlayTotalTimeCount;
-
-        return $this;
-    }
-
-    /**
      * Gets avgUserPlayCount
      *
      * @return double|mixed
@@ -6231,30 +5469,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setVideoOuterPlayTimeCount($videoOuterPlayTimeCount)
     {
         $this->container['videoOuterPlayTimeCount'] = $videoOuterPlayTimeCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlayTimeAvg
-     *
-     * @return double|mixed
-     */
-    public function getVideoOuterPlayTimeAvg()
-    {
-        return $this->container['videoOuterPlayTimeAvg'];
-    }
-
-    /**
-     * Sets videoOuterPlayTimeAvg
-     *
-     * @param double|mixed $videoOuterPlayTimeAvg videoOuterPlayTimeAvg
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlayTimeAvg($videoOuterPlayTimeAvg)
-    {
-        $this->container['videoOuterPlayTimeAvg'] = $videoOuterPlayTimeAvg;
 
         return $this;
     }
@@ -6879,30 +6093,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setClickImageCount($clickImageCount)
     {
         $this->container['clickImageCount'] = $clickImageCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets clickNickCount
-     *
-     * @return int|mixed
-     */
-    public function getClickNickCount()
-    {
-        return $this->container['clickNickCount'];
-    }
-
-    /**
-     * Sets clickNickCount
-     *
-     * @param int|mixed $clickNickCount clickNickCount
-     *
-     * @return $this
-     */
-    public function setClickNickCount($clickNickCount)
-    {
-        $this->container['clickNickCount'] = $clickNickCount;
 
         return $this;
     }
@@ -8127,54 +7317,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setGuideToFollowPageInteractionUsers($guideToFollowPageInteractionUsers)
     {
         $this->container['guideToFollowPageInteractionUsers'] = $guideToFollowPageInteractionUsers;
-
-        return $this;
-    }
-
-    /**
-     * Gets specialPageExpUv
-     *
-     * @return int|mixed
-     */
-    public function getSpecialPageExpUv()
-    {
-        return $this->container['specialPageExpUv'];
-    }
-
-    /**
-     * Sets specialPageExpUv
-     *
-     * @param int|mixed $specialPageExpUv specialPageExpUv
-     *
-     * @return $this
-     */
-    public function setSpecialPageExpUv($specialPageExpUv)
-    {
-        $this->container['specialPageExpUv'] = $specialPageExpUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets specialPageExpCost
-     *
-     * @return int|mixed
-     */
-    public function getSpecialPageExpCost()
-    {
-        return $this->container['specialPageExpCost'];
-    }
-
-    /**
-     * Sets specialPageExpCost
-     *
-     * @param int|mixed $specialPageExpCost specialPageExpCost
-     *
-     * @return $this
-     */
-    public function setSpecialPageExpCost($specialPageExpCost)
-    {
-        $this->container['specialPageExpCost'] = $specialPageExpCost;
 
         return $this;
     }
@@ -12788,54 +11930,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets appRetentionD2Pv
-     *
-     * @return int|mixed
-     */
-    public function getAppRetentionD2Pv()
-    {
-        return $this->container['appRetentionD2Pv'];
-    }
-
-    /**
-     * Sets appRetentionD2Pv
-     *
-     * @param int|mixed $appRetentionD2Pv appRetentionD2Pv
-     *
-     * @return $this
-     */
-    public function setAppRetentionD2Pv($appRetentionD2Pv)
-    {
-        $this->container['appRetentionD2Pv'] = $appRetentionD2Pv;
-
-        return $this;
-    }
-
-    /**
-     * Gets appRetentionD3Pv
-     *
-     * @return int|mixed
-     */
-    public function getAppRetentionD3Pv()
-    {
-        return $this->container['appRetentionD3Pv'];
-    }
-
-    /**
-     * Sets appRetentionD3Pv
-     *
-     * @param int|mixed $appRetentionD3Pv appRetentionD3Pv
-     *
-     * @return $this
-     */
-    public function setAppRetentionD3Pv($appRetentionD3Pv)
-    {
-        $this->container['appRetentionD3Pv'] = $appRetentionD3Pv;
-
-        return $this;
-    }
-
-    /**
      * Gets appRetentionD3Uv
      *
      * @return int|mixed
@@ -12908,54 +12002,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets appRetentionD4Pv
-     *
-     * @return int|mixed
-     */
-    public function getAppRetentionD4Pv()
-    {
-        return $this->container['appRetentionD4Pv'];
-    }
-
-    /**
-     * Sets appRetentionD4Pv
-     *
-     * @param int|mixed $appRetentionD4Pv appRetentionD4Pv
-     *
-     * @return $this
-     */
-    public function setAppRetentionD4Pv($appRetentionD4Pv)
-    {
-        $this->container['appRetentionD4Pv'] = $appRetentionD4Pv;
-
-        return $this;
-    }
-
-    /**
-     * Gets appRetentionD5Pv
-     *
-     * @return int|mixed
-     */
-    public function getAppRetentionD5Pv()
-    {
-        return $this->container['appRetentionD5Pv'];
-    }
-
-    /**
-     * Sets appRetentionD5Pv
-     *
-     * @param int|mixed $appRetentionD5Pv appRetentionD5Pv
-     *
-     * @return $this
-     */
-    public function setAppRetentionD5Pv($appRetentionD5Pv)
-    {
-        $this->container['appRetentionD5Pv'] = $appRetentionD5Pv;
-
-        return $this;
-    }
-
-    /**
      * Gets appRetentionD5Uv
      *
      * @return int|mixed
@@ -13023,54 +12069,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setAppRetentionD5Rate($appRetentionD5Rate)
     {
         $this->container['appRetentionD5Rate'] = $appRetentionD5Rate;
-
-        return $this;
-    }
-
-    /**
-     * Gets appRetentionD6Pv
-     *
-     * @return int|mixed
-     */
-    public function getAppRetentionD6Pv()
-    {
-        return $this->container['appRetentionD6Pv'];
-    }
-
-    /**
-     * Sets appRetentionD6Pv
-     *
-     * @param int|mixed $appRetentionD6Pv appRetentionD6Pv
-     *
-     * @return $this
-     */
-    public function setAppRetentionD6Pv($appRetentionD6Pv)
-    {
-        $this->container['appRetentionD6Pv'] = $appRetentionD6Pv;
-
-        return $this;
-    }
-
-    /**
-     * Gets appRetentionD7Pv
-     *
-     * @return int|mixed
-     */
-    public function getAppRetentionD7Pv()
-    {
-        return $this->container['appRetentionD7Pv'];
-    }
-
-    /**
-     * Sets appRetentionD7Pv
-     *
-     * @param int|mixed $appRetentionD7Pv appRetentionD7Pv
-     *
-     * @return $this
-     */
-    public function setAppRetentionD7Pv($appRetentionD7Pv)
-    {
-        $this->container['appRetentionD7Pv'] = $appRetentionD7Pv;
 
         return $this;
     }
@@ -20132,30 +19130,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets channelsLiveExitPlaUv
-     *
-     * @return int|mixed
-     */
-    public function getChannelsLiveExitPlaUv()
-    {
-        return $this->container['channelsLiveExitPlaUv'];
-    }
-
-    /**
-     * Sets channelsLiveExitPlaUv
-     *
-     * @param int|mixed $channelsLiveExitPlaUv channelsLiveExitPlaUv
-     *
-     * @return $this
-     */
-    public function setChannelsLiveExitPlaUv($channelsLiveExitPlaUv)
-    {
-        $this->container['channelsLiveExitPlaUv'] = $channelsLiveExitPlaUv;
-
-        return $this;
-    }
-
-    /**
      * Gets liveStreamAvgTime
      *
      * @return double|mixed
@@ -20175,54 +19149,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setLiveStreamAvgTime($liveStreamAvgTime)
     {
         $this->container['liveStreamAvgTime'] = $liveStreamAvgTime;
-
-        return $this;
-    }
-
-    /**
-     * Gets followCount
-     *
-     * @return int|mixed
-     */
-    public function getFollowCount()
-    {
-        return $this->container['followCount'];
-    }
-
-    /**
-     * Sets followCount
-     *
-     * @param int|mixed $followCount followCount
-     *
-     * @return $this
-     */
-    public function setFollowCount($followCount)
-    {
-        $this->container['followCount'] = $followCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets followCost
-     *
-     * @return int|mixed
-     */
-    public function getFollowCost()
-    {
-        return $this->container['followCost'];
-    }
-
-    /**
-     * Sets followCost
-     *
-     * @param int|mixed $followCost followCost
-     *
-     * @return $this
-     */
-    public function setFollowCost($followCost)
-    {
-        $this->container['followCost'] = $followCost;
 
         return $this;
     }
@@ -20372,30 +19298,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets bizFollowCount
-     *
-     * @return int|mixed
-     */
-    public function getBizFollowCount()
-    {
-        return $this->container['bizFollowCount'];
-    }
-
-    /**
-     * Sets bizFollowCount
-     *
-     * @param int|mixed $bizFollowCount bizFollowCount
-     *
-     * @return $this
-     */
-    public function setBizFollowCount($bizFollowCount)
-    {
-        $this->container['bizFollowCount'] = $bizFollowCount;
-
-        return $this;
-    }
-
-    /**
      * Gets bizFollowRate
      *
      * @return double|mixed
@@ -20516,54 +19418,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets breakFrameExpPv
-     *
-     * @return int|mixed
-     */
-    public function getBreakFrameExpPv()
-    {
-        return $this->container['breakFrameExpPv'];
-    }
-
-    /**
-     * Sets breakFrameExpPv
-     *
-     * @param int|mixed $breakFrameExpPv breakFrameExpPv
-     *
-     * @return $this
-     */
-    public function setBreakFrameExpPv($breakFrameExpPv)
-    {
-        $this->container['breakFrameExpPv'] = $breakFrameExpPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets breakFrameExpUv
-     *
-     * @return int|mixed
-     */
-    public function getBreakFrameExpUv()
-    {
-        return $this->container['breakFrameExpUv'];
-    }
-
-    /**
-     * Sets breakFrameExpUv
-     *
-     * @param int|mixed $breakFrameExpUv breakFrameExpUv
-     *
-     * @return $this
-     */
-    public function setBreakFrameExpUv($breakFrameExpUv)
-    {
-        $this->container['breakFrameExpUv'] = $breakFrameExpUv;
-
-        return $this;
-    }
-
-    /**
      * Gets breakFramePlayPv
      *
      * @return int|mixed
@@ -20612,30 +19466,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets breakFramePlayDuration
-     *
-     * @return double|mixed
-     */
-    public function getBreakFramePlayDuration()
-    {
-        return $this->container['breakFramePlayDuration'];
-    }
-
-    /**
-     * Sets breakFramePlayDuration
-     *
-     * @param double|mixed $breakFramePlayDuration breakFramePlayDuration
-     *
-     * @return $this
-     */
-    public function setBreakFramePlayDuration($breakFramePlayDuration)
-    {
-        $this->container['breakFramePlayDuration'] = $breakFramePlayDuration;
-
-        return $this;
-    }
-
-    /**
      * Gets avgBreakFramePlayPerUser
      *
      * @return double|mixed
@@ -20655,54 +19485,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setAvgBreakFramePlayPerUser($avgBreakFramePlayPerUser)
     {
         $this->container['avgBreakFramePlayPerUser'] = $avgBreakFramePlayPerUser;
-
-        return $this;
-    }
-
-    /**
-     * Gets breakFrameIpExpPv
-     *
-     * @return int|mixed
-     */
-    public function getBreakFrameIpExpPv()
-    {
-        return $this->container['breakFrameIpExpPv'];
-    }
-
-    /**
-     * Sets breakFrameIpExpPv
-     *
-     * @param int|mixed $breakFrameIpExpPv breakFrameIpExpPv
-     *
-     * @return $this
-     */
-    public function setBreakFrameIpExpPv($breakFrameIpExpPv)
-    {
-        $this->container['breakFrameIpExpPv'] = $breakFrameIpExpPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets breakFrameIpExpUv
-     *
-     * @return int|mixed
-     */
-    public function getBreakFrameIpExpUv()
-    {
-        return $this->container['breakFrameIpExpUv'];
-    }
-
-    /**
-     * Sets breakFrameIpExpUv
-     *
-     * @param int|mixed $breakFrameIpExpUv breakFrameIpExpUv
-     *
-     * @return $this
-     */
-    public function setBreakFrameIpExpUv($breakFrameIpExpUv)
-    {
-        $this->container['breakFrameIpExpUv'] = $breakFrameIpExpUv;
 
         return $this;
     }
@@ -20751,318 +19533,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setBreakFrameIpClkUv($breakFrameIpClkUv)
     {
         $this->container['breakFrameIpClkUv'] = $breakFrameIpClkUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets overallBrandExposure
-     *
-     * @return int|mixed
-     */
-    public function getOverallBrandExposure()
-    {
-        return $this->container['overallBrandExposure'];
-    }
-
-    /**
-     * Sets overallBrandExposure
-     *
-     * @param int|mixed $overallBrandExposure overallBrandExposure
-     *
-     * @return $this
-     */
-    public function setOverallBrandExposure($overallBrandExposure)
-    {
-        $this->container['overallBrandExposure'] = $overallBrandExposure;
-
-        return $this;
-    }
-
-    /**
-     * Gets expHasCostPv
-     *
-     * @return int|mixed
-     */
-    public function getExpHasCostPv()
-    {
-        return $this->container['expHasCostPv'];
-    }
-
-    /**
-     * Sets expHasCostPv
-     *
-     * @param int|mixed $expHasCostPv expHasCostPv
-     *
-     * @return $this
-     */
-    public function setExpHasCostPv($expHasCostPv)
-    {
-        $this->container['expHasCostPv'] = $expHasCostPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets freeExposurePv
-     *
-     * @return int|mixed
-     */
-    public function getFreeExposurePv()
-    {
-        return $this->container['freeExposurePv'];
-    }
-
-    /**
-     * Sets freeExposurePv
-     *
-     * @param int|mixed $freeExposurePv freeExposurePv
-     *
-     * @return $this
-     */
-    public function setFreeExposurePv($freeExposurePv)
-    {
-        $this->container['freeExposurePv'] = $freeExposurePv;
-
-        return $this;
-    }
-
-    /**
-     * Gets brandShareExposurePv
-     *
-     * @return int|mixed
-     */
-    public function getBrandShareExposurePv()
-    {
-        return $this->container['brandShareExposurePv'];
-    }
-
-    /**
-     * Sets brandShareExposurePv
-     *
-     * @param int|mixed $brandShareExposurePv brandShareExposurePv
-     *
-     * @return $this
-     */
-    public function setBrandShareExposurePv($brandShareExposurePv)
-    {
-        $this->container['brandShareExposurePv'] = $brandShareExposurePv;
-
-        return $this;
-    }
-
-    /**
-     * Gets brandShareExposureUv
-     *
-     * @return int|mixed
-     */
-    public function getBrandShareExposureUv()
-    {
-        return $this->container['brandShareExposureUv'];
-    }
-
-    /**
-     * Sets brandShareExposureUv
-     *
-     * @param int|mixed $brandShareExposureUv brandShareExposureUv
-     *
-     * @return $this
-     */
-    public function setBrandShareExposureUv($brandShareExposureUv)
-    {
-        $this->container['brandShareExposureUv'] = $brandShareExposureUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets cvsShareExpToFriendPv
-     *
-     * @return int|mixed
-     */
-    public function getCvsShareExpToFriendPv()
-    {
-        return $this->container['cvsShareExpToFriendPv'];
-    }
-
-    /**
-     * Sets cvsShareExpToFriendPv
-     *
-     * @param int|mixed $cvsShareExpToFriendPv cvsShareExpToFriendPv
-     *
-     * @return $this
-     */
-    public function setCvsShareExpToFriendPv($cvsShareExpToFriendPv)
-    {
-        $this->container['cvsShareExpToFriendPv'] = $cvsShareExpToFriendPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets cvsShareExpToFeedPv
-     *
-     * @return int|mixed
-     */
-    public function getCvsShareExpToFeedPv()
-    {
-        return $this->container['cvsShareExpToFeedPv'];
-    }
-
-    /**
-     * Sets cvsShareExpToFeedPv
-     *
-     * @param int|mixed $cvsShareExpToFeedPv cvsShareExpToFeedPv
-     *
-     * @return $this
-     */
-    public function setCvsShareExpToFeedPv($cvsShareExpToFeedPv)
-    {
-        $this->container['cvsShareExpToFeedPv'] = $cvsShareExpToFeedPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets cvsShareExpToFriendUv
-     *
-     * @return int|mixed
-     */
-    public function getCvsShareExpToFriendUv()
-    {
-        return $this->container['cvsShareExpToFriendUv'];
-    }
-
-    /**
-     * Sets cvsShareExpToFriendUv
-     *
-     * @param int|mixed $cvsShareExpToFriendUv cvsShareExpToFriendUv
-     *
-     * @return $this
-     */
-    public function setCvsShareExpToFriendUv($cvsShareExpToFriendUv)
-    {
-        $this->container['cvsShareExpToFriendUv'] = $cvsShareExpToFriendUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets cvsShareExpToFeedUv
-     *
-     * @return int|mixed
-     */
-    public function getCvsShareExpToFeedUv()
-    {
-        return $this->container['cvsShareExpToFeedUv'];
-    }
-
-    /**
-     * Sets cvsShareExpToFeedUv
-     *
-     * @param int|mixed $cvsShareExpToFeedUv cvsShareExpToFeedUv
-     *
-     * @return $this
-     */
-    public function setCvsShareExpToFeedUv($cvsShareExpToFeedUv)
-    {
-        $this->container['cvsShareExpToFeedUv'] = $cvsShareExpToFeedUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets realCpmCost
-     *
-     * @return int|mixed
-     */
-    public function getRealCpmCost()
-    {
-        return $this->container['realCpmCost'];
-    }
-
-    /**
-     * Sets realCpmCost
-     *
-     * @param int|mixed $realCpmCost realCpmCost
-     *
-     * @return $this
-     */
-    public function setRealCpmCost($realCpmCost)
-    {
-        $this->container['realCpmCost'] = $realCpmCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets expRootUv
-     *
-     * @return int|mixed
-     */
-    public function getExpRootUv()
-    {
-        return $this->container['expRootUv'];
-    }
-
-    /**
-     * Sets expRootUv
-     *
-     * @param int|mixed $expRootUv expRootUv
-     *
-     * @return $this
-     */
-    public function setExpRootUv($expRootUv)
-    {
-        $this->container['expRootUv'] = $expRootUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets expFirstSpreadUv
-     *
-     * @return int|mixed
-     */
-    public function getExpFirstSpreadUv()
-    {
-        return $this->container['expFirstSpreadUv'];
-    }
-
-    /**
-     * Sets expFirstSpreadUv
-     *
-     * @param int|mixed $expFirstSpreadUv expFirstSpreadUv
-     *
-     * @return $this
-     */
-    public function setExpFirstSpreadUv($expFirstSpreadUv)
-    {
-        $this->container['expFirstSpreadUv'] = $expFirstSpreadUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets expSecondSpreadUv
-     *
-     * @return int|mixed
-     */
-    public function getExpSecondSpreadUv()
-    {
-        return $this->container['expSecondSpreadUv'];
-    }
-
-    /**
-     * Sets expSecondSpreadUv
-     *
-     * @param int|mixed $expSecondSpreadUv expSecondSpreadUv
-     *
-     * @return $this
-     */
-    public function setExpSecondSpreadUv($expSecondSpreadUv)
-    {
-        $this->container['expSecondSpreadUv'] = $expSecondSpreadUv;
 
         return $this;
     }
@@ -21260,30 +19730,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets clkTagCommentUv
-     *
-     * @return int|mixed
-     */
-    public function getClkTagCommentUv()
-    {
-        return $this->container['clkTagCommentUv'];
-    }
-
-    /**
-     * Sets clkTagCommentUv
-     *
-     * @param int|mixed $clkTagCommentUv clkTagCommentUv
-     *
-     * @return $this
-     */
-    public function setClkTagCommentUv($clkTagCommentUv)
-    {
-        $this->container['clkTagCommentUv'] = $clkTagCommentUv;
-
-        return $this;
-    }
-
-    /**
      * Gets clkTagContentPv
      *
      * @return int|mixed
@@ -21308,30 +19754,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets clkTagContentUv
-     *
-     * @return int|mixed
-     */
-    public function getClkTagContentUv()
-    {
-        return $this->container['clkTagContentUv'];
-    }
-
-    /**
-     * Sets clkTagContentUv
-     *
-     * @param int|mixed $clkTagContentUv clkTagContentUv
-     *
-     * @return $this
-     */
-    public function setClkTagContentUv($clkTagContentUv)
-    {
-        $this->container['clkTagContentUv'] = $clkTagContentUv;
-
-        return $this;
-    }
-
-    /**
      * Gets clkPoiPv
      *
      * @return int|mixed
@@ -21351,174 +19773,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setClkPoiPv($clkPoiPv)
     {
         $this->container['clkPoiPv'] = $clkPoiPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets clkPoiUv
-     *
-     * @return int|mixed
-     */
-    public function getClkPoiUv()
-    {
-        return $this->container['clkPoiUv'];
-    }
-
-    /**
-     * Sets clkPoiUv
-     *
-     * @param int|mixed $clkPoiUv clkPoiUv
-     *
-     * @return $this
-     */
-    public function setClkPoiUv($clkPoiUv)
-    {
-        $this->container['clkPoiUv'] = $clkPoiUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets clkChoiceLeftPv
-     *
-     * @return int|mixed
-     */
-    public function getClkChoiceLeftPv()
-    {
-        return $this->container['clkChoiceLeftPv'];
-    }
-
-    /**
-     * Sets clkChoiceLeftPv
-     *
-     * @param int|mixed $clkChoiceLeftPv clkChoiceLeftPv
-     *
-     * @return $this
-     */
-    public function setClkChoiceLeftPv($clkChoiceLeftPv)
-    {
-        $this->container['clkChoiceLeftPv'] = $clkChoiceLeftPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets clkChoiceLeftUv
-     *
-     * @return int|mixed
-     */
-    public function getClkChoiceLeftUv()
-    {
-        return $this->container['clkChoiceLeftUv'];
-    }
-
-    /**
-     * Sets clkChoiceLeftUv
-     *
-     * @param int|mixed $clkChoiceLeftUv clkChoiceLeftUv
-     *
-     * @return $this
-     */
-    public function setClkChoiceLeftUv($clkChoiceLeftUv)
-    {
-        $this->container['clkChoiceLeftUv'] = $clkChoiceLeftUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets clkChoiceRightPv
-     *
-     * @return int|mixed
-     */
-    public function getClkChoiceRightPv()
-    {
-        return $this->container['clkChoiceRightPv'];
-    }
-
-    /**
-     * Sets clkChoiceRightPv
-     *
-     * @param int|mixed $clkChoiceRightPv clkChoiceRightPv
-     *
-     * @return $this
-     */
-    public function setClkChoiceRightPv($clkChoiceRightPv)
-    {
-        $this->container['clkChoiceRightPv'] = $clkChoiceRightPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets clkChoiceRightUv
-     *
-     * @return int|mixed
-     */
-    public function getClkChoiceRightUv()
-    {
-        return $this->container['clkChoiceRightUv'];
-    }
-
-    /**
-     * Sets clkChoiceRightUv
-     *
-     * @param int|mixed $clkChoiceRightUv clkChoiceRightUv
-     *
-     * @return $this
-     */
-    public function setClkChoiceRightUv($clkChoiceRightUv)
-    {
-        $this->container['clkChoiceRightUv'] = $clkChoiceRightUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets clkCardTagPv
-     *
-     * @return int|mixed
-     */
-    public function getClkCardTagPv()
-    {
-        return $this->container['clkCardTagPv'];
-    }
-
-    /**
-     * Sets clkCardTagPv
-     *
-     * @param int|mixed $clkCardTagPv clkCardTagPv
-     *
-     * @return $this
-     */
-    public function setClkCardTagPv($clkCardTagPv)
-    {
-        $this->container['clkCardTagPv'] = $clkCardTagPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets clkCardTagUv
-     *
-     * @return int|mixed
-     */
-    public function getClkCardTagUv()
-    {
-        return $this->container['clkCardTagUv'];
-    }
-
-    /**
-     * Sets clkCardTagUv
-     *
-     * @param int|mixed $clkCardTagUv clkCardTagUv
-     *
-     * @return $this
-     */
-    public function setClkCardTagUv($clkCardTagUv)
-    {
-        $this->container['clkCardTagUv'] = $clkCardTagUv;
 
         return $this;
     }
@@ -21596,30 +19850,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets clkSliderCardBtnUv
-     *
-     * @return int|mixed
-     */
-    public function getClkSliderCardBtnUv()
-    {
-        return $this->container['clkSliderCardBtnUv'];
-    }
-
-    /**
-     * Sets clkSliderCardBtnUv
-     *
-     * @param int|mixed $clkSliderCardBtnUv clkSliderCardBtnUv
-     *
-     * @return $this
-     */
-    public function setClkSliderCardBtnUv($clkSliderCardBtnUv)
-    {
-        $this->container['clkSliderCardBtnUv'] = $clkSliderCardBtnUv;
-
-        return $this;
-    }
-
-    /**
      * Gets cvsBubbleShareClkPv
      *
      * @return int|mixed
@@ -21692,102 +19922,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets lpStarPageExpUv
-     *
-     * @return int|mixed
-     */
-    public function getLpStarPageExpUv()
-    {
-        return $this->container['lpStarPageExpUv'];
-    }
-
-    /**
-     * Sets lpStarPageExpUv
-     *
-     * @param int|mixed $lpStarPageExpUv lpStarPageExpUv
-     *
-     * @return $this
-     */
-    public function setLpStarPageExpUv($lpStarPageExpUv)
-    {
-        $this->container['lpStarPageExpUv'] = $lpStarPageExpUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets lpStarPageClkPv
-     *
-     * @return int|mixed
-     */
-    public function getLpStarPageClkPv()
-    {
-        return $this->container['lpStarPageClkPv'];
-    }
-
-    /**
-     * Sets lpStarPageClkPv
-     *
-     * @param int|mixed $lpStarPageClkPv lpStarPageClkPv
-     *
-     * @return $this
-     */
-    public function setLpStarPageClkPv($lpStarPageClkPv)
-    {
-        $this->container['lpStarPageClkPv'] = $lpStarPageClkPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets lpStarPageClkUv
-     *
-     * @return int|mixed
-     */
-    public function getLpStarPageClkUv()
-    {
-        return $this->container['lpStarPageClkUv'];
-    }
-
-    /**
-     * Sets lpStarPageClkUv
-     *
-     * @param int|mixed $lpStarPageClkUv lpStarPageClkUv
-     *
-     * @return $this
-     */
-    public function setLpStarPageClkUv($lpStarPageClkUv)
-    {
-        $this->container['lpStarPageClkUv'] = $lpStarPageClkUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets lpStarPageClkRate
-     *
-     * @return double|mixed
-     */
-    public function getLpStarPageClkRate()
-    {
-        return $this->container['lpStarPageClkRate'];
-    }
-
-    /**
-     * Sets lpStarPageClkRate
-     *
-     * @param double|mixed $lpStarPageClkRate lpStarPageClkRate
-     *
-     * @return $this
-     */
-    public function setLpStarPageClkRate($lpStarPageClkRate)
-    {
-        $this->container['lpStarPageClkRate'] = $lpStarPageClkRate;
-
-        return $this;
-    }
-
-    /**
      * Gets finderTopicSliderPv
      *
      * @return int|mixed
@@ -21807,78 +19941,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setFinderTopicSliderPv($finderTopicSliderPv)
     {
         $this->container['finderTopicSliderPv'] = $finderTopicSliderPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets finderTopicSliderUv
-     *
-     * @return int|mixed
-     */
-    public function getFinderTopicSliderUv()
-    {
-        return $this->container['finderTopicSliderUv'];
-    }
-
-    /**
-     * Sets finderTopicSliderUv
-     *
-     * @param int|mixed $finderTopicSliderUv finderTopicSliderUv
-     *
-     * @return $this
-     */
-    public function setFinderTopicSliderUv($finderTopicSliderUv)
-    {
-        $this->container['finderTopicSliderUv'] = $finderTopicSliderUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets finderTopicSliderAutoPv
-     *
-     * @return int|mixed
-     */
-    public function getFinderTopicSliderAutoPv()
-    {
-        return $this->container['finderTopicSliderAutoPv'];
-    }
-
-    /**
-     * Sets finderTopicSliderAutoPv
-     *
-     * @param int|mixed $finderTopicSliderAutoPv finderTopicSliderAutoPv
-     *
-     * @return $this
-     */
-    public function setFinderTopicSliderAutoPv($finderTopicSliderAutoPv)
-    {
-        $this->container['finderTopicSliderAutoPv'] = $finderTopicSliderAutoPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets finderTopicSliderAutoUv
-     *
-     * @return int|mixed
-     */
-    public function getFinderTopicSliderAutoUv()
-    {
-        return $this->container['finderTopicSliderAutoUv'];
-    }
-
-    /**
-     * Sets finderTopicSliderAutoUv
-     *
-     * @param int|mixed $finderTopicSliderAutoUv finderTopicSliderAutoUv
-     *
-     * @return $this
-     */
-    public function setFinderTopicSliderAutoUv($finderTopicSliderAutoUv)
-    {
-        $this->container['finderTopicSliderAutoUv'] = $finderTopicSliderAutoUv;
 
         return $this;
     }
@@ -21927,126 +19989,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setFinderTopicSliderManualPv($finderTopicSliderManualPv)
     {
         $this->container['finderTopicSliderManualPv'] = $finderTopicSliderManualPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets finderTopicSliderManualUv
-     *
-     * @return int|mixed
-     */
-    public function getFinderTopicSliderManualUv()
-    {
-        return $this->container['finderTopicSliderManualUv'];
-    }
-
-    /**
-     * Sets finderTopicSliderManualUv
-     *
-     * @param int|mixed $finderTopicSliderManualUv finderTopicSliderManualUv
-     *
-     * @return $this
-     */
-    public function setFinderTopicSliderManualUv($finderTopicSliderManualUv)
-    {
-        $this->container['finderTopicSliderManualUv'] = $finderTopicSliderManualUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets fullsrcSlidePv
-     *
-     * @return int|mixed
-     */
-    public function getFullsrcSlidePv()
-    {
-        return $this->container['fullsrcSlidePv'];
-    }
-
-    /**
-     * Sets fullsrcSlidePv
-     *
-     * @param int|mixed $fullsrcSlidePv fullsrcSlidePv
-     *
-     * @return $this
-     */
-    public function setFullsrcSlidePv($fullsrcSlidePv)
-    {
-        $this->container['fullsrcSlidePv'] = $fullsrcSlidePv;
-
-        return $this;
-    }
-
-    /**
-     * Gets galleryCardSliderPv
-     *
-     * @return int|mixed
-     */
-    public function getGalleryCardSliderPv()
-    {
-        return $this->container['galleryCardSliderPv'];
-    }
-
-    /**
-     * Sets galleryCardSliderPv
-     *
-     * @param int|mixed $galleryCardSliderPv galleryCardSliderPv
-     *
-     * @return $this
-     */
-    public function setGalleryCardSliderPv($galleryCardSliderPv)
-    {
-        $this->container['galleryCardSliderPv'] = $galleryCardSliderPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets galleryCardSliderUv
-     *
-     * @return int|mixed
-     */
-    public function getGalleryCardSliderUv()
-    {
-        return $this->container['galleryCardSliderUv'];
-    }
-
-    /**
-     * Sets galleryCardSliderUv
-     *
-     * @param int|mixed $galleryCardSliderUv galleryCardSliderUv
-     *
-     * @return $this
-     */
-    public function setGalleryCardSliderUv($galleryCardSliderUv)
-    {
-        $this->container['galleryCardSliderUv'] = $galleryCardSliderUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets shareUv
-     *
-     * @return int|mixed
-     */
-    public function getShareUv()
-    {
-        return $this->container['shareUv'];
-    }
-
-    /**
-     * Sets shareUv
-     *
-     * @param int|mixed $shareUv shareUv
-     *
-     * @return $this
-     */
-    public function setShareUv($shareUv)
-    {
-        $this->container['shareUv'] = $shareUv;
 
         return $this;
     }
@@ -22148,222 +20090,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets praiseCommentPv
-     *
-     * @return int|mixed
-     */
-    public function getPraiseCommentPv()
-    {
-        return $this->container['praiseCommentPv'];
-    }
-
-    /**
-     * Sets praiseCommentPv
-     *
-     * @param int|mixed $praiseCommentPv praiseCommentPv
-     *
-     * @return $this
-     */
-    public function setPraiseCommentPv($praiseCommentPv)
-    {
-        $this->container['praiseCommentPv'] = $praiseCommentPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets praiseCommentRate
-     *
-     * @return double|mixed
-     */
-    public function getPraiseCommentRate()
-    {
-        return $this->container['praiseCommentRate'];
-    }
-
-    /**
-     * Sets praiseCommentRate
-     *
-     * @param double|mixed $praiseCommentRate praiseCommentRate
-     *
-     * @return $this
-     */
-    public function setPraiseCommentRate($praiseCommentRate)
-    {
-        $this->container['praiseCommentRate'] = $praiseCommentRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets praiseCommentSharePv
-     *
-     * @return int|mixed
-     */
-    public function getPraiseCommentSharePv()
-    {
-        return $this->container['praiseCommentSharePv'];
-    }
-
-    /**
-     * Sets praiseCommentSharePv
-     *
-     * @param int|mixed $praiseCommentSharePv praiseCommentSharePv
-     *
-     * @return $this
-     */
-    public function setPraiseCommentSharePv($praiseCommentSharePv)
-    {
-        $this->container['praiseCommentSharePv'] = $praiseCommentSharePv;
-
-        return $this;
-    }
-
-    /**
-     * Gets praiseCommentShareUv
-     *
-     * @return int|mixed
-     */
-    public function getPraiseCommentShareUv()
-    {
-        return $this->container['praiseCommentShareUv'];
-    }
-
-    /**
-     * Sets praiseCommentShareUv
-     *
-     * @param int|mixed $praiseCommentShareUv praiseCommentShareUv
-     *
-     * @return $this
-     */
-    public function setPraiseCommentShareUv($praiseCommentShareUv)
-    {
-        $this->container['praiseCommentShareUv'] = $praiseCommentShareUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets commentAtFriendPv
-     *
-     * @return int|mixed
-     */
-    public function getCommentAtFriendPv()
-    {
-        return $this->container['commentAtFriendPv'];
-    }
-
-    /**
-     * Sets commentAtFriendPv
-     *
-     * @param int|mixed $commentAtFriendPv commentAtFriendPv
-     *
-     * @return $this
-     */
-    public function setCommentAtFriendPv($commentAtFriendPv)
-    {
-        $this->container['commentAtFriendPv'] = $commentAtFriendPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets commentAtFriendUv
-     *
-     * @return int|mixed
-     */
-    public function getCommentAtFriendUv()
-    {
-        return $this->container['commentAtFriendUv'];
-    }
-
-    /**
-     * Sets commentAtFriendUv
-     *
-     * @param int|mixed $commentAtFriendUv commentAtFriendUv
-     *
-     * @return $this
-     */
-    public function setCommentAtFriendUv($commentAtFriendUv)
-    {
-        $this->container['commentAtFriendUv'] = $commentAtFriendUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets commentReplyFristPv
-     *
-     * @return int|mixed
-     */
-    public function getCommentReplyFristPv()
-    {
-        return $this->container['commentReplyFristPv'];
-    }
-
-    /**
-     * Sets commentReplyFristPv
-     *
-     * @param int|mixed $commentReplyFristPv commentReplyFristPv
-     *
-     * @return $this
-     */
-    public function setCommentReplyFristPv($commentReplyFristPv)
-    {
-        $this->container['commentReplyFristPv'] = $commentReplyFristPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets commentReplyFristUv
-     *
-     * @return int|mixed
-     */
-    public function getCommentReplyFristUv()
-    {
-        return $this->container['commentReplyFristUv'];
-    }
-
-    /**
-     * Sets commentReplyFristUv
-     *
-     * @param int|mixed $commentReplyFristUv commentReplyFristUv
-     *
-     * @return $this
-     */
-    public function setCommentReplyFristUv($commentReplyFristUv)
-    {
-        $this->container['commentReplyFristUv'] = $commentReplyFristUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets cvsFavPv
-     *
-     * @return int|mixed
-     */
-    public function getCvsFavPv()
-    {
-        return $this->container['cvsFavPv'];
-    }
-
-    /**
-     * Sets cvsFavPv
-     *
-     * @param int|mixed $cvsFavPv cvsFavPv
-     *
-     * @return $this
-     */
-    public function setCvsFavPv($cvsFavPv)
-    {
-        $this->container['cvsFavPv'] = $cvsFavPv;
-
-        return $this;
-    }
-
-    /**
      * Gets engagePv
      *
      * @return int|mixed
@@ -22383,78 +20109,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setEngagePv($engagePv)
     {
         $this->container['engagePv'] = $engagePv;
-
-        return $this;
-    }
-
-    /**
-     * Gets engageUv
-     *
-     * @return int|mixed
-     */
-    public function getEngageUv()
-    {
-        return $this->container['engageUv'];
-    }
-
-    /**
-     * Sets engageUv
-     *
-     * @param int|mixed $engageUv engageUv
-     *
-     * @return $this
-     */
-    public function setEngageUv($engageUv)
-    {
-        $this->container['engageUv'] = $engageUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets overallEngageUvRate
-     *
-     * @return double|mixed
-     */
-    public function getOverallEngageUvRate()
-    {
-        return $this->container['overallEngageUvRate'];
-    }
-
-    /**
-     * Sets overallEngageUvRate
-     *
-     * @param double|mixed $overallEngageUvRate overallEngageUvRate
-     *
-     * @return $this
-     */
-    public function setOverallEngageUvRate($overallEngageUvRate)
-    {
-        $this->container['overallEngageUvRate'] = $overallEngageUvRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets overallEngagePvRate
-     *
-     * @return double|mixed
-     */
-    public function getOverallEngagePvRate()
-    {
-        return $this->container['overallEngagePvRate'];
-    }
-
-    /**
-     * Sets overallEngagePvRate
-     *
-     * @param double|mixed $overallEngagePvRate overallEngagePvRate
-     *
-     * @return $this
-     */
-    public function setOverallEngagePvRate($overallEngagePvRate)
-    {
-        $this->container['overallEngagePvRate'] = $overallEngagePvRate;
 
         return $this;
     }
@@ -22484,294 +20138,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets interactSuccUv
-     *
-     * @return int|mixed
-     */
-    public function getInteractSuccUv()
-    {
-        return $this->container['interactSuccUv'];
-    }
-
-    /**
-     * Sets interactSuccUv
-     *
-     * @param int|mixed $interactSuccUv interactSuccUv
-     *
-     * @return $this
-     */
-    public function setInteractSuccUv($interactSuccUv)
-    {
-        $this->container['interactSuccUv'] = $interactSuccUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets interactRootUv
-     *
-     * @return int|mixed
-     */
-    public function getInteractRootUv()
-    {
-        return $this->container['interactRootUv'];
-    }
-
-    /**
-     * Sets interactRootUv
-     *
-     * @param int|mixed $interactRootUv interactRootUv
-     *
-     * @return $this
-     */
-    public function setInteractRootUv($interactRootUv)
-    {
-        $this->container['interactRootUv'] = $interactRootUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets interactFirstSpreadUv
-     *
-     * @return int|mixed
-     */
-    public function getInteractFirstSpreadUv()
-    {
-        return $this->container['interactFirstSpreadUv'];
-    }
-
-    /**
-     * Sets interactFirstSpreadUv
-     *
-     * @param int|mixed $interactFirstSpreadUv interactFirstSpreadUv
-     *
-     * @return $this
-     */
-    public function setInteractFirstSpreadUv($interactFirstSpreadUv)
-    {
-        $this->container['interactFirstSpreadUv'] = $interactFirstSpreadUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets interactSecondSpreadUv
-     *
-     * @return int|mixed
-     */
-    public function getInteractSecondSpreadUv()
-    {
-        return $this->container['interactSecondSpreadUv'];
-    }
-
-    /**
-     * Sets interactSecondSpreadUv
-     *
-     * @param int|mixed $interactSecondSpreadUv interactSecondSpreadUv
-     *
-     * @return $this
-     */
-    public function setInteractSecondSpreadUv($interactSecondSpreadUv)
-    {
-        $this->container['interactSecondSpreadUv'] = $interactSecondSpreadUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets interactRootRate
-     *
-     * @return double|mixed
-     */
-    public function getInteractRootRate()
-    {
-        return $this->container['interactRootRate'];
-    }
-
-    /**
-     * Sets interactRootRate
-     *
-     * @param double|mixed $interactRootRate interactRootRate
-     *
-     * @return $this
-     */
-    public function setInteractRootRate($interactRootRate)
-    {
-        $this->container['interactRootRate'] = $interactRootRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets interactFirstSpreadRate
-     *
-     * @return double|mixed
-     */
-    public function getInteractFirstSpreadRate()
-    {
-        return $this->container['interactFirstSpreadRate'];
-    }
-
-    /**
-     * Sets interactFirstSpreadRate
-     *
-     * @param double|mixed $interactFirstSpreadRate interactFirstSpreadRate
-     *
-     * @return $this
-     */
-    public function setInteractFirstSpreadRate($interactFirstSpreadRate)
-    {
-        $this->container['interactFirstSpreadRate'] = $interactFirstSpreadRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets interactSecondSpreadRate
-     *
-     * @return double|mixed
-     */
-    public function getInteractSecondSpreadRate()
-    {
-        return $this->container['interactSecondSpreadRate'];
-    }
-
-    /**
-     * Sets interactSecondSpreadRate
-     *
-     * @param double|mixed $interactSecondSpreadRate interactSecondSpreadRate
-     *
-     * @return $this
-     */
-    public function setInteractSecondSpreadRate($interactSecondSpreadRate)
-    {
-        $this->container['interactSecondSpreadRate'] = $interactSecondSpreadRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets finderTopicSliderCardExpPv
-     *
-     * @return int|mixed
-     */
-    public function getFinderTopicSliderCardExpPv()
-    {
-        return $this->container['finderTopicSliderCardExpPv'];
-    }
-
-    /**
-     * Sets finderTopicSliderCardExpPv
-     *
-     * @param int|mixed $finderTopicSliderCardExpPv finderTopicSliderCardExpPv
-     *
-     * @return $this
-     */
-    public function setFinderTopicSliderCardExpPv($finderTopicSliderCardExpPv)
-    {
-        $this->container['finderTopicSliderCardExpPv'] = $finderTopicSliderCardExpPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets finderTopicSliderCardClkPv
-     *
-     * @return int|mixed
-     */
-    public function getFinderTopicSliderCardClkPv()
-    {
-        return $this->container['finderTopicSliderCardClkPv'];
-    }
-
-    /**
-     * Sets finderTopicSliderCardClkPv
-     *
-     * @param int|mixed $finderTopicSliderCardClkPv finderTopicSliderCardClkPv
-     *
-     * @return $this
-     */
-    public function setFinderTopicSliderCardClkPv($finderTopicSliderCardClkPv)
-    {
-        $this->container['finderTopicSliderCardClkPv'] = $finderTopicSliderCardClkPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets finderTopicSliderVideoPlayPv
-     *
-     * @return int|mixed
-     */
-    public function getFinderTopicSliderVideoPlayPv()
-    {
-        return $this->container['finderTopicSliderVideoPlayPv'];
-    }
-
-    /**
-     * Sets finderTopicSliderVideoPlayPv
-     *
-     * @param int|mixed $finderTopicSliderVideoPlayPv finderTopicSliderVideoPlayPv
-     *
-     * @return $this
-     */
-    public function setFinderTopicSliderVideoPlayPv($finderTopicSliderVideoPlayPv)
-    {
-        $this->container['finderTopicSliderVideoPlayPv'] = $finderTopicSliderVideoPlayPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets finderTopicSliderVideoPlayUv
-     *
-     * @return int|mixed
-     */
-    public function getFinderTopicSliderVideoPlayUv()
-    {
-        return $this->container['finderTopicSliderVideoPlayUv'];
-    }
-
-    /**
-     * Sets finderTopicSliderVideoPlayUv
-     *
-     * @param int|mixed $finderTopicSliderVideoPlayUv finderTopicSliderVideoPlayUv
-     *
-     * @return $this
-     */
-    public function setFinderTopicSliderVideoPlayUv($finderTopicSliderVideoPlayUv)
-    {
-        $this->container['finderTopicSliderVideoPlayUv'] = $finderTopicSliderVideoPlayUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets stayDurationAll
-     *
-     * @return double|mixed
-     */
-    public function getStayDurationAll()
-    {
-        return $this->container['stayDurationAll'];
-    }
-
-    /**
-     * Sets stayDurationAll
-     *
-     * @param double|mixed $stayDurationAll stayDurationAll
-     *
-     * @return $this
-     */
-    public function setStayDurationAll($stayDurationAll)
-    {
-        $this->container['stayDurationAll'] = $stayDurationAll;
-
-        return $this;
-    }
-
-    /**
      * Gets durationPerUser
      *
      * @return double|mixed
@@ -22791,54 +20157,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setDurationPerUser($durationPerUser)
     {
         $this->container['durationPerUser'] = $durationPerUser;
-
-        return $this;
-    }
-
-    /**
-     * Gets shortVideoAvgStayTime
-     *
-     * @return double|mixed
-     */
-    public function getShortVideoAvgStayTime()
-    {
-        return $this->container['shortVideoAvgStayTime'];
-    }
-
-    /**
-     * Sets shortVideoAvgStayTime
-     *
-     * @param double|mixed $shortVideoAvgStayTime shortVideoAvgStayTime
-     *
-     * @return $this
-     */
-    public function setShortVideoAvgStayTime($shortVideoAvgStayTime)
-    {
-        $this->container['shortVideoAvgStayTime'] = $shortVideoAvgStayTime;
-
-        return $this;
-    }
-
-    /**
-     * Gets stayDurationOuter
-     *
-     * @return double|mixed
-     */
-    public function getStayDurationOuter()
-    {
-        return $this->container['stayDurationOuter'];
-    }
-
-    /**
-     * Sets stayDurationOuter
-     *
-     * @param double|mixed $stayDurationOuter stayDurationOuter
-     *
-     * @return $this
-     */
-    public function setStayDurationOuter($stayDurationOuter)
-    {
-        $this->container['stayDurationOuter'] = $stayDurationOuter;
 
         return $this;
     }
@@ -22868,54 +20186,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets shortVideoAvgViewStayTime
-     *
-     * @return double|mixed
-     */
-    public function getShortVideoAvgViewStayTime()
-    {
-        return $this->container['shortVideoAvgViewStayTime'];
-    }
-
-    /**
-     * Sets shortVideoAvgViewStayTime
-     *
-     * @param double|mixed $shortVideoAvgViewStayTime shortVideoAvgViewStayTime
-     *
-     * @return $this
-     */
-    public function setShortVideoAvgViewStayTime($shortVideoAvgViewStayTime)
-    {
-        $this->container['shortVideoAvgViewStayTime'] = $shortVideoAvgViewStayTime;
-
-        return $this;
-    }
-
-    /**
-     * Gets stayDurationCvs
-     *
-     * @return double|mixed
-     */
-    public function getStayDurationCvs()
-    {
-        return $this->container['stayDurationCvs'];
-    }
-
-    /**
-     * Sets stayDurationCvs
-     *
-     * @param double|mixed $stayDurationCvs stayDurationCvs
-     *
-     * @return $this
-     */
-    public function setStayDurationCvs($stayDurationCvs)
-    {
-        $this->container['stayDurationCvs'] = $stayDurationCvs;
-
-        return $this;
-    }
-
-    /**
      * Gets durationKeyPagePerUser
      *
      * @return double|mixed
@@ -22935,510 +20205,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setDurationKeyPagePerUser($durationKeyPagePerUser)
     {
         $this->container['durationKeyPagePerUser'] = $durationKeyPagePerUser;
-
-        return $this;
-    }
-
-    /**
-     * Gets stayDurationAll02Uv
-     *
-     * @return int|mixed
-     */
-    public function getStayDurationAll02Uv()
-    {
-        return $this->container['stayDurationAll02Uv'];
-    }
-
-    /**
-     * Sets stayDurationAll02Uv
-     *
-     * @param int|mixed $stayDurationAll02Uv stayDurationAll02Uv
-     *
-     * @return $this
-     */
-    public function setStayDurationAll02Uv($stayDurationAll02Uv)
-    {
-        $this->container['stayDurationAll02Uv'] = $stayDurationAll02Uv;
-
-        return $this;
-    }
-
-    /**
-     * Gets stayDurationAll02Rate
-     *
-     * @return double|mixed
-     */
-    public function getStayDurationAll02Rate()
-    {
-        return $this->container['stayDurationAll02Rate'];
-    }
-
-    /**
-     * Sets stayDurationAll02Rate
-     *
-     * @param double|mixed $stayDurationAll02Rate stayDurationAll02Rate
-     *
-     * @return $this
-     */
-    public function setStayDurationAll02Rate($stayDurationAll02Rate)
-    {
-        $this->container['stayDurationAll02Rate'] = $stayDurationAll02Rate;
-
-        return $this;
-    }
-
-    /**
-     * Gets stayDurationAll34Uv
-     *
-     * @return int|mixed
-     */
-    public function getStayDurationAll34Uv()
-    {
-        return $this->container['stayDurationAll34Uv'];
-    }
-
-    /**
-     * Sets stayDurationAll34Uv
-     *
-     * @param int|mixed $stayDurationAll34Uv stayDurationAll34Uv
-     *
-     * @return $this
-     */
-    public function setStayDurationAll34Uv($stayDurationAll34Uv)
-    {
-        $this->container['stayDurationAll34Uv'] = $stayDurationAll34Uv;
-
-        return $this;
-    }
-
-    /**
-     * Gets stayDurationAll34Rate
-     *
-     * @return double|mixed
-     */
-    public function getStayDurationAll34Rate()
-    {
-        return $this->container['stayDurationAll34Rate'];
-    }
-
-    /**
-     * Sets stayDurationAll34Rate
-     *
-     * @param double|mixed $stayDurationAll34Rate stayDurationAll34Rate
-     *
-     * @return $this
-     */
-    public function setStayDurationAll34Rate($stayDurationAll34Rate)
-    {
-        $this->container['stayDurationAll34Rate'] = $stayDurationAll34Rate;
-
-        return $this;
-    }
-
-    /**
-     * Gets stayDurationAll510Uv
-     *
-     * @return int|mixed
-     */
-    public function getStayDurationAll510Uv()
-    {
-        return $this->container['stayDurationAll510Uv'];
-    }
-
-    /**
-     * Sets stayDurationAll510Uv
-     *
-     * @param int|mixed $stayDurationAll510Uv stayDurationAll510Uv
-     *
-     * @return $this
-     */
-    public function setStayDurationAll510Uv($stayDurationAll510Uv)
-    {
-        $this->container['stayDurationAll510Uv'] = $stayDurationAll510Uv;
-
-        return $this;
-    }
-
-    /**
-     * Gets stayDurationAll510Rate
-     *
-     * @return double|mixed
-     */
-    public function getStayDurationAll510Rate()
-    {
-        return $this->container['stayDurationAll510Rate'];
-    }
-
-    /**
-     * Sets stayDurationAll510Rate
-     *
-     * @param double|mixed $stayDurationAll510Rate stayDurationAll510Rate
-     *
-     * @return $this
-     */
-    public function setStayDurationAll510Rate($stayDurationAll510Rate)
-    {
-        $this->container['stayDurationAll510Rate'] = $stayDurationAll510Rate;
-
-        return $this;
-    }
-
-    /**
-     * Gets stayDurationAllAbove10Uv
-     *
-     * @return int|mixed
-     */
-    public function getStayDurationAllAbove10Uv()
-    {
-        return $this->container['stayDurationAllAbove10Uv'];
-    }
-
-    /**
-     * Sets stayDurationAllAbove10Uv
-     *
-     * @param int|mixed $stayDurationAllAbove10Uv stayDurationAllAbove10Uv
-     *
-     * @return $this
-     */
-    public function setStayDurationAllAbove10Uv($stayDurationAllAbove10Uv)
-    {
-        $this->container['stayDurationAllAbove10Uv'] = $stayDurationAllAbove10Uv;
-
-        return $this;
-    }
-
-    /**
-     * Gets stayDurationAllAbove10Rate
-     *
-     * @return double|mixed
-     */
-    public function getStayDurationAllAbove10Rate()
-    {
-        return $this->container['stayDurationAllAbove10Rate'];
-    }
-
-    /**
-     * Sets stayDurationAllAbove10Rate
-     *
-     * @param double|mixed $stayDurationAllAbove10Rate stayDurationAllAbove10Rate
-     *
-     * @return $this
-     */
-    public function setStayDurationAllAbove10Rate($stayDurationAllAbove10Rate)
-    {
-        $this->container['stayDurationAllAbove10Rate'] = $stayDurationAllAbove10Rate;
-
-        return $this;
-    }
-
-    /**
-     * Gets stayDurationAllAbove5Uv
-     *
-     * @return int|mixed
-     */
-    public function getStayDurationAllAbove5Uv()
-    {
-        return $this->container['stayDurationAllAbove5Uv'];
-    }
-
-    /**
-     * Sets stayDurationAllAbove5Uv
-     *
-     * @param int|mixed $stayDurationAllAbove5Uv stayDurationAllAbove5Uv
-     *
-     * @return $this
-     */
-    public function setStayDurationAllAbove5Uv($stayDurationAllAbove5Uv)
-    {
-        $this->container['stayDurationAllAbove5Uv'] = $stayDurationAllAbove5Uv;
-
-        return $this;
-    }
-
-    /**
-     * Gets stayDurationAllAbove5Rate
-     *
-     * @return double|mixed
-     */
-    public function getStayDurationAllAbove5Rate()
-    {
-        return $this->container['stayDurationAllAbove5Rate'];
-    }
-
-    /**
-     * Sets stayDurationAllAbove5Rate
-     *
-     * @param double|mixed $stayDurationAllAbove5Rate stayDurationAllAbove5Rate
-     *
-     * @return $this
-     */
-    public function setStayDurationAllAbove5Rate($stayDurationAllAbove5Rate)
-    {
-        $this->container['stayDurationAllAbove5Rate'] = $stayDurationAllAbove5Rate;
-
-        return $this;
-    }
-
-    /**
-     * Gets stayDurationCvs02Uv
-     *
-     * @return int|mixed
-     */
-    public function getStayDurationCvs02Uv()
-    {
-        return $this->container['stayDurationCvs02Uv'];
-    }
-
-    /**
-     * Sets stayDurationCvs02Uv
-     *
-     * @param int|mixed $stayDurationCvs02Uv stayDurationCvs02Uv
-     *
-     * @return $this
-     */
-    public function setStayDurationCvs02Uv($stayDurationCvs02Uv)
-    {
-        $this->container['stayDurationCvs02Uv'] = $stayDurationCvs02Uv;
-
-        return $this;
-    }
-
-    /**
-     * Gets stayDurationCvs02Rate
-     *
-     * @return double|mixed
-     */
-    public function getStayDurationCvs02Rate()
-    {
-        return $this->container['stayDurationCvs02Rate'];
-    }
-
-    /**
-     * Sets stayDurationCvs02Rate
-     *
-     * @param double|mixed $stayDurationCvs02Rate stayDurationCvs02Rate
-     *
-     * @return $this
-     */
-    public function setStayDurationCvs02Rate($stayDurationCvs02Rate)
-    {
-        $this->container['stayDurationCvs02Rate'] = $stayDurationCvs02Rate;
-
-        return $this;
-    }
-
-    /**
-     * Gets stayDurationCvs39Uv
-     *
-     * @return int|mixed
-     */
-    public function getStayDurationCvs39Uv()
-    {
-        return $this->container['stayDurationCvs39Uv'];
-    }
-
-    /**
-     * Sets stayDurationCvs39Uv
-     *
-     * @param int|mixed $stayDurationCvs39Uv stayDurationCvs39Uv
-     *
-     * @return $this
-     */
-    public function setStayDurationCvs39Uv($stayDurationCvs39Uv)
-    {
-        $this->container['stayDurationCvs39Uv'] = $stayDurationCvs39Uv;
-
-        return $this;
-    }
-
-    /**
-     * Gets stayDurationCvs39Rate
-     *
-     * @return double|mixed
-     */
-    public function getStayDurationCvs39Rate()
-    {
-        return $this->container['stayDurationCvs39Rate'];
-    }
-
-    /**
-     * Sets stayDurationCvs39Rate
-     *
-     * @param double|mixed $stayDurationCvs39Rate stayDurationCvs39Rate
-     *
-     * @return $this
-     */
-    public function setStayDurationCvs39Rate($stayDurationCvs39Rate)
-    {
-        $this->container['stayDurationCvs39Rate'] = $stayDurationCvs39Rate;
-
-        return $this;
-    }
-
-    /**
-     * Gets stayDurationCvs1029Uv
-     *
-     * @return int|mixed
-     */
-    public function getStayDurationCvs1029Uv()
-    {
-        return $this->container['stayDurationCvs1029Uv'];
-    }
-
-    /**
-     * Sets stayDurationCvs1029Uv
-     *
-     * @param int|mixed $stayDurationCvs1029Uv stayDurationCvs1029Uv
-     *
-     * @return $this
-     */
-    public function setStayDurationCvs1029Uv($stayDurationCvs1029Uv)
-    {
-        $this->container['stayDurationCvs1029Uv'] = $stayDurationCvs1029Uv;
-
-        return $this;
-    }
-
-    /**
-     * Gets stayDurationCvs1029Rate
-     *
-     * @return double|mixed
-     */
-    public function getStayDurationCvs1029Rate()
-    {
-        return $this->container['stayDurationCvs1029Rate'];
-    }
-
-    /**
-     * Sets stayDurationCvs1029Rate
-     *
-     * @param double|mixed $stayDurationCvs1029Rate stayDurationCvs1029Rate
-     *
-     * @return $this
-     */
-    public function setStayDurationCvs1029Rate($stayDurationCvs1029Rate)
-    {
-        $this->container['stayDurationCvs1029Rate'] = $stayDurationCvs1029Rate;
-
-        return $this;
-    }
-
-    /**
-     * Gets stayDurationCvsAbove30Uv
-     *
-     * @return int|mixed
-     */
-    public function getStayDurationCvsAbove30Uv()
-    {
-        return $this->container['stayDurationCvsAbove30Uv'];
-    }
-
-    /**
-     * Sets stayDurationCvsAbove30Uv
-     *
-     * @param int|mixed $stayDurationCvsAbove30Uv stayDurationCvsAbove30Uv
-     *
-     * @return $this
-     */
-    public function setStayDurationCvsAbove30Uv($stayDurationCvsAbove30Uv)
-    {
-        $this->container['stayDurationCvsAbove30Uv'] = $stayDurationCvsAbove30Uv;
-
-        return $this;
-    }
-
-    /**
-     * Gets stayDurationCvsAbove30Rate
-     *
-     * @return double|mixed
-     */
-    public function getStayDurationCvsAbove30Rate()
-    {
-        return $this->container['stayDurationCvsAbove30Rate'];
-    }
-
-    /**
-     * Sets stayDurationCvsAbove30Rate
-     *
-     * @param double|mixed $stayDurationCvsAbove30Rate stayDurationCvsAbove30Rate
-     *
-     * @return $this
-     */
-    public function setStayDurationCvsAbove30Rate($stayDurationCvsAbove30Rate)
-    {
-        $this->container['stayDurationCvsAbove30Rate'] = $stayDurationCvsAbove30Rate;
-
-        return $this;
-    }
-
-    /**
-     * Gets stayDurationCvsAbove10Uv
-     *
-     * @return int|mixed
-     */
-    public function getStayDurationCvsAbove10Uv()
-    {
-        return $this->container['stayDurationCvsAbove10Uv'];
-    }
-
-    /**
-     * Sets stayDurationCvsAbove10Uv
-     *
-     * @param int|mixed $stayDurationCvsAbove10Uv stayDurationCvsAbove10Uv
-     *
-     * @return $this
-     */
-    public function setStayDurationCvsAbove10Uv($stayDurationCvsAbove10Uv)
-    {
-        $this->container['stayDurationCvsAbove10Uv'] = $stayDurationCvsAbove10Uv;
-
-        return $this;
-    }
-
-    /**
-     * Gets stayDurationCvsAbove10Rate
-     *
-     * @return double|mixed
-     */
-    public function getStayDurationCvsAbove10Rate()
-    {
-        return $this->container['stayDurationCvsAbove10Rate'];
-    }
-
-    /**
-     * Sets stayDurationCvsAbove10Rate
-     *
-     * @param double|mixed $stayDurationCvsAbove10Rate stayDurationCvsAbove10Rate
-     *
-     * @return $this
-     */
-    public function setStayDurationCvsAbove10Rate($stayDurationCvsAbove10Rate)
-    {
-        $this->container['stayDurationCvsAbove10Rate'] = $stayDurationCvsAbove10Rate;
-
-        return $this;
-    }
-
-    /**
-     * Gets clkBtnFollowPv
-     *
-     * @return int|mixed
-     */
-    public function getClkBtnFollowPv()
-    {
-        return $this->container['clkBtnFollowPv'];
-    }
-
-    /**
-     * Sets clkBtnFollowPv
-     *
-     * @param int|mixed $clkBtnFollowPv clkBtnFollowPv
-     *
-     * @return $this
-     */
-    public function setClkBtnFollowPv($clkBtnFollowPv)
-    {
-        $this->container['clkBtnFollowPv'] = $clkBtnFollowPv;
 
         return $this;
     }
@@ -23468,30 +20234,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets clkReadCommentPv
-     *
-     * @return int|mixed
-     */
-    public function getClkReadCommentPv()
-    {
-        return $this->container['clkReadCommentPv'];
-    }
-
-    /**
-     * Sets clkReadCommentPv
-     *
-     * @param int|mixed $clkReadCommentPv clkReadCommentPv
-     *
-     * @return $this
-     */
-    public function setClkReadCommentPv($clkReadCommentPv)
-    {
-        $this->container['clkReadCommentPv'] = $clkReadCommentPv;
-
-        return $this;
-    }
-
-    /**
      * Gets channelsPraisePlaPv
      *
      * @return int|mixed
@@ -23511,30 +20253,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setChannelsPraisePlaPv($channelsPraisePlaPv)
     {
         $this->container['channelsPraisePlaPv'] = $channelsPraisePlaPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets expSpreadPv
-     *
-     * @return int|mixed
-     */
-    public function getExpSpreadPv()
-    {
-        return $this->container['expSpreadPv'];
-    }
-
-    /**
-     * Sets expSpreadPv
-     *
-     * @param int|mixed $expSpreadPv expSpreadPv
-     *
-     * @return $this
-     */
-    public function setExpSpreadPv($expSpreadPv)
-    {
-        $this->container['expSpreadPv'] = $expSpreadPv;
 
         return $this;
     }
@@ -23876,54 +20594,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets clkStoryBtnPv
-     *
-     * @return int|mixed
-     */
-    public function getClkStoryBtnPv()
-    {
-        return $this->container['clkStoryBtnPv'];
-    }
-
-    /**
-     * Sets clkStoryBtnPv
-     *
-     * @param int|mixed $clkStoryBtnPv clkStoryBtnPv
-     *
-     * @return $this
-     */
-    public function setClkStoryBtnPv($clkStoryBtnPv)
-    {
-        $this->container['clkStoryBtnPv'] = $clkStoryBtnPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets clkStoryBtnUv
-     *
-     * @return int|mixed
-     */
-    public function getClkStoryBtnUv()
-    {
-        return $this->container['clkStoryBtnUv'];
-    }
-
-    /**
-     * Sets clkStoryBtnUv
-     *
-     * @param int|mixed $clkStoryBtnUv clkStoryBtnUv
-     *
-     * @return $this
-     */
-    public function setClkStoryBtnUv($clkStoryBtnUv)
-    {
-        $this->container['clkStoryBtnUv'] = $clkStoryBtnUv;
-
-        return $this;
-    }
-
-    /**
      * Gets clkRedpocketShakePv
      *
      * @return int|mixed
@@ -24116,126 +20786,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets cheerBannerExpPv
-     *
-     * @return int|mixed
-     */
-    public function getCheerBannerExpPv()
-    {
-        return $this->container['cheerBannerExpPv'];
-    }
-
-    /**
-     * Sets cheerBannerExpPv
-     *
-     * @param int|mixed $cheerBannerExpPv cheerBannerExpPv
-     *
-     * @return $this
-     */
-    public function setCheerBannerExpPv($cheerBannerExpPv)
-    {
-        $this->container['cheerBannerExpPv'] = $cheerBannerExpPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets cheerStatusSetSuccPv
-     *
-     * @return int|mixed
-     */
-    public function getCheerStatusSetSuccPv()
-    {
-        return $this->container['cheerStatusSetSuccPv'];
-    }
-
-    /**
-     * Sets cheerStatusSetSuccPv
-     *
-     * @param int|mixed $cheerStatusSetSuccPv cheerStatusSetSuccPv
-     *
-     * @return $this
-     */
-    public function setCheerStatusSetSuccPv($cheerStatusSetSuccPv)
-    {
-        $this->container['cheerStatusSetSuccPv'] = $cheerStatusSetSuccPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets cheerStatusSetSuccUv
-     *
-     * @return int|mixed
-     */
-    public function getCheerStatusSetSuccUv()
-    {
-        return $this->container['cheerStatusSetSuccUv'];
-    }
-
-    /**
-     * Sets cheerStatusSetSuccUv
-     *
-     * @param int|mixed $cheerStatusSetSuccUv cheerStatusSetSuccUv
-     *
-     * @return $this
-     */
-    public function setCheerStatusSetSuccUv($cheerStatusSetSuccUv)
-    {
-        $this->container['cheerStatusSetSuccUv'] = $cheerStatusSetSuccUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets cheerStatusClkPv
-     *
-     * @return int|mixed
-     */
-    public function getCheerStatusClkPv()
-    {
-        return $this->container['cheerStatusClkPv'];
-    }
-
-    /**
-     * Sets cheerStatusClkPv
-     *
-     * @param int|mixed $cheerStatusClkPv cheerStatusClkPv
-     *
-     * @return $this
-     */
-    public function setCheerStatusClkPv($cheerStatusClkPv)
-    {
-        $this->container['cheerStatusClkPv'] = $cheerStatusClkPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets cheerStatusClkUv
-     *
-     * @return int|mixed
-     */
-    public function getCheerStatusClkUv()
-    {
-        return $this->container['cheerStatusClkUv'];
-    }
-
-    /**
-     * Sets cheerStatusClkUv
-     *
-     * @param int|mixed $cheerStatusClkUv cheerStatusClkUv
-     *
-     * @return $this
-     */
-    public function setCheerStatusClkUv($cheerStatusClkUv)
-    {
-        $this->container['cheerStatusClkUv'] = $cheerStatusClkUv;
-
-        return $this;
-    }
-
-    /**
      * Gets adMonetizationCost
      *
      * @return double|mixed
@@ -24380,54 +20930,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets postBarragePv
-     *
-     * @return int|mixed
-     */
-    public function getPostBarragePv()
-    {
-        return $this->container['postBarragePv'];
-    }
-
-    /**
-     * Sets postBarragePv
-     *
-     * @param int|mixed $postBarragePv postBarragePv
-     *
-     * @return $this
-     */
-    public function setPostBarragePv($postBarragePv)
-    {
-        $this->container['postBarragePv'] = $postBarragePv;
-
-        return $this;
-    }
-
-    /**
-     * Gets postBarrageUv
-     *
-     * @return int|mixed
-     */
-    public function getPostBarrageUv()
-    {
-        return $this->container['postBarrageUv'];
-    }
-
-    /**
-     * Sets postBarrageUv
-     *
-     * @param int|mixed $postBarrageUv postBarrageUv
-     *
-     * @return $this
-     */
-    public function setPostBarrageUv($postBarrageUv)
-    {
-        $this->container['postBarrageUv'] = $postBarrageUv;
-
-        return $this;
-    }
-
-    /**
      * Gets clkRedpocketBtnSubscribePv
      *
      * @return int|mixed
@@ -24447,54 +20949,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setClkRedpocketBtnSubscribePv($clkRedpocketBtnSubscribePv)
     {
         $this->container['clkRedpocketBtnSubscribePv'] = $clkRedpocketBtnSubscribePv;
-
-        return $this;
-    }
-
-    /**
-     * Gets inviteFriendsToWatchFireworksPv
-     *
-     * @return int|mixed
-     */
-    public function getInviteFriendsToWatchFireworksPv()
-    {
-        return $this->container['inviteFriendsToWatchFireworksPv'];
-    }
-
-    /**
-     * Sets inviteFriendsToWatchFireworksPv
-     *
-     * @param int|mixed $inviteFriendsToWatchFireworksPv inviteFriendsToWatchFireworksPv
-     *
-     * @return $this
-     */
-    public function setInviteFriendsToWatchFireworksPv($inviteFriendsToWatchFireworksPv)
-    {
-        $this->container['inviteFriendsToWatchFireworksPv'] = $inviteFriendsToWatchFireworksPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets clkBlessingCardPv
-     *
-     * @return int|mixed
-     */
-    public function getClkBlessingCardPv()
-    {
-        return $this->container['clkBlessingCardPv'];
-    }
-
-    /**
-     * Sets clkBlessingCardPv
-     *
-     * @param int|mixed $clkBlessingCardPv clkBlessingCardPv
-     *
-     * @return $this
-     */
-    public function setClkBlessingCardPv($clkBlessingCardPv)
-    {
-        $this->container['clkBlessingCardPv'] = $clkBlessingCardPv;
 
         return $this;
     }
@@ -24975,30 +21429,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setExpAvgRank($expAvgRank)
     {
         $this->container['expAvgRank'] = $expAvgRank;
-
-        return $this;
-    }
-
-    /**
-     * Gets expOverallTopPosition
-     *
-     * @return int|mixed
-     */
-    public function getExpOverallTopPosition()
-    {
-        return $this->container['expOverallTopPosition'];
-    }
-
-    /**
-     * Sets expOverallTopPosition
-     *
-     * @param int|mixed $expOverallTopPosition expOverallTopPosition
-     *
-     * @return $this
-     */
-    public function setExpOverallTopPosition($expOverallTopPosition)
-    {
-        $this->container['expOverallTopPosition'] = $expOverallTopPosition;
 
         return $this;
     }

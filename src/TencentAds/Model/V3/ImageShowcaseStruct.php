@@ -1,6 +1,6 @@
 <?php
 /**
- * SiteSetResultListStruct
+ * ImageShowcaseStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * SiteSetResultListStruct Class Doc Comment
+ * ImageShowcaseStruct Class Doc Comment
  *
  * @category Class
- * @description 版位粒度审核结果
+ * @description 橱窗图片结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class SiteSetResultListStruct implements ModelInterface, ArrayAccess
+class ImageShowcaseStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'site_set_result_list_struct';
+    protected static $swaggerModelName = 'image_showcase_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +58,8 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'siteSet' => '\TencentAds\Model\V3\SiteSetDefinition',
-        'systemStatus' => '\TencentAds\Model\V3\ReviewResultStatus',
-        'rejectMessage' => 'string',
-        'elementRejectDetailInfo' => '\TencentAds\Model\V3\ElementRejectDetailInfoListStruct[]'
+        'image' => '\TencentAds\Model\V3\ImageStruct',
+        'imageList' => '\TencentAds\Model\V3\ImageListStruct'
     ];
 
     /**
@@ -70,10 +68,8 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'siteSet' => null,
-        'systemStatus' => null,
-        'rejectMessage' => null,
-        'elementRejectDetailInfo' => null
+        'image' => null,
+        'imageList' => null
     ];
 
     /**
@@ -103,10 +99,8 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'siteSet' => 'site_set',
-        'systemStatus' => 'system_status',
-        'rejectMessage' => 'reject_message',
-        'elementRejectDetailInfo' => 'element_reject_detail_info'
+        'image' => 'image',
+        'imageList' => 'image_list'
     ];
 
     /**
@@ -115,10 +109,8 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'siteSet' => 'setSiteSet',
-        'systemStatus' => 'setSystemStatus',
-        'rejectMessage' => 'setRejectMessage',
-        'elementRejectDetailInfo' => 'setElementRejectDetailInfo'
+        'image' => 'setImage',
+        'imageList' => 'setImageList'
     ];
 
     /**
@@ -127,10 +119,8 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'siteSet' => 'getSiteSet',
-        'systemStatus' => 'getSystemStatus',
-        'rejectMessage' => 'getRejectMessage',
-        'elementRejectDetailInfo' => 'getElementRejectDetailInfo'
+        'image' => 'getImage',
+        'imageList' => 'getImageList'
     ];
 
     /**
@@ -193,10 +183,8 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
-        $this->container['systemStatus'] = isset($data['systemStatus']) ? $data['systemStatus'] : null;
-        $this->container['rejectMessage'] = isset($data['rejectMessage']) ? $data['rejectMessage'] : null;
-        $this->container['elementRejectDetailInfo'] = isset($data['elementRejectDetailInfo']) ? $data['elementRejectDetailInfo'] : null;
+        $this->container['image'] = isset($data['image']) ? $data['image'] : null;
+        $this->container['imageList'] = isset($data['imageList']) ? $data['imageList'] : null;
     }
 
     /**
@@ -224,97 +212,49 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets siteSet
+     * Gets image
      *
-     * @return \TencentAds\Model\V3\SiteSetDefinition|mixed
+     * @return \TencentAds\Model\V3\ImageStruct|mixed
      */
-    public function getSiteSet()
+    public function getImage()
     {
-        return $this->container['siteSet'];
+        return $this->container['image'];
     }
 
     /**
-     * Sets siteSet
+     * Sets image
      *
-     * @param \TencentAds\Model\V3\SiteSetDefinition|mixed $siteSet siteSet
+     * @param \TencentAds\Model\V3\ImageStruct|mixed $image image
      *
      * @return $this
      */
-    public function setSiteSet($siteSet)
+    public function setImage($image)
     {
-        $this->container['siteSet'] = $siteSet;
+        $this->container['image'] = $image;
 
         return $this;
     }
 
     /**
-     * Gets systemStatus
+     * Gets imageList
      *
-     * @return \TencentAds\Model\V3\ReviewResultStatus|mixed
+     * @return \TencentAds\Model\V3\ImageListStruct|mixed
      */
-    public function getSystemStatus()
+    public function getImageList()
     {
-        return $this->container['systemStatus'];
+        return $this->container['imageList'];
     }
 
     /**
-     * Sets systemStatus
+     * Sets imageList
      *
-     * @param \TencentAds\Model\V3\ReviewResultStatus|mixed $systemStatus systemStatus
+     * @param \TencentAds\Model\V3\ImageListStruct|mixed $imageList imageList
      *
      * @return $this
      */
-    public function setSystemStatus($systemStatus)
+    public function setImageList($imageList)
     {
-        $this->container['systemStatus'] = $systemStatus;
-
-        return $this;
-    }
-
-    /**
-     * Gets rejectMessage
-     *
-     * @return string|mixed
-     */
-    public function getRejectMessage()
-    {
-        return $this->container['rejectMessage'];
-    }
-
-    /**
-     * Sets rejectMessage
-     *
-     * @param string|mixed $rejectMessage rejectMessage
-     *
-     * @return $this
-     */
-    public function setRejectMessage($rejectMessage)
-    {
-        $this->container['rejectMessage'] = $rejectMessage;
-
-        return $this;
-    }
-
-    /**
-     * Gets elementRejectDetailInfo
-     *
-     * @return \TencentAds\Model\V3\ElementRejectDetailInfoListStruct[]|mixed
-     */
-    public function getElementRejectDetailInfo()
-    {
-        return $this->container['elementRejectDetailInfo'];
-    }
-
-    /**
-     * Sets elementRejectDetailInfo
-     *
-     * @param \TencentAds\Model\V3\ElementRejectDetailInfoListStruct[]|mixed $elementRejectDetailInfo elementRejectDetailInfo
-     *
-     * @return $this
-     */
-    public function setElementRejectDetailInfo($elementRejectDetailInfo)
-    {
-        $this->container['elementRejectDetailInfo'] = $elementRejectDetailInfo;
+        $this->container['imageList'] = $imageList;
 
         return $this;
     }

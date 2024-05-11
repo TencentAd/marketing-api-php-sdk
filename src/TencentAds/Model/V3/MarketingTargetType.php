@@ -102,6 +102,7 @@ class MarketingTargetType
     const PLATFORM_CHANNEL = 'MARKETING_TARGET_TYPE_PLATFORM_CHANNEL';
     const TWO_WHEEL_VEHICLE = 'MARKETING_TARGET_TYPE_TWO_WHEEL_VEHICLE';
     const GOVERNMENT_AFFAIRS = 'MARKETING_TARGET_TYPE_GOVERNMENT_AFFAIRS';
+    const CAR_ECOLOGY = 'MARKETING_TARGET_TYPE_CAR_ECOLOGY';
     
     /**
      * Gets allowable values of the enum
@@ -168,6 +169,7 @@ class MarketingTargetType
             self::PLATFORM_CHANNEL,
             self::TWO_WHEEL_VEHICLE,
             self::GOVERNMENT_AFFAIRS,
+            self::CAR_ECOLOGY,
         ];
     }
 }

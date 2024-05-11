@@ -1,6 +1,6 @@
 <?php
 /**
- * SiteSetResultListStruct
+ * QualificationStructureGetResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * SiteSetResultListStruct Class Doc Comment
+ * QualificationStructureGetResponse Class Doc Comment
  *
  * @category Class
- * @description 版位粒度审核结果
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class SiteSetResultListStruct implements ModelInterface, ArrayAccess
+class QualificationStructureGetResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'site_set_result_list_struct';
+    protected static $swaggerModelName = 'QualificationStructureGetResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +57,11 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'siteSet' => '\TencentAds\Model\V3\SiteSetDefinition',
-        'systemStatus' => '\TencentAds\Model\V3\ReviewResultStatus',
-        'rejectMessage' => 'string',
-        'elementRejectDetailInfo' => '\TencentAds\Model\V3\ElementRejectDetailInfoListStruct[]'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\V3\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\V3\QualificationStructureGetResponseData'
     ];
 
     /**
@@ -70,10 +70,11 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'siteSet' => null,
-        'systemStatus' => null,
-        'rejectMessage' => null,
-        'elementRejectDetailInfo' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -103,10 +104,11 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'siteSet' => 'site_set',
-        'systemStatus' => 'system_status',
-        'rejectMessage' => 'reject_message',
-        'elementRejectDetailInfo' => 'element_reject_detail_info'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -115,10 +117,11 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'siteSet' => 'setSiteSet',
-        'systemStatus' => 'setSystemStatus',
-        'rejectMessage' => 'setRejectMessage',
-        'elementRejectDetailInfo' => 'setElementRejectDetailInfo'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -127,10 +130,11 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'siteSet' => 'getSiteSet',
-        'systemStatus' => 'getSystemStatus',
-        'rejectMessage' => 'getRejectMessage',
-        'elementRejectDetailInfo' => 'getElementRejectDetailInfo'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -193,10 +197,11 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
-        $this->container['systemStatus'] = isset($data['systemStatus']) ? $data['systemStatus'] : null;
-        $this->container['rejectMessage'] = isset($data['rejectMessage']) ? $data['rejectMessage'] : null;
-        $this->container['elementRejectDetailInfo'] = isset($data['elementRejectDetailInfo']) ? $data['elementRejectDetailInfo'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -224,97 +229,121 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets siteSet
+     * Gets code
      *
-     * @return \TencentAds\Model\V3\SiteSetDefinition|mixed
+     * @return int|mixed
      */
-    public function getSiteSet()
+    public function getCode()
     {
-        return $this->container['siteSet'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets siteSet
+     * Sets code
      *
-     * @param \TencentAds\Model\V3\SiteSetDefinition|mixed $siteSet siteSet
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setSiteSet($siteSet)
+    public function setCode($code)
     {
-        $this->container['siteSet'] = $siteSet;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets systemStatus
-     *
-     * @return \TencentAds\Model\V3\ReviewResultStatus|mixed
-     */
-    public function getSystemStatus()
-    {
-        return $this->container['systemStatus'];
-    }
-
-    /**
-     * Sets systemStatus
-     *
-     * @param \TencentAds\Model\V3\ReviewResultStatus|mixed $systemStatus systemStatus
-     *
-     * @return $this
-     */
-    public function setSystemStatus($systemStatus)
-    {
-        $this->container['systemStatus'] = $systemStatus;
-
-        return $this;
-    }
-
-    /**
-     * Gets rejectMessage
+     * Gets message
      *
      * @return string|mixed
      */
-    public function getRejectMessage()
+    public function getMessage()
     {
-        return $this->container['rejectMessage'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets rejectMessage
+     * Sets message
      *
-     * @param string|mixed $rejectMessage rejectMessage
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setRejectMessage($rejectMessage)
+    public function setMessage($message)
     {
-        $this->container['rejectMessage'] = $rejectMessage;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets elementRejectDetailInfo
+     * Gets messageCn
      *
-     * @return \TencentAds\Model\V3\ElementRejectDetailInfoListStruct[]|mixed
+     * @return string|mixed
      */
-    public function getElementRejectDetailInfo()
+    public function getMessageCn()
     {
-        return $this->container['elementRejectDetailInfo'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets elementRejectDetailInfo
+     * Sets messageCn
      *
-     * @param \TencentAds\Model\V3\ElementRejectDetailInfoListStruct[]|mixed $elementRejectDetailInfo elementRejectDetailInfo
+     * @param string|mixed $messageCn messageCn
      *
      * @return $this
      */
-    public function setElementRejectDetailInfo($elementRejectDetailInfo)
+    public function setMessageCn($messageCn)
     {
-        $this->container['elementRejectDetailInfo'] = $elementRejectDetailInfo;
+        $this->container['messageCn'] = $messageCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets errors
+     *
+     * @return \TencentAds\Model\V3\ApiErrorStruct[]|mixed
+     */
+    public function getErrors()
+    {
+        return $this->container['errors'];
+    }
+
+    /**
+     * Sets errors
+     *
+     * @param \TencentAds\Model\V3\ApiErrorStruct[]|mixed $errors errors
+     *
+     * @return $this
+     */
+    public function setErrors($errors)
+    {
+        $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\V3\QualificationStructureGetResponseData|mixed
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\V3\QualificationStructureGetResponseData|mixed $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }

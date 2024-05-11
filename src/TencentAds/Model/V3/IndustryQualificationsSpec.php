@@ -61,7 +61,8 @@ class IndustryQualificationsSpec implements ModelInterface, ArrayAccess
         'systemIndustryId' => 'int',
         'businessScopeId' => 'int',
         'qualificationCode' => 'string',
-        'imageIdList' => 'string[]'
+        'imageIdList' => 'string[]',
+        'expandFieldList' => '\TencentAds\Model\V3\ExpandFieldStruct[]'
     ];
 
     /**
@@ -73,7 +74,8 @@ class IndustryQualificationsSpec implements ModelInterface, ArrayAccess
         'systemIndustryId' => 'int64',
         'businessScopeId' => 'int64',
         'qualificationCode' => null,
-        'imageIdList' => null
+        'imageIdList' => null,
+        'expandFieldList' => null
     ];
 
     /**
@@ -106,7 +108,8 @@ class IndustryQualificationsSpec implements ModelInterface, ArrayAccess
         'systemIndustryId' => 'system_industry_id',
         'businessScopeId' => 'business_scope_id',
         'qualificationCode' => 'qualification_code',
-        'imageIdList' => 'image_id_list'
+        'imageIdList' => 'image_id_list',
+        'expandFieldList' => 'expand_field_list'
     ];
 
     /**
@@ -118,7 +121,8 @@ class IndustryQualificationsSpec implements ModelInterface, ArrayAccess
         'systemIndustryId' => 'setSystemIndustryId',
         'businessScopeId' => 'setBusinessScopeId',
         'qualificationCode' => 'setQualificationCode',
-        'imageIdList' => 'setImageIdList'
+        'imageIdList' => 'setImageIdList',
+        'expandFieldList' => 'setExpandFieldList'
     ];
 
     /**
@@ -130,7 +134,8 @@ class IndustryQualificationsSpec implements ModelInterface, ArrayAccess
         'systemIndustryId' => 'getSystemIndustryId',
         'businessScopeId' => 'getBusinessScopeId',
         'qualificationCode' => 'getQualificationCode',
-        'imageIdList' => 'getImageIdList'
+        'imageIdList' => 'getImageIdList',
+        'expandFieldList' => 'getExpandFieldList'
     ];
 
     /**
@@ -197,6 +202,7 @@ class IndustryQualificationsSpec implements ModelInterface, ArrayAccess
         $this->container['businessScopeId'] = isset($data['businessScopeId']) ? $data['businessScopeId'] : null;
         $this->container['qualificationCode'] = isset($data['qualificationCode']) ? $data['qualificationCode'] : null;
         $this->container['imageIdList'] = isset($data['imageIdList']) ? $data['imageIdList'] : null;
+        $this->container['expandFieldList'] = isset($data['expandFieldList']) ? $data['expandFieldList'] : null;
     }
 
     /**
@@ -315,6 +321,30 @@ class IndustryQualificationsSpec implements ModelInterface, ArrayAccess
     public function setImageIdList($imageIdList)
     {
         $this->container['imageIdList'] = $imageIdList;
+
+        return $this;
+    }
+
+    /**
+     * Gets expandFieldList
+     *
+     * @return \TencentAds\Model\V3\ExpandFieldStruct[]|mixed
+     */
+    public function getExpandFieldList()
+    {
+        return $this->container['expandFieldList'];
+    }
+
+    /**
+     * Sets expandFieldList
+     *
+     * @param \TencentAds\Model\V3\ExpandFieldStruct[]|mixed $expandFieldList expandFieldList
+     *
+     * @return $this
+     */
+    public function setExpandFieldList($expandFieldList)
+    {
+        $this->container['expandFieldList'] = $expandFieldList;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * RtaInfoResponse
+ * JointBudgetRulesUpdateRequest
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * RtaInfoResponse Class Doc Comment
+ * JointBudgetRulesUpdateRequest Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class RtaInfoResponse implements ModelInterface, ArrayAccess
+class JointBudgetRulesUpdateRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class RtaInfoResponse implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'RtaInfoResponse';
+    protected static $swaggerModelName = 'JointBudgetRulesUpdateRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,11 +57,12 @@ class RtaInfoResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'code' => 'int',
-        'message' => 'string',
-        'messageCn' => 'string',
-        'errors' => '\TencentAds\Model\V3\ApiErrorStruct[]',
-        'data' => '\TencentAds\Model\V3\RtaInfoResponseData'
+        'accountId' => 'int',
+        'jointBudgetRuleId' => 'int',
+        'jointBudgetRuleName' => 'string',
+        'dailyBudget' => 'int',
+        'totalBudget' => 'int',
+        'adgroupIdList' => 'int[]'
     ];
 
     /**
@@ -70,11 +71,12 @@ class RtaInfoResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'code' => 'int64',
-        'message' => null,
-        'messageCn' => null,
-        'errors' => null,
-        'data' => null
+        'accountId' => 'int64',
+        'jointBudgetRuleId' => 'int64',
+        'jointBudgetRuleName' => null,
+        'dailyBudget' => 'int64',
+        'totalBudget' => 'int64',
+        'adgroupIdList' => 'int64'
     ];
 
     /**
@@ -104,11 +106,12 @@ class RtaInfoResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'code' => 'code',
-        'message' => 'message',
-        'messageCn' => 'message_cn',
-        'errors' => 'errors',
-        'data' => 'data'
+        'accountId' => 'account_id',
+        'jointBudgetRuleId' => 'joint_budget_rule_id',
+        'jointBudgetRuleName' => 'joint_budget_rule_name',
+        'dailyBudget' => 'daily_budget',
+        'totalBudget' => 'total_budget',
+        'adgroupIdList' => 'adgroup_id_list'
     ];
 
     /**
@@ -117,11 +120,12 @@ class RtaInfoResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'code' => 'setCode',
-        'message' => 'setMessage',
-        'messageCn' => 'setMessageCn',
-        'errors' => 'setErrors',
-        'data' => 'setData'
+        'accountId' => 'setAccountId',
+        'jointBudgetRuleId' => 'setJointBudgetRuleId',
+        'jointBudgetRuleName' => 'setJointBudgetRuleName',
+        'dailyBudget' => 'setDailyBudget',
+        'totalBudget' => 'setTotalBudget',
+        'adgroupIdList' => 'setAdgroupIdList'
     ];
 
     /**
@@ -130,11 +134,12 @@ class RtaInfoResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'code' => 'getCode',
-        'message' => 'getMessage',
-        'messageCn' => 'getMessageCn',
-        'errors' => 'getErrors',
-        'data' => 'getData'
+        'accountId' => 'getAccountId',
+        'jointBudgetRuleId' => 'getJointBudgetRuleId',
+        'jointBudgetRuleName' => 'getJointBudgetRuleName',
+        'dailyBudget' => 'getDailyBudget',
+        'totalBudget' => 'getTotalBudget',
+        'adgroupIdList' => 'getAdgroupIdList'
     ];
 
     /**
@@ -197,11 +202,12 @@ class RtaInfoResponse implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
-        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
-        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
-        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
-        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['jointBudgetRuleId'] = isset($data['jointBudgetRuleId']) ? $data['jointBudgetRuleId'] : null;
+        $this->container['jointBudgetRuleName'] = isset($data['jointBudgetRuleName']) ? $data['jointBudgetRuleName'] : null;
+        $this->container['dailyBudget'] = isset($data['dailyBudget']) ? $data['dailyBudget'] : null;
+        $this->container['totalBudget'] = isset($data['totalBudget']) ? $data['totalBudget'] : null;
+        $this->container['adgroupIdList'] = isset($data['adgroupIdList']) ? $data['adgroupIdList'] : null;
     }
 
     /**
@@ -229,121 +235,145 @@ class RtaInfoResponse implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets code
+     * Gets accountId
      *
      * @return int|mixed
      */
-    public function getCode()
+    public function getAccountId()
     {
-        return $this->container['code'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets code
+     * Sets accountId
      *
-     * @param int|mixed $code code
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setCode($code)
+    public function setAccountId($accountId)
     {
-        $this->container['code'] = $code;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }
 
     /**
-     * Gets message
+     * Gets jointBudgetRuleId
+     *
+     * @return int|mixed
+     */
+    public function getJointBudgetRuleId()
+    {
+        return $this->container['jointBudgetRuleId'];
+    }
+
+    /**
+     * Sets jointBudgetRuleId
+     *
+     * @param int|mixed $jointBudgetRuleId jointBudgetRuleId
+     *
+     * @return $this
+     */
+    public function setJointBudgetRuleId($jointBudgetRuleId)
+    {
+        $this->container['jointBudgetRuleId'] = $jointBudgetRuleId;
+
+        return $this;
+    }
+
+    /**
+     * Gets jointBudgetRuleName
      *
      * @return string|mixed
      */
-    public function getMessage()
+    public function getJointBudgetRuleName()
     {
-        return $this->container['message'];
+        return $this->container['jointBudgetRuleName'];
     }
 
     /**
-     * Sets message
+     * Sets jointBudgetRuleName
      *
-     * @param string|mixed $message message
+     * @param string|mixed $jointBudgetRuleName jointBudgetRuleName
      *
      * @return $this
      */
-    public function setMessage($message)
+    public function setJointBudgetRuleName($jointBudgetRuleName)
     {
-        $this->container['message'] = $message;
+        $this->container['jointBudgetRuleName'] = $jointBudgetRuleName;
 
         return $this;
     }
 
     /**
-     * Gets messageCn
+     * Gets dailyBudget
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getMessageCn()
+    public function getDailyBudget()
     {
-        return $this->container['messageCn'];
+        return $this->container['dailyBudget'];
     }
 
     /**
-     * Sets messageCn
+     * Sets dailyBudget
      *
-     * @param string|mixed $messageCn messageCn
+     * @param int|mixed $dailyBudget dailyBudget
      *
      * @return $this
      */
-    public function setMessageCn($messageCn)
+    public function setDailyBudget($dailyBudget)
     {
-        $this->container['messageCn'] = $messageCn;
+        $this->container['dailyBudget'] = $dailyBudget;
 
         return $this;
     }
 
     /**
-     * Gets errors
+     * Gets totalBudget
      *
-     * @return \TencentAds\Model\V3\ApiErrorStruct[]|mixed
+     * @return int|mixed
      */
-    public function getErrors()
+    public function getTotalBudget()
     {
-        return $this->container['errors'];
+        return $this->container['totalBudget'];
     }
 
     /**
-     * Sets errors
+     * Sets totalBudget
      *
-     * @param \TencentAds\Model\V3\ApiErrorStruct[]|mixed $errors errors
+     * @param int|mixed $totalBudget totalBudget
      *
      * @return $this
      */
-    public function setErrors($errors)
+    public function setTotalBudget($totalBudget)
     {
-        $this->container['errors'] = $errors;
+        $this->container['totalBudget'] = $totalBudget;
 
         return $this;
     }
 
     /**
-     * Gets data
+     * Gets adgroupIdList
      *
-     * @return \TencentAds\Model\V3\RtaInfoResponseData|mixed
+     * @return int[]|mixed
      */
-    public function getData()
+    public function getAdgroupIdList()
     {
-        return $this->container['data'];
+        return $this->container['adgroupIdList'];
     }
 
     /**
-     * Sets data
+     * Sets adgroupIdList
      *
-     * @param \TencentAds\Model\V3\RtaInfoResponseData|mixed $data data
+     * @param int[]|mixed $adgroupIdList adgroupIdList
      *
      * @return $this
      */
-    public function setData($data)
+    public function setAdgroupIdList($adgroupIdList)
     {
-        $this->container['data'] = $data;
+        $this->container['adgroupIdList'] = $adgroupIdList;
 
         return $this;
     }

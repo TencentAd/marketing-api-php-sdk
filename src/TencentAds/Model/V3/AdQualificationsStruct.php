@@ -61,6 +61,7 @@ class AdQualificationsStruct implements ModelInterface, ArrayAccess
         'qualificationId' => 'int',
         'qualificationCode' => 'string',
         'imageIdList' => 'string[]',
+        'expandFieldList' => '\TencentAds\Model\V3\ExpandFieldStruct[]',
         'qualificationStatus' => '\TencentAds\Model\V3\QualificationStatus',
         'expiredDate' => 'string',
         'isMdmShared' => '\TencentAds\Model\V3\AdQualificationSharedStatus',
@@ -78,6 +79,7 @@ class AdQualificationsStruct implements ModelInterface, ArrayAccess
         'qualificationId' => 'int64',
         'qualificationCode' => null,
         'imageIdList' => null,
+        'expandFieldList' => null,
         'qualificationStatus' => null,
         'expiredDate' => null,
         'isMdmShared' => null,
@@ -116,6 +118,7 @@ class AdQualificationsStruct implements ModelInterface, ArrayAccess
         'qualificationId' => 'qualification_id',
         'qualificationCode' => 'qualification_code',
         'imageIdList' => 'image_id_list',
+        'expandFieldList' => 'expand_field_list',
         'qualificationStatus' => 'qualification_status',
         'expiredDate' => 'expired_date',
         'isMdmShared' => 'is_mdm_shared',
@@ -133,6 +136,7 @@ class AdQualificationsStruct implements ModelInterface, ArrayAccess
         'qualificationId' => 'setQualificationId',
         'qualificationCode' => 'setQualificationCode',
         'imageIdList' => 'setImageIdList',
+        'expandFieldList' => 'setExpandFieldList',
         'qualificationStatus' => 'setQualificationStatus',
         'expiredDate' => 'setExpiredDate',
         'isMdmShared' => 'setIsMdmShared',
@@ -150,6 +154,7 @@ class AdQualificationsStruct implements ModelInterface, ArrayAccess
         'qualificationId' => 'getQualificationId',
         'qualificationCode' => 'getQualificationCode',
         'imageIdList' => 'getImageIdList',
+        'expandFieldList' => 'getExpandFieldList',
         'qualificationStatus' => 'getQualificationStatus',
         'expiredDate' => 'getExpiredDate',
         'isMdmShared' => 'getIsMdmShared',
@@ -221,6 +226,7 @@ class AdQualificationsStruct implements ModelInterface, ArrayAccess
         $this->container['qualificationId'] = isset($data['qualificationId']) ? $data['qualificationId'] : null;
         $this->container['qualificationCode'] = isset($data['qualificationCode']) ? $data['qualificationCode'] : null;
         $this->container['imageIdList'] = isset($data['imageIdList']) ? $data['imageIdList'] : null;
+        $this->container['expandFieldList'] = isset($data['expandFieldList']) ? $data['expandFieldList'] : null;
         $this->container['qualificationStatus'] = isset($data['qualificationStatus']) ? $data['qualificationStatus'] : null;
         $this->container['expiredDate'] = isset($data['expiredDate']) ? $data['expiredDate'] : null;
         $this->container['isMdmShared'] = isset($data['isMdmShared']) ? $data['isMdmShared'] : null;
@@ -321,6 +327,30 @@ class AdQualificationsStruct implements ModelInterface, ArrayAccess
     public function setImageIdList($imageIdList)
     {
         $this->container['imageIdList'] = $imageIdList;
+
+        return $this;
+    }
+
+    /**
+     * Gets expandFieldList
+     *
+     * @return \TencentAds\Model\V3\ExpandFieldStruct[]|mixed
+     */
+    public function getExpandFieldList()
+    {
+        return $this->container['expandFieldList'];
+    }
+
+    /**
+     * Sets expandFieldList
+     *
+     * @param \TencentAds\Model\V3\ExpandFieldStruct[]|mixed $expandFieldList expandFieldList
+     *
+     * @return $this
+     */
+    public function setExpandFieldList($expandFieldList)
+    {
+        $this->container['expandFieldList'] = $expandFieldList;
 
         return $this;
     }

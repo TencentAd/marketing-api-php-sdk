@@ -102,6 +102,7 @@ class PromotedAssetType
     const PLATFORM_CHANNEL = 'PROMOTED_ASSET_TYPE_PLATFORM_CHANNEL';
     const TWO_WHEEL_VEHICLE = 'PROMOTED_ASSET_TYPE_TWO_WHEEL_VEHICLE';
     const GOVERNMENT_AFFAIRS = 'PROMOTED_ASSET_TYPE_GOVERNMENT_AFFAIRS';
+    const CAR_ECOLOGY = 'PROMOTED_ASSET_TYPE_CAR_ECOLOGY';
     
     /**
      * Gets allowable values of the enum
@@ -168,6 +169,7 @@ class PromotedAssetType
             self::PLATFORM_CHANNEL,
             self::TWO_WHEEL_VEHICLE,
             self::GOVERNMENT_AFFAIRS,
+            self::CAR_ECOLOGY,
         ];
     }
 }

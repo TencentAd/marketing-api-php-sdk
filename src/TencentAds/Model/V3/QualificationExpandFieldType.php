@@ -1,6 +1,6 @@
 <?php
 /**
- * ProductMode
+ * QualificationExpandFieldType
  *
  * PHP version 5
  *
@@ -31,21 +31,21 @@ namespace TencentAds\Model\V3;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ProductMode Class Doc Comment
+ * QualificationExpandFieldType Class Doc Comment
  *
  * @category Class
- * @description 标明适用的动态商品广告类型
+ * @description 扩展字段类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ProductMode
+class QualificationExpandFieldType
 {
     /**
      * Possible values of this enum
      */
-    const SINGLE = 'SINGLE';
-    const MULTIPLE = 'MULTIPLE';
+    const STRING = 'FIELD_TYPE_STRING';
+    const ENUM = 'FIELD_TYPE_ENUM';
     
     /**
      * Gets allowable values of the enum
@@ -54,8 +54,8 @@ class ProductMode
     public static function getAllowableEnumValues()
     {
         return [
-            self::SINGLE,
-            self::MULTIPLE,
+            self::STRING,
+            self::ENUM,
         ];
     }
 }

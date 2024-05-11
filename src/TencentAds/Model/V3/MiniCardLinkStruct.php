@@ -1,6 +1,6 @@
 <?php
 /**
- * SiteSetResultListStruct
+ * MiniCardLinkStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * SiteSetResultListStruct Class Doc Comment
+ * MiniCardLinkStruct Class Doc Comment
  *
  * @category Class
- * @description 版位粒度审核结果
+ * @description 图文链接结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class SiteSetResultListStruct implements ModelInterface, ArrayAccess
+class MiniCardLinkStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'site_set_result_list_struct';
+    protected static $swaggerModelName = 'mini_card_link_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +58,10 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'siteSet' => '\TencentAds\Model\V3\SiteSetDefinition',
-        'systemStatus' => '\TencentAds\Model\V3\ReviewResultStatus',
-        'rejectMessage' => 'string',
-        'elementRejectDetailInfo' => '\TencentAds\Model\V3\ElementRejectDetailInfoListStruct[]'
+        'miniCardLinkDescription' => 'string',
+        'miniCardLinkImage' => 'string',
+        'miniCardLinkButtonText' => 'string',
+        'jumpInfo' => '\TencentAds\Model\V3\JumpinfoStruct'
     ];
 
     /**
@@ -70,10 +70,10 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'siteSet' => null,
-        'systemStatus' => null,
-        'rejectMessage' => null,
-        'elementRejectDetailInfo' => null
+        'miniCardLinkDescription' => null,
+        'miniCardLinkImage' => null,
+        'miniCardLinkButtonText' => null,
+        'jumpInfo' => null
     ];
 
     /**
@@ -103,10 +103,10 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'siteSet' => 'site_set',
-        'systemStatus' => 'system_status',
-        'rejectMessage' => 'reject_message',
-        'elementRejectDetailInfo' => 'element_reject_detail_info'
+        'miniCardLinkDescription' => 'mini_card_link_description',
+        'miniCardLinkImage' => 'mini_card_link_image',
+        'miniCardLinkButtonText' => 'mini_card_link_button_text',
+        'jumpInfo' => 'jump_info'
     ];
 
     /**
@@ -115,10 +115,10 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'siteSet' => 'setSiteSet',
-        'systemStatus' => 'setSystemStatus',
-        'rejectMessage' => 'setRejectMessage',
-        'elementRejectDetailInfo' => 'setElementRejectDetailInfo'
+        'miniCardLinkDescription' => 'setMiniCardLinkDescription',
+        'miniCardLinkImage' => 'setMiniCardLinkImage',
+        'miniCardLinkButtonText' => 'setMiniCardLinkButtonText',
+        'jumpInfo' => 'setJumpInfo'
     ];
 
     /**
@@ -127,10 +127,10 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'siteSet' => 'getSiteSet',
-        'systemStatus' => 'getSystemStatus',
-        'rejectMessage' => 'getRejectMessage',
-        'elementRejectDetailInfo' => 'getElementRejectDetailInfo'
+        'miniCardLinkDescription' => 'getMiniCardLinkDescription',
+        'miniCardLinkImage' => 'getMiniCardLinkImage',
+        'miniCardLinkButtonText' => 'getMiniCardLinkButtonText',
+        'jumpInfo' => 'getJumpInfo'
     ];
 
     /**
@@ -193,10 +193,10 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
-        $this->container['systemStatus'] = isset($data['systemStatus']) ? $data['systemStatus'] : null;
-        $this->container['rejectMessage'] = isset($data['rejectMessage']) ? $data['rejectMessage'] : null;
-        $this->container['elementRejectDetailInfo'] = isset($data['elementRejectDetailInfo']) ? $data['elementRejectDetailInfo'] : null;
+        $this->container['miniCardLinkDescription'] = isset($data['miniCardLinkDescription']) ? $data['miniCardLinkDescription'] : null;
+        $this->container['miniCardLinkImage'] = isset($data['miniCardLinkImage']) ? $data['miniCardLinkImage'] : null;
+        $this->container['miniCardLinkButtonText'] = isset($data['miniCardLinkButtonText']) ? $data['miniCardLinkButtonText'] : null;
+        $this->container['jumpInfo'] = isset($data['jumpInfo']) ? $data['jumpInfo'] : null;
     }
 
     /**
@@ -224,97 +224,97 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets siteSet
-     *
-     * @return \TencentAds\Model\V3\SiteSetDefinition|mixed
-     */
-    public function getSiteSet()
-    {
-        return $this->container['siteSet'];
-    }
-
-    /**
-     * Sets siteSet
-     *
-     * @param \TencentAds\Model\V3\SiteSetDefinition|mixed $siteSet siteSet
-     *
-     * @return $this
-     */
-    public function setSiteSet($siteSet)
-    {
-        $this->container['siteSet'] = $siteSet;
-
-        return $this;
-    }
-
-    /**
-     * Gets systemStatus
-     *
-     * @return \TencentAds\Model\V3\ReviewResultStatus|mixed
-     */
-    public function getSystemStatus()
-    {
-        return $this->container['systemStatus'];
-    }
-
-    /**
-     * Sets systemStatus
-     *
-     * @param \TencentAds\Model\V3\ReviewResultStatus|mixed $systemStatus systemStatus
-     *
-     * @return $this
-     */
-    public function setSystemStatus($systemStatus)
-    {
-        $this->container['systemStatus'] = $systemStatus;
-
-        return $this;
-    }
-
-    /**
-     * Gets rejectMessage
+     * Gets miniCardLinkDescription
      *
      * @return string|mixed
      */
-    public function getRejectMessage()
+    public function getMiniCardLinkDescription()
     {
-        return $this->container['rejectMessage'];
+        return $this->container['miniCardLinkDescription'];
     }
 
     /**
-     * Sets rejectMessage
+     * Sets miniCardLinkDescription
      *
-     * @param string|mixed $rejectMessage rejectMessage
+     * @param string|mixed $miniCardLinkDescription miniCardLinkDescription
      *
      * @return $this
      */
-    public function setRejectMessage($rejectMessage)
+    public function setMiniCardLinkDescription($miniCardLinkDescription)
     {
-        $this->container['rejectMessage'] = $rejectMessage;
+        $this->container['miniCardLinkDescription'] = $miniCardLinkDescription;
 
         return $this;
     }
 
     /**
-     * Gets elementRejectDetailInfo
+     * Gets miniCardLinkImage
      *
-     * @return \TencentAds\Model\V3\ElementRejectDetailInfoListStruct[]|mixed
+     * @return string|mixed
      */
-    public function getElementRejectDetailInfo()
+    public function getMiniCardLinkImage()
     {
-        return $this->container['elementRejectDetailInfo'];
+        return $this->container['miniCardLinkImage'];
     }
 
     /**
-     * Sets elementRejectDetailInfo
+     * Sets miniCardLinkImage
      *
-     * @param \TencentAds\Model\V3\ElementRejectDetailInfoListStruct[]|mixed $elementRejectDetailInfo elementRejectDetailInfo
+     * @param string|mixed $miniCardLinkImage miniCardLinkImage
      *
      * @return $this
      */
-    public function setElementRejectDetailInfo($elementRejectDetailInfo)
+    public function setMiniCardLinkImage($miniCardLinkImage)
     {
-        $this->container['elementRejectDetailInfo'] = $elementRejectDetailInfo;
+        $this->container['miniCardLinkImage'] = $miniCardLinkImage;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniCardLinkButtonText
+     *
+     * @return string|mixed
+     */
+    public function getMiniCardLinkButtonText()
+    {
+        return $this->container['miniCardLinkButtonText'];
+    }
+
+    /**
+     * Sets miniCardLinkButtonText
+     *
+     * @param string|mixed $miniCardLinkButtonText miniCardLinkButtonText
+     *
+     * @return $this
+     */
+    public function setMiniCardLinkButtonText($miniCardLinkButtonText)
+    {
+        $this->container['miniCardLinkButtonText'] = $miniCardLinkButtonText;
+
+        return $this;
+    }
+
+    /**
+     * Gets jumpInfo
+     *
+     * @return \TencentAds\Model\V3\JumpinfoStruct|mixed
+     */
+    public function getJumpInfo()
+    {
+        return $this->container['jumpInfo'];
+    }
+
+    /**
+     * Sets jumpInfo
+     *
+     * @param \TencentAds\Model\V3\JumpinfoStruct|mixed $jumpInfo jumpInfo
+     *
+     * @return $this
+     */
+    public function setJumpInfo($jumpInfo)
+    {
+        $this->container['jumpInfo'] = $jumpInfo;
 
         return $this;
     }

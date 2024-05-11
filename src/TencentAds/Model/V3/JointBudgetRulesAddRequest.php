@@ -1,6 +1,6 @@
 <?php
 /**
- * SiteSetResultListStruct
+ * JointBudgetRulesAddRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * SiteSetResultListStruct Class Doc Comment
+ * JointBudgetRulesAddRequest Class Doc Comment
  *
  * @category Class
- * @description 版位粒度审核结果
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class SiteSetResultListStruct implements ModelInterface, ArrayAccess
+class JointBudgetRulesAddRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'site_set_result_list_struct';
+    protected static $swaggerModelName = 'JointBudgetRulesAddRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +57,11 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'siteSet' => '\TencentAds\Model\V3\SiteSetDefinition',
-        'systemStatus' => '\TencentAds\Model\V3\ReviewResultStatus',
-        'rejectMessage' => 'string',
-        'elementRejectDetailInfo' => '\TencentAds\Model\V3\ElementRejectDetailInfoListStruct[]'
+        'accountId' => 'int',
+        'jointBudgetRuleName' => 'string',
+        'dailyBudget' => 'int',
+        'totalBudget' => 'int',
+        'adgroupIdList' => 'int[]'
     ];
 
     /**
@@ -70,10 +70,11 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'siteSet' => null,
-        'systemStatus' => null,
-        'rejectMessage' => null,
-        'elementRejectDetailInfo' => null
+        'accountId' => 'int64',
+        'jointBudgetRuleName' => null,
+        'dailyBudget' => 'int64',
+        'totalBudget' => 'int64',
+        'adgroupIdList' => 'int64'
     ];
 
     /**
@@ -103,10 +104,11 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'siteSet' => 'site_set',
-        'systemStatus' => 'system_status',
-        'rejectMessage' => 'reject_message',
-        'elementRejectDetailInfo' => 'element_reject_detail_info'
+        'accountId' => 'account_id',
+        'jointBudgetRuleName' => 'joint_budget_rule_name',
+        'dailyBudget' => 'daily_budget',
+        'totalBudget' => 'total_budget',
+        'adgroupIdList' => 'adgroup_id_list'
     ];
 
     /**
@@ -115,10 +117,11 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'siteSet' => 'setSiteSet',
-        'systemStatus' => 'setSystemStatus',
-        'rejectMessage' => 'setRejectMessage',
-        'elementRejectDetailInfo' => 'setElementRejectDetailInfo'
+        'accountId' => 'setAccountId',
+        'jointBudgetRuleName' => 'setJointBudgetRuleName',
+        'dailyBudget' => 'setDailyBudget',
+        'totalBudget' => 'setTotalBudget',
+        'adgroupIdList' => 'setAdgroupIdList'
     ];
 
     /**
@@ -127,10 +130,11 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'siteSet' => 'getSiteSet',
-        'systemStatus' => 'getSystemStatus',
-        'rejectMessage' => 'getRejectMessage',
-        'elementRejectDetailInfo' => 'getElementRejectDetailInfo'
+        'accountId' => 'getAccountId',
+        'jointBudgetRuleName' => 'getJointBudgetRuleName',
+        'dailyBudget' => 'getDailyBudget',
+        'totalBudget' => 'getTotalBudget',
+        'adgroupIdList' => 'getAdgroupIdList'
     ];
 
     /**
@@ -193,10 +197,11 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
-        $this->container['systemStatus'] = isset($data['systemStatus']) ? $data['systemStatus'] : null;
-        $this->container['rejectMessage'] = isset($data['rejectMessage']) ? $data['rejectMessage'] : null;
-        $this->container['elementRejectDetailInfo'] = isset($data['elementRejectDetailInfo']) ? $data['elementRejectDetailInfo'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['jointBudgetRuleName'] = isset($data['jointBudgetRuleName']) ? $data['jointBudgetRuleName'] : null;
+        $this->container['dailyBudget'] = isset($data['dailyBudget']) ? $data['dailyBudget'] : null;
+        $this->container['totalBudget'] = isset($data['totalBudget']) ? $data['totalBudget'] : null;
+        $this->container['adgroupIdList'] = isset($data['adgroupIdList']) ? $data['adgroupIdList'] : null;
     }
 
     /**
@@ -224,97 +229,121 @@ class SiteSetResultListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets siteSet
+     * Gets accountId
      *
-     * @return \TencentAds\Model\V3\SiteSetDefinition|mixed
+     * @return int|mixed
      */
-    public function getSiteSet()
+    public function getAccountId()
     {
-        return $this->container['siteSet'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets siteSet
+     * Sets accountId
      *
-     * @param \TencentAds\Model\V3\SiteSetDefinition|mixed $siteSet siteSet
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setSiteSet($siteSet)
+    public function setAccountId($accountId)
     {
-        $this->container['siteSet'] = $siteSet;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }
 
     /**
-     * Gets systemStatus
-     *
-     * @return \TencentAds\Model\V3\ReviewResultStatus|mixed
-     */
-    public function getSystemStatus()
-    {
-        return $this->container['systemStatus'];
-    }
-
-    /**
-     * Sets systemStatus
-     *
-     * @param \TencentAds\Model\V3\ReviewResultStatus|mixed $systemStatus systemStatus
-     *
-     * @return $this
-     */
-    public function setSystemStatus($systemStatus)
-    {
-        $this->container['systemStatus'] = $systemStatus;
-
-        return $this;
-    }
-
-    /**
-     * Gets rejectMessage
+     * Gets jointBudgetRuleName
      *
      * @return string|mixed
      */
-    public function getRejectMessage()
+    public function getJointBudgetRuleName()
     {
-        return $this->container['rejectMessage'];
+        return $this->container['jointBudgetRuleName'];
     }
 
     /**
-     * Sets rejectMessage
+     * Sets jointBudgetRuleName
      *
-     * @param string|mixed $rejectMessage rejectMessage
+     * @param string|mixed $jointBudgetRuleName jointBudgetRuleName
      *
      * @return $this
      */
-    public function setRejectMessage($rejectMessage)
+    public function setJointBudgetRuleName($jointBudgetRuleName)
     {
-        $this->container['rejectMessage'] = $rejectMessage;
+        $this->container['jointBudgetRuleName'] = $jointBudgetRuleName;
 
         return $this;
     }
 
     /**
-     * Gets elementRejectDetailInfo
+     * Gets dailyBudget
      *
-     * @return \TencentAds\Model\V3\ElementRejectDetailInfoListStruct[]|mixed
+     * @return int|mixed
      */
-    public function getElementRejectDetailInfo()
+    public function getDailyBudget()
     {
-        return $this->container['elementRejectDetailInfo'];
+        return $this->container['dailyBudget'];
     }
 
     /**
-     * Sets elementRejectDetailInfo
+     * Sets dailyBudget
      *
-     * @param \TencentAds\Model\V3\ElementRejectDetailInfoListStruct[]|mixed $elementRejectDetailInfo elementRejectDetailInfo
+     * @param int|mixed $dailyBudget dailyBudget
      *
      * @return $this
      */
-    public function setElementRejectDetailInfo($elementRejectDetailInfo)
+    public function setDailyBudget($dailyBudget)
     {
-        $this->container['elementRejectDetailInfo'] = $elementRejectDetailInfo;
+        $this->container['dailyBudget'] = $dailyBudget;
+
+        return $this;
+    }
+
+    /**
+     * Gets totalBudget
+     *
+     * @return int|mixed
+     */
+    public function getTotalBudget()
+    {
+        return $this->container['totalBudget'];
+    }
+
+    /**
+     * Sets totalBudget
+     *
+     * @param int|mixed $totalBudget totalBudget
+     *
+     * @return $this
+     */
+    public function setTotalBudget($totalBudget)
+    {
+        $this->container['totalBudget'] = $totalBudget;
+
+        return $this;
+    }
+
+    /**
+     * Gets adgroupIdList
+     *
+     * @return int[]|mixed
+     */
+    public function getAdgroupIdList()
+    {
+        return $this->container['adgroupIdList'];
+    }
+
+    /**
+     * Sets adgroupIdList
+     *
+     * @param int[]|mixed $adgroupIdList adgroupIdList
+     *
+     * @return $this
+     */
+    public function setAdgroupIdList($adgroupIdList)
+    {
+        $this->container['adgroupIdList'] = $adgroupIdList;
 
         return $this;
     }

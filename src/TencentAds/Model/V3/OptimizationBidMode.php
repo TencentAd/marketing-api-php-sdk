@@ -45,6 +45,7 @@ class OptimizationBidMode
      * Possible values of this enum
      */
     const OCPC = 'BID_MODE_OCPC';
+    const OCPA = 'BID_MODE_OCPA';
     const OCPM = 'BID_MODE_OCPM';
     
     /**
@@ -55,6 +56,7 @@ class OptimizationBidMode
     {
         return [
             self::OCPC,
+            self::OCPA,
             self::OCPM,
         ];
     }

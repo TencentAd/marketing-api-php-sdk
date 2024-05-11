@@ -63,6 +63,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
         'businessScopeId' => 'int',
         'qualificationCode' => 'string',
         'imageIdList' => 'string[]',
+        'expandFieldList' => '\TencentAds\Model\V3\ExpandFieldStruct[]',
         'qualificationStatus' => '\TencentAds\Model\V3\QualificationStatus',
         'expiredDate' => 'string',
         'rejectMessage' => 'string',
@@ -81,6 +82,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
         'businessScopeId' => 'int64',
         'qualificationCode' => null,
         'imageIdList' => null,
+        'expandFieldList' => null,
         'qualificationStatus' => null,
         'expiredDate' => null,
         'rejectMessage' => null,
@@ -120,6 +122,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
         'businessScopeId' => 'business_scope_id',
         'qualificationCode' => 'qualification_code',
         'imageIdList' => 'image_id_list',
+        'expandFieldList' => 'expand_field_list',
         'qualificationStatus' => 'qualification_status',
         'expiredDate' => 'expired_date',
         'rejectMessage' => 'reject_message',
@@ -138,6 +141,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
         'businessScopeId' => 'setBusinessScopeId',
         'qualificationCode' => 'setQualificationCode',
         'imageIdList' => 'setImageIdList',
+        'expandFieldList' => 'setExpandFieldList',
         'qualificationStatus' => 'setQualificationStatus',
         'expiredDate' => 'setExpiredDate',
         'rejectMessage' => 'setRejectMessage',
@@ -156,6 +160,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
         'businessScopeId' => 'getBusinessScopeId',
         'qualificationCode' => 'getQualificationCode',
         'imageIdList' => 'getImageIdList',
+        'expandFieldList' => 'getExpandFieldList',
         'qualificationStatus' => 'getQualificationStatus',
         'expiredDate' => 'getExpiredDate',
         'rejectMessage' => 'getRejectMessage',
@@ -228,6 +233,7 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
         $this->container['businessScopeId'] = isset($data['businessScopeId']) ? $data['businessScopeId'] : null;
         $this->container['qualificationCode'] = isset($data['qualificationCode']) ? $data['qualificationCode'] : null;
         $this->container['imageIdList'] = isset($data['imageIdList']) ? $data['imageIdList'] : null;
+        $this->container['expandFieldList'] = isset($data['expandFieldList']) ? $data['expandFieldList'] : null;
         $this->container['qualificationStatus'] = isset($data['qualificationStatus']) ? $data['qualificationStatus'] : null;
         $this->container['expiredDate'] = isset($data['expiredDate']) ? $data['expiredDate'] : null;
         $this->container['rejectMessage'] = isset($data['rejectMessage']) ? $data['rejectMessage'] : null;
@@ -375,6 +381,30 @@ class IndustryQualificationsStruct implements ModelInterface, ArrayAccess
     public function setImageIdList($imageIdList)
     {
         $this->container['imageIdList'] = $imageIdList;
+
+        return $this;
+    }
+
+    /**
+     * Gets expandFieldList
+     *
+     * @return \TencentAds\Model\V3\ExpandFieldStruct[]|mixed
+     */
+    public function getExpandFieldList()
+    {
+        return $this->container['expandFieldList'];
+    }
+
+    /**
+     * Sets expandFieldList
+     *
+     * @param \TencentAds\Model\V3\ExpandFieldStruct[]|mixed $expandFieldList expandFieldList
+     *
+     * @return $this
+     */
+    public function setExpandFieldList($expandFieldList)
+    {
+        $this->container['expandFieldList'] = $expandFieldList;
 
         return $this;
     }

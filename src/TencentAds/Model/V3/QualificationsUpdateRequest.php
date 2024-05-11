@@ -60,7 +60,8 @@ class QualificationsUpdateRequest implements ModelInterface, ArrayAccess
         'accountId' => 'int',
         'qualificationType' => '\TencentAds\Model\V3\QualificationType',
         'qualificationId' => 'int',
-        'imageIdList' => 'string[]'
+        'imageIdList' => 'string[]',
+        'expandFieldList' => '\TencentAds\Model\V3\ExpandFieldStruct[]'
     ];
 
     /**
@@ -72,7 +73,8 @@ class QualificationsUpdateRequest implements ModelInterface, ArrayAccess
         'accountId' => 'int64',
         'qualificationType' => null,
         'qualificationId' => 'int64',
-        'imageIdList' => null
+        'imageIdList' => null,
+        'expandFieldList' => null
     ];
 
     /**
@@ -105,7 +107,8 @@ class QualificationsUpdateRequest implements ModelInterface, ArrayAccess
         'accountId' => 'account_id',
         'qualificationType' => 'qualification_type',
         'qualificationId' => 'qualification_id',
-        'imageIdList' => 'image_id_list'
+        'imageIdList' => 'image_id_list',
+        'expandFieldList' => 'expand_field_list'
     ];
 
     /**
@@ -117,7 +120,8 @@ class QualificationsUpdateRequest implements ModelInterface, ArrayAccess
         'accountId' => 'setAccountId',
         'qualificationType' => 'setQualificationType',
         'qualificationId' => 'setQualificationId',
-        'imageIdList' => 'setImageIdList'
+        'imageIdList' => 'setImageIdList',
+        'expandFieldList' => 'setExpandFieldList'
     ];
 
     /**
@@ -129,7 +133,8 @@ class QualificationsUpdateRequest implements ModelInterface, ArrayAccess
         'accountId' => 'getAccountId',
         'qualificationType' => 'getQualificationType',
         'qualificationId' => 'getQualificationId',
-        'imageIdList' => 'getImageIdList'
+        'imageIdList' => 'getImageIdList',
+        'expandFieldList' => 'getExpandFieldList'
     ];
 
     /**
@@ -196,6 +201,7 @@ class QualificationsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['qualificationType'] = isset($data['qualificationType']) ? $data['qualificationType'] : null;
         $this->container['qualificationId'] = isset($data['qualificationId']) ? $data['qualificationId'] : null;
         $this->container['imageIdList'] = isset($data['imageIdList']) ? $data['imageIdList'] : null;
+        $this->container['expandFieldList'] = isset($data['expandFieldList']) ? $data['expandFieldList'] : null;
     }
 
     /**
@@ -314,6 +320,30 @@ class QualificationsUpdateRequest implements ModelInterface, ArrayAccess
     public function setImageIdList($imageIdList)
     {
         $this->container['imageIdList'] = $imageIdList;
+
+        return $this;
+    }
+
+    /**
+     * Gets expandFieldList
+     *
+     * @return \TencentAds\Model\V3\ExpandFieldStruct[]|mixed
+     */
+    public function getExpandFieldList()
+    {
+        return $this->container['expandFieldList'];
+    }
+
+    /**
+     * Sets expandFieldList
+     *
+     * @param \TencentAds\Model\V3\ExpandFieldStruct[]|mixed $expandFieldList expandFieldList
+     *
+     * @return $this
+     */
+    public function setExpandFieldList($expandFieldList)
+    {
+        $this->container['expandFieldList'] = $expandFieldList;
 
         return $this;
     }

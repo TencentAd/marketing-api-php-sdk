@@ -1,6 +1,6 @@
 <?php
 /**
- * ProductMode
+ * FileProcessStatus
  *
  * PHP version 5
  *
@@ -31,21 +31,23 @@ namespace TencentAds\Model\V3;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ProductMode Class Doc Comment
+ * FileProcessStatus Class Doc Comment
  *
  * @category Class
- * @description 标明适用的动态商品广告类型
+ * @description 文件状态
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ProductMode
+class FileProcessStatus
 {
     /**
      * Possible values of this enum
      */
-    const SINGLE = 'SINGLE';
-    const MULTIPLE = 'MULTIPLE';
+    const PENDING = 'PENDING';
+    const PROCESSING = 'PROCESSING';
+    const ERROR = 'ERROR';
+    const SUCCESS = 'SUCCESS';
     
     /**
      * Gets allowable values of the enum
@@ -54,8 +56,10 @@ class ProductMode
     public static function getAllowableEnumValues()
     {
         return [
-            self::SINGLE,
-            self::MULTIPLE,
+            self::PENDING,
+            self::PROCESSING,
+            self::ERROR,
+            self::SUCCESS,
         ];
     }
 }

@@ -85,7 +85,10 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         'elementStory' => '\TencentAds\Model\V3\ElementStoryComponent[]',
         'wxgamePlayablePage' => '\TencentAds\Model\V3\WxgamePlayablePageComponent[]',
         'mainJumpInfo' => '\TencentAds\Model\V3\JumpinfoComponent[]',
-        'appPromotionVideo' => '\TencentAds\Model\V3\AppPromotionVideoComponent[]'
+        'appPromotionVideo' => '\TencentAds\Model\V3\AppPromotionVideoComponent[]',
+        'videoShowcase' => '\TencentAds\Model\V3\VideoShowcaseComponent[]',
+        'imageShowcase' => '\TencentAds\Model\V3\ImageShowcaseComponent[]',
+        'miniCardLink' => '\TencentAds\Model\V3\MiniCardLinkComponent[]'
     ];
 
     /**
@@ -121,7 +124,10 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         'elementStory' => null,
         'wxgamePlayablePage' => null,
         'mainJumpInfo' => null,
-        'appPromotionVideo' => null
+        'appPromotionVideo' => null,
+        'videoShowcase' => null,
+        'imageShowcase' => null,
+        'miniCardLink' => null
     ];
 
     /**
@@ -178,7 +184,10 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         'elementStory' => 'element_story',
         'wxgamePlayablePage' => 'wxgame_playable_page',
         'mainJumpInfo' => 'main_jump_info',
-        'appPromotionVideo' => 'app_promotion_video'
+        'appPromotionVideo' => 'app_promotion_video',
+        'videoShowcase' => 'video_showcase',
+        'imageShowcase' => 'image_showcase',
+        'miniCardLink' => 'mini_card_link'
     ];
 
     /**
@@ -214,7 +223,10 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         'elementStory' => 'setElementStory',
         'wxgamePlayablePage' => 'setWxgamePlayablePage',
         'mainJumpInfo' => 'setMainJumpInfo',
-        'appPromotionVideo' => 'setAppPromotionVideo'
+        'appPromotionVideo' => 'setAppPromotionVideo',
+        'videoShowcase' => 'setVideoShowcase',
+        'imageShowcase' => 'setImageShowcase',
+        'miniCardLink' => 'setMiniCardLink'
     ];
 
     /**
@@ -250,7 +262,10 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         'elementStory' => 'getElementStory',
         'wxgamePlayablePage' => 'getWxgamePlayablePage',
         'mainJumpInfo' => 'getMainJumpInfo',
-        'appPromotionVideo' => 'getAppPromotionVideo'
+        'appPromotionVideo' => 'getAppPromotionVideo',
+        'videoShowcase' => 'getVideoShowcase',
+        'imageShowcase' => 'getImageShowcase',
+        'miniCardLink' => 'getMiniCardLink'
     ];
 
     /**
@@ -341,6 +356,9 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         $this->container['wxgamePlayablePage'] = isset($data['wxgamePlayablePage']) ? $data['wxgamePlayablePage'] : null;
         $this->container['mainJumpInfo'] = isset($data['mainJumpInfo']) ? $data['mainJumpInfo'] : null;
         $this->container['appPromotionVideo'] = isset($data['appPromotionVideo']) ? $data['appPromotionVideo'] : null;
+        $this->container['videoShowcase'] = isset($data['videoShowcase']) ? $data['videoShowcase'] : null;
+        $this->container['imageShowcase'] = isset($data['imageShowcase']) ? $data['imageShowcase'] : null;
+        $this->container['miniCardLink'] = isset($data['miniCardLink']) ? $data['miniCardLink'] : null;
     }
 
     /**
@@ -1035,6 +1053,78 @@ class CreativeComponents implements ModelInterface, ArrayAccess
     public function setAppPromotionVideo($appPromotionVideo)
     {
         $this->container['appPromotionVideo'] = $appPromotionVideo;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoShowcase
+     *
+     * @return \TencentAds\Model\V3\VideoShowcaseComponent[]|mixed
+     */
+    public function getVideoShowcase()
+    {
+        return $this->container['videoShowcase'];
+    }
+
+    /**
+     * Sets videoShowcase
+     *
+     * @param \TencentAds\Model\V3\VideoShowcaseComponent[]|mixed $videoShowcase videoShowcase
+     *
+     * @return $this
+     */
+    public function setVideoShowcase($videoShowcase)
+    {
+        $this->container['videoShowcase'] = $videoShowcase;
+
+        return $this;
+    }
+
+    /**
+     * Gets imageShowcase
+     *
+     * @return \TencentAds\Model\V3\ImageShowcaseComponent[]|mixed
+     */
+    public function getImageShowcase()
+    {
+        return $this->container['imageShowcase'];
+    }
+
+    /**
+     * Sets imageShowcase
+     *
+     * @param \TencentAds\Model\V3\ImageShowcaseComponent[]|mixed $imageShowcase imageShowcase
+     *
+     * @return $this
+     */
+    public function setImageShowcase($imageShowcase)
+    {
+        $this->container['imageShowcase'] = $imageShowcase;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniCardLink
+     *
+     * @return \TencentAds\Model\V3\MiniCardLinkComponent[]|mixed
+     */
+    public function getMiniCardLink()
+    {
+        return $this->container['miniCardLink'];
+    }
+
+    /**
+     * Sets miniCardLink
+     *
+     * @param \TencentAds\Model\V3\MiniCardLinkComponent[]|mixed $miniCardLink miniCardLink
+     *
+     * @return $this
+     */
+    public function setMiniCardLink($miniCardLink)
+    {
+        $this->container['miniCardLink'] = $miniCardLink;
 
         return $this;
     }

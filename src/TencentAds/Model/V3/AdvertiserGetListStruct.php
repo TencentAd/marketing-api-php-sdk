@@ -66,7 +66,6 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'corporationLicence' => 'string',
         'certificationImageId' => 'string',
         'certificationImage' => 'string',
-        'identityNumber' => 'string',
         'individualQualification' => '\TencentAds\Model\V3\IndividualQualification',
         'systemIndustryId' => 'int',
         'customizedIndustry' => 'string',
@@ -99,7 +98,6 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'corporationLicence' => null,
         'certificationImageId' => null,
         'certificationImage' => null,
-        'identityNumber' => null,
         'individualQualification' => null,
         'systemIndustryId' => 'int64',
         'customizedIndustry' => null,
@@ -153,7 +151,6 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'corporationLicence' => 'corporation_licence',
         'certificationImageId' => 'certification_image_id',
         'certificationImage' => 'certification_image',
-        'identityNumber' => 'identity_number',
         'individualQualification' => 'individual_qualification',
         'systemIndustryId' => 'system_industry_id',
         'customizedIndustry' => 'customized_industry',
@@ -186,7 +183,6 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'corporationLicence' => 'setCorporationLicence',
         'certificationImageId' => 'setCertificationImageId',
         'certificationImage' => 'setCertificationImage',
-        'identityNumber' => 'setIdentityNumber',
         'individualQualification' => 'setIndividualQualification',
         'systemIndustryId' => 'setSystemIndustryId',
         'customizedIndustry' => 'setCustomizedIndustry',
@@ -219,7 +215,6 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'corporationLicence' => 'getCorporationLicence',
         'certificationImageId' => 'getCertificationImageId',
         'certificationImage' => 'getCertificationImage',
-        'identityNumber' => 'getIdentityNumber',
         'individualQualification' => 'getIndividualQualification',
         'systemIndustryId' => 'getSystemIndustryId',
         'customizedIndustry' => 'getCustomizedIndustry',
@@ -306,7 +301,6 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         $this->container['corporationLicence'] = isset($data['corporationLicence']) ? $data['corporationLicence'] : null;
         $this->container['certificationImageId'] = isset($data['certificationImageId']) ? $data['certificationImageId'] : null;
         $this->container['certificationImage'] = isset($data['certificationImage']) ? $data['certificationImage'] : null;
-        $this->container['identityNumber'] = isset($data['identityNumber']) ? $data['identityNumber'] : null;
         $this->container['individualQualification'] = isset($data['individualQualification']) ? $data['individualQualification'] : null;
         $this->container['systemIndustryId'] = isset($data['systemIndustryId']) ? $data['systemIndustryId'] : null;
         $this->container['customizedIndustry'] = isset($data['customizedIndustry']) ? $data['customizedIndustry'] : null;
@@ -537,30 +531,6 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     public function setCertificationImage($certificationImage)
     {
         $this->container['certificationImage'] = $certificationImage;
-
-        return $this;
-    }
-
-    /**
-     * Gets identityNumber
-     *
-     * @return string|mixed
-     */
-    public function getIdentityNumber()
-    {
-        return $this->container['identityNumber'];
-    }
-
-    /**
-     * Sets identityNumber
-     *
-     * @param string|mixed $identityNumber identityNumber
-     *
-     * @return $this
-     */
-    public function setIdentityNumber($identityNumber)
-    {
-        $this->container['identityNumber'] = $identityNumber;
 
         return $this;
     }

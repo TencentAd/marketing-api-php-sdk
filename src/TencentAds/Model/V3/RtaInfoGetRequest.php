@@ -1,6 +1,6 @@
 <?php
 /**
- * RtaInfoRequest
+ * RtaInfoGetRequest
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * RtaInfoRequest Class Doc Comment
+ * RtaInfoGetRequest Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class RtaInfoRequest implements ModelInterface, ArrayAccess
+class RtaInfoGetRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class RtaInfoRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'RtaInfoRequest';
+    protected static $swaggerModelName = 'RtaInfoGetRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization

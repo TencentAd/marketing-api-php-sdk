@@ -1,6 +1,6 @@
 <?php
 /**
- * RtaApi
+ * QualificationStructureApi
  * PHP version 5
  *
  * @category Class
@@ -40,14 +40,14 @@ use TencentAds\HeaderSelector;
 use TencentAds\ObjectSerializer;
 
 /**
- * RtaApi Class Doc Comment
+ * QualificationStructureApi Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class RtaApi
+class QualificationStructureApi
 {
     /**
      * @var ClientInterface
@@ -88,37 +88,41 @@ class RtaApi
     }
 
     /**
-     * Operation rtaInfo
+     * Operation qualificationStructureGet
      *
-     * 基本信息查询
+     * 获取广告主资质结构
      *
-     * @param  \TencentAds\Model\V3\RtaInfoRequest|mixed $data data (required)
+     * @param  int|mixed $accountId accountId (required)
+     * @param  string|mixed $qualificationCode qualificationCode (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\V3\RtaInfoResponse|mixed
+     * @return \TencentAds\Model\V3\QualificationStructureGetResponse|mixed
      */
-    public function rtaInfo($data)
+    public function qualificationStructureGet($accountId, $qualificationCode, $fields = null)
     {
-        list($response) = $this->rtaInfoWithHttpInfo($data);
+        list($response) = $this->qualificationStructureGetWithHttpInfo($accountId, $qualificationCode, $fields);
         return $response;
     }
 
     /**
-     * Operation rtaInfoWithHttpInfo
+     * Operation qualificationStructureGetWithHttpInfo
      *
-     * 基本信息查询
+     * 获取广告主资质结构
      *
-     * @param  \TencentAds\Model\V3\RtaInfoRequest|mixed $data (required)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $qualificationCode (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \TencentAds\Model\V3\RtaInfoResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TencentAds\Model\V3\QualificationStructureGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function rtaInfoWithHttpInfo($data)
+    public function qualificationStructureGetWithHttpInfo($accountId, $qualificationCode, $fields = null)
     {
-        $returnType = '\TencentAds\Model\V3\RtaInfoResponse';
-        $request = $this->rtaInfoRequest($data);
+        $returnType = '\TencentAds\Model\V3\QualificationStructureGetResponse';
+        $request = $this->qualificationStructureGetRequest($accountId, $qualificationCode, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -169,7 +173,7 @@ class RtaApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\TencentAds\Model\V3\RtaInfoResponse',
+                        '\TencentAds\Model\V3\QualificationStructureGetResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -180,18 +184,20 @@ class RtaApi
     }
 
     /**
-     * Operation rtaInfoAsync
+     * Operation qualificationStructureGetAsync
      *
-     * 基本信息查询
+     * 获取广告主资质结构
      *
-     * @param  \TencentAds\Model\V3\RtaInfoRequest|mixed $data (required)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $qualificationCode (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function rtaInfoAsync($data)
+    public function qualificationStructureGetAsync($accountId, $qualificationCode, $fields = null)
     {
-        return $this->rtaInfoAsyncWithHttpInfo($data)
+        return $this->qualificationStructureGetAsyncWithHttpInfo($accountId, $qualificationCode, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -200,19 +206,21 @@ class RtaApi
     }
 
     /**
-     * Operation rtaInfoAsyncWithHttpInfo
+     * Operation qualificationStructureGetAsyncWithHttpInfo
      *
-     * 基本信息查询
+     * 获取广告主资质结构
      *
-     * @param  \TencentAds\Model\V3\RtaInfoRequest|mixed $data (required)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $qualificationCode (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function rtaInfoAsyncWithHttpInfo($data)
+    public function qualificationStructureGetAsyncWithHttpInfo($accountId, $qualificationCode, $fields = null)
     {
-        $returnType = '\TencentAds\Model\V3\RtaInfoResponse';
-        $request = $this->rtaInfoRequest($data);
+        $returnType = '\TencentAds\Model\V3\QualificationStructureGetResponse';
+        $request = $this->qualificationStructureGetRequest($accountId, $qualificationCode, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -252,38 +260,58 @@ class RtaApi
     }
 
     /**
-     * Create request for operation 'rtaInfo'
+     * Create request for operation 'qualificationStructureGet'
      *
-     * @param  \TencentAds\Model\V3\RtaInfoRequest|mixed $data (required)
+     * @param  int|mixed $accountId (required)
+     * @param  string|mixed $qualificationCode (required)
+     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function rtaInfoRequest($data)
+    protected function qualificationStructureGetRequest($accountId, $qualificationCode, $fields = null)
     {
-        // verify the required parameter 'data' is set
-        if ($data === null || (is_array($data) && count($data) === 0)) {
+        // verify the required parameter 'accountId' is set
+        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $data when calling rtaInfo'
+                'Missing the required parameter $accountId when calling qualificationStructureGet'
+            );
+        }
+        // verify the required parameter 'qualificationCode' is set
+        if ($qualificationCode === null || (is_array($qualificationCode) && count($qualificationCode) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $qualificationCode when calling qualificationStructureGet'
             );
         }
 
-        $resourcePath = '/rta/info';
+        $resourcePath = '/qualification_structure/get';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
         $httpBody = '';
         $multipart = false;
 
+        // query params
+        if ($accountId !== null) {
+            $queryParams['account_id'] = ObjectSerializer::toQueryValue($accountId);
+        }
+        // query params
+        if ($qualificationCode !== null) {
+            $queryParams['qualification_code'] = ObjectSerializer::toQueryValue($qualificationCode);
+        }
+        // query params
+        if (is_array($fields)) {
+           $queryParams['fields'] = json_encode($fields);
+        } else
+        if ($fields !== null) {
+            $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);
+        }
 
 
         // body params
         $_tempBody = null;
-        if (isset($data)) {
-            $_tempBody = $data;
-        }
 
-        if (in_array('multipart/form-data', ['application/json', 'application/xml'])) {
+        if (in_array('multipart/form-data', ['text/plain'])) {
             $multipart = true;
         }
         if ($multipart) {
@@ -293,7 +321,7 @@ class RtaApi
         } else {
             $headers = $this->headerSelector->selectHeaders(
                 ['application/json'],
-                ['application/json', 'application/xml']
+                ['text/plain']
             );
         }
 
@@ -370,7 +398,7 @@ class RtaApi
             $query = \GuzzleHttp\Psr7\build_query($queryParams);
         }
         return new Request(
-            'POST',
+            'GET',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
             $headers,
             $httpBody

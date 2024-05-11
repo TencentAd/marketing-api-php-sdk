@@ -58,6 +58,8 @@ class IndividualQualification implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'name' => 'string',
+        'identificationNumber' => 'string',
         'identificationFrontImageId' => 'string',
         'identificationBackImageId' => 'string'
     ];
@@ -68,6 +70,8 @@ class IndividualQualification implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
+        'name' => null,
+        'identificationNumber' => null,
         'identificationFrontImageId' => null,
         'identificationBackImageId' => null
     ];
@@ -99,6 +103,8 @@ class IndividualQualification implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'name' => 'name',
+        'identificationNumber' => 'identification_number',
         'identificationFrontImageId' => 'identification_front_image_id',
         'identificationBackImageId' => 'identification_back_image_id'
     ];
@@ -109,6 +115,8 @@ class IndividualQualification implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'name' => 'setName',
+        'identificationNumber' => 'setIdentificationNumber',
         'identificationFrontImageId' => 'setIdentificationFrontImageId',
         'identificationBackImageId' => 'setIdentificationBackImageId'
     ];
@@ -119,6 +127,8 @@ class IndividualQualification implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'name' => 'getName',
+        'identificationNumber' => 'getIdentificationNumber',
         'identificationFrontImageId' => 'getIdentificationFrontImageId',
         'identificationBackImageId' => 'getIdentificationBackImageId'
     ];
@@ -183,6 +193,8 @@ class IndividualQualification implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
+        $this->container['identificationNumber'] = isset($data['identificationNumber']) ? $data['identificationNumber'] : null;
         $this->container['identificationFrontImageId'] = isset($data['identificationFrontImageId']) ? $data['identificationFrontImageId'] : null;
         $this->container['identificationBackImageId'] = isset($data['identificationBackImageId']) ? $data['identificationBackImageId'] : null;
     }
@@ -210,6 +222,54 @@ class IndividualQualification implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets name
+     *
+     * @return string|mixed
+     */
+    public function getName()
+    {
+        return $this->container['name'];
+    }
+
+    /**
+     * Sets name
+     *
+     * @param string|mixed $name name
+     *
+     * @return $this
+     */
+    public function setName($name)
+    {
+        $this->container['name'] = $name;
+
+        return $this;
+    }
+
+    /**
+     * Gets identificationNumber
+     *
+     * @return string|mixed
+     */
+    public function getIdentificationNumber()
+    {
+        return $this->container['identificationNumber'];
+    }
+
+    /**
+     * Sets identificationNumber
+     *
+     * @param string|mixed $identificationNumber identificationNumber
+     *
+     * @return $this
+     */
+    public function setIdentificationNumber($identificationNumber)
+    {
+        $this->container['identificationNumber'] = $identificationNumber;
+
+        return $this;
+    }
 
     /**
      * Gets identificationFrontImageId

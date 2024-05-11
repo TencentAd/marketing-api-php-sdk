@@ -73,6 +73,10 @@ class ComponentType
     const ELEMENT_STORY = 'ELEMENT_STORY';
     const WXGAME_PLAYABLE_PAGE = 'WXGAME_PLAYABLE_PAGE';
     const APP_PROMOTION_VIDEO = 'APP_PROMOTION_VIDEO';
+    const VIDEO_SHOWCASE = 'VIDEO_SHOWCASE';
+    const IMAGE_SHOWCASE = 'IMAGE_SHOWCASE';
+    const SOCIAL_SKILL = 'SOCIAL_SKILL';
+    const MINI_CARD_LINK = 'MINI_CARD_LINK';
     const V2_TITLE = 'V2_TITLE';
     const V2_DESCRIPTION = 'V2_DESCRIPTION';
     const V2_LONG_SUBLINK = 'V2_LONG_SUBLINK';
@@ -141,6 +145,10 @@ class ComponentType
             self::ELEMENT_STORY,
             self::WXGAME_PLAYABLE_PAGE,
             self::APP_PROMOTION_VIDEO,
+            self::VIDEO_SHOWCASE,
+            self::IMAGE_SHOWCASE,
+            self::SOCIAL_SKILL,
+            self::MINI_CARD_LINK,
             self::V2_TITLE,
             self::V2_DESCRIPTION,
             self::V2_LONG_SUBLINK,
