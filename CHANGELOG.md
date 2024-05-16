@@ -1,5 +1,10 @@
 # 更新日志
 本文记录了PHP SDK的更新日志。
+## 2024-05-16
+1. 发布PHP SDK [1.1.70] 版
+- 新增 MarketingApi 接口，更新模型
+- 修复 v2和v3 TencentAds 混合初始化的问题
+
 ## 2024-05-11
 1. 发布PHP SDK [1.1.69] 版
 - 新增 MarketingApi 接口，更新模型

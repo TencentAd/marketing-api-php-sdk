@@ -88,7 +88,8 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         'appPromotionVideo' => '\TencentAds\Model\V3\AppPromotionVideoComponent[]',
         'videoShowcase' => '\TencentAds\Model\V3\VideoShowcaseComponent[]',
         'imageShowcase' => '\TencentAds\Model\V3\ImageShowcaseComponent[]',
-        'miniCardLink' => '\TencentAds\Model\V3\MiniCardLinkComponent[]'
+        'miniCardLink' => '\TencentAds\Model\V3\MiniCardLinkComponent[]',
+        'floatingZoneList' => '\TencentAds\Model\V3\FloatingZoneListComponent[]'
     ];
 
     /**
@@ -127,7 +128,8 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         'appPromotionVideo' => null,
         'videoShowcase' => null,
         'imageShowcase' => null,
-        'miniCardLink' => null
+        'miniCardLink' => null,
+        'floatingZoneList' => null
     ];
 
     /**
@@ -187,7 +189,8 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         'appPromotionVideo' => 'app_promotion_video',
         'videoShowcase' => 'video_showcase',
         'imageShowcase' => 'image_showcase',
-        'miniCardLink' => 'mini_card_link'
+        'miniCardLink' => 'mini_card_link',
+        'floatingZoneList' => 'floating_zone_list'
     ];
 
     /**
@@ -226,7 +229,8 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         'appPromotionVideo' => 'setAppPromotionVideo',
         'videoShowcase' => 'setVideoShowcase',
         'imageShowcase' => 'setImageShowcase',
-        'miniCardLink' => 'setMiniCardLink'
+        'miniCardLink' => 'setMiniCardLink',
+        'floatingZoneList' => 'setFloatingZoneList'
     ];
 
     /**
@@ -265,7 +269,8 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         'appPromotionVideo' => 'getAppPromotionVideo',
         'videoShowcase' => 'getVideoShowcase',
         'imageShowcase' => 'getImageShowcase',
-        'miniCardLink' => 'getMiniCardLink'
+        'miniCardLink' => 'getMiniCardLink',
+        'floatingZoneList' => 'getFloatingZoneList'
     ];
 
     /**
@@ -359,6 +364,7 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         $this->container['videoShowcase'] = isset($data['videoShowcase']) ? $data['videoShowcase'] : null;
         $this->container['imageShowcase'] = isset($data['imageShowcase']) ? $data['imageShowcase'] : null;
         $this->container['miniCardLink'] = isset($data['miniCardLink']) ? $data['miniCardLink'] : null;
+        $this->container['floatingZoneList'] = isset($data['floatingZoneList']) ? $data['floatingZoneList'] : null;
     }
 
     /**
@@ -1125,6 +1131,30 @@ class CreativeComponents implements ModelInterface, ArrayAccess
     public function setMiniCardLink($miniCardLink)
     {
         $this->container['miniCardLink'] = $miniCardLink;
+
+        return $this;
+    }
+
+    /**
+     * Gets floatingZoneList
+     *
+     * @return \TencentAds\Model\V3\FloatingZoneListComponent[]|mixed
+     */
+    public function getFloatingZoneList()
+    {
+        return $this->container['floatingZoneList'];
+    }
+
+    /**
+     * Sets floatingZoneList
+     *
+     * @param \TencentAds\Model\V3\FloatingZoneListComponent[]|mixed $floatingZoneList floatingZoneList
+     *
+     * @return $this
+     */
+    public function setFloatingZoneList($floatingZoneList)
+    {
+        $this->container['floatingZoneList'] = $floatingZoneList;
 
         return $this;
     }

@@ -87,7 +87,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'poiList' => 'string[]',
         'ecomPkamSwitch' => '\TencentAds\Model\V3\EcomPkamSwitch',
         'costConstraintScene' => '\TencentAds\Model\V3\CostConstraintScene',
-        'customCostCap' => 'int'
+        'customCostCap' => 'int',
+        'feedbackId' => 'int'
     ];
 
     /**
@@ -126,7 +127,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'poiList' => null,
         'ecomPkamSwitch' => null,
         'costConstraintScene' => null,
-        'customCostCap' => 'int64'
+        'customCostCap' => 'int64',
+        'feedbackId' => 'int64'
     ];
 
     /**
@@ -186,7 +188,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'poiList' => 'poi_list',
         'ecomPkamSwitch' => 'ecom_pkam_switch',
         'costConstraintScene' => 'cost_constraint_scene',
-        'customCostCap' => 'custom_cost_cap'
+        'customCostCap' => 'custom_cost_cap',
+        'feedbackId' => 'feedback_id'
     ];
 
     /**
@@ -225,7 +228,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'poiList' => 'setPoiList',
         'ecomPkamSwitch' => 'setEcomPkamSwitch',
         'costConstraintScene' => 'setCostConstraintScene',
-        'customCostCap' => 'setCustomCostCap'
+        'customCostCap' => 'setCustomCostCap',
+        'feedbackId' => 'setFeedbackId'
     ];
 
     /**
@@ -264,7 +268,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'poiList' => 'getPoiList',
         'ecomPkamSwitch' => 'getEcomPkamSwitch',
         'costConstraintScene' => 'getCostConstraintScene',
-        'customCostCap' => 'getCustomCostCap'
+        'customCostCap' => 'getCustomCostCap',
+        'feedbackId' => 'getFeedbackId'
     ];
 
     /**
@@ -358,6 +363,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['ecomPkamSwitch'] = isset($data['ecomPkamSwitch']) ? $data['ecomPkamSwitch'] : null;
         $this->container['costConstraintScene'] = isset($data['costConstraintScene']) ? $data['costConstraintScene'] : null;
         $this->container['customCostCap'] = isset($data['customCostCap']) ? $data['customCostCap'] : null;
+        $this->container['feedbackId'] = isset($data['feedbackId']) ? $data['feedbackId'] : null;
     }
 
     /**
@@ -1124,6 +1130,30 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setCustomCostCap($customCostCap)
     {
         $this->container['customCostCap'] = $customCostCap;
+
+        return $this;
+    }
+
+    /**
+     * Gets feedbackId
+     *
+     * @return int|mixed
+     */
+    public function getFeedbackId()
+    {
+        return $this->container['feedbackId'];
+    }
+
+    /**
+     * Sets feedbackId
+     *
+     * @param int|mixed $feedbackId feedbackId
+     *
+     * @return $this
+     */
+    public function setFeedbackId($feedbackId)
+    {
+        $this->container['feedbackId'] = $feedbackId;
 
         return $this;
     }

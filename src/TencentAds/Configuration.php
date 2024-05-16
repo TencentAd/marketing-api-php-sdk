@@ -41,6 +41,8 @@ class Configuration
 {
     private static $defaultConfiguration;
 
+    private static $defaultConfigurationV3;
+
     /**
      * Associate array to store API key(s)
      *
@@ -109,14 +111,30 @@ class Configuration
      *
      * @var string
      */
-    protected $tempFolderPath;
+    protected static $tempFolderPath;
+
+    /**
+     * @return string
+     */
+    public static function getTempFolderPath()
+    {
+        return self::$tempFolderPath;
+    }
+
+    /**
+     * @param string $tempFolderPath
+     */
+    public static function setTempFolderPath($tempFolderPath)
+    {
+        self::$tempFolderPath = $tempFolderPath;
+    }
 
     /**
      * Constructor
      */
     public function __construct()
     {
-        $this->tempFolderPath = sys_get_temp_dir();
+        self::setTempFolderPath(sys_get_temp_dir());
     }
 
     /**
@@ -338,29 +356,6 @@ class Configuration
     }
 
     /**
-     * Sets the temp folder path
-     *
-     * @param string $tempFolderPath Temp folder path
-     *
-     * @return $this
-     */
-    public function setTempFolderPath($tempFolderPath)
-    {
-        $this->tempFolderPath = $tempFolderPath;
-        return $this;
-    }
-
-    /**
-     * Gets the temp folder path
-     *
-     * @return string Temp folder path
-     */
-    public function getTempFolderPath()
-    {
-        return $this->tempFolderPath;
-    }
-
-    /**
      * Gets the default configuration instance
      *
      * @return Configuration
@@ -372,6 +367,19 @@ class Configuration
         }
 
         return self::$defaultConfiguration;
+    }
+
+    /**
+     * Gets the default configuration instance v3
+     *
+     * @return Configuration
+     */
+    public static function getDefaultConfigurationV3()
+    {
+        if (self::$defaultConfigurationV3 === null) {
+            self::$defaultConfigurationV3 = new Configuration();
+        }
+        return self::$defaultConfigurationV3;
     }
 
     /**
@@ -397,7 +405,7 @@ class Configuration
         $report .= '    OS: ' . php_uname() . PHP_EOL;
         $report .= '    PHP Version: ' . PHP_VERSION . PHP_EOL;
         $report .= '    OpenAPI Spec Version: 3.0' . PHP_EOL;
-        $report .= '    Temp Folder Path: ' . self::getDefaultConfiguration()->getTempFolderPath() . PHP_EOL;
+        $report .= '    Temp Folder Path: ' . self::getTempFolderPath() . PHP_EOL;
 
         return $report;
     }
