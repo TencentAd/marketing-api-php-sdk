@@ -86,6 +86,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'flowOptimizationEnabled' => 'bool',
         'poiList' => 'string[]',
         'ecomPkamSwitch' => '\TencentAds\Model\V3\EcomPkamSwitch',
+        'rtaId' => 'int',
+        'rtaTargetId' => 'string',
         'costConstraintScene' => '\TencentAds\Model\V3\CostConstraintScene',
         'customCostCap' => 'int',
         'feedbackId' => 'int'
@@ -126,6 +128,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'flowOptimizationEnabled' => null,
         'poiList' => null,
         'ecomPkamSwitch' => null,
+        'rtaId' => 'int64',
+        'rtaTargetId' => null,
         'costConstraintScene' => null,
         'customCostCap' => 'int64',
         'feedbackId' => 'int64'
@@ -187,6 +191,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'flowOptimizationEnabled' => 'flow_optimization_enabled',
         'poiList' => 'poi_list',
         'ecomPkamSwitch' => 'ecom_pkam_switch',
+        'rtaId' => 'rta_id',
+        'rtaTargetId' => 'rta_target_id',
         'costConstraintScene' => 'cost_constraint_scene',
         'customCostCap' => 'custom_cost_cap',
         'feedbackId' => 'feedback_id'
@@ -227,6 +233,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'flowOptimizationEnabled' => 'setFlowOptimizationEnabled',
         'poiList' => 'setPoiList',
         'ecomPkamSwitch' => 'setEcomPkamSwitch',
+        'rtaId' => 'setRtaId',
+        'rtaTargetId' => 'setRtaTargetId',
         'costConstraintScene' => 'setCostConstraintScene',
         'customCostCap' => 'setCustomCostCap',
         'feedbackId' => 'setFeedbackId'
@@ -267,6 +275,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'flowOptimizationEnabled' => 'getFlowOptimizationEnabled',
         'poiList' => 'getPoiList',
         'ecomPkamSwitch' => 'getEcomPkamSwitch',
+        'rtaId' => 'getRtaId',
+        'rtaTargetId' => 'getRtaTargetId',
         'costConstraintScene' => 'getCostConstraintScene',
         'customCostCap' => 'getCustomCostCap',
         'feedbackId' => 'getFeedbackId'
@@ -361,6 +371,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['flowOptimizationEnabled'] = isset($data['flowOptimizationEnabled']) ? $data['flowOptimizationEnabled'] : null;
         $this->container['poiList'] = isset($data['poiList']) ? $data['poiList'] : null;
         $this->container['ecomPkamSwitch'] = isset($data['ecomPkamSwitch']) ? $data['ecomPkamSwitch'] : null;
+        $this->container['rtaId'] = isset($data['rtaId']) ? $data['rtaId'] : null;
+        $this->container['rtaTargetId'] = isset($data['rtaTargetId']) ? $data['rtaTargetId'] : null;
         $this->container['costConstraintScene'] = isset($data['costConstraintScene']) ? $data['costConstraintScene'] : null;
         $this->container['customCostCap'] = isset($data['customCostCap']) ? $data['customCostCap'] : null;
         $this->container['feedbackId'] = isset($data['feedbackId']) ? $data['feedbackId'] : null;
@@ -1082,6 +1094,54 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setEcomPkamSwitch($ecomPkamSwitch)
     {
         $this->container['ecomPkamSwitch'] = $ecomPkamSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets rtaId
+     *
+     * @return int|mixed
+     */
+    public function getRtaId()
+    {
+        return $this->container['rtaId'];
+    }
+
+    /**
+     * Sets rtaId
+     *
+     * @param int|mixed $rtaId rtaId
+     *
+     * @return $this
+     */
+    public function setRtaId($rtaId)
+    {
+        $this->container['rtaId'] = $rtaId;
+
+        return $this;
+    }
+
+    /**
+     * Gets rtaTargetId
+     *
+     * @return string|mixed
+     */
+    public function getRtaTargetId()
+    {
+        return $this->container['rtaTargetId'];
+    }
+
+    /**
+     * Sets rtaTargetId
+     *
+     * @param string|mixed $rtaTargetId rtaTargetId
+     *
+     * @return $this
+     */
+    public function setRtaTargetId($rtaTargetId)
+    {
+        $this->container['rtaTargetId'] = $rtaTargetId;
 
         return $this;
     }

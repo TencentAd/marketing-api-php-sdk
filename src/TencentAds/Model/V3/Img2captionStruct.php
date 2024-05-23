@@ -1,6 +1,6 @@
 <?php
 /**
- * MuseAiTaskAddRequest
+ * Img2captionStruct
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MuseAiTaskAddRequest Class Doc Comment
+ * Img2captionStruct Class Doc Comment
  *
  * @category Class
+ * @description 图片提取描述参数信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MuseAiTaskAddRequest implements ModelInterface, ArrayAccess
+class Img2captionStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class MuseAiTaskAddRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'MuseAiTaskAddRequest';
+    protected static $swaggerModelName = 'img2caption_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,12 +58,7 @@ class MuseAiTaskAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'taskType' => '\TencentAds\Model\V3\MuseAiTaskType',
-        'outputImageNum' => 'int',
-        'img2img' => '\TencentAds\Model\V3\Img2imgStruct',
-        'text2img' => '\TencentAds\Model\V3\Text2imgStruct',
-        'img2caption' => '\TencentAds\Model\V3\Img2captionStruct'
+        'imageIds' => 'string[]'
     ];
 
     /**
@@ -71,12 +67,7 @@ class MuseAiTaskAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'taskType' => null,
-        'outputImageNum' => 'int64',
-        'img2img' => null,
-        'text2img' => null,
-        'img2caption' => null
+        'imageIds' => null
     ];
 
     /**
@@ -106,12 +97,7 @@ class MuseAiTaskAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'taskType' => 'task_type',
-        'outputImageNum' => 'output_image_num',
-        'img2img' => 'img2img',
-        'text2img' => 'text2img',
-        'img2caption' => 'img2caption'
+        'imageIds' => 'image_ids'
     ];
 
     /**
@@ -120,12 +106,7 @@ class MuseAiTaskAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'taskType' => 'setTaskType',
-        'outputImageNum' => 'setOutputImageNum',
-        'img2img' => 'setImg2img',
-        'text2img' => 'setText2img',
-        'img2caption' => 'setImg2caption'
+        'imageIds' => 'setImageIds'
     ];
 
     /**
@@ -134,12 +115,7 @@ class MuseAiTaskAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'taskType' => 'getTaskType',
-        'outputImageNum' => 'getOutputImageNum',
-        'img2img' => 'getImg2img',
-        'text2img' => 'getText2img',
-        'img2caption' => 'getImg2caption'
+        'imageIds' => 'getImageIds'
     ];
 
     /**
@@ -202,12 +178,7 @@ class MuseAiTaskAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['taskType'] = isset($data['taskType']) ? $data['taskType'] : null;
-        $this->container['outputImageNum'] = isset($data['outputImageNum']) ? $data['outputImageNum'] : null;
-        $this->container['img2img'] = isset($data['img2img']) ? $data['img2img'] : null;
-        $this->container['text2img'] = isset($data['text2img']) ? $data['text2img'] : null;
-        $this->container['img2caption'] = isset($data['img2caption']) ? $data['img2caption'] : null;
+        $this->container['imageIds'] = isset($data['imageIds']) ? $data['imageIds'] : null;
     }
 
     /**
@@ -235,145 +206,25 @@ class MuseAiTaskAddRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets accountId
+     * Gets imageIds
      *
-     * @return int|mixed
+     * @return string[]|mixed
      */
-    public function getAccountId()
+    public function getImageIds()
     {
-        return $this->container['accountId'];
+        return $this->container['imageIds'];
     }
 
     /**
-     * Sets accountId
+     * Sets imageIds
      *
-     * @param int|mixed $accountId accountId
+     * @param string[]|mixed $imageIds imageIds
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setImageIds($imageIds)
     {
-        $this->container['accountId'] = $accountId;
-
-        return $this;
-    }
-
-    /**
-     * Gets taskType
-     *
-     * @return \TencentAds\Model\V3\MuseAiTaskType|mixed
-     */
-    public function getTaskType()
-    {
-        return $this->container['taskType'];
-    }
-
-    /**
-     * Sets taskType
-     *
-     * @param \TencentAds\Model\V3\MuseAiTaskType|mixed $taskType taskType
-     *
-     * @return $this
-     */
-    public function setTaskType($taskType)
-    {
-        $this->container['taskType'] = $taskType;
-
-        return $this;
-    }
-
-    /**
-     * Gets outputImageNum
-     *
-     * @return int|mixed
-     */
-    public function getOutputImageNum()
-    {
-        return $this->container['outputImageNum'];
-    }
-
-    /**
-     * Sets outputImageNum
-     *
-     * @param int|mixed $outputImageNum outputImageNum
-     *
-     * @return $this
-     */
-    public function setOutputImageNum($outputImageNum)
-    {
-        $this->container['outputImageNum'] = $outputImageNum;
-
-        return $this;
-    }
-
-    /**
-     * Gets img2img
-     *
-     * @return \TencentAds\Model\V3\Img2imgStruct|mixed
-     */
-    public function getImg2img()
-    {
-        return $this->container['img2img'];
-    }
-
-    /**
-     * Sets img2img
-     *
-     * @param \TencentAds\Model\V3\Img2imgStruct|mixed $img2img img2img
-     *
-     * @return $this
-     */
-    public function setImg2img($img2img)
-    {
-        $this->container['img2img'] = $img2img;
-
-        return $this;
-    }
-
-    /**
-     * Gets text2img
-     *
-     * @return \TencentAds\Model\V3\Text2imgStruct|mixed
-     */
-    public function getText2img()
-    {
-        return $this->container['text2img'];
-    }
-
-    /**
-     * Sets text2img
-     *
-     * @param \TencentAds\Model\V3\Text2imgStruct|mixed $text2img text2img
-     *
-     * @return $this
-     */
-    public function setText2img($text2img)
-    {
-        $this->container['text2img'] = $text2img;
-
-        return $this;
-    }
-
-    /**
-     * Gets img2caption
-     *
-     * @return \TencentAds\Model\V3\Img2captionStruct|mixed
-     */
-    public function getImg2caption()
-    {
-        return $this->container['img2caption'];
-    }
-
-    /**
-     * Sets img2caption
-     *
-     * @param \TencentAds\Model\V3\Img2captionStruct|mixed $img2caption img2caption
-     *
-     * @return $this
-     */
-    public function setImg2caption($img2caption)
-    {
-        $this->container['img2caption'] = $img2caption;
+        $this->container['imageIds'] = $imageIds;
 
         return $this;
     }

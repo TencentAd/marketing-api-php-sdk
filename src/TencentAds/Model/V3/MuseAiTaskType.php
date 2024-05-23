@@ -46,6 +46,7 @@ class MuseAiTaskType
      */
     const TEXT2_IMG = 'MUSE_AI_TASK_TYPE_TEXT2IMG';
     const IMG2_IMG = 'MUSE_AI_TASK_TYPE_IMG2IMG';
+    const IMG2_CAPTION = 'MUSE_AI_TASK_TYPE_IMG2CAPTION';
     
     /**
      * Gets allowable values of the enum
@@ -56,6 +57,7 @@ class MuseAiTaskType
         return [
             self::TEXT2_IMG,
             self::IMG2_IMG,
+            self::IMG2_CAPTION,
         ];
     }
 }

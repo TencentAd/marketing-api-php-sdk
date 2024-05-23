@@ -47,6 +47,7 @@ class ReviewResultStatus
     const NORMAL = 'AD_STATUS_NORMAL';
     const PENDING = 'AD_STATUS_PENDING';
     const DENIED = 'AD_STATUS_DENIED';
+    const PARTIALLY_NORMAL = 'AD_STATUS_PARTIALLY_NORMAL';
     
     /**
      * Gets allowable values of the enum
@@ -58,6 +59,7 @@ class ReviewResultStatus
             self::NORMAL,
             self::PENDING,
             self::DENIED,
+            self::PARTIALLY_NORMAL,
         ];
     }
 }

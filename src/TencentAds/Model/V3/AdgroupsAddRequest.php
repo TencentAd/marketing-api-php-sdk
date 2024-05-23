@@ -101,6 +101,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'prioritySiteSet' => 'string[]',
         'ecomPkamSwitch' => '\TencentAds\Model\V3\EcomPkamSwitch',
         'forwardLinkAssist' => '\TencentAds\Model\V3\OptimizationGoal',
+        'rtaId' => 'int',
+        'rtaTargetId' => 'string',
         'mpaSpec' => '\TencentAds\Model\V3\MpaSpec',
         'costConstraintScene' => '\TencentAds\Model\V3\CostConstraintScene',
         'customCostCap' => 'int',
@@ -161,6 +163,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'prioritySiteSet' => null,
         'ecomPkamSwitch' => null,
         'forwardLinkAssist' => null,
+        'rtaId' => 'int64',
+        'rtaTargetId' => null,
         'mpaSpec' => null,
         'costConstraintScene' => null,
         'customCostCap' => 'int64',
@@ -242,6 +246,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'prioritySiteSet' => 'priority_site_set',
         'ecomPkamSwitch' => 'ecom_pkam_switch',
         'forwardLinkAssist' => 'forward_link_assist',
+        'rtaId' => 'rta_id',
+        'rtaTargetId' => 'rta_target_id',
         'mpaSpec' => 'mpa_spec',
         'costConstraintScene' => 'cost_constraint_scene',
         'customCostCap' => 'custom_cost_cap',
@@ -302,6 +308,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'prioritySiteSet' => 'setPrioritySiteSet',
         'ecomPkamSwitch' => 'setEcomPkamSwitch',
         'forwardLinkAssist' => 'setForwardLinkAssist',
+        'rtaId' => 'setRtaId',
+        'rtaTargetId' => 'setRtaTargetId',
         'mpaSpec' => 'setMpaSpec',
         'costConstraintScene' => 'setCostConstraintScene',
         'customCostCap' => 'setCustomCostCap',
@@ -362,6 +370,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'prioritySiteSet' => 'getPrioritySiteSet',
         'ecomPkamSwitch' => 'getEcomPkamSwitch',
         'forwardLinkAssist' => 'getForwardLinkAssist',
+        'rtaId' => 'getRtaId',
+        'rtaTargetId' => 'getRtaTargetId',
         'mpaSpec' => 'getMpaSpec',
         'costConstraintScene' => 'getCostConstraintScene',
         'customCostCap' => 'getCustomCostCap',
@@ -476,6 +486,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['prioritySiteSet'] = isset($data['prioritySiteSet']) ? $data['prioritySiteSet'] : null;
         $this->container['ecomPkamSwitch'] = isset($data['ecomPkamSwitch']) ? $data['ecomPkamSwitch'] : null;
         $this->container['forwardLinkAssist'] = isset($data['forwardLinkAssist']) ? $data['forwardLinkAssist'] : null;
+        $this->container['rtaId'] = isset($data['rtaId']) ? $data['rtaId'] : null;
+        $this->container['rtaTargetId'] = isset($data['rtaTargetId']) ? $data['rtaTargetId'] : null;
         $this->container['mpaSpec'] = isset($data['mpaSpec']) ? $data['mpaSpec'] : null;
         $this->container['costConstraintScene'] = isset($data['costConstraintScene']) ? $data['costConstraintScene'] : null;
         $this->container['customCostCap'] = isset($data['customCostCap']) ? $data['customCostCap'] : null;
@@ -1562,6 +1574,54 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setForwardLinkAssist($forwardLinkAssist)
     {
         $this->container['forwardLinkAssist'] = $forwardLinkAssist;
+
+        return $this;
+    }
+
+    /**
+     * Gets rtaId
+     *
+     * @return int|mixed
+     */
+    public function getRtaId()
+    {
+        return $this->container['rtaId'];
+    }
+
+    /**
+     * Sets rtaId
+     *
+     * @param int|mixed $rtaId rtaId
+     *
+     * @return $this
+     */
+    public function setRtaId($rtaId)
+    {
+        $this->container['rtaId'] = $rtaId;
+
+        return $this;
+    }
+
+    /**
+     * Gets rtaTargetId
+     *
+     * @return string|mixed
+     */
+    public function getRtaTargetId()
+    {
+        return $this->container['rtaTargetId'];
+    }
+
+    /**
+     * Sets rtaTargetId
+     *
+     * @param string|mixed $rtaTargetId rtaTargetId
+     *
+     * @return $this
+     */
+    public function setRtaTargetId($rtaTargetId)
+    {
+        $this->container['rtaTargetId'] = $rtaTargetId;
 
         return $this;
     }

@@ -50,6 +50,7 @@ class DCAsyncJobStatus
     const SYSTEM_ERROR = 'DC_ASYNC_JOB_STATUS_SYSTEM_ERROR';
     const PROCESSING = 'DC_ASYNC_JOB_STATUS_PROCESSING';
     const RETRYING = 'DC_ASYNC_JOB_STATUS_RETRYING';
+    const DERIVE_SUCCESS = 'DC_ASYNC_JOB_STATUS_DERIVE_SUCCESS';
     
     /**
      * Gets allowable values of the enum
@@ -64,6 +65,7 @@ class DCAsyncJobStatus
             self::SYSTEM_ERROR,
             self::PROCESSING,
             self::RETRYING,
+            self::DERIVE_SUCCESS,
         ];
     }
 }

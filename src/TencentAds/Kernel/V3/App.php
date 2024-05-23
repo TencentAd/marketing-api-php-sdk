@@ -102,6 +102,7 @@ use TencentAds\Container\V3\MergeFundTypeFundsApiContainer;
 use TencentAds\Container\V3\MergeFundTypeSubcustomerTransferApiContainer;
 use TencentAds\Container\V3\MuseAiMaterialApiContainer;
 use TencentAds\Container\V3\MuseAiTaskApiContainer;
+use TencentAds\Container\V3\MuseAiUgcApiContainer;
 use TencentAds\Container\V3\OauthApiContainer;
 use TencentAds\Container\V3\ObjectCommentFlagApiContainer;
 use TencentAds\Container\V3\OptimizationGoalPermissionsApiContainer;
@@ -471,6 +472,9 @@ class App
 
     /** @var MuseAiTaskApiContainer */
     public $museAiTaskApiContainer;
+
+    /** @var MuseAiUgcApiContainer */
+    public $museAiUgcApiContainer;
 
     /** @var OauthApiContainer */
     public $oauthApiContainer;
@@ -2074,6 +2078,20 @@ class App
             $this->museAiTaskApiContainer = $container;
         }
         return $this->museAiTaskApiContainer;
+    }
+
+
+    /**
+     * @return MuseAiUgcApiContainer
+     */
+    public function museAiUgc()
+    {
+        if (empty($this->museAiUgcApiContainer)) {
+            $container = new MuseAiUgcApiContainer();
+            $container->init($this, $this->getClient());
+            $this->museAiUgcApiContainer = $container;
+        }
+        return $this->museAiUgcApiContainer;
     }
 
 

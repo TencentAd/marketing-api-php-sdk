@@ -64,7 +64,8 @@ class MuseAiResultItem implements ModelInterface, ArrayAccess
         'ratioHeight' => 'int',
         'width' => 'int',
         'height' => 'int',
-        'url' => 'string'
+        'url' => 'string',
+        'captionResult' => '\TencentAds\Model\V3\CaptionResult'
     ];
 
     /**
@@ -79,7 +80,8 @@ class MuseAiResultItem implements ModelInterface, ArrayAccess
         'ratioHeight' => 'int64',
         'width' => 'int64',
         'height' => 'int64',
-        'url' => null
+        'url' => null,
+        'captionResult' => null
     ];
 
     /**
@@ -115,7 +117,8 @@ class MuseAiResultItem implements ModelInterface, ArrayAccess
         'ratioHeight' => 'ratio_height',
         'width' => 'width',
         'height' => 'height',
-        'url' => 'url'
+        'url' => 'url',
+        'captionResult' => 'caption_result'
     ];
 
     /**
@@ -130,7 +133,8 @@ class MuseAiResultItem implements ModelInterface, ArrayAccess
         'ratioHeight' => 'setRatioHeight',
         'width' => 'setWidth',
         'height' => 'setHeight',
-        'url' => 'setUrl'
+        'url' => 'setUrl',
+        'captionResult' => 'setCaptionResult'
     ];
 
     /**
@@ -145,7 +149,8 @@ class MuseAiResultItem implements ModelInterface, ArrayAccess
         'ratioHeight' => 'getRatioHeight',
         'width' => 'getWidth',
         'height' => 'getHeight',
-        'url' => 'getUrl'
+        'url' => 'getUrl',
+        'captionResult' => 'getCaptionResult'
     ];
 
     /**
@@ -215,6 +220,7 @@ class MuseAiResultItem implements ModelInterface, ArrayAccess
         $this->container['width'] = isset($data['width']) ? $data['width'] : null;
         $this->container['height'] = isset($data['height']) ? $data['height'] : null;
         $this->container['url'] = isset($data['url']) ? $data['url'] : null;
+        $this->container['captionResult'] = isset($data['captionResult']) ? $data['captionResult'] : null;
     }
 
     /**
@@ -405,6 +411,30 @@ class MuseAiResultItem implements ModelInterface, ArrayAccess
     public function setUrl($url)
     {
         $this->container['url'] = $url;
+
+        return $this;
+    }
+
+    /**
+     * Gets captionResult
+     *
+     * @return \TencentAds\Model\V3\CaptionResult|mixed
+     */
+    public function getCaptionResult()
+    {
+        return $this->container['captionResult'];
+    }
+
+    /**
+     * Sets captionResult
+     *
+     * @param \TencentAds\Model\V3\CaptionResult|mixed $captionResult captionResult
+     *
+     * @return $this
+     */
+    public function setCaptionResult($captionResult)
+    {
+        $this->container['captionResult'] = $captionResult;
 
         return $this;
     }

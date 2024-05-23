@@ -1,6 +1,6 @@
 <?php
 /**
- * MuseAiTaskAddRequest
+ * MuseAiUgcAddResponse
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MuseAiTaskAddRequest Class Doc Comment
+ * MuseAiUgcAddResponse Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MuseAiTaskAddRequest implements ModelInterface, ArrayAccess
+class MuseAiUgcAddResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class MuseAiTaskAddRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'MuseAiTaskAddRequest';
+    protected static $swaggerModelName = 'MuseAiUgcAddResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,12 +57,11 @@ class MuseAiTaskAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'taskType' => '\TencentAds\Model\V3\MuseAiTaskType',
-        'outputImageNum' => 'int',
-        'img2img' => '\TencentAds\Model\V3\Img2imgStruct',
-        'text2img' => '\TencentAds\Model\V3\Text2imgStruct',
-        'img2caption' => '\TencentAds\Model\V3\Img2captionStruct'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\V3\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\V3\MuseAiUgcAddResponseData'
     ];
 
     /**
@@ -71,12 +70,11 @@ class MuseAiTaskAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'taskType' => null,
-        'outputImageNum' => 'int64',
-        'img2img' => null,
-        'text2img' => null,
-        'img2caption' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -106,12 +104,11 @@ class MuseAiTaskAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'taskType' => 'task_type',
-        'outputImageNum' => 'output_image_num',
-        'img2img' => 'img2img',
-        'text2img' => 'text2img',
-        'img2caption' => 'img2caption'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -120,12 +117,11 @@ class MuseAiTaskAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'taskType' => 'setTaskType',
-        'outputImageNum' => 'setOutputImageNum',
-        'img2img' => 'setImg2img',
-        'text2img' => 'setText2img',
-        'img2caption' => 'setImg2caption'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -134,12 +130,11 @@ class MuseAiTaskAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'taskType' => 'getTaskType',
-        'outputImageNum' => 'getOutputImageNum',
-        'img2img' => 'getImg2img',
-        'text2img' => 'getText2img',
-        'img2caption' => 'getImg2caption'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -202,12 +197,11 @@ class MuseAiTaskAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['taskType'] = isset($data['taskType']) ? $data['taskType'] : null;
-        $this->container['outputImageNum'] = isset($data['outputImageNum']) ? $data['outputImageNum'] : null;
-        $this->container['img2img'] = isset($data['img2img']) ? $data['img2img'] : null;
-        $this->container['text2img'] = isset($data['text2img']) ? $data['text2img'] : null;
-        $this->container['img2caption'] = isset($data['img2caption']) ? $data['img2caption'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -235,145 +229,121 @@ class MuseAiTaskAddRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets accountId
+     * Gets code
      *
      * @return int|mixed
      */
-    public function getAccountId()
+    public function getCode()
     {
-        return $this->container['accountId'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets accountId
+     * Sets code
      *
-     * @param int|mixed $accountId accountId
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setCode($code)
     {
-        $this->container['accountId'] = $accountId;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets taskType
+     * Gets message
      *
-     * @return \TencentAds\Model\V3\MuseAiTaskType|mixed
+     * @return string|mixed
      */
-    public function getTaskType()
+    public function getMessage()
     {
-        return $this->container['taskType'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets taskType
+     * Sets message
      *
-     * @param \TencentAds\Model\V3\MuseAiTaskType|mixed $taskType taskType
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setTaskType($taskType)
+    public function setMessage($message)
     {
-        $this->container['taskType'] = $taskType;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets outputImageNum
+     * Gets messageCn
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getOutputImageNum()
+    public function getMessageCn()
     {
-        return $this->container['outputImageNum'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets outputImageNum
+     * Sets messageCn
      *
-     * @param int|mixed $outputImageNum outputImageNum
+     * @param string|mixed $messageCn messageCn
      *
      * @return $this
      */
-    public function setOutputImageNum($outputImageNum)
+    public function setMessageCn($messageCn)
     {
-        $this->container['outputImageNum'] = $outputImageNum;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets img2img
+     * Gets errors
      *
-     * @return \TencentAds\Model\V3\Img2imgStruct|mixed
+     * @return \TencentAds\Model\V3\ApiErrorStruct[]|mixed
      */
-    public function getImg2img()
+    public function getErrors()
     {
-        return $this->container['img2img'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets img2img
+     * Sets errors
      *
-     * @param \TencentAds\Model\V3\Img2imgStruct|mixed $img2img img2img
+     * @param \TencentAds\Model\V3\ApiErrorStruct[]|mixed $errors errors
      *
      * @return $this
      */
-    public function setImg2img($img2img)
+    public function setErrors($errors)
     {
-        $this->container['img2img'] = $img2img;
+        $this->container['errors'] = $errors;
 
         return $this;
     }
 
     /**
-     * Gets text2img
+     * Gets data
      *
-     * @return \TencentAds\Model\V3\Text2imgStruct|mixed
+     * @return \TencentAds\Model\V3\MuseAiUgcAddResponseData|mixed
      */
-    public function getText2img()
+    public function getData()
     {
-        return $this->container['text2img'];
+        return $this->container['data'];
     }
 
     /**
-     * Sets text2img
+     * Sets data
      *
-     * @param \TencentAds\Model\V3\Text2imgStruct|mixed $text2img text2img
+     * @param \TencentAds\Model\V3\MuseAiUgcAddResponseData|mixed $data data
      *
      * @return $this
      */
-    public function setText2img($text2img)
+    public function setData($data)
     {
-        $this->container['text2img'] = $text2img;
-
-        return $this;
-    }
-
-    /**
-     * Gets img2caption
-     *
-     * @return \TencentAds\Model\V3\Img2captionStruct|mixed
-     */
-    public function getImg2caption()
-    {
-        return $this->container['img2caption'];
-    }
-
-    /**
-     * Sets img2caption
-     *
-     * @param \TencentAds\Model\V3\Img2captionStruct|mixed $img2caption img2caption
-     *
-     * @return $this
-     */
-    public function setImg2caption($img2caption)
-    {
-        $this->container['img2caption'] = $img2caption;
+        $this->container['data'] = $data;
 
         return $this;
     }
