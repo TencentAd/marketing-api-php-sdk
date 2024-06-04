@@ -74,7 +74,9 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateFinderObjectCommentFlagSpec' => '\TencentAds\Model\V3\UpdateFinderObjectCommentFlagItem[]',
         'updateAdgroupTimeSpec' => '\TencentAds\Model\V3\UpdateAdgroupTimeItem[]',
         'updateAdgroupDateSpec' => '\TencentAds\Model\V3\UpdateAdgroupDateItem[]',
-        'updateAdgroupBidAmountSpec' => '\TencentAds\Model\V3\UpdateAdgroupBidAmountItem[]'
+        'updateAdgroupBidAmountSpec' => '\TencentAds\Model\V3\UpdateAdgroupBidAmountItem[]',
+        'updateAdgroupBindRtaPolicySpec' => '\TencentAds\Model\V3\UpdateAdgroupBindRtaPolicyItem[]',
+        'updateAdcreativeObjectCommentFlagSpec' => '\TencentAds\Model\V3\UpdateAdcreativeObjectCommentFlagItem[]'
     ];
 
     /**
@@ -99,7 +101,9 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateFinderObjectCommentFlagSpec' => null,
         'updateAdgroupTimeSpec' => null,
         'updateAdgroupDateSpec' => null,
-        'updateAdgroupBidAmountSpec' => null
+        'updateAdgroupBidAmountSpec' => null,
+        'updateAdgroupBindRtaPolicySpec' => null,
+        'updateAdcreativeObjectCommentFlagSpec' => null
     ];
 
     /**
@@ -145,7 +149,9 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateFinderObjectCommentFlagSpec' => 'update_finder_object_comment_flag_spec',
         'updateAdgroupTimeSpec' => 'update_adgroup_time_spec',
         'updateAdgroupDateSpec' => 'update_adgroup_date_spec',
-        'updateAdgroupBidAmountSpec' => 'update_adgroup_bid_amount_spec'
+        'updateAdgroupBidAmountSpec' => 'update_adgroup_bid_amount_spec',
+        'updateAdgroupBindRtaPolicySpec' => 'update_adgroup_bind_rta_policy_spec',
+        'updateAdcreativeObjectCommentFlagSpec' => 'update_adcreative_object_comment_flag_spec'
     ];
 
     /**
@@ -170,7 +176,9 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateFinderObjectCommentFlagSpec' => 'setUpdateFinderObjectCommentFlagSpec',
         'updateAdgroupTimeSpec' => 'setUpdateAdgroupTimeSpec',
         'updateAdgroupDateSpec' => 'setUpdateAdgroupDateSpec',
-        'updateAdgroupBidAmountSpec' => 'setUpdateAdgroupBidAmountSpec'
+        'updateAdgroupBidAmountSpec' => 'setUpdateAdgroupBidAmountSpec',
+        'updateAdgroupBindRtaPolicySpec' => 'setUpdateAdgroupBindRtaPolicySpec',
+        'updateAdcreativeObjectCommentFlagSpec' => 'setUpdateAdcreativeObjectCommentFlagSpec'
     ];
 
     /**
@@ -195,7 +203,9 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateFinderObjectCommentFlagSpec' => 'getUpdateFinderObjectCommentFlagSpec',
         'updateAdgroupTimeSpec' => 'getUpdateAdgroupTimeSpec',
         'updateAdgroupDateSpec' => 'getUpdateAdgroupDateSpec',
-        'updateAdgroupBidAmountSpec' => 'getUpdateAdgroupBidAmountSpec'
+        'updateAdgroupBidAmountSpec' => 'getUpdateAdgroupBidAmountSpec',
+        'updateAdgroupBindRtaPolicySpec' => 'getUpdateAdgroupBindRtaPolicySpec',
+        'updateAdcreativeObjectCommentFlagSpec' => 'getUpdateAdcreativeObjectCommentFlagSpec'
     ];
 
     /**
@@ -275,6 +285,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         $this->container['updateAdgroupTimeSpec'] = isset($data['updateAdgroupTimeSpec']) ? $data['updateAdgroupTimeSpec'] : null;
         $this->container['updateAdgroupDateSpec'] = isset($data['updateAdgroupDateSpec']) ? $data['updateAdgroupDateSpec'] : null;
         $this->container['updateAdgroupBidAmountSpec'] = isset($data['updateAdgroupBidAmountSpec']) ? $data['updateAdgroupBidAmountSpec'] : null;
+        $this->container['updateAdgroupBindRtaPolicySpec'] = isset($data['updateAdgroupBindRtaPolicySpec']) ? $data['updateAdgroupBindRtaPolicySpec'] : null;
+        $this->container['updateAdcreativeObjectCommentFlagSpec'] = isset($data['updateAdcreativeObjectCommentFlagSpec']) ? $data['updateAdcreativeObjectCommentFlagSpec'] : null;
     }
 
     /**
@@ -705,6 +717,54 @@ class TaskSpec implements ModelInterface, ArrayAccess
     public function setUpdateAdgroupBidAmountSpec($updateAdgroupBidAmountSpec)
     {
         $this->container['updateAdgroupBidAmountSpec'] = $updateAdgroupBidAmountSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets updateAdgroupBindRtaPolicySpec
+     *
+     * @return \TencentAds\Model\V3\UpdateAdgroupBindRtaPolicyItem[]|mixed
+     */
+    public function getUpdateAdgroupBindRtaPolicySpec()
+    {
+        return $this->container['updateAdgroupBindRtaPolicySpec'];
+    }
+
+    /**
+     * Sets updateAdgroupBindRtaPolicySpec
+     *
+     * @param \TencentAds\Model\V3\UpdateAdgroupBindRtaPolicyItem[]|mixed $updateAdgroupBindRtaPolicySpec updateAdgroupBindRtaPolicySpec
+     *
+     * @return $this
+     */
+    public function setUpdateAdgroupBindRtaPolicySpec($updateAdgroupBindRtaPolicySpec)
+    {
+        $this->container['updateAdgroupBindRtaPolicySpec'] = $updateAdgroupBindRtaPolicySpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets updateAdcreativeObjectCommentFlagSpec
+     *
+     * @return \TencentAds\Model\V3\UpdateAdcreativeObjectCommentFlagItem[]|mixed
+     */
+    public function getUpdateAdcreativeObjectCommentFlagSpec()
+    {
+        return $this->container['updateAdcreativeObjectCommentFlagSpec'];
+    }
+
+    /**
+     * Sets updateAdcreativeObjectCommentFlagSpec
+     *
+     * @param \TencentAds\Model\V3\UpdateAdcreativeObjectCommentFlagItem[]|mixed $updateAdcreativeObjectCommentFlagSpec updateAdcreativeObjectCommentFlagSpec
+     *
+     * @return $this
+     */
+    public function setUpdateAdcreativeObjectCommentFlagSpec($updateAdcreativeObjectCommentFlagSpec)
+    {
+        $this->container['updateAdcreativeObjectCommentFlagSpec'] = $updateAdcreativeObjectCommentFlagSpec;
 
         return $this;
     }

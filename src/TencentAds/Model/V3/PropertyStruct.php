@@ -60,7 +60,8 @@ class PropertyStruct implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'propertyName' => '\TencentAds\Model\V3\PromotedAssetAttrKey',
         'propertyValue' => 'string[]',
-        'propertyClass' => '\TencentAds\Model\V3\MarketingAssetAttrClass'
+        'propertyClass' => '\TencentAds\Model\V3\MarketingAssetAttrClass',
+        'propertyCn' => 'string'
     ];
 
     /**
@@ -71,7 +72,8 @@ class PropertyStruct implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'propertyName' => null,
         'propertyValue' => null,
-        'propertyClass' => null
+        'propertyClass' => null,
+        'propertyCn' => null
     ];
 
     /**
@@ -103,7 +105,8 @@ class PropertyStruct implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'propertyName' => 'property_name',
         'propertyValue' => 'property_value',
-        'propertyClass' => 'property_class'
+        'propertyClass' => 'property_class',
+        'propertyCn' => 'property_cn'
     ];
 
     /**
@@ -114,7 +117,8 @@ class PropertyStruct implements ModelInterface, ArrayAccess
     protected static $setters = [
         'propertyName' => 'setPropertyName',
         'propertyValue' => 'setPropertyValue',
-        'propertyClass' => 'setPropertyClass'
+        'propertyClass' => 'setPropertyClass',
+        'propertyCn' => 'setPropertyCn'
     ];
 
     /**
@@ -125,7 +129,8 @@ class PropertyStruct implements ModelInterface, ArrayAccess
     protected static $getters = [
         'propertyName' => 'getPropertyName',
         'propertyValue' => 'getPropertyValue',
-        'propertyClass' => 'getPropertyClass'
+        'propertyClass' => 'getPropertyClass',
+        'propertyCn' => 'getPropertyCn'
     ];
 
     /**
@@ -191,6 +196,7 @@ class PropertyStruct implements ModelInterface, ArrayAccess
         $this->container['propertyName'] = isset($data['propertyName']) ? $data['propertyName'] : null;
         $this->container['propertyValue'] = isset($data['propertyValue']) ? $data['propertyValue'] : null;
         $this->container['propertyClass'] = isset($data['propertyClass']) ? $data['propertyClass'] : null;
+        $this->container['propertyCn'] = isset($data['propertyCn']) ? $data['propertyCn'] : null;
     }
 
     /**
@@ -285,6 +291,30 @@ class PropertyStruct implements ModelInterface, ArrayAccess
     public function setPropertyClass($propertyClass)
     {
         $this->container['propertyClass'] = $propertyClass;
+
+        return $this;
+    }
+
+    /**
+     * Gets propertyCn
+     *
+     * @return string|mixed
+     */
+    public function getPropertyCn()
+    {
+        return $this->container['propertyCn'];
+    }
+
+    /**
+     * Sets propertyCn
+     *
+     * @param string|mixed $propertyCn propertyCn
+     *
+     * @return $this
+     */
+    public function setPropertyCn($propertyCn)
+    {
+        $this->container['propertyCn'] = $propertyCn;
 
         return $this;
     }

@@ -62,6 +62,7 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
         'videoId' => 'string',
         'elementName' => 'string',
         'elementValue' => 'string',
+        'elementFingerprint' => 'string',
         'componentInfo' => '\TencentAds\Model\V3\ComponentInfoCanEmpty',
         'elementType' => '\TencentAds\Model\V3\ReviewElementType',
         'reviewStatus' => '\TencentAds\Model\V3\ReviewResultStatus',
@@ -78,6 +79,7 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
         'videoId' => null,
         'elementName' => null,
         'elementValue' => null,
+        'elementFingerprint' => null,
         'componentInfo' => null,
         'elementType' => null,
         'reviewStatus' => null,
@@ -115,6 +117,7 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
         'videoId' => 'video_id',
         'elementName' => 'element_name',
         'elementValue' => 'element_value',
+        'elementFingerprint' => 'element_fingerprint',
         'componentInfo' => 'component_info',
         'elementType' => 'element_type',
         'reviewStatus' => 'review_status',
@@ -131,6 +134,7 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
         'videoId' => 'setVideoId',
         'elementName' => 'setElementName',
         'elementValue' => 'setElementValue',
+        'elementFingerprint' => 'setElementFingerprint',
         'componentInfo' => 'setComponentInfo',
         'elementType' => 'setElementType',
         'reviewStatus' => 'setReviewStatus',
@@ -147,6 +151,7 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
         'videoId' => 'getVideoId',
         'elementName' => 'getElementName',
         'elementValue' => 'getElementValue',
+        'elementFingerprint' => 'getElementFingerprint',
         'componentInfo' => 'getComponentInfo',
         'elementType' => 'getElementType',
         'reviewStatus' => 'getReviewStatus',
@@ -217,6 +222,7 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
         $this->container['videoId'] = isset($data['videoId']) ? $data['videoId'] : null;
         $this->container['elementName'] = isset($data['elementName']) ? $data['elementName'] : null;
         $this->container['elementValue'] = isset($data['elementValue']) ? $data['elementValue'] : null;
+        $this->container['elementFingerprint'] = isset($data['elementFingerprint']) ? $data['elementFingerprint'] : null;
         $this->container['componentInfo'] = isset($data['componentInfo']) ? $data['componentInfo'] : null;
         $this->container['elementType'] = isset($data['elementType']) ? $data['elementType'] : null;
         $this->container['reviewStatus'] = isset($data['reviewStatus']) ? $data['reviewStatus'] : null;
@@ -339,6 +345,30 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
     public function setElementValue($elementValue)
     {
         $this->container['elementValue'] = $elementValue;
+
+        return $this;
+    }
+
+    /**
+     * Gets elementFingerprint
+     *
+     * @return string|mixed
+     */
+    public function getElementFingerprint()
+    {
+        return $this->container['elementFingerprint'];
+    }
+
+    /**
+     * Sets elementFingerprint
+     *
+     * @param string|mixed $elementFingerprint elementFingerprint
+     *
+     * @return $this
+     */
+    public function setElementFingerprint($elementFingerprint)
+    {
+        $this->container['elementFingerprint'] = $elementFingerprint;
 
         return $this;
     }

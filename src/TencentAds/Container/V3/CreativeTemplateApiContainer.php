@@ -48,8 +48,9 @@ class CreativeTemplateApiContainer extends ApiContainer
             $siteSet = isset($params['site_set']) ? $params['site_set'] : null;
             $dynamicCreativeType = isset($params['dynamic_creative_type']) ? $params['dynamic_creative_type'] : null;
             $creativeTemplateId = isset($params['creative_template_id']) ? $params['creative_template_id'] : null;
+            $conversionLinkAssetId = isset($params['conversion_link_asset_id']) ? $params['conversion_link_asset_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->creativeTemplateGet($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $fields);
+            $response = $this->apiInstance->creativeTemplateGet($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $conversionLinkAssetId, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -74,8 +75,9 @@ class CreativeTemplateApiContainer extends ApiContainer
             $siteSet = isset($params['site_set']) ? $params['site_set'] : null;
             $dynamicCreativeType = isset($params['dynamic_creative_type']) ? $params['dynamic_creative_type'] : null;
             $creativeTemplateId = isset($params['creative_template_id']) ? $params['creative_template_id'] : null;
+            $conversionLinkAssetId = isset($params['conversion_link_asset_id']) ? $params['conversion_link_asset_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->creativeTemplateGetAsync($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $fields);
+            $response = $this->apiInstance->creativeTemplateGetAsync($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $conversionLinkAssetId, $fields);
             return $response;
         });
     }

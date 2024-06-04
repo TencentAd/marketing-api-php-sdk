@@ -62,7 +62,8 @@ class OptimizationGoalPermissionsGetResponseData implements ModelInterface, Arra
         'deepWorthOptimizationGoalPermissionList' => '\TencentAds\Model\V3\DeepWorthOptimizationGoalPermissionStruct[]',
         'deepBehaviorAdvancedGoalPermissionList' => '\TencentAds\Model\V3\DeepBehaviorAdvancedGoalPermissionStruct[]',
         'deepWorthAdvancedGoalPermissionList' => '\TencentAds\Model\V3\DeepWorthAdvancedGoalPermissionStruct[]',
-        'forwardLinkAssistPermissionList' => '\TencentAds\Model\V3\ForwardLinkAssistPermissionStruct[]'
+        'forwardLinkAssistPermissionList' => '\TencentAds\Model\V3\ForwardLinkAssistPermissionStruct[]',
+        'conversionLinkOgInfo' => '\TencentAds\Model\V3\ConversionLinkOgItem[]'
     ];
 
     /**
@@ -76,7 +77,8 @@ class OptimizationGoalPermissionsGetResponseData implements ModelInterface, Arra
         'deepWorthOptimizationGoalPermissionList' => null,
         'deepBehaviorAdvancedGoalPermissionList' => null,
         'deepWorthAdvancedGoalPermissionList' => null,
-        'forwardLinkAssistPermissionList' => null
+        'forwardLinkAssistPermissionList' => null,
+        'conversionLinkOgInfo' => null
     ];
 
     /**
@@ -111,7 +113,8 @@ class OptimizationGoalPermissionsGetResponseData implements ModelInterface, Arra
         'deepWorthOptimizationGoalPermissionList' => 'deep_worth_optimization_goal_permission_list',
         'deepBehaviorAdvancedGoalPermissionList' => 'deep_behavior_advanced_goal_permission_list',
         'deepWorthAdvancedGoalPermissionList' => 'deep_worth_advanced_goal_permission_list',
-        'forwardLinkAssistPermissionList' => 'forward_link_assist_permission_list'
+        'forwardLinkAssistPermissionList' => 'forward_link_assist_permission_list',
+        'conversionLinkOgInfo' => 'conversion_link_og_info'
     ];
 
     /**
@@ -125,7 +128,8 @@ class OptimizationGoalPermissionsGetResponseData implements ModelInterface, Arra
         'deepWorthOptimizationGoalPermissionList' => 'setDeepWorthOptimizationGoalPermissionList',
         'deepBehaviorAdvancedGoalPermissionList' => 'setDeepBehaviorAdvancedGoalPermissionList',
         'deepWorthAdvancedGoalPermissionList' => 'setDeepWorthAdvancedGoalPermissionList',
-        'forwardLinkAssistPermissionList' => 'setForwardLinkAssistPermissionList'
+        'forwardLinkAssistPermissionList' => 'setForwardLinkAssistPermissionList',
+        'conversionLinkOgInfo' => 'setConversionLinkOgInfo'
     ];
 
     /**
@@ -139,7 +143,8 @@ class OptimizationGoalPermissionsGetResponseData implements ModelInterface, Arra
         'deepWorthOptimizationGoalPermissionList' => 'getDeepWorthOptimizationGoalPermissionList',
         'deepBehaviorAdvancedGoalPermissionList' => 'getDeepBehaviorAdvancedGoalPermissionList',
         'deepWorthAdvancedGoalPermissionList' => 'getDeepWorthAdvancedGoalPermissionList',
-        'forwardLinkAssistPermissionList' => 'getForwardLinkAssistPermissionList'
+        'forwardLinkAssistPermissionList' => 'getForwardLinkAssistPermissionList',
+        'conversionLinkOgInfo' => 'getConversionLinkOgInfo'
     ];
 
     /**
@@ -208,6 +213,7 @@ class OptimizationGoalPermissionsGetResponseData implements ModelInterface, Arra
         $this->container['deepBehaviorAdvancedGoalPermissionList'] = isset($data['deepBehaviorAdvancedGoalPermissionList']) ? $data['deepBehaviorAdvancedGoalPermissionList'] : null;
         $this->container['deepWorthAdvancedGoalPermissionList'] = isset($data['deepWorthAdvancedGoalPermissionList']) ? $data['deepWorthAdvancedGoalPermissionList'] : null;
         $this->container['forwardLinkAssistPermissionList'] = isset($data['forwardLinkAssistPermissionList']) ? $data['forwardLinkAssistPermissionList'] : null;
+        $this->container['conversionLinkOgInfo'] = isset($data['conversionLinkOgInfo']) ? $data['conversionLinkOgInfo'] : null;
     }
 
     /**
@@ -374,6 +380,30 @@ class OptimizationGoalPermissionsGetResponseData implements ModelInterface, Arra
     public function setForwardLinkAssistPermissionList($forwardLinkAssistPermissionList)
     {
         $this->container['forwardLinkAssistPermissionList'] = $forwardLinkAssistPermissionList;
+
+        return $this;
+    }
+
+    /**
+     * Gets conversionLinkOgInfo
+     *
+     * @return \TencentAds\Model\V3\ConversionLinkOgItem[]|mixed
+     */
+    public function getConversionLinkOgInfo()
+    {
+        return $this->container['conversionLinkOgInfo'];
+    }
+
+    /**
+     * Sets conversionLinkOgInfo
+     *
+     * @param \TencentAds\Model\V3\ConversionLinkOgItem[]|mixed $conversionLinkOgInfo conversionLinkOgInfo
+     *
+     * @return $this
+     */
+    public function setConversionLinkOgInfo($conversionLinkOgInfo)
+    {
+        $this->container['conversionLinkOgInfo'] = $conversionLinkOgInfo;
 
         return $this;
     }

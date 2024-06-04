@@ -64,7 +64,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
         'name' => 'string',
         'description' => 'string',
         'activateStatus' => 'bool',
-        'createdTime' => 'int',
+        'createdTime' => 'string',
         'accessWay' => '\TencentAds\Model\V3\ActionSetAccessWayType',
         'usages' => 'string[]',
         'enableConversionClaim' => 'bool',
@@ -83,7 +83,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
         'name' => null,
         'description' => null,
         'activateStatus' => null,
-        'createdTime' => 'int64',
+        'createdTime' => null,
         'accessWay' => null,
         'usages' => null,
         'enableConversionClaim' => null,
@@ -412,7 +412,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Gets createdTime
      *
-     * @return int|mixed
+     * @return string|mixed
      */
     public function getCreatedTime()
     {
@@ -422,7 +422,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
     /**
      * Sets createdTime
      *
-     * @param int|mixed $createdTime createdTime
+     * @param string|mixed $createdTime createdTime
      *
      * @return $this
      */

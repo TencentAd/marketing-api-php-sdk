@@ -13,6 +13,10 @@ use TencentAds\Container\V3\AdgroupsApiContainer;
 use TencentAds\Container\V3\AdvertiserApiContainer;
 use TencentAds\Container\V3\AdvertiserDailyBudgetApiContainer;
 use TencentAds\Container\V3\AgencyApiContainer;
+use TencentAds\Container\V3\AgencyBusinessUnitApiContainer;
+use TencentAds\Container\V3\AgencyBusinessUnitListAccountApiContainer;
+use TencentAds\Container\V3\AgencyBusinessUnitListApiContainer;
+use TencentAds\Container\V3\AgencyBusinessUnitListByAccountApiContainer;
 use TencentAds\Container\V3\AgencyRealtimeCostApiContainer;
 use TencentAds\Container\V3\AndroidChannelApiContainer;
 use TencentAds\Container\V3\AsyncReportFilesApiContainer;
@@ -32,6 +36,8 @@ use TencentAds\Container\V3\BusinessPointApiContainer;
 use TencentAds\Container\V3\CommentListApiContainer;
 use TencentAds\Container\V3\ComponentElementUrgeReviewApiContainer;
 use TencentAds\Container\V3\ComponentReviewResultsApiContainer;
+use TencentAds\Container\V3\ConversionLinkAssetsApiContainer;
+use TencentAds\Container\V3\ConversionLinksApiContainer;
 use TencentAds\Container\V3\ConversionsApiContainer;
 use TencentAds\Container\V3\CreativeTemplateApiContainer;
 use TencentAds\Container\V3\CreativeTemplateListApiContainer;
@@ -206,6 +212,18 @@ class App
     /** @var AgencyApiContainer */
     public $agencyApiContainer;
 
+    /** @var AgencyBusinessUnitApiContainer */
+    public $agencyBusinessUnitApiContainer;
+
+    /** @var AgencyBusinessUnitListAccountApiContainer */
+    public $agencyBusinessUnitListAccountApiContainer;
+
+    /** @var AgencyBusinessUnitListApiContainer */
+    public $agencyBusinessUnitListApiContainer;
+
+    /** @var AgencyBusinessUnitListByAccountApiContainer */
+    public $agencyBusinessUnitListByAccountApiContainer;
+
     /** @var AgencyRealtimeCostApiContainer */
     public $agencyRealtimeCostApiContainer;
 
@@ -262,6 +280,12 @@ class App
 
     /** @var ComponentReviewResultsApiContainer */
     public $componentReviewResultsApiContainer;
+
+    /** @var ConversionLinkAssetsApiContainer */
+    public $conversionLinkAssetsApiContainer;
+
+    /** @var ConversionLinksApiContainer */
+    public $conversionLinksApiContainer;
 
     /** @var ConversionsApiContainer */
     public $conversionsApiContainer;
@@ -836,6 +860,62 @@ class App
 
 
     /**
+     * @return AgencyBusinessUnitApiContainer
+     */
+    public function agencyBusinessUnit()
+    {
+        if (empty($this->agencyBusinessUnitApiContainer)) {
+            $container = new AgencyBusinessUnitApiContainer();
+            $container->init($this, $this->getClient());
+            $this->agencyBusinessUnitApiContainer = $container;
+        }
+        return $this->agencyBusinessUnitApiContainer;
+    }
+
+
+    /**
+     * @return AgencyBusinessUnitListAccountApiContainer
+     */
+    public function agencyBusinessUnitListAccount()
+    {
+        if (empty($this->agencyBusinessUnitListAccountApiContainer)) {
+            $container = new AgencyBusinessUnitListAccountApiContainer();
+            $container->init($this, $this->getClient());
+            $this->agencyBusinessUnitListAccountApiContainer = $container;
+        }
+        return $this->agencyBusinessUnitListAccountApiContainer;
+    }
+
+
+    /**
+     * @return AgencyBusinessUnitListApiContainer
+     */
+    public function agencyBusinessUnitList()
+    {
+        if (empty($this->agencyBusinessUnitListApiContainer)) {
+            $container = new AgencyBusinessUnitListApiContainer();
+            $container->init($this, $this->getClient());
+            $this->agencyBusinessUnitListApiContainer = $container;
+        }
+        return $this->agencyBusinessUnitListApiContainer;
+    }
+
+
+    /**
+     * @return AgencyBusinessUnitListByAccountApiContainer
+     */
+    public function agencyBusinessUnitListByAccount()
+    {
+        if (empty($this->agencyBusinessUnitListByAccountApiContainer)) {
+            $container = new AgencyBusinessUnitListByAccountApiContainer();
+            $container->init($this, $this->getClient());
+            $this->agencyBusinessUnitListByAccountApiContainer = $container;
+        }
+        return $this->agencyBusinessUnitListByAccountApiContainer;
+    }
+
+
+    /**
      * @return AgencyRealtimeCostApiContainer
      */
     public function agencyRealtimeCost()
@@ -1098,6 +1178,34 @@ class App
             $this->componentReviewResultsApiContainer = $container;
         }
         return $this->componentReviewResultsApiContainer;
+    }
+
+
+    /**
+     * @return ConversionLinkAssetsApiContainer
+     */
+    public function conversionLinkAssets()
+    {
+        if (empty($this->conversionLinkAssetsApiContainer)) {
+            $container = new ConversionLinkAssetsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->conversionLinkAssetsApiContainer = $container;
+        }
+        return $this->conversionLinkAssetsApiContainer;
+    }
+
+
+    /**
+     * @return ConversionLinksApiContainer
+     */
+    public function conversionLinks()
+    {
+        if (empty($this->conversionLinksApiContainer)) {
+            $container = new ConversionLinksApiContainer();
+            $container->init($this, $this->getClient());
+            $this->conversionLinksApiContainer = $container;
+        }
+        return $this->conversionLinksApiContainer;
     }
 
 

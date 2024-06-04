@@ -137,6 +137,8 @@ class OptimizationGoal
     const QYT_LIVE_STREAM_AUDIENCE = 'OPTIMIZATIONGOAL_QYT_LIVE_STREAM_AUDIENCE';
     const QYT_LIVE_STREAM_COMMENT = 'OPTIMIZATIONGOAL_QYT_LIVE_STREAM_COMMENT';
     const QYT_LIVE_STREAM_FANS = 'OPTIMIZATIONGOAL_QYT_LIVE_STREAM_FANS';
+    const _24_H_FIRSTPAY = 'OPTIMIZATIONGOAL_24H_FIRSTPAY';
+    const STORE_STAY = 'OPTIMIZATIONGOAL_STORE_STAY';
     
     /**
      * Gets allowable values of the enum
@@ -238,6 +240,8 @@ class OptimizationGoal
             self::QYT_LIVE_STREAM_AUDIENCE,
             self::QYT_LIVE_STREAM_COMMENT,
             self::QYT_LIVE_STREAM_FANS,
+            self::_24_H_FIRSTPAY,
+            self::STORE_STAY,
         ];
     }
 }
