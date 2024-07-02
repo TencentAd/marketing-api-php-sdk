@@ -62,7 +62,7 @@ class FundsGetListStruct implements ModelInterface, ArrayAccess
         'balance' => 'int',
         'fundStatus' => '\TencentAds\Model\V3\FundStatus',
         'realtimeCost' => 'int',
-        'effectFunds' => 'string[]'
+        'effectFunds' => '\TencentAds\Model\V3\EffectListStruct[]'
     ];
 
     /**
@@ -328,7 +328,7 @@ class FundsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets effectFunds
      *
-     * @return string[]|mixed
+     * @return \TencentAds\Model\V3\EffectListStruct[]|mixed
      */
     public function getEffectFunds()
     {
@@ -338,7 +338,7 @@ class FundsGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets effectFunds
      *
-     * @param string[]|mixed $effectFunds effectFunds
+     * @param \TencentAds\Model\V3\EffectListStruct[]|mixed $effectFunds effectFunds
      *
      * @return $this
      */

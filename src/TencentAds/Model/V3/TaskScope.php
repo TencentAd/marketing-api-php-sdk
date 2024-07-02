@@ -54,6 +54,8 @@ class TaskScope
     const PROJECT = 'TASK_SCOPE_PROJECT';
     const BIDWORD = 'TASK_SCOPE_BIDWORD';
     const COMMENT = 'TASK_SCOPE_COMMENT';
+    const DYNAMIC_CREATIVE = 'TASK_SCOPE_DYNAMIC_CREATIVE';
+    const ADEXPORT = 'TASK_SCOPE_ADEXPORT';
     
     /**
      * Gets allowable values of the enum
@@ -72,6 +74,8 @@ class TaskScope
             self::PROJECT,
             self::BIDWORD,
             self::COMMENT,
+            self::DYNAMIC_CREATIVE,
+            self::ADEXPORT,
         ];
     }
 }

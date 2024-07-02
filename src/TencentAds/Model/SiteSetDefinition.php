@@ -99,6 +99,7 @@ class SiteSetDefinition
     const FREETRADE_WEAPP = 'SITE_SET_FREETRADE_WEAPP';
     const TENCENT_AD_NETWORK_OVERSEA = 'SITE_SET_TENCENT_AD_NETWORK_OVERSEA';
     const FREETRADE_QQ = 'SITE_SET_FREETRADE_QQ';
+    const YUNXUAN = 'SITE_SET_YUNXUAN';
     
     /**
      * Gets allowable values of the enum
@@ -162,6 +163,7 @@ class SiteSetDefinition
             self::FREETRADE_WEAPP,
             self::TENCENT_AD_NETWORK_OVERSEA,
             self::FREETRADE_QQ,
+            self::YUNXUAN,
         ];
     }
 }

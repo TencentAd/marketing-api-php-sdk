@@ -64,7 +64,15 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         'redEnvelopeAppearTimeMs' => 'int',
         'redEnvelopeDisappearTimeMs' => 'int',
         'redEnvelopeOriginExtraSceneId' => 'string',
-        'redBarrageSwitch' => 'bool'
+        'redBarrageSwitch' => 'bool',
+        'plotType' => '\TencentAds\Model\PlotType',
+        'plotWechatStatusFooterSwitch' => 'bool',
+        'plotFrameColor' => 'string',
+        'plotSendWord' => 'string',
+        'plotSignText' => 'string',
+        'plotSignImage' => 'string',
+        'plotBrandLogo' => 'string',
+        'plotOriginalMaterial' => '\TencentAds\Model\PlotOriginalMaterial'
     ];
 
     /**
@@ -79,7 +87,15 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         'redEnvelopeAppearTimeMs' => 'int64',
         'redEnvelopeDisappearTimeMs' => 'int64',
         'redEnvelopeOriginExtraSceneId' => null,
-        'redBarrageSwitch' => null
+        'redBarrageSwitch' => null,
+        'plotType' => null,
+        'plotWechatStatusFooterSwitch' => null,
+        'plotFrameColor' => null,
+        'plotSendWord' => null,
+        'plotSignText' => null,
+        'plotSignImage' => null,
+        'plotBrandLogo' => null,
+        'plotOriginalMaterial' => null
     ];
 
     /**
@@ -115,7 +131,15 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         'redEnvelopeAppearTimeMs' => 'red_envelope_appear_time_ms',
         'redEnvelopeDisappearTimeMs' => 'red_envelope_disappear_time_ms',
         'redEnvelopeOriginExtraSceneId' => 'red_envelope_origin_extra_scene_id',
-        'redBarrageSwitch' => 'red_barrage_switch'
+        'redBarrageSwitch' => 'red_barrage_switch',
+        'plotType' => 'plot_type',
+        'plotWechatStatusFooterSwitch' => 'plot_wechat_status_footer_switch',
+        'plotFrameColor' => 'plot_frame_color',
+        'plotSendWord' => 'plot_send_word',
+        'plotSignText' => 'plot_sign_text',
+        'plotSignImage' => 'plot_sign_image',
+        'plotBrandLogo' => 'plot_brand_logo',
+        'plotOriginalMaterial' => 'plot_original_material'
     ];
 
     /**
@@ -130,7 +154,15 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         'redEnvelopeAppearTimeMs' => 'setRedEnvelopeAppearTimeMs',
         'redEnvelopeDisappearTimeMs' => 'setRedEnvelopeDisappearTimeMs',
         'redEnvelopeOriginExtraSceneId' => 'setRedEnvelopeOriginExtraSceneId',
-        'redBarrageSwitch' => 'setRedBarrageSwitch'
+        'redBarrageSwitch' => 'setRedBarrageSwitch',
+        'plotType' => 'setPlotType',
+        'plotWechatStatusFooterSwitch' => 'setPlotWechatStatusFooterSwitch',
+        'plotFrameColor' => 'setPlotFrameColor',
+        'plotSendWord' => 'setPlotSendWord',
+        'plotSignText' => 'setPlotSignText',
+        'plotSignImage' => 'setPlotSignImage',
+        'plotBrandLogo' => 'setPlotBrandLogo',
+        'plotOriginalMaterial' => 'setPlotOriginalMaterial'
     ];
 
     /**
@@ -145,7 +177,15 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         'redEnvelopeAppearTimeMs' => 'getRedEnvelopeAppearTimeMs',
         'redEnvelopeDisappearTimeMs' => 'getRedEnvelopeDisappearTimeMs',
         'redEnvelopeOriginExtraSceneId' => 'getRedEnvelopeOriginExtraSceneId',
-        'redBarrageSwitch' => 'getRedBarrageSwitch'
+        'redBarrageSwitch' => 'getRedBarrageSwitch',
+        'plotType' => 'getPlotType',
+        'plotWechatStatusFooterSwitch' => 'getPlotWechatStatusFooterSwitch',
+        'plotFrameColor' => 'getPlotFrameColor',
+        'plotSendWord' => 'getPlotSendWord',
+        'plotSignText' => 'getPlotSignText',
+        'plotSignImage' => 'getPlotSignImage',
+        'plotBrandLogo' => 'getPlotBrandLogo',
+        'plotOriginalMaterial' => 'getPlotOriginalMaterial'
     ];
 
     /**
@@ -215,6 +255,14 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         $this->container['redEnvelopeDisappearTimeMs'] = isset($data['redEnvelopeDisappearTimeMs']) ? $data['redEnvelopeDisappearTimeMs'] : null;
         $this->container['redEnvelopeOriginExtraSceneId'] = isset($data['redEnvelopeOriginExtraSceneId']) ? $data['redEnvelopeOriginExtraSceneId'] : null;
         $this->container['redBarrageSwitch'] = isset($data['redBarrageSwitch']) ? $data['redBarrageSwitch'] : null;
+        $this->container['plotType'] = isset($data['plotType']) ? $data['plotType'] : null;
+        $this->container['plotWechatStatusFooterSwitch'] = isset($data['plotWechatStatusFooterSwitch']) ? $data['plotWechatStatusFooterSwitch'] : null;
+        $this->container['plotFrameColor'] = isset($data['plotFrameColor']) ? $data['plotFrameColor'] : null;
+        $this->container['plotSendWord'] = isset($data['plotSendWord']) ? $data['plotSendWord'] : null;
+        $this->container['plotSignText'] = isset($data['plotSignText']) ? $data['plotSignText'] : null;
+        $this->container['plotSignImage'] = isset($data['plotSignImage']) ? $data['plotSignImage'] : null;
+        $this->container['plotBrandLogo'] = isset($data['plotBrandLogo']) ? $data['plotBrandLogo'] : null;
+        $this->container['plotOriginalMaterial'] = isset($data['plotOriginalMaterial']) ? $data['plotOriginalMaterial'] : null;
     }
 
     /**
@@ -405,6 +453,198 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
     public function setRedBarrageSwitch($redBarrageSwitch)
     {
         $this->container['redBarrageSwitch'] = $redBarrageSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets plotType
+     *
+     * @return \TencentAds\Model\PlotType|mixed
+     */
+    public function getPlotType()
+    {
+        return $this->container['plotType'];
+    }
+
+    /**
+     * Sets plotType
+     *
+     * @param \TencentAds\Model\PlotType|mixed $plotType plotType
+     *
+     * @return $this
+     */
+    public function setPlotType($plotType)
+    {
+        $this->container['plotType'] = $plotType;
+
+        return $this;
+    }
+
+    /**
+     * Gets plotWechatStatusFooterSwitch
+     *
+     * @return bool|mixed
+     */
+    public function getPlotWechatStatusFooterSwitch()
+    {
+        return $this->container['plotWechatStatusFooterSwitch'];
+    }
+
+    /**
+     * Sets plotWechatStatusFooterSwitch
+     *
+     * @param bool|mixed $plotWechatStatusFooterSwitch plotWechatStatusFooterSwitch
+     *
+     * @return $this
+     */
+    public function setPlotWechatStatusFooterSwitch($plotWechatStatusFooterSwitch)
+    {
+        $this->container['plotWechatStatusFooterSwitch'] = $plotWechatStatusFooterSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets plotFrameColor
+     *
+     * @return string|mixed
+     */
+    public function getPlotFrameColor()
+    {
+        return $this->container['plotFrameColor'];
+    }
+
+    /**
+     * Sets plotFrameColor
+     *
+     * @param string|mixed $plotFrameColor plotFrameColor
+     *
+     * @return $this
+     */
+    public function setPlotFrameColor($plotFrameColor)
+    {
+        $this->container['plotFrameColor'] = $plotFrameColor;
+
+        return $this;
+    }
+
+    /**
+     * Gets plotSendWord
+     *
+     * @return string|mixed
+     */
+    public function getPlotSendWord()
+    {
+        return $this->container['plotSendWord'];
+    }
+
+    /**
+     * Sets plotSendWord
+     *
+     * @param string|mixed $plotSendWord plotSendWord
+     *
+     * @return $this
+     */
+    public function setPlotSendWord($plotSendWord)
+    {
+        $this->container['plotSendWord'] = $plotSendWord;
+
+        return $this;
+    }
+
+    /**
+     * Gets plotSignText
+     *
+     * @return string|mixed
+     */
+    public function getPlotSignText()
+    {
+        return $this->container['plotSignText'];
+    }
+
+    /**
+     * Sets plotSignText
+     *
+     * @param string|mixed $plotSignText plotSignText
+     *
+     * @return $this
+     */
+    public function setPlotSignText($plotSignText)
+    {
+        $this->container['plotSignText'] = $plotSignText;
+
+        return $this;
+    }
+
+    /**
+     * Gets plotSignImage
+     *
+     * @return string|mixed
+     */
+    public function getPlotSignImage()
+    {
+        return $this->container['plotSignImage'];
+    }
+
+    /**
+     * Sets plotSignImage
+     *
+     * @param string|mixed $plotSignImage plotSignImage
+     *
+     * @return $this
+     */
+    public function setPlotSignImage($plotSignImage)
+    {
+        $this->container['plotSignImage'] = $plotSignImage;
+
+        return $this;
+    }
+
+    /**
+     * Gets plotBrandLogo
+     *
+     * @return string|mixed
+     */
+    public function getPlotBrandLogo()
+    {
+        return $this->container['plotBrandLogo'];
+    }
+
+    /**
+     * Sets plotBrandLogo
+     *
+     * @param string|mixed $plotBrandLogo plotBrandLogo
+     *
+     * @return $this
+     */
+    public function setPlotBrandLogo($plotBrandLogo)
+    {
+        $this->container['plotBrandLogo'] = $plotBrandLogo;
+
+        return $this;
+    }
+
+    /**
+     * Gets plotOriginalMaterial
+     *
+     * @return \TencentAds\Model\PlotOriginalMaterial|mixed
+     */
+    public function getPlotOriginalMaterial()
+    {
+        return $this->container['plotOriginalMaterial'];
+    }
+
+    /**
+     * Sets plotOriginalMaterial
+     *
+     * @param \TencentAds\Model\PlotOriginalMaterial|mixed $plotOriginalMaterial plotOriginalMaterial
+     *
+     * @return $this
+     */
+    public function setPlotOriginalMaterial($plotOriginalMaterial)
+    {
+        $this->container['plotOriginalMaterial'] = $plotOriginalMaterial;
 
         return $this;
     }

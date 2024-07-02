@@ -1,6 +1,6 @@
 <?php
 /**
- * DpaProductSaleStatus
+ * CostGuaranteeStatus
  *
  * PHP version 5
  *
@@ -31,22 +31,25 @@ namespace TencentAds\Model\V3;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DpaProductSaleStatus Class Doc Comment
+ * CostGuaranteeStatus Class Doc Comment
  *
  * @category Class
- * @description 商品在线状态
+ * @description 成本保障状态
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DpaProductSaleStatus
+class CostGuaranteeStatus
 {
     /**
      * Possible values of this enum
      */
-    const UNKNOWN = 'DPA_PRODUCT_SALE_STATUS_UNKNOWN';
-    const ONLINE = 'DPA_PRODUCT_SALE_STATUS_ONLINE';
-    const OFFLINE = 'DPA_PRODUCT_SALE_STATUS_OFFLINE';
+    const NONE = 'COST_GUARANTEE_STATUS_NONE';
+    const EFFECTIVE = 'COST_GUARANTEE_STATUS_EFFECTIVE';
+    const FAILED = 'COST_GUARANTEE_STATUS_FAILED';
+    const FINISHED = 'COST_GUARANTEE_STATUS_FINISHED';
+    const CONFIRMING = 'COST_GUARANTEE_STATUS_CONFIRMING';
+    const SUCCEEDED = 'COST_GUARANTEE_STATUS_SUCCEEDED';
     
     /**
      * Gets allowable values of the enum
@@ -55,9 +58,12 @@ class DpaProductSaleStatus
     public static function getAllowableEnumValues()
     {
         return [
-            self::UNKNOWN,
-            self::ONLINE,
-            self::OFFLINE,
+            self::NONE,
+            self::EFFECTIVE,
+            self::FAILED,
+            self::FINISHED,
+            self::CONFIRMING,
+            self::SUCCEEDED,
         ];
     }
 }

@@ -90,7 +90,9 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'rtaTargetId' => 'string',
         'costConstraintScene' => '\TencentAds\Model\V3\CostConstraintScene',
         'customCostCap' => 'int',
-        'feedbackId' => 'int'
+        'feedbackId' => 'int',
+        'searchExpandTargetingSwitch' => '\TencentAds\Model\V3\SearchExpandTargetingSwitch',
+        'cloudUnionSpec' => '\TencentAds\Model\V3\CloudUnionSpec'
     ];
 
     /**
@@ -132,7 +134,9 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'rtaTargetId' => null,
         'costConstraintScene' => null,
         'customCostCap' => 'int64',
-        'feedbackId' => 'int64'
+        'feedbackId' => 'int64',
+        'searchExpandTargetingSwitch' => null,
+        'cloudUnionSpec' => null
     ];
 
     /**
@@ -195,7 +199,9 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'rtaTargetId' => 'rta_target_id',
         'costConstraintScene' => 'cost_constraint_scene',
         'customCostCap' => 'custom_cost_cap',
-        'feedbackId' => 'feedback_id'
+        'feedbackId' => 'feedback_id',
+        'searchExpandTargetingSwitch' => 'search_expand_targeting_switch',
+        'cloudUnionSpec' => 'cloud_union_spec'
     ];
 
     /**
@@ -237,7 +243,9 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'rtaTargetId' => 'setRtaTargetId',
         'costConstraintScene' => 'setCostConstraintScene',
         'customCostCap' => 'setCustomCostCap',
-        'feedbackId' => 'setFeedbackId'
+        'feedbackId' => 'setFeedbackId',
+        'searchExpandTargetingSwitch' => 'setSearchExpandTargetingSwitch',
+        'cloudUnionSpec' => 'setCloudUnionSpec'
     ];
 
     /**
@@ -279,7 +287,9 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'rtaTargetId' => 'getRtaTargetId',
         'costConstraintScene' => 'getCostConstraintScene',
         'customCostCap' => 'getCustomCostCap',
-        'feedbackId' => 'getFeedbackId'
+        'feedbackId' => 'getFeedbackId',
+        'searchExpandTargetingSwitch' => 'getSearchExpandTargetingSwitch',
+        'cloudUnionSpec' => 'getCloudUnionSpec'
     ];
 
     /**
@@ -376,6 +386,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['costConstraintScene'] = isset($data['costConstraintScene']) ? $data['costConstraintScene'] : null;
         $this->container['customCostCap'] = isset($data['customCostCap']) ? $data['customCostCap'] : null;
         $this->container['feedbackId'] = isset($data['feedbackId']) ? $data['feedbackId'] : null;
+        $this->container['searchExpandTargetingSwitch'] = isset($data['searchExpandTargetingSwitch']) ? $data['searchExpandTargetingSwitch'] : null;
+        $this->container['cloudUnionSpec'] = isset($data['cloudUnionSpec']) ? $data['cloudUnionSpec'] : null;
     }
 
     /**
@@ -1214,6 +1226,54 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setFeedbackId($feedbackId)
     {
         $this->container['feedbackId'] = $feedbackId;
+
+        return $this;
+    }
+
+    /**
+     * Gets searchExpandTargetingSwitch
+     *
+     * @return \TencentAds\Model\V3\SearchExpandTargetingSwitch|mixed
+     */
+    public function getSearchExpandTargetingSwitch()
+    {
+        return $this->container['searchExpandTargetingSwitch'];
+    }
+
+    /**
+     * Sets searchExpandTargetingSwitch
+     *
+     * @param \TencentAds\Model\V3\SearchExpandTargetingSwitch|mixed $searchExpandTargetingSwitch searchExpandTargetingSwitch
+     *
+     * @return $this
+     */
+    public function setSearchExpandTargetingSwitch($searchExpandTargetingSwitch)
+    {
+        $this->container['searchExpandTargetingSwitch'] = $searchExpandTargetingSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets cloudUnionSpec
+     *
+     * @return \TencentAds\Model\V3\CloudUnionSpec|mixed
+     */
+    public function getCloudUnionSpec()
+    {
+        return $this->container['cloudUnionSpec'];
+    }
+
+    /**
+     * Sets cloudUnionSpec
+     *
+     * @param \TencentAds\Model\V3\CloudUnionSpec|mixed $cloudUnionSpec cloudUnionSpec
+     *
+     * @return $this
+     */
+    public function setCloudUnionSpec($cloudUnionSpec)
+    {
+        $this->container['cloudUnionSpec'] = $cloudUnionSpec;
 
         return $this;
     }

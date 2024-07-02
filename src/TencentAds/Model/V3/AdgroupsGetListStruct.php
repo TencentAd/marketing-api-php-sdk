@@ -125,7 +125,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'mpaSpec' => '\TencentAds\Model\V3\MpaSpec',
         'shortPlayPayType' => '\TencentAds\Model\V3\ShortPlayPayType',
         'sellStrategyId' => 'int',
-        'ogCompletionType' => '\TencentAds\Model\V3\OgCompletionType'
+        'ogCompletionType' => '\TencentAds\Model\V3\OgCompletionType',
+        'costGuaranteeStatus' => '\TencentAds\Model\V3\CostGuaranteeStatus',
+        'costGuaranteeMoney' => 'int'
     ];
 
     /**
@@ -201,7 +203,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'mpaSpec' => null,
         'shortPlayPayType' => null,
         'sellStrategyId' => 'int64',
-        'ogCompletionType' => null
+        'ogCompletionType' => null,
+        'costGuaranteeStatus' => null,
+        'costGuaranteeMoney' => 'int64'
     ];
 
     /**
@@ -298,7 +302,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'mpaSpec' => 'mpa_spec',
         'shortPlayPayType' => 'short_play_pay_type',
         'sellStrategyId' => 'sell_strategy_id',
-        'ogCompletionType' => 'og_completion_type'
+        'ogCompletionType' => 'og_completion_type',
+        'costGuaranteeStatus' => 'cost_guarantee_status',
+        'costGuaranteeMoney' => 'cost_guarantee_money'
     ];
 
     /**
@@ -374,7 +380,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'mpaSpec' => 'setMpaSpec',
         'shortPlayPayType' => 'setShortPlayPayType',
         'sellStrategyId' => 'setSellStrategyId',
-        'ogCompletionType' => 'setOgCompletionType'
+        'ogCompletionType' => 'setOgCompletionType',
+        'costGuaranteeStatus' => 'setCostGuaranteeStatus',
+        'costGuaranteeMoney' => 'setCostGuaranteeMoney'
     ];
 
     /**
@@ -450,7 +458,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'mpaSpec' => 'getMpaSpec',
         'shortPlayPayType' => 'getShortPlayPayType',
         'sellStrategyId' => 'getSellStrategyId',
-        'ogCompletionType' => 'getOgCompletionType'
+        'ogCompletionType' => 'getOgCompletionType',
+        'costGuaranteeStatus' => 'getCostGuaranteeStatus',
+        'costGuaranteeMoney' => 'getCostGuaranteeMoney'
     ];
 
     /**
@@ -581,6 +591,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['shortPlayPayType'] = isset($data['shortPlayPayType']) ? $data['shortPlayPayType'] : null;
         $this->container['sellStrategyId'] = isset($data['sellStrategyId']) ? $data['sellStrategyId'] : null;
         $this->container['ogCompletionType'] = isset($data['ogCompletionType']) ? $data['ogCompletionType'] : null;
+        $this->container['costGuaranteeStatus'] = isset($data['costGuaranteeStatus']) ? $data['costGuaranteeStatus'] : null;
+        $this->container['costGuaranteeMoney'] = isset($data['costGuaranteeMoney']) ? $data['costGuaranteeMoney'] : null;
     }
 
     /**
@@ -2235,6 +2247,54 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setOgCompletionType($ogCompletionType)
     {
         $this->container['ogCompletionType'] = $ogCompletionType;
+
+        return $this;
+    }
+
+    /**
+     * Gets costGuaranteeStatus
+     *
+     * @return \TencentAds\Model\V3\CostGuaranteeStatus|mixed
+     */
+    public function getCostGuaranteeStatus()
+    {
+        return $this->container['costGuaranteeStatus'];
+    }
+
+    /**
+     * Sets costGuaranteeStatus
+     *
+     * @param \TencentAds\Model\V3\CostGuaranteeStatus|mixed $costGuaranteeStatus costGuaranteeStatus
+     *
+     * @return $this
+     */
+    public function setCostGuaranteeStatus($costGuaranteeStatus)
+    {
+        $this->container['costGuaranteeStatus'] = $costGuaranteeStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets costGuaranteeMoney
+     *
+     * @return int|mixed
+     */
+    public function getCostGuaranteeMoney()
+    {
+        return $this->container['costGuaranteeMoney'];
+    }
+
+    /**
+     * Sets costGuaranteeMoney
+     *
+     * @param int|mixed $costGuaranteeMoney costGuaranteeMoney
+     *
+     * @return $this
+     */
+    public function setCostGuaranteeMoney($costGuaranteeMoney)
+    {
+        $this->container['costGuaranteeMoney'] = $costGuaranteeMoney;
 
         return $this;
     }

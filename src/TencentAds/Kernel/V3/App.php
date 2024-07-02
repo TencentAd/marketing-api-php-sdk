@@ -33,6 +33,9 @@ use TencentAds\Container\V3\BidwordApiContainer;
 use TencentAds\Container\V3\BidwordFlowApiContainer;
 use TencentAds\Container\V3\BrandApiContainer;
 use TencentAds\Container\V3\BusinessPointApiContainer;
+use TencentAds\Container\V3\ChannelsFinderobjectApiContainer;
+use TencentAds\Container\V3\ChannelsLivenoticeinfoApiContainer;
+use TencentAds\Container\V3\ChannelsUserpageobjectsApiContainer;
 use TencentAds\Container\V3\CommentListApiContainer;
 use TencentAds\Container\V3\ComponentElementUrgeReviewApiContainer;
 use TencentAds\Container\V3\ComponentReviewResultsApiContainer;
@@ -125,6 +128,7 @@ use TencentAds\Container\V3\ProfilesApiContainer;
 use TencentAds\Container\V3\ProgrammedApiContainer;
 use TencentAds\Container\V3\ProgrammedMaterialMappingsApiContainer;
 use TencentAds\Container\V3\ProgrammedTemplateApiContainer;
+use TencentAds\Container\V3\QualificationImagesApiContainer;
 use TencentAds\Container\V3\QualificationStructureApiContainer;
 use TencentAds\Container\V3\QualificationsApiContainer;
 use TencentAds\Container\V3\RealtimeCostApiContainer;
@@ -271,6 +275,15 @@ class App
 
     /** @var BusinessPointApiContainer */
     public $businessPointApiContainer;
+
+    /** @var ChannelsFinderobjectApiContainer */
+    public $channelsFinderobjectApiContainer;
+
+    /** @var ChannelsLivenoticeinfoApiContainer */
+    public $channelsLivenoticeinfoApiContainer;
+
+    /** @var ChannelsUserpageobjectsApiContainer */
+    public $channelsUserpageobjectsApiContainer;
 
     /** @var CommentListApiContainer */
     public $commentListApiContainer;
@@ -547,6 +560,9 @@ class App
 
     /** @var ProgrammedTemplateApiContainer */
     public $programmedTemplateApiContainer;
+
+    /** @var QualificationImagesApiContainer */
+    public $qualificationImagesApiContainer;
 
     /** @var QualificationStructureApiContainer */
     public $qualificationStructureApiContainer;
@@ -1136,6 +1152,48 @@ class App
             $this->businessPointApiContainer = $container;
         }
         return $this->businessPointApiContainer;
+    }
+
+
+    /**
+     * @return ChannelsFinderobjectApiContainer
+     */
+    public function channelsFinderobject()
+    {
+        if (empty($this->channelsFinderobjectApiContainer)) {
+            $container = new ChannelsFinderobjectApiContainer();
+            $container->init($this, $this->getClient());
+            $this->channelsFinderobjectApiContainer = $container;
+        }
+        return $this->channelsFinderobjectApiContainer;
+    }
+
+
+    /**
+     * @return ChannelsLivenoticeinfoApiContainer
+     */
+    public function channelsLivenoticeinfo()
+    {
+        if (empty($this->channelsLivenoticeinfoApiContainer)) {
+            $container = new ChannelsLivenoticeinfoApiContainer();
+            $container->init($this, $this->getClient());
+            $this->channelsLivenoticeinfoApiContainer = $container;
+        }
+        return $this->channelsLivenoticeinfoApiContainer;
+    }
+
+
+    /**
+     * @return ChannelsUserpageobjectsApiContainer
+     */
+    public function channelsUserpageobjects()
+    {
+        if (empty($this->channelsUserpageobjectsApiContainer)) {
+            $container = new ChannelsUserpageobjectsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->channelsUserpageobjectsApiContainer = $container;
+        }
+        return $this->channelsUserpageobjectsApiContainer;
     }
 
 
@@ -2424,6 +2482,20 @@ class App
             $this->programmedTemplateApiContainer = $container;
         }
         return $this->programmedTemplateApiContainer;
+    }
+
+
+    /**
+     * @return QualificationImagesApiContainer
+     */
+    public function qualificationImages()
+    {
+        if (empty($this->qualificationImagesApiContainer)) {
+            $container = new QualificationImagesApiContainer();
+            $container->init($this, $this->getClient());
+            $this->qualificationImagesApiContainer = $container;
+        }
+        return $this->qualificationImagesApiContainer;
     }
 
 

@@ -60,7 +60,10 @@ class FinderAdObjectListGetListStruct implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'finderAdObjectId' => 'int',
         'finderObject' => '\TencentAds\Model\V3\FinderObjectStruct',
-        'dynamicCreativeId' => 'int'
+        'dynamicCreativeId' => 'int',
+        'visibilityCode' => '\TencentAds\Model\V3\VisibilityCode',
+        'jumpInfo' => '\TencentAds\Model\V3\JumpinfoComponent',
+        'adExportId' => 'string'
     ];
 
     /**
@@ -71,7 +74,10 @@ class FinderAdObjectListGetListStruct implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'finderAdObjectId' => 'int64',
         'finderObject' => null,
-        'dynamicCreativeId' => 'int64'
+        'dynamicCreativeId' => 'int64',
+        'visibilityCode' => null,
+        'jumpInfo' => null,
+        'adExportId' => null
     ];
 
     /**
@@ -103,7 +109,10 @@ class FinderAdObjectListGetListStruct implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'finderAdObjectId' => 'finder_ad_object_id',
         'finderObject' => 'finder_object',
-        'dynamicCreativeId' => 'dynamic_creative_id'
+        'dynamicCreativeId' => 'dynamic_creative_id',
+        'visibilityCode' => 'visibility_code',
+        'jumpInfo' => 'jump_info',
+        'adExportId' => 'ad_export_id'
     ];
 
     /**
@@ -114,7 +123,10 @@ class FinderAdObjectListGetListStruct implements ModelInterface, ArrayAccess
     protected static $setters = [
         'finderAdObjectId' => 'setFinderAdObjectId',
         'finderObject' => 'setFinderObject',
-        'dynamicCreativeId' => 'setDynamicCreativeId'
+        'dynamicCreativeId' => 'setDynamicCreativeId',
+        'visibilityCode' => 'setVisibilityCode',
+        'jumpInfo' => 'setJumpInfo',
+        'adExportId' => 'setAdExportId'
     ];
 
     /**
@@ -125,7 +137,10 @@ class FinderAdObjectListGetListStruct implements ModelInterface, ArrayAccess
     protected static $getters = [
         'finderAdObjectId' => 'getFinderAdObjectId',
         'finderObject' => 'getFinderObject',
-        'dynamicCreativeId' => 'getDynamicCreativeId'
+        'dynamicCreativeId' => 'getDynamicCreativeId',
+        'visibilityCode' => 'getVisibilityCode',
+        'jumpInfo' => 'getJumpInfo',
+        'adExportId' => 'getAdExportId'
     ];
 
     /**
@@ -191,6 +206,9 @@ class FinderAdObjectListGetListStruct implements ModelInterface, ArrayAccess
         $this->container['finderAdObjectId'] = isset($data['finderAdObjectId']) ? $data['finderAdObjectId'] : null;
         $this->container['finderObject'] = isset($data['finderObject']) ? $data['finderObject'] : null;
         $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
+        $this->container['visibilityCode'] = isset($data['visibilityCode']) ? $data['visibilityCode'] : null;
+        $this->container['jumpInfo'] = isset($data['jumpInfo']) ? $data['jumpInfo'] : null;
+        $this->container['adExportId'] = isset($data['adExportId']) ? $data['adExportId'] : null;
     }
 
     /**
@@ -285,6 +303,78 @@ class FinderAdObjectListGetListStruct implements ModelInterface, ArrayAccess
     public function setDynamicCreativeId($dynamicCreativeId)
     {
         $this->container['dynamicCreativeId'] = $dynamicCreativeId;
+
+        return $this;
+    }
+
+    /**
+     * Gets visibilityCode
+     *
+     * @return \TencentAds\Model\V3\VisibilityCode|mixed
+     */
+    public function getVisibilityCode()
+    {
+        return $this->container['visibilityCode'];
+    }
+
+    /**
+     * Sets visibilityCode
+     *
+     * @param \TencentAds\Model\V3\VisibilityCode|mixed $visibilityCode visibilityCode
+     *
+     * @return $this
+     */
+    public function setVisibilityCode($visibilityCode)
+    {
+        $this->container['visibilityCode'] = $visibilityCode;
+
+        return $this;
+    }
+
+    /**
+     * Gets jumpInfo
+     *
+     * @return \TencentAds\Model\V3\JumpinfoComponent|mixed
+     */
+    public function getJumpInfo()
+    {
+        return $this->container['jumpInfo'];
+    }
+
+    /**
+     * Sets jumpInfo
+     *
+     * @param \TencentAds\Model\V3\JumpinfoComponent|mixed $jumpInfo jumpInfo
+     *
+     * @return $this
+     */
+    public function setJumpInfo($jumpInfo)
+    {
+        $this->container['jumpInfo'] = $jumpInfo;
+
+        return $this;
+    }
+
+    /**
+     * Gets adExportId
+     *
+     * @return string|mixed
+     */
+    public function getAdExportId()
+    {
+        return $this->container['adExportId'];
+    }
+
+    /**
+     * Sets adExportId
+     *
+     * @param string|mixed $adExportId adExportId
+     *
+     * @return $this
+     */
+    public function setAdExportId($adExportId)
+    {
+        $this->container['adExportId'] = $adExportId;
 
         return $this;
     }

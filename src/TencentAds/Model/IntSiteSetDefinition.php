@@ -84,6 +84,7 @@ class IntSiteSetDefinition
     const MOBILE_GAME = 'SITE_SET_MOBILE_GAME';
     const QQSHOPPING = 'SITE_SET_QQSHOPPING';
     const PCAD = 'SITE_SET_PCAD';
+    const YUNXUAN = 'SITE_SET_YUNXUAN';
     
     /**
      * Gets allowable values of the enum
@@ -132,6 +133,7 @@ class IntSiteSetDefinition
             self::MOBILE_GAME,
             self::QQSHOPPING,
             self::PCAD,
+            self::YUNXUAN,
         ];
     }
 }

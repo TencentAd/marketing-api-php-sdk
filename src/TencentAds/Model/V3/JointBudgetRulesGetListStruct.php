@@ -66,7 +66,8 @@ class JointBudgetRulesGetListStruct implements ModelInterface, ArrayAccess
         'lastModTime' => 'int',
         'completedTime' => 'int',
         'bldate' => 'int',
-        'adgroupIdList' => 'int[]'
+        'adgroupIdList' => 'int[]',
+        'jointBudgetRuleType' => '\TencentAds\Model\V3\JointBudgetRuleType'
     ];
 
     /**
@@ -83,7 +84,8 @@ class JointBudgetRulesGetListStruct implements ModelInterface, ArrayAccess
         'lastModTime' => 'int64',
         'completedTime' => 'int64',
         'bldate' => 'int64',
-        'adgroupIdList' => 'int64'
+        'adgroupIdList' => 'int64',
+        'jointBudgetRuleType' => null
     ];
 
     /**
@@ -121,7 +123,8 @@ class JointBudgetRulesGetListStruct implements ModelInterface, ArrayAccess
         'lastModTime' => 'last_mod_time',
         'completedTime' => 'completed_time',
         'bldate' => 'bldate',
-        'adgroupIdList' => 'adgroup_id_list'
+        'adgroupIdList' => 'adgroup_id_list',
+        'jointBudgetRuleType' => 'joint_budget_rule_type'
     ];
 
     /**
@@ -138,7 +141,8 @@ class JointBudgetRulesGetListStruct implements ModelInterface, ArrayAccess
         'lastModTime' => 'setLastModTime',
         'completedTime' => 'setCompletedTime',
         'bldate' => 'setBldate',
-        'adgroupIdList' => 'setAdgroupIdList'
+        'adgroupIdList' => 'setAdgroupIdList',
+        'jointBudgetRuleType' => 'setJointBudgetRuleType'
     ];
 
     /**
@@ -155,7 +159,8 @@ class JointBudgetRulesGetListStruct implements ModelInterface, ArrayAccess
         'lastModTime' => 'getLastModTime',
         'completedTime' => 'getCompletedTime',
         'bldate' => 'getBldate',
-        'adgroupIdList' => 'getAdgroupIdList'
+        'adgroupIdList' => 'getAdgroupIdList',
+        'jointBudgetRuleType' => 'getJointBudgetRuleType'
     ];
 
     /**
@@ -227,6 +232,7 @@ class JointBudgetRulesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['completedTime'] = isset($data['completedTime']) ? $data['completedTime'] : null;
         $this->container['bldate'] = isset($data['bldate']) ? $data['bldate'] : null;
         $this->container['adgroupIdList'] = isset($data['adgroupIdList']) ? $data['adgroupIdList'] : null;
+        $this->container['jointBudgetRuleType'] = isset($data['jointBudgetRuleType']) ? $data['jointBudgetRuleType'] : null;
     }
 
     /**
@@ -465,6 +471,30 @@ class JointBudgetRulesGetListStruct implements ModelInterface, ArrayAccess
     public function setAdgroupIdList($adgroupIdList)
     {
         $this->container['adgroupIdList'] = $adgroupIdList;
+
+        return $this;
+    }
+
+    /**
+     * Gets jointBudgetRuleType
+     *
+     * @return \TencentAds\Model\V3\JointBudgetRuleType|mixed
+     */
+    public function getJointBudgetRuleType()
+    {
+        return $this->container['jointBudgetRuleType'];
+    }
+
+    /**
+     * Sets jointBudgetRuleType
+     *
+     * @param \TencentAds\Model\V3\JointBudgetRuleType|mixed $jointBudgetRuleType jointBudgetRuleType
+     *
+     * @return $this
+     */
+    public function setJointBudgetRuleType($jointBudgetRuleType)
+    {
+        $this->container['jointBudgetRuleType'] = $jointBudgetRuleType;
 
         return $this;
     }

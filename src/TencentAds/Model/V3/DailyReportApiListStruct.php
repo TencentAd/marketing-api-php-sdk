@@ -763,6 +763,43 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'componentType' => 'string',
         'imageIds' => 'string',
         'videoIds' => 'string',
+        'expAvgRank' => 'double',
+        'expOverallTopPv' => 'int',
+        'clkTopPv' => 'int',
+        'cvsExpPv' => 'int',
+        'cvsExpUv' => 'int',
+        'cvsCpnClkPv' => 'int',
+        'cvsCpnClkUv' => 'int',
+        'cvsCpnExpPv' => 'int',
+        'cvsCpnExpUv' => 'int',
+        'cvsCpnExpDuration' => 'double',
+        'cvsCpnBtnClkPv' => 'int',
+        'cvsCpnBtnClkUv' => 'int',
+        'cvsCpnClkDedupPv' => 'int',
+        'cvsCpnVideoPlayPv' => 'int',
+        'cvsCpnVideoPlayUv' => 'int',
+        'cvsCpnVideoPlayDuration' => 'double',
+        'cvsCpnVideoPlayHalfUv' => 'int',
+        'cvsCpnVideoPlayFinUv' => 'int',
+        'cvsCpnMediaPlayPv' => 'int',
+        'cvsCpnMediaPlayUv' => 'int',
+        'cvsCpnMediaPlayDuration' => 'double',
+        'cvsCpnMediaPlayHalfUv' => 'int',
+        'cvsCpnMediaPlayFinUv' => 'int',
+        'avgCvsViewtime' => 'double',
+        'avgCpnexpViewtime' => 'double',
+        'avgCpnplayVideoTime' => 'double',
+        'avgCpnplayMediaTime' => 'double',
+        'cpnclkButtonPvRate' => 'double',
+        'cpnplayVideoAndMediaPv' => 'int',
+        'cpnplayVideoAndMediaUv' => 'int',
+        'cpnplayVideoAndMediaFinUv' => 'int',
+        'cpnplayVideoAndMediaTime' => 'double',
+        'avgCpnplayVideoAndMediaTime' => 'double',
+        'canvasHbSingleReceiveExpPv' => 'int',
+        'canvasHbSingleSendExpPv' => 'int',
+        'canvasHbDoubleReceiveExpPv' => 'int',
+        'canvasHbDoubleSendExpPv' => 'int',
         'hour' => 'int',
         'channelId' => 'string',
         'buyingType' => 'string',
@@ -770,9 +807,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'bidword' => 'string',
         'matchType' => 'int',
         'device' => 'int',
-        'expAvgRank' => 'double',
-        'expOverallTopPv' => 'int',
-        'clkTopPv' => 'int',
         'queryword' => 'string',
         'imageId' => 'string',
         'videoId' => 'string',
@@ -1491,6 +1525,43 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'componentType' => null,
         'imageIds' => null,
         'videoIds' => null,
+        'expAvgRank' => 'double',
+        'expOverallTopPv' => 'int64',
+        'clkTopPv' => 'int64',
+        'cvsExpPv' => 'int64',
+        'cvsExpUv' => 'int64',
+        'cvsCpnClkPv' => 'int64',
+        'cvsCpnClkUv' => 'int64',
+        'cvsCpnExpPv' => 'int64',
+        'cvsCpnExpUv' => 'int64',
+        'cvsCpnExpDuration' => 'double',
+        'cvsCpnBtnClkPv' => 'int64',
+        'cvsCpnBtnClkUv' => 'int64',
+        'cvsCpnClkDedupPv' => 'int64',
+        'cvsCpnVideoPlayPv' => 'int64',
+        'cvsCpnVideoPlayUv' => 'int64',
+        'cvsCpnVideoPlayDuration' => 'double',
+        'cvsCpnVideoPlayHalfUv' => 'int64',
+        'cvsCpnVideoPlayFinUv' => 'int64',
+        'cvsCpnMediaPlayPv' => 'int64',
+        'cvsCpnMediaPlayUv' => 'int64',
+        'cvsCpnMediaPlayDuration' => 'double',
+        'cvsCpnMediaPlayHalfUv' => 'int64',
+        'cvsCpnMediaPlayFinUv' => 'int64',
+        'avgCvsViewtime' => 'double',
+        'avgCpnexpViewtime' => 'double',
+        'avgCpnplayVideoTime' => 'double',
+        'avgCpnplayMediaTime' => 'double',
+        'cpnclkButtonPvRate' => 'double',
+        'cpnplayVideoAndMediaPv' => 'int64',
+        'cpnplayVideoAndMediaUv' => 'int64',
+        'cpnplayVideoAndMediaFinUv' => 'int64',
+        'cpnplayVideoAndMediaTime' => 'double',
+        'avgCpnplayVideoAndMediaTime' => 'double',
+        'canvasHbSingleReceiveExpPv' => 'int64',
+        'canvasHbSingleSendExpPv' => 'int64',
+        'canvasHbDoubleReceiveExpPv' => 'int64',
+        'canvasHbDoubleSendExpPv' => 'int64',
         'hour' => 'int64',
         'channelId' => null,
         'buyingType' => null,
@@ -1498,9 +1569,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'bidword' => null,
         'matchType' => 'int64',
         'device' => 'int64',
-        'expAvgRank' => 'double',
-        'expOverallTopPv' => 'int64',
-        'clkTopPv' => 'int64',
         'queryword' => null,
         'imageId' => null,
         'videoId' => null,
@@ -2240,6 +2308,43 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'componentType' => 'component_type',
         'imageIds' => 'image_ids',
         'videoIds' => 'video_ids',
+        'expAvgRank' => 'exp_avg_rank',
+        'expOverallTopPv' => 'exp_overall_top_pv',
+        'clkTopPv' => 'clk_top_pv',
+        'cvsExpPv' => 'cvs_exp_pv',
+        'cvsExpUv' => 'cvs_exp_uv',
+        'cvsCpnClkPv' => 'cvs_cpn_clk_pv',
+        'cvsCpnClkUv' => 'cvs_cpn_clk_uv',
+        'cvsCpnExpPv' => 'cvs_cpn_exp_pv',
+        'cvsCpnExpUv' => 'cvs_cpn_exp_uv',
+        'cvsCpnExpDuration' => 'cvs_cpn_exp_duration',
+        'cvsCpnBtnClkPv' => 'cvs_cpn_btn_clk_pv',
+        'cvsCpnBtnClkUv' => 'cvs_cpn_btn_clk_uv',
+        'cvsCpnClkDedupPv' => 'cvs_cpn_clk_dedup_pv',
+        'cvsCpnVideoPlayPv' => 'cvs_cpn_video_play_pv',
+        'cvsCpnVideoPlayUv' => 'cvs_cpn_video_play_uv',
+        'cvsCpnVideoPlayDuration' => 'cvs_cpn_video_play_duration',
+        'cvsCpnVideoPlayHalfUv' => 'cvs_cpn_video_play_half_uv',
+        'cvsCpnVideoPlayFinUv' => 'cvs_cpn_video_play_fin_uv',
+        'cvsCpnMediaPlayPv' => 'cvs_cpn_media_play_pv',
+        'cvsCpnMediaPlayUv' => 'cvs_cpn_media_play_uv',
+        'cvsCpnMediaPlayDuration' => 'cvs_cpn_media_play_duration',
+        'cvsCpnMediaPlayHalfUv' => 'cvs_cpn_media_play_half_uv',
+        'cvsCpnMediaPlayFinUv' => 'cvs_cpn_media_play_fin_uv',
+        'avgCvsViewtime' => 'avg_cvs_viewtime',
+        'avgCpnexpViewtime' => 'avg_cpnexp_viewtime',
+        'avgCpnplayVideoTime' => 'avg_cpnplay_video_time',
+        'avgCpnplayMediaTime' => 'avg_cpnplay_media_time',
+        'cpnclkButtonPvRate' => 'cpnclk_button_pv_rate',
+        'cpnplayVideoAndMediaPv' => 'cpnplay_video_and_media_pv',
+        'cpnplayVideoAndMediaUv' => 'cpnplay_video_and_media_uv',
+        'cpnplayVideoAndMediaFinUv' => 'cpnplay_video_and_media_fin_uv',
+        'cpnplayVideoAndMediaTime' => 'cpnplay_video_and_media_time',
+        'avgCpnplayVideoAndMediaTime' => 'avg_cpnplay_video_and_media_time',
+        'canvasHbSingleReceiveExpPv' => 'canvas_hb_single_receive_exp_pv',
+        'canvasHbSingleSendExpPv' => 'canvas_hb_single_send_exp_pv',
+        'canvasHbDoubleReceiveExpPv' => 'canvas_hb_double_receive_exp_pv',
+        'canvasHbDoubleSendExpPv' => 'canvas_hb_double_send_exp_pv',
         'hour' => 'hour',
         'channelId' => 'channel_id',
         'buyingType' => 'buying_type',
@@ -2247,9 +2352,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'bidword' => 'bidword',
         'matchType' => 'match_type',
         'device' => 'device',
-        'expAvgRank' => 'exp_avg_rank',
-        'expOverallTopPv' => 'exp_overall_top_pv',
-        'clkTopPv' => 'clk_top_pv',
         'queryword' => 'queryword',
         'imageId' => 'image_id',
         'videoId' => 'video_id',
@@ -2968,6 +3070,43 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'componentType' => 'setComponentType',
         'imageIds' => 'setImageIds',
         'videoIds' => 'setVideoIds',
+        'expAvgRank' => 'setExpAvgRank',
+        'expOverallTopPv' => 'setExpOverallTopPv',
+        'clkTopPv' => 'setClkTopPv',
+        'cvsExpPv' => 'setCvsExpPv',
+        'cvsExpUv' => 'setCvsExpUv',
+        'cvsCpnClkPv' => 'setCvsCpnClkPv',
+        'cvsCpnClkUv' => 'setCvsCpnClkUv',
+        'cvsCpnExpPv' => 'setCvsCpnExpPv',
+        'cvsCpnExpUv' => 'setCvsCpnExpUv',
+        'cvsCpnExpDuration' => 'setCvsCpnExpDuration',
+        'cvsCpnBtnClkPv' => 'setCvsCpnBtnClkPv',
+        'cvsCpnBtnClkUv' => 'setCvsCpnBtnClkUv',
+        'cvsCpnClkDedupPv' => 'setCvsCpnClkDedupPv',
+        'cvsCpnVideoPlayPv' => 'setCvsCpnVideoPlayPv',
+        'cvsCpnVideoPlayUv' => 'setCvsCpnVideoPlayUv',
+        'cvsCpnVideoPlayDuration' => 'setCvsCpnVideoPlayDuration',
+        'cvsCpnVideoPlayHalfUv' => 'setCvsCpnVideoPlayHalfUv',
+        'cvsCpnVideoPlayFinUv' => 'setCvsCpnVideoPlayFinUv',
+        'cvsCpnMediaPlayPv' => 'setCvsCpnMediaPlayPv',
+        'cvsCpnMediaPlayUv' => 'setCvsCpnMediaPlayUv',
+        'cvsCpnMediaPlayDuration' => 'setCvsCpnMediaPlayDuration',
+        'cvsCpnMediaPlayHalfUv' => 'setCvsCpnMediaPlayHalfUv',
+        'cvsCpnMediaPlayFinUv' => 'setCvsCpnMediaPlayFinUv',
+        'avgCvsViewtime' => 'setAvgCvsViewtime',
+        'avgCpnexpViewtime' => 'setAvgCpnexpViewtime',
+        'avgCpnplayVideoTime' => 'setAvgCpnplayVideoTime',
+        'avgCpnplayMediaTime' => 'setAvgCpnplayMediaTime',
+        'cpnclkButtonPvRate' => 'setCpnclkButtonPvRate',
+        'cpnplayVideoAndMediaPv' => 'setCpnplayVideoAndMediaPv',
+        'cpnplayVideoAndMediaUv' => 'setCpnplayVideoAndMediaUv',
+        'cpnplayVideoAndMediaFinUv' => 'setCpnplayVideoAndMediaFinUv',
+        'cpnplayVideoAndMediaTime' => 'setCpnplayVideoAndMediaTime',
+        'avgCpnplayVideoAndMediaTime' => 'setAvgCpnplayVideoAndMediaTime',
+        'canvasHbSingleReceiveExpPv' => 'setCanvasHbSingleReceiveExpPv',
+        'canvasHbSingleSendExpPv' => 'setCanvasHbSingleSendExpPv',
+        'canvasHbDoubleReceiveExpPv' => 'setCanvasHbDoubleReceiveExpPv',
+        'canvasHbDoubleSendExpPv' => 'setCanvasHbDoubleSendExpPv',
         'hour' => 'setHour',
         'channelId' => 'setChannelId',
         'buyingType' => 'setBuyingType',
@@ -2975,9 +3114,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'bidword' => 'setBidword',
         'matchType' => 'setMatchType',
         'device' => 'setDevice',
-        'expAvgRank' => 'setExpAvgRank',
-        'expOverallTopPv' => 'setExpOverallTopPv',
-        'clkTopPv' => 'setClkTopPv',
         'queryword' => 'setQueryword',
         'imageId' => 'setImageId',
         'videoId' => 'setVideoId',
@@ -3696,6 +3832,43 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'componentType' => 'getComponentType',
         'imageIds' => 'getImageIds',
         'videoIds' => 'getVideoIds',
+        'expAvgRank' => 'getExpAvgRank',
+        'expOverallTopPv' => 'getExpOverallTopPv',
+        'clkTopPv' => 'getClkTopPv',
+        'cvsExpPv' => 'getCvsExpPv',
+        'cvsExpUv' => 'getCvsExpUv',
+        'cvsCpnClkPv' => 'getCvsCpnClkPv',
+        'cvsCpnClkUv' => 'getCvsCpnClkUv',
+        'cvsCpnExpPv' => 'getCvsCpnExpPv',
+        'cvsCpnExpUv' => 'getCvsCpnExpUv',
+        'cvsCpnExpDuration' => 'getCvsCpnExpDuration',
+        'cvsCpnBtnClkPv' => 'getCvsCpnBtnClkPv',
+        'cvsCpnBtnClkUv' => 'getCvsCpnBtnClkUv',
+        'cvsCpnClkDedupPv' => 'getCvsCpnClkDedupPv',
+        'cvsCpnVideoPlayPv' => 'getCvsCpnVideoPlayPv',
+        'cvsCpnVideoPlayUv' => 'getCvsCpnVideoPlayUv',
+        'cvsCpnVideoPlayDuration' => 'getCvsCpnVideoPlayDuration',
+        'cvsCpnVideoPlayHalfUv' => 'getCvsCpnVideoPlayHalfUv',
+        'cvsCpnVideoPlayFinUv' => 'getCvsCpnVideoPlayFinUv',
+        'cvsCpnMediaPlayPv' => 'getCvsCpnMediaPlayPv',
+        'cvsCpnMediaPlayUv' => 'getCvsCpnMediaPlayUv',
+        'cvsCpnMediaPlayDuration' => 'getCvsCpnMediaPlayDuration',
+        'cvsCpnMediaPlayHalfUv' => 'getCvsCpnMediaPlayHalfUv',
+        'cvsCpnMediaPlayFinUv' => 'getCvsCpnMediaPlayFinUv',
+        'avgCvsViewtime' => 'getAvgCvsViewtime',
+        'avgCpnexpViewtime' => 'getAvgCpnexpViewtime',
+        'avgCpnplayVideoTime' => 'getAvgCpnplayVideoTime',
+        'avgCpnplayMediaTime' => 'getAvgCpnplayMediaTime',
+        'cpnclkButtonPvRate' => 'getCpnclkButtonPvRate',
+        'cpnplayVideoAndMediaPv' => 'getCpnplayVideoAndMediaPv',
+        'cpnplayVideoAndMediaUv' => 'getCpnplayVideoAndMediaUv',
+        'cpnplayVideoAndMediaFinUv' => 'getCpnplayVideoAndMediaFinUv',
+        'cpnplayVideoAndMediaTime' => 'getCpnplayVideoAndMediaTime',
+        'avgCpnplayVideoAndMediaTime' => 'getAvgCpnplayVideoAndMediaTime',
+        'canvasHbSingleReceiveExpPv' => 'getCanvasHbSingleReceiveExpPv',
+        'canvasHbSingleSendExpPv' => 'getCanvasHbSingleSendExpPv',
+        'canvasHbDoubleReceiveExpPv' => 'getCanvasHbDoubleReceiveExpPv',
+        'canvasHbDoubleSendExpPv' => 'getCanvasHbDoubleSendExpPv',
         'hour' => 'getHour',
         'channelId' => 'getChannelId',
         'buyingType' => 'getBuyingType',
@@ -3703,9 +3876,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'bidword' => 'getBidword',
         'matchType' => 'getMatchType',
         'device' => 'getDevice',
-        'expAvgRank' => 'getExpAvgRank',
-        'expOverallTopPv' => 'getExpOverallTopPv',
-        'clkTopPv' => 'getClkTopPv',
         'queryword' => 'getQueryword',
         'imageId' => 'getImageId',
         'videoId' => 'getVideoId',
@@ -4478,6 +4648,43 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['componentType'] = isset($data['componentType']) ? $data['componentType'] : null;
         $this->container['imageIds'] = isset($data['imageIds']) ? $data['imageIds'] : null;
         $this->container['videoIds'] = isset($data['videoIds']) ? $data['videoIds'] : null;
+        $this->container['expAvgRank'] = isset($data['expAvgRank']) ? $data['expAvgRank'] : null;
+        $this->container['expOverallTopPv'] = isset($data['expOverallTopPv']) ? $data['expOverallTopPv'] : null;
+        $this->container['clkTopPv'] = isset($data['clkTopPv']) ? $data['clkTopPv'] : null;
+        $this->container['cvsExpPv'] = isset($data['cvsExpPv']) ? $data['cvsExpPv'] : null;
+        $this->container['cvsExpUv'] = isset($data['cvsExpUv']) ? $data['cvsExpUv'] : null;
+        $this->container['cvsCpnClkPv'] = isset($data['cvsCpnClkPv']) ? $data['cvsCpnClkPv'] : null;
+        $this->container['cvsCpnClkUv'] = isset($data['cvsCpnClkUv']) ? $data['cvsCpnClkUv'] : null;
+        $this->container['cvsCpnExpPv'] = isset($data['cvsCpnExpPv']) ? $data['cvsCpnExpPv'] : null;
+        $this->container['cvsCpnExpUv'] = isset($data['cvsCpnExpUv']) ? $data['cvsCpnExpUv'] : null;
+        $this->container['cvsCpnExpDuration'] = isset($data['cvsCpnExpDuration']) ? $data['cvsCpnExpDuration'] : null;
+        $this->container['cvsCpnBtnClkPv'] = isset($data['cvsCpnBtnClkPv']) ? $data['cvsCpnBtnClkPv'] : null;
+        $this->container['cvsCpnBtnClkUv'] = isset($data['cvsCpnBtnClkUv']) ? $data['cvsCpnBtnClkUv'] : null;
+        $this->container['cvsCpnClkDedupPv'] = isset($data['cvsCpnClkDedupPv']) ? $data['cvsCpnClkDedupPv'] : null;
+        $this->container['cvsCpnVideoPlayPv'] = isset($data['cvsCpnVideoPlayPv']) ? $data['cvsCpnVideoPlayPv'] : null;
+        $this->container['cvsCpnVideoPlayUv'] = isset($data['cvsCpnVideoPlayUv']) ? $data['cvsCpnVideoPlayUv'] : null;
+        $this->container['cvsCpnVideoPlayDuration'] = isset($data['cvsCpnVideoPlayDuration']) ? $data['cvsCpnVideoPlayDuration'] : null;
+        $this->container['cvsCpnVideoPlayHalfUv'] = isset($data['cvsCpnVideoPlayHalfUv']) ? $data['cvsCpnVideoPlayHalfUv'] : null;
+        $this->container['cvsCpnVideoPlayFinUv'] = isset($data['cvsCpnVideoPlayFinUv']) ? $data['cvsCpnVideoPlayFinUv'] : null;
+        $this->container['cvsCpnMediaPlayPv'] = isset($data['cvsCpnMediaPlayPv']) ? $data['cvsCpnMediaPlayPv'] : null;
+        $this->container['cvsCpnMediaPlayUv'] = isset($data['cvsCpnMediaPlayUv']) ? $data['cvsCpnMediaPlayUv'] : null;
+        $this->container['cvsCpnMediaPlayDuration'] = isset($data['cvsCpnMediaPlayDuration']) ? $data['cvsCpnMediaPlayDuration'] : null;
+        $this->container['cvsCpnMediaPlayHalfUv'] = isset($data['cvsCpnMediaPlayHalfUv']) ? $data['cvsCpnMediaPlayHalfUv'] : null;
+        $this->container['cvsCpnMediaPlayFinUv'] = isset($data['cvsCpnMediaPlayFinUv']) ? $data['cvsCpnMediaPlayFinUv'] : null;
+        $this->container['avgCvsViewtime'] = isset($data['avgCvsViewtime']) ? $data['avgCvsViewtime'] : null;
+        $this->container['avgCpnexpViewtime'] = isset($data['avgCpnexpViewtime']) ? $data['avgCpnexpViewtime'] : null;
+        $this->container['avgCpnplayVideoTime'] = isset($data['avgCpnplayVideoTime']) ? $data['avgCpnplayVideoTime'] : null;
+        $this->container['avgCpnplayMediaTime'] = isset($data['avgCpnplayMediaTime']) ? $data['avgCpnplayMediaTime'] : null;
+        $this->container['cpnclkButtonPvRate'] = isset($data['cpnclkButtonPvRate']) ? $data['cpnclkButtonPvRate'] : null;
+        $this->container['cpnplayVideoAndMediaPv'] = isset($data['cpnplayVideoAndMediaPv']) ? $data['cpnplayVideoAndMediaPv'] : null;
+        $this->container['cpnplayVideoAndMediaUv'] = isset($data['cpnplayVideoAndMediaUv']) ? $data['cpnplayVideoAndMediaUv'] : null;
+        $this->container['cpnplayVideoAndMediaFinUv'] = isset($data['cpnplayVideoAndMediaFinUv']) ? $data['cpnplayVideoAndMediaFinUv'] : null;
+        $this->container['cpnplayVideoAndMediaTime'] = isset($data['cpnplayVideoAndMediaTime']) ? $data['cpnplayVideoAndMediaTime'] : null;
+        $this->container['avgCpnplayVideoAndMediaTime'] = isset($data['avgCpnplayVideoAndMediaTime']) ? $data['avgCpnplayVideoAndMediaTime'] : null;
+        $this->container['canvasHbSingleReceiveExpPv'] = isset($data['canvasHbSingleReceiveExpPv']) ? $data['canvasHbSingleReceiveExpPv'] : null;
+        $this->container['canvasHbSingleSendExpPv'] = isset($data['canvasHbSingleSendExpPv']) ? $data['canvasHbSingleSendExpPv'] : null;
+        $this->container['canvasHbDoubleReceiveExpPv'] = isset($data['canvasHbDoubleReceiveExpPv']) ? $data['canvasHbDoubleReceiveExpPv'] : null;
+        $this->container['canvasHbDoubleSendExpPv'] = isset($data['canvasHbDoubleSendExpPv']) ? $data['canvasHbDoubleSendExpPv'] : null;
         $this->container['hour'] = isset($data['hour']) ? $data['hour'] : null;
         $this->container['channelId'] = isset($data['channelId']) ? $data['channelId'] : null;
         $this->container['buyingType'] = isset($data['buyingType']) ? $data['buyingType'] : null;
@@ -4485,9 +4692,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['bidword'] = isset($data['bidword']) ? $data['bidword'] : null;
         $this->container['matchType'] = isset($data['matchType']) ? $data['matchType'] : null;
         $this->container['device'] = isset($data['device']) ? $data['device'] : null;
-        $this->container['expAvgRank'] = isset($data['expAvgRank']) ? $data['expAvgRank'] : null;
-        $this->container['expOverallTopPv'] = isset($data['expOverallTopPv']) ? $data['expOverallTopPv'] : null;
-        $this->container['clkTopPv'] = isset($data['clkTopPv']) ? $data['clkTopPv'] : null;
         $this->container['queryword'] = isset($data['queryword']) ? $data['queryword'] : null;
         $this->container['imageId'] = isset($data['imageId']) ? $data['imageId'] : null;
         $this->container['videoId'] = isset($data['videoId']) ? $data['videoId'] : null;
@@ -21440,6 +21644,894 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets expAvgRank
+     *
+     * @return double|mixed
+     */
+    public function getExpAvgRank()
+    {
+        return $this->container['expAvgRank'];
+    }
+
+    /**
+     * Sets expAvgRank
+     *
+     * @param double|mixed $expAvgRank expAvgRank
+     *
+     * @return $this
+     */
+    public function setExpAvgRank($expAvgRank)
+    {
+        $this->container['expAvgRank'] = $expAvgRank;
+
+        return $this;
+    }
+
+    /**
+     * Gets expOverallTopPv
+     *
+     * @return int|mixed
+     */
+    public function getExpOverallTopPv()
+    {
+        return $this->container['expOverallTopPv'];
+    }
+
+    /**
+     * Sets expOverallTopPv
+     *
+     * @param int|mixed $expOverallTopPv expOverallTopPv
+     *
+     * @return $this
+     */
+    public function setExpOverallTopPv($expOverallTopPv)
+    {
+        $this->container['expOverallTopPv'] = $expOverallTopPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkTopPv
+     *
+     * @return int|mixed
+     */
+    public function getClkTopPv()
+    {
+        return $this->container['clkTopPv'];
+    }
+
+    /**
+     * Sets clkTopPv
+     *
+     * @param int|mixed $clkTopPv clkTopPv
+     *
+     * @return $this
+     */
+    public function setClkTopPv($clkTopPv)
+    {
+        $this->container['clkTopPv'] = $clkTopPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsExpPv
+     *
+     * @return int|mixed
+     */
+    public function getCvsExpPv()
+    {
+        return $this->container['cvsExpPv'];
+    }
+
+    /**
+     * Sets cvsExpPv
+     *
+     * @param int|mixed $cvsExpPv cvsExpPv
+     *
+     * @return $this
+     */
+    public function setCvsExpPv($cvsExpPv)
+    {
+        $this->container['cvsExpPv'] = $cvsExpPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsExpUv
+     *
+     * @return int|mixed
+     */
+    public function getCvsExpUv()
+    {
+        return $this->container['cvsExpUv'];
+    }
+
+    /**
+     * Sets cvsExpUv
+     *
+     * @param int|mixed $cvsExpUv cvsExpUv
+     *
+     * @return $this
+     */
+    public function setCvsExpUv($cvsExpUv)
+    {
+        $this->container['cvsExpUv'] = $cvsExpUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsCpnClkPv
+     *
+     * @return int|mixed
+     */
+    public function getCvsCpnClkPv()
+    {
+        return $this->container['cvsCpnClkPv'];
+    }
+
+    /**
+     * Sets cvsCpnClkPv
+     *
+     * @param int|mixed $cvsCpnClkPv cvsCpnClkPv
+     *
+     * @return $this
+     */
+    public function setCvsCpnClkPv($cvsCpnClkPv)
+    {
+        $this->container['cvsCpnClkPv'] = $cvsCpnClkPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsCpnClkUv
+     *
+     * @return int|mixed
+     */
+    public function getCvsCpnClkUv()
+    {
+        return $this->container['cvsCpnClkUv'];
+    }
+
+    /**
+     * Sets cvsCpnClkUv
+     *
+     * @param int|mixed $cvsCpnClkUv cvsCpnClkUv
+     *
+     * @return $this
+     */
+    public function setCvsCpnClkUv($cvsCpnClkUv)
+    {
+        $this->container['cvsCpnClkUv'] = $cvsCpnClkUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsCpnExpPv
+     *
+     * @return int|mixed
+     */
+    public function getCvsCpnExpPv()
+    {
+        return $this->container['cvsCpnExpPv'];
+    }
+
+    /**
+     * Sets cvsCpnExpPv
+     *
+     * @param int|mixed $cvsCpnExpPv cvsCpnExpPv
+     *
+     * @return $this
+     */
+    public function setCvsCpnExpPv($cvsCpnExpPv)
+    {
+        $this->container['cvsCpnExpPv'] = $cvsCpnExpPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsCpnExpUv
+     *
+     * @return int|mixed
+     */
+    public function getCvsCpnExpUv()
+    {
+        return $this->container['cvsCpnExpUv'];
+    }
+
+    /**
+     * Sets cvsCpnExpUv
+     *
+     * @param int|mixed $cvsCpnExpUv cvsCpnExpUv
+     *
+     * @return $this
+     */
+    public function setCvsCpnExpUv($cvsCpnExpUv)
+    {
+        $this->container['cvsCpnExpUv'] = $cvsCpnExpUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsCpnExpDuration
+     *
+     * @return double|mixed
+     */
+    public function getCvsCpnExpDuration()
+    {
+        return $this->container['cvsCpnExpDuration'];
+    }
+
+    /**
+     * Sets cvsCpnExpDuration
+     *
+     * @param double|mixed $cvsCpnExpDuration cvsCpnExpDuration
+     *
+     * @return $this
+     */
+    public function setCvsCpnExpDuration($cvsCpnExpDuration)
+    {
+        $this->container['cvsCpnExpDuration'] = $cvsCpnExpDuration;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsCpnBtnClkPv
+     *
+     * @return int|mixed
+     */
+    public function getCvsCpnBtnClkPv()
+    {
+        return $this->container['cvsCpnBtnClkPv'];
+    }
+
+    /**
+     * Sets cvsCpnBtnClkPv
+     *
+     * @param int|mixed $cvsCpnBtnClkPv cvsCpnBtnClkPv
+     *
+     * @return $this
+     */
+    public function setCvsCpnBtnClkPv($cvsCpnBtnClkPv)
+    {
+        $this->container['cvsCpnBtnClkPv'] = $cvsCpnBtnClkPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsCpnBtnClkUv
+     *
+     * @return int|mixed
+     */
+    public function getCvsCpnBtnClkUv()
+    {
+        return $this->container['cvsCpnBtnClkUv'];
+    }
+
+    /**
+     * Sets cvsCpnBtnClkUv
+     *
+     * @param int|mixed $cvsCpnBtnClkUv cvsCpnBtnClkUv
+     *
+     * @return $this
+     */
+    public function setCvsCpnBtnClkUv($cvsCpnBtnClkUv)
+    {
+        $this->container['cvsCpnBtnClkUv'] = $cvsCpnBtnClkUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsCpnClkDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getCvsCpnClkDedupPv()
+    {
+        return $this->container['cvsCpnClkDedupPv'];
+    }
+
+    /**
+     * Sets cvsCpnClkDedupPv
+     *
+     * @param int|mixed $cvsCpnClkDedupPv cvsCpnClkDedupPv
+     *
+     * @return $this
+     */
+    public function setCvsCpnClkDedupPv($cvsCpnClkDedupPv)
+    {
+        $this->container['cvsCpnClkDedupPv'] = $cvsCpnClkDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsCpnVideoPlayPv
+     *
+     * @return int|mixed
+     */
+    public function getCvsCpnVideoPlayPv()
+    {
+        return $this->container['cvsCpnVideoPlayPv'];
+    }
+
+    /**
+     * Sets cvsCpnVideoPlayPv
+     *
+     * @param int|mixed $cvsCpnVideoPlayPv cvsCpnVideoPlayPv
+     *
+     * @return $this
+     */
+    public function setCvsCpnVideoPlayPv($cvsCpnVideoPlayPv)
+    {
+        $this->container['cvsCpnVideoPlayPv'] = $cvsCpnVideoPlayPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsCpnVideoPlayUv
+     *
+     * @return int|mixed
+     */
+    public function getCvsCpnVideoPlayUv()
+    {
+        return $this->container['cvsCpnVideoPlayUv'];
+    }
+
+    /**
+     * Sets cvsCpnVideoPlayUv
+     *
+     * @param int|mixed $cvsCpnVideoPlayUv cvsCpnVideoPlayUv
+     *
+     * @return $this
+     */
+    public function setCvsCpnVideoPlayUv($cvsCpnVideoPlayUv)
+    {
+        $this->container['cvsCpnVideoPlayUv'] = $cvsCpnVideoPlayUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsCpnVideoPlayDuration
+     *
+     * @return double|mixed
+     */
+    public function getCvsCpnVideoPlayDuration()
+    {
+        return $this->container['cvsCpnVideoPlayDuration'];
+    }
+
+    /**
+     * Sets cvsCpnVideoPlayDuration
+     *
+     * @param double|mixed $cvsCpnVideoPlayDuration cvsCpnVideoPlayDuration
+     *
+     * @return $this
+     */
+    public function setCvsCpnVideoPlayDuration($cvsCpnVideoPlayDuration)
+    {
+        $this->container['cvsCpnVideoPlayDuration'] = $cvsCpnVideoPlayDuration;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsCpnVideoPlayHalfUv
+     *
+     * @return int|mixed
+     */
+    public function getCvsCpnVideoPlayHalfUv()
+    {
+        return $this->container['cvsCpnVideoPlayHalfUv'];
+    }
+
+    /**
+     * Sets cvsCpnVideoPlayHalfUv
+     *
+     * @param int|mixed $cvsCpnVideoPlayHalfUv cvsCpnVideoPlayHalfUv
+     *
+     * @return $this
+     */
+    public function setCvsCpnVideoPlayHalfUv($cvsCpnVideoPlayHalfUv)
+    {
+        $this->container['cvsCpnVideoPlayHalfUv'] = $cvsCpnVideoPlayHalfUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsCpnVideoPlayFinUv
+     *
+     * @return int|mixed
+     */
+    public function getCvsCpnVideoPlayFinUv()
+    {
+        return $this->container['cvsCpnVideoPlayFinUv'];
+    }
+
+    /**
+     * Sets cvsCpnVideoPlayFinUv
+     *
+     * @param int|mixed $cvsCpnVideoPlayFinUv cvsCpnVideoPlayFinUv
+     *
+     * @return $this
+     */
+    public function setCvsCpnVideoPlayFinUv($cvsCpnVideoPlayFinUv)
+    {
+        $this->container['cvsCpnVideoPlayFinUv'] = $cvsCpnVideoPlayFinUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsCpnMediaPlayPv
+     *
+     * @return int|mixed
+     */
+    public function getCvsCpnMediaPlayPv()
+    {
+        return $this->container['cvsCpnMediaPlayPv'];
+    }
+
+    /**
+     * Sets cvsCpnMediaPlayPv
+     *
+     * @param int|mixed $cvsCpnMediaPlayPv cvsCpnMediaPlayPv
+     *
+     * @return $this
+     */
+    public function setCvsCpnMediaPlayPv($cvsCpnMediaPlayPv)
+    {
+        $this->container['cvsCpnMediaPlayPv'] = $cvsCpnMediaPlayPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsCpnMediaPlayUv
+     *
+     * @return int|mixed
+     */
+    public function getCvsCpnMediaPlayUv()
+    {
+        return $this->container['cvsCpnMediaPlayUv'];
+    }
+
+    /**
+     * Sets cvsCpnMediaPlayUv
+     *
+     * @param int|mixed $cvsCpnMediaPlayUv cvsCpnMediaPlayUv
+     *
+     * @return $this
+     */
+    public function setCvsCpnMediaPlayUv($cvsCpnMediaPlayUv)
+    {
+        $this->container['cvsCpnMediaPlayUv'] = $cvsCpnMediaPlayUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsCpnMediaPlayDuration
+     *
+     * @return double|mixed
+     */
+    public function getCvsCpnMediaPlayDuration()
+    {
+        return $this->container['cvsCpnMediaPlayDuration'];
+    }
+
+    /**
+     * Sets cvsCpnMediaPlayDuration
+     *
+     * @param double|mixed $cvsCpnMediaPlayDuration cvsCpnMediaPlayDuration
+     *
+     * @return $this
+     */
+    public function setCvsCpnMediaPlayDuration($cvsCpnMediaPlayDuration)
+    {
+        $this->container['cvsCpnMediaPlayDuration'] = $cvsCpnMediaPlayDuration;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsCpnMediaPlayHalfUv
+     *
+     * @return int|mixed
+     */
+    public function getCvsCpnMediaPlayHalfUv()
+    {
+        return $this->container['cvsCpnMediaPlayHalfUv'];
+    }
+
+    /**
+     * Sets cvsCpnMediaPlayHalfUv
+     *
+     * @param int|mixed $cvsCpnMediaPlayHalfUv cvsCpnMediaPlayHalfUv
+     *
+     * @return $this
+     */
+    public function setCvsCpnMediaPlayHalfUv($cvsCpnMediaPlayHalfUv)
+    {
+        $this->container['cvsCpnMediaPlayHalfUv'] = $cvsCpnMediaPlayHalfUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsCpnMediaPlayFinUv
+     *
+     * @return int|mixed
+     */
+    public function getCvsCpnMediaPlayFinUv()
+    {
+        return $this->container['cvsCpnMediaPlayFinUv'];
+    }
+
+    /**
+     * Sets cvsCpnMediaPlayFinUv
+     *
+     * @param int|mixed $cvsCpnMediaPlayFinUv cvsCpnMediaPlayFinUv
+     *
+     * @return $this
+     */
+    public function setCvsCpnMediaPlayFinUv($cvsCpnMediaPlayFinUv)
+    {
+        $this->container['cvsCpnMediaPlayFinUv'] = $cvsCpnMediaPlayFinUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets avgCvsViewtime
+     *
+     * @return double|mixed
+     */
+    public function getAvgCvsViewtime()
+    {
+        return $this->container['avgCvsViewtime'];
+    }
+
+    /**
+     * Sets avgCvsViewtime
+     *
+     * @param double|mixed $avgCvsViewtime avgCvsViewtime
+     *
+     * @return $this
+     */
+    public function setAvgCvsViewtime($avgCvsViewtime)
+    {
+        $this->container['avgCvsViewtime'] = $avgCvsViewtime;
+
+        return $this;
+    }
+
+    /**
+     * Gets avgCpnexpViewtime
+     *
+     * @return double|mixed
+     */
+    public function getAvgCpnexpViewtime()
+    {
+        return $this->container['avgCpnexpViewtime'];
+    }
+
+    /**
+     * Sets avgCpnexpViewtime
+     *
+     * @param double|mixed $avgCpnexpViewtime avgCpnexpViewtime
+     *
+     * @return $this
+     */
+    public function setAvgCpnexpViewtime($avgCpnexpViewtime)
+    {
+        $this->container['avgCpnexpViewtime'] = $avgCpnexpViewtime;
+
+        return $this;
+    }
+
+    /**
+     * Gets avgCpnplayVideoTime
+     *
+     * @return double|mixed
+     */
+    public function getAvgCpnplayVideoTime()
+    {
+        return $this->container['avgCpnplayVideoTime'];
+    }
+
+    /**
+     * Sets avgCpnplayVideoTime
+     *
+     * @param double|mixed $avgCpnplayVideoTime avgCpnplayVideoTime
+     *
+     * @return $this
+     */
+    public function setAvgCpnplayVideoTime($avgCpnplayVideoTime)
+    {
+        $this->container['avgCpnplayVideoTime'] = $avgCpnplayVideoTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets avgCpnplayMediaTime
+     *
+     * @return double|mixed
+     */
+    public function getAvgCpnplayMediaTime()
+    {
+        return $this->container['avgCpnplayMediaTime'];
+    }
+
+    /**
+     * Sets avgCpnplayMediaTime
+     *
+     * @param double|mixed $avgCpnplayMediaTime avgCpnplayMediaTime
+     *
+     * @return $this
+     */
+    public function setAvgCpnplayMediaTime($avgCpnplayMediaTime)
+    {
+        $this->container['avgCpnplayMediaTime'] = $avgCpnplayMediaTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets cpnclkButtonPvRate
+     *
+     * @return double|mixed
+     */
+    public function getCpnclkButtonPvRate()
+    {
+        return $this->container['cpnclkButtonPvRate'];
+    }
+
+    /**
+     * Sets cpnclkButtonPvRate
+     *
+     * @param double|mixed $cpnclkButtonPvRate cpnclkButtonPvRate
+     *
+     * @return $this
+     */
+    public function setCpnclkButtonPvRate($cpnclkButtonPvRate)
+    {
+        $this->container['cpnclkButtonPvRate'] = $cpnclkButtonPvRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets cpnplayVideoAndMediaPv
+     *
+     * @return int|mixed
+     */
+    public function getCpnplayVideoAndMediaPv()
+    {
+        return $this->container['cpnplayVideoAndMediaPv'];
+    }
+
+    /**
+     * Sets cpnplayVideoAndMediaPv
+     *
+     * @param int|mixed $cpnplayVideoAndMediaPv cpnplayVideoAndMediaPv
+     *
+     * @return $this
+     */
+    public function setCpnplayVideoAndMediaPv($cpnplayVideoAndMediaPv)
+    {
+        $this->container['cpnplayVideoAndMediaPv'] = $cpnplayVideoAndMediaPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cpnplayVideoAndMediaUv
+     *
+     * @return int|mixed
+     */
+    public function getCpnplayVideoAndMediaUv()
+    {
+        return $this->container['cpnplayVideoAndMediaUv'];
+    }
+
+    /**
+     * Sets cpnplayVideoAndMediaUv
+     *
+     * @param int|mixed $cpnplayVideoAndMediaUv cpnplayVideoAndMediaUv
+     *
+     * @return $this
+     */
+    public function setCpnplayVideoAndMediaUv($cpnplayVideoAndMediaUv)
+    {
+        $this->container['cpnplayVideoAndMediaUv'] = $cpnplayVideoAndMediaUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cpnplayVideoAndMediaFinUv
+     *
+     * @return int|mixed
+     */
+    public function getCpnplayVideoAndMediaFinUv()
+    {
+        return $this->container['cpnplayVideoAndMediaFinUv'];
+    }
+
+    /**
+     * Sets cpnplayVideoAndMediaFinUv
+     *
+     * @param int|mixed $cpnplayVideoAndMediaFinUv cpnplayVideoAndMediaFinUv
+     *
+     * @return $this
+     */
+    public function setCpnplayVideoAndMediaFinUv($cpnplayVideoAndMediaFinUv)
+    {
+        $this->container['cpnplayVideoAndMediaFinUv'] = $cpnplayVideoAndMediaFinUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cpnplayVideoAndMediaTime
+     *
+     * @return double|mixed
+     */
+    public function getCpnplayVideoAndMediaTime()
+    {
+        return $this->container['cpnplayVideoAndMediaTime'];
+    }
+
+    /**
+     * Sets cpnplayVideoAndMediaTime
+     *
+     * @param double|mixed $cpnplayVideoAndMediaTime cpnplayVideoAndMediaTime
+     *
+     * @return $this
+     */
+    public function setCpnplayVideoAndMediaTime($cpnplayVideoAndMediaTime)
+    {
+        $this->container['cpnplayVideoAndMediaTime'] = $cpnplayVideoAndMediaTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets avgCpnplayVideoAndMediaTime
+     *
+     * @return double|mixed
+     */
+    public function getAvgCpnplayVideoAndMediaTime()
+    {
+        return $this->container['avgCpnplayVideoAndMediaTime'];
+    }
+
+    /**
+     * Sets avgCpnplayVideoAndMediaTime
+     *
+     * @param double|mixed $avgCpnplayVideoAndMediaTime avgCpnplayVideoAndMediaTime
+     *
+     * @return $this
+     */
+    public function setAvgCpnplayVideoAndMediaTime($avgCpnplayVideoAndMediaTime)
+    {
+        $this->container['avgCpnplayVideoAndMediaTime'] = $avgCpnplayVideoAndMediaTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets canvasHbSingleReceiveExpPv
+     *
+     * @return int|mixed
+     */
+    public function getCanvasHbSingleReceiveExpPv()
+    {
+        return $this->container['canvasHbSingleReceiveExpPv'];
+    }
+
+    /**
+     * Sets canvasHbSingleReceiveExpPv
+     *
+     * @param int|mixed $canvasHbSingleReceiveExpPv canvasHbSingleReceiveExpPv
+     *
+     * @return $this
+     */
+    public function setCanvasHbSingleReceiveExpPv($canvasHbSingleReceiveExpPv)
+    {
+        $this->container['canvasHbSingleReceiveExpPv'] = $canvasHbSingleReceiveExpPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets canvasHbSingleSendExpPv
+     *
+     * @return int|mixed
+     */
+    public function getCanvasHbSingleSendExpPv()
+    {
+        return $this->container['canvasHbSingleSendExpPv'];
+    }
+
+    /**
+     * Sets canvasHbSingleSendExpPv
+     *
+     * @param int|mixed $canvasHbSingleSendExpPv canvasHbSingleSendExpPv
+     *
+     * @return $this
+     */
+    public function setCanvasHbSingleSendExpPv($canvasHbSingleSendExpPv)
+    {
+        $this->container['canvasHbSingleSendExpPv'] = $canvasHbSingleSendExpPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets canvasHbDoubleReceiveExpPv
+     *
+     * @return int|mixed
+     */
+    public function getCanvasHbDoubleReceiveExpPv()
+    {
+        return $this->container['canvasHbDoubleReceiveExpPv'];
+    }
+
+    /**
+     * Sets canvasHbDoubleReceiveExpPv
+     *
+     * @param int|mixed $canvasHbDoubleReceiveExpPv canvasHbDoubleReceiveExpPv
+     *
+     * @return $this
+     */
+    public function setCanvasHbDoubleReceiveExpPv($canvasHbDoubleReceiveExpPv)
+    {
+        $this->container['canvasHbDoubleReceiveExpPv'] = $canvasHbDoubleReceiveExpPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets canvasHbDoubleSendExpPv
+     *
+     * @return int|mixed
+     */
+    public function getCanvasHbDoubleSendExpPv()
+    {
+        return $this->container['canvasHbDoubleSendExpPv'];
+    }
+
+    /**
+     * Sets canvasHbDoubleSendExpPv
+     *
+     * @param int|mixed $canvasHbDoubleSendExpPv canvasHbDoubleSendExpPv
+     *
+     * @return $this
+     */
+    public function setCanvasHbDoubleSendExpPv($canvasHbDoubleSendExpPv)
+    {
+        $this->container['canvasHbDoubleSendExpPv'] = $canvasHbDoubleSendExpPv;
+
+        return $this;
+    }
+
+    /**
      * Gets hour
      *
      * @return int|mixed
@@ -21603,78 +22695,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setDevice($device)
     {
         $this->container['device'] = $device;
-
-        return $this;
-    }
-
-    /**
-     * Gets expAvgRank
-     *
-     * @return double|mixed
-     */
-    public function getExpAvgRank()
-    {
-        return $this->container['expAvgRank'];
-    }
-
-    /**
-     * Sets expAvgRank
-     *
-     * @param double|mixed $expAvgRank expAvgRank
-     *
-     * @return $this
-     */
-    public function setExpAvgRank($expAvgRank)
-    {
-        $this->container['expAvgRank'] = $expAvgRank;
-
-        return $this;
-    }
-
-    /**
-     * Gets expOverallTopPv
-     *
-     * @return int|mixed
-     */
-    public function getExpOverallTopPv()
-    {
-        return $this->container['expOverallTopPv'];
-    }
-
-    /**
-     * Sets expOverallTopPv
-     *
-     * @param int|mixed $expOverallTopPv expOverallTopPv
-     *
-     * @return $this
-     */
-    public function setExpOverallTopPv($expOverallTopPv)
-    {
-        $this->container['expOverallTopPv'] = $expOverallTopPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets clkTopPv
-     *
-     * @return int|mixed
-     */
-    public function getClkTopPv()
-    {
-        return $this->container['clkTopPv'];
-    }
-
-    /**
-     * Sets clkTopPv
-     *
-     * @param int|mixed $clkTopPv clkTopPv
-     *
-     * @return $this
-     */
-    public function setClkTopPv($clkTopPv)
-    {
-        $this->container['clkTopPv'] = $clkTopPv;
 
         return $this;
     }

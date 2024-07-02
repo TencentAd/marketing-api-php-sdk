@@ -76,7 +76,12 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDateSpec' => '\TencentAds\Model\V3\UpdateAdgroupDateItem[]',
         'updateAdgroupBidAmountSpec' => '\TencentAds\Model\V3\UpdateAdgroupBidAmountItem[]',
         'updateAdgroupBindRtaPolicySpec' => '\TencentAds\Model\V3\UpdateAdgroupBindRtaPolicyItem[]',
-        'updateAdcreativeObjectCommentFlagSpec' => '\TencentAds\Model\V3\UpdateAdcreativeObjectCommentFlagItem[]'
+        'updateAdcreativeObjectCommentFlagSpec' => '\TencentAds\Model\V3\UpdateAdcreativeObjectCommentFlagItem[]',
+        'updateDynamicCreativeConfiguredStatusSpec' => '\TencentAds\Model\V3\UpdateDynamicCreativeConfiguredStatusItem[]',
+        'deleteDynamicCreativeSpec' => '\TencentAds\Model\V3\DeleteDynamicCreativeItem[]',
+        'processUserPageObjectSpec' => '\TencentAds\Model\V3\ProcessUserPageObjectItem[]',
+        'createScheduledUpdateAdgroupDailyBudgetSpec' => '\TencentAds\Model\V3\CreateScheduledUpdateAdgroupDailyBudgetItem[]',
+        'deleteScheduledTaskSpec' => '\TencentAds\Model\V3\DeleteScheduledTaskItem[]'
     ];
 
     /**
@@ -103,7 +108,12 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDateSpec' => null,
         'updateAdgroupBidAmountSpec' => null,
         'updateAdgroupBindRtaPolicySpec' => null,
-        'updateAdcreativeObjectCommentFlagSpec' => null
+        'updateAdcreativeObjectCommentFlagSpec' => null,
+        'updateDynamicCreativeConfiguredStatusSpec' => null,
+        'deleteDynamicCreativeSpec' => null,
+        'processUserPageObjectSpec' => null,
+        'createScheduledUpdateAdgroupDailyBudgetSpec' => null,
+        'deleteScheduledTaskSpec' => null
     ];
 
     /**
@@ -151,7 +161,12 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDateSpec' => 'update_adgroup_date_spec',
         'updateAdgroupBidAmountSpec' => 'update_adgroup_bid_amount_spec',
         'updateAdgroupBindRtaPolicySpec' => 'update_adgroup_bind_rta_policy_spec',
-        'updateAdcreativeObjectCommentFlagSpec' => 'update_adcreative_object_comment_flag_spec'
+        'updateAdcreativeObjectCommentFlagSpec' => 'update_adcreative_object_comment_flag_spec',
+        'updateDynamicCreativeConfiguredStatusSpec' => 'update_dynamic_creative_configured_status_spec',
+        'deleteDynamicCreativeSpec' => 'delete_dynamic_creative_spec',
+        'processUserPageObjectSpec' => 'process_user_page_object_spec',
+        'createScheduledUpdateAdgroupDailyBudgetSpec' => 'create_scheduled_update_adgroup_daily_budget_spec',
+        'deleteScheduledTaskSpec' => 'delete_scheduled_task_spec'
     ];
 
     /**
@@ -178,7 +193,12 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDateSpec' => 'setUpdateAdgroupDateSpec',
         'updateAdgroupBidAmountSpec' => 'setUpdateAdgroupBidAmountSpec',
         'updateAdgroupBindRtaPolicySpec' => 'setUpdateAdgroupBindRtaPolicySpec',
-        'updateAdcreativeObjectCommentFlagSpec' => 'setUpdateAdcreativeObjectCommentFlagSpec'
+        'updateAdcreativeObjectCommentFlagSpec' => 'setUpdateAdcreativeObjectCommentFlagSpec',
+        'updateDynamicCreativeConfiguredStatusSpec' => 'setUpdateDynamicCreativeConfiguredStatusSpec',
+        'deleteDynamicCreativeSpec' => 'setDeleteDynamicCreativeSpec',
+        'processUserPageObjectSpec' => 'setProcessUserPageObjectSpec',
+        'createScheduledUpdateAdgroupDailyBudgetSpec' => 'setCreateScheduledUpdateAdgroupDailyBudgetSpec',
+        'deleteScheduledTaskSpec' => 'setDeleteScheduledTaskSpec'
     ];
 
     /**
@@ -205,7 +225,12 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDateSpec' => 'getUpdateAdgroupDateSpec',
         'updateAdgroupBidAmountSpec' => 'getUpdateAdgroupBidAmountSpec',
         'updateAdgroupBindRtaPolicySpec' => 'getUpdateAdgroupBindRtaPolicySpec',
-        'updateAdcreativeObjectCommentFlagSpec' => 'getUpdateAdcreativeObjectCommentFlagSpec'
+        'updateAdcreativeObjectCommentFlagSpec' => 'getUpdateAdcreativeObjectCommentFlagSpec',
+        'updateDynamicCreativeConfiguredStatusSpec' => 'getUpdateDynamicCreativeConfiguredStatusSpec',
+        'deleteDynamicCreativeSpec' => 'getDeleteDynamicCreativeSpec',
+        'processUserPageObjectSpec' => 'getProcessUserPageObjectSpec',
+        'createScheduledUpdateAdgroupDailyBudgetSpec' => 'getCreateScheduledUpdateAdgroupDailyBudgetSpec',
+        'deleteScheduledTaskSpec' => 'getDeleteScheduledTaskSpec'
     ];
 
     /**
@@ -287,6 +312,11 @@ class TaskSpec implements ModelInterface, ArrayAccess
         $this->container['updateAdgroupBidAmountSpec'] = isset($data['updateAdgroupBidAmountSpec']) ? $data['updateAdgroupBidAmountSpec'] : null;
         $this->container['updateAdgroupBindRtaPolicySpec'] = isset($data['updateAdgroupBindRtaPolicySpec']) ? $data['updateAdgroupBindRtaPolicySpec'] : null;
         $this->container['updateAdcreativeObjectCommentFlagSpec'] = isset($data['updateAdcreativeObjectCommentFlagSpec']) ? $data['updateAdcreativeObjectCommentFlagSpec'] : null;
+        $this->container['updateDynamicCreativeConfiguredStatusSpec'] = isset($data['updateDynamicCreativeConfiguredStatusSpec']) ? $data['updateDynamicCreativeConfiguredStatusSpec'] : null;
+        $this->container['deleteDynamicCreativeSpec'] = isset($data['deleteDynamicCreativeSpec']) ? $data['deleteDynamicCreativeSpec'] : null;
+        $this->container['processUserPageObjectSpec'] = isset($data['processUserPageObjectSpec']) ? $data['processUserPageObjectSpec'] : null;
+        $this->container['createScheduledUpdateAdgroupDailyBudgetSpec'] = isset($data['createScheduledUpdateAdgroupDailyBudgetSpec']) ? $data['createScheduledUpdateAdgroupDailyBudgetSpec'] : null;
+        $this->container['deleteScheduledTaskSpec'] = isset($data['deleteScheduledTaskSpec']) ? $data['deleteScheduledTaskSpec'] : null;
     }
 
     /**
@@ -765,6 +795,126 @@ class TaskSpec implements ModelInterface, ArrayAccess
     public function setUpdateAdcreativeObjectCommentFlagSpec($updateAdcreativeObjectCommentFlagSpec)
     {
         $this->container['updateAdcreativeObjectCommentFlagSpec'] = $updateAdcreativeObjectCommentFlagSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets updateDynamicCreativeConfiguredStatusSpec
+     *
+     * @return \TencentAds\Model\V3\UpdateDynamicCreativeConfiguredStatusItem[]|mixed
+     */
+    public function getUpdateDynamicCreativeConfiguredStatusSpec()
+    {
+        return $this->container['updateDynamicCreativeConfiguredStatusSpec'];
+    }
+
+    /**
+     * Sets updateDynamicCreativeConfiguredStatusSpec
+     *
+     * @param \TencentAds\Model\V3\UpdateDynamicCreativeConfiguredStatusItem[]|mixed $updateDynamicCreativeConfiguredStatusSpec updateDynamicCreativeConfiguredStatusSpec
+     *
+     * @return $this
+     */
+    public function setUpdateDynamicCreativeConfiguredStatusSpec($updateDynamicCreativeConfiguredStatusSpec)
+    {
+        $this->container['updateDynamicCreativeConfiguredStatusSpec'] = $updateDynamicCreativeConfiguredStatusSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets deleteDynamicCreativeSpec
+     *
+     * @return \TencentAds\Model\V3\DeleteDynamicCreativeItem[]|mixed
+     */
+    public function getDeleteDynamicCreativeSpec()
+    {
+        return $this->container['deleteDynamicCreativeSpec'];
+    }
+
+    /**
+     * Sets deleteDynamicCreativeSpec
+     *
+     * @param \TencentAds\Model\V3\DeleteDynamicCreativeItem[]|mixed $deleteDynamicCreativeSpec deleteDynamicCreativeSpec
+     *
+     * @return $this
+     */
+    public function setDeleteDynamicCreativeSpec($deleteDynamicCreativeSpec)
+    {
+        $this->container['deleteDynamicCreativeSpec'] = $deleteDynamicCreativeSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets processUserPageObjectSpec
+     *
+     * @return \TencentAds\Model\V3\ProcessUserPageObjectItem[]|mixed
+     */
+    public function getProcessUserPageObjectSpec()
+    {
+        return $this->container['processUserPageObjectSpec'];
+    }
+
+    /**
+     * Sets processUserPageObjectSpec
+     *
+     * @param \TencentAds\Model\V3\ProcessUserPageObjectItem[]|mixed $processUserPageObjectSpec processUserPageObjectSpec
+     *
+     * @return $this
+     */
+    public function setProcessUserPageObjectSpec($processUserPageObjectSpec)
+    {
+        $this->container['processUserPageObjectSpec'] = $processUserPageObjectSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets createScheduledUpdateAdgroupDailyBudgetSpec
+     *
+     * @return \TencentAds\Model\V3\CreateScheduledUpdateAdgroupDailyBudgetItem[]|mixed
+     */
+    public function getCreateScheduledUpdateAdgroupDailyBudgetSpec()
+    {
+        return $this->container['createScheduledUpdateAdgroupDailyBudgetSpec'];
+    }
+
+    /**
+     * Sets createScheduledUpdateAdgroupDailyBudgetSpec
+     *
+     * @param \TencentAds\Model\V3\CreateScheduledUpdateAdgroupDailyBudgetItem[]|mixed $createScheduledUpdateAdgroupDailyBudgetSpec createScheduledUpdateAdgroupDailyBudgetSpec
+     *
+     * @return $this
+     */
+    public function setCreateScheduledUpdateAdgroupDailyBudgetSpec($createScheduledUpdateAdgroupDailyBudgetSpec)
+    {
+        $this->container['createScheduledUpdateAdgroupDailyBudgetSpec'] = $createScheduledUpdateAdgroupDailyBudgetSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets deleteScheduledTaskSpec
+     *
+     * @return \TencentAds\Model\V3\DeleteScheduledTaskItem[]|mixed
+     */
+    public function getDeleteScheduledTaskSpec()
+    {
+        return $this->container['deleteScheduledTaskSpec'];
+    }
+
+    /**
+     * Sets deleteScheduledTaskSpec
+     *
+     * @param \TencentAds\Model\V3\DeleteScheduledTaskItem[]|mixed $deleteScheduledTaskSpec deleteScheduledTaskSpec
+     *
+     * @return $this
+     */
+    public function setDeleteScheduledTaskSpec($deleteScheduledTaskSpec)
+    {
+        $this->container['deleteScheduledTaskSpec'] = $deleteScheduledTaskSpec;
 
         return $this;
     }

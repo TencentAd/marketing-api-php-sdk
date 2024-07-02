@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * ProductSaleStatus Class Doc Comment
  *
  * @category Class
- * @description 商品状态
+ * @description 商品在线状态
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

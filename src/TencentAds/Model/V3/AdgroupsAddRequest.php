@@ -110,7 +110,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => '\TencentAds\Model\V3\ShortPlayPayType',
         'sellStrategyId' => 'int',
         'dynamicAdType' => '\TencentAds\Model\V3\DynamicAdType',
-        'ogCompletionType' => '\TencentAds\Model\V3\OgCompletionType'
+        'ogCompletionType' => '\TencentAds\Model\V3\OgCompletionType',
+        'cloudUnionSpec' => '\TencentAds\Model\V3\CloudUnionSpec'
     ];
 
     /**
@@ -172,7 +173,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => null,
         'sellStrategyId' => 'int64',
         'dynamicAdType' => null,
-        'ogCompletionType' => null
+        'ogCompletionType' => null,
+        'cloudUnionSpec' => null
     ];
 
     /**
@@ -255,7 +257,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => 'short_play_pay_type',
         'sellStrategyId' => 'sell_strategy_id',
         'dynamicAdType' => 'dynamic_ad_type',
-        'ogCompletionType' => 'og_completion_type'
+        'ogCompletionType' => 'og_completion_type',
+        'cloudUnionSpec' => 'cloud_union_spec'
     ];
 
     /**
@@ -317,7 +320,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => 'setShortPlayPayType',
         'sellStrategyId' => 'setSellStrategyId',
         'dynamicAdType' => 'setDynamicAdType',
-        'ogCompletionType' => 'setOgCompletionType'
+        'ogCompletionType' => 'setOgCompletionType',
+        'cloudUnionSpec' => 'setCloudUnionSpec'
     ];
 
     /**
@@ -379,7 +383,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => 'getShortPlayPayType',
         'sellStrategyId' => 'getSellStrategyId',
         'dynamicAdType' => 'getDynamicAdType',
-        'ogCompletionType' => 'getOgCompletionType'
+        'ogCompletionType' => 'getOgCompletionType',
+        'cloudUnionSpec' => 'getCloudUnionSpec'
     ];
 
     /**
@@ -496,6 +501,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['sellStrategyId'] = isset($data['sellStrategyId']) ? $data['sellStrategyId'] : null;
         $this->container['dynamicAdType'] = isset($data['dynamicAdType']) ? $data['dynamicAdType'] : null;
         $this->container['ogCompletionType'] = isset($data['ogCompletionType']) ? $data['ogCompletionType'] : null;
+        $this->container['cloudUnionSpec'] = isset($data['cloudUnionSpec']) ? $data['cloudUnionSpec'] : null;
     }
 
     /**
@@ -1814,6 +1820,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setOgCompletionType($ogCompletionType)
     {
         $this->container['ogCompletionType'] = $ogCompletionType;
+
+        return $this;
+    }
+
+    /**
+     * Gets cloudUnionSpec
+     *
+     * @return \TencentAds\Model\V3\CloudUnionSpec|mixed
+     */
+    public function getCloudUnionSpec()
+    {
+        return $this->container['cloudUnionSpec'];
+    }
+
+    /**
+     * Sets cloudUnionSpec
+     *
+     * @param \TencentAds\Model\V3\CloudUnionSpec|mixed $cloudUnionSpec cloudUnionSpec
+     *
+     * @return $this
+     */
+    public function setCloudUnionSpec($cloudUnionSpec)
+    {
+        $this->container['cloudUnionSpec'] = $cloudUnionSpec;
 
         return $this;
     }

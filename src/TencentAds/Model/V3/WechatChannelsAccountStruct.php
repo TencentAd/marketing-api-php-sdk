@@ -61,7 +61,9 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         'wechatChannelsAccountId' => 'string',
         'wechatChannelsAccountName' => 'string',
         'createdTime' => 'int',
-        'lastModifiedTime' => 'int'
+        'lastModifiedTime' => 'int',
+        'wechatChannelsSpamBlock' => 'bool',
+        'wechatChannelsSpamSlient' => 'bool'
     ];
 
     /**
@@ -73,7 +75,9 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         'wechatChannelsAccountId' => null,
         'wechatChannelsAccountName' => null,
         'createdTime' => 'int64',
-        'lastModifiedTime' => 'int64'
+        'lastModifiedTime' => 'int64',
+        'wechatChannelsSpamBlock' => null,
+        'wechatChannelsSpamSlient' => null
     ];
 
     /**
@@ -106,7 +110,9 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         'wechatChannelsAccountId' => 'wechat_channels_account_id',
         'wechatChannelsAccountName' => 'wechat_channels_account_name',
         'createdTime' => 'created_time',
-        'lastModifiedTime' => 'last_modified_time'
+        'lastModifiedTime' => 'last_modified_time',
+        'wechatChannelsSpamBlock' => 'wechat_channels_spam_block',
+        'wechatChannelsSpamSlient' => 'wechat_channels_spam_slient'
     ];
 
     /**
@@ -118,7 +124,9 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         'wechatChannelsAccountId' => 'setWechatChannelsAccountId',
         'wechatChannelsAccountName' => 'setWechatChannelsAccountName',
         'createdTime' => 'setCreatedTime',
-        'lastModifiedTime' => 'setLastModifiedTime'
+        'lastModifiedTime' => 'setLastModifiedTime',
+        'wechatChannelsSpamBlock' => 'setWechatChannelsSpamBlock',
+        'wechatChannelsSpamSlient' => 'setWechatChannelsSpamSlient'
     ];
 
     /**
@@ -130,7 +138,9 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         'wechatChannelsAccountId' => 'getWechatChannelsAccountId',
         'wechatChannelsAccountName' => 'getWechatChannelsAccountName',
         'createdTime' => 'getCreatedTime',
-        'lastModifiedTime' => 'getLastModifiedTime'
+        'lastModifiedTime' => 'getLastModifiedTime',
+        'wechatChannelsSpamBlock' => 'getWechatChannelsSpamBlock',
+        'wechatChannelsSpamSlient' => 'getWechatChannelsSpamSlient'
     ];
 
     /**
@@ -197,6 +207,8 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         $this->container['wechatChannelsAccountName'] = isset($data['wechatChannelsAccountName']) ? $data['wechatChannelsAccountName'] : null;
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
+        $this->container['wechatChannelsSpamBlock'] = isset($data['wechatChannelsSpamBlock']) ? $data['wechatChannelsSpamBlock'] : null;
+        $this->container['wechatChannelsSpamSlient'] = isset($data['wechatChannelsSpamSlient']) ? $data['wechatChannelsSpamSlient'] : null;
     }
 
     /**
@@ -315,6 +327,54 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
     public function setLastModifiedTime($lastModifiedTime)
     {
         $this->container['lastModifiedTime'] = $lastModifiedTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsSpamBlock
+     *
+     * @return bool|mixed
+     */
+    public function getWechatChannelsSpamBlock()
+    {
+        return $this->container['wechatChannelsSpamBlock'];
+    }
+
+    /**
+     * Sets wechatChannelsSpamBlock
+     *
+     * @param bool|mixed $wechatChannelsSpamBlock wechatChannelsSpamBlock
+     *
+     * @return $this
+     */
+    public function setWechatChannelsSpamBlock($wechatChannelsSpamBlock)
+    {
+        $this->container['wechatChannelsSpamBlock'] = $wechatChannelsSpamBlock;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsSpamSlient
+     *
+     * @return bool|mixed
+     */
+    public function getWechatChannelsSpamSlient()
+    {
+        return $this->container['wechatChannelsSpamSlient'];
+    }
+
+    /**
+     * Sets wechatChannelsSpamSlient
+     *
+     * @param bool|mixed $wechatChannelsSpamSlient wechatChannelsSpamSlient
+     *
+     * @return $this
+     */
+    public function setWechatChannelsSpamSlient($wechatChannelsSpamSlient)
+    {
+        $this->container['wechatChannelsSpamSlient'] = $wechatChannelsSpamSlient;
 
         return $this;
     }

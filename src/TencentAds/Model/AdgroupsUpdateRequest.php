@@ -101,6 +101,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'dynamicCreativeIdSet' => 'int[]',
         'autoDerivedLandingPageSwitch' => 'bool',
         'ecomPkamSwitch' => '\TencentAds\Model\EcomPkamSwitch',
+        'searchExpandTargetingSwitch' => '\TencentAds\Model\SearchExpandTargetingSwitch',
         'accountId' => 'int'
     ];
 
@@ -154,6 +155,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'dynamicCreativeIdSet' => 'int64',
         'autoDerivedLandingPageSwitch' => null,
         'ecomPkamSwitch' => null,
+        'searchExpandTargetingSwitch' => null,
         'accountId' => 'int64'
     ];
 
@@ -228,6 +230,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'dynamicCreativeIdSet' => 'dynamic_creative_id_set',
         'autoDerivedLandingPageSwitch' => 'auto_derived_landing_page_switch',
         'ecomPkamSwitch' => 'ecom_pkam_switch',
+        'searchExpandTargetingSwitch' => 'search_expand_targeting_switch',
         'accountId' => 'account_id'
     ];
 
@@ -281,6 +284,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'dynamicCreativeIdSet' => 'setDynamicCreativeIdSet',
         'autoDerivedLandingPageSwitch' => 'setAutoDerivedLandingPageSwitch',
         'ecomPkamSwitch' => 'setEcomPkamSwitch',
+        'searchExpandTargetingSwitch' => 'setSearchExpandTargetingSwitch',
         'accountId' => 'setAccountId'
     ];
 
@@ -334,6 +338,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'dynamicCreativeIdSet' => 'getDynamicCreativeIdSet',
         'autoDerivedLandingPageSwitch' => 'getAutoDerivedLandingPageSwitch',
         'ecomPkamSwitch' => 'getEcomPkamSwitch',
+        'searchExpandTargetingSwitch' => 'getSearchExpandTargetingSwitch',
         'accountId' => 'getAccountId'
     ];
 
@@ -441,6 +446,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['dynamicCreativeIdSet'] = isset($data['dynamicCreativeIdSet']) ? $data['dynamicCreativeIdSet'] : null;
         $this->container['autoDerivedLandingPageSwitch'] = isset($data['autoDerivedLandingPageSwitch']) ? $data['autoDerivedLandingPageSwitch'] : null;
         $this->container['ecomPkamSwitch'] = isset($data['ecomPkamSwitch']) ? $data['ecomPkamSwitch'] : null;
+        $this->container['searchExpandTargetingSwitch'] = isset($data['searchExpandTargetingSwitch']) ? $data['searchExpandTargetingSwitch'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1520,6 +1526,30 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setEcomPkamSwitch($ecomPkamSwitch)
     {
         $this->container['ecomPkamSwitch'] = $ecomPkamSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets searchExpandTargetingSwitch
+     *
+     * @return \TencentAds\Model\SearchExpandTargetingSwitch|mixed
+     */
+    public function getSearchExpandTargetingSwitch()
+    {
+        return $this->container['searchExpandTargetingSwitch'];
+    }
+
+    /**
+     * Sets searchExpandTargetingSwitch
+     *
+     * @param \TencentAds\Model\SearchExpandTargetingSwitch|mixed $searchExpandTargetingSwitch searchExpandTargetingSwitch
+     *
+     * @return $this
+     */
+    public function setSearchExpandTargetingSwitch($searchExpandTargetingSwitch)
+    {
+        $this->container['searchExpandTargetingSwitch'] = $searchExpandTargetingSwitch;
 
         return $this;
     }

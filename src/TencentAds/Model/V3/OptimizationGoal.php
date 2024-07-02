@@ -139,6 +139,9 @@ class OptimizationGoal
     const QYT_LIVE_STREAM_FANS = 'OPTIMIZATIONGOAL_QYT_LIVE_STREAM_FANS';
     const _24_H_FIRSTPAY = 'OPTIMIZATIONGOAL_24H_FIRSTPAY';
     const STORE_STAY = 'OPTIMIZATIONGOAL_STORE_STAY';
+    const LOW_PRICE_INSURANCE_PAYMENT = 'OPTIMIZATIONGOAL_LOW_PRICE_INSURANCE_PAYMENT';
+    const UNDERWRITING = 'OPTIMIZATIONGOAL_UNDERWRITING';
+    const FIRST_WITHDRAW = 'OPTIMIZATIONGOAL_FIRST_WITHDRAW';
     
     /**
      * Gets allowable values of the enum
@@ -242,6 +245,9 @@ class OptimizationGoal
             self::QYT_LIVE_STREAM_FANS,
             self::_24_H_FIRSTPAY,
             self::STORE_STAY,
+            self::LOW_PRICE_INSURANCE_PAYMENT,
+            self::UNDERWRITING,
+            self::FIRST_WITHDRAW,
         ];
     }
 }

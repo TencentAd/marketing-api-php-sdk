@@ -67,7 +67,7 @@ class ProductUpdateItem implements ModelInterface, ArrayAccess
         'stockVolume' => 'int',
         'discount' => 'double',
         'expirationTime' => 'string',
-        'productSaleStatus' => '\TencentAds\Model\V3\DpaProductSaleStatus'
+        'productSaleStatus' => '\TencentAds\Model\V3\ProductSaleStatus'
     ];
 
     /**
@@ -478,7 +478,7 @@ class ProductUpdateItem implements ModelInterface, ArrayAccess
     /**
      * Gets productSaleStatus
      *
-     * @return \TencentAds\Model\V3\DpaProductSaleStatus|mixed
+     * @return \TencentAds\Model\V3\ProductSaleStatus|mixed
      */
     public function getProductSaleStatus()
     {
@@ -488,7 +488,7 @@ class ProductUpdateItem implements ModelInterface, ArrayAccess
     /**
      * Sets productSaleStatus
      *
-     * @param \TencentAds\Model\V3\DpaProductSaleStatus|mixed $productSaleStatus productSaleStatus
+     * @param \TencentAds\Model\V3\ProductSaleStatus|mixed $productSaleStatus productSaleStatus
      *
      * @return $this
      */

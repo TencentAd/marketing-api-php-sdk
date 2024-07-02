@@ -109,6 +109,7 @@ class ComponentType
     const V2_LIST_SUBLINK = 'V2_LIST_SUBLINK';
     const V2_MDPA_TITLE = 'V2_MDPA_TITLE';
     const V2_MDPA_DESCRIPTION = 'V2_MDPA_DESCRIPTION';
+    const SEARCH_ALGORITHM_GEN = 'SEARCH_ALGORITHM_GEN';
     
     /**
      * Gets allowable values of the enum
@@ -182,6 +183,7 @@ class ComponentType
             self::V2_LIST_SUBLINK,
             self::V2_MDPA_TITLE,
             self::V2_MDPA_DESCRIPTION,
+            self::SEARCH_ALGORITHM_GEN,
         ];
     }
 }

@@ -62,6 +62,7 @@ class ConversionOptimizationGoal
     const _14_DAY_LONGTERM_PURCHASE_ROAS = 'GOAL_14DAY_LONGTERM_PURCHASE_ROAS';
     const _30_DAY_LONGTERM_PURCHASE_ROAS = 'GOAL_30DAY_LONGTERM_PURCHASE_ROAS';
     const QYT_7_DAY_LIVE_STREAM_DEAL_ROAS = 'GOAL_QYT_7DAY_LIVE_STREAM_DEAL_ROAS';
+    const WITHDRAW_DEPOSITS_ROAS = 'GOAL_WITHDRAW_DEPOSITS_ROAS';
     
     /**
      * Gets allowable values of the enum
@@ -88,6 +89,7 @@ class ConversionOptimizationGoal
             self::_14_DAY_LONGTERM_PURCHASE_ROAS,
             self::_30_DAY_LONGTERM_PURCHASE_ROAS,
             self::QYT_7_DAY_LIVE_STREAM_DEAL_ROAS,
+            self::WITHDRAW_DEPOSITS_ROAS,
         ];
     }
 }
