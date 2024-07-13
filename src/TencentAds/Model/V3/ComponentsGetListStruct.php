@@ -1,6 +1,6 @@
 <?php
 /**
- * MaterialDcatagAddRequest
+ * ComponentsGetListStruct
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MaterialDcatagAddRequest Class Doc Comment
+ * ComponentsGetListStruct Class Doc Comment
  *
  * @category Class
+ * @description 返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MaterialDcatagAddRequest implements ModelInterface, ArrayAccess
+class ComponentsGetListStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class MaterialDcatagAddRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'MaterialDcatagAddRequest';
+    protected static $swaggerModelName = 'ComponentsGetListStruct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,12 +59,13 @@ class MaterialDcatagAddRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
-        'imageList' => '\TencentAds\Model\V3\ImageItem[]',
-        'mediaList' => '\TencentAds\Model\V3\MediaItem[]',
-        'marketingAssetId' => 'int',
-        'marketingTargetType' => '\TencentAds\Model\V3\MarketingTargetType',
-        'marketingAssetOuterSpec' => '\TencentAds\Model\V3\MarketingAssetOuterSpecV1',
-        'dcatagList' => '\TencentAds\Model\V3\Dactag[]'
+        'componentId' => 'int',
+        'componentValue' => '\TencentAds\Model\V3\ComponentValue',
+        'createdTime' => 'int',
+        'lastModifiedTime' => 'int',
+        'componentSubType' => '\TencentAds\Model\V3\ComponentSubType',
+        'componentCustomName' => 'string',
+        'isDeleted' => 'bool'
     ];
 
     /**
@@ -73,12 +75,13 @@ class MaterialDcatagAddRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'accountId' => 'int64',
-        'imageList' => null,
-        'mediaList' => null,
-        'marketingAssetId' => 'int64',
-        'marketingTargetType' => null,
-        'marketingAssetOuterSpec' => null,
-        'dcatagList' => null
+        'componentId' => 'int64',
+        'componentValue' => null,
+        'createdTime' => 'int64',
+        'lastModifiedTime' => 'int64',
+        'componentSubType' => null,
+        'componentCustomName' => null,
+        'isDeleted' => null
     ];
 
     /**
@@ -109,12 +112,13 @@ class MaterialDcatagAddRequest implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'accountId' => 'account_id',
-        'imageList' => 'image_list',
-        'mediaList' => 'media_list',
-        'marketingAssetId' => 'marketing_asset_id',
-        'marketingTargetType' => 'marketing_target_type',
-        'marketingAssetOuterSpec' => 'marketing_asset_outer_spec',
-        'dcatagList' => 'dcatag_list'
+        'componentId' => 'component_id',
+        'componentValue' => 'component_value',
+        'createdTime' => 'created_time',
+        'lastModifiedTime' => 'last_modified_time',
+        'componentSubType' => 'component_sub_type',
+        'componentCustomName' => 'component_custom_name',
+        'isDeleted' => 'is_deleted'
     ];
 
     /**
@@ -124,12 +128,13 @@ class MaterialDcatagAddRequest implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'accountId' => 'setAccountId',
-        'imageList' => 'setImageList',
-        'mediaList' => 'setMediaList',
-        'marketingAssetId' => 'setMarketingAssetId',
-        'marketingTargetType' => 'setMarketingTargetType',
-        'marketingAssetOuterSpec' => 'setMarketingAssetOuterSpec',
-        'dcatagList' => 'setDcatagList'
+        'componentId' => 'setComponentId',
+        'componentValue' => 'setComponentValue',
+        'createdTime' => 'setCreatedTime',
+        'lastModifiedTime' => 'setLastModifiedTime',
+        'componentSubType' => 'setComponentSubType',
+        'componentCustomName' => 'setComponentCustomName',
+        'isDeleted' => 'setIsDeleted'
     ];
 
     /**
@@ -139,12 +144,13 @@ class MaterialDcatagAddRequest implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'accountId' => 'getAccountId',
-        'imageList' => 'getImageList',
-        'mediaList' => 'getMediaList',
-        'marketingAssetId' => 'getMarketingAssetId',
-        'marketingTargetType' => 'getMarketingTargetType',
-        'marketingAssetOuterSpec' => 'getMarketingAssetOuterSpec',
-        'dcatagList' => 'getDcatagList'
+        'componentId' => 'getComponentId',
+        'componentValue' => 'getComponentValue',
+        'createdTime' => 'getCreatedTime',
+        'lastModifiedTime' => 'getLastModifiedTime',
+        'componentSubType' => 'getComponentSubType',
+        'componentCustomName' => 'getComponentCustomName',
+        'isDeleted' => 'getIsDeleted'
     ];
 
     /**
@@ -208,12 +214,13 @@ class MaterialDcatagAddRequest implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['imageList'] = isset($data['imageList']) ? $data['imageList'] : null;
-        $this->container['mediaList'] = isset($data['mediaList']) ? $data['mediaList'] : null;
-        $this->container['marketingAssetId'] = isset($data['marketingAssetId']) ? $data['marketingAssetId'] : null;
-        $this->container['marketingTargetType'] = isset($data['marketingTargetType']) ? $data['marketingTargetType'] : null;
-        $this->container['marketingAssetOuterSpec'] = isset($data['marketingAssetOuterSpec']) ? $data['marketingAssetOuterSpec'] : null;
-        $this->container['dcatagList'] = isset($data['dcatagList']) ? $data['dcatagList'] : null;
+        $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
+        $this->container['componentValue'] = isset($data['componentValue']) ? $data['componentValue'] : null;
+        $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
+        $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
+        $this->container['componentSubType'] = isset($data['componentSubType']) ? $data['componentSubType'] : null;
+        $this->container['componentCustomName'] = isset($data['componentCustomName']) ? $data['componentCustomName'] : null;
+        $this->container['isDeleted'] = isset($data['isDeleted']) ? $data['isDeleted'] : null;
     }
 
     /**
@@ -265,145 +272,169 @@ class MaterialDcatagAddRequest implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets imageList
-     *
-     * @return \TencentAds\Model\V3\ImageItem[]|mixed
-     */
-    public function getImageList()
-    {
-        return $this->container['imageList'];
-    }
-
-    /**
-     * Sets imageList
-     *
-     * @param \TencentAds\Model\V3\ImageItem[]|mixed $imageList imageList
-     *
-     * @return $this
-     */
-    public function setImageList($imageList)
-    {
-        $this->container['imageList'] = $imageList;
-
-        return $this;
-    }
-
-    /**
-     * Gets mediaList
-     *
-     * @return \TencentAds\Model\V3\MediaItem[]|mixed
-     */
-    public function getMediaList()
-    {
-        return $this->container['mediaList'];
-    }
-
-    /**
-     * Sets mediaList
-     *
-     * @param \TencentAds\Model\V3\MediaItem[]|mixed $mediaList mediaList
-     *
-     * @return $this
-     */
-    public function setMediaList($mediaList)
-    {
-        $this->container['mediaList'] = $mediaList;
-
-        return $this;
-    }
-
-    /**
-     * Gets marketingAssetId
+     * Gets componentId
      *
      * @return int|mixed
      */
-    public function getMarketingAssetId()
+    public function getComponentId()
     {
-        return $this->container['marketingAssetId'];
+        return $this->container['componentId'];
     }
 
     /**
-     * Sets marketingAssetId
+     * Sets componentId
      *
-     * @param int|mixed $marketingAssetId marketingAssetId
+     * @param int|mixed $componentId componentId
      *
      * @return $this
      */
-    public function setMarketingAssetId($marketingAssetId)
+    public function setComponentId($componentId)
     {
-        $this->container['marketingAssetId'] = $marketingAssetId;
+        $this->container['componentId'] = $componentId;
 
         return $this;
     }
 
     /**
-     * Gets marketingTargetType
+     * Gets componentValue
      *
-     * @return \TencentAds\Model\V3\MarketingTargetType|mixed
+     * @return \TencentAds\Model\V3\ComponentValue|mixed
      */
-    public function getMarketingTargetType()
+    public function getComponentValue()
     {
-        return $this->container['marketingTargetType'];
+        return $this->container['componentValue'];
     }
 
     /**
-     * Sets marketingTargetType
+     * Sets componentValue
      *
-     * @param \TencentAds\Model\V3\MarketingTargetType|mixed $marketingTargetType marketingTargetType
+     * @param \TencentAds\Model\V3\ComponentValue|mixed $componentValue componentValue
      *
      * @return $this
      */
-    public function setMarketingTargetType($marketingTargetType)
+    public function setComponentValue($componentValue)
     {
-        $this->container['marketingTargetType'] = $marketingTargetType;
+        $this->container['componentValue'] = $componentValue;
 
         return $this;
     }
 
     /**
-     * Gets marketingAssetOuterSpec
+     * Gets createdTime
      *
-     * @return \TencentAds\Model\V3\MarketingAssetOuterSpecV1|mixed
+     * @return int|mixed
      */
-    public function getMarketingAssetOuterSpec()
+    public function getCreatedTime()
     {
-        return $this->container['marketingAssetOuterSpec'];
+        return $this->container['createdTime'];
     }
 
     /**
-     * Sets marketingAssetOuterSpec
+     * Sets createdTime
      *
-     * @param \TencentAds\Model\V3\MarketingAssetOuterSpecV1|mixed $marketingAssetOuterSpec marketingAssetOuterSpec
+     * @param int|mixed $createdTime createdTime
      *
      * @return $this
      */
-    public function setMarketingAssetOuterSpec($marketingAssetOuterSpec)
+    public function setCreatedTime($createdTime)
     {
-        $this->container['marketingAssetOuterSpec'] = $marketingAssetOuterSpec;
+        $this->container['createdTime'] = $createdTime;
 
         return $this;
     }
 
     /**
-     * Gets dcatagList
+     * Gets lastModifiedTime
      *
-     * @return \TencentAds\Model\V3\Dactag[]|mixed
+     * @return int|mixed
      */
-    public function getDcatagList()
+    public function getLastModifiedTime()
     {
-        return $this->container['dcatagList'];
+        return $this->container['lastModifiedTime'];
     }
 
     /**
-     * Sets dcatagList
+     * Sets lastModifiedTime
      *
-     * @param \TencentAds\Model\V3\Dactag[]|mixed $dcatagList dcatagList
+     * @param int|mixed $lastModifiedTime lastModifiedTime
      *
      * @return $this
      */
-    public function setDcatagList($dcatagList)
+    public function setLastModifiedTime($lastModifiedTime)
     {
-        $this->container['dcatagList'] = $dcatagList;
+        $this->container['lastModifiedTime'] = $lastModifiedTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets componentSubType
+     *
+     * @return \TencentAds\Model\V3\ComponentSubType|mixed
+     */
+    public function getComponentSubType()
+    {
+        return $this->container['componentSubType'];
+    }
+
+    /**
+     * Sets componentSubType
+     *
+     * @param \TencentAds\Model\V3\ComponentSubType|mixed $componentSubType componentSubType
+     *
+     * @return $this
+     */
+    public function setComponentSubType($componentSubType)
+    {
+        $this->container['componentSubType'] = $componentSubType;
+
+        return $this;
+    }
+
+    /**
+     * Gets componentCustomName
+     *
+     * @return string|mixed
+     */
+    public function getComponentCustomName()
+    {
+        return $this->container['componentCustomName'];
+    }
+
+    /**
+     * Sets componentCustomName
+     *
+     * @param string|mixed $componentCustomName componentCustomName
+     *
+     * @return $this
+     */
+    public function setComponentCustomName($componentCustomName)
+    {
+        $this->container['componentCustomName'] = $componentCustomName;
+
+        return $this;
+    }
+
+    /**
+     * Gets isDeleted
+     *
+     * @return bool|mixed
+     */
+    public function getIsDeleted()
+    {
+        return $this->container['isDeleted'];
+    }
+
+    /**
+     * Sets isDeleted
+     *
+     * @param bool|mixed $isDeleted isDeleted
+     *
+     * @return $this
+     */
+    public function setIsDeleted($isDeleted)
+    {
+        $this->container['isDeleted'] = $isDeleted;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * Dactag
+ * ComponentsDeleteRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * Dactag Class Doc Comment
+ * ComponentsDeleteRequest Class Doc Comment
  *
  * @category Class
- * @description 素材标签
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class Dactag implements ModelInterface, ArrayAccess
+class ComponentsDeleteRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class Dactag implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dactag';
+    protected static $swaggerModelName = 'ComponentsDeleteRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,8 @@ class Dactag implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'tagName' => 'string',
-        'tagValue' => 'string'
+        'accountId' => 'int',
+        'componentId' => 'int'
     ];
 
     /**
@@ -68,8 +67,8 @@ class Dactag implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'tagName' => null,
-        'tagValue' => null
+        'accountId' => 'int64',
+        'componentId' => 'int64'
     ];
 
     /**
@@ -99,8 +98,8 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'tagName' => 'tag_name',
-        'tagValue' => 'tag_value'
+        'accountId' => 'account_id',
+        'componentId' => 'component_id'
     ];
 
     /**
@@ -109,8 +108,8 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'tagName' => 'setTagName',
-        'tagValue' => 'setTagValue'
+        'accountId' => 'setAccountId',
+        'componentId' => 'setComponentId'
     ];
 
     /**
@@ -119,8 +118,8 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'tagName' => 'getTagName',
-        'tagValue' => 'getTagValue'
+        'accountId' => 'getAccountId',
+        'componentId' => 'getComponentId'
     ];
 
     /**
@@ -183,8 +182,8 @@ class Dactag implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['tagName'] = isset($data['tagName']) ? $data['tagName'] : null;
-        $this->container['tagValue'] = isset($data['tagValue']) ? $data['tagValue'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
     }
 
     /**
@@ -212,49 +211,49 @@ class Dactag implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets tagName
+     * Gets accountId
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getTagName()
+    public function getAccountId()
     {
-        return $this->container['tagName'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets tagName
+     * Sets accountId
      *
-     * @param string|mixed $tagName tagName
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setTagName($tagName)
+    public function setAccountId($accountId)
     {
-        $this->container['tagName'] = $tagName;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }
 
     /**
-     * Gets tagValue
+     * Gets componentId
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getTagValue()
+    public function getComponentId()
     {
-        return $this->container['tagValue'];
+        return $this->container['componentId'];
     }
 
     /**
-     * Sets tagValue
+     * Sets componentId
      *
-     * @param string|mixed $tagValue tagValue
+     * @param int|mixed $componentId componentId
      *
      * @return $this
      */
-    public function setTagValue($tagValue)
+    public function setComponentId($componentId)
     {
-        $this->container['tagValue'] = $tagValue;
+        $this->container['componentId'] = $componentId;
 
         return $this;
     }

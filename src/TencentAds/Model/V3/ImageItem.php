@@ -1,6 +1,6 @@
 <?php
 /**
- * Dactag
+ * ImageItem
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * Dactag Class Doc Comment
+ * ImageItem Class Doc Comment
  *
  * @category Class
- * @description 素材标签
+ * @description 图片素材
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class Dactag implements ModelInterface, ArrayAccess
+class ImageItem implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class Dactag implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dactag';
+    protected static $swaggerModelName = 'image_item';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,8 @@ class Dactag implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'tagName' => 'string',
-        'tagValue' => 'string'
+        'imageId' => 'int',
+        'info' => '\TencentAds\Model\V3\ImageInfoItem[]'
     ];
 
     /**
@@ -68,8 +68,8 @@ class Dactag implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'tagName' => null,
-        'tagValue' => null
+        'imageId' => 'int64',
+        'info' => null
     ];
 
     /**
@@ -99,8 +99,8 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'tagName' => 'tag_name',
-        'tagValue' => 'tag_value'
+        'imageId' => 'image_id',
+        'info' => 'info'
     ];
 
     /**
@@ -109,8 +109,8 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'tagName' => 'setTagName',
-        'tagValue' => 'setTagValue'
+        'imageId' => 'setImageId',
+        'info' => 'setInfo'
     ];
 
     /**
@@ -119,8 +119,8 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'tagName' => 'getTagName',
-        'tagValue' => 'getTagValue'
+        'imageId' => 'getImageId',
+        'info' => 'getInfo'
     ];
 
     /**
@@ -183,8 +183,8 @@ class Dactag implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['tagName'] = isset($data['tagName']) ? $data['tagName'] : null;
-        $this->container['tagValue'] = isset($data['tagValue']) ? $data['tagValue'] : null;
+        $this->container['imageId'] = isset($data['imageId']) ? $data['imageId'] : null;
+        $this->container['info'] = isset($data['info']) ? $data['info'] : null;
     }
 
     /**
@@ -212,49 +212,49 @@ class Dactag implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets tagName
+     * Gets imageId
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getTagName()
+    public function getImageId()
     {
-        return $this->container['tagName'];
+        return $this->container['imageId'];
     }
 
     /**
-     * Sets tagName
+     * Sets imageId
      *
-     * @param string|mixed $tagName tagName
+     * @param int|mixed $imageId imageId
      *
      * @return $this
      */
-    public function setTagName($tagName)
+    public function setImageId($imageId)
     {
-        $this->container['tagName'] = $tagName;
+        $this->container['imageId'] = $imageId;
 
         return $this;
     }
 
     /**
-     * Gets tagValue
+     * Gets info
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\V3\ImageInfoItem[]|mixed
      */
-    public function getTagValue()
+    public function getInfo()
     {
-        return $this->container['tagValue'];
+        return $this->container['info'];
     }
 
     /**
-     * Sets tagValue
+     * Sets info
      *
-     * @param string|mixed $tagValue tagValue
+     * @param \TencentAds\Model\V3\ImageInfoItem[]|mixed $info info
      *
      * @return $this
      */
-    public function setTagValue($tagValue)
+    public function setInfo($info)
     {
-        $this->container['tagValue'] = $tagValue;
+        $this->container['info'] = $info;
 
         return $this;
     }

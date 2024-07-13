@@ -759,7 +759,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'dynamicCreativeName' => 'string',
         'componentId' => 'int',
         'siteSet' => 'string',
-        'componentName' => 'string',
         'componentType' => 'string',
         'imageIds' => 'string',
         'videoIds' => 'string',
@@ -1521,7 +1520,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'dynamicCreativeName' => null,
         'componentId' => 'int64',
         'siteSet' => null,
-        'componentName' => null,
         'componentType' => null,
         'imageIds' => null,
         'videoIds' => null,
@@ -2304,7 +2302,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'dynamicCreativeName' => 'dynamic_creative_name',
         'componentId' => 'component_id',
         'siteSet' => 'site_set',
-        'componentName' => 'component_name',
         'componentType' => 'component_type',
         'imageIds' => 'image_ids',
         'videoIds' => 'video_ids',
@@ -3066,7 +3063,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'dynamicCreativeName' => 'setDynamicCreativeName',
         'componentId' => 'setComponentId',
         'siteSet' => 'setSiteSet',
-        'componentName' => 'setComponentName',
         'componentType' => 'setComponentType',
         'imageIds' => 'setImageIds',
         'videoIds' => 'setVideoIds',
@@ -3828,7 +3824,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'dynamicCreativeName' => 'getDynamicCreativeName',
         'componentId' => 'getComponentId',
         'siteSet' => 'getSiteSet',
-        'componentName' => 'getComponentName',
         'componentType' => 'getComponentType',
         'imageIds' => 'getImageIds',
         'videoIds' => 'getVideoIds',
@@ -4644,7 +4639,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['dynamicCreativeName'] = isset($data['dynamicCreativeName']) ? $data['dynamicCreativeName'] : null;
         $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
         $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
-        $this->container['componentName'] = isset($data['componentName']) ? $data['componentName'] : null;
         $this->container['componentType'] = isset($data['componentType']) ? $data['componentType'] : null;
         $this->container['imageIds'] = isset($data['imageIds']) ? $data['imageIds'] : null;
         $this->container['videoIds'] = isset($data['videoIds']) ? $data['videoIds'] : null;
@@ -21543,30 +21537,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setSiteSet($siteSet)
     {
         $this->container['siteSet'] = $siteSet;
-
-        return $this;
-    }
-
-    /**
-     * Gets componentName
-     *
-     * @return string|mixed
-     */
-    public function getComponentName()
-    {
-        return $this->container['componentName'];
-    }
-
-    /**
-     * Sets componentName
-     *
-     * @param string|mixed $componentName componentName
-     *
-     * @return $this
-     */
-    public function setComponentName($componentName)
-    {
-        $this->container['componentName'] = $componentName;
 
         return $this;
     }

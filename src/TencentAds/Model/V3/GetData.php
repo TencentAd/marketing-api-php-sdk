@@ -60,8 +60,11 @@ class GetData implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'imageId' => 'int',
         'mediaId' => 'int',
+        'info' => '\TencentAds\Model\V3\InfoItem[]',
+        'setName' => 'string',
         'marketingAssetId' => 'int',
-        'marketingTargetType' => '\TencentAds\Model\V3\MarketingTargetType',
+        'marketingAssetOuterId' => 'string',
+        'marketingTargetType' => 'string',
         'auditStatus' => 'int',
         'auditMsg' => 'string',
         'dcatagList' => '\TencentAds\Model\V3\Dactag[]'
@@ -75,7 +78,10 @@ class GetData implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'imageId' => 'int64',
         'mediaId' => 'int64',
+        'info' => null,
+        'setName' => null,
         'marketingAssetId' => 'int64',
+        'marketingAssetOuterId' => null,
         'marketingTargetType' => null,
         'auditStatus' => 'int64',
         'auditMsg' => null,
@@ -111,7 +117,10 @@ class GetData implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'imageId' => 'image_id',
         'mediaId' => 'media_id',
+        'info' => 'info',
+        'setName' => 'set_name',
         'marketingAssetId' => 'marketing_asset_id',
+        'marketingAssetOuterId' => 'marketing_asset_outer_id',
         'marketingTargetType' => 'marketing_target_type',
         'auditStatus' => 'audit_status',
         'auditMsg' => 'audit_msg',
@@ -126,7 +135,10 @@ class GetData implements ModelInterface, ArrayAccess
     protected static $setters = [
         'imageId' => 'setImageId',
         'mediaId' => 'setMediaId',
+        'info' => 'setInfo',
+        'setName' => 'setSetName',
         'marketingAssetId' => 'setMarketingAssetId',
+        'marketingAssetOuterId' => 'setMarketingAssetOuterId',
         'marketingTargetType' => 'setMarketingTargetType',
         'auditStatus' => 'setAuditStatus',
         'auditMsg' => 'setAuditMsg',
@@ -141,7 +153,10 @@ class GetData implements ModelInterface, ArrayAccess
     protected static $getters = [
         'imageId' => 'getImageId',
         'mediaId' => 'getMediaId',
+        'info' => 'getInfo',
+        'setName' => 'getSetName',
         'marketingAssetId' => 'getMarketingAssetId',
+        'marketingAssetOuterId' => 'getMarketingAssetOuterId',
         'marketingTargetType' => 'getMarketingTargetType',
         'auditStatus' => 'getAuditStatus',
         'auditMsg' => 'getAuditMsg',
@@ -210,7 +225,10 @@ class GetData implements ModelInterface, ArrayAccess
     {
         $this->container['imageId'] = isset($data['imageId']) ? $data['imageId'] : null;
         $this->container['mediaId'] = isset($data['mediaId']) ? $data['mediaId'] : null;
+        $this->container['info'] = isset($data['info']) ? $data['info'] : null;
+        $this->container['setName'] = isset($data['setName']) ? $data['setName'] : null;
         $this->container['marketingAssetId'] = isset($data['marketingAssetId']) ? $data['marketingAssetId'] : null;
+        $this->container['marketingAssetOuterId'] = isset($data['marketingAssetOuterId']) ? $data['marketingAssetOuterId'] : null;
         $this->container['marketingTargetType'] = isset($data['marketingTargetType']) ? $data['marketingTargetType'] : null;
         $this->container['auditStatus'] = isset($data['auditStatus']) ? $data['auditStatus'] : null;
         $this->container['auditMsg'] = isset($data['auditMsg']) ? $data['auditMsg'] : null;
@@ -290,6 +308,54 @@ class GetData implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets info
+     *
+     * @return \TencentAds\Model\V3\InfoItem[]|mixed
+     */
+    public function getInfo()
+    {
+        return $this->container['info'];
+    }
+
+    /**
+     * Sets info
+     *
+     * @param \TencentAds\Model\V3\InfoItem[]|mixed $info info
+     *
+     * @return $this
+     */
+    public function setInfo($info)
+    {
+        $this->container['info'] = $info;
+
+        return $this;
+    }
+
+    /**
+     * Gets setName
+     *
+     * @return string|mixed
+     */
+    public function getSetName()
+    {
+        return $this->container['setName'];
+    }
+
+    /**
+     * Sets setName
+     *
+     * @param string|mixed $setName setName
+     *
+     * @return $this
+     */
+    public function setSetName($setName)
+    {
+        $this->container['setName'] = $setName;
+
+        return $this;
+    }
+
+    /**
      * Gets marketingAssetId
      *
      * @return int|mixed
@@ -314,9 +380,33 @@ class GetData implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets marketingAssetOuterId
+     *
+     * @return string|mixed
+     */
+    public function getMarketingAssetOuterId()
+    {
+        return $this->container['marketingAssetOuterId'];
+    }
+
+    /**
+     * Sets marketingAssetOuterId
+     *
+     * @param string|mixed $marketingAssetOuterId marketingAssetOuterId
+     *
+     * @return $this
+     */
+    public function setMarketingAssetOuterId($marketingAssetOuterId)
+    {
+        $this->container['marketingAssetOuterId'] = $marketingAssetOuterId;
+
+        return $this;
+    }
+
+    /**
      * Gets marketingTargetType
      *
-     * @return \TencentAds\Model\V3\MarketingTargetType|mixed
+     * @return string|mixed
      */
     public function getMarketingTargetType()
     {
@@ -326,7 +416,7 @@ class GetData implements ModelInterface, ArrayAccess
     /**
      * Sets marketingTargetType
      *
-     * @param \TencentAds\Model\V3\MarketingTargetType|mixed $marketingTargetType marketingTargetType
+     * @param string|mixed $marketingTargetType marketingTargetType
      *
      * @return $this
      */

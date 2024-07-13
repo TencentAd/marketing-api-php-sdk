@@ -1,6 +1,6 @@
 <?php
 /**
- * Dactag
+ * GetMetadataFilteringStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * Dactag Class Doc Comment
+ * GetMetadataFilteringStruct Class Doc Comment
  *
  * @category Class
- * @description 素材标签
+ * @description 过滤条件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class Dactag implements ModelInterface, ArrayAccess
+class GetMetadataFilteringStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class Dactag implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dactag';
+    protected static $swaggerModelName = 'get_metadata_filtering_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,9 @@ class Dactag implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'tagName' => 'string',
-        'tagValue' => 'string'
+        'field' => 'string',
+        'operator' => '\TencentAds\Model\V3\FilterOperator',
+        'values' => 'string[]'
     ];
 
     /**
@@ -68,8 +69,9 @@ class Dactag implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'tagName' => null,
-        'tagValue' => null
+        'field' => null,
+        'operator' => null,
+        'values' => null
     ];
 
     /**
@@ -99,8 +101,9 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'tagName' => 'tag_name',
-        'tagValue' => 'tag_value'
+        'field' => 'field',
+        'operator' => 'operator',
+        'values' => 'values'
     ];
 
     /**
@@ -109,8 +112,9 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'tagName' => 'setTagName',
-        'tagValue' => 'setTagValue'
+        'field' => 'setField',
+        'operator' => 'setOperator',
+        'values' => 'setValues'
     ];
 
     /**
@@ -119,8 +123,9 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'tagName' => 'getTagName',
-        'tagValue' => 'getTagValue'
+        'field' => 'getField',
+        'operator' => 'getOperator',
+        'values' => 'getValues'
     ];
 
     /**
@@ -183,8 +188,9 @@ class Dactag implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['tagName'] = isset($data['tagName']) ? $data['tagName'] : null;
-        $this->container['tagValue'] = isset($data['tagValue']) ? $data['tagValue'] : null;
+        $this->container['field'] = isset($data['field']) ? $data['field'] : null;
+        $this->container['operator'] = isset($data['operator']) ? $data['operator'] : null;
+        $this->container['values'] = isset($data['values']) ? $data['values'] : null;
     }
 
     /**
@@ -212,49 +218,73 @@ class Dactag implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets tagName
+     * Gets field
      *
      * @return string|mixed
      */
-    public function getTagName()
+    public function getField()
     {
-        return $this->container['tagName'];
+        return $this->container['field'];
     }
 
     /**
-     * Sets tagName
+     * Sets field
      *
-     * @param string|mixed $tagName tagName
+     * @param string|mixed $field field
      *
      * @return $this
      */
-    public function setTagName($tagName)
+    public function setField($field)
     {
-        $this->container['tagName'] = $tagName;
+        $this->container['field'] = $field;
 
         return $this;
     }
 
     /**
-     * Gets tagValue
+     * Gets operator
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\V3\FilterOperator|mixed
      */
-    public function getTagValue()
+    public function getOperator()
     {
-        return $this->container['tagValue'];
+        return $this->container['operator'];
     }
 
     /**
-     * Sets tagValue
+     * Sets operator
      *
-     * @param string|mixed $tagValue tagValue
+     * @param \TencentAds\Model\V3\FilterOperator|mixed $operator operator
      *
      * @return $this
      */
-    public function setTagValue($tagValue)
+    public function setOperator($operator)
     {
-        $this->container['tagValue'] = $tagValue;
+        $this->container['operator'] = $operator;
+
+        return $this;
+    }
+
+    /**
+     * Gets values
+     *
+     * @return string[]|mixed
+     */
+    public function getValues()
+    {
+        return $this->container['values'];
+    }
+
+    /**
+     * Sets values
+     *
+     * @param string[]|mixed $values values
+     *
+     * @return $this
+     */
+    public function setValues($values)
+    {
+        $this->container['values'] = $values;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * MpaSpec
+ * MaterialDcasetAddRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MpaSpec Class Doc Comment
+ * MaterialDcasetAddRequest Class Doc Comment
  *
  * @category Class
- * @description 动态商品广告属性
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MpaSpec implements ModelInterface, ArrayAccess
+class MaterialDcasetAddRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class MpaSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'mpa_spec';
+    protected static $swaggerModelName = 'MaterialDcasetAddRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,13 @@ class MpaSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'recommendMethodIds' => 'int[]',
-        'productCatalogId' => 'string',
-        'productSeriesId' => 'string'
+        'accountId' => 'int',
+        'imageIdList' => 'int[]',
+        'mediaIdList' => 'int[]',
+        'marketingAssetId' => 'int',
+        'marketingTargetType' => '\TencentAds\Model\V3\MarketingTargetType',
+        'marketingAssetOuterSpec' => '\TencentAds\Model\V3\MarketingAssetOuterSpecV1',
+        'setName' => 'string'
     ];
 
     /**
@@ -69,9 +72,13 @@ class MpaSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'recommendMethodIds' => 'int64',
-        'productCatalogId' => null,
-        'productSeriesId' => null
+        'accountId' => 'int64',
+        'imageIdList' => 'int64',
+        'mediaIdList' => 'int64',
+        'marketingAssetId' => 'int64',
+        'marketingTargetType' => null,
+        'marketingAssetOuterSpec' => null,
+        'setName' => null
     ];
 
     /**
@@ -101,9 +108,13 @@ class MpaSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'recommendMethodIds' => 'recommend_method_ids',
-        'productCatalogId' => 'product_catalog_id',
-        'productSeriesId' => 'product_series_id'
+        'accountId' => 'account_id',
+        'imageIdList' => 'image_id_list',
+        'mediaIdList' => 'media_id_list',
+        'marketingAssetId' => 'marketing_asset_id',
+        'marketingTargetType' => 'marketing_target_type',
+        'marketingAssetOuterSpec' => 'marketing_asset_outer_spec',
+        'setName' => 'set_name'
     ];
 
     /**
@@ -112,9 +123,13 @@ class MpaSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'recommendMethodIds' => 'setRecommendMethodIds',
-        'productCatalogId' => 'setProductCatalogId',
-        'productSeriesId' => 'setProductSeriesId'
+        'accountId' => 'setAccountId',
+        'imageIdList' => 'setImageIdList',
+        'mediaIdList' => 'setMediaIdList',
+        'marketingAssetId' => 'setMarketingAssetId',
+        'marketingTargetType' => 'setMarketingTargetType',
+        'marketingAssetOuterSpec' => 'setMarketingAssetOuterSpec',
+        'setName' => 'setSetName'
     ];
 
     /**
@@ -123,9 +138,13 @@ class MpaSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'recommendMethodIds' => 'getRecommendMethodIds',
-        'productCatalogId' => 'getProductCatalogId',
-        'productSeriesId' => 'getProductSeriesId'
+        'accountId' => 'getAccountId',
+        'imageIdList' => 'getImageIdList',
+        'mediaIdList' => 'getMediaIdList',
+        'marketingAssetId' => 'getMarketingAssetId',
+        'marketingTargetType' => 'getMarketingTargetType',
+        'marketingAssetOuterSpec' => 'getMarketingAssetOuterSpec',
+        'setName' => 'getSetName'
     ];
 
     /**
@@ -188,9 +207,13 @@ class MpaSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['recommendMethodIds'] = isset($data['recommendMethodIds']) ? $data['recommendMethodIds'] : null;
-        $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
-        $this->container['productSeriesId'] = isset($data['productSeriesId']) ? $data['productSeriesId'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['imageIdList'] = isset($data['imageIdList']) ? $data['imageIdList'] : null;
+        $this->container['mediaIdList'] = isset($data['mediaIdList']) ? $data['mediaIdList'] : null;
+        $this->container['marketingAssetId'] = isset($data['marketingAssetId']) ? $data['marketingAssetId'] : null;
+        $this->container['marketingTargetType'] = isset($data['marketingTargetType']) ? $data['marketingTargetType'] : null;
+        $this->container['marketingAssetOuterSpec'] = isset($data['marketingAssetOuterSpec']) ? $data['marketingAssetOuterSpec'] : null;
+        $this->container['setName'] = isset($data['setName']) ? $data['setName'] : null;
     }
 
     /**
@@ -218,73 +241,169 @@ class MpaSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets recommendMethodIds
+     * Gets accountId
+     *
+     * @return int|mixed
+     */
+    public function getAccountId()
+    {
+        return $this->container['accountId'];
+    }
+
+    /**
+     * Sets accountId
+     *
+     * @param int|mixed $accountId accountId
+     *
+     * @return $this
+     */
+    public function setAccountId($accountId)
+    {
+        $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets imageIdList
      *
      * @return int[]|mixed
      */
-    public function getRecommendMethodIds()
+    public function getImageIdList()
     {
-        return $this->container['recommendMethodIds'];
+        return $this->container['imageIdList'];
     }
 
     /**
-     * Sets recommendMethodIds
+     * Sets imageIdList
      *
-     * @param int[]|mixed $recommendMethodIds recommendMethodIds
+     * @param int[]|mixed $imageIdList imageIdList
      *
      * @return $this
      */
-    public function setRecommendMethodIds($recommendMethodIds)
+    public function setImageIdList($imageIdList)
     {
-        $this->container['recommendMethodIds'] = $recommendMethodIds;
+        $this->container['imageIdList'] = $imageIdList;
 
         return $this;
     }
 
     /**
-     * Gets productCatalogId
+     * Gets mediaIdList
      *
-     * @return string|mixed
+     * @return int[]|mixed
      */
-    public function getProductCatalogId()
+    public function getMediaIdList()
     {
-        return $this->container['productCatalogId'];
+        return $this->container['mediaIdList'];
     }
 
     /**
-     * Sets productCatalogId
+     * Sets mediaIdList
      *
-     * @param string|mixed $productCatalogId productCatalogId
+     * @param int[]|mixed $mediaIdList mediaIdList
      *
      * @return $this
      */
-    public function setProductCatalogId($productCatalogId)
+    public function setMediaIdList($mediaIdList)
     {
-        $this->container['productCatalogId'] = $productCatalogId;
+        $this->container['mediaIdList'] = $mediaIdList;
 
         return $this;
     }
 
     /**
-     * Gets productSeriesId
+     * Gets marketingAssetId
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getProductSeriesId()
+    public function getMarketingAssetId()
     {
-        return $this->container['productSeriesId'];
+        return $this->container['marketingAssetId'];
     }
 
     /**
-     * Sets productSeriesId
+     * Sets marketingAssetId
      *
-     * @param string|mixed $productSeriesId productSeriesId
+     * @param int|mixed $marketingAssetId marketingAssetId
      *
      * @return $this
      */
-    public function setProductSeriesId($productSeriesId)
+    public function setMarketingAssetId($marketingAssetId)
     {
-        $this->container['productSeriesId'] = $productSeriesId;
+        $this->container['marketingAssetId'] = $marketingAssetId;
+
+        return $this;
+    }
+
+    /**
+     * Gets marketingTargetType
+     *
+     * @return \TencentAds\Model\V3\MarketingTargetType|mixed
+     */
+    public function getMarketingTargetType()
+    {
+        return $this->container['marketingTargetType'];
+    }
+
+    /**
+     * Sets marketingTargetType
+     *
+     * @param \TencentAds\Model\V3\MarketingTargetType|mixed $marketingTargetType marketingTargetType
+     *
+     * @return $this
+     */
+    public function setMarketingTargetType($marketingTargetType)
+    {
+        $this->container['marketingTargetType'] = $marketingTargetType;
+
+        return $this;
+    }
+
+    /**
+     * Gets marketingAssetOuterSpec
+     *
+     * @return \TencentAds\Model\V3\MarketingAssetOuterSpecV1|mixed
+     */
+    public function getMarketingAssetOuterSpec()
+    {
+        return $this->container['marketingAssetOuterSpec'];
+    }
+
+    /**
+     * Sets marketingAssetOuterSpec
+     *
+     * @param \TencentAds\Model\V3\MarketingAssetOuterSpecV1|mixed $marketingAssetOuterSpec marketingAssetOuterSpec
+     *
+     * @return $this
+     */
+    public function setMarketingAssetOuterSpec($marketingAssetOuterSpec)
+    {
+        $this->container['marketingAssetOuterSpec'] = $marketingAssetOuterSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets setName
+     *
+     * @return string|mixed
+     */
+    public function getSetName()
+    {
+        return $this->container['setName'];
+    }
+
+    /**
+     * Sets setName
+     *
+     * @param string|mixed $setName setName
+     *
+     * @return $this
+     */
+    public function setSetName($setName)
+    {
+        $this->container['setName'] = $setName;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * Dactag
+ * ComponentMetadataStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * Dactag Class Doc Comment
+ * ComponentMetadataStruct Class Doc Comment
  *
  * @category Class
- * @description 素材标签
+ * @description 创意组件元数据
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class Dactag implements ModelInterface, ArrayAccess
+class ComponentMetadataStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class Dactag implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dactag';
+    protected static $swaggerModelName = 'component_metadata_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,11 @@ class Dactag implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'tagName' => 'string',
-        'tagValue' => 'string'
+        'name' => 'string',
+        'componentType' => '\TencentAds\Model\V3\ComponentType',
+        'componentSubType' => '\TencentAds\Model\V3\ComponentSubType',
+        'valueField' => '\TencentAds\Model\V3\ComponentMetadataValueField[]',
+        'componentCandidateCount' => 'int'
     ];
 
     /**
@@ -68,8 +71,11 @@ class Dactag implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'tagName' => null,
-        'tagValue' => null
+        'name' => null,
+        'componentType' => null,
+        'componentSubType' => null,
+        'valueField' => null,
+        'componentCandidateCount' => 'int64'
     ];
 
     /**
@@ -99,8 +105,11 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'tagName' => 'tag_name',
-        'tagValue' => 'tag_value'
+        'name' => 'name',
+        'componentType' => 'component_type',
+        'componentSubType' => 'component_sub_type',
+        'valueField' => 'value_field',
+        'componentCandidateCount' => 'component_candidate_count'
     ];
 
     /**
@@ -109,8 +118,11 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'tagName' => 'setTagName',
-        'tagValue' => 'setTagValue'
+        'name' => 'setName',
+        'componentType' => 'setComponentType',
+        'componentSubType' => 'setComponentSubType',
+        'valueField' => 'setValueField',
+        'componentCandidateCount' => 'setComponentCandidateCount'
     ];
 
     /**
@@ -119,8 +131,11 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'tagName' => 'getTagName',
-        'tagValue' => 'getTagValue'
+        'name' => 'getName',
+        'componentType' => 'getComponentType',
+        'componentSubType' => 'getComponentSubType',
+        'valueField' => 'getValueField',
+        'componentCandidateCount' => 'getComponentCandidateCount'
     ];
 
     /**
@@ -183,8 +198,11 @@ class Dactag implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['tagName'] = isset($data['tagName']) ? $data['tagName'] : null;
-        $this->container['tagValue'] = isset($data['tagValue']) ? $data['tagValue'] : null;
+        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
+        $this->container['componentType'] = isset($data['componentType']) ? $data['componentType'] : null;
+        $this->container['componentSubType'] = isset($data['componentSubType']) ? $data['componentSubType'] : null;
+        $this->container['valueField'] = isset($data['valueField']) ? $data['valueField'] : null;
+        $this->container['componentCandidateCount'] = isset($data['componentCandidateCount']) ? $data['componentCandidateCount'] : null;
     }
 
     /**
@@ -212,49 +230,121 @@ class Dactag implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets tagName
+     * Gets name
      *
      * @return string|mixed
      */
-    public function getTagName()
+    public function getName()
     {
-        return $this->container['tagName'];
+        return $this->container['name'];
     }
 
     /**
-     * Sets tagName
+     * Sets name
      *
-     * @param string|mixed $tagName tagName
+     * @param string|mixed $name name
      *
      * @return $this
      */
-    public function setTagName($tagName)
+    public function setName($name)
     {
-        $this->container['tagName'] = $tagName;
+        $this->container['name'] = $name;
 
         return $this;
     }
 
     /**
-     * Gets tagValue
+     * Gets componentType
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\V3\ComponentType|mixed
      */
-    public function getTagValue()
+    public function getComponentType()
     {
-        return $this->container['tagValue'];
+        return $this->container['componentType'];
     }
 
     /**
-     * Sets tagValue
+     * Sets componentType
      *
-     * @param string|mixed $tagValue tagValue
+     * @param \TencentAds\Model\V3\ComponentType|mixed $componentType componentType
      *
      * @return $this
      */
-    public function setTagValue($tagValue)
+    public function setComponentType($componentType)
     {
-        $this->container['tagValue'] = $tagValue;
+        $this->container['componentType'] = $componentType;
+
+        return $this;
+    }
+
+    /**
+     * Gets componentSubType
+     *
+     * @return \TencentAds\Model\V3\ComponentSubType|mixed
+     */
+    public function getComponentSubType()
+    {
+        return $this->container['componentSubType'];
+    }
+
+    /**
+     * Sets componentSubType
+     *
+     * @param \TencentAds\Model\V3\ComponentSubType|mixed $componentSubType componentSubType
+     *
+     * @return $this
+     */
+    public function setComponentSubType($componentSubType)
+    {
+        $this->container['componentSubType'] = $componentSubType;
+
+        return $this;
+    }
+
+    /**
+     * Gets valueField
+     *
+     * @return \TencentAds\Model\V3\ComponentMetadataValueField[]|mixed
+     */
+    public function getValueField()
+    {
+        return $this->container['valueField'];
+    }
+
+    /**
+     * Sets valueField
+     *
+     * @param \TencentAds\Model\V3\ComponentMetadataValueField[]|mixed $valueField valueField
+     *
+     * @return $this
+     */
+    public function setValueField($valueField)
+    {
+        $this->container['valueField'] = $valueField;
+
+        return $this;
+    }
+
+    /**
+     * Gets componentCandidateCount
+     *
+     * @return int|mixed
+     */
+    public function getComponentCandidateCount()
+    {
+        return $this->container['componentCandidateCount'];
+    }
+
+    /**
+     * Sets componentCandidateCount
+     *
+     * @param int|mixed $componentCandidateCount componentCandidateCount
+     *
+     * @return $this
+     */
+    public function setComponentCandidateCount($componentCandidateCount)
+    {
+        $this->container['componentCandidateCount'] = $componentCandidateCount;
 
         return $this;
     }

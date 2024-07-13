@@ -1,6 +1,6 @@
 <?php
 /**
- * Dactag
+ * ComponentMetadataValueFieldStructureField
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * Dactag Class Doc Comment
+ * ComponentMetadataValueFieldStructureField Class Doc Comment
  *
  * @category Class
- * @description 素材标签
+ * @description 创意组件字段结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class Dactag implements ModelInterface, ArrayAccess
+class ComponentMetadataValueFieldStructureField implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class Dactag implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dactag';
+    protected static $swaggerModelName = 'component_metadata_value_field_structure_field';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,10 @@ class Dactag implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'tagName' => 'string',
-        'tagValue' => 'string'
+        'name' => 'string',
+        'type' => '\TencentAds\Model\V3\ComponentMetadataFieldType',
+        'isArray' => 'bool',
+        'valid' => '\TencentAds\Model\V3\ComponentMetadataValueValid'
     ];
 
     /**
@@ -68,8 +70,10 @@ class Dactag implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'tagName' => null,
-        'tagValue' => null
+        'name' => null,
+        'type' => null,
+        'isArray' => null,
+        'valid' => null
     ];
 
     /**
@@ -99,8 +103,10 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'tagName' => 'tag_name',
-        'tagValue' => 'tag_value'
+        'name' => 'name',
+        'type' => 'type',
+        'isArray' => 'is_array',
+        'valid' => 'valid'
     ];
 
     /**
@@ -109,8 +115,10 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'tagName' => 'setTagName',
-        'tagValue' => 'setTagValue'
+        'name' => 'setName',
+        'type' => 'setType',
+        'isArray' => 'setIsArray',
+        'valid' => 'setValid'
     ];
 
     /**
@@ -119,8 +127,10 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'tagName' => 'getTagName',
-        'tagValue' => 'getTagValue'
+        'name' => 'getName',
+        'type' => 'getType',
+        'isArray' => 'getIsArray',
+        'valid' => 'getValid'
     ];
 
     /**
@@ -183,8 +193,10 @@ class Dactag implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['tagName'] = isset($data['tagName']) ? $data['tagName'] : null;
-        $this->container['tagValue'] = isset($data['tagValue']) ? $data['tagValue'] : null;
+        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
+        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
+        $this->container['isArray'] = isset($data['isArray']) ? $data['isArray'] : null;
+        $this->container['valid'] = isset($data['valid']) ? $data['valid'] : null;
     }
 
     /**
@@ -212,49 +224,97 @@ class Dactag implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets tagName
+     * Gets name
      *
      * @return string|mixed
      */
-    public function getTagName()
+    public function getName()
     {
-        return $this->container['tagName'];
+        return $this->container['name'];
     }
 
     /**
-     * Sets tagName
+     * Sets name
      *
-     * @param string|mixed $tagName tagName
+     * @param string|mixed $name name
      *
      * @return $this
      */
-    public function setTagName($tagName)
+    public function setName($name)
     {
-        $this->container['tagName'] = $tagName;
+        $this->container['name'] = $name;
 
         return $this;
     }
 
     /**
-     * Gets tagValue
+     * Gets type
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\V3\ComponentMetadataFieldType|mixed
      */
-    public function getTagValue()
+    public function getType()
     {
-        return $this->container['tagValue'];
+        return $this->container['type'];
     }
 
     /**
-     * Sets tagValue
+     * Sets type
      *
-     * @param string|mixed $tagValue tagValue
+     * @param \TencentAds\Model\V3\ComponentMetadataFieldType|mixed $type type
      *
      * @return $this
      */
-    public function setTagValue($tagValue)
+    public function setType($type)
     {
-        $this->container['tagValue'] = $tagValue;
+        $this->container['type'] = $type;
+
+        return $this;
+    }
+
+    /**
+     * Gets isArray
+     *
+     * @return bool|mixed
+     */
+    public function getIsArray()
+    {
+        return $this->container['isArray'];
+    }
+
+    /**
+     * Sets isArray
+     *
+     * @param bool|mixed $isArray isArray
+     *
+     * @return $this
+     */
+    public function setIsArray($isArray)
+    {
+        $this->container['isArray'] = $isArray;
+
+        return $this;
+    }
+
+    /**
+     * Gets valid
+     *
+     * @return \TencentAds\Model\V3\ComponentMetadataValueValid|mixed
+     */
+    public function getValid()
+    {
+        return $this->container['valid'];
+    }
+
+    /**
+     * Sets valid
+     *
+     * @param \TencentAds\Model\V3\ComponentMetadataValueValid|mixed $valid valid
+     *
+     * @return $this
+     */
+    public function setValid($valid)
+    {
+        $this->container['valid'] = $valid;
 
         return $this;
     }

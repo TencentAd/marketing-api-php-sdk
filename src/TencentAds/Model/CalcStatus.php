@@ -83,6 +83,7 @@ class CalcStatus
     const VERIFYING = 'STATUS_VERIFYING';
     const SETTLED_ACCOUNT = 'STATUS_SETTLED_ACCOUNT';
     const PRE_LOCK = 'STATUS_PRE_LOCK';
+    const CANCEL = 'STATUS_CANCEL';
     
     /**
      * Gets allowable values of the enum
@@ -130,6 +131,7 @@ class CalcStatus
             self::VERIFYING,
             self::SETTLED_ACCOUNT,
             self::PRE_LOCK,
+            self::CANCEL,
         ];
     }
 }

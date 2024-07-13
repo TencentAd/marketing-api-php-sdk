@@ -1,6 +1,6 @@
 <?php
 /**
- * Dactag
+ * MediaInfoItem
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * Dactag Class Doc Comment
+ * MediaInfoItem Class Doc Comment
  *
  * @category Class
- * @description 素材标签
+ * @description 视频素材属性信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class Dactag implements ModelInterface, ArrayAccess
+class MediaInfoItem implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class Dactag implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dactag';
+    protected static $swaggerModelName = 'media_info_item';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,8 @@ class Dactag implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'tagName' => 'string',
-        'tagValue' => 'string'
+        'name' => 'string',
+        'value' => 'string'
     ];
 
     /**
@@ -68,8 +68,8 @@ class Dactag implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'tagName' => null,
-        'tagValue' => null
+        'name' => null,
+        'value' => null
     ];
 
     /**
@@ -99,8 +99,8 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'tagName' => 'tag_name',
-        'tagValue' => 'tag_value'
+        'name' => 'name',
+        'value' => 'value'
     ];
 
     /**
@@ -109,8 +109,8 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'tagName' => 'setTagName',
-        'tagValue' => 'setTagValue'
+        'name' => 'setName',
+        'value' => 'setValue'
     ];
 
     /**
@@ -119,8 +119,8 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'tagName' => 'getTagName',
-        'tagValue' => 'getTagValue'
+        'name' => 'getName',
+        'value' => 'getValue'
     ];
 
     /**
@@ -183,8 +183,8 @@ class Dactag implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['tagName'] = isset($data['tagName']) ? $data['tagName'] : null;
-        $this->container['tagValue'] = isset($data['tagValue']) ? $data['tagValue'] : null;
+        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
+        $this->container['value'] = isset($data['value']) ? $data['value'] : null;
     }
 
     /**
@@ -212,49 +212,49 @@ class Dactag implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets tagName
+     * Gets name
      *
      * @return string|mixed
      */
-    public function getTagName()
+    public function getName()
     {
-        return $this->container['tagName'];
+        return $this->container['name'];
     }
 
     /**
-     * Sets tagName
+     * Sets name
      *
-     * @param string|mixed $tagName tagName
+     * @param string|mixed $name name
      *
      * @return $this
      */
-    public function setTagName($tagName)
+    public function setName($name)
     {
-        $this->container['tagName'] = $tagName;
+        $this->container['name'] = $name;
 
         return $this;
     }
 
     /**
-     * Gets tagValue
+     * Gets value
      *
      * @return string|mixed
      */
-    public function getTagValue()
+    public function getValue()
     {
-        return $this->container['tagValue'];
+        return $this->container['value'];
     }
 
     /**
-     * Sets tagValue
+     * Sets value
      *
-     * @param string|mixed $tagValue tagValue
+     * @param string|mixed $value value
      *
      * @return $this
      */
-    public function setTagValue($tagValue)
+    public function setValue($value)
     {
-        $this->container['tagValue'] = $tagValue;
+        $this->container['value'] = $value;
 
         return $this;
     }

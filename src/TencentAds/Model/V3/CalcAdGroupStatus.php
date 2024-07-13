@@ -56,6 +56,9 @@ class CalcAdGroupStatus
     const CREATIVE_EMPTY = 'ADGROUP_STATUS_CREATIVE_EMPTY';
     const JOINT_BUDGET_REACHED = 'ADGROUP_STATUS_JOINT_BUDGET_REACHED';
     const TOTAL_BUDGET_REACHED = 'ADGROUP_STATUS_TOTAL_BUDGET_REACHED';
+    const PRE_LOCK = 'ADGROUP_STATUS_PRE_LOCK';
+    const UNLOCKING = 'ADGROUP_STATUS_UNLOCKING';
+    const STOP = 'ADGROUP_STATUS_STOP';
     
     /**
      * Gets allowable values of the enum
@@ -76,6 +79,9 @@ class CalcAdGroupStatus
             self::CREATIVE_EMPTY,
             self::JOINT_BUDGET_REACHED,
             self::TOTAL_BUDGET_REACHED,
+            self::PRE_LOCK,
+            self::UNLOCKING,
+            self::STOP,
         ];
     }
 }

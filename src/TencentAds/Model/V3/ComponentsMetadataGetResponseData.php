@@ -1,6 +1,6 @@
 <?php
 /**
- * Dactag
+ * ComponentsMetadataGetResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * Dactag Class Doc Comment
+ * ComponentsMetadataGetResponseData Class Doc Comment
  *
  * @category Class
- * @description 素材标签
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class Dactag implements ModelInterface, ArrayAccess
+class ComponentsMetadataGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class Dactag implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dactag';
+    protected static $swaggerModelName = 'ComponentsMetadataGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,7 @@ class Dactag implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'tagName' => 'string',
-        'tagValue' => 'string'
+        'list' => '\TencentAds\Model\V3\ComponentMetadataStruct[]'
     ];
 
     /**
@@ -68,8 +66,7 @@ class Dactag implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'tagName' => null,
-        'tagValue' => null
+        'list' => null
     ];
 
     /**
@@ -99,8 +96,7 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'tagName' => 'tag_name',
-        'tagValue' => 'tag_value'
+        'list' => 'list'
     ];
 
     /**
@@ -109,8 +105,7 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'tagName' => 'setTagName',
-        'tagValue' => 'setTagValue'
+        'list' => 'setList'
     ];
 
     /**
@@ -119,8 +114,7 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'tagName' => 'getTagName',
-        'tagValue' => 'getTagValue'
+        'list' => 'getList'
     ];
 
     /**
@@ -183,8 +177,7 @@ class Dactag implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['tagName'] = isset($data['tagName']) ? $data['tagName'] : null;
-        $this->container['tagValue'] = isset($data['tagValue']) ? $data['tagValue'] : null;
+        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
     }
 
     /**
@@ -212,49 +205,25 @@ class Dactag implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets tagName
+     * Gets list
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\V3\ComponentMetadataStruct[]|mixed
      */
-    public function getTagName()
+    public function getList()
     {
-        return $this->container['tagName'];
+        return $this->container['list'];
     }
 
     /**
-     * Sets tagName
+     * Sets list
      *
-     * @param string|mixed $tagName tagName
+     * @param \TencentAds\Model\V3\ComponentMetadataStruct[]|mixed $list list
      *
      * @return $this
      */
-    public function setTagName($tagName)
+    public function setList($list)
     {
-        $this->container['tagName'] = $tagName;
-
-        return $this;
-    }
-
-    /**
-     * Gets tagValue
-     *
-     * @return string|mixed
-     */
-    public function getTagValue()
-    {
-        return $this->container['tagValue'];
-    }
-
-    /**
-     * Sets tagValue
-     *
-     * @param string|mixed $tagValue tagValue
-     *
-     * @return $this
-     */
-    public function setTagValue($tagValue)
-    {
-        $this->container['tagValue'] = $tagValue;
+        $this->container['list'] = $list;
 
         return $this;
     }

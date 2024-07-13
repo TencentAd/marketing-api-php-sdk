@@ -1,6 +1,6 @@
 <?php
 /**
- * Dactag
+ * ComponentsGetResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * Dactag Class Doc Comment
+ * ComponentsGetResponseData Class Doc Comment
  *
  * @category Class
- * @description 素材标签
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class Dactag implements ModelInterface, ArrayAccess
+class ComponentsGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class Dactag implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dactag';
+    protected static $swaggerModelName = 'ComponentsGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,8 @@ class Dactag implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'tagName' => 'string',
-        'tagValue' => 'string'
+        'list' => '\TencentAds\Model\V3\ComponentsGetListStruct[]',
+        'pageInfo' => '\TencentAds\Model\V3\PageInfo'
     ];
 
     /**
@@ -68,8 +67,8 @@ class Dactag implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'tagName' => null,
-        'tagValue' => null
+        'list' => null,
+        'pageInfo' => null
     ];
 
     /**
@@ -99,8 +98,8 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'tagName' => 'tag_name',
-        'tagValue' => 'tag_value'
+        'list' => 'list',
+        'pageInfo' => 'page_info'
     ];
 
     /**
@@ -109,8 +108,8 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'tagName' => 'setTagName',
-        'tagValue' => 'setTagValue'
+        'list' => 'setList',
+        'pageInfo' => 'setPageInfo'
     ];
 
     /**
@@ -119,8 +118,8 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'tagName' => 'getTagName',
-        'tagValue' => 'getTagValue'
+        'list' => 'getList',
+        'pageInfo' => 'getPageInfo'
     ];
 
     /**
@@ -183,8 +182,8 @@ class Dactag implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['tagName'] = isset($data['tagName']) ? $data['tagName'] : null;
-        $this->container['tagValue'] = isset($data['tagValue']) ? $data['tagValue'] : null;
+        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
+        $this->container['pageInfo'] = isset($data['pageInfo']) ? $data['pageInfo'] : null;
     }
 
     /**
@@ -212,49 +211,49 @@ class Dactag implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets tagName
+     * Gets list
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\V3\ComponentsGetListStruct[]|mixed
      */
-    public function getTagName()
+    public function getList()
     {
-        return $this->container['tagName'];
+        return $this->container['list'];
     }
 
     /**
-     * Sets tagName
+     * Sets list
      *
-     * @param string|mixed $tagName tagName
+     * @param \TencentAds\Model\V3\ComponentsGetListStruct[]|mixed $list list
      *
      * @return $this
      */
-    public function setTagName($tagName)
+    public function setList($list)
     {
-        $this->container['tagName'] = $tagName;
+        $this->container['list'] = $list;
 
         return $this;
     }
 
     /**
-     * Gets tagValue
+     * Gets pageInfo
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\V3\PageInfo|mixed
      */
-    public function getTagValue()
+    public function getPageInfo()
     {
-        return $this->container['tagValue'];
+        return $this->container['pageInfo'];
     }
 
     /**
-     * Sets tagValue
+     * Sets pageInfo
      *
-     * @param string|mixed $tagValue tagValue
+     * @param \TencentAds\Model\V3\PageInfo|mixed $pageInfo pageInfo
      *
      * @return $this
      */
-    public function setTagValue($tagValue)
+    public function setPageInfo($pageInfo)
     {
-        $this->container['tagValue'] = $tagValue;
+        $this->container['pageInfo'] = $pageInfo;
 
         return $this;
     }

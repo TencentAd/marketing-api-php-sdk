@@ -1,6 +1,6 @@
 <?php
 /**
- * Dactag
+ * MarketingAssetOuterSpecV1
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * Dactag Class Doc Comment
+ * MarketingAssetOuterSpecV1 Class Doc Comment
  *
  * @category Class
- * @description 素材标签
+ * @description 
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class Dactag implements ModelInterface, ArrayAccess
+class MarketingAssetOuterSpecV1 implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class Dactag implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dactag';
+    protected static $swaggerModelName = 'marketing_asset_outer_spec_v1';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,8 @@ class Dactag implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'tagName' => 'string',
-        'tagValue' => 'string'
+        'marketingAssetOuterId' => 'string',
+        'marketingTargetType' => 'string'
     ];
 
     /**
@@ -68,8 +68,8 @@ class Dactag implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'tagName' => null,
-        'tagValue' => null
+        'marketingAssetOuterId' => null,
+        'marketingTargetType' => null
     ];
 
     /**
@@ -99,8 +99,8 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'tagName' => 'tag_name',
-        'tagValue' => 'tag_value'
+        'marketingAssetOuterId' => 'marketing_asset_outer_id',
+        'marketingTargetType' => 'marketing_target_type'
     ];
 
     /**
@@ -109,8 +109,8 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'tagName' => 'setTagName',
-        'tagValue' => 'setTagValue'
+        'marketingAssetOuterId' => 'setMarketingAssetOuterId',
+        'marketingTargetType' => 'setMarketingTargetType'
     ];
 
     /**
@@ -119,8 +119,8 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'tagName' => 'getTagName',
-        'tagValue' => 'getTagValue'
+        'marketingAssetOuterId' => 'getMarketingAssetOuterId',
+        'marketingTargetType' => 'getMarketingTargetType'
     ];
 
     /**
@@ -183,8 +183,8 @@ class Dactag implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['tagName'] = isset($data['tagName']) ? $data['tagName'] : null;
-        $this->container['tagValue'] = isset($data['tagValue']) ? $data['tagValue'] : null;
+        $this->container['marketingAssetOuterId'] = isset($data['marketingAssetOuterId']) ? $data['marketingAssetOuterId'] : null;
+        $this->container['marketingTargetType'] = isset($data['marketingTargetType']) ? $data['marketingTargetType'] : null;
     }
 
     /**
@@ -212,49 +212,49 @@ class Dactag implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets tagName
+     * Gets marketingAssetOuterId
      *
      * @return string|mixed
      */
-    public function getTagName()
+    public function getMarketingAssetOuterId()
     {
-        return $this->container['tagName'];
+        return $this->container['marketingAssetOuterId'];
     }
 
     /**
-     * Sets tagName
+     * Sets marketingAssetOuterId
      *
-     * @param string|mixed $tagName tagName
+     * @param string|mixed $marketingAssetOuterId marketingAssetOuterId
      *
      * @return $this
      */
-    public function setTagName($tagName)
+    public function setMarketingAssetOuterId($marketingAssetOuterId)
     {
-        $this->container['tagName'] = $tagName;
+        $this->container['marketingAssetOuterId'] = $marketingAssetOuterId;
 
         return $this;
     }
 
     /**
-     * Gets tagValue
+     * Gets marketingTargetType
      *
      * @return string|mixed
      */
-    public function getTagValue()
+    public function getMarketingTargetType()
     {
-        return $this->container['tagValue'];
+        return $this->container['marketingTargetType'];
     }
 
     /**
-     * Sets tagValue
+     * Sets marketingTargetType
      *
-     * @param string|mixed $tagValue tagValue
+     * @param string|mixed $marketingTargetType marketingTargetType
      *
      * @return $this
      */
-    public function setTagValue($tagValue)
+    public function setMarketingTargetType($marketingTargetType)
     {
-        $this->container['tagValue'] = $tagValue;
+        $this->container['marketingTargetType'] = $marketingTargetType;
 
         return $this;
     }

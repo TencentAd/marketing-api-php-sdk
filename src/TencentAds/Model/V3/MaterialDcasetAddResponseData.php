@@ -1,6 +1,6 @@
 <?php
 /**
- * Dactag
+ * MaterialDcasetAddResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * Dactag Class Doc Comment
+ * MaterialDcasetAddResponseData Class Doc Comment
  *
  * @category Class
- * @description 素材标签
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class Dactag implements ModelInterface, ArrayAccess
+class MaterialDcasetAddResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class Dactag implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'dactag';
+    protected static $swaggerModelName = 'MaterialDcasetAddResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,8 @@ class Dactag implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'tagName' => 'string',
-        'tagValue' => 'string'
+        'successIdList' => 'int[]',
+        'failIdList' => 'int[]'
     ];
 
     /**
@@ -68,8 +67,8 @@ class Dactag implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'tagName' => null,
-        'tagValue' => null
+        'successIdList' => 'int64',
+        'failIdList' => 'int64'
     ];
 
     /**
@@ -99,8 +98,8 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'tagName' => 'tag_name',
-        'tagValue' => 'tag_value'
+        'successIdList' => 'success_id_list',
+        'failIdList' => 'fail_id_list'
     ];
 
     /**
@@ -109,8 +108,8 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'tagName' => 'setTagName',
-        'tagValue' => 'setTagValue'
+        'successIdList' => 'setSuccessIdList',
+        'failIdList' => 'setFailIdList'
     ];
 
     /**
@@ -119,8 +118,8 @@ class Dactag implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'tagName' => 'getTagName',
-        'tagValue' => 'getTagValue'
+        'successIdList' => 'getSuccessIdList',
+        'failIdList' => 'getFailIdList'
     ];
 
     /**
@@ -183,8 +182,8 @@ class Dactag implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['tagName'] = isset($data['tagName']) ? $data['tagName'] : null;
-        $this->container['tagValue'] = isset($data['tagValue']) ? $data['tagValue'] : null;
+        $this->container['successIdList'] = isset($data['successIdList']) ? $data['successIdList'] : null;
+        $this->container['failIdList'] = isset($data['failIdList']) ? $data['failIdList'] : null;
     }
 
     /**
@@ -212,49 +211,49 @@ class Dactag implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets tagName
+     * Gets successIdList
      *
-     * @return string|mixed
+     * @return int[]|mixed
      */
-    public function getTagName()
+    public function getSuccessIdList()
     {
-        return $this->container['tagName'];
+        return $this->container['successIdList'];
     }
 
     /**
-     * Sets tagName
+     * Sets successIdList
      *
-     * @param string|mixed $tagName tagName
+     * @param int[]|mixed $successIdList successIdList
      *
      * @return $this
      */
-    public function setTagName($tagName)
+    public function setSuccessIdList($successIdList)
     {
-        $this->container['tagName'] = $tagName;
+        $this->container['successIdList'] = $successIdList;
 
         return $this;
     }
 
     /**
-     * Gets tagValue
+     * Gets failIdList
      *
-     * @return string|mixed
+     * @return int[]|mixed
      */
-    public function getTagValue()
+    public function getFailIdList()
     {
-        return $this->container['tagValue'];
+        return $this->container['failIdList'];
     }
 
     /**
-     * Sets tagValue
+     * Sets failIdList
      *
-     * @param string|mixed $tagValue tagValue
+     * @param int[]|mixed $failIdList failIdList
      *
      * @return $this
      */
-    public function setTagValue($tagValue)
+    public function setFailIdList($failIdList)
     {
-        $this->container['tagValue'] = $tagValue;
+        $this->container['failIdList'] = $failIdList;
 
         return $this;
     }

@@ -39,6 +39,8 @@ use TencentAds\Container\V3\ChannelsUserpageobjectsApiContainer;
 use TencentAds\Container\V3\CommentListApiContainer;
 use TencentAds\Container\V3\ComponentElementUrgeReviewApiContainer;
 use TencentAds\Container\V3\ComponentReviewResultsApiContainer;
+use TencentAds\Container\V3\ComponentsApiContainer;
+use TencentAds\Container\V3\ComponentsMetadataApiContainer;
 use TencentAds\Container\V3\ConversionLinkAssetsApiContainer;
 use TencentAds\Container\V3\ConversionLinksApiContainer;
 use TencentAds\Container\V3\ConversionsApiContainer;
@@ -103,6 +105,7 @@ use TencentAds\Container\V3\MarketingTargetAssetPropertiesApiContainer;
 use TencentAds\Container\V3\MarketingTargetAssetPropertyValuesApiContainer;
 use TencentAds\Container\V3\MarketingTargetAssetsApiContainer;
 use TencentAds\Container\V3\MarketingTargetTypesApiContainer;
+use TencentAds\Container\V3\MaterialDcasetApiContainer;
 use TencentAds\Container\V3\MaterialDcatagApiContainer;
 use TencentAds\Container\V3\MaterialLabelsApiContainer;
 use TencentAds\Container\V3\MergeFundTypeDailyBalanceReportApiContainer;
@@ -293,6 +296,12 @@ class App
 
     /** @var ComponentReviewResultsApiContainer */
     public $componentReviewResultsApiContainer;
+
+    /** @var ComponentsApiContainer */
+    public $componentsApiContainer;
+
+    /** @var ComponentsMetadataApiContainer */
+    public $componentsMetadataApiContainer;
 
     /** @var ConversionLinkAssetsApiContainer */
     public $conversionLinkAssetsApiContainer;
@@ -485,6 +494,9 @@ class App
 
     /** @var MarketingTargetTypesApiContainer */
     public $marketingTargetTypesApiContainer;
+
+    /** @var MaterialDcasetApiContainer */
+    public $materialDcasetApiContainer;
 
     /** @var MaterialDcatagApiContainer */
     public $materialDcatagApiContainer;
@@ -1236,6 +1248,34 @@ class App
             $this->componentReviewResultsApiContainer = $container;
         }
         return $this->componentReviewResultsApiContainer;
+    }
+
+
+    /**
+     * @return ComponentsApiContainer
+     */
+    public function components()
+    {
+        if (empty($this->componentsApiContainer)) {
+            $container = new ComponentsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->componentsApiContainer = $container;
+        }
+        return $this->componentsApiContainer;
+    }
+
+
+    /**
+     * @return ComponentsMetadataApiContainer
+     */
+    public function componentsMetadata()
+    {
+        if (empty($this->componentsMetadataApiContainer)) {
+            $container = new ComponentsMetadataApiContainer();
+            $container->init($this, $this->getClient());
+            $this->componentsMetadataApiContainer = $container;
+        }
+        return $this->componentsMetadataApiContainer;
     }
 
 
@@ -2132,6 +2172,20 @@ class App
             $this->marketingTargetTypesApiContainer = $container;
         }
         return $this->marketingTargetTypesApiContainer;
+    }
+
+
+    /**
+     * @return MaterialDcasetApiContainer
+     */
+    public function materialDcaset()
+    {
+        if (empty($this->materialDcasetApiContainer)) {
+            $container = new MaterialDcasetApiContainer();
+            $container->init($this, $this->getClient());
+            $this->materialDcasetApiContainer = $container;
+        }
+        return $this->materialDcasetApiContainer;
     }
 
 
